@@ -28,10 +28,6 @@ ms.locfileid: "26730551"
 
 [!INCLUDE [learn-about-deployment-models](../../includes/learn-about-deployment-models-rm-include.md)] Классическая модель развертывания.
 
-[!INCLUDE [learn-about-deployment-models](../../includes/learn-about-deployment-models-classic-include.md)]
-
-[!INCLUDE [learn-about-deployment-models](../../learn-about-deployment-models-both-include.md)]
-
 [Начальный абзац]
 
 * *Кратко опишите определенные проблемы, способы устранения и первопричины которых содержатся в этой статье.*
