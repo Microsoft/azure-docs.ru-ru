@@ -25,7 +25,7 @@ landingContent:
       url: overview.md
     - text: Что представляют собой журналы Azure Monitor и Log Analytics?
       url: overview.md
-    - text: Страница центра документации по Log Analytics и журналах Azure Monitor
+    - text: Страница центра документации по Log Analytics и журналам Azure Monitor
       url: azure-monitor-log-hub.md
     - text: Что такое Azure Application Insights?
       url: app/app-insights-overview.md
@@ -77,9 +77,12 @@ landingContent:
       url: https://go.microsoft.com/fwlink/?linkid=2012827
 - title: Справочник по командам CLI
   linkLists:
-  - linkListType: reference
+ ###  text is substituted referring to link type. "Reference" here mean "Full documentation" - "Справочник" but translated as "Link"
+ ### in Russian "Reference" dependent from context mean "documentation" or "link",
+ ### I suggest or use another than "reference" linkListType which would mean "Documentation" or change associated with "reference" linkListType text to "Справочник"
+- linkListType: reference
     links:
-    - text: Метрики, автомасштабирование, параметры диагностики, оповещения
+    - text: Метрики, Автомасштабирование, Параметры диагностики, Оповещения
       url: /cli/azure/monitor?view=azure-cli-latest
     - text: Log Analytics
       url: /cli/azure/ext/log-analytics/monitor?view=azure-cli-latest
@@ -87,9 +90,12 @@ landingContent:
       url: /cli/azure/ext/application-insights/monitor/app-insights/component?view=azure-cli-latest
 - title: Справочник по командам PowerShell
   linkLists:
-  - linkListType: reference
+ ###  text is substituted referring to link type. "Reference" here mean "Full documentation" - "Справочник" but translated as "Link"
+ ### in Russian "Reference" dependent from context mean "documentation" or "link",
+ ### I suggest or use another than "reference" linkListType which would mean "Documentation" or change associated with "reference" linkListType text to "Справочник"
+- linkListType: reference
     links:
-    - text: Метрики, автомасштабирование, параметры диагностики, оповещения
+    - text: Метрики, Автомасштабирование, Параметры диагностики, Оповещения
       url: /powershell/module/az.monitor/?view=azps-2.6.0
     - text: Log Analytics
       url: /powershell/module/az.operationalinsights
@@ -97,9 +103,12 @@ landingContent:
       url: /powershell/module/az.applicationinsights/new-azapplicationinsights?view=azps-2.7.0&viewFallbackFrom=azps-2.5.0
 - title: Справочник по командам REST API
   linkLists:
-  - linkListType: reference
+ ###  text is substituted referring to link type. "Reference" here mean "Full documentation" - "Справочник" but translated as "Link"
+ ### in Russian "Reference" dependent from context mean "documentation" or "link",
+ ### I suggest or use another than "reference" linkListType which would mean "Documentation" or change associated with "reference" linkListType text to "Справочник"
+- linkListType: reference
     links:
-    - text: Метрики, автомасштабирование, параметры диагностики, оповещения
+    - text: Метрики, Автомасштабирование, Параметры диагностики, Оповещения
       url: /rest/api/monitor
     - text: Log Analytics
       url: /rest/api/loganalytics
