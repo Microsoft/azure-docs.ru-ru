@@ -72,7 +72,7 @@ for sample_month in range(12):
 green_taxi_df.head(10)
 ```
 
-|vendorID| lpepPickupDatetime|  lpepDropoffDatetime|    passengerCount| tripDistance|   puLocationId|   doLocationId|   pickupLongitude|    pickupLatitude| dropoffLongitude    |...|   paymentType |fareAmount |extra| mtaTax| improvementSurcharge|   tipAmount|  tollsAmount|    ehailFee|   totalAmount|    tripType|
+||vendorID| lpepPickupDatetime|  lpepDropoffDatetime|    passengerCount| tripDistance|   puLocationId|   doLocationId|   pickupLongitude|    pickupLatitude| dropoffLongitude    |...|   paymentType |fareAmount |extra| mtaTax| improvementSurcharge|   tipAmount|  tollsAmount|    ehailFee|   totalAmount|    tripType|
 |----|----|----|----|----|----|---|--|---|---|---|----|----|----|--|---|----|-----|----|----|----|----|---|
 |131969|2|2015-01-11 05:34:44|2015-01-11 05:45:03|3|4,84|None|None|-73,88|40,84|-73,94|...|2|15,00|0,50|0,50|0,3|0,00|0,00|не число|16,30|1.00
 |1129817|2|2015-01-20 16:26:29|2015-01-20 16:30:26|1|0,69|None|None|-73,96|40,81|-73,96|...|2|4.50|1.00|0,50|0,3|0,00|0,00|не число|6,30|1.00
@@ -101,7 +101,7 @@ green_taxi_df[["month_num", "day_of_month","day_of_week", "hour_of_day"]] = gree
 green_taxi_df.head(10)
 ```
 
-|vendorID| lpepPickupDatetime|  lpepDropoffDatetime|    passengerCount| tripDistance|   puLocationId|   doLocationId|   pickupLongitude|    pickupLatitude| dropoffLongitude    |...|   paymentType|fareAmount  |extra| mtaTax| improvementSurcharge|   tipAmount|  tollsAmount|    ehailFee|   totalAmount|tripType|month_num|day_of_month|day_of_week|hour_of_day
+||vendorID| lpepPickupDatetime|  lpepDropoffDatetime|    passengerCount| tripDistance|   puLocationId|   doLocationId|   pickupLongitude|    pickupLatitude| dropoffLongitude    |...|   paymentType|fareAmount  |extra| mtaTax| improvementSurcharge|   tipAmount|  tollsAmount|    ehailFee|   totalAmount|tripType|month_num|day_of_month|day_of_week|hour_of_day
 |----|----|----|----|----|----|---|--|---|---|---|----|----|----|--|---|----|-----|----|----|----|----|---|----|----|----
 |131969|2|2015-01-11 05:34:44|2015-01-11 05:45:03|3|4,84|None|None|-73,88|40,84|-73,94|...|2|15,00|0,50|0,50|0,3|0,00|0,00|не число|16,30|1.00|1|11|6|5
 |1129817|2|2015-01-20 16:26:29|2015-01-20 16:30:26|1|0,69|None|None|-73,96|40,81|-73,96|...|2|4.50|1.00|0,50|0,3|0,00|0,00|не число|6,30|1.00|1|20|1|16
@@ -135,7 +135,7 @@ green_taxi_df.head(5)
 green_taxi_df.describe()
 ```
 
-|vendorID|passengerCount|tripDistance|pickupLongitude|pickupLatitude|dropoffLongitude|dropoffLatitude|  totalAmount|month_num   day_of_month|day_of_week|hour_of_day
+||vendorID|passengerCount|tripDistance|pickupLongitude|pickupLatitude|dropoffLongitude|dropoffLatitude|  totalAmount|month_num   day_of_month|day_of_week|hour_of_day
 |----|----|---|---|----|---|---|---|---|---|---|---
 |count|48000,00|48000,00|48000,00|48000,00|48000,00|48000,00|48000,00|48000,00|48000,00|48000,00|48000,00|48000,00
 |mean|1,78|1,37|2,87|-73,83|40,69|-73.84|40,70|14,75|6,50|15,13|3,27|13,52
@@ -147,7 +147,7 @@ green_taxi_df.describe()
 |max|2,00|9,00|97,57|0,00|41,93|0,00|41,94|450,00|12,00|30,00|6,00|23,00
 
 
-Из сводных статистических данных видно, что в некоторых полях присутствуют выбросы или значения, снижающие точность модели. Сначала отфильтруйте поля ширины/долготы в границах округа Манхэттен. Это отфильтрует более длительные поездки на такси или поездки, которые являются выбросами по отношению к другим компонентам.
+Из сводных статистических данных видно, что в некоторых полях присутствуют выбросы или значения, снижающие точность модели. Сначала отфильтруйте поля широты/долготы в границах округа Манхэттен. Это отфильтрует более длительные поездки на такси или поездки, которые являются выбросами по отношению к другим компонентам.
 
 Кроме того, отфильтруйте поле `tripDistance`, чтобы его значение было больше нуля, но меньше 31 мили (расстояние между двумя парами ширина/долгота по формуле гаверсинуса). Это исключает длительные поездки-выбросы, которые имеют несогласованную стоимость.
 
