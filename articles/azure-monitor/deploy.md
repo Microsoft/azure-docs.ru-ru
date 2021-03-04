@@ -1,17 +1,16 @@
 ---
 title: Развертывание Azure Monitor
 description: Описание различных действий, необходимых для полной реализации Azure Monitor для мониторинга всех ресурсов в подписке Azure.
-ms.subservice: ''
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 07/27/2020
-ms.openlocfilehash: f5855d7ab1f7ba8e11334f1373fb10166f47003a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 7656efeb26a8a8b3c752ea996c8e644c68a48626
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101708260"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102044006"
 ---
 # <a name="deploy-azure-monitor"></a>Развертывание Azure Monitor
 Включение Azure Monitor наблюдения за всеми ресурсами Azure — это сочетание настройки Azure Monitor компонентов и Настройка ресурсов Azure для создания данных мониторинга для Azure Monitor для сбора. В этой статье описываются различные действия, необходимые для полной реализации Azure Monitor использования общей конфигурации для мониторинга всех ресурсов в подписке Azure. Основные описания для каждого шага предоставляются со ссылками на другую документацию для получения подробных сведений о конфигурации.

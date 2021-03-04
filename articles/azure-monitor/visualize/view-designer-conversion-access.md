@@ -3,15 +3,14 @@ title: Azure Monitor конструктора представлений в кн
 description: Разрешения, необходимые для доступа к книгам при переходе из представлений в Azure Monitor.
 author: austonli
 ms.author: aul
-ms.subservice: ''
 ms.topic: conceptual
 ms.date: 02/07/2020
-ms.openlocfilehash: c5b3096c4eb8cf71ff1d13476fa09cc65ef413a7
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 42cb8db0f67d3a01b2e8443e6cb7c47f0fc44c4b
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100613110"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043396"
 ---
 # <a name="view-designer-to-workbooks-conversion-summary-and-access"></a>Конструктор представлений — сводка по преобразованию книг и доступ
 [Конструктор представлений](view-designer.md) — это функция Azure Monitor, которая позволяет создавать пользовательские представления, помогающие визуализировать данные в рабочей области log Analytics, с диаграммами, списками и временными шкалами. Они выводятся и заменяются книгами, которые предоставляют дополнительные функциональные возможности. В этой статье подробно описано, как создать общие сведения и разрешения, необходимые для доступа к книгам.
@@ -45,6 +44,6 @@ ms.locfileid: "100613110"
 
 ![Доступ на основе подписки](media/view-designer-conversion-access/subscription-access.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Стандартные задачи](view-designer-conversion-tasks.md)

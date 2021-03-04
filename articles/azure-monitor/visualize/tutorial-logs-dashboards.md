@@ -1,18 +1,17 @@
 ---
 title: Создание панелей мониторинга данных Azure Log Analytics и предоставление общего доступа к ним | Документация Майкрософт
 description: Этот учебник поможет вам понять, как панели мониторинга в службе Log Analytics помогают следить за состоянием вашей среды с помощью визуализации всех ваших сохраненных запросов к журналам.
-ms.subservice: logs
 ms.topic: tutorial
 author: bwren
 ms.author: bwren
 ms.date: 05/28/2020
 ms.custom: mvc
-ms.openlocfilehash: e268ae3a48117d7b1cf6ad00b22cbe3e4d37b5f4
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 84c710e44fbbccdefd5bf811477e1fa4c3989114
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100598014"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043462"
 ---
 # <a name="create-and-share-dashboards-of-log-analytics-data"></a>Создание панелей мониторинга данных Log Analytics и предоставление общего доступа к ним
 

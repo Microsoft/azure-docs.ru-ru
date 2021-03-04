@@ -9,12 +9,12 @@ ms.subservice: extensions
 ms.date: 02/12/2021
 ms.reviewer: jushiman
 ms.custom: mimckitt
-ms.openlocfilehash: 1a276915f8132f2941bfb4425011c2d34454093b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 3350ff7aa05232173e5fd3b21451a76a0a40683d
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693889"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043717"
 ---
 # <a name="preview-orchestration-modes-for-virtual-machine-scale-sets-in-azure"></a>Предварительная версия: режимы оркестрации для масштабируемых наборов виртуальных машин в Azure 
 
@@ -73,7 +73,7 @@ az vm create –vmss "myVMSS"  –-platform_fault_domain 1
 | order by resourceGroup desc, name desc 
 ```
 
-Запрос ресурсов с помощью [графа ресурсов Azure](../governance/resource-graph/overview) — это удобный и эффективный способ запроса ресурсов Azure и СВОРАЧИВАНИЯ вызовов API к поставщику ресурсов. Граф ресурсов Azure — это в конечном итоге кэш, в котором новые или обновленные ресурсы могут не отражаться до 60 секунд. Вы можете:
+Запрос ресурсов с помощью [графа ресурсов Azure](../governance/resource-graph/overview.md) — это удобный и эффективный способ запроса ресурсов Azure и СВОРАЧИВАНИЯ вызовов API к поставщику ресурсов. Граф ресурсов Azure — это в конечном итоге кэш, в котором новые или обновленные ресурсы могут не отражаться до 60 секунд. Вы можете:
 - Выводит список виртуальных машин в группе ресурсов или подписке.
 - Используйте параметр expand, чтобы получить представление экземпляров (Назначение домена сбоя, состояния питания и подготовки) для всех виртуальных машин в подписке.
 - Используйте API получения виртуальной машины и команды, чтобы получить представление модели и экземпляра для одного экземпляра.

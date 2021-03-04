@@ -8,12 +8,12 @@ ms.date: 6/30/2020
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: fccd1bd6f808fad11946c6f0b0dff1f453b61d66
-ms.sourcegitcommit: eb546f78c31dfa65937b3a1be134fb5f153447d6
+ms.openlocfilehash: ace0847f1b6df646bf0d9a6c8507f4660ab02c8b
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99430634"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102046216"
 ---
 # <a name="create-and-provision-an-iot-edge-device-with-a-tpm-on-linux"></a>Создание и предоставление устройства IoT Edge с помощью доверенного платформенного модуля в Linux
 
@@ -31,7 +31,7 @@ ms.locfileid: "99430634"
 >
 > Если вы используете физическое устройство, можно перейти к разделу [Получение сведений о подготовке из физического устройства](#retrieve-provisioning-information-from-a-physical-device) этой статьи.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Компьютер для разработки с ОС Windows с [включенным Hyper-V](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v). В этой статье используется виртуальная машина Ubuntu Server, запущенная в Windows 10.
 * Действующий Центр Интернета вещей.
@@ -87,7 +87,7 @@ ms.locfileid: "99430634"
 
 4. Поставьте флажок **Включить доверенный платформенный модуль**.
 
-5. Нажмите кнопку **OK**.  
+5. Нажмите кнопку **ОК**.  
 
 ### <a name="start-the-virtual-machine-and-collect-tpm-data"></a>Запуск виртуальной машины и сбор данных доверенного платформенного модуля
 
@@ -240,8 +240,8 @@ ms.locfileid: "99430634"
 4. Скопируйте следующие сведения о доступе в файл правил.
 
    ```input
-   # allow iotedge access to tpm0
-   KERNEL=="tpm0", SUBSYSTEM=="tpm", OWNER="iotedge", MODE="0600"
+   # allow aziottpm access to tpm0
+   KERNEL=="tpm0", SUBSYSTEM=="tpm", OWNER="aziottpm", MODE="0600"
    ```
 
 5. Сохраните и закройте файл.

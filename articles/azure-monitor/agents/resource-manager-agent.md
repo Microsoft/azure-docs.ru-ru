@@ -1,17 +1,16 @@
 ---
 title: Примеры шаблонов Resource Manager для агентов
 description: Примеры шаблонов Azure Resource Manager для развертывания и настройки агентов виртуальных машин в Azure Monitor.
-ms.subservice: logs
 ms.topic: sample
 author: bwren
 ms.author: bwren
 ms.date: 11/17/2020
-ms.openlocfilehash: 4d4f9b7caed81f8c01e7e2d7e9f94ec3acf3ba92
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 9aae62b9f4ca74b11c4f62c44f6d310628d36316
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101737347"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102045774"
 ---
 # <a name="resource-manager-template-samples-for-agents-in-azure-monitor"></a>Примеры шаблонов Azure Resource Manager для агентов в Azure Monitor
 Эта статья содержит примеры [шаблонов Azure Resource Manager](../../azure-resource-manager/templates/template-syntax.md) для развертывания и настройки [агента Log Analytics](./log-analytics-agent.md) и [расширения системы диагностики](./diagnostics-extension-overview.md) для виртуальных машин в Azure Monitor. Каждый пример включает файл шаблона и файл параметров с примерами значений для предоставления шаблона.

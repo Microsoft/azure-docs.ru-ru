@@ -3,13 +3,12 @@ title: Сведения о том, как работает автоматиче�
 description: Узнайте, как работает процесс автоматической миграции.
 ms.topic: conceptual
 ms.date: 02/14/2021
-ms.subservice: alerts
-ms.openlocfilehash: 65409a1710a2b4c6b6d5a52c5129ec3e82dc7cc2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 92aaffcea7a7c96cd77aade318520b093eed3e14
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101734865"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102045468"
 ---
 # <a name="understand-the-automatic-migration-process-for-your-classic-alert-rules"></a>Общие сведения о процессе автоматической миграции для классических правил генерации оповещений
 

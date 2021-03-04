@@ -1,17 +1,16 @@
 ---
 title: Подключение Provance к Соединитель управления ИТ-услугами
 description: В этой статье содержатся сведения о том, как Provance с Соединитель управления ИТ-услугами (ITSMC) в Azure Monitor для централизованного мониторинга и управления рабочими элементами ITSM.
-ms.subservice: logs
 ms.topic: conceptual
 author: nolavime
 ms.author: v-jysur
 ms.date: 12/21/2020
-ms.openlocfilehash: 38aff6bf0851e97558fb8870a08f33bb0bcb0392
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 542b127823a73058f319e6a39c001bd563f042ae
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100624060"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102045383"
 ---
 # <a name="connect-provance-with-it-service-management-connector"></a>Подключение Provance к Соединитель управления ИТ-услугами
 
@@ -68,7 +67,7 @@ ms.locfileid: "100624060"
 
 - Вы можете создавать инциденты из оповещений или записей журналов Log Analytics, а также оповещений Azure в этом экземпляре Provance.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Обзор соединителя ITSM](itsmc-overview.md)
 * [Создание рабочих элементов ITSM из оповещений Azure](./itsmc-definition.md#create-itsm-work-items-from-azure-alerts)

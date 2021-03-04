@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 12/11/2020
 ms.author: mohitku
 ms.reviewer: tyao
-ms.openlocfilehash: 4c710792dd7966fad76b33954fdf7c2253cf18f0
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.openlocfilehash: 8752886bc5304de420083212d29ccd3e1cb14084
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96488244"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043700"
 ---
 # <a name="tuning-web-application-firewall-waf-for-azure-front-door"></a>Настройка брандмауэра веб-приложения (WAF) для передней дверцы Azure
  
@@ -38,9 +38,17 @@ UserId=20&captchaId=7&captchaId=15&comment="1=1"&rating=3
 
 При попытке выполнить запрос WAF блокирует трафик, содержащий строку *1 = 1* , в любом параметре или поле. Это строка, часто связанная с атакой путем внедрения кода SQL. Можно просмотреть журналы и просмотреть отметку времени запроса и правила, которые были заблокированы или сопоставлены.
  
-В следующем примере рассматривается `FrontdoorWebApplicationFirewallLog` журнал, сформированный из-за соответствия правилу.
+В следующем примере рассматривается `FrontdoorWebApplicationFirewallLog` журнал, сформированный из-за соответствия правилу. Следующий Log Analytics запрос можно использовать для поиска запросов, которые были заблокированы в течение последних 24 часов:
+
+```kusto
+AzureDiagnostics
+| where Category == 'FrontdoorWebApplicationFirewallLog'
+| where TimeGenerated > ago(1d)
+| where action_s == 'Block'
+
+```
  
-В поле "requestUri" можно увидеть, что запрос выполнен в `/api/Feedbacks/` конкретном случае. Далее мы найдем идентификатор правила `942110` в поле "ruleName". Зная идентификатор правила, можно переходить к [официальному репозиторию набора правил OWASP ModSecurity Core](https://github.com/coreruleset/coreruleset) и искать его по [идентификатору правила](https://github.com/coreruleset/coreruleset/blob/v3.1/dev/rules/REQUEST-942-APPLICATION-ATTACK-SQLI.conf) , чтобы просмотреть его код и понять, что именно соответствует этому правилу. 
+В этом `requestUri` поле можно увидеть, что запрос выполнен в `/api/Feedbacks/` конкретном случае. Далее мы найдем идентификатор правила `942110` в `ruleName` поле. Зная идентификатор правила, можно переходить к [официальному репозиторию набора правил OWASP ModSecurity Core](https://github.com/coreruleset/coreruleset) и искать его по [идентификатору правила](https://github.com/coreruleset/coreruleset/blob/v3.1/dev/rules/REQUEST-942-APPLICATION-ATTACK-SQLI.conf) , чтобы просмотреть его код и понять, что именно соответствует этому правилу. 
  
 Затем, установив флажок в `action` поле, мы видим, что для этого правила задано блокирование запросов после сопоставления, и мы подтверждаем, что запрос на самом деле заблокирован WAF, поскольку `policyMode` имеет значение `prevention` . 
  
@@ -196,6 +204,9 @@ UserId=20&captchaId=7&captchaId=15&comment="1=1"&rating=3
 Если вы хотите использовать Azure PowerShell для отключения управляемого правила, см [`PSAzureManagedRuleOverride`](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleoverrideobject?preserve-view=true&view=azps-4.7.0) . документацию по объектам. Если вы хотите использовать Azure CLI, см [`az network front-door waf-policy managed-rules override`](/cli/azure/ext/front-door/network/front-door/waf-policy/managed-rules/override?preserve-view=true&view=azure-cli-latest) . документацию.
 
 ![Правила WAF](../media/waf-front-door-tuning/waf-rules.png)
+
+> [!TIP]
+> Рекомендуется документировать любые изменения, внесенные в политику WAF. Включите примеры запросов, иллюстрирующие ложное срабатывание, и ясно Объясните, почему вы добавили пользовательское правило, отключили правило или набор правил или добавили исключение. Эта документация может быть полезной, если вы перерабатываете приложение в будущем и хотите убедиться, что изменения все еще действительны. Кроме того, она может помочь в том случае, если вы подлежит аудиту или хотите выровнять настройку политики WAF по умолчанию.
 
 ## <a name="finding-request-fields"></a>Поиск полей запроса
 

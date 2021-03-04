@@ -3,13 +3,12 @@ title: Правила действий для оповещений Azure Monitor
 description: Общие сведения о правилах действий в Azure Monitor и настройке их и управлении ими.
 ms.topic: conceptual
 ms.date: 04/25/2019
-ms.subservice: alerts
-ms.openlocfilehash: 1a837ac9aa94effa021d5395fb4856d1d5df2e90
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 07d179f557671a515a7933b64a25e6d41f75219b
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101718154"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102045621"
 ---
 # <a name="action-rules-preview"></a>Правила действий (Предварительная версия)
 

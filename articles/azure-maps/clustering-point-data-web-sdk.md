@@ -9,12 +9,12 @@ ms.service: azure-maps
 services: azure-maps
 manager: cpendle
 ms.custom: codepen, devx-track-js
-ms.openlocfilehash: e80465cf8d43918e6ed6da8ebb3b96f3f197e887
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+ms.openlocfilehash: 0af327f624d0fed648012ce1d12bacabca688cec
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97679959"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102044193"
 ---
 # <a name="clustering-point-data"></a>Кластеризация данных точек
 
@@ -26,17 +26,17 @@ ms.locfileid: "97679959"
 
 ## <a name="enabling-clustering-on-a-data-source"></a>Включение кластеризации в источнике данных
 
-Включите кластеризацию в классе `DataSource`, задав для параметра `cluster` значение true. Задайте `ClusterRadius`, чтобы выбрать соседние точки и объединить их в кластер. Значение `ClusterRadius` указывается в пикселях. Используйте `clusterMaxZoom`, чтобы указать уровень масштабирования для отключения логики кластеризации. Ниже приведен пример включения кластеризации в источнике данных.
+Включите кластеризацию в классе `DataSource`, задав для параметра `cluster` значение true. Задайте `clusterRadius` , чтобы выбрать соседние точки и объединить их в кластер. Значение `clusterRadius` указывается в пикселях. Используйте `clusterMaxZoom` , чтобы указать уровень масштабирования для отключения логики кластеризации. Ниже приведен пример включения кластеризации в источнике данных.
 
 ```javascript
 //Create a data source and enable clustering.
 var datasource = new atlas.source.DataSource(null, {
     //Tell the data source to cluster point data.
     cluster: true,
-
+    
     //The radius in pixels to cluster points together.
     clusterRadius: 45,
-
+    
     //The maximum zoom level in which clustering occurs.
     //If you zoom in more than this, all points are rendered as symbols.
     clusterMaxZoom: 15
@@ -46,7 +46,7 @@ var datasource = new atlas.source.DataSource(null, {
 > [!TIP]
 > Если две точки данных находятся близко друг к другу, возможно, что кластер никогда не будет разбит, независимо от того, насколько близко пользователь увеличит масштаб. Для решения этой задачи можно задать параметр `clusterMaxZoom`, чтобы отключить логику кластеризации и просто отобразить все данные.
 
-Ниже приведены дополнительные методы, предоставляемые классом `DataSource` для кластеризации:
+`DataSource`Класс предоставляет также следующие методы, связанные с кластеризацией.
 
 | Метод | Возвращаемый тип | Описание |
 |--------|-------------|-------------|

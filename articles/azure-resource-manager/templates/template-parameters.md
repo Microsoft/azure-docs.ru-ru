@@ -2,13 +2,13 @@
 title: Параметры в шаблонах
 description: Описывает, как определить параметры в шаблоне Azure Resource Manager (шаблон ARM) и в файле Бицеп.
 ms.topic: conceptual
-ms.date: 02/22/2021
-ms.openlocfilehash: 3b5da4b14fc338ba81be39d1e3ff6965294f0a0b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/03/2021
+ms.openlocfilehash: b23417766524204e490450568bb80b8c49e2d328
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101710640"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043938"
 ---
 # <a name="parameters-in-arm-templates"></a>Параметры в шаблонах ARM
 
@@ -215,6 +215,8 @@ param location string = resourceGroup().location
 param siteName string = 'site${uniqueString(resourceGroup().id)}'
 param hostingPlanName string = '${siteName}-plan'
 ```
+
+---
 
 ## <a name="length-constraints"></a>Ограничения длины
 

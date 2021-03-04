@@ -5,13 +5,12 @@ author: dkamstra
 ms.topic: conceptual
 ms.date: 02/25/2021
 ms.author: dukek
-ms.subservice: alerts
-ms.openlocfilehash: 50fb898e1ea55d0bcc09fc10dfee051ca7b1d809
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: ca43315258ea6439b08682898612137f7de1d61b
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101701167"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102045638"
 ---
 # <a name="create-and-manage-action-groups-in-the-azure-portal"></a>Создание групп действий и управление ими на портале Azure
 Группа действий — это коллекция параметров уведомлений, которые определены владельцем подписки Azure. Оповещения служб Azure Monitor и "Работоспособность служб" используют группы действий для уведомления пользователей о том, что оповещение активировано. Для разных оповещений может использоваться как одна группа действий, так разные. Это зависит от требований пользователя. 
@@ -176,7 +175,7 @@ ms.locfileid: "101701167"
 2. Включите группы действий для использования приложения Azure AD.
 
     > [!NOTE]
-    > Для выполнения этого сценария необходимо быть членом [роли администратора приложения Azure AD](../../active-directory/roles/permissions-reference.md#available-roles).
+    > Для выполнения этого сценария необходимо быть членом [роли администратора приложения Azure AD](../../active-directory/roles/permissions-reference.md#all-roles).
     
     - Измените вызов Connect-AzureAD в сценарии PowerShell, чтобы использовать свой идентификатор арендатора Azure AD.
     - Измените переменную скрипта PowerShell $myAzureADApplicationObjectId, чтобы использовать идентификатор объекта приложения Azure AD.

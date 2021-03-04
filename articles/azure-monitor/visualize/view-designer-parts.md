@@ -1,17 +1,16 @@
 ---
 title: Справочное руководство по частям конструктора представлений в Azure Monitor | Документация Майкрософт
 description: С помощью конструктора представлений в Azure Monitor можно создавать пользовательские представления, отображаемые в портал Azure и содержащие разнообразные визуализации данных в рабочей области Log Analytics. В этой статье содержится справка по параметрам элементов визуализации, доступных в пользовательских представлениях.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 03/12/2018
-ms.openlocfilehash: 074c5dda8ff8d5f837e8ea2a85c183c69421bedb
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6e971db01322fc031dd0fa8abe82f76a5b45d256
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101710878"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102045264"
 ---
 # <a name="reference-guide-to-view-designer-visualization-parts-in-azure-monitor"></a>Справочное руководство по просмотру элементов визуализации конструктора в Azure Monitor
 С помощью конструктора представлений в Azure Monitor можно создавать разнообразные пользовательские представления в портал Azure, которые могут помочь визуализировать данные в рабочей области Log Analytics. В этой статье содержится справка по параметрам элементов визуализации, доступных в пользовательских представлениях.

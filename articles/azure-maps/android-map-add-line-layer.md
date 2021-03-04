@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: azure-maps
 services: azure-maps
 manager: cpendle
-ms.openlocfilehash: 3e68be79a4405af103512a9009187857a0d9af39
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+ms.openlocfilehash: 62002b776262e97dd34db1d9ecd3b7b0e09f46f3
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97681744"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102044240"
 ---
 # <a name="add-a-line-layer-to-the-map-android-sdk"></a>Добавление слоя линии на карту (пакет SDK для Android)
 
@@ -110,20 +110,21 @@ map.layers.add(layer, "labels");
 
 ![Map с использованием линий с данными в стиле, подготовленных к просмотру на уровне линий](media/android-map-add-line-layer/android-line-layer-data-drive-style.png)
 
-## <a name="add-symbols-along-a-line"></a>Добавление символов вдоль линии
+## <a name="add-a-stroke-gradient-to-a-line"></a>Добавление градиента штрихов на линию
 
-В этом примере показано, как добавить значки стрелок вдоль линии на карте. При использовании слоя символов задайте `symbolPlacement` для параметра значение `SymbolPlacement.LINE` . Этот параметр позволяет отображать символы вдоль линии и вращать значки (0 градусов = вправо).
+К линии можно применить один цвет штриха. Можно также заполнить линию градиентом цветов, чтобы отобразить переход от одного сегмента к другому. Например, градиенты линий можно использовать для представления изменений по времени и расстоянию, а также различных температур в связанных линиях объектов. Чтобы применить эту функцию к строке, источник данных должен иметь `lineMetrics` параметр со значением `true` , а затем выражение цвета градиента может быть передано в `strokeColor` параметр строки. Выражение градиента контура должно ссылаться на выражение данных `lineProgress`, которое предоставляет вычисляемые показатели линий выражению.
 
 ```java
 //Create a data source and add it to the map.
-DataSource source = new DataSource();
+source = new DataSource(
+    //Enable line metrics on the data source. This is needed to enable support for strokeGradient.
+    withLineMetrics(true)
+);
 map.sources.add(source);
 
-//Load a image of an arrow into the map image sprite and call it "arrow-icon".
-map.images.add("arrow-icon", R.drawable.purple-arrow-right);
-
-//Create and add a line to the data source.
-source.add(LineString.fromLngLats(Arrays.asList(
+//Create a line and add it to the data source.
+source.add(LineString.fromLngLats(
+    Arrays.asList(
         Point.fromLngLat(-122.18822, 47.63208),
         Point.fromLngLat(-122.18204, 47.63196),
         Point.fromLngLat(-122.17243, 47.62976),
@@ -139,7 +140,65 @@ source.add(LineString.fromLngLats(Arrays.asList(
         Point.fromLngLat(-122.11595, 47.66712),
         Point.fromLngLat(-122.11063, 47.66735),
         Point.fromLngLat(-122.10668, 47.67035),
-        Point.fromLngLat(-122.10565, 47.67498))));
+        Point.fromLngLat(-122.10565, 47.67498)
+    )
+));
+
+//Create a line layer and pass in a gradient expression for the strokeGradient property.
+map.layers.add(new LineLayer(source,
+    strokeWidth(6f),
+
+    //Pass an interpolate or step expression that represents a gradient.
+    strokeGradient(
+        interpolate(
+            linear(),
+            lineProgress(),
+            stop(0, color(Color.BLUE)),
+            stop(0.1, color(Color.argb(255, 65, 105, 225))), //Royal Blue
+            stop(0.3, color(Color.CYAN)),
+            stop(0.5, color(Color.argb(255,0, 255, 0))), //Lime
+            stop(0.7, color(Color.YELLOW)),
+            stop(1, color(Color.RED))
+        )
+    )
+));
+```
+
+На следующем снимке экрана показан приведенный выше код, отображающий строку, отображенную с помощью цвета обводки градиента.
+
+![Сопоставьте со строкой, отображенной в виде градиентного контура, в слое линий](media/android-map-add-line-layer/android-line-layer-gradient.jpg)
+
+## <a name="add-symbols-along-a-line"></a>Добавление символов вдоль линии
+
+В этом примере показано, как добавить значки стрелок вдоль линии на карте. При использовании слоя символов задайте `symbolPlacement` для параметра значение `SymbolPlacement.LINE` . Этот параметр позволяет отображать символы вдоль линии и вращать значки (0 градусов = вправо).
+
+```java
+//Create a data source and add it to the map.
+DataSource source = new DataSource();
+map.sources.add(source);
+
+//Load a image of an arrow into the map image sprite and call it "arrow-icon".
+map.images.add("arrow-icon", R.drawable.purple-arrow-right);
+
+//Create and add a line to the data source.
+source.add(LineString.fromLngLats(Arrays.asList(
+    Point.fromLngLat(-122.18822, 47.63208),
+    Point.fromLngLat(-122.18204, 47.63196),
+    Point.fromLngLat(-122.17243, 47.62976),
+    Point.fromLngLat(-122.16419, 47.63023),
+    Point.fromLngLat(-122.15852, 47.62942),
+    Point.fromLngLat(-122.15183, 47.62988),
+    Point.fromLngLat(-122.14256, 47.63451),
+    Point.fromLngLat(-122.13483, 47.64041),
+    Point.fromLngLat(-122.13466, 47.64422),
+    Point.fromLngLat(-122.13844, 47.65440),
+    Point.fromLngLat(-122.13277, 47.66515),
+    Point.fromLngLat(-122.12779, 47.66712),
+    Point.fromLngLat(-122.11595, 47.66712),
+    Point.fromLngLat(-122.11063, 47.66735),
+    Point.fromLngLat(-122.10668, 47.67035),
+    Point.fromLngLat(-122.10565, 47.67498)))
+);
 
 //Create a line layer and add it to the map.
 map.layers.add(new LineLayer(source,
@@ -175,7 +234,7 @@ map.layers.add(new SymbolLayer(source,
 |:-----------------------------------------------------------------------:|
 |                                                  |
 
-На следующем снимке экрана показан приведенный выше код, отображающий строку со значками стрелок.
+На следующем снимке экрана показан приведенный выше код, отображающий линию со значками со стрелками.
 
 ![Сопоставьте линии с данными в стиле диска с линиями со стрелками, отображаемыми в слое линий](media/android-map-add-line-layer/android-symbols-along-line-path.png)
 

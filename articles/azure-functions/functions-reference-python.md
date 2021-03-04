@@ -4,12 +4,12 @@ description: Сведения о разработке функций на язы
 ms.topic: article
 ms.date: 11/4/2020
 ms.custom: devx-track-python
-ms.openlocfilehash: 78965a1a09272663c52469b8ccd91988f30b53cc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0829ef9a6b63866c2527e521ed7edf48a3249392
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101708702"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102044261"
 ---
 # <a name="azure-functions-python-developer-guide"></a>Справочник разработчика Python. Функции Azure
 
@@ -22,7 +22,7 @@ ms.locfileid: "101708702"
 | <ul><li>[Функция Python, использующая Visual Studio Code](./create-first-function-vs-code-csharp.md?pivots=programming-language-python)</li><li>[Функция Python с терминалом/Командная строка](./create-first-function-cli-csharp.md?pivots=programming-language-python)</li></ul> | <ul><li>[Руководство для разработчиков](functions-reference.md)</li><li>[Сравнение вариантов размещения](functions-scale.md)</li><li>[&nbsp;Вопросы производительности](functions-best-practices.md)</li></ul> | <ul><li>[Классификация изображений с помощью PyTorch](machine-learning-pytorch.md)</li><li>[Пример службы автоматизации Azure](/samples/azure-samples/azure-functions-python-list-resource-groups/azure-functions-python-sample-list-resource-groups/)</li><li>[Машинное обучение с помощью TensorFlow](functions-machine-learning-tensorflow.md)</li><li>[Обзор примеров Python](/samples/browse/?products=azure-functions&languages=python)</li></ul> |
 
 > [!NOTE]
-> Хотя вы можете [разрабатывать функции Azure на основе Python локально в Windows](./azure-functions/create-first-function-vs-code-python#run-the-function-locally), Python поддерживается только в плане размещения на основе Linux при работе в Azure. См. список поддерживаемых сочетаний [операционных систем и среды выполнения](./azure-functions/functions-scale#operating-systemruntime) .
+> Хотя вы можете [разрабатывать функции Azure на основе Python локально в Windows](create-first-function-vs-code-python.md#run-the-function-locally), Python поддерживается только в плане размещения на основе Linux при работе в Azure. См. список поддерживаемых сочетаний [операционных систем и среды выполнения](functions-scale.md#operating-systemruntime) .
 
 ## <a name="programming-model"></a>Модель программирования
 

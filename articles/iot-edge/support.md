@@ -8,20 +8,22 @@ ms.date: 02/11/2021
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 9a9361df817db46028259d8792d9a1431df4ce67
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.openlocfilehash: 75beb214682536b996cf4896588ea32d568579f1
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100516331"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102045995"
 ---
 # <a name="azure-iot-edge-supported-systems"></a>Поддерживаемые Azure IoT Edge системы
 
 В этой статье приведены сведения о системах и компонентах, поддерживаемых IoT Edge официально или в предварительной версии.
 
+## <a name="get-support"></a>Техническая поддержка
+
 В случае возникновения проблем во время использования службы Azure IoT Edge есть несколько способов обратиться за помощью. Используйте один из приведенных ниже каналов, чтобы получить поддержку.
 
-**Отчеты об ошибках.** Основная часть усилий по разработке продукта Azure IoT Edge, прилагается в рамках проекта IoT Edge с открытым кодом. Вы можете сообщить об ошибках на соответствующей [странице](https://github.com/azure/iotedge/issues) для этого проекта. Внесенные исправления очень быстро попадают из проекта в обновление продукта.
+**Сообщать об ошибках** — большинство разработчиков, которые переходят в Azure IOT Edge продукт, выполняются в IOT Edge проекте с открытым исходным кодом. Вы можете сообщить об ошибках на соответствующей [странице](https://github.com/azure/iotedge/issues) для этого проекта. Внесенные исправления очень быстро попадают из проекта в обновление продукта.
 
 **Служба поддержки пользователей корпорации Майкрософт**. Пользователи, приобретающие [план поддержки,](https://azure.microsoft.com/support/plans/) могут обращаться в службу поддержки пользователей корпорации Майкрософт, создав запрос прямо на [портале Azure](https://ms.portal.azure.com/signin/index/?feature.settingsportalinstance=mpac).
 
@@ -68,8 +70,8 @@ Azure IoT Edge поддерживает модули, созданные как 
 | ---------------- | ----- | ------- | ----- |
 | Растяжение ОС Raspberry Pi |  | ![Растягивание ОС Raspberry Pi + ARM32v7](./media/tutorial-c-module/green-check.png) |  |
 | Ubuntu Server 18.04 | ![Ubuntu Server 18.04 + AMD64](./media/tutorial-c-module/green-check.png) |  | Общедоступная предварительная версия |
-| Windows 10 Pro | Общедоступная предварительная версия |  |  |
-| Windows 10 Корпоративная | Общедоступная предварительная версия |  |  |
+| Windows 10 Pro | Общедоступная предварительная версия |  |  |
+| Windows 10 Корпоративная | Общедоступная предварительная версия |  |  |
 | Windows 10 IoT Корпоративная | Общедоступная предварительная версия |  |  |
 | Windows Server 2019 | Общедоступная предварительная версия |  |  |
 

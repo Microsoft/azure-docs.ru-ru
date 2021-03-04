@@ -6,14 +6,14 @@ ms.service: virtual-machines-windows
 ms.subservice: disks
 ms.workload: infrastructure-services
 ms.topic: how-to
-ms.date: 01/26/2021
+ms.date: 03/03/2021
 ms.author: cynthn
-ms.openlocfilehash: a995cd1d02438ae3be7091ba55e945549558829d
-ms.sourcegitcommit: d1e56036f3ecb79bfbdb2d6a84e6932ee6a0830e
+ms.openlocfilehash: 509b6efbbd8f40b0787ea2cc9a4bdc1b3370a0f0
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99055201"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102044363"
 ---
 # <a name="how-to-detach-a-data-disk-from-a-windows-virtual-machine"></a>Отключение диска от виртуальной машины Windows
 
@@ -53,10 +53,10 @@ Update-AzVM `
 1. В меню слева выберите **Виртуальные машины**.
 1. Выберите виртуальную машину с диском данных, который нужно отключить.
 1. В меню **Параметры** выберите пункт **Диски**.
-1. В области **диски** , расположенной справа от диска данных, который нужно отключить, нажмите кнопку **отсоединить по оси X** .
+1. В области **диски** в правой части диска данных, который нужно отключить, нажмите кнопку **X** , чтобы отсоединиться.
 1. В верхней части страницы щелкните **Сохранить**, чтобы сохранить изменения.
 
-Диск остается в хранилище, но он уже не подключен к виртуальной машине.
+Диск остается в хранилище, но он уже не подключен к виртуальной машине. Диск не удаляется.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

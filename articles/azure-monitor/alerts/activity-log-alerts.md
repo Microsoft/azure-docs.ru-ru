@@ -1,15 +1,14 @@
 ---
 title: Оповещения для журнала действий в Azure Monitor
 description: Уведомление посредством SMS, веб-перехватчика, электронной почты и других средств при возникновении определенных событий в журнале действий.
-ms.subservice: alerts
 ms.topic: conceptual
 ms.date: 09/17/2018
-ms.openlocfilehash: a8ab9520527a0d5ebc1de698f84e9f64e28b869a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2762a9fbeef516d62067b670b14ea54f4363d7fc
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101718120"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102045502"
 ---
 # <a name="alerts-on-activity-log"></a>Оповещения на основе журнала действий
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.service: virtual-machines
 ms.subservice: disks
 ms.custom: references_regions
-ms.openlocfilehash: 6cafbff86a55ad0bed7da17fcef1aea2b0a53d1b
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: f0f3baf1bf56f958408f789961812c0555f289f1
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101680207"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043649"
 ---
 # <a name="redundancy-options-for-managed-disks"></a>Параметры избыточности для управляемых дисков
 
@@ -34,7 +34,7 @@ ms.locfileid: "101680207"
 
 Хранилище, избыточное в пределах зоны (ZRS), синхронно реплицирует управляемый диск Azure по трем зонам доступности Azure в выбранном регионе. Каждая зона доступности — это отдельное физическое расположение с независимым питанием, охлаждением и сетью. 
 
-Диски ZRS позволяют восстанавливаться после сбоев в зонах доступности. Если вся зона остановлена, диск ZRS можно подключить к виртуальной машине в другой зоне. Вы также можете использовать диски ZRS совместно с общими дисками, чтобы обеспечить более высокую доступность для кластерных или распределенных приложений, таких как SQL FCI, SAP ASCS/SCS или GFS2. Вы можете подключить общий диск ZRS к первичным и вторичным виртуальным машинам в разных зонах, чтобы воспользоваться преимуществами ZRS и [зоны доступности](../availability-zones/az-overview.md). В случае сбоя основной зоны можно быстро выполнить отработку отказа на вторичную виртуальную машину, используя [постоянное резервирование SCSI](disks-shared-enable.md#supported-scsi-pr-commands).
+Диски ZRS позволяют восстанавливаться после сбоев в зонах доступности. Если вся зона остановлена, диск ZRS можно подключить к виртуальной машине в другой зоне. Вы также можете использовать диски ZRS в качестве общего диска, чтобы обеспечить более высокую доступность для кластерных или распределенных приложений, таких как SQL FCI, SAP ASCS/SCS или GFS2. Вы можете подключить общий диск ZRS к первичным и вторичным виртуальным машинам в разных зонах, чтобы воспользоваться преимуществами ZRS и [зоны доступности](../availability-zones/az-overview.md). В случае сбоя основной зоны можно быстро выполнить отработку отказа на вторичную виртуальную машину, используя [постоянное резервирование SCSI](disks-shared-enable.md#supported-scsi-pr-commands).
 
 ### <a name="limitations"></a>Ограничения
 
@@ -56,7 +56,7 @@ ms.locfileid: "101680207"
 
 ### <a name="create-zrs-managed-disks"></a>Создание управляемых дисков ZRS
 
-Для `2020-12-01` создания диска ZRS необходимо использовать API с шаблоном Azure Resource Manager.
+Используйте `2020-12-01` API с шаблоном Azure Resource Manager, чтобы создать диск ZRS.
 
 #### <a name="create-a-vm-with-zrs-disks"></a>Создание виртуальной машины с ZRS дисками
 
@@ -120,3 +120,7 @@ New-AzResourceGroupDeployment -ResourceGroupName zrstesting `
 -osDiskType "StandardSSD_LRS" `
 -dataDiskType "Premium_ZRS" `
 ```
+
+## <a name="next-steps"></a>Дальнейшие действия
+
+- Используйте эти примеры [Azure Resource Manager шаблонов, чтобы создать виртуальную машину с дисками ZRS](https://github.com/Azure-Samples/managed-disks-powershell-getting-started/tree/master/ZRSDisks).

@@ -6,17 +6,17 @@ author: tamram
 ms.service: storage
 ms.devlang: java
 ms.topic: article
-ms.date: 05/11/2017
+ms.date: 02/18/2021
 ms.author: tamram
 ms.reviewer: ozgun
 ms.subservice: common
 ms.custom: devx-track-java
-ms.openlocfilehash: fafce52f9d760fac0d5c3f0ea1be2480547c5d4d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 78baaa3f794bed870b40fb3975f6b80ff37e90f0
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91817525"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043734"
 ---
 # <a name="client-side-encryption-and-azure-key-vault-with-java-for-microsoft-azure-storage"></a>Шифрование на стороне клиента с помощью Java для службы хранилища Microsoft Azure
 [!INCLUDE [storage-selector-client-side-encryption-include](../../../includes/storage-selector-client-side-encryption-include.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "91817525"
 Клиентская библиотека хранилища использует алгоритм [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) для шифрования данных пользователя. Говоря более конкретно, это режим [цепочки цифровых блоков или CBC](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher-block_chaining_.28CBC.29) вместе с AES. Каждая служба работает по-разному, поэтому каждая служба рассматривается отдельно.
 
 ### <a name="blobs"></a>BLOB-объекты
-Клиентская библиотека в настоящий момент полностью поддерживает только шифрование больших двоичных объектов. В частности, шифрование поддерживается, когда пользователи применяют методы **upload**\* или метод **openOutputStream**. Что касается загрузок, то поддерживаются как полные, так и диапазонные загрузки.  
+Клиентская библиотека в настоящий момент полностью поддерживает только шифрование больших двоичных объектов. В частности, шифрование поддерживается, когда пользователи используют методы **upload** _ или _ *openOutputStream**. Что касается загрузок, то поддерживаются как полные, так и диапазонные загрузки.  
 
 Во время шифрования клиентская библиотека создает случайный вектор инициализации IV размером 16 байт, случайный ключ шифрования содержимого CEK размером 32 байта и выполняет конвертное шифрование данных большого двоичного объекта, используя полученную информацию. Затем зашифрованный ключ CEK и дополнительные метаданные шифрования сохраняются в службе как метаданные большого двоичного объекта вместе с зашифрованным большим двоичным объектом.
 
@@ -59,7 +59,7 @@ ms.locfileid: "91817525"
 
 Загрузка зашифрованного большого двоичного объекта включает извлечение содержимого всего большого двоичного объекта с помощью методов **download** / **опенинпутстреам** . Зашифрованный ключ CEK расшифровывается и используется вместе с ключом IV (который в данном случае хранится как метаданные большого двоичного объекта) для передачи расшифрованных данных обратно пользователям.
 
-Загрузка произвольного диапазона (методов**downloadrange \** ) в зашифрованном большом двоичном объекте включает в себя настройку диапазона, предоставленного пользователями, для получения небольшого объема дополнительных данных, которые можно использовать для успешной расшифровки запрошенного диапазона.  
+Загрузка произвольного диапазона (методов **downloadrange \** ) в зашифрованном большом двоичном объекте включает в себя настройку диапазона, предоставленного пользователями, для получения небольшого объема дополнительных данных, которые можно использовать для успешной расшифровки запрошенного диапазона.  
 
 Все типы больших двоичных объектов (блочные, страничные и инкрементируемые) могут быть зашифрованы и расшифрованы с помощью этой схемы.
 
@@ -103,7 +103,7 @@ ms.locfileid: "91817525"
 > 
 > Чтобы выполнять операции запроса, следует указать сопоставитель ключа, который способен распознавать все ключи в результирующем наборе. Если сущность в результате запроса не может быть разрешена для поставщика, клиентская библиотека выдаст ошибку. Для запроса, который обращается к серверу, клиентская библиотека добавляет по умолчанию специальные свойства метаданных шифрования (_ClientEncryptionMetadata1 и _ClientEncryptionMetadata2) к выбранным столбцам.
 
-## <a name="azure-key-vault"></a>Хранилище ключей Azure;
+## <a name="azure-key-vault"></a>Azure Key Vault
 Хранилище ключей Azure помогает защитить криптографические ключи и секреты, используемые облачными приложениями и службами. Хранилище ключей Azure позволяет шифровать ключи и секреты (например, ключи проверки подлинности, ключи учетных записей хранения, ключи шифрования данных, PFX-файлы и пароли), используя ключи, защищенные аппаратными модулями безопасности. Дополнительные сведения см. в статье [Что такое хранилище ключей Azure?](../../key-vault/general/overview.md)
 
 Клиентская библиотека хранилища использует основную библиотеку хранилища ключей для обеспечения общей платформы для управления ключами в Azure. Пользователи также получают дополнительное преимущество от использования библиотеки хранилища ключей. Библиотека расширений предоставляет полезные функции для локальных и облачных поставщиков ключей с простым и симметричным алгоритмом (RSA), а также функции агрегирования и кэширования.
@@ -154,6 +154,12 @@ ms.locfileid: "91817525"
 ### <a name="blob-service-encryption"></a>Шифрование службы BLOB-объектов
 Создайте объект **BlobEncryptionPolicy** и задайте его в параметрах запроса (для каждого API или на уровне клиента с помощью параметра **DefaultRequestOptions**). Все остальные задачи решаются клиентской библиотекой.
 
+# <a name="java-v12"></a>[Версия для Java 12](#tab/java)
+
+Сейчас мы работаем над созданием фрагментов кода, отражающих версию 12. x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. [в статье объявление клиентских библиотек службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="java-v8"></a>[V8 Java](#tab/java8)
+
 ```java
 // Create the IKey used for encryption.
 RsaKey key = new RsaKey("private:key1" /* key identifier */);
@@ -172,9 +178,16 @@ blob.upload(stream, size, null, options, null);
 ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 blob.download(outputStream, null, options, null);
 ```
+---
 
 ### <a name="queue-service-encryption"></a>Шифрование службы очередей
 Создайте объект **QueueEncryptionPolicy** и задайте его в параметрах запроса (для каждого API или на уровне клиента с помощью параметра **DefaultRequestOptions**). Все остальные задачи решаются клиентской библиотекой.
+
+# <a name="java-v12"></a>[Версия для Java 12](#tab/java)
+
+Сейчас мы работаем над созданием фрагментов кода, отражающих версию 12. x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. [в статье объявление клиентских библиотек службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="java-v8"></a>[V8 Java](#tab/java8)
 
 ```java
 // Create the IKey used for encryption.
@@ -192,11 +205,18 @@ queue.addMessage(message, 0, 0, options, null);
 // Retrieve message
 CloudQueueMessage retrMessage = queue.retrieveMessage(30, options, null);
 ```
+---
 
 ### <a name="table-service-encryption"></a>Шифрование службы таблиц
 Помимо создания политики шифрования и ее настройки в параметрах запроса необходимо либо указать **EncryptionResolver** в **TableRequestOptions**, либо задать атрибут [Encrypt] в методах получения и задания сущности.
 
 ### <a name="using-the-resolver"></a>Использование сопоставителя
+
+# <a name="java-v12"></a>[Версия для Java 12](#tab/java)
+
+Сейчас мы работаем над созданием фрагментов кода, отражающих версию 12. x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. [в статье объявление клиентских библиотек службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="java-v8"></a>[V8 Java](#tab/java8)
 
 ```java
 // Create the IKey used for encryption.
@@ -228,9 +248,16 @@ retrieveOptions.setEncryptionPolicy(policy);
 TableOperation operation = TableOperation.retrieve(ent.PartitionKey, ent.RowKey, DynamicTableEntity.class);
 TableResult result = currentTable.execute(operation, retrieveOptions, null);
 ```
+---
 
 ### <a name="using-attributes"></a>Использование атрибутов
 Как было показано выше, если сущность реализует TableEntity, методы задания и считывания свойства можно определить с помощью атрибута [Encrypt], а не с помощью **EncryptionResolver**.
+
+# <a name="java-v12"></a>[Версия для Java 12](#tab/java)
+
+Сейчас мы работаем над созданием фрагментов кода, отражающих версию 12. x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. [в статье объявление клиентских библиотек службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="java-v8"></a>[V8 Java](#tab/java8)
 
 ```java
 private string encryptedProperty1;
@@ -245,12 +272,13 @@ public void setEncryptedProperty1(final String encryptedProperty1) {
     this.encryptedProperty1 = encryptedProperty1;
 }
 ```
+---
 
 ## <a name="encryption-and-performance"></a>Шифрование и производительность
 
 Обратите внимание, что шифрование результатов анализа данных хранилища отрицательно влияет на производительность. Ключ содержимого и вектор инициализации необходимо создать, само содержимое — зашифровать, а дополнительные метаданные — отформатировать и передать. Эти издержки зависят от объема шифруемых данных. Мы рекомендуем клиентам всегда тестировать свои приложения для повышения производительности во время разработки.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Скачайте [клиентскую библиотеку хранилища Azure для пакета Maven Java](https://mvnrepository.com/artifact/com.microsoft.azure/azure-storage)  
 * Скачайте [клиентскую библиотеку хранилища Azure для исходного кода Java из GitHub](https://github.com/Azure/azure-storage-java)
