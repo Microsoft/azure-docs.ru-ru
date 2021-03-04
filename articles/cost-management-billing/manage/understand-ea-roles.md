@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/10/2020
 ms.author: banders
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: e8420f68fba40ddb61d06770f9f5bc2fafe5616a
-ms.sourcegitcommit: 77ab078e255034bd1a8db499eec6fe9b093a8e4f
+ms.openlocfilehash: 1ceed171b0516e293ffe58bca0225d3d3dfdb414
+ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97560531"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101094671"
 ---
 # <a name="managing-azure-enterprise-agreement-roles"></a>Управление ролями для Соглашений Enterprise в Azure
 
@@ -197,12 +197,12 @@ ms.locfileid: "97560531"
 |Владелец учетной записи или администратор отдела|✘ Отключено |none|Нет данных о ценах|
 |None|Неприменимо |Владелец|Розничная цена|
 
-Роль администратора предприятия и политики просмотра расходов настраиваются на Enterprise Portal. Роль Azure можно изменить на портале Azure. Дополнительные сведения см. в статье [Управление доступом с помощью RBAC и портала Azure](../../role-based-access-control/role-assignments-portal.md).
+Роль администратора предприятия и политики просмотра расходов настраиваются на Enterprise Portal. Роль Azure можно изменить на портале Azure. Дополнительные сведения см. в статье [Назначение ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
 
 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Управление доступом к сведениям о счетах Azure с помощью управления доступом на основе ролей](manage-billing-access.md)
-- [Управление доступом с помощью RBAC и портала Azure](../../role-based-access-control/role-assignments-portal.md)
+- [Назначение ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md)
 - [Встроенные роли Azure](../../role-based-access-control/built-in-roles.md)

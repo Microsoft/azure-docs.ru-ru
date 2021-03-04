@@ -9,16 +9,15 @@ ms.author: mikben
 ms.date: 09/30/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 2448840fcbbea686972f8f948d428bda7b3c2bf2
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: e4518fb41c839d83c59cd245b39c547ddb02b68e
+ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100391751"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "101658220"
 ---
 # <a name="sms-client-library-overview"></a>Общие сведения о клиентской библиотеке SMS
 
-[!INCLUDE [Public Preview Notice](../../includes/public-preview-include.md)]
 [!INCLUDE [Regional Availability Notice](../../includes/regional-availability-include.md)]
 
 Клиентские библиотеки Служб коммуникации Azure для текстовых сообщений (SMS) можно использовать для добавления в приложения возможности обмена текстовыми сообщениями.
