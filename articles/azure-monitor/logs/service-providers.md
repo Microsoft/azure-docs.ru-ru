@@ -1,17 +1,16 @@
 ---
 title: Журналы Azure Monitor для поставщиков услуг | Документация Майкрософт
 description: Журналы Azure Monitor могут помочь поставщикам управляемых служб (MSP), большим предприятиям, независимым поставщикам программного обеспечения (ISV) и поставщикам услуг размещения управлять и отслеживать серверы в локальной или облачной инфраструктуре клиента.
-ms.subservice: logs
 ms.topic: conceptual
 author: MeirMen
 ms.author: meirm
 ms.date: 02/03/2020
-ms.openlocfilehash: 09b5a6bd11db1a8faa29e7b3871156f9c28d1140
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 5f1421da10c4748dd78e4c6790568285fa646979
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101717389"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047117"
 ---
 # <a name="azure-monitor-logs-for-service-providers"></a>Журналы Azure Monitor для поставщиков услуг
 

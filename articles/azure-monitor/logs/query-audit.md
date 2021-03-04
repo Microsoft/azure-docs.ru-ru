@@ -1,17 +1,16 @@
 ---
 title: Аудит запросов в Azure Monitor запросов журналов
 description: Сведения журналов аудита запросов журнала, которые предоставляют данные телеметрии о выполнении запросов журнала в Azure Monitor.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 09/03/2020
-ms.openlocfilehash: 70741e91830027e210afce75e93d931d70bdbed1
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 28dfac7de8e73adf577b0a13e5fbd8740b1e3b06
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100623727"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047423"
 ---
 # <a name="audit-queries-in-azure-monitor-logs-preview"></a>Аудит запросов в журналах Azure Monitor (Предварительная версия)
 Журналы аудита запросов предоставляют данные телеметрии о выполнении запросов журнала в Azure Monitor. Сюда входят такие сведения, как время выполнения запроса, его выполнение, использование инструмента, текст запроса и статистика производительности, описывающая выполнение запроса.
@@ -72,7 +71,7 @@ ms.locfileid: "100623727"
 ## <a name="costs"></a>Затраты  
 Плата за расширение "Диагностика Azure" не взимается, но, возможно, вам придется оплатить получение данных. На странице [Цены на Azure Monitor](https://azure.microsoft.com/pricing/details/monitor/) указаны назначения для сбора данных.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о [параметрах диагностики](../essentials/diagnostic-settings.md).
 - Дополнительные сведения об [оптимизации запросов журналов](query-optimization.md).

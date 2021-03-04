@@ -1,15 +1,14 @@
 ---
 title: Отслеживание служб и приложений Azure с помощью Grafana
 description: Маршрутизация данных Azure Monitor и Application Insights для просмотра в Grafana.
-ms.subservice: ''
 ms.topic: conceptual
 ms.date: 11/06/2017
-ms.openlocfilehash: e882b9d19564dab1ef2c0abb34b5d557cb4a5821
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: decd0353bcb2cf048fd5591ea8c895cf22944809
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100625539"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048664"
 ---
 # <a name="monitor-your-azure-services-in-grafana"></a>Мониторинг служб Azure в Grafana
 Теперь можно отслеживать службы Azure и приложения из [Grafana](https://grafana.com/) с помощью [подключаемого модуля источника данных Azure Monitor](https://grafana.com/plugins/grafana-azure-monitor-datasource). Подключаемый модуль собирает данные производительности приложения, собранные Azure Monitor, включая различные журналы и метрики. Затем эти данные можно отобразить на панели мониторинга Grafana.
@@ -157,5 +156,5 @@ Usage
 1. В меню слева на портале Azure щелкните **Группы ресурсов**, а затем выберите **Grafana**.
 2. На странице группы ресурсов щелкните **Удалить**, в текстовом поле введите **Grafana** и выберите **Удалить**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Обзор метрик в Microsoft Azure](../data-platform.md)

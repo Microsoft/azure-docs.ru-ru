@@ -9,12 +9,12 @@ ms.service: azure-maps
 services: azure-maps
 manager: ''
 ms.custom: codepen, devx-track-js
-ms.openlocfilehash: 43de832095e2c2dd674a156da914ed26f1e472d0
-ms.sourcegitcommit: 4064234b1b4be79c411ef677569f29ae73e78731
+ms.openlocfilehash: f0c24940e606020dc45e5a000cfcb030fd806d4b
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92892950"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047491"
 ---
 # <a name="add-an-image-layer-to-a-map"></a>Добавление слоя изображений на карту
 
@@ -70,6 +70,9 @@ map.layers.add(new atlas.layer.ImageLayer({
 
 <iframe height='500' scrolling='no' title='Наземное наложение KML как слоя изображений' src='//codepen.io/azuremaps/embed/EOJgpj/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' loading="lazy" allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Изучите фрагмент кода <a href='https://codepen.io/azuremaps/pen/EOJgpj/'>наземное наложение KML как слоя изображений</a>, опубликованный для Azure Maps (<a href='https://codepen.io/azuremaps'>@azuremaps</a>) в репозитории <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+> [!TIP]
+> Используйте `getPixels` функции и `getPositions` класса Image Layer для преобразования между географическими координатами позиционированного слоя изображения и координатами пикселей локального изображения.
 
 ## <a name="customize-an-image-layer"></a>Настройка слоя изображений
 

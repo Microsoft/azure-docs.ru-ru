@@ -6,12 +6,12 @@ ms.author: sngun
 ms.service: cosmos-db
 ms.topic: conceptual
 ms.date: 05/28/2019
-ms.openlocfilehash: 7fe0817abfac3070f77303bb0d2d662d18010862
-ms.sourcegitcommit: b4e6b2627842a1183fce78bce6c6c7e088d6157b
+ms.openlocfilehash: 66f26cfa14d51a985e2bb420bec294f7ef3a6cd1
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99090509"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048154"
 ---
 # <a name="azure-cosmos-db-nosql-migration-and-application-development-partners"></a>Партнеры по разработке миграции и приложения Azure Cosmos DB для NoSQL
 [!INCLUDE[appliesto-all-apis](includes/appliesto-all-apis.md)]
@@ -26,12 +26,11 @@ ms.locfileid: "99090509"
 | [10thMagnitude](https://www.10thmagnitude.com/) | IoT, розница (Инвентаризация), операционная аналитика (Spark), бессерверная архитектура, разработка приложений | США |
 |[Altoros Development LLC](https://www.altoros.com/)  |  IoT, розница для персонализации (Инвентаризация), бессерверные архитектуры NoSQL миграция, разработка приложений|   США |
 |[Avanade](https://www.avanade.com/) | IoT, розница (Инвентаризация), бессерверная архитектура, разработка приложений | Австрия, Германия, Швейцария, Италия, Норвегия, Испания, Великобритания, Канада |
-|[Accenture](https://www.accenture.com/) | IoT, розница (Инвентаризация), бессерверная архитектура, разработка приложений |Global|
+|[Accenture](https://www.accenture.com/) | IoT, розница (Инвентаризация), бессерверная архитектура, разработка приложений |Глобальный|
 |[Capax Global LLC](https://www.capaxglobal.com/) | IoT, персонализация, розничная торговля (Инвентаризация), операционная аналитика (Spark), бессерверная архитектура, разработка приложений|    США     |  
 | [Capgemini](https://www.capgemini.com/) | Розничная торговля (Инвентаризация), IoT, операционная аналитика (Spark), разработка приложений | США, Франция, Великобритания, Нидерланды, Финляндия  |
 | [Cognizant](https://www.cognizant.com/) | IoT, персонализация, розничная торговля (Инвентаризация), операционная аналитика (Spark), разработка приложений |США, Канада, Великобритания, Дания, Нидерланды, Швейцария, Австралия, Япония |
 |[Infosys](https://www.infosys.com/)     | Разработка приложений      |    США    |  
-| [Лагаш Systems](https://www.devex.com/organizations/lagash-systems-131346) | IoT, бессерверная архитектура, разработка приложений | Аргентина, Чили, Колумбия, Мексика|
 | [Lambda3 Informatics](https://www.lambda3.com.br/) | Персонализация в реальном времени, розничные запасы, разработка приложений | Бразилия|
 |[Neal Analytics](https://www.nealanalytics.com/)    |     Персонализация, розничная торговля (Инвентаризация), операционная аналитика (Spark), разработка приложений  |    США     |  
 |[Pragmatic Works Software Inc.](https://www.pragmaticworks.com/)    |   Миграция NoSQL      |   США      |

@@ -7,12 +7,12 @@ author: dlepow
 ms.author: danlep
 ms.service: container-registry
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 4f3210fb46d5b4a772cdbb125cc5481d7cdd5995
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: 5dc5d27d0364bf64d9f8b695213c2f71cc822949
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100093019"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048494"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-container-registry"></a>Встроенные определения в Политике Azure для Реестра контейнеров Azure
 
@@ -26,6 +26,7 @@ ms.locfileid: "100093019"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
+- См. Руководство по [назначению политик и проверке соответствия](container-registry-azure-policy.md).
 - Ознакомьтесь со встроенными инициативами в [репозитории GitHub для Политики Azure](https://github.com/Azure/azure-policy).
 - Изучите статью о [структуре определения Политики Azure](../governance/policy/concepts/definition-structure.md).
 - Изучите [сведения о действии политик](../governance/policy/concepts/effects.md).

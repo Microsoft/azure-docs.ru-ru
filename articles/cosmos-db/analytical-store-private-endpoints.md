@@ -6,12 +6,12 @@ ms.service: cosmos-db
 ms.topic: how-to
 ms.date: 03/02/2021
 ms.author: anithaa
-ms.openlocfilehash: 9b07af72983931e0e1cab9e7d5093fd845b363bc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2f15b397fbceb9e097d94080ba03fba50a96ed06
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101692204"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048511"
 ---
 # <a name="configure-private-endpoints-for-azure-cosmos-db-analytical-store"></a>Настройка частных конечных точек для аналитического хранилища Azure Cosmos DB
 [!INCLUDE[appliesto-sql-mongodb-api](includes/appliesto-sql-mongodb-api.md)]
@@ -118,7 +118,8 @@ ms.locfileid: "101692204"
    az cosmosdb update --name MyCosmosDBDatabaseAccount --resource-group MyResourceGroup --network-acl-bypass AzureServices --network-acl-bypass-resource-ids "/subscriptions/subId/resourceGroups/rgName/providers/Microsoft.Synapse/workspaces/wsName"
    ```
 
-   > МЕТИМ Учетная запись Azure Cosmos DB и Рабочая область Azure синапсе Analytics должны находиться в одном клиенте Azure Active Directory (AD).
+   > [!NOTE]
+   > Учетная запись Azure Cosmos DB и Рабочая область Azure синапсе Analytics должны находиться в одном клиенте Azure Active Directory (AD).
 
 2. Теперь вы можете получить доступ к учетной записи из несерверных пулов SQL с помощью запросов T-SQL через ссылку Azure синапсе. Однако, чтобы обеспечить сетевую изоляцию данных в аналитическом хранилище, необходимо добавить в эту учетную запись собственную управляемую конечную точку с **аналитическим** управлением. В противном случае данные в аналитическом хранилище не будут заблокированы для общего доступа.
 

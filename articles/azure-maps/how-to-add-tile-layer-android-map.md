@@ -3,17 +3,18 @@ title: Добавление мозаичного слоя в карты Android 
 description: Узнайте, как добавить мозаичный слой на карту. См. пример, использующий Azure Maps пакет SDK для Android для добавления лепестковой диаграммы погоды на карту.
 author: rbrundritt
 ms.author: richbrun
-ms.date: 12/08/2020
+ms.date: 2/26/2021
 ms.topic: conceptual
 ms.service: azure-maps
 services: azure-maps
 manager: cpendle
-ms.openlocfilehash: 8ea6f44c47c5cd4d223b053640f65827f46db482
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+zone_pivot_groups: azure-maps-android
+ms.openlocfilehash: 6a920dc222cae4aedd77b667644de317637bbb69
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97679294"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047508"
 ---
 # <a name="add-a-tile-layer-to-a-map-android-sdk"></a>Добавление мозаичного слоя на карту (пакет SDK для Android)
 
@@ -36,6 +37,7 @@ URL-адрес фрагмента, передаваемый в слой фраг
 * `{quadkey}` — идентификатор quadkey на основе соглашения об именовании системы фрагментов Bing Maps.
 * `{bbox-epsg-3857}` — строка ограничивающего прямоугольника в формате `{west},{south},{east},{north}` в системе пространственных ссылок 3857 EPSG.
 * `{subdomain}` — Заполнитель для значений поддомена, если указано значение поддомена.
+* `azmapsdomain.invalid` — Заполнитель для согласования домена и проверки подлинности запросов плитки с теми же значениями, которые используются картой. Используйте его при вызове службы плитки, размещенной Azure Maps.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -44,6 +46,8 @@ URL-адрес фрагмента, передаваемый в слой фраг
 ## <a name="add-a-tile-layer-to-the-map"></a>Добавление мозаичного слоя на карту
 
 В этом примере показано, как создать мозаичный слой, указывающий на набор плиток. В этом образце используется система заполнения "x, y, Zoom". Источником этого мозаичного слоя является [проект опенсеамап](https://openseamap.org/index.php), который содержит исходные диаграммы морских публика. Часто при просмотре мозаичных слоев желательно иметь возможность четко видеть метки городов на карте. Это поведение можно сделать, вставив мозаичный слой под слоями "метка карты".
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 TileLayer layer = new TileLayer(
@@ -57,16 +61,31 @@ TileLayer layer = new TileLayer(
 map.layers.add(layer, "labels");
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+val layer = TileLayer(
+    tileUrl("https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"),
+    opacity(0.8f),
+    tileSize(256),
+    minSourceZoom(7),
+    maxSourceZoom(17)
+)
+
+map.layers.add(layer, "labels")
+```
+
+::: zone-end
+
 На следующем снимке экрана показан приведенный выше код, отображающий мозаичный слой сведений о морских на карте с темно-черным стилем.
 
 ![Схема Android, отображающая мозаичный слой](media/how-to-add-tile-layer-android-map/xyz-tile-layer-android.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения о способах установки стилей карт см. в следующей статье.
-
-> [!div class="nextstepaction"]
-> [Изменение стиля схемы](set-android-map-styles.md)
+Дополнительные сведения о способах наложения изображений на карте см. в следующей статье.
 
 > [!div class="nextstepaction"]
-> [Добавление тепловой карты](map-add-heat-map-layer-android.md)
+> [Слой изображения](map-add-image-layer-android.md)

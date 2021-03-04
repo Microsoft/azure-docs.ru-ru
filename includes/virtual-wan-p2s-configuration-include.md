@@ -4,13 +4,15 @@ ms.author: cherylmc
 ms.date: 02/23/2021
 ms.service: virtual-wan
 ms.topic: include
-ms.openlocfilehash: b5c0bdbb29af7b8894d86233520ff09854faa201
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 567c0bb75c30a1f0ccdcde7ec1b0f04f5d6e54c5
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101732503"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048269"
 ---
+[!INCLUDE [Portal feature rollout](virtual-wan-portal-feature-rollout.md)]
+
 1. Перейдите к разделу **Все ресурсы** и выберите созданную виртуальную глобальную сеть, а затем нажмите **Пользовательские конфигурации VPN** в меню слева.
 1. В верхней части страницы **Пользовательские конфигурации VPN** выберите **+Создать пользовательскую конфигурацию VPN**, чтобы открыть раздел **Создание пользовательской конфигурации VPN**.
 
@@ -23,7 +25,7 @@ ms.locfileid: "101732503"
    **IKEv2 VPN**
 
    * **Требования.** Если задан типа туннеля **IKEv2**, то отобразится сообщение о необходимости выбрать способ проверки подлинности. Для IKEv2 можно указать только один способ проверки подлинности. Вы можете выбрать сертификат Azure, Azure Active Directory или проверку подлинности на основе протокола RADIUS.
- 
+
    * **Пользовательские параметры IPsec.** Чтобы задать настройки для этапа IKE 1 и этапа IKE 2, установите переключатель IPsec в положение **Пользовательские** и выберите значения параметров. Дополнительные сведения о настройке см. в статье о [пользовательских параметрах IPsec](../articles/virtual-wan/point-to-site-ipsec.md).
 
      :::image type="content" source="media/virtual-wan-p2s-configuration/custom.png" alt-text="Снимок экрана с изображением переключателя IPsec в положении пользовательских настроек.":::

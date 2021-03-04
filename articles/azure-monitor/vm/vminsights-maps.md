@@ -1,17 +1,16 @@
 ---
 title: Просмотр зависимостей приложений с помощью VM Insights
 description: Map — это функция аналитики VM. Он автоматически обнаруживает компоненты приложений в системах Windows и Linux и сопоставляет взаимодействие между службами. В этой статье приводятся сведения о том, как использовать функцию Map в различных сценариях.
-ms.subservice: ''
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 03/20/2020
-ms.openlocfilehash: 19da3e3e02581ce9fad080bb23bc48dcb9a3ceb3
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 267ec0ed01fb85e9e29b0b8c9294d20d610db8fb
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101719650"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102046573"
 ---
 # <a name="use-the-map-feature-of-vm-insights-to-understand-application-components"></a>Использование функции Map из VM Insights для понимания компонентов приложения
 В Application Insights можно просматривать обнаруженные компоненты приложений на виртуальных машинах Windows и Linux, работающих в Azure или в среде. Наблюдать за виртуальными машинами можно двумя способами. Просмотрите карту непосредственно из виртуальной машины или просмотрите карту из Azure Monitor, чтобы просмотреть компоненты по группам виртуальных машин. Эта статья поможет вам понять эти два метода просмотра и использовать функцию Map. 

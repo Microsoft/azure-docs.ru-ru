@@ -1,18 +1,17 @@
 ---
 title: Сбор данных из виртуальной машины Azure с помощью Azure Monitor | Документация Майкрософт
 description: Узнайте, как включить расширение виртуальной машины для агента Log Analytics и сбор данных из виртуальных машин Azure с помощью Log Analytics.
-ms.subservice: logs
 ms.topic: quickstart
 author: bwren
 ms.author: bwren
 ms.date: 08/19/2019
 ms.custom: mvc, sec-javascript-october2019
-ms.openlocfilehash: 2e267682118c4ba6fe25c11a4ae5088916d0e6fb
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2f73614253a1ce442d2a93ce5e9b9d7051542511
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101736990"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047032"
 ---
 # <a name="collect-data-from-an-azure-virtual-machine-with-azure-monitor"></a>Сбор данных из виртуальной машины Azure с помощью Azure Monitor
 

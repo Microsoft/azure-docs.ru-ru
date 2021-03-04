@@ -1,17 +1,16 @@
 ---
 title: Примеры шаблонов Resource Manager для запросов журнала
 description: Примеры шаблонов Azure Resource Manager для развертывания запросов журнала Azure Monitor.
-ms.subservice: logs
 ms.topic: sample
 author: bwren
 ms.author: bwren
 ms.date: 05/18/2020
-ms.openlocfilehash: ad8d984f7d363499ed2e85d7d46b95c05460f3eb
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 97b3ac4d693afb8ee2f2dba362e1e2f307e50f78
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100598254"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047270"
 ---
 # <a name="resource-manager-template-samples-for-log-queries-in-azure-monitor"></a>Примеры шаблонов Resource Manager для запросов журнала в Azure Monitor
 В этой статье представлены примеры [шаблонов Azure Resource Manager](../../azure-resource-manager/templates/template-syntax.md) для создания и настройки запросов журнала в Azure Monitor. Каждый пример включает файл шаблона и файл параметров с примерами значений для предоставления шаблона.

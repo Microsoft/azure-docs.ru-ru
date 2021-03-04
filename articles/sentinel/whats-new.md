@@ -7,13 +7,13 @@ ms.author: bagol
 ms.service: azure-sentinel
 ms.subservice: azure-sentinel
 ms.topic: conceptual
-ms.date: 02/22/2021
-ms.openlocfilehash: 887245bbbefa1c0232313b638203206b623d506b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/03/2021
+ms.openlocfilehash: c466d7717dd1dad0ea9ee3f44088d1400cee083f
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101729714"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048188"
 ---
 # <a name="whats-new-in-azure-sentinel"></a>Новые возможности в Azure Sentinel
 
@@ -32,8 +32,44 @@ ms.locfileid: "101729714"
 
 ## <a name="february-2021"></a>Февраль 2021 года
 
+- [Сторонние соединители данных](#third-party-data-connectors)
 - [УЕБА Insights на странице сущностей](#ueba-insights-in-the-entity-page)
 - [Улучшенный поиск инцидентов](#improved-incident-search)
+
+### <a name="third-party-data-connectors"></a>Сторонние соединители данных
+
+Наша коллекция интеграции сторонних разработчиков продолжит расти, и в последние два месяца добавляются тридцать соединителей. Вот список:
+
+- [Agari Phishing Defense and Brand Protection](connect-agari-phishing-defense.md)
+- [Akamai Security Events](connect-akamai-security-events.md)
+- [Alsid for Active Directory](connect-alsid-active-directory.md)
+- [HTTP-сервер Apache](connect-apache-http-server.md)
+- [Aruba Клеарпасс](connect-aruba-clearpass.md)
+- [CylancePROTECT BlackBerry](connect-data-sources.md)
+- [Broadcom Symantec DLP](connect-broadcom-symantec-dlp.md)
+- [Cisco Фиреповер Естреамер](connect-data-sources.md)
+- [Cisco Meraki](connect-cisco-meraki.md)
+- [Cisco Umbrella](connect-cisco-umbrella.md)
+- [Унифицированная вычислительная система Cisco (UCS)](connect-cisco-ucs.md)
+- [Инспектор ESET Enterprise](connect-data-sources.md)
+- [Центр управления безопасностью ESET](connect-data-sources.md)
+- [Google Workspace (ранее G Suite)](connect-google-workspace.md)
+- [Imperva WAF Gateway](connect-imperva-waf-gateway.md)
+- [Juniper SRX](connect-juniper-srx.md)
+- [нетскопе](connect-data-sources.md)
+- [Журналы DNS Нкслог](connect-nxlog-dns.md)
+- [Аудит Нкслог Linux](connect-nxlog-linuxaudit.md)
+- [Платформа онапсис](connect-data-sources.md)
+- [Безопасность электронной почты proofpoint On Demand по запросу (POD)](connect-proofpoint-pod.md)
+- [База знаний по управлению уязвимостью Qualys](connect-data-sources.md)
+- [Salesforce Service Cloud](connect-salesforce-service-cloud.md)
+- [Брандмауэр SonicWall](connect-data-sources.md)
+- [Sophos Cloud Оптикс](connect-sophos-cloud-optix.md)
+- [Squid Proxy](connect-squid-proxy.md)
+- [Endpoint Protection Symantec](connect-data-sources.md)
+- [Thycotic Secret Server](connect-thycotic-secret-server.md)
+- [Тенденция Micro XDR](connect-data-sources.md)
+- [VMWare ESXi](connect-vmware-esxi.md)
 
 ### <a name="ueba-insights-in-the-entity-page"></a>УЕБА Insights на странице сущностей
 
@@ -66,6 +102,7 @@ ms.locfileid: "101729714"
 - [Мастер правил аналитики: Улучшенный интерфейс редактирования запросов (общедоступная Предварительная версия)](#analytics-rule-wizard-improved-query-editing-experience-public-preview)
 - [AZ. Секуритинсигхтс модуль PowerShell (общедоступная Предварительная версия)](#azsecurityinsights-powershell-module-public-preview)
 - [Соединитель базы данных SQL](#sql-database-connector)
+- [Соединитель Dynamics 365](#dynamics-365-connector)
 - [Улучшенные комментарии к инцидентам](#improved-incident-comments)
 - [Выделенные кластеры Log Analytics](#dedicated-log-analytics-clusters)
 - [Управляемые удостоверения приложений логики](#logic-apps-managed-identities)
@@ -81,7 +118,7 @@ ms.locfileid: "101729714"
 -   Расширенная поддержка автозаполнения.
 -   Проверки запросов в режиме реального времени. Ошибки в запросе теперь отображаются в виде красного блока на полосе прокрутки и в виде красной точки в имени вкладки **логики правила** . Кроме того, невозможно сохранить запрос с ошибками.
 
-Дополнительные сведения см. [в разделе Учебник. обнаружение угроз](tutorial-detect-threats-built-in.md)встроенными.
+Дополнительные сведения см. [в разделе Учебник. Создание настраиваемых правил аналитики для обнаружения угроз](tutorial-detect-threats-custom.md).
 ### <a name="azsecurityinsights-powershell-module-public-preview"></a>AZ. Секуритинсигхтс модуль PowerShell (общедоступная Предварительная версия)
 
 Azure Sentinel теперь поддерживает новый модуль PowerShell [AZ. секуритинсигхтс](https://www.powershellgallery.com/packages/Az.SecurityInsights/) .
@@ -99,6 +136,12 @@ Azure Sentinel теперь предоставляет соединитель б
 SQL Azure — это полностью управляемое ядро базы данных платформы как услуга (PaaS), которое обрабатывает большинство функций управления базами данных, таких как обновление, исправление, резервное копирование и мониторинг, без участия пользователя.
 
 Дополнительные сведения см. в статье [Подключение журналов диагностики и аудита базы данных SQL Azure](connect-azure-sql-logs.md).
+
+### <a name="dynamics-365-connector"></a>Соединитель Dynamics 365
+
+В Azure Sentinel теперь имеется соединитель для Microsoft Dynamics 365, который позволяет собираются журналы действий пользователя, администратора и поддержки Dynamics 365 в Azure Sentinel. Эти данные можно использовать для аудита всего выполнения действий по обработке данных и их анализа для возможных нарушений безопасности.
+
+Дополнительные сведения см. [в статье подключение журналов действий Dynamics 365 к Azure Sentinel](connect-dynamics-365.md).
 
 ### <a name="improved-incident-comments"></a>Улучшенные комментарии к инцидентам
 
@@ -185,15 +228,14 @@ Sentinel Azure использует агент Log Analytics для отправ
 Дополнительные сведения см. в [документации по log Analytics](../azure-monitor/agents/log-analytics-agent.md) и [заметках о выпуске агента log Analytics](https://github.com/microsoft/OMS-Agent-for-Linux/releases).
 ## <a name="november-2020"></a>Ноябрь 2020 г.
 
-- [Мониторинг Logic Apps модули Playbook в Azure Sentinel](#monitor-your-logic-apps-playbooks-in-azure-sentinel)
+- [Мониторинг работоспособности модули Playbook в Azure Sentinel](#monitor-your-playbooks-health-in-azure-sentinel)
 - [Соединитель защитника Microsoft 365 (общедоступная Предварительная версия)](#microsoft-365-defender-connector-public-preview)
-### <a name="monitor-your-logic-apps-playbooks-in-azure-sentinel"></a>Мониторинг Logic Apps модули Playbook в Azure Sentinel
 
-Azure Sentinel теперь интегрируется с [приложениями журналов Azure](../logic-apps/index.yml), облачной службой, которая помогает планировать, автоматизировать и управлять задачами, бизнес-процессами и рабочими процессами.
+### <a name="monitor-your-playbooks-health-in-azure-sentinel"></a>Мониторинг работоспособности модули Playbook в Azure Sentinel
 
-Используйте приложение логики Azure в Azure Sentinel в качестве сборник тренировочных заданий, которое может быть автоматически вызвано при создании инцидента или при рассмотрении и работе с инцидентами. 
+Azure Sentinel модули PlayBook основан на рабочих процессах, созданных в [Azure log App](../logic-apps/index.yml), облачной службе, которая помогает планировать, автоматизировать и координировать задачи, бизнес-процессы и рабочие процессы. Модули PlayBook может быть автоматически вызван при создании инцидента или при рассмотрении инцидентов и работе с ними. 
 
-Чтобы получить подробные сведения о работоспособности, производительности и использовании модули PlayBook, включая все, что вы добавили с помощью Azure Logic Apps, мы добавили [книгу Azure](../azure-monitor/visualize/workbooks-overview.md) с именем **мониторинг работоспособности модули PlayBook**. 
+Чтобы получить ценные сведения о работоспособности, производительности и использовании модули PlayBook, мы добавили [книгу](../azure-monitor/visualize/workbooks-overview.md) с именем **мониторинг работоспособности модули PlayBook**. 
 
 Используйте книгу **мониторинга работоспособности модули PlayBook** для наблюдения за работоспособностью модули PlayBook или поиска аномалий в количестве успешно выполненных или неудачных. 
 

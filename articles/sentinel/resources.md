@@ -13,83 +13,54 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/27/2021
+ms.date: 03/03/2021
 ms.author: yelevin
-ms.openlocfilehash: c404aa93669cd95dccb0ad185d71d2ec16256d0d
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 30cd0181ff2c5fbb8918921be3515818128a98d0
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100570438"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048239"
 ---
 # <a name="useful-resources-for-working-with-azure-sentinel"></a>Полезные ресурсы для работы с Azure Sentinel
 
-
-
 В этой статье перечислены ресурсы, которые могут помочь получить дополнительные сведения о работе с Sentinel.
 
-- **Соединители Azure Logic Apps**: <https://docs.microsoft.com/connectors/>
+## <a name="learn-more-about-creating-queries"></a>Дополнительные сведения о создании запросов
 
+Для создания запросов в Azure Sentinel используется Azure Monitor язык запросов Kusto Log Analytics (ККЛ). Дополнительные сведения см. в разделе:
 
-## <a name="auditing-and-reporting"></a>Аудит и создание отчетов
-Журналы аудита для Azure Sentinel хранятся в [журналах действий Azure](../azure-monitor/essentials/platform-logs-overview.md).
+- [Основные понятия ККЛ](/azure/data-explorer/kusto/concepts/)
+- [Запросы ККЛ](/azure/data-explorer/kusto/query/)
+- [Краткое справочное руководство по ККЛ](/azure/data-explorer/kql-quick-reference).
+- [Начало работы с запросами ККЛ](../azure-monitor/logs/get-started-queries.md)
 
-Можно проводить аудит следующих поддерживаемых операций.
+## <a name="learn-more-about-creating-automation"></a>Дополнительные сведения о создании службы автоматизации
 
-|Имя операции|    Тип ресурса|
-|----|----|
-|Создать или обновить книгу  |Microsoft. Insights/книги|
-|Удалить книгу    |Microsoft. Insights/книги|
-|Задание рабочего процесса   |Microsoft.Logic/workflows|
-|Удалить рабочий процесс    |Microsoft.Logic/workflows|
-|Создать сохраненный поиск    |Microsoft. OperationalInsights/workspaces/Саведсеарчес|
-|Удалить сохраненный поиск    |Microsoft. OperationalInsights/workspaces/Саведсеарчес|
-|Обновление правил генерации оповещений |Microsoft. Секуритинсигхтс/alertRules|
-|Удаление правил генерации оповещений |Microsoft. Секуритинсигхтс/alertRules|
-|Обновление действий ответа для правила генерации оповещений |Microsoft. Секуритинсигхтс/alertRules/действия|
-|Удаление действий ответа на правило генерации оповещений |Microsoft. Секуритинсигхтс/alertRules/действия|
-|Обновить закладки   |Microsoft. Секуритинсигхтс/закладки|
-|Удалить закладки   |Microsoft. Секуритинсигхтс/закладки|
-|Обновление вариантов   |Microsoft. Секуритинсигхтс/cases|
-|Исследование вариантов обновления  |Microsoft. Секуритинсигхтс/cases/расследования|
-|Создание комментариев к вариантам   |Microsoft. Секуритинсигхтс/cases/Comments|
-|Обновление соединителей данных |Microsoft. Секуритинсигхтс/Connects|
-|Удаление соединителей данных |Microsoft. Секуритинсигхтс/Connects|
-|Обновить параметры    |Microsoft. Секуритинсигхтс/параметры|
+Создайте автоматизацию в Azure Sentinel с помощью Azure Logic Apps с растущей галереей встроенных модули PlayBook. 
 
-### <a name="view-audit-and-reporting-data-in-azure-sentinel"></a>Просмотр данных аудита и отчетов в Azure Sentinel
+Дополнительные сведения см. в разделе [соединители Azure Logic Apps](https://docs.microsoft.com/connectors/).
 
-Вы можете просмотреть эти данные, перепотокая их из журнала действий Azure в Azure Sentinel, где вы сможете выполнять исследование и анализ.
+## <a name="comment-on-our-blogs-and-forums"></a>Комментарии к блогам и форумам
 
-1. Подключите источник данных [действий Azure](connect-azure-activity.md) . После этого события аудита передаются в виде потока в новую таблицу на экране **журналов** с именем AzureActivity.
+Мы любим слышать наших пользователей.
 
-1. Затем запросите данные с помощью ККЛ, как в любой другой таблице.
+В Течкоммунити пространстве для Azure Sentinel:
 
-    Например, чтобы узнать, кто был последним пользователем для изменения определенного правила аналитики, используйте следующий запрос (заменив `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` идентификатором правила, которое требуется проверить):
+- [Просмотр и комментирование последних записей блога](https://techcommunity.microsoft.com/t5/Azure-Sentinel/bg-p/AzureSentinelBlog)
+- [Опубликуйте свои вопросы об Azure Sentinel](https://techcommunity.microsoft.com/t5/Azure-Sentinel/bd-p/AzureSentinel)
 
-    ```kusto
-    AzureActivity
-    | where OperationNameValue startswith "MICROSOFT.SECURITYINSIGHTS/ALERTRULES/WRITE"
-    | where Properties contains "alertRules/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-    | project Caller , TimeGenerated , Properties
-    ```
+Вы также можете отправить предложения для улучшения с помощью нашей [пользовательской](https://feedback.azure.com/forums/920458-azure-sentinel) программы.
 
+## <a name="join-the-azure-sentinel-github-community"></a>Присоединяйтесь к сообществу Azure Sentinel GitHub
 
-## <a name="blogs-and-forums"></a>Блоги и форумы
+[Репозиторий Azure Sentinel GitHub](https://github.com/Azure/Azure-Sentinel) — это мощный ресурс для обнаружения угроз и автоматизации. 
 
-Мы любим слышать наших пользователей!
+Аналитики безопасности Майкрософт постоянно создают и добавляют новые книги, сборники схем, запросы поиска угроз и многое другое, публикуя их в сообществе, чтобы вы могли использовать их в вашей среде. 
 
-- **Опубликуйте свои вопросы** в [Течкоммунити пространстве](https://techcommunity.microsoft.com/t5/Azure-Sentinel/bd-p/AzureSentinel) для Azure Sentinel. 
+Загрузите пример содержимого из репозитория сообщества GitHub в частном сообществе, чтобы создать пользовательские книги, запросы на поиск, записные книжки и модули PlayBook для Azure Sentinel.
 
-- **Отправьте предложения для улучшения** с помощью нашей [пользовательской](https://feedback.azure.com/forums/920458-azure-sentinel) программы.
-
-- **Просмотр и комментирование** в записях блога Azure Sentinel:
-
-    - [течкоммунити](https://techcommunity.microsoft.com/t5/Azure-Sentinel/bg-p/AzureSentinelBlog) 
-    - [Microsoft Azure](https://azure.microsoft.com/blog/tag/azure-sentinel/)
-
-
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Получите сертификацию!](/learn/paths/security-ops-sentinel/)

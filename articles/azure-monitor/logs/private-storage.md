@@ -1,17 +1,16 @@
 ---
 title: Использование управляемых клиентом учетных записей хранения в Azure Monitor Log Analytics
 description: Использование собственной учетной записи хранения для Log Analytics сценариев
-ms.subservice: logs
 ms.topic: conceptual
 author: noakup
 ms.author: noakuper
 ms.date: 09/03/2020
-ms.openlocfilehash: 4161f2f4ced848eb02d395dfb2da35d64f0c0fb6
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 69b5927c73dac14c76b94a4ee5bbb21449f8ec98
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101723067"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047459"
 ---
 # <a name="using-customer-managed-storage-accounts-in-azure-monitor-log-analytics"></a>Использование управляемых клиентом учетных записей хранения в Azure Monitor Log Analytics
 
@@ -23,7 +22,7 @@ Log Analytics полагается на хранилище Azure в различ
 ## <a name="ingesting-azure-diagnostics-extension-logs-wadlad"></a>Прием журналов расширений система диагностики Azure (WAD/LAD)
 Агенты расширения система диагностики Azure (также называемые WAD и LAD для агентов Windows и Linux соответственно) собираются различные журналы операционной системы и сохраняют их в управляемой пользователем учетной записи хранения. Затем эти журналы можно принять в Log Analytics для их анализа и анализа.
 ### <a name="how-to-collect-azure-diagnostics-extension-logs-from-your-storage-account"></a>Как получить журналы расширений система диагностики Azure из учетной записи хранения
-Подключите учетную запись хранения к рабочей области Log Analytics в качестве источника данных хранилища с помощью [портал Azure](../essentials/diagnostics-extension-logs.md#collect-logs-from-azure-storage) или путем вызова [API Storage Insights](/rest/api/loganalytics/storage%20insights/createorupdate).
+Подключите учетную запись хранения к рабочей области Log Analytics в качестве источника данных хранилища с помощью [портал Azure](../agents/diagnostics-extension-logs.md#collect-logs-from-azure-storage) или путем вызова [API Storage Insights](/rest/api/loganalytics/storage%20insights/createorupdate).
 
 Поддерживаемые типы данных:
 * Системный журнал

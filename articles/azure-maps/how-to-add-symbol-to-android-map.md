@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: azure-maps
 services: azure-maps
 manager: cpendle
-ms.openlocfilehash: 040fcde35707074ffaf102ed6c224b2f47a084bb
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+ms.openlocfilehash: 1706b60a61bd3b507d9fbcf555e478b388f51168
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97679336"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047576"
 ---
 # <a name="add-a-symbol-layer-android-sdk"></a>Добавление слоя символов (пакет SDK для Android)
 
@@ -133,7 +133,53 @@ SymbolLayer layer = new SymbolLayer(source,
 > [!TIP]
 > Если требуется отобразить только текст с помощью слоя символов, можно скрыть значок, задав `iconImage` для свойства параметров значка значение `"none"` .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="modify-symbol-colors"></a>Изменение цветов символов
+
+Azure Maps пакет SDK для Android поставляется с набором стандартных вариантов цвета значка маркера по умолчанию. Например, `marker-red` можно передать в `iconImage` параметр слоя символов, чтобы отобразить красную версию значка маркера в этом слое. 
+
+```java
+SymbolLayer layer = new SymbolLayer(source,
+    iconImage("marker-red")
+);
+```
+
+В приведенной ниже таблице перечислены все доступные имена встроенных изображений значков. Все эти маркеры извлекают цвета из цветовых ресурсов, которые можно переопределить. Кроме переопределения основного цвета заливки этого маркера. Однако обратите внимание, что переопределение цвета одного из этих маркеров будет применено ко всем слоям, использующим изображение этого значка.
+
+| Имя изображения значка | Имя ресурса цвета |
+|-----------------|---------------------|
+| `marker-default` | `mapcontrol_marker_default` |
+| `marker-black` | `mapcontrol_marker_black` |
+| `marker-blue` | `mapcontrol_marker_blue` |
+| `marker-darkblue` | `mapcontrol_marker_darkblue` |
+| `marker-red` | `mapcontrol_marker_red` |
+| `marker-yellow` | `mapcontrol_marker_yellow` |
+
+Также можно переопределить цвет границы всех маркеров, используя `mapcontrol_marker_border` имя ресурса цвета. Цвета этих маркеров можно переопределить, добавив цвет с тем же именем в `colors.xml` файл приложения. Например, следующий `colors.xml` файл сделает цвет маркера по умолчанию ярким зеленым.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mapcontrol_marker_default">#00FF00</color>
+</resources>
+```
+
+Ниже приведена измененная версия кода XML для вектора маркера по умолчанию, которую можно изменить для создания дополнительных пользовательских версий маркера по умолчанию. Измененную версию можно добавить в `drawable` папку приложения и добавить в спрайт изображений карт с помощью `map.images.add` , а затем использовать с уровнем символов.
+
+```xml
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24.5dp"
+    android:height="36.5dp"
+    android:viewportWidth="24.5"
+    android:viewportHeight="36.5">
+    <path
+        android:pathData="M12.25,0.25a12.2543,12.2543 0,0 0,-12 12.4937c0,6.4436 6.4879,12.1093 11.059,22.5641 0.5493,1.2563 1.3327,1.2563 1.882,0C17.7621,24.8529 24.25,19.1857 24.25,12.7437A12.2543,12.2543 0,0 0,12.25 0.25Z"
+        android:strokeWidth="0.5"
+        android:fillColor="@color/mapcontrol_marker_default"
+        android:strokeColor="@color/mapcontrol_marker_border"/>
+</vector>
+```
+
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные примеры кода для добавления в карты см. в следующих статьях:
 

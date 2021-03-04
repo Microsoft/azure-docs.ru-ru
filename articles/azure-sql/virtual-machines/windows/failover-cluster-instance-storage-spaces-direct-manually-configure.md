@@ -14,12 +14,12 @@ ms.tgt_pltfrm: vm-windows-sql-server
 ms.workload: iaas-sql-server
 ms.date: 06/18/2020
 ms.author: mathoma
-ms.openlocfilehash: 6ed5e11a8492314e99b9f105d259fa910dcdb77d
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.openlocfilehash: aa19cf6b59b1efa4b14501fbf64e319da3e4c0b3
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97357813"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048647"
 ---
 # <a name="create-an-fci-with-storage-spaces-direct-sql-server-on-azure-vms"></a>Создание FCI с Локальные дисковые пространства (SQL Server на виртуальных машинах Azure)
 [!INCLUDE[appliesto-sqlvm](../../includes/appliesto-sqlvm.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "97357813"
 Дополнительные сведения см. в обзоре [FCI с SQL Server на виртуальных машинах Azure и в](failover-cluster-instance-overview.md) разделе рекомендации по работе с [кластерами](hadr-cluster-best-practices.md). 
 
 
-## <a name="overview"></a>Общие сведения 
+## <a name="overview"></a>Обзор 
 
 [Локальные дисковые пространства (S2D)](/windows-server/storage/storage-spaces/storage-spaces-direct-overview) поддерживает два типа архитектур: схождение и гиперконвергентном. Инфраструктура гиперконвергентном размещает хранилище на тех же серверах, где размещается кластерное приложение, так что хранилище находится на каждом узле SQL Server FCI. 
 
@@ -235,6 +235,8 @@ New-AzSqlVM -Name $vm.Name -ResourceGroupName $vm.ResourceGroupName -Location $v
 ## <a name="configure-connectivity"></a>Настройка подключения 
 
 Чтобы правильно направить трафик на текущий основной узел, настройте параметр подключения, подходящий для вашей среды. Вы можете создать [балансировщик нагрузки Azure](failover-cluster-instance-vnn-azure-load-balancer-configure.md) или, если вы используете SQL Server 2019 CU2 (или более поздней версии) и Windows Server 2016 (или более поздней версии), вместо этого можно использовать функцию [имени распределенной сети](failover-cluster-instance-distributed-network-name-dnn-configure.md) . 
+
+Дополнительные сведения о вариантах подключения кластеров см. в статье [Рекомендации по настройке кластера (SQL Server на Виртуальных машинах Azure)](hadr-cluster-best-practices.md#connectivity). 
 
 ## <a name="limitations"></a>Ограничения
 

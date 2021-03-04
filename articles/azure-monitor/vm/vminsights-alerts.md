@@ -1,17 +1,16 @@
 ---
 title: Оповещения из VM Insights
 description: Описание создания правил генерации оповещений на основе данных о производительности, собираемых службой "аналитика виртуальных машин".
-ms.subservice: ''
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 11/10/2020
-ms.openlocfilehash: e3b5f49d9a4ed7af40afba5b267ba0c7bb9cd73a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 06c58b7081ed68724a3c907f8fe76dcf5f7b8057
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101704061"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102046811"
 ---
 # <a name="how-to-create-alerts-from-vm-insights"></a>Создание оповещений из VM Insights
 [Оповещения в Azure Monitor](../alerts/alerts-overview.md) заранее уведомляют Вас о интересных данных и закономерностях в данных мониторинга. В базе данных VM Insights не включены предварительно настроенные правила генерации оповещений, но вы можете создавать собственные данные на основе собираемых. В этой статье приводятся рекомендации по созданию правил генерации оповещений, включая набор образцов запросов.

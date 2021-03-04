@@ -1,17 +1,16 @@
 ---
 title: Использование решения "Сопоставление служб" в Azure | Документация Майкрософт
 description: "\"Сопоставление служб\" — это решение Azure, которое автоматически обнаруживает компоненты приложений в системах Windows и Linux и сопоставляет взаимодействие между службами. В этой статье содержатся подробные сведения о развертывании схемы услуги в вашей среде и приведены разнообразные сценарии ее использования."
-ms.subservice: ''
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 07/24/2019
-ms.openlocfilehash: 688adcf0012f8871c4034cbba6ce2ddcacdbcc43
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: ad3f8821189e6e7aabb5653e5f938bb73f57a34b
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101717151"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047015"
 ---
 # <a name="using-service-map-solution-in-azure"></a>Использование решения "Сопоставление служб" в Azure
 
@@ -26,7 +25,7 @@ ms.locfileid: "101717151"
 * [Агент зависимостей](vminsights-enable-overview.md#agents) , установленный на компьютере Windows или на сервере Linux.
 
 >[!NOTE]
->Если вы уже развернули Сопоставление служб, теперь вы можете просматривать карты в Application Insights, включая дополнительные функции для мониторинга работоспособности и производительности виртуальных машин. Дополнительные сведения см. в разделе [Общие сведения о VM Insights](../vm/vminsights-overview.md). Дополнительные сведения о различиях между Сопоставление службным решением и картой VM Insights см. в следующих [часто задаваемых вопросах](../faq.md#azure-monitor-for-vms).
+>Если вы уже развернули Сопоставление служб, теперь вы можете просматривать карты в Application Insights, включая дополнительные функции для мониторинга работоспособности и производительности виртуальных машин. Дополнительные сведения см. в разделе [Общие сведения о VM Insights](../vm/vminsights-overview.md). Дополнительные сведения о различиях между Сопоставление службным решением и картой VM Insights см. в следующих [часто задаваемых вопросах](../faq.md#vm-insights).
 
 ## <a name="sign-in-to-azure"></a>Вход в Azure
 

@@ -6,14 +6,14 @@ services: virtual-wan
 author: cherylmc
 ms.service: virtual-wan
 ms.topic: how-to
-ms.date: 12/11/2020
+ms.date: 03/03/2021
 ms.author: cherylmc
-ms.openlocfilehash: c2efd9ac137c226c1d3a77e2cb6ebe17d75cb496
-ms.sourcegitcommit: 8dd8d2caeb38236f79fe5bfc6909cb1a8b609f4a
+ms.openlocfilehash: 751d11fcd4b5d4c33145ee7f2b7b49971b8927ae
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98051536"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048270"
 ---
 # <a name="manage-secure-access-to-resources-in-spoke-vnets-for-user-vpn-clients"></a>Управление безопасным доступом к ресурсам в лучевой виртуальных сетей для VPN-клиентов пользователей
 
@@ -23,7 +23,7 @@ ms.locfileid: "98051536"
 
 :::image type="content" source="./media/manage-secure-access-resources-spoke-p2s/diagram.png" alt-text="Схема: защищенный виртуальный концентратор" :::
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 [!INCLUDE [Prerequisites](../../includes/virtual-wan-before-include.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "98051536"
 
 Конфигурация "точка — сеть" (P2S) определяет параметры для подключения удаленных клиентов. Этот раздел поможет определить параметры конфигурации P2S, а затем создать конфигурацию, которая будет использоваться для профиля клиента VPN. Инструкции, которые вы хотите использовать, зависят от используемого метода проверки подлинности.
 
-### <a name="authentication-methods"></a>методы проверки подлинности;
+### <a name="authentication-methods"></a>Методы проверки подлинности
 
 При выборе метода проверки подлинности у вас есть три варианта. Каждый метод имеет определенные требования. Выберите один из следующих методов и выполните действия.
 
@@ -50,8 +50,6 @@ ms.locfileid: "98051536"
 * **Проверка подлинности на основе RADIUS:** Получите IP-адрес сервера RADIUS, секрет RADIUS-сервера и сведения о сертификате.
 
 * **Сертификаты Azure:** Для этой конфигурации требуются сертификаты. Необходимо либо создать сертификаты, либо получить их. Для каждого клиента требуется сертификат клиента. Кроме того, необходимо передать сведения о корневом сертификате (открытый ключ). Дополнительные сведения о необходимых сертификатах см. в разделе [Создание и экспорт сертификатов](../vpn-gateway/vpn-gateway-certificates-point-to-site.md).
-
-В следующем примере показана проверка подлинности сертификата Azure.
 
 [!INCLUDE [Define parameters](../../includes/virtual-wan-p2s-configuration-include.md)]
 
@@ -129,7 +127,7 @@ ms.locfileid: "98051536"
 1. В разделе **Параметры** выберите пункт **Конфигурация безопасности**.
 1. В разделе **Частный трафик** выберите **Брандмауэр Azure**.
 1. Убедитесь, что подключение к виртуальной сети и частный трафик подключения филиала защищены брандмауэром Azure.
-1. Нажмите кнопку **Сохранить**.
+1. Щелкните **Сохранить**.
 
 ## <a name="validate"></a><a name="validate"></a>Проверить
 

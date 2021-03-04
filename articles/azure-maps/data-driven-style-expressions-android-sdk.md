@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: azure-maps
 services: azure-maps
 manager: cpendle
-ms.openlocfilehash: 61d7a295d86fd7da74dee03cd35c79feea0218ed
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+ms.openlocfilehash: 7e4af0647a2810a27001c15a5030fca660828147
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97681732"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047746"
 ---
 # <a name="data-driven-style-expressions-android-sdk"></a>Выражения стиля на основе данных (пакет SDK для Android)
 
@@ -145,11 +145,11 @@ Expression exp = Expression.raw("['get','title']")
 |------------|-------------|-------------|
 | `accumulated()` | number | Возвращает значение свойства кластера, накопленного до сих пор. |
 | `at(number | Expression, Expression)` | value | Извлекает элемент из массива. |
-| `geometryType()` | string | Возвращает тип геометрии компонента: Point, MultiPoint, LineString, MultiLineString, многоугольник, Polygon. |
+| `geometryType()` | строка | Возвращает тип геометрии компонента: Point, MultiPoint, LineString, MultiLineString, многоугольник, Polygon. |
 | `get(string | Expression)` \| `get(string | Expression, Expression)` | value | Возвращает значение свойства из свойств указанного объекта. Возвращает значение null, если запрошенное свойство отсутствует. |
-| `has(string | Expression)` \| `has(string | Expression, Expression)` | boolean | Определяет, имеют ли свойства компонента указанное свойство. |
+| `has(string | Expression)` \| `has(string | Expression, Expression)` | Логическое | Определяет, имеют ли свойства компонента указанное свойство. |
 | `id()` | value | Возвращает идентификатор компонента, если он имеется. |
-| `in(string | number | Expression, Expression)` | boolean | Определяет, существует ли элемент в массиве |
+| `in(string | number | Expression, Expression)` | Логическое | Определяет, существует ли элемент в массиве |
 | `length(string | Expression)` | number | Возвращает длину строки или массива. |
 | `properties()`| value | Возвращает объект свойств компонента. |
 
@@ -270,15 +270,15 @@ has("fillColor", get("_style"))
 
 | Выражение | Возвращаемый тип | Описание |
 |------------|-------------|-------------|
-| `all(Expression...)` | boolean | Возвращает `true` значение, если все входные данные являются `true` , `false` в противном случае —. |
-| `any(Expression...)` | boolean | Возвращает `true` , если какой либо вход имеет `true` `false` значение, в противном случае —. |
-| `eq(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `eq(Expression compareOne, Expression | string compareTwo, Expression collator)` | boolean | Возвращает значение `true` , если входные значения равны, `false` в противном случае —. Аргументы должны быть либо строками, либо обоими числами. |
-| `gt(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `gt(Expression compareOne, Expression | string compareTwo, Expression collator)` | boolean | Возвращает `true` , если первые входные данные строго больше второго, `false` в противном случае —. Аргументы должны быть либо строками, либо обоими числами. |
-| `gte(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `gte(Expression compareOne, Expression | string compareTwo, Expression collator)` | boolean | Возвращает `true` , если первый вход больше второго или равен ему; `false` в противном случае — значение. Аргументы должны быть либо строками, либо обоими числами. |
-| `lt(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `lt(Expression compareOne, Expression | string compareTwo, Expression collator)` | boolean | Возвращает `true` , если первые входные данные строго меньше второго, `false` в противном случае —. Аргументы должны быть либо строками, либо обоими числами. |
-| `lte(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `lte(Expression compareOne, Expression | string compareTwo, Expression collator)` | boolean | Возвращает `true` , если первый вход меньше второго или равен ему; `false` в противном случае — значение. Аргументы должны быть либо строками, либо обоими числами. |
-| `neq(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `neq(Expression compareOne, Expression | string compareTwo, Expression collator)` | boolean | Возвращает значение `true` , если входные значения не равны; `false` в противном случае —. |
-| `not(Expression | boolean)` | boolean | Логическое отрицание. Возвращает `true` , если входные данные имеют значение `false` , и `false` Если вход имеет значение `true` . |
+| `all(Expression...)` | Логическое | Возвращает `true` значение, если все входные данные являются `true` , `false` в противном случае —. |
+| `any(Expression...)` | Логическое | Возвращает `true` , если какой либо вход имеет `true` `false` значение, в противном случае —. |
+| `eq(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `eq(Expression compareOne, Expression | string compareTwo, Expression collator)` | Логическое | Возвращает значение `true` , если входные значения равны, `false` в противном случае —. Аргументы должны быть либо строками, либо обоими числами. |
+| `gt(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `gt(Expression compareOne, Expression | string compareTwo, Expression collator)` | Логическое | Возвращает `true` , если первые входные данные строго больше второго, `false` в противном случае —. Аргументы должны быть либо строками, либо обоими числами. |
+| `gte(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `gte(Expression compareOne, Expression | string compareTwo, Expression collator)` | Логическое | Возвращает `true` , если первый вход больше второго или равен ему; `false` в противном случае — значение. Аргументы должны быть либо строками, либо обоими числами. |
+| `lt(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `lt(Expression compareOne, Expression | string compareTwo, Expression collator)` | Логическое | Возвращает `true` , если первые входные данные строго меньше второго, `false` в противном случае —. Аргументы должны быть либо строками, либо обоими числами. |
+| `lte(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `lte(Expression compareOne, Expression | string compareTwo, Expression collator)` | Логическое | Возвращает `true` , если первый вход меньше второго или равен ему; `false` в противном случае — значение. Аргументы должны быть либо строками, либо обоими числами. |
+| `neq(Expression compareOne, Expression | boolean | number | string compareTwo)` \| `neq(Expression compareOne, Expression | string compareTwo, Expression collator)` | Логическое | Возвращает значение `true` , если входные значения не равны; `false` в противном случае —. |
+| `not(Expression | boolean)` | Логическое | Логическое отрицание. Возвращает `true` , если входные данные имеют значение `false` , и `false` Если вход имеет значение `true` . |
 
 ## <a name="conditional-expressions"></a>Условные выражения
 
@@ -424,17 +424,17 @@ SymbolLayer layer = new SymbolLayer(dataSource,
 | Выражение | Возвращаемый тип | Описание |
 |------------|-------------|-------------|
 | `array(Expression)` | Object [] | Утверждает, что входные данные являются массивом. |
-| `bool(Expression)` | boolean | Утверждает, что входное значение является логическим. |
+| `bool(Expression)` | Логическое | Утверждает, что входное значение является логическим. |
 | `collator(boolean caseSensitive, boolean diacriticSensitive)` \| `collator(boolean caseSensitive, boolean diacriticSensitive, java.util.Locale locale)` \| `collator(Expression caseSensitive, Expression diacriticSensitive)` \| `collator(Expression caseSensitive, Expression diacriticSensitive, Expression locale)` | collator | Возвращает средство сортировки для использования в операциях сравнения, зависящих от языкового стандарта. Параметры с учетом регистра и диакритические знаки по умолчанию имеют значение false. Аргумент locale указывает тег языка IETF для используемого языкового стандарта. Если значение не указано, используется языковой стандарт по умолчанию. Если запрошенный языковой стандарт недоступен, то в параметрах сортировки будет использоваться определенный системой языковой стандарт. Используйте параметр resolved-locale для проверки результатов работы отката языкового стандарта.  |
 | `literal(boolean \| number \| string \| Object \| Object[])` | Boolean \| Number, объект \| \| объекта \| [] | Возвращает литеральный массив или значение объекта. Используйте это выражение, чтобы предотвратить вычисление массива или объекта в качестве выражения. Это необходимо, если массив или объект должен возвращаться выражением. |
 | `number(Expression)` | number | Утверждает, что входное значение является числом. |
 | `object(Expression)` | Объект | Утверждает, что входное значение является объектом. |
-| `string(Expression)` | string | Утверждает, что входное значение является строкой. |
+| `string(Expression)` | строка | Утверждает, что входное значение является строкой. |
 | `toArray(Expression)` | Object [] | Преобразует выражение в массив объектов JSON. |
-| `toBool(Expression)` | boolean | Преобразует входное значение в логическое. |
+| `toBool(Expression)` | Логическое | Преобразует входное значение в логическое. |
 | `toNumber(Expression)` | number | По возможности преобразует входное значение в число. |
-| `toString(Expression)` | string | Преобразует входное значение в строку. |
-| `typeoOf(Expression)` | string | Возвращает строку, описывающую тип данного значения. |
+| `toString(Expression)` | строка | Преобразует входное значение в строку. |
+| `typeoOf(Expression)` | строка | Возвращает строку, описывающую тип данного значения. |
 
 ## <a name="color-expressions"></a>Выражения цвета
 
@@ -470,7 +470,7 @@ BubbleLayer layer = new BubbleLayer(dataSource,
 );
 ```
 
-Если все параметры цвета являются числами, нет необходимости заносить их в `literal` выражение. Пример:
+Если все параметры цвета являются числами, нет необходимости заносить их в `literal` выражение. Пример.
 
 ```java
 BubbleLayer layer = new BubbleLayer(dataSource,
@@ -500,11 +500,11 @@ BubbleLayer layer = new BubbleLayer(dataSource,
 
 | Выражение | Возвращаемый тип | Описание |
 |------------|-------------|-------------|
-| `concat(string...)` \| `concat(Expression...)` | string | Объединяет несколько строк вместе. Каждое значение должно быть строкой. Используйте `toString` выражение типа для преобразования других типов значений в строку, если это необходимо. |
-| `downcase(string)` \| `downcase(Expression)` | string | Преобразует заданную строку в нижний регистр. |
-| `isSupportedScript(string)` \| `isSupportedScript(Expression)`| boolean | Определяет, использует ли входная строка кодировку, поддерживаемую текущим стеком шрифтов. Например: `isSupportedScript("ಗೌರವಾರ್ಥವಾಗಿ")` |
-| `resolvedLocale(Expression collator)` | string | Возвращает тег языка IETF для языкового стандарта, используемого указанными параметрами сортировки. Это можно использовать для определения национальной настройки системы по умолчанию или для определения успешной загрузки запрошенного языкового стандарта. |
-| `upcase(string)` \| `upcase(Expression)` | string | Преобразует заданную строку в верхний регистр. |
+| `concat(string...)` \| `concat(Expression...)` | строка | Объединяет несколько строк вместе. Каждое значение должно быть строкой. Используйте `toString` выражение типа для преобразования других типов значений в строку, если это необходимо. |
+| `downcase(string)` \| `downcase(Expression)` | строка | Преобразует заданную строку в нижний регистр. |
+| `isSupportedScript(string)` \| `isSupportedScript(Expression)`| Логическое | Определяет, использует ли входная строка кодировку, поддерживаемую текущим стеком шрифтов. Например: `isSupportedScript("ಗೌರವಾರ್ಥವಾಗಿ")` |
+| `resolvedLocale(Expression collator)` | строка | Возвращает тег языка IETF для языкового стандарта, используемого указанными параметрами сортировки. Это можно использовать для определения национальной настройки системы по умолчанию или для определения успешной загрузки запрошенного языкового стандарта. |
+| `upcase(string)` \| `upcase(Expression)` | строка | Преобразует заданную строку в верхний регистр. |
 
 **Пример**
 
@@ -662,7 +662,7 @@ HeatMapLayer layer = new HeatMapLayer(dataSource,
 
 Помимо использования плавного градиента для выделения тепловой карте, цвета можно указать в наборе диапазонов с помощью `step` выражения. Использование `step` выражения для выделения цветом тепловой карт визуально разбивает плотность на диапазоны, похожие на карту расконтурного или лепесткового стиля.  
 
-```java 
+```java
 HeatMapLayer layer = new HeatMapLayer(dataSource,
     heatmapColor(
         step(
@@ -679,6 +679,36 @@ HeatMapLayer layer = new HeatMapLayer(dataSource,
 ```
 
 Дополнительные сведения см. в документации по [добавлению слоя тепловой карт](map-add-heat-map-layer-android.md) .
+
+### <a name="line-progress-expression"></a>Выражение хода выполнения строки
+
+Выражение хода выполнения строки получает ход выполнения вдоль линии градиента в слое линий и определяется как `lineProgress()` . Это значение является числом от 0 до 1. Он используется в сочетании с `interpolation` `step` выражением или. Это выражение можно использовать только с `strokeGradient` параметром линейного слоя.
+
+> [!NOTE]
+> Для `strokeGradient` параметра уровня линии необходимо, чтобы `lineMetrics` параметр источника данных был установлен в значение `true` .
+
+**Пример**
+
+В этом примере `lineProgress()` выражение используется для применения градиента цвета к штриху линии.
+
+```javascript
+LineLayer layer = new LineLayer(source,
+    strokeGradient(
+        interpolate(
+            linear(),
+            lineProgress(),
+            stop(0, color(Color.BLUE)),
+            stop(0.1, color(Color.argb(255, 65, 105, 225))), //Royal Blue
+            stop(0.3, color(Color.CYAN)),
+            stop(0.5, color(Color.argb(255,0, 255, 0))), //Lime
+            stop(0.7, color(Color.YELLOW)),
+            stop(1, color(Color.RED))
+        )
+    )
+);
+```
+
+[См. пример в реальном времени](map-add-line-layer.md#line-stroke-gradient)
 
 ### <a name="text-field-format-expression"></a>Выражение формата текстового поля
 

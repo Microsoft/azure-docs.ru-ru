@@ -1,17 +1,16 @@
 ---
 title: Область запросов журнала в Azure Monitor Log Analytics
 description: Описывает область и диапазон времени для запроса журнала в Azure Monitor Log Analytics.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 09/09/2020
-ms.openlocfilehash: 892c79d7908903b95a3bbbae2857933d877c7fba
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 43e4e861905352c2818dfb08b8cb442bd70481c1
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100624945"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047185"
 ---
 # <a name="log-query-scope-and-time-range-in-azure-monitor-log-analytics"></a>Область запросов журнала и временной диапазон в Azure Monitor Log Analytics
 При выполнении запроса к [журналу](../logs/log-query-overview.md) в [log Analytics в портал Azure](../logs/log-analytics-tutorial.md)набор данных, оцениваемый запросом, зависит от выбранной области и выбранного диапазона времени. В этой статье описывается область и диапазон времени, а также способы их настройки в зависимости от требований. В нем также описывается поведение различных типов областей.
@@ -35,7 +34,7 @@ ms.locfileid: "100624945"
 | Приложение Application Insights | Все записи в приложении Application Insights. | Выберите **журналы** из меню **Application Insights** для приложения. | Можно изменить область только на другое приложение Application Insights. |
 | Группа ресурсов | Записи, созданные всеми ресурсами в группе ресурсов. Может включать данные из нескольких рабочих областей Log Analytics. | Выберите **журналы** в меню Группа ресурсов. | Не удается изменить область.|
 | Подписка | Записи, созданные всеми ресурсами в подписке. Может включать данные из нескольких рабочих областей Log Analytics. | Выберите **журналы** в меню подписка.   | Не удается изменить область. |
-| Другие ресурсы Azure | Записи, созданные ресурсом. Может включать данные из нескольких рабочих областей Log Analytics.  | Выберите **журналы** в меню ресурс.<br>OR<br>Выберите **журналы** в меню **Azure Monitor** , а затем выберите новую область. | Можно изменить область только на тот же тип ресурса. |
+| Другие ресурсы Azure | Записи, созданные ресурсом. Может включать данные из нескольких рабочих областей Log Analytics.  | Выберите **журналы** в меню ресурс.<br>ИЛИ<br>Выберите **журналы** в меню **Azure Monitor** , а затем выберите новую область. | Можно изменить область только на тот же тип ресурса. |
 
 ### <a name="limitations-when-scoped-to-a-resource"></a>Ограничения по области действия ресурса
 
@@ -48,7 +47,7 @@ ms.locfileid: "100624945"
 Нельзя использовать следующие команды в запросе при работе с областью действия ресурса, так как область запроса уже включает в себя любые рабочие области с данными для этого ресурса или набора ресурсов:
 
 - [app](../logs/app-expression.md)
-- [рабочей области](../logs/workspace-expression.md)
+- [Рабочая область](../logs/workspace-expression.md)
  
 
 ## <a name="query-scope-limits"></a>Ограничения области запроса
@@ -85,7 +84,7 @@ Log Analytics помогает защититься от чрезмерных и
 
 ![Запрос с помощью приложения](media/scope/query-app.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Пошаговое [руководство по использованию log Analytics в портал Azure](../logs/log-analytics-tutorial.md).
 - Пошаговое [руководство по написанию запросов](../logs/get-started-queries.md).
