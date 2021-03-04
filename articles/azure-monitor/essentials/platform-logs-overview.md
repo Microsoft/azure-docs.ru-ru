@@ -6,13 +6,12 @@ services: azure-monitor
 ms.topic: conceptual
 ms.date: 12/19/2019
 ms.author: bwren
-ms.subservice: logs
-ms.openlocfilehash: 7a57a39dd72e2330c2adde2b471bca2f9f2e00a7
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 3300b0587cbb6c2193b56c9152af0cb11ea51936
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101725855"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102033305"
 ---
 # <a name="overview-of-azure-platform-logs"></a>Общие сведения о журналах платформы Azure
 Журналы платформы предоставляют подробные сведения о диагностике и аудите для ресурсов Azure и платформы Azure, от которых они зависят. Они создаются автоматически, хотя необходимо настроить определенные журналы платформы для перенаправления в одно или несколько назначений, которые должны быть сохранены. В этой статье приводятся общие сведения о журналах платформы, включая сведения, которые они предоставляют, а также о том, как их настроить для сбора и анализа.

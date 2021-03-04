@@ -6,13 +6,12 @@ services: azure-monitor
 ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: vitalyg
-ms.subservice: metrics
-ms.openlocfilehash: 2a3bf022d178fbd0de3ca800e0a560235c3f33b5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: bc1978f6ed0aa3e38f25fa03fc54ddc7d4efb9c3
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101731499"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102033339"
 ---
 # <a name="troubleshooting-metrics-charts"></a>Устранение неполадок с диаграммами метрик
 

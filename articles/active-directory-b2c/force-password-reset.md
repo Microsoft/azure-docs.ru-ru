@@ -8,22 +8,22 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/02/2021
+ms.date: 03/03/2021
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 4be73c126d9f153243b833a7b348244f4d1efcaa
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0477153b466702bec0fa2d5221fee1e054d06314
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693313"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102033782"
 ---
 # <a name="set-up-a-force-password-reset-flow-in-azure-active-directory-b2c"></a>Настройка потока принудительного сброса пароля в Azure Active Directory B2C
 
 [!INCLUDE [active-directory-b2c-choose-user-flow-or-custom-policy](../../includes/active-directory-b2c-choose-user-flow-or-custom-policy.md)]
 
-Администратор может сбросить пароль пользователя, если пользователь забыл свой пароль. Или вы хотите принудительно сбросить пароль. В этой статье вы узнаете, как принудительно сбросить пароль в этих сценариях.
+Администратор может [сбросить пароль пользователя](manage-users-portal.md#reset-a-users-password) , если пользователь забыл свой пароль. Или вы хотите принудительно сбросить пароль. В этой статье вы узнаете, как принудительно сбросить пароль в этих сценариях.
 
 ## <a name="overview"></a>Обзор
 
@@ -37,7 +37,7 @@ ms.locfileid: "101693313"
 
 ### <a name="force-a-password-reset-after-90-days"></a>Принудительный сброс пароля через 90 дней
 
-Как администратор вы можете задать срок действия пароля пользователя 90 дней с помощью [MS Graph](microsoft-graph-operation.md). Через 90 дней значение атрибута [форцечанжепассворднекстсигнин](user-profile-attributes.md#password-profile-property) автоматически устанавливается равным `true` . Дополнительные сведения о настройке политики срока действия паролей пользователей см. в разделе [атрибут политики паролей](user-profile-attributes.md#password-policy-attribute).
+Как администратор вы можете задать срок действия пароля пользователя 90 дней с помощью [MS Graph](microsoft-graph-operations.md). Через 90 дней значение атрибута [форцечанжепассворднекстсигнин](user-profile-attributes.md#password-profile-property) автоматически устанавливается равным `true` . Дополнительные сведения о настройке политики срока действия паролей пользователей см. в разделе [атрибут политики паролей](user-profile-attributes.md#password-policy-attribute).
 
 После установки политики истечения срока действия паролей необходимо также настроить принудительное выполнение сброса пароля, как описано в этой статье.  
 
@@ -62,7 +62,7 @@ ms.locfileid: "101693313"
 
 ### <a name="test-the-user-flow"></a>Тестирование потока пользователя
 
-1. Войдите в [портал Azure](https://portal.azure.com) в качестве администратора пользователя или администратора паролей. Дополнительные сведения о доступных ролях см. в разделе [назначение ролей администратора в Azure Active Directory](../active-directory/roles/permissions-reference#available-roles).
+1. Войдите в [портал Azure](https://portal.azure.com) в качестве администратора пользователя или администратора паролей. Дополнительные сведения о доступных ролях см. в разделе [назначение ролей администратора в Azure Active Directory](../active-directory/roles/permissions-reference.md#all-roles).
 1. Выберите значок **Каталог и подписка** в верхней панели инструментов портала, а затем выберите каталог, содержащий клиент Azure AD B2C.
 1. На портале Azure найдите и выберите **Azure AD B2C**.
 1. Выберите **Пользователи**. Найдите и выберите пользователя, который будет использоваться для проверки сброса пароля, а затем нажмите кнопку **Сброс пароля**.
@@ -79,7 +79,23 @@ ms.locfileid: "101693313"
 
 ::: zone pivot="b2c-custom-policy"
 
-В настоящее время эта функция доступна только для потоков пользователей.
+1. Получите пример принудительного сброса пароля на [GitHub](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset).
+1. В каждом файле замените строку `yourtenant` именем клиента Azure AD B2C. Например, если имя клиента B2C — *contosob2c*, все экземпляры `yourtenant.onmicrosoft.com` станут `contosob2c.onmicrosoft.com` .
+1. Отправьте файлы политики в следующем порядке: политику расширения `TrustFrameworkExtensionsCustomForcePasswordReset.xml` , а затем политику проверяющей стороны `SignUpOrSigninCustomForcePasswordReset.xml` .
+
+### <a name="test-the-policy"></a>Проверка политики
+
+1. Войдите в [портал Azure](https://portal.azure.com) в качестве администратора пользователя или администратора паролей. Дополнительные сведения о доступных ролях см. в разделе [назначение ролей администратора в Azure Active Directory](../active-directory/roles/permissions-reference.md#all-roles).
+1. Выберите значок **Каталог и подписка** в верхней панели инструментов портала, а затем выберите каталог, содержащий клиент Azure AD B2C.
+1. На портале Azure найдите и выберите **Azure AD B2C**.
+1. Выберите **Пользователи**. Найдите и выберите пользователя, который будет использоваться для проверки сброса пароля, а затем нажмите кнопку **Сброс пароля**.
+1. На портале Azure найдите и выберите **Azure AD B2C**.
+1. В разделе **Политики** выберите **Identity Experience Framework**.
+1. Выберите `B2C_1A_signup_signin_Custom_ForcePasswordReset` политику, чтобы открыть ее. 
+1. Для **приложения** выберите [ранее зарегистрированное](troubleshoot-custom-policies.md#troubleshoot-the-runtime)веб-приложение. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.
+1. Нажмите кнопку **Запустить сейчас** .
+1. Выполните вход, используя учетную запись пользователя, для которой необходимо сбросить пароль.
+1. Теперь необходимо изменить пароль для пользователя. Измените пароль и щелкните **Продолжить**. Токен должен вернуться по адресу `https://jwt.ms` и отобразиться пользователю.
 
 ::: zone-end
 

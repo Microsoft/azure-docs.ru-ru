@@ -13,12 +13,12 @@ ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 6dda65be98934ce90e985b241078ae8019afb7e0
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: e344d85bbdac92aa372fc5d5e59ef90b11dfac6c
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100361270"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102095737"
 ---
 # <a name="add-ad-fs-as-a-saml-identity-provider-using-custom-policies-in-azure-active-directory-b2c"></a>Добавление AD FS в качестве поставщика удостоверений SAML с помощью пользовательских политик в Azure Active Directory B2C
 
@@ -34,7 +34,7 @@ ms.locfileid: "100361270"
 
 [!INCLUDE [active-directory-b2c-advanced-audience-warning](../../includes/active-directory-b2c-advanced-audience-warning.md)]
 
-В этой статье показано, как включить вход для учетной записи AD FS пользователя с помощью [пользовательских политик](custom-policy-overview.md) в Azure Active Directory B2C (Azure AD B2C). Вход в систему включается путем добавления [технического профиля поставщика удостоверений SAML](saml-identity-provider-technical-profile.md) в пользовательскую политику.
+В этой статье показано, как включить вход для учетной записи AD FS пользователя с помощью [пользовательских политик](custom-policy-overview.md) в Azure Active Directory B2C (Azure AD B2C). Чтобы включить вход, добавьте [поставщик удостоверений SAML](identity-provider-generic-saml.md) в настраиваемую политику.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -62,7 +62,7 @@ ms.locfileid: "100361270"
 
 Если вы хотите, чтобы пользователи вошли с помощью учетной записи AD FS, необходимо определить учетную запись как поставщика утверждений, который Azure AD B2C может взаимодействовать с помощью конечной точки. Конечная точка предоставляет набор утверждений, используемых Azure AD B2C, чтобы проверить, была ли выполнена проверка подлинности определенного пользователя.
 
-Вы можете определить учетную запись AD FS как поставщика утверждений, добавив ее в элемент **клаимспровидерс** в файле расширения политики. Дополнительные сведения см. в разделе об [определении технического профиля поставщика удостоверений SAML](saml-identity-provider-technical-profile.md).
+Вы можете определить учетную запись AD FS как поставщика утверждений, добавив ее в элемент **клаимспровидерс** в файле расширения политики. Дополнительные сведения см. [в разделе Определение поставщика удостоверений SAML](identity-provider-generic-saml.md).
 
 1. Откройте файл *TrustFrameworkExtensions.xml*.
 1. Найдите элемент **ClaimsProviders**. Если он не существует, добавьте его в корневой элемент.
@@ -217,7 +217,7 @@ AD FS настроен для использования журнала прил
 
 #### <a name="option-1-set-the-signature-algorithm-in-azure-ad-b2c"></a>Вариант 1. Задание алгоритма подписи в Azure AD B2C  
 
-Вы можете настроить способ подписи запроса SAML в Azure AD B2C. Метаданные [ксмлсигнатуреалгорисм](saml-identity-provider-technical-profile.md#metadata) контролирует значение `SigAlg` параметра (строка запроса или параметр POST) в запросе SAML. В следующем примере настраивается Azure AD B2C для использования `rsa-sha256` алгоритма подписи.
+Вы можете настроить способ подписи запроса SAML в Azure AD B2C. Метаданные [ксмлсигнатуреалгорисм](identity-provider-generic-saml.md) контролирует значение `SigAlg` параметра (строка запроса или параметр POST) в запросе SAML. В следующем примере настраивается Azure AD B2C для использования `rsa-sha256` алгоритма подписи.
 
 ```xml
 <Metadata>

@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 01/19/2021
-ms.openlocfilehash: b86414758c3b644725e5aa29ca3b314f489508aa
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: bcfe26bc6f637dd140776df98f8267c4c43684ba
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693532"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102049558"
 ---
 # <a name="automatically-label-your-data-in-azure-purview"></a>Автоматическая маркировка данных в Azure зрения
 
@@ -120,7 +120,10 @@ ms.locfileid: "101693532"
 
     :::image type="content" source="media/create-sensitivity-label/create-sensitivity-label-full-small.png" alt-text="Создание меток конфиденциальности в Microsoft 365 центре безопасности и соответствия требованиям" lightbox="media/create-sensitivity-label/create-sensitivity-label-full.png":::
 
-1. Назовите метку. Затем в разделе **Определение области для этой метки** выберите **файлы и сообщения электронной почты** и **ресурсы Azure зрения**.
+1. Назовите метку. Затем в разделе **Определите область для этой метки**:
+
+    - Во всех случаях выберите **Azure зрения Assets**.
+    - Чтобы пометить файлы, также выберите **файлы & сообщения электронной почты**. Этот параметр не требуется для пометки только ресурсов базы данных. 
     
     :::image type="content" source="media/create-sensitivity-label/create-label-scope-small.png" alt-text="Создание метки в центре безопасности и соответствия требованиям Microsoft 365" lightbox="media/create-sensitivity-label/create-label-scope.png":::
 

@@ -1,17 +1,16 @@
 ---
 title: Установка агента Azure Monitor
 description: Параметры для установки агента Azure Monitor (АМА) на виртуальных машинах Azure и серверах с поддержкой Arc Azure.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 11/17/2020
-ms.openlocfilehash: 17c7609afeef8b5129e3bfe252def74b45cb4208
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6bf0e8b90ca50a90f84c18981ab6accae8477b46
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101719956"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102034321"
 ---
 # <a name="install-the-azure-monitor-agent-preview"></a>Установка агента Azure Monitor (Предварительная версия)
 В этой статье представлены различные варианты установки [агента Azure Monitor](azure-monitor-agent-overview.md) на виртуальных машинах Azure и серверах с поддержкой Arc, а также параметры для создания [взаимосвязей с правилами сбора данных](data-collection-rule-azure-monitor-agent.md) , которые определяют, какие данные должен собирать агент.

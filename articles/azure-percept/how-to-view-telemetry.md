@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/17/2021
 ms.custom: template-how-to
-ms.openlocfilehash: b03cd8bc71f87e3ce7984a55d330bc116614f928
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 07abbc5f5e85c75b73774d11b6b81dd2085735b7
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101663214"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102095329"
 ---
 # <a name="view-your-azure-percept-dks-model-inference-telemetry"></a>Просмотр данных телеметрии для определения модели в Azure Перцепт DK
 
@@ -35,7 +35,7 @@ ms.locfileid: "101663214"
 
 1. Подключение центра Интернета вещей к Azure IoT Explorer:
 
-    1. Перейдите на [портал Microsoft Azure](https://portal.azure.com/?feature.canmodifystamps=true&Microsoft_Azure_Iothub=aduprod&microsoft_azure_marketplace_ItemHideKey=Microsoft_Azure_ADUHidden#home).
+    1. Перейдите на [портал Microsoft Azure](https://portal.azure.com).
 
     1. Щелкните **Все ресурсы**.
 
@@ -70,5 +70,4 @@ ms.locfileid: "101663214"
     1. Нажмите кнопку **Пуск** , чтобы просмотреть события телеметрии с устройства.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-
-Узнайте, как просмотреть [поток видео Azure ПЕРЦЕПТ DK](how-to-view-video-stream.md).
+Узнайте, как просмотреть [поток видео Azure ПЕРЦЕПТ DK](./how-to-view-video-stream.md).

@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 02/16/2021
 ms.custom: template-concept
-ms.openlocfilehash: e61fb00b4ddd309124c11d1749f448c742d660d0
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 28a8de231f179cf69342da81e6a2ae1989d2a5d6
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101663190"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041592"
 ---
 # <a name="azure-percept-ai-models"></a>Модели Azure Перцепт AI
 
@@ -22,7 +22,6 @@ Azure Перцепт позволяет разрабатывать и разве
 
 Azure Перцепт Studio содержит образцы моделей для следующих приложений:
 
-- обнаружение лиц;
 - Обнаружение людей
 - Обнаружение автомобиля
 - Общее обнаружение объектов

@@ -4,17 +4,17 @@ ms.author: erhopf
 ms.service: cognitive-services
 ms.topic: include
 ms.date: 05/11/2020
-ms.openlocfilehash: 1085daca153431a28fdcc2583d0e31308214bf91
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.openlocfilehash: fcb4113a4dab1e3de17eb022b1ad386cbc6a9583
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95557135"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102109041"
 ---
 ## <a name="authenticate-with-azure-active-directory"></a>Проверка подлинности с помощью Azure Active Directory
 
 > [!IMPORTANT]
-> 1. В настоящее время **только** API компьютерного зрения, API распознавания лиц, API анализа текста, иммерсивное средство чтения, распознаватель форм, детектор аномалий и все службы Bing, кроме пользовательский поиск Bing, поддерживают проверку подлинности с помощью Azure Active Directory (AAD).
+> 1. Сейчас **только** API компьютерного зрения, API распознавания лиц, API анализа текста, иммерсивное средство чтения, распознаватель форм, детектор аномалий, QnA Maker и все службы Bing, кроме пользовательский поиск Bing, поддерживают проверку подлинности с помощью Azure Active Directory (AAD).
 > 2. Проверку подлинности AAD необходимо всегда использовать вместе с именем пользовательского поддомена ресурса Azure. [Региональные конечные точки](../articles/cognitive-services/cognitive-services-custom-subdomains.md#is-there-a-list-of-regional-endpoints) не поддерживают проверку подлинности AAD.
 
 В предыдущих разделах мы показали, как выполнять аутентификацию в Azure Cognitive Services с помощью ключа подписки с одной или несколькими службами. Хотя эти ключи предоставляют быстрый и простой путь для начала разработки, они немного сложны в более сложных сценариях, требующих управления доступом на основе ролей Azure (Azure RBAC). Давайте посмотрим, что требуется для проверки подлинности с помощью Azure Active Directory (AAD).
@@ -98,7 +98,7 @@ ms.locfileid: "95557135"
    $token
    ```
    
-   #### <a name="azure-cloud-shell"></a>[Azure Cloud Shell](#tab/azure-cloud-shell)
+   #### <a name="azure-cloud-shell"></a>[Azure Cloud Shell](#tab/azure-cloud-shell);
    ```Azure Cloud Shell
    $authContext = New-Object "Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" -ArgumentList "https://login.windows.net/<TENANT_ID>"
    $clientCredential = New-Object "Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential" -ArgumentList $app.ApplicationId, <YOUR_PASSWORD>

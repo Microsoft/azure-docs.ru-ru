@@ -7,12 +7,12 @@ ms.author: aymarqui
 ms.date: 02/12/2021
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 8828b2dc48a8865e43a176757dc973a5cf85b784
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a39b91304c4123b216a0b508dcea0547cae5ab43
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101703007"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041507"
 ---
 # <a name="integrate-azure-digital-twins-with-azure-signalr-service"></a>Интеграция Azure Digital двойников со службой Azure SignalR
 
@@ -51,7 +51,7 @@ ms.locfileid: "101703007"
 
     Это приведет к скачиванию копии примера репозитория на компьютер **digital-twins-samples-master.zip**. Распакуйте папку.
 * [**Пример веб-приложения для интеграции SignalR**](/samples/azure-samples/digitaltwins-signalr-webapp-sample/digital-twins-samples/): это пример веб-приложения, которое будет использовать данные телеметрии Azure Digital двойников из службы Azure SignalR.
-    -  Перейдите к образцу ссылки и нажмите кнопку *скачать ZIP-файл* , чтобы загрузить копию примера на компьютер, как _**Azure_Digital_Twins_SignalR_integration_web_app_sample.zip**_. Распакуйте папку.
+    -  Перейдите к образцу ссылки и используйте тот же процесс загрузки, чтобы скачать копию примера на свой компьютер, как _**digitaltwins-signalr-webapp-sample-main.zip**_. Распакуйте папку.
 
 [!INCLUDE [Create instance](../azure-signalr/includes/signalr-quickstart-create-instance.md)]
 
@@ -139,7 +139,7 @@ ms.locfileid: "101703007"
 
     :::image type="content" source="media/how-to-integrate-azure-signalr/get-function-url.png" alt-text="Портал Azure представление функции &quot;Negotiate&quot;. Кнопка &quot;получить URL-адрес функции&quot; выделена и часть URL-адреса с начала до &quot;/API&quot;":::
 
-1. Используя Visual Studio или любой другой редактор кода, откройте распакованную папку _**Azure_Digital_Twins_SignalR_integration_web_app_sample**_ , скачанную в разделе [*Загрузка примеров приложений*](#download-the-sample-applications) .
+1. Используя Visual Studio или любой другой редактор кода, откройте папку unzipped дигиталтвинс- _**webapp-Sample-Main**_ , скачанную в разделе [*Загрузка примеров приложений*](#download-the-sample-applications) .
 
 1. Откройте файл *src/App.js* и замените URL-адрес функции в `HubConnectionBuilder` URL-адресом конечной точки HTTP функции **Negotiate** , сохраненной на предыдущем шаге.
 
@@ -148,7 +148,7 @@ ms.locfileid: "101703007"
             .withUrl('<Function URL>')
             .build();
     ```
-1. В *командной строке разработчика* Visual Studio или любом командном окне на компьютере перейдите в папку *Azure_Digital_Twins_SignalR_integration_web_app_sample \срк* . Выполните следующую команду, чтобы установить пакеты зависимых узлов:
+1. В *командной строке разработчика* Visual Studio или любом командном окне на компьютере перейдите в папку *дигиталтвинс-сигналр-вебапп-сампле-маин\срк* . Выполните следующую команду, чтобы установить пакеты зависимых узлов:
 
     ```cmd
     npm install
@@ -175,7 +175,7 @@ ms.locfileid: "101703007"
 
 ### <a name="see-the-results"></a>Просмотр результатов
 
-Чтобы увидеть результаты в действии, запустите **Пример веб-приложения "Интеграция SignalR**". Это можно сделать в любом окне консоли в расположении *Azure_Digital_Twins_SignalR_integration_web_app_sample \срк* , выполнив следующую команду:
+Чтобы увидеть результаты в действии, запустите **Пример веб-приложения "Интеграция SignalR**". Это можно сделать в любом окне консоли в расположении *дигиталтвинс-сигналр-вебапп-сампле-маин\срк* , выполнив следующую команду:
 
 ```cmd
 npm start
@@ -203,7 +203,7 @@ npm start
 az group delete --name <your-resource-group>
 ```
 
-Наконец, удалите образцы папок проекта, скачанные на локальный компьютер (*digital-twins-samples-master.zip* и *Azure_Digital_Twins_SignalR_integration_web_app_sample.zip*).
+Наконец, удалите примеры папок проекта, загруженные на локальный компьютер (*digital-twins-samples-master.zip*, *digitaltwins-signalr-webapp-sample-main.zip* и их несжатые аналоги).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

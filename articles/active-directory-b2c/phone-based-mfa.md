@@ -11,12 +11,12 @@ ms.workload: identity
 ms.date: 02/01/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 3ca73e020009817001f309ddf29c2984a8541026
-ms.sourcegitcommit: ea822acf5b7141d26a3776d7ed59630bf7ac9532
+ms.openlocfilehash: cc9e0be90c138ba33e1b4dfe11ea6f9c8b7da297
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99527736"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102033560"
 ---
 # <a name="securing-phone-based-multi-factor-authentication-mfa"></a>Защита многофакторной проверки подлинности на основе телефона (MFA)
 
@@ -89,7 +89,7 @@ ms.locfileid: "99527736"
 - Используйте **рекомендованные** версии потоков пользователей для выполнения следующих задач:
      
    - [Включите функцию одноразового секретного кода (OTP) электронной почты](phone-authentication-user-flows.md) для MFA (применяется как в потоках регистрации, так и при входе в систему).
-   - [Настройте политику условного доступа](conditional-access-identity-protection-setup.md) , чтобы блокировать входы на основе расположения (применяется только к потокам входа, а не к потокам регистрации).
+   - [Настройте политику условного доступа](conditional-access-user-flow.md) , чтобы блокировать входы на основе расположения (применяется только к потокам входа, а не к потокам регистрации).
    - Используйте соединители API для [интеграции с решением Anti-Bot, например reCAPTCHA](https://github.com/Azure-Samples/active-directory-b2c-node-sign-up-user-flow-captcha) (применяется для потоков регистрации).
 
 - Удалите коды стран, которые не относятся к вашей организации, из раскрывающегося меню, в котором пользователь проверяет свой номер телефона (это изменение будет применяться к последующим входам):
@@ -115,7 +115,7 @@ ms.locfileid: "99527736"
  
       ![Раскрывающийся список кода страны](media/phone-based-mfa/country-code-drop-down.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения об использовании [защиты идентификации и условного доступа для Azure AD B2C](conditional-access-identity-protection-overview.md) 
 

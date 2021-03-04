@@ -1,17 +1,16 @@
 ---
 title: Устранение неполадок в ITSMC
 description: Узнайте, как устранять распространенные проблемы в Соединитель управления ИТ-услугами.
-ms.subservice: alerts
 ms.topic: conceptual
 author: nolavime
 ms.author: nolavime
 ms.date: 04/12/2020
-ms.openlocfilehash: a01005231b5d775f79555ec10dedeb3f30b3426a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 7094bf07453c06831fecfa2056480bf498b26a72
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101737211"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041626"
 ---
 # <a name="troubleshoot-problems-in-it-service-management-connector"></a>Устранение неполадок в Соединитель управления ИТ-услугами
 

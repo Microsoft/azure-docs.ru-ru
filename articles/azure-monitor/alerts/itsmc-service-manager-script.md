@@ -1,17 +1,16 @@
 ---
 title: Создание веб-приложения для соединителя управления службами
 description: Создание веб-приложения Service Manager с помощью автоматизированного скрипта для подключения к Azure с помощью соединителя управления ИТ-услугами, а также централизованный мониторинг и управление рабочими элементами ITSM.
-ms.subservice: logs
 ms.topic: conceptual
 author: nolavime
 ms.author: v-jysur
 ms.date: 01/23/2018
-ms.openlocfilehash: 3d9360b167a246e257d8c0b2ec4cb88f1ae39dcd
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 16b48ac213168eaa58de5b0603025b2d48bb5ed5
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100621897"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041677"
 ---
 # <a name="create-service-manager-web-app-using-the-automated-script"></a>Создание веб-приложения Service Manager с помощью автоматизированного скрипта
 
@@ -323,5 +322,5 @@ if(!$err)
 -   При получении ссылки на **объект, не установленной на экземпляр** ошибки при выполнении [скрипта](itsmc-service-manager-script.md), убедитесь, что введены допустимые значения в разделе " **Конфигурация пользователя** ".
 -   Если не удалось создать пространство имен ретранслятора служебной шины, убедитесь, что требуемый поставщик ресурсов зарегистрирован в подписке. Если оно не зарегистрировано, вручную создайте пространство имен ретранслятора служебной шины из портал Azure. Его также можно создать при [создании гибридного подключения](./itsmc-connections-scsm.md#configure-the-hybrid-connection) в портал Azure.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Настройте гибридное подключение](./itsmc-connections-scsm.md#configure-the-hybrid-connection).

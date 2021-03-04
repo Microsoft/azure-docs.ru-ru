@@ -1,17 +1,16 @@
 ---
 title: Отправка журнала действий Azure в рабочую область Log Analytics с помощью портала Azure
 description: Используйте портал Azure, чтобы создать параметр диагностики и рабочую область Log Analytics для отправки журнала действий в журналы Azure Monitor.
-ms.subservice: logs
 ms.topic: quickstart
 author: bwren
 ms.author: bwren
 ms.date: 06/25/2020
-ms.openlocfilehash: 1316512badd69b545e39a47ea5da3ca6a0902482
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: fec1f4f3ae13f6c9ed5fdd7ffbcd143e5c5e5f52
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101734287"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102033254"
 ---
 # <a name="send-azure-activity-log-to-log-analytics-workspace-using-azure-portal"></a>Отправка журнала действий Azure в рабочую область Log Analytics с помощью портала Azure
 Журнал действий — это журнал платформы в Azure, который предоставляет аналитические сведения о событиях уровня подписки, например об изменении ресурса или запуске виртуальной машины. Вы можете просмотреть журнал действий на портале Azure или получить записи с помощью PowerShell и CLI. В этом кратком руководстве показано, как применить портал Azure для создания параметра диагностики и рабочей области Log Analytics, а также для отправки журнала действий в журналы Azure Monitor, где можно их анализировать с помощью [запросов по журналам](../logs/log-query-overview.md) и применять другие возможности, такие как [оповещения журнала](../alerts/alerts-log-query.md) и [книги](../visualize/workbooks-overview.md). 

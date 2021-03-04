@@ -12,12 +12,12 @@ ms.date: 03/02/2021
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: d7f597010f86e0f962f250dcd87d6c78f401a73d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 8e4926fb228837c3ec0573af8ee5b15da5fd7431
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101688990"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102033986"
 ---
 # <a name="set-up-a-password-reset-flow-in-azure-active-directory-b2c"></a>Настройка потока сброса пароля в Azure Active Directory B2C
 
@@ -206,7 +206,7 @@ ms.locfileid: "101688990"
 
 ### <a name="set-the-user-journey-to-be-executed"></a>Настройка пути взаимодействия пользователя
 
-После изменения или создания пути взаимодействия пользователя в разделе **проверяющей стороны** укажите путь, который Azure AD B2C будет выполняться для этой пользовательской политики. В элементе [релингпарти](../articles/active-directory-b2c/relyingparty.md) найдите элемент **дефаултусержаурнэй** . Обновите  **ReferenceId дефаултусержаурнэй** в соответствии с идентификатором пути взаимодействия пользователя, в который вы добавили **клаимспровидерселектионс**.
+После изменения или создания пути взаимодействия пользователя в разделе **проверяющей стороны** укажите путь, который Azure AD B2C будет выполняться для этой пользовательской политики. В элементе [релингпарти](relyingparty.md) найдите элемент **дефаултусержаурнэй** . Обновите  **ReferenceId дефаултусержаурнэй** в соответствии с идентификатором пути взаимодействия пользователя, в который вы добавили **клаимспровидерселектионс**.
 
 ```xml
 <RelyingParty>

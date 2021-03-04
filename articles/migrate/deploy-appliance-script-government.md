@@ -6,12 +6,12 @@ ms.author: vibansa
 ms.manager: abhemraj
 ms.topic: how-to
 ms.date: 04/16/2020
-ms.openlocfilehash: f31211c4448ad5bbe8d839b2ec86b0b61970f568
-ms.sourcegitcommit: ea551dad8d870ddcc0fee4423026f51bf4532e19
+ms.openlocfilehash: 6778c8e5e1e4fa83d34141fd13ba21d483ab76e9
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96752198"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041354"
 ---
 # <a name="set-up-an-appliance-in-azure-government"></a>Настройка устройства в Azure для государственных организаций 
 
@@ -63,7 +63,7 @@ ms.locfileid: "96752198"
 
 - Устанавливает агенты и веб-приложение.
 - Устанавливает роли Windows, включая службу активации Windows, IIS и интегрированную среду сценариев PowerShell.
-- Скачивает и устанавливает перезаписываемый модуль IIS. [Подробнее](https://www.microsoft.com/download/details.aspx?id=7435).
+- Скачивает и устанавливает перезаписываемый модуль IIS. [Подробнее.](https://www.microsoft.com/download/details.aspx?id=7435)
 - Обновляет раздел реестра (HKLM) с постоянными параметрами для службы "миграция Azure".
 - Создает файлы журналов и конфигурации следующим образом:
     - **Файлы конфигурации**:%програмдата%\микрософт азуре\конфиг
@@ -118,7 +118,7 @@ ms.locfileid: "96752198"
 
 - Устанавливает агенты и веб-приложение.
 - Устанавливает роли Windows, включая службу активации Windows, IIS и интегрированную среду сценариев PowerShell.
-- Скачивает и устанавливает перезаписываемый модуль IIS. [Подробнее](https://www.microsoft.com/download/details.aspx?id=7435).
+- Скачивает и устанавливает перезаписываемый модуль IIS. [Подробнее.](https://www.microsoft.com/download/details.aspx?id=7435)
 - Обновляет раздел реестра (HKLM) с постоянными параметрами для службы "миграция Azure".
 - Создает файлы журналов и конфигурации следующим образом:
     - **Файлы конфигурации**:%програмдата%\микрософт азуре\конфиг
@@ -172,7 +172,7 @@ ms.locfileid: "96752198"
 
 - Устанавливает агенты и веб-приложение.
 - Устанавливает роли Windows, включая службу активации Windows, IIS и интегрированную среду сценариев PowerShell.
-- Скачивает и устанавливает перезаписываемый модуль IIS. [Подробнее](https://www.microsoft.com/download/details.aspx?id=7435).
+- Скачивает и устанавливает перезаписываемый модуль IIS. [Подробнее.](https://www.microsoft.com/download/details.aspx?id=7435)
 - Обновляет раздел реестра (HKLM) с постоянными параметрами для службы "миграция Azure".
 - Создает файлы журналов и конфигурации следующим образом:
     - **Файлы конфигурации**:%програмдата%\микрософт азуре\конфиг
@@ -192,10 +192,10 @@ ms.locfileid: "96752198"
 
 Убедитесь, что устройство может подключаться к URL-адресам Azure для [государственных облаков](migrate-appliance.md#government-cloud-urls).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 После развертывания устройства необходимо настроить его в первый раз и зарегистрировать в проекте службы "миграция Azure".
 
-- Настройте устройство для [VMware](how-to-set-up-appliance-vmware.md#configure-the-appliance).
+- Настройте устройство для [VMware](how-to-set-up-appliance-vmware.md#4-configure-the-appliance).
 - Настройте устройство для [Hyper-V](how-to-set-up-appliance-hyper-v.md#configure-the-appliance).
 - Настройте устройство для [физических серверов](how-to-set-up-appliance-physical.md).

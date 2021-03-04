@@ -5,15 +5,15 @@ author: craigktreasure
 manager: vriveras
 services: azure-object-anchors
 ms.author: crtreasu
-ms.date: 02/19/2021
+ms.date: 03/02/2021
 ms.topic: conceptual
 ms.service: azure-object-anchors
-ms.openlocfilehash: 020f727674449523a57a608e8930d67e0f239cf6
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 74663f05c5ff995a090c7cd35e4edf46a754da17
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747121"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102034614"
 ---
 # <a name="runtime-sdk-overview"></a>Общие сведения о пакете SDK среды выполнения
 
@@ -25,7 +25,7 @@ ms.locfileid: "101747121"
 
 ### <a name="objectmodel"></a>ObjectModel
 
-[ObjectModel](https://docs.microsoft.com/dotnet/api/microsoft.azure.objectanchors.objectmodel) представляет геометрию физического объекта и кодирует необходимые параметры для оценки обнаружения и выстановки. Его необходимо создать с помощью [службы "привязки объектов](../quickstarts/get-started-model-ingestion.md)". Затем приложение может загрузить созданный файл модели с помощью API привязок объектов и запросить сетку, внедренную в эту модель для визуализации.
+[ObjectModel](https://docs.microsoft.com/dotnet/api/microsoft.azure.objectanchors.objectmodel) представляет геометрию физического объекта и кодирует необходимые параметры для оценки обнаружения и выстановки. Его необходимо создать с помощью [службы "привязки объектов](../quickstarts/get-started-model-conversion.md)". Затем приложение может загрузить созданный файл модели с помощью API привязок объектов и запросить сетку, внедренную в эту модель для визуализации.
 
 ### <a name="objectsearcharea"></a>обжектсеарчареа
 
@@ -103,7 +103,7 @@ if(status != ObjectObserverStatus.Allowed)
 }
 ```
 
-Затем приложение создает наблюдателя объекта и загружает необходимые модели, созданные [службой приема привязок объектов](../quickstarts/get-started-model-ingestion.md).
+Затем приложение создает наблюдателя объекта и загружает необходимые модели, созданные [службой преобразования модели привязок объектов](../quickstarts/get-started-model-conversion.md).
 
 ```cs
 var observer = new ObjectObserver();

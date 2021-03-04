@@ -1,14 +1,14 @@
 ---
 title: Развертывание службы "Политика Azure" для делегированных подписок в масштабе
 description: Узнайте, как Azure Лигхсаусе позволяет развернуть определение политики и назначение политики для нескольких клиентов.
-ms.date: 11/09/2020
+ms.date: 03/02/2021
 ms.topic: how-to
-ms.openlocfilehash: 5af938c61ad3e42e36360a15c6011b54fa1e823d
-ms.sourcegitcommit: 17b36b13857f573639d19d2afb6f2aca74ae56c1
+ms.openlocfilehash: 48354c3cca7574b1d5acf71865218564591bc23e
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94412074"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102049786"
 ---
 # <a name="deploy-azure-policy-to-delegated-subscriptions-at-scale"></a>Развертывание службы "Политика Azure" для делегированных подписок в масштабе
 
@@ -51,6 +51,9 @@ foreach ($ManagedSub in $ManagedSubscriptions)
 }
 ```
 
+> [!NOTE]
+> Хотя вы можете развертывать политики для нескольких клиентов, в настоящее время вы не можете [просматривать сведения о соответствии](../../governance/policy/how-to/determine-non-compliance.md#compliance-details) для несоответствующих ресурсов в этих клиентах.
+
 ## <a name="validate-the-policy-deployment"></a>Проверка развертывания политики
 
 После развертывания шаблона Azure Resource Manager можно убедиться, что определение политики было успешно применено, пытаясь создать учетную запись хранения с параметром **enablehttpstrafficonly.** , имеющим значение **false** в одной из делегированных подписок. Из-за назначения политики вы не сможете создать эту учетную запись хранения.  
@@ -90,9 +93,6 @@ foreach ($ManagedSub in $ManagedSubscriptions)
     }
 }
 ```
-
-> [!NOTE]
-> Хотя вы можете развертывать политики для нескольких клиентов, в настоящее время вы не можете [просматривать сведения о соответствии](../../governance/policy/how-to/determine-non-compliance.md#compliance-details) для несоответствующих ресурсов в этих клиентах.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
