@@ -13,12 +13,12 @@ metadata:
   ms.author: mbaldwin
   manager: rkarlin
   ms.date: 12/23/2019
-  ms.openlocfilehash: 678576fb20c57af4f75b243e558aae6170063594
-  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.openlocfilehash: 919d1b27c408c1fdb43333401560d7c84dd04f5d
+  ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/03/2021
-  ms.locfileid: "101729748"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102051588"
 landingContent:
 - title: Общие средства о тестировании производительности системы безопасности Azure
   linkLists:
@@ -57,7 +57,7 @@ landingContent:
     - text: Центр безопасности Azure
       url: ../../security-center/index.yml
     - text: Пример базовой схемы оценки системы безопасности Azure
-      url: ../../governance/blueprints/samples/azure-security-benchmark-foundation/index.yml
+      url: ../../governance/blueprints/samples/azure-security-benchmark-foundation/index.md
 - title: Базовые средства безопасности ИИ и Машинного обучения
   linkLists:
   - linkListType: overview

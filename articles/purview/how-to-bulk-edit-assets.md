@@ -7,12 +7,12 @@ ms.service: data-catalog
 ms.subservice: data-catalog-gen2
 ms.topic: conceptual
 ms.date: 11/24/2020
-ms.openlocfilehash: 77bfa3d22d628cf179e95cd4892ec030f22ab35f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 493d3ceb596bb29da0e60ab08518375412417a0e
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693770"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102049494"
 ---
 # <a name="how-to-bulk-edit-assets-to-tag-glossary-terms"></a>Как выполнить групповое изменение ресурсов для обозначения терминов глоссария
 
@@ -65,13 +65,13 @@ ms.locfileid: "101693770"
 
 7. Повторите указанные выше действия для классификаций, владельцев и экспертов.
 
-    :::image type="content" source="media/how-to-bulk-edit-assets/all-list.png" alt-text="Снимок экрана с условиями удаления.":::
+    :::image type="content" source="media/how-to-bulk-edit-assets/all-list.png" alt-text="Снимок экрана с классификациями и контактами.":::
 
 8. После завершения закройте колонку "групповое редактирование", выбрав **Закрыть** или **удалить все и закрыть**. Закрыть не приведет к удалению выбранных ресурсов, в то время как удалить все и закрыть приведет к удалению всех выбранных ресурсов.
     :::image type="content" source="media/how-to-bulk-edit-assets/close-list.png" alt-text="Снимок экрана закрытия.":::
 
    > [!Important]
-   > Рекомендуемое количество ресурсов для групповой правки — 15. Выбор более 25 может вызвать проблемы с производительностью.
+   > Рекомендуемое количество ресурсов для групповой правки — 25. Выбор более 25 может вызвать проблемы с производительностью.
    > Поле **выбранное представление** будет отображаться, только если выбран хотя бы один ресурс.
 
 

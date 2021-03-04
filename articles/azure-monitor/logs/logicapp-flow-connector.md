@@ -2,17 +2,16 @@
 title: Использование журналов Azure Monitor с Azure Logic Apps и автоматизацией электропитания
 description: Узнайте, как можно использовать Azure Logic Apps и Power автоматизирующие для быстрой автоматизации повторяемых процессов с помощью соединителя Azure Monitor.
 ms.service: azure-monitor
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 03/13/2020
-ms.openlocfilehash: 9d93e3ec08ff16a1fcca0c914b9e817d4ca89d60
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 4a25d7a23d486c8ce22fa433cc1ead390726facc
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101707954"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048868"
 ---
 # <a name="azure-monitor-logs-connector-for-logic-apps-and-power-automate"></a>Соединитель Azure Monitor журналов для Logic Apps и автоматизации энергосбережения
 [Azure Logic Apps](../../logic-apps/index.yml) и [Power автоматизировать](https://flow.microsoft.com) позволяют создавать автоматизированные рабочие процессы с помощью сотен действий для различных служб. Соединитель Azure Monitor Logs позволяет создавать рабочие процессы, которые извлекают данные из Log Analytics рабочей области или приложения Application Insights в Azure Monitor. В этой статье описываются действия, входящие в соединитель, и приводится пошаговое руководство по созданию рабочего процесса с использованием этих данных.

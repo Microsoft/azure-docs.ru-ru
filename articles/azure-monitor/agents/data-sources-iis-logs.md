@@ -1,17 +1,16 @@
 ---
 title: Получение журналов IIS с помощью агента Log Analytics в Azure Monitor
 description: Службы IIS (Internet Information Services) хранят данные об активности пользователей в файлах журналов, собираемых службой Azure Monitor.  В этой статье описано, как настроить сбор журналов IIS и сведения о записях, созданных ими в службе Azure Monitor.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
-ms.date: 11/13/2020
-ms.openlocfilehash: 96eab2d93ae0212568f8ef23e32a35016cb17248
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 02/26/2021
+ms.openlocfilehash: 484e49219b94f5974661b1e76f533236666ebcfb
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101732060"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102050738"
 ---
 # <a name="collect-iis-logs-with-log-analytics-agent-in-azure-monitor"></a>Получение журналов IIS с помощью агента Log Analytics в Azure Monitor
 Службы IIS (IIS) хранит данные о действиях пользователей в файлах журнала, которые могут собираться агентом Log Analytics и храниться в [Azure Monitor журналах](../data-platform.md).
@@ -26,7 +25,7 @@ ms.locfileid: "101732060"
 
 Служба Azure Monitor поддерживает только те файлы журналов IIS, которые хранятся в формате W3C, и не поддерживает настраиваемые поля или расширенное ведение журналов IIS. Она не собирает журналы в формате NCSA или в собственном формате IIS.
 
-Настройте журналы IIS в Azure Monitor из [меню дополнительных параметров](../agents/agent-data-sources.md#configuring-data-sources) для агента log Analytics.  Никакие настройки, кроме выбора параметра **Сбор файлов журналов IIS в формате W3C**, не требуются.
+Настройте журналы IIS в Azure Monitor из [меню конфигурации агента](../agents/agent-data-sources.md#configuring-data-sources) для агента log Analytics.  Никакие настройки, кроме выбора параметра **Сбор файлов журналов IIS в формате W3C**, не требуются.
 
 
 ## <a name="data-collection"></a>Сбор данных

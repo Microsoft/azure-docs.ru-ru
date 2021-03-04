@@ -3,12 +3,12 @@ title: Поддержка уровня архива (Предварительн�
 description: Дополнительные сведения о поддержке архивных уровней для Azure Backup
 ms.topic: conceptual
 ms.date: 02/18/2021
-ms.openlocfilehash: cd9cfc5722dc644dd257738be797f162ac6dc995
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 30a7915332d1d7ecab87b0db1ddc6dacc0fa69c9
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101746911"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102050654"
 ---
 # <a name="archive-tier-support-preview"></a>Поддержка уровня архива (Предварительная версия)
 
@@ -35,6 +35,9 @@ Azure Backup поддерживает резервное копирование 
 
 - Эта возможность предоставляется с помощью PowerShell.
 
+>[!NOTE]
+>Поддержка уровня архива для виртуальных машин Azure и SQL Server на виртуальных машинах Azure ограничена общедоступной предварительной версией с ограниченными регистрациями. Чтобы зарегистрироваться для поддержки архива, используйте эту [ссылку](https://aka.ms/ArchivePreviewInterestForm).
+
 ## <a name="get-started-with-powershell"></a>Начало работы с PowerShell
 
 1. Скачайте [последнюю версию модуля PowerShell](https://github.com/Azure/azure-powershell/tree/Az.RecoveryServices-preview) (Предварительная версия).
@@ -43,12 +46,30 @@ Azure Backup поддерживает резервное копирование 
 
    `Set-AzContext -Subscription "SubscriptionName"`
 
+1. Получите хранилище:
+
+    `$vault =  Get-AzRecoveryServicesVault -ResourceGroupName "rgName" -Name "vaultName"`
+
+1. Получение списка элементов архивации:
+
+    `$BackupItemList = Get-AzRecoveryServicesBackupItem -vaultId $vault.ID -BackupManagementType "AzureVM/AzureWorkload" -WorkloadType "AzureVM/MSSQL"`
+
+1. Получите элемент резервного копирования.
+
+    - Для виртуальных машин Azure:
+
+        `$bckItm = $BackupItemList | Where-Object {$_.Name -match '<vmName>'}`
+
+    - Для SQL Server на виртуальных машинах Azure:
+
+        `$bckItm = $BackupItemList | Where-Object {$_.Name -match '<dbName>' -and $_.ContainerName -match '<vmName>'}`
+
 ## <a name="use-powershell"></a>Использование PowerShell
 
 ### <a name="check-archivable-recovery-points"></a>Проверка архивных точек восстановления
 
 ```azurepowershell
-$rp = Get-AzRecoveryServicesBackupRecoveryPoint -StartDate (Get-Date).AddDays(-180).ToUniversalTime() -EndDate (Get-Date).AddDays(0).ToUniversalTime() -VaultId $vault.ID -Item $bckItm  -IsReadyForMove $true -TargetTier VaultArchive
+$rp = Get-AzRecoveryServicesBackupRecoveryPoint -VaultId $vault.ID -Item $bckItm  -IsReadyForMove $true -TargetTier VaultArchive
 ```
 
 Будут перечислены все точки восстановления, связанные с определенным элементом архивации, готовыми к перемещению в архив.
@@ -56,7 +77,7 @@ $rp = Get-AzRecoveryServicesBackupRecoveryPoint -StartDate (Get-Date).AddDays(-1
 ### <a name="check-why-a-recovery-point-cannot-be-moved-to-archive"></a>Проверьте, почему точка восстановления не может быть перемещена в архив
 
 ```azurepowershell
-$rp.RecoveryPointMoveReadinessInfo["ArchivedRP"]
+$rp[0].RecoveryPointMoveReadinessInfo["ArchivedRP"]
 ```
 
 Где `$rp[0]` — это точка восстановления, для которой необходимо проверить, почему она не является архивной.
@@ -79,13 +100,13 @@ False           Recovery-Point Type is not eligible for archive move as it is al
 >Экономия затрат зависит от ряда причин и может не совпадать для двух экземпляров.
 
 ```azurepowershell
-$recommendedRPs = SGet-AzRecoveryServicesRecommendedArchivableRPGroup -Item $BackupItem -StartDate $Startdate.ToUniversalTime() -EndDate $Enddate.ToUniversalTime() -VaultId $vault.ID 
+$RecommendedRecoveryPointList = Get-AzRecoveryServicesBackupRecommendedArchivableRPGroup -Item $bckItm -VaultId $vault.ID
 ```
 
 ### <a name="move-to-archive"></a>Переместить в архив
 
 ```azurepowershell
-Move-AzRecoveryServicesRecoveryPoint -VaultId $vault.ID - RecoveryPoint $RecoveryPoint[10] -SourceTier VaultStandard -DestinationTier VaultArchive 
+Move-AzRecoveryServicesBackupRecoveryPoint -VaultId $vault.ID -RecoveryPoint $rp[2] -SourceTier VaultStandard -DestinationTier VaultArchive
 ```
 
 Эта команда перемещает архивированную точку восстановления в архив. Он возвращает задание, которое можно использовать для отслеживания операции перемещения с портала и с помощью PowerShell.
@@ -95,7 +116,7 @@ Move-AzRecoveryServicesRecoveryPoint -VaultId $vault.ID - RecoveryPoint $Recover
 Эта команда возвращает все архивированные точки восстановления.
 
 ```azurepowershell
-$rp = Get-AzRecoveryServicesBackupRecoveryPoint -StartDate (Get-Date).AddDays(-180).ToUniversalTime() -EndDate (Get-Date).AddDays(0).ToUniversalTime() -VaultId $vault.ID -Item $bckItm -Tier VaultArchive
+$rp = Get-AzRecoveryServicesBackupRecoveryPoint -VaultId $vault.ID -Item $bckItm -Tier VaultArchive
 ```
 
 ### <a name="restore-with-powershell"></a>Восстановление с помощью PowerShell
@@ -122,7 +143,7 @@ Restore-AzRecoveryServicesBackupItem -VaultLocation $vault.Location -RehydratePr
 Чтобы просмотреть задания перемещения и восстановления, используйте следующий командлет PowerShell:
 
 ```azurepowershell
-Get-AzRecoveryservicesBackupJob -VaultId $targetVault.ID
+Get-AzRecoveryServicesBackupJob -VaultId $vault.ID
 ```
 
 ## <a name="use-the-portal"></a>Использование портала

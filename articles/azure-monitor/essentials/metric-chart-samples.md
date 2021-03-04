@@ -6,13 +6,12 @@ services: azure-monitor
 ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: vitalyg
-ms.subservice: metrics
-ms.openlocfilehash: 882c9e50c344b792d70d09017aeca3a2874cb106
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b7e848e4565e2b1badd9bc418d28ea984a0306b2
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101700751"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051112"
 ---
 # <a name="metric-chart-examples"></a>Примеры диаграмм метрик 
 

@@ -6,12 +6,12 @@ ms.suite: integration
 ms.reviewer: estfan, logicappspm, az-logic-apps-dev
 ms.topic: conceptual
 ms.date: 03/02/2021
-ms.openlocfilehash: 43dd047738538b0dcc76904e951eccea3a327c19
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0850830e6f8101feae80154a0e245196a690f276
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101715957"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102050245"
 ---
 # <a name="create-stateful-and-stateless-workflows-in-visual-studio-code-with-the-azure-logic-apps-preview-extension"></a>Создание рабочих процессов с отслеживанием состояния и без отслеживания состояния в Visual Studio Code с помощью расширения Azure Logic Apps (Предварительная версия)
 
@@ -140,7 +140,8 @@ ms.locfileid: "101715957"
 
 * Чтобы использовать [действие "операции встроенного кода](../logic-apps/logic-apps-add-run-inline-code.md) ", запускающее JavaScript, установите [Node.js версии 10. x. x, 11. x. x или 12. x. x](https://nodejs.org/en/download/releases/).
 
-  > [!TIP] Для Windows Скачайте версию MSI. Если вместо этого используется ZIP-версия, необходимо вручную сделать Node.js доступными с помощью переменной среды PATH для вашей операционной системы.
+  > [!TIP] 
+  > Для Windows Скачайте версию MSI. Если вместо этого используется ZIP-версия, необходимо вручную сделать Node.js доступными с помощью переменной среды PATH для вашей операционной системы.
 
 * Для локального запуска триггеров и действий на основе веб-перехватчика, например [встроенного триггера веб-перехватчика HTTP](../connectors/connectors-native-webhook.md), в Visual Studio Code необходимо [настроить переадресацию для URL-адреса обратного вызова](#webhook-setup).
 

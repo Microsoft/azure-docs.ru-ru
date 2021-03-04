@@ -6,13 +6,12 @@ services: azure-monitor
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: ancav
-ms.subservice: ''
-ms.openlocfilehash: f0c97d128837e77325e68ae28161a98938510ff8
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: dcb2c0ceb3092bb6905ac1eb9fc58093da935f2f
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101723288"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048987"
 ---
 # <a name="send-guest-os-metrics-to-the-azure-monitor-metrics-database-for-a-windows-virtual-machine-classic"></a>Отправка метрик гостевой ОС в базу данных метрик Azure Monitor для виртуальной машины Windows (классическая модель)
 

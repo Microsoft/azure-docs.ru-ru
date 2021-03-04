@@ -6,13 +6,12 @@ ms.author: bwren
 services: azure-monitor
 ms.topic: conceptual
 ms.date: 02/08/2021
-ms.subservice: logs
-ms.openlocfilehash: dde18460862eb2ac61ed7e9bbf95d70ecf61496b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 254d403adc687074eae772bcdcc55793bb25b336
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101726025"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102048919"
 ---
 # <a name="create-diagnostic-settings-to-send-platform-logs-and-metrics-to-different-destinations"></a>Создание параметров диагностики для отправки журналов платформы и метрик в различные места назначения
 [Журналы платформы](./platform-logs-overview.md) в Azure, в том числе журнал действий Azure и журналы ресурсов, предоставляют подробные сведения о диагностике и аудите для ресурсов Azure и платформы Azure, от которых они зависят. [Метрики платформы](./data-platform-metrics.md) собираются по умолчанию и обычно хранятся в базе данных метрик Azure Monitor. В этой статье приведены сведения о создании и настройке параметров диагностики для отправки метрик и журналов платформы в разные назначения.

@@ -3,12 +3,12 @@ title: Настройка оперативного резервного копи
 description: Узнайте, как настроить оперативное резервное копирование для больших двоичных объектов Azure (в предварительной версии) и управлять им.
 ms.topic: conceptual
 ms.date: 02/16/2021
-ms.openlocfilehash: 7fe302de0e93575e7bb62f7c5cdefd7acc0720c3
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0dc490842389ba9286799aef5d37c1cf7c1ba64e
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101746786"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051078"
 ---
 # <a name="configure-operational-backup-for-azure-blobs-in-preview"></a>Настройка оперативного резервного копирования для больших двоичных объектов Azure (Предварительная версия)
 
@@ -170,4 +170,4 @@ Azure Backup позволяет легко настроить операцион
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Восстановление больших двоичных объектов Azure](blob-backup-support-matrix.md)
+- [Восстановление больших двоичных объектов Azure](blob-restore.md)

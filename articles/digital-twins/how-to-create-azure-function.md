@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 8/27/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: ecbf07c1a85c708d4117c83bca546cd8bd6ccd2b
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: b37277c660562721273ff9ae86dd677ee7ac7d55
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100546080"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102050007"
 ---
 # <a name="connect-function-apps-in-azure-for-processing-data"></a>Подключение приложений функций в Azure для обработки данных
 
@@ -65,7 +65,7 @@ ms.locfileid: "100546080"
 * `Azure.DigitalTwins.Core`
 * `Azure.Identity`
 * `System.Net.Http`
-* `Azure.Core`
+* `Azure.Core.Pipeline`
 
 **Вариант 2. Добавление пакетов с помощью `dotnet` программы командной строки:**
 
@@ -75,7 +75,7 @@ ms.locfileid: "100546080"
 dotnet add package Azure.DigitalTwins.Core
 dotnet add package Azure.Identity
 dotnet add package System.Net.Http
-dotnet add package Azure.Core
+dotnet add package Azure.Core.Pipeline
 ```
 
 Затем в Visual Studio обозреватель решений откройте файл _function1.CS_ , в котором имеется образец кода, и добавьте в `using` функцию следующие инструкции. 
@@ -219,7 +219,7 @@ az functionapp config appsettings set -g <your-resource-group> -n <your-App-Serv
 
 :::image type="content" source="media/how-to-create-azure-function/notifications-update-web-app-settings.png" alt-text="Снимок экрана портал Azure. в списке уведомлений выберите значок колокольчика на верхней панели портала. Существует уведомление о том, что параметры веб-приложения успешно обновлены.":::
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье описано, как настроить приложение-функцию в Azure для использования с цифровым двойников Azure.
 

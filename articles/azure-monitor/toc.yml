@@ -416,7 +416,7 @@
                 - name: Отправка в Центры событий
                   href: agents/diagnostics-extension-stream-event-hubs.md
                 - name: Отправка данных в журналы
-                  href: essentials/diagnostics-extension-logs.md
+                  href: agents/diagnostics-extension-logs.md
                 - name: Отправка в Application Insights
                   href: agents/diagnostics-extension-to-application-insights.md
                 - name: Журнал версий
@@ -993,7 +993,7 @@
         - name: Часто задаваемые вопросы об общедоступной версии
           href: vm/vminsights-ga-release-faq.md
         - name: ВОПРОСЫ И ОТВЕТЫ
-          href: faq.md#azure-monitor-for-vms
+          href: faq.md#vm-insights
         - name: Настройка рабочей области
           href: vm/vminsights-configure-workspace.md
         - name: Установка агентов
@@ -1045,7 +1045,7 @@
         - name: Обзор
           href: containers/container-insights-overview.md
         - name: ВОПРОСЫ И ОТВЕТЫ
-          href: faq.md#azure-monitor-for-containers
+          href: faq.md#container-insights
         - name: Включение мониторинга
           items:
             - name: Общие сведения о включении мониторинга

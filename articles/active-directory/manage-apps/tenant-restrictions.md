@@ -12,12 +12,12 @@ ms.date: 2/23/2021
 ms.author: kenwith
 ms.reviewer: hpsin
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b545afb370b84404d3e15f885464aabf00d2eaf2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: bdcdd387575faec87656430860e24fee56387775
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101687079"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102050908"
 ---
 # <a name="use-tenant-restrictions-to-manage-access-to-saas-cloud-applications"></a>Использование ограничений клиентов для управления доступом к облачным приложениям SaaS
 
@@ -29,7 +29,7 @@ ms.locfileid: "101687079"
 
 В этой статье рассматриваются ограничения клиента для Microsoft 365, но функция защищает все приложения, отправляющие пользователя в Azure AD для единого входа. Если вы используете приложения SaaS с другим клиентом Azure AD из клиента, используемого Microsoft 365, убедитесь, что разрешены все необходимые клиенты (например, в сценариях службы совместной работы B2B). Дополнительные сведения об облачных приложениях SaaS см. на сайте [Active Directory Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps).
 
-Кроме того, функция ограничений клиента теперь поддерживает [блокировку использования всех приложений-потребителей Майкрософт](#blocking-consumer-applications) (приложения MSA), таких как OneDrive, Hotmail и Xbox.com.  В этом случае в конечной точке используется отдельный заголовок `login.live.com` , который подробно описывается в конце документа.
+Кроме того, функция ограничений клиента теперь поддерживает [блокировку использования всех приложений-потребителей Майкрософт](#blocking-consumer-applications-public-preview) (приложения MSA), таких как OneDrive, Hotmail и Xbox.com.  В этом случае в конечной точке используется отдельный заголовок `login.live.com` , который подробно описывается в конце документа.
 
 ## <a name="how-it-works"></a>Принцип работы
 

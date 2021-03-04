@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/09/2020
 ms.author: mbaldwin
-ms.openlocfilehash: 141daa485fae5aba2db23647fada30ba5b621cd0
-ms.sourcegitcommit: 48cb2b7d4022a85175309cf3573e72c4e67288f5
+ms.openlocfilehash: 9194f38ddea5570d94ba6c87ea6a537cb41fb98c
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96854620"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051384"
 ---
 # <a name="data-encryption-models"></a>Модели шифрования данных
 
@@ -146,7 +146,7 @@ ms.locfileid: "96854620"
 | Продукт, функция или услуга | На стороне сервера с помощью управляемого службой ключа   | Server-Side с помощью Customer-Managed ключа | Client-Side с помощью Client-Managed ключа  |
 |----------------------------------|--------------------|-----------------------------------------|--------------------|
 | **ИИ и Машинное обучение**      |                    |                    |                    |
-| Когнитивный поиск Azure           | Да                | Да                | -                  |
+| Когнитивный поиск Azure           | Да                | Да                | -                  |
 | Azure Cognitive Services         | Да                | Да                | -                  |
 | Машинное обучение Azure           | Да                | Да                | -                  |
 | Машинное обучение Azure Studio (классическая модель) | Да         | 2048-разрядный RSA (предварительная версия) | -               |
@@ -199,8 +199,8 @@ ms.locfileid: "96854620"
 | Azure Databricks                 | Да                | Да                | -                  |
 | Azure Database Migration Service | Да                | Недоступно\*              | -                  |
 | **DevOps**                       |                    |                    |                    |
-| Azure DevOps Services            | Да                | -                  | Да                |
-| Azure Repos                      | Да                | -                  | Да                |
+| Azure DevOps Services            | Да                | -                  | -                  |
+| Azure Repos                      | Да                | -                  | -                  |
 | **Удостоверение**                     |                    |                    |                    |
 | Azure Active Directory           | Да                | -                  | -                  |
 | Доменные службы Azure Active Directory | Да          | Да                | -                  |
@@ -213,7 +213,7 @@ ms.locfileid: "96854620"
 | Подготовка устройств к добавлению в центр Интернета вещей      | Да                | Да                | -                  |
 | **Управление**    |                    |                    |                    |
 | Azure Site Recovery              | Да                | -                  | -                  |
-| Служба "Миграция Azure"                    | Да                | Да                | -                  |
+| Миграция Azure                    | Да                | Да                | -                  |
 | **Носитель**                        |                    |                    |                    |
 | Службы мультимедиа                   | Да                | Да                | Да                |
 | **Безопасность**                     |                    |                    |                    |

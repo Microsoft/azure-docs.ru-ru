@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.date: 02/22/2021
 ms.author: mbaldwin
 ms.custom: security-benchmark
-ms.openlocfilehash: fd9a01868230efd9e9078171359d81302b472cd3
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 39466ad621eff1a7d3490c936c90fbff6f63e0fc
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101724427"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051554"
 ---
 # <a name="security-control-v2-backup-and-recovery"></a>Управление безопасностью версии 2: резервное копирование и восстановление
 
 Резервное копирование и восстановление охватывает элементы управления, чтобы обеспечить выполнение, проверку и защиту резервных копий данных и конфигурации на разных уровнях служб.
 
-Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь со статьей [сведения о встроенной инициативе по обеспечению безопасности в Azure: резервное копирование и восстановление](../../governance/policy/samples/azure-security-benchmark#backup-and-recovery)
+Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь со статьей [сведения о встроенной инициативе по обеспечению безопасности в Azure: резервное копирование и восстановление](../../governance/policy/samples/azure-security-benchmark.md#backup-and-recovery)
 
 ## <a name="br-1-ensure-regular-automated-backups"></a>BR-1: обеспечение регулярного автоматического резервного копирования
 
@@ -66,7 +66,7 @@ ms.locfileid: "101724427"
 
 - [Шифрование данных резервного копирования с использованием ключей, управляемых клиентом](../../backup/encryption-at-rest-with-cmk.md) 
 
-- [Резервное копирование ключей Key Vault в Azure](/powershell/module/azurerm.keyvault/backup-azurekeyvaultkey?view=azurermps-6.13.0)
+- [Резервное копирование ключей Key Vault в Azure](/powershell/module/azurerm.keyvault/backup-azurekeyvaultkey)
 
 - [Функции безопасности, помогающие защитить гибридные резервные копии от атак](../../backup/backup-azure-security-feature.md#prevent-attacks)
 
@@ -90,7 +90,7 @@ ms.locfileid: "101724427"
 
 - [Как восстановить файлы из резервной копии виртуальной машины Azure](../../backup/backup-azure-restore-files-from-vm.md)
 
-- [Восстановление ключей Key Vault в Azure](/powershell/module/azurerm.keyvault/restore-azurekeyvaultkey?view=azurermps-6.13.0)
+- [Восстановление ключей Key Vault в Azure](/powershell/module/azurerm.keyvault/restore-azurekeyvaultkey)
 
 **Ответственность**: Customer
 

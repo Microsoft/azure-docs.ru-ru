@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 11/03/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: b713a19cbe572998bb6e5050ab2d7721a844f07a
-ms.sourcegitcommit: 7ec45b7325e36debadb960bae4cf33164176bc24
+ms.openlocfilehash: a2732c3979998ea3429833f96056b88bc2dccf75
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100530456"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102050942"
 ---
 # <a name="manage-a-graph-of-digital-twins-using-relationships"></a>Управление графиком цифровых двойников с помощью связей
 
@@ -22,7 +22,7 @@ ms.locfileid: "100530456"
 
 Эта статья посвящена управлению связями и графу в целом. для работы с отдельными цифровыми двойниковми см. раздел [*как управлять цифровыми двойников*](how-to-manage-twin.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 [!INCLUDE [digital-twins-prereq-instance.md](../../includes/digital-twins-prereq-instance.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "100530456"
 
 [!INCLUDE [digital-twins-ways-to-manage.md](../../includes/digital-twins-ways-to-manage.md)]
 
-Вы также можете вносить изменения в граф с помощью примера Azure Digital двойников (ADT) Explorer, который позволяет визуализировать двойников и Graph, а также использовать пакет SDK в фоновом режиме. В следующем разделе подробно описывается этот пример.
+Вы также можете вносить изменения в граф с помощью примера Azure Digital двойников Explorer, который позволяет визуализировать двойников и Graph, а также использовать пакет SDK в фоновом режиме. В следующем разделе подробно описывается этот пример.
 
 [!INCLUDE [visualizing with Azure Digital Twins explorer](../../includes/digital-twins-visualization.md)]
 

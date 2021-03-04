@@ -6,13 +6,12 @@ services: azure-monitor
 ms.topic: conceptual
 ms.date: 05/04/2020
 ms.author: bwren
-ms.subservice: metrics
-ms.openlocfilehash: 0051ec15cafc60af6a0523631f77a9b52294e69c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 8e510cf2e6fed9f9ffdec1dcc4dacf16a866d66b
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101731720"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102049021"
 ---
 # <a name="send-guest-os-metrics-to-the-azure-monitor-metric-store-by-using-an-azure-resource-manager-template-for-a-windows-virtual-machine"></a>Отправка метрик гостевой ОС в хранилище метрик Azure Monitor с помощью шаблона Azure Resource Manager для виртуальной машины Windows
 Данные о производительности из гостевых ОС виртуальных машин Azure не собираются автоматически, как другие [метрики платформы](./monitor-azure-resource.md#monitoring-data). Установите [расширение диагностики](../agents/diagnostics-extension-overview.md) Azure Monitor, чтобы собирать метрики гостевой ОС в базу данных метрик и использовать их со всеми возможностями метрик Azure Monitor, включая оповещения почти в режиме реального времени, диаграммы, маршрутизацию и доступ из REST API. В этой статье описывается процесс отправки метрик производительности гостевой ОС с виртуальной машины под управлением Windows в базу данных метрик с использованием шаблона Resource Manager. 

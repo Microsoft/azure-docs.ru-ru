@@ -6,13 +6,12 @@ services: azure-monitor
 ms.topic: reference
 ms.date: 09/30/2020
 ms.author: bwren
-ms.subservice: logs
-ms.openlocfilehash: c2cea95dba3be02b9db584b0650761cb2d640283
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 721563fa140dfddbfb5984db8465187fb90018e5
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101728779"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102049174"
 ---
 # <a name="azure-activity-log-event-schema"></a>Схема событий журнала действий Azure
 [Журнал действий Azure](./platform-logs-overview.md) позволяет получить представление о любых событиях уровня подписки, произошедших в Azure. В этой статье описываются категории журналов действий и схема для каждой из них. 

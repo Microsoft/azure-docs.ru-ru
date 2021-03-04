@@ -2,13 +2,13 @@
 title: Соответствие требованиям с помощью политики Azure
 description: Назначение встроенных политик в политике Azure для аудита соответствия реестров контейнеров Azure
 ms.topic: article
-ms.date: 06/11/2020
-ms.openlocfilehash: 26c56616bcc411063d0ebfda28ba1e6fdf44c7fb
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/01/2021
+ms.openlocfilehash: 3f6809698171950060b54257a365889242f4636e
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89291027"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102050585"
 ---
 # <a name="audit-compliance-of-azure-container-registries-using-azure-policy"></a>Аудит соответствия реестров контейнеров Azure с помощью политики Azure
 
@@ -22,7 +22,7 @@ ms.locfileid: "89291027"
 
 Следующие встроенные определения политик относятся к реестру контейнеров Azure:
 
-[!INCLUDE [azure-policy-reference-policies-container-registry](../../includes/policy/reference/bycat/policies-container-registry.md)]
+[!INCLUDE [azure-policy-reference-rp-containerreg](../../includes/policy/reference/byrp/microsoft.containerregistry.md)]
 
 См. также встроенное определение политики сети. [Реестр контейнеров должен использовать конечную точку службы виртуальной сети](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fc4857be7-912a-4c75-87e6-e30292bcdf78).
 
@@ -43,7 +43,7 @@ ms.locfileid: "89291027"
 
 ### <a name="policy-compliance-in-the-portal"></a>Соответствие политике на портале:
 
-1. Выберите **все службы**и выполните поиск по запросу **Политика**.
+1. Выберите **все службы** и выполните поиск по запросу **Политика**.
 1. Выберите **соответствие**.
 1. Используйте фильтры для ограничения состояний соответствия или поиска политик.
 
@@ -59,7 +59,7 @@ ms.locfileid: "89291027"
 az policy assignment list --query "[?contains(displayName,'Container Registries')].{name:displayName, ID:id}" --output table
 ```
 
-Образец вывода:
+Пример результатов выполнения:
 
 ```
 Name                                                                                   ID
@@ -85,7 +85,7 @@ az policy state list \
  --resource-group myresourcegroup
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте больше о [определениях](../governance/policy/concepts/definition-structure.md) и [влиянии](../governance/policy/concepts/effects.md)политики Azure.
 

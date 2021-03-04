@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 9/1/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 924397c9c81d2a38ae74b95a8f7133ced8bde0d4
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 24dac044982d59e93da17ee75190f378d5e3cdea
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101736548"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102050925"
 ---
 # <a name="auto-manage-devices-in-azure-digital-twins-using-device-provisioning-service-dps"></a>Автоматическое управление устройствами в цифровом двойников Azure с помощью службы подготовки устройств (DPS)
 
@@ -85,7 +85,7 @@ az iot dps create --name <Device Provisioning Service name> --resource-group <re
 
 В созданном файле кода функции вставьте следующий код.
 
-:::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/adtIotHub_allocate.cs":::
+:::code language="csharp" source="~/digital-twins-docs-samples-dps/functions/DpsAdtAllocationFunc.cs":::
 
 Сохраните файл, а затем опубликуйте приложение-функцию повторно. Инструкции по публикации приложения-функции см. в разделе [*Публикация приложения*](tutorial-end-to-end.md#publish-the-app) в комплексном руководстве.
 
@@ -182,7 +182,7 @@ az dt twin show -n <Digital Twins instance name> --twin-id <Device Registration 
 
 В опубликованном приложении-функции добавьте новый класс функции типа " *триггер концентратора событий*" и вставьте код ниже.
 
-:::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/adtIotHub_delete.cs":::
+:::code language="csharp" source="~/digital-twins-docs-samples-dps/functions/DeleteDeviceInTwinFunc.cs":::
 
 Сохраните проект, а затем опубликуйте приложение функции еще раз. Инструкции по публикации приложения-функции см. в разделе [*Публикация приложения*](tutorial-end-to-end.md#publish-the-app) в комплексном руководстве.
 
@@ -223,7 +223,7 @@ az functionapp config appsettings set --settings "EVENTHUB_CONNECTIONSTRING=<Eve
 
 В [первой половине этой статьи](#auto-provision-device-using-device-provisioning-service)вы создали устройство в центре Интернета вещей и соответствующий цифровой двойника. 
 
-Теперь перейдите в центр Интернета вещей и удалите это устройство (это можно сделать с помощью [команды Azure CLI](/cli/azure/ext/azure-iot/iot/hub/module-identity?view=azure-cli-latest#ext_azure_iot_az_iot_hub_module_identity_delete) или в [портал Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FIotHubs)). 
+Теперь перейдите в центр Интернета вещей и удалите это устройство (это можно сделать с помощью [команды Azure CLI](/cli/azure/ext/azure-iot/iot/hub/module-identity?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_iot_hub_module_identity_delete) или в [портал Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FIotHubs)). 
 
 Устройство будет автоматически удалено из Azure Digital двойников. 
 

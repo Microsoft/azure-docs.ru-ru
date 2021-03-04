@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.date: 02/22/2021
 ms.author: mbaldwin
 ms.custom: security-benchmark
-ms.openlocfilehash: f76ebf8609b5f4ac587800359a5cbb0c6f967f3c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 4a36bd69ff5ddbc79e358d6f8a2c5b4d640c6d5c
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101698609"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051452"
 ---
 # <a name="security-control-v2-identity-management"></a>Управление безопасностью v2: Управление удостоверениями
 
 Управление удостоверениями охватывает элементы управления для обеспечения безопасного управления удостоверениями и доступом с помощью Azure Active Directory. Сюда входит использование единого входа, строгие проверки подлинности, управляемые удостоверения (и принципы службы) для мониторинга приложений, условного доступа и аномалий учетных записей.
 
-Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь со статьей [сведения о встроенной инициативе по обеспечению безопасности в Azure: Управление удостоверениями.](../../governance/policy/samples/azure-security-benchmark#identity-management)
+Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь со статьей [сведения о встроенной инициативе по обеспечению безопасности в Azure: Управление удостоверениями.](../../governance/policy/samples/azure-security-benchmark.md#identity-management)
 
 ## <a name="im-1-standardize-azure-active-directory-as-the-central-identity-and-authentication-system"></a>IM-1: стандартизация Azure Active Directory в качестве централизованной системы идентификации и проверки подлинности
 

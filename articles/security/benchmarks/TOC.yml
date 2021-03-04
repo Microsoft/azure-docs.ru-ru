@@ -242,4 +242,4 @@
     - name: Центр безопасности Azure
       href: ../../security-center/index.yml
     - name: Пример базовой схемы оценки системы безопасности Azure
-      href: ../../governance/blueprints/samples/azure-security-benchmark-foundation/index.yml
+      href: ../../governance/blueprints/samples/azure-security-benchmark-foundation/index.md

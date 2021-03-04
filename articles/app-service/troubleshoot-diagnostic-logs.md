@@ -5,12 +5,12 @@ ms.assetid: c9da27b2-47d4-4c33-a3cb-1819955ee43b
 ms.topic: article
 ms.date: 09/17/2019
 ms.custom: devx-track-csharp, seodec18
-ms.openlocfilehash: 5fa729ae68d091d9810430bdc0ea55ce1c876b25
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 6008304ea7c1d17363587a4fa5bf6017cb0903f9
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100586275"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102049242"
 ---
 # <a name="enable-diagnostics-logging-for-apps-in-azure-app-service"></a>Включение ведения журнала диагностики для приложений в Службе приложений Azure
 ## <a name="overview"></a>Обзор
@@ -60,7 +60,7 @@ ms.locfileid: "100586275"
 
 Выберите **уровень** или уровень детализации для записи в журнал. В следующей таблице приведены категории журналов, входящие в каждый уровень.
 
-| Уровень | Включаемые категории |
+| Level | Включаемые категории |
 |-|-|
 |**Отключено** | None |
 |**Ошибка** | "Ошибка", "Критические" |
@@ -116,7 +116,7 @@ ms.locfileid: "100586275"
     System.Diagnostics.Trace.TraceError("If you're seeing this, something bad happened");
     ```
 
-- По умолчанию ASP.NET Core использует поставщик ведения журнала [Microsoft. Extensions. Logging. AzureAppServices](https://www.nuget.org/packages/Microsoft.Extensions.Logging.AzureAppServices) . Дополнительные сведения см. в разделе [о ведении журнала ASP.NET Core в Azure](/aspnet/core/fundamentals/logging/).
+- По умолчанию ASP.NET Core использует поставщик ведения журнала [Microsoft. Extensions. Logging. AzureAppServices](https://www.nuget.org/packages/Microsoft.Extensions.Logging.AzureAppServices) . Дополнительные сведения см. в разделе [о ведении журнала ASP.NET Core в Azure](/aspnet/core/fundamentals/logging/). Сведения о ведении журнала пакета SDK для веб-заданий см. в статье Начало [работы с пакетом SDK](/azure/app-service/webjobs-sdk-get-started#enable-console-logging) для веб-заданий Azure.
 
 ## <a name="stream-logs"></a>Журналы потоковой передачи
 
