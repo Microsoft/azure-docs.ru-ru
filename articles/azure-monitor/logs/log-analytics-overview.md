@@ -1,17 +1,16 @@
 ---
 title: Обзор Log Analytics в Azure Monitor
 description: Описывает Log Analytics, который является инструментом в портал Azure, используемом для изменения и запуска запросов журнала для анализа данных в журналах Azure Monitor.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 10/04/2020
-ms.openlocfilehash: ef8be3d1fd815362971d5ae2beb27edf47766c94
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: d83cc4045f09ed0f704a0d61c6b303406835eb44
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101723169"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102052302"
 ---
 # <a name="overview-of-log-analytics-in-azure-monitor"></a>Обзор Log Analytics в Azure Monitor
 Log Analytics — это средство в портал Azure, используемое для изменения и запуска запросов журнала с данными в журналах Azure Monitor. Вы можете написать простой запрос, возвращающий набор записей, а затем использовать функции Log Analytics для сортировки, фильтрации и анализа. Или вы можете написать более расширенный запрос для выполнения статистического анализа и визуализации результатов в диаграмме для определения конкретной тенденции. Независимо от того, работаете ли вы с результатами запросов в интерактивном режиме или используете их с другими Azure Monitorными функциями, такими как оповещения о запросах журнала или книги, Log Analytics — это средство, которое вы будете использовать для написания и тестирования. 

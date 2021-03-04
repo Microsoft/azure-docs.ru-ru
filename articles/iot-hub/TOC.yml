@@ -352,13 +352,13 @@
     - name: Развертывание обновлений
       items:
         - name: Создание учетной записи обновления устройств
-          href: /iot-hub-device-update/create-device-update-account.md
+          href: ../iot-hub-device-update/create-device-update-account.md
         - name: Импорт обновлений
-          href: /iot-hub-device-update/import-update.md
+          href: ../iot-hub-device-update/import-update.md
         - name: Создание группы обновлений
-          href: /iot-hub-device-update/create-update-group.md
+          href: ../iot-hub-device-update/create-update-group.md
         - name: Развертывание обновления
-          href: /iot-hub-device-update/deploy-update.md
+          href: ../iot-hub-device-update/deploy-update.md
     - name: Использование реальных устройств
       items:
         - name: Использование онлайн-симулятора

@@ -11,12 +11,12 @@ ms.topic: reference
 ms.date: 12/07/2020
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 453042766c427b05ec1ee1090a0702f64065542d
-ms.sourcegitcommit: 63d0621404375d4ac64055f1df4177dfad3d6de6
+ms.openlocfilehash: f690f4a416e86b02de0d35fc673849c1293df577
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97508056"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102095771"
 ---
 # <a name="single-sign-on-session-management-in-azure-active-directory-b2c"></a>Управление сеансами единого входа в Azure Active Directory B2C
 
@@ -28,7 +28,7 @@ ms.locfileid: "97508056"
 
 |Поставщик сеанса  |Область  |
 |---------|---------|
-|[NoopSSOSessionProvider](#noopssosessionprovider)     |  Нет       |       
+|[NoopSSOSessionProvider](#noopssosessionprovider)     |  None       |       
 |[DefaultSSOSessionProvider](#defaultssosessionprovider)    | Azure AD B2C диспетчер внутренних сеансов.      |       
 |[ExternalLoginSSOSessionProvider](#externalloginssosessionprovider)     | Между Azure AD B2C и OAuth1, OAuth2 или OpenID Connect Connect Identity Provider.        |         |
 |[OAuthSSOSessionProvider](#oauthssosessionprovider)     | Между приложением проверяющей стороны OAuth2 или OpenID Connect и Azure AD B2C.        |        
@@ -135,7 +135,7 @@ ms.locfileid: "97508056"
 
 ### <a name="samlssosessionprovider"></a>SamlSSOSessionProvider
 
-Этот поставщик используется для управления Azure AD B2C сеансов SAML между приложением проверяющей стороны или федеративным поставщиком удостоверений SAML. При использовании поставщика единого входа для хранения сеанса поставщика удостоверений SAML `RegisterServiceProviders` необходимо установить значение `false` . `SM-Saml-idp` [Технический профиль поставщика удостоверений SAML](saml-identity-provider-technical-profile.md)использует следующий технический профиль.
+Этот поставщик используется для управления Azure AD B2C сеансов SAML между приложением проверяющей стороны или федеративным поставщиком удостоверений SAML. При использовании поставщика единого входа для хранения сеанса поставщика удостоверений SAML `RegisterServiceProviders` необходимо установить значение `false` . `SM-Saml-idp` [Поставщик удостоверений SAML](identity-provider-generic-saml.md)использует следующий технический профиль.
 
 ```xml
 <TechnicalProfile Id="SM-Saml-idp">
@@ -149,7 +149,7 @@ ms.locfileid: "97508056"
 
 При использовании поставщика для хранения сеанса SAML B2C параметр `RegisterServiceProviders` должен иметь значение `true` . Для завершения выхода из сеанса SAML требуются `SessionIndex` и `NameID`.
 
-`SM-Saml-issuer` [Технический профиль издателя SAML](saml-issuer-technical-profile.md) использует следующий технический профиль
+`SM-Saml-issuer` [Технический профиль издателя SAML](saml-service-provider.md) использует следующий технический профиль
 
 ```xml
 <TechnicalProfile Id="SM-Saml-issuer">

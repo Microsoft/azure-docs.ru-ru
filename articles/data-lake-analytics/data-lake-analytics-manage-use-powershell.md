@@ -5,12 +5,12 @@ ms.service: data-lake-analytics
 ms.reviewer: jasonh
 ms.topic: how-to
 ms.date: 06/29/2018
-ms.openlocfilehash: 2f56fc285ed263b4b58985b5df620740a33cb3f5
-ms.sourcegitcommit: b4e6b2627842a1183fce78bce6c6c7e088d6157b
+ms.openlocfilehash: f1d5d732433a78b8e3e7ff94bd6aaa2eea8f4a87
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99092357"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051792"
 ---
 # <a name="manage-azure-data-lake-analytics-using-azure-powershell"></a>Управление аналитикой озера данных Azure с помощью Azure PowerShell
 
@@ -241,7 +241,7 @@ Get-AdlJob -Account $adla -State Accepted,Compiling,New,Paused,Scheduling,Start
 
 * Отменено
 * Сбой
-* Нет
+* None
 * Выполнено
 
 ``` powershell
@@ -296,9 +296,6 @@ Stop-AdlJob -Account $adla -JobID $jobID
 Wait-AdlJob -Account $adla -JobId $job.JobId
 ```
 
-## <a name="analyzing-job-history"></a>Анализ журнала заданий
-
-Использование Azure PowerShell для анализа журнала заданий, выполненных в Azure Data Lake является эффективным методом. Это удобный инструмент для анализа использования и затрат. Дополнительные сведения см. в [примере репозитория для выполнения анализа журнала заданий](https://github.com/jpalbright31/data-lake-analytics-powershell-job-history-analysis)  
 
 ## <a name="list-job-pipelines-and-recurrences"></a>Получение списка конвейеров и повторений заданий
 

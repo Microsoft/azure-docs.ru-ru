@@ -6,14 +6,14 @@ author: memildin
 manager: rkarlin
 ms.service: security-center
 ms.topic: how-to
-ms.date: 02/04/2021
+ms.date: 03/04/2021
 ms.author: memildin
-ms.openlocfilehash: 652986c4850a0b51fc86b84133d7e93813423c9a
-ms.sourcegitcommit: 5b926f173fe52f92fcd882d86707df8315b28667
+ms.openlocfilehash: 6268ff6cfb3d3e856edcd8f84af930d52f4cf9d3
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99550325"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102096179"
 ---
 # <a name="automate-responses-to-security-center-triggers"></a>Автоматизация ответов на триггеры центра безопасности
 
@@ -113,6 +113,7 @@ ms.locfileid: "99550325"
     |---------|---------|---------|
     |Автоматизация рабочих процессов для оповещений системы безопасности|[Развертывание средств автоматизации рабочих процессов для оповещений Центра безопасности Azure](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2fproviders%2fMicrosoft.Authorization%2fpolicyDefinitions%2ff1525828-9a90-4fcf-be48-268cdd02361e)|f1525828-9a90-4fcf-be48-268cdd02361e|
     |Автоматизация рабочих процессов для рекомендаций системы безопасности|[Развертывание средств автоматизации рабочих процессов для рекомендаций Центра безопасности Azure](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2fproviders%2fMicrosoft.Authorization%2fpolicyDefinitions%2f73d6ab6c-2475-4850-afd6-43795f3492ef)|73d6ab6c-2475-4850-afd6-43795f3492ef|
+    |Автоматизация рабочих процессов для изменения соответствия нормативным требованиям|[Развертывание средств автоматизации рабочих процессов для соответствия нормативным требованиям Центра безопасности Azure](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2fproviders%2fMicrosoft.Authorization%2fpolicyDefinitions%2f73d6ab6c-509122b9-ddd9-47ba-a5f1-d0dac20be63c)|509122b9-ddd9-47ba-a5f1-d0dac20be63c|
     ||||
 
     > [!TIP]
@@ -155,7 +156,7 @@ ms.locfileid: "99550325"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-В этой статье вы узнали, как создавать Logic Apps, автоматизировать их выполнение в центре безопасности и запускать их вручную. 
+В этой статье вы узнали, как создавать Logic Apps, автоматизировать их выполнение в центре безопасности и запускать их вручную.
 
 Дополнительные материалы: 
 

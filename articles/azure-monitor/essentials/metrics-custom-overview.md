@@ -6,13 +6,12 @@ ms.author: ancav
 services: azure-monitor
 ms.topic: conceptual
 ms.date: 01/25/2021
-ms.subservice: metrics
-ms.openlocfilehash: b1e61d0b8eb8312c78acabbd087208bb64a2d0d1
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c6e946d5aedb06899a44851b79581dbc518f41b0
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101734457"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102052319"
 ---
 # <a name="custom-metrics-in-azure-monitor-preview"></a>Пользовательские метрики в Azure Monitor (Предварительная версия)
 

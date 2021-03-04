@@ -11,12 +11,12 @@ author: justinha
 manager: daveba
 ms.reviewer: librown
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e36acb5a6a0984b003e4e8deb597bddfc43b064a
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 97517ad3ff260806108dc22686d49b43b0fc6609
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101647563"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102096026"
 ---
 # <a name="passwordless-authentication-options-for-azure-active-directory"></a>Параметры проверки подлинности с паролем для Azure Active Directory
 
@@ -89,6 +89,8 @@ FIDO (быстрое идентификация в сети) позволяет 
 Пользователи могут зарегистрироваться, а затем выбрать ключ безопасности FIDO2 в интерфейсе входа в качестве основного средства проверки подлинности. Ключи безопасности FIDO2, как правило, представляют собой устройства USB, однако можно использовать и устройства с Bluetooth или NFC. При использовании аппаратного устройства для проверки подлинности безопасность учетной записи повышается, так как пароль невозможно подобрать или похитить.
 
 Ключи безопасности FIDO2 можно использовать для входа в систему Azure AD или гибридные устройства Windows 10, присоединенные к Azure Active Directory, и получения единого входа в облачные и локальные ресурсы. Пользователи также могут входить в Поддерживаемые браузеры. Ключи безопасности FIDO2 являются отличным вариантом для предприятий, которые имеют очень высокий уровень безопасности или имеют сценарии или сотрудники, которые не могут использовать свой телефон в качестве второго фактора.
+
+У нас есть справочный документ, в котором [браузеры поддерживают проверку подлинности FIDO2 в Azure AD](fido2-compatibility.md), а также рекомендации для разработчиков, желающих [обеспечить поддержку FIDO2 auth в разрабатываемых приложениях](../develop/support-fido2-authentication.md).
 
 ![Вход в Microsoft ребр с помощью ключа безопасности](./media/concept-authentication-passwordless/concept-web-sign-in-security-key.png)
 

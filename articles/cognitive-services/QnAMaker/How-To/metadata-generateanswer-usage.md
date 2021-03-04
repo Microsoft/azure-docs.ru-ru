@@ -9,12 +9,12 @@ ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 11/09/2020
 ms.custom: devx-track-js, devx-track-csharp
-ms.openlocfilehash: 18b70d60ade7cd40f7ed51aa7c219c8c046abfc3
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: 1c2b608107beff2a4f34325f8a6e5be3a0551053
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99584748"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051911"
 ---
 # <a name="get-an-answer-with-the-generateanswer-api-and-metadata"></a>Получение ответа с помощью API и метаданных Женератеансвер
 
@@ -45,7 +45,7 @@ QnA Maker позволяет добавлять метаданные в виде
 После публикации базы знаний либо с [портала QnA Maker](https://www.qnamaker.ai), либо с помощью [API](/rest/api/cognitiveservices/qnamaker/knowledgebase/publish)можно получить сведения о конечной точке женератеансвер.
 
 Вот как это можно сделать.
-1. Войдите на портал [https://www.qnamaker.ai](https://www.qnamaker.ai).
+1. Выполните вход на странице [https://www.qnamaker.ai](https://www.qnamaker.ai).
 1. В окне **Мои базы знаний** выберите **Просмотреть код** для своей базы знаний.
     ![Снимок экрана с базами знаний](../media/qnamaker-how-to-metadata-usage/my-knowledge-bases.png)
 1. Получите сведения о конечной точке GenerateAnswer.
@@ -273,11 +273,49 @@ var qnaResults = await this.qnaMaker.getAnswers(stepContext.context, qnaMakerOpt
 }
 ```
 
+## <a name="return-precise-answers"></a>Возврат точных ответов
+
+### <a name="generate-answer-api"></a>Создать API ответов 
+
+Пользователь может включить [точные ответы](../reference-precise-answering.md) при использовании управляемого ресурса QnA Maker. Параметр Ансверспанрекуест должен быть обновлен для того же самого.
+
+```json
+{
+    "question": "How long it takes to charge surface pro 4?",
+    "top": 3,
+    "answerSpanRequest": {
+        "enable": true,
+        "topAnswersWithSpan": 1
+    }
+}
+```
+
+Аналогичным образом пользователи могут отключить точные ответы, не задавая параметр Ансверспанрекуест.
+
+```json
+{
+    "question": "How long it takes to charge surface pro 4?",
+    "top": 3
+}
+```
+### <a name="bot-settings"></a>Параметры программы-робота
+
+Если вы хотите настроить точные параметры ответов для службы Bot, перейдите к ресурсу службы приложений для программы-робота. Затем необходимо обновить конфигурации, добавив следующий параметр.
+
+- енаблепреЦисеансвер
+- дисплайпреЦисеансверонли
+
+|настройка отображения;|енаблепреЦисеансвер|дисплайпреЦисеансверонли|
+|:--|--|--|
+|Только точные ответы|true|true|
+|Только длинные ответы|false|false|
+|Как длинные, так и точные ответы|true|false|
+
 ## <a name="common-http-errors"></a>Распространенные ошибки HTTP
 
-|Код|Объяснение|
+|Код|Описание|
 |:--|--|
-|"2xx"|Успех|
+|"2xx"|Успешное завершение|
 |400|Параметры запроса указаны неправильно. Это означает, что требуемые параметры отсутствуют, имеют неправильный формат или слишком большой размер|
 |400|Текст запроса указан неправильно. Это означает, что JSON отсутствует, имеет неправильный формат или слишком большой размер|
 |401|Недопустимый ключ|
@@ -285,7 +323,7 @@ var qnaResults = await this.qnaMaker.getAnswers(stepContext.context, qnaMakerOpt
 |404|База знаний не существует|
 |410|Этот API устарел и больше недоступен|
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 На странице **Публикация** также содержатся сведения для [создания ответа](../Quickstarts/get-answer-from-knowledge-base-using-url-tool.md) с помощью POST-или перелистывания.
 

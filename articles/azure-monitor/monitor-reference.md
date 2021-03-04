@@ -1,17 +1,16 @@
 ---
 title: Что отслеживает Azure Monitor
 description: Сведения о всех службах и других ресурсах, которые отслеживает Azure Monitor.
-ms.subservice: ''
 ms.topic: conceptual
 author: rboucher
 ms.author: robb
 ms.date: 08/15/2020
-ms.openlocfilehash: 7c8f1a45f46975b489690eded5b094ffee94dbf1
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 4bf792dd02e7cddcc40ef868e4a602fdb03ab3c6
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101728405"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102052285"
 ---
 # <a name="what-is-monitored-by-azure-monitor"></a>Что отслеживает Azure Monitor?
 В этой статье описаны различные приложения и службы, которые отслеживаются с помощью Azure Monitor. 

@@ -1,22 +1,22 @@
 ---
 title: Просмотр видеопотока RTSP в Azure Перцепт DK
-description: Узнайте, как просмотреть видеопоток RTSP из SoM концепции в Azure Перцепт DK.
+description: Узнайте, как просмотреть поток видео RTSP из Azure Перцепт DK.
 author: elqu20
 ms.author: v-elqu
 ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/12/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 20fb8495e17d4294351a50c3bc97436de9f03450
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 5f77e99dc5c34867fef2b0ac47c709824fa4477d
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101662988"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102096009"
 ---
 # <a name="view-your-azure-percept-dks-rtsp-video-stream"></a>Просмотр видеопотока RTSP в Azure Перцепт DK
 
-Следуйте указаниям в этом разделе, чтобы просмотреть видеопоток RTSP из SoM концепции Azure Перцепт DK в Azure Перцепт Studio. В веб-потоке будет отображаться возможность получить представление о моделях AI, развернутых на устройстве.
+Следуйте этому руководству, чтобы просмотреть поток видео RTSP из Azure Перцепт DK в Azure Перцепт Studio. При этом в веб-потоке будет отображаться представление о моделях AI, развернутых на устройстве.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -36,15 +36,15 @@ ms.locfileid: "101662988"
 
 1. Выберите DevKit из списка.
 
-    :::image type="content" source="./media/how-to-view-video-stream/select-device.png" alt-text="Экран обзора Azure Percept Studio.":::
+    :::image type="content" source="./media/how-to-view-video-stream/select-device.png" alt-text="Снимок экрана доступных устройств в Azure Перцепт Studio.":::
 
 1. Щелкните **Просмотр потока устройства**.
 
-    :::image type="content" source="./media/how-to-view-video-stream/view-device-stream.png" alt-text="Экран обзора Azure Percept Studio.":::
+    :::image type="content" source="./media/how-to-view-video-stream/view-device-stream.png" alt-text="Снимок экрана со страницей &quot;устройство&quot;, на которой показаны доступные действия по проекту &quot;концепция&quot;.":::
 
-    Откроется отдельная вкладка, на которой показан динамический веб-поток из SoM-элемента концепции Azure Перцепт DK.
+    Откроется отдельная вкладка, показывающая динамический веб-поток из Azure Перцепт DK.
 
-    :::image type="content" source="./media/how-to-view-video-stream/webstream.png" alt-text="Экран обзора Azure Percept Studio.":::
+    :::image type="content" source="./media/how-to-view-video-stream/webstream.png" alt-text="Снимок экрана веб-потока устройства.":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

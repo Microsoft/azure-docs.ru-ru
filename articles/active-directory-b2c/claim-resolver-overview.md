@@ -11,12 +11,12 @@ ms.topic: reference
 ms.date: 10/28/2020
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 682b83d7016a89b27b5c936853abda1438f59c28
-ms.sourcegitcommit: 63d0621404375d4ac64055f1df4177dfad3d6de6
+ms.openlocfilehash: e4e90d91b8e6ae017f00e37304c4da56cd618732
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97508022"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102095312"
 ---
 # <a name="about-claim-resolvers-in-azure-active-directory-b2c-custom-policies"></a>Арбитры утверждений в пользовательских политиках Azure Active Directory B2C
 
@@ -50,7 +50,7 @@ ms.locfileid: "97508022"
 | ----- | ----------- | --------|
 | {Culture:LanguageName} | Двухбуквенный код ISO для языка. | en |
 | {Culture:LCID}   | Код языка (локаль). | 1033 |
-| {Culture:RegionName} | Двухбуквенный код ISO для региона. | US |
+| {Culture:RegionName} | Двухбуквенный код ISO для региона. | США |
 | {Culture:RFC5646} | Код языка RFC5646. | en-US |
 
 ### <a name="policy"></a>Политика
@@ -66,16 +66,16 @@ ms.locfileid: "97508022"
 
 | Утверждение | Описание | Пример |
 | ----- | ----------- | --------|
-| {OIDC:AuthenticationContextReferences} |Параметр `acr_values` строки запроса. | Недоступно |
+| {OIDC:AuthenticationContextReferences} |Параметр `acr_values` строки запроса. | Н/Д |
 | {OIDC:ClientId} |Параметр `client_id` строки запроса. | 00000000-0000-0000-0000-000000000000 |
 | {OIDC:DomainHint} |Параметр `domain_hint` строки запроса. | facebook.com |
 | {OIDC:LoginHint} |  Параметр `login_hint` строки запроса. | someone@contoso.com |
-| {OIDC:MaxAge} | `max_age`. | Недоступно |
+| {OIDC:MaxAge} | `max_age`. | Н/Д |
 | {OIDC:Nonce} |Параметр `Nonce` строки запроса. | defaultNonce |
 | {OIDC: пароль}| Пароль [владельца ресурса учетные данные пользователя потока данных](ropc-custom.md) .| password1| 
 | {OIDC:Prompt} | Параметр `prompt` строки запроса. | login |
 | {OIDC: RedirectUri} |Параметр `redirect_uri` строки запроса. | https://jwt.ms |
-| {OIDC:Resource} |Параметр `resource` строки запроса. | Недоступно |
+| {OIDC:Resource} |Параметр `resource` строки запроса. | Н/Д |
 | {OIDC: Scope} |Параметр `scope` строки запроса. | OpenId |
 | {OIDC: username}| Имя пользователя [потока учетных данных для пароля владельца ресурса](ropc-custom.md) .| emily@contoso.com| 
 
@@ -86,9 +86,10 @@ ms.locfileid: "97508022"
 | {Context:BuildNumber} | Версия инфраструктури процедур идентификации (номер сборки).  | 1.0.507.0 |
 | {Context:CorrelationId} | Идентификатор корреляции.  | 00000000-0000-0000-0000-000000000000 |
 | {Context:DateTimeInUtc} |Дата и время в формате UTC.  | 10/10/2018 12:00:00 |
-| {Context:DeploymentMode} |Режим развертывания политики.  | Рабочая среда |
+| {Context:DeploymentMode} |Режим развертывания политики.  | Производство |
+| {Context: имя_узла} | Имя узла для текущего запроса.  | contoso.b2clogin.com |
 | {Context:IPAddress} | IP-адрес пользователя. | 11.111.111.11 |
-| {Context: функции "оставаться} | Указывает, установлен ли флажок [оставаться в](session-behavior.md?pivots=b2c-custom-policy#enable-keep-me-signed-in-kmsi) системе. |  Да |
+| {Context: функции "оставаться} | Указывает, установлен ли флажок [оставаться в](session-behavior.md?pivots=b2c-custom-policy#enable-keep-me-signed-in-kmsi) системе. |  true |
 
 ### <a name="claims"></a>Утверждения 
 
@@ -106,14 +107,14 @@ ms.locfileid: "97508022"
 | {OAUTH-KV:campaignId} | Параметр строки запроса. | Гавайи |
 | {OAUTH-KV:app_session} | Параметр строки запроса. | A3C5R |
 | {OAUTH-KV:loyalty_number} | Параметр строки запроса. | 1 234 |
-| {OAUTH-KV:any custom query string} | Параметр строки запроса. | Недоступно |
+| {OAUTH-KV:any custom query string} | Параметр строки запроса. | Н/Д |
 
 ### <a name="oauth2"></a>OAuth2
 
 | Утверждение | Описание | Пример |
 | ----- | ----------------------- | --------|
-| {oauth2:access_token} | Маркер доступа. | Недоступно |
-| {OAuth2: refresh_token} | Маркер обновления. | Недоступно |
+| {oauth2:access_token} | Маркер доступа. | Н/Д |
+| {OAuth2: refresh_token} | Маркер обновления. | Н/Д |
 
 
 ### <a name="saml"></a>SAML
@@ -123,8 +124,8 @@ ms.locfileid: "97508022"
 | {SAML: Ауснконтекстклассреференцес} | `AuthnContextClassRef`Значение элемента из запроса SAML. | urn: Oasis: Names: TC: SAML: 2.0: AC: Classes: Пассвордпротектедтранспорт |
 | {SAML: Намеидполициформат} | `Format`Атрибут из `NameIDPolicy` элемента запроса SAML. | urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress |
 | {SAML: Issuer} |  `Issuer`Значение элемента SAML для запроса SAML.| `https://contoso.com` |
-| {SAML: Алловкреате} | `AllowCreate`Значение атрибута из `NameIDPolicy` элемента запроса SAML. | Верно |
-| {SAML: Форцеаусн} | `ForceAuthN`Значение атрибута из `AuthnRequest` элемента запроса SAML. | Верно |
+| {SAML: Алловкреате} | `AllowCreate`Значение атрибута из `NameIDPolicy` элемента запроса SAML. | True |
+| {SAML: Форцеаусн} | `ForceAuthN`Значение атрибута из `AuthnRequest` элемента запроса SAML. | True |
 | {SAML: ProviderName} | `ProviderName`Значение атрибута из `AuthnRequest` элемента запроса SAML.| Contoso.com |
 | {SAML: RelayState} | Параметр `RelayState` строки запроса.| 
 | {SAML: subject} | `Subject`Из элемента NameId запроса SAML AuthN.| 
@@ -133,7 +134,7 @@ ms.locfileid: "97508022"
 
 Вы можете использовать арбитры утверждений со следующими элементами:
 
-| Элемент | Элемент | Параметры |
+| Элемент | Элемент | Настройки |
 | ----- | ----------------------- | --------|
 |Технический профиль Application Insights |`InputClaim` | |
 |[Azure Active Directory](active-directory-technical-profile.md) технический профиль| `InputClaim`, `OutputClaim`| 1, 2|
@@ -141,7 +142,7 @@ ms.locfileid: "97508022"
 |Технический профиль [OpenID Connect Connect](openid-connect-technical-profile.md)| `InputClaim`, `OutputClaim`| 1, 2|
 |Технический профиль [преобразования утверждений](claims-transformation-technical-profile.md)| `InputClaim`, `OutputClaim`| 1, 2|
 |Технический профиль [поставщика RESTful](restful-technical-profile.md)| `InputClaim`| 1, 2|
-|Технический профиль [поставщика удостоверений SAML](saml-identity-provider-technical-profile.md)| `OutputClaim`| 1, 2|
+|Технический профиль [поставщика удостоверений SAML](identity-provider-generic-saml.md)| `OutputClaim`| 1, 2|
 |[Самостоятельно утвержденный](self-asserted-technical-profile.md) технический профиль| `InputClaim`, `OutputClaim`| 1, 2|
 |[ContentDefinition](contentdefinitions.md)| `LoadUri`| |
 |[ContentDefinitionParameters](relyingparty.md#contentdefinitionparameters)| `Parameter` | |

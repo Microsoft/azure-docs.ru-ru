@@ -7,15 +7,15 @@ author: mrbullwinkle
 manager: nitinme
 ms.service: cognitive-services
 ms.subservice: metrics-advisor
-ms.topic: overview
+ms.topic: conceptual
 ms.date: 10/14/2020
 ms.author: mbullwin
-ms.openlocfilehash: a92f8dc9a900e399199a27cde01a94e5824a342b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: d257633a8218399cab1d40ab8e8fb3d819e1922d
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101722268"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051741"
 ---
 # <a name="metrics-advisor-whats-new-in-the-docs"></a>Помощник по метрикам — изменения в документации
 

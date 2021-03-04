@@ -11,12 +11,12 @@ ms.topic: reference
 ms.date: 12/11/2020
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 5eff20ecb1366114ead80877b684ef512742803b
-ms.sourcegitcommit: 8245325f9170371e08bbc66da7a6c292bbbd94cc
+ms.openlocfilehash: bbb0c5617696347b566ba09a481afae4f52379aa
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2021
-ms.locfileid: "99805400"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102096043"
 ---
 # <a name="technicalprofiles"></a>TechnicalProfiles
 
@@ -40,8 +40,8 @@ ms.locfileid: "99805400"
 - [OpenID Connect Connect](openid-connect-technical-profile.md) -Federation с любым поставщиком удостоверений протокола OpenID Connect Connect.
 - [Телефонный фактор](phone-factor-technical-profile.md) — поддержка регистрации и проверки номеров телефонов.
 - [Поставщик RESTful](restful-technical-profile.md) — вызов служб REST API Services, таких как проверка вводимых пользователем данных, обогащение пользовательской информации или интеграция с бизнес-приложениями.
-- [Поставщик удостоверений SAML](saml-identity-provider-technical-profile.md) — Федерация с любым поставщиком удостоверений протокола SAML.
-- [Издатель токена SAML](saml-issuer-technical-profile.md) — создает токен SAML, возвращаемый обратно в приложение проверяющей стороны.
+- [Поставщик удостоверений SAML](identity-provider-generic-saml.md) — Федерация с любым поставщиком удостоверений протокола SAML.
+- [Издатель токена SAML](saml-service-provider.md) — создает токен SAML, возвращаемый обратно в приложение проверяющей стороны.
 - [Самостоятельное подтверждение](self-asserted-technical-profile.md): взаимодействие с пользователем. Например, получение учетных данных пользователя для входа, а затем отображение страницы регистрации или сброса пароля.
 - [Управление сеансами](custom-policy-reference-sso.md): работа с различными типами сеансов.
 
@@ -131,7 +131,7 @@ ms.locfileid: "99805400"
 | ------- | ----------- | ----------- |
 | Item | 0:n | Метаданные, относящиеся к техническому профилю. Каждый тип технического профиля имеет свой набор элементов метаданных. Дополнительные сведения см. в разделе о типах технических профилей.  |
 
-### <a name="item"></a>Компонент
+### <a name="item"></a>Элемент
 
 Элемент **Item** элемента **метаданных** содержит следующий атрибут:
 
@@ -175,9 +175,9 @@ ms.locfileid: "99805400"
 
 Чтобы установить отношение доверия со службами, с которыми он интегрируется, Azure AD B2C хранит секреты и сертификаты в форме [ключей политики](policy-keys-overview.md). Во время выполнения технического профиля Azure AD B2C извлекает криптографические ключи из Azure AD B2C ключей политики. Затем использует ключи для установления доверия, шифрования или подписи маркера. Эти отношения доверия состоят из следующих:
 
-- Федерация с поставщиками удостоверений [OAuth1](oauth1-technical-profile.md#cryptographic-keys), [OAuth2](oauth2-technical-profile.md#cryptographic-keys)и [SAML](saml-identity-provider-technical-profile.md#cryptographic-keys)
+- Федерация с поставщиками удостоверений [OAuth1](oauth1-technical-profile.md#cryptographic-keys), [OAuth2](oauth2-technical-profile.md#cryptographic-keys)и [SAML](identity-provider-generic-saml.md)
 - Защита подключения с помощью [служб REST API Services](secure-rest-api.md)
-- Подписывание и шифрование токенов [JWT](jwt-issuer-technical-profile.md#cryptographic-keys) и [SAML](saml-issuer-technical-profile.md#cryptographic-keys)
+- Подписывание и шифрование токенов [JWT](jwt-issuer-technical-profile.md#cryptographic-keys) и [SAML](saml-service-provider.md)
 
 Элемент **CryptographicKeys** содержит следующие элементы:
 
