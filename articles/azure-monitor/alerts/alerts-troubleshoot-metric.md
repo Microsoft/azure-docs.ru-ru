@@ -5,13 +5,12 @@ author: harelbr
 ms.author: harelbr
 ms.topic: troubleshooting
 ms.date: 01/21/2021
-ms.subservice: alerts
-ms.openlocfilehash: 79cc7e1e4b574533fcad4592134109c52897e9ba
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2bd82d18d6647e47d9838702af45cff68f2bc6cd
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101737262"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102037869"
 ---
 # <a name="troubleshooting-problems-in-azure-monitor-metric-alerts"></a>Устранение неполадок в оповещениях метрик Azure Monitor 
 

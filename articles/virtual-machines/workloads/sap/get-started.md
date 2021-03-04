@@ -13,15 +13,15 @@ ms.assetid: ad8e5c75-0cf6-4564-ae62-ea1246b4e5f2
 ms.topic: article
 ms.tgt_pltfrm: vm-linux
 ms.workload: infrastructure-services
-ms.date: 02/03/2021
+ms.date: 03/03/2021
 ms.author: juergent
 ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: 0d759ad0ebb1aa4f1b6a5f404812ab8149ed69e2
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: a212975817eefe75443bad98ccb72e0a8c3bf58c
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101671848"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102038634"
 ---
 # <a name="use-azure-to-host-and-run-sap-workload-scenarios"></a>Использование Azure для размещения и выполнения сценариев рабочей нагрузки SAP
 
@@ -83,6 +83,7 @@ Azure для SAP HANA — это предложение, выделяющее A
 
 ## <a name="change-log"></a>Журнал изменений
 
+- 03/03/2021: измените [руководство по высокой доступности для SAP ASCS/SCS с WSFC и Azure NetApp Files (SMB)](./high-availability-guide-windows-netapp-files-smb.md) , чтобы добавить предупреждающий оператор, требующий повышенных привилегий для пользователя, запускающего SWPM, во время установки системы SAP.
 - 02/11/2021: изменения в [высокой доступности IBM DB2 LUW на виртуальных машинах Azure на сервере Red Hat Enterprise Linux](./high-availability-guide-rhel-ibm-db2-luw.md) для уточнения команд кластера PACEMAKER для RHEL 8. x
 - 02/03/2021: измените [настройку Pacemaker в RHEL в Azure](./high-availability-guide-rhel-pacemaker.md) для обновления pcmk_host_map в команде создания stonith
 - 02/03/2021: измените [настройку Pacemaker для SLES в Azure](./high-availability-guide-suse-pacemaker.md) , чтобы добавить pcmk_host_map в команде stonith Create. 

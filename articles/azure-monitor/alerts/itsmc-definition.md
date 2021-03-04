@@ -1,18 +1,17 @@
 ---
 title: Соединитель управления ИТ-услугами в Log Analytics
 description: В этой статье приводятся общие сведения о Соединитель управления ИТ-услугами (ITSMC) и сведения об их использовании для отслеживания и управления рабочими элементами ITSM в Log Analytics и быстрого устранения проблем.
-ms.subservice: logs
 ms.topic: conceptual
 author: nolavime
 ms.author: v-jysur
 ms.date: 05/24/2018
 ms.custom: references_regions
-ms.openlocfilehash: ba32cfa4bc5cd0b41a210cf88fb598afc3064495
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: ac5d864d98742c6884f9511b6956e4166e2c19da
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100623583"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102037478"
 ---
 # <a name="connect-azure-to-itsm-tools-by-using-it-service-management-connector"></a>Подключение Azure к средствам ITSM с помощью Соединитель управления ИТ-услугами
 
@@ -154,6 +153,6 @@ ms.locfileid: "100623583"
 >
 > Поле краткого описания в определении правила генерации оповещений ограничено 40 символами при отправке с помощью действия ITSM.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Устранение неполадок в ITSMC](./itsmc-resync-servicenow.md)

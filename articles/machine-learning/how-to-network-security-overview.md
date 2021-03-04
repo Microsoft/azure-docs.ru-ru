@@ -8,15 +8,15 @@ ms.subservice: core
 ms.reviewer: larryfr
 ms.author: peterlu
 author: peterclu
-ms.date: 10/06/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, references_regions, contperf-fy21q1
-ms.openlocfilehash: 1a73988b66ba7b47f18ecaaa07df59e9047a933b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: e3705be10cb540538464e6b1299d848bc9057c7c
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101691830"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102039926"
 ---
 # <a name="virtual-network-isolation-and-privacy-overview"></a>Общие сведения о изоляции и конфиденциальности виртуальной сети
 
@@ -106,10 +106,7 @@ ms.locfileid: "101691830"
 
 1. Пакетная служба Azure получает задание из рабочей области и отправляет задание по обучению в среду вычислений через общедоступную подсистему балансировки нагрузки, подготовленную с помощью ресурсов вычислений. 
 
-1. Ресурс вычислений получает задание и начинает обучение. Ресурсы вычислений обращаются к защищенным учетным записям хранения для скачивания обучающих файлов и передачи выходных данных. 
-
-![Схема архитектуры, показывающая, как будет отправлено Машинное обучение Azureное задание обучения при использовании виртуальной сети](./media/how-to-network-security-overview/secure-training-job-submission.png)
-
+1. Ресурс вычислений получает задание и начинает обучение. Ресурсы вычислений обращаются к защищенным учетным записям хранения для скачивания обучающих файлов и передачи выходных данных.
 
 ### <a name="limitations"></a>Ограничения
 

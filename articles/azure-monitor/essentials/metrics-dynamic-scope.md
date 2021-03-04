@@ -6,13 +6,12 @@ services: azure-monitor
 ms.topic: conceptual
 ms.date: 12/14/2020
 ms.author: riroloff
-ms.subservice: metrics
-ms.openlocfilehash: a321361a7624f2b9016d6303df63501fd0d7e7c5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 85fa252f999407d5cd7f75e954554e3b14357071
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101734474"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102037325"
 ---
 # <a name="view-multiple-resources-in-the-azure-metrics-explorer"></a>Просмотр нескольких ресурсов в обозревателе метрик Azure
 

@@ -5,14 +5,14 @@ services: expressroute
 author: duongau
 ms.service: expressroute
 ms.topic: how-to
-ms.date: 2/9/2021
+ms.date: 03/02/2021
 ms.author: duau
-ms.openlocfilehash: 402714b55d7513e41458503b12c68768d0c6ad5e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 20b8e354d0c8e2e04cf22d1b8014f5b8e33a860c
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747016"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102038872"
 ---
 # <a name="add-ipv6-support-for-private-peering-using-azure-powershell-preview"></a>Добавление поддержки IPv6 для частного пиринга с помощью Azure PowerShell (Предварительная версия)
 
@@ -60,8 +60,8 @@ ms.locfileid: "101747016"
 
 3. Добавьте частный пиринг IPv6 в существующую конфигурацию частного пиринга IPv4. Предоставьте пару из/126 подсетей IPv6, которыми вы владеете, для основной ссылки и дополнительных ссылок. Из каждой подсети вы назначите первый готовый к применению IP-адрес для своего маршрутизатора, так как корпорация Майкрософт использует второй IP-адрес для маршрутизатора Майкрософт.
 
-> [!Note]
-> Узлы ASN и VlanId должны соответствовать значениям в конфигурации частного пиринга IPv4.
+    > [!Note]
+    > Узлы ASN и VlanId должны соответствовать значениям в конфигурации частного пиринга IPv4.
 
     ```azurepowershell-interactive
     Set-AzExpressRouteCircuitPeeringConfig -Name "AzurePrivatePeering" -ExpressRouteCircuit $ckt -PeeringType AzurePrivatePeering -PeerASN 100 -PrimaryPeerAddressPrefix "3FFE:FFFF:0:CD30::/126" -SecondaryPeerAddressPrefix "3FFE:FFFF:0:CD30::4/126" -VlanId 200 -PeerAddressType IPv6
@@ -175,6 +175,7 @@ ms.locfileid: "101747016"
 * Подключения к развертываниям в Azure с помощью SKU шлюза, отличного от AZ ExpressRoute
 * Подключения к развертываниям в регионах, не относящихся к AZ
 * Global Reach соединений между каналами ExpressRoute
+* Использование ExpressRoute с Вван
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

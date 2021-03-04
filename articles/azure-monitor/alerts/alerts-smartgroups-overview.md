@@ -2,14 +2,13 @@
 title: Смарт-группы
 description: Смарт-группы — это совокупность оповещений, которая позволяет уменьшить количество лишних оповещений.
 ms.topic: conceptual
-ms.subservice: alerts
 ms.date: 05/15/2018
-ms.openlocfilehash: 743bd1a674c034cd6a0350f959289ac3ecb568de
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 8a164fe6e5fd5be58da969d9266329755705ea82
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100621966"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102037971"
 ---
 # <a name="smart-groups"></a>Смарт-группы
 
@@ -27,11 +26,11 @@ ms.locfileid: "100621966"
 
 Поддерживаются следующие состояния смарт-групп.
 
-| Область | Описание |
+| Состояние | Описание |
 |:---|:---|
-| Оператор new | Проблема была только что обнаружена и еще не рассматривалась. |
+| Создать | Проблема была только что обнаружена и еще не рассматривалась. |
 | Подтверждено | Администратор просмотрел смарт-группу и начал работу с ней. |
-| Закрытое | Проблема была устранена. После закрытия смарт-группы можно изменить ее состояние и вновь открыть. |
+| Закрыто | Проблема была устранена. После закрытия смарт-группы можно изменить ее состояние и вновь открыть. |
 
 [Узнайте, как изменить состояние смарт-группы.](./alerts-managing-alert-states.md?toc=%2fazure%2fazure-monitor%2ftoc.json)
 
@@ -56,7 +55,7 @@ ms.locfileid: "100621966"
 
 Имя смарт-группы — это имя ее первого оповещения. Создать или переименовать смарт-группу невозможно.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Управление смарт-группами](./alerts-managing-smart-groups.md?toc=%2fazure%2fazure-monitor%2ftoc.json)
 - [Изменение состояния оповещений и смарт-групп](./alerts-managing-alert-states.md?toc=%2fazure%2fazure-monitor%2ftoc.json)

@@ -1,17 +1,16 @@
 ---
 title: Подключение ServiceNow с Соединитель управления ИТ-услугами
 description: Узнайте, как подключиться к ServiceNow с помощью Соединитель управления ИТ-услугами (ITSMC) в Azure Monitor, чтобы централизованно отслеживать рабочие элементы ITSM и управлять ими.
-ms.subservice: logs
 ms.topic: conceptual
 author: nolavime
 ms.author: v-jysur
 ms.date: 12/21/2020
-ms.openlocfilehash: daaaf25bc1739b57d4696dc8978a330b00b08f70
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 51d16ae53e34dacfc41e3d31b01115f9c55ca9f7
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100624024"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102039552"
 ---
 # <a name="connect-servicenow-with-it-service-management-connector"></a>Подключение ServiceNow с Соединитель управления ИТ-услугами
 
@@ -52,7 +51,7 @@ ms.locfileid: "100624024"
 
    1. В области **ServiceNow** найдите **System OAuth** и выберите **реестр приложений**. 
    1. Выберите имя определенного OAuth и измените срок **жизни маркера обновления** на **7 776 000 с** (90 дней). 
-   1. Выберите **Обновить**. 
+   1. Щелкните **Обновить**. 
 
 1. Установите внутреннюю процедуру, чтобы убедиться, что подключение остается активным. Несколько дней до ожидаемого срока действия маркера обновления. выполните следующие операции:
 
@@ -143,7 +142,7 @@ ms.locfileid: "100624024"
 > [!NOTE]
 > Для ServiceNow предусмотрено ограничение скорости запросов в час. Чтобы настроить ограничение, определите **REST API ограничения скорости для входящего трафика** в экземпляре ServiceNow.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Обзор соединитель ITSM](itsmc-overview.md)
 * [Создание рабочих элементов ITSM из оповещений Azure](./itsmc-definition.md#create-itsm-work-items-from-azure-alerts)

@@ -1,17 +1,16 @@
 ---
 title: Соединитель управления ИТ-услугами — безопасный экспорт в Azure Monitor
 description: В этой статье показано, как подключить продукты и службы ITSM с помощью безопасного экспорта в Azure Monitor для централизованного мониторинга рабочих элементов ITSM и управления ими.
-ms.subservice: logs
 ms.topic: conceptual
 author: nolavime
 ms.author: v-jysur
 ms.date: 09/08/2020
-ms.openlocfilehash: b1295904f25d38c97578fa6fd6ede4ecd50c0456
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 330b97e66ba1a9b95f2ef7a34a7ea046414b8bd8
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101728983"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102037520"
 ---
 # <a name="connect-azure-to-itsm-tools-by-using-secure-export"></a>Подключение Azure к средствам ITSM с помощью безопасного экспорта
 

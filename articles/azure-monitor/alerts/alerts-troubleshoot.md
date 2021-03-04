@@ -5,13 +5,12 @@ author: ofirmanor
 ms.author: ofmanor
 ms.topic: reference
 ms.date: 03/16/2020
-ms.subservice: alerts
-ms.openlocfilehash: d3f8da7e985e62ce0b40c6dddcd137cce8561e59
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: d65fa03a183c15022535debee6476844192ec6bf
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101717865"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102037852"
 ---
 # <a name="troubleshooting-problems-in-azure-monitor-alerts"></a>Устранение неполадок в Azure Monitor оповещениях
 
@@ -245,7 +244,7 @@ ms.locfileid: "101717865"
 
 1. **Вы проверяли параметры правила действий?**  
 
-    Проверьте [документацию по правилу действий](../alerts/alerts-action-rules.md)или команду [PowerShell Set-азактионруле в правиле действий](/powershell/module/az.alertsmanagement/set-azactionrule?view=azps-3.5.0) . 
+    Проверьте [документацию по правилу действий](../alerts/alerts-action-rules.md)или команду [PowerShell Set-азактионруле в правиле действий](/powershell/module/az.alertsmanagement/set-azactionrule) . 
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

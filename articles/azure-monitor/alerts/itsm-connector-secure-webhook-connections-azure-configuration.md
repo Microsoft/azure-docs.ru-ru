@@ -1,24 +1,23 @@
 ---
 title: Соединитель управления ИТ-услугами — безопасный экспорт в Azure Monitor в конфигурациях Azure
 description: В этой статье показано, как настроить Azure для подключения продуктов и служб ITSM к безопасному экспорту в Azure Monitor для централизованного мониторинга рабочих элементов ITSM и управления ими.
-ms.subservice: logs
 ms.topic: conceptual
 author: nolavime
 ms.author: v-jysur
 ms.date: 01/03/2021
-ms.openlocfilehash: 62167b8fd72c660e50378a9492528aa5b70bbee7
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 8eb9430e3d280c52cf84c61f0a44cb12152ac054
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100625758"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102037546"
 ---
 # <a name="configure-azure-to-connect-itsm-tools-using-secure-export"></a>Настройка Azure для подключения средств ITSM с помощью безопасного экспорта
 
 В этой статье содержатся сведения о настройке Azure с целью использования "безопасного экспорта".
 Чтобы использовать "безопасный экспорт", выполните следующие действия.
 
-1. [Зарегистрировать приложения в Azure AD.](./itsm-connector-secure-webhook-connections-azure-configuration.md#register-with-azure-active-directory)
+1. [Зарегистрируйте приложение в Azure AD.](./itsm-connector-secure-webhook-connections-azure-configuration.md#register-with-azure-active-directory)
 1. [Определение субъекта-службы.](./itsm-connector-secure-webhook-connections-azure-configuration.md#define-service-principal)
 1. [Создайте безопасную группу действий веб-перехватчика.](./itsm-connector-secure-webhook-connections-azure-configuration.md#create-a-secure-webhook-action-group)
 1. Настройте среду партнера.
@@ -30,12 +29,12 @@ ms.locfileid: "100625758"
 
 Чтобы зарегистрировать приложение в Azure AD, выполните следующие действия.
 
-1. Выполните действия, описанные в разделе [Регистрация приложения на платформе Microsoft Identity](../../active-directory/develop/quickstart-register-app.md).
+1. Выполните инструкции, указанные в статье [Регистрация приложения с помощью платформы удостоверений Майкрософт](../../active-directory/develop/quickstart-register-app.md).
 2. В Azure AD выберите **открыть приложение**.
 3. Выберите **задать** для **URI идентификатора приложения**.
 
    [![Снимок экрана с параметром для задания U R I для приложения I D.](media/itsm-connector-secure-webhook-connections-azure-configuration/azure-ad.png)](media/itsm-connector-secure-webhook-connections-azure-configuration/azure-ad-expand.png#lightbox)
-4. Нажмите кнопку **Сохранить**.
+4. Щелкните **Сохранить**.
 
 ## <a name="define-service-principal"></a>Определение субъекта-службы
 
@@ -74,7 +73,7 @@ ms.locfileid: "100625758"
 1. Получите универсальный код ресурса (URI) для определения безопасного экспорта.
 2. Определения в соответствии с потоком средства ITSM.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Конфигурация безопасного экспорта ServiceNow](./itsmc-secure-webhook-connections-servicenow.md)
 * [Конфигурация безопасного экспорта BMC](./itsmc-secure-webhook-connections-bmc.md)

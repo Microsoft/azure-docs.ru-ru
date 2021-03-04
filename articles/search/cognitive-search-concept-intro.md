@@ -8,12 +8,13 @@ ms.author: heidist
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 06/18/2020
-ms.openlocfilehash: 09e7a39a2d97626dd01a00fdaef9bc4d711d557b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.custom: references_regions
+ms.openlocfilehash: 22d7c1bbe03d8b3c0e3b6026c9bac039f0651548
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91828091"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102037257"
 ---
 # <a name="ai-enrichment-in-azure-cognitive-search"></a>Обогащение с помощью ИИ в службе "Когнитивный поиск Azure"
 
@@ -32,6 +33,17 @@ ms.locfileid: "91828091"
 Встроенные навыки в Azure Когнитивный поиск основаны на предварительно обученных моделях машинного обучения в API-интерфейсы Cognitive Services: [компьютерное зрение](../cognitive-services/computer-vision/index.yml) и [анализ текста](../cognitive-services/text-analytics/overview.md). Вы можете подключить Cognitive Services ресурс, если вы хотите использовать эти ресурсы во время обработки содержимого.
 
 На этапе приема данных применяется обработка естественного языка и изображений, при этом результаты становятся частью структуры документа в индексе поиска службы "Когнитивный поиск Azure". Данные получают в виде набора данных Azure, после чего они передаются по конвейеру индексирования с использованием необходимых [встроенных навыков](cognitive-search-predefined-skills.md).  
+
+## <a name="feature-availability"></a>Доступность функций
+
+Обогащение искусственного интеллекта доступно в регионах, где также доступны Azure Cognitive Services.  Вы можете проверить текущую доступность обогащения искусственного интеллекта на странице [доступных продуктов Azure по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=search) .  Обогащение искусственного интеллекта доступно во всех поддерживаемых регионах, за исключением:
+
++ Юго-Восточная часть Австралии
++ Северный Китай 2
++ Восточная Норвегия;
++ Центрально-Западная Германия
+
+Если служба поиска находится в одном из этих регионов, вы не сможете создать и использовать навыков, но все остальные функции службы поиска станут доступны и полностью поддерживаются.
 
 ## <a name="when-to-use-ai-enrichment"></a>Когда следует использовать обогащение искусственного интеллекта
 
@@ -115,7 +127,7 @@ ms.locfileid: "91828091"
 
 1. Выполните [сброс индексатора](search-howto-reindex.md), прежде чем перестроить конвейер.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 + [Ссылки на документацию по обогащению ИИ](cognitive-search-resources-documentation.md)
 + [Пример. Создание пользовательского навыка для обогащения искусственного интеллекта (C#)](cognitive-search-create-custom-skill-example.md)

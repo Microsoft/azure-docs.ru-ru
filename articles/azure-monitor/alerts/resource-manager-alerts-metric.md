@@ -6,13 +6,12 @@ ms.author: bwren
 services: azure-monitor
 ms.topic: sample
 ms.date: 05/18/2020
-ms.subservice: alerts
-ms.openlocfilehash: 0e928f3890e0d86aff7e4615d6d12e1b53c3b6f5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: f41c6c8ab4e5b00c7281a75eeccb09a6e894764e
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101734695"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102039416"
 ---
 # <a name="resource-manager-template-samples-for-metric-alert-rules-in-azure-monitor"></a>Примеры шаблонов Resource Manager для правил генерации оповещений метрик в Azure Monitor
 

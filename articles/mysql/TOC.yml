@@ -413,7 +413,7 @@
         - name: Что такое Гибкий сервер?
           href: flexible-server/overview.md
         - name: Поддерживаемые версии
-          href: flexible-server/concepts-supported-versions.md
+          href: concepts-supported-versions.md
         - name: Вычислительные ресурсы и ресурсы хранилища
           href: flexible-server/concepts-compute-storage.md
     - name: Краткие руководства

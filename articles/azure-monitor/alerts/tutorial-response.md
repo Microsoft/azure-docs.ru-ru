@@ -1,18 +1,17 @@
 ---
 title: Реагирование на события с помощью оповещений Azure Log Analytics | Документы Майкрософт
 description: В этом руководстве вы ознакомитесь с основными принципами оповещений в Log Analytics, которые позволяют обнаружить важную информацию в рабочей области и уведомлять о возникших проблемах или вызывать автоматические действия для их устранения.
-ms.subservice: logs
 ms.topic: tutorial
 author: bwren
 ms.author: bwren
 ms.date: 10/05/2018
 ms.custom: mvc
-ms.openlocfilehash: 67d03636b118db71502a6245e60f71c94afdddf6
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2564711fce6e8578829fb15fdbc04ae2b9d64959
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101701014"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102039433"
 ---
 # <a name="respond-to-events-with-azure-monitor-alerts"></a>Реагирование на события с помощью оповещений Azure Monitor
 Оповещения Azure Monitor позволяют обнаружить важную информацию о репозитории Log Analytics. Они создаются правилами генерации оповещений, которые автоматически через регулярные интервалы выполняют поиск по журналам и, если результаты поиска по журналу соответствуют конкретным условиям, создают запись оповещения (для которой можно настроить автоматическое ответное действие).  Эта статья является продолжением руководства по [созданию и совместному использованию панелей мониторинга данных Log Analytics](../visualize/tutorial-logs-dashboards.md).   

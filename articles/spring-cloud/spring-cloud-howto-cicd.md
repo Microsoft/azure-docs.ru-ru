@@ -8,12 +8,12 @@ ms.date: 09/08/2020
 ms.author: brendm
 ms.custom: devx-track-java, devx-track-azurecli
 zone_pivot_groups: programming-languages-spring-cloud
-ms.openlocfilehash: 79d9b2a0d706dd2d9861d068de0e4671db1c5158
-ms.sourcegitcommit: 30505c01d43ef71dac08138a960903c2b53f2499
+ms.openlocfilehash: ff54c1dc62189f2a00528c6a82abe26c667c5538
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92089117"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102038702"
 ---
 # <a name="cicd-for-azure-spring-cloud"></a>CI/CD для Azure Веснного облака
 
@@ -63,7 +63,7 @@ steps:
       az configure --defaults spring-cloud=${{ variables.serviceName }}
       az spring-cloud app deploy -n ${{ variables.planetAppName }} --runtime-version NetCore_31 --main-entry ${{ variables.planetMainEntry }} --artifact-path ./${{ variables.planetAppName }}/publish-deploy-planet.zip
       az spring-cloud app deploy -n ${{ variables.solarAppName }} --runtime-version NetCore_31 --main-entry ${{ variables.solarMainEntry }} --artifact-path ./${{ variables.solarAppName }}/publish-deploy-solar.zip
-      az spring-cloud app update -n ${{ variables.solarAppName }} --is-public true
+      az spring-cloud app update -n ${{ variables.solarAppName }} --assign-endpoint
       az spring-cloud app show -n ${{ variables.solarAppName }} -o table
     workingDirectory: '${{ variables.workingDirectory }}/src'
 ```

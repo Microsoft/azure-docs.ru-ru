@@ -5,13 +5,12 @@ author: harelbr
 ms.author: harelbr
 ms.topic: conceptual
 ms.date: 01/11/2021
-ms.subservice: alerts
-ms.openlocfilehash: a2ea41b6165e077d6376f9da162058df1196405c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: bc3e77b560a94b45acf1ae696551dbefbabbdf0a
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100622062"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102038209"
 ---
 # <a name="monitor-multiple-time-series-in-a-single-metric-alert-rule"></a>Мониторинг нескольких временных рядов в одном правиле генерации оповещений метрик
 
@@ -181,6 +180,6 @@ ms.locfileid: "100622062"
 Во избежание чрезмерных затрат каждое правило генерации оповещений может отслеживать до 5000 временных рядов по умолчанию. Чтобы увеличить это ограничение в подписке, откройте запрос в службу поддержки.
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о мониторинге при масштабировании с помощью оповещений метрик и [динамических порогов](../alerts/alerts-dynamic-thresholds.md).

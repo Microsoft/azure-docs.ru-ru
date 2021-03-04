@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.date: 02/22/2021
 ms.author: mbaldwin
 ms.custom: security-benchmark
-ms.openlocfilehash: c8d907062835f18393946b04f1f1e9d5ec345411
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 50358eed580bbd83f25386feb0068a252060672b
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101735766"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102037121"
 ---
 # <a name="security-control-v2-data-protection"></a>Управление безопасностью v2: защита данных
 
 Защита данных охватывает управление защитой данных при хранении, передачей и через полномочные механизмы доступа. Сюда входит обнаружение, классификация, защита и мониторинг ресурсов конфиденциальных данных с помощью контроля доступа, шифрования и ведения журнала в Azure.
 
-Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь со статьей [сведения о встроенной инициативе по обеспечению безопасности в Azure: защита данных](../../governance/policy/samples/azure-security-benchmark#data-protection)
+Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь со статьей [сведения о встроенной инициативе по обеспечению безопасности в Azure: защита данных](../../governance/policy/samples/azure-security-benchmark.md#data-protection)
 
 ## <a name="dp-1-discovery-classify-and-label-sensitive-data"></a>DP-1: обнаружение, классификация и пометка конфиденциальных данных
 

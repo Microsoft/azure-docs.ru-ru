@@ -7,12 +7,12 @@ ms.service: route-server
 ms.topic: quickstart
 ms.date: 03/02/2021
 ms.author: duau
-ms.openlocfilehash: c56e7318e24b802ae9ad605a0c9ae5f88397ec8b
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 5b40cfcde7aa1771c8a4b9025d35b2dc0c728676
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101680579"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102039790"
 ---
 # <a name="quickstart-create-and-configure-route-server-using-azure-powershell"></a>Краткое руководство. Создание и настройка сервера маршрутизации с помощью Azure PowerShell
 
@@ -70,7 +70,7 @@ New-AzVirtualNetwork –ResourceGroupName “RouteServerRG -Location “West US�
 Создайте сервер маршрутизации, выполнив следующую команду:
 
 ```azurepowershell-interactive 
-New-AzRouteServer -Name myRouteServer -ResourceGroupName RouteServerRG -Location "West US” -HostedSubnet “RouteServerSubnet_ID”
+New-AzRouteServer -RouteServerName myRouteServer -ResourceGroupName RouteServerRG -Location "West US” -HostedSubnet “RouteServerSubnet_ID”
 ```
 
 Расположение должно совпадать с расположением виртуальной сети. HostedSubnet — это идентификатор RouteServerSubnet, полученный в предыдущем разделе.
@@ -80,7 +80,7 @@ New-AzRouteServer -Name myRouteServer -ResourceGroupName RouteServerRG -Location
 Чтобы установить пиринг BGP между сервером маршрутизации и NVA, выполните следующую команду:
 
 ```azurepowershell-interactive 
-Add-AzRouteServerPeer -PeerName "myNVA” -PeerIp “nva_ip” -PeerAsn “nva_asn” -RouteServerName "myRouteServer -ResourceGroupName ”RouteServerRG”
+Add-AzRouteServerPeer -PeerName "myNVA" -PeerIp "nva_ip" -PeerAsn "nva_asn" -RouteServerName myRouteServer -ResourceGroupName RouteServerRG
 ```
 
 nva_ip — это IP-адрес виртуальной сети, назначенный NVA. nva_asn — это номер ASN, настроенный в NVA. Номер ASN может быть любым 16-разрядным числом, отличающимся от значений в диапазоне 65515–65520. Этот диапазон ASN зарезервирован корпорацией Майкрософт.
@@ -88,7 +88,7 @@ nva_ip — это IP-адрес виртуальной сети, назначе
 Чтобы настроить пиринг с разными NVA или другим экземпляром того же NVA для обеспечения избыточности, выполните следующую команду:
 
 ```azurepowershell-interactive 
-Add-AzRouteServerPeer -PeerName “NVA2_name” -PeerIp “nva2_ip” -PeerAsn “nva2_asn” -RouteServerName “myRouteServer” -ResourceGroupName “RouteServerRG” 
+Add-AzRouteServerPeer -PeerName "NVA2_name" -PeerIp "nva2_ip" -PeerAsn "nva2_asn" -RouteServerName myRouteServer -ResourceGroupName RouteServerRG 
 ```
 
 ## <a name="complete-the-configuration-on-the-nva"></a>Завершение настройки NVA
@@ -96,7 +96,7 @@ Add-AzRouteServerPeer -PeerName “NVA2_name” -PeerIp “nva2_ip” -PeerAsn �
 Чтобы завершить настройку NVA и включить сеансы BGP, требуется IP-адрес и номер ASN сервера маршрутизации Azure. Эти сведения можно получить, выполнив следующую команду:
 
 ```azurepowershell-interactive 
-Get-AzRouteServer -RouterName “myRouteServer” -ResourceGroupName “RouteServerRG”
+Get-AzRouteServer -RouterServerName myRouteServer -ResourceGroupName RouteServerRG
 ```
 
 В выходных данных будут содержаться следующие сведения:
@@ -113,13 +113,13 @@ RouteServerIps : {10.5.10.4, 10.5.10.5}
 1. Чтобы включить обмен маршрутами между сервером маршрутизации Azure и шлюзами, выполните следующую команду:
 
 ```azurepowershell-interactive 
-Update-AzRouteServer -RouteServerName “myRouteServer” -ResourceGroupName “RouteServerRG” -AllowBranchToBranchTraffic 
+Update-AzRouteServer -RouteServerName myRouteServer -ResourceGroupName RouteServerRG -AllowBranchToBranchTraffic 
 ```
 
 2. Чтобы отключить обмен маршрутами между сервером маршрутизации Azure и шлюзами, выполните следующую команду:
 
 ```azurepowershell-interactive 
-Update-AzRouteServer -RouteServerName “myRouteServer” -ResourceGroupName “RouteServerRG” 
+Update-AzRouteServer -RouteServerName myRouteServer -ResourceGroupName RouteServerRG
 ```
 
 ## <a name="troubleshooting"></a>Устранение неполадок
@@ -137,13 +137,13 @@ Get-AzRouteServerPeerLearnedRoute
 1. Удалите пиринг BGP между сервером маршрутизации Azure и NVA, выполнив следующую команду:
 
 ```azurepowershell-interactive 
-Remove-AzRouteServerPeer -PeerName “nva_name” -RouteServerName “myRouteServer” -ResourceGroupName “RouteServerRG” 
+Remove-AzRouteServerPeer -PeerName “nva_name” -RouteServerName myRouteServer -ResourceGroupName RouteServerRG 
 ```
 
 2. Удалите сервер маршрутизации Azure, выполнив следующую команду:
 
 ```azurepowershell-interactive 
-Remove-AzRouteServer -RouteServerName “myRouteServer” -ResourceGroupName “RouteServerRG” 
+Remove-AzRouteServer -RouteServerName myRouteServer -ResourceGroupName RouteServerRG
 ```
 
 ## <a name="next-steps"></a>Дальнейшие действия

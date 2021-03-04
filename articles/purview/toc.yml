@@ -122,8 +122,6 @@ items:
             href: how-to-create-import-export-glossary.md
           - name: Управление шаблонами терминов
             href: how-to-manage-term-templates.md
-          - name: Массовое изменение ресурсов для назначения терминов глоссария
-            href: how-to-bulk-edit-assets.md
       - name: Массовое изменение
         items:
           - name: Массовое изменение ресурсов для добавления тегов к заметкам и контактам

@@ -5,13 +5,13 @@ author: lfittl-msft
 ms.author: lufittl
 ms.service: postgresql
 ms.topic: conceptual
-ms.date: 10/16/2020
-ms.openlocfilehash: b139e2f14379e0cd52ca72c347d49bcb4512c473
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.date: 03/03/2021
+ms.openlocfilehash: 474545b7c5eca64b558e5fe26e23e6800b0cab96
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
-ms.locfileid: "92542086"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102037172"
 ---
 # <a name="supported-postgresql-major-versions-in-azure-database-for-postgresql---flexible-server"></a>Поддерживаемые основные версии PostgreSQL в базе данных Azure для PostgreSQL-гибкого сервера
 
@@ -22,11 +22,11 @@ ms.locfileid: "92542086"
 
 ## <a name="postgresql-version-12"></a>PostgreSQL версии 12
 
-Текущий дополнительный выпуск — 12,4. Дополнительные сведения об улучшениях и исправлениях в этом дополнительном выпуске см. в [документации по PostgreSQL](https://www.postgresql.org/docs/12/static/release-12-4.html) .
+Текущий дополнительный выпуск — 12,5. Дополнительные сведения об улучшениях и исправлениях в этом дополнительном выпуске см. в [документации по PostgreSQL](https://www.postgresql.org/docs/12/static/release-12-4.html) .
 
 ## <a name="postgresql-version-11"></a>PostgreSQL версии 11
 
-Текущий дополнительный выпуск — 11,9. Дополнительные сведения об улучшениях и исправлениях в этом дополнительном выпуске см. в [документации по PostgreSQL](https://www.postgresql.org/docs/11/static/release-11-9.html) .
+Текущий дополнительный выпуск — 11,10. Дополнительные сведения об улучшениях и исправлениях в этом дополнительном выпуске см. в [документации по PostgreSQL](https://www.postgresql.org/docs/11/static/release-11-9.html) .
 
 ## <a name="postgresql-version-10-and-older"></a>PostgreSQL версии 10 и более ранних версий
 

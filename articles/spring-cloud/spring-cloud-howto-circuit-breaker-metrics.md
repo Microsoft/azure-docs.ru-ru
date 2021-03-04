@@ -7,12 +7,12 @@ ms.service: spring-cloud
 ms.topic: how-to
 ms.date: 12/15/2020
 ms.custom: devx-track-java
-ms.openlocfilehash: e44e7c5d04695d5bd65d2eedc5474889a707c8bd
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: 153f99d100ea1a456f960293f3806a739fe1d593
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98882150"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102038736"
 ---
 # <a name="collect-spring-cloud-resilience4j-circuit-breaker-metrics-preview"></a>Собирайте метрики отResilience4Jного прерывания весны облака (Предварительная версия)
 
@@ -42,9 +42,9 @@ cd spring-cloud-circuitbreaker-demo && mvn clean package -DskipTests
 2. Создание приложений с помощью конечных точек
 
 ```azurecli
-az spring-cloud app create --name resilience4j --is-public \
+az spring-cloud app create --name resilience4j --assign-endpoint \
     -s ${asc-service-name} -g ${asc-resource-group}
-az spring-cloud app create --name reactive-resilience4j --is-public \
+az spring-cloud app create --name reactive-resilience4j --assign-endpoint \
     -s ${asc-service-name} -g ${asc-resource-group}
 ```
 
@@ -123,7 +123,7 @@ az spring-cloud app deploy -n reactive-resilience4j \
 
    [![resilience4J 5](media/spring-cloud-resilience4j/resilience4j-5.png)](media/spring-cloud-resilience4j/resilience4j-5.PNG)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Application Insights](./spring-cloud-howto-application-insights.md)
 * [Распределенная трассировка](spring-cloud-tutorial-distributed-tracing.md)

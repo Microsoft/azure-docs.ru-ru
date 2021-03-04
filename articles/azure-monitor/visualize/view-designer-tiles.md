@@ -1,17 +1,16 @@
 ---
 title: Справочное руководство по плиткам конструктора представлений в Azure Monitor | Документация Майкрософт
 description: С помощью конструктора представлений в Azure Monitor можно создавать пользовательские представления, отображаемые в портал Azure и содержащие разнообразные визуализации данных в рабочей области Log Analytics. В этой статье содержится справочное руководство по параметрам плиток, доступных в пользовательских представлениях.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 01/17/2018
-ms.openlocfilehash: abcd95a0c433b59df6e7a564e5db948ea2a9eaf5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: d1d0da70dc1e47d0a1ddb90abbed2eaea83919cd
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101717219"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102040181"
 ---
 # <a name="reference-guide-to-view-designer-tiles-in-azure-monitor"></a>Справочное руководство для просмотра плиток конструктора в Azure Monitor
 С помощью конструктора представлений в Azure Monitor можно создавать разнообразные пользовательские представления в портал Azure, которые могут помочь визуализировать данные в рабочей области Log Analytics. В этой статье содержится справочное руководство по параметрам плиток, доступных в пользовательских представлениях.

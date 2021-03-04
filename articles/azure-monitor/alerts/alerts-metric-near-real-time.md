@@ -6,13 +6,12 @@ ms.author: harelbr
 services: monitoring
 ms.topic: conceptual
 ms.date: 02/10/2021
-ms.subservice: alerts
-ms.openlocfilehash: b3aa68be050b1ea5c1c32253f1ae6e6353ee8dc7
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c282e6890d56fe047b319f72e05cdc97de76cfcf
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101717916"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102038192"
 ---
 # <a name="supported-resources-for-metric-alerts-in-azure-monitor"></a>Поддерживаемые ресурсы для оповещений метрик в Azure Monitor
 
