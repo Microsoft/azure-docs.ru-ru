@@ -6,22 +6,25 @@ author: memildin
 manager: rkarlin
 ms.service: security-center
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 02/25/2021
 ms.author: memildin
-ms.openlocfilehash: 8d2b43ab57ea7a3b1dc1d13bcdea9932ccecb9dc
-ms.sourcegitcommit: 65a4f2a297639811426a4f27c918ac8b10750d81
+zone_pivot_groups: manage-asc-initiatives
+ms.openlocfilehash: a39b79c6c209c0fc66edac846d5458475ec75810
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559037"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102100871"
 ---
-# <a name="using-custom-security-policies"></a>Использование пользовательских политик безопасности
+# <a name="create-custom-security-initiatives-and-policies"></a>Создание пользовательских инициатив и политик безопасности
 
 Для защиты систем и среды Центр безопасности Azure создает рекомендации по безопасности. Эти рекомендации основаны на рекомендациях отрасли, которые включены в общую политику безопасности по умолчанию, предоставляемую всем клиентам. Они также могут основываться на сведениях Центра безопасности об отраслевых и нормативных стандартах.
 
 С помощью этой функции можно добавить свои собственные *пользовательские* инициативы. В этом случае вы будете получать рекомендации, если среда не будет соответствовать созданным вами политикам. Все созданные вами пользовательские инициативы будут отображаться рядом со встроенными инициативами на панели мониторинга соответствия нормативным требованиям, как описано в руководстве по [обеспечению соответствия нормативным требованиям на высоком уровне](security-center-compliance-dashboard.md).
 
 Как описано в [документации по политикам Azure](../governance/policy/concepts/definition-structure.md#definition-location), при указании расположения для пользовательской инициативы это должна быть группа управления или подписка. 
+
+::: zone pivot="azure-portal"
 
 ## <a name="to-add-a-custom-initiative-to-your-subscription"></a>Добавление пользовательской инициативы в подписку 
 
@@ -68,6 +71,113 @@ ms.locfileid: "96559037"
 1. Для просмотра итоговых рекомендаций для вашей политики щелкните **Рекомендации** на боковой панели, чтобы открыть страницу рекомендаций. Рекомендации будут отображаться с меткой "пользовательская" и будут доступны в течение примерно одного часа.
 
     [![Пользовательские рекомендации](media/custom-security-policies/custom-policy-recommendations.png)](media/custom-security-policies/custom-policy-recommendations-in-context.png#lightbox)
+
+::: zone-end
+
+::: zone pivot="rest-api"
+
+## <a name="configure-a-security-policy-in-azure-policy-using-the-rest-api"></a>Настройка политики безопасности в политике Azure с помощью REST API
+
+Как часть интеграции платформенной функциональности с Политикой Azure Центр безопасности Azure позволяет создавать назначения политик с помощью REST API для Политики Azure. Приведенные ниже инструкции помогут создать назначения политик, а также настроить существующие назначения. 
+
+Важные концепции в Политике Azure: 
+
+- **Определение политики** — это правило. 
+
+- **Инициатива** — это набор определений политик (правил). 
+
+- **Назначение** — это приложение инициативы или политика для определенной области (Группа управления, подписка и т. д.). 
+
+Центр безопасности имеет встроенную инициативу Azure Security, включающую все политики безопасности. Чтобы оценить политики центра безопасности в ресурсах Azure, следует создать назначение в группе управления или подписке, которую необходимо оценить.
+
+Встроенные инициативы имеют все политики Центра безопасности Azure, которые включены по умолчанию. Вы можете отключить определенные политики от встроенной инициативы. Например, чтобы применить все политики центра безопасности, кроме **брандмауэра веб-приложения**, измените значение параметра "воздействие политики" на " **отключено**".
+
+## <a name="api-examples"></a>Примеры с API
+
+В следующих примерах замените указанные ниже переменные:
+
+- **{Scope}** введите имя группы управления или подписки, к которой применяется политика
+- **{полициассигнментнаме}** введите имя соответствующего назначения политики.
+- **{Name}** введите имя или имя администратора, который утвердил изменение политики
+
+В этом примере показано, как присвоить встроенную инициативу Центра безопасности Azure подписке или группе управления.
+ 
+ ```
+    PUT  
+    https://management.azure.com/{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}?api-version=2018-05-01 
+
+    Request Body (JSON) 
+
+    { 
+
+      "properties":{ 
+
+    "displayName":"Enable Monitoring in Azure Security Center", 
+
+    "metadata":{ 
+
+    "assignedBy":"{Name}" 
+
+    }, 
+
+    "policyDefinitionId":"/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8", 
+
+    "parameters":{}, 
+
+    } 
+
+    } 
+ ```
+
+В этом примере показано, как присвоить подписке встроенную инициативу Центра безопасности Azure со следующими отключенными политиками: 
+
+- обновления системы (systemUpdatesMonitoringEffect); 
+
+- конфигурации безопасности (systemConfigurationsMonitoringEffect); 
+
+- Endpoint Protection (endpointProtectionMonitoringEffect). 
+
+ ```
+    PUT https://management.azure.com/{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}?api-version=2018-05-01 
+    
+    Request Body (JSON) 
+    
+    { 
+    
+      "properties":{ 
+    
+    "displayName":"Enable Monitoring in Azure Security Center", 
+    
+    "metadata":{ 
+    
+    "assignedBy":"{Name}" 
+    
+    }, 
+    
+    "policyDefinitionId":"/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8", 
+    
+    "parameters":{ 
+    
+    "systemUpdatesMonitoringEffect":{"value":"Disabled"}, 
+    
+    "systemConfigurationsMonitoringEffect":{"value":"Disabled"}, 
+    
+    "endpointProtectionMonitoringEffect":{"value":"Disabled"}, 
+    
+    }, 
+    
+     } 
+    
+    } 
+ ```
+В этом примере показано, как удалять назначения:
+ ```
+    DELETE   
+    https://management.azure.com/{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}?api-version=2018-05-01 
+ ```
+
+::: zone-end
+
 
 ## <a name="enhance-your-custom-recommendations-with-detailed-information"></a>Улучшенные пользовательские рекомендации с подробными сведениями
 

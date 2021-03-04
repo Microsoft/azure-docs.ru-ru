@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/16/2021
 ms.author: memildin
-ms.openlocfilehash: 0e1f669b6955d5c5b70f2f29ff39ba5aef0a9a56
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: 1ba030ea42d3e865021aa52c651cd72eead9f1a1
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100544822"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102100276"
 ---
 # <a name="feature-coverage-for-machines"></a>Поддерживаемые функции для виртуальных машин
 
@@ -117,7 +117,7 @@ ms.locfileid: "100544822"
 |[Microsoft Defender для конечных точек](harden-docker-hosts.md) (1)|✔|-|
 |[Подключение учетной записи AWS](quickstart-onboard-aws.md) (1)|-|-|
 |[Подключение учетной записи GCP](quickstart-onboard-gcp.md) (1)|-|-|
-|[непрерывный экспорт.](continuous-export.md)|✔|✔ (2)|
+|[непрерывный экспорт.](continuous-export.md)|✔|✔|
 |[Автоматизация рабочих процессов](workflow-automation.md)|✔|✔|
 |[Правила исключения рекомендаций](exempt-resource.md)|-|-|
 |[Правила подавления оповещений](alerts-suppression-rules.md)|✔|✔|

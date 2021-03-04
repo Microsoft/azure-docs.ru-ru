@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/07/2021
 ms.author: memildin
-ms.openlocfilehash: b18b498f250e9ff62180ba21c3bcbda562b13b8c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: be37f2d361b6bb164a3e01b9ac6f115294137dd0
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101735868"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102099545"
 ---
 # <a name="use-adaptive-application-controls-to-reduce-your-machines-attack-surfaces"></a>Использование адаптивных элементов управления приложениями для сокращения поверхностей атак на компьютерах
 
@@ -193,6 +193,12 @@ ms.locfileid: "101735868"
 
 1. Для получения дополнительных сведений и списка затронутых компьютеров выберите оповещение.
 
+    На странице "оповещения" отображаются дополнительные сведения об оповещениях, а также приведена ссылка " **принять действие** " с рекомендациями по устранению угрозы.
+
+    :::image type="content" source="media/security-center-adaptive-application/adaptive-application-alerts-start-time.png" alt-text="Предупреждением о времени начала адаптивного управления приложениями является ":::
+
+    > [!NOTE]
+    > Адаптивные элементы управления приложениями вычисляют события каждые двенадцать часов. "Время начала действия", отображаемое на странице "оповещения", — это время, когда адаптивные элементы управления приложением создали оповещение, а **не** время, когда подозрительный процесс был активен.
 
 
 ## <a name="move-a-machine-from-one-group-to-another"></a>Перемещение компьютера из одной группы в другую

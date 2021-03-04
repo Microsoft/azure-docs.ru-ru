@@ -3,17 +3,18 @@ title: Создание источника данных для карт Android 
 description: 'Узнайте, как создать источник данных для схемы. Сведения об источниках данных, которые использует Azure Maps пакет SDK для Android: источники и векторные плитки геообъектной JSON.'
 author: rbrundritt
 ms.author: richbrun
-ms.date: 12/03/2020
+ms.date: 2/26/2021
 ms.topic: conceptual
 ms.service: azure-maps
 services: azure-maps
 manager: cpendle
-ms.openlocfilehash: fc68dc25aad3671a55e5c11cbee094b4027e7070
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+zone_pivot_groups: azure-maps-android
+ms.openlocfilehash: e870134e2ecd431aa3e5c02638120027f0d47df2
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102047678"
+ms.locfileid: "102101466"
 ---
 # <a name="create-a-data-source-android-sdk"></a>Создание источника данных (пакет SDK для Android)
 
@@ -25,6 +26,8 @@ Azure Maps пакет SDK для Android сохраняет данные в ис
 ## <a name="geojson-data-source"></a>Источник данных геоjson
 
 Azure Maps использует геоjson в качестве одной из основных моделей данных. Геообъектный формат JSON представляет собой открытый геопространственно стандартный способ представления геопространственных данных в формате JSON. Классы геоjson, доступные в Azure Maps пакет SDK для Android для простоты создания и сериализации данных геоjson. Загрузка и хранение данных геообъектного формата JSON в `DataSource` классе и их отрисовка с помощью слоев. В следующем коде показано, как можно создать геообъектные объекты JSON в Azure Maps.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 /*
@@ -53,7 +56,42 @@ feature.addStringProperty("custom-property", "value");
 source.add(feature);
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+/*
+    Raw GeoJSON feature
+    
+    {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-100, 45]
+         },
+         "properties": {
+             "custom-property": "value"
+         }
+    }
+
+*/
+
+//Create a point feature.
+val feature = Feature.fromGeometry(Point.fromLngLat(-100, 45))
+
+//Add a property to the feature.
+feature.addStringProperty("custom-property", "value")
+
+//Add the feature to the data source.
+source.add(feature)
+```
+
+::: zone-end
+
 Кроме того, свойства можно загрузить в JsonObject в первую очередь, а затем передать в функцию при ее создании, как показано ниже.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Create a JsonObject to store properties for the feature.
@@ -62,6 +100,20 @@ properties.addProperty("custom-property", "value");
 
 Feature feature = Feature.fromGeometry(Point.fromLngLat(-100, 45), properties);
 ```
+
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Create a JsonObject to store properties for the feature.
+val properties = JsonObject()
+properties.addProperty("custom-property", "value")
+
+val feature = Feature.fromGeometry(Point.fromLngLat(-100, 45), properties)
+```
+
+::: zone-end
 
 После создания функции геоjson источник данных можно добавить на карту с помощью `sources` Свойства Map. В следующем коде показано, как создать `DataSource` , добавить его в карту и добавить в источник данных функцию.
 
@@ -75,6 +127,8 @@ source.add(feature);
 ```
 
 В следующем коде показано несколько способов создания функции геоjson, Феатуреколлектион и геометрических объектов.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //GeoJSON Point Geometry
@@ -112,9 +166,53 @@ FeatureCollection featureCollectionFromSingleFeature = FeatureCollection.fromFea
 FeatureCollection featureCollection = FeatureCollection.fromFeatures(listOfFeatures);
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//GeoJSON Point Geometry
+val point = Point.fromLngLat(LONGITUDE, LATITUDE)
+
+//GeoJSON Point Geometry
+val linestring = LineString.fromLngLats(PointList)
+
+//GeoJSON Polygon Geometry
+val polygon = Polygon.fromLngLats(listOfPointList)
+
+val polygonFromOuterInner = Polygon.fromOuterInner(outerLineStringObject, innerLineStringObject)
+
+//GeoJSON MultiPoint Geometry
+val multiPoint = MultiPoint.fromLngLats(PointList)
+
+//GeoJSON MultiLineString Geometry
+val multiLineStringFromLngLat = MultiLineString.fromLngLats(listOfPointList)
+
+val multiLineString = MultiLineString.fromLineString(singleLineString)
+
+//GeoJSON MultiPolygon Geometry
+val multiPolygon = MultiPolygon.fromLngLats(listOflistOfPointList)
+
+val multiPolygonFromPolygon = MultiPolygon.fromPolygon(polygon)
+
+val multiPolygonFromPolygons = MultiPolygon.fromPolygons(PolygonList)
+
+//GeoJSON Feature
+val pointFeature = Feature.fromGeometry(Point.fromLngLat(LONGITUDE, LATITUDE))
+
+//GeoJSON FeatureCollection 
+val featureCollectionFromSingleFeature = FeatureCollection.fromFeature(pointFeature)
+
+val featureCollection = FeatureCollection.fromFeatures(listOfFeatures)
+```
+
+::: zone-end
+
 ### <a name="serialize-and-deserialize-geojson"></a>Сериализация и десериализация геоjson
 
 Классы коллекций функций, функций и геометрических методов имеют `fromJson()` и `toJson()` статические методы, которые помогают при сериализации. Отформатированная допустимая строка JSON, переданная с помощью метода, создаст `fromJson()` объект Geometry. Этот `fromJson()` метод также означает, что вы можете использовать Gson или другие стратегии сериализации и десериализации. В следующем коде показано, как взять переведенные геообъект JSON и десериализовать его в класс Feature, а затем сериализовать его обратно в строку геоjson.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Take a stringified GeoJSON object.
@@ -136,11 +234,39 @@ Feature feature = Feature.fromJson(GeoJSON_STRING);
 String featureString = feature.toJson();
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Take a stringified GeoJSON object.
+val GeoJSON_STRING = ("{"
+        + "      \"type\": \"Feature\","
+        + "      \"geometry\": {"
+        + "            \"type\": \"Point\""
+        + "            \"coordinates\": [-100, 45]"
+        + "      },"
+        + "      \"properties\": {"
+        + "            \"custom-property\": \"value\""
+        + "      },"
+        + "}")
+
+//Deserialize the JSON string into a feature.
+val feature = Feature.fromJson(GeoJSON_STRING)
+
+//Serialize a feature collection to a string.
+val featureString = feature.toJson()
+```
+
+::: zone-end
+
 ### <a name="import-geojson-data-from-web-or-assets-folder"></a>Импорт данных GeoJSON из Интернета или из папки assets
 
 В большинстве геофайловых файлов JSON содержится Феатуреколлектион. Чтение геофайловых файлов JSON в виде строк и использование `FeatureCollection.fromJson` метода для десериализации.
 
 Следующий код является повторно используемым классом для импорта данных из папки Web или local Assets в виде строки и возврата их в поток пользовательского интерфейса с помощью функции обратного вызова.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 import android.content.Context;
@@ -315,7 +441,78 @@ public class Utils {
 }
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+import android.content.Context
+import android.os.Handler
+import android.os.Looper
+import android.webkit.URLUtil
+import java.net.URL
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
+
+class Utils {
+    companion object {
+
+        /**
+            * Imports data from a web url or asset file name and returns it to a callback.
+            * @param urlOrFileName A web url or asset file name that points to data to load.
+            * @param context The context of the app.
+            * @param callback The callback function to return the data to.
+            */
+        fun importData(urlOrFileName: String?, context: Context, callback: (String?) -> Unit) {
+            importData(urlOrFileName, context, callback, null)
+        }
+
+        /**
+            * Imports data from a web url or asset file name and returns it to a callback.
+            * @param urlOrFileName A web url or asset file name that points to data to load.
+            * @param context The context of the app.
+            * @param callback The callback function to return the data to.
+            * @param error A callback function to return errors to.
+            */
+        public fun importData(urlOrFileName: String?, context: Context, callback: (String?) -> Unit, error: ((String?) -> Unit)?) {
+            if (urlOrFileName != null && callback != null) {
+                val executor: ExecutorService = Executors.newSingleThreadExecutor()
+                val handler = Handler(Looper.getMainLooper())
+                executor.execute {
+                    var data: String? = null
+                    
+                    try {
+                        data = if (URLUtil.isNetworkUrl(urlOrFileName)) {
+                            URL(urlOrFileName).readText()
+                        } else { //Assume file is in assets folder.
+                            context.assets.open(urlOrFileName).bufferedReader().use{
+                                it.readText()
+                            }
+                        }
+
+                        handler.post {
+                            //Ensure the resulting data string is not null or empty.
+                            if (data != null && !data.isEmpty()) {
+                                callback(data)
+                            } else {
+                                error!!("No data imported.")
+                            }
+                        }
+                    } catch (e: Exception) {
+                        error!!(e.message)
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+::: zone-end
+
 В приведенном ниже коде показано, как использовать эту служебную программу для импорта геообъектных данных JSON в виде строки и возврата их в поток пользовательского интерфейса с помощью обратного вызова. В обратном вызове строковые данные можно сериализовать в коллекцию функций геоjson и добавить в источник данных. При необходимости обновите камеру карты, чтобы сосредоточиться на данных.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Create a data source and add it to the map.
@@ -344,6 +541,41 @@ Utils.importData("URL_or_FilePath_to_GeoJSON_data",
     });
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Create a data source and add it to the map.
+DataSource source = new DataSource();
+map.sources.add(source);
+
+//Import the GeoJSON data and add it to the data source.
+Utils.importData("SamplePoiDataSet.json", this) { 
+    result: String? ->
+        //Parse the data as a GeoJSON Feature Collection.
+            val fc = FeatureCollection.fromJson(result!!)
+
+        //Add the feature collection to the data source.
+        source.add(fc)
+
+        //Optionally, update the maps camera to focus in on the data.
+
+        //Calculate the bounding box of all the data in the Feature Collection.
+        val bbox = MapMath.fromData(fc);
+
+        //Update the maps camera so it is focused on the data.
+        map.setCamera(
+            bounds(bbox),
+
+            //Padding added to account for pixel size of rendered points.
+            padding(20)
+        )
+    }
+```
+
+::: zone-end
+
 ## <a name="vector-tile-source"></a>Источник плитки вектора
 
 Источник векторной плитки описывает, как получить доступ к слою векторной плитки. Используйте `VectorTileSource` класс для создания экземпляра источника плитки вектора. Векторные мозаичные слои похожи на мозаичные слои, но они не одинаковы. Мозаичный слой — это растровое изображение. Векторные мозаичные слои — это сжатый файл в формате **ПБФ** . Этот сжатый файл содержит данные о векторной карте и один или несколько слоев. Файл может быть визуализирован и применен на стороне клиента в зависимости от стиля каждого слоя. Данные в векторной плитке содержат географические функции в виде точек, линий и многоугольников. Существует несколько преимуществ использования векторных слоев, а не растровых слоев мозаики.
@@ -364,6 +596,8 @@ Azure Maps соответствует [спецификации плитки в�
 > При использовании векторных или растровых изображений из Azure Maps службы отрисовки с веб-пакетом SDK можно заменить `atlas.microsoft.com` заполнительом `azmapsdomain.invalid` . Этот заполнитель будет заменен тем же доменом, который используется картой, и будет автоматически добавлять те же сведения проверки подлинности. Это значительно упрощает проверку подлинности с помощью службы Render при использовании Azure Active Directory проверки подлинности.
 
 Чтобы отобразить данные из источника векторной плитки на карте, подключите источник к одному из слоев подготовки данных. Все слои, использующие Векторный источник, должны указывать `sourceLayer` значение в параметрах. Следующий код загружает службу плитки векторного потока трафика Azure Maps в качестве источника векторной плитки, а затем отображает ее на карте с помощью слоя линий. Этот источник векторной плитки содержит один набор данных на исходном слое с именем "поток трафика". Данные строки в этом наборе данных имеют свойство с именем `traffic_level` , которое используется в этом коде для выбора цвета и масштабирования размера строк.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Formatted URL to the traffic flow vector tiles, with the maps subscription key appended to it.
@@ -407,6 +641,50 @@ LineLayer layer = new LineLayer(source,
 map.layers.add(layer, "labels");
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Formatted URL to the traffic flow vector tiles, with the maps subscription key appended to it.
+val trafficFlowUrl = "https://azmapsdomain.invalid/traffic/flow/tile/pbf?api-version=1.0&style=relative&zoom={z}&x={x}&y={y}"
+
+//Create a vector tile source and add it to the map.
+val source = VectorTileSource(
+    tiles(arrayOf(trafficFlowUrl)),
+    maxSourceZoom(22)
+)
+map.sources.add(source)
+
+//Create a layer for traffic flow lines.
+val layer = LineLayer(
+    source,  //The name of the data layer within the data source to pass into this rendering layer.
+    sourceLayer("Traffic flow"),  //Color the roads based on the traffic_level property.
+    strokeColor(
+        interpolate(
+            linear(),
+            get("traffic_level"),
+            stop(0, color(Color.RED)),
+            stop(0.33, color(Color.YELLOW)),
+            stop(0.66, color(Color.GREEN))
+        )
+    ),  //Scale the width of roads based on the traffic_level property.
+    strokeWidth(
+        interpolate(
+            linear(),
+            get("traffic_level"),
+            stop(0, 6),
+            stop(1, 1)
+        )
+    )
+)
+
+//Add the traffic flow layer below the labels to make the map clearer.
+map.layers.add(layer, "labels")
+```
+
+::: zone-end
+
 ![Map с цветными полосами дорожек, демонстрирующими уровни потока трафика](media/create-data-source-android-sdk/android-vector-tile-source-line-layer.png)
 
 ## <a name="connecting-a-data-source-to-a-layer"></a>Подключение источника данных к слою
@@ -420,6 +698,8 @@ map.layers.add(layer, "labels");
 - [Слой многоугольников](how-to-add-shapes-to-android-map.md) . Заливка области многоугольника сплошным цветом или узором изображения.
 
 В следующем коде показано, как создать источник данных, добавить его на карту и подключить его к пузырьковой слою. Затем импортируйте данные географической точки JSON из удаленного расположения в источник данных.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Create a data source and add it to the map.
@@ -452,6 +732,42 @@ Utils.importData("URL_or_FilePath_to_GeoJSON_data",
     });
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Create a data source and add it to the map.
+val source = DataSource()
+map.sources.add(source)
+
+//Create a layer that defines how to render points in the data source and add it to the map.
+val layer = BubbleLayer(source)
+map.layers.add(layer)
+
+//Import the geojson data and add it to the data source.
+Utils.importData("URL_or_FilePath_to_GeoJSON_data", this) { 
+    result: String? ->
+        //Parse the data as a GeoJSON Feature Collection.
+        val fc = FeatureCollection.fromJson(result!!)
+    
+        //Add the feature collection to the data source.
+        dataSource.add(fc)
+    
+        //Optionally, update the maps camera to focus in on the data.
+        //Calculate the bounding box of all the data in the Feature Collection.
+        val bbox = MapMath.fromData(fc)
+    
+        //Update the maps camera so it is focused on the data.
+        map.setCamera(
+            bounds(bbox),
+            padding(20)
+        )
+    }
+```
+
+::: zone-end
+
 Существуют дополнительные слои подготовки к просмотру, которые не подключаются к этим источникам данных, но они напрямую загружают данные для подготовки к просмотру.
 
 - [Мозаичный слой](how-to-add-tile-layer-android-map.md) . переносит растровый слой мозаики поверх карты.
@@ -465,6 +781,8 @@ Utils.importData("URL_or_FilePath_to_GeoJSON_data",
 Для большинства платформ сопоставления требуется объект многоугольника, объект Line и ПИН-код для каждой из позиций многоугольника. После изменения многоугольника необходимо вручную обновить линию и ПИН-коды, что может быстро стать сложным.
 
 В Azure Maps необходимо всего один многоугольник в источнике данных, как показано в приведенном ниже коде.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Create a data source and add it to the map.
@@ -497,8 +815,48 @@ BubbleLayer bubbleLayer = new BubbleLayer(source,
 map.layers.add(new Layer[] { polygonLayer, lineLayer, bubbleLayer });
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Create a data source and add it to the map.
+val source = DataSource()
+map.sources.add(source)
+
+//Create a polygon and add it to the data source.
+source.add(Polygon.fromLngLats())
+
+//Create a polygon layer to render the filled in area of the polygon.
+val polygonLayer = PolygonLayer(
+    source,
+    fillColor("rgba(255,165,0,0.2)")
+)
+
+//Create a line layer for greater control of rendering the outline of the polygon.
+val lineLayer = LineLayer(
+    source,
+    strokeColor("orange"),
+    strokeWidth(2f)
+)
+
+//Create a bubble layer to render the vertices of the polygon as scaled circles.
+val bubbleLayer = BubbleLayer(
+    source,
+    bubbleColor("orange"),
+    bubbleRadius(5f),
+    bubbleStrokeColor("white"),
+    bubbleStrokeWidth(2f)
+)
+
+//Add all layers to the map.
+map.layers.add(arrayOf<Layer>(polygonLayer, lineLayer, bubbleLayer))
+```
+
+::: zone-end
+
 > [!TIP]
-> При добавлении слоев к сопоставлению с помощью `map.layers.add` метода идентификатор или экземпляр существующего слоя можно передать в качестве второго параметра. Это указывает на то, что на карте будет вставлен новый слой, добавляемый под существующим слоем. В помимо для передачи идентификатора слоя этот метод также поддерживает следующие значения.
+> При добавлении слоев к сопоставлению с помощью `map.layers.add` метода идентификатор или экземпляр существующего слоя можно передать в качестве второго параметра. Это указывает на то, что на карте будет вставлен новый слой, добавляемый под существующим слоем. Кроме передачи идентификатора слоя, этот метод также поддерживает следующие значения.
 >
 > - `"labels"` — Вставляет новый слой под слоями меток карт.
 > - `"transit"` — Вставляет новый слой под слоями «дорога» и «транзитный».

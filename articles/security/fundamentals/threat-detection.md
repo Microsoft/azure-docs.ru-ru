@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/03/2021
 ms.author: terrylan
-ms.openlocfilehash: 79262b85e9591ae4b41e8467abdcbccb3804d4ec
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 81b2227ac519de4d03bb63907d14c23b9c34dc64
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100590355"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102101041"
 ---
 # <a name="azure-threat-protection"></a>Защита от угроз Azure
 
@@ -128,7 +128,7 @@ PIM помогает:
 
 Поэтому, когда хакеры создают новые, все более сложные эксплойты, центр безопасности обновляет свои алгоритмы обнаружения максимально оперативно. Этот подход позволяет эффективно противостоять стремительно развивающимся угрозам.
 
-:::image type="content" source="../../security-center/media/security-center-managing-and-responding-alerts/alerts-page.png" alt-text="Список оповещений системы безопасности центра безопасности Azure":::
+:::image type="content" source="../../security-center/media/security-center-managing-and-responding-alerts/alerts-page.png" alt-text="Список оповещений системы безопасности в Центре безопасности Azure":::
 
 Защитник Azure автоматически собирает сведения о безопасности из ваших ресурсов, сети и подключенных партнерских решений. Она анализирует эту информацию, сравнивая сведения из разных источников и определяя угрозы.
 
@@ -368,6 +368,6 @@ Cloud App Security позволяет получать информацию об
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Реагирование на современные угрозы](../../security-center/security-center-alerts-overview.md#respond-threats). помогают выявлять активные угрозы для ресурсов Microsoft Azure и оперативно реагировать на них.
+- [Реагирование на современные угрозы](../../security-center/security-center-managing-and-responding-alerts.md). помогают выявлять активные угрозы для ресурсов Microsoft Azure и оперативно реагировать на них.
 
 - [Обнаружение угроз в Базе данных SQL Azure](https://azure.microsoft.com/blog/azure-sql-database-threat-detection-your-built-in-security-expert/). помогает устранить проблемы, связанные с потенциальными угрозами для баз данных.

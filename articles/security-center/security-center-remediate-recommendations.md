@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/08/2020
 ms.author: memildin
-ms.openlocfilehash: dabd7e9e2c3c74225efc4611c7ad3523a6c76ba5
-ms.sourcegitcommit: 02ed9acd4390b86c8432cad29075e2204f6b1bc3
+ms.openlocfilehash: 6222491d35317e549a3d21f29395b9c25813ea9f
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97807996"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102100361"
 ---
 # <a name="remediate-recommendations-in-azure-security-center"></a>Рекомендации по устранению проблем (Центр безопасности Azure)
 
@@ -36,7 +36,7 @@ ms.locfileid: "97807996"
 
 1. После завершения появится уведомление о том, устранена ли проблема.
 
-## <a name="quick-fix-remediation"></a>Быстрое исправление исправлений
+## <a name="quick-fix-remediation"></a>Быстрое исправление
 
 Чтобы упростить исправление и повысить безопасность среды (а также повысить уровень безопасности), многие рекомендации включают в себя быстрый вариант исправления.
 
@@ -82,4 +82,4 @@ ms.locfileid: "97807996"
 В этом документе было показано, как исправить рекомендации в центре безопасности. Дополнительные сведения о Центре безопасности см. в следующих статьях:
 
 * [Настройка политик безопасности в центре безопасности Azure](tutorial-security-policy.md) — Узнайте, как настроить политики безопасности для подписок и групп ресурсов Azure.
-* [Наблюдение за работоспособностью системы безопасности в Центре безопасности Azure](security-center-monitoring.md). Узнайте, как отслеживать работоспособность ресурсов Azure.
+* [Что такое политики безопасности, инициативы и рекомендации?](security-policy-concept.md)

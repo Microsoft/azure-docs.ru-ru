@@ -7,12 +7,12 @@ ms.date: 10/21/2020
 ms.topic: how-to
 ms.service: security-center
 manager: rkarlin
-ms.openlocfilehash: a5d66e43485ec66b6297ef11ed382e8fb82b7cb3
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.openlocfilehash: ee4992e41e792b570d8937edfe31efb4c651d742
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "96014586"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102100735"
 ---
 # <a name="use-azure-defender-for-container-registries-to-scan-your-images-for-vulnerabilities"></a>Использование Azure Defender для реестров контейнеров с целью проверки образов на наличие уязвимостей
 
@@ -21,8 +21,6 @@ ms.locfileid: "96014586"
 При включении **Azure Defender для реестра контейнеров** все образы, которые вы отправляете в реестр, будут проверяться незамедлительно. Кроме того, проверяются все изображения, извлеченные за последние 30 дней. 
 
 Когда средство проверки сообщает об уязвимостях в центре безопасности, центр безопасности отображает результаты и соответствующие сведения в качестве рекомендаций. Кроме того, результаты включают в себя связанную информацию, такую как действия по исправлению, соответствующие CVE, оценки CVSS и многое другое. Выявленные уязвимости можно просмотреть для одной или нескольких подписок или для определенного реестра.
-
-[!INCLUDE [Defender for container registries availability info](../../includes/security-center-availability-defender-for-container-registries.md)]
 
 
 ## <a name="identify-vulnerabilities-in-images-in-azure-container-registries"></a>Выявление уязвимостей в образах Реестра контейнеров Azure 
@@ -146,7 +144,7 @@ ms.locfileid: "96014586"
     1. Чтобы просмотреть или удалить правило, выберите меню с многоточием ("...").
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > См. сведения об [Azure Defender](azure-defender.md).

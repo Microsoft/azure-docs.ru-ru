@@ -3,12 +3,12 @@ title: Партнеры, которые интегрируются с Azure Moni
 description: Узнайте о партнерах Azure Monitor и о том, как получить документацию по интеграции с их решениями.
 ms.topic: conceptual
 ms.date: 02/19/2021
-ms.openlocfilehash: b971aa70411212e96c39e6bf824fa9e28bd8a1f1
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: ca58023510eb9329bc8ddf1339df4d8c27aae5e6
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102052370"
+ms.locfileid: "102101024"
 ---
 # <a name="azure-monitor-partner-integrations"></a>Интеграция Azure Monitor с продуктами партнеров
 
@@ -291,8 +291,7 @@ Site24x7 предоставляет расширенное и полное ре�
 * Отслеживайте полный екосфере Майкрософт, включая приложения SQL, Exchange, Active Directory, Office 365, IIS и Hyper-V.
 * Легко интегрируются со сторонними службами, такими как Microsoft Teams, PagerDuty, Zapier и др.
 
-[Документация по сайту Круглосуточная](https://www.site24x7.com/)
-
+[Документация по Site24X7](https://www.site24x7.com/azure/?utm_source=microsoft-partner-page&utm_medium=webpage&utm_campaign=ms-partner)
 
 ## <a name="solarwinds"></a>SolarWinds
 

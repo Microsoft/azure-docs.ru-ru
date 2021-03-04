@@ -8,12 +8,12 @@ ms.service: security-center
 ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: memildin
-ms.openlocfilehash: 20241ad316da1c5d713617f3f371d02e2a4e6cc9
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: e49d8bcc55036b21f53720aab17be02edb114d4b
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100570826"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102100259"
 ---
 # <a name="azure-security-center-troubleshooting-guide"></a>Руководство по устранению неполадок в центре безопасности Azure
 
@@ -141,7 +141,6 @@ ms.locfileid: "100570826"
 В этом документе вы ознакомились с подробными сведениями о настройке политик безопасности в Центре безопасности Azure. Дополнительные сведения о Центре безопасности Azure см. в следующих статьях:
 
 * [Руководство по планированию использования центра безопасности Azure и работе в нем](security-center-planning-and-operations-guide.md) — узнайте, как спланировать работу с центром безопасности Azure, и получите рекомендации по переходу к его использованию.
-* [Наблюдение за работоспособностью системы безопасности в Центре безопасности Azure](security-center-monitoring.md) — узнайте, как отслеживать работоспособность ресурсов Azure.
 * [Управление оповещениями безопасности в Центре безопасности Azure и реагирование на них](security-center-managing-and-responding-alerts.md) — узнайте, как управлять оповещениями системы безопасности и реагировать на них.
 * [Understanding security alerts in Azure Security Center](./security-center-alerts-overview.md) (Основные сведения об оповещениях системы безопасности в Центре безопасности Azure)
 * [Руководство. Реагирование на инциденты безопасности](tutorial-security-incident.md)

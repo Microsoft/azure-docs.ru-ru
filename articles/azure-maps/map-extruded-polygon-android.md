@@ -3,17 +3,18 @@ title: Добавление слоя объемной фигуры в карту
 description: Как добавить слой объемной фигуры многоугольника в Microsoft Azure карты пакет SDK для Android.
 author: rbrundritt
 ms.author: richbrun
-ms.date: 02/19/2021
+ms.date: 02/26/2021
 ms.topic: conceptual
 ms.service: azure-maps
 services: azure-maps
 manager: cpendle
-ms.openlocfilehash: b62c2540dc8cf2c7d4f67d465b2d464cbc0c3091
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+zone_pivot_groups: azure-maps-android
+ms.openlocfilehash: ccabffc0e5a65e41f31c3c80703e67f78e8b5f9e
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102055055"
+ms.locfileid: "102101007"
 ---
 # <a name="add-a-polygon-extrusion-layer-to-the-map-android-sdk"></a>Добавление слоя объема фигуры в карту (пакет SDK для Android)
 
@@ -26,6 +27,8 @@ ms.locfileid: "102055055"
 > [!Note]
 > `base`Значение, определенное на уровне объема многоугольника, должно быть меньше или равно значению объекта `height` .
 
+::: zone pivot="programming-language-java-android"
+
 ```java
 //Create a data source and add it to the map.
 DataSource source = new DataSource();
@@ -35,16 +38,16 @@ map.sources.add(source);
 source.add(Polygon.fromLngLats(
     Arrays.asList(
         Arrays.asList(
-            Point.fromLngLat(-73.95838379859924, 40.80027995478159),
-            Point.fromLngLat(-73.98154735565186, 40.76845986171129),
-            Point.fromLngLat(-73.98124694824219, 40.767761062136955),
-            Point.fromLngLat(-73.97361874580382, 40.76461637311633),
-            Point.fromLngLat(-73.97306084632874, 40.76512830937617),
-            Point.fromLngLat(-73.97259950637817, 40.76490890860481),
-            Point.fromLngLat(-73.9494466781616, 40.79658450499243),
-            Point.fromLngLat(-73.94966125488281, 40.79708807289436),
-            Point.fromLngLat(-73.95781517028809, 40.80052360358227),
-            Point.fromLngLat(-73.95838379859924, 40.80027995478159)
+            Point.fromLngLat(-73.958383, 40.800279),
+            Point.fromLngLat(-73.981547, 40.768459),
+            Point.fromLngLat(-73.981246, 40.767761),
+            Point.fromLngLat(-73.973618, 40.764616),
+            Point.fromLngLat(-73.973060, 40.765128),
+            Point.fromLngLat(-73.972599, 40.764908),
+            Point.fromLngLat(-73.949446, 40.796584),
+            Point.fromLngLat(-73.949661, 40.797088),
+            Point.fromLngLat(-73.957815, 40.800523),
+            Point.fromLngLat(-73.958383, 40.800279)
         )
     )
 ));
@@ -60,6 +63,49 @@ PolygonExtrusionLayer layer = new PolygonExtrusionLayer(source,
 map.layers.add(layer, "labels");
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Create a data source and add it to the map.
+val source = DataSource()
+map.sources.add(source)
+
+//Create a polygon.
+source.add(
+    Polygon.fromLngLats(
+        Arrays.asList(
+            Arrays.asList(
+                Point.fromLngLat(-73.958383, 40.800279),
+                Point.fromLngLat(-73.981547, 40.768459),
+                Point.fromLngLat(-73.981246, 40.767761),
+                Point.fromLngLat(-73.973618, 40.764616),
+                Point.fromLngLat(-73.973060, 40.765128),
+                Point.fromLngLat(-73.972599, 40.764908),
+                Point.fromLngLat(-73.949446, 40.796584),
+                Point.fromLngLat(-73.949661, 40.797088),
+                Point.fromLngLat(-73.957815, 40.800523),
+                Point.fromLngLat(-73.958383, 40.800279)
+            )
+        )
+    )
+)
+
+//Create and add a polygon extrusion layer to the map below the labels so that they are still readable.
+val layer = PolygonExtrusionLayer(
+    source,
+    fillColor("#fc0303"),
+    fillOpacity(0.7f),
+    height(500f)
+)
+
+//Create and add a polygon extrusion layer to the map below the labels so that they are still readable.
+map.layers.add(layer, "labels")
+```
+
+::: zone-end
+
 На следующем снимке экрана показан приведенный выше код, отрисовки многоугольник, растянутый по вертикали с помощью слоя объемной фигуры многоугольника.
 
 ![Схема с растяжением многоугольника по вертикали с помощью слоя объемной фигуры](media/map-extruded-polygon-android/polygon-extrusion-layer.jpg)
@@ -67,6 +113,8 @@ map.layers.add(layer, "labels");
 ## <a name="add-data-driven-polygons"></a>Добавить управляемые данными многоугольники
 
 Карту хороплет можно визуализировать с помощью слоя объема фигуры многоугольника. Установите `height` Свойства и `fillColor` уровня объемной фигуры в измерение статистической переменной в `Polygon` `MultiPolygon` геометрических компонентах и. В следующем образце кода показана вытянутая хороплетная схема США на основе измерения плотности Генеральной совокупности по штату.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Create a data source and add it to the map.
@@ -111,6 +159,59 @@ PolygonExtrusionLayer layer = new PolygonExtrusionLayer(source,
 //Create and add a polygon extrusion layer to the map below the labels so that they are still readable.
 map.layers.add(layer, "labels");
 ```
+
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Create a data source and add it to the map.
+val source = DataSource()
+map.sources.add(source)
+
+//Import the geojson data and add it to the data source.
+Utils.importData("https://azuremapscodesamples.azurewebsites.net/Common/data/geojson/US_States_Population_Density.json",
+    this
+) { result: String? ->
+    //Parse the data as a GeoJSON Feature Collection.
+    val fc = FeatureCollection.fromJson(result!!)
+
+    //Add the feature collection to the data source.
+    source.add(fc)
+}
+
+//Create and add a polygon extrusion layer to the map below the labels so that they are still readable.
+val layer = PolygonExtrusionLayer(
+    source,
+    fillOpacity(0.7f),
+    fillColor(
+        step(
+            get("density"),
+            literal("rgba(0, 255, 128, 1)"),
+            stop(10, "rgba(9, 224, 118, 1)"),
+            stop(20, "rgba(11, 191, 103, 1)"),
+            stop(50, "rgba(247, 227, 5, 1)"),
+            stop(100, "rgba(247, 199, 7, 1)"),
+            stop(200, "rgba(247, 130, 5, 1)"),
+            stop(500, "rgba(247, 94, 5, 1)"),
+            stop(1000, "rgba(247, 37, 5, 1)")
+        )
+    ),
+    height(
+        interpolate(
+            linear(),
+            get("density"),
+            stop(0, 100),
+            stop(1200, 960000)
+        )
+    )
+)
+
+//Create and add a polygon extrusion layer to the map below the labels so that they are still readable.
+map.layers.add(layer, "labels")
+```
+
+::: zone-end
 
 На следующем снимке экрана показана хороплетная схема штатов США, которая растягивается по вертикали как вытянутые многоугольники на основе плотности населения.
 

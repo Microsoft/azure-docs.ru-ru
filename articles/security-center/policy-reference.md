@@ -7,12 +7,12 @@ author: memildin
 ms.author: memildin
 ms.service: security-center
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 3b5860cc4ada88e2e7c7813e3441db3ec89f31af
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b80ceffe22c797d46b82ec33a47c726d68bf4cdb
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101729936"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102099834"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-security-center"></a>Встроенные определения в Политике Azure для Центра безопасности Azure
 
@@ -44,13 +44,4 @@ ms.locfileid: "101729936"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-В этой статье вы узнали об определениях политик безопасности в Azure в центре безопасности. Дополнительные сведения см. в следующих статьях.
-
-- Ознакомьтесь со встроенными инициативами в [репозитории GitHub для Политики Azure](https://github.com/Azure/azure-policy).
-- Изучите статью о [структуре определения Политики Azure](../governance/policy/concepts/definition-structure.md).
-- Изучите [сведения о действии политик](../governance/policy/concepts/effects.md).
-- [Руководство по планированию и эксплуатации центра безопасности Azure](./security-center-planning-and-operations-guide.md). Узнайте, как планировать и анализировать вопросы проектирования в центре безопасности Azure.
-- [Наблюдение за работоспособностью системы безопасности в Центре безопасности Azure](./security-center-monitoring.md) — узнайте, как отслеживать работоспособность ресурсов Azure.
-- [Управление оповещениями безопасности в Центре безопасности Azure и реагирование на них](./security-center-managing-and-responding-alerts.md) — узнайте, как управлять оповещениями системы безопасности и реагировать на них.
-- [Управление подключенными партнерскими решениями с помощью центра безопасности Azure](./security-center-partner-integration.md) — узнайте, как отслеживать состояние работоспособности решений партнеров.
-- [Политика Azure](../governance/policy/overview.md). Узнайте, как проводить аудит и управлять ресурсами Azure.
+В этой статье вы узнали об определениях политик безопасности в Azure в центре безопасности. Дополнительные сведения о инициативах, политиках и способах их связи с рекомендациями центра безопасности см. в статье [что такое политики безопасности, инициативы и рекомендации?](security-policy-concept.md).

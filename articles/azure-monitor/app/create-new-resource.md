@@ -3,19 +3,19 @@ title: Создание ресурса Azure Application Insights | Докуме
 description: Вручную настройте мониторинг Application Insights для нового работающего приложения.
 ms.topic: conceptual
 ms.date: 02/10/2021
-ms.openlocfilehash: 1ec5e929f591c0b7ada36f345d86c6de591892c8
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 459f61d9e13a2098403f3e78c7a529e49bf65e59
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100575622"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102100939"
 ---
 # <a name="create-an-application-insights-resource"></a>Создание ресурса Application Insights
 
 Azure Application Insights отображает данные о приложении в *ресурсе* Microsoft Azure. Таким образом, создание ресурса является частью [настройки Application Insights для мониторинга нового приложения][start]. После создания нового ресурса можно получить его ключ инструментирования и использовать его для настройки пакета SDK для Application Insights. Ключ инструментирования связывает данные телеметрии с ресурсом.
 
 > [!IMPORTANT]
-> Классическое Application Insights является устаревшим. Следуйте этим [инструкциям по обновлению до Application Insights на основе рабочей области](convert-classic-resource.md).
+> [Классическое Application Insights является устаревшим](https://azure.microsoft.com/updates/we-re-retiring-classic-application-insights-on-29-february-2024/). Следуйте этим [инструкциям по обновлению до Application Insights на основе рабочей области](convert-classic-resource.md).
 
 ## <a name="sign-in-to-microsoft-azure"></a>Войдите в Microsoft Azure
 
@@ -29,7 +29,7 @@ Azure Application Insights отображает данные о приложен
 
    | Настройки        |  Значение           | Описание  |
    | ------------- |:-------------|:-----|
-   | **имя**;      | `Unique value` | Имя, идентифицирующее отслеживаемое приложение. |
+   | **Имя**      | `Unique value` | Имя, идентифицирующее отслеживаемое приложение. |
    | **Группа ресурсов**     | `myResourceGroup`      | Имя новой или существующей группы ресурсов для размещения данных App Insights. |
    | **Регион** | `East US` | Выберите ближайшее к вам расположение или расположение рядом с местом размещения приложения. |
    | **Режим ресурсов** | `Classic` либо `Workspace-based` | Ресурсы на основе рабочей области в настоящее время доступны в общедоступной предварительной версии и позволяют отправить данные телеметрии Application Insights в общую рабочую область Log Analytics. Дополнительные сведения см. в [статье о ресурсах на основе рабочей области](create-workspace-resource.md).
@@ -157,7 +157,7 @@ az monitor app-insights component create --app demoApp --location eastus --kind 
 
 Полный Azure CLI документации по этой команде и сведения о получении ключа инструментирования см. в [документации по Azure CLI](/cli/azure/ext/application-insights/monitor/app-insights/component#ext-application-insights-az-monitor-app-insights-component-create).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Поиск по журналу диагностики](./diagnostic-search.md)
 * [Изучение метрик](../essentials/metrics-charts.md)
 * [Написание запросов аналитики](../logs/log-query-overview.md)

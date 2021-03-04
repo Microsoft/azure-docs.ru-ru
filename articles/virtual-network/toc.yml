@@ -25,10 +25,8 @@
       href: tutorial-restrict-network-access-to-resources.md
     - name: Подключение виртуальных сетей
       href: tutorial-connect-virtual-networks-portal.md
-    - name: Создание шлюза NAT
-      href: quickstart-create-nat-gateway-portal.md
     - name: Создание и проверка шлюза NAT
-      href: tutorial-create-validate-nat-gateway-portal.md
+      href: tutorial-create-nat-gateway-portal.md
 - name: Примеры
   items:
     - name: Azure CLI
