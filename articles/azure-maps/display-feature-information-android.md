@@ -3,21 +3,24 @@ title: Отображение сведений о функциях в карта
 description: Сведения о том, как отображать информацию, когда пользователи взаимодействуют с функциями карт. Используйте пакет SDK для Android Azure Maps для вывода всплывающих сообщений и других типов сообщений.
 author: rbrundritt
 ms.author: richbrun
-ms.date: 08/08/2019
+ms.date: 2/26/2021
 ms.topic: conceptual
 ms.service: azure-maps
 services: azure-maps
 manager: cpendle
-ms.openlocfilehash: 4e84bd821d53048b134db635c7ec541db74fbf11
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+zone_pivot_groups: azure-maps-android
+ms.openlocfilehash: b9926d5d6a70d959c0baacd9602341bb69abe924
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102047725"
+ms.locfileid: "102097250"
 ---
 # <a name="display-feature-information"></a>Отображение сведений о компоненте
 
 Пространственные данные часто представляются с помощью точек, линий и многоугольников. С этими данными часто связаны метаданные. Например, точка может представлять местоположение ресторана, а метаданные об этом ресторане могут быть именем, адресом и типом пищи, который он обслуживает. Эти метаданные можно добавить как свойства геоjson `Feature` . Следующий код создает простую функцию Point со `title` свойством, имеющим значение "Hello World!"
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Create a data source and add it to the map.
@@ -34,9 +37,32 @@ feature.addStringProperty("title", "Hello World!");
 source.add(feature);
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Create a data source and add it to the map.
+val source = DataSource()
+map.sources.add(source)
+
+//Create a point feature.
+val feature = Feature.fromGeometry(Point.fromLngLat(-122.33, 47.64))
+
+//Add a property to the feature.
+feature.addStringProperty("title", "Hello World!")
+
+//Create a point feature, pass in the metadata properties, and add it to the data source.
+source.add(feature)
+```
+
+::: zone-end
+
 Способы создания и добавления данных на карту см. в документации по [созданию источника данных](create-data-source-android-sdk.md) .
 
 Когда пользователь взаимодействует с компонентом на карте, события могут использоваться для реагирования на эти действия. Распространенным сценарием является отображение сообщения, сопоставленного со свойствами метаданных функции, с которой взаимодействует пользователь. `OnFeatureClick`Событие является основным событием, используемым для определения того, когда пользователь нажал на карту. Существует также `OnLongFeatureClick` событие. При добавлении `OnFeatureClick` события к сопоставлению его можно ограничить одним слоем, ПЕРЕДАВ идентификатор слоя для ограничения. Если идентификатор слоя не передается, то при нажатии любой функции на карте, независимо от того, в каком слое он находится, будет срабатывать это событие. Следующий код создает слой символов для отрисовки данных точек на карте, затем добавляет `OnFeatureClick` событие и ограничивает его на этот уровень символов.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Create a symbol and add it to the map.
@@ -52,9 +78,31 @@ map.events.add((OnFeatureClick) (features) -> {
 }, layer.getId());    //Limit this event to the symbol layer.
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Create a symbol and add it to the map.
+val layer = SymbolLayer(source)
+map.layers.add(layer)
+
+//Add a feature click event to the map.
+map.events.add(OnFeatureClick { features: List<Feature> ->
+    //Retrieve the title property of the feature as a string.
+    val msg = features[0].getStringProperty("title")
+
+    //Do something with the message.
+}, layer.getId()) //Limit this event to the symbol layer.
+```
+
+::: zone-end
+
 ## <a name="display-a-toast-message"></a>Отображение всплывающего сообщения
 
 Всплывающее сообщение — это один из самых простых способов отобразить сведения для пользователя и доступен во всех версиях Android. Он не поддерживает никаких типов вводимых пользователем данных и отображается только в течение короткого периода времени. Если вы хотите быстро предоставить пользователю сведения о том, что они применяют, то может быть хорошим вариантом. В следующем коде показано, как можно использовать всплывающее сообщение с `OnFeatureClick` событием.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Add a feature click event to the map.
@@ -67,7 +115,24 @@ map.events.add((OnFeatureClick) (features) -> {
 }, layer.getId());    //Limit this event to the symbol layer.
 ```
 
-![Анимация касания функции и отображение всплывающего сообщения](./media/display-feature-information-android/symbol-layer-click-toast-message.gif)
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Add a feature click event to the map.
+map.events.add(OnFeatureClick { features: List<Feature> ->
+    //Retrieve the title property of the feature as a string.
+    val msg = features[0].getStringProperty("title")
+
+    //Display a toast message with the title information.
+    Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+}, layer.getId()) //Limit this event to the symbol layer.
+```
+
+::: zone-end
+
+![Анимация касания функции и отображение всплывающего сообщения](media/display-feature-information-android/symbol-layer-click-toast-message.gif)
 
 Помимо всплывающих сообщений существует много других способов представления свойств метаданных функции, например:
 
@@ -104,6 +169,8 @@ Azure Maps пакет SDK для Android предоставляет `Popup` кл
 ```
 
 Если приведенный выше макет хранится в файле, который называется `popup_text.xml` в `res -> layout` папке приложения, следующий код создает всплывающее окно, добавляет его в карту. При нажатии на эту функцию `title` свойство отображается с помощью `popup_text.xml` макета и снизу от центра макета, привязанного к заданной точке на карте.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Create a popup and add it to the map.
@@ -144,8 +211,54 @@ map.events.add((OnFeatureClick)(feature) -> {
     //Open the popup.
     popup.open();
 });
-
 ```
+
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Create a popup and add it to the map.
+val popup = Popup()
+map.popups.add(popup)
+
+map.events.add(OnFeatureClick { feature: List<Feature> ->
+    //Get the first feature and it's properties.
+    val f = feature[0]
+    val props = f.properties()
+
+    //Retrieve the custom layout for the popup.
+    val customView: View = LayoutInflater.from(this).inflate(R.layout.popup_text, null)
+
+    //Access the text view within the custom view and set the text to the title property of the feature.
+    val tv: TextView = customView.findViewById(R.id.message)
+    tv.text = props!!["title"].asString
+
+    //Get the coordinates from the clicked feature and create a position object.
+    val c: List<Double> = (f.geometry() as Point?).coordinates()
+    val pos = Position(c[0], c[1])
+
+    //Set the options on the popup.
+    popup.setOptions( 
+        //Set the popups position.
+        position(pos),  
+
+        //Set the anchor point of the popup content.
+        anchor(AnchorType.BOTTOM),  
+
+        //Set the content of the popup.
+        content(customView) 
+
+        //Optionally, hide the close button of the popup.
+        //, closeButton(false)
+    )
+
+    //Open the popup.
+    popup.open()
+})
+```
+
+::: zone-end
 
 На следующем снимке экрана показаны всплывающие окна, которые появляются при щелчке компонентов и привязаны к заданному расположению на карте при перемещении.
 

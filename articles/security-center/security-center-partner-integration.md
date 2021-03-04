@@ -2,23 +2,18 @@
 title: Интеграция решений по обеспечению безопасности в центре безопасности Azure | Документация Майкрософт
 description: Сведения о том, как интегрировать центр безопасности Azure с партнерами для повышения общей безопасности ресурсов Azure.
 services: security-center
-documentationcenter: na
 author: memildin
 manager: rkarlin
-ms.assetid: 6af354da-f27a-467a-8b7e-6cbcf70fdbcb
 ms.service: security-center
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 12/10/2020
 ms.author: memildin
-ms.openlocfilehash: ecfb4bdbd523dd1514333a2185186eab0a7e4aaa
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.openlocfilehash: ff23a1fa4b631fc10163f22d94ccdbd8cbe657c2
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97032683"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102099256"
 ---
 # <a name="integrate-security-solutions-in-azure-security-center"></a>Интеграция решений по обеспечению безопасности в центре безопасности Azure
 В этом документе описана процедура управления решениями по обеспечению безопасности, подключенными к центру безопасности Azure, и добавления новых решений.
@@ -39,7 +34,7 @@ ms.locfileid: "97032683"
 
 Центр безопасности также позволяет выполнить анализ уязвимостей для:
 
-* Баз данных SQL — см. раздел [Просмотр отчетов об оценке уязвимостей](defender-for-sql-usage.md#explore-vulnerability-assessment-reports).
+* Баз данных SQL — см. раздел [Просмотр отчетов об оценке уязвимостей](defender-for-sql-on-machines-vulnerability-assessment.md#explore-vulnerability-assessment-reports).
 * Образы реестра контейнеров Azure. см. раздел [Использование защитника Azure для реестров контейнеров для проверки образов на наличие уязвимостей](defender-for-container-registries-usage.md) .
 
 ## <a name="how-security-solutions-are-integrated"></a>Как интегрируются решения по обеспечению безопасности
@@ -88,8 +83,7 @@ ms.locfileid: "97032683"
 Центр безопасности автоматически обнаруживает решения по обеспечению безопасности, которые выполняются в Azure, но не подключены к центру безопасности, и отображает решения в разделе **обнаруженные решения** . Эти решения включают решения Azure, такие как [Защита идентификации Azure AD](../active-directory/identity-protection/overview-identity-protection.md)и решения партнеров.
 
 > [!NOTE]
-> Включите **защитник Azure** на уровне подписки для компонента обнаруженных решений. Дополнительные сведения о ценовых категориях см. в разделе [цены](security-center-pricing.md) .
->
+> Включите **защитник Azure** на уровне подписки для компонента обнаруженных решений. Дополнительные сведения см. в [руководстве по включению защитника Azure](enable-azure-defender.md).
 
 Выберите **Подключиться** в решении для интеграции с центром безопасности и получите уведомления об оповещениях системы безопасности.
 
@@ -103,7 +97,4 @@ ms.locfileid: "97032683"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Из этой статьи вы узнали, как интегрировать партнерские решения в центре безопасности. Связанные сведения см. в следующих статьях:
-
-* [Непрерывно экспортируйте данные центра безопасности](continuous-export.md). Узнайте, как настроить интеграцию с Azure Sentinel или любым другим SIEM.
-* [Наблюдение за работоспособностью системы безопасности в Центре безопасности Azure](security-center-monitoring.md). Узнайте, как отслеживать работоспособность ресурсов Azure.
+Из этой статьи вы узнали, как интегрировать партнерские решения в центре безопасности. Чтобы узнать, как настроить интеграцию с Azure Sentinel или любым другим SIEM, см. статью [непрерывный экспорт данных центра безопасности](continuous-export.md).

@@ -7,12 +7,12 @@ ms.service: expressroute
 ms.topic: how-to
 ms.date: 2/9/2021
 ms.author: duau
-ms.openlocfilehash: 640e13261fa76fe89c9f5fbd038f20766c509025
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: c305ee78abac7e175dc086666dfd1e2926f8da2b
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102039051"
+ms.locfileid: "102097828"
 ---
 # <a name="add-ipv6-support-for-private-peering-using-the-azure-portal-preview"></a>Добавление поддержки IPv6 для частного пиринга с помощью портал Azure (Предварительная версия)
 
@@ -98,7 +98,7 @@ ms.locfileid: "102039051"
 * Подключения к развертываниям в Azure с помощью SKU шлюза, отличного от AZ ExpressRoute
 * Подключения к развертываниям в регионах, не относящихся к AZ
 * Global Reach соединений между каналами ExpressRoute
-* Использование ExpressRoute с Вван
+* Использование ExpressRoute с виртуальной глобальной сетью
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

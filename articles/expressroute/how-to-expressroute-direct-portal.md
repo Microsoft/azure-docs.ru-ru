@@ -7,26 +7,33 @@ ms.service: expressroute
 ms.topic: how-to
 ms.date: 12/14/2020
 ms.author: duau
-ms.openlocfilehash: acbd5c3aa88c2c8c14407ebda0c42d228aa6c9e3
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.openlocfilehash: b133f1cce4af07d8d5e50e04670741fcf7c936a4
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98018944"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102097080"
 ---
 # <a name="create-expressroute-direct-using-the-azure-portal"></a>Создание ExpressRoute Direct с помощью портал Azure
 
 В этой статье показано, как создать ExpressRoute Direct с помощью портал Azure.
 Служба ExpressRoute Direct позволяет напрямую подключаться к глобальной сети Майкрософт в местах пиринга, стратегически распределенных по всему миру. См. дополнительные сведения об [ExpressRoute Direct](expressroute-erdirect-about.md).
 
-## <a name="before-you-begin"></a><a name="before"></a>Перед началом
+## <a name="before-you-begin"></a><a name="before"></a>Подготовка к работе
 
-Прежде чем использовать ExpressRoute Direct, сначала необходимо зарегистрировать подписку. Чтобы подписаться, отправьте электронное письмо на адрес <ExpressRouteDirect@microsoft.com>, указав идентификатор подписки и следующие сведения:
+Прежде чем использовать ExpressRoute Direct, сначала необходимо зарегистрировать подписку. Для регистрации выполните следующие действия с помощью Azure PowerShell.
+1.  Войдите в Azure и выберите подписку, которую хотите зарегистрировать.
 
-* задачи, которые необходимо выполнять с помощью **ExpressRoute Direct**;
-* настройки местоположения — полный список всех расположений см. в разделе [Партнеры и одноранговые расположения ExpressRoute](expressroute-locations-providers.md);
-* временную шкалу для реализации;
-* другие вопросы.
+    ```azurepowershell-interactive
+    Connect-AzAccount 
+
+    Select-AzSubscription -Subscription "<SubscriptionID or SubscriptionName>"
+    ```
+
+2. Зарегистрируйте подписку для общедоступной предварительной версии с помощью следующей команды:
+    ```azurepowershell-interactive
+    Register-AzProviderFeature -FeatureName AllowExpressRoutePorts -ProviderNamespace Microsoft.Network
+    ```
 
 После регистрации убедитесь, что поставщик ресурсов **Microsoft. Network** зарегистрирован в вашей подписке. Регистрация поставщика ресурсов настраивает подписку для работы с поставщиком ресурсов.
 

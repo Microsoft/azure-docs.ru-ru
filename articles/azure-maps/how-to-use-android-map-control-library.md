@@ -3,18 +3,18 @@ title: Приступая к работе с элементом управлен
 description: Познакомьтесь с Azure Maps пакет SDK для Android. См. статью создание проекта в Android Studio, установка пакета SDK и создание интерактивной схемы.
 author: rbrundritt
 ms.author: richbrun
-ms.date: 12/10/2020
+ms.date: 2/26/2021
 ms.topic: how-to
 ms.service: azure-maps
 services: azure-maps
 manager: cpendle
-ms.custom: mvc
-ms.openlocfilehash: a7533e079ca13f8ac891fa96f11f740a21c1a3dc
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+zone_pivot_groups: azure-maps-android
+ms.openlocfilehash: 5888a5f34ef65fc1015b6e73af1d03368a8329b2
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97680371"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102098525"
 ---
 # <a name="getting-started-with-azure-maps-android-sdk"></a>Приступая к работе с пакетом SDK для Android для Azure Maps
 
@@ -30,10 +30,15 @@ ms.locfileid: "97680371"
 
 Первый вариант — передать сведения о языке и региональном представлении в класс `AzureMaps`, используя статические методы `setLanguage` и `setView` глобально. Это позволит задать язык и региональное представление по умолчанию для всех элементов управления Azure Maps, загруженных в приложение.
 
+::: zone pivot="programming-language-java-android"
+
 ```java
 static {
     //Set your Azure Maps Key.
     AzureMaps.setSubscriptionKey("<Your Azure Maps Key>");
+
+    //Alternatively use Azure Active Directory authenticate.
+    //AzureMaps.setAadProperties("<Your aad clientId>", "<Your aad AppId>", "<Your aad Tenant>");
 
     //Set the language to be used by Azure Maps.
     AzureMaps.setLanguage("fr-FR");
@@ -42,6 +47,30 @@ static {
     AzureMaps.setView("Auto");
 }
 ```
+
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+companion object {
+    init {
+        //Set your Azure Maps Key.
+        AzureMaps.setSubscriptionKey("<Your Azure Maps Key>");
+
+        //Alternatively use Azure Active Directory authenticate.
+        //AzureMaps.setAadProperties("<Your aad clientId>", "<Your aad AppId>", "<Your aad Tenant>");
+    
+        //Set the language to be used by Azure Maps.
+        AzureMaps.setLanguage("fr-FR");
+    
+        //Set the regional view to be used by Azure Maps.
+        AzureMaps.setView("Auto");
+    }
+}
+```
+
+::: zone-end
 
 Второй вариант — передать сведения о языке и представлении в XML-коде элемента управления карты.
 
@@ -57,6 +86,8 @@ static {
 
 Третий вариант — задать язык и региональное представление карты программным образом с помощью метода `setStyle` карт. Это можно сделать в любое время, чтобы изменить язык и региональное представление для карты.
 
+::: zone pivot="programming-language-java-android"
+
 ```java
 mapControl.onReady(map -> {
     map.setStyle(
@@ -65,6 +96,21 @@ mapControl.onReady(map -> {
     );
 });
 ```
+
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+mapControl.onReady(OnReady { map: AzureMap ->
+    map.setStyle(
+        language("fr-FR"),
+        view("Auto")
+    )
+})
+```
+
+::: zone-end
 
 Ниже приведен пример Azure Maps с языком, для которого задано значение "fr-FR", а для регионального представления задано значение "Авто".
 
@@ -101,9 +147,21 @@ mapControl.onReady(map -> {
 
 В том же месте, где указаны Azure Maps сведения о проверке подлинности, добавьте следующую строку кода, чтобы сообщить карте об использовании облачного домена Azure Maps государственных организаций.
 
+::: zone pivot="programming-language-java-android"
+
 ```java
 AzureMaps.setDomain("atlas.azure.us");
 ```
+
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+AzureMaps.setDomain("atlas.azure.us")
+```
+
+::: zone-end
 
 При проверке подлинности карт и служб обязательно используйте сведения о проверке подлинности Azure Maps на облачной платформе Azure для государственных организаций.
 

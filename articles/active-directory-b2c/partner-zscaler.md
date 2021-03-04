@@ -11,18 +11,18 @@ ms.topic: how-to
 ms.date: 12/09/2020
 ms.author: gasinh
 ms.subservice: B2C
-ms.openlocfilehash: fe427150b15c6bccb97172ae751235d388c95c7b
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.openlocfilehash: dbeb3cd4fccf80f434e6c7ac08c658632f64b135
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98675032"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102096859"
 ---
 # <a name="tutorial-configure-zscaler-private-access-with-azure-active-directory-b2c"></a>Руководство. Настройка частного доступа Zscaler с помощью Azure Active Directory B2C
 
 В этом руководстве вы узнаете, как интегрировать проверку подлинности Azure Active Directory B2C (Azure AD B2C) с [Zscaler Private Access (ZPA)](https://www.zscaler.com/products/zscaler-private-access). ZPA обеспечивает безопасный доступ к частным приложениям и ресурсам на основе политик без затрат, проблем или угроз безопасности виртуальной частной сети (VPN). Предложение безопасного гибридного доступа Zscaler позволяет получать нулевую атаку для приложений, ориентированных на потребителей, при объединении с Azure AD B2C.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Прежде чем начать, вам потребуется:
 
@@ -78,7 +78,7 @@ ms.locfileid: "98675032"
    b. В разделе **единый вход** выберите **пользователь**.  
    c. В раскрывающемся списке **домены** выберите домены проверки подлинности, которые необходимо связать с этим IDP.
 
-1. Нажмите **Далее**.
+1. Выберите **Далее**.
 
 1. Перейдите на вкладку **метаданные SP** и выполните следующие действия.
 
@@ -100,11 +100,11 @@ ms.locfileid: "98675032"
 
 ### <a name="step-3-register-zpa-as-a-saml-application-in-azure-ad-b2c"></a>Шаг 3. Регистрация ZPA в качестве приложения SAML в Azure AD B2C
 
-Сведения о настройке приложения SAML в Azure AD B2C см. в разделе [Регистрация приложения SAML в Azure AD B2C](./connect-with-saml-service-providers.md). 
+Сведения о настройке приложения SAML в Azure AD B2C см. в разделе [Регистрация приложения SAML в Azure AD B2C](./saml-service-provider.md). 
 
-На шаге ["3,2. Отправка и проверка метаданных политики"](./connect-with-saml-service-providers.md#32-upload-and-test-your-policy-metadata)скопируйте или запишите URL-адрес метаданных SAML IDP, используемый Azure AD B2C. Он понадобится вам позднее.
+На шаге ["Отправка политики"](./saml-service-provider.md#upload-your-policy)скопируйте или запишите URL-адрес метаданных SAML IDP, используемый Azure AD B2C. Он понадобится вам позднее.
 
-Следуйте инструкциям на шаге ["4,2 обновление манифеста приложения"](./connect-with-saml-service-providers.md#42-update-the-app-manifest). На шаге 4,2 Обновите свойства манифеста приложения следующим образом:
+Следуйте инструкциям на шаге ["Настройка приложения в Azure AD B2C"](./saml-service-provider.md#configure-your-application-in-azure-ad-b2c). На шаге 4,2 Обновите свойства манифеста приложения следующим образом:
 
 - Для **identifierUris**: используйте идентификатор сущности поставщика услуг, который вы скопировали или отметили ранее в шаге 1.6. b.  
 - Для **самлметадатаурл**: пропустите это свойство, так как ZPA не размещает URL-адрес метаданных SAML.  
@@ -145,11 +145,11 @@ ms.locfileid: "98675032"
 
 Перейдите на пользовательский портал ZPA или приложение для доступа к браузеру и протестируйте процесс регистрации или входа. Проверка должна привести к успешной проверке подлинности SAML.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения см. в следующих статьях:
 
 - [Приступая к работе с пользовательскими политиками в Azure AD B2C](./custom-policy-get-started.md)
-- [Регистрация приложения SAML в Azure AD B2C](./connect-with-saml-service-providers.md)
+- [Регистрация приложения SAML в Azure AD B2C](./saml-service-provider.md)
 - [Пошаговое руководств по настройке ZPA](https://help.zscaler.com/zpa/step-step-configuration-guide-zpa)
 - [Настройка IdP для единого входа](https://help.zscaler.com/zpa/configuring-idp-single-sign)

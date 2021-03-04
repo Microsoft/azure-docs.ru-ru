@@ -7,26 +7,27 @@ ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 02/18/2021
 ms.custom: template-concept
-ms.openlocfilehash: 4fd0a7cb575a109d1393527b48de3fa4e3446167
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 4c2ace609d67cc48d1b73bdb044e7048ebda21e7
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101663471"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102098338"
 ---
 # <a name="azure-percept-dk-overview"></a>Обзор Azure Percept DK
 
-Azure Перцепт DK — это пограничная пакет разработки для искусственного интеллекта, предназначенный для разработки концепций искусственного интеллекта. В сочетании с [Azure Перцепт Studio](./overview-azure-percept-studio.md)это мощная, но простая в использовании платформа для создания пограничных решений ИСКУССТВЕНного интеллекта для широкого спектра концепций приложений искусственного интеллекта. Его можно приобрести в [Microsoft Online Store](https://go.microsoft.com/fwlink/p/?LinkId=2155270).
+Azure Перцепт DK — это пограничная версия пакета SDK для искусственного интеллекта и IoT, предназначенная для разработки концепций и экспериментов в виде аудиовизуальных данных. В сочетании с [Azure Перцепт Studio](./overview-azure-percept-studio.md) и [Azure перцепт Audio](./overview-azure-percept-audio.md)она стала мощным и простым в использовании платформой для создания пограничных решений искусственного интеллекта для широкого спектра концепций или приложений для работы с аудио AI. Его можно приобрести в [Microsoft Online Store](https://go.microsoft.com/fwlink/p/?LinkId=2155270).
 
-:::image type="content" source="./media/overview-azure-percept-dk/dk-image.png" alt-text="Эскиз.":::
+:::image type="content" source="./media/overview-azure-percept-dk/dk-image.png" alt-text="Устройство Azure Перцепт DK.":::
 
 ## <a name="key-features"></a>Основные возможности
 
 - **Возможность запуска AI на границе**. Встроенное аппаратное ускорение позволяет выполнять модели искусственного интеллекта без подключения к облаку.
 - **Встроенная в аппаратное обеспечение безопасности доверенного корня**. Дополнительные сведения см. в этом обзоре [системы безопасности Azure перцепт](./overview-percept-security.md) .
 - **Простая интеграция с [Azure перцепт Studio](./overview-azure-percept-studio.md)** и другими службами Azure. Например, центр Интернета вещей Azure, Azure Cognitive Services и [аналитика видео в реальном времени](https://docs.microsoft.com/azure/media-services/live-video-analytics-edge/overview)
+- **Простая интеграция с дополнительным [аудио Azure перцепт](./overview-azure-percept-audio.md)**
 - **Поддержка основных платформ искусственного интеллекта**. Например ONNX и TensorFlow.
-- **Интеграция с системой салазок 80/20**. Упрощение создания прототипов в рабочих средах. Дополнительные сведения об [интеграции 8/20](./overview-8020-integration.md).
+- **Интеграция с системой салазок 80/20**. Упрощение создания прототипов в рабочих средах. Дополнительные сведения об [интеграции 80/20](./overview-8020-integration.md).
 
 ## <a name="hardware-components"></a>Компоненты оборудования
 

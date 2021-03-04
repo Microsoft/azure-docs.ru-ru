@@ -38,12 +38,6 @@
           href: tutorial-nocode-vision.md
         - name: Создание и развертывание решения для распознавания речи без написания кода
           href: tutorial-no-code-speech.md
-    - name: Расширенная разработка
-      items:
-        - name: Учебник по расширенной разработке (облако)
-          href: advanced-development-cloud.md
-        - name: Учебник по расширенной разработке (локальное размещение)
-          href: advanced-development-local.md
 - name: Основные понятия
   items:
     - name: Azure Percept Audio.
@@ -106,5 +100,3 @@
           href: azure-percept-vision-datasheet.md
         - name: Спецификации Azure Percept Audio
           href: azure-percept-audio-datasheet.md
-- name: Ресурсы
-  items: null

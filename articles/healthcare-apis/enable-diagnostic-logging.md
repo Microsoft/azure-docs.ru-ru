@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.reviewer: dseven
 ms.author: cavoeg
 author: zxue
-ms.date: 02/24/2021
-ms.openlocfilehash: 73e1db2754749e1fb1142231e7179771bcce8e76
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/03/2021
+ms.openlocfilehash: 8dde5c6206087c8bb1c1f456a0c858abbccf0cc4
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101712782"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102096315"
 ---
 # <a name="enable-diagnostic-logging-in-azure-api-for-fhir"></a>Включение ведения журнала диагностики в Azure API для FHIR
 
@@ -50,7 +50,7 @@ ms.locfileid: "101712782"
 
 
 > [!Note] 
-> Для отображения первых журналов в Log Analytics может потребоваться до 15 минут.  
+> Для отображения первых журналов в Log Analytics может потребоваться до 15 минут. Кроме того, если API Azure для FHIR перемещается из одной группы ресурсов или подписки в другую, обновите параметр после завершения перемещения. 
  
 Дополнительные сведения о работе с журналами диагностики см. в [документации по журналу ресурсов Azure](../azure-monitor/essentials/platform-logs-overview.md) .
 

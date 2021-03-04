@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/18/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 02292d4559697bc38d47811fe392dc86427515b4
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: d684311ef959ac13f3be8bac7ffbbb06a741962a
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101662938"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102097709"
 ---
 # <a name="dev-tools-pack-installer-overview"></a>Обзор установщика пакета средств разработки
 
@@ -84,6 +84,8 @@ ms.locfileid: "101662938"
 
         > [!NOTE]
         > DOCKER поддерживает версию DOCKER Desktop в самых последних версиях macOS. Это значит, что текущий выпуск macOS и два предыдущих выпуска. Так как новые основные версии macOS сделаны общедоступными, Docker прекращает поддерживать самую старую версию и поддерживает последнюю версию macOS (в дополнение к предыдущим двум выпускам). В настоящее время DOCKER Desktop поддерживает macOS Можаве, macOS Catalina и macOS Big Sur.
+        > 
+        - Установщик не поддерживается в Apple M1.
 
 ## <a name="instructions"></a>Instructions
 
@@ -99,7 +101,7 @@ ms.locfileid: "101662938"
     
         1. После загрузки переместите файл Дев-тулс-ПАКК-Инсталлер. app в папку приложения.
         
-        1. Щелкните "Дев-тулс-ПАКК-Инсталлер. App", чтобы открыть мастер установки.
+        1. Щелкните **Дев-тулс-ПАКК-Инсталлер. app** , чтобы открыть мастер установки.
         
         1. Если вы получаете диалоговое окно "неопознанный разработчик", сделайте следующее:
         
@@ -123,7 +125,7 @@ ms.locfileid: "101662938"
                 
             1. Введите следующую команду в терминале, чтобы сделать исполняемый файл AppImage
             
-                1. chmod + x Dev-Tools-Pack-Installer. AppImage
+                1. chmod + x **Dev-Tools-Pack-Installer. AppImage**
                 
             1. Введите следующую команду в терминале, чтобы запустить установщик.
             
@@ -141,11 +143,11 @@ ms.locfileid: "101662938"
 
 1. На странице **Установка установщика пакета средств разработки** щелкните **Просмотреть лицензию** , чтобы просмотреть лицензионные соглашения для каждого пакета программного обеспечения, включенного в установщик. Если вы принимаете условия лицензионного соглашения, установите флажок и нажмите кнопку **Далее**.
 
-    ![Экран лицензионного соглашения в установщике.](https://github.com/microsoft/Project-Santa-Cruz-Private-Preview/blob/main/user-guides/prototyping/article_images/dev_tools_license_agreements.png)
+    :::image type="content" source="./media/dev-tools-installer/dev-tools-license-agreements.png" alt-text="Экран лицензионного соглашения в установщике.":::
 
 1. Щелкните заявление **о конфиденциальности** , чтобы ознакомиться с заявлением о конфиденциальности Майкрософт. Если вы согласны с условиями заявления о конфиденциальности и хотите отправить диагностические данные в корпорацию Майкрософт, выберите **Да** и нажмите кнопку **Далее**. В противном случае выберите **нет** и нажмите кнопку **Далее**.
 
-    ![Экран соглашения о конфиденциальности в установщике.](https://github.com/microsoft/Project-Santa-Cruz-Private-Preview/blob/main/user-guides/prototyping/article_images/dev_tools_privacy_statement.png)
+    :::image type="content" source="./media/dev-tools-installer/dev-tools-privacy-statement.png" alt-text="Экран соглашения о конфиденциальности в установщике.":::
 
 1. На странице **Настройка компонентов** выберите дополнительные средства, которые необходимо установить (обязательные средства будут установлены по умолчанию).
 
@@ -153,11 +155,11 @@ ms.locfileid: "101662938"
 
     1. Нажмите кнопку **установить** , чтобы продолжить установку.
 
-    ![На экране установщика отображаются доступные пакеты программного обеспечения.](https://github.com/microsoft/Project-Santa-Cruz-Private-Preview/blob/main/user-guides/prototyping/article_images/dev_tools_configure_components.png)
+    :::image type="content" source="./media/dev-tools-installer/dev-tools-configure-components.png" alt-text="На экране установщика отображаются доступные пакеты программного обеспечения.":::
 
 1. После успешной установки всех выбранных компонентов мастер переходит на страницу **Завершение работы мастера установки** . Нажмите кнопку **Готово** , чтобы выйти из установщика.
 
-    ![Экран завершения установщика.](https://github.com/microsoft/Project-Santa-Cruz-Private-Preview/blob/main/user-guides/prototyping/article_images/dev_tools_finish.png)
+    :::image type="content" source="./media/dev-tools-installer/dev-tools-finish.png" alt-text="Экран завершения установщика.":::
 
 ## <a name="docker-status-check"></a>Проверка состояния DOCKER
 
@@ -168,12 +170,12 @@ ms.locfileid: "101662938"
       1. Развернуть скрытые значки панели задач:
       
          1. Развернуть скрытые значки панели задач, если они скрыты:
-         
-            * ![Область уведомлений](https://github.com/microsoft/Project-Santa-Cruz-Preview/blob/main/Sample-Scripts-and-Notebooks/Official/Machine%20Learning%20Notebooks/article_images/SystemTray.png)
+
+            :::image type="content" source="./media/dev-tools-installer/system-tray.png" alt-text="Панель задач.":::
          
          1. Убедитесь, что на рабочем столе DOCKER отображается значок "Рабочий стол DOCKER работает":
-         
-            * ![Состояние DOCKER](https://github.com/microsoft/Project-Santa-Cruz-Preview/blob/main/Sample-Scripts-and-Notebooks/Official/Machine%20Learning%20Notebooks/article_images/DockerStatusRunning.png)
+
+            :::image type="content" source="./media/dev-tools-installer/docker-status-running.png" alt-text="Состояние DOCKER.":::
          
          1. Если вы не видите значок выше в области уведомлений, запустите программу DOCKER Desktop из меню "Пуск".
          
@@ -181,4 +183,4 @@ ms.locfileid: "101662938"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Ознакомьтесь с [руководством по расширенной разработке (local)](./advanced-development-local.md), чтобы приступить к работе с расширенной разработкой для Azure перцепт DK.
+Чтобы приступить к работе с расширенной разработкой для Azure Перцепт DK, ознакомьтесь с [репозиторием расширенной разработки Azure перцепт](https://github.com/microsoft/azure-percept-advanced-development) .

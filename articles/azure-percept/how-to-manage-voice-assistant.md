@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/15/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 593d2ccadf814cb5af27a4bb738f28132f39ab7d
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 5e41dea3b47c608b9e82ac57fa1cfe5247ea6cc2
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101663048"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102099018"
 ---
 # <a name="managing-your-voice-assistant"></a>Управление голосовым помощником
 
@@ -28,7 +28,7 @@ ms.locfileid: "101663048"
 
 1. На демонстрационной странице нажмите кнопку **изменить** рядом с полем **настраиваемое ключевое слово** .
 
-    :::image type="content" source="./media/manage-voice-assistant/hospitality-demo.png" alt-text="Эскиз.":::
+    :::image type="content" source="./media/manage-voice-assistant/hospitality-demo.png" alt-text="Снимок экрана демонстрационного окна гостиничного обслуживания.":::
 
     Если демонстрационная страница не открыта, перейдите на страницу устройства (см. ниже) и щелкните **проверить свой помощник** в разделе **действия** , чтобы получить доступ к демонстрации.
 
@@ -40,17 +40,17 @@ ms.locfileid: "101663048"
 
 1. На странице Обзор [Azure Перцепт Studio](https://go.microsoft.com/fwlink/?linkid=2135819)щелкните **устройства** в левой области меню.
 
-    :::image type="content" source="./media/manage-voice-assistant/portal-overview-devices.png" alt-text="Эскиз.":::
+    :::image type="content" source="./media/manage-voice-assistant/portal-overview-devices.png" alt-text="Снимок экрана со страницей обзора Azure Перцепт Studio с выделенными устройствами.":::
 
 1. Выберите устройство, на котором было развернуто приложение для работы с голосовым помощником.
 
 1. Откройте вкладку **речь** .
 
-    :::image type="content" source="./media/manage-voice-assistant/device-page.png" alt-text="Эскиз.":::
+    :::image type="content" source="./media/manage-voice-assistant/device-page.png" alt-text="Снимок экрана со страницей пограничной устройства с выделенной вкладкой &quot;речь&quot;.":::
 
 1. Нажмите кнопку **изменить** рядом с **ключевым словом**.
 
-    :::image type="content" source="./media/manage-voice-assistant/change-keyword-device.png" alt-text="Эскиз.":::
+    :::image type="content" source="./media/manage-voice-assistant/change-keyword-device.png" alt-text="Снимок экрана с доступными действиями в решении распознавания речи.":::
 
 1. Выберите одно из доступных ключевых слов и нажмите кнопку **сохранить** , чтобы применить изменения.
 

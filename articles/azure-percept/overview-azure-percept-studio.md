@@ -7,30 +7,28 @@ ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 02/18/2021
 ms.custom: template-concept
-ms.openlocfilehash: 451f239a0cad22ad61b513161163074b9b47e2d0
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: d850b47078f504b8ccb23d8c0a43811e99dc71d8
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101663582"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102098355"
 ---
 # <a name="azure-percept-studio-overview"></a>Обзор Azure Перцепт Studio
 
 Azure Перцепт Studio — это единственная точка запуска для создания моделей и решений искусственного интеллекта. Azure Перцепт Studio позволяет обнаруживать и выполнять Интерактивные рабочие процессы, которые упрощают интеграцию оборудования с поддержкой искусственного интеллекта и мощных облачных служб Azure ии и Интернета вещей.
 
-## <a name="features"></a>Компоненты
-
 В студии можно просматривать устройства с поддержкой пограничной искусственного интеллекта в качестве конечных точек для сбора начальных и текущих обучающих данных, а также целевые объекты развертывания для итераций модели. Наличие доступа к устройствам и обучающим данным позволяет быстро создавать прототипы и итеративно пограничные модели [](./tutorial-nocode-vision.md) искусственного интеллекта для сценариев с обработкой и [речевым](./tutorial-no-code-speech.md) обучением.
 
-![Поток проекта из домашней страницы в Azure Перцепт Studio.](./media/overview-azure-percept-studio/percept-studio-flow.png)
+:::image type="content" source="./media/overview-azure-percept-studio/percept-studio-flow.png" alt-text="Поток из домашней страницы в Azure Перцепт Studio.":::
 
 Рабочие процессы в Azure Перцепт Studio интегрируют множество базовых служб Azure ии и IoT, таких как центр Интернета вещей Azure, Пользовательское визуальное распознавание, речь Studio и службы машинного обучения Azure, поэтому вы можете использовать эти службы для создания комплексного решения без значительных существующих знаний. Если вы уже знакомы с этими службами Azure, вы также можете подключаться и изменять существующие ресурсы за пределами Azure Перцепт Studio.
 
-![Поток устройства в Azure Перцепт Studio.](./media/overview-azure-percept-studio/device-flow.png)
+:::image type="content" source="./media/overview-azure-percept-studio/device-flow.png" alt-text="Поток устройства в Azure Перцепт Studio.":::
 
 Независимо от того, являетесь ли вы новичком или более опытным разработчиком модели и решения искусственного интеллекта, работаем над прототипом или переходом к рабочему решению для искусственного интеллекта и видения, Azure Перцепт Studio предоставляет доступ к рабочим процессам, которые можно использовать для снижения трения, связанных с созданием пограничных решений искусственного интеллекта.
 
-![Поток захвата образа в Azure Перцепт Studio.](./media/overview-azure-percept-studio/image-flow.png)
+:::image type="content" source="./media/overview-azure-percept-studio/image-flow.png" alt-text="Поток захвата образа в Azure Перцепт Studio.":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

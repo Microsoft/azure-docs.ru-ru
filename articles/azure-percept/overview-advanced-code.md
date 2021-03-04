@@ -7,24 +7,26 @@ ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 02/18/2021
 ms.custom: template-concept
-ms.openlocfilehash: bd366c05be1b9d5b2a1bff238cfbaaa9dd290508
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: f40d9a1285f1eb625a9e33387f2cc9fafcbc3322
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101663191"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102098406"
 ---
 # <a name="advanced-development-with-azure-percept"></a>Расширенная разработка с помощью Azure Percept
 С помощью Azure Перцепт разработчики программного обеспечения и специалисты по обработке и анализу данных могут использовать расширенные рабочие процессы кода для управления жизненным циклом искусственного интеллекта. Благодаря растущей библиотеке с открытым исходным кодом они могут использовать примеры для начала работы с их путешествием к разработке искусственного интеллекта и создания готовых решений.
 
 ## <a name="get-started-with-the-advanced-development-tutorials"></a>Приступая к работе с расширенными учебниками по разработке
 
-Эта [Записная книжка Jupyter](https://github.com/microsoft/Project-Santa-Cruz-Private-Preview/blob/main/Sample-Scripts-and-Notebooks/Official/Machine%20Learning%20Notebooks/Transferlearningusing_SSDLiteV2%20Model.ipynb) выполняет обучение для перемещения, используя предварительно обученную модель TensorFlow (MobileNetSSDV2Lite) в AzureML в Python с помощью пользовательского набора данных для обнаружения Бовлс. Существует два варианта учебника по работе с записной книжкой для обучения и развертывания миску детектора в проекте Санта-Круз DevKit:
+Узнайте о всех доступных [моделях Azure ПЕРЦЕПТ AI](./overview-ai-models.md).
 
-- [Разработка облачных приложений](./advanced-development-cloud.md). в этом руководстве вы запустите записную книжку на [портале машинное обучение Azure](https://ml.azure.com) с удаленным экземпляром вычислений.
+Ознакомьтесь с актуальными руководствами, учебниками и примерами [для следующих](https://github.com/microsoft/azure-percept-advanced-development) целей:
 
-- [Локальная разработка](./advanced-development-local.md). в этом учебнике Записная книжка запустится локально в VS Code с удаленным экземпляром вычислений.
+* Перевод на устройство настраиваемой модели AI
+* Обновление модели, которая уже поддерживается при переносе
+* И многое другое
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Узнайте о всех доступных [моделях Azure ПЕРЦЕПТ AI](./overview-ai-models.md).
+Узнайте о всех доступных [моделях Azure ПЕРЦЕПТ AI](./overview-ai-models.md). Если ни одна из этих моделей не соответствует вашим потребностям, вы можете воспользоваться расширенным путешествием к коду, чтобы перенести собственный конвейер модели или компьютерного зрения в Перцепт DK, и, если вы считаете, что они могли бы помочь другим, открыть запрос на вытягивание.

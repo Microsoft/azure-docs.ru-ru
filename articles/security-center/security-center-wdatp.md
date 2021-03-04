@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2021
 ms.author: memildin
-ms.openlocfilehash: b9095d78d902bf5e44bffaba5db19bf2c26e0845
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a659ea897f013e504668789a7d5671420ff70a9f
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101727011"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102099086"
 ---
 # <a name="protect-your-endpoints-with-security-centers-integrated-edr-solution-microsoft-defender-for-endpoint"></a>Защитите свои конечные точки с помощью интегрированного решения ЕДР центра безопасности: защитник Майкрософт для конечной точки
 
@@ -41,7 +41,7 @@ ms.locfileid: "101727011"
 | Аспект                          | Сведения                                                                                                                                                                                                                                                                                                       |
 |---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Состояние выпуска:                  | Общедоступная версия (GA)                                                                                                                                                                                                                                                                                      |
-| Цены                        | Требуется [Azure Defender для серверов](security-center-pricing.md)                                                                                                                                                                                                                                             |
+| Цены                        | Требуется [Azure Defender для серверов](defender-for-servers-introduction.md)                                                                                                                                                                                                                                             |
 | Поддерживаемые платформы:            |  • Компьютеры Azure под Windows<br> • Компьютеры ARC в Azure под Windows|
 | Поддерживаемые версии Windows:  |   • **Общая доступность (общедоступная версия) —** обнаружение в Windows Server 2016, 2012 r2 и 2008 R2 с пакетом обновления 1 (SP1)<br> • Обнаружение для **предварительного просмотра** в windows Server 2019, [Windows Virtual Desktop (ВВД)](../virtual-desktop/overview.md)и [Windows 10 Корпоративная](../virtual-desktop/windows-10-multisession-faq.md) (ранее Enterprise для виртуальных рабочих столов (ЕВД)<br>Мониторинг конечных точек сервера с помощью этих интеграций отключен для клиентов Office 365 GCC|
 | Неподдерживаемые операционные системы:  |  • Windows 10 (кроме ЕВД или ВВД)<br> • Linux|
@@ -83,8 +83,7 @@ ms.locfileid: "101727011"
         - Если вы развертываете защитник для конечной точки на локальных компьютерах, подключите его к службе "Дуга" Azure, как описано в разделах [подключение гибридных компьютеров к серверам с поддержкой Arc Azure](../azure-arc/servers/learn/quick-enable-hybrid-vm.md) .
     - Кроме того, для **компьютеров под Windows Server 2019** убедитесь, что они используют допустимый агент и имеют расширение расширение microsoftmonitoringagent.
 
-1. Включите **защитник Azure для серверов**. См. сведения [о ценах на центр безопасности Azure](security-center-pricing.md#enable-azure-defender).
-
+1. Включите **защитник Azure для серверов**. См. раздел [Краткое руководство. Включение защитника Azure](enable-azure-defender.md).
 
 1. Если вы уже лицензированы и развернули защитник Майкрософт для конечных точек на серверах, удалите его, выполнив процедуру, описанную в разделе [Отключение Windows Servers](/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#offboard-windows-servers).
 1. В главном меню Центра безопасности выберите **Цены и параметры**.

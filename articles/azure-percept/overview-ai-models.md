@@ -1,5 +1,5 @@
 ---
-title: Модели Azure Перцепт AI
+title: Модели Azure Percept AI
 description: Дополнительные сведения о моделях AI, доступных для создания прототипов и развертывания
 author: elqu20
 ms.author: v-elqu
@@ -7,14 +7,14 @@ ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 02/16/2021
 ms.custom: template-concept
-ms.openlocfilehash: 28a8de231f179cf69342da81e6a2ae1989d2a5d6
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 8a9ed564012e8b530436152d931f5a5f6470ff98
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102041592"
+ms.locfileid: "102098372"
 ---
-# <a name="azure-percept-ai-models"></a>Модели Azure Перцепт AI
+# <a name="azure-percept-ai-models"></a>Модели Azure Percept AI
 
 Azure Перцепт позволяет разрабатывать и развертывать модели искусственного интеллекта непосредственно в Azure Перцепт DK из [Azure Перцепт Studio](https://go.microsoft.com/fwlink/?linkid=2135819). В развертывании моделей используется [центр Интернета вещей Azure](https://azure.microsoft.com/services/iot-hub/) и [Azure IOT Edge](https://azure.microsoft.com/services/iot-edge/#iotedge-overview).
 
@@ -52,6 +52,8 @@ Azure Перцепт Studio содержит образцы моделей дл�
 
 ## <a name="advanced-development"></a>Расширенная разработка
 
-Для опытных разработчиков доступная [Записная книжка Jupyter](https://github.com/microsoft/Project-Santa-Cruz-Preview/blob/main/Sample-Scripts-and-Notebooks/Official/Machine%20Learning%20Notebooks/Transferlearningusing_SSDLiteV2%20Model.ipynb) выполняет обучение с помощью предварительно обученной модели TensorFlow (MobileNetSSDV2Lite) в Python с пользовательским набором данных для обнаружения объектов. Записная книжка использует удаленные экземпляры вычислений с помощью [машинное обучение Azure](https://azure.microsoft.com/services/machine-learning/#product-overview) и может выполняться в облаке с помощью портала AzureML или локально в [Visual Studio Code](https://code.visualstudio.com/).
+Ознакомьтесь с актуальными руководствами, учебниками и примерами [для следующих](https://github.com/microsoft/azure-percept-advanced-development) целей:
 
-Также включены некоторые полезные [скрипты](https://github.com/microsoft/Project-Santa-Cruz-Preview/tree/main/Sample-Scripts-and-Notebooks/Official/Scripts) Python для управления наборами данных и [установщик пакета средств разработки](https://github.com/microsoft/Project-Santa-Cruz-Preview/blob/main/Sample-Scripts-and-Notebooks/Official/Machine%20Learning%20Notebooks/dev-tools-installer.md), который устанавливает и настраивает все средства, необходимые для разработки расширенного решения искусственного интеллекта.
+* Перевод на устройство настраиваемой модели AI
+* Обновление модели, которая уже поддерживается при переносе
+* И многое другое

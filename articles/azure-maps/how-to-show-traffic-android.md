@@ -3,17 +3,18 @@ title: Отображение данных трафика в картах Androi
 description: Из этой статьи вы узнаете, как отображать данные трафика на карте с помощью Microsoft Azure карт пакет SDK для Android.
 author: rbrundritt
 ms.author: richbrun
-ms.date: 12/04/2020
+ms.date: 2/26/2021
 ms.topic: how-to
 ms.service: azure-maps
 services: azure-maps
 manager: cpendle
-ms.openlocfilehash: 113f39ac2976b870c9e07851cdd0919e2578940f
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+zone_pivot_groups: azure-maps-android
+ms.openlocfilehash: 36b3666f12b48468467e76f4c281d58d8018478c
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97680464"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102098542"
 ---
 # <a name="show-traffic-data-on-the-map-android-sdk"></a>Отображение данных трафика на карте (пакет SDK для Android)
 
@@ -39,6 +40,8 @@ ms.locfileid: "97680464"
 
 Ниже приведен код для отображения данных дорожного движения на карте.
 
+::: zone pivot="programming-language-java-android"
+
 ```java
 //Show traffic on the map using the traffic options.
 map.setTraffic(
@@ -47,6 +50,19 @@ map.setTraffic(
 );
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+map.setTraffic(
+    incidents(true),
+    flow(TrafficFlow.RELATIVE)
+)
+```
+
+::: zone-end
+
 На следующем снимке экрана показан приведенный выше код, отрисовки сведения о трафике в режиме реального времени на карте.
 
 ![Схема отображения сведений о трафике в реальном времени](media/how-to-show-traffic-android/android-show-traffic.png)
@@ -54,6 +70,8 @@ map.setTraffic(
 ## <a name="get-traffic-incident-details"></a>Получение сведений об инциденте трафика
 
 Сведения об инциденте трафика доступны в свойствах функции, используемой для отображения инцидента на карте. Инциденты трафика добавляются к сопоставлению с помощью службы плиток "вектор инцидента трафика Azure Maps". Формат данных в этих векторных плитках, если они [описаны здесь](https://developer.tomtom.com/traffic-api/traffic-api-documentation-traffic-incidents/vector-incident-tiles). Следующий код добавляет событие щелчка на карту и извлекает выбранную функцию инцидента трафика и отображает всплывающее сообщение с некоторыми сведениями.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Show traffic information on the map.
@@ -108,11 +126,64 @@ map.events.add((OnFeatureClick) (features) -> {
 });
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Show traffic information on the map.
+map.setTraffic(
+    incidents(true),
+    flow(TrafficFlow.RELATIVE)
+)
+
+//Add a click event to the map.
+map.events.add(OnFeatureClick { features: List<Feature>? ->
+    if (features != null && features.size > 0) {
+        val incident = features[0]
+
+        //Ensure that the clicked feature is an traffic incident feature.
+        if (incident.properties() != null && incident.hasProperty("incidentType")) {
+            val sb = StringBuilder()
+            val incidentType = incident.getStringProperty("incidentType")
+
+            if (incidentType != null) {
+                sb.append(incidentType)
+            }
+
+            if (sb.length > 0) {
+                sb.append("\n")
+            }
+
+            //If the road is closed, find out where it is closed from.
+            if ("Road Closed" == incidentType) {
+                val from = incident.getStringProperty("from")
+                if (from != null) {
+                    sb.append(from)
+                }
+            } else { //Get the description of the traffic incident.
+                val description = incident.getStringProperty("description")
+                if (description != null) {
+                    sb.append(description)
+                }
+            }
+
+            val message = sb.toString()
+            if (message.length > 0) {
+                Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+})
+```
+
+::: zone-end
+
 На следующем снимке экрана показан приведенный выше код, отрисовки сведения о трафике в режиме реального времени на карте с всплывающим сообщением, отображающим сведения об инциденте.
 
 ![Отображение сведений о трафике в реальном времени с помощью всплывающего сообщения с информацией об инциденте](media/how-to-show-traffic-android/android-traffic-details.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы узнать, как добавить дополнительные данные на карту, ознакомьтесь со следующими руководствами.
 

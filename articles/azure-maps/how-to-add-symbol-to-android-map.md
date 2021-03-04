@@ -3,17 +3,18 @@ title: Добавление слоя символов в карты Android | К
 description: Узнайте, как добавить маркер к карте. См. пример, использующий Azure Maps пакет SDK для Android для добавления слоя символов, который содержит данные на основе точек из источника данных.
 author: rbrundritt
 ms.author: richbrun
-ms.date: 12/08/2020
+ms.date: 2/26/2021
 ms.topic: conceptual
 ms.service: azure-maps
 services: azure-maps
 manager: cpendle
-ms.openlocfilehash: 1706b60a61bd3b507d9fbcf555e478b388f51168
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+zone_pivot_groups: azure-maps-android
+ms.openlocfilehash: edb758469a06dcb7914025ea449b9d952e939533
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102047576"
+ms.locfileid: "102097216"
 ---
 # <a name="add-a-symbol-layer-android-sdk"></a>Добавление слоя символов (пакет SDK для Android)
 
@@ -32,6 +33,8 @@ ms.locfileid: "102047576"
 
 В приведенном ниже коде показано, что следует добавить к карте после ее загрузки. Этот пример отображает единую точку на карте с помощью слоя символов.
 
+::: zone pivot="programming-language-java-android"
+
 ```java
 //Create a data source and add it to the map.
 DataSource source = new DataSource();
@@ -47,6 +50,27 @@ SymbolLayer layer = new SymbolLayer(source);
 map.layers.add(layer);
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Create a data source and add it to the map.
+val source = DataSource()
+map.sources.add(source)
+
+//Create a point and add it to the data source.
+source.add(Point.fromLngLat(0, 0))
+
+//Create a symbol layer to render icons and/or text at points on the map.
+val layer = SymbolLayer(source)
+
+//Add the layer to the map.
+map.layers.add(layer)
+```
+
+::: zone-end
+
 Существует три различных типа данных точек, которые можно добавить на карту:
 
 - Геометрическая точка в формате JSON. Этот объект содержит только координаты точки и ничего другого. `Point.fromLngLat`Статический метод можно использовать для простого создания этих объектов.
@@ -56,6 +80,8 @@ map.layers.add(layer);
 Дополнительные сведения см. в документе [Создание источника данных](create-data-source-android-sdk.md) для создания и добавления данных на карту.
 
 В следующем примере кода создается геометрическая точка в формате JSON, которая передается в функцию геоjson и имеет `title` значение, добавленное к его свойствам. `title`Свойство отображается как текст над значком символа на карте.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Create a data source and add it to the map.
@@ -81,6 +107,36 @@ SymbolLayer layer = new SymbolLayer(source,
 map.layers.add(layer);
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Create a data source and add it to the map.
+val source = DataSource()
+map.sources.add(source)
+
+//Create a point feature.
+val feature = Feature.fromGeometry(Point.fromLngLat(0, 0))
+
+//Add a property to the feature.
+feature.addStringProperty("title", "Hello World!")
+
+//Add the feature to the data source.
+source.add(feature)
+
+//Create a symbol layer to render icons and/or text at points on the map.
+val layer = SymbolLayer(
+    source,  //Get the title property of the feature and display it on the map.
+    textField(get("title"))
+)
+
+//Add the layer to the map.
+map.layers.add(layer)
+```
+
+::: zone-end
+
 На следующем снимке экрана показан приведенный выше код, отрисовки компонент с помощью значка и текстовой метки с уровнем символов.
 
 ![Сопоставьте с точкой, отображаемой с помощью слоя символов, отображающего значок и текстовую метку для функции точки](media/how-to-add-symbol-to-android-map/android-map-pin.png)
@@ -91,6 +147,8 @@ map.layers.add(layer);
 ## <a name="add-a-custom-icon-to-a-symbol-layer"></a>Добавление пользовательского значка в слой символов
 
 Слои символов преобразовываются для просмотра с помощью WebGL. Таким образом, все ресурсы (например, образы значков) необходимо загрузить в контекст WebGL. В этом примере показано, как добавить пользовательский значок в ресурсы Map. Этот значок используется для отрисовки данных точек с помощью пользовательского символа на карте. Свойство `textField` слоя символа требует указания выражения. В этом случае нам нужно отобразить свойство температуры. Так как температура является числом, ее необходимо преобразовать в строку. Кроме того, мы хотим добавить к нему «° F». Для этого объединения можно использовать выражение. `concat(Expression.toString(get("temperature")), literal("°F"))`.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 //Load a custom icon image into the image sprite of the map.
@@ -120,6 +178,39 @@ SymbolLayer layer = new SymbolLayer(source,
 );
 ```
 
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+//Load a custom icon image into the image sprite of the map.
+map.images.add("my-custom-icon", R.drawable.showers)
+
+//Create a data source and add it to the map.
+val source = DataSource()
+map.sources.add(source)
+
+//Create a point feature.
+val feature = Feature.fromGeometry(Point.fromLngLat(-73.985708, 40.75773))
+
+//Add a property to the feature.
+feature.addNumberProperty("temperature", 64)
+
+//Add the feature to the data source.
+source.add(feature)
+
+//Create a symbol layer to render icons and/or text at points on the map.
+val layer = SymbolLayer(
+    source,
+    iconImage("my-custom-icon"),
+    iconSize(0.5f),  //Get the title property of the feature and display it on the map.
+    textField(concat(Expression.toString(get("temperature")), literal("°F"))),
+    textOffset(arrayOf(0f, -1.5f))
+)
+```
+
+::: zone-end
+
 В этом примере приведенное ниже изображение было загружено в папку для рисования приложения.
 
 | ![Изображение значка погоды для дождя ливни](media/how-to-add-symbol-to-android-map/showers.png)|
@@ -135,13 +226,27 @@ SymbolLayer layer = new SymbolLayer(source,
 
 ## <a name="modify-symbol-colors"></a>Изменение цветов символов
 
-Azure Maps пакет SDK для Android поставляется с набором стандартных вариантов цвета значка маркера по умолчанию. Например, `marker-red` можно передать в `iconImage` параметр слоя символов, чтобы отобразить красную версию значка маркера в этом слое. 
+Azure Maps пакет SDK для Android поставляется с набором стандартных вариантов цвета значка маркера по умолчанию. Например, `marker-red` можно передать в `iconImage` параметр слоя символов, чтобы отобразить красную версию значка маркера в этом слое.
+
+::: zone pivot="programming-language-java-android"
 
 ```java
 SymbolLayer layer = new SymbolLayer(source,
     iconImage("marker-red")
 );
 ```
+
+::: zone-end
+
+::: zone pivot="programming-language-kotlin"
+
+```kotlin
+val layer = SymbolLayer(source,
+    iconImage("marker-red")
+)
+```
+
+::: zone-end
 
 В приведенной ниже таблице перечислены все доступные имена встроенных изображений значков. Все эти маркеры извлекают цвета из цветовых ресурсов, которые можно переопределить. Кроме переопределения основного цвета заливки этого маркера. Однако обратите внимание, что переопределение цвета одного из этих маркеров будет применено ко всем слоям, использующим изображение этого значка.
 

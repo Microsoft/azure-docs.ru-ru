@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/14/2020
 ms.author: cynthn
 ms.reviewer: jagaveer
-ms.openlocfilehash: 42f2078e9781e50712344778a33ce8735b4ce11b
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 879a3e9b3d3f651a1dea17e76dba503cd2816b9e
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101677338"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102098576"
 ---
 # <a name="deploy-azure-spot-virtual-machines-using-the-azure-portal"></a>Развертывание виртуальных машин с использованием точки Azure с помощью портал Azure
 
@@ -59,9 +59,11 @@ ms.locfileid: "101677338"
 - `vmName`
 
 
-```http
+```rest
 POST https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}/simulateEviction?api-version=2020-06-01
 ```
+
+`Response Code: 204` означает, что имитация вытеснения прошла успешно. 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

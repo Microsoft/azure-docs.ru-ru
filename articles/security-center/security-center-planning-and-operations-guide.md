@@ -8,12 +8,12 @@ ms.service: security-center
 ms.topic: tutorial
 ms.date: 09/10/2019
 ms.author: memildin
-ms.openlocfilehash: 0868c99a29b8da4376b639a54988fc821433e26d
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: a8b285ca0b8d0dae88bfe8dd19ac7e1bc8372e32
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100576977"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102099205"
 ---
 # <a name="planning-and-operations-guide"></a>Руководство по планированию и эксплуатации
 Это руководство предназначено для ИТ-специалистов, ИТ-архитекторов, аналитиков в сфере информационной безопасности и администраторов облака, которые планируют использовать Центр безопасности Azure.
@@ -232,7 +232,6 @@ ms.locfileid: "100576977"
 В этом документе описывается, как спланировать переход к использованию центра безопасности. Дополнительные сведения о Центре безопасности см. в следующих статьях:
 
 * [Управление оповещениями безопасности в Центре безопасности Azure и реагирование на них](security-center-managing-and-responding-alerts.md)
-* [Наблюдение за работоспособностью системы безопасности в Центре безопасности Azure](security-center-monitoring.md) — узнайте, как отслеживать работоспособность ресурсов Azure.
 * [Мониторинг решений партнеров с помощью центра безопасности Azure](./security-center-partner-integration.md) — узнайте, как отслеживать состояние работоспособности решений партнеров.
 * [Центр безопасности Azure: часто задаваемые вопросы](faq-general.md) — часто задаваемые вопросы об использовании этой службы.
 * [Блог по безопасности Azure](/archive/blogs/azuresecurity/) — публикации блога, посвященные безопасности и соответствию требованиям в Azure.

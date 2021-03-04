@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/03/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 8d150228be2cf6deff3bc2fd0a0599cca70d24ac
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 8dda18271de9b7d65246f0882ee7a68191031c05
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101663018"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102096621"
 ---
 # <a name="connect-to-your-azure-percept-dk-over-ssh"></a>Подключение к Azure Перцепт DK по протоколу SSH
 
@@ -24,7 +24,8 @@ ms.locfileid: "101663018"
 - SSH-клиент
     - Если главный компьютер работает под управлением Windows, то введенный клиент [SSH является эффективным](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) и будет использоваться в рамках этого руководством.
     - Если главный компьютер работает под управлением Linux или OS X, службы SSH включены в эти операционные системы и могут выполняться без отдельного клиентского приложения. Дополнительные сведения о том, как запускать службы SSH, см. в документации по продукту операционной системы.
-- Azure Перцепт DK
+- Azure Percept DK
+- Настройка учетной записи входа SSH во время [работы с подключением Azure ПЕРЦЕПТ DK](./quickstart-percept-dk-set-up.md)
 
 ## <a name="initiate-the-ssh-connection"></a>Инициация SSH-подключения
 
@@ -48,15 +49,8 @@ ms.locfileid: "101663018"
 
     :::image type="content" source="./media/how-to-ssh-into-percept-dk/ssh-putty.png" alt-text="Эскиз.":::
 
-1. Войдите в терминал вывода. Если вы настроили имя пользователя и пароль SSH во время OOBE, введите эти учетные данные при появлении запроса. В противном случае введите следующее:  
-
-    1. имя для входа: root
-    1. Пароль: p@ssw0rd
-
-    :::image type="content" source="./media/how-to-ssh-into-percept-dk/putty-terminal.png" alt-text="Выводимое окно терминала.":::  
+1. Войдите в терминал вывода с именем пользователя и паролем SSH, созданными во время встроенной работы.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 После успешного подключения к Azure Перцепт DK через SSH вы можете выполнять различные задачи, включая устранение неполадок, обновление USB и запуск средства Диагтул или Софтап.
-
-

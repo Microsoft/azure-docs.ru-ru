@@ -1,17 +1,17 @@
 ---
 title: Репликация данных через ExpressRoute с миграцией Azure миграция сервера
 description: Использование Azure ExpressRoute для репликации с миграцией Azure миграция сервера
-author: ms-deseelam
+author: DeSeelam
 ms.author: deseelam
 ms.manager: bsiva
 ms.topic: how-to
 ms.date: 02/22/2021
-ms.openlocfilehash: fe44ff423240cbe24d91cef0c0f4bb803ad8df98
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b52d61c2828ddf5c04ab943d73964d236c9017c1
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101746551"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102098848"
 ---
 # <a name="replicate-data-over-expressroute-with-azure-migrate-server-migration"></a>Репликация данных через ExpressRoute с помощью службы "миграция Azure": миграция сервера
 
