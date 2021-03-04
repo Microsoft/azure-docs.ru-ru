@@ -158,6 +158,8 @@
       href: howto-authentication-temporary-access-pass.md
     - name: Использование проверки подлинности на основе SMS
       href: howto-authentication-sms-signin.md
+    - name: Отсутствие поддержки двусторонних SMS
+      href: how-to-authentication-two-way-sms-unsupported.md
     - name: Вход с использованием адреса электронной почты
       href: howto-authentication-use-email-signin.md
     - name: Смарт-блокировка Azure AD
@@ -173,7 +175,7 @@
               href: active-directory-certificate-based-authentication-ios.md
     - name: Отчеты
       items:
-        - name: Потребление и аналитические сведения
+        - name: Действия способов аутентификации
           href: howto-authentication-methods-usage-insights.md
         - name: Отчеты SSPR
           href: howto-sspr-reporting.md

@@ -6,12 +6,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 09/20/2019
-ms.openlocfilehash: ed9690a750ad6e1167ba0a0ae4a87b603c4a1f15
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a889275782388781eadffb7cf0a24771bf6e9e4f
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101717406"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102030840"
 ---
 # <a name="designing-your-azure-monitor-logs-deployment"></a>Проектирование развертывания журналов Azure Monitor
 
@@ -87,9 +87,9 @@ Azure Monitor хранит данные [журнала](data-platform-logs.md) 
 
     > [!NOTE]
     > Журналы доступны для запросов контекста ресурсов, только если они должным образом связаны с соответствующим ресурсом. В настоящее время следующие ресурсы имеют ограничения.
-    > - Компьютеры за пределами Azure
+    > - Компьютеры за пределами Azure — поддерживаются только для контекста ресурсов через [дугу Azure для серверов](../../azure-arc/servers/index.yml) .
     > - Service Fabric
-    > - Application Insights
+    > - Application Insights — поддерживается для контекста ресурса только при использовании [ресурса Application Insights на основе рабочей области](../app/create-workspace-resource.md) .
     >
     > Вы можете проверить, правильно ли связаны журналы с их ресурсами, выполнив запрос и проверив интересующие вас записи. Если правильный идентификатор ресурса находится в свойстве [_ResourceId](./log-standard-columns.md#_resourceid) , данные доступны для запросов, ориентированных на ресурсы.
 

@@ -4,15 +4,14 @@ description: Используйте Azure Monitor для выполнения м
 author: osalzberg
 ms.author: bwren
 ms.reviewer: bwren
-ms.subservice: logs
 ms.topic: conceptual
 ms.date: 12/02/2020
-ms.openlocfilehash: 8bc47eb2a6a22224f4df186136da2c184979ea24
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 1857f0e39cd5d9ddc616eed1db18cd58b98721a4
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100624351"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102031129"
 ---
 # <a name="cross-resource-query-azure-data-explorer-by-using-azure-monitor"></a>Запрос перекрестных ресурсов Azure обозреватель данных с помощью Azure Monitor
 Azure Monitor поддерживает запросы между службами между обозреватель данныхами Azure, [Application Insights](../app/app-insights-overview.md)и [log Analytics](../logs/data-platform-logs.md). Затем можно выполнить запрос к кластеру Azure обозреватель данных с помощью средств Log Analytics/Application Insights и обратиться к нему в запросах между службами. В этой статье показано, как выполнить запрос между службами.

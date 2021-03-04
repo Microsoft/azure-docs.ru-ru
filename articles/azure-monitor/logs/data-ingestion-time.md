@@ -1,17 +1,16 @@
 ---
 title: Время приема данных журнала в Azure Monitor | Документация Майкрософт
 description: Описание различных факторов, которые влияют на задержку при сборе данных журнала в Azure Monitor.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 07/18/2019
-ms.openlocfilehash: 501e395cf91630789824cc111614e7150dddaa7c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6037ef9c539c3c57f2ba5a19f371237159d1bf69
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101700615"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102030891"
 ---
 # <a name="log-data-ingestion-time-in-azure-monitor"></a>Время приема данных журнала в Azure Monitor
 Azure Monitor — это высокомасштабируемая служба, которая обслуживает тысячи клиентов, ежемесячно отправляющих стремительными темпами терабайты данных. Часто возникают вопросы о времени, в течение которого собранные данные журнала становятся доступными. В этой статье объясняются факторы, влияющие на эту задержку.

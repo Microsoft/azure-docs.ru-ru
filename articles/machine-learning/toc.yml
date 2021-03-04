@@ -321,11 +321,14 @@
             - name: Создание наборов данных с метками
               displayName: 'data, labels, torchvision'
               href: how-to-use-labeled-dataset.md
-        - name: Получение данных
+        - name: Получение и подготовка данных
           items:
             - name: Прием данных с помощью Фабрики данных Azure
               displayName: 'data, ingestion, adf'
               href: how-to-data-ingest-adf.md
+            - name: Подготовка данных с помощью Azure Synapse
+              displayName: 'data, data prep, spark, spark pool, cluster, spark cluster,dataset, datastore'
+              href: how-to-data-prep-synapse-spark-pool.md
             - name: DevOps для приема данных
               displayName: 'data, ingestion, devops'
               href: how-to-cicd-data-ingestion.md
@@ -337,6 +340,9 @@
             - name: Подключение к службе хранилища Azure (Python)
               displayName: 'blob, get, fileshare, access, mount, download, data lake, datastore'
               href: how-to-access-data.md
+            - name: Доступ к данным на основе удостоверений в хранилище
+              displayName: 'blob, access, data lake, datastore, managed identity'
+              href: how-to-identity-based-data-access.md
             - name: Получение данных из хранилища данных (Python)
               displayName: 'data, data set, register, access data'
               href: how-to-create-register-datasets.md
@@ -385,8 +391,8 @@
             - name: Включение журналов
               displayName: 'troubleshoot, log, files, tracing'
               href: how-to-track-experiments.md
-            - name: Просмотр журналов
-              displayName: 'troubleshoot, log, files, tracing'
+            - name: Просмотр журналов и метрик для запусков
+              displayName: 'troubleshoot, log, files, tracing, metrics'
               href: how-to-monitor-view-training-logs.md
             - name: Визуализация выполняется с помощью TensorBoard
               displayName: 'log, monitor, metrics'
@@ -531,6 +537,8 @@
           href: how-to-move-data-in-out-of-pipelines.md
         - name: Развертывание конвейеров ML (Python)
           href: how-to-deploy-pipelines.md
+        - name: Использование пулов Spark Azure Synapse Apache в конвейере машинного обучения (Python)
+          href: how-to-use-synapsesparkstep.md
         - name: Активация конвейера
           href: how-to-trigger-published-pipeline.md
         - name: Конструктор (перетаскивание)

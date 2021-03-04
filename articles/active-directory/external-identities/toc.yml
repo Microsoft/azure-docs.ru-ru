@@ -41,7 +41,7 @@
           href: b2b-fundamentals.md
         - name: "Доступ внешних пользователей к B2B и Office\_365"
           href: o365-external-user.md
-        - name: Активация приглашения
+        - name: Активация приглашения и вход
           href: redemption-experience.md
         - name: Сообщение электронной почты с приглашением
           href: invitation-email-elements.md
@@ -57,9 +57,9 @@
           href: hybrid-organizations.md
         - name: Поставщики удостоверений для внешних удостоверений
           href: identity-providers.md
-        - name: Потоки для самостоятельной регистрации пользователей (предварительная версия)
+        - name: Потоки для самостоятельной регистрации пользователей
           href: self-service-sign-up-overview.md
-        - name: Соединители API для самостоятельной регистрации (предварительная версия)
+        - name: Соединители API для самостоятельной регистрации
           href: api-connectors-overview.md
         - name: "Управление правами Azure\_AD"
           href: self-service-portal.md
@@ -68,23 +68,25 @@
     - name: Практические руководства
       expanded: true
       items:
-        - name: Настройка параметров внешнего взаимодействия
-          href: delegate-invitations.md
+        - name: Настройка службы "Совместная работа B2B"
+          items:
+            - name: Настройка параметров внешнего взаимодействия
+              href: delegate-invitations.md
+            - name: Разрешения для доменов и их блокировка
+              href: allow-deny-list.md
         - name: Приглашение гостевых пользователей
           items:
-            - name: Добавление B2B-пользователей администраторами
+            - name: Добавление и приглашение гостевых пользователей (для администраторов)
               href: add-users-administrator.md
-            - name: Добавление B2B-пользователей информационными работниками
+            - name: Приглашение гостевых пользователей в приложение (для владельцев приложений)
               href: add-users-information-worker.md
             - name: Приглашение внутренних пользователей в B2B
               href: invite-internal-users.md
-            - name: Предоставление или отзыв приглашений
-              href: allow-deny-list.md
             - name: Добавление пользователей B2B без приглашения
               href: add-user-without-invite.md
-            - name: API приглашения и настройка
+            - name: Настройка приглашений с помощью API
               href: customize-invitation-api.md
-        - name: Федерация с поставщиками удостоверений
+        - name: Федерация со внешними поставщиками удостоверений
           items:
             - name: Федерация Google
               href: google-federation.md
@@ -94,9 +96,9 @@
               href: direct-federation.md
             - name: "Пример прямой федерации с AD\_FS"
               href: direct-federation-adfs.md
-        - name: Аутентификация с использованием одноразового секретного кода
+        - name: Включение одноразовых секретных кодов (OTP)
           href: one-time-passcode.md
-        - name: Самостоятельная регистрация гостевых пользователей (предварительная версия)
+        - name: Добавление самостоятельной регистрации гостевых пользователей
           items:
             - name: Добавление потока для самостоятельной регистрации пользователей
               href: self-service-sign-up-user-flow.md

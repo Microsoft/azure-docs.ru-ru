@@ -1,0 +1,94 @@
+- name: Документация по обновлению устройств для Центра Интернета вещей
+  href: index.yml
+- name: Обзор
+  items:
+    - name: Что такое обновление устройств для Центра Интернета вещей?
+      href: understand-device-update.md
+- name: Учебники
+  items:
+    - name: Обновление образа на Raspberry Pi
+      href: device-update-raspberry-pi.md
+    - name: Обновление устройства в симуляторе
+      href: device-update-simulator.md
+    - name: Обновление пакета на Ubuntu Server 18.04 x64
+      href: device-update-ubuntu-agent.md
+- name: Основные понятия
+  items:
+    - name: Учетная запись обновления устройства и экземпляр
+      href: device-update-resources.md
+    - name: Роли пользователей и доступы при обновлении устройства
+      href: device-update-control-access.md
+    - name: Манифест APT обновления устройства
+      href: device-update-apt-manifest.md
+    - name: Соответствие обновления устройств требованиям
+      href: device-update-compliance.md
+    - name: Группы обновления устройств
+      href: device-update-groups.md
+    - name: Использование технологии Plug and Play при обновлении устройств
+      href: device-update-plug-and-play.md
+    - name: Требования к сети для обновления устройств
+      href: device-update-networking.md
+    - name: Агент обновления устройств
+      href: device-update-agent-overview.md
+    - name: Файл конфигурации обновления устройства
+      href: device-update-configuration-file.md
+    - name: Манифест обновления устройств
+      href: update-manifest.md
+    - name: Безопасность обновления устройства
+      href: device-update-security.md
+    - name: Поддержка устройств без подключения к сети
+      href: connected-cache-disconnected-device-update.md
+    - name: Настройка подключенного кэша Майкрософт для обновления устройств для центра Интернета вещей
+      href: connected-cache-configure.md
+- name: Практические руководства
+  items:
+    - name: Создание учетной записи обновления устройств
+      href: create-device-update-account.md
+    - name: Подготовка агента обновления устройства
+      href: device-update-agent-provisioning.md
+    - name: Импорт обновления
+      href: import-update.md
+    - name: Создание группы обновления устройств
+      href: create-update-group.md
+    - name: Развертывание обновления устройства
+      href: deploy-update.md
+    - name: Развертывание обновления устройства
+      href: deploy-update.md
+    - name: Подключенный кэш Майкрософт с одним уровнем
+      href: connected-cache-single-level.md
+    - name: Подключенный кэш Майкрософт со вложенными уровнями
+      href: connected-cache-nested-level.md
+    - name: Подключенный кэш Майкрософт для промышленного Интернета вещей (IIOT)
+      href: connected-cache-industrial-iot-nested.md
+    - name: Диагностика
+      items:
+        - name: Устранение неполадок с обновлениями устройств
+          href: troubleshoot-device-update.md
+- name: Справочник
+  items:
+    - name: Коды ошибок клиента обновления устройств
+      href: device-update-error-codes.md
+- name: Ресурсы
+  items:
+    - name: Возможности получения поддержки и справки
+      href: ../iot-fundamentals/iot-support-help.md
+    - name: Службы Azure IoT
+      items:
+        - name: Центр Интернета вещей
+          href: ./index.yml
+        - name: Служба подготовки устройств к добавлению в Центр Интернета вещей
+          href: ../iot-dps/index.yml
+        - name: IoT Central
+          href: /microsoft-iot-central/
+        - name: IoT Edge
+          href: ../iot-edge/index.yml
+        - name: Акселераторы решений для Интернета вещей
+          href: ../iot-accelerators/index.yml
+        - name: IoT Plug and Play
+          href: ../iot-pnp/index.yml
+        - name: Azure Maps
+          href: ../azure-maps/index.yml
+        - name: Аналитика временных рядов
+          href: ../time-series-insights/index.yml
+    - name: Оптимизация доставки
+      href: 'https://github.com/microsoft/do-client'

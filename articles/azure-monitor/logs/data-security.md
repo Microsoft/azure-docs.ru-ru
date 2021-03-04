@@ -1,17 +1,16 @@
 ---
 title: Защита данных Log Analytics | Документация Майкрософт
 description: Узнайте, как Log Analytics сохраняет вашу конфиденциальность и защищает данные.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 11/11/2020
-ms.openlocfilehash: 128a82fdc9b5a37258b5ca245a63bf52c050db26
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 8f193cface177e6be6343f28ef4dc27c2d6c6a7b
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101713615"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102030908"
 ---
 # <a name="log-analytics-data-security"></a>Защита данных Log Analytics
 В этом документе описываются функции Azure Log Analytics, компонента службы Azure Monitor, для дополнения информации о [центре управления безопасностью Azure](https://www.microsoft.com/en-us/trust-center?rtc=1).  

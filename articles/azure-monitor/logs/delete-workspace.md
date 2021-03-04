@@ -1,17 +1,16 @@
 ---
 title: Удаление и восстановление рабочей области Azure Log Analytics | Документация Майкрософт
 description: Узнайте, как удалить рабочую область Log Analytics, если она была создана в личной подписке, или как изменить структуру модели рабочей области.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 12/20/2020
-ms.openlocfilehash: 5bb072d0ea710e35b4f741836aed143e962a326e
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 83a64e3348d4af768c56609df3df5c9194ec5af1
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100622257"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102030874"
 ---
 # <a name="delete-and-recover-azure-log-analytics-workspace"></a>Удаление и восстановление рабочей области Azure Log Analytics
 

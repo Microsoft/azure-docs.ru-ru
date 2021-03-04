@@ -96,6 +96,8 @@
   items:
     - name: Полнотекстовый поиск
       href: search-lucene-query-architecture.md
+    - name: Семантический поиск
+      href: semantic-search-overview.md
     - name: Оценка релевантности
       href: index-similarity-and-scoring.md
     - name: Индексаторы
@@ -218,6 +220,8 @@
           href: search-howto-schedule-indexers.md
         - name: Определение сопоставлений полей
           href: search-indexer-field-mappings.md
+        - name: Свойства метаданных контента
+          href: search-blob-metadata-properties.md
         - name: Подключение с использованием управляемых удостоверений
           items:
             - name: Общие сведения об управляемых удостоверениях
@@ -228,6 +232,8 @@
               href: search-howto-managed-identities-cosmos-db.md
             - name: База данных SQL
               href: search-howto-managed-identities-sql.md
+        - name: SharePoint Online
+          href: search-howto-index-sharepoint-online.md
         - name: Большие двоичные объекты Azure
           items:
             - name: Поиск по большим двоичным объектам
@@ -248,8 +254,6 @@
               href: search-howto-index-json-blobs.md
             - name: Индексирование зашифрованных больших двоичных объектов
               href: search-howto-index-encrypted-blobs.md
-            - name: Свойства метаданных для содержимого BLOB-объектов
-              href: search-blob-metadata-properties.md
         - name: Таблицы Azure
           href: search-howto-indexing-azure-tables.md
         - name: Azure Cosmos DB
@@ -306,6 +310,10 @@
       items:
         - name: Создание простого запроса
           href: search-query-create.md
+        - name: Создание семантического запроса
+          href: semantic-how-to-query-request.md
+        - name: Добавление проверки орфографии в запросы
+          href: speller-how-to-add.md
         - name: Типы запросов и составление запросов
           href: search-query-overview.md
         - name: Использование простого синтаксиса (примеры)
@@ -348,6 +356,8 @@
       items:
         - name: Работа с результатами
           href: search-pagination-page-layout.md
+        - name: Структурирование семантического ответа
+          href: semantic-how-to-query-response.md
         - name: Профили оценки
           href: index-add-scoring-profiles.md
         - name: Алгоритм проверки сходства
@@ -388,6 +398,8 @@
           href: search-manage.md
         - name: PowerShell
           href: search-manage-powershell.md
+        - name: Azure CLI
+          href: search-manage-azure-cli.md
         - name: Перемещение служб между регионами
           href: search-howto-move-across-regions.md
         - name: Доступ администратора на основе ролей

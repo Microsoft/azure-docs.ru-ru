@@ -104,7 +104,7 @@
     - name: Повторное размещение мейнфреймов
       href: ./workloads/mainframe-rehosting/overview.md
     - name: SQL на виртуальных машинах
-      href: 'https://docs.microsoft.com/azure/azure-sql/virtual-machines/'
+      href: ../azure-sql/virtual-machines/index.yml
     - name: Высокопроизводительные вычисления (HPC)
       href: /azure/architecture/topics/high-performance-computing/
 - name: Экземпляры
@@ -164,6 +164,8 @@
               href: ev4-esv4-series.md
             - name: Серия M
               href: m-series.md
+            - name: Ряды памяти Msv2 и Mdsv2 Medium
+              href: msv2-mdsv2-series.md
             - name: Серия Mv2
               href: mv2-series.md
             - name: Ограниченное число виртуальных ЦП
@@ -255,7 +257,7 @@
     - name: Выделенные узлы
       items:
         - name: Обзор
-          href: ./linux/dedicated-hosts.md
+          href: dedicated-hosts.md
         - name: CLI
           href: ./linux/dedicated-hosts-cli.md
         - name: Портал
@@ -293,7 +295,7 @@
         - name: Зарезервированные экземпляры
           items:
             - name: Предоплата за виртуальные машины
-              href: ./linux/prepay-reserved-vm-instances.md
+              href: ./prepay-reserved-vm-instances.md
             - name: Предоплата за выделенные узлы
               href: prepay-dedicated-hosts-reserved-instances.md
             - name: Основные сведения о резервировании в Azure
@@ -363,7 +365,7 @@
         - name: Использование Java
           href: ./windows/java.md
         - name: Python
-          href: 'https://docs.microsoft.com/samples/azure-samples/virtual-machines-python-manage/azure-virtual-machines-management-samples---python/?context=/azure/virtual-machines/context/context'
+          href: /samples/azure-samples/virtual-machines-python-manage/azure-virtual-machines-management-samples---python/?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
         - name: Использование шаблона ARM
           displayName: Azure Resource Manager template
           href: ./windows/ps-template.md
@@ -447,7 +449,7 @@
             - name: Агент Azure Monitor
               href: ../azure-monitor/agents/azure-monitor-agent-install.md?context=/azure/virtual-machines/context/context
             - name: Расширение системы диагностики
-              href: ../azure-monitor/platform/diagnostics-extension-overview.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/agents/diagnostics-extension-overview.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Log Analytics
               items:
                 - name: Linux
@@ -642,7 +644,7 @@
     - name: Общая коллекция образов
       items:
         - name: Обзор
-          href: ./linux/shared-image-galleries.md
+          href: ./shared-image-galleries.md
         - name: CLI
           items:
             - name: Создание коллекции
@@ -786,13 +788,13 @@
     - name: Доступность
       href: availability.md
     - name: Совместное размещение
-      href: ./linux/co-location.md
+      href: co-location.md
     - name: проблемы с производительностью сети;
       href: ../virtual-network/virtual-network-optimize-network-bandwidth.md?context=/azure/virtual-machines/context/context
     - name: Состояния и жизненный цикл
       href: states-lifecycle.md
     - name: Автомасштабирование
-      href: ../virtual-machine-scale-sets/overview.md?context=/azure/virtual-machines/context/context
+      href: ../virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview.md?context=/azure/virtual-machines/context/context
     - name: Высокий уровень доступности
       href: manage-availability.md
     - name: Группы доступности
@@ -822,6 +824,8 @@
       href: managed-disks-overview.md
     - name: Выбор типа диска для виртуальных машин IaaS
       href: disks-types.md
+    - name: Типы избыточности для дисков
+      href: disks-redundancy.md
     - name: Общие диски
       href: disks-shared.md
     - name: Включение общих дисков
@@ -952,8 +956,10 @@
           href: premium-storage-performance.md
         - name: 'Метрики, связанные с диском'
           href: disks-metrics.md
-        - name: Всплеск активности диска
+        - name: Модели ускорения дисков
           href: disk-bursting.md
+        - name: Включение ускорения по запросу
+          href: disks-enable-bursting.md
         - name: Уровни производительности дисков
           href: disks-change-performance.md
         - name: Изменение уровня производительности дисков
@@ -1157,6 +1163,12 @@
           href: ./windows/security-baseline.md
     - name: Рекомендации
       href: security-recommendations.md
+    - name: Доверенные средства запуска
+      items:
+        - name: Обзор
+          href: trusted-launch.md
+        - name: Развертывание с помощью портала
+          href: trusted-launch-portal.md
     - name: JIT-доступ
       href: ../security-center/security-center-just-in-time.md
     - name: Политика
@@ -1181,7 +1193,7 @@
         - name: Создание узла-бастиона
           items:
             - name: Портал
-              href: ../bastion/bastion-create-host-portal.md
+              href: ../bastion/tutorial-create-host-portal.md
             - name: PowerShell
               href: ../bastion/bastion-create-host-powershell.md
             - name: CLI
@@ -1231,9 +1243,9 @@
     - name: Обзор
       href: maintenance-and-updates.md
     - name: Автоматизация исправлений гостевой системы виртуальной машины (предварительная версия)
-      href: ./windows/automatic-vm-guest-patching.md
+      href: automatic-vm-guest-patching.md
     - name: Автоматическое обновление расширений (предвапрительная версия)
-      href: ./automatic-extension-upgrade.md
+      href: automatic-extension-upgrade.md
     - name: Управление обслуживанием
       items:
         - name: Уведомления об обслуживании
@@ -1281,7 +1293,7 @@
 - name: Наблюдение
   items:
     - name: Обзор
-      href: ../azure-monitor/insights/monitor-vm-azure.md?context=/azure/virtual-machines/context/context
+      href: ../azure-monitor/vm/monitor-vm-azure.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
     - name: Мониторинг виртуальных машин
       items:
         - name: Windows
@@ -1295,7 +1307,7 @@
         - name: Расширение службы "Диагностика Azure"
           items:
             - name: Обзор
-              href: ../azure-monitor/platform/diagnostics-extension-overview.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/agents/diagnostics-extension-overview.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Расширение для диагностики Linux
               items:
                 - name: Версия 4.0
@@ -1303,16 +1315,16 @@
                 - name: Версия 3.0
                   href: ../virtual-machines/extensions/diagnostics-linux-v3.md?context=/azure/virtual-machines/context/context
                 - name: Сбор метрик с помощью Telegraf
-                  href: ../azure-monitor/platform/collect-custom-metrics-linux-telegraf.md?context=/azure/virtual-machines/context/context
+                  href: ../azure-monitor/essentials/collect-custom-metrics-linux-telegraf.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
                   displayname: diagnostics extension
         - name: Агент Log Analytics
           items:
             - name: Обзор
-              href: ../azure-monitor/platform/log-analytics-agent.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/agents/log-analytics-agent.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Агенты Linux
               href: ../azure-monitor/agents/agent-linux.md?context=/azure/virtual-machines/context/context
             - name: Шлюз службы анализа журналов
-              href: ../azure-monitor/platform/gateway.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/agents/gateway.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Управление агентами
               href: ../azure-monitor/agents/agent-manage.md?context=/azure/virtual-machines/context/context
             - name: Работоспособность агентов
@@ -1334,11 +1346,11 @@
                 - name: Пользовательские журналы
                   href: ../azure-monitor/agents/data-sources-custom-logs.md?context=/azure/virtual-machines/context/context
                 - name: Пользовательские поля
-                  href: ../azure-monitor/platform/custom-fields.md?context=/azure/virtual-machines/context/context
+                  href: ../azure-monitor/logs/custom-fields.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
         - name: Диагностика
           items:
             - name: Расширение службы анализа журналов для виртуальной машины
-              href: ../azure-monitor/platform/vmext-troubleshoot.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/visualize/vmext-troubleshoot.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
               displayname: 'troubleshoot, troubleshooting'
             - name: Агент службы анализа журналов для Linux
               href: ../azure-monitor/agents/agent-linux-troubleshoot.md?context=/azure/virtual-machines/context/context
@@ -1346,37 +1358,37 @@
         - name: Azure Monitor для виртуальных машин
           items:
             - name: Обзор
-              href: ../azure-monitor/insights/vminsights-overview.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/vm/vminsights-overview.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Часто задаваемые вопросы об общедоступной версии
-              href: ../azure-monitor/insights/vminsights-ga-release-faq.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/vm/vminsights-ga-release-faq.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: ВОПРОСЫ И ОТВЕТЫ
               href: ../azure-monitor/faq.md?context=/azure/virtual-machines/context/context#azure-monitor-for-vms
             - name: Включение мониторинга
               items:
                 - name: Общие сведения о включении мониторинга
-                  href: ../azure-monitor/insights/vminsights-enable-overview.md?context=/azure/virtual-machines/context/context
+                  href: ../azure-monitor/vm/vminsights-enable-overview.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
                 - name: Включение для отдельной виртуальной машины Azure
-                  href: ../azure-monitor/insights/vminsights-enable-portal.md?context=/azure/virtual-machines/context/context
+                  href: ../azure-monitor/vm/vminsights-enable-portal.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
                 - name: Включение при помощи Политики Azure
-                  href: ../azure-monitor/insights/vminsights-enable-policy.md?context=/azure/virtual-machines/context/context
+                  href: ../azure-monitor/vm/vminsights-enable-policy.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
                 - name: Включить при помощи Azure PowerShell
-                  href: ../azure-monitor/insights/vminsights-enable-powershell.md?context=/azure/virtual-machines/context/context
+                  href: ../azure-monitor/vm/vminsights-enable-powershell.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
                 - name: Включение в гибридной среде
-                  href: ../azure-monitor/insights/vminsights-enable-hybrid.md?context=/azure/virtual-machines/context/context
+                  href: ../azure-monitor/vm/vminsights-enable-hybrid.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Сопоставление зависимостей
-              href: ../azure-monitor/insights/vminsights-maps.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/vm/vminsights-maps.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Мониторинг производительности
-              href: ../azure-monitor/insights/vminsights-performance.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/vm/vminsights-performance.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Анализ данных с помощью запросов к журналу
-              href: ../azure-monitor/insights/vminsights-log-search.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/vm/vminsights-log-search.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Визуализация данных с помощью книг
-              href: ../azure-monitor/insights/vminsights-workbooks.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/vm/vminsights-workbooks.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Создание правил генерации оповещений
-              href: ../azure-monitor/insights/vminsights-alerts.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/vm/vminsights-alerts.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Обновление агента зависимостей
-              href: ../azure-monitor/insights/vminsights-dependency-agent-maintenance.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/vm/vminsights-dependency-agent-maintenance.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: Отключение мониторинга
-              href: ../azure-monitor/insights/vminsights-optout.md?context=/azure/virtual-machines/context/context
+              href: ../azure-monitor/vm/vminsights-optout.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
     - name: Использование виртуальных машин
       href: vm-usage.md
     - name: Добавление тега для виртуальной машины
@@ -1422,7 +1434,7 @@
         - name: Резервное копирование нескольких виртуальных машин
           href: ../backup/tutorial-backup-vm-at-scale.md
         - name: Параметры восстановления
-          href: /azure/backup/backup-azure-arm-restore-vms
+          href: ../backup/backup-azure-arm-restore-vms.md
         - name: Матрица поддержки
           href: ../backup/backup-support-matrix-iaas.md
         - name: Цены
@@ -1479,15 +1491,15 @@
     - name: Пользовательские данные
       href: custom-data.md
     - name: Ansible
-      href: 'https://docs.microsoft.com/azure/developer/ansible/'
+      href: /azure/developer/ansible/
     - name: Terraform
-      href: 'https://docs.microsoft.com/azure/developer/terraform/'
+      href: /azure/developer/terraform/
     - name: Jenkins
-      href: 'https://docs.microsoft.com/en-us/azure/developer/jenkins/'
+      href: /azure/developer/jenkins/
     - name: Azure DevOps
       href: ./linux/tutorial-azure-devops-blue-green-strategy.md
 - name: Диагностика
-  href: 'https://docs.microsoft.com/troubleshoot/azure/virtual-machines/welcome-virtual-machines'
+  href: /troubleshoot/azure/virtual-machines/welcome-virtual-machines
 - name: Ресурсы
   items:
     - name: Cloud Adoption Framework

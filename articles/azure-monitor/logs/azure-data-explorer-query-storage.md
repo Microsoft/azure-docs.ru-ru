@@ -1,18 +1,17 @@
 ---
 title: Запрос экспортированных данных из Azure Monitor с помощью обозреватель данных Azure (Предварительная версия)
 description: Используйте обозреватель данных Azure для запроса данных, экспортированных из рабочей области Log Analytics в учетную запись хранения Azure.
-ms.subservice: logs
 author: osalzberg
 ms.author: bwren
 ms.reviewer: bwren
 ms.topic: conceptual
 ms.date: 10/13/2020
-ms.openlocfilehash: f24947eba71588d8b97afafea35f9a0bcab33c86
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 5eff593075db118b23d74147e33b40eb4402193c
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101711014"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102031163"
 ---
 # <a name="query-exported-data-from-azure-monitor-using-azure-data-explorer-preview"></a>Запрос экспортированных данных из Azure Monitor с помощью обозреватель данных Azure (Предварительная версия)
 Экспорт данных из Azure Monitor в учетную запись хранения Azure обеспечивает недорогое хранение и возможность перераспределения журналов в разные регионы. Используйте обозреватель данных Azure для запроса данных, экспортированных из рабочих областей Log Analytics. После настройки поддерживаемые таблицы, отправленные из рабочих областей в учетную запись хранения Azure, будут доступны в качестве источника данных для Azure обозреватель данных.

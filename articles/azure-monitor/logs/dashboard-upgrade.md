@@ -1,17 +1,16 @@
 ---
 title: Обновление визуализаций панели мониторинга Log Analytics
 description: Узнайте, как обновить визуализации панели мониторинга Log Analytics с помощью запросов, которые могут предоставить эффективные аналитические данные.
-ms.subservice: logs
 ms.topic: article
 author: rboucher
 ms.author: robb
 ms.date: 07/01/2020
-ms.openlocfilehash: 139241d679007bf72680f91a1518a1ef90cc7efc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 276ea1e2f083da7ab4a6ab44e60bc7e0832e8651
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101700632"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102030942"
 ---
 # <a name="upgrading-your-log-analytics-dashboard-visualizations"></a>Обновление визуализаций панели мониторинга Log Analytics
 

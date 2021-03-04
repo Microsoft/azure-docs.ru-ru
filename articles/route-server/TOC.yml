@@ -1,0 +1,45 @@
+- name: Документация по серверу маршрутизации
+  href: index.yml
+- name: Обзор
+  items:
+    - name: Что такое сервер маршрутизации Azure (предварительная версия)?
+      href: overview.md
+- name: Краткие руководства
+  items:
+    - name: Настройка сервера маршрутизации — PowerShell
+      href: quickstart-configure-route-server-powershell.md
+    - name: Настройка сервера маршрутизации — CLI
+      href: quickstart-configure-route-server-cli.md
+  expanded: true
+- name: Основные понятия
+  items:
+    - name: 'Сервер маршрутизации: вопросы и ответы'
+      href: route-server-faq.md
+    - name: Поддержка ExpressRoute и VPN-шлюза Azure
+      href: expressroute-vpn-support.md
+- name: Практические руководства
+  items:
+    - name: Устранение неполадок сервера маршрутизации
+      href: troubleshoot-route-server.md
+- name: Справочник
+  items:
+    - name: Azure PowerShell
+      href: /powershell/module/az.network/?view=azps-5.5.0#route
+    - name: Azure CLI
+      href: /cli/azure/network/routeserver?view=azure-cli-latest
+    - name: REST
+      href: /rest/api/virtualwan/virtualhubipconfiguration
+- name: Ресурсы
+  items:
+    - name: Стратегия развития Azure
+      href: 'https://azure.microsoft.com/roadmap/?category=networking'
+    - name: Блог о сетях
+      href: 'https://azure.microsoft.com/blog/topics/networking/'
+    - name: Цены
+      href: 'https://azure.microsoft.com/pricing/details/routeserver/'
+    - name: Калькулятор цен
+      href: 'https://azure.microsoft.com/pricing/calculator/'
+    - name: Обновления службы
+      href: 'https://azure.microsoft.com/updates/?product=routeserver'
+    - name: Соглашение об уровне обслуживания
+      href: 'https://azure.microsoft.com/support/legal/sla/'

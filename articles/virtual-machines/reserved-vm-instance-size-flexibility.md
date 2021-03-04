@@ -6,14 +6,14 @@ ms.service: virtual-machines
 ms.subservice: reserved-instances
 ms.topic: conceptual
 ms.workload: infrastructure-services
-ms.date: 02/02/2021
+ms.date: 03/01/2021
 ms.author: yashar
-ms.openlocfilehash: 6b04caec380a481569de4a33ea0159fd641c000f
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 9270b7fb135eddd78a7aeb30cf88af4d704e176e
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101673958"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102030714"
 ---
 # <a name="virtual-machine-size-flexibility-with-reserved-vm-instances"></a>Гибкость размеров виртуальных машин при использовании зарезервированных экземпляров виртуальных машин
 
@@ -48,7 +48,13 @@ ms.locfileid: "101673958"
 
 [Коэффициент гибкости размера экземпляра](https://isfratio.blob.core.windows.net/isfratio/ISFRatio.csv)
 
-Мы сохраним URL-адрес файла и схему, чтобы вы могли использовать этот файл программным способом. Вскоре данные также будут доступны через API.
+Azure обновляет ссылку и схему, чтобы вы могли использовать файл программным способом.
+
+## <a name="view-vm-size-recommendations"></a>Просмотр рекомендаций по размеру виртуальной машины
+
+Azure отображает рекомендации по размеру виртуальной машины в процессе приобретения. Чтобы просмотреть рекомендации минимального размера, выберите **Группировать по наименьшему размеру**.
+
+:::image type="content" source="./media/reserved-vm-instance-size-flexibility/select-product-recommended-quantity.png" alt-text="Снимок экрана, показывающий рекомендованные количества." lightbox="./media/reserved-vm-instance-size-flexibility/select-product-recommended-quantity.png" :::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -100,8 +100,10 @@
           href: cache-private-link.md
         - name: Включение избыточности зоны
           href: cache-how-to-zone-redundancy.md
-        - name: Настройка георепликации
+        - name: Настройка георепликации с OSS
           href: cache-how-to-geo-replication.md
+        - name: Настройка активной георепликации на уровне предприятия
+          href: cache-how-to-active-geo-replication.md
         - name: Экономия средств за счет зарезервированной емкости
           href: cache-reserved-pricing.md
         - name: Миграция в службу "Кэш Azure для Redis"

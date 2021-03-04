@@ -164,6 +164,8 @@
     - name: Поддерживаемые дистрибутивы Linux
       href: ../virtual-machines/linux/endorsed-distros.md
       maintainContext: true
+    - name: Режимы оркестрации (предварительная версия)
+      href: virtual-machine-scale-sets-orchestration-modes.md
     - name: Обслуживание и обновления
       items:
         - name: Обзор
@@ -210,7 +212,7 @@
           href: security-baseline.md
       maintainContext: true
     - name: Наблюдение
-      href: ../azure-monitor/insights/monitor-vm-azure.md
+      href: ../azure-monitor/vm/monitor-vm-azure.md
       maintainContext: true
     - name: Рекомендации по развертыванию
       items:
@@ -304,7 +306,7 @@
             - name: Использование портала Azure
               href: virtual-machine-scale-sets-autoscale-portal.md
             - name: Расширенное автомасштабирование
-              href: ../azure-monitor/platform/autoscale-virtual-machine-scale-sets.md
+              href: ../azure-monitor/autoscale/autoscale-virtual-machine-scale-sets.md
               maintainContext: true
             - name: Устранение неполадок автомасштабирования
               href: virtual-machine-scale-sets-troubleshoot.md
@@ -344,7 +346,7 @@
               href: ../virtual-machines/windows/dedicated-hosts-powershell.md
             - name: Портал
               href: ../virtual-machines/dedicated-hosts-portal.md
-        - name: Использование точечного экземпляра
+        - name: точечные виртуальные машины Azure.
           href: use-spot.md
     - name: Управление
       items:

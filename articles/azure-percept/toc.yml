@@ -1,0 +1,110 @@
+- name: Документация по Azure Percept
+  href: index.yml
+- name: Обзор
+  items:
+    - name: Платформа Azure Percept
+      href: overview-azure-percept.md
+    - name: Azure Percept Studio
+      href: overview-azure-percept-studio.md
+    - name: Azure Percept DK
+      href: overview-azure-percept-dk.md
+    - name: Azure Percept Audio
+      href: overview-azure-percept-audio.md
+    - name: Модели Azure Percept AI
+      href: overview-ai-models.md
+    - name: Расширенная разработка
+      href: overview-advanced-code.md
+    - name: Безопасность в Azure Percept
+      href: overview-percept-security.md
+    - name: Интеграция 80/20
+      href: overview-8020-integration.md
+    - name: Обновление устройств Percept
+      href: overview-update-experience.md
+- name: Краткие руководства
+  items:
+    - name: "Настройка устройств Azure\_Percept"
+      items:
+        - name: Распаковка и сборка Azure Percept DK
+          href: quickstart-percept-dk-unboxing.md
+        - name: "Завершение настройки Azure\_Percept\_DK"
+          href: quickstart-percept-dk-set-up.md
+        - name: Настройка Azure Percept Audio
+          href: quickstart-percept-audio-setup.md
+- name: Учебники
+  items:
+    - name: Введение в создание прототипов с помощью Azure Percept
+      items:
+        - name: Создание и развертывание решения для визуального распознавания без написания кода
+          href: tutorial-nocode-vision.md
+        - name: Создание и развертывание решения для распознавания речи без написания кода
+          href: tutorial-no-code-speech.md
+    - name: Расширенная разработка
+      items:
+        - name: Учебник по расширенной разработке (облако)
+          href: advanced-development-cloud.md
+        - name: Учебник по расширенной разработке (локальное размещение)
+          href: advanced-development-local.md
+- name: Основные понятия
+  items:
+    - name: Azure Percept Audio.
+      items:
+        - name: Поведение индикатора и кнопки
+          href: audio-button-led-behavior.md
+- name: Практические руководства
+  items:
+    - name: Разработка решений для визуального распознавания с помощью Azure Percept DK
+      items:
+        - name: Просмотр видеопотока от DevKit
+          href: how-to-view-video-stream.md
+        - name: Развертывание модели искусственного интеллекта на устройстве DevKit
+          href: how-to-deploy-model.md
+        - name: Запись изображений для проекта визуального распознавания
+          href: how-to-capture-images.md
+        - name: Просмотр телеметрии DevKit
+          href: how-to-view-telemetry.md
+    - name: Разработка решений для визуального распознавания с помощью Azure Percept DK
+      items:
+        - name: Настройка голосового помощника в Azure Percept Studio
+          href: how-to-configure-voice-assistant.md
+        - name: Настройка голосового помощника в Центре Интернета вещей
+          href: how-to-manage-voice-assistant.md
+    - name: "Обновление устройств Azure\_Percept"
+      items:
+        - name: Настройка обновлений по беспроводной сети
+          href: how-to-set-up-over-the-air-updates.md
+        - name: Обновление Azure Percept DK по беспроводной сети
+          href: how-to-update-over-the-air.md
+        - name: Обновление Azure Percept DK через USB
+          href: how-to-update-via-usb.md
+    - name: Подключение к Azure Percept DK
+      items:
+        - name: Подключение по SSH
+          href: how-to-ssh-into-percept-dk.md
+        - name: Подключение по серийному номеру
+          href: how-to-connect-to-percept-dk-over-serial.md
+    - name: Инструменты
+      items:
+        - name: Установщик пакетов DevTools
+          href: dev-tools-installer.md
+    - name: Устранение неполадок
+      items:
+        - name: Устранение неполадок при установке
+          href: how-to-troubleshoot-setup.md
+        - name: Устранение общих неполадок с Azure Percept
+          href: troubleshoot-dev-kit.md
+        - name: Устранение неполадок решений для визуального распознавания
+          href: vision-solution-troubleshooting.md
+        - name: Устранение неполадок c Azure Percept Audio
+          href: troubleshoot-audio-accessory-speech-module.md
+- name: Справочник
+  items:
+    - name: Таблицы данных устройств Azure Percept
+      items:
+        - name: Спецификации Azure Percept DK
+          href: azure-percept-dk-datasheet.md
+        - name: Спецификации Azure Percept Vision
+          href: azure-percept-vision-datasheet.md
+        - name: Спецификации Azure Percept Audio
+          href: azure-percept-audio-datasheet.md
+- name: Ресурсы
+  items: null

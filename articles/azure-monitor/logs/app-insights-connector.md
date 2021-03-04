@@ -1,17 +1,16 @@
 ---
 title: Просмотр данных приложений Azure Application Insights | Документация Майкрософт
 description: Решение "Соединитель Application Insights" можно использовать для диагностики проблем с производительностью и для того, чтобы узнать, какие действия пользователи выполняют в вашем приложении, которое отслеживается с помощью Application Insights.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 02/13/2019
-ms.openlocfilehash: 2dda18232e0cf3afa63a01814e776b90988e0b10
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c21ed461280dfa617c852fe6c18c30e5d697b704
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101704350"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102031282"
 ---
 # <a name="application-insights-connector-management-solution-deprecated"></a>Решение по управлению Соединителем Application Insights (устарело)
 

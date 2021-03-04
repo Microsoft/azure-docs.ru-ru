@@ -1,17 +1,16 @@
 ---
 title: Включение аналитики виртуальной машины с помощью шаблонов диспетчер ресурсов
 description: В этой статье описывается, как включить аналитику VM для одной или нескольких виртуальных машин Azure или масштабируемых наборов виртуальных машин с помощью Azure PowerShell или шаблонов Azure Resource Manager.
-ms.subservice: ''
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 07/27/2020
-ms.openlocfilehash: 57e2649dfe651bfa1e2ef18ff52ca611c122d696
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: fc0c304a3fea81f44e01d3e815f34e44728ea42e
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101707495"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102031887"
 ---
 # <a name="enable-vm-insights-using-resource-manager-templates"></a>Включение аналитики виртуальной машины с помощью шаблонов диспетчер ресурсов
 В этой статье описывается, как включить аналитику VM для виртуальной машины или масштабируемого набора виртуальных машин с помощью шаблонов диспетчер ресурсов. Эту процедуру можно использовать для следующих действий:

@@ -8,10 +8,13 @@
 - name: Основные понятия
   expanded: true
   items:
-    - name: Виртуальные машины
-      href: automanage-virtual-machines.md
-    - name: Рекомендации по виртуальным машинам
-      href: virtual-machines-best-practices.md
+    - name: Автоматическое управление для Linux
+      href: automanage-linux.md
+    - name: Автоматическое управление для Windows Server
+      href: automanage-windows-server.md
+      items:
+        - name: Горячее исправление для новых виртуальных машин
+          href: automanage-hotpatch.md
 - name: Практическое руководство
   expanded: true
   items:

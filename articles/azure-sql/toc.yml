@@ -33,6 +33,16 @@
           href: database/features-comparison.md
         - name: Функции с несколькими моделями
           href: multi-model-features.md
+        - name: Запланированное обслуживание
+          items:
+            - name: Период обслуживания
+              href: database/maintenance-window.md
+            - name: Настройка периода обслуживания
+              href: database/maintenance-window-configure.md
+            - name: Вопросы и ответы по периоду обслуживания
+              href: database/maintenance-window-faq.yml
+            - name: Расширенные уведомления
+              href: database/advance-notifications.md
         - name: Выполняющаяся в памяти OLTP
           href: in-memory-oltp-overview.md
         - name: Темпоральные таблицы

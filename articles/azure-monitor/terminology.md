@@ -1,17 +1,16 @@
 ---
 title: Обновление терминологии Azure Monitor | Документация Майкрософт
 description: В этой статье описаны последние изменения в терминологии для служб мониторинга Azure.
-ms.subservice: ''
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 10/08/2019
-ms.openlocfilehash: 99592544d97793f82db36e1d2cb33ba8c6af1c9c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: fea85a85db1e555adea63f5b65b09a9285d714da
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100586970"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102031979"
 ---
 # <a name="azure-monitor-naming-and-terminology-changes"></a>Изменения терминологии и именования Azure Monitor
 Недавно в Azure Monitor были внесены значительные изменения, а также произошло слияние различных служб, для того чтобы упростить мониторинг для клиентов Azure. В этой статье описываются недавние изменения имени и терминологии в документации Azure Monitor.
@@ -56,7 +55,7 @@ Log Analytics и Application Insights были объединены в Azure Mon
 
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь с [обзором Azure Monitor](overview.md), в котором описаны его различные компоненты и функции.
 - Дополнительные сведения о [перемещении портала OMS](./logs/oms-portal-transition.md).

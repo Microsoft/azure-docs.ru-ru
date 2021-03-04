@@ -5,13 +5,12 @@ author: rboucher
 ms.author: robb
 ms.topic: conceptual
 ms.date: 02/14/2021
-ms.subservice: alerts
-ms.openlocfilehash: 0923be317d497e471724b7611fe6b831a4be6f37
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c4e444ebe217b6202d8ea140bd1edf3ccf5708d0
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101718052"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102031350"
 ---
 # <a name="create-a-classic-metric-alert-with-a-resource-manager-template"></a>Создание классического оповещения метрики с помощью шаблона Resource Manager
 

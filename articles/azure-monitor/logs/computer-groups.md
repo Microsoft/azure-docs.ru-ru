@@ -1,17 +1,16 @@
 ---
 title: Группы компьютеров в запросах к журналам Azure Monitor | Документация Майкрософт
 description: В Azure Monitor вы можете ограничить запросы к журналам определенной группой компьютеров.  В этой статье описывается, как можно создавать группы компьютеров и использовать их в запросах к журналам.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 02/05/2019
-ms.openlocfilehash: 3dffab040b8ee17760e23aa8b1d8fb65aa0417e7
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: d8702b498e08561175aa7ee975c7b6b46fdf1687
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101734134"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102031095"
 ---
 # <a name="computer-groups-in-azure-monitor-log-queries"></a>Группы компьютеров в Azure Monitor запросы журналов
 Группы компьютеров в Azure Monitor позволяют выносить [запросы журналов](./log-query-overview.md) для определенного набора компьютеров.  Каждая группа заполняется компьютерами с помощью определяемого запроса или при импорте групп из разных источников.  Если в запрос к журналам включена группа, в результатах возвращаются только те записи, которые относятся к компьютерам в этой группе.

@@ -1,0 +1,117 @@
+### YamlMime:Landing
+title: Документация по Azure Percept
+summary: Azure Percept представляет собой комплексное решение для создания и развертывания в пограничных средах решений искусственного интеллекта на основе восприятия.
+metadata:
+  title: Документация по Azure Percept
+  description: Azure Percept — это комплексная платформа искусственного интеллекта для пограничных сред.
+  services: azure-percept
+  ms.service: azure-percept
+  ms.topic: landing-page
+  author: elqu20
+  ms.author: v-elqu
+  ms.date: 02/11/2021
+  ms.openlocfilehash: 6c7479b33a78432d5b6aea2c02656e8b250b70c7
+  ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/02/2021
+  ms.locfileid: "101658174"
+landingContent:
+- title: Что такое Azure Percept?
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Обзор Azure Percept
+      url: overview-azure-percept.md
+    - text: Обзор Azure Percept DK
+      url: overview-azure-percept-dk.md
+    - text: Обзор Azure Percept Audio
+      url: overview-azure-percept-audio.md
+    - text: Обзор Azure Percept Studio
+      url: overview-azure-percept-studio.md
+    - text: Общие сведения о безопасности Azure Percept
+      url: overview-percept-security.md
+- title: Начало работы с Azure Percept DK
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Распаковка и сборка Azure Percept DK
+      url: quickstart-percept-dk-unboxing.md
+    - text: Подключение Azure Percept DK к Azure и развертывание модели искусственного интеллекта для визуального распознавания
+      url: quickstart-percept-dk-set-up.md
+  - linkListType: reference
+    links:
+    - text: Спецификации Azure Percept DK
+      url: azure-percept-dk-datasheet.md
+    - text: Спецификации Azure Percept Vision
+      url: azure-percept-vision-datasheet.md
+    - text: Спецификации Azure Percept Audio
+      url: azure-percept-audio-datasheet.md
+- title: Создание прототипа искусственного интеллекта для визуального распознавания без написания кода
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Создание решения для визуального распознавания без написания кода
+      url: tutorial-nocode-vision.md
+  - linkListType: how-to-guide
+    links:
+    - text: Просмотр видеопотока от DevKit
+      url: how-to-view-video-stream.md
+    - text: Развертывание модели искусственного интеллекта на устройстве DevKit
+      url: how-to-deploy-model.md
+    - text: Запись изображений для проекта визуального распознавания
+      url: how-to-capture-images.md
+    - text: Просмотр телеметрии DevKit
+      url: how-to-view-telemetry.md
+- title: Начало работы с Azure Percept Audio
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Настройка Azure Percept Audio
+      url: quickstart-percept-audio-setup.md
+  - linkListType: reference
+    links:
+    - text: Спецификации Azure Percept Audio
+      url: azure-percept-audio-datasheet.md
+    - text: Устранение неполадок c Azure Percept Audio
+      url: troubleshoot-audio-accessory-speech-module.md
+    - text: Индикатор и кнопка Azure Percept Audio
+      url: audio-button-led-behavior.md
+- title: Создание решения голосового помощника без написания кода
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Создание голосового помощника без написания кода
+      url: tutorial-no-code-speech.md
+  - linkListType: how-to-guide
+    links:
+    - text: Настройка голосового помощника
+      url: how-to-configure-voice-assistant.md
+    - text: Управление голосовым помощником
+      url: how-to-manage-voice-assistant.md
+- title: Расширенная разработка с помощью Azure Percept
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Общие сведения о расширенной разработке
+      url: overview-advanced-code.md
+  - linkListType: tutorial
+    links:
+    - text: Расширенная разработка с использованием облачных служб
+      url: advanced-development-cloud.md
+    - text: Расширенная разработка с использованием локальных средств
+      url: advanced-development-local.md
+- title: Поддержка актуальности Azure Percept DK
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Обзор процесса обновления Azure Percept DK
+      url: overview-update-experience.md
+  - linkListType: how-to-guide
+    links:
+    - text: Настройка обновлений
+      url: how-to-set-up-over-the-air-updates.md
+    - text: Обновления по беспроводной сети
+      url: how-to-update-over-the-air.md
+    - text: Обновление через USB
+      url: how-to-update-via-usb.md
