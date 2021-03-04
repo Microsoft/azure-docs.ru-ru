@@ -3,12 +3,12 @@ title: Развертывание в IoT Edge для Linux в Windows — Azure
 description: В этой статье содержатся рекомендации по развертыванию в IoT Edge для Linux на устройстве Windows.
 ms.topic: how-to
 ms.date: 02/18/2021
-ms.openlocfilehash: 5cf4184857f12065d808d7b528dbfe8258950cd8
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b635070d6a4834da2c6d82cc768684b6cde9cd71
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101746463"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102042187"
 ---
 # <a name="deploy-to-an-iot-edge-for-linux-on-windows-eflow-device"></a>Развертывание на устройстве IoT Edge для Linux на Windows (ЕФЛОВ)
 
@@ -107,7 +107,7 @@ ms.locfileid: "101746463"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * Попробуйте определить движение, а также записать соответствующие видео в облако. Следуйте инструкциям из руководства по [обнаружению движения, записи видеороликов в службах мультимедиа](detect-motion-record-video-clips-media-services-quickstart.md#review-the-sample-video) .
-* Запустите [AI в реальном времени](use-your-model-quickstart#overview) (можно пропустить установку необходимых компонентов, так как она уже была выполнена выше).
+* Запустите [AI в реальном времени](use-your-model-quickstart.md#overview) (можно пропустить установку необходимых компонентов, так как она уже была выполнена выше).
 * Используйте наше [расширение VS Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.live-video-analytics-edge) для просмотра дополнительных графов мультимедиа.
 * Используйте [IP-камеру](https://en.wikipedia.org/wiki/IP_camera)  , поддерживающую RTSP, а не используя симулятор RTSP. IP-камеры, поддерживающие протокол RTSP, можно найти на странице [продуктов, соответствующих ONVIF](https://www.onvif.org/conformant-products/). Ищите устройства, которые соответствуют профилям G, S или T.
 

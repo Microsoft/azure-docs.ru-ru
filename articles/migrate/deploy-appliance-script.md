@@ -6,12 +6,12 @@ author: vikram1988
 ms.author: vibansa
 ms.manager: abhemraj
 ms.date: 04/16/2020
-ms.openlocfilehash: 38db1e68adde21d0e566256e9393f6fa4fc58824
-ms.sourcegitcommit: ea551dad8d870ddcc0fee4423026f51bf4532e19
+ms.openlocfilehash: abf34a5ea83e74b0bd2a074108c5ef1014941093
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96753796"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041337"
 ---
 # <a name="set-up-an-appliance-with-a-script"></a>Настройка устройства с помощью сценария
 
@@ -64,7 +64,7 @@ Hyper-V | Windows Server 2016 с 16 ГБ памяти, восемь виртуа
 
 - Устанавливает агенты и веб-приложение.
 - Устанавливает роли Windows, включая службу активации Windows, IIS и интегрированную среду сценариев PowerShell.
-- Скачивает и устанавливает перезаписываемый модуль IIS. [Подробнее](https://www.microsoft.com/download/details.aspx?id=7435).
+- Скачивает и устанавливает перезаписываемый модуль IIS. [Подробнее.](https://www.microsoft.com/download/details.aspx?id=7435)
 - Обновляет раздел реестра (HKLM) с постоянными параметрами для службы "миграция Azure".
 - Создает файлы журналов и конфигурации следующим образом:
     - **Файлы конфигурации**:%програмдата%\микрософт азуре\конфиг
@@ -111,7 +111,7 @@ Hyper-V | Windows Server 2016 с 16 ГБ памяти, восемь виртуа
 
 - Устанавливает агенты и веб-приложение.
 - Устанавливает роли Windows, включая службу активации Windows, IIS и интегрированную среду сценариев PowerShell.
-- Скачивает и устанавливает перезаписываемый модуль IIS. [Подробнее](https://www.microsoft.com/download/details.aspx?id=7435).
+- Скачивает и устанавливает перезаписываемый модуль IIS. [Подробнее.](https://www.microsoft.com/download/details.aspx?id=7435)
 - Обновляет раздел реестра (HKLM) с постоянными параметрами для службы "миграция Azure".
 - Создает файлы журналов и конфигурации следующим образом:
     - **Файлы конфигурации**:%програмдата%\микрософт азуре\конфиг
@@ -132,9 +132,9 @@ Hyper-V | Windows Server 2016 с 16 ГБ памяти, восемь виртуа
 
 Убедитесь, что устройство может подключаться к URL-адресам Azure для [общедоступного](migrate-appliance.md#public-cloud-urls) облака.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 После развертывания устройства необходимо настроить его в первый раз и зарегистрировать в проекте службы "миграция Azure".
 
-- Настройте устройство для [VMware](how-to-set-up-appliance-vmware.md#configure-the-appliance).
+- Настройте устройство для [VMware](how-to-set-up-appliance-vmware.md#4-configure-the-appliance).
 - Настройте устройство для [Hyper-V](how-to-set-up-appliance-hyper-v.md#configure-the-appliance).

@@ -4,14 +4,14 @@ description: Узнайте, как настроить управление до
 author: ThomasWeiss
 ms.service: cosmos-db
 ms.topic: how-to
-ms.date: 03/02/2021
+ms.date: 03/03/2021
 ms.author: thweiss
-ms.openlocfilehash: d83109f380a3044073cf2dd8d10f29027ebb9f41
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: acb82a66c8ef4adcfeef0fcb527c44512ad4feaf
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101690912"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102040878"
 ---
 # <a name="configure-role-based-access-control-with-azure-active-directory-for-your-azure-cosmos-db-account-preview"></a>Настройка управления доступом на основе ролей с помощью Azure Active Directory для учетной записи Azure Cosmos DB (Предварительная версия)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -370,6 +370,7 @@ CosmosAsyncClient Client = new CosmosClientBuilder()
 - Можно создать до 100 определений ролей и 2 000 назначений ролей для каждой учетной записи Azure Cosmos DB.
 - Разрешение группы Azure AD в настоящее время не поддерживается для удостоверений, относящихся к более чем 200 группам.
 - Маркер Azure AD в настоящее время передается в виде заголовка с каждым отдельным запросом, отправленным в службу Azure Cosmos DB, увеличивая общий размер полезных данных.
+- Доступ к данным с помощью Azure AD через [Azure Cosmos DB Explorer](data-explorer.md) пока не поддерживается. Для работы с обозревателем Azure Cosmos DB по-прежнему требуется, чтобы у пользователя был доступ к первичному ключу учетной записи.
 
 ## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
 

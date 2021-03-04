@@ -1,26 +1,21 @@
 ---
 title: Просмотр журналов действий для изменений Azure RBAC
-description: Просмотрите журналы действий для управления доступом на основе ролей Azure (Azure RBAC) на ресурсы Azure за последние 90 дней.
+description: Просмотрите журналы действий для управления доступом на основе ролей Azure (Azure RBAC) за последние 90 дней.
 services: active-directory
-documentationcenter: ''
 author: rolyon
 manager: mtillman
-ms.assetid: 2bc68595-145e-4de3-8b71-3a21890d13d9
 ms.service: role-based-access-control
-ms.devlang: na
 ms.topic: how-to
-ms.tgt_pltfrm: na
 ms.workload: identity
-ms.date: 07/27/2020
+ms.date: 03/01/2021
 ms.author: rolyon
-ms.reviewer: bagovind
 ms.custom: H1Hack27Feb2017, devx-track-azurecli
-ms.openlocfilehash: 53b72ac22df845f88dc82b14aa5dfaa57973b0d1
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: d9b39bc9a2f00fe83cae0ff78c6346042967e8bf
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100595842"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102042145"
 ---
 # <a name="view-activity-logs-for-azure-rbac-changes"></a>Просмотр журналов действий для изменений Azure RBAC
 
@@ -41,18 +36,37 @@ ms.locfileid: "100595842"
 
 ![Снимок экрана: просмотр журналов действий на портале](./media/change-history-report/activity-log-portal.png)
 
+Чтобы получить дополнительные сведения, щелкните запись, чтобы открыть панель сводки. Щелкните вкладку **JSON** , чтобы получить подробный журнал.
+
+![Журналы действий на портале с панелью сводки открыть-снимок экрана](./media/change-history-report/activity-log-summary-portal.png)
+
 Журнал действий на портале имеет несколько фильтров. Ниже приведены фильтры, связанные с Azure RBAC.
 
-| Фильтр | Значение |
+| Filter | Значение |
 | --------- | --------- |
 | Категория событий | <ul><li>Административный</li></ul> |
 | Операция | <ul><li>Создание назначения роли</li><li>Удаление назначения роли</li><li>Создание или изменение определения пользовательской роли</li><li>Удаление определения пользовательской роли</li></ul> |
 
 Дополнительные сведения о журналах действий см. [в статье Просмотр журналов действий для отслеживания действий с ресурсами](../azure-resource-manager/management/view-activity-logs.md?toc=%2fazure%2fmonitoring-and-diagnostics%2ftoc.json).
 
-## <a name="azure-powershell"></a>Azure PowerShell
 
-[!INCLUDE [az-powershell-update](../../includes/updated-for-az.md)]
+## <a name="interpret-a-log-entry"></a>Интерпретировать запись журнала
+
+Выходные данные журнала на вкладке JSON, Azure PowerShell или Azure CLI могут содержать много информации. Ниже приведены некоторые ключевые свойства, которые следует искать при попытке интерпретации записи журнала. Способы фильтрации выходных данных журнала с помощью Azure PowerShell или Azure CLI см. в следующих разделах.
+
+> [!div class="mx-tableFixed"]
+> | Свойство | Примеры значений | Описание |
+> | --- | --- | --- |
+> | Авторизация: действие | Microsoft.Authorization/roleAssignments/write. | Создание назначения роли |
+> |  | Microsoft.Authorization/roleAssignments/delete | Удаление назначения роли |
+> |  | Microsoft.Authorization/roleDefinitions/write | Создание или обновление определения роли |
+> |  | Microsoft.Authorization/roleDefinitions/delete | Удалить определение роли |
+> | Авторизация: область | /субскриптионс/{субскриптионид}<br/>/субскриптионс/{субскриптионид}/ресаурцеграупс/{ресаурцеграупнаме}/провидерс/микрософт.аусоризатион/ролеассигнментс/{ролеассигнментид} | Область действия |
+> | caller | admin@example.com<br/>ИД | Кто инициировал действие |
+> | eventTimestamp | 2021-03-01T22:07:41.126243 Z | Время, когда произошло действие |
+> | состояние: значение | Запуск<br/>Выполнено<br/>Сбой | Состояние действия |
+
+## <a name="azure-powershell"></a>Azure PowerShell
 
 Чтобы просмотреть журналы действий с помощью Azure PowerShell, используйте команду [Get-AzLog](/powershell/module/Az.Monitor/Get-AzLog).
 
@@ -68,56 +82,115 @@ Get-AzLog -StartTime (Get-Date).AddDays(-7) | Where-Object {$_.Authorization.Act
 Get-AzLog -ResourceGroupName pharma-sales -StartTime (Get-Date).AddDays(-7) | Where-Object {$_.Authorization.Action -like 'Microsoft.Authorization/roleDefinitions/*'}
 ```
 
-Эта команда выводит список всех изменений назначений ролей и определений ролей в подписке за последние семь дней.
+### <a name="filter-log-output"></a>Фильтровать выходные данные журнала
+
+Выходные данные журнала могут содержать много информации. Эта команда выводит список всех изменений назначения ролей и определений ролей в подписке за последние семь дней и фильтрует выходные данные:
 
 ```azurepowershell
 Get-AzLog -StartTime (Get-Date).AddDays(-7) | Where-Object {$_.Authorization.Action -like 'Microsoft.Authorization/role*'} | Format-List Caller,EventTimestamp,{$_.Authorization.Action},Properties
 ```
 
-```Example
-Caller                  : alain@example.com
-EventTimestamp          : 2/27/2020 9:18:07 PM
+Ниже приведен пример выходных данных журнала, отфильтрованного при создании назначения роли.
+
+```azurepowershell
+Caller                  : admin@example.com
+EventTimestamp          : 3/1/2021 10:07:42 PM
 $_.Authorization.Action : Microsoft.Authorization/roleAssignments/write
 Properties              :
                           statusCode     : Created
-                          serviceRequestId: 11111111-1111-1111-1111-111111111111
+                          serviceRequestId: {serviceRequestId}
                           eventCategory  : Administrative
+                          entity         : /subscriptions/{subscriptionId}/resourceGroups/example-group/providers/Microsoft.Authorization/roleAssignments/{roleAssignmentId}
+                          message        : Microsoft.Authorization/roleAssignments/write
+                          hierarchy      : {tenantId}/{subscriptionId}
 
-Caller                  : alain@example.com
-EventTimestamp          : 2/27/2020 9:18:05 PM
+Caller                  : admin@example.com
+EventTimestamp          : 3/1/2021 10:07:41 PM
 $_.Authorization.Action : Microsoft.Authorization/roleAssignments/write
 Properties              :
-                          requestbody    : {"Id":"22222222-2222-2222-2222-222222222222","Properties":{"PrincipalId":"33333333-3333-3333-3333-333333333333","RoleDefinitionId":"/subscriptions/00000000-0000-0000-0000-000000000000/providers
-                          /Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c","Scope":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pharma-sales"}}
+                          requestbody    : {"Id":"{roleAssignmentId}","Properties":{"PrincipalId":"{principalId}","PrincipalType":"User","RoleDefinitionId":"/providers/Microsoft.Authorization/roleDefinitions/fa23ad8b-c56e-40d8-ac0c-ce449e1d2c64","Scope":"/subscriptions/
+                          {subscriptionId}/resourceGroups/example-group"}}
+                          eventCategory  : Administrative
+                          entity         : /subscriptions/{subscriptionId}/resourceGroups/example-group/providers/Microsoft.Authorization/roleAssignments/{roleAssignmentId}
+                          message        : Microsoft.Authorization/roleAssignments/write
+                          hierarchy      : {tenantId}/{subscriptionId}
 
 ```
 
-Если для создания назначений ролей используется субъект-служба, свойство caller будет представлять собой идентификатор объекта. Вы можете использовать [Get-азадсервицепринЦипал](/powershell/module/az.resources/get-azadserviceprincipal) для получения сведений о субъекте-службе.
+Если для создания назначений ролей используется субъект-служба, свойство caller будет являться ИДЕНТИФИКАТОРом объекта субъекта-службы. Вы можете использовать [Get-азадсервицепринЦипал](/powershell/module/az.resources/get-azadserviceprincipal) для получения сведений о субъекте-службе.
 
 ```Example
-Caller                  : 44444444-4444-4444-4444-444444444444
-EventTimestamp          : 6/4/2020 9:43:08 PM
+Caller                  : {objectId}
+EventTimestamp          : 3/1/2021 9:43:08 PM
 $_.Authorization.Action : Microsoft.Authorization/roleAssignments/write
 Properties              : 
                           statusCode     : Created
-                          serviceRequestId: 55555555-5555-5555-5555-555555555555
-                          category       : Administrative
+                          serviceRequestId: {serviceRequestId}
+                          eventCategory  : Administrative
 ```
 
 ## <a name="azure-cli"></a>Azure CLI
 
-Чтобы просмотреть журналы действий с помощью Azure CLI, используйте команду [az monitor activity-log list](/cli/azure/monitor/activity-log#az-monitor-activity-log-list).
+Чтобы просмотреть журналы действий с помощью Azure CLI, используйте команду [az monitor activity-log list](/cli/azure/monitor/activity-log#az_monitor_activity_log_list).
 
-Эта команда выводит журналы действий в группе ресурсов с 27 февраля по просматривая семь дней:
+Эта команда выводит журналы действий в группе ресурсов с 1 марта, просматривая семь дней:
 
 ```azurecli
-az monitor activity-log list --resource-group pharma-sales --start-time 2020-02-27 --offset 7d
+az monitor activity-log list --resource-group example-group --start-time 2021-03-01 --offset 7d
 ```
 
-Эта команда выводит журналы действий для поставщика ресурсов авторизации с 27 февраля по просматривая семь дней:
+Эта команда выводит журналы действий для поставщика ресурсов авторизации с 1 марта, просматривая семь дней:
 
 ```azurecli
-az monitor activity-log list --namespace "Microsoft.Authorization" --start-time 2020-02-27 --offset 7d
+az monitor activity-log list --namespace "Microsoft.Authorization" --start-time 2021-03-01 --offset 7d
+```
+
+### <a name="filter-log-output"></a>Фильтровать выходные данные журнала
+
+Выходные данные журнала могут содержать много информации. Эта команда выводит список всех изменений назначения ролей и определений ролей в подписке, которые просматривают семь дней и отфильтровывают выходные данные:
+
+```azurecli
+az monitor activity-log list --namespace "Microsoft.Authorization" --start-time 2021-03-01 --offset 7d --query '[].{authorization:authorization, caller:caller, eventTimestamp:eventTimestamp, properties:properties}'
+```
+
+Ниже приведен пример выходных данных журнала, отфильтрованного при создании назначения роли.
+
+```azurecli
+[
+ {
+    "authorization": {
+      "action": "Microsoft.Authorization/roleAssignments/write",
+      "role": null,
+      "scope": "/subscriptions/{subscriptionId}/resourceGroups/example-group/providers/Microsoft.Authorization/roleAssignments/{roleAssignmentId}"
+    },
+    "caller": "admin@example.com",
+    "eventTimestamp": "2021-03-01T22:07:42.456241+00:00",
+    "properties": {
+      "entity": "/subscriptions/{subscriptionId}/resourceGroups/example-group/providers/Microsoft.Authorization/roleAssignments/{roleAssignmentId}",
+      "eventCategory": "Administrative",
+      "hierarchy": "{tenantId}/{subscriptionId}",
+      "message": "Microsoft.Authorization/roleAssignments/write",
+      "serviceRequestId": "{serviceRequestId}",
+      "statusCode": "Created"
+    }
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Authorization/roleAssignments/write",
+      "role": null,
+      "scope": "/subscriptions/{subscriptionId}/resourceGroups/example-group/providers/Microsoft.Authorization/roleAssignments/{roleAssignmentId}"
+    },
+    "caller": "admin@example.com",
+    "eventTimestamp": "2021-03-01T22:07:41.126243+00:00",
+    "properties": {
+      "entity": "/subscriptions/{subscriptionId}/resourceGroups/example-group/providers/Microsoft.Authorization/roleAssignments/{roleAssignmentId}",
+      "eventCategory": "Administrative",
+      "hierarchy": "{tenantId}/{subscriptionId}",
+      "message": "Microsoft.Authorization/roleAssignments/write",
+      "requestbody": "{\"Id\":\"{roleAssignmentId}\",\"Properties\":{\"PrincipalId\":\"{principalId}\",\"PrincipalType\":\"User\",\"RoleDefinitionId\":\"/providers/Microsoft.Authorization/roleDefinitions/fa23ad8b-c56e-40d8-ac0c-ce449e1d2c64\",\"Scope\":\"/subscriptions/{subscriptionId}/resourceGroups/example-group\"}}"
+    }
+  }
+]
 ```
 
 ## <a name="azure-monitor-logs"></a>Журналы Azure Monitor
@@ -139,7 +212,7 @@ az monitor activity-log list --namespace "Microsoft.Authorization" --start-time 
 
    ![Параметр журналов Azure Monitor на портале](./media/change-history-report/azure-log-analytics-option.png)
 
-1. При необходимости используйте [Azure Monitor log Analytics](../azure-monitor/logs/log-analytics-tutorial.md) для запроса и просмотра журналов. Дополнительные сведения см. в статье [Приступая к работе с Azure Monitor журнала запросов](../azure-monitor/logs/get-started-queries.md).
+1. При необходимости используйте [Azure Monitor log Analytics](../azure-monitor/logs/log-analytics-tutorial.md) для запроса и просмотра журналов. Дополнительные сведения см. [в разделе Приступая к работе с запросами журналов в Azure Monitor](../azure-monitor/logs/get-started-queries.md).
 
 Ниже приведен запрос, возвращающий новые назначения ролей, упорядоченные по целевому поставщику ресурсов.
 
@@ -161,6 +234,6 @@ AzureActivity
 
 ![Снимок экрана: журналы действий на портале расширенной аналитики](./media/change-history-report/azure-log-analytics.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
-* [Просмотр событий в журнале действий](../azure-resource-manager/management/view-activity-logs.md?toc=%2fazure%2fmonitoring-and-diagnostics%2ftoc.json)
-* [Monitor Subscription Activity with the Azure Activity Log](../azure-monitor/essentials/platform-logs-overview.md) (Мониторинг действий подписки с помощью журнала действий Azure)
+## <a name="next-steps"></a>Дальнейшие действия
+* [Просмотр журналов действий для отслеживания действий с ресурсами](../azure-resource-manager/management/view-activity-logs.md?toc=%2fazure%2fmonitoring-and-diagnostics%2ftoc.json)
+* [Мониторинг действий подписки с помощью журнала действий Azure](../azure-monitor/essentials/platform-logs-overview.md)

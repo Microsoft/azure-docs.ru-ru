@@ -8,12 +8,12 @@ metadata:
   ms.date: 09/03/2019
   ms.service: mysql
   ms.topic: landing-page
-  ms.openlocfilehash: 82c736b3256a099aa0dbd2edca14f402a3b935be
-  ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+  ms.openlocfilehash: 95ce5c287eb8b6b3ee745ff9305fb7861fa09989
+  ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/12/2020
-  ms.locfileid: "94543040"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102040521"
 landingContent:
 - title: Сведения о Базе данных Azure для MySQL
   linkLists:
@@ -23,6 +23,8 @@ landingContent:
       url: overview.md
     - text: Выбор правильного варианта MySQL
       url: select-right-deployment-type.md
+    - text: Общие сведения о поддерживаемых версиях MySQL
+      url: concepts-supported-versions.md
   - linkListType: whats-new
     links:
     - text: Читайте наш блог
@@ -37,10 +39,12 @@ landingContent:
       url: single-server/index.yml
   - linkListType: concept
     links:
+    - text: Основные понятия о серверах
+      url: concepts-servers.md
     - text: Общие сведения о ценовых категориях
       url: concepts-pricing-tiers.md
-    - text: Общие сведения о поддерживаемых версиях MySQL
-      url: concepts-supported-versions.md
+    - text: Ограничения
+      url: flexible-server/concepts-limitations.md
   - linkListType: quickstart
     links:
     - text: Создание сервера с помощью портала Azure

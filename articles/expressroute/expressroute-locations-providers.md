@@ -7,12 +7,12 @@ ms.service: expressroute
 ms.topic: conceptual
 ms.date: 02/10/2021
 ms.author: duau
-ms.openlocfilehash: 53c4f7868b808b5785c1d6d5ac100bb5a6186faa
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c4a50645ae1e7b412c5c98bafbd7746c7c435d85
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101739030"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102040759"
 ---
 # <a name="expressroute-partners-and-peering-locations"></a>Партнеры и одноранговые расположения ExpressRoute
 
@@ -147,7 +147,7 @@ ms.locfileid: "101739030"
 | **Токио** | [Equinix TY4](https://www.equinix.com/locations/asia-colocation/japan-colocation/tokyo-data-centers/ty4/) | 2 | Восточная Япония | 10G, 100G | Aryaka Networks, AT&T NetBond, BBIX, British Telecom, CenturyLink Cloud Connect, Colt, Equinix, Internet Initiative Japan Inc. — IIJ, Megaport, NTT Communications, NTT EAST, Orange, Softbank, Verizon |
 | **Токио 2** | [AT TOKYO](https://www.attokyo.com/) | 2 | Восточная Япония | 10G, 100G | В Токио, Orange, Токаи Communications |
 | **Торонто** | [Cologix TOR1](https://www.cologix.com/data-centers/toronto/tor1/) | 1 | Центральная Канада | 10G, 100G | AT&T NetBond, Bell Canada, CenturyLink Cloud Connect, Cologix, Equinix, IX Reach Megaport, Telus, Verizon, Zayo |
-| **Toronto2** | [Кологикс TOR2](https://www.cologix.com/data-centers/toronto/tor2/) | 1 | Центральная Канада | 10G, 100G | |
+| **Toronto2** | [Allied РЕИТ](https://www.alliedreit.com/property/905-king-st-w/) | 1 | Центральная Канада | 10G, 100G | |
 | **Ванкувер** | [Cologix VAN1](https://www.cologix.com/data-centers/vancouver/van1/) | 1 | Недоступно | 10G | Кологикс, Orange, Телус |
 | **Вашингтон, округ Колумбия** | [Equinix DC2](https://www.equinix.com/locations/americas-colocation/united-states-colocation/washington-dc-data-centers/dc2/) | 1 | Восточная часть США, восточная часть США 2 | 10G, 100G | Aryaka Networks, AT&T NetBond, Британская телекоммуникации, CenturyLink Cloud Connect, Кологикс, Colt, Comcast, Коресите, Equinix, Internet2, в облаке, железо,, доступ уровня 3, Orange, Неутрона Networks, NTT Communications, оранжевый, паккетфабрик, SES, спринт, Tata, Телиа,, Verizon, Zayo |
 | **Вашингтон, округ Колумбия 2** | [Coresite Reston](https://www.coresite.com/data-center-locations/northern-virginia-washington-dc) | 1 | Восточная часть США, восточная часть США 2 | 10G, 100G | CenturyLink Cloud Connect, Коресите, ИНТЕЛСАТ, Orange, ВИАСАТ, Zayo | 

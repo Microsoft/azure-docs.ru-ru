@@ -6,13 +6,12 @@ ms.author: yalavi
 services: monitoring
 ms.topic: conceptual
 ms.date: 09/22/2020
-ms.subservice: alerts
-ms.openlocfilehash: 19cf900b8e943b4f9ee69a6241ebc7ddb5a3dba6
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 228193066c45421c4dddee1802aba1feed59e9c8
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101704401"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102042680"
 ---
 # <a name="webhook-actions-for-log-alert-rules"></a>Действия веб-перехватчика для правил оповещений журнала
 

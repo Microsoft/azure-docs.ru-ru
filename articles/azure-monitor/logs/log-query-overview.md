@@ -1,17 +1,16 @@
 ---
 title: Запросы журналов в Azure Monitor
 description: Справочная информация о языке запросов Kusto, используемого в Azure Monitor. Статья включает дополнительные элементы, относящиеся к Azure Monitor, а также элементы, которые не поддерживаются в запросах журнала Azure Monitor.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 10/09/2020
-ms.openlocfilehash: 7ce73fc69ac0ff88c6048aad39fd07ae802b978d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 529fc432bf8777ef7e2b527f08e9cb59e42bf156
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101704231"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041031"
 ---
 # <a name="log-queries-in-azure-monitor"></a>Запросы журналов в Azure Monitor
 Azure Monitor журналы основаны на обозреватель данныхах Azure, а запросы журнала записываются с помощью того же языка запросов Kusto (ККЛ). Это расширенный язык, предназначенный для простоты чтения и создания, поэтому вы можете начать писать запросы с некоторыми базовыми рекомендациями.

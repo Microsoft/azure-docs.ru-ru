@@ -6,13 +6,12 @@ services: azure-monitor
 ms.topic: conceptual
 ms.date: 02/14/2021
 ms.author: yalavi
-ms.subservice: alerts
-ms.openlocfilehash: a862e54b5e1eddce5fcabf050eba1cfa1f103e30
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: bfa92a2fc58d479edd328dba9bf02d57ec66c0c9
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101734763"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041099"
 ---
 # <a name="unified-alerting--monitoring-in-azure-monitor-replaces-classic-alerting--monitoring"></a>Унифицированные оповещения и мониторинг в Azure Monitor заменяют классические оповещения и мониторинг
 

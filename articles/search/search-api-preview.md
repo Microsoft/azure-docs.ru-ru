@@ -8,12 +8,12 @@ ms.author: heidist
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 03/02/2021
-ms.openlocfilehash: a03707133b384f7717a624e810d0f7a41267969d
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 596113f9fcb7326010090e67b3a52ca03faa25d0
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101670879"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041983"
 ---
 # <a name="preview-features-in-azure-cognitive-search"></a>Предварительные версии функций в Azure Когнитивный поиск
 
@@ -25,7 +25,7 @@ ms.locfileid: "101670879"
 |---------|------------------|-------------|---------------|
 | [**Семантический поиск**](semantic-search-overview.md) | Релевантность (оценка) | Алгоритм семантического ранжирования, тип запроса и ответ на запрос. | [REST API службы "Поиск" версии 2020-06-30-Preview](/rest/api/searchservice/) |
 | [**средство проверки орфографии**](cognitive-search-aml-skill.md) | Запрос | Необязательная проверка орфографии для входных терминов запроса для простых, полных и семантических запросов. | [REST API службы "Поиск" версии 2020-06-30-Preview](/rest/api/searchservice/) |
-| Индексатор SharePoint Online | Источник данных индексатора | Новый источник данных для индексирования содержимого SharePoint на основе индексатора. | [REST API службы "Поиск" версии 2020-06-30-Preview](/rest/api/searchservice/) |
+| [**Индексатор SharePoint Online**](search-howto-index-sharepoint-online.md) | Источник данных индексатора | Новый источник данных для индексирования содержимого SharePoint на основе индексатора. | [REST API службы "Поиск" версии 2020-06-30-Preview](/rest/api/searchservice/) |
 | [**Навык Машинное обучение Azure (AML)**](cognitive-search-aml-skill.md) | Обогащение данных с помощью средств ИИ| Новый тип навыка для интеграции конечной точки с точкой Машинное обучение Azure. Начните с [этого руководства](cognitive-search-tutorial-aml-custom-skill.md). | Используйте [поиск REST API 2020-06-30-Preview](/rest/api/searchservice/) или 2019-05-06-Preview. Кроме того, на портале в проекте набора навыков при условии Когнитивный поиск и служб машинного обучения Azure развертываются в одной подписке. |
 | [**Феатуресмоде, параметр**](/rest/api/searchservice/preview-api/search-documents#query-parameters) | Релевантность (оценка) | Расширение оценки релевантности для включения подробностей: Оценка сходства полей, частота терминов поля и число совпадающих уникальных токенов для каждого поля. Эти точки данных можно использовать в [пользовательских решениях оценки](https://github.com/Azure-Samples/search-ranking-tutorial). | Добавьте этот параметр запроса, используя [Поиск документов (остальные)](/rest/api/searchservice/preview-api/search-documents) с помощью API-Version = 2020 – 06 -30-preview или 2019-05-06-Preview. |
 | [**Сеансы отладки**](cognitive-search-debug-session.md) | Портал, обогащение искусственного интеллекта (набор навыков) | Редактор набора навыков в сеансах, используемый для исследования и устранения проблем с набором навыков. Исправления, применяемые во время сеанса отладки, можно сохранить в наборе навыков в службе. | Только на портале, используя ссылки на промежуточные страницы на странице обзора для открытия сеанса отладки. |

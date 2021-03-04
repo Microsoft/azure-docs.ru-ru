@@ -1,21 +1,24 @@
 ---
-title: Справочник разработчика C# по функциям Azure
-description: Узнайте, как разрабатывать Функции Azure с помощью C#.
+title: Разработка функций C# с помощью функций Azure
+description: Узнайте, как использовать C# для разработки и публикации кода, который выполняется в процессе с помощью среды выполнения функций Azure.
 ms.topic: conceptual
 ms.custom: devx-track-csharp
 ms.date: 07/24/2020
-ms.openlocfilehash: 335cc3017e7b016666324306181c90a0e405a956
-ms.sourcegitcommit: fc8ce6ff76e64486d5acd7be24faf819f0a7be1d
+ms.openlocfilehash: e29b250b25bdafb2b3af26f5669f2ae5ed485457
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98806330"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041201"
 ---
-# <a name="azure-functions-c-developer-reference"></a>Справочник разработчика C# по функциям Azure
+# <a name="develop-c-functions-using-azure-functions"></a>Разработка функций C# с помощью функций Azure
 
 <!-- When updating this article, make corresponding changes to any duplicate content in functions-reference-csharp.md -->
 
 Эта статья описывает разработку функций Azure с помощью C# в библиотеках классов .NET.
+
+>[!IMPORTANT]
+>Эта статья поддерживает функции библиотеки классов .NET, которые выполняются внутри процесса со средой выполнения. Функции также поддерживают .NET 5. x, выполняя функции C# вне процесса и изолированы от среды выполнения. Дополнительные сведения см. в разделе [функции изолированного процесса .NET](dotnet-isolated-process-guide.md).
 
 Разработчик C# может также заинтересовать одну из следующих статей:
 
@@ -31,9 +34,11 @@ ms.locfileid: "98806330"
 
 | Версия среды выполнения функций | Максимальная версия .NET |
 | ---- | ---- |
-| Функции 3. x | .NET Core 3.1 |
+| Функции 3. x | .NET Core 3.1<br/>.NET 5,0<sup>*</sup> |
 | Функции 2.x | .NET Core 2.2 |
 | Функции 1.x | .NET Framework 4.7 |
+
+<sup>*</sup> Должен выполняться [вне процесса](dotnet-isolated-process-guide.md).
 
 Дополнительные сведения см. в статье [Обзор версий среды выполнения функций Azure](functions-versions.md) .
 
@@ -94,9 +99,11 @@ public static class SimpleExample
 
 Порядок параметров в сигнатуре функции не имеет значения. Например, можно указать параметры триггера до или после других привязок, а параметр для средства ведения журнала — до или после параметров триггера или привязки.
 
-### <a name="output-binding-example"></a>Пример выходной привязки
+### <a name="output-bindings"></a>Выходные привязки
 
-В следующем примере изменяется предыдущий путем добавления привязки очереди вывода. Функция записывает сообщение очереди, запускающее функцию для нового сообщения очереди в другую очередь.
+Функция может иметь ноль или одну выходную привязку, определенную с помощью выходных параметров. 
+
+Следующий пример изменяет предыдущий, добавляя привязку очереди вывода с именем `myQueueItemCopy` . Функция записывает содержимое сообщения, которое активирует функцию, в новое сообщение в другой очереди.
 
 ```csharp
 public static class SimpleExampleWithOutput
@@ -112,6 +119,8 @@ public static class SimpleExampleWithOutput
     }
 }
 ```
+
+Значения, назначенные выходным привязкам, записываются при выходе из функции. В функции можно использовать более одной выходной привязки, просто назначив значения нескольким выходным параметрам. 
 
 В справочных статьях по привязкам (например, [Привязки хранилища очередей Azure для службы "Функции Azure"](functions-bindings-storage-queue.md)) объясняется, какие типы параметров можно использовать с триггерами, а также с атрибутами входных или выходных привязок.
 
@@ -361,7 +370,7 @@ logger.LogInformation("partitionKey={partitionKey}, rowKey={rowKey}", partitionK
 }
 ```
 
-## <a name="log-custom-telemetry-in-c-functions"></a>Раздел о записи пользовательской телеметрии в функциях C#
+### <a name="log-custom-telemetry"></a><a name="log-custom-telemetry-in-c-functions"></a>Регистрация пользовательской телеметрии
 
 Для отправки пользовательских данных телеметрии из функций в Application Insights можно использовать зависящую от функций версию пакета SDK Application Insights: [Microsoft.Azure.WebJobs.Logging.ApplicationInsights](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights). Для установки этого пакета используйте следующую команду из командной строки:
 

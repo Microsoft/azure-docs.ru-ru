@@ -1,17 +1,16 @@
 ---
 title: Интеграция Log Analytics и Excel
 description: Получение Log Analytics запроса к Excel и обновление результатов в Excel.
-ms.subservice: logs
 ms.topic: conceptual
 author: roygalMS
 ms.author: roygal
 ms.date: 11/03/2020
-ms.openlocfilehash: 6fa181a35c46ed16e4e8c1884e66c54984c418ca
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: f2834e9bd91ecbbf32e0321179c2359862a5b605
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100624807"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041116"
 ---
 # <a name="integrate-log-analytics-and-excel"></a>Интеграция Log Analytics и Excel
 
@@ -105,6 +104,6 @@ in AnalyticsQuery
 
 Вы можете обновить данные непосредственно из Excel. В группе меню **данные** на ленте Excel нажмите кнопку **Обновить** .
  
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об интеграции Excel с внешними источниками данных см. в разделе [Импорт данных из внешних источников данных (Power Query)](https://support.office.com/article/import-data-from-external-data-sources-power-query-be4330b3-5356-486c-a168-b68e9e616f5a) .

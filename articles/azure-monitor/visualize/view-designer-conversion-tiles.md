@@ -3,15 +3,14 @@ title: Azure Monitor конструктора представлений для 
 description: Сведения для преобразования плиток в книги при переходе из представлений в Azure Monitor.
 author: austonli
 ms.author: aul
-ms.subservice: ''
 ms.topic: conceptual
 ms.date: 02/07/2020
-ms.openlocfilehash: 0fe1c5a4e6da1cb2955542c2651fcaf2d015b8f8
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 9b8d1840c0b1cea4c03312d38ed892fde94faa4c
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100624672"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043343"
 ---
 # <a name="azure-monitor-view-designer-tile-conversions"></a>Преобразования плиток конструктора представлений Azure Monitor
 [Конструктор представлений](view-designer.md) — это функция Azure Monitor, которая позволяет создавать пользовательские представления, помогающие визуализировать данные в рабочей области log Analytics, с диаграммами, списками и временными шкалами. Они выводятся и заменяются книгами, которые предоставляют дополнительные функциональные возможности. В этой статье приводятся сведения о преобразовании различных плиток в книги.
@@ -159,6 +158,6 @@ search *
 
 ![Книги из списка временной шкалы](media/view-designer-conversion-tiles/time-workbooks.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Обзор конструктора представлений для перехода к книгам](view-designer-conversion-overview.md)

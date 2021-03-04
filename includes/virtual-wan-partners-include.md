@@ -5,15 +5,15 @@ services: virtual-wan
 author: cherylmc
 ms.service: virtual-wan
 ms.topic: include
-ms.date: 10/09/2019
+ms.date: 03/03/2021
 ms.author: cherylmc
 ms.custom: include file
-ms.openlocfilehash: 6165499ef0dad61910f26bc9d740bd19a28c43c7
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: 7374c2727048e323ce0483dd42c574134e7315bd
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100106322"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102040552"
 ---
 В этом разделе вы можете перейти по ссылкам для получения дополнительных сведений об услугах, предлагаемых партнерами. Если ваш партнер устройства филиала отсутствует в указанном ниже разделе, попросите вашего поставщика ресурсов связаться с нами. Он может обратиться к нам, отправив сообщение по адресу azurevirtualwan@microsoft.com.
 
@@ -32,7 +32,7 @@ ms.locfileid: "100106322"
 |[Palo Alto Networks](https://researchcenter.paloaltonetworks.com/2018/09/azure-vwan-integration/) |[Рекомендации по развертыванию виртуальной глобальной сети Azure Palo Alto Networks](https://github.com/PaloAltoNetworks/microsoft_azure_virtual_wan)|
 |[Riverbed Technology](https://www.riverbed.com/go/steelconnect-azurewan.html)|[Виртуальная глобальная сеть Azure & Стилконнект EX](https://www.riverbed.com/partners/microsoft-azure-virtual-wan.html) |
 |[Серебро — пик]( https://www.silver-peak.com/silver-peak-expands-integration-with-microsoft-cloud-services)|[Инструкции по интеграции Еджеконнект и Microsoft Azure Virtual WAN](https://www.silver-peak.com/documentation/edgeconnect-and-azure-vwan-integration-guide)|
-|[Велоклауд — VMWare]( https://wan.velocloud.com/rs/098-RBR-178/images/sdwan-654-connect-azure-vwan-so-0819.pdf)|[Рекомендации по развертыванию Велоклауд для виртуальной глобальной сети Azure](https://kb.vmware.com/s/article/79000)|
+|[VMware SD-WAN]( https://wan.velocloud.com/rs/098-RBR-178/images/sdwan-654-connect-azure-vwan-so-0819.pdf)|[Инструкции по развертыванию виртуальной сети VMware для виртуальных глобальных сетей Azure](https://kb.vmware.com/s/article/79000)|
 | [Наоборот](https://www.versa-networks.com/partners/microsoft-azure-virtual-WAN) | [Настройка беспроводного SD-WAN и Microsoft Azure Вван (доступно для зарегистрированных клиентов)](https://docs.versa-networks.com/Versa_Director/Versa_Director_Configuration/Integrate_Director_and_Azure_Virtual_WAN) |
 
 *\* Прямая ссылка недоступна. Обратитесь за поддержкой к партнерской компании.*

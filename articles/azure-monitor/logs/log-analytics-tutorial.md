@@ -1,17 +1,16 @@
 ---
 title: Руководство по Log Analytics
 description: В этом учебнике описано, как использовать функции Log Analytics в Azure Monitor, чтобы создать и выполнить запрос журнала и анализировать его результат на портале Azure.
-ms.subservice: logs
 ms.topic: tutorial
 author: bwren
 ms.author: bwren
 ms.date: 10/07/2020
-ms.openlocfilehash: a7a6ba395769677fe46ddfff675640f6e15060a0
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 06a73b495cefc361db88d80413f4f4be50e105d1
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101723186"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041150"
 ---
 # <a name="log-analytics-tutorial"></a>Руководство по Log Analytics
 Log Analytics — это средство на портале Azure для изменения и запуска запросов журнала из данных, собранных журналами Azure Monitor, и интерактивного анализа результатов. Запросы Log Analytics можно использовать для извлечения записей, соответствующих определенным условиям, определения тенденций, анализа шаблонов и предоставления разнообразных сведений о данных. 

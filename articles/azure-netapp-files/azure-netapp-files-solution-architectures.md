@@ -12,14 +12,14 @@ ms.workload: storage
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: conceptual
-ms.date: 02/25/2021
+ms.date: 03/03/2021
 ms.author: b-juche
-ms.openlocfilehash: 756cadd42e8cda557a90c39e2412f5d4f3290835
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6041e863f6c887af35aa070f13e1406462ffc5b3
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101741214"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041575"
 ---
 # <a name="solution-architectures-using-azure-netapp-files"></a>Архитектура решений, использующих Azure NetApp Files
 В этой статье содержатся ссылки на рекомендации, которые помогут вам понять архитектуру решения для использования Azure NetApp Files.  
@@ -139,6 +139,7 @@ ms.locfileid: "101741214"
 ### <a name="analytics"></a>Аналитика
 
 * [Azure NetApp Files: Общая файловая система, используемая в сетке SAS на Microsoft Azure](https://communities.sas.com/t5/Administration-and-Deployment/Azure-NetApp-Files-A-shared-file-system-to-use-with-SAS-Grid-on/m-p/705192)
+* [Azure NetApp Files: Общая файловая система для использования с сеткой SAS в MS Azure — RHEL 8.3/нконнект UPDATE](https://communities.sas.com/t5/Administration-and-Deployment/Azure-NetApp-Files-A-shared-file-system-to-use-with-SAS-Grid-on/m-p/722261#M21648)
 * [Рекомендации по использованию Microsoft Azure с SAS®](https://communities.sas.com/t5/Administration-and-Deployment/Best-Practices-for-Using-Microsoft-Azure-with-SAS/m-p/676833#M19680)
 
 ## <a name="azure-platform-services-solutions"></a>Решения для служб платформы Azure

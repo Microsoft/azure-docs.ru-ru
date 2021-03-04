@@ -113,12 +113,12 @@
             - name: Определение необходимых устройств
               displayName: 'virtual, Dell, HPE, SMB, certified, hardware, deployment'
               href: how-to-identify-required-appliances.md
-            - name: Установка ПО
-              displayName: 'virtual, Dell, HPE, SMB, certified, hardware, port mirroring, ESXi, install, deploy'
-              href: how-to-install-software.md
             - name: Настройка сети
               displayName: 'passive, browsers, network access, TAP, switch, mirroring, firewall, SPAN, monitoring, tuning'
               href: how-to-set-up-your-network.md
+            - name: Установка ПО
+              displayName: 'virtual, Dell, HPE, SMB, certified, hardware, port mirroring, ESXi, install'
+              href: how-to-install-software.md
         - name: Подготовка датчиков
           items:
             - name: Подключение датчиков
@@ -155,7 +155,7 @@
         - name: Управление датчиками в облаке
           href: how-to-manage-sensors-on-the-cloud.md
         - name: Управление локальной консолью управления
-          displayName: 'upgrade, activation, certificate, SSL, TLS, connect, sync, backup, restore, software update, failure'
+          displayName: 'upgrade, activation, certificate, software update, backup, restore, proxy, password recovery'
           href: how-to-manage-the-on-premises-management-console.md
         - name: Работа с пакетами аналитики угроз
           href: how-to-work-with-threat-intelligence-packages.md

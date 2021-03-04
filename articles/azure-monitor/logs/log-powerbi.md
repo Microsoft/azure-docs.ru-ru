@@ -1,17 +1,16 @@
 ---
 title: Интеграция Log Analytics с Power BI и Excel
 description: Как отправить результаты из Log Analytics в Power BI
-ms.subservice: logs
 ms.topic: conceptual
 author: roygalMS
 ms.author: roygal
 ms.date: 11/03/2020
-ms.openlocfilehash: d1db5f5e4164d971dff3ec6b042fa4b0a969e508
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 894b87bfa17a59db20b424199a4021ad75b182fc
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101704248"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041065"
 ---
 # <a name="log-analytics-integration-with-power-bi"></a>Интеграция Log Analytics с Power BI
 

@@ -1,17 +1,16 @@
 ---
 title: Фильтры в представлениях Azure Monitor | Документация Майкрософт
 description: Фильтр в представлении Azure Monitor позволяет пользователям фильтровать данные в представлении по значению определенного свойства, не изменяя само представление.  В этой статье описывается, как использовать фильтр и добавить его в настраиваемое представление.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 06/22/2018
-ms.openlocfilehash: d428382493e15d2e0571f4cb4b6f090cf9056fe4
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 988bb1467e7bf2cca31151d85c57677b235cab30
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100624651"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043309"
 ---
 # <a name="filters-in-azure-monitor-views"></a>Фильтры в представлениях Azure Monitor
 **Фильтр** в [представлении Azure Monitor](view-designer.md) позволяет пользователям фильтровать данные в представлении по значению определенного свойства, не изменяя само представление.  Например, можно разрешить пользователям представления фильтровать это представление, чтобы просматривать данные только с определенного компьютера или набора компьютеров.  Можно создать несколько фильтров в одном представлении, чтобы разрешить пользователям выполнять фильтрацию по нескольким свойствам.  В этой статье описывается, как использовать фильтр и добавить его в настраиваемое представление.
@@ -50,8 +49,8 @@ ms.locfileid: "100624651"
 | Имя поля | Запрос значений | Тег |
 |:--|:--|:--|
 | Компьютер   | Heartbeat &#124; distinct Computer &#124; sort by Computer asc | Компьютеры |
-| EventLevelName | Event &#124; distinct EventLevelName | Статус |
-| SeverityLevel | Syslog &#124; distinct SeverityLevel | Статус |
+| EventLevelName | Event &#124; distinct EventLevelName | Severity |
+| SeverityLevel | Syslog &#124; distinct SeverityLevel | Severity |
 | SvcChangeType | ConfigurationChange &#124; distinct svcChangeType | ChangeType |
 
 
@@ -75,5 +74,5 @@ Event | where ${Computers} | summarize count() by EventLevelName
 Event | where ${Computers} | where ${Severity} | summarize count() by EventLevelName
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте больше об [элементах визуализации](view-designer-parts.md), которые можно добавить в представление.

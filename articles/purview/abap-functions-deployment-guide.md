@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: conceptual
 ms.date: 11/13/2020
-ms.openlocfilehash: 1d9f1c5beafb7b54c5fd0189dd738ff8e346a3e8
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 911238efafb948b304455cf75cc4ec2c3c605c76
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101695995"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102042101"
 ---
 # <a name="deploy-the-metadata-extraction-abap-function-module-for-the-sap-r3-family-of-bridges"></a>Разверните модуль извлечения метаданных ABAP для семейства мостов SAP R3. 
 В этой статье описаны действия по развертыванию модуля функции ABAP на сервере SAP.
@@ -74,7 +74,7 @@ ms.locfileid: "101695995"
 
 3.  Перейдите на \" вкладку исходный код \" . Существует два способа развертывания кода для функции.
 
-    а.  В главном меню отправьте \_ файл Z мити \_DOWNLOAD.txt, выбрав пункт Служебные программы = \> другие служебные программы = отправить \> /скачать = \> Отправить.
+    а.  В главном меню отправьте текстовый файл [Z \_ Мити \_ download](https://github.com/Azure/Purview-Samples/tree/master/connectors/sap) , выбрав пункт Служебные программы = \> Дополнительные служебные программы = отправить \> /скачать = \> Отправить.
 
     b.  Кроме того, можно открыть файл, скопировать его содержимое и вставить в \" область исходного кода \" .
 

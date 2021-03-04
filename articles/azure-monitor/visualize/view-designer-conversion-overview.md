@@ -3,15 +3,14 @@ title: Azure Monitor конструктора представлений в кн
 description: Переход от представлений к книгам в Azure Monitor.
 author: austonli
 ms.author: aul
-ms.subservice: ''
 ms.topic: conceptual
 ms.date: 08/04/2020
-ms.openlocfilehash: 7c43d1e4dda10cca6b868ef814ec8298d6e21fd0
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 19de2a3d3f5a998c09db7c4df689b0378e2597fd
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101736973"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043377"
 ---
 # <a name="azure-monitor-view-designer-to-workbooks-transition-guide"></a>Azure Monitor конструктора представлений в книгу с руководством по переходу
 [Конструктор представлений](view-designer.md) — это функция Azure Monitor, которая позволяет создавать пользовательские представления, помогающие визуализировать данные в рабочей области log Analytics, с диаграммами, списками и временными шкалами. Они были перенесены в книги, чтобы предоставить гибкий холст для анализа данных и создания визуальных отчетов в портал Azure. Эта статья поможет вам выполнить переход из конструктора представлений в книги. 

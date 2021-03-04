@@ -1,17 +1,16 @@
 ---
 title: Источники данных агента Log Analytics в Azure Monitor
 description: Источники данных определяют, какие данные журнала Azure Monitor будет собирать из агентов и других подключенных источников.  В этой статье описывается, каким образом Azure Monitor использует источники данных, и рассказывается, как их настраивать, а также приводятся общие сведения о различных доступных источниках данных.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
-ms.date: 10/21/2020
-ms.openlocfilehash: 8b0debed6e0865f39cd42c7003347b2510600f81
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 02/26/2021
+ms.openlocfilehash: 51cdee9c899feeb003a7d6301d2da0749fad65e9
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101720024"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041946"
 ---
 # <a name="log-analytics-agent-data-sources-in-azure-monitor"></a>Источники данных агента Log Analytics в Azure Monitor
 Данные, Azure Monitor собираемые из виртуальных машин с помощью агента [log Analytics](./log-analytics-agent.md) , определяются источниками данных, настроенными в [рабочей области log Analytics](../logs/data-platform-logs.md).   Каждый источник данных создает записи определенного типа, а каждый тип обладает собственным набором свойств.
@@ -40,11 +39,11 @@ ms.locfileid: "101720024"
 
 
 ## <a name="configuring-data-sources"></a>Настройка источников данных
-Чтобы настроить источники данных для агентов Log Analytics, перейдите в меню **log Analytics рабочие области** в портал Azure и выберите рабочую область. Щелкните **Дополнительные параметры** , а затем — **данные**. Выберите источник данных, который необходимо настроить. Вы можете перейти по ссылкам в таблице выше, чтобы получить документацию по каждому источнику данных и сведения о его конфигурации.
+Чтобы настроить источники данных для агентов Log Analytics, перейдите в меню **log Analytics рабочие области** в портал Azure и выберите рабочую область. Щелкните **Конфигурация агентов**. Выберите вкладку источника данных, который необходимо настроить. Вы можете перейти по ссылкам в таблице выше, чтобы получить документацию по каждому источнику данных и сведения о его конфигурации.
 
 Любая конфигурация доставляется всем агентам, подключенным к этой рабочей области.  Вы не можете исключить подключенные агенты из этой конфигурации.
 
-![Настройка событий Windows](media/agent-data-sources/configure-events.png)
+[![Настройка событий Windows](media/agent-data-sources/configure-events.png)](media/agent-data-sources/configure-events.png#lightbox)
 
 
 

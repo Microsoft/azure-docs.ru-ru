@@ -1,17 +1,16 @@
 ---
 title: Создание представлений для анализа данных журнала в Azure Monitor | Документация Майкрософт
 description: С помощью конструктора представлений в Azure Monitor можно создавать пользовательские представления, отображаемые в портал Azure и содержащие разнообразные визуализации данных в рабочей области Log Analytics. В этой статье содержится обзор конструктора представлений и приведены процедуры по созданию и изменению пользовательских представлений.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 08/04/2020
-ms.openlocfilehash: 11a6d21a7a066d331a92453e9aaa876800da0bf4
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: cb0274260022c55ae657b5b28b2c9ad1903d0296
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101700547"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043275"
 ---
 # <a name="create-custom-views-by-using-view-designer-in-azure-monitor"></a>Создание пользовательских представлений с помощью конструктора представлений в Azure Monitor
 С помощью конструктора представлений в Azure Monitor можно создавать разнообразные пользовательские представления в портал Azure, которые могут помочь визуализировать данные в рабочей области Log Analytics. Эта статья содержит обзор конструктора представлений и процедур по созданию и изменению пользовательских представлений.

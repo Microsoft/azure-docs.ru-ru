@@ -183,6 +183,8 @@
       href: core/concepts-telemetry-properties-commands.md
     - name: Подключение устройств IoT Edge
       href: core/concepts-iot-edge.md
+    - name: Рекомендации
+      href: core/concepts-best-practices.md
 - name: Практические руководства
   items:
     - name: Разработка и подключение устройств

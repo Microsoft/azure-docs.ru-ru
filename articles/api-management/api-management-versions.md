@@ -9,12 +9,12 @@ ms.topic: article
 ms.date: 02/10/2021
 ms.author: jodowns
 ms.custom: fasttrack-new
-ms.openlocfilehash: 9dc44b4b898603df88d1bdd8c36ddfb6449335ac
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: 55951f288314d92cf5057e7d5c1e988f65cb3e14
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100547202"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102040385"
 ---
 # <a name="versions-in-azure-api-management"></a>Версии в службе управления API Azure
 
@@ -42,7 +42,7 @@ ms.locfileid: "100547202"
 
 Например, `https://apis.contoso.com/products/v1` и `https://apis.contoso.com/products/v2` могут ссылаться на тот же `products` API, но и на версии `v1` и `v2` соответственно.
 
-Формат URL-адреса запроса API при использовании управления версиями на основе заголовков: `https://{yourDomain}/{apiName}/{versionIdentifier}/{operationId}` .
+Формат URL-адреса запроса API при использовании управления версиями на основе пути: `https://{yourDomain}/{apiName}/{versionIdentifier}/{operationId}` .
 
 ### <a name="header-based-versioning"></a>Управление версиями на основе заголовков
 

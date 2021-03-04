@@ -7,13 +7,13 @@ author: HeidiSteen
 ms.author: heidist
 ms.service: cognitive-search
 ms.topic: conceptual
-ms.date: 12/14/2020
-ms.openlocfilehash: 7277ad060c57b44d633054c4fc4d29d151bd7192
-ms.sourcegitcommit: cc13f3fc9b8d309986409276b48ffb77953f4458
+ms.date: 03/03/2021
+ms.openlocfilehash: 234a0137f0a9487a56b3e0343eaea375d2f9a1af
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97400817"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043020"
 ---
 # <a name="querying-in-azure-cognitive-search"></a>Запросы в Azure Когнитивный поиск
 
@@ -84,8 +84,8 @@ POST https://[service name].search.windows.net/indexes/hotels-sample-index/docs/
 
 | Сценарий фильтра | Описание |
 |-----------------|-------------|
-| Фильтры диапазонов | В Когнитивный поиск Azure запросы к диапазону создаются с помощью параметра Filter. Дополнительные сведения и примеры см. в разделе [Пример фильтра диапазона](search-query-simple-examples.md#example-4-range-filters). |
-| Поиск по географическому расположению | Если поле с возможностью поиска имеет [тип EDM. GeographyPoint](/rest/api/searchservice/supported-data-types), можно создать критерий фильтра для элемента управления поиска "соседние элементы" или "Поиск на основе карт". Поля, на которых размещен географический поиск, содержат координаты. Дополнительные сведения и пример см. в разделе [Пример географического поиска](search-query-simple-examples.md#example-5-geo-search). |
+| Фильтры диапазонов | В Когнитивный поиск Azure запросы к диапазону создаются с помощью параметра Filter. Дополнительные сведения и примеры см. в разделе [Пример фильтра диапазона](search-query-simple-examples.md#example-5-range-filters). |
+| Поиск по географическому расположению | Если поле с возможностью поиска имеет [тип EDM. GeographyPoint](/rest/api/searchservice/supported-data-types), можно создать критерий фильтра для элемента управления поиска "соседние элементы" или "Поиск на основе карт". Поля, на которых размещен географический поиск, содержат координаты. Дополнительные сведения и пример см. в разделе [Пример географического поиска](search-query-simple-examples.md#example-6-geo-search). |
 | Фасетная навигация | Структура навигации аспекта превращается в Instrumental при переходе пользователя при вызове фильтра в ответ на `onclick` событие аспекта. Таким образом, аспекты и фильтры переходят в руки. Если вы добавите навигацию по аспектам, вам понадобятся фильтры для завершения работы. Дополнительные сведения см. [в разделе Создание фильтра аспектов](search-filters-facets.md). |
 
 > [!NOTE]
@@ -101,12 +101,12 @@ POST https://[service name].search.windows.net/indexes/hotels-sample-index/docs/
 
 | Тип запроса | Использование | Дополнительные сведения и примеры |
 |------------|--------|------------------------------|
-| [Поиск по полям](query-lucene-syntax.md#bkmk_fields) | **`search`**  параметр **`queryType=full`**  | Создайте сложное выражение запроса, предназначенное для одного поля. <br/>[Пример поиска по полям](search-query-lucene-examples.md#example-2-fielded-search) |
-| [нечеткий поиск](query-lucene-syntax.md#bkmk_fuzzy) | **`search`** параметр **`queryType=full`** | Находит совпадения с терминами, которые имеют сходную конструкцию или орфографию. <br/>[Пример поиска нечетких соответствий](search-query-lucene-examples.md#example-3-fuzzy-search) |
-| [поиск по сходству](query-lucene-syntax.md#bkmk_proximity) | **`search`** параметр **`queryType=full`** | Находит термины, которые расположены в документе рядом друг с другом. <br/>[Пример поиска с учетом расположения](search-query-lucene-examples.md#example-4-proximity-search) |
-| [повышение термина](query-lucene-syntax.md#bkmk_termboost) | **`search`** параметр **`queryType=full`** | Присваивает более высокий приоритет документам, которые содержат определенный термин. <br/>[Пример повышения приоритета термина](search-query-lucene-examples.md#example-5-term-boosting) |
-| [Поиск регулярных выражений](query-lucene-syntax.md#bkmk_regex) | **`search`** параметр **`queryType=full`** | Находит совпадения на основе содержимого регулярного выражения. <br/>[Пример поиска с использованием регулярного выражения](search-query-lucene-examples.md#example-6-regex) |
-|  [Поиск с подстановочным знаком или префиксом](query-lucene-syntax.md#bkmk_wildcard) | **`search`** параметр с * *_`~`_* или **`?`** , **`queryType=full`**| Находит совпадения с учетом префикса и символа тильды (`~`) или одного символа (`?`). <br/>[Пример поиска с использованием подстановочных знаков](search-query-lucene-examples.md#example-7-wildcard-search) |
+| [Поиск по полям](query-lucene-syntax.md#bkmk_fields) | **`search`**  параметр **`queryType=full`**  | Создайте сложное выражение запроса, предназначенное для одного поля. <br/>[Пример поиска по полям](search-query-lucene-examples.md#example-1-fielded-search) |
+| [нечеткий поиск](query-lucene-syntax.md#bkmk_fuzzy) | **`search`** параметр **`queryType=full`** | Находит совпадения с терминами, которые имеют сходную конструкцию или орфографию. <br/>[Пример поиска нечетких соответствий](search-query-lucene-examples.md#example-2-fuzzy-search) |
+| [поиск по сходству](query-lucene-syntax.md#bkmk_proximity) | **`search`** параметр **`queryType=full`** | Находит термины, которые расположены в документе рядом друг с другом. <br/>[Пример поиска с учетом расположения](search-query-lucene-examples.md#example-3-proximity-search) |
+| [повышение термина](query-lucene-syntax.md#bkmk_termboost) | **`search`** параметр **`queryType=full`** | Присваивает более высокий приоритет документам, которые содержат определенный термин. <br/>[Пример повышения приоритета термина](search-query-lucene-examples.md#example-4-term-boosting) |
+| [Поиск регулярных выражений](query-lucene-syntax.md#bkmk_regex) | **`search`** параметр **`queryType=full`** | Находит совпадения на основе содержимого регулярного выражения. <br/>[Пример поиска с использованием регулярного выражения](search-query-lucene-examples.md#example-5-regex) |
+|  [Поиск с подстановочным знаком или префиксом](query-lucene-syntax.md#bkmk_wildcard) | **`search`** параметр с * *_`~`_* или **`?`** , **`queryType=full`**| Находит совпадения с учетом префикса и символа тильды (`~`) или одного символа (`?`). <br/>[Пример поиска с использованием подстановочных знаков](search-query-lucene-examples.md#example-6-wildcard-search) |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

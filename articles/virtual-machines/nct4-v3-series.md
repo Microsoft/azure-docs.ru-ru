@@ -7,12 +7,12 @@ author: vikancha-MSFT
 ms.topic: conceptual
 ms.date: 01/12/2021
 ms.author: vikancha
-ms.openlocfilehash: 3b536f08b8917fa05942a35a8ca930b08687c83b
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 0ead1c5772cb4a2e231867ef1e77bfa646cbb29e
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101674702"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102042748"
 ---
 # <a name="ncast4_v3-series"></a>Серия NCasT4_v3 
 

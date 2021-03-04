@@ -1,17 +1,16 @@
 ---
 title: Управление рабочими областями Log Analytics в Azure Monitor | Документация Майкрософт
 description: Вы можете управлять доступом к данным, хранящимся в Log Analytics рабочей области, в Azure Monitor с помощью ресурсов, рабочей области или разрешений уровня таблицы. В этой статье подробно описано, как выполнить.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 04/10/2019
-ms.openlocfilehash: bc03d8cdcaf0079ef15e648d16fd5656d9da368c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 79bcca688146b2c2382876b6a61bc0eee34382a1
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101725685"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102040963"
 ---
 # <a name="manage-access-to-log-data-and-workspaces-in-azure-monitor"></a>Управление доступом к данным журнала и рабочим областям в Azure Monitor
 

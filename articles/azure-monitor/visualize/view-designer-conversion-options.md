@@ -3,15 +3,14 @@ title: Параметры преобразования конструктора 
 description: Параметры преобразования для перехода из представлений в книги в Azure Monitor.
 author: austonli
 ms.author: aul
-ms.subservice: ''
 ms.topic: conceptual
 ms.date: 02/07/2020
-ms.openlocfilehash: a36361430d6ac2af598c2255aed5830150f02217
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: b8b6b8b41c729c3cbb6cf4589d679e93149e5314
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100625509"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102043411"
 ---
 # <a name="azure-monitor-view-designer-to-workbooks-conversion-options"></a>Параметры преобразования конструктора Azure Monitor представлений в книги
 [Конструктор представлений](view-designer.md) — это функция Azure Monitor, которая позволяет создавать пользовательские представления, помогающие визуализировать данные в рабочей области log Analytics, с диаграммами, списками и временными шкалами. Они выводятся и заменяются книгами, которые предоставляют дополнительные функциональные возможности. В этой статье сравниваются фундаментальные понятия между двумя вариантами и преобразования представлений в книги.
@@ -43,5 +42,5 @@ ms.locfileid: "100625509"
 ![Convert](media/view-designer-conversion-options/convert-donut.png)
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Доступ к книгам & разрешения](view-designer-conversion-access.md)

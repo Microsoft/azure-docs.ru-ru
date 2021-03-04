@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.tgt_pltfrm: vm-windows-sql-server
 ms.workload: iaas-sql-server
 ms.date: 11/07/2020
-ms.openlocfilehash: 1ef7943586123a1870ed9a2d0c21aa8b5fd38c1c
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.openlocfilehash: 139852949a3744fd603cb197b2e27fa32679aae0
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360005"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102042429"
 ---
 # <a name="automatic-registration-with-sql-iaas-agent-extension"></a>Автоматическая регистрация с помощью расширения агента IaaS SQL
 [!INCLUDE[appliesto-sqlvm](../../includes/appliesto-sqlvm.md)]
@@ -24,13 +24,13 @@ ms.locfileid: "97360005"
 
 В этой статье описывается включение функции автоматической регистрации. Кроме того, можно [зарегистрировать одну виртуальную машину](sql-agent-extension-manually-register-single-vm.md)или [зарегистрировать виртуальные машины](sql-agent-extension-manually-register-vms-bulk.md) с помощью расширения агента IaaS SQL. 
 
-## <a name="overview"></a>Общие сведения
+## <a name="overview"></a>Обзор
 
 Регистрация виртуальной машины SQL Server с [расширением агента IaaS SQL](sql-server-iaas-agent-extension-automate-management.md) для разблокировки полного набора преимуществ. 
 
 Если включена автоматическая регистрация, задание выполняется ежедневно, чтобы определить, установлены ли SQL Server на всех незарегистрированных виртуальных машинах в подписке. Это делается путем копирования двоичных файлов расширения агента IaaS SQL на виртуальную машину, а затем запуска одноразовой программы, которая проверяет наличие куста реестра SQL Server. При обнаружении SQL Server Hive виртуальная машина регистрируется с расширением в упрощенном режиме. Если в реестре нет SQL Server Hive, двоичные файлы будут удалены.
 
-После включения автоматической регистрации для подписки все текущие и будущие виртуальные машины, на которых установлено SQL Server, будут зарегистрированы в расширении агента IaaS SQL в упрощенном режиме. Чтобы воспользоваться полным набором функций, вам по-прежнему необходимо [вручную перейти в режим полного управления](sql-agent-extension-manually-register-single-vm.md#upgrade-to-full) . 
+После включения автоматической регистрации для подписки все текущие и будущие виртуальные машины, на которых установлено SQL Server, будут зарегистрированы в расширении агента IaaS SQL **в упрощенном режиме без простоя и без перезапуска службы SQL Server**. Чтобы воспользоваться полным набором функций, вам по-прежнему необходимо [вручную перейти в режим полного управления](sql-agent-extension-manually-register-single-vm.md#upgrade-to-full) . 
 
 > [!IMPORTANT]
 > Расширение агента IaaS SQL собирает данные для предоставления клиентам дополнительных преимуществ при использовании SQL Server в виртуальных машинах Azure. Корпорация Майкрософт не будет использовать эти данные для аудита лицензирования без согласия клиента. Дополнительные сведения см. в разделе [SQL Server о конфиденциальности](/sql/sql-server/sql-server-privacy#non-personal-data) .
@@ -93,7 +93,7 @@ Unregister-AzProviderFeature -FeatureName BulkRegistration -ProviderNamespace Mi
 1. Выполните скрипт, передав идентификаторов подписки в качестве параметров, таких как   
    `.\EnableBySubscription.ps1 -SubscriptionList SubscriptionId1,SubscriptionId2`
 
-   Пример: 
+   Пример. 
 
    ```console
    .\EnableBySubscription.ps1 -SubscriptionList a1a1a-aa11-11aa-a1a1-a11a111a1,b2b2b2-bb22-22bb-b2b2-b2b2b2bb
