@@ -18,6 +18,9 @@
           href: get-started-cli.md
 - name: Основные понятия
   items:
+    - name: Конфигурация
+      href: configuration.md
+      displayName: Routing
     - name: Поддержка API с помощью Функций Azure
       href: apis.md
     - name: Маршруты
@@ -42,6 +45,8 @@
       href: application-settings.md
     - name: Настройка интерфейсных платформ и библиотек
       href: front-end-frameworks.md
+    - name: Сброс маркеров развертывания
+      href: deployment-token-management.md
 - name: Учебники
   items:
     - name: Публикация из генератора статических сайтов

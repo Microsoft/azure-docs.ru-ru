@@ -1,0 +1,31 @@
+- name: Проверенные партнерские решения для службы хранилища Azure
+  href: /azure/storage/solution-integration
+- name: Партнерские решения для больших данных и аналитики службы хранилища
+  items:
+    - name: Обзор проверенных партнеров
+      href: .\validated-partners\analytics\partner-overview.md
+  expanded: false
+- name: 'Партнерские решения для BCDR, резервного копирования и архивации для службы хранилища Azure'
+  items:
+    - name: Обзор проверенных партнеров
+      href: .\validated-partners\backup-archive-disaster-recovery\partner-overview.md
+    - name: Краткое руководство по использованию Commvault
+      href: .\validated-partners\backup-archive-disaster-recovery\commvault\commvault-solution-guide.md
+    - name: Краткое руководство по использованию Veeam
+      href: .\validated-partners\backup-archive-disaster-recovery\veeam\veeam-solution-guide.md
+  expanded: false
+- name: Партнерские решения для контейнеров службы хранилища Azure
+  items:
+    - name: Обзор проверенных партнеров
+      href: .\validated-partners\container-solutions\partner-overview.md
+  expanded: false
+- name: Партнерские решения для переноса данных службы хранилища Azure и управления ими
+  items:
+    - name: Обзор проверенных партнеров
+      href: .\validated-partners\data-management\partner-overview.md
+  expanded: false
+- name: Партнерские решения для основного и дополнительного хранилища в службе хранилища Azure
+  items:
+    - name: Обзор проверенных партнеров
+      href: .\validated-partners\primary-secondary-storage\partner-overview.md
+  expanded: false

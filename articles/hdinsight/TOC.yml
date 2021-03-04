@@ -40,8 +40,18 @@
           href: 'https://azure.microsoft.com/resources/samples/?service=hdinsight'
     - name: Основные понятия
       items:
-        - name: Компоненты Apache в HDInsight
-          href: ./hdinsight-component-versioning.md
+        - name: Управление версиями
+          items:
+            - name: Введение в управление версиями
+              href: ./hdinsight-overview-versioning.md
+            - name: Версии HDInsight
+              href: ./hdinsight-component-versioning.md
+            - name: HDInsight версии 4.0
+              href: ./hdinsight-40-component-versioning.md
+            - name: HDInsight версии 3.6
+              href: ./hdinsight-36-component-versioning.md
+            - name: Устаревшие версии HDInsight
+              href: ./hdinsight-retired-versions.md
         - name: Корпоративный пакет безопасности
           href: ./enterprise-security-package.md
         - name: Заметки о выпуске Hortonworks
@@ -650,7 +660,7 @@
             - name: Использование Apache Kafka с Центром Интернета вещей
               href: ./kafka/apache-kafka-connector-iot-hub.md
             - name: Реестр схем Confluent
-              href: ./kafka/schema-registry.md
+              href: ./kafka/apache-kafka-producer-consumer-api.md
             - name: Создание конвейеров потоковой передачи
               items:
                 - name: "Apache Spark, Apache Kafka и Azure Cosmos\_DB"
@@ -817,6 +827,10 @@
               href: ./interactive-query/apache-hive-query-odbc-driver-powershell.md
         - name: Управление
           items:
+            - name: Копирование таблиц Hive между учетными записями хранения
+              href: ./interactive-query/hive-migration-across-storage-accounts.md
+            - name: Перенос стандартного хранилища метаданных Hive во внешнее хранилище метаданных на базе Azure HDInsight
+              href: ./interactive-query/hive-default-metastore-export-import.md
             - name: "Перенос рабочих нагрузок Hive в HDInsight\_4.0"
               href: ./interactive-query/apache-hive-migrate-workloads.md
             - name: Оптимизация запросов Apache Hive

@@ -97,9 +97,9 @@
           href: logs/resource-manager-log-queries.md
         - name: Workbooks
           href: visualize/resource-manager-workbooks.md
-        - name: Azure Monitor для контейнеров
+        - name: Аналитика контейнеров
           href: containers/resource-manager-container-insights.md
-        - name: Azure Monitor для виртуальных машин
+        - name: Аналитика виртуальных машин
           href: vm/resource-manager-vminsights.md
     - name: Azure CLI
       href: cli-samples.md
@@ -879,8 +879,6 @@
             - name: Обзор
               displayname: 'user behavior analytics, user behavior, usage, behavioral analytics'
               href: app/usage-overview.md
-            - name: Отправка контекста пользователя
-              href: app/usage-send-user-context.md
             - name: 'Пользователи, сеансы, события'
               href: app/usage-segmentation.md
             - name: Воронки
@@ -988,7 +986,7 @@
           href: app/change-analysis-visualizations.md
         - name: Диагностика
           href: app/change-analysis-troubleshoot.md
-    - name: Azure Monitor для виртуальных машин
+    - name: Аналитика виртуальных машин
       items:
         - name: Обзор
           href: vm/vminsights-overview.md
@@ -1042,7 +1040,7 @@
           href: vm/vminsights-workbooks.md
         - name: Отключение мониторинга
           href: vm/vminsights-optout.md
-    - name: Azure Monitor для контейнеров
+    - name: Аналитика контейнеров
       items:
         - name: Обзор
           href: containers/container-insights-overview.md

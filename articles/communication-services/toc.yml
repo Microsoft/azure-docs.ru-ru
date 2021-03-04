@@ -5,6 +5,8 @@
   items:
     - name: Что собой представляют Службы коммуникации Azure?
       href: overview.md
+    - name: Возможности получения поддержки и справки
+      href: support.md
 - name: Краткие руководства
   expanded: true
   items:

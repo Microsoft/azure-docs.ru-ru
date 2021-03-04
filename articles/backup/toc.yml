@@ -68,6 +68,8 @@
           href: azure-file-share-support-matrix.md
         - name: Таблица поддержки резервного копирования дисков Azure
           href: disk-backup-support-matrix.md
+        - name: Таблица поддержки резервного копирования BLOB-объектов Azure
+          href: blob-backup-support-matrix.md
         - name: Контроллеры домена Active Directory
           href: active-directory-backup-restore.md
         - name: Поддерживаемые номера SKU виртуальных машин для Политики Azure
@@ -132,6 +134,8 @@
           href: backup-center-govern-environment.md
         - name: Выполнение действий
           href: backup-center-actions.md
+        - name: Ресурсы сообщества
+          href: backup-center-community.md
     - name: Резервное копирование виртуальных машин Azure
       items:
         - name: Обзор
@@ -224,6 +228,14 @@
           href: backup-managed-disks.md
         - name: Восстановить
           href: restore-managed-disks.md
+    - name: Резервное копирование BLOB-объектов Azure
+      items:
+        - name: Обзор
+          href: blob-backup-overview.md
+        - name: Настройка и управление
+          href: blob-backup-configure-manage.md
+        - name: Восстановить
+          href: blob-restore.md
     - name: Резервное копирование общих папок Azure
       items:
         - name: Обзор
@@ -437,6 +449,10 @@
           href: ./security-controls-policy.md
         - name: Базовые средства безопасности
           href: security-baseline.md
+    - name: Уровень доступа
+      items:
+        - name: Архивный уровень доступа
+          href: archive-tier-support.md
     - name: Диагностика
       items:
         - name: Azure

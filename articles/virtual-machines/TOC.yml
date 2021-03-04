@@ -860,87 +860,71 @@
                   href: windows/disks-enable-double-encryption-at-rest-powershell.md
                 - name: CLI
                   href: linux/disks-enable-double-encryption-at-rest-cli.md
-        - name: Сценарии Шифрования дисков Azure
+        - name: Шифрование дисков Azure
           items:
-            - name: Общие сведения о Шифровании дисков Azure
-              items:
-                - name: Windows
-                - name: Linux
             - name: Linux
-              href: ./linux/disk-encryption-linux.md
-            - name: Windows
-              href: ./windows/disk-encryption-windows.md
-            - name: CLI
-              items:
-                - name: Linux
-                  href: ./linux/disk-encryption-cli-quickstart.md
-                - name: Windows
-                  href: ./windows/disk-encryption-cli-quickstart.md
-            - name: PowerShell
-              items:
-                - name: Linux
-                  href: ./linux/disk-encryption-powershell-quickstart.md
-                - name: Windows
-                  href: ./windows/disk-encryption-powershell-quickstart.md
-            - name: Портал
-              items:
-                - name: Linux
-                  href: ./linux/disk-encryption-portal-quickstart.md
-                - name: Windows
-                  href: ./windows/disk-encryption-portal-quickstart.md
-            - name: Хранилище ключей для шифрования дисков Azure
-              items:
-                - name: Linux
-                  href: ./linux/disk-encryption-key-vault.md
-                - name: Windows
-                  href: ./windows/disk-encryption-key-vault.md
-            - name: Примеры сценариев
-              items:
-                - name: Linux
-                  href: ./linux/disk-encryption-sample-scripts.md
-                - name: Windows
-                  href: ./windows/disk-encryption-sample-scripts.md
-            - name: Шифрование дисков Disk в изолированной сети
-              href: ./linux/disk-encryption-isolated-network.md
-            - name: Проверка состояния шифрования
-              href: ./linux/how-to-verify-encryption-status.md
-            - name: Настройка LVM и RAID поверх зашифрованных устройств
-              href: ./linux/how-to-configure-lvm-raid-on-crypt.md
-            - name: Как изменить размер зашифрованных томов LVM
-              href: ./linux/how-to-resize-encrypted-lvm.md
-            - name: Изменение размера разделов ОС GPT Linux
-              href: linux/resize-os-disk-gpt-partition.md
-            - name: Устранение неполадок
-              items:
-                - name: Linux
-                  href: ./linux/disk-encryption-troubleshooting.md
-                - name: Windows
-                  href: ./windows/disk-encryption-troubleshooting.md
-            - name: ВОПРОСЫ И ОТВЕТЫ
-              items:
-                - name: Linux
-                  href: ./linux/disk-encryption-faq.md
-                - name: Windows
-                  href: ./windows/disk-encryption-faq.md
-            - name: 'Шифрование дисков Azure, предыдущая версия'
               items:
                 - name: Обзор
+                  href: ./linux/disk-encryption-overview.md
+                - name: Краткие руководства
                   items:
-                    - name: Linux
-                      href: ./linux/disk-encryption-overview-aad.md
-                    - name: Windows
-                      href: ./windows/disk-encryption-overview-aad.md
+                    - name: Azure CLI
+                      href: ./linux/disk-encryption-cli-quickstart.md
+                    - name: Azure PowerShell
+                      href: ./linux/disk-encryption-powershell-quickstart.md
+                    - name: Портал Azure
+                      href: ./linux/disk-encryption-portal-quickstart.md
                 - name: Хранилище ключей для шифрования дисков Azure
+                  href: ./linux/disk-encryption-key-vault.md
+                - name: Примеры скриптов шифрования дисков
+                  href: ./linux/disk-encryption-sample-scripts.md
+                - name: Шифрование дисков в изолированной сети
+                  href: ./linux/disk-encryption-isolated-network.md
+                - name: Проверка состояния шифрования
+                  href: ./linux/how-to-verify-encryption-status.md
+                - name: Настройка LVM и RAID поверх зашифрованных устройств
+                  href: ./linux/how-to-configure-lvm-raid-on-crypt.md
+                - name: Изменение размера зашифрованных томов LVM
+                  href: ./linux/how-to-resize-encrypted-lvm.md
+                - name: Устранение неполадок с шифрованием дисков
+                  href: ./linux/disk-encryption-troubleshooting.md
+                - name: Часто задаваемые вопросы о шифровании дисков
+                  href: ./linux/disk-encryption-faq.md
+                - name: "Шифрование дисков\_— предыдущая версия"
                   items:
-                    - name: Linux
+                    - name: Обзор
+                      href: ./linux/disk-encryption-overview-aad.md
+                    - name: Хранилище ключей для шифрования дисков Azure
                       href: ./linux/disk-encryption-key-vault-aad.md
-                    - name: Windows
-                      href: ./windows/disk-encryption-key-vault-aad.md
-                - name: Сценарии шифрования дисков
-                  items:
-                    - name: Linux
+                    - name: Сценарии шифрования дисков для Linux
                       href: ./linux/disk-encryption-linux-aad.md
-                    - name: Windows
+            - name: Windows
+              items:
+                - name: Сценарии шифрования дисков для Windows
+                  href: ./windows/disk-encryption-windows.md
+                - name: Краткие руководства
+                  items:
+                    - name: Azure CLI
+                      href: ./windows/disk-encryption-cli-quickstart.md
+                    - name: Azure PowerShell
+                      href: ./windows/disk-encryption-powershell-quickstart.md
+                    - name: Портал Azure
+                      href: ./windows/disk-encryption-portal-quickstart.md
+                - name: Хранилище ключей для шифрования дисков Azure
+                  href: ./windows/disk-encryption-key-vault.md
+                - name: Примеры скриптов шифрования дисков
+                  href: ./windows/disk-encryption-sample-scripts.md
+                - name: Устранение неполадок с шифрованием дисков
+                  href: ./windows/disk-encryption-troubleshooting.md
+                - name: Часто задаваемые вопросы о шифровании дисков
+                  href: ./windows/disk-encryption-faq.md
+                - name: "Шифрование дисков\_— предыдущая версия"
+                  items:
+                    - name: Обзор
+                      href: ./windows/disk-encryption-overview-aad.md
+                    - name: Хранилище ключей для шифрования дисков Azure
+                      href: ./windows/disk-encryption-key-vault-aad.md
+                    - name: Сценарии шифрования дисков для Windows
                       href: ./windows/disk-encryption-windows-aad.md
     - name: Производительность и оптимизация затрат
       items:

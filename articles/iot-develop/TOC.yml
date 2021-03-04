@@ -1,8 +1,8 @@
-- name: Разработка приложений и устройств Интернета вещей
+- name: Разработка устройств для Интернета вещей
   href: index.yml
 - name: Обзор
   items:
-    - name: Что такое разработка приложений и устройств Интернета вещей?
+    - name: Что такое разработка устройств для Интернета вещей?
       href: about-iot-develop.md
     - name: Какой пакет SDK следует использовать?
       href: about-iot-sdks.md
@@ -22,7 +22,7 @@
 - name: Учебники
   items:
     - name: Безопасное подключение устройств Интернета вещей к облаку
-      href: 'https://docs.microsoft.com/learn/paths/securely-connect-iot-devices/'
+      href: /learn/paths/securely-connect-iot-devices/
 - name: Основные понятия
   items:
     - name: Варианты подключения для разработчиков устройств

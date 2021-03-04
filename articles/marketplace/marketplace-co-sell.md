@@ -7,12 +7,12 @@ ms.topic: how-to
 author: vamahtan
 ms.author: vamahtan
 ms.date: 2/24/2021
-ms.openlocfilehash: 5d6b05b9656879f174d92d75ca8b188f7e74e5a1
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: ef90a21ab8fad0e18542c1c88ee808237ff150c5
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101721146"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102032591"
 ---
 # <a name="co-sell-with-microsoft-sales-teams-and-partners-overview"></a>Обзор совместных продаж с помощью групп продаж и партнеров корпорации Майкрософт
 
@@ -70,7 +70,7 @@ _Выгодно состояние совместной продажи_ , вкл
 - Dynamics 365 для участия клиентов & PowerApps
 - Dynamics 365 для операций
 
-Предложения, которые обеспечивают _совместную продажу Azure выгодно_ или _BizTalk Apps_ .
+Предложения, которые обеспечивают _выгодно Azure для совместной продажи_ , получают следующие преимущества для коммерческого рынка:
 
 - Плата за обслуживание службы Marketplace уменьшается с 20 до 10%. Эта скидка распространяется на решение "инфраструктура как услуга" (IaaS) или "программное обеспечение как услуга" (SaaS), проданное через коммерческий рынок. Дополнительные сведения см. в статье [Услуги по обслуживанию коммерческих рынков](marketplace-commercial-transaction-capabilities-and-considerations.md#commercial-marketplace-service-fees).
 - Партнеры поставщика облачных решений (CSP) получают стимул на 10% для продажи вашего решения IaaS или предложения SaaS. Информацию о программе для поставщиков облачных решений вы найдете [здесь](cloud-solution-providers.md).

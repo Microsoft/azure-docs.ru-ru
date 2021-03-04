@@ -176,7 +176,7 @@
     - name: Отчеты
       items:
         - name: Действия способов аутентификации
-          href: howto-authentication-methods-usage-insights.md
+          href: howto-authentication-methods-activity.md
         - name: Отчеты SSPR
           href: howto-sspr-reporting.md
         - name: Отчеты службы "Многофакторная идентификация Azure"

@@ -9,12 +9,12 @@ ms.service: cognitive-search
 ms.devlang: azurecli
 ms.topic: conceptual
 ms.date: 02/17/2021
-ms.openlocfilehash: bb132baf3e93242c1b228f0ac7f0cfb7f41e1164
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 6287215233ae9baa220df37c6b820c1d1bec7720
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101680372"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102032523"
 ---
 # <a name="manage-your-azure-cognitive-search-service-with-the-azure-cli"></a>Управление службой Когнитивный поиск Azure с помощью Azure CLI
 > [!div class="op_single_selector"]
@@ -47,7 +47,7 @@ ms.locfileid: "101680372"
 
 Примеры в этой статье являются интерактивными и нуждаются в повышенных правах. Необходимо установить Azure CLI. Дополнительные сведения см. в статье [Установка Azure CLI](/cli/azure/install-azure-cli).
 
-Теперь можно запустить Azure CLI с помощью `az` команды из командной строки Windows, PowerShell или [Azure Cloud Shell](../cloud-shell/overview). В PowerShell реализовано несколько функций заполнения нажатием клавиши TAB, которые недоступны в командной строке Windows. 
+Теперь можно запустить Azure CLI с помощью `az` команды из командной строки Windows, PowerShell или [Azure Cloud Shell](../cloud-shell/overview.md). В PowerShell реализовано несколько функций заполнения нажатием клавиши TAB, которые недоступны в командной строке Windows. 
 
 ### <a name="check-the-azure-cli-version"></a>Проверка версии Azure CLI
 
@@ -152,7 +152,7 @@ az search service show --name <service-name> --resource-group <resource-group-na
 
 ## <a name="create-or-delete-a-service"></a>Создание или удаление службы
 
-Чтобы [создать новую службу поиска](search-create-service-portal), используйте команду [**AZ Search Service Create**](/cli/azure/search/service#az_search_service_show) .
+Чтобы [создать новую службу поиска](search-create-service-portal.md), используйте команду [**AZ Search Service Create**](/cli/azure/search/service#az_search_service_show) .
 
 ```azurecli-interactive
 az search service create \

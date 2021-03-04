@@ -150,8 +150,10 @@
           href: disable-user-sign-in-portal.md
         - name: Настройка самостоятельного назначения приложения
           href: manage-self-service-access.md
-        - name: Обнаружение домашней области
+        - name: Принудительное автоматическое ускорение с помощью политики обнаружения домашних областей
           href: configure-authentication-for-federated-users-portal.md
+        - name: Предотвращение автоматического ускорения входа с помощью политики обнаружения домашних областей
+          href: prevent-domain-hints-with-home-realm-discovery.md
     - name: "Переход на управление удостоверениями в Azure\_AD"
       items:
         - name: Ресурсы по миграции

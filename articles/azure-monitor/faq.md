@@ -2,17 +2,16 @@
 title: Часто задаваемые вопросы об Azure Monitor | Документация Майкрософт
 description: Найдите ответы на некоторые часто задаваемые вопросы о службе Azure Monitor.
 services: azure-monitor
-ms.subservice: ''
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 10/08/2020
-ms.openlocfilehash: 6840abe507543c4e03448401f091b6caa0a466c6
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 5b9b0c6a0fe08ccff9da59539b926270cd0e1d44
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101717457"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102032860"
 ---
 # <a name="azure-monitor-frequently-asked-questions"></a>Azure Monitor: вопросы и ответы
 

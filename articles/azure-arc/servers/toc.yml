@@ -31,6 +31,8 @@
       items:
         - name: Общие сведения об агенте Connected Machine
           href: agent-overview.md
+        - name: Планирование развертывания в большом масштабе
+          href: plan-at-scale-deployment.md
         - name: Подключение компьютеров к Azure Arc на портале Azure
           href: onboard-portal.md
         - name: Подключение компьютеров в большом масштабе с помощью субъекта-службы

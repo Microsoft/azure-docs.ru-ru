@@ -66,10 +66,8 @@
     - name: 'Решения, предназначенные для определенной отрасли'
       items:
         - name: Retail
-          href: retail/overview-iot-central-retail.md
           items:
             - name: "Аналитика магазина\_— оформление заказа"
-              href: retail/store-analytics-architecture.md
               items:
                 - name: 1. Создание приложения для розничной торговли
                   href: retail/tutorial-in-store-analytics-create-app.md
@@ -77,28 +75,15 @@
                   href: retail/tutorial-in-store-analytics-customize-dashboard.md
                 - name: 3. Экспорт данных и визуализация аналитических сведений
                   href: retail/tutorial-in-store-analytics-export-data-visualize-insights.md
-            - name: Интеллектуальное управление запасами
-              href: retail/architecture-smart-inventory-management.md
-              items:
-                - name: Создание приложения для интеллектуального управления запасами
-                  href: retail/tutorial-iot-central-smart-inventory-management.md
-            - name: Интеллектуальная логистика
-              href: retail/architecture-connected-logistics.md
-              items:
-                - name: Создание приложения для интеллектуальной логистики
-                  href: retail/tutorial-iot-central-connected-logistics.md
-            - name: Цифровой центр дистрибуции
-              href: retail/architecture-digital-distribution-center.md
-              items:
-                - name: Создание приложения для цифрового центра дистрибуции
-                  href: retail/tutorial-iot-central-digital-distribution-center.md
-            - name: Микроцентр исполнения заказов
-              href: retail/architecture-micro-fulfillment-center.md
-              items:
-                - name: Создание приложения для микроцентра выполнения заказов
-                  href: retail/tutorial-micro-fulfillment-center.md
+            - name: Создание приложения для интеллектуального управления запасами
+              href: retail/tutorial-iot-central-smart-inventory-management.md
+            - name: Создание приложения для интеллектуальной логистики
+              href: retail/tutorial-iot-central-connected-logistics.md
+            - name: Создание приложения для цифрового центра дистрибуции
+              href: retail/tutorial-iot-central-digital-distribution-center.md
+            - name: Создание приложения для микроцентра выполнения заказов
+              href: retail/tutorial-micro-fulfillment-center.md
             - name: 'Видеоаналитика: распознавание объектов и движения'
-              href: retail/architecture-video-analytics.md
               items:
                 - name: 0. Развертывание приложения для распознавания объектов и движения
                   href: retail/tutorial-video-analytics-deploy.md
@@ -119,38 +104,21 @@
                 - name: "4.\_Изменение и создание модулей шлюза для видеоаналитики в реальном времени"
                   href: retail/tutorial-video-analytics-build-module.md
         - name: Энергетика
-          href: energy/overview-iot-central-energy.md
           items:
-            - name: Архитектура приложения для мониторинга "умных счетчиков"
-              href: energy/concept-iot-central-smart-meter-app.md
             - name: Создания приложения для мониторинга "умных счетчиков"
               href: energy/tutorial-smart-meter-app.md
-            - name: Архитектура приложения для мониторинга солнечной панели
-              href: energy/concept-iot-central-solar-panel-app.md
             - name: Создание приложения для мониторинга солнечной панели
               href: energy/tutorial-solar-panel-app.md
         - name: Государственный сектор
-          href: government/overview-iot-central-government.md
           items:
-            - name: Эталонная архитектура решения для интеллектуального мониторинга отходов
-              href: government/concepts-connectedwastemanagement-architecture.md
             - name: Создание приложения для интеллектуального управления отходами
               href: government/tutorial-connected-waste-management.md
-            - name: Эталонная архитектура решения для мониторинга потребления воды
-              href: government/concepts-waterconsumptionmonitoring-architecture.md
             - name: Создание приложения для мониторинга потребления воды
               href: government/tutorial-water-consumption-monitoring.md
-            - name: Эталонная архитектура решения для мониторинга качества воды
-              href: government/concepts-waterqualitymonitoring-architecture.md
             - name: Создание приложения для мониторинга качества воды
               href: government/tutorial-water-quality-monitoring.md
-            - name: "Как подключить приложение Azure IoT Central к службам Dynamics\_365 Field Service"
-              href: government/how-to-configure-connected-field-services.md
         - name: Здравоохранение
-          href: healthcare/overview-iot-central-healthcare.md
           items:
-            - name: Архитектура приложения для непрерывного мониторинга состояния пациентов
-              href: healthcare/concept-continuous-patient-monitoring-architecture.md
             - name: Создание приложения для непрерывного мониторинга состояния пациентов
               href: healthcare/tutorial-continuous-patient-monitoring.md
             - name: Создание панель мониторинга для анализа данных о здоровье
@@ -162,9 +130,51 @@
     - name: Руководство для разработчиков устройств
       href: core/overview-iot-central-developer.md
     - name: Руководство по построителю решений
-      href: core/overview-iot-central-developer.md
+      href: core/overview-iot-central-solution-builder.md
     - name: Что представляют собой шаблоны приложений?
       href: core/concepts-app-templates.md
+    - name: Шаблоны приложений для определенных отраслей
+      items:
+        - name: Розничная торговля
+          items:
+            - name: Обзор
+              href: retail/overview-iot-central-retail.md
+            - name: Архитектура решений для оформления заказов для аналитики магазина
+              href: retail/store-analytics-architecture.md
+            - name: Архитектура решений для интеллектуального управления запасами
+              href: retail/architecture-smart-inventory-management.md
+            - name: Архитектура решений для интеллектуальной логистики
+              href: retail/architecture-connected-logistics.md
+            - name: Цифровой центр дистрибуции
+              href: retail/architecture-digital-distribution-center.md
+            - name: Архитектура для микроцентра исполнения заказов
+              href: retail/architecture-micro-fulfillment-center.md
+            - name: 'Видеоаналитика: распознавание объектов и движения'
+              href: retail/architecture-video-analytics.md
+        - name: Энергетика
+          items:
+            - name: Обзор
+              href: energy/overview-iot-central-energy.md
+            - name: Архитектура приложения для мониторинга "умных счетчиков"
+              href: energy/concept-iot-central-smart-meter-app.md
+            - name: Архитектура приложения для мониторинга солнечной панели
+              href: energy/concept-iot-central-solar-panel-app.md
+        - name: Государственный сектор
+          items:
+            - name: Обзор
+              href: government/overview-iot-central-government.md
+            - name: Архитектура решений для интеллектуального мониторинга отходов
+              href: government/concepts-connectedwastemanagement-architecture.md
+            - name: Архитектура решения для мониторинга потребления воды
+              href: government/concepts-waterconsumptionmonitoring-architecture.md
+            - name: Архитектура решения для мониторинга качества воды
+              href: government/concepts-waterqualitymonitoring-architecture.md
+        - name: Здравоохранение
+          items:
+            - name: Обзор
+              href: healthcare/overview-iot-central-healthcare.md
+            - name: Архитектура приложения для непрерывного мониторинга состояния пациентов
+              href: healthcare/concept-continuous-patient-monitoring-architecture.md
     - name: Что представляют собой шаблоны устройств?
       href: core/concepts-device-templates.md
     - name: Взаимодействие устройств
@@ -221,6 +231,8 @@
           href: core/howto-create-custom-analytics.md
         - name: Визуализация данных в Power BI
           href: core/howto-connect-powerbi.md
+        - name: Подключение приложения с помощью Dynamics 365 for Field Service
+          href: government/how-to-configure-connected-field-services.md
     - name: Управление устройствами
       items:
         - name: Добавление и удаление устройств

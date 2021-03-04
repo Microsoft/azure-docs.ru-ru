@@ -51,6 +51,14 @@
               href: 9-secure-access-teams-sharepoint.md
         - name: Защита учетных записей службы
           items:
+            - name: Общие сведения об учетных записях служб Azure
+              href: service-accounts-introduction-azure.md
+            - name: Защита управляемых удостоверений
+              href: service-accounts-managed-identities.md
+            - name: Защита субъектов-служб
+              href: service-accounts-principal.md
+            - name: Управление учетными записями служб Azure
+              href: service-accounts-governing-azure.md
             - name: Вводные сведения о локальных учетных записях служб
               href: service-accounts-on-premises.md
             - name: Защита групповых MSA

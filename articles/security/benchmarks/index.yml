@@ -13,12 +13,12 @@ metadata:
   ms.author: mbaldwin
   manager: rkarlin
   ms.date: 12/23/2019
-  ms.openlocfilehash: 761fc5e86acd6fa46f1d03f960a3987e540a925a
-  ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+  ms.openlocfilehash: 678576fb20c57af4f75b243e558aae6170063594
+  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/01/2020
-  ms.locfileid: "96461128"
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101729748"
 landingContent:
 - title: Общие средства о тестировании производительности системы безопасности Azure
   linkLists:
@@ -56,6 +56,8 @@ landingContent:
       url: ../fundamentals/shared-responsibility.md
     - text: Центр безопасности Azure
       url: ../../security-center/index.yml
+    - text: Пример базовой схемы оценки системы безопасности Azure
+      url: ../../governance/blueprints/samples/azure-security-benchmark-foundation/index.yml
 - title: Базовые средства безопасности ИИ и Машинного обучения
   linkLists:
   - linkListType: overview

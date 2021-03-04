@@ -235,3 +235,11 @@
   items:
     - name: Сопоставление тестов производительности ASB и CIS
       href: v2-cis-benchmark.md
+    - name: Основы обеспечения безопасности в Azure
+      href: ../fundamentals/index.yml
+    - name: Разделение ответственности в облаке
+      href: ../fundamentals/shared-responsibility.md
+    - name: Центр безопасности Azure
+      href: ../../security-center/index.yml
+    - name: Пример базовой схемы оценки системы безопасности Azure
+      href: ../../governance/blueprints/samples/azure-security-benchmark-foundation/index.yml

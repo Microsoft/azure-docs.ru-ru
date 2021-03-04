@@ -1,17 +1,16 @@
 ---
 title: Сбор журналов ресурсов из ресурса Azure и их анализ в Azure Monitor
 description: Узнайте, как настроить параметры диагностики для сбора журналов ресурсов из ресурса Azure в рабочую область Log Analytics для их анализа с помощью запросов к журналу.
-ms.subservice: ''
 ms.topic: tutorial
 author: bwren
 ms.author: bwren
 ms.date: 12/15/2019
-ms.openlocfilehash: d3c3eff32120438fd891cb32fe98d73424f82b7f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 43a9c88bc64b688bfd1171e331232bb254b0eebe
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101734151"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102032880"
 ---
 # <a name="tutorial-collect-and-analyze-resource-logs-from-an-azure-resource"></a>Руководство по Сбор и анализ журналов ресурсов из ресурса Azure
 

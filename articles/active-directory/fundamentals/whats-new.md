@@ -16,12 +16,12 @@ ms.author: ajburnle
 ms.reviewer: dhanyahk
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c767d114ad6a1b5cb8b9c6bf4c0fe4f2ccd1dae6
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 2e0315eda72681f650172117038ff5ede9f602cc
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101650130"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102032438"
 ---
 # <a name="whats-new-in-azure-active-directory"></a>Новые возможности Azure Active Directory
 
@@ -651,7 +651,7 @@ Azure Active Directory будет использовать устаревшие 
 
 Теперь можно просмотреть идентификатор шаблона каждой роли Azure AD в портал Azure. В Azure AD выберите  **Описание** выбранной роли. 
 
-Пользователям рекомендуется использовать идентификаторы шаблонов ролей в сценариях и коде PowerShell вместо отображаемого имени. Идентификатор шаблона роли поддерживается для объектов [directoryRoles](/graph/api/resources/directoryrole) и [определения роли](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) . Дополнительные сведения об идентификаторах шаблонов ролей см. в разделе [идентификаторы шаблонов ролей](../roles/permissions-reference.md#role-template-ids).
+Пользователям рекомендуется использовать идентификаторы шаблонов ролей в сценариях и коде PowerShell вместо отображаемого имени. Идентификатор шаблона роли поддерживается для объектов [directoryRoles](/graph/api/resources/directoryrole) и [определения роли](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) . Дополнительные сведения об идентификаторах шаблонов ролей см. [в статье встроенные роли Azure AD](../roles/permissions-reference.md).
 
 ---
 

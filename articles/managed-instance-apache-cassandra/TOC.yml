@@ -1,0 +1,28 @@
+- name: Документация по Управляемому экземпляру Azure для Apache Cassandra
+  href: index.yml
+- name: Обзор
+  items:
+    - name: Что такое Управляемый экземпляр Azure для Apache Cassandra?
+      href: introduction.md
+- name: Основные понятия
+  items:
+    - name: ВОПРОСЫ И ОТВЕТЫ
+      href: faq.md
+    - name: Сравнение Управляемого экземпляра с API Cassandra для Azure Cosmos DB
+      href: compare-cosmosdb-managed-instance.md
+- name: Краткие руководства
+  items:
+    - name: Создание кластера (портал)
+      href: create-cluster-portal.md
+    - name: Создание кластера (CLI)
+      href: create-cluster-cli.md
+    - name: Настройка гибридного кластера
+      href: configure-hybrid-cluster.md
+    - name: Развертывание кластера Spark с помощью Databricks
+      href: deploy-cluster-databricks.md
+- name: Практические руководства
+  items:
+    - name: Управление с помощью Azure CLI
+      href: manage-resources-cli.md
+    - name: Визуализация метрик в Prometheus с помощью Grafana
+      href: visualize-prometheus-grafana.md

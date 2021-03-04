@@ -6,13 +6,12 @@ services: azure-monitor
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: bwren
-ms.subservice: logs
-ms.openlocfilehash: dcd6522c46b6ca35031092c634803267a8486647
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: cb4f1ecdada68218c104558a85277417641906f6
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101731465"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102033018"
 ---
 # <a name="azure-resource-logs"></a>журналов ресурсов Azure.
 Журналы ресурсов Azure — это [журналы платформ](../essentials/platform-logs-overview.md) , которые позволяют получить представление об операциях, выполненных в рамках ресурса Azure. Содержимое журналов ресурсов зависит от службы и типа ресурса Azure. Журналы ресурсов по умолчанию не собираются. Необходимо создать параметр диагностики для каждого ресурса Azure, чтобы отправлять журналы ресурсов в Log Analytics рабочую область для использования с [журналами Azure Monitor](../logs/data-platform-logs.md), концентраторов событий Azure для пересылки за пределы Azure или в службу хранилища Azure для архивации.

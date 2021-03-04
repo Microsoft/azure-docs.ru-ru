@@ -11,12 +11,12 @@ ms.subservice: core
 ms.date: 02/26/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, contperf-fy21q1
-ms.openlocfilehash: 0212ed1378dbb1d2165e9333a38fa911598c4c6d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 768d2011ae3f2826b42befa8f0d40f0e56b993fd
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101691490"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102032693"
 ---
 # <a name="hyperparameter-tuning-a-model-with-azure-machine-learning"></a>Настройка параметров модели с помощью Машинное обучение Azure
 
@@ -332,7 +332,7 @@ hd_config = HyperDriveConfig(run_config=script_run_config,
                              max_concurrent_runs=4)
 ```
 
-`HyperDriveConfig`Задает параметры, передаваемые в `ScriptRunConfig script_run_config` . `script_run_config`, В свою очередь, передает параметры в сценарий обучения. Приведенный выше фрагмент кода взят из примера записной книжки [обучение, Настройка параметров и развертывание с помощью PyTorch](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/ml-frameworks/pytorch/train-hyperparameter-tune-deploy-with-pytorch). В этом примере `learning_rate` `momentum` будут настроены параметры и. Раннее прекращение выполнения будет определяться `BanditPolicy` , что останавливает выполнение, основная метрика которого выходит за пределы `slack_factor` (см. [Справочник по классу бандитполици](python/api/azureml-train-core/azureml.train.hyperdrive.banditpolicy?view=azure-ml-py)). 
+`HyperDriveConfig`Задает параметры, передаваемые в `ScriptRunConfig script_run_config` . `script_run_config`, В свою очередь, передает параметры в сценарий обучения. Приведенный выше фрагмент кода взят из примера записной книжки [обучение, Настройка параметров и развертывание с помощью PyTorch](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/ml-frameworks/pytorch/train-hyperparameter-tune-deploy-with-pytorch). В этом примере `learning_rate` `momentum` будут настроены параметры и. Раннее прекращение выполнения будет определяться `BanditPolicy` , что останавливает выполнение, основная метрика которого выходит за пределы `slack_factor` (см. [Справочник по классу бандитполици](/python/api/azureml-train-core/azureml.train.hyperdrive.banditpolicy)). 
 
 В следующем коде из примера показано, как задаваемые значения получаются, анализируются и передаются в функцию обучающего скрипта `fine_tune_model` :
 

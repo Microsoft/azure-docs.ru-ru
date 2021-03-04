@@ -11,14 +11,14 @@ metadata:
   ms.service: cognitive-services
   ms.subservice: text-analytics
   ms.topic: landing-page
-  ms.date: 01/29/2019
+  ms.date: 02/09/2019
   ms.author: aahi
-  ms.openlocfilehash: 322be97658752fb1fd6c775ba25fc74f4e04e50d
-  ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+  ms.openlocfilehash: ced23efc48e2c176a27b2bdc7e1c027b77e53637
+  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/18/2021
-  ms.locfileid: "101093285"
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101699884"
 landingContent:
 - title: Об API Анализа текста
   linkLists:
@@ -148,8 +148,10 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: REST API
-      url: https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1/operations/56f30ceeeda5650db055a3c7
+    - text: REST API (3.1, предварительная версия)
+      url: https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-preview-3/
+    - text: REST API (3.0)
+      url: https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-0
     - text: Клиентская библиотека .NET
       url: /dotnet/api/overview/azure/ai.textanalytics-readme?view=azure-dotnet
     - text: Клиентская библиотека Python
@@ -158,8 +160,6 @@ landingContent:
       url: /javascript/api/overview/azure/ai-text-analytics-readme?view=azure-node-latest
     - text: Клиентская библиотека Java
       url: /java/api/overview/azure/ai-textanalytics-readme?view=azure-java-stable
-    - text: Клиентская библиотека Go
-      url: https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/textanalytics
     - text: Azure PowerShell
       url: /powershell/module/az.cognitiveservices
     - text: Azure CLI

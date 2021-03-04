@@ -1,27 +1,27 @@
 ### YamlMime:Landing
-title: Документация по разработке приложений и устройств Интернета вещей
-summary: Изучите документацию по использованию Интернета вещей Azure для разработки встраиваемых устройств и создания облачных приложений с поддержкой устройств.
+title: Документация по разработке устройств для Интернета вещей
+summary: Изучите документацию об Интернете вещей Azure для разработки встраиваемых устройств и приложений, подключенных к облаку.
 metadata:
-  title: Разработка приложений и устройств Интернета вещей
-  description: Узнайте, как использовать Интернет вещей Azure для разработки встраиваемых устройств и создания облачных приложений с поддержкой устройств.
+  title: Разработка устройств для Интернета вещей
+  description: Узнайте, как использовать Интернет вещей Azure для разработки встраиваемых устройств и приложений, подключенных к облаку.
   services: iot-develop
   ms.service: iot-develop
   ms.topic: landing-page
   author: timlt
   ms.author: timlt
   ms.date: 01/11/2021
-  ms.openlocfilehash: 98d3a7f3eb51ce9c2fddfe5b3ac6730d8ef3b3eb
-  ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+  ms.openlocfilehash: bb3bd1766e20fd16fa996eb66008140009f6bd5d
+  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/18/2021
-  ms.locfileid: "100656281"
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101721452"
 landingContent:
-- title: Общие сведения о разработке приложений и устройств Интернета вещей
+- title: Сведения о разработке устройств для Интернета вещей
   linkLists:
   - linkListType: overview
     links:
-    - text: Что такое разработка приложений и устройств Интернета вещей Azure?
+    - text: Что такое разработка устройств для Интернета вещей Azure?
       url: about-iot-develop.md
     - text: Какой пакет SDK следует использовать?
       url: about-iot-sdks.md

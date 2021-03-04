@@ -13,12 +13,12 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32ba630d5e2f8e3e581f394af2ee687a971d3a7a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 88a7600239d6e960fa2e635c9e7d9049a7c02db3
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693282"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102032371"
 ---
 # <a name="securing-managed-identities"></a>Защита управляемых удостоверений
 
@@ -100,7 +100,7 @@ ms.locfileid: "101693282"
 
 `https://graph.microsoft.com/v1.0/servicePrincipals?$filter=(servicePrincipalType eq 'ManagedIdentity') `
 
-Эти запросы можно отфильтровать. Дополнительные сведения см. в документации Graph по [Get servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-get?view=graph-rest-1.0&tabs=http).
+Эти запросы можно отфильтровать. Дополнительные сведения см. в документации Graph по [Get servicePrincipal](/graph/api/serviceprincipal-get?view=).
 
 ## <a name="assess-the-security-of-managed-identities"></a>Оценка безопасности управляемых удостоверений 
 
@@ -140,7 +140,7 @@ ms.locfileid: "101693282"
 
 [Управление учетными записями служб Azure](service-accounts-governing-azure.md)
 
-[Вводные сведения о локальных учетных записях служб](service-accounts-on-poremises.md)
+[Вводные сведения о локальных учетных записях служб](service-accounts-on-premises.md)
 
  
 

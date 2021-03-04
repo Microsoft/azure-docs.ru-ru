@@ -1,0 +1,45 @@
+### YamlMime:Landing
+title: Документация по объектным привязкам Azure
+summary: Объектные привязки можно использовать для обнаружения объекта в физическом мире и оценки его положения с учетом шести степеней свободы с помощью трехмерной модели этого объекта.
+metadata:
+  title: Документация по объектным привязкам Azure
+  description: Используйте объектные привязки Azure для обнаружения объекта в физическом мире и оценки его положения с учетом шести степеней свободы с помощью трехмерной модели этого объекта.
+  services: azure-object-anchors
+  ms.service: azure-object-anchors
+  ms.topic: landing-page
+  author: craigktreasure
+  ms.author: crtreasu
+  ms.date: 04/01/2020
+  ms.openlocfilehash: 84ef8d771f4471c11dd77422444a5be98d5c8212
+  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101742740"
+landingContent:
+- title: Сведения об объектных привязках Azure
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Что такое объектные привязки Azure?
+      url: overview.md
+    - text: Просмотр заметок о выпуске на сайте GitHub
+      url: https://github.com/Azure/azure-object-anchors/releases
+- title: Изучение основных понятий
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Общие сведения о пакете SDK
+      url: ./concepts/sdk-overview.md
+- title: Краткие руководства
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Преобразование модели
+      url: ./quickstarts/get-started-model-conversion.md
+    - text: Unity HoloLens
+      url: ./quickstarts/get-started-unity-hololens.md
+    - text: Unity HoloLens с MRTK
+      url: ./quickstarts/get-started-unity-hololens-mrtk.md
+    - text: DirectX для HoloLens
+      url: ./quickstarts/get-started-hololens-directx.md

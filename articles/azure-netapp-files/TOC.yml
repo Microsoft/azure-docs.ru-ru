@@ -29,6 +29,8 @@
           href: azure-netapp-files-performance-metrics-volumes.md
         - name: Тесты производительности для Linux
           href: performance-benchmarks-linux.md
+        - name: Влияние Kerberos на производительность NFSv4.1
+          href: performance-impact-kerberos.md
         - name: Производительность базы данных Oracle в отдельных томах Azure NetApp Files
           href: performance-oracle-single-volumes.md
         - name: Часто задаваемые вопросы о производительности SMB

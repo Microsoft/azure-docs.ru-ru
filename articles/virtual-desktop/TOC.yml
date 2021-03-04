@@ -66,6 +66,8 @@
           href: create-profile-container-adds.md
         - name: "Использование служб \"Файлы Azure\" и AD\_DS"
           href: create-file-share.md
+        - name: Установка Office с использованием контейнеров приложений FSLogix
+          href: fslogix-office-app-rule-editor.md
     - name: Настройка параметров пула узлов
       items:
         - name: Свойства RDP
@@ -104,6 +106,8 @@
           href: app-attach-image-prep.md
         - name: Настройка файлового ресурса
           href: app-attach-file-share.md
+        - name: Настройка средства MSIXMGR
+          href: app-attach-msixmgr.md
     - name: Использование Microsoft Teams
       href: teams-on-wvd.md
     - name: Настройка Многофакторной идентификации Azure AD

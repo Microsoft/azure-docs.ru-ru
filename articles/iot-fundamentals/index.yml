@@ -10,17 +10,20 @@ metadata:
   author: philmea
   ms.author: philmea
   ms.date: 09/04/2019
-  ms.openlocfilehash: 729cbc4697fc1af3da9841edcc7f1f0a3528bf67
-  ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+  ms.openlocfilehash: 568be9f64704932f278f571373fae1bb774e521c
+  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "100366132"
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101724750"
 highlightedContent:
   items:
   - title: Что такое Azure IoT?
     itemType: overview
     url: ../iot-fundamentals/iot-introduction.md
+  - title: Начало разработки устройств в Интернете вещей Azure
+    itemType: get-started
+    url: ../iot-develop/index.yml
   - title: Установка средств VS Code для Интернета вещей Azure
     itemType: download
     url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
@@ -30,9 +33,6 @@ highlightedContent:
   - title: Обзор примеров кода для Интернета вещей Azure
     itemType: overview
     url: /samples/browse/?term=iot
-  - title: Защита развертывания Интернета вещей Azure
-    itemType: concept
-    url: ../iot-fundamentals/security-recommendations.md
   - title: Эталонная архитектура Интернета вещей Azure
     itemType: architecture
     url: /azure/architecture/reference-architectures/iot/

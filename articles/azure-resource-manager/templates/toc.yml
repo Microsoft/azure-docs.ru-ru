@@ -10,6 +10,8 @@
       href: quickstart-create-templates-use-the-portal.md
     - name: Создание шаблонов — VS Code
       href: quickstart-create-templates-use-visual-studio-code.md
+    - name: Создание файлов Bicep — VS Code
+      href: quickstart-create-bicep-use-visual-studio-code.md
     - name: Создание и развертывание спецификации шаблона
       href: quickstart-create-template-specs.md
     - name: Службы Azure
@@ -141,7 +143,7 @@
             - name: Управляемые приложения
               href: ../managed-applications/publish-service-catalog-app.md?toc=/azure/azure-resource-manager/templates/toc.json
             - name: Монитор
-              href: ../../azure-monitor/learn/quick-collect-activity-log-arm.md?toc=/azure/azure-resource-manager/templates/toc.json
+              href: ../../azure-monitor/essentials/quick-collect-activity-log-arm.md?toc=%2fazure%2fazure-resource-manager%2ftemplates%2ftoc.json
             - name: Политика
               href: ../../governance/policy/assign-policy-template.md?toc=/azure/azure-resource-manager/templates/toc.json
             - name: Портал
@@ -220,7 +222,7 @@
               href: ../../azure-signalr/signalr-quickstart-azure-signalr-service-arm-template.md?toc=/azure/azure-resource-manager/templates/toc.json
 - name: Учебники
   items:
-    - name: Шаблоны для начинающих
+    - name: Шаблоны JSON для начинающих
       items:
         - name: 1. Создание первого шаблона
           href: template-tutorial-create-first-template.md
@@ -242,6 +244,28 @@
           href: template-tutorial-add-tags.md
         - name: 10. Использование файла параметров
           href: template-tutorial-use-parameter-file.md
+    - name: Bicep для начинающих
+      items:
+        - name: 1. Создание первого шаблона
+          href: bicep-tutorial-create-first-bicep.md
+        - name: 2. Добавление параметров
+          href: bicep-tutorial-add-parameters.md
+        - name: 3. Добавление функций шаблонов
+          href: bicep-tutorial-add-functions.md
+        - name: 4. Добавление переменных
+          href: bicep-tutorial-add-variables.md
+        - name: 5. Добавление выходных данных
+          href: bicep-tutorial-add-outputs.md
+        - name: 6. Использование экспортированного шаблона
+          href: bicep-tutorial-export-template.md
+        - name: 7. Использование шаблона быстрого запуска
+          href: bicep-tutorial-quickstart-template.md
+        - name: 8. Добавление тегов
+          href: bicep-tutorial-add-tags.md
+        - name: 9. Использование файла параметров
+          href: bicep-tutorial-use-parameter-file.md
+        - name: 10. Добавление модулей
+          href: bicep-tutorial-add-modules.md
     - name: Развертывание
       items:
         - name: 1. Развертывание шаблона в локальной среде
@@ -298,6 +322,12 @@
   items:
     - name: Рекомендации по работе с шаблоном
       href: template-best-practices.md
+    - name: Bicep
+      items:
+        - name: Обзор
+          href: bicep-overview.md
+        - name: Переход с JSON на Bicep
+          href: compare-template-syntax.md
     - name: Часто задаваемые вопросы
       href: frequently-asked-questions.md
     - name: Шаблоны для обеспечения согласованности данных в облаке
@@ -333,6 +363,8 @@
           href: template-user-defined-functions.md
         - name: Ресурсы
           items:
+            - name: Объявление ресурса
+              href: resource-declaration.md
             - name: Имя и тип дочернего ресурса
               href: child-resource-name-type.md
             - name: Условное развертывание
@@ -491,6 +523,8 @@
       items:
         - name: Все функции
           href: template-functions.md
+        - name: Любая функция (Bicep)
+          href: template-functions-any.md
         - name: Функции массива
           href: template-functions-array.md
         - name: Функции сравнения

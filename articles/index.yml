@@ -13,12 +13,12 @@ metadata:
   ms.date: 01/29/2021
   featureFlags:
   - clicktale
-  ms.openlocfilehash: 58b5b8917aeeefb918914a598655da962019de34
-  ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+  ms.openlocfilehash: 2503d6f54efaa32ab76a9321543815e36f37cdcb
+  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/10/2021
-  ms.locfileid: "100102977"
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101709976"
 highlightedContent:
   items:
   - title: Руководство по началу работы для разработчиков Azure
@@ -36,6 +36,12 @@ highlightedContent:
 productDirectory:
   title: Обзор продуктов Azure
   items:
+  - title: Azure Percept
+    summary: Средства искусственного интеллекта для пограничных сред (от микросхемы к службе)
+    imageSrc: ./media/index/azure-percept.svg
+    azureCategories:
+    - iot
+    url: azure-percept/index.yml
   - title: Детектор аномалий
     summary: Простое добавление возможностей обнаружения аномалий в приложения
     imageSrc: https://static.docs.com/ui/media/product/azure/anomaly-detector.svg
@@ -174,7 +180,7 @@ productDirectory:
     imageSrc: https://static.docs.com/ui/media/product/azure/custom-vision.svg
     azureCategories:
     - ai-machine-learning
-    url: cognitive-services/Custom-Vision-Service/index.yml
+    url: cognitive-services/custom-vision-service/index.yml
   - title: Виртуальная машина для обработки и анализа данных
     summary: Расширенная предварительно настроенная среда для разработки с помощью ИИ
     imageSrc: https://static.docs.com/ui/media/product/azure/virtual-machine.svg
@@ -204,7 +210,7 @@ productDirectory:
     imageSrc: https://static.docs.com/ui/media/product/azure/cognitive-services.svg
     azureCategories:
     - ai-machine-learning
-    url: cognitive-services/ink-recognizer/index.yml
+    url: /previous-versions/azure/cognitive-services/Ink-Recognizer/
   - title: Kinect DK
     summary: Создание модели компьютерного зрения или речи с помощью набора разработчика с расширенными датчиками искусственного интеллекта
     imageSrc: ./media/index/kinect-viewer.svg
@@ -408,6 +414,12 @@ productDirectory:
     - databases
     - iot
     url: cosmos-db/index.yml
+  - title: Управляемый экземпляр Azure для Apache Cassandra
+    summary: Автоматизация развертывания и масштабирования для управляемых решений Apache Cassandra с открытым кодом для центров обработки данных
+    imageSrc: ./media/index/managed-instance-apache-cassandra.svg
+    azureCategories:
+    - databases
+    url: managed-instance-apache-cassandra/index.yml
   - title: Logic Apps
     summary: Автоматический доступ и использование данных в облаках без написания кода
     imageSrc: https://static.docs.com/ui/media/product/azure/logic-apps.svg
@@ -507,7 +519,7 @@ productDirectory:
     azureCategories:
     - featured
     - compute
-    url: virtual-machines/linux/index.yml
+    url: ./virtual-machines/index.yml
   - title: Service Fabric
     summary: Разработка микрослужб и оркестрация контейнеров в Windows или Linux
     imageSrc: https://static.docs.com/ui/media/product/azure/service-fabric-clusters.svg
@@ -557,7 +569,7 @@ productDirectory:
     azureCategories:
     - featured
     - compute
-    url: virtual-machines/windows/index.yml
+    url: ./virtual-machines/index.yml
   - title: Azure Dev Spaces
     summary: Тестирование и итеративная разработка приложения микрослужб в Azure AKS
     imageSrc: ./media/index/AzureDevSpaceController_50x.svg
@@ -1192,6 +1204,12 @@ productDirectory:
     azureCategories:
     - networking
     url: load-balancer/index.yml
+  - title: Сервер маршрутизации Azure (предварительная версия)
+    summary: Упрощение управления операциями для сетевых устройств
+    imageSrc: ./media/index/azure-route-server.svg
+    azureCategories:
+    - networking
+    url: route-server/index.yml
   - title: Виртуальная сеть
     summary: Выполнение подготовки частных сетей с подключением к локальным центрам обработки данных
     imageSrc: https://static.docs.com/ui/media/product/azure/virtual-networks.svg

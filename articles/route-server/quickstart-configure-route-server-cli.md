@@ -7,12 +7,12 @@ ms.service: route-server
 ms.topic: quickstart
 ms.date: 03/02/2021
 ms.author: duau
-ms.openlocfilehash: 518baa47fd16d69bf935cd3253f5bebeb413b513
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: c24d88e47569da430153dedfd1ff68a584083775
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101680576"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101695249"
 ---
 # <a name="quickstart-create-and-configure-route-server-using-azure-cli"></a>Краткое руководство. Создание и настройка сервера маршрутизации с помощью Azure CLI 
 
@@ -33,7 +33,23 @@ ms.locfileid: "101680576"
 
 ###  <a name="sign-in-to-your-azure-account-and-select-your-subscription"></a>Войдите в учетную запись Azure и выберите подписку. 
 
-[!INCLUDE [sign in](../../includes/expressroute-cloud-shell-connect.md)] 
+Чтобы начать настройку, войдите в свою учетную запись Azure. Если вы открыли Cloud Shell с помощью кнопки "Попробовать", вход выполняется автоматически. Для подключения используйте следующие примеры:
+
+```azurecli-interactive
+az login
+```
+
+Просмотрите подписки учетной записи.
+
+```azurecli-interactive
+az account list
+```
+
+Выберите подписку, для которой требуется создать канал ExpressRoute.
+
+```azurecli-interactive
+az account set --subscription "<subscription ID>"
+```
 
 ### <a name="create-a-resource-group-and-virtual-network"></a>Создание группы ресурсов и виртуальной сети 
 

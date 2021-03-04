@@ -2,19 +2,19 @@
 title: Отчеты в контейнере аналитики
 description: Описывает отчеты, доступные для анализа данных, собираемых аналитикой контейнера.
 ms.topic: conceptual
-ms.date: 12/07/2020
-ms.openlocfilehash: ab704ed184d9d67ddfba5aede385899faf2a56de
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/02/2021
+ms.openlocfilehash: ca74521a08d4edaa498e00e6452d8f69912e4bb9
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101704282"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102032805"
 ---
 # <a name="reports-in-container-insights"></a>Отчеты в контейнере аналитики
 Отчеты в контейнере "аналитика" являются рекомендуемыми готовыми [книгами Azure](../visualize/workbooks-overview.md). В этой статье описываются различные доступные отчеты и способы доступа к ним.
 
 ## <a name="viewing-reports"></a>Просмотр отчетов
-В меню **Azure Monitor** в портал Azure выберите **контейнеры**. Выберите **Insights** в разделе **мониторинг** , выберите конкретный кластер, а затем щелкните страницу **отчеты (Предварительная версия)** . 
+В меню **Azure Monitor** в портал Azure выберите **контейнеры**. Выберите **Insights** в разделе **мониторинг** , выберите конкретный кластер, а затем щелкните страницу **отчеты** . 
 
 [![Страница «отчеты»](media/container-insights-reports/reports-page.png)](media/container-insights-reports/reports-page.png#lightbox)
 

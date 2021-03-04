@@ -77,6 +77,8 @@ items:
                 href: manage-data-sources.md
               - name: Обзор соединителей Purview
                 href: purview-connector-overview.md
+              - name: Несколько источников Azure
+                href: register-scan-azure-multiple-sources.md
               - name: хранилище BLOB-объектов Azure
                 href: register-scan-azure-blob-storage-source.md
                 displayName: Register and scan azure blob storage
@@ -102,8 +104,16 @@ items:
                 href: register-scan-azure-synapse-analytics.md
               - name: Локальный сервер SQL Server
                 href: register-scan-on-premises-sql-server.md
+              - name: Oracle;
+                href: register-scan-oracle-source.md
               - name: "Клиент Power BI\_— портал"
                 href: register-scan-power-bi-tenant.md
+              - name: SAP ECC
+                href: register-scan-sapecc-source.md
+              - name: SAP S/4 HANA
+                href: register-scan-saps4hana-source.md
+              - name: Teradata
+                href: register-scan-teradata-source.md
               - name: Amazon S3
                 href: register-scan-amazon-s3.md
       - name: Бизнес-глоссарий
@@ -113,6 +123,10 @@ items:
           - name: Управление шаблонами терминов
             href: how-to-manage-term-templates.md
           - name: Массовое изменение ресурсов для назначения терминов глоссария
+            href: how-to-bulk-edit-assets.md
+      - name: Массовое изменение
+        items:
+          - name: Массовое изменение ресурсов для добавления тегов к заметкам и контактам
             href: how-to-bulk-edit-assets.md
       - name: Классификация
         items:
@@ -158,3 +172,5 @@ items:
     items:
       - name: Поддерживаемые классификации
         href: supported-classifications.md
+      - name: Руководством по развертыванию функций ABAP
+        href: abap-functions-deployment-guide.md

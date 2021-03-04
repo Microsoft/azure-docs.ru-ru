@@ -12,12 +12,12 @@ metadata:
   ms.author: kumud
   manager: mtillman
   ms.date: 09/28/2020
-  ms.openlocfilehash: 0f0536c259bb8b4168ab5fcf3e05016a281b05d5
-  ms.sourcegitcommit: c7153bb48ce003a158e83a1174e1ee7e4b1a5461
+  ms.openlocfilehash: 40effbde3ad1c0676eae4c79f72b84d04dbd62e7
+  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/15/2021
-  ms.locfileid: "98233956"
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101698660"
 highlightedContent:
   items:
   - title: Что такое Сеть Azure?
@@ -159,20 +159,20 @@ conceptualContent:
     footerLink:
       url: ../application-gateway/index.yml
       text: Подробнее
-  - title: Глобальная подсистема балансировки нагрузки
+  - title: Защищенная облачная служба CDN и глобальная подсистема балансировки нагрузки
     links:
     - url: ../frontdoor/front-door-overview.md
       itemType: overview
       text: Что такое Azure Front Door Service?
+    - url: ../frontdoor/standard-premium/overview.md
+      itemType: overview
+      text: Что собой представляет Azure Front Door категории "Стандартный" или "Премиум" (предварительная версия)?
     - url: ../frontdoor/front-door-custom-domain.md
       itemType: how-to-guide
       text: Добавление личного домена в Azure Front Door Service
     - url: ../frontdoor/front-door-how-to-redirect-https.md
       itemType: how-to-guide
       text: Перенаправление трафика HTTP в HTTPS
-    - url: ../frontdoor/front-door-troubleshoot-routing.md
-      itemType: how-to-guide
-      text: Устранение проблем с маршрутизацией
     footerLink:
       url: ../frontdoor/index.yml
       text: Подробнее

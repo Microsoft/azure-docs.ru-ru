@@ -13,13 +13,13 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 07/07/2020
-  ms.openlocfilehash: 627b9b46c80f8e6f65d430c17cefbad5efa3ab77
-  ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+  ms.date: 02/28/2021
+  ms.openlocfilehash: 798efae4c3618f8bc776b36bc8e91eb79539e402
+  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/28/2021
-  ms.locfileid: "98944914"
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101710300"
 conceptualContent:
   title: Предложения для соответствия требованиям
   items:
@@ -162,6 +162,8 @@ conceptualContent:
     - url: /azure/compliance/offerings/offering-finma-switzerland
       itemType: concept
       text: FINMA (Швейцария)
+  - title: Финансовые услуги
+    links:
     - url: /azure/compliance/offerings/offering-finra-4511-us
       itemType: concept
       text: FINRA 4511 (США)
@@ -171,8 +173,6 @@ conceptualContent:
     - url: /azure/compliance/offerings/offering-fsa-denmark
       itemType: concept
       text: FSA (Дания)
-  - title: Финансовые услуги
-    links:
     - url: /azure/compliance/offerings/offering-glba-us
       itemType: concept
       text: GLBA (США)
@@ -188,9 +188,14 @@ conceptualContent:
     - url: /azure/compliance/offerings/offering-osfi-canada
       itemType: concept
       text: OSFI (Канада)
+  - title: Финансовые услуги
+    links:
     - url: /azure/compliance/offerings/offering-ospar-singapore
       itemType: concept
       text: OSPAR (Сингапур)
+    - url: /azure/compliance/offerings/offering-pci-3ds
+      itemType: concept
+      text: PCI 3DS
     - url: /azure/compliance/offerings/offering-pci-dss
       itemType: concept
       text: PCI DSS
@@ -361,6 +366,8 @@ additionalContent:
         url: /microsoft-365/compliance/gdpr-breach-azure-dynamics
       - text: Оценка влияния на защиту данных
         url: /microsoft-365/compliance/gdpr-dpia-azure
+      - text: Место расположения данных в Azure
+        url: https://azure.microsoft.com/global-infrastructure/data-residency/
     - title: Схемы соответствия
       links:
       - text: Тестирование безопасности Azure
@@ -378,7 +385,7 @@ additionalContent:
       - text: IRS 1075
         url: ../governance/blueprints/samples/irs-1075/index.md
       - text: ISO 27001
-        url: ../governance/blueprints/samples/iso27001/index.md
+        url: ../governance/blueprints/samples/iso-27001-2013.md
       - text: NIST SP 800-53 R4
         url: ../governance/blueprints/samples/nist-sp-800-53-r4.md
       - text: PCI-DSS версии 3.2.1
@@ -432,13 +439,15 @@ additionalContent:
       - text: Книга IT-Grundschutz
         url: https://azure.microsoft.com/resources/it-grundschutz-konformitt-mit-azure/
       - text: Руководство по стандартному покрытию NEN7510-2011
-        url: https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=3285c45c-921c-49ad-b881-be43e0b70490&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides
+        url: https://azure.microsoft.com/resources/azure-nen7510-coverage-report-guide
       - text: Стандарты NERC CIP
         url: https://azure.microsoft.com/resources/microsoft-azure-nerc-cip-standards-and-cloud-computing/
       - text: Рекомендации по облачным вычислениям NZ GCIO
         url: https://azure.microsoft.com/resources/microsoft-azure-response-to-nz-gcio-cloud-computing-information-security-privacy-considerations
+      - text: Разделение ответственности согласно PCI 3DS
+        url: https://download.microsoft.com/download/b/5/e/b5e4adc3-56c1-4e02-b7a0-81adb7d50a0b/PCI3DS_Azure_Shared_Responsibility_Matrix.xlsx
       - text: Таблица ответственности PCI DSS 3.2.1
-        url: ../governance/blueprints/samples/pci-dss-3.2.1/index.md
+        url: https://download.microsoft.com/download/2/2/e/22e4f646-04e1-445c-92ed-724a6166e321/PCI_DSS_3.2.1_Azure_Shared_Responsibility_Matrix.xlsx
       - text: Руководство по SCI
         url: https://azure.microsoft.com/resources/microsoft-azure-regulation-systems-compliance-and-integrity-sci-cloud-implementation-guide/
       - text: Руководство по SOX
@@ -467,3 +476,7 @@ additionalContent:
         url: https://azure.microsoft.com/resources/microsoft-azure-cloud-services-us-uk-and-eu-export-controls/
       - text: Обеспечение соответствия глобальным стандартам в Azure
         url: https://azure.microsoft.com/resources/azure-enables-a-world-of-compliance/
+      - text: Облачная платформа Azure для PCI 3DS
+        url: https://azure.microsoft.com/resources/azure-cloud-platform-for-pci-3ds/
+      - text: Практическое руководство по разработке безопасных решений для медицинских организаций
+        url: https://azure.microsoft.com/resources/a-practical-guide-to-designing-secure-health-solutions-using-microsoft-azure/

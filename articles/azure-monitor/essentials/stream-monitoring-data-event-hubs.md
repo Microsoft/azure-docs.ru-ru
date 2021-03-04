@@ -6,13 +6,12 @@ author: bwren
 ms.author: bwren
 ms.topic: conceptual
 ms.date: 07/15/2020
-ms.subservice: ''
-ms.openlocfilehash: db8f8628f77ef2a04a7e6d42d6470f254e458e01
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a929563df3e7e98575056d07519abfda0d6ac13b
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101708090"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102032965"
 ---
 # <a name="stream-azure-monitoring-data-to-an-event-hub-or-external-partner"></a>Потоковая передача данных мониторинга Azure в концентратор событий или внешний партнер
 

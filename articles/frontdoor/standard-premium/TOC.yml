@@ -49,14 +49,16 @@
       href: how-to-configure-https-custom-domain.md
     - name: Связь маршрутов
       href: how-to-configure-route.md
+    - name: Настройка набора правил
+      href: how-to-configure-rule-set.md
     - name: Настройка заголовков безопасности с использованием набора правил
       href: how-to-add-security-headers.md
     - name: Очистка кэша
       href: how-to-cache-purge.md
     - name: Сжатие
       href: how-to-compression.md
-    - name: Включение Приватного канала
-      href: how-to-enable-private-link.md
+    - name: Включение Приватного канала для веб-приложения
+      href: how-to-enable-private-link-web-app.md
     - name: Ведение журнала
       href: how-to-logs.md
     - name: Мониторинг и оповещения

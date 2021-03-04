@@ -121,10 +121,14 @@
           href: add-sign-up-and-sign-in-policy.md
         - name: Политика входа
           href: add-sign-in-policy.md
-        - name: Политика сброса пароля
-          href: add-password-reset-policy.md
-        - name: Политика изменения пароля
-          href: add-password-change-policy.md
+        - name: Политики сброса пароля
+          items:
+            - name: Самостоятельный сброс пароля
+              href: add-password-reset-policy.md
+            - name: Самостоятельное изменение пароля
+              href: add-password-change-policy.md
+            - name: Принудительный сброс пароля
+              href: force-password-reset.md
         - name: Политика изменения профиля
           href: add-profile-editing-policy.md
         - name: Политика учетных данных для пароля владельца ресурса
@@ -520,4 +524,4 @@
       href: ../active-directory/fundamentals/active-directory-troubleshooting-support-howto.md?bc=%2fazure%2factive-directory-b2c%2fbread%2ftoc.json&toc=%2fazure%2factive-directory-b2c%2fTOC.json
       displayName: technical
     - name: Видео
-      href: 'https://azure.microsoft.com/documentation/videos/index/?services=active-directory-b2c'
+      href: azure-ad-external-identities-videos.md

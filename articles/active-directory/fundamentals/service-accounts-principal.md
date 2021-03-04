@@ -13,12 +13,12 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c9df24a255d640c463bd62e8bdfe8a576df3b09
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: eaad4995abcf54e9ca7040d570c7a9abbdbc9cf5
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693242"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102032421"
 ---
 # <a name="securing-service-principals"></a>Защита субъектов-служб
 
@@ -107,7 +107,7 @@ ApplicationID представляет глобальное приложение
 ## <a name="move-from-a-user-account-to-a-service-principal"></a>Переход от учетной записи пользователя к субъекту-службе  
 Если вы используете учетную запись пользователя Azure в качестве субъекта-службы, оцените, можно ли перейти на [управляемое удостоверение](https://docs.microsoft.com/azure/app-service/overview-managed-identity?tabs=dotnet) или субъект-службу. Если вы не можете использовать управляемое удостоверение, подготавливаете субъект-службу, имеющую достаточно разрешений и область действия для выполнения необходимых задач. Чтобы создать субъект-службу, можно [зарегистрировать приложение](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)или [PowerShell](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 
-При использовании Microsoft Graph просмотрите документацию по конкретному API, [как в этом примере](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-5.0.0), и убедитесь, что тип разрешения для приложения отображается как поддерживаемый.
+При использовании Microsoft Graph просмотрите документацию по конкретному API, [как в этом примере](/powershell/azure/create-azure-service-principal-azureps), и убедитесь, что тип разрешения для приложения отображается как поддерживаемый.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
@@ -115,7 +115,7 @@ ApplicationID представляет глобальное приложение
 
 [Создание субъекта-службы](../develop/howto-create-service-principal-portal.md)
 
- [Мониторинг входа субъекта-службы](../reports-monitoring/concept-all-sign-ins#sign-ins-report.md)
+ [Мониторинг входа субъекта-службы](../reports-monitoring/concept-all-sign-ins.md#sign-ins-report)
 
 **Дополнительные сведения о защите учетных записей служб:**
 
@@ -125,4 +125,4 @@ ApplicationID представляет глобальное приложение
 
 [Управление учетными записями служб Azure](service-accounts-governing-azure.md)
 
-[Вводные сведения о локальных учетных записях служб](service-accounts-on-poremises.md)
+[Вводные сведения о локальных учетных записях служб](service-accounts-on-premises.md)

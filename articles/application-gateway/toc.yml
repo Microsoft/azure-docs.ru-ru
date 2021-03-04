@@ -158,6 +158,8 @@
           href: ingress-controller-install-existing.md
         - name: Прием входящего трафика для AKS через Helm (новый шлюз)
           href: ingress-controller-install-new.md
+        - name: Переход от развертывания с помощью Helm к надстройке AKS
+          href: ingress-controller-migration.md
         - name: Отключение и повторное включение надстройки контроллера входящего трафика для AKS
           href: ingress-controller-disable-addon.md
         - name: Включение сходства файлов cookie

@@ -51,6 +51,9 @@
         - name: Использование OVMS через расширение HTTP
           displayName: 'intel, OpenVINO'
           href: use-intel-openvino-tutorial.md
+        - name: Использование OV DL Streamer через расширение gRPC
+          displayName: 'intel, OpenVINO DL Streamer'
+          href: use-intel-grpc-vas-tutorial.md
         - name: Использование Пользовательского визуального распознавания
           href: custom-vision-tutorial.md
         - name: Использование Пространственного анализа
@@ -90,6 +93,8 @@
       href: create-custom-azure-resource-manager-role-how-to.md
     - name: Развертывание на устройстве IoT Edge
       href: deploy-iot-edge-device.md
+    - name: Развертывание в IoT Edge для Linux на Windows
+      href: deploy-iot-edge-linux-on-windows.md
     - name: Мониторинг и ведение журнала
       href: monitoring-logging.md
     - name: Воспроизведение записи

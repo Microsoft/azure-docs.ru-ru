@@ -85,7 +85,7 @@
               href: create-routebased-vpn-gateway-cli.md
         - name: Проверка подключения VPN-шлюза
           href: vpn-gateway-verify-connection-resource-manager.md
-        - name: Сброс VPN-шлюза
+        - name: Сброс VPN-шлюза или подключения
           href: reset-gateway.md
         - name: Удаление VPN-шлюза
           items:
@@ -177,6 +177,10 @@
               href: about-vpn-profile-download.md
             - name: "Intune\_— развертывание профиля VPN-клиента"
               href: vpn-profile-intune.md
+        - name: Несколько типов проверки подлинности
+          items:
+            - name: Портал Azure
+              href: howto-point-to-site-multi-auth.md
         - name: OpenVPN
           items:
             - name: Настройка типа туннеля OpenVPN
@@ -205,6 +209,8 @@
               href: vpn-gateway-bgp-resource-manager-ps.md
             - name: Azure CLI
               href: bgp-how-to-cli.md
+        - name: Диагностика BGP
+          href: bgp-diagnostics.md
         - name: Настройка принудительного туннелирования
           items:
             - name: Azure PowerShell

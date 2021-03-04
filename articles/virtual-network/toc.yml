@@ -99,6 +99,8 @@
           href: ipv6-public-ip-address-prefix.md
         - name: Предпочтение маршрутизации
           href: routing-preference-overview.md
+        - name: Предпочтительный вариант маршрутизации (без ограничений)
+          href: routing-preference-unmetered.md
         - name: Базовые показатели безопасности общедоступных IP-адресов
           href: public-ip-security-baseline.md
     - name: Безопасность
@@ -274,6 +276,10 @@
                       href: configure-routing-preference-virtual-machine-powershell.md
                     - name: Azure CLI
                       href: configure-routing-preference-virtual-machine-cli.md
+                - name: Настройка смешанного предпочтительного варианта маршрутизации для виртуальной машины
+                  href: routing-preference-mixed-network-adapter-portal.md
+                - name: Настройка предпочтительного варианта маршрутизации для кластера AKS
+                  href: routing-preference-azure-kubernetes-service-cli.md
     - name: Безопасность
       items:
         - name: Фильтрация сетевого трафика

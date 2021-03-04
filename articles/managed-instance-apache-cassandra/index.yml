@@ -1,0 +1,54 @@
+### YamlMime:Landing
+title: Документация по Управляемому экземпляру Azure для Apache Cassandra
+summary: Служба "Управляемый экземпляр Azure для Apache Cassandra" позволяет автоматизировать операции развертывания и масштабирования для управляемых решений Apache Cassandra с открытым кодом для центров обработки данных. Служба позволяет ускорить реализацию гибридных сценариев и сократить затраты на текущее обслуживание.
+metadata:
+  title: Управляемый экземпляр Azure для Apache Cassandra
+  description: Служба "Управляемый экземпляр Azure для Apache Cassandra" позволяет автоматизировать операции развертывания и масштабирования для управляемых решений Apache Cassandra с открытым кодом для центров обработки данных. Служба позволяет ускорить реализацию гибридных сценариев и сократить затраты на текущее обслуживание.
+  services: service
+  ms.service: managed-instance-apache-cassandra
+  ms.topic: landing-page
+  ms.collection: collection
+  author: TheovanKraay
+  ms.author: thvankra
+  ms.date: 01/18/2021
+  ms.openlocfilehash: 8300012954756f1083c93745299ca57e4c4db0d3
+  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101742728"
+landingContent:
+- title: Сведения об Управляемом экземпляре Azure для Apache Cassandra
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Что такое Управляемый экземпляр Azure для Apache Cassandra?
+      url: introduction.md
+  - linkListType: get-started
+    links:
+    - text: Сравнение Управляемого экземпляра Azure для Apache Cassandra с API Cassandra для Azure Cosmos DB
+      url: compare-cosmosdb-managed-instance.md
+  - linkListType: quickstart
+    links:
+    - text: Создание кластера (портал)
+      url: create-cluster-portal.md
+    - text: Создание кластера (CLI)
+      url: create-cluster-cli.md
+    - text: Развертывание кластера Spark с помощью Azure Databricks
+      url: deploy-cluster-databricks.md
+  - linkListType: concept
+    links:
+    - text: Часто задаваемые вопросы
+      url: faq.md
+- title: Настройка кластерных ресурсов и управление ими
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Настройка гибридного кластера
+      url: configure-hybrid-cluster.md
+  - linkListType: how-to-guide
+    links:
+    - text: Управление ресурсами с помощью Azure CLI
+      url: manage-resources-cli.md
+    - text: Визуализация метрик в Prometheus с помощью Grafana
+      url: visualize-prometheus-grafana.md

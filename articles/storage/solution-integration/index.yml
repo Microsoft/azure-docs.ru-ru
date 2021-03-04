@@ -1,0 +1,56 @@
+### YamlMime:Landing
+title: Документация по проверенным партнерским решениям для службы хранилища Azure
+summary: Проверенные партнерские решения для службы хранилища Azure позволяют реализовывать расширенные сценарии на платформе службы хранилища Azure.
+metadata:
+  title: Проверенные партнерские решения для службы хранилища Azure
+  description: Проверенные партнерские решения для службы хранилища Azure позволяют реализовывать расширенные сценарии на платформе службы хранилища Azure.
+  services: storage
+  ms.service: storage
+  ms.topic: landing-page
+  ms.collection: collection
+  author: beber-msft
+  ms.author: beber
+  ms.date: 12/08/2020
+  ms.openlocfilehash: 2e9a2ac1e8d33020a94c2c783d3d695a459fcea5
+  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101742696"
+landingContent:
+- title: Партнерские решения для больших данных и аналитики службы хранилища
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Проверенные партнерские решения для Аналитики Службы хранилища Azure
+      url: .\validated-partners\analytics\partner-overview.md
+- title: Партнерские решения для BCDR, резервного копирования и архивации для службы хранилища Azure
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Проверенные партнерские решения для BCDR и архивации для службы хранилища Azure
+      url: .\validated-partners\backup-archive-disaster-recovery\partner-overview.md
+  - linkListType: quickstart
+    links:
+    - text: Краткое руководство по использованию Commvault
+      url: .\validated-partners\backup-archive-disaster-recovery\commvault\commvault-solution-guide.md
+    - text: Краткое руководство по использованию Veeam
+      url: .\validated-partners\backup-archive-disaster-recovery\veeam\veeam-solution-guide.md
+- title: Партнерские решения для контейнеров службы хранилища Azure
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Проверенные партнерские решения для контейнеров службы хранилища Azure
+      url: .\validated-partners\container-solutions\partner-overview.md
+- title: Партнерские решения для переноса данных службы хранилища Azure и управления ими
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Проверенные партнерские решения для переноса данных службы хранилища Azure и управления ими
+      url: .\validated-partners\data-management\partner-overview.md
+- title: Партнерские решения для основного и дополнительного хранилища в службе хранилища Azure
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Проверенные партнерские решения для основного и дополнительного хранилища
+      url: .\validated-partners\primary-secondary-storage\partner-overview.md

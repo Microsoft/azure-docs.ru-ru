@@ -1,0 +1,46 @@
+- name: Документация по объектным привязкам
+  href: index.yml
+- name: Обзор
+  items:
+    - name: Сведения об объектных привязках
+      href: overview.md
+    - name: Рекомендации
+      href: best-practices.md
+- name: Основные понятия
+  items:
+    - name: Общие сведения о пакете SDK среды выполнения
+      href: concepts/sdk-overview.md
+- name: Краткие руководства
+  expanded: true
+  items:
+    - name: Создание модели
+      href: quickstarts/get-started-model-ingestion.md
+    - name: Создание приложения Unity
+      expanded: true
+      items:
+        - name: HoloLens
+          href: quickstarts/get-started-unity-hololens.md
+        - name: HoloLens с MRTK
+          href: quickstarts/get-started-unity-hololens-mrtk.md
+    - name: Создание приложения DirectX для HoloLens
+      href: quickstarts/get-started-hololens-directx.md
+- name: Примеры
+  items:
+    - name: Примеры объектных привязок Azure (GitHub)
+      href: 'https://github.com/Azure/azure-object-anchors'
+- name: Ссылки
+  items:
+    - name: Пакет SDK среды выполнения для Unity
+      href: 'https://docs.microsoft.com/dotnet/api/Microsoft.Azure.ObjectAnchors/'
+    - name: Пакет SDK среды выполнения для C++/WinRT на устройстве HoloLens
+      href: 'https://docs.microsoft.com/cpp/api/object-anchors/winrt/'
+- name: Ресурсы
+  items:
+    - name: Заметки о выпуске
+      href: 'https://github.com/Azure/azure-object-anchors/releases'
+    - name: REST API управления ресурсами Смешанной реальности Azure
+      href: 'https://docs.microsoft.com/rest/api/mixedreality/'
+    - name: ВОПРОСЫ И ОТВЕТЫ
+      href: faq.md
+    - name: Stack Overflow
+      href: 'https://stackoverflow.com/questions/tagged/azure-object-anchors'

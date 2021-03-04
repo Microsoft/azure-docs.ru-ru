@@ -47,12 +47,19 @@
       items:
         - name: Преимущества использования Marketplace
           href: gtm-your-marketplace-benefits.md
-        - name: Участие партнеров в совместных продажах
-          href: marketplace-co-sell.md
-        - name: Вариант совместной продажи в Центре партнеров
-          href: commercial-marketplace-co-sell.md
-        - name: Перенос решений для совместной продажи из OCP GTM
-          href: co-sell-solution-migration.md
+          items: null
+        - name: Совместные продажи с Майкрософт
+          items:
+            - name: Общие сведения о совместных продажах
+              href: marketplace-co-sell.md
+            - name: Требования к совместным продажам
+              href: co-sell-requirements.md
+            - name: Настройка совместных продаж
+              href: commercial-marketplace-co-sell.md
+            - name: Проверка состояния совместных продаж
+              href: co-sell-status.md
+            - name: Перенос решений для совместной продажи из OCP GTM
+              href: co-sell-solution-migration.md
         - name: Перепродажа через партнеров CSP
           href: cloud-solution-providers.md
         - name: Руководство по регистрации для участия в программе Connect
@@ -203,6 +210,8 @@
           href: partner-center-portal/azure-iot-edge-module-creation.md
         - name: Подготовка технических ресурсов для модуля IoT Edge
           href: partner-center-portal/create-iot-edge-module-asset.md
+        - name: Контрольный список предварительной сертификации
+          href: iot-edge-checklist.md
     - name: Предложения управляемых служб
       items:
         - name: Создание плана для предложения управляемой службы
@@ -395,6 +404,8 @@
       href: commercial-marketplace-co-sell-countries.md
     - name: Коды состояния для совместной продажи
       href: commercial-marketplace-co-sell-states.md
+    - name: Схема эталонной архитектуры
+      href: reference-architecture-diagram.md
     - name: Категории и подкатегории
       href: categories.md
     - name: Поддерживаемые теги HTML

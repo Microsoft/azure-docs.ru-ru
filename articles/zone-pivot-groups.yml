@@ -496,6 +496,8 @@ groups:
     title: C#
   - id: programming-language-go
     title: Go
+  - id: programming-language-javascript
+    title: JavaScript
   - id: programming-language-python
     title: Python
   - id: programming-language-rest-api
@@ -1006,6 +1008,16 @@ groups:
     title: Python
   - id: rest-api
     title: REST
+- id: app-service-webjob
+  title: Типы веб-заданий
+  prompt: Выбор типа веб-задания
+  pivots:
+  - id: webjob-type-continuous
+    title: С задержкой
+  - id: webjob-type-scheduled
+    title: Запланировано
+  - id: webjob-type-manual
+    title: Вручную
 - id: qnamaker-quickstart
   title: Языки программирования
   prompt: Выбор языка программирования
@@ -1025,9 +1037,9 @@ groups:
   - id: rest
     title: Rest
 metadata:
-  ms.openlocfilehash: ef70d77eb7d22542d2e03131beb99980ee07b78b
-  ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+  ms.openlocfilehash: a687c5b93d92dae95d2d92896a19913c5261f5bd
+  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/18/2021
-  ms.locfileid: "100651924"
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "101735239"

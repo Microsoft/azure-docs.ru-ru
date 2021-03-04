@@ -74,10 +74,14 @@
           href: azure-monitor-insights.md
     - name: "Подключение типа сайт\_— сайт"
       items:
-        - name: Политики IPsec
+        - name: Сведения о политиках S2S IPsec
           href: virtual-wan-ipsec.md
         - name: "Несколько линий связи от поставщика услуг Интернета\_— выбор пути передачи данных Azure"
           href: path-selection-multiple-links.md
+    - name: "Подключение \"точка\_— сеть\""
+      items:
+        - name: Сведения о политиках P2S IPsec
+          href: point-to-site-ipsec.md
     - name: Безопасность
       items:
         - name: Базовые средства безопасности
@@ -108,6 +112,8 @@
           href: connect-virtual-network-gateway-vwan.md
         - name: Настройка пользовательской политики IPsec
           href: virtual-wan-custom-ipsec-portal.md
+        - name: Настройка правил NAT
+          href: nat-rules-vpn-gateway.md
     - name: "Пользовательские VPN-подключения (точка\_— сеть)"
       items:
         - name: Создание пользовательского VPN-подключения

@@ -448,12 +448,14 @@
           href: how-to-managed-cluster-vmss-extension.md
         - name: Настройка управляемого кластера
           href: how-to-managed-cluster-configuration.md
+        - name: Добавление правил NSG и других параметров сети для управляемых кластеров
+          href: how-to-managed-cluster-networking.md
         - name: Развертывание управляемых кластерных приложений с помощью шаблона ARM
           href: how-to-managed-cluster-app-deployment-template.md
-        - name: Настройка управляемого кластера с использованием управляемого удостоверения
-          href: how-to-managed-identity-managed-cluster-virtual-machine-scale-sets.md
         - name: Включение шифрования дисков для узлов управляемого кластера
           href: how-to-enable-managed-cluster-disk-encryption.md
+        - name: Использование управляемого удостоверения для управляемых узлов кластера
+          href: how-to-managed-identity-managed-cluster-virtual-machine-scale-sets.md
     - name: Планирование и подготовка
       items:
         - name: Планирование емкости кластера
