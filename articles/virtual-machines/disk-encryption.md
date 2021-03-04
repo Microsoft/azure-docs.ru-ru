@@ -2,18 +2,18 @@
 title: Шифрование управляемых дисков Azure на стороне сервера
 description: Служба хранилища Azure защищает ваши данные путем шифрования неактивных данных перед их сохранением в кластерах хранилища. Вы можете использовать ключи, управляемые клиентом, для управления шифрованием с помощью собственных ключей, или же вы можете полагаться на ключи, управляемые корпорацией Майкрософт, для шифрования управляемых дисков.
 author: roygara
-ms.date: 10/22/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 ms.author: rogarana
 ms.service: virtual-machines
 ms.subservice: disks
 ms.custom: references_regions
-ms.openlocfilehash: f9152e341ac04209754bbf5f008cd56373967b9f
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: a1fbd536943023d3e6724b9c1638f7a0bd97d847
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101677443"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036951"
 ---
 # <a name="server-side-encryption-of-azure-disk-storage"></a>Шифрование Хранилище дисков Azure на стороне сервера
 
@@ -66,6 +66,8 @@ ms.locfileid: "101677443"
 > [!IMPORTANT]
 > Управляемые клиентом ключи используют управляемые удостоверения для ресурсов Azure — функцию Azure Active Directory (Azure AD). При настройке управляемых пользователем ключей управляемое удостоверение автоматически назначается вашим ресурсам. Если впоследствии вы перемещаете подписку, группу ресурсов или управляемый диск из одного каталога Azure AD в другой, управляемое удостоверение, связанное с управляемыми дисками, не передается новому клиенту, поэтому управляемые клиентом ключи могут перестать работать. Дополнительные сведения см. в статье [Передача подписки между каталогами Azure AD](../active-directory/managed-identities-azure-resources/known-issues.md#transferring-a-subscription-between-azure-ad-directories).
 
+Сведения о том, как включить управляемые пользователем ключи для управляемых дисков, см. в статьях, посвященных их включению с помощью [модуля Azure PowerShell](windows/disks-enable-customer-managed-keys-powershell.md), [Azure CLI](linux/disks-enable-customer-managed-keys-cli.md) или [портал Azure](disks-enable-customer-managed-keys-portal.md). Сведения о том, как включить управляемые клиентом ключи с помощью автоматического смены ключей, см. в разделе [настройка Azure Key Vault и дискенкриптионсет с автоматическим сменой ключей (Предварительная версия)](windows/disks-enable-customer-managed-keys-powershell.md#set-up-an-azure-key-vault-and-diskencryptionset-with-automatic-key-rotation-preview).
+
 ## <a name="encryption-at-host---end-to-end-encryption-for-your-vm-data"></a>Шифрование на основе сквозного шифрования данных виртуальной машины
 
 При включении шифрования на узле это шифрование начинается на самом узле виртуальной машины, на сервере Azure, на котором размещена виртуальная машина. Данные для временных дисковых и дисковых кэшей операционной системы и данных хранятся на этом узле виртуальной машины. После включения шифрования на узле все эти данные шифруются в неактивных потоках, а потоки шифруются в службе хранилища, где они сохраняются. По сути, шифрование на узле шифрует данные от начала до конца. Шифрование на узле не использует ЦП виртуальной машины и не влияет на производительность виртуальной машины. 
@@ -84,6 +86,8 @@ ms.locfileid: "101677443"
 
 [!INCLUDE [virtual-machines-disks-encryption-at-host-suported-sizes](../../includes/virtual-machines-disks-encryption-at-host-suported-sizes.md)]
 
+Чтобы включить сквозное шифрование с помощью шифрования на узле, ознакомьтесь с нашими статьями о том, как включить [модуль Azure PowerShell](windows/disks-enable-host-based-encryption-powershell.md), [Azure CLI](linux/disks-enable-host-based-encryption-cli.md)или [портал Azure](disks-enable-host-based-encryption-portal.md).
+
 ## <a name="double-encryption-at-rest"></a>Двойное шифрование при хранении
 
 Клиенты с высоким уровнем безопасности, которые связаны с риском, связанным с любым конкретным алгоритмом шифрования, реализацией или скомпрометированным ключом, теперь могут использовать дополнительный уровень шифрования с использованием другого алгоритма или режима шифрования на уровне инфраструктуры, используя ключи шифрования, управляемые платформой. Этот новый слой можно применить к материализованным дискам ОС и данным, моментальным снимкам и изображениям, которые будут зашифрованы при хранении с помощью двойного шифрования.
@@ -91,6 +95,8 @@ ms.locfileid: "101677443"
 ### <a name="supported-regions"></a>Поддерживаемые регионы
 
 Двойное шифрование доступно во всех регионах, где доступны управляемые диски.
+
+Сведения о том, как включить двойное шифрование для управляемых дисков, см. в статьях, посвященных их включению с помощью [модуля Azure PowerShell](windows/disks-enable-double-encryption-at-rest-powershell.md), [Azure CLI](linux/disks-enable-double-encryption-at-rest-cli.md) или [портал Azure](disks-enable-double-encryption-at-rest-portal.md).
 
 ## <a name="server-side-encryption-versus-azure-disk-encryption"></a>Шифрование на стороне сервера и шифрование дисков Azure
 

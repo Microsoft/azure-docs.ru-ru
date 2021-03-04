@@ -1,17 +1,16 @@
 ---
 title: Получение источников данных журнала событий Windows с помощью агента Log Analytics в Azure Monitor
 description: Описывается, как с помощью Azure Monitor настроить сбор журналов событий Windows и сведений о создаваемых ими записях.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
-ms.date: 10/21/2020
-ms.openlocfilehash: b747a4b58c9c460178d415d0b45ade814723d8fe
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 02/26/2021
+ms.openlocfilehash: a3baa83e2ae306f1e43aee52e29a151bad6f85d9
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101719871"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036607"
 ---
 # <a name="collect-windows-event-log-data-sources-with-log-analytics-agent"></a>Получение источников данных журнала событий Windows с помощью агента Log Analytics
 Журналы событий Windows — это один из наиболее распространенных [источников данных](../agents/agent-data-sources.md) для агентов log Analytics на виртуальных машинах Windows, так как многие приложения записывают в журнал событий Windows.  События можно собирать из стандартных журналов, таких как журналы системы и приложений, а также указывать пользовательские журналы приложений, которые необходимо отслеживать.
@@ -22,13 +21,13 @@ ms.locfileid: "101719871"
 ![События Windows](media/data-sources-windows-events/overview.png)     
 
 ## <a name="configuring-windows-event-logs"></a>Настройка журналов событий Windows
-Настройте журналы событий Windows [в меню данные в дополнительных параметрах](../agents/agent-data-sources.md#configuring-data-sources) для рабочей области log Analytics.
+Настройте журналы событий Windows из [меню конфигурации агентов](../agents/agent-data-sources.md#configuring-data-sources) для рабочей области log Analytics.
 
 Azure Monitor собирает события только из журналов событий Windows, указанных в параметрах.  Чтобы добавить журнал событий, введите имя журнала и нажмите кнопку **+** .  Из каждого журнала собираются только события с заданной степенью серьезности.  Укажите степени серьезности событий, которые хотите получать из соответствующего журнала.  Дополнительные критерии для фильтрации событий задавать нельзя.
 
 При вводе имени служба Azure Monitor предоставляет варианты распространенных имен журналов событий. Если журнал, который нужно добавить, не отображается в списке, вы по-прежнему можете его добавить, введя его полное имя. Полное имя журнала можно просмотреть с помощью средства просмотра событий. Для этого в средстве просмотра событий откройте страницу *Свойства* журнала и скопируйте строку в поле *Полное имя*.
 
-![Настройка событий Windows](media/data-sources-windows-events/configure.png)
+[![Настройка событий Windows](media/data-sources-windows-events/configure.png)](media/data-sources-windows-events/configure.png#lightbox)
 
 > [!NOTE]
 > Критические события из журнала событий Windows будут иметь серьезность "ошибка" в журналах Azure Monitor.

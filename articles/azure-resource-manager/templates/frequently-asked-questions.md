@@ -2,15 +2,15 @@
 title: Часто задаваемые вопросы о шаблоне ARM
 description: Часто задаваемые вопросы о шаблонах Azure Resource Manager (шаблоны ARM).
 ms.topic: conceptual
-ms.date: 09/17/2020
+ms.date: 03/03/2021
 ms.author: tomfitz
 author: tfitzmac
-ms.openlocfilehash: 757dfa119649e21c6e1787671afa61ee18184300
-ms.sourcegitcommit: 77ab078e255034bd1a8db499eec6fe9b093a8e4f
+ms.openlocfilehash: 24baa0dc7444f632040ddaf9fcc2266f9e4ccae5
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97561908"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036146"
 ---
 # <a name="frequently-asked-questions-about-arm-templates"></a>Часто задаваемые вопросы о шаблонах ARM
 
@@ -88,7 +88,7 @@ ms.locfileid: "97561908"
 
 * **Я слышал, что вы работаете с новым языком шаблона. Где можно найти дополнительные сведения?**
 
-  Чтобы просмотреть новый язык, см. раздел [Project бицеп Repository](https://github.com/Azure/bicep). Чтобы получать сведения о новом языке, [Зарегистрируйтесь для получения уведомлений](https://aka.ms/armLangUpdates).
+  Дополнительные сведения о новом языке см. в статье [что такое бицеп (Предварительная версия)?](bicep-overview.md).
 
 * **Существует ли план поддержки создания шаблонов в YAML?**
 
@@ -100,7 +100,7 @@ ms.locfileid: "97561908"
 
 * **Будет ли предлагаться средство для преобразования шаблонов JSON в новый язык шаблона?**
 
-  Да.
+  Да. См. раздел [декомпилирование JSON в бицеп](compare-template-syntax.md#decompile-json-to-bicep).
 
 ## <a name="template-specs"></a>Спецификации шаблонов
 
@@ -188,6 +188,6 @@ ms.locfileid: "97561908"
 
   Да, см. раздел [Развертывание шаблонов ARM с помощью действий GitHub](deploy-github-actions.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Общие сведения о шаблонах ARM см. в статье [что такое шаблоны ARM?](overview.md).

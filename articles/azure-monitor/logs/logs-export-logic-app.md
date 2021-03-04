@@ -2,17 +2,16 @@
 title: Архивация данных из рабочей области Log Analytics в службу хранилища Azure с помощью приложения логики
 description: Описывает метод использования Azure Logic Apps для запроса данных из Log Analytics рабочей области и их отправки в службу хранилища Azure.
 ms.service: azure-monitor
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 10/02/2020
-ms.openlocfilehash: ae95580a8c192f0815623461fb21ec9ecf52ae26
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: fd66aa1f10a32d94d515a1f0aa25c25331796a8d
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101700649"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102035693"
 ---
 # <a name="archive-data-from-log-analytics-workspace-to-azure-storage-using-logic-app"></a>Архивация данных из рабочей области Log Analytics в службу хранилища Azure с помощью приложения логики
 В этой статье описывается метод использования [Azure Logic Apps](../../logic-apps/index.yml) для запроса данных из log Analytics рабочей области в Azure Monitor и их отправки в службу хранилища Azure. Используйте этот процесс, если необходимо экспортировать данные журнала Azure Monitor для сценариев аудита и соответствия или разрешить другой службе получать эти данные.  

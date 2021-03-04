@@ -7,12 +7,12 @@ ms.author: sujie
 ms.service: stream-analytics
 ms.topic: how-to
 ms.date: 09/10/2020
-ms.openlocfilehash: d1a0a6ad5b45af2157b960f8990574e47d10eeb2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2dbb491e77f132daf7b432f27705eba9e3e3cd3c
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101718426"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036968"
 ---
 # <a name="automate-builds-tests-and-deployments-of-an-azure-stream-analytics-job-using-cicd-tools"></a>Автоматизация сборок, тестов и развертываний задания Azure Stream Analytics с помощью средств CI/CD
 
@@ -122,6 +122,9 @@ azure-streamanalytics-cicd addtestcase -project <projectFullPath> [-testConfigPa
 |---|---|
 | `-project` | Путь **asaproj.jsв** файле для проекта Visual Studio Code или **[имя проекта]. Асапрож** для проекта Visual Studio. |
 | `-testConfigPath` | Путь к файлу конфигурации теста. Если он не указан, будет выполнен поиск файла в **\тест** в текущем каталоге **asaproj.jsв** файле с именем файла по умолчанию **testConfig.json**. Новый файл будет создан, если он не существовал. |
+
+> [!NOTE]
+> `Script`Значение в созданной **testConfig.jsв** файле предназначено только для предоставления контекста; Он не используется в логике тестирования. 
 
 #### <a name="visual-studio-code"></a>[Visual Studio Code](#tab/visual-studio-code)
 

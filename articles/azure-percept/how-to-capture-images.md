@@ -1,20 +1,20 @@
 ---
-title: Развертывание концепции модели искусственного интеллекта в Azure Перцепт DK
-description: Узнайте, как развернуть модель искусственного интеллекта в Azure Перцепт DK из Azure Перцепт Studio.
+title: Запись образов для решения "без кода" в Azure Перцепт Studio
+description: Узнайте, как записывать образы с помощью Azure Перцепт DK в Azure Перцепт Studio для решения, не имеющего кода.
 author: elqu20
 ms.author: v-elqu
 ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/12/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 5ad263f5ae3b0b8e91de30b620002e33086608b4
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 44bf498af52f4d8a0d880dc1f1d5874d5b444cae
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101662858"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102035540"
 ---
-# <a name="capture-images-for-a-vision-project"></a>Запись изображений для проекта визуального распознавания
+# <a name="capture-images-for-a-vision-project-in-azure-percept-studio"></a>Запись образов для проекта концепции в Azure Перцепт Studio
 
 Следуйте указаниям этого раздела, чтобы записать образы с помощью SoM концепции Azure Перцепт DK для существующего проекта концепции в Azure Перцепт Studio. Если вы еще не создали концепцию проекта, см. Руководство по [созданию непрограммных концепций](./tutorial-nocode-vision.md).
 
@@ -56,7 +56,7 @@ ms.locfileid: "101662858"
         1. Выберите предпочтительную скорость работы с образами в разделе **Частота захвата**.
         1. Выберите общее число образов, которые вы хотите получать в рамках **целевого объекта**.
 
-    :::image type="content" source="./media/how-to-capture-images/take-photo.png" alt-text="Страница устройств перцепт с доступными действиями в списке.":::
+    :::image type="content" source="./media/how-to-capture-images/take-photo.png" alt-text="Экран захвата изображения.":::
 
 Все изображения будут доступны в [пользовательское визуальное распознавание](https://www.customvision.ai/).
 

@@ -1,17 +1,16 @@
 ---
 title: Выражение workspace() в запросе журнала Azure Monitor | Документация Майкрософт
 description: Выражение workspace используется в запросе журнала Azure Monitor для получения данных из определенной рабочей области в той же или другой группе ресурсов или в другой подписке.
-ms.subservice: logs
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 09/10/2018
-ms.openlocfilehash: 34b1f850b262a0027d3a9cb2e926bcb2c8a49665
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2f6eb3998c611cb7a72886d1c577c665d73cb5a2
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101710912"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102035574"
 ---
 # <a name="workspace-expression-in-azure-monitor-log-query"></a>Выражение workspace() в запросе журнала Azure Monitor
 

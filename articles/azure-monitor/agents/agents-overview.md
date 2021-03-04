@@ -2,17 +2,16 @@
 title: Обзор агентов мониторинга Azure | Документация Майкрософт
 description: В этой статье представлен подробный обзор доступных агентов Azure, которые поддерживают мониторинг виртуальных машин, размещенных в Azure или гибридной среде.
 services: azure-monitor
-ms.subservice: ''
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 01/12/2021
-ms.openlocfilehash: af18356ef42f8796b972626da4567aac68a6de5a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b8cfb483f2b06c072707c57ff45b7ad995a22eb4
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101719990"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102034444"
 ---
 # <a name="overview-of-azure-monitor-agents"></a>Общие сведения об агентах Azure Monitor
 
@@ -35,7 +34,7 @@ ms.locfileid: "101719990"
 | | Агент Azure Monitor (предварительная версия) | Диагностика<br>расширение (WAD) | Log Analytics<br>агент | Зависимость<br>агент |
 |:---|:---|:---|:---|:---|
 | **Поддерживаемые среды** | Azure<br>Другое облако (Дуга Azure)<br>Локально (Дуга Azure)  | Azure | Azure<br>Другое облако<br>В локальной среде | Azure<br>Другое облако<br>В локальной среде | 
-| **Требования к агентам**  | Нет | Нет | Нет | Требуется агент Log Analytics |
+| **Требования к агентам**  | None | None | None | Требуется агент Log Analytics |
 | **Собираемые данные** | журналы событий;<br>Производительность | журналы событий;<br>ETW-события<br>Производительность<br>Файловые журналы<br>Журналы IIS<br>Журналы приложений .NET<br>Аварийные дампы<br>Журналы диагностики агента | журналы событий;<br>Производительность<br>Файловые журналы<br>Журналы IIS<br>Полезные сведения и решения<br>Другие службы | зависимости процессов.<br>Метрики сетевого подключения |
 | **Отправленные данные** | Журналы Azure Monitor<br>Метрики Azure Monitor | Хранилище Azure<br>Метрики Azure Monitor<br>Концентратор событий | Журналы Azure Monitor | Журналы Azure Monitor<br>(с помощью агента Log Analytics) |
 | **Службы и**<br>**features**<br>**поддерживается** | Log Analytics<br>Обозреватель метрик | Обозреватель метрик | Аналитика ВМ<br>Log Analytics<br>Служба автоматизации Azure<br>Центр безопасности Azure<br>Azure Sentinel | Аналитика ВМ<br>Сопоставление служб |
@@ -45,7 +44,7 @@ ms.locfileid: "101719990"
 | | Агент Azure Monitor (предварительная версия) | Диагностика<br>расширение (LAD) | Telegraf<br>агент | Log Analytics<br>агент | Зависимость<br>агент |
 |:---|:---|:---|:---|:---|:---|
 | **Поддерживаемые среды** | Azure<br>Другое облако (Дуга Azure)<br>Локально (Дуга Azure) | Azure | Azure<br>Другое облако<br>В локальной среде | Azure<br>Другое облако<br>В локальной среде | Azure<br>Другое облако<br>В локальной среде |
-| **Требования к агентам**  | Нет | Нет | Нет | Нет | Требуется агент Log Analytics |
+| **Требования к агентам**  | None | None | None | None | Требуется агент Log Analytics |
 | **Собираемые данные** | Системный журнал<br>Производительность | Системный журнал<br>Производительность | Производительность | Системный журнал<br>Производительность| зависимости процессов.<br>Метрики сетевого подключения |
 | **Отправленные данные** | Журналы Azure Monitor<br>Метрики Azure Monitor | Хранилище Azure<br>Концентратор событий | Метрики Azure Monitor | Журналы Azure Monitor | Журналы Azure Monitor<br>(с помощью агента Log Analytics) |
 | **Службы и**<br>**features**<br>**поддерживается** | Log Analytics<br>Обозреватель метрик | | Обозреватель метрик | Аналитика ВМ<br>Log Analytics<br>Служба автоматизации Azure<br>Центр безопасности Azure<br>Azure Sentinel | Аналитика ВМ<br>Сопоставление служб |

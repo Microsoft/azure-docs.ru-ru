@@ -6,13 +6,12 @@ services: azure-monitor
 ms.topic: reference
 ms.date: 02/06/2021
 ms.author: robb
-ms.subservice: metrics
-ms.openlocfilehash: 6e4a776bd9aaf3900d05a6191b8ff4dcbb11fd52
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2437ab80a23ffc39c180bcdf72921fdf13768541
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101731669"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102033509"
 ---
 # <a name="supported-metrics-with-azure-monitor"></a>Метрики, поддерживаемые Azure Monitor
 

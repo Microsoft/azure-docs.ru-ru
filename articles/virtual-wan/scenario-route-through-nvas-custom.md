@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/25/2021
 ms.author: cherylmc
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 8916fbc7c2a0b9789dcc73697324cee370f1fc1c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6291964aff7c215df7f738ab103947dcb9b1b1d4
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101704911"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036901"
 ---
 # <a name="scenario-route-traffic-through-nvas-by-using-custom-settings"></a>Сценарий: маршрутизация трафика через NVA с помощью пользовательских параметров
 
@@ -176,7 +176,7 @@ ms.locfileid: "101704911"
    >
    > * Чтобы маршруты 0.0.0.0/0 вступили в силу, пользователям портала необходимо включить параметр "распространить на маршрут по умолчанию" для подключений (VPN/ER/P2S/VNet).
    > * Пользователи PS/CLI/RESTFUL должны установить флаг "енаблеинтернетсекурити" в значение true, чтобы маршруты 0.0.0.0/0 вступили в силу.
-   >
+   > * Подключение к виртуальной сети не поддерживает IP-адрес следующего прыжка "множественный/уникальный" для сетевого виртуального устройства в ПЕРИФЕРИЙной виртуальной сети "Если" один из маршрутов с IP-адресом следующего прыжка указан как "общедоступный" или 0.0.0.0/0 (Интернет)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/12/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 6e1ed39edfd3c395fbc3e4d26a4aa358d48a1d5b
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 01bd3709050d8a2b57c1bf51920308188546fb31
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101663079"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102035489"
 ---
 # <a name="deploy-a-vision-ai-model-to-your-azure-percept-dk"></a>Развертывание концепции модели искусственного интеллекта в Azure Перцепт DK
 
@@ -40,13 +40,11 @@ ms.locfileid: "101663079"
 
 1. На следующей странице щелкните **развернуть образец модели** , если хотите развернуть одну из моделей предварительно обученных образцов. Если вы хотите развернуть существующее [пользовательское решение без кода](./tutorial-nocode-vision.md), щелкните **развернуть проект пользовательское визуальное распознавание**.
 
-    :::image type="content" source="./media/how-to-deploy-model/deploy-model.png" alt-text="Список устройств перцепт.":::
+    :::image type="content" source="./media/how-to-deploy-model/deploy-model.png" alt-text="Выбор модели для развертывания.":::
 
 1. Если вы решили развернуть решение без концепции кода, выберите проект и предпочтительную итерацию модели и нажмите кнопку **развернуть**.
 
 1. Если вы выбрали развертывание образца модели, выберите модель и щелкните **развернуть на устройстве**.
-
-    :::image type="content" source="./media/how-to-deploy-model/select-sample-model.png" alt-text="Список устройств перцепт.":::
 
 1. После успешного развертывания модели вы получите сообщение о состоянии в правом верхнем углу экрана. Чтобы просмотреть сведения о модели в действии, щелкните ссылку **просмотреть поток** в сообщении о состоянии, чтобы просмотреть видеопоток RTSP из SoM концепции DevKit.
 

@@ -5,13 +5,12 @@ author: yanivlavi
 ms.author: yalavi
 ms.topic: conceptual
 ms.date: 09/22/2020
-ms.subservice: alerts
-ms.openlocfilehash: 665137688a000433a9101a77342fa6f9350d7141
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 560f26b712818327294791feb787b5fe7c9d7b82
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101714329"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036475"
 ---
 # <a name="create-a-log-alert-with-a-resource-manager-template"></a>Создание оповещения журнала с помощью шаблона Resource Manager
 

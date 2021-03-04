@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.date: 08/03/2020
 ms.custom: devx-track-java, devx-track-azurecli
 zone_pivot_groups: programming-languages-spring-cloud
-ms.openlocfilehash: 173e6541b4113a5d2e71d76b3b939a69d5224b5a
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.openlocfilehash: 7c37fbead3f7b87da16e77caeda8286d05ca628b
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92735596"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102035141"
 ---
 # <a name="quickstart-build-and-deploy-apps-to-azure-spring-cloud"></a>Краткое руководство. Сборка и развертывание приложений в Azure Spring Cloud
 
@@ -84,7 +84,7 @@ ms.locfileid: "92735596"
    ```
 
    > [!TIP]
-   > После записи двоичных файлов в папку *./publish* файл проекта будет содержать следующий XML для упаковки двоичных файлов в *ZIP-файл* :
+   > После записи двоичных файлов в папку *./publish* файл проекта будет содержать следующий XML для упаковки двоичных файлов в *ZIP-файл*:
    >
    > ```xml
    > <Target Name="Publish-Zip" AfterTargets="Publish">
@@ -100,7 +100,7 @@ ms.locfileid: "92735596"
    az spring-cloud app deploy -n planet-weather-provider --runtime-version NetCore_31 --main-entry Microsoft.Azure.SpringCloud.Sample.PlanetWeatherProvider.dll --artifact-path ./publish-deploy-planet.zip
    ```
 
-   Параметр `--main-entry` задает относительный путь от корневой папки *ZIP-файла* к *DLL-файлу* , который содержит точку входа приложения. После загрузки *ZIP-файла* служба извлекает все файлы и папки и пытается выполнить точку входа в указанном *DLL-файле* .
+   Параметр `--main-entry` задает относительный путь от корневой папки *ZIP-файла* к *DLL-файлу*, который содержит точку входа приложения. После загрузки *ZIP-файла* служба извлекает все файлы и папки и пытается выполнить точку входа в указанном *DLL-файле*.
 
    Выполнение этой команды может занять несколько минут.
 
@@ -143,7 +143,7 @@ ms.locfileid: "92735596"
 1. Чтобы назначить конечную точку, выполните следующую команду.
 
    ```azurecli
-   az spring-cloud app update -n solar-system-weather --is-public true
+   az spring-cloud app update -n solar-system-weather --assign-endpoint true
    ```
 
 1. Чтобы получить URL-адрес конечной точки, выполните следующую команду.
@@ -222,7 +222,7 @@ https://servicename-solar-system-weather.azuremicroservices.io/weatherforecast
     az configure --defaults spring-cloud=<service instance name>
     ```
 
-1. Создайте микрослужбы Azure Spring Cloud с помощью JAR-файлов, полученных на предыдущем шаге. Вы создадите три приложения: **gateway** , **auth-service** и **account-service** .
+1. Создайте микрослужбы Azure Spring Cloud с помощью JAR-файлов, полученных на предыдущем шаге. Вы создадите три приложения: **gateway**, **auth-service** и **account-service**.
 
     ```azurecli
     az spring-cloud app create --name gateway
@@ -245,7 +245,7 @@ https://servicename-solar-system-weather.azuremicroservices.io/weatherforecast
 1. Назначьте конечную точку, использую следующую команду:
 
     ```azurecli
-    az spring-cloud app update -n gateway --is-public true
+    az spring-cloud app update -n gateway --assign-endpoint true
     ```
 
 2. Отправьте к приложению **gateway** запрос на получение общедоступного IP-адреса, чтобы убедиться, что приложение запущено:
@@ -280,10 +280,10 @@ https://servicename-solar-system-weather.azuremicroservices.io/weatherforecast
     ```
     
     Вам будет предложено выбрать:
-    * **Модули** . Выберите `gateway`,`auth-service` и `account-service`.
-    * **Подписка** : Это ваша подписка, используемая для создания экземпляра Azure Spring Cloud.
-    * **Экземпляр службы** . Имя вашего экземпляра Azure Spring Cloud.
-    * **Общедоступная конечная точка** . В списке предоставленных проектов введите номер, соответствующий `gateway`.  Это обеспечивает открытый доступ.
+    * **Модули**. Выберите `gateway`,`auth-service` и `account-service`.
+    * **Подписка**: Это ваша подписка, используемая для создания экземпляра Azure Spring Cloud.
+    * **Экземпляр службы**. Имя вашего экземпляра Azure Spring Cloud.
+    * **Общедоступная конечная точка**. В списке предоставленных проектов введите номер, соответствующий `gateway`.  Это обеспечивает открытый доступ.
 
 1. Теперь файл POM содержит зависимости и конфигурации подключаемого модуля. Разверните приложения с помощью следующей команды. 
 
@@ -310,19 +310,19 @@ https://servicename-solar-system-weather.azuremicroservices.io/weatherforecast
 
     ![Развертывание в Azure (шаг 1)](media/spring-cloud-intellij-howto/revision-deploy-to-azure-1.png)
 
-1. В поле **Имя** добавьте *:gateway* к имеющемуся **имени** .
-1. В текстовом поле **Artifact** (Артефакт) выберите *com.piggymetrics:gateway:1.0-SNAPSHOT* .
+1. В поле **Имя** добавьте *:gateway* к имеющемуся **имени**.
+1. В текстовом поле **Artifact** (Артефакт) выберите *com.piggymetrics:gateway:1.0-SNAPSHOT*.
 1. В текстовом поле **Subscription** (Подписка) проверьте свою подписку.
 1. В текстовом поле **Spring Cloud** выберите экземпляр Azure Spring Cloud, который вы создали при [подготовке к работе экземпляра Azure Spring Cloud](./spring-cloud-quickstart-provision-service-instance.md).
 1. Задайте для параметра **Public Endpoint** (Общедоступная конечная точка) значение *Enable* (Включить).
 1. В текстовом поле **App:** (Приложение:) выберите **Create app...** (Создать приложение...).
-1. Введите *gateway* , а затем нажмите кнопку **ОК** .
+1. Введите *gateway*, а затем нажмите кнопку **ОК**.
 
     ![Развертывание в Azure, подтверждение](media/spring-cloud-intellij-howto/revision-deploy-to-azure-2.png)
 
 1. В диалоговом окне в разделе **Before launch** (До запуска) дважды щелкните *Run Maven Goal* (Запустить целевой объект Maven).
-1. В текстовом поле **Working directory** (Рабочая папка) перейдите к папке *piggymetrics/gateway* .
-1. В текстовом поле **Command line** (Командная строка) введите *package -DskipTests* . Нажмите кнопку **ОК** .
+1. В текстовом поле **Working directory** (Рабочая папка) перейдите к папке *piggymetrics/gateway*.
+1. В текстовом поле **Command line** (Командная строка) введите *package -DskipTests*. Нажмите кнопку **ОК**.
 1. Запустите развертывание, нажав кнопку **Run** (Выполнить) в нижней части диалогового окна **Deploy Azure Spring Cloud app** (Развертывание приложения Azure Spring Cloud). Подключаемый модуль выполнит команду `mvn package` для приложения `gateway` и развернет JAR-файл, созданный командой `package`.
 
 ### <a name="deploy-auth-service-and-account-service-apps-to-azure-spring-cloud"></a>Развертывание приложений auth-service и account-service в Azure Spring Cloud
@@ -331,7 +331,7 @@ https://servicename-solar-system-weather.azuremicroservices.io/weatherforecast
 1. В полях **Name** (Имя) и **Artifact** (Артефакт) укажите, соответственно, приложение `auth-service`.
 1. В текстовом поле **App:** (Приложение:) выберите **Create app...** (Создать приложение...), чтобы создать приложение `auth-service`.
 1. Убедитесь, что для параметра **Public Endpoint** (Общедоступная конечная точка) установлено значение *Disabled* (Отключено).
-1. В диалоговом окне в разделе **Before launch** (Перед запуском) в поле **Working directory** (Рабочая папка) перейдите в папку *piggymetrics/auth-service* .
+1. В диалоговом окне в разделе **Before launch** (Перед запуском) в поле **Working directory** (Рабочая папка) перейдите в папку *piggymetrics/auth-service*.
 1. Запустите развертывание, нажав кнопку **Run** (Выполнить) в нижней части диалогового окна **Deploy Azure Spring Cloud app** (Развертывание приложения Azure Spring Cloud). 
 1. Повторите эти процедуры, чтобы настроить и развернуть `account-service`.
 ---
@@ -342,12 +342,12 @@ https://servicename-solar-system-weather.azuremicroservices.io/weatherforecast
 
 URL-адрес можно найти на портале Azure. 
 1. Перейдите к службе.
-2. Выберите **Приложения** .
-3. Выберите **шлюз** .
+2. Выберите **Приложения**.
+3. Выберите **шлюз**.
 
     ![Переход к приложению](media/spring-cloud-quickstart-launch-app-cli/navigate-app1.png)
     
-4. Найдите URL-адрес на странице **gateway | Обзор** .
+4. Найдите URL-адрес на странице **gateway | Обзор**.
 
     ![Переход к приложению (второй этап)](media/spring-cloud-quickstart-launch-app-cli/navigate-app2-url.png)
 

@@ -13,12 +13,12 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c43125edab0f5ed097b99798ca22e5543e15a2d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 4311d0acc7c417bf31c71f46e6c25c65312b894d
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693257"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102034547"
 ---
 # <a name="governing-azure-ad-service-accounts"></a>Управление учетными записями службы Azure AD
 
@@ -51,13 +51,13 @@ ms.locfileid: "101693257"
 
 **Разрешения**
 
-* Не присваивайте учетным записям служб встроенные роли. Вместо этого используйте [модель предоставления разрешений OAuth2 для Microsoft Graph](https://docs.microsoft.com/graph/api/resources/oauth2permissiongrant?view=graph-rest-1.0),
+* Не присваивайте учетным записям служб встроенные роли. Вместо этого используйте [модель предоставления разрешений OAuth2 для Microsoft Graph](/graph/api/resources/oauth2permissiongrant),
 
 * Если субъекту-службе должна быть назначена привилегированная роль, рассмотрите возможность назначения [пользовательской роли](https://docs.microsoft.com/azure/active-directory/roles/custom-create) с конкретными обязательными привилегированными пользователями в режиме с ограниченным временем.
 
 * Не включайте учетные записи служб в качестве членов групп с повышенными разрешениями. 
 
-* [Используйте PowerShell для перечисления членов привилегированных ролей](https://docs.microsoft.com/powershell/module/azuread/get-azureaddirectoryrolemember?view=azureadps-2.0), таких как   
+* [Используйте PowerShell для перечисления членов привилегированных ролей](/powershell/module/azuread/get-azureaddirectoryrolemember), таких как   
 `Get-AzureADDirectoryRoleMember`и фильтр для ObjectType "субъект-служба".
 
    или используйте  
@@ -117,7 +117,7 @@ ms.locfileid: "101693257"
 
 Регулярно просматривайте предоставленные разрешения и области, доступ к которым осуществляется с помощью учетных записей служб, чтобы узнать, можно ли их сократить.
 
-* Используйте [PowerShell](https://docs.microsoft.com/powershell/module/azuread/get-azureadserviceprincipaloauth2permissiongrant?view=azureadps-2.0) , чтобы [создать автоматизацию для проверки и документирования](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) областей, в которые предоставляется разрешение на предоставление учетной записи службы.
+* Используйте [PowerShell](/powershell/module/azuread/get-azureadserviceprincipaloauth2permissiongrant) , чтобы [создать автоматизацию для проверки и документирования](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) областей, в которые предоставляется разрешение на предоставление учетной записи службы.
 
 * Используйте PowerShell для [просмотра учетных данных существующих субъектов-служб](https://github.com/AzureAD/AzureADAssessment) и проверки их допустимости.
 
@@ -172,7 +172,7 @@ ms.locfileid: "101693257"
 
 **Процессы для отмены инициализации должны включать следующие задачи.**
 
-1. После отмены подготовки связанного приложения или скрипта с помощью учетной записи службы [Отслеживайте входы](../reports-monitoring/concept-all-sign-ins#sign-ins-report.md) и доступ к ресурсам.
+1. После отмены подготовки связанного приложения или скрипта с помощью учетной записи службы [Отслеживайте входы](../reports-monitoring/concept-all-sign-ins.md#sign-ins-report) и доступ к ресурсам.
 
    * Если учетная запись все еще активна, определите, как она используется, прежде чем выполнять дальнейшие действия.
  

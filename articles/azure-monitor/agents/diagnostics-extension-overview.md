@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 02/14/2020
-ms.openlocfilehash: 3c0e348e62184f839ce38e4c364fb5c6b81f1131
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 90addb74811819dec563ba072e9a6aea2cf72ca4
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101726229"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036543"
 ---
 # <a name="azure-diagnostics-extension-overview"></a>Обзор расширения "Диагностика Azure"
 Расширение "Диагностика Azure" — это [агент в Azure Monitor](../agents/agents-overview.md), собирающий данные мониторинга из гостевой операционной системы на вычислительных ресурсах Azure, включая виртуальные машины. В этой статье представлен обзор расширения "Диагностика Azure", в том числе его специальных функциональных возможностей и параметров установки и настройки. 
@@ -78,7 +78,7 @@ ms.locfileid: "101726229"
 | Большие двоичные объекты службы хранилища Azure | Запись данных в большие двоичные объекты в службе хранилища Azure в дополнение к таблицам. |
 | Application Insights | Сбор данных из приложений, выполняющихся на виртуальной машине, в Application Insights для интеграции с другими средствами мониторинга приложений. Дополнительные сведения см. в статье [Отправка в Application Insights диагностических данных](diagnostics-extension-to-application-insights.md). |
 
-Вы также можете переносить данные WAD из хранилища в рабочую область Log Analytics, чтобы анализировать их с помощью журналов Azure Monitor, хотя для этой возможности обычно используется агент Log Analytics. Он умеет передавать данные сразу в рабочую область Log Analytics и поддерживает решения и аналитические инструменты, которые предоставляют дополнительные функциональные возможности.  Дополнительные сведения см. в статье [Сбор журналов диагностики Azure из службы хранилища Azure](../essentials/diagnostics-extension-logs.md). 
+Вы также можете переносить данные WAD из хранилища в рабочую область Log Analytics, чтобы анализировать их с помощью журналов Azure Monitor, хотя для этой возможности обычно используется агент Log Analytics. Он умеет передавать данные сразу в рабочую область Log Analytics и поддерживает решения и аналитические инструменты, которые предоставляют дополнительные функциональные возможности.  Дополнительные сведения см. в статье [Сбор журналов диагностики Azure из службы хранилища Azure](../agents/diagnostics-extension-logs.md). 
 
 
 ### <a name="linux-diagnostics-extension-lad"></a>Расширение диагностики для Linux (LAD)
