@@ -8,15 +8,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 10/28/2020
+ms.date: 03/04/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: e4e90d91b8e6ae017f00e37304c4da56cd618732
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: b69492dc41786a677043df5e77c9d12aa26893f6
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102095312"
+ms.locfileid: "102119779"
 ---
 # <a name="about-claim-resolvers-in-azure-active-directory-b2c-custom-policies"></a>Арбитры утверждений в пользовательских политиках Azure Active Directory B2C
 
@@ -87,7 +87,7 @@ ms.locfileid: "102095312"
 | {Context:CorrelationId} | Идентификатор корреляции.  | 00000000-0000-0000-0000-000000000000 |
 | {Context:DateTimeInUtc} |Дата и время в формате UTC.  | 10/10/2018 12:00:00 |
 | {Context:DeploymentMode} |Режим развертывания политики.  | Производство |
-| {Context: имя_узла} | Имя узла для текущего запроса.  | contoso.b2clogin.com |
+| {Context: имя_узла} | Имя узла текущего запроса.  | contoso.b2clogin.com |
 | {Context:IPAddress} | IP-адрес пользователя. | 11.111.111.11 |
 | {Context: функции "оставаться} | Указывает, установлен ли флажок [оставаться в](session-behavior.md?pivots=b2c-custom-policy#enable-keep-me-signed-in-kmsi) системе. |  true |
 

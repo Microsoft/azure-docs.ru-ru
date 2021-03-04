@@ -7,12 +7,12 @@ ms.subservice: sizes
 ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: jushiman
-ms.openlocfilehash: 04d6daac6644bd8d29479ac527bbdd8a5bdbd116
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 986b02ee1127bc929ce34518226424ba06d24b89
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101680187"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102101551"
 ---
 # <a name="msv2-and-mdsv2-series-medium-memory-preview"></a>Средняя память серии Msv2 и Mdsv2 (Предварительная версия)
 
@@ -48,13 +48,13 @@ ms.locfileid: "101680187"
 
 | Размер | vCPU | Память: ГиБ | Временное хранилище (SSD): ГиБ | Максимальное число дисков данных | Максимальная пропускная способность дисков без кэширования: операций ввода-вывода в секунду / МБит/с | Максимальное число сетевых адаптеров | Ожидаемая пропускная способность сети (Мбит/с) | 
 |---|---|---|---|---|---|---|---|
-| Standard_M32dms_v2 | 32 | 875 | 0 | 32 |  20000/500 | 8 | 8000 | 
-| Standard_M64ds_v2 | 64 | 1024 | 0 | 64 | 40000/1000 | 8 | 16000 | 
-| Standard_M64dms_v2 | 64 | 1792 | 0 | 64 | 40000/1000 | 8 | 16000 | 
-| Standard_M128ds_v2 | 128 | 2048 | 0 | 64 | 80000/2000 | 8 | 30 000 | 
-| Standard_M128dms_v2 | 128 | 3892 | 0 | 64 | 80000/2000 | 8 | 30 000 | 
-| Standard_M192ids_v2 | 192 | 2048 | 0 | 64 | 80000/2000 | 8 | 30 000 | 
-| Standard_M192idms_v2 | 192 | 4096 | 0 | 64 | 80000/2000 | 8 | 30 000 | 
+| Standard_M32ms_v2 | 32 | 875 | 0 | 32 |  20000/500 | 8 | 8000 | 
+| Standard_M64s_v2 | 64 | 1024 | 0 | 64 | 40000/1000 | 8 | 16000 | 
+| Standard_M64ms_v2 | 64 | 1792 | 0 | 64 | 40000/1000 | 8 | 16000 | 
+| Standard_M128s_v2 | 128 | 2048 | 0 | 64 | 80000/2000 | 8 | 30 000 | 
+| Standard_M128ms_v2 | 128 | 3892 | 0 | 64 | 80000/2000 | 8 | 30 000 | 
+| Standard_M192is_v2 | 192 | 2048 | 0 | 64 | 80000/2000 | 8 | 30 000 | 
+| Standard_M192ims_v2 | 192 | 4096 | 0 | 64 | 80000/2000 | 8 | 30 000 | 
 
 ## <a name="mdsv2-medium-memory-with-disk"></a>Mdsv2 — средняя память с диском  
 

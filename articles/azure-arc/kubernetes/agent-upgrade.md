@@ -2,18 +2,18 @@
 title: Обновление агентов Kubernetes с включенной службой Arc Azure
 services: azure-arc
 ms.service: azure-arc
-ms.date: 03/02/2021
+ms.date: 03/03/2021
 ms.topic: article
 author: shashankbarsin
 ms.author: shasb
 description: Обновление агента управления для Kubernetes с поддержкой дуги Azure
 keywords: Kubernetes, Arc, Azure, K8s, контейнеры, агент, обновление
-ms.openlocfilehash: 3a5355269db4ccfc91612f661b464556b22c1d35
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 172654f655e594c295a8807b417c32d7849bd4b1
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101662819"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102121921"
 ---
 # <a name="upgrading-azure-arc-enabled-kubernetes-agents"></a>Обновление агентов Kubernetes с включенной службой Arc Azure
 
@@ -84,6 +84,6 @@ az connectedk8s upgrade -g AzureArcTest1 -n AzureArcTest --agent-version 1.0.1
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Подключение кластера к Azure Arc](./connect-cluster.md)
-* [Создание конфигураций в кластере Kubernetes с включенной Arc](./use-gitops-connected-cluster.md)
-* [Использование политики Azure для применения конфигураций в масштабе](./use-azure-policy.md)
+* Пошаговое руководство по [подключению кластера Kubernetes к службе "Дуга Azure](./connect-cluster.md)".
+* У вас уже есть кластер Kubernetes, подключенный к службе "Дуга Azure"? [Создайте конфигурации в кластере Kubernetes с включенной Arc](./use-gitops-connected-cluster.md).
+* Узнайте, как [использовать политику Azure для применения конфигураций в масштабе](./use-azure-policy.md).

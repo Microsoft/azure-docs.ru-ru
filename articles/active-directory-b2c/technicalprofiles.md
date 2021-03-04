@@ -8,15 +8,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 12/11/2020
+ms.date: 03/04/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: bbb0c5617696347b566ba09a481afae4f52379aa
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: a70b8be6c034f002f0e387b5d3b4ba5deafa1a5e
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102096043"
+ms.locfileid: "102120510"
 ---
 # <a name="technicalprofiles"></a>TechnicalProfiles
 
@@ -555,7 +555,7 @@ ms.locfileid: "102096043"
 
 ## <a name="enabled-for-user-journeys"></a>Включено для пути взаимодействия пользователя
 
-[ClaimsProviderSelections](userjourneys.md#claimsproviderselection) в пути взаимодействия пользователя определяет список и порядок расположения вариантов для выбора поставщика утверждений. Элемент **EnabledForUserJourneys** позволяет отфильтровать доступных для пользователя поставщиков утверждений. Элемент **EnabledForUserJourneys** содержит одно из следующих значений:
+[ClaimsProviderSelections](userjourneys.md#identity-provider-selection) в пути взаимодействия пользователя определяет список и порядок расположения вариантов для выбора поставщика утверждений. Элемент **EnabledForUserJourneys** позволяет отфильтровать доступных для пользователя поставщиков утверждений. Элемент **EnabledForUserJourneys** содержит одно из следующих значений:
 
 - **Always** обозначает, что технический профиль выполняется.
 - **Never** обозначает, что технический профиль пропускается.

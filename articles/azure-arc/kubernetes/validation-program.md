@@ -2,20 +2,20 @@
 title: Программа проверки Kubernetes с поддержкой ARC в Azure
 services: azure-arc
 ms.service: azure-arc
-ms.date: 03/02/2021
+ms.date: 03/03/2021
 ms.topic: article
 author: shashankbarsin
 ms.author: shasb
 description: Описывает программу проверки дуги для дистрибутивов Kubernetes
 keywords: Kubernetes, Arc, Azure, K8s, проверка
-ms.openlocfilehash: 0d7756f407a3a176c8913d99bdb45a5026300569
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 819df906add6275997e01fab310fe8dd57a87b51
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101689221"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102121377"
 ---
-# <a name="azure-arc-validation-program"></a>Программа проверки Azure Arc
+# <a name="azure-arc-validation-program"></a>Программа проверки дуги Azure
 
 Kubernetes с поддержкой Azure Arc работает со всеми кластерами Kubernetes, сертифицированными для Cloud Native Computing Foundation. Группа по работе с Azure Arc также работала с основными отраслевыми поставщиками Kubernetes, которые позволяют проверять, включена Kubernetesя ARC в Azure с дистрибутивами Kubernetes. Будущие основные и дополнительные версии дистрибутивов Kubernetes, выпущенные этими поставщиками, будут проверены на совместимость с Kubernetes с поддержкой ARC.
 
@@ -61,6 +61,6 @@ Kubernetes с поддержкой Azure Arc работает со всеми к
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Подключение кластера к Azure Arc](./connect-cluster.md)
-* [Создание конфигураций в кластере Kubernetes с включенной Arc](./use-gitops-connected-cluster.md)
-* [Использование политики Azure для применения конфигураций в масштабе](./use-azure-policy.md)
+Узнайте, как подключить кластер к службе "Дуга Azure".
+> [!div class="nextstepaction"]
+> [Подключение кластера к Azure Arc](./quickstart-connect-cluster.md)

@@ -3,18 +3,18 @@ title: Резервное копирование данных в Azure с пом
 titleSuffix: Azure Blob Storage Docs
 description: На веб-странице приводятся общие сведения о факторах, которые необходимо учитывать, и действия, которые необходимо выполнить, чтобы использовать Azure в качестве целевого объекта хранилища и расположения восстановления для Commvault Complete Backup и Recovery
 keywords: Commvault, резервное копирование в облако, архивация, резервное копирование в Azure, аварийное восстановление, непрерывность бизнес-процессов
-author: Karl Rautenstrauch
+author: karauten
 ms.author: karauten
 ms.date: 11/11/2020
 ms.topic: article
 ms.service: Storage
 ms.subservice: Blob Storage
-ms.openlocfilehash: f5b35abd58d99478014c1227b6e3c03c2fc7a177
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 381775b8cdba173cc1752a45b83670c7251e50ec
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101746199"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102101568"
 ---
 # <a name="back-up-to-azure-with-commvault"></a>Резервное копирование в Azure с помощью Commvault
 

@@ -9,12 +9,12 @@ ms.service: azure-arc
 ms.subservice: azure-arc-data
 ms.date: 03/02/2021
 ms.topic: conceptual
-ms.openlocfilehash: d3eb4e4b45a13872a11515dd4f53fcbbc069a954
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6b4d5c1372a8351f1fe5a6608aff38bf232aabd8
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101686688"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102121955"
 ---
 # <a name="release-notes---azure-arc-enabled-data-services-preview"></a>Заметки о выпуске — службы данных с поддержкой ARC в Azure (Предварительная версия)
 
@@ -36,7 +36,7 @@ ms.locfileid: "101686688"
 - Azure Data Studio "геомасштабирование" в службе "Дуга Azure" PostgreSQL: 
    - Теперь на странице "Обзор" отображается состояние группы серверов, сгруппированных по узлам.
    - Теперь доступны новые страницы свойств для отображения дополнительных сведений о группе серверов.
-   - Настройка параметров ядра Postgres на странице **параметров узла** =
+   - Настройка параметров ядра Postgres на странице **параметров узла**
 
 Сведения о проблемах, связанных с этим выпуском, см. в статье [Известные проблемы: службы данных с поддержкой Arc Azure (Предварительная версия)](known-issues.md) .
 

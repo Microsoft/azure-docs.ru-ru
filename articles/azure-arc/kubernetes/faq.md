@@ -8,12 +8,12 @@ author: shashankbarsin
 ms.author: shasb
 description: Эта статья содержит список часто задаваемых вопросов, связанных с включенной службой Arc Kubernetes.
 keywords: Kubernetes, Arc, Azure, контейнеры, конфигурация, Гитопс, вопросы и ответы
-ms.openlocfilehash: dc12294b5d53372be5f2e1dd71436973fefbb194
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: d7facb842509bdf852957d46d91dfcb3912e99ba
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101647869"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102121717"
 ---
 # <a name="frequently-asked-questions---azure-arc-enabled-kubernetes"></a>Часто задаваемые вопросы об Azure Arc Enabled Kubernetes
 
@@ -72,6 +72,6 @@ AKS — это управляемое предложение Kubernetes в Azure
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Подключение кластера к Azure Arc](./quickstart-connect-cluster.md)
-* [Создание конфигураций в кластере Kubernetes с включенной Arc](./use-gitops-connected-cluster.md)
-* [Использование политики Azure для применения конфигураций в масштабе](./use-azure-policy.md)
+* Пошаговое руководство по [подключению кластера Kubernetes к службе "Дуга Azure](./connect-cluster.md)".
+* У вас уже есть кластер Kubernetes, подключенный к службе "Дуга Azure"? [Создайте конфигурации в кластере Kubernetes с включенной Arc](./use-gitops-connected-cluster.md).
+* Узнайте, как [использовать политику Azure для применения конфигураций в масштабе](./use-azure-policy.md).

@@ -11,14 +11,14 @@ author: msmimart
 manager: celestedg
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 883e658fd3f03eb50d54e548ffac49e23b340808
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a59e573c9b24d9a8b5577b55d143fcaca67952f0
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101688638"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102120765"
 ---
-# <a name="add-a-self-service-sign-up-user-flow-to-an-app-preview"></a>Добавление потока пользователя для самостоятельной регистрации в приложении (предварительная версия)
+# <a name="add-a-self-service-sign-up-user-flow-to-an-app"></a>Добавление потока для самостоятельной регистрации пользователей в приложении
 
 > [!NOTE]
 > Некоторые функции, упомянутые в этой статье, являются общедоступными функциями предварительной версии Azure Active Directory. См. подробные сведения о [дополнительных условиях использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).

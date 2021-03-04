@@ -13,14 +13,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/07/2020
 ms.author: mlottner
-ms.openlocfilehash: 8191d68f701a3be6a37d8623d2d900f6aa6c1851
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: cec28f9290808836ec2dfd334b23fe8c76df03fc
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "90939539"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102120068"
 ---
-# <a name="security-module-for-azure-rtos-api-preview"></a>Модуль безопасности для Azure RTO API (Предварительная версия)
+# <a name="security-module-for-azure-rtos-api"></a>API модуля безопасности для ОСРВ Azure 
 
 Этот API предназначен для использования с модулем безопасности только для Azure RTO. Дополнительные ресурсы см. в разделе [модуль безопасности для Azure RTO GitHub Resource](https://github.com/azure-rtos/azure-iot-preview/releases). 
 
@@ -90,7 +90,7 @@ UINT nx_azure_iot_security_module_disable(NX_AZURE_IOT *nx_azure_iot_ptr);
 Потоки
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о том, как приступить к работе с модулем безопасности Azure RTO, см. в следующих статьях:
 

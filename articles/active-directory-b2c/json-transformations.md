@@ -8,15 +8,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 10/13/2020
+ms.date: 03/04/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 20480a252d7aedfd48a59bc05166f645e02e37e9
-ms.sourcegitcommit: 090ea6e8811663941827d1104b4593e29774fa19
+ms.openlocfilehash: c5c8e21f2ce3f6907547bf1b2fe4681eb937864b
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91998426"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102119881"
 ---
 # <a name="json-claims-transformations"></a>Преобразования утверждений JSON
 
@@ -117,8 +117,8 @@ ms.locfileid: "91998426"
 - Входные утверждения:
   - **адрес электронной почты**, утверждение преобразования типа  **customerEntity. email**: " john.s@contoso.com "
   - **ObjectID**, тип утверждения преобразования **customerEntity. значение userobjectid** "01234567-89ab-cdef-0123-456789abcdef"
-  - **ObjectID**, тип утверждения преобразования **customerEntity. FirstName** "Джон"
-  - **ObjectID**, тип утверждения преобразования **customerEntity. LastName** "Смит"
+  - **givenName**, утверждение преобразования тип **customerEntity. FirstName** "Джон"
+  - **Фамилия**, утверждение преобразования тип **customerEntity. LastName** "Смит"
 - Входной параметр:
   - **customerEntity.Role.Name**: "Администратор"
   - **customerEntity.Role.ID** 1

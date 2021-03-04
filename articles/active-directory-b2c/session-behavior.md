@@ -7,17 +7,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 02/23/2021
+ms.date: 03/04/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: e0516c25a69f22f5e66dd3ed083805cd4a9f1a61
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 2d64e85576b35caa2262ad1d635fc72fc7e2d2b8
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102096145"
+ms.locfileid: "102120629"
 ---
 # <a name="configure-session-behavior-in-azure-active-directory-b2c"></a>Настройка режима работы сеанса в Azure Active Directory B2C
 
@@ -71,7 +71,7 @@ ms.locfileid: "102096145"
 
 Поведение сеанса Azure AD B2C можно настроить, включая:
 
-- **Время существования сеанса веб-приложения (в минутах)** — время, в течение которого файл cookie сеанса Azure AD B2C хранится в браузере пользователя после успешной проверки подлинности. Можно задать значение времени жизни сеанса от 15 до 720 минут.
+- **Время существования сеанса веб-приложения (в минутах)** — время, в течение которого файл cookie сеанса Azure AD B2C хранится в браузере пользователя после успешной проверки подлинности. Время жизни сеанса можно задать до 24 часов.
 
 - **Время ожидания сеанса веб-приложения** — указывает, как сеанс расширяется параметром времени жизни сеанса или параметром "оставаться в системе" (функции "оставаться).
   - **Пошаговое — указывает** , что сеанс увеличивается каждый раз, когда пользователь выполняет проверку подлинности на основе файлов cookie (по умолчанию).

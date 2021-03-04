@@ -1,21 +1,21 @@
 ---
-title: Развертывание рабочих нагрузок Azure IoT Edge (предварительная версия)
+title: Развертывание рабочих нагрузок Azure IoT Edge
 services: azure-arc
 ms.service: azure-arc
-ms.date: 02/19/2021
+ms.date: 03/03/2021
 ms.topic: article
 author: mlearned
 ms.author: mlearned
 description: Развертывание рабочих нагрузок Azure IoT Edge
 keywords: Kubernetes, Arc, Azure, K8s, контейнеры
-ms.openlocfilehash: c352455b69360df0b26f5aac38fc40ccb30fb9de
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: e77446170e5a6adac995394d66640fd183f453b8
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101650419"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102121734"
 ---
-# <a name="deploy-azure-iot-edge-workloads-preview"></a>Развертывание рабочих нагрузок Azure IoT Edge (предварительная версия)
+# <a name="deploy-azure-iot-edge-workloads"></a>Развертывание рабочих нагрузок Azure IoT Edge
 
 ## <a name="overview"></a>Обзор
 
@@ -77,4 +77,4 @@ az k8s-configuration delete -g AzureArcTest --cluster-name AzureArcIotEdge --nam
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-[Использование Политики Azure для управления конфигураций кластера](./use-azure-policy.md)
+Узнайте, как с [помощью политики Azure управлять конфигурацией кластера](./use-azure-policy.md).

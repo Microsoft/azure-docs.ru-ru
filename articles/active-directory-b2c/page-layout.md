@@ -8,15 +8,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 08/24/2020
+ms.date: 03/04/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 491549933817a127a92180b0e4b455e461e4d3a2
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.openlocfilehash: df94bb5e6066b83afd566181debbc0872dc1a5b4
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99492252"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102120268"
 ---
 # <a name="page-layout-versions"></a>Версии макета страницы
 
@@ -76,7 +76,7 @@ ms.locfileid: "99492252"
 
 **2.1.2**
 - Исправлена проблема кодирования локализации для таких языков, как испанский и французский.
-- Разрешение на использование ссылки "Забыли пароль" для обмена утверждениями, например социальных IDP.
+- Разрешение ссылки "Забыли пароль" на использование в качестве обмена утверждениями. Дополнительные сведения см. в разделе [самостоятельный сброс пароля](add-password-reset-policy.md#self-service-password-reset-recommended).
 
 **2.1.1**
 - Добавлен Уксстринг `heading` в дополнение к `intro` отображению на странице в качестве заголовка. Этот параметр скрыт по умолчанию.

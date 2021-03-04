@@ -3,26 +3,26 @@ title: Управление пакетами Python 3 в службе автом
 description: В этой статье рассказывается, как управлять пакетами Python 3 (Предварительная версия) в службе автоматизации Azure.
 services: automation
 ms.subservice: process-automation
-ms.date: 12/22/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
-ms.openlocfilehash: 3f39f49ff47b935da7ffc777ee45bd219f5740b5
-ms.sourcegitcommit: f7084d3d80c4bc8e69b9eb05dfd30e8e195994d8
+ms.openlocfilehash: fd4d8ee92b670bc2544619a0dce16a26d9342c13
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97734307"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102122040"
 ---
 # <a name="manage-python-3-packages-preview-in-azure-automation"></a>Управление пакетами Python 3 (Предварительная версия) в службе автоматизации Azure
 
-Служба автоматизации Azure позволяет запускать модули Runbook для Python 3 (Предварительная версия) в Azure и гибридные рабочие роли Runbook для Linux. Чтобы упростить модули runbook, можно использовать пакеты Python для импорта необходимых модулей. В этой статье описывается, как управлять пакетами Python 3 (Предварительная версия) и использовать их в службе автоматизации Azure.
+Служба автоматизации Azure позволяет запускать модули Runbook для Python 3 (Предварительная версия) в Azure и гибридные рабочие роли Runbook для Linux. Чтобы упростить модули runbook, можно использовать пакеты Python для импорта необходимых модулей. Чтобы импортировать один пакет, см. раздел [Импорт пакета](#import-a-package). Сведения о импорте пакета с несколькими пакетами см. в разделе [Импорт пакета с зависимостями](#import-a-package-with-dependencies). В этой статье описывается, как управлять пакетами Python 3 (Предварительная версия) и использовать их в службе автоматизации Azure.
 
-## <a name="import-packages"></a>Импорт пакетов
+## <a name="import-a-package"></a>Импорт пакета
 
 В учетной записи службы автоматизации выберите **пакеты Python** в разделе **Общие ресурсы**. Выберите **+ Добавить пакет Python**.
 
 :::image type="content" source="media/python-3-packages/add-python-3-package.png" alt-text="Снимок экрана: страница пакетов Python 3 содержит пакеты Python 3 в меню слева и добавляет выделенный пакет Python 2.":::
 
-На странице **Добавление пакета Python** выберите Python 3 для **версии** и выберите локальный пакет для отправки. Пакет может иметь расширение файла **.whl** или **.tar.gz**. Когда пакет выбран, нажмите кнопку **ОК** , чтобы передать его.
+На странице **Добавление пакета Python** выберите **Python 3** для **версии** и выберите локальный пакет для отправки. Пакет может иметь расширение файла **.whl** или **.tar.gz**. Когда пакет выбран, нажмите кнопку **ОК** , чтобы передать его.
 
 :::image type="content" source="media/python-3-packages/upload-package.png" alt-text="На снимке экрана показана страница Добавление пакета Python 3 с выбранным файлом tar. gz.":::
 
@@ -30,19 +30,35 @@ ms.locfileid: "97734307"
 
 :::image type="content" source="media/python-3-packages/python-3-packages-list.png" alt-text="На снимке экрана показана страница пакетов Python 3 после импорта пакета.":::
 
-## <a name="import-packages-with-dependencies"></a>Импорт пакетов с зависимостями
+### <a name="import-a-package-with-dependencies"></a>Импорт пакета с зависимостями
 
-Служба автоматизации Azure не разрешает зависимости для пакетов Python в процессе импорта. Однако существует способ импортировать пакет со всеми его зависимостями.
-
-### <a name="manually-download"></a>Скачивание вручную
-
-На компьютере под управлением Windows 64 с установленным [Python 3,8](https://www.python.org/downloads/release/python-380/) и [PIP](https://pip.pypa.io/en/stable/) выполните следующую команду, чтобы скачать пакет и все его зависимости:
+Вы можете импортировать пакет Python 3 и его зависимости, импортировав следующий скрипт Python в модуль Runbook Python 3, а затем запустив его.
 
 ```cmd
-C:\Python38\Scripts\pip3.8.exe download -d <output dir> <package name>
+https://github.com/azureautomation/runbooks/blob/master/Utility/Python/import_py3package_from_pypi.py
 ```
 
-После загрузки пакетов их можно импортировать в учетную запись службы автоматизации.
+#### <a name="importing-the-script-into-a-runbook"></a>Импорт скрипта в модуль Runbook
+Сведения об импорте модуля Runbook см. в разделе [Импорт модуля Runbook из портал Azure](manage-runbooks.md#import-a-runbook-from-the-azure-portal). Скопируйте файл из репозитория GitHub в хранилище, к которому может получить доступ портал, прежде чем выполнять импорт.
+
+На странице **Импорт модуля Runbook** по умолчанию используется имя модуля Runbook в соответствии с именем скрипта. Если у вас есть доступ к полю, можно изменить его имя. **Тип Runbook** может по умолчанию иметь **Python 2**. Если это так, обязательно измените его на **Python 3**.
+
+:::image type="content" source="media/python-3-packages/import-python-3-package.png" alt-text="На снимке экрана показана страница импорта Runbook для Python 3.":::
+
+#### <a name="executing-the-runbook-to-import-the-package-and-dependencies"></a>Запуск модуля Runbook для импорта пакета и зависимостей
+
+После создания и публикации модуля Runbook запустите его, чтобы импортировать пакет. Дополнительные сведения о запуске модуля Runbook см. в статье [Запуск модуля Runbook в службе автоматизации Azure](start-runbooks.md) .
+
+Для скрипта ( `import_py3package_from_pypi.py` ) требуются следующие параметры.
+
+| Параметр | Описание |
+|---------------|-----------------|
+|subscription_id | Идентификатор подписки учетной записи службы автоматизации |
+| resource_group | Имя группы ресурсов, в которой определена учетная запись службы автоматизации |
+| automation_account | Имя учетной записи службы автоматизации |
+| module_name | Имя модуля для импорта `pypi.org` |
+
+Дополнительные сведения об использовании параметров с модулями Runbook см. в разделе [Работа с параметрами Runbook](start-runbooks.md#work-with-runbook-parameters).
 
 ## <a name="use-a-package-in-a-runbook"></a>Использование пакета в модуле runbook
 

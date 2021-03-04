@@ -8,16 +8,16 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 01/12/2021
+ms.date: 03/04/2021
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 2956f0ffb562214477249da3198ebbe42ef9bb45
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: c84966f7b4dc1740235fe6414da2ba832a1334fd
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98660375"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102119915"
 ---
 # <a name="set-up-a-sign-in-flow-in-azure-active-directory-b2c"></a>Настройка потока входа в Azure Active Directory B2C
 
@@ -30,11 +30,11 @@ ms.locfileid: "98660375"
 * Пользователи могут выполнять вход с помощью локальной учетной записи Azure AD B2C
 * Регистрация или вход с помощью учетной записи социальных сетей
 * Сброс паролей
-* Пользователи не могут зарегистрироваться для использования локальной учетной записи Azure AD B2C. для создания учетной записи Администратор может использовать [MS API Graph](microsoft-graph-operations.md).
+* Пользователи не могут зарегистрироваться для Azure AD B2C локальной учетной записи. Чтобы создать учетную запись, администратор может использовать [портал Azure](manage-users-portal.md#create-a-consumer-user)или [MS API Graph](microsoft-graph-operations.md).
 
 ![Поток редактирования профиля](./media/add-sign-in-policy/sign-in-user-flow.png)
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Если вы еще не сделали этого, [зарегистрируйте веб-приложение в Azure Active Directory B2C](tutorial-register-applications.md).
 
@@ -75,26 +75,34 @@ ms.locfileid: "98660375"
 1. Добавьте в элемент следующий поставщик утверждений `ClaimsProviders` :
 
     ```xml
-    <ClaimsProvider>
-      <DisplayName>Local Account</DisplayName>
-      <TechnicalProfiles>
-        <TechnicalProfile Id="SelfAsserted-LocalAccountSignin-Email">
-          <Metadata>
-            <Item Key="setting.showSignupLink">false</Item>
-          </Metadata>
-        </TechnicalProfile>
-      </TechnicalProfiles>
-    </ClaimsProvider>
+    <!--
+    <ClaimsProviders> -->
+      <ClaimsProvider>
+        <DisplayName>Local Account</DisplayName>
+        <TechnicalProfiles>
+          <TechnicalProfile Id="SelfAsserted-LocalAccountSignin-Email">
+            <Metadata>
+              <Item Key="setting.showSignupLink">false</Item>
+            </Metadata>
+          </TechnicalProfile>
+        </TechnicalProfiles>
+      </ClaimsProvider>
+    <!--
+    </ClaimsProviders> -->
     ```
 
 1. В `<BuildingBlocks>` элемент element добавьте следующий [контентдефинитион](contentdefinitions.md) для ссылки на URI версии 1.2.0 или более поздней:
 
     ```XML
-    <ContentDefinitions>
-     <ContentDefinition Id="api.localaccountsignup">
-        <DataUri>urn:com:microsoft:aad:b2c:elements:contract:unifiedssp:1.2.0</DataUri>
-      </ContentDefinition>
-    </ContentDefinitions>
+    <!-- 
+    <BuildingBlocks> 
+      <ContentDefinitions>-->
+        <ContentDefinition Id="api.localaccountsignup">
+          <DataUri>urn:com:microsoft:aad:b2c:elements:contract:unifiedssp:1.2.0</DataUri>
+        </ContentDefinition>
+      <!--
+      </ContentDefinitions>
+    </BuildingBlocks> -->
     ```
 
 ## <a name="update-and-test-your-policy"></a>Обновление и тестирование политики
@@ -103,13 +111,13 @@ ms.locfileid: "98660375"
 1. Убедитесь, что вы используете каталог с клиентом Azure AD, выбрав фильтр **Каталог и подписка** в меню вверху и каталог с вашим клиентом Azure AD.
 1. Выберите **Все службы** в левом верхнем углу окна портала Azure, а затем найдите и выберите **Регистрация приложений**.
 1. Выберите **Инфраструктура процедур идентификации**.
-1. Выберите **Отправка пользовательской политики** и отправьте два файла политики, которые вы изменили ранее.
+1. Выберите **Отправить пользовательскую политику**, а затем отправьте измененный файл политики *TrustFrameworkExtensions.xml*.
 1. Выберите отправленную политику входа и нажмите кнопку **Запустить сейчас** .
 1. Вы можете войти в систему с помощью созданной учетной записи (с помощью MS API Graph) без ссылки для регистрации.
 
 ::: zone-end
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Добавьте [Вход с помощью поставщика удостоверений в социальных сетях](add-identity-provider.md).
 * Настройка [потока сброса пароля](add-password-reset-policy.md).

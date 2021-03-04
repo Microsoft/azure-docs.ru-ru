@@ -7,14 +7,14 @@ ms.topic: how-to
 author: vamahtan
 ms.author: vamahtan
 ms.date: 2/24/2021
-ms.openlocfilehash: 5d978410cae2b2de1a2f6711de82ae71a1da168c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 9fb86b3d4a46a70d71aa0c3fe9fd1b4a1ea6f298
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101746298"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102120136"
 ---
-# <a name="co-sell-requirements"></a>Требования к сопутствующим продажам
+# <a name="co-sell-requirements"></a>Требования к совместным продажам
 
 В этой статье приводятся требования к различным уровням сопутствующих продаж. Последний список типов предложений, поддерживающих совместную продажу, см. в статье  [Настройка совместной продажи для коммерческого рынка](commercial-marketplace-co-sell.md). Общие сведения о совместных продажах см. [в статье совместное продажи с помощью групп продаж и партнеров корпорации Майкрософт](marketplace-co-sell.md).
 
@@ -24,7 +24,7 @@ ms.locfileid: "101746298"
 | ------------ | ------------- |
 | Не готовы к совместной продаже | Не выполнены минимальные [требования к состоянию готовности к совместной продаже](#requirements-for-co-sell-ready-status) . |
 | Готовность к совместной продаже | Выполнены все [требования к состоянию готовности к совместной продаже](#requirements-for-co-sell-ready-status) . |
-| Совместная продажа Azure IP выгодно | В дополнение к [этим дополнительным требованиям](#requirements-for-IP-Co-sell-incentivized-status)соблюдаются требования к готовности к совместной продаже. |
+| Совместная продажа Azure IP выгодно | В дополнение к [этим дополнительным требованиям](#requirements-for-ip-co-sell-incentivized-status)соблюдаются требования к готовности к совместной продаже. |
 | BizTalk приложения ISV Connect Premium  | Это состояние применяется к предложениям Dynamics 365 и Power Apps и указывает, что все [требования для этого состояния](#requirements-for-biz-apps-isv-connect-premium-incentive-status) выполнены. |
 |||
 

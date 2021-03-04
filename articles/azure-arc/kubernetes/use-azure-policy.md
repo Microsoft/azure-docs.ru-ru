@@ -2,22 +2,20 @@
 title: Использование Политики Azure для применения конфигураций кластера в требуемом масштабе
 services: azure-arc
 ms.service: azure-arc
-ms.date: 03/02/2021
+ms.date: 03/03/2021
 ms.topic: article
 author: mlearned
 ms.author: mlearned
 description: Использование Политики Azure для применения конфигураций кластера в требуемом масштабе
 keywords: Kubernetes, Arc, Azure, K8s, контейнеры
-ms.openlocfilehash: 7f85050666c383ba49730bd88ce1f26d55607e7a
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 05a6665a985ef8b229ee58082dc9b2c10cdcece3
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101652153"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102121462"
 ---
 # <a name="use-azure-policy-to-apply-cluster-configurations-at-scale"></a>Использование Политики Azure для применения конфигураций кластера в требуемом масштабе
-
-## <a name="overview"></a>Обзор
 
 Вы можете использовать политику Azure для применения конфигураций ( `Microsoft.KubernetesConfiguration/sourceControlConfigurations` тип ресурса) в службе "геомасштабирование" в Kubernetes кластерах с поддержкой ARC ( `Microsoft.Kubernetes/connectedclusters` ).
 
@@ -69,4 +67,4 @@ ms.locfileid: "101652153"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Настройка Azure Monitor для контейнеров с кластерами Kubernetes с поддержкой Arc](../../azure-monitor/containers/container-insights-enable-arc-enabled-clusters.md)
+[Настройка Azure Monitor для контейнеров с кластерами Kubernetes с поддержкой дуги Azure](../../azure-monitor/containers/container-insights-enable-arc-enabled-clusters.md).

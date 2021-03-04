@@ -9,15 +9,15 @@ ms.author: roastala
 author: rastala
 manager: cgronlun
 ms.reviewer: nibaccam
-ms.date: 12/04/2020
+ms.date: 03/04/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, devx-track-azurecli
-ms.openlocfilehash: 3eaab31d3948e41a216eaa402c2a11e470a6545d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: fb877b208e6c9599347e2b45e140545e5815e695
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101691507"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102120816"
 ---
 # <a name="start-monitor-and-cancel-training-runs-in-python"></a>Запуск, отслеживание и отмена обучающих запусков в Python
 
@@ -113,6 +113,10 @@ ms.locfileid: "101691507"
     
         См. дополнительные сведения о команде [az ml run submit-script](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-submit-script).
 
+    # <a name="studio"></a>[Студия](#tab/azure-studio)
+
+    Пример обучения модели в конструкторе Машинное обучение Azure см. в разделе [учебник. Прогнозирование цен автомобилей с помощью конструктора](tutorial-designer-automobile-price-train-score.md).
+
     ---
 
 * Наблюдение за состоянием запуска
@@ -195,8 +199,7 @@ ms.locfileid: "101691507"
 
 Перейдите на страницу **сведений о запуске** для выполнения и щелкните значок редактирования или карандаша, чтобы добавить, изменить или удалить описания для выполнения. Чтобы сохранить изменения в списке запуски, сохраните изменения в существующем настраиваемом представлении или в новом пользовательском представлении. Формат Markdown поддерживается для описаний запуска, что позволяет внедрять и глубокое связывание изображений, как показано ниже.
 
-:::image type="content" source="media/how-to-manage-runs/rundescription.gif" alt-text="Снимок экрана: создание описания запуска"::: 
-    
+:::image type="content" source="media/how-to-manage-runs/run-description.gif" alt-text="Снимок экрана: создание описания запуска"::: 
 
 ## <a name="tag-and-find-runs"></a>Теги и поиск запусков
 

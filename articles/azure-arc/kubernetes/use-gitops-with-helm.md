@@ -2,18 +2,18 @@
 title: Развертывание диаграмм Helm с помощью Гитопс в кластере Kubernetes с поддержкой Arc
 services: azure-arc
 ms.service: azure-arc
-ms.date: 03/02/2021
+ms.date: 03/03/2021
 ms.topic: article
 author: mlearned
 ms.author: mlearned
 description: Использование Гитопс с Helm для конфигурации кластера с поддержкой Arc Azure
 keywords: GitOps, Kubernetes, K8s, Azure, Helm, Arc, AKS, служба Azure Kubernetes, контейнеры
-ms.openlocfilehash: 0176d614a6bf44e2bf20cc7935521a6387a3b574
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 75e2fcb25680817fc3e2bddabbbdd9c52b7dd059
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101687296"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102121411"
 ---
 # <a name="deploy-helm-charts-using-gitops-on-an-arc-enabled-kubernetes-cluster"></a>Развертывание диаграмм Helm с помощью Гитопс на кластере Kubernetes с поддержкой Arc
 
@@ -136,4 +136,4 @@ kubectl port-forward -n arc-k8s-demo svc/arc-k8s-demo 8080:8080
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование Политики Azure для управления конфигураций кластера](./use-azure-policy.md)
+Примените конфигурации кластера в масштабе с помощью [политики Azure](./use-azure-policy.md).
