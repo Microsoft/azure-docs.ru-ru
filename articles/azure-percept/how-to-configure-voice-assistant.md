@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/15/2021
 ms.custom: template-how-to
-ms.openlocfilehash: ec3e06b2d161785b5e6978cdf4cc6415fc0eb592
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: b22ef4ee0a8b5978bb2ec1c02fadf368815f3014
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101663088"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102095788"
 ---
 # <a name="configure-voice-assistant-application-using-azure-iot-hub"></a>Настройка приложения Voice Assistant с помощью центра Интернета вещей Azure
 
@@ -20,7 +20,7 @@ ms.locfileid: "101663088"
 
 ## <a name="update-your-voice-assistant-configuration"></a>Обновление конфигурации помощника по голосовому обслуживанию
 
-1. Откройте [портал Azure](https://portal.azure.com/?feature.canmodifystamps=true&Microsoft_Azure_Iothub=aduprod&microsoft_azure_marketplace_ItemHideKey=Microsoft_Azure_ADUHidden#home) и введите в строке поиска **центр Интернета вещей** . Щелкните значок, чтобы открыть страницу центра Интернета вещей.
+1. Откройте [портал Azure](https://portal.azure.com) и введите в строке поиска **центр Интернета вещей** . Щелкните значок, чтобы открыть страницу центра Интернета вещей.
 
 1. На странице центр Интернета вещей выберите центр Интернета вещей, в котором было подготовлено устройство.
 
@@ -30,7 +30,7 @@ ms.locfileid: "101663088"
 
 1. Щелкните **Set modules (задать модули**).
 
-    :::image type="content" source="./media/manage-voice-assistant-using-iot-hub/set-modules.png" alt-text="Эскиз.":::
+    :::image type="content" source="./media/manage-voice-assistant-using-iot-hub/set-modules.png" alt-text="Снимок экрана страницы устройства с выделенным набором модулей.":::
 
 1. Убедитесь, что в разделе **учетные данные реестра контейнеров** указана следующая запись. При необходимости добавьте учетные данные.
 
@@ -40,30 +40,17 @@ ms.locfileid: "101663088"
 
 1. В разделе **модули IOT Edge** выберите **азуриарспичклиентмодуле**.
 
-    :::image type="content" source="./media/manage-voice-assistant-using-iot-hub/modules.png" alt-text="Эскиз.":::
+    :::image type="content" source="./media/manage-voice-assistant-using-iot-hub/modules.png" alt-text="Снимок экрана, показывающий список всех модулей IoT Edge на устройстве.":::
 
 1. Перейдите на вкладку **Параметры модуля** . Проверьте следующую конфигурацию:
 
-    |URI образа|Политика перезапуска|Требуемое состояние|
-    |---------|--------------|--------------|
-    |azureedgedevices.azurecr.io/azureearspeechclientmodule:preload-devkit |always|запуск|
+    URI образа|Политика перезапуска|Требуемое состояние
+    ---------|--------------|--------------
+    mcr.microsoft.com/azureedgedevices/azureearspeechclientmodule:preload-devkit|always|запуск
 
     Если параметры не совпадают, измените их и нажмите кнопку **Обновить**.
 
 1. Перейдите на вкладку **переменные среды** . Убедитесь, что переменные среды не определены.
-
-1. Перейдите на вкладку **Параметры создания контейнера** . Убедитесь, что параметры **хостконфиг** соответствуют приведенным ниже. Если они не совпадают, обновите параметры.
-
-    ```
-    {
-        "HostConfig": {
-            "Privileged": true,
-            "Binds": [
-                "/dev:/dev"
-            ]
-        }
-    }
-    ```
 
 1. Перейдите на вкладку **module двойника Settings (параметры модуля** ). Обновите раздел **спичконфигс** следующим образом:
 
@@ -72,7 +59,7 @@ ms.locfileid: "101663088"
         "appId": "<Application id for custom command project>",
         "key": "<Speech Resource key for custom command project>",
         "region": "<Region for the speech service>",
-        "keywordModelUrl": "https://aedspeechscenarios.blob.core.windows.net/keyword-tables/computer.table",
+        "keywordModelUrl": "https://aedsamples.blob.core.windows.net/speech/keyword-tables/computer.table",
         "keyword": "computer"
     }
     ```
@@ -88,16 +75,16 @@ ms.locfileid: "101663088"
 1. На домашней странице **Speech Studio** щелкните **пользовательские команды** в разделе **голосовые помощники**.
 1. Выберите целевой проект.
 
-    :::image type="content" source="./media/manage-voice-assistant-using-iot-hub/project.png" alt-text="Эскиз.":::
+    :::image type="content" source="./media/manage-voice-assistant-using-iot-hub/project.png" alt-text="Снимок экрана страницы проекта в Speech Studio.":::
 
 1. На панели меню слева щелкните **Параметры** .
 1. **AppID** и **Key** будут расположены на вкладке **Общие** параметры.
 
-    :::image type="content" source="./media/manage-voice-assistant-using-iot-hub/general-settings.png" alt-text="Эскиз.":::
+    :::image type="content" source="./media/manage-voice-assistant-using-iot-hub/general-settings.png" alt-text="Снимок экрана: общие параметры проекта речи.":::
 
 1. Чтобы найти свой **регион**, откройте вкладку **ресурсы Luis** в параметрах. Выбор **ресурсов разработки** будет содержать сведения о регионе.
 
-    :::image type="content" source="./media/manage-voice-assistant-using-iot-hub/luis-resources.png" alt-text="Эскиз.":::
+    :::image type="content" source="./media/manage-voice-assistant-using-iot-hub/luis-resources.png" alt-text="Снимок экрана LUISных ресурсов проекта речи.":::
 
 1. После ввода сведений о **спичконфигс** нажмите кнопку **Обновить**.
 
@@ -113,6 +100,8 @@ ms.locfileid: "101663088"
 
 1. Нажмите кнопку **Создать**.
 
+
 ## <a name="next-steps"></a>Дальнейшие действия
 
 После обновления конфигурации речевого помощника вернитесь к демонстрации в Azure Перцепт Studio, чтобы взаимодействовать с приложением.
+

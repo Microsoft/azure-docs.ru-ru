@@ -1,14 +1,14 @@
 ---
-title: Преобразование шаблонов Azure Resource Manager между JSON и Бицеп
-description: Сравнение шаблонов Azure Resource Manager, разработанных с помощью JSON и Бицеп.
+title: Синтаксис Compare для шаблонов Azure Resource Manager в JSON и Бицеп
+description: Сравнение шаблонов Azure Resource Manager, разработанных с помощью JSON и Бицеп, и показано, как выполнять преобразование между языками.
 ms.topic: conceptual
-ms.date: 02/19/2021
-ms.openlocfilehash: 9388ed50f13d6885d0a0668b61a9141dae375244
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/03/2021
+ms.openlocfilehash: 29c2b9948957ebc10a26f22f0fe3daf383dfe5ba
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101746130"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036220"
 ---
 # <a name="comparing-json-and-bicep-for-templates"></a>Сравнение JSON и Бицеп для шаблонов
 
@@ -18,40 +18,21 @@ ms.locfileid: "101746130"
 
 Если вы знакомы с использованием JSON для разработки шаблонов ARM, воспользуйтесь следующей таблицей, чтобы узнать о эквивалентном синтаксисе для Бицеп.
 
-| Сценарий | Шаблон ARM | Bicep |
+| Сценарий | Bicep | JSON |
 | -------- | ------------ | ----- |
-| Создание выражения | `"[func()]"` | `func()` |
-| Получение значения параметра | `[parameters('exampleParameter'))]` | `exampleParameter` |
-| Получить значение переменной | `[variables('exampleVar'))]` | `exampleVar` |
-| Объединение строк | `[concat(parameters('namePrefix'), '-vm')]` | `'${namePrefix}-vm'` |
-| Задание свойства ресурса | `"sku": "2016-Datacenter",` | `sku: '2016-Datacenter'` |
-| Возврат логического и | `[and(parameter('isMonday'), parameter('isNovember'))]` | `isMonday && isNovember` |
-| Получение идентификатора ресурса в шаблоне | `[resourceId('Microsoft.Network/networkInterfaces', variables('nic1Name'))]` | `nic1.id` |
-| Получение свойства из ресурса в шаблоне | `[reference(resourceId('Microsoft.Storage/storageAccounts', variables('diagStorageAccountName'))).primaryEndpoints.blob]` | `diagsAccount.properties.primaryEndpoints.blob` |
-| Условно задается значение | `[if(parameters('isMonday'), 'valueIfTrue', 'valueIfFalse')]` | `isMonday ? 'valueIfTrue' : 'valueIfFalse'` |
-| Разделение решения на несколько файлов | Использование связанных шаблонов | Использование модулей |
-| Задание целевой области развертывания | `"$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#"` | `targetScope = 'subscription'` |
-| Задать зависимость | `"dependsOn": ["[resourceId('Microsoft.Storage/storageAccounts', 'parameters('storageAccountName'))]"]` | Следует использовать автоматическое обнаружение зависимостей или задать зависимость вручную с помощью `dependsOn: [ stg ]` |
-
-Чтобы объявить тип и версию ресурса, используйте следующую команду в Бицеп:
-
-```bicep
-resource vm 'Microsoft.Compute/virtualMachines@2020-06-01' = {
-  ...
-}
-```
-
-Вместо эквивалентного синтаксиса в JSON:
-
-```json
-"resources": [
-  {
-    "type": "Microsoft.Compute/virtualMachines",
-    "apiVersion": "2020-06-01",
-    ...
-  }
-]
-```
+| Создание выражения | `func()` | `"[func()]"` |
+| Получение значения параметра | `exampleParameter` | `[parameters('exampleParameter'))]` |
+| Получить значение переменной | `exampleVar` | `[variables('exampleVar'))]` |
+| Объединение строк | `'${namePrefix}-vm'` | `[concat(parameters('namePrefix'), '-vm')]` |
+| Задание свойства ресурса | `sku: '2016-Datacenter'` | `"sku": "2016-Datacenter",` |
+| Возврат логического и | `isMonday && isNovember` | `[and(parameter('isMonday'), parameter('isNovember'))]` |
+| Получение идентификатора ресурса в шаблоне | `nic1.id` | `[resourceId('Microsoft.Network/networkInterfaces', variables('nic1Name'))]` |
+| Получение свойства из ресурса в шаблоне | `diagsAccount.properties.primaryEndpoints.blob` | `[reference(resourceId('Microsoft.Storage/storageAccounts', variables('diagStorageAccountName'))).primaryEndpoints.blob]` |
+| Условно задается значение | `isMonday ? 'valueIfTrue' : 'valueIfFalse'` | `[if(parameters('isMonday'), 'valueIfTrue', 'valueIfFalse')]` |
+| Разделение решения на несколько файлов | Использование модулей | Использование связанных шаблонов |
+| Задание целевой области развертывания | `targetScope = 'subscription'` | `"$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#"` |
+| Задать зависимость | Следует использовать автоматическое обнаружение зависимостей или задать зависимость вручную с помощью `dependsOn: [ stg ]` | `"dependsOn": ["[resourceId('Microsoft.Storage/storageAccounts', 'parameters('storageAccountName'))]"]` |
+| Объявление ресурса | `resource vm 'Microsoft.Compute/virtualMachines@2020-06-01' = {...}` | `"resources": [ { "type": "Microsoft.Compute/virtualMachines", "apiVersion": "2020-06-01", ... } ]` |
 
 ## <a name="recommendations"></a>Рекомендации
 
@@ -63,10 +44,7 @@ resource vm 'Microsoft.Compute/virtualMachines@2020-06-01' = {
 
 Интерфейс командной строки Бицеп предоставляет команду для декомпиляции любого существующего шаблона ARM в файл Бицеп. Чтобы декомпилировать JSON-файл, используйте: `bicep decompile "path/to/file.json"`
 
-Эта команда предоставляет отправную точку для создания Бицеп, но команда не работает для всех шаблонов. Команда может завершиться ошибкой, или после декомпиляции может потребоваться устранить проблемы. В настоящее время у команды имеются следующие ограничения.
-
-* Шаблоны, использующие циклы копирования, не могут быть декомпилированы.
-* Вложенные шаблоны можно декомпилировать только в том случае, если они используют область вычисления выражения Inner.
+Эта команда предоставляет отправную точку для создания Бицеп, но команда не работает для всех шаблонов. Команда может завершиться ошибкой, или после декомпиляции может потребоваться устранить проблемы. В настоящее время вложенные шаблоны можно декомпилировать только в том случае, если они используют область вычисления выражения Inner.
 
 Вы можете экспортировать шаблон для группы ресурсов, а затем передать его непосредственно в команду декомпиляции бицеп. В следующем примере показано, как декомпилировать экспортированный шаблон.
 
@@ -100,4 +78,4 @@ bicep decompile main.json
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения о проекте Бицеп см. в разделе [Project бицеп](https://github.com/Azure/bicep).
+Сведения о Бицеп см. в разделе [учебник по бицеп](./bicep-tutorial-create-first-bicep.md).

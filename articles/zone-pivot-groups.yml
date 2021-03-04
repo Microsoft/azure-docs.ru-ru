@@ -1036,10 +1036,18 @@ groups:
     title: Ruby
   - id: rest
     title: Rest
+- id: azure-maps-android
+  title: Языки программирования
+  prompt: Выбор языка программирования
+  pivots:
+  - id: programming-language-java-android
+    title: Java (Android)
+  - id: programming-language-kotlin
+    title: Kotlin (Android)
 metadata:
-  ms.openlocfilehash: a687c5b93d92dae95d2d92896a19913c5261f5bd
-  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.openlocfilehash: cd30fa892e20dc82c0e314c76d72c2c8d3583bd1
+  ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/03/2021
-  ms.locfileid: "101735239"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102032455"

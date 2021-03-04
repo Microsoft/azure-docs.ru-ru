@@ -7,12 +7,12 @@ ms.service: static-web-apps
 ms.topic: conceptual
 ms.date: 05/08/2020
 ms.author: yolasors
-ms.openlocfilehash: f8f2e352ae458e3e2825c9701437ea652ba07375
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 78d2f3b399e26ca0c6036fd74fa1fba49d1f21f4
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91825661"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102042782"
 ---
 # <a name="review-pull-requests-in-pre-production-environments-in-azure-static-web-apps-preview"></a>Проверка запросов на вытягивание в подготовительных средах в предварительной версии Статических веб-приложений Azure
 
@@ -33,7 +33,7 @@ ms.locfileid: "91825661"
 - Выполнить проверки работоспособности перед развертыванием в рабочую среду.
 
 > [!NOTE]
-> Во время предварительной версии допускается [максимум одна промежуточная среда](quotas.md).
+> На этапе предварительной версии в каждый момент времени допускается не [более трех промежуточных сред](quotas.md) .
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -51,11 +51,11 @@ ms.locfileid: "91825661"
 
 1. Перейдите в папку _app_ и измените некоторое текстовое содержимое. Например, можно изменить заголовок или абзац. Найдя файл, который нужно изменить, нажмите кнопку **Edit** (Изменить), чтобы внести изменения.
 
-    :::image type="content" source="./media/review-publish-pull-requests/edit-file.png" alt-text="Создание ветви с помощью интерфейса GitHub":::
+    :::image type="content" source="./media/review-publish-pull-requests/edit-file.png" alt-text="Кнопка Edit file (Изменить файл) в интерфейсе GitHub":::
 
 1. После внесения изменений нажмите кнопку **Commit changes** (Принять изменения), чтобы зафиксировать изменения в ветви.
 
-    :::image type="content" source="./media/review-publish-pull-requests/commit-changes.png" alt-text="Создание ветви с помощью интерфейса GitHub":::
+    :::image type="content" source="./media/review-publish-pull-requests/commit-changes.png" alt-text="Кнопка Commit changes (Принять изменения) в интерфейсе GitHub":::
 
 ## <a name="create-a-pull-request"></a>Создание запроса на вытягивание
 
@@ -63,13 +63,13 @@ ms.locfileid: "91825661"
 
 1. Откройте вкладку проекта **Pull request** (Запрос на вытягивание) в GitHub:
 
-    :::image type="content" source="./media/review-publish-pull-requests/tab.png" alt-text="Создание ветви с помощью интерфейса GitHub":::
+    :::image type="content" source="./media/review-publish-pull-requests/tab.png" alt-text="Вкладка Pull request (Запрос на вытягивание) в репозитории GitHub":::
 
 1. Нажмите кнопку **Compare & pull request** (Сравнение и запрос на вытягивание) своей ветви.
 
 1. При необходимости заполните некоторые сведения об изменениях, а затем нажмите кнопку **Create pull request** (Создать запрос на вытягивание).
 
-    :::image type="content" source="./media/review-publish-pull-requests/open.png" alt-text="Создание ветви с помощью интерфейса GitHub":::
+    :::image type="content" source="./media/review-publish-pull-requests/open.png" alt-text="Создание запроса на вытягивание в GitHub":::
 
 При необходимости вы можете назначить рецензентов и добавить комментарии для обсуждения изменений.
 
@@ -82,7 +82,7 @@ ms.locfileid: "91825661"
 
 Когда рабочий процесс завершит сборку и развертывание приложения, бот GitHub добавит комментарий в запрос на вытягивание, содержащий URL-адрес подготовительной среды. Вы можете щелкнуть эту ссылку, чтобы просмотреть подготовленное изменение.
 
-:::image type="content" source="./media/review-publish-pull-requests/bot-comment.png" alt-text="Создание ветви с помощью интерфейса GitHub":::
+:::image type="content" source="./media/review-publish-pull-requests/bot-comment.png" alt-text="Комментарий запроса на вытягивание с URL-адресом подготовительной среды":::
 
 Щелкните созданный URL-адрес, чтобы просмотреть изменения.
 
@@ -96,7 +96,7 @@ ms.locfileid: "91825661"
 
 Нажмите кнопку **Merge pull request** (Слияние запроса на вытягивание):
 
-:::image type="content" source="./media/review-publish-pull-requests/merge.png" alt-text="Создание ветви с помощью интерфейса GitHub":::
+:::image type="content" source="./media/review-publish-pull-requests/merge.png" alt-text="Кнопка Merge pull request (Слияние запроса на вытягивание) в интерфейсе GitHub":::
 
 При объединении изменения копируются в отслеживаемую ветвь (в рабочую ветвь). Затем в отслеживаемой ветви запускается рабочий процесс развертывания, а изменения вступают в силу после перестроения приложения.
 

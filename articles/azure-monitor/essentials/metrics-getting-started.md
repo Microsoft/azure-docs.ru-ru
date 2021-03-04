@@ -6,13 +6,12 @@ services: azure-monitor
 ms.topic: conceptual
 ms.date: 02/25/2019
 ms.author: vitalyg
-ms.subservice: metrics
-ms.openlocfilehash: 68a9dd5cb24dda54e867580cf7c1bc869e692833
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: e3d8d6529eb943566118cc67eab549cb32891cd8
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101734423"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102037240"
 ---
 # <a name="getting-started-with-azure-metrics-explorer"></a>Начало работы с обозревателем метрик Azure
 

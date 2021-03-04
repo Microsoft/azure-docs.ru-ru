@@ -12,12 +12,12 @@ ms.date: 01/12/2021
 ms.author: yulili
 ms.custom: references_regions
 zone_pivot_groups: programming-languages-speech-services-nomore-variant
-ms.openlocfilehash: 8602d43113f4ce21cdb430e1fa3e83f006c64753
-ms.sourcegitcommit: 0aec60c088f1dcb0f89eaad5faf5f2c815e53bf8
+ms.openlocfilehash: dc1ab8bd1a851f7fafd5c001ac73e66973e1b64c
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98185569"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051894"
 ---
 # <a name="pronunciation-assessment"></a>Оценка произношения
 
@@ -28,7 +28,7 @@ ms.locfileid: "98185569"
 В этой статье вы узнаете, как настроить `PronunciationAssessmentConfig` и извлечь `PronunciationAssessmentResult` с помощью РЕЧЕВОГО пакета SDK.
 
 > [!NOTE]
-> Функция оценки произношения в настоящее время доступна только в `westus` регионах `eastasia` и `centralindia` , и поддерживает только язык `en-US` .
+> В настоящее время функция оценки произношения поддерживает только язык `en-US` .
 
 ## <a name="pronunciation-assessment-with-the-speech-sdk"></a>Оценка произношения с помощью пакета SDK для распознавания речи
 
@@ -140,8 +140,8 @@ pronunciationAssessmentConfig.applyTo(speechRecognizer);
 
 speechRecognizer.recognizeOnceAsync((result: SpeechSDK.SpeechRecognitionResult) => {
         var pronunciationAssessmentResult = SpeechSDK.PronunciationAssessmentResult.fromResult(result);
-        var pronunciationScore = pronResult.pronunciationScore;
-        var wordLevelResult = pronResult.detailResult.Words;
+        var pronunciationScore = pronunciationAssessmentResult.pronunciationScore;
+        var wordLevelResult = pronunciationAssessmentResult.detailResult.Words;
 },
 {});
 ```

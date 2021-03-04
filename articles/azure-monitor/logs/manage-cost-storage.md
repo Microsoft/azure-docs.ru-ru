@@ -13,13 +13,12 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.date: 01/31/2021
 ms.author: bwren
-ms.subservice: ''
-ms.openlocfilehash: 4e711eb70c1fa099dd67b1ec23a0e8014ee11e47
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 32a34acb454dc87a46e59e8c1231d043a55b7cab
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101731397"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051095"
 ---
 # <a name="manage-usage-and-costs-with-azure-monitor-logs"></a>Управление использованием и затратами с помощью журналов Azure Monitor    
 

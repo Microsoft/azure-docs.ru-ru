@@ -6,17 +6,17 @@ services: storage
 author: tamram
 ms.service: storage
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 02/18/2021
 ms.author: tamram
 ms.reviewer: artek
 ms.subservice: common
 ms.custom: devx-track-csharp
-ms.openlocfilehash: c16f8233a2800025a8c6f601e236b86d2fd044fd
-ms.sourcegitcommit: 3bcce2e26935f523226ea269f034e0d75aa6693a
+ms.openlocfilehash: 1a07acedadfaf3d5158ba8e494d4527301655425
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92480689"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102035107"
 ---
 # <a name="use-geo-redundancy-to-design-highly-available-applications"></a>Разработка высокодоступных приложений с геоизбыточностью
 
@@ -148,6 +148,12 @@ ms.locfileid: "92480689"
 
 * Добавьте обработчик события [**Retrying**](/dotnet/api/microsoft.azure.cosmos.table.operationcontext.retrying) для объекта [**OperationContext**](/java/api/com.microsoft.applicationinsights.extensibility.context.operationcontext), передаваемого в запросы к хранилищу. Этот метод показан в этой статье и используется в соответствующем примере. Данные события активируются, когда клиент повторяет запрос, что позволяет отслеживать, как часто клиент сталкивается с ошибками, допускающими повторение, на основной конечной точке.
 
+    # <a name="net-v12"></a>[.NET (версии 12)](#tab/current)
+
+    Сейчас мы работаем над созданием фрагментов кода, отражающих версию 12. x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. [в статье объявление клиентских библиотек службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+    # <a name="net-v11"></a>[.NET (версии 11)](#tab/legacy)
+
     ```csharp
     operationContext.Retrying += (sender, arguments) =>
     {
@@ -156,8 +162,15 @@ ms.locfileid: "92480689"
             ...
     };
     ```
+    ---
 
 * В методе [**Evaluate**](/dotnet/api/microsoft.azure.cosmos.table.iextendedretrypolicy.evaluate) в пользовательской политике повтора можно выполнять пользовательский код всякий раз, когда происходит повторная попытка. Помимо записи повторных попыток это также дает возможность изменить их режим.
+
+    # <a name="net-v12"></a>[.NET (версии 12)](#tab/current)
+
+    Сейчас мы работаем над созданием фрагментов кода, отражающих версию 12. x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. [в статье объявление клиентских библиотек службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+    # <a name="net-v11"></a>[.NET (версии 11)](#tab/legacy)
 
     ```csharp
     public RetryInfo Evaluate(RetryContext retryContext,
@@ -184,6 +197,7 @@ ms.locfileid: "92480689"
         return info;
     }
     ```
+    ---
 
 * Третий подход заключается в реализации пользовательского компонента мониторинга в приложении, который постоянно проверяет связь с конечной точкой основного хранилища с помощью фиктивных запросов на чтение (например, запросов на чтение большого двоичного объекта небольшого размера), чтобы определить его работоспособность. Это может потребовать какое-то количество ресурсов, но не значительное. При обнаружении ошибки, которая достигла порога, выполняется переключение в режим **SecondaryOnly** с доступом только для чтения.
 
@@ -218,6 +232,13 @@ ms.locfileid: "92480689"
 Важно проверить, правильно ли приложение работает при обнаружении ошибок, допускающих повторение. Например, нужно проверить, что приложение переходит на дополнительный регион и переключается в режим только для чтения, когда обнаруживает неполадку, и переключается обратно, когда основной регион снова становится доступным. Для этого требуется способ моделирования ошибок, допускающих повторение, и управления их частотой.
 
 Для перехвата и изменения ответов HTTP в сценарии можно использовать [Fiddler](https://www.telerik.com/fiddler). Этот сценарий может определять ответы от основной конечной точки и заменять код состояния HTTP значением, которое клиентская библиотека службы хранилища распознает как ошибку, допускающую повторение. В этом фрагменте кода показан простой пример сценария Fiddler, который перехватывает ответы, получаемые на запросы на чтение к таблице **employeedata**, чтобы возвращать код состояния 502.
+
+
+# <a name="java-v12"></a>[Версия для Java 12](#tab/current)
+
+Сейчас мы работаем над созданием фрагментов кода, отражающих версию 12. x клиентских библиотек службы хранилища Azure. Дополнительные сведения см. [в статье объявление клиентских библиотек службы хранилища Azure версии 12](https://techcommunity.microsoft.com/t5/azure-storage/announcing-the-azure-storage-v12-client-libraries/ba-p/1482394).
+
+# <a name="java-v11"></a>[Версии 11 Java](#tab/legacy)
 
 ```java
 static function OnBeforeResponse(oSession: Session) {

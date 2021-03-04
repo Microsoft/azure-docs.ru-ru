@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.date: 02/22/2021
 ms.author: mbaldwin
 ms.custom: security-benchmark
-ms.openlocfilehash: fbe71b0ae7bf711d740cbba38c84b68de553f031
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b47f833a3b47dae145aa18eb6eda0c6bd95f6689
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101698558"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102042919"
 ---
 # <a name="security-control-v2-network-security"></a>Управление безопасностью версии 2: Сетевая безопасность
 
 Безопасность сети охватывает элементы управления для защиты и защиты сетей Azure. Сюда входит защита виртуальных сетей, установка частных подключений, предотвращение и устранение внешних атак, а также защита DNS.
 
-Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь с [подробными сведениями о встроенной инициативе по обеспечению безопасности в Azure: Сетевая безопасность](../../governance/policy/samples/azure-security-benchmark#network-security)
+Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь с [подробными сведениями о встроенной инициативе по обеспечению безопасности в Azure: Сетевая безопасность](../../governance/policy/samples/azure-security-benchmark.md#network-security)
 
 ## <a name="ns-1-implement-security-for-internal-traffic"></a>NS-1: реализация безопасности для внутреннего трафика
 

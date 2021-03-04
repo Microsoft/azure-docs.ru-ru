@@ -1,18 +1,18 @@
 ---
 title: Модель ресурсов для функции восстановления на момент времени Azure Cosmos DB.
-description: В этой статье описывается модель ресурсов для функции восстановления на момент времени Azure Cosmos DB. В нем объясняются параметры, поддерживающие непрерывную архивацию и ресурсы, которые можно восстановить в Azure Cosmos DB API для учетных записей SQL и MongoDB.
+description: В этой статье описывается модель ресурсов для функции восстановления Azure Cosmos DB на определенный момент времени. В ней объясняются параметры, поддерживающие непрерывную архивацию и ресурсы, которые можно восстановить в API Azure Cosmos DB для учетных записей SQL и MongoDB.
 author: kanshiG
 ms.service: cosmos-db
 ms.topic: conceptual
-ms.date: 02/01/2021
+ms.date: 02/22/2021
 ms.author: govindk
 ms.reviewer: sngun
-ms.openlocfilehash: d838425583638aef5199b52df4869923c826553d
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: edf60a5c454d34a2424ef7981b02952ffbfd3bde
+ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100369974"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102097233"
 ---
 # <a name="resource-model-for-the-azure-cosmos-db-point-in-time-restore-feature-preview"></a>Модель ресурсов для функции восстановления на момент времени Azure Cosmos DB (Предварительная версия)
 [!INCLUDE[appliesto-sql-mongodb-api](includes/appliesto-sql-mongodb-api.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "100369974"
 > Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены.
 > Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
-В этой статье объясняется модель ресурсов для функции восстановления Azure Cosmos DB на момент времени (Предварительная версия). В нем объясняются параметры, поддерживающие непрерывную архивацию и ресурсы, которые можно восстановить в Azure Cosmos DB API для учетных записей SQL и MongoDB.
+В этой статье объясняется модель ресурсов для функции восстановления Azure Cosmos DB на момент времени (Предварительная версия). В ней объясняются параметры, поддерживающие непрерывную архивацию и ресурсы, которые можно восстановить в API Azure Cosmos DB для учетных записей SQL и MongoDB.
 
 ## <a name="database-accounts-resource-model"></a>Модель ресурсов учетной записи базы данных
 
@@ -128,7 +128,7 @@ ms.locfileid: "100369974"
 | Рестораблелокатионс: creationTime | Время создания региональной учетной записи в формате UTC.|
 | Рестораблелокатионс: Делетионтиме | Время в формате UTC, когда была удалена региональная учетная запись. Если региональная учетная запись является активной, это значение пусто.|
 
-Список всех учетных записей restorable см. в статьях учетные записи [базы данных restorable — список](restorable-database-accounts-list.md) или [restorable учетные записи баз данных — список статей по расположению](restorable-database-accounts-list-by-location.md) .
+Список всех учетных записей restorable см. в статьях учетные записи [базы данных restorable — список](/rest/api/cosmos-db-resource-provider/2020-06-01-preview/restorabledatabaseaccounts/list) или [restorable учетные записи баз данных — список статей по расположению](/rest/api/cosmos-db-resource-provider/2020-06-01-preview/restorabledatabaseaccounts/listbylocation) .
 
 ### <a name="restorable-sql-database"></a>База данных SQL restorable
 
@@ -142,7 +142,7 @@ ms.locfileid: "100369974"
 | "тип_операции" | Тип операции этого события базы данных. Возможные значения<br/><ul><li>Создание: событие создания базы данных</li><li>Удаление: событие удаления базы данных</li><li>Replace: событие изменения базы данных</li><li>Системоператион: событие изменения базы данных, активируемое системой. Это событие не инициируется пользователем</li></ul> |
 | База данных |Свойства базы данных SQL на момент события|
 
-Чтобы получить список всех изменений базы данных, см. статью [restorable SQL databases-List](restorable-sql-databases-list.md) .
+Чтобы получить список всех изменений базы данных, см. статью [restorable SQL databases-List](/rest/api/cosmos-db-resource-provider/2020-06-01-preview/restorablesqldatabases/list) .
 
 ### <a name="restorable-sql-container"></a>Restorable контейнер SQL
 
@@ -156,7 +156,7 @@ ms.locfileid: "100369974"
 | "тип_операции" | Тип операции этого события контейнера. Возможные значения <br/><ul><li>Создание: событие создания контейнера</li><li>Удаление: событие удаления контейнера</li><li>Replace: событие изменения контейнера</li><li>Системоператион: событие изменения контейнера, активируемое системой. Это событие не инициируется пользователем</li></ul> |
 | контейнер | Свойства контейнера SQL на момент события.|
 
-Чтобы получить список всех изменений контейнера в той же базе данных, см. статью [restorable SQL Containers-List](restorable-sql-containers-list.md) .
+Чтобы получить список всех изменений контейнера в той же базе данных, см. статью [restorable SQL Containers-List](/rest/api/cosmos-db-resource-provider/2020-06-01-preview/restorablesqlcontainers/list) .
 
 ### <a name="restorable-sql-resources"></a>Restorable ресурсы SQL
 
@@ -167,7 +167,7 @@ ms.locfileid: "100369974"
 | databaseName  | Имя базы данных SQL.
 | коллектионнамес   | Список контейнеров SQL в этой базе данных.|
 
-Чтобы получить список базы данных SQL и поле со списком контейнеров, существующих в учетной записи с заданной меткой времени и расположением, см. статью [restorable SQL Resources-List](restorable-sql-resources-list.md) .
+Чтобы получить список базы данных SQL и поле со списком контейнеров, существующих в учетной записи с заданной меткой времени и расположением, см. статью [restorable SQL Resources-List](/rest/api/cosmos-db-resource-provider/2020-06-01-preview/restorablesqlresources/list) .
 
 ### <a name="restorable-mongodb-database"></a>База данных MongoDB restorable
 
@@ -180,7 +180,7 @@ ms.locfileid: "100369974"
 | овнерресаурцеид   | Идентификатор ресурса базы данных MongoDB. |
 | "тип_операции" |   Тип операции этого события базы данных. Возможные значения<br/><ul><li> Создание: событие создания базы данных</li><li> Удаление: событие удаления базы данных</li><li> Replace: событие изменения базы данных</li><li> Системоператион: событие изменения базы данных, активируемое системой. Это событие не инициируется пользователем </li></ul> |
 
-Чтобы получить список всех изменений базы данных, см. статью [restorable MongoDB databases-List](restorable-mongodb-databases-list.md) .
+Чтобы получить список всех изменений базы данных, см. статью [restorable MongoDB databases-List](/rest/api/cosmos-db-resource-provider/2020-06-01-preview/restorablemongodbdatabases/list) .
 
 ### <a name="restorable-mongodb-collection"></a>Коллекция restorable MongoDB
 
@@ -193,7 +193,7 @@ ms.locfileid: "100369974"
 | овнерресаурцеид   | Идентификатор ресурса коллекции MongoDB. |
 | "тип_операции" |Тип операции этого события коллекции. Возможные значения<br/><ul><li>Создать: событие создания коллекции</li><li>Удаление: событие удаления коллекции</li><li>Replace: событие изменения коллекции</li><li>Системоператион: событие изменения коллекции, инициированное системой. Это событие не инициируется пользователем</li></ul> |
 
-Чтобы получить список всех изменений контейнера в той же базе данных, см. статью [restorable MongoDB Collections-List](restorable-mongodb-collections-list.md) .
+Чтобы получить список всех изменений контейнера в той же базе данных, см. статью [restorable MongoDB Collections-List](/rest/api/cosmos-db-resource-provider/2020-06-01-preview/restorablemongodbcollections/list) .
 
 ### <a name="restorable-mongodb-resources"></a>Ресурсы restorable MongoDB
 
@@ -204,9 +204,9 @@ ms.locfileid: "100369974"
 | databaseName  |Имя базы данных MongoDB. |
 | коллектионнамес | Список коллекций MongoDB в этой базе данных. |
 
-Чтобы получить список всех сочетаний баз данных и коллекций MongoDB, существующих в учетной записи с заданной меткой времени и расположением, см. статью [restorable MongoDB Resources-List](restorable-mongodb-resources-list.md) .
+Чтобы получить список всех сочетаний баз данных и коллекций MongoDB, существующих в учетной записи с заданной меткой времени и расположением, см. статью [restorable MongoDB Resources-List](/rest/api/cosmos-db-resource-provider/2020-06-01-preview/restorablemongodbresources/list) .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Настройка непрерывного резервного копирования и управление им с помощью [портал Azure](continuous-backup-restore-portal.md), [PowerShell](continuous-backup-restore-powershell.md), [интерфейса командной строки](continuous-backup-restore-command-line.md)или [Azure Resource Manager](continuous-backup-restore-template.md).
 * [Управление разрешениями](continuous-backup-restore-permissions.md) , необходимыми для восстановления данных в режиме непрерывной архивации.

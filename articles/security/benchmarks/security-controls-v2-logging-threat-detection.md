@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.date: 02/22/2021
 ms.author: mbaldwin
 ms.custom: security-benchmark
-ms.openlocfilehash: 43119a51be2359ed2ddfb4e5d5fa629badedb054
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a274ec1aab3f530700f89ef810fa667fdf4d08e6
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101720687"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102042986"
 ---
 # <a name="security-control-v2-logging-and-threat-detection"></a>Управление безопасностью v2: ведение журнала и обнаружение угроз
 
 Ведение журналов и обнаружение угроз охватывает элементы управления для обнаружения угроз в Azure и включения, сбора и хранения журналов аудита для служб Azure. Сюда входят процессы обнаружения, исследования и исправления с помощью элементов управления для создания высококачественных оповещений с помощью встроенного обнаружения угроз в службах Azure. Кроме того, он включает сбор журналов с Azure Monitor, централизованный анализ безопасности с помощью маркеров Azure, синхронизации времени и срока хранения журнала.
 
-Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь с [подробными сведениями о встроенной инициативе по обеспечению безопасности в Azure: ведение журнала и обнаружение угроз](../../governance/policy/samples/azure-security-benchmark#logging-and-threat-detection)
+Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь с [подробными сведениями о встроенной инициативе по обеспечению безопасности в Azure: ведение журнала и обнаружение угроз](../../governance/policy/samples/azure-security-benchmark.md#logging-and-threat-detection)
 
 ## <a name="lt-1-enable-threat-detection-for-azure-resources"></a>LT-1: Включение обнаружения угроз для ресурсов Azure
 

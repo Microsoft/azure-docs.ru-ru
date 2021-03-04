@@ -1,17 +1,16 @@
 ---
 title: Источники данных в Azure Monitor | Документация Майкрософт
 description: Описывает данные, доступные для мониторинга работоспособности и производительности ресурсов Azure, а также выполняющихся на их базе приложений.
-ms.subservice: ''
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 10/06/2020
-ms.openlocfilehash: e03e31c342f90a0ea9f24e6be098a801410d4b72
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 537163b4a78954443eeb7799dc624837ba03e2bd
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101732094"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036628"
 ---
 # <a name="sources-of-monitoring-data-for-azure-monitor"></a>Источники данных мониторинга для Azure Monitor
 Azure Monitor основан на [общей платформе данных мониторинга](../data-platform.md) , которая включает [журналы](../logs/data-platform-logs.md) и [метрики](../essentials/data-platform-metrics.md). Сбор данных в эту платформу позволяет анализировать данные из нескольких ресурсов вместе с помощью общего набора средств в Azure Monitor. Данные мониторинга могут также отправляться в другие расположения для поддержки определенных сценариев, а некоторые ресурсы могут выполнять запись в другие расположения, прежде чем их можно будет собрать в журналы или метрики.

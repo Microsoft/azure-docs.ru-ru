@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.date: 02/08/2021
 ms.author: jingwang
 ms.custom: has-adal-ref
-ms.openlocfilehash: 574c4967c1e45ce1ae2be92d8648d654322e2244
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 9d8f940e3900c00b1c6f6623dfeff2d92ca85aa3
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101727827"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102042442"
 ---
 # <a name="troubleshoot-azure-data-factory-connectors"></a>Устранение неполадок соединителей фабрики данных Azure
 
@@ -831,7 +831,7 @@ ms.locfileid: "101727827"
 
     Если содержимое закрытого ключа находится в хранилище ключей, исходный файл ключа может работать при его передаче непосредственно в связанную службу SFTP.
 
-    Дополнительные сведения см. в статье [копирование данных с сервера SFTP и обратно с помощью фабрики данных Azure](./connector-sftp.md#using-ssh-public-key-authentication). Содержимое закрытого ключа — это содержимое закрытого ключа SSH в кодировке Base64.
+    Дополнительные сведения см. в статье [копирование данных с сервера SFTP и обратно с помощью фабрики данных Azure](./connector-sftp.md#use-ssh-public-key-authentication). Содержимое закрытого ключа — это содержимое закрытого ключа SSH в кодировке Base64.
 
     Кодирование *всего* исходного файла закрытого ключа в кодировке Base64 и сохранение закодированной строки в хранилище ключей. Исходный закрытый ключ является файлом, который может работать с связанной службой SFTP, если в файле выбрано значение **Отправить** .
 

@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.date: 02/22/2021
 ms.author: mbaldwin
 ms.custom: security-benchmark
-ms.openlocfilehash: 7672f4eb4530dbfb5d039b066fe7cf6eaf79e5a7
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 48b22ba913370b27cd01319a14a2a627d7589ce4
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101718647"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051520"
 ---
 # <a name="security-control-v2-endpoint-security"></a>Управление безопасностью v2: безопасность конечных точек
 
 Безопасность конечных точек охватывает элементы управления при обнаружении и отклике конечных точек. Сюда входит использование функции обнаружения конечных точек и реагирования (ЕДР) и службы защиты от вредоносных программ для конечных точек в средах Azure.
 
-Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь с [подробными сведениями о встроенной инициативе по обеспечению безопасности в Azure: безопасность конечных точек.](../../governance/policy/samples/azure-security-benchmark#endpoint-security)
+Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь с [подробными сведениями о встроенной инициативе по обеспечению безопасности в Azure: безопасность конечных точек.](../../governance/policy/samples/azure-security-benchmark.md#endpoint-security)
 
 ## <a name="es-1-use-endpoint-detection-and-response-edr"></a>ES-1. Использование обнаружения конечных точек и ответа (ЕДР)
 

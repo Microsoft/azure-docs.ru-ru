@@ -2,14 +2,13 @@
 title: Общая схема предупреждений для Azure Monitor оповещений
 description: Понимание общей схемы предупреждений, зачем ее использовать и как ее включить
 ms.topic: conceptual
-ms.subservice: alerts
 ms.date: 03/14/2019
-ms.openlocfilehash: 70e37f8f1c9391eee5901f611bae579efe1cd9b9
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 39ea469b4109f4715db0d0a73ad069121058a46f
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101737296"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102038263"
 ---
 # <a name="common-alert-schema"></a>Общая схема оповещений
 

@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.date: 02/22/2021
 ms.author: mbaldwin
 ms.custom: security-benchmark
-ms.openlocfilehash: 32b0a7e31fc0d595eacc2bf5257f41e4ce35566b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: fbeb88b6aa542666481458fde97d7c63f467fa30
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101735817"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102051537"
 ---
 # <a name="security-control-v2-asset-management"></a>Управление безопасностью версии 2: Управление активами
 
 Управление активами охватывает элементы управления, обеспечивающие видимость и управление безопасностью ресурсов Azure. Сюда входят рекомендации по разрешениям для персонала по обеспечению безопасности, доступу к инвентаризации активов и управлению утверждениями для служб и ресурсов (инвентаризации, трассировки и исправления).
 
-Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь с [подробными сведениями о встроенной инициативе по обеспечению безопасности в Azure: Сетевая безопасность](../../governance/policy/samples/azure-security-benchmark#asset-management)
+Чтобы просмотреть подходящую встроенную политику Azure, ознакомьтесь с [подробными сведениями о встроенной инициативе по обеспечению безопасности в Azure: Сетевая безопасность](../../governance/policy/samples/azure-security-benchmark.md#asset-management)
 
 ## <a name="am-1-ensure-security-team-has-visibility-into-risks-for-assets"></a>AM-1: обеспечение контроля над рисками для ресурсов группой безопасности
 
@@ -154,7 +154,7 @@ ms.locfileid: "101735817"
 
 - [Общие сведения о Отслеживание изменений и инвентаризации службы автоматизации Azure](../../automation/change-tracking/overview.md)
 
-- [Управление выполнением скриптов PowerShell в средах Windows](/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6)
+- [Управление выполнением скриптов PowerShell в средах Windows](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 **Ответственность**: Customer
 
