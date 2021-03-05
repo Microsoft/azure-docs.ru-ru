@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 05/12/2020
 ms.author: labattul
-ms.openlocfilehash: ba7c2a37d58f20ac4ff1f49a46a406d1b1f70106
-ms.sourcegitcommit: e7152996ee917505c7aba707d214b2b520348302
+ms.openlocfilehash: 3b4d66525ec52ef2382dfbe97bc09278e35b31fb
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2020
-ms.locfileid: "97704424"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102124675"
 ---
 # <a name="set-up-dpdk-in-a-linux-virtual-machine"></a>Настройка DPDK в виртуальной машине Linux
 
@@ -58,7 +58,7 @@ DPDK может работать на виртуальных машинах Azur
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-На виртуальной машине Linux необходимо включить ускоренную работу в сети. Виртуальная машина должна иметь по крайней мере два сетевых интерфейса с одним интерфейсом для управления. Сведения о создании виртуальной машины Linux с ускоренной сетью см. в [этой статье](create-vm-accelerated-networking-cli.md).
+На виртуальной машине Linux необходимо включить ускоренную работу в сети. Виртуальная машина должна иметь по крайней мере два сетевых интерфейса с одним интерфейсом для управления. Включение ускоренной сети в интерфейсе управления не рекомендуется. Сведения о создании виртуальной машины Linux с ускоренной сетью см. в [этой статье](create-vm-accelerated-networking-cli.md).
 
 ## <a name="install-dpdk-dependencies"></a>Установка зависимостей DPDK
 

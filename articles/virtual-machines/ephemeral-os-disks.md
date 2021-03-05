@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 07/23/2020
 ms.author: cynthn
 ms.subservice: disks
-ms.openlocfilehash: 62f89106538ab7f57047e211fc8715878f889af1
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.openlocfilehash: 9c13a914a002f63f3c0d5bd988b0d76b951586dd
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98684565"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102124692"
 ---
 # <a name="ephemeral-os-disks-for-azure-vms"></a>Временные диски ОС для виртуальных машин Azure
 
@@ -188,7 +188,7 @@ POST https://management.azure.com/subscriptions/{sub-
 id}/resourceGroups/{rgName}/providers/Microsoft.Compute/VirtualMachines/{vmName}/reimage?a pi-version=2018-06-01" 
 ```
  
-## <a name="frequently-asked-questions"></a>Вопросы и ответы
+## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
 
 **Вопрос. Каков размер локальных дисков ОС?**
 
@@ -244,6 +244,11 @@ foreach($vmSize in $vmSizes)
 - Azure Backup
 - Azure Site Recovery  
 - Переключение диска ОС 
+
+> [!NOTE]
+> 
+> Временные диски не будут доступны через портал. При доступе к временному диску может появиться ошибка "ресурс не найден" или "404".
+> 
  
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Вы можете создать виртуальную машину с эфемерным диском ОС, используя [Azure CLI](/cli/azure/vm#az-vm-create).

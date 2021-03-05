@@ -9,12 +9,12 @@ ms.subservice: security
 ms.topic: how-to
 ms.date: 03/02/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 4c4ad2a1350632d381cc258049ee85c87766f9b5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: f8a6758cdf0a6da709a564c1e17c56a2fe5625b0
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101694127"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102124658"
 ---
 # <a name="deploy-a-vm-with-trusted-launch-enabled-preview"></a>Развертывание виртуальной машины с включенным доверенным запуском (Предварительная версия)
 
@@ -140,7 +140,7 @@ ls: cannot access '/dev/tpm0': No such file or directory
 
 В некоторых случаях может потребоваться подписывать вещи для безопасной загрузки UEFI.  Например, может потребоваться выполнить [Подписывание элементов для безопасной загрузки](https://ubuntu.com/blog/how-to-sign-things-for-secure-boot) Ubuntu. В таких случаях необходимо ввести ключи регистрации служебной программы МОК для виртуальной машины. Для этого необходимо использовать последовательную консоль Azure для доступа к служебной программе МОК.
 
-1. Включение последовательной консоли Azure для Linux. Дополнительные сведения см. в разделе [последовательная консоль для Linux](serial-console-linux.md).
+1. Включение последовательной консоли Azure для Linux.
 1. Войдите на [портал Azure](https://portal.azure.com).
 1. Выполните поиск **виртуальных машин** и выберите свою виртуальную машину из списка.
 1. В меню слева в разделе **Поддержка и устранение неполадок** выберите **серийная консоль**. Страница откроется справа с последовательной консолью.
