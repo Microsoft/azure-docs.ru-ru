@@ -12,12 +12,12 @@ ms.workload: data-services
 ms.custom: seo-lt-2019, devx-track-azurecli
 ms.topic: tutorial
 ms.date: 04/11/2020
-ms.openlocfilehash: 87b3ecd9b77fcf07e6c41bce0a38ef4f99da1006
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: bb4dd08b4f30982ec4572fd4e130a89112578175
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101740942"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102203561"
 ---
 # <a name="tutorial-migrate-postgresql-to-azure-db-for-postgresql-online-using-dms-via-the-azure-cli"></a>Руководство по Миграция из PostgreSQL в Базу данных Azure для PostgreSQL с помощью DMS и Azure CLI в подключенном режиме
 
@@ -71,7 +71,7 @@ Azure Database Migration Service можно использовать для пе
 
   * Установите и запустите CLI локально. CLI 2.0 — это инструмент командной строки для управления ресурсами Azure.
 
-       Чтобы установить CLI, следуйте инструкциям в статье об [установке Azure CLI 2.0](/cli/azure/install-azure-cli?view=azure-cli-latest). В этой статье также указаны платформы, поддерживающие CLI 2.0.
+       Чтобы установить CLI, следуйте инструкциям в статье об [установке Azure CLI 2.0](/cli/azure/install-azure-cli). В этой статье также указаны платформы, поддерживающие CLI 2.0.
 
        Следуйте инструкциям в [Руководстве по установке Windows 10](/windows/wsl/install-win10), чтобы настроить подсистему Windows для Linux (WSL).
 

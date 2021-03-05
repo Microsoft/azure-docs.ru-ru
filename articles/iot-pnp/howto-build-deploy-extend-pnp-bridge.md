@@ -7,12 +7,12 @@ ms.date: 1/20/2021
 ms.topic: how-to
 ms.service: iot-pnp
 services: iot-pnp
-ms.openlocfilehash: 4612e1236af5fbe47db9a3569e2f4da2378017e2
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.openlocfilehash: c89427f83600d3b8091d5293b1757fa6f1a15ef1
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98784903"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102202490"
 ---
 # <a name="build-and-deploy-the-iot-plug-and-play-bridge"></a>Создание и развертывание моста самонастраивающийся IoT
 
@@ -35,7 +35,7 @@ ms.locfileid: "98784903"
 
 |Платформа  |Поддерживаемые версии  |
 |---------|---------|
-|Windows 10 |     Поддерживаются все номера SKU Windows. Например: IoT Корпоративная, сервер, Настольный компьютер, IoT Core. *Для функций мониторинга работоспособности камеры рекомендуется использовать 20H1 или более позднюю сборку. Все остальные функции доступны во всех сборках Windows 10.*  |
+|быть под управлением ОС Windows 10; |     Поддерживаются все номера SKU Windows. Например: IoT Корпоративная, сервер, Настольный компьютер, IoT Core. *Для функций мониторинга работоспособности камеры рекомендуется использовать 20H1 или более позднюю сборку. Все остальные функции доступны во всех сборках Windows 10.*  |
 |Linux     |Протестированные и поддерживаемые в Ubuntu 18,04, но не тестировали функциональность других дистрибутивов.         |
 ||
 
@@ -227,7 +227,7 @@ Debug\pnpbridge_bin.exe
   sudo apt-get install -y git cmake build-essential curl libcurl4-openssl-dev libssl-dev uuid-dev
   ```
 
-- [Azure CLI](/cli/azure/install-azure-cli-apt?view=azure-cli-latest&preserve-view=true) , установленный в среде WSL 2 для управления ресурсами Azure.
+- [Azure CLI](/cli/azure/install-azure-cli-apt) , установленный в среде WSL 2 для управления ресурсами Azure.
 
   > [!TIP]
   > При желании можно выполнить `az` команды в [Azure Cloud Shell](https://shell.azure.com/) , где предварительно установлен интерфейс командной строки.

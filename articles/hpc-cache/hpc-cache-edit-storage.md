@@ -6,12 +6,12 @@ ms.service: hpc-cache
 ms.topic: how-to
 ms.date: 09/30/2020
 ms.author: v-erkel
-ms.openlocfilehash: 7b7bc87f83925baed15bc6a411f5b4e4f78df6cc
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.openlocfilehash: f97ff1c20b7edbf24e5a2c58e22097f88883ae4f
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94654513"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102204037"
 ---
 # <a name="edit-storage-targets"></a>Изменение целевых расположений хранилищ
 
@@ -127,7 +127,7 @@ $ az hpc-cache storage-target remove --resource-group cache-rg --cache-name doc-
 * ``nfs-export`` — Экспорт системы хранения, связываемый с путем, ориентированным на клиента
 * ``target-path`` (необязательно) — подкаталог экспорта (при необходимости).
 
-Пример: ``--junction namespace-path="/nas-1" nfs-export="/datadisk1" target-path="/test"``
+Например, ``--junction namespace-path="/nas-1" nfs-export="/datadisk1" target-path="/test"``.
 
 Необходимо указать все три значения для каждого пути в ``--junction`` операторе. Используйте существующие значения для любых значений, которые не нужно изменять.
 
@@ -161,11 +161,11 @@ az hpc-cache nfs-storage-target update --cache-name mycache \
 
 [Настройте Azure CLI для кэша HPC Azure](./az-cli-prerequisites.md).
 
-Используйте команду [AZ HPC-Cache NFS-Storage](/cli/azure/ext/hpc-cache/hpc-cache/nfs-storage-target?view=azure-cli-latest#ext-hpc-cache-az-hpc-cache-nfs-storage-target-update) .
+Используйте команду [AZ HPC-Cache NFS-Storage](/cli/azure/ext/hpc-cache/hpc-cache/nfs-storage-target#ext-hpc-cache-az-hpc-cache-nfs-storage-target-update) .
 
 Команда Update почти идентична команде, используемой для добавления целевого объекта хранилища NFS. Дополнительные сведения и примеры см. в статье [Создание целевого объекта хранилища NFS](hpc-cache-add-storage.md#create-an-nfs-storage-target) .
 
-Чтобы изменить модель использования, обновите ``--nfs3-usage-model`` параметр. Пример: ``--nfs3-usage-model WRITE_WORKLOAD_15``
+Чтобы изменить модель использования, обновите ``--nfs3-usage-model`` параметр. Например, ``--nfs3-usage-model WRITE_WORKLOAD_15``.
 
 Также требуются значения имени кэша, имени целевого объекта хранилища и группы ресурсов.
 

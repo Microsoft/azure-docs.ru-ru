@@ -10,12 +10,12 @@ author: lobrien
 ms.date: 03/04/2021
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: f52686f991e3d14a8cde82c602b182874305f27d
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: ea7dc30d0aed1350a8c9275d786ea22fa52c77bf
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102184106"
+ms.locfileid: "102203697"
 ---
 # <a name="how-to-use-apache-spark-powered-by-azure-synapse-analytics-in-your-machine-learning-pipeline-preview"></a>Использование Apache Spark (на платформе Azure синапсе Analytics) в конвейере машинного обучения (Предварительная версия)
 
@@ -90,8 +90,6 @@ synapse_compute.wait_for_completion()
 После создания конфигурации можно создать машинное обучение, `ComputeTarget` передав в него `Workspace` имя, и, `ComputeTargetAttachConfiguration` по которому вы хотите ссылаться на вычисление в рабочей области машинного обучения. Вызов `ComputeTarget.attach()` является асинхронным, поэтому образец блокируется до завершения вызова.
 
 ## <a name="create-a-synapsesparkstep-that-uses-the-linked-apache-spark-pool"></a>Создание `SynapseSparkStep` , использующее связанный пул Apache Spark
-
-Задание Spark в примере записной книжки [в пуле Apache Spark](https://github.com/azure/machinelearningnotebooks) определяет простой конвейер машинного обучения. Во-первых, записная книжка определяет шаг подготовки данных на основе, `synapse_compute` определенного на предыдущем шаге. Затем Записная книжка определяет шаг обучения на базе целевого объекта вычислений, который лучше подходит для обучения. В примере записной книжки для демонстрации ввода и вывода данных используется база данных с выживанием Титанике. на самом деле это не очищает данные или не делает прогнозную модель. Так как в этом примере нет практического обучения, на этапе обучения используется недорогой вычислительный ресурс на основе ЦП.
 
 Данные проходят в конвейер машинного обучения с помощью `DatasetConsumptionConfig` объектов, которые могут содержать табличные данные или наборы файлов. Данные часто поступают из файлов в хранилище BLOB-объектов в хранилище данных рабочей области. В следующем коде показан типичный код для создания входных данных для конвейера машинного обучения.
 
@@ -228,7 +226,7 @@ step_2 = PythonScriptStep(script_name="train.py",
 
 Определив все шаги, можно создать и запустить конвейер. 
 
-```
+```python
 from azureml.pipeline.core import Pipeline
 
 pipeline = Pipeline(workspace=ws, steps=[step_1, step_2])

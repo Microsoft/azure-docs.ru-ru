@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.service: digital-twins
 ms.date: 07/14/2020
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: 49c790ae92537ab72fb9848ed4e57e222ef11d79
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: d7d97ca1eb590fb96789d439243dd04d6143a960
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100545689"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102203153"
 ---
 # <a name="known-issues-in-azure-digital-twins"></a>Известные проблемы в службе Digital двойников
 
@@ -24,7 +24,7 @@ ms.locfileid: "100545689"
 
 | Влияет ли это на меня? | Причина | Решение |
 | --- | --- | --- |
-| В &nbsp; Azure &nbsp; Digital &nbsp; двойников это влияет на следующие группы команд:<br><br>`az dt route`<br><br>`az dt model`<br><br>`az dt twin` | Это результат известной проблемы в Cloud Shell: [*Получение маркера от Cloud Shell периодически завершается с ошибкой 400 клиента: неправильный запрос*](https://github.com/Azure/azure-cli/issues/11749).<br><br>Это представляет проблему с маркерами проверки подлинности экземпляра Azure Digital двойников и аутентификацией на основе [управляемого удостоверения](../active-directory/managed-identities-azure-resources/overview.md) по умолчанию для Cloud Shell. <br><br>Это не влияет на команды Azure Digital двойников из `az dt` `az dt endpoint` групп команд или, поскольку они используют другой тип маркера проверки подлинности (на основе Azure Resource Manager), который не имеет проблемы с проверкой подлинности управляемого удостоверения Cloud Shell. | Одним из способов решения этой проблемы является повторная попытка выполнить `az login` команду в Cloud Shell и выполнение последующих шагов входа. Это приведет к переключению сеанса из проверки подлинности управляемого удостоверения, что позволяет избежать проблемы с корневым каталогом. После этого вы сможете выполнить команду повторно.<br><br>Кроме того, можно открыть панель Cloud Shell в портал Azure и завершить Cloud Shellную работу.<br>:::image type="content" source="media/troubleshoot-known-issues/portal-launch-icon.png" alt-text="Изображение значка Cloud Shell на панели значков портал Azure" lightbox="media/troubleshoot-known-issues/portal-launch-icon.png":::<br><br>Наконец, еще одним решением является [установка Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) на компьютере, чтобы можно было выполнять команды Azure CLI локально. В локальной CLI эта проблема не возникает. |
+| В &nbsp; Azure &nbsp; Digital &nbsp; двойников это влияет на следующие группы команд:<br><br>`az dt route`<br><br>`az dt model`<br><br>`az dt twin` | Это результат известной проблемы в Cloud Shell: [*Получение маркера от Cloud Shell периодически завершается с ошибкой 400 клиента: неправильный запрос*](https://github.com/Azure/azure-cli/issues/11749).<br><br>Это представляет проблему с маркерами проверки подлинности экземпляра Azure Digital двойников и аутентификацией на основе [управляемого удостоверения](../active-directory/managed-identities-azure-resources/overview.md) по умолчанию для Cloud Shell. <br><br>Это не влияет на команды Azure Digital двойников из `az dt` `az dt endpoint` групп команд или, поскольку они используют другой тип маркера проверки подлинности (на основе Azure Resource Manager), который не имеет проблемы с проверкой подлинности управляемого удостоверения Cloud Shell. | Одним из способов решения этой проблемы является повторная попытка выполнить `az login` команду в Cloud Shell и выполнение последующих шагов входа. Это приведет к переключению сеанса из проверки подлинности управляемого удостоверения, что позволяет избежать проблемы с корневым каталогом. После этого вы сможете выполнить команду повторно.<br><br>Кроме того, можно открыть панель Cloud Shell в портал Azure и завершить Cloud Shellную работу.<br>:::image type="content" source="media/troubleshoot-known-issues/portal-launch-icon.png" alt-text="Изображение значка Cloud Shell на панели значков портал Azure" lightbox="media/troubleshoot-known-issues/portal-launch-icon.png":::<br><br>Наконец, еще одним решением является [установка Azure CLI](/cli/azure/install-azure-cli) на компьютере, чтобы можно было выполнять команды Azure CLI локально. В локальной CLI эта проблема не возникает. |
 
 
 ## <a name="missing-role-assignment-after-scripted-setup"></a>Отсутствует назначение роли после установки в скрипте
@@ -51,7 +51,7 @@ ms.locfileid: "100545689"
 | --- | --- | --- |
 | `DefaultAzureCredential` используется в большинстве примеров документации для этой службы, которая включает проверку подлинности. Если вы создаете код проверки подлинности с помощью `DefaultAzureCredential` с версией 1.3.0 `Azure.Identity` библиотеки и видите это сообщение об ошибке, это влияет на вас. | Это, вероятно, является следствием некоторых проблем с конфигурацией `Azure.Identity` . | Одна из стратегий решения этой проблемы заключается в исключении `SharedTokenCacheCredential` из учетных данных, как описано в этой [дефаултазурекредентиалной ошибке](https://github.com/Azure/azure-sdk/issues/1970) , которая в настоящее время открыта для `Azure.Identity` .<br>Другой вариант — изменить приложение для использования более ранней версии `Azure.Identity` , например [версии 1.2.3](https://www.nuget.org/packages/Azure.Identity/1.2.3). Это не влияет на работу с Azure Digital двойников. Таким же решением также является принятое решение. |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о безопасности и разрешениях для Azure Digital двойников:
 * [*Основные понятия: безопасность решений для цифровых двойников Azure*](concepts-security.md)

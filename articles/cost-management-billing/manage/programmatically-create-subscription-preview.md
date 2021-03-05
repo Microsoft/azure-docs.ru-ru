@@ -9,12 +9,12 @@ ms.date: 11/17/2020
 ms.reviewer: andalmia
 ms.author: banders
 ms.custom: devx-track-azurepowershell, devx-track-azurecli
-ms.openlocfilehash: 68d890386d53b4115c773b128f8678bac9579e53
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.openlocfilehash: bc761d0bf4001fb1e3fb757b9be9e1e19689913d
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94844342"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102203000"
 ---
 # <a name="programmatically-create-azure-subscriptions-with-preview-apis"></a>Программное создание подписок Azure с помощью предварительных версий API
 
@@ -198,7 +198,7 @@ New-AzSubscription -OfferType MS-AZR-0017P -Name "Dev Team Subscription" -Enroll
 
 Сначала установите эту предварительную версию расширения, запустив `az extension add --name subscription`.
 
-Воспользуйтесь приведенной ниже командой [az account create](/cli/azure/ext/subscription/account?view=azure-cli-latest#-ext-subscription-az-account-create&preserve-view=true), заменив `<enrollmentAccountObjectId>` на значение `name`, скопированное на первом шаге (```747ddfe5-xxxx-xxxx-xxxx-xxxxxxxxxxxx```). Сведения об указании владельцев см. в разделе [Получение идентификаторов объектов пользователей](grant-access-to-create-subscription.md#userObjectId).
+Воспользуйтесь приведенной ниже командой [az account create](/cli/azure/ext/subscription/account#-ext-subscription-az-account-create), заменив `<enrollmentAccountObjectId>` на значение `name`, скопированное на первом шаге (```747ddfe5-xxxx-xxxx-xxxx-xxxxxxxxxxxx```). Сведения об указании владельцев см. в разделе [Получение идентификаторов объектов пользователей](grant-access-to-create-subscription.md#userObjectId).
 
 ```azurecli-interactive
 az account create --offer-type "MS-AZR-0017P" --display-name "Dev Team Subscription" --enrollment-account-object-id "<enrollmentAccountObjectId>" --owner-object-id "<userObjectId>","<servicePrincipalObjectId>"
@@ -213,7 +213,7 @@ az account create --offer-type "MS-AZR-0017P" --display-name "Dev Team Subscript
 | `owner-upn`    | нет       | Строка | Адрес электронной почты любого пользователя, который добавляется в качестве владельца Azure RBAC для подписки при ее создании. Можно использовать этот параметр вместо `owner-object-id`.|
 | `owner-spn` | нет       | Строка | Идентификатор приложения любого субъекта-службы, который добавляется в качестве владельца Azure RBAC для подписки при ее создании. Можно использовать этот параметр вместо `owner-object-id`. При использовании этого параметра служба должна иметь [доступ на чтение к каталогу](/powershell/azure/active-directory/signing-in-service-principal?view=azureadps-2.0#give-the-service-principal-reader-access-to-the-current-tenant-get-azureaddirectoryrole&preserve-view=true).|
 
-Полный список параметров приведен в разделе о команде [az account create](/cli/azure/ext/subscription/account?view=azure-cli-latest#-ext-subscription-az-account-create&preserve-view=true).
+Полный список параметров приведен в разделе о команде [az account create](/cli/azure/ext/subscription/account#-ext-subscription-az-account-create).
 
 ---
 

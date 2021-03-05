@@ -7,24 +7,23 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: ef138210f951fceac21301d37a2805405ed0ecef
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: d1cbd314861a4d5079a5c8e5213f45c7164344f0
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101736599"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102204173"
 ---
 # <a name="azure-security-baseline-for-azure-data-factory"></a>Базовый план безопасности Azure для фабрики данных Azure
 
 Этот базовый план безопасности применяет рекомендации из [тестового показателя безопасности Azure версии 1,0](../security/benchmarks/overview-v1.md) к фабрике данных Azure. Azure Security Benchmark содержит рекомендации по обеспечению безопасности облачных решений в Azure.
 Содержимое группируются по **элементам управления безопасностью** , определенным в тестовом производительности системы безопасности Azure, и связанным рекомендациям, применимым к фабрике данных Azure. **Элементы управления** , неприменимые к фабрике данных Azure, были исключены.
 
- 
-Чтобы узнать, как фабрика данных Azure полностью сопоставляется с тестовым показателем безопасности Azure, см. [полный файл сопоставления базовых показателей безопасности фабрики данных Azure](https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Offer%20Security%20Baselines).
+Сведения о том, как фабрика данных Azure полностью сопоставляется с тестовым уровнем безопасности Azure, см. в статье [полный базовый план безопасности фабрики данных Azure](https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Offer%20Security%20Baselines).
 
 ## <a name="network-security"></a>Безопасность сети
 
-*Дополнительные сведения см. в статье [Azure Security Benchmark: безопасность сети](../security/benchmarks/security-control-network-security.md).*
+*Дополнительные сведения см. в статье о [производительности системы безопасности Azure: Сетевая безопасность](../security/benchmarks/security-control-network-security.md).*
 
 ### <a name="11-protect-azure-resources-within-virtual-networks"></a>1,1: защита ресурсов Azure в виртуальных сетях
 
@@ -42,7 +41,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 - [Создание NSG с конфигурацией безопасности](../virtual-network/tutorial-filter-network-traffic.md)
 
-- [Присоединение Azure-SSIS IR к виртуальной сети](https://docs.microsoft.com/azure/data-factory/join-azure-ssis-integration-runtime-virtual-network#virtual-network-configuration)
+- [Присоединение Azure-SSIS IR к виртуальной сети](join-azure-ssis-integration-runtime-virtual-network.md#virtual-network-configuration)
 
 - [Общие сведения о частной ссылке Azure](../private-link/private-link-overview.md)
 
@@ -168,7 +167,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 ## <a name="logging-and-monitoring"></a>Ведение журналов и мониторинг
 
-*Дополнительные сведения см. в статье [производительность системы безопасности Azure: ведение журнала и мониторинг](../security/benchmarks/security-control-logging-monitoring.md).*
+*Дополнительные сведения см. в статье о [производительности системы безопасности Azure: ведение журнала и мониторинг](../security/benchmarks/security-control-logging-monitoring.md).*
 
 ### <a name="22-configure-central-security-log-management"></a>2.2. Настройка централизованного управления журналами безопасности
 
@@ -491,7 +490,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 ## <a name="data-protection"></a>Защита данных
 
-*Дополнительные сведения см. в статье [Azure Security Benchmark: защита данных](../security/benchmarks/security-control-data-protection.md).*
+*Дополнительные сведения см. в статье о [производительности системы безопасности Azure: защита данных](../security/benchmarks/security-control-data-protection.md).*
 
 ### <a name="41-maintain-an-inventory-of-sensitive-information"></a>4.1. Инвентаризация конфиденциальных данных
 
@@ -1156,7 +1155,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 ## <a name="incident-response"></a>реагирование на инциденты.
 
-*Дополнительные сведения см. в статье [Azure Security Benchmark: реагирование на инциденты](../security/benchmarks/security-control-incident-response.md).*
+*Дополнительные сведения см. в статье о [производительности системы безопасности Azure: реагирование на инциденты](../security/benchmarks/security-control-incident-response.md).*
 
 ### <a name="101-create-an-incident-response-guide"></a>10.1. Создание руководства по реагированию на инциденты
 
@@ -1228,7 +1227,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 ## <a name="penetration-tests-and-red-team-exercises"></a>Тесты на проникновение и попытки нарушения безопасности "красной командой"
 
-*Дополнительные сведения см. в статье [тесты производительности системы безопасности Azure: испытания на проникновение и команды красных команд](../security/benchmarks/security-control-penetration-tests-red-team-exercises.md).*
+*Дополнительные сведения см. в статье производительность [системы безопасности Azure: тесты на проникновение и команды Red Team](../security/benchmarks/security-control-penetration-tests-red-team-exercises.md).*
 
 ### <a name="111-conduct-regular-penetration-testing-of-your-azure-resources-and-ensure-remediation-of-all-critical-security-findings"></a>11,1. Проведите регулярное тестирование на проникновение ресурсов Azure и обеспечьте исправление всех критических результатов безопасности.
 
@@ -1242,7 +1241,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 **Мониторинг центра безопасности Azure**: нет
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-- См. [Обзор Azure Security Benchmark версии 2](/azure/security/benchmarks/overview)
+- см. [Обзор производительности системы безопасности Azure v2](/azure/security/benchmarks/overview)
 - Дополнительные сведения о [базовой конфигурации безопасности Azure](/azure/security/benchmarks/security-baselines-overview).

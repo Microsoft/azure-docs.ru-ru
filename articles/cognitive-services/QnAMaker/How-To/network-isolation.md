@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 11/09/2020
-ms.openlocfilehash: 4e9b45c72e5fb4cbd9e548727faf8946e3e5ba8f
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 8fe8c07866b23e5d990b71bfc9cd556c338634d3
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102125091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102203374"
 ---
 # <a name="recommended-settings-for-network-isolation"></a>Рекомендуемые параметры для сетевой изоляции
 
@@ -57,6 +57,8 @@ ms.locfileid: "102125091"
    1. Скачайте [диапазоны IP-адресов для всех тегов служб](https://www.microsoft.com/download/details.aspx?id=56519).
    2. Выберите IP-адреса для "Когнитивесервицесманажемент".
    3. Перейдите к разделу "сети" ресурса службы приложений и щелкните "настроить ограничение доступа", чтобы добавить IP-адреса в разрешенных.
+
+    ![исключения входящих портов](../media/inbound-ports.png)
 
 Кроме того, у нас есть автоматизированный сценарий для того, чтобы сделать то же самое для службы приложений. Вы можете найти [сценарий PowerShell для настройки разрешенных](https://github.com/pchoudhari/QnAMakerBackupRestore/blob/master/AddRestrictedIPAzureAppService.ps1) на GitHub. Необходимо ввести идентификатор подписки, группу ресурсов и фактическое имя службы приложений в качестве параметров скрипта. При выполнении скрипта будут автоматически добавлены IP-адреса в службу приложений разрешенных.
 

@@ -6,12 +6,12 @@ ms.service: cache
 ms.topic: conceptual
 ms.date: 02/08/2021
 ms.author: yegu
-ms.openlocfilehash: 2005b24e9a5692adda8c8e3a5100a6450c67663c
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: ad6696fc4fe2af7047c25a3a9c260d3b12588ee2
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101653853"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102203306"
 ---
 # <a name="high-availability-for-azure-cache-for-redis"></a>Высокий уровень доступности кэша Azure для Redis
 
@@ -23,7 +23,7 @@ ms.locfileid: "101653853"
 | ------------------- | ------- | ------- | :------: | :---: | :---: |
 | [Стандартная репликация](#standard-replication)| Реплицированная конфигурация с двумя узлами в одном центре обработки данных с автоматической отработкой отказа | 99,9 % |✔|✔|-|
 | [Избыточность в пределах зоны](#zone-redundancy) | Многоузловая Конфигурация репликации в AZs с автоматической отработкой отказа | 99,95% (уровень Premium), 99,99% (уровень предприятия) |-|Preview (Предварительный просмотр)|Preview (Предварительный просмотр)|
-| [Георепликация](#geo-replication) | Экземпляры связанного кэша в двух регионах с управляемой пользователем отработкой отказа | 99,999% (уровень предприятия) |-|✔|-|
+| [Георепликация](#geo-replication) | Экземпляры связанного кэша в двух регионах с управляемой пользователем отработкой отказа | 99,999% (уровень предприятия) |-|✔|Preview (Предварительный просмотр)|
 
 ## <a name="standard-replication"></a>Стандартная репликация
 

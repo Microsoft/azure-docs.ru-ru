@@ -9,12 +9,12 @@ ms.topic: quickstart
 ms.custom: mvc, devx-track-azurecli
 ms.date: 08/20/2019
 ms.author: robinsh
-ms.openlocfilehash: 403fe82c46c90c5f8efb48ce0a394a2f63488fed
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.openlocfilehash: fd179bf17f481ae84f768d619c6ddc0b9afab280
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98624631"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102202558"
 ---
 # <a name="quickstart-communicate-to-a-device-application-in-c-via-iot-hub-device-streams-preview"></a>Краткое руководство. Взаимодействие с приложением устройства в C с помощью потоков устройств Центра Интернета вещей (предварительная версия)
 
@@ -114,7 +114,7 @@ ms.locfileid: "98624631"
 
 ## <a name="register-a-device"></a>Регистрация устройства
 
-Устройство должно быть зарегистрировано в центре Интернета вещей, прежде чем оно сможет подключиться. В этом разделе описано, как зарегистрировать имитированное устройство с помощью [расширения Интернета вещей](/cli/azure/ext/azure-iot/iot?view=azure-cli-latest&preserve-view=true) для Azure Cloud Shell.
+Устройство должно быть зарегистрировано в центре Интернета вещей, прежде чем оно сможет подключиться. В этом разделе описано, как зарегистрировать имитированное устройство с помощью [расширения Интернета вещей](/cli/azure/ext/azure-iot/iot) для Azure Cloud Shell.
 
 1. Чтобы создать удостоверение устройства, выполните приведенные ниже команды в Cloud Shell.
 

@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 09/28/2020
 ms.author: yitoh
-ms.openlocfilehash: 6c628d93c112a770c85a10d0eff958614a7cf4cb
-ms.sourcegitcommit: 1140ff2b0424633e6e10797f6654359947038b8d
+ms.openlocfilehash: 59c5ca9ce9e95319b36e002da0b5d1438ef3fdd1
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97814165"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102203782"
 ---
 # <a name="quickstart-create-and-configure-azure-ddos-protection-standard-using-azure-cli"></a>Краткое руководство. Создание и Настройка стандарта защиты от атак DDoS Azure с помощью Azure CLI
 
@@ -39,7 +39,7 @@ ms.locfileid: "97814165"
 
 В Azure выделите связанные ресурсы группе ресурсов. Вы можете выбрать существующую группу ресурсов или создать новую.
 
-Для создания группы ресурсов используйте команду [az group create](/cli/azure/group?preserve-view=true&view=azure-cli-latest#az-group-create). В этом примере мы назовем нашу группу ресурсов _MyResourceGroup_ и используем расположение _восточной части США_ :
+Для создания группы ресурсов используйте команду [az group create](/cli/azure/group#az-group-create). В этом примере мы назовем нашу группу ресурсов _MyResourceGroup_ и используем расположение _восточной части США_ :
 
 ```azurecli-interactive
 az group create \
@@ -67,6 +67,7 @@ az network vnet create \
     --name MyVnet \
     --location eastus \
     --ddos-protection true
+    --ddos-protection-plan MyDdosProtectionPlan
 ```
 
 Невозможно переместить виртуальную сеть в другую группу ресурсов или подписку, если для этой сети включена защита от атак DDoS уровня "Стандартный". Если необходимо перенести такую виртуальную сеть, сначала отключите защиту от атак DDoS уровня "Стандартный", переместите виртуальную сеть и затем включите защиту от атак DDoS уровня "Стандартный". После перемещения сбрасываются автоматически настраиваемые пороговые значения политик для всех защищенных общедоступных IP-адресов в виртуальной сети.
@@ -83,7 +84,7 @@ az group create \
 az network ddos-protection create \
     --resource-group MyResourceGroup \
     --name MyDdosProtectionPlan
-    --vnet MyVnet
+    --vnets MyVnet
 ```
 
 Кроме того, можно включить защиту от атак DDoS для заданной виртуальной сети.
@@ -91,8 +92,9 @@ az network ddos-protection create \
 ```azurecli-interactive
 az network vnet update \
     --resource-group MyResourceGroup \
-    --vnet MyVnet \
+    --name MyVnet \
     --ddos-protection true
+    --ddos-protection-plan MyDdosProtectionPlan
 ```
 
 ## <a name="validate-and-test"></a>Проверка и тестирование
@@ -111,7 +113,7 @@ az network ddos-protection show \
 
 Вы можете разместить ресурсы для следующего руководства. Удалите группу ресурсов _MyResourceGroup_ , если она больше не нужна. При удалении группы ресурсов также удаляется план защиты от атак DDoS и все связанные с ним ресурсы. 
 
-Чтобы удалить группу ресурсов, выполните команду [az group delete](/cli/azure/group?preserve-view=true&view=azure-cli-latest#az_group_delete).
+Чтобы удалить группу ресурсов, выполните команду [az group delete](/cli/azure/group#az_group_delete).
 
 ```azurecli-interactive
 az group delete \
@@ -123,15 +125,16 @@ az group delete \
 ```azurecli-interactive
 az network vnet update \
     --resource-group MyResourceGroup \
-    --vnet MyVnet \
+    --name MyVnet \
     --ddos-protection false
+    --ddos-protection-plan ""
 ```
 
 Если вы хотите удалить план защиты от атак DDoS, сначала необходимо отменить связь со всеми виртуальными сетями. 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Чтобы узнать, как просмотреть и настроить данные телеметрии для плана защиты от атак DDoS, перейдите к руководствам.
+Чтобы узнать, как просмотреть и настроить данные телеметрии для плана защиты от атак DDoS, перейдите к следующим руководствам.
 
 > [!div class="nextstepaction"]
 > [Настройка телеметрии защиты от атак DDoS и просмотр данных телеметрии](telemetry.md)

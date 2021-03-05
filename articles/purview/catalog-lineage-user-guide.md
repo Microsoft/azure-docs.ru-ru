@@ -7,18 +7,18 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: conceptual
 ms.date: 11/29/2020
-ms.openlocfilehash: cd4bba1bacbdb21a6bff4fcc5d3c1f3b2166ec35
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 47c5ad18f50bd25dd3bf351090ffc9ef5d54f0b2
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102039991"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102202915"
 ---
 # <a name="azure-purview-data-catalog-lineage-user-guide"></a>Обзор журнала обращений и преобразований каталога данных Azure зрения
 
 В этой статье представлен обзор функций журнала преобразований данных в каталоге данных Azure зрения.
 
-## <a name="background"></a>Историческая справка
+## <a name="background"></a>Фон
 
 Одной из функций платформы Azure зрения является возможность отображения журнала обращений и преобразований между наборами данных, созданными процессами работы с данными. Такие системы, как фабрика данных, Общая папка данных и Power BI, захватывают журналы извлечения данных при их перемещении. Пользовательские отчеты о журналах обращений и преобразований также поддерживаются с помощью обработчиков Atlas и REST API.
 
@@ -49,6 +49,8 @@ ms.locfileid: "102039991"
 | Power BI | [DataSets, потоки данных, отчеты & панели мониторинга](register-scan-power-bi-tenant.md)
 
 ## <a name="get-started-with-lineage"></a>Приступая к работе с журналами преобразований
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1XVQS]
 
 Журнал обращений и преобразований в зрения включает наборы данных и процессы. Наборы данных также называются узлами, а процессы могут также называться краями:
 

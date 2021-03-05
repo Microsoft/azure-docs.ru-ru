@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 02/09/2021
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: cbaa83b38482203655f7de98cd5bbfec3ef7a870
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 5bd7ffda508980a9a56d86037887fc53a0fed640
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100418281"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102202949"
 ---
 # <a name="enable-private-access-with-private-link-preview-azure-cli"></a>Включить частный доступ с помощью частной ссылки (Предварительная версия): Azure CLI
 
@@ -41,7 +41,7 @@ ms.locfileid: "100418281"
 
 ### <a name="add-a-private-endpoint-to-an-existing-instance"></a>Добавление частной конечной точки в существующий экземпляр
 
-Чтобы создать частную конечную точку и связать ее с экземпляром Digital двойников Azure, используйте команду [**AZ Network Private-Endpoint Create**](/cli/azure/network/private-endpoint?view=azure-cli-latest&preserve-view=true#az_network_private_endpoint_create) . Идентификация экземпляра Azure Digital двойников с помощью его полного идентификатора в `--private-connection-resource-id` параметре.
+Чтобы создать частную конечную точку и связать ее с экземпляром Digital двойников Azure, используйте команду [**AZ Network Private-Endpoint Create**](/cli/azure/network/private-endpoint#az_network_private_endpoint_create) . Идентификация экземпляра Azure Digital двойников с помощью его полного идентификатора в `--private-connection-resource-id` параметре.
 
 Ниже приведен пример использования команды для создания частной конечной точки с только необходимыми параметрами.
 
@@ -49,25 +49,25 @@ ms.locfileid: "100418281"
 az network private-endpoint create --connection-name {private_link_service_connection} -n {name_for_private_endpoint} -g {resource_group} --subnet {subnet_ID} --private-connection-resource-id "/subscriptions/{subscription_ID}/resourceGroups/{resource_group}/providers/Microsoft.DigitalTwins/digitalTwinsInstances/{Azure_Digital_Twins_instance_name}" 
 ```
 
-Полный список обязательных и необязательных параметров, а также дополнительные примеры создания частных конечных точек см. в [справочной документации по команде **AZ Network Private-Endpoint Create**](/cli/azure/network/private-endpoint?view=azure-cli-latest&preserve-view=true#az_network_private_endpoint_create).
+Полный список обязательных и необязательных параметров, а также дополнительные примеры создания частных конечных точек см. в [справочной документации по команде **AZ Network Private-Endpoint Create**](/cli/azure/network/private-endpoint#az_network_private_endpoint_create).
 
 ### <a name="manage-private-endpoint-connections-on-the-instance"></a>Управление подключениями к частным конечным точкам в экземпляре
 
-После создания частной конечной точки для своего экземпляра Azure Digital двойников можно использовать команды [**AZ DT Network Private-Endpoint Connection**](/cli/azure/ext/azure-iot/dt/network/private-endpoint/connection?view=azure-cli-latest&preserve-view=true) , чтобы продолжить управление **подключениями** к частным конечным точкам по отношению к экземпляру. К этим операциям относятся:
+После создания частной конечной точки для своего экземпляра Azure Digital двойников можно использовать команды [**AZ DT Network Private-Endpoint Connection**](/cli/azure/ext/azure-iot/dt/network/private-endpoint/connection) , чтобы продолжить управление **подключениями** к частным конечным точкам по отношению к экземпляру. К этим операциям относятся:
 * Отображение частного подключения к конечной точке
 * Задание состояния подключения к закрытой конечной точке
 * Удаление подключения к закрытой конечной точке
 * Вывод списка всех подключений к закрытой конечной точке для экземпляра
 
-Дополнительные сведения и примеры см. в [справочной документации по **AZ DT для сети с частной конечной точкой**](/cli/azure/ext/azure-iot/dt/network/private-endpoint?view=azure-cli-latest&preserve-view=true).
+Дополнительные сведения и примеры см. в [справочной документации по **AZ DT для сети с частной конечной точкой**](/cli/azure/ext/azure-iot/dt/network/private-endpoint).
 
 ### <a name="manage-other-private-link-information-on-an-azure-digital-twins-instance"></a>Управление другими сведениями о личных ссылках в экземпляре цифрового двойников Azure
 
-Дополнительные сведения о состоянии закрытой связи для экземпляра можно получить с помощью команд [**частной связи "az DT Network**](/cli/azure/ext/azure-iot/dt/network/private-link?view=azure-cli-latest&preserve-view=true) ". К этим операциям относятся:
+Дополнительные сведения о состоянии закрытой связи для экземпляра можно получить с помощью команд [**частной связи "az DT Network**](/cli/azure/ext/azure-iot/dt/network/private-link) ". К этим операциям относятся:
 * Список частных ссылок, связанных с экземпляром цифрового двойников Azure
 * Отображение частной ссылки, связанной с экземпляром
 
-Дополнительные сведения и примеры см. в [справочной документации по команде **AZ DT Network Link**](/cli/azure/ext/azure-iot/dt/network/private-link?view=azure-cli-latest&preserve-view=true).
+Дополнительные сведения и примеры см. в [справочной документации по команде **AZ DT Network Link**](/cli/azure/ext/azure-iot/dt/network/private-link).
 
 ## <a name="disable--enable-public-network-access-flags"></a>Отключить или включить флаги доступа к общедоступной сети
 
@@ -79,7 +79,7 @@ az network private-endpoint create --connection-name {private_link_service_conne
 
 ### <a name="use-the-azure-cli"></a>Использование Azure CLI
 
-В Azure CLI можно отключить или включить доступ к общедоступной сети, добавив `--public-network-access` параметр в `az dt create` команду. Хотя эта команда также может использоваться для создания нового экземпляра, ее можно использовать для изменения свойств существующего экземпляра, предоставив ему имя уже существующего экземпляра. (Дополнительные сведения об этой команде см. в [справочной документации](/cli/azure/ext/azure-iot/dt?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_create) или [общих инструкциях по настройке экземпляра Azure Digital двойников](how-to-set-up-instance-cli.md#create-the-azure-digital-twins-instance)).
+В Azure CLI можно отключить или включить доступ к общедоступной сети, добавив `--public-network-access` параметр в `az dt create` команду. Хотя эта команда также может использоваться для создания нового экземпляра, ее можно использовать для изменения свойств существующего экземпляра, предоставив ему имя уже существующего экземпляра. (Дополнительные сведения об этой команде см. в [справочной документации](/cli/azure/ext/azure-iot/dt#ext_azure_iot_az_dt_create) или [общих инструкциях по настройке экземпляра Azure Digital двойников](how-to-set-up-instance-cli.md#create-the-azure-digital-twins-instance)).
 
 Чтобы **Отключить** доступ к общедоступной сети для экземпляра Digital двойников Azure, используйте `--public-network-access` параметр следующим образом:
 
@@ -113,7 +113,7 @@ armclient login 
 armclient PATCH /subscriptions/<your-Azure-subscription-ID>/resourceGroups/<your-resource-group>/providers/Microsoft.DigitalTwins/digitalTwinsInstances/<your-Azure-Digital-Twins-instance>?api-version=2020-12-01 "{ 'properties': { 'publicNetworkAccess': 'enabled' } }"  
 ``` 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о закрытой ссылке для Azure: 
 * [*Что такое служба частной связи Azure?*](../private-link/private-link-service-overview.md)

@@ -3,12 +3,12 @@ title: Политика перезапуска для задач однокра�
 description: Узнайте, как использовать Экземпляры контейнеров Azure для задач, выполняемых до завершения, включая сборку, тестирование или преобразование изображений.
 ms.topic: article
 ms.date: 08/11/2020
-ms.openlocfilehash: 336a31a03cdc9dfdfebe79ef47b59ef90053f523
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 49280549fa834b82574f81494f1cf44817d8be5d
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88798947"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102203833"
 ---
 # <a name="run-containerized-tasks-with-restart-policies"></a>Выполнение контейнерных задач с помощью политики перезапуска
 
@@ -94,7 +94,7 @@ az container logs --resource-group myResourceGroup --name mycontainer
 
 В нашем примере вы увидите выходные данные, отправленные скриптом в STDOUT. Но задачи, заключенные в контейнер, могут записывать выходные данные в постоянное хранилище, чтобы их можно было использовать позднее. Например, их можно отправить в [файловый ресурс Azure](./container-instances-volume-azure-files.md)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сценарии на основе задач, такие как пакетная обработка большого набора данных с несколькими контейнерами, могут воспользоваться преимуществами пользовательских [переменных среды](container-instances-environment-variables.md) или [командных строк](container-instances-start-command.md) во время выполнения.
 
@@ -104,7 +104,7 @@ az container logs --resource-group myResourceGroup --name mycontainer
 [aci-wordcount-image]: https://hub.docker.com/_/microsoft-azuredocs-aci-wordcount
 
 <!-- LINKS - Internal -->
-[az-container-create]: /cli/azure/container?view=azure-cli-latest#az-container-create
-[az-container-logs]: /cli/azure/container?view=azure-cli-latest#az-container-logs
-[az-container-show]: /cli/azure/container?view=azure-cli-latest#az-container-show
+[az-container-create]: /cli/azure/container#az-container-create
+[az-container-logs]: /cli/azure/container#az-container-logs
+[az-container-show]: /cli/azure/container#az-container-show
 [azure-cli-install]: /cli/azure/install-azure-cli

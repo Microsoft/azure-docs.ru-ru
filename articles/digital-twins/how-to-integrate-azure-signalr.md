@@ -7,12 +7,12 @@ ms.author: aymarqui
 ms.date: 02/12/2021
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: a39b91304c4123b216a0b508dcea0547cae5ab43
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 89bd77c30ec52a72087598b86f22e85659fa1b0e
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102041507"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102203901"
 ---
 # <a name="integrate-azure-digital-twins-with-azure-signalr-service"></a>Интеграция Azure Digital двойников со службой Azure SignalR
 
@@ -88,7 +88,7 @@ ms.locfileid: "102041507"
 
     :::image type="content" source="media/how-to-integrate-azure-signalr/signalr-keys.png" alt-text="Снимок экрана портал Azure, на которой показана страница &quot;ключи&quot; для экземпляра SignalR. Будет выделен значок &quot;Копировать в буфер обмена&quot; рядом с основной СТРОКой подключения." lightbox="media/how-to-integrate-azure-signalr/signalr-keys.png":::
 
-1. Наконец, добавьте **строку подключения** Azure SignalR в параметры приложения функции, используя следующую команду Azure CLI. Кроме того, замените заполнители на имя группы ресурсов и службы приложений или приложения-функции из [предварительных требований учебника](how-to-integrate-azure-signalr.md#prerequisites). Команду можно выполнить в [Azure Cloud Shell](https://shell.azure.com)или локально, если [на компьютере установлен](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true)Azure CLI.
+1. Наконец, добавьте **строку подключения** Azure SignalR в параметры приложения функции, используя следующую команду Azure CLI. Кроме того, замените заполнители на имя группы ресурсов и службы приложений или приложения-функции из [предварительных требований учебника](how-to-integrate-azure-signalr.md#prerequisites). Команду можно выполнить в [Azure Cloud Shell](https://shell.azure.com)или локально, если [на компьютере установлен](/cli/azure/install-azure-cli)Azure CLI.
  
     ```azurecli-interactive
     az functionapp config appsettings set -g <your-resource-group> -n <your-App-Service-(function-app)-name> --settings "AzureSignalRConnectionString=<your-Azure-SignalR-ConnectionString>"
@@ -189,7 +189,7 @@ npm start
 
 Если ресурсы, созданные в этой статье, больше не нужны, выполните следующие действия, чтобы удалить их. 
 
-С помощью Azure Cloud Shell или локального Azure CLI можно удалить все ресурсы Azure в группе ресурсов с помощью команды [AZ Group Delete](/cli/azure/group?view=azure-cli-latest&preserve-view=true#az-group-delete) . Удаление группы ресурсов также приведет к удалению...
+С помощью Azure Cloud Shell или локального Azure CLI можно удалить все ресурсы Azure в группе ресурсов с помощью команды [AZ Group Delete](/cli/azure/group#az-group-delete) . Удаление группы ресурсов также приведет к удалению...
 * экземпляр Azure Digital двойников (из комплексного руководства)
 * центр Интернета вещей и регистрация устройств концентратора (из комплексного руководства)
 * раздел "Сетка событий" и связанные подписки

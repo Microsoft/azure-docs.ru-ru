@@ -9,12 +9,12 @@ ms.subservice: general
 ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: mbaldwin
-ms.openlocfilehash: 0e1ce841f6da8f15bd977437bca6b835a7b0d745
-ms.sourcegitcommit: 48e5379c373f8bd98bc6de439482248cd07ae883
+ms.openlocfilehash: 9ec1e59a5599ca2e95578eacc1484932956ebf16
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108744"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102204020"
 ---
 # <a name="how-to-enable-key-vault-logging"></a>Включение ведения журнала Key Vault
 
@@ -34,7 +34,7 @@ ms.locfileid: "98108744"
 
 Первым шагом при настройке ведения журнала ключей является подключение к подписке, содержащей хранилище ключей. Это особенно важно, если у вас есть несколько подписок, связанных с вашей учетной записью.
 
-С Azure CLI можно просмотреть все подписки с помощью команды [AZ Account List](/cli/azure/account?view=azure-cli-latest#az_account_list) , а затем подключиться к ней, используя команду [AZ Account Set](/cli/azure/account?view=azure-cli-latest#az_account_set):
+С Azure CLI можно просмотреть все подписки с помощью команды [AZ Account List](/cli/azure/account#az_account_list) , а затем подключиться к ней, используя команду [AZ Account Set](/cli/azure/account#az_account_set):
 
 ```azurecli-interactive
 az account list
@@ -58,7 +58,7 @@ Set-AzContext -SubscriptionId "<subscriptionID>"
 
 Кроме того, необходимо указать имя учетной записи хранения. Имена учетных записей хранения должны быть уникальными длиной от 3 до 24 символов и использовать только цифры и буквы в нижнем регистре.  Наконец, мы создадим учетную запись хранения SKU "Standard_LRS".
 
-В Azure CLI используйте команду [AZ Storage Account Create](/cli/azure/storage/account?view=azure-cli-latest#az_storage_account_create) .
+В Azure CLI используйте команду [AZ Storage Account Create](/cli/azure/storage/account#az_storage_account_create) .
 
 ```azurecli-interactive
 az storage account create --name "<your-unique-storage-account-name>" -g "myResourceGroup" --sku "Standard_LRS"
@@ -84,9 +84,9 @@ $sa.id
 
 ## <a name="obtain-your-key-vault-resource-id"></a>Получение идентификатора ресурса хранилища ключей
 
-В кратком руководстве по интерфейсу [командной строки](quick-create-cli.md) и [PowerShell](quick-create-powershell.md)вы создали ключ с уникальным именем.  Используйте это имя еще раз в следующих шагах.  Если вы не можете вспомнить имя хранилища ключей, можно воспользоваться командой Azure CLI [AZ keyvault List](/cli/azure/keyvault?view=azure-cli-latest#az_keyvault_list) или командлетом Azure PowerShell [Get-азкэйваулт](/powershell/module/az.keyvault/get-azkeyvault?view=azps-4.7.0) для их перечисления.
+В кратком руководстве по интерфейсу [командной строки](quick-create-cli.md) и [PowerShell](quick-create-powershell.md)вы создали ключ с уникальным именем.  Используйте это имя еще раз в следующих шагах.  Если вы не можете вспомнить имя хранилища ключей, можно воспользоваться командой Azure CLI [AZ keyvault List](/cli/azure/keyvault#az_keyvault_list) или командлетом Azure PowerShell [Get-азкэйваулт](/powershell/module/az.keyvault/get-azkeyvault?view=azps-4.7.0) для их перечисления.
 
-Используйте имя хранилища ключей, чтобы найти его идентификатор ресурса.  С Azure CLI используйте команду [AZ keyvault показывать](/cli/azure/keyvault?view=azure-cli-latest#az_keyvault_show) .
+Используйте имя хранилища ключей, чтобы найти его идентификатор ресурса.  С Azure CLI используйте команду [AZ keyvault показывать](/cli/azure/keyvault#az_keyvault_show) .
 
 ```azurecli-interactive
 az keyvault show --name "<your-unique-keyvault-name>"
@@ -102,7 +102,7 @@ Get-AzKeyVault -VaultName "<your-unique-keyvault-name>"
 
 ## <a name="enable-logging-using-azure-powershell"></a>Включение ведения журнала с помощью Azure PowerShell
 
-Чтобы включить ведение журнала для Key Vault, мы будем использовать команду Azure CLI [AZ Monitor диагностики-Settings Create](/cli/azure/monitor/diagnostic-settings?view=azure-cli-latest) или командлет [Set-АЗДИАГНОСТИКСЕТТИНГ](/powershell/module/az.monitor/set-azdiagnosticsetting?view=azps-4.7.0) вместе с идентификатором учетной записи хранения и идентификатором ресурса хранилища ключей.
+Чтобы включить ведение журнала для Key Vault, мы будем использовать команду Azure CLI [AZ Monitor диагностики-Settings Create](/cli/azure/monitor/diagnostic-settings) или командлет [Set-АЗДИАГНОСТИКСЕТТИНГ](/powershell/module/az.monitor/set-azdiagnosticsetting?view=azps-4.7.0) вместе с идентификатором учетной записи хранения и идентификатором ресурса хранилища ключей.
 
 ```azurecli-interactive
 az monitor diagnostic-settings create --storage-account "<storage-account-id>" --resource "<key-vault-resource-id>" --name "Key vault logs" --logs '[{"category": "AuditEvent","enabled": true}]' --metrics '[{"category": "AllMetrics","enabled": true}]'
@@ -116,7 +116,7 @@ Set-AzDiagnosticSetting -ResourceId "<key-vault-resource-id>" -StorageAccountId 
 
 При необходимости можно задать политику хранения для журналов, чтобы старые журналы автоматически удалялись по истечении указанного промежутка времени. Например, можно задать политику хранения, которая автоматически удаляет журналы старше 90 дней.
 
-<!-- With the Azure CLI, use the [az monitor diagnostic-settings update](/cli/azure/monitor/diagnostic-settings?view=azure-cli-latest#az_monitor_diagnostic_settings_update) command. 
+<!-- With the Azure CLI, use the [az monitor diagnostic-settings update](/cli/azure/monitor/diagnostic-settings#az_monitor_diagnostic_settings_update) command. 
 
 ```azurecli-interactive
 az monitor diagnostic-settings update 
@@ -143,7 +143,7 @@ Set-AzDiagnosticSetting "<key-vault-resource-id>" -StorageAccountId $sa.id -Enab
 
 Журналы Key Vault хранятся в контейнере "Insights-Logs-auditevent" в указанной учетной записи хранения. Чтобы просмотреть эти журналы, скачайте большие двоичные объекты.
 
-Сначала перечислите все большие двоичные объекты в контейнере.  В Azure CLI используйте команду [AZ Storage BLOB List](/cli/azure/storage/blob?view=azure-cli-latest#az_storage_blob_list) .
+Сначала перечислите все большие двоичные объекты в контейнере.  В Azure CLI используйте команду [AZ Storage BLOB List](/cli/azure/storage/blob#az_storage_blob_list) .
 
 ```azurecli-interactive
 az storage blob list --account-name "<your-unique-storage-account-name>" --container-name "insights-logs-auditevent"
@@ -159,7 +159,7 @@ Get-AzStorageBlob -Container "insights-logs-auditevent" -Context $sa.Context
 
 Поскольку одну учетную запись можно использовать для сбора журналов нескольких ресурсов, для просмотра и скачивания нужных BLOB-объектов желательно указывать полный идентификатор ресурса в имени BLOB-объекта. Но сначала мы рассмотрим загрузку всех BLOB-объектов.
 
-В Azure CLI используйте команду [AZ Storage BLOB download](/cli/azure/storage/blob?view=azure-cli-latest#az_storage_blob_download) , передайте ей имена больших двоичных объектов и путь к файлу, в котором нужно сохранить результаты.
+В Azure CLI используйте команду [AZ Storage BLOB download](/cli/azure/storage/blob#az_storage_blob_download) , передайте ей имена больших двоичных объектов и путь к файлу, в котором нужно сохранить результаты.
 
 ```azurecli-interactive
 az storage blob download --container-name "insights-logs-auditevent" --file <path-to-file> --name "<blob-name>" --account-name "<your-unique-storage-account-name>"

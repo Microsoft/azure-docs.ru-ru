@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 02/09/2021
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 035d782321feb5d467638159fc191f65573b1042
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c9ce87584373bd87a8f89ecb4ea692b44d3fab4d
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101716131"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102202966"
 ---
 # <a name="enable-a-managed-identity-for-routing-azure-digital-twins-events-preview-azure-cli"></a>Включение управляемого удостоверения для маршрутизации событий цифровых двойников Azure (Предварительная версия): Azure CLI
 
@@ -40,7 +40,7 @@ ms.locfileid: "101716131"
 
 В этом разделе вы узнаете, как включить управляемое системой удостоверение в экземпляре Azure Digital двойников, который в данный момент создается. 
 
-Это можно сделать, добавив `--assign-identity` параметр в `az dt create` команду, которая используется для создания экземпляра. (Дополнительные сведения об этой команде см. в [справочной документации](/cli/azure/ext/azure-iot/dt?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_create) или [общих инструкциях по настройке экземпляра Azure Digital двойников](how-to-set-up-instance-cli.md#create-the-azure-digital-twins-instance)).
+Это можно сделать, добавив `--assign-identity` параметр в `az dt create` команду, которая используется для создания экземпляра. (Дополнительные сведения об этой команде см. в [справочной документации](/cli/azure/ext/azure-iot/dt#ext_azure_iot_az_dt_create) или [общих инструкциях по настройке экземпляра Azure Digital двойников](how-to-set-up-instance-cli.md#create-the-azure-digital-twins-instance)).
 
 Чтобы создать экземпляр с управляемым системой удостоверением, добавьте  `--assign-identity` параметр следующим образом:
 
@@ -97,9 +97,9 @@ az dt create -n {name_of_existing_instance} -g {resource_group} --assign-identit
 az dt create -n {instance_name} -g {resource_group} --assign-identity --scopes "/subscriptions/<subscription ID>/resourceGroups/<resource_group>/providers/Microsoft.EventHub/namespaces/<Event_Hubs_namespace>/eventhubs/<event_hub_name>" --role MyCustomRole
 ```
 
-Дополнительные примеры назначения ролей с помощью этой команды см. в [справочной документации по **AZ DT**](/cli/azure/ext/azure-iot/dt?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_dt_create).
+Дополнительные примеры назначения ролей с помощью этой команды см. в [справочной документации по **AZ DT**](/cli/azure/ext/azure-iot/dt#ext_azure_iot_az_dt_create).
 
-Кроме того, для создания ролей и управления ими можно также использовать группу команд с [**назначением ролей AZ**](/cli/azure/role/assignment?view=azure-cli-latest&preserve-view=true) . Это можно использовать для поддержки дополнительных сценариев, когда не нужно группировать назначение ролей с помощью команды Create.
+Кроме того, для создания ролей и управления ими можно также использовать группу команд с [**назначением ролей AZ**](/cli/azure/role/assignment) . Это можно использовать для поддержки дополнительных сценариев, когда не нужно группировать назначение ролей с помощью команды Create.
 
 ## <a name="create-an-endpoint-with-identity-based-authentication"></a>Создание конечной точки с проверкой подлинности на основе удостоверений
 
@@ -108,7 +108,7 @@ az dt create -n {instance_name} -g {resource_group} --assign-identity --scopes "
 >[!NOTE]
 > Вы не можете изменить конечную точку, которая уже была создана с помощью удостоверения на основе ключа, чтобы изменить проверку подлинности на основе удостоверений. При создании конечной точки необходимо выбрать тип проверки подлинности.
 
-Это можно сделать, добавив `--auth-type` параметр в `az dt endpoint create` команду, которая используется для создания конечной точки. (Дополнительные сведения об этой команде см. в [справочной документации](/cli/azure/ext/azure-iot/dt/endpoint/create?view=azure-cli-latest&preserve-view=true) или [общих инструкциях по настройке конечной точки Azure Digital двойников](how-to-manage-routes-apis-cli.md#create-the-endpoint)).
+Это можно сделать, добавив `--auth-type` параметр в `az dt endpoint create` команду, которая используется для создания конечной точки. (Дополнительные сведения об этой команде см. в [справочной документации](/cli/azure/ext/azure-iot/dt/endpoint/create) или [общих инструкциях по настройке конечной точки Azure Digital двойников](how-to-manage-routes-apis-cli.md#create-the-endpoint)).
 
 Чтобы создать конечную точку, использующую проверку подлинности на основе удостоверений, укажите `IdentityBased` тип проверки подлинности с помощью  `--auth-type` параметра. В приведенном ниже примере это показано в конечной точке концентраторов событий.
 
