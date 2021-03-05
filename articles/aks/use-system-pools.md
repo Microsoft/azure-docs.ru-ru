@@ -6,16 +6,16 @@ ms.topic: article
 ms.date: 06/18/2020
 ms.author: mlearned
 ms.custom: fasttrack-edit, devx-track-azurecli
-ms.openlocfilehash: 9c9479fca538c36f4f5eb430c4befb76e39370e6
-ms.sourcegitcommit: 693df7d78dfd5393a28bf1508e3e7487e2132293
+ms.openlocfilehash: 9c53cb53517c4696a1bb47c2cb72335979d58d3a
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92900020"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102178836"
 ---
 # <a name="manage-system-node-pools-in-azure-kubernetes-service-aks"></a>Управление пулами системных узлов в службе Kubernetes Azure (AKS)
 
-В службе Azure Kubernetes Service (AKS) узлы одной и той же конфигурации группируются в *Пулы узлов* . Пулы узлов содержат базовые виртуальные машины, на которых работают ваши приложения. Пулы системных узлов и пулы узлов пользователей — это два разных режима пула узлов для кластеров AKS. Пулы системных узлов служат основной целью размещения критически важных системных модулей, таких как `CoreDNS` и `metrics-server` . Пулы узлов пользователей служат основной целью размещения модулей Pod приложения. Однако модули приложений можно запланировать в пулах системных узлов, если в кластере AKS требуется только один пул. Каждый кластер AKS должен содержать по крайней мере один пул системных узлов, содержащий по крайней мере один узел.
+В службе Azure Kubernetes Service (AKS) узлы одной и той же конфигурации группируются в *Пулы узлов*. Пулы узлов содержат базовые виртуальные машины, на которых работают ваши приложения. Пулы системных узлов и пулы узлов пользователей — это два разных режима пула узлов для кластеров AKS. Пулы системных узлов служат основной целью размещения критически важных системных модулей, таких как `CoreDNS` и `metrics-server` . Пулы узлов пользователей служат основной целью размещения модулей Pod приложения. Однако модули приложений можно запланировать в пулах системных узлов, если в кластере AKS требуется только один пул. Каждый кластер AKS должен содержать по крайней мере один пул системных узлов, содержащий по крайней мере один узел.
 
 > [!Important]
 > При запуске одного пула системных узлов для кластера AKS в рабочей среде мы рекомендуем использовать по крайней мере три узла для пула узлов.
@@ -62,7 +62,7 @@ ms.locfileid: "92900020"
 
 При создании нового кластера AKS автоматически создается пул системных узлов с одним узлом. Исходный пул узлов по умолчанию имеет режим System. При создании пулов узлов с помощью `az aks nodepool add` эти пулы узлов являются пулами пользовательских узлов, если только вы не укажете параметр mode явным образом.
 
-В следующем примере создается группа ресурсов с именем *myResourceGroup* в регионе *eastus* .
+В следующем примере создается группа ресурсов с именем *myResourceGroup* в регионе *eastus*.
 
 ```azurecli-interactive
 az group create --name myResourceGroup --location eastus
@@ -197,12 +197,12 @@ az group delete --name myResourceGroup --yes --no-wait
 [aks-windows]: windows-container-cli.md
 [az-aks-get-credentials]: /cli/azure/aks#az-aks-get-credentials
 [az-aks-create]: /cli/azure/aks#az-aks-create
-[az-aks-nodepool-add]: /cli/azure/aks/nodepool?view=azure-cli-latest#az-aks-nodepool-add
-[az-aks-nodepool-list]: /cli/azure/aks/nodepool?view=azure-cli-latest#az-aks-nodepool-list
-[az-aks-nodepool-update]: /cli/azure/aks/nodepool?view=azure-cli-latest#az-aks-nodepool-update
-[az-aks-nodepool-upgrade]: /cli/azure/aks/nodepool?view=azure-cli-latest#az-aks-nodepool-upgrade
-[az-aks-nodepool-scale]: /cli/azure/aks/nodepool?view=azure-cli-latest#az-aks-nodepool-scale
-[az-aks-nodepool-delete]: /cli/azure/aks/nodepool?view=azure-cli-latest#az-aks-nodepool-delete
+[az-aks-nodepool-add]: /cli/azure/aks/nodepool#az-aks-nodepool-add
+[az-aks-nodepool-list]: /cli/azure/aks/nodepool#az-aks-nodepool-list
+[az-aks-nodepool-update]: /cli/azure/aks/nodepool#az-aks-nodepool-update
+[az-aks-nodepool-upgrade]: /cli/azure/aks/nodepool#az-aks-nodepool-upgrade
+[az-aks-nodepool-scale]: /cli/azure/aks/nodepool#az-aks-nodepool-scale
+[az-aks-nodepool-delete]: /cli/azure/aks/nodepool#az-aks-nodepool-delete
 [az-extension-add]: /cli/azure/extension#az-extension-add
 [az-extension-update]: /cli/azure/extension#az-extension-update
 [az-group-create]: /cli/azure/group#az-group-create

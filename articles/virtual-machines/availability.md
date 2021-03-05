@@ -6,12 +6,12 @@ ms.author: cynthn
 ms.service: virtual-machines
 ms.topic: conceptual
 ms.date: 02/18/2021
-ms.openlocfilehash: c336c1632cf206cdf2bf7151dc191c4de5ef820d
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 0af9d27561649a559913912165e63e913a32ff2e
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102036934"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102178292"
 ---
 # <a name="availability-options-for-virtual-machines-in-azure"></a>Варианты доступности виртуальных машин в Azure
 

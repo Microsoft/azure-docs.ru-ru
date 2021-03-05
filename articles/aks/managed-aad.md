@@ -5,12 +5,12 @@ services: container-service
 ms.topic: article
 ms.date: 02/1/2021
 ms.author: miwithro
-ms.openlocfilehash: 070b2e3b88c1ff20b52d2c5cade7ad42c6d4d734
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: ca8b9a511de1b71e5d03b8aac7631fc8f524500f
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102122431"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177942"
 ---
 # <a name="aks-managed-azure-active-directory-integration"></a>Интеграция Azure Active Directory с управляемым AKS
 
@@ -315,8 +315,8 @@ Error from server (Forbidden): nodes is forbidden: User "aaaa11111-11aa-aa11-a1a
 [azure-rbac-integration]: manage-azure-rbac.md
 [aks-concepts-identity]: concepts-identity.md
 [azure-ad-rbac]: azure-ad-rbac.md
-[az-aks-create]: /cli/azure/aks?view=azure-cli-latest#az-aks-create
-[az-aks-get-credentials]: /cli/azure/aks?view=azure-cli-latest#az-aks-get-credentials
+[az-aks-create]: /cli/azure/aks#az-aks-create
+[az-aks-get-credentials]: /cli/azure/aks#az-aks-get-credentials
 [az-group-create]: /cli/azure/group#az-group-create
 [open-id-connect]:../active-directory/develop/v2-protocols-oidc.md
 [az-ad-user-show]: /cli/azure/ad/user#az-ad-user-show

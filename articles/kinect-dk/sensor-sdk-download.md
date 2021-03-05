@@ -7,12 +7,12 @@ ms.prod: kinect-dk
 ms.date: 06/26/2019
 ms.topic: conceptual
 keywords: azure, kinect, пакет sdk, скачать обновление, последняя версия, доступно, установка
-ms.openlocfilehash: 2fd14781c42192c713d826729f8fab6c698d6321
-ms.sourcegitcommit: 2ba6303e1ac24287762caea9cd1603848331dd7a
+ms.openlocfilehash: 591fcba4c887e298cf667c5d95c19184bc213ffe
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97505483"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102179635"
 ---
 # <a name="azure-kinect-sensor-sdk-download"></a>Скачивание пакета SDK для датчика Azure Kinect
 
@@ -41,18 +41,23 @@ ms.locfileid: "97505483"
 
 Сначала необходимо настроить [репозиторий пакетов Майкрософт](https://packages.microsoft.com/), следуя инструкциям, приведенным [здесь](/windows-server/administration/linux-package-repository-for-microsoft-software).
 
-Теперь можно установить необходимые пакеты. Пакет `k4a-tools` включает [средство просмотра Azure Kinect](azure-kinect-viewer.md), [средство записи Azure Kinect](record-sensor-streams-file.md), а также [средство обновления программного обеспечения Azure Kinect](azure-kinect-firmware-tool.md). Для установки выполните следующую команду:
+Теперь можно установить необходимые пакеты. Пакет `k4a-tools` включает [средство просмотра Azure Kinect](azure-kinect-viewer.md), [средство записи Azure Kinect](record-sensor-streams-file.md), а также [средство обновления программного обеспечения Azure Kinect](azure-kinect-firmware-tool.md). Чтобы установить пакет, выполните:
 
- `sudo apt install k4a-tools`
+`sudo apt install k4a-tools`
+ 
+Эта команда устанавливает пакеты зависимостей, необходимые для правильной работы средств, включая последнюю версию `libk4a<major>.<minor>` . Вам потребуется добавить правила udev для доступа к Azure Kinect DK без привилегированного пользователя. Инструкции см. в разделе [Настройка устройств Linux](https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/usage.md#linux-device-setup). В качестве альтернативы можно запускать приложения, использующие устройство в качестве корневого.
 
- Пакет `libk4a<major>.<minor>-dev` содержит заголовки и файлы CMake для сборки в `libk4a`.
-Пакет `libk4a<major>.<minor>` содержит общие объекты, требуемые для запуска исполняемых файлов, зависящих от `libk4a`.
+`libk4a<major>.<minor>-dev`Пакет содержит заголовки и файлы CMAK для сборки приложений и исполняемых файлов `libk4a` .
 
- Для работы с основными руководствами требуется пакет `libk4a<major>.<minor>-dev`. Для установки выполните следующую команду:
+`libk4a<major>.<minor>`Пакет содержит общие объекты, необходимые для запуска приложений и исполняемых файлов, которые зависят от `libk4a` .
 
- `sudo apt install libk4a1.1-dev`
+Для работы с основными руководствами требуется пакет `libk4a<major>.<minor>-dev`. Чтобы установить пакет, выполните:
+
+`sudo apt install libk4a<major>.<minor>-dev` 
 
 Если команда выполнена, это значит, что пакет SDK готов к использованию.
+
+Обязательно установите соответствующую версию `libk4a<major>.<minor>` с помощью `libk4a<major>.<minor>-dev` . Например, если установить `libk4a4.1-dev` пакет, установите соответствующий `libk4a4.1` пакет, содержащий соответствующую версию общих объектных файлов. Последние версии см `libk4a` . по ссылкам в следующем разделе.
 
 ## <a name="change-log-and-older-versions"></a>Журнал изменений и более старые версии
 

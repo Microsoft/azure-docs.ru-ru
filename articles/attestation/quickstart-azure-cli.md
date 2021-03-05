@@ -7,16 +7,16 @@ ms.service: attestation
 ms.topic: quickstart
 ms.date: 11/20/2020
 ms.author: mbaldwin
-ms.openlocfilehash: 4fc799c1c6dcaaa3ed4bc41c93bd6b786f51591c
-ms.sourcegitcommit: eb546f78c31dfa65937b3a1be134fb5f153447d6
+ms.openlocfilehash: ae283785b4d4dc80c6b9b6c3997aaf82c9ff0f2f
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99429251"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102178717"
 ---
 # <a name="quickstart-set-up-azure-attestation-with-azure-cli"></a>Краткое руководство. Настройка службы "Аттестация Azure" с помощью Azure CLI
 
-Начните работу со [службой "Аттестация Azure" с помощью Azure CLI](/cli/azure/ext/attestation/attestation?view=azure-cli-latest).
+Начните работу со [службой "Аттестация Azure" с помощью Azure CLI](/cli/azure/ext/attestation/attestation).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -69,13 +69,13 @@ ms.locfileid: "99429251"
 
 Ниже приведены команды, которые можно использовать для создания поставщика аттестации и управления им.
 
-1. Выполните команду [az attestation create](/cli/azure/ext/attestation/attestation?view=azure-cli-latest#ext_attestation_az_attestation_create), чтобы создать поставщик аттестации с требованием подписывания политик:
+1. Выполните команду [az attestation create](/cli/azure/ext/attestation/attestation#ext_attestation_az_attestation_create), чтобы создать поставщик аттестации с требованием подписывания политик:
 
    ```azurecli
    az attestation create --name "myattestationprovider" --resource-group "MyResourceGroup" --location westus
    ```
    
-1. Выполните команду [az attestation show](/cli/azure/ext/attestation/attestation?view=azure-cli-latest#ext_attestation_az_attestation_show), чтобы получить сведения о свойствах поставщика аттестации, включая сведения о состоянии и URI аттестации:
+1. Выполните команду [az attestation show](/cli/azure/ext/attestation/attestation#ext_attestation_az_attestation_show), чтобы получить сведения о свойствах поставщика аттестации, включая сведения о состоянии и URI аттестации:
 
    ```azurecli
    az attestation show --name "myattestationprovider" --resource-group "MyResourceGroup"
@@ -95,7 +95,7 @@ ms.locfileid: "99429251"
    TagsTable:
    ```
 
-Поставщик аттестации можно удалить с помощью команды [az attestation delete](/cli/azure/ext/attestation/attestation?view=azure-cli-latest#ext_attestation_az_attestation_delete):
+Поставщик аттестации можно удалить с помощью команды [az attestation delete](/cli/azure/ext/attestation/attestation#ext_attestation_az_attestation_delete):
 
 ```azurecli
 az attestation delete --name "myattestationprovider" --resource-group "sample-resource-group"
@@ -105,7 +105,7 @@ az attestation delete --name "myattestationprovider" --resource-group "sample-re
 
 Управлять политиками для поставщика аттестации можно с помощью описанных здесь команд (один тип аттестации за раз).
 
-Команда [az attestation policy show](/cli/azure/ext/attestation/attestation/policy?view=azure-cli-latest#ext_attestation_az_attestation_policy_show) возвращает текущую политику для указанной среды TEE:
+Команда [az attestation policy show](/cli/azure/ext/attestation/attestation/policy#ext_attestation_az_attestation_policy_show) возвращает текущую политику для указанной среды TEE:
 
 ```azurecli
 az attestation policy show --name "myattestationprovider" --resource-group "MyResourceGroup" --attestation-type SGX-IntelSDK
@@ -120,7 +120,7 @@ az attestation policy show --name "myattestationprovider" --resource-group "MyRe
 - `SGX-OpenEnclaveSDK`
 - `TPM`
 
-Используйте команду [az attestation policy set](/cli/azure/ext/attestation/attestation/policy?view=azure-cli-latest#ext_attestation_az_attestation_policy_set), чтобы задать новую политику для указанного типа аттестации.
+Используйте команду [az attestation policy set](/cli/azure/ext/attestation/attestation/policy#ext_attestation_az_attestation_policy_set), чтобы задать новую политику для указанного типа аттестации.
 
 Чтобы задать политику в текстовом формате для заданного типа аттестации с помощью пути к файлу, сделайте следующее:
 

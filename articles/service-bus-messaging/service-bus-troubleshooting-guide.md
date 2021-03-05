@@ -2,13 +2,13 @@
 title: Руководство по устранению неполадок в служебной шине Azure | Документация Майкрософт
 description: Ознакомьтесь с советами и рекомендациями по устранению некоторых проблем, которые могут возникнуть при использовании служебной шины Azure.
 ms.topic: article
-ms.date: 09/16/2020
-ms.openlocfilehash: c5813f901f31f96633e11c2ed8162338bdd9bbf7
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.date: 03/03/2021
+ms.openlocfilehash: 7de39e5a3a7b6cbb8e5fa504f073023853e18366
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98881220"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102179703"
 ---
 # <a name="troubleshooting-guide-for-azure-service-bus"></a>Руководство по устранению неполадок в служебной шине Azure
 В этой статье содержатся советы и рекомендации по устранению некоторых проблем, которые могут возникнуть при использовании служебной шины Azure. 
@@ -52,6 +52,8 @@ ms.locfileid: "98881220"
     ```
     Аналогичные команды можно использовать, если вы используете другие средства, такие как `tnc` , `ping` и т. д. 
 - Найдите трассировку сети, если предыдущие шаги не помогают и не анализируют их с помощью таких средств, как [Wireshark](https://www.wireshark.org/). При необходимости обратитесь в [Служба поддержки Майкрософт](https://support.microsoft.com/) . 
+- Чтобы найти IP-адреса, которые нужно добавить в список разрешений для подключений, см. раздел [какие IP-адреса нужно добавить в список разрешений](service-bus-faq.md#what-ip-addresses-do-i-need-to-add-to-allow-list). 
+
 
 ## <a name="issues-that-may-occur-with-service-upgradesrestarts"></a>Проблемы, которые могут возникнуть при обновлении или перезапуске службы
 

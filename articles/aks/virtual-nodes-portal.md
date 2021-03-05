@@ -5,12 +5,12 @@ services: container-service
 ms.topic: conceptual
 ms.date: 05/06/2019
 ms.custom: references_regions, devx-track-azurecli
-ms.openlocfilehash: 7d49499b39c562aeff20d163fc86401d8c1f4a06
-ms.sourcegitcommit: 1d6ec4b6f60b7d9759269ce55b00c5ac5fb57d32
+ms.openlocfilehash: 4c67d3608d2128385c273425ea495a02fa5a8c45
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94579170"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102180910"
 ---
 # <a name="create-and-configure-an-azure-kubernetes-services-aks-cluster-to-use-virtual-nodes-in-the-azure-portal"></a>Создание и настройка кластера Службы Azure Kubernetes (AKS) для использования виртуальных узлов на портале Azure
 
@@ -29,7 +29,7 @@ ms.locfileid: "94579170"
 az provider list --query "[?contains(namespace,'Microsoft.ContainerInstance')]" -o table
 ```
 
-Поставщик *Microsoft.ContainerInstance* должен иметь состояние *Registered* , как показано в следующем примере выходных данных.
+Поставщик *Microsoft.ContainerInstance* должен иметь состояние *Registered*, как показано в следующем примере выходных данных.
 
 ```output
 Namespace                    RegistrationState    RegistrationPolicy
@@ -37,7 +37,7 @@ Namespace                    RegistrationState    RegistrationPolicy
 Microsoft.ContainerInstance  Registered           RegistrationRequired
 ```
 
-Если поставщик имеет состояние *NotRegistered* , зарегистрируйте этот поставщик с помощью команды [az provider register][az-provider-register], как показано в следующем примере.
+Если поставщик имеет состояние *NotRegistered*, зарегистрируйте этот поставщик с помощью команды [az provider register][az-provider-register], как показано в следующем примере.
 
 ```azurecli-interactive
 az provider register --namespace Microsoft.ContainerInstance
@@ -53,7 +53,7 @@ az provider register --namespace Microsoft.ContainerInstance
 
 На странице **Основные** настройте следующие параметры:
 
-- *Сведения о проекте*. Выберите подписку Azure, а затем выберите или создайте группу ресурсов Azure, например *myResourceGroup*. Введите **Имя кластера Kubernetes** , например *myAKSCluster*.
+- *Сведения о проекте*. Выберите подписку Azure, а затем выберите или создайте группу ресурсов Azure, например *myResourceGroup*. Введите **Имя кластера Kubernetes**, например *myAKSCluster*.
 - *Сведения о кластере*. Выберите регион, версию Kubernetes и префикс DNS-имени для кластера AKS.
 - *Пул первичных узлов*. Выберите размер виртуальной машины для узлов AKS. Размер виртуальной машины **невозможно** изменить после развертывания кластера с AKS.
      - Выберите количество узлов для развертывания в кластере. Для задач в этой статье задайте для параметра **Число узлов** значение *1*. Количество узлов **можно** изменить после развертывания кластера.
@@ -76,7 +76,7 @@ az provider register --namespace Microsoft.ContainerInstance
 
 Azure Cloud Shell — это бесплатная интерактивная оболочка, с помощью которой можно выполнять действия, описанные в этой статье. Она включает предварительно установленные общие инструменты Azure и настроена для использования с вашей учетной записью. Управлять кластером Kubernetes можно при помощи [kubectl][kubectl], клиента командной строки Kubernetes. Клиент `kubectl` предварительно установлен в Azure Cloud Shell.
 
-Чтобы открыть Cloud Shell, выберите **Попробовать** в правом верхнем углу блока кода. Cloud Shell можно также запустить в отдельной вкладке браузера, перейдя на страницу [https://shell.azure.com/bash](https://shell.azure.com/bash). Нажмите кнопку **Копировать** , чтобы скопировать блоки кода. Вставьте код в Cloud Shell и нажмите клавишу "ВВОД", чтобы выполнить его.
+Чтобы открыть Cloud Shell, выберите **Попробовать** в правом верхнем углу блока кода. Cloud Shell можно также запустить в отдельной вкладке браузера, перейдя на страницу [https://shell.azure.com/bash](https://shell.azure.com/bash). Нажмите кнопку **Копировать**, чтобы скопировать блоки кода. Вставьте код в Cloud Shell и нажмите клавишу "ВВОД", чтобы выполнить его.
 
 Выполните команду [az aks get-credentials][az-aks-get-credentials], чтобы настроить подключение `kubectl` к кластеру Kubernetes. В следующем примере возвращаются учетные данные для имени кластера *myAKSCluster* в группе ресурсов *myResourceGroup*.
 
@@ -90,7 +90,7 @@ az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
 kubectl get nodes
 ```
 
-В следующем примере выходных данных показано создание одного узла виртуальной машины и одного виртуального узла для Linux с именем *virtual-node-aci-linux* :
+В следующем примере выходных данных показано создание одного узла виртуальной машины и одного виртуального узла для Linux с именем *virtual-node-aci-linux*:
 
 ```output
 NAME                           STATUS    ROLES     AGE       VERSION
@@ -210,9 +210,9 @@ curl -L http://10.241.0.4
 
 <!-- LINKS - internal -->
 [aks-network]: ./configure-azure-cni.md
-[az-aks-get-credentials]: /cli/azure/aks?view=azure-cli-latest#az-aks-get-credentials
+[az-aks-get-credentials]: /cli/azure/aks#az-aks-get-credentials
 [aks-hpa]: tutorial-kubernetes-scale.md
 [aks-cluster-autoscaler]: cluster-autoscaler.md
 [aks-basic-ingress]: ingress-basic.md
-[az-provider-list]: /cli/azure/provider?view=azure-cli-latest#az-provider-list
-[az-provider-register]: /cli/azure/provider?view=azure-cli-latest&preserve-view=true#az-provider-register
+[az-provider-list]: /cli/azure/provider#az-provider-list
+[az-provider-register]: /cli/azure/provider#az-provider-register

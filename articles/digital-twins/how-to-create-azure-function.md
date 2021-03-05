@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 8/27/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 2419761c195258c60561e284abf0227b915ed4f6
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 8ed4e550ea441d5d99a3debb6bf37eb7db2a4a20
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102123638"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102180179"
 ---
 # <a name="connect-function-apps-in-azure-for-processing-data"></a>Подключение приложений функций в Azure для обработки данных
 
@@ -56,29 +56,14 @@ ms.locfileid: "102123638"
 
 Вы можете написать функцию, добавив пакет SDK в приложение-функцию. Приложение-функция взаимодействует с Azure Digital двойников с помощью [пакета SDK Azure Digital двойников для .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet&preserve-view=true). 
 
-Чтобы использовать пакет SDK, необходимо включить в проект следующие пакеты. Можно либо установить пакеты с помощью диспетчера пакетов NuGet Visual Studio, либо добавить пакеты с помощью `dotnet` в программе командной строки. Выполните приведенные ниже действия для выбранного метода.
+Чтобы использовать пакет SDK, необходимо включить в проект следующие пакеты. Можно либо установить пакеты с помощью диспетчера пакетов NuGet Visual Studio, либо добавить пакеты с помощью `dotnet` в программе командной строки.
 
-**Вариант 1. Добавление пакетов с помощью диспетчера пакетов Visual Studio:**
-    
-Щелкните проект правой кнопкой мыши и выберите в списке пункт _Управление пакетами NuGet_ . Затем в открывшемся окне выберите вкладку _Обзор_ и выполните поиск следующих пакетов. Выберите _установить_ и _принять_ лицензионное соглашение для установки пакетов.
+* [Azure. Дигиталтвинс. Core](https://www.nuget.org/packages/Azure.DigitalTwins.Core/)
+* [Azure. Identity](https://www.nuget.org/packages/Azure.Identity/)
+* [System.Net.Http](https://www.nuget.org/packages/System.Net.Http/)
+* [Azure. Core](https://www.nuget.org/packages/Azure.Core/)
 
-* `Azure.DigitalTwins.Core`
-* `Azure.Identity`
-* `System.Net.Http`
-* `Azure.Core.Pipeline`
-
-**Вариант 2. Добавление пакетов с помощью `dotnet` программы командной строки:**
-
-Кроме того, можно использовать следующие `dotnet add` команды в программе командной строки:
-
-```cmd/sh
-dotnet add package Azure.DigitalTwins.Core
-dotnet add package Azure.Identity
-dotnet add package System.Net.Http
-dotnet add package Azure.Core.Pipeline
-```
-
-Затем в Visual Studio обозреватель решений откройте файл _function1.CS_ , в котором имеется образец кода, и добавьте в `using` функцию следующие инструкции. 
+Затем в Visual Studio обозреватель решений откройте файл _function1.CS_ , в котором имеется образец кода, и добавьте следующие `using` инструкции для этих пакетов в функцию. 
 
 :::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/adtIngestFunctionSample.cs" id="Function_dependencies":::
 
@@ -116,108 +101,118 @@ dotnet add package Azure.Core.Pipeline
 
 Вы можете настроить доступ к безопасности для приложения функции, используя либо Azure CLI, либо портал Azure. Выполните приведенные ниже действия для выбранного варианта.
 
-### <a name="option-1-set-up-security-access-for-the-function-app-using-cli"></a>Вариант 1. Настройка безопасного доступа для приложения функции с помощью интерфейса командной строки
+# <a name="cli"></a>[CLI](#tab/cli)
 
-В схеме функций из предыдущих примеров требуется передать в него токен носителя, чтобы иметь возможность проходить проверку подлинности в Azure Digital двойников. Чтобы убедиться, что этот токен носителя передан, необходимо настроить [управляемое удостоверение службы (MSI)](../active-directory/managed-identities-azure-resources/overview.md) для приложения-функции. Это необходимо сделать только один раз для каждого приложения функции.
+Эти команды можно выполнить в [Azure Cloud Shell](https://shell.azure.com) или [локальной Azure CLI установки](/cli/azure/install-azure-cli).
 
-Вы можете создать управляемое системой удостоверение и назначить удостоверение приложения-функции для роли _**владельца данных Azure Digital двойников**_ для своего экземпляра Azure Digital двойников. Это предоставит приложению функции в экземпляре разрешение на выполнение действий плоскости данных. Затем сделайте URL-адрес экземпляра Azure Digital двойников доступным для вашей функции, задав переменную среды.
+### <a name="assign-access-role"></a>Назначение роли доступа
 
-Используйте [Azure Cloud Shell](https://shell.azure.com) для выполнения команд.
+В схеме функций из предыдущих примеров требуется передать в него токен носителя, чтобы иметь возможность проходить проверку подлинности в Azure Digital двойников. Чтобы убедиться, что этот токен носителя передан, необходимо настроить разрешения [управляемое удостоверение службы (MSI)](../active-directory/managed-identities-azure-resources/overview.md) для приложения-функции, чтобы получить доступ к Azure Digital двойников. Это необходимо сделать только один раз для каждого приложения функции.
 
-С помощью следующей команды создайте управляемое системой удостоверение. Запишите значение поля _principalId_ в выходных данных команды.
+Вы можете использовать управляемое системой удостоверение приложения-функции, чтобы предоставить ему роль _**владельца данных Digital двойников Azure**_ для своего экземпляра Azure Digital двойников. Это предоставит приложению функции в экземпляре разрешение на выполнение действий плоскости данных. Затем сделайте URL-адрес экземпляра Azure Digital двойников доступным для вашей функции, задав переменную среды.
 
-```azurecli-interactive 
-az functionapp identity assign -g <your-resource-group> -n <your-App-Service-(function-app)-name>   
-```
-Используйте значение _principalId_ в следующей команде, чтобы назначить удостоверение приложения-функции роли _владельца Azure Digital Twins_ для вашего экземпляра Azure Digital Twins.
+1. Используйте следующую команду, чтобы просмотреть сведения об управляемом системой удостоверении для функции. Запишите значение поля _principalId_ в выходных данных команды.
 
-```azurecli-interactive 
-az dt role-assignment create --dt-name <your-Azure-Digital-Twins-instance> --assignee "<principal-ID>" --role "Azure Digital Twins Data Owner"
-```
+    ```azurecli-interactive 
+    az functionapp identity show -g <your-resource-group> -n <your-App-Service-(function-app)-name> 
+    ```
+
+    >[!NOTE]
+    > Если результат пуст, вместо отображения сведений об удостоверении создайте новое управляемое системой удостоверение для функции с помощью следующей команды:
+    > 
+    >```azurecli-interactive    
+    >az functionapp identity assign -g <your-resource-group> -n <your-App-Service-(function-app)-name>  
+    >```
+    >
+    > В выходных данных отобразятся сведения об удостоверении, включая значение _principalId_ , необходимое для следующего шага. 
+
+1. Используйте значение _principalId_ в следующей команде, чтобы назначить удостоверение приложения-функции роли _владельца Azure Digital Twins_ для вашего экземпляра Azure Digital Twins.
+
+    ```azurecli-interactive 
+    az dt role-assignment create --dt-name <your-Azure-Digital-Twins-instance> --assignee "<principal-ID>" --role "Azure Digital Twins Data Owner"
+    ```
+
+### <a name="configure-application-settings"></a>Настройка параметров приложения
+
 Наконец, предоставьте доступ к URL-адресу вашего экземпляра Azure Digital двойников вашей функции, задав для него **переменную среды** . Дополнительные сведения о переменных среды см. в разделе [*Управление приложением функции*](../azure-functions/functions-how-to-use-azure-function-app-settings.md?tabs=portal). 
 
 > [!TIP]
-> URL-адрес экземпляра Azure Digital двойников создается путем добавления *https://* в начало *имени узла* для цифрового двойникова Azure. Чтобы просмотреть имя узла, а также все свойства экземпляра, можно запустить `az dt show --dt-name <your-Azure-Digital-Twins-instance>` .
+> URL-адрес экземпляра Azure Digital двойников создается путем добавления *https://* в начало *имени узла* цифрового двойников Azure. Чтобы просмотреть имя узла, а также все свойства экземпляра, можно запустить `az dt show --dt-name <your-Azure-Digital-Twins-instance>` .
 
 ```azurecli-interactive 
-az functionapp config appsettings set -g <your-resource-group> -n <your-App-Service-(function-app)-name> --settings "ADT_SERVICE_URL=https://<your-Azure-Digital-Twins-instance-hostname>"
+az functionapp config appsettings set -g <your-resource-group> -n <your-App-Service-(function-app)-name> --settings "ADT_SERVICE_URL=https://<your-Azure-Digital-Twins-instance-host-name>"
 ```
-### <a name="option-2-set-up-security-access-for-the-function-app-using-azure-portal"></a>Вариант 2. Настройка безопасного доступа для приложения функции с помощью портал Azure
 
-Управляемое удостоверение, назначенное системой, позволяет ресурсам Azure проходить проверку подлинности в облачных службах (например, Azure Key Vault) без сохранения учетных данных в коде. После включения все необходимые разрешения можно предоставить через Управление доступом на основе ролей в Azure. Жизненный цикл этого типа управляемого удостоверения связан с жизненным циклом этого ресурса. Кроме того, каждый ресурс (например, виртуальная машина) может иметь только одно назначенное системой управляемое удостоверение.
+# <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-В [портал Azure](https://portal.azure.com/)найдите _приложение функции_ в строке поиска с именем приложения функции, созданным ранее. Выберите *приложение-функция* из списка. 
+Выполните следующие действия в [портал Azure](https://portal.azure.com/).
 
-:::image type="content" source="media/how-to-create-azure-function/portal-search-for-function-app.png" alt-text="Снимок экрана портал Azure: имя приложения-функции ищется на панели поиска портала, а результат поиска выделяется.":::
+### <a name="assign-access-role"></a>Назначение роли доступа
 
-В окне приложение функции выберите _удостоверение_ на панели навигации слева, чтобы включить управляемое удостоверение.
-На вкладке _назначенная система_ переключите _состояние_ на вкл. и _Сохраните_ его. Вы увидите всплывающее окно для _включения управляемого удостоверения, назначенного системой_.
-Нажмите кнопку _Да_ . 
+Управляемое удостоверение, назначенное системой, позволяет ресурсам Azure проходить проверку подлинности в облачных службах (например, Azure Key Vault) без сохранения учетных данных в коде. После включения все необходимые разрешения можно будет предоставить через Управление доступом на основе ролей в Azure. Жизненный цикл этого типа управляемого удостоверения связан с жизненным циклом этого ресурса. Кроме того, каждый ресурс может иметь только одно назначенное системой управляемое удостоверение.
 
-:::image type="content" source="media/how-to-create-azure-function/enable-system-managed-identity.png" alt-text="Снимок экрана портал Azure. на странице удостоверение для приложения-функции параметр Включить управляемое удостоверение, назначенный системе, имеет значение Да. Параметр Status имеет значение ON.":::
+1. В [портал Azure](https://portal.azure.com/)найдите приложение функции, введя его имя в строку поиска. Выберите приложение из результатов. 
 
-Вы можете проверить в уведомлениях о том, что функция успешно зарегистрирована в Azure Active Directory.
+    :::image type="content" source="media/how-to-create-azure-function/portal-search-for-function-app.png" alt-text="Снимок экрана портал Azure: имя приложения-функции ищется на панели поиска портала, а результат поиска выделяется.":::
 
-:::image type="content" source="media/how-to-create-azure-function/notifications-enable-managed-identity.png" alt-text="Снимок экрана портал Azure. в списке уведомлений выберите значок колокольчика на верхней панели портала. Имеется уведомление о том, что пользователь включил управляемое удостоверение, назначенное системой.":::
+1. На странице приложение-функция на панели навигации слева выберите _удостоверение_ , чтобы работать с управляемым удостоверением для функции. На странице _назначенные системы_ убедитесь, что для параметра _состояние_ установлено значение **вкл** . (если это не так, установите его сейчас и *Сохраните* изменения).
 
-Также обратите внимание на **идентификатор объекта** , показанный на странице _удостоверений_ , как он будет использоваться в следующем разделе.
+    :::image type="content" source="media/how-to-create-azure-function/verify-system-managed-identity.png" alt-text="Снимок экрана портал Azure: на странице удостоверение для приложения-функции параметр status имеет значение ON." lightbox="media/how-to-create-azure-function/verify-system-managed-identity.png":::
 
-:::image type="content" source="media/how-to-create-azure-function/object-id.png" alt-text="Снимок экрана портал Azure: выделение поля &quot;идентификатор объекта&quot; на странице удостоверений функции Azure.":::
+1. Нажмите кнопку _назначения ролей Azure_ , после чего откроется страница *назначения ролей Azure* .
 
-### <a name="assign-access-roles-using-azure-portal"></a>Назначение ролей доступа с помощью портал Azure
+    :::image type="content" source="media/how-to-create-azure-function/add-role-assignment-1.png" alt-text="Снимок экрана портал Azure. в разделе &quot;разрешения&quot; на странице удостоверений функции Azure выделит кнопку назначения ролей Azure." lightbox="media/how-to-create-azure-function/add-role-assignment-1.png":::
 
-Нажмите кнопку _назначения ролей Azure_ , после чего откроется страница *назначения ролей Azure* . Затем выберите _+ добавить назначение ролей (Предварительная версия)_.
+    Выберите _+ добавить назначение ролей (Предварительная версия)_.
 
-:::image type="content" source="media/how-to-create-azure-function/add-role-assignments.png" alt-text="Снимок экрана портал Azure. в разделе &quot;разрешения&quot; на странице удостоверений функции Azure выделит кнопку назначения ролей Azure.":::
+    :::image type="content" source="media/how-to-create-azure-function/add-role-assignment-2.png" alt-text="Снимок экрана портал Azure: выделение + добавить назначение ролей (Предварительная версия) на странице назначения ролей Azure." lightbox="media/how-to-create-azure-function/add-role-assignment-2.png":::
 
-На открывшейся странице _Добавление назначения ролей (Предварительная версия)_ выберите:
+1. На открывшейся странице _Добавление назначения ролей (Предварительная версия)_ выберите следующие значения:
 
-* _Область_ — группа ресурсов.
-* _Подписка_: выберите подписку Azure.
-* _Группа ресурсов_. Выберите группу ресурсов из раскрывающегося списка.
-* _Роль_: выберите _Azure Digital двойников Data Owner_ в раскрывающемся списке.
+    * **Область** — группа ресурсов.
+    * **Подписка**: выберите подписку Azure.
+    * **Группа ресурсов**. Выберите группу ресурсов из раскрывающегося списка.
+    * **Роль**: выберите _Azure Digital двойников Data Owner_ в раскрывающемся списке.
 
-Затем сохраните сведения, нажав кнопку Save ( _сохранить_ ).
+    Затем сохраните сведения, нажав кнопку Save ( _сохранить_ ).
 
-:::image type="content" source="media/how-to-create-azure-function/add-role-assignment.png" alt-text="Снимок экрана портал Azure: диалоговое окно для добавления нового назначения роли (Предварительная версия). Существуют поля для области, подписки, группы ресурсов и роли.":::
+    :::image type="content" source="media/how-to-create-azure-function/add-role-assignment-3.png" alt-text="Снимок экрана портал Azure: диалоговое окно для добавления нового назначения роли (Предварительная версия). Существуют поля для области, подписки, группы ресурсов и роли.":::
 
-### <a name="configure-application-settings-using-azure-portal"></a>Настройка параметров приложения с помощью портал Azure
+### <a name="configure-application-settings"></a>Настройка параметров приложения
 
 Чтобы сделать URL-адрес своего экземпляра Digital двойников доступным для вашей функции, можно задать для него **переменную среды** . Дополнительные сведения о переменных среды см. в разделе [*Управление приложением функции*](../azure-functions/functions-how-to-use-azure-function-app-settings.md?tabs=portal). Параметры приложения предоставляются как переменные среды для доступа к экземпляру Digital двойников Azure. 
 
 Чтобы задать переменную среды с URL-адресом своего экземпляра, сначала получите URL-адрес, находя имя узла своего экземпляра Azure Digital двойников. Найдите свой экземпляр на панели поиска [портал Azure](https://portal.azure.com) . Затем на левой панели навигации выберите _Обзор_ , чтобы просмотреть _имя узла_. Скопируйте это значение.
 
-:::image type="content" source="media/how-to-create-azure-function/adt-hostname.png" alt-text="Снимок экрана портал Azure: на странице &quot;Обзор&quot; для экземпляра Azure Digital двойников выделяется значение имени узла.":::
+:::image type="content" source="media/how-to-create-azure-function/instance-host-name.png" alt-text="Снимок экрана портал Azure: на странице &quot;Обзор&quot; для экземпляра Azure Digital двойников выделяется значение имени узла.":::
 
-Теперь можно создать параметр приложения, выполнив следующие действия:
+Теперь можно создать параметр приложения, выполнив следующие действия.
 
 1. Найдите приложение функции на панели поиска портала и выберите его из результатов.
-1. Выберите пункт _Конфигурация_ на панели навигации слева, чтобы создать новый параметр приложения.
-1. На вкладке _Параметры приложения_ выберите _+ создать параметр приложения_ .
 
-:::image type="content" source="media/how-to-create-azure-function/portal-search-for-function-app.png" alt-text="Снимок экрана портал Azure: имя приложения-функции ищется на панели поиска портала, а результат поиска выделяется.":::
+    :::image type="content" source="media/how-to-create-azure-function/portal-search-for-function-app.png" alt-text="Снимок экрана портал Azure: имя приложения-функции ищется на панели поиска портала, а результат поиска выделяется.":::
 
-:::image type="content" source="media/how-to-create-azure-function/application-setting.png" alt-text="Снимок экрана портал Azure. на странице конфигурации для приложения-функции будет выделена кнопка для создания нового параметра приложения.":::
+1. На панели навигации слева выберите _Конфигурация_ . На вкладке _Параметры приложения_ выберите _+ создать параметр приложения_.
 
-В открывшемся окне используйте скопированное выше значение имя узла, чтобы создать параметр приложения.
-* **Имя**: ADT_SERVICE_URL
-* **Значение**: https://{ваш-Azure-Digital-двойников-Host-Name}
+    :::image type="content" source="media/how-to-create-azure-function/application-setting.png" alt-text="Снимок экрана портал Azure. на странице конфигурации для приложения-функции будет выделена кнопка для создания нового параметра приложения.":::
 
-Нажмите кнопку _ОК_ , чтобы создать параметр приложения.
+1. В открывшемся окне используйте скопированное выше значение имя узла, чтобы создать параметр приложения.
+    * **Имя**: ADT_SERVICE_URL
+    * **Значение**: https://{ваш-Azure-Digital-двойников-Host-Name}
+    
+    Нажмите кнопку _ОК_ , чтобы создать параметр приложения.
+    
+    :::image type="content" source="media/how-to-create-azure-function/add-application-setting.png" alt-text="Снимок экрана портал Azure. Кнопка &quot;ОК&quot; выделяется после заполнения полей &quot;имя&quot; и &quot;значение&quot; на странице &quot;Добавление и изменение параметров приложения&quot;.":::
 
-:::image type="content" source="media/how-to-create-azure-function/add-application-setting.png" alt-text="Снимок экрана портал Azure. Кнопка &quot;ОК&quot; выделяется после заполнения полей &quot;имя&quot; и &quot;значение&quot; на странице &quot;Добавление и изменение параметров приложения&quot;.":::
+1. После создания параметра вы увидите, что он отображается на вкладке _Параметры приложения_ . Убедитесь, *ADT_SERVICE_URL* появится в списке, а затем сохраните новый параметр приложения, нажав кнопку _сохранить_ .
 
-Параметры приложения можно просмотреть с помощью имени приложения в поле _имя_ . Затем сохраните параметры приложения, нажав кнопку _сохранить_ .
+    :::image type="content" source="media/how-to-create-azure-function/application-setting-save-details.png" alt-text="Снимок экрана портал Azure: страница &quot;Параметры приложения&quot; с выделенным параметром &quot;новый ADT_SERVICE_URL&quot;. Кнопка сохранить также выделяется.":::
 
-:::image type="content" source="media/how-to-create-azure-function/application-setting-save-details.png" alt-text="Снимок экрана портал Azure: страница &quot;Параметры приложения&quot; с выделенным параметром &quot;новый ADT_SERVICE_URL&quot;. Кнопка сохранить также выделяется.":::
+1. Чтобы изменения параметров приложения вступили в силу, необходимо перезапустить приложение, поэтому нажмите кнопку _продолжить_ , чтобы перезапустить приложение при появлении соответствующего запроса.
 
-Чтобы изменения параметров приложения вступили в силу, потребуется перезапуск приложения. Нажмите кнопку _продолжить_ , чтобы перезапустить приложение.
+    :::image type="content" source="media/how-to-create-azure-function/save-application-setting.png" alt-text="Снимок экрана портал Azure. Обратите внимание, что все изменения параметров приложения с перезапуском приложения. Кнопка продолжить выделена.":::
 
-:::image type="content" source="media/how-to-create-azure-function/save-application-setting.png" alt-text="Снимок экрана портал Azure. Обратите внимание, что все изменения параметров приложения с перезапуском приложения. Кнопка продолжить выделена.":::
-
-Вы можете просмотреть параметры приложения, щелкнув значок _уведомления_ . Если параметр приложения не создан, можно повторно добавить параметр приложения, выполнив описанный выше процесс.
-
-:::image type="content" source="media/how-to-create-azure-function/notifications-update-web-app-settings.png" alt-text="Снимок экрана портал Azure. в списке уведомлений выберите значок колокольчика на верхней панели портала. Существует уведомление о том, что параметры веб-приложения успешно обновлены.":::
+---
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

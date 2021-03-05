@@ -11,12 +11,12 @@ metadata:
   author: PatrickFarley
   ms.author: pafarley
   ms.date: 09/05/2019
-  ms.openlocfilehash: bd06b7cc04f47b517b7dc7913a2716e132b39941
-  ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+  ms.openlocfilehash: 0e054fdab0e20285f017075cfaf4d3c05570af88
+  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "100520499"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102178037"
 landingContent:
 - title: Сведения о Пользовательском визуальном распознавании
   linkLists:
@@ -96,8 +96,10 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: REST API
-      url: https://docs.microsoft.com/rest/api/custom-vision/
+    - text: API обучения
+      url: https://go.microsoft.com/fwlink/?linkid=865446
+    - text: API прогнозирования
+      url: https://go.microsoft.com/fwlink/?linkid=865445
     - text: Пакет SDK для .NET
       url: /dotnet/api/overview/azure/cognitiveservices/client/customvision?view=azure-dotnet
     - text: Пакет SDK для Python
@@ -111,7 +113,7 @@ landingContent:
     - text: Azure PowerShell
       url: /powershell/module/az.cognitiveservices/#cognitive_services
     - text: Интерфейс командной строки Azure (CLI)
-      url: /cli/azure/cognitiveservices?view=azure-cli-latest
+      url: /cli/azure/cognitiveservices
 - title: Справка и обратная связь
   linkLists:
   - linkListType: reference

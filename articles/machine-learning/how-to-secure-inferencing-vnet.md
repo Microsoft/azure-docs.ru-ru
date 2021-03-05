@@ -11,12 +11,12 @@ ms.author: peterlu
 author: peterclu
 ms.date: 10/23/2020
 ms.custom: contperf-fy20q4, tracking-python, contperf-fy21q1, devx-track-azurecli
-ms.openlocfilehash: 80abe036ef4a08f7ed6f0f19cffc2abde70a6ea9
-ms.sourcegitcommit: 706e7d3eaa27f242312d3d8e3ff072d2ae685956
+ms.openlocfilehash: 190f44e95c96a2aee60e1b28f8817a74d3e06e3f
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "99981312"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102178666"
 ---
 # <a name="secure-an-azure-machine-learning-inferencing-environment-with-virtual-networks"></a>Обеспечение безопасности Машинное обучение Azure окружения с помощью виртуальных сетей
 
@@ -34,7 +34,6 @@ ms.locfileid: "99981312"
 > - Частный кластер AKS
 > - Кластер AKS с закрытой ссылкой
 > - Экземпляры контейнеров Azure (ACI)
-
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -58,7 +57,6 @@ ms.locfileid: "99981312"
 > [!div class="checklist"]
 > * Выполните необходимые условия в статье [Настройка расширенной сети в службе Azure Kubernetes (AKS)](../aks/configure-azure-cni.md#prerequisites).
 > * Экземпляр AKS и виртуальная сеть должны находиться в одном регионе. Если вы защищаете учетные записи хранения Azure, используемые рабочей областью в виртуальной сети, они должны быть в той же виртуальной сети, что и экземпляр AKS.
-
 
 Чтобы добавить AKS в виртуальную сеть в рабочую область, выполните следующие действия.
 
@@ -274,7 +272,7 @@ aks_target.wait_for_completion(show_output = True)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Эта статья является третьей частью серии виртуальных сетей из четырех частей. Ознакомьтесь с остальными статьями, чтобы узнать, как защитить виртуальную сеть.
+Эта статья состоит из четырех частей серии виртуальных сетей из пяти частей. Ознакомьтесь с остальными статьями, чтобы узнать, как защитить виртуальную сеть.
 
 * [Часть 1. Обзор виртуальной сети](how-to-network-security-overview.md)
 * [Часть 2. Защита ресурсов рабочей области](how-to-secure-workspace-vnet.md)

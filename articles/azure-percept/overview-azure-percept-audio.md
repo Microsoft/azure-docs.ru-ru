@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 02/18/2021
 ms.custom: template-concept
-ms.openlocfilehash: 8884663b3f0e861e62f48c3aab680f0f31e74428
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 8f84fb6bf37a3d3b61f4cad2c89745447aa88a36
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102098389"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102179397"
 ---
 # <a name="introduction-to-azure-percept-audio"></a>Введение в службу Перцепт Azure Audio
 
@@ -60,12 +60,12 @@ Azure Percept Audio passes the audio input to the Azure Percept DK carrier board
 ## <a name="getting-started"></a>Начало работы
 
 - [Сборка Azure Перцепт DK](./quickstart-percept-dk-unboxing.md)
-- [Завершение настройки Azure Percept DK](./quickstart-percept-dk-set-up.md)
+- [Завершение процесса установки Azure Перцепт DK](./quickstart-percept-dk-set-up.md)
 - [Подключение устройства Azure Перцепт Audio к DevKit](./quickstart-percept-audio-setup.md)
 
 ## <a name="build-a-no-code-prototype"></a>Создание прототипа без кода
 
-Создавайте [речевое решение без кода](./tutorial-no-code-speech.md) с помощью шаблонов голосового помощника по Azure перцепт для сферы здравоохранения, медицинского обслуживания, инвентаризации и автомобильных сценариев.
+Создавайте [речевое решение без кода](./tutorial-no-code-speech.md) в [Azure перцепт Studio](https://go.microsoft.com/fwlink/?linkid=2135819) с помощью шаблонов голосового помощника перцепт для бизнес-целей, здравоохранения, инвентаризации и автомобильных сценариев.
 
 ### <a name="manage-your-no-code-speech-solution"></a>Управляйте своим речевым решением без кода
 

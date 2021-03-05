@@ -10,12 +10,12 @@ author: cartacioS
 ms.author: sacartac
 ms.date: 10/27/2020
 ms.custom: automl
-ms.openlocfilehash: ee9267637c5e3250bfcd543ca46c39d513725819
-ms.sourcegitcommit: 3af12dc5b0b3833acb5d591d0d5a398c926919c8
+ms.openlocfilehash: 6ed9b316fceeb30a775e2e0d90e7bbb0a07278cd
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98072230"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102180503"
 ---
 # <a name="what-is-automated-machine-learning-automl"></a>Что такое автоматизированное машинное обучение (AutoML)?
 
@@ -116,7 +116,7 @@ ms.locfileid: "98072230"
 
 В каждом эксперименте по автоматизированному машинному обучению данные автоматически масштабируются или нормализуются, что способствует эффективному выполнению алгоритмов. Во время обучения модели для каждой модели будет применен один из следующих методов масштабирования или нормализации. Узнайте, как Аутомл помогает [предотвратить избыточные и несбалансированные данные](concept-manage-ml-pitfalls.md) в моделях.
 
-|Масштабирование&nbsp;&&nbsp;нормализация| Описание |
+|&nbsp; & &nbsp; Обработка масштабирования| Описание |
 | ------------- | ------------- |
 | [StandardScaleWrapper](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)  | Стандартизация признаков путем удаления среднего и масштабирования до вариантности единиц  |
 | [MinMaxScalar](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)  | Преобразование признаков путем масштабирования каждого признака по минимальному и максимальному значениям в столбце.  |

@@ -4,13 +4,13 @@ description: В этой статье описывается интеграци�
 author: uhabiba04
 ms.topic: article
 ms.date: 11/04/2019
-ms.author: v-umha
-ms.openlocfilehash: ef74c4b799c3a24636f88a8e704bf726104b034f
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.author: v-ummehabiba
+ms.openlocfilehash: 8d1b8203fa50609daf59431c2cfecba68eba52b1
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96001598"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102179754"
 ---
 # <a name="sensor-partner-integration"></a>Интеграция с партнерскими датчиками
 

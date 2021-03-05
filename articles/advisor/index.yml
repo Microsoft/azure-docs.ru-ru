@@ -8,12 +8,12 @@ metadata:
   author: rboucher
   ms.author: robb
   ms.date: 10/16/2019
-  ms.openlocfilehash: e7cf35654bec7302423a62e66a39651ad1745651
-  ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+  ms.openlocfilehash: ae106903af027630968adf2f87962d1ef20e5de8
+  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/09/2020
-  ms.locfileid: "75768662"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102178870"
 landingContent:
 - title: Сведения о Помощнике по Azure
   linkLists:
@@ -36,7 +36,7 @@ landingContent:
   - linkListType: reference
     links:
     - text: Общий языковой интерфейс (CLI)
-      url: /cli/azure/advisor?view=azure-cli-latest
+      url: /cli/azure/advisor
     - text: PowerShell
       url: /powershell/module/az.advisor/?view=azps-1.2.0
     - text: REST API

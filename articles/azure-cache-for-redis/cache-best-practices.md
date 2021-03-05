@@ -6,12 +6,12 @@ ms.service: cache
 ms.topic: conceptual
 ms.date: 01/06/2020
 ms.author: joncole
-ms.openlocfilehash: 1b62777ec647efc6d5aded573e681cadd6475b47
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.openlocfilehash: 9754a043c90c01f889be9639d2d045fb1929de17
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97654801"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102178122"
 ---
 # <a name="best-practices-for-azure-cache-for-redis"></a>Рекомендации по использованию Кэша Azure для Redis 
 Следуя этим рекомендациям, вы сможете повысить производительность и экономичное использование кэша Azure для экземпляра Redis.
@@ -51,7 +51,7 @@ ms.locfileid: "97654801"
 ## <a name="client-library-specific-guidance"></a>Специальные рекомендации для клиентской библиотеки
  * [StackExchange. Redis (.NET)](https://gist.github.com/JonCole/925630df72be1351b21440625ff2671f#file-redis-bestpractices-stackexchange-redis-md)
  * [Java — какой клиент следует использовать?](https://gist.github.com/warrenzhu25/1beb02a09b6afd41dff2c27c53918ce7#file-azure-redis-java-best-practices-md)
- * [Салат (Java)](https://gist.github.com/warrenzhu25/181ccac7fa70411f7eb72aff23aa8a6a#file-azure-redis-lettuce-best-practices-md)
+ * [Салат (Java)](https://github.com/Azure/AzureCacheForRedis/blob/main/Lettuce%20Best%20Practices.md)
  * [Jedis (Java)](https://gist.github.com/JonCole/925630df72be1351b21440625ff2671f#file-redis-bestpractices-java-jedis-md)
  * [Node.js](https://gist.github.com/JonCole/925630df72be1351b21440625ff2671f#file-redis-bestpractices-node-js-md)
  * [PHP](https://gist.github.com/JonCole/925630df72be1351b21440625ff2671f#file-redis-bestpractices-php-md)
@@ -73,6 +73,8 @@ ms.locfileid: "97654801"
  * Клиентская виртуальная машина, используемая для тестирования, должна находиться **в том же регионе** , что и экземпляр кэша Redis.
  * **Мы рекомендуем использовать серию виртуальных машин Dv2** для клиента, так как они имеют лучшее оборудование и дают лучшие результаты.
  * Убедитесь, что используемая виртуальная машина клиента имеет **по крайней мере столько вычислений и пропускной способности* , как тестируемый кэш. 
+ * **Проверьте условия отработки отказа** в кэше. Важно убедиться, что вы не проверите производительность кэша только в условиях устойчивого состояния. Также протестируйте условия отработки отказа и измерьте нагрузку на кэш ЦП/сервера в течение этого времени. Вы можете инициировать отработку отказа, [перезагрузив основной узел](cache-administration.md#reboot). Это позволит увидеть, как приложение ведет себя с точки зрения пропускной способности и задержки во время отработки отказа (происходит во время обновления и может произойти во время незапланированного события). В идеале вы, дон'т'т, хотели бы видеть пиковую нагрузку ЦП/сервера более чем на 80% даже во время отработки отказа, так как это может повлиять на производительность.
+ * **Premium P2 и более поздних версий** размещаются на виртуальных машинах с 4 или более ядрами. Это полезно для распределения рабочей нагрузки шифрования и расшифровки TLS по нескольким ядрам, чтобы сократить общую загрузку ЦП.  [Дополнительные сведения о размерах и ядрах виртуальных машин см. здесь.](cache-planning-faq.md#azure-cache-for-redis-performance)
  * **Включите VRSS** на клиентском компьютере, если вы используете Windows.  [Щелкните здесь, чтобы узнать больше](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383582(v=ws.11)).  Пример сценария PowerShell:
      >PowerShell — ExecutionPolicy без ограничений Enable-NetAdapterRSS-Name (Get-NetAdapter). Безымян 
 

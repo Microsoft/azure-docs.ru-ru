@@ -13,12 +13,12 @@ ms.workload: infrastructure
 ms.date: 07/04/2019
 ms.author: juergent
 ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: a3c4026616b19656c708f4dd4ac8a419f7774198
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: f77c16f16ddac01329a8315893021767a4120295
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101668628"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102179244"
 ---
 # <a name="operating-system-upgrade"></a>Обновление операционной системы
 В этом документе описывается обновление операционной системы в HANA (крупные экземпляры).
@@ -65,6 +65,8 @@ ms.locfileid: "101668628"
   |   SuSE        |  SLES 12 с пакетом обновления 3 (SP3)            |   3.2.3 i           |  2.3.0.43    |   1.6.0.36   |
   |   SuSE        |  SLES 12 с пакетом обновления 5 (SP5)            |   3.2.3 i           |  4.0.0.8     |   2.0.0.60   |
   |   Red Hat     |  RHEL 7.2;               |   3.1.3 h           |  2.3.0.39    |   1.6.0.34   |
+  |   Red Hat     |  RHEL 7.6               |   3.2.3 i           |  3.1.137.5   |   2.0.0.50   |
+  |   Red Hat     |  RHEL 7.6               |   4.1.1 б           |  4.0.0.8     |   2.0.0.60   |
  
 
 ### <a name="commands-for-driver-upgrade-and-to-clean-old-rpm-packages"></a>Команды для обновления драйверов и очистки старых пакетов RPM

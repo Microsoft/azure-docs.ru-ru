@@ -7,14 +7,15 @@ ms.reviewer: maghan
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 10/25/2020
-ms.openlocfilehash: f5bc9951229c61dd988f44b06b8fcd40881226ae
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: b961939516ac4848da00a3cd01c754c90da805cb
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100393706"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177731"
 ---
 # <a name="create-a-trigger-that-runs-a-pipeline-on-a-tumbling-window"></a>Создание триггера, который запускает конвейер в "переворачивающемся" окне
+
 [!INCLUDE[appliesto-adf-asa-md](includes/appliesto-adf-asa-md.md)]
 
 Эта статья содержит шаги по созданию, запуску и мониторингу триггера "переворачивающегося" окна. Дополнительные сведения о триггерах и поддерживаемых типах см. в статье [Выполнение конвейера и триггеры в фабрике данных Azure](concepts-pipeline-execution-triggers.md).
@@ -220,7 +221,7 @@ ms.locfileid: "100393706"
     ```powershell
     Set-AzDataFactoryV2Trigger -ResourceGroupName $ResourceGroupName -DataFactoryName $DataFactoryName -Name "MyTrigger" -DefinitionFile "C:\ADFv2QuickStartPSH\MyTrigger.json"
     ```
-    
+
 3. Убедитесь, что состояние триггера **остановлено** с помощью командлета **Get-AzDataFactoryV2Trigger** :
 
     ```powershell
@@ -244,10 +245,11 @@ ms.locfileid: "100393706"
     ```powershell
     Get-AzDataFactoryV2TriggerRun -ResourceGroupName $ResourceGroupName -DataFactoryName $DataFactoryName -TriggerName "MyTrigger" -TriggerRunStartedAfter "2017-12-08T00:00:00" -TriggerRunStartedBefore "2017-12-08T01:00:00"
     ```
-    
+
 Сведения о том, как отслеживать выполнения триггера и конвейера на портале Azure, см. в разделе [Мониторинг конвейера](quickstart-create-data-factory-resource-manager-template.md#monitor-the-pipeline).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения см. в руководстве по [выполнению конвейера и использованию триггеров](concepts-pipeline-execution-triggers.md#trigger-execution).
-* [Создание зависимости триггера, который запускает конвейер в "переворачивающемся" окне](tumbling-window-trigger-dependency.md)
+* [Создание зависимости триггера окна "переворачивающегося"](tumbling-window-trigger-dependency.md).
+* Сведения о ссылках на метаданные триггера в конвейере см. в разделе [метаданные триггера справочника при выполнении конвейера](how-to-use-trigger-parameterization.md)

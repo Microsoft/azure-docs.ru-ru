@@ -9,12 +9,12 @@ ms.subservice: custom-vision
 ms.topic: how-to
 ms.date: 09/11/2020
 ms.author: pafarley
-ms.openlocfilehash: 43cd03e8f4a66d18adc33c943481002ff7b326d3
-ms.sourcegitcommit: 1140ff2b0424633e6e10797f6654359947038b8d
+ms.openlocfilehash: d889eab429b56a9f4e01684e03c67d394d33472b
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97813213"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102178020"
 ---
 # <a name="integrate-azure-storage-for-notifications-and-backup"></a>Интеграция службы хранилища Azure с уведомлениями и резервным копированием
 
@@ -29,6 +29,7 @@ ms.locfileid: "97813213"
 
 - Ресурс Пользовательское визуальное распознавание в Azure. Если у вас ее нет, перейдите к портал Azure и [Создайте новый ресурс пользовательское визуальное распознавание](https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=microsoft_azure_cognitiveservices_customvision#create/Microsoft.CognitiveServicesCustomVision?azure-portal=true). В настоящее время эта функция не поддерживает ресурс службы "непонятный" (все в одном ключе).
 - Учетная запись хранения Azure с контейнером больших двоичных объектов. Выполните [упражнения 1 лаборатории службы хранилища Azure](https://github.com/Microsoft/computerscience/blob/master/Labs/Azure%20Services/Azure%20Storage/Azure%20Storage%20and%20Cognitive%20Services%20(MVC).md#Exercise1) , если вам нужна помощь с этим шагом.
+* [PowerShell версии 6.0 +](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1)или аналогичное приложение командной строки.
 
 ## <a name="set-up-azure-storage-integration"></a>Настройка интеграции службы хранилища Azure
 

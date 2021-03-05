@@ -13,12 +13,12 @@ metadata:
   ms.date: 01/29/2021
   featureFlags:
   - clicktale
-  ms.openlocfilehash: 2503d6f54efaa32ab76a9321543815e36f37cdcb
-  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.openlocfilehash: dbc16f849dd8e0f97c700905fac046edbd0f0c70
+  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/03/2021
-  ms.locfileid: "101709976"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102179125"
 highlightedContent:
   items:
   - title: Руководство по началу работы для разработчиков Azure
@@ -879,7 +879,7 @@ productDirectory:
     azureCategories:
     - integration
     url: service-bus-messaging/index.yml
-  - title: Azure Digital Twins (предварительная версия)
+  - title: Azure Digital Twins
     summary: Создавайте решения пространственной аналитики нового поколения для Интернета вещей
     imageSrc: https://static.docs.com/ui/media/product/azure/digital-twins.svg
     azureCategories:

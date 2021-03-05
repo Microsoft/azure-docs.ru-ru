@@ -43,10 +43,6 @@
           href: tutorial-sql-server-to-managed-instance.md
         - name: в Управляемый экземпляр SQL Azure (подключенный режим)
           href: tutorial-sql-server-managed-instance-online.md
-    - name: Миграция из RDS SQL Server
-      items:
-        - name: в Базу данных Azure SQL или Управляемый экземпляр SQL
-          href: tutorial-rds-sql-server-azure-sql-and-managed-instance-online.md
     - name: Миграция из MySQL
       items:
         - name: в Базу данных Azure для MySQL
@@ -137,8 +133,6 @@
               href: known-issues-dms-hybrid-mode.md
         - name: Известные проблемы с миграцией
           items:
-            - name: База данных SQL
-              href: known-issues-azure-sql-online.md
             - name: Управляемый экземпляр SQL
               href: known-issues-azure-sql-db-managed-instance-online.md
             - name: База данных Azure для MySQL

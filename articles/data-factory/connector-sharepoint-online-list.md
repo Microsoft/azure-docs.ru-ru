@@ -6,12 +6,12 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 05/19/2020
 ms.author: jingwang
-ms.openlocfilehash: 3f05c90ba3c7e6b47009cbb597c56dac8a01427a
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: f8074b69b97a6ef96837e73a1082d2deb67084d9
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100393434"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177867"
 ---
 # <a name="copy-data-from-sharepoint-online-list-by-using-azure-data-factory"></a>Копирование данных из списка SharePoint Online с помощью Фабрики данных Azure
 [!INCLUDE[appliesto-adf-asa-md](includes/appliesto-adf-asa-md.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "100393434"
 | servicePrincipalId  | Идентификатор приложения (клиента), зарегистрированного в Azure Active Directory. | Да          |
 | servicePrincipalKey | Ключ приложения. Пометьте это поле как **SecureString**, чтобы безопасно хранить его в фабрике данных, или [добавьте ссылку на секрет, хранящийся в Azure Key Vault](store-credentials-in-key-vault.md). | Да          |
 | tenantId            | Идентификатор клиента, установленный для приложения.          | Да          |
-| connectVia          | [Среда выполнения интеграции](concepts-integration-runtime.md), используемая для подключения к хранилищу данных. Дополнительные сведения см. в разделе [Предварительные условия](#prerequisites) ранее в этой статье. Если не указано другое, по умолчанию используется интегрированная Azure Integration Runtime. | нет           |
+| connectVia          | [Среда выполнения интеграции](concepts-integration-runtime.md), используемая для подключения к хранилищу данных. Дополнительные сведения см. в разделе [Предварительные условия](#prerequisites) ранее в этой статье. Если не указано другое, по умолчанию используется интегрированная Azure Integration Runtime. | Нет           |
 
 **Пример**.
 
@@ -232,6 +232,9 @@ ms.locfileid: "100393434"
         - **Метод запроса**: GET
         - **Дополнительный заголовок**: используйте выражение `@{concat('Authorization: Bearer ', activity('<Web-activity-name>').output.access_token)}`, в котором в качестве заголовка авторизации используется токен носителя, созданный вышестоящим веб-действием. Замените имя веб-действия.
     - Настройте приемник действия копирования обычным образом.
+
+> [!NOTE]
+> Даже если приложение Azure AD имеет `FullControl` разрешения на доступ к SharePoint Online, нельзя копировать файлы из библиотек документов с включенным IRM.
 
 ## <a name="lookup-activity-properties"></a>Свойства действия поиска
 

@@ -12,12 +12,12 @@ author: jovanpop-msft
 ms.author: jovanpop
 ms.reviewer: sstein
 ms.date: 09/21/2020
-ms.openlocfilehash: f58811411a447eae4ff9a5c0fd2a9888b4a39a34
-ms.sourcegitcommit: eb546f78c31dfa65937b3a1be134fb5f153447d6
+ms.openlocfilehash: 9e8ef5bf9d5d8000bfdd581cd7e9ae1a1a775fc9
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99428679"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102178139"
 ---
 # <a name="azure-sql-managed-instance-frequently-asked-questions-faq"></a>Часто задаваемые вопросы об Управляемом экземпляре SQL Azure
 [!INCLUDE[appliesto-sqlmi](../includes/appliesto-sqlmi.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "99428679"
 
 Сведения о дефектах продукта и известных проблемах см. в статье [Известные проблемы](../database/doc-changes-updates-release-notes.md#known-issues).
 
-## <a name="new-features"></a>новые функции;
+## <a name="new-features"></a>Новые функции
 
 **Где можно найти новейшие функции и функции в общедоступной предварительной версии?**
 
@@ -94,7 +94,7 @@ ms.locfileid: "99428679"
 
 **Как масштабировать управляемый экземпляр?**
 
-Вы можете масштабировать управляемый экземпляр на основе шаблонов [портал Azure](../database/service-tiers-vcore.md?tabs=azure-portal#selecting-a-hardware-generation), [PowerShell](/archive/blogs/sqlserverstorageengine/change-size-azure-sql-managed-instance-using-powershell), [Azure CLI](/cli/azure/sql/mi?view=azure-cli-latest#az-sql-mi-update&preserve-view=true) или [ARM](/archive/blogs/sqlserverstorageengine/updating-azure-sql-managed-instance-properties-using-arm-templates).
+Вы можете масштабировать управляемый экземпляр на основе шаблонов [портал Azure](../database/service-tiers-vcore.md?tabs=azure-portal#selecting-a-hardware-generation), [PowerShell](/archive/blogs/sqlserverstorageengine/change-size-azure-sql-managed-instance-using-powershell), [Azure CLI](/cli/azure/sql/mi#az-sql-mi-update) или [ARM](/archive/blogs/sqlserverstorageengine/updating-azure-sql-managed-instance-properties-using-arm-templates).
 
 **Можно ли переместить Управляемый экземпляр из одного региона в другой?**
 
@@ -102,7 +102,7 @@ ms.locfileid: "99428679"
 
 **Как удалить Управляемый экземпляр?**
 
-Вы можете удалить управляемые экземпляры с помощью портал Azure, [PowerShell](/powershell/module/az.sql/remove-azsqlinstance?preserve-view=true&view=azps-4.3.0), [Azure CLI](/cli/azure/sql/mi?view=azure-cli-latest#az-sql-mi-delete&preserve-view=true) или [Диспетчер ресурсов интерфейсов API](/rest/api/sql/managedinstances/delete).
+Вы можете удалить управляемые экземпляры с помощью портал Azure, [PowerShell](/powershell/module/az.sql/remove-azsqlinstance?preserve-view=true&view=azps-4.3.0), [Azure CLI](/cli/azure/sql/mi#az-sql-mi-delete) или [Диспетчер ресурсов интерфейсов API](/rest/api/sql/managedinstances/delete).
 
 **Сколько времени занимает создание или обновление экземпляра или восстановление базы данных?**
 
@@ -483,7 +483,7 @@ SQL Управляемый экземпляр предлагает [модель
 | Максимальный срок действия пароля. | 42 дней |
 | Минимальный срок действия пароля. | 1 день |
 | Минимальная длина пароля | 10 символов |
-| Пароль должен соответствовать требованиям к сложности | Включено |
+| Пароль должен соответствовать требованиям к сложности | Активировано |
 
 **Можно ли отключить сложность и срок действия пароля в SQL Управляемый экземпляр на уровне входа?**
 

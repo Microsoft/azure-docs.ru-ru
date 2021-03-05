@@ -5,15 +5,15 @@ services: virtual-machines
 author: albecker1
 ms.service: virtual-machines
 ms.topic: include
-ms.date: 02/12/2021
+ms.date: 03/04/2021
 ms.author: albecker1
 ms.custom: include file
-ms.openlocfilehash: 54c29d76757916a8eea54af16babdae21b809a19
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a2f6a3fd8d36bb54773db21e3d36dab0060bae57
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101750267"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102178397"
 ---
 ## <a name="disk-level-bursting"></a>Разбивка на дисковый уровень
 
@@ -63,15 +63,14 @@ ms.locfileid: "101750267"
 
 Разбивка по кредиту доступна для размеров дисков P20 и меньше во всех регионах общедоступных, правительственных и китайских облаков Azure. По умолчанию нагрузка на диск включается для всех новых и существующих развертываний поддерживаемых размеров дисков. Для ускорения на уровне виртуальной машины используется балансировка нагрузки на основе кредита.
 
-### <a name="virtual-machine-level-bursting"></a>Пакетная передача на уровне виртуальной машины
-Поддержка ускорения на уровне виртуальной машины включена во всех регионах общедоступного облака на основе поддерживаемых размеров: 
-- [Серия Lsv2](../articles/virtual-machines/lsv2-series.md)
+## <a name="virtual-machine-level-bursting"></a>Пакетная передача на уровне виртуальной машины
 
-Кроме того, в западной центральной части США доступно выполнение пакетов на уровне виртуальной машины для следующих поддерживаемых размеров:
+Для разбивки на уровне виртуальной машины используется только модель на основе кредита. она включена по умолчанию для всех виртуальных машин, которые ее поддерживают.
+
+Передача на уровне виртуальной машины включена во всех регионах общедоступного облака Azure на основе поддерживаемых размеров: 
+- [Серия Lsv2](../articles/virtual-machines/lsv2-series.md)
 - [Серии Dv3 и Dsv3](../articles/virtual-machines/dv3-dsv3-series.md)
 - [Серии Ev3 и Esv3](../articles/virtual-machines/ev3-esv3-series.md)
-
-По умолчанию для виртуальных машин, поддерживающих эту возможность, включена разбивка на пакеты.
 
 ## <a name="bursting-flow"></a>Поток пакета
 

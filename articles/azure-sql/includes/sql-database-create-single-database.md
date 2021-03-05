@@ -6,12 +6,12 @@ ms.topic: include
 ms.date: 03/10/2020
 ms.author: sstein
 ms.reviewer: vanto
-ms.openlocfilehash: 57f504b15c0a9c72a2cb0f17b486846f44171a25
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: c7bd942b427bdbd2d8184f712f97dd2a0a57fa90
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101682420"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102178084"
 ---
 На этом шаге вы создадите [логический сервер SQL Server](../database/logical-servers.md) и [отдельную базу данных](../database/single-database-overview.md), в которой используются образцы данных AdventureWorksLT. Базу данных можно создать с помощью меню и экранов портала Azure либо с помощью Azure CLI или сценария PowerShell в Azure Cloud Shell.
 
@@ -151,11 +151,11 @@ az sql db create \
 
 | Get-Help | Описание |
 |---|---|
-| [az account set](/cli/azure/account?view=azure-cli-latest#az-account-set&preserve-view=true) | Позволяет указать подписку в качестве текущей активной подписки. |
+| [az account set](/cli/azure/account#az-account-set) | Позволяет указать подписку в качестве текущей активной подписки. |
 | [az group create](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
 | [az sql server create](/cli/azure/sql/server#az-sql-server-create) | Создает сервер, на котором размещены базы данных и эластичные пулы. |
 | [az sql server firewall-rule create](/cli/azure/sql/server/firewall-rule##az-sql-server-firewall-rule-create) | Создает правило брандмауэра на уровне сервера. |
-| [az sql db create](/cli/azure/sql/db#az-sql-db-create?view=azure-cli-latest&preserve-view=true) | Создает базу данных. |
+| [az sql db create](/cli/azure/sql/db#az-sql-db-create) | Создает базу данных. |
 
 Дополнительные примеры Azure CLI для базы данных SQL Azure см. в разделе [Примеры для Azure CLI](../database/az-cli-script-samples-content-guide.md).
 

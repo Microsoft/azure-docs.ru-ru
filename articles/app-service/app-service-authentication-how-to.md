@@ -4,12 +4,12 @@ description: Научитесь настраивать функцию прове
 ms.topic: article
 ms.date: 07/08/2020
 ms.custom: seodec18, devx-track-azurecli
-ms.openlocfilehash: 4f2f43b142b290d29a4a90e504422b6c9ba2739c
-ms.sourcegitcommit: 484f510bbb093e9cfca694b56622b5860ca317f7
+ms.openlocfilehash: 50587feff29e1c02a639d63d0c99156dcec4f68e
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98630333"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102180876"
 ---
 # <a name="advanced-usage-of-authentication-and-authorization-in-azure-app-service"></a>Расширенное использование проверки подлинности и авторизации в Службе приложений Azure
 
@@ -401,7 +401,7 @@ az webapp auth update --resource-group <group_name> --name <app_name> --token-re
 
 В настоящее время API v2 не поддерживает учетную запись Майкрософт в качестве отдельного поставщика. Вместо этого он использует объединенную [платформу Microsoft Identity](../active-directory/develop/v2-overview.md) для входа пользователей с личными учетными записями Майкрософт. При переключении на API v2 конфигурация Azure Active Directory v1 используется для настройки поставщика платформы удостоверений Майкрософт.
 
-Если существующая конфигурация содержит поставщик учетных записей Майкрософт и не содержит поставщика Azure Active Directory, можно переключить конфигурацию на поставщик Azure Active Directory, а затем выполнить миграцию. Выполните указанные ниже действия.
+Если существующая конфигурация содержит поставщик учетных записей Майкрософт и не содержит поставщика Azure Active Directory, можно переключить конфигурацию на поставщик Azure Active Directory, а затем выполнить миграцию. Для этого выполните следующие действия.
 
 1. Перейдите к [**Регистрация приложений**](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) в портал Azure и найдите регистрацию, связанную с поставщиком учетной записи Майкрософт. Он может находиться в заголовке "приложения из личной учетной записи".
 1. Перейдите на страницу проверки подлинности для регистрации. В разделе "URI перенаправления" должна отобразиться запись, которая заканчивается на `/.auth/login/microsoftaccount/callback` . Скопируйте этот URI.
@@ -648,7 +648,7 @@ az webapp auth update --resource-group <group_name> --name <app_name> --token-re
 
 ##### <a name="from-the-azure-cli"></a>Использование Azure CLI
 
-С помощью Azure CLI просмотрите текущую версию по промежуточного слоя с помощью команды [AZ webapp auth Показать](/cli/azure/webapp/auth?view=azure-cli-latest&preserve-view=true#az-webapp-auth-show) .
+С помощью Azure CLI просмотрите текущую версию по промежуточного слоя с помощью команды [AZ webapp auth Показать](/cli/azure/webapp/auth#az-webapp-auth-show) .
 
 ```azurecli-interactive
 az webapp auth show --name <my_app_name> \
@@ -679,7 +679,7 @@ az webapp auth show --name <my_app_name> \
 
 #### <a name="update-the-current-runtime-version"></a>Обновление текущей версии среды выполнения
 
-С помощью Azure CLI можно обновить `runtimeVersion` параметр в приложении с помощью команды [AZ webapp auth Update](/cli/azure/webapp/auth?view=azure-cli-latest&preserve-view=true#az-webapp-auth-update) .
+С помощью Azure CLI можно обновить `runtimeVersion` параметр в приложении с помощью команды [AZ webapp auth Update](/cli/azure/webapp/auth#az-webapp-auth-update) .
 
 ```azurecli-interactive
 az webapp auth update --name <my_app_name> \

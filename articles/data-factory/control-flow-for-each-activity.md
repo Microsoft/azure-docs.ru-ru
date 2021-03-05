@@ -7,12 +7,12 @@ ms.reviewer: maghan
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/23/2019
-ms.openlocfilehash: c59108752677fc33e28578c3c679be24108806d5
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: aeabd74117f99c7cac9bde0eda02b9627caf0804
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100385614"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177796"
 ---
 # <a name="foreach-activity-in-azure-data-factory"></a>Действие ForEach в фабрике данных Azure
 [!INCLUDE[appliesto-adf-asa-md](includes/appliesto-adf-asa-md.md)]
@@ -483,6 +483,7 @@ batchCount | Число пакетов, которое должно исполь
 |---|---|
 | Не вкладывайте цикл ForEach в другой цикл ForEach (или в цикл Until). | Разработайте двухуровневый конвейер, где внешний конвейер с внешним циклом ForEach выполняет итерацию по внутреннему конвейеру с вложенным циклом. |
 | Количество операций параллельной обработки `batchCount` для действия ForEach не может превышать 50, максимальное число элементов — 100 000. | Разработайте двухуровневый конвейер, где внешний конвейер с действием ForEach выполняет итерацию по внутреннему конвейеру. |
+| SetVariable нельзя использовать внутри действия ForEach, которое выполняется параллельно, так как переменные являются глобальными для всего конвейера, они не входят в область ForEach или любое другое действие. | Рассмотрите возможность использования последовательного ForEach или Execute конвейер внутри ForEach (переменная или параметр, обрабатываемые в дочернем конвейере).|
 | | |
 
 ## <a name="next-steps"></a>Дальнейшие действия

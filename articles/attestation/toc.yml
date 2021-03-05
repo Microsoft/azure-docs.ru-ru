@@ -56,7 +56,7 @@
     - name: Azure PowerShell
       href: /powershell/module/az.attestation/?view=azps-5.0.0#attestation
     - name: Azure CLI
-      href: /cli/azure/ext/attestation/attestation?view=azure-cli-latest
+      href: /cli/azure/ext/attestation/attestation
     - name: Библиотека Azure DCAP для Windows
       href: 'https://www.nuget.org/packages/Microsoft.Azure.DCAP/'
     - name: Библиотека Azure DCAP для Linux

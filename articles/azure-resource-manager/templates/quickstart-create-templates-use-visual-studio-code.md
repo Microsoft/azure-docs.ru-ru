@@ -5,18 +5,18 @@ author: neilpeterson
 ms.date: 08/09/2020
 ms.topic: quickstart
 ms.author: nepeters
-ms.openlocfilehash: d8fd44a1e4c1ddfd78b2afa3280bb05c8fde91e3
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.openlocfilehash: 97f956c1b1c1ea18242dc656c533451eda29dc6d
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96350149"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102179057"
 ---
 # <a name="quickstart-create-arm-templates-with-visual-studio-code"></a>Краткое руководство. Создание шаблонов ARM с помощью Visual Studio Code
 
 Средства Azure Resource Manager для Visual Studio Code предоставляют языковую поддержку, фрагменты ресурсов и функцию автозавершения ресурсов. Эти средства помогают создавать и проверять шаблоны Azure Resource Manager (шаблоны ARM). В этом кратком руководстве показано, как с помощью расширения создать шаблон ARM с нуля. При этом вы воспользуетесь возможностями расширений, например фрагментами кода шаблона Resource Manager, функциями проверки и завершения, а также поддержкой файла параметров.
 
-Для работы с этим кратким руководством вам необходимо установить [Visual Studio Code](https://code.visualstudio.com/) с [расширением средств Azure Resource Manager](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Вам также потребуется установить и аутентифицировать [Azure CLI](/cli/azure/?view=azure-cli-latest) или [модуль Azure PowerShell](/powershell/azure/new-azureps-module-az?view=azps-3.7.0).
+Для работы с этим кратким руководством вам необходимо установить [Visual Studio Code](https://code.visualstudio.com/) с [расширением средств Azure Resource Manager](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Вам также потребуется установить и аутентифицировать [Azure CLI](/cli/azure/) или [модуль Azure PowerShell](/powershell/azure/new-azureps-module-az?view=azps-3.7.0).
 
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/), прежде чем начинать работу.
 

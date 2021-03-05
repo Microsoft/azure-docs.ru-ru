@@ -6,12 +6,12 @@ ms.topic: overview
 ms.date: 11/19/2020
 ms.author: cshoe
 zone_pivot_groups: programming-languages-set-functions-lang-workers
-ms.openlocfilehash: e969cc4bee9f09f4279d137abb33b75ca0672ffc
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 77d370b895c777278d3136c7d2c511e7f9e23b36
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100364721"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102179261"
 ---
 # <a name="getting-started-with-azure-functions"></a>Начало работы с функциями Azure
 
@@ -46,7 +46,7 @@ ms.locfileid: "100364721"
 ::: zone pivot="programming-language-javascript"
 | Действие | Ресурсы |
 | --- | --- |
-| **Создание первой функции** | С помощью одного из следующих средств<br><br><li>[Visual Studio Code](./create-first-function-vs-code-node.md)<li>[Функция Node.js в терминале / командной строке](./create-first-function-cli-java.md) |
+| **Создание первой функции** | С помощью одного из следующих средств<br><br><li>[Visual Studio Code](./create-first-function-vs-code-node.md)<li>[Функция Node.js в терминале / командной строке](./create-first-function-cli-node.md) |
 | **можно увидеть функцию, выполняющую** | <li>[Браузер Azure Samples](/samples/browse/?expanded=azure&languages=javascript%2ctypescript&products=azure-functions)<li>[Azure Community Library](https://www.serverlesslibrary.net/?technology=Functions%202.x&language=JavaScript%2CTypeScript) |
 | **Знакомство с интерактивным учебником** | <li>[Выбор оптимальной бессерверной технологии Azure для бизнес-сценария](/learn/modules/serverless-fundamentals/)<li>[Хорошо спроектированная платформа. Эффективность](/learn/modules/azure-well-architected-performance-efficiency/)<li>[Создание бессерверных API с помощью Функций Azure](/learn/modules/build-api-azure-functions/)<li>[Создание бессерверной логики с помощью Функций Azure](/learn/modules/create-serverless-logic-with-azure-functions/)<li>[Рефакторинг API-интерфейсов Node.js и Express в бессерверные API с помощью Функций Azure](/learn/modules/shift-nodejs-express-apis-serverless/) <br><br>[Полный список интерактивных учебников](/learn/browse/?expanded=azure&products=azure-functions) см. в Microsoft Learn.|
 | **Анализ рекомендаций** |<li>[Повышение производительности и надежности](./functions-best-practices.md)<li>[Управление коллекциями](./manage-connections.md)<li>[Обработка ошибок и повторные попытки функций](./functions-bindings-error-pages.md?tabs=javascript)<li>[Security](./security-concepts.md)|

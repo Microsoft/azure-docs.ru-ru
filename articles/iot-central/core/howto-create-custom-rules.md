@@ -9,12 +9,12 @@ ms.service: iot-central
 services: iot-central
 ms.custom: mvc, devx-track-csharp
 manager: philmea
-ms.openlocfilehash: 824308b66803d2dfa05383ff06ce97c48626619d
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.openlocfilehash: 6146676121bac0089d5f520d60a97d74567a32bc
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100557580"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102179346"
 ---
 # <a name="extend-azure-iot-central-with-custom-rules-using-stream-analytics-azure-functions-and-sendgrid"></a>Расширение возможностей Azure IoT Central с помощью настраиваемых правил с использованием Stream Analytics, Функций Azure и SendGrid
 
@@ -119,26 +119,28 @@ ms.locfileid: "100557580"
 
 Пространство имен концентраторов событий выглядит как на следующем снимке экрана: 
 
-```:::image type="content" source="media/howto-create-custom-rules/event-hubs-namespace.png" alt-text="Screenshot of Event Hubs namespace." border="false":::
+:::image type="content" source="media/howto-create-custom-rules/event-hubs-namespace.png" alt-text="Снимок экрана пространства имен концентраторов событий." border="false":::
 
-## Define the function
 
-This solution uses an Azure Functions app to send an email notification when the Stream Analytics job detects a stopped device. To create your function app:
+## <a name="define-the-function"></a>Определение функции
 
-1. In the Azure portal, navigate to the **App Service** instance in the **DetectStoppedDevices** resource group.
-1. Select **+** to create a new function.
-1. Select **HTTP Trigger**.
-1. Select **Add**.
+Это решение использует приложение "функции Azure" для отправки уведомления по электронной почте, когда задание Stream Analytics обнаруживает остановленное устройство. Чтобы создать приложение функции, сделайте следующее:
 
-    :::image type="content" source="media/howto-create-custom-rules/add-function.png" alt-text="Image of the Default HTTP trigger function"::: 
+1. В портал Azure перейдите к экземпляру **службы приложений** в группе ресурсов **детектстоппеддевицес** .
+1. Выберите **+** , чтобы создать новую функцию.
+1. Выберите **триггер HTTP**.
+1. Нажмите **Добавить**.
 
-## Edit code for HTTP Trigger
+    :::image type="content" source="media/howto-create-custom-rules/add-function.png" alt-text="Изображение функции триггера HTTP по умолчанию"::: 
 
-The portal creates a default function called **HttpTrigger1**:
+## <a name="edit-code-for-http-trigger"></a>Изменение кода для триггера HTTP
 
-```:::image type="content" source="media/howto-create-custom-rules/default-function.png" alt-text="Screenshot of Edit HTTP trigger function.":::
+На портале создается функция по умолчанию с именем **HttpTrigger1**:
 
-1. Replace the C# code with the following code:
+:::image type="content" source="media/howto-create-custom-rules/default-function.png" alt-text="Снимок экрана функции изменения триггера HTTP.":::
+
+
+1. Замените код C# следующим кодом:
 
     ```csharp
     #r "Newtonsoft.Json"
@@ -177,50 +179,50 @@ The portal creates a default function called **HttpTrigger1**:
     }
     ```
 
-    You may see an error message until you save the new code.
-1. Select **Save** to save the function.
+    Вы можете увидеть сообщение об ошибке, пока не будет сохранен новый код.
+1. Нажмите кнопку **сохранить** , чтобы сохранить функцию.
 
-## Add SendGrid Key
+## <a name="add-sendgrid-key"></a>Добавить ключ SendGrid
 
-To add your SendGrid API Key, you need to add it to your **Function Keys** as follows:
+Чтобы добавить ключ API SendGrid, необходимо добавить его в **ключи функции** следующим образом:
 
-1. Select **Function Keys**.
-1. Choose **+ New Function Key**.
-1. Enter the *Name* and *Value* of the API Key you created before.
-1. Click **OK.**
+1. Выберите **функции ключи**.
+1. Выберите **+ создать функциональную клавишу**.
+1. Введите *имя* и *значение* созданного ранее ключа API.
+1. Нажмите кнопку **ОК.**
 
-    :::image type="content" source="media/howto-create-custom-rules/add-key.png" alt-text="Screenshot of Add Sangrid Key.":::
+    :::image type="content" source="media/howto-create-custom-rules/add-key.png" alt-text="Снимок экрана: Добавление ключа Сангрид.":::
 
 
-## Configure HttpTrigger function to use SendGrid
+## <a name="configure-httptrigger-function-to-use-sendgrid"></a>Настройка функции HttpTrigger для использования SendGrid
 
-To send emails with SendGrid, you need to configure the bindings for your function as follows:
+Чтобы отправить сообщения электронной почты с помощью SendGrid, необходимо настроить привязки для функции следующим образом:
 
-1. Select **Integrate**.
-1. Choose **Add Output** under **HTTP ($return)**.
-1. Select **Delete.**
-1. Choose **+ New Output**.
-1. For Binding Type, then choose **SendGrid**.
-1. For SendGrid API Key Setting Type, click New.
-1. Enter the *Name* and *Value* of your SendGrid API key.
-1. Add the following information:
+1. Выберите **Интеграция**.
+1. Выберите **Добавить выходные данные** в разделе **http ($Return)**.
+1. Выберите **Удалить.**
+1. Выберите **+ новый выход**.
+1. В качестве типа привязки выберите **SendGrid**.
+1. Для параметра тип настройки ключа API SendGrid нажмите кнопку Создать.
+1. Введите *имя* и *значение* ключа API SendGrid.
+1. Добавьте следующие данные:
 
-| Setting | Value |
+| Параметр | Значение |
 | ------- | ----- |
-| Message parameter name | Choose your name |
-| To address | Choose the name of your To Address |
-| From address | Choose the name of your From Address |
-| Message subject | Enter your subject header |
-| Message text | Enter the message from your integration |
+| Имя параметра сообщения | Выберите свое имя |
+| Адрес | Выберите имя для адреса |
+| Адрес отправителя | Выберите имя из адреса |
+| Тема сообщения | Введите заголовок темы |
+| Текст сообщения | Введите сообщение из интеграции |
 
-1. Select **OK**.
+1. Щелкните **ОК**.
 
-    :::image type="content" source="media/howto-create-custom-rules/add-output.png" alt-text="Screenshot of Add SandGrid Output.":::
+    :::image type="content" source="media/howto-create-custom-rules/add-output.png" alt-text="Снимок экрана: Добавление выходных данных Сандгрид.":::
 
 
-### Test the function works
+### <a name="test-the-function-works"></a>Проверка работы функции
 
-To test the function in the portal, first choose **Logs** at the bottom of the code editor. Then choose **Test** to the right of the code editor. Use the following JSON as the **Request body**:
+Чтобы проверить функцию на портале, сначала выберите **журналы** в нижней части редактора кода. Затем выберите **тест** справа от редактора кода. Используйте следующий код JSON в качестве **текста запроса**:
 
 ```json
 [{"deviceid":"test-device-1","time":"2019-05-02T14:23:39.527Z"},{"deviceid":"test-device-2","time":"2019-05-02T14:23:50.717Z"},{"deviceid":"test-device-3","time":"2019-05-02T14:24:28.919Z"}]
@@ -228,9 +230,9 @@ To test the function in the portal, first choose **Logs** at the bottom of the c
 
 Сообщения журнала функций отображаются на панели **журналы** :
 
-```:::image type="content" source="media/howto-create-custom-rules/function-app-logs.png" alt-text="Function log output":::
+:::image type="content" source="media/howto-create-custom-rules/function-app-logs.png" alt-text="Выходные данные журнала функций":::
 
-After a few minutes, the **To** email address receives an email with the following content:
+Через несколько минут адрес электронной почты будет получать сообщение **электронной почты со** следующим содержимым:
 
 ```txt
 The following device(s) have stopped sending telemetry:
@@ -332,7 +334,7 @@ test-device-3    2019-05-02T14:24:28.919Z
 
 Прежде чем продолжить, подождите, пока состояние экспорта будет **выполняться** .
 
-## <a name="test"></a>Проверка
+## <a name="test"></a>Тест
 
 Чтобы протестировать решение, можно отключить экспорт непрерывных данных из IoT Central в имитацию остановленных устройств:
 

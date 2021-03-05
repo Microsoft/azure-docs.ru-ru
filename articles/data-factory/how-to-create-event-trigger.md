@@ -7,12 +7,12 @@ ms.author: chez
 ms.reviewer: maghan
 ms.topic: conceptual
 ms.date: 10/18/2018
-ms.openlocfilehash: 7dde05e02421ef8d2ea46fd0d50687ede6e5d884
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: ff8c549f74b59706de5203f2d2e46867d6cb1d0a
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101727797"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177795"
 ---
 # <a name="create-a-trigger-that-runs-a-pipeline-in-response-to-a-storage-event"></a>Создание триггера, запускающего конвейер в ответ на событие хранилища
 
@@ -26,7 +26,6 @@ ms.locfileid: "101727797"
 
 > [!VIDEO https://channel9.msdn.com/Shows/Azure-Friday/Event-based-data-integration-with-Azure-Data-Factory/player]
 
-
 > [!NOTE]
 > Интеграция, описанная в этой статье, зависит от службы [Сетка событий Azure](https://azure.microsoft.com/services/event-grid/). Убедитесь, что ваша подписка зарегистрирована у поставщика ресурсов "Сетка событий". См. дополнительные сведения о [поставщиках и типах ресурсов](../azure-resource-manager/management/resource-providers-and-types.md#azure-portal). Необходимо иметь возможность выполнить действие *Microsoft. EventGrid/eventSubscriptions/**. Это действие является частью встроенной роли участника EventGrid подписки.
 
@@ -34,11 +33,11 @@ ms.locfileid: "101727797"
 
 В этом разделе показано, как создать триггер событий хранилища в пользовательском интерфейсе фабрики данных Azure.
 
-1. Перейдите к панели **Работа над холстом**
+1. Перейдите на вкладку **Правка** , показанную значком карандаша. 
 
-1. В нижнем левом углу нажмите кнопку **Триггеры**
+1. Выберите **триггер** в меню, а затем выберите **создать/изменить**. 
 
-1. Нажмите кнопку **Создать**, чтобы открыть боковое диалоговое окно создания триггера
+1. На странице **Добавление триггеров** выберите **выбрать триггер...**, а затем выберите **+ создать**. 
 
 1. Выберите **событие хранилища** типов триггеров
 
@@ -107,4 +106,5 @@ ms.locfileid: "101727797"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения см. в руководстве по [выполнению конвейера и использованию триггеров](concepts-pipeline-execution-triggers.md#trigger-execution).
+* Дополнительные сведения см. в руководстве по [выполнению конвейера и использованию триггеров](concepts-pipeline-execution-triggers.md#trigger-execution).
+* Сведения о ссылках на метаданные триггера в конвейере см. в разделе [метаданные триггера справочника при выполнении конвейера](how-to-use-trigger-parameterization.md)
