@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.author: jordane
 author: jpe316
 ms.date: 11/16/2020
-ms.openlocfilehash: 7c10d3066dc7b9ee0994de8c327b286bf8c917e7
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: 53459ad766ffcf156d2906a38666a14c4883b5e8
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100099478"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102215941"
 ---
 # <a name="git-integration-for-azure-machine-learning"></a>Интеграция с Git для Машинное обучение Azure
 
@@ -123,7 +123,7 @@ SSH отображает этот отпечаток при подключени
 
 При отправке обучающего запуска из пакета SDK для Python или Машинное обучение CLI файлы, необходимые для обучения модели, отправляются в рабочую область. Если `git` команда доступна в среде разработки, процесс отправки использует его для проверки того, хранятся ли файлы в репозитории Git. Если да, то сведения из репозитория Git также передаются в ходе обучающего запуска. Эти сведения хранятся в следующих свойствах для обучающего запуска:
 
-| Свойство | Команда git, используемая для получения значения | Описание |
+| Свойство. | Команда git, используемая для получения значения | Описание |
 | ----- | ----- | ----- |
 | `azureml.git.repository_uri` | `git ls-remote --get-url` | Универсальный код ресурса (URI), из которого был клонирован репозиторий. |
 | `mlflow.source.git.repoURL` | `git ls-remote --get-url` | Универсальный код ресурса (URI), из которого был клонирован репозиторий. |
@@ -192,7 +192,7 @@ run.properties['azureml.git.commit']
 az ml run list -e train-on-amlcompute --last 1 -w myworkspace -g myresourcegroup --query '[].properties'
 ```
 
-Дополнительные сведения см. в справочной документации по [AZ ML по запуску](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest) .
+Дополнительные сведения см. в справочной документации по [AZ ML по запуску](/cli/azure/ext/azure-cli-ml/ml/run) .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

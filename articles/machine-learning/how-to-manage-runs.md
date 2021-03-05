@@ -12,12 +12,12 @@ ms.reviewer: nibaccam
 ms.date: 03/04/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, devx-track-azurecli
-ms.openlocfilehash: fb877b208e6c9599347e2b45e140545e5815e695
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: e3aa5d5b97342d81562b3296b71a5a58a3ffadf5
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102120816"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102218241"
 ---
 # <a name="start-monitor-and-cancel-training-runs-in-python"></a>Запуск, отслеживание и отмена обучающих запусков в Python
 
@@ -50,7 +50,7 @@ ms.locfileid: "102120816"
     print(azureml.core.VERSION)
     ```
 
-* Расширение [Azure CLI](/cli/azure/?preserve-view=true&view=azure-cli-latest) и [CLI для машинное обучение Azure](reference-azure-machine-learning-cli.md).
+* Расширение [Azure CLI](/cli/azure/) и [CLI для машинное обучение Azure](reference-azure-machine-learning-cli.md).
 
 ## <a name="monitor-run-performance"></a>Мониторинг производительности выполнения
 
@@ -96,7 +96,7 @@ ms.locfileid: "102120816"
     
         Эта команда создает подкаталог `.azureml`, содержащий примеры файлов runconfig и среды Conda. Он также содержит файл `config.json`, который используется для взаимодействия с рабочей областью Машинного обучения Azure.
     
-        См. дополнительные сведения о команде [az ml folder attach](/cli/azure/ext/azure-cli-ml/ml/folder?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-folder-attach).
+        См. дополнительные сведения о команде [az ml folder attach](/cli/azure/ext/azure-cli-ml/ml/folder#ext-azure-cli-ml-az-ml-folder-attach).
     
     2. Чтобы начать выполнение, используйте следующую команду. При использовании этой команды укажите имя файла runconfig (текст перед \*.runconfig в вашей файловой системе) в параметре -c.
     
@@ -111,7 +111,7 @@ ms.locfileid: "102120816"
         >
         > Дополнительные примеры файлов runconfig см. в разделе [https://github.com/MicrosoftDocs/pipelines-azureml/](https://github.com/MicrosoftDocs/pipelines-azureml/) .
     
-        См. дополнительные сведения о команде [az ml run submit-script](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-submit-script).
+        См. дополнительные сведения о команде [az ml run submit-script](/cli/azure/ext/azure-cli-ml/ml/run#ext-azure-cli-ml-az-ml-run-submit-script).
 
     # <a name="studio"></a>[Студия](#tab/azure-studio)
 
@@ -162,7 +162,7 @@ ms.locfileid: "102120816"
     
         Эта команда возвращает документ JSON, в котором перечисляются сведения о выполнении этого эксперимента.
     
-        См. дополнительные сведения о команде [az ml experiment list](/cli/azure/ext/azure-cli-ml/ml/experiment?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-experiment-list).
+        См. дополнительные сведения о команде [az ml experiment list](/cli/azure/ext/azure-cli-ml/ml/experiment#ext-azure-cli-ml-az-ml-experiment-list).
     
     * Чтобы просмотреть сведения о конкретном выполнении, используйте следующую команду. Замените на `runid` идентификатор запуска:
     
@@ -172,7 +172,7 @@ ms.locfileid: "102120816"
     
         Эта команда возвращает документ JSON, в котором перечисляются сведения о выполнении.
     
-        Дополнительные сведения см. в разделе [AZ ML Run показ](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-show).
+        Дополнительные сведения см. в разделе [AZ ML Run показ](/cli/azure/ext/azure-cli-ml/ml/run#ext-azure-cli-ml-az-ml-run-show).
     
     
     # <a name="studio"></a>[Студия](#tab/azure-studio)
@@ -253,7 +253,7 @@ ms.locfileid: "102120816"
     az ml run update -r runid --add-tag quality='fantastic run'
     ```
     
-    Дополнительные сведения см. в разделе [AZ ML Run Update](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-update).
+    Дополнительные сведения см. в разделе [AZ ML Run Update](/cli/azure/ext/azure-cli-ml/ml/run#ext-azure-cli-ml-az-ml-run-update).
     
     # <a name="studio"></a>[Студия](#tab/azure-studio)
     
@@ -287,7 +287,7 @@ ms.locfileid: "102120816"
     az ml run list --experiment-name experiment [?properties.author=='azureml-user' && tags.quality=='fantastic run']
     ```
     
-    Дополнительные сведения о запросах Azure CLI результатов см. в разделе [запрос Azure CLI команды Output](/cli/azure/query-azure-cli?preserve-view=true&view=azure-cli-latest).
+    Дополнительные сведения о запросах Azure CLI результатов см. в разделе [запрос Azure CLI команды Output](/cli/azure/query-azure-cli).
     
     # <a name="studio"></a>[Студия](#tab/azure-studio)
     
@@ -331,7 +331,7 @@ print(local_run.get_status())
 az ml run cancel -r runid -w workspace_name -e experiment_name
 ```
 
-Дополнительные сведения см. в статье [AZ ML Run отмена](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-cancel).
+Дополнительные сведения см. в статье [AZ ML Run отмена](/cli/azure/ext/azure-cli-ml/ml/run#ext-azure-cli-ml-az-ml-run-cancel).
 
 # <a name="studio"></a>[Студия](#tab/azure-studio)
 

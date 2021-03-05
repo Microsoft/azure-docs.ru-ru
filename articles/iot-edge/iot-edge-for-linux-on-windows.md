@@ -10,23 +10,25 @@ ms.topic: conceptual
 ms.date: 01/20/2021
 ms.author: kgremban
 monikerRange: =iotedge-2018-06
-ms.openlocfilehash: ebe0ac1151f3a1f43072f2832e2f433182ccc82d
-ms.sourcegitcommit: 484f510bbb093e9cfca694b56622b5860ca317f7
+ms.openlocfilehash: 9d6bb9da67f66f46e5c72d5d64b8b6c111c98e08
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98634371"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102215363"
 ---
-# <a name="what-is-azure-iot-edge-for-linux-on-windows-preview"></a>Что такое Azure IoT Edge для Linux в Windows (Предварительная версия)
+# <a name="what-is-azure-iot-edge-for-linux-on-windows-preview"></a>Что такое Azure IoT Edge для Linux в Windows (предварительная версия)
 
 Azure IoT Edge для Linux в Windows позволяет запускать контейнерные рабочие нагрузки Linux вместе с приложениями Windows в развертываниях Windows IoT. Компании, использующие Windows IoT для работы с пограничными устройствами, теперь могут воспользоваться преимуществами облачных решений аналитики, созданных в Linux.
 
 IoT Edge для Linux в Windows работает путем запуска виртуальной машины Linux на устройстве Windows. Виртуальная машина Linux предварительно устанавливается со средой выполнения IoT Edge. Все IoT Edge модули, развернутые на устройстве, выполняются внутри виртуальной машины. В то же время приложения Windows, работающие на устройстве узла Windows, могут взаимодействовать с модулями, работающими на виртуальной машине Linux.
 
+Начните [работу](how-to-install-iot-edge-on-windows.md) с предварительной версией уже сегодня.
+
 >[!NOTE]
 >Рекомендуется принять наши [опросы по продуктам](https://aka.ms/AzEFLOW-Registration) , чтобы помочь нам улучшить Azure IOT Edge для Linux в Windows на основе IOT Edge фоновых данных и целей. Этот опрос также можно использовать для регистрации будущих Azure IoT Edge для объявлений Linux в Windows.
 
-## <a name="components"></a>Компоненты
+## <a name="components"></a>Components
 
 IoT Edge для Linux в Windows использует следующие компоненты, чтобы разрешить рабочим нагрузкам Linux и Windows параллельно работать друг с другом и легко взаимодействовать:
 

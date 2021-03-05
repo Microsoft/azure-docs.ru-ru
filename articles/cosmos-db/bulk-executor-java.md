@@ -10,12 +10,12 @@ ms.date: 08/26/2020
 ms.author: ramkris
 ms.reviewer: sngun
 ms.custom: devx-track-java
-ms.openlocfilehash: 89d21e4464cb3c7578b68d68009065ab7848ed19
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.openlocfilehash: d0ccaf15df62b566b5a52ee7a4031ba7e270a4ae
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93092540"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102218117"
 ---
 # <a name="use-bulk-executor-java-library-to-perform-bulk-operations-on-azure-cosmos-db-data"></a>Выполнение массовых операций с данными Azure Cosmos DB с помощью библиотеки Java массового исполнителя
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "93092540"
 
 * Вы можете [попробовать Azure Cosmos DB бесплатно](https://azure.microsoft.com/try/cosmosdb/) без подписки Azure, бесплатной оплаты и обязательств. Или вы можете применить [эмулятор Azure Cosmos DB](./local-emulator.md) с конечной точкой `https://localhost:8081`. Первичный ключ предоставляется в разделе [Выполнение проверки подлинности запросов](local-emulator.md#authenticate-requests).  
 
-* [Пакет Java Development Kit (JDK) 1.7 +](/java/azure/jdk/?view=azure-java-stable&preserve-view=true)  
+* [Пакет Java Development Kit (JDK) 1.7 +](/java/azure/jdk/)  
   - В Ubuntu выполните команду `apt-get install default-jdk`, чтобы установить JDK.  
 
   - Обязательно настройте переменную среды JAVA_HOME так, чтобы она указывала на папку, в которой установлен пакет JDK.
@@ -113,7 +113,7 @@ ms.locfileid: "93092540"
    |disableAutomaticIdGeneration     |   Параметр, отключающий автоматическое создание идентификатора. По умолчанию установлено значение true.   |
    |maxConcurrencyPerPartitionRange    |  Максимальная степень параллелизма для одного диапазона ключей разделов. Значение по умолчанию — 20.  |
 
-   **Определение объекта ответа массового импорта** . Результат вызова API массового импорта содержит следующие методы get:
+   **Определение объекта ответа массового импорта**. Результат вызова API массового импорта содержит следующие методы get:
 
    |**Параметр**  |**Описание**  |
    |---------|---------|
@@ -177,7 +177,7 @@ ms.locfileid: "93092540"
    |---------|---------|
    |maxConcurrencyPerPartitionRange   |  Максимальная степень параллелизма для одного диапазона ключей разделов. Значение по умолчанию — 20.  |
  
-   **Определение объекта ответа массового импорта** . Результат вызова API массового импорта содержит следующие методы get:
+   **Определение объекта ответа массового импорта**. Результат вызова API массового импорта содержит следующие методы get:
 
    |**Параметр** |**Описание**  |
    |---------|---------|

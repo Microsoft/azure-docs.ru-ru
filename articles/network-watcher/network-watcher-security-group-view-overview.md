@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 04/26/2017
 ms.author: damendo
-ms.openlocfilehash: d172ba7353b7ac4c490584cd7c84871c6244f214
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: ac1550e34c09429eb9778a5256972fcb60861950
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94961827"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102217709"
 ---
 # <a name="introduction-to-effective-security-rules-view-in-azure-network-watcher"></a>Общие сведения о действующем представлении правил безопасности в наблюдателе за сетями Azure
 
@@ -32,12 +32,12 @@ ms.locfileid: "94961827"
 
 ![Детализация][2]
 
-### <a name="next-steps"></a>Следующие шаги
+### <a name="next-steps"></a>Дальнейшие действия
 
 Вы также можете использовать *эффективные группы безопасности* с помощью других методов, перечисленных ниже.
 * [REST API](/rest/api/virtualnetwork/NetworkInterfaces/ListEffectiveNetworkSecurityGroups)
 * [PowerShell](/powershell/module/az.network/get-azeffectivenetworksecuritygroup?view=azps-4.4.0)
-* [Azure CLI](/cli/azure/network/nic?view=azure-cli-latest#az-network-nic-list-effective-nsg)
+* [Azure CLI](/cli/azure/network/nic#az-network-nic-list-effective-nsg)
 
 Узнайте, как выполнять аудит параметров группы безопасности сети, ознакомившись с разделом [Automate NSG auditing with Azure Network Watcher Security group view](network-watcher-nsg-auditing-powershell.md) (Автоматизация аудита NSG с помощью представления групп безопасности Наблюдателя за сетями Azure).
 

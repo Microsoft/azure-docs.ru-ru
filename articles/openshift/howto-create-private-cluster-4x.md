@@ -8,12 +8,12 @@ author: sakthi-vetrivel
 ms.author: suvetriv
 keywords: aro, openshift, az aro, red hat, cli
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: 633b8e6b0d9694119b5371f921af90c524936926
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.openlocfilehash: 5a6eafa6b2380ee61c0de2e329a1751ec7d59c1f
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100633620"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102216077"
 ---
 # <a name="create-an-azure-red-hat-openshift-4-private-cluster"></a>Создание частного кластера Azure Red Hat OpenShift 4
 
@@ -23,7 +23,7 @@ ms.locfileid: "100633620"
 > * настраивать необходимые компоненты и создавать необходимую виртуальную сеть и подсети;
 > * Развертывание кластера с частной конечной точкой сервера API и закрытым контроллером входящего трафика
 
-Если вы решили установить и использовать интерфейс командной строки локально, то для работы с этим руководством вам понадобится Azure CLI 2.6.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true).
+Если вы решили установить и использовать интерфейс командной строки локально, то для работы с этим руководством вам понадобится Azure CLI 2.6.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0](/cli/azure/install-azure-cli).
 
 ## <a name="before-you-begin"></a>Перед началом
 

@@ -2,17 +2,17 @@
 title: Конфигурация DNS частной конечной точки Azure
 description: Сведения о конфигурации DNS частной конечной точки Azure
 services: private-link
-author: allensu
+author: asudbring
 ms.service: private-link
 ms.topic: conceptual
 ms.date: 01/14/2021
 ms.author: allensu
-ms.openlocfilehash: 3cb5dd88572fda7a939aa529a5372d72575ffdbb
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: 42c5b315c9c3560c400c685448a11dc61bf64eb6
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102203289"
+ms.locfileid: "102215618"
 ---
 # <a name="azure-private-endpoint-dns-configuration"></a>Конфигурация DNS частной конечной точки Azure
 
@@ -79,7 +79,7 @@ Azure создает каноническое имя DNS-записи (CNAME) н
 | Cognitive Services (Microsoft. CognitiveServices/Accounts)/Account | privatelink.cognitiveservices.azure.com  | cognitiveservices.azure.com  |
 | Синхронизация файлов Azure (Microsoft. StorageSync/Сторажесинксервицес)/AFS |  privatelink.afs.azure.net  |  afs.azure.net  |
 | Фабрика данных Azure (Microsoft. данные и фабрики)/факт |  privatelink.datafactory.azure.net  |  datafactory.azure.net  |
-| Фабрика данных Azure (Microsoft. данные и фабрики)/портал |  privatelink.azure.com  |  azure.com  |
+| Фабрика данных Azure (Microsoft. данные и фабрики)/портал |  privatelink.adf.azure.com  |  adf.azure.com  |
 | Кэш Azure для Redis (Microsoft. Cache/Redis)/redisCache | privatelink.redis.cache.windows.net | redis.cache.windows.net |
 
 <sup>1</sup> Для использования с встроенной конечной точкой центра Интернета вещей, совместимой с концентратором событий. Дополнительные сведения см. в разделе [Поддержка частных ссылок для встроенной конечной точки центра Интернета вещей](../iot-hub/virtual-network-support.md#built-in-event-hub-compatible-endpoint) .
@@ -97,7 +97,6 @@ Azure создает каноническое имя DNS-записи (CNAME) н
 | База данных Azure для PostgreSQL — одиночный сервер (Microsoft.DBforPostgreSQL/servers) / postgresqlServer | privatelink.postgres.database.chinacloudapi.cn | postgres.database.chinacloudapi.cn |
 | База данных Azure для MySQL (Microsoft.DBforMySQL/servers) / mysqlServer | privatelink.mysql.database.chinacloudapi.cn  | mysql.database.chinacloudapi.cn  |
 | База данных Azure для MariaDB (Microsoft.DBforMariaDB/servers) / mariadbServer | privatelink.mariadb.database.chinacloudapi.cn | mariadb.database.chinacloudapi.cn |
-
 
 ## <a name="dns-configuration-scenarios"></a>Сценарии настройки DNS
 

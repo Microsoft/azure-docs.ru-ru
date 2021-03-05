@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 11/09/2020
-ms.openlocfilehash: 652489e8de68d61707fd419843f0dbb2ffd83754
-ms.sourcegitcommit: 7e117cfec95a7e61f4720db3c36c4fa35021846b
+ms.openlocfilehash: 49bfca118e53bbe3e4287b2ce25e5baffa717175
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "99987940"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102217335"
 ---
 # <a name="manage-qna-maker-app"></a>Управление приложением QnA Maker
 
@@ -29,7 +29,7 @@ QnA Maker позволяет нескольким пользователям с�
 
 ### <a name="add-a-user-account-to-the-qna-maker-resource"></a>Добавление учетной записи пользователя в ресурс QnA Maker
 
-В следующих шагах используется роль совместной работы, но любые [роли](../reference-role-based-access-control.md) можно добавить с помощью этих шагов.
+В следующих шагах используется роль совместной работы, но любые роли можно добавить с помощью этих шагов.
 
 1. Войдите на портал [Azure](https://portal.azure.com/) и перейдите к ресурсу QnA Maker.
 
@@ -39,7 +39,7 @@ QnA Maker позволяет нескольким пользователям с�
 
     ![IAM в QnA Maker](../media/qnamaker-how-to-collaborate-knowledge-base/qnamaker-iam.png)
 
-1. Выберите **Добавить**.
+1. Нажмите **Добавить**.
 
     ![Добавление IAM в QnA Maker](../media/qnamaker-how-to-collaborate-knowledge-base/qnamaker-iam-add.png)
 
@@ -67,7 +67,7 @@ QnA Maker позволяет нескольким пользователям с�
 
 :::image type="content" source="../media/qnamaker-how-to-collaborate-knowledge-base/qnamaker-knowledge-base-role-name.png" alt-text="Снимок экрана базы знаний в режиме редактирования с именем роли в круглых скобках рядом с именем базы знаний в левом верхнем углу веб-страницы.":::
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Создание базы знаний](./manage-knowledge-bases.md)

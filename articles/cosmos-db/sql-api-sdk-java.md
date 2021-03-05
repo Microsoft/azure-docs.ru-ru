@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 12/18/2020
 ms.author: anfeldma
 ms.custom: devx-track-java
-ms.openlocfilehash: 59acbc545e6bb37ebd090ec458d98586de882133
-ms.sourcegitcommit: b6267bc931ef1a4bd33d67ba76895e14b9d0c661
+ms.openlocfilehash: 96640e55d1ad71bc0e448976b2c9f1fa85b2ab62
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696287"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102216604"
 ---
 # <a name="azure-cosmos-db-java-sdk-for-sql-api-release-notes-and-resources"></a>Azure Cosmos DB: Заметки о выпуске и материалы
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "97696287"
 |**Участие в разработке пакета SDK**|[GitHub](https://github.com/Azure/azure-documentdb-java/)|
 |**Начало работы**|[Приступая к работе с пакетом SDK для Java](./create-sql-api-java.md)|
 |**Учебник по веб-приложениям**|[Руководство по ASP.NET MVC. Разработка веб-приложений в Azure Cosmos DB](sql-api-java-application.md)|
-|**Минимальная поддерживаемая среда выполнения**|[Пакет средств разработки Java (JDK) 7+](/java/azure/jdk/?view=azure-java-stable&preserve-view=true)|
+|**Минимальная поддерживаемая среда выполнения**|[Пакет средств разработки Java (JDK) 7+](/java/azure/jdk/)|
 
 ## <a name="release-notes"></a>Заметки о выпуске
 

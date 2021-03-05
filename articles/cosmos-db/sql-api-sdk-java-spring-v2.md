@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 08/12/2020
 ms.author: anfeldma
 ms.custom: devx-track-java
-ms.openlocfilehash: d5c85095e767c0e92c22410054ac4f8fc5267660
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.openlocfilehash: 1f78d7185415b66445c78f3b4cdb54ed0d63cb0a
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93097147"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102216621"
 ---
 # <a name="spring-data-azure-cosmos-db-v2-for-core-sql-api-release-notes-and-resources"></a>Пружинные данные Azure Cosmos DB v2 для API ядра (SQL): заметки о выпуске и ресурсы
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "93097147"
 > * [Использование начального приложения Spring Data Gremlin с API SQL Azure Cosmos DB](/azure/developer/java/spring-framework/configure-spring-data-gremlin-java-app-with-cosmos-db)
 >
 > Хотите быстро перейти к работе?
-> 1. Установите [минимально поддерживаемую среду выполнения Java JDK 8](/java/azure/jdk/?view=azure-java-stable&preserve-view=true), чтобы можно было использовать пакет SDK.
+> 1. Установите [минимально поддерживаемую среду выполнения Java JDK 8](/java/azure/jdk/), чтобы можно было использовать пакет SDK.
 > 2. Создание пружинного Azure Cosmos DB данных с помощью [начального](/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-cosmos-db)приложения. Это просто!
 > 3. Работа с [пружинными данными Azure Cosmos DB руководство разработчика](/azure/developer/java/spring-framework/how-to-guides-spring-data-cosmosdb), которое проходит через базовые запросы Azure Cosmos DB.
 >
@@ -85,11 +85,11 @@ ms.locfileid: "93097147"
 ### <a name="225-may-19-2020"></a>2.2.5 (19 мая, 2020)
 #### <a name="new-features"></a>Новые функции
 * Обновляет версию Azure Cosmos DB до 3.7.3.
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 * Содержит исправления утечки памяти и NETTY обновления версий из пакета SDK 3.7.3 для Azure Cosmos DB.
 
 ### <a name="224-april-6-2020"></a>2.2.4 (6 апреля, 2020)
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 * Исправление `allowTelemetry` флага, с которым следует учитывать учетные записи `CosmosDbConfig` .
 * Исправление `TTL` свойства в контейнере.
 
@@ -97,19 +97,19 @@ ms.locfileid: "93097147"
 #### <a name="new-features"></a>Новые функции
 * Добавляет новый `findAll` с помощью API ключа секции.
 * Обновляет версию Azure Cosmos DB до 3.7.0.
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 * Исправления `collectionName`  ->  `containerName` .
 * Исправления `entityClass` и `domainClass`  ->  `domainType` .
 * Исправление "коллекция возвращаемых сущностей, сохраненная репозиторием вместо входной сущности".
 
 ### <a name="2110-february-25-2020"></a>2.1.10 (25 февраля 2020 г.)
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 * Обратные порты исправляются для "коллекция возвращаемых сущностей, сохраненных репозиторием вместо входной сущности".
 
 ### <a name="222-january-15-2020"></a>2.2.2 (15 января, 2020)
 #### <a name="new-features"></a>Новые функции
 * Обновляет версию Azure Cosmos DB до 3.6.0.
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 
 ### <a name="221-december-31-2019"></a>2.2.1 (31 декабря 2019 г.)
 #### <a name="new-features"></a>Новые функции
@@ -117,7 +117,7 @@ ms.locfileid: "93097147"
 * Добавляет поле заметки для включения или отключения автоматического создания коллекции.
 * Улучшает обработку исключений. Предоставляет `CosmosClientException` через `CosmosDBAccessException` .
 * Предоставляет доступ `requestCharge` и `activityId` через `ResponseDiagnostics` .
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 * Устранение ошибки обновления 3.5.0 в пакете SDK, Cosmos DB если размер заголовка ответа HTTP превышает 8192 байт, "" Консистенциполици. Дефаултконсистенцилевел () завершается сбоем при ограниченном устаревания и соответствующем префиксе ".
 * Исправляет `findById` поведение метода. Ранее этот метод возвращает значение Empty, если сущность не найдена вместо создания исключения.
 * Исправляет ошибку, при которой сортировка не была применена на следующей странице при `CosmosPageRequest` использовании.
@@ -125,7 +125,7 @@ ms.locfileid: "93097147"
 ### <a name="219-december-26-2019"></a>2.1.9 (26 декабря 2019 г.)
 #### <a name="new-features"></a>Новые функции
 * Добавляет поле заметки для включения или отключения автоматического создания коллекции.
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 *  Исправляет `findById` поведение метода. Ранее этот метод возвращает значение Empty, если сущность не найдена вместо создания исключения.
 
 ### <a name="220-october-21-2019"></a>2.2.0 (21 октября, 2019)
@@ -138,7 +138,7 @@ ms.locfileid: "93097147"
 * Добавляет `findByIdAndPartitionKey` `deleteByIdAndPartitionKey` API-интерфейсы и.
 * Удаляет зависимость из Azure-documentdb.
 * Перефирменная символика DocumentDB на Azure Cosmos DB.
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 * Исправления "при сортировке возникает исключение, когда pageSize меньше общего количества элементов в репозитории".
 
 ### <a name="218-october-18-2019"></a>2.1.8 (18 октября, 2019)
@@ -157,14 +157,14 @@ ms.locfileid: "93097147"
 * Добавляет другие изменения конфигурации для поддержки реактивного репозитория Cosmos.
 
 ### <a name="212-march-19-2019"></a>2.1.2 (19 марта 2019 г.)
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 * Удаляет `applicationInsights` зависимость для:
     * Потенциальный риск замусоривать зависимостей.
     * Несовместимость с Java 11.
     * Предотвращение потенциального влияния на производительность ЦП и/или памяти.
 
 ### <a name="207-march-20-2019"></a>2.0.7 (20 марта 2019 г.)
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 * Независимый порт удаляет `applicationInsights` зависимость для:
     * Потенциальный риск замусоривать зависимостей.
     * Несовместимость с Java 11.
@@ -186,7 +186,7 @@ ms.locfileid: "93097147"
 #### <a name="new-features"></a>Новые функции
 * Добавляет ключевые слова `exists` и `startsWith` .
 * Файл сведений об обновлениях.
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 * Исправления "не удается вызвать Self href непосредственно для сущности".
 * Исправления "findAll завершится ошибкой, если коллекция не будет создана".
 
@@ -198,7 +198,7 @@ ms.locfileid: "93097147"
 * Упрощает настройку пружинных данных — cosmosdb.
 * Добавляет `deleteCollection` `deleteAll` API-интерфейсы и.
 
-#### <a name="key-bug-fixes"></a>Исправления основных ошибок
+#### <a name="key-bug-fixes"></a>Основные исправления ошибок
 * Исправление ошибок и устранение дефектов.
 
 ## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ

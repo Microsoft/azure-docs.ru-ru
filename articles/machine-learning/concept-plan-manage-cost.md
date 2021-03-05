@@ -10,12 +10,12 @@ ms.service: machine-learning
 ms.subservice: core
 ms.topic: conceptual
 ms.date: 05/08/2020
-ms.openlocfilehash: 9ee5c8dcfb23b758a92e7b50f33a905852948e5a
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: be8b11b6ddf715e5d6226372e8d03b42dec5fc7d
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98877481"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102215992"
 ---
 # <a name="plan-and-manage-costs-for-azure-machine-learning"></a>Планирование и управление затратами для Машинное обучение Azure
 
@@ -57,7 +57,7 @@ ms.locfileid: "98877481"
 
 ### <a name="costs-that-typically-accrue-with-azure-machine-learning"></a>Затраты, которые обычно начисляются с помощью Машинное обучение Azure
 
-При создании ресурсов для Машинное обучение Azure рабочей области также создаются ресурсы для других служб Azure. К ним относятся:
+При создании ресурсов для Машинное обучение Azure рабочей области также создаются ресурсы для других служб Azure. Они приведены ниже.
 
 * [Реестр контейнеров Azure](https://azure.microsoft.com/pricing/details/container-registry?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn) Обычная учетная запись
 * [Хранилище блочных BLOB-объектов Azure](https://azure.microsoft.com/pricing/details/storage/blobs?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn) (общего назначения v1)
@@ -121,7 +121,7 @@ ws.delete(delete_dependent_resources=True)
 + Если вы выполняете меньше итеративных экспериментов, сократите это время, чтобы сэкономить затраты.
 + При выполнении высокоитеративного эксперимента для разработки и тестирования может потребоваться увеличить время, чтобы не платить за постоянное масштабирование после каждого изменения в обучающем сценарии или среде.
 
-Кластеры Амлкомпуте можно настроить для изменения требований рабочей нагрузки в портал Azure с помощью [класса пакета SDK для амлкомпуте](/python/api/azureml-core/azureml.core.compute.amlcompute.amlcompute?preserve-view=true&view=azure-ml-py), [амлкомпуте интерфейса командной строки](/cli/azure/ext/azure-cli-ml/ml/computetarget/create?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-create-amlcompute)с [интерфейсами API](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable).
+Кластеры Амлкомпуте можно настроить для изменения требований рабочей нагрузки в портал Azure с помощью [класса пакета SDK для амлкомпуте](/python/api/azureml-core/azureml.core.compute.amlcompute.amlcompute?preserve-view=true&view=azure-ml-py), [амлкомпуте интерфейса командной строки](/cli/azure/ext/azure-cli-ml/ml/computetarget/create#ext-azure-cli-ml-az-ml-computetarget-create-amlcompute)с [интерфейсами API](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable).
 
 ```azurecli
 az ml computetarget create amlcompute --name testcluster --vm-size Standard_NC6 --min-nodes 0 --max-nodes 5 --idle-seconds-before-scaledown 300

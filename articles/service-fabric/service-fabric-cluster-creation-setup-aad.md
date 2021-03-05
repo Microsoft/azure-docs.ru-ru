@@ -3,12 +3,12 @@ title: Настройка Azure Active Directory для проверки под�
 description: Сведения о настройке Azure Active Directory (Azure AD) для проверки подлинности клиентов для кластеров Service Fabric.
 ms.topic: conceptual
 ms.date: 6/28/2019
-ms.openlocfilehash: 537a81a090828d3fcc9dde6032f1d4eb2df9b4e4
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: a1f89e144f9cef12c5bff87befb00a88bad8d7d9
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "86258776"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102215975"
 ---
 # <a name="set-up-azure-active-directory-for-client-authentication"></a>Настройка Azure Active Directory для проверки подлинности клиента
 
@@ -104,7 +104,7 @@ https://&lt;cluster_domain&gt;:19080/Explorer
 Приложение кластера (веб-приложение), представляющее Service Fabric Explorer, пытается выполнить аутентификацию в Azure AD и в составе запроса предоставляет URL-адрес ответа для перенаправления. URL-адрес не указан в списке **URL-АДРЕС ОТВЕТА** приложения Azure AD.
 
 #### <a name="solution"></a>Решение
-На странице регистрации приложений Azure AD для кластера выберите **Проверка подлинности**и в разделе **URI перенаправления** добавьте URL-адрес Service Fabric Explorer в список. Сохраните изменения.
+На странице регистрации приложений Azure AD для кластера выберите **Проверка подлинности** и в разделе **URI перенаправления** добавьте URL-адрес Service Fabric Explorer в список. Сохраните изменения.
 
 ![URL-адрес ответа веб – приложения][web-application-reply-url]
 
@@ -138,7 +138,7 @@ FabricClient и FabricGateway выполняют взаимную аутенти
 
 
 <!-- Links -->
-[azure-CLI]:https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest
+[azure-CLI]:https://docs.microsoft.com/cli/azure/get-started-with-azure-cli
 [azure-portal]: https://portal.azure.com/
 [service-fabric-cluster-security]: service-fabric-cluster-security.md
 [active-directory-howto-tenant]:../active-directory/develop/quickstart-create-new-tenant.md

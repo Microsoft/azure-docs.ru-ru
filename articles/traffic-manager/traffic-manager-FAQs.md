@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 03/03/2021
 ms.author: duau
-ms.openlocfilehash: 163436ad82ea6f5067ad41b7fdd7e315db6dc29a
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 0d4f1ed6bab5775c44b2a745e1edc5fc07e0c06d
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102095023"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102215465"
 ---
 # <a name="traffic-manager-frequently-asked-questions-faq"></a>Диспетчер трафика Azure: вопросы и ответы
 
@@ -306,7 +306,7 @@ IP-адреса для связи с конечной точкой можно у
 
 Использование конечных точек из нескольких подписок не поддерживается в веб-приложениях Azure. Для работы веб-приложений Azure требуется, чтобы любое имя пользовательского домена, используемое в них, использовалось только в пределах одной подписки. Невозможно использовать веб-приложения из нескольких подписок с одним и тем же доменным именем.
 
-Для других типов конечных точек можно использовать диспетчер трафика, если эти конечные точки расположены в нескольких подписках. В Resource Manager в диспетчер трафика можно добавить конечные точки из любой подписки при условии, что у пользователя, настраивающего профиль диспетчера трафика, есть доступ на чтение к этим конечным точкам. Эти разрешения можно предоставить с помощью [управления доступом на основе ролей Azure (Azure RBAC)](../role-based-access-control/role-assignments-portal.md). Конечные точки из других подписок можно добавить с помощью [Azure PowerShell](/powershell/module/az.trafficmanager/new-aztrafficmanagerendpoint) или [Azure CLI](/cli/azure/network/traffic-manager/endpoint?view=azure-cli-latest#az-network-traffic-manager-endpoint-create).
+Для других типов конечных точек можно использовать диспетчер трафика, если эти конечные точки расположены в нескольких подписках. В Resource Manager в диспетчер трафика можно добавить конечные точки из любой подписки при условии, что у пользователя, настраивающего профиль диспетчера трафика, есть доступ на чтение к этим конечным точкам. Эти разрешения можно предоставить с помощью [управления доступом на основе ролей Azure (Azure RBAC)](../role-based-access-control/role-assignments-portal.md). Конечные точки из других подписок можно добавить с помощью [Azure PowerShell](/powershell/module/az.trafficmanager/new-aztrafficmanagerendpoint) или [Azure CLI](/cli/azure/network/traffic-manager/endpoint#az-network-traffic-manager-endpoint-create).
 
 ### <a name="can-i-use-traffic-manager-with-cloud-service-staging-slots"></a>Можно ли использовать диспетчер трафика с промежуточными слотами облачной службы?
 

@@ -12,12 +12,12 @@ ms.workload: data-services
 ms.custom: mvc
 ms.topic: troubleshooting
 ms.date: 07/08/2020
-ms.openlocfilehash: d51de526205e8ef663dcfd682ec5858e4bc2f645
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 719dcecf3091e03fbcbe6a82d4c618f54243c4e1
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102183987"
+ms.locfileid: "102215346"
 ---
 # <a name="status-of-migration-scenarios-supported-by-azure-database-migration-service"></a>Состояние сценариев миграции, поддерживаемых Azure Database Migration Service
 
@@ -83,9 +83,12 @@ Azure Database Migration Service предназначен для поддерж�
 | **База данных Azure для PostgreSQL — один сервер** | PostgreSQL | ✔ | GA |
 |   | База данных Azure для PostgreSQL — один сервер | ✔ | GA |
 |   | RDS PostgreSQL | ✔ | GA |
-|   | Oracle; | ✔ | Общедоступная предварительная версия |
+|   | Oracle; | ✔ | Общедоступная Предварительная версия (является устаревшей после 1 мая, 2021) |
 | **База данных Azure для PostgreSQL — масштабирование (Цитус)** | PostgreSQL | ✔ | GA |
 |   | RDS PostgreSQL | ✔ | GA |
+
+> [!IMPORTANT]
+> Сценарий миграции с Oracle на Базу данных Azure для PostgreSQL (сейчас на этапе предварительной версии) станет недоступен после 1 мая 2021 г. Мы продолжим предоставлять поддержку через альтернативные средства (например, Ora2pg) и обеспечивать оптимальный способ миграции с Oracle на PostgreSQL. Рекомендации по миграции см. в [руководстве по миграции с Oracle на Базу данных Azure для PostgreSQL] (https://aka.ms/OracletoPGguide).
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

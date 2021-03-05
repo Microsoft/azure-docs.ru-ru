@@ -13,12 +13,12 @@ ms.custom:
 - mqtt
 - 'Role: Cloud Development'
 - 'Role: Operations'
-ms.openlocfilehash: bd016fcfe377dc610d5918ad8128fff4f6473fe5
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.openlocfilehash: e786a323cfb1ebacdf7e6693e3ca4299f10aadb3
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
-ms.locfileid: "92538465"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102216043"
 ---
 # <a name="choose-the-right-iot-hub-tier-for-your-solution"></a>Выбор правильного уровня Центра Интернета вещей для решения
 
@@ -77,27 +77,27 @@ ms.locfileid: "92538465"
 
 | API | Уровень Basic | Уровень "Бесплатный"/"Стандартный" |
 | --- | ---------- | ------------- |
-| [Удаление устройства](/javascript/api/azure-iot-digitaltwins-service/registrymanager?view=azure-node-latest#deletedevice-string--models-registrymanagerdeletedeviceoptionalparams-) | Да | Да |
+| [Удаление устройства](/javascript/api/azure-iot-digitaltwins-service/registrymanager#deletedevice-string--models-registrymanagerdeletedeviceoptionalparams-) | Да | Да |
 | [Получение устройства](/azure/iot-hub/iot-c-sdk-ref/iothub-registrymanager-h/iothubregistrymanager-getdevice) | Да | Да |
 | [Удаление модуля](/azure/iot-hub/iot-c-sdk-ref/iothub-registrymanager-h/iothubregistrymanager-deletemodule) | Да | Да |
-| [Получение модуля](/java/api/com.microsoft.azure.sdk.iot.service.registrymanager.getmodule?view=azure-java-stable) | Да | Да |
-| [Получение статистики реестра](/javascript/api/azure-iot-digitaltwins-service/registrymanager?view=azure-node-latest#getdevicestatistics-msrest-requestoptionsbase-) | Да | Да |
-| [Получение статистики службы](/javascript/api/azure-iot-digitaltwins-service/registrymanager?view=azure-node-latest#getservicestatistics-msrest-requestoptionsbase-) | Да | Да |
-| [Создание или обновление устройства](/javascript/api/azure-iot-digitaltwins-service/registrymanager?view=azure-node-latest#createorupdatedevice-string--device--servicecallback-device--) | Да | Да |
-| [Создание или обновление модуля](/javascript/api/azure-iot-digitaltwins-service/registrymanager?view=azure-node-latest#createorupdatemodule-string--string--module--models-registrymanagercreateorupdatemoduleoptionalparams-) | Да | Да |
+| [Получение модуля](/java/api/com.microsoft.azure.sdk.iot.service.registrymanager.getmodule) | Да | Да |
+| [Получение статистики реестра](/javascript/api/azure-iot-digitaltwins-service/registrymanager#getdevicestatistics-msrest-requestoptionsbase-) | Да | Да |
+| [Получение статистики службы](/javascript/api/azure-iot-digitaltwins-service/registrymanager#getservicestatistics-msrest-requestoptionsbase-) | Да | Да |
+| [Создание или обновление устройства](/javascript/api/azure-iot-digitaltwins-service/registrymanager#createorupdatedevice-string--device--servicecallback-device--) | Да | Да |
+| [Создание или обновление модуля](/javascript/api/azure-iot-digitaltwins-service/registrymanager#createorupdatemodule-string--string--module--models-registrymanagercreateorupdatemoduleoptionalparams-) | Да | Да |
 | [Отправка запроса в Центр Интернета вещей](/dotnet/api/microsoft.azure.devices.registrymanager?view=azure-dotnet) | Да | Да |
 | [Создание URI SAS отправки файла](/rest/api/iothub/device/createfileuploadsasuri) | Да | Да |
 | [Получение связанного с устройством уведомления](/rest/api/iothub/device/receivedeviceboundnotification) | Да | Да |
 | [Отправка события устройства](/rest/api/iothub/device/senddeviceevent) | Да | Да |
 | Отправка события модуля | Только AMQP и MQTT | Только AMQP и MQTT |
 | [Обновление состояния отправки устройства](/rest/api/iothub/device/updatefileuploadstatus) | Да | Да |
-| [Массовые операции устройств](/javascript/api/azure-iot-digitaltwins-service/registrymanager?view=azure-node-latest#bulkdevicecrud-exportimportdevice----msrest-requestoptionsbase-) | Да, за исключением возможностей IoT Edge | Да |
+| [Массовые операции устройств](/javascript/api/azure-iot-digitaltwins-service/registrymanager#bulkdevicecrud-exportimportdevice----msrest-requestoptionsbase-) | Да, за исключением возможностей IoT Edge | Да |
 | [Отмена задания импорта и экспорта](/rest/api/iothub/service/jobs/cancelimportexportjob) | Да | Да |
 | [Создание задания импорта и экспорта](/rest/api/iothub/service/jobs/createimportexportjob) | Да | Да |
 | [Получение задания импорта и экспорта](/rest/api/iothub/service/jobs/getimportexportjob) | Да | Да |
 | [Получение заданий импорта и экспорта](/rest/api/iothub/service/jobs/getimportexportjobs) | Да | Да |
-| [Очистка очереди команд](/javascript/api/azure-iot-digitaltwins-service/registrymanager?view=azure-node-latest#purgecommandqueue-string--msrest-requestoptionsbase-) |   | Да |
-| [Получение двойника устройства](/java/api/com.microsoft.azure.sdk.iot.device.deviceclient.getdevicetwin?view=azure-java-stable) |   | Да |
+| [Очистка очереди команд](/javascript/api/azure-iot-digitaltwins-service/registrymanager#purgecommandqueue-string--msrest-requestoptionsbase-) |   | Да |
+| [Получение двойника устройства](/java/api/com.microsoft.azure.sdk.iot.device.deviceclient.getdevicetwin) |   | Да |
 | [Получение двойника модуля](/azure/iot-hub/iot-c-sdk-ref/iothub-devicetwin-h/iothubdevicetwin-getmoduletwin) |   | Да |
 | [Вызов метода устройства](./iot-hub-devguide-direct-methods.md) |   | Да |
 | [Обновление двойников устройств](./iot-hub-devguide-device-twins.md) |   | Да |
@@ -106,8 +106,8 @@ ms.locfileid: "92538465"
 | [Полное связанное с устройством уведомление](/rest/api/iothub/device/completedeviceboundnotification) |   | Да |
 | [Отмена задания](/rest/api/media/jobs/canceljob) |   | Да |
 | [Создание задания](/rest/api/media/jobs/create) |   | Да |
-| [Получение задания](/java/api/com.microsoft.azure.sdk.iot.service.jobs.jobclient.getjob?view=azure-java-stable) |   | Да |
-| [Запрос заданий](/javascript/api/azure-iot-digitaltwins-service/jobclient?view=azure-node-latest#queryjobs-jobclientqueryjobsoptionalparams--servicecallback-queryresult--) |   | Да |
+| [Получение задания](/java/api/com.microsoft.azure.sdk.iot.service.jobs.jobclient.getjob) |   | Да |
+| [Запрос заданий](/javascript/api/azure-iot-digitaltwins-service/jobclient#queryjobs-jobclientqueryjobsoptionalparams--servicecallback-queryresult--) |   | Да |
 
 ## <a name="message-throughput"></a>Пропускная способность сообщений
 

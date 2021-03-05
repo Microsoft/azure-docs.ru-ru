@@ -6,17 +6,54 @@ author: cweining
 ms.author: cweining
 ms.date: 03/07/2019
 ms.reviewer: mbullwin
-ms.openlocfilehash: c9813108c05cabbd071a9d919452682bd6ad69e7
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a285f26a406caa88d91da5647b3b79cffc9b614f
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101731958"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102217420"
 ---
 # <a name="troubleshoot-problems-enabling-application-insights-snapshot-debugger-or-viewing-snapshots"></a><a id="troubleshooting"></a> Устранение неполадок, связанных с включением Application Insights Snapshot Debugger или просмотром моментальных снимков
 Если вы включили Application Insights Snapshot Debugger для приложения, но не видите моментальные снимки для исключений, эти инструкции можно использовать для устранения неполадок.
 
 Создание моментальных снимков может быть вызвано множеством разных причин. Можно начать с запуска проверки работоспособности моментального снимка, чтобы определить некоторые из возможных распространенных причин.
+
+## <a name="make-sure-youre-using-the-appropriate-snapshot-debugger-endpoint"></a>Убедитесь, что вы используете соответствующую конечную точку Snapshot Debugger
+
+Сейчас только регионы, требующие внесения изменений в конечную точку, — это [Azure для государственных организаций](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#application-insights) и [Azure для Китая](https://docs.microsoft.com/azure/china/resources-developer-guide).
+
+Для службы приложений и приложений, использующих пакет SDK для Application Insights, необходимо обновить строку подключения, используя поддерживаемые переопределения для Snapshot Debugger, как определено ниже.
+
+|Свойство строки подключения    | Облако для государственных организаций США | Облако для Китая |   
+|---------------|---------------------|-------------|
+|снапшотендпоинт         | `https://snapshot.monitor.azure.us`    | `https://snapshot.monitor.azure.cn` |
+
+Дополнительные сведения о других переопределениях соединений см. в [документации по Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/sdk-connection-string?tabs=net#connection-string-with-explicit-endpoint-overrides).
+
+Для приложение-функция необходимо обновить `host.json` с использованием поддерживаемых переопределений ниже:
+
+|Свойство.    | Облако для государственных организаций США | Облако для Китая |   
+|---------------|---------------------|-------------|
+|ажентендпоинт         | `https://snapshot.monitor.azure.us`    | `https://snapshot.monitor.azure.cn` |
+
+Ниже приведен пример `host.json` обновленной конечной точки облачного агента для государственных организаций США:
+```json
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingExcludedTypes": "Request",
+      "samplingSettings": {
+        "isEnabled": true
+      },
+      "snapshotConfiguration": {
+        "isEnabled": true,
+        "agentEndpoint": "https://snapshot.monitor.azure.us"
+      }
+    }
+  }
+}
+```
 
 ## <a name="use-the-snapshot-health-check"></a>Использование проверки работоспособности моментальных снимков
 Из-за некоторых распространенных проблем окно "Открыть моментальный снимок отладки" может не отображаться. Например, из-за использования устаревшего сборщика моментальных снимков, достижения ежедневного лимита отправки или длительного времени передачи моментального снимка. Для устранения распространенных неполадок можно использовать проверку работоспособности моментальных снимков.

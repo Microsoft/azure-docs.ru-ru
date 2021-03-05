@@ -7,25 +7,25 @@ ms.reviewer: estfan, logicappspm
 ms.topic: article
 ms.custom: mvc, devx-track-azurecli
 ms.date: 07/30/2020
-ms.openlocfilehash: e66edb1325d1c603e89f877f1d34f60c136eb1db
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.openlocfilehash: a4553ceee482fb232e9ab56deca650be93f9dc6b
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92740723"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102218049"
 ---
 # <a name="azure-cli-script-sample---create-a-logic-app"></a>Azure CLI пример скрипта. Создание приложения логики
 
-Этот скрипт создает пример приложения логики с помощью [расширения Azure CLI Logic Apps](/cli/azure/ext/logic/logic?view=azure-cli-latest)( `az logic` ). Подробное руководство по созданию приложений логики и управлению ими с помощью Azure CLI см. в [Logic Apps краткого](quickstart-logic-apps-azure-cli.md)руководства по Azure CLI.
+Этот скрипт создает пример приложения логики с помощью [расширения Azure CLI Logic Apps](/cli/azure/ext/logic/logic)( `az logic` ). Подробное руководство по созданию приложений логики и управлению ими с помощью Azure CLI см. в [Logic Apps краткого](quickstart-logic-apps-azure-cli.md)руководства по Azure CLI.
 
 > [!WARNING]
-> Расширение Azure CLI Logic Apps в настоящее время *экспериментальное* , на него не предоставляется *клиентская поддержка* . Используйте это расширение CLI с осторожностью, особенно в рабочих средах.
+> Расширение Azure CLI Logic Apps в настоящее время *экспериментальное*, на него не предоставляется *клиентская поддержка*. Используйте это расширение CLI с осторожностью, особенно в рабочих средах.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 * Учетная запись Azure с активной подпиской. Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-* [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest), установленный на локальном компьютере.
-* Расширение [Logic Apps Azure CLI](/cli/azure/azure-cli-extensions-list?view=azure-cli-latest), установленное на компьютере. Чтобы установить это расширение, используйте следующую команду: `az extension add --name logic`
+* [Azure CLI](/cli/azure/install-azure-cli), установленный на локальном компьютере.
+* Расширение [Logic Apps Azure CLI](/cli/azure/azure-cli-extensions-list), установленное на компьютере. Чтобы установить это расширение, используйте следующую команду: `az extension add --name logic`
 * [Определение рабочего процесса](quickstart-logic-apps-azure-cli.md#workflow-definition) для приложения логики. Этот JSON-файл должен соответствовать [схеме языка определения рабочих процессов](logic-apps-workflow-definition-language.md).
 * Подключение API к учетной записи электронной почты через поддерживаемый [соединитель Logic Apps](../connectors/apis-list.md) в той же группе ресурсов, что и приложение логики. В этом примере используется соединитель [Office 365 Outlook](../connectors/connectors-create-api-office365-outlook.md) , но можно также использовать другие соединители, такие как [Outlook.com](../connectors/connectors-create-api-outlook.md).
 
@@ -35,9 +35,9 @@ ms.locfileid: "92740723"
 
 * Войдите на портал Azure и убедитесь, что ваша подписка активна, выполнив команду `az login`.
 
-* Проверьте версию Azure CLI в терминале или в командном окне, выполнив команду `az --version`. Сведения о последней версии см. в [заметках о выпуске](/cli/azure/release-notes-azure-cli?tabs=azure-cli&view=azure-cli-latest).
+* Проверьте версию Azure CLI в терминале или в командном окне, выполнив команду `az --version`. Сведения о последней версии см. в [заметках о выпуске](/cli/azure/release-notes-azure-cli).
 
-  * Если у вас нет последней версии, обновите установку, следуя указаниям в [руководстве по установке операционной системы или платформы](/cli/azure/install-azure-cli?view=azure-cli-latest).
+  * Если у вас нет последней версии, обновите установку, следуя указаниям в [руководстве по установке операционной системы или платформы](/cli/azure/install-azure-cli).
 
 ### <a name="sample-workflow-explanation"></a>Пример описания рабочего процесса
 
@@ -197,12 +197,12 @@ az group delete --name testResourceGroup --yes
 
 | Get-Help | Примечания |
 | ------- | ----- |
-| [`az group create`](/cli/azure/group?view=azure-cli-latest#az-group-create) | Создает группу ресурсов, в которой хранятся ресурсы приложения логики. |
-| [`az logic workflow create`](/cli/azure/ext/logic/logic/workflow?view=azure-cli-latest#ext-logic-az-logic-workflow-create) | Создает приложение логики на основе рабочего процесса, определенного в параметре `--definition` . |
-| [`az group delete`](/cli/azure/vm/extension?view=azure-cli-latest) | Удаляет группу ресурсов и все ее вложенные ресурсы. |
+| [`az group create`](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся ресурсы приложения логики. |
+| [`az logic workflow create`](/cli/azure/ext/logic/logic/workflow#ext-logic-az-logic-workflow-create) | Создает приложение логики на основе рабочего процесса, определенного в параметре `--definition` . |
+| [`az group delete`](/cli/azure/vm/extension) | Удаляет группу ресурсов и все ее вложенные ресурсы. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения об Azure CLI см. в [документации по Azure CLI](/cli/azure/?view=azure-cli-latest).
+Дополнительные сведения об Azure CLI см. в [документации по Azure CLI](/cli/azure/).
 
 Дополнительные примеры скриптов CLI для Logic Apps можно найти в [браузере примеров кода Майкрософт](/samples/browse/?products=azure-logic-apps).

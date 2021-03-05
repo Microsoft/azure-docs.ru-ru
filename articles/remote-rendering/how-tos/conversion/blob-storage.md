@@ -5,12 +5,12 @@ author: jakrams
 ms.author: jakras
 ms.date: 02/04/2020
 ms.topic: how-to
-ms.openlocfilehash: cfc10658463888e43ea1a24dfefd3f8939ec8ef7
-ms.sourcegitcommit: 3c3ec8cd21f2b0671bcd2230fc22e4b4adb11ce7
+ms.openlocfilehash: 889c25fd1402c4438ff648afce64905de112c8db
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98762786"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102215550"
 ---
 # <a name="use-azure-blob-storage-for-model-conversion"></a>Использование хранилища BLOB-объектов Azure для преобразования модели
 
@@ -28,7 +28,7 @@ ms.locfileid: "98762786"
 Создание учетной записи хранения и контейнеров больших двоичных объектов можно выполнить с помощью одного из следующих средств:
 
 - [Портал Azure](https://portal.azure.com)
-- [AZ — Командная строка](/cli/azure/install-azure-cli?view=azure-cli-latest)
+- [AZ — Командная строка](/cli/azure/install-azure-cli)
 - [Обозреватель службы хранилища Azure](https://azure.microsoft.com/features/storage-explorer/)
 - Пакеты SDK (C#, Python...)
 
@@ -52,7 +52,7 @@ URI SAS можно создать с помощью одного из следу
 
 - AZ PowerShell Module
   - см. [примеры сценариев PowerShell](../../samples/powershell-example-scripts.md) .
-- [AZ — Командная строка](/cli/azure/install-azure-cli?view=azure-cli-latest)
+- [AZ — Командная строка](/cli/azure/install-azure-cli)
 - [Обозреватель службы хранилища Azure](https://azure.microsoft.com/features/storage-explorer/)
   - Щелкните правой кнопкой мыши контейнер "получить подписанный URL-доступ" (чтение, получение списка доступа для входного контейнера, доступ на запись для контейнера выходных данных).
 - Пакеты SDK (C#, Python...)

@@ -13,12 +13,12 @@ ms.devlang: ne
 ms.topic: conceptual
 ms.date: 10/23/2020
 ms.author: inhenkel
-ms.openlocfilehash: fac823cc43ed4606db3e7f86bc5c1e36ee50fadb
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 7a74eca129ce273bd96ea8962ed9ddf2907ea100
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101730309"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102216179"
 ---
 # <a name="live-events-and-live-outputs-in-media-services"></a>События и выходные данные прямой трансляции в Службах мультимедиа
 
@@ -148,7 +148,7 @@ ms.locfileid: "101730309"
     |Язык|Включить URL-адрес именного|Задание маркера доступа.|
     |---|---|---|
     |REST|[Properties. Ванитюрл](/rest/api/media/liveevents/create#liveevent)|[Лививентинпут. accessToken](/rest/api/media/liveevents/create#liveeventinput)|
-    |CLI|[--именного — URL-адрес](/cli/azure/ams/live-event?view=azure-cli-latest#az-ams-live-event-create)|[--Access — токен](/cli/azure/ams/live-event?view=azure-cli-latest#optional-parameters)|
+    |CLI|[--именного — URL-адрес](/cli/azure/ams/live-event#az-ams-live-event-create)|[--Access — токен](/cli/azure/ams/live-event#optional-parameters)|
     |.NET|[Лививент. Ванитюрл](/dotnet/api/microsoft.azure.management.media.models.liveevent?view=azure-dotnet#Microsoft_Azure_Management_Media_Models_LiveEvent_VanityUrl)|[Лививентинпут. AccessToken](/dotnet/api/microsoft.azure.management.media.models.liveeventinput.accesstoken?view=azure-dotnet#Microsoft_Azure_Management_Media_Models_LiveEventInput_AccessToken)|
 
 ### <a name="live-ingest-url-naming-rules"></a>Правила именования URL-адресов динамического приема

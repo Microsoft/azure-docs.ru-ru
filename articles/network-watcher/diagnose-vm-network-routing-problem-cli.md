@@ -17,12 +17,12 @@ ms.workload: infrastructure
 ms.date: 01/07/2021
 ms.author: damendo
 ms.custom: ''
-ms.openlocfilehash: 42174ce094242a6e7412deea0bf1f0eed0f3b6ea
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.openlocfilehash: 5dac16e5cc1e88d833bf6d3c2660570fcf8b8e9e
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98013181"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102216961"
 ---
 # <a name="diagnose-a-virtual-machine-network-routing-problem---azure-cli"></a>Диагностика проблем с маршрутизацией в сети виртуальной машины с помощью Azure CLI
 
@@ -73,7 +73,7 @@ az network watcher configure \
 
 ### <a name="use-next-hop"></a>Использование следующего прыжка
 
-Azure автоматически создает маршруты к пунктам назначения по умолчанию. Вы можете создать настраиваемые маршруты, которые переопределяют маршруты по умолчанию. В некоторых случаях настраиваемые маршруты могут привести к сбою связи. Чтобы проверить маршрутизацию из виртуальной машины, выполните команду [az network watcher show-next-hop](/cli/azure/network/watcher?view=azure-cli-latest#az-network-watcher-show-next-hop) для определения следующего прыжка маршрутизации при поступлении трафика на определенный адрес.
+Azure автоматически создает маршруты к пунктам назначения по умолчанию. Вы можете создать настраиваемые маршруты, которые переопределяют маршруты по умолчанию. В некоторых случаях настраиваемые маршруты могут привести к сбою связи. Чтобы проверить маршрутизацию из виртуальной машины, выполните команду [az network watcher show-next-hop](/cli/azure/network/watcher#az-network-watcher-show-next-hop) для определения следующего прыжка маршрутизации при поступлении трафика на определенный адрес.
 
 Проверьте исходящее подключение виртуальной машины по любому из IP-адресов сайта www.bing.com.
 

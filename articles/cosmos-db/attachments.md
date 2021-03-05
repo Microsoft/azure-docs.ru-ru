@@ -8,12 +8,12 @@ ms.subservice: cosmosdb-sql
 ms.topic: conceptual
 ms.date: 08/07/2020
 ms.reviewer: sngun
-ms.openlocfilehash: b6504c0521328edc356dea1c146fe9aeb6bde55f
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.openlocfilehash: 0a2ff0f24e3fe4711e0d2f1c306ae2eaa0fda5e0
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93092744"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102217250"
 ---
 # <a name="azure-cosmos-db-attachments"></a>Azure Cosmos DB вложения
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -163,5 +163,5 @@ namespace attachments
 
 - Приступая к работе с [хранилищем BLOB-объектов Azure](../storage/blobs/storage-quickstart-blobs-dotnet.md)
 - Получение ссылок на использование вложений с помощью [пакета SDK .NET версии 2 для Azure Cosmos DB](/dotnet/api/microsoft.azure.documents.attachment?preserve-view=true&view=azure-dotnet)
-- Получение ссылок на использование вложений с помощью [пакета SDK для Java для Azure Cosmos DB версии 2](/java/api/com.microsoft.azure.documentdb.attachment?preserve-view=true&view=azure-java-stable)
+- Получение ссылок на использование вложений с помощью [пакета SDK для Java для Azure Cosmos DB версии 2](/java/api/com.microsoft.azure.documentdb.attachment)
 - Получение ссылок на использование вложений с помощью [REST API Azure Cosmos DB](/rest/api/cosmos-db/attachments)

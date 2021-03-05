@@ -15,12 +15,12 @@ ms.workload: na
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 9291d53822f0fbb80f759908933db58f2224c3d7
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.openlocfilehash: b58280a7a1a49bdc8fc81900a32ee4edc115c71f
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101091906"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102216162"
 ---
 # <a name="cli-example-create-and-submit-a-job"></a>Пример для CLI. Создание и отправка задания
 
@@ -88,4 +88,4 @@ az ams job start \
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-[az ams job (CLI)](/cli/azure/ams/job?view=azure-cli-latest)
+[az ams job (CLI)](/cli/azure/ams/job)

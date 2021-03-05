@@ -10,12 +10,12 @@ ms.devlang: java
 ms.topic: conceptual
 ms.date: 08/16/2019
 ms.custom: mqtt, devx-track-java
-ms.openlocfilehash: 36092e0bb7d0249837d2eaa7898e9231ecb5f5a9
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.openlocfilehash: 3e98cfc2d8c7fb8d40c8565a1c620f123ce171ff
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92146995"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102217845"
 ---
 # <a name="schedule-and-broadcast-jobs-java"></a>Планирование и трансляция заданий (Java)
 
@@ -54,7 +54,7 @@ ms.locfileid: "92146995"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* [Пакет SDK для Java SE 8](/java/azure/jdk/?view=azure-java-stable). Щелкните ссылку **Java 8** в разделе **Долгосрочная поддержка**, чтобы скачать все необходимое для работы с JDK 8.
+* [Пакет SDK для Java SE 8](/java/azure/jdk/). Щелкните ссылку **Java 8** в разделе **Долгосрочная поддержка**, чтобы скачать все необходимое для работы с JDK 8.
 
 * [Maven 3](https://maven.apache.org/download.cgi)
 
