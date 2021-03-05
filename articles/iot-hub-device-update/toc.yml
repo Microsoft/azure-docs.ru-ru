@@ -40,6 +40,8 @@
       href: connected-cache-disconnected-device-update.md
     - name: Настройка подключенного кэша Майкрософт для обновления устройств для центра Интернета вещей
       href: connected-cache-configure.md
+    - name: 'Импорт: схема и другие сведения'
+      href: import-schema.md
 - name: Практические руководства
   items:
     - name: Создание учетной записи обновления устройств

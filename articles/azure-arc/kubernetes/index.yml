@@ -9,14 +9,14 @@ metadata:
   ms.topic: landing-page
   ms.date: 03/02/2021
   ms.author: shasb
-  ms.openlocfilehash: f97b1560e062d1849f726baff8cd66d8e75f8b7f
-  ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+  ms.openlocfilehash: e9acbb8206985fbc9edebba8d4183ca1a97736f7
+  ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/02/2021
-  ms.locfileid: "101647852"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102121666"
 landingContent:
-- title: Подключение кластеров Kubernetes к Azure с помощью Azure Arc
+- title: Сведения об Azure Arc с поддержкой Kubernetes
   linkLists:
   - linkListType: overview
     links:
@@ -30,6 +30,8 @@ landingContent:
       url: conceptual-agent-architecture.md
     - text: Конфигурации и GitOps
       url: conceptual-configurations.md
+    - text: Рабочий процесс CI/CD с использованием GitOps
+      url: conceptual-gitops-ci-cd.md
     - text: Часто задаваемые вопросы
       url: faq.md
 - title: Начало работы
@@ -44,6 +46,8 @@ landingContent:
     links:
     - text: Развертывание конфигураций с использованием GitOps
       url: tutorial-use-gitops-connected-cluster.md
+    - text: Реализация CI/CD с помощью GitOps
+      url: tutorial-gitops-ci-cd.md
 - title: Настройка и мониторинг кластеров, а также управление ими
   linkLists:
   - linkListType: how-to-guide

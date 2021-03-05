@@ -1,6 +1,6 @@
 - name: "Выделенный пул SQL (прежнее название\_— Хранилище данных SQL)"
   href: sql-data-warehouse-overview-what-is.md
-- name: Переход на Azure Synapse
+- name: "Переход на Azure Synapse\_>"
   href: ../overview-what-is.md
 - name: Обзор
   items:

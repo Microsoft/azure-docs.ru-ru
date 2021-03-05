@@ -588,6 +588,8 @@
               href: ./spark/apache-spark-manage-scala-packages.md
             - name: Устранение ошибок при установке пакета Python
               href: ./spark/apache-spark-troubleshoot-library-errors.md
+            - name: Создание частного канала Conda
+              href: ./spark/apache-spark-custom-conda-channel.md
         - name: Использование записных книжек и средств IDE
           items:
             - name: Управление записными книжками

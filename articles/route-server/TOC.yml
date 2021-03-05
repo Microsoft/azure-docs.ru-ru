@@ -6,6 +6,8 @@
       href: overview.md
 - name: Краткие руководства
   items:
+    - name: Настройка сервера маршрутизации — портал
+      href: quickstart-configure-route-server-portal.md
     - name: Настройка сервера маршрутизации — PowerShell
       href: quickstart-configure-route-server-powershell.md
     - name: Настройка сервера маршрутизации — CLI

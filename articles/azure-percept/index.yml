@@ -10,12 +10,12 @@ metadata:
   author: elqu20
   ms.author: v-elqu
   ms.date: 02/11/2021
-  ms.openlocfilehash: 6c7479b33a78432d5b6aea2c02656e8b250b70c7
-  ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+  ms.openlocfilehash: b979f147c67e8e877b5bb0e9d3dc557317c7aa50
+  ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/02/2021
-  ms.locfileid: "101658174"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102097501"
 landingContent:
 - title: Что такое Azure Percept?
   linkLists:
@@ -45,8 +45,22 @@ landingContent:
       url: azure-percept-dk-datasheet.md
     - text: Спецификации Azure Percept Vision
       url: azure-percept-vision-datasheet.md
+    - text: Устранение неполадок
+      url: troubleshoot-dev-kit.md
+- title: Начало работы с Azure Percept Audio
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Настройка Azure Percept Audio
+      url: quickstart-percept-audio-setup.md
+  - linkListType: reference
+    links:
     - text: Спецификации Azure Percept Audio
       url: azure-percept-audio-datasheet.md
+    - text: Устранение неполадок c Azure Percept Audio
+      url: troubleshoot-audio-accessory-speech-module.md
+    - text: Индикатор и кнопка Azure Percept Audio
+      url: audio-button-led-behavior.md
 - title: Создание прототипа искусственного интеллекта для визуального распознавания без написания кода
   linkLists:
   - linkListType: tutorial
@@ -63,20 +77,10 @@ landingContent:
       url: how-to-capture-images.md
     - text: Просмотр телеметрии DevKit
       url: how-to-view-telemetry.md
-- title: Начало работы с Azure Percept Audio
-  linkLists:
-  - linkListType: quickstart
+  - linkListType: concept
     links:
-    - text: Настройка Azure Percept Audio
-      url: quickstart-percept-audio-setup.md
-  - linkListType: reference
-    links:
-    - text: Спецификации Azure Percept Audio
-      url: azure-percept-audio-datasheet.md
-    - text: Устранение неполадок c Azure Percept Audio
-      url: troubleshoot-audio-accessory-speech-module.md
-    - text: Индикатор и кнопка Azure Percept Audio
-      url: audio-button-led-behavior.md
+    - text: Работа с решениями ИИ
+      url: overview-ai-models.md
 - title: Создание решения голосового помощника без написания кода
   linkLists:
   - linkListType: tutorial
@@ -85,22 +89,20 @@ landingContent:
       url: tutorial-no-code-speech.md
   - linkListType: how-to-guide
     links:
-    - text: Настройка голосового помощника
-      url: how-to-configure-voice-assistant.md
     - text: Управление голосовым помощником
       url: how-to-manage-voice-assistant.md
+    - text: Настройка голосового помощника в Центре Интернета вещей
+      url: how-to-configure-voice-assistant.md
 - title: Расширенная разработка с помощью Azure Percept
   linkLists:
   - linkListType: overview
     links:
     - text: Общие сведения о расширенной разработке
       url: overview-advanced-code.md
-  - linkListType: tutorial
+  - linkListType: how-to-guide
     links:
-    - text: Расширенная разработка с использованием облачных служб
-      url: advanced-development-cloud.md
-    - text: Расширенная разработка с использованием локальных средств
-      url: advanced-development-local.md
+    - text: Установщик пакетов Dev Tools
+      url: dev-tools-installer.md
 - title: Поддержка актуальности Azure Percept DK
   linkLists:
   - linkListType: overview
@@ -109,7 +111,7 @@ landingContent:
       url: overview-update-experience.md
   - linkListType: how-to-guide
     links:
-    - text: Настройка обновлений
+    - text: Настройка обновлений по беспроводной сети
       url: how-to-set-up-over-the-air-updates.md
     - text: Обновления по беспроводной сети
       url: how-to-update-over-the-air.md

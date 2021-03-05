@@ -10,6 +10,8 @@
   items:
     - name: Развертывание конфигураций с использованием GitOps
       href: tutorial-use-gitops-connected-cluster.md
+    - name: Реализация CI/CD с помощью GitOps
+      href: tutorial-gitops-ci-cd.md
 - name: Краткие руководства
   items:
     - name: Подключение кластера к Azure Arc
@@ -20,6 +22,8 @@
       href: conceptual-agent-architecture.md
     - name: Конфигурации и GitOps
       href: conceptual-configurations.md
+    - name: Рабочий процесс CI/CD с использованием GitOps
+      href: conceptual-gitops-ci-cd.md
     - name: Часто задаваемые вопросы
       href: faq.md
 - name: Практические руководства

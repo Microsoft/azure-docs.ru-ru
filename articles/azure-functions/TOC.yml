@@ -197,6 +197,9 @@
           href: supported-languages.md
         - name: C# (библиотека классов)
           href: functions-dotnet-class-library.md
+        - name: C# (изолированный процесс)
+          displayName: '.NET isolated, .NET 5'
+          href: dotnet-isolated-process-guide.md
         - name: Скрипт C# (.csx)
           href: functions-reference-csharp.md
         - name: F#
@@ -469,7 +472,7 @@
             - name: Входные данные
               displayName: Blob storage
               href: functions-bindings-storage-blob-input.md
-            - name: Вывод
+            - name: Выходные данные
               displayName: Blob storage
               href: functions-bindings-storage-blob-output.md
         - name: Azure Cosmos DB

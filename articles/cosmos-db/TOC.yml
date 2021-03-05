@@ -818,6 +818,8 @@
               href: enable-notebooks.md
             - name: Импорт записных книжек из GitHub
               href: import-github-notebooks.md
+            - name: Публикация записных книжек в галерее
+              href: publish-notebook-gallery.md
             - name: Использование встроенных команд записной книжки на Python
               href: use-python-notebook-features-and-commands.md
             - name: Использование встроенных команд записной книжки на C#
@@ -860,6 +862,9 @@
           items:
             - name: Настройка предоставления общего доступа к ресурсам (CORS)
               href: how-to-configure-cross-origin-resource-sharing.md
+            - name: Настройка управления доступом на основе ролей
+              href: how-to-setup-rbac.md
+              displayName: 'aad, active directory, rbac'
             - name: Использование управляемых удостоверений для получения доступа к данным
               href: managed-identity-based-authentication.md
               displayName: 'msi, managed service identity, aad, azure active directory, identity'
@@ -1068,7 +1073,7 @@
         - name: Node.js
           href: create-mongodb-nodejs.md
         - name: Python
-          href: create-mongodb-flask.md
+          href: ./mongodb-introduction.md
         - name: Xamarin
           href: create-mongodb-xamarin.md
         - name: Golang
@@ -1103,9 +1108,11 @@
           href: tutorial-global-distribution-mongodb.md
     - name: Основные понятия
       items:
-        - name: Поддержка протокола коммутации (3.6)
+        - name: API версии 4.0
+          href: mongodb-feature-support-40.md
+        - name: API версии 3.6
           href: mongodb-feature-support-36.md
-        - name: Поддержка протокола коммутации (3.2)
+        - name: API версии 3.2
           href: mongodb-feature-support.md
         - name: ВОПРОСЫ И ОТВЕТЫ
           href: mongodb-api-faq.md
@@ -1125,7 +1132,7 @@
               href: ../dms/tutorial-mongodb-cosmos-db.md?toc=/azure/cosmos-db/toc.json&bc=/azure/cosmos-db/breadcrumb/toc.json
             - name: Руководство по действиям после миграции
               href: mongodb-post-migration.md
-        - name: Обновление с MongoDB 3.2 до 3.6
+        - name: Обновление до версии API 4.0 или 3.6
           href: mongodb-version-upgrade.md
         - name: Получение строки подключения
           href: connect-mongodb-account.md
@@ -1146,6 +1153,8 @@
           href: mongodb-change-streams.md
         - name: Управление индексированием данных
           href: mongodb-indexing.md
+        - name: Операции над несколькими документами
+          href: use-multi-document-transactions.md
         - name: "Создание контейнера\_— API MongoDB"
           href: how-to-create-container-mongodb.md
         - name: "Подготовка пропускной способности\_— API MongoDB"
@@ -1374,6 +1383,8 @@
           href: configure-synapse-link.md
         - name: Подключение к Azure Synapse Link
           href: ../synapse-analytics/synapse-link/how-to-connect-synapse-link-cosmos-db.md?toc=/azure/cosmos-db/toc.json&bc=/azure/cosmos-db/breadcrumb/toc.json
+        - name: Аналитическое хранилище и частные конечные точки
+          href: analytical-store-private-endpoints.md
         - name: Отправка запросов с помощью Azure Synapse Spark
           href: ../synapse-analytics/synapse-link/how-to-query-analytical-store-spark.md?toc=/azure/cosmos-db/toc.json&bc=/azure/cosmos-db/breadcrumb/toc.json
         - name: Выполнение запросов с использованием бессерверного пула SQL

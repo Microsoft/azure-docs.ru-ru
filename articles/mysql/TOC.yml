@@ -553,6 +553,9 @@
     - name: Перенос данных с помощью mysqldump или phpmyadmin
       href: concepts-migrate-dump-restore.md
       displayName: 'migrate, mysqldump'
+    - name: Перенос данных с помощью dbForge Studio for MySQL
+      href: concepts-migrate-dbforge-studio-for-mysql.md
+      displayName: 'migrate, dbforge'
     - name: Перенос данных с помощью MySQL Workbench
       href: concepts-migrate-import-export.md
       displayName: 'import , migrate, export'

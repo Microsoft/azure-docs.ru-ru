@@ -704,6 +704,8 @@
           href: how-to-create-tumbling-window-trigger.md
         - name: 'Создание зависимости триггера, который запускает конвейер в "переворачивающемся" окне'
           href: tumbling-window-trigger-dependency.md
+        - name: Создание ссылок на метаданные триггера в конвейере
+          href: how-to-use-trigger-parameterization.md
     - name: Каталог данных и управление
       items:
         - name: Подключение Фабрики данных к Azure Purview

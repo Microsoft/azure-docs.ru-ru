@@ -166,6 +166,10 @@ items:
             href: sensitivity-insights.md
           - name: Просмотр аналитики расширений файлов
             href: file-extension-insights.md
+      - name: Безопасность и сеть
+        items:
+          - name: Управление частными конечными точками
+            href: catalog-private-link.md
   - name: Справочник
     items:
       - name: Поддерживаемые классификации

@@ -86,8 +86,10 @@
               href: add-user-without-invite.md
             - name: Настройка приглашений с помощью API
               href: customize-invitation-api.md
-        - name: Федерация со внешними поставщиками удостоверений
+        - name: Поставщики удостоверений
           items:
+            - name: Учетная запись Майкрософт (предварительная версия)
+              href: microsoft-account.md
             - name: Федерация Google
               href: google-federation.md
             - name: Федерация c Facebook

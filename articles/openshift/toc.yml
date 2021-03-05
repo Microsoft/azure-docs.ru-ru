@@ -28,6 +28,8 @@
           href: dns-forwarding.md
     - name: Память
       items:
+        - name: 'Шифрование PVC с помощью ключа, управляемого клиентом (предварительная версия)'
+          href: howto-encrypt-data-disks.md
         - name: Создание StorageClass службы "Файлы Azure"
           href: howto-create-a-storageclass.md
         - name: Использование встроенного реестра контейнеров

@@ -39,6 +39,8 @@
           href: tutorial-cross-region-portal.md
         - name: Создание подсистемы балансировки нагрузки между регионами (PowerShell)
           href: tutorial-cross-region-powershell.md
+        - name: Создание подсистемы балансировки нагрузки между регионами (Azure CLI)
+          href: tutorial-cross-region-cli.md
 - name: Примеры
   items:
     - name: Azure CLI

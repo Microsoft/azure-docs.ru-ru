@@ -10,13 +10,13 @@ metadata:
   ms.collection: collection
   author: bandersmsft
   ms.author: banders
-  ms.date: 04/30/2020
-  ms.openlocfilehash: db01f91401b3a0f33b8ad53e91eb60839ecbcb7f
-  ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+  ms.date: 03/01/2021
+  ms.openlocfilehash: b25d522d5db9f513628e43724cb1abde9f55e99c
+  ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/05/2021
-  ms.locfileid: "99576301"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102040827"
 landingContent:
 - title: Приобретение резервирований
   linkLists:
@@ -24,72 +24,28 @@ landingContent:
     links:
     - text: Основные сведения о резервировании в Azure
       url: save-compute-costs-reservations.md
-    - text: Обмен и возмещение средств за резервирование
-      url: exchange-and-refund-azure-reservations.md
-    - text: Приобретение резервирования с ежемесячными платежами
-      url: ./prepare-buy-reservation.md
   - linkListType: how-to-guide
     links:
+    - text: Покупка резервирования
+      url: prepare-buy-reservation.md
     - text: Возобновление резервирований
       url: reservation-renew.md
-    - text: Azure Synapse Analytics
-      url: prepay-sql-data-warehouse-charges.md
-    - text: Виртуальная машина
-      url: ../../virtual-machines/prepay-reserved-vm-instances.md?toc=%2fazure%2fcost-management-billing%2freservations%2ftoc.json
-    - text: Хранилище Azure
-      url: ../../storage/blobs/storage-blob-reserved-capacity.md?toc=/azure/cost-management-billing/reservations/toc.json
-    - text: Cosmos DB
-      url: ../../cosmos-db/cosmos-db-reserved-capacity.md?toc=/azure/cost-management-billing/toc.json
-    - text: База данных SQL
-      url: ../../azure-sql/database/reserved-capacity-overview.md?toc=%2fazure%2fcost-management-billing%2ftoc.json
-    - text: Azure Data Explorer
-      url: /azure/data-explorer/pricing-reserved-capacity?toc=/azure/cost-management-billing/toc.json
-    - text: Azure Databricks
-      url: prepay-databricks-reserved-capacity.md
-    - text: Служба приложений
-      url: prepay-app-service.md
-    - text: Планы программного обеспечения Azure
-      url: ../../virtual-machines/linux/prepay-suse-software-charges.md?toc=/azure/cost-management-billing/toc.json
 - title: Узнайте, как применяются скидки
   linkLists:
   - linkListType: concept
     links:
-    - text: Зарезервированные экземпляры виртуальных машин
-      url: ../manage/understand-vm-reservation-charges.md
-    - text: Зарезервированная емкость в службе хранилища Azure
-      url: understand-storage-charges.md
-    - text: Резервная мощность Cosmos DB
-      url: understand-cosmosdb-reservation-charges.md
-    - text: Резервная мощность Базы данных SQL
-      url: understand-reservation-charges.md
-    - text: Azure Synapse Analytics
-      url: reservation-discount-azure-sql-dw.md
-    - text: Azure Data Explorer
-      url: understand-azure-data-explorer-reservation-charges.md
-    - text: Azure Databricks
-      url: reservation-discount-databricks.md
-    - text: Служба приложений
-      url: reservation-discount-app-service.md
-    - text: Расходы на программное обеспечение Azure
-      url: understand-suse-reservation-charges.md
-- title: Как скидки применяются к Базе данных Azure
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: База данных Azure для MySQL
-      url: understand-reservation-charges-mysql.md
-    - text: База данных Azure для PostgreSQL
-      url: understand-reservation-charges-postgresql.md
-    - text: База данных Azure для MariaDB
-      url: understand-reservation-charges-mariadb.md
+    - text: Применение скидки на резервирование
+      url: reservation-discount-application.md
 - title: Управление резервированиями
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Управление резервированиями
       url: manage-reserved-vm-instance.md
-    - text: Просмотр резервирований
+    - text: Просмотр резервирований и управление разрешениями
       url: view-reservations.md
+    - text: Обмена и возврат резервирований
+      url: exchange-and-refund-azure-reservations.md
   - linkListType: reference
     links:
     - text: API-интерфейсы для резервирований
