@@ -5,12 +5,12 @@ author: cgillum
 ms.topic: conceptual
 ms.date: 11/02/2019
 ms.author: azfuncdf
-ms.openlocfilehash: 2121ad4f908d28ab30f15be261b3f155ab6dd983
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 5521b1785bb38e6985e4619e1eec22cb19da151d
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102039705"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214785"
 ---
 # <a name="manage-instances-in-durable-functions-in-azure"></a>Управление экземплярами в Устойчивых функциях в Azure
 
@@ -283,7 +283,7 @@ func durable get-history --id 0ab8c55a66644d68a3a8b220b12d209c
 
 Вместо того, чтобы запрашивать один экземпляр в согласовании одновременно, может оказаться, что он более эффективен для выполнения запросов сразу.
 
-Для запроса состояния всех экземпляров оркестрации можно использовать метод [листинстанцесасинк](/dotnet/api/microsoft.azure.webjobs.extensions.durabletask.idurableorchestrationclient.listinstancesasync?view=azure-dotnet#Microsoft_Azure_WebJobs_Extensions_DurableTask_IDurableOrchestrationClient_ListInstancesAsync_Microsoft_Azure_WebJobs_Extensions_DurableTask_OrchestrationStatusQueryCondition_System_Threading_CancellationToken_) (.NET), [жетстатусалл](/javascript/api/durable-functions/durableorchestrationclient?view=azure-node-latest#getstatusall--) (JavaScript) или `get_status_all` (Python). В .NET можно передать `CancellationToken` объект, если вы хотите отменить его. Метод возвращает список объектов, представляющих экземпляры оркестрации, соответствующие параметрам запроса.
+Для запроса состояния всех экземпляров оркестрации можно использовать метод [листинстанцесасинк](/dotnet/api/microsoft.azure.webjobs.extensions.durabletask.idurableorchestrationclient.listinstancesasync?view=azure-dotnet#Microsoft_Azure_WebJobs_Extensions_DurableTask_IDurableOrchestrationClient_ListInstancesAsync_Microsoft_Azure_WebJobs_Extensions_DurableTask_OrchestrationStatusQueryCondition_System_Threading_CancellationToken_) (.NET), [жетстатусалл](/javascript/api/durable-functions/durableorchestrationclient#getstatusall--) (JavaScript) или `get_status_all` (Python). В .NET можно передать `CancellationToken` объект, если вы хотите отменить его. Метод возвращает список объектов, представляющих экземпляры оркестрации, соответствующие параметрам запроса.
 
 # <a name="c"></a>[C#](#tab/csharp)
 
@@ -366,7 +366,7 @@ func durable get-instances
 
 Что делать, если вам не нужна вся информация, которую может предоставить запрос стандартного экземпляра? Например, что делать, если вы просто ищете время создания оркестрации или состояние среды выполнения оркестрации? Вы можете ограничивать запрос, применяя фильтры.
 
-Используйте метод [листинстанцесасинк](/dotnet/api/microsoft.azure.webjobs.extensions.durabletask.idurableorchestrationclient.listinstancesasync?view=azure-dotnet#Microsoft_Azure_WebJobs_Extensions_DurableTask_IDurableOrchestrationClient_ListInstancesAsync_Microsoft_Azure_WebJobs_Extensions_DurableTask_OrchestrationStatusQueryCondition_System_Threading_CancellationToken_) (.NET) или [жетстатусби](/javascript/api/durable-functions/durableorchestrationclient?view=azure-node-latest#getstatusby-date---undefined--date---undefined--orchestrationruntimestatus---) (JavaScript) для получения списка экземпляров оркестрации, соответствующих набору предопределенных фильтров.
+Используйте метод [листинстанцесасинк](/dotnet/api/microsoft.azure.webjobs.extensions.durabletask.idurableorchestrationclient.listinstancesasync?view=azure-dotnet#Microsoft_Azure_WebJobs_Extensions_DurableTask_IDurableOrchestrationClient_ListInstancesAsync_Microsoft_Azure_WebJobs_Extensions_DurableTask_OrchestrationStatusQueryCondition_System_Threading_CancellationToken_) (.NET) или [жетстатусби](/javascript/api/durable-functions/durableorchestrationclient#getstatusby-date---undefined--date---undefined--orchestrationruntimestatus---) (JavaScript) для получения списка экземпляров оркестрации, соответствующих набору предопределенных фильтров.
 
 # <a name="c"></a>[C#](#tab/csharp)
 

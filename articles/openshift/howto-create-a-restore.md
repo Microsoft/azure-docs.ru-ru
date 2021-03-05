@@ -8,12 +8,12 @@ author: troy0820
 ms.author: b-trconn
 keywords: aro, openshift, az aro, red hat, cli
 ms.custom: mvc
-ms.openlocfilehash: 6a4c226527f94a9fca4c8106df3827c9222657a1
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.openlocfilehash: 8a9bb191390056caf7d5ba3b42c278205177d5a2
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100633229"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102213019"
 ---
 # <a name="create-an-azure-red-hat-openshift-4-cluster-application-restore"></a>Создание восстановления приложения кластера Azure Red Hat OpenShift 4
 
@@ -23,7 +23,7 @@ ms.locfileid: "100633229"
 > * Настройка необходимых компонентов и установка необходимых средств
 > * Создание приложения Azure Red Hat OpenShift 4 для восстановления
 
-Если вы решили установить и использовать интерфейс командной строки локально, то для работы с этим руководством вам понадобится Azure CLI 2.6.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0](/cli/azure/install-azure-cli?view=azure-cli-latest).
+Если вы решили установить и использовать интерфейс командной строки локально, то для работы с этим руководством вам понадобится Azure CLI 2.6.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0](/cli/azure/install-azure-cli).
 
 ## <a name="before-you-begin"></a>Перед началом
 

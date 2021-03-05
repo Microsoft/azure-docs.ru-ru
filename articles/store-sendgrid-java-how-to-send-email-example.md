@@ -16,12 +16,12 @@ ms.date: 10/30/2014
 ms.author: erikre
 ms.reviewer: vibhork;dominic.may@sendgrid.com;elmer.thomas@sendgrid.com
 ms.custom: devx-track-java
-ms.openlocfilehash: 57daf9170a7f97c6c141532dafe759cde9d1c77b
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.openlocfilehash: 7a857b887b53ccb2288507742ca52d72d90ff548
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95519070"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214360"
 ---
 # <a name="how-to-send-email-using-sendgrid-from-java-in-an-azure-deployment"></a>Как отправлять электронную почту с помощью SendGrid из Java в развертывании Azure
 В следующем примере показано, как отправлять сообщения электронной почты с веб-страницы, размещенной в Azure, с помощью SendGrid. Полученное приложение предложит пользователю ввести значения электронной почты, как показано на следующем снимке экрана.
@@ -40,7 +40,7 @@ ms.locfileid: "95519070"
 
 Для отправки электронной почты вам также понадобится собственное имя пользователя и пароль SendGrid. Чтобы приступить к работе с SendGrid, ознакомьтесь с разделом [Как отправлять электронную почту с помощью SendGrid из Java](store-sendgrid-java-how-to-send-email.md).
 
-Кроме того, если вы не используете среду Eclipse, мы настоятельно рекомендуем вам ознакомиться с разделом [Создание приложения "Hello World" для Azure в Eclipse](/java/azure/eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app?view=azure-java-stable), а также другими способами размещения Java-приложений в Azure.
+Кроме того, если вы не используете среду Eclipse, мы настоятельно рекомендуем вам ознакомиться с разделом [Создание приложения "Hello World" для Azure в Eclipse](/azure/developer/java/toolkit-for-eclipse/create-hello-world-web-app), а также другими способами размещения Java-приложений в Azure.
 
 ## <a name="create-a-web-form-for-sending-email"></a>Создание веб-формы для отправки электронных сообщений
 В следующем коде показано, как создать веб-форму, позволяющую извлечь данные пользователя для отправки электронной почты. В данном контексте этот JSP-файл имеет имя **emailform.jsp**.
@@ -214,7 +214,7 @@ ms.locfileid: "95519070"
 
 ![Результат отправки почты][emailresult]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Разверните приложение в эмуляторе вычислений, запустите emailform.jsp в браузере, введите значения в форме, нажмите кнопку **Отправить это сообщение электронной почты**, а затем просмотрите результаты в sendemail.jsp.
 
 Этот код был представлен для того, чтобы показать вам, как использовать SendGrid для языка Java в Azure. Возможно, перед развертыванием в рабочей среде Azure потребуется добавить в него дополнительные обработчики ошибок и другие функции. Пример: 

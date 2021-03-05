@@ -6,13 +6,12 @@ ms.author: bwren
 services: azure-monitor
 ms.topic: sample
 ms.date: 05/18/2020
-ms.subservice: ''
-ms.openlocfilehash: 9218886ded7827d4b7a1e2413f1470ee5cd1563d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: ac2ed571359958feddd4d7952ea3b5f549688c77
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101733964"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102046981"
 ---
 # <a name="resource-manager-template-samples-for-azure-monitor"></a>Примеры шаблонов Resource Manager для службы Azure Monitor
 

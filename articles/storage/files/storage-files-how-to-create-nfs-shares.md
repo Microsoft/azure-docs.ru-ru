@@ -8,12 +8,12 @@ ms.date: 01/22/2021
 ms.author: rogarana
 ms.subservice: files
 ms.custom: references_regions, devx-track-azurecli
-ms.openlocfilehash: dc23dec8a8d59a7762e93cdfaa2a39d824506e7b
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 2ff669d0ff3bde791de9bc7773e13d880762f898
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100382129"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214428"
 ---
 # <a name="how-to-create-an-nfs-share"></a>Создание общей папки NFS
 Файловые ресурсы Azure — это полностью управляемые общие файловые ресурсы, которые находятся в облаке. В этой статье рассматривается создание общей папки, использующей протокол NFS. Дополнительные сведения об этих протоколах см. в статье [протоколы файловых ресурсов Azure](storage-files-compare-protocols.md).
@@ -31,7 +31,7 @@ ms.locfileid: "100382129"
     - [Настройте VPN типа "сеть — сеть" для использования с файлами Azure](storage-files-configure-s2s-vpn.md).
     - Настройте [ExpressRoute](../../expressroute/expressroute-introduction.md).
 
-- Если вы хотите использовать Azure CLI, [установите последнюю версию](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true).
+- Если вы хотите использовать Azure CLI, [установите последнюю версию](/cli/azure/install-azure-cli).
 
 ## <a name="register-the-nfs-41-protocol"></a>Регистрация протокола NFS 4,1
 Если вы используете модуль Azure PowerShell или Azure CLI, зарегистрируйте функцию с помощью следующих команд:
@@ -145,7 +145,7 @@ $storageAccount = New-AzStorageAccount `
     -Kind FileStorage
 ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli);
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 Чтобы создать учетную запись хранения Филестораже, откройте терминал и выполните следующие команды, не заменяя `<resource-group>` и `<storage-account>` указав соответствующие значения для вашей среды.
 
 ```azurecli-interactive
@@ -178,7 +178,7 @@ az storage account create \
     - Без корневого Squash — удаленный суперпользователь (root) получает доступ от имени привилегированного пользователя.
     - Все Squash — все пользователи сопоставлены с UID (65534) и GID (65534).
     
-1. Щелкните **Создать**.
+1. Нажмите кнопку **создания**.
 
     :::image type="content" source="media/storage-files-how-to-create-mount-nfs-shares/create-nfs-file-share.png" alt-text="Снимок экрана: колонка создания файлового ресурса":::
 
@@ -224,7 +224,7 @@ az storage account create \
         -QuotaGiB 1024
     ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli);
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 Чтобы создать общую папку уровня "Премиум" с помощью Azure CLI, используйте команду [AZ Storage Share Create](/cli/azure/storage/share-rm) .
 
 > [!NOTE]
@@ -241,7 +241,7 @@ az storage share-rm create \
 ```
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Теперь, когда вы создали общий ресурс NFS, для его использования необходимо подключить его к клиенту Linux. Дополнительные сведения см. [в разделе Подключение общего ресурса NFS](storage-files-how-to-mount-nfs-shares.md).
 
 Если возникнут проблемы, см. раздел [Устранение неполадок файловых ресурсов NFS Azure](storage-troubleshooting-files-nfs.md).

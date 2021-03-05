@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/31/2019
 ms.author: brendm
 ms.custom: devx-track-java, devx-track-azurecli
-ms.openlocfilehash: 479daa9a94247ada30c54a9c5df3471035765087
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 46d79de612a17c7b21e7cc51dcf4904209e1625d
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "90908280"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102212949"
 ---
 # <a name="start-stop-and-delete-your-azure-spring-cloud-application"></a>Запуск, завершение и удаление облачного приложения Azure весны
 
@@ -27,12 +27,12 @@ ms.locfileid: "90908280"
 1. Перейдите к экземпляру своей службы Azure Spring Cloud на портале Azure.
 1. Выберите вкладку **Панель мониторинга приложений**.
 1. Выберите приложение, состояние которого необходимо изменить.
-1. На странице **Обзор** для этого приложения выберите **Пуск/закрыть**, **перезапустить**или **Удалить**.
+1. На странице **Обзор** для этого приложения выберите **Пуск/закрыть**, **перезапустить** или **Удалить**.
 
 ## <a name="using-the-azure-cli"></a>Использование Azure CLI
 
 > [!NOTE]
-> В интерфейсе командной строки Azure можно использовать необязательные параметры и настроить значения по умолчанию. Дополнительные сведения о Azure CLI см. в [справочной документации](/cli/azure/ext/spring-cloud/spring-cloud?view=azure-cli-latest&preserve-view=true).  
+> В интерфейсе командной строки Azure можно использовать необязательные параметры и настроить значения по умолчанию. Дополнительные сведения о Azure CLI см. в [справочной документации](/cli/azure/ext/spring-cloud/spring-cloud).  
 
 Сначала установите облачное расширение Azure "Весна" для Azure CLI следующим образом:
 

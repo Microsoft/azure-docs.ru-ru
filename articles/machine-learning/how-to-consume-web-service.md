@@ -11,12 +11,12 @@ ms.reviewer: larryfr
 ms.date: 10/12/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, devx-track-csharp
-ms.openlocfilehash: dddecb3dba6d707e16241731a25df3b3749be103
-ms.sourcegitcommit: e7179fa4708c3af01f9246b5c99ab87a6f0df11c
+ms.openlocfilehash: d23d6cb5a43de4ccf0d10287b8cf8f597797b893
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97825421"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214989"
 ---
 # <a name="consume-an-azure-machine-learning-model-deployed-as-a-web-service"></a>Использование модели Машинного обучения Azure, развернутой в качестве веб-службы
 
@@ -77,7 +77,7 @@ ms.locfileid: "97825421"
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-Если известно имя развернутой службы, используйте команду [AZ ML Service показ](/cli/azure/ext/azure-cli-ml/ml/service?view=azure-cli-latest#ext_azure_cli_ml_az_ml_service_show) .
+Если известно имя развернутой службы, используйте команду [AZ ML Service показ](/cli/azure/ext/azure-cli-ml/ml/service#ext_azure_cli_ml_az_ml_service_show) .
 
 ```azurecli
 az ml service show -n <service-name>
@@ -677,7 +677,7 @@ Power BI поддерживает использование Машинное о
 
 Чтобы создать веб-службу, которая поддерживается для использования в Power BI, схема должна поддерживать формат, необходимый для Power BI. [Узнайте, как создать схему, поддерживаемую Power BI](./how-to-deploy-advanced-entry-script.md#power-bi-compatible-endpoint).
 
-После развертывания веб-службы ее можно использовать в потоках данных Power BI. [Узнайте, как использовать веб-службу машинное обучение Azure из Power BI](/power-bi/service-machine-learning-integration).
+После развертывания веб-службы ее можно использовать в потоках данных Power BI. [Узнайте, как использовать веб-службу Машинного обучения Azure в Power BI](/power-bi/service-machine-learning-integration).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 11/09/2020
-ms.openlocfilehash: bf5582016f74e67926c38111a3d8d2f468f3ac79
-ms.sourcegitcommit: 7e117cfec95a7e61f4720db3c36c4fa35021846b
+ms.openlocfilehash: e20679c3999f7ece1f6d3ed47a241cfd9dab9236
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "99987981"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214751"
 ---
 # <a name="plan-your-qna-maker-app"></a>Планирование приложения QnA Maker
 
@@ -177,7 +177,7 @@ QnA Maker использует _активное обучение_ для улу
 
 # <a name="qna-maker-ga-stable-release"></a>[Общедоступная версия QnA Maker (стабильный выпуск)](#tab/v1)
 
-Примените [последние обновления среды выполнения](../how-to/set-up-qnamaker-service-azure.md#get-the-latest-runtime-updates) для автоматического управления обновлениями служб.
+Примените [последние обновления среды выполнения](../how-to/configure-QnA-Maker-resources.md#get-the-latest-runtime-updates) для автоматического управления обновлениями служб.
 
 # <a name="qna-maker-managed-preview-release"></a>[Управляемая служба QnA Maker (предварительный выпуск)](#tab/v2)
 
@@ -187,7 +187,7 @@ QnA Maker использует _активное обучение_ для улу
 
 ### <a name="scaling-throughput-and-resiliency"></a>Масштабирование, пропускная способность и устойчивость
 
-Масштабирование, пропускная способность и устойчивость определяются [ресурсами Azure](../how-to/set-up-qnamaker-service-azure.md), их ценовыми категориями и любой окружающей архитектурой, такой как [диспетчер трафика](../how-to/set-up-qnamaker-service-azure.md#business-continuity-with-traffic-manager).
+Масштабирование, пропускная способность и устойчивость определяются [ресурсами Azure](../how-to/set-up-qnamaker-service-azure.md), их ценовыми категориями и любой окружающей архитектурой, такой как [диспетчер трафика](../how-to/configure-QnA-Maker-resources.md#business-continuity-with-traffic-manager).
 
 ### <a name="analytics-with-application-insights"></a>Аналитика с Application Insights
 
@@ -223,7 +223,7 @@ QnA Maker использует _активное обучение_ для улу
 
 Чтобы получить _одинаковую оценку_ для `test` `production` баз знаний и, изолируйте QnA Maker ресурс к одной базе знаний. В этой архитектуре ресурс должен находиться в режиме реального времени только в том случае, если он является изолированным пакетным тестом.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Ресурсы Azure](../how-to/set-up-qnamaker-service-azure.md)
 * [Пары вопросов и ответов](question-answer-set.md)

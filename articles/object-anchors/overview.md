@@ -4,15 +4,15 @@ description: Сведения о том, как Объектные привяз�
 author: craigktreasure
 manager: vriveras
 ms.author: crtreasu
-ms.date: 02/18/2021
+ms.date: 03/02/2021
 ms.topic: overview
 ms.service: azure-object-anchors
-ms.openlocfilehash: 099307ba1085ff6d24bc6bb4000a592aabc8f8f6
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: cbe52004dddbe74aa02347c026028a8ffd4cf8d7
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747960"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102034207"
 ---
 # <a name="azure-object-anchors-overview"></a>Обзорные сведения об Объектных привязках Azure
 
@@ -37,7 +37,7 @@ ms.locfileid: "101747960"
 В следующих разделах показано, как перейти к созданию приложений с использованием службы "Объектные привязки Azure".
 
 > [!div class="nextstepaction"]
-> [Прием модели](quickstarts/get-started-model-ingestion.md)
+> [Прием модели](quickstarts/get-started-model-conversion.md)
 
 > [!div class="nextstepaction"]
 > [Unity HoloLens](quickstarts/get-started-unity-hololens.md)

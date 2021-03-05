@@ -11,12 +11,12 @@ ms.author: jordane
 author: jpe316
 ms.reviewer: larryfr
 ms.date: 10/02/2020
-ms.openlocfilehash: 97042479419cbc9d634a06e2dcbcccf9c8fde62b
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.openlocfilehash: a4536f0dd40e1d0ee3a5ca75db9b111dcfa0ad6f
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99560467"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214904"
 ---
 # <a name="create-and-attach-an-azure-kubernetes-service-cluster"></a>Создание и подключение кластера службы Kubernetes Azure
 
@@ -93,7 +93,7 @@ ms.locfileid: "99560467"
 
 ### <a name="available-and-default-versions"></a>Доступные и версии по умолчанию
 
-Для поиска доступных версий AKS и по умолчанию используйте команду [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) [AZ AKS get-versions](/cli/azure/aks?view=azure-cli-latest&preserve-view=true#az_aks_get_versions). Например, следующая команда возвращает версии, доступные в регионе "Западная часть США":
+Для поиска доступных версий AKS и по умолчанию используйте команду [Azure CLI](/cli/azure/install-azure-cli) [AZ AKS get-versions](/cli/azure/aks#az_aks_get_versions). Например, следующая команда возвращает версии, доступные в регионе "Западная часть США":
 
 ```azurecli-interactive
 az aks get-versions -l westus -o table
@@ -198,7 +198,7 @@ aks_target.wait_for_completion(show_output = True)
 az ml computetarget create aks -n myaks
 ```
 
-Дополнительные сведения см. в справке по команде [AZ ML computetarget Create AKS](/cli/azure/ext/azure-cli-ml/ml/computetarget/create?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-create-aks) .
+Дополнительные сведения см. в справке по команде [AZ ML computetarget Create AKS](/cli/azure/ext/azure-cli-ml/ml/computetarget/create#ext-azure-cli-ml-az-ml-computetarget-create-aks) .
 
 # <a name="portal"></a>[Портал](#tab/azure-portal)
 
@@ -223,8 +223,8 @@ az ml computetarget create aks -n myaks
 
 Дополнительные сведения о создании кластера AKS с помощью Azure CLI или портала см. в следующих статьях:
 
-* [Создание кластера AKS с помощью CLI](/cli/azure/aks?bc=%2fazure%2fbread%2ftoc.json&preserve-view=true&toc=%2fazure%2faks%2fTOC.json&view=azure-cli-latest#az-aks-create)
-* [Создание кластера AKS (портал)](../aks/kubernetes-walkthrough-portal.md?preserve-view=true&view=azure-cli-latest)
+* [Создание кластера AKS с помощью CLI](/cli/azure/aks?bc=%2fazure%2fbread%2ftoc.json&toc=%2fazure%2faks%2fTOC.json#az-aks-create)
+* [Создание кластера AKS (портал)](../aks/kubernetes-walkthrough-portal.md)
 * [Создание кластера AKS (шаблон ARM в шаблонах быстрого запуска Azure)](https://github.com/Azure/azure-quickstart-templates/tree/master/101-aks-azml-targetcompute)
 
 В следующем примере показано, как подключить существующий кластер AKS к рабочей области.
@@ -275,7 +275,7 @@ az aks show -n myexistingcluster -g myresourcegroup --query id
 az ml computetarget attach aks -n myaks -i aksresourceid -g myresourcegroup -w myworkspace
 ```
 
-Дополнительные сведения см. в справочнике по команде [AZ ML computetarget Attach AKS](/cli/azure/ext/azure-cli-ml/ml/computetarget/attach?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-attach-aks) .
+Дополнительные сведения см. в справочнике по команде [AZ ML computetarget Attach AKS](/cli/azure/ext/azure-cli-ml/ml/computetarget/attach#ext-azure-cli-ml-az-ml-computetarget-attach-aks) .
 
 # <a name="portal"></a>[Портал](#tab/azure-portal)
 
@@ -425,7 +425,7 @@ kubectl get secret/azuremlfessl -o yaml
 az aks get-credentials -g <rg> -n <aks cluster name>
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Использование Azure RBAC для авторизации Kubernetes](../aks/manage-azure-rbac.md)
 * [Как и где развертывается модель](how-to-deploy-and-where.md)

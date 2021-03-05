@@ -11,12 +11,12 @@ ms.author: aashishb
 author: aashishb
 ms.reviewer: larryfr
 ms.date: 02/09/2021
-ms.openlocfilehash: 7a6213528f204ac31fbcf8a29625787fc73d5153
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 34b37fde83ca957e7c90302561589e2568beb59b
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101656811"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102215057"
 ---
 # <a name="configure-azure-private-link-for-an-azure-machine-learning-workspace"></a>Настройка частной ссылки Azure для Машинное обучение Azure рабочей области
 
@@ -66,7 +66,7 @@ ws = Workspace.create(name='myworkspace',
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-[Расширение Azure CLI для машинного обучения](reference-azure-machine-learning-cli.md) предоставляет команду [AZ ML Workspace Create](/cli/azure/ext/azure-cli-ml/ml/workspace?view=azure-cli-latest#ext_azure_cli_ml_az_ml_workspace_create) . Следующие параметры этой команды можно использовать для создания рабочей области с частной сетью, но для нее требуется существующая виртуальная сеть.
+[Расширение Azure CLI для машинного обучения](reference-azure-machine-learning-cli.md) предоставляет команду [AZ ML Workspace Create](/cli/azure/ext/azure-cli-ml/ml/workspace#ext_azure_cli_ml_az_ml_workspace_create) . Следующие параметры этой команды можно использовать для создания рабочей области с частной сетью, но для нее требуется существующая виртуальная сеть.
 
 * `--pe-name`— Имя создаваемой частной конечной точки.
 * `--pe-auto-approval`— Следует ли автоматически утверждать подключения частной конечной точки к рабочей области.
@@ -116,7 +116,7 @@ ws.add_private_endpoint(private_endpoint_config=pe, private_endpoint_auto_approv
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-[Расширение Azure CLI для машинного обучения](reference-azure-machine-learning-cli.md) предоставляет команду [AZ ML Workspace Private-Endpoint Add](/cli/azure/ext/azure-cli-ml/ml/workspace/private-endpoint?view=azure-cli-latest#ext_azure_cli_ml_az_ml_workspace_private_endpoint_add) .
+[Расширение Azure CLI для машинного обучения](reference-azure-machine-learning-cli.md) предоставляет команду [AZ ML Workspace Private-Endpoint Add](/cli/azure/ext/azure-cli-ml/ml/workspace/private-endpoint#ext_azure_cli_ml_az_ml_workspace_private_endpoint_add) .
 
 ```azurecli
 az ml workspace private-endpoint add -w myworkspace  --pe-name myprivateendpoint --pe-auto-approval true --pe-vnet-name myvnet
@@ -153,7 +153,7 @@ ws.delete_private_endpoint_connection(private_endpoint_connection_name=connectio
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-[Расширение Azure CLI для машинного обучения](reference-azure-machine-learning-cli.md) предоставляет команду [AZ ML Workspace Private-Endpoint Delete](/cli/azure/ext/azure-cli-ml/ml/workspace/private-endpoint?view=azure-cli-latest#ext_azure_cli_ml_az_ml_workspace_private_endpoint_delete) .
+[Расширение Azure CLI для машинного обучения](reference-azure-machine-learning-cli.md) предоставляет команду [AZ ML Workspace Private-Endpoint Delete](/cli/azure/ext/azure-cli-ml/ml/workspace/private-endpoint#ext_azure_cli_ml_az_ml_workspace_private_endpoint_delete) .
 
 # <a name="portal"></a>[Портал](#tab/azure-portal)
 
@@ -192,7 +192,7 @@ ws.update(allow_public_access_when_behind_vnet=True)
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-[Расширение Azure CLI для машинного обучения](reference-azure-machine-learning-cli.md) предоставляет команду [AZ ML Workspace Update](/cli/azure/ext/azure-cli-ml/ml/workspace?view=azure-cli-latest#ext_azure_cli_ml_az_ml_workspace_update) . Чтобы включить общий доступ к рабочей области, добавьте параметр `--allow-public-access true` .
+[Расширение Azure CLI для машинного обучения](reference-azure-machine-learning-cli.md) предоставляет команду [AZ ML Workspace Update](/cli/azure/ext/azure-cli-ml/ml/workspace#ext_azure_cli_ml_az_ml_workspace_update) . Чтобы включить общий доступ к рабочей области, добавьте параметр `--allow-public-access true` .
 
 # <a name="portal"></a>[Портал](#tab/azure-portal)
 

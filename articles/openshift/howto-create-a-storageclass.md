@@ -8,12 +8,12 @@ author: grantomation
 ms.author: b-grodel
 keywords: АТО, openshift, AZ АТО, Red Hat, CLI, файл Azure
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: daaf6d3042b3b8d050173a87d94f0ff6a4ccb2c7
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.openlocfilehash: 039aa3cce6615e71960db810ae383d22d7bcd909
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100633263"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102212983"
 ---
 # <a name="create-an-azure-files-storageclass-on-azure-red-hat-openshift-4"></a>Создание StorageClass службы "Файлы Azure" в Azure Red Hat OpenShift 4
 
@@ -23,7 +23,7 @@ ms.locfileid: "100633263"
 > * Настройка необходимых компонентов и установка необходимых средств
 > * Создание Azure Red Hat OpenShift 4 Сторажекласс с помощью подготовки файлов Azure
 
-Если вы решили установить и использовать интерфейс командной строки локально, то для работы с этим руководством вам понадобится Azure CLI 2.6.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0](/cli/azure/install-azure-cli?view=azure-cli-latest).
+Если вы решили установить и использовать интерфейс командной строки локально, то для работы с этим руководством вам понадобится Azure CLI 2.6.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0](/cli/azure/install-azure-cli).
 
 ## <a name="before-you-begin"></a>Перед началом
 

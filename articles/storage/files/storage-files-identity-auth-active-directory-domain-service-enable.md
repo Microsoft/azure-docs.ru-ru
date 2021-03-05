@@ -8,12 +8,12 @@ ms.date: 01/03/2021
 ms.author: rogarana
 ms.subservice: files
 ms.custom: contperf-fy21q1, devx-track-azurecli
-ms.openlocfilehash: d75b60c715a758684e6f3a4b331c0b12d17eaf21
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6d8402f5e8a1a9af1f84ff6beff7324d1675e441
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101705115"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214411"
 ---
 # <a name="enable-azure-active-directory-domain-services-authentication-on-azure-files"></a>Включение проверки подлинности доменных служб Azure Active Directory в службе файлов Azure
 
@@ -89,7 +89,7 @@ ms.locfileid: "101705115"
 1. В портал Azure перейдите к существующей учетной записи хранения или [Создайте учетную запись хранения](../common/storage-account-create.md).
 1. В разделе **Параметры** выберите **Конфигурация**.
 1. В разделе " **доступ на основе удостоверений" для файловых ресурсов** перейдите в режим **Azure Active Directory службы домена (AAD DS)** в значение " **включено**".
-1. Щелкните **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 На следующем рисунке показано, как включить проверку подлинности Azure AD DS по протоколу SMB для вашей учетной записи хранения.
 
@@ -123,9 +123,9 @@ Set-AzStorageAccount -ResourceGroupName "<resource-group-name>" `
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-Чтобы включить проверку подлинности Azure AD по протоколу SMB с Azure CLI, установите последнюю версию CLI (2.0.70 или более поздней версии). Дополнительные сведения об установке Azure CLI см. [в разделе установка Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest).
+Чтобы включить проверку подлинности Azure AD по протоколу SMB с Azure CLI, установите последнюю версию CLI (2.0.70 или более поздней версии). Дополнительные сведения об установке Azure CLI см. [в разделе установка Azure CLI](/cli/azure/install-azure-cli).
 
-Чтобы создать новую учетную запись хранения, вызовите команду [AZ Storage Account Create](/cli/azure/storage/account?view=azure-cli-latest#az-storage-account-create)и задайте `--enable-files-aadds` для свойства **значение true**. В следующем примере не забудьте заменить значения заполнителей собственными значениями. (Если использовался предыдущий модуль предварительного просмотра, параметром для включения функции является **File-AAD**.)
+Чтобы создать новую учетную запись хранения, вызовите команду [AZ Storage Account Create](/cli/azure/storage/account#az-storage-account-create)и задайте `--enable-files-aadds` для свойства **значение true**. В следующем примере не забудьте заменить значения заполнителей собственными значениями. (Если использовался предыдущий модуль предварительного просмотра, параметром для включения функции является **File-AAD**.)
 
 ```azurecli-interactive
 # Create a new storage account

@@ -7,12 +7,12 @@ ms.author: crtreasu
 ms.date: 02/02/2021
 ms.topic: quickstart
 ms.service: azure-object-anchors
-ms.openlocfilehash: 7e71719d83426a3444435ed78d0d63a2599a9157
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 8a02bb7c70df4fed55c354638fe6662b85e6c164
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747957"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102049668"
 ---
 # <a name="quickstart-create-a-hololens-app-with-azure-object-anchors-in-cwinrt-and-directx"></a>Краткое руководство. Создание приложения HoloLens с использованием службы "Объектные привязки Azure" в C++/WinRT и DirectX
 
@@ -23,7 +23,6 @@ ms.locfileid: "101747957"
 > [!div class="checklist"]
 > * создать и загрузить неопубликованное приложение HoloLens;
 > * обнаружить объект и визуализировать его модель;
-> * собирать данные диагностики среды выполнения.
 
 [!INCLUDE [quickstarts-free-trial-note](../../../includes/quickstarts-free-trial-note.md)]
 
@@ -32,7 +31,7 @@ ms.locfileid: "101747957"
 В рамках этого краткого руководства вам потребуются:
 
 * Физический объект в среде и его трехмерная модель (CAD-модель или отсканированный объект).
-* Компьютер Windows со следующими компонентами:
+* Компьютер Windows со следующими установленными компонентами:
   * <a href="https://git-scm.com" target="_blank">Git для Windows</a>
   * <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2019</a> с рабочей нагрузкой **Разработка приложений для универсальной платформы Windows** и компонент **Пакет SDK для Windows 10 (10.0.18362.0 или более поздняя версия)** .
 * Устройство HoloLens 2 с актуальными обновлениями и включенным [режимом разработчика](https://docs.microsoft.com/windows/mixed-reality/using-visual-studio#enabling-developer-mode).
@@ -64,7 +63,7 @@ ms.locfileid: "101747957"
 
 ## <a name="ingest-object-model-and-detect-its-instance"></a>Прием объектной модели и обнаружение ее экземпляра
 
-Для запуска примера приложения необходимо создать объектную модель. Предположим, что у вас уже есть CAD-модель или отсканированная модель трехмерной сетки для объекта в пространстве. Сведения о создании модели см. в статье [Краткое руководство. Создание модели Объектных привязок из трехмерной модели](./get-started-model-ingestion.md).
+Для запуска примера приложения необходимо создать объектную модель. Предположим, что у вас уже есть CAD-модель или отсканированная модель трехмерной сетки для объекта в пространстве. Сведения о создании модели см. в статье [Краткое руководство. Создание модели Объектных привязок из трехмерной модели](./get-started-model-conversion.md).
 
 Скачайте эту модель (в нашем случае это файл **chair.ou**) на компьютер. Затем на портале устройств HoloLens выберите элементы **Система > Проводник > LocalAppData > AoaSampleApp > LocalState** и нажмите кнопку **Обзор...** Выберите файл модели (например, **chair.ou**) и нажмите кнопку **Отправить**. В локальном кэше должен отобразиться файл модели.
 
@@ -86,7 +85,7 @@ ms.locfileid: "101747957"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
-> [Краткое руководство. Создание модели Объектных привязок из трехмерной модели](./get-started-model-ingestion.md)
+> [Краткое руководство. Создание модели Объектных привязок из трехмерной модели](./get-started-model-conversion.md)
 
 > [!div class="nextstepaction"]
 > [Общие сведения о пакете SDK среды выполнения](../concepts/sdk-overview.md)

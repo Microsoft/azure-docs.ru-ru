@@ -9,17 +9,17 @@ ms.author: jordane
 author: jpe316
 ms.date: 06/22/2020
 ms.custom: seodec18, devx-track-azurecli
-ms.openlocfilehash: ee10866791d1e5015ef5c91d98bff286ed6ce67a
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.openlocfilehash: a4adb5bff80f1ab216a39fa773e027670b9e6509
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99591911"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102212694"
 ---
 # <a name="install--use-the-cli-extension-for-azure-machine-learning"></a>Установка и использование расширения CLI для Машинного обучения Azure
 
 
-CLI для Машинного обучения Azure является расширением кроссплатформенного интерфейса командной строки для платформы Azure ([Azure CLI](/cli/azure/?preserve-view=true&view=azure-cli-latest)). Это расширение предоставляет команды CLI для работы с Машинным обучением Azure. С его помощью можно автоматизировать операции машинного обучения. В следующем списке приведены примеры действий, которые можно выполнить с помощью расширения CLI:
+CLI для Машинного обучения Azure является расширением кроссплатформенного интерфейса командной строки для платформы Azure ([Azure CLI](/cli/azure/)). Это расширение предоставляет команды CLI для работы с Машинным обучением Azure. С его помощью можно автоматизировать операции машинного обучения. В следующем списке приведены примеры действий, которые можно выполнить с помощью расширения CLI:
 
 + выполнять эксперименты для создания моделей машинного обучения;
 
@@ -33,20 +33,20 @@ CLI для Машинного обучения Azure является расши
 
 * Для использования интерфейса командной строки необходима подписка Azure. Если у вас еще нет подписки Azure, создайте бесплатную учетную запись, прежде чем начинать работу. Опробуйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree) уже сегодня.
 
-* Чтобы выполнять приведенные в этом документе команды CLI в **локальной среде**, вам потребуется [Azure CLI](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest).
+* Чтобы выполнять приведенные в этом документе команды CLI в **локальной среде**, вам потребуется [Azure CLI](/cli/azure/install-azure-cli).
 
-    Если вы используете [Azure Cloud Shell](https://azure.microsoft.com//features/cloud-shell/), интерфейс командной строки доступен через браузер и находится в облаке.
+    Если вы используете [Azure Cloud Shell](https://azure.microsoft.com/features/cloud-shell/), интерфейс командной строки доступен через браузер и находится в облаке.
 
 ## <a name="full-reference-docs"></a>Полная справочная документация
 
-Ознакомьтесь с [полной справочной документацией по расширению azure-cli-ml (Azure CLI)](/cli/azure/ext/azure-cli-ml/?preserve-view=true&view=azure-cli-latest).
+Ознакомьтесь с [полной справочной документацией по расширению azure-cli-ml (Azure CLI)](/cli/azure/ext/azure-cli-ml/).
 
 ## <a name="connect-the-cli-to-your-azure-subscription"></a>Подключение интерфейса командной строки к своей подписке Azure
 
 > [!IMPORTANT]
 > Если вы используете Azure Cloud Shell, этот раздел можно пропустить. Cloud Shell автоматически выполняет аутентификацию, используя учетную запись, с помощью которой вы вошли в подписку Azure.
 
-Существует несколько способов аутентификации в подписке Azure с помощью CLI. Самый простой — выполнить интерактивную аутентификацию с помощью браузера. Чтобы выполнить аутентификацию в интерактивном режиме, откройте командную строку или терминал и выполните следующую команду:
+Существует несколько способов аутентификации в подписке Azure с помощью CLI. Самый простой — выполнить интерактивную проверку подлинности с помощью браузера. Чтобы выполнить проверку подлинности в интерактивном режиме, откройте командную строку или терминал и используйте следующую команду:
 
 ```azurecli-interactive
 az login
@@ -56,7 +56,7 @@ az login
 
 [!INCLUDE [select-subscription](../../includes/machine-learning-cli-subscription.md)]
 
-Другие методы аутентификации см. в статье [Вход с помощью Azure CLI](/cli/azure/authenticate-azure-cli?preserve-view=true&view=azure-cli-latest).
+Другие методы аутентификации см. в статье [Вход с помощью Azure CLI](/cli/azure/authenticate-azure-cli).
 
 ## <a name="install-the-extension"></a>Установка расширения
 
@@ -110,7 +110,7 @@ az extension remove -n azure-cli-ml
     az ml workspace create -w myworkspace -g myresourcegroup
     ```
 
-    См. дополнительные сведения о команде [az ml workspace create](/cli/azure/ext/azure-cli-ml/ml/workspace?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-workspace-create).
+    См. дополнительные сведения о команде [az ml workspace create](/cli/azure/ext/azure-cli-ml/ml/workspace#ext-azure-cli-ml-az-ml-workspace-create).
 
 + Подключите конфигурацию рабочей области к папке, чтобы включить поддержку контекста в CLI.
 
@@ -120,7 +120,7 @@ az extension remove -n azure-cli-ml
 
     Эта команда создает подкаталог `.azureml`, содержащий примеры файлов runconfig и среды Conda. Он также содержит файл `config.json`, который используется для взаимодействия с рабочей областью Машинного обучения Azure.
 
-    См. дополнительные сведения о команде [az ml folder attach](/cli/azure/ext/azure-cli-ml/ml/folder?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-folder-attach).
+    См. дополнительные сведения о команде [az ml folder attach](/cli/azure/ext/azure-cli-ml/ml/folder#ext-azure-cli-ml-az-ml-folder-attach).
 
 + Прикрепите контейнер BLOB-объектов Azure в качестве хранилища данных.
 
@@ -128,7 +128,7 @@ az extension remove -n azure-cli-ml
     az ml datastore attach-blob  -n datastorename -a accountname -c containername
     ```
 
-    См. дополнительные сведения о команде [az ml datastore attach-blob](/cli/azure/ext/azure-cli-ml/ml/datastore?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-datastore-attach-blob).
+    См. дополнительные сведения о команде [az ml datastore attach-blob](/cli/azure/ext/azure-cli-ml/ml/datastore#ext-azure-cli-ml-az-ml-datastore-attach-blob).
 
 + Передайте файлы в хранилище данных.
 
@@ -136,7 +136,7 @@ az extension remove -n azure-cli-ml
     az ml datastore upload  -n datastorename -p sourcepath
     ```
 
-    См. дополнительные сведения о команде [az ml datastore upload](/cli/azure/ext/azure-cli-ml/ml/datastore?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-datastore-upload).
+    См. дополнительные сведения о команде [az ml datastore upload](/cli/azure/ext/azure-cli-ml/ml/datastore#ext-azure-cli-ml-az-ml-datastore-upload).
 
 + Подключите кластер AKS в качестве целевого объекта вычислений.
 
@@ -144,7 +144,7 @@ az extension remove -n azure-cli-ml
     az ml computetarget attach aks -n myaks -i myaksresourceid -g myresourcegroup -w myworkspace
     ```
 
-    См. дополнительные сведения о команде [az ml computetarget attach aks](/cli/azure/ext/azure-cli-ml/ml/computetarget/attach?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-attach-aks).
+    См. дополнительные сведения о команде [az ml computetarget attach aks](/cli/azure/ext/azure-cli-ml/ml/computetarget/attach#ext-azure-cli-ml-az-ml-computetarget-attach-aks).
 
 ### <a name="compute-clusters"></a>Вычислительные кластеры
 
@@ -181,7 +181,7 @@ az extension remove -n azure-cli-ml
         az ml computetarget amlcompute identity assign --name cpu-cluster '[system]'
         ```
 
-См. дополнительные сведения о команде [az ml computetarget create amlcompute](/cli/azure/ext/azure-cli-ml/ml/computetarget/create?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-create-amlcompute).
+См. дополнительные сведения о команде [az ml computetarget create amlcompute](/cli/azure/ext/azure-cli-ml/ml/computetarget/create#ext-azure-cli-ml-az-ml-computetarget-create-amlcompute).
 
 [!INCLUDE [aml-clone-in-azure-notebook](../../includes/aml-managed-identity-note.md)]
 
@@ -196,7 +196,7 @@ az extension remove -n azure-cli-ml
     az ml computetarget create computeinstance -n cpu -s "STANDARD_D3_V2" -v
     ```
 
-    Дополнительные сведения см. в разделе [AZ ML computetarget Create компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/create?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-create-computeinstance).
+    Дополнительные сведения см. в разделе [AZ ML computetarget Create компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/create#ext-azure-cli-ml-az-ml-computetarget-create-computeinstance).
 
 + Останавливает компутеинстанце.
 
@@ -204,7 +204,7 @@ az extension remove -n azure-cli-ml
     az ml computetarget computeinstance stop -n cpu -v
     ```
 
-    Дополнительные сведения см. в разделе [AZ ML computetarget компутеинстанце останавливаться](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-computeinstance-stop).
+    Дополнительные сведения см. в разделе [AZ ML computetarget компутеинстанце останавливаться](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance#ext-azure-cli-ml-az-ml-computetarget-computeinstance-stop).
 
 + Запустите компутеинстанце.
 
@@ -212,7 +212,7 @@ az extension remove -n azure-cli-ml
     az ml computetarget computeinstance start -n cpu -v
     ```
 
-    Дополнительные сведения см. в статье [AZ ML computetarget компутеинстанце Start](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-computeinstance-start).
+    Дополнительные сведения см. в статье [AZ ML computetarget компутеинстанце Start](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance#ext-azure-cli-ml-az-ml-computetarget-computeinstance-start).
 
 + Перезапустите компутеинстанце.
 
@@ -220,7 +220,7 @@ az extension remove -n azure-cli-ml
     az ml computetarget computeinstance restart -n cpu -v
     ```
 
-    Дополнительные сведения см. в статье [AZ ML computetarget компутеинстанце Restart](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-computeinstance-restart).
+    Дополнительные сведения см. в статье [AZ ML computetarget компутеинстанце Restart](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance#ext-azure-cli-ml-az-ml-computetarget-computeinstance-restart).
 
 + Удаление компутеинстанце.
 
@@ -228,7 +228,7 @@ az extension remove -n azure-cli-ml
     az ml computetarget delete -n cpu -v
     ```
 
-    Дополнительные сведения см. в разделе [AZ ML computetarget Delete компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-delete).
+    Дополнительные сведения см. в разделе [AZ ML computetarget Delete компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget#ext-azure-cli-ml-az-ml-computetarget-delete).
 
 
 ## <a name="run-experiments"></a><a id="experiments"></a>Запуск экспериментов
@@ -246,7 +246,7 @@ az extension remove -n azure-cli-ml
     >
     > Полную схему runconfig можно найти в этом [файле JSON](https://github.com/microsoft/MLOps/blob/b4bdcf8c369d188e83f40be8b748b49821f71cf2/infra-as-code/runconfigschema.json). Схема содержит самодокументирующийся код за счет использования ключа `description` для каждого объекта. Кроме того, для каждого объекта предусмотрены перечисления возможных значений, а в конце приведен фрагмент кода с шаблоном.
 
-    См. дополнительные сведения о команде [az ml run submit-script](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-submit-script).
+    См. дополнительные сведения о команде [az ml run submit-script](/cli/azure/ext/azure-cli-ml/ml/run#ext-azure-cli-ml-az-ml-run-submit-script).
 
 * Просмотрите список экспериментов:
 
@@ -254,7 +254,7 @@ az extension remove -n azure-cli-ml
     az ml experiment list
     ```
 
-    См. дополнительные сведения о команде [az ml experiment list](/cli/azure/ext/azure-cli-ml/ml/experiment?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-experiment-list).
+    См. дополнительные сведения о команде [az ml experiment list](/cli/azure/ext/azure-cli-ml/ml/experiment#ext-azure-cli-ml-az-ml-experiment-list).
 
 ### <a name="hyperdrive-run"></a>Запуск HyperDrive
 
@@ -298,7 +298,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
 
     Для получения сведений о формате файла JSON, используемого для определения набора данных, используйте `az ml dataset register --show-template`.
 
-    См. дополнительные сведения о команде [az ml dataset register](/cli/azure/ext/azure-cli-ml/ml/dataset?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-dataset-register).
+    См. дополнительные сведения о команде [az ml dataset register](/cli/azure/ext/azure-cli-ml/ml/dataset#ext-azure-cli-ml-az-ml-dataset-register).
 
 + Получите список всех наборов данных в рабочей области:
 
@@ -306,7 +306,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     az ml dataset list
     ```
 
-    См. дополнительные сведения о команде [az ml dataset list](/cli/azure/ext/azure-cli-ml/ml/dataset?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-dataset-list).
+    См. дополнительные сведения о команде [az ml dataset list](/cli/azure/ext/azure-cli-ml/ml/dataset#ext-azure-cli-ml-az-ml-dataset-list).
 
 + Получите сведения о наборе данных:
 
@@ -314,7 +314,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     az ml dataset show -n dataset-name
     ```
 
-    См. дополнительные сведения о команде [az ml dataset show](/cli/azure/ext/azure-cli-ml/ml/dataset?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-dataset-show).
+    См. дополнительные сведения о команде [az ml dataset show](/cli/azure/ext/azure-cli-ml/ml/dataset#ext-azure-cli-ml-az-ml-dataset-show).
 
 + Отмените регистрацию набора данных:
 
@@ -322,7 +322,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     az ml dataset unregister -n dataset-name
     ```
 
-    См. дополнительные сведения о команде [az ml dataset unregister](/cli/azure/ext/azure-cli-ml/ml/dataset?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-dataset-archive).
+    См. дополнительные сведения о команде [az ml dataset unregister](/cli/azure/ext/azure-cli-ml/ml/dataset#ext-azure-cli-ml-az-ml-dataset-archive).
 
 ## <a name="environment-management"></a>Управление средой
 
@@ -334,7 +334,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     az ml environment scaffold -n myenv -d myenvdirectory
     ```
 
-    См. дополнительные сведения о команде [az ml environment scaffold](/cli/azure/ext/azure-cli-ml/ml/environment?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-environment-scaffold).
+    См. дополнительные сведения о команде [az ml environment scaffold](/cli/azure/ext/azure-cli-ml/ml/environment#ext-azure-cli-ml-az-ml-environment-scaffold).
 
 + Зарегистрируйте среду:
 
@@ -342,7 +342,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     az ml environment register -d myenvdirectory
     ```
 
-    См. дополнительные сведения о команде [az ml environment register](/cli/azure/ext/azure-cli-ml/ml/environment?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-environment-register).
+    См. дополнительные сведения о команде [az ml environment register](/cli/azure/ext/azure-cli-ml/ml/environment#ext-azure-cli-ml-az-ml-environment-register).
 
 + Получите список зарегистрированных сред:
 
@@ -350,7 +350,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     az ml environment list
     ```
 
-    См. дополнительные сведения о команде [az ml environment list](/cli/azure/ext/azure-cli-ml/ml/environment?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-environment-list).
+    См. дополнительные сведения о команде [az ml environment list](/cli/azure/ext/azure-cli-ml/ml/environment#ext-azure-cli-ml-az-ml-environment-list).
 
 + Загрузите зарегистрированную среду:
 
@@ -358,7 +358,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     az ml environment download -n myenv -d downloaddirectory
     ```
 
-    См. дополнительные сведения о команде [az ml environment download](/cli/azure/ext/azure-cli-ml/ml/environment?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-environment-download).
+    См. дополнительные сведения о команде [az ml environment download](/cli/azure/ext/azure-cli-ml/ml/environment#ext-azure-cli-ml-az-ml-environment-download).
 
 ### <a name="environment-configuration-schema"></a>Схема конфигурации среды
 
@@ -429,7 +429,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     az ml pipeline create -n mypipeline -y mypipeline.yml
     ```
 
-    См. дополнительные сведения о команде [az ml pipeline create](/cli/azure/ext/azure-cli-ml/ml/pipeline?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-pipeline-create).
+    См. дополнительные сведения о команде [az ml pipeline create](/cli/azure/ext/azure-cli-ml/ml/pipeline#ext-azure-cli-ml-az-ml-pipeline-create).
 
     Дополнительные сведения о файле конвейера YAML см. в статье [Определение конвейеров машинного обучения в YAML](reference-pipeline-yaml.md).
 
@@ -439,7 +439,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     az ml run submit-pipeline -n myexperiment -y mypipeline.yml
     ```
 
-    См. дополнительные сведения о команде [az ml run submit-pipeline](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-submit-pipeline).
+    См. дополнительные сведения о команде [az ml run submit-pipeline](/cli/azure/ext/azure-cli-ml/ml/run#ext-azure-cli-ml-az-ml-run-submit-pipeline).
 
     Дополнительные сведения о файле конвейера YAML см. в статье [Определение конвейеров машинного обучения в YAML](reference-pipeline-yaml.md).
 
@@ -449,7 +449,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     az ml pipeline create-schedule -n myschedule -e myexpereiment -i mypipelineid -y myschedule.yml
     ```
 
-    См. дополнительные сведения о команде [az ml pipeline create-schedule](/cli/azure/ext/azure-cli-ml/ml/pipeline?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-pipeline-create-schedule).
+    См. дополнительные сведения о команде [az ml pipeline create-schedule](/cli/azure/ext/azure-cli-ml/ml/pipeline#ext-azure-cli-ml-az-ml-pipeline-create-schedule).
 
     Дополнительные сведения о файле расписания конвейера YAML см. в статье [Определение конвейеров машинного обучения в YAML](reference-pipeline-yaml.md#schedules).
 
@@ -463,14 +463,14 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     az ml model register -n mymodel -p sklearn_regression_model.pkl
     ```
 
-    См. дополнительные сведения о команде [az ml model register](/cli/azure/ext/azure-cli-ml/ml/model?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-model-register).
+    См. дополнительные сведения о команде [az ml model register](/cli/azure/ext/azure-cli-ml/ml/model#ext-azure-cli-ml-az-ml-model-register).
 
 + **НЕОБЯЗАТЕЛЬНО.** Выполните профилирование модели, чтобы получить оптимальные значения нагрузки на ЦП и память для развертывания.
     ```azurecli-interactive
     az ml model profile -n myprofile -m mymodel:1 --ic inferenceconfig.json -d "{\"data\": [[1,2,3,4,5,6,7,8,9,10],[10,9,8,7,6,5,4,3,2,1]]}" -t myprofileresult.json
     ```
 
-    См. дополнительные сведения о команде [az ml model profile](/cli/azure/ext/azure-cli-ml/ml/model?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-model-profile).
+    См. дополнительные сведения о команде [az ml model profile](/cli/azure/ext/azure-cli-ml/ml/model#ext-azure-cli-ml-az-ml-model-profile).
 
 + Развертывание модели в AKS
     ```azurecli-interactive
@@ -481,7 +481,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
     
     Дополнительные сведения о схеме файла конфигурации развертывания см. в разделе [Схема конфигурации развертывания](#deploymentconfig).
 
-    См. дополнительные сведения о команде [az ml model deploy](/cli/azure/ext/azure-cli-ml/ml/model?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-model-deploy).
+    См. дополнительные сведения о команде [az ml model deploy](/cli/azure/ext/azure-cli-ml/ml/model#ext-azure-cli-ml-az-ml-model-deploy).
 
 <a id="inferenceconfig"></a>
 
@@ -507,6 +507,6 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Справочник по командам для расширения CLI Машинного обучения](/cli/azure/ext/azure-cli-ml/ml?preserve-view=true&view=azure-cli-latest)
+* [Справочник по командам для расширения CLI Машинного обучения](/cli/azure/ext/azure-cli-ml/ml)
 
 * [Обучение и развертывание моделей машинного обучения с помощью Azure Pipelines](/azure/devops/pipelines/targets/azure-machine-learning)

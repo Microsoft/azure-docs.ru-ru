@@ -10,18 +10,18 @@ ms.author: justinha
 author: justinha
 manager: daveba
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7fafeae02bce001d473b0ed916624046a559a795
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 8e33c87d53580d96363ba15bccbc889370f2479d
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101648804"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102212915"
 ---
 # <a name="authentication-methods-in-azure-active-directory---microsoft-authenticator-app"></a>Методы проверки подлинности в приложении Azure Active Directory Microsoft Authenticator
 
 Microsoft Authenticator приложение предоставляет дополнительный уровень безопасности для вашей рабочей или учебной учетной записи Azure AD или вашей учетная запись Майкрософт и доступен для [Android](https://go.microsoft.com/fwlink/?linkid=866594) и [iOS](https://go.microsoft.com/fwlink/?linkid=866594). С помощью приложения Microsoft Authenticator пользователи могут проходить проверку подлинности без пароля во время входа в систему или как дополнительный параметр проверки во время самостоятельного сброса пароля (SSPR) или событий многофакторной идентификации Azure AD.
 
-Пользователи могут получить уведомление через мобильное приложение (которое они могут принять или отклонить) или использовать приложение Authenticator для создания кода проверки OATH, который можно ввести в интерфейсе входа в систему. Если включить и уведомление, и проверочный код, пользователи, регистрирующие приложение Authenticator, могут использовать для подтверждения личности любой способ.
+Пользователи могут получить уведомление через мобильное приложение для утверждения или отклонения или использовать приложение для проверки подлинности для создания кода проверки OAUTH, который можно указать в интерфейсе входа. Если включить и уведомление, и проверочный код, пользователи, регистрирующие приложение Authenticator, могут использовать для подтверждения личности любой способ.
 
 Сведения о том, как использовать приложение Authenticator в запросе на вход, а не в комбинации имени пользователя и пароля, см. в разделе [Включение входа без пароля в приложение Microsoft Authenticator](howto-authentication-passwordless-phone.md).
 

@@ -11,12 +11,12 @@ ms.reviewer: larryfr
 ms.date: 06/23/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, deploy, devx-track-azurecli
-ms.openlocfilehash: cd3e2e552376a03d98673447a1b7b29f7ae3441e
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: a87620c12cccbed702a2a299b68f555f2b727dd9
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100579210"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102215312"
 ---
 # <a name="deploy-a-machine-learning-model-to-azure-app-service-preview"></a>Развертывание модели машинного обучения в службе приложений Azure (Предварительная версия)
 
@@ -40,7 +40,7 @@ ms.locfileid: "100579210"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * Рабочая область машинного обучения Azure. Дополнительные сведения см. в статье [Создание рабочей области](how-to-manage-workspace.md) .
-* [Интерфейс командной строки Azure](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest).
+* [Интерфейс командной строки Azure](/cli/azure/install-azure-cli).
 * Обученная модель машинного обучения, зарегистрированная в вашей рабочей области. Если модель отсутствует, используйте [учебник по классификации образов: обучение модели](tutorial-train-models-with-aml.md) для обучения и регистрации.
 
     > [!IMPORTANT]
@@ -268,7 +268,7 @@ print(response.elapsed)
 print(response.json())
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте, как настроить веб-приложение в [службе приложений](/azure/app-service/containers/) в документации по Linux.
 * Дополнительные сведения о масштабировании см. в статье [Приступая к работе с автомасштабированием в Azure](../azure-monitor/autoscale/autoscale-get-started.md?toc=%2fazure%2fapp-service%2ftoc.json).

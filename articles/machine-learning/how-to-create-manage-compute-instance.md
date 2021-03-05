@@ -11,12 +11,12 @@ ms.author: sgilley
 author: sdgilley
 ms.reviewer: sgilley
 ms.date: 10/02/2020
-ms.openlocfilehash: 5fc5b52cb8fb4d654bef136f44d8579036921364
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: da6285b7a4b12e65a82475fb53e972067e1c4fe4
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100097200"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214870"
 ---
 # <a name="create-and-manage-an-azure-machine-learning-compute-instance"></a>Создание Машинное обучение Azure вычислительного экземпляра и управление им
 
@@ -93,7 +93,7 @@ except ComputeTargetException:
 az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
 ```
 
-Дополнительные сведения см. в справке по команде [AZ ML computetarget Create компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/create?preserve-view=true&view=azure-cli-latest#ext_azure_cli_ml_az_ml_computetarget_create_computeinstance) .
+Дополнительные сведения см. в справке по команде [AZ ML computetarget Create компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/create#ext_azure_cli_ml_az_ml_computetarget_create_computeinstance) .
 
 # <a name="studio"></a>[Студия](#tab/azure-studio)
 
@@ -138,7 +138,7 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
     instance.get_status()
     ```
 
-* Стоп
+* Остановить
 
     ```python
     # stop() is used to stop the ComputeInstance
@@ -147,21 +147,21 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
     instance.stop(wait_for_completion=True, show_output=True)
     ```
 
-* Начало
+* Запуск
 
     ```python
     # start() is used to start the ComputeInstance if it is in stopped state
     instance.start(wait_for_completion=True, show_output=True)
     ```
 
-* Перезапуск
+* Перезагрузить
 
     ```python
     # restart() is used to restart the ComputeInstance
     instance.restart(wait_for_completion=True, show_output=True)
     ```
 
-* Удаление
+* DELETE
 
     ```python
     # delete() is used to delete the ComputeInstance target. Useful if you want to re-use the compute name 
@@ -172,37 +172,37 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
 
 В приведенных ниже примерах имя вычислительного экземпляра — **instance** .
 
-* Стоп
+* Остановить
 
     ```azurecli-interactive
     az ml computetarget stop computeinstance -n instance -v
     ```
 
-    Дополнительные сведения см. в разделе [AZ ML computetarget останавливает компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-computeinstance-stop).
+    Дополнительные сведения см. в разделе [AZ ML computetarget останавливает компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance#ext-azure-cli-ml-az-ml-computetarget-computeinstance-stop).
 
-* Начало 
+* Запуск 
 
     ```azurecli-interactive
     az ml computetarget start computeinstance -n instance -v
     ```
 
-    Дополнительные сведения см. в статье [AZ ML computetarget Start компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-computeinstance-start).
+    Дополнительные сведения см. в статье [AZ ML computetarget Start компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance#ext-azure-cli-ml-az-ml-computetarget-computeinstance-start).
 
-* Перезапуск 
+* Перезагрузить 
 
     ```azurecli-interactive
     az ml computetarget restart computeinstance -n instance -v
     ```
 
-    Дополнительные сведения см. в статье [AZ ML computetarget Restart компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-computeinstance-restart).
+    Дополнительные сведения см. в статье [AZ ML computetarget Restart компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance#ext-azure-cli-ml-az-ml-computetarget-computeinstance-restart).
 
-* Удаление
+* DELETE
 
     ```azurecli-interactive
     az ml computetarget delete -n instance -v
     ```
 
-    Дополнительные сведения см. в разделе [AZ ML computetarget Delete компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-computetarget-delete).
+    Дополнительные сведения см. в разделе [AZ ML computetarget Delete компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget#ext-azure-cli-ml-az-ml-computetarget-delete).
 
 # <a name="studio"></a>[Студия](#tab/azure-studio)
 
