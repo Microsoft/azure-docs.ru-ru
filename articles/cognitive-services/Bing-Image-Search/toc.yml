@@ -69,7 +69,7 @@
     - name: Справочник по Azure PowerShell
       href: /powershell/module/azurerm.cognitiveservices/
     - name: Справочник по Azure CLI
-      href: /cli/azure/cognitiveservices?view=azure-cli-latest#az_cognitiveservices_list
+      href: /cli/azure/cognitiveservices#az_cognitiveservices_list
     - name: Пакеты SDK
       items:
         - name: .NET

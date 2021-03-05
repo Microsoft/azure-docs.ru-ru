@@ -7,12 +7,12 @@ ms.service: azure-resource-manager
 ms.topic: conceptual
 ms.date: 12/28/2020
 ms.author: jgao
-ms.openlocfilehash: 574dcf50111c14f4924f009a74ed6f2ac2bb31e9
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 9d045fb75838ac016f3e9b04cd2519d8a8530a4b
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98733846"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175657"
 ---
 # <a name="use-deployment-scripts-in-arm-templates"></a>Использование скриптов развертывания в шаблонах ARM
 
@@ -141,7 +141,7 @@ ms.locfileid: "98733846"
 - `azPowerShellVersion`/`azCliVersion`: Укажите версию модуля для использования. См. список [поддерживаемых версий Azure PowerShell](https://mcr.microsoft.com/v2/azuredeploymentscripts-powershell/tags/list). См. список [поддерживаемых версий Azure CLI](https://mcr.microsoft.com/v2/azure-cli/tags/list).
 
   >[!IMPORTANT]
-  > Скрипт развертывания использует доступные образы CLI из реестра контейнеров Майкрософт (мкр). Сертификация образа CLI для сценария развертывания занимает около одного месяца. Не используйте версии CLI, выпущенные менее 30 дней назад. Чтобы найти даты выпуска образов, ознакомьтесь с [заметками о выпуске Azure CLI](/cli/azure/release-notes-azure-cli?view=azure-cli-latest&preserve-view=true). Если используется неподдерживаемая версия, в сообщении об ошибке выводится список поддерживаемых версий.
+  > Скрипт развертывания использует доступные образы CLI из реестра контейнеров Майкрософт (мкр). Сертификация образа CLI для сценария развертывания занимает около одного месяца. Не используйте версии CLI, выпущенные менее 30 дней назад. Чтобы найти даты выпуска образов, ознакомьтесь с [заметками о выпуске Azure CLI](/cli/azure/release-notes-azure-cli). Если используется неподдерживаемая версия, в сообщении об ошибке выводится список поддерживаемых версий.
 
 - `arguments`. Укажите значения параметров. Значения разделяются пробелами.
 
@@ -149,7 +149,7 @@ ms.locfileid: "98733846"
 
   Если аргументы содержат escape-символы, используйте [жсонескапер](https://www.jsonescaper.com/) для двойного экранирования символов. Вставьте исходную экранированную строку в средство, а затем выберите **escape**.  Средство выводит строку с двойным экранированием. Например, в предыдущем примере шаблона аргумент имеет значение `-name \"John Dole\"` . Экранированная строка имеет значение `-name \\\"John Dole\\\"` .
 
-  Чтобы передать параметр шаблона ARM типа Object в качестве аргумента, преобразуйте объект в строку с помощью функции [String ()](./template-functions-string.md#string) , а затем используйте функцию [Replace ()](./template-functions-string.md#replace) , чтобы заменить Any на `\"` `\\\"` . Например:
+  Чтобы передать параметр шаблона ARM типа Object в качестве аргумента, преобразуйте объект в строку с помощью функции [String ()](./template-functions-string.md#string) , а затем используйте функцию [Replace ()](./template-functions-string.md#replace) , чтобы заменить Any на `\"` `\\\"` . Пример:
 
   ```json
   replace(string(parameters('tables')), '\"', '\\\"')
@@ -264,7 +264,7 @@ reference('<ResourceName>').output.text
 
 - Поддерживаются следующие типы учетных записей хранения:
 
-    | Номер SKU             | Поддерживаемый тип     |
+    | SKU             | Поддерживаемый тип     |
     |-----------------|--------------------|
     | Premium_LRS     | FileStorage        |
     | Premium_ZRS     | FileStorage        |
@@ -377,10 +377,10 @@ Timeout             : PT1H
 
 С помощью Azure CLI можно управлять сценариями развертывания в области действия подписки или группы ресурсов:
 
-- [AZ Deployment — скрипты Delete](/cli/azure/deployment-scripts?view=azure-cli-latest&preserve-view=true#az-deployment-scripts-delete): Удаление скрипта развертывания.
-- [AZ Deployment-Script List](/cli/azure/deployment-scripts?view=azure-cli-latest&preserve-view=true#az-deployment-scripts-list): вывод списка всех скриптов развертывания.
-- [AZ Deployment — скрипты](/cli/azure/deployment-scripts?view=azure-cli-latest&preserve-view=true#az-deployment-scripts-show): получение скрипта развертывания.
-- [AZ Deployment-Scripts показывать-log](/cli/azure/deployment-scripts?view=azure-cli-lates&preserve-view=truet#az-deployment-scripts-show-log): показывать журналы скрипта развертывания.
+- [AZ Deployment — скрипты Delete](/cli/azure/deployment-scripts#az-deployment-scripts-delete): Удаление скрипта развертывания.
+- [AZ Deployment-Script List](/cli/azure/deployment-scripts#az-deployment-scripts-list): вывод списка всех скриптов развертывания.
+- [AZ Deployment — скрипты](/cli/azure/deployment-scripts#az-deployment-scripts-show): получение скрипта развертывания.
+- [AZ Deployment-Scripts показывать-log](/cli/azure/deployment-scripts#az-deployment-scripts-show-log): показывать журналы скрипта развертывания.
 
 Выходные данные команды List похожи на:
 

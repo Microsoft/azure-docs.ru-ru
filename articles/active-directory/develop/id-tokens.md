@@ -14,12 +14,12 @@ ms.author: hirsin
 ms.reviewer: hirsin
 ms.custom: aaddev, identityplatformtop40
 ms:custom: fasttrack-edit
-ms.openlocfilehash: 6a1f4a02ebf42c0f181b595aae0a5fa0bcc9b41d
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.openlocfilehash: 21e0b800e06b7a5ad0351ff53d26a5e2cd2ba71c
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98755912"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175394"
 ---
 # <a name="microsoft-identity-platform-id-tokens"></a>Маркеры ИДЕНТИФИКАТОРов платформы Microsoft Identity
 
@@ -55,7 +55,7 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjFMVE16YWtpaGlSbGFfOHoyQkVKVlhlV01x
 |-----|--------|-------------|
 |`typ` | Строка — всегда JWT | Указывает, что токен является маркером JWT.|
 |`alg` | Строка | Обозначает алгоритм, с помощью которого был подписан маркер. Пример: "RS256" |
-|`kid` | Строка | Отпечаток для открытого ключа, используемого для подписи этого маркера. Выпущенные `id_tokens` версий 1.0 и 2.0. |
+|`kid` | Строка | Отпечаток открытого ключа, используемого для проверки этого маркера. Выпущенные `id_tokens` версий 1.0 и 2.0. |
 |`x5t` | Строка | Также как и `kid` (использование и значение). Тем не менее, это устаревшее утверждение, выпускаемое для обеспечения совместимости только `id_tokens` версии 1.0. |
 
 ### <a name="payload-claims"></a>Утверждения полезных данных
@@ -135,7 +135,7 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjFMVE16YWtpaGlSbGFfOHoyQkVKVlhlV01x
 * Аудитория. Утверждение `aud` должно соответствовать идентификатору вашего приложения.
 * Nonce. Утверждение `nonce` в полезных данных должно соответствовать параметру nonce, переданному в конечную точку, или авторизации конечной точки во время первоначального запроса.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о [маркерах доступа](access-tokens.md)
 * Настройте утверждения JWT в id_token с помощью [необязательных утверждений](active-directory-optional-claims.md).

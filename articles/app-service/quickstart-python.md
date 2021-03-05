@@ -9,12 +9,12 @@ adobe-target: true
 adobe-target-activity: DocsExp–377467–A/B– Quickstarts/Python App–12.11
 adobe-target-experience: Experience B
 adobe-target-content: ./quickstart-python-1
-ms.openlocfilehash: 11e47e83da09699d60ada11539dbb2f000f075db
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.openlocfilehash: 1f37ee36710211e95bcc5d99a095de4303c85281
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98788678"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172398"
 ---
 # <a name="quickstart-create-a-python-app-using-azure-app-service-on-linux"></a>Краткое руководство. Создание приложения Python с помощью Службы приложений Azure в Linux
 
@@ -230,7 +230,7 @@ az webapp up
 
 Вы можете получить доступ к журналам консоли, созданным в приложении, и контейнеру, в котором он выполняется. Журналы содержат все выходные данные, созданные с помощью инструкций `print`.
 
-Чтобы выполнить потоковую передачу журналов, запустите команду [az webapp log tail](/cli/azure/webapp/log?view=azure-cli-latest&preserve-view=true#az_webapp_log_tail):
+Чтобы выполнить потоковую передачу журналов, запустите команду [az webapp log tail](/cli/azure/webapp/log#az_webapp_log_tail):
 
 ```azurecli
 az webapp log tail

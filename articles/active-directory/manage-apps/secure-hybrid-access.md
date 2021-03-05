@@ -11,12 +11,12 @@ ms.workload: identity
 ms.date: 2/16/2021
 ms.author: gasinh
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a4241a70577ce359320d388882312cf06090ba
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 06ed37b914c352d7162db7f8409ac09b7615da47
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101645431"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174433"
 ---
 # <a name="secure-hybrid-access-secure-legacy-apps-with-azure-active-directory"></a>Безопасный гибридный доступ: защищенные устаревшие приложения с Azure Active Directory
 
@@ -48,7 +48,7 @@ ms.locfileid: "101645431"
 
 - [Контроллер доставки приложений Citrix (ADC)](https://docs.microsoft.com/azure/active-directory/saas-apps/citrix-netscaler-tutorial)
 
-- [F5 Big-IP APM](https://docs.microsoft.com/azure/active-directory/saas-apps/headerf5-tutorial)
+- [F5 Big-IP APM](https://docs.microsoft.com/azure/active-directory/manage-apps/f5-aad-integration)
 
 - [Kemp](https://docs.microsoft.com/azure/active-directory/saas-apps/kemp-tutorial)
 

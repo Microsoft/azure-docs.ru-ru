@@ -107,7 +107,7 @@
 - name: Справочник
   items:
     - name: Azure CLI
-      href: /cli/azure/cognitiveservices?view=azure-cli-latest#az_cognitiveservices_list
+      href: /cli/azure/cognitiveservices#az_cognitiveservices_list
     - name: Azure PowerShell
       href: /powershell/module/azurerm.cognitiveservices/
     - name: "API \"Компьютерное зрение\" версии\_3.2 (предварительная версия)"

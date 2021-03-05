@@ -5,12 +5,12 @@ description: Узнайте, как создать подключение по �
 services: container-service
 ms.topic: article
 ms.date: 06/04/2019
-ms.openlocfilehash: b55d9f838471f01b1c77b732f6a728aa99c25a74
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 4cfac73c66969148927897de7ed6da0c56aa276a
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100591108"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173823"
 ---
 # <a name="connect-with-rdp-to-azure-kubernetes-service-aks-cluster-windows-server-nodes-for-maintenance-or-troubleshooting"></a>Подключение по протоколу RDP к узлам Windows Server в кластере Kubernetes Service (AKS) для обслуживания или устранения неполадок
 
@@ -18,7 +18,7 @@ ms.locfileid: "100591108"
 
 В этой статье показано, как создать подключение RDP с узлом AKS, используя их частные IP-адреса.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 В этой статье предполагается, что у вас уже есть кластер AKS с узлом Windows Server. Если вам нужен кластер AKS, см. статью о [создании кластера AKS с контейнером Windows с помощью Azure CLI][aks-windows-cli]. Необходимо имя пользователя и пароль администратора Windows для узла Windows Server, для которого требуется устранить неполадки. Если вы не знакомы с ними, их можно сбросить, выполнив [сброс службы удаленных рабочих столов или пароль администратора на виртуальной машине Windows ](../virtual-machines/troubleshooting/reset-rdp.md). Вам также потребуется клиент RDP, например [Удаленный рабочий стол (Майкрософт)][rdp-mac].
 
@@ -147,7 +147,7 @@ NSG_NAME=$(az network nsg list -g $CLUSTER_RG --query [].name -o tsv)
 az network nsg rule delete --resource-group $CLUSTER_RG --nsg-name $NSG_NAME --name tempRDPAccess
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если требуются дополнительные данные по устранению неполадок, можно [Просмотреть журналы главного узла Kubernetes][view-master-logs] или [Azure Monitor][azure-monitor-containers].
 
@@ -158,8 +158,8 @@ az network nsg rule delete --resource-group $CLUSTER_RG --nsg-name $NSG_NAME --n
 
 <!-- INTERNAL LINKS -->
 [aks-windows-cli]: windows-container-cli.md
-[az-aks-install-cli]: /cli/azure/aks?view=azure-cli-latest#az-aks-install-cli
-[az-aks-get-credentials]: /cli/azure/aks?view=azure-cli-latest#az-aks-get-credentials
+[az-aks-install-cli]: /cli/azure/aks#az-aks-install-cli
+[az-aks-get-credentials]: /cli/azure/aks#az-aks-get-credentials
 [az-vm-delete]: /cli/azure/vm#az-vm-delete
 [azure-monitor-containers]: ../azure-monitor/containers/container-insights-overview.md
 [install-azure-cli]: /cli/azure/install-azure-cli

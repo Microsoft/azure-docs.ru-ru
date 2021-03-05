@@ -10,12 +10,12 @@ ms.author: datrigan
 ms.reviewer: vanto
 ms.date: 03/03/2021
 ms.custom: azure-synapse, sqldbrb=1
-ms.openlocfilehash: e01f44d363d038bd2ea4b985e12c9afc200f2c20
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 1c587705041b8fb3d37e02142fa10ae5a1d73f9f
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102046454"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173853"
 ---
 # <a name="auditing-for-azure-sql-database-and-azure-synapse-analytics"></a>Аудит для базы данных SQL Azure и Azure синапсе Analytics
 [!INCLUDE[appliesto-sqldb-asa](../includes/appliesto-sqldb-asa.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "102046454"
 
 - Если политика аудита определена на уровне базы данных для Log Analytics рабочей области или назначения концентратора событий, то следующие операции не сохраняют политику аудита на уровне базы данных-источника:
     - [Копирование базы данных](database-copy.md)
-    - [Восстановление до точки во времени](recovery-using-backups.md)
+    - [Восстановление на момент времени](recovery-using-backups.md)
     - [Георепликация](active-geo-replication-overview.md) (база данных-получатель не будет иметь аудита на уровне базы данных)
 
 - Включение аудита в базе данных, помимо включения ее на сервере *, не приводит к переопределению* или изменению параметров аудита сервера. Оба аудита будут выполняться параллельно. Таким образом, аудит базы данных выполняется дважды: один раз в соответствии с политикой сервера и еще раз в соответствии с политикой базы данных.
@@ -284,8 +284,8 @@ AzureDiagnostics
 
 ### <a name="using-azure-cli"></a>Использование Azure CLI
 
-- [Управление политикой аудита сервера](/cli/azure/sql/server/audit-policy?view=azure-cli-latest)
-- [Управление политикой аудита базы данных](/cli/azure/sql/db/audit-policy?view=azure-cli-latest)
+- [Управление политикой аудита сервера](/cli/azure/sql/server/audit-policy)
+- [Управление политикой аудита базы данных](/cli/azure/sql/db/audit-policy)
 
 ### <a name="using-azure-resource-manager-templates"></a>Использование шаблонов Azure Resource Manager
 

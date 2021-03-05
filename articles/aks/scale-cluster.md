@@ -4,12 +4,12 @@ description: Сведения о том, как масштабировать ч�
 services: container-service
 ms.topic: article
 ms.date: 09/16/2020
-ms.openlocfilehash: d5686a74ffe138af51d2319c839a3a5c5887f992
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: fdb61bf090351894329c24eb1a3c73d627e622e8
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "90902943"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173772"
 ---
 # <a name="scale-the-node-count-in-an-azure-kubernetes-service-aks-cluster"></a>Масштабирование числа узлов в кластере Службы Azure Kubernetes (AKS)
 
@@ -81,7 +81,7 @@ az aks nodepool scale --name <your node pool name> --cluster-name myAKSCluster -
 
 Можно также автоматически масштабировать `User` Пулы узлов до 0 узлов, установив `--min-count` для параметра [автомасштабирования кластера](cluster-autoscaler.md) значение 0.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье вы вручную масштабируете кластер AKS, чтобы увеличить или уменьшить количество узлов. Вы также можете использовать [Автомасштабирование кластера][cluster-autoscaler] для автоматического масштабирования кластера.
 
@@ -93,4 +93,4 @@ az aks nodepool scale --name <your node pool name> --cluster-name myAKSCluster -
 [az-aks-show]: /cli/azure/aks#az-aks-show
 [az-aks-scale]: /cli/azure/aks#az-aks-scale
 [cluster-autoscaler]: cluster-autoscaler.md
-[az-aks-nodepool-scale]: /cli/azure/aks/nodepool?view=azure-cli-latest#az-aks-nodepool-scale&preserve-view=true
+[az-aks-nodepool-scale]: /cli/azure/aks/nodepool#az-aks-nodepool-scale

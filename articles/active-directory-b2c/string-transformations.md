@@ -8,15 +8,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 11/03/2020
+ms.date: 03/04/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 4e74c33a18baff3e1cb39328ce265f16975ef1b5
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 9cd5a62cd85687767497b142a30d31aa6dd00b77
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95994848"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175096"
 ---
 # <a name="string-claims-transformations"></a>Преобразования утверждений строк
 
@@ -149,6 +149,42 @@ ms.locfileid: "95994848"
     - **value**: условия предоставления услуг компании Contoso...
 - Исходящие утверждения:
     - **createdClaim**: параметр ClaimType TOS содержит значение "Условия предоставления услуг компании Contoso...".
+
+## <a name="copyclaimifpredicatematch"></a>копиклаимифпредикатематч
+
+Копировать значение утверждения в другое, если значение входного утверждения совпадает с выходным предикатом исходящего утверждения. 
+
+| Item | TransformationClaimType | Тип данных | Примечания |
+| ---- | ----------------------- | --------- | ----- |
+| InputClaim | InputClaim | строка | Тип утверждения, который будет скопирован. |
+| outputClaim | outputClaim | строка | Тип утверждения, созданный после вызова этого преобразования утверждений. Значение входного утверждения проверяется по предикату утверждения. |
+
+В следующем примере значение утверждения signInName копируется в утверждение phoneNumber, только если signInName является номером телефона. Полный пример см. в разделе [номер телефона или политика начального пакета для входа в электронную почту](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/blob/master/scenarios/phone-number-passwordless/Phone_Email_Base.xml) .
+
+```xml
+<ClaimsTransformation Id="SetPhoneNumberIfPredicateMatch" TransformationMethod="CopyClaimIfPredicateMatch">
+  <InputClaims>
+    <InputClaim ClaimTypeReferenceId="signInName" TransformationClaimType="inputClaim" />
+  </InputClaims>
+  <OutputClaims>
+    <OutputClaim ClaimTypeReferenceId="phoneNumber" TransformationClaimType="outputClaim" />
+  </OutputClaims>
+</ClaimsTransformation>
+```
+
+### <a name="example-1"></a>Пример 1
+
+- Входящие утверждения:
+    - **inputClaim**: bob@contoso.com
+- Исходящие утверждения:
+    - **outputClaim**: выходное утверждение не будет изменено из исходного значения.
+
+### <a name="example-2"></a>Пример 2
+
+- Входящие утверждения:
+    - **inputClaim**: + 11234567890
+- Исходящие утверждения:
+    - **outputClaim**: +11234567890
 
 ## <a name="compareclaims"></a>CompareClaims
 

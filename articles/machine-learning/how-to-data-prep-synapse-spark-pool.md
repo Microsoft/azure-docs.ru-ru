@@ -1,7 +1,7 @@
 ---
-title: Подготовка данных с помощью пулов Spark (Предварительная версия)
+title: Подготовка данных с помощью пулов Apache Spark (Предварительная версия)
 titleSuffix: Azure Machine Learning
-description: Узнайте, как подключить пулы Spark для подготовки данных с помощью Azure синапсе и Машинное обучение Azure
+description: Узнайте, как подключить пулы Apache Spark для подготовки данных с помощью Azure синапсе Analytics и Машинное обучение Azure
 services: machine-learning
 ms.service: machine-learning
 ms.subservice: core
@@ -11,29 +11,29 @@ author: nibaccam
 ms.reviewer: nibaccam
 ms.date: 03/02/2021
 ms.custom: how-to, devx-track-python, data4ml
-ms.openlocfilehash: 87e03b6aee122c5a26d4388ca8b570aa6cdf7b55
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 7eeb7b82d9c3bfe21019d5d68f82c2e6d7a2bf68
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101662889"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171519"
 ---
-# <a name="attach-synapse-spark-pools-for-data-preparation-with-azure-synapse-preview"></a>Подключение пулов синапсе Spark к подготовке данных с помощью Azure синапсе (Предварительная версия)
+# <a name="attach-apache-spark-pools-powered-by-azure-synapse-analytics-for-data-preparation-preview"></a>Присоединение пулов Apache Spark (на платформе Azure синапсе Analytics) для подготовки данных (Предварительная версия)
 
-Из этой статьи вы узнаете, как присоединить и запустить пул Apache Spark, поддерживаемый [Azure синапсе](/synapse-analytics/overview-what-is.md) для подготовки данных. 
+Из этой статьи вы узнаете, как присоединить и запустить пул Apache Spark на платформе [Azure синапсе Analytics](/synapse-analytics/overview-what-is.md) для подготовки данных. 
 
 >[!IMPORTANT]
-> Машинное обучение Azure и интеграция Azure синапсе находятся на этапе предварительной версии. Возможности, представленные в этой статье, `azureml-synapse` применяют пакет, который содержит функции [экспериментальной](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py#stable-vs-experimental) предварительной версии, которые могут изменяться в любое время.
+> Машинное обучение Azure и интеграция Azure синапсе Analytics находятся на этапе предварительной версии. Возможности, представленные в этой статье, `azureml-synapse` применяют пакет, который содержит функции [экспериментальной](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py#stable-vs-experimental) предварительной версии, которые могут изменяться в любое время.
 
-## <a name="azure-machine-learning-and-azure-synapse-integration-preview"></a>Машинное обучение Azure и интеграция Azure синапсе (Предварительная версия)
+## <a name="azure-machine-learning-and-azure-synapse-analytics-integration-preview"></a>Интеграция Машинное обучение Azure и Azure синапсе Analytics (Предварительная версия)
 
-Интеграция Azure синапсе с Машинное обучение Azure (Предварительная версия) позволяет подключать пул Apache Spark, поддерживаемый Azure синапсе для интерактивного исследования и подготовки данных. Благодаря этой интеграции вы можете использовать выделенные ресурсы для подготовки данных в масштабе, все они находятся в той же записной книжке Python, которая используется для обучения моделей машинного обучения.
+Интеграция Azure синапсе Analytics с Машинное обучение Azure (Предварительная версия) позволяет подключать пул Apache Spark, поддерживаемый Azure синапсе для интерактивного исследования и подготовки данных. Благодаря этой интеграции вы можете использовать выделенные ресурсы для подготовки данных в масштабе, все они находятся в той же записной книжке Python, которая используется для обучения моделей машинного обучения.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 * [Создайте рабочую область Машинного обучения Azure](how-to-manage-workspace.md?tabs=python).
 
-* [Создайте рабочую область синапсе в портал Azure](../synapse-analytics/quickstart-create-workspace.md).
+* [Создайте рабочую область Azure синапсе Analytics в портал Azure](../synapse-analytics/quickstart-create-workspace.md).
 
 * [Создание пула Apache Spark с помощью портал Azure, веб-средств или синапсе Studio](../synapse-analytics/quickstart-create-apache-spark-pool-portal.md)
 
@@ -43,16 +43,16 @@ ms.locfileid: "101662889"
         pip install azureml-synapse
         ```
 
-## <a name="link-machine-learning-workspace-and-synapse-assets"></a>Связывание рабочей области машинного обучения и ресурсов синапсе
+## <a name="link-machine-learning-workspace-and-synapse-analytics-assets"></a>Связывание рабочей области машинного обучения и синапсе Analytics Assets
 
-Прежде чем подключить пул синапсе Spark для подготовки данных, Рабочая область Машинное обучение Azure должна быть связана с рабочей областью синапсе для Azure. 
+Прежде чем можно будет подключить пул Apache синапсе Spark для подготовки данных, необходимо связать рабочую область Машинное обучение Azure с рабочей областью Azure синапсе Analytics. 
 
-Вы можете связать рабочую область ML и рабочую область синапсе с помощью [пакета SDK для Python](#link-sdk) или [машинное обучение Azure Studio](#link-studio). 
+Вы можете связать рабочую область Машинное обучение и рабочую область синапсе Analytics с помощью [пакета SDK для Python](#link-sdk) или [машинное обучение Azure Studio](#link-studio). 
 
 > [!IMPORTANT]
-> Для успешного связывания с рабочей областью синапсе необходимо иметь роль **владельца** рабочей области синапсе. Проверьте доступ в [портал Azure](https://ms.portal.azure.com/).
+> Для успешного связывания с рабочей областью Azure синапсе Analytics необходимо иметь роль **владельца** рабочей области Azure синапсе Analytics. Проверьте доступ в [портал Azure](https://ms.portal.azure.com/).
 >
-> Если вы не являетесь **владельцем** рабочей области синапсе, но хотите использовать существующую связанную службу, см. статью [Получение существующей связанной службы](#get-an-existing-linked-service).
+> Если вы не являетесь **владельцем** рабочей области Azure синапсе Analytics, но хотите использовать существующую связанную службу, см. статью [Получение существующей связанной службы](#get-an-existing-linked-service).
 
 
 <a name="link-sdk"></a>
@@ -60,8 +60,8 @@ ms.locfileid: "101662889"
 
 В следующем коде [`LinkedService`](/python/api/azureml-core/azureml.core.linked_service.linkedservice?preserve-view=true&view=azure-ml-py) классы и используются [`SynapseWorkspaceLinkedServiceConfiguration`](/python/api/azureml-core/azureml.core.linked_service.synapseworkspacelinkedserviceconfiguration?preserve-view=true&view=azure-ml-py) в, 
 
-* Свяжите рабочую область машинного обучения `ws` с рабочей областью Azure синапсе. 
-* Зарегистрируйте рабочую область синапсе с Машинное обучение Azure в качестве связанной службы.
+* Свяжите рабочую область Машинное обучение Azure `ws` с рабочей областью Azure синапсе Analytics. 
+* Зарегистрируйте рабочую область Azure синапсе Analytics с Машинное обучение Azure в качестве связанной службы.
 
 ``` python
 import datetime  
@@ -82,14 +82,14 @@ linked_service = LinkedService.register(workspace = ws,
                                             linked_service_config = synapse_link_config)
 ```
 > [!IMPORTANT] 
-> Управляемое удостоверение `system_assigned_identity_principal_id` создается для каждой связанной службы. Перед началом сеанса синапсе для этого управляемого удостоверения необходимо предоставить роль **администратора синапсе Apache Spark** рабочей области синапсе. [Назначьте управляемому удостоверению роль администратора синапсе Apache Spark в синапсе Studio](../synapse-analytics/security/how-to-manage-synapse-rbac-role-assignments.md).
+> Управляемое удостоверение `system_assigned_identity_principal_id` создается для каждой связанной службы. Перед началом сеанса Apache Spark это управляемое удостоверение должно быть предоставлено роли **администратора синапсе Apache Spark** в рабочей области Azure синапсе Analytics. [Назначьте управляемому удостоверению роль администратора синапсе Apache Spark в синапсе Studio](../synapse-analytics/security/how-to-manage-synapse-rbac-role-assignments.md).
 >
 > Чтобы найти `system_assigned_identity_principal_id` конкретную связанную службу, используйте `LinkedService.get('<your-mlworkspace-name>', '<linked-service-name>')` .
 
 <a name="link-studio"></a>
 ### <a name="link-workspaces-via-studio"></a>Связывание рабочих областей с помощью студии
 
-Свяжите рабочую область машинного обучения и рабочую область синапсе с помощью Машинное обучение Azure Studio, выполнив следующие действия. 
+Свяжите рабочую область Машинное обучение Azure и рабочую область Azure синапсе Analytics с помощью Машинное обучение Azure Studio, выполнив следующие действия. 
 
 1. Войдите в [машинное обучение Azure Studio](https://ml.azure.com/).
 1. Выберите **связанные службы** в разделе **Управление** левой панели.
@@ -102,14 +102,14 @@ linked_service = LinkedService.register(workspace = ws,
    |имя подписки; | Выберите имя подписки, связанное с рабочей областью машинного обучения. 
    |Рабочая область синапсе | Выберите рабочую область синапсе, с которой необходимо установить связь. 
    
-1. Нажмите кнопку **Далее** , чтобы открыть форму **Выбор пулов Spark (необязательно)** . В этой форме вы выберите пул синапсе Spark для присоединения к рабочей области.
+1. Нажмите кнопку **Далее** , чтобы открыть форму **Выбор пулов Spark (необязательно)** . В этой форме вы выбираете, какой пул Apache Spark синапсе подключаться к рабочей области.
 
 1. Нажмите кнопку **Далее** , чтобы открыть форму **проверки** и проверить выбранные параметры. 
 1. Выберите **создать** , чтобы завершить процесс создания связанной службы.
 
 ## <a name="get-an-existing-linked-service"></a>Получение существующей связанной службы
 
-Для получения и использования существующей связанной службы требуются разрешения **пользователя или участника** рабочей области синапсе.
+Для получения и использования существующей связанной службы требуются разрешения **пользователя или участника** рабочей области Azure синапсе Analytics.
 
 В этом примере из рабочей области извлекается существующая связанная служба `synapselink1` `ws` с [`get()`](/python/api/azureml-core/azureml.core.linkedservice?preserve-view=true&view=azure-ml-py#get-workspace--name-) методом.
 ```python
@@ -132,39 +132,39 @@ LinkedService.list(ws)
  
 ## <a name="attach-synapse-spark-pool-as-a-compute"></a>Подключение пула синапсе Spark в качестве вычислений
 
-После связывания рабочих областей Подключите пул синапсе Spark в качестве выделенного ресурса вычислений для задач подготовки данных. 
+После связывания рабочих областей Подключите пул Apache Spark синапсе в качестве выделенного ресурса вычислений для задач подготовки данных. 
 
-Пулы синапсе Spark можно подключать с помощью,
+Пулы Apache Spark можно подключать с помощью,
 * Студия машинного обучения Azure.
 * [Шаблоны Azure Resource Manager (ARM)](https://github.com/Azure/azure-quickstart-templates/blob/master/101-machine-learning-linkedservice-create/azuredeploy.json)
 * Пакет SDK для Python 
 
-Выполните следующие действия, чтобы подключить пул синапсе Spark с помощью студии. 
+Выполните следующие действия, чтобы подключить пул Apache Spark с помощью студии. 
 
 1. Войдите в [машинное обучение Azure Studio](https://ml.azure.com/).
 1. Выберите **связанные службы** в разделе **Управление** левой панели.
 1. Выберите рабочую область синапсе.
 1. Выберите **подключенные пулы Spark** в верхнем левом углу. 
 1. Выберите **Подключить**. 
-1. Выберите из списка Пул синапсе Spark и укажите имя.  
+1. Выберите из списка Пул Apache Spark и укажите имя.  
     1. В этом списке указаны доступные пулы синапсе Spark, которые можно присоединить к вычислению. 
     1. Сведения о создании нового пула Spark синапсе см. [в статье Создание пула Apache Spark в синапсе Studio](../synapse-analytics/quickstart-create-apache-spark-pool-portal.md) .
 1. Выберите пункт **присоединить выбранное**. 
 
 
-Вы также можете использовать **пакет SDK для Python** , чтобы подключить пул синапсе Spark. 
+Можно также использовать **пакет SDK для Python** , чтобы подключить пул Apache Spark. 
 
 Следующий код 
 1. Настраивает Синапсекомпуте с помощью,
 
    1. LinkedService, `linked_service` созданный или полученный на предыдущем шаге. 
    1. Тип целевого объекта вычислений, который необходимо присоединить, `SynapseSpark`
-   1. Имя пула Spark синапсе. Это должно совпадать с существующим пулом Apache Spark, который находится в рабочей области синапсе.
+   1. Имя пула Apache Spark. Это должно совпадать с существующим пулом Apache Spark, который находится в рабочей области Azure синапсе Analytics.
    
 1. Создает ComputeTarget машинного обучения, передавая, 
    1. Рабочая область машинного обучения, которую вы хотите использовать, `ws`
-   1. Имя, которое вы хотите использовать для вычислений в рабочей области машинного обучения. 
-   1. Attach_configuration, указанный при настройке Синапсекомпуте.
+   1. Имя, которое вы хотите использовать для вычислений в рабочей области Машинное обучение Azure. 
+   1. Attach_configuration, указанный при настройке вычислений синапсе.
        1. Вызов ComputeTarget. Attach () выполняется асинхронно, поэтому образец блокируется до завершения вызова.
 
 ```python
@@ -182,7 +182,7 @@ synapse_compute = ComputeTarget.attach(workspace= ws,
 synapse_compute.wait_for_completion()
 ```
 
-Убедитесь, что пул синапсе Spark подключен.
+Проверьте, присоединен ли пул Apache Spark.
 
 ```python
 ws.compute_targets['Synapse Spark pool alias']
@@ -190,12 +190,12 @@ ws.compute_targets['Synapse Spark pool alias']
 
 ## <a name="launch-synapse-spark-pool-for-data-preparation-tasks"></a>Запуск пула Spark синапсе для задач подготовки данных
 
-Вы можете указать [машинное обучение Azure среду](concept-environments.md) , которая будет использоваться во время сеанса синапсе. Вступят в силу будут только зависимости Conda, указанные в среде. Образ DOCKER не поддерживается.
+Вы можете указать [машинное обучение Azure среду](concept-environments.md) , которая будет использоваться во время сеанса Apache Spark. Вступят в силу будут только зависимости Conda, указанные в среде. Образ DOCKER не поддерживается.
 
 >[!WARNING]
->  Зависимости Python, указанные в зависимости Conda окружения, не поддерживаются в пулах Spark синапсе. В настоящее время поддерживаются только фиксированные версии Python. Проверьте версию Python, включив  `sys.version_info` в скрипт.
+>  Зависимости Python, указанные в зависимости Conda окружения, не поддерживаются в пулах Apache Spark. В настоящее время поддерживаются только фиксированные версии Python. Проверьте версию Python, включив  `sys.version_info` в скрипт.
 
-Следующий код создает среду, `myenv` которая устанавливает `azureml-core` версию 1.20.0 и `numpy` версию 1.17.0 до начала сеанса. Затем эту среду можно включить в инструкцию синапсе Session `start` .
+Следующий код создает среду, `myenv` которая устанавливает `azureml-core` версию 1.20.0 и `numpy` версию 1.17.0 до начала сеанса. Затем эту среду можно включить в инструкцию Apache Spark Session `start` .
 
 ```python
 
@@ -209,10 +209,10 @@ env.python.conda_dependencies.add_conda_package("numpy==1.17.0")
 env.register(workspace=ws)
 ```
 
-Чтобы начать подготовку данных с помощью пула Spark синапсе, укажите имя пула синапсе Spark и укажите идентификатор подписки, группу ресурсов рабочей области машинного обучения, имя рабочей области машинного обучения и среду, которая будет использоваться во время сеанса синапсе. 
+Чтобы начать подготовку данных с помощью пула Apache Spark Spark, укажите имя пула Apache Spark и укажите идентификатор подписки, группу ресурсов рабочей области машинного обучения, имя рабочей области машинного обучения, а также какую среду использовать во время сеанса Apache Spark. 
 
 > [!IMPORTANT]
-> Чтобы продолжить использование пула синапсе Spark, необходимо указать, какой ресурс вычислений использовать в задачах подготовки данных с помощью `%synapse` для отдельных строк кода и `%%synapse` для нескольких строк. 
+> Чтобы продолжить использование пула Apache Spark, необходимо указать, какой ресурс вычислений использовать в задачах подготовки данных — `%synapse` для отдельных строк кода и `%%synapse` для нескольких строк. 
 
 ```python
 %synapse start -c SynapseSparkPoolAlias -s AzureMLworkspaceSubscriptionID -r AzureMLworkspaceResourceGroupName -w AzureMLworkspaceName -e myenv
@@ -226,7 +226,7 @@ env.register(workspace=ws)
 
 ## <a name="load-data-from-storage"></a>Загрузка данных из хранилища
 
-После запуска сеанса синапсе Spark прочтите данные, которые вы хотите подготовить. Загрузка данных поддерживается для хранилища BLOB-объектов Azure и Azure Data Lake Storage поколений 1 и 2.
+После запуска сеанса Apache Spark прочтите данные, которые вы хотите подготовить. Загрузка данных поддерживается для хранилища BLOB-объектов Azure и Azure Data Lake Storage поколений 1 и 2.
 
 Существует два способа загрузки данных из следующих служб хранилища: 
 
@@ -330,7 +330,7 @@ df.show()
 df.write.format("csv").mode("overwrite").save("wasbs://demo@dprepdata.blob.core.windows.net/training_data/Titanic.csv")
 ```
 
-Завершив подготовку данных и сохранив подготовленные данные в хранилище, завершите работу с пулом синапсе Spark с помощью следующей команды.
+Когда вы завершите подготовку данных и сохранили подготовленные данные в хранилище, завершите использование пула Apache Spark с помощью следующей команды.
 
 ```python
 %synapse stop
@@ -360,11 +360,10 @@ input1 = train_ds.as_mount()
 
 ## <a name="example-notebook"></a>Пример записной книжки
 
-Подробный пример кода для подготовки данных и обучения модели из одной записной книжки с помощью Azure синапсе и Машинное обучение Azure см. в этой [сквозной записной книжке](../synapse-analytics/overview-what-is.md) .
+Подробный пример того, как выполнить подготовку данных и обучение модели из одной записной книжки с помощью Azure синапсе Analytics и Машинное обучение Azure, см. в этой [сквозной записной книжке](../synapse-analytics/overview-what-is.md) .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * [Обучение модели](how-to-set-up-training-targets.md).
 * [Обучение с помощью набора данных Машинное обучение Azure](how-to-train-with-datasets.md)
 * [Создайте набор данных машинного обучения Azure](how-to-create-register-datasets.md).
-

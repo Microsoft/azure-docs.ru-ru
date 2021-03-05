@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.date: 01/05/2021
 ms.author: jgao
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: db4a938d2f773ed24d4c7a48d747dd5cc22c0bd2
-ms.sourcegitcommit: 5e762a9d26e179d14eb19a28872fb673bf306fa7
+ms.openlocfilehash: e28b66844eaa0b73c2654175dea2e31d3cd75f5d
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97900286"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172102"
 ---
 # <a name="manage-azure-resource-manager-resource-groups-by-using-azure-cli"></a>Управление группами ресурсов Azure Resource Manager с помощью Azure CLI
 
@@ -125,7 +125,7 @@ az lock delete --name $lockName --resource-group $resourceGroupName
 - Автоматизируйте будущие развертывания решения, поскольку шаблон содержит всю полную инфраструктуру.
 - Познакомьтесь с синтаксисом шаблона, просмотрев нотация объектов JavaScript (JSON), который представляет ваше решение.
 
-Чтобы экспортировать все ресурсы в группе ресурсов, используйте команду [AZ Group Export](/cli/azure/group?view=azure-cli-latest#az_group_export&preserve-view=true) и укажите имя группы ресурсов.
+Чтобы экспортировать все ресурсы в группе ресурсов, используйте команду [AZ Group Export](/cli/azure/group#az_group_export) и укажите имя группы ресурсов.
 
 ```azurecli-interactive
 echo "Enter the Resource Group name:" &&

@@ -9,12 +9,12 @@ ms.author: twright
 ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
-ms.openlocfilehash: ecf0f54913f980d879b562eb4aa8063acf6c4772
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.openlocfilehash: 6f42f712ecca77c00020304b63f5a1b0dbd77ad0
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92320256"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172326"
 ---
 # <a name="install-client-tools-for-deploying-and-managing-azure-arc-enabled-data-services"></a>Установка клиентских средств для развертывания служб данных с поддержкой Azure Arc и управления ими
 
@@ -36,7 +36,7 @@ ms.locfileid: "92320256"
 | [!INCLUDE [azure-data-cli-azdata](../../../includes/azure-data-cli-azdata.md)] расширение для Azure Data Studio | Да | Расширение для Azure Data Studio, которое будет установлено, [!INCLUDE [azure-data-cli-azdata](../../../includes/azure-data-cli-azdata.md)] Если у вас его еще нет.| Установка из коллекции расширений в Azure Data Studio.|
 | Расширение дуги Azure для Azure Data Studio | Да | Расширение для Azure Data Studio, которое предоставляет возможности управления для служб данных, поддерживающих службу "Дуга Azure". Существует зависимость от [!INCLUDE [azure-data-cli-azdata](../../../includes/azure-data-cli-azdata.md)] расширения для Azure Data Studio. | Установка из коллекции расширений в Azure Data Studio.|
 | Расширение PostgreSQL в Azure Data Studio | Нет | Расширение PostgreSQL для Azure Data Studio, предоставляющее возможности управления для PostgreSQL. | <!--{need link} [Install](../azure-data-studio/data-virtualization-extension.md) --> Установка из коллекции расширений в Azure Data Studio.|
-| Azure CLI (AZ)<sup>1</sup> | Да | Современный интерфейс командной строки для управления службами Azure. Используется с развертываниями AKS и для передачи данных инвентаризации и выставления счетов в Azure с включенной службой ARC. ([Дополнительные сведения](/cli/azure/?view=azure-cli-latest&preserve-view=true)). | [Установка](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) |
+| Azure CLI (AZ)<sup>1</sup> | Да | Современный интерфейс командной строки для управления службами Azure. Используется с развертываниями AKS и для передачи данных инвентаризации и выставления счетов в Azure с включенной службой ARC. ([Дополнительные сведения](/cli/azure/)). | [Установка](/cli/azure/install-azure-cli) |
 | Kubernetes CLI (kubectl)<sup>2</sup> | Да | Программа командной строки для управления кластером Kubernetes ([Дополнительные сведения](https://kubernetes.io/docs/tasks/tools/install-kubectl/)). | [Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-with-powershell-from-psgallery) \| [Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-using-native-package-management) |
 | изогнутое <sup>3</sup> | Требуется для некоторых примеров сценариев. | Программа командной строки для передачи данных по URL-адресам. | [Windows](https://curl.haxx.se/windows/) \| Linux: установите пакет cURL |
 | даваемым | Требуется для развертываний Red Hat OpenShift и Azure Redhat OpenShift. |`oc` — это интерфейс командной строки (CLI) в Open Shift. | [Установка CLI](https://docs.openshift.com/container-platform/4.4/cli_reference/openshift_cli/getting-started-cli.html#installing-the-cli)

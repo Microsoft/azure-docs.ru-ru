@@ -10,12 +10,12 @@ author: lobrien
 ms.author: laobri
 ms.topic: conceptual
 ms.date: 07/17/2020
-ms.openlocfilehash: 3c720e2b033d07397f3b13c37e1b4e15251b0a17
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.openlocfilehash: 0bfdea6c0bbbe40e4c72ab9da70a1b16d4bc4d3a
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100519496"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175674"
 ---
 # <a name="deep-learning-and-ai-frameworks-for-the-azure-data-science-vm"></a>Платформы глубокого обучения и искусственного интеллекта для виртуальной машины Azure для обработки и анализа данных
 Платформы глубокого обучения в DSVM перечислены ниже.
@@ -115,9 +115,9 @@ ms.locfileid: "100519496"
 
 | Категория | Значение |
 | ------------- | ------------- |
-| Поддерживаемые версии | 1.2.0 (Ubuntu 16,04), 1.4.0 (Ubuntu 18,04, Windows 2019) |
+| Поддерживаемые версии | 1.2.0 (Ubuntu 16,04), 1.7.1 (Ubuntu 18,04, Windows 2019) |
 | Поддерживаемые выпуски DSVM      | Windows Server 2019<br>Ubuntu 18.04<br> Ubuntu 16.04 |
-| Настройка и установка на DSVM  | Устанавливается в [Python 3,5](dsvm-tools-languages.md#python-linux-edition). Включены образцы записных книжек Jupyter, а примеры находятся в папке/dsvm/Samples/pytorch. |
+| Настройка и установка на DSVM  | Устанавливается в [Python 3,7](dsvm-tools-languages.md#python-linux-edition) в среде py37_pytorch conda. Включены образцы записных книжек Jupyter, а примеры находятся в папке/dsvm/Samples/pytorch. |
 | Как запустить      | Терминал: активируйте правильную среду, а затем запустите Python.<br/>* [JupyterHub](dsvm-ubuntu-intro.md#how-to-access-the-ubuntu-data-science-virtual-machine): Connect, а затем откройте каталог PyTorch для примеров.  |
 
 ## <a name="tensorflow"></a>[TensorFlow](https://www.tensorflow.org/);

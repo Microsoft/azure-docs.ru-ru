@@ -11,12 +11,12 @@ author: peterclu
 ms.date: 03/02/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, references_regions, contperf-fy21q1
-ms.openlocfilehash: e3705be10cb540538464e6b1299d848bc9057c7c
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 1309ad1b3e3f6bd6f9b543959220bf71c569f083
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102039926"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175011"
 ---
 # <a name="virtual-network-isolation-and-privacy-overview"></a>Общие сведения о изоляции и конфиденциальности виртуальной сети
 
@@ -34,7 +34,7 @@ ms.locfileid: "102039926"
 + [Виртуальные сети Azure](../virtual-network/virtual-networks-overview.md)
 + [IP-сети](../virtual-network/public-ip-addresses.md)
 + [Приватный канал Azure](how-to-configure-private-link.md)
-+ [Группы безопасности сети](../virtual-network/network-security-groups-overview.md)
++ [Группы безопасности сети (NSG)](../virtual-network/network-security-groups-overview.md)
 + [Сетевые брандмауэры](../firewall/overview.md)
 
 ## <a name="example-scenario"></a>Пример сценария
@@ -175,7 +175,7 @@ ms.locfileid: "102039926"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Эта статья является частью серии виртуальных сетей из четырех частей. Ознакомьтесь с остальными статьями, чтобы узнать, как защитить виртуальную сеть.
+Эта статья является частью серии виртуальных сетей из пяти частей. Ознакомьтесь с остальными статьями, чтобы узнать, как защитить виртуальную сеть.
 
 * [Часть 2. Обзор виртуальной сети](how-to-secure-workspace-vnet.md)
 * [Часть 3. Защита среды обучения](how-to-secure-training-vnet.md)

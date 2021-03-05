@@ -12,12 +12,12 @@ ms.date: 06/26/2020
 ms.author: ryanwi
 ms.reviewer: tomfitz
 ms.custom: aaddev, seoapril2019, identityplatformtop40
-ms.openlocfilehash: 5dd960dde72b879515bd948c4731ead135bef4b0
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 6adc3a8af90f6f05f640de97b8fa74c8d40e0329
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102035056"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175554"
 ---
 # <a name="how-to-use-the-portal-to-create-an-azure-ad-application-and-service-principal-that-can-access-resources"></a>Практическое руководство. Создание приложения Azure Active Directory и субъекта-службы с доступом к ресурсам с помощью портала
 
@@ -84,6 +84,9 @@ ms.locfileid: "102035056"
    ![Введите имя приложения](./media/howto-create-service-principal-portal/create-app.png)
 
 Вы создали приложение Azure AD и субъект-службу.
+
+> [!NOTE]
+> Вы можете зарегистрировать несколько приложений с одним и тем же именем в Azure AD, но приложения должны иметь разные идентификаторы приложения (клиента).
 
 ## <a name="assign-a-role-to-the-application"></a>Назначение роли приложению
 

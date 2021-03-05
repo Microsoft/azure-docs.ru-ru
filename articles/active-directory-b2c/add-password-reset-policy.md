@@ -12,12 +12,12 @@ ms.date: 03/02/2021
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 8e4926fb228837c3ec0573af8ee5b15da5fd7431
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: b82d573b7d8a65447d75aa8f017c87795bbef6cd
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102033986"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171660"
 ---
 # <a name="set-up-a-password-reset-flow-in-azure-active-directory-b2c"></a>Настройка потока сброса пароля в Azure Active Directory B2C
 
@@ -301,5 +301,3 @@ ms.locfileid: "102033986"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Настройка [принудительного сброса пароля](force-password-reset.md).
-
-

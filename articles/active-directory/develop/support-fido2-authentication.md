@@ -11,12 +11,12 @@ ms.workload: identity
 ms.date: 1/29/2021
 ms.author: nichola
 ms.custom: aaddev
-ms.openlocfilehash: e7193ee5d076538689078ce634b8170926df20b6
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: f63d7aed75b14f5f008a639d667d8806b233b9fa
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101653258"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174604"
 ---
 # <a name="support-passwordless-authentication-with-fido2-keys-in-apps-you-develop"></a>Поддержка проверки подлинности без пароля с помощью ключей FIDO2 в разрабатываемых приложениях
 
@@ -52,7 +52,7 @@ ms.locfileid: "101653258"
 
 ### <a name="mobile"></a>Мобильный телефон
 
-По состоянию на февраль 2020 FIDO2 в настоящее время не поддерживается для собственных приложений iOS или Android, но находится на стадии разработки.
+По состоянию на февраль 2021 FIDO2 в настоящее время не поддерживается для собственных приложений iOS или Android, но находится на стадии разработки.
 
 Чтобы подготовить приложения к доступности, а в качестве общедоступной рекомендации, приложения iOS и Android должны использовать MSAL с конфигурацией по умолчанию с помощью веб-браузера системы.
 

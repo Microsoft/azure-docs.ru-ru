@@ -11,12 +11,12 @@ ms.custom:
 - cli-validate
 - devx-track-python
 - devx-track-azurecli
-ms.openlocfilehash: 6112247a99c519aad8aadf7946c7707480b3b491
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.openlocfilehash: a9f8fe10c5ffa787a6c170a29188cba21427b602
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99558416"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175164"
 ---
 # <a name="tutorial-deploy-a-django-web-app-with-postgresql-in-azure-app-service"></a>Руководство по развертыванию веб-приложения Django с PostgreSQL в Службе приложений Azure
 
@@ -231,7 +231,7 @@ az webapp config appsettings set --settings DBHOST="<postgres-server-name>" DBNA
 
     Замените `<app-name>` именем, которое использовали ранее в команде `az webapp up`.
 
-    Можно также подключиться к сеансу SSH с помощью команды [`az webapp ssh`](/cli/azure/webapp?view=azure-cli-latest&preserve-view=true#az_webapp_ssh). В Windows для выполнения этой команды требуется Azure CLI 2.18.0 или более поздней версии.
+    Можно также подключиться к сеансу SSH с помощью команды [`az webapp ssh`](/cli/azure/webapp#az_webapp_ssh). В Windows для выполнения этой команды требуется Azure CLI 2.18.0 или более поздней версии.
 
     Если не удается подключиться к сеансу SSH, значит, не запустилось само приложение. [Проверьте журналы диагностики](#6-stream-diagnostic-logs), чтобы получить подробные сведения. Например, если вы еще не создали необходимые параметры приложения в предыдущем разделе, в журналах будет указано `KeyError: 'DBNAME'`.
 

@@ -13,12 +13,12 @@ ms.date: 05/18/2020
 ms.author: hirsin
 ms.reviewer: hirsin
 ms.custom: aaddev
-ms.openlocfilehash: d0282e4f52db8557364cdabe197fa0da63204e42
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.openlocfilehash: bf469b79fa532978e904a54f32c80280706ee7cb
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98752637"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174586"
 ---
 # <a name="microsoft-identity-platform-and-oauth-20-resource-owner-password-credentials"></a>Учетные данные владельца ресурса OAuth 2.0 для платформы удостоверений Майкрософт
 
@@ -34,6 +34,7 @@ ms.locfileid: "98752637"
 > * Пользователи учетных записей без пароля не смогут войти в систему через ROPC. Для таких случаев мы рекомендуем использовать для приложения другой поток.
 > * Если пользователи должны использовать для входа в приложение [многофакторную проверку подлинности (MFA)](../authentication/concept-mfa-howitworks.md), они будут заблокированы.
 > * ROPC не поддерживается в сценариях [гибридной федерации удостоверений](../hybrid/whatis-fed.md) (например, Azure AD и ADFS, используемые для проверки подлинности локальных учетных записей). Если пользователи полностью перенаправляются на страницу локальных поставщиков удостоверений, Azure AD не сможет проверить имя пользователя и пароль для этого поставщика удостоверений. Однако с ROPC поддерживается [сквозная проверка подлинности](../hybrid/how-to-connect-pta.md).
+> * Исключением из сценария гибридной федерации удостоверений является следующее: политика обнаружения домашней области с Алловклаудпассвордвалидатион, для которой задано значение TRUE, позволит потоку РОПК работать для федеративных пользователей, когда локальный пароль синхронизируется с облаком. Дополнительные сведения см. в статье [Включение прямой проверки подлинности ропк для федеративных пользователей для устаревших приложений](../manage-apps/configure-authentication-for-federated-users-portal.md#enable-direct-ropc-authentication-of-federated-users-for-legacy-applications).
 
 ## <a name="protocol-diagram"></a>Схема протокола
 

@@ -139,7 +139,7 @@
     - name: Конфигурация
       items:
         - name: Azure CLI
-          href: /cli/azure/appconfig?view=azure-cli-latest
+          href: /cli/azure/appconfig
         - name: Поставщик .NET Core
           href: /dotnet/api/Microsoft.Extensions.Configuration.AzureAppConfiguration
         - name: Построитель .NET Framework

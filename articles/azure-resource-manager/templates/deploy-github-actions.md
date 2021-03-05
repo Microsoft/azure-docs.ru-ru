@@ -4,12 +4,12 @@ description: Описывает, как развертывать шаблоны 
 ms.topic: conceptual
 ms.date: 10/13/2020
 ms.custom: github-actions-azure, devx-track-azurecli
-ms.openlocfilehash: 67d4ac51e3e1f84f6a9acd0fc94d5818355d3954
-ms.sourcegitcommit: 3c3ec8cd21f2b0671bcd2230fc22e4b4adb11ce7
+ms.openlocfilehash: 243316b32d5b0cf62f03ae77d8a9fb919743ace1
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98762084"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172836"
 ---
 # <a name="deploy-arm-templates-by-using-github-actions"></a>Развертывание шаблонов ARM с помощью действий GitHub
 
@@ -38,7 +38,7 @@ ms.locfileid: "98762084"
 ## <a name="generate-deployment-credentials"></a>Создание учетных данных для развертывания.
 
 
-Вы можете создать [субъект-службу](../../active-directory/develop/app-objects-and-service-principals.md#service-principal-object) с помощью команды [az ad sp create-for-rbac](/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-create-for-rbac&preserve-view=true) в [Azure CLI](/cli/azure/). Чтобы выполнить эту команду, откройте [Azure Cloud Shell](https://shell.azure.com/) на портале Azure или нажмите кнопку **Попробовать**.
+Вы можете создать [субъект-службу](../../active-directory/develop/app-objects-and-service-principals.md#service-principal-object) с помощью команды [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac) в [Azure CLI](/cli/azure/). Чтобы выполнить эту команду, откройте [Azure Cloud Shell](https://shell.azure.com/) на портале Azure или нажмите кнопку **Попробовать**.
 
 Создайте группу ресурсов, если она еще не создана.
 

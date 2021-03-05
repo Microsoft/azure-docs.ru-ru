@@ -8,15 +8,13 @@ ms.date: 01/04/2021
 ms.author: chhenk
 ms.reviewer: azmetadatadev
 ms.custom: references_regions
-ms.openlocfilehash: b720e98fc83fd12744c289cb99814748b469b15d
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: e18c09130fcbcdbb470abc19d76bdf2ccfef0775
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102123689"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175728"
 ---
-# <a name="azure-instance-metadata-service"></a>Служба метаданных экземпляров Azure
-
 Служба метаданных экземпляров Azure (IMDS) предоставляет сведения о текущих экземплярах виртуальных машин. Его можно использовать для управления виртуальными машинами и их настройки.
 Эти сведения включают SKU, хранилище, конфигурации сети и будущие события обслуживания. Полный список доступных данных см. в разделе [Сводка по категориям конечных точек](#endpoint-categories).
 

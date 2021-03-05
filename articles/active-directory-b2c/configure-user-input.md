@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 12/10/2020
+ms.date: 03/04/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: eb7cba1de280793a1ca98687c71355c1ea702d4c
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.openlocfilehash: e76fe1c26f428403a79a3605b7a41f761fe2a4bb
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97585230"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171626"
 ---
 #  <a name="add-user-attributes-and-customize-user-input-in-azure-active-directory-b2c"></a>Добавление атрибутов пользователя и настройка пользовательского ввода в Azure Active Directory B2C
 
@@ -32,7 +32,7 @@ ms.locfileid: "97585230"
 
 В этой статье вы соберете новый атрибут во время регистрации в Azure Active Directory B2C (Azure AD B2C). Вы получите город пользователя, настроите его в виде раскрывающегося списка и определите, требуется ли предоставлять его.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 [!INCLUDE [active-directory-b2c-customization-prerequisites](../../includes/active-directory-b2c-customization-prerequisites.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "97585230"
 1. В клиенте Azure AD B2C выберите **Потоки пользователей**.
 1. Откройте политику (например B2C_1_SignupSignin), щелкнув ее.
 1. Выберите **атрибуты пользователя** , а затем выберите атрибут User (например, "City"). 
-1. Нажмите **Сохранить**.
+1. Щелкните **Сохранить**.
 
 ## <a name="provide-optional-claims-to-your-app"></a>Предоставление приложению дополнительных утверждений
 
@@ -52,7 +52,7 @@ ms.locfileid: "97585230"
 1. Откройте политику (например B2C_1_SignupSignin), щелкнув ее.
 1. Выберите элемент **Утверждения приложения**.
 1. Выберите атрибуты, которые необходимо отправить обратно в приложение (например, "City").
-1. Нажмите **Сохранить**.
+1. Щелкните **Сохранить**.
  
 ## <a name="configure-user-attributes-input-type"></a>Настройка типа входных атрибутов пользователя
 
@@ -62,7 +62,7 @@ ms.locfileid: "97585230"
 1. В разделе **атрибуты пользователя** выберите **City**.
     1. В раскрывающемся списке **Пользовательский тип ввода** выберите **дропдовнсинглеселект**.
     1. В раскрывающемся списке **необязательный** выберите **нет**.
-1. Нажмите **Сохранить**. 
+1. Щелкните **Сохранить**. 
 
 ### <a name="provide-a-list-of-values-by-using-localized-collections"></a>Предоставление списка значений с помощью локализованных коллекций
 
@@ -198,7 +198,7 @@ ms.locfileid: "97585230"
 </ClaimsProvider>
 ```
 
-Чтобы получить утверждение "город" после начального входа с помощью федеративной учетной записи, его необходимо добавить в технический профиль в качестве исходящего утверждения `SelfAsserted-Social` . Чтобы пользователи локальных и федеративных учетных записей могли изменять данные профиля позже, добавьте выходное утверждение в `SelfAsserted-ProfileUpdate` технический профиль. Переопределите эти технические профили в файле расширения. Укажите весь список исходящих утверждений для управления порядком представления заявок на экране. Найдите элемент **ClaimsProviders**. Добавьте новый Клаимспровидерс следующим образом:
+Чтобы получить утверждение "город" после начального входа с помощью федеративной учетной записи, его необходимо добавить в технический профиль в качестве исходящего утверждения `SelfAsserted-Social` . Чтобы пользователи локальных и федеративных учетных записей могли изменять данные своего профиля позже, добавьте входящие и исходящие утверждения в `SelfAsserted-ProfileUpdate` технический профиль. Переопределите эти технические профили в файле расширения. Укажите весь список исходящих утверждений для управления порядком представления заявок на экране. Найдите элемент **ClaimsProviders**. Добавьте новый Клаимспровидерс следующим образом:
 
 ```xml
 <ClaimsProvider>
@@ -206,6 +206,9 @@ ms.locfileid: "97585230"
   <TechnicalProfiles>
     <!--Federated account first-time sign-in page-->
     <TechnicalProfile Id="SelfAsserted-Social">
+      <InputClaims>
+        <InputClaim ClaimTypeReferenceId="city" />
+      </InputClaims>
       <OutputClaims>
         <OutputClaim ClaimTypeReferenceId="displayName"/>
         <OutputClaim ClaimTypeReferenceId="givenName"/>
@@ -215,6 +218,9 @@ ms.locfileid: "97585230"
     </TechnicalProfile>
     <!--Edit profile page-->
     <TechnicalProfile Id="SelfAsserted-ProfileUpdate">
+      <InputClaims>
+        <InputClaim ClaimTypeReferenceId="city" />
+      </InputClaims>
       <OutputClaims>
         <OutputClaim ClaimTypeReferenceId="displayName"/>
         <OutputClaim ClaimTypeReferenceId="givenName" />
