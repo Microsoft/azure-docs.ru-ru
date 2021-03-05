@@ -7,12 +7,12 @@ ms.service: azure-redhat-openshift
 ms.topic: conceptual
 ms.date: 10/30/2020
 keywords: Java, жакартаи, Java, Микропрофиль, Open-Liberty, WebSphere-Liberty, АТО, openshift, Red Hat
-ms.openlocfilehash: acb448a9662daa58b5d2ff42861e238e23586b33
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.openlocfilehash: 08fd3ab112498a983b438d5ba1f1f100816cbf5d
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100633892"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102213000"
 ---
 # <a name="deploy-a-java-application-with-open-libertywebsphere-liberty-on-an-azure-red-hat-openshift-4-cluster"></a>Развертывание приложения Java с помощью Open Liberty/WebSphere Liberty в кластере Azure Red Hat OpenShift 4
 
@@ -31,7 +31,7 @@ ms.locfileid: "100633892"
 1. Установите реализацию Java SE (например, [Адоптопенждк OpenJDK 8 LTS/OpenJ9](https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=openj9)).
 1. Установите [Maven](https://maven.apache.org/download.cgi) 3.5.0 или более поздней версии.
 1. Установите [DOCKER](https://docs.docker.com/get-docker/) для вашей ОС.
-1. Установите [Azure CLI](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest) 2.0.75 или более поздней версии.
+1. Установите [Azure CLI](/cli/azure/install-azure-cli) 2.0.75 или более поздней версии.
 1. Проверьте и установите флажок, [`envsubst`](https://command-not-found.com/envsubst) если он не был предварительно установлен в вашей операционной системе.
 1. Клонировать код для этого примера в локальную систему. Пример находится на [GitHub](https://github.com/Azure-Samples/open-liberty-on-aro).
 1. Следуйте инструкциям в разделе [Создание кластера Azure Red Hat OpenShift 4](./tutorial-create-cluster.md).
@@ -40,7 +40,7 @@ ms.locfileid: "100633892"
 
    Если вы планируете запускать приложения, интенсивно использующие память, в кластере, укажите соответствующий размер виртуальной машины для рабочих узлов с помощью `--worker-vm-size` параметра. Например, `Standard_E4s_v3` — это минимальный размер виртуальной машины для установки оператора Elasticsearch в кластере. Дополнительные сведения см. в разделе:
 
-   * [Azure CLI для создания кластера](/cli/azure/aro?preserve-view=true&view=azure-cli-latest#az-aro-create)
+   * [Azure CLI для создания кластера](/cli/azure/aro#az-aro-create)
    * [Поддерживаемые размеры виртуальных машин для оптимизированной для памяти](./support-policies-v4.md#memory-optimized)
    * [Необходимые условия для установки оператора Elasticsearch](https://docs.openshift.com/container-platform/4.3/logging/cluster-logging-deploying.html#cluster-logging-deploy-eo-cli_cluster-logging-deploying)
 

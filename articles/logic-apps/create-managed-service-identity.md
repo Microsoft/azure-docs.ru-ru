@@ -6,12 +6,12 @@ ms.suite: integration
 ms.reviewer: estfan, logicappspm, azla
 ms.topic: article
 ms.date: 02/12/2021
-ms.openlocfilehash: 9a3a511a287f093b4fc317213afedd5fdc3c21be
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.openlocfilehash: 055df9d2290ee445e2a7201acd374508a86e839f
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100520669"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102213324"
 ---
 # <a name="authenticate-access-to-azure-resources-by-using-managed-identities-in-azure-logic-apps"></a>Проверка подлинности и получение доступа к ресурсам Azure с помощью управляемых удостоверений в Azure Logic Apps.
 
@@ -185,7 +185,7 @@ Azure Logic Apps поддерживает [*назначенные систем�
    | **Подписка** | Да | <*Azure-subscription-name*> | Имя подписки Azure, которую нужно использовать. |
    | **Группа ресурсов** | Да | <*имя_группы_ресурсов_Azure*> | Имя, используемое группой ресурсов. Создайте группу или выберите имеющуюся. В этом примере создается новая группа с именем `fabrikam-managed-identities-RG` . |
    | **Регион** | Да | <*Azure-region*> | Регион Azure, в котором будут храниться сведения о приложении логики. В этом примере используется регион "Западная часть США". |
-   | **Имя** | Да | <*user-assigned-identity-name*> | Имя, присваиваемое удостоверению. В этом примере используется `Fabrikam-user-assigned-identity`. |
+   | **имя**; | Да | <*user-assigned-identity-name*> | Имя, присваиваемое удостоверению. В этом примере используется `Fabrikam-user-assigned-identity`. |
    |||||
 
    После проверки этих сведений Azure создаст управляемое удостоверение. Теперь можно добавить назначенное пользователем удостоверение в приложение логики. Невозможно добавить более одного назначенного пользователем удостоверения в приложение логики.
@@ -307,7 +307,7 @@ Azure Logic Apps поддерживает [*назначенные систем�
 * [Портал Azure](#azure-portal-assign-access)
 * [Шаблон Azure Resource Manager](../role-based-access-control/role-assignments-template.md)
 * Azure PowerShell ([New-AzRoleAssignment](/powershell/module/az.resources/new-azroleassignment)). Дополнительные сведения см. в разделе [Добавление назначения ролей с помощью Azure RBAC и Azure PowerShell](../role-based-access-control/role-assignments-powershell.md).
-* Azure CLI ([az role assignment create](/cli/azure/role/assignment?view=azure-cli-latest&preserve-view=true#az-role-assignment-create)). Дополнительные сведения см. в разделе [Добавление назначения ролей с помощью Azure RBAC и Azure CLI](../role-based-access-control/role-assignments-cli.md).
+* Azure CLI ([az role assignment create](/cli/azure/role/assignment#az-role-assignment-create)). Дополнительные сведения см. в разделе [Добавление назначения ролей с помощью Azure RBAC и Azure CLI](../role-based-access-control/role-assignments-cli.md).
 * [Azure REST API](../role-based-access-control/role-assignments-rest.md)
 
 <a name="azure-portal-assign-access"></a>

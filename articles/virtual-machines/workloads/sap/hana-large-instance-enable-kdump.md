@@ -13,12 +13,12 @@ ms.workload: infrastructure
 ms.date: 03/30/2020
 ms.author: prtyag
 ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: 4a9b3d534e74ccd44dfaa35ec5bf3b65f50641c7
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: e4b06cbcbef79e243116bddb33adbcf6476fac8a
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101666654"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102213374"
 ---
 # <a name="kdump-for-sap-hana-on-azure-large-instances-hli"></a>Кдумп для SAP HANA на крупных экземплярах Azure (ХЛИ)
 
@@ -32,7 +32,7 @@ ms.locfileid: "101666654"
 
 ## <a name="supported-skus"></a>Поддерживаемые номера SKU
 
-|  Тип крупных экземпляров Hana   |  Поставщик ОС   |  Версия пакета ОС   |  SKU |
+|  Тип крупных экземпляров Hana   |  Поставщик ОС   |  Версия пакета ОС   |  номер SKU |
 |-----------------------------|--------------|-----------------------|-------------|
 |   Тип I                    |  SuSE        |   SLES 12 с пакетом обновления 3 (SP3)         |  S224m      |
 |   Тип I                    |  SuSE        |   SLES 12 с пакетом обновления 4 (SP4)         |  S224m      |
@@ -67,7 +67,7 @@ ms.locfileid: "101666654"
 
 ## <a name="setup-details"></a>Сведения о настройке
 
-- Скрипт для включения Кдумп можно найти [здесь](https://github.com/Azure/sap-hana/blob/master/tools/enable-kdump.sh)
+- Скрипт для включения Кдумп можно найти [здесь](https://github.com/Azure/sap-hana-tools/blob/master/tools/enable-kdump.sh)
 > [!NOTE]
 > Этот сценарий создается на основе нашей лабораторной настройки, и клиент должен обратиться к поставщику ОС для дальнейшей настройки.
 > Отдельный LUN будет подготовлен для новых и существующих серверов для сохранения дампов и сценариев, которые позаботится о настройке файловой системы из LUN.

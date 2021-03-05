@@ -9,12 +9,12 @@ ms.date: 01/06/2021
 ms.author: normesta
 ms.reviewer: jamsbak
 ms.custom: devx-track-csharp, devx-track-azurecli
-ms.openlocfilehash: 5d5278c33c24c7f95459b9c121bca9e960615b9c
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.openlocfilehash: a925d3f55395d094c7f19f65de4b72fd20a11a41
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99260186"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102213680"
 ---
 # <a name="filter-data-by-using-azure-data-lake-storage-query-acceleration"></a>Фильтрация данных с помощью ускорения запросов Azure Data Lake Storage
 
@@ -22,7 +22,7 @@ ms.locfileid: "99260186"
 
 Ускорение запросов позволяет приложениям и платформам аналитики значительно оптимизировать обработку данных, получая только те данные, которые необходимы для выполнения определенной операции. Дополнительные сведения см. в разделе [ускорение запросов Azure Data Lake Storage](data-lake-storage-query-acceleration.md).
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 - Для доступа к службе хранилища Azure требуется подписка Azure. Если у вас еще нет подписки, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
 
@@ -40,7 +40,7 @@ ms.locfileid: "99260186"
 
   ### <a name="java"></a>[Java](#tab/java)
 
-  - [Пакет разработчиков Java (JDK)](/java/azure/jdk/?view=azure-java-stable&preserve-view=true) версии 8 или более поздней версии.
+  - [Пакет разработчиков Java (JDK)](/java/azure/jdk/) версии 8 или более поздней версии.
 
   - [Apache Maven](https://maven.apache.org/download.cgi) 
 

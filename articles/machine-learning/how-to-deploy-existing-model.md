@@ -11,12 +11,12 @@ ms.reviewer: larryfr
 ms.date: 07/17/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, deploy
-ms.openlocfilehash: 46b8f153e65f436fa1062a0606e0fb0136d972a5
-ms.sourcegitcommit: e7179fa4708c3af01f9246b5c99ab87a6f0df11c
+ms.openlocfilehash: 0a536781f3218807c36f6eefe738b9a375de8d4b
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97824613"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102213136"
 ---
 # <a name="deploy-your-existing-model-with-azure-machine-learning"></a>Развертывание существующей модели с помощью Машинное обучение Azure
 
@@ -34,7 +34,7 @@ ms.locfileid: "97824613"
 
 * [Пакет SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py).  
 
-* [Расширение CLI](reference-azure-machine-learning-cli.md) [Azure CLI](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest) и машинное обучение.
+* [Расширение CLI](reference-azure-machine-learning-cli.md) [Azure CLI](/cli/azure/install-azure-cli) и машинное обучение.
 
 * Обученная модель. Модель должна быть сохранена в одном или нескольких файлах в среде разработки. <br><br>Чтобы продемонстрировать, как обучена регистрация модели, в примере кода в этой статье используются модели из [проекта Паулу Рипамонти в Twitter тональности Analysis](https://www.kaggle.com/paoloripamonti/twitter-sentiment-analysis).
 
@@ -61,7 +61,7 @@ az ml model register -p ./models -n sentiment -w myworkspace -g myresourcegroup
 > [!TIP]
 > Можно также задать объекты Add `tags` и `properties` dictionary для зарегистрированной модели. Эти значения можно использовать позже для выявления конкретной модели. Например, используемая платформа, параметры обучения и т. д.
 
-Дополнительные сведения см. в справочнике по [регистру AZ ML Model](/cli/azure/ext/azure-cli-ml/ml/model?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-model-register) .
+Дополнительные сведения см. в справочнике по [регистру AZ ML Model](/cli/azure/ext/azure-cli-ml/ml/model#ext-azure-cli-ml-az-ml-model-register) .
 
 
 Дополнительные сведения о регистрации модели в целом см. в разделе [Управление моделями машинного обучения, их развертывание и мониторинг](concept-model-management-and-deployment.md).
@@ -268,7 +268,7 @@ print("scoring URI: " + service.scoring_uri)
 az ml model deploy -n myservice -m sentiment:1 --ic inferenceConfig.json --dc deploymentConfig.json
 ```
 
-Дополнительные сведения см. в справочнике по [развертыванию модели языка AZ ML](/cli/azure/ext/azure-cli-ml/ml/model?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-model-deploy) .
+Дополнительные сведения см. в справочнике по [развертыванию модели языка AZ ML](/cli/azure/ext/azure-cli-ml/ml/model#ext-azure-cli-ml-az-ml-model-deploy) .
 
 Дополнительные сведения о развертывании см. в статье [как и где развертывать модели](how-to-deploy-and-where.md).
 

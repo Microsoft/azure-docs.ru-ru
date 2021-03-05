@@ -14,12 +14,12 @@ ms.topic: how-to
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: cli,portal, devx-track-azurecli
-ms.openlocfilehash: 07088ebfa5fde4c3c790bd554c1eba8d6844b7d1
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.openlocfilehash: f16cc83257dbf6419fc794f34e4cd6df033d3f8b
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92736071"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102213969"
 ---
 # <a name="find-your-azure-subscription"></a>Поиск подписки Azure
 
@@ -37,7 +37,7 @@ ms.locfileid: "92736071"
 
 ## <a name="cli"></a>[CLI](#tab/cli/)
 
-## <a name="use-the-azure-cli"></a>Использование командной строки Azure CLI
+## <a name="use-the-azure-cli"></a>Использование Azure CLI
 
 <!-- NOTE: The following are in the includes file and are reused in other How To articles. All task based content should be in the includes folder with the "task-" prepended to the file name. -->
 
@@ -45,9 +45,9 @@ ms.locfileid: "92736071"
 
 [!INCLUDE [List your Azure subscriptions with CLI](./includes/task-list-set-subscription-cli.md)]
 
-### <a name="see-also"></a>См. также статью
+### <a name="see-also"></a>См. также раздел
 
-* [Azure CLI](/cli/azure/ams?view=azure-cli-latest)
+* [Azure CLI](/cli/azure/ams)
 
 ---
 

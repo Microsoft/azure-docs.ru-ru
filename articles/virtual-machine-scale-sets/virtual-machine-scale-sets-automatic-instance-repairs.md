@@ -9,12 +9,12 @@ ms.subservice: availability
 ms.date: 02/28/2020
 ms.reviewer: jushiman
 ms.custom: avverma, devx-track-azurecli
-ms.openlocfilehash: ae508754775d4eb622d8e91ef58eb0d6e1c45692
-ms.sourcegitcommit: 230d5656b525a2c6a6717525b68a10135c568d67
+ms.openlocfilehash: 080666c9857c1a3dc509ca980bc85b1dc11b5975
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94889020"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214292"
 ---
 # <a name="automatic-instance-repairs-for-azure-virtual-machine-scale-sets"></a>Автоматическое исправление экземпляра для масштабируемых наборов виртуальных машин Azure
 
@@ -141,7 +141,7 @@ New-AzVmssConfig `
 
 ### <a name="azure-cli-20"></a>Azure CLI 2.0
 
-В следующем примере включается политика автоматического восстановления при создании нового масштабируемого набора с помощью команды *[AZ vmss Create](/cli/azure/vmss?view=azure-cli-latest#az-vmss-create)*. Сначала создайте группу ресурсов, а затем создайте масштабируемый набор с периодом отсрочки политики автоматического восстановления, равным 30 минутам.
+В следующем примере включается политика автоматического восстановления при создании нового масштабируемого набора с помощью команды *[AZ vmss Create](/cli/azure/vmss#az-vmss-create)*. Сначала создайте группу ресурсов, а затем создайте масштабируемый набор с периодом отсрочки политики автоматического восстановления, равным 30 минутам.
 
 ```azurecli-interactive
 az group create --name <myResourceGroup> --location <VMSSLocation>
@@ -209,7 +209,7 @@ Update-AzVmss `
 
 ### <a name="azure-cli-20"></a>Azure CLI 2.0
 
-Ниже приведен пример обновления политики автоматического восстановления экземпляра существующего масштабируемого набора с помощью команды *[AZ vmss Update](/cli/azure/vmss?view=azure-cli-latest#az-vmss-update)*.
+Ниже приведен пример обновления политики автоматического восстановления экземпляра существующего масштабируемого набора с помощью команды *[AZ vmss Update](/cli/azure/vmss#az-vmss-update)*.
 
 ```azurecli-interactive
 az vmss update \  
@@ -259,7 +259,7 @@ GET '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/provider
 
 ### <a name="azure-cli"></a>Azure CLI 
 
-Чтобы просмотреть *serviceState* для автоматического восстановления экземпляра, используйте командлет [Get-instance-View](/cli/azure/vmss?view=azure-cli-latest#az-vmss-get-instance-view) . 
+Чтобы просмотреть *serviceState* для автоматического восстановления экземпляра, используйте командлет [Get-instance-View](/cli/azure/vmss#az-vmss-get-instance-view) . 
 
 ```azurecli-interactive
 az vmss get-instance-view \
@@ -267,7 +267,7 @@ az vmss get-instance-view \
     --resource-group MyResourceGroup
 ```
 
-Используйте командлет [Set-оркестрации-Service-State](/cli/azure/vmss?view=azure-cli-latest#az-vmss-set-orchestration-service-state) , чтобы обновить *serviceState* для автоматического восстановления экземпляров. После того как масштабируемый набор будет включен в функцию автоматического восстановления, этот командлет можно использовать для приостановки или возобновления автоматического восстановления для масштабируемого набора. 
+Используйте командлет [Set-оркестрации-Service-State](/cli/azure/vmss#az-vmss-set-orchestration-service-state) , чтобы обновить *serviceState* для автоматического восстановления экземпляров. После того как масштабируемый набор будет включен в функцию автоматического восстановления, этот командлет можно использовать для приостановки или возобновления автоматического восстановления для масштабируемого набора. 
 
 ```azurecli-interactive
 az vmss set-orchestration-service-state \

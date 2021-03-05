@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 12/11/2020
 ms.author: mohitku
 ms.reviewer: tyao
-ms.openlocfilehash: 8752886bc5304de420083212d29ccd3e1cb14084
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 21550cc34b21756186ea607c3efd2ebd10cbf979
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102043700"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214258"
 ---
 # <a name="tuning-web-application-firewall-waf-for-azure-front-door"></a>Настройка брандмауэра веб-приложения (WAF) для передней дверцы Azure
  
@@ -144,7 +144,7 @@ AzureDiagnostics
  
 Важно учитывать, что исключения являются глобальными настройками. Это означает, что настроенное исключение будет применяться ко всему трафику, проходящему через WAF, а не только к конкретному веб-приложению или URI. Например, это может быть проблемой, если *1 = 1* является допустимым запросом в тексте для определенного веб-приложения, но не для других в рамках той же политики WAF. Если имеет смысл использовать разные списки исключений для разных приложений, рассмотрите возможность использования различных политик WAF для каждого приложения и применения их к интерфейсному внешнему приложению.
  
-При настройке списков исключений для управляемых правил можно исключить все правила в наборе правил, все правила в группе правил или отдельное правило. Список исключений можно настроить с помощью [PowerShell](/powershell/module/az.frontdoor/New-AzFrontDoorWafManagedRuleExclusionObject?view=azps-4.7.0&viewFallbackFrom=azps-3.5.0), [Azure CLI](/cli/azure/ext/front-door/network/front-door/waf-policy/managed-rules/exclusion?view=azure-cli-latest#ext_front_door_az_network_front_door_waf_policy_managed_rules_exclusion_add), [API-интерфейса RESTful](/rest/api/frontdoorservice/webapplicationfirewall/policies/createorupdate)или портал Azure.
+При настройке списков исключений для управляемых правил можно исключить все правила в наборе правил, все правила в группе правил или отдельное правило. Список исключений можно настроить с помощью [PowerShell](/powershell/module/az.frontdoor/New-AzFrontDoorWafManagedRuleExclusionObject?view=azps-4.7.0&viewFallbackFrom=azps-3.5.0), [Azure CLI](/cli/azure/ext/front-door/network/front-door/waf-policy/managed-rules/exclusion#ext_front_door_az_network_front_door_waf_policy_managed_rules_exclusion_add), [API-интерфейса RESTful](/rest/api/frontdoorservice/webapplicationfirewall/policies/createorupdate)или портал Azure.
 
 * Исключения на уровне правила
   * Применение исключений на уровне правила означает, что указанные исключения не будут анализироваться только по этому отдельному правилу, а все еще будут анализироваться по всем остальным правилам набора правил. Это наиболее детализированный уровень исключений. его можно использовать для точной настройки набора управляемых правил на основе сведений, найденных в журналах WAF при устранении неполадок с событием.
@@ -201,7 +201,7 @@ AzureDiagnostics
  
 Однако отключение правила — это глобальный параметр, который применяется ко всем интерфейсным узлам, связанным с политикой WAF. При отключении правила, возможно, вы оставите уязвимости без защиты или обнаружения каких-либо других интерфейсных узлов, связанных с политикой WAF.
  
-Если вы хотите использовать Azure PowerShell для отключения управляемого правила, см [`PSAzureManagedRuleOverride`](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleoverrideobject?preserve-view=true&view=azps-4.7.0) . документацию по объектам. Если вы хотите использовать Azure CLI, см [`az network front-door waf-policy managed-rules override`](/cli/azure/ext/front-door/network/front-door/waf-policy/managed-rules/override?preserve-view=true&view=azure-cli-latest) . документацию.
+Если вы хотите использовать Azure PowerShell для отключения управляемого правила, см [`PSAzureManagedRuleOverride`](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleoverrideobject?preserve-view=true&view=azps-4.7.0) . документацию по объектам. Если вы хотите использовать Azure CLI, см [`az network front-door waf-policy managed-rules override`](/cli/azure/ext/front-door/network/front-door/waf-policy/managed-rules/override) . документацию.
 
 ![Правила WAF](../media/waf-front-door-tuning/waf-rules.png)
 

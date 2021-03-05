@@ -9,14 +9,14 @@ ms.topic: reference
 author: jovanpop-msft
 ms.author: jovanpop
 ms.reviewer: sstein, bonova, danil
-ms.date: 1/12/2021
+ms.date: 3/5/2021
 ms.custom: seoapril2019, sqldbrb=1
-ms.openlocfilehash: a182ca3ba70b9faa1ba67fdb6c91a4eaf8e766ef
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 014140b9b9832bab3de4f71c0b5f164b564b3fe5
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101691201"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102212728"
 ---
 # <a name="t-sql-differences-between-sql-server--azure-sql-managed-instance"></a>Отличия T-SQL от SQL Server & SQL Azure Управляемый экземпляр
 [!INCLUDE[appliesto-sqlmi](../includes/appliesto-sqlmi.md)]
@@ -252,7 +252,7 @@ SQL Управляемый экземпляр не удается получит
 Следующие параметры задаются по умолчанию и не могут быть изменены.
 
 - `MULTI_USER`
-- `ENABLE_BROKER ON`
+- `ENABLE_BROKER`
 - `AUTO_CLOSE OFF`
 
 Невозможно изменить следующие параметры:
@@ -471,6 +471,10 @@ SQL Управляемый экземпляр не может получить �
 - `sys.routes`: В качестве необходимого компонента необходимо выбрать адрес из каталога sys. routes. Адрес должен быть ЛОКАЛЬным по отношению к каждому маршруту. См. статью о [sys.routes](/sql/relational-databases/system-catalog-views/sys-routes-transact-sql).
 - `CREATE ROUTE`: Нельзя использовать с, кроме `CREATE ROUTE` `ADDRESS` `LOCAL` . См. статью о [CREATE ROUTE](/sql/t-sql/statements/create-route-transact-sql).
 - `ALTER ROUTE`: Нельзя использовать с, кроме `ALTER ROUTE` `ADDRESS` `LOCAL` . См. статью об [ALTER ROUTE](/sql/t-sql/statements/alter-route-transact-sql). 
+
+Компонент Service Broker включен по умолчанию и не может быть отключен. Следующие параметры ALTER базе данных не поддерживаются:
+- `ENABLE_BROKER`
+- `DISABLE_BROKER`
 
 ### <a name="stored-procedures-functions-and-triggers"></a>Хранимые процедуры, функции и триггеры
 

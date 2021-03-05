@@ -11,12 +11,12 @@ author: aashishb
 ms.reviewer: larryfr
 ms.date: 11/18/2020
 ms.custom: how-to, devx-track-python
-ms.openlocfilehash: 0fcea6a44f5379ff3da5b348ae45486be6c2516a
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.openlocfilehash: 295228e9eaa3529b05055869bd46f9aefc938a6f
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99831320"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102212779"
 ---
 # <a name="use-workspace-behind-a-firewall-for-azure-machine-learning"></a>Использование рабочей области за брандмауэром для Машинное обучение Azure
 
@@ -41,7 +41,7 @@ UDR позволяют пакетной службе взаимодейство�
 
 * Скачайте [диапазоны IP-адресов Azure и теги службы](https://www.microsoft.com/download/details.aspx?id=56519) и найдите в файле `BatchNodeManagement.<region>` и `AzureMachineLearning.<region>`, где `<region>` — ваш регион Azure.
 
-* Для загрузки информации используйте [интерфейс командной строки Azure](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest). В следующем примере загружаются сведения об IP-адресе и отфильтровываются сведения о регионе "Восточная часть США 2" (основной) и центральном регионе США (дополнительный):
+* Для загрузки информации используйте [интерфейс командной строки Azure](/cli/azure/install-azure-cli). В следующем примере загружаются сведения об IP-адресе и отфильтровываются сведения о регионе "Восточная часть США 2" (основной) и центральном регионе США (дополнительный):
 
     ```azurecli-interactive
     az network list-service-tags -l "East US 2" --query "values[?starts_with(id, 'Batch')] | [?properties.region=='eastus2']"
@@ -133,7 +133,7 @@ UDR позволяют пакетной службе взаимодейство�
 | API |\*. azureml.ms | \*. ml.azure.us | \*. ml.azure.cn |
 | Эксперименты, журнал, устройство, метки | \*. experiments.azureml.net | \*. ml.azure.us | \*. ml.azure.cn |
 | управление моделью; | \*. modelmanagement.azureml.net | \*. ml.azure.us | \*. ml.azure.cn |
-| Pipeline | \*. aether.ms | \*. ml.azure.us | \*. ml.azure.cn |
+| Конвейер | \*. aether.ms | \*. ml.azure.us | \*. ml.azure.cn |
 | Конструктор (служба Studio) | \*. studioservice.azureml.com | \*. ml.azure.us | \*. ml.azure.cn |
 | Интегрированная Записная книжка | \*. notebooks.azure.net | \*. notebooks.usgovcloudapi.net |\*. notebooks.chinacloudapi.cn |
 | Интегрированная Записная книжка | \*. file.core.windows.net | \*. file.core.usgovcloudapi.net | \*. file.core.chinacloudapi.cn |
