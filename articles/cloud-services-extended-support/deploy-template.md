@@ -8,38 +8,42 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: eb59bb43d493609ae408a402eaea2dcc9c6fab29
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: 71217e6379c02191311f5d93cb439d9da20080bc
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100548783"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101706968"
 ---
 # <a name="deploy-a-cloud-service-extended-support-using-arm-templates"></a>Развертывание облачной службы (расширенная поддержка) с использованием шаблонов ARM
 
-В этом учебнике объясняется, как создать развертывание облачной службы (расширенная поддержка) с помощью [шаблонов ARM](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview). 
+В этом учебнике объясняется, как создать развертывание облачной службы (расширенная поддержка) с помощью [шаблонов ARM](../azure-resource-manager/templates/overview.md). 
 
 > [!IMPORTANT]
 > Облачные службы (расширенная поддержка) сейчас предоставляются в общедоступной предварительной версии.
-> Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены.
+> Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 
 ## <a name="before-you-begin"></a>Подготовка к работе
-1. Ознакомьтесь с [предварительными требованиями развертывания](deploy-prerequisite.md) для Облачных служб (расширенная поддержка) и создайте связанные ресурсы. 
 
-2. Создайте новую группу ресурсов с помощью [портала Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal) или [PowerShell](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-powershell). Этот шаг можно пропустить, если вы используете существующую группу ресурсов. 
+1. Ознакомьтесь с [предварительными требованиями развертывания](deploy-prerequisite.md) для Облачных служб (расширенная поддержка) и создайте связанные ресурсы.
+
+2. Создайте новую группу ресурсов с помощью [портала Azure](/azure/azure-resource-manager/management/manage-resource-groups-portal) или [PowerShell](/azure/azure-resource-manager/management/manage-resource-groups-powershell). Этот шаг можно пропустить, если вы используете существующую группу ресурсов.
  
-3. Создайте учетную запись хранения с помощью [портала Azure](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) или [PowerShell](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-powershell). Этот шаг можно пропустить, если вы используете существующую учетную запись хранения. 
+3. Создайте учетную запись хранения с помощью [портала Azure](/azure/storage/common/storage-account-create?tabs=azure-portal) или [PowerShell](/azure/storage/common/storage-account-create?tabs=azure-powershell). Этот шаг можно пропустить, если вы используете существующую учетную запись хранения.
 
-4. Передайте CSDEF-файлы определения службы и CSCFG-файлы конфигурации службы в учетную запись хранения с помощью [портала Azure](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob), [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-blobs-upload?toc=/azure/storage/blobs/toc.json) или [PowerShell](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-powershell#upload-blobs-to-the-container). Получите подписанные URL-адреса обоих файлов, которые вы добавите в шаблон ARM далее в этом руководстве. 
+4. Передайте CSDEF-файлы определения службы и CSCFG-файлы конфигурации службы в учетную запись хранения с помощью [портала Azure](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob), [AzCopy](/azure/storage/common/storage-use-azcopy-blobs-upload?toc=/azure/storage/blobs/toc.json) или [PowerShell](/azure/storage/blobs/storage-quickstart-blobs-powershell#upload-blobs-to-the-container). Получите подписанные URL-адреса обоих файлов, которые вы добавите в шаблон ARM далее в этом руководстве.
 
-5. (Необязательно) Создайте хранилище ключей и передайте в него сертификаты. 
-    -  Сертификаты можно присоединять к облачным службам, чтобы обеспечить безопасное взаимодействие со службой. Для использования сертификатов необходимо, чтобы их отпечатки были указаны в CSCFG-файле конфигурации службы и переданы в хранилище ключей. Хранилище ключей можно создать с помощью [портала Azure](https://docs.microsoft.com/azure/key-vault/general/quick-create-portal) или [PowerShell](https://docs.microsoft.com/azure/key-vault/general/quick-create-powershell). 
-    - Связанное с облачной службой хранилище ключей должно находиться в том же регионе и подписке, что и эта служба.   
-    - Для связанного хранилища ключей необходимо включить разрешения, позволяющие ресурсу Облачных служб (расширенная поддержка) получить сертификат из хранилища ключей. Дополнительные сведения см. в статье [о сертификатах и хранилище ключей](certificates-and-key-vault.md).
+5. (Необязательно) Создайте хранилище ключей и передайте в него сертификаты.
+
+    -  Сертификаты можно присоединять к облачным службам, чтобы обеспечить безопасное взаимодействие со службой. Для использования сертификатов необходимо, чтобы их отпечатки были указаны в CSCFG-файле конфигурации службы и переданы в хранилище ключей. Хранилище ключей можно создать с помощью [портала Azure](/azure/key-vault/general/quick-create-portal) или [PowerShell](/azure/key-vault/general/quick-create-powershell).
+    - Связанное с облачной службой хранилище ключей должно находиться в том же регионе и подписке, что и эта служба.
+    - Для связанного хранилища ключей необходимо включить разрешения, позволяющие ресурсу Облачных служб (расширенная поддержка) получить сертификаты из хранилища ключей. Дополнительные сведения см. в статье [о сертификатах и хранилище ключей](certificates-and-key-vault.md).
     - Ссылка на хранилище ключей должна быть включена в раздел OsProfile шаблона ARM, к которому мы перейдем ниже.
 
-## <a name="deploy-a-cloud-service-extended-support"></a>Развертывание облачной службы (расширенная поддержка) 
+## <a name="deploy-a-cloud-service-extended-support"></a>Развертывание облачной службы (расширенная поддержка)
+
 1. Создайте виртуальную сеть. Имя виртуальной сети должно соответствовать ссылкам в CSCFG-файле конфигурации службы. Если используется существующая виртуальная сеть, не включайте этот раздел в шаблон ARM.
 
     ```json
@@ -68,7 +72,7 @@ ms.locfileid: "100548783"
     ] 
     ```
     
-     Если вы создаете новую виртуальную сеть, добавьте следующий код в раздел `dependsOn`, чтобы платформа обязательно создала виртуальную сеть перед созданием облачной службы. 
+     Если вы создаете новую виртуальную сеть, добавьте следующий код в раздел `dependsOn`, чтобы платформа обязательно создала виртуальную сеть перед созданием облачной службы.
 
     ```json
     "dependsOn": [ 
@@ -100,7 +104,7 @@ ms.locfileid: "100548783"
     ] 
     ```
      
-     Если вы создаете новый IP-адрес, добавьте следующий код в раздел `dependsOn`, чтобы платформа обязательно создала IP-адрес перед созданием облачной службы. 
+     Если вы создаете новый IP-адрес, добавьте следующий код в раздел `dependsOn`, чтобы платформа обязательно создала IP-адрес перед созданием облачной службы.
     
     ```json
     "dependsOn": [ 
@@ -108,7 +112,7 @@ ms.locfileid: "100548783"
           ] 
     ```
  
-3. Создайте объект сетевого профиля и свяжите общедоступный IP-адрес с внешним интерфейсом подсистемы балансировки нагрузки. Подсистему балансировки нагрузки платформа создает автоматически.  
+3. Создайте объект сетевого профиля и свяжите общедоступный IP-адрес с внешним интерфейсом подсистемы балансировки нагрузки. Подсистему балансировки нагрузки платформа создает автоматически.
 
     ```json
     "networkProfile": { 
@@ -134,7 +138,7 @@ ms.locfileid: "100548783"
     ```
  
 
-4. Добавьте ссылку на хранилище ключей в раздел  `OsProfile` шаблона ARM. Хранилище ключей используется для хранения сертификатов, связанных с Облачными службами (расширенная поддержка). Добавьте сертификаты в хранилище ключей, а затем добавьте ссылки на отпечатки сертификатов в CSCFG-файл конфигурации службы. Также для хранилища ключей необходимо включить соответствующие разрешения, позволяющие ресурсу Облачных служб (расширенная поддержка) получить из хранилища ключей сертификат, хранимый в виде секрета. Key Vault должен находиться в тех же регионе и подписке, что и облачная служба, и иметь уникальное имя. Дополнительные сведения см. в статье [Использование сертификатов с Облачными службами (расширенная поддержка)](certificates-and-key-vault.md).
+4. Добавьте ссылку на хранилище ключей в раздел  `OsProfile` шаблона ARM. Хранилище ключей используется для хранения сертификатов, связанных с Облачными службами (расширенная поддержка). Добавьте сертификаты в хранилище ключей, а затем добавьте ссылки на отпечатки сертификатов в CSCFG-файл конфигурации службы. Также для хранилища ключей необходимо включить соответствующие разрешения, позволяющие ресурсу Облачных служб (расширенная поддержка) получить из хранилища ключей сертификат, хранимый в виде секрета. Это хранилище ключей должно находиться в том же регионе и той же подписке, что и облачная служба, и иметь уникальное имя. Дополнительные сведения см. в статье [Использование сертификатов с Облачными службами (расширенная поддержка)](certificates-and-key-vault.md).
      
     ```json
     "osProfile": { 
@@ -154,71 +158,70 @@ ms.locfileid: "100548783"
     ```
   
     > [!NOTE]
-    > SourceVault — это идентификатор ресурса ARM для хранилища ключей. Это значение можно получить, найдя идентификатор ресурса в разделе свойств хранилища ключей. 
+    > SourceVault — это идентификатор ресурса ARM для хранилища ключей. Это значение можно получить, найдя идентификатор ресурса в разделе свойств хранилища ключей.
     > - Чтобы получить certificateUrl, перейдите в хранилище ключей к сертификату с меткой **Secret Identifier** (Секретный идентификатор).  
    >  - certificateUrl имеет формат https://{конечная_точка_хранилища_ключей}/secrets/{имя_секрета}/{ИД_секрета}
 
-5. Создайте профиль роли. Убедитесь, что количество ролей, имена ролей, число и размеры экземпляров в каждой роли одинаковы в CSCFG-файле конфигурации службы, CSDEF-файле определения службы и в разделе профиля роли в шаблоне ARM. 
+5. Создайте профиль роли. Убедитесь, что количество ролей, имена ролей, число и размеры экземпляров в каждой роли одинаковы в CSCFG-файле конфигурации службы, CSDEF-файле определения службы и в разделе профиля роли в шаблоне ARM.
     
     ```json
-    "roleProfile": { 
-          "roles": { 
-          "value": [ 
-            { 
-              "name": "WebRole1", 
-              "sku": { 
-                "name": "Standard_D1_v2", 
-                "capacity": "1" 
-              } 
-            }, 
-            { 
-              "name": "WorkerRole1", 
-              "sku": { 
-                "name": "Standard_D1_v2", 
-                "capacity": "1" 
-              } 
+    "roleProfile": {
+      "roles": {
+        "value": [
+          {
+            "name": "WebRole1",
+            "sku": {
+              "name": "Standard_D1_v2",
+              "capacity": "1"
+            }
+          },
+          {
+            "name": "WorkerRole1",
+            "sku": {
+              "name": "Standard_D1_v2",
+              "capacity": "1"
             } 
-        }
+          } 
+        ]
+      }
     }   
     ```
 
-6. (Необязательно) Создайте профиль расширения, чтобы добавить расширения в облачную службу. В этом примере мы добавляем расширения удаленного рабочего стола и Диагностики Windows Azure. 
+6. (Необязательно) Создайте профиль расширения, чтобы добавить расширения в облачную службу. В этом примере мы добавляем расширения удаленного рабочего стола и Диагностики Windows Azure.
     
     ```json
         "extensionProfile": {
-              "extensions": [
-                {
-                  "name": "RDPExtension",
-                  "properties": {
-                    "autoUpgradeMinorVersion": true,
-                    "publisher": "Microsoft.Windows.Azure.Extensions",
-                    "type": "RDP",
-                    "typeHandlerVersion": "1.2.1",
-                    "settings": "<PublicConfig>\r\n <UserName>[Insert Username]</UserName>\r\n <Expiration>1/21/2022 12:00:00 AM</Expiration>\r\n</PublicConfig>",
-                    "protectedSettings": "<PrivateConfig>\r\n <Password>[Insert Password]</Password>\r\n</PrivateConfig>"
-                  }
-                },
-                {
-                  "name": "Microsoft.Insights.VMDiagnosticsSettings_WebRole1",
-                  "properties": {
-                    "autoUpgradeMinorVersion": true,
-                    "publisher": "Microsoft.Azure.Diagnostics",
-                    "type": "PaaSDiagnostics",
-                    "typeHandlerVersion": "1.5",
-                    "settings": "[parameters('wadPublicConfig_WebRole1')]",
-                    "protectedSettings": "[parameters('wadPrivateConfig_WebRole1')]",
-                    "rolesAppliedTo": [
-                      "WebRole1"
-              ]
+          "extensions": [
+            {
+              "name": "RDPExtension",
+              "properties": {
+                "autoUpgradeMinorVersion": true,
+                "publisher": "Microsoft.Windows.Azure.Extensions",
+                "type": "RDP",
+                "typeHandlerVersion": "1.2.1",
+                "settings": "<PublicConfig>\r\n <UserName>[Insert Username]</UserName>\r\n <Expiration>1/21/2022 12:00:00 AM</Expiration>\r\n</PublicConfig>",
+                "protectedSettings": "<PrivateConfig>\r\n <Password>[Insert Password]</Password>\r\n</PrivateConfig>"
+              }
+            },
+            {
+              "name": "Microsoft.Insights.VMDiagnosticsSettings_WebRole1",
+              "properties": {
+                "autoUpgradeMinorVersion": true,
+                "publisher": "Microsoft.Azure.Diagnostics",
+                "type": "PaaSDiagnostics",
+                "typeHandlerVersion": "1.5",
+                "settings": "[parameters('wadPublicConfig_WebRole1')]",
+                "protectedSettings": "[parameters('wadPrivateConfig_WebRole1')]",
+                "rolesAppliedTo": [
+                  "WebRole1"
+                ]
+              }
             }
-          }
-        ]
-      }
+          ]
+        }
+    ```
 
-  
-    ```    
-
-7. Проверьте весь шаблон. 
+7. Проверьте весь шаблон.
 
     ```json
     {
@@ -266,12 +269,12 @@ ms.locfileid: "100548783"
           "metadata": {
              "description": "Public configuration of Windows Azure Diagnostics extension"
           }
-         },
+        },
         "wadPrivateConfig_WebRole1": {
           "type": "securestring",
           "metadata": {
             "description": "Private configuration of Windows Azure Diagnostics extension"
-         }
+          }
         },
         "vnetName": {
           "type": "string",
@@ -411,7 +414,7 @@ ms.locfileid: "100548783"
                 }
               ]
             },
-        "extensionProfile": {
+            "extensionProfile": {
               "extensions": [
                 {
                   "name": "RDPExtension",
@@ -445,14 +448,15 @@ ms.locfileid: "100548783"
       ]
     }
     ```
- 
+
 8. Разверните шаблон и файл параметров (определяющий параметры в файле шаблона), чтобы создать развертывание облачной службы (расширенная поддержка). При необходимости воспользуйтесь [этими примерами шаблонов](https://github.com/Azure-Samples/cloud-services-extended-support).
 
     ```powershell
-    New-AzResourceGroupDeployment -ResourceGroupName “ContosOrg"  -TemplateFile "file path to your template file” -TemplateParameterFile "file path to your parameter file"
+    New-AzResourceGroupDeployment -ResourceGroupName "ContosOrg" -TemplateFile "file path to your template file" -TemplateParameterFile "file path to your parameter file"
     ```
- 
+
 ## <a name="next-steps"></a>Дальнейшие действия 
+
 - Ознакомьтесь с [часто задаваемыми вопросами об Облачных службах (расширенная поддержка)](faq.md).
 - Разверните Облачную службу (расширенная поддержка) с помощью [портала Azure](deploy-portal.md), [PowerShell](deploy-powershell.md), [шаблона](deploy-template.md) или [Visual Studio](deploy-visual-studio.md).
 - Перейдите в [репозиторий примеров для Облачных служб (расширенная поддержка) ](https://github.com/Azure-Samples/cloud-services-extended-support)

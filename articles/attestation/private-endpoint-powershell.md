@@ -7,18 +7,21 @@ ms.service: attestation
 ms.topic: overview
 ms.date: 08/31/2020
 ms.author: mbaldwin
-ms.openlocfilehash: 5c2b88ad7bef5fb8f7ba576e5f7b416f7458378c
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 92080f119567d185ca6a5bccf0e89d8d10213f3b
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98731607"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101732315"
 ---
 # <a name="quickstart-create-a-private-endpoint-using-azure-powershell"></a>Краткое руководство. Создание частной конечной точки с помощью Azure PowerShell
 
 Чтобы начать работу с Приватным каналом Azure, воспользуйтесь частной конечной точкой для безопасного подключения к Аттестации Azure.
 
 Из этого краткого руководства вы узнаете, как создать частную конечную точку для Аттестации Azure и развернуть виртуальную машину для тестирования частного подключения.  
+
+> [!NOTE]
+> Текущая реализация включает только параметр автоматического утверждения. Чтобы продолжить создание частной конечной точки, подписка должна быть указана в списке разрешений. Прежде чем продолжить, обратитесь к группе обслуживания или отправьте запрос на поддержку Azure на [странице поддержки Azure](https://azure.microsoft.com/support/options/).
 
 ## <a name="prerequisites"></a>Предварительные требования
 

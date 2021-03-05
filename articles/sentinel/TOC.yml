@@ -25,8 +25,12 @@
       href: tutorial-respond-threats-playbook.md
 - name: Основные понятия
   items:
-    - name: Назначение разрешений с использованием ролей
-      href: roles.md
+    - name: Управление доступом
+      items:
+        - name: Разрешения в Azure Sentinel
+          href: roles.md
+        - name: Управление доступом по ресурсам
+          href: resource-context-rbac.md
     - name: Расширенное обнаружение многоэтапных атак
       href: fusion.md
     - name: Использование собственной платформы машинного обучения
@@ -236,7 +240,7 @@
           href: connect-azure-stack.md
         - name: Мониторинг работоспособности соединителя данных
           href: monitor-data-connector-health.md
-    - name: Включение аналитики поведения пользователей и сущностей
+    - name: Аналитика поведения пользователей и объектов
       href: enable-entity-behavior-analytics.md
     - name: Управление несколькими арендаторами (MSSP)
       href: multiple-tenants-service-providers.md
@@ -248,6 +252,8 @@
       href: create-incidents-from-alerts.md
     - name: Улучшенное управление SOC с помощью метрик инцидентов
       href: manage-soc-with-incident-metrics.md
+    - name: Аудит запросов и действий Azure Sentinel
+      href: audit-sentinel-data.md
     - name: Поиск
       href: hunting.md
       items:
@@ -259,6 +265,8 @@
           href: livestream.md
     - name: Удаление Azure Sentinel
       href: offboard.md
+    - name: Внедрение механизма RBAC
+      items: null
 - name: Справочник
   items:
     - name: Роли RBAC Azure
@@ -293,8 +301,8 @@
   items:
     - name: Полезные ресурсы
       href: resources.md
-    - name: 'Блог по безопасности, конфиденциальности и соответствию нормам Azure'
-      href: /archive/blogs/azuresecurity/
+    - name: Блог об Azure Sentinel
+      href: 'https://techcommunity.microsoft.com/t5/azure-sentinel/bg-p/AzureSentinelBlog'
     - name: Доступность по регионам
       href: 'https://azure.microsoft.com/global-infrastructure/services/?products=azure-sentinel'
     - name: Цены

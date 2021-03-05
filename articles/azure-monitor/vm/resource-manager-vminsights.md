@@ -1,26 +1,26 @@
 ---
-title: Примеры шаблонов Azure Resource Manager для службы Azure Monitor для виртуальных машин
-description: Примеры шаблонов Azure Resource Manager для развертывания и настройки Azure Monitor для виртуальных машин.
+title: Примеры шаблонов Resource Manager для аналитики виртуальных машин
+description: Примеры шаблонов Azure Resource Manager для развертывания и настройки аналитики виртуальных машин.
 ms.subservice: logs
 ms.topic: sample
 author: bwren
 ms.author: bwren
 ms.date: 05/18/2020
-ms.openlocfilehash: 91c8396795a85cd63fa502c4b091b7ca9a42865b
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: fa18a5f2af79d75c4eba8c6822f1a7ed8ca4efa8
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100597999"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101733760"
 ---
-# <a name="resource-manager-template-samples-for-azure-monitor-for-vms"></a>Примеры шаблонов Azure Resource Manager для службы Azure Monitor для виртуальных машин
-В этой статье представлены примеры [шаблонов Azure Resource Manager](../../azure-resource-manager/templates/template-syntax.md) для включения Azure Monitor для виртуальных машин. Каждый пример включает файл шаблона и файл параметров с примерами значений для предоставления шаблона.
+# <a name="resource-manager-template-samples-for-vm-insights"></a>Примеры шаблонов Resource Manager для аналитики виртуальных машин
+В этой статье представлены примеры [шаблонов Azure Resource Manager](../../azure-resource-manager/templates/template-syntax.md) для включения аналитики виртуальных машин на виртуальных машинах. Каждый пример включает файл шаблона и файл параметров с примерами значений для предоставления шаблона.
 
 [!INCLUDE [azure-monitor-samples](../../../includes/azure-monitor-resource-manager-samples.md)]
 
 
 ## <a name="configure-workspace"></a>Настройка рабочей области
-В следующем примере выполняется включение Azure Monitor для виртуальных машин в рабочей области Log Analytics.
+В следующем примере выполняется включение аналитики виртуальных машин для рабочей области Log Analytics.
 
 
 ### <a name="template-file"></a>Файл шаблона
@@ -98,7 +98,7 @@ ms.locfileid: "100597999"
 
 
 ## <a name="onboard-an-azure-virtual-machine"></a>Подключение виртуальной машины Azure
-В следующем примере виртуальная машина Azure добавляется в Azure Monitor для виртуальных машин.
+В следующем примере виртуальная машина Azure добавляется в систему аналитики виртуальных машин.
 
 
 ### <a name="template-file"></a>Файл шаблона
@@ -219,7 +219,7 @@ ms.locfileid: "100597999"
 
 
 ## <a name="onboard-an-azure-virtual-machine-scale-set"></a>Подключение масштабируемого набора виртуальных машин Azure
-В следующем примере масштабируемый набор виртуальных машин Azure добавляется в Azure Monitor для виртуальных машин.
+В следующем примере масштабируемый набор виртуальных машин Azure добавляется в систему аналитики виртуальных машин.
 
 
 ### <a name="template-file"></a>Файл шаблона
@@ -340,5 +340,5 @@ ms.locfileid: "100597999"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Другие примеры шаблонов для Azure Monitor](../samples/resource-manager-samples.md).
-* [См. сведения об Azure Monitor для виртуальных машин](../vm/vminsights-overview.md).
+* [Другие примеры шаблонов для Azure Monitor](../resource-manager-samples.md).
+* [Дополнительные сведения об аналитике виртуальных машин](vminsights-overview.md).

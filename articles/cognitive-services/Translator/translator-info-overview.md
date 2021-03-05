@@ -12,16 +12,16 @@ ms.date: 02/15/2021
 ms.author: lajanuar
 ms.custom: cog-serv-seo-aug-2020
 keywords: Переводчик, перевод текста, машинный перевод, служба перевода
-ms.openlocfilehash: 12f6d22f263747a8c43b2d98e6ade1de78aea1ce
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.openlocfilehash: 72df700d38cad3ee31ef438d7df1c890acde9e6b
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100556259"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101727980"
 ---
 # <a name="what-is-the-translator-service"></a>Что собой представляет служба "Переводчик"?
 
-Переводчик — это облачная служба машинного перевода, которая входит в семейство когнитивных интерфейсов API [Azure Cognitive Services](../../index.yml?panel=ai&pivot=products) для создания интеллектуальных приложений. Служба Translator легко интегрируется в приложения, веб-сайты, инструменты и решения. Она позволяет добавлять многоязыковые пользовательские интерфейсы на [более чем 70 языках](./language-support.md). Кроме того, этот программный интерфейс позволяет переводить текст на любой аппаратной платформе и в любой операционной системе.
+Переводчик — это облачная служба машинного перевода, которая входит в семейство когнитивных интерфейсов API [Azure Cognitive Services](../../index.yml?panel=ai&pivot=products) для создания интеллектуальных приложений. Служба Translator легко интегрируется в приложения, веб-сайты, инструменты и решения. Она позволяет добавлять многоязычные пользовательские интерфейсы на [более чем 90 языках и диалектах](./language-support.md). Кроме того, этот программный интерфейс позволяет переводить текст на любой аппаратной платформе и в любой операционной системе.
 
 ## <a name="about-microsoft-translator"></a>О Microsoft Translator
 

@@ -10,12 +10,12 @@ ms.date: 08/20/2020
 ms.topic: include
 ms.custom: include file
 ms.author: tchladek
-ms.openlocfilehash: b4a5dcbd6bc0a6468e8ac8cc7edc8589ea380b28
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: aefad6670e937fcb7994688c8c6e846c3cab94e6
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101657117"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750464"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -70,28 +70,22 @@ connection_string = os.environ['COMMUNICATION_SERVICES_CONNECTION_STRING']
 client = CommunicationIdentityClient.from_connection_string(connection_string)
 ```
 
-Если же вы настроили управляемое удостоверение, то из статьи [Использование управляемых удостоверений](../managed-identity.md) можете узнать, как использовать его для аутентификации.
-```python
-const endpoint = os.environ["COMMUNICATION_SERVICES_ENDPOINT"];
-var client = new CommunicationIdentityClient(endpoint, DefaultAzureCredential());
-```
-
 ## <a name="create-an-identity"></a>Создание удостоверения
 
 Службы коммуникации Azure позволяют использовать упрощенный каталог удостоверений. Чтобы создать новую запись в каталоге с уникальным идентификатором (`Id`), используйте метод `create_user`. Сохраните полученное удостоверение с сопоставлением с пользователями вашего приложения. Например, сохраните их в базе данных сервера приложений. Удостоверение потребуется позже для выдачи маркеров доступа.
 
 ```python
 identity = client.create_user()
-print("\nCreated an identity with ID: " + identity.identifier + ":")
+print("\nCreated an identity with ID: " + identity.identifier)
 ```
 
 ## <a name="issue-access-tokens"></a>Выпуск маркеров доступа
 
-Чтобы выдать маркер доступа для имеющегося удостоверения Служб коммуникации, используйте метод `get_token`. Параметр `scopes` определяет набор базовых функций, которые будут авторизовать этот маркер доступа. Ознакомьтесь со [списком поддерживаемых действий](../../concepts/authentication.md). Новый экземпляр параметра `CommunicationUserIdentifier` можно создать на основе строкового представления удостоверения Служб коммуникации Azure.
+Чтобы выдать маркер доступа для имеющегося удостоверения Служб коммуникации, используйте метод `issue_token`. Параметр `scopes` определяет набор базовых функций, которые будут авторизовать этот маркер доступа. Ознакомьтесь со [списком поддерживаемых действий](../../concepts/authentication.md). Новый экземпляр параметра `communicationUser` можно создать на основе строкового представления удостоверения Служб коммуникации Azure.
 
 ```python
 # Issue an access token with the "voip" scope for an identity
-token_result = client.get_token(identity, ["voip"])
+token_result = client.issue_token(identity, ["voip"])
 expires_on = token_result.expires_on.strftime('%d/%m/%y %I:%M %S %p')
 print("\nIssued an access token with 'voip' scope that expires at " + expires_on + ":")
 print(token_result.token)
@@ -99,21 +93,36 @@ print(token_result.token)
 
 Маркеры доступа — это недолговечные учетные данные, которые необходимо выдавать повторно. Если этого не сделать, это может привести к нарушению работы пользователей приложения. Свойство ответа `expires_on` указывает время существования маркера доступа.
 
-## <a name="refresh-access-tokens"></a>Обновление токенов доступа
+## <a name="create-an-identity-and-issue-an-access-token-within-the-same-request"></a>Создание удостоверения и выдача маркера доступа в рамках одного запроса
 
-Чтобы обновить маркер доступа, используйте объект `CommunicationUserIdentifier` для повторной выдачи:
+Чтобы создать удостоверение Служб коммуникации и выдать для него маркер доступа, используйте метод `create_user_with_token`. Параметр `scopes` определяет набор базовых функций, которые будут авторизовать этот маркер доступа. Ознакомьтесь со [списком поддерживаемых действий](../../concepts/authentication.md).
 
 ```python
+# Issue an identity and an access token with the "voip" scope for the new identity
+identity_token_result = client.create_user_with_token(["voip"])
+identity = identity_token_result[0].identifier
+token = identity_token_result[1].token
+expires_on = identity_token_result[1].expires_on.strftime('%d/%m/%y %I:%M %S %p')
+print("\nCreated an identity with ID: " + identity)
+print("\nIssued an access token with 'voip' scope that expires at " + expires_on + ":")
+print(token)
+```
+
+## <a name="refresh-access-tokens"></a>Обновление токенов доступа
+
+Чтобы обновить маркер доступа, используйте объект `CommunicationUser` для повторной выдачи:
+
+```python  
 # Value existingIdentity represents identity of Azure Communication Services stored during identity creation
-identity = CommunicationUserIdentifier(existingIdentity)
-token_result = client.get_token( identity, ["voip"])
+identity = CommunicationUser(existingIdentity)
+token_result = client.issue_token( identity, ["voip"])
 ```
 
 ## <a name="revoke-access-tokens"></a>Отмена маркеров доступа
 
 В некоторых случаях вы можете явно отменить маркеры доступа. Например, когда пользователь приложения меняет пароль, который он использует для проверки подлинности в службе. Метод `revoke_tokens` аннулирует все активные маркеры доступа, выданные удостоверению.
 
-```python
+```python  
 client.revoke_tokens(identity)
 print("\nSuccessfully revoked all access tokens for identity with ID: " + identity.identifier)
 ```
@@ -129,8 +138,8 @@ print("\nDeleted the identity with ID: " + identity.identifier)
 
 ## <a name="run-the-code"></a>Выполнение кода
 
-В окне консоли перейдите в каталог, содержащий файл *issue-access-token.py*, а затем выполните команду `python`, чтобы запустить приложение.
+В окне консоли перейдите в каталог, содержащий файл *issue-access-tokens.py*, а затем выполните команду `python`, чтобы запустить приложение.
 
 ```console
-python ./issue-access-token.py
+python ./issue-access-tokens.py
 ```

@@ -3,12 +3,12 @@ title: Просмотр и фильтрация сведений о ресурс
 description: Отфильтруйте сведения и используйте различные представления для лучшего понимания работы ресурсов Azure.
 ms.topic: how-to
 ms.date: 09/11/2020
-ms.openlocfilehash: d1bd00a9e7f8c9c18484378f7c21d3bacdac2d3f
-ms.sourcegitcommit: ad83be10e9e910fd4853965661c5edc7bb7b1f7c
+ms.openlocfilehash: d3ad0c225a260fd0ae6b131b951b53c28042f4d9
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "96745899"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101738639"
 ---
 # <a name="view-and-filter-azure-resource-information"></a>Просмотр и фильтрация сведений о ресурсах Azure
 
@@ -49,6 +49,18 @@ ms.locfileid: "96745899"
 1. Выберите **Управление представлением**, а затем — **Просмотреть все представления**.
 
 1. В области **Сохранение представлений ресурсов "Все ресурсы"** выберите представление, а затем щелкните значок **Удалить** ![Значок "Удалить представление"](media/manage-filter-resource-views/icon-delete.png).
+
+## <a name="export-information-from-a-view"></a>Экспорт данных из представления
+
+Вы можете экспортировать сведения о ресурсах из представления. Чтобы экспортировать данные в формате CSV, сделайте следующее:
+
+1. Выберите **Экспорт в CSV**.
+
+    :::image type="content" source="media/manage-filter-resource-views/export-csv.png" alt-text="Снимок экрана: экспорт в формате CSV":::
+
+1. Сохраните файл локально, затем откройте его в Excel или другом приложении, поддерживающем формат CSV. 
+
+При перемещении по порталу вы увидите другие области, в которых можно экспортировать информацию, например отдельную группу ресурсов.
 
 ## <a name="summarize-resources-with-visuals"></a>Обобщение ресурсов с помощью визуальных элементов
 

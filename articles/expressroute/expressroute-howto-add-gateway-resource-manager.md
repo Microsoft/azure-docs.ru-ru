@@ -8,12 +8,12 @@ ms.topic: tutorial
 ms.date: 10/05/2020
 ms.author: duau
 ms.custom: seodec18
-ms.openlocfilehash: 9f01961ec7c7f8e0a4e2d72e28e6def50e93ad5d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 2b75e6e0a8b79f374900e6cb2dfc49680d3d0190
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91854313"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101739064"
 ---
 # <a name="tutorial-configure-a-virtual-network-gateway-for-expressroute-using-powershell"></a>Руководство по Настройка шлюза виртуальной сети для ExpressRoute с помощью PowerShell
 > [!div class="op_single_selector"]
@@ -50,8 +50,13 @@ ms.locfileid: "91854313"
 | Имя шлюза | *GW* |   
 | Имя IP-адреса шлюза | *GWIP* |
 | Имя конфигурации IP-адреса шлюза | *gwipconf* |
-| Type | *ExpressRoute* |
+| Тип | *ExpressRoute* |
 | Имя общедоступного IP-адреса шлюза  | *gwpip* |
+
+> [!IMPORTANT]
+> Поддержка IPv6 для частного пиринга сейчас находится на этапе **общедоступной предварительной версии**. Если вы хотите подключить виртуальную сеть к каналу ExpressRoute с настроенным частным пирингом на основе IPv6, убедитесь, что ваша виртуальная сеть имеет два стека и соответствует рекомендациям, описанным [здесь](https://docs.microsoft.com/azure/virtual-network/ipv6-overview).
+> 
+> 
 
 ## <a name="add-a-gateway"></a>Добавление шлюза
 
@@ -76,6 +81,11 @@ ms.locfileid: "91854313"
 
    ```azurepowershell-interactive
    Add-AzVirtualNetworkSubnetConfig -Name GatewaySubnet -VirtualNetwork $vnet -AddressPrefix 192.168.200.0/26
+   ```
+    Если вы используете виртуальную сеть с двумя стеками и планируете использовать частный пиринг на основе IPv6 через ExpressRoute, создайте подсеть шлюза с двумя стеками.
+
+   ```azurepowershell-interactive
+   Add-AzVirtualNetworkSubnetConfig -Name GatewaySubnet -VirtualNetwork $vnet -AddressPrefix "10.0.0.0/26","ace:daa:daaa:deaa::/64"
    ```
 1. Теперь нужно настроить конфигурацию.
 
@@ -102,6 +112,10 @@ ms.locfileid: "91854313"
    ```azurepowershell-interactive
    New-AzVirtualNetworkGateway -Name $GWName -ResourceGroupName $RG -Location $Location -IpConfigurations $ipconf -GatewayType Expressroute -GatewaySku Standard
    ```
+> [!IMPORTANT]
+> Если вы планируете использовать частный пиринг на основе IPv6 через ExpressRoute, убедитесь, что выбран SKU AZ (ErGw1AZ, ErGw2AZ, ErGw3AZ) для **-GatewaySku**.
+> 
+> 
 
 ## <a name="verify-the-gateway-was-created"></a>Проверка создания шлюза
 Используйте следующую команду, чтобы проверить, был ли создан шлюз:

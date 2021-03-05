@@ -4,6 +4,8 @@
   items:
     - name: Что такое шаблоны ARM?
       href: overview.md
+    - name: Общие сведения о Bicep
+      href: bicep-overview.md
 - name: Краткие руководства
   items:
     - name: Создание шаблонов — портал
@@ -324,9 +326,7 @@
       href: template-best-practices.md
     - name: Bicep
       items:
-        - name: Обзор
-          href: bicep-overview.md
-        - name: Переход с JSON на Bicep
+        - name: Сравнение JSON и Bicep
           href: compare-template-syntax.md
     - name: Часто задаваемые вопросы
       href: frequently-asked-questions.md

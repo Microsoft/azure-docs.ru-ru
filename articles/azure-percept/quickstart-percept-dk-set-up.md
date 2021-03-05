@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: quickstart
 ms.date: 02/15/2021
 ms.custom: template-quickstart
-ms.openlocfilehash: 3540204d66bb589c567514f92a9a8acb2159e343
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 77ccf09903b6cff83b52d60d43d0c52533c9c1ad
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101664430"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102041694"
 ---
 # <a name="set-up-your-azure-percept-dk-and-deploy-your-first-ai-model"></a>Настройка Azure Percept DK и развертывание первой модели ИИ
 
@@ -173,7 +173,7 @@ ms.locfileid: "101664430"
 
     :::image type="content" source="./media/quickstart-percept-dk-setup/main-19-0-warning.png" alt-text="Предупреждение об отключении процедуры настройки"::: 
 
-1. Перейдите на портал Azure: вернитесь в окно процедуры настройки и щелкните **Continue to the Azure portal** (Перейти на портал Azure), чтобы приступить к созданию настраиваемых моделей ИИ в Azure Percept Studio.
+1. Перейдите на портал Azure: вернитесь в окно процедуры настройки и щелкните **Перейти на портал Azure**, чтобы приступить к созданию настраиваемых моделей ИИ в Azure Percept Studio.
 
     > [!NOTE]
     > Убедитесь, что главный компьютер больше не подключен к точке доступа пакета разработки в параметрах Wi-Fi и снова подключен к локальной сети Wi-Fi.
@@ -205,8 +205,6 @@ ms.locfileid: "101664430"
     
 1. Разверните новый предварительно собранный пример на подключенном устройстве. Выберите пример в библиотеке и щелкните Deploy to Device (Развернуть на устройстве).
 
-    :::image type="content" source="./media/quickstart-percept-dk-setup/portal-05-1-select-prebuilt.png" alt-text="Выберите предварительно созданный пример.":::
-    
     :::image type="content" source="./media/quickstart-percept-dk-setup/portal-05-2-select-journey.png" alt-text="Изучение обнаружения объектов в действии":::
 
 ## <a name="next-steps"></a>Дальнейшие действия

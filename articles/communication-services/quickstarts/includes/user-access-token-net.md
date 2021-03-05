@@ -10,16 +10,16 @@ ms.date: 08/20/2020
 ms.topic: include
 ms.custom: include file
 ms.author: tchladek
-ms.openlocfilehash: 49c4179432c0b57dfe68de563621807b1141fc67
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 2213da7b9c6e4776a0e463e6a43d0cc645a1e911
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101657106"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750182"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
+- Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно. 
 - Последняя версия [клиентской библиотеки NET Core](https://dotnet.microsoft.com/download/dotnet-core) для вашей операционной системы.
 - Активный ресурс Служб коммуникации и строка подключения. [Создайте ресурс Служб коммуникации.](../create-communication-resource.md)
 
@@ -45,7 +45,7 @@ dotnet build
 Оставаясь в каталоге приложения, установите пакет библиотеки удостоверений Служб коммуникации Azure для .NET с помощью команды `dotnet add package`.
 
 ```console
-dotnet add package Azure.Communication.Identity --version 1.0.0
+dotnet add package Azure.Communication.Identity
 ```
 
 ### <a name="set-up-the-app-framework"></a>Настройка платформы приложения
@@ -89,21 +89,6 @@ string connectionString = Environment.GetEnvironmentVariable("COMMUNICATION_SERV
 var client = new CommunicationIdentityClient(connectionString);
 ```
 
-Кроме того, можно разделить конечную точку и ключ доступа.
-```csharp
-// This code demonstrates how to fetch your endpoint and access key
-// from an environment variable.
-string endpoint = Environment.GetEnvironmentVariable("COMMUNICATION_SERVICES_ENDPOINT");
-string accessKey = Environment.GetEnvironmentVariable("COMMUNICATION_SERVICES_ACCESSKEY");
-var client = new CommunicationIdentityClient(new Uri(endpoint), new AzureKeyCredential(accessKey));
-```
-
-Если вы настроили управляемое удостоверение, то из статьи [Использование управляемых удостоверений](../managed-identity.md) можете узнать, как использовать его для аутентификации.
-```csharp
-TokenCredential tokenCredential = new DefaultAzureCredential();
-var client = new CommunicationIdentityClient(endpoint, tokenCredential);
-```
-
 ## <a name="create-an-identity"></a>Создание удостоверения
 
 Службы коммуникации Azure позволяют использовать упрощенный каталог удостоверений. Используйте метод `createUser`, чтобы создать новую запись в каталоге с уникальным значением `Id`. Магазин получил удостоверение с сопоставлением с пользователями приложения. Например, сохраните их в базе данных сервера приложений. Удостоверение потребуется позже для выдачи маркеров доступа.
@@ -116,34 +101,46 @@ Console.WriteLine($"\nCreated an identity with ID: {identity.Id}");
 
 ## <a name="issue-identity-access-tokens"></a>Выдача маркеров доступа идентификаторов
 
-Чтобы выдать маркер доступа для имеющегося удостоверения Служб коммуникации, используйте метод `GetToken`. Параметр `scopes` определяет набор базовых функций, которые будут авторизовать этот маркер доступа. Ознакомьтесь со [списком поддерживаемых действий](../../concepts/authentication.md). Новый экземпляр параметра `communicationUser` можно создать на основе строкового представления удостоверения Служб коммуникации Azure.
+Чтобы выдать маркер доступа для имеющегося удостоверения Служб коммуникации, используйте метод `issueToken`. Параметр `scopes` определяет набор базовых функций, которые будут авторизовать этот маркер доступа. Ознакомьтесь со [списком поддерживаемых действий](../../concepts/authentication.md). Новый экземпляр параметра `communicationUser` можно создать на основе строкового представления удостоверения Служб коммуникации Azure.
 
 ```csharp
 // Issue an access token with the "voip" scope for an identity
-var tokenResponse = await client.GetTokenAsync(identity, scopes: new [] { CommunicationTokenScope.VoIP });
+var tokenResponse = await client.IssueTokenAsync(identity, scopes: new [] { CommunicationTokenScope.VoIP });
 var token =  tokenResponse.Value.Token;
 var expiresOn = tokenResponse.Value.ExpiresOn;
 Console.WriteLine($"\nIssued an access token with 'voip' scope that expires at {expiresOn}:");
 Console.WriteLine(token);
 ```
 
-Маркеры доступа — это недолговечные учетные данные, которые необходимо выдавать повторно. Если этого не сделать, это может привести к нарушению работы пользователей приложения. Свойство ответа `expiresOn` указывает время существования маркера доступа.
+Маркеры доступа — это недолговечные учетные данные, которые необходимо выдавать повторно. Если этого не сделать, это может привести к нарушению работы пользователей приложения. Свойство ответа `expiresOn` указывает время существования маркера доступа. 
+
+## <a name="create-an-identity-and-issue-an-access-token-within-the-same-request"></a>Создание удостоверения и выдача маркера доступа в рамках одного запроса
+
+Чтобы создать удостоверение Служб коммуникации и выдать для него маркер доступа, используйте метод `createUserWithToken`. Параметр `scopes` определяет набор базовых функций, которые будут авторизовать этот маркер доступа. Ознакомьтесь со [списком поддерживаемых действий](../../concepts/authentication.md).
+
+```csharp  
+// Issue an identity and an access token with the "voip" scope for the new identity
+var identityWithTokenResponse = await client.CreateUserWithTokenAsync(scopes: new[] { CommunicationTokenScope.VoIP });
+var identity = identityWithTokenResponse.Value.user.Id;
+var token = identityWithTokenResponse.Value.token.Token;
+var expiresOn = identityWithTokenResponse.Value.token.ExpiresOn;
+```
 
 ## <a name="refresh-access-tokens"></a>Обновление токенов доступа
 
-Чтобы обновить маркер доступа, передайте экземпляр объекта `CommunicationUserIdentifier` в метод `GetTokenAsync`. Если вы сохранили значение `Id` и вам нужно создать новый объект `CommunicationUserIdentifier`, для этого можно передать сохраненное значение `Id` в конструктор `CommunicationUserIdentifier` следующим образом:
+Чтобы обновить маркер доступа, передайте экземпляр объекта `CommunicationUser` в метод `IssueTokenAsync`. Если вы сохранили значение `Id` и вам нужно создать новый объект `CommunicationUser`, для этого можно передать сохраненное значение `Id` в конструктор `CommunicationUser` следующим образом:
 
-```csharp
+```csharp  
 // In this example, userId is a string containing the Id property of a previously-created CommunicationUser
-var identityToRefresh = new CommunicationUserIdentifier(userId);
-var tokenResponse = await client.GetTokenAsync(identityToRefresh, scopes: new [] { CommunicationTokenScope.VoIP });
+identityToRefresh = new CommunicationUser(userId);
+tokenResponse = await client.IssueTokenAsync(identityToRefresh, scopes: new [] { CommunicationTokenScope.VoIP });
 ```
 
 ## <a name="revoke-access-tokens"></a>Отмена маркеров доступа
 
 В некоторых случаях вы можете явно отменить маркеры доступа. Например, когда пользователь приложения меняет пароль, который он использует для проверки подлинности в службе. Метод `RevokeTokensAsync` аннулирует все активные маркеры доступа, выданные удостоверению.
 
-```csharp
+```csharp  
 await client.RevokeTokensAsync(identity);
 Console.WriteLine($"\nSuccessfully revoked all access tokens for identity with ID: {identity.Id}");
 ```

@@ -1,26 +1,26 @@
 ---
-title: Примеры шаблонов Azure Resource Manager для Azure Monitor для контейнеров
-description: Примеры шаблонов Azure Resource Manager для развертывания и настройки Azure Monitor для контейнеров.
+title: Примеры шаблонов Resource Manager для аналитики контейнеров
+description: Примеры шаблонов Azure Resource Manager для развертывания и настройки аналитики контейнеров.
 ms.subservice: logs
 ms.topic: sample
 author: bwren
 ms.author: bwren
 ms.date: 05/18/2020
-ms.openlocfilehash: e33bb6ae04f0b11a25a7ab87362bc243ee19c79c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: f75278663abde8d4b0f47c8df1dbbdbc298bcafb
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100597991"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101723339"
 ---
-# <a name="resource-manager-template-samples-for-azure-monitor-for-containers"></a>Примеры шаблонов Azure Resource Manager для Azure Monitor для контейнеров
+# <a name="resource-manager-template-samples-for-container-insights"></a>Примеры шаблонов Resource Manager для аналитики контейнеров
 Эта статья содержит примеры [шаблонов Azure Resource Manager](../../azure-resource-manager/templates/template-syntax.md) для развертывания и настройки агента Log Analytics для виртуальных машин в Azure Monitor. Каждый пример включает файл шаблона и файл параметров с примерами значений для предоставления в шаблоне.
 
 [!INCLUDE [azure-monitor-samples](../../../includes/azure-monitor-resource-manager-samples.md)]
 
 
 ## <a name="enable-for-aks-cluster"></a>Включение для кластера AKS
-Следующий пример включает Azure Monitor для контейнеров в кластере AKS.
+Следующий пример включает аналитику контейнеров для кластера AKS.
 
 
 ### <a name="template-file"></a>Файл шаблона
@@ -356,5 +356,5 @@ ms.locfileid: "100597991"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Получите другие примеры шаблонов для Azure Monitor.](../resource-manager-samples.md)
-* [См. сведения об Azure Monitor для контейнеров.](../containers/container-insights-overview.md)
+* [Другие примеры шаблонов для Azure Monitor](../resource-manager-samples.md).
+* [Дополнительные сведения об аналитике контейнеров](../containers/container-insights-overview.md).

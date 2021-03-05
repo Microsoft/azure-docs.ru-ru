@@ -1,58 +1,38 @@
 ---
-title: Руководство по Включение надстройки контроллера объекта ingress для нового кластера AKS с новым экземпляром Шлюза приложений Azure
-description: Узнайте, как с помощью Azure CLI включить надстройку контроллера объекта ingress для нового кластера AKS с новым экземпляром Шлюза приложений Azure.
+title: Руководство по включению надстройки контроллера объекта ingress для нового кластера AKS с новым Шлюзом приложений Azure
+description: Узнайте, как включить надстройку контроллера объекта ingress для нового кластера AKS с новым экземпляром Шлюза приложений Azure.
 services: application-gateway
 author: caya
 ms.service: application-gateway
 ms.topic: tutorial
-ms.date: 09/24/2020
+ms.date: 03/02/2021
 ms.author: caya
-ms.openlocfilehash: 775dc2133473354a1e534275fb0d813f299217d1
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.openlocfilehash: c37168c5165f5402dd4f57c8557bc2b7b3603533
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99593830"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101720194"
 ---
-# <a name="tutorial-enable-the-ingress-controller-add-on-preview-for-a-new-aks-cluster-with-a-new-application-gateway-instance"></a>Руководство по включению надстройки контроллера объекта ingress (предварительная версия) для нового кластера AKS с новым экземпляром Шлюза приложений
+# <a name="tutorial-enable-the-ingress-controller-add-on-for-a-new-aks-cluster-with-a-new-application-gateway-instance"></a>Руководство по включению надстройки контроллера объекта ingress для нового кластера AKS с новым экземпляром Шлюза приложений
 
-Используйте Azure CLI, чтобы включить надстройку [контроллера объекта ingress Шлюза приложений (AGIC)](ingress-controller-overview.md) для кластера [Службы Azure Kubernetes (AKS)](https://azure.microsoft.com/services/kubernetes-service/). Сейчас надстройка доступна в предварительной версии.
+Вы можете использовать Azure CLI, чтобы включить надстройку [контроллера объекта ingress Шлюза приложений (AGIC)](ingress-controller-overview.md) для нового кластера [Службы Azure Kubernetes (AKS)](https://azure.microsoft.com/services/kubernetes-service/).
 
 В этом учебнике описано, как создавать кластер AKS с включенной надстройкой AGIC. При создании кластера автоматически создается используемый экземпляр Шлюза приложений Azure. Затем вы развернете пример приложения, которое будет использовать надстройку для предоставления доступа к приложению через Шлюз приложений. 
 
-Надстройка обеспечивает более быстрый способ развертывания AGIC для кластера AKS, чем [при использовании Helm](ingress-controller-overview.md#difference-between-helm-deployment-and-aks-add-on). Она также предоставляет полностью управляемый интерфейс.    
+Надстройка обеспечивает более быстрый способ развертывания AGIC для кластера AKS, чем [при использовании Helm](ingress-controller-overview.md#difference-between-helm-deployment-and-aks-add-on). Она также предоставляет полностью управляемый интерфейс.
 
 В этом руководстве описано следующее:
 
 > [!div class="checklist"]
 > * Создайте группу ресурсов. 
-> * Создайте кластер AKS с включенной надстройкой AGIC. 
+> * Создайте кластер AKS с включенной надстройкой AGIC.
 > * Разверните пример приложения с помощью AGIC для объекта ingress в кластере AKS.
 > * Убедитесь, что приложение доступно через Шлюз приложений.
 
 [!INCLUDE [quickstarts-free-trial-note](../../includes/quickstarts-free-trial-note.md)]
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
-
- - Для работы с этим учебником требуется Azure CLI версии 2.0.4 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена. При использовании Azure CLI необходимо установить расширение предварительной версии в CLI с помощью следующей команды (если оно еще не установлено):
-    ```azurecli-interactive
-    az extension add --name aks-preview
-    ```
-
- - Зарегистрируйте флаг компонента *AKS-IngressApplicationGatewayAddon*, используя команду [az feature register](/cli/azure/feature#az-feature-register), как показано в указанном ниже примере. Это необходимо сделать только один раз для подписки, пока надстройка находится на стадии предварительной версии.
-    ```azurecli-interactive
-    az feature register --name AKS-IngressApplicationGatewayAddon --namespace Microsoft.ContainerService
-    ```
-
-   Через несколько минут отобразится состояние `Registered`. Состояние регистрации можно проверить с помощью команды [az feature list](/cli/azure/feature#az-feature-register):
-    ```azurecli-interactive
-    az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/AKS-IngressApplicationGatewayAddon')].{Name:name,State:properties.state}"
-    ```
-
- - Когда все будет готово, обновите регистрацию поставщика ресурсов Microsoft.ContainerService с помощью команды [az provider register](/cli/azure/provider#az-provider-register):
-    ```azurecli-interactive
-    az provider register --namespace Microsoft.ContainerService
-    ```
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
 
@@ -74,10 +54,10 @@ az group create --name myResourceGroup --location canadacentral
 
 В следующем примере вы развернете новый кластер AKS с именем *myCluster* с помощью [Azure CNI](../aks/concepts-network.md#azure-cni-advanced-networking) и [управляемых удостоверений](../aks/use-managed-identity.md). Надстройка AGIC будет включена в созданной вами группе ресурсов *myResourceGroup*. 
 
-Развертывание нового кластера AKS с включенной надстройкой AGIC без указания существующего экземпляра Шлюза приложений приведет к автоматическому созданию экземпляра SKU уровня "Стандартный" версии 2 экземпляра Шлюза приложений. Поэтому потребуется указать имя и диапазон адресов подсети экземпляра Шлюза приложений. Имя экземпляра Шлюза приложений будет *myApplicationGateway*, а используемый диапазон адресов подсети — 10.2.0.0/16. Убедитесь, что вы добавили или обновили расширение aks-preview в начале этого учебника. 
+Развертывание нового кластера AKS с включенной надстройкой AGIC без указания существующего экземпляра Шлюза приложений приведет к автоматическому созданию экземпляра SKU уровня "Стандартный" версии 2 экземпляра Шлюза приложений. Поэтому потребуется указать имя и диапазон адресов подсети экземпляра Шлюза приложений. Имя экземпляра Шлюза приложений будет *myApplicationGateway*, а используемый диапазон адресов подсети — 10.2.0.0/16.
 
 ```azurecli-interactive
-az aks create -n myCluster -g myResourceGroup --network-plugin azure --enable-managed-identity -a ingress-appgw --appgw-name myApplicationGateway --appgw-subnet-prefix "10.2.0.0/16" --generate-ssh-keys
+az aks create -n myCluster -g myResourceGroup --network-plugin azure --enable-managed-identity -a ingress-appgw --appgw-name myApplicationGateway --appgw-subnet-cidr "10.2.0.0/16" --generate-ssh-keys
 ```
 
 Информацию для настройки дополнительных параметров команды `az aks create` см. по [этим ссылкам](/cli/azure/aks#az-aks-create). 

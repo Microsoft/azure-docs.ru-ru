@@ -5,18 +5,18 @@ services: application-gateway
 author: caya
 ms.service: application-gateway
 ms.topic: tutorial
-ms.date: 09/24/2020
+ms.date: 03/02/2021
 ms.author: caya
-ms.openlocfilehash: d491b714c7d553fbd89d72315f46e6927d437717
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.openlocfilehash: 1daf5fef1383272f728ff3dac7557e55398f7d50
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99593824"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101720228"
 ---
-# <a name="tutorial-enable-application-gateway-ingress-controller-add-on-for-an-existing-aks-cluster-with-an-existing-application-gateway-through-azure-cli-preview"></a>Руководство по включению надстройки контроллера объекта ingress для имеющегося кластера AKS со Шлюзом приложений с помощью Azure CLI (предварительная версия)
+# <a name="tutorial-enable-application-gateway-ingress-controller-add-on-for-an-existing-aks-cluster-with-an-existing-application-gateway"></a>Руководство по включению надстройки контроллера объекта ingress для имеющегося кластера AKS со Шлюзом приложений
 
-Используйте Azure CLI, чтобы включить надстройку [контроллера объекта ingress Шлюза приложений (AGIC)](ingress-controller-overview.md) (предварительная версия) для кластера [службы Azure Kubernetes (AKS)](https://azure.microsoft.com/services/kubernetes-service/). В этом учебнике вы узнаете, как использовать надстройку AGIC, чтобы предоставить приложение Kubernetes в имеющемся кластере AKS с помощью Шлюза приложений, развернутого в разных виртуальных сетях. Начнем с создания кластера AKS в одной виртуальной сети и Шлюза приложений в отдельной виртуальной сети для имитации существующих ресурсов. Затем включите надстройку AGIC, создайте пиринговое подключение между двумя виртуальными сетями и разверните пример приложения, которое будет предоставляться через Шлюз приложений с помощью надстройки AGIC. Если вы включаете надстройку AGIC для имеющегося Шлюза приложений и кластера AKS в той же виртуальной сети, можно пропустить шаг создания пирингового подключения ниже. Надстройка обеспечивает более быстрый способ развертывания AGIC для кластера AKS, чем [при использовании Helm](ingress-controller-overview.md#difference-between-helm-deployment-and-aks-add-on). Она также предоставляет полностью управляемый интерфейс.  
+Вы можете использовать Azure CLI или портал, чтобы включить надстройку [контроллера объекта ingress Шлюза приложений (AGIC)](ingress-controller-overview.md) для существующего кластера [Службы Azure Kubernetes (AKS)](https://azure.microsoft.com/services/kubernetes-service/). В этом учебнике вы узнаете, как использовать надстройку AGIC, чтобы предоставить приложение Kubernetes в имеющемся кластере AKS с помощью Шлюза приложений, развернутого в разных виртуальных сетях. Начнем с создания кластера AKS в одной виртуальной сети и Шлюза приложений в отдельной виртуальной сети для имитации существующих ресурсов. Затем вы включите надстройку AGIC, создадите пиринговое подключение между двумя виртуальными сетями и развернете пример приложения, которое будет предоставляться через Шлюз приложений с помощью надстройки AGIC. Если вы включаете надстройку AGIC для имеющегося Шлюза приложений и кластера AKS в той же виртуальной сети, можно пропустить шаг создания пирингового подключения ниже. Надстройка обеспечивает более быстрый способ развертывания AGIC для кластера AKS, чем [при использовании Helm](ingress-controller-overview.md#difference-between-helm-deployment-and-aks-add-on). Она также предоставляет полностью управляемый интерфейс.  
 
 В этом руководстве описано следующее:
 
@@ -24,7 +24,8 @@ ms.locfileid: "99593824"
 > * Создание группы ресурсов 
 > * Создание кластера AKS. 
 > * Создание Шлюза приложений. 
-> * Включение надстройки AGIC в имеющемся кластере AKS с помощью Шлюза приложений. 
+> * Включение надстройки AGIC в существующем кластере AKS с помощью Azure CLI 
+> * Включение надстройки AGIC в существующем кластере AKS с помощью портала 
 > * Создание пирингового подключения между виртуальной сетью Шлюза приложений и виртуальной сетью кластера AKS.
 > * Развертывание примера приложения с использованием AGIC для объекта ingress в кластере AKS.
 > * Проверка доступности приложения через Шлюз приложений.
@@ -32,22 +33,6 @@ ms.locfileid: "99593824"
 [!INCLUDE [quickstarts-free-trial-note](../../includes/quickstarts-free-trial-note.md)]
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
-
- - Для работы с этим учебником требуется Azure CLI версии 2.0.4 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
-
- - Зарегистрируйте флаг функции *AKS-IngressApplicationGatewayAddon* с помощью команды [az feature register](/cli/azure/feature#az-feature-register), как показано в указанном ниже примере. Это необходимо сделать только один раз для каждой подписки, пока надстройка еще находится на этапе предварительной версии.
-     ```azurecli-interactive
-     az feature register --name AKS-IngressApplicationGatewayAddon --namespace microsoft.containerservice
-     ```
-    Через несколько минут отобразится состояние "Зарегистрировано". Состояние регистрации можно проверить с помощью команды [az feature list](/cli/azure/feature#az-feature-register).
-     ```azurecli-interactive
-     az feature list -o table --query "[?contains(name, 'microsoft.containerservice/AKS-IngressApplicationGatewayAddon')].{Name:name,State:properties.state}"
-     ```
-
- - Когда все будет готово, обновите регистрацию поставщика ресурсов Microsoft.ContainerService с помощью команды [az provider register](/cli/azure/provider#az-provider-register).
-    ```azurecli-interactive
-    az provider register --namespace Microsoft.ContainerService
-    ```
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
 
@@ -61,7 +46,7 @@ az group create --name myResourceGroup --location canadacentral
 
 Теперь можно развернуть новый кластер AKS, чтобы имитировать наличие имеющегося кластера AKS, для которого требуется включить надстройку AGIC.  
 
-В следующем примере вы развернете новый кластер AKS с именем *myCluster*, используя [Azure CNI](../aks/concepts-network.md#azure-cni-advanced-networking) и [управляемые удостоверения](../aks/use-managed-identity.md) в созданной группе ресурсов *myResourceGroup*.    
+В следующем примере вы развернете новый кластер AKS с именем *myCluster*, используя [Azure CNI](../aks/concepts-network.md#azure-cni-advanced-networking) и [управляемые удостоверения](../aks/use-managed-identity.md) в созданной группе ресурсов *myResourceGroup*.
 
 ```azurecli-interactive
 az aks create -n myCluster -g myResourceGroup --network-plugin azure --enable-managed-identity 
@@ -84,18 +69,24 @@ az network application-gateway create -n myApplicationGateway -l canadacentral -
 > [!NOTE]
 > Надстройка контроллера объекта ingress (AGIC) Шлюза приложений поддерживает **только** номера SKU Шлюза приложений версии 2 (Стандартный и WAF), а **не** версии 1. 
 
-## <a name="enable-the-agic-add-on-in-existing-aks-cluster-with-existing-application-gateway"></a>Включение надстройки AGIC в имеющемся кластере AKS с помощью Шлюза приложений 
+## <a name="enable-the-agic-add-on-in-existing-aks-cluster-through-azure-cli"></a>Включение надстройки AGIC в существующем кластере AKS с помощью Azure CLI 
 
-Теперь включите надстройку AGIC в созданном кластере AKS (*myCluster*) и укажите надстройку AGIC, чтобы использовать созданный Шлюз приложений (*myApplicationGateway*). Убедитесь, что вы добавили или обновили расширение aks-preview в начале этого учебника. 
+Если вы хотите продолжить использование Azure CLI, можете включить надстройку AGIC в созданном кластере AKS (*myCluster*) и указать надстройку AGIC, чтобы использовать созданный Шлюз приложений (*myApplicationGateway*).
 
 ```azurecli-interactive
 appgwId=$(az network application-gateway show -n myApplicationGateway -g myResourceGroup -o tsv --query "id") 
 az aks enable-addons -n myCluster -g myResourceGroup -a ingress-appgw --appgw-id $appgwId
 ```
 
+## <a name="enable-the-agic-add-on-in-existing-aks-cluster-through-portal"></a>Включение надстройки AGIC в существующем кластере AKS с помощью портала 
+
+Если вы хотите использовать портал Azure для включения надстройки AGIC, перейдите по адресу [(https://aka.ms/azure/portal/aks/agic)](https://aka.ms/azure/portal/aks/agic) и перейдите к своему кластеру AKS через ссылку на портале. После этого перейдите на вкладку "Сети" в кластере AKS. Вы увидите раздел "Application Gateway ingress controller" (Контроллер объекта ingress Шлюза приложений), который позволяет включить или отключить надстройку контроллера объекта ingress с помощью пользовательского интерфейса портала. Установите флажок рядом с пунктом "Enable ingress controller" (Включить контроллер объекта ingress) и выберите созданный Шлюз приложений *myApplicationGateway* в раскрывающемся меню. 
+
+![Портал контроллера объекта ingress Шлюза приложений](./media/tutorial-ingress-controller-add-on-existing/portal_ingress_controller_addon.png)
+
 ## <a name="peer-the-two-virtual-networks-together"></a>Создание пирингового подключения между двумя виртуальными сетями
 
-Так как мы развернули кластер AKS в своей виртуальной сети, а шлюз приложений в другой, необходимо объединить эти две виртуальные сети, чтобы трафик перенаправлялся из Шлюза приложений в модули Pod кластера. Для пирингового подключения между двумя виртуальными сетями требуется выполнить команду Azure CLI два раза, чтобы обеспечить двустороннюю связь. Первая команда создаст пиринговое подключение из виртуальной сети Шлюза приложений к виртуальной сети AKS. Вторая команда создаст пиринговое подключение в обратном направлении. 
+Так как мы развернули кластер AKS в своей виртуальной сети, а шлюз приложений в другой, необходимо объединить эти две виртуальные сети, чтобы трафик перенаправлялся из Шлюза приложений в модули Pod кластера. Для пирингового подключения между двумя виртуальными сетями требуется выполнить команду Azure CLI два раза, чтобы обеспечить двустороннюю связь. Первая команда создаст пиринговое подключение из виртуальной сети Шлюза приложений к виртуальной сети AKS. Вторая команда создаст пиринговое подключение в обратном направлении.
 
 ```azurecli-interactive
 nodeResourceGroup=$(az aks show -n myCluster -g myResourceGroup -o tsv --query "nodeResourceGroup")
@@ -107,6 +98,7 @@ az network vnet peering create -n AppGWtoAKSVnetPeering -g myResourceGroup --vne
 appGWVnetId=$(az network vnet show -n myVnet -g myResourceGroup -o tsv --query "id")
 az network vnet peering create -n AKStoAppGWVnetPeering -g $nodeResourceGroup --vnet-name $aksVnetName --remote-vnet $appGWVnetId --allow-vnet-access
 ```
+
 ## <a name="deploy-a-sample-application-using-agic"></a>Развертывание примера приложения с помощью AGIC 
 
 Теперь можно развернуть пример приложения в созданном кластере AKS, который будет использовать надстройку AGIC для объекта ingress, и подключить Шлюз приложений к кластеру AKS. Сначала получите учетные данные для развернутого кластера AKS с помощью команды `az aks get-credentials`. 

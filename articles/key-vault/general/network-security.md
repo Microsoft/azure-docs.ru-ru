@@ -2,20 +2,20 @@
 title: Настройка брандмауэров и виртуальных сетей Azure Key Vault — Azure Key Vault
 description: Пошаговые инструкции для настройки брандмауэров и виртуальных сетей Key Vault.
 services: key-vault
-author: ShaneBala-keyvault
-manager: ravijan
+author: msmbaldwin
+manager: rkarlin
 ms.service: key-vault
 ms.subservice: general
 ms.topic: tutorial
 ms.date: 10/01/2020
-ms.author: sudbalas
+ms.author: mbaldwin
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 3639237a0dc34c521fd3fa52631fdb19c26ec284
-ms.sourcegitcommit: 2aa52d30e7b733616d6d92633436e499fbe8b069
+ms.openlocfilehash: 13ead70f278f12866dbe00b53c487aebcc43304f
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97936351"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101742642"
 ---
 # <a name="configure-azure-key-vault-firewalls-and-virtual-networks"></a>Настройка брандмауэров и виртуальных сетей Azure Key Vault
 
@@ -39,7 +39,7 @@ ms.locfileid: "97936351"
 
 ### <a name="key-vault-firewall-enabled-ipv4-addresses-and-ranges---static-ips"></a>Брандмауэр Key Vault включен (адреса и диапазоны IPv4 — статические IP-адреса)
 
-Если вы хотите уполномочить определенную службу для доступа к хранилищу ключей через брандмауэр Key Vault, можно добавить IP-адрес в список разрешений брандмауэра хранилища ключей. Эта конфигурация лучше подходит для служб, использующих статические IP-адреса или известные диапазоны.
+Если вы хотите уполномочить определенную службу для доступа к хранилищу ключей через брандмауэр Key Vault, можно добавить IP-адрес в список разрешений брандмауэра хранилища ключей. Эта конфигурация лучше подходит для служб, использующих статические IP-адреса или известные диапазоны. Для этого случая существует ограничение в 1000 диапазонов CIDR.
 
 Чтобы разрешить IP-адрес или диапазон адресов для ресурса Azure, например веб-приложению или приложению логики, выполните следующие действия.
 

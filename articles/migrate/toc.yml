@@ -36,6 +36,8 @@
           items:
             - name: Оценка готовности виртуальных машин VMware к переносу на виртуальные машины Azure
               href: tutorial-assess-vmware-azure-vm.md
+            - name: Оценка готовности экземпляров SQL к переносу в Azure SQL
+              href: tutorial-assess-sql.md
             - name: Оценка готовности виртуальных машин VMware к переносу в AVS
               href: tutorial-assess-vmware-azure-vmware-solution.md
         - name: Оценка виртуальных машин Hyper-V для переноса в Azure.
@@ -102,6 +104,8 @@
       items:
         - name: Общие сведения об оценке (миграция на виртуальные машины Azure)
           href: concepts-assessment-calculation.md
+        - name: Общие сведения об оценке (миграция в Azure SQL)
+          href: concepts-azure-sql-assessment-calculation.md
         - name: Обзор оценки (миграция в AVS)
           href: concepts-azure-vmware-solution-assessment-calculation.md
         - name: Рекомендации по оценке
@@ -144,8 +148,12 @@
               href: deploy-appliance-script-government.md
         - name: Ограничение области обнаружения для виртуальных машин VMware
           href: set-discovery-scope.md
+        - name: Добавление учетных данных сервера
+          href: add-server-credentials.md
         - name: 'Обнаружение приложений, ролей и функций'
           href: how-to-discover-applications.md
+        - name: Обнаружение экземпляров SQL в существующем проекте
+          href: how-to-discover-sql-existing-project.md
         - name: Анализ зависимостей компьютера (с помощью агентов)
           href: how-to-create-group-machine-dependencies.md
         - name: Анализ зависимостей компьютера (без агентов)
@@ -158,6 +166,8 @@
           href: how-to-create-a-group.md
         - name: Создание оценки для виртуальных машин Azure
           href: how-to-create-assessment.md
+        - name: Создание оценки для Azure SQL
+          href: how-to-create-azure-sql-assessment.md
         - name: Создание оценки AVS
           href: how-to-create-azure-vmware-solution-assessment.md
         - name: Оценка базы данных SQL Server
@@ -176,6 +186,8 @@
       items:
         - name: Добавление средств миграции
           href: how-to-migrate.md
+        - name: Репликация с помощью ExpressRoute
+          href: replicate-using-expressroute.md
         - name: Подготовка компьютеров к миграции
           href: prepare-for-migration.md
         - name: "Подготовка серверов Windows\_2003 к миграции"

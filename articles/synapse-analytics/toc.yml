@@ -1,6 +1,6 @@
 - name: Azure Synapse Analytics
   href: index.yml
-- name: "Переключение на выделенный пул SQL (прежнее название\_— Хранилище данных SQL)"
+- name: "Переключение на выделенный пул SQL (ранее\_— Хранилище данных SQL) >"
   href: ./sql-data-warehouse/sql-data-warehouse-overview-what-is.md
 - name: Обзор
   items:
@@ -48,17 +48,19 @@
   items:
     - name: Краткие руководства
       items:
-        - name: Создание рабочей области на портале Azure
-          href: quickstart-create-workspace.md
-          displayName: quickstart
-        - name: "Создание рабочей области с помощью Azure\_CLI"
-          href: quickstart-create-workspace-cli.md
-          displayName: quickstart
-        - name: Создание рабочей области с помощью Azure PowerShell
-          href: quickstart-create-workspace-powershell.md
-          displayName: quickstart
-        - name: Развертывание с помощью шаблона
-          href: quickstart-deployment-template-workspaces.md
+        - name: Создание рабочей области
+          items:
+            - name: Портал Azure
+              href: quickstart-create-workspace.md
+              displayName: quickstart
+            - name: Azure CLI
+              href: quickstart-create-workspace-cli.md
+              displayName: quickstart
+            - name: Azure PowerShell
+              href: quickstart-create-workspace-powershell.md
+              displayName: quickstart
+            - name: Шаблон ARM
+              href: quickstart-deployment-template-workspaces.md
           displayName: quickstart
         - name: "Связывание рабочей области Power\_BI"
           href: quickstart-power-bi.md

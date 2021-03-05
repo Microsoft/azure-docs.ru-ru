@@ -150,6 +150,8 @@
           displayName: 'AD-FS, ADFS'
         - name: Amazon
           href: identity-provider-amazon.md
+        - name: Apple (предварительная версия)
+          href: identity-provider-apple-id.md
         - name: "Azure\_AD (один клиент)"
           href: identity-provider-azure-ad-single-tenant.md
         - name: "Azure\_AD (несколько клиентов)"
@@ -217,11 +219,11 @@
           href: configure-tokens.md
     - name: Определение настраиваемых атрибутов
       href: user-flow-custom-attributes.md
-    - name: Защита идентификации и условный доступ
+    - name: Проверка подлинности на основе рисков
       items:
-        - name: Настройка защиты идентификации и условного доступа
-          href: conditional-access-identity-protection-setup.md
-        - name: Добавление условного доступа
+        - name: Исследование рисков с помощью Защиты идентификации
+          href: identity-protection-investigate-risk.md
+        - name: Настройка условного доступа
           href: conditional-access-user-flow.md
     - name: Настройка проверки возраста
       href: basic-age-gating.md
@@ -327,9 +329,6 @@
                       href: aad-sspr-technical-profile.md
                     - name: Преобразование утверждений
                       href: claims-transformation-technical-profile.md
-                    - name: Условный доступ
-                      href: conditional-access-technical-profile.md
-                      displayName: ca
                     - name: Указание для маркера идентификации
                       href: id-token-hint.md
                     - name: Поставщик токенов JWT

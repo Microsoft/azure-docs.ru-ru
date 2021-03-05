@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/26/2020
 ms.author: lajanuar
 ms.custom: devx-track-csharp
-ms.openlocfilehash: dd5b83908ae7c6d62acd3391933028685facf755
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 0665dcbc8de518c5759c52a8fc3aec26859566d6
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98927477"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101728014"
 ---
 # <a name="tutorial-create-a-translation-app-with-wpf"></a>Руководство по Создание приложения для перевода текста с помощью WPF
 
@@ -41,7 +41,7 @@ ms.locfileid: "98927477"
 | Служба | Компонент | Описание |
 |---------|---------|-------------|
 | API перевода | [Get Languages](./reference/v3-0-languages.md) | Получение полного списка поддерживаемых языков для перевода текста. |
-| API перевода | [Translate](./reference/v3-0-translate.md) | Перевод текста более чем на 70 языков. |
+| API перевода | [Translate](./reference/v3-0-translate.md) | Перевод текста на 90 языков и диалектов. |
 | API перевода | [Detect](./reference/v3-0-detect.md) | Определение языка исходного текста. Для определения используется показатель достоверности. |
 | API Проверки орфографии Bing | [Spell Check](/rest/api/cognitiveservices/bing-spell-check-api-v7-reference) | Исправление орфографических ошибок для повышения точности перевода. |
 
@@ -264,7 +264,7 @@ ms.locfileid: "98927477"
 
 ## <a name="get-supported-languages"></a>Получение сведений о поддерживаемых языках
 
-Переводчик сейчас поддерживает более 70 языков. Так как со временем будет добавлена поддержка новых языков, вместо того чтобы задавать список в коде приложения, рекомендуем вызвать ресурс "Языки" Переводчика.
+Переводчик сейчас поддерживает более 90 языков и диалектов. Так как со временем будет добавлена поддержка новых языков, вместо того чтобы задавать список в коде приложения, рекомендуем вызвать ресурс "Языки" Переводчика.
 
 В рамках этого раздела мы создадим запрос `GET` к ресурсу языков на получение списка языков, доступных для перевода.
 

@@ -12,14 +12,17 @@ ms.workload: data-services
 ms.custom: seo-lt-2019
 ms.topic: tutorial
 ms.date: 01/24/2020
-ms.openlocfilehash: ab280bbab71926a6ffb70605fdbf463164469623
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.openlocfilehash: 09bcc85c0640bf0061ec0c872161cbc9afe51da6
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101096341"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101742132"
 ---
 # <a name="tutorial-migrate-oracle-to-azure-database-for-postgresql-online-using-dms-preview"></a>Руководство по Сетевой перенос Oracle в Базу данных Azure для PostgreSQL с помощью DMS (предварительная версия)
+
+> [!IMPORTANT]
+> Сценарий миграции с Oracle на Базу данных Azure для PostgreSQL (сейчас на этапе предварительной версии) станет недоступен после 1 мая 2021 г. Мы продолжим предоставлять поддержку через альтернативные средства (например, Ora2pg) и обеспечивать оптимальный способ миграции с Oracle на PostgreSQL. Рекомендации по миграции см. в [руководстве по миграции с Oracle на Базу данных Azure для PostgreSQL] (https://aka.ms/OracletoPGguide). 
 
 Службу Azure Database Migration Service можно использовать для переноса баз данных Oracle из локальной среды или виртуальных машин в [Базу данных Azure для PostgreSQL](../postgresql/index.yml) с минимальным временем простоя. Другими словами, миграцию можно завершить с минимальным временем простоя для приложения. В этом руководстве выполняется перенос примера базы данных **отдела кадров** из экземпляра Oracle 11g, размещенного в локальной среде или на виртуальной машине, в Базу данных Azure для PostgreSQL с помощью операции сетевого переноса в Azure Database Migration Service.
 

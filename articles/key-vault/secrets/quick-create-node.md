@@ -8,12 +8,12 @@ ms.service: key-vault
 ms.subservice: secrets
 ms.topic: quickstart
 ms.custom: devx-track-js
-ms.openlocfilehash: afb0e04d6f8a34d844df382081d53a32899e9a5c
-ms.sourcegitcommit: 2aa52d30e7b733616d6d92633436e499fbe8b069
+ms.openlocfilehash: 70416daced2cbdebb70fb8e1defbcbcb599710f1
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97934770"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101705489"
 ---
 # <a name="quickstart-azure-key-vault-secret-client-library-for-javascript-version-4"></a>Краткое руководство. Использование клиентской библиотеки секретов Azure Key Vault для JavaScript (версия 4)
 
@@ -56,13 +56,13 @@ ms.locfileid: "97934770"
 
 1. В командной оболочке создайте папку с именем `key-vault-node-app`.
 
-```azurecli
+```terminal
 mkdir key-vault-node-app
 ```
 
 1. Перейдите к созданному новому каталогу *key-vault-node-app* и выполните команду init, чтобы инициализировать проект узла.
 
-```azurecli
+```terminal
 cd key-vault-node-app
 npm init -y
 ```
@@ -71,13 +71,13 @@ npm init -y
 
 Через окно консоли установите клиентскую [библиотеку секретов](https://www.npmjs.com/package/@azure/keyvault-secrets) Azure Key Vault для Node.js.
 
-```azurecli
+```terminal
 npm install @azure/keyvault-secrets
 ```
 
 Установите пакет [azure.identity](https://www.npmjs.com/package/@azure/identity) для проверки подлинности в Key Vault.
 
-```azurecli
+```terminal
 npm install @azure/identity
 ```
 
@@ -154,7 +154,7 @@ const { SecretClient } = require("@azure/keyvault-secrets");
 
 В этом кратком руководстве пользователь, вошедший в систему, проходит проверку подлинности в хранилище ключей, который является предпочтительным методом при локальной разработке. Для приложений, развернутых в Azure, службе приложений или виртуальной машине должно быть назначено управляемое удостоверение. Дополнительные сведения см. в разделе [Обзор управляемых удостоверений](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview).
 
-В примере ниже имя хранилища ключей расширяется до универсального кода ресурса (URI) хранилища ключей в формате "https://\<your-key-vault-name\>.vault.azure.net". В этом примере показан класс [DefaultAzureCredential()](https://docs.microsoft.com/javascript/api/@azure/identity/defaultazurecredential) из [библиотеки удостоверений Azure](https://docs.microsoft.com/javascript/api/overview/azure/identity-readme), который для предоставления удостоверения позволяет использовать один и тот же код в различных средах с различными параметрами. Дополнительные сведения о проверке подлинности в хранилище ключей см. в [руководстве для разработчиков](https://docs.microsoft.com/azure/key-vault/general/developers-guide#authenticate-to-key-vault-in-code).
+В примере ниже имя хранилища ключей расширяется до универсального кода ресурса (URI) хранилища ключей в формате "https://\<your-key-vault-name\>.vault.azure.net". В этом примере показан класс [DefaultAzureCredential()](https://docs.microsoft.com/javascript/api/@azure/identity/defaultazurecredential) из [библиотеки удостоверений Azure](https://docs.microsoft.com/javascript/api/overview/azure/identity-readme), который позволяет использовать один и тот же код в различных средах с различными параметрами для предоставления удостоверения. Дополнительные сведения о проверке подлинности в хранилище ключей см. в [руководстве для разработчиков](https://docs.microsoft.com/azure/key-vault/general/developers-guide#authenticate-to-key-vault-in-code).
 
 Добавьте следующий код в функцию main():
 
@@ -168,7 +168,7 @@ const client = new SecretClient(KVUri, credential);
 
 ### <a name="save-a-secret"></a>Сохранение секрета
 
-Теперь, когда приложение прошло проверку подлинности, вы можете разместить секрет в хранилище ключей с помощью [метода setSecret](/javascript/api/@azure/keyvault-secrets/secretclient?#setsecret-string--string--setsecretoptions-). Для этого нужно указать имя секрета — в нашем примере это mySecret.  
+Теперь, когда приложение прошло проверку подлинности, вы можете разместить секрет в хранилище ключей с помощью [метода setSecret](/javascript/api/@azure/keyvault-secrets/secretclient?view=azure-node-latest#setSecret_string__string__SetSecretOptions_). Для этого нужно указать имя секрета — в нашем примере это mySecret.  
 
 ```javascript
 await client.setSecret(secretName, secretValue);
@@ -176,7 +176,7 @@ await client.setSecret(secretName, secretValue);
 
 ### <a name="retrieve-a-secret"></a>Получение секрета
 
-Теперь вы можете получить ранее заданное значение с помощью [метода getSecret](/javascript/api/@azure/keyvault-secrets/secretclient?#getsecret-string--getsecretoptions-).
+Теперь вы можете получить ранее заданное значение с помощью [метода getSecret](/javascript/api/@azure/keyvault-secrets/secretclient?view=azure-node-latest#getSecret_string__GetSecretOptions_).
 
 ```javascript
 const retrievedSecret = await client.getSecret(secretName);
@@ -258,9 +258,9 @@ main().then(() => console.log('Done')).catch((ex) => console.log(ex.message));
 
 1. Воспользуйтесь следующей командой для запуска этого приложения.
 
-    ```azurecli
+    ```terminal
     npm install
-    npm index.js
+    node index.js
     ```
 
 1. При появлении запроса введите значение секрета. Например, mySecretPassword.

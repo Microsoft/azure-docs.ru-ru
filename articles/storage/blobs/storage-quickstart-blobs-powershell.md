@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.date: 03/31/2020
 ms.author: tamram
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: b051a4ffe4d24e1ef0e69ab7c18a8ed3388b57e5
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: 21fc7e6de38a98e4f0853cf513f9f3441c7e2106
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "89078288"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101735358"
 ---
 # <a name="quickstart-upload-download-and-list-blobs-with-powershell"></a>Краткое руководство. Отправка, скачивание и составление списка больших двоичных объектов с помощью PowerShell
 
@@ -26,6 +26,8 @@ ms.locfileid: "89078288"
 ## <a name="prerequisites"></a>Предварительные требования
 
 Для доступа к службе хранилища Azure требуется подписка Azure. Если у вас еще нет подписки, вы можете [создать бесплатную учетную запись Azure](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
+
+Кроме того, вам потребуется роль участника данных Storage Blob для чтения, записи и удаления больших двоичных объектов и контейнеров службы хранилища Azure.
 
 [!INCLUDE [updated-for-az](../../../includes/updated-for-az.md)]
 
@@ -113,7 +115,7 @@ Get-AzStorageBlobContent -Blob "Image002.png" `
 
 ## <a name="data-transfer-with-azcopy"></a>Передача данных с помощью AzCopy
 
-Служебная программа командной строки AzCopy обеспечивает высокопроизводительную передачу данных с поддержкой сценариев для службы хранилища Azure. AzCopy можно использовать для передачи данных из хранилища BLOB-объектов, Файлов Azure и обратно. Дополнительные сведения об AzCopy версии 10, которая является последней, см. в статье [Get started with AzCopy](../common/storage-use-azcopy-v10.md) (Начало работы с AzCopy). Дополнительные сведения об использовании AzCopy версии 10 с хранилищем BLOB-объектов см. в статье [Transfer data with AzCopy and Blob storage](../common/storage-use-azcopy-blobs.md) (Передача данных с помощью AzCopy и хранилища BLOB-объектов).
+Служебная программа командной строки AzCopy обеспечивает высокопроизводительную передачу данных с поддержкой сценариев для службы хранилища Azure. AzCopy можно использовать для передачи данных из хранилища BLOB-объектов, Файлов Azure и обратно. Дополнительные сведения об AzCopy версии 10, которая является последней, см. в статье [Get started with AzCopy](../common/storage-use-azcopy-v10.md) (Начало работы с AzCopy). Дополнительные сведения об использовании AzCopy версии 10 с хранилищем BLOB-объектов см. в статье [Transfer data with AzCopy and Blob storage](../common/storage-use-azcopy-v10.md#transfer-data) (Передача данных с помощью AzCopy и хранилища BLOB-объектов).
 
 В следующем примере AzCopy используется для передачи локального файла в большой двоичный объект. Не забудьте заменить примеры значений собственными значениями:
 

@@ -1,5 +1,5 @@
 ---
-title: Общие сведения о кластерах Azure Stream Analytics (предварительная версия)
+title: Общие сведения о кластерах Azure Stream Analytics
 description: Сведения о ценовой категории "Выделенный" для одного клиента в кластере Stream Analytics.
 author: sidramadoss
 ms.author: sidram
@@ -7,14 +7,14 @@ ms.service: stream-analytics
 ms.topic: overview
 ms.custom: mvc
 ms.date: 09/22/2020
-ms.openlocfilehash: 75a95fa4ad36b69ca920f527060644dcc5264ce8
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.openlocfilehash: e5157a02f97370b20db85bf5e3e8aae98a2d8668
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98019539"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101709297"
 ---
-# <a name="overview-of-azure-stream-analytics-cluster-preview"></a>Общие сведения о кластере Azure Stream Analytics (предварительная версия)
+# <a name="overview-of-azure-stream-analytics-cluster"></a>Общие сведения о кластере Azure Stream Analytics
 
 Кластер Stream Analytics позволяет выполнять развертывание одного клиента, на основе которого можно реализовать сложные и ресурсоемкие сценарии потоковой передачи. Полномасштабные кластеры Stream Analytics могут обрабатывать более 200 МБ в секунду в режиме реального времени. Задания Stream Analytics, выполняемые в выделенных кластерах, могут использовать все возможности стандартного предложения и поддерживают подключение частного канала к входным и выходным данным.
 
