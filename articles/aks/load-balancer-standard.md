@@ -7,12 +7,12 @@ ms.topic: article
 ms.date: 11/14/2020
 ms.author: jpalma
 author: palma21
-ms.openlocfilehash: 5da7f2a11be7562313b709a8af72ccd709165cfa
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: e37c5a748a8e99f49e3535946268427139bbbf44
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96000867"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102184429"
 ---
 # <a name="use-a-public-standard-load-balancer-in-azure-kubernetes-service-aks"></a>Использование общедоступной Load Balancer (цен. категория "Стандартный") в службе Kubernetes Azure (AKS)
 
@@ -27,7 +27,7 @@ Azure Load Balancer находится на уровне 4 модели соед
 
 В этом документе рассматривается интеграция с общедоступной подсистемой балансировки нагрузки. Сведения о внутренней интеграции Load Balancer см. в [документации по внутренней подсистеме балансировки нагрузки AKS](internal-lb.md).
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Доступны два номера SKU Azure Load Balancer: ценовых категорий *Базовый* и *Стандартный*. По умолчанию при создании кластера AKS используется номер SKU " *стандартный* ". Используйте номер SKU " *стандартный* ", чтобы получить доступ к дополнительным функциям, таким как серверный пул большего размера, [**несколько пулов узлов**](use-multiple-node-pools.md)и [**зоны доступности**](availability-zones.md). Это рекомендуемый номер SKU Load Balancer AKS.
 
@@ -96,13 +96,13 @@ default       public-svc    LoadBalancer   10.0.39.110    52.156.88.187   80:320
 
 Как и все правила Load Balancer, правила для исходящего трафика соответствуют тому же знакомому синтаксису, что и правила балансировки нагрузки и NAT для входящего трафика:
 
-***интерфейсные IP-адреса + параметры + внутренний пул** _
+***IP-адреса интерфейсов + параметры + внутренний пул***
 
 Правило для исходящего трафика настраивает NAT для исходящего трафика, предусматривающее преобразование всех виртуальных машин, определенных с помощью серверного пула, во внешний интерфейс. Параметры обеспечивают дополнительное детальное управление алгоритмом NAT для исходящего трафика.
 
 Хотя правило для исходящего трафика можно использовать только с одним общедоступным IP-адресом, правила для исходящего трафика облегчают настройку для масштабирования NAT для исходящего трафика. Вы можете использовать несколько IP-адресов для планирования крупномасштабных сценариев, а также применять правила для исходящего трафика для обхода шаблонов, подверженных нехватке SNAT. Каждый дополнительный IP-адрес, предоставляемый интерфейсом, предоставляет временные порты размером 64 КБ для Load Balancer для использования в качестве портов SNAT. 
 
-При использовании балансировщика нагрузки _Standard * SKU с управляемыми исходящими общедоступными IP-адресами, которые создаются по умолчанию, можно масштабировать количество управляемых исходящих общедоступных IP-адресов с помощью **`load-balancer-managed-ip-count`** параметра.
+При использовании балансировщика нагрузки " *стандартный* " с управляемыми исходящими общедоступными IP-адресами, которые создаются по умолчанию, можно масштабировать количество управляемых исходящих общедоступных IP-адресов с помощью **`load-balancer-managed-ip-count`** параметра.
 
 Чтобы обновить существующий кластер, выполните следующую команду. Этот параметр можно также задать во время создания кластера, чтобы использовать несколько управляемых общедоступных исходящих IP-адресов.
 
@@ -326,7 +326,7 @@ spec:
 | `service.beta.kubernetes.io/azure-load-balancer-internal`         | `true` или `false`                     | Укажите, должна ли подсистема балансировки нагрузки быть внутренней. Значение по умолчанию — Public, если не задано.
 | `service.beta.kubernetes.io/azure-load-balancer-internal-subnet`  | Имя подсети                    | Укажите подсеть, к которой должна быть привязана внутренняя подсистема балансировки нагрузки. Если значение не задано, по умолчанию используется подсеть, настроенная в облачном файле конфигурации.
 | `service.beta.kubernetes.io/azure-dns-label-name`                 | Имя DNS-метки в общедоступных IP-адресах   | Укажите имя DNS-метки для **общедоступной** службы. Если задана пустая строка, запись DNS в общедоступном IP-адресе не будет использоваться.
-| `service.beta.kubernetes.io/azure-shared-securityrule`            | `true` или `false`                     | Укажите, что служба должна быть предоставлена с помощью правила безопасности Azure, которое может использоваться совместно с другой службой, характерным правилом для увеличения числа служб, которые могут быть предоставлены. Эта аннотация полагается на функцию расширенных [правил безопасности](../virtual-network/network-security-groups-overview.md#augmented-security-rules) в Azure группы безопасности сети. 
+| `service.beta.kubernetes.io/azure-shared-securityrule`            | `true` либо `false`                     | Укажите, что служба должна быть предоставлена с помощью правила безопасности Azure, которое может использоваться совместно с другой службой, характерным правилом для увеличения числа служб, которые могут быть предоставлены. Эта аннотация полагается на функцию расширенных [правил безопасности](../virtual-network/network-security-groups-overview.md#augmented-security-rules) в Azure группы безопасности сети. 
 | `service.beta.kubernetes.io/azure-load-balancer-resource-group`   | Имя группы ресурсов            | Укажите группу ресурсов для общедоступных IP-адресов подсистемы балансировки нагрузки, которые находятся не в той же группе ресурсов, что и инфраструктура кластера (Группа ресурсов узла).
 | `service.beta.kubernetes.io/azure-allowed-service-tags`           | Список разрешенных тегов службы          | Укажите список разрешенных [тегов службы][service-tags] , разделенных запятыми.
 | `service.beta.kubernetes.io/azure-load-balancer-tcp-idle-timeout` | Время ожидания простоя TCP в минутах          | Укажите время в минутах, в течение которого время ожидания простоя подключения TCP будет происходить в подсистеме балансировки нагрузки. По умолчанию и минимальное значение равно 4. Максимальное значение равно 30. Должно быть целым числом.
@@ -403,17 +403,17 @@ spec:
 [aks-quickstart-portal]: kubernetes-walkthrough-portal.md
 [aks-sp]: kubernetes-service-principal.md#delegate-access-to-other-azure-resources
 [az-aks-show]: /cli/azure/aks#az-aks-show
-[az-aks-create]: /cli/azure/aks?view=azure-cli-latest#az-aks-create
-[az-aks-get-credentials]: /cli/azure/aks?view=azure-cli-latest#az-aks-get-credentials
-[az-aks-install-cli]: /cli/azure/aks?view=azure-cli-latest#az-aks-install-cli
+[az-aks-create]: /cli/azure/aks#az-aks-create
+[az-aks-get-credentials]: /cli/azure/aks#az-aks-get-credentials
+[az-aks-install-cli]: /cli/azure/aks#az-aks-install-cli
 [az-extension-add]: /cli/azure/extension#az-extension-add
 [az-feature-list]: /cli/azure/feature#az-feature-list
 [az-feature-register]: /cli/azure/feature#az-feature-register
 [az-group-create]: /cli/azure/group#az-group-create
 [az-provider-register]: /cli/azure/provider#az-provider-register
-[az-network-lb-outbound-rule-list]: /cli/azure/network/lb/outbound-rule?view=azure-cli-latest#az-network-lb-outbound-rule-list
-[az-network-public-ip-show]: /cli/azure/network/public-ip?view=azure-cli-latest#az-network-public-ip-show
-[az-network-public-ip-prefix-show]: /cli/azure/network/public-ip/prefix?view=azure-cli-latest#az-network-public-ip-prefix-show
+[az-network-lb-outbound-rule-list]: /cli/azure/network/lb/outbound-rule#az-network-lb-outbound-rule-list
+[az-network-public-ip-show]: /cli/azure/network/public-ip#az-network-public-ip-show
+[az-network-public-ip-prefix-show]: /cli/azure/network/public-ip/prefix#az-network-public-ip-prefix-show
 [az-role-assignment-create]: /cli/azure/role/assignment#az-role-assignment-create
 [azure-lb]: ../load-balancer/load-balancer-overview.md
 [azure-lb-comparison]: ../load-balancer/skus.md

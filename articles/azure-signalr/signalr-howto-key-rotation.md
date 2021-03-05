@@ -6,12 +6,12 @@ ms.service: signalr
 ms.topic: conceptual
 ms.date: 03/01/2019
 ms.author: zhshang
-ms.openlocfilehash: 133edc64ac2f858a397a4a184c24497dae8af333
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 1f80742d48fc46c8c5e337794100ca5901818c88
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "67565729"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102184395"
 ---
 # <a name="how-to-rotate-access-key-for-azure-signalr-service"></a>How to rotate access key for Azure SignalR Service (Смена ключей доступа для Службы Azure SignalR)
 
@@ -35,7 +35,7 @@ ms.locfileid: "67565729"
 
    ![Повторное создание ключей](media/signalr-howto-key-rotation/regenerate-keys.png)
 
-Вы также можете повторно создать ключи с помощью [Azure CLI](/cli/azure/signalr/key?view=azure-cli-latest#az-signalr-key-renew).
+Вы также можете повторно создать ключи с помощью [Azure CLI](/cli/azure/signalr/key#az-signalr-key-renew).
 
 ## <a name="update-configurations-with-new-connection-strings"></a>Обновление конфигураций с помощью новых строк подключения
 
@@ -59,4 +59,4 @@ ms.locfileid: "67565729"
 > [Учебник по аутентификации службы Azure SignalR](./signalr-concept-authenticate-oauth.md)
 
 > [!div class="nextstepaction"]
-> [Создание бессерверного приложения в реальном времени с аутентификацией](./signalr-tutorial-authenticate-azure-functions.md)
+> [Создание бессерверного приложения в режиме реального времени с проверкой подлинности](./signalr-tutorial-authenticate-azure-functions.md)

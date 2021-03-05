@@ -8,19 +8,19 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 04/01/2020
 ms.author: aahi
-ms.openlocfilehash: 66413f1a290cc9ced0927b2f023445c9f43c4402
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 28bf55f1289929c059e3f16d70b880d2e4245593
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96009656"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102194041"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Используйте подписку Azure. Если у вас нет подписки Azure, перед началом работы [создайте бесплатную учетную запись][free-account].
+* Используйте подписку Azure. Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись][free-account], прежде чем начинать работу.
 * Установите [Azure CLI][azure-cli] (AZ).
 * [Модуль Docker][docker-engine], для которого нужно проверить работоспособность Docker CLI в окне консоли.
 
 [free-account]: https://azure.microsoft.com/free
-[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest
+[azure-cli]: /cli/azure/install-azure-cli
 [docker-engine]: https://www.docker.com/products/docker-engine
