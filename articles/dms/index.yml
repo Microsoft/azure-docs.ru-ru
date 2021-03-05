@@ -10,12 +10,12 @@ metadata:
   ms.service: dms
   ms.topic: landing-page
   ms.custom: seo-azure-migrate
-  ms.openlocfilehash: 2703c34dc56303103c682bed740a34991a6471f6
-  ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+  ms.openlocfilehash: a154a3a6579ff3414502b16dcfe6d60748840a6c
+  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/18/2021
-  ms.locfileid: "101092161"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102183307"
 landingContent:
 - title: Сведения о Azure Database Migration Service
   linkLists:
@@ -63,8 +63,6 @@ landingContent:
       url: tutorial-sql-server-managed-instance-online.md
     - text: Миграция в Управляемый экземпляр SQL (автономный режим)
       url: tutorial-sql-server-to-managed-instance.md
-    - text: Миграция с сервера RDS SQL Server в Azure SQL
-      url: tutorial-rds-sql-server-azure-sql-and-managed-instance-online.md
   - linkListType: reference
     links:
     - text: Известные проблемы с миграцией в Базу данных SQL в режиме подключения к сети

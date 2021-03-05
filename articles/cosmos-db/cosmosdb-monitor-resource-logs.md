@@ -7,12 +7,12 @@ ms.service: cosmos-db
 ms.topic: how-to
 ms.date: 01/06/2021
 ms.author: sngun
-ms.openlocfilehash: 807c9961926b6f1c74f5ed1242e4272e87a98c43
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 1e551fc12da5e25ba54df5a6a38a49b76f7c376e
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102120374"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102181879"
 ---
 # <a name="monitor-azure-cosmos-db-data-by-using-diagnostic-settings-in-azure"></a>Мониторинг данных Azure Cosmos DB с помощью параметров диагностики в Azure
 [!INCLUDE[appliesto-all-apis](includes/appliesto-all-apis.md)]

@@ -5,12 +5,12 @@ services: container-service
 manager: gwallace
 ms.topic: article
 ms.date: 10/19/2020
-ms.openlocfilehash: c30051008474a32ae6c847ee3f840c8ae35b469b
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: c0c1bf83bf5a816debe61cab0ceab856bfbd062f
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98726818"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102181182"
 ---
 # <a name="reduce-latency-with-proximity-placement-groups"></a>Сокращение задержки с помощью групп размещения с учетом расположения
 
@@ -19,7 +19,7 @@ ms.locfileid: "98726818"
 
 При развертывании приложения в Azure распределение экземпляров виртуальной машины между регионами или зонами доступности создает задержку в сети, что может повлиять на общую производительность приложения. Группа размещения с учетом расположения — это логическая группировка, используемая для того, чтобы ресурсы вычислений Azure физически размещались близко друг к другу. Для некоторых приложений, таких как игры, инженерные моделирования и торговля с высокой частотой (ХФТ), требуется низкая задержка и задачи, которые быстро выполняются. Для сценариев высокопроизводительных вычислений (HPC) рекомендуется использовать [группы размещения](../virtual-machines/co-location.md#proximity-placement-groups) (ППГ) для пулов узлов кластера.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Для работы с этой статьей требуется Azure CLI версии 2,14 или более поздней. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0][azure-cli-install].
 
@@ -119,7 +119,7 @@ az aks nodepool add \
 az group delete --name myResourceGroup --yes --no-wait
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о [группах размещения][proximity-placement-groups]с учетом расположения.
 
@@ -136,7 +136,7 @@ az group delete --name myResourceGroup --yes --no-wait
 [proximity-placement-groups]: ../virtual-machines/co-location.md#proximity-placement-groups
 [az-aks-create]: /cli/azure/aks#az-aks-create
 [system-pool]: ./use-system-pools.md
-[az-aks-nodepool-add]: /cli/azure/aks/nodepool?view=azure-cli-latest#az-aks-nodepool-add
+[az-aks-nodepool-add]: /cli/azure/aks/nodepool#az-aks-nodepool-add
 [az-aks-create]: /cli/azure/aks#az-aks-create
 [az-group-create]: /cli/azure/group#az-group-create
 [az-group-delete]: /cli/azure/group#az-group-delete

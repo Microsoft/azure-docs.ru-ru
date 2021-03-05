@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: how-to
 ms.date: 02/04/2021
 ms.author: b-juche
-ms.openlocfilehash: 566cc3b1192d632bbffb8f9ef091f291b4bcc6e6
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: 1c20190ba1a997ef85f4023a54ecea3c2a77ae53
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99581161"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102183834"
 ---
 # <a name="manage-a-manual-qos-capacity-pool"></a>Управление пулом емкости качества обслуживания вручную
 
@@ -44,7 +44,7 @@ ms.locfileid: "99581161"
     ```azurepowershell-interactive
     Get-AzProviderFeature -ProviderNamespace Microsoft.NetApp -FeatureName ANFFlexPool
     ```
-Вы также можете использовать [Azure CLI команды](/cli/azure/feature?preserve-view=true&view=azure-cli-latest) `az feature register` , `az feature show` чтобы зарегистрировать эту функцию и отобразить состояние регистрации. 
+Вы также можете использовать [Azure CLI команды](/cli/azure/feature) `az feature register` , `az feature show` чтобы зарегистрировать эту функцию и отобразить состояние регистрации. 
 
 ## <a name="set-up-a-new-manual-qos-capacity-pool"></a>Настройка нового пула ресурсов качества обслуживания вручную 
 
@@ -85,7 +85,7 @@ ms.locfileid: "99581161"
 
     ![Изменение пропускной способности QoS](../media/azure-netapp-files/change-qos-throughput.png)
 
-## <a name="next-steps"></a>Следующие шаги  
+## <a name="next-steps"></a>Дальнейшие действия  
 
 * [Настройка пула емкости](azure-netapp-files-set-up-capacity-pool.md)
 * [Метрики для Azure NetApp Files](azure-netapp-files-metrics.md)

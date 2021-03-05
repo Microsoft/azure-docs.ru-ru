@@ -57,8 +57,12 @@
       href: how-to-cache-purge.md
     - name: Сжатие
       href: how-to-compression.md
-    - name: Включение Приватного канала для веб-приложения
-      href: how-to-enable-private-link-web-app.md
+    - name: Включение Приватного канала
+      items:
+        - name: подключение к учетной записи хранения
+          href: how-to-enable-private-link-storage-account.md
+        - name: Подключение к веб-приложению
+          href: how-to-enable-private-link-web-app.md
     - name: Ведение журнала
       href: how-to-logs.md
     - name: Мониторинг и оповещения

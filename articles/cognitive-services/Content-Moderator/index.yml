@@ -11,12 +11,12 @@ metadata:
   author: PatrickFarley
   ms.author: pafarley
   ms.date: 10/24/2019
-  ms.openlocfilehash: cc985f910120c814cd4eedb8275100d6831335f5
-  ms.sourcegitcommit: 80c1056113a9d65b6db69c06ca79fa531b9e3a00
+  ms.openlocfilehash: 5ec7483d29b8e438fd52fa20ebd9ef12614f0298
+  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/09/2020
-  ms.locfileid: "96905236"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102183291"
 landingContent:
 - title: Сведения о Content Moderator
   linkLists:
@@ -147,7 +147,7 @@ landingContent:
     - text: Azure PowerShell
       url: /powershell/module/az.cognitiveservices/#cognitive_services
     - text: Интерфейс командной строки Azure (CLI)
-      url: /cli/azure/cognitiveservices?view=azure-cli-latest
+      url: /cli/azure/cognitiveservices
 - title: Справка и обратная связь
   linkLists:
   - linkListType: reference

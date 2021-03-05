@@ -9,12 +9,12 @@ author: GithubMirek
 ms.author: mireks
 ms.reviewer: vanto
 ms.date: 02/11/2021
-ms.openlocfilehash: 4012cd83cf2e6fe438792a503731729b57a1425c
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 15cc935457f76fb1d2fe4e8d699db831ebacc357
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100380599"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102181760"
 ---
 # <a name="azure-active-directory-service-principal-with-azure-sql"></a>Субъект-служба Azure Active Directory с SQL Azure
 
@@ -72,7 +72,7 @@ ms.locfileid: "100380599"
     - Чтобы проверить, назначено ли удостоверение сервера серверу, выполните команду Get-AzSqlServer.
 
     > [!NOTE]
-    > Удостоверение сервера можно также назначить с помощью команд интерфейса командной строки. Дополнительные сведения см. в разделе [AZ SQL Server Create](/cli/azure/sql/server?view=azure-cli-latest#az-sql-server-create&preserve-view=true) и [AZ SQL Server Update](/cli/azure/sql/server?view=azure-cli-latest#az-sql-server-update&preserve-view=true).
+    > Удостоверение сервера можно также назначить с помощью команд интерфейса командной строки. Дополнительные сведения см. в разделе [AZ SQL Server Create](/cli/azure/sql/server#az-sql-server-create) и [AZ SQL Server Update](/cli/azure/sql/server#az-sql-server-update).
 
 2. Предоставьте службе " [**читатели каталога**](../../active-directory/roles/permissions-reference.md#directory-readers) Azure AD" разрешение на доступ к удостоверению сервера, созданному или назначенному серверу.
     - Чтобы предоставить это разрешение, следуйте описанию, используемому для SQL Управляемый экземпляр, которое доступно в следующей статье: [предоставление администратора Azure AD (SQL управляемый экземпляр)](authentication-aad-configure.md?tabs=azure-powershell#provision-azure-ad-admin-sql-managed-instance)
@@ -94,13 +94,13 @@ ms.locfileid: "100380599"
       - В описанной выше ошибке выполните действия, чтобы [назначить удостоверение логическому серверу SQL Azure](authentication-aad-service-principal-tutorial.md#assign-an-identity-to-the-azure-sql-logical-server) и [назначить ему разрешение на чтение каталога для удостоверения логического сервера SQL](authentication-aad-service-principal-tutorial.md#assign-directory-readers-permission-to-the-sql-logical-server-identity).
     > [!NOTE]
     > Приведенные выше сообщения об ошибках будут изменены до общедоступной версии функции, чтобы ясно определить требования недостающей настройки для поддержки приложений Azure AD.
-- Настройка приложения Azure AD в качестве администратора Azure AD для Управляемый экземпляр SQL поддерживается только с помощью команды CLI, а команда PowerShell — с помощью команды [AZ. SQL 2.9.0](https://www.powershellgallery.com/packages/Az.Sql/2.9.0) или более поздней версии. Дополнительные сведения см. в разделе команды [AZ SQL MI AD-Admin Create](/cli/azure/sql/mi/ad-admin?view=azure-cli-latest&preserve-view=true#az-sql-mi-ad-admin-create) и [Set-азсклинстанцеактиведиректорядминистратор](/powershell/module/az.sql/set-azsqlinstanceactivedirectoryadministrator) . 
+- Настройка приложения Azure AD в качестве администратора Azure AD для Управляемый экземпляр SQL поддерживается только с помощью команды CLI, а команда PowerShell — с помощью команды [AZ. SQL 2.9.0](https://www.powershellgallery.com/packages/Az.Sql/2.9.0) или более поздней версии. Дополнительные сведения см. в разделе команды [AZ SQL MI AD-Admin Create](/cli/azure/sql/mi/ad-admin#az-sql-mi-ad-admin-create) и [Set-азсклинстанцеактиведиректорядминистратор](/powershell/module/az.sql/set-azsqlinstanceactivedirectoryadministrator) . 
     - Если вы хотите использовать портал Azure для SQL Управляемый экземпляр, чтобы задать администратора Azure AD, можно решить эту проблему, создав группу Azure AD. Затем добавьте субъект-службу (приложение Azure AD) в эту группу и задайте эту группу в качестве администратора Azure AD для Управляемый экземпляр SQL.
     - Настройка субъекта-службы (приложения Azure AD) в качестве администратора Azure AD для базы данных SQL и Azure синапсе поддерживается с помощью команд портал Azure, [PowerShell](authentication-aad-configure.md?tabs=azure-powershell#powershell-for-sql-database-and-azure-synapse)и [CLI](authentication-aad-configure.md?tabs=azure-cli#powershell-for-sql-database-and-azure-synapse) .
 - Использование приложения Azure AD с субъектом-службой из другого клиента Azure AD завершится ошибкой при доступе к базе данных SQL или Управляемый экземпляр SQL, созданной в другом клиенте. Субъект-служба, назначенный этому приложению, должен принадлежать тому же клиенту, что и логический сервер SQL или Управляемый экземпляр.
 - Для настройки отдельного приложения Azure AD в качестве администратора Azure AD для SQL Azure с помощью PowerShell необходим модуль [Az.Sql 2.9.0](https://www.powershellgallery.com/packages/Az.Sql/2.9.0) или более поздней версии. Убедитесь, что используется последняя версия модуля.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Руководство по созданию пользователей Azure AD с помощью приложений Azure AD](authentication-aad-service-principal-tutorial.md)

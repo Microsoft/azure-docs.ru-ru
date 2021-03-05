@@ -3,12 +3,12 @@ title: Изменение параметров кластера Azure Service Fa
 description: В этой статье описываются параметры структуры и политики обновления структур, которые можно настраивать.
 ms.topic: reference
 ms.date: 08/30/2019
-ms.openlocfilehash: 34a63a86bc10a787ef077b9067c3fba5a9e4da25
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.openlocfilehash: fed66c1a1908977fbe9769c1aec77945bc38c3dc
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98919788"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102183409"
 ---
 # <a name="customize-service-fabric-cluster-settings"></a>Настройка параметров кластера Service Fabric
 В этой статье описываются различные параметры структуры для кластера Service Fabric, которые вы можете настроить. Для кластеров, размещенных в Azure, можно настроить параметры на [портале Azure](https://portal.azure.com) или использовать шаблон Azure Resource Manager. Дополнительные сведения см. в статье об [обновлении конфигурации кластера в Azure](service-fabric-cluster-config-upgrade-azure.md). Чтобы настроить параметры для автономных кластеров, обновите файл *ClusterConfig.json* и обновите конфигурацию в своем кластере. Дополнительные сведения см. в статье об [обновлении конфигурации автономного кластера](service-fabric-cluster-config-upgrade-windows-server.md).
@@ -130,7 +130,7 @@ ms.locfileid: "98919788"
 |EnableTelemetry |Логическое значение, по умолчанию — true | Динамический |Включает или отключает телеметрию. |
 |FailuresOnlyHttpTelemetry | Логическое значение, по умолчанию — false | Динамический | Если включено отслеживание телеметрии HTTP; записываются только неудачные запросы. Это позволит сократить количество событий, создаваемых для телеметрии. |
 |HttpTelemetryCapturePercentage | Целое число, значение по умолчанию — 50 | Динамический | Если включено отслеживание телеметрии HTTP; записывается только случайный процент запросов. Это позволит сократить количество событий, создаваемых для телеметрии. |
-|MaxDiskQuotaInMB |Целое число, по умолчанию — 65536 | Динамический |Квота диска (в МБ) для файлов журнала Windows Fabric. |
+|MaxDiskQuotaInMB |Целое число, по умолчанию — 65536 | Динамический |Квота диска (в МБ) для файлов журнала структуры Windows и Linux. |
 |ProducerInstances |Строка | Динамический |Список экземпляров производителя приложения для устройства. |
 
 ## <a name="dnsservice"></a>DnsService

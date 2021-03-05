@@ -12,12 +12,12 @@ metadata:
   manager: nitinme
   ms.custom: custom-portals-hub
   ms.date: 08/28/2020
-  ms.openlocfilehash: ad77a891f85c2bff7bba3c165cbafdf80403fc47
-  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.openlocfilehash: 2d2fe422b9b19e69e2f4e919041e6d50e0616308
+  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/03/2021
-  ms.locfileid: "101699969"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102182746"
 highlightedContent:
   items:
   - title: Что такое Cognitive Services?
@@ -185,6 +185,6 @@ additionalContent:
     - title: Инструменты
       links:
       - text: Azure CLI
-        url: /cli/azure/cognitiveservices?view=azure-cli-latest
+        url: /cli/azure/cognitiveservices
       - text: PowerShell
         url: /powershell/module/az.cognitiveservices/?view=azps-2.5.0#cognitive_services

@@ -3,14 +3,14 @@ title: Развертывание гибридной рабочей роли Run
 description: В этой статье рассказывается, как установить гибридную рабочую роль Runbook службы автоматизации Azure для запуска модулей Runbook на компьютерах под управлением Linux в локальном центре обработки данных или в облачной среде.
 services: automation
 ms.subservice: process-automation
-ms.date: 02/18/2021
+ms.date: 02/26/2021
 ms.topic: conceptual
-ms.openlocfilehash: 543ae640871699c7e1fffda46463752483ff6a4e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: d4d9bcd16e36e76808f19f7fbd43dd0d3e7550c3
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101708923"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102182338"
 ---
 # <a name="deploy-a-linux-hybrid-runbook-worker"></a>Развертывание гибридной рабочей роли Runbook для Linux
 
@@ -48,7 +48,7 @@ ms.locfileid: "101708923"
 * Red Hat Enterprise Linux Server 5, 6, 7 и 8
 * Debian GNU/Linux 6, 7 и 8;
 * Ubuntu 12,04 LTS, 14,04 LTS, 16,04 LTS и 18,04 LTS
-* SUSE Linux Enterprise Server 12 и 15
+* SUSE Linux Enterprise Server 12 и 15 (SUSE не выпускает версии 13 или 14)
 
 > [!IMPORTANT]
 > Перед включением функции Управление обновлениями, которая зависит от роли Гибридная Рабочая роль Runbook системы, подтвердите дистрибутивы, которые [она поддерживает.](update-management/overview.md#supported-operating-systems)
@@ -66,7 +66,7 @@ ms.locfileid: "101708923"
 |Glibc |Библиотека C GNU| 2.5-12 |
 |Openssl| Библиотеки OpenSSL | 1.0 (поддерживается TLS 1.1 и TLS 1.2)|
 |Curl | Веб-клиент cURL | 7.15.5|
-|Python-ctypes | Требуется компонент Python 2.x |
+|Python-ctypes | Требуется Python 2. x или Python 3. x |
 |PAM | Подключаемые модули аутентификации|
 | **Дополнительный пакет** | **Описание** | **Минимальная версия**|
 | PowerShell Core | Для запуска модулей Runbook PowerShell необходимо установить PowerShell Core. Подробные сведения об установке см. в статье [Установка PowerShell Core в Linux](/powershell/scripting/install/installing-powershell-core-on-linux). | 6.0.0 |
@@ -90,13 +90,16 @@ ms.locfileid: "101708923"
 
 |Тип Runbook | Поддерживается |
 |-------------|-----------|
-|Python 2; |Да |
-|PowerShell |Да<sup>1</sup> |
+|Python 3 (Предварительная версия)|Да, требуется только для этих дистрибутивов: SUSE LES 15, RHEL 8 и CentOS 8|
+|Python 2; |Да, для любых дистрибутив, не требующих Python 3<sup>1</sup> |
+|PowerShell |Да<sup>2</sup> |
 |Рабочий процесс PowerShell |Нет |
 |Графический |Нет |
 |графический модуль рабочего процесса PowerShell. |Нет |
 
-<sup>1</sup> Для модулей Runbook PowerShell необходимо установить PowerShell Core на компьютере Linux. Подробные сведения об установке см. в статье [Установка PowerShell Core в Linux](/powershell/scripting/install/installing-powershell-core-on-linux).
+<sup>1</sup> См. раздел [Поддерживаемые операционные системы Linux](#supported-linux-operating-systems).
+
+<sup>2</sup> Для модулей Runbook PowerShell необходимо установить PowerShell Core на компьютере Linux. Подробные сведения об установке см. в статье [Установка PowerShell Core в Linux](/powershell/scripting/install/installing-powershell-core-on-linux).
 
 ### <a name="network-configuration"></a>Сетевая конфигурация
 

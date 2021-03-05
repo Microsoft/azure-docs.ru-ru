@@ -8,16 +8,16 @@ ms.subservice: operations
 ms.custom: ''
 ms.devlang: ''
 ms.topic: conceptual
-author: shkale-msft
+author: shkale
 ms.author: shkale
 ms.reviewer: mathoma, sstein
 ms.date: 02/25/2021
-ms.openlocfilehash: 5879cc32f8dd5b8643f8c091f329dd430481245b
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: b1ba3f98f39511bcebf94502ed749d7cba1fc71b
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102122975"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102184055"
 ---
 # <a name="long-term-retention---azure-sql-database-and-azure-sql-managed-instance"></a>Долгосрочное хранение — база данных SQL Azure и Azure SQL Управляемый экземпляр
 

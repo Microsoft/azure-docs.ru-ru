@@ -11,12 +11,12 @@ metadata:
   author: PatrickFarley
   ms.author: pafarley
   ms.date: 09/22/2020
-  ms.openlocfilehash: de1668d62b283185c08e5c839da0ec8a815e5c99
-  ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+  ms.openlocfilehash: 4f93df526275e55524a9a4b67462e47eaa1a73d0
+  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/17/2021
-  ms.locfileid: "100634606"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102182015"
 landingContent:
 - title: Сведения о Компьютерном зрении
   linkLists:
@@ -183,7 +183,7 @@ landingContent:
     - text: Azure PowerShell
       url: /powershell/module/az.cognitiveservices/#cognitive_services
     - text: Интерфейс командной строки Azure (CLI)
-      url: /cli/azure/cognitiveservices?view=azure-cli-latest#az-cognitiveservices-list
+      url: /cli/azure/cognitiveservices#az-cognitiveservices-list
 - title: Справка и обратная связь
   linkLists:
   - linkListType: reference

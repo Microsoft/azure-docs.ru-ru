@@ -1,18 +1,16 @@
 ---
 title: Создание словаря ошибок кластера Azure HDInsight
 description: Узнайте, как устранять ошибки, возникающие при создании кластеров Azure HDInsight.
-author: karkrish
-ms.author: v-todmc
 ms.service: hdinsight
 ms.topic: troubleshooting
 ms.custom: hdinsightactive,hdiseo17may2017
 ms.date: 08/24/2020
-ms.openlocfilehash: 6b8c0069d619d3ebd87e3c54b4f653812199f590
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 469adf1c0e5108f7a8c89a7c3a4bebba5d42b431
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98943329"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102183970"
 ---
 # <a name="azure-hdinsight-cluster-creation-errors"></a>Azure HDInsight: ошибки создания кластера
 
@@ -158,7 +156,7 @@ ms.locfileid: "98943329"
 
 ### <a name="resolution"></a>Решение
 
-1. Откройте портал Azure.
+1. Перейдите на портал Azure.
 1. Войдите в свою учетную запись хранения.
 1. Просмотрите раздел **Управление доступом (IAM)**.
 1. Убедитесь, что пользователь имеет роль участника данных BLOB-объекта хранилища или назначенную ему роль владельца данных BLOB-объекта хранилища.

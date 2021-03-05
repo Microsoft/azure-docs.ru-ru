@@ -5,12 +5,12 @@ services: container-service
 manager: gwallace
 ms.topic: article
 ms.date: 01/08/2021
-ms.openlocfilehash: 0d61cccb6b70091194d407eda056060d1fa3623c
-ms.sourcegitcommit: d1e56036f3ecb79bfbdb2d6a84e6932ee6a0830e
+ms.openlocfilehash: fd599c69b3072831461acc94827d97c4520292e9
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99053896"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102182457"
 ---
 # <a name="authenticate-with-azure-container-registry-from-azure-kubernetes-service"></a>Аутентификация с помощью реестра контейнеров Azure из Службы Azure Kubernetes
 
@@ -21,7 +21,7 @@ ms.locfileid: "99053896"
 > [!NOTE]
 > В этой статье описывается автоматическая проверка подлинности между AKS и записью контроля доступа. Если необходимо извлечь образ из закрытого внешнего реестра, используйте [секрет для извлечения образа][Image Pull Secret].
 
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="before-you-begin"></a>Перед началом
 
 Для этих примеров требуются:
 
@@ -78,7 +78,7 @@ az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-resource-id>
 az aks update -n myAKSCluster -g myResourceGroup --detach-acr <acr-name>
 ```
 
-или
+or
 
 ```azurecli
 az aks update -n myAKSCluster -g myResourceGroup --detach-acr <acr-resource-id>
@@ -155,5 +155,5 @@ nginx0-deployment-669dfc4d4b-xdpd6   1/1     Running   0          20s
 * Дополнительные сведения о [работоспособности записей контроля](../container-registry/container-registry-check-health.md) доступа
 
 <!-- LINKS - external -->
-[AKS AKS CLI]: /cli/azure/aks?view=azure-cli-latest#az-aks-create
+[AKS AKS CLI]: /cli/azure/aks#az-aks-create
 [Image Pull secret]: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/

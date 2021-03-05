@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 12/10/2020
 ms.author: makromer
 ms.reviewer: jrasnick
-ms.openlocfilehash: 8818d4db489cef8203ae515c18c61e215d577033
-ms.sourcegitcommit: ea17e3a6219f0f01330cf7610e54f033a394b459
+ms.openlocfilehash: 9cd3fc9353c684ec6617761616b958477ca83ee3
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97387621"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102183647"
 ---
 # <a name="data-integration-in-azure-synapse-analytics-versus-azure-data-factory"></a>Интеграция данных в Azure синапсе Analytics и фабрика данных Azure
 
@@ -24,7 +24,7 @@ ms.locfileid: "97387621"
 
 Ниже приведена таблица со сведениями о доступности функций.
 
-| Категория                 | Признак    |  Фабрика данных Azure  | Azure Synapse Analytics |
+| Категория                 | Компонент    |  Фабрика данных Azure  | Azure Synapse Analytics |
 | ------------------------ | ---------- | :------------------: | :---------------------: |
 | **Integration Runtime**  | Использование служб SSIS и служб SSIS Integration Runtime | ✓ | ✗ |
 |                          | Поддержка Integration Runtime в разных регионах (потоки данных) | ✓ | ✗ |
@@ -36,6 +36,7 @@ ms.locfileid: "97387621"
 | **Интеграция репозитория GIT** | Интеграция с GIT | ✓ | ✓ |
 | **Мониторинг**           | Мониторинг заданий Spark для потока данных | ✗ | ✓<br><small>*Использование пулов синапсе Spark* |
 |                          | Интеграция с Azure Monitor | ✓ | ✗ |
+| **Журнал преобразований** | Поддерживает публикацию данных журнала преобразований конвейера в зрения  | ✓ | ✗ |  
 
 > [!Note]
 > **Срок жизни** — это параметр Azure Integration Runtime, который позволяет кластеру Spark *оставаться тепло* в течение определенного периода времени после выполнения потока данных.

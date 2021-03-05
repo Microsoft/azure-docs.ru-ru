@@ -9,12 +9,12 @@ metadata:
   ms.service: azure-app-configuration
   ms.topic: landing-page
   ms.date: 02/03/2020
-  ms.openlocfilehash: 917508f1fee4e4a53083a29e2459a442f7fddccd
-  ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+  ms.openlocfilehash: e994dbb9932dd661486fa37511db79178be826ca
+  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/18/2021
-  ms.locfileid: "100650241"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102182219"
 landingContent:
 - title: Сведения о службе "Конфигурация приложений Azure"
   linkLists:
@@ -139,7 +139,7 @@ landingContent:
   - linkListType: reference
     links:
     - text: Azure CLI
-      url: /cli/azure/appconfig?view=azure-cli-latest
+      url: /cli/azure/appconfig
     - text: PowerShell
       url: /powershell/module/az.appconfiguration/
     - text: Terraform

@@ -8,12 +8,12 @@ ms.service: web-application-firewall
 ms.date: 12/04/2020
 ms.author: victorh
 ms.topic: conceptual
-ms.openlocfilehash: 48d4fe254f51dde932f04ef791e1109a0ced07ff
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: fb7d49459b4eae8c3c7b3b1e6ad5bc5d44a089d3
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101701626"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102183358"
 ---
 # <a name="what-is-azure-web-application-firewall-on-azure-application-gateway"></a>Что такое брандмауэр веб-приложения Azure в Шлюзе приложений Azure?
 
@@ -173,7 +173,7 @@ Microsoft Azure Sentinel — это масштабируемое ориенти
 
 #### <a name="azure-monitor-workbook-for-waf"></a>Книга Azure Monitor для WAF
 
-Эта книга включает пользовательскую визуализацию событий WAF, связанных с безопасностью, на нескольких фильтруемых панелях. Она работает со всеми типами WAF, включая Шлюз приложений, Front Door и CDN, и поддерживает фильтрацию на основе типа WAF или конкретного экземпляра WAF. Импорт с помощью шаблона ARM или шаблона коллекции. См. сведения о развертывании [книги WAF](https://github.com/Azure/Azure-Network-Security/tree/master/Azure%20Firewall/Workbook%20-%20Azure%20Firewall%20Monitor%20Workbook).
+Эта книга включает пользовательскую визуализацию событий WAF, связанных с безопасностью, на нескольких фильтруемых панелях. Она работает со всеми типами WAF, включая Шлюз приложений, Front Door и CDN, и поддерживает фильтрацию на основе типа WAF или конкретного экземпляра WAF. Импорт с помощью шаблона ARM или шаблона коллекции. См. сведения о развертывании [книги WAF](https://aka.ms/AzWAFworkbook).
 
 #### <a name="logging"></a>Logging
 

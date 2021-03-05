@@ -6,12 +6,12 @@ ms.service: virtual-machines-linux
 ms.topic: how-to
 ms.date: 07/31/2020
 ms.author: cynthn
-ms.openlocfilehash: 7a7831a26d55e5c85b814efc6de78238678820ec
-ms.sourcegitcommit: 2bd0a039be8126c969a795cea3b60ce8e4ce64fc
+ms.openlocfilehash: 39db1aec06c16a2d44c93bea7785931f8de8ca9e
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98203275"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102182474"
 ---
 # <a name="detailed-steps-create-and-manage-ssh-keys-for-authentication-to-a-linux-vm-in-azure"></a>Подробные инструкции. Создание ключей SSH для аутентификации на виртуальной машине Linux в Azure и управление этими ключами
 
@@ -77,7 +77,7 @@ ssh-keygen \
 ### <a name="example-of-ssh-keygen"></a>Пример с ssh-keygen
 
 ```bash
-ssh-keygen -t -m PEM rsa -b 4096 -C "azureuser@myserver"
+ssh-keygen -t rsa -m PEM -b 4096 -C "azureuser@myserver"
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/azureuser/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase):

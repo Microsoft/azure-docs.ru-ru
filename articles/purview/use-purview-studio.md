@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: conceptual
 ms.date: 11/12/2020
-ms.openlocfilehash: d8e6c4b2addf9745b2ddabe8f6fdad9d82dce59f
-ms.sourcegitcommit: 2ba6303e1ac24287762caea9cd1603848331dd7a
+ms.openlocfilehash: ca25bbb72ff853f819f3e8ce4e0092ddb762b156
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97503956"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102183817"
 ---
 # <a name="use-purview-studio"></a>Использование Purview Studio
 
@@ -26,7 +26,7 @@ ms.locfileid: "97503956"
 
 * Чтобы запустить учетную запись зрения, перейдите на страницу учетные записи зрения в портал Azure, выберите учетную запись, которую требуется запустить, и запустите учетную запись.
 
-   :::image type="content" source="./media/use-purview-studio/launch-from-portal.png" alt-text="Снимок экрана выбора для запуска каталога учетных записей Azure зрения.":::
+   :::image type="content" source="./media/use-purview-studio/launch-from-portal.png" alt-text="Снимок экрана: открытие каталога учетных записей Azure Purview":::
 
 * Другой способ запуска учетной записи зрения — перейти в `https://web.purview.azure.com` , выбрать **Azure Active Directory** и имя учетной записи для запуска учетной записи.
 
@@ -38,7 +38,7 @@ ms.locfileid: "97503956"
 
 В следующем списке перечислены основные возможности **домашней страницы**. Каждое число в списке соответствует выделенному номеру на предыдущем снимке экрана.
 
-1. Понятное имя каталога. Вы можете задать имя каталога в **центре управления** > **сведения об учетной записи*.
+1. Понятное имя каталога. Вы можете задать имя каталога в   >  **сведениях учетной записи** центра управления.
 
 2. Аналитика каталога показывает число:
     - Пользователи, группы и приложения

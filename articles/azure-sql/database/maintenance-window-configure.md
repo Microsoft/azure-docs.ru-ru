@@ -9,12 +9,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 03/04/2021
-ms.openlocfilehash: f5692f2bcaaadfc56084ec8db745eae48112ecf3
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 210f0c52a2b27492bfa2181473043df3537157d2
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102101245"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102183205"
 ---
 # <a name="configure-maintenance-window-preview"></a>Настройка периода обслуживания (Предварительная версия)
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -178,7 +178,7 @@ Azure Cloud Shell — это бесплатная интерактивная о�
 
 ### <a name="discover-sql-database-and-elastic-pool-maintenance-windows"></a>Обнаружение окон базы данных SQL и обслуживания эластичных пулов
 
-В следующем примере возвращаются доступные периоды обслуживания для региона *eastus2* с помощью команды [AZ Maintenance Public-Configuration List](/cli/azure/ext/maintenance/maintenance/public-configuration?view=azure-cli-latest&preserve-view=true#ext_maintenance_az_maintenance_public_configuration_list) . Для баз данных и эластичных пулов задайте значение `maintenanceScope` `SQLDB` .
+В следующем примере возвращаются доступные периоды обслуживания для региона *eastus2* с помощью команды [AZ Maintenance Public-Configuration List](/cli/azure/ext/maintenance/maintenance/public-configuration#ext_maintenance_az_maintenance_public_configuration_list) . Для баз данных и эластичных пулов задайте значение `maintenanceScope` `SQLDB` .
 
    ```azurecli
    location="eastus2"
@@ -188,7 +188,7 @@ Azure Cloud Shell — это бесплатная интерактивная о�
 
 ### <a name="discover-sql-managed-instance-maintenance-windows"></a>Обнаружение окон обслуживания Управляемый экземпляр SQL
 
-В следующем примере возвращаются доступные периоды обслуживания для региона *eastus2* с помощью команды [AZ Maintenance Public-Configuration List](/cli/azure/ext/maintenance/maintenance/public-configuration?view=azure-cli-latest&preserve-view=true#ext_maintenance_az_maintenance_public_configuration_list) . Для управляемых экземпляров задайте `maintenanceScope` для значение `SQLManagedInstance` .
+В следующем примере возвращаются доступные периоды обслуживания для региона *eastus2* с помощью команды [AZ Maintenance Public-Configuration List](/cli/azure/ext/maintenance/maintenance/public-configuration#ext_maintenance_az_maintenance_public_configuration_list) . Для управляемых экземпляров задайте `maintenanceScope` для значение `SQLManagedInstance` .
 
    ```azurecli
    az maintenance public-configuration list --query "[?location=='eastus2'&&contains(maintenanceScope,'SQLManagedInstance')]"

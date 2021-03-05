@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 10/20/2020
 ms.author: duau
-ms.openlocfilehash: 06ad8bf169e2b4b44f4f6a8ec5155aa6722a038c
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: ba859a0ad8edacfa2e51486b150f94b3dea37a16
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102124063"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102182899"
 ---
 # <a name="frequently-asked-questions-for-azure-front-door"></a>Часто задаваемые вопросы о передней дверце Azure
 
@@ -86,6 +86,8 @@ ms.locfileid: "102124063"
 Маршруты для передней дверцы не упорядочиваются, и выбирается конкретный маршрут на основе лучшего соответствия. Узнайте больше о [том, как передняя дверца сопоставляет запросы с правилом маршрутизации](front-door-route-matching.md).
 
 ### <a name="how-do-i-lock-down-the-access-to-my-backend-to-only-azure-front-door"></a>Разделы справки заблокировать доступ к моему серверу только к передней дверце Azure?
+
+> [! Примечание. новый номер SKU Передняя дверца Premium предоставляет более предпочтительный способ блокировки приложения с помощью частной конечной точки. [Дополнительные сведения о частной конечной точке](./standard-premium/concept-private-link.md)
 
 Чтобы заблокировать приложение для приема трафика только от конкретной передней дверцы, необходимо настроить списки ACL IP-адресов для серверной части, а затем ограничить трафик в серверной части на определенное значение заголовка "X-Azure-ФДИД", отправленного с передней дверцы. Эти действия описаны ниже.
 

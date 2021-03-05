@@ -6,13 +6,13 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
 author: vamahtan
 ms.author: vamahtan
-ms.date: 12/07/2020
-ms.openlocfilehash: 445810d5873bb935ded180a969e4612542bde5ed
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.date: 3/04/2021
+ms.openlocfilehash: 92702f38b6143c5dac2111c57fadeba7d9142992
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102120187"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102181063"
 ---
 # <a name="migration-of-co-sell-solutions-from-ocp-gtm-to-the-commercial-marketplace"></a>Перенос решений для совместной продажи из OCP GTM в коммерческий рынок
 
@@ -136,7 +136,7 @@ ms.locfileid: "102120187"
 
     :::image type="content" source="media/co-sell-migrate/offer-setup.png" alt-text="В центре партнеров доступны вкладки Обзор установки предложения.":::
 
-3. Некоторые сведения о продавцах Майкрософт были скопированы из решения OCP GTM. Заполните остальные требуемые сведения на вкладке **Совместная продажа с Майкрософт** , чтобы обеспечить готовность предложения к совместной продаже. По завершении выберите **проверить и опубликовать**. Дополнительные сведения см. [в статье отправка материалов для совместной продажи в центре партнеров](marketplace-co-sell.md).
+3. Некоторые сведения о продавцах Майкрософт были скопированы из решения OCP GTM. Заполните остальные требуемые сведения на вкладке **Совместная продажа с Майкрософт** , чтобы обеспечить готовность предложения к совместной продаже. По завершении выберите **проверить и опубликовать**. Дополнительные сведения см. [в статье Настройка совместной продажи для предложения коммерческого рынка](commercial-marketplace-co-sell.md).
 
     :::image type="content" source="media/co-sell-migrate/co-sell-page.png" alt-text="Вкладка предложение совместной продажи в центре партнеров.":::
 
@@ -154,5 +154,5 @@ ms.locfileid: "102120187"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Перепродажа через партнеров CSP](cloud-solution-providers.md)
-- [Как отправлять материалы для совместной продажи в центре партнеров](marketplace-co-sell.md)
+- [Настройка совместной продажи для коммерческого предложения Marketplace](commercial-marketplace-co-sell.md)
 - Просмотреть эти [вопросы и ответы](https://partner.microsoft.com/resources/detail/co-sell-requirements-publish-commercial-marketplace-faq-pdf) (PDF)

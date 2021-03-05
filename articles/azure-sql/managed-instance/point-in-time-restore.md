@@ -12,12 +12,12 @@ author: jovanpop-msft
 ms.author: jovanpop
 ms.reviewer: sstein, mathoma
 ms.date: 08/25/2019
-ms.openlocfilehash: d3414cb31192211c1663a84e1541f56b63674660
-ms.sourcegitcommit: ea822acf5b7141d26a3776d7ed59630bf7ac9532
+ms.openlocfilehash: 0a56cfc147d4fb5cbdccf13363ad28bc602d8216
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99525404"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102182763"
 ---
 # <a name="restore-a-database-in-azure-sql-managed-instance-to-a-previous-point-in-time"></a>Восстановление базы данных в Azure SQL Управляемый экземпляр до предыдущей точки во времени
 [!INCLUDE[appliesto-sqlmi](../includes/appliesto-sqlmi.md)]
@@ -110,7 +110,7 @@ Restore-AzSqlInstanceDatabase -FromPointInTimeBackup `
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-Если вы еще не установили Azure CLI, обратитесь к разделу [Установка Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest).
+Если вы еще не установили Azure CLI, обратитесь к разделу [Установка Azure CLI](/cli/azure/install-azure-cli).
 
 Чтобы восстановить базу данных с Azure CLI, укажите значения параметров в следующей команде. Затем выполните команду:
 
@@ -128,7 +128,7 @@ az sql midb restore -g mygroupname --mi myinstancename -n mymanageddbname |
        --dest-mi mytargetinstancename
 ```
 
-Подробное описание доступных параметров см. в [документации CLI по восстановлению базы данных в управляемый экземпляр SQL](/cli/azure/sql/midb?view=azure-cli-latest#az-sql-midb-restore).
+Подробное описание доступных параметров см. в [документации CLI по восстановлению базы данных в управляемый экземпляр SQL](/cli/azure/sql/midb#az-sql-midb-restore).
 
 ---
 
