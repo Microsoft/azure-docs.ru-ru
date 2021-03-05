@@ -13,12 +13,12 @@ ms.tgt_pltfrm: vm-windows-sql-server
 ms.workload: iaas-sql-server
 ms.date: 06/02/2020
 ms.author: mathoma
-ms.openlocfilehash: 5a2540aeb36cfcb2048ec994bbb486badc8a68d1
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.openlocfilehash: 4ab4e40e1dd4bbaf9ae73ab545285f5ae6261e27
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97358815"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102201776"
 ---
 # <a name="cluster-configuration-best-practices-sql-server-on-azure-vms"></a>Рекомендации по настройке кластера (SQL Server на виртуальных машинах Azure)
 [!INCLUDE[appliesto-sqlvm](../../includes/appliesto-sqlvm.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "97358815"
 В следующей таблице перечислены параметры кворума, доступные в заказе, рекомендуемом для использования с виртуальной машиной Azure. предпочтительнее использовать диск-свидетель. 
 
 
-||[Диск-свидетель](/windows-server/failover-clustering/manage-cluster-quorum#configure-the-cluster-quorum)  |[Облако-свидетель](/windows-server/failover-clustering/deploy-cloud-witness)  |[Файловый ресурс-свидетель](/windows-server/failover-clustering/manage-cluster-quorum#configure-the-cluster-quorum)  |
+||[Диск-свидетель](/windows-server/failover-clustering/manage-cluster-quorum#configure-the-cluster-quorum)  |[Облачный следящий сервер](/windows-server/failover-clustering/deploy-cloud-witness)  |[Файловый ресурс-свидетель](/windows-server/failover-clustering/manage-cluster-quorum#configure-the-cluster-quorum)  |
 |---------|---------|---------|---------|
 |**Поддерживаемая ОС**| Все |Windows Server 2016+| Все|
 
@@ -76,9 +76,7 @@ ms.locfileid: "97358815"
 
 ### <a name="file-share-witness"></a>Файловый ресурс-свидетель
 
-Файловый ресурс-свидетель — это общая папка SMB, которая обычно настраивается на файловом сервере под Windows Server. Он хранит сведения о кластеризации в файле следящего сервера. log, но не сохраняет копию базы данных кластера. В Azure можно настроить [файловый ресурс Azure](../../../storage/files/storage-how-to-create-file-share.md) для использования в качестве файлового ресурса-свидетеля или использовать общую папку на отдельной виртуальной машине.
-
-Если вы собираетесь использовать файловый ресурс Azure, его можно подключить с помощью того же процесса, который используется для [подключения общей папки Premium](failover-cluster-instance-premium-file-share-manually-configure.md#mount-premium-file-share). 
+Файловый ресурс-свидетель — это общая папка SMB, которая обычно настраивается на файловом сервере под Windows Server. Он хранит сведения о кластеризации в файле следящего сервера. log, но не сохраняет копию базы данных кластера. В Azure можно настроить общую папку на отдельной виртуальной машине.
 
 Чтобы приступить к работе, см. раздел [Настройка файлового ресурса-свидетеля](/windows-server/failover-clustering/manage-cluster-quorum#configure-the-cluster-quorum).
 

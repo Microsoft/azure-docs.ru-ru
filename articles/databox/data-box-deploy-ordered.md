@@ -8,12 +8,12 @@ ms.subservice: pod
 ms.topic: tutorial
 ms.date: 01/13/2021
 ms.author: alkohli
-ms.openlocfilehash: 26e8f08d4b901a9ea57da826d9441d23508c4a4c
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.openlocfilehash: f2bad214045710fe861040514beb3c536664d684
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98797617"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102201895"
 ---
 # <a name="tutorial-order-azure-data-box"></a>Руководство по Заказ Azure Data Box
 
@@ -437,7 +437,7 @@ PS C:\Windows\System32>
    |query| Строка запроса JMESPath. Дополнительные сведения см. в [документации по JMESPath](http://jmespath.org/). | --query <string>|
    |verbose| Включение подробного ведения журнала. | --verbose |
 
-2. В выбранном сеансе командной строки или терминале введите [az data box job create](/cli/azure/ext/databox/databox/job?view=azure-cli-latest#ext-databox-az-databox-job-create&preserve-view=true), чтобы создать заказ на Azure Data Box.
+2. В выбранном сеансе командной строки или терминале введите [az data box job create](/cli/azure/ext/databox/databox/job#ext-databox-az-databox-job-create), чтобы создать заказ на Azure Data Box.
 
    ```azurecli
    az databox job create --resource-group <resource-group> --name <order-name> --location <azure-location> --sku <databox-device-type> --contact-name <contact-name> --phone <phone-number> --email-list <email-list> --street-address1 <street-address-1> --street-address2 <street-address-2> --city "contact-city" --state-or-province <state-province> --country <country> --postal-code <postal-code> --company-name <company-name> --storage-account "storage-account"
@@ -605,7 +605,7 @@ PS C:\Windows\System32>
 
 ### <a name="track-a-single-order"></a>Отслеживание одного заказа
 
-Чтобы получить сведения об одном уже сделанном заказе на Azure Data Box, выполните команду [`az databox job show`](/cli/azure/ext/databox/databox/job?view=azure-cli-latest#ext-databox-az-databox-job-show&preserve-view=true). Эта команда отображает различные сведения о заказе, в том числе следующие: имя, группа ресурсов, сведения для отслеживания, идентификатор подписки, контактная информация, тип доставки и ценовая категория устройства.
+Чтобы получить сведения об одном уже сделанном заказе на Azure Data Box, выполните команду [`az databox job show`](/cli/azure/ext/databox/databox/job#ext-databox-az-databox-job-show). Эта команда отображает различные сведения о заказе, в том числе следующие: имя, группа ресурсов, сведения для отслеживания, идентификатор подписки, контактная информация, тип доставки и ценовая категория устройства.
 
    ```azurecli
    az databox job show --resource-group <resource-group> --name <order-name>
@@ -646,7 +646,7 @@ PS C:\Windows\System32>
 
 ### <a name="list-all-orders"></a>Список всех заказов
 
-Если вы заказали несколько устройств, с помощью команды [`az databox job list`](/cli/azure/ext/databox/databox/job?view=azure-cli-latest#ext-databox-az-databox-job-list&preserve-view=true) можно просмотреть все заказы на Azure Data Box. Эта команда выводит список всех заказов, которые относятся к определенной группе ресурсов. В выходные данные также включаются следующие сведения: имя заказа, состояние доставки, регион Azure, тип доставки, состояние заказа. Отмененные заказы также включаются в список.
+Если вы заказали несколько устройств, с помощью команды [`az databox job list`](/cli/azure/ext/databox/databox/job#ext-databox-az-databox-job-list) можно просмотреть все заказы на Azure Data Box. Эта команда выводит список всех заказов, которые относятся к определенной группе ресурсов. В выходные данные также включаются следующие сведения: имя заказа, состояние доставки, регион Azure, тип доставки, состояние заказа. Отмененные заказы также включаются в список.
 Среди прочего, эта команда отображает для каждого заказа отметки времени.
 
 ```azurecli
@@ -765,7 +765,7 @@ PS C:\WINDOWS\system32>
 
 ### <a name="cancel-an-order"></a>Отмена заказа
 
-Чтобы отменить заказ на Azure Data Box, выполните команду [`az databox job cancel`](/cli/azure/ext/databox/databox/job?view=azure-cli-latest#ext-databox-az-databox-job-cancel&preserve-view=true). Вам придется указать причину отмены заказа.
+Чтобы отменить заказ на Azure Data Box, выполните команду [`az databox job cancel`](/cli/azure/ext/databox/databox/job#ext-databox-az-databox-job-cancel). Вам придется указать причину отмены заказа.
 
    ```azurecli
    az databox job cancel --resource-group <resource-group> --name <order-name> --reason <cancel-description>
@@ -802,7 +802,7 @@ PS C:\WINDOWS\system32>
 
 ### <a name="delete-an-order"></a>Удаление заказа
 
-Если вы отменили заказ на Azure Data Box, его можно удалить с помощью команды [`az databox job delete`](/cli/azure/ext/databox/databox/job?view=azure-cli-latest#ext-databox-az-databox-job-delete&preserve-view=true).
+Если вы отменили заказ на Azure Data Box, его можно удалить с помощью команды [`az databox job delete`](/cli/azure/ext/databox/databox/job#ext-databox-az-databox-job-delete).
 
    ```azurecli
    az databox job delete --name [-n] <order-name> --resource-group <resource-group> [--yes] [--verbose]

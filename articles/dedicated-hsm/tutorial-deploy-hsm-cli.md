@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2020
 ms.author: mbaldwin
-ms.openlocfilehash: b6f4610887092b1dac5cdc85622739318d5921d7
-ms.sourcegitcommit: 48cb2b7d4022a85175309cf3573e72c4e67288f5
+ms.openlocfilehash: 1ca8bc5c82540b0dc02959d26b452554ef294368
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96852240"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102200535"
 ---
 # <a name="tutorial-deploying-hsms-into-an-existing-virtual-network-using-the-azure-cli"></a>Руководство по Развертывание устройств HSM в существующей виртуальной сети с помощью Azure CLI
 
@@ -38,7 +38,7 @@ ms.locfileid: "96852240"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Служба выделенных устройств HSM Azure сейчас недоступна на портале Azure. Все взаимодействие со службой будут осуществляться из командной строки или с помощью PowerShell. В этом руководстве используется интерфейс командной строки (CLI) в Azure Cloud Shell. Если вы не знакомы с Azure CLI, см. статью [Начало работы с Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest&preserve-view=true).
+Служба выделенных устройств HSM Azure сейчас недоступна на портале Azure. Все взаимодействие со службой будут осуществляться из командной строки или с помощью PowerShell. В этом руководстве используется интерфейс командной строки (CLI) в Azure Cloud Shell. Если вы не знакомы с Azure CLI, см. статью [Начало работы с Azure CLI](/cli/azure/get-started-with-azure-cli).
 
 Предполагается, что:
 

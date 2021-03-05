@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/20/2020
 ms.author: mbaldwin
 ms.custom: mvc, devx-track-csharp, devx-track-azurecli
-ms.openlocfilehash: e69e5d9b94a47bf7db21ef3732a4ddcba7c2cf5c
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 5d78299c4583251180b3fb9a902561406b849b4a
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102181556"
+ms.locfileid: "102201181"
 ---
 # <a name="tutorial-use-azure-key-vault-with-a-virtual-machine-in-net"></a>Руководство по Использование Azure Key Vault с виртуальной машиной в .NET
 
@@ -42,7 +42,7 @@ Azure Key Vault помогает защитить секреты, такие к�
 Для Windows, Mac и Linux:
   * [Git](https://git-scm.com/downloads);
   * [Пакет SDK для .NET Core 3.1 или более поздней версии](https://dotnet.microsoft.com/download/dotnet-core/3.1).
-  * [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest).
+  * [Azure CLI](/cli/azure/install-azure-cli).
 
 ## <a name="create-resources-and-assign-permissions"></a>Создание ресурсов и назначение разрешений
 
@@ -74,7 +74,7 @@ az login
 | [Портал Azure](../../virtual-machines/windows/quick-create-portal.md) | [Портал Azure](../../virtual-machines/linux/quick-create-portal.md) |
 
 ## <a name="assign-an-identity-to-the-vm"></a>Назначение удостоверения виртуальной машине
-Создайте назначаемое системой удостоверение для виртуальной машины с помощью команды [az vm identity assign](/cli/azure/vm/identity?view=azure-cli-latest#az-vm-identity-assign):
+Создайте назначаемое системой удостоверение для виртуальной машины с помощью команды [az vm identity assign](/cli/azure/vm/identity#az-vm-identity-assign):
 
 ```azurecli
 az vm identity assign --name <NameOfYourVirtualMachine> --resource-group <YourResourceGroupName>
@@ -90,7 +90,7 @@ az vm identity assign --name <NameOfYourVirtualMachine> --resource-group <YourRe
 ```
 
 ## <a name="assign-permissions-to-the-vm-identity"></a>Назначение разрешения для идентификатора виртуальной машины
-Предоставьте созданному выше удостоверению разрешение для хранилища ключей, выполнив команду [az keyvault set-policy](/cli/azure/keyvault?view=azure-cli-latest#az-keyvault-set-policy).
+Предоставьте созданному выше удостоверению разрешение для хранилища ключей, выполнив команду [az keyvault set-policy](/cli/azure/keyvault#az-keyvault-set-policy).
 
 ```azurecli
 az keyvault set-policy --name '<your-unique-key-vault-name>' --object-id <VMSystemAssignedIdentity> --secret-permissions get list

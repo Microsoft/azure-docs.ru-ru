@@ -11,12 +11,12 @@ author: nibaccam
 ms.reviewer: nibaccam
 ms.date: 03/02/2021
 ms.custom: how-to, devx-track-python, data4ml
-ms.openlocfilehash: 7eeb7b82d9c3bfe21019d5d68f82c2e6d7a2bf68
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 22945cdaff2696a15d5b119bd0f32fd0a179ebf7
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171519"
+ms.locfileid: "102202099"
 ---
 # <a name="attach-apache-spark-pools-powered-by-azure-synapse-analytics-for-data-preparation-preview"></a>Присоединение пулов Apache Spark (на платформе Azure синапсе Analytics) для подготовки данных (Предварительная версия)
 
@@ -357,10 +357,6 @@ train_ds = Dataset.File.from_files(path=datastore_paths, validate=True)
 input1 = train_ds.as_mount()
 
 ```
-
-## <a name="example-notebook"></a>Пример записной книжки
-
-Подробный пример того, как выполнить подготовку данных и обучение модели из одной записной книжки с помощью Azure синапсе Analytics и Машинное обучение Azure, см. в этой [сквозной записной книжке](../synapse-analytics/overview-what-is.md) .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

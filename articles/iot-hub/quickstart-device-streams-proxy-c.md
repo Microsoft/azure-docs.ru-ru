@@ -9,12 +9,12 @@ ms.topic: quickstart
 ms.custom: references_regions
 ms.date: 03/14/2019
 ms.author: robinsh
-ms.openlocfilehash: 2305a87b91160b5de90f4cbfbc9418adc50bb92a
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.openlocfilehash: a6e3407d9ddb799ab0ee5846acc149048f593563
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98624411"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102202014"
 ---
 # <a name="quickstart-enable-ssh-and-rdp-over-an-iot-hub-device-stream-by-using-a-c-proxy-application-preview"></a>Краткое руководство. Подключение по протоколу SSH и RDP через поток устройств центра Интернета вещей с помощью прокси-приложения C (предварительная версия)
 
@@ -120,7 +120,7 @@ ms.locfileid: "98624411"
 
 ## <a name="register-a-device"></a>Регистрация устройства
 
-Устройство должно быть зарегистрировано в Центре Интернета вещей, прежде чем оно сможет подключиться. В этом разделе описано, как зарегистрировать имитированное устройство с помощью [расширения Интернета вещей](/cli/azure/ext/azure-iot/iot?view=azure-cli-latest&preserve-view=true) для Azure Cloud Shell.
+Устройство должно быть зарегистрировано в Центре Интернета вещей, прежде чем оно сможет подключиться. В этом разделе описано, как зарегистрировать имитированное устройство с помощью [расширения Интернета вещей](/cli/azure/ext/azure-iot/iot) для Azure Cloud Shell.
 
 1. Чтобы создать удостоверение устройства, выполните приведенные ниже команды в Cloud Shell.
 

@@ -13,12 +13,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 02/09/2019
   ms.author: aahi
-  ms.openlocfilehash: ced23efc48e2c176a27b2bdc7e1c027b77e53637
-  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.openlocfilehash: 962b1278f85ce8d73f43561e7df7b27f7b6b46ad
+  ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/03/2021
-  ms.locfileid: "101699884"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102201963"
 landingContent:
 - title: Об API Анализа текста
   linkLists:
@@ -163,7 +163,7 @@ landingContent:
     - text: Azure PowerShell
       url: /powershell/module/az.cognitiveservices
     - text: Azure CLI
-      url: /cli/azure/cognitiveservices?view=azure-cli-latest
+      url: /cli/azure/cognitiveservices
 - title: Справка и обратная связь
   linkLists:
   - linkListType: reference

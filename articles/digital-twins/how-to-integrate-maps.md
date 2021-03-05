@@ -8,12 +8,12 @@ ms.date: 1/19/2021
 ms.topic: how-to
 ms.service: digital-twins
 ms.reviewer: baanders
-ms.openlocfilehash: 6a654f74ff6a32ad37646021d504359c84942c12
-ms.sourcegitcommit: 65cef6e5d7c2827cf1194451c8f26a3458bc310a
+ms.openlocfilehash: 990a0ee73bd91ccb748c948b5fcf0e6124d84a03
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98573043"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102201436"
 ---
 # <a name="use-azure-digital-twins-to-update-an-azure-maps-indoor-map"></a>Использование Azure Digital двойников для обновления карт Azure Maps
 
@@ -64,7 +64,7 @@ ms.locfileid: "98573043"
     >[!NOTE]
     >В Cloud Shell присутствует **известная проблема**, которая затрагивает такие группы команд: `az dt route`, `az dt model`, `az dt twin`.
     >
-    >Чтобы устранить эту проблему, выполните `az login` в Cloud Shell перед выполнением команды или используйте [локальный CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) вместо Cloud Shell. Дополнительные сведения см. в статье [*Устранение неполадок: известные проблемы в Azure Digital Twins*](troubleshoot-known-issues.md#400-client-error-bad-request-in-cloud-shell).
+    >Чтобы устранить эту проблему, выполните `az login` в Cloud Shell перед выполнением команды или используйте [локальный CLI](/cli/azure/install-azure-cli) вместо Cloud Shell. Дополнительные сведения см. в статье [*Устранение неполадок: известные проблемы в Azure Digital Twins*](troubleshoot-known-issues.md#400-client-error-bad-request-in-cloud-shell).
 
     ```azurecli-interactive
     az dt route create -n <your-Azure-Digital-Twins-instance-name> --endpoint-name <Event-Grid-endpoint-name> --route-name <my_route> --filter "type = 'Microsoft.DigitalTwins.Twin.Update'"
@@ -109,7 +109,7 @@ az functionapp config appsettings set --name <your-App-Service-(function-app)-na
 
 В зависимости от конфигурации топологии вы сможете хранить эти три атрибута на разных уровнях, соотнесенных с степенью детализации вашей схемы.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об управлении, обновлении и извлечении данных из графа двойников см. в следующих статьях:
 

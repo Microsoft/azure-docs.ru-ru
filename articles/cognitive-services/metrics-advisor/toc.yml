@@ -40,7 +40,7 @@
     - name: API "Помощник по метрикам"
       href: 'https://go.microsoft.com/fwlink/?linkid=2141634'
     - name: Справочник по Azure CLI
-      href: /cli/azure/cognitiveservices?view=azure-cli-latest#az_cognitiveservices_list
+      href: /cli/azure/cognitiveservices#az_cognitiveservices_list
     - name: Справочник по PowerShell
       href: /powershell/module/azurerm.cognitiveservices/
 - name: Ресурсы

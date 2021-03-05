@@ -7,12 +7,12 @@ description: Проверка и проверка изменений в запр
 keywords: DOCKER, Kubernetes, Azure, AKS, служба Kubernetes Azure, контейнеры, действия GitHub, Helm, сеть службы, маршрутизация в сети службы, kubectl, K8S
 manager: gwallace
 ms.custom: devx-track-js, devx-track-azurecli
-ms.openlocfilehash: 447c41055ededfc55e44bebd92de89b3d23de3c7
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.openlocfilehash: 37ad621609f5a5631b498e55483e5d16e8ac4472
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97591571"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102202116"
 ---
 # <a name="github-actions--azure-kubernetes-service-preview"></a>Действия GitHub & службы Azure Kubernetes (Предварительная версия)
 
@@ -30,7 +30,7 @@ Azure Dev Spaces предоставляет рабочий процесс с п�
 > [!IMPORTANT]
 > Эта функция в настоящее время находится на стадии предварительной версии. Предварительные версии предоставляются при условии, что вы принимаете [дополнительные условия использования](https://azure.microsoft.com/support/legal/preview-supplemental-terms/). Некоторые аспекты этой функции могут быть изменены до выхода общедоступной версии.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Подписка Azure. Если у вас нет подписки Azure, создайте [бесплатную учетную запись](https://azure.microsoft.com/free).
 * [Установленный Azure CLI][azure-cli-installed].
@@ -53,7 +53,7 @@ az acr create --resource-group MyResourceGroup --name <acrName> --sku Basic
 
 ## <a name="create-a-service-principal-for-authentication"></a>Создание субъекта-службы для проверки подлинности
 
-Для создания субъекта-службы используйте команду [AZ AD SP Create-для – RBAC][az-ad-sp-create-for-rbac] . Например:
+Для создания субъекта-службы используйте команду [AZ AD SP Create-для – RBAC][az-ad-sp-create-for-rbac] . Пример:
 
 ```azurecli
 az ad sp create-for-rbac --sdk-auth --skip-assignment
@@ -177,10 +177,10 @@ az group delete --name MyResourceGroup --yes --no-wait
 > [!div class="nextstepaction"]
 > [Принцип работы Azure Dev Spaces](../how-dev-spaces-works.md)
 
-[azure-cli-installed]: /cli/azure/install-azure-cli?view=azure-cli-latest
+[azure-cli-installed]: /cli/azure/install-azure-cli
 [az-ad-sp-create-for-rbac]: /cli/azure/ad/sp#az-ad-sp-create-for-rbac
 [az-acr-show]: /cli/azure/acr#az-acr-show
-[az-aks-show]: /cli/azure/aks?view=azure-cli-latest#az-aks-show
+[az-aks-show]: /cli/azure/aks#az-aks-show
 [az-role-assignment-create]: /cli/azure/role/assignment#az-role-assignment-create
 [bikes-server-js]: https://github.com/Azure/dev-spaces/blob/master/samples/BikeSharingApp/Bikes/server.js#L232-L233
 [bike-sharing-gh]: https://github.com/Azure/dev-spaces/

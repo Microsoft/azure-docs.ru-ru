@@ -8,12 +8,12 @@ ms.service: frontdoor
 ms.topic: how-to
 ms.date: 03/04/2021
 ms.author: tyao
-ms.openlocfilehash: 885582481e3783bdd4fbad40a24499f42a40ce24
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 885b4d132208ab6f8b470d147438e26a5fd4bab7
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102193513"
+ms.locfileid: "102201674"
 ---
 # <a name="connect-azure-front-door-premium-to-a-storage-account-origin-with-private-link"></a>Подключение передней дверцы Azure к источнику учетной записи хранения с помощью частной ссылки
 
@@ -23,7 +23,7 @@ ms.locfileid: "102193513"
 
 Войдите на [портал Azure](https://portal.azure.com).
 
-## <a name="enable-private-link-to-a-storage-account-in-azure-front-door-premium"></a>Включение закрытой ссылки на учетную запись хранения в передней дверце Azure Premium
+## <a name="enable-private-link-to-a-storage-account"></a>Включение закрытой ссылки на учетную запись хранения
  
 В этом разделе вы будете сопоставлять службу частной связи с частной конечной точкой, созданной в частной сети передней дверцы Azure. 
 
@@ -47,7 +47,7 @@ ms.locfileid: "102193513"
 
 1. Затем нажмите кнопку **Добавить** , чтобы сохранить конфигурацию.
 
-## <a name="approve-azure-front-door-premium-private-endpoint-connection-from-the-storage-account"></a>Утвердите подключение частной конечной точки "Премиум" из учетной записи хранения в Azure.
+## <a name="approve-private-endpoint-connection-from-the-storage-account"></a>Утверждение подключения к частной конечной точке из учетной записи хранения
 
 1. В последнем разделе перейдите к учетной записи хранения, для которой настроена частная ссылка. В разделе **Параметры** выберите **сеть** .
 

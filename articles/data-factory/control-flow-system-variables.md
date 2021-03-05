@@ -7,14 +7,15 @@ ms.reviewer: maghan
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 06/12/2018
-ms.openlocfilehash: 3da450ce1130b693fa346b4a6f4b42f6a0fd60a3
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 119ecb3ec9c208340f09f513bf10b3ad24312cb5
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102174212"
+ms.locfileid: "102201232"
 ---
 # <a name="system-variables-supported-by-azure-data-factory"></a>Системные переменные, поддерживаемые в фабрике данных Azure
+
 [!INCLUDE[appliesto-adf-asa-md](includes/appliesto-adf-asa-md.md)]
 
 В этой статье описаны системные переменные, поддерживаемые фабрикой данных Azure. Вы можете использовать эти переменные в выражениях при определении сущностей фабрики данных.
@@ -68,4 +69,5 @@ ms.locfileid: "102174212"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Сведения о том, как эти переменные используются в выражениях, см. в статье [Выражения и функции в фабрике данных Azure](control-flow-expression-language-functions.md).
+* Сведения о том, как эти переменные используются в выражениях, см. в статье [Выражения и функции в фабрике данных Azure](control-flow-expression-language-functions.md).
+* Сведения об использовании системных переменных области триггера в конвейере см. в разделе [метаданные триггера ссылки в конвейере](how-to-use-trigger-parameterization.md) .

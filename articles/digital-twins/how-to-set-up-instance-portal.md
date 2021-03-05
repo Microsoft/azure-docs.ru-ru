@@ -8,12 +8,12 @@ ms.date: 7/23/2020
 ms.topic: how-to
 ms.service: digital-twins
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: a6355a08a936c74ae6a05f163a93a991ba82ab4d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 8263e0805f48976222e66922be8c04e0902101d6
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101702918"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102201844"
 ---
 # <a name="set-up-an-azure-digital-twins-instance-and-authentication-portal"></a>Настройка экземпляра и проверки подлинности Azure Digital двойников (портал)
 
@@ -111,7 +111,7 @@ ms.locfileid: "101702918"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Вытестируйте отдельные REST API вызовы в экземпляре с помощью команд CLI Azure Digital двойников: 
-* [AZ DT Справочник](/cli/azure/ext/azure-iot/dt?preserve-view=true&view=azure-cli-latest)
+* [AZ DT Справочник](/cli/azure/ext/azure-iot/dt)
 * [*Практическое руководство. Использование CLI для Azure Digital Twins*](how-to-use-cli.md)
 
 Или см. раздел как подключить клиентское приложение к экземпляру с помощью кода проверки подлинности:

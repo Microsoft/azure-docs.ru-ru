@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 05/25/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 5e4c49e7aea05b6f430860eb6975713f59ad8080
-ms.sourcegitcommit: fb3c846de147cc2e3515cd8219d8c84790e3a442
+ms.openlocfilehash: a24b8b18dd109f1d8ed5acaa7de55ce5a3cc1eb9
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92635989"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102201113"
 ---
 # <a name="use-the-azure-digital-twins-cli"></a>Использование CLI для Azure Digital Twins
 
@@ -25,7 +25,7 @@ ms.locfileid: "92635989"
 * Управление [маршрутами](concepts-route-events.md)
 * Настройка [безопасности](concepts-security.md) с помощью управления доступом на основе ролей Azure (Azure RBAC)
 
-Набор команд называется **AZ DT** и является частью [расширения Интернета вещей Azure для Azure CLI](https://github.com/Azure/azure-iot-cli-extension). Полный список команд и их использование можно просмотреть в справочной документации по `az iot` набору команд: [ *AZ DT* Справочник по командам](/cli/azure/ext/azure-iot/dt?preserve-view=true&view=azure-cli-latest).
+Набор команд называется **AZ DT** и является частью [расширения Интернета вещей Azure для Azure CLI](https://github.com/Azure/azure-iot-cli-extension). Полный список команд и их использование можно просмотреть в справочной документации по `az iot` набору команд: [ *AZ DT* Справочник по командам](/cli/azure/ext/azure-iot/dt).
 
 ## <a name="uses-deploy-and-validate"></a>Использование (развертывание и проверка)
 
@@ -50,11 +50,11 @@ az --version
 
 ### <a name="get-the-extension"></a>Получение расширения
 
-Вы можете убедиться, что у вас установлена последняя версия `azure-iot` расширения, выполнив следующие действия. Эти команды можно выполнить в [Azure Cloud Shell](../cloud-shell/overview.md) или [локальном Azure CLI](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest).
+Вы можете убедиться, что у вас установлена последняя версия `azure-iot` расширения, выполнив следующие действия. Эти команды можно выполнить в [Azure Cloud Shell](../cloud-shell/overview.md) или [локальном Azure CLI](/cli/azure/install-azure-cli).
 
 [!INCLUDE [digital-twins-cloud-shell-extensions.md](../../includes/digital-twins-cloud-shell-extensions.md)]
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Изучите интерфейс командной строки и полный набор команд, используя справочные документы:
-* [*AZ DT* Справочник по командам](/cli/azure/ext/azure-iot/dt?preserve-view=true&view=azure-cli-latest)
+* [*AZ DT* Справочник по командам](/cli/azure/ext/azure-iot/dt)

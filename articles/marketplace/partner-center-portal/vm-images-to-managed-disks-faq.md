@@ -5,14 +5,14 @@ ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
 ms.topic: conceptual
 ms.date: 11/22/2019
-author: iqshahmicrosoft
-ms.author: iqshah
-ms.openlocfilehash: 814a4012ace95e84e75bcb4071c549822b2b0633
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+author: kriti-ms
+ms.author: krsh
+ms.openlocfilehash: e3d20b5e9206cf05d749f75982a07937a8caf078
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89182434"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102201096"
 ---
 # <a name="were-moving-virtual-machine-vm-images-on-azure-marketplace-to-managed-disk-storage"></a>Вы перемещаете образы виртуальных машин в Azure Marketplace в управляемый дисковый накопитель
 
@@ -29,8 +29,6 @@ ms.locfileid: "89182434"
 ### <a name="would-the-users-of-my-vm-images-experience-an-outage"></a>Будут ли пользователи виртуальных машин испытывать сбой?
 
 Пользователи образов виртуальных машин не будут испытывать сбой. 
-
-На первом этапе мы будем перемещать только те образы виртуальных машин, которые не работают с виртуальными машинами. Так как для этих образов нет пользователей, никакого влияния не будет. Для последующих этапов это не повлияет на пользователей.
 
 ### <a name="how-long-does-it-take-for-the-process-to-complete"></a>Сколько времени займет завершение процесса?
 

@@ -3,12 +3,12 @@ title: Создание виртуальных машин и управлени�
 description: Узнайте, как использовать Azure DevTest Labs для создания виртуальных машин и управления ими с помощью Azure CLI
 ms.topic: article
 ms.date: 06/26/2020
-ms.openlocfilehash: 57510a722ab6a34b9d498e74a140d6f350c8fc02
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 22ee6bf607fe1b66cece0e7ddb25a2da2830258b
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "85482842"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102201470"
 ---
 # <a name="create-and-manage-virtual-machines-with-devtest-labs-using-the-azure-cli"></a>Создание виртуальных машин и управление ими с DevTest Labs с использованием Azure CLI
 Это краткое руководство поможет вам создать, запустить, подключить, обновить и очистить компьютер разработки в лаборатории. 
@@ -129,7 +129,7 @@ az lab vm show --resource-group <resourcegroupname> --lab-name <labname> --name 
 az lab vm show --resource-group <resourcegroupname> --lab-name <labname> --name <vmname> --expand "properties(\$expand=artifacts)" --query "artifacts[].{artifactId: artifactId, status: status}"
 ```
 
-Образец вывода: 
+Пример результатов выполнения: 
 
 ```json
 [
@@ -153,4 +153,4 @@ az lab vm delete --lab-name sampleLabName --name sampleVMName --resource-group s
 ```
 
 ## <a name="next-steps"></a>Дальнейшие действия
-См. следующее содержимое: [Azure CLI документация для Azure DevTest Labs](/cli/azure/lab?view=azure-cli-latest). 
+См. следующее содержимое: [Azure CLI документация для Azure DevTest Labs](/cli/azure/lab). 

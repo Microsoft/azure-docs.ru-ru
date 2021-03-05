@@ -168,7 +168,7 @@
             - name: Пакет SDK для Python
               href: /python/api/azure-digitaltwins-core/azure.digitaltwins.core?view=azure-python
     - name: CLI Digital Twins
-      href: /cli/azure/ext/azure-iot/dt?view=azure-cli-latest&preserve-view=true
+      href: /cli/azure/ext/azure-iot/dt
 - name: Ресурсы
   items:
     - name: Ограничения службы Digital Twins

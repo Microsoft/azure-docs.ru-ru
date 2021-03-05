@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 10/01/2020
 ms.author: duau
-ms.openlocfilehash: a5d51a77b1da0ae44c76d0187113105c4e53c9b4
-ms.sourcegitcommit: b6f3ccaadf2f7eba4254a402e954adf430a90003
+ms.openlocfilehash: f894fd5ca7bb98c48b106c13b8fe6130b2c76c6e
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92279221"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102201062"
 ---
 # <a name="tutorial-quickly-scale-and-protect-a-web-application-by-using-azure-front-door-and-azure-web-application-firewall-waf"></a>Руководство по Быстрое масштабирование и защита веб-приложения с помощью службы Azure Front Door и Брандмауэра веб-приложений Azure (WAF)
 
@@ -36,7 +36,7 @@ ms.locfileid: "92279221"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Описанные в этом руководстве действия выполняются через Azure CLI. Просмотрите это руководство по [началу работы с Azure CLI](/cli/azure/get-started-with-azure-cli?preserve-view=true&view=azure-cli-latest).
+- Описанные в этом руководстве действия выполняются через Azure CLI. Просмотрите это руководство по [началу работы с Azure CLI](/cli/azure/get-started-with-azure-cli).
 
   > [!TIP] 
   > Чтобы быстро начать работу с Azure CLI, можно использовать [Bash в Azure Cloud Shell](../cloud-shell/quickstart.md).
@@ -48,7 +48,7 @@ ms.locfileid: "92279221"
    ```
 
 > [!NOTE] 
-> Дополнительные сведения о командах, используемых в этом руководстве, см. в [справочных материалах по Azure CLI для Front Door](/cli/azure/ext/front-door/?preserve-view=true&view=azure-cli-latest).
+> Дополнительные сведения о командах, используемых в этом руководстве, см. в [справочных материалах по Azure CLI для Front Door](/cli/azure/ext/front-door).
 
 ## <a name="create-an-azure-front-door-resource"></a>Создание ресурса Azure Front Door
 
@@ -144,7 +144,7 @@ az network front-door update --name <> --resource-group <> --set frontendEndpoin
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Если ресурсы, созданные при работе с этим руководством, больше не нужны, выполните команду [az group delete](/cli/azure/group?view=azure-cli-latest#az-group-delete&preserve-view=true), чтобы удалить группу ресурсов, Front Door и политику WAF.
+Если ресурсы, созданные при работе с этим руководством, больше не нужны, выполните команду [az group delete](/cli/azure/group#az-group-delete), чтобы удалить группу ресурсов, Front Door и политику WAF.
 
 ```azurecli-interactive
   az group delete \

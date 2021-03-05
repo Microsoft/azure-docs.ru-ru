@@ -7,12 +7,12 @@ ms.service: azure-resource-manager
 ms.topic: conceptual
 ms.date: 12/14/2020
 ms.author: jgao
-ms.openlocfilehash: f731236b235883f019c74ef0b32f5066ca5b7514
-ms.sourcegitcommit: c136985b3733640892fee4d7c557d40665a660af
+ms.openlocfilehash: b2e1ffb3cbd513766945864e33589c46284bf942
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98179373"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102200943"
 ---
 # <a name="configure-development-environment-for-deployment-scripts-in-arm-templates"></a>Настройка среды разработки для скриптов развертывания в шаблонах ARM
 
@@ -357,7 +357,7 @@ Set-AzStorageFileContent -Context $context -ShareName $fileShareName -Source $fi
 Образ контейнера по умолчанию, указанный в шаблоне, — **MCR.Microsoft.com/Azure-CLI:2.9.1**. См. список [поддерживаемых версий Azure CLI](https://mcr.microsoft.com/v2/azure-cli/tags/list).
 
 > [!IMPORTANT]
-> Скрипт развертывания использует доступные образы CLI из реестра контейнеров Майкрософт (мкр). Сертификация образа CLI для сценария развертывания занимает около одного месяца. Не используйте версии CLI, выпущенные менее 30 дней назад. Чтобы найти даты выпуска образов, ознакомьтесь с [заметками о выпуске Azure CLI](/cli/azure/release-notes-azure-cli?view=azure-cli-latest&preserve-view=true). Если используется неподдерживаемая версия, в сообщении об ошибке выводится список поддерживаемых версий.
+> Скрипт развертывания использует доступные образы CLI из реестра контейнеров Майкрософт (мкр). Сертификация образа CLI для сценария развертывания занимает около одного месяца. Не используйте версии CLI, выпущенные менее 30 дней назад. Чтобы найти даты выпуска образов, ознакомьтесь с [заметками о выпуске Azure CLI](/cli/azure/release-notes-azure-cli). Если используется неподдерживаемая версия, в сообщении об ошибке выводится список поддерживаемых версий.
 
 Шаблон приостанавливает экземпляр контейнера через 1 800 секунд. У вас 30 минут до того, как экземпляр контейнера перейдет в состояние терминала, и сеанс завершится.
 

@@ -7,12 +7,12 @@ ms.service: dns
 ms.topic: how-to
 ms.date: 2/20/2020
 ms.author: allensu
-ms.openlocfilehash: 8163fcb3b349e298bc89f06523e3e784bdc4ed49
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: 2280d6243f468708269569cd24cb8c7a3e2a8191
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94965681"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102202303"
 ---
 # <a name="how-to-protect-dns-zones-and-records"></a>Как защитить зоны и записи DNS
 
@@ -216,7 +216,7 @@ $rsg = "<resource group name>"
 New-AzResourceLock -LockLevel $lvl -LockName $lnm -ResourceName $rsc -ResourceType $rty -ResourceGroupName $rsg
 ```
 
-Аналогичную команду также [можно выполнить через интерфейс командной строки Azure](/cli/azure/lock?view=azure-cli-latest#az-lock-create):
+Аналогичную команду также [можно выполнить через интерфейс командной строки Azure](/cli/azure/lock#az-lock-create):
 
 ```azurecli
 # Lock a DNS zone
@@ -284,7 +284,7 @@ New-AzResourceLock -LockLevel $lvl -LockName $lnm -ResourceName $rsc -ResourceTy
 
 В то же время можно одновременно использовать как блокировки ресурсов, так и пользовательские роли в качестве подхода к защите зоны DNS.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о работе с Azure RBAC см. в статье [что такое управление доступом на основе ролей в Azure (Azure RBAC)](../role-based-access-control/overview.md).
 * Дополнительные сведения о работе с блокировками ресурсов см. в статье [Блокировка ресурсов с помощью диспетчера ресурсов Azure](../azure-resource-manager/management/lock-resources.md).

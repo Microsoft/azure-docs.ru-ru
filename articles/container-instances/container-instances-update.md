@@ -3,12 +3,12 @@ title: Обновить группу контейнеров
 description: Сведения об обновлении запущенных контейнеров в службе "Экземпляры контейнеров Azure"
 ms.topic: article
 ms.date: 04/17/2020
-ms.openlocfilehash: cfc27de8caae98dd1c3065b5ed06433c4baaa5d2
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: fb31eeda83532c408a303e879439006bcd7d4e45
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "82928726"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102200654"
 ---
 # <a name="update-containers-in-azure-container-instances"></a>Обновление контейнеров в службе "Экземпляры контейнеров Azure"
 
@@ -42,7 +42,7 @@ az container create --resource-group myResourceGroup --name mycontainer \
     --image nginx:alpine --dns-name-label myapplication-staging
 ```
 
-Обновите группу контейнеров с помощью новой метки DNS-имени *MyApplication*и установите остальные свойства, используя значения, которые использовались ранее:
+Обновите группу контейнеров с помощью новой метки DNS-имени *MyApplication* и установите остальные свойства, используя значения, которые использовались ранее:
 
 ```azurecli-interactive
 # Update DNS name label (restarts container), leave other properties unchanged
@@ -89,6 +89,6 @@ az container create --resource-group myResourceGroup --name mycontainer \
 <!-- LINKS - External -->
 
 <!-- LINKS - Internal -->
-[az-container-create]: /cli/azure/container?view=azure-cli-latest#az-container-create
+[az-container-create]: /cli/azure/container#az-container-create
 [azure-cli-install]: /cli/azure/install-azure-cli
 [az-container-export]: /cli/azure/container#az-container-export

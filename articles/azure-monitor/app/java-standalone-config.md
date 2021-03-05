@@ -6,12 +6,12 @@ ms.date: 11/04/2020
 author: MS-jgol
 ms.custom: devx-track-java
 ms.author: jgol
-ms.openlocfilehash: 3806578f5d1af61329e2e32fa3e8eceb9afa4d42
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 32b1558bf4af2ee151fef33a8c0cbe7df82f1e84
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101713972"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102201759"
 ---
 # <a name="configuration-options---azure-monitor-application-insights-for-java"></a>Параметры конфигурации — Application Insights Azure Monitor для Java
 
@@ -219,7 +219,7 @@ Log4j, Logback и Java. util. Logging устанавливаются в авто
 | ALL               | ALL    | ALL     | ALL     |
 
 > [!NOTE]
-> Если в средство ведения журнала передается исключение, то сообщение журнала (и исключение) будет отображаться в портал Azure в `exceptions` таблице, а не в `traces` таблице.
+> Если объект исключения передается в средство ведения журнала, то сообщение журнала (и сведения об объекте исключения) будет отображаться в портал Azure в таблице, `exceptions` а не в `traces` таблице.
 
 ## <a name="auto-collected-micrometer-metrics-including-spring-boot-actuator-metrics"></a>Автособираемые метрики Микрометер (включая метрики загрузчика пружины)
 

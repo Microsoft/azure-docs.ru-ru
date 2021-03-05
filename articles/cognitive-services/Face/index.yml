@@ -11,12 +11,12 @@ metadata:
   author: PatrickFarley
   ms.author: pafarley
   ms.date: 9/01/2020
-  ms.openlocfilehash: fb4aa0c31f916006671d14128c480566f039cfad
-  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.openlocfilehash: 406bcedade350a1971d77a2955bb6a2b0da51b67
+  ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/03/2021
-  ms.locfileid: "101722449"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102201742"
 landingContent:
 - title: Сведения о службе "Распознавание лиц"
   linkLists:
@@ -107,7 +107,7 @@ landingContent:
     - text: Azure PowerShell
       url: /powershell/module/az.cognitiveservices/#cognitive_services
     - text: Интерфейс командной строки Azure (CLI)
-      url: /cli/azure/cognitiveservices?view=azure-cli-latest
+      url: /cli/azure/cognitiveservices
 - title: Справка и обратная связь
   linkLists:
   - linkListType: reference
