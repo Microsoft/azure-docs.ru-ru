@@ -7,12 +7,12 @@ ms.author: alkarche
 ms.date: 11/18/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: d25a429873ccf8b546c0919456c97e64445f184c
-ms.sourcegitcommit: dd24c3f35e286c5b7f6c3467a256ff85343826ad
+ms.openlocfilehash: 40cf83b0ca9e4c794979f2b20ddb73360758abc5
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99071704"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198546"
 ---
 # <a name="manage-endpoints-and-routes-in-azure-digital-twins-apis-and-cli"></a>Управление конечными точками и маршрутами в Azure Digital двойников (API и CLI)
 
@@ -48,7 +48,7 @@ ms.locfileid: "99071704"
 
 ### <a name="create-the-endpoint"></a>Создание конечной точки
 
-После создания ресурсов конечной точки их можно использовать для конечной точки Azure Digital двойников. В следующих примерах показано, как создать конечные точки с помощью команды [AZ DT Endpoint Create](/cli/azure/ext/azure-iot/dt/endpoint/create?view=azure-cli-latest&preserve-view=true) для [интерфейса командной строки Azure Digital двойников](how-to-use-cli.md). Замените заполнители в командах на сведения о своих собственных ресурсах.
+После создания ресурсов конечной точки их можно использовать для конечной точки Azure Digital двойников. В следующих примерах показано, как создать конечные точки с помощью команды [AZ DT Endpoint Create](/cli/azure/ext/azure-iot/dt/endpoint/create) для [интерфейса командной строки Azure Digital двойников](how-to-use-cli.md). Замените заполнители в командах на сведения о своих собственных ресурсах.
 
 Чтобы создать конечную точку сетки событий, выполните следующие действия.
 
@@ -119,7 +119,7 @@ az resource create --id <Azure-Digital-Twins-instance-Azure-resource-ID>/endpoin
     
 #### <a name="create-the-dead-letter-endpoint"></a>Создание конечной точки недоставленной буквы
 
-Чтобы создать конечную точку с включенной недоставленным письмом, добавьте следующий параметр недоставленных сообщений в команду [AZ DT Endpoint Create](/cli/azure/ext/azure-iot/dt/endpoint/create?view=azure-cli-latest&preserve-view=true) для [интерфейса командной строки двойников для Azure Digital](how-to-use-cli.md).
+Чтобы создать конечную точку с включенной недоставленным письмом, добавьте следующий параметр недоставленных сообщений в команду [AZ DT Endpoint Create](/cli/azure/ext/azure-iot/dt/endpoint/create) для [интерфейса командной строки двойников для Azure Digital](how-to-use-cli.md).
 
 Значением параметра является **URI SAS недоставленной буквы** , который состоит из имени учетной записи хранения, имени контейнера и маркера SAS, собранного в [предыдущем разделе](#set-up-storage-resources). Этот параметр создает конечную точку с проверкой подлинности на основе ключей.
 
@@ -204,7 +204,7 @@ az resource create --id <Azure-Digital-Twins-instance-Azure-resource-ID>/endpoin
 
 Один маршрут должен разрешать выбор нескольких уведомлений и типов событий. 
 
-Маршруты событий можно создать с помощью [  интерфейсов API плоскости данных](/rest/api/digital-twins/dataplane/eventroutes) Azure Digital двойников евентраутес или [команды командной строки **AZ DT Route**](/cli/azure/ext/azure-iot/dt/route?view=azure-cli-latest&preserve-view=true). В оставшейся части этого раздела рассматривается процесс создания.
+Маршруты событий можно создать с помощью [  интерфейсов API плоскости данных](/rest/api/digital-twins/dataplane/eventroutes) Azure Digital двойников евентраутес или [команды командной строки **AZ DT Route**](/cli/azure/ext/azure-iot/dt/route). В оставшейся части этого раздела рассматривается процесс создания.
 
 ### <a name="create-routes-with-the-apis-and-c-sdk"></a>Создание маршрутов с помощью API и пакета SDK для C#
 
@@ -225,7 +225,7 @@ az resource create --id <Azure-Digital-Twins-instance-Azure-resource-ID>/endpoin
 
 ### <a name="create-routes-with-the-cli"></a>Создание маршрутов с помощью интерфейса командной строки
 
-Маршруты также можно управлять с помощью команд [AZ DT Route](/cli/azure/ext/azure-iot/dt/route?view=azure-cli-latest&preserve-view=true) для интерфейса командной строки Azure Digital двойников. 
+Маршруты также можно управлять с помощью команд [AZ DT Route](/cli/azure/ext/azure-iot/dt/route) для интерфейса командной строки Azure Digital двойников. 
 
 Дополнительные сведения об использовании интерфейса командной строки и доступных команд см. в разделе [*как использовать интерфейс командной строки Azure Digital двойников*](how-to-use-cli.md).
 

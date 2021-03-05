@@ -7,12 +7,12 @@ ms.service: application-gateway
 ms.topic: tutorial
 ms.date: 03/02/2021
 ms.author: caya
-ms.openlocfilehash: 1daf5fef1383272f728ff3dac7557e55398f7d50
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: bfff962f6d302f589acc437550fa25f76ec7ce35
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101720228"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102040433"
 ---
 # <a name="tutorial-enable-application-gateway-ingress-controller-add-on-for-an-existing-aks-cluster-with-an-existing-application-gateway"></a>Руководство по включению надстройки контроллера объекта ingress для имеющегося кластера AKS со Шлюзом приложений
 
@@ -82,7 +82,7 @@ az aks enable-addons -n myCluster -g myResourceGroup -a ingress-appgw --appgw-id
 
 Если вы хотите использовать портал Azure для включения надстройки AGIC, перейдите по адресу [(https://aka.ms/azure/portal/aks/agic)](https://aka.ms/azure/portal/aks/agic) и перейдите к своему кластеру AKS через ссылку на портале. После этого перейдите на вкладку "Сети" в кластере AKS. Вы увидите раздел "Application Gateway ingress controller" (Контроллер объекта ingress Шлюза приложений), который позволяет включить или отключить надстройку контроллера объекта ingress с помощью пользовательского интерфейса портала. Установите флажок рядом с пунктом "Enable ingress controller" (Включить контроллер объекта ingress) и выберите созданный Шлюз приложений *myApplicationGateway* в раскрывающемся меню. 
 
-![Портал контроллера объекта ingress Шлюза приложений](./media/tutorial-ingress-controller-add-on-existing/portal_ingress_controller_addon.png)
+![Портал контроллера объекта ingress Шлюза приложений](./media/tutorial-ingress-controller-add-on-existing/portal-ingress-controller-add-on.png)
 
 ## <a name="peer-the-two-virtual-networks-together"></a>Создание пирингового подключения между двумя виртуальными сетями
 

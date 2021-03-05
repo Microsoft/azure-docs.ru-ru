@@ -8,12 +8,12 @@ ms.service: digital-twins
 services: digital-twins
 ms.topic: how-to
 ms.date: 11/10/2020
-ms.openlocfilehash: d99ec80308152ce9e4870da809acaa25c663d98d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c6b9cfab4256c72118a65f7fb0c8e672e2082ffe
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101715706"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102199668"
 ---
 # <a name="how-to-use-postman-to-send-requests-to-the-azure-digital-twins-apis"></a>Как использовать POST для отправки запросов в интерфейсы API цифровых двойников Azure
 
@@ -21,7 +21,7 @@ ms.locfileid: "101715706"
 
 В этой статье описывается, как настроить [клиент отправки RESTful](https://www.getpostman.com/) для взаимодействия с API-интерфейсами Azure Digital двойников, выполнив следующие действия.
 
-1. Используйте [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) , чтобы получить токен носителя, который будет использоваться для выполнения запросов API в POST.
+1. Используйте [Azure CLI](/cli/azure/install-azure-cli) , чтобы получить токен носителя, который будет использоваться для выполнения запросов API в POST.
 1. Настройте коллекцию POST и настройте клиент Posting Client на использование токена носителя для проверки подлинности.
 1. Используйте настроенное сообщение POST, чтобы создать и отправить запрос к API цифровых двойников Azure.
 
@@ -41,9 +41,9 @@ ms.locfileid: "101715706"
 
 Теперь, когда вы настроили POST и свой экземпляр Digital двойников для Azure, вам потребуется получить маркер носителя, который направляет запросы, которые можно использовать для авторизации в Azure Digital двойников API.
 
-Получить этот маркер можно несколькими способами. В этой статье используется [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) для входа в учетную запись Azure и получения маркера.
+Получить этот маркер можно несколькими способами. В этой статье используется [Azure CLI](/cli/azure/install-azure-cli) для входа в учетную запись Azure и получения маркера.
 
-Если Azure CLI [установлен локально](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true), можно запустить командную строку на компьютере, чтобы выполнить следующие команды.
+Если Azure CLI [установлен локально](/cli/azure/install-azure-cli), можно запустить командную строку на компьютере, чтобы выполнить следующие команды.
 В противном случае можно открыть [Azure Cloud Shell](https://shell.azure.com) окно в браузере и выполнить в нем команды.
 
 1. Сначала убедитесь, что вы выполнили вход в Azure с соответствующими учетными данными, выполнив следующую команду:
@@ -52,7 +52,7 @@ ms.locfileid: "101715706"
     az login
     ```
 
-1. Затем используйте команду [AZ Account Get-Access-Token](/cli/azure/account?preserve-view=true&view=azure-cli-latest#az_account_get_access_token) , чтобы получить токен носителя с доступом к службе Digital двойников.
+1. Затем используйте команду [AZ Account Get-Access-Token](/cli/azure/account#az_account_get_access_token) , чтобы получить токен носителя с доступом к службе Digital двойников.
 
     ```azurecli-interactive
     az account get-access-token --resource 0b07f429-9f4b-4714-9392-cc5e8e80c8b0

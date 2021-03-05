@@ -6,12 +6,12 @@ ms.workload: tbd
 ms.tgt_pltfrm: ibiza
 ms.topic: conceptual
 ms.date: 07/28/2020
-ms.openlocfilehash: 4970cacb0995678bdad87f14ba971b8fb88ffa09
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 44554434eee51c11e7f89007c532f1a142fc998c
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100593642"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102199345"
 ---
 # <a name="react-plugin-for-application-insights-javascript-sdk"></a>Подключаемый модуль реагирования для Application Insights SDK JavaScript
 
@@ -161,7 +161,11 @@ export default MyComponent;
 
 ### `useTrackEvent`
 
-`useTrackEvent`Обработчик используется для отслеживания любого пользовательского события, которое может потребоваться отслеживанию приложения, например нажатия кнопки или другого вызова API. Он принимает два аргумента, первый — Application Insights экземпляр (который можно получить из `useAppInsightsContext` обработчика) и имя события.
+`useTrackEvent`Обработчик используется для отслеживания любого пользовательского события, которое может потребоваться отслеживанию приложения, например нажатия кнопки или другого вызова API. Он принимает четыре аргумента:
+-   Application Insights экземпляр (который можно получить из `useAppInsightsContext` обработчика).
+-   Имя события.
+-   Объект данных события, инкапсулирующий изменения, которые должны быть отслеживанием.
+-   Скипфирструн (необязательный) флаг для пропуска вызова `trackEvent` вызова при инициализации. Значение по умолчанию — `true`.
 
 ```javascript
 import React, { useState, useEffect } from "react";
@@ -223,7 +227,7 @@ const App = () => {
 
 Ознакомьтесь с [демонстрацией Application Insights реагировать](https://github.com/Azure-Samples/application-insights-react-demo).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о пакете SDK для JavaScript см. в [документации по Application Insights JavaScript SDK](javascript.md).
 - Дополнительные сведения о языке запросов Kusto и запросе данных в Log Analytics см. в разделе [Общие сведения о запросе журнала](../../azure-monitor/logs/log-query-overview.md).

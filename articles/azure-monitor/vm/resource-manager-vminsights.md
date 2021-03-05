@@ -1,17 +1,16 @@
 ---
 title: Примеры шаблонов Resource Manager для аналитики виртуальных машин
 description: Примеры шаблонов Azure Resource Manager для развертывания и настройки аналитики виртуальных машин.
-ms.subservice: logs
 ms.topic: sample
 author: bwren
 ms.author: bwren
 ms.date: 05/18/2020
-ms.openlocfilehash: fa18a5f2af79d75c4eba8c6822f1a7ed8ca4efa8
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2ee447b1e5f72ce916808a5832f999eea493994c
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101733760"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102046845"
 ---
 # <a name="resource-manager-template-samples-for-vm-insights"></a>Примеры шаблонов Resource Manager для аналитики виртуальных машин
 В этой статье представлены примеры [шаблонов Azure Resource Manager](../../azure-resource-manager/templates/template-syntax.md) для включения аналитики виртуальных машин на виртуальных машинах. Каждый пример включает файл шаблона и файл параметров с примерами значений для предоставления шаблона.

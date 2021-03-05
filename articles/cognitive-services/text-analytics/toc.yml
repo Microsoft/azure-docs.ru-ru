@@ -91,7 +91,7 @@
 - name: Справочник
   items:
     - name: Справочник по CLI
-      href: /cli/azure/cognitiveservices?view=azure-cli-latest#az_cognitiveservices_list
+      href: /cli/azure/cognitiveservices#az_cognitiveservices_list
     - name: Справочник по PowerShell
       href: /powershell/module/azurerm.cognitiveservices/
     - name: API Анализа текста

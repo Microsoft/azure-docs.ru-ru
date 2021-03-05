@@ -328,6 +328,8 @@
       items:
         - name: Сравнение JSON и Bicep
           href: compare-template-syntax.md
+    - name: Типы данных
+      href: data-types.md
     - name: Часто задаваемые вопросы
       href: frequently-asked-questions.md
     - name: Шаблоны для обеспечения согласованности данных в облаке

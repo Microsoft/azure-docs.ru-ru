@@ -6,12 +6,12 @@ ms.topic: overview
 description: Сведения о предоставлении в Azure Dev Spaces интерфейса быстрой последовательной разработки Kubernetes для команд, которые работают с кластерами Службы Azure Kubernetes.
 keywords: Docker, Kubernetes, Azure, AKS, Служба Azure Kubernetes, контейнеры, kubectl, k8s
 manager: gwallace
-ms.openlocfilehash: 9bdd6f48a8f48266b8a9aad003fe6ea43715036c
-ms.sourcegitcommit: d103a93e7ef2dde1298f04e307920378a87e982a
+ms.openlocfilehash: fd6f52c71c81f253f3f40f05408e45b6a6c0dbce
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91978447"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102199481"
 ---
 # <a name="what-is-azure-dev-spaces"></a>Что такое Azure Dev Spaces?
 
@@ -40,7 +40,7 @@ Azure Dev Spaces предоставляет набор инструментов 
 
 ## <a name="supported-regions-and-configurations"></a>Поддерживаемые регионы и конфигурации
 
-Azure Dev Spaces поддерживается только кластерами AKS в [некоторых регионах][supported-regions]. Azure Dev Spaces поддерживает [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) и [Visual Studio Code](https://code.visualstudio.com/download) с [расширением Azure Dev Spaces](https://marketplace.visualstudio.com/items?itemName=azuredevspaces.azds) в Linux, macOS и Windows 8 или более поздней версии для создания и запуска приложений в AKS. Также поддерживается [Visual Studio 2019](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) на платформе Windows с рабочей нагрузкой для разработки в Azure.
+Azure Dev Spaces поддерживается только кластерами AKS в [некоторых регионах][supported-regions]. Azure Dev Spaces поддерживает [Azure CLI](/cli/azure/install-azure-cli) и [Visual Studio Code](https://code.visualstudio.com/download) с [расширением Azure Dev Spaces](https://marketplace.visualstudio.com/items?itemName=azuredevspaces.azds) в Linux, macOS и Windows 8 или более поздней версии для создания и запуска приложений в AKS. Также поддерживается [Visual Studio 2019](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) на платформе Windows с рабочей нагрузкой для разработки в Azure.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.custom: devx-track-azurecli
 description: Узнайте, как обновить средства командной строки Azure Dev Spaces и расширения Visual Studio Code или Visual Studio.
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, containers
-ms.openlocfilehash: 2c2878f71deedd8df39316290735df734b97b92a
-ms.sourcegitcommit: d103a93e7ef2dde1298f04e307920378a87e982a
+ms.openlocfilehash: f17643e6130abbc9d5da8b484144c95b0e803f33
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91960292"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102199243"
 ---
 # <a name="how-to-upgrade-azure-dev-spaces-tools"></a>Обновление средств Azure Dev Spaces
 
@@ -23,7 +23,7 @@ ms.locfileid: "91960292"
 
 При обновлении до последней версии Azure CLI вы автоматически получаете последнюю версию расширения интерфейса командной строки для Azure Dev Spaces.
 
-Предыдущую версию удалять не нужно, просто найдите нужный файл для скачивания на странице [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest).
+Предыдущую версию удалять не нужно, просто найдите нужный файл для скачивания на странице [Azure CLI](/cli/azure/install-azure-cli).
 
 
 ## <a name="update-the-dev-spaces-cli-extension-and-command-line-tools"></a>Обновление расширения CLI для Azure Dev Spaces и средств командной строки

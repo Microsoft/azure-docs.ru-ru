@@ -5,18 +5,17 @@ services: active-directory
 ms.service: active-directory
 ms.subservice: B2B
 ms.topic: conceptual
-ms.date: 03/02/2021
+ms.date: 03/04/2021
 ms.author: mimart
 author: msmimart
 manager: celestedg
-ms.reviewer: elisol
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95c7ca826eaf7d72cb35985b154458f149ef4a0e
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: df867059a7d4020952f71ca8d663a644ee2428fd
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101649324"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102199634"
 ---
 # <a name="azure-active-directory-b2b-collaboration-invitation-redemption"></a>Активация приглашения службы совместной работы Azure Active Directory B2B
 
@@ -35,6 +34,7 @@ ms.locfileid: "101649324"
 ![Общий вход в конечную точку](media/redemption-experience/common-endpoint-flow-small.png)
 
 Затем пользователь перенаправляется в клиентскую конечную точку, где можно выполнить вход с помощью адреса электронной почты или выбрать настроенного поставщика удостоверений.
+
 ## <a name="redemption-through-a-direct-link"></a>Активация с помощью прямой ссылки
 
 В качестве альтернативы почтовому приглашению или общему URL-адресу приложения вы можете предоставить Гостевой веб-каналу прямую ссылку на приложение или портал. Сначала необходимо добавить гостевого пользователя в каталог с помощью [портала Azure](./b2b-quickstart-add-guest-users-portal.md) или [PowerShell](./b2b-quickstart-invite-powershell.md). Затем можно использовать любой из [настраиваемых способов развертывания приложений для пользователей](../manage-apps/end-user-experiences.md), включая ссылки для прямого входа. Когда гость использует прямую ссылку вместо приглашения по электронной почте, он все равно пройдет процедуру получения первоначального согласия.
@@ -73,7 +73,7 @@ ms.locfileid: "101649324"
 
 3. Если администратор включил [федерацию Google](./google-federation.md), Azure AD проверяет, является ли суффикс домена пользователя gmail.com или googlemail.com и перенаправляет пользователя в Google.
 
-4. Процесс активации проверяет наличие у пользователя [существующей учетной записи Майкрософт (MSA)](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create).
+4. Процесс активации проверяет наличие у пользователя существующего личного [учетная запись Майкрософт (MSA)](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create) для JIT-активации, но не для активации ссылки по электронной почте. Если у пользователя уже есть существующая MSA, он будет входить в систему с использованием существующей MSA.
 
 5. После идентификации **домашнего каталога пользователя** он перенаправляется соответствующему поставщику удостоверений для входа в систему.  
 

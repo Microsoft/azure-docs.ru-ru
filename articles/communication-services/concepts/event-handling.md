@@ -9,16 +9,14 @@ ms.author: mikben
 ms.date: 09/30/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: e661b99e3c5028f40ea69ddedc22c7ee2895acec
-ms.sourcegitcommit: 230d5656b525a2c6a6717525b68a10135c568d67
+ms.openlocfilehash: cb253ebfd8269779adf02dcbc01d7998590ce78c
+ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94888731"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "101657168"
 ---
 # <a name="event-handling-in-azure-communication-services"></a>Обработка событий в Службах коммуникации Azure
-
-[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
 
 Службы коммуникации Azure интегрируются со службой [Сетка событий Azure](https://azure.microsoft.com/services/event-grid/), чтобы получать уведомления о событиях в реальном времени в надежном, безопасном режиме с возможностью масштабирования. Цель этой статьи — помочь вам настроить приложения для прослушивания событий Служб коммуникации. Например, может потребоваться обновить базу данных, создать рабочий элемент и доставить push-уведомление при получении SMS-сообщения на номер телефона, связанный с ресурсом Служб коммуникации.
 
@@ -26,9 +24,12 @@ ms.locfileid: "94888731"
 
 :::image type="content" source="https://docs.microsoft.com/azure/event-grid/media/overview/functional-model.png" alt-text="Схема, показывающая модель событий в Сетке событий Azure.":::
 
+> [!NOTE]
+> Дополнительные сведения о том, как место расположения данных связано с обработкой событий, см. в [концептуальной документации по месту расположения данных](./privacy.md).
+
 ## <a name="events-types"></a>Типы событий
 
-Сетка событий использует [подписки на события](../../event-grid/concepts.md#event-subscriptions) для маршрутизации сообщений о событиях подписчикам. 
+Сетка событий использует [подписки на события](../../event-grid/concepts.md#event-subscriptions) для маршрутизации сообщений о событиях подписчикам.
 
 Службы коммуникации Azure создают события следующих типов:
 
@@ -204,7 +205,7 @@ ms.locfileid: "94888731"
 }]
 ```
 
-### <a name="microsoftcommunicationchatthreadcreatedwithuser-event"></a>Microsoft.Communication.ChatThreadCreatedWithUser event 
+### <a name="microsoftcommunicationchatthreadcreatedwithuser-event"></a>Microsoft.Communication.ChatThreadCreatedWithUser event
 
 ```json
 [{
@@ -262,7 +263,7 @@ ms.locfileid: "94888731"
 }]
 ```
 
-### <a name="microsoftcommunicationchatthreadpropertiesupdatedperuser-event"></a>Microsoft.Communication.ChatThreadPropertiesUpdatedPerUser event 
+### <a name="microsoftcommunicationchatthreadpropertiesupdatedperuser-event"></a>Microsoft.Communication.ChatThreadPropertiesUpdatedPerUser event
 
 ```json
 [{

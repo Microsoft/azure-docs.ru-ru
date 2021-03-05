@@ -3,12 +3,12 @@ title: Включение управляемого удостоверения в
 description: Узнайте, как включить управляемое удостоверение в службе "экземпляры контейнеров Azure", которое может проходить проверку подлинности в других службах Azure
 ms.topic: article
 ms.date: 07/02/2020
-ms.openlocfilehash: 67ef17b77a9db92e539dd860a3083760fe1160db
-ms.sourcegitcommit: 65a4f2a297639811426a4f27c918ac8b10750d81
+ms.openlocfilehash: a0d029e39122ca7bb858103f4d7f88e2536850d5
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96558952"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198325"
 ---
 # <a name="how-to-use-managed-identities-with-azure-container-instances"></a>Использование управляемых удостоверений для службы "Экземпляры контейнеров Azure"
 
@@ -53,13 +53,13 @@ ms.locfileid: "96558952"
 
 В примерах, приведенных в этой статье, для доступа к секрету хранилища ключей Azure используется управляемое удостоверение в службе "экземпляры контейнеров Azure". 
 
-Для начала создайте группу ресурсов с именем *myResourceGroup* в регионе *eastus* с помощью следующей команды [az group create](/cli/azure/group?view=azure-cli-latest#az-group-create):
+Для начала создайте группу ресурсов с именем *myResourceGroup* в регионе *eastus* с помощью следующей команды [az group create](/cli/azure/group#az-group-create):
 
 ```azurecli-interactive
 az group create --name myResourceGroup --location eastus
 ```
 
-Чтобы создать хранилище ключей, используйте команду [AZ keyvault Create](/cli/azure/keyvault?view=azure-cli-latest#az-keyvault-create) . Не забудьте указать уникальное имя хранилища ключей. 
+Чтобы создать хранилище ключей, используйте команду [AZ keyvault Create](/cli/azure/keyvault#az-keyvault-create) . Не забудьте указать уникальное имя хранилища ключей. 
 
 ```azurecli-interactive
 az keyvault create \
@@ -68,7 +68,7 @@ az keyvault create \
   --location eastus
 ```
 
-Сохраните пример секрета в хранилище ключей с помощью команды [AZ keyvault Secret Set](/cli/azure/keyvault/secret?view=azure-cli-latest#az-keyvault-secret-set) :
+Сохраните пример секрета в хранилище ключей с помощью команды [AZ keyvault Secret Set](/cli/azure/keyvault/secret#az-keyvault-secret-set) :
 
 ```azurecli-interactive
 az keyvault secret set \
@@ -83,7 +83,7 @@ az keyvault secret set \
 
 ### <a name="create-an-identity"></a>Создание удостоверения
 
-Первым делом создайте в подписке удостоверение, используя команду [az identity create](/cli/azure/identity?view=azure-cli-latest#az-identity-create). Вы можете использовать ту же группу ресурсов, которая использовалась для создания хранилища ключей, или использовать другое.
+Первым делом создайте в подписке удостоверение, используя команду [az identity create](/cli/azure/identity#az-identity-create). Вы можете использовать ту же группу ресурсов, которая использовалась для создания хранилища ключей, или использовать другое.
 
 ```azurecli-interactive
 az identity create \
@@ -91,7 +91,7 @@ az identity create \
   --name myACIId
 ```
 
-Чтобы применить это удостоверение на следующих шагах, выполните команду [az identity show](/cli/azure/identity?view=azure-cli-latest#az-identity-show) для сохранения идентификатора субъекта-службы и идентификатора ресурса в переменных.
+Чтобы применить это удостоверение на следующих шагах, выполните команду [az identity show](/cli/azure/identity#az-identity-show) для сохранения идентификатора субъекта-службы и идентификатора ресурса в переменных.
 
 ```azurecli-interactive
 # Get service principal ID of the user-assigned identity
@@ -109,7 +109,7 @@ resourceID=$(az identity show \
 
 ### <a name="grant-user-assigned-identity-access-to-the-key-vault"></a>Предоставление пользователю доступа к хранилищу ключей
 
-Выполните следующую команду [AZ keyvault Set-Policy](/cli/azure/keyvault?view=azure-cli-latest) , чтобы задать политику доступа для хранилища ключей. В следующем примере можно назначить пользователю удостоверение для получения секретов из хранилища ключей:
+Выполните следующую команду [AZ keyvault Set-Policy](/cli/azure/keyvault) , чтобы задать политику доступа для хранилища ключей. В следующем примере можно назначить пользователю удостоверение для получения секретов из хранилища ключей:
 
 ```azurecli-interactive
  az keyvault set-policy \
@@ -121,7 +121,7 @@ resourceID=$(az identity show \
 
 ### <a name="enable-user-assigned-identity-on-a-container-group"></a>Включение назначенного пользователем удостоверения в группе контейнеров
 
-Выполните следующую команду [AZ Container Create](/cli/azure/container?view=azure-cli-latest#az-container-create) , чтобы создать экземпляр контейнера на основе `azure-cli` образа Майкрософт. В этом примере представлена группа из одного контейнера, которую можно использовать в интерактивном режиме для запуска Azure CLI для доступа к другим службам Azure. В этом разделе используется только базовая операционная система. Пример использования Azure CLI в контейнере см. в разделе [Включение назначенного системой удостоверения для группы контейнеров](#enable-system-assigned-identity-on-a-container-group). 
+Выполните следующую команду [AZ Container Create](/cli/azure/container#az-container-create) , чтобы создать экземпляр контейнера на основе `azure-cli` образа Майкрософт. В этом примере представлена группа из одного контейнера, которую можно использовать в интерактивном режиме для запуска Azure CLI для доступа к другим службам Azure. В этом разделе используется только базовая операционная система. Пример использования Azure CLI в контейнере см. в разделе [Включение назначенного системой удостоверения для группы контейнеров](#enable-system-assigned-identity-on-a-container-group). 
 
 Параметр `--assign-identity` передает группе назначаемое пользователем управляемое удостоверение. Длительно выполняющаяся команда поддерживает выполнение контейнера. В этом примере используется та же группа ресурсов, которая использовалась для создания хранилища ключей, но можно указать другой.
 
@@ -134,7 +134,7 @@ az container create \
   --command-line "tail -f /dev/null"
 ```
 
-Через несколько секунд вы должны получить ответ из интерфейса командной строки Azure, указывающий, что развертывание завершено. Проверьте его состояние с помощью команды [AZ Container показывать](/cli/azure/container?view=azure-cli-latest#az-container-show) .
+Через несколько секунд вы должны получить ответ из интерфейса командной строки Azure, указывающий, что развертывание завершено. Проверьте его состояние с помощью команды [AZ Container показывать](/cli/azure/container#az-container-show) .
 
 ```azurecli-interactive
 az container show \
@@ -206,7 +206,7 @@ curl https://mykeyvault.vault.azure.net/secrets/SampleSecret/?api-version=2016-1
 
 ### <a name="enable-system-assigned-identity-on-a-container-group"></a>Включение назначенного системой удостоверения для группы контейнеров
 
-Выполните следующую команду [AZ Container Create](/cli/azure/container?view=azure-cli-latest#az-container-create) , чтобы создать экземпляр контейнера на основе `azure-cli` образа Майкрософт. В этом примере представлена группа из одного контейнера, которую можно использовать в интерактивном режиме для запуска Azure CLI для доступа к другим службам Azure. 
+Выполните следующую команду [AZ Container Create](/cli/azure/container#az-container-create) , чтобы создать экземпляр контейнера на основе `azure-cli` образа Майкрософт. В этом примере представлена группа из одного контейнера, которую можно использовать в интерактивном режиме для запуска Azure CLI для доступа к другим службам Azure. 
 
 Параметр `--assign-identity` без дополнительных значений включает для группы назначаемое системой управляемое удостоверение. Удостоверение ограничивается группой ресурсов группы контейнеров. Длительно выполняющаяся команда поддерживает выполнение контейнера. В этом примере используется та же группа ресурсов, которая используется для создания хранилища ключей, которое находится в области удостоверения.
 
@@ -255,7 +255,7 @@ spID=$(az container show \
 
 ### <a name="grant-container-group-access-to-the-key-vault"></a>Предоставление группе контейнеров доступа к хранилищу ключей
 
-Выполните следующую команду [AZ keyvault Set-Policy](/cli/azure/keyvault?view=azure-cli-latest) , чтобы задать политику доступа для хранилища ключей. В следующем примере управляемое системой удостоверение позволяет получить секреты из хранилища ключей:
+Выполните следующую команду [AZ keyvault Set-Policy](/cli/azure/keyvault) , чтобы задать политику доступа для хранилища ключей. В следующем примере управляемое системой удостоверение позволяет получить секреты из хранилища ключей:
 
 ```azurecli-interactive
  az keyvault set-policy \

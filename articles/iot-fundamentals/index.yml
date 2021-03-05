@@ -10,12 +10,12 @@ metadata:
   author: philmea
   ms.author: philmea
   ms.date: 09/04/2019
-  ms.openlocfilehash: 568be9f64704932f278f571373fae1bb774e521c
-  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.openlocfilehash: e7f3d47e17b090d04db6a52260c3a4c70db91fba
+  ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/03/2021
-  ms.locfileid: "101724750"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102199107"
 highlightedContent:
   items:
   - title: Что такое Azure IoT?
@@ -29,7 +29,7 @@ highlightedContent:
     url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
   - title: Начало разработки с использованием Azure CLI для Интернета вещей Azure
     itemType: reference
-    url: /cli/azure/azure-cli-reference-for-IoT?view=azure-cli-latest
+    url: /cli/azure/azure-cli-reference-for-IoT
   - title: Обзор примеров кода для Интернета вещей Azure
     itemType: overview
     url: /samples/browse/?term=iot

@@ -4,12 +4,12 @@ description: Этот скрипт Azure CLI предназначен для с�
 ms.devlang: azurecli
 ms.topic: sample
 ms.date: 08/11/2020
-ms.openlocfilehash: b64b6fa13bd0d320707dc279cb554d5c23f1d80d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: c7625f62d7897d61903f864b216ccf9aa13648ea
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88136173"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198427"
 ---
 # <a name="use-azure-cli-to-create-and-verify-availability-of-a-virtual-machine-in-a-lab-in-azure-devtest-labs"></a>Создание и проверка доступности виртуальной машины в лаборатории в Azure DevTest Labs с помощью Azure CLI
 
@@ -38,8 +38,8 @@ az group delete --name myResourceGroup
 | Get-Help | Примечания |
 |---|---|
 | [az group create](/cli/azure/group#az-group-create) | Создает группу ресурсов, в которой хранятся все ресурсы. |
-| [az lab vm create](/cli/azure/lab/vm?view=azure-cli-latest#az-lab-vm-create) | Создание виртуальной машины в лаборатории. |
-| [az lab vm show](/cli/azure/lab/vm?view=azure-cli-latest#az-lab-vm-show) | Отображение сведений о состоянии VM в лаборатории. |
+| [az lab vm create](/cli/azure/lab/vm#az-lab-vm-create) | Создание виртуальной машины в лаборатории. |
+| [az lab vm show](/cli/azure/lab/vm#az-lab-vm-show) | Отображение сведений о состоянии VM в лаборатории. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

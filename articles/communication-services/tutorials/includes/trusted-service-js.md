@@ -8,12 +8,12 @@ ms.author: dademath
 ms.date: 07/28/2020
 ms.topic: include
 ms.service: azure-communication-services
-ms.openlocfilehash: a16846b8859f93a2d376691115e4b2dd0a7163b6
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.openlocfilehash: 6790335e5aa63f515cd125f31a8ccd7877132c10
+ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98633421"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "101661348"
 ---
 ## <a name="download-code"></a>Скачивание кода
 
@@ -23,8 +23,8 @@ ms.locfileid: "98633421"
 
 - Учетная запись Azure с активной подпиской. Дополнительные сведения см. на странице [Создайте бесплатную учетную запись Azure уже сегодня](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - [Visual Studio Code](https://code.visualstudio.com/) на одной из [поддерживаемых платформ](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
-- [Node.js](https://nodejs.org/), активная версия LTS и версия Maintenance LTS (рекомендуется 10.14.1). Используйте команду `node --version`, чтобы проверить установленную версию. 
-- [Расширение "Функции Azure"](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) для Visual Studio Code. 
+- [Node.js](https://nodejs.org/), активная версия LTS и версия Maintenance LTS (рекомендуется 10.14.1). Используйте команду `node --version`, чтобы проверить установленную версию.
+- [Расширение "Функции Azure"](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) для Visual Studio Code.
 - Активный ресурс Служб коммуникации и строка подключения. [Создайте ресурс Служб коммуникации.](../../quickstarts/create-communication-resource.md)
 
 ## <a name="overview"></a>Обзор
@@ -74,13 +74,13 @@ module.exports = async function (context, req) {
 
 ### <a name="install-communication-services-libraries"></a>Установка библиотек Служб коммуникации
 
-Для создания `User Access Tokens` мы будем использовать библиотеку `Administration`.
+Для создания `User Access Tokens` мы будем использовать библиотеку `Identity`.
 
-Выполните команду `npm install`, чтобы установить клиентскую библиотеку администрирования Служб коммуникации для JavaScript.
+Используйте команду `npm install`, чтобы установить клиентскую библиотеку удостоверений Служб коммуникации для JavaScript.
 
 ```console
 
-npm install @azure/communication-administration --save
+npm install @azure/communication-identity --save
 
 ```
 
@@ -89,7 +89,7 @@ npm install @azure/communication-administration --save
 В верхней части файла `index.js` импортируйте интерфейс для `CommunicationIdentityClient`.
 
 ```javascript
-const { CommunicationIdentityClient } = require('@azure/communication-administration');
+const { CommunicationIdentityClient } = require('@azure/communication-identity');
 ```
 
 ## <a name="access-token-generation"></a>Создание маркера доступа
@@ -102,7 +102,7 @@ const { CommunicationIdentityClient } = require('@azure/communication-administra
 const connectionString = 'INSERT YOUR RESOURCE CONNECTION STRING'
 ```
 
-Далее мы изменим исходную функцию для создания `User Access Tokens`. 
+Далее мы изменим исходную функцию для создания `User Access Tokens`.
 
 `User Access Tokens` формируются путем создания пользователя из метода `createUser`. После создания пользователя можно использовать метод `issueToken` для создания маркера для этого пользователя, который возвращает функцию Azure.
 
@@ -136,7 +136,7 @@ module.exports = async function (context, req) {
 
 Чтобы развернуть функцию Azure, выполните эти [пошаговые инструкции](../../../azure-functions/create-first-function-vs-code-csharp.md?pivots=programming-language-javascript#sign-in-to-azure).
 
-Как правило, вам необходимо будет сделать следующее:
+Таким образом, вам потребуется сделать следующее:
 1. Войдите в Azure из Visual Studio.
 2. Опубликуйте проект в учетной записи Azure. Выберите имеющуюся подписку.
 3. Создайте ресурс функции Azure с помощью мастера Visual Studio или используйте имеющийся ресурс. Новый ресурс необходимо настроить для нужного региона, среды выполнения и уникального идентификатора.

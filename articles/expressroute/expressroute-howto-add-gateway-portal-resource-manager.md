@@ -5,15 +5,15 @@ services: expressroute
 author: duongau
 ms.service: expressroute
 ms.topic: tutorial
-ms.date: 10/05/2020
+ms.date: 03/03/2021
 ms.author: duau
 ms.custom: seodec18
-ms.openlocfilehash: 56e35c23eacdf98db283ba5d8c2e32687cbe0ea8
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6c6969fdf413c4eb5e7bbcf046fc397834d6c0a2
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101740908"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102038923"
 ---
 # <a name="tutorial-configure-a-virtual-network-gateway-for-expressroute-using-the-azure-portal"></a>Руководство по Настройка шлюза виртуальной сети для ExpressRoute с помощью портала Azure
 > [!div class="op_single_selector"]
@@ -67,9 +67,9 @@ ms.locfileid: "101740908"
 
     Если вы используете виртуальную сеть с двумя стеками и планируете использовать частный пиринг на основе IPv6 через ExpressRoute, щелкните **Добавить диапазон адресов IPv6** и введите значения для параметра **Диапазон IPv6-адресов**.
 
-Затем щелкните **ОК**, чтобы сохранить значения и создать подсеть шлюза.
+    Затем щелкните **ОК**, чтобы сохранить значения и создать подсеть шлюза.
 
-    :::image type="content" source="./media/expressroute-howto-add-gateway-portal-resource-manager/add-subnet-gateway.png" alt-text="Adding the subnet":::
+    :::image type="content" source="./media/expressroute-howto-add-gateway-portal-resource-manager/add-subnet-gateway.png" alt-text="Добавление подсети":::
 
 ## <a name="create-the-virtual-network-gateway"></a>Создание шлюза виртуальной сети
 

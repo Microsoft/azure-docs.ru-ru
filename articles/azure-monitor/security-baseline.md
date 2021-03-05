@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: eba05ce7e7575ec773a4796d87bdd82168fe5b1d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 39dff9b48fb292d8a1c145ae3e592786ddb027a4
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101725662"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198835"
 ---
 # <a name="azure-security-baseline-for-azure-monitor"></a>Базовый план безопасности Azure для Azure Monitor
 
@@ -431,9 +431,9 @@ Application Insights и Log Analytics оба продолжают принима
 
 **Руководство**. Использование Azure CLI для запроса и обнаружения Azure Monitorных ресурсов в подписках. Убедитесь в том, что в вашем клиенте есть соответствующие разрешения (на чтение) и вы можете перечислить все подписки Azure, а также ресурсы в ваших подписках.
 
-- [Azure Monitor CLI](https://docs.microsoft.com/cli/azure/monitor?view=azure-cli-latest&amp;preserve-view=true)
+- [Azure Monitor CLI](https://docs.microsoft.com/cli/azure/monitor)
 
-- [Как просматривать подписки Azure](https://docs.microsoft.com/powershell/module/az.accounts/get-azsubscription?view=azps-4.8.0&amp;preserve-view=true)
+- [Как просматривать подписки Azure](https://docs.microsoft.com/powershell/module/az.accounts/get-azsubscription?view=azps-4.8.0&preserve-view=true)
 
 - [Общие сведения об Azure RBAC](../role-based-access-control/overview.md)
 

@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.service: iot-dps
 services: iot-dps
 ms.custom: mvc, subject-armqs, devx-track-azurecli
-ms.openlocfilehash: cc55d1569c85dd0873d0132833acc99bd5d06136
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 505859075ce58c5db6873544123710a11135651a
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98928934"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198631"
 ---
 # <a name="quickstart-set-up-the-iot-hub-device-provisioning-service-dps-with-an-arm-template"></a>Краткое руководство. Настройка Службы подготовки устройств к добавлению в Центр Интернета вещей с помощью шаблона ARM
 
@@ -136,13 +136,13 @@ ms.locfileid: "98928934"
 
 ## <a name="review-deployed-resources"></a>Просмотр развернутых ресурсов
 
-1. Чтобы проверить развертывание, выполните следующую [команду получения списка ресурсов](/cli/azure/resource?view=azure-cli-latest#az-resource-list&preserve-view=true), после чего найдите в выходных данных новую службу подготовки и центр Интернета вещей:
+1. Чтобы проверить развертывание, выполните следующую [команду получения списка ресурсов](/cli/azure/resource#az-resource-list), после чего найдите в выходных данных новую службу подготовки и центр Интернета вещей:
 
     ```azurecli
      az resource list -g "${projectName}rg"
     ```
 
-2. Чтобы убедиться, что центр Интернета вещей связан с ресурсом DPS, выполните следующую команду [для отображения расширения DPS](/cli/azure/iot/dps?view=azure-cli-latest#az_iot_dps_show&preserve-view=true).
+2. Чтобы убедиться, что центр Интернета вещей связан с ресурсом DPS, выполните следующую команду [для отображения расширения DPS](/cli/azure/iot/dps#az_iot_dps_show).
 
     ```azurecli
      az iot dps show --name <Your provisioningServiceName>

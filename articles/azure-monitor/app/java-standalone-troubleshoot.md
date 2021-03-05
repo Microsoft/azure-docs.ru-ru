@@ -4,12 +4,12 @@ description: Узнайте, как устранять неполадки аге
 ms.topic: conceptual
 ms.date: 11/30/2020
 ms.custom: devx-track-java
-ms.openlocfilehash: 286354ecf508dec7b9ba7633bf3b5c7ddc6bfd91
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 45f45e71546909b71c71c66303c1459edd74548f
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101737063"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102199617"
 ---
 # <a name="troubleshooting-guide-azure-monitor-application-insights-for-java"></a>Руководство по устранению неполадок: Azure Monitor Application Insights для Java
 
@@ -45,7 +45,7 @@ ms.locfileid: "101737063"
 
 Лучший способ узнать, соответствует ли определенная инструкция ведения журнала заданному пороговому значению платформ ведения журналов, — убедиться, что она отображается в нормальном журнале приложений (например, файл или консоль).
 
-Также обратите внимание, что если в средство ведения журнала передается исключение, сообщение журнала (и исключение) будет отображаться в портал Azure в `exceptions` таблице, а не в `traces` таблице.
+Также обратите внимание, что если в средство ведения журнала передается объект исключения, то сообщение журнала (и сведения об объекте исключения) будет отображаться в портал Azure в `exceptions` таблице, а не в `traces` таблице.
 
 Дополнительные сведения см. в разделе [Конфигурация автоматического сбора журналов](./java-standalone-config.md#auto-collected-logging) .
 

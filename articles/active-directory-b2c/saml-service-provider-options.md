@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/03/2021
+ms.date: 03/04/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.custom: fasttrack-edit
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: b9a491b639cd1b960ffe3b7164a0940770792148
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: adfe5318949ffa624ebe3548944b558bd0dda9e1
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102107778"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198478"
 ---
 # <a name="options-for-registering-a-saml-application-in-azure-ad-b2c"></a>Параметры регистрации приложения SAML в Azure AD B2C
 
@@ -60,6 +60,54 @@ Azure AD B2C использует сертификат открытого клю
     <Protocol Name="SAML2"/>
     <Metadata>
       <Item Key="WantsEncryptedAssertions">true</Item>
+    </Metadata>
+   ..
+  </TechnicalProfile>
+</RelyingParty>
+```
+
+### <a name="encryption-method"></a>Метод шифрования
+
+Чтобы настроить метод шифрования, используемый для шифрования данных утверждения SAML, установите `DataEncryptionMethod` ключ метаданных в пределах проверяющей стороны. Возможные значения: `Aes256` (по умолчанию), `Aes192` , `Sha512` или `Aes128` . Метаданные контролирует значение `<EncryptedData>` элемента в ответе SAML.
+
+Чтобы настроить метод шифрования, используемый для шифрования копии ключа, который использовался для шифрования данных утверждения SAML, установите `KeyEncryptionMethod` ключ метаданных в пределах проверяющей стороны. Допустимые значения: `Rsa15` (по умолчанию) — алгоритм шифрования по стандарту криптографии для открытого ключа RSA (PKCS) версии 1,5, а `RsaOaep` -алгоритм (с оптимальным асимметричным шифрованием OAEP) RSA.  Метаданные контролирует значение  `<EncryptedKey>` элемента в ответе SAML.
+
+В следующем примере показан `EncryptedAssertion` раздел утверждения SAML. Метод зашифрованных данных — `Aes128` , а зашифрованный метод ключа — `Rsa15` .
+
+```xml
+<saml:EncryptedAssertion>
+  <xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"
+    xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+    <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" />
+    <dsig:KeyInfo>
+      <xenc:EncryptedKey>
+        <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5" />
+        <xenc:CipherData>
+          <xenc:CipherValue>...</xenc:CipherValue>
+        </xenc:CipherData>
+      </xenc:EncryptedKey>
+    </dsig:KeyInfo>
+    <xenc:CipherData>
+      <xenc:CipherValue>...</xenc:CipherValue>
+    </xenc:CipherData>
+  </xenc:EncryptedData>
+</saml:EncryptedAssertion>
+```
+
+Можно изменить формат зашифрованных утверждений. Чтобы настроить формат шифрования, установите `UseDetachedKeys` ключ метаданных в пределах проверяющей стороны. Возможные значения: `true` или `false` (по умолчанию). Если для этого параметра задано значение `true` , отсоединенные ключи добавляют зашифрованное утверждение в качестве дочернего элемента, а не объекта `EncrytedAssertion` `EncryptedData` .
+
+Настройте метод шифрования и формат, используя ключи метаданных в [техническом профиле проверяющей](relyingparty.md#technicalprofile)стороны:
+
+```xml
+<RelyingParty>
+  <DefaultUserJourney ReferenceId="SignUpOrSignIn" />
+  <TechnicalProfile Id="PolicyProfile">
+    <DisplayName>PolicyProfile</DisplayName>
+    <Protocol Name="SAML2"/>
+    <Metadata>
+      <Item Key="DataEncryptionMethod">Aes128</Item>
+      <Item Key="KeyEncryptionMethod">Rsa15</Item>
+      <Item Key="UseDetachedKeys">false</Item>
     </Metadata>
    ..
   </TechnicalProfile>
@@ -114,7 +162,7 @@ https://<tenant-name>.b2clogin.com/<tenant-name>.onmicrosoft.com/<policy-name>/g
 
 Вы можете настроить алгоритм подписи, используемый для подписания утверждения SAML. Возможные значения: `Sha256`, `Sha384`, `Sha512` или `Sha1`. Убедитесь, что в техническом профиле и приложении используется один и тот же алгоритм подписи. Используйте только тот алгоритм, который поддерживается вашим сертификатом.
 
-Настройте алгоритм подписи с помощью `XmlSignatureAlgorithm` ключа метаданных в узле метаданных релингпарти.
+Настройте алгоритм подписи с помощью `XmlSignatureAlgorithm` ключа метаданных в элементе метаданных проверяющей стороны.
 
 ```xml
 <RelyingParty>
@@ -132,7 +180,7 @@ https://<tenant-name>.b2clogin.com/<tenant-name>.onmicrosoft.com/<policy-name>/g
 
 ## <a name="saml-response-lifetime"></a>Время существования ответа SAML
 
-Можно настроить период времени, в течение которого ответ SAML остается действительным. Задайте время существования с помощью `TokenLifeTimeInSeconds` элемента метаданных в техническом профиле издателя маркера SAML. Это значение равно количеству секунд, которое может пройти из `NotBefore` метки времени, вычисленной на момент выдачи маркера. Время, выбранное для текущего времени, будет автоматически. Время жизни по умолчанию составляет 300 секунд (5 минут).
+Можно настроить период времени, в течение которого ответ SAML остается действительным. Задайте время существования с помощью `TokenLifeTimeInSeconds` элемента метаданных в техническом профиле издателя маркера SAML. Это значение равно количеству секунд, которое может пройти из `NotBefore` метки времени, вычисленной на момент выдачи маркера. Время жизни по умолчанию составляет 300 секунд (5 минут).
 
 ```xml
 <ClaimsProvider>
@@ -175,6 +223,26 @@ https://<tenant-name>.b2clogin.com/<tenant-name>.onmicrosoft.com/<policy-name>/g
     </TechnicalProfile>
 ```
 
+## <a name="remove-milliseconds-from-date-and-time"></a>Удалить миллисекунды из даты и времени
+
+Можно указать, будут ли миллисекунды удаляться из значений типа DateTime в ответе SAML (включая Иссуеинстант, NotBefore, Нотонорафтер и Ауснинстант). Чтобы удалить миллисекунды, установите `RemoveMillisecondsFromDateTime
+` ключ метаданных в пределах проверяющей стороны. Возможные значения: `false` (по умолчанию) или `true` .
+
+```xml
+<ClaimsProvider>
+  <DisplayName>Token Issuer</DisplayName>
+  <TechnicalProfiles>
+    <TechnicalProfile Id="Saml2AssertionIssuer">
+      <DisplayName>Token Issuer</DisplayName>
+      <Protocol Name="SAML2"/>
+      <OutputTokenFormat>SAML2</OutputTokenFormat>
+      <Metadata>
+        <Item Key="RemoveMillisecondsFromDateTime">true</Item>
+      </Metadata>
+      ...
+    </TechnicalProfile>
+```
+
 ## <a name="azure-ad-b2c-issuer-id"></a>Идентификатор издателя Azure AD B2C
 
 При наличии нескольких приложений SAML, зависящих от разных `entityID` значений, можно переопределить `issueruri` значение в файле проверяющей стороны. Чтобы переопределить URI издателя, скопируйте технический профиль с ИДЕНТИФИКАТОРом "Saml2AssertionIssuer" из базового файла и переопределите `issueruri` значение.
@@ -182,7 +250,7 @@ https://<tenant-name>.b2clogin.com/<tenant-name>.onmicrosoft.com/<policy-name>/g
 > [!TIP]
 > Скопируйте `<ClaimsProviders>` раздел из базы данных и сохраните эти элементы в поставщике утверждений: `<DisplayName>Token Issuer</DisplayName>` , `<TechnicalProfile Id="Saml2AssertionIssuer">` и `<DisplayName>Token Issuer</DisplayName>` .
  
-Пример
+Пример.
 
 ```xml
    <ClaimsProviders>   

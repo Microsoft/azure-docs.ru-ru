@@ -15,12 +15,12 @@ ms.custom:
 - contperf-fy21q1
 - fasttrack-edit
 - iot
-ms.openlocfilehash: df706a83c4892c15140e5d5c827a248156b66069
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.openlocfilehash: 728014c53ab019f25bdc9b097c8b493411833aaa
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101095675"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198852"
 ---
 # <a name="communicate-with-your-iot-hub-using-the-mqtt-protocol"></a>Взаимодействие с Центром Интернета вещей с помощью протокола MQTT
 
@@ -160,7 +160,7 @@ device_client = IoTHubDeviceClient.create_from_connection_string(deviceConnectio
 
   Дополнительные сведения о способах создания маркеров SAS см. в соответствующем разделе статьи [Управление доступом к Центру Интернета вещей](iot-hub-devguide-security.md#use-sas-tokens-in-a-device-app).
 
-  При тестировании можно также использовать кросс-платформенные [инструменты Azure IOT для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools) или команду расширения CLI [AZ-SAS-Token](/cli/azure/ext/azure-iot/iot/hub?view=azure-cli-latest#ext-azure-iot-az-iot-hub-generate-sas-token&preserve-view=true) , чтобы быстро создать маркер SAS, который можно скопировать и вставить в свой собственный код.
+  При тестировании можно также использовать кросс-платформенные [инструменты Azure IOT для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools) или команду расширения CLI [AZ-SAS-Token](/cli/azure/ext/azure-iot/iot/hub#ext-azure-iot-az-iot-hub-generate-sas-token) , чтобы быстро создать маркер SAS, который можно скопировать и вставить в свой собственный код.
 
 ### <a name="for-azure-iot-tools"></a>Инструкции для Azure IoT Tools
 

@@ -14,12 +14,12 @@ ms.custom:
 - devx-track-azurecli
 ms.date: 03/15/2019
 ms.author: wesmc
-ms.openlocfilehash: dd622f0d55be000e2318c53f200bebf49c373724
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.openlocfilehash: e1e44f5aa4250d63c2addafd2661b09bae2b38e3
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98624326"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102199923"
 ---
 # <a name="quickstart-send-iot-telemetry-from-an-android-device"></a>Краткое руководство. Отправка данных телеметрии в центр Интернета вещей с устройства Android
 
@@ -100,7 +100,7 @@ ms.locfileid: "98624326"
 
 ## <a name="read-the-telemetry-from-your-hub"></a>Чтение данных телеметрии из концентратора
 
-В этом разделе объясняется, как использовать Azure Cloud Shell с [расширением Интернета вещей](/cli/azure/ext/azure-iot/iot?view=azure-cli-latest&preserve-view=true) для мониторинга сообщений, отправляемых устройством Android.
+В этом разделе объясняется, как использовать Azure Cloud Shell с [расширением Интернета вещей](/cli/azure/ext/azure-iot/iot) для мониторинга сообщений, отправляемых устройством Android.
 
 1. С помощью Azure Cloud Shell выполните следующую команду для установки подключения к центру Интернета вещей и чтения поступающих из него сообщений:
 

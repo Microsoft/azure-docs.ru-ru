@@ -3,12 +3,12 @@ title: Поставщики ресурсов по службам Azure
 description: Выводит список всех пространств имен поставщиков ресурсов для Azure Resource Manager и отображает службу Azure для этого пространства имен.
 ms.topic: conceptual
 ms.date: 12/01/2020
-ms.openlocfilehash: 581c25b384bf6e2865a21f083ba12eef2e5e8bcd
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: cc9793bfc0ca6cc0afbede241534453209685d94
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98733793"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198937"
 ---
 # <a name="resource-providers-for-azure-services"></a>Поставщики ресурсов для служб Azure
 
@@ -25,7 +25,7 @@ ms.locfileid: "98733793"
 | Microsoft. Адхибридхеалссервице — [зарегистрировано](#registration) | [Azure Active Directory](../../active-directory/index.yml) |
 | Microsoft.Advisor | [Помощник по Azure](../../advisor/index.yml) |
 | Microsoft.AlertsManagement | [Azure Monitor](../../azure-monitor/index.yml) |
-| Microsoft.AnalysisServices | [Azure Analysis Services](../../analysis-services/index.yml) |
+| Microsoft.AnalysisServices | [Службы Azure Analysis Services](../../analysis-services/index.yml) |
 | Microsoft.ApiManagement | [Управление API](../../api-management/index.yml) |
 | Microsoft.AppConfiguration | [Конфигурация приложений Azure](../../azure-app-configuration/index.yml) |
 | Microsoft.AppPlatform | [Azure Spring Cloud](../../spring-cloud/spring-cloud-overview.md) |
@@ -35,14 +35,14 @@ ms.locfileid: "98733793"
 | Microsoft. Аутономауссистемс | [Автономные системы](https://www.microsoft.com/ai/autonomous-systems) |
 | Microsoft.AVS | [Решение Azure VMware](../../azure-vmware/index.yml) |
 | Microsoft.AzureActiveDirectory | [Azure Active Directory B2C](../../active-directory-b2c/index.yml) |
-| Microsoft. Азуреаркдата | Реестр служб данных с включенной службой Arc Azure |
+| Microsoft. Азуреаркдата | Службы данных с поддержкой Azure Arc |
 | Microsoft.AzureData | Реестр SQL Server |
 | Microsoft.AzureStack | core |
 | Microsoft.AzureStackHCI | [Azure Stack HCI](/azure-stack/hci/overview) |
 | Microsoft.Batch | [Пакетная служба](../../batch/index.yml) |
 | Microsoft. выставление счетов — [зарегистрировано](#registration) | [Управление затратами и выставление счетов](/azure/billing/) |
 | Microsoft.BingMaps | [Карты Bing](/BingMaps/#pivot=main&panel=BingMapsAPI) |
-| Microsoft.Blockchain | [Служба Блокчейн Azure](../../blockchain/workbench/index.yml) |
+| Microsoft.Blockchain | [Служба "Блокчейн Azure"](../../blockchain/workbench/index.yml) |
 | Microsoft.BlockchainTokens | [Служба блокчейн-токенов Azure](https://azure.microsoft.com/services/blockchain-tokens/) |
 | Microsoft.Blueprint | [Azure Blueprints](../../governance/blueprints/index.yml) |
 | Microsoft.BotService | [Служба Azure Bot](/azure/bot-service/) |
@@ -74,7 +74,7 @@ ms.locfileid: "98733793"
 | Microsoft.DataFactory | [Фабрика данных](../../data-factory/index.yml) |
 | Microsoft.DataLakeAnalytics | [Аналитика озера данных](../../data-lake-analytics/index.yml) |
 | Microsoft.DataLakeStore | [Azure Data Lake Storage 2-го поколения](../../storage/blobs/data-lake-storage-introduction.md) |
-| Microsoft.DataMigration | [Миграция баз данных Azure](../../dms/index.yml) |
+| Microsoft.DataMigration | [Azure Database Migration Service](../../dms/index.yml) |
 | Microsoft.DataProtection | Защита данных |
 | Microsoft.DataShare | [Azure Data Share](../../data-share/index.yml) |
 | Microsoft.DBforMariaDB | [База данных Azure для MariaDB](../../mariadb/index.yml) |
@@ -127,7 +127,7 @@ ms.locfileid: "98733793"
 | Microsoft.Media | [Службы мультимедиа](../../media-services/index.yml) |
 | Microsoft.Microservices4Spring | [Azure Spring Cloud](../../spring-cloud/spring-cloud-overview.md) |
 | Microsoft.Migrate | [Миграция Azure](../../migrate/migrate-services-overview.md) |
-| Microsoft.MixedReality | [Пространственные привязки Azure](../../spatial-anchors/index.yml) |
+| Microsoft.MixedReality | [Пространственные привязки Azure.](../../spatial-anchors/index.yml) |
 | Microsoft.NetApp | [Azure NetApp Files](../../azure-netapp-files/index.yml) |
 | Microsoft.Network. | [Шлюз приложений](../../application-gateway/index.yml)<br />[Бастион Azure](../../bastion/index.yml)<br />[Защита от атак DDoS Azure](../../ddos-protection/ddos-protection-overview.md)<br />[Azure DNS](../../dns/index.yml)<br />[Azure ExpressRoute](../../expressroute/index.yml)<br />[Брандмауэр Azure](../../firewall/index.yml)<br />[Azure Front Door Service](../../frontdoor/index.yml)<br />[Приватный канал Azure](../../private-link/index.yml)<br />[Load Balancer](../../load-balancer/index.yml)<br />[Наблюдатель за сетями](../../network-watcher/index.yml)<br />[Диспетчер трафика](../../traffic-manager/index.yml)<br />[Виртуальная сеть](../../virtual-network/index.yml)<br />[Виртуальная глобальная сеть](../../virtual-wan/index.yml)<br />[VPN-шлюз](../../vpn-gateway/index.yml)<br /> |
 | Microsoft. Notebooks | [Записные книжки Azure](https://notebooks.azure.com/help/introduction) |
@@ -160,21 +160,21 @@ ms.locfileid: "98733793"
 | Microsoft.ServiceFabric | [Service Fabric](../../service-fabric/index.yml) |
 | Microsoft.ServiceFabricMesh | [Служба Microsoft Azure Service Fabric](../../service-fabric-mesh/index.yml) |
 | Microsoft.Services | core |
-| Microsoft.SignalRService | [Служба Azure SignalR](../../azure-signalr/index.yml) |
+| Microsoft.SignalRService | [Служба SignalR Azure](../../azure-signalr/index.yml) |
 | Microsoft.SoftwarePlan | Лицензия |
 | Microsoft.Solutions | [Управляемые приложения Azure](../managed-applications/index.yml) |
 | Microsoft.Sql | [База данных SQL Azure](../../azure-sql/database/index.yml)<br /> [Управляемый экземпляр SQL Azure](../../azure-sql/managed-instance/index.yml) <br />[Azure Synapse Analytics](/azure/sql-data-warehouse/) |
 | Microsoft.SqlVirtualMachine | [SQL Server на Виртуальных машинах Microsoft Azure](../../azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview.md) |
-| Microsoft.Storage; | [Хранилище](../../storage/index.yml) |
+| Microsoft.Storage; | [Память](../../storage/index.yml) |
 | Microsoft.StorageCache | [Azure HPC Cache](../../hpc-cache/index.yml) |
-| Microsoft.StorageSync | [Хранилище](../../storage/index.yml) |
+| Microsoft.StorageSync | [Память](../../storage/index.yml) |
 | Microsoft.StorSimple | [StorSimple](../../storsimple/index.yml) |
 | Microsoft.StreamAnalytics | [Azure Stream Analytics](../../stream-analytics/index.yml) |
 | Microsoft.Subscription | core |
 | Microsoft. support — [зарегистрировано](#registration) | core |
 | Microsoft.Synapse | [Azure Synapse Analytics](/azure/sql-data-warehouse/) |
 | Microsoft.TimeSeriesInsights | [Аналитика временных рядов Azure](../../time-series-insights/index.yml) |
-| Microsoft.Token | Маркер |
+| Microsoft.Token | Токен |
 | Microsoft.VirtualMachineImages | [Средство создания образов Azure](../../virtual-machines/image-builder-overview.md) |
 | microsoft.visualstudio | [Azure DevOps](/azure/devops/) |
 | Microsoft.VMware | [Решение Azure VMware](../../azure-vmware/index.yml) |
@@ -193,6 +193,6 @@ ms.locfileid: "98733793"
 > [!IMPORTANT]
 > Зарегистрируйте поставщик ресурсов только тогда, когда будете готовы использовать его. Этап регистрации позволяет поддерживать минимальные привилегии в рамках подписки. Пользователь-злоумышленник не может использовать незарегистрированные поставщики ресурсов.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о поставщиках ресурсов, включая регистрацию поставщика ресурсов, см. в статье [поставщики и типы ресурсов Azure](resource-providers-and-types.md).

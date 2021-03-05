@@ -5,13 +5,13 @@ ms.service: data-factory
 ms.topic: conceptual
 author: dcstwh
 ms.author: weetok
-ms.date: 08/31/2020
-ms.openlocfilehash: fb9439bc37fcecf1cb5299a09916ebe21c5bc1cb
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.date: 03/04/2021
+ms.openlocfilehash: 06d04eb8679b4484f330b69a8cffb263d353bdcd
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100393825"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102197912"
 ---
 # <a name="global-parameters-in-azure-data-factory"></a>Глобальные параметры в фабрике данных Azure
 
@@ -21,7 +21,7 @@ ms.locfileid: "100393825"
 
 ## <a name="creating-global-parameters"></a>Создание глобальных параметров
 
-Чтобы создать глобальный параметр, перейдите на вкладку *глобальные параметры* в разделе *Управление* . Выберите **создать** , чтобы открыть боковую панель навигации.
+Чтобы создать глобальный параметр, перейдите на вкладку *глобальные параметры* в разделе **Управление** . Выберите **создать** , чтобы открыть боковую панель навигации.
 
 ![Снимок экрана, посвященный новой кнопке, выбранной для создания глобальных параметров.](media/author-global-parameters/create-global-parameter-1.png)
 
@@ -46,7 +46,10 @@ ms.locfileid: "100393825"
 * Включить глобальные параметры в шаблон ARM
 * Развертывание глобальных параметров с помощью сценария PowerShell
 
-Для большинства вариантов использования рекомендуется включать глобальные параметры в шаблон ARM. Это будет интегрировано с решением, описанным в [документе CI/CD](continuous-integration-deployment.md). Глобальные параметры будут добавлены в качестве параметра шаблона ARM по умолчанию, так как они часто меняются из среды в среду. Включение глобальных параметров в шаблон ARM можно включить из центра управления.
+Для большинства вариантов использования рекомендуется включать глобальные параметры в шаблон ARM. Это будет интегрировано с решением, описанным в [документе CI/CD](continuous-integration-deployment.md). Глобальные параметры будут добавлены в качестве параметра шаблона ARM по умолчанию, так как они часто меняются из среды в среду. Включение глобальных параметров в шаблон ARM можно включить из центра **управления** .
+
+> [!NOTE]
+> **Включение в конфигурацию шаблона ARM** доступно только в "режиме Git". Сейчас она отключена в режиме "динамический режим" или "Фабрика данных".
 
 ![Включить в шаблон ARM](media/author-global-parameters/include-arm-template.png)
 
@@ -103,7 +106,7 @@ Write-Host "Updating" $newGlobalParameters.Count "global parameters."
 Set-AzDataFactoryV2 -InputObject $dataFactory -Force
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Сведения о [процессе непрерывной интеграции и развертывания](continuous-integration-deployment.md) фабрики данных Azure
 * Узнайте, как использовать [язык выражений потока управления](control-flow-expression-language-functions.md)

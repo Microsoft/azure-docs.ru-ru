@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 9/1/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 24dac044982d59e93da17ee75190f378d5e3cdea
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: c2e7c9c96f237512d7f28f7243707b097c034aab
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102050925"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198461"
 ---
 # <a name="auto-manage-devices-in-azure-digital-twins-using-device-provisioning-service-dps"></a>Автоматическое управление устройствами в цифровом двойников Azure с помощью службы подготовки устройств (DPS)
 
@@ -69,7 +69,7 @@ ms.locfileid: "102050925"
 
 Создайте экземпляр службы подготовки устройств, который будет использоваться для подготовки устройств IoT. Можно либо использовать приведенные ниже инструкции Azure CLI, либо использовать портал Azure: Краткое руководство по [*настройке службы подготовки устройств для центра Интернета вещей с помощью портал Azure*](../iot-dps/quick-setup-auto-provision.md).
 
-Следующая команда Azure CLI создаст службу подготовки устройств. Необходимо указать имя, группу ресурсов и регион. Команду можно выполнить в [Cloud Shell](https://shell.azure.com)или локально, если [на компьютере установлен](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true)Azure CLI.
+Следующая команда Azure CLI создаст службу подготовки устройств. Необходимо указать имя, группу ресурсов и регион. Команду можно выполнить в [Cloud Shell](https://shell.azure.com)или локально, если [на компьютере установлен](/cli/azure/install-azure-cli)Azure CLI.
 
 ```azurecli-interactive
 az iot dps create --name <Device Provisioning Service name> --resource-group <resource group name> --location <region; for example, eastus>
@@ -190,7 +190,7 @@ az dt twin show -n <Digital Twins instance name> --twin-id <Device Registration 
 
 Далее необходимо задать переменные среды в приложении-функции с помощью более ранней версии, содержащей ссылку на созданный вами экземпляр двойников Azure и концентратор событий. Если вы использовали полное руководство ([*руководство по подключению комплексного решения*](./tutorial-end-to-end.md)), первый параметр будет уже настроен.
 
-Добавьте параметр с помощью этой команды Azure CLI. Команду можно выполнить в [Cloud Shell](https://shell.azure.com)или локально, если [на компьютере установлен](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true)Azure CLI.
+Добавьте параметр с помощью этой команды Azure CLI. Команду можно выполнить в [Cloud Shell](https://shell.azure.com)или локально, если [на компьютере установлен](/cli/azure/install-azure-cli)Azure CLI.
 
 ```azurecli-interactive
 az functionapp config appsettings set --settings "ADT_SERVICE_URL=https://<Azure Digital Twins instance _host name_>" -g <resource group> -n <your App Service (function app) name>
@@ -223,7 +223,7 @@ az functionapp config appsettings set --settings "EVENTHUB_CONNECTIONSTRING=<Eve
 
 В [первой половине этой статьи](#auto-provision-device-using-device-provisioning-service)вы создали устройство в центре Интернета вещей и соответствующий цифровой двойника. 
 
-Теперь перейдите в центр Интернета вещей и удалите это устройство (это можно сделать с помощью [команды Azure CLI](/cli/azure/ext/azure-iot/iot/hub/module-identity?view=azure-cli-latest&preserve-view=true#ext_azure_iot_az_iot_hub_module_identity_delete) или в [портал Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FIotHubs)). 
+Теперь перейдите в центр Интернета вещей и удалите это устройство (это можно сделать с помощью [команды Azure CLI](/cli/azure/ext/azure-iot/iot/hub/module-identity#ext_azure_iot_az_iot_hub_module_identity_delete) или в [портал Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FIotHubs)). 
 
 Устройство будет автоматически удалено из Azure Digital двойников. 
 
@@ -240,7 +240,7 @@ az dt twin show -n <Digital Twins instance name> --twin-id <Device Registration 
 
 Если ресурсы, созданные в этой статье, больше не нужны, выполните следующие действия, чтобы удалить их.
 
-С помощью Azure Cloud Shell или локального Azure CLI можно удалить все ресурсы Azure в группе ресурсов с помощью команды [AZ Group Delete](/cli/azure/group?view=azure-cli-latest&preserve-view=true#az-group-delete) . Это приведет к удалению группы ресурсов. экземпляр Azure Digital двойников; центр Интернета вещей и регистрация устройств концентратора; раздел "Сетка событий" и связанные подписки; пространство имен концентраторов событий и оба приложения функций Azure, включая связанные ресурсы, такие как хранилище.
+С помощью Azure Cloud Shell или локального Azure CLI можно удалить все ресурсы Azure в группе ресурсов с помощью команды [AZ Group Delete](/cli/azure/group#az-group-delete) . Это приведет к удалению группы ресурсов. экземпляр Azure Digital двойников; центр Интернета вещей и регистрация устройств концентратора; раздел "Сетка событий" и связанные подписки; пространство имен концентраторов событий и оба приложения функций Azure, включая связанные ресурсы, такие как хранилище.
 
 > [!IMPORTANT]
 > Удаление группы ресурсов — процесс необратимый. Группа ресурсов и все содержащиеся в ней ресурсы удаляются без возможности восстановления. Будьте внимательны, чтобы случайно не удалить не ту группу ресурсов или не те ресурсы. 

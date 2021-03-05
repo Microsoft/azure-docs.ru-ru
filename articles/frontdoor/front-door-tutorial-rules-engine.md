@@ -13,12 +13,12 @@ ms.workload: infrastructure-services
 ms.date: 09/09/2020
 ms.author: duau
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: c15b6115c2b07503320cd7b5f3c790be03aeea94
-ms.sourcegitcommit: b6f3ccaadf2f7eba4254a402e954adf430a90003
+ms.openlocfilehash: 5d26d36c9f4ecb4aa0c7114b1ebef066e104f175
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92278123"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198869"
 ---
 # <a name="tutorial-configure-your-rules-engine"></a>Руководство по Настройка обработчика правил
 
@@ -58,7 +58,7 @@ ms.locfileid: "92278123"
 
 ## <a name="configure-rules-engine-in-azure-cli"></a>Настройка обработчика правил в Azure CLI
 
-1. Установите [Azure CLI](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest), если это еще не сделано. Добавьте расширение "front-door":- az extension add --name front-door. Затем войдите в подписку az account set — <имя_или_ид> подписки.
+1. Установите [Azure CLI](/cli/azure/install-azure-cli), если это еще не сделано. Добавьте расширение "front-door":- az extension add --name front-door. Затем войдите в подписку az account set — <имя_или_ид> подписки.
 
 1. Начните с создания обработчика правил. В этом примере показано одно правило с одним действием на основе заголовка и одно условие соответствия. 
 
@@ -96,7 +96,7 @@ ms.locfileid: "92278123"
     az network front-door routing-rule update -g {rg} -f {front_door} -n {routing_rule_name} --remove rulesEngine # case sensitive word ‘rulesEngine’
     ```
 
-Полный список команд обработчика правил AFD можно найти [здесь](/cli/azure/ext/front-door/network/front-door/rules-engine?preserve-view=true&view=azure-cli-latest).   
+Полный список команд обработчика правил AFD можно найти [здесь](/cli/azure/ext/front-door/network/front-door/rules-engine).   
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
@@ -108,11 +108,11 @@ ms.locfileid: "92278123"
 
 1. Снимите флажки со всех правил маршрутизации, с которыми связана эта конфигурация обработчика правил, и нажмите "Сохранить".
 
-    :::image type="content" source="./media/front-door-rules-engine/front-door-routing-rule-association.png" alt-text="Связать правило маршрутизации":::
+    :::image type="content" source="./media/front-door-rules-engine/front-door-routing-rule-association.png" alt-text="Связывание правила маршрутизации":::
 
 1. Теперь вы можете удалить конфигурацию обработчика правил с Front Door.
 
-    :::image type="content" source="./media/front-door-rules-engine/front-door-delete-rule-engine-configuration.png" alt-text="Связать правило маршрутизации":::
+    :::image type="content" source="./media/front-door-rules-engine/front-door-delete-rule-engine-configuration.png" alt-text="Удаление конфигурации обработчика правил":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -12,12 +12,12 @@ manager: daveba
 ms.reviewer: michmcla
 ms.collection: M365-identity-device-management
 ms.custom: contperf-fy20q4
-ms.openlocfilehash: 9566560aaebaaa7ba3fc6d963a30637e33118077
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 8f2bd316c733f4680a266d609e1cc95a4879016d
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101651065"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198529"
 ---
 # <a name="configure-azure-ad-multi-factor-authentication-settings"></a>Настройка параметров многофакторной идентификации Azure AD
 
@@ -57,7 +57,7 @@ ms.locfileid: "101651065"
 
 ## <a name="block-and-unblock-users"></a>Блокировка и разблокировка пользователей
 
-В случае утери или кражи устройства пользователя вы можете заблокировать попытки многофакторной проверки подлинности Azure AD для соответствующей учетной записи. Любые попытки многофакторной проверки подлинности Azure AD для заблокированных пользователей автоматически отклоняются. Блокировка пользователей действует в течение 90 дней.
+В случае утери или кражи устройства пользователя вы можете заблокировать попытки многофакторной проверки подлинности Azure AD для соответствующей учетной записи. Любые попытки многофакторной проверки подлинности Azure AD для заблокированных пользователей автоматически отклоняются. Блокировка пользователей действует в течение 90 дней. Мы опубликовали видео о [том, как блокировать и разблокировать пользователей в клиенте](https://www.youtube.com/watch?v=WdeE1On4S1o) , чтобы продемонстрировать, как это сделать.
 
 ### <a name="block-a-user"></a>Блокировка пользователя
 

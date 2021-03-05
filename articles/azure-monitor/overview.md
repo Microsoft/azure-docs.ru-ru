@@ -1,17 +1,16 @@
 ---
 title: Общие сведения о службе Azure Monitor | Microsoft Docs
 description: Обзор функциональных возможностей и служб Майкрософт, которые являются частью стратегии мониторинга ваших служб и приложений в Azure.
-ms.subservice: ''
 ms.topic: overview
 author: bwren
 ms.author: bwren
 ms.date: 11/17/2019
-ms.openlocfilehash: 00f1bec4d4117d9ccebb4440e3649dd9dff32058
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 544d6937e412e3e1cfc2cf4e520c02f3f804fc8c
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101717355"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102047168"
 ---
 # <a name="azure-monitor-overview"></a>Общие сведения о службе Azure Monitor
 
@@ -145,7 +144,7 @@ Azure Monitor может собирать данные журналов из л�
 ## <a name="next-steps"></a>Дальнейшие действия
 См. также:
 
-* [Метрики и журналы](data-platform.md) для данных, полученных Azure Monitor.
+* [Метрики и журналы](https://docs.microsoft.com/azure/azure-monitor/data-platform#metrics) для данных, полученных Azure Monitor.
 * [Источники данных](agents/data-sources.md) для определения того, как различные компоненты приложения отправляют данные телеметрии.
 * [Запросы к журналам](logs/log-query-overview.md) для анализа собранных данных.
 * [Рекомендации](/azure/architecture/best-practices/monitoring) по мониторингу облачных приложений и служб.

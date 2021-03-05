@@ -5,12 +5,12 @@ ms.date: 09/25/2019
 ms.topic: troubleshooting
 description: Узнайте, как устранять распространенные неполадки при включении и использовании Azure Dev Spaces
 keywords: 'Docker, Kubernetes, Azure, AKS, Azure Kubernetes Service, containers, Helm, service mesh, service mesh routing, kubectl, k8s '
-ms.openlocfilehash: bf8c4d2040445fa3417fce02fb4b66216b21f3b5
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.openlocfilehash: 14ced0c66b42b6f18c946d0c75091be1af5598f5
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96548874"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102197798"
 ---
 # <a name="azure-dev-spaces-troubleshooting"></a>Устранение неполадок с Azure Dev Spaces
 
@@ -26,7 +26,7 @@ ms.locfileid: "96548874"
 
 Для Visual Studio задайте для переменной среды `MS_VS_AZUREDEVSPACES_TOOLS_LOGGING_ENABLED` значение "1". Обязательно перезапустите Visual Studio, чтобы изменения переменной среды вступили в силу. После включения подробные журналы будут записаны в каталог `%TEMP%\Microsoft.VisualStudio.Azure.DevSpaces.Tools`.
 
-В CLI вы можете выводить больше сведений во время выполнения команды, используя параметр `--verbose`. Вы также можете просмотреть более подробные журналы в `%TEMP%\Azure Dev Spaces`. На компьютере Mac каталог *TEMP* можно найти, выполнив команду `echo $TMPDIR` в окне терминала. На компьютере с ОС Linux каталог *TEMP* обычно размещается здесь: `/tmp`. Кроме того, убедитесь, что в [файле конфигурации Azure CLI](/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-values-and-environment-variables) включено ведение журнала.
+В CLI вы можете выводить больше сведений во время выполнения команды, используя параметр `--verbose`. Вы также можете просмотреть более подробные журналы в `%TEMP%\Azure Dev Spaces`. На компьютере Mac каталог *TEMP* можно найти, выполнив команду `echo $TMPDIR` в окне терминала. На компьютере с ОС Linux каталог *TEMP* обычно размещается здесь: `/tmp`. Кроме того, убедитесь, что в [файле конфигурации Azure CLI](/cli/azure/azure-cli-configuration#cli-configuration-values-and-environment-variables) включено ведение журнала.
 
 Azure Dev Spaces лучше всего использовать для отладки одного экземпляра или pod. Файл `azds.yaml` содержит параметр *replicaCount*, который определяет количество pod, которые будут выполняться в Kubernetes для службы. Если вы измените значение *replicaCount* для выполнения в приложении нескольких pod для указанной службы, отладчик присоединится к первой группе pod (в алфавитном порядке имен). Отладчик присоединяется к другому модулю pod при перезапуске оригинального модуля pod, что может привести к непредвиденному поведению.
 
@@ -91,7 +91,7 @@ azure-cli                         2.0.60 *
 
 При выполнении `az aks use-dev-spaces` с версией Azure CLI старше, чем 2.0.63, возникает сообщение об ошибке, но установка проходит успешно. Вы можете спокойно продолжать работу с `azds`.
 
-Чтобы устранить эту проблему, обновите установку [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) до версии 2.0.63 или более поздней. Так сообщение об ошибке, возникающее при выполнении `az aks use-dev-spaces`, больше не будет появляться. Также можно просто продолжать использовать текущую версию Azure CLI и Azure Dev Spaces CLI.
+Чтобы устранить эту проблему, обновите установку [Azure CLI](/cli/azure/install-azure-cli) до версии 2.0.63 или более поздней. Так сообщение об ошибке, возникающее при выполнении `az aks use-dev-spaces`, больше не будет появляться. Также можно просто продолжать использовать текущую версию Azure CLI и Azure Dev Spaces CLI.
 
 ### <a name="error-unable-to-reach-kube-apiserver"></a>Ошибка Unable to reach kube-apiserver (Не удается получить доступ к kube-apiserver)
 

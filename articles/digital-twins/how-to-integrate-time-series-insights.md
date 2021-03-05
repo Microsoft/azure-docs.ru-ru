@@ -7,12 +7,12 @@ ms.author: alkarche
 ms.date: 1/19/2021
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 951c52cdba191aa291061259e1c15b9190513770
-ms.sourcegitcommit: b4e6b2627842a1183fce78bce6c6c7e088d6157b
+ms.openlocfilehash: 6aeb7489b455840eeca0a8e1967c7e6e2ed50b7a
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99092726"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102199906"
 ---
 # <a name="integrate-azure-digital-twins-with-azure-time-series-insights"></a>Интеграция Azure Digital двойников со службой "аналитика временных рядов Azure"
 
@@ -56,7 +56,7 @@ ms.locfileid: "99092726"
     az eventhubs eventhub create --name <name for your Twins event hub> --resource-group <resource group name> --namespace-name <Event Hubs namespace from above>
     ```
 
-3. Создайте [правило авторизации](/cli/azure/eventhubs/eventhub/authorization-rule?view=azure-cli-latest&preserve-view=true#az-eventhubs-eventhub-authorization-rule-create) с разрешениями Send и Receive. Укажите имя правила.
+3. Создайте [правило авторизации](/cli/azure/eventhubs/eventhub/authorization-rule#az-eventhubs-eventhub-authorization-rule-create) с разрешениями Send и Receive. Укажите имя правила.
 
     ```azurecli-interactive
         az eventhubs eventhub authorization-rule create --rights Listen Send --resource-group <resource group name> --namespace-name <Event Hubs namespace from above> --eventhub-name <Twins event hub name from above> --name <name for your Twins auth rule>
@@ -73,7 +73,7 @@ ms.locfileid: "99092726"
     >[!NOTE]
     >В Cloud Shell присутствует **известная проблема**, которая затрагивает такие группы команд: `az dt route`, `az dt model`, `az dt twin`.
     >
-    >Чтобы устранить эту проблему, выполните `az login` в Cloud Shell перед выполнением команды или используйте [локальный CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) вместо Cloud Shell. Дополнительные сведения см. в статье [*Устранение неполадок: известные проблемы в Azure Digital Twins*](troubleshoot-known-issues.md#400-client-error-bad-request-in-cloud-shell).
+    >Чтобы устранить эту проблему, выполните `az login` в Cloud Shell перед выполнением команды или используйте [локальный CLI](/cli/azure/install-azure-cli) вместо Cloud Shell. Дополнительные сведения см. в статье [*Устранение неполадок: известные проблемы в Azure Digital Twins*](troubleshoot-known-issues.md#400-client-error-bad-request-in-cloud-shell).
 
     ```azurecli-interactive
     az dt route create -n <your Azure Digital Twins instance name> --endpoint-name <Event Hub endpoint from above> --route-name <name for your route> --filter "type = 'Microsoft.DigitalTwins.Twin.Update'"
@@ -117,7 +117,7 @@ ms.locfileid: "99092726"
     ```azurecli-interactive
     az eventhubs eventhub create --name <name for your TSI event hub> --resource-group <resource group name from earlier> --namespace-name <Event Hubs namespace from earlier>
     ```
-3. Создайте [правило авторизации](/cli/azure/eventhubs/eventhub/authorization-rule?view=azure-cli-latest&preserve-view=true#az-eventhubs-eventhub-authorization-rule-create) с разрешениями Send и Receive. Укажите имя правила.
+3. Создайте [правило авторизации](/cli/azure/eventhubs/eventhub/authorization-rule#az-eventhubs-eventhub-authorization-rule-create) с разрешениями Send и Receive. Укажите имя правила.
 
     ```azurecli-interactive
     az eventhubs eventhub authorization-rule create --rights Listen Send --resource-group <resource group name> --namespace-name <Event Hubs namespace from earlier> --eventhub-name <TSI event hub name from above> --name <name for your TSI auth rule>
@@ -173,7 +173,7 @@ ms.locfileid: "99092726"
 
 ## <a name="begin-sending-iot-data-to-azure-digital-twins"></a>Начало отправки данных IoT в Azure Digital двойников
 
-Чтобы начать отправку данных в службу "аналитика временных рядов", необходимо начать обновление свойств Digital двойника в Azure Digital двойников, изменив значения данных. Используйте команду [AZ DT двойника Update](/cli/azure/ext/azure-iot/dt/twin?view=azure-cli-latest&preserve-view=true#ext-azure-iot-az-dt-twin-update) .
+Чтобы начать отправку данных в службу "аналитика временных рядов", необходимо начать обновление свойств Digital двойника в Azure Digital двойников, изменив значения данных. Используйте команду [AZ DT двойника Update](/cli/azure/ext/azure-iot/dt/twin#ext-azure-iot-az-dt-twin-update) .
 
 Если вы используете полное руководство ([*руководство по подключению комплексного решения*](tutorial-end-to-end.md)) для помощи в настройке среды, можно начать отправку смоделированных данных IOT, запустив проект *девицесимулатор* из примера. Инструкции см. в разделе [*Настройка и запуск модели моделирования*](tutorial-end-to-end.md#configure-and-run-the-simulation) руководства.
 

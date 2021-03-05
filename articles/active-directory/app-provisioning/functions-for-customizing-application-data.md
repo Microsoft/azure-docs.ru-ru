@@ -8,19 +8,19 @@ ms.service: active-directory
 ms.subservice: app-provisioning
 ms.workload: identity
 ms.topic: reference
-ms.date: 02/05/2020
+ms.date: 03/04/2021
 ms.author: kenwith
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: 8f5a4d3695722aae14b73bf6bba5f2e38593e08d
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.openlocfilehash: 0334f52b87071c8f363a0dfcc793170316747096
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99255803"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102198512"
 ---
 # <a name="reference-for-writing-expressions-for-attribute-mappings-in-azure-ad"></a>Справочник по написанию выражений для сопоставления атрибутов в Azure AD
 
-При настройке подготовки для приложения SaaS одним из типов сопоставления атрибутов, которые можно указать, является сопоставление выражений. Для этого необходимо написать выражение, похожее на скрипт. Оно позволит вам преобразовать данные пользователей в форматы, более подходящие для приложений SaaS.
+При настройке подготовки для приложения SaaS одним из типов сопоставления атрибутов, которые можно указать, является сопоставление выражений. Для этого необходимо написать выражение, похожее на сценарий, которое позволяет преобразовывать данные пользователей в форматы, которые более приемлемы для приложения SaaS.
 
 ## <a name="syntax-overview"></a>Общие сведения о синтаксисе
 
@@ -38,7 +38,7 @@ ms.locfileid: "99255803"
 
 ## <a name="list-of-functions"></a>Список функций
 
-[](#append) &nbsp; &nbsp; Добавить &nbsp; &nbsp; [](#bitand) &nbsp; &nbsp; BitAnd &nbsp; &nbsp; [](#cbool) &nbsp; &nbsp; CBool &nbsp; &nbsp; [](#coalesce) &nbsp; &nbsp; Объединение &nbsp; &nbsp; [](#converttobase64) &nbsp; &nbsp; ConvertToBase64 &nbsp; &nbsp; [](#converttoutf8hex) &nbsp; &nbsp; ConvertToUTF8Hex &nbsp; &nbsp; [](#count) &nbsp; &nbsp; Количество &nbsp; &nbsp; [](#cstr) &nbsp; &nbsp; CStr &nbsp; &nbsp; [Датефромнум](#datefromnum) &nbsp; [](#formatdatetime) &nbsp; &nbsp; FormatDateTime &nbsp; &nbsp; [Идентификатор](#guid) &nbsp; &nbsp; GUID &nbsp; &nbsp; [](#iif) &nbsp; &nbsp; IIf &nbsp; &nbsp; [](#instr) &nbsp; &nbsp; InStr &nbsp; &nbsp; [](#isnull) &nbsp; &nbsp; IsNull &nbsp; &nbsp; [](#isnullorempty) &nbsp; &nbsp; IsNullOrEmpty &nbsp; &nbsp; [](#ispresent) &nbsp; &nbsp; Present &nbsp; &nbsp; [](#isstring) &nbsp; &nbsp; Substring &nbsp; &nbsp; [](#item) &nbsp; &nbsp; Элемент &nbsp; &nbsp; [](#join) &nbsp; &nbsp; Соединение &nbsp; &nbsp; По [левому краю](#left) &nbsp; &nbsp; &nbsp; &nbsp; [MID](#mid) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [нормализедиакритикс](#normalizediacritics) [Not](#not) &nbsp; &nbsp; &nbsp; &nbsp; [RemoveDuplicates](#removeduplicates) &nbsp; &nbsp; &nbsp; &nbsp; [заменить](#replace) &nbsp; &nbsp; &nbsp; &nbsp; [селектуникуевалуе](#selectuniquevalue) &nbsp; &nbsp; &nbsp; &nbsp; [синглеаппролеассигнмент](#singleapproleassignment) &nbsp; &nbsp; &nbsp; &nbsp; [разделить](#split) &nbsp; &nbsp; &nbsp; &nbsp; [стрипспацес](#stripspaces) &nbsp; &nbsp; &nbsp; &nbsp; [switch](#switch) &nbsp; &nbsp; &nbsp; &nbsp; [ToLower](#tolower) &nbsp; &nbsp; &nbsp; &nbsp; [ToUpper](#toupper) &nbsp; &nbsp; &nbsp; &nbsp; [Word](#word)
+[](#append) &nbsp; &nbsp; Добавить &nbsp; &nbsp; [](#bitand) &nbsp; &nbsp; BitAnd &nbsp; &nbsp; [](#cbool) &nbsp; &nbsp; CBool &nbsp; &nbsp; [](#coalesce) &nbsp; &nbsp; Объединение &nbsp; &nbsp; [](#converttobase64) &nbsp; &nbsp; ConvertToBase64 &nbsp; &nbsp; [](#converttoutf8hex) &nbsp; &nbsp; ConvertToUTF8Hex &nbsp; &nbsp; [](#count) &nbsp; &nbsp; Количество &nbsp; &nbsp; [](#cstr) &nbsp; &nbsp; CStr &nbsp; &nbsp; [Датефромнум](#datefromnum) &nbsp; [](#formatdatetime) &nbsp; &nbsp; FormatDateTime &nbsp; &nbsp; [Идентификатор](#guid) &nbsp; &nbsp; GUID &nbsp; &nbsp; [](#iif) &nbsp; &nbsp; IIf &nbsp; &nbsp; [](#instr) &nbsp; &nbsp; InStr &nbsp; &nbsp; [](#isnull) &nbsp; &nbsp; IsNull &nbsp; &nbsp; [](#isnullorempty) &nbsp; &nbsp; IsNullOrEmpty &nbsp; &nbsp; [](#ispresent) &nbsp; &nbsp; Present &nbsp; &nbsp; [](#isstring) &nbsp; &nbsp; Substring &nbsp; &nbsp; [](#item) &nbsp; &nbsp; Элемент &nbsp; &nbsp; [](#join) &nbsp; &nbsp; Соединение &nbsp; &nbsp; По [левому краю](#left) &nbsp; &nbsp; &nbsp; &nbsp; [MID](#mid) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [нормализедиакритикс](#normalizediacritics) [Not](#not) &nbsp; &nbsp; &nbsp; &nbsp; [нумфромдате](#numfromdate) &nbsp; &nbsp; &nbsp; &nbsp; [RemoveDuplicates](#removeduplicates) &nbsp; &nbsp; &nbsp; &nbsp; [Replace](#replace) &nbsp; &nbsp; &nbsp; &nbsp; [селектуникуевалуе](#selectuniquevalue) &nbsp; &nbsp; &nbsp; &nbsp; [синглеаппролеассигнмент](#singleapproleassignment) &nbsp; &nbsp; &nbsp; &nbsp; [Split](#split) &nbsp; &nbsp; &nbsp; &nbsp; [стрипспацес](#stripspaces) &nbsp; &nbsp; &nbsp; &nbsp; [switch](#switch) &nbsp; &nbsp; &nbsp; &nbsp; [ToLower](#tolower) &nbsp; &nbsp; &nbsp; &nbsp; [ToUpper](#toupper) &nbsp; &nbsp; &nbsp; &nbsp; [Word](#word)
 
 ---
 ### <a name="append"></a>Добавление
@@ -53,6 +53,19 @@ ms.locfileid: "99255803"
 | --- | --- | --- | --- |
 | **source** |Обязательно |Строка |Как правило, имя атрибута из исходного объекта. |
 | **suffix** |Обязательно |Строка |Строка, которую необходимо присоединить к концу исходного значения. |
+
+
+### <a name="append-constant-suffix-to-user-name"></a>Добавление суффикса константы к имени пользователя
+Пример. при использовании песочницы Salesforce может потребоваться добавить дополнительный суффикс ко всем именам пользователей, прежде чем синхронизировать их.
+
+**Выражение** 
+`Append([userPrincipalName], ".test")`
+
+**Пример ввода и вывода:** 
+
+* **Входные данные**: (userPrincipalName): "John.Doe@contoso.com"
+* **Выходные данные**: " John.Doe@contoso.com.test "
+
 
 ---
 ### <a name="bitand"></a>BitAnd
@@ -69,7 +82,7 @@ ms.locfileid: "99255803"
 
 | Имя | Обязательно/повторяется | Тип | Примечания |
 | --- | --- | --- | --- |
-| **Значение1** |Обязательно |num |Числовое значение, которое должно быть двух с value2|
+| **value1** |Обязательно |num |Числовое значение, которое должно быть двух с value2|
 | **value2** |Обязательно |num |Числовое значение, которое должно быть двух с значение1|
 
 **Например**
@@ -107,6 +120,19 @@ ms.locfileid: "99255803"
 | --- | --- | --- | --- |
 | **source1  … sourceN** | Обязательно | Строка |Обязательно, переменное число раз. Как правило, имя атрибута из исходного объекта. |
 | **defaultValue** | Необязательный | Строка | Значение по умолчанию, используемое, если все исходные значения имеют значение NULL. Может быть пустой строкой ("").
+
+### <a name="flow-mail-value-if-not-null-otherwise-flow-userprincipalname"></a>Значение потока сообщений, если не равно NULL, в противном случае поток userPrincipalName
+Пример. вы хотите передать атрибут mail, если он существует. Если это не так, вместо этого нужно передать значение userPrincipalName.
+
+**Выражение** 
+`Coalesce([mail],[userPrincipalName])`
+
+**Пример ввода и вывода:** 
+
+* **Входные данные** (почта): NULL
+* **Входные данные** (userPrincipalName): " John.Doe@contoso.com "
+* **Выходные данные**: " John.Doe@contoso.com "
+
 
 ---
 ### <a name="converttobase64"></a>ConvertToBase64
@@ -181,7 +207,7 @@ ms.locfileid: "99255803"
 
 | Имя | Обязательно/повторяется | Тип | Примечания |
 | --- | --- | --- | --- |
-| **value** |Обязательно | Date | Дата объявления для преобразования в тип DateTime |
+| **value** |Обязательно | Дата | Дата объявления для преобразования в тип DateTime |
 
 **Например**
 `DateFromNum([lastLogonTimestamp])`
@@ -192,7 +218,7 @@ ms.locfileid: "99255803"
 
 ---
 ### <a name="formatdatetime"></a>FormatDateTime
-**Функция:** FormatDateTime (Source, Инпутформат, outputFormat)
+**Функция:** FormatDateTime (Source, dateTimeStyles, Инпутформат, outputFormat)
 
 **Описание:** Принимает строку даты из одного формата и преобразует ее в другой формат.
 
@@ -201,8 +227,24 @@ ms.locfileid: "99255803"
 | Имя | Обязательно/повторяется | Тип | Примечания |
 | --- | --- | --- | --- |
 | **source** |Обязательно |Строка |Как правило, имя атрибута из исходного объекта. |
+| **dateTimeStyles** | Необязательный | Строка | Используйте этот параметр, чтобы указать параметры форматирования, которые настраивают синтаксический анализ строк для некоторых методов синтаксического анализа даты и времени. Поддерживаемые значения см. в разделе [DateTimeStyles doc](/dotnet/api/system.globalization.datetimestyles). Если оставить это поле пустым, используется значение по умолчанию DateTimeStyles. RoundtripKind, DateTimeStyles. AllowLeadingWhite, DateTimeStyles. AllowTrailingWhite  |
 | **инпутформат** |Обязательно |Строка |Предполагаемый формат исходного значения. Поддерживаемые форматы см. в разделе [/дотнет/Стандард/Басе-типес/кустом-дате-Анд-Тиме-формат-стрингс](/dotnet/standard/base-types/custom-date-and-time-format-strings). |
 | **outputFormat** |Обязательно |Строка |Формат вывода даты. |
+
+
+
+### <a name="output-date-as-a-string-in-a-certain-format"></a>Вывод даты в виде строки в определенном формате
+Пример. вы хотите отправить даты в приложение SaaS, например ServiceNow, в определенном формате. Можно использовать следующее выражение. 
+
+**Выражение** 
+
+`FormatDateTime([extensionAttribute1], , "yyyyMMddHHmmss.fZ", "yyyy-MM-dd")`
+
+**Пример ввода и вывода:**
+
+* **ВВОД** : (extensionAttribute1): "20150123105347.1Z"
+* **Выходные данные**: "2015-01-23"
+
 
 ---
 ### <a name="guid"></a>Guid
@@ -237,10 +279,10 @@ ms.locfileid: "99255803"
 
 | Имя | Обязательно/повторяется | Тип | Примечания |
 | --- | --- | --- | --- |
-| **Значение1** |Обязательно |Строка |Строка для поиска |
+| **value1** |Обязательно |Строка |Строка для поиска |
 | **value2** |Обязательно |Строка |Строка для поиска |
 | **start** |Необязательный |Целое число |Начальная Расположение для поиска подстроки|
-| **компаретипе** |Необязательно |Enum |Может быть Вбтексткомпаре или Вббинарикомпаре |
+| **компаретипе** |Необязательно |Перечисление |Может быть Вбтексткомпаре или Вббинарикомпаре |
 
 **Например**
 `InStr("The quick brown fox","quick")`
@@ -376,8 +418,8 @@ ms.locfileid: "99255803"
 | Имя | Обязательно/повторяется | Тип | Примечания |
 | --- | --- | --- | --- |
 | **source** |Обязательно |Строка |Как правило, имя атрибута. |
-| **start** |Обязательно |целочисленный |Индекс положения начала подстроки в **исходной** строке. Первый символ в строке будет иметь индекс 1, второй символ — индекс 2 и т. д. |
-| **length** |Обязательно |целочисленный |Длина подстроки. Длина подстроки. Если она превышает размер строки **source**, функция возвращает подстроку от индекса **start** до конца строки **source**. |
+| **start** |Обязательно |Целое число |Индекс положения начала подстроки в **исходной** строке. Первый символ в строке будет иметь индекс 1, второй символ — индекс 2 и т. д. |
+| **length** |Обязательно |Целое число |Длина подстроки. Длина подстроки. Если она превышает размер строки **source**, функция возвращает подстроку от индекса **start** до конца строки **source**. |
 
 ---
 ### <a name="normalizediacritics"></a>NormalizeDiacritics
@@ -390,6 +432,18 @@ ms.locfileid: "99255803"
 | Имя | Обязательно/повторяется | Тип | Примечания |
 | --- | --- | --- | --- |
 | **source** |Обязательно |Строка | Обычно атрибут имени или фамилии. |
+
+
+### <a name="remove-diacritics-from-a-string"></a>Удаление диакритических знаков из строки
+Пример. необходимо заменить символы, содержащие диакритические знаки, эквивалентными символами, которые не содержат диакритические знаки.
+
+**Выражение:** Нормализедиакритикс ([givenName])
+
+**Пример ввода и вывода:** 
+
+* **ВВОД** (givenName): "Zoë"
+* **Выходные данные**: "Zoe".
+
 
 ---
 ### <a name="not"></a>Not
@@ -415,12 +469,12 @@ ms.locfileid: "99255803"
 | --- | --- | --- | --- |
 | **value** |Обязательно | Строка | Строка даты и времени в поддерживаемом формате. Поддерживаемые форматы см. по адресу https://msdn.microsoft.com/library/8kb3ddd4%28v=vs.110%29.aspx. |
 
-**Пример.**
+**Пример**.
 * Например, предположим, что вы хотите сопоставить атрибут *контрактенддате* из workday, который находится в поле Format *2020-12-31-08:00* to *accountExpires* в AD, вот как можно использовать эту функцию и изменить смещение часового пояса в соответствии с языковым стандартом. 
-  `NumFromDate(Join("", FormatDateTime([ContractEndDate], "yyyy-MM-ddzzz", "yyyy-MM-dd"), "T23:59:59-08:00"))`
+  `NumFromDate(Join("", FormatDateTime([ContractEndDate], ,"yyyy-MM-ddzzz", "yyyy-MM-dd"), "T23:59:59-08:00"))`
 
 * В SuccessFactors примере, предполагая, что вы хотите сопоставить атрибут *EndDate* из SuccessFactors, который находится в поле Format *M/d/гггг чч: мм: СС TT* to *accountExpires* в AD, вот как можно использовать эту функцию и изменить смещение часового пояса в соответствии с языковым стандартом.
-  `NumFromDate(Join("",FormatDateTime([endDate],"M/d/yyyy hh:mm:ss tt","yyyy-MM-dd"),"T23:59:59-08:00"))`
+  `NumFromDate(Join("",FormatDateTime([endDate], ,"M/d/yyyy hh:mm:ss tt","yyyy-MM-dd"),"T23:59:59-08:00"))`
 
 
 ---
@@ -473,6 +527,19 @@ ms.locfileid: "99255803"
 | **replacementAttributeName** |Необязательный |Строка |Имя атрибута, используемого для значения замены. |
 | **шаблон** |Необязательный |Строка |Если указано значение **template**, будет выполнен поиск **oldValue** в шаблоне с последующей заменой значением **source**. |
 
+### <a name="replace-characters-using-a-regular-expression"></a>Замените символы с помощью регулярного выражения
+Пример. необходимо найти символы, которые соответствуют значению регулярного выражения, и удалить их.
+
+**Выражение** 
+
+Replace([mailNickname], , "[a-zA-Z_]*", , "", , )
+
+**Пример ввода и вывода:**
+
+* **Входные данные** (mailNickname: "john_doe72"
+* **Выходные данные**: "72"
+
+
 ---
 ### <a name="selectuniquevalue"></a>SelectUniqueValue
 **Функция:** Селектуникуевалуе (uniqueValueRule1, uniqueValueRule2, uniqueValueRule3,...)
@@ -481,7 +548,7 @@ ms.locfileid: "99255803"
 
 
  - Это функция верхнего уровня, которую нельзя вложить.
- - Функцию нельзя применить к атрибутам, имеющим приоритет сопоставления.   
+ - Функцию нельзя применить к атрибутам, имеющим приоритет сопоставления.     
  - Эта функция предназначена только для создания записей. При использовании ее с атрибутом задайте для свойства **Apply Mapping** (Применить сопоставление) значение **Только в ходе создания объектов**.
  - Эта функция в настоящее время поддерживается только для Active Directory подготовки пользователей "Workday" и "SuccessFactors to Active Directory подготовки пользователей". Ее нельзя использовать с другими приложениями подготовки. 
 
@@ -491,6 +558,28 @@ ms.locfileid: "99255803"
 | Имя | Обязательно/повторяется | Тип | Примечания |
 | --- | --- | --- | --- |
 | **uniqueValueRule1... uniqueValueRuleN** |Требуется не менее 2, нет верхней границы |Строка | Список правил формирования уникальных значений для оценки. |
+
+### <a name="generate-unique-value-for-userprincipalname-upn-attribute"></a>Создание уникального значения для атрибута userPrincipalName (имя участника-пользователя)
+Пример. на основе имени, отчество и фамилии пользователя необходимо создать значение для атрибута UPN и проверить его уникальность в целевом каталоге Active Directory перед тем, как назначить значение атрибуту UPN.
+
+**Выражение** 
+
+```ad-attr-mapping-expr
+    SelectUniqueValue( 
+        Join("@", NormalizeDiacritics(StripSpaces(Join(".",  [PreferredFirstName], [PreferredLastName]))), "contoso.com"), 
+        Join("@", NormalizeDiacritics(StripSpaces(Join(".",  Mid([PreferredFirstName], 1, 1), [PreferredLastName]))), "contoso.com"),
+        Join("@", NormalizeDiacritics(StripSpaces(Join(".",  Mid([PreferredFirstName], 1, 2), [PreferredLastName]))), "contoso.com")
+    )
+```
+
+**Пример ввода и вывода:**
+
+* **Входные данные** (предпочитаемое имя): "John".
+* **Входные данные** (предпочитаемая фамилия): "Smith".
+* **Выходные данные**: " John.Smith@contoso.com ", если значение UPN John.Smith@contoso.com еще не существует в каталоге
+* **Выходные данные**: J.Smith@contoso.com Если значение UPN John.Smith@contoso.com уже существует в каталоге
+* **Выходные данные**: Jo.Smith@contoso.com Если в каталоге уже существуют два значения имени участника-пользователя,
+
 
 
 ---
@@ -517,6 +606,17 @@ ms.locfileid: "99255803"
 | --- | --- | --- | --- |
 | **source** |Обязательно |Строка |**источник** — обновляемое значение. |
 | **разделитель** |Обязательно |Строка |Задает символ, который будет использоваться для разделения строки (к примеру, ",") |
+
+### <a name="split-a-string-into-a-multi-valued-array"></a>Разделение строки на многозначный массив
+Пример. необходимо взять список строк с разделителями-запятыми и разбить их на массив, который можно подключить к многозначному атрибуту, например к атрибуту Пермиссионсетс Salesforce. В этом примере список наборов разрешений заполнен в extensionAttribute5 в Azure AD.
+
+**Выражение:** Split ([extensionAttribute5], ",")
+
+**Пример ввода и вывода:** 
+
+* **Входные данные** (extensionAttribute5): "Пермиссионсетоне, пермиссионсеттво"
+* **Выходные данные**:  ["PermissionSetOne", "PermissionSetTwo"]
+
 
 ---
 ### <a name="stripspaces"></a>StripSpaces
@@ -545,6 +645,18 @@ ms.locfileid: "99255803"
 | **key** |Обязательно |Строка |Параметр **key**, с которым сравнивается значение **source** |
 | **value** |Обязательно |Строка |Значение, которым заменяется значение **source** , соответствующее ключу. |
 
+### <a name="replace-a-value-based-on-predefined-set-of-options"></a>Замена значения на основе предопределенного набора параметров
+Пример. необходимо определить часовой пояс пользователя на основе кода состояния, хранящегося в Azure AD.  Если код государства не совпадает с предопределенными параметрами, используйте значение по умолчанию «Australia/Sydney».
+
+**Выражение** 
+`Switch([state], "Australia/Sydney", "NSW", "Australia/Sydney","QLD", "Australia/Brisbane", "SA", "Australia/Adelaide")`
+
+**Пример ввода и вывода:**
+
+* **ВВОД** : (state): "QLD"
+* **ВЫВОД**: "Australia/Brisbane"
+
+
 ---
 ### <a name="tolower"></a>ToLower
 **Функция:** ToLower (источник, язык и региональные параметры)
@@ -557,6 +669,18 @@ ms.locfileid: "99255803"
 | --- | --- | --- | --- |
 | **source** |Обязательно |Строка |Как правило, имя атрибута из исходного объекта. |
 | **culture** |Необязательный |Строка |Форматом названия языка и региональных параметров в соответствии с RFC 4646 является *languagecode2-country/regioncode2*, где *languagecode2* — это двухбуквенный код языка, а *country/regioncode2* — двухбуквенный код субкультуры. Примеры включают в себя ja-JP для японского языка (Япония) и en-US для английского (США). В случаях, когда двухбуквенный код языка недоступен, используется трехбуквенный код на основе ISO 639-2.|
+
+### <a name="convert-generated-userprincipalname-upn-value-to-lower-case"></a>Преобразование созданного значения userPrincipalName (UPN) в нижний регистр
+Пример. вы хотите создать значение имени участника-пользователя путем сцепления полей источника Osnovnoyeimya и Преферредластнаме и преобразования всех символов в нижний регистр. 
+
+`ToLower(Join("@", NormalizeDiacritics(StripSpaces(Join(".",  [PreferredFirstName], [PreferredLastName]))), "contoso.com"))`
+
+**Пример ввода и вывода:**
+
+* **Входные данные** (предпочитаемое имя): "John".
+* **Входные данные** (предпочитаемая фамилия): "Smith".
+* **Выходные данные**: " john.smith@contoso.com "
+
 
 ---
 ### <a name="toupper"></a>ToUpper
@@ -601,8 +725,10 @@ ms.locfileid: "99255803"
 ---
 
 ## <a name="examples"></a>Примеры
+В этом разделе приведены дополнительные примеры использования функций выражений. 
+
 ### <a name="strip-known-domain-name"></a>Извлечение известного доменного имени
-Необходимо извлечь известное доменное имя из адреса электронной почты пользователя, чтобы получить имя пользователя.  Например, если домен — contoso.com, можно использовать следующее выражение:
+Чтобы получить имя пользователя, необходимо удалить известное доменное имя из адреса электронной почты пользователя.  Например, если домен — contoso.com, можно использовать следующее выражение:
 
 **Выражение** 
 `Replace([mail], "@contoso.com", , ,"", ,)`
@@ -612,16 +738,6 @@ ms.locfileid: "99255803"
 * **Входные данные** (mail): "john.doe@contoso.com"
 * **Выходные данные**: john.doe
 
-### <a name="append-constant-suffix-to-user-name"></a>Добавление суффикса константы к имени пользователя
-При использовании Salesforce Sandbox может потребоваться добавить дополнительный суффикс ко всем именам пользователей перед их синхронизацией.
-
-**Выражение** 
-`Append([userPrincipalName], ".test")`
-
-**Пример ввода и вывода:** 
-
-* **Входные данные**: (userPrincipalName): "John.Doe@contoso.com"
-* **Выходные данные**: " John.Doe@contoso.com.test "
 
 ### <a name="generate-user-alias-by-concatenating-parts-of-first-and-last-name"></a>Создание псевдонима пользователя путем сцепления частей имени и фамилии
 Необходимо создать псевдоним пользователя, используя первые три буквы имени и первые пять букв фамилии пользователя.
@@ -635,105 +751,6 @@ ms.locfileid: "99255803"
 * **ВВОД** : (surname): "Doe"
 * **Выходные данные**: "JohDoe"
 
-### <a name="remove-diacritics-from-a-string"></a>Удаление диакритических знаков из строки
-Вам нужно заменить символы с диакритическими знаками эквивалентами без диакритических знаков.
-
-**Выражение:** Нормализедиакритикс ([givenName])
-
-**Пример ввода и вывода:** 
-
-* **ВВОД** (givenName): "Zoë"
-* **Выходные данные**: "Zoe".
-
-### <a name="split-a-string-into-a-multi-valued-array"></a>Разделение строки на многозначный массив
-Выберите список строк с разделителями-запятыми и разделите их на массив, который можно подключить к такому многозначному атрибуту, как, например, атрибут PermissionSets компании Salesforce. В этом примере список наборов разрешений заполнен в extensionAttribute5 в Azure AD.
-
-**Выражение:** Split ([extensionAttribute5], ",")
-
-**Пример ввода и вывода:** 
-
-* **Входные данные** (extensionAttribute5): "Пермиссионсетоне, пермиссионсеттво"
-* **Выходные данные**:  ["PermissionSetOne", "PermissionSetTwo"]
-
-### <a name="output-date-as-a-string-in-a-certain-format"></a>Вывод даты в виде строки в определенном формате
-Необходимо отправить в приложение SaaS даты в определенном формате.  Например, требуется отформатировать даты для ServiceNow.
-
-**Выражение** 
-
-`FormatDateTime([extensionAttribute1], "yyyyMMddHHmmss.fZ", "yyyy-MM-dd")`
-
-**Пример ввода и вывода:**
-
-* **ВВОД** : (extensionAttribute1): "20150123105347.1Z"
-* **Выходные данные**: "2015-01-23"
-
-### <a name="replace-a-value-based-on-predefined-set-of-options"></a>Замена значения на основе предопределенного набора параметров
-
-Необходимо определить часовой пояс пользователя на основе кода государства, сохраненного в Azure AD.  Если код государства не совпадает с предопределенными параметрами, используйте значение по умолчанию «Australia/Sydney».
-
-**Выражение** 
-`Switch([state], "Australia/Sydney", "NSW", "Australia/Sydney","QLD", "Australia/Brisbane", "SA", "Australia/Adelaide")`
-
-**Пример ввода и вывода:**
-
-* **ВВОД** : (state): "QLD"
-* **ВЫВОД**: "Australia/Brisbane"
-
-### <a name="replace-characters-using-a-regular-expression"></a>Замените символы с помощью регулярного выражения
-Необходимо определить символы, соответствующие значению регулярного выражения, и удалить их.
-
-**Выражение** 
-
-Replace([mailNickname], , "[a-zA-Z_]*", , "", , )
-
-**Пример ввода и вывода:**
-
-* **Входные данные** (mailNickname: "john_doe72"
-* **Выходные данные**: "72"
-
-### <a name="convert-generated-userprincipalname-upn-value-to-lower-case"></a>Преобразование созданного значения userPrincipalName (UPN) в нижний регистр
-В приведенном ниже примере значение UPN создается путем объединения полей источника данных PreferredFirstName и PreferredLastName, а функция ToLower использует строку для преобразования всех знаков в нижний регистр. 
-
-`ToLower(Join("@", NormalizeDiacritics(StripSpaces(Join(".",  [PreferredFirstName], [PreferredLastName]))), "contoso.com"))`
-
-**Пример ввода и вывода:**
-
-* **Входные данные** (предпочитаемое имя): "John".
-* **Входные данные** (предпочитаемая фамилия): "Smith".
-* **Выходные данные**: " john.smith@contoso.com "
-
-### <a name="generate-unique-value-for-userprincipalname-upn-attribute"></a>Создание уникального значения для атрибута userPrincipalName (имя участника-пользователя)
-На основе имени, отчества и фамилии пользователя необходимо создать значение для атрибута имени участника-пользователя и проверить его на уникальность в целевом каталоге AD перед присвоением этого значения атрибуту имени участника-пользователя.
-
-**Выражение** 
-
-```ad-attr-mapping-expr
-    SelectUniqueValue( 
-        Join("@", NormalizeDiacritics(StripSpaces(Join(".",  [PreferredFirstName], [PreferredLastName]))), "contoso.com"), 
-        Join("@", NormalizeDiacritics(StripSpaces(Join(".",  Mid([PreferredFirstName], 1, 1), [PreferredLastName]))), "contoso.com"),
-        Join("@", NormalizeDiacritics(StripSpaces(Join(".",  Mid([PreferredFirstName], 1, 2), [PreferredLastName]))), "contoso.com")
-    )
-```
-
-**Пример ввода и вывода:**
-
-* **Входные данные** (предпочитаемое имя): "John".
-* **Входные данные** (предпочитаемая фамилия): "Smith".
-* **Выходные данные**: " John.Smith@contoso.com ", если значение UPN John.Smith@contoso.com еще не существует в каталоге
-* **Выходные данные**: J.Smith@contoso.com Если значение UPN John.Smith@contoso.com уже существует в каталоге
-* **Выходные данные**: Jo.Smith@contoso.com Если в каталоге уже существуют два значения имени участника-пользователя,
-
-### <a name="flow-mail-value-if-not-null-otherwise-flow-userprincipalname"></a>Значение потока сообщений, если не равно NULL, в противном случае поток userPrincipalName
-Вы хотите передать атрибут mail, если он существует. Если это не так, вместо этого нужно передать значение userPrincipalName.
-
-**Выражение** 
-`Coalesce([mail],[userPrincipalName])`
-
-**Пример ввода и вывода:** 
-
-* **Входные данные** (почта): NULL
-* **Входные данные** (userPrincipalName): " John.Doe@contoso.com "
-* **Выходные данные**: " John.Doe@contoso.com "
 
 ## <a name="related-articles"></a>Связанные статьи
 * [Автоматическая подготовка пользователей и ее отзыв для приложений SaaS](../app-provisioning/user-provisioning.md)

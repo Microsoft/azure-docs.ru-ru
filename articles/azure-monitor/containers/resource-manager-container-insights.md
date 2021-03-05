@@ -1,17 +1,16 @@
 ---
 title: Примеры шаблонов Resource Manager для аналитики контейнеров
 description: Примеры шаблонов Azure Resource Manager для развертывания и настройки аналитики контейнеров.
-ms.subservice: logs
 ms.topic: sample
 author: bwren
 ms.author: bwren
 ms.date: 05/18/2020
-ms.openlocfilehash: f75278663abde8d4b0f47c8df1dbbdbc298bcafb
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 68bad5b4bfcef4f0f633bce7e3e352486aed3fdf
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101723339"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102039195"
 ---
 # <a name="resource-manager-template-samples-for-container-insights"></a>Примеры шаблонов Resource Manager для аналитики контейнеров
 Эта статья содержит примеры [шаблонов Azure Resource Manager](../../azure-resource-manager/templates/template-syntax.md) для развертывания и настройки агента Log Analytics для виртуальных машин в Azure Monitor. Каждый пример включает файл шаблона и файл параметров с примерами значений для предоставления в шаблоне.

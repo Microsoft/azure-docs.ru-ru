@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.tgt_pltfrm: arduino
 ms.date: 01/16/2018
 ms.author: menchi
-ms.openlocfilehash: aded49b5b9509a75e61612e44ffa19ff377d1712
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.openlocfilehash: 499c0c065cb38313c98ed9412ab1f08d70dbc654
+ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92148326"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102199532"
 ---
 # <a name="use-the-iot-extension-for-azure-cli-for-azure-iot-hub-device-management"></a>Управление устройствами центра Интернета вещей Azure с помощью расширения Интернета вещей для Azure CLI
 
@@ -23,7 +23,7 @@ ms.locfileid: "92148326"
 
 [!INCLUDE [iot-hub-get-started-note](../../includes/iot-hub-get-started-note.md)]
 
-[Расширение IOT для Azure CLI](https://github.com/Azure/azure-iot-cli-extension) — это расширение IOT с открытым кодом, которое добавляет к возможностям [Azure CLI](/cli/azure/overview?view=azure-cli-latest). Azure CLI включает команды для взаимодействия с конечными точками Azure Resource Manager и управления. Например, Azure CLI можно использовать для создания центра Интернета вещей или виртуальной машины Azure. Расширение CLI включает службу Azure для ускорения работы Azure CLI, за счет чего вы получаете доступ к дополнительным определенным функциям службы. Расширение IoT предоставляет разработчикам Интернета вещей доступ для командной строки ко всем центрам Интернета вещей, IoT Edge и возможностям службы подготовки устройств для центра Интернета вещей.
+[Расширение IOT для Azure CLI](https://github.com/Azure/azure-iot-cli-extension) — это расширение IOT с открытым кодом, которое добавляет к возможностям [Azure CLI](/cli/azure/overview). Azure CLI включает команды для взаимодействия с конечными точками Azure Resource Manager и управления. Например, Azure CLI можно использовать для создания центра Интернета вещей или виртуальной машины Azure. Расширение CLI включает службу Azure для ускорения работы Azure CLI, за счет чего вы получаете доступ к дополнительным определенным функциям службы. Расширение IoT предоставляет разработчикам Интернета вещей доступ для командной строки ко всем центрам Интернета вещей, IoT Edge и возможностям службы подготовки устройств для центра Интернета вещей.
 
 [!INCLUDE [iot-hub-cli-version-info](../../includes/iot-hub-cli-version-info.md)]
 
@@ -61,7 +61,7 @@ ms.locfileid: "92148326"
 
 * [Python 2.7x или Python 3.x](https://www.python.org/downloads/)
 
-* Azure CLI. Если вам необходимо выполнить установку, см. статью [Установка Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest). Вам понадобится как минимум Azure CLI версии 2.0.70 или более поздней. Для проверки используйте `az –version`.
+* Azure CLI. Если вам необходимо выполнить установку, см. статью [Установка Azure CLI](/cli/azure/install-azure-cli). Вам понадобится как минимум Azure CLI версии 2.0.70 или более поздней. Для проверки используйте `az –version`.
 
 [!INCLUDE [iot-hub-cli-version-info](../../includes/iot-hub-cli-version-info.md)]
 

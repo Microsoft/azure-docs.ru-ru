@@ -8,12 +8,12 @@ ms.author: manoskow
 ms.date: 10/23/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 88ad060c1ba28285051a91bd928a2a7116dff1ce
-ms.sourcegitcommit: dea56e0dd919ad4250dde03c11d5406530c21c28
+ms.openlocfilehash: ef1c4d87be39b6af90ed07cba9249cca4cf8bd6a
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96937548"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102036033"
 ---
 # <a name="troubleshooting-in-azure-communication-services"></a>Устранение неполадок в Службах коммуникации Azure
 
@@ -21,12 +21,7 @@ ms.locfileid: "96937548"
 
 ## <a name="getting-help"></a>Получение справки
 
-Мы советуем разработчикам отправлять вопросы, предлагать функции и сообщать о проблемах, используя [репозиторий GitHub](https://github.com/Azure/communication) Служб коммуникации. Другие форумы:
-
-* [Майкрософт: вопросы и ответы](/answers/questions/topics/single/101418.html)
-* [Stackoverflow](https://stackoverflow.com/questions/tagged/azure+communication)
-
-В зависимости от [плана поддержки](https://azure.microsoft.com/support/plans/) для подписки Azure вы можете отправить запрос в службу поддержки напрямую через [портал Azure](https://azure.microsoft.com/support/create-ticket/).
+Мы советуем разработчикам отправлять вопросы, предлагать функции и сообщать о проблемах. Чтобы помочь вам в этом, у нас есть [специальная страница поддержки и параметров справки](../support.md) со списком вариантов поддержки.
 
 Для устранения определенных типов проблем могут потребоваться указанные ниже сведения.
 
@@ -107,7 +102,6 @@ Log.d(call.getCallId())
 ```
 ---
 
-
 ## <a name="access-your-sms-message-id"></a>Доступ к ИД SMS-сообщений
 
 При проблемах с SMS идентификатор сообщения можно получить из объекта ответа.
@@ -130,9 +124,6 @@ console.log(result); // your message ID will be in the result
 ---
 
 ## <a name="enable-and-access-call-logs"></a>Включение журналов вызовов и доступ к ним
-
-
-
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 
@@ -166,7 +157,6 @@ callClient = new CallClient({logger: AzureLogger});
 
 ---
 
-
 ## <a name="calling-client-library-error-codes"></a>Коды ошибок клиентской библиотеки для вызовов
 
 В клиентской библиотеке для вызовов Служб коммуникации Azure используются следующие коды ошибок, которые помогут вам в устранении неполадок с вызовами. Эти коды ошибок предоставляются с помощью свойства `call.callEndReason` после завершения вызова.
@@ -184,7 +174,6 @@ callClient = new CallClient({logger: AzureLogger});
 | 490, 491, 496, 487, 498 | Проблемы с сетью в локальной конечной точке. | Проверьте сеть. |
 | 500, 503, 504 | Ошибка инфраструктуры Служб коммуникации. | Создайте запрос на поддержку на портале Azure. |
 | 603 | Вызов глобально отклонен удаленным участником Служб коммуникации. | Ожидаемое поведение. |
-
 
 ## <a name="related-information"></a>Дополнительные сведения
 - [Журналы и диагностика](logging-and-diagnostics.md)
