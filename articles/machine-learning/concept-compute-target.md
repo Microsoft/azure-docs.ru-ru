@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.author: sgilley
 author: sdgilley
 ms.date: 09/29/2020
-ms.openlocfilehash: 1ff20ab19390dcdadb9a4aa79822f7ace3d31989
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.openlocfilehash: bd83ccc4f834d6b52e1c2db15000eb695be85f30
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98791178"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177204"
 ---
 # <a name="what-are-compute-targets-in-azure-machine-learning"></a>Что такое целевые объекты вычислений в Машинном обучении Azure?
 
@@ -100,21 +100,27 @@ ms.locfileid: "98791178"
 
 | **Поддерживаемые серии виртуальных машин**  | **Ограничения** |
 |------------|------------|
-| D | Нет. |
-| Dv2 | Нет. |  
-| Dv3 | Нет.|
-| DSv2 | Нет. | 
-| DSv3 | Нет.|
-| Серия fsv2 | Нет. | 
+| D | Отсутствует. |
+| DDSv4 | Отсутствует. |
+| Dv2 | Отсутствует. |  
+| Dv3 | Отсутствует.|
+| DSv2 | Отсутствует. | 
+| DSv3 | Отсутствует.|
+| EAv4 | Отсутствует. |
+| Ev3 | Отсутствует. |
+| Серия fsv2 | Отсутствует. | 
+| H | Отсутствует. |
+| HB | Требуется утверждение. |
 | HBv2 | Требуется утверждение. |  
 | HCS | Требуется утверждение. |  
 | M | Требуется утверждение. |
-| NC | Нет. |    
+| NC | Отсутствует. |  
+| Акционная NC | Отсутствует. |
 | NCsv2 | Требуется утверждение. |
 | NCsv3 | Требуется утверждение. |  
 | Структура | Требуется утверждение. |
 | NDv2 | Требуется утверждение. |
-| NV | Нет. |
+| NV | Отсутствует. |
 | NVv3 | Требуется утверждение. | 
 
 

@@ -7,12 +7,12 @@ ms.reviewer: maghan
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 06/12/2018
-ms.openlocfilehash: cb19b7e8c5271e1106e69c98d5bd17a1bcb822bf
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 3da450ce1130b693fa346b4a6f4b42f6a0fd60a3
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100385291"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174212"
 ---
 # <a name="system-variables-supported-by-azure-data-factory"></a>Системные переменные, поддерживаемые в фабрике данных Azure
 [!INCLUDE[appliesto-adf-asa-md](includes/appliesto-adf-asa-md.md)]
@@ -20,6 +20,7 @@ ms.locfileid: "100385291"
 В этой статье описаны системные переменные, поддерживаемые фабрикой данных Azure. Вы можете использовать эти переменные в выражениях при определении сущностей фабрики данных.
 
 ## <a name="pipeline-scope"></a>Область конвейера
+
 Ссылки на эти системные переменные можно добавлять в любой части JSON конвейера.
 
 | Имя переменной | Описание |
@@ -36,6 +37,7 @@ ms.locfileid: "100385291"
 >Системные переменные даты и времени, связанные с триггерами (в областях конвейера и триггера), возвращают даты по ГРИНВИЧу в формате ISO 8601, например `2017-06-01T22:20:00.4061448Z` .
 
 ## <a name="schedule-trigger-scope"></a>Запланировать область триггера
+
 К этим системным переменным можно обращаться в любом месте в JSON триггера для триггеров типа [счедулетригжер](concepts-pipeline-execution-triggers.md#schedule-trigger).
 
 | Имя переменной | Описание |
@@ -44,6 +46,7 @@ ms.locfileid: "100385291"
 | @trigger().startTime |Время **фактического** срабатывания триггера для вызова выполнения конвейера. Это может немного отличаться от запланированного времени триггера. |
 
 ## <a name="tumbling-window-trigger-scope"></a>Область действия триггера окна "переворачивающегося"
+
 К этим системным переменным можно обращаться в любом месте в JSON триггера для триггеров типа [тумблингвиндовтригжер](concepts-pipeline-execution-triggers.md#tumbling-window-trigger).
 
 | Имя переменной | Описание |
@@ -53,7 +56,8 @@ ms.locfileid: "100385291"
 | @trigger().scheduledTime |Время, когда триггер был запланирован для вызова выполнения конвейера. |
 | @trigger().startTime |Время **фактического** срабатывания триггера для вызова выполнения конвейера. Это может немного отличаться от запланированного времени триггера. |
 
-## <a name="event-based-trigger-scope"></a>Область триггеров на основе событий
+## <a name="storage-event-trigger-scope"></a>Область триггера событий хранилища
+
 К этим системным переменным можно обращаться в любом месте в JSON триггера для триггеров типа [блобевентстригжер](concepts-pipeline-execution-triggers.md#event-based-trigger).
 
 | Имя переменной | Описание |
@@ -62,5 +66,6 @@ ms.locfileid: "100385291"
 | @triggerBody(). имя_папки  |Путь к папке, содержащей файл, заданный параметром `@triggerBody().fileName` . Первый сегмент пути к папке — это имя контейнера хранилища BLOB-объектов Azure.  |
 | @trigger().startTime |Время срабатывания триггера для вызова выполнения конвейера. |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
+
 Сведения о том, как эти переменные используются в выражениях, см. в статье [Выражения и функции в фабрике данных Azure](control-flow-expression-language-functions.md).

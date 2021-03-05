@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: conceptual
 ms.date: 10/21/2020
 ms.author: b-juche
-ms.openlocfilehash: f7b9cabdc7c2c706ff3b8dd5a0b3b5f7ed3666d6
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.openlocfilehash: e2f7328a0acc8e5206abc600a4052f83828a87f6
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92369035"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174229"
 ---
 # <a name="azure-netapp-files-sdks-cli-tools-and-arm-templates"></a>Azure NetApp Files пакеты SDK, средства CLI и шаблоны ARM
 
@@ -42,9 +42,9 @@ ms.locfileid: "92369035"
 
 В таблице ниже перечислены поддерживаемые средства CLI и их Справочник по командам.   
 
-|    Средство    |    Справочник по командам    |
+|    Инструмент    |    Справочник по командам    |
 |------------------|--------------------------------------------|
-|    Azure CLI  |    [AZ нетаппфилес](/cli/azure/netappfiles?view=azure-cli-latest&preserve-view=true)    |
+|    Azure CLI  |    [AZ нетаппфилес](/cli/azure/netappfiles)    |
 |    PowerShell   |    [Azure PowerShell для Azure NetApp Files](/powershell/module/az.netappfiles/?view=azps-2.5.0#netapp_files&preserve-view=true)    |
 
 ## <a name="code-samples"></a>Примеры кода
@@ -57,5 +57,5 @@ Azure Resource Manager (ARM) позволяет подготавливать п�
 
 См. раздел [Доступные шаблоны ARM для Azure NetApp Files](https://azure.microsoft.com/resources/templates/?term=anf).
 
-## <a name="next-steps"></a>Дальнейшие шаги   
+## <a name="next-steps"></a>Дальнейшие действия   
  [Скачать пакеты SDK для Azure](https://azure.microsoft.com/downloads/)

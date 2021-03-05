@@ -3,12 +3,12 @@ title: Публикации устойчивых функций в службе 
 description: Узнайте, как настроить автоматическую публикацию в службе "Сетка событий Azure" для устойчивых функций.
 ms.topic: conceptual
 ms.date: 04/25/2020
-ms.openlocfilehash: e4651dd7548ba76380bfc2d1b314e67d7abe63d9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 44df100a5c794abf918a09dea0f94d30ddf916d3
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "87081752"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175963"
 ---
 # <a name="durable-functions-publishing-to-azure-event-grid-preview"></a>Публикации устойчивых функций в службе "Сетка событий Azure" (предварительная версия)
 
@@ -26,7 +26,7 @@ ms.locfileid: "87081752"
 
 * Установите [Microsoft.Azure.WebJobs.Extensions.DurableTask](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask) в проекте Устойчивых функций.
 * Установите [эмулятор службы хранилища Azure](../../storage/common/storage-use-emulator.md) (только для Windows) или используйте существующую учетную запись хранения Azure.
-* Установите [Azure CLI](/cli/azure/?view=azure-cli-latest) или используйте [Azure Cloud Shell](../../cloud-shell/overview.md).
+* Установите [Azure CLI](/cli/azure/) или используйте [Azure Cloud Shell](../../cloud-shell/overview.md).
 
 ## <a name="create-a-custom-event-grid-topic"></a>Создание пользовательского раздела сетки событий
 
@@ -132,11 +132,11 @@ az eventgrid topic key list --name <topic_name> -g eventResourceGroup --query "k
 
 1. Выполните поиск по фразе **Сетка событий**. Затем выберите шаблон **триггера службы "Сетка событий Azure"** . 
 
-    :::image type="content" source="./media/durable-functions-event-publishing/function-select-event-grid-trigger.png" alt-text="Добавьте функцию на портале Azure." border="true":::
+    :::image type="content" source="./media/durable-functions-event-publishing/function-select-event-grid-trigger.png" alt-text="Выберите шаблон триггера Сетки событий на портале Azure." border="true":::
 
 1. Присвойте новому триггеру имя. Затем выберите элемент **Создать функцию**.
 
-    :::image type="content" source="./media/durable-functions-event-publishing/function-name-event-grid-trigger.png" alt-text="Добавьте функцию на портале Azure." border="true":::
+    :::image type="content" source="./media/durable-functions-event-publishing/function-name-event-grid-trigger.png" alt-text="Присвойте триггеру Сетки событий имя на портале Azure." border="true":::
 
 
     Будет создана функция со следующим кодом:
@@ -172,11 +172,11 @@ az eventgrid topic key list --name <topic_name> -g eventResourceGroup --query "k
 
 1. В новой функции выберите элемент **Интеграция** а затем выберите параметр **триггера Сетки событий (eventGridEvent)** . 
 
-    :::image type="content" source="./media/durable-functions-event-publishing/eventgrid-trigger-link.png" alt-text="Добавьте функцию на портале Azure." border="true":::
+    :::image type="content" source="./media/durable-functions-event-publishing/eventgrid-trigger-link.png" alt-text="Выберите ссылку на триггер Сетки событий." border="true":::
 
 1. Выберите **Create Event Grid Description** (Создать описание Сетки событий).
 
-    :::image type="content" source="./media/durable-functions-event-publishing/create-event-grid-subscription.png" alt-text="Добавьте функцию на портале Azure." border="true":::
+    :::image type="content" source="./media/durable-functions-event-publishing/create-event-grid-subscription.png" alt-text="Создайте подписку на Сетку событий." border="true":::
 
 1. Присвойте имя подписке на события и выберите типа раздела из списка **разделов Сетки событий** 
 
@@ -184,7 +184,7 @@ az eventgrid topic key list --name <topic_name> -g eventResourceGroup --query "k
 
 1. Нажмите кнопку **создания**.
 
-    :::image type="content" source="./media/durable-functions-event-publishing/event-grid-subscription-details.png" alt-text="Добавьте функцию на портале Azure." border="true":::
+    :::image type="content" source="./media/durable-functions-event-publishing/event-grid-subscription-details.png" alt-text="Создайте подписку в службе &quot;Сетка событий&quot;." border="true":::
 
 Теперь все готово для получения событий жизненного цикла.
 

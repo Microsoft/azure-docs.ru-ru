@@ -6,12 +6,12 @@ ms.service: cosmos-db
 ms.topic: how-to
 ms.date: 03/03/2021
 ms.author: thweiss
-ms.openlocfilehash: acb82a66c8ef4adcfeef0fcb527c44512ad4feaf
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 7c5497615ce71d0be713ef9ae28ab1e0f85b7ddb
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102040878"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177238"
 ---
 # <a name="configure-role-based-access-control-with-azure-active-directory-for-your-azure-cosmos-db-account-preview"></a>Настройка управления доступом на основе ролей с помощью Azure Active Directory для учетной записи Azure Cosmos DB (Предварительная версия)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -314,7 +314,7 @@ resourceGroupName='<myResourceGroup>'
 accountName='<myCosmosAccount>'
 readOnlyRoleDefinitionId = '<roleDefinitionId>' // as fetched above
 principalId = '<aadPrincipalId>'
-az cosmosdb sql role assignment create --account-name $accountName --resource-group --scope "/" --principalId $principalId --role-definition-id $readOnlyRoleDefinitionId
+az cosmosdb sql role assignment create --account-name $accountName --resource-group --scope "/" --principal-id $principalId --role-definition-id $readOnlyRoleDefinitionId
 ```
 
 ## <a name="initialize-the-sdk-with-azure-ad"></a>Инициализация пакета SDK с помощью Azure AD

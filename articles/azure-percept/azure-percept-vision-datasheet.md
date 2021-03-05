@@ -6,12 +6,12 @@ ms.author: v-elqu
 ms.service: azure-percept
 ms.topic: reference
 ms.date: 02/16/2021
-ms.openlocfilehash: 54dae3341910bf863de7e2a2cef832ae670ca09a
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 7bbb3a88bbc3011ec5dd917cdb0c1e49f7556aab
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102097573"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177170"
 ---
 # <a name="azure-percept-vision-datasheet"></a>Спецификации Azure Percept Vision
 
@@ -26,7 +26,7 @@ ms.locfileid: "102097573"
 |Поддерживаемое программное обеспечение и службы |[Центр Интернета вещей Azure](https://azure.microsoft.com/services/iot-hub/) <br> [Azure IoT Edge](https://azure.microsoft.com/services/iot-edge/) <br> [Машинное обучение Azure](https://azure.microsoft.com/services/machine-learning/) <br> [Среда выполнения ONNX](https://www.onnxruntime.ai/) <br> [опенвино](https://docs.openvinotoolkit.org/latest/index.html) <br> Обновление устройства Azure |
 |Ускорение искусственного интеллекта                 |Intel Мовидиус множество X (MA2085) (ВПУ) с интегрированным поставщиком услуг Интернет-камеры Intel, 0,7 ВЕРХНих устройств |
 |Датчики и визуальные индикаторы   |Датчик камеры Sony IMX219 с 6P Lens<br>Решение. 8MP по адресу 30FPS, Distance: 50cm-Infinity<br>Фов: 120 градусов по диагонали, цвет: широкий динамический диапазон, фиксированный чередующийся фокус|
-|Поддержка камеры                  |RGB (в настоящее время) и IR (в будущем) <br> 2 камеры можно запускать одновременно |
+|Поддержка камеры                  |RGB <br> 2 камеры можно запускать одновременно |
 |Crypto-Controller безопасности      |ST-Micro STM32L462CE      |
 |Компонент управления версиями или ИДЕНТИФИКАТОРом       |64 КБ |
 |Память                          |LPDDR4 2 ГБ     |

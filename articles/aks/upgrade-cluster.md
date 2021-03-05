@@ -4,12 +4,12 @@ description: Узнайте, как обновить кластер Azure Kubern
 services: container-service
 ms.topic: article
 ms.date: 12/17/2020
-ms.openlocfilehash: 1d3c275758a1e241a531b65d1897903153efab94
-ms.sourcegitcommit: ca215fa220b924f19f56513fc810c8c728dff420
+ms.openlocfilehash: 11218fc0cd754e9793067c449fdcb7589688dc2e
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98567463"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102176354"
 ---
 # <a name="upgrade-an-azure-kubernetes-service-aks-cluster"></a>Обновление кластера службы Azure Kubernetes (AKS)
 
@@ -184,8 +184,8 @@ az aks update --resource-group myResourceGroup --name myAKSCluster --auto-upgrad
 [az-aks-show]: /cli/azure/aks#az-aks-show
 [az-extension-add]: /cli/azure/extension#az-extension-add
 [az-extension-update]: /cli/azure/extension#az-extension-update
-[az-feature-list]: /cli/azure/feature?view=azure-cli-latest#az-feature-list&preserve-view=true
+[az-feature-list]: /cli/azure/feature#az-feature-list
 [az-feature-register]: /cli/azure/feature#az-feature-register
-[az-provider-register]: /cli/azure/provider?view=azure-cli-latest#az-provider-register&preserve-view=true
+[az-provider-register]: /cli/azure/provider#az-provider-register
 [nodepool-upgrade]: use-multiple-node-pools.md#upgrade-a-node-pool
 [upgrade-cluster]:  #upgrade-an-aks-cluster

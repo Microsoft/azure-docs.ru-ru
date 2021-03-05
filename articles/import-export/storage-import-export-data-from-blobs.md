@@ -5,16 +5,16 @@ author: alkohli
 services: storage
 ms.service: storage
 ms.topic: how-to
-ms.date: 02/16/2021
+ms.date: 03/03/2021
 ms.author: alkohli
 ms.subservice: common
-ms.custom: devx-track-azurepowershell, devx-track-azurecli
-ms.openlocfilehash: 8ccc7b641e2bfcb4ea8733b9d4f793229c430bc0
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.custom: devx-track-azurepowershell, devx-track-azurecli, contperf-fy21q3
+ms.openlocfilehash: e878be5351362923e163c0a6f617b96ab72a36d8
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "100652879"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177590"
 ---
 # <a name="use-the-azure-importexport-service-to-export-data-from-azure-blob-storage"></a>Использование службы "Импорт и экспорт Azure" для экспорта данных из хранилища BLOB-объектов Azure
 
@@ -53,38 +53,56 @@ ms.locfileid: "100652879"
 
 4. В разделе **Основные сведения**:
 
-    - Щелкните **Экспорт из Azure**.
-    - Введите описательное имя для задания экспорта. Вы можете использовать его для отслеживания хода выполнения заданий.
-        - Имя может содержать только буквы в нижнем регистре, цифры, дефисы и знаки подчеркивания.
-        - Имя должно начинаться с буквы и не может содержать пробелы.
-    - Выберите подписку.
-    - Укажите или выберите группу ресурсов.
+   1. Выберите подписку.
+   1. Выберите группу ресурсов или щелкните **создать** и создайте новую.
+   1. Введите описательное имя для задания импорта. Вы будете использовать его для отслеживания хода выполнения заданий.
+       * Имя может содержать только строчные буквы, цифры и дефисы.
+       * Имя должно начинаться с буквы и не может содержать пробелы.
 
-        ![Основы](./media/storage-import-export-data-from-blobs/export-from-blob-3.png)
+   1. Щелкните **Экспорт из Azure**.
+
+    ![Основные параметры для заказа на экспорт](./media/storage-import-export-data-from-blobs/export-from-blob-3.png)
+
+    Чтобы **проследить, нажмите кнопку Далее: сведения о задании >** .
 
 5. В разделе **Сведения о задании** сделайте следующее:
 
-    - Выберите учетную запись хранения, в которой хранятся данные для экспорта. Используйте учетную запись хранилища, расположенную рядом с местом, где вы находитесь.
-    - Расположение места назначения автоматически заполняется с учетом выбранного региона учетной записи хранения.
-    - Укажите, какие данные больших двоичных объектов необходимо экспортировать из учетной записи хранения на пустой диск или диски.
-    - Выберите **Экспортировать все** для данных больших двоичных объектов в учетной записи хранения.
+   1. Выберите регион Azure, в котором находятся ваши данные.
+   1. Выберите учетную запись хранения, из которой необходимо экспортировать данные. Используйте учетную запись хранения, расположенную ближе к вашему местоположению.
 
-         ![Экспорт всех данных](./media/storage-import-export-data-from-blobs/export-from-blob-4.png)
+      Расположение места назначения автоматически заполняется с учетом выбранного региона учетной записи хранения.
 
-    - Вы можете указать, какие контейнеры и большие двоичные объекты необходимо экспортировать.
-        - **Чтобы указать большой двоичный объект для экспорта**, используйте селектор **Равно**. Укажите относительный путь к большому двоичному объекту, начинающийся с имени контейнера. Используйте *$root* для указания корневого контейнера.
-        - **Чтобы указать все большие двоичные объекты, начинающиеся с префикса**, используйте селектор **Начинается с**. Укажите префикс, начинающийся с символа косой черты "/". Префикс может являться префиксом имени контейнера, полным именем контейнера или полным именем контейнера с префиксом имени blob-объекта. Чтобы избежать ошибок во время обработки, необходимо указать пути к большим двоичным объектам в допустимом формате, как показано на приведенном ниже снимке экрана. Дополнительные сведения см. в разделе с [примерами допустимых путей к большим двоичным объектам](#examples-of-valid-blob-paths).
+   1. Укажите данные большого двоичного объекта для экспорта из вашей учетной записи хранения на чистый диск или диски. Выберите один из трех следующих методов.
 
-           ![Экспорт выбранных контейнеров и больших двоичных объектов](./media/storage-import-export-data-from-blobs/export-from-blob-5.png)
+      - Выберите **Экспортировать все** для данных больших двоичных объектов в учетной записи хранения.
 
-    - Вы можете выполнить экспорт из файла списка больших двоичных объектов.
+        ![Экспорт всех данных](./media/storage-import-export-data-from-blobs/export-from-blob-4.png)
 
-        ![Экспорт из файла списка больших двоичных объектов](./media/storage-import-export-data-from-blobs/export-from-blob-6.png)
+      - Выберите **Выбранные контейнеры и большие двоичные объекты** и укажите контейнеры и большие двоичные объекты для экспорта. Можно использовать более одного метода выбора. При выборе параметра **Добавить** открывается панель справа, где можно добавить строки выбора.
+
+        |Параметр|Описание|
+        |------|-----------|      
+        |**Добавить контейнеры**|Экспортируйте все большие двоичные объекты в контейнере.<br>Выберите **Добавить контейнеры** и введите имя каждого контейнера.|
+        |**Добавить BLOB-объекты**|Укажите отдельные большие двоичные объекты для экспорта.<br>Выберите **Добавить большие двоичные объекты**. Затем укажите относительный путь к большому двоичному объекту, начиная с имени контейнера. Используйте *$root* для указания корневого контейнера.<br>Чтобы избежать ошибок во время обработки, необходимо указать пути к большим двоичным объектам в допустимом формате, как показано на приведенном ниже снимке экрана. Дополнительные сведения см. в разделе с [примерами допустимых путей к большим двоичным объектам](#examples-of-valid-blob-paths).|
+        |**Добавить префиксы**|Используйте префикс, чтобы выбрать набор похожих контейнеров или BLOB-объектов с похожими именами в контейнере. Префикс может быть префиксом имени контейнера, полным именем контейнера или полным именем контейнера, за которым следует префикс имени большого двоичного объекта. |
+
+        ![Экспорт выбранных контейнеров и больших двоичных объектов](./media/storage-import-export-data-from-blobs/export-from-blob-5.png)
+
+    - Выберите **Экспорт из файла списка BLOB-объектов (XML-формат)** и выберите XML-файл, содержащий список путей и префиксов для экспортируемых BLOB-объектов из учетной записи хранения. Необходимо создать XML-файл и сохранить его в контейнере для учетной записи хранения. Файл не может быть пустым.
+
+      > [!IMPORTANT]
+      > Если вы используете XML-файл для выбора больших двоичных объектов для экспорта, убедитесь, что XML-код содержит допустимые пути и (или) префиксы. Если файл является недопустимым или не совпадает с указанными путями, порядок завершается частичными данными или данные не экспортируются.
+
+       Чтобы узнать, как добавить XML-файл в контейнер, см. статью [Экспорт порядка с помощью XML-файла](../databox/data-box-deploy-export-ordered.md#export-order-using-xml-file).
+
+      ![Экспорт из файла списка больших двоичных объектов](./media/storage-import-export-data-from-blobs/export-from-blob-6.png)
 
    > [!NOTE]
-   > Если большой двоичный объект для экспорта используется во время копирования данных, служба "Импорт и экспорт Azure" делает снимок большого двоичного объекта и копирует моментальный снимок.
+   > Если экспортируемый BLOB-объект используется во время копирования данных, служба импорта и экспорта Azure создает моментальный снимок большого двоичного объекта и копирует моментальный снимок.
 
-6. В разделе **Сведения о возврате** сделайте следующее:
+   Нажмите кнопку **Далее: доставка >** для продолжения.
+
+6. В **поставку**:
 
     - В раскрывающемся списке выберите перевозчика. Если вы хотите использовать перевозчика, отличный от FedEx/DHL, выберите существующий параметр из раскрывающегося списка. Свяжитесь с командой Operations Azure Data Box `adbops@microsoft.com`  с информацией о перевозчике, который планируется использовать.
     - Введите допустимый номер учетной записи, созданный в системе этого перевозчика. Корпорация Майкрософт использует эту учетную запись для обратной отправки дисков после завершения задания экспорта.
@@ -93,15 +111,76 @@ ms.locfileid: "100652879"
         > [!TIP]
         > Вместо указания адреса электронной почты для отдельного пользователя укажите электронную почту группы. Это гарантирует, что вы получите уведомления, даже если администратор уйдет.
 
-7. В **сводке**:
+    Щелкните **Просмотр и создание**, чтобы продолжить.
 
-    - Просмотрите сведения о задании.
-    - Запишите название задания и предоставленный адрес центра обработки данных Azure для отправки дисков в Azure.
+7. На панели **Проверка и создание**:
+
+   1. Просмотрите сведения о задании.
+   1. Запишите название задания и предоставленный адрес центра обработки данных Azure для отправки дисков в Azure.
+
+      > [!NOTE]
+      > Всегда отправляйте диски в центр обработки данных, указанный на портале Azure. В случае отправки в неправильный центр обработки данных, задание не будет обрабатываться.
+
+   1. Ознакомьтесь с **условиями** для заказа на удаление конфиденциальности и исходных данных. Если вы согласны с условиями, установите флажок под терминами. Начинается проверка порядка.
+
+   ![Проверка и создание заказа на экспорт](./media/storage-import-export-data-from-blobs/export-from-blob-6-a.png)
+
+ 1. После завершения проверки выберите **создать**.
+
+<!--Replaced text: Steps 4 - end of "Create an export job." Wizard design changes required both screen and text updates.
+
+4. In **Basics**:
+
+    - Select **Export from Azure**.
+    - Enter a descriptive name for the export job. Use the name you choose to track the progress of your jobs.
+        - The name may contain only lowercase letters, numbers, hyphens, and underscores.
+        - The name must start with a letter, and may not contain spaces.
+    - Select a subscription.
+    - Enter or select a resource group.
+
+        ![Basics](./media/storage-import-export-data-from-blobs/export-from-blob-3.png)
+
+5. In **Job details**:
+
+    - Select the storage account where the data to be exported resides. Use a storage account close to where you are located.
+    - The dropoff location is automatically populated based on the region of the storage account selected.
+    - Specify the blob data you wish to export from your storage account to your blank drive or drives.
+    - Choose to **Export all** blob data in the storage account.
+
+         ![Export all](./media/storage-import-export-data-from-blobs/export-from-blob-4.png)
+
+    - You can specify which containers and blobs to export.
+        - **To specify a blob to export**: Use the **Equal To** selector. Specify the relative path to the blob, beginning with the container name. Use *$root* to specify the root container.
+        - **To specify all blobs starting with a prefix**: Use the **Starts With** selector. Specify the prefix, beginning with a forward slash '/'. The prefix may be the prefix of the container name, the complete container name, or the complete container name followed by the prefix of the blob name. You must provide the blob paths in valid format to avoid errors during processing, as shown in this screenshot. For more information, see [Examples of valid blob paths](#examples-of-valid-blob-paths).
+
+           ![Export selected containers and blobs](./media/storage-import-export-data-from-blobs/export-from-blob-5.png)
+
+    - You can export from  the blob list file.
+
+        ![Export from blob list file](./media/storage-import-export-data-from-blobs/export-from-blob-6.png)
+
+   > [!NOTE]
+   > If the blob to be exported is in use during data copy, Azure Import/Export service takes a snapshot of the blob and copies the snapshot.
+
+6. In **Return shipping info**:
+
+    - Select the carrier from the dropdown list. If you want to use a carrier other than FedEx/DHL, choose an existing option from the dropdown. Contact Azure Data Box Operations team at `adbops@microsoft.com`  with the information regarding the carrier you plan to use.
+    - Enter a valid carrier account number that you have created with that carrier. Microsoft uses this account to ship the drives back to you once your export job is complete.
+    - Provide a complete and valid contact name, phone, email, street address, city, zip, state/province, and country/region.
+
+        > [!TIP]
+        > Instead of specifying an email address for a single user, provide a group email. This ensures that you receive notifications even if an admin leaves.
+
+7. In **Summary**:
+
+    - Review the details of the job.
+    - Make a note of the job name and provided Azure datacenter shipping address for shipping disks to Azure.
 
         > [!NOTE]
-        > Всегда отправляйте диски в центр обработки данных, указанный на портале Azure. В случае отправки в неправильный центр обработки данных, задание не будет обрабатываться.
+        > Always send the disks to the datacenter noted in the Azure portal. If the disks are shipped to the wrong datacenter, the job will not be processed.
 
-    - Нажмите кнопку **ОК**, чтобы завершить создание задания экспорта.
+    - Click **OK** to complete export job creation.
+-->
 
 ### <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
@@ -306,11 +385,11 @@ Install-Module -Name Az.ImportExport
 
 ## <a name="check-the-number-of-drives"></a>Проверка количества дисков
 
-Этот *необязательный* шаг позволяет определить необходимое количество дисков для задания экспорта. Выполните этот шаг в системе с ОС Windows [поддерживаемой версии](storage-import-export-requirements.md#supported-operating-systems).
+Этот *необязательный* шаг помогает определить количество дисков, необходимых для задания экспорта. Выполните этот шаг в системе с ОС Windows [поддерживаемой версии](storage-import-export-requirements.md#supported-operating-systems).
 
 1. [Скачайте WAImportExport версии 1](https://www.microsoft.com/download/details.aspx?id=42659) в систему Windows.
 2. Распакуйте содержимое в папку по умолчанию: `waimportexportv1`. Например, `C:\WaImportExportV1`.
-3. Откройте окно PowerShell или окно командной строки с правами администратора. Чтобы перейти в распакованную папку, выполните следующую команду:
+3. Откройте PowerShell или окно командной строки с правами администратора. Чтобы перейти в распакованную папку, выполните следующую команду:
 
    `cd C:\WaImportExportV1`
 
@@ -322,12 +401,12 @@ Install-Module -Name Az.ImportExport
 
     |Параметр командной строки|Описание|
     |--------------------------|-----------------|
-    |**/logdir**|Необязательный элемент. Каталог журналов. В этот каталог записываются файлы подробного журнала. Если каталог не указан, вместо него используется текущий каталог.|
+    |**/logdir**|Необязательный параметр. Каталог журналов. В этот каталог записываются файлы подробного журнала. Если каталог не указан, вместо него используется текущий каталог.|
     |**/SN**|Обязательный. Имя учетной записи хранения для задания экспорта.|
     |**/SK**|Требуется, только если не указан SAS контейнера. Ключ учетной записи хранения для задания экспорта.|
     |**/csas:**|Требуется, только если не указан ключ учетной записи хранения. SAS контейнера для получения списка экспортируемых в рамках задания экспорта больших двоичных объектов.|
     |**/ExportBlobListFile:**|Обязательный. Путь к XML-файлу, содержащему список путей к большим двоичным объектам или префиксов путей экспортируемых больших двоичных объектов. Формат файла, используемый в элементе `BlobListBlobPath` в операции [Put Job](/rest/api/storageimportexport/jobs) интерфейса REST API службы импорта и экспорта.|
-    |**/DriveSize:**|Обязательный. Размер дисков, используемых для задания экспорта, *например* 500 ГБ, 1,5 ТБ.|
+    |**/DriveSize:**|Обязательный. Размер дисков, используемых для задания экспорта, *например* 500 гб, 1,5 ТБ.|
 
     Дополнительные сведения см. в разделе с [примером команды PreviewExport](#example-of-previewexport-command).
 

@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: conceptual
 ms.date: 02/05/2021
 ms.author: b-juche
-ms.openlocfilehash: b25d312e6710a07f523c4acdb0fd4b970ce4a2d7
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 12807e83f7841bc67999ce385d0cb82bf15f4c71
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101740092"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175997"
 ---
 # <a name="what-changing-to-volume-hard-quota-means-for-your-azure-netapp-files-service"></a>Что означает изменение фиксированной квоты тома для службы Azure NetApp Files
 
@@ -185,8 +185,8 @@ ms.locfileid: "101740092"
 
 Можно использовать [Azure NetApp Files средства CLI](azure-netapp-files-sdk-cli.md#cli-tools), включая Azure CLI и Azure PowerShell, чтобы вручную изменить размер пула томов или емкости.  Для управления ресурсами Azure NetApp Files и пула можно использовать следующие две команды:  
 
-* [`az netappfiles pool`](/cli/azure/netappfiles/pool?preserve-view=true&view=azure-cli-latest)
-* [`az netappfiles volume`](/cli/azure/netappfiles/volume?preserve-view=true&view=azure-cli-latest)
+* [`az netappfiles pool`](/cli/azure/netappfiles/pool)
+* [`az netappfiles volume`](/cli/azure/netappfiles/volume)
 
 Чтобы управлять ресурсами Azure NetApp Files с помощью Azure CLI, можно открыть портал Azure и выбрать ссылку Azure **Cloud Shell** в верхней части строки меню: 
 
@@ -196,13 +196,13 @@ ms.locfileid: "101740092"
 
 [![Снимок экрана, на котором показано окно Cloud Shell. ](../media/azure-netapp-files/hard-quota-update-cloud-shell-window.png)](../media/azure-netapp-files/hard-quota-update-cloud-shell-window.png#lightbox)
 
-В следующих примерах используются команды для [отображения](/cli/azure/netappfiles/volume?preserve-view=true&view=azure-cli-latest#az-netappfiles-volume-show) и [обновления](/cli/azure/netappfiles/volume?preserve-view=true&view=azure-cli-latest#az-netappfiles-volume-update) размера тома.
+В следующих примерах используются команды для [отображения](/cli/azure/netappfiles/volume#az-netappfiles-volume-show) и [обновления](/cli/azure/netappfiles/volume#az-netappfiles-volume-update) размера тома.
  
 [![Снимок экрана, показывающий использование PowerShell для отображения размера тома. ](../media/azure-netapp-files/hard-quota-update-powershell-volume-show.png)](../media/azure-netapp-files/hard-quota-update-powershell-volume-show.png#lightbox)
 
 [![Снимок экрана, показывающий использование PowerShell для обновления размера тома. ](../media/azure-netapp-files/hard-quota-update-powershell-volume-update.png)](../media/azure-netapp-files/hard-quota-update-powershell-volume-update.png#lightbox)
 
-В следующих примерах используются команды для [отображения](/cli/azure/netappfiles/pool?preserve-view=true&view=azure-cli-latest#az-netappfiles-pool-show) и [обновления](/cli/azure/netappfiles/pool?preserve-view=true&view=azure-cli-latest#az-netappfiles-pool-update) размера пула емкости.
+В следующих примерах используются команды для [отображения](/cli/azure/netappfiles/pool#az-netappfiles-pool-show) и [обновления](/cli/azure/netappfiles/pool#az-netappfiles-pool-update) размера пула емкости.
 
 [![Снимок экрана, показывающий использование PowerShell для отображения размера пула ресурсов. ](../media/azure-netapp-files/hard-quota-update-powershell-pool-show.png)](../media/azure-netapp-files/hard-quota-update-powershell-pool-show.png#lightbox) 
 

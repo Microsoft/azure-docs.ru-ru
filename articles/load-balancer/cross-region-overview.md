@@ -13,12 +13,12 @@ ms.workload: infrastructure-services
 ms.date: 09/22/2020
 ms.author: allensu
 ms.custom: references_regions
-ms.openlocfilehash: 272fb0a27cf57483af6c07373e35a30f7f6e1c4b
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: b0e51d11797bc5767f19b25a92a2d29a66ea1bb2
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102101381"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102176728"
 ---
 # <a name="cross-region-load-balancer-preview"></a>Балансировщик нагрузки между регионами (Предварительная версия)
 
@@ -28,7 +28,7 @@ Azure Load Balancer (цен. категория "Стандартный") под
 
 * Входящий трафик, исходящий из нескольких регионов.
 * [Быстрая Глобальная отработка отказа](#regional-redundancy) для следующего оптимального региона.
-* Распределение нагрузки между регионами в ближайший регион Azure с [Ultra задержками](#ultra-low-latency).
+* Распределение нагрузки между регионами в ближайший регион Azure с [Ultra-Low задержками](#ultra-low-latency).
 * Возможность [увеличения или уменьшения масштаба](#ability-to-scale-updown-behind-a-single-endpoint) за одну конечную точку.
 * [Статический IP-адрес](#static-ip)
 * [Сохранение IP-адресов клиентов](#client-ip-preservation)

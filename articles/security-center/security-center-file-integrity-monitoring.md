@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/22/2020
 ms.author: memildin
-ms.openlocfilehash: 07a36bb9b9e3baea2136c23208d268c2c196e70f
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: b858903b87dc6c4cc1f7c40338c09bf5b8204b3d
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102099460"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102176541"
 ---
 # <a name="file-integrity-monitoring-in-azure-security-center"></a>Мониторинг целостности файлов в центре безопасности Azure
 Узнайте, как настроить мониторинг целостности файлов (FIM) в центре безопасности Azure с помощью этого пошагового руководства.
@@ -26,12 +26,12 @@ ms.locfileid: "102099460"
 
 ## <a name="availability"></a>Доступность
 
-|Аспект|Сведения|
+|Аспект|Подробнее|
 |----|:----|
 |Состояние выпуска:|Общедоступная версия|
 |Цены:|Требуется [защитник Azure для серверов](defender-for-servers-introduction.md).<br>FIM передает данные в рабочую область Log Analytics. За эту операцию взимается плата, размер которой зависит от объема передаваемых данных. Дополнительные сведения см. на [странице цен на Log Analytics](https://azure.microsoft.com/pricing/details/log-analytics/).|
 |Требуемые роли и разрешения|**Владелец рабочей области** может включать и отключать FIM (Дополнительные сведения см. в статье [роли Azure для log Analytics](/services-hub/health/azure-roles#azure-roles)).<br>**Читатель** может просматривать результаты.|
-|Облако.|![Да](./media/icons/yes-icon.png) Коммерческие облака<br>![Да ](./media/icons/yes-icon.png) National/независимых (US gov, Китае gov, other gov)<br>Поддерживается только в регионах, где доступно решение для отслеживания изменений в службе автоматизации Azure.<br>См. раздел [Supported regions for linked log Analytics Workspace](../automation/how-to/region-mappings.md).<br>Дополнительные [сведения об отслеживании изменений](../automation/change-tracking/overview.md).|
+|Облако.|![Да](./media/icons/yes-icon.png) Коммерческие облака<br>![Да ](./media/icons/yes-icon.png) National/независимых (US gov, Китае gov, other gov)<br>Поддерживается только в регионах, где доступно решение для отслеживания изменений в службе автоматизации Azure.<br>![Да ](./media/icons/yes-icon.png) устройства с поддержкой [дуги Azure](https://docs.microsoft.com/azure/azure-arc/servers/overview) .<br>См. раздел [Supported regions for linked log Analytics Workspace](../automation/how-to/region-mappings.md).<br>Дополнительные [сведения об отслеживании изменений](../automation/change-tracking/overview.md).|
 |||
 
 ## <a name="what-is-fim-in-security-center"></a>Что такое FIM в центре безопасности?

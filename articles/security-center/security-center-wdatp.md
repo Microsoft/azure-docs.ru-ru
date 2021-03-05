@@ -1,23 +1,18 @@
 ---
 title: Использование защитника Майкрософт для лицензирования конечной точки, входящего в состав центра безопасности Azure
 description: Узнайте о защитнике Майкрософт для конечной точки и его развертывании из центра безопасности Azure.
-services: security-center
-documentationcenter: na
 author: memildin
 manager: rkarlin
 ms.service: security-center
-ms.devlang: na
 ms.topic: how-to
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 02/15/2021
 ms.author: memildin
-ms.openlocfilehash: a659ea897f013e504668789a7d5671420ff70a9f
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 475c7671636d3aac036e3da1392fc2da9b0a001f
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102099086"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102176473"
 ---
 # <a name="protect-your-endpoints-with-security-centers-integrated-edr-solution-microsoft-defender-for-endpoint"></a>Защитите свои конечные точки с помощью интегрированного решения ЕДР центра безопасности: защитник Майкрософт для конечной точки
 
@@ -38,15 +33,15 @@ ms.locfileid: "102099086"
 
 ## <a name="availability"></a>Доступность
 
-| Аспект                          | Сведения                                                                                                                                                                                                                                                                                                       |
+| Аспект                          | Подробнее                                                                                                                                                                                                                                                                                                       |
 |---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Состояние выпуска:                  | Общедоступная версия (GA)                                                                                                                                                                                                                                                                                      |
 | Цены                        | Требуется [Azure Defender для серверов](defender-for-servers-introduction.md)                                                                                                                                                                                                                                             |
 | Поддерживаемые платформы:            |  • Компьютеры Azure под Windows<br> • Компьютеры ARC в Azure под Windows|
-| Поддерживаемые версии Windows:  |   • **Общая доступность (общедоступная версия) —** обнаружение в Windows Server 2016, 2012 r2 и 2008 R2 с пакетом обновления 1 (SP1)<br> • Обнаружение для **предварительного просмотра** в windows Server 2019, [Windows Virtual Desktop (ВВД)](../virtual-desktop/overview.md)и [Windows 10 Корпоративная](../virtual-desktop/windows-10-multisession-faq.md) (ранее Enterprise для виртуальных рабочих столов (ЕВД)<br>Мониторинг конечных точек сервера с помощью этих интеграций отключен для клиентов Office 365 GCC|
+| Поддерживаемые версии Windows:  |  • **Общая доступность (общедоступная версия) —** обнаружение в Windows Server 2016, 2012 r2 и 2008 R2 с пакетом обновления 1 (SP1)<br> • Обнаружение для **предварительного просмотра** в windows Server 2019, [Windows Virtual Desktop (ВВД)](../virtual-desktop/overview.md)и [Windows 10 Корпоративная](../virtual-desktop/windows-10-multisession-faq.md) (ранее Enterprise для виртуальных рабочих столов (ЕВД)<br>Мониторинг конечных точек сервера с помощью этих интеграций отключен для клиентов Office 365 GCC|
 | Неподдерживаемые операционные системы:  |  • Windows 10 (кроме ЕВД или ВВД)<br> • Linux|
 | Требуемые роли и разрешения | Включение и отключение интеграции: **администратор безопасности** или **владелец**<br>Просмотр оповещений МДАТП в центре безопасности: **читатель безопасности**, **читатель**, **участник группы ресурсов**, **владелец группы ресурсов**, **администратор безопасности**, **владелец подписки** или **участник подписки**|
-| Облако.                         | ![Да](./media/icons/yes-icon.png) Коммерческие облака<br>![Да](./media/icons/yes-icon.png) US Gov<br>![Нет](./media/icons/no-icon.png) China Gov и другие правительственные облака<br>![Нет](./media/icons/no-icon.png) GCC клиенты, выполняющие рабочие нагрузки в глобальных облаках Azure                                                        |
+| Облако.                         | ![Да](./media/icons/yes-icon.png) Коммерческие облака<br>![Да](./media/icons/yes-icon.png) US Gov<br>![Нет](./media/icons/no-icon.png) China Gov и другие правительственные облака                                                        |
 |                                 |                                                                                                                                                                                                                                                                                                               |
 
 ## <a name="microsoft-defender-for-endpoint-features-in-security-center"></a>Microsoft Defender для компонентов конечной точки в центре безопасности

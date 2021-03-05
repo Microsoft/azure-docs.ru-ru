@@ -1,5 +1,5 @@
 ---
-title: Визуализация данных в режиме реального времени для центра Интернета вещей Azure FRM — Power BI
+title: Визуализация данных в режиме реального времени из центра Интернета вещей Azure — Power BI
 description: Сведения о визуализации данных о температуре и влажности, собранных с датчиков и переданных в Центр Интернета вещей Azure, с помощью Power BI.
 author: robinsh
 keywords: визуализация данных, полученных в реальном времени, визуализация интерактивных данных, визуализация данных датчиков
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.tgt_pltfrm: arduino
 ms.date: 6/08/2020
 ms.author: robinsh
-ms.openlocfilehash: 6d10d0202e9e4c813cffe6373acfb5200ebb3266
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.openlocfilehash: 82caf13618fe8483ab8d3a622c6c0d51ab05a206
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92146784"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177340"
 ---
 # <a name="visualize-real-time-sensor-data-from-azure-iot-hub-using-power-bi"></a>Визуализация данных, поступающих от датчиков в реальном времени, из Центра Интернета вещей с помощью Power BI
 
@@ -42,7 +42,7 @@ ms.locfileid: "92146784"
   * Центр Интернета вещей Azure в подписке;
   * клиентское приложение, которое отправляет сообщения в Центр Интернета вещей Azure.
 
-* Учетная запись Power BI. ([Попробуйте Power BI бесплатно](https://powerbi.microsoft.com/))
+* Учетная запись Power BI. ([Попробуйте Power BI бесплатно](https://powerbi.microsoft.com/))
 
 [!INCLUDE [iot-hub-get-started-create-consumer-group](../../includes/iot-hub-get-started-create-consumer-group.md)]
 
@@ -134,7 +134,7 @@ ms.locfileid: "92146784"
 
 ### <a name="run-the-stream-analytics-job"></a>Выполнение задания Stream Analytics
 
-В Stream Analytics задание выберите **Обзор**, а затем выберите **начать**  >  **сейчас**  >  **Start**. После успешного запуска состояние задания **Остановлено** изменится на **Выполняется**.
+В Stream Analytics задание выберите **Обзор**, а затем выберите **начать**  >  **сейчас**  >  . После успешного запуска состояние задания **Остановлено** изменится на **Выполняется**.
 
 ![Выполнение задания Stream Analytics в Azure](./media/iot-hub-live-data-visualization-in-power-bi/run-stream-analytics-job.png)
 

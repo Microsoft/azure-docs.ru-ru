@@ -1,5 +1,5 @@
 ---
-title: Azure CLI скрипты с помощью AZ Search Module
+title: Azure CLI сценариев, использующих модуль поиска AZ
 titleSuffix: Azure Cognitive Search
 description: Создание и Настройка службы Когнитивный поиск Azure с Azure CLI. Вы можете масштабировать службу по мере увеличения или уменьшения масштаба, управлять ключами API администрирования и запросов, а также запрашивать сведения о системе.
 manager: luisca
@@ -9,12 +9,12 @@ ms.service: cognitive-search
 ms.devlang: azurecli
 ms.topic: conceptual
 ms.date: 02/17/2021
-ms.openlocfilehash: 6287215233ae9baa220df37c6b820c1d1bec7720
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: ee6b0e1b745e86c72843af88c0f6d17f91512e15
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102032523"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102176762"
 ---
 # <a name="manage-your-azure-cognitive-search-service-with-the-azure-cli"></a>Управление службой Когнитивный поиск Azure с помощью Azure CLI
 > [!div class="op_single_selector"]
@@ -41,48 +41,7 @@ ms.locfileid: "102032523"
 
 В рамках службы создание и управление содержимым осуществляется с помощью [Служба поиска REST API](/rest/api/searchservice/) или [пакета SDK для .NET](/dotnet/api/overview/azure/search.documents-readme). Хотя для содержимого нет выделенных команд PowerShell, можно написать скрипты, которые вызывают интерфейсы API RESTFUL или .NET для создания и загрузки индексов.
 
-<a name="check-versions-and-load"></a>
-
-## <a name="check-versions-and-upgrade"></a>Проверка версий и обновление
-
-Примеры в этой статье являются интерактивными и нуждаются в повышенных правах. Необходимо установить Azure CLI. Дополнительные сведения см. в статье [Установка Azure CLI](/cli/azure/install-azure-cli).
-
-Теперь можно запустить Azure CLI с помощью `az` команды из командной строки Windows, PowerShell или [Azure Cloud Shell](../cloud-shell/overview.md). В PowerShell реализовано несколько функций заполнения нажатием клавиши TAB, которые недоступны в командной строке Windows. 
-
-### <a name="check-the-azure-cli-version"></a>Проверка версии Azure CLI
-
-Если вы не уверены, установлена ли Azure CLI, выполните следующую команду в качестве шага проверки. 
-
-```azurecli-interactive
-az --version
-```
-Если эта команда не работает, см. статью [установка Azure CLI](/cli/azure/install-azure-cli) для получения Azure CLI установки.
-
-Если у вас установлена версия 2.11.0 или более поздняя, можно выполнить `az upgrade` команду, чтобы обновить интерфейс командной строки до последней версии.
-
-```azurecli-interactive
-az upgrade
-```
-
-### <a name="connect-to-azure-with-a-browser-sign-in-token"></a>Подключение к Azure с помощью токена входа в браузере
-
-Вы можете использовать учетные данные для входа на портал, чтобы подключиться к подписке в Azure CLI. Кроме того, можно [выполнять проверку подлинности в неинтерактивном режиме с помощью субъекта-службы](/cli/azure/authenticate-azure-cli#sign-in-with-a-service-principal).
-
-```azurecli-interactive
-az login
-```
-
-Если вы удерживаете несколько подписок Azure, задайте свою подписку Azure. Чтобы просмотреть список текущих подписок, выполните следующую команду.
-
-```azurecli-interactive
-az account list --output table
-```
-
-Чтобы указать подписку, выполните указанную ниже команду. В приведенном ниже примере имя подписки — `ContosoSubscription`.
-
-```azurecli-interactive
-az account set --subscription "ContosoSubscription"
-```
+[!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
 <a name="list-search-services"></a>
 
@@ -262,7 +221,7 @@ az network vnet subnet update \
 id=$(az search service show \
     --resource-group <resource-group-name> \
     --name <service-name> \
-    --query [id]' \
+    --query [id] \
     --output tsv)
 
 # Create the private endpoint

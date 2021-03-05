@@ -6,12 +6,12 @@ author: lachie83
 ms.topic: article
 ms.date: 07/20/2020
 ms.author: laevenso
-ms.openlocfilehash: bbedb20d9e5c75fd49c08950bbf5d459130206ce
-ms.sourcegitcommit: 857859267e0820d0c555f5438dc415fc861d9a6b
+ms.openlocfilehash: 25fc021a48e8936f242df35f7485fc59a93bba13
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93125875"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172806"
 ---
 # <a name="http-application-routing"></a>Маршрутизация приложений HTTP
 
@@ -26,8 +26,8 @@ ms.locfileid: "93125875"
 
 Надстройка развертывает два компонента: контроллер входящего трафика [Kubernetes][ingress] и контроллер [внешнего DNS][external-dns] .
 
-- **Контроллер входящего трафика** . Доступ к контроллеру входящего трафика в Интернете предоставляется с помощью Службы Azure Kubernetes типа LoadBalancer. Входной контроллер отслеживает и реализует Kubernetes входящие [ресурсы][ingress-resource], которые создают маршруты к конечным точкам приложения.
-- **Контроллер внешних DNS** . Отслеживает ресурсы входящего трафика Службы Azure Kubernetes и создает записи A DNS в зоне DNS с определенным кластером.
+- **Контроллер входящего трафика**. Доступ к контроллеру входящего трафика в Интернете предоставляется с помощью Службы Azure Kubernetes типа LoadBalancer. Входной контроллер отслеживает и реализует Kubernetes входящие [ресурсы][ingress-resource], которые создают маршруты к конечным точкам приложения.
+- **Контроллер внешних DNS**. Отслеживает ресурсы входящего трафика Службы Azure Kubernetes и создает записи A DNS в зоне DNS с определенным кластером.
 
 ## <a name="deploy-http-routing-cli"></a>Развертывание маршрутизации HTTP-трафика: CLI
 
@@ -40,7 +40,7 @@ az aks create --resource-group myResourceGroup --name myAKSCluster --enable-addo
 > [!TIP]
 > Если вы хотите включить несколько надстроек, укажите их в виде списка через запятую. Например, чтобы включить маршрутизацию и мониторинг приложений HTTP, используйте формат `--enable-addons http_application_routing,monitoring`.
 
-Можно также включить маршрутизацию HTTP для существующего кластера AKS с помощью команды [az aks enable-addons][az-aks-enable-addons]. Чтобы включить маршрутизацию HTTP в существующем кластере, добавьте параметр `--addons` и укажите *http_application_routing* , как показано в следующем примере.
+Можно также включить маршрутизацию HTTP для существующего кластера AKS с помощью команды [az aks enable-addons][az-aks-enable-addons]. Чтобы включить маршрутизацию HTTP в существующем кластере, добавьте параметр `--addons` и укажите *http_application_routing*, как показано в следующем примере.
 
 ```azurecli
 az aks enable-addons --resource-group myResourceGroup --name myAKSCluster --addons http_application_routing
@@ -78,7 +78,7 @@ az aks show --resource-group myResourceGroup --name myAKSCluster --query addonPr
 az aks install-cli
 ```
 
-Чтобы настроить `kubectl` на подключение к кластеру Kubernetes, выполните команду [az aks get-credentials][]. Следующий пример получает учетные данные для кластера AKS с именем *MyAKSCluster* в *MyResourceGroup* :
+Чтобы настроить `kubectl` на подключение к кластеру Kubernetes, выполните команду [az aks get-credentials][]. Следующий пример получает учетные данные для кластера AKS с именем *MyAKSCluster* в *MyResourceGroup*:
 
 ```azurecli
 az aks get-credentials --resource-group MyResourceGroup --name MyAKSCluster
@@ -173,7 +173,7 @@ ingress.networking.k8s.io/aks-helloworld created
 az aks disable-addons --addons http_application_routing --name myAKSCluster --resource-group myResourceGroup --no-wait
 ```
 
-При отключении надстройки маршрутизации приложений HTTP некоторые ресурсы Kubernetes могут оставаться в кластере. Эти ресурсы включают объекты *configMap* и *секреты* и создаются в пространстве имен *kube-system* . Чтобы поддерживать чистоту кластера, можно удалить эти ресурсы.
+При отключении надстройки маршрутизации приложений HTTP некоторые ресурсы Kubernetes могут оставаться в кластере. Эти ресурсы включают объекты *configMap* и *секреты* и создаются в пространстве имен *kube-system*. Чтобы поддерживать чистоту кластера, можно удалить эти ресурсы.
 
 Найдите ресурсы *addon-http-application-routing* с помощью следующих команд [kubectl get][kubectl-get].
 
@@ -201,7 +201,7 @@ kube-system   addon-http-application-routing-udp-services                0      
 kubectl delete configmaps addon-http-application-routing-nginx-configuration --namespace kube-system
 ```
 
-Повторите предыдущий шаг `kubectl delete` для всех ресурсов *addon-http-application-routing* , которые остаются в кластере.
+Повторите предыдущий шаг `kubectl delete` для всех ресурсов *addon-http-application-routing*, которые остаются в кластере.
 
 ## <a name="troubleshoot"></a>Диагностика
 
@@ -280,8 +280,8 @@ ingress "aks-helloworld" deleted
 Сведения об установке контроллера защищенного входящего HTTPS-трафика в AKS см. в статье [Входящий трафик HTTPS в Службе Azure Kubernetes (AKS)][ingress-https].
 
 <!-- LINKS - internal -->
-[az-aks-create]: /cli/azure/aks?view=azure-cli-latest#az-aks-create
-[az-aks-show]: /cli/azure/aks?view=azure-cli-latest#az-aks-show
+[az-aks-create]: /cli/azure/aks#az-aks-create
+[az-aks-show]: /cli/azure/aks#az-aks-show
 [ingress-https]: ./ingress-tls.md
 [az-aks-enable-addons]: /cli/azure/aks#az-aks-enable-addons
 [az aks install-cli]: /cli/azure/aks#az-aks-install-cli

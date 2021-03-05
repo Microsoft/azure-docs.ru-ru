@@ -6,12 +6,12 @@ author: mlearned
 ms.topic: article
 ms.date: 06/03/2020
 ms.author: mlearned
-ms.openlocfilehash: 85f0a42cdfcbea2223d202a9dc35f58746580e85
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.openlocfilehash: acaeaa2e5338c86fa59d0e2941719f8fa2708ef1
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96350132"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102176827"
 ---
 # <a name="access-the-kubernetes-web-dashboard-in-azure-kubernetes-service-aks"></a>Подключение веб-панели мониторинга Kubernetes в Службе Azure Kubernetes (AKS)
 
@@ -26,7 +26,7 @@ ms.locfileid: "96350132"
  > * Начиная с Kubernetes 1,19 в предварительной версии AKS больше не будет поддерживать установку управляемой надстройки KUBE-Dashboard. 
  > * Существующие кластеры с включенной надстройкой не будут затронуты. Пользователи будут по-прежнему иметь возможность вручную устанавливать панель мониторинга с открытым исходным кодом как программное обеспечение, установленное пользователем.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 В шагах, описанных в этом документе, предполагается, что вы создали кластер AKS и установили `kubectl` Подключение к кластеру. Если вам нужно создать кластер AKS, см. раздел [Краткое руководство. Развертывание кластера службы Kubernetes Azure с помощью Azure CLI][aks-quickstart].
 
@@ -209,8 +209,8 @@ kubectl config view -o jsonpath='{.users[?(@.name == "clusterUser_<RESOURCE GROU
 [aad-cluster]: ./azure-ad-integration-cli.md
 [aks-quickstart]: ./kubernetes-walkthrough.md
 [aks-service-accounts]: ./concepts-identity.md#kubernetes-service-accounts
-[az-account-get-access-token]: /cli/azure/account?view=azure-cli-latest#az-account-get-access-token
+[az-account-get-access-token]: /cli/azure/account#az-account-get-access-token
 [az-aks-browse]: /cli/azure/aks#az-aks-browse
-[az-aks-get-credentials]: /cli/azure/aks?view=azure-cli-latest#az-aks-get-credentials
+[az-aks-get-credentials]: /cli/azure/aks#az-aks-get-credentials
 [install-azure-cli]: /cli/azure/install-azure-cli
 [kubernetes-portal]: ./kubernetes-portal.md

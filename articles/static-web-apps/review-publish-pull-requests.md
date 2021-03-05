@@ -7,12 +7,12 @@ ms.service: static-web-apps
 ms.topic: conceptual
 ms.date: 05/08/2020
 ms.author: yolasors
-ms.openlocfilehash: 78d2f3b399e26ca0c6036fd74fa1fba49d1f21f4
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 1cb5f2f9ac941001efb18301f4a54bd0092920ba
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102042782"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172746"
 ---
 # <a name="review-pull-requests-in-pre-production-environments-in-azure-static-web-apps-preview"></a>Проверка запросов на вытягивание в подготовительных средах в предварительной версии Статических веб-приложений Azure
 
@@ -109,7 +109,7 @@ ms.locfileid: "102042782"
 > [!WARNING]
 > Будьте внимательны при публикации конфиденциального содержимого в промежуточных версиях, так как доступ к подготовительным средам не ограничен.
 
-Количество подготовительных сред, доступных для каждого приложения, развернутого с помощью Статических веб-приложений, зависит от используемого уровня SKU. Например, на уровне "Бесплатный" помимо рабочей среды может быть 1 подготовительная среда.
+Количество подготовительных сред, доступных для каждого приложения, развернутого с помощью Статических веб-приложений, зависит от используемого уровня SKU. Например, на уровне Free можно использовать 3 подготовительные среды в дополнение к рабочей среде.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

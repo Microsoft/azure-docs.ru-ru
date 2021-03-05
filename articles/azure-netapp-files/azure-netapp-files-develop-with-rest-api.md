@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: how-to
 ms.date: 06/02/2020
 ms.author: b-juche
-ms.openlocfilehash: 4599f4e3ca291c312c99e938b237d1eb9cd9d407
-ms.sourcegitcommit: 50802bffd56155f3b01bfb4ed009b70045131750
+ms.openlocfilehash: c5993dc1dc645319e272ab310a97bc3ff8ac495d
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91929286"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174246"
 ---
 # <a name="develop-for-azure-netapp-files-with-rest-api"></a>Разработка для Azure NetApp Files с помощью REST API 
 
@@ -34,7 +34,7 @@ REST API для службы Azure NetApp Files определяет опера�
 
 ## <a name="access-the-azure-netapp-files-rest-api"></a>Доступ к REST API Azure NetApp Files  
 
-1. [Установите Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest), если это еще не сделано.
+1. [Установите Azure CLI](/cli/azure/install-azure-cli), если это еще не сделано.
 2. Создайте субъект-службу в Azure Active Directory (Azure AD).
    1. Убедитесь, что у вас [достаточно разрешений](../active-directory/develop/howto-create-service-principal-portal.md#permissions-required-for-registering-an-app).
 
@@ -201,6 +201,6 @@ curl -d @<filename> -X PUT -H "Authorization: Bearer TOKENGOESHERE" -H "Content-
 > [!NOTE] 
 > Для создания моментального снимка необходимо указать `fileSystemId`.  Вы можете получить значение `fileSystemId` с помощью запроса GET к тому. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [См. статью о REST API Azure NetApp Files](/rest/api/netapp/)

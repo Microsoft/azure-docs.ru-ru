@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/16/2019
 ms.author: yluiu
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 5a70b10f7d22c9cc04427bdfbb44243fad457ba0
-ms.sourcegitcommit: d76108b476259fe3f5f20a91ed2c237c1577df14
+ms.openlocfilehash: 04699890af2cfe835ecca6ee983808d7d8d002c8
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92913489"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174195"
 ---
 # <a name="specify-a-face-detection-model"></a>Указание модели определения лиц
 
@@ -28,7 +28,7 @@ ms.locfileid: "92913489"
 
 Если вы не уверены, следует ли использовать последнюю модель, перейдите к разделу [Вычисление различных моделей](#evaluate-different-models) , чтобы оценить новую модель и сравнить результаты с помощью текущего набора данных.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Вы должны быть знакомы с концепцией обнаружения лиц в AI. Если вы не видите, ознакомьтесь с концептуальным руководством по обнаружению лиц или пошаговым руководством.
 
@@ -43,6 +43,7 @@ ms.locfileid: "92913489"
 
 * `detection_01`
 * `detection_02`
+* `detection_03`
 
 URL-адрес запроса для REST API [обнаружения лиц] будет выглядеть следующим образом:
 
@@ -52,7 +53,7 @@ URL-адрес запроса для REST API [обнаружения лиц] б
 
 ```csharp
 string imageUrl = "https://news.microsoft.com/ceo/assets/photos/06_web.jpg";
-var faces = await faceClient.Face.DetectWithUrlAsync(imageUrl, false, false, recognitionModel: "recognition_03", detectionModel: "detection_02");
+var faces = await faceClient.Face.DetectWithUrlAsync(imageUrl, false, false, recognitionModel: "recognition_04", detectionModel: "detection_03");
 ```
 
 ## <a name="add-face-to-person-with-specified-model"></a>Добавить лицо к лицу с указанной моделью
@@ -62,17 +63,17 @@ var faces = await faceClient.Face.DetectWithUrlAsync(imageUrl, false, false, rec
 См. Следующий пример кода для клиентской библиотеки .NET.
 
 ```csharp
-// Create a PersonGroup and add a person with face detected by "detection_02" model
+// Create a PersonGroup and add a person with face detected by "detection_03" model
 string personGroupId = "mypersongroupid";
-await faceClient.PersonGroup.CreateAsync(personGroupId, "My Person Group Name", recognitionModel: "recognition_03");
+await faceClient.PersonGroup.CreateAsync(personGroupId, "My Person Group Name", recognitionModel: "recognition_04");
 
 string personId = (await faceClient.PersonGroupPerson.CreateAsync(personGroupId, "My Person Name")).PersonId;
 
 string imageUrl = "https://news.microsoft.com/ceo/assets/photos/06_web.jpg";
-await client.PersonGroupPerson.AddFaceFromUrlAsync(personGroupId, personId, imageUrl, detectionModel: "detection_02");
+await client.PersonGroupPerson.AddFaceFromUrlAsync(personGroupId, personId, imageUrl, detectionModel: "detection_03");
 ```
 
-Этот код создает объект **персонграуп** с идентификатором `mypersongroupid` и добавляет в него **пользователя** . Затем он добавляет к этому **пользователю** лицо, использующее `detection_02` модель. Если не указать параметр *детектионмодел* , API будет использовать модель по умолчанию, `detection_01` .
+Этот код создает объект **персонграуп** с идентификатором `mypersongroupid` и добавляет в него **пользователя** . Затем он добавляет к этому **пользователю** лицо, использующее `detection_03` модель. Если не указать параметр *детектионмодел* , API будет использовать модель по умолчанию, `detection_01` .
 
 > [!NOTE]
 > Не нужно использовать одинаковую модель обнаружения для всех лиц в объекте **Person** , и вам не нужно использовать ту же модель обнаружения при обнаружении новых лиц для сравнения с объектом **Person** (например, в API-интерфейсе распознавания [лиц] ).
@@ -82,13 +83,13 @@ await client.PersonGroupPerson.AddFaceFromUrlAsync(personGroupId, personId, imag
 Можно также указать модель обнаружения при добавлении лица в существующий объект **фацелист** . См. Следующий пример кода для клиентской библиотеки .NET.
 
 ```csharp
-await faceClient.FaceList.CreateAsync(faceListId, "My face collection", recognitionModel: "recognition_03");
+await faceClient.FaceList.CreateAsync(faceListId, "My face collection", recognitionModel: "recognition_04");
 
 string imageUrl = "https://news.microsoft.com/ceo/assets/photos/06_web.jpg";
-await client.FaceList.AddFaceFromUrlAsync(faceListId, imageUrl, detectionModel: "detection_02");
+await client.FaceList.AddFaceFromUrlAsync(faceListId, imageUrl, detectionModel: "detection_03");
 ```
 
-Этот код создает **фацелист** с именем `My face collection` и добавляет к нему лицо с `detection_02` моделью. Если не указать параметр *детектионмодел* , API будет использовать модель по умолчанию, `detection_01` .
+Этот код создает **фацелист** с именем `My face collection` и добавляет к нему лицо с `detection_03` моделью. Если не указать параметр *детектионмодел* , API будет использовать модель по умолчанию, `detection_01` .
 
 > [!NOTE]
 > Не нужно использовать одну и ту же модель обнаружения для всех лиц в объекте **фацелист** , и вам не нужно использовать ту же модель обнаружения при обнаружении новых Сторон для сравнения с объектом **фацелист** .
@@ -97,14 +98,14 @@ await client.FaceList.AddFaceFromUrlAsync(faceListId, imageUrl, detectionModel: 
 
 Различные модели обнаружения лиц оптимизированы для различных задач. Общие сведения о различиях см. в следующей таблице.
 
-|**detection_01**  |**detection_02**  |
-|---------|---------|
-|Выбор по умолчанию для всех операций обнаружения лиц. | Выпущена в 2019 мая и доступна дополнительно во всех операциях обнаружения лиц.
-|Не оптимизировано для мелких, боковых или размытых лиц.  | Улучшенная точность небольших, боковых и размытых лиц. |
-|Возвращает атрибуты лица (головной элемент, возраст, распознавания эмоций и т. д.), если они указаны в вызове метода Detect. |  Не возвращает атрибуты лица.     |
-|Возвращает ориентиры для лиц, если они указаны в вызове метода Detect.   | Не возвращает ориентиры для лиц.  |
+|**detection_01**  |**detection_02**  |**detection_03** 
+|---------|---------|---|
+|Выбор по умолчанию для всех операций обнаружения лиц. | Выпущена в 2019 мая и доступна дополнительно во всех операциях обнаружения лиц. |  Выпущено в феврале 2021 и доступно дополнительно во всех операциях обнаружения лиц.
+|Не оптимизировано для мелких, боковых или размытых лиц.  | Улучшенная точность небольших, боковых и размытых лиц. | Улучшенная точность, включая в небольших лицах (64 x 64 пикселей) и повернутые ориентации лиц.
+|Возвращает атрибуты основного лица (головной элемент, возраст, распознавания эмоций и т. д.), если они указаны в вызове метода Detect. |  Не возвращает атрибуты лица.     | Возвращает атрибуты "Фацемаск" и "Носеандмаусковеред", если они указаны в вызове метода Detect.
+|Возвращает ориентиры для лиц, если они указаны в вызове метода Detect.   | Не возвращает ориентиры для лиц.  | Не возвращает ориентиры для лиц.
 
-Лучший способ сравнить производительность `detection_01` `detection_02` моделей и — использовать их в образце набора данных. Мы рекомендуем вызывать API распознавания [лиц] на различных изображениях, особенно в изображениях многих лиц или лиц, которые трудно увидеть, используя каждую модель обнаружения. Обратите внимание на количество сторон, возвращаемых каждой моделью.
+Лучший способ сравнить производительность моделей обнаружения — использовать их в образце набора данных. Мы рекомендуем вызывать API распознавания [лиц] на различных изображениях, особенно в изображениях многих лиц или лиц, которые трудно увидеть, используя каждую модель обнаружения. Обратите внимание на количество сторон, возвращаемых каждой моделью.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: how-to
 ms.date: 02/20/2021
 ms.author: b-juche
-ms.openlocfilehash: 2da2ae01e92ae2751f9f26e005579bad9911330a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a18c53d972fbb38dc0b0e557d14b2fbffbff15fa
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101738741"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174365"
 ---
 # <a name="manage-snapshots-by-using-azure-netapp-files"></a>Управление моментальными снимками с помощью Azure NetApp Files
 
@@ -68,7 +68,7 @@ Azure NetApp Files поддерживает создание моменталь�
     ```azurepowershell-interactive
     Get-AzProviderFeature -ProviderNamespace Microsoft.NetApp -FeatureName ANFSnapshotPolicy
     ```
-Вы также можете использовать [Azure CLI команды](/cli/azure/feature?preserve-view=true&view=azure-cli-latest) `az feature register` , `az feature show` чтобы зарегистрировать эту функцию и отобразить состояние регистрации. 
+Вы также можете использовать [Azure CLI команды](/cli/azure/feature) `az feature register` , `az feature show` чтобы зарегистрировать эту функцию и отобразить состояние регистрации. 
 
 ### <a name="create-a-snapshot-policy"></a>Создание политики моментальных снимков 
 
@@ -195,7 +195,7 @@ Azure NetApp Files поддерживает создание моменталь�
 
 1. Используйте `ls` команду Linux, чтобы получить список файлов, которые требуется восстановить из `.snapshot` каталога. 
 
-    Пример.
+    Пример:
 
     `$ ls my.txt`   
     `ls: my.txt: No such file or directory`   
@@ -210,7 +210,7 @@ Azure NetApp Files поддерживает создание моменталь�
 
 2. Используйте `cp` команду, чтобы скопировать файл в родительский каталог.  
 
-    Пример. 
+    Пример: 
 
     `$ cp .snapshot/hourly.2020-05-15_1306/my.txt .`   
 

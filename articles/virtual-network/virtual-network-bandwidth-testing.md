@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 10/06/2020
 ms.author: steveesp
-ms.openlocfilehash: 27cc55978582468c759603571bd8b0e69f29db5d
-ms.sourcegitcommit: 2dd0932ba9925b6d8e3be34822cc389cade21b0d
+ms.openlocfilehash: abcd2f6e23ea0c7c26b2ee26b2f6ca4ad502b769
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99226579"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102177187"
 ---
 # <a name="bandwidththroughput-testing-ntttcp"></a>Проверка пропускной способности (NTTTCP)
 
@@ -93,15 +93,19 @@ ntttcp -s –m 8,\*,10.0.0.4 -t 300
 
 Выполните приведенные ниже команды на виртуальных машинах Linux (отправителе и получателе), чтобы подготовить на них ntttcp-for-linux.
 
-CentOS: установка Git.
+CentOS — установите GCC и Git:
 ``` bash
   yum install gcc -y  
   yum install git -y
 ```
-Ubuntu: установка Git.
+Ubuntu-Install Build-Essentials и Git:
 ``` bash
  apt-get -y install build-essential  
  apt-get -y install git
+```
+SUSE — Установка Git-Core, GCC и make:
+``` bash
+  zypper in -y git-core gcc make
 ```
 Создание и установка в обеих ОС.
 ``` bash

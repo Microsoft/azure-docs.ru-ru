@@ -11,17 +11,16 @@ author: peterclu
 ms.date: 10/06/2020
 ms.topic: conceptual
 ms.custom: how-to, contperf-fy20q4, tracking-python, contperf-fy21q1
-ms.openlocfilehash: 07b8c130a2a22554e4cd5b33996d5a5ee967d47f
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.openlocfilehash: 083d750db0db050265c93cc658d4f3b6556b850d
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97029538"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102176218"
 ---
 # <a name="secure-an-azure-machine-learning-workspace-with-virtual-networks"></a>Защита рабочей области Машинное обучение Azure с помощью виртуальных сетей
 
 Из этой статьи вы узнаете, как защитить рабочую область Машинное обучение Azure и связанные с ней ресурсы в виртуальной сети.
-
 
 Эта статья является второй частью серии из пяти частей, которая поможет вам в обеспечении безопасности Машинное обучение Azure рабочего процесса. Мы настоятельно рекомендуем прочесть первую [часть: обзор виртуальной сети](how-to-network-security-overview.md) , чтобы понять общую архитектуру. 
 
@@ -296,7 +295,7 @@ validate=False)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Эта статья является частью серии виртуальных сетей из четырех частей. Ознакомьтесь с остальными статьями, чтобы узнать, как защитить виртуальную сеть.
+Эта статья является второй частью серии виртуальных сетей из пяти частей. Ознакомьтесь с остальными статьями, чтобы узнать, как защитить виртуальную сеть.
 
 * [Часть 1. Обзор виртуальной сети](how-to-network-security-overview.md)
 * [Часть 3. Защита среды обучения](how-to-secure-training-vnet.md)
