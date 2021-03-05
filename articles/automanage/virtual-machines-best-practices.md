@@ -8,12 +8,12 @@ ms.workload: infrastructure
 ms.topic: conceptual
 ms.date: 09/04/2020
 ms.author: deanwe
-ms.openlocfilehash: 1bcf9009a039a10017d53ca6fe9e78acec1efd55
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 5cdc0080c0d8b06bd0b7e19566b54b4f105648e5
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100581236"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102122108"
 ---
 # <a name="azure-automanage-for-virtual-machines-best-practices"></a>Рекомендации по управлению Azure для виртуальных машин
 
@@ -38,10 +38,10 @@ ms.locfileid: "100581236"
 |Рабочая область Log Analytics    |Azure Monitor хранит данные журнала в Log Analytics рабочей области, которая является ресурсом Azure, и контейнером, в котором данные собираются, объединяются и служат административной границей. Дополнительные [сведения.](../azure-monitor/logs/design-logs-deployment.md)    |Рекомендации по работе с виртуальными машинами Azure: Рабочая среда, рекомендации для виртуальных машин Azure — разработка и тестирование    |Нет    |
 
 
-<sup>1</sup> профили конфигурации доступны при включении функции автоуправления. Дополнительные [сведения.](automanage-virtual-machines.md#configuration-profiles) Можно также настроить параметры по умолчанию для профиля конфигурации и задать собственные предпочтения в рамках рекомендаций.
+<sup>1</sup> профили конфигурации доступны при включении функции автоуправления. Дополнительные [сведения.](automanage-virtual-machines.md) Можно также настроить параметры по умолчанию для профиля конфигурации и задать собственные предпочтения в рамках рекомендаций.
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Попробуйте включить Автоуправление для виртуальных машин в портал Azure.
 

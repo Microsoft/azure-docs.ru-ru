@@ -8,14 +8,14 @@ ms.author: heidist
 ms.devlang: java
 ms.service: cognitive-search
 ms.topic: quickstart
-ms.date: 01/25/2021
+ms.date: 03/04/2021
 ms.custom: devx-track-java
-ms.openlocfilehash: 9e05e41ca0c293e31a29dc25a7b4ec7b87734246
-ms.sourcegitcommit: b85ce02785edc13d7fb8eba29ea8027e614c52a2
+ms.openlocfilehash: f833c0539d4aa28033cd6f76c1ca7cec7f11f6b5
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99509424"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102124573"
 ---
 # <a name="quickstart-create-an-azure-cognitive-search-index-in-java"></a>Краткое руководство. Создание индекса службы "Когнитивный поиск Azure" в Java
 > [!div class="op_single_selector"]
@@ -27,7 +27,7 @@ ms.locfileid: "99509424"
 > * [Python](search-get-started-python.md)
 > * [REST](search-get-started-rest.md)
 
-Создайте консольное приложение Java, которое создает, загружает и опрашивает индекс поиска с помощью [IntelliJ](https://www.jetbrains.com/idea/), [пакета SDK для Java 11](/java/azure/jdk/) и [REST API Когнитивного поиска Azure](/rest/api/searchservice/). Эта статья содержит пошаговые инструкции по созданию приложения. Кроме того, можно [скачать и установить готовую версию приложения](https://developers.google.com/sheets/api/quickstart/java).
+Создайте консольное приложение Java, которое создает, загружает и опрашивает индекс поиска с помощью [IntelliJ](https://www.jetbrains.com/idea/), [пакета SDK для Java 11](/java/azure/jdk/) и [REST API Когнитивного поиска Azure](/rest/api/searchservice/). Эта статья содержит пошаговые инструкции по созданию приложения. Кроме того, можно [скачать и установить готовую версию приложения](hhttps://github.com/Azure-Samples/azure-search-java-samples).
 
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
 

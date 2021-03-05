@@ -2,18 +2,18 @@
 title: Виртуальные машины Azure серии NVv3
 description: Спецификации виртуальных машин серии NVv3.
 services: virtual-machines
-ms.subservice: hpc
 author: vikancha-MSFT
 ms.service: virtual-machines
+ms.subservice: sizes
 ms.topic: conceptual
 ms.date: 02/03/2020
 ms.author: jushiman
-ms.openlocfilehash: 62c096938049d44a4a2e5e61cb3d9f94e1b1801a
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: f04847930f078ef506d66784deab4767db0a282d
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101672287"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102123978"
 ---
 # <a name="nvv3-series"></a>Серия NVv3
 

@@ -12,12 +12,12 @@ ms.topic: how-to
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: seodec18
-ms.openlocfilehash: c60aac675a76d8cb25463f8b0ca1b2dc563d1179
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 415d50258ce5fc8416dd908bf53f812e72a10f48
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101730326"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102124505"
 ---
 # <a name="how-to-encode-with-a-custom-transform---net"></a>Кодирование с помощью пользовательского преобразования — .NET
 
@@ -56,7 +56,7 @@ ms.locfileid: "101730326"
 
 В следующем примере определяется набор выходов, которые нужно создать при использовании этого преобразования. Сначала мы добавим слой AacAudio для кодирования звука и два слоя H264Video для кодирования видео. В видеослоях мы присваиваем метки, чтобы их можно было использовать в именах выходных файлов. Далее мы хотим, чтобы выходные данные также включали эскизы. В приведенном ниже примере мы указываем изображения в формате PNG, созданные на 50% от разрешения входного видео и три метки времени — {25%, 50%, 75%} длиной входного видео. Наконец, мы указываем формат выходных файлов — один для видео + аудио, а другой — для эскизов. Так как у нас есть несколько H264Layers, необходимо использовать макросы, которые создают уникальные имена для каждого слоя. Можно использовать `{Label}` `{Bitrate}` макрос или, а в примере — первый.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet/blob/main/VideoEncoding/EncodingWithMESCustomPreset/Program.cs#EnsureTransformExists)]
+[!code-csharp[Main](../../../media-services-v3-dotnet/VideoEncoding/EncodingWithMESCustomPreset/Program.cs#EnsureTransformExists)]
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

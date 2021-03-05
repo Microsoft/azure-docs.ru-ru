@@ -2,17 +2,17 @@
 title: Собирайте метрики отResilience4Jного прерывания весны облака
 description: Как получить метрики для Resilience4Jного прерывания весны в облаке.
 author: MikeDodaro
-ms.author: brendanm
+ms.author: brendm
 ms.service: spring-cloud
 ms.topic: how-to
 ms.date: 12/15/2020
 ms.custom: devx-track-java
-ms.openlocfilehash: 153f99d100ea1a456f960293f3806a739fe1d593
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 0227fcebd6d5a136e3306573b7b5aa0d6e39ba1f
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102038736"
+ms.locfileid: "102122805"
 ---
 # <a name="collect-spring-cloud-resilience4j-circuit-breaker-metrics-preview"></a>Собирайте метрики отResilience4Jного прерывания весны облака (Предварительная версия)
 

@@ -7,12 +7,12 @@ ms.service: expressroute
 ms.topic: how-to
 ms.date: 2/9/2021
 ms.author: duau
-ms.openlocfilehash: c305ee78abac7e175dc086666dfd1e2926f8da2b
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: ef6ea9017a9aaa98e153df0d67f0b54fe5a2b64d
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102097828"
+ms.locfileid: "102124165"
 ---
 # <a name="add-ipv6-support-for-private-peering-using-the-azure-portal-preview"></a>Добавление поддержки IPv6 для частного пиринга с помощью портал Azure (Предварительная версия)
 
@@ -88,7 +88,7 @@ ms.locfileid: "102097828"
 
 2. [Создайте подсеть шлюза с двойным стеком](https://docs.microsoft.com/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager#create-the-gateway-subnet).
 
-3. [Создайте шлюз виртуальной сети](https://docs.microsoft.com/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager#create-the-virtual-network-gateway) с помощью SKU, избыточного в виде зоны (ErGw1AZ, ErGw2AZ, ErGw3AZ). Если вы планируете использовать Фастпас, используйте ErGw3AZ.
+3. [Создайте шлюз виртуальной сети](https://docs.microsoft.com/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager#create-the-virtual-network-gateway) с помощью SKU, избыточного в виде зоны (ErGw1AZ, ErGw2AZ, ErGw3AZ). Если вы планируете использовать Фастпас, используйте ErGw3AZ (Обратите внимание, что эта возможность доступна только для каналов с помощью ExpressRoute Direct).
 
 4. [Свяжите виртуальную сеть с каналом ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-howto-linkvnet-portal-resource-manager).
 
@@ -99,6 +99,8 @@ ms.locfileid: "102097828"
 * Подключения к развертываниям в регионах, не относящихся к AZ
 * Global Reach соединений между каналами ExpressRoute
 * Использование ExpressRoute с виртуальной глобальной сетью
+* Фастпас с прямыми каналами, отличными от ExpressRoute
+* Сосуществование с VPN-шлюзом
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

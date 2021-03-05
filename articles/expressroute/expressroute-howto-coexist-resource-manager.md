@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 12/11/2019
 ms.author: duau
 ms.custom: seodec18
-ms.openlocfilehash: edbd36ad3444795ade4b3f8d29d8473b21a2fda8
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: b20bb4df7524c179766a2b2f7f090fccbddd7f37
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91651519"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102122618"
 ---
 # <a name="configure-expressroute-and-site-to-site-coexisting-connections-using-powershell"></a>Настройка параллельных подключений "сеть — сеть" и ExpressRoute с помощью PowerShell
 > [!div class="op_single_selector"]
@@ -42,6 +42,7 @@ ms.locfileid: "91651519"
 * **Для VPN-шлюза необходимо настроить статический маршрут.** Если локальная сеть подключена и к ExpressRoute, и к VPN типа "сеть — сеть", необходимо использовать статический маршрут, настроенный в локальной сети для маршрутизации VPN-подключения типа "сеть — сеть" к Интернету.
 * **По умолчанию используется VPN-шлюз ASN 65515, если другой явно не указан.** VPN-шлюз Azure поддерживает протокол маршрутизации BGP. Для этой виртуальной сети вы можете указать ASN (номер AS), добавив параметр -Asn. Если не указать этот параметр, номер AS по умолчанию равен 65515. Вы можете использовать любой ASN для конфигурации, но если выбрать отличный от 65515, необходимо сбросить шлюз, чтобы параметр вступил в силу.
 * **Подсеть шлюза должна иметь длину/27 или более короткий префикс**(например,/26,/25), или при добавлении шлюза виртуальной сети ExpressRoute появится сообщение об ошибке.
+* **Сосуществование в виртуальной сети с двумя стеками не поддерживается.** Если вы используете поддержку протокола IPv6 для ExpressRoute и шлюз ExpressRoute с двумя стеками, сосуществование с VPN-шлюзом будет невозможно.
 
 ## <a name="configuration-designs"></a>Схемы конфигурации
 ### <a name="configure-a-site-to-site-vpn-as-a-failover-path-for-expressroute"></a>Настройка VPN типа "сеть-сеть" как пути отработки отказа для ExpressRoute

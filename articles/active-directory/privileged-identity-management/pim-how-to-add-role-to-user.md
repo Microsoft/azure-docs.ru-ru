@@ -10,15 +10,15 @@ ms.service: active-directory
 ms.topic: how-to
 ms.workload: identity
 ms.subservice: pim
-ms.date: 09/16/2020
+ms.date: 02/16/2021
 ms.author: curtand
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e230a975748fe2f737c4b8fe8491887351d387
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: fd4374067fe0070c379a76ef5f59bb6aef5b29fc
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96004676"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102123111"
 ---
 # <a name="assign-azure-ad-roles-in-privileged-identity-management"></a>Назначение ролей Azure AD в управление привилегированными пользователями
 
@@ -101,7 +101,7 @@ ms.locfileid: "96004676"
 
 ## <a name="update-or-remove-an-existing-role-assignment"></a>Обновление или удаление существующего назначения роли
 
-Выполните следующие действия, чтобы обновить или удалить существующее назначение роли.
+Выполните следующие действия, чтобы обновить или удалить существующее назначение роли. **Только лицензированные клиенты Azure AD P2**: не назначайте группу как активную для роли с помощью Azure ad и управление привилегированными пользователями (PIM). Подробное описание см. в разделе [Известные проблемы](../roles/groups-concept.md#known-issues).
 
 1. Откройте **Azure AD privileged Identity Management**.
 
@@ -173,7 +173,7 @@ ms.locfileid: "96004676"
 
 ## <a name="remove-a-user-from-a-role"></a>Удаление пользователя из роли
 
-Вы можете удалить пользователей из назначений ролей, но убедитесь, что всегда есть хотя бы один пользователь, являющийся постоянным глобальным администратором. Если вам неизвестно, каким пользователям по-прежнему требуются назначенные им роли, можно [запустить проверку доступа для роли](pim-how-to-start-security-review.md).
+Пользователей можно удалять из назначений ролей, однако в системе всегда должен оставаться по крайней мере один пользователь с постоянной ролью глобального администратора. Если вам неизвестно, каким пользователям по-прежнему требуются назначенные им роли, можно [запустить проверку доступа для роли](pim-how-to-start-security-review.md).
 
 Выполните следующие действия, чтобы удалить конкретного пользователя из роли администратора Azure AD.
 
@@ -233,7 +233,7 @@ ms.locfileid: "96004676"
 
  ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Настройка параметров роли администратора Azure AD в управление привилегированными пользователями](pim-how-to-change-default-settings.md)
 - [Назначение ролей ресурсов Azure в управление привилегированными пользователями](pim-resource-roles-assign-roles.md)

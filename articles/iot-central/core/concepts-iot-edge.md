@@ -10,12 +10,12 @@ services: iot-central
 ms.custom:
 - device-developer
 - iot-edge
-ms.openlocfilehash: 91869614aef03b819a5f7fbb355004f6e802d673
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 1a464b9e039f256fae52c32d828b1ec39a20a228
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101733023"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102123281"
 ---
 # <a name="connect-azure-iot-edge-devices-to-an-azure-iot-central-application"></a>Подключение устройств Azure IoT Edge к приложению Azure IoT Central
 
@@ -87,6 +87,20 @@ IoT Central использует [шаблоны устройств](concepts-de
 * Команды, на которые реагирует устройство, чтобы IoT Central мог отобразить пользовательский интерфейс для оператора, который будет использоваться для вызова команд.
 
 Устройство IoT Edge может отсылать данные телеметрии, синхронизировать значения свойств и реагировать на команды так же, как стандартное устройство. Таким образом, устройству IoT Edge требуется шаблон устройства в IoT Central.
+
+### <a name="iot-edge-device-templates"></a>Шаблоны устройств IoT Edge
+
+IoT Central шаблоны устройств используют модели для описания возможностей устройств. На следующей схеме показана структура модели для устройства IoT Edge:
+
+:::image type="content" source="media/concepts-iot-edge/iot-edge-model.png" alt-text="Структура модели для IoT Edge устройства, подключенного к IoT Central" border="false":::
+
+IoT Central моделирует IoT Edge устройство следующим образом:
+
+* Каждый шаблон устройства IoT Edge имеет модель возможностей.
+* Для каждого пользовательского модуля, указанного в манифесте развертывания, создается модель возможностей модуля.
+* Связь устанавливается между каждой моделью возможностей модуля и моделью устройства.
+* Модель возможностей модуля реализует один или несколько интерфейсов модуля.
+* Каждый интерфейс модуля содержит данные телеметрии, свойства и команды.
 
 ### <a name="iot-edge-deployment-manifests-and-iot-central-device-templates"></a>IoT Edge манифесты развертывания и шаблоны устройств IoT Central
 

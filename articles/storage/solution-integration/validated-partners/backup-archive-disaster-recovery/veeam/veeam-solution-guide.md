@@ -7,14 +7,14 @@ author: karauten
 ms.author: karauten
 ms.date: 11/11/2020
 ms.topic: article
-ms.service: Storage
-ms.subservice: Blob Storage
-ms.openlocfilehash: b7bc20d80887df5a5ad235c87238b0239abadc0a
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.service: storage
+ms.subservice: blobs
+ms.openlocfilehash: 6d4b005a3f9c79ff14f5ba4053dc651c1ede56e0
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102101585"
+ms.locfileid: "102124437"
 ---
 # <a name="backup-to-azure-with-veeam"></a>Резервное копирование в Azure с помощью Veeam
 

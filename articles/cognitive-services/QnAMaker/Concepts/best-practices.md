@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 11/09/2020
-ms.openlocfilehash: 90d526a58f4223fc70be5414ce5722238ce2c735
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b09c36f1dce3c394ff24e3e601d773279a6ac510
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101733437"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102123315"
 ---
 # <a name="best-practices-of-a-qna-maker-knowledge-base"></a>Рекомендации по использованию базы знаний QnA Maker
 
@@ -43,7 +43,7 @@ ms.locfileid: "101733437"
 
 Лучшие ответы — это простые ответы, но не слишком простые. Не используйте такие ответы, как `yes` и `no` . Если ваш ответ должен ссылаться на другие источники или предоставить широкие возможности мультимедиа и ссылок, используйте теги [метаданных](../how-to/edit-knowledge-base.md#add-metadata) для различения ответов, а затем [отправьте запрос](../how-to/metadata-generateanswer-usage.md#generateanswer-request-configuration) с тегами метаданных в `strictFilters` свойстве, чтобы получить правильную версию ответа.
 
-|Ответ|Запросы фоллуп|
+|Ответ|Запросы для дальнейших действий|
 |--|--|
 |Выключите ноутбук с помощью кнопки питания на клавиатуре.|* Сочетания клавиш для перехода в спящий режим, выключения и перезапуска.<br>* Как жестко загружается ноутбук Surface<br>* Изменение BIOS для ноутбука Surface<br>* Различия между спящим режимом, выключением и перезагрузкой|
 |Служба клиента доступна по телефону, Skype и SMS за 24 часа в день.|* Контактные данные по продажам.<br> * Office и хранение мест и часов для посещения в личном месте.<br> * Аксессуары для ноутбука Surface.|

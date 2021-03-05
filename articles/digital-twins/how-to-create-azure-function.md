@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 8/27/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: b37277c660562721273ff9ae86dd677ee7ac7d55
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 2419761c195258c60561e284abf0227b915ed4f6
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "102050007"
+ms.locfileid: "102123638"
 ---
 # <a name="connect-function-apps-in-azure-for-processing-data"></a>Подключение приложений функций в Azure для обработки данных
 
@@ -86,7 +86,7 @@ dotnet add package Azure.Core.Pipeline
 
 Теперь вы можете объявить переменные уровня класса и добавить код проверки подлинности, который позволит функции получить доступ к Azure Digital двойников. Вы добавите следующий элемент в функцию в файл _function1.CS_ .
 
-* Код для чтения URL-адреса службы цифровых двойников Azure в качестве переменной среды. Рекомендуется считать URL-адрес службы из переменной среды, а не жестко кодировать его в функции.
+* Код для чтения URL-адреса службы цифровых двойников Azure в качестве **переменной среды**. Рекомендуется считать URL-адрес службы из переменной среды, а не жестко кодировать его в функции. Значение этой переменной среды задается [Далее в этой статье](#set-up-security-access-for-the-function-app). Дополнительные сведения о переменных среды см. в разделе [*Управление приложением функции*](../azure-functions/functions-how-to-use-azure-function-app-settings.md?tabs=portal).
 
     :::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/adtIngestFunctionSample.cs" id="ADT_service_URL":::
 
@@ -134,7 +134,7 @@ az functionapp identity assign -g <your-resource-group> -n <your-App-Service-(fu
 ```azurecli-interactive 
 az dt role-assignment create --dt-name <your-Azure-Digital-Twins-instance> --assignee "<principal-ID>" --role "Azure Digital Twins Data Owner"
 ```
-Наконец, можно сделать так, чтобы URL-адрес вашего экземпляра Azure Digital двойников был доступен для вашей функции, задав переменную среды. Дополнительные сведения о настройке переменных среды см. в разделе [*переменные среды*](/sandbox/functions-recipes/environment-variables). 
+Наконец, предоставьте доступ к URL-адресу вашего экземпляра Azure Digital двойников вашей функции, задав для него **переменную среды** . Дополнительные сведения о переменных среды см. в разделе [*Управление приложением функции*](../azure-functions/functions-how-to-use-azure-function-app-settings.md?tabs=portal). 
 
 > [!TIP]
 > URL-адрес экземпляра Azure Digital двойников создается путем добавления *https://* в начало *имени узла* для цифрового двойникова Azure. Чтобы просмотреть имя узла, а также все свойства экземпляра, можно запустить `az dt show --dt-name <your-Azure-Digital-Twins-instance>` .
@@ -183,7 +183,7 @@ az functionapp config appsettings set -g <your-resource-group> -n <your-App-Serv
 
 ### <a name="configure-application-settings-using-azure-portal"></a>Настройка параметров приложения с помощью портал Azure
 
-Чтобы сделать URL-адрес своего экземпляра Digital двойников доступным для вашей функции, можно задать переменную среды. Дополнительные сведения об этом см. в разделе [*переменные среды*](/sandbox/functions-recipes/environment-variables). Параметры приложения предоставляются как переменные среды для доступа к экземпляру Digital двойников. 
+Чтобы сделать URL-адрес своего экземпляра Digital двойников доступным для вашей функции, можно задать для него **переменную среды** . Дополнительные сведения о переменных среды см. в разделе [*Управление приложением функции*](../azure-functions/functions-how-to-use-azure-function-app-settings.md?tabs=portal). Параметры приложения предоставляются как переменные среды для доступа к экземпляру Digital двойников Azure. 
 
 Чтобы задать переменную среды с URL-адресом своего экземпляра, сначала получите URL-адрес, находя имя узла своего экземпляра Azure Digital двойников. Найдите свой экземпляр на панели поиска [портал Azure](https://portal.azure.com) . Затем на левой панели навигации выберите _Обзор_ , чтобы просмотреть _имя узла_. Скопируйте это значение.
 

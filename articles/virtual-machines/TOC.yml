@@ -1346,7 +1346,7 @@
             - name: Часто задаваемые вопросы об общедоступной версии
               href: ../azure-monitor/vm/vminsights-ga-release-faq.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: ВОПРОСЫ И ОТВЕТЫ
-              href: ../azure-monitor/faq.md?context=/azure/virtual-machines/context/context#azure-monitor-for-vms
+              href: ../azure-monitor/faq.md
             - name: Включение мониторинга
               items:
                 - name: Общие сведения о включении мониторинга

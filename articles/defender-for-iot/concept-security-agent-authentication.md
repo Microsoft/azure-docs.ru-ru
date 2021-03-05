@@ -1,5 +1,5 @@
 ---
-title: Проверка подлинности агента безопасности (Предварительная версия)
+title: Аутентификация агентов безопасности
 titleSuffix: Azure Defender for IoT
 description: Выполните проверку подлинности Micro Agent с двумя возможными методами.
 author: shhazam-ms
@@ -8,20 +8,20 @@ ms.author: shhazam
 ms.date: 1/20/2021
 ms.topic: conceptual
 ms.service: azure
-ms.openlocfilehash: 018da32b90c7730f82eaa5aa2cd2b5c7a64719a6
-ms.sourcegitcommit: 4784fbba18bab59b203734b6e3a4d62d1dadf031
+ms.openlocfilehash: b0304bd191626adb71041fb0561862b988ee25cd
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99809987"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102124590"
 ---
-# <a name="micro-agent-authentication-methods-preview"></a>Методы проверки подлинности Micro Agent (Предварительная версия)
+# <a name="micro-agent-authentication-methods"></a>Способы проверки подлинности микроагента 
 
 Существует два варианта проверки подлинности с помощью защитника для Micro Agent для IoT. 
 
-- Строка подключения 
+- строку подключения. 
 
-- Certificate 
+- Сертификат 
 
 ## <a name="authentication-using-a-connection-string"></a>Проверка подлинности с помощью строки подключения 
 

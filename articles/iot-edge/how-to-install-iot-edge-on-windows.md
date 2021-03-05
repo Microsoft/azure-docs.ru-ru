@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/20/2021
 ms.author: v-tcassi
 monikerRange: =iotedge-2018-06
-ms.openlocfilehash: ba1401696092f5a16ffa21859a9b485e94c5d792
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c12dbeb81fd2b3d67863b5b84fa30cf77e165549
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101736514"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102123196"
 ---
 # <a name="install-and-provision-azure-iot-edge-for-linux-on-a-windows-device-preview"></a>Установка и инициализация Azure IoT Edge для Linux на устройстве Windows (предварительная версия)
 
@@ -174,7 +174,7 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
    ```
 
    > [!NOTE]
-   > Эту команду можно выполнить без параметров или при необходимости настроить развертывание с параметрами. Чтобы увидеть их значения, можно обратиться к [Справочнику по сценариям для Linux в Windows PowerShell IOT Edge](reference-iot-edge-for-linux-on-windows-scripts.md#Deploy-Eflow) .
+   > Эту команду можно выполнить без параметров или при необходимости настроить развертывание с параметрами. Чтобы увидеть их значения, можно обратиться к [Справочнику по сценариям для Linux в Windows PowerShell IOT Edge](reference-iot-edge-for-linux-on-windows-scripts.md#deploy-eflow) .
 
 1. Введите "Y", чтобы принять условия лицензионного соглашения.
 
@@ -340,8 +340,6 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
        ```bash
        sudo iotedge check
        ```
-
----
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 

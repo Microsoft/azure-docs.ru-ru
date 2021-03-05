@@ -6,12 +6,12 @@ ms.assetid: 9af8a367-7d39-4399-9941-b80cbc5f39a0
 ms.topic: article
 ms.date: 12/07/2020
 ms.custom: devx-track-csharp, seodec18
-ms.openlocfilehash: ec9e3b6ca4b07003852681523a21b87ab7b8671b
-ms.sourcegitcommit: e7179fa4708c3af01f9246b5c99ab87a6f0df11c
+ms.openlocfilehash: a865c1070150b31399b5b738a0a469a07e0b13de
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97825965"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102122363"
 ---
 # <a name="configure-an-app-service-app-in-the-azure-portal"></a>Настройка приложения службы приложений в портал Azure
 
@@ -272,8 +272,6 @@ ms.locfileid: "97825965"
 
 ## <a name="configure-language-stack-settings"></a>Настройка параметров языкового стека
 
-Для приложений Linux см.:
-
 - [ASP.NET Core](configure-language-dotnetcore.md)
 - [Node.js](configure-language-nodejs.md)
 - [PHP](configure-language-php.md)
@@ -288,9 +286,9 @@ ms.locfileid: "97825965"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Настройка личного доменного имени в службе приложений Azure]
-- [Настройка промежуточных сред в службе приложений Azure]
+- [Настройка промежуточных сред в Службе приложений Azure]
 - [Защита пользовательского доменного имени с помощью привязки TLS/SSL в Службе приложений Azure](configure-ssl-bindings.md)
-- [Включить журналы диагностики](troubleshoot-diagnostic-logs.md)
+- [Включение журналов диагностики](troubleshoot-diagnostic-logs.md)
 - [Масштабирование приложения в службе приложений Azure]
 - [Основы мониторинга в службе приложений Azure]
 - [Изменение параметров applicationHost.config с помощью applicationHost. xdt](https://github.com/projectkudu/kudu/wiki/Xdt-transform-samples)
@@ -300,7 +298,7 @@ ms.locfileid: "97825965"
 [ASP.NET SignalR]: https://www.asp.net/signalr
 [Портал Azure]: https://portal.azure.com/
 [Настройка личного доменного имени в службе приложений Azure]: ./app-service-web-tutorial-custom-domain.md
-[Настройка промежуточных сред в службе приложений Azure]: ./deploy-staging-slots.md
+[Настройка промежуточных сред в Службе приложений Azure]: ./deploy-staging-slots.md
 [How to: Monitor web endpoint status]: ./web-sites-monitor.md
 [Основы мониторинга в службе приложений Azure]: ./web-sites-monitor.md
 [режим конвейера]: https://www.iis.net/learn/get-started/introduction-to-iis/introduction-to-iis-architecture#Application

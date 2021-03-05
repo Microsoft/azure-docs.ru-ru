@@ -5,14 +5,14 @@ author: MikeDodaro
 ms.service: spring-cloud
 ms.topic: conceptual
 ms.date: 02/05/2021
-ms.author: brendanm
+ms.author: brendm
 ms.custom: devx-track-java
-ms.openlocfilehash: e846da81444ae1632cb7f9a4cd413bc3f9b7b232
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 844530c6d1650b5fddd27b10c775c4364a3f5147
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101701949"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102124471"
 ---
 # <a name="structured-application-log-for-azure-spring-cloud"></a>Журнал структурированных приложений для Azure Веснного облака
 

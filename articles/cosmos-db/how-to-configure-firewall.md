@@ -4,15 +4,15 @@ description: Узнайте, как настроить политики упра
 author: markjbrown
 ms.service: cosmos-db
 ms.topic: how-to
-ms.date: 12/15/2020
+ms.date: 03/03/2021
 ms.author: mjbrown
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: b4e01375388f12b828d9adcb1e2ed8851061a0bf
-ms.sourcegitcommit: 77ab078e255034bd1a8db499eec6fe9b093a8e4f
+ms.openlocfilehash: a7796b70d4d32e7023fbc88086a737dd76ae7723
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97560735"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102122720"
 ---
 # <a name="configure-ip-firewall-in-azure-cosmos-db"></a>Настройка брандмауэра IP-адресов в Azure Cosmos DB
 [!INCLUDE[appliesto-all-apis](includes/appliesto-all-apis.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "97560735"
 
 Чтобы настроить политику контроля доступа на основе IP-адресов на портале Azure, перейдите на страницу учетной записи Azure Cosmos DB и выберите в меню навигации **Брандмауэр и виртуальные сети**. Измените значение параметра **Разрешить доступ из**, указав **Выбранные сети**, и нажмите **Сохранить**.
 
-:::image type="content" source="./media/how-to-configure-firewall/azure-portal-firewall.png" alt-text="Снимок экрана, показывающий, как открыть страницу &quot;Брандмауэр&quot; на портале Azure":::
+![Снимок экрана, показывающий, как открыть страницу "Брандмауэр" на портале Azure](./media/how-to-configure-firewall/azure-portal-firewall.png)
 
 При включенном контроле доступа на основе IP-адресов портал Azure предоставляет возможность указать IP-адреса, диапазоны IP-адресов и параметры. Параметры обеспечивают доступ к другим службам Azure и порталу Azure. Сведения об этих параметрах приведены в указанных ниже разделах.
 
@@ -57,13 +57,13 @@ ms.locfileid: "97560735"
 
 Вы можете включить запросы на доступ к портал Azure, выбрав параметр **Разрешить доступ из портал Azure** , как показано на следующем снимке экрана:
 
-:::image type="content" source="./media/how-to-configure-firewall/enable-azure-portal.png" alt-text="Снимок экрана, показывающий, как разрешить доступ к порталу Azure":::
+![Снимок экрана, показывающий, как разрешить доступ к порталу Azure](./media/how-to-configure-firewall/enable-azure-portal.png)
 
 ### <a name="allow-requests-from-global-azure-datacenters-or-other-sources-within-azure"></a>Разрешение запросов от глобальных центров обработки данных Azure или других источников в пределах Azure
 
 Если вы выполняете доступ к учетной записи Azure Cosmos DB из служб, которые не предоставляют статический IP-адрес (например, Azure Stream Analytics и "Функции Azure"), вы все равно можете использовать брандмауэр IP-адресов для ограничения доступа. Вы можете включить доступ из других источников в Azure, выбрав параметр **принять подключения из центров обработки данных Azure** , как показано на следующем снимке экрана:
 
-:::image type="content" source="./media/how-to-configure-firewall/enable-azure-services.png" alt-text="Снимок экрана, показывающий, как принимать подключения из центров обработки данных Azure":::
+![Снимок экрана, показывающий, как принимать подключения из центров обработки данных Azure](./media/how-to-configure-firewall/enable-azure-services.png)
 
 При включении этого параметра IP-адрес `0.0.0.0` добавляется в список разрешенных IP-адресов. `0.0.0.0`IP-адрес позволяет ограничивать запросы учетной записи Azure Cosmos DB из диапазона IP-адресов центра обработки данных Azure. Этот параметр неприменим для получения доступа к учетной записи Azure Cosmos DB из других диапазонов IP-адресов.
 
@@ -103,6 +103,12 @@ IP-адреса для виртуальных машин можно узнать
 ### <a name="requests-from-the-internet"></a>Запросы из Интернета
 
 Если вы выполняете доступ к учетной записи Azure Cosmos DB с компьютера через Интернет, необходимо добавить IP-адрес или диапазон IP-адресов клиента этого компьютера в список разрешенных IP-адресов для этой учетной записи.
+
+### <a name="add-outbound-rules-to-the-firewall"></a>Добавление правил исходящего трафика в брандмауэр
+
+Сведения о доступе к текущему списку диапазонов исходящих IP-адресов для добавления в параметры брандмауэра см. в статье [скачивание диапазонов IP-адресов и тегов служб в Azure](https://www.microsoft.com/download/details.aspx?id=56519).
+
+Сведения об автоматизации списка см. в статье [Использование API обнаружения тегов служб (общедоступная Предварительная версия)](https://docs.microsoft.com/azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api-public-preview).
 
 ## <a name="configure-an-ip-firewall-by-using-a-resource-manager-template"></a><a id="configure-ip-firewall-arm"></a>Настройка брандмауэра IP-адресов с помощью шаблона Resource Manager
 
@@ -232,7 +238,7 @@ New-AzResource -ResourceType "Microsoft.DocumentDb/databaseAccounts" `
 
 Создание или обновление учетной записи Azure Cosmos со списком разрешенных адресов, содержащих частные IP-адреса, завершится ошибкой. Убедитесь, что в списке не указан частный IP-адрес.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения о том, как настроить конечную точку службы для виртуальной сети для учетной записи Azure Cosmos DB, см. в следующих статьях:
 

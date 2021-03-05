@@ -7,12 +7,12 @@ ms.service: expressroute
 ms.topic: conceptual
 ms.date: 03/25/2020
 ms.author: duau
-ms.openlocfilehash: ba23319c35aed1d09da652e6f84b60e5f8e9495e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: eefc42fb8e66e66c6388599df65c59ff642a6b59
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101740891"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102124114"
 ---
 # <a name="about-expressroute-fastpath"></a>Сведения об ExpressRoute FastPath
 
@@ -34,7 +34,7 @@ ms.locfileid: "101740891"
 * ErGw3AZ
 
 > [!IMPORTANT]
-> Если вы планируете использовать Фастпас с частным пиринг на основе IPv6 через ExpressRoute, убедитесь, что выбрано ErGw3AZ для **SKU**.
+> Если вы планируете использовать Фастпас с частным пиринг на основе IPv6 через ExpressRoute, убедитесь, что выбрано ErGw3AZ для **SKU**. Обратите внимание, что это доступно только для каналов, использующих протокол ExpressRoute Direct.
 > 
 >
 

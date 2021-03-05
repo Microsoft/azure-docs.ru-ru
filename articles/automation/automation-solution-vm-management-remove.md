@@ -3,14 +3,14 @@ title: Обзор удаления Запуск и остановка вирту
 description: В этой статье описывается, как удалить компонент Запуск и остановка виртуальных машин в нерабочее время и отменить связь учетной записи службы автоматизации с рабочей областью Log Analytics.
 services: automation
 ms.subservice: process-automation
-ms.date: 02/04/2021
+ms.date: 03/04/2021
 ms.topic: conceptual
-ms.openlocfilehash: a201274bf0c06382da790dd051bf5023337970b8
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0bab5d8e82ce432e9b3834fe4c003316545eb338
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101723849"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102122091"
 ---
 # <a name="remove-startstop-vms-during-off-hours-from-automation-account"></a>Удаление Запуск и остановка виртуальных машин в нерабочее время из учетной записи службы автоматизации
 
@@ -24,21 +24,7 @@ ms.locfileid: "101723849"
 
 ## <a name="delete-the-dedicated-resource-group"></a>Удаление выделенной группы ресурсов
 
-1. Войдите в Azure по адресу [https://portal.azure.com](https://portal.azure.com) .
-
-2. Перейдите к учетной записи службы автоматизации и выберите в разделе **связанные ресурсы** пункт **связанная Рабочая область** .
-
-3. Затем выберите пункт **Перейти к рабочей области**.
-
-4. Щелкните **Решения** в разделе **Общие**.
-
-5. На странице решений выберите из списка пункт **Start-Stop-VM[workspace]** .
-
-6. На странице **VMManagementSolution [Рабочая область]** выберите в меню пункт **Удалить** .
-
-    ![Удаление функции управления виртуальными машинами](media/automation-solution-vm-management/vm-management-solution-delete.png)
-
-7. Чтобы удалить группу ресурсов, созданную для поддержки только Запуск и остановка виртуальных машин в нерабочее время, выполните действия, описанные в статье [Azure Resource Manager группа ресурсов и удаление ресурсов](../azure-resource-manager/management/delete-resource-group.md) .
+Чтобы удалить группу ресурсов, выполните действия, описанные в статье [Azure Resource Manager группа ресурсов и удаление ресурсов](../azure-resource-manager/management/delete-resource-group.md) .
 
 ## <a name="delete-the-automation-account"></a>Удаление учетной записи службы автоматизации
 

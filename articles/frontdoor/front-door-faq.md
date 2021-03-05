@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 10/20/2020
 ms.author: duau
-ms.openlocfilehash: 77cc509a9fac2a24b3cd70675c1ee4160ecdb24d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 06ad8bf169e2b4b44f4f6a8ec5155aa6722a038c
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101741860"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102124063"
 ---
 # <a name="frequently-asked-questions-for-azure-front-door"></a>Часто задаваемые вопросы о передней дверце Azure
 
@@ -26,7 +26,7 @@ ms.locfileid: "101741860"
 2. [Передняя дверца Azure UserVoice](https://feedback.azure.com/forums/217313-networking?category_id=345025).
 3. **Служба поддержки Майкрософт:** Чтобы создать новый запрос на поддержку, в портал Azure на вкладке **Справка** нажмите кнопку **Справка и поддержка** , а затем выберите **новый запрос в службу поддержки**.
 
-## <a name="general"></a>Общее
+## <a name="general"></a>Общие сведения
 
 ### <a name="what-is-azure-front-door"></a>Что такое Azure Front Door?
 
@@ -99,7 +99,7 @@ ms.locfileid: "101741860"
 
 - Найдите `Front Door ID` значение в разделе Обзор на странице портала передней дверцы. Затем можно выполнить фильтрацию входящего заголовка "**X-Azure-ФДИД**", отправленного с помощью передней дверцы, на серверную часть с таким значением, чтобы разрешить только собственный экземпляр передней дверцы (так как указанные выше диапазоны IP-адресов используются совместно с другими экземплярами передней дверцы других клиентов).
 
-- Примените фильтрацию правил на внутреннем веб-сервере, чтобы ограничить трафик на основе полученного значения заголовка X-Azure-ФДИД. Обратите внимание, что некоторые службы, такие как служба приложений Azure, предоставляют возможность [фильтрации на основе заголовков](../app-service/app-service-ip-restrictions#restrict-access-to-a-specific-azure-front-door-instance-preview) без необходимости изменения приложения или узла.
+- Примените фильтрацию правил на внутреннем веб-сервере, чтобы ограничить трафик на основе полученного значения заголовка X-Azure-ФДИД. Обратите внимание, что некоторые службы, такие как служба приложений Azure, предоставляют возможность [фильтрации на основе заголовков](../app-service/app-service-ip-restrictions.md#restrict-access-to-a-specific-azure-front-door-instance-preview) без необходимости изменения приложения или узла.
 
   Ниже приведен пример для [Microsoft службы IIS (IIS)](https://www.iis.net/):
 

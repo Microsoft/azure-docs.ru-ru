@@ -8,12 +8,12 @@ ms.workload: infrastructure-services
 ms.topic: how-to
 ms.date: 11/3/2020
 ms.author: cynthn
-ms.openlocfilehash: 0f5eb6a2964cdb679c2a83bd9d9b6296e3e962ed
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.openlocfilehash: f8ea2224020e6fa6c5dae135dc575cc77510efd5
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96499294"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102123944"
 ---
 # <a name="preview-use-customer-managed-keys-for-encrypting-images"></a>Предварительный просмотр: Использование управляемых клиентом ключей для шифрования образов
 
@@ -27,7 +27,7 @@ ms.locfileid: "96499294"
 
 Для работы с этой статьей необходимо, чтобы в каждом регионе, где вы хотите реплицировать образ, был задан набор шифрования дисков:
 
-- Сведения об использовании только управляемого клиентом ключа см. в статьях о включении управляемых клиентом ключей с шифрованием на стороне сервера с помощью [портал Azure](./disks-enable-customer-managed-keys-portal.md) или [PowerShell](./windows/disks-enable-customer-managed-keys-powershell.md#set-up-your-azure-key-vault-and-diskencryptionset).
+- Сведения об использовании только управляемого клиентом ключа см. в статьях о включении управляемых клиентом ключей с шифрованием на стороне сервера с помощью [портал Azure](./disks-enable-customer-managed-keys-portal.md) или [PowerShell](./windows/disks-enable-customer-managed-keys-powershell.md#set-up-an-azure-key-vault-and-diskencryptionset-without-automatic-key-rotation).
 
 - Чтобы использовать управляемые платформой и управляемые клиентом ключи (для двойного шифрования), см. статьи о включении двойного шифрования при хранении с помощью [портал Azure](./disks-enable-double-encryption-at-rest-portal.md) или [PowerShell](./windows/disks-enable-double-encryption-at-rest-powershell.md).
 
