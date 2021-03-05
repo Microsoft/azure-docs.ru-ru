@@ -9,12 +9,12 @@ ms.subservice: sql
 ms.date: 06/11/2020
 ms.author: fipopovi
 ms.reviewer: jrasnick
-ms.openlocfilehash: c9a5be358c40c3411115d8c2ee3f9471c68771b8
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.openlocfilehash: 1ee631e3e4a13a18bb61ee6237ff67a49f663179
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99576216"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101693906"
 ---
 # <a name="control-storage-account-access-for-serverless-sql-pool-in-azure-synapse-analytics"></a>Управление доступом к учетной записи хранения в бессерверном пуле SQL в Azure Synapse Analytics
 
@@ -122,7 +122,7 @@ ms.locfileid: "99576216"
     Connect-AzAccount
     ```
 4. Определите переменные в PowerShell: 
-    - Имя группы ресурсов можно найти на портале Azure в общих сведениях о рабочей области Synapse.
+    - Имя группы ресурсов можно найти на портале Azure в общих сведениях об учетной записи хранения.
     - Имя учетной записи — это имя учетной записи хранения, защищенной правилами брандмауэра.
     - Идентификатор клиента можно найти на портале Azure в разделе информации о клиенте Azure Active Directory.
     - Имя рабочей области — это имя рабочей области Synapse.
@@ -192,16 +192,14 @@ GRANT ALTER ANY CREDENTIAL TO [user_name];
 GRANT REFERENCES ON CREDENTIAL::[storage_credential] TO [specific_user];
 ```
 
-Чтобы обеспечить беспроблемную сквозную аутентификацию Azure AD, все пользователи по умолчанию получают право использовать учетные данные `UserIdentity`.
-
 ## <a name="server-scoped-credential"></a>Учетные данные уровня сервера
 
-Учетные данные уровня сервера используются при вызове функции `OPENROWSET` из процесса входа в SQL без `DATA_SOURCE` для чтения файлов в определенной учетной записи хранения. Имя учетных данных уровня сервера **должно** совпадать с URL-адресом службы хранилища Azure. Для добавления учетных данных выполните инструкцию [CREATE CREDENTIAL](/sql/t-sql/statements/create-credential-transact-sql?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true). Необходимо указать аргумент CREDENTIAL NAME. Он должен соответствовать пути к данным в хранилище или некоторой части этого пути (см. ниже).
+Учетные данные уровня сервера используются при вызове функции `OPENROWSET` из процесса входа в SQL без `DATA_SOURCE` для чтения файлов в определенной учетной записи хранения. Имя учетных данных уровня сервера **должно** соответствовать базовому URL-адресу службы хранилища Azure (и при необходимости сопровождаться именем контейнера). Для добавления учетных данных выполните инструкцию [CREATE CREDENTIAL](/sql/t-sql/statements/create-credential-transact-sql?view=azure-sqldw-latest&preserve-view=true). Необходимо указать аргумент CREDENTIAL NAME.
 
 > [!NOTE]
 > Аргумент `FOR CRYPTOGRAPHIC PROVIDER` не поддерживается.
 
-Имя объекта CREDENTIAL уровня сервера должно содержать полный путь к учетной записи хранения и к контейнеру (необязательно) в следующем формате: `<prefix>://<storage_account_path>/<storage_path>` Описание путей к учетной записи хранения приведено в следующей таблице.
+Имя объекта CREDENTIAL уровня сервера должно содержать полный путь к учетной записи хранения и к контейнеру (необязательно) в следующем формате: `<prefix>://<storage_account_path>[/<container_name>]` Описание путей к учетной записи хранения приведено в следующей таблице.
 
 | Внешний источник данных       | Prefix | Путь к учетной записи хранения                                |
 | -------------------------- | ------ | --------------------------------------------------- |
@@ -224,11 +222,13 @@ GRANT REFERENCES ON CREDENTIAL::[storage_credential] TO [specific_user];
 Замените <*mystorageaccountname*> реальным именем учетной записи хранения, а <*mystorageaccountcontainername*> — именем контейнера:
 
 ```sql
-CREATE CREDENTIAL [https://<storage_account>.dfs.core.windows.net/<container>]
+CREATE CREDENTIAL [https://<mystorageaccountname>.dfs.core.windows.net/<mystorageaccountcontainername>]
 WITH IDENTITY='SHARED ACCESS SIGNATURE'
 , SECRET = 'sv=2018-03-28&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-04-18T20:42:12Z&st=2019-04-18T12:42:12Z&spr=https&sig=lQHczNvrk1KoYLCpFdSsMANd0ef9BrIPBNJ3VYEIq78%3D';
 GO
 ```
+
+При необходимости вы можете использовать только базовый URL-адрес учетной записи хранения без имени контейнера.
 
 ### <a name="managed-identity"></a>[Управляемое удостоверение](#tab/managed-identity)
 
@@ -238,6 +238,8 @@ GO
 CREATE CREDENTIAL [https://<storage_account>.dfs.core.windows.net/<container>]
 WITH IDENTITY='Managed Identity'
 ```
+
+При необходимости вы можете использовать только базовый URL-адрес учетной записи хранения без имени контейнера.
 
 ### <a name="public-access"></a>[Открытый доступ](#tab/public-access)
 

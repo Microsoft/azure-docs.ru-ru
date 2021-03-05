@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive
 ms.topic: conceptual
 ms.date: 12/02/2019
-ms.openlocfilehash: 27f390c3634887dd616c62dbbd4ad85209efde46
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: d326dfe3a44e5d9e9b55a888762f3878cd418850
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98933709"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102210960"
 ---
 # <a name="hdinsight-cluster-management-best-practices"></a>Рекомендации по управлению кластерами HDInsight
 
@@ -18,7 +18,7 @@ ms.locfileid: "98933709"
 
 ## <a name="how-do-i-create-hdinsight-clusters"></a>Разделы справки создать кластеры HDInsight?
 
-| Параметр | документы. |
+| Параметр | Документы |
 |---|---|
 | Фабрика данных Azure | [Создание кластеров Apache Hadoop в HDInsight по запросу с помощью Фабрики данных Azure](./hdinsight-hadoop-create-linux-clusters-adf.md) |
 | Пользовательский шаблон диспетчер ресурсов | [Создание кластеров Apache Hadoop в HDInsight с помощью шаблонов Resource Manager](./hdinsight-hadoop-create-linux-clusters-arm-templates.md) |
@@ -28,14 +28,14 @@ ms.locfileid: "98933709"
 | Azure CLI | [Создание кластеров HDInsight с помощью интерфейса командной строки Azure](./hdinsight-hadoop-create-linux-clusters-azure-cli.md) |
 | Azure PowerShell | [Создание кластеров под управлением Linux в HDInsight с помощью Azure PowerShell](./hdinsight-hadoop-create-linux-clusters-azure-powershell.md) |
 | cURL | [Создание кластеров Apache Hadoop с помощью REST API Azure](./hdinsight-hadoop-create-linux-clusters-curl-rest.md) |
-| Пакеты SDK (.NET, Python, Java) | [.NET](/dotnet/api/overview/azure/hdinsight?view=azure-dotnet&preserve-view=true), [Python](/python/api/overview/azure/hdinsight?preserve-view=true&view=azure-python), [Java](/java/api/overview/azure/hdinsight?preserve-view=true&view=azure-java-stable), [Go](./hdinsight-go-sdk-overview.md) |
+| Пакеты SDK (.NET, Python, Java) | [.NET](/dotnet/api/overview/azure/hdinsight?view=azure-dotnet&preserve-view=true), [Python](/python/api/overview/azure/hdinsight?preserve-view=true&view=azure-python), [Java](/java/api/overview/azure/hdinsight), [Go](./hdinsight-go-sdk-overview.md) |
 
 > [!Note]
 > Если вы создаете кластер и повторно используете имя кластера из ранее созданного кластера, перед созданием кластера дождитесь завершения предыдущего удаления кластера.
 
 ## <a name="how-do-i-customize-hdinsight-clusters"></a>Разделы справки настроить кластеры HDInsight?
 
-| Параметр | документы. |
+| Параметр | Документы |
 |---|---|
 | Действия сценария | [Настройка кластеров Azure HDInsight с помощью действий сценариев](./hdinsight-hadoop-customize-cluster-linux.md) |
 | Бутстрэп | [Настройка кластеров HDInsight с помощью начальной загрузки](./hdinsight-hadoop-customize-cluster-bootstrap.md) |
@@ -53,7 +53,7 @@ ms.locfileid: "98933709"
 
 ## <a name="how-do-i-manage-running-hdinsight-clusters"></a>Разделы справки управлять работающими кластерами HDInsight?
 
-| Параметр | документы. |
+| Параметр | Документы |
 |---|---|
 | Автомасштабирование | [Автоматическое масштабирование кластеров Azure HDInsight](./hdinsight-autoscale-clusters.md) |
 | Масштабирование вручную | [Масштабирование кластеров Azure HDInsight](./hdinsight-scaling-best-practices.md) |

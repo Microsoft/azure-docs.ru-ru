@@ -9,12 +9,12 @@ ms.subservice: management
 ms.date: 11/12/2020
 ms.reviewer: jushiman
 ms.custom: mimckitt, devx-track-azurecli
-ms.openlocfilehash: 85e4b6a4d0ff1c3bd7e634311a36396a74408419
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: b4c705e65b5b8c4f9e34dc5ff1474e87da5bee02
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100594439"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209797"
 ---
 # <a name="planned-maintenance-notifications-for-virtual-machine-scale-sets"></a>Уведомления о плановом обслуживании для масштабируемых наборов виртуальных машин
 
@@ -143,7 +143,7 @@ Set-AzVmss -ResourceGroupName rgName -VMScaleSetName vmssName -InstanceId id -Pe
 
 ## <a name="check-maintenance-status-by-using-the-cli"></a>Проверка состояния обслуживания с помощью CLI
 
-Сведения о плановом обслуживании можно просмотреть с помощью команды [az vmss list-instances](/cli/azure/vmss?view=azure-cli-latest#az-vmss-list-instances).
+Сведения о плановом обслуживании можно просмотреть с помощью команды [az vmss list-instances](/cli/azure/vmss#az-vmss-list-instances).
  
 Сведения об обслуживании возвращаются, только если обслуживание запланировано. Если запланированное обслуживание не затрагивает указанный экземпляр виртуальной машины, команда не возвращает информацию об обслуживании. 
 
@@ -214,6 +214,6 @@ az vmss perform-maintenance -g rgName -n vmssName --instance-ids id
    - Вы решили остановить (отменить распределение) и перезапустить виртуальную машину.
    - Вы настроили **автоматическое завершение работы** для виртуальной машины.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как получать события обслуживания с виртуальной машины с помощью службы [Запланированные события](../virtual-machines/windows/scheduled-events.md).

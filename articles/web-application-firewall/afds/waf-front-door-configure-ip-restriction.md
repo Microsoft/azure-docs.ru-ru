@@ -7,12 +7,12 @@ ms.service: web-application-firewall
 ms.topic: article
 ms.date: 12/22/2020
 ms.author: tyao
-ms.openlocfilehash: 60a4ef47bc30955c918983d54f613cbdb5cbed73
-ms.sourcegitcommit: 6e2d37afd50ec5ee148f98f2325943bafb2f4993
+ms.openlocfilehash: 65e378c0380804c13e4b42d855aede7781b93592
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97746768"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102211674"
 ---
 # <a name="configure-an-ip-restriction-rule-with-a-web-application-firewall-for-azure-front-door"></a>Настройка правила ограничения IP-адресов с помощью брандмауэра веб-приложения для передней дверцы Azure
 
@@ -31,7 +31,7 @@ ms.locfileid: "97746768"
 ### <a name="create-a-waf-policy"></a>Создание политики WAF
 
 1. На портал Azure выберите **создать ресурс**, введите  **брандмауэр веб-приложения** в поле поиска, а затем выберите **БРАНДМАУЭР веб-приложения (WAF)**.
-2. Щелкните **Создать**.
+2. Нажмите кнопку **создания**.
 3. На странице **Создание политики WAF** используйте следующие значения для заполнения вкладки " **основные** ":
    
    |Параметр  |Значение  |
@@ -64,7 +64,7 @@ ms.locfileid: "97746768"
 
    :::image type="content" source="../media/waf-front-door-configure-ip-restriction/custom-rule.png" alt-text="Пользовательское правило":::
 
-   Выберите **Добавить**.
+   Нажмите **Добавить**.
 6. Выберите **Далее: Ассоциация**.
 7. Выберите **добавить интерфейсный узел**.
 8. В качестве **внешнего узла** выберите интерфейсный узел и щелкните **Добавить**.
@@ -95,7 +95,7 @@ ms.locfileid: "97746768"
 
 ### <a name="create-a-waf-policy"></a>Создание политики WAF
 
-Создайте политику WAF с помощью команды [AZ Network Front-дверь WAF-Policy Create](/cli/azure/ext/front-door/network/front-door/waf-policy?view=azure-cli-latest#ext-front-door-az-network-front-door-waf-policy-create) . В следующем примере замените имя политики *ипалловполициексамплекли* на уникальное имя политики.
+Создайте политику WAF с помощью команды [AZ Network Front-дверь WAF-Policy Create](/cli/azure/ext/front-door/network/front-door/waf-policy#ext-front-door-az-network-front-door-waf-policy-create) . В следующем примере замените имя политики *ипалловполициексамплекли* на уникальное имя политики.
 
 ```azurecli-interactive 
 az network front-door waf-policy create \
@@ -105,7 +105,7 @@ az network front-door waf-policy create \
   ```
 ### <a name="add-a-custom-ip-access-control-rule"></a>Добавление настраиваемого правила контроля доступа IP-адресов
 
-Чтобы добавить настраиваемое правило контроля доступа IP-адресов для только что созданной политики WAF, используйте команду [AZ Network Front-дверь WAF-Policy Custom-Rule Create](/cli/azure/ext/front-door/network/front-door/waf-policy/rule?view=azure-cli-latest#ext-front-door-az-network-front-door-waf-policy-rule-create) .
+Чтобы добавить настраиваемое правило контроля доступа IP-адресов для только что созданной политики WAF, используйте команду [AZ Network Front-дверь WAF-Policy Custom-Rule Create](/cli/azure/ext/front-door/network/front-door/waf-policy/rule#ext-front-door-az-network-front-door-waf-policy-rule-create) .
 
 В следующих примерах:
 -  Замените *ипалловполициексамплекли* своей уникальной политикой, созданной ранее.
@@ -138,7 +138,7 @@ az network front-door waf-policy rule match-condition add \
   ```
                                                    
 ### <a name="find-the-id-of-a-waf-policy"></a>Поиск идентификатора политики WAF 
-Найдите идентификатор политики WAF с помощью команды [AZ Network Front-двери WAF-Policy показывать](/cli/azure/ext/front-door/network/front-door/waf-policy?view=azure-cli-latest#ext-front-door-az-network-front-door-waf-policy-show) . Замените *ипалловполициексамплекли* в следующем примере своей уникальной политикой, созданной ранее.
+Найдите идентификатор политики WAF с помощью команды [AZ Network Front-двери WAF-Policy показывать](/cli/azure/ext/front-door/network/front-door/waf-policy#ext-front-door-az-network-front-door-waf-policy-show) . Замените *ипалловполициексамплекли* в следующем примере своей уникальной политикой, созданной ранее.
 
    ```azurecli
    az network front-door  waf-policy show \
@@ -148,7 +148,7 @@ az network front-door waf-policy rule match-condition add \
 
 ### <a name="link-a-waf-policy-to-an-azure-front-door-front-end-host"></a>Связывание политики WAF с интерфейсным узлом передней дверцы Azure
 
-Задайте идентификатор политики в качестве идентификатора *вебаппликатионфиреваллполицилинк* для передней дверцы Azure с помощью команды [AZ Network Front-дверь Update](/cli/azure/ext/front-door/network/front-door?view=azure-cli-latest#ext-front-door-az-network-front-door-update) . Замените *ипалловполициексамплекли* своей уникальной политикой, созданной ранее.
+Задайте идентификатор политики в качестве идентификатора *вебаппликатионфиреваллполицилинк* для передней дверцы Azure с помощью команды [AZ Network Front-дверь Update](/cli/azure/ext/front-door/network/front-door#ext-front-door-az-network-front-door-update) . Замените *ипалловполициексамплекли* своей уникальной политикой, созданной ранее.
 
    ```azurecli
    az network front-door update \

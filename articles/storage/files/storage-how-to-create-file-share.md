@@ -9,12 +9,12 @@ ms.date: 1/20/2021
 ms.author: rogarana
 ms.subservice: files
 ms.custom: devx-track-azurecli, references_regions
-ms.openlocfilehash: 5a27f38e92955c0aa240f6be394aacd187c3a8b8
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 24bee926d84c7a5be3f19c39d39285c2cd486824
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100370909"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102211028"
 ---
 # <a name="create-an-azure-file-share"></a>Создание файлового ресурса Azure
 Чтобы создать файловый ресурс Azure, необходимо ответить на три вопроса о том, как она будет использоваться:
@@ -35,7 +35,7 @@ ms.locfileid: "100370909"
 ## <a name="prerequisites"></a>Предварительные требования
 - В этой статье подразумевается, что вы уже создали подписку Azure. Если у вас еще нет подписки, вы можете [создать бесплатную учетную запись Azure](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
 - Если вы хотите использовать Azure PowerShell, [установите последнюю версию](/powershell/azure/install-az-ps).
-- Если вы хотите использовать Azure CLI, [установите последнюю версию](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest).
+- Если вы хотите использовать Azure CLI, [установите последнюю версию](/cli/azure/install-azure-cli).
 
 ## <a name="create-a-storage-account"></a>Создание учетной записи хранения
 Общие папки Azure развертываются в *учетных записях хранения*. Это объекты верхнего уровня, которые представляют общий пул хранилища. Этот пул хранилища можно использовать для развертывания нескольких файловых ресурсов. 
@@ -51,7 +51,7 @@ Azure поддерживает несколько типов учетных за
 
 ![Снимок экрана с параметром быстрого создания учетной записи хранения в браузере](media/storage-how-to-create-file-share/create-storage-account-0.png)
 
-#### <a name="basics"></a>Основные
+#### <a name="basics"></a>Основные сведения
 Первый раздел, который необходимо завершить для создания учетной записи хранения, помечен как **базовый**. В нем содержатся все необходимые поля для создания учетной записи хранения. Чтобы создать учетную запись хранения GPv2, убедитесь, что переключатель " **производительность** " установлен в значение " *стандартный* ", а в раскрывающемся списке " **тип учетной записи** " выбрано значение *StorageV2 (общего назначения версии 2)*.
 
 ![Снимок экрана с переключателем "производительность" со стандартным выбранным видом и типом учетной записи с выбранным StorageV2](media/storage-how-to-create-file-share/create-storage-account-1.png)
@@ -124,7 +124,7 @@ $storAcct = New-AzStorageAccount `
     -Kind FileStorage 
 ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli);
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 Чтобы создать учетную запись хранения с помощью Azure CLI, мы будем использовать команду AZ Storage Account Create. Эта команда имеет много параметров. отображаются только необходимые параметры. Дополнительные сведения о дополнительных параметрах см. в [ `az storage account create` документации по командам](/cli/azure/storage/account).
 
 Чтобы упростить создание учетной записи хранения и последующего файлового ресурса, в переменных будут храниться несколько параметров. Вы можете заменить содержимое переменной любыми значениями, однако обратите внимание, что имя учетной записи хранения должно быть глобально уникальным.
@@ -212,8 +212,8 @@ New-AzRmStorageShare `
     Out-Null
 ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli);
-Вы можете создать файловый ресурс Azure с помощью [`az storage share-rm create`](/cli/azure/storage/share-rm?preserve-view=true&view=azure-cli-latest#az_storage_share_rm_create) команды. Следующие Azure CLI команды предполагают, что вы установили переменные `$resourceGroupName` и `$storageAccountName` , как определено выше, в разделе Создание учетной записи хранения с Azure CLI.
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
+Вы можете создать файловый ресурс Azure с помощью [`az storage share-rm create`](/cli/azure/storage/share-rm#az_storage_share_rm_create) команды. Следующие Azure CLI команды предполагают, что вы установили переменные `$resourceGroupName` и `$storageAccountName` , как определено выше, в разделе Создание учетной записи хранения с Azure CLI.
 
 > [!Important]  
 > Для файловых ресурсов уровня "Премиум" `--quota` параметр ссылается на подготовленный размер общей папки. Подготовленный размер общей папки — это сумма, за которую будет взиматься плата, независимо от использования. Счета за стандартные общие ресурсы выставляются на основе использования, а не подготовленного размера.
@@ -262,7 +262,7 @@ Update-AzRmStorageShare `
     -AccessTier Cool
 ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli);
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 Следующая команда Azure CLI предполагает, что вы установили `$resourceGroupName` переменные, `$storageAccountName` и, `$shareName` как описано в предыдущих разделах этого документа.
 
 ```azurecli
@@ -275,7 +275,7 @@ az storage share-rm update \
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Спланируйте развертывание файлов Azure](storage-files-planning.md) или [запланируйте развертывание синхронизация файлов Azure](storage-sync-files-planning.md). 
 - [Обзор сетевых](storage-files-networking-overview.md)возможностей.
 - Подключите и подключите общую папку в [Windows](storage-how-to-use-files-windows.md), [macOS](storage-how-to-use-files-mac.md)и [Linux](storage-how-to-use-files-linux.md).

@@ -11,12 +11,12 @@ ms.subservice: core
 ms.date: 11/05/2020
 ms.topic: conceptual
 ms.custom: how-to, has-adal-ref, devx-track-js, devx-track-azurecli, contperf-fy21q2
-ms.openlocfilehash: 27c8a0b80068124613af15565f387f15ac6b8e57
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.openlocfilehash: 30e4fede72df8eaf922745e7781c9e0d11f7ddb4
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97027260"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102210824"
 ---
 # <a name="set-up-authentication-for-azure-machine-learning-resources-and-workflows"></a>Настройка проверки подлинности для ресурсов и рабочих процессов Машинного обучения Azure
 
@@ -54,7 +54,7 @@ ms.locfileid: "97027260"
 >
 > Причина предоставления минимального доступа заключается в том, что субъект-служба использует пароль для проверки подлинности, а пароль может храниться как часть скрипта автоматизации. При утечке пароля наличие минимального доступа, необходимого для выполнения конкретных задач, позволяет избежать вредоносного использования пакета обновления.
 
-Самый простой способ создать пакет обновления и предоставить доступ к рабочей области — с помощью [Azure CLI](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest). Чтобы создать субъект-службу и предоставить ему доступ к рабочей области, выполните следующие действия.
+Самый простой способ создать пакет обновления и предоставить доступ к рабочей области — с помощью [Azure CLI](/cli/azure/install-azure-cli). Чтобы создать субъект-службу и предоставить ему доступ к рабочей области, выполните следующие действия.
 
 > [!NOTE]
 > Для выполнения всех этих действий необходимо быть администратором подписки.
@@ -67,9 +67,9 @@ ms.locfileid: "97027260"
 
     Если CLI сможет запустить браузер по умолчанию, он откроет в браузере страницу входа. Или откройте браузер и выполните инструкции из командной строки. В инструкции входит переход к [https://aka.ms/devicelogin](https://aka.ms/devicelogin) и ввод кода авторизации.
 
-    Если у вас несколько подписок Azure, можно использовать `az account set -s <subscription name or ID>` команду, чтобы задать подписку. См. дополнительные сведения в статье [Use multiple Azure subscriptions](/cli/azure/manage-azure-subscriptions-azure-cli?view=azure-cli-latest) (Использование нескольких подписок Azure).
+    Если у вас несколько подписок Azure, можно использовать `az account set -s <subscription name or ID>` команду, чтобы задать подписку. См. дополнительные сведения в статье [Use multiple Azure subscriptions](/cli/azure/manage-azure-subscriptions-azure-cli) (Использование нескольких подписок Azure).
 
-    Другие методы аутентификации см. в статье [Вход с помощью Azure CLI](/cli/azure/authenticate-azure-cli?preserve-view=true&view=azure-cli-latest).
+    Другие методы аутентификации см. в статье [Вход с помощью Azure CLI](/cli/azure/authenticate-azure-cli).
 
 1. Установите расширение Машинное обучение Azure:
 
@@ -236,7 +236,7 @@ ws.get_details()
 
 ### <a name="use-a-service-principal-from-the-azure-cli"></a>Использование субъекта-службы из Azure CLI
 
-Для Azure CLIных команд можно использовать субъект-службу. Дополнительные сведения см. [в разделе Вход с использованием субъекта-службы](/cli/azure/create-an-azure-service-principal-azure-cli?preserve-view=true&view=azure-cli-latest#sign-in-using-a-service-principal).
+Для Azure CLIных команд можно использовать субъект-службу. Дополнительные сведения см. [в разделе Вход с использованием субъекта-службы](/cli/azure/create-an-azure-service-principal-azure-cli#sign-in-using-a-service-principal).
 
 ### <a name="use-a-service-principal-with-the-rest-api-preview"></a>Использование субъекта-службы с REST API (Предварительная версия)
 

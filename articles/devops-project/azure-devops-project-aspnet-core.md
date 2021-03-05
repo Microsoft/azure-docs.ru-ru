@@ -12,15 +12,15 @@ ms.assetid: ''
 ms.workload: web
 ms.tgt_pltfrm: na
 ms.topic: quickstart
-ms.date: 03/24/2020
+ms.date: 02/23/2021
 ms.author: mlearned
 ms.custom: devx-track-csharp, mvc
-ms.openlocfilehash: 63d3ac356e4f2c1d17e1511227f5089b7ff4266f
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.openlocfilehash: 59f8d721c23cbb033f295f2ef3045fc96f08ba96
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97589164"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101733193"
 ---
 # <a name="create-a-cicd-pipeline-for-net-with-azure-devops-starter"></a>Создание конвейера CI/CD для приложения .NET в службе Azure DevOps Starter
 
@@ -43,7 +43,9 @@ DevOps Starter позволяет создать конвейер CI/CD в Azure
 1. Выберите пример приложения **.NET**. Примеры .NET включают в себя либо платформу ASP.NET с открытым кодом, либо кросс-платформенную платформу .NET Core.
 
    ![Платформа .NET](_img/azure-devops-project-aspnet-core/select-dotnet.png)
-
+   
+   > [!NOTE]
+   > Параметр по умолчанию для настройки начального приложения DevOps имеет значение **GitHub**, но этот параметр можно изменить с помощью мастера.
 2. Этот пример представляет собой приложение ASP.NET Core MVC. Выберите платформу приложения **.NET Core**, а затем **Далее**.    
     
 3. Выберите **Веб-приложение в Windows** в качестве целевого объекта развертывания, а затем **Далее**. При необходимости для развертывания можно выбрать другие службы Azure. Исполняющая среда, которую вы выбрали ранее, определяет доступный тип целевого объекта развертывания в службе Azure.

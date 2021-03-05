@@ -12,12 +12,12 @@ ms.custom:
 - mqtt
 - 'Role: IoT Device'
 - 'Role: Cloud Development'
-ms.openlocfilehash: 173e6e125387ba7d2755d9fff9387af0be21fffc
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.openlocfilehash: 13598925702aeca4a06135a910e3be540083a2b6
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101095247"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102211759"
 ---
 # <a name="understand-and-use-azure-iot-hub-sdks"></a>Понимание и использование пакетов SDK для Центра Интернета вещей Azure
 
@@ -78,14 +78,14 @@ ms.locfileid: "101095247"
 * добавление в проект [Maven](https://github.com/Azure/azure-iot-sdk-java/blob/master/doc/java-devbox-setup.md#for-the-device-sdk);
 * [Исходный код](https://github.com/Azure/azure-iot-sdk-java)
 * [Справочник по API](/java/api/com.microsoft.azure.sdk.iot.device)
-* [Справочник по модулям](/java/api/com.microsoft.azure.sdk.iot.device.moduleclient?view=azure-java-stable&preserve-view=true)
+* [Справочник по модулям](/java/api/com.microsoft.azure.sdk.iot.device.moduleclient)
 
 Пакет SDK для устройств Azure IoT для Node.js:
 
 * установка из [npm](https://www.npmjs.com/package/azure-iot-device);
 * [Исходный код](https://github.com/Azure/azure-iot-sdk-node)
 * [Справочник по API](/javascript/api/azure-iot-device/?view=azure-iot-typescript-latest&preserve-view=true)
-* [Справочник по модулям](/javascript/api/azure-iot-device/moduleclient?view=azure-node-latest&preserve-view=true)
+* [Справочник по модулям](/javascript/api/azure-iot-device/moduleclient)
 
 Пакет SDK для устройств Azure IoT для Python:
 
@@ -165,12 +165,12 @@ ms.locfileid: "101095247"
 
 * добавление в проект [Maven](https://github.com/Azure/azure-iot-sdk-java/blob/master/doc/java-devbox-setup.md#for-the-service-sdk);
 * [Исходный код](https://github.com/Azure/azure-iot-sdk-java/blob/master/provisioning)
-* [Справочник по API](/java/api/com.microsoft.azure.sdk.iot.provisioning.device?view=azure-java-stable&preserve-view=true)
+* [Справочник по API](/java/api/com.microsoft.azure.sdk.iot.provisioning.device)
 
 Устройство подготовки Azure и пакеты SDK службы для Node.js:
 
 * [Исходный код](https://github.com/Azure/azure-iot-sdk-node/tree/master/provisioning)
-* [Справочник по API](/javascript/api/overview/azure/iothubdeviceprovisioning?view=azure-node-latest&preserve-view=true)
+* [Справочник по API](/javascript/api/overview/azure/iothubdeviceprovisioning)
 * Скачивание [пакета SDK для устройств](https://badge.fury.io/js/azure-iot-provisioning-device) и [пакета SDK службы](https://badge.fury.io/js/azure-iot-provisioning-service) из npm
 
 Устройство подготовки Azure и пакеты SDK службы для Python:
@@ -178,7 +178,7 @@ ms.locfileid: "101095247"
 * [Исходный код](https://github.com/Azure/azure-iot-sdk-python)
 * Скачивание [пакета SDK для устройств](https://pypi.org/project/azure-iot-device/) и [пакета SDK службы](https://pypi.org/project/azure-iothub-provisioningserviceclient/) из pip
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Пакеты SDK для Azure IoT также предоставляют набор инструментов для разработки:
 

@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.subservice: qna-maker
 ms.topic: reference
 ms.date: 11/9/2020
-ms.openlocfilehash: c35306d3e0d874218b9ea03fbfeaaff722eacf76
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.openlocfilehash: da46084c8c2616284c31ef155927e8dbcbd19e0e
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98896466"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209365"
 ---
 # <a name="service-configuration"></a>Конфигурация службы
 
@@ -52,7 +52,7 @@ QnA Maker использует службу приложений для пред
 
 ## <a name="change-azure-cognitive-search"></a>Изменение Когнитивный поиск Azure
 
-Узнайте [, как изменить службу когнитивный Поиск,](./how-to/set-up-qnamaker-service-azure.md#configure-qna-maker-to-use-different-cognitive-search-resource) связанную со службой QnA Maker.
+Узнайте [, как изменить службу когнитивный Поиск,](./how-to/configure-QnA-Maker-resources.md#configure-qna-maker-to-use-different-cognitive-search-resource) связанную со службой QnA Maker.
 
 ## <a name="change-default-answer"></a>Изменение ответа по умолчанию
 

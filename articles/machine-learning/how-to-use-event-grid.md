@@ -11,12 +11,12 @@ ms.author: shipatel
 author: shivp950
 ms.reviewer: larryfr
 ms.date: 05/11/2020
-ms.openlocfilehash: 06b871d29c26241c38be27c4ace8ab7461834fd1
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 9dc7c0a476f57048c7caefb6001918d314c991ee
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101655723"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209702"
 ---
 # <a name="trigger-applications-processes-or-cicd-workflows-based-on-azure-machine-learning-events-preview"></a>Активация приложений, процессов или процессов CI/CD на основе событий Машинное обучение Azure (Предварительная версия)
 
@@ -59,7 +59,7 @@ ms.locfileid: "101655723"
 
 При настройке событий можно применять фильтры только для запуска на конкретных данных событий. В приведенном ниже примере для событий изменения состояния выполнения можно выполнить фильтрацию по типам выполнения. Это событие активируется только при соблюдении условий. Сведения о данных событий, по которым можно выполнять фильтрацию, см. в статье [Схема сетки событий Машинного обучения Azure](../event-grid/event-schema-machine-learning.md). 
 
-Подписки для Машинное обучение Azure событий защищаются с помощью управления доступом на основе ролей Azure (Azure RBAC). Создавать, обновлять и удалять подписки на события могут только [участники или владельцы](how-to-assign-roles.md#default-roles) рабочей области.  Фильтры могут применяться к подпискам на события во время [создания](/cli/azure/eventgrid/event-subscription?view=azure-cli-latest&preserve-view=true) подписки на событие или позже. 
+Подписки для Машинное обучение Azure событий защищаются с помощью управления доступом на основе ролей Azure (Azure RBAC). Создавать, обновлять и удалять подписки на события могут только [участники или владельцы](how-to-assign-roles.md#default-roles) рабочей области.  Фильтры могут применяться к подпискам на события во время [создания](/cli/azure/eventgrid/event-subscription) подписки на событие или позже. 
 
 
 1. Перейдите к порталу Azure, выберите там новую или существующую подписку. 
@@ -130,7 +130,7 @@ ms.locfileid: "101655723"
 
 ### <a name="set-up-with-the-cli"></a>Настройка с помощью CLI
 
-Можно либо установить последнюю версию [Azure CLI](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest), либо использовать Azure Cloud Shell, предоставляемый в рамках подписки Azure.
+Можно либо установить последнюю версию [Azure CLI](/cli/azure/install-azure-cli), либо использовать Azure Cloud Shell, предоставляемый в рамках подписки Azure.
 
 Чтобы установить расширение Сетки событий, выполните следующую команду в CLI:
 

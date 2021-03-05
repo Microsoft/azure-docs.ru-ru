@@ -6,12 +6,12 @@ ms.topic: overview
 author: bwren
 ms.author: bwren
 ms.date: 02/10/2021
-ms.openlocfilehash: 45cbd0fc2a3a6a059274f33e25b577fde1f4a4ab
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: b21e5ea8e25844e3e025915b0b9f15162c642f25
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100585529"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101713445"
 ---
 # <a name="whats-new-in-azure-monitor-documentation"></a>Что нового в документации по Azure Monitor?
 
@@ -22,15 +22,15 @@ ms.locfileid: "100585529"
 ### <a name="general"></a>Общие сведения 
 - [Часто задаваемые вопросы об Azure Monitor](faq.md) — добавлена запись со сведениями об устройствах для Application Insights.
 ### <a name="agents"></a>Агенты  
-- [Сбор трассировки событий Windows (ETW) для анализа журналов Azure Monitor](platform/data-sources-event-tracing-windows.md) — новая статья.
-- [Правила сбора данных в Azure Monitor (предварительная версия)](platform/data-collection-rule-overview.md) — добавлены ссылки на примеры PowerShell и CLI.
+- [Сбор трассировки событий Windows (ETW) для анализа журналов Azure Monitor](./agents/data-sources-event-tracing-windows.md) — новая статья.
+- [Правила сбора данных в Azure Monitor (предварительная версия)](./agents/data-collection-rule-overview.md) — добавлены ссылки на примеры PowerShell и CLI.
 
 ### <a name="alerts"></a>видны узлы  
-- [Настройка Azure для подключения средств ITSM с помощью безопасного экспорта](platform/itsm-connector-secure-webhook-connections-azure-configuration.md) — новая статья.
-- [Ошибки состояния соединителя в панели мониторинга ITSMC](platform/itsmc-dashboard-errors.md) — новая статья.
-- [Изучение ошибок с помощью панели мониторинга ITSMC](platform/itsmc-dashboard.md) — новая статья.
-- [Устранение неполадок с оповещениями метрик Azure](platform/alerts-troubleshoot-metric.md) — добавлены разделы для динамических порогов.
-- [Устранение неполадок с Соединителем управления ИТ-услугами](platform/itsmc-troubleshoot-overview.md) — новая статья.
+- [Настройка Azure для подключения средств ITSM с помощью безопасного экспорта](./alerts/itsm-connector-secure-webhook-connections-azure-configuration.md) — новая статья.
+- [Ошибки состояния соединителя в панели мониторинга ITSMC](./alerts/itsmc-dashboard-errors.md) — новая статья.
+- [Изучение ошибок с помощью панели мониторинга ITSMC](./alerts/itsmc-dashboard.md) — новая статья.
+- [Устранение неполадок с оповещениями метрик Azure](./alerts/alerts-troubleshoot-metric.md) — добавлены разделы для динамических порогов.
+- [Устранение неполадок с Соединителем управления ИТ-услугами](./alerts/itsmc-troubleshoot-overview.md) — новая статья.
 
 ### <a name="application-insights"></a>Application Insights
 - [Корреляция телеметрии в Azure Application Insights](app/correlation.md) — добавлена корреляция трассировки, если один модуль вызывает другой в OpenCensus Python.
@@ -47,25 +47,25 @@ ms.locfileid: "100585529"
 - [Azure Monitor для Azure Data Explorer (предварительная версия)](insights/data-explorer.md) — новая статья.
 
 ### <a name="logs"></a>Журналы    
-- [Управляемый клиентом ключ для Azure Monitor](platform/customer-managed-keys.md) — представлено управляемое удостоверение, назначаемое пользователем.
-- [Выделенные кластеры журналов Azure Monitor](log-query/logs-dedicated-clusters.md) — обновлен код ответа.
-- [Запросы между службами Azure Monitor и Azure Data Explorer (предварительная версия)](platform/azure-monitor-troubleshooting-logs.md) — новая статья.
+- [Управляемый клиентом ключ для Azure Monitor](./logs/customer-managed-keys.md) — представлено управляемое удостоверение, назначаемое пользователем.
+- [Выделенные кластеры журналов Azure Monitor](./logs/logs-dedicated-clusters.md) — обновлен код ответа.
+- [Запросы между службами Azure Monitor и Azure Data Explorer (предварительная версия)](/azure/azure-monitor/platform/azure-data-explorer-monitor-cross-service-query) — новая статья.
 
 ### <a name="metrics"></a>Метрики
-- [Описание агрегирования и отображения метрик в Метриках Azure Monitor](platform/metrics-aggregation-explained.md) — новая статья.
+- [Описание агрегирования и отображения метрик в Метриках Azure Monitor](./essentials/metrics-aggregation-explained.md) — новая статья.
 
 ### <a name="platform-logs"></a>Журналы платформы
-- [Поддерживаемые службы и категории журналов ресурсов в Azure Monitor](platform/resource-logs-categories.md) — новая статья.
+- [Поддерживаемые службы и категории журналов ресурсов в Azure Monitor](./essentials/resource-logs-categories.md) — новая статья.
 
 ### <a name="visualizations"></a>Визуализации
-- [Источники данных книг Azure Monitor](platform/workbooks-data-sources.md) — добавлены сведения о слиянии и анализе изменений.
+- [Источники данных книг Azure Monitor](./visualize/workbooks-data-sources.md) — добавлены сведения о слиянии и анализе изменений.
 
 
 ## <a name="december-2020"></a>Декабрь 2020 г.
 
 ### <a name="general"></a>Общее
 - [Ключ Azure Monitor, управляемый клиентом](logs/customer-managed-keys.md): добавлены сообщения об ошибках.
-- [Партнеры, которые интегрируют решения с Azure Monitor](/partners.md): добавлен раздел об интеграции с концентратором событий.
+- [Партнеры, которые интегрируют решения с Azure Monitor](partners.md): добавлен раздел об интеграции с концентратором событий.
 
 ### <a name="agents"></a>Агенты
 - [Запрос между несколькими ресурсами Azure Data Explorer с использованием Azure Monitor](logs/azure-monitor-data-explorer-proxy.md): новая статья.
@@ -96,7 +96,7 @@ ms.locfileid: "100585529"
 - [Устранение неполадок с Application Insights в Azure Monitor для Java](app/java-standalone-troubleshoot.md): новая статья.
 
 ### <a name="containers"></a>Контейнеры
-- [Отчеты в Azure Monitor для контейнеров](insights/container-insights-reports.md): новая статья.
+- [Отчеты в Container insights](insights/container-insights-reports.md) — новая статья.
 
 ### <a name="logs"></a>Журналы
 - [Выделенные кластеры журналов Azure Monitor](logs/logs-dedicated-clusters.md): добавлены автоматические команды, методы для отмены связи и удаления, а также сведения об устранении неполадок.
@@ -168,16 +168,16 @@ ms.locfileid: "100585529"
 
 ### <a name="virtual-machines"></a>Виртуальные машины
 
-- [Общие сведения о включении Azure Monitor для виртуальных машин](vm/vminsights-enable-overview.md) — добавлены поддерживаемые регионы.
+- [Общие сведения о включении VM insights](vm/vminsights-enable-overview.md) — добавлены поддерживаемые регионы.
 
-Новые статьи о работоспособности гостевых виртуальных машин в Azure Monitor (предварительная версия)
+Новые статьи о VM insights guest health (предварительная версия)
 
-- [Работоспособность гостевых виртуальных машин в Azure Monitor (предварительная версия)](vm/vminsights-health-overview.md)
-- [Оповещения работоспособности гостевых виртуальных машин в Azure Monitor (предварительная версия)](vm/vminsights-health-alerts.md)
-- [Настройка мониторинга в работоспособности гостевых виртуальных машин в Azure Monitor (предварительная версия)](vm/vminsights-health-configure.md)
-- [Настройка мониторинга в работоспособности гостевых виртуальных машин в Azure Monitor с помощью правил сбора данных (предварительная версия)](vm/vminsights-health-configure-dcr.md)
-- [Включение работоспособности гостевых виртуальных машин в Azure Monitor (предварительная версия)](vm/vminsights-health-enable.md)
-- [Устранение неполадок работоспособности гостевых виртуальных машин в Azure Monitor (предварительная версия)](vm/vminsights-health-troubleshoot.md)
+- [VM insights guest health (предварительная версия)](vm/vminsights-health-overview.md)
+- [Оповещения VM insights guest health (предварительная версия)](vm/vminsights-health-alerts.md)
+- [Настройка мониторинга в VM insights guest health (предварительная версия)](vm/vminsights-health-configure.md)
+- [Настройка мониторинга в VM insights guest health с помощью правил сбора данных (предварительная версия)](vm/vminsights-health-configure-dcr.md)
+- [Включение VM insights guest health (предварительная версия)](vm/vminsights-health-enable.md)
+- [Устранение неполадок с VM insights guest health (предварительная версия)](vm/vminsights-health-troubleshoot.md)
 
 
 
@@ -210,9 +210,9 @@ ms.locfileid: "100585529"
 - [Начало работы с автомасштабированием в Azure](autoscale/autoscale-get-started.md) — добавлен раздел о перемещении автомасштабирования в другой регион.
 
 ### <a name="containers"></a>Контейнеры
-- [Настройка мониторинга PV с помощью Azure Monitor для контейнеров](containers/container-insights-persistent-volumes.md) — новая статья.
-- [Управление Azure Monitor для агента контейнеров](containers/container-insights-manage-agent.md) — добавлена поддержка для кластера Kubernetes с включенной службой Azure Arc.
-- [Оповещения о метриках от Azure Monitor для контейнеров](containers/container-insights-metric-alerts.md) — добавлена поддержка для кластера Kubernetes с Azure Arc.
+- [Настройка мониторинга постоянного тома с помощью Container Insights](containers/container-insights-persistent-volumes.md) — новая статья.
+- [Управление агентом Container insights](containers/container-insights-manage-agent.md) — включена поддержка кластера Kubernetes с поддержкой Azure Arc.
+- [Оповещения о метриках из Container insights](containers/container-insights-metric-alerts.md) — включена поддержка кластера Kubernetes с поддержкой Azure Arc.
 
 ### <a name="insights-and-solutions"></a>Полезные сведения и решения
 - [Соединитель управления ИТ-услугами —безопасный экспорт в Azure Monitor](alerts/it-service-management-connector-secure-webhook-connections.md) — добавлен раздел о ServiceNow.
@@ -234,7 +234,7 @@ ms.locfileid: "100585529"
 ### <a name="virtual-machines"></a>Виртуальные машины
 - [Анализ изменений в Azure Monitor для виртуальных машин](vm/vminsights-change-analysis.md) — новая статья.
 - [Общие сведения о включении Azure Monitor для виртуальных машин](vm/vminsights-enable-overview.md) — добавлены поддерживаемые регионы.
-- [Обновление Azure Monitor для контейнеров метрик](containers/container-insights-update-metrics.md) — добавлена поддержка кластера Kubernetes с Azure Arc.
+- [Обновление Container insights для метрик](containers/container-insights-update-metrics.md) — включена поддержка кластера Kubernetes с поддержкой Azure Arc.
 
 
 
@@ -265,8 +265,8 @@ ms.locfileid: "100585529"
 
 
 ### <a name="containers"></a>Контейнеры
-- [Настройка кластера Kubernetes с поддержкой Azure Arc с помощью Azure Monitor для контейнеров](containers/container-insights-enable-arc-enabled-clusters.md) — добавлено руководство по активации мониторинга с помощью субъекта-службы.
-- [Сбор метрик развертывания и HPA с помощью Azure Monitor для контейнеров](containers/container-insights-deployment-hpa-metrics.md) — новая статья.
+- [Настройка кластера Kubernetes с поддержкой Azure Arc с помощью Container insights](containers/container-insights-enable-arc-enabled-clusters.md) — добавлено руководство по включению мониторинга с помощью субъекта-службы.
+- [Сбор метрик развертывания и HPA с помощью Container insights](containers/container-insights-deployment-hpa-metrics.md) — новая статья.
 
 ### <a name="insights-and-solutions"></a>Полезные сведения и решения
 - [Azure Monitor для Кэша Azure для Redis](insights/redis-cache-insights-overview.md) — удалено обозначение предварительной версии.
@@ -319,7 +319,7 @@ ms.locfileid: "100585529"
 
 
 #### <a name="new-and-updated-articles-from-restructure-of-agent-content"></a>Новые и измененные статьи, посвященные реструктуризации содержимого агента
-- [Общие сведения о включении Azure Monitor для виртуальных машин](vm/vminsights-enable-overview.md)
+- [Общие сведения о включении VM Insights](vm/vminsights-enable-overview.md)
 - [Установка агента Log Analytics на компьютерах Linux](agents/agent-linux.md)
 - [Установка агента Log Analytics на компьютерах Windows](agents/agent-windows.md)
 - [Общие сведения об агенте Log Analytics](agents/log-analytics-agent.md)
@@ -344,7 +344,7 @@ ms.locfileid: "100585529"
 
 
 ### <a name="containers"></a>Контейнеры
-- [Сбор метрик развертывания и HPA с помощью Azure Monitor для контейнеров](containers/container-insights-deployment-hpa-metrics.md) — новая статья.
+- [Сбор метрик развертывания и HPA с помощью Container insights](containers/container-insights-deployment-hpa-metrics.md) — новая статья.
 
 ### <a name="insights"></a>Аналитика
 - [Решения для мониторинга в Azure Monitor](insights/solutions.md) — обновлена для нового пользовательского интерфейса.
@@ -372,7 +372,7 @@ ms.locfileid: "100585529"
 ## <a name="july-2020"></a>Июль 2020 г.
 
 ### <a name="general"></a>Общие сведения
-- [Развертывание Azure Monitor](deploy-scale.md) — реструктуризация содержимого подключения Azure Monitor для виртуальных машин.
+- [Развертывание Azure Monitor](deploy-scale.md) — реструктуризация содержимого об VM insights.
 - [Использование Приватного канала Azure для безопасного подключения сетей к Azure Monitor](logs/private-link-security.md) — добавлен раздел об ограничениях.
 
 ### <a name="alerts"></a>видны узлы
@@ -389,8 +389,8 @@ ms.locfileid: "100585529"
 - [Устранение неполадок с помощью Azure Application Insights Profiler](app/profiler-troubleshooting.md) — добавлено примечание об ошибке при запуске профилировщика для приложений ASP.NET Core в Службе приложений Azure. 
 
 ### <a name="containers"></a>Контейнеры
-- [Оповещения журнала от Azure Monitor для контейнеров](containers/container-insights-log-alerts.md) — новая статья.
-- [Оповещения о метриках от Azure Monitor для контейнеров](containers/container-insights-metric-alerts.md) — новая статья.
+- [Оповещения журналов из Container insights](containers/container-insights-log-alerts.md) — новая статья.
+- [Оповещения метрик из Container insights](containers/container-insights-metric-alerts.md) — новая статья.
 
 ### <a name="logs"></a>Журналы
 - [Ключ Azure Monitor, управляемый клиентом](logs/customer-managed-keys.md) — добавлено сообщение об ошибке и раздел с конфигурацией CMK для запросов.
@@ -408,18 +408,18 @@ ms.locfileid: "100585529"
 
 ### <a name="virtual-machines"></a>Виртуальные машины
 
-Новые и измененные статьи, посвященные реструктуризации содержимого Azure Monitor для виртуальных машин
+Новые и измененные статьи, посвященные реструктуризации содержимого об VM insights
 
-- [Общие сведения об Azure Monitor для виртуальных машин](vm/vminsights-overview.md)
-- [Настройка рабочей области Log Analytics для Azure Monitor для виртуальных машин](vm/vminsights-configure-workspace.md)
+- [Что такое VM Insights?](vm/vminsights-overview.md)
+- [Настройка рабочей области Log Analytics для VM Insights](vm/vminsights-configure-workspace.md)
 - [Подключение компьютеров Linux к Azure Monitor](agents/agent-linux.md)
 - [Включение Azure Monitor для гибридной среды](vm/vminsights-enable-hybrid.md)
 - [Включение Azure Monitor для одной виртуальной машины или масштабируемого набора виртуальных машин на портале Azure](vm/vminsights-enable-portal.md)
-- [Включение Azure Monitor для виртуальных машин с помощью Политики Azure](./vm/vminsights-enable-policy.md)
-- [Общие сведения о включении Azure Monitor для виртуальных машин](vm/vminsights-enable-overview.md)
-- [Включение Azure Monitor для виртуальных машин с помощью PowerShell](vm/vminsights-enable-powershell.md)
-- [Включение Azure Monitor для виртуальных машин с помощью шаблонов Resource Manager](vm/vminsights-enable-resource-manager.md)
-- [Включение Azure Monitor для виртуальных машин с помощью PowerShell или шаблонов](./vm/vminsights-enable-powershell.md)
+- [Включение VM insights с помощью Политики Azure](./vm/vminsights-enable-policy.md)
+- [Общие сведения о включении VM Insights](vm/vminsights-enable-overview.md)
+- [Включение VM insights с помощью PowerShell](vm/vminsights-enable-powershell.md)
+- [Включение VM insights с помощью шаблонов Resource Manager](vm/vminsights-enable-resource-manager.md)
+- [Включение VM insights с помощью PowerShell или шаблонов](./vm/vminsights-enable-powershell.md)
 
 
 ### <a name="visualizations"></a>Визуализации
@@ -453,9 +453,9 @@ ms.locfileid: "100585529"
 
 ### <a name="containers"></a>Контейнеры
 - [Как отключить мониторинг гибридного кластера](containers/container-insights-optout-hybrid.md) — добавлен раздел для Kubernetes с поддержкой Arc.
-- [Настройка кластера Kubernetes с поддержкой Azure Arc с помощью Azure Monitor для контейнеров](containers/container-insights-enable-arc-enabled-clusters.md) — новая статья.
-- [Настройка Azure Red Hat OpenShift версии 4.x с помощью Azure Monitor для контейнеров](containers/container-insights-azure-redhat4-setup.md) — обновлены предварительные требования.
-- [Настройка функции Live Data в Azure Monitor для контейнеров (предварительная версия)](containers/container-insights-livedata-setup.md) — удалено примечание о том, что функция недоступна в Azure для государственных организаций США.
+- [Настройка кластера Kubernetes с поддержкой Azure Arc с помощью Container insights](containers/container-insights-enable-arc-enabled-clusters.md) — новая статья.
+- [Настройка Azure Red Hat OpenShift версии 4.x с помощью Container insights](containers/container-insights-azure-redhat4-setup.md) — обновлены предварительные требования.
+- [Настройка Container insights Live Data (предварительная версия)](containers/container-insights-livedata-setup.md) — удалено примечание о том, что компонент недоступен в Azure для государственных организаций США.
 
 ### <a name="insights"></a>Аналитика
 - [Вопросы и ответы по решению "Монитор производительности сети" (Azure)](insights/network-performance-monitor-faq.md) — добавлены вопросы и ответы по мониторингу ExpressRoute.
@@ -495,9 +495,9 @@ ms.locfileid: "100585529"
 - [Просмотр событий в журнале действий Azure (Azure Monitor)](./essentials/activity-log.md#view-the-activity-log)
 
 ### <a name="virtual-machines"></a>Виртуальные машины
-- [Включение Azure Monitor для виртуальных машин на портале Azure](./vm/vminsights-enable-portal.md) — добавлены сведения об Azure Arc.
-- [Общие сведения о включении Azure Monitor для виртуальных машин](vm/vminsights-enable-overview.md) — добавлены сведения об Azure Arc.
-- [Общие сведения об Azure Monitor для виртуальных машин](vm/vminsights-overview.md) — добавлены сведения об Azure Arc.
+- [Включение VM insights на портале Azure](./vm/vminsights-enable-portal.md) — добавлены сведения об Azure Arc.
+- [Общие сведения о включении VM insights](vm/vminsights-enable-overview.md) — добавлены сведения об Azure Arc.
+- [Что такое VM Insights?](vm/vminsights-overview.md) — добавлены сведения об Azure Arc.
 
 
 ### <a name="visualizations"></a>Визуализации
@@ -523,8 +523,8 @@ ms.locfileid: "100585529"
 - [Примеры шаблонов Resource Manager для службы Azure Monitor](/resource-manager-samples.md)
 - [Примеры шаблонов Resource Manager для групп действий](alerts/resource-manager-action-groups.md)
 - [Примеры шаблонов Resource Manager для агентов](agents/resource-manager-agent.md)
-- [Примеры шаблонов Resource Manager для Azure Monitor для контейнеров](containers/resource-manager-container-insights.md)
-- [Примеры шаблонов Resource Manager для службы Azure Monitor для виртуальных машин](vm/resource-manager-vminsights.md)
+- [Примеры шаблонов Resource Manager для Container insights](containers/resource-manager-container-insights.md)
+- [Примеры шаблонов Resource Manager для VM insights](vm/resource-manager-vminsights.md)
 - [Примеры шаблонов Resource Manager для параметров диагностики](essentials/resource-manager-diagnostic-settings.md)
 - [Примеры шаблонов Resource Manager для рабочих областей Log Analytics](logs/resource-manager-workspace.md)
 - [Примеры шаблонов Resource Manager для запросов журнала](logs/resource-manager-log-queries.md)
@@ -559,10 +559,10 @@ ms.locfileid: "100585529"
 
 
 ### <a name="containers"></a>Контейнеры
-- [Включение Azure Monitor для контейнеров](containers/container-insights-onboard.md) — обновленная таблица конфигурации брандмауэра.
-- [Обновление Azure Monitor для контейнеров для метрик](containers/container-insights-update-metrics.md) — обновление для использования управляемых удостоверений для сбора метрик.
-- [Затраты на мониторинг для Azure Monitor для контейнеров](containers/container-insights-cost.md) — новая статья.
-- [Настройка Azure Monitor для динамических данных контейнеров (предварительная версия)](containers/container-insights-livedata-setup.md) — поддержка привязки новой роли кластера.
+- [Включение Container insights](containers/container-insights-onboard.md) — обновленная таблица конфигурации брандмауэра.
+- [Обновление Container insights для метрик](containers/container-insights-update-metrics.md) — добавлены сведения об использовании управляемых удостоверений для сбора метрик.
+- [Затраты на мониторинг для Container insights](containers/container-insights-cost.md) — новая статья.
+- [Настройка Container insights Live Data (предварительная версия)](containers/container-insights-livedata-setup.md) — включена поддержка привязки новой роли кластера.
 
 ### <a name="insights"></a>Аналитика
 - [Azure Monitor для Кэша Azure для Redis (предварительная версия)](insights/redis-cache-insights-overview.md) — новая статья.
@@ -588,12 +588,12 @@ ms.locfileid: "100585529"
 
 
 ### <a name="virtual-machines"></a>Виртуальные машины
-- [Включение Azure Monitor для виртуальных машин](vm/vminsights-enable-overview.md) — добавлены поддерживаемые версии Ubuntu Server. Добавлены поддерживаемые регионы для рабочей области Log Analytics.
-- [Создание диаграммы производительности с помощью службы "Azure Monitor для виртуальных машин"](vm/vminsights-performance.md) — добавлен раздел ограничений для недоступных метрик.
+- [Общие сведения о включении VM insights](vm/vminsights-enable-overview.md) — добавлены поддерживаемые версии Ubuntu Server. Добавлены поддерживаемые регионы для рабочей области Log Analytics.
+- [Создание диаграммы производительности с помощью VM insights](vm/vminsights-performance.md) — добавлен раздел с ограничениями для недоступных метрик.
 
 ### <a name="visualizations"></a>Визуализации
 - [Книги Azure Monitor и шаблоны Azure Resource Manager](visualize/workbooks-automate.md) — добавлено обновление Resource Manager для развертывания шаблона книги.
-- [Группы книг Azure Monitor](platform/workbooks-groups.md) — новая статья.
+- [Группы книг Azure Monitor](./visualize/workbooks-groups.md) — новая статья.
 - [Книги Azure Monitor — преобразование данных JSON с помощью JSONPath](visualize/workbooks-jsonpath.md) — новая статья.
 
 
@@ -623,7 +623,7 @@ ms.locfileid: "100585529"
 
 ### <a name="containers"></a>Контейнеры
 
-- [Настройка Azure Monitor для контейнеров в Azure Red Hat OpenShift 4.х](containers/container-insights-azure-redhat4-setup.md) — новая статья.
+- [Настройка Azure Red Hat OpenShift версии 4.x с помощью Container insights](containers/container-insights-azure-redhat4-setup.md) — новая статья.
 - [Как вручную исправить проблемы с синхронизацией ServiceNow](alerts/itsmc-resync-servicenow.md) — новая статья.
 - [Как отключить мониторинг кластера Azure и Red Hat OpenShift v4](containers/container-insights-optout-openshift-v4.md) — новая статья.
 - [Как отключить мониторинг кластера Red Hat OpenShift версии 3 в Azure](containers/container-insights-optout-openshift-v3.md) — новая статья.
@@ -671,8 +671,8 @@ ms.locfileid: "100585529"
 
 ### <a name="containers"></a>Контейнеры
 
-- [Часто задаваемые вопросы Azure Monitor](faq.md) — обновление для контейнеров Azure Monitor.
-- [Настройка мониторинга GPU с помощью Azure Monitor для контейнеров](containers/container-insights-gpu-monitoring.md) — новая статья.
+- [Вопросы и ответы об Azure Monitor](faq.md) — добавлены сведения о Container insights.
+- [Настройка мониторинга GPU с помощью Container Insights](containers/container-insights-gpu-monitoring.md) — новая статья.
 
 ### <a name="insights"></a>Аналитика
 
@@ -696,18 +696,18 @@ ms.locfileid: "100585529"
 ### <a name="virtual-machines"></a>Виртуальные машины
 
 - [Мониторинг виртуальной машины Azure с помощью Azure Monitor](vm/monitor-vm-azure.md) — новая статья.
-- [Краткое руководство. Мониторинг виртуальных машин Azure с помощью Azure Monitor](vm/quick-monitor-azure-vm.md) — обновлен для добавления Azure Monitor для виртуальных машин.
-- [Оповещения от Azure Monitor для виртуальных машин](vm/vminsights-alerts.md) — новая статья.
-- [Общие сведения о включении Azure Monitor для виртуальных машин](vm/vminsights-enable-overview.md) — обновлены ссылки для скачивания агентов.
+- [Краткое руководство. Мониторинг виртуальных машин Azure с помощью Azure Monitor](vm/quick-monitor-azure-vm.md) — добавлены сведения о VM insights.
+- [Оповещения из VM Insights](vm/vminsights-alerts.md) — новая статья.
+- [Общие сведения о включении VM insights](vm/vminsights-enable-overview.md) — обновлены ссылки на скачивание агента.
 
-Общие обновления для общей доступности Azure Monitor для виртуальных машин
+Общие обновления для общедоступной версии VM Insights
 
-- [Общие сведения об Azure Monitor для виртуальных машин](vm/vminsights-overview.md)
-- [Azure Monitor для виртуальных машин (GA): вопросы и ответы](vm/vminsights-ga-release-faq.md) 
-- [Включение Azure Monitor для виртуальных машин с помощью Политики Azure](./vm/vminsights-enable-policy.md) 
-- [Создание диаграммы производительности с помощью службы "Azure Monitor для виртуальных машин"](vm/vminsights-performance.md)
-- [Как запрашивать журналы из Azure Monitor для виртуальных машин](vm/vminsights-log-search.md)
-- [Просмотр зависимостей приложений с помощью службы "Azure Monitor для виртуальных машин"](vm/vminsights-maps.md) 
+- [Что такое VM Insights?](vm/vminsights-overview.md)
+- [Вопросы и ответы о VM Insights (общедоступная версия)](vm/vminsights-ga-release-faq.md) 
+- [Включение VM insights с помощью Политики Azure](./vm/vminsights-enable-policy.md) 
+- [Создание диаграммы производительности с помощью VM Insights](vm/vminsights-performance.md)
+- [Запрашивание журналов из VM Insights](vm/vminsights-log-search.md)
+- [Просмотр зависимостей приложений с помощью VM Insights](vm/vminsights-maps.md) 
 
 ### <a name="visualizations"></a>Визуализации
 
@@ -735,13 +735,13 @@ ms.locfileid: "100585529"
 
 ### <a name="insights-and-solutions"></a>Полезные сведения и решения
 
-#### <a name="azure-monitor-for-containers"></a>Azure Monitor для контейнеров
+#### <a name="container-insights"></a>Container insights
 
-- [Интеграция Azure Active Directory со Службой Azure Kubernetes](../aks/azure-ad-integration-cli.md) — добавлено примечание о создании клиентского приложения для поддержки кластера с включенной функцией Kubernetes RBAC, обеспечивающего поддержку Azure Monitor для контейнеров.
+- [Интеграция Azure Active Directory со Службой Azure Kubernetes](../aks/azure-ad-integration-cli.md) — добавлено примечание о создании клиентского приложения для включения поддержки кластера Kubernetes с функцией RBAC и поддержки Container insights.
 
-#### <a name="azure-monitor-for-vms"></a>Azure Monitor для виртуальных машин
+#### <a name="vm-insights"></a>VM insights
 
-- [Часто задаваемые вопросы об Azure Monitor для виртуальных машин (общедоступная версия)](vm/vminsights-ga-release-faq.md) — изменение способа хранения данных производительности.
+- [Вопросы и ответы о VM insights (общедоступная версия)](vm/vminsights-ga-release-faq.md) — изменен способ хранения данных о производительности.
 
 #### <a name="office-365"></a>Office 365
 
@@ -796,20 +796,20 @@ ms.locfileid: "100585529"
 
 ### <a name="insights-and-solutions"></a>Полезные сведения и решения
 
-#### <a name="azure-monitor-for-containers"></a>Azure Monitor для контейнеров
+#### <a name="container-insights"></a>Container insights
 
-- [Настройка Azure Monitor для сбора данных агента контейнеров](containers/container-insights-agent-config.md) — добавлены сведения об обновлении агента в Azure Red Hat OpenShift и дополнительные сведения о различиях методов обновления агента.
-- [Создание оповещений о производительности для контейнеров Azure Monitor](./containers/container-insights-log-alerts.md) — пересмотрены сведения и обновлены инструкции для создания оповещения на основе данных о производительности, хранящихся в рабочей области, с помощью функции контекстных оповещений рабочей области.
-- [Использование мониторинга Kubernetes с Azure Monitor для контейнеров](containers/container-insights-analyze.md) — обновлены статьи с общими сведениями и анализом, посвященные поддержке кластеров Kubernetes Windows.
-- [Настройка кластеров Azure Red Hat OpenShift с Azure Monitor для контейнеров](containers/container-insights-azure-redhat-setup.md) — добавлены сведения об обновлении агента в Azure Red Hat OpenShift и дополнительные сведения о различиях методов обновления агента.
-- [Настройка гибридных кластеров Kubernetes с Azure Monitor для контейнеров](containers/container-insights-hybrid-setup.md) — в статью добавлено описание дополнительной поддержки защищенного порта 10250 с помощью Kubelet cAdvisor.
-- [Как управлять Azure Monitor для агента контейнера](containers/container-insights-manage-agent.md) — обновлены сведения о поведении и конфигурации сбора метрик с помощью Azure Red Hat OpenShift в сравнении с другими типами кластеров Kubernetes.
-- [Настройка Azure Monitor для интеграции контейнеров Prometheus](containers/container-insights-prometheus-integration.md) — обновлены сведения о поведении и конфигурации сбора метрик с помощью Azure Red Hat OpenShift в сравнении с другими типами кластеров Kubernetes.
-- [Как обновить Azure Monitor для контейнеров метрик](containers/container-insights-update-metrics.md) — обновлены сведения о поведении и конфигурации сбора метрик с помощью Azure Red Hat OpenShift в сравнении с другими типами кластеров Kubernetes.
+- [Настройка сбора данных агента Container insights](containers/container-insights-agent-config.md) — добавлены сведения об обновлении агента в Azure Red Hat OpenShift и дополнительные сведения о разных методах обновления агента.
+- [Создание оповещений о производительности для Container insights](./containers/container-insights-log-alerts.md) — пересмотрены сведения и обновлены инструкции по созданию оповещения на основе данных о производительности, хранимых в рабочей области, с помощью функции контекстных оповещений рабочей области.
+- [Мониторинг Kubernetes с помощью Container insights](containers/container-insights-analyze.md) — обновлены статьи с общими и аналитическими сведениями, посвященные поддержке кластеров Kubernetes Windows.
+- [Настройка кластеров Azure Red Hat OpenShift с помощью Container insights](containers/container-insights-azure-redhat-setup.md) — добавлены сведения об обновлении агента в Azure Red Hat OpenShift и дополнительные сведения о разных методах обновления агента.
+- [Настройка гибридных кластеров Kubernetes с помощью Container insights](containers/container-insights-hybrid-setup.md) — добавлено описание дополнительной поддержки защищенного порта 10250 с использованием Kubelet cAdvisor.
+- [Управление агентом Container insights](containers/container-insights-manage-agent.md) — обновлены сведения о поведении и конфигурации сбора метрик с помощью Azure Red Hat OpenShift в сравнении с другими типами кластеров Kubernetes.
+- [Настройка Container insights для интеграции контейнеров Prometheus](containers/container-insights-prometheus-integration.md) — обновлены сведения о поведении и конфигурации извлечения метрик с помощью Azure Red Hat OpenShift в сравнении с другими типами кластеров Kubernetes.
+- [Обновление Container insights для метрик](containers/container-insights-update-metrics.md) — обновлены сведения о поведении и конфигурации извлечения метрик с помощью Azure Red Hat OpenShift в сравнении с другими типами кластеров Kubernetes.
 
-#### <a name="azure-monitor-for-vms"></a>Azure Monitor для виртуальных машин
+#### <a name="vm-insights"></a>VM insights
 
-- [Azure Monitor для виртуальных машин (общедоступная версия): часто задаваемые вопросы](vm/vminsights-ga-release-faq.md) — добавлены сведения об обновлении рабочей области и агентов до новой версии.
+- [Вопросы и ответы о VM insights (общедоступная версия)](vm/vminsights-ga-release-faq.md) — добавлены сведения об обновлении рабочей области и агентов до новой версии.
 
 #### <a name="office-365"></a>Office 365
 
@@ -860,10 +860,10 @@ ms.locfileid: "100585529"
 
 ### <a name="insights-and-solutions"></a>Полезные сведения и решения
 
-- [Azure Monitor для контейнеров: вопросы и ответы](./faq.md) — добавлен вопрос о полях "Образ" и "Имя".
+- [Вопросы и ответы о Container insights](./faq.md) — добавлен вопрос о полях "Образ" и "Имя".
 - [Решение Аналитики Azure SQL в Azure Monitor](insights/azure-sql.md) — обновлена поддержка ожидания базой данных управляемого экземпляра.
-- [Настройка Azure Monitor для сбора данных агента контейнера](containers/container-insights-agent-config.md) — добавлен параметр для enrich_container_logs.
-- [Настройка гибридных кластеров Kubernetes с Azure Monitor для контейнеров](containers/container-insights-hybrid-setup.md) — добавлен раздел "Устранение неполадок".
+- [Настройка сбора данных агента Container insights](containers/container-insights-agent-config.md) — добавлен параметр для enrich_container_logs.
+- [Настройка гибридных кластеров Kubernetes с помощью Container insights](containers/container-insights-hybrid-setup.md) — добавлен раздел, посвященный устранению неполадок.
 - [Мониторинг состояния репликации Active Directory с помощью Azure Monitor](insights/ad-replication-status.md) — обновлены предварительные требования к .NET Framework.
 - [Решение "Монитор производительности сети" в Azure](insights/network-performance-monitor.md) — добавлены поддерживаемые регионы.
 - [Оптимизация среды Active Directory с помощью Azure Monitor](insights/ad-assessment.md) — обновлены предварительные требования к .NET Framework.

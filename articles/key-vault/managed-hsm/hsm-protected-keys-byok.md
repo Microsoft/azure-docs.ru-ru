@@ -8,12 +8,12 @@ ms.service: key-vault
 ms.topic: conceptual
 ms.date: 02/04/2021
 ms.author: ambapat
-ms.openlocfilehash: 71cc36541b8809d93c84225edf771400d2878b4f
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: dd5b38a858ceba12f5d48f1782da5b85228c4b06
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100376060"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102212116"
 ---
 # <a name="import-hsm-protected-keys-to-managed-hsm-byok"></a>Импорт ключей, защищенных с АППАРАТным модулем безопасности, в управляемый HSM (BYOK)
 
@@ -56,7 +56,7 @@ ms.locfileid: "100376060"
 az login
 ```
 
-Дополнительные сведения о параметрах входа с помощью интерфейса командной строки см. в статье [Вход с помощью Azure CLI](/cli/azure/authenticate-azure-cli?view=azure-cli-latest&preserve-view=true).
+Дополнительные сведения о параметрах входа с помощью интерфейса командной строки см. в статье [Вход с помощью Azure CLI](/cli/azure/authenticate-azure-cli).
 
 ## <a name="supported-hsms"></a>Поддерживаемые модули HSM
 
@@ -70,7 +70,7 @@ az login
 |Securosys SA|Производитель, HSM как услуга|Семейство Primus HSM, Securosys Clouds HSM|[Новое средство BYOK и документация для Primus](https://www.securosys.com/primus-azure-byok)|
 |StorMagic|ISV (Enterprise Key Management System)|Несколько торговых марок и моделей HSM, в том числе<ul><li>Utimaco</li><li>Thales</li><li>nCipher</li></ul>Дополнительные сведения см. на [сайте StorMagic](https://stormagic.com/doc/svkms/Content/Integrations/Azure_KeyVault_BYOK.htm).|[SvKMS и Azure Key Vault (BYOK)](https://stormagic.com/doc/svkms/Content/Integrations/Azure_KeyVault_BYOK.htm)|
 |IBM|Изготовитель|IBM 476x, CryptoExpress|[IBM Enterprise Key Management Foundation](https://www.ibm.com/security/key-management/ekmf-bring-your-own-key-azure)|
-|Utimaco|Производитель,<br/>HSM как услуга|u. Trust якоря, Криптосервер|[Средство Утимако BYOK и рекомендации по интеграции](https://support.hsm.utimaco.com/support/downloads/byok)|
+|Utimaco|Производитель,<br/>HSM как услуга|u.trust Anchor, CryptoServer|[Инструмент Utimaco BYOK и руководство по интеграции](https://support.hsm.utimaco.com/support/downloads/byok)|
 ||||
 
 
@@ -82,7 +82,7 @@ az login
 |Целевой ключ|
 ||RSA|2048-разрядный<br />3072-разрядный<br />4096-разрядный|HSM от поставщика|Ключ для передачи в управляемый модуль HSM|
 ||EC|P-256<br />P-384<br />P-521|HSM от поставщика|Ключ для передачи в управляемый модуль HSM|
-||Симметричный ключ (Oct-HSM)|128-разрядный<br />192-разрядный<br />256-разрядный|HSM от поставщика|Ключ для передачи в управляемый модуль HSM|
+||Симметричный ключ (Oct-HSM)|128-разрядное<br />192-разрядный<br />256-разрядный|HSM от поставщика|Ключ для передачи в управляемый модуль HSM|
 ||||
 ## <a name="generate-and-transfer-your-key-to-the-managed-hsm"></a>Создание и перенос ключа в управляемый модуль HSM
 
@@ -105,7 +105,7 @@ KEK — это ключ RSA, который создается в управля
 > [!NOTE]
 > Единственной допустимой операцией с ключом KEK должна быть операция "import", которая является взаимоисключающей с любыми другими операциями с ключами.
 
-С помощью команды [az keyvault key create](/cli/azure/keyvault/key?view=azure-cli-latest&preserve-view=true#az-keyvault-key-create) создайте ключ KEK, для которого в качестве операции с ключами задана операция `import`. Запишите идентификатор ключа (`kid`), возвращаемый следующей командой. (Вы будете использовать значение `kid` на [шаге 3](#step-3-generate-and-prepare-your-key-for-transfer).)
+С помощью команды [az keyvault key create](/cli/azure/keyvault/key#az-keyvault-key-create) создайте ключ KEK, для которого в качестве операции с ключами задана операция `import`. Запишите идентификатор ключа (`kid`), возвращаемый следующей командой. (Вы будете использовать значение `kid` на [шаге 3](#step-3-generate-and-prepare-your-key-for-transfer).)
 
 ```azurecli-interactive
 az keyvault key create --kty RSA-HSM --size 4096 --name KEKforBYOK --ops import --hsm-name ContosoKeyVaultHSM
@@ -115,7 +115,7 @@ az keyvault key create --kty RSA-HSM --size 4096 --name KEKforBYOK --ops import 
 
 ### <a name="step-2-download-the-kek-public-key"></a>Шаг 2. Скачивание открытого ключа KEK
 
-Чтобы скачать открытый ключ KEK в PEM-файл, используйте команду [az keyvault key download](/cli/azure/keyvault/key?view=azure-cli-latest&preserve-view=true#az-keyvault-key-download). Импортируемый целевой ключ шифруется с помощью открытого ключа KEK.
+Чтобы скачать открытый ключ KEK в PEM-файл, используйте команду [az keyvault key download](/cli/azure/keyvault/key#az-keyvault-key-download). Импортируемый целевой ключ шифруется с помощью открытого ключа KEK.
 
 ```azurecli-interactive
 az keyvault key download --name KEKforBYOK --hsm-name ContosoKeyVaultHSM --file KEKforBYOK.publickey.pem
@@ -137,7 +137,7 @@ az keyvault key download --name KEKforBYOK --hsm-name ContosoKeyVaultHSM --file 
 
 ### <a name="step-4-transfer-your-key-to-managed-hsm"></a>Шаг 4. Перенос ключа в управляемый модуль HSM
 
-Чтобы завершить импорт ключа, перенесите пакет обмена ключами (файл BYOK) с отключенного компьютера на компьютер, подключенный к Интернету. Чтобы передать файл BYOK в управляемый модуль HSM, используйте команду [AZ keyvault Key Import](/cli/azure/keyvault/key?view=azure-cli-latest&preserve-view=true#az-keyvault-key-import) .
+Чтобы завершить импорт ключа, перенесите пакет обмена ключами (файл BYOK) с отключенного компьютера на компьютер, подключенный к Интернету. Чтобы передать файл BYOK в управляемый модуль HSM, используйте команду [AZ keyvault Key Import](/cli/azure/keyvault/key#az-keyvault-key-import) .
 
 ```azurecli-interactive
 az keyvault key import --hsm-name ContosoKeyVaultHSM --name ContosoFirstHSMkey --byok-file KeyTransferPackage-ContosoFirstHSMkey.byok

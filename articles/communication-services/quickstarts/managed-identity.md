@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 12/04/2020
 ms.author: gistefan
 ms.reviewer: mikben
-ms.openlocfilehash: ee691d4809a68a0ba60f60a2240b76a1e53104bc
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 9571d13537b504b4d48685e879a379b08df3110d
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171579"
+ms.locfileid: "102211487"
 ---
 # <a name="use-managed-identities-net"></a>Использование управляемых удостоверений (.NET)
 
@@ -24,8 +24,9 @@ ms.locfileid: "102171579"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
- - Учетная запись Azure с активной подпиской. [Создать учетную запись бесплатно](https://azure.microsoft.com/free)
+ - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free) бесплатно.
  - Активный ресурс Служб коммуникации и строка подключения. [Создайте ресурс Служб коммуникации.](./create-communication-resource.md?pivots=platform-azp&tabs=windows)
+ -  Управляемое удостоверение. [Создание управляемого удостоверения](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-portal).
 
 ## <a name="setting-up"></a>Настройка
 
@@ -59,10 +60,9 @@ ms.locfileid: "102171579"
 ### <a name="install-the-client-library-packages"></a>Установка пакетов клиентской библиотеки
 
 ```console
-dotnet add package Azure.Communication.Identity
-dotnet add package Azure.Communication.Configuration
-dotnet add package Azure.Communication.Sms
 dotnet add package Azure.Identity
+dotnet add package Azure.Communication.Identity
+dotnet add package Azure.Communication.Sms
 ```
 
 ### <a name="use-the-client-library-packages"></a>Использование пакетов клиентских библиотек
@@ -70,9 +70,11 @@ dotnet add package Azure.Identity
 Добавьте следующие `using` директивы в код для использования Azure Identity и клиентских библиотек службы хранилища Azure.
 
 ```csharp
+using Azure;
+using Azure.Core;
 using Azure.Identity;
+using Azure.Communication;
 using Azure.Communication.Identity;
-using Azure.Communication.Configuration;
 using Azure.Communication.Sms;
 ```
 
@@ -89,6 +91,7 @@ using Azure.Communication.Sms;
      
           var client = new CommunicationIdentityClient(resourceEndpoint, credential);
           var identityResponse = await client.CreateUserAsync();
+          var identity = identityResponse.Value;
      
           var tokenResponse = await client.IssueTokenAsync(identity, scopes: new [] { CommunicationTokenScope.VoIP });
 
@@ -101,7 +104,6 @@ using Azure.Communication.Sms;
 В следующем примере кода показано, как создать объект клиента службы с маркерами Azure Active Directory, а затем использовать клиент для отправки SMS-сообщения:
 
 ```csharp
-
      public async Task SendSmsAsync(Uri resourceEndpoint, PhoneNumber from, PhoneNumber to, string message)
      {
           TokenCredential credential = new DefaultAzureCredential();
@@ -121,7 +123,7 @@ using Azure.Communication.Sms;
 > [!div class="nextstepaction"]
 > [Сведения о проверке подлинности](../concepts/authentication.md)
 
-Возможно, вы также захотите выполнить такие задачи:
+Полезные ссылки
 
 - [Дополнительные сведения об управлении доступом на основе ролей в Azure](../../../articles/role-based-access-control/index.yml)
 - [Дополнительные сведения о библиотеке удостоверений Azure для .NET](/dotnet/api/overview/azure/identity-readme)

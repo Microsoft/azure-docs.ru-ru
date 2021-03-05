@@ -10,12 +10,12 @@ author: lobrien
 ms.date: 11/20/2020
 ms.topic: conceptual
 ms.custom: how-to, deploy
-ms.openlocfilehash: 71f393897dff266f1b0922a19eefd70cffea133d
-ms.sourcegitcommit: c4246c2b986c6f53b20b94d4e75ccc49ec768a9a
+ms.openlocfilehash: 8f22f1af04d59b4c1fb7f19a3d6815b61cac5fbd
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96600359"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102211233"
 ---
 # <a name="deploy-models-trained-with-azure-machine-learning-on-your-local-machines"></a>Развертывание моделей, обученных Машинное обучение Azure на локальных компьютерах 
 
@@ -185,8 +185,8 @@ print("prediction:", resp.text)
 Вы можете скачать модель:  
 
 - На портале перейдите на вкладку **модели** , выберите нужную модель и на странице **сведения** нажмите кнопку **скачать**.
-- Из командной строки с помощью `az ml model download` . (См [. статью Загрузка модели.](/cli/azure/ext/azure-cli-ml/ml/model?view=azure-cli-latest#ext_azure_cli_ml_az_ml_model_download&preserve-view=false))
-- С помощью метода Python SDK `Model.download()` . (См [. класс Model.](/python/api/azureml-core/azureml.core.model.model?view=azure-ml-py#download-target-dir------exist-ok-false--exists-ok-none-&preserve-view=false))
+- Из командной строки с помощью `az ml model download` . (См [. статью Загрузка модели.](/cli/azure/ext/azure-cli-ml/ml/model#ext_azure_cli_ml_az_ml_model_download))
+- С помощью метода Python SDK `Model.download()` . (См [. класс Model.](/python/api/azureml-core/azureml.core.model.model#download-target-dir------exist-ok-false--exists-ok-none-))
 
 Модель Azure — это один или несколько сериализованных объектов Python, упакованных в файл выбора Python (расширение PKL). Содержимое файла выбора зависит от библиотеки машинного обучения или методики, используемой для обучения модели. Например, если вы используете модель из учебника, вы можете загрузить модель с помощью:
 

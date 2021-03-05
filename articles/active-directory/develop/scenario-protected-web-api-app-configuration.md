@@ -12,12 +12,12 @@ ms.workload: identity
 ms.date: 07/15/2020
 ms.author: jmprieur
 ms.custom: aaddev
-ms.openlocfilehash: bdf74a6d8b6798de8aba33baea5afdf987ce1c34
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: 7c2a1f6de4e006cbb1b8566504fd16280c129f23
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99582491"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102210807"
 ---
 # <a name="protected-web-api-code-configuration"></a>Защищенный веб-API: конфигурация кода
 
@@ -175,7 +175,7 @@ services.AddControllers();
 > - `$"api://{ClientId}` во всех остальных случаях (для [маркеров доступа](access-tokens.md)v 1.0).
 > Дополнительные сведения см. в разделе [Исходный код](https://github.com/AzureAD/microsoft-identity-web/blob/d2ad0f5f830391a34175d48621a2c56011a45082/src/Microsoft.Identity.Web/Resource/RegisterValidAudience.cs#L70-L83)Microsoft. Identity. Web.
 
-Предыдущий фрагмент кода извлекается из [пошагового руководства по ASP.NET Core веб-API](https://github.com/Azure-Samples/active-directory-dotnet-native-aspnetcore-v2/blob/63087e83326e6a332d05fee6e1586b66d840b08f/1.%20Desktop%20app%20calls%20Web%20API/TodoListService/Startup.cs#L23-L28). Подробные сведения о **аддмикрософтидентитивебапиаусентикатион** доступны в [Microsoft. Identity. Web](microsoft-identity-web.md). Этот метод вызывает [аддмикрософтидентитивебапи](/dotnet/api/microsoft.identity.web.microsoftidentitywebapiauthenticationbuilderextensions.addmicrosoftidentitywebapi?preserve-view=true&view=azure-dotnet-preview), который сам указывает по промежуточного слоя на проверку маркера.
+Предыдущий фрагмент кода извлекается из [пошагового руководства по ASP.NET Core веб-API](https://github.com/Azure-Samples/active-directory-dotnet-native-aspnetcore-v2/blob/63087e83326e6a332d05fee6e1586b66d840b08f/1.%20Desktop%20app%20calls%20Web%20API/TodoListService/Startup.cs#L23-L28). Подробные сведения о **аддмикрософтидентитивебапиаусентикатион** доступны в [Microsoft. Identity. Web](microsoft-identity-web.md). Этот метод вызывает [аддмикрософтидентитивебапи](/dotnet/api/microsoft.identity.web.microsoftidentitywebapiauthenticationbuilderextensions.addmicrosoftidentitywebapi), который сам указывает по промежуточного слоя на проверку маркера.
 
 ## <a name="token-validation"></a>Проверка маркеров
 

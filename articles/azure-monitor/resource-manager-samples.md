@@ -7,12 +7,12 @@ services: azure-monitor
 ms.topic: sample
 ms.date: 05/18/2020
 ms.subservice: ''
-ms.openlocfilehash: 0791ccf10c76f2a1781bf373c674f606ca365fff
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 9218886ded7827d4b7a1e2413f1470ee5cd1563d
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100598282"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101733964"
 ---
 # <a name="resource-manager-template-samples-for-azure-monitor"></a>Примеры шаблонов Resource Manager для службы Azure Monitor
 
@@ -54,7 +54,7 @@ az deployment group create \
 - [Запросы журнала](logs/resource-manager-log-queries.md) — создание сохраненных запросов к журналу в рабочей области Log Analytics.
 - [Рабочая область Log Analytics](logs/resource-manager-workspace.md) — создание рабочей области Log Analytics и настройка коллекции разных источников данных из агента Log Analytics.
 - [Книги](visualize/resource-manager-workbooks.md) — создание книг.
-- [Azure Monitor для контейнеров](containers/resource-manager-container-insights.md) — подключение кластеров к Azure Monitor для создания контейнеров.
+- [Container insights.](containers/resource-manager-container-insights.md) Подключение кластеров к Container insights.
 - [Azure Monitor для виртуальных машин](vm/resource-manager-vminsights.md) — подключение виртуальных машин к Azure Monitor.
 
 

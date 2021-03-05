@@ -7,12 +7,12 @@ ms.subservice: cosmosdb-sql
 ms.topic: conceptual
 ms.date: 02/02/2021
 ms.author: tisande
-ms.openlocfilehash: 9e6777a082dcda76c7c7df6bd1b55611cf5cdf84
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.openlocfilehash: dfa6b8eaa5f4ce8b2ebfb24a280e048ed3b19dda
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99493165"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102211521"
 ---
 # <a name="getting-started-with-sql-queries"></a>Getting started with SQL queries (Начало работы с запросами SQL)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -24,8 +24,8 @@ ms.locfileid: "99493165"
 Ниже приведены некоторые примеры того, как выполнять **операции чтения** с каждым пакетом SDK.
 
 - [Пакет SDK для .NET](/dotnet/api/microsoft.azure.cosmos.container.readitemasync?preserve-view=true&view=azure-dotnet)
-- [пакет SDK для Java](/java/api/com.azure.cosmos.cosmoscontainer.readitem?preserve-view=true&view=azure-java-stable#com_azure_cosmos_CosmosContainer__T_readItem_java_lang_String_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_java_lang_Class_T__)
-- [Пакет SDK для Node.js](/javascript/api/@azure/cosmos/item?preserve-view=true&view=azure-node-latest#read-requestoptions-)
+- [пакет SDK для Java](/java/api/com.azure.cosmos.cosmoscontainer.readitem#com_azure_cosmos_CosmosContainer__T_readItem_java_lang_String_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_java_lang_Class_T__)
+- [Пакет SDK для Node.js](/javascript/api/@azure/cosmos/item#read-requestoptions-)
 - [Пакет SDK для Python](/python/api/azure-cosmos/azure.cosmos.containerproxy?preserve-view=true&view=azure-python#read-item-item--partition-key--populate-query-metrics-none--post-trigger-include-none----kwargs-)
 
 **SQL-запросы** . Вы можете запрашивать данные, создавая запросы с помощью язык SQL (SQL) в качестве языка запросов JSON. Запросы всегда изменяют по крайней мере 2,3 единиц запросов и, как правило, имеют более высокую и более длительные переменные задержки, чем операции чтения точек. Запросы могут возвращать много элементов.
@@ -168,7 +168,7 @@ ms.locfileid: "99493165"
     ORDER BY f.address.city ASC
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [
@@ -177,7 +177,7 @@ ms.locfileid: "99493165"
     ]
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 В предыдущих примерах показано несколько аспектов языка запросов Cosmos DB:  
 

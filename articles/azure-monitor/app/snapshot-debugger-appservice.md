@@ -6,18 +6,19 @@ author: cweining
 ms.author: cweining
 ms.date: 03/26/2019
 ms.reviewer: mbullwin
-ms.openlocfilehash: 291f06bea0744c991c71640272ee341b7273472b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 5a637a6f355be32f82878a52a30c77d020190651
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101729000"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102211623"
 ---
 # <a name="enable-snapshot-debugger-for-net-apps-in-azure-app-service"></a>Включение Snapshot Debugger для приложений .NET в службе приложений Azure
 
 В настоящее время Snapshot Debugger поддерживает приложения ASP.NET и ASP.NET Core, работающие в службе приложений Azure в планах служб Windows.
 
 При использовании отладчика моментальных снимков рекомендуется запускать приложение на уровне службы "базовый" или выше.
+
 Для большинства приложений уровни обслуживания "бесплатный" и "общий" не содержат достаточно памяти или места на диске для сохранения моментальных снимков.
 
 ## <a name="enable-snapshot-debugger"></a><a id="installation"></a> Включить Snapshot Debugger
@@ -52,6 +53,16 @@ Snapshot Debugger предварительно устанавливается в
 4. Snapshot Debugger теперь включена с помощью параметра приложения служб приложений.
 
     ![Параметр приложения для Snapshot Debugger][snapshot-debugger-app-setting]
+
+## <a name="enable-snapshot-debugger-for-other-clouds"></a>Включение Snapshot Debugger для других облаков
+
+Сейчас единственными регионами, требующими внесения изменений в конечную точку, являются [Azure для государственных организаций](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#application-insights) и [Azure для Китая](https://docs.microsoft.com/azure/china/resources-developer-guide) через строку подключения Application Insights.
+
+|Свойство строки подключения    | Облако для государственных организаций США | Облако для Китая |   
+|---------------|---------------------|-------------|
+|снапшотендпоинт         | `https://snapshot.monitor.azure.us`    | `https://snapshot.monitor.azure.cn` |
+
+Дополнительные сведения о других переопределениях соединений см. в [документации по Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/sdk-connection-string?tabs=net#connection-string-with-explicit-endpoint-overrides).
 
 ## <a name="disable-snapshot-debugger"></a>Отключить Snapshot Debugger
 

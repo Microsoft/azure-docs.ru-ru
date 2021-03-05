@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: cweining
 ms.author: cweining
 ms.date: 12/18/2020
-ms.openlocfilehash: d86455eae0834f29099c7d5c96f8326408daf519
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.openlocfilehash: ac25962cac36a149807b67a44b3b88a4f40c954a
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98675535"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102211946"
 ---
 # <a name="enable-snapshot-debugger-for-net-and-net-core-apps-in-azure-functions"></a>Включение Snapshot Debugger для приложений .NET и .NET Core в функциях Azure
 
@@ -20,14 +20,14 @@ Snapshot Debugger в настоящее время работает для пр�
 
 Для большинства приложений уровни обслуживания "бесплатный" и "общий" не содержат достаточно памяти или места на диске для сохранения моментальных снимков.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * [Включение мониторинга Application Insights в приложение-функция](../../azure-functions/configure-monitoring.md#add-to-an-existing-function-app)
 
 ## <a name="enable-snapshot-debugger"></a>Включить Snapshot Debugger
 
 Если вы используете другой тип службы Azure, ниже приведены инструкции по включению Snapshot Debugger на других поддерживаемых платформах:
-* [служба приложений Azure](snapshot-debugger-appservice.md?toc=/azure/azure-monitor/toc.json);
+* [Служба приложений Azure](snapshot-debugger-appservice.md?toc=/azure/azure-monitor/toc.json)
 * [Oблачныe службы Azure2](snapshot-debugger-vm.md?toc=/azure/azure-monitor/toc.json)
 * [Службы Service Fabric Azure](snapshot-debugger-vm.md?toc=/azure/azure-monitor/toc.json)
 * [Профилирование веб-приложений, работающих на виртуальной машине Azure или в масштабируемом наборе виртуальных машин, с помощью Application Insights Profiler](snapshot-debugger-vm.md?toc=/azure/azure-monitor/toc.json)
@@ -124,6 +124,35 @@ namespace SnapshotCollectorAzureFunction
 }
 ```
 
+## <a name="enable-snapshot-debugger-for-other-clouds"></a>Включение Snapshot Debugger для других облаков
+
+Сейчас только регионы, требующие внесения изменений в конечную точку, — это [Azure для государственных организаций](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#application-insights) и [Azure для Китая](https://docs.microsoft.com/azure/china/resources-developer-guide).
+
+Ниже приведен пример `host.json` обновленной конечной точки облачного агента для государственных организаций США:
+```json
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingExcludedTypes": "Request",
+      "samplingSettings": {
+        "isEnabled": true
+      },
+      "snapshotConfiguration": {
+        "isEnabled": true,
+        "agentEndpoint": "https://snapshot.monitor.azure.us"
+      }
+    }
+  }
+}
+```
+
+Ниже приведены поддерживаемые переопределения конечной точки агента Snapshot Debugger.
+
+|Свойство.    | Облако для государственных организаций США | Облако для Китая |   
+|---------------|---------------------|-------------|
+|ажентендпоинт         | `https://snapshot.monitor.azure.us`    | `https://snapshot.monitor.azure.cn` |
+
 ## <a name="disable-snapshot-debugger"></a>Отключить Snapshot Debugger
 
 Чтобы отключить Snapshot Debugger в приложении функции, необходимо просто обновить `host.json` файл, задав для `false` свойства значение `snapshotConfiguration.isEnabled` .
@@ -143,7 +172,7 @@ namespace SnapshotCollectorAzureFunction
 
 Рекомендуется включить Snapshot Debugger для всех приложений, чтобы упростить диагностику исключений приложений.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Создание трафика для приложения, которое может вызвать исключение. Затем подождите 10 – 15 минут, чтобы моментальные снимки отправлялись на экземпляр Application Insights.
 - [Просмотр моментальных снимков](snapshot-debugger.md?toc=/azure/azure-monitor/toc.json#view-snapshots-in-the-portal) в портал Azure.

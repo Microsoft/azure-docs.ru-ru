@@ -3,12 +3,12 @@ title: Создание настраиваемой роли Azure Resource Manag
 description: В этой статье содержатся инструкции по созданию настраиваемой роли Azure Resource Manager и назначению субъекту-службе для службы Live Video Analytics на IoT Edge с помощью Azure CLI.
 ms.topic: how-to
 ms.date: 05/27/2020
-ms.openlocfilehash: 40bf0f60a718d512e02481d977b8208112ed1a55
-ms.sourcegitcommit: 6906980890a8321dec78dd174e6a7eb5f5fcc029
+ms.openlocfilehash: 80974c111dd451314635d06334766322bc68e437
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92425723"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102210450"
 ---
 # <a name="create-custom-azure-resource-manager-role-and-assign-to-service-principal"></a>Создание настраиваемой роли Azure Resource Manager и назначение ее субъекту-службе
 
@@ -49,7 +49,7 @@ ms.locfileid: "92425723"
     ```
     az account set --subscription " <yourSubscriptionName or yourSubscriptionId>"
     ```
-1. Создайте [группу ресурсов](/cli/azure/group?view=azure-cli-latest#az-group-create) и [учетную запись хранения](/cli/azure/storage/account?view=azure-cli-latest#az-storage-account-create).
+1. Создайте [группу ресурсов](/cli/azure/group#az-group-create) и [учетную запись хранения](/cli/azure/storage/account#az-storage-account-create).
 1. Теперь создайте учетную запись службы мультимедиа Azure с помощью следующего шаблона команды в Cloud Shell:
 
     ```
@@ -85,8 +85,8 @@ az ams account sp create --account-name < yourAMSAccountName > --resource-group 
 ```
 1. Выходные данные для субъекта-службы с проверкой пароля включают в себя ключ пароля, который в данном случае является параметром "Аадсекрет". 
 
-    Обязательно скопируйте это значение, так как его нельзя получить повторно. Если вы забыли пароль, [сбросьте учетные данные для субъекта-службы](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest#reset-credentials).
-1. Идентификатор appId и ключ клиента отображаются в выходных данных как "Аадклиентид" и "Aadtenantid и" соответственно. Они используются в проверке подлинности субъекта-службы. Запишите их значения, но при необходимости вы можете получить их в любой момент с помощью команды [az ad sp list](/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-list).
+    Обязательно скопируйте это значение, так как его нельзя получить повторно. Если вы забыли пароль, [сбросьте учетные данные для субъекта-службы](/cli/azure/create-an-azure-service-principal-azure-cli#reset-credentials).
+1. Идентификатор appId и ключ клиента отображаются в выходных данных как "Аадклиентид" и "Aadtenantid и" соответственно. Они используются в проверке подлинности субъекта-службы. Запишите их значения, но при необходимости вы можете получить их в любой момент с помощью команды [az ad sp list](/cli/azure/ad/sp#az-ad-sp-list).
 
 ### <a name="create-a-custom-role-definition"></a>Создание пользовательского определения роли  
 
@@ -171,7 +171,7 @@ az ad sp show --id "<appId>" | Select-String "objectId"
 “objectId” : “<yourObjectId>”,
 ```
 
-Используйте [команду AZ Role назначение Create](/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create) , чтобы связать настраиваемую роль с субъектом-службой.
+Используйте [команду AZ Role назначение Create](/cli/azure/role/assignment#az-role-assignment-create) , чтобы связать настраиваемую роль с субъектом-службой.
 
 ```
 az role assignment create --role “LVAEdge User” --assignee-object-id < objectId>    
@@ -260,5 +260,5 @@ az role assignment list  --assignee < objectId>
 | Переменная из этой статьи|Имя свойства двойника для функции Live Video Analytics на IoT Edge|
 |---|---|
 |AadSecret |    аадсервицепринЦипалпассворд|
-|AADTenantId |  Aadtenantid и|
-|AadClientId    |аадсервицепринЦипалаппид|
+|AADTenantId |  aadTenantId|
+|AadClientId    |aadServicePrincipalAppId|

@@ -4,23 +4,28 @@ description: Узнайте, как создать область шифрова
 services: storage
 author: tamram
 ms.service: storage
-ms.date: 09/17/2020
+ms.date: 03/05/2021
 ms.topic: conceptual
 ms.author: tamram
 ms.reviewer: ozgun
 ms.subservice: common
-ms.openlocfilehash: e77b58f7741af42f00b2a1831157405b12fa24ff
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: d5590ff275ce821c81f5751f4d92972c49adaafc
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96017412"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209597"
 ---
 # <a name="create-and-manage-encryption-scopes-preview"></a>Создание и управление областями шифрования (Предварительная версия)
 
 Области шифрования (Предварительная версия) позволяют управлять шифрованием на уровне отдельного большого двоичного объекта или контейнера. Область шифрования изолирует данные большого двоичного объекта в безопасном анклаве в учетной записи хранения. Области шифрования можно использовать для создания безопасных границ между данными, которые находятся в одной учетной записи хранения, но принадлежат разным клиентам. Дополнительные сведения об областях шифрования см. в статье [области шифрования для хранилища BLOB-объектов (Предварительная версия)](encryption-scope-overview.md).
 
 В этой статье показано, как создать область шифрования. В нем также показано, как указать область шифрования при создании большого двоичного объекта или контейнера.
+
+> [!IMPORTANT]
+> Области шифрования в настоящее время доступны в **предварительной версии**. Ознакомьтесь с [дополнительными условиями использования Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) предварительных версий для юридических условий, которые относятся к функциям Azure, которые доступны в бета-версии, предварительном просмотре или еще не включены в общедоступную версию.
+>
+> Чтобы избежать непредвиденных затрат, не забудьте отключить все области шифрования, которые в настоящее время не нужны.
 
 [!INCLUDE [storage-data-lake-gen2-support](../../../includes/storage-data-lake-gen2-support.md)]
 
@@ -110,7 +115,7 @@ New-AzStorageEncryptionScope -ResourceGroupName $rgName `
     -KeyvaultEncryption
 ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/cli);
+# <a name="azure-cli"></a>[Azure CLI](#tab/cli)
 
 Чтобы создать область шифрования с Azure CLI, сначала установите Azure CLI версии 2.4.0 или более поздней.
 
@@ -196,7 +201,7 @@ Get-AzStorageEncryptionScope -ResourceGroupName $rgName `
 Get-AzStorageAccount -ResourceGroupName $rgName | Get-AzStorageEncryptionScope
 ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/cli);
+# <a name="azure-cli"></a>[Azure CLI](#tab/cli)
 
 Чтобы получить список областей шифрования, доступных для учетной записи хранения с Azure CLI, вызовите команду [AZ Storage Account Encryption-Scope List](/cli/azure/storage/account/encryption-scope#az-storage-account-encryption-scope-list) . Не забудьте заменить значения заполнителей в примере собственными значениями:
 
@@ -243,7 +248,7 @@ New-AzRmStorageContainer -ResourceGroupName $rgName `
     -PreventEncryptionScopeOverride $true
 ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/cli);
+# <a name="azure-cli"></a>[Azure CLI](#tab/cli)
 
 Чтобы создать контейнер с областью шифрования по умолчанию с Azure CLI, вызовите команду [AZ Storage Container Create](/cli/azure/storage/container#az-storage-container-create) , указав область для `--default-encryption-scope` параметра. Чтобы принудительно использовать область по умолчанию контейнера для всех больших двоичных объектов в контейнере, задайте `--prevent-encryption-scope-override` для параметра значение `true` .
 
@@ -294,7 +299,7 @@ New-AzStorageContainer -Name $containerName2 -Context $ctx
 Set-AzStorageBlobContent -Context $ctx -Container $containerName2 -File $localSrcFile -Blob "helloworld.txt" -BlobType Block -EncryptionScope $scopeName2
 ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/cli);
+# <a name="azure-cli"></a>[Azure CLI](#tab/cli)
 
 Чтобы передать большой двоичный объект с областью шифрования, заданной с помощью Azure CLI, вызовите команду [AZ Storage BLOB upload](/cli/azure/storage/blob#az-storage-blob-upload) и укажите область шифрования для большого двоичного объекта.
 
@@ -345,7 +350,7 @@ Update-AzStorageEncryptionScope -ResourceGroupName $rgName `
     -KeyvaultEncryption
 ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/cli);
+# <a name="azure-cli"></a>[Azure CLI](#tab/cli)
 
 Чтобы изменить ключ, защищающий область шифрования от ключа, управляемого клиентом, до ключа, управляемого корпорацией Майкрософт, с Azure CLI, вызовите команду [AZ Storage Account Encryption-Scope Update](/cli/azure/storage/account/encryption-scope#az-storage-account-encryption-scope-update) и передайте `--key-source` параметр со значением `Microsoft.Storage` :
 
@@ -389,7 +394,7 @@ Update-AzStorageEncryptionScope -ResourceGroupName $rgName `
     -State disabled
 ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/cli);
+# <a name="azure-cli"></a>[Azure CLI](#tab/cli)
 
 Чтобы отключить область шифрования с помощью Azure CLI, вызовите команду [AZ Storage Account Encryption-Scope Update](/cli/azure/storage/account/encryption-scope#az-storage-account-encryption-scope-update) , включив `--state` параметр со значением `Disabled` , как показано в следующем примере. Чтобы повторно включить область шифрования, вызовите ту же команду с `--state` параметром, для которого задано значение `Enabled` . Не забудьте заменить значения заполнителей в примере собственными значениями:
 
@@ -403,7 +408,7 @@ az storage account encryption-scope update \
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Шифрование службы хранилища Azure для неактивных данных](../common/storage-service-encryption.md)
 - [Области шифрования для хранилища BLOB-объектов (Предварительная версия)](encryption-scope-overview.md)

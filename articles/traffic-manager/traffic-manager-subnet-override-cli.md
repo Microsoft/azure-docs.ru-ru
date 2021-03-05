@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.service: traffic-manager
 ms.date: 09/18/2019
 ms.author: duau
-ms.openlocfilehash: 7a448afb85a35674921ce74a25eaf2a97430dc61
-ms.sourcegitcommit: 0aec60c088f1dcb0f89eaad5faf5f2c815e53bf8
+ms.openlocfilehash: 2e289728c7fde9b98256d079d45067aba1d4d805
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98201422"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102211334"
 ---
 # <a name="traffic-manager-subnet-override-using-azure-cli"></a>Переопределение подсети диспетчера трафика с помощью Azure CLI
 
@@ -39,7 +39,7 @@ ms.locfileid: "98201422"
 - Для работы с этой статьей требуется Azure CLI версии 2.0.28 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
 ## <a name="update-the-traffic-manager-endpoint-with-subnet-override"></a>Обновите конечную точку диспетчера трафика с переопределением подсети.
-Используйте Azure CLI для обновления конечной точки с помощью команды [AZ Network трафика — обновление конечной точки диспетчера](/cli/azure/network/traffic-manager/endpoint?view=azure-cli-latest#az-network-traffic-manager-endpoint-update).
+Используйте Azure CLI для обновления конечной точки с помощью команды [AZ Network трафика — обновление конечной точки диспетчера](/cli/azure/network/traffic-manager/endpoint#az-network-traffic-manager-endpoint-update).
 
 ```azurecli-interactive
 ### Add a range of IPs ###
@@ -59,7 +59,7 @@ az network traffic-manager endpoint update \
     --type AzureEndpoints
 ```
 
-Диапазоны IP-адресов можно удалить, выполнив [Обновление конечной точки AZ Network Configuration Manager](/cli/azure/network/traffic-manager/endpoint?view=azure-cli-latest#az-network-traffic-manager-endpoint-update) с параметром **--Remove** .
+Диапазоны IP-адресов можно удалить, выполнив [Обновление конечной точки AZ Network Configuration Manager](/cli/azure/network/traffic-manager/endpoint#az-network-traffic-manager-endpoint-update) с параметром **--Remove** .
 
 ```azurecli-interactive
 az network traffic-manager endpoint update \

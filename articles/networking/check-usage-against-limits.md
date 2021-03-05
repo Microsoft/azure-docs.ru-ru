@@ -12,12 +12,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 06/05/2018
-ms.openlocfilehash: 5c53eb65f31e32d3edebcbf31d48d166f5464a92
-ms.sourcegitcommit: c7153bb48ce003a158e83a1174e1ee7e4b1a5461
+ms.openlocfilehash: 31eeb31fb78a4e9552e64121e0e85b5fd8d9b773
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98233361"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102210654"
 ---
 # <a name="check-resource-usage-against-limits"></a>Проверка использования ресурсов в соответствии с ограничениями
 
@@ -73,7 +73,7 @@ Network Watchers                   1     1
 
 При использовании команд интерфейса командной строки Azure (CLI) для работы с этой статьей выполняйте их в [Azure Cloud Shell](https://shell.azure.com/bash) или в интерфейсе командной строки на своем компьютере. Для этой статьи требуется Azure CLI 2.0.32 или более поздней версии. Выполните командлет `az --version`, чтобы узнать установленную версию. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI](/cli/azure/install-azure-cli). Если Azure CLI запущена локально, необходимо также выполнить командлет `az login`, чтобы войти в Azure.
 
-Просмотрите использование ваших ресурсов относительно установленных ограничений с помощью команды [az network list-usages](/cli/azure/network?view=azure-cli-latest#az-network-list-usages). В следующем примере показано использование ресурсов в регионе "Восточная часть США":
+Просмотрите использование ваших ресурсов относительно установленных ограничений с помощью команды [az network list-usages](/cli/azure/network#az-network-list-usages). В следующем примере показано использование ресурсов в регионе "Восточная часть США":
 
 ```azurecli-interactive
 az network list-usages \

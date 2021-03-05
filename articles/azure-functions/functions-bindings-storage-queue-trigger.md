@@ -6,12 +6,12 @@ ms.topic: reference
 ms.date: 02/18/2020
 ms.author: cshoe
 ms.custom: devx-track-csharp, cc996988-fb4f-47, devx-track-python
-ms.openlocfilehash: 59cedb25295770ba4ae4a33aac3287c5fed1297d
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 8c2ea69d38f354455b7957ddc7b6ff41da30100b
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100381500"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102210773"
 ---
 # <a name="azure-queue-storage-trigger-for-azure-functions"></a>Триггер хранилища очередей Azure для функций Azure
 
@@ -327,7 +327,7 @@ public class QueueTriggerDemo {
 }
 ```
 
-| Свойство    | Описание |
+| Свойство.    | Описание |
 |-------------|-----------------------------|
 |`name`       | Объявляет имя параметра в сигнатуре функции. При активации функции значение этого параметра будет иметь содержимое сообщения очереди. |
 |`queueName`  | Объявляет имя очереди в учетной записи хранения. |
@@ -378,11 +378,11 @@ public class QueueTriggerDemo {
 
 ### <a name="additional-types"></a>Дополнительные типы
 
-Приложения, использующие [версию 5.0.0 или более поздней версии,](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher) могут также использовать типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). Эта версия удаляет поддержку устаревшего `CloudQueueMessage` типа в пользу следующих типов:
+В приложениях, в которых используется[расширение службы хранилища версии 5.0.0 или выше](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher), также могут использоваться типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). Эта версия удаляет поддержку устаревшего `CloudQueueMessage` типа в пользу следующих типов:
 
 - [куеуемессаже](/dotnet/api/azure.storage.queues.models.queuemessage)
  
-Примеры использования этих типов см. [в репозитории GitHub для расширения](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues#examples).
+Примеры использования этих типов см. в разделе [репозитория GitHub для расширения](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues#examples).
 
 # <a name="c-script"></a>[Скрипт C#](#tab/csharp-script)
 
@@ -399,15 +399,15 @@ public class QueueTriggerDemo {
 
 ### <a name="additional-types"></a>Дополнительные типы
 
-Приложения, использующие [версию 5.0.0 или более поздней версии,](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher) могут также использовать типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). Эта версия удаляет поддержку устаревшего `CloudQueueMessage` типа в пользу следующих типов:
+В приложениях, в которых используется[расширение службы хранилища версии 5.0.0 или выше](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher), также могут использоваться типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). Эта версия удаляет поддержку устаревшего `CloudQueueMessage` типа в пользу следующих типов:
 
 - [куеуемессаже](/dotnet/api/azure.storage.queues.models.queuemessage)
 
-Примеры использования этих типов см. [в репозитории GitHub для расширения](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues#examples).
+Примеры использования этих типов см. в разделе [репозитория GitHub для расширения](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues#examples).
 
 # <a name="java"></a>[Java](#tab/java)
 
-Заметка [QueueTrigger](/java/api/com.microsoft.azure.functions.annotation.queuetrigger?view=azure-java-stable&preserve-view=true) предоставляет доступ к сообщению очереди, вызвавшему функцию.
+Заметка [QueueTrigger](/java/api/com.microsoft.azure.functions.annotation.queuetrigger) предоставляет доступ к сообщению очереди, вызвавшему функцию.
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 
@@ -427,7 +427,7 @@ public class QueueTriggerDemo {
 
 Триггер очереди предоставляет несколько [свойств метаданных](./functions-bindings-expressions-patterns.md#trigger-metadata). Эти свойства можно использовать как часть выражений привязки в других привязках или как параметры в коде. Свойства являются членами класса [CloudQueueMessage](/dotnet/api/microsoft.azure.storage.queue.cloudqueuemessage) .
 
-|Свойство|Type|Описание|
+|Свойство.|Type|Описание|
 |--------|----|-----------|
 |`QueueTrigger`|`string`|Полезные данные очереди (если это допустимая строка). Если полезная нагрузка сообщения очереди является строкой, `QueueTrigger` то она имеет то же значение, что и переменная, именованная `name` свойством в *function.json*.|
 |`DequeueCount`|`int`|Количество раз, когда сообщение было выведено из очереди.|
@@ -470,7 +470,7 @@ public class QueueTriggerDemo {
 
 В файле [host.json](functions-host-json.md#queues) содержатся параметры, управляющие поведением очереди триггера. Дополнительные сведения о доступных параметрах см. в разделе [host.jsпо параметрам](functions-bindings-storage-queue.md#hostjson-settings) .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Сообщения хранилища очереди записи (Выходная привязка)](./functions-bindings-storage-queue-output.md)
 
