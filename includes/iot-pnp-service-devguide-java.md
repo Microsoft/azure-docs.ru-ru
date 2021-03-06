@@ -4,26 +4,26 @@ ms.author: dobett
 ms.service: iot-pnp
 ms.topic: include
 ms.date: 10/20/2020
-ms.openlocfilehash: 70df45877a310d74e7c5c82292d18b1c0eb32da8
-ms.sourcegitcommit: 59f506857abb1ed3328fda34d37800b55159c91d
+ms.openlocfilehash: 33752c1ebb83c5d63e8e1cb396c52f01f07046cd
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92521415"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102244650"
 ---
 Также доступны следующие ресурсы:
 
-- [Справочная документация по пакету SDK для Java](/java/api/com.microsoft.azure.sdk.iot.service.devicetwin.devicetwindevice?preserve-view=true&view=azure-java-stable)
+- [Справочная документация по пакету SDK для Java](/java/api/com.microsoft.azure.sdk.iot.service.devicetwin.devicetwindevice)
 - [Примеры клиента службы](https://github.com/Azure/azure-iot-sdk-java/blob/master/service/iot-service-samples/pnp-service-sample)
 - [Примеры цифровых двойников](https://github.com/Azure/azure-iot-sdk-java/tree/master/service/iot-service-samples/digitaltwin-service-samples)
 
 ## <a name="iot-hub-service-client-examples"></a>Примеры клиентов службы центра Интернета вещей
 
-В этом разделе показаны примеры Java с использованием клиента службы центра Интернета вещей и классов **DeviceTwin** и **девицемесод** из пространства имен **com. Microsoft. Azure. SDK. IOT. Service. DeviceTwin** . Используйте класс **DeviceTwin** для взаимодействия с состоянием устройства с помощью двойникова устройства. Вы также можете использовать класс **DeviceTwin** для [запроса регистрации устройств](../articles/iot-hub/iot-hub-devguide-query-language.md) в центре Интернета вещей. Для вызова команд на устройстве используется класс **девицемесод** . Модель [дтдл](../articles/iot-pnp/concepts-digital-twin.md) для устройства определяет свойства и команды, реализуемые устройством. В фрагментах кода `deviceId` переменная содержит идентификатор устройства Plug and Play устройства IOT, зарегистрированного в центре Интернета вещей.
+В этом разделе показаны примеры Java с использованием клиента службы центра Интернета вещей и классов **DeviceTwin** и **девицемесод** из пространства имен **com. Microsoft. Azure. SDK. IOT. Service. DeviceTwin** . Используйте класс **DeviceTwin** для взаимодействия с состоянием устройства с помощью двойникова устройства. Вы также можете использовать класс **DeviceTwin** для [запроса регистрации устройств](../articles/iot-hub/iot-hub-devguide-query-language.md) в центре Интернета вещей. Для вызова команд на устройстве используется класс **девицемесод** . Модель [дтдл](../articles/iot-pnp/concepts-digital-twin.md) для устройства определяет свойства и команды, реализуемые устройством. В фрагментах кода `deviceId` переменная содержит идентификатор устройства Самонастраивающийся устройства IOT, зарегистрированного в центре Интернета вещей.
 
 ### <a name="get-the-device-twin-and-model-id"></a>Получение двойникаа устройства и идентификатора модели
 
-Чтобы получить двойника устройства и идентификатор модели для устройства IoT Plug and Play, подключенного к центру Интернета вещей:
+Чтобы получить двойника устройства и идентификатор модели для устройства IoT самонастраивающийся, подключенного к центру Интернета вещей:
 
 ```java
 DeviceTwin twinClient = DeviceTwin.createFromConnectionString(iotHubConnectionString);
@@ -117,11 +117,11 @@ System.out.println("Method result status is: " + result.getStatus());
 
 Используйте класс **дигиталтвинасинкклиент** в пространстве имен **com. Microsoft. Azure. SDK. IOT. Service. дигиталтвин** для взаимодействия с состоянием устройства с помощью цифрового двойников. В следующих примерах также используются классы **упдатеоператионутилити** и **басикдигиталтвин** из одного и того же пространства имен. Модель [дтдл](../articles/iot-pnp/concepts-digital-twin.md) для устройства определяет свойства и команды, реализуемые устройством.
 
-`digitalTwinid`Переменная содержит идентификатор устройства Plug and Play устройства IOT, зарегистрированного в центре Интернета вещей.
+`digitalTwinid`Переменная содержит идентификатор устройства Самонастраивающийся устройства IOT, зарегистрированного в центре Интернета вещей.
 
 ### <a name="get-the-digital-twin-and-model-id"></a>Получение цифровых двойника и идентификатора модели
 
-Чтобы получить цифровой двойника и идентификатор модели устройства IoT Plug and Play, подключенного к центру Интернета вещей:
+Чтобы получить цифровой двойника и идентификатор модели устройства IoT самонастраивающийся, подключенного к центру Интернета вещей:
 
 ```java
 DigitalTwinAsyncClient asyncClient = DigitalTwinAsyncClient.createFromConnectionString(iotHubConnectionString);
@@ -302,7 +302,7 @@ private static String prettyString(String str)
 
 ## <a name="read-device-telemetry"></a>Чтение телеметрии устройства
 
-Устройства IoT Plug and Play отправляют данные телеметрии, определенные в модели ДТДЛ, в центр Интернета вещей. По умолчанию центр Интернета вещей направляет данные телеметрии в конечную точку концентратора событий, где их можно использовать. Дополнительные сведения см. в статье [Использование маршрутизации сообщений центра Интернета вещей для отправки сообщений с устройства в облако в разные конечные точки](../articles/iot-hub/iot-hub-devguide-messages-d2c.md).
+Устройства IoT самонастраивающийся отправляют данные телеметрии, определенные в модели ДТДЛ, в центр Интернета вещей. По умолчанию центр Интернета вещей направляет данные телеметрии в конечную точку концентратора событий, где их можно использовать. Дополнительные сведения см. в статье [Использование маршрутизации сообщений центра Интернета вещей для отправки сообщений с устройства в облако в разные конечные точки](../articles/iot-hub/iot-hub-devguide-messages-d2c.md).
 
 В следующем фрагменте кода показано, как считывать данные телеметрии из конечной точки концентраторов событий по умолчанию. Код в этом фрагменте кода взят из руководства по использованию центра Интернета вещей [Отправка данных телеметрии с устройства в центр Интернета вещей и их чтение с помощью серверного приложения](../articles/iot-hub/quickstart-send-telemetry-java.md):
 
@@ -343,7 +343,7 @@ eventHubConsumerAsyncClient
 }
 ```
 
-В следующих выходных данных из предыдущего кода показаны данные телеметрии температуры, отправленные устройством Plug and Play IOT без компонента **термостата** , которое имеет только компонент по умолчанию. В `dt-dataschema` системном свойстве отображается идентификатор модели:
+В следующих выходных данных из предыдущего кода показаны данные телеметрии температуры, отправленные устройством самонастраивающийся IOT без компонента **термостата** , которое имеет только компонент по умолчанию. В `dt-dataschema` системном свойстве отображается идентификатор модели:
 
 ```cmd/sh
 Telemetry received from partition 1:
@@ -361,7 +361,7 @@ System properties (set by IoT Hub):
 {correlation-id=d10a7350-43ef-4cf6-9db5-a4b08684cd9d, content-encoding=UTF-8, iothub-connection-auth-method={"scope":"device","type":"sas","issuer":"iothub","acceptingIpFilterRule":null}, iothub-enqueuedtime=Tue Oct 20 12:28:15 BST 2020, dt-dataschema=dtmi:com:example:Thermostat;1, absolute-expiry-time=0, iothub-connection-device-id=my-pnp-device, iothub-connection-auth-generation-id=637375776990653481, group-sequence=0, iothub-message-source=Telemetry, creation-time=0, message-id=d3a80af4-1246-41a0-a09a-582a12c17a00, content-type=application/json}
 ```
 
-В следующих выходных данных из предыдущего кода показаны данные телеметрии температуры, отправленные с помощью многокомпонентного устройства **температуреконтроллер** IOT Plug and Play. `dt-subject`Свойство System показывает имя компонента, который отправил телеметрию. В этом примере два компонента являются `thermostat1` и `thermostat2` определены в модели дтдл. В `dt-dataschema` системном свойстве отображается идентификатор модели:
+В следующих выходных данных из предыдущего кода показаны данные телеметрии температуры, отправленные с помощью многокомпонентного устройства **температуреконтроллер** IOT Самонастраивающийся. `dt-subject`Свойство System показывает имя компонента, который отправил телеметрию. В этом примере два компонента являются `thermostat1` и `thermostat2` определены в модели дтдл. В `dt-dataschema` системном свойстве отображается идентификатор модели:
 
 ```cmd/sh
 Telemetry received from partition 1:
