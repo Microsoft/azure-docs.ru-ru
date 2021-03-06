@@ -8,12 +8,12 @@ ms.service: azure-app-configuration
 ms.custom: devx-track-csharp, fasttrack-edit
 ms.topic: conceptual
 ms.date: 2/25/2020
-ms.openlocfilehash: b1de1a24a506c049782443e4d32039c28fece436
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2f446df95c795eaac378340ed0d5de7b31dfcfee
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101718256"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102219049"
 ---
 # <a name="use-managed-identities-to-access-app-configuration"></a>Использование управляемых удостоверений для получения доступа к службе "Конфигурация приложений"
 
@@ -72,7 +72,7 @@ Azure Active Directory [управляемые удостоверения](../ac
 
 1. В поле **Подписка** выберите подписку Azure. Выберите ресурс Службы приложений для своего приложения.
 
-1. Щелкните **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
     ![Добавление управляемого удостоверения](./media/add-managed-identity.png)
 
@@ -140,7 +140,7 @@ Azure Active Directory [управляемые удостоверения](../ac
     ---
 
     > [!NOTE]
-    > Если вы хотите использовать **управляемое пользователем удостоверение**, обязательно укажите ClientID при создании [манажедидентитикредентиал](https://docs.microsoft.com/dotnet/api/azure.identity.managedidentitycredential?view=azure-dotnet&preserve-view=true).
+    > Если вы хотите использовать **управляемое пользователем удостоверение**, обязательно укажите ClientID при создании [манажедидентитикредентиал](https://docs.microsoft.com/dotnet/api/azure.identity.managedidentitycredential).
     >```
     >config.AddAzureAppConfiguration(options =>
     >   options.Connect(new Uri(settings["AppConfig:Endpoint"]), new ManagedIdentityCredential(<your_clientId>)));

@@ -6,17 +6,17 @@ services: storage
 author: tamram
 ms.service: storage
 ms.topic: how-to
-ms.date: 09/21/2020
+ms.date: 03/05/2021
 ms.author: tamram
 ms.reviewer: ozgun
 ms.subservice: common
 ms.custom: devx-track-azurepowershell, devx-track-azurecli
-ms.openlocfilehash: 2f57e801720c6b546a58b216422629d192e8d2e6
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.openlocfilehash: f9be9272a898ad48f3553d4c5e48952e1fcdde81
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94843321"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102218644"
 ---
 # <a name="configure-encryption-with-customer-managed-keys-stored-in-azure-key-vault-managed-hsm-preview"></a>Настройка шифрования с помощью управляемых клиентом ключей, хранящихся в Azure Key Vault управляемом HSM (Предварительная версия)
 
@@ -24,7 +24,10 @@ ms.locfileid: "94843321"
 
 В этой статье показано, как настроить шифрование с использованием управляемых клиентом ключей, хранящихся в управляемом модуле HSM, с помощью Azure CLI. Сведения о настройке шифрования с помощью управляемых клиентом ключей, хранящихся в хранилище ключей, см. в статье [Настройка шифрования с помощью управляемых клиентом ключей, хранящихся в Azure Key Vault](customer-managed-keys-configure-key-vault.md).
 
-> [!NOTE]
+> [!IMPORTANT]
+>
+> Шифрование с помощью управляемых клиентом ключей, хранящихся в Azure Key Vault управляемый модуль HSM, в настоящее время находится на **этапе предварительной версии**. Ознакомьтесь с [дополнительными условиями использования Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) предварительных версий для юридических условий, которые относятся к функциям Azure, которые доступны в бета-версии, предварительном просмотре или еще не включены в общедоступную версию.
+>
 > Управляемый модуль HSM Azure Key Vault и Azure Key Vault поддерживают те же интерфейсы API и интерфейсы управления для конфигурации.
 
 ## <a name="assign-an-identity-to-the-storage-account"></a>Назначение удостоверения учетной записи хранения

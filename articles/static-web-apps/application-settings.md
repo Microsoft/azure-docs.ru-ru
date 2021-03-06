@@ -7,13 +7,13 @@ ms.service: static-web-apps
 ms.topic: how-to
 ms.date: 05/08/2020
 ms.author: buhollan
-ms.custom: devx-track-js, devx-track-azurecli
-ms.openlocfilehash: 00502c97e3fc06972c27cedf565d77b52f558795
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.custom: devx-track-js
+ms.openlocfilehash: 2886cb6433c4f8a65eb0661eded0ddd08248e137
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94844818"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102219188"
 ---
 # <a name="configure-application-settings-for-azure-static-web-apps-preview"></a>Настройка параметров приложения для предварительной версии Статических веб-приложений Azure
 
@@ -34,7 +34,7 @@ ms.locfileid: "94844818"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Приложение Статических веб-приложений Azure
-- [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest)
+- [Azure CLI](/cli/azure/install-azure-cli)
 
 ## <a name="types-of-application-settings"></a>Типы параметров приложения
 
@@ -110,7 +110,7 @@ const connectionString = process.env.DATABASE_CONNECTION_STRING;
 
 1. Нажмите кнопку **ОК**.
 
-1. Щелкните **Сохранить**.
+1. Выберите команду **Сохранить**.
 
 ### <a name="using-the-azure-cli"></a>Использование Azure CLI
 

@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 06/25/2018
 ms.author: allensu
-ms.openlocfilehash: 75226f92995794221635ced7ee0e285ac824b6e2
-ms.sourcegitcommit: e2dc549424fb2c10fcbb92b499b960677d67a8dd
+ms.openlocfilehash: 714fb92e8757fed6e11a09528b60cda3e945175e
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94696869"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102218899"
 ---
 # <a name="create-a-public-load-balancer-with-ipv6-using-azure-cli"></a>Создание общедоступной подсистемы балансировки нагрузки с поддержкой IPv6 с помощью Azure CLI
 
@@ -58,7 +58,7 @@ Azure Load Balancer является балансировщиком нагруз
 
 В этом примере программы Azure CLI выполняются в командном окне PowerShell. Для улучшения удобства чтения и повторного использования примените возможности сценариев PowerShell, а не командлеты Azure PowerShell.
 
-1. [Установите и настройте Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest), следуя инструкциям в соответствующей статье, а затем войдите в свою учетную запись Azure.
+1. [Установите и настройте Azure CLI](/cli/azure/install-azure-cli), следуя инструкциям в соответствующей статье, а затем войдите в свою учетную запись Azure.
 
 2. Настройте переменные PowerShell для использования с командами Azure CLI.
 

@@ -11,12 +11,12 @@ ms.date: 02/16/2020
 ms.topic: conceptual
 ms.reviewer: larryfr
 ms.custom: deploy
-ms.openlocfilehash: 3d2e01b645c1661d4b44520193b9c4557cbc1ea0
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.openlocfilehash: 47d2c8865109e8ef43317b3c4a19c36e692aff91
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "100652180"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102218848"
 ---
 # <a name="high-performance-serving-with-triton-inference-server-preview"></a>Высокопроизводительный обслуживание с помощью сервера вывода Тритон (Предварительная версия) 
 
@@ -36,7 +36,7 @@ ms.locfileid: "100652180"
 
 * **Подписка Azure**. Если у вас ее нет, используйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree).
 * Знакомство с [тем, как и где развертывать модель](how-to-deploy-and-where.md) с машинное обучение Azure.
-* [Машинное обучение Azure пакет SDK для Python](/python/api/overview/azure/ml/?view=azure-ml-py) **или** [Azure CLI](/cli/azure/?view=azure-cli-latest) и [расширение машинного обучения](reference-azure-machine-learning-cli.md).
+* [Машинное обучение Azure пакет SDK для Python](/python/api/overview/azure/ml/?view=azure-ml-py) **или** [Azure CLI](/cli/azure/) и [расширение машинного обучения](reference-azure-machine-learning-cli.md).
 * Рабочая установка DOCKER для локального тестирования. Сведения об установке и проверке DOCKER см. в разделе [ориентация и настройка](https://docs.docker.com/get-started/) в документации по DOCKER.
 
 ## <a name="architectural-overview"></a>Общие сведения об архитектуре
@@ -331,7 +331,7 @@ print(local_service.scoring_uri)
 
 ---
 
-После завершения развертывания отображается URI оценки. Для этого локального развертывания это будет `http://localhost:6789/score` . При развертывании в облаке можно использовать команду [AZ ML Service показывать](/cli/azure/ext/azure-cli-ml/ml/service?view=azure-cli-latest#ext_azure_cli_ml_az_ml_service_show) CLI для получения URI оценки.
+После завершения развертывания отображается URI оценки. Для этого локального развертывания это будет `http://localhost:6789/score` . При развертывании в облаке можно использовать команду [AZ ML Service показывать](/cli/azure/ext/azure-cli-ml/ml/service#ext_azure_cli_ml_az_ml_service_show) CLI для получения URI оценки.
 
 Сведения о создании клиента, отправляющего запросы вывода в URI оценки, см. в разделе [Использование модели, развернутой в качестве веб-службы](how-to-consume-web-service.md).
 

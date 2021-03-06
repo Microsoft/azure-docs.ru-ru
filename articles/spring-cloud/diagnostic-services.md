@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 01/06/2020
 ms.author: brendm
 ms.custom: devx-track-java
-ms.openlocfilehash: 52413f36a9ba5c7b7a3c68567a65a20bc3ce4090
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: c354435f689f5182dd368fd53fdab28f1ab63d48
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100585203"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102218797"
 ---
 # <a name="analyze-logs-and-metrics-with-diagnostics-settings"></a>Анализ журналов и метрик с помощью параметров диагностики
 
@@ -27,7 +27,7 @@ ms.locfileid: "100585203"
 Выберите категорию журнала и категорию метрик, которые требуется отслеживать.
 
 > [!TIP]
-> Просто хотите выполнить потоковую передачу журналов? Ознакомьтесь с этой [командой Azure CLI](/cli/azure/ext/spring-cloud/spring-cloud/app?preserve-view=true&view=azure-cli-latest#ext-spring-cloud-az-spring-cloud-app-logs)!
+> Просто хотите выполнить потоковую передачу журналов? Ознакомьтесь с этой [командой Azure CLI](/cli/azure/ext/spring-cloud/spring-cloud/app#ext-spring-cloud-az-spring-cloud-app-logs)!
 
 ## <a name="logs"></a>Журналы
 
@@ -206,6 +206,6 @@ AppPlatformLogsforSpring
 ```
 Вы можете использовать ту же стратегию для других библиотек журналов Java.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Краткое руководство. Развертывание первого приложения Azure Spring Cloud](spring-cloud-quickstart.md)

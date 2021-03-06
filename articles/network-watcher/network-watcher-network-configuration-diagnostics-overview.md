@@ -11,18 +11,18 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 09/15/2020
 ms.author: damendo
-ms.openlocfilehash: ad60b0be8a9a5341c71d760f98c0db84a72763c2
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: d500420893fc92e75c4d6f32f42e9f1d92c87b68
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94951525"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102218712"
 ---
 # <a name="introduction-to-network-configuration-diagnostics-in-azure-network-watcher"></a>Общие сведения о диагностике конфигурации сети в наблюдателе за сетями Azure
 
 Средство диагностики конфигурации сети помогает клиентам понять, какие потоки трафика будут разрешены или запрещены в виртуальной сети Azure, а также подробные сведения для отладки. Она поможет вам понять, правильно ли настроены правила NSG. 
 
-## <a name="pre-requisites"></a>Предварительные условия
+## <a name="pre-requisites"></a>Предварительные требования
 Для использования диагностики сетевой конфигурации наблюдатель за сетями должен быть включен в подписке. См. раздел [Создание экземпляра наблюдателя за сетями Azure](./network-watcher-create.md) для включения.
 
 ## <a name="background"></a>Фон
@@ -36,9 +36,9 @@ ms.locfileid: "94951525"
 
 Для данного потока средство НКД выполняет имитацию последовательности и возвращает сведения о том, разрешена ли последовательность (или запрещена), а также подробное описание правил, разрешающих или запрещающих последовательность.  Клиенты должны предоставить подробные сведения о потоке, например источник, назначение, протокол и т. д. Средство возвращает сведения о том, разрешен или запрещен трафик, правила NSG, которые были оценены для указанного потока, и результаты оценки для каждого правила.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Использование диагностики сетевой конфигурации с помощью других интерфейсов
  - [REST API](/rest/api/network-watcher/networkwatchers/getnetworkconfigurationdiagnostic)
  - [PowerShell](/powershell/module/az.network/invoke-aznetworkwatchernetworkconfigurationdiagnostic?view=azps-4.6.1)
- - [Azure CLI](/cli/azure/network/watcher?view=azure-cli-latest#az_network_watcher_run_configuration_diagnostic)
+ - [Azure CLI](/cli/azure/network/watcher#az_network_watcher_run_configuration_diagnostic)

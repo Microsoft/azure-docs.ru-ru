@@ -10,12 +10,12 @@ ms.author: gopalv
 author: gvashishtha
 ms.date: 07/31/2020
 ms.custom: deploy
-ms.openlocfilehash: f955ee3f8bc150982c19107271fe7e7bdb1368cb
-ms.sourcegitcommit: e7179fa4708c3af01f9246b5c99ab87a6f0df11c
+ms.openlocfilehash: cd8bef53bb8f7c42aa6dbd0bc1e1c67400b8f2a0
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97824560"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102219086"
 ---
 # <a name="update-a-deployed-web-service"></a>Обновление развернутой веб-службы
 
@@ -86,7 +86,7 @@ az ml service update -n myservice --model-metadata-file modelinfo.json
 >
 > Чтобы обновить службу для использования нового скрипта записи или среды, создайте [файл конфигурации вывода](./reference-azure-machine-learning-cli.md#inference-configuration-schema) и укажите его с помощью `ic` параметра.
 
-Дополнительные сведения см. в документации по [AZ ML Service Update](/cli/azure/ext/azure-cli-ml/ml/service?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-service-update) .
+Дополнительные сведения см. в документации по [AZ ML Service Update](/cli/azure/ext/azure-cli-ml/ml/service#ext-azure-cli-ml-az-ml-service-update) .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

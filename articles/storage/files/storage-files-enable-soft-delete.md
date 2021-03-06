@@ -8,12 +8,12 @@ ms.date: 12/01/2020
 ms.author: rogarana
 ms.subservice: files
 services: storage
-ms.openlocfilehash: 22e4d0998cde14d4461141a53f05cbc19d1ab671
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: 77381700f4257006b50e56ab7ffc037ef99d297c
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98878975"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102218559"
 ---
 # <a name="enable-soft-delete-on-azure-file-shares"></a>Включение обратимого удаления — общие папки Azure
 
@@ -35,7 +35,7 @@ ms.locfileid: "98878975"
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-Командлеты обратимого удаления доступны в версии 2.1.3 и более новой версии [модуля Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest).
+Командлеты обратимого удаления доступны в версии 2.1.3 и более новой версии [модуля Azure CLI](/cli/azure/install-azure-cli).
 
 ## <a name="getting-started-with-cli"></a>Начало работы с интерфейсом командной строки
 

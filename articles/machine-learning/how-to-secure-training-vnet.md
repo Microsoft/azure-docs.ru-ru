@@ -11,12 +11,12 @@ ms.author: peterlu
 author: peterclu
 ms.date: 07/16/2020
 ms.custom: contperf-fy20q4, tracking-python, contperf-fy21q1
-ms.openlocfilehash: cb034c42ceee870ed7be72eb5ff7d29c42b72f36
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 2b264da06cf5088da07ec91cfa40c4babfde4c38
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102183596"
+ms.locfileid: "102219069"
 ---
 # <a name="secure-an-azure-machine-learning-training-environment-with-virtual-networks"></a>Защита Машинное обучение Azureной среды обучения с помощью виртуальных сетей
 
@@ -171,7 +171,7 @@ ms.locfileid: "102183596"
 
     * Скачайте [диапазоны IP-адресов Azure и теги службы](https://www.microsoft.com/download/details.aspx?id=56519) и найдите в файле `BatchNodeManagement.<region>` и `AzureMachineLearning.<region>`, где `<region>` — ваш регион Azure.
 
-    * Для загрузки информации используйте [интерфейс командной строки Azure](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest). В следующем примере загружаются сведения об IP-адресе и отфильтровываются сведения о регионе "Восточная часть США 2" (основной) и центральном регионе США (дополнительный):
+    * Для загрузки информации используйте [интерфейс командной строки Azure](/cli/azure/install-azure-cli). В следующем примере загружаются сведения об IP-адресе и отфильтровываются сведения о регионе "Восточная часть США 2" (основной) и центральном регионе США (дополнительный):
 
         ```azurecli-interactive
         az network list-service-tags -l "East US 2" --query "values[?starts_with(id, 'Batch')] | [?properties.region=='eastus2']"
