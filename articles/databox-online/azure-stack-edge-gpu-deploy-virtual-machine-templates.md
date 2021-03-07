@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 01/25/2021
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 9a347d57de540ed31c862f618be7c8a98b685348
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: 2922e9620f558e072cfc1264f7e661efd11a90fb
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100546930"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102437014"
 ---
 # <a name="deploy-vms-on-your-azure-stack-edge-pro-gpu-device-via-templates"></a>Развертывание виртуальных машин на устройстве с Azure Stack ребра Pro GPU с помощью шаблонов
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этом учебнике описано, как создать виртуальную машину на устройстве Azure Stack пограничной Pro и управлять ею с помощью шаблонов. Эти шаблоны являются файлами нотация объектов JavaScript (JSON), которые определяют инфраструктуру и конфигурацию для виртуальной машины. В этих шаблонах указываются развертываемые ресурсы и свойства этих ресурсов.
 
@@ -290,7 +292,7 @@ key2 7vnVMJUwJXlxkXXOyVO4NfqbW5e/5hZ+VOs+C/h/ReeoszeV+qoyuBitgnWjiDPNdH4+lSm1/Zj
 > [!NOTE]
 > При развертывании шаблона при возникновении ошибки проверки подлинности учетные данные Azure для этого сеанса могли быть просрочены. Повторно выполните `login-AzureRM` команду, чтобы снова подключиться к Azure Resource Manager на устройстве Azure Stack ребра Pro.
 
-1. Выполните следующую команду. 
+1. Выполните следующую команду: 
     
     ```powershell
     $templateFile = "Path to CreateImage.json"
@@ -388,7 +390,7 @@ key2 7vnVMJUwJXlxkXXOyVO4NfqbW5e/5hZ+VOs+C/h/ReeoszeV+qoyuBitgnWjiDPNdH4+lSm1/Zj
 1. Введите имя пользователя, пароль и поддерживаемый размер виртуальной машины.
 1. При включении сетевого интерфейса для вычислений виртуальный коммутатор и виртуальная сеть были автоматически созданы на этом сетевом интерфейсе. Вы можете запросить существующую виртуальную сеть, чтобы получить имя виртуальной сети, ее имя и имя группы ресурсов виртуальной сети.
 
-    Выполните следующую команду.
+    Выполните следующую команду:
 
     ```powershell
     Get-AzureRmVirtualNetwork
@@ -494,7 +496,7 @@ key2 7vnVMJUwJXlxkXXOyVO4NfqbW5e/5hZ+VOs+C/h/ReeoszeV+qoyuBitgnWjiDPNdH4+lSm1/Zj
 
 Разверните шаблон создания виртуальной машины `CreateVM.json` . Этот шаблон создает сетевой интерфейс из существующей виртуальной сети и создает виртуальную машину из развернутого образа.
 
-1. Выполните следующую команду. 
+1. Выполните следующую команду: 
     
     ```powershell
     Command:
@@ -565,7 +567,7 @@ key2 7vnVMJUwJXlxkXXOyVO4NfqbW5e/5hZ+VOs+C/h/ReeoszeV+qoyuBitgnWjiDPNdH4+lSm1/Zj
     --     ----            -------------   -----         -----------     --------             -------
     ```
 
-7. Убедитесь, что виртуальная машина успешно подготовлена. Выполните следующую команду.
+7. Убедитесь, что виртуальная машина успешно подготовлена. Выполните следующую команду:
 
     `Get-AzureRmVm`
 
@@ -588,6 +590,6 @@ key2 7vnVMJUwJXlxkXXOyVO4NfqbW5e/5hZ+VOs+C/h/ReeoszeV+qoyuBitgnWjiDPNdH4+lSm1/Zj
 
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Командлеты Azure Resource Manager](/powershell/module/azurerm.resources/?view=azurermps-6.13.0&preserve-view=true)

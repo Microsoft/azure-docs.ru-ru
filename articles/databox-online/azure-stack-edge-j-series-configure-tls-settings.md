@@ -6,18 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 08/28/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 15e2d7a144b54f443b8298b20dbfacf78a50f9e1
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.openlocfilehash: 4a159f7fa384a6899fb3cbb4db3bba9e0ed02d52
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96447548"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102438870"
 ---
 # <a name="configure-tls-12-on-windows-clients-accessing-azure-stack-edge-pro-device"></a>Настройка TLS 1,2 на клиентах Windows, обращающихся к Azure Stack пограничному устройству Pro
 
-<!--[!INCLUDE [applies-to-skus](../../includes/azure-stack-edge-applies-to-all-sku.md)]-->
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 Если вы используете клиент Windows для доступа к устройству Azure Stack погранично Pro, вам потребуется настроить TLS 1,2 на клиенте. В этой статье содержатся ресурсы и рекомендации по настройке TLS 1,2 в клиенте Windows. 
 
@@ -41,7 +41,7 @@ ms.locfileid: "96447548"
 - [Общие сведения о включении TLS 1,2](/windows-server/security/tls/tls-registry-settings#tls-12)
 - [Включение TLS 1.2 на клиентах](/configmgr/core/plan-design/security/enable-tls-1-2-client)
 - [Включение TLS 1.2 на серверах сайта и удаленных системах сайта](/configmgr/core/plan-design/security/enable-tls-1-2-server)
-- [Протоколы в TLS/SSL (поставщик общих служб Schannel)](/windows-server/security/tls/manage-tls#configuring-tls-ecc-curve-order)
+- [Протоколы в TLS/SSL (Schannel SSP)](/windows-server/security/tls/manage-tls#configuring-tls-ecc-curve-order)
 - Комплекты [шифров](/windows-server/security/tls/tls-registry-settings#tls-12). в частности, [для настройки порядка](/windows-server/security/tls/manage-tls#configuring-tls-cipher-suite-order) комплектов шифров TLS убедитесь в том, что вы перечислите текущие комплекты шифров и не могли бы быть в следующем списке:
 
     - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384

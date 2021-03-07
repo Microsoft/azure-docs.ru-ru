@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 02/03/2021
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 6e9e1319b90ab859c63c022e478bc26c4b8aedeb
-ms.sourcegitcommit: 5b926f173fe52f92fcd882d86707df8315b28667
+ms.openlocfilehash: 660fbf7cc4dd28c800d8f49fd5d990c99f97c4c8
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99550224"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102443001"
 ---
 # <a name="run-existing-iot-edge-modules-from-azure-stack-edge-pro-fpga-devices-on-azure-stack-edge-pro-gpu-device"></a>Запуск существующих модулей IoT Edge из Azure Stack пограничных устройств с пограничными устройствами FPGA на устройстве с Azure Stack ребра Pro GPU
+
+[!INCLUDE [applies-to-GPU-and-pro-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-sku.md)]
 
 В этой статье подробно описаны изменения, необходимые для модуля IoT Edge DOCKER, который работает на Azure Stack пограничной Pro (FPGA), поэтому он может работать на платформе IoT Edge на основе Kubernetes на устройстве Azure Stack с ГРАФИЧЕСКИм интерфейсом Pro. 
 
@@ -25,7 +27,7 @@ ms.locfileid: "99550224"
 
 При переносе рабочих нагрузок с устройства FPGA на устройство GPU необходимо внести изменения в существующие модули IoT Edge, чтобы они успешно выполнялись на платформе Kubernetes. Может потребоваться по-разному указать требования к хранилищу, сети, использованию ресурсов и веб-прокси. 
 
-## <a name="storage"></a>Служба хранилища
+## <a name="storage"></a>Память
 
 При указании хранилища для модулей IoT Edge учитывайте следующие сведения.
 

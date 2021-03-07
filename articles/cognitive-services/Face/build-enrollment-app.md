@@ -9,12 +9,12 @@ ms.subservice: face-api
 ms.topic: conceptual
 ms.date: 11/17/2020
 ms.author: pafarley
-ms.openlocfilehash: 085dd18214f795566669fb862bba63b67eb9115d
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.openlocfilehash: 218579176b807bbdae85646f27eaa7f301d4b9a6
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96350370"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102428275"
 ---
 # <a name="build-an-enrollment-app-for-android-with-react"></a>Создание приложения регистрации для Android с реагированием
 
@@ -37,9 +37,9 @@ ms.locfileid: "96350370"
 ## <a name="set-up-the-development-environment"></a>Настройка среды разработки
 
 1. Клонировать репозиторий Git для [примера приложения регистрации](https://github.com/azure-samples/cognitive-services-FaceAPIEnrollmentSample).
-1. Чтобы настроить среду разработки, следуйте собственной документации реагирования на собственную документацию <a href="https://reactnative.dev/docs/environment-setup"  title=" "  target="_blank"> <span class="docon docon-navigate-external x-hidden-focus"></span> </a> . В качестве операционной системы разработки выберите пункт **отреагировать на собственное краткое руководство CLI** и выберите **Android** в качестве целевой ОС. Выполните действия в разделах **Установка зависимостей** и **среды разработки Android**.
+1. Чтобы настроить среду разработки, следуйте собственной документации реагирования на собственную документацию <a href="https://reactnative.dev/docs/environment-setup"  title=" "  target="_blank"> </a> . В качестве операционной системы разработки выберите пункт **отреагировать на собственное краткое руководство CLI** и выберите **Android** в качестве целевой ОС. Выполните действия в разделах **Установка зависимостей** и **среды разработки Android**.
 1. Откройте файл env.jsв предпочтительном текстовом редакторе, например [Visual Studio Code](https://code.visualstudio.com/), и добавьте конечную точку и ключ. Вы можете получить конечную точку и ключ в портал Azure на вкладке **Обзор** ресурса. Этот шаг предназначен только для локальных целей тестирования &mdash; . не возвращать ключ API распознавания лиц в удаленный репозиторий.
-1. Запустите приложение с помощью эмулятора виртуального устройства Android из Android Studio или собственного устройства Android. Чтобы протестировать приложение на физическом устройстве, следуйте соответствующей документации по <a href="https://reactnative.dev/docs/running-on-device"  title=" реагированию на собственную "  target="_blank"> документацию <span class="docon docon-navigate-external x-hidden-focus"></span> </a> .  
+1. Запустите приложение с помощью эмулятора виртуального устройства Android из Android Studio или собственного устройства Android. Чтобы протестировать приложение на физическом устройстве, следуйте соответствующей документации по <a href="https://reactnative.dev/docs/running-on-device"  title=" реагированию на собственную "  target="_blank"> документацию </a> .  
 
 
 ## <a name="create-an-enrollment-experience"></a>Создание процесса регистрации  
@@ -78,9 +78,9 @@ ms.locfileid: "96350370"
 
 Когда вы будете готовы выпустить приложение для рабочей среды, вы создадите файл APK, готовый к выпуску, который является форматом файла пакета для приложений Android. Этот файл APK должен быть подписан закрытым ключом. С помощью этой сборки выпуска можно приступить к распространению приложения на устройства напрямую. 
 
-<a href="https://developer.android.com/studio/publish/preparing#publishing-build"  title=" "  target="_blank"> <span class="docon docon-navigate-external x-hidden-focus"></span> </a> Чтобы узнать, как создать закрытый ключ, подписать приложение и создать apk выпуска, следуйте инструкциям в документации подготовка к выпуску подготовка к выпуску.  
+<a href="https://developer.android.com/studio/publish/preparing#publishing-build"  title=" "  target="_blank"> </a> Чтобы узнать, как создать закрытый ключ, подписать приложение и создать apk выпуска, следуйте инструкциям в документации подготовка к выпуску подготовка к выпуску.  
 
-После создания подписанного APK см. статью публикация приложения <a href="https://developer.android.com/studio/publish"  title=" Публикация приложения, "  target="_blank"> <span class="docon docon-navigate-external x-hidden-focus"></span> </a> чтобы узнать больше о том, как выпустить приложение.
+После создания подписанного APK см. статью публикация приложения <a href="https://developer.android.com/studio/publish"  title=" Публикация приложения, "  target="_blank"> </a> чтобы узнать больше о том, как выпустить приложение.
 
 ## <a name="next-steps"></a>Дальнейшие действия  
 

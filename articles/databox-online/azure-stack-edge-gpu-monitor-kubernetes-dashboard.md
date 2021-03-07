@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 09/22/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 137cff47d49be1405f60bc47cd16f7f027ab63a9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 19b3595228c29814e42af88696972fd81b156190
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91320835"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102443052"
 ---
 # <a name="use-kubernetes-dashboard-to-monitor-your-azure-stack-edge-pro-gpu-device"></a>Использование панели мониторинга Kubernetes для мониторинга устройства GPU Azure Stack ребра
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этой статье описывается, как получить доступ к панели мониторинга Kubernetes и использовать ее для наблюдения за устройством GPU Azure Stack ребра Pro. Для мониторинга устройства можно использовать диаграммы в портал Azure, просматривать панель мониторинга Kubernetes или выполнять `kubectl` команды через интерфейс PowerShell устройства. 
 
@@ -33,7 +35,7 @@ ms.locfileid: "91320835"
 
 ## <a name="about-kubernetes-dashboard"></a>О панели мониторинга Kubernetes
 
-Панель мониторинга Kubernetes — это веб-интерфейс пользователя, который можно использовать для устранения неполадок в контейнерных приложениях. Панель мониторинга Kubernetes — это альтернатива, основанная на пользовательском интерфейсе, в `kubectl` командной строке Kubernetes. Дополнительные сведения см. в статье [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/). 
+Панель мониторинга Kubernetes — это пользовательский веб-интерфейс, с помощью которого можно устранить неполадки в контейнерных приложениях. Панель мониторинга Kubernetes — это альтернатива, основанная на пользовательском интерфейсе, в `kubectl` командной строке Kubernetes. Дополнительные сведения см. на странице [документации по панели мониторинга Kubernetes](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/). 
 
 На устройстве Azure Stack пограничной Pro можно использовать панель мониторинга Kubernetes в режиме *только для чтения* , чтобы получить общие сведения о приложениях, выполняющихся на устройстве Azure Stack. Pro, просмотреть состояние ресурсов кластера Kubernetes и просмотреть ошибки, произошедшие на устройстве.
 
@@ -117,6 +119,6 @@ ms.locfileid: "91320835"
 Сервер метрик Kubernetes предоставляет конвейеры автомасштабирования, такие как [Горизонтальный Автомасштабирование Pod](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/).
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения об [устранении неполадок с устройствами](azure-stack-edge-gpu-troubleshoot.md).

@@ -1,24 +1,18 @@
 ---
 title: Подключение к Центру безопасности Azure с помощью PowerShell
 description: В этом документе рассматривается процесс включения Центра безопасности Azure с помощью командлетов PowerShell.
-services: security-center
-documentationcenter: na
 author: memildin
 manager: rkarlin
-ms.assetid: e400fcbf-f0a8-4e10-b571-5a0d0c3d0c67
 ms.service: security-center
-ms.devlang: na
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 01/24/2021
 ms.author: memildin
-ms.openlocfilehash: 4979ff0010c1f959e8f8fc16f56da61971faf1e9
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.openlocfilehash: 25639509cfb689e025ea4388f302378648af8ba6
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98757074"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102439499"
 ---
 # <a name="automate-onboarding-of-azure-security-center-using-powershell"></a>Автоматизированное подключение центра безопасности Azure с помощью PowerShell
 

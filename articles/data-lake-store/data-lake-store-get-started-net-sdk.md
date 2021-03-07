@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 05/29/2018
 ms.author: twooley
 ms.custom: devx-track-csharp
-ms.openlocfilehash: c5b2364328fc4e0103b969f94a4c877a388edb7c
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.openlocfilehash: 2c4ed092604e9511023a7025a69dc7a78652ea56
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92103617"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102430485"
 ---
 # <a name="account-management-operations-on-azure-data-lake-storage-gen1-using-net-sdk"></a>Операции управления учетными записями в Azure Data Lake Storage 1-го поколения c использованием .NET SDK
 > [!div class="op_single_selector"]
@@ -33,8 +33,8 @@ ms.locfileid: "92103617"
 
 ## <a name="create-a-net-application"></a>Создание приложения .NET
 1. В Visual Studio выберите меню **файл** , **создать**, а затем **проект**.
-2. Выберите **консольное приложение (.NET Framework)**, а затем нажмите кнопку **Далее**.
-3. В окне**Имя проекта** введите `CreateADLApplication`, а затем выберите **Создать**.
+2. Выберите **консольное приложение (платформа .NET Framework)**, а затем нажмите кнопку **Далее**.
+3. В окне **Имя проекта** введите `CreateADLApplication`, а затем выберите **Создать**.
 
 4. Добавьте пакеты NuGet в проект.
 
@@ -144,7 +144,7 @@ _adlsClient.Account.Delete(_resourceGroupName, _adlsAccountName);
 
 ## <a name="see-also"></a>См. также раздел
 * [Операции файловой системы в Data Lake Storage 1-го поколения c использованием SDK для .NET](data-lake-store-data-operations-net-sdk.md)
-* [Библиотеки Azure Data Lake Store для .NET](/dotnet/api/overview/azure/data-lake-store?view=azure-dotnet)
+* [Библиотеки Azure Data Lake Store для .NET](/dotnet/api/overview/azure/data-lake-store)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 * [Защита данных в Data Lake Storage Gen1](data-lake-store-secure-data.md)

@@ -6,12 +6,12 @@ ms.author: v-elqu
 ms.service: azure-percept
 ms.topic: reference
 ms.date: 02/16/2021
-ms.openlocfilehash: 27b47cbd8eed60ccc2dc1c4a8dd397cca53a9d35
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 3e72aea657b82c2111bea1493b5654ec667c491b
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102098423"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102425283"
 ---
 # <a name="azure-percept-audio-datasheet"></a>Спецификации Azure Percept Audio
 
@@ -24,8 +24,8 @@ ms.locfileid: "102098423"
 |Внешние измерения             |90mm x170mm x 25mm   |
 |Вес продукта                  |0,42 кг   |
 |Плоскость управления Управление        |Обновление устройства Azure (аду)          |
-|Поддерживаемое программное обеспечение и службы |Настраиваемые ключевые слова и команды <br> Пакет SDK для устройств распознавания речи Azure <br> [Центр Интернета вещей Azure](https://azure.microsoft.com/services/iot-hub/) <br> [Azure IoT Edge](https://azure.microsoft.com/services/iot-edge/) |
-|Обработка звука                 |Кодек КСМОС XUF208        |
+|Поддерживаемое программное обеспечение и службы |Настраиваемые ключевые слова и команды <br> Пакет SDK для Azure для распознавания речи <br> [Центр Интернета вещей Azure](https://azure.microsoft.com/services/iot-hub/) <br> [Azure IoT Edge](https://azure.microsoft.com/services/iot-edge/) |
+|Аудиокодек                     |Кодек КСМОС XUF208        |
 |Датчики, визуальные индикаторы и компоненты   |микротелефоны 4X с распознаванием напряжения (MSM261D3526Z1CM) <br> Кнопки 2x <br> USB-концентратор <br> DAC <br> Индикаторы 3 раза <br> Драйвер индикатора          |
 |Crypto-Controller безопасности      |ST-Microelectronics STM32L462CE       |
 |Порты                           |1x USB 2,0, тип Micro B <br> 3,5 мм аудио выход     |

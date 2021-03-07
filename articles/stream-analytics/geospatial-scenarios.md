@@ -2,16 +2,16 @@
 title: Геоограждение и Геопространственное агрегирование с Azure Stream Analytics
 description: В этой статье описывается, как использовать Azure Stream Analytics для геопространственной и геопространственных агрегатов.
 ms.service: stream-analytics
-author: jasonwhowell
-ms.author: jasonh
+author: enkrumah
+ms.author: ebnkruma
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: fc9442b01685deb710c49adf6be84af740a11805
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 2576e147f0cda86bc4d7143ccc5b5985182f271e
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102174994"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102436351"
 ---
 # <a name="geofencing-and-geospatial-aggregation-scenarios-with-azure-stream-analytics"></a>Сценарии геозоны и геопространственной статистической обработки с Azure Stream Analytics
 

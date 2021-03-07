@@ -12,12 +12,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 05/29/2020
-ms.openlocfilehash: 7dccce597dcfbcedd5083befafa79b8ba6f3adac
-ms.sourcegitcommit: b6267bc931ef1a4bd33d67ba76895e14b9d0c661
+ms.openlocfilehash: a9f9e03227bfb75d94ed79cdf858278e2efe4f31
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97693478"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102440400"
 ---
 # <a name="azure-sql-database-and-azure-sql-managed-instance-connect-and-query-articles"></a>Статьи о подключении и создании запросов к Базам данных SQL Azure и Управляемым экземплярам SQL Azure
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -88,7 +88,7 @@ ms.locfileid: "97693478"
 | Язык | Платформа | Дополнительные ресурсы | Скачивание | Начало работы |
 | :-- | :-- | :-- | :-- | :-- |
 | C# | Windows, Linux, macOS | [Microsoft ADO.NET для SQL Server](/sql/connect/ado-net/microsoft-ado-net-sql-server) | [Загрузить](https://www.microsoft.com/net/download/) | [Начало работы](https://www.microsoft.com/sql-server/developer-get-started/csharp/ubuntu)
-| Java | Windows, Linux, macOS | [Microsoft JDBC Driver для SQL Server](/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server/) | [Загрузить](https://go.microsoft.com/fwlink/?linkid=852460) |  [Начало работы](https://www.microsoft.com/sql-server/developer-get-started/java/ubuntu)
+| Java | Windows, Linux, macOS | [Microsoft JDBC Driver для SQL Server](/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server/) | [Загрузить](/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server) |  [Начало работы](https://www.microsoft.com/sql-server/developer-get-started/java/ubuntu)
 | PHP | Windows, Linux, macOS| [Драйвер PHP SQL для SQL Server](/sql/connect/php/microsoft-php-driver-for-sql-server) | [Загрузить](/sql/connect/php/download-drivers-php-sql-server) | [Начало работы](https://www.microsoft.com/sql-server/developer-get-started/php/ubuntu/)
 | Node.js | Windows, Linux, macOS | [Драйвер Node.js для SQL Server](/sql/connect/node-js/node-js-driver-for-sql-server/) | [Установка](/sql/connect/node-js/step-1-configure-development-environment-for-node-js-development/) |  [Начало работы](https://www.microsoft.com/sql-server/developer-get-started/node/ubuntu)
 | Python | Windows, Linux, macOS | [Драйвер Python SQL](/sql/connect/python/python-driver-for-sql-server/) | Варианты установки: <br/> \* [pymssql](/sql/connect/python/pymssql/step-1-configure-development-environment-for-pymssql-python-development/) <br/> \* [pyodbc](/sql/connect/python/pyodbc/step-1-configure-development-environment-for-pyodbc-python-development/) |  [Начало работы](https://www.microsoft.com/sql-server/developer-get-started/python/ubuntu)

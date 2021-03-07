@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 08/31/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 1f16ef0ede25f17acb915a7812ae5b15b45f78a4
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 4142542c9f17ae464a996df310c50d73d8711d8e
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "90899733"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102438205"
 ---
 # <a name="deploy-a-gpu-enabled-iot-module-on-azure-stack-edge-pro-gpu-device"></a>Развертывание модуля IoT с включенным GPU на устройстве Azure Stack ребра Pro GPU
+
+[!INCLUDE [applies-to-GPU-and-pro-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-sku.md)]
 
 В этой статье описывается, как развернуть модуль IoT Edge с поддержкой GPU на устройстве Azure Stack ребра Pro GPU. 
 
@@ -47,7 +49,7 @@ ms.locfileid: "90899733"
     - [Python 3](https://www.python.org/);    
     - PIP для установки пакетов Python (обычно входит в состав установки Python)
 
-## <a name="get-the-sample-code"></a>Получение примера кода
+## <a name="get-the-sample-code"></a>Получение кода примера
 
 1. Перейдите к [шаблонам Azure Intelligent ребра в примерах Azure](https://github.com/azure-samples/azure-intelligent-edge-patterns). Клонировать или скачать ZIP-файл для кода. 
 
@@ -146,7 +148,7 @@ ms.locfileid: "90899733"
 
 2. Выберите подписку и Центр Интернета вещей, содержащий устройство IoT Edge, которое нужно настроить. В этом случае выберите подписку, используемую для развертывания устройства Azure Stack пограничной Pro, и выберите устройство IoT Edge, созданное для устройства Azure Stack ребра Pro. Это происходит при настройке вычислений с помощью портал Azure на предыдущих шагах.
 
-3. В обозревателе VS Code разверните раздел центр Интернета вещей Azure. На вкладке **устройства**вы увидите устройство IOT EDGE, соответствующее устройству Azure Stack. Pro. 
+3. В обозревателе VS Code разверните раздел центр Интернета вещей Azure. На вкладке **устройства** вы увидите устройство IOT EDGE, соответствующее устройству Azure Stack. Pro. 
 
     1. Выберите это устройство, щелкните его правой кнопкой мыши и выберите команду **начать мониторинг встроенной конечной точки события**.
   

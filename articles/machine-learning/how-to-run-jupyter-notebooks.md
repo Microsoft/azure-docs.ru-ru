@@ -11,12 +11,12 @@ ms.subservice: core
 ms.topic: conceptual
 ms.custom: how-to
 ms.date: 01/19/2021
-ms.openlocfilehash: fe6fa5c9b05afd5479818fe9bb25e471665cb867
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: fe3f2328bb1ec9e7bb2ef79c09a821412ce7f7e1
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171472"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102423991"
 ---
 # <a name="run-jupyter-notebooks-in-your-workspace"></a>Запуск записных книжек Jupyter в рабочей области
 
@@ -273,7 +273,7 @@ ms.locfileid: "102171472"
 
 * Если вы не можете подключиться к записной книжке, убедитесь, что связь с веб-сокетом **не** отключена. Для работы Jupyter функций вычислительных экземпляров необходимо включить связь через веб-сокет. Убедитесь, что сеть допускает подключения WebSocket к *. instances.azureml.net и *. instances.azureml.ms. 
 
-* При развертывании экземпляра COMPUTE в рабочей области частной связи [доступ к нему можно получить только из виртуальной сети](https://docs.microsoft.com/azure/machine-learning/how-to-secure-training-vnet#compute-instance). Если вы используете пользовательский DNS или файл hosts, добавьте запись для <имя экземпляра>. <region> . instances.azureml.ms с частным IP-адресом частной конечной точки рабочей области. Дополнительные сведения см. в статье о [пользовательской службе DNS](./how-to-custom-dns.md?tabs=azure-cli) .
+* При развертывании экземпляра COMPUTE в рабочей области частной связи [доступ к нему можно получить только из виртуальной сети](https://docs.microsoft.com/azure/machine-learning/how-to-secure-training-vnet#compute-instance). Если вы используете пользовательский DNS или файл hosts, добавьте запись для < имя экземпляра >. < регион >. instances.azureml.ms с частным IP-адресом частной конечной точки рабочей области. Дополнительные сведения см. в статье о [пользовательской службе DNS](./how-to-custom-dns.md?tabs=azure-cli) .
     
 ## <a name="next-steps"></a>Дальнейшие действия
 

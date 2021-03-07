@@ -8,14 +8,16 @@ ms.subservice: edge
 ms.topic: conceptual
 ms.date: 03/01/2021
 ms.author: alkohli
-ms.openlocfilehash: aac4278c6ce03c43418e99978cd039e24dc01194
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b962d66349bbed112114c010e8d185ba16c74c8d
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101719276"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102443086"
 ---
 # <a name="kubernetes-workload-management-on-your-azure-stack-edge-pro-device"></a>Управление рабочей нагрузкой Kubernetes на устройстве Pro Azure Stack
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 На устройстве Azure Stack пограничной Pro создается кластер Kubernetes при настройке роли вычислений. После создания кластера Kubernetes контейнерные приложения можно развернуть в кластере Kubernetes в модулях Pod. Существует несколько различных способов развертывания рабочих нагрузок в кластере Kubernetes. 
 

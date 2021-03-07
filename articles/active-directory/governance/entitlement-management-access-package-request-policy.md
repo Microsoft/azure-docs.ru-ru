@@ -16,12 +16,12 @@ ms.date: 09/16/2020
 ms.author: ajburnle
 ms.reviewer: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4a1aa737b1f671c08d51d780fa98db50f2869a1
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 7b6bc00af8d54c8748dd82b934974282e0e8da0e
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102211657"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102426966"
 ---
 # <a name="change-request-settings-for-an-access-package-in-azure-ad-entitlement-management"></a>Параметры запроса на изменение для пакета Access в управлении назначениями Azure AD
 
@@ -197,6 +197,8 @@ ms.locfileid: "102211657"
     ![Доступ к пакету — политика-включить параметр политики](./media/entitlement-management-access-package-approval-policy/enable-requests.png)
 
 1. Щелкните **Далее**.
+
+1. Если вы хотите, чтобы запрашивающие стороны предпредоставил дополнительные сведения при запросе доступа к пакету Access, выполните действия, описанные в разделе [изменение параметров утверждения и запрашивающей стороны (Предварительная версия) для пакета Access в разделе Управление](entitlement-management-access-package-approval-policy.md#collect-additional-requestor-information-for-approval-preview) назначением Azure AD, чтобы настроить сведения запрашивающей стороны (Предварительная версия).
 
 1. Настройка параметров жизненного цикла.
 

@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: a2c46e8a7cae9ddba9606abf75ac022e804fde9c
-ms.sourcegitcommit: 1a98b3f91663484920a747d75500f6d70a6cb2ba
+ms.openlocfilehash: e6a58a1f404228564e4e1ac6d77051a747debaa7
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99062516"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102438168"
 ---
 # <a name="deploy-a-gpu-enabled-iot-module-from-azure-marketplace-on-azure-stack-edge-pro-gpu-device"></a>Развертывание модуля IoT с поддержкой GPU из Azure Marketplace на устройстве Azure Stack с помощью GPU Pro
+
+[!INCLUDE [applies-to-GPU-and-pro-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-sku.md)]
 
 В этой статье описывается, как развернуть модуль обработки графических процессоров (GPU) с поддержкой IoT Edge Module из Azure Marketplace на устройстве Azure Stack. Pro. 
 
@@ -49,7 +51,7 @@ ms.locfileid: "99062516"
 
     ![Пример модуля поиска GPU](media/azure-stack-edge-gpu-deploy-sample-module-marketplace/search-gpu-sample-module-1.png)
 
-3. Выберите **Получить**.
+3. Выберите **Get it now** (Получить).
 
     ![Получение примера модуля](media/azure-stack-edge-gpu-deploy-sample-module-marketplace/get-sample-module-1.png)
 
@@ -109,6 +111,6 @@ ms.locfileid: "99062516"
 
         Вы видите, что время, затраченное на выполнение одного и того же набора операций (5000 итераций преобразования фигур) по GPU, гораздо меньше, чем для ЦП.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Next Steps
 
 - Дополнительные сведения о [настройке GPU для использования модуля](azure-stack-edge-j-series-configure-gpu-modules.md).

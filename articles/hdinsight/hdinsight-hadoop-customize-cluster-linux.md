@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: seoapr2020, devx-track-azurecli, contperf-fy21q2
 ms.date: 09/02/2020
-ms.openlocfilehash: d85aa1b66170acb25bd88435b83b1d28cda954f0
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.openlocfilehash: ed1277df0ebfa42d6ee95d58fa568241b291656b
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101093598"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102434684"
 ---
 # <a name="customize-azure-hdinsight-clusters-by-using-script-actions"></a>Настройка кластеров Azure HDInsight с помощью действий сценариев
 
@@ -125,7 +125,7 @@ Status            : Succeeded
 
 В HDInsight доступны скрипты для установки следующих компонентов в кластерах HDInsight.
 
-| Имя | Скрипт |
+| Имя | Сценарий |
 | --- | --- |
 | добавление учетной записи хранения Azure; |`https://hdiconfigactions.blob.core.windows.net/linuxaddstorageaccountv01/add-storage-account-v01.sh`. Ознакомьтесь со статьей [Добавление дополнительных учетных записей хранения в HDInsight](hdinsight-hadoop-add-storage.md). |
 | установка Hue; |`https://hdiconfigactions.blob.core.windows.net/linuxhueconfigactionv02/install-hue-uber-v02.sh`. Ознакомьтесь со статьей [Установка и использование Hue на кластерах HDInsight Hadoop](hdinsight-hadoop-hue-linux.md). |
@@ -147,7 +147,7 @@ Status            : Succeeded
 
     В приведенной ниже таблице описываются элементы формы.
 
-    | Свойство | Значение |
+    | Свойство. | Значение |
     | --- | --- |
     | Выберите скрипт | Чтобы использовать собственный скрипт, выберите __Настраиваемый__. В противном случае выберите один из предоставленных скриптов. |
     | Имя |Укажите имя для действия сценария. |
@@ -198,7 +198,7 @@ Status            : Succeeded
 
 ### <a name="use-a-script-action-during-cluster-creation-from-the-hdinsight-net-sdk"></a>Использование действия сценария при создании кластера с помощью пакета SDK HDInsight для .NET
 
-Пакет SDK HDInsight для .NET предоставляет клиентские библиотеки, которые упрощают работу с кластерами HDInsight из приложения .NET. Пример кода см. в разделе [действия скрипта](/dotnet/api/overview/azure/hdinsight?view=azure-dotnet&preserve-view=true#script-actions).
+Пакет SDK HDInsight для .NET предоставляет клиентские библиотеки, которые упрощают работу с кластерами HDInsight из приложения .NET. Пример кода см. в разделе [действия скрипта](/dotnet/api/overview/azure/hdinsight#script-actions).
 
 ## <a name="script-action-to-a-running-cluster"></a>Действие скрипта в работающем кластере
 
@@ -220,7 +220,7 @@ Status            : Succeeded
 
     В приведенной ниже таблице описываются элементы формы.
 
-    | Свойство | Значение |
+    | Свойство. | Значение |
     | --- | --- |
     | Выберите скрипт | Чтобы использовать собственный скрипт, выберите __Пользовательский__. В противном случае выберите предоставленный скрипт. |
     | Имя |Укажите имя для действия сценария. |
@@ -328,7 +328,7 @@ NodeTypes       : {HeadNode, WorkerNode}
 > [!NOTE]  
 > В этом примере также показано, как установить приложение HDInsight с помощью пакета SDK для .NET.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Разработка действий сценариев с помощью HDInsight](hdinsight-hadoop-script-actions-linux.md)
 * [Добавление дополнительных учетных записей хранения Azure в HDInsight](hdinsight-hadoop-add-storage.md)

@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 10/06/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 27af230f8fa157f76865bd38a48c17640491d7db
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.openlocfilehash: 1404dfd25f4e80e0e05c0071da649cacfa45dac0
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98896195"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102437763"
 ---
 # <a name="manage-an-azure-stack-edge-pro-gpu-device-via-windows-powershell"></a>Управление устройством GPU Azure Stack с помощью Windows PowerShell
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 Azure Stack пограничных решений Pro позволяет обрабатывать данные и передавать их по сети в Azure. В этой статье описываются некоторые задачи по настройке и управлению для устройства на Azure Stack пограничной Pro. Для управления устройством можно использовать портал Azure, локальный веб-интерфейс или интерфейс Windows PowerShell.
 
@@ -121,7 +123,7 @@ For more information on certificates, go to [Azure IoT Edge certificates](../iot
     - `FullLogCollection`: Этот параметр гарантирует, что пакет журнала будет содержать все журналы вычислений. По умолчанию пакет журналов содержит только подмножество журналов.
 
 
-## <a name="change-kubernetes-pod-and-service-subnets"></a>Изменение Kubernetes Pod и подсетей службы
+## <a name="change-kubernetes-pod-and-service-subnets"></a>Изменение подсетей службы и модуля pod Kubernetes
 
 По умолчанию Kubernetes Azure Stack на пограничном устройстве использует подсети 172.27.0.0/16 и 172.28.0.0/16 для модуля Pod и службы соответственно. Если эти подсети уже используются в сети, можно выполнить `Set-HcsKubeClusterNetworkInfo` командлет, чтобы изменить эти подсети.
 

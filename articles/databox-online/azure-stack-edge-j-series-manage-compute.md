@@ -6,18 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.author: alkohli
-ms.openlocfilehash: bd49edcfaca781ac3d36fbf871ec146b32c64ae3
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 99068a68c5d35bc6a501c5860d0bbc9ea3e3f368
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101733420"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102436991"
 ---
 # <a name="manage-compute-on-your-azure-stack-edge-pro-gpu"></a>Управление расчетами на GPU Azure Stack.
 
-<!--[!INCLUDE [applies-to-skus](../../includes/azure-stack-edge-applies-to-all-sku.md)]-->
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этой статье описывается, как управлять расчетами с помощью службы IoT Edge на устройстве Azure Stack с ГРАФИЧЕСКИм стандартом Pro. Вы можете управлять вычислениями на портале Azure или с помощью локального пользовательского веб-интерфейса. Используйте портал Azure для управления модулями, триггерами и конфигурацией IoT Edge, а также локальным веб-ИНТЕРФЕЙСом для управления параметрами вычислений сети.
 
@@ -37,7 +37,7 @@ ms.locfileid: "101733420"
 
 1. В портал Azure перейдите к ресурсу Azure Stackного периметра и перейдите к **IOT Edge**. Перейдите к **переключателям** и выберите **+ добавить триггер** на панели команд.
 
-    ![Выбор команды добавления триггера](media/azure-stack-edge-j-series-manage-compute/add-trigger-1m.png)
+    ![Выбор команды добавления триггера](media/azure-stack-edge-j-series-manage-compute/add-trigger-1-m.png)
 
 2. В колонке **Добавить триггер** укажите уникальное имя для своего триггера.
     

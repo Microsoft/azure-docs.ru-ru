@@ -6,18 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 01/27/2021
+ms.date: 02/21/2021
 ms.author: alkohli
-ms.openlocfilehash: 8ecd1a99d41dc1391e6dba129d50eb53a67843d1
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.openlocfilehash: 8ebc7da1c091e5e3102ccc9dd73fc0303b97cd55
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98955385"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102436912"
 ---
 # <a name="set-azure-resource-manager-password-on-azure-stack-edge-pro-gpu-device"></a>Задание Azure Resource Manager пароля для устройства GPU Pro на Azure Stack
 
-<!--[!INCLUDE [applies-to-skus](../../includes/azure-stack-edge-applies-to-all-sku.md)]-->
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этой статье описывается, как задать пароль Azure Resource Manager. Этот пароль необходимо задать при подключении к локальным API-интерфейсам устройства через Azure Resource Manager.
 

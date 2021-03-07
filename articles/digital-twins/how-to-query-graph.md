@@ -8,12 +8,12 @@ ms.date: 11/19/2020
 ms.topic: how-to
 ms.service: digital-twins
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: 3a5c98b3fad76d2206d1fcba79663063e22ecdbc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a38af4c942de280e7b1c094885a1ede6774ead56
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101737976"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102433222"
 ---
 # <a name="query-the-azure-digital-twins-twin-graph"></a>Запрос к графу Azure Digital двойников двойника
 
@@ -220,11 +220,11 @@ ms.locfileid: "101737976"
 
 Вы можете напрямую вызывать API или использовать один из [пакетов SDK](how-to-use-apis-sdks.md#overview-data-plane-apis) , доступных для Azure Digital двойников.
 
-В следующем фрагменте кода показан вызов [пакета SDK .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet&preserve-view=true) из клиентского приложения:
+В следующем фрагменте кода показан вызов [пакета SDK .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client) из клиентского приложения:
 
 :::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/queries.cs" id="RunQuery":::
 
-Запрос, используемый в этом вызове, возвращает список цифровых двойников, представленный в приведенном выше примере с объектами [басикдигиталтвин](/dotnet/api/azure.digitaltwins.core.basicdigitaltwin?view=azure-dotnet&preserve-view=true) . Тип возвращаемых данных для каждого запроса будет зависеть от условий, указанных в `SELECT` инструкции.
+Запрос, используемый в этом вызове, возвращает список цифровых двойников, представленный в приведенном выше примере с объектами [басикдигиталтвин](/dotnet/api/azure.digitaltwins.core.basicdigitaltwin) . Тип возвращаемых данных для каждого запроса будет зависеть от условий, указанных в `SELECT` инструкции.
 * Запросы, начинающиеся с, `SELECT * FROM ...` будут возвращать список цифровых двойников (которые могут быть сериализованы как `BasicDigitalTwin` объекты или другие пользовательские типы цифровых двойника, которые могли быть созданы).
 * Запросы, начинающиеся в формате, `SELECT <A>, <B>, <C> FROM ...` будут возвращать словарь с ключами `<A>` , `<B>` и `<C>` .
 * Другие форматы `SELECT` инструкций могут быть сформированы для возврата пользовательских данных. Вы можете создать собственные классы для управления очень настраиваемыми результирующими наборами. 

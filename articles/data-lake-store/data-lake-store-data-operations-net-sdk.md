@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/03/2020
 ms.author: twooley
 ms.custom: devx-track-dotnet
-ms.openlocfilehash: cb6d5fafa8d956c296124c5a20f8a087160961da
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.openlocfilehash: faa539119bbb8d73e66788b8ba472cf0db26a2e4
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92109244"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102431743"
 ---
 # <a name="filesystem-operations-on-data-lake-storage-gen1-using-the-net-sdk"></a>Операции файловой системы на Data Lake Storage 1-го поколения с помощью пакета SDK для .NET
 
@@ -41,8 +41,8 @@ ms.locfileid: "92109244"
 На [сайте GitHub](https://github.com/Azure-Samples/data-lake-store-adls-dot-net-get-started/tree/master/AdlsSDKGettingStarted) доступен пример кода, который используется для создания файлов в хранилище, объединения и скачивания файлов, а также для удаления файлов из хранилища. В этом разделе статьи рассматриваются основные части этого кода.
 
 1. В Visual Studio выберите меню **файл** , **создать**, а затем **проект**.
-1. Выберите **консольное приложение (.NET Framework)**, а затем нажмите кнопку **Далее**.
-1. В окне**Имя проекта** введите `CreateADLApplication`, а затем выберите **Создать**.
+1. Выберите **консольное приложение (платформа .NET Framework)**, а затем нажмите кнопку **Далее**.
+1. В окне **Имя проекта** введите `CreateADLApplication`, а затем выберите **Создать**.
 1. Добавьте пакеты NuGet в проект.
 
    1. В обозревателе решений щелкните правой кнопкой мыши имя проекта и выберите пункт **Управление пакетами NuGet**.
@@ -159,7 +159,7 @@ PrintDirectoryEntry(directoryEntry);
 
 Определение `PrintDirectoryEntry` метода доступно как часть примера [на GitHub](https://github.com/Azure-Samples/data-lake-store-adls-dot-net-get-started/tree/master/AdlsSDKGettingStarted).
 
-## <a name="rename-a-file"></a>Переименование файла
+## <a name="rename-a-file"></a>Переименуйте файл
 
 Следующий фрагмент кода переименовывает имеющийся файл в учетной записи Data Lake Storage 1-го поколения.
 
@@ -202,7 +202,7 @@ client.DeleteRecursive("/Test");
 ## <a name="see-also"></a>См. также раздел
 
 * [Операции управления учетными записями в Data Lake Storage 1-го поколения c использованием пакета SDK для .NET](data-lake-store-get-started-net-sdk.md)
-* [Библиотеки Azure Data Lake Store для .NET](/dotnet/api/overview/azure/data-lake-store?view=azure-dotnet)
+* [Библиотеки Azure Data Lake Store для .NET](/dotnet/api/overview/azure/data-lake-store)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

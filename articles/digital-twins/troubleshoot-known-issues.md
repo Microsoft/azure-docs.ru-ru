@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.service: digital-twins
 ms.date: 07/14/2020
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: d7d97ca1eb590fb96789d439243dd04d6143a960
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: 641b44a5e21e6646c07e6e1511e1c4ff01707f79
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102203153"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102434106"
 ---
 # <a name="known-issues-in-azure-digital-twins"></a>Известные проблемы в службе Digital двойников
 
@@ -37,7 +37,7 @@ ms.locfileid: "102203153"
 
 ## <a name="issue-with-interactive-browser-authentication-on-azureidentity-120"></a>Выдача проверки подлинности интерактивного браузера в Azure. Identity 1.2.0
 
-**Описание проблемы:** При написании кода проверки подлинности в приложениях Azure Digital двойников с помощью версии **1.2.0** **библиотеки [Azure. Identity](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true)** могут возникнуть проблемы с методом [интерактивебровсеркредентиал](/dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet&preserve-view=true) . Это сообщение об ошибке "Azure. Identity. Аусентикатионфаиледексцептион" при попытке проверки подлинности в окне браузера. Окно браузера может не запуститься полностью или появилось для успешного выполнения проверки подлинности пользователя, в то время как клиентское приложение по-прежнему завершается с ошибкой.
+**Описание проблемы:** При написании кода проверки подлинности в приложениях Azure Digital двойников с помощью версии **1.2.0** **библиотеки [Azure. Identity](/dotnet/api/azure.identity)** могут возникнуть проблемы с методом [интерактивебровсеркредентиал](/dotnet/api/azure.identity.interactivebrowsercredential) . Это сообщение об ошибке "Azure. Identity. Аусентикатионфаиледексцептион" при попытке проверки подлинности в окне браузера. Окно браузера может не запуститься полностью или появилось для успешного выполнения проверки подлинности пользователя, в то время как клиентское приложение по-прежнему завершается с ошибкой.
 
 | Влияет ли это на меня? | Причина | Решение |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ ms.locfileid: "102203153"
 
 ## <a name="issue-with-default-azure-credential-authentication-on-azureidentity-130"></a>Проблемы с проверкой подлинности Azure по умолчанию для Azure. Identity 1.3.0
 
-**Описание проблемы:** При написании кода проверки подлинности с помощью версии **1.3.0** **библиотеки [Azure. Identity](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true)** некоторые пользователи столкнулись с проблемами в методе [дефаултазурекредентиал](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet?view=azure-dotnet&preserve-view=true) , который используется во многих примерах в этих документах цифровой двойников Azure. Это сообщение об ошибке "Azure. Identity. Аусентикатионфаиледексцептион: сбой проверки подлинности Шаредтокенкачекредентиал", когда код пытается выполнить аутентификацию.
+**Описание проблемы:** При написании кода проверки подлинности с помощью версии **1.3.0** **библиотеки [Azure. Identity](/dotnet/api/azure.identity)** некоторые пользователи столкнулись с проблемами в методе [дефаултазурекредентиал](/dotnet/api/azure.identity.defaultazurecredential) , который используется во многих примерах в этих документах цифровой двойников Azure. Это сообщение об ошибке "Azure. Identity. Аусентикатионфаиледексцептион: сбой проверки подлинности Шаредтокенкачекредентиал", когда код пытается выполнить аутентификацию.
 
 | Влияет ли это на меня? | Причина | Решение |
 | --- | --- | --- |

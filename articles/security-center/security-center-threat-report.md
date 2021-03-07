@@ -1,24 +1,18 @@
 ---
 title: Отчет об анализе угроз, предоставляемый центром безопасности Azure | Документация Майкрософт
 description: Эта страница поможет вам использовать отчеты по аналитике угроз центра безопасности Azure во время расследования, чтобы найти дополнительные сведения об оповещениях системы безопасности.
-services: security-center
-documentationcenter: na
 author: memildin
 manager: rkarlin
-ms.assetid: 5662e312-e8c2-4736-974e-576eeb333484
 ms.service: security-center
-ms.devlang: na
 ms.topic: how-to
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 06/15/2020
 ms.author: memildin
-ms.openlocfilehash: f9b3fd0000a1b5dbba00995c37f96a89319de0e1
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: ec6d227059c3f4fd1285f224e13169a2479bc65f
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91440492"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102438239"
 ---
 # <a name="azure-security-center-threat-intelligence-report"></a>Отчет об анализе угроз в центре безопасности Azure
 
@@ -71,7 +65,7 @@ ms.locfileid: "91440492"
 
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 На этой странице описано, как открыть отчеты по анализу угроз при изучении оповещений системы безопасности. Связанные сведения см. на следующих страницах:
 

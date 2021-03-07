@@ -3,12 +3,12 @@ title: Определение причин несоответствия треб
 description: Если ресурс не соответствует требованиям, возможных причин этого множество. Узнайте, как находить то, что привело к несоответствию.
 ms.date: 09/30/2020
 ms.topic: how-to
-ms.openlocfilehash: df1eefec782835838add0beb8939bf4ff1a8a194
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: a8168bf22aceaf5cbdec4b1346801aa62b7aa4ee
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91541277"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102439839"
 ---
 # <a name="determine-causes-of-non-compliance"></a>Определение причин несоответствия требованиям
 
@@ -40,7 +40,7 @@ ms.locfileid: "91541277"
 
 1. Панель **Сведения о соответствии** отображает информацию от последней оценки ресурса до назначения текущей политики. В этом примере поле **Microsoft. SQL/Servers/Version** содержит _12.0_, в то время как определение политики ожидало _14.0_. Если ресурс не соответствует требованиям по нескольким причинам, каждая из них отображается на этой панели.
 
-   :::image type="content" source="../media/determine-non-compliance/compliance-details-pane.png" alt-text="Снимок экрана со ссылкой &quot;Просмотр сведений о соответствии&quot; на вкладке &quot;соответствие ресурсов&quot;." border="false":::
+   :::image type="content" source="../media/determine-non-compliance/compliance-details-pane.png" alt-text="Снимок экрана с областью сведений о соответствии и причинами несоответствия, что текущее значение равно двенадцати, а целевое значение — четырнадцать." border="false":::
 
    Для определения политики **auditIfNotExists** или **deployIfNotExists** сведения включают в себя свойство **details.type** и любые дополнительные свойства. Список см. в разделах [свойства auditIfNotExists](../concepts/effects.md#auditifnotexists-properties) и [свойства deployIfNotExists](../concepts/effects.md#deployifnotexists-properties). **Последний оцененный ресурс** — это связанный ресурс из раздела **сведений** определения.
 
@@ -69,7 +69,7 @@ ms.locfileid: "91541277"
    }
    ```
 
-   :::image type="content" source="../media/determine-non-compliance/compliance-details-pane-existence.png" alt-text="Снимок экрана со ссылкой &quot;Просмотр сведений о соответствии&quot; на вкладке &quot;соответствие ресурсов&quot;." border="false":::
+   :::image type="content" source="../media/determine-non-compliance/compliance-details-pane-existence.png" alt-text="Снимок экрана области сведений о соответствии для Ифнотексистс, включая вычисленное количество ресурсов." border="false":::
 
 > [!NOTE]
 > Для защиты данных, если значение свойства является _секретом_, текущее значение отображает звездочки.
@@ -108,7 +108,7 @@ ms.locfileid: "91541277"
 
 Для назначений в [режиме поставщика ресурсов](../concepts/definition-structure.md#resource-manager-modes)выберите _несоответствующий_ ресурс, чтобы открыть более глубокое представление. На вкладке **соответствие компонентов** представлены дополнительные сведения, относящиеся к режиму поставщика ресурсов в назначенной политике, отображающей _несоответствующий_ **компонент** и **идентификатор компонента**.
 
-:::image type="content" source="../media/getting-compliance-data/compliance-components.png" alt-text="Снимок экрана со ссылкой &quot;Просмотр сведений о соответствии&quot; на вкладке &quot;соответствие ресурсов&quot;." border="false":::
+:::image type="content" source="../media/getting-compliance-data/compliance-components.png" alt-text="Снимок экрана с вкладкой соответствия компонентов и сведениями о соответствии для назначения режима поставщика ресурсов." border="false":::
 
 ## <a name="compliance-details-for-guest-configuration"></a>Сведения о соответствии для гостевой конфигурации
 
@@ -122,76 +122,11 @@ ms.locfileid: "91541277"
 
 В области сведения о соответствии выберите ссылку **последний оцененный ресурс**.
 
-:::image type="content" source="../media/determine-non-compliance/guestconfig-auditifnotexists-compliance.png" alt-text="Снимок экрана со ссылкой &quot;Просмотр сведений о соответствии&quot; на вкладке &quot;соответствие ресурсов&quot;." border="false":::
+:::image type="content" source="../media/determine-non-compliance/guestconfig-auditifnotexists-compliance.png" alt-text="Снимок экрана: Просмотр сведений о соответствии определения помощью параметров auditifnotexists." border="false":::
 
 На странице **Назначение гостей** отображаются все доступные сведения о соответствии. Каждая строка в представлении представляет собой оценку выполненную внутри виртуальной машины. В столбце **Причина** отображается фраза, в которой описывается, почему назначение гостя _Не соответствует_ требованиям. Например, при аудите политик паролей в столбце **Причина** будет отображаться текст, включающий текущее значение для каждого параметра.
 
-:::image type="content" source="../media/determine-non-compliance/guestconfig-compliance-details.png" alt-text="Снимок экрана со ссылкой &quot;Просмотр сведений о соответствии&quot; на вкладке &quot;соответствие ресурсов&quot;." border="false":::
-
-### <a name="azure-powershell"></a>Azure PowerShell
-
-Также можно просмотреть сведения о соответствии из Azure PowerShell. Сначала убедитесь, что на вашем компьютере установлен модуль гостевой конфигурации.
-
-```azurepowershell-interactive
-Install-Module Az.GuestConfiguration
-```
-
-Вы можете просмотреть текущее состояние всех назначений гостей для виртуальной машины с помощью следующей команды:
-
-```azurepowershell-interactive
-Get-AzVMGuestPolicyStatus -ResourceGroupName <resourcegroupname> -VMName <vmname>
-```
-
-```output
-PolicyDisplayName                                                         ComplianceReasons
------------------                                                         -----------------
-Audit that an application is installed inside Windows VMs                 {[InstalledApplication]bwhitelistedapp}
-Audit that an application is not installed inside Windows VMs.            {[InstalledApplication]NotInstalledApplica...
-```
-
-Чтобы просмотреть только фразу _причина_, описывающую, почему виртуальная машина имеет статус _Не соответствует_, возвращайте только свойство дочернего элемента Reason (Причина).
-
-```azurepowershell-interactive
-Get-AzVMGuestPolicyStatus -ResourceGroupName <resourcegroupname> -VMName <vmname> | % ComplianceReasons | % Reasons | % Reason
-```
-
-```output
-The following applications are not installed: '<name>'.
-```
-
-Вы также можете вывести журнал соответствия для назначений гостей в области действия для виртуальной машины. Выходные данные этой команды содержат подробности каждого отчета для виртуальной машины.
-
-> [!NOTE]
-> Это может быть большой объем данных. Рекомендуется сохранить выходные данные для последующего использования.
-
-```azurepowershell-interactive
-$guestHistory = Get-AzVMGuestPolicyStatusHistory -ResourceGroupName <resourcegroupname> -VMName <vmname>
-$guestHistory
-```
-
-```output
-PolicyDisplayName                                                         ComplianceStatus ComplianceReasons StartTime              EndTime                VMName LatestRepor
-                                                                                                                                                                  tId
------------------                                                         ---------------- ----------------- ---------              -------                ------ -----------
-[Preview]: Audit that an application is installed inside Windows VMs      NonCompliant                       02/10/2019 12:00:38 PM 02/10/2019 12:00:41 PM VM01  ../17fg0...
-<truncated>
-```
-
-Чтобы упростить это представление, используйте параметр **ShowChanged**. Выходные данные этой команды включают только отчеты, которые следуют за изменением состояния соответствия.
-
-```azurepowershell-interactive
-$guestHistory = Get-AzVMGuestPolicyStatusHistory -ResourceGroupName <resourcegroupname> -VMName <vmname> -ShowChanged
-$guestHistory
-```
-
-```output
-PolicyDisplayName                                                         ComplianceStatus ComplianceReasons StartTime              EndTime                VMName LatestRepor
-                                                                                                                                                                  tId
------------------                                                         ---------------- ----------------- ---------              -------                ------ -----------
-Audit that an application is installed inside Windows VMs                 NonCompliant                       02/10/2019 10:00:38 PM 02/10/2019 10:00:41 PM VM01  ../12ab0...
-Audit that an application is installed inside Windows VMs.                Compliant                          02/09/2019 11:00:38 AM 02/09/2019 11:00:39 AM VM01  ../e3665...
-Audit that an application is installed inside Windows VMs                 NonCompliant                       02/09/2019 09:00:20 AM 02/09/2019 09:00:23 AM VM01  ../15ze1...
-```
+:::image type="content" source="../media/determine-non-compliance/guestconfig-compliance-details.png" alt-text="Снимок экрана сведений о соответствии для назначения гостей." border="false":::
 
 ## <a name="change-history-preview"></a><a name="change-history"></a>Журнал изменений (предварительная версия)
 
@@ -205,11 +140,11 @@ Audit that an application is installed inside Windows VMs                 NonCom
 
 1. На странице **Соответствие ресурсов** выберите вкладку **Журнал изменений (предварительная версия)** . После этого отобразится список обнаруженных изменений (при наличии).
 
-   :::image type="content" source="../media/determine-non-compliance/change-history-tab.png" alt-text="Снимок экрана со ссылкой &quot;Просмотр сведений о соответствии&quot; на вкладке &quot;соответствие ресурсов&quot;." border="false":::
+   :::image type="content" source="../media/determine-non-compliance/change-history-tab.png" alt-text="Снимок экрана вкладки &quot;журнал изменений&quot; и обнаружено время изменения на странице соответствия ресурсов." border="false":::
 
 1. Выберите одно из обнаруженных изменений. _Отличия между визуальными элементами_ для ресурса представлены на странице **Журнал изменений**.
 
-   :::image type="content" source="../media/determine-non-compliance/change-history-visual-diff.png" alt-text="Снимок экрана со ссылкой &quot;Просмотр сведений о соответствии&quot; на вкладке &quot;соответствие ресурсов&quot;." border="false":::
+   :::image type="content" source="../media/determine-non-compliance/change-history-visual-diff.png" alt-text="Снимок экрана: визуальное различие в журнале изменений для состояния &quot;до&quot; и &quot;после&quot; на странице &quot;журнал изменений&quot;." border="false":::
 
 _Отличия между визуальными элементами_ позволяют обнаружить изменения ресурса. Обнаруженные изменения могут не быть связаны с текущим состоянием соответствия ресурса.
 

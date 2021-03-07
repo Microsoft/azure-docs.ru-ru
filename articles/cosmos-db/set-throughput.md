@@ -6,12 +6,12 @@ ms.author: mjbrown
 ms.service: cosmos-db
 ms.topic: conceptual
 ms.date: 01/25/2021
-ms.openlocfilehash: d39ade2536b96bf5e665ecfc01e81232f2fec075
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 1d5fba12ce9b1ce8d30c59a08aa36e1222abe3c7
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102217947"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102433936"
 ---
 # <a name="introduction-to-provisioned-throughput-in-azure-cosmos-db"></a>Общие сведения о подготовленной пропускной способности в Azure Cosmos DB
 [!INCLUDE[appliesto-all-apis](includes/appliesto-all-apis.md)]
@@ -98,12 +98,12 @@ Azure Cosmos DB дает возможность настроить подгот�
 
 Подготовленную пропускную способность контейнера или базы данных можно получить в портал Azure или с помощью пакетов SDK:
 
-* [Container. реадсраугхпутасинк](/dotnet/api/microsoft.azure.cosmos.container.readthroughputasync?view=azure-dotnet&preserve-view=true) в пакете SDK для .NET.
+* [Container. реадсраугхпутасинк](/dotnet/api/microsoft.azure.cosmos.container.readthroughputasync) в пакете SDK для .NET.
 * [Космосконтаинер. реадсраугхпут](/java/api/com.azure.cosmos.cosmosasynccontainer.readthroughput) в пакете SDK для Java.
 
 Ответ этих методов также содержит [минимальную подготовленную пропускную способность](concepts-limits.md#storage-and-database-operations) для контейнера или базы данных:
 
-* [Сраугхпутреспонсе. минсраугхпут](/dotnet/api/microsoft.azure.cosmos.throughputresponse.minthroughput?view=azure-dotnet&preserve-view=true) в пакете SDK для .NET.
+* [Сраугхпутреспонсе. минсраугхпут](/dotnet/api/microsoft.azure.cosmos.throughputresponse.minthroughput) в пакете SDK для .NET.
 * [Сраугхпутреспонсе. жетминсраугхпут ()](/java/api/com.azure.cosmos.models.throughputresponse.getminthroughput) в пакете SDK для Java.
 
 Фактический минимальный номер единицы запросов в секунду может различаться в зависимости от конфигурации учетной записи. Но обычно это максимальное значение:
@@ -116,7 +116,7 @@ Azure Cosmos DB дает возможность настроить подгот�
 
 Вы можете масштабировать подготовленную пропускную способность контейнера или базы данных с помощью портал Azure или пакетов SDK:
 
-* [Container. реплацесраугхпутасинк](/dotnet/api/microsoft.azure.cosmos.container.replacethroughputasync?view=azure-dotnet&preserve-view=true) в пакете SDK для .NET.
+* [Container. реплацесраугхпутасинк](/dotnet/api/microsoft.azure.cosmos.container.replacethroughputasync) в пакете SDK для .NET.
 * [Космосконтаинер. реплацесраугхпут](/java/api/com.azure.cosmos.cosmosasynccontainer.replacethroughput) в пакете SDK для Java.
 
 Если вы **уменьшаете подготовленную пропускную способность**, вы сможете сделать это как [минимум](#current-provisioned-throughput).
@@ -128,7 +128,7 @@ Azure Cosmos DB дает возможность настроить подгот�
 
 Можно программно проверить ход выполнения масштабирования, прочитав [текущую подготовленную пропускную способность](#current-provisioned-throughput) и используя:
 
-* [Сраугхпутреспонсе. исреплацепендинг](/dotnet/api/microsoft.azure.cosmos.throughputresponse.isreplacepending?view=azure-dotnet&preserve-view=true) в пакете SDK для .NET.
+* [Сраугхпутреспонсе. исреплацепендинг](/dotnet/api/microsoft.azure.cosmos.throughputresponse.isreplacepending) в пакете SDK для .NET.
 * [Сраугхпутреспонсе. исреплацепендинг ()](/java/api/com.azure.cosmos.models.throughputresponse.isreplacepending) в пакете SDK для Java.
 
 [Azure Monitor метрики](monitor-cosmos-db.md#view-operation-level-metrics-for-azure-cosmos-db) можно использовать для просмотра журнала подготовленной пропускной способности (единиц запросов в секунду) и хранилища в ресурсе.
