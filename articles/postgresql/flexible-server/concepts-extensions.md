@@ -5,13 +5,13 @@ author: lfittl-msft
 ms.author: lufittl
 ms.service: postgresql
 ms.topic: conceptual
-ms.date: 09/23/2020
-ms.openlocfilehash: 7e9268f69b0ec8d06cd86fe5aec19a46b20a3a76
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/05/2021
+ms.openlocfilehash: 70f54fc111bfd9443f988619cb2b86303fd3f07b
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91710589"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102443392"
 ---
 # <a name="postgresql-extensions-in-azure-database-for-postgresql---flexible-server"></a>Расширения PostgreSQL в базе данных Azure для PostgreSQL-гибкого сервера
 
@@ -36,14 +36,14 @@ PostgreSQL предоставляет возможность расширить 
 > |[address_standardizer](http://postgis.net/docs/Address_Standardizer.html)         | 3.0.0           | Используются для анализа адреса в составных элементы. |
 > |[address_standardizer_data_us](http://postgis.net/docs/Address_Standardizer.html) | 3.0.0           | Пример набора данных для стандартизации адресов США|
 > |[амчекк](https://www.postgresql.org/docs/12/amcheck.html)                    | 1.2             | функции для проверки целостности отношений|
-> |[раскрытия](https://www.postgresql.org/docs/12/bloom.html)                    | 1.0             | метод доступа раскрытия — индекс на основе файла сигнатуры|
+> |[раскрытия](https://www.postgresql.org/docs/12/bloom.html)                    | 1,0             | метод доступа раскрытия — индекс на основе файла сигнатуры|
 > |[btree_gin](https://www.postgresql.org/docs/12/btree-gin.html)                    | 1,3             | Поддержка индексирования общих типов в Ло|
 > |[btree_gist](https://www.postgresql.org/docs/12/btree-gist.html)                   | 1.5             | Поддержка индексирования общих типов в реестрах|
 > |[citext](https://www.postgresql.org/docs/12/citext.html)                       | 1.6             | тип данных для символьных строк без учета регистра|
 > |[Куба](https://www.postgresql.org/docs/12/cube.html)                         | 1.4             | тип данных для многомерных кубов|
 > |[dblink](https://www.postgresql.org/docs/12/dblink.html)                       | 1.2             | подключение к другим базам данных PostgreSQL из базы данных|
-> |[dict_int](https://www.postgresql.org/docs/12/dict-int.html)                     | 1.0             | шаблон словаря поиска текста для целых чисел|
-> |[dict_xsyn](https://www.postgresql.org/docs/12/dict-xsyn.html)                     | 1.0             | шаблон словаря поиска текста для обработки расширенных синонимов|
+> |[dict_int](https://www.postgresql.org/docs/12/dict-int.html)                     | 1,0             | шаблон словаря поиска текста для целых чисел|
+> |[dict_xsyn](https://www.postgresql.org/docs/12/dict-xsyn.html)                     | 1,0             | шаблон словаря поиска текста для обработки расширенных синонимов|
 > |[earthdistance](https://www.postgresql.org/docs/12/earthdistance.html)                | 1,1             | Вычислите большие расстояния на поверхности земли|
 > |[fuzzystrmatch](https://www.postgresql.org/docs/12/fuzzystrmatch.html)                | 1,1             | определение сходства и расстояния между строками|
 > |[hstore](https://www.postgresql.org/docs/12/hstore.html)                       | 1.6             | тип данных для хранения наборов пар (ключ, значение)|
@@ -53,6 +53,7 @@ PostgreSQL предоставляет возможность расширить 
 > |[ltree](https://www.postgresql.org/docs/12/ltree.html)                        | 1,1             | тип данных для иерархических структур, схожих с деревом|
 > |[пажеинспект](https://www.postgresql.org/docs/12/pageinspect.html)                        | 1.7             | Проверка содержимого страниц базы данных на низком уровне|
 > |[pg_buffercache](https://www.postgresql.org/docs/12/pgbuffercache.html)               | 1,3             | Проверка общего кэша буфера|
+> |[pg_cron](https://github.com/citusdata/pg_cron)                        | 1.2             | Планировщик заданий для PostgreSQL|
 > |[pg_freespacemap](https://www.postgresql.org/docs/12/pgfreespacemap.html)               | 1.2             | изучение схемы свободного места (FSM)|
 > |[pg_prewarm](https://www.postgresql.org/docs/12/pgprewarm.html)                   | 1.2             | предтеплое отношение данных|
 > |[pg_stat_statements](https://www.postgresql.org/docs/12/pgstatstatements.html)           | 1.7             | Трассировка статистики выполнения всех выполненных инструкций SQL|
@@ -60,18 +61,19 @@ PostgreSQL предоставляет возможность расширить 
 > |[pg_visibility](https://www.postgresql.org/docs/12/pgvisibility.html)                      | 1.2             | Проверка сведений о видимости (на виртуальной машине) и видимости на уровне страницы|
 > |[пгаудит](https://www.pgaudit.org/)                     | 1.4             | предоставляет функции аудита|
 > |[pgcrypto](https://www.postgresql.org/docs/12/pgcrypto.html)                     | 1,3             | криптографические функции|
+> |[пглогикал](https://github.com/2ndQuadrant/pglogical)                        | 2.3.2             | Логическая репликация PostgreSQL|
 > |[pgrowlocks](https://www.postgresql.org/docs/12/pgrowlocks.html)                   | 1.2             | показывать сведения о блокировке на уровне строк|
 > |[pgstattuple](https://www.postgresql.org/docs/12/pgstattuple.html)                  | 1.5             | Отображение статистики на уровне кортежей|
-> |[plpgsql](https://www.postgresql.org/docs/12/plpgsql.html)                      | 1.0             | Процедурный язык PL/pgSQL|
+> |[plpgsql](https://www.postgresql.org/docs/12/plpgsql.html)                      | 1,0             | Процедурный язык PL/pgSQL|
 > |[PostGIS](https://www.postgis.net/)                      | 3.0.0           | PostGIS геометрия, география |
 > |[postgis_raster](https://www.postgis.net/)               | 3.0.0           | Растровые типы и функции PostGIS| 
 > |[postgis_sfcgal](https://www.postgis.net/)               | 3.0.0           | Функции СФКГАЛ PostGIS|
 > |[postgis_tiger_geocoder](https://www.postgis.net/)       | 3.0.0           | PostGIS Tiger для геокодирования и инвертированного геокодирования|
 > |[postgis_topology](https://postgis.net/docs/Topology.html)             | 3.0.0           | Пространственные типы и функции топологии PostGIS|
-> |[postgres_fdw](https://www.postgresql.org/docs/12/postgres-fdw.html)                 | 1.0             | оболочка внешних данных для удаленных серверов PostgreSQL|
+> |[postgres_fdw](https://www.postgresql.org/docs/12/postgres-fdw.html)                 | 1,0             | оболочка внешних данных для удаленных серверов PostgreSQL|
 > |[сслинфо](https://www.postgresql.org/docs/12/sslinfo.html)                    | 1.2             | сведения о SSL-сертификатах|
-> |[tsm_system_rows](https://www.postgresql.org/docs/12/tsm-system-rows.html)                    | 1.0             |  Метод TABLESAMPLE, который принимает число строк в качестве ограничения|
-> |[tsm_system_time](https://www.postgresql.org/docs/12/tsm-system-time.html)                    | 1.0             |  Метод TABLESAMPLE, который принимает в качестве ограничения время в миллисекундах|
+> |[tsm_system_rows](https://www.postgresql.org/docs/12/tsm-system-rows.html)                    | 1,0             |  Метод TABLESAMPLE, который принимает число строк в качестве ограничения|
+> |[tsm_system_time](https://www.postgresql.org/docs/12/tsm-system-time.html)                    | 1,0             |  Метод TABLESAMPLE, который принимает в качестве ограничения время в миллисекундах|
 > |[unaccent](https://www.postgresql.org/docs/12/unaccent.html)                     | 1,1             | словарь поиска текста, который удаляет диакритические знаки|
 > |[uuid-ossp](https://www.postgresql.org/docs/12/uuid-ossp.html)                    | 1,1             | создать универсальные уникальные идентификаторы (UUID)|
 
@@ -85,14 +87,14 @@ PostgreSQL предоставляет возможность расширить 
 > |[address_standardizer](http://postgis.net/docs/Address_Standardizer.html)         | 2.5.1           | Используются для анализа адреса в составных элементы. |
 > |[address_standardizer_data_us](http://postgis.net/docs/Address_Standardizer.html) | 2.5.1           | Пример набора данных для стандартизации адресов США|
 > |[амчекк](https://www.postgresql.org/docs/11/amcheck.html)                    | 1,1             | функции для проверки целостности отношений|
-> |[раскрытия](https://www.postgresql.org/docs/11/bloom.html)                    | 1.0             | метод доступа раскрытия — индекс на основе файла сигнатуры|
+> |[раскрытия](https://www.postgresql.org/docs/11/bloom.html)                    | 1,0             | метод доступа раскрытия — индекс на основе файла сигнатуры|
 > |[btree_gin](https://www.postgresql.org/docs/11/btree-gin.html)                    | 1,3             | Поддержка индексирования общих типов в Ло|
 > |[btree_gist](https://www.postgresql.org/docs/11/btree-gist.html)                   | 1.5             | Поддержка индексирования общих типов в реестрах|
 > |[citext](https://www.postgresql.org/docs/11/citext.html)                       | 1.5             | тип данных для символьных строк без учета регистра|
 > |[Куба](https://www.postgresql.org/docs/11/cube.html)                         | 1.4             | тип данных для многомерных кубов|
 > |[dblink](https://www.postgresql.org/docs/11/dblink.html)                       | 1.2             | подключение к другим базам данных PostgreSQL из базы данных|
-> |[dict_int](https://www.postgresql.org/docs/11/dict-int.html)                     | 1.0             | шаблон словаря поиска текста для целых чисел|
-> |[dict_xsyn](https://www.postgresql.org/docs/11/dict-xsyn.html)                     | 1.0             | шаблон словаря поиска текста для обработки расширенных синонимов|
+> |[dict_int](https://www.postgresql.org/docs/11/dict-int.html)                     | 1,0             | шаблон словаря поиска текста для целых чисел|
+> |[dict_xsyn](https://www.postgresql.org/docs/11/dict-xsyn.html)                     | 1,0             | шаблон словаря поиска текста для обработки расширенных синонимов|
 > |[earthdistance](https://www.postgresql.org/docs/11/earthdistance.html)                | 1,1             | Вычислите большие расстояния на поверхности земли|
 > |[fuzzystrmatch](https://www.postgresql.org/docs/11/fuzzystrmatch.html)                | 1,1             | определение сходства и расстояния между строками|
 > |[hstore](https://www.postgresql.org/docs/11/hstore.html)                       | 1.5             | тип данных для хранения наборов пар (ключ, значение)|
@@ -102,6 +104,7 @@ PostgreSQL предоставляет возможность расширить 
 > |[ltree](https://www.postgresql.org/docs/11/ltree.html)                        | 1,1             | тип данных для иерархических структур, схожих с деревом|
 > |[пажеинспект](https://www.postgresql.org/docs/11/pageinspect.html)                        | 1.7             | Проверка содержимого страниц базы данных на низком уровне|
 > |[pg_buffercache](https://www.postgresql.org/docs/11/pgbuffercache.html)               | 1,3             | Проверка общего кэша буфера|
+> |[pg_cron](https://github.com/citusdata/pg_cron)                        | 1.2             | Планировщик заданий для PostgreSQL|
 > |[pg_freespacemap](https://www.postgresql.org/docs/11/pgfreespacemap.html)               | 1.2             | изучение схемы свободного места (FSM)|
 > |[pg_prewarm](https://www.postgresql.org/docs/11/pgprewarm.html)                   | 1.2             | предтеплое отношение данных|
 > |[pg_stat_statements](https://www.postgresql.org/docs/11/pgstatstatements.html)           | 1.6             | Трассировка статистики выполнения всех выполненных инструкций SQL|
@@ -109,18 +112,19 @@ PostgreSQL предоставляет возможность расширить 
 > |[pg_visibility](https://www.postgresql.org/docs/11/pgvisibility.html)                      | 1.2             | Проверка сведений о видимости (на виртуальной машине) и видимости на уровне страницы|
 > |[пгаудит](https://www.pgaudit.org/)                     | 1.3.1             | предоставляет функции аудита|
 > |[pgcrypto](https://www.postgresql.org/docs/11/pgcrypto.html)                     | 1,3             | криптографические функции|
+> |[пглогикал](https://github.com/2ndQuadrant/pglogical)                        | 2.3.2             | Логическая репликация PostgreSQL|
 > |[pgrowlocks](https://www.postgresql.org/docs/11/pgrowlocks.html)                   | 1.2             | показывать сведения о блокировке на уровне строк|
 > |[pgstattuple](https://www.postgresql.org/docs/11/pgstattuple.html)                  | 1.5             | Отображение статистики на уровне кортежей|
-> |[plpgsql](https://www.postgresql.org/docs/11/plpgsql.html)                      | 1.0             | Процедурный язык PL/pgSQL|
+> |[plpgsql](https://www.postgresql.org/docs/11/plpgsql.html)                      | 1,0             | Процедурный язык PL/pgSQL|
 > |[PostGIS](https://www.postgis.net/)                      | 2.5.1           | PostGISие геометрических, географических и растровых пространственных типов и функций|
 > |[postgis_sfcgal](https://www.postgis.net/)               | 2.5.1           | Функции СФКГАЛ PostGIS|
 > |[postgis_tiger_geocoder](https://www.postgis.net/)       | 2.5.1           | PostGIS Tiger для геокодирования и инвертированного геокодирования|
 > |[postgis_topology](https://postgis.net/docs/Topology.html)             | 2.5.1           | Пространственные типы и функции топологии PostGIS|
-> |[postgres_fdw](https://www.postgresql.org/docs/11/postgres-fdw.html)                 | 1.0             | оболочка внешних данных для удаленных серверов PostgreSQL|
+> |[postgres_fdw](https://www.postgresql.org/docs/11/postgres-fdw.html)                 | 1,0             | оболочка внешних данных для удаленных серверов PostgreSQL|
 > |[сслинфо](https://www.postgresql.org/docs/11/sslinfo.html)                    | 1.2             | сведения о SSL-сертификатах|
-> |[tablefunc](https://www.postgresql.org/docs/11/tablefunc.html)                    | 1.0             | функции, управляющие целыми таблицами, включая перекрестный|
-> |[tsm_system_rows](https://www.postgresql.org/docs/11/tsm-system-rows.html)                    | 1.0             |  Метод TABLESAMPLE, который принимает число строк в качестве ограничения|
-> |[tsm_system_time](https://www.postgresql.org/docs/11/tsm-system-time.html)                    | 1.0             |  Метод TABLESAMPLE, который принимает в качестве ограничения время в миллисекундах|
+> |[tablefunc](https://www.postgresql.org/docs/11/tablefunc.html)                    | 1,0             | функции, управляющие целыми таблицами, включая перекрестный|
+> |[tsm_system_rows](https://www.postgresql.org/docs/11/tsm-system-rows.html)                    | 1,0             |  Метод TABLESAMPLE, который принимает число строк в качестве ограничения|
+> |[tsm_system_time](https://www.postgresql.org/docs/11/tsm-system-time.html)                    | 1,0             |  Метод TABLESAMPLE, который принимает в качестве ограничения время в миллисекундах|
 > |[unaccent](https://www.postgresql.org/docs/11/unaccent.html)                     | 1,1             | словарь поиска текста, который удаляет диакритические знаки|
 > |[uuid-ossp](https://www.postgresql.org/docs/11/uuid-ossp.html)                    | 1,1             | создать универсальные уникальные идентификаторы (UUID)|
 
@@ -142,6 +146,6 @@ PostgreSQL предоставляет возможность расширить 
 Существует компромисс между информацией о выполнении запроса, предоставляемой pg_stat_statements, и воздействием на производительность сервера при регистрации каждой инструкции SQL. Если расширение pg_stat_statements не используется активно, рекомендуется задать для параметра `pg_stat_statements.track` значение `none`. Обратите внимание, что некоторые сторонние службы мониторинга могут зависеть от pg_stat_statements при предоставлении информации о производительности запроса, поэтому подтвердите ваш ли это случай.
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вы не видите расширение, которое вы хотите использовать, сообщите нам. Проголосуйте за существующие запросы или создавайте новые запросы на отзыв на [форуме отзывов](https://feedback.azure.com/forums/597976-azure-database-for-postgresql).

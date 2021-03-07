@@ -8,16 +8,16 @@ ms.subservice: edge
 ms.topic: how-to
 ms.date: 03/01/2021
 ms.author: alkohli
-ms.openlocfilehash: 0b4a31200b99062a72a02ca62ac8f3bf1206f9c9
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 37d1b1613f4d346fa22d10e338f442c17b8425a0
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101722098"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102439006"
 ---
 # <a name="connect-to-azure-resource-manager-on-your-azure-stack-edge-pro-device"></a>Подключение к Azure Resource Manager на устройстве Azure Stack ребра Pro
 
-<!--[!INCLUDE [applies-to-skus](../../includes/azure-stack-edge-applies-to-all-sku.md)]-->
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 Azure Resource Manager обеспечивает уровень управления, позволяющий создавать, обновлять и удалять ресурсы в подписке Azure. Устройство Azure Stack пограничной Pro поддерживает те же интерфейсы API Azure Resource Manager для создания, обновления и удаления виртуальных машин в локальной подписке. Эта поддержка позволяет управлять устройством способом, согласованным с облаком. 
 
@@ -36,9 +36,9 @@ Azure Resource Manager предоставляет последовательны
 
 | # | Конечная точка | Поддерживаемые протоколы | Используемый порт | Используется для |
 | --- | --- | --- | --- | --- |
-| 1. | Azure Resource Manager | https | 443 | Подключение к Azure Resource Manager для автоматизации |
-| 2. | Служба маркеров безопасности | https | 443 | Проверка подлинности с помощью маркеров доступа и обновления |
-| 3. | BLOB-объект | https | 443 | Подключение к хранилищу BLOB-объектов с помощью протокола RESTFUL |
+| 1. | Azure Resource Manager | HTTPS | 443 | Подключение к Azure Resource Manager для автоматизации |
+| 2. | Служба маркеров безопасности | HTTPS | 443 | Проверка подлинности с помощью маркеров доступа и обновления |
+| 3. | BLOB-объект | HTTPS | 443 | Подключение к хранилищу BLOB-объектов с помощью протокола RESTFUL |
 
 
 ## <a name="connecting-to-azure-resource-manager-workflow"></a>Подключение к рабочему процессу Azure Resource Manager
@@ -99,7 +99,7 @@ Azure Resource Manager предоставляет последовательны
 
 3. Для всех этих сертификатов убедитесь, что имя субъекта и альтернативное имя субъекта соответствуют следующим рекомендациям:
 
-    |Тип |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
+    |Type |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
     |---------|---------|---------|---------|
     |Azure Resource Manager|`management.<Device name>.<Dns Domain>`|`login.<Device name>.<Dns Domain>`<br>`management.<Device name>.<Dns Domain>`|`management.mydevice1.microsoftdatabox.com` |
     |Хранилище BLOB-объектов|`*.blob.<Device name>.<Dns Domain>`|`*.blob.< Device name>.<Dns Domain>`|`*.blob.mydevice1.microsoftdatabox.com` |

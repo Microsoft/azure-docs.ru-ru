@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 12/11/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: b437ce7b6894ebefe38b32f27d370d9f8c4bfe80
-ms.sourcegitcommit: 1bdcaca5978c3a4929cccbc8dc42fc0c93ca7b30
+ms.openlocfilehash: 60469dc834c28bd8dbc73a1883ea01b06797c01f
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369027"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102442984"
 ---
 # <a name="prepare-for-an-azure-stack-edge-pro-gpu-device-failure"></a>Подготовка к сбою устройства GPU версии Pro Azure Stack
+
+[!INCLUDE [applies-to-GPU-and-pro-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-sku.md)]
 
 Эта статья поможет вам подготовиться к сбою устройства, подробно расскажу о том, как сохранить и создать резервную копию конфигурации устройства и данных на устройстве с Azure Stackом GPU Pro. 
 
@@ -42,9 +44,9 @@ ms.locfileid: "97369027"
 
 ## <a name="protect-device-data"></a>Защита данных устройства
 
-Данные устройства могут иметь один из следующих типов:
+Различают следующие типы данных устройства:
 
-- Данные в облачных общих ресурсах
+- Данные в облачных общих папках Edge
 - Данные в локальных общих папках
 - Файлы и папки на виртуальных машинах
 
@@ -65,10 +67,10 @@ ms.locfileid: "97369027"
 
 | Стороннее программное обеспечение           | Ссылка на решение                               |
 |--------------------------------|---------------------------------------------------------|
-| Cohesity                       | [https://www.cohesity.com/solution/cloud/azure/](https://www.cohesity.com/solution/cloud/azure/) <br> Для получения дополнительных сведений обратитесь к Cohesity.          |
-| Commvault                      | [https://www.commvault.com/azure](https://www.commvault.com/azure) <br> Для получения дополнительных сведений обратитесь к Commvault.          |
-| Компанию                        | [http://veritas.com/azure](http://veritas.com/azure) <br> Для получения дополнительных сведений обратитесь в компанию Veritas.   |
-| Veeam                          | [https://www.veeam.com/kb4041](https://www.veeam.com/kb4041) <br> Для получения дополнительных сведений обратитесь к Veeam. |
+| Cohesity                       | [https://www.cohesity.com/solution/cloud/azure/](https://www.cohesity.com/solution/cloud/azure/) <br> Чтобы получить дополнительные сведения, обратитесь в службу поддержки Cohesity.          |
+| Commvault                      | [https://www.commvault.com/azure](https://www.commvault.com/azure) <br> Чтобы получить дополнительные сведения, обратитесь в службу поддержки Commvault.          |
+| Veritas                        | [http://veritas.com/azure](http://veritas.com/azure) <br> Чтобы получить дополнительные сведения, обратитесь в службу поддержки Veritas.   |
+| Veeam                          | [https://www.veeam.com/kb4041](https://www.veeam.com/kb4041) <br> Чтобы получить дополнительные сведения, обратитесь в службу поддержки Veeam. |
 
 
 ## <a name="protect-files-and-folders-on-vms"></a>Защита файлов и папок на виртуальных машинах
@@ -76,13 +78,13 @@ ms.locfileid: "97369027"
 Azure Stack ребро работает с Azure Backup и другими решениями по защите данных от сторонних производителей, чтобы обеспечить резервное копирование данных, содержащихся на виртуальных машинах, развернутых на устройстве. В следующей таблице перечислены ссылки на доступные решения, которые можно выбрать из.
 
 
-| Решения для архивации        | Поддерживаемая ОС   | Ссылка                                                                |
+| Решения для архивации        | Поддерживаемая ОС   | Справочник                                                                |
 |-------------------------|----------------|--------------------------------------------------------------------------|
 | Агент Службы восстановления Microsoft Azure (MARS) для Azure Backup | Windows        | [Сведения об агенте MARS](../backup/backup-azure-about-mars.md)    |
-| Cohesity                | Windows, Linux | [Microsoft Azure интеграция, решение для восстановления резервной копии &](https://www.cohesity.com/solution/cloud/azure) <br>Для получения дополнительных сведений обратитесь к Cohesity.                          |
-| Commvault               | Windows, Linux | [https://www.commvault.com/azure](https://www.commvault.com/azure) <br>Для получения дополнительных сведений обратитесь к Commvault.                          |
-| Компанию                 | Windows, Linux | [https://vox.veritas.com/t5/Protection/Protecting-Azure-Stack-Edge-with-NetBackup/ba-p/883370](https://vox.veritas.com/t5/Protection/Protecting-Azure-Stack-Edge-with-NetBackup/ba-p/883370) <br> Для получения дополнительных сведений обратитесь в компанию Veritas.                    |
-| Veeam                   | Windows, Linux | [https://www.veeam.com/kb4041](https://www.veeam.com/kb4041) <br> Для получения дополнительных сведений обратитесь к Veeam. |
+| Cohesity                | Windows, Linux | [Microsoft Azure интеграция, решение для восстановления резервной копии &](https://www.cohesity.com/solution/cloud/azure) <br>Чтобы получить дополнительные сведения, обратитесь в службу поддержки Cohesity.                          |
+| Commvault               | Windows, Linux | [https://www.commvault.com/azure](https://www.commvault.com/azure) <br>Чтобы получить дополнительные сведения, обратитесь в службу поддержки Commvault.                          |
+| Veritas                 | Windows, Linux | [https://vox.veritas.com/t5/Protection/Protecting-Azure-Stack-Edge-with-NetBackup/ba-p/883370](https://vox.veritas.com/t5/Protection/Protecting-Azure-Stack-Edge-with-NetBackup/ba-p/883370) <br> Чтобы получить дополнительные сведения, обратитесь в службу поддержки Veritas.                    |
+| Veeam                   | Windows, Linux | [https://www.veeam.com/kb4041](https://www.veeam.com/kb4041) <br> Чтобы получить дополнительные сведения, обратитесь в службу поддержки Veeam. |
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

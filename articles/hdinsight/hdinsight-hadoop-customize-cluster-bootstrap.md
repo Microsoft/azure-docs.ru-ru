@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 04/01/2020
-ms.openlocfilehash: 306ebcf7db3c11f783af8cf4c1779bd3d1a013a4
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: c73cb99d62295312980fe5f1b248d23efa2eb0c5
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98945746"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102432389"
 ---
 # <a name="customize-hdinsight-clusters-using-bootstrap"></a>Настройка кластеров HDInsight с помощью начальной загрузки
 
@@ -105,7 +105,7 @@ $OozieConfigValues = @{ "oozie.service.coord.normal.default.timeout"="150" }  # 
 
 ## <a name="use-net-sdk"></a>Использование пакета SDK для .NET
 
-См. раздел [Azure HDINSIGHT SDK для .NET](/dotnet/api/overview/azure/hdinsight?view=azure-dotnet&preserve-view=true).
+См. раздел [Azure HDINSIGHT SDK для .NET](/dotnet/api/overview/azure/hdinsight).
 
 ## <a name="use-resource-manager-template"></a>Использование шаблона Resource Manager
 
@@ -135,7 +135,7 @@ $OozieConfigValues = @{ "oozie.service.coord.normal.default.timeout"="150" }  # 
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * статью [Установка кластеров в HDInsight с использованием Hadoop, Spark, Kafka и других технологий](hdinsight-hadoop-provision-linux-clusters.md), в которой даются указания по созданию кластера HDInsight с использованием других настраиваемых параметров.
 * [Разработка скриптов действия скрипта для HDInsight](hdinsight-hadoop-script-actions-linux.md)

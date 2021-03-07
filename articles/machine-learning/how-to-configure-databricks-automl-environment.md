@@ -11,12 +11,12 @@ ms.reviewer: larryfr
 ms.date: 10/21/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python
-ms.openlocfilehash: daeb0d666c0dfb8306663da1d8d59dfba6adc359
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.openlocfilehash: 43e503105eb9d59de5de2fe26e024cc473c61af6
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100516929"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102430502"
 ---
 # <a name="set-up-a-development-environment-with-azure-databricks-and-automl-in-azure-machine-learning"></a>Настройка среды разработки с помощью Azure Databricks и Аутомл в Машинное обучение Azure 
 
@@ -123,9 +123,19 @@ Azure Databricks интегрируется с Машинное обучение
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
+* Для **отмены автоматического запуска машинного обучения отменяются**: при использовании средств автоматического машинного обучения в Azure Databricks для отмены запуска и запуска нового эксперимента перезапустите кластер Azure Databricks.
+
+* **Модуль данных >10 итераций для автоматического машинного обучения**: в автоматических параметрах машинного обучения при наличии более 10 итераций задайте значение `show_output` `False` при отправке выполнения.
+
+* **Мини-приложение "кирпичи" для машинное обучение Azure пакета SDK и автоматизированного машинного обучения**. в записной книжке для модуля "приложения" не поддерживается приложение машинное обучение Azure SDK, так как записные книжки не могут анализировать элементы HTML. Вы можете просмотреть мини-приложение на портале с помощью этого кода Python в Azure Databricks записной книжке:
+
+    ```
+    displayHTML("<a href={} target='_blank'>Azure Portal: {}</a>".format(local_run.get_portal_url(), local_run.id))
+    ```
+
 * **Сбой при установке пакетов**
 
-    Сбой установки пакета SDK Машинное обучение Azure на Azure Databricks при установке дополнительных пакетов. Некоторые пакеты, такие как `psutil`, могут приводить к конфликтам. Чтобы избежать ошибок установки, установите пакеты, зафиксировать версию библиотеки. Эта проблема связана с модулями связи, а не с пакетом SDK для Машинное обучение Azure. Эта проблема также может возникнуть и в других библиотеках. Пример:
+    Сбой установки пакета SDK Машинное обучение Azure на Azure Databricks при установке дополнительных пакетов. Некоторые пакеты, такие как `psutil`, могут приводить к конфликтам. Чтобы избежать ошибок установки, установите пакеты, зафиксировать версию библиотеки. Эта проблема связана с модулями связи, а не с пакетом SDK для Машинное обучение Azure. Эта проблема также может возникнуть и в других библиотеках. Пример
     
     ```python
     psutil cryptography==1.5 pyopenssl==16.0.0 ipython==2.2.0
@@ -159,7 +169,7 @@ Azure Databricks интегрируется с Машинное обучение
     * Добавьте `pyarrow` версию 0,11 или более позднюю.
   
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Обучение модели](tutorial-train-models-with-aml.md) на машинное обучение Azure с помощью набора данных MNIST.
 - См. [Справочник по машинное обучение Azure SDK для Python](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py).
