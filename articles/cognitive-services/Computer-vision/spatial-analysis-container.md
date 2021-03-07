@@ -10,12 +10,12 @@ ms.subservice: computer-vision
 ms.topic: conceptual
 ms.date: 01/12/2021
 ms.author: aahi
-ms.openlocfilehash: af028499d84a767ccb2a888ec7e7f92c80dbdd36
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0316850788a4f762680be91c8ecd86b3aa8bf6bc
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101710572"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102433613"
 ---
 # <a name="install-and-run-the-spatial-analysis-container-preview"></a>Установка и запуск контейнера пространственного анализа (Предварительная версия)
 
@@ -24,7 +24,7 @@ ms.locfileid: "101710572"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services).
-* Создав подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesComputerVision"  title=" Создайте ресурс компьютерное зрение "  target="_blank"> Создайте компьютерное зрение ресурс <span class="docon docon-navigate-external x-hidden-focus"></span> </a> для уровня "стандартный" S1 в портал Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Создав подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesComputerVision"  title=" Создайте ресурс компьютерное зрение "  target="_blank"> Создайте компьютерное зрение ресурс </a> для уровня "Стандартный" S1 в портал Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
     * Вам потребуется ключ и конечная точка из созданного ресурса, чтобы запустить контейнер пространственного анализа. Вы будете использовать ключ и конечную точку позже.
 
 

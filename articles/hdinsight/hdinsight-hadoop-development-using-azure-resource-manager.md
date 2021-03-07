@@ -5,12 +5,12 @@ ms.service: hdinsight
 ms.custom: hdinsightactive, devx-track-azurecli
 ms.topic: how-to
 ms.date: 02/21/2018
-ms.openlocfilehash: 2ff62f4feba44a1c706ab85db1be3f7f654e6135
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: a8f808cd43f96f26db0de28e8059d02d9488320a
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98945774"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102434667"
 ---
 # <a name="migrating-to-azure-resource-manager-based-development-tools-for-hdinsight-clusters"></a>Переход к средствам разработки на основе Azure Resource Manager для кластеров HDInsight
 
@@ -238,7 +238,7 @@ Get-AzHDInsightCluster -ResourceGroupName $resourceGroupName -clusterName $clust
 
 | Инструкции по выполнению операций с помощью пакета SDK HDInsight на базе диспетчера ресурсов | Ссылки |
 | --- | --- |
-| Пакет SDK Azure HDInsight для .NET|См. раздел [Azure HDINSIGHT SDK для .NET](/dotnet/api/overview/azure/hdinsight?view=azure-dotnet&preserve-view=true) . |
+| Пакет SDK Azure HDInsight для .NET|См. раздел [Azure HDINSIGHT SDK для .NET](/dotnet/api/overview/azure/hdinsight) . |
 | Интерактивная проверка подлинности приложений с Azure Active Directory c использованием пакета SDK для .NET |См. статью о [выполнении запросов Apache Hive с помощью пакета SDK для .NET](hadoop/apache-hadoop-use-hive-dotnet-sdk.md). Во фрагменте кода, представленном в этой статье, используется метод интерактивной проверки подлинности. |
 | Неинтерактивная проверка подлинности приложений с Azure Active Directory c использованием пакета SDK для .NET |См. статью [Создание приложений .NET HDInsight с неинтерактивной проверкой подлинности](hdinsight-create-non-interactive-authentication-dotnet-applications.md). |
 | Отправка задания Hive с помощью пакета SDK для .NET |См. статью об [отправке заданий Apache Hive](hadoop/apache-hadoop-use-hive-dotnet-sdk.md). |

@@ -1,19 +1,18 @@
 ---
 title: Как предотвратить невозможность настройки с помощью центра безопасности Azure
 description: Узнайте, как использовать параметры "принудительно" и "deny" центра безопасности на страницах со сведениями о рекомендациях
-services: security-center
 author: memildin
 manager: rkarlin
 ms.service: security-center
 ms.topic: how-to
 ms.date: 02/04/2021
 ms.author: memildin
-ms.openlocfilehash: 2607ff3a6c4bb7bf301818925990521572777ab9
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 5d172a73674195e7f64f5ef02322e2bd2d6314df
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100379201"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102439533"
 ---
 # <a name="prevent-misconfigurations-with-enforcedeny-recommendations"></a>Предотвращение ошибок конфигурации с помощью рекомендаций о применении и отклонении
 
@@ -56,7 +55,7 @@ ms.locfileid: "100379201"
 
 1. Задайте область, имя назначения и другие соответствующие параметры.
 
-1. Выберите **Просмотр и создание**.
+1. Выберите **Review + create** (Просмотреть и создать).
 
 ## <a name="recommendations-with-denyenforce-options"></a>Рекомендации с параметрами Deny/принудительного применения
 

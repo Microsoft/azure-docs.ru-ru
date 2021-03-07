@@ -8,12 +8,12 @@ ms.tgt_pltfrm: ibiza
 ms.topic: conceptual
 ms.date: 01/14/2021
 ms.author: lagayhar
-ms.openlocfilehash: 5ad3e1a5a4ff47fe3d5fee8b8bc79235838995b8
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: e48d669321ad8c58681e8a92e68f2089962bdc17
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100593633"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102429856"
 ---
 # <a name="click-analytics-auto-collection-plugin-for-application-insights-javascript-sdk"></a>Щелкните подключаемый модуль автосбора аналитики для Application Insights пакет SDK для JavaScript.
 
@@ -81,7 +81,7 @@ appInsights.loadAppInsights();
 
 | Имя                  | Тип                               | По умолчанию | Описание                                                                                                                              |
 | --------------------- | -----------------------------------| --------| ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Автозапись           | Логическое                            | Да    | Автоматическая настройка записи.                                                                                                         |
+| Автозапись           | Логическое                            | true    | Автоматическая настройка записи.                                                                                                         |
 | обратный вызов              | [ивалуекаллбакк](#ivaluecallback)  | null    | Настройка обратных вызовов.                                                                                                                 |
 | пажетагс              | строка                             | null    | Теги страницы.                                                                                                                               |
 | Теги              | [икустомдататагс](#icustomdatatags)| null    | Пользовательские теги данных, предоставленные для переопределения тегов по умолчанию, используемых для сбора данных по щелчку.                                                           |
@@ -310,9 +310,9 @@ appInsights.loadAppInsights();
 
 [Простое веб-приложение с включенным подключаемым модулем автоматической коллекции Click Analytics](https://go.microsoft.com/fwlink/?linkid=2152871).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь с [репозиторием GitHub](https://github.com/microsoft/ApplicationInsights-JS/tree/master/extensions/applicationinsights-clickanalytics-js) и [пакетом NPM](https://www.npmjs.com/package/@microsoft/applicationinsights-clickanalytics-js) для подключаемого модуля автосбора данных Click Analytics.
 - Используйте [Анализ событий в процессе использования](usage-segmentation.md) , чтобы анализировать верхние щелчки и срезы по доступным измерениям.
 - Найдите элемент данные в поле содержимое в атрибуте customDimensions в таблице CustomEvents в [log Analytics](../logs/log-analytics-tutorial.md#write-a-query). Дополнительные рекомендации см. в разделе [пример приложения](https://go.microsoft.com/fwlink/?linkid=2152871) .
-- Создайте [книгу](../visualize/workbooks-overview.md) для создания пользовательских визуализаций по щелчку данных.
+- Создайте [книгу](../visualize/workbooks-overview.md) или [экспортируйте ее в Power BI](../logs/log-powerbi.md#integrating-queries) для создания пользовательских визуализаций по щелчку данных.

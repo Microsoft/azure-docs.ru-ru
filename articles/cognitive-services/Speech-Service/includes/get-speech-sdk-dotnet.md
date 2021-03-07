@@ -5,16 +5,16 @@ ms.topic: include
 ms.date: 03/27/2020
 ms.author: trbye
 ms.custom: devx-track-csharp
-ms.openlocfilehash: bbcc60070a05155a6143d3f1ff4689d44de7b3c7
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: be87251c24ee51e931dc45754b070718d9685a3c
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88944472"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102434575"
 ---
 :::row:::
     :::column span="3":::
-        Пакет SDK .NET для распознавания речи доступен в виде пакета NuGet и реализует .NET Standard 2,0. Дополнительные сведения см. в разделе <a href="https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech" target="_blank">Microsoft. CognitiveServices <span class="docon docon-navigate-external x-hidden-focus"></span> . Speech </a>.
+        Пакет SDK .NET для распознавания речи доступен в виде пакета NuGet и реализует .NET Standard 2,0. Дополнительные сведения см. в разделе <a href="https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech" target="_blank">Microsoft. CognitiveServices. Speech </a>.
     :::column-end:::
     :::column:::
         <br>
@@ -40,4 +40,4 @@ Install-Package Microsoft.CognitiveServices.Speech
 
 #### <a name="additional-resources"></a>Дополнительные ресурсы
 
-- <a href="https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master/quickstart/csharp" target="_blank">Исходный код C# для .NET Core, .NET Framework, Unity, UWP и Xamarin <span class="docon docon-navigate-external x-hidden-focus"></span></a>
+- <a href="https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master/quickstart/csharp" target="_blank">Исходный код C# для .NET Core, платформа .NET Framework, Unity, UWP и Xamarin </a>

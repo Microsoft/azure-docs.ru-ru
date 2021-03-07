@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 4/26/2019
 ms.author: scottwhi
 ms.custom: devx-track-python, devx-track-js, devx-track-csharp
-ms.openlocfilehash: 8f3dd1dcd388ca9b2999c5305bae5456355f8bbd
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.openlocfilehash: 161266a69308175637f5967b2ded48621d4d9c53
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96486833"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102424076"
 ---
 # <a name="use-an-insights-token-to-get-insights-for-an-image"></a>Использование токена Insights для получения ценной информации об изображении
 
@@ -84,10 +84,10 @@ Content-Disposition: form-data; name="knowledgeRequest"
 
 ## <a name="use-with-c"></a>Использование с C #
 
-### <a name="c-prerequisites"></a>Предварительные требования для C#
+### <a name="c-prerequisites"></a>Предварительные требования C#
 
 * подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
-* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
 * Любая версия [Visual Studio 2019](https://www.visualstudio.com/downloads/) для получения этого кода, работающего в Windows.
 
 ## <a name="run-the-application"></a>Выполнение приложения
@@ -258,10 +258,10 @@ namespace VisualSearchInsightsToken
 
 ## <a name="use-with-java"></a>Использование с Java
 
-### <a name="java-prerequisites"></a>Предварительные требования для Java
+### <a name="java-prerequisites"></a>Предварительные требования Java
 
 * подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
-* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
 * [JDK 7 или 8](/azure/developer/java/fundamentals/java-jdk-long-term-support) для компиляции и выполнения этого кода. Вы можете использовать Java IDE, если у вас есть Избранное, но достаточно текстового редактора.
 
 
@@ -377,7 +377,7 @@ public class InsightsToken {
 ### <a name="nodejs-prerequisites"></a>Необходимые компоненты Node.js
 
 * подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
-* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
 * Для выполнения этого кода необходимо иметь [Node.js 6](https://nodejs.org/en/download/) .
 
 ## <a name="run-the-javascript-application"></a>Запуск приложения JavaScript
@@ -439,10 +439,10 @@ function requestCallback(err, res, body) {
 
 ## <a name="use-with-python"></a>Использование с Python
 
-### <a name="python-prerequisites"></a>Предварительные требования для Python
+### <a name="python-prerequisites"></a>Предварительные требования Python
 
 * подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
-* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
 * Для выполнения этого кода необходимо наличие [Python 3](https://www.python.org/) .
 
 ## <a name="run-the-python-application"></a>Запуск приложения Python

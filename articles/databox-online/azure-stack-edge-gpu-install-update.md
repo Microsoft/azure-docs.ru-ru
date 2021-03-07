@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 01/19/2021
+ms.date: 02/21/2021
 ms.author: alkohli
-ms.openlocfilehash: 7db2d2721359d9796b19b3fd6abe32ff16beaec2
-ms.sourcegitcommit: 3c3ec8cd21f2b0671bcd2230fc22e4b4adb11ce7
+ms.openlocfilehash: 4590949f2feb86dc344dce87f3ff447e0e05e8ee
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98761814"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102438120"
 ---
 # <a name="update-your-azure-stack-edge-pro-gpu"></a>Обновление графического процессора Azure Stack ребра Pro 
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этой статье описываются шаги, необходимые для установки обновления на Azure Stack пограничной Pro с помощью GPU через локальный веб-интерфейс и с помощью портал Azure. Вы применяете обновления программного обеспечения или исправления, чтобы не обновлять устройство Azure Stack пограничной Pro и связанный с ним кластер Kubernetes на устройстве в актуальном состоянии.
 
@@ -89,7 +91,7 @@ ms.locfileid: "98761814"
 
     ![Версия программного обеспечения после обновления 7](./media/azure-stack-edge-gpu-install-update/portal-update-6.png)
 
-    Если выбрана загрузка только обновлений, выберите уведомление, чтобы открыть колонку **обновления устройства** . Нажмите кнопку **Установить**.
+    Если выбрана загрузка только обновлений, выберите уведомление, чтобы открыть колонку **обновления устройства** . Выберите пункт **Установить**.
   
     ![Версия программного обеспечения после обновления 8](./media/azure-stack-edge-gpu-install-update/portal-update-7.png)
 
@@ -170,7 +172,7 @@ ms.locfileid: "98761814"
    
     <!--![Search catalog 2](./media/azure-stack-edge-gpu-install-update/download-update-2-b.png)-->
 
-4. Щелкните **Загрузить**. Существует два файла для загрузки с *SoftwareUpdatePackage.exe* и *Kubernetes_Package.exe* суффиксы, соответствующие обновлениям программного обеспечения устройства и обновлениям Kubernetes соответственно. Скачайте файлы в папку в локальной системе. Эту папку также можно скопировать в сетевую папку, доступную с вашего устройства.
+4. Выберите **Скачать**. Существует два файла для загрузки с *SoftwareUpdatePackage.exe* и *Kubernetes_Package.exe* суффиксы, соответствующие обновлениям программного обеспечения устройства и обновлениям Kubernetes соответственно. Скачайте файлы в папку в локальной системе. Эту папку также можно скопировать в сетевую папку, доступную с вашего устройства.
 
 ### <a name="install-the-update-or-the-hotfix"></a>Установка обновления или исправления
 

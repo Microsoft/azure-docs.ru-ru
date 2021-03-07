@@ -10,12 +10,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 07/20/2020
 ms.author: jeedes
-ms.openlocfilehash: e22738f1fff813e5a928b76f8049e810847fe548
-ms.sourcegitcommit: 0b9fe9e23dfebf60faa9b451498951b970758103
+ms.openlocfilehash: df4031a590eb4547d4327cebe96ccbe63d21785a
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94358156"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102437814"
 ---
 # <a name="tutorial-configure-box-for-automatic-user-provisioning"></a>Руководство по настройке Box для автоматической подготовки пользователей
 
@@ -36,6 +36,9 @@ ms.locfileid: "94358156"
 
 > [!NOTE]
 > Сначала необходимо включить приложения в приложении Box.
+
+> [!NOTE]
+> Эту интеграцию также можно использовать в облачной среде Azure AD для государственных организаций США. Это приложение можно найти в коллекции облачных приложений с поддержкой Azure AD для государственных организаций США и настроить таким же образом, как и в общедоступном облаке.
 
 При проверке действий в этом руководстве соблюдайте следующие рекомендации:
 

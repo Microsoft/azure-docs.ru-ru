@@ -5,16 +5,16 @@ services: storage
 author: santoshc
 ms.service: storage
 ms.topic: how-to
-ms.date: 01/27/2021
+ms.date: 03/05/2021
 ms.author: normesta
 ms.reviewer: santoshc
 ms.subservice: common
-ms.openlocfilehash: 4aa4e0566093f01e5f14691158f37c630c753b00
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 9e395ce996bf7e6889a27fcb04b0e643cf63c58b
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101714754"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102430893"
 ---
 # <a name="configure-azure-storage-firewalls-and-virtual-networks"></a>Настройка брандмауэров службы хранилища Azure и виртуальных сетей
 
@@ -136,7 +136,7 @@ ms.locfileid: "101714754"
 
 ### <a name="required-permissions"></a>Необходимые разрешения
 
-Чтобы применить правило виртуальной сети к учетной записи хранения, у пользователя должны быть соответствующие разрешения для добавляемых подсетей. Это разрешение *Join Service to a Subnet* (Добавить службу к подсети), включенное во встроенную роль *Участник учетных записей хранения*. Его также можно добавить к определениям пользовательских ролей.
+Чтобы применить правило виртуальной сети к учетной записи хранения, у пользователя должны быть соответствующие разрешения для добавляемых подсетей. Применение правила может выполнять [участник учетной записи хранения](../../role-based-access-control/built-in-roles.md#storage-account-contributor) или пользователь, которому было предоставлено разрешение на `Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/action` [операцию поставщика ресурсов Azure](../../role-based-access-control/resource-provider-operations.md#microsoftnetwork) с помощью настраиваемой роли Azure.
 
 Учетная запись хранения и виртуальные сети, которым предоставлен доступ, могут находиться в разных подписках, включая подписки, являющиеся частью другого клиента Azure AD.
 
@@ -594,7 +594,7 @@ az storage account network-rule list \
 | Azure Logic Apps               | Microsoft.Logic/workflows              | Позволяет приложениям логики получать доступ к учетным записям хранения. [Подробнее](../../logic-apps/create-managed-service-identity.md#authenticate-access-with-managed-identity). |
 | Служба "Машинное обучение Azure" | Microsoft.MachineLearningServices      | Авторизованные рабочие области Машинного обучения Azure записывают выходные данные эксперимента, модели и журналы в хранилище BLOB-объектов и читают данные. [Подробнее](../../machine-learning/how-to-network-security-overview.md#secure-the-workspace-and-associated-resources). |
 | Службы мультимедиа Azure           | Microsoft.Media/mediaservices          | Разрешает доступ к учетным записям хранения через службы мультимедиа. |
-| Миграция Azure                  | Microsoft. Migrate/мигратепрожектс      | Разрешает доступ к учетным записям хранения с помощью службы "миграция Azure". |
+| Служба "Миграция Azure"                  | Microsoft. Migrate/мигратепрожектс      | Разрешает доступ к учетным записям хранения с помощью службы "миграция Azure". |
 | Azure Purview                  | Microsoft. зрения/учетные записи             | Разрешает зрения доступ к учетным записям хранения. |
 | Удаленная отрисовка Azure         | Microsoft. Микседреалити/Ремотерендерингаккаунтс | Разрешает доступ к учетным записям хранения через удаленную визуализацию. |
 | Azure Site Recovery            | Microsoft.RecoveryServices/vaults      | Разрешает доступ к учетным записям хранения с помощью Site Recovery. |

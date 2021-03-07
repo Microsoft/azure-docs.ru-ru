@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: trbye
 ms.custom: devx-track-js, devx-track-csharp
-ms.openlocfilehash: ab678c650c0d2d93614191a1eb1ff18ea48ecfee
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: d5cf5cd4c2667af3064b74ab2b1c5cd5bd347446
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102217290"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102434293"
 ---
 # <a name="improve-synthesis-with-speech-synthesis-markup-language-ssml"></a>Улучшение синтеза с помощью языка разметки речи (SSML)
 
@@ -117,7 +117,7 @@ ms.locfileid: "102217290"
 
 # <a name="c"></a>[C#](#tab/csharp)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechconfig.setproperty?view=azure-dotnet" target="_blank"> `SetProperty` <span class="docon docon-navigate-external x-hidden-focus"></span> </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechconfig.setproperty" target="_blank"> `SetProperty` </a>.
 
 ```csharp
 speechConfig.SetProperty(
@@ -126,7 +126,7 @@ speechConfig.SetProperty(
 
 # <a name="c"></a>[C++](#tab/cpp)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/cpp/cognitive-services/speech/speechconfig#setproperty" target="_blank"> `SetProperty` <span class="docon docon-navigate-external x-hidden-focus"></span> </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/cpp/cognitive-services/speech/speechconfig#setproperty" target="_blank"> `SetProperty` </a>.
 
 ```cpp
 speechConfig->SetProperty(
@@ -135,7 +135,7 @@ speechConfig->SetProperty(
 
 # <a name="java"></a>[Java](#tab/java)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/java/api/com.microsoft.cognitiveservices.speech.speechconfig.setproperty#com_microsoft_cognitiveservices_speech_SpeechConfig_setProperty_String_String_" target="_blank"> `setProperty` <span class="docon docon-navigate-external x-hidden-focus"></span> </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/java/api/com.microsoft.cognitiveservices.speech.speechconfig.setproperty#com_microsoft_cognitiveservices_speech_SpeechConfig_setProperty_String_String_" target="_blank"> `setProperty` </a>.
 
 ```java
 speechConfig.setProperty(
@@ -144,7 +144,7 @@ speechConfig.setProperty(
 
 # <a name="python"></a>[Python](#tab/python)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechconfig?view=azure-python#set-property-by-name-property-name--str--value--str-" target="_blank"> `set_property_by_name` <span class="docon docon-navigate-external x-hidden-focus"></span> </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechconfig?view=azure-python#set-property-by-name-property-name--str--value--str-" target="_blank"> `set_property_by_name` </a>.
 
 ```python
 speech_config.set_property_by_name(
@@ -153,7 +153,7 @@ speech_config.set_property_by_name(
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/javascript/api/microsoft-cognitiveservices-speech-sdk/speechconfig#setproperty-string--string-" target="_blank"> `setProperty` <span class="docon docon-navigate-external x-hidden-focus"></span> </a>разделе.
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/javascript/api/microsoft-cognitiveservices-speech-sdk/speechconfig#setproperty-string--string-" target="_blank"> `setProperty` </a>разделе.
 
 ```javascript
 speechConfig.setProperty(
@@ -162,7 +162,7 @@ speechConfig.setProperty(
 
 # <a name="objective-c"></a>[Objective-C](#tab/objectivec)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` <span class="docon docon-navigate-external x-hidden-focus"></span> </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>.
 
 ```objectivec
 [speechConfig setPropertyTo:@"false" byName:@"SpeechServiceResponse_Synthesis_WordBoundaryEnabled"];
@@ -170,7 +170,7 @@ speechConfig.setProperty(
 
 # <a name="swift"></a>[Swift](#tab/swift)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` <span class="docon docon-navigate-external x-hidden-focus"></span> </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>.
 
 ```swift
 speechConfig!.setPropertyTo(
@@ -499,7 +499,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 | attribute | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
-| `alphabet` | Указывает фонетический алфавит, используемый при создании транскрипции строки в `ph` атрибуте. Строка, указывающая букву алфавита, должна быть указана в строчных буквах. Ниже приведены возможные алфавиты, которые можно указать.<ul><li>`ipa`&ndash; <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">Международный фонетический <span class="docon docon-navigate-external x-hidden-focus"></span> алфавит</a></li><li>`sapi`&ndash; [Фонетический алфавит речевой службы](speech-ssml-phonetic-sets.md)</li><li>`ups`&ndash; <a href="https://documentation.help/Microsoft-Speech-Platform-SDK-11/17509a49-cae7-41f5-b61d-07beaae872ea.htm" target="_blank">Универсальный набор телефонов</a></li></ul><br>Алфавит применяется только к `phoneme` элементу в элементе.. | Необязательно |
+| `alphabet` | Указывает фонетический алфавит, используемый при создании транскрипции строки в `ph` атрибуте. Строка, указывающая букву алфавита, должна быть указана в строчных буквах. Ниже приведены возможные алфавиты, которые можно указать.<ul><li>`ipa`&ndash; <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">Международный фонетический алфавит</a></li><li>`sapi`&ndash; [Фонетический алфавит речевой службы](speech-ssml-phonetic-sets.md)</li><li>`ups`&ndash; <a href="https://documentation.help/Microsoft-Speech-Platform-SDK-11/17509a49-cae7-41f5-b61d-07beaae872ea.htm" target="_blank">Универсальный набор телефонов</a></li></ul><br>Алфавит применяется только к `phoneme` элементу в элементе.. | Необязательно |
 | `ph` | Строка, содержащая телефоны, задающих произношение слова в `phoneme` элементе. Если указанная строка содержит нераспознаваемые телефоны, служба преобразования текста в речь (TTS) отклоняет весь документ SSML и не выдает ни одного из речевых выходных данных, указанных в документе. | Требуется при использовании фонемы. |
 
 **Примеры**
@@ -574,7 +574,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 </lexicon>
 ```
 
-`lexicon`Элемент содержит по крайней мере один `lexeme` элемент. Каждый `lexeme` элемент содержит по крайней мере один `grapheme` элемент и один или несколько `grapheme` `alias` элементов, и `phoneme` . `grapheme`Элемент содержит текст, описывающий <a href="https://www.w3.org/TR/pronunciation-lexicon/#term-Orthography" target="_blank">орсографи <span class="docon docon-navigate-external x-hidden-focus"></span> </a>. `alias`Элементы используются для указания произношения акронима или сокращенного выражения. `phoneme`Элемент предоставляет текст, описывающий, как `lexeme` произносится.
+`lexicon`Элемент содержит по крайней мере один `lexeme` элемент. Каждый `lexeme` элемент содержит по крайней мере один `grapheme` элемент и один или несколько `grapheme` `alias` элементов, и `phoneme` . `grapheme`Элемент содержит текст, описывающий <a href="https://www.w3.org/TR/pronunciation-lexicon/#term-Orthography" target="_blank">орсографи </a>. `alias`Элементы используются для указания произношения акронима или сокращенного выражения. `phoneme`Элемент предоставляет текст, описывающий, как `lexeme` произносится.
 
 Важно отметить, что нельзя напрямую задавать произношение фразы с помощью пользовательского лексикона. Если необходимо задать произношение акронима или сокращенного выражения, сначала укажите `alias` , а затем свяжите `phoneme` с ним `alias` . Пример:
 

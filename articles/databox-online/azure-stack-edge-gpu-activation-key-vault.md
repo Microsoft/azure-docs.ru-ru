@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: conceptual
-ms.date: 10/10/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: ec7a32739940d53d976e73a7e170df96a0acc245
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.openlocfilehash: c18f875dde43ab6df512375152d76a31c30a9e77
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96449521"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102439873"
 ---
 # <a name="azure-key-vault-integration-with-azure-stack-edge"></a>Интеграция Azure Key Vault с Azure Stackным ребром 
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 Azure Key Vault интегрирована с Azure Stackным ресурсом периметра для управления секретами. В этой статье содержатся сведения о том, как создается Azure Key Vault для ресурса Azure Stackного периметра при активации устройства, а затем используется для управления секретами. 
 

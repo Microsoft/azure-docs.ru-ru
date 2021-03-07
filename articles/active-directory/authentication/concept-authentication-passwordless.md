@@ -11,12 +11,12 @@ author: justinha
 manager: daveba
 ms.reviewer: librown
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97517ad3ff260806108dc22686d49b43b0fc6609
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 43a0ef208a1a56416f748c69f552ec9169d21479
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102096026"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102424237"
 ---
 # <a name="passwordless-authentication-options-for-azure-active-directory"></a>Параметры проверки подлинности с паролем для Azure Active Directory
 
@@ -125,7 +125,7 @@ FIDO (быстрое идентификация в сети) позволяет 
 
 | Поставщик | Contact |
 | --- | --- |
-| юбико | [https://www.yubico.com/support/contact/](https://www.yubico.com/support/contact/) |
+| юбико | [https://www.yubico.com/solutions/passwordless/](https://www.yubico.com/solutions/passwordless/) |
 | феитиан | [https://ftsafe.us/pages/microsoft](https://ftsafe.us/pages/microsoft) |
 | HID | [https://www.hidglobal.com/contact-us](https://www.hidglobal.com/contact-us) |
 | енсурити | [https://www.ensurity.com/contact](https://www.ensurity.com/contact) |

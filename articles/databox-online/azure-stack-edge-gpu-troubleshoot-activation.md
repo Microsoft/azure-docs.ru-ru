@@ -6,18 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: troubleshooting
-ms.date: 10/08/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 5e6f411fef5d3e27b6ad61b720f1c64fb6f8c9a0
-ms.sourcegitcommit: 6d6030de2d776f3d5fb89f68aaead148c05837e2
+ms.openlocfilehash: 66e62bffe28cc10bd49e1456fdd6e2ac1faebf6e
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97883339"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102442151"
 ---
 # <a name="troubleshoot-activation-issues-on-your-azure-stack-edge-pro-gpu-device"></a>Устранение неполадок при активации на устройстве с Azure Stack ребра Pro GPU 
 
-<!--[!INCLUDE [applies-to-skus](../../includes/azure-stack-edge-applies-to-all-sku.md)]-->
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этой статье описывается, как устранять неполадки при активации на устройстве с Azure Stack ребра Pro GPU. 
 

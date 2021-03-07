@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 01/07/2021
+ms.date: 03/05/2021
 ms.author: alkohli
-ms.openlocfilehash: 411757f4ef4e33ccbc8a69ca2b40598b51c6d13b
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.openlocfilehash: f76652600f42d7e82914836537935ac9a74decb4
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98790839"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102436806"
 ---
 # <a name="open-a-support-ticket-for-azure-stack-edge-pro-and-azure-data-box-gateway"></a>Отправьте запрос в службу поддержки для Azure Stack пограничных Pro и Шлюз Azure Data Box
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-databox-gateway-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-databox-gateway-sku.md)]
 
 Эта статья относится к Azure Stack пограничных Pro и Шлюз Azure Data Box обоими, которыми управляет служба Azure Stack ребра Pro/Шлюз Azure Data Box. Если у вас возникают проблемы с этой службой, вы можете отправить запрос на обслуживание в группу поддержки. В этой статье описаны следующие операции.
 

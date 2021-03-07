@@ -1,21 +1,23 @@
 ---
-title: Развертывание `PHP Guestbook` приложения в Arc с включенной Kubernetes на устройстве Azure Stack ребра Pro GPU | Документация Майкрософт
+title: Развертывание `Guestbook` приложения PHP в Arc с включенной Kubernetes на устройстве Azure Stack ребра Pro GPU | Документация Майкрософт
 description: В этой статье описывается развертывание `Guestbook` приложения без отслеживания состояния PHP с помощью Redis с использованием гитопс в кластере Kubernetes, поддерживающем устройство Azure Stack погранично Pro.
 services: databox
 author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 01/25/2021
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: ba72617444a2c7ec30e4d1d25afe1edcda16ff35
-ms.sourcegitcommit: fc8ce6ff76e64486d5acd7be24faf819f0a7be1d
+ms.openlocfilehash: f47f795335204ecd0c74463b76583d7dd79f8532
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98804877"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102436436"
 ---
 # <a name="deploy-a-php-guestbook-stateless-application-with-redis-on-arc-enabled-kubernetes-cluster-on-azure-stack-edge-pro-gpu"></a>Развертывание приложения без `Guestbook` отслеживания состояния PHP с помощью Redis на ARC с включенным кластером Kubernetes на Azure Stack ребра Pro GPU
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этой статье показано, как создать и развернуть простое многоуровневое веб-приложение с помощью Kubernetes и дуги Azure. Этот пример состоит из следующих компонентов:
 

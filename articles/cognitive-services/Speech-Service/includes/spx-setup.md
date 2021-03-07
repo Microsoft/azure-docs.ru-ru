@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 05/15/2020
 ms.author: v-demjoh
-ms.openlocfilehash: b985399eb89ae7bbf73d280775157207498f0080
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: dcfc19700d24ca51d6e28aa511197c1c9e79e521
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100645560"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102428235"
 ---
 ## <a name="download-and-install"></a>Загрузите и установите
 
@@ -67,7 +67,7 @@ ms.locfileid: "100645560"
 
 Чтобы установить CLI службы "Речь" в контейнере Docker:
 
-1. При необходимости <a href="https://www.docker.com/get-started" target="_blank">установите Docker Desktop<span class="docon docon-navigate-external x-hidden-focus"></span></a> для своей платформы.
+1. При необходимости <a href="https://www.docker.com/get-started" target="_blank">установите Docker Desktop</a> для своей платформы.
 2. В новой командной строке или в терминале введите следующую команду: .
    ```console   
    docker pull msftspeech/spx

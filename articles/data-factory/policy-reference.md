@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.custom:
 - seo-lt-2019
 - references_regions
-ms.date: 12/3/2020
-ms.openlocfilehash: 9c0de85c4d8c5345db68ffbaf3f97793a3cb56dd
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.date: 03/05/2021
+ms.openlocfilehash: ac618e85b2e832994a95e48830f32ed0d098d484
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100372847"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102432442"
 ---
 # <a name="azure-policy-built-in-definitions-for-data-factory-preview"></a>Встроенные определения политики Azure для фабрики данных (Предварительная версия)
 [!INCLUDE[appliesto-adf-xxx-md](includes/appliesto-adf-xxx-md.md)]
