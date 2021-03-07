@@ -7,12 +7,12 @@ ms.service: cosmos-db
 ms.topic: conceptual
 ms.date: 02/07/2020
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 86de3e1199b00dff4e03f3b4292f86e6c19ea491
-ms.sourcegitcommit: 192f9233ba42e3cdda2794f4307e6620adba3ff2
+ms.openlocfilehash: 0c95fc9e416399b5c8fe032e0d3af0c3b7f9cf6e
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96296545"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102433579"
 ---
 # <a name="optimize-provisioned-throughput-cost-in-azure-cosmos-db"></a>Оптимизируйте стоимость подготовленной пропускной способности в базе данных Azure Cosmos DB
 [!INCLUDE[appliesto-all-apis](includes/appliesto-all-apis.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "96296545"
 
 |API|Для **общей** пропускной способности настройте следующее |Для **выделенной** пропускной способности настройте следующее |
 |----|----|----|
-|API SQL|База данных|Контейнер|
+|API SQL|База данных|Контейнер|
 |API Azure Cosmos DB для MongoDB|База данных|Коллекция|
 |API Cassandra|Пространство ключей|Таблица|
 |API Gremlin|Учетная запись базы данных|График|
@@ -81,7 +81,7 @@ HTTP Status 429,
 
 При наличии более чем одного клиента, постоянно работающего над частотой запросов, количество повторных попыток по умолчанию, которое в настоящее время равно 9, может быть недостаточным. В таких случаях клиент создает в приложении исключение `RequestRateTooLargeException` с кодом состояния 429. Число повторных попыток по умолчанию можно изменить, задав свойство `RetryOptions` в экземпляре ConnectionPolicy. По умолчанию значение `RequestRateTooLargeException` с кодом состояния 429 возвращается после совокупного времени ожидания 30 секунд, если запрос будет продолжать работать выше скорости запросов. Это происходит, даже если текущее значение количества повторных попыток (по умолчанию (9) или определенное пользователем) меньше максимального значения. 
 
-[Максретряттемптсонсроттледрекуестс](/dotnet/api/microsoft.azure.documents.client.retryoptions.maxretryattemptsonthrottledrequests?preserve-view=true&view=azure-dotnet) имеет значение 3, поэтому в этом случае, если частота операции запроса ограничена путем превышения зарезервированной пропускной способности для контейнера, операция запроса повторяет попытку три раза, прежде чем вызывать исключение для приложения. [Максретриваиттимеинсекондс](/dotnet/api/microsoft.azure.documents.client.retryoptions.maxretrywaittimeinseconds?preserve-view=true&view=azure-dotnet#Microsoft_Azure_Documents_Client_RetryOptions_MaxRetryWaitTimeInSeconds) имеет значение 60, поэтому в этом случае, если совокупное время ожидания повтора в секундах с момента, когда первый запрос превышает 60 секунд, возникает исключение.
+[Максретряттемптсонсроттледрекуестс](/dotnet/api/microsoft.azure.documents.client.retryoptions.maxretryattemptsonthrottledrequests) имеет значение 3, поэтому в этом случае, если частота операции запроса ограничена путем превышения зарезервированной пропускной способности для контейнера, операция запроса повторяет попытку три раза, прежде чем вызывать исключение для приложения. [Максретриваиттимеинсекондс](/dotnet/api/microsoft.azure.documents.client.retryoptions.maxretrywaittimeinseconds#Microsoft_Azure_Documents_Client_RetryOptions_MaxRetryWaitTimeInSeconds) имеет значение 60, поэтому в этом случае, если совокупное время ожидания повтора в секундах с момента, когда первый запрос превышает 60 секунд, возникает исключение.
 
 ```csharp
 ConnectionPolicy connectionPolicy = new ConnectionPolicy(); 
@@ -175,7 +175,7 @@ connectionPolicy.RetryOptions.MaxRetryWaitTimeInSeconds = 60;
 
 10. Благодаря зарезервированной емкости Azure Cosmos DB можно получить значительные скидки (до 65 %) на три года. Модель зарезервированной емкости Azure Cosmos DB предусматривает авансовую оплату за единицы запроса, которые потребуются со временем. Скидки распределяются по уровням таким образом, что чем больше единиц запроса используется за продолжительный период времени, тем больше скидка. Эти скидки вступают в силу немедленно. За любые потребленные ЕЗ сверх подготовленных значений плата взимается на основе тарифов на незарезервированную емкость. Подробные сведения см. в статье [Предоплата ресурсов Azure Cosmos DB с резервной мощностью](cosmos-db-reserved-capacity.md). Рекомендуем приобрести зарезервированную емкость для дополнительного уменьшения затрат на подготовленную пропускную способность.  
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь вы можете перейти к изучению оптимизации затрат в Azure Cosmos DB в следующих статьях:
 

@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для Azure SignalR
 description: Здесь приведены встроенные определения политик в службе "Политика Azure" для Azure SignalR. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 02/09/2021
+ms.date: 03/05/2021
 author: sffamily
 ms.author: zhshang
 ms.service: signalr
 ms.topic: reference
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 1974971fb81ec5ef4b87722be3218fd237a2c4ea
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: 1ee06fe551019a9d0f4e43c8ae512d121796fc91
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100095416"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102424843"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-signalr"></a>Встроенные определения в службе "Политика Azure" для Azure SignalR
 

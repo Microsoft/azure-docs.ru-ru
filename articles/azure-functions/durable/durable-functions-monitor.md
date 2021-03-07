@@ -4,18 +4,30 @@ description: Сведения о том, как реализовать мони�
 ms.topic: conceptual
 ms.date: 12/07/2018
 ms.author: azfuncdf
-ms.openlocfilehash: e70c50098ece516312e1e92984185624c276301b
-ms.sourcegitcommit: e46f9981626751f129926a2dae327a729228216e
+ms.openlocfilehash: 8ef32ecfb6f69b71d29578d3b8314f568fd9386a
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98028426"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102431080"
 ---
 # <a name="monitor-scenario-in-durable-functions---weather-watcher-sample"></a>Сценарий монитора в устойчивых функциях — пример наблюдателя за погодой
 
 Шаблон монитора представляет собой гибкий *повторяющийся* процесс в рабочем процессе. Например, повторение опроса, пока не будут выполнены определенные условия. В этой статье приведен пример использования [устойчивых функций](durable-functions-overview.md) для реализации мониторинга.
 
-[!INCLUDE [durable-functions-prerequisites](../../../includes/durable-functions-prerequisites.md)]
+## <a name="prerequisites"></a>Предварительные требования
+
+# <a name="c"></a>[C#](#tab/csharp)
+
+* [Выполните инструкции из краткого руководства](durable-functions-create-first-csharp.md)
+* [Клонирование или скачивание проекта примеров из GitHub](https://github.com/Azure/azure-functions-durable-extension/tree/main/samples/precompiled)
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+
+* [Выполните инструкции из краткого руководства](quickstart-js-vscode.md)
+* [Клонирование или скачивание проекта примеров из GitHub](https://github.com/Azure/azure-functions-durable-extension/tree/main/samples/javascript)
+
+---
 
 ## <a name="scenario-overview"></a>Общие сведения о сценарии
 
@@ -28,7 +40,7 @@ ms.locfileid: "98028426"
 * Мониторы можно масштабировать. Та как каждый монитор является экземпляром оркестрации, можно создавать несколько мониторов без необходимости создавать новые функции или писать новый код.
 * Мониторы легко интегрируются в более крупные рабочие процессы. Монитором может быть один раздел более сложной функции оркестрации или [суборкестрация](durable-functions-sub-orchestrations.md).
 
-## <a name="configuration"></a>Параметр Configuration
+## <a name="configuration"></a>Конфигурация
 
 ### <a name="configuring-twilio-integration"></a>Настройка интеграции Twilio
 
@@ -72,9 +84,6 @@ Orchestrator требует расположения для отслеживан
 
 [!code-javascript[Main](~/samples-durable-functions/samples/javascript/E3_Monitor/index.js)]
 
-# <a name="python"></a>[Python](#tab/python)
-У нас есть другой учебник по шаблону мониторинга на Python, см. [здесь](durable-functions-monitor-python.md).
-
 ---
 
 Эта функция оркестратора выполняет следующие задачи:
@@ -105,9 +114,6 @@ Orchestrator требует расположения для отслеживан
 
 [!code-javascript[Main](~/samples-durable-functions/samples/javascript/E3_GetIsClear/index.js)]
 
-# <a name="python"></a>[Python](#tab/python)
-У нас есть другой учебник по шаблону мониторинга на Python, см. [здесь](durable-functions-monitor-python.md).
-
 ---
 
 ### <a name="e3_sendgoodweatheralert-activity-function"></a>Функция действия E3_SendGoodWeatherAlert
@@ -130,9 +136,6 @@ Orchestrator требует расположения для отслеживан
 Ниже приведен код, который отправляет SMS-сообщение:
 
 [!code-javascript[Main](~/samples-durable-functions/samples/javascript/E3_SendGoodWeatherAlert/index.js)]
-
-# <a name="python"></a>[Python](#tab/python)
-У нас есть другой учебник по шаблону мониторинга на Python, см. [здесь](durable-functions-monitor-python.md).
 
 ---
 

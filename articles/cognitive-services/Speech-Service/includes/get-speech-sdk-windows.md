@@ -5,12 +5,12 @@ ms.topic: include
 ms.date: 03/27/2020
 ms.author: trbye
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 33cc9b52c4b687ca8147867b99dc70e8d71a9223
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: fc4cc5063f72ff3f0db62cde79f7908add86166e
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88944464"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102434588"
 ---
 :::row:::
     :::column span="3":::
@@ -26,11 +26,11 @@ ms.locfileid: "88944464"
 
 ### <a name="system-requirements"></a>Требования к системе
 
-Для работы с речевым пакетом SDK в Windows требуется <a href="https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads" target="_blank">распространяемый компонент <span class="docon docon-navigate-external x-hidden-focus"></span> Microsoft Visual C++ для Visual Studio 2019</a> в системе.
+Для работы с речевым пакетом SDK в Windows требуется <a href="https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads" target="_blank">распространяемый компонент Microsoft Visual C++ для Visual Studio 2019 </a> в системе.
 
-- <a href="https://aka.ms/vs/16/release/vc_redist.x86.exe" target="_blank">Установка для x86 <span class="docon docon-navigate-external x-hidden-focus"></span></a>
-- <a href="https://aka.ms/vs/16/release/vc_redist.x64.exe" target="_blank">Установка для x64 <span class="docon docon-navigate-external x-hidden-focus"></span></a>
-- <a href="https://aka.ms/vs/16/release/vc_redist.arm64.exe" target="_blank">Установка для ARMx64 <span class="docon docon-navigate-external x-hidden-focus"></span></a>
+- <a href="https://aka.ms/vs/16/release/vc_redist.x86.exe" target="_blank">Установка для x86 </a>
+- <a href="https://aka.ms/vs/16/release/vc_redist.x64.exe" target="_blank">Установка для x64 </a>
+- <a href="https://aka.ms/vs/16/release/vc_redist.arm64.exe" target="_blank">Установка для ARMx64 </a>
 
 ### <a name="c"></a>C#
 
@@ -49,7 +49,7 @@ ms.locfileid: "88944464"
 > Начиная с выпуска 1.3.0 файл `Microsoft.CognitiveServices.Speech.csharp.bindings.dll` (отгружен в предыдущих выпусках) больше не требуется. Теперь функциональность интегрирована в пакет SDK для Core.
 
 > [!IMPORTANT]
-> Для проекта Windows Forms приложение (.NET Framework) C# Убедитесь, что библиотеки включены в параметры развертывания проекта. Это можно проверить в разделе `Properties -> Publish Section` . Нажмите кнопку `Application Files` и найдите соответствующие библиотеки в списке Прокрутка вниз. Убедитесь, что для параметра задано значение `Included` . Visual Studio будет включать файл при публикации или развертывании проекта.
+> Для проекта Windows Forms приложение (платформа .NET Framework) C# Убедитесь, что библиотеки включены в параметры развертывания проекта. Это можно проверить в разделе `Properties -> Publish Section` . Нажмите кнопку `Application Files` и найдите соответствующие библиотеки в списке Прокрутка вниз. Убедитесь, что для параметра задано значение `Included` . Visual Studio будет включать файл при публикации или развертывании проекта.
 
 ### <a name="c"></a>C++
 

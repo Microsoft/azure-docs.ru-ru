@@ -2,19 +2,19 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 02/09/2021
+ms.date: 03/05/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: dcd08c0635eb4a104cc945fbf4025a6807987968
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: 2b4acda582188d4057f19d4065e5662873436365
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100092368"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102424802"
 ---
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
-|[Рабочие области Azure синапсе должны разрешать трафик исходящего трафика только утвержденным целевым объектам](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F3484ce98-c0c5-4c83-994b-c5ac24785218) |Повышайте безопасность рабочей области синапсе, разрешая исходящий трафик данных только для утвержденных целей. Это помогает предотвратить утечка данных, проверяя целевой объект перед отправкой данных. |Audit, Disabled, Deny |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Synapse/Workspace_RestrictOutboundDataTraffic_Audit.json) |
+|[Рабочие области Azure Synapse должны разрешать исходящий трафик только к утвержденным целевым объектам](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F3484ce98-c0c5-4c83-994b-c5ac24785218) |Повысьте безопасность своей рабочей области Synapse, разрешив исходящий трафик только к утвержденным целевым объектам. Это помогает предотвратить утечки данных благодаря проверке целевых объектов перед отправкой данных. |Audit, Disabled, Deny |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Synapse/Workspace_RestrictOutboundDataTraffic_Audit.json) |
 |[Рабочие области Azure Synapse должны использовать ключи, управляемые клиентом, для шифрования неактивных данных](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Ff7d52b2d-e161-4dfa-a82b-55e564167385) |Используйте управляемые клиентом ключи для управления шифрованием неактивных данных, хранящихся в рабочих областях Azure Synapse. Кроме того, ключи, управляемые клиентом, обеспечивают двойное шифрование, добавляя второй уровень шифрования поверх заданного по умолчанию способа (с помощью ключей, управляемых службой). |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Synapse/SynapseWorkspaceCMK_Audit.json) |
 |[Правила брандмауэра для IP-адресов в рабочих областях Azure Synapse должны быть удалены](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F56fd377d-098c-4f02-8406-81eb055902b8) |Удаление всех правил брандмауэра для IP-адресов повышает уровень безопасности, обеспечивая доступ к рабочей области Azure Synapse только из частной конечной точки. Эта конфигурация выполняет аудит создания правил брандмауэра, которые разрешают доступ к общедоступной сети в рабочей области. |Audit, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Synapse/SynapseWorkspaceFirewallRules_Audit.json) |
 |[Управляемая виртуальная сеть рабочей области в рабочих областях Azure Synapse должна быть включена](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F2d9dbfa3-927b-4cf0-9d0f-08747f971650) |Включение управляемой виртуальной сети рабочей области гарантирует, что ваша рабочая область будет изолирована от других областей. Интеграции данных и ресурсы Spark, развернутые в этой виртуальной сети, также обеспечивают изоляцию на уровне пользователей для действий Spark. |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Synapse/SynapseWorkspaceManagedVnet_Audit.json) |

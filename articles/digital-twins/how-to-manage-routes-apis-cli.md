@@ -7,12 +7,12 @@ ms.author: alkarche
 ms.date: 11/18/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 40cf83b0ca9e4c794979f2b20ddb73360758abc5
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: b0e440f9fe0b7ce1591318362ac0419b9aa01baf
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102198546"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102433307"
 ---
 # <a name="manage-endpoints-and-routes-in-azure-digital-twins-apis-and-cli"></a>Управление конечными точками и маршрутами в Azure Digital двойников (API и CLI)
 
@@ -20,7 +20,7 @@ ms.locfileid: "102198546"
 
 В Azure Digital двойников можно маршрутизировать [уведомления о событиях](how-to-interpret-event-data.md) в подчиненные службы или подключенные ресурсы вычислений. Для этого сначала необходимо настроить **конечные точки**, которые могут получать события. Затем можно создать  [**маршруты событий**](concepts-route-events.md) , указывающие, какие события, создаваемые Azure Digital двойников, доставляются в конечные точки.
 
-В этой статье описывается процесс создания конечных точек и маршрутов с помощью [интерфейсов API](/rest/api/azure-digitaltwins/), [пакета SDK для .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet&preserve-view=true)и [интерфейса командной строки Azure Digital двойников](how-to-use-cli.md).
+В этой статье описывается процесс создания конечных точек и маршрутов с помощью [интерфейсов API](/rest/api/azure-digitaltwins/), [пакета SDK для .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client)и [интерфейса командной строки Azure Digital двойников](how-to-use-cli.md).
 
 Кроме того, можно также управлять конечными точками и маршрутами с помощью [портал Azure](https://portal.azure.com). Версию этой статьи, которая использует портал, см. [*в разделе руководство. Управление конечными точками и маршрутами (портал)*](how-to-manage-routes-portal.md).
 
@@ -208,7 +208,7 @@ az resource create --id <Azure-Digital-Twins-instance-Azure-resource-ID>/endpoin
 
 ### <a name="create-routes-with-the-apis-and-c-sdk"></a>Создание маршрутов с помощью API и пакета SDK для C#
 
-Один из способов определения маршрутов событий — с помощью [API-интерфейсов плоскости данных](how-to-use-apis-sdks.md#overview-data-plane-apis). В примерах в этом разделе используется [пакет SDK для .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet&preserve-view=true).
+Один из способов определения маршрутов событий — с помощью [API-интерфейсов плоскости данных](how-to-use-apis-sdks.md#overview-data-plane-apis). В примерах в этом разделе используется [пакет SDK для .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client).
 
 `CreateOrReplaceEventRouteAsync` — Это вызов пакета SDK, который используется для добавления маршрута события. Ниже приведен пример использования.
 

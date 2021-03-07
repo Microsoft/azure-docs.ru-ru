@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 06/04/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 3724586ae9773e135905cddd2a9a33a3a6803ce5
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: d2d3d04bdb8066db263c608bb1d42acca303a656
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102211801"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102433834"
 ---
 # <a name="use-the-azure-digital-twins-apis-and-sdks"></a>Использование интерфейсов API и пакетов SDK для Azure Digital Twins
 
@@ -31,7 +31,7 @@ API-интерфейсы плоскости управления — это ин
 Для использования API-интерфейсов плоскости управления:
 * Интерфейсы API можно вызывать напрямую, ссылаясь на последнюю папку Swagger в [репозитории Swagger плоскости управления](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/digitaltwins/resource-manager/Microsoft.DigitalTwins/stable). В эту папку также входит папка примеров, в которых показано использование.
 * В настоящее время вы можете получить доступ к пакетам SDK для API управления в...
-  - [**.NET (C#)**](https://www.nuget.org/packages/Microsoft.Azure.Management.DigitalTwins/) ([ссылка [автоматически созданная]](/dotnet/api/overview/azure/digitaltwins/management?view=azure-dotnet&preserve-view=true)) ([источник](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/digitaltwins/Microsoft.Azure.Management.DigitalTwins))
+  - [**.NET (C#)**](https://www.nuget.org/packages/Microsoft.Azure.Management.DigitalTwins/) ([ссылка [автоматически созданная]](/dotnet/api/overview/azure/digitaltwins/management)) ([источник](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/digitaltwins/Microsoft.Azure.Management.DigitalTwins))
   - [**Java**](https://search.maven.org/search?q=a:azure-mgmt-digitaltwins) ([ссылка [автоматически созданная]](/java/api/overview/azure/digitaltwins)) ([источник](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/digitaltwins))
   - [**JavaScript**](https://www.npmjs.com/package/@azure/arm-digitaltwins) ([Исходный](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/digitaltwins/arm-digitaltwins)код)
   - [**Python**](https://pypi.org/project/azure-mgmt-digitaltwins/) ([источник](https://github.com/Azure/azure-sdk-for-python/tree/release/v3/sdk/digitaltwins/azure-mgmt-digitaltwins))
@@ -55,7 +55,7 @@ API-интерфейсы плоскости данных — это API-инте
    - Просмотр [справочной документации по API](/rest/api/azure-digitaltwins/).
 * Вы можете использовать **пакет SDK для .NET (C#)**. Для использования пакета SDK для .NET...
    - Вы можете просмотреть и добавить пакет из NuGet: [Azure. дигиталтвинс. Core](https://www.nuget.org/packages/Azure.DigitalTwins.Core). 
-   - Вы можете просмотреть [справочную документацию по пакету SDK](/dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet&preserve-view=true).
+   - Вы можете просмотреть [справочную документацию по пакету SDK](/dotnet/api/overview/azure/digitaltwins/client).
    - Вы можете найти источник SDK, включая папку примеров, в GitHub: [клиентскую библиотеку Azure IOT Digital двойников для .NET](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/digitaltwins/Azure.DigitalTwins.Core). 
    - подробные сведения и примеры использования можно просмотреть, перейдя к разделу [*SDK .NET (C#) (панель данных)*](#net-c-sdk-data-plane) этой статьи.
 * Вы можете использовать **пакет SDK для Java**. Чтобы использовать пакет SDK для Java...
@@ -82,7 +82,7 @@ API-интерфейсы плоскости данных — это API-инте
 > Дополнительные сведения о разработке SDK см. в общих [принципах разработки для пакетов SDK для Azure](https://azure.github.io/azure-sdk/general_introduction.html) и конкретных [рекомендациях по проектированию .NET](https://azure.github.io/azure-sdk/dotnet_introduction.html).
 
 Чтобы использовать пакет SDK, включите в проект пакет NuGet **Azure. дигиталтвинс. Core** . Вам также потребуется последняя версия пакета **Azure. Identity** . В Visual Studio эти пакеты можно добавить с помощью диспетчера пакетов NuGet (доступ к которому осуществляется с помощью *средств > диспетчер пакетов nuget > управления пакетами NuGet для решения*). Кроме того, вы можете использовать средство командной строки .NET с командами, приведенными в следующих ссылках пакета NuGet, чтобы добавить их в проект:
-* [**Azure.DigitalTwins.Core**](https://www.nuget.org/packages/Azure.DigitalTwins.Core). Это пакет для [пакета SDK Azure Digital Twins для .NET](/dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet&preserve-view=true). 
+* [**Azure.DigitalTwins.Core**](https://www.nuget.org/packages/Azure.DigitalTwins.Core). Это пакет для [пакета SDK Azure Digital Twins для .NET](/dotnet/api/overview/azure/digitaltwins/client). 
 * [**Azure.Identity**](https://www.nuget.org/packages/Azure.Identity). Эта библиотека предоставляет инструменты для проверки подлинности в Azure.
 
 Подробное пошаговое руководство по использованию API на практике см. в [*руководстве по созданию кода для клиентского приложения*](tutorial-code.md). 
@@ -175,15 +175,15 @@ API-интерфейсы плоскости данных — это API-инте
 В следующем списке приведены дополнительные сведения и общие рекомендации по использованию API и пакетов SDK.
 
 * Вы можете использовать средство HTTP для тестирования ОСТАВШЕЙся работы, например POST, чтобы выполнять прямые вызовы к интерфейсам API цифровых двойников Azure. Дополнительные сведения об этом процессе см. [*в разделе инструкции. Создание запросов с помощью POST*](how-to-use-postman.md).
-* Чтобы использовать пакет SDK, создайте экземпляр `DigitalTwinsClient` класса. Конструктору требуются учетные данные, которые можно получить с помощью различных методов проверки подлинности в `Azure.Identity` пакете. Дополнительные сведения `Azure.Identity` см. в [документации по пространству имен](/dotnet/api/azure.identity?preserve-view=true&view=azure-dotnet). 
-* Вы можете найти `InteractiveBrowserCredential` полезную информацию при начале работы, но есть несколько других вариантов, включая учетные данные для [управляемого удостоверения](/dotnet/api/azure.identity.interactivebrowsercredential?preserve-view=true&view=azure-dotnet), которые, скорее всего, будут использоваться для проверки подлинности [функций Azure, НАСТРОЕНных с помощью MSI](../app-service/overview-managed-identity.md?tabs=dotnet) в Azure Digital двойников. Дополнительные сведения о см `InteractiveBrowserCredential` . в [документации по его классу](/dotnet/api/azure.identity.interactivebrowsercredential?preserve-view=true&view=azure-dotnet).
+* Чтобы использовать пакет SDK, создайте экземпляр `DigitalTwinsClient` класса. Конструктору требуются учетные данные, которые можно получить с помощью различных методов проверки подлинности в `Azure.Identity` пакете. Дополнительные сведения `Azure.Identity` см. в [документации по пространству имен](/dotnet/api/azure.identity). 
+* Вы можете найти `InteractiveBrowserCredential` полезную информацию при начале работы, но есть несколько других вариантов, включая учетные данные для [управляемого удостоверения](/dotnet/api/azure.identity.interactivebrowsercredential), которые, скорее всего, будут использоваться для проверки подлинности [функций Azure, НАСТРОЕНных с помощью MSI](../app-service/overview-managed-identity.md?tabs=dotnet) в Azure Digital двойников. Дополнительные сведения о см `InteractiveBrowserCredential` . в [документации по его классу](/dotnet/api/azure.identity.interactivebrowsercredential).
 * Все вызовы API служб предоставляются как функции-члены `DigitalTwinsClient` класса.
 * Все функции службы существуют в синхронных и асинхронных версиях.
-* Все функции службы создают исключение для любого возвращаемого состояния, равного 400 или выше. Убедитесь, что вызовы заносятся в `try` раздел и перехватите по крайней мере `RequestFailedExceptions` . Дополнительные сведения об этом типе исключения см. [здесь](/dotnet/api/azure.requestfailedexception?preserve-view=true&view=azure-dotnet).
-* Большинство методов службы возвращают `Response<T>` или ( `Task<Response<T>>` для асинхронных вызовов), где `T` — это класс возвращаемого объекта для вызова службы. [`Response`](/dotnet/api/azure.response-1?preserve-view=true&view=azure-dotnet)Класс инкапсулирует возвращаемые службы и представляет возвращаемые значения в `Value` поле.  
-* Методы службы с страничными результатами возвращают `Pageable<T>` или `AsyncPageable<T>` как результаты. Дополнительные сведения о `Pageable<T>` классе см. здесь [](/dotnet/api/azure.pageable-1?preserve-view=true&view=azure-dotnet). Дополнительные сведения `AsyncPageable<T>` см. [здесь](/dotnet/api/azure.asyncpageable-1?preserve-view=true&view=azure-dotnet).
+* Все функции службы создают исключение для любого возвращаемого состояния, равного 400 или выше. Убедитесь, что вызовы заносятся в `try` раздел и перехватите по крайней мере `RequestFailedExceptions` . Дополнительные сведения об этом типе исключения см. [здесь](/dotnet/api/azure.requestfailedexception).
+* Большинство методов службы возвращают `Response<T>` или ( `Task<Response<T>>` для асинхронных вызовов), где `T` — это класс возвращаемого объекта для вызова службы. [`Response`](/dotnet/api/azure.response-1)Класс инкапсулирует возвращаемые службы и представляет возвращаемые значения в `Value` поле.  
+* Методы службы с страничными результатами возвращают `Pageable<T>` или `AsyncPageable<T>` как результаты. Дополнительные сведения о `Pageable<T>` классе см. здесь [](/dotnet/api/azure.pageable-1). Дополнительные сведения `AsyncPageable<T>` см. [здесь](/dotnet/api/azure.asyncpageable-1).
 * Можно выполнять итерацию по страничным результатам с помощью `await foreach` цикла. Дополнительные сведения об этом процессе см. [здесь](/archive/msdn-magazine/2019/november/csharp-iterating-with-async-enumerables-in-csharp-8).
-* Базовый пакет SDK — `Azure.Core` . См. [документацию по пространству имен Azure](/dotnet/api/azure?preserve-view=true&view=azure-dotnet) для получения справки по инфраструктуре и типам пакета SDK.
+* Базовый пакет SDK — `Azure.Core` . См. [документацию по пространству имен Azure](/dotnet/api/azure) для получения справки по инфраструктуре и типам пакета SDK.
 
 Методы службы возвращают строго типизированные объекты везде, где это возможно. Однако так как Azure Digital двойников основан на моделях, настраиваемых пользователем во время выполнения (через модели ДТДЛ, загруженные в службу), многие API службы принимают и возвращают данные двойника в формате JSON.
 

@@ -9,12 +9,12 @@ ms.subservice: cosmosdb-sql
 ms.topic: troubleshooting
 ms.reviewer: sngun
 ms.custom: devx-track-dotnet
-ms.openlocfilehash: 04813b9d70557314e619fded5294644f5f6fadf5
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.openlocfilehash: dce309b955882f6236f285ee6bd20a79201e43fb
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99831252"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102429941"
 ---
 # <a name="diagnose-and-troubleshoot-issues-when-using-azure-cosmos-db-net-sdk"></a>Diagnose and troubleshoot issues when using Azure Cosmos DB .NET SDK (Диагностика и устранение неполадок при использовании пакета SDK Azure Cosmos DB для .NET)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -91,7 +91,7 @@ ms.locfileid: "99831252"
 * Назначьте [общедоступный IP-адрес виртуальной машине Azure](../load-balancer/troubleshoot-outbound-connection.md#assignilpip).
 
 ### <a name="high-network-latency"></a><a name="high-network-latency"></a>Высокая задержка сети
-Высокую задержку сети можно определить с помощью [строки диагностики](/dotnet/api/microsoft.azure.documents.client.resourceresponsebase.requestdiagnosticsstring?preserve-view=true&view=azure-dotnet) в пакете SDK v2 или [диагностики](/dotnet/api/microsoft.azure.cosmos.responsemessage.diagnostics?preserve-view=true&view=azure-dotnet#Microsoft_Azure_Cosmos_ResponseMessage_Diagnostics) в пакете SDK v3.
+Высокую задержку сети можно определить с помощью [строки диагностики](/dotnet/api/microsoft.azure.documents.client.resourceresponsebase.requestdiagnosticsstring) в пакете SDK v2 или [диагностики](/dotnet/api/microsoft.azure.cosmos.responsemessage.diagnostics#Microsoft_Azure_Cosmos_ResponseMessage_Diagnostics) в пакете SDK v3.
 
 Если [время ожидания](troubleshoot-dot-net-sdk-request-timeout.md) отсутствует, и диагностика отображают отдельные запросы, где большая задержка очевидна по разности между `ResponseTime` и `RequestStartTime` , например (>300 миллисекунд в этом примере):
 

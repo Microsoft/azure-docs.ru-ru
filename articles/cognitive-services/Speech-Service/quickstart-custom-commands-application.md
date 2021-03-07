@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: sausin
 ms.custom: references_regions
-ms.openlocfilehash: ea32358aa86a6093cd72adf959d5fe731cf1e125
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.openlocfilehash: e046f8cbf6fa0418244f20e9a0c6f75f6da34136
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98786882"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102434633"
 ---
 # <a name="create-a-voice-assistant-using-custom-commands"></a>Создание голосового помощника с помощью пользовательских команд
 
@@ -24,7 +24,7 @@ ms.locfileid: "98786882"
 
 ## <a name="region-availability"></a>Доступность по регионам
 В настоящее время пользовательские команды поддерживают подписки на речь, созданные в следующих регионах:
-* западная часть США
+* Западная часть США
 * Западная часть США 2
 * Восточная часть США
 * восточная часть США 2
@@ -38,7 +38,7 @@ ms.locfileid: "98786882"
 ## <a name="prerequisites"></a>Предварительные требования
 
 > [!div class="checklist"]
-> * <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices" target="_blank">Создание ресурса речи Azure в регионе, поддерживающем пользовательские команды.<span class="docon docon-navigate-external x-hidden-focus"></span></a> Список поддерживаемых регионов см. в разделе о **доступности регионов** выше.
+> * <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices" target="_blank">Создание ресурса речи Azure в регионе, поддерживающем пользовательские команды.</a> Список поддерживаемых регионов см. в разделе о **доступности регионов** выше.
 > * Скачайте пример файла JSON для [смарт-комнаты Lite](https://aka.ms/speech/cc-quickstart) .
 > * Скачайте последнюю версию [клиента помощника по Windows Voice](https://aka.ms/speech/va-samples-wvac).
 
