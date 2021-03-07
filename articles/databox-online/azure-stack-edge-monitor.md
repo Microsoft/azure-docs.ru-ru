@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 02/02/2021
+ms.date: 03/04/2021
 ms.author: alkohli
-ms.openlocfilehash: 388be1b13f89a50bed003731c01c6ab6287faaf9
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.openlocfilehash: aae64cad3603725a4062d5afb42df974bbf8ac40
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99491070"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102438798"
 ---
 # <a name="monitor-your-azure-stack-edge-pro"></a>Мониторинг Azure Stack пограничных Pro
+
+[!INCLUDE [applies-to-GPU-and-pro-r-mini-r-and-fpga-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-fpga-sku.md)]
 
 В этой статье описывается, как отслеживать Azure Stack пограничных Pro. Для мониторинга устройства можно использовать портал Azure или локальный пользовательский веб-интерфейс. Используйте портал Azure для просмотра событий устройства и метрик, а также настройки метрик и управления ими. Используйте локальный пользовательский веб-интерфейс на физическом устройстве для просмотра состояния оборудования различных компонентов устройства.
 

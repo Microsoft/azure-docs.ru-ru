@@ -5,18 +5,22 @@ author: davidmrdavid
 ms.topic: conceptual
 ms.date: 12/02/2020
 ms.author: azfuncdf
-ms.openlocfilehash: 9083821fa03c09949daaf3166367489248a4d7d2
-ms.sourcegitcommit: e46f9981626751f129926a2dae327a729228216e
+ms.openlocfilehash: 62b3c9bb1c6fd53d9f11227a9d7e774d56859d04
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98029192"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102434769"
 ---
 # <a name="monitor-scenario-in-durable-functions---github-issue-monitoring-sample"></a>Сценарий мониторинга в Устойчивые функции — пример отслеживания проблем в GitHub
 
 Шаблон монитора представляет собой гибкий повторяющийся процесс в рабочем процессе. Например, повторение опроса, пока не будут выполнены определенные условия. В этой статье приведен пример использования устойчивых функций для реализации мониторинга.
 
-[! ВКЛЮЧИТЬ устойчивые функции — предварительные требования]
+## <a name="prerequisites"></a>Предварительные требования
+
+* [Выполните инструкции из краткого руководства](quickstart-python-vscode.md)
+* [Клонирование или скачивание проекта примеров из GitHub](https://github.com/Azure/azure-functions-durable-python/tree/main/samples/)
+
 
 ## <a name="scenario-overview"></a>Общие сведения о сценарии
 
@@ -29,7 +33,7 @@ ms.locfileid: "98029192"
 * Мониторы можно масштабировать. Та как каждый монитор является экземпляром оркестрации, можно создавать несколько мониторов без необходимости создавать новые функции или писать новый код.
 * Мониторы легко интегрируются в более крупные рабочие процессы. Монитором может быть один раздел более сложной функции оркестрации или [суборкестрация](durable-functions-sub-orchestrations.md).
 
-## <a name="configuration"></a>Параметр Configuration
+## <a name="configuration"></a>Конфигурация
 
 ### <a name="configuring-twilio-integration"></a>Настройка интеграции Twilio
 
@@ -45,7 +49,6 @@ ms.locfileid: "98029192"
 
 ### <a name="e3_monitor-orchestrator-function"></a>E3_Monitor Orchestrator, функция
 
-# <a name="python"></a>[Python](#tab/python)
 
 Функция **E3_Monitor** использует стандартный файл *function.json* для функций оркестратора.
 
@@ -55,7 +58,6 @@ ms.locfileid: "98029192"
 
 [!code-python[Main](~/samples-durable-functions-python/samples/monitor/E3_Monitor/\_\_init\_\_.py)]
 
----
 
 Эта функция оркестратора выполняет следующие задачи:
 
@@ -73,7 +75,6 @@ ms.locfileid: "98029192"
 
 Вспомогательные функции действий, как и другие примеры, являются обычными функциями, которые используют привязку триггера `activityTrigger`. Функция **E3_TooManyOpenIssues** возвращает список открытых проблем в репозитории и определяет наличие "слишком большого количества" таких элементов: более 3, как в нашем примере.
 
-# <a name="python"></a>[Python](#tab/python)
 
 Файл *function.json* выглядит следующим образом:
 
@@ -83,13 +84,11 @@ ms.locfileid: "98029192"
 
 [!code-python[Main](~/samples-durable-functions-python/samples/monitor/E3_TooManyOpenIssues/\_\_init\_\_.py)]
 
----
 
 ### <a name="e3_sendalert-activity-function"></a>Функция действия E3_SendAlert
 
 Функция **E3_SendAlert** использует привязку Twilio для отправки SMS-сообщения, уведомляющее пользователя о наличии по крайней мере 3 открытых проблем, ожидающих разрешения.
 
-# <a name="python"></a>[Python](#tab/python)
 
 Файл *function.json* выглядит просто:
 
@@ -99,7 +98,6 @@ ms.locfileid: "98029192"
 
 [!code-python[Main](~/samples-durable-functions-python/samples/monitor/E3_SendAlert/\_\_init\_\_.py)]
 
----
 
 ## <a name="run-the-sample"></a>Запуск примера
 

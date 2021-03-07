@@ -8,15 +8,15 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: face-api
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 03/05/2021
 ms.author: yluiu
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 04699890af2cfe835ecca6ee983808d7d8d002c8
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 72fd005ce44d116f86d9a0b4c0d1932e2e4facfb
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102174195"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102425776"
 ---
 # <a name="specify-a-face-detection-model"></a>Указание модели определения лиц
 

@@ -10,12 +10,12 @@ ms.subservice: speech-service
 ms.topic: conceptual
 ms.date: 04/03/2020
 ms.author: trbye
-ms.openlocfilehash: 597a7c3954912a3a86b5db9f92ba75e8aaee63f6
-ms.sourcegitcommit: fc401c220eaa40f6b3c8344db84b801aa9ff7185
+ms.openlocfilehash: 4c8ee3a65c26d1eb3acb7b9f4c18f11e870e4b82
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98601818"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102434520"
 ---
 # <a name="about-the-speech-sdk"></a>Сведения о пакете SDK службы "Речь"
 
@@ -58,13 +58,14 @@ ms.locfileid: "98601818"
 
 ### <a name="voice-assistants"></a>Голосовые помощники
 
-[Голосовые помощники](voice-assistants.md) , использующие РЕЧЕВОЙ пакет SDK, позволяют разработчикам создавать естественные, человеческие в своем опыте интерфейсы общения для своих приложений и работы. Служба "помощник по голосовому обслуживанию" обеспечивает быстрое и надежное взаимодействие между устройством и помощником. Реализация использует прямой линейный канал распознавания речи платформы Bot или интегрированную службу пользовательских команд для выполнения задачи. Кроме того, речевые помощники могут использовать пользовательские голоса, созданные на [настраиваемом портале](https://aka.ms/customvoice) , чтобы добавить уникальный интерфейс вывода голоса.
+Речевые [помощники](voice-assistants.md) , использующие пакет SDK для распознавания речи, позволяют создавать естественные, человеческие в своем опыте интерфейсы общения для ваших приложений и работы. Пакет SDK для распознавания речи обеспечивает быстрое и надежное взаимодействие, включающее преобразование речи в текст, преобразование текста в речь и общение с помощью одного подключения. Ваша реализация может использовать канал голосовой речи прямой линии или интегрированную службу пользовательских команд для выполнения задачи. Кроме того, речевые помощники могут использовать пользовательские голоса, созданные на [настраиваемом портале](https://aka.ms/customvoice) , чтобы добавить уникальный интерфейс вывода голоса.
 
-**Помощники по голосовым** специалистам доступны на следующих платформах:
+Поддержка **речевого помощника** доступна на следующих платформах:
 
   - C++/Виндовс & Linux & macOS
   - C/Windows
   - Java/Windows & Linux & macOS & Android (пакет SDK для речевых устройств)
+  - Go
 
 #### <a name="keyword-spotting"></a>Заданное ключевое слово
 
@@ -113,7 +114,7 @@ ms.locfileid: "98601818"
 
 ### <a name="codec-compressed-audio-input"></a>Звуковые входные данные, сжатые кодеком
 
-Некоторые языки программирования речевого пакета SDK поддерживают звуковые потоки, сжатые с помощью кодеков. Дополнительные сведения см. в разделе <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-use-codec-compressed-audio-input-streams" target="_blank">Использование сжатых входных форматов <span class="docon docon-navigate-external x-hidden-focus"></span> звука </a>.
+Некоторые языки программирования речевого пакета SDK поддерживают звуковые потоки, сжатые с помощью кодеков. Дополнительные сведения см. в разделе <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-use-codec-compressed-audio-input-streams" target="_blank">Использование сжатых входных форматов звука </a>.
 
 **Звуковые входные данные, сжатые кодеком** , доступны на следующих платформах:
 
@@ -177,7 +178,7 @@ ms.locfileid: "98601818"
 
 [!INCLUDE [Sample source code](../../../includes/cognitive-services-speech-service-speech-sdk-sample-download-h2.md)]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Создание бесплатной учетной записи Azure.](https://azure.microsoft.com/free/cognitive-services/)
 * [Распознавание речи в C#](./get-started-speech-to-text.md?pivots=programming-language-csharp&tabs=dotnet)

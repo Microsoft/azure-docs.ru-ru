@@ -7,18 +7,18 @@ ms.author: baanders
 ms.date: 11/03/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: a2732c3979998ea3429833f96056b88bc2dccf75
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: fde473453aa79e0078765df394acdeb54b3c7fe9
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102050942"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102433324"
 ---
 # <a name="manage-a-graph-of-digital-twins-using-relationships"></a>Управление графиком цифровых двойников с помощью связей
 
 Основой Azure Digital двойников является [двойника граф](concepts-twins-graph.md) , представляющий всю среду. Граф двойника состоит из отдельных цифровых двойников, подключенных через **связи**. 
 
-Получив рабочий [экземпляр Azure Digital двойников](how-to-set-up-instance-portal.md) и настроив код [проверки подлинности](how-to-authenticate-client.md) в клиентском приложении, вы можете использовать [**API дигиталтвинс**](/rest/api/digital-twins/dataplane/twins) для создания, изменения и удаления цифровых двойников и их отношений в экземпляре Azure Digital двойников. Вы также можете использовать [пакет SDK для .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet&preserve-view=true)или [Azure Digital двойников CLI](how-to-use-cli.md).
+Получив рабочий [экземпляр Azure Digital двойников](how-to-set-up-instance-portal.md) и настроив код [проверки подлинности](how-to-authenticate-client.md) в клиентском приложении, вы можете использовать [**API дигиталтвинс**](/rest/api/digital-twins/dataplane/twins) для создания, изменения и удаления цифровых двойников и их отношений в экземпляре Azure Digital двойников. Вы также можете использовать [пакет SDK для .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client)или [Azure Digital двойников CLI](how-to-use-cli.md).
 
 Эта статья посвящена управлению связями и графу в целом. для работы с отдельными цифровыми двойниковми см. раздел [*как управлять цифровыми двойников*](how-to-manage-twin.md).
 
@@ -97,7 +97,7 @@ ms.locfileid: "102050942"
 В Azure Digital двойников также есть API для поиска всех **входящих** отношений с заданным двойника. Это часто полезно для обратных переходов или при удалении двойника.
 
 >[!NOTE]
-> `IncomingRelationship` вызовы не возвращают полный текст связи. Дополнительные сведения о `IncomingRelationship` классе см. в его [справочной документации](/dotnet/api/azure.digitaltwins.core.incomingrelationship?view=azure-dotnet&preserve-view=true).
+> `IncomingRelationship` вызовы не возвращают полный текст связи. Дополнительные сведения о `IncomingRelationship` классе см. в его [справочной документации](/dotnet/api/azure.digitaltwins.core.incomingrelationship).
 
 Пример кода в предыдущем разделе посвящен поиску исходящих связей от двойника. Следующий пример структурирован аналогично, но находит *Входящие* связи с двойника. В этом примере также используется вызов пакета SDK (выделено) внутри пользовательского метода, который может появиться в контексте более крупной программы.
 
@@ -157,7 +157,7 @@ ms.locfileid: "102050942"
 Перед запуском образца выполните следующие действия.
 1. Скачайте файлы модели, поместите их в свой проект и замените `<path-to>` заполнители в приведенном ниже коде, чтобы сообщить программе, где их можно найти.
 2. Замените заполнитель `<your-instance-hostname>` именем узла своего экземпляра цифрового двойников Azure.
-3. Добавьте в проект две зависимости, которые понадобятся для работы с Azure Digital двойников. Первая — это пакет для [пакета SDK Azure Digital Twins для .NET](/dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet&preserve-view=true), вторая содержит средства для проверки подлинности в Azure.
+3. Добавьте в проект две зависимости, которые понадобятся для работы с Azure Digital двойников. Первая — это пакет для [пакета SDK Azure Digital Twins для .NET](/dotnet/api/overview/azure/digitaltwins/client), вторая содержит средства для проверки подлинности в Azure.
 
       ```cmd/sh
       dotnet add package Azure.DigitalTwins.Core
@@ -188,8 +188,8 @@ ms.locfileid: "102050942"
 
 |  Идентификатор модели    | Идентификатор двойника (должен быть уникальным) | Имя связи  | Идентификатор целевого двойника  | Данные инициализации двойника |
 | --- | --- | --- | --- | --- |
-| дтми: пример: Floor; 1    | Floor1 | содержит | Room1 | |
-| дтми: пример: Floor; 1    | Floor0 | содержит | Room0 | |
+| дтми: пример: Floor; 1    | Floor1 | contains | Room1 | |
+| дтми: пример: Floor; 1    | Floor0 | contains | Room0 | |
 | дтми: пример: комната; 1    | Room1 | | | {"Температура": 80} |
 | дтми: пример: комната; 1    | Room0 | | | {"Температура": 70} |
 

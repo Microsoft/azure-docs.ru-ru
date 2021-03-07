@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: troubleshooting
-ms.date: 08/11/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: be7d477d08b025fd450bfa859e8eb677ba680143
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.openlocfilehash: e074043cb685f60027d3c09ae7ad8dc17dded0df
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96446372"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102443409"
 ---
 # <a name="troubleshoot-your-azure-stack-edge-pro-ordering-issues"></a>Устранение неполадок, связанных с порядком Azure Stack пограничных заказов Pro
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этой статье описывается, как устранять неполадки Azure Stack пограничных проблем в заказах.
 

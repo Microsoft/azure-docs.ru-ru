@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: media
 ms.date: 1/14/2020
 ms.author: inhenkel
-ms.openlocfilehash: ab819239572fd99fdf5ff3bf23f81eb3cdff3b9a
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: dc75ada87db6fdbb3861c2e4e495f93147513421
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98940094"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102440570"
 ---
 # <a name="encoding-scenario-based-migration-guidance"></a>Кодирование рекомендаций по миграции на основе сценариев
 
@@ -58,10 +58,12 @@ ms.locfileid: "98940094"
 
 ### <a name="v3-encoding-workflow"></a>Рабочий процесс кодирования v3
 
-[![Кодирование рабочего процесса для v3 ](./media/migration-guide/V3-pretty.svg)](./media/migration-guide/V3-pretty.svg#lightbox)
+<Token>
+<object data="./media/migration-guide/v3-pretty2.svg" width="80%"></object>
+</Token>
 
 1. Настройка
-    1. Создайте ресурс или используйте и существующий ресурс. При использовании нового ресурса Отправьте содержимое в этот ресурс. При использовании существующего ресурса необходимо кодировать файлы, которые уже существуют в ресурсе. Не следует *отправлять больше содержимого в этот ресурс.*
+    1. Создайте ресурс или используйте существующий ресурс. При использовании нового ресурса Отправьте содержимое в этот ресурс. При использовании существующего ресурса необходимо кодировать файлы, которые уже существуют в ресурсе. Не следует *отправлять больше содержимого в этот ресурс.*
     1. Создание выходного ресурса  Выходной ресурс — это место, где будут храниться закодированные файлы и метаданные входных и выходных данных.
     1. Получить значения для преобразования:
         - Стандартная Предустановка кодировщика
@@ -84,17 +86,6 @@ ms.locfileid: "98940094"
 Если код v2 назывался стандартным кодировщиком с пользовательской загрузкой, сначала необходимо создать новое преобразование с помощью настраиваемой предустановки кодировщика Standard, прежде чем отправлять задание.
 
 Пользовательские предустановки теперь являются JSON и больше не основаны на XML. Повторно создайте предустановку в формате JSON после пользовательской предустановки схемы, как определено в документации по [преобразованию Open API (Swagger)](https://github.com/Azure/azure-rest-api-specs/blob/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2020-05-01/examples/transforms-create.json) .
-
-
-<!-- removed because this is covered in the tutorials
-Common custom [encoding](https://github.com/Azure/azure-rest-api-specs/blob/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2020-05-01/Encoding.json) scenarios:
-        1. Create a custom Single Bitrate MP4 encode
-        1. Create a custom [Adaptive Bitrate Encoding Ladder](autogen-bitrate-ladder.md)
-        1. Creating Sprite Thumbnails
-        1. Creating Thumbnails (see below for your preferred method)
-        1. [Sub Clipping](subclip-video-rest-howto.md)
-        1. Cropping
--->
 
 ## <a name="input-and-output-metadata-files-from-an-encoding-job"></a>Входные и выходные файлы метаданных из задания кодирования
 

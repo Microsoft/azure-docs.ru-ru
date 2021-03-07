@@ -7,16 +7,16 @@ ms.author: baanders
 ms.date: 11/02/2020
 ms.topic: tutorial
 ms.service: digital-twins
-ms.openlocfilehash: 4851d06ffedaacb441d28cae24d7d32bfe1c611c
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.openlocfilehash: bd3ba88650161bd11a24697b4ff8575d307120e9
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99576267"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102424467"
 ---
 # <a name="tutorial-coding-with-the-azure-digital-twins-apis"></a>Руководство по Написание кода с помощью API Azure Digital Twins
 
-Часто разработчики, работающие с Azure Digital Twins, пишут клиентское приложение для взаимодействия со своим экземпляром службы Azure Digital Twins. Этот учебник предназначен для разработчиков и содержит вводные сведения о программировании для службы Azure Digital Twins с помощью [пакета SDK Azure Digital Twins для .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet&preserve-view=true). В нем пошагово описывается процесс написания консольного клиентского приложения на C# с самого начала.
+Часто разработчики, работающие с Azure Digital Twins, пишут клиентское приложение для взаимодействия со своим экземпляром службы Azure Digital Twins. Этот учебник предназначен для разработчиков и содержит вводные сведения о программировании для службы Azure Digital Twins с помощью [пакета SDK Azure Digital Twins для .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client). В нем пошагово описывается процесс написания консольного клиентского приложения на C# с самого начала.
 
 > [!div class="checklist"]
 > * Настройка проекта
@@ -57,7 +57,7 @@ dotnet new console
 
 Оставьте окно командной строки открытым, так как вы будете продолжать использовать его на протяжении всей работы с учебником.
 
-Затем **добавьте в проект две зависимости**, которые понадобятся для работы с Azure Digital Twins. Первая — это пакет для [пакета SDK Azure Digital Twins для .NET](/dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet&preserve-view=true), вторая содержит средства для проверки подлинности в Azure.
+Затем **добавьте в проект две зависимости**, которые понадобятся для работы с Azure Digital Twins. Первая — это пакет для [пакета SDK Azure Digital Twins для .NET](/dotnet/api/overview/azure/digitaltwins/client), вторая содержит средства для проверки подлинности в Azure.
 
 ```cmd/sh
 dotnet add package Azure.DigitalTwins.Core

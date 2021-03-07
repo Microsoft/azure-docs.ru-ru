@@ -9,16 +9,16 @@ ms.date: 08/04/2020
 ms.author: normesta
 ms.reviewer: yzheng
 ms.custom: references_regions
-ms.openlocfilehash: db946dcc0fc8571f7b6aa191909155baccf7d1a2
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: 8ed63a508447104f9073c986debfae73ba7de89f
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98878584"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102428649"
 ---
 # <a name="mount-blob-storage-by-using-the-network-file-system-nfs-30-protocol-preview"></a>Подключение хранилища BLOB-объектов с помощью протокола NFS 3,0 (Предварительная версия)
 
-Контейнер в хранилище BLOB-объектов можно подключить из виртуальной машины Azure под управлением Windows или Linux или системы Windows или Linux, которая выполняется локально с помощью протокола NFS 3,0. В этой статье приводятся пошаговые инструкции. Дополнительные сведения о поддержке протокола NFS 3,0 в хранилище больших двоичных объектов см. в статье [Поддержка протоколов nfs 3,0 в хранилище BLOB-объектов Azure (Предварительная версия)](network-file-system-protocol-support.md).
+Вы можете подключить контейнер в хранилище BLOB-объектов из виртуальной машины Azure под управлением Linux или системы Linux, которая выполняется локально с помощью протокола NFS 3,0. В этой статье приводятся пошаговые инструкции. Дополнительные сведения о поддержке протокола NFS 3,0 в хранилище больших двоичных объектов см. в статье [Поддержка протоколов nfs 3,0 в хранилище BLOB-объектов Azure (Предварительная версия)](network-file-system-protocol-support.md).
 
 ## <a name="step-1-register-the-nfs-30-protocol-feature-with-your-subscription"></a>Шаг 1. регистрация функции протокола NFS 3,0 в подписке
 
@@ -82,8 +82,8 @@ Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName AllowNFS
 
 |Параметр | Производительность Premium | Стандартная производительность  
 |----|---|---|
-|Location|Все доступные регионы |Один из следующих регионов: Восточная Австралия, Центральная Корея и Юго-Центральная часть США   
-|Производительность|Premium| Стандартный
+|Расположение|Все доступные регионы |Один из следующих регионов: Восточная Австралия, Центральная Корея и Юго-Центральная часть США   
+|Производительность|Premium| Standard
 |Тип учетной записи|BlockBlobStorage| Общего назначения версии 2
 |Репликация|Локально избыточное хранилище (LRS)| Локально избыточное хранилище (LRS)
 |Метод подключения|Общедоступная конечная точка (выбранные сети) или частная конечная точка |Общедоступная конечная точка (выбранные сети) или частная конечная точка
@@ -107,9 +107,7 @@ Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName AllowNFS
 
 ## <a name="step-7-mount-the-container"></a>Шаг 7. Подключение контейнера
 
-Создайте каталог в системе Windows или Linux, а затем подключите контейнер в учетной записи хранения.
-
-### <a name="linux"></a>[Linux](#tab/linux)
+Создайте каталог в системе Linux, а затем подключите контейнер в учетной записи хранения.
 
 1. В системе Linux создайте каталог.
 
@@ -127,32 +125,6 @@ Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName AllowNFS
 
    - Замените `<container-name>` заполнитель именем своего контейнера.
 
-
-### <a name="windows"></a>[Windows](#tab/windows)
-
-1. Откройте диалоговое окно **компоненты Windows** , а затем включите функцию **клиент для NFS** . 
-
-   ![Клиент для сетевой файловой системы](media/network-file-system-protocol-how-to/client-for-network-files-system-feature.png)
-
-2. Откройте окно **командной строки** (cmd.exe). Затем подключите контейнер с помощью команды [Mount](/windows-server/administration/windows-commands/mount) .
-
-   ```
-   mount -o nolock <storage-account-name>.blob.core.windows.net:/<storage-account-name>/<container-name> *
-   ```
-
-   - Замените `<storage-account-name>` заполнитель, который отображается в этой команде, именем вашей учетной записи хранения.  
-
-   - Замените `<container-name>` заполнитель именем своего контейнера.
-
-3. Если требуются разрешения на запись, может потребоваться изменить UID и GID по умолчанию, используемые Windows для подключения к общей папке. Для этого выполните следующие команды PowerShell от имени администратора:
-
-   ```
-   New-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default -Name AnonymousUid -PropertyType DWord -Value 0
-   New-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default -Name AnonymousGid -PropertyType DWord -Value 0
-   ```
-   
-   - Перезапустите службу клиента NFS или перезагрузите сервер после внесения этого изменения.
-
 ---
 
 ## <a name="resolve-common-issues"></a>Устранение распространенных проблем
@@ -162,6 +134,6 @@ Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName AllowNFS
 |`Access denied by server while mounting`|Убедитесь, что клиент работает в поддерживаемой подсети. См. раздел [Поддерживаемые сетевые расположения](network-file-system-protocol-support.md#supported-network-connections).|
 |`No such file or directory`| Убедитесь, что подключенный контейнер был создан после того, как подтвердилась регистрация этой возможности. См. [Шаг 2. Убедитесь, что компонент зарегистрирован](#step-2-verify-that-the-feature-is-registered). Кроме того, обязательно введите команду mount и ее параметры непосредственно в терминале. Если вы скопируете любую часть этой команды в терминал из другого приложения, скрытые символы в скопированных данных могут вызвать ошибку.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Поддержка протокола NFS 3,0 в хранилище BLOB-объектов Azure (Предварительная версия)](network-file-system-protocol-support.md)

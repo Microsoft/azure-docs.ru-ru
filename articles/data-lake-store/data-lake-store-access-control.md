@@ -12,12 +12,12 @@ ms.devlang: na
 ms.topic: conceptual
 ms.date: 03/26/2018
 ms.author: twooley
-ms.openlocfilehash: 48ff32655b107958a3e8e42dbd7de0f405a6fffa
-ms.sourcegitcommit: 5db975ced62cd095be587d99da01949222fc69a3
+ms.openlocfilehash: aa0da5721c577957b101ac8a2d9346c0536f0a88
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97094868"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102424144"
 ---
 # <a name="access-control-in-azure-data-lake-storage-gen1"></a>Контроль доступа в Azure Data Lake Storage 1-го поколения
 
@@ -73,7 +73,7 @@ ms.locfileid: "97094868"
 |-----------|---------------------|-----------|------------|-------------|----------------|
 | Чтение      | Data.txt            |   `--X`   |   `--X`    |  `--X`      | `R--`          |
 | Добавление к | Data.txt            |   `--X`   |   `--X`    |  `--X`      | `-W-`          |
-| Удаление    | Data.txt            |   `--X`   |   `--X`    |  `-WX`      | `---`          |
+| DELETE    | Data.txt            |   `--X`   |   `--X`    |  `-WX`      | `---`          |
 | Создание    | Data.txt            |   `--X`   |   `--X`    |  `-WX`      | `---`          |
 | Список      | /                   |   `R-X`   |   `---`    |  `---`      | `---`          |
 | Список      | /Seattle/           |   `--X`   |   `R-X`    |  `---`      | `---`          |
@@ -286,7 +286,11 @@ GUID отображается, если пользователь не сущес
 
 ### <a name="does-data-lake-storage-gen1-support-inheritance-of-acls"></a>Поддерживает ли Data Lake Storage 1-го поколения наследование списков ACL?
 
-Нет, но с помощью списков ACL по умолчанию можно задать соответствующие списки для дочерних файлов и папок, создаваемых в родительской папке.  
+Нет, но с помощью списков ACL по умолчанию можно задать соответствующие списки для дочерних файлов и папок, создаваемых в родительской папке.
+
+### <a name="what-are-the-limits-for-acl-entries-on-files-and-folders"></a>Каковы ограничения для записей ACL для файлов и папок?
+
+для каждого файла и каталога можно задать списки управления доступом 32. Списки ACL для доступа и по умолчанию имеют собственный предел записей ACL 32. Используйте группы безопасности для назначений ACL, если это возможно. С помощью групп вероятность превышения максимального количества записей ACL для каждого файла или каталога меньше.
 
 ### <a name="where-can-i-learn-more-about-posix-access-control-model"></a>Где можно получить дополнительную информацию о модели контроля доступа POSIX?
 
@@ -299,6 +303,6 @@ GUID отображается, если пользователь не сущес
 * [POSIX ACL on Ubuntu](https://help.ubuntu.com/community/FilePermissionsACLs) (POSIX ACL для Ubuntu)
 * [ACL с использованием списков управления доступом в Linux](https://bencane.com/2012/05/27/acl-using-access-control-lists-on-linux/)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Общие сведения об Azure Data Lake Storage Gen1](data-lake-store-overview.md)

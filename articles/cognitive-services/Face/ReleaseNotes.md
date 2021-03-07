@@ -8,14 +8,14 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: face-api
 ms.topic: conceptual
-ms.date: 12/11/2020
+ms.date: 03/05/2021
 ms.author: pafarley
-ms.openlocfilehash: a66f65d48a14853ec1da08f5d83b777f4fdac846
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 9293d47d8aade11f4cc3ee55bb32574f125dfafc
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102183324"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102428292"
 ---
 # <a name="whats-new-in-face-service"></a>Новые возможности службы "Распознавание лиц"
 

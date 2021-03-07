@@ -6,18 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 08/28/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: d3378b08ace73b2bc9a10286abf5a48f3063ba7f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 58ea8709af33510b1848d0c031d513e4af7a352d
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91743511"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102436555"
 ---
-# <a name="use-the-azure-portal-to-manage-edge-storage-accounts-on-your-azure-stack-edge-pro"></a>Использование портал Azure для управления граничными учетными записями хранения на Azure Stack крае Pro
+# <a name="use-the-azure-portal-to-manage-edge-storage-accounts-on-your-azure-stack-edge-pro"></a>Использование портала Azure для управления учетными записями хранения Edge в Azure Stack Edge Pro
 
-<!--[!INCLUDE [applies-to-skus](../../includes/azure-stack-edge-applies-to-all-sku.md)]-->
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этой статье описывается, как управлять пограничными учетными записями хранения на Azure Stack пограничных Pro. Вы можете управлять Azure Stack пограничным Pro через портал Azure или через локальный веб-интерфейс. Используйте портал Azure, чтобы добавить или удалить пограничные учетные записи хранения на устройстве.
 
@@ -95,6 +95,6 @@ ms.locfileid: "91743511"
 
     ![Выбор ключа хранилища синхронизации 2](media/azure-stack-edge-j-series-manage-storage-accounts/sync-storage-key-2.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как [управлять пользователями с помощью портала Azure](azure-stack-edge-j-series-manage-users.md).

@@ -10,14 +10,14 @@ ms.service: cloud-services
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: tbd
-ms.date: 2/19/2021
+ms.date: 3/5/2021
 ms.author: gunnarc
-ms.openlocfilehash: 1d15620d5539f5e4de310367d34f20986f28603d
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 518de78d3adc847030c69ef24965d4250d5a4c02
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102123927"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102433205"
 ---
 # <a name="azure-guest-os"></a>Гостевая ОС Azure
 В следующей таблице приведены обновления Microsoft Security Response Center (MSRC) для гостевой ОС Azure. Выполните поиск по этой статье, чтобы определить, применяется ли какое-либо конкретное обновление к используемой гостевой ОС. Обновления всегда переносятся для того [семейства][family-explain], в котором они были введены.
@@ -67,7 +67,7 @@ ms.locfileid: "102123927"
 [4566426]: https://support.microsoft.com/kb/4566426
 [4566425]: https://support.microsoft.com/kb/4566425
 [4578013]: https://support.microsoft.com/kb/4578013
-[4601392]: https://support.microsoft.com/kb/4601392
+[4601392]: https://support.microsoft.com/en-us/topic/february-9-2021-kb4601318-os-build-14393-4225-c5e3de6c-e3e6-ffb5-6197-48b9ce16446e
 [4592510]: https://support.microsoft.com/kb/4592510
 [4601393]: https://support.microsoft.com/kb/4601393
 [4494175]: https://support.microsoft.com/kb/4494175

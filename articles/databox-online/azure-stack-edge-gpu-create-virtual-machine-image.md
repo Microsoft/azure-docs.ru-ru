@@ -6,18 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 01/25/2021
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 0985779aeb14fd4f3d6a12cf152e4c63c909d613
-ms.sourcegitcommit: fc8ce6ff76e64486d5acd7be24faf819f0a7be1d
+ms.openlocfilehash: ee0587063c0fac67068869c58471ada58354fab7
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98806682"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102437678"
 ---
 # <a name="create-custom-vm-images-for-your-azure-stack-edge-pro-device"></a>Создание пользовательских образов виртуальных машин для устройства Azure Stack Edge Pro
 
-<!--[!INCLUDE [applies-to-skus](../../includes/azure-stack-edge-applies-to-all-sku.md)]-->
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 Для развертывания виртуальных машин на устройстве Azure Stack Edge Pro требуется возможность создавать пользовательские образы виртуальных машин, которые можно использовать для создания виртуальных машин. В этой статье описываются действия, которые необходимо выполнить для создания пользовательских образов виртуальных машин Linux или Windows, которые можно использовать для развертывания виртуальных машин на устройстве Azure Stack пограничной Pro.
 

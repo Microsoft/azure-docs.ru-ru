@@ -16,12 +16,12 @@ ms.date: 02/16/2021
 ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 000b91529b3b02f2c7d03b50ddc841c68625dada
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: e758933b80efbf36dc263b7bd7d2d3c45a59a9f8
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101644809"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102426796"
 ---
 # <a name="prerequisites-for-azure-ad-connect"></a>Необходимые условия для Azure AD Connect
 В этой статье описаны необходимые условия и требования к оборудованию для Azure Active Directory (Azure AD) Connect.
@@ -102,6 +102,7 @@ Azure AD Connect сервер должен рассматриваться как
 
 ### <a name="connectivity"></a>Соединение
 * Для серверов Azure AD Connect требуется разрешение DNS как для интрасети, так и для Интернета. DNS-сервер должен иметь возможность разрешения имен как для локальной службы Active Directory, так и для конечных точек Azure AD.
+* Azure AD Connect требуется сетевое подключение ко всем настроенным доменам
 * Если в интрасети есть брандмауэры и необходимо открыть порты между серверами Azure AD Connect и контроллерами домена, см. Дополнительные сведения в разделе [Azure AD Connect Ports](reference-connect-ports.md) .
 * Если прокси-сервер или брандмауэр ограничивает доступ к URL-адресам, необходимо открыть URL-адреса, описанные в списке URL-адресов [и диапазонов IP-адреса Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) . См. также [портал Azure URL-адреса списка надежных адресов в брандмауэре или прокси-сервере](../../azure-portal/azure-portal-safelist-urls.md?tabs=public-cloud).
   * Если вы используете Microsoft Cloud в Германии или в облаке Microsoft Azure для государственных организаций, см. статью [рекомендации по экземплярам службы синхронизации Azure AD Connect](reference-connect-instances.md) для URL-адресов.
@@ -141,7 +142,7 @@ Azure AD Connect сервер должен рассматриваться как
 Дополнительные сведения см. в разделе MSDN об [элементе прокси по умолчанию](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 В случае проблем с подключением изучите статью [Устранение неполадок подключения в Azure AD Connect](tshoot-connect-connectivity.md).
 
-### <a name="other"></a>Другое
+### <a name="other"></a>Другие
 Необязательно. Используйте тестовую учетную запись пользователя для проверки синхронизации.
 
 ## <a name="component-prerequisites"></a>Предварительные требования к компонентам

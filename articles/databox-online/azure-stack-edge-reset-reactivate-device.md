@@ -6,14 +6,14 @@ author: v-dalc
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 03/01/2020
+ms.date: 03/03/2020
 ms.author: alkohli
-ms.openlocfilehash: 4026bac9818b14c33c05d99caff4052adad196c3
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 95fbe5dc4a934fee10c558f640bc24f261203a33
+ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101746901"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102443559"
 ---
 # <a name="reset-and-reactivate-your-azure-stack-edge-pro-device"></a>Сброс и повторная активация устройства Azure Stack пограничной Pro
 
@@ -32,7 +32,7 @@ ms.locfileid: "101746901"
 
 ## <a name="reset-data-from-the-device"></a>Сброс данных с устройства
 
-Чтобы очистить данные с дисков данных устройства, необходимо сбросить устройство. 
+Чтобы очистить данные с дисков данных устройства, необходимо сбросить устройство.
 
 Перед сбросом при необходимости создайте копию локальных данных на устройстве. Данные можно скопировать с устройства в контейнер хранилища Azure.
 
@@ -41,7 +41,7 @@ ms.locfileid: "101746901"
 
 Вы можете сбросить устройство в локальном веб-ИНТЕРФЕЙСе или в PowerShell. Инструкции для PowerShell см. в статье [Сброс параметров устройства](./azure-stack-edge-connect-powershell-interface.md#reset-your-device).
 
-[! INCLUDE] [Сброс данных с устройства](../../includes/azure-stack-edge-device-reset.md)
+[!INCLUDE [Reset data from the device](../../includes/azure-stack-edge-device-reset.md)]
 
 ## <a name="reactivate-device"></a>Повторная активация устройства
 
@@ -49,11 +49,11 @@ ms.locfileid: "101746901"
 
 Чтобы повторно активировать существующее устройство, выполните следующие действия.
 
-1. Создайте новый заказ для существующего устройства, выполнив действия, описанные в разделе [Создание нового ресурса](azure-stack-edge-gpu-deploy-prep?tabs=azure-portal#create-a-new-resource). На вкладке **адрес доставки** выберите **у меня уже есть устройство**.
+1. Создайте новый заказ для существующего устройства, выполнив действия, описанные в разделе [Создание нового ресурса](azure-stack-edge-gpu-deploy-prep.md?tabs=azure-portal#create-a-new-resource). На вкладке **адрес доставки** выберите **у меня уже есть устройство**.
 
    ![Не указывать новое устройство в адресе доставки](./media/azure-stack-edge-reset-reactivate-device/create-resource-with-no-new-device.png)
 
-1. [Получите ключ активации](azure-stack-edge-gpu-deploy-prep?tabs=azure-portal#get-the-activation-key).
+1. [Получите ключ активации](azure-stack-edge-gpu-deploy-prep.md?tabs=azure-portal#get-the-activation-key).
 
 1. [Подключитесь к устройству](azure-stack-edge-gpu-deploy-connect.md).
 
@@ -63,7 +63,7 @@ ms.locfileid: "101746901"
 
 1. [Настройка сертификатов](azure-stack-edge-gpu-deploy-configure-certificates.md).
 
-1. [Активируйте устройство](databox-online/azure-stack-edge-gpu-deploy-activate.md).
+1. [Активируйте устройство](azure-stack-edge-gpu-deploy-activate.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

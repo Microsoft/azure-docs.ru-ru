@@ -6,17 +6,19 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 11/02/2020
+ms.date: 02/22/2021
 ms.author: alkohli
 Customer intent: As an IT admin, I need to understand how to configure compute on Azure Stack Edge Pro device so I can use it to transform the data before sending it to Azure.
-ms.openlocfilehash: a48abb34a201928185130fbe8fdf9592e77492d9
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 6054e7e79acaa6abf304508221c63143b9d14a45
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98944948"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102436538"
 ---
 # <a name="deploy-vms-on-your-azure-stack-edge-pro-gpu-device-via-the-azure-portal"></a>Развертывание виртуальных машин на устройстве с Azure Stack ребра Pro GPU с помощью портал Azure
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 Вы можете создавать виртуальные машины и управлять ими на Azure Stack пограничном устройстве с помощью портал Azure, шаблонов, Azure PowerShell командлетов и с помощью сценариев Azure CLI/Python. В этой статье описывается создание виртуальной машины на Azure Stack пограничном устройстве и управление ею с помощью портал Azure. 
 
@@ -125,7 +127,7 @@ ms.locfileid: "98944948"
     |Параметр |Описание  |
     |---------|---------|
     |Имя виртуальной машины     |         |
-    |Образ —     | Выберите из образов виртуальных машин, доступных на устройстве.        |
+    |Изображение     | Выберите из образов виртуальных машин, доступных на устройстве.        |
     |Размер     | Выберите один из [поддерживаемых размеров виртуальных машин](azure-stack-edge-gpu-virtual-machine-sizes.md).        |
     |Имя пользователя     | Используйте имя пользователя по умолчанию *azureuser*.        |
     |Authentication type (Тип проверки подлинности)    | Выберите открытый ключ SSH или пароль, определенный пользователем.       |

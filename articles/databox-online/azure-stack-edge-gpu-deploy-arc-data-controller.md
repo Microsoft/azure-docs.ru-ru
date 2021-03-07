@@ -6,17 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 02/08/2021
+ms.date: 03/05/2021
 ms.author: alkohli
-ms.openlocfilehash: 9e56e37135c2ff73fb64d8afd5a852fd757f3e21
-ms.sourcegitcommit: 7e117cfec95a7e61f4720db3c36c4fa35021846b
+ms.openlocfilehash: 3ff07c773a2976a296d13510a3ddd7b41217aaa2
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "99989403"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102437627"
 ---
 # <a name="deploy-azure-data-services-on-your-azure-stack-edge-pro-gpu-device"></a>Развертывание служб данных Azure на устройстве с Azure Stack ребра Pro GPU
 
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этой статье описывается процесс создания контроллера данных ARC в Azure и последующее развертывание служб данных Azure на устройстве Azure Stack с помощью GPU Pro. 
 
@@ -59,7 +60,7 @@ ms.locfileid: "99989403"
 1. Примените параметры, и эти новые IP-адреса немедленно вступят в силу в уже существующем кластере Kubernetes. 
 
 
-## <a name="deploy-azure-arc-data-controller"></a>Развертывание контроллера данных ARC в Azure
+## <a name="deploy-azure-arc-data-controller"></a>Развертывание контроллера данных Azure Arc
 
 Перед развертыванием контроллера данных необходимо создать пространство имен.
 
