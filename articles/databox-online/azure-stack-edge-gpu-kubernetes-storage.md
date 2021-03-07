@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: conceptual
-ms.date: 01/28/2021
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 2d079f2fa3e67f1ec915a02de3e195ccac538209
-ms.sourcegitcommit: 1a98b3f91663484920a747d75500f6d70a6cb2ba
+ms.openlocfilehash: d848d663121474085935c68e62b8aa38f195ba8d
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99063322"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102442185"
 ---
 # <a name="kubernetes-storage-management-on-your-azure-stack-edge-pro-gpu-device"></a>Управление хранилищем Kubernetes на устройстве GPU для Azure Stack ребра
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 На устройстве Azure Stack пограничной Pro создается кластер Kubernetes при настройке роли вычислений. После создания кластера Kubernetes контейнерные приложения можно развернуть в кластере Kubernetes в модулях Pod. Существует несколько различных способов предоставления хранилища для модулей Pod в кластере Kubernetes. 
 

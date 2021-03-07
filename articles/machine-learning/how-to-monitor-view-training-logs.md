@@ -11,12 +11,12 @@ ms.subservice: core
 ms.date: 07/30/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: 8b2a61a92a25e1c0da9f85439438e75969fcfbf0
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: e86ea0d90ea267b1c9ceecc8fed6c3d7e5102eaf
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101661024"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102443579"
 ---
 # <a name="monitor-and-view-ml-run-logs-and-metrics"></a>Мониторинг и просмотр журналов и метрик выполнения машинного обучения
 
@@ -78,20 +78,23 @@ RunDetails(run).show()
 
 <a id="queryrunmetrics"></a>
 
-### <a name="logging-run-metrics"></a>Регистрация метрик запуска 
+## <a name="view-run-metrics"></a>Просмотр метрик выполнения
 
-Используйте следующие методы в API ведения журнала, чтобы повлиять на визуализации метрик. Обратите внимание на [ограничения службы](https://docs.microsoft.com/azure/machine-learning/resource-limits-quotas-capacity#metrics) для этих зарегистрированных метрик. 
+## <a name="via-the-sdk"></a>Через пакет SDK
+Метрики обученной модели можно просмотреть с помощью ```run.get_metrics()```. См. пример ниже. 
 
-|Значение в журнале|Пример кода| Формат на портале|
-|----|----|----|
-|Массив числовых значений| `run.log_list(name='Fibonacci', value=[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89])`|График для одной переменной|
-|Одно повторяющееся числовое значение с тем же именем метрики (например, в цикле for)| `for i in tqdm(range(-10, 10)):    run.log(name='Sigmoid', value=1 / (1 + np.exp(-i))) angle = i / 2.0`| График для одной переменной|
-|Повторяющиеся строки с двумя числовыми столбцами|`run.log_row(name='Cosine Wave', angle=angle, cos=np.cos(angle))   sines['angle'].append(angle)      sines['sine'].append(np.sin(angle))`|Графики для двух переменных|
-|Таблица с двумя числовыми столбцами|`run.log_table(name='Sine Wave', value=sines)`|Графики для двух переменных|
+```python
+from azureml.core import Run
+run = Run.get_context()
+run.log('metric-name', metric_value)
 
-## <a name="query-run-metrics"></a>Запрос метрик выполнения
+metrics = run.get_metrics()
+# metrics is of type Dict[str, List[float]] mapping mertic names
+# to a list of the values for that metric in the given run.
 
-Метрики обученной модели можно просмотреть с помощью ```run.get_metrics()```. Например, с помощью приведенного выше примера можно определить наилучшую модель, выполнив поиск модели с наименьшим значением квадратной ошибки (MSE).
+metrics.get('metric-name')
+# list of metrics in the order they were recorded
+```
 
 <a name="view-the-experiment-in-the-web-portal"></a>
 

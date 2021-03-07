@@ -1,5 +1,5 @@
 ---
-title: Восстановление образца базы данных AdventureWorks в службе "Дуга Azure" с поддержкой PostgreSQL Scale
+title: Импорт образца базы данных AdventureWorks в службу Arc Azure с включенной PostgreSQL
 description: Восстановление образца базы данных AdventureWorks в службе "Дуга Azure" с поддержкой PostgreSQL Scale
 services: azure-arc
 ms.service: azure-arc
@@ -9,14 +9,14 @@ ms.author: jeanyd
 ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
-ms.openlocfilehash: b1ee779be118fcafd0efa2bd2718ece1c34c50d1
-ms.sourcegitcommit: 19ffdad48bc4caca8f93c3b067d1cf29234fef47
+ms.openlocfilehash: a9efa17fb782d5a913493907b66973272e4e0356
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97954334"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102441794"
 ---
-# <a name="restore-the-adventureworks-sample-database-to-azure-arc-enabled-postgresql-hyperscale"></a>Восстановление образца базы данных AdventureWorks в службе "Дуга Azure" с поддержкой PostgreSQL Scale
+# <a name="import-the-adventureworks-sample-database-to-azure-arc-enabled-postgresql-hyperscale"></a>Импорт образца базы данных AdventureWorks в службу Arc Azure с включенной PostgreSQL
 
 [AdventureWorks](/sql/samples/adventureworks-install-configure) — это образец базы данных, содержащей базу данных OLTP, которая используется в учебниках, и примеры. Он предоставляется и обслуживается корпорацией Майкрософт в составе [репозитория SQL Server Samples GitHub](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases).
 
@@ -24,7 +24,7 @@ ms.locfileid: "97954334"
 - [Исходный проект](https://github.com/lorint/AdventureWorks-for-Postgres)
 - [Подпишитесь на проект, который предварительно преобразует CSV-файлы для совместимости с PostgreSQL](https://github.com/NorfolkDataSci/adventure-works-postgres)
 
-В этом документе описывается простой процесс получения образца базы данных AdventureWorks в группу серверов PostgreSQL Scale.
+В этом документе описывается простой процесс получения образца базы данных AdventureWorks, импортированного в группу серверов PostgreSQL.
 
 [!INCLUDE [azure-arc-data-preview](../../../includes/azure-arc-data-preview.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "97954334"
 >  Чтобы скачать файл из GitHub, вашему контейнеру потребуется подключение к Интернету через 443.
 
 > [!NOTE]
->  Используйте имя Pod узла координатора группы серверов postgres Scale. Его имя — <server group name> 0.  Если вы не знаете имя Pod, выполните команду `kubectl get pod`
+>  Используйте имя Pod узла координатора группы серверов postgres Scale. Его имя — <server group name> c-0 (например, postgres01c-0, где c означает узел координатора).  Если вы не знаете имя Pod, выполните команду `kubectl get pod`
 
 ```console
 kubectl exec <PostgreSQL pod name> -n <namespace name> -c postgres  -- /bin/bash -c "cd /tmp && curl -k -O https://raw.githubusercontent.com/microsoft/azure_arc/main/azure_arc_data_jumpstart/aks/arm_template/postgres_hs/AdventureWorks.sql"
@@ -47,7 +47,7 @@ kubectl exec <PostgreSQL pod name> -n <namespace name> -c postgres  -- /bin/bash
 #kubectl exec postgres02-0 -n arc -c postgres -- /bin/bash -c "cd /tmp && curl -k -O https://raw.githubusercontent.com/microsoft/azure_arc/main/azure_arc_data_jumpstart/aks/arm_template/postgres_hs/AdventureWorks.sql"
 ```
 
-## <a name="step-2-restore-the-adventureworks-database"></a>Шаг 2. Восстановление базы данных AdventureWorks
+## <a name="step-2-import-the-adventureworks-database"></a>Шаг 2. Импорт базы данных AdventureWorks
 
 Аналогичным образом можно выполнить команду kubectl Exec, чтобы использовать средство CLI PSQL, включенное в контейнеры PostgreSQL масштабирования серверов, чтобы создать и загрузить базу данных.
 
@@ -60,7 +60,7 @@ kubectl exec <PostgreSQL pod name> -n <namespace name> -c postgres -- psql --use
 #kubectl exec postgres02-0 -n arc -c postgres -- psql --username postgres -c 'CREATE DATABASE "adventureworks";'
 ```
 
-Затем выполните команду, подобную следующей, чтобы восстановить базу данных, заменяющую значение имени Pod и имени пространства имен, прежде чем запускать его.
+Затем выполните команду, подобную следующей, чтобы импортировать базу данных, заменив значения имени Pod и имени пространства имен, прежде чем запускать его.
 
 ```console
 kubectl exec <PostgreSQL pod name> -n <namespace name> -c postgres -- psql --username postgres -d adventureworks -f /tmp/AdventureWorks.sql

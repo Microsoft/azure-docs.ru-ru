@@ -6,18 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 12/22/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 44ac0b06bb72d722797a20ed44ece14768c80997
-ms.sourcegitcommit: 799f0f187f96b45ae561923d002abad40e1eebd6
+ms.openlocfilehash: 82019031eab4c17465115c4a24598f43d4620148
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97763930"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102436454"
 ---
 # <a name="deploy-vms-on-your-azure-stack-edge-pro-gpu-device-via-azure-powershell-script"></a>Развертывание виртуальных машин на устройстве с Azure Stack ребра Pro GPU с помощью скрипта Azure PowerShell
 
-<!--[!INCLUDE [applies-to-skus](../../includes/azure-stack-edge-applies-to-all-sku.md)]-->
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этом учебнике описано, как создать виртуальную машину на устройстве Azure Stack пограничной Pro и управлять ею с помощью скрипта Azure PowerShell.
 

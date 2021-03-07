@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 02/18/2021
 ms.custom: template-concept
-ms.openlocfilehash: 8f84fb6bf37a3d3b61f4cad2c89745447aa88a36
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 85eb4ed0832c9384fcd05154833bc21f83f4adf2
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102179397"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102426354"
 ---
 # <a name="introduction-to-azure-percept-audio"></a>Введение в службу Перцепт Azure Audio
 
@@ -36,26 +36,13 @@ Azure Перцепт Audio — это устройство, которое до�
 
 Обработка выполняется следующим образом. 
 
-- Azure Перцепт Audio: выполняет многообразовую обработку и отмену эха и обрабатывает входящий звук для оптимизации речи и отправки в DK.  
+- Azure Перцепт Audio: захватывает и преобразует аудио, а затем отправляет их в разъемы DK и Audio.
 
-- Azure Перцепт DK. в стеке распознавания речи выполняется поиск по ключевому слову.  
+- Azure Перцепт DK. в стеке распознавания речи выполняется многообразовая обработка и отработка отказа, которая обрабатывает входящий звук для оптимизации речи. Затем он выполняет поиск по ключевому слову.
 
 - Cloud: обрабатывает команды и фразы естественного языка, проверку ключевых слов и переобучение. 
 
 - Вне сети. Если устройство находится в автономном режиме, оно обнаружит ключевое слово и записывает данные телеметрии состояния подключения к Интернету. Увеличенная частота принятия для ключевых слов может наблюдаться, так как проверка ключевых слов в облаке не может быть выполнена. 
-
-<!---
-
-## How it works
-
-Azure Percept Audio passes the audio input to the Azure Percept DK carrier board in a hybrid edge-cloud manner. Specifically,
-
-- The Azure Percept Audio device: processes the incoming speech input to the clearest format by executing beam forming and echo cancellation befor sending the input to the Azure Percept DK. 
-- The Azure Percept DK uses edge processing to perform keyword spotting and then sends the relevant inputs to Azure speech services.
-- Cloud: Processing of natural language commands and phrases, in addition to keyword verification and retraining.
-- Offline: If the device is offline it will detect the keyword and capture telemetry that there is no internet connection at the time of the command. It will not be able to weed out false accepts since it cannot perform keyword verification.
-
--->
 
 ## <a name="getting-started"></a>Начало работы
 

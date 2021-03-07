@@ -3,18 +3,18 @@ title: Diagnose and troubleshoot issues when using Azure Cosmos DB .NET SDK (Д�
 description: Используйте такие функции, как ведение журнала на стороне клиента и другие сторонние средства для выявления, диагностики и устранения Azure Cosmos DB проблем при использовании пакета SDK для .NET.
 author: anfeldma-ms
 ms.service: cosmos-db
-ms.date: 02/05/2021
+ms.date: 03/05/2021
 ms.author: anfeldma
 ms.subservice: cosmosdb-sql
 ms.topic: troubleshooting
 ms.reviewer: sngun
 ms.custom: devx-track-dotnet
-ms.openlocfilehash: dce309b955882f6236f285ee6bd20a79201e43fb
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 1f7548b355353eb77419f4d1760b40ba02eeddda
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/07/2021
-ms.locfileid: "102429941"
+ms.locfileid: "102442202"
 ---
 # <a name="diagnose-and-troubleshoot-issues-when-using-azure-cosmos-db-net-sdk"></a>Diagnose and troubleshoot issues when using Azure Cosmos DB .NET SDK (Диагностика и устранение неполадок при использовании пакета SDK Azure Cosmos DB для .NET)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -93,12 +93,47 @@ ms.locfileid: "102429941"
 ### <a name="high-network-latency"></a><a name="high-network-latency"></a>Высокая задержка сети
 Высокую задержку сети можно определить с помощью [строки диагностики](/dotnet/api/microsoft.azure.documents.client.resourceresponsebase.requestdiagnosticsstring) в пакете SDK v2 или [диагностики](/dotnet/api/microsoft.azure.cosmos.responsemessage.diagnostics#Microsoft_Azure_Cosmos_ResponseMessage_Diagnostics) в пакете SDK v3.
 
-Если [время ожидания](troubleshoot-dot-net-sdk-request-timeout.md) отсутствует, и диагностика отображают отдельные запросы, где большая задержка очевидна по разности между `ResponseTime` и `RequestStartTime` , например (>300 миллисекунд в этом примере):
+Значение, если [время ожидания](troubleshoot-dot-net-sdk-request-timeout.md) отсутствует, и диагностика отображает отдельные запросы, в которых очевидно большая задержка.
+
+# <a name="v3-sdk"></a>[ПАКЕТ SDK V3](#tab/diagnostics-v3)
+
+Диагностику можно получить из любого `ResponseMessage` , `ItemResponse` , `FeedResponse` или `CosmosException` `Diagnostics` Свойства:
+
+```csharp
+ItemResponse<MyItem> response = await container.CreateItemAsync<MyItem>(item);
+Console.WriteLine(response.Diagnostics.ToString());
+```
+
+Взаимодействие с сетью в диагностике будет таким, например:
+
+```json
+{
+    "name": "Microsoft.Azure.Documents.ServerStoreModel Transport Request",
+    "id": "0e026cca-15d3-4cf6-bb07-48be02e1e82e",
+    "component": "Transport",
+    "start time": "12: 58: 20: 032",
+    "duration in milliseconds": 1638.5957
+}
+```
+
+Где `duration in milliseconds` будет отображаться задержка.
+
+# <a name="v2-sdk"></a>[ПАКЕТ SDK ДЛЯ V2](#tab/diagnostics-v2)
+
+Диагностика доступна, когда клиент настроен в [прямом режиме](sql-sdk-connection-modes.md), через `RequestDiagnosticsString` свойство:
+
+```csharp
+ResourceResponse<Document> response = await client.ReadDocumentAsync(documentLink, new RequestOptions() { PartitionKey = new PartitionKey(partitionKey) });
+Console.WriteLine(response.RequestDiagnosticsString);
+```
+
+А задержка может быть в разности между `ResponseTime` и `RequestStartTime` :
 
 ```bash
 RequestStartTime: 2020-03-09T22:44:49.5373624Z, RequestEndTime: 2020-03-09T22:44:49.9279906Z,  Number of regions attempted:1
 ResponseTime: 2020-03-09T22:44:49.9279906Z, StoreResult: StorePhysicalAddress: rntbd://..., ...
 ```
+--- 
 
 Эта задержка может быть вызвана несколькими причинами:
 

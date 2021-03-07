@@ -7,14 +7,14 @@ author: divyaswarnkar
 ms.author: divswa
 ms.reviewer: estfan, daviburg, logicappspm
 ms.topic: article
-ms.date: 02/01/2021
+ms.date: 03/05/2021
 tags: connectors
-ms.openlocfilehash: e52c4acb4b59414e89e87bf5a6ee2cfae8207cae
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2820fe9d885187071924386ef71eb12fd42bbf01
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101712459"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102426456"
 ---
 # <a name="connect-to-sap-systems-from-azure-logic-apps"></a>Подключение к системам SAP из Azure Logic Apps
 
@@ -473,6 +473,23 @@ E2EDP19   300                16    E2EDP19   0     3   00AAAA-11111</idocData>
 > [!NOTE]
 > Триггер SAP не является опрашивающим триггером, но вместо него используется триггер на основе веб-перехватчика. Если вы используете шлюз данных, триггер вызывается из шлюза данных только в том случае, если сообщение существует, поэтому опрос не требуется.
 
+Если при получении сообщения об ошибке **шлюза 500** возникла ошибка, аналогичная **службе "sapgw00"**, замените имя службы шлюза в подключении API и активируйте конфигурацию, указав номер порта. В следующем примере ошибки необходимо `sapgw00` заменить действительным номером порта, например `3300` . 
+
+```json
+"body": {
+   "error": {
+      "code": 500,
+      "source": "EXAMPLE-FLOW-NAME.eastus.environments.microsoftazurelogicapps.net",
+      "clientRequestId": "00000000-0000-0000-0000-000000000000",
+      "message": "BadGateway",
+      "innerError": {
+         "error": {
+            "code": "UnhandledException",
+            "message": "\nERROR service 'sapgw00' unknown\nTIME Wed Nov 11 19:37:50 2020\nRELEASE 721\nCOMPONENT NI (network interface)\nVERSION 40\nRC -3\nMODULE ninti.c\nLINE 933\nDETAIL NiPGetServByName: 'sapgw00' not found\nSYSTEM CALL getaddrinfo\nCOUNTER 1\n\nRETURN CODE: 20"
+         }
+      }
+```
+
 #### <a name="parameters"></a>Параметры
 
 Наряду с простыми строковыми и числовыми входными данными соединитель SAP принимает следующие параметры таблицы ( `Type=ITAB` входные данные):
@@ -729,7 +746,7 @@ E2EDP19   300                16    E2EDP19   0     3   00AAAA-11111</idocData>
 
 1. Прежде чем начать, вам потребуется приложение логики с триггером SAP. Если у вас еще нет этого приложения логики, выполните описанные выше действия в этом разделе, чтобы [настроить приложение логики с помощью триггера SAP](#receive-message-from-sap).
 
-   Пример.
+   Пример:
 
    ![Добавление триггера SAP в приложение логики](./media/logic-apps-using-sap-connector/first-step-trigger.png)
 
@@ -1158,7 +1175,7 @@ E2EDP19   300                16    E2EDP19   0     3   00AAAA-11111</idocData>
 
    ![Настройка SAP SNC в подключении](media/logic-apps-using-sap-connector/configure-sapsnc.png)
 
-   | Свойство | Описание |
+   | Свойство. | Описание |
    |----------| ------------|
    | **Путь к библиотеке SNC** | Имя библиотеки SNC или путь относительно расположения установки NCo или абсолютного пути. Примеры: `sapsnc.dll` или `.\security\sapsnc.dll` `c:\security\sapsnc.dll` . |
    | **ЕДИНЫЙ ВХОД SNC** | При подключении через SNC для проверки подлинности вызывающего объекта обычно используется удостоверение SNC. Другой вариант — переопределить, чтобы данные пользователя и пароля можно было использовать для проверки подлинности вызывающего объекта, но строка по-прежнему шифруется. |

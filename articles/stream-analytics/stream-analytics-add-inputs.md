@@ -2,16 +2,16 @@
 title: Общие сведения о входных данных Azure Stream Analytics
 description: В этой статье описываются концепции входных данных в задании Azure Stream Analytics, сравнение потоковых и справочных входных данных.
 ms.service: stream-analytics
-author: jasonwhowell
-ms.author: jasonh
+author: enkrumah
+ms.author: ebnkruma
 ms.topic: conceptual
 ms.date: 10/29/2020
-ms.openlocfilehash: 442c5a1174c4a91ea9401315bb3e518e4fe6cc4e
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 1e5bf3e884e5f2c1a57cee08cbf3c22379dab080
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102183919"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102436045"
 ---
 # <a name="understand-inputs-for-azure-stream-analytics"></a>Общие сведения о входных данных Azure Stream Analytics
 

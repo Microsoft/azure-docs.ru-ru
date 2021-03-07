@@ -11,12 +11,12 @@ author: barbaraselden
 manager: daveba
 ms.reviewer: rhicock
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 765bfe0f805ae4219110d689e8f7f8fd54a26cf3
-ms.sourcegitcommit: d22a86a1329be8fd1913ce4d1bfbd2a125b2bcae
+ms.openlocfilehash: ce8aa5108b6998424b35e3f4ecac6b51e78f276b
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96173942"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102424127"
 ---
 # <a name="plan-an-azure-active-directory-self-service-password-reset-deployment"></a>Планирование развертывания самостоятельного сброса пароля Azure Active Directory
 
@@ -78,6 +78,7 @@ Azure Active Directory лицензируется отдельно для каж
 | Видео| [Предоставление пользователям более эффективной масштабируемости ИТ](https://youtu.be/g9RpRnylxS8) 
 | |[Что такое самостоятельный сброс пароля?](https://youtu.be/hc97Yx5PJiM)|
 | |[Развертывание самостоятельного сброса пароля](https://www.youtube.com/watch?v=Pa0eyqjEjvQ&index=18&list=PLLasX02E8BPBm1xNMRdvP6GtA6otQUqp0)|
+| |[Включение и настройка SSPR в Azure AD](https://www.youtube.com/watch?v=rA8TvhNcCvQ)|
 | |[Порядок настройки самостоятельного сброса пароля для пользователей в Azure AD](https://azure.microsoft.com/resources/videos/self-service-password-reset-azure-ad/) |
 | |[Инструкции по [подготовке пользователей к] регистрации [их] сведений о безопасности для Azure Active Directory](https://youtu.be/gXuh0XS18wA) |
 | Онлайн-курсы|[Управление удостоверениями в Microsoft Azure Active Directory](https://www.pluralsight.com/courses/microsoft-azure-active-directory-managing-identities). Используйте SSPR для предоставления пользователям современного и защищенного процесса управления паролями. См. раздел "[Управление пользователями и группами Azure Active Directory](https://app.pluralsight.com/library/courses/microsoft-azure-active-directory-managing-identities/table-of-contents)". |

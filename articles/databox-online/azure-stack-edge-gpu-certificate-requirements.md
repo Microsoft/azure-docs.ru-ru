@@ -6,16 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: bbe4be0b6cc1d3ea9e0391e82ce21e307e9de640
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: 9184a3f429804ac383f137de49c5391e2e1db80f
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100549810"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102439244"
 ---
 # <a name="certificate-requirements"></a>Требования к сертификатам
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этой статье описываются требования к сертификатам, которые должны быть выполнены, прежде чем сертификаты можно будет установить на устройстве Azure Stack пограничной Pro. Требования относятся к сертификатам PFX, центру выдачи, имени субъекта сертификата и альтернативному имени субъекта, а также поддерживаемым алгоритмам сертификатов.
 
@@ -54,14 +56,14 @@ ms.locfileid: "100549810"
 
 * При создании сертификата конечной точки используйте следующую таблицу:
 
-    |Тип |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
+    |Type |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
     |---------|---------|---------|---------|
     |Azure Resource Manager|`management.<Device name>.<Dns Domain>`|`login.<Device name>.<Dns Domain>`<br>`management.<Device name>.<Dns Domain>`|`management.mydevice1.microsoftdatabox.com` |
     |Хранилище BLOB-объектов|`*.blob.<Device name>.<Dns Domain>`|`*.blob.< Device name>.<Dns Domain>`|`*.blob.mydevice1.microsoftdatabox.com` |
     |Локальный пользовательский интерфейс| `<Device name>.<DnsDomain>`|`<Device name>.<DnsDomain>`| `mydevice1.microsoftdatabox.com` |
     |Один сертификат с несколькими SAN для обеих конечных точек|`<Device name>.<dnsdomain>`|`<Device name>.<dnsdomain>`<br>`login.<Device name>.<Dns Domain>`<br>`management.<Device name>.<Dns Domain>`<br>`*.blob.<Device name>.<Dns Domain>`|`mydevice1.microsoftdatabox.com` |
     |Узел|`<NodeSerialNo>.<DnsDomain>`|`*.<DnsDomain>`<br><br>`<NodeSerialNo>.<DnsDomain>`|`mydevice1.microsoftdatabox.com` |
-    |VPN|`AzureStackEdgeVPNCertificate.<DnsDomain>`<br><br> * Азурестаккеджевпнцертификате жестко закодирована.  | `*.<DnsDomain>`<br><br>`<AzureStackVPN>.<DnsDomain>` | `edgevpncertificate.microsoftdatabox.com`|
+    |Виртуальная частная сеть|`AzureStackEdgeVPNCertificate.<DnsDomain>`<br><br> * Азурестаккеджевпнцертификате жестко закодирована.  | `*.<DnsDomain>`<br><br>`<AzureStackVPN>.<DnsDomain>` | `edgevpncertificate.microsoftdatabox.com`|
     
 ## <a name="pfx-certificate"></a>Сертификат PFX
 
@@ -87,7 +89,7 @@ ms.locfileid: "100549810"
 
 Дополнительные сведения см. [в статье экспорт сертификатов PFX с помощью закрытого ключа](azure-stack-edge-gpu-manage-certificates.md#export-certificates-as-pfx-format-with-private-key).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Использование сертификатов с Azure Stack пограничным Pro](azure-stack-edge-gpu-manage-certificates.md)
 

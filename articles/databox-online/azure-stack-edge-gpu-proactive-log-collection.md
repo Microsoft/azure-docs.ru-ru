@@ -8,14 +8,16 @@ ms.subservice: edge
 ms.topic: conceptual
 ms.date: 02/23/2021
 ms.author: alkohli
-ms.openlocfilehash: 064af116112f0b530ac0cc9b5755dcec2cf0bd07
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: bdd44bf81e34b60ee648b71c6dc3bde5a96d3deb
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101722082"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102443018"
 ---
 # <a name="proactive-log-collection-on-your-azure-stack-edge-device"></a>Упреждающий сбор журналов на Azure Stack пограничном устройстве
+
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 Упреждающий сбор журналов собирает индикаторы работоспособности системы на устройстве Azure Stack пограничных устройств, чтобы помочь вам эффективно устранять неполадки, связанные с устройствами. Упреждающий сбор журналов включен по умолчанию. В этой статье описывается, что регистрируется в журнале, как корпорация Майкрософт обрабатывает данные, а также как отключить или включить упреждающее сбор журналов. 
 

@@ -11,12 +11,12 @@ author: stevestein
 ms.author: sashan
 ms.reviewer: ''
 ms.date: 10/30/2020
-ms.openlocfilehash: 7f053b1984a2d838deb14bacd10cdc071e19d8a1
-ms.sourcegitcommit: c4c554db636f829d7abe70e2c433d27281b35183
+ms.openlocfilehash: b112506acead01e8dc2bbe72b0d52f47ada326a7
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98035144"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102440417"
 ---
 # <a name="copy-a-transactionally-consistent-copy-of-a-database-in-azure-sql-database"></a>Копирование транзакционно согласованной копии базы данных в базе данных SQL Azure
 
@@ -194,7 +194,7 @@ AS COPY OF source_server_name.source_database_name
 > [!IMPORTANT]
 > Если необходимо создать копию с целью существенно меньшей цели обслуживания, чем у источника, то Целевая база данных может не иметь достаточных ресурсов для завершения процесса заполнения, и это может привести к сбою в области Opera. В этом сценарии для создания копии на другом сервере и (или) другом регионе используется запрос географического восстановления. Дополнительные сведения см. в статье [Восстановление базы данных SQL Azure с помощью резервных копий](recovery-using-backups.md#geo-restore) .
 
-## <a name="azure-roles-to-manage-database-copy"></a>Роли Azure для управления копированием базы данных
+## <a name="azure-rbac-roles-and-permissions-to-manage-database-copy"></a>Роли и разрешения RBAC Azure для управления копированием базы данных
 
 Чтобы создать копию базы данных, необходимо быть в следующих ролях:
 
@@ -232,7 +232,7 @@ AS COPY OF source_server_name.source_database_name
 
 При копировании базы данных в базе данных SQL Azure могут возникнуть следующие ошибки. Дополнительные сведения см. в статье [Копирование базы данных SQL Azure](database-copy.md).
 
-| Код ошибки | Статус | Описание |
+| Код ошибки | Уровень серьезности | Описание |
 | ---:| ---:|:--- |
 | 40635 |16 |Клиент с IP-адресом %.&#x2a;ls временно отключен. |
 | 40637 |16 |Возможность создания копии базы данных в настоящее время отключена. |

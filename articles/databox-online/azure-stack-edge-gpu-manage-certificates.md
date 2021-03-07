@@ -6,18 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: article
-ms.date: 09/29/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 06d3ebae80b34d6b3c7f4a23694fd9fba34e4b76
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 4193e58c28b481297df38bca8f18d2ea766ce886
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101733505"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102443137"
 ---
 # <a name="use-certificates-with-azure-stack-edge-pro-gpu-device"></a>Использование сертификатов с устройством GPU Azure Stack.
 
-<!--[!INCLUDE [applies-to-skus](../../includes/azure-stack-edge-applies-to-all-sku.md)]-->
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 В этой статье описываются типы сертификатов, которые могут быть установлены на устройстве Azure Stack ребра Pro. Кроме того, в статье содержатся сведения о каждом типе сертификата, а также процедура установки и обнаружения даты истечения срока действия. 
 
@@ -77,7 +77,7 @@ ms.locfileid: "101733505"
 - Сертификат узла необходимо изменить, если домен DNS изменится, но имя устройства не изменится. Если вы используете свой собственный сертификат узла, вы не сможете изменить серийный номер устройства, вы можете изменить только имя домена.
 - При создании сертификата узла используйте следующую таблицу.
    
-    |Тип |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
+    |Type |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
     |---------|---------|---------|---------|
     |Узел|`<NodeSerialNo>.<DnsDomain>`|`*.<DnsDomain>`<br><br>`<NodeSerialNo>.<DnsDomain>`|`mydevice1.microsoftdatabox.com` |
    
@@ -98,7 +98,7 @@ ms.locfileid: "101733505"
 - Свойства сертификатов конечной точки аналогичны стандартным сертификатам SSL. 
 - При создании сертификата конечной точки используйте следующую таблицу:
 
-    |Тип |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
+    |Type |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
     |---------|---------|---------|---------|
     |Azure Resource Manager|`management.<Device name>.<Dns Domain>`|`login.<Device name>.<Dns Domain>`<br>`management.<Device name>.<Dns Domain>`|`management.mydevice1.microsoftdatabox.com` |
     |Хранилище BLOB-объектов|`*.blob.<Device name>.<Dns Domain>`|`*.blob.< Device name>.<Dns Domain>`|`*.blob.mydevice1.microsoftdatabox.com` |
@@ -114,7 +114,7 @@ ms.locfileid: "101733505"
 - Локальный сертификат пользовательского интерфейса также отправляется в `.pfx` формате с закрытым ключом, который можно экспортировать.
 - После отправки локального сертификата пользовательского интерфейса необходимо будет перезапустить браузер и очистить кэш. Ознакомьтесь с конкретными инструкциями в браузере.
 
-    |Тип |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
+    |Type |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
     |---------|---------|---------|---------|
     |Локальный пользовательский интерфейс| `<Device name>.<DnsDomain>`|`<Device name>.<DnsDomain>`| `mydevice1.microsoftdatabox.com` |
    

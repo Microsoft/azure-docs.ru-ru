@@ -6,17 +6,18 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: conceptual
-ms.date: 09/22/2020
+ms.date: 02/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 9a9625dcf40ae7d11e1154fc89b7f04652c8ca16
-ms.sourcegitcommit: 295db318df10f20ae4aa71b5b03f7fb6cba15fc3
+ms.openlocfilehash: 1b38a9807e05385a378fa6103710fb6b393c7b1f
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94635846"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102443154"
 ---
 # <a name="kubernetes-role-based-access-control-on-your-azure-stack-edge-pro-gpu-device"></a>Kubernetes управление доступом на основе ролей на устройстве с Azure Stack ребра Pro GPU
 
+[!INCLUDE [applies-to-GPU-and-pro-r-and-mini-r-skus](../../includes/azure-stack-edge-applies-to-gpu-pro-r-mini-r-sku.md)]
 
 При настройке роли вычислений на устройстве Azure Stack пограничной Pro создается кластер Kubernetes. Вы можете использовать Kubernetes управления доступом на основе ролей (Kubernetes RBAC), чтобы ограничить доступ к ресурсам кластера на устройстве.
 
@@ -39,13 +40,13 @@ Kubernetes RBAC позволяет назначать пользователям
 - **Пространство имен System** — это пространство имен, в котором существуют основные ресурсы, такие как DNS и прокси, или панель мониторинга Kubernetes. Обычно вам не нужно развертывать приложения в этом пространстве имен. Используйте это пространство имен для отладки любых проблем с кластером Kubernetes. 
 
     На устройстве имеется несколько пространств имен System, и имена, соответствующие этим системным пространствам имен, зарезервированы. Ниже приведен список зарезервированных пространств имен System. 
-    - KUBE — система
+    - kube-system
     - металлб — система
     - DBE — пространство имен
-    - значение по умолчанию
+    - default
     - kubernetes — панель мониторинга
     - KUBE — Аренда узла
-    - KUBE — Открытый
+    - kube-public
 
 
     Обязательно используйте зарезервированные имена для создаваемых пространств имен пользователей. 

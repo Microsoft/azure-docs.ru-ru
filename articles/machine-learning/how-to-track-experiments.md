@@ -11,12 +11,12 @@ ms.subservice: core
 ms.date: 07/30/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: 9e5f64d9ef61a272da488ad70e690db4c07ddccc
-ms.sourcegitcommit: 59cfed657839f41c36ccdf7dc2bee4535c920dd4
+ms.openlocfilehash: 0130af66152d4f70db47191ae2f271630a59e179
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99625083"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102441080"
 ---
 # <a name="enable-logging-in-ml-training-runs"></a>Включение ведения журнала в учебных запусках МАШИНного обучения
 
@@ -38,6 +38,37 @@ ms.locfileid: "99625083"
 ## <a name="data-types"></a>Типы данных
 
 Вы можете вести журнал по нескольким типам данных, включая скалярные значения, списки, таблицы, изображения, каталоги и т. д. Дополнительные сведения и примеры кода на Python для разных типов данных см. на [странице справки по классу Run](/python/api/azureml-core/azureml.core.run%28class%29?preserve-view=true&view=azure-ml-py).
+
+### <a name="logging-run-metrics"></a>Регистрация метрик запуска 
+
+Используйте следующие методы в API ведения журнала, чтобы повлиять на визуализации метрик. Обратите внимание на [ограничения службы](https://docs.microsoft.com/azure/machine-learning/resource-limits-quotas-capacity#metrics) для этих зарегистрированных метрик. 
+
+|Значение в журнале|Пример кода| Формат на портале|
+|----|----|----|
+|Массив числовых значений| `run.log_list(name='Fibonacci', value=[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89])`|График для одной переменной|
+|Одно повторяющееся числовое значение с тем же именем метрики (например, в цикле for)| `for i in tqdm(range(-10, 10)):    run.log(name='Sigmoid', value=1 / (1 + np.exp(-i))) angle = i / 2.0`| График для одной переменной|
+|Повторяющиеся строки с двумя числовыми столбцами|`run.log_row(name='Cosine Wave', angle=angle, cos=np.cos(angle))   sines['angle'].append(angle)      sines['sine'].append(np.sin(angle))`|Графики для двух переменных|
+|Таблица с двумя числовыми столбцами|`run.log_table(name='Sine Wave', value=sines)`|Графики для двух переменных|
+|Изображение журнала|`run.log_image(name='food', path='./breadpudding.jpg', plot=None, description='desert')`|Используйте этот метод для записи файла изображения или Matplotlib построения в запуск. Эти изображения будут отображаться и сравнимы в записи запуска|
+
+### <a name="logging-with-mlflow"></a>Ведение журнала с помощью Млфлов
+Используйте Млфловлогжер для записи метрик.
+
+```python
+from azureml.core import Run
+# connect to the workspace from within your running code
+run = Run.get_context()
+ws = run.experiment.workspace
+
+# workspace has associated ml-flow-tracking-uri
+mlflow_url = ws.get_mlflow_tracking_uri()
+
+#Example: PyTorch Lightning
+from pytorch_lightning.loggers import MLFlowLogger
+
+mlf_logger = MLFlowLogger(experiment_name=run.experiment.name, tracking_uri=mlflow_url)
+mlf_logger._run_id = run.id
+```
 
 ## <a name="interactive-logging-session"></a>Интерактивный сеанс ведения журнала
 

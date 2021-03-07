@@ -3,12 +3,12 @@ title: Общие сведения о контейнере "аналитика" 
 description: В этой статье описываются контейнеры, которые отслеживают решение AKS Container Insights и предоставляемое им значение, отслеживая работоспособность кластеров AKS и экземпляров контейнеров в Azure.
 ms.topic: conceptual
 ms.date: 09/08/2020
-ms.openlocfilehash: 1055e2228c6625ae24e6bf388cf297e3e3363666
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a29890f569c47c48aae7d5d61badee7edeef58a0
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101723390"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102441522"
 ---
 # <a name="container-insights-overview"></a>Обзор контейнера Insights
 
@@ -58,7 +58,7 @@ ms.locfileid: "101723390"
 
 Ознакомьтесь со следующим видео, предоставив подробный обзор промежуточного уровня, который поможет вам узнать о мониторинге кластера AKS с помощью аналитики контейнера.
 
-> [!VIDEO https://youtu.be/XEdwGvS2AwA]
+> [!VIDEO https://www.youtube.com/embed/XEdwGvS2AwA]
 
 ## <a name="how-do-i-access-this-feature"></a>Как получить доступ к этому компоненту?
 
