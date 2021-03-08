@@ -1078,7 +1078,7 @@
           href: insights/container-insights-reports.md
         - name: Просмотр динамических данных
           items:
-            - name: Общие сведения о динамических данных (предварительная версия)
+            - name: Общие сведения о динамических данных
               href: containers/container-insights-livedata-overview.md
             - name: Настройка
               href: containers/container-insights-livedata-setup.md

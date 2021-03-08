@@ -38,6 +38,8 @@
       items:
         - name: Добавление в приложение функции голосового звонка
           href: quickstarts/voice-video-calling/getting-started-with-calling.md
+        - name: Добавление в приложение функции видеозвонка (JavaScript)
+          href: quickstarts/voice-video-calling/get-started-with-video-calling.md
         - name: Использование клиентской библиотеки для вызовов
           href: quickstarts/voice-video-calling/calling-client-samples.md
         - name: Подключение приложения для звонков к собранию в Teams
