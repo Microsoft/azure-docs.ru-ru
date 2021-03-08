@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 01/05/2021
 ms.author: spelluru
 ms.custom: include file
-ms.openlocfilehash: 780da47e6f071d854a16ca1d1c5cd02dbdd6bef0
-ms.sourcegitcommit: 19ffdad48bc4caca8f93c3b067d1cf29234fef47
+ms.openlocfilehash: f6bd0c13d5cbad802613e2bdea8fd6002f4deea2
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97955656"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102445301"
 ---
 Концентратор событий упорядочивает последовательности событий в одну или несколько секций. По мере поступления новых событий они добавляются в конец этой последовательности. Секцию можно рассматривать как «журнал фиксации».
 
@@ -57,4 +57,3 @@ ms.locfileid: "97955656"
 
 Хотя события можно отправлять в секции напрямую, делать это не рекомендуется. Вместо этого можно использовать конструкции более высокого уровня, описанные в разделе [Издатели событий](../articles/event-hubs/event-hubs-features.md#event-publishers). 
 
-Дополнительные сведения о секциях и компромиссе между доступностью и надежностью см. в статье [Руководство по программированию Центров событий](../articles/event-hubs/event-hubs-programming-guide.md#partition-key) и [Доступность и согласованность в Центрах событий](../articles/event-hubs/event-hubs-availability-and-consistency.md).
