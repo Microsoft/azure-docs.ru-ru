@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/15/2020
 ms.author: memildin
-ms.openlocfilehash: dc277d71f8f39b342095d0ac14b592eb866984d5
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 4ef01045d1ca16d0101cdd9ccfcd118231cd28de
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102100531"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102456119"
 ---
 # <a name="faq---questions-about-data-collection-agents-and-workspaces"></a>Вопросы и ответы — сбор данных, агенты и рабочие области
 
@@ -111,7 +111,7 @@ ms.locfileid: "102100531"
 
 1. В главном меню Центра безопасности выберите **Цены и параметры**.
 1. Выберите соответствующую подписку.
-1. Открытие страницы **автоматической подготовки**
+1. Откройте страницу **автоматической подготовки** .
 1. Для Log Analytics агента выберите **изменить конфигурацию**. 
 
     :::image type="content" source="./media/security-center-enable-data-collection/edit-configuration-auto-deploy-agent.png" alt-text="Конфигурация агента Log Analytics для использования при автоматическом развертывании" lightbox="./media/security-center-enable-data-collection/edit-configuration-auto-deploy-agent.png":::

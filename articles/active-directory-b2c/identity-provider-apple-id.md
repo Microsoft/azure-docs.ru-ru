@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/03/2021
+ms.date: 03/08/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: dc6801de858c72a703317805d00f8e50cae69bbe
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 072bb7841db10351bd1a98f4bc7a1d57e67f6c24
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102054959"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102448546"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-an-apple-id--using-azure-active-directory-b2c-preview"></a>Настройка регистрации и входа с помощью идентификатора Apple ID с помощью Azure Active Directory B2C (Предварительная версия)
 
@@ -104,7 +104,10 @@ ms.locfileid: "102054959"
 1. Щелкните **Сохранить**.
 1. Чтобы проверить политику, выберите пункт **выполнить пользовательскую последовательность**.
 1. Для **приложения** выберите веб-приложение с именем *testapp1* , которое вы зарегистрировали ранее. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.
-1. Выберите **Выполнить поток пользователя**.
+1. Нажмите кнопку **запустить поток пользователя** .
+1. На странице регистрации или входа выберите **Apple** для входа с помощью Apple ID.
+
+Если процесс входа прошел успешно, браузер перенаправляется на `https://jwt.ms` , который отображает содержимое маркера, возвращенного Azure AD B2C.
 
 ::: zone-end
 
@@ -244,6 +247,13 @@ ms.locfileid: "102054959"
 
 [!INCLUDE [active-directory-b2c-configure-relying-party-policy](../../includes/active-directory-b2c-configure-relying-party-policy-user-journey.md)]
 
-[!INCLUDE [active-directory-b2c-test-relying-party-policy](../../includes/active-directory-b2c-test-relying-party-policy-user-journey.md)]
+## <a name="test-your-custom-policy"></a>Тестирование пользовательской политики
+
+1. Выберите политику проверяющей стороны, например `B2C_1A_signup_signin` .
+1. Для **приложения** выберите [ранее зарегистрированное](troubleshoot-custom-policies.md#troubleshoot-the-runtime)веб-приложение. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.
+1. Нажмите кнопку **Запустить сейчас** .
+1. На странице регистрации или входа выберите **Apple** для входа с помощью Apple ID.
+
+Если процесс входа прошел успешно, браузер перенаправляется на `https://jwt.ms` , который отображает содержимое маркера, возвращенного Azure AD B2C.
 
 ::: zone-end

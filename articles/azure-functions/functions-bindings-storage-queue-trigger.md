@@ -6,12 +6,12 @@ ms.topic: reference
 ms.date: 02/18/2020
 ms.author: cshoe
 ms.custom: devx-track-csharp, cc996988-fb4f-47, devx-track-python
-ms.openlocfilehash: 8c2ea69d38f354455b7957ddc7b6ff41da30100b
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: f4477a09f151695b826d0becf28e92ceaf3f9e85
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102210773"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102453212"
 ---
 # <a name="azure-queue-storage-trigger-for-azure-functions"></a>Триггер хранилища очередей Azure для функций Azure
 
@@ -419,7 +419,7 @@ public class QueueTriggerDemo {
 
 # <a name="python"></a>[Python](#tab/python)
 
-Доступ к сообщению очереди с помощью параметра, типизированного как [куеуемессаже](/python/api/azure-functions/azure.functions.queuemessage?view=azure-python&preserve-view=true).
+Доступ к сообщению очереди с помощью параметра, типизированного как [куеуемессаже](/python/api/azure-functions/azure.functions.queuemessage).
 
 ---
 
@@ -427,7 +427,7 @@ public class QueueTriggerDemo {
 
 Триггер очереди предоставляет несколько [свойств метаданных](./functions-bindings-expressions-patterns.md#trigger-metadata). Эти свойства можно использовать как часть выражений привязки в других привязках или как параметры в коде. Свойства являются членами класса [CloudQueueMessage](/dotnet/api/microsoft.azure.storage.queue.cloudqueuemessage) .
 
-|Свойство.|Type|Описание|
+|Свойство.|Тип|Описание|
 |--------|----|-----------|
 |`QueueTrigger`|`string`|Полезные данные очереди (если это допустимая строка). Если полезная нагрузка сообщения очереди является строкой, `QueueTrigger` то она имеет то же значение, что и переменная, именованная `name` свойством в *function.json*.|
 |`DequeueCount`|`int`|Количество раз, когда сообщение было выведено из очереди.|

@@ -7,16 +7,16 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 10/15/2020
+ms.date: 03/08/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.custom: b2c-support
-ms.openlocfilehash: c12a171faaf069cc81aa5f467642dba6616a866f
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 3a5afcd8c0ef0c31353cd2369ead332675c9877f
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102033730"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102453127"
 ---
 # <a name="localization-element"></a>Элемент Localization
 
@@ -111,7 +111,7 @@ ms.locfileid: "102033730"
 
 | attribute | Обязательно | Описание |
 | --------- | -------- | ----------- |
-| текст | Да | Понятная для пользователя отображаемая строка, которая размещается в пользовательском интерфейсе для этого параметра. |
+| Текст | Да | Понятная для пользователя отображаемая строка, которая размещается в пользовательском интерфейсе для этого параметра. |
 | Значение | Да | Строковое значение утверждения, связанное с этим вариантом. |
 | SelectByDefault | Нет | Указывает, следует ли по умолчанию выбирать этот параметр в пользовательском интерфейсе. Возможные значения: True или False. |
 
@@ -147,7 +147,7 @@ ms.locfileid: "102033730"
 
 | attribute | Обязательно | Описание |
 | --------- | -------- | ----------- |
-| ElementType | Да | Возможны следующие значения: [поставщика утверждений](#claimsprovider) [, с](#claimtype), назначением, [ErrorMessage](#errormessage), [жетлокализедстрингстрансформатионклаимтипе](#getlocalizedstringstransformationclaimtype), [predicate](#predicate), [инпутвалидатион](#inputvalidation)или [укселемент](#uxelement).   | 
+| ElementType | Да | Возможны следующие значения: [поставщика утверждений](#claimsprovider) [, с](#claimtype), назначением, [ErrorMessage](#errormessage), [жетлокализедстрингстрансформатионклаимтипе](#getlocalizedstringstransformationclaimtype), [форматлокализедстрингтрансформатионклаимтипе](#formatlocalizedstringtransformationclaimtype), [predicate](#predicate), [InputValidation](#inputvalidation)или [UxElement](#uxelement).   | 
 | ElementId | Да | Если для **ElementType** задано значение `ClaimType` , `Predicate` или `InputValidation` , этот элемент содержит ссылку на тип утверждения, уже определенный в разделе ClaimsSchema. |
 | StringId | Да | Если **ElementType** имеет значение `ClaimType`, этот элемент содержит ссылку на атрибут типа утверждения. Возможные значения: `DisplayName`, `AdminHelpText` или `PatternHelpText`. Значение `DisplayName` задает отображаемое имя утверждения. Значение `AdminHelpText` задает имя текста справки для пользователя утверждения. Значение `PatternHelpText` задает текста справки по шаблону утверждения. Если **ElementType** имеет значение `UxElement`, этот элемент содержит ссылку на атрибут элемента пользовательского интерфейса. Если **ElementType** имеет значение `ErrorMessage`, этот элемент задает идентификатор сообщения об ошибке. Полный список идентификаторов `UxElement` для строк локализации можно найти на [этой странице](localization-string-ids.md).|
 
@@ -232,6 +232,31 @@ ms.locfileid: "102033730"
 
 ```xml
 <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsPrincipalAlreadyExists">The account you are trying to create already exists, please sign-in.</LocalizedString>
+```
+
+### <a name="formatlocalizedstringtransformationclaimtype"></a>форматлокализедстрингтрансформатионклаимтипе
+
+Значение Форматлокализедстрингтрансформатионклаимтипе используется для форматирования утверждений в локализованной строке. Дополнительные сведения см. в разделе [Преобразование утверждений форматлокализедстринг](string-transformations.md#formatlocalizedstring) .
+
+
+```xml
+<ClaimsTransformation Id="SetResponseMessageForEmailAlreadyExists" TransformationMethod="FormatLocalizedString">
+  <InputClaims>
+    <InputClaim ClaimTypeReferenceId="email" />
+  </InputClaims>
+  <InputParameters>
+    <InputParameter Id="stringFormatId" DataType="string" Value="ResponseMessge_EmailExists" />
+  </InputParameters>
+  <OutputClaims>
+    <OutputClaim ClaimTypeReferenceId="responseMsg" TransformationClaimType="outputClaim" />
+  </OutputClaims>
+</ClaimsTransformation>
+```
+
+В следующем примере показано, как локализовать формат строки преобразования Форматлокализедстрингтрансформатионклаимтипе Claims.
+
+```xml
+<LocalizedString ElementType="FormatLocalizedStringTransformationClaimType" StringId="ResponseMessge_EmailExists">The email '{0}' is already an account in this organization. Click Next to sign in with that account.</LocalizedString>
 ```
 
 ### <a name="getlocalizedstringstransformationclaimtype"></a>жетлокализедстрингстрансформатионклаимтипе
@@ -343,7 +368,7 @@ ms.locfileid: "102033730"
 <LocalizedString ElementType="DisplayControl" ElementId="emailVerificationControl" StringId="but_verify_code">Verify code</LocalizedString>
 ```
 
-В разделе метаданных самоподтвержденного технического профиля Контентдефинитион должен иметь значение DataUri, установленное в [Макет страницы](page-layout.md) 2.1.0 или более поздней версии. Например:
+В разделе метаданных самоподтвержденного технического профиля Контентдефинитион должен иметь значение DataUri, установленное в [Макет страницы](page-layout.md) 2.1.0 или более поздней версии. Пример:
 
 ```xml
 <ContentDefinition Id="api.selfasserted">

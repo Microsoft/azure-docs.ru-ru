@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 03/04/2020
 ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: b4994f7014abfafd3853745a4314a75be011c4e4
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 8f7357644639e1bdba07b9ad44533582fc66b600
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102213493"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102456082"
 ---
 # <a name="streaming-locators"></a>Указатели потоковой передачи
 
@@ -95,7 +95,7 @@ StreamingLocator locator = await client.StreamingLocators.CreateAsync(
 |---|---|
 |REST|[листстреаминглокаторс](/rest/api/media/assets/liststreaminglocators)|
 |CLI|[AZ AMS Asset List-Streaming-Locator](/cli/azure/ams/asset#az-ams-asset-list-streaming-locators)|
-|.NET|[листстреаминглокаторс](/dotnet/api/microsoft.azure.management.media.assetsoperationsextensions.liststreaminglocators?view=azure-dotnet#Microsoft_Azure_Management_Media_AssetsOperationsExtensions_ListStreamingLocators_Microsoft_Azure_Management_Media_IAssetsOperations_System_String_System_String_System_String_)|
+|.NET|[листстреаминглокаторс](/dotnet/api/microsoft.azure.management.media.assetsoperationsextensions.liststreaminglocators#Microsoft_Azure_Management_Media_AssetsOperationsExtensions_ListStreamingLocators_Microsoft_Azure_Management_Media_IAssetsOperations_System_String_System_String_System_String_)|
 |Java|[ассетстреаминглокатор](/rest/api/media/assets/liststreaminglocators#assetstreaminglocator)|
 |Node.js|[listStreamingLocators](/javascript/api/@azure/arm-mediaservices/assets#liststreaminglocators-string--string--string--msrest-requestoptionsbase-)|
 

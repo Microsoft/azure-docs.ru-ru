@@ -14,19 +14,19 @@ ms.topic: tutorial
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: seodec18
-ms.openlocfilehash: af6933ecadb4d008ad45c284f5182158dda68877
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: eeb41967ac7e2b73bfb32933f7f019a5722fdc9b
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102211095"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102454438"
 ---
 # <a name="tutorial-use-drm-dynamic-encryption-and-license-delivery-service"></a>Руководство по Использование динамического шифрования DRM и службы доставки лицензий
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 > [!NOTE]
-> Несмотря на то что в этом учебнике используются примеры для [пакета SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.liveevent?view=azure-dotnet), общие шаги одинаковы для [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event) или других поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks).
+> Несмотря на то что в этом учебнике используются примеры для [пакета SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.liveevent), общие шаги одинаковы для [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event) или других поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks).
 
 Службы мультимедиа Azure можно использовать для доставки потоков, которые были зашифрованы с помощью лицензий Microsoft PlayReady, Google Widevine или Apple FairPlay. Подробное описание см. в статье [Защита содержимого с помощью динамического шифрования Служб мультимедиа](content-protection-overview.md).
 

@@ -9,12 +9,12 @@ ms.subservice: overview
 ms.date: 10/25/2020
 ms.author: saveenr
 ms.reviewer: jrasnick
-ms.openlocfilehash: a7ee4e205851a751f7a50ac0ddadfb4e4c7eb81a
-ms.sourcegitcommit: 08458f722d77b273fbb6b24a0a7476a5ac8b22e0
+ms.openlocfilehash: 9a0fb8ed8ac54fa866b6db7d8f808c011c0c6758
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98247409"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101695827"
 ---
 # <a name="azure-synapse-analytics-frequently-asked-questions"></a>Часто задаваемые вопросы по Azure Synapse Analytics
 
@@ -45,7 +45,7 @@ A. Azure Synapse предоставляет ряд ролей и областе�
 
 Кроме того, при использовании выделенных пулов SQL вы можете применять все известные и привычные функции безопасности.
 
-### <a name="q-how-do-i-control-cont-dedicated-sql-pools-serverless-sql-pools-and-serverless-spark-pools"></a>Вопрос. Как я могу управлять выделенными пулами SQL, бессерверными пулами SQL и бессерверными пулами Spark?
+### <a name="q-how-do-i-control-dedicated-sql-pools-serverless-sql-pools-and-serverless-spark-pools"></a>Вопрос. Как я могу управлять выделенными пулами SQL, бессерверными пулами SQL и бессерверными пулами Spark?
 
 A. В качестве отправной точки Azure Synapse взаимодействует со встроенным механизмом анализа затрат и оповещений о затратах, который предоставляется на уровне подписки Azure.
 

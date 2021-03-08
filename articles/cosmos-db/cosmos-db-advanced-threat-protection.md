@@ -9,12 +9,12 @@ ms.custom: seodec18
 ms.author: memildin
 author: memildin
 manager: rkarlin
-ms.openlocfilehash: ea7524b32b7637aa7c36308f8b869aa5207c08a2
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.openlocfilehash: b73e7f8c13f621bc359a2ae79a725829420a3ecc
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93334418"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455620"
 ---
 # <a name="advanced-threat-protection-for-azure-cosmos-db-preview"></a>Расширенная защита от угроз для Azure Cosmos DB (предварительная версия)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -54,8 +54,8 @@ ms.locfileid: "93334418"
 
 3. В колонке настройки **Повышенная безопасность** выполните указанные ниже действия.
 
-    * Выберите пункт **Расширенная защита от угроз** , чтобы задать для него значение **Вкл**.
-    * Щелкните **Сохранить** , чтобы сохранить новую или обновленную политику Расширенной защиты от угроз.   
+    * Выберите пункт **Расширенная защита от угроз**, чтобы задать для него значение **Вкл**.
+    * Щелкните **Сохранить**, чтобы сохранить новую или обновленную политику Расширенной защиты от угроз.   
 
 ### <a name="rest-api"></a>[REST API](#tab/rest-api)
 
@@ -68,9 +68,9 @@ ms.locfileid: "93334418"
 
 Используйте следующие командлеты PowerShell:
 
-* [Включение Расширенной защиты от угроз](/powershell/module/az.security/enable-azsecurityadvancedthreatprotection?viewFallbackFrom=azps-2.4.0)
-* [Получение Расширенной защиты от угроз](/powershell/module/az.security/get-azsecurityadvancedthreatprotection?viewFallbackFrom=azps-2.4.0)
-* [Отключение Расширенной защиты от угроз](/powershell/module/az.security/disable-azsecurityadvancedthreatprotection?viewFallbackFrom=azps-2.4.0)
+* [Включение Расширенной защиты от угроз](/powershell/module/az.security/enable-azsecurityadvancedthreatprotection)
+* [Получение Расширенной защиты от угроз](/powershell/module/az.security/get-azsecurityadvancedthreatprotection)
+* [Отключение Расширенной защиты от угроз](/powershell/module/az.security/disable-azsecurityadvancedthreatprotection)
 
 ### <a name="arm-template"></a>[Шаблон ARM](#tab/arm-template)
 

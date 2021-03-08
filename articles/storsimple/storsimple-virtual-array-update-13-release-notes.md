@@ -6,12 +6,12 @@ author: v-dalc
 ms.topic: article
 ms.date: 01/22/2021
 ms.author: alkohli
-ms.openlocfilehash: 52b30730ee8ab126521ad0760204ee48ef6a63fe
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.openlocfilehash: 4e50f866c0bd44ca54c2f4df78b9507aa7077169
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99576014"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102452566"
 ---
 # <a name="storsimple-virtual-array-update-13-release-notes"></a>Заметки о выпуске обновления 1,3 для виртуального массива StorSimple
 
@@ -52,7 +52,7 @@ ms.locfileid: "99576014"
 ## <a name="known-issues-in-update-13"></a>Известные проблемы в обновлении 1,3
 Новые проблемы не были выпущены в обновлении 1,3. Все проблемы, отмеченные в выпуске, переносятся из предыдущих выпусков. Чтобы просмотреть сводку известных проблем, связанных с предыдущими выпусками, перейдите к разделу [Известные проблемы в обновлении 1,2](./storsimple-virtual-array-update-12-release-notes.md#known-issues-in-update-12).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Скачайте KB4575898 и [Примените обновление через локальный веб-интерфейс](./storsimple-virtual-array-install-update-1.md#use-the-local-web-ui).
 
 ## <a name="references"></a>Ссылки
@@ -65,4 +65,4 @@ ms.locfileid: "99576014"
 - [Заметки о выпуске обновления 0,4 для виртуального массива StorSimple](./storsimple-virtual-array-update-04-release-notes.md)
 - [Заметки о выпуске обновления 0,3 для виртуального массива StorSimple](./storsimple-ova-update-03-release-notes.md)
 - [Заметки о выпуске обновлений 0.1 и 0.2 для виртуального массива StorSimple.](./storsimple-ova-update-01-release-notes.md)
-- [Заметки о выпуске общедоступной версии виртуального массива StorSimple.](https://review.docs.microsoft.com/en-us/azure/storsimple/storsimple-ova-pp-release-notes)
+- [Заметки о выпуске общедоступной версии виртуального массива StorSimple.](/azure/storsimple/storsimple-ova-pp-release-notes)

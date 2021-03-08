@@ -10,7 +10,7 @@ ms.service: media-services ms.workload: ms.topic: tutorial ms.custom: mvc ms.dat
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 > [!NOTE]
-> Несмотря на то, что в этом учебнике используются примеры для [пакета SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.liveevent?view=azure-dotnet) , общие шаги одинаковы для [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event) или других поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks).
+> Несмотря на то, что в этом учебнике используются примеры для [пакета SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.liveevent) , общие шаги одинаковы для [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event) или других поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks).
 
 Службы мультимедиа Azure позволяют кодировать файлы мультимедиа в форматы, пригодные для воспроизведения в разных браузерах и на различных устройствах. Например, можно организовать потоковую передачу содержимого в форматах HLS или MPEG DASH от Apple. Перед тем как передавать файл мультимедиа высокого качества, его нужно закодировать. Справку по кодированию см. в разделе [Концепция кодирования](encoding-concept.md). В этом руководстве описана отправка локального файла видео и кодирование загруженного файла. Также можно закодировать содержимое, которое доступно через URL-адрес HTTPS. Дополнительные сведения см. в разделе [Создание входных данных задания из URL-адреса HTTP (HTTPS)](job-input-from-http-how-to.md).
 

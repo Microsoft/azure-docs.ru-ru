@@ -1,7 +1,7 @@
 ---
 title: Новые возможности Azure Active Directory "Бизнес-клиент" (B2C)
 description: Новая и обновленная документация для Azure Active Directory "Бизнес-клиент" (B2C).
-ms.date: 02/01/2021
+ms.date: 03/08/2021
 ms.service: active-directory
 ms.subservice: B2C
 ms.topic: reference
@@ -9,16 +9,28 @@ ms.workload: identity
 ms.author: mimart
 author: msmimart
 manager: CelesteDG
-ms.openlocfilehash: c4561780a20bb2dfdef39269a49ebf8cb2a29fff
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.openlocfilehash: 00be0a18984f1ad3eacf86a2cf3477d8b0d9065f
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99593016"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102454623"
 ---
 # <a name="azure-active-directory-b2c-whats-new"></a>Azure Active Directory B2C: новые возможности
 
 Добро пожаловать в новые возможности Azure Active Directory B2C документации. В этой статье перечислены новые документы, которые были добавлены, а также важные обновления за последние три месяца. Чтобы узнать о новых возможностях службы B2C, см. статью [новые возможности в Azure Active Directory](../active-directory/fundamentals/whats-new.md).
+
+## <a name="february-2021"></a>Февраль 2021 года
+
+### <a name="new-articles"></a>Новые статьи
+
+- [Защита многофакторной проверки подлинности на основе телефона (MFA)](phone-based-mfa.md)
+
+### <a name="updated-articles"></a>Обновленные статьи
+
+- [Примеры кода Azure Active Directory B2C](code-samples.md)
+- [Мониторинг поведения пользователей в Azure AD B2C с помощью Application Insights](analytics-with-application-insights.md)
+- [Настройка режима работы сеанса в Azure Active Directory B2C](session-behavior.md)
 
 ## <a name="january-2021"></a>Январь 2021 г.
 

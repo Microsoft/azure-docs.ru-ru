@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 12/08/2020
 ms.author: jeedes
-ms.openlocfilehash: 286dc20ba70c78f8248f611abd75e0acc303c068
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 81b57563899fe4babecbdb66cf1dbd876ec5bdf9
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98736193"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101689017"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-amazon-web-services-aws"></a>Руководство по Интеграция единого входа Azure Active Directory с Amazon Web Services (AWS)
 
@@ -26,9 +26,26 @@ ms.locfileid: "98736193"
 * Вы можете включить автоматический вход пользователей в Amazon Web Services (AWS) с помощью учетных записей Azure AD.
 * Централизованное управление учетными записями через портал Azure.
 
-> [!Note]
-> Azure AD не поддерживает интеграцию единого входа с AWS SSO, так как это продукт, отличный от AWS. Хотя об этом упоминается на странице [AWS](https://docs.aws.amazon.com/singlesignon/latest/userguide/azure-ad-idp.html), Azure AD рекомендует клиентам использовать вместо этого интеграцию AWS IAM, чтобы обеспечить лучшую защиту с помощью политик условного доступа для отдельных учетных записей, а также улучшить управление этими приложениями.
+## <a name="understanding-the-different-aws-applications-in-the-azure-ad-application-gallery"></a>Основные сведения о различных приложениях AWS в коллекции приложений Microsoft Azure Active Directory
+Используйте приведенные ниже сведения, чтобы принять решение об использовании приложений AWS Single Sign-On и AWS Single-Account Access в коллекции приложений Microsoft Azure Active Directory.
 
+**AWS Single Sign-On**
+
+Приложение [AWS Single Sign-On](https://docs.microsoft.com/azure/active-directory/saas-apps/aws-single-sign-on-tutorial) было добавлено в коллекцию приложений Microsoft Azure Active Directory в феврале 2021 г. Оно упрощает централизованное управление доступом к нескольким учетным записям и приложениям AWS и обеспечивает вход с учетными данными Microsoft Azure Active Directory. Объедините Microsoft Azure Active Directory с AWS SSO один раз и используйте AWS SSO для централизованного управления разрешениями во всех учетных записях AWS. AWS SSO автоматически подготавливает разрешения и сохраняет их в актуальном виде при обновлении политик и назначений доступа. Конечные пользователи могут пройти проверку подлинности с учетными данными Microsoft Azure Active Directory для доступа к консоли AWS, интерфейсу командной строки и приложениям, интегрированным с AWS SSO.
+
+**AWS Single-Account Access**
+
+Приложение [AWS Single-Account Access](https://docs.microsoft.com/azure/active-directory/saas-apps/amazon-web-service-tutorial) используется клиентами в течение последних нескольких лет. Оно позволяет объединить Microsoft Azure Active Directory с одной учетной записью AWS и использовать Microsoft Azure Active Directory для управления доступом к ролям AWS IAM. Администраторы AWS IAM определяют роли и политики в каждой учетной записи AWS. Для каждой учетной записи AWS администраторы Azure AD создают объединение в AWS IAM, назначают пользователям или группам учетную запись и настраивают Microsoft Azure Active Directory для отправки утверждений, которые разрешают доступ к ролям.  
+
+| Функция | AWS Single Sign-On | AWS Single-Account Access |
+|:--- |:---:|:---:|
+|Условный доступ| Поддерживает единую политику условного доступа для всех учетных записей AWS. | Поддерживает единую политику условного доступа для всех учетных записей или пользовательские политики для каждой учетной записи|
+| Доступ к CLI | Поддерживается | Поддерживается|
+| Управление привилегированными пользователями | Еще не поддерживается | Еще не поддерживается |
+| Централизованное управление учетными записями | Централизованное управление учетными записями в AWS. | Централизованное управление учетными записями в Microsoft Azure Active Directory (скорее всего, потребуется корпоративное приложение Microsoft Azure Active Directory для каждой учетной записи). |
+| Сертификат SAML| Единый сертификат| Отдельные сертификаты для каждого приложения или учетной записи | 
+
+## <a name="aws-single-account-access-architecture"></a>Архитектура AWS Single-Account Access
 ![Схема связи между Azure AD и AWS](./media/amazon-web-service-tutorial/tutorial_amazonwebservices_image.png)
 
 Вы можете настроить идентификаторы для нескольких экземпляров. Пример:

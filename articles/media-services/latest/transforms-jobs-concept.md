@@ -1,7 +1,7 @@
 ---
 # <a name="mandatory-fields-see-more-on-akamsskyeyemeta"></a>Обязательные поля. Дополнительные сведения см. на aka.ms/skyeye/meta.
 Title: преобразования и задания в службах мультимедиа. Описание служб мультимедиа Azure. Узнайте, как создать преобразования для описания правил обработки видео в службах мультимедиа Azure.
-службы: мультимедиа-службы documentationcenter: ' ' author: Ингридатмикрософт Manager: femila Editor редактор: ' '
+services: media-services documentationcenter: '' author: IngridAtMicrosoft manager: femila editor: ''
 
 MS. Service: мультимедиа-службы MS. Рабочая нагрузка: MS. Topic: концептуальная МС. Дата: 08/19/2019 MS. author: инхенкел
 ---
@@ -39,13 +39,13 @@ MS. Service: мультимедиа-службы MS. Рабочая нагруз
 > [!NOTE]
 > Свойства **преобразования** и **задания** типа DateTime всегда имеют формат UTC.
 
-## <a name="transforms"></a>Преобразования
+## <a name="transforms"></a>Transform
 
 **Преобразования** можно использовать для настройки общих задач кодирования или анализа видеоматериалов. Каждое **Преобразование** описывает рецепт или рабочий процесс выполнения задач по обработке видео-или звуковых файлов. Одно преобразование может применять несколько правил. Например, преобразование может указать, что каждое видео кодируется в MP4-файл с заданной скоростью и что эскиз будет создан из первого кадра видео. Необходимо добавить одну запись TransformOutput для каждого правила, которое требуется включить в преобразование. Используйте предустановки, чтобы сообщить преобразованию, каким образом должны обрабатываться входные файлы мультимедиа.
 
 ### <a name="viewing-schema"></a>Просмотр схемы
 
-В службах мультимедиа v3 предустановки являются строго типизированными сущностями в самом API. Определение схемы для этих объектов можно найти в [спецификации Open API (или Swagger)](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2018-07-01). Предварительные определения (например, **стандарденкодерпресет**) можно также просмотреть в справочной документации по пакету SDK [REST API](/rest/api/media/transforms/createorupdate#standardencoderpreset)для служб мультимедиа версии 3 или [.NET](/dotnet/api/microsoft.azure.management.media.models.standardencoderpreset?view=azure-dotnet).
+В службах мультимедиа v3 предустановки являются строго типизированными сущностями в самом API. Определение схемы для этих объектов можно найти в [спецификации Open API (или Swagger)](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2018-07-01). Предварительные определения (например, **стандарденкодерпресет**) можно также просмотреть в справочной документации по пакету SDK [REST API](/rest/api/media/transforms/createorupdate#standardencoderpreset)для служб мультимедиа версии 3 или [.NET](/dotnet/api/microsoft.azure.management.media.models.standardencoderpreset).
 
 ### <a name="creating-transforms"></a>Создание преобразований
 

@@ -1,7 +1,7 @@
 ---
 title: Новые возможности Azure Active Directory подготовки приложений
 description: Новая и обновленная документация по подготовке Azure Active Directory приложений.
-ms.date: 02/01/2021
+ms.date: 03/08/2021
 ms.service: active-directory
 ms.subservice: app-provisioning
 ms.topic: reference
@@ -9,16 +9,27 @@ ms.workload: identity
 ms.author: kenwith
 author: kenwith
 manager: daveba
-ms.openlocfilehash: a127552c47b9e1ee86d2164926971c8628367dc0
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.openlocfilehash: abee58607a5492548e4d64f44c15fd365876f3f5
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99256007"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102453688"
 ---
 # <a name="azure-active-directory-application-provisioning-whats-new"></a>Azure Active Directory подготовка приложений: новые возможности
 
 Добро пожаловать в Azure Active Directoryную документацию по подготовке приложений. В этой статье перечислены новые документы, которые были добавлены, а также важные обновления за последние три месяца. Чтобы узнать о новых возможностях службы подготовки, см. статью [новые возможности в Azure Active Directory](../fundamentals/whats-new.md).
+
+## <a name="february-2021"></a>Февраль 2021 года
+
+### <a name="updated-articles"></a>Обновленные статьи
+
+- [Как Azure Active Directory подготовка интегрируется с Workday](workday-integration-reference.md)
+- [Руководство. Настройка сопоставлений атрибутов для подготовки пользователей для приложений SaaS в Azure Active Directory](customize-application-attributes.md)
+- [Что представляет собой автоматическая подготовка пользователей для приложений SaaS в Azure AD?](user-provisioning.md)
+- [Руководство. Разработка образца конечной точки SCIM](use-scim-to-build-users-and-groups-endpoints.md)
+- [Руководство по разработке и подготовке плана для конечной точки SCIM](use-scim-to-provision-users-and-groups.md)
+- [Описание процесса подготовки](how-provisioning-works.md)
 
 ## <a name="january-2021"></a>Январь 2021 г.
 
@@ -72,7 +83,7 @@ ms.locfileid: "99256007"
 
 ### <a name="new-articles"></a>Новые статьи
 
-- [Новые возможности в документах](whats-new-docs.md)
+- [Новые возможности в Документации Майкрософт](whats-new-docs.md)
 
 ### <a name="updated-articles"></a>Обновленные статьи
 - [Подготовка приложений в карантинном состоянии](application-provisioning-quarantine-status.md)

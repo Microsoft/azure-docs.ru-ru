@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 01/27/2021
+ms.date: 03/08/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 8c2b97d1848450ecda2e83d5ba12469d7c61d8f9
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.openlocfilehash: f6e932cb6a6086e4cea6f474f296ca086e48c75e
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98952744"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102448464"
 ---
 # <a name="set-up-sign-in-for-multi-tenant-azure-active-directory-using-custom-policies-in-azure-active-directory-b2c"></a>Настройка входа для мультитенантного Azure Active Directory с помощью пользовательских политик в Azure Active Directory B2C
 
@@ -186,9 +186,16 @@ ms.locfileid: "98952744"
 
 [!INCLUDE [active-directory-b2c-configure-relying-party-policy](../../includes/active-directory-b2c-configure-relying-party-policy-user-journey.md)]
 
-[!INCLUDE [active-directory-b2c-test-relying-party-policy](../../includes/active-directory-b2c-test-relying-party-policy-user-journey.md)]
+## <a name="test-your-custom-policy"></a>Тестирование пользовательской политики
+
+1. Выберите политику проверяющей стороны, например `B2C_1A_signup_signin` .
+1. Для **приложения** выберите [ранее зарегистрированное](troubleshoot-custom-policies.md#troubleshoot-the-runtime)веб-приложение. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.
+1. Нажмите кнопку **Запустить сейчас** .
+1. На странице регистрации или входа выберите **Common AAD** для входа с помощью учетной записи Azure AD.
 
 Чтобы протестировать возможность входа с несколькими клиентами, выполните последние два шага, используя учетные данные пользователя, который уже существует в другом клиенте Azure AD. Скопируйте **конечную точку "запустить сейчас** " и откройте ее в частном окне браузера, например в режиме режиме инкогнито в Google Chrome или в окне InPrivate в Microsoft погранично. Открытие в частном окне браузера позволяет протестировать полное путешествие пользователя, не используя кэшированные учетные данные Azure AD.
+
+Если процесс входа прошел успешно, браузер перенаправляется на `https://jwt.ms` , который отображает содержимое маркера, возвращенного Azure AD B2C.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -6,12 +6,12 @@ ms.service: cache
 ms.topic: conceptual
 ms.date: 07/22/2020
 ms.author: yegu
-ms.openlocfilehash: 5de4e1b465cfc3ced59f8fe34a7f397324b4a225
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.openlocfilehash: d63cafb32dc1db0a901ed3e6004446b450db10c7
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
-ms.locfileid: "92537632"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102451529"
 ---
 # <a name="migrate-to-azure-cache-for-redis"></a>Миграция в службу "Кэш Azure для Redis"
 В этой статье описывается ряд подходов к переносу существующего кэша Redis, работающего локально или в другой облачной службе, в кэш Azure для Redis.
@@ -64,12 +64,12 @@ Redis с открытым исходным кодом определяет ст�
 2. Сохранение моментального снимка существующего кэша Redis. Можно [настроить Redis для периодического сохранения моментальных снимков](https://redis.io/topics/persistence) или запустить процесс вручную с помощью команд [Save](https://redis.io/commands/save) или [бгсаве](https://redis.io/commands/bgsave) . Файл RDB по умолчанию имеет имя "dump. RDB" и будет находиться по пути, указанному в файле конфигурации *Redis. conf* .
 
     > [!NOTE]
-    > Если вы выполняете миграцию данных в кэше Azure для Redis, см. [инструкции по экспорту файла RDB](cache-how-to-import-export-data.md) или использованию [командлета PowerShell Export](/powershell/module/azurerm.rediscache/export-azurermrediscache?view=azurermps-6.13.0&viewFallbackFrom=azurermps-6.4.0) .
+    > Если вы выполняете миграцию данных в кэше Azure для Redis, см. [инструкции по экспорту файла RDB](cache-how-to-import-export-data.md) или использованию [командлета PowerShell Export](/powershell/module/azurerm.rediscache/export-azurermrediscache) .
     >
 
 3. Скопируйте файл RDB в учетную запись хранения Azure в регионе, где находится новый кэш. Для этой задачи можно использовать AzCopy.
 
-4. Импортируйте файл RDB в новый кэш, используя [инструкции импорта](cache-how-to-import-export-data.md) или [командлет PowerShell Import](/powershell/module/azurerm.rediscache/import-azurermrediscache?view=azurermps-6.13.0&viewFallbackFrom=azurermps-6.4.0).
+4. Импортируйте файл RDB в новый кэш, используя [инструкции импорта](cache-how-to-import-export-data.md) или [командлет PowerShell Import](/powershell/module/azurerm.rediscache/import-azurermrediscache).
 
 5. Обновите приложение, чтобы использовать новый экземпляр кэша.
 

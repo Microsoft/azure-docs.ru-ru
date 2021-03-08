@@ -6,12 +6,12 @@ ms.author: deseelam
 ms.manager: bsiva
 ms.topic: how-to
 ms.date: 02/22/2021
-ms.openlocfilehash: b52d61c2828ddf5c04ab943d73964d236c9017c1
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 5dd27e4502ac70ef10f2623ed6dfb2f62de37f06
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102098848"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102448834"
 ---
 # <a name="replicate-data-over-expressroute-with-azure-migrate-server-migration"></a>Репликация данных через ExpressRoute с помощью службы "миграция Azure": миграция сервера
 
@@ -72,6 +72,7 @@ ms.locfileid: "102098848"
 ![Представление группы ресурсов](./media/replicate-using-expressroute/storage-account-name.png)
 
 > [!Tip]
+>  
 > Если у вас есть несколько учетных записей хранения с префиксом **"LSA"** в группе ресурсов, можно проверить учетную запись хранения, перейдя в меню "Параметры репликации" и "Целевая конфигурация" для любой из реплицируемых виртуальных машин в проекте. <br/> 
 > ![Общие сведения о параметрах репликации](./media/replicate-using-expressroute/storage-account.png)
 
@@ -125,8 +126,9 @@ ms.locfileid: "102098848"
 
     ![креатеприватеднс](./media/replicate-using-expressroute/create-private-dns.png)
 
-    а.  На странице **Частная зона DNS зоны** нажмите кнопку **+ Добавить** , чтобы начать создание новой зоны.  
-    b.  На странице **Создание частной зоны DNS** введите необходимые сведения. Введите имя частной зоны DNS в формате _привателинк_. BLOB.Core.Windows.NET. c. Перейдите на вкладку " **Проверка и создание** ", чтобы проверить и создать зону DNS.
+    а. На странице **Частная зона DNS зоны** нажмите кнопку **+ Добавить** , чтобы начать создание новой зоны.  
+    b. На странице **Создание частной зоны DNS** введите необходимые сведения. Введите имя частной зоны DNS в формате _привателинк_. BLOB.Core.Windows.NET.  
+    c. Перейдите на вкладку " **Проверка и создание** ", чтобы проверить и создать зону DNS.   
 
 2. Свяжите частную зону DNS с виртуальной сетью.  
 

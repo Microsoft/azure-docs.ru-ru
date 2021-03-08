@@ -16,12 +16,12 @@ ms.date: 12/23/2020
 ms.author: barclayn
 ms.reviewer: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a7f0d937d41ee42bf0fe678eb2f49e78882f881
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: b635a83c5ea1378a525ff607e5c6f2725337ad1a
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100577863"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102453042"
 ---
 # <a name="archive-logs-and-reporting-on-azure-ad-entitlement-management-in-azure-monitor"></a>Архивируйте журналы и создавайте отчеты в управлении правами Azure AD в Azure Monitor
 
@@ -158,8 +158,7 @@ $subs = Get-AzSubscription
 $subs | ft
 ```
  
-Вы можете повторно пройти аутентификацию и связать сеанс PowerShell с этой подпиской с помощью команды, например `Connect-AzAccount –Subscription $subs[0].id`. Дополнительные сведения о аутентификации в Azure с помощью PowerShell, в том числе в неинтерактивном режиме, см. в разделе [Войти используя Azure PowerShell](/powershell/azure/authenticate-azureps?view=azps-3.3.0&viewFallbackFrom=azps-2.5.0
-).
+Вы можете повторно пройти аутентификацию и связать сеанс PowerShell с этой подпиской с помощью команды, например `Connect-AzAccount –Subscription $subs[0].id`. Дополнительные сведения о аутентификации в Azure с помощью PowerShell, в том числе в неинтерактивном режиме, см. в разделе [Войти используя Azure PowerShell](/powershell/azure/authenticate-azureps).
 
 Если в этой подписке имеется несколько рабочих областей Log Analytics, командлет [Get-AzOperationalInsightsWorkspace](/powershell/module/Az.OperationalInsights/Get-AzOperationalInsightsWorkspace) возвращает список рабочих областей. Затем вы можете найти тот, у которого есть журналы Azure AD. `CustomerId`Поле, возвращаемое этим командлетом, совпадает со значением "идентификатор рабочей области", отображаемым в портал Azure в обзоре рабочей области Log Analytics.
  

@@ -13,12 +13,12 @@ ms.workload: infrastructure-services
 ms.date: 10/30/2020
 ms.author: kumud
 ms.reviewer: kumud
-ms.openlocfilehash: 1186715003abef387343bb2b6cb71d56490c519d
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 18b79b105bcc4b5b0b65fc6f7d6b602ffff55561
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101667839"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455828"
 ---
 # <a name="virtual-network-service-tags"></a>Теги службы виртуальной сети
 <a name="network-service-tags"></a>
@@ -131,7 +131,7 @@ ms.locfileid: "101667839"
 Актуальный список тегов служб вместе со сведениями о диапазоне IP-адресов можно получить программным способом:
 
 - [REST](/rest/api/virtualnetwork/servicetags/list)
-- [Azure PowerShell](/powershell/module/az.network/Get-AzNetworkServiceTag?viewFallbackFrom=azps-2.3.2)
+- [Azure PowerShell](/powershell/module/az.network/Get-AzNetworkServiceTag)
 - [Azure CLI](/cli/azure/network#az-network-list-service-tags)
 
 > [!NOTE]
@@ -153,7 +153,7 @@ ms.locfileid: "101667839"
 
 ### <a name="tips"></a>Советы 
 - Наличие обновления можно отслеживать по увеличению значения *changeNumber* в файле JSON. Для каждого подраздела (например, **Storage.WestUS**) имеется собственное значение *changeNumber*, которое увеличивается по мере появления изменений. Значение *changeNumber* в файле увеличивается при изменении любого из подразделов.
-- Примеры синтаксического анализа сведений о теге службы (например, получение всех диапазонов адресов для хранилища в WestUS) см. в [документации по API обнаружения тегов служб PowerShell](/powershell/module/az.network/Get-AzNetworkServiceTag?viewFallbackFrom=azps-2.3.2).
+- Примеры синтаксического анализа сведений о теге службы (например, получение всех диапазонов адресов для хранилища в WestUS) см. в [документации по API обнаружения тегов служб PowerShell](/powershell/module/az.network/Get-AzNetworkServiceTag).
 - При добавлении новых IP-адресов в теги службы они не будут использоваться в Azure по крайней мере на одну неделю. Это дает вам время на обновление любых систем, которым может потребоваться отслеживание IP-адресов, связанных с тегами службы.
 
 ## <a name="next-steps"></a>Дальнейшие действия

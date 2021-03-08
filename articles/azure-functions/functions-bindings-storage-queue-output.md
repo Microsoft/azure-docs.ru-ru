@@ -6,12 +6,12 @@ ms.topic: reference
 ms.date: 02/18/2020
 ms.author: cshoe
 ms.custom: devx-track-csharp, cc996988-fb4f-47, devx-track-python
-ms.openlocfilehash: 778424cbb81f8fe51a57dd41d94aa9015ffad94e
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 5d94625e3eb121e556b28038cf59626be1332966
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100381517"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455811"
 ---
 # <a name="azure-queue-storage-output-bindings-for-azure-functions"></a>Выходные привязки хранилища очередей Azure для функций Azure
 
@@ -366,7 +366,7 @@ public class HttpTriggerQueueOutput {
 }
 ```
 
-| Свойство    | Описание |
+| Свойство.    | Описание |
 |-------------|-----------------------------|
 |`name`       | Объявляет имя параметра в сигнатуре функции. При активации функции значение этого параметра будет иметь содержимое сообщения очереди. |
 |`queueName`  | Объявляет имя очереди в учетной записи хранения. |
@@ -419,17 +419,17 @@ public class HttpTriggerQueueOutput {
 
 В коде и скрипте C# запишите несколько сообщений очереди с помощью одного из следующих типов: 
 
-* `ICollector<T>` либо `IAsyncCollector<T>`
+* `ICollector<T>` или `IAsyncCollector<T>`
 * [CloudQueue](/dotnet/api/microsoft.azure.storage.queue.cloudqueue).
 
 ### <a name="additional-types"></a>Дополнительные типы
 
-Приложения, использующие [версию 5.0.0 или более поздней версии,](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher) могут также использовать типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). Эта версия отменяет поддержку устаревших `CloudQueue` `CloudQueueMessage` типов и в пользу следующих типов:
+В приложениях, в которых используется[расширение службы хранилища версии 5.0.0 или выше](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher), также могут использоваться типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). Эта версия отменяет поддержку устаревших `CloudQueue` `CloudQueueMessage` типов и в пользу следующих типов:
 
 - [куеуемессаже](/dotnet/api/azure.storage.queues.models.queuemessage)
 - [QueueClient](/dotnet/api/azure.storage.queues.queueclient) для записи нескольких сообщений в очереди
 
-Примеры использования этих типов см. [в репозитории GitHub для расширения](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues#examples).
+Примеры использования этих типов см. в разделе [репозитория GitHub для расширения](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues#examples).
 
 # <a name="c-script"></a>[Скрипт C#](#tab/csharp-script)
 
@@ -446,17 +446,17 @@ public class HttpTriggerQueueOutput {
 
 В коде и скрипте C# запишите несколько сообщений очереди с помощью одного из следующих типов: 
 
-* `ICollector<T>` либо `IAsyncCollector<T>`
+* `ICollector<T>` или `IAsyncCollector<T>`
 * [CloudQueue](/dotnet/api/microsoft.azure.storage.queue.cloudqueue).
 
 ### <a name="additional-types"></a>Дополнительные типы
 
-Приложения, использующие [версию 5.0.0 или более поздней версии,](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher) могут также использовать типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). Эта версия отменяет поддержку устаревших `CloudQueue` `CloudQueueMessage` типов и в пользу следующих типов:
+В приложениях, в которых используется[расширение службы хранилища версии 5.0.0 или выше](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher), также могут использоваться типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). Эта версия отменяет поддержку устаревших `CloudQueue` `CloudQueueMessage` типов и в пользу следующих типов:
 
 - [куеуемессаже](/dotnet/api/azure.storage.queues.models.queuemessage)
 - [QueueClient](/dotnet/api/azure.storage.queues.queueclient) для записи нескольких сообщений в очереди
 
-Примеры использования этих типов см. [в репозитории GitHub для расширения](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues#examples).
+Примеры использования этих типов см. в разделе [репозитория GitHub для расширения](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues#examples).
 
 # <a name="java"></a>[Java](#tab/java)
 
@@ -480,7 +480,7 @@ public class HttpTriggerQueueOutput {
 
 - **Возвращаемое значение** — задайте для свойства `name` в файле *function.json* значение `$return`. В этой конфигурации возвращаемое значение функции сохраняется как сообщение хранилища очереди.
 
-- **Императив** — передайте значение методу [set](/python/api/azure-functions/azure.functions.out?view=azure-python&preserve-view=true#set-val--t-----none) параметра, объявленного с типом [Out](/python/api/azure-functions/azure.functions.out?view=azure-python&preserve-view=true). Значение, передаваемое в `set` , сохраняется как сообщение хранилища очереди.
+- **Императив** — передайте значение методу [set](/python/api/azure-functions/azure.functions.out#set-val--t-----none) параметра, объявленного с типом [Out](/python/api/azure-functions/azure.functions.out). Значение, передаваемое в `set` , сохраняется как сообщение хранилища очереди.
 
 ---
 

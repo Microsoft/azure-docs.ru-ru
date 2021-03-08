@@ -4,42 +4,56 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 05/06/2019
 ms.author: wolfma
-ms.openlocfilehash: 6b16dea3c4f9241133b91b092c90c9056da57de0
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 1eefb7097f672552956e90a19e0a7b411cae8a24
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515119"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455703"
 ---
 ### <a name="standard-and-neural-voices"></a>Стандартные и нейронные голоса
 
-Используйте эту таблицу, чтобы определить доступность стандартных и нейронных голосов по регионам и конечным точкам:
+Используйте эту таблицу, чтобы определить **доступность стандартных голосов** по регионам и конечным точкам:
 
-| Регион | Конечная точка | Нейронные голоса | Стандартные голоса |
-|--------|----------|-----------------|---------------|
-| Восточная Австралия | `https://australiaeast.tts.speech.microsoft.com/cognitiveservices/v1` | Да | Да |
-| Brazil South | `https://brazilsouth.tts.speech.microsoft.com/cognitiveservices/v1` | Нет | Да |
-| Центральная Канада | `https://canadacentral.tts.speech.microsoft.com/cognitiveservices/v1` | Да | Да |
-| Центральная часть США | `https://centralus.tts.speech.microsoft.com/cognitiveservices/v1` | Нет | Да |
-| Восточная Азия | `https://eastasia.tts.speech.microsoft.com/cognitiveservices/v1` | Нет | Да |
-| Восточная часть США | `https://eastus.tts.speech.microsoft.com/cognitiveservices/v1` | Да | Да |
-| восточная часть США 2 | `https://eastus2.tts.speech.microsoft.com/cognitiveservices/v1` | Нет | Да |
-| Центральная Франция | `https://francecentral.tts.speech.microsoft.com/cognitiveservices/v1` | Нет | Да |
-| Центральная Индия | `https://centralindia.tts.speech.microsoft.com/cognitiveservices/v1` | Да | Да |
-| Japan East | `https://japaneast.tts.speech.microsoft.com/cognitiveservices/v1` | Нет | Да |
-| Западная Япония | `https://japanwest.tts.speech.microsoft.com/cognitiveservices/v1` | Нет | Да |
-| Республика Корея, центральный регион | `https://koreacentral.tts.speech.microsoft.com/cognitiveservices/v1` | Нет | Да |
-| Центрально-северная часть США | `https://northcentralus.tts.speech.microsoft.com/cognitiveservices/v1` | Нет | Да |
-| Северная Европа | `https://northeurope.tts.speech.microsoft.com/cognitiveservices/v1` | Нет | Да |
-| Центрально-южная часть США | `https://southcentralus.tts.speech.microsoft.com/cognitiveservices/v1` | Да | Да |
-| Southeast Asia | `https://southeastasia.tts.speech.microsoft.com/cognitiveservices/v1` | Да | Да |
-| южная часть Соединенного Королевства | `https://uksouth.tts.speech.microsoft.com/cognitiveservices/v1` | Да | Да |
-| Западная Европа | `https://westeurope.tts.speech.microsoft.com/cognitiveservices/v1` | Да | Да |
-| Западная часть США | `https://westus.tts.speech.microsoft.com/cognitiveservices/v1` | Нет | Да |
-| Западная часть США 2 | `https://westus2.tts.speech.microsoft.com/cognitiveservices/v1` | Да | Да |
+| Регион | Конечная точка |
+|--------|----------|
+| Восточная Австралия | `https://australiaeast.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Южная Бразилия | `https://brazilsouth.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Центральная Канада | `https://canadacentral.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Центральная часть США | `https://centralus.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Восточная Азия | `https://eastasia.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Восточная часть США | `https://eastus.tts.speech.microsoft.com/cognitiveservices/v1` |
+| восточная часть США 2 | `https://eastus2.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Центральная Франция | `https://francecentral.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Центральная Индия | `https://centralindia.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Восточная Япония | `https://japaneast.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Западная Япония | `https://japanwest.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Республика Корея, центральный регион | `https://koreacentral.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Центрально-северная часть США | `https://northcentralus.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Северная Европа | `https://northeurope.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Центрально-южная часть США | `https://southcentralus.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Юго-Восточная Азия | `https://southeastasia.tts.speech.microsoft.com/cognitiveservices/v1` |
+| южная часть Соединенного Королевства | `https://uksouth.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Западная Европа | `https://westeurope.tts.speech.microsoft.com/cognitiveservices/v1` |
+| западная часть США | `https://westus.tts.speech.microsoft.com/cognitiveservices/v1` |
+| западная часть США 2 | `https://westus2.tts.speech.microsoft.com/cognitiveservices/v1` |
 
 > [!TIP]
 > [Голоса в предварительной версии](../articles/cognitive-services/Speech-Service/language-support.md#neural-voices-in-preview) доступны только в следующих трех регионах: Восточная часть США, Западная Европа и Юго-Восточная Азия.
+
+Используйте эту таблицу для определения **доступности нейронных голосов** по регионам или конечным точкам:
+
+| Регион | Конечная точка |
+|--------|----------|
+| Восточная Австралия | `https://australiaeast.tts.speech.microsoft.com/cognitiveservices/v1` | 
+| Центральная Канада | `https://canadacentral.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Восточная часть США | `https://eastus.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Центральная Индия | `https://centralindia.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Центрально-южная часть США | `https://southcentralus.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Юго-Восточная Азия | `https://southeastasia.tts.speech.microsoft.com/cognitiveservices/v1` |
+| южная часть Соединенного Королевства | `https://uksouth.tts.speech.microsoft.com/cognitiveservices/v1` |
+| Западная Европа | `https://westeurope.tts.speech.microsoft.com/cognitiveservices/v1` |
+| западная часть США 2 | `https://westus2.tts.speech.microsoft.com/cognitiveservices/v1` |
 
 ### <a name="custom-voices"></a>Настраиваемое синтезирование голоса
 

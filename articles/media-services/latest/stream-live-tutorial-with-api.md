@@ -9,7 +9,7 @@ ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na m
 # <a name="tutorial-stream-live-with-media-services"></a>Руководство по Потоковая трансляция в реальном времени с помощью Служб мультимедиа
 
 > [!NOTE]
-> Несмотря на то, что в этом учебнике используются примеры для [пакета SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.liveevent?view=azure-dotnet), общие шаги одинаковы для [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event?view=azure-cli-latest), или других поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks).
+> Несмотря на то, что в этом учебнике используются примеры для [пакета SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.liveevent?view=azure-dotnet), общие шаги одинаковы для [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event?view=azure-cli-latest), или других поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks). 
 
 В Службах мультимедиа Azure за обработку содержимого потоковой трансляции отвечают компоненты [событий потоковой трансляции](/rest/api/media/liveevents). Событие потоковой трансляции предоставляет входную конечную точку (URL-адрес входа), которую вы можете передать динамическому кодировщику. Событие потоковой трансляции получает от динамического кодировщика входные потоки трансляции и предоставляет их для потоковой передачи через одну или несколько [конечных точек потоковой передачи](/rest/api/media/streamingendpoints). Кроме того, события потоковой трансляции предоставляют конечную точку предварительного просмотра (URL-адрес предварительного просмотра), которая позволяет просмотреть и проверить поток перед его обработкой и доставкой. В этом руководстве описано, как с помощью .NET Core создавать события прямой трансляции **сквозного** типа.
 
@@ -31,7 +31,8 @@ ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na m
 - [Создание учетной записи Служб мультимедиа](./create-account-howto.md).<br/>Запомните значения, которые вы использовали в качестве имени группы ресурсов и имени учетной записи Служб мультимедиа.
 - Выполните действия, описанные в статье [Доступ к API Служб мультимедиа Azure с помощью Azure CLI](./access-api-howto.md), и сохраните учетные данные. Эти данные понадобятся для доступа к API.
 - Веб-камера или другое устройство (например, ноутбук) для трансляции события.
-- Локальный динамический кодировщик, который преобразует сигналы от камеры в потоки и отправляет их службе потоковой трансляции в Службах мультимедиа, вы найдете в [рекомендациях по выбору динамических кодировщиков для локальной среды](recommended-on-premises-live-encoders.md). Поток должен иметь формат **RTMP** или **Smooth Streaming**.
+- Локальный динамический кодировщик, который преобразует сигналы от камеры в потоки и отправляет их службе потоковой трансляции в Службах мультимедиа, вы найдете в [рекомендациях по выбору динамических кодировщиков для локальной среды](recommended-on-premises-live-encoders.md). Поток должен иметь формат **RTMP** или **Smooth Streaming**.  
+- В этом примере рекомендуется приступить к работе с программным кодировщиком, таким как программное обеспечение для прямой трансляции OBS Studio. 
 
 > [!TIP]
 > Прежде чем продолжить работу, ознакомьтесь со статьей [Live streaming with Azure Media Services v3](live-streaming-overview.md) (Потоковая трансляция в Службах мультимедиа Azure v3). 
@@ -41,19 +42,19 @@ ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na m
 Клонируйте репозиторий GitHub, содержащий пример потоковой передачи данных .NET, на компьютер с помощью следующей команды:  
 
  ```bash
- git clone https://github.com/Azure-Samples/media-services-v3-dotnet-core-tutorials.git
+ git clone https://github.com/Azure-Samples/media-services-v3-dotnet.git
  ```
 
-Пример потоковой трансляции размещен в папке [Live](https://github.com/Azure-Samples/media-services-v3-dotnet-core-tutorials/tree/master/NETCore/Live/MediaV3LiveApp).
+Пример потоковой трансляции размещен в папке [Live](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Live).
 
-Откройте файл [appsettings.json](https://github.com/Azure-Samples/media-services-v3-dotnet-core-tutorials/blob/master/NETCore/Live/MediaV3LiveApp/appsettings.json) в скачанном проекте. Замените значения учетными данными, которые вы получили, выполнив действия из руководства по [получению доступа к API](./access-api-howto.md).
+Откройте файл [appsettings.json](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/appsettings.json) в скачанном проекте. Замените значения учетными данными, которые вы получили, выполнив действия из руководства по [получению доступа к API](./access-api-howto.md).
 
 > [!IMPORTANT]
 > Этот пример использует уникальный суффикс для каждого ресурса. Если вы отмените отладку или завершите приложение раньше, чем оно закончит свою работу, в вашей учетной записи сохранятся несколько трансляций. <br/>Не забудьте остановить все запущенные события потоковой трансляции. В противном случае за них будет **начислена плата**!
 
 ## <a name="examine-the-code-that-performs-live-streaming"></a>Проверка кода, который выполняет потоковую трансляцию
 
-В этом разделе описаны функции, определенные в файле [Program.cs](https://github.com/Azure-Samples/media-services-v3-dotnet-core-tutorials/blob/master/NETCore/Live/MediaV3LiveApp/Program.cs) проекта *MediaV3LiveApp*.
+В этом разделе рассматриваются функции, определенные в файле [Program.cs](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/Program.cs) проекта *LiveEventWithDVR*.
 
 Этот пример создает уникальный суффикс для каждого ресурса, чтобы избежать конфликтов имен при многократном запуске примера без очистки.
 
@@ -65,7 +66,7 @@ ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na m
 
 Чтобы начать использование API Служб мультимедиа с .NET, создайте объект **AzureMediaServicesClient**. Чтобы создать объект, введите учетные данные, необходимые клиенту для подключения к Azure с помощью Azure AD. В коде, который вы клонировали в начале статьи, функция **GetCredentialsAsync** создает объект ServiceClientCredentials с использованием учетных данных, предоставленных в локальном файле конфигурации. 
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-core-tutorials/NETCore/Live/MediaV3LiveApp/Program.cs#CreateMediaServicesClient)]
+[!code-csharp[Main](../../../media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/Program.cs#CreateMediaServicesClient)]
 
 ### <a name="create-a-live-event"></a>Создание события прямой трансляции
 
@@ -79,13 +80,13 @@ ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na m
 * Для создаваемого события можно настроить автоматический запуск. <br/>Если для автозапуска задано значение true, событие прямой трансляции будет запущено после создания. Это означает, что плата начисляется сразу же после запуска события потоковой трансляции. Чтобы остановить начисление оплаты, нужно явно вызвать функцию Stop (Остановить) для ресурса события потоковой трансляции. Дополнительные сведения см. в статье [Состояния компонента LiveEvent и выставление счетов за его использование](live-event-states-billing.md).
 * Чтобы URL-адрес был прогнозируемым, необходимо использовать режим запоминающихся адресов. Подробные сведения см. в разделе [URL-адреса приема событий трансляции](live-events-outputs-concept.md#live-event-ingest-urls).
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-core-tutorials/NETCore/Live/MediaV3LiveApp/Program.cs#CreateLiveEvent)]
+[!code-csharp[Main](../../../media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/Program.cs#CreateLiveEvent)]
 
 ### <a name="get-ingest-urls"></a>Получение URL-адресов приема
 
 После создания события потоковой трансляции можно получить URL-адреса приема, которые необходимо передать динамическому кодировщику. Он использует эти адреса для передачи динамического потока на вход.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-core-tutorials/NETCore/Live/MediaV3LiveApp/Program.cs#GetIngestURL)]
+[!code-csharp[Main](../../../media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/Program.cs#GetIngestURL)]
 
 ### <a name="get-the-preview-url"></a>Получение URL-адреса предварительного просмотра
 
@@ -94,7 +95,7 @@ ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na m
 > [!IMPORTANT]
 > Прежде чем продолжить, убедитесь, что видео правильно передается на URL-адрес предварительного просмотра.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-core-tutorials/NETCore/Live/MediaV3LiveApp/Program.cs#GetPreviewURLs)]
+[!code-csharp[Main](../../../media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/Program.cs#GetPreviewURLs)]
 
 ### <a name="create-and-manage-live-events-and-live-outputs"></a>Создание событий и выходных данных потоковой трансляции и управление ими
 
@@ -104,13 +105,13 @@ ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na m
 
 Создайте ресурс, который будет использоваться в выходных данных прямой трансляции.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-core-tutorials/NETCore/Live/MediaV3LiveApp/Program.cs#CreateAsset)]
+[!code-csharp[Main](../../../media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/Program.cs#CreateAsset)]
 
 #### <a name="create-a-live-output"></a>Создание выходных данных прямой трансляции
 
 Выходные данные потоковой трансляции запускаются при создании и останавливаются при удалении. При удалении выходных данных потоковой трансляции базовый ресурс и его содержимое не удаляются.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-core-tutorials/NETCore/Live/MediaV3LiveApp/Program.cs#CreateLiveOutput)]
+[!code-csharp[Main](../../../media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/Program.cs#CreateLiveOutput)]
 
 #### <a name="create-a-streaming-locator"></a>Создание указателя потоковой передачи
 
@@ -119,7 +120,7 @@ ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na m
 
 В случае публикации ресурса выходных данных потоковой трансляции с использованием указателя потоковой передачи событие потоковой трансляции (до длины окна DVR) будет доступно для просмотра до истечения срока действия или удаления указателя потоковой передачи, в зависимости от того, какое действие произойдет первым.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-core-tutorials/NETCore/Live/MediaV3LiveApp/Program.cs#CreateStreamingLocator)]
+[!code-csharp[Main](../../../media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/Program.cs#CreateStreamingLocator)]
 
 ```csharp
 
@@ -145,9 +146,9 @@ foreach (StreamingPath path in paths.StreamingPaths)
 * Остановите событие потоковой трансляции. Плата за остановленное событие потоковой трансляции не взимается. Если вам понадобится снова запустить его, вы можете воспользоваться тем же URL-адресом приема (перенастраивать кодировщик не потребуется).
 * Вы можете остановить конечную точку потоковой передачи, если больше не собираетесь предоставлять доступ к архиву мероприятия в качестве потоковой передачи по требованию. Если событие потоковой трансляции находится в остановленном состоянии, плата не взимается.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-core-tutorials/NETCore/Live/MediaV3LiveApp/Program.cs#CleanupLiveEventAndOutput)]
+[!code-csharp[Main](../../../media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/Program.cs#CleanupLiveEventAndOutput)]
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-core-tutorials/NETCore/Live/MediaV3LiveApp/Program.cs#CleanupLocatorAssetAndStreamingEndpoint)]
+[!code-csharp[Main](../../../media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/Program.cs#CleanupLocatorAssetAndStreamingEndpoint)]
 
 ## <a name="watch-the-event"></a>Просмотр события
 

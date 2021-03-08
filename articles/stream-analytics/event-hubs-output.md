@@ -6,12 +6,12 @@ ms.author: ebnkruma
 ms.service: stream-analytics
 ms.topic: conceptual
 ms.date: 09/23/2020
-ms.openlocfilehash: c2bde64c17520f4cf66ddecd9fc55a9bdd9edc37
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.openlocfilehash: 02abdd752528ce28642b6228648062ed961d5ae3
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98020593"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102452396"
 ---
 # <a name="event-hubs-output-from-azure-stream-analytics"></a>Выходные данные концентраторов событий из Azure Stream Analytics
 
@@ -37,7 +37,7 @@ ms.locfileid: "98020593"
 
 ## <a name="partitioning"></a>Секционирование
 
-Секционирование зависит от выравнивания секций. Если ключ раздела для выходных данных концентратора событий не согласован с вышестоящим (предыдущим) шагом запроса, то число модулей записи совпадает с количеством разделов в выходных данных концентратора событий. Каждый модуль записи использует [класс EventHubSender](/dotnet/api/microsoft.servicebus.messaging.eventhubsender?view=azure-dotnet&preserve-view=true) для отправки событий в определенный раздел. Если ключ раздела для выходных данных концентратора событий не согласован с вышестоящим (предыдущим) шагом запроса, то число модулей записи совпадает с количеством разделов на этом предыдущем шаге. Каждый модуль записи использует [класс SendBatchAsync](/dotnet/api/microsoft.servicebus.messaging.eventhubclient.sendasync?view=azure-dotnet&preserve-view=true) в **EventHubClient** для отправки событий во все разделы выходных данных. 
+Секционирование зависит от выравнивания секций. Если ключ раздела для выходных данных концентратора событий не согласован с вышестоящим (предыдущим) шагом запроса, то число модулей записи совпадает с количеством разделов в выходных данных концентратора событий. Каждый модуль записи использует [класс EventHubSender](/dotnet/api/microsoft.servicebus.messaging.eventhubsender) для отправки событий в определенный раздел. Если ключ раздела для выходных данных концентратора событий не согласован с вышестоящим (предыдущим) шагом запроса, то число модулей записи совпадает с количеством разделов на этом предыдущем шаге. Каждый модуль записи использует [класс SendBatchAsync](/dotnet/api/microsoft.servicebus.messaging.eventhubclient.sendasync) в **EventHubClient** для отправки событий во все разделы выходных данных. 
 
 ## <a name="output-batch-size"></a>Размер выходного пакета
 

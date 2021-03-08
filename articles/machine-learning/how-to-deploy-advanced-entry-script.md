@@ -11,12 +11,12 @@ ms.date: 09/17/2020
 ms.author: gopalv
 ms.reviewer: larryfr
 ms.custom: deploy
-ms.openlocfilehash: de0a62ead6e1f40755daa068bf779b5391cf66a0
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 22b22cf364f4422c358fc71db74465b839ddae45
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100371980"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102454974"
 ---
 # <a name="advanced-entry-script-authoring"></a>Разработка расширенных сценариев ввода
 
@@ -76,27 +76,27 @@ def init():
     model = joblib.load(model_path)
 
 
-    # providing 3 sample inputs for schema generation
-    numpy_sample_input = NumpyParameterType(np.array([[1,2,3,4,5,6,7,8,9,10],[10,9,8,7,6,5,4,3,2,1]],dtype='float64'))
-    pandas_sample_input = PandasParameterType(pd.DataFrame({'name': ['Sarah', 'John'], 'age': [25, 26]}))
-    standard_sample_input = StandardPythonParameterType(0.0)
+# providing 3 sample inputs for schema generation
+numpy_sample_input = NumpyParameterType(np.array([[1,2,3,4,5,6,7,8,9,10],[10,9,8,7,6,5,4,3,2,1]],dtype='float64'))
+pandas_sample_input = PandasParameterType(pd.DataFrame({'name': ['Sarah', 'John'], 'age': [25, 26]}))
+standard_sample_input = StandardPythonParameterType(0.0)
 
-    # This is a nested input sample, any item wrapped by `ParameterType` will be described by schema
-    sample_input = StandardPythonParameterType({'input1': numpy_sample_input, 
-                                            'input2': pandas_sample_input, 
-                                            'input3': standard_sample_input})
+# This is a nested input sample, any item wrapped by `ParameterType` will be described by schema
+sample_input = StandardPythonParameterType({'input1': numpy_sample_input, 
+                                        'input2': pandas_sample_input, 
+                                        'input3': standard_sample_input})
 
-    sample_global_parameters = StandardPythonParameterType(1.0) # this is optional
-    sample_output = StandardPythonParameterType([1.0, 1.0])
-    outputs = StandardPythonParameterType({'Results':sample_output}) # 'Results' is case sensitive
+sample_global_parameters = StandardPythonParameterType(1.0) # this is optional
+sample_output = StandardPythonParameterType([1.0, 1.0])
+outputs = StandardPythonParameterType({'Results':sample_output}) # 'Results' is case sensitive
 
-    @input_schema('Inputs', sample_input) 
-    # 'Inputs' is case sensitive
-    
-    @input_schema('GlobalParameters', sample_global_parameters) 
-    # this is optional, 'GlobalParameters' is case sensitive
+@input_schema('Inputs', sample_input) 
+# 'Inputs' is case sensitive
 
-    @output_schema(outputs)
+@input_schema('GlobalParameters', sample_global_parameters) 
+# this is optional, 'GlobalParameters' is case sensitive
+
+@output_schema(outputs)
 
 def run(Inputs, GlobalParameters): 
     # the parameters here have to match those in decorator, both 'Inputs' and 
@@ -305,7 +305,7 @@ second_model_path = os.path.join(os.getenv('AZUREML_MODEL_DIR'), second_model_na
 * [AutoML](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/automated-machine-learning/classification-bank-marketing-all-features)
 * [ONNX](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/deployment/onnx/)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Устранение неполадок при развертывании](how-to-troubleshoot-deployment.md)
 * [развертывание в Службе Azure Kubernetes](how-to-deploy-azure-kubernetes-service.md).

@@ -5,12 +5,12 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 03/01/2021
 ms.custom: template-concept
-ms.openlocfilehash: d6db6c366ae51dbdc5bf062e79358f752e4a05f5
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: ab89c012c985afa8d7375ff94d0f55b0ea6941cc
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102425912"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449464"
 ---
 # <a name="guide-for-running-functions-on-net-50-in-azure"></a>Инструкции по выполнению функций в .NET 5,0 в Azure
 
@@ -63,18 +63,18 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 Поскольку функции, выполняемые в изолированном процессе .NET, используют различные типы привязок, им требуется уникальный набор пакетов расширений привязки. 
 
 Эти пакеты расширений можно найти в [Microsoft. Azure. functions. Worker. Extensions](https://www.nuget.org/packages?q=Microsoft.Azure.Functions.Worker.Extensions).
- 
+
 ## <a name="start-up-and-configuration"></a>Запуск и настройка 
 
 При использовании изолированных функций .NET у вас есть доступ к запуску приложения-функции, которое обычно находится в Program.cs. Вы несете ответственность за создание и запуск собственного экземпляра узла. Таким образом, у вас также есть прямой доступ к конвейеру конфигурации приложения. Можно значительно упростить внедрение зависимостей и запуск по промежуточного слоя при выполнении вне процесса. 
 
 В следующем коде показан пример `HostBuilder` конвейера:
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" range="20-33":::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" id="docsnippet_startup":::
 
 Объект `HostBuilder` используется для создания и возврата полностью инициализированного `IHost` экземпляра, который выполняется асинхронно для запуска приложения-функции. 
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" range="35":::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" id="docsnippet_host_run":::
 
 ### <a name="configuration"></a>Конфигурация
 
@@ -82,9 +82,9 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 
 В следующем примере показано, как добавить конфигурацию `args` , которая считывается как аргументы командной строки: 
  
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" range="21-24" :::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" id="docsnippet_configure_app" :::
 
-`ConfigureAppConfiguration`Метод используется для настройки оставшейся части процесса сборки и приложения. В этом примере также используется [IConfigurationBuilder](/dotnet/api/microsoft.extensions.configuration.iconfigurationbuilder?view=dotnet-plat-ext-5.0&preserve-view=true), который упрощает добавление нескольких элементов конфигурации. Поскольку `ConfigureAppConfiguration` возвращает один и тот же экземпляр [`IConfiguration `](/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0&preserve-view=true) , можно также вызвать его несколько раз, чтобы добавить несколько элементов конфигурации. Доступ к полному набору конфигураций можно получить [`HostBuilderContext.Configuration`](/dotnet/api/microsoft.extensions.hosting.hostbuildercontext.configuration?view=dotnet-plat-ext-5.0&preserve-view=true) и в, и в [`IHost.Services`](/dotnet/api/microsoft.extensions.hosting.ihost.services?view=dotnet-plat-ext-5.0&preserve-view=true) .
+`ConfigureAppConfiguration`Метод используется для настройки оставшейся части процесса сборки и приложения. В этом примере также используется [IConfigurationBuilder](/dotnet/api/microsoft.extensions.configuration.iconfigurationbuilder?view=dotnet-plat-ext-5.0&preserve-view=true), который упрощает добавление нескольких элементов конфигурации. Поскольку `ConfigureAppConfiguration` возвращает один и тот же экземпляр [`IConfiguration`](/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0&preserve-view=true) , можно также вызвать его несколько раз, чтобы добавить несколько элементов конфигурации. Доступ к полному набору конфигураций можно получить [`HostBuilderContext.Configuration`](/dotnet/api/microsoft.extensions.hosting.hostbuildercontext.configuration?view=dotnet-plat-ext-5.0&preserve-view=true) и в, и в [`IHost.Services`](/dotnet/api/microsoft.extensions.hosting.ihost.services?view=dotnet-plat-ext-5.0&preserve-view=true) .
 
 Дополнительные сведения о конфигурации см. [в разделе Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration/?view=aspnetcore-5.0&preserve-view=true). 
 
@@ -94,7 +94,7 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 
 В следующем примере вводится зависимость одноэлементной службы:  
  
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" range="29-32" :::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" id="docsnippet_dependency_injection" :::
 
 Дополнительные сведения см. [в разделе внедрение зависимостей в ASP.NET Core](/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0&preserve-view=true).
 
@@ -104,7 +104,7 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 
 Пока не предоставлен полный набор API-интерфейсов для регистрации по промежуточного слоя, поддерживается регистрация по промежуточного слоя, и мы добавили пример в пример приложения в папке по промежуточного слоя.
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" range="25-28" :::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" id="docsnippet_middleware" :::
 
 ## <a name="execution-context"></a>Контекст выполнения
 
@@ -114,7 +114,7 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 
 Привязки определяются с помощью атрибутов методов, параметров и возвращаемых типов. Метод функции — это метод с `Function` атрибутом и, который применяется к входному параметру, как показано в следующем примере:
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Queue/QueueFunction.cs" range="11-14" :::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Queue/QueueFunction.cs" id="docsnippet_queue_trigger" :::
 
 Атрибут триггера указывает тип триггера и привязывает входные данные к параметру метода. Предыдущий пример функции активируется сообщением очереди, а сообщение очереди передается в метод в `myQueueItem` параметре.
 
@@ -132,13 +132,13 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 
 Для записи в выходную привязку необходимо применить атрибут выходной привязки к методу функции, который определил, как выполнять запись в привязанную службу. Значение, возвращаемое методом, записывается в выходную привязку. Например, в следующем примере строковое значение записывается в очередь сообщений с `functiontesting2` помощью выходной привязки.
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Queue/QueueFunction.cs" range="11-21" :::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Queue/QueueFunction.cs" id="docsnippet_queue_output_binding" :::
 
 ### <a name="multiple-output-bindings"></a>Несколько выходных привязок
 
 Данные, записанные в выходную привязку, всегда являются возвращаемым значением функции. Если необходимо выполнить запись в более чем одну выходную привязку, необходимо создать пользовательский тип возвращаемого значения. Этот тип возвращаемого значения должен иметь атрибут выходной привязки, примененный к одному или нескольким свойствам класса. В следующем примере выполняется запись в ответ HTTP и в выходную привязку очереди.
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Function1/Function1.cs" range="14-33":::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Function1/Function1.cs" id="docsnippet_multiple_outputs":::
 
 ### <a name="http-trigger"></a>Триггер HTTP
 
@@ -148,7 +148,7 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 
 Следующий код является триггером HTTP 
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Http/HttpFunction.cs" range="13-27" :::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Http/HttpFunction.cs" id="docsnippet_http_trigger" :::
 
 ## <a name="logging"></a>Ведение журнала
 
@@ -156,7 +156,7 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 
 В следующем примере показано, как получить `ILogger` и записать журналы внутри функции:
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Http/HttpFunction.cs" range="17-18" ::: 
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Http/HttpFunction.cs" id="docsnippet_logging" ::: 
 
 Используйте различные методы `ILogger` для записи различных уровней ведения журнала, например `LogWarning` или `LogError` . Дополнительные сведения об уровнях ведения журнала см. в [статье мониторинг](functions-monitoring.md#log-levels-and-categories).
 
@@ -174,7 +174,7 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 | Ведение журнала | [`ILogger`](/dotnet/api/microsoft.extensions.logging.ilogger?view=dotnet-plat-ext-5.0&preserve-view=true) передается в функцию | [`ILogger`](/dotnet/api/microsoft.extensions.logging.ilogger?view=dotnet-plat-ext-5.0&preserve-view=true) получено из `FunctionContext` |
 | Токены отмены | [Поддерживается](functions-dotnet-class-library.md#cancellation-tokens) | Не поддерживается |
 | Выходные привязки | Выходные параметры | Возвращаемые значения |
-| Типы выходных привязок |  `IAsyncCollector`, [DocumentClient](/dotnet/api/microsoft.azure.documents.client.documentclient), [BrokeredMessage](/dotnet/api/microsoft.servicebus.messaging.brokeredmessage)и другие типы, зависящие от клиента | Простые типы, сериализуемые типы JSON и массивы. |
+| Типы выходных привязок |  `IAsyncCollector`, [DocumentClient](/dotnet/api/microsoft.azure.documents.client.documentclient?view=azure-dotnet&preserve-view=true), [BrokeredMessage](/dotnet/api/microsoft.servicebus.messaging.brokeredmessage?view=azure-dotnet&preserve-view=true)и другие типы, зависящие от клиента | Простые типы, сериализуемые типы JSON и массивы. |
 | Несколько выходных привязок | Поддерживается | [Поддерживается](#multiple-output-bindings) |
 | Триггер HTTP | [`HttpRequest`](/dotnet/api/microsoft.aspnetcore.http.httprequest?view=aspnetcore-5.0&preserve-view=true)/[`ObjectResult`](/dotnet/api/microsoft.aspnetcore.mvc.objectresult?view=aspnetcore-5.0&preserve-view=true) | `HttpRequestData`/`HttpResponseData` |
 | Устойчивые функции | [Поддерживается](durable/durable-functions-overview.md) | Не поддерживается | 

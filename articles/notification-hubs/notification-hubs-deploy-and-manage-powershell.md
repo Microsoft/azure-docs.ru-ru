@@ -16,12 +16,12 @@ ms.date: 01/04/2019
 ms.author: sethm
 ms.reviewer: jowargo
 ms.lastreviewed: 01/04/2019
-ms.openlocfilehash: f000251009bda730b15458f3ab4d8b7d6ca1db6d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 4534584144f54618d7f3dd39cf5e40bc0464fb21
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "87030306"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102454991"
 ---
 # <a name="deploy-and-manage-notification-hubs-using-powershell"></a>Развертывание центров уведомлений и управление ими с помощью PowerShell
 
@@ -76,7 +76,7 @@ catch [System.Exception]
 
 ## <a name="create-the-namespacemanager-class"></a>Создание класса `NamespaceManager`
 
-Для подготовки центров уведомлений создайте экземпляр класса [NamespaceManager](/dotnet/api/microsoft.servicebus.namespacemanager?view=azure-dotnet) из пакета SDK.
+Для подготовки центров уведомлений создайте экземпляр класса [NamespaceManager](/dotnet/api/microsoft.servicebus.namespacemanager) из пакета SDK.
 
 Получить правило авторизации для указания строки подключения можно с помощью командлета [Get-AzureSBAuthorizationRule] в составе Azure PowerShell. Ссылка на экземпляр `NamespaceManager` хранится в переменной `$NamespaceManager`. Для подготовки центра уведомлений используется `$NamespaceManager`.
 
@@ -160,7 +160,7 @@ else
 [Предложения для участников]: https://azure.microsoft.com/pricing/member-offers/
 [Создайте бесплатную учетную запись Azure уже сегодня]: https://azure.microsoft.com/pricing/free-trial/
 [Установка и настройка Azure PowerShell]: /powershell/azure/
-[API .NET для центров уведомлений]: /dotnet/api/overview/azure/notification-hubs?view=azure-dotnet
+[API .NET для центров уведомлений]: /dotnet/api/overview/azure/notification-hubs
 [Get-AzureSBNamespace]: /powershell/module/servicemanagement/azure.service/get-azuresbnamespace
 [New-AzureSBNamespace]: /powershell/module/servicemanagement/azure.service/new-azuresbnamespace
 [Get-AzureSBAuthorizationRule]: /powershell/module/servicemanagement/azure.service/get-azuresbauthorizationrule

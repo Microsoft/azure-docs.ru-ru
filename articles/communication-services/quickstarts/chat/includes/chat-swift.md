@@ -10,12 +10,12 @@ ms.date: 2/11/2020
 ms.topic: include
 ms.custom: include file
 ms.author: mikben
-ms.openlocfilehash: 7833656b9b9be45aa3a0f0a8aa45cd70f925ce73
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 5c79ea68e648cd3d78f94eb2272b6f32e3c4806f
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100379689"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101749905"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 Перед началом работы нужно сделать следующее:
@@ -53,9 +53,11 @@ pod 'AzureCommunicationChat', '~> 1.0.0-beta.8'
 
 Установите зависимости. Кроме того, будет создана рабочая область Xcode: `pod install`.
 
+**После выполнения установки Pod повторно откройте проект в Xcode, выбрав только что созданный `.xcworkspace`.**
+
 ### <a name="setup-the-placeholders"></a>Настройка заполнителей
 
-Откройте файл рабочей области `ChatQuickstart.xcworkspace` в Xcode, а затем откройте `ViewController.swift`.
+Откройте файл рабочей области `ChatQuickstart.xcworkspace` в Xcode, затем откройте `ViewController.swift`.
 
 В рамках этого краткого руководства мы добавим наш код в класс `viewController` и просмотрим выходные данные в консоли Xcode. В этом кратком руководстве не рассматривается создание пользовательского интерфейса в iOS. 
 
@@ -120,6 +122,10 @@ let endpoint = "<ACS_RESOURCE_ENDPOINT>"
 
 Замените `<ACS_RESOURCE_ENDPOINT>` конечной точкой вашего ресурса ACS.
 Замените `<ACCESS_TOKEN>` допустимым маркером доступа ACS.
+
+В этом кратком руководстве не рассматривается создание уровня служб для управления маркерами для приложения чата, хотя это и рекомендуется. Дополнительные сведения см. в этой документации об [архитектуре чатов](../../../concepts/chat/concepts.md)
+
+Дополнительные сведения о маркерах доступа пользователей см. [здесь](../../access-tokens.md).
 
 ## <a name="object-model"></a>Объектная модель 
 Следующие классы и интерфейсы реализуют некоторые основные функции клиентской библиотеки чата Служб коммуникации для JavaScript.

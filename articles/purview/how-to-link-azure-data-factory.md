@@ -6,13 +6,13 @@ ms.author: csugunan
 ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: how-to
-ms.date: 03/03/2021
-ms.openlocfilehash: 6a71999f0896a5d056b7d0b38be4d494c347e9f9
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.date: 03/08/2021
+ms.openlocfilehash: 8812806e535e8e34ca07fdb13e6223bfa0c91d6b
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102049378"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449617"
 ---
 # <a name="how-to-connect-azure-data-factory-and-azure-purview"></a>Подключение фабрики данных Azure и Azure зрения
 
@@ -123,12 +123,12 @@ Azure зрения захватывает журналы выполнения и
 | База данных SQL Azure \* | Да | 
 | Управляемый экземпляр Azure SQL \* | Да | 
 | Azure синапсе Analytics \* | Да | 
-| Хранилище таблиц Azure \* | Да |
-| SQL Server \* | Да | 
+| Хранилище таблиц Azure | Да |
 | Amazon S3 | Да | 
 | Семейства \* | Да | 
 | КОД КОРРЕКЦИИ ОШИБОК SAP \* | Да |
-| Таблица SAP \* | Да |
+| Таблица SAP | Да |
+| SQL Server \* | Да | 
 | Teradata \* | Да |
 
 *\* В настоящее время Azure зрения не поддерживает запрос или хранимую процедуру для журнала преобразований или проверки. Журнал преобразований ограничен только источниками таблиц и представлений.*
@@ -144,6 +144,7 @@ Azure зрения захватывает журналы выполнения и
 - Копирование данных в Azure синапсе Analytics с помощью Polybase или инструкции COPY.
 - Параметр сжатия для двоичных, разделенных текстов, файлов Excel, JSON и XML.
 - Параметры исходной секции для базы данных SQL Azure, Управляемый экземпляр Azure SQL, Azure синапсе Analytics, SQL Server и таблицы SAP.
+- Параметр обнаружения исходной секции для файловых хранилищ.
 - Копирование данных в файловый приемник с установкой максимального числа строк на файл.
 - Добавление дополнительных столбцов во время копирования.
 

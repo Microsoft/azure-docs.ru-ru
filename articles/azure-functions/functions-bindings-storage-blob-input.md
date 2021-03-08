@@ -6,12 +6,12 @@ ms.topic: reference
 ms.date: 02/13/2020
 ms.author: cshoe
 ms.custom: devx-track-csharp, devx-track-python
-ms.openlocfilehash: 678b6f02245e463870fc5b2c4bfc8b5ffa50de60
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: cd69e89954fab2256ffc7c23e22d3b8d44ab2a11
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100381701"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455879"
 ---
 # <a name="azure-blob-storage-input-binding-for-azure-functions"></a>Входная привязка хранилища BLOB-объектов Azure для функций Azure
 
@@ -264,7 +264,7 @@ Write-Host "PowerShell Blob trigger: Name: $($TriggerMetadata.Name) Size: $($Inp
 
 | Значение привязки | По умолчанию | Описание | Пример |
 | --- | --- | --- | --- |
-| `undefined` | Да | Использует широкую привязку | `def main(input: func.InputStream)` |
+| `undefined` | Y | Использует широкую привязку | `def main(input: func.InputStream)` |
 | `string` | N | Использует универсальную привязку и приводит тип входных данных к типу `string` | `def main(input: str)` |
 | `binary` | N | Использует универсальную привязку и приводит входной большой двоичный объект в качестве `bytes` объекта Python | `def main(input: bytes)` |
 
@@ -379,11 +379,11 @@ public static void Run(
 
 # <a name="python"></a>[Python](#tab/python)
 
-Доступ к данным большого двоичного объекта с помощью параметра, типизированного как [InputStream](/python/api/azure-functions/azure.functions.inputstream?view=azure-python&preserve-view=true). Дополнительные сведения см. в [примере входного данных](#example) .
+Доступ к данным большого двоичного объекта с помощью параметра, типизированного как [InputStream](/python/api/azure-functions/azure.functions.inputstream). Дополнительные сведения см. в [примере входного данных](#example) .
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Выполнение функции при изменении данных хранилища BLOB-объектов](./functions-bindings-storage-blob-trigger.md)
 - [Запись данных хранилища BLOB-объектов из функции](./functions-bindings-storage-blob-output.md)

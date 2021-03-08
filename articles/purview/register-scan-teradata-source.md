@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: overview
 ms.date: 2/25/2021
-ms.openlocfilehash: 0885870497ef3488d78fe899c96ee2a82a5b84fc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 2008e014e9f160b643ed5f591fff81c0b215e24a
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101696089"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175076"
 ---
 # <a name="register-and-scan-teradata-source-preview"></a>Регистрация и сканирование источника Teradata (предварительная версия)
 
@@ -94,13 +94,13 @@ ms.locfileid: "101696089"
 
 6.  **Схема**: список импортируемых схем в виде списка значений, разделенных точкой с запятой. Пример: schema1; schema2. Если этот список пуст, импортируются все пользовательские схемы. Все системные схемы (например, SysAdmin) и объекты игнорируются по умолчанию. Если этот список пуст, импортируются все доступные схемы.
 
-        Acceptable schema name patterns using SQL LIKE expressions syntax include using %, e.g. A%; %B; %C%; D
-        - start with A or    
-        - end with B or    
-        - contain C or    
-        - equal D
+    Для имен схем допускается синтаксис выражений в стиле SQL с использованием символов "%", например A%; %B; %C%; D обозначают следующее:
+    - начинается со строки A;    
+    - заканчивается строкой B;    
+    - содержит строку C;    
+    - строго равно D.
 
-        Usage of NOT and special characters are not acceptable
+    Использование ключевого слова NOT и специальных символов не допускается.
 
 7.  **Расположение драйвера**: укажите путь к расположению драйвера JDBC на виртуальной машине, где установлена локальная среда выполнения интеграции. Это должен быть путь к допустимому расположению каталога JAR.
 

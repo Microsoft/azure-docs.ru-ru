@@ -6,12 +6,12 @@ ms.author: lufittl
 ms.service: postgresql
 ms.topic: conceptual
 ms.date: 03/05/2021
-ms.openlocfilehash: 70f54fc111bfd9443f988619cb2b86303fd3f07b
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: d223d2c6a83b1389cd70344efdb48c357dda4ac4
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102443392"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102454597"
 ---
 # <a name="postgresql-extensions-in-azure-database-for-postgresql---flexible-server"></a>Расширения PostgreSQL в базе данных Azure для PostgreSQL-гибкого сервера
 
@@ -53,7 +53,7 @@ PostgreSQL предоставляет возможность расширить 
 > |[ltree](https://www.postgresql.org/docs/12/ltree.html)                        | 1,1             | тип данных для иерархических структур, схожих с деревом|
 > |[пажеинспект](https://www.postgresql.org/docs/12/pageinspect.html)                        | 1.7             | Проверка содержимого страниц базы данных на низком уровне|
 > |[pg_buffercache](https://www.postgresql.org/docs/12/pgbuffercache.html)               | 1,3             | Проверка общего кэша буфера|
-> |[pg_cron](https://github.com/citusdata/pg_cron)                        | 1.2             | Планировщик заданий для PostgreSQL|
+> |[pg_cron](https://github.com/citusdata/pg_cron/tree/b6e7dc9627515bf00e2086f168b3faa660e5fd36)                        | 1.2             | Планировщик заданий для PostgreSQL|
 > |[pg_freespacemap](https://www.postgresql.org/docs/12/pgfreespacemap.html)               | 1.2             | изучение схемы свободного места (FSM)|
 > |[pg_prewarm](https://www.postgresql.org/docs/12/pgprewarm.html)                   | 1.2             | предтеплое отношение данных|
 > |[pg_stat_statements](https://www.postgresql.org/docs/12/pgstatstatements.html)           | 1.7             | Трассировка статистики выполнения всех выполненных инструкций SQL|
@@ -61,7 +61,6 @@ PostgreSQL предоставляет возможность расширить 
 > |[pg_visibility](https://www.postgresql.org/docs/12/pgvisibility.html)                      | 1.2             | Проверка сведений о видимости (на виртуальной машине) и видимости на уровне страницы|
 > |[пгаудит](https://www.pgaudit.org/)                     | 1.4             | предоставляет функции аудита|
 > |[pgcrypto](https://www.postgresql.org/docs/12/pgcrypto.html)                     | 1,3             | криптографические функции|
-> |[пглогикал](https://github.com/2ndQuadrant/pglogical)                        | 2.3.2             | Логическая репликация PostgreSQL|
 > |[pgrowlocks](https://www.postgresql.org/docs/12/pgrowlocks.html)                   | 1.2             | показывать сведения о блокировке на уровне строк|
 > |[pgstattuple](https://www.postgresql.org/docs/12/pgstattuple.html)                  | 1.5             | Отображение статистики на уровне кортежей|
 > |[plpgsql](https://www.postgresql.org/docs/12/plpgsql.html)                      | 1,0             | Процедурный язык PL/pgSQL|
@@ -104,7 +103,7 @@ PostgreSQL предоставляет возможность расширить 
 > |[ltree](https://www.postgresql.org/docs/11/ltree.html)                        | 1,1             | тип данных для иерархических структур, схожих с деревом|
 > |[пажеинспект](https://www.postgresql.org/docs/11/pageinspect.html)                        | 1.7             | Проверка содержимого страниц базы данных на низком уровне|
 > |[pg_buffercache](https://www.postgresql.org/docs/11/pgbuffercache.html)               | 1,3             | Проверка общего кэша буфера|
-> |[pg_cron](https://github.com/citusdata/pg_cron)                        | 1.2             | Планировщик заданий для PostgreSQL|
+> |[pg_cron](https://github.com/citusdata/pg_cron/tree/b6e7dc9627515bf00e2086f168b3faa660e5fd36)                        | 1.2             | Планировщик заданий для PostgreSQL|
 > |[pg_freespacemap](https://www.postgresql.org/docs/11/pgfreespacemap.html)               | 1.2             | изучение схемы свободного места (FSM)|
 > |[pg_prewarm](https://www.postgresql.org/docs/11/pgprewarm.html)                   | 1.2             | предтеплое отношение данных|
 > |[pg_stat_statements](https://www.postgresql.org/docs/11/pgstatstatements.html)           | 1.6             | Трассировка статистики выполнения всех выполненных инструкций SQL|
@@ -112,7 +111,6 @@ PostgreSQL предоставляет возможность расширить 
 > |[pg_visibility](https://www.postgresql.org/docs/11/pgvisibility.html)                      | 1.2             | Проверка сведений о видимости (на виртуальной машине) и видимости на уровне страницы|
 > |[пгаудит](https://www.pgaudit.org/)                     | 1.3.1             | предоставляет функции аудита|
 > |[pgcrypto](https://www.postgresql.org/docs/11/pgcrypto.html)                     | 1,3             | криптографические функции|
-> |[пглогикал](https://github.com/2ndQuadrant/pglogical)                        | 2.3.2             | Логическая репликация PostgreSQL|
 > |[pgrowlocks](https://www.postgresql.org/docs/11/pgrowlocks.html)                   | 1.2             | показывать сведения о блокировке на уровне строк|
 > |[pgstattuple](https://www.postgresql.org/docs/11/pgstattuple.html)                  | 1.5             | Отображение статистики на уровне кортежей|
 > |[plpgsql](https://www.postgresql.org/docs/11/plpgsql.html)                      | 1,0             | Процедурный язык PL/pgSQL|
@@ -134,6 +132,27 @@ PostgreSQL предоставляет возможность расширить 
 
 Если вы планируете использовать эти два расширения, рекомендуется развернуть серверы с помощью [интеграции с виртуальной](concepts-networking.md) сетью. По умолчанию интеграция с виртуальной сетью разрешает подключения между серверами в виртуальной сети. Для настройки доступа можно также использовать [группы безопасности сети VNet](../../virtual-network/manage-network-security-group.md) .
 
+## <a name="pg_cron"></a>pg_cron
+
+[pg_cron](https://github.com/citusdata/pg_cron/tree/b6e7dc9627515bf00e2086f168b3faa660e5fd36) — это простой планировщик заданий на основе cron для PostgreSQL, который работает в базе данных как расширение. Расширение pg_cron можно использовать для выполнения запланированных задач обслуживания в базе данных PostgreSQL. Например, можно запустить периодическую очистки таблицы или удалить старые задания данных.
+
+`pg_cron` может выполнять несколько заданий параллельно, но в каждый момент времени выполняется не более одного экземпляра задания. Если второй запуск должен начаться до завершения первого, второй запуск помещается в очередь и запускается сразу после завершения первого выполнения. Это гарантирует, что задания выполняются в точном количестве раз по расписанию и не выполняются одновременно с ними.
+
+Некоторые примеры.
+
+Удаление старых данных в субботу в 3:10:30 (GMT)
+```
+SELECT cron.schedule('30 3 * * 6', $$DELETE FROM events WHERE event_time < now() - interval '1 week'$$);
+```
+Запуск чистильщика каждый день в 10:8:00 (GMT)
+```
+SELECT cron.schedule('0 10 * * *', 'VACUUM');
+```
+
+Чтобы отменять расписание всех задач от pg_cron
+```
+SELECT cron.unschedule(jobid) FROM cron.job;
+```
 
 ## <a name="pg_prewarm"></a>pg_prewarm
 

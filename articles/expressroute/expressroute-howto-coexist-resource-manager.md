@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 03/06/2021
 ms.author: duau
 ms.custom: seodec18
-ms.openlocfilehash: df88bd9a1d4901b348fbec47ea9e2946542a08e3
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: 15ec8417ba5e2858b45176f0a214f6126209f942
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102440094"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449753"
 ---
 # <a name="configure-expressroute-and-site-to-site-coexisting-connections-using-powershell"></a>Настройка параллельных подключений "сеть — сеть" и ExpressRoute с помощью PowerShell
 > [!div class="op_single_selector"]
@@ -262,11 +262,11 @@ VPN-подключение типа "сеть-сеть" можно настро�
    $p2sCertData = [System.Convert]::ToBase64String($p2sCertToUpload.RawData) 
    Add-AzVpnClientRootCertificate -VpnClientRootCertificateName $p2sCertFullName -VirtualNetworkGatewayname $azureVpn.Name -ResourceGroupName $resgrp.ResourceGroupName -PublicCertData $p2sCertData
    ```
+Дополнительные сведения см. в статье [Настройка подключения типа "точка — сеть" к виртуальной сети с помощью PowerShell](../vpn-gateway/vpn-gateway-howto-point-to-site-rm-ps.md).
 
 ## <a name="to-enable-transit-routing-between-expressroute-and-azure-vpn"></a>Включение транзитной маршрутизации между ExpressRoute и VPN Azure
 Если вы хотите разрешить подключение между одной из локальных сетей, подключенных к ExpressRoute, и другой локальной сетью, подключенной к VPN-подключению типа "сеть — сеть", необходимо настроить [сервер маршрутизации Azure](../route-server/expressroute-vpn-support.md).
 
-Дополнительные сведения см. в статье [Настройка подключения типа "точка — сеть" к виртуальной сети с помощью PowerShell](../vpn-gateway/vpn-gateway-howto-point-to-site-rm-ps.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения об ExpressRoute см. в статье [Вопросы и ответы по ExpressRoute](expressroute-faqs.md).

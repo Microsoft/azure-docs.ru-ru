@@ -8,14 +8,14 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: speech-service
 ms.topic: conceptual
-ms.date: 12/07/2020
+ms.date: 02/24/2021
 ms.author: alexeyo
-ms.openlocfilehash: f5566276f4555e2480434e385bf2129f5b8cdd24
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: f6c7ec3f66d0ab9186645654adf3c062c241e5d0
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101699986"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449855"
 ---
 # <a name="speech-services-quotas-and-limits"></a>Квоты и ограничения службы "Речь"
 
@@ -30,7 +30,9 @@ ms.locfileid: "101699986"
 
 | Quota | Бесплатный (F0)<sup>1</sup> | Standard (S0) |
 |--|--|--|
-| **Ограничение параллельных запросов (базовые и пользовательские модели)** | 1 | 20 (значение по умолчанию) |
+| **Ограничение одновременных запросов — базовая модель** | 1 | 100 (значение по умолчанию) |
+| Регулировк | Нет<sup>2</sup> | Да<sup>2</sup> |
+| **Ограничение одновременных запросов — настраиваемая модель** | 1 | 20 (значение по умолчанию) |
 | Регулировк | Нет<sup>2</sup> | Да<sup>2</sup> |
 
 #### <a name="batch-transcription"></a>Пакетное транскрибирование

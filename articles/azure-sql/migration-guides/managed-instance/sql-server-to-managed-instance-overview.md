@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 02/18/2020
-ms.openlocfilehash: 1f619e1eac58f70642117dabafc266d1bc250609
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 59c000a816d55d248febb841b695d366cb9979cc
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101690419"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455235"
 ---
 # <a name="migration-overview-sql-server-to-sql-managed-instance"></a>Общие сведения о миграции: SQL Server в SQL Управляемый экземпляр
 [!INCLUDE[appliesto--sqlmi](../../includes/appliesto-sqlmi.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "101690419"
 Вы можете выбрать ресурсы для вычислений и хранения во время развертывания, а затем изменить их после использования [портал Azure](../../database/scale-resources.md) без простоя приложения. 
 
 > [!IMPORTANT]
-> Любое расхождение в [требованиях к виртуальной сети для управляемого экземпляра](../../managed-instance/connectivity-architecture-overview.md#network-requirements) может препятствовать созданию новых экземпляров или использованию существующих. Узнайте больше о [создании новых](../../managed-instance/virtual-network-subnet-create-arm-template.md)   и [настройке существующих](../../managed-instance/vnet-existing-add-subnet.md?branch=release-ignite-arc-data)   сетей. 
+> Любое расхождение в [требованиях к виртуальной сети для управляемого экземпляра](../../managed-instance/connectivity-architecture-overview.md#network-requirements) может препятствовать созданию новых экземпляров или использованию существующих. Узнайте больше о [создании новых](../../managed-instance/virtual-network-subnet-create-arm-template.md)   и [настройке существующих](../../managed-instance/vnet-existing-add-subnet.md)   сетей. 
 
 ### <a name="sql-server-vm-alternative"></a>Альтернативная SQL Server ВМ
 
@@ -183,7 +183,7 @@ SQL Server функции высокого уровня доступности A
 
 Кроме того, можно использовать [служебную программу PowerShell](https://github.com/microsoft/DataMigrationTeam/tree/master/IP%20and%20Scripts/MoveLogins) , разработанную специально для архитекторов Microsoft Data Migration Architect. Программа использует PowerShell для создания скрипта T-SQL для повторного создания имен входа и выбора пользователей базы данных из источника в целевой объект. Средство автоматически сопоставляет учетные записи Windows AD с учетными записями Azure AD и может выполнить поиск имени участника-пользователя для каждого входа в исходную Active Directory. Средство создает скрипты для пользовательских ролей сервера и базы данных, а также для членства в роли, роли базы данных и разрешений пользователей. Автономные базы данных в настоящее время не поддерживаются, и скрипты имеют только подмножество возможных SQL Server разрешений. 
 
-#### <a name="encryption"></a>Шифрование
+#### <a name="encryption"></a>Encryption
 
 При миграции баз данных, защищенных  [прозрачное шифрование данных](../../database/transparent-data-encryption-tde-overview.md),   в управляемый экземпляр с помощью собственного параметра восстановления, *перед* восстановлением базы данных [перенесите соответствующий сертификат](../../managed-instance/tde-certificate-migrate.md) из исходного SQL Server в целевой управляемый экземпляр SQL. 
 
