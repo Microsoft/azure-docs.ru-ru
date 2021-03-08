@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 07/14/2020
-ms.openlocfilehash: 8c5b4eac17b4c7ae9b4081d0eb9118285dc74bd5
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: e32bf95ef52fdd081eeaa476f44bf5dab99657d6
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102030965"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102452124"
 ---
 # <a name="send-log-data-to-azure-monitor-with-the-http-data-collector-api-public-preview"></a>Отправка данных журналов в Azure Monitor c помощью API сборщика данных HTTP (общедоступная предварительная версия)
 В этой статье показано, как с помощью API сборщика данных HTTP отправлять данные журналов в Azure Monitor из клиента REST API.  Здесь также описано, как отформатировать данные, собранные скриптом или приложением, добавить их в запрос и авторизовать этот запрос в Azure Monitor.  В этой статье приведены примеры для PowerShell, C# и Python.
@@ -650,7 +650,7 @@ public class ApiExample {
 |---|---|---|
 | [Пользовательские события](../app/api-custom-events-metrics.md?toc=%2Fazure%2Fazure-monitor%2Ftoc.json#properties): получение машинного кода на основе пакета SDK в Application Insights | Application Insights, обычно инструментированный с помощью пакета SDK в приложении, предлагает возможность отправки пользовательских данных через пользовательские события. | <ul><li> Данные, создаваемые в приложении, но не подобранные пакетом SDK с помощью одного из типов данных по умолчанию (запросы, зависимости, исключения и т. д.).</li><li> Данные, наиболее часто связанные с другими данными приложений в Application Insights </li></ul> |
 | API сборщика данных в журналах Azure Monitor | API сборщика данных в журналах Azure Monitor — это полностью открытый способ приема данных. Все данные, отформатированные в объекте JSON, можно отправить здесь. После отправки он будет обработан и доступен в журналах для сопоставления с другими данными в журналах или с другими Application Insights данными. <br/><br/> Вы довольно просто отправляете данные в виде файлов в большой двоичный объект BLOB-объектов Azure, откуда эти файлы будут обрабатываться и отправлены в Log Analytics. Пример реализации такого конвейера см. в [этой](./create-pipeline-datacollector-api.md) статье. | <ul><li> Данные, которые не обязательно создаются в приложении, оснащенном в Application Insights.</li><li> Примеры включают таблицы подстановок и фактов, ссылочные данные, предварительно агрегированные статистические данные и т. д. </li><li> Предназначен для данных, на которые будут пересекаться другие Azure Monitor данные (Application Insights, другие типы данных журналов, центр безопасности, контейнеры и другие виртуальные машины и т. д.). </li></ul> |
-| [Azure Data Explorer](/azure/data-explorer/ingest-data-overview) | Azure обозреватель данных (ADX) — это платформа данных, которая обеспечивает работу Application Insights аналитики и журналов Azure Monitor. Теперь в общедоступной версии ("GA") использование платформы данных в ее необработанной форме обеспечивает полную гибкость (но требует дополнительных затрат на управление) в кластере (Kubernetes RBAC, скорость хранения, схема и т. д.). ADX предоставляет много [вариантов приема](/azure/data-explorer/ingest-data-overview#ingestion-methods) , включая файлы [CSV, TSV и JSON](/azure/kusto/management/mappings?branch=master) . | <ul><li> Данные, которые не будут сопоставляться с другими данными в разделе Application Insights или журналы. </li><li> В журналах Azure Monitor данные, для которых требуются расширенные возможности приема или обработки, недоступны в настоящее время. </li></ul> |
+| [Azure Data Explorer](/azure/data-explorer/ingest-data-overview) | Azure обозреватель данных (ADX) — это платформа данных, которая обеспечивает работу Application Insights аналитики и журналов Azure Monitor. Теперь в общедоступной версии ("GA") использование платформы данных в ее необработанной форме обеспечивает полную гибкость (но требует дополнительных затрат на управление) в кластере (Kubernetes RBAC, скорость хранения, схема и т. д.). ADX предоставляет много [вариантов приема](/azure/data-explorer/ingest-data-overview#ingestion-methods) , включая файлы [CSV, TSV и JSON](/azure/kusto/management/mappings) . | <ul><li> Данные, которые не будут сопоставляться с другими данными в разделе Application Insights или журналы. </li><li> В журналах Azure Monitor данные, для которых требуются расширенные возможности приема или обработки, недоступны в настоящее время. </li></ul> |
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

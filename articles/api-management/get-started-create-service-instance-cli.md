@@ -1,5 +1,5 @@
 ---
-title: Краткое руководство. Создание экземпляра службы "Управление API Azure" с помощью CLI (предварительная версия)
+title: Краткое руководство. Создание экземпляра службы "Управление API Azure" с помощью CLI
 description: Создание экземпляра службы "Управление API Azure" с помощью Azure CLI
 author: dlepow
 ms.service: api-management
@@ -7,18 +7,18 @@ ms.topic: quickstart
 ms.custom: ''
 ms.date: 09/10/2020
 ms.author: apimpm
-ms.openlocfilehash: 863cb6cd10664e14966898045cb2b1861ef75b9f
-ms.sourcegitcommit: 230d5656b525a2c6a6717525b68a10135c568d67
+ms.openlocfilehash: 72d1faac02a21f23d46eb992af1d501bca89e71f
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94887456"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101688082"
 ---
-# <a name="quickstart-create-a-new-azure-api-management-service-instance-by-using-the-azure-cli-preview"></a>Краткое руководство. Создание экземпляра службы "Управление API Azure" с помощью Azure CLI (предварительная версия)
+# <a name="quickstart-create-a-new-azure-api-management-service-instance-by-using-the-azure-cli"></a>Краткое руководство. Создание экземпляра службы "Управление API Azure" с помощью Azure CLI
 
 Служба управления API Azure помогает организациям публиковать API-интерфейсы для внешних пользователей, партнеров и собственных разработчиков, раскрывая таким образом потенциал своих данных и услуг. Служба управления API предоставляет базовые возможности для успешного выполнения программы API за счет привлечения разработчиков, бизнес-аналитики, анализа, безопасности и защищенности. Служба "Управление API" позволяет создавать современные шлюзы API для существующих серверных служб, размещенных в любом месте, и управлять ими. Дополнительные сведения см. в статье [Общие сведения о Службе контейнеров Azure](api-management-key-concepts.md).
 
-В этом кратком руководстве описаны шаги по созданию экземпляра службы "Управление API" с помощью команд [az apim](/cli/azure/apim) в Azure CLI. Команды в группе `az apim` в настоящее время доступны в режиме предварительной версии и могут быть изменены или удалены в будущем выпуске.
+В этом кратком руководстве описаны шаги по созданию экземпляра службы "Управление API" с помощью команд [az apim](/cli/azure/apim) в Azure CLI.
 
 [!INCLUDE [quickstarts-free-trial-note](../../includes/quickstarts-free-trial-note.md)]
 

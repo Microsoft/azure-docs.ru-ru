@@ -6,14 +6,14 @@ author: nolavime
 ms.author: v-jysur
 ms.date: 05/24/2018
 ms.custom: references_regions
-ms.openlocfilehash: ac5d864d98742c6884f9511b6956e4166e2c19da
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 30be0343b7c3282e3ce4da165225ab8209d07f4a
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102037478"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102452413"
 ---
-# <a name="connect-azure-to-itsm-tools-by-using-it-service-management-connector"></a>Подключение Azure к средствам ITSM с помощью Соединитель управления ИТ-услугами
+# <a name="connect-azure-to-itsm-tools-by-using-it-service-management-solution"></a>Подключение Azure к средствам ITSM с помощью решения для управления ИТ
 
 :::image type="icon" source="media/itsmc-overview/itsmc-symbol.png":::
 

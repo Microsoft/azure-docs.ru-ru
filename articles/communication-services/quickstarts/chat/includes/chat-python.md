@@ -10,12 +10,12 @@ ms.date: 9/1/2020
 ms.topic: include
 ms.custom: include file
 ms.author: mikben
-ms.openlocfilehash: 2b7d00335253772683b867acf0765b77fc493e79
-ms.sourcegitcommit: 4bee52a3601b226cfc4e6eac71c1cb3b4b0eafe2
+ms.openlocfilehash: 0225c948fddf65b9312c689144ecc567a70aa27e
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94523824"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750490"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 Перед началом работы нужно сделать следующее:
@@ -42,6 +42,7 @@ import os
 # Add required client library components from quickstart here
 
 try:
+    print('Azure Communication Services - Chat Quickstart')
     # Quickstart code goes here
 except Exception as ex:
     print('Exception:')
@@ -69,15 +70,18 @@ pip install azure-communication-chat
 
 Чтобы создать клиент чата, вы будете использовать конечную точку службы коммуникации и `Access Token`, который был создан в рамках предварительных требований. Дополнительные сведения о маркерах доступа пользователей см. [здесь](../../access-tokens.md).
 
+В этом кратком руководстве не рассматривается создание уровня служб для управления маркерами для приложения чата, хотя это и рекомендуется. Дополнительные сведения см. в этой документации об [архитектуре чатов](../../../concepts/chat/concepts.md)
+
 ```console
 pip install azure-communication-administration
 ```
 
 ```python
-from azure.communication.chat import ChatClient, CommunicationUserCredential
+from azure.communication.chat import ChatClient, CommunicationTokenCredential, CommunicationTokenRefreshOptions
 
 endpoint = "https://<RESOURCE_NAME>.communication.azure.com"
-chat_client = ChatClient(endpoint, CommunicationUserCredential(<Access Token>))
+refresh_options = CommunicationTokenRefreshOptions(<Access Token>)
+chat_client = ChatClient(endpoint, CommunicationTokenCredential(refresh_options))
 ```
 
 ## <a name="start-a-chat-thread"></a>Запуск потока чата
@@ -85,105 +89,274 @@ chat_client = ChatClient(endpoint, CommunicationUserCredential(<Access Token>))
 Для создания потока чата используйте метод `create_chat_thread`.
 
 - Для указания раздела в этом чате используйте `topic`. Раздел можно обновить после создания потока чата с помощью функции `update_thread`.
-- Используйте `members`, чтобы получить список `ChatThreadMember`, добавляемых в поток чата. `ChatThreadMember` принимает объект `CommunicationUser` типа `user`, который был получен после [создания пользователя](../../access-tokens.md#create-an-identity).
+- Используйте `thread_participants`, чтобы получить список `ChatThreadParticipant`, добавляемых в поток чата. `ChatThreadParticipant` принимает объект `CommunicationUserIdentifier` типа `user`, который был получен после [создания пользователя](../../access-tokens.md#create-an-identity).
+- Используйте `repeatability_request_id`, чтобы указать повторяемость запроса. Клиент может сделать запрос несколько раз с одним и тем же Repeatability-Request-ID и получить соответствующий ответ, при этом серверу не нужно выполнять запрос несколько раз.
 
-Ответ `chat_thread_client`, который используется для выполнения операций с созданным потоком чата для добавления участников в поток, отправки, удаления сообщения и т. д. Он содержит свойство `thread_id`, которое является уникальным идентификатором потока чата.
+Ответ `chat_thread_client` используется для выполнения операций с созданным потоком чата, например для добавления участников в поток, отправки, удаления сообщения и т. д. Он содержит свойство `thread_id`, которое является уникальным идентификатором потока чата.
 
+#### <a name="without-repeatability-request-id"></a>Без идентификатора Repeatability-Request-ID
 ```python
 from datetime import datetime
-from azure.communication.chat import ChatThreadMember
+from azure.communication.chat import ChatThreadParticipant
 
 topic="test topic"
-thread_members=[ChatThreadMember(
+participants = [ChatThreadParticipant(
     user=user,
     display_name='name',
     share_history_time=datetime.utcnow()
 )]
-chat_thread_client = chat_client.create_chat_thread(topic, thread_members)
+
+chat_thread_client = chat_client.create_chat_thread(topic, participants)
+```
+
+#### <a name="with-repeatability-request-id"></a>С идентификатором Repeatability-Request-ID
+```python
+from datetime import datetime
+from azure.communication.chat import ChatThreadParticipant
+
+topic="test topic"
+participants = [ChatThreadParticipant(
+    user=user,
+    display_name='name',
+    share_history_time=datetime.utcnow()
+)]
+
+repeatability_request_id = 'b66d6031-fdcc-41df-8306-e524c9f226b8' # some unique identifier
+chat_thread_client = chat_client.create_chat_thread(topic, participants, repeatability_request_id)
 ```
 
 ## <a name="get-a-chat-thread-client"></a>Получение клиента потока чата
-Метод get_chat_thread_client возвращает клиент потока для потока, который уже существует. Его можно использовать для выполнения операций в созданном потоке: добавления участников, отправки сообщения и т. д. thread_id — уникальный идентификатор имеющегося потока чата.
+Метод `get_chat_thread_client` возвращает клиент потока для имеющегося потока. Его можно использовать для выполнения операций в созданном потоке: добавления участников, отправки сообщения и т. д. Идентификатор thread_id — это уникальный идентификатор имеющегося потока чата.
 
 ```python
-thread_id = 'id'
+thread_id = chat_thread_client.thread_id
 chat_thread_client = chat_client.get_chat_thread_client(thread_id)
+```
+
+## <a name="list-all-chat-threads"></a>Перечисление всех потоков чата
+Метод `list_chat_threads` возвращает итератор типа `ChatThreadInfo`. Его можно использовать для перечисления всех потоков чата.
+
+- Используйте `start_time` для указания самой ранней точки во времени, вплоть до которой будут получены потоки чата.
+- Используйте `results_per_page`, чтобы указать максимальное число возвращаемых потоков чата для каждой страницы.
+
+```python
+from datetime import datetime, timedelta
+import pytz
+
+start_time = datetime.utcnow() - timedelta(days=2)
+start_time = start_time.replace(tzinfo=pytz.utc)
+chat_thread_infos = chat_client.list_chat_threads(results_per_page=5, start_time=start_time)
+
+for chat_thread_info_page in chat_thread_infos.by_page():
+    for chat_thread_info in chat_thread_info_page:
+        # Iterate over all chat threads
+        print("thread id:", chat_thread_info.id)
+```
+
+## <a name="delete-a-chat-thread"></a>Удаление беседы в чате
+Объект `delete_chat_thread` используется для удаления потока чата.
+
+- Используйте `thread_id` для указания thread_id существующего потока чата, который необходимо удалить
+
+```python
+thread_id = chat_thread_client.thread_id
+chat_client.delete_chat_thread(thread_id)
 ```
 
 ## <a name="send-a-message-to-a-chat-thread"></a>Отправка сообщения в поток чата
 
-Используйте метод `send_message` для отправки сообщения чата в созданный вами поток, идентифицируемый с помощью threadId.
+Используйте метод `send_message` для отправки сообщения в созданный вами поток чата, идентифицируемый с помощью thread_id.
 
 - Используйте `content`, чтобы указать содержимое сообщения в чате.
-- Используйте `priority`, чтобы указать уровень приоритета сообщения чата, например "нормальный" или "высокий". Это свойство можно использовать для отображения в приложении индикатора пользовательского интерфейса, чтобы привлечь внимание к сообщению или выполнить пользовательскую бизнес-логику.
-- Используйте `senderDisplayName`, чтобы указать отображаемое имя отправителя.
+- Используйте `chat_message_type`, чтобы указать тип содержимого сообщения. Возможные значения: "Text" и "HTML". Если этот параметр не задан, по умолчанию используется значение "Text".
+- Используйте `sender_display_name`, чтобы указать отображаемое имя отправителя.
 
-`SendChatMessageResult` ответа содержит идентификатор, который является уникальным идентификатором сообщения.
+Ответ — это идентификатор типа `str`, то есть уникальный идентификатор сообщения.
 
+#### <a name="message-type-not-specified"></a>Тип сообщения не указан
 ```python
-from azure.communication.chat import ChatMessagePriority
+chat_thread_client = chat_client.create_chat_thread(topic, participants)
 
 content='hello world'
-priority=ChatMessagePriority.NORMAL
 sender_display_name='sender name'
 
-send_message_result = chat_thread_client.send_message(content, priority=priority, sender_display_name=sender_display_name)
+send_message_result_id = chat_thread_client.send_message(content=content, sender_display_name=sender_display_name)
+```
+
+#### <a name="message-type-specified"></a>Тип сообщения указан
+```python
+from azure.communication.chat import ChatMessageType
+
+content='hello world'
+sender_display_name='sender name'
+
+# specify chat message type with pre-built enumerations
+send_message_result_id_w_enum = chat_thread_client.send_message(content=content, sender_display_name=sender_display_name, chat_message_type=ChatMessageType.TEXT)
+
+# specify chat message type as string
+send_message_result_id_w_str = chat_thread_client.send_message(content=content, sender_display_name=sender_display_name, chat_message_type='text')
+```
+
+## <a name="get-a-specific-chat-message-from-a-chat-thread"></a>Получение определенного сообщения чата из потока чата
+Функцию `get_message` можно использовать для получения определенного сообщения, идентифицируемого с помощью message_id
+
+- Используйте `message_id`, чтобы указать идентификатор сообщения.
+
+Ответ типа `ChatMessage` содержит все сведения, связанные с одним сообщением.
+
+```python
+message_id = send_message_result_id
+chat_message = chat_thread_client.get_message(message_id)
 ```
 
 ## <a name="receive-chat-messages-from-a-chat-thread"></a>Получение сообщений из потока чата
 
 Кроме того, можно получать сообщения чата, выполняя опрос метода `list_messages` через определенные интервалы.
 
+- Используйте `results_per_page`, чтобы указать максимальное число возвращаемых сообщений для каждой страницы.
+- Используйте `start_time` для указания самой ранней точки во времени, вплоть до которой будут получены сообщения.
+
 ```python
-chat_messages = chat_thread_client.list_messages()
+chat_messages = chat_thread_client.list_messages(results_per_page=1, start_time=start_time)
+for chat_message_page in chat_messages.by_page():
+    for chat_message in chat_message_page:
+        print('ChatMessage: ', chat_message)
+        print('ChatMessage: ', chat_message.content.message)
 ```
+
 `list_messages` возвращает последнюю версию сообщения, включая все изменения или удаления, произошедшие с сообщением, с помощью `update_message` и `delete_message`. Для удаленных сообщений `ChatMessage.deleted_on` возвращает значение даты и времени, указывающее, когда это сообщение было удалено. Для измененных сообщений `ChatMessage.edited_on` возвращает значение даты и времени, указывающее, когда это сообщение было изменено. Доступ к исходному времени создания сообщения можно получить с помощью `ChatMessage.created_on`, который можно использовать для упорядочения сообщений.
 
 `list_messages` возвращает различные типы сообщений, которые могут быть идентифицированы с помощью `ChatMessage.type`. Это следующие типы:
 
-- `Text`: обычное сообщение чата, отправляемое участником потока.
+- `ChatMessageType.TEXT`. Обычное сообщение чата, отправленное участником потока.
 
-- `ThreadActivity/TopicUpdate`: системное сообщение, указывающее на изменение темы.
+- `ChatMessageType.HTML`. HTML-сообщение чата, отправленное участником потока.
 
-- `ThreadActivity/AddMember`: системное сообщение о том, что один или несколько участников были добавлены в цепочку чата.
+- `ChatMessageType.TOPIC_UPDATED`: системное сообщение, указывающее на изменение темы.
 
-- `ThreadActivity/DeleteMember`: системное сообщение о том, что участник был удален из цепочки чата.
+- `ChatMessageType.PARTICIPANT_ADDED`. Системное сообщение о том, что один или несколько участников были добавлены в поток чата.
+
+- `ChatMessageType.PARTICIPANT_REMOVED`. Системное сообщение о том, что участник был удален из потока чата.
 
 Дополнительные сведения см. в разделе о [типах сообщений](../../../concepts/chat/concepts.md#message-types).
 
-## <a name="add-a-user-as-member-to-the-chat-thread"></a>Добавление пользователя в качестве участника в поток чата
+## <a name="update-topic-of-a-chat-thread"></a>Обновление темы потока чата
+Можно обновить тему потока чата с помощью метода `update_topic`
 
-После создания потока чата можно добавлять и удалять пользователей. Добавляя пользователей, вы предоставляете им доступ для возможности отправки сообщений в поток, а также добавления или удаления других участников. Перед вызовом метода `add_members` убедитесь, что вы получили новый маркер доступа и удостоверение для этого пользователя. Пользователю потребуется маркер доступа для инициализации своего клиента чата.
+```python
+topic = "updated thread topic"
+chat_thread_client.update_topic(topic=topic)
+updated_topic = chat_client.get_chat_thread(chat_thread_client.thread_id).topic
+print('Updated topic: ', updated_topic)
+```
 
-Используйте метод `add_members`, чтобы добавить участников потока в определяемый threadId поток.
+## <a name="update-a-message"></a>Обновление сообщения
+Можно обновить содержимое существующего сообщения с помощью метода `update_message`, идентифицируемого с помощью message_id
 
-- Используйте `members`, чтобы получить список участников, добавляемых в поток чата.
-- Свойство `user` (обязательное) — это значение `CommunicationUser`, полученное `CommunicationIdentityClient` при [создании пользователя](../../access-tokens.md#create-an-identity).
-- Свойство `display_name` (необязательное) — это отображаемое имя для участника потока.
-- Свойство `share_history_time` (необязательное) — это время, в течение которого участнику предоставляется доступ к журналу чата. Чтобы предоставить общий доступ к журналу с момента запуска потока чата, установите для этого свойства любую дату, равную или меньше времени создания потока. Чтобы не использовать журнал до момента добавления участника, задайте для него текущую дату. Чтобы предоставить общий доступ к части журнала, задайте для него промежуточную дату.
+- Используйте `message_id`, чтобы указать message_id
+- Используйте `content`, чтобы указать новое содержимое сообщения
+
+```python
+content = 'Hello world!'
+send_message_result_id = chat_thread_client.send_message(content=content, sender_display_name=sender_display_name)
+
+content = 'Hello! I am updated content'
+chat_thread_client.update_message(message_id=send_message_result_id, content=content)
+
+chat_message = chat_thread_client.get_message(send_message_result_id)
+print('Updated message content: ', chat_message.content.message)
+```
+
+## <a name="send-read-receipt-for-a-message"></a>Отправка уведомления о прочтении сообщения
+Метод `send_read_receipt` можно использовать для публикации события уведомления о прочтении в потоке от имени пользователя.
+
+- Используйте `message_id`, чтобы указать идентификатор последнего сообщения, прочитанного текущим пользователем.
+
+```python
+message_id=send_message_result_id
+chat_thread_client.send_read_receipt(message_id=message_id)
+```
+
+## <a name="list-read-receipts-for-a-chat-thread"></a>Получение списка уведомлений о прочтении для потока чата
+Метод `list_read_receipts` можно использовать для получения уведомлений о прочтении для потока.
+
+- Используйте `results_per_page`, чтобы указать максимальное количество возвращаемых уведомлений о прочтении сообщений чата для каждой страницы.
+- Используйте `skip`, чтобы указать пропуск уведомлений о прочтении сообщений чата вплоть до указанной позиции в ответе.
+
+```python
+read_receipts = chat_thread_client.list_read_receipts(results_per_page=2, skip=0)
+
+for read_receipt_page in read_receipts.by_page():
+    for read_receipt in read_receipt_page:
+        print('ChatMessageReadReceipt: ', read_receipt)
+```
+
+## <a name="send-typing-notification"></a>Отправка уведомления о вводе
+Метод `send_typing_notification` можно использовать для публикации события уведомления о вводе в потоке от имени пользователя.
+
+```python
+chat_thread_client.send_typing_notification()
+```
+
+## <a name="delete-message"></a>Удаление сообщения
+Метод `delete_message` можно использовать для удаления сообщения, идентифицируемого с помощью message_id
+
+- Используйте `message_id`, чтобы указать message_id
+
+```python
+message_id=send_message_result_id
+chat_thread_client.delete_message(message_id=message_id)
+```
+
+## <a name="add-a-user-as-participant-to-the-chat-thread"></a>Добавление пользователя в качестве участника в поток чата
+
+После создания потока чата можно добавлять и удалять пользователей. Добавляя пользователей, вы предоставляете им возможность отправлять сообщения в поток чата, а также добавлять или удалять других участников. Перед вызовом метода `add_participant` убедитесь, что вы получили новый маркер доступа и удостоверение для этого пользователя. Пользователю потребуется маркер доступа для инициализации своего клиента чата.
+
+Используйте метод `add_participant`, чтобы добавить участников в поток, идентифицируемый с помощью thread_id.
+
+- Используйте `thread_participant`, чтобы указать участника, который будет добавлен в поток чата;
+- Свойство `user` (обязательное) — это значение `CommunicationUserIdentifier`, полученное `CommunicationIdentityClient` при [создании пользователя](../../access-tokens.md#create-an-identity).
+- `display_name` (необязательно) — это отображаемое имя для участника потока.
+- `share_history_time` (необязательно) — это время, в течение которого участнику предоставляется доступ к журналу чата. Чтобы предоставить общий доступ к журналу с момента запуска потока чата, установите для этого свойства любую дату, равную или меньше времени создания потока. Чтобы в журнале отображались только записи с момента добавления участника, задайте для свойства текущую дату. Чтобы предоставить общий доступ к части журнала, задайте для него промежуточную дату.
 
 ```python
 new_user = identity_client.create_user()
 
-from azure.communication.chat import ChatThreadMember
+from azure.communication.chat import ChatThreadParticipant
 from datetime import datetime
-member = ChatThreadMember(
+
+new_chat_thread_participant = ChatThreadParticipant(
     user=new_user,
     display_name='name',
     share_history_time=datetime.utcnow())
-thread_members = [member]
-chat_thread_client.add_members(thread_members)
+
+chat_thread_client.add_participant(new_chat_thread_participant)
 ```
+
+В поток чата также можно добавить несколько пользователей с помощью метода `add_participants`, если для всех пользователей доступен новый маркер доступа и идентификатор.
+
+```python
+from azure.communication.chat import ChatThreadParticipant
+from datetime import datetime
+
+new_chat_thread_participant = ChatThreadParticipant(
+        user=self.new_user,
+        display_name='name',
+        share_history_time=datetime.utcnow())
+thread_participants = [new_chat_thread_participant] # instead of passing a single participant, you can pass a list of participants
+chat_thread_client.add_participants(thread_participants)
+```
+
 
 ## <a name="remove-user-from-a-chat-thread"></a>Удаление пользователя из потока чата
 
-Подобно добавлению участника, можно удалить элементы из потока чата. Для удаления необходимо отслеживать идентификаторы добавленных участников.
+Аналогично тому, как выполняется добавление участников, вы можете удалять их из потока. Чтобы удалить участника, отследите идентификаторы добавленных участников.
 
-Используйте метод `remove_member`, чтобы удалить участников потока из определяемого threadId потока.
-- Свойство `user` — это пользователь CommunicationUser, удаляемый из потока.
+Используйте метод `remove_participant`, чтобы удалить участников из потока, идентифицируемого с помощью threadId.
+- `user` — это объект `CommunicationUserIdentifier`, который будет удален из потока.
 
 ```python
-chat_thread_client.remove_member(user)
+chat_thread_client.remove_participant(new_user)
 ```
 
 ## <a name="run-the-code"></a>Выполнение кода
