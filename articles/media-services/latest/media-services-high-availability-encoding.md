@@ -13,12 +13,12 @@ ms.topic: conceptual
 ms.custom: ''
 ms.date: 08/31/2020
 ms.author: inhenkel
-ms.openlocfilehash: be3fd9b3d910e64245a1b52056499bbfba2e6379
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.openlocfilehash: 81feb5b95578cedea7bf368aa1e0d6c2e9117077
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98955857"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102456017"
 ---
 # <a name="high-availability-with-media-services-and-video-on-demand-vod"></a>Высокий уровень доступности с помощью служб мультимедиа и видео по запросу (VOD)
 
@@ -59,23 +59,23 @@ ms.locfileid: "98955857"
 
 ### <a name="regions"></a>Регионы
 
-* [Создайте](https://review.docs.microsoft.com/azure/media-services/latest/create-account-cli-how-to) две (или более) учетные записи служб мультимедиа Azure. Две учетные записи должны находиться в разных регионах. Дополнительные сведения см. [в разделе регионы, в которых развертывается служба служб мультимедиа Azure](https://azure.microsoft.com/global-infrastructure/services/?products=media-services).
-* Отправьте носитель в тот же регион, из которого вы планируете отправить задание. Дополнительные сведения о том, как начать кодирование, см. в разделе [Создание входных данных задания с помощью URL-адреса HTTPS](https://review.docs.microsoft.com/azure/media-services/latest/job-input-from-http-how-to) или [Создание входных данных задания из локального файла](https://review.docs.microsoft.com/azure/media-services/latest/job-input-from-local-file-how-to).
-* Если необходимо повторно отправить [Задание](https://review.docs.microsoft.com/azure/media-services/latest/transforms-jobs-concept) в другой регион, можно использовать `JobInputHttp` или использовать `Copy-Blob` для копирования данных из контейнера исходного ресурса в контейнер ресурса в альтернативном регионе.
+* [Создайте](/azure/media-services/latest/create-account-cli-how-to) две (или более) учетные записи служб мультимедиа Azure. Две учетные записи должны находиться в разных регионах. Дополнительные сведения см. [в разделе регионы, в которых развертывается служба служб мультимедиа Azure](https://azure.microsoft.com/global-infrastructure/services/?products=media-services).
+* Отправьте носитель в тот же регион, из которого вы планируете отправить задание. Дополнительные сведения о том, как начать кодирование, см. в разделе [Создание входных данных задания с помощью URL-адреса HTTPS](/azure/media-services/latest/job-input-from-http-how-to) или [Создание входных данных задания из локального файла](/azure/media-services/latest/job-input-from-local-file-how-to).
+* Если необходимо повторно отправить [Задание](/azure/media-services/latest/transforms-jobs-concept) в другой регион, можно использовать `JobInputHttp` или использовать `Copy-Blob` для копирования данных из контейнера исходного ресурса в контейнер ресурса в альтернативном регионе.
 
 ### <a name="monitoring"></a>Наблюдение
 
 * Подпишитесь на `JobStateChange` сообщения в каждой учетной записи с помощью службы "Сетка событий Azure".
-    * [Регистрация событий](https://review.docs.microsoft.com/azure/media-services/latest/reacting-to-media-services-events) с помощью портал Azure или интерфейса командной строки (это также можно сделать с помощью пакета SDK для управления сеткой событий).
+    * [Регистрация событий](/azure/media-services/latest/reacting-to-media-services-events) с помощью портал Azure или интерфейса командной строки (это также можно сделать с помощью пакета SDK для управления сеткой событий).
     * Используйте [пакет SDK Microsoft. Azure. EventGrid](https://www.nuget.org/packages/Microsoft.Azure.EventGrid/) (который поддерживает события служб мультимедиа в собственном виде).
     * Вы также можете использовать события службы "Сетка событий" с помощью функций Azure.
 
     Дополнительные сведения
 
-    * См. [Пример "Audio Analytics](https://review.docs.microsoft.com/azure/media-services/latest/transforms-jobs-concept) ", в котором показано, как отслеживать задание с помощью службы "Сетка событий Azure", включая добавление резервной стратегии в случае задержки сообщений службы "Сетка событий Azure" по какой-либо причине.
-    * Ознакомьтесь со [схемами службы "Сетка событий Azure" для событий служб мультимедиа](https://review.docs.microsoft.com/azure/media-services/latest/media-services-event-schemas).
+    * См. [Пример "Audio Analytics](/azure/media-services/latest/transforms-jobs-concept) ", в котором показано, как отслеживать задание с помощью службы "Сетка событий Azure", включая добавление резервной стратегии в случае задержки сообщений службы "Сетка событий Azure" по какой-либо причине.
+    * Ознакомьтесь со [схемами службы "Сетка событий Azure" для событий служб мультимедиа](/azure/media-services/latest/media-services-event-schemas).
 
-* При создании [задания](https://review.docs.microsoft.com/azure/media-services/latest/transforms-jobs-concept):
+* При создании [задания](/azure/media-services/latest/transforms-jobs-concept):
     * Случайный выбор учетной записи из списка используемых в данный момент учетных записей (этот список обычно содержит обе учетные записи, но при обнаружении проблем может содержать только одну учетную запись). Если список пуст, создайте предупреждение, чтобы оператор мог исследовать его.
     * Создайте запись для наблюдения за каждым заданием порядковых и используемым регионом или учетной записью.
 * Когда `JobStateChange` обработчик получает уведомление о том, что задание достигло запланированного состояния, запишите время, в которое он входит в запланированное состояние, а также используемую область или учетную запись.

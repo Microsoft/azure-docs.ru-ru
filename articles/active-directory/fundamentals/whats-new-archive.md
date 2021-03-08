@@ -13,12 +13,12 @@ ms.author: ajburnle
 ms.reviewer: dhanyahk
 ms.custom: it-pro, seo-update-azuread-jan, has-adal-ref
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e342adee715bfd1f178557268b9f4515572f0e9
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: a555d2813030daeca1f2abcdc4b7787444bd0614
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102177221"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102453025"
 ---
 # <a name="archive-for-whats-new-in-azure-active-directory"></a>Архив сведений о новых возможностях в Azure Active Directory
 
@@ -348,18 +348,6 @@ Azure AD Application Proxy теперь поддерживает веб-клие
 Документацию по всем приложениям можно также найти здесь. https://aka.ms/AppsTutorial
 
 Чтобы получить список приложений в коллекции приложений Azure AD, ознакомьтесь с подробными сведениями. https://aka.ms/AzureADAppRequest
-
----
-
-### <a name="new-provisioning-connectors-in-the-azure-ad-application-gallery---july-2020"></a>Новые соединители подготовки в коллекции приложений Azure AD — Июль 2020
-
-**Тип.** Новая функция.  
-**Категория службы.** Подготовка приложений.  
-**Возможности продукта.** Интеграция с решениями сторонних производителей.
-
-Теперь вы можете автоматизировать создание, обновление и удаление учетных записей пользователей для вновь интегрированного приложения [LinkedIn Learning](../saas-apps/linkedin-learning-provisioning-tutorial.md).
-
-Дополнительные сведения об усилении защиты организации с помощью автоматизированной подготовки учетных записей пользователей см. в статье [Автоматическая подготовка пользователей для приложений SaaS в Azure AD](../app-provisioning/user-provisioning.md).
 
 ---
 
@@ -938,7 +926,7 @@ Office запускает серию мобильных бизнес-прило�
 
 В апреле 2020 мы добавили в коллекцию приложений следующие 31 новые приложения с поддержкой федерации: 
 
-[Приложения синкропул](https://www.sincropool.com/), [смартдб](https://hibiki.dreamarts.co.jp/smartdb/trial/), [float](../saas-apps/float-tutorial.md), [LMS365](https://lms.365.systems/), [IWT](../saas-apps/iwt-procurement-suite-tutorial.md), [лунни](https://lunni.fi/) [,](https://hexaware.com/partnerships-and-alliances/digital-transformation-using-microsoft-azure/) [еасиссо для JIRA](../saas-apps/easysso-for-jira-tutorial.md), [Virtual Training Academy](https://vta.c3p.ca/app/en/openid?authenticate_with=microsoft), [Meraki](https://app.mover.io/login) [,](../saas-apps/meraki-dashboard-tutorial.md)честно говоря, Ally, Дутифлов [](https://speakerengage.com/login.php) [](https://review.docs.microsoft.com/azure/active-directory/saas-apps/trend-micro-tutorial) [,](../saas-apps/alertmedia-tutorial.md)алертмедиа [Microsoft 365 люди](../saas-apps/gr8-people-tutorial.md) [,](../saas-apps/honestly-tutorial.md) [gr8](../saas-apps/pendo-tutorial.md), [](https://app.dutyflow.nl/) [пендо,](../saas-apps/ally-tutorial.md) [гармонии](../saas-apps/harmony-tutorial.md), [хигхграунд Solutions](../saas-apps/timetabling-solutions-tutorial.md), тиметаблинг [](../saas-apps/nitro-productivity-suite-tutorial.md) [щелкните](../saas-apps/synchronet-click-tutorial.md), [Empower](https://www.made-in-office.com/en/) [, синчронет](../saas-apps/mongodb-cloud-tutorial.md) [изменить облако](../saas-apps/fortes-change-cloud-tutorial.md) [,](../saas-apps/tickitlms-learn-tutorial.md) [Fortes, litmus](../saas-apps/litmus-tutorial.md) [, GroupTalk,](../saas-apps/highground-tutorial.md)Frontify Cloud, MongoDB [, TickitLMS](https://recorder.grouptalk.com/) [, Coco](../saas-apps/frontify-tutorial.md).
+[Приложения синкропул](https://www.sincropool.com/), [смартдб](https://hibiki.dreamarts.co.jp/smartdb/trial/), [float](../saas-apps/float-tutorial.md), [LMS365](https://lms.365.systems/), [IWT](../saas-apps/iwt-procurement-suite-tutorial.md), [лунни](https://lunni.fi/) [,](https://hexaware.com/partnerships-and-alliances/digital-transformation-using-microsoft-azure/) [еасиссо для JIRA](../saas-apps/easysso-for-jira-tutorial.md), [Virtual Training Academy](https://vta.c3p.ca/app/en/openid?authenticate_with=microsoft), [Meraki](https://app.mover.io/login) [,](../saas-apps/meraki-dashboard-tutorial.md)честно говоря, Ally, Дутифлов [](https://speakerengage.com/login.php) [](/azure/active-directory/saas-apps/trend-micro-tutorial) [,](../saas-apps/alertmedia-tutorial.md)алертмедиа [Microsoft 365 люди](../saas-apps/gr8-people-tutorial.md) [,](../saas-apps/honestly-tutorial.md) [gr8](../saas-apps/pendo-tutorial.md), [](https://app.dutyflow.nl/) [пендо,](../saas-apps/ally-tutorial.md) [гармонии](../saas-apps/harmony-tutorial.md), [хигхграунд Solutions](../saas-apps/timetabling-solutions-tutorial.md), тиметаблинг [](../saas-apps/nitro-productivity-suite-tutorial.md) [щелкните](../saas-apps/synchronet-click-tutorial.md), [Empower](https://www.made-in-office.com/en/) [, синчронет](../saas-apps/mongodb-cloud-tutorial.md) [изменить облако](../saas-apps/fortes-change-cloud-tutorial.md) [,](../saas-apps/tickitlms-learn-tutorial.md) [Fortes, litmus](../saas-apps/litmus-tutorial.md) [, GroupTalk,](../saas-apps/highground-tutorial.md)Frontify Cloud, MongoDB [, TickitLMS](https://recorder.grouptalk.com/) [, Coco](../saas-apps/frontify-tutorial.md).
 
 Дополнительные сведения об этих приложениях см. в статье [Интеграция приложений SaaS с Azure Active Directory](../saas-apps/tutorial-list.md). Дополнительные сведения о том, как добавить приложение в коллекцию приложений Azure AD см. в [этой статье](../develop/v2-howto-app-gallery-listing.md).
 

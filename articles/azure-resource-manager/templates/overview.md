@@ -2,13 +2,13 @@
 title: Обзор шаблонов
 description: Описание преимуществ использования шаблонов Azure Resource Manager (шаблоны ARM) для развертывания ресурсов.
 ms.topic: conceptual
-ms.date: 03/03/2021
-ms.openlocfilehash: 7f850d06066a6892db9f17ae86a6bba9496bad58
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.date: 03/08/2021
+ms.openlocfilehash: 3a144b69f69c90b997b17d9526c9c3e0f259c554
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102046386"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455741"
 ---
 # <a name="what-are-arm-templates"></a>Что такое шаблоны ARM?
 
@@ -111,6 +111,15 @@ REQUEST BODY
 ```
 
 Обратите внимание, что **apiVersion** , заданный в шаблоне для ресурса, используется в качестве версии API для операции RESTful. Вы можете многократно развернуть шаблон и убедиться, что он будет продолжать работать. Используя ту же версию API, вам не нужно беспокоиться о критических изменениях, которые могут быть представлены в более поздних версиях.
+
+Чтобы развернуть шаблон, используйте любой из следующих параметров:
+
+* [Портал Azure](deploy-portal.md)
+* [Azure CLI](deploy-cli.md)
+* [PowerShell](deploy-powershell.md)
+* [REST API](deploy-rest.md)
+* [Кнопка в репозитории GitHub](deploy-to-azure-button.md)
+* [Azure Cloud Shell](deploy-cloud-shell.md);
 
 ## <a name="template-design"></a>Разработка шаблона
 

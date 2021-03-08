@@ -7,13 +7,13 @@ ms.author: bagol
 ms.service: azure-sentinel
 ms.subservice: azure-sentinel
 ms.topic: conceptual
-ms.date: 03/03/2021
-ms.openlocfilehash: c466d7717dd1dad0ea9ee3f44088d1400cee083f
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.date: 03/08/2021
+ms.openlocfilehash: c24512ad38f9397c9a40a85489c45fcb0de906b3
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102048188"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102453807"
 ---
 # <a name="whats-new-in-azure-sentinel"></a>Новые возможности в Azure Sentinel
 
@@ -32,9 +32,26 @@ ms.locfileid: "102048188"
 
 ## <a name="february-2021"></a>Февраль 2021 года
 
+- [Книга сертификации кибербезопасности дата_вступления_в_силу Model (КММК)](#cybersecurity-maturity-model-certification-cmmc-workbook)
 - [Сторонние соединители данных](#third-party-data-connectors)
 - [УЕБА Insights на странице сущностей](#ueba-insights-in-the-entity-page)
 - [Улучшенный поиск инцидентов](#improved-incident-search)
+
+### <a name="cybersecurity-maturity-model-certification-cmmc-workbook"></a>Книга сертификации кибербезопасности дата_вступления_в_силу Model (КММК)
+
+Книга Azure Sentinel КММК предоставляет механизм для просмотра запросов к журналам, согласованных с элементами управления КММК в портфеле Майкрософт, включая предложения безопасности Майкрософт, Office 365, группы, Intune, виртуальные рабочие столы Windows и многие другие.
+
+Книга КММК позволяет архитекторам безопасности, инженерам, аналитикам, менеджерам и ИТ-специалистам в области информационных технологий получить представление о состоянии безопасности облачных рабочих нагрузок. Существуют также рекомендации по выбору, проектированию, развертыванию и настройке предложений Майкрософт для выравнивания с соответствующими требованиями и методиками КММК.
+
+Даже если вы не обязаны соблюдать КММК, книга КММК полезна при создании центров операций безопасности, разработке оповещений, визуализации угроз и предоставлении сведений о рабочих нагрузках.
+
+Доступ к книге КММК в области **книги** Sentinel Azure. Выберите **шаблон** и выполните поиск по запросу **кммк**.
+
+Дополнительные сведения см. в разделе:
+
+- [Книга сертификации Azure Sentinel кибербезопасности дата_вступления_в_силу Model (КММК)](https://techcommunity.microsoft.com/t5/public-sector-blog/azure-sentinel-cybersecurity-maturity-model-certification-cmmc/ba-p/2110524)
+- [Руководство по Визуализация и мониторинг данных](tutorial-monitor-your-data.md)
+
 
 ### <a name="third-party-data-connectors"></a>Сторонние соединители данных
 
@@ -44,7 +61,7 @@ ms.locfileid: "102048188"
 - [Akamai Security Events](connect-akamai-security-events.md)
 - [Alsid for Active Directory](connect-alsid-active-directory.md)
 - [HTTP-сервер Apache](connect-apache-http-server.md)
-- [Aruba Клеарпасс](connect-aruba-clearpass.md)
+- [Aruba ClearPass](connect-aruba-clearpass.md)
 - [CylancePROTECT BlackBerry](connect-data-sources.md)
 - [Broadcom Symantec DLP](connect-broadcom-symantec-dlp.md)
 - [Cisco Фиреповер Естреамер](connect-data-sources.md)
@@ -64,7 +81,7 @@ ms.locfileid: "102048188"
 - [База знаний по управлению уязвимостью Qualys](connect-data-sources.md)
 - [Salesforce Service Cloud](connect-salesforce-service-cloud.md)
 - [Брандмауэр SonicWall](connect-data-sources.md)
-- [Sophos Cloud Оптикс](connect-sophos-cloud-optix.md)
+- [Sophos Cloud Optix](connect-sophos-cloud-optix.md)
 - [Squid Proxy](connect-squid-proxy.md)
 - [Endpoint Protection Symantec](connect-data-sources.md)
 - [Thycotic Secret Server](connect-thycotic-secret-server.md)

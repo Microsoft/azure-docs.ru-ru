@@ -10,7 +10,7 @@ ms.service: media-services ms.workload: media ms.tgt_pltfrm: na ms.devlang: na m
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 > [!NOTE]
-> Несмотря на то, что в этом учебнике используются примеры для [пакета SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.liveevent?view=azure-dotnet), общие шаги одинаковы для [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event) или других поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks).
+> Несмотря на то, что в этом учебнике используются примеры для [пакета SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.liveevent), общие шаги одинаковы для [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event) или других поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks).
 
 Службы мультимедиа можно использовать для доставки содержимого HTTP Live Streaming (HLS), MPEG-DASH и Smooth Streaming, зашифрованного с помощью 128-битных ключей шифрования AES. Они также включают в себя службу доставки ключей, которая доставляет ключи шифрования авторизованным пользователям. Если нужно динамически зашифровать видео с помощью Служб мультимедиа, свяжите ключ шифрования с указателем потоковой передачи, а также настройте политику ключа содержимого. Когда поток запрашивается проигрывателем, Службы мультимедиа используют указанный ключ для динамического шифрования содержимого с помощью AES-128. Чтобы расшифровать поток, проигрыватель запросит ключ у службы доставки ключей. Чтобы определить, есть ли у пользователя право на получение ключа, служба оценит политику ключа содержимого, заданную для него.
 

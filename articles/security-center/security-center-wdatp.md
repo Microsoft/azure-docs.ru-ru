@@ -5,14 +5,14 @@ author: memildin
 manager: rkarlin
 ms.service: security-center
 ms.topic: how-to
-ms.date: 02/15/2021
+ms.date: 03/08/2021
 ms.author: memildin
-ms.openlocfilehash: 475c7671636d3aac036e3da1392fc2da9b0a001f
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 17e54dfc5c369a8cbb35db50ff2cbab131d34c2d
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102176473"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102453773"
 ---
 # <a name="protect-your-endpoints-with-security-centers-integrated-edr-solution-microsoft-defender-for-endpoint"></a>Защитите свои конечные точки с помощью интегрированного решения ЕДР центра безопасности: защитник Майкрософт для конечной точки
 
@@ -33,12 +33,12 @@ ms.locfileid: "102176473"
 
 ## <a name="availability"></a>Доступность
 
-| Аспект                          | Подробнее                                                                                                                                                                                                                                                                                                       |
+| Аспект                          | Сведения                                                                                                                                                                                                                                                                                                       |
 |---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Состояние выпуска:                  | Общедоступная версия (GA)                                                                                                                                                                                                                                                                                      |
 | Цены                        | Требуется [Azure Defender для серверов](defender-for-servers-introduction.md)                                                                                                                                                                                                                                             |
 | Поддерживаемые платформы:            |  • Компьютеры Azure под Windows<br> • Компьютеры ARC в Azure под Windows|
-| Поддерживаемые версии Windows:  |  • **Общая доступность (общедоступная версия) —** обнаружение в Windows Server 2016, 2012 r2 и 2008 R2 с пакетом обновления 1 (SP1)<br> • Обнаружение для **предварительного просмотра** в windows Server 2019, [Windows Virtual Desktop (ВВД)](../virtual-desktop/overview.md)и [Windows 10 Корпоративная](../virtual-desktop/windows-10-multisession-faq.md) (ранее Enterprise для виртуальных рабочих столов (ЕВД)<br>Мониторинг конечных точек сервера с помощью этих интеграций отключен для клиентов Office 365 GCC|
+| Поддерживаемые версии Windows:  |  • **Общая доступность (общедоступная версия) —** обнаружение в Windows Server 2016, 2012 r2 и 2008 R2 с пакетом обновления 1 (SP1)<br> • Обнаружение для **предварительного просмотра** в windows Server 2019, [Windows Virtual Desktop (ВВД)](../virtual-desktop/overview.md)и [Windows 10 Корпоративная](../virtual-desktop/windows-10-multisession-faq.md) (ранее Enterprise для виртуальных рабочих столов (ЕВД)|
 | Неподдерживаемые операционные системы:  |  • Windows 10 (кроме ЕВД или ВВД)<br> • Linux|
 | Требуемые роли и разрешения | Включение и отключение интеграции: **администратор безопасности** или **владелец**<br>Просмотр оповещений МДАТП в центре безопасности: **читатель безопасности**, **читатель**, **участник группы ресурсов**, **владелец группы ресурсов**, **администратор безопасности**, **владелец подписки** или **участник подписки**|
 | Облако.                         | ![Да](./media/icons/yes-icon.png) Коммерческие облака<br>![Да](./media/icons/yes-icon.png) US Gov<br>![Нет](./media/icons/no-icon.png) China Gov и другие правительственные облака                                                        |

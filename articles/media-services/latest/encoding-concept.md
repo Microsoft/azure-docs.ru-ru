@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: seodec18
-ms.openlocfilehash: 159336d3e8949739cb00dbe66ed82fa90256dcfd
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.openlocfilehash: 84caa287803fa64b12d9da4c2afb1f8dd1418e13
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98897906"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455286"
 ---
 # <a name="encoding-video-and-audio-with-media-services"></a>Кодирование видео и аудио с помощью служб мультимедиа
 
@@ -137,7 +137,7 @@ ms.locfileid: "98897906"
 
 ## <a name="preset-schema"></a>Предустановленная схема
 
-В службах мультимедиа v3 предустановки являются строго типизированными сущностями в самом API. Определение схемы для этих объектов можно найти в [спецификации Open API (или Swagger)](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2018-07-01). Предварительные определения (например, **стандарденкодерпресет**) можно также просмотреть в [REST API](/rest/api/media/transforms/createorupdate#standardencoderpreset), [пакете SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.standardencoderpreset?view=azure-dotnet) (или в другой справочной документации по службам мультимедиа версии 3).
+В службах мультимедиа v3 предустановки являются строго типизированными сущностями в самом API. Определение схемы для этих объектов можно найти в [спецификации Open API (или Swagger)](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2018-07-01). Предварительные определения (например, **стандарденкодерпресет**) можно также просмотреть в [REST API](/rest/api/media/transforms/createorupdate#standardencoderpreset), [пакете SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.standardencoderpreset) (или в другой справочной документации по службам мультимедиа версии 3).
 
 ## <a name="scaling-encoding-in-v3"></a>Масштабирование кодирования в версии 3
 

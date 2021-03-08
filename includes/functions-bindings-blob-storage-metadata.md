@@ -9,16 +9,16 @@ ms.topic: include
 ms.date: 08/02/2019
 ms.author: cshoe
 ms.custom: include file
-ms.openlocfilehash: f4e6d5fb41769544b7be0f689447364988d0380d
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.openlocfilehash: c6b038297945ca900508a822460e1358a2524d23
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95998853"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455924"
 ---
-Триггер BLOB-объектов предоставляет несколько свойств метаданных. Эти свойства можно использовать как часть выражений привязки в других привязках или как параметры в коде. Эти значения имеют ту же семантику, что и тип [CloudBlob](/dotnet/api/microsoft.azure.storage.blob.cloudblob?view=azure-dotnet).
+Триггер BLOB-объектов предоставляет несколько свойств метаданных. Эти свойства можно использовать как часть выражений привязки в других привязках или как параметры в коде. Эти значения имеют ту же семантику, что и тип [CloudBlob](/dotnet/api/microsoft.azure.storage.blob.cloudblob).
 
-|Свойство  |Тип  |Описание  |
+|Свойство.  |Тип  |Описание  |
 |---------|---------|---------|
 |`BlobTrigger`|`string`|Путь к большому двоичному объекту, активирующему триггер.|
 |`Uri`|`System.Uri`|Код URI BLOB-объекта для основного расположения.|

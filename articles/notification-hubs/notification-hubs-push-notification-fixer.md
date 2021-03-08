@@ -17,12 +17,12 @@ ms.author: sethm
 ms.reviewer: jowargo
 ms.lastreviewed: 04/04/2019
 ms.custom: devx-track-csharp
-ms.openlocfilehash: b5139f75084eb0646db2fc8b05b04aaf3ddb2a12
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 787cf922fcee0ee613fc0874a490830da9adf38a
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89010789"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455031"
 ---
 # <a name="diagnose-dropped-notifications-in-azure-notification-hubs"></a>Диагностика удаленных уведомлений в центрах уведомлений Azure
 
@@ -147,7 +147,7 @@ ms.locfileid: "89010789"
 
 Вы можете просматривать все регистрации в центре и управлять ими. Регистрация может быть отнесена к категории по платформе, встроенной регистрации или шаблону, тегу, идентификатору службы push-уведомлений, ИДЕНТИФИКАТОРу регистрации и дате окончания срока действия. На этой странице можно также изменить регистрацию. Это особенно полезно для редактирования тегов.
 
-Щелкните правой кнопкой мыши Центр уведомлений в **Обозреватель сервера**и выберите пункт **Диагностика**. 
+Щелкните правой кнопкой мыши Центр уведомлений в **Обозреватель сервера** и выберите пункт **Диагностика**. 
 
 ![Обозреватель сервера Visual Studio: меню "Диагностика"](./media/notification-hubs-push-notification-fixer/diagnose-menu.png)
 
@@ -233,7 +233,7 @@ Console.WriteLine(result.State);
     }
 ```
 
-#### <a name="sample-output"></a>Пример полученных результатов
+#### <a name="sample-output"></a>Пример выходных данных
 
 ```text
 DetailedStateAvailable
@@ -297,5 +297,5 @@ The Token obtained from the Token Provider is wrong
 [View device registrations for notification hubs]: /previous-versions/windows/apps/dn792122(v=win.10)
 [Подробный обзор релиз-кандидата Visual Studio 2013 с обновлением 2 и пакета Azure SDK 2.3]: https://azure.microsoft.com/blog/2014/04/09/deep-dive-visual-studio-2013-update-2-rc-and-azure-sdk-2-3/#NotificationHubs
 [Объявление о выпуске Visual Studio 2013 с обновлением 3 и пакета Azure SDK 2.4]: https://azure.microsoft.com/blog/2014/08/04/announcing-release-of-visual-studio-2013-update-3-and-azure-sdk-2-4/
-[Сведения о свойстве EnableTestSend]: /dotnet/api/microsoft.azure.notificationhubs.notificationhubclient.enabletestsend?view=azure-dotnet
+[Сведения о свойстве EnableTestSend]: /dotnet/api/microsoft.azure.notificationhubs.notificationhubclient.enabletestsend
 [Programmatic telemetry access]: /previous-versions/azure/azure-services/dn458823(v=azure.100)

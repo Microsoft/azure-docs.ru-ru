@@ -5,12 +5,12 @@ services: automation
 ms.subservice: process-automation
 ms.date: 03/04/2021
 ms.topic: conceptual
-ms.openlocfilehash: afa782df8666413356fa334bf4e9dcb989b87c2f
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: c38a6236fe3ad9164d11d94e5563a7dddf5b4b32
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102441359"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102452787"
 ---
 # <a name="use-runbooks-and-modules-in-powershell-gallery"></a>Поиск последовательностей runbook и модулей в коллекции PowerShell
 
@@ -51,11 +51,11 @@ ms.locfileid: "102441359"
 1. Выберите **Источник: коллекция PowerShell**. Отобразится список доступных модулей Runbook, которые можно просмотреть.
 1. Можно использовать поле поиска над списком, чтобы уменьшить список, или использовать фильтры для сокращения отображаемых значений по издателю, типу и сортировке. Найдите нужный элемент коллекции и выберите его, чтобы просмотреть сведения о нем.
 
-   :::image type="content" source="media/automation-runbook-gallery/browse-gallery-sm.png" alt-text="Просмотр коллекции модулей Runbook" lightbox="media/automation-runbook-gallery/browse-gallery-lg.png":::
+   :::image type="content" source="media/automation-runbook-gallery/browse-gallery-sm.png" alt-text="Просмотр коллекции модулей Runbook." lightbox="media/automation-runbook-gallery/browse-gallery-lg.png":::
 
 1. Чтобы импортировать элемент, нажмите кнопку **Импорт** в колонке сведения.
 
-   :::image type="content" source="media/automation-runbook-gallery/gallery-item-detail-sm.png" alt-text="Отображение сведений об элементе коллекции Runbook" lightbox="media/automation-runbook-gallery/gallery-item-detail-lg.png":::
+   :::image type="content" source="media/automation-runbook-gallery/gallery-item-detail-sm.png" alt-text="Отображение сведений об элементе коллекции Runbook." lightbox="media/automation-runbook-gallery/gallery-item-detail-lg.png":::
 
 1. Также для импорта модуля Runbook вы можете изменить его имя, а затем нажать кнопку **ОК** .
 1. Модуль runbook появится на вкладке **Модули runbook** учетной записи службы автоматизации.
@@ -67,11 +67,11 @@ ms.locfileid: "102441359"
 1. Выберите **Источник: GitHub**.
 1. Фильтры, расположенные над списком, можно использовать для ограничения отображаемых значений по издателю, типу и сортировке. Найдите нужный элемент коллекции и выберите его, чтобы просмотреть сведения о нем.
 
-   :::image type="content" source="media/automation-runbook-gallery/browse-gallery-github-sm.png" alt-text="Просмотр коллекции GitHub" lightbox="media/automation-runbook-gallery/browse-gallery-github-lg.png":::
+   :::image type="content" source="media/automation-runbook-gallery/browse-gallery-github-sm.png" alt-text="Просмотр коллекции GitHub." lightbox="media/automation-runbook-gallery/browse-gallery-github-lg.png":::
 
 1. Чтобы импортировать элемент, нажмите кнопку **Импорт** в колонке сведения.
 
-   :::image type="content" source="media/automation-runbook-gallery/gallery-item-details-blade-github-sm.png" alt-text="Подробное представление модуля Runbook из коллекции GitHub" lightbox="media/automation-runbook-gallery/gallery-item-details-blade-github-lg.png":::
+   :::image type="content" source="media/automation-runbook-gallery/gallery-item-details-blade-github-sm.png" alt-text="Подробное представление модуля Runbook из коллекции GitHub." lightbox="media/automation-runbook-gallery/gallery-item-details-blade-github-lg.png":::
 
 1. Также для импорта модуля Runbook вы можете изменить его имя, а затем нажать кнопку **ОК** .
 1. Модуль runbook появится на вкладке **Модули runbook** учетной записи службы автоматизации.
@@ -86,7 +86,7 @@ ms.locfileid: "102441359"
 1. Выберите **Модули** в разделе **Общие ресурсы** чтобы открыть список модулей.
 1. В верхней части страницы щелкните **Обзор коллекции**.
 
-      :::image type="content" source="media/automation-runbook-gallery/modules-blade-sm.png" alt-text="Представление коллекции модулей" lightbox="media/automation-runbook-gallery/modules-blade-lg.png":::
+      :::image type="content" source="media/automation-runbook-gallery/modules-blade-sm.png" alt-text="Представление коллекции модулей." lightbox="media/automation-runbook-gallery/modules-blade-lg.png":::
 
 1. На странице Обзор коллекции можно использовать поле поиска для поиска совпадений в любом из следующих полей:
 
@@ -99,7 +99,7 @@ ms.locfileid: "102441359"
 
    Во время подробного рассмотрения конкретного модуля просмотрите дополнительную информацию. Данная информация включает ссылку на коллекцию PowerShell, все необходимые зависимости и все командлеты или ресурсы DSC, которые содержит модуль.
 
-   :::image type="content" source="media/automation-runbook-gallery/gallery-item-details-blade-sm.png" alt-text="Подробное представление модуля из коллекции" lightbox="media/automation-runbook-gallery/gallery-item-details-blade-lg.png":::
+   :::image type="content" source="media/automation-runbook-gallery/gallery-item-details-blade-sm.png" alt-text="Подробное представление модуля из коллекции." lightbox="media/automation-runbook-gallery/gallery-item-details-blade-lg.png":::
 
 1. Чтобы установить модуль непосредственно в службу автоматизации Azure, нажмите кнопку **Импорт**.
 1. В панели импорта можно просмотреть имя модуля, который нужно импортировать. Если установлены все зависимости, кнопка **ОК** будет активна. Если какие-либо зависимости отсутствуют, их необходимо будет импортировать перед импортом данного модуля.

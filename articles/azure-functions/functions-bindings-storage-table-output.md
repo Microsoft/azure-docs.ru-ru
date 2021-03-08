@@ -6,12 +6,12 @@ ms.topic: reference
 ms.date: 09/03/2018
 ms.author: cshoe
 ms.custom: devx-track-csharp, devx-track-python
-ms.openlocfilehash: 825a336b5ad07f50d96b19036d70c759b907bd07
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: f793f96f55a258b2d7cb11f214984416557618df
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102209685"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102453008"
 ---
 # <a name="azure-table-storage-output-bindings-for-azure-functions"></a>Выходные привязки хранилища таблиц Azure для функций Azure
 
@@ -438,7 +438,7 @@ public static MyPoco TableOutput(
 
 - **Возвращаемое значение** — задайте для свойства `name` в файле *function.json* значение `$return`. В этой конфигурации возвращаемое значение функции сохраняется как строка хранилища таблицы.
 
-- **Императив** — передайте значение методу [set](/python/api/azure-functions/azure.functions.out?view=azure-python&preserve-view=true#set-val--t-----none) параметра, объявленного с типом [Out](/python/api/azure-functions/azure.functions.out?view=azure-python&preserve-view=true). Значение, переданное `set`, сохраняется как сообщение концентратора событий.
+- **Императив** — передайте значение методу [set](/python/api/azure-functions/azure.functions.out#set-val--t-----none) параметра, объявленного с типом [Out](/python/api/azure-functions/azure.functions.out). Значение, переданное `set`, сохраняется как сообщение концентратора событий.
 
 ---
 

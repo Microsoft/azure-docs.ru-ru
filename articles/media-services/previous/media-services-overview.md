@@ -14,10 +14,10 @@ ms.topic: conceptual
 ms.date: 11/03/2020
 ms.author: inhenkel
 ms.openlocfilehash: 08a419f021e0315468cb6fa5917b30bb2977d958
-ms.sourcegitcommit: 77afc94755db65a3ec107640069067172f55da67
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/08/2021
 ms.locfileid: "98695515"
 ---
 # <a name="azure-media-services-overview"></a>Общие сведения о службах мультимедиа Azure

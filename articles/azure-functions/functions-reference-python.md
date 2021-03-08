@@ -4,12 +4,12 @@ description: Сведения о разработке функций на язы
 ms.topic: article
 ms.date: 11/4/2020
 ms.custom: devx-track-python
-ms.openlocfilehash: 0829ef9a6b63866c2527e521ed7edf48a3249392
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 3eb3b3b015f401e872a879c46ec6f8c69df5f87f
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102044261"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455422"
 ---
 # <a name="azure-functions-python-developer-guide"></a>Справочник разработчика Python. Функции Azure
 
@@ -51,7 +51,7 @@ def main(req: azure.functions.HttpRequest) -> str:
     return f'Hello, {user}!'
 ```
 
-Аннотации Python, включенные в пакет [azure.functions.*](/python/api/azure-functions/azure.functions?view=azure-python&preserve-view=true), позволяют привязать входные и выходные данные к методам.
+Аннотации Python, включенные в пакет [azure.functions.*](/python/api/azure-functions/azure.functions), позволяют привязать входные и выходные данные к методам.
 
 ## <a name="alternate-entry-point"></a>Альтернативная точка входа
 
@@ -199,7 +199,7 @@ def main(req: func.HttpRequest,
 
 Чтобы использовать возвращаемое значение функции в качестве значения выходной привязки, присвойте свойству `name` значение `$return` в `function.json`.
 
-Чтобы создать несколько выходных значений, используйте метод `set()` из интерфейса [`azure.functions.Out`](/python/api/azure-functions/azure.functions.out?view=azure-python&preserve-view=true), чтобы присвоить значение привязке. Например, следующая функция может направлять сообщение в очередь и возвращает ответ HTTP.
+Чтобы создать несколько выходных значений, используйте метод `set()` из интерфейса [`azure.functions.Out`](/python/api/azure-functions/azure.functions.out), чтобы присвоить значение привязке. Например, следующая функция может направлять сообщение в очередь и возвращает ответ HTTP.
 
 ```json
 {
@@ -306,7 +306,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
 ## <a name="context"></a>Контекст
 
-Чтобы получить контекст вызова функции во время выполнения, включите в его подпись аргумент [`context`](/python/api/azure-functions/azure.functions.context?view=azure-python&preserve-view=true).
+Чтобы получить контекст вызова функции во время выполнения, включите в его подпись аргумент [`context`](/python/api/azure-functions/azure.functions.context).
 
 Пример:
 
@@ -319,7 +319,7 @@ def main(req: azure.functions.HttpRequest,
     return f'{context.invocation_id}'
 ```
 
-Класс [**Context**](/python/api/azure-functions/azure.functions.context?view=azure-python&preserve-view=true) имеет следующие строковые атрибуты:
+Класс [**Context**](/python/api/azure-functions/azure.functions.context) имеет следующие строковые атрибуты:
 
 `function_directory` Каталог, в котором выполняется функция.
 
@@ -640,7 +640,7 @@ CORS полностью поддерживается для приложений
 
 Для получения дополнительных сведений см. следующие ресурсы:
 
-* [Документация по API пакета Функций Azure](/python/api/azure-functions/azure.functions?view=azure-python&preserve-view=true)
+* [Документация по API пакета Функций Azure](/python/api/azure-functions/azure.functions)
 * [Рекомендации по функциям Azure](functions-best-practices.md)
 * [Azure Functions triggers and bindings (Триггеры и привязки в Функциях Azure)](functions-triggers-bindings.md)
 * [Привязки хранилища BLOB-объектов Azure для службы "Функции Azure"](functions-bindings-storage-blob.md)
@@ -651,5 +651,5 @@ CORS полностью поддерживается для приложений
 [Возникли проблемы? Сообщите нам!](https://aka.ms/python-functions-ref-survey)
 
 
-[HttpRequest]: /python/api/azure-functions/azure.functions.httprequest?view=azure-python&preserve-view=true
-[HttpResponse]: /python/api/azure-functions/azure.functions.httpresponse?view=azure-python&preserve-view=true
+[HttpRequest]: /python/api/azure-functions/azure.functions.httprequest
+[HttpResponse]: /python/api/azure-functions/azure.functions.httpresponse

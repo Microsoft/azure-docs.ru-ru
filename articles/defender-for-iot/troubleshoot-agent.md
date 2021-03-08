@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/09/2020
 ms.author: mlottner
-ms.openlocfilehash: 9367cf4324d577e4dd44cb9294a8b82b1bceaf74
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
+ms.openlocfilehash: 7be6cf1df15d7afd7cb9447be68ff70ff7b14d03
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100522960"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449226"
 ---
 # <a name="security-agent-troubleshoot-guide-linux"></a>Инструкции по устранению неполадок с агентом безопасности (Linux)
 
@@ -28,10 +28,9 @@ ms.locfileid: "100522960"
 
 В этом руководство по устранению неполадок вы узнаете, как:
 
-> [!div class="checklist"]
-> * Проверка работы агента безопасности
-> * Получить ошибки агента безопасности
-> * Изучите и исправьте ошибки агента безопасности
+- Проверка работы агента безопасности
+- Получить ошибки агента безопасности
+- Изучите и исправьте ошибки агента безопасности
 
 ## <a name="validate-if-the-security-agent-is-running"></a>Проверка работы агента безопасности
 
@@ -106,6 +105,12 @@ Defender for IoT agent encountered an error! Error in: {Error Code}, reason: {Er
 | Аутентификация | Не удается проанализировать конфигурацию | Не удается выполнить синтаксический анализ значения конфигурации. Сообщение об ошибке должно указывать, какой ключ не может быть проанализирован. Не удается выполнить синтаксический анализ значения конфигурации, так как значение не относится к ожидаемому типу, или значение выходит за пределы допустимого диапазона. |Исправьте значение ключа в **LocalConfiguration.js** в файле. |Исправьте значение ключа в файле **Authentication.config** в соответствии со схемой. Дополнительные сведения см. в разделе [CS-локалконфиг-Reference](azure-iot-security-local-configuration-c.md) .|
 |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-Ознакомьтесь с [обзором](overview.md) службы "защитник для Интернета вещей" Узнайте больше о защитнике для [архитектуры](architecture.md) IOT включение [службы](quickstart-onboard-iot-hub.md) "защитник для Интернета вещей" чтение [сведений о службе](concept-security-alerts.md) "защитник для Интернета вещей [" сведения о](resources-frequently-asked-questions.md) том, как получить доступ к [необработанным данным о безопасности](how-to-security-data-access.md) . Общие [рекомендации](concept-recommendations.md)
+- Ознакомьтесь с [обзором](overview.md) службы "защитник для Интернета вещей"
+- Дополнительные сведения о защитнике для [архитектуры](architecture.md) IOT
+- Включение защитника для [службы](quickstart-onboard-iot-hub.md) IOT
+- [Вопросы и ответы](resources-frequently-asked-questions.md) о службе "защитник для Интернета вещей"
+- Узнайте, как получить доступ к [необработанным данным безопасности](how-to-security-data-access.md).
+- Общие сведения о [рекомендациях](concept-recommendations.md)
+- Общие сведения об [оповещениях](concept-security-alerts.md) системы безопасности

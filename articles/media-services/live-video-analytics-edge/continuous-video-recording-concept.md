@@ -3,12 +3,12 @@ title: Непрерывная запись видео — Azure
 description: Непрерывная запись видео (КВР) — это процесс постоянной записи видео из источника видео. В этом разделе обсуждается, что такое КВР.
 ms.topic: conceptual
 ms.date: 04/27/2020
-ms.openlocfilehash: 04f09f1968e647c57ba0913a9e7f9e601d045771
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: f8b25d74db279f8cfff68f08efeab2975484a0c5
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89566706"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102453756"
 ---
 # <a name="continuous-video-recording"></a>Непрерывная запись видео  
 
@@ -19,7 +19,7 @@ ms.locfileid: "89566706"
 
 ## <a name="overview"></a>Обзор
 
-Непрерывная запись видео (КВР) — это процесс постоянной записи видео из источника видео. Интерактивная аналитика видео на IoT Edge поддерживает непрерывную запись видео на постоянной основе с камеры ККТВ через [мультимедийный граф](media-graph-concept.md) , состоящий из ИСХОДНОГО узла RTSP и узла приемника ресурса. На схеме ниже показано графическое представление такого графа мультимедиа. Представление JSON [топологии графа](media-graph-concept.md?branch=release-preview-media-services-lva#media-graph-topologies-and-instances) такого графа мультимедиа можно найти [здесь](https://github.com/Azure/live-video-analytics/tree/master/MediaGraph/topologies/cvr-asset).
+Непрерывная запись видео (КВР) — это процесс постоянной записи видео из источника видео. Интерактивная аналитика видео на IoT Edge поддерживает непрерывную запись видео на постоянной основе с камеры ККТВ через [мультимедийный граф](media-graph-concept.md) , состоящий из ИСХОДНОГО узла RTSP и узла приемника ресурса. На схеме ниже показано графическое представление такого графа мультимедиа. Представление JSON [топологии графа](media-graph-concept.md#media-graph-topologies-and-instances) такого графа мультимедиа можно найти [здесь](https://github.com/Azure/live-video-analytics/tree/master/MediaGraph/topologies/cvr-asset).
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="./media/continuous-video-recording/continuous-video-recording-overview.svg" alt-text="Непрерывная запись видео":::
@@ -58,6 +58,6 @@ ms.locfileid: "89566706"
 * [Запись видео на основе событий](event-based-video-recording-concept.md)
 * [Воспроизведение записанного содержимого](video-playback-concept.md)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Учебник. запись непрерывного видео](continuous-video-recording-tutorial.md)

@@ -14,12 +14,12 @@ ms.topic: article
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: d007c104dc53683d49547db582e8de6981ab921f
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.openlocfilehash: 11c65498d5a31c2e2ee997bdaf18037b1f0f9060
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101093415"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455218"
 ---
 # <a name="create-filters-with-media-services-net-sdk"></a>Создание фильтров с помощью пакета SDK Служб мультимедиа для .NET
 
@@ -29,7 +29,7 @@ ms.locfileid: "101093415"
 
 Подробное описание этой функции и сценариев, в которых она используется, см. в разделе [динамические манифесты](filters-dynamic-manifest-overview.md) и [фильтры](filters-concept.md).
 
-В этой статье показано, как использовать пакет SDK Служб мультимедиа для .NET, чтобы определить фильтр для ресурса-контейнера видео по запросу и создать [фильтры учетных записей](/dotnet/api/microsoft.azure.management.media.models.accountfilter?view=azure-dotnet) и [фильтры ресурсов-контейнеров](/dotnet/api/microsoft.azure.management.media.models.assetfilter?view=azure-dotnet). 
+В этой статье показано, как использовать пакет SDK Служб мультимедиа для .NET, чтобы определить фильтр для ресурса-контейнера видео по запросу и создать [фильтры учетных записей](/dotnet/api/microsoft.azure.management.media.models.accountfilter) и [фильтры ресурсов-контейнеров](/dotnet/api/microsoft.azure.management.media.models.assetfilter). 
 
 > [!NOTE]
 > Обязательно ознакомьтесь с [пресентатионтимеранже](filters-concept.md#presentationtimerange).
@@ -43,7 +43,7 @@ ms.locfileid: "101093415"
 
 ## <a name="define-a-filter"></a>Определение фильтра  
 
-В .NET выбранные дорожки настраиваются с помощью классов [FilterTrackSelection](/dotnet/api/microsoft.azure.management.media.models.filtertrackselection?view=azure-dotnet) и [FilterTrackPropertyCondition](/dotnet/api/microsoft.azure.management.media.models.filtertrackpropertycondition?view=azure-dotnet). 
+В .NET выбранные дорожки настраиваются с помощью классов [FilterTrackSelection](/dotnet/api/microsoft.azure.management.media.models.filtertrackselection) и [FilterTrackPropertyCondition](/dotnet/api/microsoft.azure.management.media.models.filtertrackpropertycondition). 
 
 Приведенный ниже код определяет фильтр, который включает в себя любые звуковые дорожки с EC-3 и любые видеодорожки со скоростью в диапазоне 0–1 000 000.
 
@@ -119,6 +119,6 @@ StreamingLocator locator = await client.StreamingLocators.CreateAsync(
 |MPEG DASH|`https://amsv3account-usw22.streaming.media.azure.net/fecebb23-46f6-490d-8b70-203e86b0df58/bigbuckbunny.ism/manifest(format=mpd-time-csf,filter=myAssetFilter)`|
 |Smooth Streaming|`https://amsv3account-usw22.streaming.media.azure.net/fecebb23-46f6-490d-8b70-203e86b0df58/bigbuckbunny.ism/manifest(filter=myAssetFilter)`|
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Потоковая передача видео](stream-files-tutorial-with-api.md) 

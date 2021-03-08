@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 08/28/2019
 ms.author: kaushika
-ms.openlocfilehash: 9975e40f7d4f3b69c9281efd0288389740bf92ec
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 9a0d06a8f8fa8f68f063404f2b483b817eb0563f
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98943655"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102452107"
 ---
 # <a name="configure-and-validate-virtual-network-or-vpn-connections"></a>Настройка и проверка виртуальной сети или VPN-подключений
 
@@ -248,7 +248,7 @@ BGP также может включить транзитную маршрути
 
 Сведения о настройке VPN-подключения, использующего BGP, см. в статье [Настройка BGP на VPN-шлюзах Azure с помощью PowerShell](../vpn-gateway/vpn-gateway-bgp-resource-manager-ps.md).
 
-Включите протокол BGP для шлюза виртуальной сети, создав для него автономную систему (как). Основные шлюзы не поддерживают BGP. Чтобы проверить номер SKU шлюза, перейдите к разделу **Обзор** колонки **VPN-шлюза** в портал Azure. Если номер SKU является **базовым**, необходимо изменить номер SKU (см. раздел изменение [размера шлюза](/powershell/module/azurerm.network/resize-azurermvirtualnetworkgateway?viewFallbackFrom=azurermps-4.0.0)) на **VpnGw1**. 
+Включите протокол BGP для шлюза виртуальной сети, создав для него автономную систему (как). Основные шлюзы не поддерживают BGP. Чтобы проверить номер SKU шлюза, перейдите к разделу **Обзор** колонки **VPN-шлюза** в портал Azure. Если номер SKU является **базовым**, необходимо изменить номер SKU (см. раздел изменение [размера шлюза](/powershell/module/azurerm.network/resize-azurermvirtualnetworkgateway)) на **VpnGw1**. 
 
 Проверка номера SKU приведет к простою 20 – 30 минут. Как только шлюз будет иметь правильный номер SKU, его можно добавить с помощью командлета PowerShell [Set-AzureRmVirtualNetworkGateway](/powershell/module/azurerm.network/set-azurermvirtualnetworkgateway) . Когда вы настроите значение AS, IP-адрес узла BGP для шлюза будет предоставляться автоматически.
 
@@ -258,7 +258,7 @@ BGP также может включить транзитную маршрути
 
 ### <a name="validate-the-bgp-configuration"></a>Проверка конфигурации BGP
 
-Чтобы проверить, правильно ли настроен протокол BGP, можно запустить `get-AzureRmVirtualNetworkGateway` и `get-AzureRmLocalNetworkGateway` командлеты. Затем Обратите внимание на выходные данные, связанные с BGP, в `BgpSettingsText` части. Пример.
+Чтобы проверить, правильно ли настроен протокол BGP, можно запустить `get-AzureRmVirtualNetworkGateway` и `get-AzureRmLocalNetworkGateway` командлеты. Затем Обратите внимание на выходные данные, связанные с BGP, в `BgpSettingsText` части. Пример:
 
 ```
 {

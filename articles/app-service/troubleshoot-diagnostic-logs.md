@@ -5,12 +5,12 @@ ms.assetid: c9da27b2-47d4-4c33-a3cb-1819955ee43b
 ms.topic: article
 ms.date: 09/17/2019
 ms.custom: devx-track-csharp, seodec18
-ms.openlocfilehash: 6008304ea7c1d17363587a4fa5bf6017cb0903f9
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 44e18be9d66131ad5f4a3ebcc039621ec9e9dbe6
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102049242"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102452260"
 ---
 # <a name="enable-diagnostics-logging-for-apps-in-azure-app-service"></a>Включение ведения журнала диагностики для приложений в Службе приложений Azure
 ## <a name="overview"></a>Обзор
@@ -108,9 +108,9 @@ ms.locfileid: "102049242"
 
 ## <a name="add-log-messages-in-code"></a>Добавление сообщений журнала в код
 
-В коде приложения для отправки сообщений журнала в журналы приложений используются обычные средства ведения журнала. Пример.
+В коде приложения для отправки сообщений журнала в журналы приложений используются обычные средства ведения журнала. Пример:
 
-- Приложения ASP.NET могут использовать класс [System.Diagnostics.Trace](/dotnet/api/system.diagnostics.trace) для записи информации в журнал диагностики приложений. Пример.
+- Приложения ASP.NET могут использовать класс [System.Diagnostics.Trace](/dotnet/api/system.diagnostics.trace) для записи информации в журнал диагностики приложений. Пример:
 
     ```csharp
     System.Diagnostics.Trace.TraceError("If you're seeing this, something bad happened");
@@ -134,19 +134,17 @@ ms.locfileid: "102049242"
 
 Чтобы выполнить потоковую передачу журналов в [Cloud Shell](../cloud-shell/overview.md), используйте следующую команду:
 
+> [!IMPORTANT]
+> Эта команда может не работать с веб-приложениями, размещенными в плане службы приложений Linux.
+
 ```azurecli-interactive
 az webapp log tail --name appname --resource-group myResourceGroup
 ```
 
-Чтобы отфильтровать определенные события, например ошибки, используйте параметр **--Filter** . Пример.
+Чтобы отфильтровать определенные типы журналов, такие как HTTP, используйте параметр **--provider** . Пример:
 
 ```azurecli-interactive
-az webapp log tail --name appname --resource-group myResourceGroup --filter Error
-```
-Чтобы отфильтровать определенные типы журналов, например HTTP, используйте параметр **--Path** . Пример.
-
-```azurecli-interactive
-az webapp log tail --name appname --resource-group myResourceGroup --path http
+az webapp log tail --name appname --resource-group myResourceGroup --provider http
 ```
 
 ### <a name="in-local-terminal"></a>В локальном терминале

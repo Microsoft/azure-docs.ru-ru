@@ -2,14 +2,14 @@
 title: Выбор размеров и образов виртуальных машин для пулов
 description: Выбор из доступных размеров виртуальных машин и версий ОС для вычисленийных узлов в пулах пакетной службы Azure
 ms.topic: conceptual
-ms.date: 11/24/2020
+ms.date: 03/08/2021
 ms.custom: seodec18
-ms.openlocfilehash: de1f61bb2bdc83377887fda726a65c1900f36d55
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.openlocfilehash: 42b8743fac6a6c64e98271490f0bfc4671fa7698
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99576707"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455201"
 ---
 # <a name="choose-a-vm-size-and-image-for-compute-nodes-in-an-azure-batch-pool"></a>Выбор размера и образа виртуальной машины для расчетных узлов в пуле пакетной службы Azure
 
@@ -35,13 +35,11 @@ ms.locfileid: "99576707"
 | DC | Не поддерживается |
 | Dv2, DSv2 | Все размеры |
 | Dv3, Dsv3 | Все размеры |
-| Dav4 | Все размеры |
-| Dasv4 | Все размеры |
+| Dav4, Dasv4 | Все размеры |
 | Ddv4, Ddsv4 |  Все размеры |
 | Dv4, Dsv4 | Не поддерживается |
 | Ev3, Esv3 | Все размеры, кроме E64is_v3 |
-| Eav4 | Все размеры |
-| Easv4 | Все размеры |
+| Eav4, Easv4 | Все размеры |
 | Edv4, Edsv4 |  Все размеры |
 | Ev4, Esv4 | Не поддерживается |
 | F, Fs | Все размеры |
@@ -58,7 +56,7 @@ ms.locfileid: "99576707"
 | NC | Все размеры |
 | NCv2 | Все размеры |
 | NCv3 | Все размеры |
-| NCasT4_v3 | Нет. Пока недоступно |
+| NCasT4_v3 | Все размеры |
 | ND | Все размеры |
 | NDv2 | Нет. Пока недоступно |
 | NV | Все размеры |

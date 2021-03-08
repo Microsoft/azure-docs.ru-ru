@@ -8,15 +8,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 03/04/2021
+ms.date: 03/08/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 9cd5a62cd85687767497b142a30d31aa6dd00b77
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 85574b7d33af6d9abfe25f5af4d811255f08ce4b
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102175096"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102452243"
 ---
 # <a name="string-claims-transformations"></a>Преобразования утверждений строк
 
@@ -326,6 +326,77 @@ ms.locfileid: "102175096"
     - **outputClaim**: OTP_853.
 
 
+## <a name="formatlocalizedstring"></a>форматлокализедстринг
+
+Форматирование нескольких утверждений в соответствии с предоставленной строкой локализованного формата. Это преобразование использует метод C# `String.Format`.
+
+
+| Item | TransformationClaimType | Тип данных | Примечания |
+| ---- | ----------------------- | --------- | ----- |
+| InputClaims |  |строка | Коллекция входных утверждений, которые действуют как строковый формат {0} , {1} , — {2} Parameters. |
+| InputParameter | стрингформатид | строка |  Объект `StringId` [локализованной строки](localization.md).   |
+| outputClaim | outputClaim | строка | Параметр ClaimType, который создается после вызова этого преобразования утверждений. |
+
+> [!NOTE]
+> Максимальный допустимый размер строкового формата — 4000.
+
+Чтобы использовать преобразование Форматлокализедстринг Claims, выполните следующие действия.
+
+1. Определите [строку локализации](localization.md)и свяжите ее с [самостоятельно подтвержденным-техническим профилем](self-asserted-technical-profile.md).
+1. Для `ElementType` элемента `LocalizedString` необходимо задать значение `FormatLocalizedStringTransformationClaimType`.
+1. `StringId`— Это уникальный идентификатор, который вы определяете и используете позже в преобразовании утверждений `stringFormatId` .
+1. В преобразовании утверждений укажите список утверждений, которые должны быть заданы в локализованной строке. Затем присвойте свойству значение `stringFormatId` `StringId` из локализованного строкового элемента. 
+1. В [самоподтвержденном техническом профиле](self-asserted-technical-profile.md) или [элементе управления отображением](display-controls.md) преобразования входных или выходных утверждений укажите ссылку на преобразование утверждений.
+
+
+В следующем примере создается сообщение об ошибке, если учетная запись уже находится в каталоге. В примере определяются локализованные строки для английского языка (по умолчанию) и испанского.
+
+```xml
+<Localization Enabled="true">
+  <SupportedLanguages DefaultLanguage="en" MergeBehavior="Append">
+    <SupportedLanguage>en</SupportedLanguage>
+    <SupportedLanguage>es</SupportedLanguage>
+   </SupportedLanguages>
+
+  <LocalizedResources Id="api.localaccountsignup.en">
+    <LocalizedStrings>
+      <LocalizedString ElementType="FormatLocalizedStringTransformationClaimType" StringId="ResponseMessge_EmailExists">The email '{0}' is already an account in this organization. Click Next to sign in with that account.</LocalizedString>
+      </LocalizedStrings>
+    </LocalizedResources>
+  <LocalizedResources Id="api.localaccountsignup.es">
+    <LocalizedStrings>
+      <LocalizedString ElementType="FormatLocalizedStringTransformationClaimType" StringId="ResponseMessge_EmailExists">Este correo electrónico "{0}" ya es una cuenta de esta organización. Haga clic en Siguiente para iniciar sesión con esa cuenta.</LocalizedString>
+    </LocalizedStrings>
+  </LocalizedResources>
+</Localization>
+```
+
+Преобразование «утверждения» создает ответное сообщение на основе локализованной строки. Сообщение содержит адрес электронной почты пользователя, внедренный в локализованный *ResponseMessge_EmailExists* проверочного.
+
+```xml
+<ClaimsTransformation Id="SetResponseMessageForEmailAlreadyExists" TransformationMethod="FormatLocalizedString">
+  <InputClaims>
+    <InputClaim ClaimTypeReferenceId="email" />
+  </InputClaims>
+  <InputParameters>
+    <InputParameter Id="stringFormatId" DataType="string" Value="ResponseMessge_EmailExists" />
+  </InputParameters>
+  <OutputClaims>
+    <OutputClaim ClaimTypeReferenceId="responseMsg" TransformationClaimType="outputClaim" />
+  </OutputClaims>
+</ClaimsTransformation>
+```
+
+### <a name="example"></a>Пример
+
+- Входящие утверждения:
+    - **inputClaim**: sarah@contoso.com
+- Входные параметры:
+    - **StringFormat**: ResponseMessge_EmailExists
+- Исходящие утверждения:
+  - **outputClaim**: адрес электронной почты " sarah@contoso.com " уже является учетной записью в этой Организации. Нажмите кнопку Далее, чтобы войти в систему с помощью этой учетной записи.
+
+
 ## <a name="formatstringclaim"></a>FormatStringClaim
 
 Форматирование утверждения в указанный формат строки. Это преобразование использует метод C# `String.Format`.
@@ -335,6 +406,9 @@ ms.locfileid: "102175096"
 | InputClaim | InputClaim |строка |Элемент ClaimType, который выступает в качестве параметра {0} формата строки. |
 | InputParameter | stringFormat | строка | Формат строки, включая параметр {0}. Этот входной параметр поддерживает [выражения преобразования строковых утверждений](string-transformations.md#string-claim-transformations-expressions).  |
 | outputClaim | outputClaim | строка | Параметр ClaimType, который создается после вызова этого преобразования утверждений. |
+
+> [!NOTE]
+> Максимальный допустимый размер строкового формата — 4000.
 
 Используйте это преобразование утверждений для форматирования любой строки с одним параметром {0}. В следующем примере создается **userPrincipalName**. Технические профили всех поставщиков удостоверений в социальных сетях, такие как `Facebook-OAUTH`, вызывают **CreateUserPrincipalName** для создания **userPrincipalName**.
 
@@ -371,6 +445,9 @@ ms.locfileid: "102175096"
 | InputClaim | InputClaim | строка | Элемент ClaimType, который выступает в качестве параметра {1} формата строки. |
 | InputParameter | stringFormat | строка | Формат строки, включая параметры {0} и {1}. Этот входной параметр поддерживает [выражения преобразования строковых утверждений](string-transformations.md#string-claim-transformations-expressions).   |
 | outputClaim | outputClaim | строка | Параметр ClaimType, который создается после вызова этого преобразования утверждений. |
+
+> [!NOTE]
+> Максимальный допустимый размер строкового формата — 4000.
 
 Используйте это преобразование утверждений для форматирования любой строки с двумя параметрами: {0} и {1}. В следующем примере создается **displayName** с указанным форматом:
 

@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.date: 2/1/2021
 ms.author: jeffpatt
 ms.subservice: files
-ms.openlocfilehash: 534f9e76cfca4037634cfca089f1131984456636
-ms.sourcegitcommit: 2501fe97400e16f4008449abd1dd6e000973a174
+ms.openlocfilehash: f54156ed8cc4c049e10bada77a66eee084f7c5fb
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99820710"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102453280"
 ---
 # <a name="troubleshoot-azure-file-sync"></a>Устранение неполадок службы "Синхронизация файлов Azure"
 Используйте службу "Синхронизация файлов Azure", чтобы централизованно хранить файловые ресурсы организации в службе файлов Azure, обеспечивая гибкость, производительность и совместимость локального файлового сервера. Это достигается путем преобразования Windows Server в быстрый кэш общего файлового ресурса Azure. Для локального доступа к данным вы можете использовать любой протокол, доступный в Windows Server, в том числе SMB, NFS и FTPS. Кроме того, вы можете создать любое количество кэшей в любом регионе.
@@ -74,8 +74,8 @@ Register-AzureRmStorageSyncServer -SubscriptionId "<guid>" -ResourceGroupName "<
 
 1. Откройте командную строку с повышенными привилегиями, введите **powershell** и нажмите клавишу ВВОД.
 2. Установите последний модуль Az или AzureRM согласно документации.
-    - [Модуль Az (требуется .NET 4.7.2)](/powershell/azure/install-az-ps?viewFallbackFrom=azps-1.1.0)
-    - [Модуль AzureRM]( https://go.microsoft.com/fwlink/?linkid=856959)
+    - [Модуль Az (требуется .NET 4.7.2)](/powershell/azure/install-az-ps)
+    - [Модуль AzureRM](https://go.microsoft.com/fwlink/?linkid=856959)
 3. Запустите ServerRegistration.exe и завершите работу мастера, чтобы зарегистрировать сервер в службе синхронизации хранилища.
 
 <a id="server-already-registered"></a>**При регистрации сервера отображается следующее сообщение: "This server is already registered" (Сервер уже зарегистрирован)** 

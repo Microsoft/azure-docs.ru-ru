@@ -14,12 +14,12 @@ ms.date: 02/05/2021
 ms.author: kenwith
 ms.reviewer: baselden
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c1a0be0b7834632ba79af7dfe6c3a4fa25c0316
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: ac3ea7ea6b3ed0bb8e1e9f7575b34f9dbf116a04
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101645517"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102453261"
 ---
 # <a name="migrate-application-authentication-to-azure-active-directory"></a>Перенос проверки подлинности приложения в Azure Active Directory
 
@@ -29,7 +29,7 @@ ms.locfileid: "101645517"
 
 Разбить процесс на четыре этапа, каждый с подробным критерием планирования и выхода, он поможет спланировать стратегию миграции и понять, как проверка подлинности Azure AD поддерживает ваши цели Организации.
 
-## <a name="introduction"></a>Введение
+## <a name="introduction"></a>Вступление
 
 В настоящее время Организация требует от приложений (приложений), чтобы пользователи могли приступить к работе. Скорее всего, вы продолжаете добавлять, разрабатывать и выменять приложения каждый день. Пользователи получают доступ к этим приложениям из широкого спектра корпоративных и персональных устройств и расположений. Они могут открывать приложения различными способами, в том числе:
 
@@ -234,10 +234,10 @@ ms.locfileid: "101645517"
 
 - **API** — для приложений, подключенных к облачной инфраструктуре, вы можете использовать API и средства в этих системах, чтобы начать инвентаризацию размещенных приложений. В среде Azure:
 
-  - Используйте командлет [Get-AzureWebsite](/powershell/module/servicemanagement/azure/get-azurewebsite?view=azuresmps-4.0.0&redirectedfrom=MSDN&preserve-view=true), чтобы получить сведения о веб-сайтах Azure.
+  - Используйте командлет [Get-AzureWebsite](/powershell/module/servicemanagement/azure.service/get-azurewebsite) , чтобы получить сведения о веб-сайтах Azure.
 
-  - Используйте командлет [Get-AzureRMWebApp](/powershell/module/azurerm.websites/get-azurermwebapp?view=azurermps-6.13.0&viewFallbackFrom=azurermps-6.2.0&preserve-view=true), чтобы получить сведения о веб-приложениях Azure.
-
+  - Используйте командлет [Get-AzureRMWebApp](/powershell/module/azurerm.websites/get-azurermwebapp) , чтобы получить сведения о веб-приложениях Azure.
+D
   - Все приложения, запущенные в Microsoft IIS, можно найти в командной строке Windows с помощью [AppCmd.exe](/iis/get-started/getting-started-with-iis/getting-started-with-appcmdexe#working-with-sites-applications-virtual-directories-and-application-pools).
 
   - Используйте [приложения](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference#application-entity) и [субъекты-службы](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference#serviceprincipal-entity) , чтобы получить сведения о приложении и экземпляре приложения в каталоге в Azure AD.
