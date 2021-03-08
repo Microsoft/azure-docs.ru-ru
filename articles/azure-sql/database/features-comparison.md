@@ -11,13 +11,13 @@ ms.topic: conceptual
 author: danimir
 ms.author: danil
 ms.reviewer: bonova, sstein, danil
-ms.date: 02/21/2021
-ms.openlocfilehash: 75fc4166614862c5ac48a72bacb6b7b19019d003
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/08/2021
+ms.openlocfilehash: 56f7a233e7098f18b727da3ce56c5fbe30a328a1
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101691915"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102447489"
 ---
 # <a name="features-comparison-azure-sql-database-and-azure-sql-managed-instance"></a>Сравнение функций: база данных SQL Azure и Управляемый экземпляр Azure SQL
 
@@ -30,13 +30,17 @@ ms.locfileid: "101691915"
 - Функции безопасности. [роли приложений](/sql/relational-databases/security/authentication-access/application-roles), [Динамическое маскирование данных](/sql/relational-databases/security/dynamic-data-masking) ([см. Руководство по началу работы](dynamic-data-masking-overview.md)), [безопасность на уровне строк](/sql/relational-databases/security/row-level-security)и обнаружение угроз — см. руководства по началу работы с [базой данных SQL](threat-detection-configure.md) и [управляемый экземпляр SQL](../managed-instance/threat-detection-configure.md).
 - Возможности с несколькими моделями — [Обработка графов](/sql/relational-databases/graphs/sql-graph-overview), [данные JSON](/sql/relational-databases/json/json-data-sql-server) ([см. Руководство по началу работы](json-features.md)), [OPENXML](/sql/t-sql/functions/openxml-transact-sql), [пространственные](/sql/relational-databases/spatial/spatial-data-sql-server), [OPENJSON](/sql/t-sql/functions/openjson-transact-sql)и [XML-индексы](/sql/t-sql/statements/create-xml-index-transact-sql).
 
-Azure управляет вашими базами данных и гарантирует их высокий уровень доступности. Некоторые функции, которые могут повлиять на высокий уровень доступности или не могут использоваться в мире PaaS, имеют ограниченную функциональность в базе данных SQL и SQL Управляемый экземпляр. Эти функции описаны в таблицах ниже. Если вам нужны дополнительные сведения о различиях, их можно найти на отдельных страницах для [базы данных SQL Azure](../managed-instance/transact-sql-tsql-differences-sql-server.md) или [управляемый экземпляр Azure SQL](../managed-instance/transact-sql-tsql-differences-sql-server.md).
+Azure управляет вашими базами данных и гарантирует их высокий уровень доступности. Некоторые функции, которые могут повлиять на высокий уровень доступности или не могут использоваться в мире PaaS, имеют ограниченную функциональность в базе данных SQL и SQL Управляемый экземпляр. Эти функции описаны в таблицах ниже.
+
+Если вам нужны дополнительные сведения о различиях, их можно найти на отдельных страницах:
+- [База данных SQL Azure](transact-sql-tsql-differences-sql-server.md)
+- [Управляемый экземпляр SQL Azure](../managed-instance/transact-sql-tsql-differences-sql-server.md)
 
 ## <a name="features-of-sql-database-and-sql-managed-instance"></a>Функции базы данных SQL и Управляемый экземпляр SQL
 
 В следующей таблице перечислены основные возможности SQL Server и приведены сведения о том, является ли эта функция частичной или полностью поддерживаемой в базе данных SQL Azure и Управляемый экземпляр SQL Azure, со ссылкой на дополнительные сведения о функции.
 
-| **Компонент** | **База данных SQL Azure** | **Управляемый экземпляр SQL Azure** |
+| **Возможность** | **База данных SQL Azure** | **Управляемый экземпляр SQL Azure** |
 | --- | --- | --- |
 | [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) | Да. Дополнительные сведения см. в статье [Always Encrypted: защита конфиденциальных данных в Базе данных SQL и хранение ключей шифрования в хранилище сертификатов Windows](always-encrypted-certificate-store-configure.md) и [Always Encrypted: защита конфиденциальных данных в Базе данных SQL и хранение ключей шифрования в хранилище ключей Azure](always-encrypted-azure-key-vault-configure.md). | Да. Дополнительные сведения см. в статье [Always Encrypted: защита конфиденциальных данных в Базе данных SQL и хранение ключей шифрования в хранилище сертификатов Windows](always-encrypted-certificate-store-configure.md) и [Always Encrypted: защита конфиденциальных данных в Базе данных SQL и хранение ключей шифрования в хранилище ключей Azure](always-encrypted-azure-key-vault-configure.md). |
 | [Группы доступности AlwaysOn](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server) | уровень [доступности 99,99-99.995%](high-availability-sla.md) гарантирован для каждой базы данных. Сведения об аварийном восстановлении см. в статье [Обзор обеспечения непрерывности бизнес-процессов с помощью Базы данных SQL Azure](business-continuity-high-availability-disaster-recover-hadr-overview.md). | [99,99 .% доступности](high-availability-sla.md) гарантируется для каждой базы данных и [не может управляться пользователем](../managed-instance/transact-sql-tsql-differences-sql-server.md#availability). Аварийное восстановление рассматривается в статье [Общие сведения о непрерывности бизнес-процессов с помощью базы данных SQL Azure](business-continuity-high-availability-disaster-recover-hadr-overview.md). Используйте [группы автоматической отработки отказа](auto-failover-group-overview.md) для настройки дополнительного управляемый экземпляр SQL в другом регионе. SQL Server экземпляры и база данных SQL не могут использоваться в качестве вторичных для Управляемый экземпляр SQL. |

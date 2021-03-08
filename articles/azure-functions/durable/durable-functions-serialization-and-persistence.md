@@ -5,18 +5,18 @@ author: ConnorMcMahon
 ms.topic: conceptual
 ms.date: 02/11/2021
 ms.author: azfuncdf
-ms.openlocfilehash: 34845afe0efd0131e0c568eac1169ddc10be5d47
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.openlocfilehash: ea4aaa1cdbe10e2db9cf619452558d104a2293ab
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100521165"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449379"
 ---
 # <a name="data-persistence-and-serialization-in-durable-functions-azure-functions"></a>Сохранение и сериализация данных в Устойчивые функции (функции Azure)
 
 Устойчивые функции автоматически сохраняет параметры функции, возвращаемые значения и другое состояние для устойчивой серверной части, чтобы обеспечить надежное выполнение. Однако объем и частота данных, сохраняемых в долговременном хранилище, может повлиять на производительность приложений и затраты на транзакции хранилища. В зависимости от типа данных, которые хранятся в вашем приложении, также может потребоваться учитывать политики хранения данных и конфиденциальности.
 
-## <a name="azure-storage"></a>Служба хранилища Azure
+## <a name="azure-storage"></a>Хранилище Azure
 
 По умолчанию Устойчивые функции сохраняет данные в очередях, таблицах и BLOB-объектах в указанной учетной записи [хранения Azure](https://azure.microsoft.com/services/storage/) .
 
@@ -111,7 +111,7 @@ namespace MyApplication
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            builder.Services.AddSingleton<IMessageSerializerSettingsFactory, CustomMessageSerializerSettingFactory>();
+            builder.Services.AddSingleton<IMessageSerializerSettingsFactory, CustomMessageSerializerSettingsFactory>();
             builder.Services.AddSingleton<IErrorSerializerSettingsFactory, CustomErrorSerializerSettingsFactory>();
         }
 

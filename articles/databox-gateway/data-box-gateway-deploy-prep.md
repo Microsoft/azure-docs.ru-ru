@@ -6,14 +6,14 @@ author: v-dalc
 ms.service: databox
 ms.subservice: gateway
 ms.topic: tutorial
-ms.date: 10/15/2020
+ms.date: 03/01/2021
 ms.author: alkohli
-ms.openlocfilehash: 40de216a9bcb173d9dfebf39d05fb9cb12579301
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: ceda5015770ad0b9898def181fa7199f119920db
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98937338"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101706101"
 ---
 # <a name="tutorial-prepare-to-deploy-azure-data-box-gateway"></a>Руководство по Подготовка Шлюза Azure Data Box к развертыванию
 
@@ -65,7 +65,7 @@ ms.locfileid: "98937338"
 - Главная система должна быть в состоянии выделить указанный ниже объем ресурсов для подготовки виртуального устройства Data Box.
   
   - Минимум четыре виртуальных процессора.
-  - Не менее 8 ГБ ОЗУ.
+  - Не менее 8 ГБ ОЗУ. Мы настоятельно рекомендуем не менее 16 ГБ ОЗУ.
   - Один сетевой интерфейс.
   - Диск ОС на 250 ГБ.
   - Виртуальный диск размером 2 ТБ для системных данных.

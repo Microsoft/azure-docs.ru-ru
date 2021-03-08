@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/24/2021
 ms.author: shhazam
-ms.openlocfilehash: c72fa87201fb0d7fdd526f0e6f4eeb2c35192fc2
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
+ms.openlocfilehash: 85a5edc1485cb5a1eeb4428b201380ad9ca89422
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100521651"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449175"
 ---
 # <a name="security-agent-authentication-methods"></a>Методы проверки подлинности агента безопасности
 
@@ -26,9 +26,8 @@ ms.locfileid: "100521651"
 
 Для каждого устройства, подключенного к защитнику для IoT в центре Интернета вещей, требуется модуль безопасности. Для проверки подлинности устройства защитник для Интернета вещей может использовать один из двух способов. Выберите метод, который лучше подходит для существующего решения IoT.
 
-> [!div class="checklist"]
-> * Секуритимодуле, параметр
-> * Параметр устройства
+- Секуритимодуле, параметр
+- Параметр устройства
 
 ## <a name="authentication-methods"></a>Методы проверки подлинности
 
@@ -101,7 +100,8 @@ ms.locfileid: "100521651"
     "HostName" : ""
 }
 ```
-## <a name="next-steps"></a>Дальнейшие шаги
+
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор агентов безопасности](security-agent-architecture.md)
 - [Развертывание агента безопасности](how-to-deploy-agent.md)

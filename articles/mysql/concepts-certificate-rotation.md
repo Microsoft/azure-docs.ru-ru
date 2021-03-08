@@ -6,18 +6,20 @@ ms.author: sumuth
 ms.service: mysql
 ms.topic: conceptual
 ms.date: 01/18/2021
-ms.openlocfilehash: 9ad2566188256dd23b0f479c2576636750e33b02
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 23fa3e93565066ce4b897bffe63164486efc179e
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101715111"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449889"
 ---
 # <a name="understanding-the-changes-in-the-root-ca-change-for-azure-database-for-mysql-single-server"></a>Основные сведения об изменениях в корневом ЦС для одного сервера базы данных Azure для MySQL
 
 Один сервер базы данных Azure для MySQL успешно выполнил изменение корневого сертификата **15 февраля 2021 (02/15/2021)** в рамках стандартных рекомендаций по обслуживанию и обеспечению безопасности. В этой статье приводятся дополнительные сведения об изменениях, затронутых ресурсах и действиях, которые необходимо выполнить, чтобы обеспечить поддержку подключения приложения к серверу базы данных.
 
 > [!NOTE]
+> Эта статья относится только к [базе данных Azure для MySQL — только для одного сервера](single-server-overview.md) . Для службы " [база данных Azure для MySQL — гибкий сервер](flexible-server/overview.md)" сертификат, необходимый для взаимодействия по протоколу SSL, — это [DigiCert глобальный корневой ЦС](https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem) .
+> 
 > Эта статья содержит ссылки на термин « _Ведомый_» термин, который корпорация Майкрософт больше не использует. Когда этот термин будет удален из программного обеспечения, мы удалим его из статьи.
 >
 

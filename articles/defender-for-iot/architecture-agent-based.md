@@ -8,17 +8,17 @@ author: shhazam-ms
 manager: rkarlin
 editor: ''
 ms.devlang: na
-ms.topic: conceptual
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 1/25/2021
 ms.author: shhazam
-ms.openlocfilehash: 3a7dabfed86dab463b38ae45278ead7f5acb5ef9
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
-ms.translationtype: MT
+ms.openlocfilehash: 51b1f639ada01eda06bdf6c938eef7dce2a379fc
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100521957"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102448614"
 ---
 # <a name="agent-based-solution-for-device-builders"></a>Решение на основе агента для разработчиков устройств
 
@@ -44,7 +44,7 @@ ms.locfileid: "100521957"
 
 :::image type="content" source="media/architecture/micro-agent-architecture.png" alt-text="Архитектура Micro Agent.":::
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="see-also"></a>См. также раздел
 
 [Вопросы и ответы о защитнике для IoT](resources-frequently-asked-questions.md)
 

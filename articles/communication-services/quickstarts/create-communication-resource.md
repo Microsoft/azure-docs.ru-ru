@@ -10,21 +10,21 @@ ms.date: 09/30/2020
 ms.topic: overview
 ms.service: azure-communication-services
 zone_pivot_groups: acs-plat-azp-net
-ms.openlocfilehash: d861f6bfbe38ad73715ef521a36cc097b8538c9b
-ms.sourcegitcommit: 2501fe97400e16f4008449abd1dd6e000973a174
+ms.openlocfilehash: f40da8b2c9f64da424d43a6679977cda5bf111df
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99820021"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101691779"
 ---
 # <a name="quickstart-create-and-manage-communication-services-resources"></a>Краткое руководство. Создание ресурсов Служб коммуникации Azure и управление ими
  
 [!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
 
-Приступите к работе со Службами коммуникации Azure, подготовив первый ресурс Служб коммуникации Azure. Ресурсы Служб коммуникации можно подготовить с помощью портала Azure или с помощью клиентской библиотеки управления .NET. Клиентская библиотека управления позволяет создавать, настраивать, обновлять и удалять ресурсы и интерфейсы с помощью [Azure Resource Manager](../../azure-resource-manager/management/overview.md), службы развертывания и управления Azure. Все функциональные возможности, доступные в клиентских библиотеках, доступны также на портале Azure. 
+Приступите к работе со Службами коммуникации Azure, подготовив первый ресурс Служб коммуникации Azure. Ресурсы служб коммуникации можно подготовить к работе с помощью [портала Microsoft Azure](https://portal.azure.com) или с помощью клиентской библиотеки управления .NET. Клиентская библиотека управления и портал Microsoft Azure позволяют создавать, настраивать, обновлять и удалять ресурсы и интерфейсы с помощью [Azure Resource Manager](../../azure-resource-manager/management/overview.md), службы развертывания и управления Azure. Все функциональные возможности, доступные в клиентских библиотеках, доступны также на портале Azure. 
 
 > [!WARNING]
-> Обратите внимание, что общедоступная предварительная версия Служб коммуникации Azure доступна только для США. Следует также отметить, что в общедоступной предварительной версии вы не сможете передать коммуникационные ресурсы в другую подписку.
+> Обратите внимание: службы коммуникации Azure доступны в нескольких географических регионах, однако для получения номера телефона ресурс должен иметь расположение данных со значением "US". Следует также отметить, что в общедоступной предварительной версии вы не сможете передать коммуникационные ресурсы в другую подписку.
 
 ::: zone pivot="platform-azp"
 [!INCLUDE [Azure portal](./includes/create-resource-azp.md)]

@@ -5,12 +5,12 @@ author: masnider
 ms.topic: conceptual
 ms.date: 08/18/2017
 ms.author: masnider
-ms.openlocfilehash: bba459be4408f4a4bc438bb33b0570a91e84f2cd
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 6dee9a845df305b06153d99c2bafe6d74524a139
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "75563366"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449209"
 ---
 # <a name="defragmentation-of-metrics-and-load-in-service-fabric"></a>Дефрагментация метрик и нагрузки в Service Fabric
 По умолчанию диспетчер кластерных ресурсов Service Fabric использует для метрик нагрузки стратегию распределения нагрузки. Обеспечение равномерного использования узлов позволяет избежать перегруженных и недогруженных точек, которые приводят к состязанию за ресурсы и их нецелесообразной растрате. Распределение рабочих нагрузок в кластере — самый безопасный способ минимизировать риск сбоев, так как единичный сбой не сможет вывести из строя значительную часть рабочей нагрузки. 
@@ -89,7 +89,7 @@ ClusterManifest.xml:
 
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Диспетчер кластерных ресурсов предоставляет много параметров для описания кластера. Чтобы узнать больше о них, ознакомьтесь с этой статьей, посвященной [описанию кластера Service Fabric](service-fabric-cluster-resource-manager-cluster-description.md)
+- В Cluster Resource Manager предусмотрено много параметров для описания кластера. Чтобы узнать больше о них, ознакомьтесь с этой статьей, посвященной [описанию кластера Service Fabric](service-fabric-cluster-resource-manager-cluster-description.md)
 - Метрики показывают, как диспетчер кластерных ресурсов Service Fabric управляет потреблением и емкостью в кластере. Дополнительные сведения о метриках и их настройке см. в [этой статье](service-fabric-cluster-resource-manager-metrics.md) .
 
 [Image1]:./media/service-fabric-cluster-resource-manager-defragmentation-metrics/balancing-defrag-compared.png

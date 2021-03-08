@@ -1,20 +1,20 @@
 ---
 title: Копирование данных в Dynamics (Common Data Service)
-description: Узнайте, как копировать данные из Microsoft Dynamics CRM или Microsoft Dynamics 365 (Common Data Service) в поддерживаемые хранилища данных-приемники или из поддерживаемых исходных хранилищ данных в Dynamics CRM или Dynamics 365 с помощью действия копирования в конвейере фабрики данных.
+description: Узнайте, как копировать данные из Microsoft Dynamics CRM или Microsoft Dynamics 365 (Common Data Service или Microsoft инверсия) в поддерживаемые хранилища данных-приемники или из поддерживаемых исходных хранилищ данных в Dynamics CRM или Dynamics 365 с помощью действия копирования в конвейере фабрики данных.
 ms.service: data-factory
 ms.topic: conceptual
 ms.author: jingwang
 author: linda33wj
 ms.custom: seo-lt-2019
-ms.date: 02/02/2021
-ms.openlocfilehash: d238a232d719c75244e6f9b825272957d2a4a4bc
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.date: 03/08/2021
+ms.openlocfilehash: b1e7511f7666455592b6d5f463a316c3354ec76b
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100381007"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102447458"
 ---
-# <a name="copy-data-from-and-to-dynamics-365-common-data-service-or-dynamics-crm-by-using-azure-data-factory"></a>Копирование данных из Dynamics 365 (Common Data Service) или Dynamics CRM и в эти решения с помощью фабрики данных Azure
+# <a name="copy-data-from-and-to-dynamics-365-common-data-servicemicrosoft-dataverse-or-dynamics-crm-by-using-azure-data-factory"></a>Копирование данных из Dynamics 365 (Common Data Service/Microsoft инверсия) или Dynamics CRM с помощью фабрики данных Azure
 
 [!INCLUDE[appliesto-adf-asa-md](includes/appliesto-adf-asa-md.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "100381007"
 - [Действие копирования](copy-activity-overview.md) с [поддерживаемой матрицей источника и приемника](copy-activity-overview.md)
 - [Действие поиска](control-flow-lookup-activity.md)
 
-Данные из Dynamics 365 (Common Data Service) или Dynamics CRM можно скопировать в любое хранилище данных, поддерживаемое в качестве приемника. В свою очередь, данные из любого хранилища данных, поддерживаемого в качестве источника, можно скопировать в Dynamics 365 (Common Data Service) или Dynamics CRM. Список хранилищ данных, поддерживаемых действием копирования в качестве источников и приемников, см. в таблице [Поддерживаемые хранилища данных](copy-activity-overview.md#supported-data-stores-and-formats) .
+Данные из Dynamics 365 (Common Data Service, Microsoft DataStore) или Dynamics CRM можно скопировать в любое поддерживаемое хранилище данных, которое является приемником. В свою очередь, данные из любого хранилища данных, поддерживаемого в качестве источника, можно скопировать в Dynamics 365 (Common Data Service) или Dynamics CRM. Список хранилищ данных, поддерживаемых действием копирования в качестве источников и приемников, см. в таблице [Поддерживаемые хранилища данных](copy-activity-overview.md#supported-data-stores-and-formats) .
 
 Этот соединитель Dynamics поддерживает версии Dynamics 7 – 9 для Интернет-и локальной среды. В частности:
 
@@ -73,7 +73,7 @@ ms.locfileid: "100381007"
 
 ### <a name="dynamics-365-and-dynamics-crm-online"></a>Dynamics 365 и Dynamics CRM Online
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство Type должно иметь значение "Dynamics", "Динамикскрм" или "Коммондатасервицефораппс". | Да |
 | deploymentType | Тип развертывания для экземпляра Dynamics. Для Dynamics Online значение должно быть "Online". | Да |
@@ -170,7 +170,7 @@ ms.locfileid: "100381007"
 
 Дополнительными свойствами, которые сравниваются с Dynamics Online, являются **имя узла** и **порт**.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство Type должно иметь значение "Dynamics", "Динамикскрм" или "Коммондатасервицефораппс". | Да. |
 | deploymentType | Тип развертывания для экземпляра Dynamics. Значение должно быть "OnPremisesWithIfd" для Dynamics в локальной среде с IFD.| Да. |
@@ -216,7 +216,7 @@ ms.locfileid: "100381007"
 
 Для копирования данных из и в Dynamics поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство Type набора данных должно иметь значение "DynamicsEntity", "Динамикскрментити" или "Коммондатасервицефораппсентити". |Да |
 | entityName | Логическое имя сущности, которое требуется получить. | Нет для источника, если для источника действия задано значение "запрос" и Да для приемника |
@@ -248,7 +248,7 @@ ms.locfileid: "100381007"
 
 Чтобы скопировать данные из Dynamics, раздел **источника** действия копирования поддерживает следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство Type источника действия копирования должно иметь значение "DynamicsSource", "Динамикскрмсаурце" или "Коммондатасервицефораппссаурце". | Да |
 | query | FetchXML — это собственный язык запросов, используемый в Dynamics Online и локальной среде. См. следующий пример. Дополнительные сведения см. в статье [Создание запросов с помощью FetchXML](/previous-versions/dynamicscrm-2016/developers-guide/gg328332(v=crm.8)). | No `entityName` , если в наборе данных указан |
@@ -316,7 +316,7 @@ ms.locfileid: "100381007"
 
 Чтобы скопировать данные в Dynamics, раздел **приемника** действия копирования поддерживает следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство Type приемника действия копирования должно иметь значение "DynamicsSink", "Динамикскрмсинк" или "Коммондатасервицефораппссинк". | Да. |
 | writeBehavior | Поведение операции при записи. Значение должно быть "Upsert". | Да |
@@ -365,6 +365,32 @@ ms.locfileid: "100381007"
 ]
 ```
 
+## <a name="retrieving-data-from-views"></a>Получение данных из представлений
+
+Чтобы получить данные из представлений Dynamics, необходимо получить сохраненный запрос представления и использовать запрос для получения данных.
+
+Существуют две сущности, которые хранят различные типы представлений: "сохраненный запрос" хранит системное представление, а "пользовательский запрос" сохраняет пользовательское представление. Чтобы получить сведения о представлениях, обратитесь к следующему FetchXML запросу и замените "ТАРЖЕТЕНТИТИ" на `savedquery` или `userquery` . Каждый тип сущности имеет больше доступных атрибутов, которые можно добавить в запрос в зависимости от ваших нужд. Дополнительные сведения о сущности [саведкуери](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/savedquery) и [сущности усеркуери](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/userquery).
+
+```xml
+<fetch top="5000" >
+  <entity name="<TARGETENTITY>">
+    <attribute name="name" />
+    <attribute name="fetchxml" />
+    <attribute name="returnedtypecode" />
+    <attribute name="querytype" />
+  </entity>
+</fetch>
+```
+
+Можно также добавить фильтры для фильтрации представлений. Например, добавьте следующий фильтр, чтобы получить представление с именем "Мои активные учетные записи" в сущности учетной записи.
+
+```xml
+<filter type="and" >
+    <condition attribute="returnedtypecode" operator="eq" value="1" />
+    <condition attribute="name" operator="eq" value="My Active Accounts" />
+</filter>
+```
+
 ## <a name="data-type-mapping-for-dynamics"></a>Сопоставление типов данных для Dynamics
 
 При копировании данных из Dynamics в следующей таблице показаны сопоставления типов данных Dynamics с промежуточными типами данных фабрики данных. Сведения о сопоставлении действия копирования с исходной схемой и типе данных, сопоставленном с приемником, см. в разделе [схемы и сопоставления типов данных](copy-activity-schema-and-type-mapping.md).
@@ -375,19 +401,19 @@ ms.locfileid: "100381007"
 |:--- |:--- |:--- |:--- |
 | AttributeTypeCode.BigInt | Long | ✓ | ✓ |
 | AttributeTypeCode.Boolean | Логическое | ✓ | ✓ |
-| AttributeType.Customer | Идентификатор GUID | ✓ | ✓ (См. [руководство](#writing-data-to-a-lookup-field)) |
+| AttributeType.Customer | Код GUID | ✓ | ✓ (См. [руководство](#writing-data-to-a-lookup-field)) |
 | AttributeType.DateTime | Datetime | ✓ | ✓ |
 | AttributeType.Decimal | Decimal | ✓ | ✓ |
 | AttributeType.Double | Double | ✓ | ✓ |
 | AttributeType.EntityName | Строка | ✓ | ✓ |
 | AttributeType.Integer | Int32 | ✓ | ✓ |
-| AttributeType.Lookup | Идентификатор GUID | ✓ | ✓ (См. [руководство](#writing-data-to-a-lookup-field)) |
+| AttributeType.Lookup | Код GUID | ✓ | ✓ (См. [руководство](#writing-data-to-a-lookup-field)) |
 | AttributeType.ManagedProperty | Логическое | ✓ | |
 | AttributeType.Memo | Строка | ✓ | ✓ |
 | AttributeType.Money | Decimal | ✓ | ✓ |
-| AttributeType.Owner | Идентификатор GUID | ✓ | ✓ (См. [руководство](#writing-data-to-a-lookup-field)) |
+| AttributeType.Owner | Код GUID | ✓ | ✓ (См. [руководство](#writing-data-to-a-lookup-field)) |
 | AttributeType.Picklist | Int32 | ✓ | ✓ |
-| AttributeType.Uniqueidentifier | Идентификатор GUID | ✓ | ✓ |
+| AttributeType.Uniqueidentifier | Код GUID | ✓ | ✓ |
 | AttributeType.String | Строка | ✓ | ✓ |
 | AttributeType.State | Int32 | ✓ | ✓ |
 | AttributeType.Status | Int32 | ✓ | ✓ |
@@ -429,5 +455,5 @@ ms.locfileid: "100381007"
 
 Дополнительные сведения о свойствах см. в разделе [действие поиска](control-flow-lookup-activity.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Список хранилищ данных, которые действие копирования в фабрике данных поддерживает как источники и приемники, см. в разделе [Поддерживаемые хранилища данных](copy-activity-overview.md#supported-data-stores-and-formats).

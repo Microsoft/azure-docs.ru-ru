@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 01/19/2021
+ms.date: 03/08/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: e0e71bc0e3a81b5ab2f455224ed2ed4281532d55
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.openlocfilehash: a43551adf8dbe1a03ac7f7b22d58d63aa8c2c503
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98952680"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102448427"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-a-facebook-account-using-azure-active-directory-b2c"></a>Настройка регистрации и входа с учетной записью Facebook через Azure Active Directory B2C
 
@@ -79,7 +79,11 @@ ms.locfileid: "98952680"
 1. Щелкните **Сохранить**.
 1. Чтобы проверить политику, выберите пункт **выполнить пользовательскую последовательность**.
 1. Для **приложения** выберите веб-приложение с именем *testapp1* , которое вы зарегистрировали ранее. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.
-1. Щелкните **выполнить поток пользователя**
+1. Нажмите кнопку **запустить поток пользователя** .
+1. На странице регистрации или входа выберите **Facebook** для входа с помощью учетной записи Facebook.
+
+Если процесс входа прошел успешно, браузер перенаправляется на `https://jwt.ms` , который отображает содержимое маркера, возвращенного Azure AD B2C.
+
 
 ::: zone-end
 
@@ -118,7 +122,10 @@ ms.locfileid: "98952680"
 1. Отправьте файл *TrustFrameworkExtensions.xml* в клиент.
 1. В разделе **Настраиваемые политики** выберите **B2C_1A_signup_signin**.
 1. В поле **выберите приложение** выберите веб-приложение с именем *testapp1* , которое вы зарегистрировали ранее. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.
-1. Щелкните **Запустить сейчас** и выберите Facebook, чтобы войти с учетной записью Facebook и проверить работу настраиваемой политики.
+1. Нажмите кнопку **Запустить сейчас** .
+1. На странице регистрации или входа выберите **Facebook** для входа с помощью учетной записи Facebook.
+
+Если процесс входа прошел успешно, браузер перенаправляется на `https://jwt.ms` , который отображает содержимое маркера, возвращенного Azure AD B2C.
 
 ::: zone-end
 

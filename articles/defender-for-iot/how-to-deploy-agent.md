@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/23/2019
 ms.author: mlottner
-ms.openlocfilehash: 2634ed819b8818632c58b9e471b0f26190e5f16b
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.openlocfilehash: 89ecf26778433a3f075f76905183f3fe866cb5db
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96339971"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102447271"
 ---
 # <a name="select-and-deploy-a-security-agent-on-your-iot-device"></a>Выбор и развертывание агента безопасности на устройстве IoT
 
@@ -28,11 +28,9 @@ ms.locfileid: "96339971"
 Агенты разрабатываются в виде проектов с открытым исходным кодом и доступны в двух разновидностях: <br> [C](https://aka.ms/iot-security-github-c)и [C#](https://aka.ms/iot-security-github-cs).
 
 Вы узнаете, как выполнять следующие задачи:
-
-> [!div class="checklist"]
-> * Сравнение разновидностей агента безопасности
-> * Обнаружение поддерживаемых платформ агентов
-> * Выберите подходящую версию агента для своего решения
+- Сравнение разновидностей агента безопасности
+- Обнаружение поддерживаемых платформ агентов
+- Выберите подходящую версию агента для своего решения
 
 ## <a name="understand-security-agent-options"></a>Общие сведения о параметрах агента безопасности
 

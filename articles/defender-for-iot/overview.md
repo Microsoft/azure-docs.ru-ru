@@ -8,16 +8,16 @@ author: shhazam-ms
 manager: rkarlin
 ms.author: shhazam
 ms.devlang: na
-ms.topic: conceptual
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/09/2020
-ms.openlocfilehash: de8638cbb4e39ccf6013e5a8d596417401700c8d
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
-ms.translationtype: MT
+ms.openlocfilehash: 4590396b0e867a3e545577767581dd1a951bfc50
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100521600"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102447390"
 ---
 # <a name="welcome-to-azure-defender-for-iot"></a>Добро пожаловать в защитник Azure для IoT
 
@@ -81,6 +81,6 @@ ms.locfileid: "100521600"
 
 Защитник Azure для Microsoft IoT Micro Agent включает исходный код, поэтому вы можете внедрить микроагент в встроенное по или настроить его так, чтобы он включал только необходимые возможности. Он также доступен в виде двоичного пакета или интегрирован непосредственно в другие решения Azure IoT. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="see-also"></a>См. также раздел
 
 [Архитектура защитника Azure для Интернета вещей](architecture.md)

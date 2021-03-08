@@ -1,6 +1,6 @@
 ---
-title: Начало работы
-description: Начните с понимания основного рабочего процесса для развертывания IoT.
+title: Краткое руководство. Приступая к работе
+description: В этом кратком руководстве вы узнаете, как начать изучение базового рабочего процесса для развертывания IoT.
 services: defender-for-iot
 ms.service: defender-for-iot
 documentationcenter: na
@@ -8,25 +8,29 @@ author: shhazam-ms
 manager: rkarlin
 editor: ''
 ms.devlang: na
-ms.topic: conceptual
+ms.topic: quickstart
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 2/18/2021
 ms.author: shhazam
-ms.openlocfilehash: c224dc3f919471e769717f308aff9ae58630d421
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
-ms.translationtype: MT
+ms.openlocfilehash: 487f9be432c908bf8ee1da858a9e45a18adffb8c
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101712765"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102447713"
 ---
-# <a name="get-started-with-defender-for-iot"></a>Начало работы с защитником для Интернета вещей
+# <a name="quickstart-get-started-with-defender-for-iot"></a>Краткое руководство. Начало работы с защитником для Интернета вещей
 
 В этой статье представлен обзор действий, которые необходимо выполнить для настройки защитника Azure для IoT. Процесс требует:
 
 - Зарегистрируйте подписку и датчики на портале защитника Azure для IoT.
 - Установите программное обеспечение датчика и локального консоль управления.
 - Выполните начальную активацию датчика и консоли управления.
+
+## <a name="prerequisites"></a>Предварительные требования
+
+None
 
 ## <a name="permission-requirements"></a>Требования к разрешениям
 
@@ -43,7 +47,7 @@ ms.locfileid: "101712765"
 | Обновить цены  |  |  ✓ | ✓ | ✓ |
 | Восстановить пароль  | ✓  |  ✓ | ✓ | ✓ |
 
-## <a name="1-identify-the-solution-infrastructure"></a>1. Указание инфраструктуры решения
+## <a name="identify-the-solution-infrastructure"></a>Поиск инфраструктуры решения
 
 **Уточнение потребностей в настройке сети**
 
@@ -55,7 +59,7 @@ ms.locfileid: "101712765"
 
 Рекомендуется вычислить приблизительное количество устройств, которые будут отслеживаться. Позже, при регистрации подписки Azure на портале, вам будет предложено ввести этот номер. Числа можно добавлять в интервале, равном 1 000 секундам. Число отслеживаемых устройств называется *зафиксированными устройствами*.
 
-## <a name="2-register-with-azure-defender-for-iot"></a>2. Регистрация в защитнике Azure для IoT
+## <a name="register-with-azure-defender-for-iot"></a>Регистрация в защитнике Azure для IoT
 
 Регистрация включает:
 
@@ -72,7 +76,7 @@ ms.locfileid: "101712765"
 
 Сведения о том, как отключение подписку, см. в разделе [Отключение a Subscription](how-to-manage-sensors-on-the-cloud.md#offboard-a-subscription).
 
-## <a name="3-install-and-set-up-the-on-premises-management-console"></a>3. Установите и настройте локальную консоль управления.
+## <a name="install-and-set-up-the-on-premises-management-console"></a>Установка и Настройка локальной консоли управления
 
 После получения локального консольного устройства управления выполните следующие действия.
 
@@ -88,7 +92,7 @@ ms.locfileid: "101712765"
 1. Установите программное обеспечение локальной консоли управления. Дополнительные сведения см. в разделе [защитник для установки IOT](how-to-install-software.md).
 1. Активируйте и настройте консоль управления. Дополнительные сведения см. [в разделе Активация и Настройка локальной консоли управления](how-to-activate-and-set-up-your-on-premises-management-console.md).
 
-## <a name="4-onboard-a-sensor"></a>4. подключение датчика
+## <a name="onboard-a-sensor"></a>Подключение датчика
 
 Подключите датчик, зарегистрировав его с помощью защитника Azure для IoT и загрузив файл активации датчика:
 
@@ -103,7 +107,7 @@ ms.locfileid: "101712765"
 
 Дополнительные сведения см. в статье подключение [и управление датчиками в защитнике для портала IOT](how-to-manage-sensors-on-the-cloud.md).
 
-## <a name="5-install-and-set-up-the-sensor"></a>5. Установка и настройка датчика
+## <a name="install-and-set-up-the-sensor"></a>Установка и настройка датчика
 
 Скачайте пакет ISO из Azure Defender для портала IoT, установите программное обеспечение и настройте датчик.
 
@@ -113,7 +117,7 @@ ms.locfileid: "101712765"
 1. Установите программное обеспечение датчика. Дополнительные сведения см. в разделе [защитник для установки IOT](how-to-install-software.md).
 1. Активируйте и настройте датчик. Дополнительные сведения см. [в разделе Вход и активация датчика](how-to-activate-and-set-up-your-sensor.md).
 
-## <a name="6-connect-sensors-to-an-on-premises-management-console"></a>6. Подключение датчиков к локальной консоли управления
+## <a name="connect-sensors-to-an-on-premises-management-console"></a>Подключение датчиков к локальной консоли управления
 
 Подключите датчики к консоли управления, чтобы убедиться в том, что:
 
@@ -125,12 +129,12 @@ ms.locfileid: "101712765"
 
 Дополнительные сведения см. в статье [Подключение датчиков к локальной консоли управления](how-to-activate-and-set-up-your-on-premises-management-console.md#connect-sensors-to-the-on-premises-management-console).
 
-## <a name="7-populate-azure-sentinel-with-alert-information-optional"></a>7. Заполнение Sentinel Azure сведениями о предупреждении (необязательно)
+## <a name="populate-azure-sentinel-with-alert-information-optional"></a>Заполнение Sentinel Azure сведениями о предупреждении (необязательно)
 
 Отправьте сведения об оповещении в Azure Sentinel, настроив метку Azure. См. статью [подключение данных из защитника для Интернета вещей к Azure Sentinel](how-to-configure-with-sentinel.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="next-steps"></a>Дальнейшие действия
 
-- [Добро пожаловать в защитник Azure для IoT](overview.md)
-
-- [Архитектура защитника Azure для Интернета вещей](architecture.md)
+> [!div class="nextstepaction"]
+> [Добро пожаловать в защитник Azure для IOT](overview.md) 
+>  [Архитектура защитника Azure для Интернета вещей](architecture.md)

@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: quickstart
 ms.date: 02/15/2021
 ms.custom: template-quickstart
-ms.openlocfilehash: 77ccf09903b6cff83b52d60d43d0c52533c9c1ad
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 49bf89d38edef6a9186cbdb5bb89a763339385b4
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102041694"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102175827"
 ---
 # <a name="set-up-your-azure-percept-dk-and-deploy-your-first-ai-model"></a>Настройка Azure Percept DK и развертывание первой модели ИИ
 
@@ -25,7 +25,7 @@ ms.locfileid: "102041694"
 - Azure Percept DK.
 - Главный компьютер под управлением Windows, Linux или OS X со связью Wi-Fi и веб-браузером.
 - Учетная запись Azure с активной подпиской. [Создать учетную запись бесплатно](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)
-- Учетная запись Azure должна иметь роль "владелец" или "участник" в подписке. Дополнительные сведения об определениях ролей в Azure
+- Учетная запись Azure должна иметь роль "владелец" или "участник" в подписке. Узнайте больше об [определениях ролей в Azure](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles).
 
 ### <a name="prerequisite-check"></a>Проверка предварительных условий
 
@@ -182,7 +182,7 @@ ms.locfileid: "102041694"
 
 ## <a name="view-your-device-in-the-azure-percept-studio-and-deploy-common-prebuilt-sample-apps"></a>Просмотр устройства в Azure Percept Studio и развертывание общих предварительно созданных примеров приложений
 
-1. Просмотрите список устройств на странице обзора Azure Percept. Страница обзора Azure Percept является отправной точкой для доступа ко многим различным рабочим процессам для начальной и расширенной разработки решений и моделей ИИ для пограничных устройств.
+1. Просмотрите список устройств на странице обзора [Azure Percept Studio](https://go.microsoft.com/fwlink/?linkid=2135819). Страница обзора Azure Percept является отправной точкой для доступа ко многим различным рабочим процессам для начальной и расширенной разработки решений и моделей ИИ для пограничных устройств.
 
     :::image type="content" source="./media/quickstart-percept-dk-setup/portal-01-get-device-list.png" alt-text="Просмотрите свой список устройств.":::
     

@@ -9,12 +9,12 @@ ms.subservice: workspace
 ms.date: 09/03/2020
 ms.author: saveenr
 ms.reviewer: jrasnick
-ms.openlocfilehash: fb7672a0d7bdd14415a51f2296c281e92cf5542a
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.openlocfilehash: d2f2ed99af288b72a4c53f07d3cd7ba8b46974c0
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96450649"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101693634"
 ---
 # <a name="quickstart-create-a-synapse-workspace"></a>Краткое руководство. Создание рабочей области Synapse
 В этом кратком руководстве описаны действия по созданию рабочей области Azure Synapse с помощью портала Azure.
@@ -22,7 +22,7 @@ ms.locfileid: "96450649"
 ## <a name="create-a-synapse-workspace"></a>Создание рабочей области Synapse
 
 1. Откройте [Портал Azure](https://portal.azure.com) и в поле поиска вверху выполните поиск по слову **Synapse**.
-1. В результатах поиска в разделе **Службы** выберите **Azure Synapse Analytics**.
+1. В поисковых результатах в разделе **Службы** выберите **Azure Synapse Analytics**.
 1. Выберите **Добавить** и создайте рабочую область.
 1. На вкладке **Основные сведения** присвойте рабочей области уникальное имя. В этом документе мы будем использовать **myworkspace**.
 1. Для создания рабочей области требуется учетная запись Azure Data Lake Storage 2-го поколения (ADLSGEN2). Проще всего создать новую учетную запись. Если вы хотите повторно использовать существующую учетную запись, вам потребуется выполнить дополнительную настройку. 
@@ -34,7 +34,8 @@ ms.locfileid: "96450649"
 1. Выберите команду **Просмотреть и создать** > **Создать**. Рабочая область будет готова через несколько минут.
 
 > [!NOTE]
-> После создания рабочей области Azure Synapse вы не сможете переместить ее в другой клиент Azure Active Directory. Если это сделать посредством миграции подписок или других действий, вы можете потерять доступ к артефактам в рабочей области.  
+> После создания рабочей области Azure Synapse вы не сможете переместить ее в другой клиент Azure Active Directory. Если это сделать посредством миграции подписок или других действий, вы можете потерять доступ к артефактам в рабочей области.
+> Кроме того, в настоящее время невозможно создать рабочую область Azure Synapse в подписке [поставщика облачных решений (CSP)](https://docs.microsoft.com/partner-center/csp-overview).
 
 ## <a name="open-synapse-studio"></a>Открытие Synapse Studio
 

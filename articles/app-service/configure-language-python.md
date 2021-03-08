@@ -5,12 +5,12 @@ ms.topic: quickstart
 ms.date: 02/01/2021
 ms.reviewer: astay; kraigb
 ms.custom: mvc, seodec18, devx-track-python, devx-track-azurecli
-ms.openlocfilehash: 83c49eea8bda10d665c0a08666276e905c60c584
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.openlocfilehash: cfbbb7064fcadc06714b237066bb6a009246baac
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99493708"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101709093"
 ---
 # <a name="configure-a-linux-python-app-for-azure-app-service"></a>Настройка приложения Python в Linux для Службы приложений Azure
 
@@ -372,6 +372,7 @@ if 'X-Forwarded-Proto' in request.headers and request.headers['X-Forwarded-Proto
 - [Приложение не отображается — отображается приложение по умолчанию](#app-doesnt-appear)
 - [Приложение не отображается — выдается сообщение "Служба недоступна"](#service-unavailable)
 - [Не удалось найти setup.py или requirements.txt](#could-not-find-setuppy-or-requirementstxt)
+- [Ошибка ModuleNotFoundError при запуске](#modulenotfounderror-when-app-starts)
 - [Пароли не отображаются при вводе в сеансе SSH](#other-issues)
 - [Команды в сеансе SSH выглядят обрезанными](#other-issues)
 - [Статические ресурсы не отображаются в приложении Django](#other-issues)
@@ -404,6 +405,10 @@ if 'X-Forwarded-Proto' in request.headers and request.headers['X-Forwarded-Proto
 - **В потоке журналов отображается сообщение Could not find setup.py or requirements.txt; Not running pip install (Не удалось найти setup.py или requirements.txt. Не запущена установка pip)** . Процессу сборки Oryx не удалось найти файл *requirements.txt*.
 
     - Подключитесь к контейнеру веб-приложения через [SSH](#open-ssh-session-in-browser) и убедитесь, что файл *requirements.txt* имеет правильное имя и размещен в папке *site/wwwroot*. Если он там отсутствует, убедитесь, что он существует в репозитории и включен в развертывание. Если он находится в отдельной папке, переместите его в корневую папку.
+
+#### <a name="modulenotfounderror-when-app-starts"></a>Ошибка ModuleNotFoundError при запуске приложения
+
+Если отображается ошибка `ModuleNotFoundError: No module named 'example'`, это означает, что Python не удалось найти один или несколько модулей при запуске приложения. Чаще всего это происходит при развертывании виртуальной среды с помощью кода. Виртуальные среды не являются переносимыми, поэтому их не следует развертывать с помощью кода приложения. Вместо этого позвольте Oryx создать виртуальную среду и установить пакеты в веб-приложение, создав параметр приложения `SCM_DO_BUILD_DURING_DEPLOYMENT` и задав для него значение `1`. Тогда Oryx будет устанавливать ваши пакеты при каждом развертывании в Службе приложений. Дополнительные сведения см. [в этой статье о переносимости виртуальных сред](https://azure.github.io/AppService/2020/12/11/cicd-for-python-apps.html).
 
 #### <a name="other-issues"></a>Другие проблемы
 

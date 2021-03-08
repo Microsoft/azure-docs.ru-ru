@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/09/2020
 ms.author: mlottner
-ms.openlocfilehash: 4d99cdbb2f50d04eff790cdfe675d0f8031c48a9
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.openlocfilehash: a4223dbc913b7b46cf73c0ed99f607fff67b7e67
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100517184"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102448070"
 ---
 # <a name="deploy-a-defender-for-iot-c-based-security-agent-for-windows"></a>Развертывание агента безопасности на основе C# для Windows IoT
 
@@ -27,11 +27,10 @@ ms.locfileid: "100517184"
 
 Из этого руководства вы узнаете, как выполнить следующие задачи:
 
-> [!div class="checklist"]
-> * Установка
-> * Проверка развертывания
-> * Удаление агента
-> * Диагностика
+- Установка
+- Проверка развертывания
+- Удаление агента
+- Диагностика
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -97,7 +96,7 @@ Get-Help пример:    ```Get-Help .\InstallSecurityAgent.ps1```
     .\InstallSecurityAgent.ps1 -Uninstall
     ```
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 Если агент не запускается, включите ведение журнала (по умолчанию ведение журнала *отключено*), чтобы просмотреть дополнительные сведения.
 
@@ -138,7 +137,7 @@ Get-Help пример:    ```Get-Help .\InstallSecurityAgent.ps1```
 
    Расположение файла журнала: `.\IoTAgentLog.log`.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Ознакомьтесь с [обзором](overview.md) службы "защитник для Интернета вещей"
 * Дополнительные сведения о защитнике для [архитектуры](architecture.md) IOT

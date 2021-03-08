@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.service: iot-dps
 services: iot-dps
 ms.custom: mvc
-ms.openlocfilehash: 644635d1ab7b0a43c8df3e10bbbd02d1ea67a94a
-ms.sourcegitcommit: 32c521a2ef396d121e71ba682e098092ac673b30
+ms.openlocfilehash: e1bd521e9798b09f7930b43ab95c7cd7ef9e693d
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91297238"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101737925"
 ---
 # <a name="quickstart-set-up-the-iot-hub-device-provisioning-service-with-the-azure-portal"></a>Краткое руководство. Настройка службы подготовки устройств для Центра Интернета вещей на портале Azure
 
@@ -25,8 +25,9 @@ ms.locfileid: "91297238"
 * использовать портал Azure для создания службы подготовки устройств для Центра Интернета вещей и получить область идентификаторов;
 * связать Центр Интернета вещей со службой подготовки устройств;
 
+## <a name="prerequisites"></a>Предварительные требования
 
-Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
+Чтобы начать работу с этой статьей, вам потребуется подписка Azure. Вы можете создать [бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), если у вас еще ее нет.
 
 
 ## <a name="create-an-iot-hub"></a>Создание Центра Интернета вещей

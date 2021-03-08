@@ -6,12 +6,12 @@ ms.suite: integration
 ms.reviewer: estfan, logicappspm, az-logic-apps-dev
 ms.topic: conceptual
 ms.date: 03/05/2021
-ms.openlocfilehash: 941d866fbdea0efc5775bccd08e0235b1629fae0
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: ab2d7c23e69c73c78c852de722733e8f0d09fcec
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102440995"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449736"
 ---
 # <a name="create-stateful-and-stateless-workflows-in-visual-studio-code-with-the-azure-logic-apps-preview-extension"></a>Создание рабочих процессов с отслеживанием состояния и без отслеживания состояния в Visual Studio Code с помощью расширения Azure Logic Apps (Предварительная версия)
 
@@ -312,6 +312,9 @@ ms.locfileid: "102440995"
 Вы можете создать собственные встроенные соединители для любой необходимой службы с помощью [предварительной версии платформы расширяемости выпуска](https://techcommunity.microsoft.com/t5/integrations-on-azure/azure-logic-apps-running-anywhere-built-in-connector/ba-p/1921272). Подобно встроенным соединителям, таким как служебная шина Azure и SQL Server, эти соединители обеспечивают более высокую пропускную способность, низкую задержку, локальное подключение и выполняются в том же процессе, что и среда выполнения предварительной версии.
 
 Возможность создания в настоящее время доступна только в Visual Studio Code, но не включена по умолчанию. Чтобы создать эти соединители, необходимо сначала преобразовать проект из набора расширений (Node.js) в пакет NuGet на основе пакетов (.NET).
+
+> [!IMPORTANT]
+> Это действие является односторонней операцией, которую нельзя отменить.
 
 1. На панели обозревателя в корневом каталоге проекта наведите указатель мыши на любую пустую область под всеми другими файлами и папками, откройте контекстное меню и выберите пункт **преобразовать в проект приложения логики на основе NuGet**.
 

@@ -2,19 +2,19 @@
 title: Общие сведения о Kubernetes с поддержкой Azure Arc
 services: azure-arc
 ms.service: azure-arc
-ms.date: 02/19/2021
+ms.date: 03/03/2021
 ms.topic: overview
 author: mlearned
 ms.author: mlearned
 description: В этой статье представлен обзор Kubernetes с поддержкой Azure Arc.
 keywords: Kubernetes, Arc, Azure, контейнеры
 ms.custom: references_regions
-ms.openlocfilehash: 42a04bb349b2acbd68c7088bc0348deda1ee09e1
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: b3296aa1c1d5d463cc7f4cb932b44ad76632e19e
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101652274"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102121598"
 ---
 # <a name="what-is-azure-arc-enabled-kubernetes"></a>Что представляет собой Azure Arc с поддержкой Kubernetes?
 
@@ -66,4 +66,6 @@ Kubernetes с поддержкой Azure Arc в настоящее время д
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Подключение кластера к Azure Arc](./quickstart-connect-cluster.md)
+Узнайте, как подключить кластер к Azure Arc.
+> [!div class="nextstepaction"]
+> [Подключение кластера к Azure Arc](./quickstart-connect-cluster.md)

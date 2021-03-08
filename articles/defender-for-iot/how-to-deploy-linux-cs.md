@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/09/2020
 ms.author: mlottner
-ms.openlocfilehash: 48737831440a1402b6974955b4da61a4216b011f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: ec26cd0b66b6d08d8bd686d8f3e5ad8011df10b1
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "90939479"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449770"
 ---
 # <a name="deploy-defender-for-iot-c-based-security-agent-for-linux"></a>Развертывание агента безопасности на основе C# для Azure IoT для Linux
 
@@ -27,11 +27,10 @@ ms.locfileid: "90939479"
 
 Из этого руководства вы узнаете, как выполнить следующие задачи:
 
-> [!div class="checklist"]
-> * Установка
-> * Проверка развертывания
-> * Удаление агента
-> * Диагностика
+- Установка
+- Проверка развертывания
+- Удаление агента
+- Диагностика
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -80,7 +79,7 @@ ms.locfileid: "90939479"
 > [!NOTE]
 > Удаление не приводит к удалению всех ранее отсутствующих необходимых компонентов, которые были установлены во время установки.
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 1. Проверьте состояние развертывания, выполнив следующую команду:
 
@@ -119,7 +118,7 @@ ms.locfileid: "90939479"
 
        Измените путь к расположению файла в соответствии с именем, выбранным для значения **logFilePath** на шаге 2.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь с [обзором](overview.md) службы "защитник для Интернета вещей"
 - Дополнительные сведения о защитнике для [архитектуры](architecture.md) IOT

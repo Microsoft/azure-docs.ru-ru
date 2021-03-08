@@ -5,12 +5,12 @@ author: cgillum
 ms.topic: overview
 ms.date: 12/17/2019
 ms.author: azfuncdf
-ms.openlocfilehash: 496b315e23beeb97d08befca13e05c4797268f36
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: 8b1c4077c036cbb75738115437d29ffd14b160ff
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "85341560"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101723679"
 ---
 # <a name="entity-functions"></a>Функции сущностей
 
@@ -24,7 +24,10 @@ ms.locfileid: "85341560"
 
 Сущности похожи на небольшие службы, которые взаимодействуют через сообщения. Каждая сущность имеет уникальный идентификатор и внутреннее состояние (если оно существует). Подобно службам или объектам, сущности выполняют операции в ответ на соответствующие запросы. Во время выполнения операция может изменять внутреннее состояние сущности. Кроме того, она может вызывать внешние службы и ожидать ответа. Сущности взаимодействуют с другими сущностями, средствами оркестрации и клиентами, используя сообщения, которые неявно отправляются через надежные очереди. 
 
-Во избежание конфликтов все операции с одной сущностью гарантированно выполняются последовательно, то есть одна за другой. 
+Во избежание конфликтов все операции с одной сущностью гарантированно выполняются последовательно, то есть одна за другой.
+
+> [!NOTE]
+> При вызове сущность полностью обрабатывает свои полезные данные, а затем планирует новое выполнение для активации при поступлении входных данных в будущем. В результате журналы выполнения сущности могут содержать сведения о дополнительном выполнении после каждого вызова сущности. Так и должно быть.
 
 ### <a name="entity-id"></a>Идентификатор сущности
 Доступ к сущностям осуществляется с помощью уникального *идентификатора сущности*. Идентификатор сущности — это просто пара строк, с помощью которых уникально идентифицируется экземпляр сущности. В ее состав входит:
@@ -149,7 +152,48 @@ module.exports = df.entity(function(context) {
     }
 });
 ```
+# <a name="python"></a>[Python](#tab/python)
 
+### <a name="example-python-entity"></a>Пример: сущность Python
+
+Ниже приведен код примера сущности `Counter`, реализованной в виде устойчивой функции на Python.
+
+**Counter/function.json**
+```json
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "context",
+      "type": "entityTrigger",
+      "direction": "in"
+    }
+  ]
+}
+```
+
+**Counter/__init__.py**
+```Python
+import azure.functions as func
+import azure.durable_functions as df
+
+
+def entity_function(context: df.DurableEntityContext):
+    current_value = context.get_state(lambda: 0)
+    operation = context.operation_name
+    if operation == "add":
+        amount = context.get_input()
+        current_value += amount
+    elif operation == "reset":
+        current_value = 0
+    elif operation == "get":
+        context.set_result(current_value)
+    context.set_state(current_value)
+
+
+
+main = df.Entity.create(entity_function)
+```
 ---
 
 ## <a name="access-entities"></a>Доступ к сущностям
@@ -201,6 +245,19 @@ module.exports = async function (context) {
 };
 ```
 
+# <a name="python"></a>[Python](#tab/python)
+
+```Python
+from azure.durable_functions import DurableOrchestrationClient
+import azure.functions as func
+
+
+async def main(req: func.HttpRequest, starter: str, message):
+    client = DurableOrchestrationClient(starter)
+    entityId = df.EntityId("Counter", "myCounter")
+    await client.signal_entity(entityId, "add", 1)
+```
+
 ---
 
 *Сигнализация* означает, что вызов API сущности является односторонним и асинхронным. Клиентская функция не может получить информацию о том, когда сущность обработала операцию. Также клиентская функция не может получить результирующие значения и (или) исключения. 
@@ -235,6 +292,11 @@ module.exports = async function (context) {
     return stateResponse.entityState;
 };
 ```
+
+# <a name="python"></a>[Python](#tab/python)
+
+> [!NOTE]
+> В настоящее время Python не поддерживает чтение состояний сущностей из клиента. Вместо этого используйте метод `callEntity` оркестратора.
 
 ---
 
@@ -279,6 +341,21 @@ module.exports = df.orchestrator(function*(context){
 > [!NOTE]
 > JavaScript в настоящее время не поддерживает передачу сигнала сущности из оркестратора. Используйте вместо этого `callEntity`.
 
+# <a name="python"></a>[Python](#tab/python)
+
+```Python
+import azure.functions as func
+import azure.durable_functions as df
+
+
+def orchestrator_function(context: df.DurableOrchestrationContext):
+    entityId = df.EntityId("Counter", "myCounter")
+    current_value = yield context.call_entity(entityId, "get")
+    if current_value < 10:
+        context.signal_entity(entityId, "add", 1)
+    return state
+```
+
 ---
 
 Только оркестрации могут вызывать сущности и получать ответ, который может быть либо возвращаемым значением, либо исключением. Клиентские функции, использующие [клиентскую привязку](durable-functions-bindings.md#entity-client), могут сигнализировать только сущностям.
@@ -318,6 +395,11 @@ module.exports = df.orchestrator(function*(context){
         context.df.setState(currentValue + amount);
         break;
 ```
+
+# <a name="python"></a>[Python](#tab/python)
+
+> [!NOTE]
+> Python пока не поддерживает передачу сигналов между сущностями. Вместо этого для передачи сигналов в сущности используйте оркестратор.
 
 ---
 
@@ -421,7 +503,6 @@ public static async Task<bool> TransferFundsAsync(
 * Шаблоны запросов и ответов в сущностях ограничены оркестрацией. Из сущностей допускается только односторонний обмен сообщениями (отправка "сигналов"), как в исходной субъектной модели. Это отличает их от зерен в проекте Orleans. 
 * Устойчивые сущности не поддерживают взаимоблокировку. В проекте Orleans может происходить взаимоблокировка (и она не будет устранена до истечения времени ожидания).
 * Устойчивые сущности можно использовать совместно с устойчивой оркестрацией вместе с поддержкой механизмов распределенной блокировки. 
-
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

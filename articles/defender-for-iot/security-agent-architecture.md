@@ -1,6 +1,6 @@
 ---
-title: Обзор агентов безопасности
-description: Общие сведения об архитектуре агента безопасности для агентов, используемых в службе "защитник Azure для IoT".
+title: Краткое руководство. Обзор агентов безопасности
+description: В этом кратком руководстве вы узнаете, как определить архитектуру агента безопасности для агентов, используемых в службе "защитник Azure для IoT".
 services: defender-for-iot
 ms.service: defender-for-iot
 documentationcenter: na
@@ -8,19 +8,19 @@ author: shhazam-ms
 manager: rkarlin
 editor: ''
 ms.devlang: na
-ms.topic: conceptual
+ms.topic: quickstart
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/24/2021
 ms.author: shhazam
-ms.openlocfilehash: ff837fe88f878c522366b2b6bc19a1ef3954b667
-ms.sourcegitcommit: 2501fe97400e16f4008449abd1dd6e000973a174
-ms.translationtype: MT
+ms.openlocfilehash: aceeaec63eb637002352f5c503f57890033b0381
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99820659"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449243"
 ---
-# <a name="security-agent-reference-architecture"></a>Эталонная архитектура агента безопасности
+# <a name="quickstart-security-agent-reference-architecture"></a>Краткое руководство. Эталонная архитектура агента безопасности
 
 Защитник Azure для Интернета вещей предоставляет эталонную архитектуру для агентов безопасности, которые заводят в журнал, обрабатывают, объединяют и отправляют данные безопасности через центр Интернета вещей.
 
@@ -41,6 +41,10 @@ ms.locfileid: "99820659"
 - [Защитник для агента на основе IoT C](https://github.com/Azure/Azure-IoT-Security-Agent-C)
 - [Защитник для агента на основе C# для Интернета вещей](https://github.com/Azure/Azure-IoT-Security-Agent-CS)
 
+## <a name="prerequisites"></a>Предварительные требования
+
+None
+
 ## <a name="agent-supported-platforms"></a>Поддерживаемые в агенте платформы
 
 Защитник для Интернета вещей предлагает разные агенты установки для 32 и 64-разрядных версий Windows, а также один и тот же для 32 и 64-bit Linux. Убедитесь, что у вас есть правильный установщик агента для каждого устройства в соответствии со следующей таблицей.
@@ -51,14 +55,11 @@ ms.locfileid: "99820659"
 | 64-разрядная | C# или C | C# | Мы рекомендуем использовать агент C для устройств с более ограниченными или минимальными ресурсами устройств. |
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье вы получите общий обзор архитектуры модуля безопасности для центра Интернета вещей и доступных установщиков.
 
 Чтобы продолжить знакомство с защитником для развертывания IoT, используйте следующие статьи:
 
-- Общие сведения о [методах проверки подлинности агента безопасности](concept-security-agent-authentication-methods.md)
-- Выбор и развертывание [агента безопасности](how-to-deploy-agent.md)
-- Ознакомьтесь с [предварительными требованиями](quickstart-system-prerequisites.md) к защитнику для системы IOT
-- Узнайте, как [включить защитник для службы IOT в центре Интернета вещей](quickstart-onboard-iot-hub.md)
-- Дополнительные сведения о службе из [защитника для Интернета вещей: вопросы и ответы](resources-frequently-asked-questions.md)
+> [!div class="nextstepaction"]
+> [методы проверки подлинности агента безопасности](concept-security-agent-authentication-methods.md)

@@ -11,12 +11,12 @@ adobe-target: true
 adobe-target-activity: DocsExp–386541–A/B–Enhanced-Readability-Quickstarts–2.19.2021
 adobe-target-experience: Experience B
 adobe-target-content: ./app-service-web-tutorial-custom-domain-uiex
-ms.openlocfilehash: b3ff1b344852d57f0effbd978c06aa617682ea4f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 79599ce04b93409c67342be73cf88d5e20621c1d
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101720331"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102182593"
 ---
 # <a name="tutorial-map-an-existing-custom-dns-name-to-azure-app-service"></a>Руководство по Сопоставление существующего настраиваемого DNS-имени со Службой приложений Azure
 
@@ -144,7 +144,7 @@ ms.locfileid: "101720331"
 
 1. В левой области страницы приложения на портале Azure выберите **Личные домены**.
 
-    ![Снимок экрана с меню "Личные домены".](./media/app-service-web-tutorial-custom-domain/custom-domain-menu.png)
+    ![Снимок экрана: меню "Личные домены".](./media/app-service-web-tutorial-custom-domain/custom-domain-menu.png)
 
 1. На странице **Личные домены** приложения добавьте в список полное настраиваемое DNS-имя (`www.contoso.com`).
 
@@ -185,7 +185,7 @@ ms.locfileid: "101720331"
 
 1. В левой области страницы приложения на портале Azure выберите **Личные домены**.
 
-   ![Снимок экрана с меню "Личные домены".](./media/app-service-web-tutorial-custom-domain/custom-domain-menu.png)
+   ![Снимок экрана: меню "Личные домены".](./media/app-service-web-tutorial-custom-domain/custom-domain-menu.png)
 
 1. На странице **Личные домены** скопируйте IP-адрес приложения.
 
@@ -277,7 +277,7 @@ ms.locfileid: "101720331"
 
 1. В левой области страницы приложения на портале Azure выберите **Личные домены**.
 
-    ![Снимок экрана с меню "Личные домены".](./media/app-service-web-tutorial-custom-domain/custom-domain-menu.png)
+    ![Снимок экрана: меню "Личные домены".](./media/app-service-web-tutorial-custom-domain/custom-domain-menu.png)
 
 1. Нажмите кнопку **Добавить личный домен**.
 
@@ -308,10 +308,7 @@ ms.locfileid: "101720331"
 
 ## <a name="resolve-404-not-found"></a>Устранение ошибки 404 Not Found (Не найдено)
 
-Если появляется ошибка HTTP 404 (не найдено) при переходе по URL-адресу вашего личного домена, убедитесь, что этот домен обеспечивает разрешение IP-адреса приложения с помощью <a href="https://www.whatsmydns.net/" target="_blank">WhatsmyDNS.net</a>. Если нет, это может быть вызвано вследствие любой из указанных ниже причин.
-
-- На настроенном личном домене отсутствует запись A и запись CNAME.
-- В кэше клиента браузера сохранен старый IP-адрес вашего домена. Выполните очистку кэша и еще раз проверьте разрешение DNS. На компьютере Windows кэш можно очистить с помощью команды `ipconfig /flushdns`.
+Если появляется ошибка "HTTP 404 (не найдено)" при переходе по URL-адресу вашего личного домена, убедитесь, что этот домен разрешает IP-адрес приложения, воспользовавшись сайтом <a href="https://www.nslookup.io/" target="_blank">nslookup.io</a>. Если это не так, с помощью того же сайта убедитесь, что записи A и CNAME настроены правильно. Если IP-адрес разрешается правильно, но по-прежнему возникает ошибка 404, возможно, в кэше браузера сохранен старый IP-адрес вашего домена. Выполните очистку кэша и еще раз проверьте разрешение DNS. На компьютере Windows кэш можно очистить с помощью команды `ipconfig /flushdns`.
 
 ## <a name="migrate-an-active-domain"></a>Перенос активного домена
 

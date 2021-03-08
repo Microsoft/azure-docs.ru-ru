@@ -7,15 +7,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 11/09/2020
+ms.date: 03/08/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 81a1263d0eacbffa77e2e35e4594e23235394183
-ms.sourcegitcommit: 6172a6ae13d7062a0a5e00ff411fd363b5c38597
+ms.openlocfilehash: e867fee753fb9db530db2b2015c3aea9280bc16f
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97108677"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102448650"
 ---
 # <a name="localization-string-ids"></a>Идентификаторы строк локализации
 
@@ -357,7 +357,7 @@ ms.locfileid: "97108677"
 | ID | Значение по умолчанию |
 | -- | ------------- |
 |intro_msg| Проверка не требуется. Нажмите кнопку "Отправить".|
-|success_send_code_msg | Код проверки отправлен на ваш адрес. Скопируйте его в поле ввода ниже.|
+|success_send_code_msg | Код проверки отправлен. Скопируйте его в поле ввода ниже.|
 |failure_send_code_msg | Возникли проблемы с проверкой адреса электронной почты. Введите допустимый адрес электронной почты и повторите попытку.|
 |success_verify_code_msg | Адрес электронной почты проверен. Вы можете продолжать работу.|
 |failure_verify_code_msg | Возникли проблемы с проверкой адреса электронной почты. Повторите попытку.|

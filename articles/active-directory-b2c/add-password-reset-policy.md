@@ -8,16 +8,16 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/02/2021
+ms.date: 03/08/2021
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: b82d573b7d8a65447d75aa8f017c87795bbef6cd
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: fa34e8ea71c307b75a3f345861f8ed99d131b3fd
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171660"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102447934"
 ---
 # <a name="set-up-a-password-reset-flow-in-azure-active-directory-b2c"></a>Настройка потока сброса пароля в Azure Active Directory B2C
 
@@ -203,6 +203,24 @@ ms.locfileid: "102171660"
     ```xml
     <ClaimsExchange Id="ForgotPasswordExchange" TechnicalProfileReferenceId="ForgotPassword" />
     ```
+    
+1. Добавьте следующий шаг оркестрации между текущим шагом и следующим шагом. Новый добавляемый шаг оркестрации проверяет, `isForgotPassword` существует ли утверждение. Если утверждение существует, вызывается [подпапка сброса пароля](#add-the-password-reset-sub-journey). 
+
+    ```xml
+    <OrchestrationStep Order="3" Type="InvokeSubJourney">
+      <Preconditions>
+        <Precondition Type="ClaimsExist" ExecuteActionsIf="false">
+          <Value>isForgotPassword</Value>
+          <Action>SkipThisOrchestrationStep</Action>
+        </Precondition>
+      </Preconditions>
+      <JourneyList>
+        <Candidate SubJourneyReferenceId="PasswordReset" />
+      </JourneyList>
+    </OrchestrationStep>
+    ```
+    
+1. После добавления нового шага оркестрации перенумеровать шаги последовательно без пропуска целых чисел от 1 до N.
 
 ### <a name="set-the-user-journey-to-be-executed"></a>Настройка пути взаимодействия пользователя
 
@@ -262,7 +280,7 @@ ms.locfileid: "102171660"
 1. Пользователь выбирает ссылку **забыли пароль?** . Azure AD B2C возвращает код ошибки AADB2C90118 для приложения.
 1. Приложение обрабатывает код ошибки и инициирует новый запрос авторизации. В запросе авторизации указывается имя политики сброса пароля, например **B2C_1_pwd_reset**.
 
-![Поток сброса пароля](./media/add-password-reset-policy/password-reset-flow-legacy.png)
+![Поток пользователя для сброса устаревшего пароля](./media/add-password-reset-policy/password-reset-flow-legacy.png)
 
 Чтобы увидеть пример, рассмотрим [простой пример ASP.NET](https://github.com/AzureADQuickStarts/B2C-WebApp-OpenIDConnect-DotNet-SUSI), демонстрирующий Связывание пользовательских потоков.
 

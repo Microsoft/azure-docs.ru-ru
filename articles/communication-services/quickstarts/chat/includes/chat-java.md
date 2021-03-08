@@ -10,12 +10,12 @@ ms.date: 9/1/2020
 ms.topic: include
 ms.custom: include file
 ms.author: mikben
-ms.openlocfilehash: 6a075ae721d767faf25e4774dd545d36eedfaef4
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: b402dec76f88bfdb0bc4758f94cc6e8e279d8040
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100379688"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750422"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -84,6 +84,8 @@ mvn archetype:generate -DgroupId=com.communication.quickstart -DartifactId=commu
 ## <a name="create-a-chat-client"></a>Создание клиента чата
 Чтобы создать клиент чата, вы будете использовать конечную точку Служб коммуникации и маркер доступа, который был создан на шаге предварительных требований. Маркеры доступа пользователей позволяют создавать клиентские приложения, которые напрямую проходят проверку подлинности в Службах коммуникации Azure. После создания этих маркеров на сервере передайте их обратно клиентскому устройству. Для передачи маркера клиенту чата необходимо использовать класс CommunicationTokenCredential из общей клиентской библиотеки. 
 
+Дополнительные сведения об [архитектуре чатов](../../../concepts/chat/concepts.md)
+
 При добавлении операторов импорта обязательно добавляйте только импорты из пространств имен com.azure.communication.chat и com.azure.communication.chat.models, а не из com.azure.communication.chat.implementation. В файле App.java, созданном с помощью Maven, можно использовать следующий код:
 
 ```Java
@@ -139,11 +141,11 @@ public class App
 List<ChatParticipant> participants = new ArrayList<ChatParticipant>();
 
 ChatParticipant firstThreadParticipant = new ChatParticipant()
-    .setUser(firstUser)
+    .setCommunicationIdentifier(firstUser)
     .setDisplayName("Participant Display Name 1");
     
 ChatParticipant secondThreadParticipant = new ChatParticipant()
-    .setUser(secondUser)
+    .setCommunicationIdentifier(secondUser)
     .setDisplayName("Participant Display Name 2");
 
 participants.add(firstThreadParticipant);
@@ -205,13 +207,15 @@ chatThreadClient.listMessages().iterableByPage().forEach(resp -> {
 
 `listMessages` возвращает различные типы сообщений, которые могут быть идентифицированы с помощью `chatMessage.getType()`. Это следующие типы:
 
-- `Text`. Обычное сообщение чата, отправленное участником потока.
+- `text`. Обычное сообщение чата, отправленное участником потока.
 
-- `ThreadActivity/TopicUpdate`: системное сообщение, указывающее на изменение темы.
+- `html`. HTML-сообщение чата, отправленное участником потока.
 
-- `ThreadActivity/AddMember`: системное сообщение о том, что один или несколько участников были добавлены в цепочку чата.
+- `topicUpdated`: системное сообщение, указывающее на изменение темы.
 
-- `ThreadActivity/DeleteMember`: системное сообщение о том, что участник был удален из цепочки чата.
+- `participantAdded`. Системное сообщение о том, что один или несколько участников были добавлены в поток чата.
+
+- `participantRemoved`. Системное сообщение о том, что участник был удален из потока чата.
 
 Дополнительные сведения см. в разделе о [типах сообщений](../../../concepts/chat/concepts.md#message-types).
 
@@ -222,7 +226,7 @@ chatThreadClient.listMessages().iterableByPage().forEach(resp -> {
 Используйте метод `addParticipants`, чтобы добавить участников в определяемый threadId поток.
 
 - Используйте `listParticipants`, чтобы получить список участников, добавляемых в поток чата.
-- `user` (обязательно) — это идентификатор CommunicationUserIdentifier, созданный вами с помощью CommunicationIdentityClient при изучении краткого руководства по [работе с пользовательским маркером доступа](../../access-tokens.md).
+- `communicationIdentifier` (обязательно) — это идентификатор CommunicationIdentifier, созданный вами с помощью CommunicationIdentityClient при изучении краткого руководства по работе с [пользовательским маркером доступа](../../access-tokens.md).
 - `display_name` (необязательно) — это отображаемое имя для участника потока.
 - `share_history_time` (необязательно) — это время, в течение которого участнику предоставляется доступ к журналу чата. Чтобы предоставить общий доступ к журналу с момента запуска потока чата, установите для этого свойства любую дату, равную или меньше времени создания потока. Чтобы в журнале отображались только записи с момента добавления участника, задайте для свойства текущую дату. Чтобы предоставить общий доступ к части журнала, задайте для него требуемую дату.
 
@@ -230,11 +234,11 @@ chatThreadClient.listMessages().iterableByPage().forEach(resp -> {
 List<ChatParticipant> participants = new ArrayList<ChatParticipant>();
 
 ChatParticipant firstThreadParticipant = new ChatParticipant()
-    .setUser(user1)
+    .setCommunicationIdentifier(identity1)
     .setDisplayName("Display Name 1");
 
 ChatParticipant secondThreadParticipant = new ChatParticipant()
-    .setUser(user2)
+    .setCommunicationIdentifier(identity2)
     .setDisplayName("Display Name 2");
 
 participants.add(firstThreadParticipant);
@@ -245,14 +249,14 @@ AddChatParticipantsOptions addChatParticipantsOptions = new AddChatParticipantsO
 chatThreadClient.addParticipants(addChatParticipantsOptions);
 ```
 
-## <a name="remove-user-from-a-chat-thread"></a>Удаление пользователя из потока чата
+## <a name="remove-participant-from-a-chat-thread"></a>Удаление участника из потока чата
 
-Подобно добавлению пользователя в поток, можно удалить его из потока чата. Для этого необходимо отслеживание удостоверений пользователей добавленных участников.
+Аналогично тому, как выполняется добавление участников в поток, вы можете удалять их из потока чата. Для этого необходимо отследить идентификаторы добавленных участников.
 
-Используйте `removeParticipant`, где `user` — это созданный идентификатор CommunicationUserIdentifier.
+Используйте `removeParticipant`, где `identifier` — это созданный идентификатор CommunicationIdentifier.
 
 ```Java
-chatThreadClient.removeParticipant(user);
+chatThreadClient.removeParticipant(identity);
 ```
 
 ## <a name="run-the-code"></a>Выполнение кода

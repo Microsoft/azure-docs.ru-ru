@@ -7,14 +7,14 @@ author: HeidiSteen
 ms.author: heidist
 ms.service: cognitive-search
 ms.topic: tutorial
-ms.date: 01/26/2021
+ms.date: 02/26/2021
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 961e30cf17bf385647f4482c6f767641c6b891af
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.openlocfilehash: 0a57e45b264badffd0305eb6ac5b3c8f7c42adf3
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98791683"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101695130"
 ---
 # <a name="tutorial-create-your-first-search-app-using-the-net-sdk"></a>Руководство по Создание первого приложения поиска с помощью пакета SDK для .NET
 
@@ -49,9 +49,11 @@ model.resultList = searchResult.Value.GetResults().ToList();
 
 ## <a name="overview"></a>Обзор
 
-В этом руководстве используется существующий, уже размещенный пример индекса, чтобы вы могли сосредоточиться на создании страницы поиска, которая принимает строку запроса и возвращает результаты. Индекс содержит вымышленные данные об отелях. Создав базовую страницу, вы сможете в дальнейшем разбить ее на страницы, добавить функции фасетного поиска, автозаполнения и отображения поисковых подсказок, выполнив инструкции из последующих руководств.
+В этом учебнике используется функция hotels-sample-index, которую можно быстро создать в собственной службе поиска с помощью [Краткого руководства по импорту данных](search-get-started-portal.md). Этот индекс содержит вымышленные данные об отелях, доступные в качестве встроенного источника данных в каждой службе поиска.
 
-Готовую версию кода для этого руководства можно найти в следующем проекте:
+В первом уроке этого учебника создается базовая структура запроса и страница поиска, которые улучшаются в последующих уроках, включая разбиение на страницы, аспекты и автозавершение.
+
+Готовую версию кода можно найти в следующем проекте:
 
 * [1-basic-search-page (GitHub)](https://github.com/Azure-Samples/azure-search-dotnet-samples/tree/master/create-first-app/v11/1-basic-search-page)
 
@@ -59,7 +61,9 @@ model.resultList = searchResult.Value.GetResults().ToList();
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Так как вы используете общедоступный пример индекса поиска, размещенного корпорацией Майкрософт, то для работы с этим руководством не требуется служба поиска или учетная запись Azure.
+* [Создайте службу поиска](search-create-service-portal.md) или [найдите существующую службу](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Search%2FsearchServices).
+
+* Создайте функцию hotels-sample-index, используя инструкции из [Краткого руководства по созданию индекса поиска](search-get-started-portal.md).
 
 * [Visual Studio](https://visualstudio.microsoft.com/)
 
@@ -103,12 +107,12 @@ model.resultList = searchResult.Value.GetResults().ToList();
 
 В этом примере вы используете общедоступные данные об отелях. Это произвольный набор из 50 вымышленных отелей с именами и описаниями, который создан исключительно для предоставления демонстрационных данных. Чтобы получить доступ к этим данным, укажите имя и ключ API.
 
-1. Откройте файл **appsettings.json** и замените строки по умолчанию приведенными ниже значениями имени и ключа. Представленный здесь ключ API — это не произвольный пример ключа, а *именно тот* ключ, который необходим для доступа к данным об отелях. Теперь файл будет выглядеть так.
+1. Откройте **appsettings.json** и замените строки по умолчанию URL-адресом службы поиска (в формате `https://<service-name>.search.windows.net`) и [ключом администратора или API](search-security-api-keys.md) службы поиска. Поскольку вам не нужно создавать или обновлять индекс, для выполнения заданий из этого учебника можно использовать ключ запроса.
 
     ```csharp
     {
-        "SearchServiceName": "azs-playground",
-        "SearchServiceQueryApiKey": "EA4510A6219E14888741FCFC19BFBB82"
+        "SearchServiceName": "<YOUR-SEARCH-SERVICE-URI>",
+        "SearchServiceQueryApiKey": "<YOUR-SEARCH-SERVICE-API-KEY>"
     }
     ```
 
