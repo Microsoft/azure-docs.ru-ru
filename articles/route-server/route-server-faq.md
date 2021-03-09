@@ -5,19 +5,19 @@ services: route-server
 author: duongau
 ms.service: route-server
 ms.topic: article
-ms.date: 03/02/2021
+ms.date: 03/08/2021
 ms.author: duau
-ms.openlocfilehash: 994fdf3f929f1f64ab4a064d7f2bd24c19322629
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 6eed0ed3e936b0e9a534c82a3105c2ed37cab3d5
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101680197"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102485425"
 ---
 # <a name="azure-route-server-preview-faq"></a>Сервер маршрутизации Azure (Предварительная версия) вопросы и ответы
 
 > [!IMPORTANT]
-> Сервер маршрутизации Azure (Предварительная версия) сейчас находится в общедоступной предварительной версии.
+> Сервер маршрутизации Azure (предварительная версия) сейчас предоставляется в общедоступной предварительной версии.
 > Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены.
 > Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
@@ -70,7 +70,7 @@ ms.locfileid: "101680197"
 | Число маршрутов, которые может объявить каждый узел BGP на сервере маршрутизации Azure | 200 |
 | Число маршрутов, которые сервер маршрутизации Azure может объявить в ExpressRoute или VPN-шлюзе | 200 |
 
-Дополнительные сведения см. в статье [Диагностика проблем с маршрутизацией виртуальных машин Azure](../virtual-network/diagnose-network-routing-problem.md).
+Если NVA объявляет больше маршрутов, чем это ограничение, сеанс BGP будет удален. Если это произойдет для шлюза и сервера маршрутизации Azure, подключение из локальной сети к Azure будет потеряно. Дополнительные сведения см. в статье [Диагностика проблем с маршрутизацией виртуальных машин Azure](../virtual-network/diagnose-network-routing-problem.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

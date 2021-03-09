@@ -6,12 +6,12 @@ ms.author: ebnkruma
 ms.service: stream-analytics
 ms.topic: how-to
 ms.date: 11/30/2020
-ms.openlocfilehash: 4246ad48624eb0ca53fbe6bb747f02daa32119bf
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: e491c421f4af256b2e74fa61eb442d269bdb9e34
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102432457"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102487922"
 ---
 # <a name="use-managed-identities-to-access-azure-sql-database-or-azure-synapse-analytics-from-an-azure-stream-analytics-job-preview"></a>Использование управляемых удостоверений для доступа к базе данных SQL Azure или Azure синапсе Analytics из задания Azure Stream Analytics (Предварительная версия)
 
@@ -52,6 +52,8 @@ Azure Stream Analytics поддерживает [проверку подлинн
 - Пул SQL Azure синапсе Analytics.
 
 - Учетная запись хранения Azure, [настроенная для задания Stream Analytics](azure-synapse-analytics-output.md).
+
+- Примечание. в настоящее время пакет MSI хранилища учетных записей Stream Analytics, интегрированный с MSI-файлом SQL синапсе, недоступен
 
 ---
 
@@ -171,7 +173,7 @@ GRANT CONNECT, SELECT, INSERT, CONTROL, ADMINISTER DATABASE BULK OPERATIONS OBJE
 Чтобы просмотреть все разрешения, добавленные в *ASA_JOB_NAME* пользователя, выполните следующую команду в SSMS в относящейся базе данных: 
 
 ```sql
-SELECT dprin.name, dbprin.type_desc, dbperm.permission_name, dbperm.state_desc, dbperm.class_desc, object_name(dbperm.major_id) 
+SELECT dbprin.name, dbprin.type_desc, dbperm.permission_name, dbperm.state_desc, dbperm.class_desc, object_name(dbperm.major_id) 
 FROM sys.database_principals dbprin 
 LEFT JOIN sys.database_permissions dbperm 
 ON dbperm.grantee_principal_id = dbprin.principal_id 

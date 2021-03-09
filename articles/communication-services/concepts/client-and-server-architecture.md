@@ -9,14 +9,17 @@ ms.author: mikben
 ms.date: 09/30/2020
 ms.topic: conceptual
 ms.service: azure-communication-services
-ms.openlocfilehash: 0dbd1770030eeee8768c0b610171f5f27456ed70
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 27f444c6889767e0333384a779883805d1e8f348
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101656233"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102485916"
 ---
 # <a name="client-and-server-architecture"></a>Архитектура клиента и сервера
+
+[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
+
 
 <!--
 > [!WARNING]

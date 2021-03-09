@@ -9,12 +9,12 @@ ms.date: 03/03/2021
 ms.author: cherylmc
 ms.custom: references_regions
 Customer intent: As someone with a networking background, I want to find a Virtual WAN partner
-ms.openlocfilehash: d1f05e76768ffc8ce930d97573c7729b8e4afafe
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.openlocfilehash: 4a02a02eeb40c1a61df88c49bf967b2ca57befc3
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102452753"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102489333"
 ---
 # <a name="virtual-wan-partners-and-virtual-hub-locations"></a>Расположения партнеров и виртуального концентратора Виртуальной глобальной сети
 
@@ -62,9 +62,9 @@ ms.locfileid: "102452753"
 |---|---|
 |[Barracuda Networks](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/barracudanetworks.barracuda_cloudgenwan_gateway?tab=Overviewus/marketplace/apps/barracudanetworks.barracuda_cloudgenwan_gateway?tab=Overview)| [Инструкции по развертыванию Barracuda Клауджен WAN](https://campus.barracuda.com/product/cloudgenwan/doc/91980640/deployment/)|
 |[Маршрутизатор облачной службы Cisco (CSR) ВВАН](https://aka.ms/ciscoMarketPlaceOffer)| Во время общедоступной предварительной версии глобальной сети Cisco Cloud Services (CSR) в центре ВВАН, компания Cisco требует, чтобы клиент зарегистрировался в качестве клиента Cisco EFT (пробная версия для раннего поля), отправив сообщение электронной почты по адресу vwan_public_preview@external.cisco.com и запросите его. 
-|[VMware SD-WAN в виртуальном концентраторе глобальной сети](https://kb.vmware.com/s/article/82746) | В рамках общедоступной предварительной версии VMware SD-WAN в центре ВВАН для VMware требуется, чтобы клиент зарегистрировался, отправив сообщение электронной почты по адресу vhubsupport@vmware.com . [Путеводитель по развертыванию VMware SD-WAN в виртуальном концентраторе глобальной сети](https://kb.vmware.com/s/article/82746)|
+|[VMware SD-WAN в виртуальном концентраторе глобальной сети](https://sdwan.vmware.com/partners/microsoft) | В рамках общедоступной предварительной версии VMware SD-WAN в центре ВВАН для VMware требуется, чтобы клиент зарегистрировался, отправив сообщение электронной почты по адресу vhubsupport@vmware.com . [Путеводитель по развертыванию VMware SD-WAN в виртуальном концентраторе глобальной сети](https://kb.vmware.com/s/article/82746)|
 
-Следующие партнеры приносят NVA в виртуальные концентраторы в ближайшем будущем: Авиатрикс, Citrix, Велоклауд и наоборот.
+Следующие партнеры приносят NVA в виртуальные концентраторы в ближайшем будущем: Авиатрикс, Citrix и наоборот.
 
 ## <a name="locations"></a><a name="locations"></a>Расположения
 

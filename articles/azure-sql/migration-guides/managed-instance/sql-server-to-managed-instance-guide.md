@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: ac8b0e0c2cdbd46626677f4be0f78800d839ad28
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.openlocfilehash: 67f5665225bc1297d0eb1b1e1da954fb47660dee
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97358900"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102488976"
 ---
 # <a name="migration-guide-sql-server-to-sql-managed-instance"></a>Руководство по миграции: SQL Server в SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqlmi.md)]
@@ -57,6 +57,8 @@ ms.locfileid: "97358900"
 Дополнительные сведения о средствах, доступных для использования в фазе обнаружения, см. в разделе [службы и средства, доступные для сценариев переноса данных](../../../dms/dms-tools-matrix.md). 
 
 ### <a name="assess"></a>Оценка 
+
+[!INCLUDE [assess-estate-with-azure-migrate](../../../../includes/azure-migrate-to-assess-sql-data-estate.md)]
 
 После обнаружения источников данных оцените все локальные SQL Server экземпляры, которые можно перенести в Управляемый экземпляр SQL Azure для определения блокирования или проблем совместимости миграции. 
 

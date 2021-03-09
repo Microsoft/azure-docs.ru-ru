@@ -8,12 +8,12 @@ ms.service: azure-sentinel
 ms.subservice: azure-sentinel
 ms.topic: conceptual
 ms.date: 03/08/2021
-ms.openlocfilehash: c24512ad38f9397c9a40a85489c45fcb0de906b3
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.openlocfilehash: 66294e3c59c2252042e30864dd220683106cd574
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102453807"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102485390"
 ---
 # <a name="whats-new-in-azure-sentinel"></a>Новые возможности в Azure Sentinel
 
@@ -29,6 +29,32 @@ ms.locfileid: "102453807"
 >
 > Вы также можете участвовать! Присоединяйтесь к нам в [сообществе Azure Sentinel Threat скидками](https://github.com/Azure/Azure-Sentinel/wiki).
 > 
+
+## <a name="march-2021"></a>Март 2021 г.
+
+- [Интеграция инцидентов Microsoft 365 Defender](#microsoft-365-defender-incident-integration) (общедоступная Предварительная версия)
+- [Новые соединители служб Майкрософт, использующие политику Azure](#new-microsoft-service-connectors-using-azure-policy)
+
+### <a name="microsoft-365-defender-incident-integration"></a>Интеграция инцидентов Microsoft 365 Defender
+
+Интеграция инцидентов [Microsoft 365 защитника Azure (M365D)](/microsoft-365/security/mtp/microsoft-threat-protection) позволяет выполнять потоковую передачу всех инцидентов M365D в метку Azure и синхронизировать их между обоими порталами. Инциденты от M365D (ранее известные как Microsoft Threat protection или MTP) включают все связанные оповещения, сущности и релевантную информацию, обеспечивая достаточный контекст для выполнения рассмотрения и предварительного исследования в Azure Sentinel. В случае с Sentinel инциденты остаются двунаправленной синхронизацией с M365D, что позволяет использовать преимущества обоих порталов в расследовании инцидентов.
+
+Совместное использование Azure Sentinel и Microsoft 365 Defender позволяет использовать преимущества обоих миров. Вы получаете подробную информацию о том, что SIEM предоставляет вам всю область информационных ресурсов вашей организации, а также глубину настроенной и специализированной системы, которую XDR предоставляет для защиты ваших Microsoft 365ных ресурсов.
+
+Дополнительные сведения см. в статье [Интеграция защитника Microsoft 365 с Azure Sentinel](microsoft-365-defender-sentinel-integration.md).
+
+### <a name="new-microsoft-service-connectors-using-azure-policy"></a>Новые соединители служб Майкрософт, использующие политику Azure
+
+[Политика Azure](../governance/policy/overview.md) — это служба Azure, которая позволяет использовать политики для принудительного применения и управления свойствами ресурса. Использование политик гарантирует, что ресурсы останутся совместимыми со стандартами управления ИТ.
+
+Между свойствами ресурсов, которыми могут управлять политики, являются создание и обработка журналов диагностики и аудита. Azure Sentinel теперь использует политику Azure, чтобы можно было применить общий набор параметров журналов диагностики ко всем (текущим и будущим) ресурсам определенного типа, журналы которых вы хотите принять в Azure Sentinel. Благодаря политике Azure больше не нужно настраивать ресурс параметров журналов диагностики по ресурсам.
+
+Соединители на основе политик Azure теперь доступны для следующих служб Azure:
+- [Azure Key Vault](connect-azure-key-vault.md) (общедоступная Предварительная версия)
+- [Служба Kubernetes Azure](connect-azure-kubernetes-service.md) (общедоступная Предварительная версия)
+- Базы данных и серверы SQL Azure (общедоступная версия)
+
+Клиенты по-прежнему смогут отправить журналы вручную для конкретных экземпляров и не должны использовать модуль политик.
 
 ## <a name="february-2021"></a>Февраль 2021 года
 
@@ -86,7 +112,7 @@ ms.locfileid: "102453807"
 - [Endpoint Protection Symantec](connect-data-sources.md)
 - [Thycotic Secret Server](connect-thycotic-secret-server.md)
 - [Тенденция Micro XDR](connect-data-sources.md)
-- [VMWare ESXi](connect-vmware-esxi.md)
+- [VMware ESXi](connect-vmware-esxi.md)
 
 ### <a name="ueba-insights-in-the-entity-page"></a>УЕБА Insights на странице сущностей
 

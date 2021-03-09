@@ -8,12 +8,12 @@ ms.author: heidist
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 03/05/2021
-ms.openlocfilehash: 8fdb6a53ed0fd64953b75238c3ba3df62c4b644e
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 7f7a09b9e20b461a8a1e448bf4a7b0747a35fbb1
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102432950"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102487156"
 ---
 # <a name="create-a-semantic-query-in-cognitive-search"></a>Создание семантического запроса в Когнитивный поиск
 
@@ -172,12 +172,12 @@ POST https://[service name].search.windows.net/indexes/hotels-sample-index/docs/
 
 В следующей таблице перечислены параметры запроса, используемые в семантическом запросе, чтобы их можно было увидеть как целостные. Список всех параметров см. в разделе [Поиск документов (Предварительная версия для просмотра)](/rest/api/searchservice/preview-api/search-documents)
 
-| Параметр | Type | Описание |
+| Параметр | Тип | Описание |
 |-----------|-------|-------------|
 | queryType | Строка | Допустимые значения: простая, полная и семантическая. Для семантических запросов требуется значение "семантика". |
 | куерилангуаже | Строка | Требуется для семантических запросов. В настоящее время реализован только "en-US". |
 | searchFields | Строка | Разделенный запятыми список полей с возможностью поиска. Необязательно, но рекомендуется. Указывает поля, для которых выполняется семантическое ранжирование. </br></br>В отличие от простых и полных типов запросов, порядок, в котором перечислены поля, определяет приоритет.|
-| Вас |Строка | Необязательное поле для указания того, включены ли семантические ответы в результат. В настоящее время реализуется только "извлечение". Ответы можно настроить так, чтобы они возвращали не более пяти. Этот пример "извлечение|Count3 "" показывает число трех ответов. Значение по умолчанию — 1.|
+| Вас |Строка | Необязательное поле для указания того, включены ли семантические ответы в результат. В настоящее время реализуется только "извлечение". Ответы можно настроить так, чтобы они возвращали не более пяти. Значение по умолчанию — One. В этом примере показано число трех ответов: "извлечение \| Count3". |
 
 ## <a name="query-with-search-explorer"></a>Подача запросов с использованием обозревателя поиска
 
@@ -186,7 +186,7 @@ POST https://[service name].search.windows.net/indexes/hotels-sample-index/docs/
 ### <a name="with-querytypesemantic"></a>С queryType = семантика
 
 ```json
-search=I want a nice hotel on the water with a great restaurant&$select=HotelId,HotelName,Description,Tags&queryType=semantic&queryLanguage=english&searchFields=Description,Tags
+search=nice hotel on water with a great restaurant&$select=HotelId,HotelName,Description,Tags&queryType=semantic&queryLanguage=english&searchFields=Description,Tags
 ```
 
 Первые несколько результатов выглядят следующим образом.
