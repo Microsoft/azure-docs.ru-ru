@@ -8,10 +8,10 @@ ms.date: 2/21/2021
 ms.topic: how-to
 ms.service: azure
 ms.openlocfilehash: 7cb3848f3711b6bf10c316ba4f5321286e2260fb
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/09/2021
 ms.locfileid: "101706485"
 ---
 # <a name="sensor-trends-and-statistics-reports"></a>Тенденции и статистические отчеты датчиков

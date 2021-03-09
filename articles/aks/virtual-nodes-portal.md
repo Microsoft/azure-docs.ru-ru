@@ -5,12 +5,12 @@ services: container-service
 ms.topic: conceptual
 ms.date: 05/06/2019
 ms.custom: references_regions, devx-track-azurecli
-ms.openlocfilehash: 4c67d3608d2128385c273425ea495a02fa5a8c45
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 06a3e7263b2e03cfc37f7ba3c733e07536b5d473
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102180910"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501810"
 ---
 # <a name="create-and-configure-an-azure-kubernetes-services-aks-cluster-to-use-virtual-nodes-in-the-azure-portal"></a>Создание и настройка кластера Службы Azure Kubernetes (AKS) для использования виртуальных узлов на портале Azure
 
@@ -64,7 +64,7 @@ az provider register --namespace Microsoft.ContainerInstance
 
 ![Создание кластера AKS и включение виртуальных узлов](media/virtual-nodes-portal/enable-virtual-nodes.png)
 
-По умолчанию создается субъект-служба Azure Active Directory. Этот субъект-служба используется для взаимодействия и интеграции с другими службами Azure. Кроме того, для разрешений можно использовать управляемое удостоверение вместо субъекта-службы. Дополнительные сведения см. в статье о том, [как использовать управляемые удостоверения](use-managed-identity.md).
+По умолчанию создается удостоверение кластера. Это удостоверение кластера используется для связи с кластером и интеграции с другими службами Azure. По умолчанию это удостоверение кластера является управляемым удостоверением. Дополнительные сведения см. в статье о том, [как использовать управляемые удостоверения](use-managed-identity.md). Вы также можете использовать субъект-службу в качестве удостоверения кластера.
 
 Также для кластера настраивается расширенная поддержка сети. Для виртуальных узлов настраивается отдельная подсеть виртуальной сети Azure. Эта подсеть получает делегированные права для подключения ресурсов Azure из кластеров AKS. Если у вас еще нет делегированной подсети, портал Azure создаст и настроит виртуальную сеть Azure и подсеть для использования с виртуальными узлами.
 

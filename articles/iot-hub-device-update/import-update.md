@@ -6,12 +6,12 @@ ms.author: andbrown
 ms.date: 2/11/2021
 ms.topic: how-to
 ms.service: iot-hub-device-update
-ms.openlocfilehash: 7f2353d9e87c35f01a9fd514df7cfb090a98bf27
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: 6502728a14ea825fadfde107e61f235db5619ae0
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102442950"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102507285"
 ---
 # <a name="import-new-update"></a>Импорт нового обновления
 Узнайте, как импортировать новое обновление в центр обновления для центра Интернета вещей. Если вы еще не сделали этого, обязательно ознакомьтесь с основными [понятиями импорта](import-concepts.md).
@@ -57,8 +57,8 @@ ms.locfileid: "102442950"
 
     | Параметр | Описание |
     | --------- | ----------- |
-    | deviceManufacturer | Изготовитель устройства, совместимое с обновлением, например contoso
-    | deviceModel | Модель устройства, совместимое с обновлением, например тостер
+    | deviceManufacturer | Изготовитель устройства, совместимое с обновлением, например contoso. Должно соответствовать  [свойству устройства](https://docs.microsoft.com/azure/iot-hub-device-update/device-update-plug-and-play#device-properties) производителя
+    | deviceModel | Модель устройства, совместимое с обновлением, например тостер. Должно соответствовать  [свойству устройства](https://docs.microsoft.com/azure/iot-hub-device-update/device-update-plug-and-play#device-properties) модели
     | упдатепровидер | Сущность, которая создает или непосредственно отвечает за обновление. Часто это будет название компании.
     | упдатенаме | Идентификатор класса обновлений. Класс может быть любым выбранным. Как правило, это имя устройства или модели.
     | упдатеверсион | Номер версии, отличающий это обновление от других, имеющих одного и того же поставщика и имя. Может быть или не соответствовать версии отдельного программного компонента на устройстве.

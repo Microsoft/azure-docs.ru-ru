@@ -11,12 +11,12 @@ ms.reviewer: larryfr
 ms.date: 11/16/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, contperf-fy21q1, devx-track-azurecli
-ms.openlocfilehash: 6fe43c39b17e574e1913cd9e7b4292a71f1e418d
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.openlocfilehash: 7e493404e7a36b60e8f9e62cd4ac2f2b32845bb9
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97031765"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501623"
 ---
 # <a name="set-up-a-python-development-environment-for-azure-machine-learning"></a>Настройка среды разработки Python для Машинное обучение Azure
 
@@ -55,7 +55,7 @@ ms.locfileid: "97031765"
 
 Этот JSON-файл должен находиться в структуре каталогов, которые содержат сценарии Python или приложения Jupyter Notebook. Он может находиться в том же каталоге, подкаталоге с именем *.azureml* или родительском каталоге.
 
-Чтобы использовать этот файл из кода, используйте [`Workspace.from_config`](/python/api/azureml-core/azureml.core.workspace.workspace?view=azure-ml-py#from-config-path-none--auth-none---logger-none---file-name-none-&preserve-view=true) метод. Этот код загружает данные из файла и подключается к рабочей области.
+Чтобы использовать этот файл из кода, используйте [`Workspace.from_config`](/python/api/azureml-core/azureml.core.workspace.workspace#from-config-path-none--auth-none---logger-none---file-name-none-) метод. Этот код загружает данные из файла и подключается к рабочей области.
 
 Создайте файл конфигурации рабочей области одним из следующих способов.
 
@@ -67,7 +67,7 @@ ms.locfileid: "97031765"
 
 * Пакет SDK Python для Машинного обучения Azure
 
-    Создайте скрипт для подключения к рабочей области Машинное обучение Azure и используйте [`write_config`](/python/api/azureml-core/azureml.core.workspace.workspace?view=azure-ml-py#write-config-path-none--file-name-none-&preserve-view=true) метод для создания файла и сохраните его как *. azureml/config.jsв*. Обязательно замените `subscription_id` , `resource_group` и `workspace_name` собственными.
+    Создайте скрипт для подключения к рабочей области Машинное обучение Azure и используйте [`write_config`](/python/api/azureml-core/azureml.core.workspace.workspace#write-config-path-none--file-name-none-) метод для создания файла и сохраните его как *. azureml/config.jsв*. Обязательно замените `subscription_id` , `resource_group` и `workspace_name` собственными.
 
     ```python
     from azureml.core import Workspace
@@ -99,7 +99,7 @@ ms.locfileid: "97031765"
     > Если в Linux или macOS вы используете оболочку, отличающуюся от bash (например, zsh), при выполнении некоторых команд могут возникнуть ошибки. Чтобы решить эту проблему, используйте команду `bash`, чтобы запустить bash и выполните там нужные команды.
 
 1. Активируйте только что созданную виртуальную среду Python.
-1. Установите [пакет SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py).
+1. Установите [пакет SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/install).
 1. Чтобы настроить локальную среду для использования рабочей области Машинное обучение Azure, [Создайте файл конфигурации рабочей области](#workspace) или используйте существующий.
 
 Теперь, когда локальная среда настроена, можно приступить к работе с Машинное обучение Azure. Чтобы приступить к работе, ознакомьтесь с [руководством по началу работы с машинное обучение Azure Python](tutorial-1st-experiment-sdk-setup-local.md) .
@@ -174,7 +174,7 @@ ms.locfileid: "97031765"
 
     * Используйте портал Azure, чтобы создать DSVM [Ubuntu](data-science-virtual-machine/dsvm-ubuntu-intro.md) или [Windows](data-science-virtual-machine/provision-vm.md) .
     * [Создайте виртуальную машину для обработки и анализа данных с помощью шаблонов ARM](data-science-virtual-machine/dsvm-tutorial-resource-manager.md).
-    * Использование командной строки Azure CLI
+    * Использование Azure CLI
 
         Чтобы создать виртуальную машину Ubuntu для обработки и анализа данных, используйте следующую команду:
 
@@ -217,4 +217,4 @@ ms.locfileid: "97031765"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Обучение модели](tutorial-train-models-with-aml.md) на машинное обучение Azure с помощью набора данных MNIST.
-- См. [Справочник по машинное обучение Azure SDK для Python](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py). 
+- См. [Справочник по машинное обучение Azure SDK для Python](/python/api/overview/azure/ml/intro). 

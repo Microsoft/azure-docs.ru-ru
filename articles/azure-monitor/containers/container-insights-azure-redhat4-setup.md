@@ -2,13 +2,13 @@
 title: Настройка Azure Red Hat OpenShift v4. x с помощью Container Insights | Документация Майкрософт
 description: В этой статье описывается настройка мониторинга для кластера Kubernetes с Azure Monitor, размещенной в Azure Red Hat OpenShift версии 4 или более поздней.
 ms.topic: conceptual
-ms.date: 06/30/2020
-ms.openlocfilehash: a9e04818f1a915a853d32b5db408a521cdae9f4c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/05/2021
+ms.openlocfilehash: 02cb794463b965ebafef0b6861477dbf69227511
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101713938"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102506418"
 ---
 # <a name="configure-azure-red-hat-openshift-v4x-with-container-insights"></a>Настройка Azure Red Hat OpenShift v4. x с помощью Container Insights
 
@@ -61,21 +61,8 @@ ms.locfileid: "101713938"
 
     `curl -o enable-monitoring.sh -L https://aka.ms/enable-monitoring-bash-script`
 
-1. Чтобы узнать *кубеконтекст* кластера, выполните следующие команды:
+1. Подключитесь к кластеру АТО v4 с помощью инструкций в разделе [учебник. подключение к кластеру Azure Red Hat OpenShift 4](../../openshift/tutorial-connect-cluster.md).
 
-    ```
-    adminUserName=$(az aro list-credentials -g $clusterResourceGroup -n $clusterName --query 'kubeadminUsername' -o tsv)
-    adminPassword=$(az aro list-credentials -g $clusterResourceGroup -n $clusterName --query 'kubeadminPassword' -o tsv)
-    apiServer=$(az aro show -g $clusterResourceGroup -n $clusterName --query apiserverProfile.url -o tsv)
-    oc login $apiServer -u $adminUserName -p $adminPassword
-    # openshift project name for Container insights
-    openshiftProjectName="azure-monitor-for-containers"
-    oc new-project $openshiftProjectName
-    # get the kube config context
-    kubeContext=$(oc config current-context)
-    ```
-
-1. Скопируйте значение для последующего использования.
 
 ### <a name="integrate-with-an-existing-workspace"></a>Интеграция с существующей рабочей областью
 
@@ -113,17 +100,16 @@ ms.locfileid: "101713938"
 
 1. В выходных данных найдите имя рабочей области, а затем скопируйте полный идентификатор ресурса этой Log Analytics рабочей области под **идентификатором** поля.
 
-1. Чтобы включить мониторинг, выполните следующую команду. Замените значения для `azureAroV4ClusterResourceId` `logAnalyticsWorkspaceResourceId` параметров, и `kubeContext` .
+1. Чтобы включить мониторинг, выполните следующую команду. Замените значения для `azureAroV4ClusterResourceId` `logAnalyticsWorkspaceResourceId` параметров и.
 
     ```bash
-    export azureAroV4ClusterResourceId=“/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.RedHatOpenShift/OpenShiftClusters/<clusterName>”
-    export logAnalyticsWorkspaceResourceId=“/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/microsoft.operationalinsights/workspaces/<workspaceName>”
-    export kubeContext="<kubeContext name of your ARO v4 cluster>"  
+    export azureAroV4ClusterResourceId="/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.RedHatOpenShift/OpenShiftClusters/<clusterName>"
+    export logAnalyticsWorkspaceResourceId="/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/microsoft.operationalinsights/workspaces/<workspaceName>" 
     ```
 
     Ниже приведена команда, которую необходимо выполнить после заполнения 3 переменных командами Export:
 
-    `bash enable-monitoring.sh --resource-id $azureAroV4ClusterResourceId --kube-context $kubeContext --workspace-id $logAnalyticsWorkspaceResourceId`
+    `bash enable-monitoring.sh --resource-id $azureAroV4ClusterResourceId --workspace-id $logAnalyticsWorkspaceResourceId`
 
 После включения мониторинга для просмотра метрик работоспособности кластера может потребоваться около 15 минут.
 
@@ -135,16 +121,15 @@ ms.locfileid: "101713938"
 
 Созданная Рабочая область по умолчанию имеет формат *DefaultWorkspace- \<GUID> - \<Region>*.  
 
-Замените значения для `azureAroV4ClusterResourceId` `kubeContext` параметров и.
+Замените значение для `azureAroV4ClusterResourceId` параметра.
 
 ```bash
 export azureAroV4ClusterResourceId="/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.RedHatOpenShift/OpenShiftClusters/<clusterName>"
-export kubeContext="<kubeContext name of your ARO v4 cluster>"
 ```
 
-Пример.
+Пример:
 
-`bash enable-monitoring.sh --resource-id $azureAroV4ClusterResourceId --kube-context $kubeContext`
+"Bash enable-monitoring.sh--Resource-id $azureAroV 4ClusterResourceId 
 
 После включения мониторинга может пройти около 15 минут, прежде чем вы сможете просмотреть метрики работоспособности кластера.
 

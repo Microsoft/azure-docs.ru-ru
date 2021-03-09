@@ -10,17 +10,17 @@ ms.subservice: core
 ms.topic: conceptual
 ms.custom: how-to, contperf-fy21q1, automl
 ms.date: 08/20/2020
-ms.openlocfilehash: 6e686c7b22eb834a096cdd7a67beb6d8d291ef20
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 14837391f7bf907acbbe1d573f3171acef4db658
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100392329"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102503510"
 ---
 # <a name="auto-train-a-time-series-forecast-model"></a>Автоматическое обучение прогнозной модели временных рядов
 
 
-Из этой статьи вы узнаете, как настроить и обучить модель регрессии прогнозов временных рядов с помощью автоматического машинного обучения Аутомл в [пакете SDK для Python машинное обучение Azure](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py). 
+Из этой статьи вы узнаете, как настроить и обучить модель регрессии прогнозов временных рядов с помощью автоматического машинного обучения Аутомл в [пакете SDK для Python машинное обучение Azure](/python/api/overview/azure/ml/). 
 
 Для этого сделайте следующее. 
 
@@ -120,7 +120,7 @@ automl_config = AutoMLConfig(task='forecasting',
 
 ## <a name="configure-experiment"></a>Настройка эксперимента
 
-Объект [`AutoMLConfig`](/python/api/azureml-train-automl-client/azureml.train.automl.automlconfig.automlconfig?preserve-view=true&view=azure-ml-py) определяет параметры и данные, необходимые для задачи автоматизированного машинного обучения. Настройка модели прогнозирования аналогична настройке стандартной модели регрессии, но некоторые модели, параметры конфигурации и добавление признаков шаги существуют специально для данных временных рядов. 
+Объект [`AutoMLConfig`](/python/api/azureml-train-automl-client/azureml.train.automl.automlconfig.automlconfig) определяет параметры и данные, необходимые для задачи автоматизированного машинного обучения. Настройка модели прогнозирования аналогична настройке стандартной модели регрессии, но некоторые модели, параметры конфигурации и добавление признаков шаги существуют специально для данных временных рядов. 
 
 ### <a name="supported-models"></a>Поддерживаемые модели
 Автоматическое машинное обучение автоматически пытается выполнить различные модели и алгоритмы в рамках процесса создания и настройки модели. Пользователю не нужно указывать алгоритм. Для экспериментов, как собственные, так и собственные модели временного и глубокого обучения являются частью системы рекомендаций. В следующей таблице приведена сводка по этому подмножеству моделей. 
@@ -138,7 +138,7 @@ ForecastTCN (предварительная версия)| ForecastTCN — эт
 
 Как и в случае с задачей регрессии, вы определяете стандартные параметры обучения, например тип задачи, число итераций, данные для обучения и число перекрестных проверок. Для задач прогнозирования необходимо задать дополнительные параметры, которые влияют на эксперимент. 
 
-В следующей таблице приведены эти дополнительные параметры. Шаблоны проектирования синтаксиса см. в [справочной документации по классу форекастингпараметер](/python/api/azureml-automl-core/azureml.automl.core.forecasting_parameters.forecastingparameters?preserve-view=true&view=azure-ml-py) .
+В следующей таблице приведены эти дополнительные параметры. Шаблоны проектирования синтаксиса см. в [справочной документации по классу форекастингпараметер](/python/api/azureml-automl-core/azureml.automl.core.forecasting_parameters.forecastingparameters) .
 
 | Имя&nbsp;параметра | Описание | Обязательно |
 |-------|-------|-------|
@@ -154,7 +154,7 @@ ForecastTCN (предварительная версия)| ForecastTCN — эт
 
 
 Приведенный ниже код 
-* Использует [`ForecastingParameters`](/python/api/azureml-automl-core/azureml.automl.core.forecasting_parameters.forecastingparameters?preserve-view=true&view=azure-ml-py) класс для определения параметров прогнозирования для обучения экспериментов.
+* Использует [`ForecastingParameters`](/python/api/azureml-automl-core/azureml.automl.core.forecasting_parameters.forecastingparameters) класс для определения параметров прогнозирования для обучения экспериментов.
 * Задает `time_column_name` для `day_datetime` поля в наборе данных. 
 * Определяет `time_series_id_column_names` параметр для `"store"` . Это гарантирует, что для данных будут созданы **две отдельные группы временных рядов** . один для хранилищ A и B.
 * Задает значение `forecast_horizon` 50 для прогнозирования всего набора тестов. 
@@ -298,7 +298,7 @@ automl_config = AutoMLConfig(task='forecasting',
 
 ### <a name="short-series-handling"></a>Обработка коротких циклов
 
-Автоматический ML рассматривает временный ряд в виде **короткого ряда** , если нет достаточных точек данных для проведения этапов обучения и проверки разработки модели. Количество точек данных различается для каждого эксперимента и зависит от max_horizon, количества разбиений между проверками и длины модели лукбакк, которая является максимальным объемом журнала, необходимого для создания функций временных рядов. Точные вычисления см. в [справочной документации по short_series_handling_configuration](/python/api/azureml-automl-core/azureml.automl.core.forecasting_parameters.forecastingparameters?preserve-view=true&view=azure-ml-py#short-series-handling-configuration).
+Автоматический ML рассматривает временный ряд в виде **короткого ряда** , если нет достаточных точек данных для проведения этапов обучения и проверки разработки модели. Количество точек данных различается для каждого эксперимента и зависит от max_horizon, количества разбиений между проверками и длины модели лукбакк, которая является максимальным объемом журнала, необходимого для создания функций временных рядов. Точные вычисления см. в [справочной документации по short_series_handling_configuration](/python/api/azureml-automl-core/azureml.automl.core.forecasting_parameters.forecastingparameters#short-series-handling-configuration).
 
 Автоматический ML предлагает обработку коротких циклов по умолчанию с `short_series_handling_configuration` параметром в `ForecastingParameters` объекте. 
 

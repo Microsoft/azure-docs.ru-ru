@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.author: sgilley
 author: sdgilley
 ms.date: 09/29/2020
-ms.openlocfilehash: bd83ccc4f834d6b52e1c2db15000eb695be85f30
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 3b1e102385f43dd9a1ba6996e657f49d435038a2
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102177204"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102503624"
 ---
 # <a name="what-are-compute-targets-in-azure-machine-learning"></a>Что такое целевые объекты вычислений в Машинном обучении Azure?
 
@@ -100,27 +100,27 @@ ms.locfileid: "102177204"
 
 | **Поддерживаемые серии виртуальных машин**  | **Ограничения** |
 |------------|------------|
-| D | Отсутствует. |
-| DDSv4 | Отсутствует. |
-| Dv2 | Отсутствует. |  
-| Dv3 | Отсутствует.|
-| DSv2 | Отсутствует. | 
-| DSv3 | Отсутствует.|
-| EAv4 | Отсутствует. |
-| Ev3 | Отсутствует. |
-| Серия fsv2 | Отсутствует. | 
-| H | Отсутствует. |
+| D | Нет. |
+| DDSv4 | Нет. |
+| Dv2 | Нет. |  
+| Dv3 | Нет.|
+| DSv2 | Нет. | 
+| DSv3 | Нет.|
+| EAv4 | Нет. |
+| Ev3 | Нет. |
+| Серия fsv2 | Нет. | 
+| H | Нет. |
 | HB | Требуется утверждение. |
 | HBv2 | Требуется утверждение. |  
 | HCS | Требуется утверждение. |  
 | M | Требуется утверждение. |
-| NC | Отсутствует. |  
-| Акционная NC | Отсутствует. |
+| NC | Нет. |  
+| Акционная NC | Нет. |
 | NCsv2 | Требуется утверждение. |
 | NCsv3 | Требуется утверждение. |  
 | Структура | Требуется утверждение. |
 | NDv2 | Требуется утверждение. |
-| NV | Отсутствует. |
+| NV | Нет. |
 | NVv3 | Требуется утверждение. | 
 
 
@@ -129,7 +129,7 @@ ms.locfileid: "102177204"
 > [!NOTE]
 > Машинное обучение Azure не поддерживает все размеры виртуальных машин, поддерживаемые в Azure COMPUTE. Чтобы получить список доступных размеров виртуальных машин, используйте один из следующих методов.
 > * [REST API](https://github.com/Azure/azure-rest-api-specs/blob/master/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2020-08-01/examples/ListVMSizesResult.json)
-> * [Пакет SDK для Python](/python/api/azureml-core/azureml.core.compute.amlcompute.amlcompute?view=azure-ml-py.md#supported-vmsizes-workspace--location-none-)
+> * [Пакет SDK для Python](/python/api/azureml-core/azureml.core.compute.amlcompute.amlcompute#supported-vmsizes-workspace--location-none-)
 >
 
 ### <a name="compute-isolation"></a>Изоляция вычислений

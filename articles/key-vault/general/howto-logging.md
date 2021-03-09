@@ -9,12 +9,12 @@ ms.subservice: general
 ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: mbaldwin
-ms.openlocfilehash: 9ec1e59a5599ca2e95578eacc1484932956ebf16
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: 7b71fc2f3afb67d766bfe267888674b55af6a3a5
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102204020"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102503919"
 ---
 # <a name="how-to-enable-key-vault-logging"></a>Включение ведения журнала Key Vault
 
@@ -42,7 +42,7 @@ az account list
 az account set --subscription "<subscriptionID>"
 ```
 
-С Azure PowerShell можно сначала вывести список подписок с помощью командлета [Get-азсубскриптион](/powershell/module/az.accounts/get-azsubscription?view=azps-4.7.0) , а затем подключиться к нему с помощью командлета [Set-азконтекст](/powershell/module/az.accounts/set-azcontext?view=azps-4.7.0) : 
+С Azure PowerShell можно сначала вывести список подписок с помощью командлета [Get-азсубскриптион](/powershell/module/az.accounts/get-azsubscription) , а затем подключиться к нему с помощью командлета [Set-азконтекст](/powershell/module/az.accounts/set-azcontext) : 
 
 ```powershell-interactive
 Get-AzSubscription
@@ -64,13 +64,13 @@ Set-AzContext -SubscriptionId "<subscriptionID>"
 az storage account create --name "<your-unique-storage-account-name>" -g "myResourceGroup" --sku "Standard_LRS"
 ```
 
-С Azure PowerShell используйте командлет [New-азсторажеаккаунт](/powershell/module/az.storage/new-azstorageaccount?view=azps-4.7.0) . Необходимо указать расположение, соответствующее группе ресурсов.
+С Azure PowerShell используйте командлет [New-азсторажеаккаунт](/powershell/module/az.storage/new-azstorageaccount) . Необходимо указать расположение, соответствующее группе ресурсов.
 
 ```powershell
  New-AzStorageAccount -ResourceGroupName myResourceGroup -Name "<your-unique-storage-account-name>" -Type "Standard_LRS" -Location "eastus"
 ```
 
-В любом случае обратите внимание на идентификатор учетной записи хранения. Операция Azure CLI возвращает идентификатор "ID" в выходных данных. Чтобы получить "ID" с Azure PowerShell, используйте [Get-азсторажеаккаунт](/powershell/module/az.storage/get-azstorageaccount?view=azps-4.7.0) и присвоить выходные данные переменной $SA. Затем можно просмотреть учетную запись хранения с $sa. ID. ($Sa. Свойство Context также будет использоваться далее в этой статье.)
+В любом случае обратите внимание на идентификатор учетной записи хранения. Операция Azure CLI возвращает идентификатор "ID" в выходных данных. Чтобы получить "ID" с Azure PowerShell, используйте [Get-азсторажеаккаунт](/powershell/module/az.storage/get-azstorageaccount) и присвоить выходные данные переменной $SA. Затем можно просмотреть учетную запись хранения с $sa. ID. ($Sa. Свойство Context также будет использоваться далее в этой статье.)
 
 ```powershell-interactive
 $sa = Get-AzStorageAccount -Name "<your-unique-storage-account-name>" -ResourceGroup "myResourceGroup"
@@ -84,7 +84,7 @@ $sa.id
 
 ## <a name="obtain-your-key-vault-resource-id"></a>Получение идентификатора ресурса хранилища ключей
 
-В кратком руководстве по интерфейсу [командной строки](quick-create-cli.md) и [PowerShell](quick-create-powershell.md)вы создали ключ с уникальным именем.  Используйте это имя еще раз в следующих шагах.  Если вы не можете вспомнить имя хранилища ключей, можно воспользоваться командой Azure CLI [AZ keyvault List](/cli/azure/keyvault#az_keyvault_list) или командлетом Azure PowerShell [Get-азкэйваулт](/powershell/module/az.keyvault/get-azkeyvault?view=azps-4.7.0) для их перечисления.
+В кратком руководстве по интерфейсу [командной строки](quick-create-cli.md) и [PowerShell](quick-create-powershell.md)вы создали ключ с уникальным именем.  Используйте это имя еще раз в следующих шагах.  Если вы не можете вспомнить имя хранилища ключей, можно воспользоваться командой Azure CLI [AZ keyvault List](/cli/azure/keyvault#az_keyvault_list) или командлетом Azure PowerShell [Get-азкэйваулт](/powershell/module/az.keyvault/get-azkeyvault) для их перечисления.
 
 Используйте имя хранилища ключей, чтобы найти его идентификатор ресурса.  С Azure CLI используйте команду [AZ keyvault показывать](/cli/azure/keyvault#az_keyvault_show) .
 
@@ -92,7 +92,7 @@ $sa.id
 az keyvault show --name "<your-unique-keyvault-name>"
 ```
 
-С Azure PowerShell используйте командлет [Get-азкэйваулт](/powershell/module/az.keyvault/get-azkeyvault?view=azps-4.7.0) .
+С Azure PowerShell используйте командлет [Get-азкэйваулт](/powershell/module/az.keyvault/get-azkeyvault) .
 
 ```powershell-interactive
 Get-AzKeyVault -VaultName "<your-unique-keyvault-name>"
@@ -102,13 +102,13 @@ Get-AzKeyVault -VaultName "<your-unique-keyvault-name>"
 
 ## <a name="enable-logging-using-azure-powershell"></a>Включение ведения журнала с помощью Azure PowerShell
 
-Чтобы включить ведение журнала для Key Vault, мы будем использовать команду Azure CLI [AZ Monitor диагностики-Settings Create](/cli/azure/monitor/diagnostic-settings) или командлет [Set-АЗДИАГНОСТИКСЕТТИНГ](/powershell/module/az.monitor/set-azdiagnosticsetting?view=azps-4.7.0) вместе с идентификатором учетной записи хранения и идентификатором ресурса хранилища ключей.
+Чтобы включить ведение журнала для Key Vault, мы будем использовать команду Azure CLI [AZ Monitor диагностики-Settings Create](/cli/azure/monitor/diagnostic-settings) или командлет [Set-АЗДИАГНОСТИКСЕТТИНГ](/powershell/module/az.monitor/set-azdiagnosticsetting) вместе с идентификатором учетной записи хранения и идентификатором ресурса хранилища ключей.
 
 ```azurecli-interactive
 az monitor diagnostic-settings create --storage-account "<storage-account-id>" --resource "<key-vault-resource-id>" --name "Key vault logs" --logs '[{"category": "AuditEvent","enabled": true}]' --metrics '[{"category": "AllMetrics","enabled": true}]'
 ```
 
-С Azure PowerShell мы будем использовать командлет [Set-аздиагностиксеттинг](/powershell/module/az.monitor/set-azdiagnosticsetting?view=azps-4.7.0) с флагом **-Enabled** , установленным в **$true** , а категория имеет значение `AuditEvent` (единственная категория для Key Vault ведения журнала):
+С Azure PowerShell мы будем использовать командлет [Set-аздиагностиксеттинг](/powershell/module/az.monitor/set-azdiagnosticsetting) с флагом **-Enabled** , установленным в **$true** , а категория имеет значение `AuditEvent` (единственная категория для Key Vault ведения журнала):
 
 ```powershell-interactive
 Set-AzDiagnosticSetting -ResourceId "<key-vault-resource-id>" -StorageAccountId $sa.id -Enabled $true -Category "AuditEvent"
@@ -123,7 +123,7 @@ az monitor diagnostic-settings update
 ```
 -->
 
-С Azure PowerShell используйте командлет [Set-аздиагностиксеттинг](/powershell/module/az.monitor/set-azdiagnosticsetting?view=azps-4.7.0) . 
+С Azure PowerShell используйте командлет [Set-аздиагностиксеттинг](/powershell/module/az.monitor/set-azdiagnosticsetting) . 
 
 ```powershell-interactive
 Set-AzDiagnosticSetting "<key-vault-resource-id>" -StorageAccountId $sa.id -Enabled $true -Category AuditEvent -RetentionEnabled $true -RetentionInDays 90
@@ -149,7 +149,7 @@ Set-AzDiagnosticSetting "<key-vault-resource-id>" -StorageAccountId $sa.id -Enab
 az storage blob list --account-name "<your-unique-storage-account-name>" --container-name "insights-logs-auditevent"
 ```
 
-Используя Azure PowerShell, используйте список [Get-азсторажеблоб](/powershell/module/az.storage/get-azstorageblob?view=azps-4.7.0) , содержащий все большие двоичные объекты в этом контейнере, и введите:
+Используя Azure PowerShell, используйте список [Get-азсторажеблоб](/powershell/module/az.storage/get-azstorageblob) , содержащий все большие двоичные объекты в этом контейнере, и введите:
 
 ```powershell
 Get-AzStorageBlob -Container "insights-logs-auditevent" -Context $sa.Context
@@ -165,7 +165,7 @@ Get-AzStorageBlob -Container "insights-logs-auditevent" -Context $sa.Context
 az storage blob download --container-name "insights-logs-auditevent" --file <path-to-file> --name "<blob-name>" --account-name "<your-unique-storage-account-name>"
 ```
 
-Используя Azure PowerShell, используйте командлет [gt-азсторажеблобс](/powershell/module/az.storage/get-azstorageblob?view=azps-4.7.0) , чтобы получить список больших двоичных объектов, затем передайте его в командлет [Get-азсторажеблобконтент](/powershell/module/az.storage/get-azstorageblobcontent?view=azps-4.7.0) , чтобы скачать журналы по выбранному пути.
+Используя Azure PowerShell, используйте командлет [gt-азсторажеблобс](/powershell/module/az.storage/get-azstorageblob) , чтобы получить список больших двоичных объектов, затем передайте его в командлет [Get-азсторажеблобконтент](/powershell/module/az.storage/get-azstorageblobcontent) , чтобы скачать журналы по выбранному пути.
 
 ```powershell-interactive
 $blobs = Get-AzStorageBlob -Container "insights-logs-auditevent" -Context $sa.Context | Get-AzStorageBlobContent -Destination "<path-to-file>"

@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 10/7/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 22e07726ca71cc28e9536bb24cde580d4232f237
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 1b7a846ee92da001ea2ac3ddd02efa9a870f72c6
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102433426"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501912"
 ---
 # <a name="write-client-app-authentication-code"></a>Запись кода проверки подлинности клиентского приложения
 
@@ -35,7 +35,7 @@ Azure Digital двойников выполняет проверку подли�
 * [.NET (C#)](/dotnet/api/azure.identity)
 * [Java](/java/api/overview/azure/identity-readme)
 * [JavaScript](/javascript/api/overview/azure/identity-readme)
-* [Python](/python/api/overview/azure/identity-readme?preserve-view=true&view=azure-python)
+* [Python](/python/api/overview/azure/identity-readme)
 
 Три общих метода получения учетных данных в `Azure.Identity` :
 

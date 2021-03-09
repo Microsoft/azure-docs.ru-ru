@@ -3,12 +3,12 @@ title: Доступ к ресурсам сообщества с помощью �
 description: Использование центра архивации для доступа к примерам шаблонов, сценариев и запросов функций
 ms.topic: conceptual
 ms.date: 02/18/2021
-ms.openlocfilehash: 23892c11df26bd3799ca247ef31a7d4c1b6e8bf5
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: b5173f916341497620d521af1bc7e973e0b6e507
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102100038"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102506277"
 ---
 # <a name="access-community-resources-using-backup-center"></a>Доступ к ресурсам сообщества с помощью центра архивации
 

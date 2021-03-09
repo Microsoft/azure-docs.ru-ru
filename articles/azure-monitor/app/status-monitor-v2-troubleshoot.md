@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: TimothyMothra
 ms.author: tilee
 ms.date: 04/23/2019
-ms.openlocfilehash: 7a6fc27321fa924b7ef8f9bd39b5824bb6fe3c72
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: be202a6016842ee82b3230c2841d416d3b53ea15
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98732584"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102505585"
 ---
 # <a name="troubleshooting-application-insights-agent-formerly-named-status-monitor-v2"></a>Устранение неполадок агента Application Insights (прежнее название — монитор состояния v2)
 
@@ -55,7 +55,7 @@ ms.locfileid: "98732584"
 ### <a name="powershell-versions"></a>Версии PowerShell
 Этот продукт написан и протестирован с помощью PowerShell версии 5.1.
 Этот модуль несовместим с PowerShell версии 6 или 7.
-Мы рекомендуем использовать PowerShell версии 5.1 вместе с новыми версиями. Дополнительные сведения см. в статье [параллельное использование PowerShell 7 с powershell 5,1](/powershell/scripting/install/migrating-from-windows-powershell-51-to-powershell-7?view=powershell-7.1#using-powershell-7-side-by-side-with-windows-powershell-51).
+Мы рекомендуем использовать PowerShell версии 5.1 вместе с новыми версиями. Дополнительные сведения см. в статье [параллельное использование PowerShell 7 с powershell 5,1](/powershell/scripting/install/migrating-from-windows-powershell-51-to-powershell-7#using-powershell-7-side-by-side-with-windows-powershell-51).
 
 ### <a name="conflict-with-iis-shared-configuration"></a>Конфликт с общей конфигурацией IIS
 
@@ -155,6 +155,6 @@ Cmdlet          Start-ApplicationInsightsMonitoringTrace           0.4.0      Az
 
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь со [справочником по API](status-monitor-v2-overview.md#powershell-api-reference) , чтобы узнать о параметрах, которые могли быть пропущены.

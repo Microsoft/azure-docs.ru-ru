@@ -5,12 +5,12 @@ author: jakrams
 ms.author: jakras
 ms.date: 02/04/2020
 ms.topic: how-to
-ms.openlocfilehash: 889c25fd1402c4438ff648afce64905de112c8db
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: d8a6fd458cdcf79cdeb693b25acf72d4ec48def7
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102215550"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102507523"
 ---
 # <a name="use-azure-blob-storage-for-model-conversion"></a>Использование хранилища BLOB-объектов Azure для преобразования модели
 
@@ -65,7 +65,7 @@ URI SAS можно создать с помощью одного из следу
 
 - [Обозреватель службы хранилища Azure](https://azure.microsoft.com/features/storage-explorer/) — удобный пользовательский интерфейс для отправки, скачивания и управления файлами в хранилище BLOB-объектов Azure.
 - [Командная строка Azure](../../../storage/blobs/storage-quickstart-blobs-cli.md)
-- [Overview of Azure PowerShell](/powershell/azure/install-az-ps?view=azps-2.2.0) (Общие сведения об Azure PowerShell)
+- [Overview of Azure PowerShell](/powershell/azure/install-az-ps) (Общие сведения об Azure PowerShell)
   - см. [примеры сценариев PowerShell](../../samples/powershell-example-scripts.md) .
 - [Использование пакета SDK для хранилища (Python, C#...)](../../../storage/index.yml)
 - [Использование API-интерфейсов службы хранилища Azure](/rest/api/storageservices/blob-service-rest-api)

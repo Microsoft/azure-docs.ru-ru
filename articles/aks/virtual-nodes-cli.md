@@ -6,12 +6,12 @@ services: container-service
 ms.topic: conceptual
 ms.date: 05/06/2019
 ms.custom: references_regions, devx-track-azurecli
-ms.openlocfilehash: af8403f80f7282207ee1bc6b2f81da0d83d264e0
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: d1021352f3555f49b165eed60214e11b1a8d07d9
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102180944"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102508186"
 ---
 # <a name="create-and-configure-an-azure-kubernetes-services-aks-cluster-to-use-virtual-nodes-using-the-azure-cli"></a>Создание и настройка кластера Службы Azure Kubernetes (AKS) для использования виртуальных узлов с помощью Azure CLI
 
@@ -86,7 +86,7 @@ az network vnet subnet create \
 
 ## <a name="create-a-service-principal-or-use-a-managed-identity"></a>Создание субъекта-службы или использование управляемого удостоверения
 
-Для взаимодействия с API-интерфейсами Azure кластеру AKS требуется субъект-служба Azure Active Directory. Этот субъект-служба может быть автоматически создан с помощью интерфейса командной строки или портала Azure либо вы можете сами предварительно создать этот компонент и назначить дополнительные разрешения. Кроме того, для разрешений можно использовать управляемое удостоверение вместо субъекта-службы. Дополнительные сведения см. в статье о том, [как использовать управляемые удостоверения](use-managed-identity.md).
+Чтобы разрешить кластеру AKS взаимодействовать с другими ресурсами Azure, используется удостоверение кластера. Это удостоверение кластера может быть автоматически создано Azure CLI или порталом, либо вы можете предварительно создать его и назначить дополнительные разрешения. По умолчанию это удостоверение кластера является управляемым удостоверением. Дополнительные сведения см. в статье о том, [как использовать управляемые удостоверения](use-managed-identity.md). Вы также можете использовать субъект-службу в качестве удостоверения кластера. Ниже описано, как вручную создать и назначить субъект-службу для кластера.
 
 Создайте субъект-службу с помощью команды [az ad sp create-for-rbac][az-ad-sp-create-for-rbac]. Параметр `--skip-assignment` ограничивает назначение дополнительных разрешений.
 

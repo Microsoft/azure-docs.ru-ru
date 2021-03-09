@@ -10,12 +10,12 @@ author: cartacioS
 ms.author: sacartac
 ms.date: 10/27/2020
 ms.custom: automl
-ms.openlocfilehash: 6ed9b316fceeb30a775e2e0d90e7bbb0a07278cd
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: e7038a4e06a96ac2df1a7f0918877db9c97cb71d
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102180503"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102502541"
 ---
 # <a name="what-is-automated-machine-learning-automl"></a>Что такое автоматизированное машинное обучение (AutoML)?
 
@@ -204,7 +204,7 @@ ms.locfileid: "102180503"
 
 Машинное обучение Azure предлагает два опыта работы с автоматизированным ML:
 
-* [Пакет SDK для Python для Машинного обучения Azure](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py) для тех, кто предпочитает работать с кодом. 
+* [Пакет SDK для Python для Машинного обучения Azure](/python/api/overview/azure/ml/intro) для тех, кто предпочитает работать с кодом. 
 
 * Студия Машинного обучения Azure по адресу [https://ml.azure.com](https://ml.azure.com/) для тех, кто имеет ограниченные знания кода или обходится без них.  
 
@@ -289,7 +289,7 @@ ms.locfileid: "102180503"
 
 ### <a name="python-sdk-reference"></a>Справочник по пакету SDK для Python
 
-Углубить свои знания о шаблонах разработки SDK и спецификациях классов с помощью [справочной документации по классу аутомл](/python/api/azureml-train-automl-client/azureml.train.automl.automlconfig.automlconfig?preserve-view=true&view=azure-ml-py). 
+Углубить свои знания о шаблонах разработки SDK и спецификациях классов с помощью [справочной документации по классу аутомл](/python/api/azureml-train-automl-client/azureml.train.automl.automlconfig.automlconfig). 
 
 > [!Note]
 > Автоматизированные функции машинного обучения также доступны в других решениях Майкрософт, таких как, [ml.NET](/dotnet/machine-learning/automl-overview), [HDInsight](../hdinsight/spark/apache-spark-run-machine-learning-automl.md), [Power BI](/power-bi/service-machine-learning-automated) и [SQL Server](https://cloudblogs.microsoft.com/sqlserver/2019/01/09/how-to-automate-machine-learning-on-sql-server-2019-big-data-clusters/)

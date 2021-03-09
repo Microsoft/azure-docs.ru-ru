@@ -11,12 +11,12 @@ ms.subservice: core
 ms.date: 10/02/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, contperf-fy21q1
-ms.openlocfilehash: 850b590ae8aeab822367714fb9a56661306c2387
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.openlocfilehash: 318afced85f3cca0a450d77f8be7b2a1d6c388ed
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100518697"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102504939"
 ---
 # <a name="set-up-compute-targets-for-model-training-and-deployment"></a>Настройка целевых объектов вычислений для обучения и развертывания модели
 
@@ -43,7 +43,7 @@ ms.locfileid: "100518697"
 
 * Рабочая область машинного обучения Azure. Дополнительные сведения см. в статье [создание машинное обучение Azure рабочей области](how-to-manage-workspace.md).
 
-* [Расширение Azure CLI для службы машинное обучение](reference-azure-machine-learning-cli.md), [машинное обучение Azure пакет SDK для Python](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py)или [расширение машинное обучение Azure Visual Studio Code](tutorial-setup-vscode-extension.md).
+* [Расширение Azure CLI для службы машинное обучение](reference-azure-machine-learning-cli.md), [машинное обучение Azure пакет SDK для Python](/python/api/overview/azure/ml/intro)или [расширение машинное обучение Azure Visual Studio Code](tutorial-setup-vscode-extension.md).
 
 ## <a name="limitations"></a>Ограничения
 
@@ -60,7 +60,7 @@ ms.locfileid: "100518697"
 
 При использовании локального компьютера для **обучения** нет необходимости создавать целевой объект вычислений.  Просто [отправьте обучающий запуск](how-to-set-up-training-targets.md) с локального компьютера.
 
-При использовании локального компьютера для **вывода** необходимо установить DOCKER. Чтобы выполнить развертывание, используйте [LocalWebservice.deploy_configuration ()](/python/api/azureml-core/azureml.core.webservice.local.localwebservice?preserve-view=true&view=azure-ml-py#deploy-configuration-port-none-) , чтобы определить порт, который будет использовать веб-служба. Затем используйте нормальный процесс развертывания, как описано в разделе [Развертывание моделей с помощью машинное обучение Azure](how-to-deploy-and-where.md).
+При использовании локального компьютера для **вывода** необходимо установить DOCKER. Чтобы выполнить развертывание, используйте [LocalWebservice.deploy_configuration ()](/python/api/azureml-core/azureml.core.webservice.local.localwebservice#deploy-configuration-port-none-) , чтобы определить порт, который будет использовать веб-служба. Затем используйте нормальный процесс развертывания, как описано в разделе [Развертывание моделей с помощью машинное обучение Azure](how-to-deploy-and-where.md).
 
 ## <a name="remote-virtual-machines"></a><a id="vm"></a>Удаленные виртуальные машины
 
@@ -325,7 +325,7 @@ except ComputeTargetException:
 > Не создавайте несколько одновременных вложений для одного и того же ADLA из рабочей области. Каждое новое вложение приведет к нарушению предыдущих существующих вложений.
 
 > [!TIP]
-> Конвейеры машинного обучения Azure работают только с хранимыми данными в хранилище данных учетной записи Data Lake Analytics по умолчанию. Если данные, с которыми необходимо работать, находятся в хранилище, отличном от хранилища по умолчанию, можно использовать [`DataTransferStep`](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.data_transfer_step.datatransferstep?preserve-view=true&view=azure-ml-py) для копирования данных перед обучением.
+> Конвейеры машинного обучения Azure работают только с хранимыми данными в хранилище данных учетной записи Data Lake Analytics по умолчанию. Если данные, с которыми необходимо работать, находятся в хранилище, отличном от хранилища по умолчанию, можно использовать [`DataTransferStep`](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.data_transfer_step.datatransferstep) для копирования данных перед обучением.
 
 ## <a name="azure-container-instance"></a><a id="aci"></a>Экземпляр контейнера Azure
 

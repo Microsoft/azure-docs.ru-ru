@@ -17,12 +17,12 @@ ms.date: 1/29/2021
 ms.author: markvi
 ms.reviewer: arvinh
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 284b554581534a8493225fba0b70b074fb7dd982
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 7d8c4876faf9ebc2619309aa0095a8ffe1e9e93d
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101651943"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102500552"
 ---
 # <a name="overview-of-provisioning-logs-in-the-azure-portal-preview"></a>Общие сведения о подготовке журналов в портал Azure (Предварительная версия)
 
@@ -117,7 +117,7 @@ ms.locfileid: "101651943"
 > Имя пользователя может не всегда присутствовать в столбце **идентификаторов** . Всегда будет один идентификатор. 
 
 
-Фильтр **дат** позволяет определить интервал времени для возвращаемых данных. Возможны следующие значения:
+Фильтр **дат** позволяет определить интервал времени для возвращаемых данных. Доступны следующие значения:
 
 - 1 месяц
 - 7 дней
@@ -207,7 +207,7 @@ ms.locfileid: "101651943"
 
 Ниже приведены примеры команд для работы с JSON с файлом с помощью PowerShell. Вы можете использовать любой язык программирования, с которым вам удобно работать.  
 
-Сначала [прочтите файл JSON](/powershell/module/microsoft.powershell.utility/convertfrom-json?view=powershell-7.1) , выполнив следующую команду:
+Сначала [прочтите файл JSON](/powershell/module/microsoft.powershell.utility/convertfrom-json) , выполнив следующую команду:
 
 ` $JSONContent = Get-Content -Path "<PATH TO THE PROVISIONING LOGS FILE>" | ConvertFrom-JSON`
 

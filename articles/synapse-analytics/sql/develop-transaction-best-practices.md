@@ -10,12 +10,12 @@ ms.subservice: sql
 ms.date: 04/15/2020
 ms.author: xiaoyul
 ms.reviewer: igorstan
-ms.openlocfilehash: 74deebb66bc0db316e2aa36588034c6afb3bbe40
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 8b1f820cfca0e352b49d815e2b99d407ccc8ce43
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101674031"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102505704"
 ---
 # <a name="optimize-transactions-with-dedicated-sql-pool-in-azure-synapse-analytics"></a>Оптимизация транзакций с выделенным пулом SQL в Azure синапсе Analytics 
 
@@ -422,4 +422,4 @@ Azure синапсе Analytics позволяет [приостанавлива�
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения об уровнях изоляции и ограничениях транзакций см. [в разделе транзакции в выделенном пуле SQL](develop-transactions.md) .  Рекомендации по использованию пула SQL см. в [этой статье](best-practices-sql-pool.md).
+Дополнительные сведения об уровнях изоляции и ограничениях транзакций см. [в разделе транзакции в выделенном пуле SQL](develop-transactions.md) .  Общие сведения о других рекомендациях см. в разделе рекомендации по [выделению пула SQL](best-practices-sql-pool.md).

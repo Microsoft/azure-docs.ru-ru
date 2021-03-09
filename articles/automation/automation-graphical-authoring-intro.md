@@ -5,12 +5,12 @@ services: automation
 ms.subservice: process-automation
 ms.date: 03/16/2018
 ms.topic: conceptual
-ms.openlocfilehash: ec74ca19978a4164289276d44b34eb14b694687f
-ms.sourcegitcommit: d1e56036f3ecb79bfbdb2d6a84e6932ee6a0830e
+ms.openlocfilehash: bbac794263fec176e03c7148d860c479a2ed9d39
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99051587"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501234"
 ---
 # <a name="author-graphical-runbooks-in-azure-automation"></a>Создание графических модулей Runbook в службе автоматизации Azure
 
@@ -61,7 +61,7 @@ ms.locfileid: "99051587"
 
 Набор параметров определяет обязательные и необязательные параметры, которые принимают значения для определенного командлета. У каждого командлета имеется по крайней мере один набор параметров, а у некоторых их несколько. Если у командлета несколько наборов параметров, перед настройкой параметров необходимо выбрать, какой из них использовать. Можно изменить набор параметров, используемый действием, щелкнув **Набор параметров** и выбрав другой набор. В этом случае все уже настроенные значения параметров будут потеряны.
 
-В следующем примере у командлета [Get-AzVM](/powershell/module/az.compute/get-azvm?view=azps-3.5.0&preserve-view=true) три набора параметров. В этом примере используется один набор **ListVirtualMachineInResourceGroupParamSet** для возврата всех виртуальных машин в группе ресурсов. В набор входит один необязательный параметр. В примере также используется набор параметров **GetVirtualMachineInResourceGroupParamSet** для указания возвращаемой виртуальной машины. Этот набор содержит два обязательных параметра и один необязательный параметр.
+В следующем примере у командлета [Get-AzVM](/powershell/module/az.compute/get-azvm) три набора параметров. В этом примере используется один набор **ListVirtualMachineInResourceGroupParamSet** для возврата всех виртуальных машин в группе ресурсов. В набор входит один необязательный параметр. В примере также используется набор параметров **GetVirtualMachineInResourceGroupParamSet** для указания возвращаемой виртуальной машины. Этот набор содержит два обязательных параметра и один необязательный параметр.
 
 ![Набор параметров](media/automation-graphical-authoring-intro/get-azvm-parameter-sets.png)
 
@@ -435,4 +435,4 @@ $h
 * Чтобы начать работу с графическими модулями Runbook, см. инструкции в статье [Учебник. Создание графического модуля Runbook](learn/automation-tutorial-runbook-graphical.md).
 * См. сведения о типах runbook, их преимуществах и ограничениях в описании [типов последовательностей runbook в службе автоматизации Azure](automation-runbook-types.md)
 * Сведения о том, как выполнять аутентификацию с помощью учетной записи запуска от имени службы автоматизации см. в [этой статье](automation-security-overview.md#run-as-account).
-* Справочник по командлетам PowerShell см. в документации по [Az.Automation](/powershell/module/az.automation/?view=azps-3.7.0&preserve-view=true#automation).
+* Справочник по командлетам PowerShell см. в документации по [Az.Automation](/powershell/module/az.automation/#automation).

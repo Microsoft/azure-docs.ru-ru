@@ -1,19 +1,19 @@
 ---
-title: Создание виртуальной машины с зоной на базе Linux с помощью Azure CLI
-description: Создание виртуальной машины Linux в зоне доступности с помощью Azure CLI
+title: Создание виртуальной машины с зоной с помощью Azure CLI
+description: Создание виртуальной машины в зоне доступности с помощью Azure CLI
 author: cynthn
 ms.service: virtual-machines-linux
 ms.topic: how-to
 ms.date: 04/05/2018
 ms.author: cynthn
-ms.openlocfilehash: 964d2b5d89fd91aca68e9b47b0049529fe284848
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: fbed3e7ac3e809658da532ccc27e78230cc0b581
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96016409"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102509138"
 ---
-# <a name="create-a-linux-virtual-machine-in-an-availability-zone-with-the-azure-cli"></a>Создание виртуальной машины Linux в зоне доступности с помощью Azure CLI
+# <a name="create-a-virtual-machine-in-an-availability-zone-using-azure-cli"></a>Создание виртуальной машины в зоне доступности с помощью Azure CLI
 
 В этой статье рассматривается использование Azure CLI для создания виртуальной машины Linux в зоне доступности Azure. [Зона доступности](../../availability-zones/az-overview.md) — это физически отдельная зона в регионе Azure. Зоны доступности позволяют защитить приложения и данные от маловероятных сбоев и потери всего центра обработки данных.
 
@@ -186,6 +186,6 @@ az network public-ip show --resource-group myResourceGroupVM --name $ipaddressna
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Из этой статье вы узнали, как создать виртуальную машину в зоне доступности. Дополнительные сведения о [доступности](../availability.md) для виртуальных машин Azure.

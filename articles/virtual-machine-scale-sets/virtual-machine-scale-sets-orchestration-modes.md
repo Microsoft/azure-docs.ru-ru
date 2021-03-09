@@ -9,12 +9,12 @@ ms.subservice: extensions
 ms.date: 02/12/2021
 ms.reviewer: jushiman
 ms.custom: mimckitt
-ms.openlocfilehash: 3350ff7aa05232173e5fd3b21451a76a0a40683d
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 71ddb1217be7fe3e1254e0d49e1f40c43a55a3f0
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102043717"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102502422"
 ---
 # <a name="preview-orchestration-modes-for-virtual-machine-scale-sets-in-azure"></a>Предварительная версия: режимы оркестрации для масштабируемых наборов виртуальных машин в Azure 
 
@@ -322,7 +322,7 @@ InvalidParameter. The specified fault domain count 2 must fall in the range 1 to
 
 **Причина:** `platformFaultDomainCount` Недопустимый параметр для выбранного региона или зоны. 
 
-**Решение:** Необходимо выбрать допустимое `platformFaultDomainCount` значение. Для развертываний зональные максимальное `platformFaultDomainCount` значение равно 1. Для региональных развертываний, в которых не указана зона, максимальное значение `platformFaultDomainCount` зависит от региона. См. раздел [Управление доступностью виртуальных машин для сценариев](../virtual-machines/manage-availability.md#use-managed-disks-for-vms-in-an-availability-set) , чтобы определить максимальное число доменов сбоя для каждого региона. 
+**Решение:** Необходимо выбрать допустимое `platformFaultDomainCount` значение. Для развертываний зональные максимальное `platformFaultDomainCount` значение равно 1. Для региональных развертываний, в которых не указана зона, максимальное значение `platformFaultDomainCount` зависит от региона. См. раздел [Управление доступностью виртуальных машин для сценариев](../virtual-machines/availability.md) , чтобы определить максимальное число доменов сбоя для каждого региона. 
 
 ```
 OperationNotAllowed. Deletion of Virtual Machine Scale Set is not allowed as it contains one or more VMs. Please delete or detach the VM(s) before deleting the Virtual Machine Scale Set.

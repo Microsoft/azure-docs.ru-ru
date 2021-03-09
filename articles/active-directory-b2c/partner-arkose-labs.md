@@ -11,16 +11,16 @@ ms.topic: how-to
 ms.date: 02/18/2021
 ms.author: gasinh
 ms.subservice: B2C
-ms.openlocfilehash: 04492abc0f235c2dc6139adbe543bcce82f7f7b3
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 46f117b13909c2d9624b88e9f5d9a62c4c646e51
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101646903"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102500298"
 ---
 # <a name="tutorial-configure-arkose-labs-with-azure-active-directory-b2c"></a>Руководство. Настройка Аркосе Labs с помощью Azure Active Directory B2C
 
-Из этого руководства вы узнаете, как интегрировать проверку подлинности Azure Active Directory (AD) B2C с [Аркосе Labs](https://www.arkoselabs.com/). Аркосе Labs помогают организациям в отношении атак Bot, атак перенаправление и мошеннических учетных записей.  
+В этом примере руководства вы узнаете, как интегрировать проверку подлинности Azure Active Directory (AD) B2C с [Аркосе Labs](https://www.arkoselabs.com/). Аркосе Labs помогают организациям в отношении атак Bot, атак перенаправление и мошеннических учетных записей.  
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -196,7 +196,7 @@ ms.locfileid: "101646903"
 
 [Создайте соединитель API](https://docs.microsoft.com/azure/active-directory-b2c/add-api-connector) и включите его для пользовательского потока. Конфигурация соединителя API должна выглядеть следующим образом:
 
-![На рисунке показан поиск по идентификатору приложения](media/partner-arkose-labs/configure-api-connector.png)
+![На рисунке показано, как настроить соединитель API](media/partner-arkose-labs/configure-api-connector.png)
 
 - **URL-адрес конечной точки** — это URL-адрес функции, скопированный ранее при развертывании функции Azure.
 
