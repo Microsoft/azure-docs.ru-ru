@@ -10,12 +10,12 @@ author: lobrien
 ms.date: 11/20/2020
 ms.topic: conceptual
 ms.custom: how-to, deploy
-ms.openlocfilehash: 8f22f1af04d59b4c1fb7f19a3d6815b61cac5fbd
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: a7d1212d1106f0883d05a860b498b90e4e5f8e00
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102211233"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102517520"
 ---
 # <a name="deploy-models-trained-with-azure-machine-learning-on-your-local-machines"></a>Развертывание моделей, обученных Машинное обучение Azure на локальных компьютерах 
 
@@ -31,7 +31,7 @@ ms.locfileid: "102211233"
 
 - Рабочая область машинного обучения Azure. Дополнительные сведения см. в статье [создание машинное обучение Azure рабочей области](how-to-manage-workspace.md).
 - Модель и среда. Если у вас нет обученной модели, можно использовать модель и файлы зависимостей, предоставленные в [этом руководстве](tutorial-train-models-with-aml.md).
-- [Пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py).
+- [Пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/intro).
 - Conda Manager, например Anaconda или Miniconda, если требуется зеркальное отображение зависимостей пакетов Машинное обучение Azure.
 - DOCKER, если вы хотите использовать контейнерную версию Машинное обучение Azure среды.
 

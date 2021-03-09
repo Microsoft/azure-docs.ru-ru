@@ -10,16 +10,16 @@ ms.author: laobri
 ms.date: 10/22/2020
 ms.topic: troubleshooting
 ms.custom: troubleshooting, devx-track-python, contperf-fy21q2
-ms.openlocfilehash: 0f27688e31f772cc8d784371aa570d55c41f5695
-ms.sourcegitcommit: 431bf5709b433bb12ab1f2e591f1f61f6d87f66c
+ms.openlocfilehash: 195942d1787cdef51ee480fa5c5595db99bc7c78
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98131820"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102522093"
 ---
 # <a name="troubleshooting-machine-learning-pipelines"></a>Устранение неполадок конвейеров машинного обучения
 
-В этой статье вы узнаете, как устранять неполадки при возникновении ошибок, связанных с запуском [конвейера машинного обучения](concept-ml-pipelines.md) в [машинное обучение Azure SDK](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py) и [конструкторе машинное обучение Azure](./concept-designer.md). 
+В этой статье вы узнаете, как устранять неполадки при возникновении ошибок, связанных с запуском [конвейера машинного обучения](concept-ml-pipelines.md) в [машинное обучение Azure SDK](/python/api/overview/azure/ml/intro) и [конструкторе машинное обучение Azure](./concept-designer.md). 
 
 ## <a name="troubleshooting-tips"></a>Советы по устранению неполадок
 
@@ -192,7 +192,7 @@ parallelrun_step = ParallelRunStep(
 
 | Библиотека                    | Тип   | Пример                                                          | Назначение                                  | Ресурсы                                                                                                                                                                                                                                                                                                                    |
 |----------------------------|--------|------------------------------------------------------------------|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| пакет SDK для Машинного обучения Azure; | Метрика | `run.log(name, val)`                                             | Пользовательский интерфейс портала Машинное обучение Azure             | [Как отвести эксперименты](how-to-track-experiments.md)<br>[класс azureml. Core. Run](/python/api/azureml-core/azureml.core.run%28class%29?preserve-view=true&view=azure-ml-py)                                                                                                                                                 |
+| пакет SDK для Машинного обучения Azure; | Метрика | `run.log(name, val)`                                             | Пользовательский интерфейс портала Машинное обучение Azure             | [Как отвести эксперименты](how-to-track-experiments.md)<br>[класс azureml. Core. Run](/python/api/azureml-core/azureml.core.run%28class%29)                                                                                                                                                 |
 | Печать и ведение журнала Python    | Журнал    | `print(val)`<br>`logging.info(message)`                          | Журналы драйверов, конструктор Машинное обучение Azure | [Как отвести эксперименты](how-to-track-experiments.md)<br><br>[Ведение журнала Python](https://docs.python.org/2/library/logging.html)                                                                                                                                                                       |
 | Python для OpenCensus          | Журнал    | `logger.addHandler(AzureLogHandler())`<br>`logging.log(message)` | Application Insights трассировки                | [Отладка конвейеров в Application Insights](./how-to-log-pipelines-application-insights.md)<br><br>[Агенты OpenCensus Azure Monitor Exporter](https://github.com/census-instrumentation/opencensus-python/tree/master/contrib/opencensus-ext-azure)<br>[Cookbook ведения журнала Python](https://docs.python.org/3/howto/logging-cookbook.html) |
 
@@ -244,7 +244,7 @@ logger.error("I am an OpenCensus error statement with custom dimensions", {'step
 1. На правой панели модуля перейдите на вкладку  **выходные данные + журналы** .
 1. Разверните правую панель и выберите **70_driver_log.txt** , чтобы просмотреть файл в браузере. Кроме того, можно скачать журналы локально.
 
-    ![Развернутая область вывода в конструкторе](./media/how-to-debug-pipelines/designer-logs.png)? View = Azure-ML-корректировка&сохранить-просмотреть = true)? View = Azure-ML-Корр&Preserve-View = true)
+    ![Развернутая область вывода в конструкторе](./media/how-to-debug-pipelines/designer-logs.png)
 
 ### <a name="get-logs-from-pipeline-runs"></a>Получение журналов из запусков конвейера
 
@@ -274,6 +274,6 @@ logger.error("I am an OpenCensus error statement with custom dimensions", {'step
 
 * Полный пример, в котором показано автоматизированное машинное обучение в конвейерах МАШИНного обучения, см. в статье [Использование автоматического ML в конвейере машинное обучение Azure в Python](how-to-use-automlstep-in-pipelines.md).
 
-* Обратитесь к Справочнику по пакету SDK, чтобы получить справку по пакету [azureml-конвейеры-Core](/python/api/azureml-pipeline-core/?preserve-view=true&view=azure-ml-py) и пакету [azureml-конвейеры-этапов](/python/api/azureml-pipeline-steps/?preserve-view=true&view=azure-ml-py) .
+* Обратитесь к Справочнику по пакету SDK, чтобы получить справку по пакету [azureml-конвейеры-Core](/python/api/azureml-pipeline-core/) и пакету [azureml-конвейеры-этапов](/python/api/azureml-pipeline-steps/) .
 
 * См. список [исключений и кодов ошибок конструктора](algorithm-module-reference/designer-error-codes.md).

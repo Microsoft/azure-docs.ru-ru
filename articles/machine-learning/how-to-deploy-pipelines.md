@@ -11,12 +11,12 @@ author: lobrien
 ms.date: 8/25/2020
 ms.topic: conceptual
 ms.custom: how-to, contperf-fy21q1
-ms.openlocfilehash: 5dc14873f8863332d37a6ced6ce4013e76640dea
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: efedb21a1ec1ed53a8c6bfadf337d23a89c04383
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98879399"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520182"
 ---
 # <a name="publish-and-track-machine-learning-pipelines"></a>Публикация и мониторинг конвейеров машинного обучения
 
@@ -26,7 +26,7 @@ ms.locfileid: "98879399"
 
 Конвейеры машинного обучения — это многократно используемые рабочие процессы для задач машинного обучения. Одним из преимуществ конвейеров является повышение совместной работы. Вы также можете создавать конвейеры версий, что позволяет клиентам использовать текущую модель при работе с новой версией. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Создание [рабочей области машинное обучение Azure](how-to-manage-workspace.md) для хранения всех ресурсов конвейера
 
@@ -38,7 +38,7 @@ ms.locfileid: "98879399"
 
 После создания и запуска конвейера можно опубликовать конвейер, чтобы он выполнялся с разными входными данными. Чтобы конечная точка RESTFUL уже опубликованного конвейера принимала параметры, необходимо настроить конвейер на использование `PipelineParameter` объектов для аргументов, которые будут отличаться.
 
-1. Чтобы создать параметр конвейера, используйте объект [PipelineParameter](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.pipelineparameter?preserve-view=true&view=azure-ml-py) со значением по умолчанию.
+1. Чтобы создать параметр конвейера, используйте объект [PipelineParameter](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.pipelineparameter) со значением по умолчанию.
 
    ```python
    from azureml.pipeline.core.graph import PipelineParameter
@@ -76,7 +76,7 @@ ms.locfileid: "98879399"
 > [!IMPORTANT]
 > Если вы используете управление доступом на основе ролей Azure (Azure RBAC) для управления доступом к конвейеру, [Задайте разрешения для сценария конвейера (обучение или оценка)](how-to-assign-roles.md#common-scenarios).
 
-Чтобы вызвать выполнение предыдущего конвейера, необходим маркер заголовка проверки подлинности Azure Active Directory. Этот маркер описан в справочнике по [классам азуреклиаусентикатион](/python/api/azureml-core/azureml.core.authentication.azurecliauthentication?preserve-view=true&view=azure-ml-py) и в [проверке подлинности в машинное обучение Azure](https://aka.ms/pl-restep-auth) записной книжке.
+Чтобы вызвать выполнение предыдущего конвейера, необходим маркер заголовка проверки подлинности Azure Active Directory. Этот маркер описан в справочнике по [классам азуреклиаусентикатион](/python/api/azureml-core/azureml.core.authentication.azurecliauthentication) и в [проверке подлинности в машинное обучение Azure](https://aka.ms/pl-restep-auth) записной книжке.
 
 ```python
 from azureml.pipeline.core import PublishedPipeline
@@ -90,7 +90,7 @@ response = requests.post(published_pipeline1.endpoint,
 
 `json`Аргумент для запроса POST должен содержать, для `ParameterAssignments` ключа, словарь, содержащий параметры конвейера и их значения. Кроме того, `json` аргумент может содержать следующие ключи:
 
-| Ключ | Описание |
+| Клавиши | Описание |
 | --- | --- | 
 | `ExperimentName` | Имя эксперимента, связанного с этой конечной точкой |
 | `Description` | Произвольный текст, описывающий конечную точку | 
@@ -360,10 +360,10 @@ p = PublishedPipeline.get(ws, id="068f4885-7088-424b-8ce2-eeb9ba5381a6")
 p.disable()
 ```
 
-Его можно включить снова с помощью `p.enable()` . Дополнительные сведения см. в разделе Справочник по [классам публишедпипелине](/python/api/azureml-pipeline-core/azureml.pipeline.core.publishedpipeline?preserve-view=true&view=azure-ml-py) .
+Его можно включить снова с помощью `p.enable()` . Дополнительные сведения см. в разделе Справочник по [классам публишедпипелине](/python/api/azureml-pipeline-core/azureml.pipeline.core.publishedpipeline) .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Используйте [эти записные книжки Jupyter на сайте GitHub](https://aka.ms/aml-pipeline-readme), чтобы подробнее изучить конвейеры машинного обучения.
-- См. справочную справку по пакету [azureml-конвейеры-Core](/python/api/azureml-pipeline-core/?preserve-view=true&view=azure-ml-py) и пакету [azureml-конвейеры-этапов](/python/api/azureml-pipeline-steps/?preserve-view=true&view=azure-ml-py) .
+- См. справочную справку по пакету [azureml-конвейеры-Core](/python/api/azureml-pipeline-core/) и пакету [azureml-конвейеры-этапов](/python/api/azureml-pipeline-steps/) .
 - Советы по отладке и устранению неполадок конвейеров см. [в этой статье](how-to-debug-pipelines.md) .

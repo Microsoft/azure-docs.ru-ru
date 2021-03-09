@@ -11,12 +11,12 @@ ms.reviewer: nibaccam
 ms.date: 03/09/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, data4ml
-ms.openlocfilehash: d72d2d094e220bd4e460cfca6b422f0609c083af
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: fde25e4ba75bfb86c9837582d7168f85335836b6
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98880073"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520546"
 ---
 # <a name="version-and-track-azure-machine-learning-datasets"></a>Версия и отслеживание Машинное обучение Azure наборов данных
 
@@ -27,11 +27,11 @@ ms.locfileid: "98880073"
 * Когда новые данные доступны для повторного обучения
 * При применении различных подходов к подготовке данных или проектированию компонентов
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для работы с этим руководством необходимы указанные ниже компоненты.
 
-- [Установлен пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py). Этот пакет SDK включает пакет [azureml-DataSets](/python/api/azureml-core/azureml.core.dataset?preserve-view=true&view=azure-ml-py) .
+- [Установлен пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/install). Этот пакет SDK включает пакет [azureml-DataSets](/python/api/azureml-core/azureml.core.dataset) .
     
 - [Рабочая область машинное обучение Azure](concept-workspace.md). Получите существующий, выполнив следующий код или [создав новую рабочую область](how-to-manage-workspace.md).
 
@@ -62,7 +62,7 @@ titanic_ds = titanic_ds.register(workspace = workspace,
 
 ### <a name="retrieve-a-dataset-by-name"></a>Получение набора данных по имени
 
-По умолчанию метод [get_by_name ()](/python/api/azureml-core/azureml.core.dataset.dataset?preserve-view=true&view=azure-ml-py#&preserve-view=trueget-by-name-workspace--name--version--latest--) в `Dataset` классе возвращает последнюю версию набора данных, зарегистрированную в рабочей области. 
+По умолчанию метод [get_by_name ()](/python/api/azureml-core/azureml.core.dataset.dataset#get-by-name-workspace--name--version--latest--) в `Dataset` классе возвращает последнюю версию набора данных, зарегистрированную в рабочей области. 
 
 Следующий код возвращает версию 1 `titanic_ds` набора данных.
 
@@ -182,7 +182,7 @@ prep_step = PythonScriptStep(script_name="prepare.py",
 
 Для каждого Машинное обучение эксперимента можно легко отслеживать наборы данных, используемые в качестве входных данных, с помощью объекта эксперимента `Run` .
 
-В следующем коде метод используется [`get_details()`](/python/api/azureml-core/azureml.core.run.run?preserve-view=true&view=azure-ml-py#&preserve-view=trueget-details--) для мониторинга того, какие входные наборы данных использовались при выполнении эксперимента:
+В следующем коде метод используется [`get_details()`](/python/api/azureml-core/azureml.core.run.run#get-details--) для мониторинга того, какие входные наборы данных использовались при выполнении эксперимента:
 
 ```Python
 # get input datasets

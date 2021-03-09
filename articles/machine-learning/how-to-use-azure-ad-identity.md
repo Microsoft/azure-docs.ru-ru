@@ -11,20 +11,20 @@ ms.subservice: core
 ms.date: 11/16/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: bcf5f75cf5cabe42f530a6a179c2cafd43b5520d
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: b6e6288f125da2a29a8eff56b64f327914f90cb4
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94952545"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520478"
 ---
 # <a name="use-azure-ad-identity-with-your-machine-learning-web-service-in-azure-kubernetes-service"></a>Использование удостоверения Azure AD с веб-службой машинного обучения в Службе Azure Kubernetes
 
 В этом пошаговом окне вы узнаете, как назначить удостоверение Azure Active Directory (Azure AD) для развернутой модели машинного обучения в службе Azure Kubernetes. Проект [удостоверения Pod Azure AD](https://github.com/Azure/aad-pod-identity) позволяет приложениям безопасно получать доступ к облачным ресурсам с помощью Azure AD, используя [управляемые удостоверения](../active-directory/managed-identities-azure-resources/overview.md) и примитивы Kubernetes. Это позволяет веб-службе безопасно получать доступ к ресурсам Azure без необходимости внедрять учетные данные или управлять маркерами непосредственно внутри `score.py` скрипта. В этой статье объясняется, как создать и установить удостоверение Azure в кластере службы Azure Kubernetes и назначить удостоверение для развернутой веб-службы.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
-- [Расширение Azure CLI для службы машинное обучение](reference-azure-machine-learning-cli.md), [машинное обучение Azure SDK для Python](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py)или [расширение машинное обучение Azure Visual Studio Code](tutorial-setup-vscode-extension.md).
+- [Расширение Azure CLI для службы машинное обучение](reference-azure-machine-learning-cli.md), [машинное обучение Azure SDK для Python](/python/api/overview/azure/ml/intro)или [расширение машинное обучение Azure Visual Studio Code](tutorial-setup-vscode-extension.md).
 
 - Доступ к кластеру AKS с помощью `kubectl` команды. Дополнительные сведения см. в разделе [Подключение к кластеру](../aks/kubernetes-walkthrough.md#connect-to-the-cluster) .
 
@@ -148,7 +148,7 @@ blob_data = blob_client.download_blob()
 blob_data.readall()
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения об использовании клиентской библиотеки удостоверений Azure для Python см. в [репозитории](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/identity/azure-identity#azure-identity-client-library-for-python) на сайте GitHub.
 * Подробное руководство по развертыванию моделей в кластерах службы Kubernetes Azure [см. в](how-to-deploy-azure-kubernetes-service.md)этом разделе.

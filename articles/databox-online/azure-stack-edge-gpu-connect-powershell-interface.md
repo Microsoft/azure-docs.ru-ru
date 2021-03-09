@@ -6,14 +6,14 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 02/22/2021
+ms.date: 03/08/2021
 ms.author: alkohli
-ms.openlocfilehash: 1404dfd25f4e80e0e05c0071da649cacfa45dac0
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: 1319f806dd2f32233dcfe7383f5283b67827f16f
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102437763"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102517581"
 ---
 # <a name="manage-an-azure-stack-edge-pro-gpu-device-via-windows-powershell"></a>Управление устройством GPU Azure Stack с помощью Windows PowerShell
 
@@ -26,30 +26,12 @@ Azure Stack пограничных решений Pro позволяет обр�
 
 ## <a name="connect-to-the-powershell-interface"></a>Подключитесь к интерфейсу PowerShell.
 
-[!INCLUDE [Connect to admin runspace](../../includes/data-box-edge-gateway-connect-minishell.md)]
+[!INCLUDE [Connect to admin runspace](../../includes/azure-stack-edge-gateway-connect-minishell.md)]
 
 ## <a name="create-a-support-package"></a>Создать пакет поддержки.
 
 [!INCLUDE [Create a support package](../../includes/data-box-edge-gateway-create-support-package.md)]
 
-<!--## Upload certificate
-
-[!INCLUDE [Upload certificate](../../includes/data-box-edge-gateway-upload-certificate.md)]
-
-You can also upload IoT Edge certificates to enable a secure connection between your IoT Edge device and the downstream devices that may connect to it. There are three IoT Edge certificates (*.pem* format) that you need to install:
-
-- Root CA certificate or the owner CA
-- Device CA certificate
-- Device key certificate
-
-The following example shows the usage of this cmdlet to install IoT Edge certificates:
-
-```
-Set-HcsCertificate -Scope IotEdge -RootCACertificateFilePath "\\hcfs\root-ca-cert.pem" -DeviceCertificateFilePath "\\hcfs\device-ca-cert.pem\" -DeviceKeyFilePath "\\hcfs\device-key-cert.pem" -Credential "username"
-```
-When you run this cmdlet, you will be prompted to provide the password for the network share.
-
-For more information on certificates, go to [Azure IoT Edge certificates](../iot-edge/iot-edge-certs.md) or [Install certificates on a gateway](../iot-edge/how-to-create-transparent-gateway.md).-->
 
 ## <a name="view-device-information"></a>Просмотр сведений об устройстве
  
@@ -88,17 +70,8 @@ For more information on certificates, go to [Azure IoT Edge certificates](../iot
 
 Многопроцессная служба (MPS) на видеопроцессорах NVIDIA предоставляет механизм, в котором графические процессоры могут совместно использоваться несколькими заданиями, в которых каждому заданию выделяется некоторый процент ресурсов GPU. MPS — это предварительная версия функции на устройстве с Azure Stack ребра Pro GPU. Чтобы включить MPS на устройстве, выполните следующие действия.
 
-1. Прежде чем начать, убедитесь, что 
+[!INCLUDE [Enable MPS](../../includes/azure-stack-edge-gateway-enable-mps.md)]
 
-    1. Вы настроили и [активировали устройство Azure Stack пограничной Pro](azure-stack-edge-gpu-deploy-activate.md) с помощью Azure Stackного ресурса pro/шлюз Data Box в Azure.
-    1. Вы [настроили вычисление на этом устройстве в портал Azure](azure-stack-edge-deploy-configure-compute.md#configure-compute).
-    
-1. [Подключитесь к интерфейсу PowerShell](#connect-to-the-powershell-interface).
-1. Используйте следующую команду, чтобы включить MPS на устройстве.
-
-    ```powershell
-    Start-HcsGpuMPS
-    ```
 
 ## <a name="reset-your-device"></a>выполнить сброс устройства;
 
@@ -150,45 +123,13 @@ Id                                   PodSubnet    ServiceSubnet
 [10.100.10.10]: PS>
 ```
 
-
 ## <a name="debug-kubernetes-issues-related-to-iot-edge"></a>Отладка Kubernetes проблем, связанных с IoT Edge
 
-<!--When the Kubernetes cluster is created, there are two system namespaces created: `iotedge` and `azure-arc`. --> 
+Перед началом необходимо иметь следующее:
 
-<!--### Create config file for system namespace
-
-To troubleshoot, first create the `config` file corresponding to the `iotedge` namespace with `aseuser`.
-
-Run the `Get-HcsKubernetesUserConfig -AseUser` command and save the output as `config` file (no file extension). Save the file in the `.kube` folder of your user profile on the local machine.
-
-Following is the sample output of the `Get-HcsKubernetesUserConfig` command.
-
-```PowerShell
-[10.100.10.10]: PS>Get-HcsKubernetesUserConfig -AseUser
-apiVersion: v1
-clusters:
-- cluster:
-    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EVXhNekl4TkRRME5sb1hEVE13TURVeE1USXhORFEwTmxvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBS0M1CjlJbzRSU2hudG90QUdxdjNTYmRjOVd4UmJDYlRzWXU5S0RQeU9xanVoZE1UUE9PcmROOGNoa0x4NEFyZkZaU1AKZithUmhpdWZqSE56bWhucnkvZlprRGdqQzQzRmV5UHZzcTZXeVVDV0FEK2JBdi9wSkJDbkg2MldoWGNLZ1BVMApqU1k0ZkpXenNFbzBaREhoeUszSGN3MkxkbmdmaEpEanBQRFJBNkRWb2pIaktPb29OT1J1dURvUHpiOTg2dGhUCkZaQXJMZjRvZXRzTEk1ZzFYRTNzZzM1YVhyU0g3N2JPYVVsTGpYTzFYSnpFZlZWZ3BMWE5xR1ZqTXhBMVU2b1MKMXVJL0d1K1ArY
-===========CUT=========================================CUT===================
-    server: https://compute.myasegpu1.wdshcsso.com:6443
-    name: kubernetes
-contexts:
-- context:
-    cluster: kubernetes
-    user: aseuser
-    name: aseuser@kubernetes
-current-context: aseuser@kubernetes
-kind: Config
-preferences: {}
-users:
-- name: aseuser
-    user:
-    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUMwRENDQWJpZ0F3SUJBZ0lJY1hOTXRPU2VwbG93RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBMU1UTXlNVFEwTkRaYUZ3MHlNVEExTVRNeU1UVXhNVEphTUJJeApFREFPQmdOVkJBTVRCMkZ6WlhWelpYSXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCCkFRRHVjQ1pKdm9qNFIrc0U3a1EyYmVjNEJkTXdpUEhmU2R2WnNDVVY0aTRRZGY1Yzd0dkE3OVRSZkRLQTY1d08Kd0h0QWdlK3lLK0hIQ1Qyd09RbWtNek1RNjZwVFEzUlE0eVdtRDZHR1cWZWMExBR1hFUUxWWHRuTUdGCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
-
-[10.100.10.10]: PS>
-```
--->
-
+- Настроенная сеть вычислений. См. раздел [учебник. Настройка сети для Azure Stack ребра Pro с помощью GPU](azure-stack-edge-gpu-deploy-configure-network-compute-web-proxy.md).
+- Роль вычислений, настроенная на устройстве.
+    
 На устройстве Azure Stack пограничной Pro с настроенной ролью вычислений можно устранить неполадки и отслеживать устройство с помощью двух разных наборов команд.
 
 - Использование `iotedge` команд. Эти команды доступны для основных операций с устройством.
@@ -403,7 +344,7 @@ Events:          <none>
 
 `kubectl logs <pod_name> -n <namespace> --all-containers` 
 
-Поскольку `all-containers` флаг будет выгружать все журналы для всех контейнеров, хорошим способом просмотреть последние ошибки является использование параметра `--tail 10` .
+Поскольку `all-containers` флаг создает дампы всех журналов для всех контейнеров, хорошим способом просмотреть последние ошибки является использование параметра `--tail 10` .
 
 Ниже приведен пример выходных данных. 
 
@@ -534,8 +475,8 @@ DEBUG 2020-05-14T20:42:14Z: loop process - 0 events, 0.000s
 
 - Объем памяти по умолчанию составляет 25% от спецификации устройства.
 - Число процессоров по умолчанию составляет 30% от спецификации устройства.
-- При изменении значений количества памяти и процессоров рекомендуется изменять значения от 15% до 65% памяти устройства и числа процессоров. 
-- Мы рекомендуем использовать верхний предел, равный 65%, чтобы иметь достаточно ресурсов для системных компонентов. 
+- При изменении значений количества памяти и процессоров рекомендуется изменять значения от 15% до 60% памяти устройства и числа процессоров. 
+- Мы рекомендуем использовать верхний предел, равный 60%, чтобы иметь достаточно ресурсов для системных компонентов. 
 
 ## <a name="connect-to-bmc"></a>Подключение к BMC
 

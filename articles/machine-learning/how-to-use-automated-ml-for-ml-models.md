@@ -11,12 +11,12 @@ ms.reviewer: nibaccam
 ms.date: 12/20/2020
 ms.topic: conceptual
 ms.custom: how-to, automl
-ms.openlocfilehash: d7a0832fd15df402c88e1ba565c90a24e0d6eb8a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a91a4f3a2e686c8d502093dc41520df32b313209
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101692425"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520645"
 ---
 # <a name="create-review-and-deploy-automated-machine-learning-models-with-azure-machine-learning"></a>Создание, проверка и развертывание моделей автоматизированного машинного обучения с помощью Машинного обучения Azure
 
@@ -136,7 +136,7 @@ ms.locfileid: "101692425"
     ------|------
     Основная метрика| Основная метрика, используемая для оценки модели. [Узнайте больше о метриках модели](how-to-configure-auto-train.md#primary-metric).
     Пояснения для наилучшей модели | Выберите этот параметр для включения или отключения, чтобы отобразить объяснения для рекомендованной лучшей модели. <br> Эта функция в настоящее время недоступна для [определенных алгоритмов прогнозирования](how-to-machine-learning-interpretability-automl.md#interpretability-during-training-for-the-best-model). 
-    Запрещенные алгоритмы| Выберите алгоритмы, которые вы хотите исключить из задания обучения. <br><br> Разрешение алгоритмов доступно только для [экспериментов с пакетом SDK](how-to-configure-auto-train.md#supported-models). <br> См. [Поддерживаемые модели для каждого типа задачи](/python/api/azureml-automl-core/azureml.automl.core.shared.constants.supportedmodels?preserve-view=true&view=azure-ml-py).
+    Запрещенные алгоритмы| Выберите алгоритмы, которые вы хотите исключить из задания обучения. <br><br> Разрешение алгоритмов доступно только для [экспериментов с пакетом SDK](how-to-configure-auto-train.md#supported-models). <br> См. [Поддерживаемые модели для каждого типа задачи](/python/api/azureml-automl-core/azureml.automl.core.shared.constants.supportedmodels).
     Критерий выхода| Если выполняется любое из этих условий, задание обучения останавливается. <br> *Training job time (hours)* (Время задания обучения (в часах)). Продолжительность выполнения задания обучения. <br> *Metric score threshold* (Порог оценки метрики).  Минимальный показатель метрики для всех конвейеров. Гарантирует, что при наличии определенной целевой метрики вы не потратите на задание обучения больше времени, чем это нужно.
     Проверка| Выберите один из вариантов перекрестной проверки, чтобы использовать его в задании обучения. <br> [Узнайте больше о перекрестных проверках](how-to-configure-cross-validation-data-splits.md#prerequisites).<br> <br>Прогнозирование поддерживается только для перекрестной проверки на k.
     Параллелизм| *Max concurrent iterations* (Максимальное число одновременных итераций). Максимальное количество конвейеров (итераций) для тестирования в задании обучения. Число итераций при выполнении задания не будет больше указанного числа. Узнайте больше о том, как автоматизированное ML выполняет [несколько дочерних операций в кластерах](how-to-configure-auto-train.md#multiple-child-runs-on-clusters).
@@ -193,7 +193,7 @@ ms.locfileid: "101692425"
 1. Перейдите на вкладку **дочерние запуски** для состояния. 
 1. По завершении перейдите к вкладке **пояснения (Предварительная версия)** , содержащей панель мониторинга "объяснения". 
 
-    ![Панель мониторинга с описанием модели](media/how-to-use-automated-ml-for-ml-models/model-explanation-dashboard.png)
+    ![Панель мониторинга с пояснением к модели](media/how-to-use-automated-ml-for-ml-models/model-explanation-dashboard.png)
 
 ## <a name="deploy-your-model"></a>Развертывание модели
 

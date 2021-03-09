@@ -11,12 +11,12 @@ ms.reviewer: larryfr
 ms.date: 11/16/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, deploy, devx-track-azurecli
-ms.openlocfilehash: 4a9e374923f6317f7a325979dca1810fad91aeb6
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 749ef16139bbab2742c43a81e985fb0a49e9393b
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102209487"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519339"
 ---
 # <a name="deploy-a-model-using-a-custom-docker-base-image"></a>Развертывание модели с помощью пользовательского базового образа DOCKER
 
@@ -42,7 +42,7 @@ ms.locfileid: "102209487"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * Рабочая область машинного обучения Azure. Дополнительные сведения см. в статье [Создание рабочей области](how-to-manage-workspace.md) .
-* [Пакет SDK для Машинного обучения Azure](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py). 
+* [Пакет SDK для Машинного обучения Azure](/python/api/overview/azure/ml/install). 
 * [Интерфейс командной строки Azure](/cli/azure/install-azure-cli).
 * [Расширение CLI для Машинного обучения Azure](reference-azure-machine-learning-cli.md).
 * [Реестр контейнеров Azure](../container-registry/index.yml) или другой реестр DOCKER, доступный в Интернете.
@@ -234,7 +234,7 @@ ms.locfileid: "102209487"
 
 ### <a name="use-an-image-with-the-azure-machine-learning-sdk"></a>Использование образа с пакетом SDK для Машинное обучение Azure
 
-Чтобы использовать образ, хранящийся в **реестре контейнеров Azure для вашей рабочей области**, или **общий доступ к реестру контейнеров**, задайте следующие атрибуты [среды](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py) :
+Чтобы использовать образ, хранящийся в **реестре контейнеров Azure для вашей рабочей области**, или **общий доступ к реестру контейнеров**, задайте следующие атрибуты [среды](/python/api/azureml-core/azureml.core.environment.environment) :
 
 + `docker.enabled=True`
 + `docker.base_image`: Укажите в реестре и путь к образу.
@@ -268,7 +268,7 @@ myenv.python.conda_dependencies=conda_dep
 
 Необходимо добавить azureml-Defaults с Version >= 1.0.45 в качестве зависимости PIP. Этот пакет содержит функции, необходимые для размещения модели в качестве веб-службы. Необходимо также задать для свойства inferencing_stack_version в среде значение "latest", при этом будут установлены определенные пакеты APT, необходимые для веб-службы. 
 
-Определив среду, используйте ее с объектом [инференцеконфиг](/python/api/azureml-core/azureml.core.model.inferenceconfig?preserve-view=true&view=azure-ml-py) , чтобы определить среду вывода, в которой будет выполняться модель и веб-служба.
+Определив среду, используйте ее с объектом [инференцеконфиг](/python/api/azureml-core/azureml.core.model.inferenceconfig) , чтобы определить среду вывода, в которой будет выполняться модель и веб-служба.
 
 ```python
 from azureml.core.model import InferenceConfig
@@ -297,7 +297,7 @@ print(service.state)
 > [!IMPORTANT]
 > В настоящее время Машинное обучение CLI может использовать образы из реестра контейнеров Azure для вашей рабочей области или общедоступных репозиториев. Он не может использовать образы из автономных закрытых реестров.
 
-Перед развертыванием модели с помощью Машинное обучение CLI создайте [среду](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py) , которая использует пользовательский образ. Затем создайте файл конфигурации вывода, который ссылается на среду. Среду также можно определить непосредственно в файле конфигурации вывода. В следующем документе JSON показано, как ссылаться на изображение в общедоступном реестре контейнеров. В этом примере среда определяется встроенным:
+Перед развертыванием модели с помощью Машинное обучение CLI создайте [среду](/python/api/azureml-core/azureml.core.environment.environment) , которая использует пользовательский образ. Затем создайте файл конфигурации вывода, который ссылается на среду. Среду также можно определить непосредственно в файле конфигурации вывода. В следующем документе JSON показано, как ссылаться на изображение в общедоступном реестре контейнеров. В этом примере среда определяется встроенным:
 
 ```json
 {

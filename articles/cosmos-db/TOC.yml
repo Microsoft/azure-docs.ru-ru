@@ -78,6 +78,18 @@
           href: synapse-link-use-cases.md
         - name: Часто задаваемые вопросы о Synapse Link
           href: synapse-link-frequently-asked-questions.md
+    - name: Резервное копирование и восстановление
+      items:
+        - name: Общие сведения о резервном копировании и восстановлении
+          href: online-backup-and-restore.md
+        - name: Непрерывное резервное копирование
+          items:
+            - name: "Непрерывное резервное копирование\_— общие сведения"
+              href: continuous-backup-restore-introduction.md
+            - name: "Непрерывное резервное копирование\_— вопросы и ответы"
+              href: continuous-backup-restore-frequently-asked-questions.md
+            - name: "Непрерывное резервное копирование\_— модель ресурсов"
+              href: continuous-backup-restore-resource-model.md
     - name: Оптимизация затрат на Azure Cosmos DB
       items:
         - name: Планирование затрат и управление ими
@@ -112,34 +124,6 @@
       href: concepts-limits.md
     - name: Готовность к работе в масштабах предприятия
       items:
-        - name: Общие сведения о резервном копировании и восстановлении
-          href: online-backup-and-restore.md
-        - name: Непрерывное резервное копирование
-          items:
-            - name: "Непрерывное резервное копирование\_— общие сведения"
-              href: continuous-backup-restore-introduction.md
-            - name: "Непрерывное резервное копирование\_— вопросы и ответы"
-              href: continuous-backup-restore-frequently-asked-questions.md
-            - name: "Непрерывное резервное копирование\_— модель ресурсов"
-              items:
-                - name: Общие сведения о модели ресурсов
-                  href: continuous-backup-restore-resource-model.md
-                - name: "Учетные записи с поддержкой восстановления\_— список"
-                  href: restorable-database-accounts-list.md
-                - name: "Учетные записи с поддержкой восстановления\_— отображение по расположению"
-                  href: restorable-database-accounts-list-by-location.md
-                - name: "Ресурсы SQL с поддержкой восстановления\_— список"
-                  href: restorable-sql-resources-list.md
-                - name: "Базы данных SQL с поддержкой восстановления\_— список"
-                  href: restorable-sql-databases-list.md
-                - name: "Контейнеры SQL с поддержкой восстановления\_— список"
-                  href: restorable-sql-containers-list.md
-                - name: "Ресурсы MongoDB с поддержкой восстановления\_— список"
-                  href: restorable-mongodb-resources-list.md
-                - name: "Коллекции MongoDB с поддержкой восстановления\_— список"
-                  href: restorable-mongodb-collections-list.md
-                - name: "Базы данных MongoDB с поддержкой восстановления\_— список"
-                  href: restorable-mongodb-databases-list.md
         - name: Соответствие нормативным требованиям
           href: compliance.md
     - name: Автоматические рекомендации
@@ -1391,6 +1375,22 @@
           href: ../synapse-analytics/sql/query-cosmos-db-analytical-store.md?toc=/azure/cosmos-db/toc.json&bc=/azure/cosmos-db/breadcrumb/toc.json
         - name: Использование Power BI с Synapse Link
           href: synapse-link-power-bi.md
+    - name: Резервное копирование и восстановление
+      items:
+        - name: Управление непрерывным резервным копированием
+          items:
+            - name: "Непрерывное резервное копирование\_— разрешения и роли"
+              href: continuous-backup-restore-permissions.md
+            - name: "Непрерывное резервное копирование\_— портал"
+              href: continuous-backup-restore-portal.md
+            - name: "Непрерывное резервное копирование\_— PowerShell"
+              href: continuous-backup-restore-powershell.md
+            - name: "Непрерывное резервное копирование\_— CLI"
+              href: continuous-backup-restore-command-line.md
+            - name: "Непрерывное резервное копирование\_— Resource Manager"
+              href: continuous-backup-restore-template.md
+        - name: Управление периодическим резервным копированием
+          href: configure-periodic-backup-restore.md
     - name: Безопасность
       items:
         - name: Настройка брандмауэра IP-адресов
@@ -1410,20 +1410,6 @@
           href: how-to-setup-cmk.md
     - name: Готовность к работе в масштабах предприятия
       items:
-        - name: Управление непрерывным резервным копированием
-          items:
-            - name: "Непрерывное резервное копирование\_— разрешения и роли"
-              href: continuous-backup-restore-permissions.md
-            - name: "Непрерывное резервное копирование\_— портал"
-              href: continuous-backup-restore-portal.md
-            - name: "Непрерывное резервное копирование\_— PowerShell"
-              href: continuous-backup-restore-powershell.md
-            - name: "Непрерывное резервное копирование\_— CLI"
-              href: continuous-backup-restore-command-line.md
-            - name: "Непрерывное резервное копирование\_— ARM"
-              href: continuous-backup-restore-template.md
-        - name: Управление периодическим резервным копированием
-          href: configure-periodic-backup-restore.md
         - name: Запрашивание увеличения квоты
           href: create-support-request-quota-increase.md
     - name: Монитор

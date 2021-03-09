@@ -4,17 +4,17 @@ titleSuffix: Azure VMware Solution by CloudSimple
 description: Описание процесса службы Клаудсимпле для запланированного обслуживания и обновлений
 author: sharaths-cs
 ms.author: dikamath
-ms.date: 03/04/2021
+ms.date: 03/09/2021
 ms.topic: article
 ms.service: azure-vmware-cloudsimple
 ms.reviewer: cynthn
 manager: dikamath
-ms.openlocfilehash: 814a901fba065e36ea3ba9e3a6fe1175365de6c5
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 1cbd708f6c1f5159655099d5d72900ab0c608147
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102120714"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102522314"
 ---
 # <a name="cloudsimple-maintenance-and-updates"></a>Обслуживание и обновления Клаудсимпле
 
@@ -102,7 +102,7 @@ ms.locfileid: "102120714"
 
 Клаудсимпле тестирует критическое исправление безопасности, как только оно становится доступным в VMware. 
 
-Клаудсимпле обеспечивает ежеквартальное обслуживание программных компонентов VMware. Когда доступна новая основная версия программного обеспечения VMware, Клаудсимпле работает с клиентами, чтобы координировать подходящее окно обслуживания для обновления.
+Описанные обходные решения для VMware будут реализованы вместо установки соответствующего исправления до тех пор, пока не будут развернуты следующие запланированные обновления. 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -12,85 +12,96 @@ ms.date: 05/23/2019
 ms.author: ryanwi
 ms.reviewer: jmprieur, saeeda
 ms.custom: aaddev
-ms.openlocfilehash: ecbb7ec503011d78c2f83a76cea921e1cf438ac1
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 43990952f6cbe90c729ac2df421c682fe8d42b1b
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102215108"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102517955"
 ---
 # <a name="support-and-help-options-for-developers"></a>Возможности получения поддержки и справки для разработчиков
 
-Если вы только приступаете к интеграции с Azure Active Directory (Azure AD), удостоверениями Майкрософт или API Microsoft Graph либо реализуете в приложении новую возможность, бывают случаи, когда вам как разработчику требуется помощь сообщества или техническая поддержка. Эта статья поможет вам составить представление о том, как получить такую поддержку, в том числе:
+Если вы только приступаете к интеграции с Azure Active Directory (Azure AD), удостоверениями Майкрософт или API Microsoft Graph либо реализуете в приложении новую возможность, бывают случаи, когда вам как разработчику требуется помощь сообщества или техническая поддержка. Ниже приведены рекомендации по разработке решений для платформ Microsoft Identity.
 
-> [!div class="checklist"]
-> * Как узнать, есть ли ответ на ваш вопрос в сообществе, или найти документацию по возможности, которую вы намерены реализовать.
-> * В некоторых случаях для решения конкретной проблемы вам могут потребоваться наши средства технической поддержки.
-> * Если вам не удается найти нужный ответ, можно задать вопрос в *Microsoft Q&a*
-> * Если возникла проблема с одной из наших библиотек аутентификации, сообщите об этом на сайте *GitHub*.
-> * И, наконец, если вам требуется консультация, подайте запрос в службу поддержки.
+## <a name="create-an-azure-support-request"></a>Создание запроса на поддержку Azure
 
-## <a name="search"></a>Поиск
+<div class='icon is-large'>
+    <img alt='Azure support' src='https://docs.microsoft.com/media/logos/logo_azure.svg'>
+</div>
 
-Если у вас есть вопрос, связанный с разработкой, возможно, вы сможете найти ответ в документации, [примеры GitHub](https://github.com/azure-samples)или ответы на вопросы в [Microsoft Q&](/answers/products/) .
+Изучите различные [варианты поддержки Azure и выберите план](https://azure.microsoft.com/support/plans), который лучше всего отвечает вашим потребностям. Мы предлагаем варианты для широкого круга пользователей — от разработчиков, которые только начинают пользоваться облаком, до крупных организаций, развертывающих стратегические и критически важные для бизнеса приложения. Клиенты Azure могут создавать запросы на получение поддержки и управлять ими на портале Azure.
 
-### <a name="scoped-search"></a>Поиск в заданных областях
+- Если у вас уже есть план поддержки Azure, отправьте [запрос в службу поддержки здесь](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest).
 
+- Если вы не являетесь клиентом Azure, можно подать запрос в корпорацию Майкрософт на странице [коммерческой поддержки](https://support.serviceshub.microsoft.com/supportforbusiness).
 
-Для ускорения поиска в [Microsoft Q&](https://docs.microsoft.com/answers/products/) документацию и примеры кода с помощью следующего запроса в вашей любимой поисковой подсистеме:
+## <a name="post-a-question-to-microsoft-qa"></a>Публикация вопроса на веб-сайте Microsoft Q&A
+<div class='icon is-large'>
+    <img alt='Microsoft Q&A' src='./media/common/question-mark-icon.png'>
+</div>             
 
-Для ускорения поиска в [Microsoft Q&](/answers/products/)документацию и примеры кода с помощью следующего запроса в вашей любимой поисковой подсистеме:
+Получите ответы на вопросы о разработке приложений для идентификации непосредственно у инженеров Майкрософт, наиболее ценных специалистов Azure (MVP) и участников нашего экспертного сообщества.
 
+[Microsoft Q&A](/answers/products/) — это рекомендуемый источник поддержки сообщества Azure.
 
-```
-{Your Search Terms} (site:http://www.docs.microsoft.com/answers/products/ OR site:docs.microsoft.com OR site:github.com/azure-samples OR site:cloudidentity.com OR site:developer.microsoft.com/graph)
-```
+Если вы не можете найти ответ на проблему, выполнив поиск в Microsoft Q&A, отправьте новый вопрос. Используйте один из следующих тегов при запросе [высокого качества](https://docs.microsoft.com/answers/articles/24951/how-to-write-a-quality-question.html):
 
-*{Your Search Terms}*  — это ключевые слова для поиска.
-
-## <a name="use-the-development-support-tools"></a>Использование средств технической поддержки для разработки
-
-| Инструмент  | Описание  |
-|---------|---------|
-| [jwt.ms](https://jwt.ms) | Вставьте идентификатор или маркер доступа, чтобы декодировать имена и значения утверждений. |
-| [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)| Средство для выполнения запросов и получения ответов по API Microsoft Graph. |
-
-## <a name="post-a-question-to-microsoft-qa"></a>Публикация вопроса в Microsoft Q&A
-
-[Microsoft Q&A](/answers/products/) — предпочтительный канал для вопросов, связанных с разработкой. Здесь члены сообщества разработчиков и команды Майкрософт постараются помочь вам решить проблемы.
-
-Если вы не можете найти ответ на свой вопрос с помощью поиска, отправьте новый вопрос в [Microsoft Q&a](/answers/products/) . При этом используйте один из указанных ниже тегов. Это поможет сообществу своевременно определить ваш вопрос и ответить на него.
-
-|Компонент/область  | Теги |
-|---------|---------|
-| Библиотека ADAL | [ADAL](/answers/topics/azure-ad-adal-deprecation.html) |
-| Библиотека MSAL     | [msal](/answers/topics/azure-ad-msal.html) |
-| ПО промежуточного слоя OWIN  | [[Azure-Active-Directory]](/answers/topics/azure-active-directory.html) |
-| [Azure B2B](../external-identities/what-is-b2b.md)  | [[azure-ad-b2b]](/answers/topics/azure-ad-b2b.html) |
-| [Azure B2C](https://azure.microsoft.com/services/active-directory-b2c/)  | [[azure-ad-b2c]](/answers/topics/azure-ad-b2c.html) |
-| [API Microsoft Graph](https://developer.microsoft.com/graph/) | [[Azure-AD-Graph]](/answers/topics/azure-ad-graph.html) |
-| Любая другая область, которая относится к аутентификации или авторизации | [[Azure-Active-Directory]](/answers/topics/azure-active-directory.html) |
-
-Следующие сообщения от [Microsoft Q&A](/answers/products/) содержат советы по заданию вопросов и добавлению исходного кода. Следуя этим рекомендациям, вы повысите вероятность того, что участники сообщества быстро отреагируют на ваш вопрос.
-
-* [Разделы справки задать хороший вопрос](/answers/articles/24951/how-to-write-a-quality-question.html)
-* [How to create a Minimal, Complete, and Verifiable example](/answers/articles/24907/how-to-write-a-quality-answer.html) (Как создать минимальный, полный и доступный для проверки пример)
+| Компонент/область| Теги  |
+|------------|---------------------------|
+| Библиотека проверки подлинности Active Directory (ADAL)                              | [ADAL](https://docs.microsoft.com/answers/topics/azure-ad-adal-deprecation.html)                |
+| Библиотека проверки подлинности Майкрософт (MSAL)                                     | [msal](https://docs.microsoft.com/answers/topics/azure-ad-msal.html)                            |
+| Открытие веб-интерфейса для .NET (OWIN) по промежуточного слоя                               | [[Azure-Active-Directory]](https://docs.microsoft.com/answers/topics/azure-active-directory.html) |
+| [Azure AD B2B/внешние удостоверения](../external-identities/what-is-b2b.md) | [[azure-ad-b2b]](https://docs.microsoft.com/answers/topics/azure-ad-b2b.html)                     |
+| [Azure AD B2C](https://azure.microsoft.com/services/active-directory-b2c/)  | [[azure-ad-b2c]](https://docs.microsoft.com/answers/topics/azure-ad-b2c.html)                     |
+| [API Microsoft Graph](https://developer.microsoft.com/graph/)               | [[Azure-AD-Graph]](https://docs.microsoft.com/answers/topics/azure-ad-graph.html)                 |
+| Все остальные области проверки подлинности и авторизации                            | [[Azure-Active-Directory]](https://docs.microsoft.com/answers/topics/azure-active-directory.html) |
 
 ## <a name="create-a-github-issue"></a>Сообщение о проблеме на GitHub
 
-Если возникла ошибка или проблема, связанная с нашими библиотеками, сообщите о ней на сайте GitHub. Так как в наших библиотеках используется открытый код, вы также можете отправить запрос на вытягивание.
+<div class='icon is-large'>
+    <img alt='GitHub-image' src='./media/common/github.svg'>
+</div>
 
-Список библиотек и их репозиториев GitHub см. в следующих статьях:
+Если вам нужна помощь с одной из библиотек проверки подлинности Майкрософт (MSAL), откройте ошибку в своем репозитории на сайте GitHub.
 
-* Библиотеки [библиотеки проверки Подлинности Azure Active Directory (ADAL)](../azuread-dev/active-directory-authentication-libraries.md) и репозитории GitHub
-* Библиотеки [проверки подлинности Microsoft (MSAL)](reference-v2-libraries.md) и репозитории GitHub
+| Библиотека MSAL | URL-адрес проблем GitHub|
+| --- | --- |
+| MSAL для Android | https://github.com/AzureAD/microsoft-authentication-library-for-android/issues |
+| MSALный угловой | https://github.com/AzureAD/microsoft-authentication-library-for-js/issues |
+| MSAL для iOS и MacOS| https://github.com/AzureAD/microsoft-authentication-library-for-objc/issues |
+| MSAL Java | https://github.com/AzureAD/microsoft-authentication-library-for-java/issues |
+| MSAL.js | https://github.com/AzureAD/microsoft-authentication-library-for-js/issues |
+|MSAL.NET| https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/issues |
+| MSAL Node | https://github.com/AzureAD/microsoft-authentication-library-for-js/issues |
+| MSAL Python | https://github.com/AzureAD/microsoft-authentication-library-for-python/issues |
+| MSAL реагировать | https://github.com/AzureAD/microsoft-authentication-library-for-js/issues |
 
-## <a name="open-a-support-request"></a>Подача запроса в службу поддержки
+## <a name="submit-feedback-on-azure-feedback"></a>Отправка отзыва в "Отзыв по Azure"
 
-Если вам требуется консультация, подайте запрос в службу поддержки. Для клиентов Azure предусмотрено несколько вариантов поддержки. Сравнить планы можно на [этой странице](https://azure.microsoft.com/support/plans/). Клиенты Azure также могут получить поддержку уровня Developer. Сведения о приобретении планов для поддержки уровня Developer см. на [этой странице](https://azure.microsoft.com/support/plans/developer/).
+<div class='icon is-large'>
+    <img alt='UserVoice' src='https://docs.microsoft.com/media/logos/logo-uservoice.svg'>
+</div>
 
-* Если у вас уже есть план поддержки Azure, [подайте запрос в службу поддержки здесь](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest).
+Чтобы выполнить запрос на новые функции, опубликуйте их в службе "Отзыв по Azure". Поделитесь своими идеями, чтобы сделать платформу Microsoft Identity более эффективной для разрабатываемых приложений.
 
-* Если вы не являетесь клиентом Azure, можно подать запрос в корпорацию Майкрософт на странице [коммерческой поддержки](https://support.serviceshub.microsoft.com/supportforbusiness).
+| Служба                       | URL-адрес службы "Отзыв по Azure" |
+|-------------------------------|---------------|
+| Azure Active Directory | https://feedback.azure.com/forums/169401-azure-active-directory |
+| Опыт разработки Azure Active Directory             | https://feedback.azure.com/forums/169401-azure-active-directory?category_id=164757 |
+| Azure Active Directory — проверка подлинности             | https://feedback.azure.com/forums/169401-azure-active-directory?category_id=167256 |
 
-Также можно получить поддержку или задать вопрос при помощи [виртуального агента](https://support.microsoft.com/contactus/?ws=support).
+## <a name="stay-informed-of-updates-and-new-releases"></a>Будьте в курсе обновлений и новых выпусков
+
+<div class='icon is-large'>
+    <img alt='Stay informed' src='https://docs.microsoft.com/media/common/i_blog.svg'>
+</div>
+
+- [Обновления Azure](https://azure.microsoft.com/updates/?category=identity): сведения о важных обновлениях, стратегиях и объявлениях продуктов.
+
+- [Новые возможности в](https://docs.microsoft.com/azure/active-directory/develop/whats-new-docs)документации: Узнайте о новых возможностях платформы идентификации Майкрософт.
+
+- [Блог Azure Active Directory Identity](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/bg-p/Identity): получение новостей и сведений об Azure AD.
+
+- [Технический сообщество](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/bg-p/Identity/): Поделитесь своими впечатлениями, общайтесь и изучите экспертов.
+
+

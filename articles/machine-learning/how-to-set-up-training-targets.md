@@ -11,12 +11,12 @@ ms.subservice: core
 ms.date: 09/28/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, contperf-fy21q1
-ms.openlocfilehash: 55e618a7e4e0d21f6d4afab270e257c26fa15634
-ms.sourcegitcommit: 25d1d5eb0329c14367621924e1da19af0a99acf1
+ms.openlocfilehash: f38fe7d847754247f8c1510527b3ffe026c20be5
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98251120"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518506"
 ---
 # <a name="configure-and-submit-training-runs"></a>Настройка и отправка запуска на выполнение обучения
 
@@ -29,12 +29,12 @@ ms.locfileid: "98251120"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * Если у вас еще нет подписки Azure, создайте бесплатную учетную запись, прежде чем начинать работу. Опробуйте [бесплатную или платную версию машинное обучение Azure](https://aka.ms/AMLFree) уже сегодня
-* [Пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py) (>= 1.13.0)
+* [Пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/install) (>= 1.13.0)
 * [Рабочая область машинное обучение Azure](how-to-manage-workspace.md)`ws`
 * Целевой объект вычислений, `my_compute_target` .  [Создание целевого объекта вычислений](how-to-create-attach-compute-studio.md) 
 
 ## <a name="whats-a-script-run-configuration"></a><a name="whats-a-run-configuration"></a>Что такое конфигурация запуска сценария?
-[Скриптрунконфиг](/python/api/azureml-core/azureml.core.scriptrunconfig?preserve-view=true&view=azure-ml-py) используется для настройки сведений, необходимых для отправки обучающего запуска в рамках эксперимента.
+[Скриптрунконфиг](/python/api/azureml-core/azureml.core.scriptrunconfig) используется для настройки сведений, необходимых для отправки обучающего запуска в рамках эксперимента.
 
 Вы отправляете обучающий эксперимент с помощью объекта Скриптрунконфиг.  Этот объект включает в себя следующее.
 
@@ -42,7 +42,7 @@ ms.locfileid: "98251120"
 * **Скрипт**: обучающий сценарий для выполнения
 * **compute_target**: целевой объект вычислений, на котором выполняется
 * **Среда**: среда, используемая при выполнении скрипта
-* и некоторые дополнительные настраиваемые параметры (Дополнительные сведения см. в [справочной документации](/python/api/azureml-core/azureml.core.scriptrunconfig?preserve-view=true&view=azure-ml-py) ).
+* и некоторые дополнительные настраиваемые параметры (Дополнительные сведения см. в [справочной документации](/python/api/azureml-core/azureml.core.scriptrunconfig) ).
 
 ## <a name="train-your-model"></a><a id="submit"></a>Обучение модели
 
@@ -59,7 +59,7 @@ ms.locfileid: "98251120"
 * Отправьте запрос на запуск HyperDrive для [настройки гиперпараметров](how-to-tune-hyperparameters.md).
 * Отправьте эксперимент с помощью расширения [VS Code](tutorial-train-deploy-image-classification-model-vscode.md#train-the-model).
 
-## <a name="create-an-experiment"></a>Создание эксперимента.
+## <a name="create-an-experiment"></a>Создание эксперимента
 
 Создайте эксперимент в рабочей области.
 
@@ -133,7 +133,7 @@ script_run_config.run_config.target = my_compute_target
 Если вы хотите переопределить максимально допустимое для выполнения значение по умолчанию, это можно сделать с помощью **`max_run_duration_seconds`** параметра. Система попытается автоматически отменить выполнение, если оно занимает больше времени, чем это значение.
 
 ### <a name="specify-a-distributed-job-configuration"></a>Укажите конфигурацию распределенного задания
-Если вы хотите выполнить распределенное задание обучения, предоставьте параметру конфигурацию распределенного задания **`distributed_job_config`** . Поддерживаются следующие типы конфигурации: [мпиконфигуратион](/python/api/azureml-core/azureml.core.runconfig.mpiconfiguration?preserve-view=true&view=azure-ml-py), [тенсорфловконфигуратион](/python/api/azureml-core/azureml.core.runconfig.tensorflowconfiguration?preserve-view=true&view=azure-ml-py)и [питорчконфигуратион](/python/api/azureml-core/azureml.core.runconfig.pytorchconfiguration?preserve-view=true&view=azure-ml-py). 
+Если вы хотите выполнить распределенное задание обучения, предоставьте параметру конфигурацию распределенного задания **`distributed_job_config`** . Поддерживаются следующие типы конфигурации: [мпиконфигуратион](/python/api/azureml-core/azureml.core.runconfig.mpiconfiguration), [тенсорфловконфигуратион](/python/api/azureml-core/azureml.core.runconfig.tensorflowconfiguration)и [питорчконфигуратион](/python/api/azureml-core/azureml.core.runconfig.pytorchconfiguration). 
 
 Дополнительные сведения и примеры выполнения распределенных заданий хоровод, TensorFlow и PyTorch см. в следующих статьях:
 
@@ -176,7 +176,7 @@ run.wait_for_completion(show_output=True)
 
 [!INCLUDE [aml-clone-in-azure-notebook](../../includes/aml-clone-for-examples.md)]
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 * **Сбой выполнения с `jwt.exceptions.DecodeError`**: точный текст сообщения об ошибке: `jwt.exceptions.DecodeError: It is required that you pass in a value for the "algorithms" argument when calling decode()` . 
     
@@ -197,10 +197,10 @@ run.wait_for_completion(show_output=True)
     
     Образы DOCKER, поддерживаемые МАШИНным обучением Azure, и их содержимое можно просмотреть в [контейнерах AzureML](https://github.com/Azure/AzureML-Containers).
     Зависимости, зависящие от платформы, перечислены в соответствующей документации по платформе:
-    *  [Chainer](/python/api/azureml-train-core/azureml.train.dnn.chainer?preserve-view=true&view=azure-ml-py#&preserve-view=trueremarks)
-    * [PyTorch](/python/api/azureml-train-core/azureml.train.dnn.pytorch?preserve-view=true&view=azure-ml-py#&preserve-view=trueremarks)
-    * [TensorFlow](/python/api/azureml-train-core/azureml.train.dnn.tensorflow?preserve-view=true&view=azure-ml-py#&preserve-view=trueremarks);
-    *  [SKLearn](/python/api/azureml-train-core/azureml.train.sklearn.sklearn?preserve-view=true&view=azure-ml-py#&preserve-view=trueremarks)
+    *  [Chainer](/python/api/azureml-train-core/azureml.train.dnn.chainer#remarks)
+    * [PyTorch](/python/api/azureml-train-core/azureml.train.dnn.pytorch#remarks)
+    * [TensorFlow](/python/api/azureml-train-core/azureml.train.dnn.tensorflow#remarks);
+    *  [SKLearn](/python/api/azureml-train-core/azureml.train.sklearn.sklearn#remarks)
     
     > [!Note]
     > Если вы считаете, что определенный пакет является достаточно распространенным для добавления в образы и среды машинного обучения Azure, повысьте вопрос GitHub в [контейнерах AzureML](https://github.com/Azure/AzureML-Containers). 
@@ -208,7 +208,7 @@ run.wait_for_completion(show_output=True)
 * **Намиррор (имя не определено), аттрибутиррор (объект не имеет атрибута)**: это исключение должно поступать из сценариев обучения. Чтобы получить дополнительные сведения о конкретном имени, которое не определено или об ошибке атрибута, можно просмотреть файлы журналов из портал Azure. Из пакета SDK можно использовать `run.get_details()` для просмотра сообщения об ошибке. Также будут перечислены все файлы журналов, созданные для выполнения. Обязательно ознакомьтесь со сценарием обучения и устраните ошибку перед повторной отправкой запуска. 
 
 
-* **Запуск или экспериментирование удаление**. эксперименты можно архивировать с помощью метода [эксперимент. Archive](/python/api/azureml-core/azureml.core.experiment%28class%29?preserve-view=true&view=azure-ml-py#&preserve-view=truearchive--) или из представления "эксперимент" в машинное обучение Azure Studio Client с помощью кнопки "архивировать эксперимент". Это действие скрывает эксперимент из списка запросов и представлений, но не удаляет его.
+* **Запуск или экспериментирование удаление**. эксперименты можно архивировать с помощью метода [эксперимент. Archive](/python/api/azureml-core/azureml.core.experiment%28class%29#archive--) или из представления "эксперимент" в машинное обучение Azure Studio Client с помощью кнопки "архивировать эксперимент". Это действие скрывает эксперимент из списка запросов и представлений, но не удаляет его.
 
     Постоянное удаление отдельных экспериментов или запусков сейчас не поддерживается. Дополнительные сведения об удалении ресурсов рабочей области см. в разделе [Экспорт или удаление данных рабочей области службы машинное обучение](how-to-export-delete-data.md).
 
@@ -229,5 +229,5 @@ run.wait_for_completion(show_output=True)
 * Узнайте, как обучить модели с помощью конкретных платформ машинного обучения, таких как [Scikit-](how-to-train-scikit-learn.md)Learning, [TensorFlow](how-to-train-tensorflow.md)и [PyTorch](how-to-train-pytorch.md).
 * Узнайте, как [эффективно настроить гиперпараметры](how-to-tune-hyperparameters.md) для создания улучшенных моделей.
 * После обучения модели узнайте о [способах и расположениях развертывания моделей](how-to-deploy-and-where.md).
-* Просмотрите ссылку на пакет SDK для [класса скриптрунконфиг](/python/api/azureml-core/azureml.core.scriptrunconfig?preserve-view=true&view=azure-ml-py) .
+* Просмотрите ссылку на пакет SDK для [класса скриптрунконфиг](/python/api/azureml-core/azureml.core.scriptrunconfig) .
 * [Использование Машинного обучения Azure с виртуальными сетями Microsoft Azure](./how-to-network-security-overview.md)

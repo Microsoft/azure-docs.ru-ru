@@ -16,12 +16,12 @@ ms.date: 08/13/2019
 ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88eae702782e2f1af9c20797676214db458c2adc
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: eeede88bfbe024a66e40270240d32488e581dd77
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98937628"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102517707"
 ---
 # <a name="azure-active-directory-seamless-single-sign-on"></a>Простой единый вход Azure Active Directory
 
@@ -37,7 +37,7 @@ ms.locfileid: "98937628"
 
 ## <a name="sso-via-primary-refresh-token-vs-seamless-sso"></a>Единый вход через первичный маркер обновления и простой единый вход
 
-Для Windows 10 рекомендуется использовать единый вход через основной маркер обновления (PRT). Для Windows 7 и 8,1 рекомендуется использовать простой единый вход.
+Для Windows 10, Windows Server 2016 и более поздних версий рекомендуется использовать единый вход через основной маркер обновления (PRT). Для Windows 7 и 8,1 рекомендуется использовать простой единый вход.
 Для простого единого входа необходимо, чтобы устройство пользователя было присоединено к домену, но оно не используется на [устройствах, присоединенных к](../devices/concept-azure-ad-join.md) Windows 10 или [гибридные устройства, присоединенные к Azure AD](../devices/concept-azure-ad-join-hybrid.md). Единый вход для присоединения к Azure AD, гибридное присоединение к Azure AD и зарегистрированные устройства Azure AD работают на основе [первичного маркера обновления (PRT)](../devices/concept-primary-refresh-token.md)
 
 Единый вход через PRT работает после регистрации устройств в Azure AD для гибридного присоединения к Azure AD, присоединения к Azure AD или персональных зарегистрированных устройств с помощью добавления рабочей или учебной учетной записи. Дополнительные сведения о работе единого входа с Windows 10 с помощью PRT см. в статье [первичный маркер обновления (PRT) и Azure AD](../devices/concept-primary-refresh-token.md) .

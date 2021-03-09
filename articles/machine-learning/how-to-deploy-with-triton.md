@@ -11,12 +11,12 @@ ms.date: 02/16/2020
 ms.topic: conceptual
 ms.reviewer: larryfr
 ms.custom: deploy
-ms.openlocfilehash: 47d2c8865109e8ef43317b3c4a19c36e692aff91
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 2966b685e1904102467bf16994ea781556544047
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102218848"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519203"
 ---
 # <a name="high-performance-serving-with-triton-inference-server-preview"></a>Высокопроизводительный обслуживание с помощью сервера вывода Тритон (Предварительная версия) 
 
@@ -36,7 +36,7 @@ ms.locfileid: "102218848"
 
 * **Подписка Azure**. Если у вас ее нет, используйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree).
 * Знакомство с [тем, как и где развертывать модель](how-to-deploy-and-where.md) с машинное обучение Azure.
-* [Машинное обучение Azure пакет SDK для Python](/python/api/overview/azure/ml/?view=azure-ml-py) **или** [Azure CLI](/cli/azure/) и [расширение машинного обучения](reference-azure-machine-learning-cli.md).
+* [Машинное обучение Azure пакет SDK для Python](/python/api/overview/azure/ml/) **или** [Azure CLI](/cli/azure/) и [расширение машинного обучения](reference-azure-machine-learning-cli.md).
 * Рабочая установка DOCKER для локального тестирования. Сведения об установке и проверке DOCKER см. в разделе [ориентация и настройка](https://docs.docker.com/get-started/) в документации по DOCKER.
 
 ## <a name="architectural-overview"></a>Общие сведения об архитектуре
@@ -134,7 +134,7 @@ model = Model.register(
 )
 
 ```
-Дополнительные сведения см. в документации по [классу Model](/python/api/azureml-core/azureml.core.model.model?preserve-view=true&view=azure-ml-py).
+Дополнительные сведения см. в документации по [классу Model](/python/api/azureml-core/azureml.core.model.model).
 
 ---
 
@@ -276,7 +276,7 @@ res = triton_client.infer(model_name,
 > [!IMPORTANT]
 > Необходимо указать `AzureML-Triton` [проверенную среду](./resource-curated-environments.md).
 >
-> Пример кода Python копирует `AzureML-Triton` в другую среду с именем `My-Triton` . Код Azure CLI также использует эту среду. Дополнительные сведения о клонировании среды см. в справочнике по [среде. Clone ()](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py#clone-new-name-) .
+> Пример кода Python копирует `AzureML-Triton` в другую среду с именем `My-Triton` . Код Azure CLI также использует эту среду. Дополнительные сведения о клонировании среды см. в справочнике по [среде. Clone ()](/python/api/azureml-core/azureml.core.environment.environment#clone-new-name-) .
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azcli)
 
@@ -337,7 +337,7 @@ print(local_service.scoring_uri)
 
 ### <a name="setting-the-number-of-workers"></a>Задание количества рабочих ролей
 
-Чтобы задать число рабочих ролей в развертывании, задайте переменную среды `WORKER_COUNT` . При наличии объекта [среды](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py) с именем `env` можно выполнить следующие действия.
+Чтобы задать число рабочих ролей в развертывании, задайте переменную среды `WORKER_COUNT` . При наличии объекта [среды](/python/api/azureml-core/azureml.core.environment.environment) с именем `env` можно выполнить следующие действия.
 
 ```{py}
 env.environment_variables["WORKER_COUNT"] = "1"

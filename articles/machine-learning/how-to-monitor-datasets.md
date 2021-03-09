@@ -11,12 +11,12 @@ author: lostmygithubaccount
 ms.date: 06/25/2020
 ms.topic: conceptual
 ms.custom: how-to, data4ml, contperf-fy21q2
-ms.openlocfilehash: b62ed4c0b661ebc725bd4cd3737249d91e48c43e
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 5a3d16445c5a4276f07f4ed502b9830a10c4ff72
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101656845"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518914"
 ---
 # <a name="detect-data-drift-preview-on-datasets"></a>Обнаружение смещения данных (Предварительная версия) в наборах
 
@@ -43,7 +43,7 @@ ms.locfileid: "101656845"
 Для создания мониторов набора данных и работы с ними требуются:
 * Подписка Azure. Если у вас еще нет подписки Azure, создайте бесплатную учетную запись, прежде чем начинать работу. Опробуйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree) уже сегодня.
 * [Рабочая область машинное обучение Azure](how-to-manage-workspace.md).
-* [Установленный пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py), включающий пакет azureml-DataSets.
+* [Установленный пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/install), включающий пакет azureml-DataSets.
 * Структурированные (табличные) данные с меткой времени, указанной в пути к файлу, имени файла или столбце в данных.
 
 ## <a name="what-is-data-drift"></a>Что такое смещение данных?
@@ -107,7 +107,7 @@ ms.locfileid: "101656845"
 # <a name="python"></a>[Python](#tab/python)
 <a name="sdk-dataset"></a>
 
-[`Dataset`](/python/api/azureml-core/azureml.data.tabulardataset?preserve-view=true&view=azure-ml-py#&preserve-view=truewith-timestamp-columns-timestamp-none--partition-timestamp-none--validate-false----kwargs-)Метод класса [`with_timestamp_columns()`](/python/api/azureml-core/azureml.data.tabulardataset?preserve-view=true&view=azure-ml-py#&preserve-view=truewith-timestamp-columns-timestamp-none--partition-timestamp-none--validate-false----kwargs-) определяет столбец временной метки для набора данных.
+[`Dataset`](/python/api/azureml-core/azureml.data.tabulardataset#with-timestamp-columns-timestamp-none--partition-timestamp-none--validate-false----kwargs-)Метод класса [`with_timestamp_columns()`](/python/api/azureml-core/azureml.data.tabulardataset#with-timestamp-columns-timestamp-none--partition-timestamp-none--validate-false----kwargs-) определяет столбец временной метки для набора данных.
 
 ```python 
 from azureml.core import Workspace, Dataset, Datastore
@@ -135,7 +135,7 @@ dset = dset.register(ws, 'target')
 ```
 
 > [!TIP]
-> Полный пример использования `timeseries` наборов данных см. в [примере записной книжки](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/work-with-data/datasets-tutorial/timeseries-datasets/tabular-timeseries-dataset-filtering.ipynb) или в [документации по пакету SDK для наборов данных](/python/api/azureml-core/azureml.data.tabulardataset?preserve-view=true&view=azure-ml-py#&preserve-view=truewith-timestamp-columns-timestamp-none--partition-timestamp-none--validate-false----kwargs-).
+> Полный пример использования `timeseries` наборов данных см. в [примере записной книжки](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/work-with-data/datasets-tutorial/timeseries-datasets/tabular-timeseries-dataset-filtering.ipynb) или в [документации по пакету SDK для наборов данных](/python/api/azureml-core/azureml.data.tabulardataset#with-timestamp-columns-timestamp-none--partition-timestamp-none--validate-false----kwargs-).
 
 # <a name="studio"></a>[Студия](#tab/azure-studio)
 
@@ -333,7 +333,7 @@ monitor = monitor.enable_schedule()
 ![Новая группа действий](./media/how-to-monitor-datasets/action-group.png)
 
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 Ограничения и известные проблемы для мониторов смещения данных:
 
@@ -355,7 +355,7 @@ monitor = monitor.enable_schedule()
     1. На вкладке **мониторы набора данных** щелкните ссылку эксперимента, чтобы проверить состояние выполнения.  Эта ссылка находится на правом краю таблицы.
     1. Если запуск завершился успешно, проверьте журналы драйвера, чтобы узнать, сколько метрик было создано, или в случае наличия предупреждающих сообщений.  Если щелкнуть эксперимент, найдите журналы драйверов на вкладке **выходные данные и журналы** .
 
-* Если функция пакета SDK не `backfill()` создает ожидаемые выходные данные, это может быть вызвано проблемой проверки подлинности.  При создании вычислений для передачи этой функции не используйте `Run.get_context().experiment.workspace.compute_targets` .  Вместо этого используйте [сервицепринЦипалаусентикатион](/python/api/azureml-core/azureml.core.authentication.serviceprincipalauthentication?preserve-view=true&view=azure-ml-py) , как показано ниже, чтобы создать вычисление, передаваемое в эту `backfill()` функцию: 
+* Если функция пакета SDK не `backfill()` создает ожидаемые выходные данные, это может быть вызвано проблемой проверки подлинности.  При создании вычислений для передачи этой функции не используйте `Run.get_context().experiment.workspace.compute_targets` .  Вместо этого используйте [сервицепринЦипалаусентикатион](/python/api/azureml-core/azureml.core.authentication.serviceprincipalauthentication) , как показано ниже, чтобы создать вычисление, передаваемое в эту `backfill()` функцию: 
 
   ```python
    auth = ServicePrincipalAuthentication(

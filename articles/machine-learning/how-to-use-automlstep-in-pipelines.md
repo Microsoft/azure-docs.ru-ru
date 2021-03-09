@@ -11,12 +11,12 @@ manager: cgronlun
 ms.date: 02/28/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, automl
-ms.openlocfilehash: da973cf377ceace4a92d1cdd1e956321a5592e6a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0de3c9a7cf464f38a1a12d8bc19451fb1158a5ad
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101692221"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520512"
 ---
 # <a name="use-automated-ml-in-an-azure-machine-learning-pipeline-in-python"></a>Использование автоматизированного ML в конвейере Машинное обучение Azure в Python
 
@@ -37,7 +37,7 @@ ms.locfileid: "101692221"
 
 Существует несколько подклассов `PipelineStep` . Кроме того, в `AutoMLStep` этой статье будет показана `PythonScriptStep` Подготовка данных и другая для регистрации модели.
 
-Предпочтительный способ первоначального перемещения данных _в_ конвейер машинного обучения — с `Dataset` объектами. Чтобы перемещать данные _между_ шагами и возможными сохранение выходных данных из запусков, предпочтительным способом является [`OutputFileDatasetConfig`](/python/api/azureml-core/azureml.data.outputfiledatasetconfig?preserve-view=true&view=azure-ml-py) [`OutputTabularDatasetConfig`](/python/api/azureml-core/azureml.data.output_dataset_config.outputtabulardatasetconfig?preserve-view=true&view=azure-ml-py) объект и. Для использования с `AutoMLStep` `PipelineData` объект должен быть преобразован в `PipelineOutputTabularDataset` объект. Дополнительные сведения см. [в статье входные и выходные данные из конвейеров ML](how-to-move-data-in-out-of-pipelines.md).
+Предпочтительный способ первоначального перемещения данных _в_ конвейер машинного обучения — с `Dataset` объектами. Чтобы перемещать данные _между_ шагами и возможными сохранение выходных данных из запусков, предпочтительным способом является [`OutputFileDatasetConfig`](/python/api/azureml-core/azureml.data.outputfiledatasetconfig) [`OutputTabularDatasetConfig`](/python/api/azureml-core/azureml.data.output_dataset_config.outputtabulardatasetconfig) объект и. Для использования с `AutoMLStep` `PipelineData` объект должен быть преобразован в `PipelineOutputTabularDataset` объект. Дополнительные сведения см. [в статье входные и выходные данные из конвейеров ML](how-to-move-data-in-out-of-pipelines.md).
 
 `AutoMLStep`Объект настраивается с помощью `AutoMLConfig` объекта. `AutoMLConfig` является гибким классом, как описано в разделе [Настройка автоматизированных экспериментов машинного обучения в Python](./how-to-configure-auto-train.md#configure-your-experiment-settings). 
 
@@ -483,7 +483,7 @@ model.get_port_data_reference().download('.')
 
 Наконец, фактические метрики и модель загружаются на локальный компьютер, как было сказано в разделе "анализ результатов конвейера" выше.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Следующие шаги
 
 - Запустите эту записную книжку Jupyter, где [приведен полный пример автоматизированного ML в конвейере](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/machine-learning-pipelines/nyc-taxi-data-regression-model-building/nyc-taxi-data-regression-model-building.ipynb) , который использует регрессию для прогнозирования такси году
 - [Создание автоматизированных экспериментов ML без написания кода](how-to-use-automated-ml-for-ml-models.md)

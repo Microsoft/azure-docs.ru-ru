@@ -6,13 +6,13 @@ ms.author: memildin
 manager: rkarlin
 ms.service: security-center
 ms.topic: overview
-ms.date: 02/14/2021
-ms.openlocfilehash: e72e312e932e71d4dac8532983c2c96ba105ba3b
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.date: 03/08/2021
+ms.openlocfilehash: d45dae8b0b3725555bd83a05032339671a9595be
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102439482"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102454370"
 ---
 # <a name="azure-security-center-free-vs-azure-defender-enabled"></a>Сравнение бесплатной версии Центра безопасности с включенным средством Azure Defender
 Azure Defender предоставляется бесплатно в течение 30 дней с начала использования. Если по истечении 30 дней вы продолжаете использовать службу, мы автоматически начнем начислять плату за использование.
@@ -38,20 +38,16 @@ Azure Defender предоставляется бесплатно в течени
 
 ## <a name="faq---pricing-and-billing"></a>Вопросы и ответы: цены и выставление счетов 
 
-- [Сравнение бесплатной версии Центра безопасности с включенным средством Azure Defender](#azure-security-center-free-vs-azure-defender-enabled)
-  - [Каковы преимущества включения Azure Defender?](#what-are-the-benefits-of-enabling-azure-defender)
-  - [Вопросы и ответы: цены и выставление счетов](#faq---pricing-and-billing)
-    - [Как узнать, кто из сотрудников моей организации включил изменения Azure Defender в Центре безопасности?](#how-can-i-track-who-in-my-organization-enabled-azure-defender-changes-in-security-center)
-    - [Какие планы предлагаются в Центре безопасности?](#what-are-the-plans-offered-by-security-center)
-    - [Как включить Azure Defender для моей подписки?](#how-do-i-enable-azure-defender-for-my-subscription)
-    - [Можно ли включить Azure Defender для серверов из подмножества серверов в моей подписке?](#can-i-enable-azure-defender-for-servers-on-a-subset-of-servers-in-my-subscription)
-    - [Если у меня уже есть лицензия на Microsoft Defender для конечной точки, могу ли я получить скидку на Azure Defender?](#if-i-already-have-a-license-for-microsoft-defender-for-endpoint-can-i-get-a-discount-for-azure-defender)
-    - [В моей подписке включено средство "Azure Defender для серверов". Будет ли взиматься плата за незапущенные серверы?](#my-subscription-has-azure-defender-for-servers-enabled-do-i-pay-for-not-running-servers)
-    - [Будет ли взиматься плата за компьютеры без установленного агента Log Analytics?](#will-i-be-charged-for-machines-without-the-log-analytics-agent-installed)
-    - [Если агент Log Analytics отправляет отчеты в несколько рабочих областей, будет ли плата взиматься дважды?](#if-a-log-analytics-agent-reports-to-multiple-workspaces-will-i-be-charged-twice)
-    - [Если агент Log Analytics отправляет отчеты в несколько рабочих областей, распространяется ли возможность бесплатного приема данных объемом 500 МБ на все рабочие области?](#if-a-log-analytics-agent-reports-to-multiple-workspaces-is-the-500-mb-free-data-ingestion-available-on-all-of-them)
-    - [Бесплатный прием данных объемом 500 МБ рассчитывается для всей рабочей области или строго для каждого компьютера?](#is-the-500-mb-free-data-ingestion-calculated-for-an-entire-workspace-or-strictly-per-machine)
-  - [Дальнейшие действия](#next-steps)
+- [Как узнать, кто из сотрудников моей организации включил изменения Azure Defender в Центре безопасности?](#how-can-i-track-who-in-my-organization-enabled-azure-defender-changes-in-security-center)
+- [Какие планы предлагаются в Центре безопасности?](#what-are-the-plans-offered-by-security-center)
+- [Как включить Azure Defender для моей подписки?](#how-do-i-enable-azure-defender-for-my-subscription)
+- [Можно ли включить Azure Defender для серверов из подмножества серверов в моей подписке?](#can-i-enable-azure-defender-for-servers-on-a-subset-of-servers-in-my-subscription)
+- [Если у меня уже есть лицензия на Microsoft Defender для конечной точки, могу ли я получить скидку на Azure Defender?](#if-i-already-have-a-license-for-microsoft-defender-for-endpoint-can-i-get-a-discount-for-azure-defender)
+- [В моей подписке включено средство "Azure Defender для серверов". Будет ли взиматься плата за незапущенные серверы?](#my-subscription-has-azure-defender-for-servers-enabled-do-i-pay-for-not-running-servers)
+- [Будет ли взиматься плата за компьютеры без установленного агента Log Analytics?](#will-i-be-charged-for-machines-without-the-log-analytics-agent-installed)
+- [Если агент Log Analytics отправляет отчеты в несколько рабочих областей, будет ли плата взиматься дважды?](#if-a-log-analytics-agent-reports-to-multiple-workspaces-will-i-be-charged-twice)
+- [Если агент Log Analytics отправляет отчеты в несколько рабочих областей, распространяется ли возможность бесплатного приема данных объемом 500 МБ на все рабочие области?](#if-a-log-analytics-agent-reports-to-multiple-workspaces-is-the-500-mb-free-data-ingestion-available-on-all-of-them)
+- [Бесплатный прием данных объемом 500 МБ рассчитывается для всей рабочей области или строго для каждого компьютера?](#is-the-500-mb-free-data-ingestion-calculated-for-an-entire-workspace-or-strictly-per-machine)
 
 ### <a name="how-can-i-track-who-in-my-organization-enabled-azure-defender-changes-in-security-center"></a>Как узнать, кто из сотрудников моей организации включил изменения Azure Defender в Центре безопасности?
 В подписках Azure может быть несколько администраторов с разрешениями на изменение параметров цен. Чтобы узнать, какой именно пользователь внес изменения, используйте журнал действий Azure.

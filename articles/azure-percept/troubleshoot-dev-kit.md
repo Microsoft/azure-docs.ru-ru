@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/18/2021
 ms.custom: template-how-to
-ms.openlocfilehash: c8027b62c0c463e134817f589ba3e1957cea5b39
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: a6d099e8d267c9fe03e0bb676276e7a4ab8157ab
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101680083"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521532"
 ---
 # <a name="azure-percept-dk-dev-kit-troubleshooting"></a>Устранение неполадок в Azure Перцепт DK (комплект разработчика)
 
@@ -54,12 +54,12 @@ scp [remote username]@[IP address]:[remote file path]/[file name].txt [local hos
 |Wi-Fi             |```/data/misc/wifi/hostapd_virtual.conf``` |Проверка сведений о конфигурации точки доступа WiFi |
 |OOBE              |```journalctl -u oobe -b```       |Проверка журналов OOBE |
 |Телеметрия         |```azure-device-health-id```      |Поиск уникальных HW_ID телеметрии |
-|Azure IoT Edge;          |```sudo iotedge check```          |Выполните проверку конфигурации и подключения для распространенных проблем. |
-|Azure IoT Edge;          |```sudo iotedge logs [container name]``` |Проверка журналов контейнеров, например модулей распознавания речи и концепций |
-|Azure IoT Edge;          |```sudo iotedge support-bundle --since 1h``` |получение журналов модулей, Azure IoT Edge журналов диспетчера безопасности, журналов обработчика контейнеров, ```iotedge check``` выходных данных JSON и других полезных сведений об отладке за последний час |
-|Azure IoT Edge;          |```sudo journalctl -u iotedge -f``` |Просмотр журналов Azure IoT Edge диспетчера безопасности |
-|Azure IoT Edge;          |```sudo systemctl restart iotedge``` |перезапуск управляющей программы Azure IoT Edge Security |
-|Azure IoT Edge;          |```sudo iotedge list```           |Вывод списка развернутых модулей Azure IoT Edge |
+|Azure IoT Edge          |```sudo iotedge check```          |Выполните проверку конфигурации и подключения для распространенных проблем. |
+|Azure IoT Edge          |```sudo iotedge logs [container name]``` |Проверка журналов контейнеров, например модулей распознавания речи и концепций |
+|Azure IoT Edge          |```sudo iotedge support-bundle --since 1h``` |получение журналов модулей, Azure IoT Edge журналов диспетчера безопасности, журналов обработчика контейнеров, ```iotedge check``` выходных данных JSON и других полезных сведений об отладке за последний час |
+|Azure IoT Edge          |```sudo journalctl -u iotedge -f``` |Просмотр журналов Azure IoT Edge диспетчера безопасности |
+|Azure IoT Edge          |```sudo systemctl restart iotedge``` |перезапуск управляющей программы Azure IoT Edge Security |
+|Azure IoT Edge          |```sudo iotedge list```           |Вывод списка развернутых модулей Azure IoT Edge |
 |Другое             |```df [option] [file]```          |Отображение сведений о доступном или общем пространстве в указанных файловых системах |
 |Другое             |```ip route get 1.1.1.1```        |Отображение сведений об IP-адресе устройства и интерфейсе |
 |Другое             |```ip route get 1.1.1.1 \| awk '{print $7}'``` <br> ```ifconfig [interface]``` |отображать только IP-адрес устройства |
@@ -92,10 +92,10 @@ journalctl -u hostapd.service -u wpa_supplicant.service -u ztpd.service -u syste
 
 На корпусе платной платы имеется три мелких индикатора. Рядом с индикатором 1 печатается значок облака, значок Wi-Fi печатается рядом с ИНДИКАТОРом 2, а рядом с ИНДИКАТОРом 3 выводится значок восклицательного знака. Сведения о каждом состоянии СВЕТОИНДИКАТОРА см. в следующей таблице.
 
-|Светодиодный индикатор             |Состояние      |Описание                      |
+|Светодиодный индикатор             |Область      |Описание                      |
 |----------------|-----------|---------------------------------|
 |СВЕТОИНДИКАТОР 1 (центр Интернета вещей) |Вкл. (сплошной) |Устройство подключено к центру Интернета вещей. |
-|Индикатор 2 (Wi-Fi)   |Замедлит мерцание |Выполняется проверка подлинности устройства. |
+|Индикатор 2 (Wi-Fi)   |Замедлит мерцание |Устройство готово к настройке с помощью Wi-Fi Easy Connect и уведомляет его о присутствии с конфигуратором. |
 |Индикатор 2 (Wi-Fi)   |Быстрая мигающий |Проверка подлинности прошла успешно, выполняется сопоставление устройства. |
 |Индикатор 2 (Wi-Fi)   |Вкл. (сплошной) |Проверка подлинности и сопоставление успешно выполнены; устройство подключено к сети Wi-Fi. |
 |СВЕТОИНДИКАТОР 3           |Н/Д         |СВЕТОИНДИКАТОР не используется. |

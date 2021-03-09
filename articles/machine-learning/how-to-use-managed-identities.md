@@ -10,12 +10,12 @@ ms.subservice: core
 ms.reviewer: larryfr
 ms.topic: conceptual
 ms.date: 10/22/2020
-ms.openlocfilehash: 014c592713a8568b3bbc7e8e536f81b203271ccc
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: a7efd57100ad89fa9824b7a635e11698515e13ae
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100388079"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521022"
 ---
 # <a name="use-managed-identities-with-azure-machine-learning-preview"></a>Использование управляемых удостоверений с Машинное обучение Azure (Предварительная версия)
 
@@ -38,7 +38,7 @@ ms.locfileid: "100388079"
 
 - Рабочая область машинного обучения Azure. Дополнительные сведения см. в статье [создание машинное обучение Azure рабочей области](how-to-manage-workspace.md).
 - [Расширение Azure CLI для службы машинное обучение](reference-azure-machine-learning-cli.md)
-- [Пакет SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/intro?view=azure-ml-py).
+- [Пакет SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/intro).
 - Для назначения ролей имя входа для подписки Azure должно иметь роль [управляемого оператора идентификации](../role-based-access-control/built-in-roles.md#managed-identity-operator) или другую роль, которая предоставляет необходимые действия (например, __owner__).
 - Вы должны быть знакомы с созданием [управляемых удостоверений](../active-directory/managed-identities-azure-resources/overview.md)и работой с ними.
 
@@ -107,7 +107,7 @@ az ml workspace create -w <workspace name> \
 
 # <a name="python"></a>[Python](#tab/python)
 
-При создании кластера вычислений с [амлкомпутепровисионингконфигуратион](/python/api/azureml-core/azureml.core.compute.amlcompute.amlcomputeprovisioningconfiguration?view=azure-ml-py)используйте `identity_type` параметр, чтобы задать управляемый тип удостоверения.
+При создании кластера вычислений с [амлкомпутепровисионингконфигуратион](/python/api/azureml-core/azureml.core.compute.amlcompute.amlcomputeprovisioningconfiguration)используйте `identity_type` параметр, чтобы задать управляемый тип удостоверения.
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
@@ -191,7 +191,7 @@ env.python.user_managed_dependencies = True
 
         Идентификатор ресурса УАИ — это идентификатор ресурса Azure, которому назначено удостоверение пользователя, в формате `/subscriptions/<subscription ID>/resourceGroups/<resource group>/providers/Microsoft.ManagedIdentity/userAssignedIdentities/<UAI name>` .
 
-1. Укажите внешнюю запись контроля доступа и идентификатор клиента для __назначаемого пользователем управляемого удостоверения__ в подключениях к рабочей области с помощью [метода Workspace.set_connection](/python/api/azureml-core/azureml.core.workspace.workspace?view=azure-ml-py#set-connection-name--category--target--authtype--value-):
+1. Укажите внешнюю запись контроля доступа и идентификатор клиента для __назначаемого пользователем управляемого удостоверения__ в подключениях к рабочей области с помощью [метода Workspace.set_connection](/python/api/azureml-core/azureml.core.workspace.workspace#set-connection-name--category--target--authtype--value-):
 
     ```python
     workspace.set_connection(
@@ -211,7 +211,7 @@ env = Environment(name="my-env")
 env.docker.base_image = "<acr url>/my-repo/my-image:latest"
 ```
 
-При необходимости можно указать URL-адрес управляемого ресурса удостоверения и идентификатор клиента в определении среды с помощью [регистридентити](/python/api/azureml-core/azureml.core.container_registry.registryidentity?view=azure-ml-py). Если вы явно используете удостоверение реестра, он переопределяет все подключения к рабочей области, указанные ранее:
+При необходимости можно указать URL-адрес управляемого ресурса удостоверения и идентификатор клиента в определении среды с помощью [регистридентити](/python/api/azureml-core/azureml.core.container_registry.registryidentity). Если вы явно используете удостоверение реестра, он переопределяет все подключения к рабочей области, указанные ранее:
 
 ```python
 from azureml.core.container_registry import RegistryIdentity
@@ -238,7 +238,7 @@ env.docker.base_image = "my-acr.azurecr.io/my-repo/my-image:latest"
 
 Затем используйте Azure CLI или пакет SDK для Python, чтобы создать рабочую область. При использовании интерфейса командной строки укажите идентификатор с помощью `--primary-user-assigned-identity` параметра. При использовании пакета SDK используйте `primary_user_assigned_identity` . Ниже приведены примеры использования Azure CLI и Python для создания новой рабочей области с использованием следующих параметров.
 
-__Azure CLI__;
+__Azure CLI__
 
 ```azurecli-interactive
 az ml workspace create -w <workspace name> -g <resource group> --primary-user-assigned-identity <managed identity ARM ID>
@@ -265,6 +265,6 @@ ws = Workspace.create(name="workspace name",
 Если у вас есть рабочая область, ее можно обновить с назначенного пользователем управляемого удостоверения с помощью ```az ml workspace update``` команды CLI или ```Workspace.update``` метода Python SDK.
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о [корпоративной безопасности в машинное обучение Azure](concept-enterprise-security.md).

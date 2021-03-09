@@ -12,12 +12,12 @@ ms.date: 02/28/2020
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 9612a26d7ac2e7a059655636fc1a2a7a43e3b8d7
-ms.sourcegitcommit: e3151d9b352d4b69c4438c12b3b55413b4565e2f
+ms.openlocfilehash: 2d6c76a15ee62c26e0d0261c6b0d2d1e27443a40
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100526244"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518053"
 ---
 # <a name="get-started-with-custom-policies-in-azure-active-directory-b2c"></a>Начало работы с настраиваемыми политиками в Azure Active Directory B2C
 
@@ -30,6 +30,10 @@ ms.locfileid: "100526244"
 - Если у вас еще нет клиента Azure AD B2C, [создайте](tutorial-create-tenant.md) его. Он должен быть связан с вашей подпиской Azure.
 - [Зарегистрируйте свое приложение](tutorial-register-applications.md) в созданном клиенте, чтобы оно могло обмениваться данными с Azure AD B2C.
 - Выполните действия, описанные в статье [Настройка регистрации и входа с помощью учетной записи Facebook](identity-provider-facebook.md), чтобы настроить приложение Facebook. Хотя приложение Facebook не обязательно для использования настраиваемых политик, оно используется в этом пошаговом руководстве для демонстрации возможности входа через социальную сеть в настраиваемой политике.
+
+> [!TIP]
+> В этой статье объясняется, как настроить клиент вручную. Вы можете автоматизировать весь процесс, описанный в этой статье. Автоматизация выполнит развертывание Azure AD B2C [соЦиаландлокалаккаунтсвисмфа Starter Pack](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack), который обеспечит регистрацию и вход, сброс пароля и изменение профиля. Чтобы автоматизировать это пошаговое руководство, перейдите в [приложение инфраструктура процедур идентификации Setup](https://aka.ms/iefsetup) и следуйте инструкциям.
+
 
 ## <a name="add-signing-and-encryption-keys"></a>Добавление ключей подписи и шифрования
 

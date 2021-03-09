@@ -9,12 +9,12 @@ ms.service: virtual-machines
 ms.subservice: image-builder
 ms.collection: linux
 ms.reviewer: cynthn
-ms.openlocfilehash: eb02bff77ffedc0a1f2fee0a186d544c39374dbf
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a3138da0ecbcabaeb7ef910975afc3b7005e5b50
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693872"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519713"
 ---
 # <a name="preview-create-an-azure-image-builder-template"></a>Предварительный просмотр: Создание шаблона Конструктора образов виртуальных машин Azure 
 
@@ -391,7 +391,7 @@ sudo touch /myfiles/somethingElevated.txt
 - **validExitCodes** — необязательные допустимые коды, которые можно возвращать из скрипта или встроенной команды. Это позволит избежать возврата ошибки скриптом или встроенной командой.
 - **runElevated** — необязательное логическое значение для поддержки выполнения команд и скриптов с повышенными привилегиями.
 - **sha256Checksum** — значение контрольной суммы sha256 файла; вы формируете ее локально, а Конструктор образов затем проверяет ее.
-    * Для формирования sha256Checksum используйте командлет PowerShell в Windows [Get-Hash](/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6)
+    * Для формирования sha256Checksum используйте командлет PowerShell в Windows [Get-Hash](/powershell/module/microsoft.powershell.utility/get-filehash)
 
 
 ### <a name="file-customizer"></a>Настройщик File
@@ -456,7 +456,7 @@ OS support: Windows
 - **updateLimit** — необязательное свойство; задает, сколько обновлений можно установить (по умолчанию 1000).
  
 > [!NOTE]
-> Настройка Центр обновления Windows может завершиться ошибкой при наличии невыполненных перезапусков Windows или при выполнении установки приложения. обычно эта ошибка может появиться в журнале настройки. log `System.Runtime.InteropServices.COMException (0x80240016): Exception from HRESULT: 0x80240016` . Мы настоятельно рекомендуем рассмотреть возможность добавления в перезагрузку Windows и/или предоставления приложениям достаточного времени для завершения установки с помощью [Sleep] или команд Wait ( https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/start-sleep?view=powershell-7) во встроенных командах или скриптах перед запуском центр обновления Windows.
+> Настройка Центр обновления Windows может завершиться ошибкой при наличии невыполненных перезапусков Windows или при выполнении установки приложения. обычно эта ошибка может появиться в журнале настройки. log `System.Runtime.InteropServices.COMException (0x80240016): Exception from HRESULT: 0x80240016` . Мы настоятельно рекомендуем рассмотреть возможность добавления в перезагрузку Windows и/или предоставления приложениям достаточного времени для завершения установки с помощью команд [Sleep](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/start-sleep) или wait во встроенных командах или сценариях перед запуском центр обновления Windows.
 
 ### <a name="generalize"></a>Generalize 
 По умолчанию Конструктор образов виртуальных машин Azure также выполняет код отзыва в конце каждого этапа настройки образа, чтобы подготовить образ к использованию. Подготовка к использованию — это процесс, в котором образ настраивается для многократного использования в целях создания нескольких виртуальных машин. Для виртуальных машин Windows Конструктор образов виртуальных машин Azure использует команду Sysprep. Для Linux Конструктор образов выполняет команду "waagent -deprovision". 

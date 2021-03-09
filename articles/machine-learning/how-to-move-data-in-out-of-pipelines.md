@@ -10,12 +10,12 @@ author: lobrien
 ms.date: 02/26/2021
 ms.topic: conceptual
 ms.custom: how-to, contperf-fy20q4, devx-track-python, data4ml
-ms.openlocfilehash: 8f1cea6e9bc833c6d441c39c401f60d872cd9099
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: a4d1d1c4f4d6354d0206bf598a0622112dc99453
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102174943"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518710"
 ---
 # <a name="moving-data-into-and-between-ml-pipeline-steps-python"></a>Перемещение данных в этапы конвейера машинного обучения и между ними (Python)
 
@@ -36,7 +36,7 @@ ms.locfileid: "102174943"
 
 - Подписка Azure. Если у вас еще нет подписки Azure, создайте бесплатную учетную запись, прежде чем начинать работу. Попробуйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree).
 
-- [Пакет SDK для Машинного обучения Azure для Python](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py) или доступ к [Студии машинного обучения Azure](https://ml.azure.com/).
+- [Пакет SDK для Машинного обучения Azure для Python](/python/api/overview/azure/ml/intro) или доступ к [Студии машинного обучения Azure](https://ml.azure.com/).
 
 - Рабочая область машинного обучения Azure.
   
@@ -55,7 +55,7 @@ ms.locfileid: "102174943"
 
 ## <a name="use-dataset-objects-for-pre-existing-data"></a>Использование `Dataset` объектов для уже существующих данных 
 
-Предпочтительный способ приема данных в конвейер — использование объекта [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29?preserve-view=true&view=azure-ml-py) . `Dataset` объекты представляют постоянные данные, доступные во всей рабочей области.
+Предпочтительный способ приема данных в конвейер — использование объекта [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29) . `Dataset` объекты представляют постоянные данные, доступные во всей рабочей области.
 
 Существует множество способов создания и регистрации `Dataset` объектов. Табличные наборы данных предназначены для доступа к данным с разделителями в одном или нескольких файлах. Файловые наборы данных — это двоичные данные (например, изображения) или данные, которые вы будете анализировать. Самым простым программным способом создания `Dataset` объектов является использование существующих больших двоичных объектов в хранилище рабочей области или общедоступных URL-адресах.
 
@@ -154,7 +154,7 @@ ds = Dataset.get_by_name(workspace=ws, name='mnist_opendataset')
 
 ## <a name="use-outputfiledatasetconfig-for-intermediate-data"></a>Использовать `OutputFileDatasetConfig` для промежуточных данных
 
-Хотя `Dataset` объекты представляют только постоянные данные, [`OutputFileDatasetConfig`](/python/api/azureml-core/azureml.data.outputfiledatasetconfig?preserve-view=true&view=azure-ml-py) можно использовать объекты для временных выходных данных этапов конвейера **и** постоянных выходных данных. `OutputFileDatasetConfig` поддерживает запись данных в хранилище BLOB-объектов, общую папку, adlsgen1 или adlsgen2. Он поддерживает режим подключения и режим передачи. В режиме монтирования файлы, записанные в подключенный каталог, сохраняются окончательно при закрытии файла. В режиме передачи файлы, записанные в выходной каталог, передаются в конце задания. Если задание завершается сбоем или отменяется, выходной каталог не отправляется.
+Хотя `Dataset` объекты представляют только постоянные данные, [`OutputFileDatasetConfig`](/python/api/azureml-core/azureml.data.outputfiledatasetconfig) можно использовать объекты для временных выходных данных этапов конвейера **и** постоянных выходных данных. `OutputFileDatasetConfig` поддерживает запись данных в хранилище BLOB-объектов, общую папку, adlsgen1 или adlsgen2. Он поддерживает режим подключения и режим передачи. В режиме монтирования файлы, записанные в подключенный каталог, сохраняются окончательно при закрытии файла. В режиме передачи файлы, записанные в выходной каталог, передаются в конце задания. Если задание завершается сбоем или отменяется, выходной каталог не отправляется.
 
  `OutputFileDatasetConfig` поведение объекта по умолчанию — запись в хранилище данных по умолчанию рабочей области. Передайте `OutputFileDatasetConfig` объекты в `PythonScriptStep` с помощью `arguments` параметра.
 

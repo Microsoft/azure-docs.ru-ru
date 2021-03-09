@@ -11,17 +11,17 @@ ms.subservice: core
 ms.date: 07/23/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python
-ms.openlocfilehash: 75882701984dfff3005aa3661274a8dc94b22a28
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 038e1394c68df63221d99b87449e5502ae62fadc
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100596348"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521039"
 ---
 # <a name="create--use-software-environments-in-azure-machine-learning"></a>Создание & использование программных сред в Машинное обучение Azure
 
 
-В этой статье вы узнаете, как создавать [среды](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py)машинное обучение Azure и управлять ими. Используйте среды для мониторинга и воспроизведения зависимостей программного обеспечения проектов по мере их развития.
+В этой статье вы узнаете, как создавать [среды](/python/api/azureml-core/azureml.core.environment.environment)машинное обучение Azure и управлять ими. Используйте среды для мониторинга и воспроизведения зависимостей программного обеспечения проектов по мере их развития.
 
 Управление зависимостями программного обеспечения — это распространенная задача для разработчиков. Необходимо обеспечить воспроизводимость сборок без обширной ручной настройки программного обеспечения. Машинное обучение Azure `Environment` класс учетные записи для локальных решений разработки, таких как PIP и Conda и распределенное облачное развертывание с помощью возможностей DOCKER.
 
@@ -34,9 +34,9 @@ ms.locfileid: "100596348"
 
 Общий обзор работы сред в Машинное обучение Azure см. в разделе [что такое среды машинного обучения?](concept-environments.md) Сведения о настройке сред разработки см. [здесь](how-to-configure-environment.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
-* [Пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py) (>= 1.13.0)
+* [Пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/install) (>= 1.13.0)
 * [Рабочая область машинное обучение Azure](how-to-manage-workspace.md)
 
 ## <a name="create-an-environment"></a>Создание среды
@@ -87,7 +87,7 @@ for env in envs:
 
 ### <a name="use-conda-dependencies-or-pip-requirements-files"></a>Использование зависимостей Conda или файлов требований PIP
 
-Среду можно создать на основе спецификации Conda или файла требований PIP. Используйте [`from_conda_specification()`](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py#&preserve-view=truefrom-conda-specification-name--file-path-) метод или [`from_pip_requirements()`](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py#&preserve-view=truefrom-pip-requirements-name--file-path-) метод. В аргументе метода укажите имя среды и путь к нужному файлу. 
+Среду можно создать на основе спецификации Conda или файла требований PIP. Используйте [`from_conda_specification()`](/python/api/azureml-core/azureml.core.environment.environment#from-conda-specification-name--file-path-) метод или [`from_pip_requirements()`](/python/api/azureml-core/azureml.core.environment.environment#from-pip-requirements-name--file-path-) метод. В аргументе метода укажите имя среды и путь к нужному файлу. 
 
 ```python
 # From a Conda specification file
@@ -103,7 +103,7 @@ myenv = Environment.from_pip_requirements(name = "myenv",
 
 При включении DOCKER Машинное обучение Azure создает образ DOCKER и создает среду Python в этом контейнере с учетом ваших спецификаций. Образы DOCKER кэшируются и используются повторно: первый запуск в новой среде обычно занимает больше времени, чем сборка образа.
 
-[`DockerSection`](/python/api/azureml-core/azureml.core.environment.dockersection?preserve-view=true&view=azure-ml-py) `Environment` Класс машинное обучение Azure позволяет точно настраивать и контролировать операционную систему на виртуальной машине, в которой выполняется обучение. `arguments`Переменная может использоваться для указания дополнительных аргументов для передачи в команду DOCKER Run.
+[`DockerSection`](/python/api/azureml-core/azureml.core.environment.dockersection) `Environment` Класс машинное обучение Azure позволяет точно настраивать и контролировать операционную систему на виртуальной машине, в которой выполняется обучение. `arguments`Переменная может использоваться для указания дополнительных аргументов для передачи в команду DOCKER Run.
 
 ```python
 # Creates the environment inside a Docker container.
@@ -179,7 +179,7 @@ myenv.python.interpreter_path = "/opt/miniconda/bin/python"
 
 #### <a name="retrieve-image-details"></a>Получение сведений об образе
 
-Для зарегистрированной среды можно получить сведения об образе, используя следующий код, где `details` является экземпляром [доккеримажедетаилс](/python/api/azureml-core/azureml.core.environment.dockerimagedetails?preserve-view=true&view=azure-ml-py) (пакет SDK для AzureML Python >= 1,11) и предоставляет все сведения об образе среды, такие как dockerfile, реестр и имя образа.
+Для зарегистрированной среды можно получить сведения об образе, используя следующий код, где `details` является экземпляром [доккеримажедетаилс](/python/api/azureml-core/azureml.core.environment.dockerimagedetails) (пакет SDK для AzureML Python >= 1,11) и предоставляет все сведения об образе среды, такие как dockerfile, реестр и имя образа.
 
 ```python
 details = environment.get_image_details(workspace=ws)
@@ -195,14 +195,14 @@ details = run.get_environment().get_image_details(workspace=ws)
 
 Если на локальном компьютере имеется среда Conda, то для создания объекта среды можно использовать службу. С помощью этой стратегии можно повторно использовать локальную интерактивную среду на удаленных запусках.
 
-Следующий код создает объект среды из существующей среды Conda `mycondaenv` . Он использует [`from_existing_conda_environment()`](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py#&preserve-view=truefrom-existing-conda-environment-name--conda-environment-name-) метод.
+Следующий код создает объект среды из существующей среды Conda `mycondaenv` . Он использует [`from_existing_conda_environment()`](/python/api/azureml-core/azureml.core.environment.environment#from-existing-conda-environment-name--conda-environment-name-) метод.
 
 ``` python
 myenv = Environment.from_existing_conda_environment(name="myenv",
                                                     conda_environment_name="mycondaenv")
 ```
 
-Определение среды можно сохранить в каталоге в удобном для редактирования формате с помощью [`save_to_directory()`](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py#&preserve-view=truesave-to-directory-path--overwrite-false-) метода. После изменения можно создать экземпляр среды, загрузив файлы из каталога.
+Определение среды можно сохранить в каталоге в удобном для редактирования формате с помощью [`save_to_directory()`](/python/api/azureml-core/azureml.core.environment.environment#save-to-directory-path--overwrite-false-) метода. После изменения можно создать экземпляр среды, загрузив файлы из каталога.
 
 ```python
 # save the enviroment
@@ -232,13 +232,13 @@ run.wait_for_completion(show_output=True)
 
 ## <a name="add-packages-to-an-environment"></a>Добавление пакетов в среду
 
-Добавьте пакеты в среду с помощью Conda, PIP или частных файлов wheel. Укажите зависимость каждого пакета с помощью [`CondaDependency`](/python/api/azureml-core/azureml.core.conda_dependencies.condadependencies?preserve-view=true&view=azure-ml-py) класса. Добавьте его в среду `PythonSection` .
+Добавьте пакеты в среду с помощью Conda, PIP или частных файлов wheel. Укажите зависимость каждого пакета с помощью [`CondaDependency`](/python/api/azureml-core/azureml.core.conda_dependencies.condadependencies) класса. Добавьте его в среду `PythonSection` .
 
 ### <a name="conda-and-pip-packages"></a>Пакеты Conda и PIP
 
 Если пакет доступен в репозитории пакетов Conda, рекомендуется использовать установку Conda, а не установку PIP. Пакеты Conda обычно поставляются с предварительно созданными двоичными файлами, которые делают установку более надежной.
 
-В следующем примере добавляется в среду `myenv` . С его помощью добавляется версия 1.17.0 `numpy`. Он также добавляет `pillow` пакет. В примере используется метод [`add_conda_package()`](/python/api/azureml-core/azureml.core.conda_dependencies.condadependencies?preserve-view=true&view=azure-ml-py#&preserve-view=trueadd-conda-package-conda-package-) и соответственно метод [`add_pip_package()`](/python/api/azureml-core/azureml.core.conda_dependencies.condadependencies?preserve-view=true&view=azure-ml-py#&preserve-view=trueadd-pip-package-pip-package-).
+В следующем примере добавляется в среду `myenv` . С его помощью добавляется версия 1.17.0 `numpy`. Он также добавляет `pillow` пакет. В примере используется метод [`add_conda_package()`](/python/api/azureml-core/azureml.core.conda_dependencies.condadependencies#add-conda-package-conda-package-) и соответственно метод [`add_pip_package()`](/python/api/azureml-core/azureml.core.conda_dependencies.condadependencies#add-pip-package-pip-package-).
 
 ```python
 from azureml.core.environment import Environment
@@ -276,7 +276,7 @@ myenv.environment_variables = {"MESSAGE":"Hello from Azure Machine Learning"}
 
 ### <a name="register-environments"></a>Регистрация сред
 
-Среда автоматически регистрируется в рабочей области при отправке выполнения или развертывании веб-службы. Можно также вручную зарегистрировать среду с помощью [`register()`](/python/api/azureml-core/azureml.core.environment%28class%29?preserve-view=true&view=azure-ml-py#&preserve-view=trueregister-workspace-) метода. Эта операция делает среду в сущности, которая будет отслеживанием и управлением версиями в облаке. Сущность может совместно использоваться пользователями рабочей области.
+Среда автоматически регистрируется в рабочей области при отправке выполнения или развертывании веб-службы. Можно также вручную зарегистрировать среду с помощью [`register()`](/python/api/azureml-core/azureml.core.environment%28class%29#register-workspace-) метода. Эта операция делает среду в сущности, которая будет отслеживанием и управлением версиями в облаке. Сущность может совместно использоваться пользователями рабочей области.
 
 Следующий код регистрирует `myenv` среду в `ws` рабочей области.
 
@@ -292,11 +292,11 @@ myenv.register(workspace=ws)
 
 #### <a name="view-a-list-of-environments"></a>Просмотр списка сред
 
-Просмотрите окружения в рабочей области с помощью [`Environment.list(workspace="workspace_name")`](/python/api/azureml-core/azureml.core.environment%28class%29?preserve-view=true&view=azure-ml-py#&preserve-view=truelist-workspace-) класса. Затем выберите среду для повторного использования.
+Просмотрите окружения в рабочей области с помощью [`Environment.list(workspace="workspace_name")`](/python/api/azureml-core/azureml.core.environment%28class%29#list-workspace-) класса. Затем выберите среду для повторного использования.
 
 #### <a name="get-an-environment-by-name"></a>Получение окружения по имени
 
-Кроме того, можно получить конкретную среду по имени и версии. В следующем коде метод используется [`get()`](/python/api/azureml-core/azureml.core.environment%28class%29?preserve-view=true&view=azure-ml-py#&preserve-view=trueget-workspace--name--version-none-) для получения версии `1` `myenv` среды в `ws` рабочей области.
+Кроме того, можно получить конкретную среду по имени и версии. В следующем коде метод используется [`get()`](/python/api/azureml-core/azureml.core.environment%28class%29#get-workspace--name--version-none-) для получения версии `1` `myenv` среды в `ws` рабочей области.
 
 ```python
 restored_environment = Environment.get(workspace=ws,name="myenv",version="1")
@@ -304,7 +304,7 @@ restored_environment = Environment.get(workspace=ws,name="myenv",version="1")
 
 #### <a name="train-a-run-specific-environment"></a>Обучение среды выполнения
 
-Чтобы получить среду, которая использовалась для определенного запуска после завершения обучения, используйте [`get_environment()`](/python/api/azureml-core/azureml.core.run.run?preserve-view=true&view=azure-ml-py#&preserve-view=trueget-environment--) метод в `Run` классе.
+Чтобы получить среду, которая использовалась для определенного запуска после завершения обучения, используйте [`get_environment()`](/python/api/azureml-core/azureml.core.run.run#get-environment--) метод в `Run` классе.
 
 ```python
 from azureml.core import Run
@@ -319,7 +319,7 @@ Run.get_environment()
 
 ### <a name="debug-the-image-build"></a>Отладка сборки образа
 
-В следующем примере метод используется [`build()`](/python/api/azureml-core/azureml.core.environment%28class%29?preserve-view=true&view=azure-ml-py#&preserve-view=truebuild-workspace--image-build-compute-none-) для ручного создания среды в качестве образа DOCKER. Он отслеживает выходные журналы из сборки образа с помощью [`wait_for_completion()`](/python/api/azureml-core/azureml.core.image%28class%29?preserve-view=true&view=azure-ml-py#&preserve-view=truewait-for-creation-show-output-false-) . Затем созданный образ появится в экземпляре реестра контейнеров Azure рабочей области. Эти сведения полезны для отладки.
+В следующем примере метод используется [`build()`](/python/api/azureml-core/azureml.core.environment%28class%29#build-workspace--image-build-compute-none-) для ручного создания среды в качестве образа DOCKER. Он отслеживает выходные журналы из сборки образа с помощью [`wait_for_completion()`](/python/api/azureml-core/azureml.core.image%28class%29#wait-for-creation-show-output-false-) . Затем созданный образ появится в экземпляре реестра контейнеров Azure рабочей области. Эти сведения полезны для отладки.
 
 ```python
 from azureml.core import Image
@@ -327,7 +327,7 @@ build = env.build(workspace=ws)
 build.wait_for_completion(show_output=True)
 ```
 
-Сначала рекомендуется создавать образы локально с помощью [`build_local()`](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py#&preserve-view=truebuild-local-workspace--platform-none----kwargs-) метода. Чтобы создать образ DOCKER, задайте необязательный параметр `useDocker=True` . Чтобы отправить полученный образ в реестр контейнеров рабочей области AzureML, установите `pushImageToWorkspaceAcr=True` .
+Сначала рекомендуется создавать образы локально с помощью [`build_local()`](/python/api/azureml-core/azureml.core.environment.environment#build-local-workspace--platform-none----kwargs-) метода. Чтобы создать образ DOCKER, задайте необязательный параметр `useDocker=True` . Чтобы отправить полученный образ в реестр контейнеров рабочей области AzureML, установите `pushImageToWorkspaceAcr=True` .
 
 ```python
 build = env.build_local(workspace=ws, useDocker=True, pushImageToWorkspaceAcr=True)
@@ -342,7 +342,7 @@ build = env.build_local(workspace=ws, useDocker=True, pushImageToWorkspaceAcr=Tr
 
 При запуске выполнения обучения создание новой среды может занять несколько минут. Длительность зависит от размера необходимых зависимостей. Среды кэшируются службой. Поскольку определение среды остается неизменным, полное время настройки задается только один раз.
 
-В следующем примере выполнения локального скрипта показано, где можно использовать [`ScriptRunConfig`](/python/api/azureml-core/azureml.core.script_run_config.scriptrunconfig?preserve-view=true&view=azure-ml-py) в качестве объекта-оболочки.
+В следующем примере выполнения локального скрипта показано, где можно использовать [`ScriptRunConfig`](/python/api/azureml-core/azureml.core.script_run_config.scriptrunconfig) в качестве объекта-оболочки.
 
 ```python
 from azureml.core import ScriptRunConfig, Experiment
@@ -371,7 +371,7 @@ run = exp.submit(src)
 
 Если вы определяете собственную среду для развертывания веб-службы, необходимо перечислить `azureml-defaults` версию >= 1.0.45 в качестве зависимости PIP. Этот пакет содержит функциональные возможности, необходимые для размещения модели в качестве веб-службы.
 
-Чтобы развернуть веб-службу, объедините среду, вычисление для вывода, скрипт оценки и зарегистрированную модель в объекте развертывания [`deploy()`](/python/api/azureml-core/azureml.core.model.model?preserve-view=true&view=azure-ml-py#&preserve-view=truedeploy-workspace--name--models--inference-config-none--deployment-config-none--deployment-target-none--overwrite-false-). Дополнительные сведения см. [в разделе как и где развертываются модели](how-to-deploy-and-where.md).
+Чтобы развернуть веб-службу, объедините среду, вычисление для вывода, скрипт оценки и зарегистрированную модель в объекте развертывания [`deploy()`](/python/api/azureml-core/azureml.core.model.model#deploy-workspace--name--models--inference-config-none--deployment-config-none--deployment-target-none--overwrite-false-). Дополнительные сведения см. [в разделе как и где развертываются модели](how-to-deploy-and-where.md).
 
 В этом примере предполагается, что вы завершили обучающий запуск. Теперь вы хотите развернуть эту модель в службе "экземпляры контейнеров Azure". При создании веб-службы файлы модели и оценки подключаются к образу, а на изображение добавляется Машинное обучение Azure стек вывода.
 
@@ -433,8 +433,8 @@ az ml environment list
 az ml environment download -n myenv -d downloaddir
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Сведения об использовании управляемого целевого объекта вычислений для обучения модели см. в разделе [учебник. Обучение модели](tutorial-train-models-with-aml.md).
 * После создания обученной модели Узнайте, [как и где развертываются модели](how-to-deploy-and-where.md).
-* Просмотрите [ `Environment` ссылку на пакет SDK для класса](/python/api/azureml-core/azureml.core.environment%28class%29?preserve-view=true&view=azure-ml-py).
+* Просмотрите [ `Environment` ссылку на пакет SDK для класса](/python/api/azureml-core/azureml.core.environment%28class%29).

@@ -1,20 +1,22 @@
 ---
 title: Развертывание ресурсов с помощью PowerShell и шаблона
-description: Используйте Azure Resource Manager и Azure PowerShell для развертывания ресурсов в Azure. Эти ресурсы определяются в шаблоне Resource Manager.
+description: Используйте Azure Resource Manager и Azure PowerShell для развертывания ресурсов в Azure. Ресурсы определяются в шаблоне диспетчер ресурсов или в файле Бицеп.
 ms.topic: conceptual
-ms.date: 01/26/2021
-ms.openlocfilehash: efefb6706794bc2488aa4d4fef6c4ecc082b41a7
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.date: 03/04/2021
+ms.openlocfilehash: 784f17566ce4fb19a7ec5e3fd4a504d7c25f90fe
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98881271"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521634"
 ---
 # <a name="deploy-resources-with-arm-templates-and-azure-powershell"></a>Развертывание ресурсов с помощью шаблонов ARM и Azure PowerShell
 
-В этой статье объясняется, как использовать Azure PowerShell с шаблонами Azure Resource Manager (шаблоны ARM) для развертывания ресурсов в Azure. Если вы не знакомы с концепциями развертывания и управления решениями Azure, см. раздел [Общие сведения о развертывании шаблонов](overview.md).
+В этой статье объясняется, как использовать Azure PowerShell с шаблонами Azure Resource Manager (шаблоны ARM) или файлами Бицеп для развертывания ресурсов в Azure. Если вы не знакомы с концепциями развертывания и управления решениями Azure, см. статью [Общие сведения о развертывании шаблонов](overview.md) или [бицеп](bicep-overview.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+Для развертывания файлов Бицеп требуется [Azure PowerShell версии 5.6.0 или более поздней](/powershell/azure/install-az-ps).
+
+## <a name="prerequisites"></a>Предварительные условия
 
 Вам нужен шаблон для развертывания. Если у вас его еще нет, скачайте и сохраните [Пример шаблона](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json) из репозитория шаблонов быстрого запуска Azure. Имя локального файла, используемое в этой статье, _C:\MyTemplates\azuredeploy.jsв_.
 
@@ -32,13 +34,13 @@ ms.locfileid: "98881271"
 - Чтобы выполнить развертывание в **группе ресурсов**, используйте команду [New-азресаурцеграупдеплоймент](/powershell/module/az.resources/new-azresourcegroupdeployment).
 
   ```azurepowershell
-  New-AzResourceGroupDeployment -ResourceGroupName <resource-group-name> -TemplateFile <path-to-template>
+  New-AzResourceGroupDeployment -ResourceGroupName <resource-group-name> -TemplateFile <path-to-template-or-bicep>
   ```
 
 - Чтобы выполнить развертывание в **подписке**, используйте командлет [New-азсубскриптиондеплоймент](/powershell/module/az.resources/new-azdeployment) , который является псевдонимом `New-AzDeployment` .
 
   ```azurepowershell
-  New-AzSubscriptionDeployment -Location <location> -TemplateFile <path-to-template>
+  New-AzSubscriptionDeployment -Location <location> -TemplateFile <path-to-template-or-bicep>
   ```
 
   Дополнительные сведения о развертываниях на уровне подписки см. в статье [Создание групп ресурсов и ресурсов на уровне подписки](deploy-to-subscription.md).
@@ -46,7 +48,7 @@ ms.locfileid: "98881271"
 - Для развертывания в **группе управления** используйте [New-азманажементграупдеплоймент](/powershell/module/az.resources/New-AzManagementGroupDeployment).
 
   ```azurepowershell
-  New-AzManagementGroupDeployment -Location <location> -TemplateFile <path-to-template>
+  New-AzManagementGroupDeployment -Location <location> -TemplateFile <path-to-template-or-bicep>
   ```
 
   Дополнительные сведения о развертываниях на уровне групп управления см. в статье [Создание ресурсов на уровне группы управления](deploy-to-management-group.md).
@@ -54,7 +56,7 @@ ms.locfileid: "98881271"
 - Для развертывания в **клиенте** используйте [New-азтенантдеплоймент](/powershell/module/az.resources/new-aztenantdeployment).
 
   ```azurepowershell
-  New-AzTenantDeployment -Location <location> -TemplateFile <path-to-template>
+  New-AzTenantDeployment -Location <location> -TemplateFile <path-to-template-or-bicep>
   ```
 
   Дополнительные сведения о развертываниях на уровне клиента см. в статье [Создание ресурсов на уровне клиента](deploy-to-tenant.md).
@@ -89,7 +91,7 @@ $deploymentName="ExampleDeployment"+"$today"
 
 Чтобы избежать конфликтов с параллельными развертываниями и обеспечить уникальность записей в журнале развертывания, присвойте каждому развертыванию уникальное имя.
 
-## <a name="deploy-local-template"></a>Развертывание локального шаблона
+## <a name="deploy-local-template-or-bicep-file"></a>Развертывание локального шаблона или файла Бицеп
 
 Вы можете развернуть шаблон с локального компьютера или из него, который хранится извне. В этом разделе описывается развертывание локального шаблона.
 
@@ -99,18 +101,21 @@ $deploymentName="ExampleDeployment"+"$today"
 New-AzResourceGroup -Name ExampleGroup -Location "Central US"
 ```
 
-Чтобы развернуть локальный шаблон, используйте `-TemplateFile` параметр в команде развертывания. В следующем примере также показано, как задать значение параметра, поступающих из шаблона.
+Чтобы развернуть локальный шаблон или файл Бицеп, используйте `-TemplateFile` параметр в команде Deployment. В следующем примере также показано, как задать значение параметра, поступающих из шаблона.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
   -Name ExampleDeployment `
   -ResourceGroupName ExampleGroup `
-  -TemplateFile c:\MyTemplates\azuredeploy.json
+  -TemplateFile <path-to-template-or-bicep>
 ```
 
 Для завершения развертывания может потребоваться несколько минут.
 
 ## <a name="deploy-remote-template"></a>Развертывание удаленного шаблона
+
+> [!NOTE]
+> В настоящее время Azure PowerShell не поддерживает развертывание удаленных файлов Бицеп. Чтобы развернуть удаленный файл Бицеп, используйте интерфейс командной строки Бицеп, чтобы сначала скомпилировать файл Бицеп в шаблон JSON.
 
 Вместо того чтобы хранить шаблоны ARM на локальном компьютере, вы можете хранить их во внешнем расположении. Вы можете хранить шаблоны в репозитории системы управления версиями (например, GitHub). А также их можно хранить в учетной записи хранения Azure для общего доступа в организации.
 
@@ -145,6 +150,8 @@ New-AzResourceGroupDeployment `
 
 ## <a name="deploy-template-spec"></a>Развертывание спецификации шаблона
 
+> [!NOTE]
+> В настоящее время Azure PowerShell не поддерживает создание спецификаций шаблонов, предоставляя файлы Бицеп. Однако можно создать файл Бицеп с ресурсом [Microsoft. Resources/темплатеспекс](/azure/templates/microsoft.resources/templatespecs) , чтобы развернуть спецификацию шаблона. Ниже приведен [Пример](https://github.com/Azure/azure-docs-json-samples/blob/master/create-template-spec-using-template/azuredeploy.bicep).
 Вместо развертывания локального или удаленного шаблона можно создать [спецификацию шаблона](template-specs.md). Спецификация шаблона — это ресурс в подписке Azure, который содержит шаблон ARM. Это позволяет легко обеспечить безопасный общий доступ к шаблону для пользователей в вашей организации. Используйте управление доступом на основе ролей Azure (Azure RBAC), чтобы предоставить доступ к спецификации шаблона. Сейчас эта функция доступна в предварительной версии.
 
 В следующих примерах показано, как создать и развернуть спецификацию шаблона.
@@ -187,7 +194,7 @@ New-AzResourceGroupDeployment `
 ```powershell
 $arrayParam = "value1", "value2"
 New-AzResourceGroupDeployment -ResourceGroupName testgroup `
-  -TemplateFile c:\MyTemplates\demotemplate.json `
+  -TemplateFile <path-to-template-or-bicep> `
   -exampleString "inline string" `
   -exampleArray $arrayParam
 ```
@@ -197,7 +204,7 @@ New-AzResourceGroupDeployment -ResourceGroupName testgroup `
 ```powershell
 $arrayParam = "value1", "value2"
 New-AzResourceGroupDeployment -ResourceGroupName testgroup `
-  -TemplateFile c:\MyTemplates\demotemplate.json `
+  -TemplateFile <path-to-template-or-bicep> `
   -exampleString $(Get-Content -Path c:\MyTemplates\stringcontent.txt -Raw) `
   -exampleArray $arrayParam
 ```
@@ -211,13 +218,13 @@ $hash1 = @{ Name = "firstSubnet"; AddressPrefix = "10.0.0.0/24"}
 $hash2 = @{ Name = "secondSubnet"; AddressPrefix = "10.0.1.0/24"}
 $subnetArray = $hash1, $hash2
 New-AzResourceGroupDeployment -ResourceGroupName testgroup `
-  -TemplateFile c:\MyTemplates\demotemplate.json `
+  -TemplateFile <path-to-template-or-bicep> `
   -exampleArray $subnetArray
 ```
 
 ### <a name="parameter-files"></a>Файлы параметров
 
-Вместо передачи параметров в виде встроенных значений в сценарии вам может быть проще использовать JSON-файл, содержащий значения параметров. Файл параметров может быть локальным или храниться во внешнем расположении с доступным адресом URI.
+Вместо передачи параметров в виде встроенных значений в сценарии вам может быть проще использовать JSON-файл, содержащий значения параметров. Файл параметров может быть локальным или храниться во внешнем расположении с доступным адресом URI. Как шаблон ARM, так и файл Бицеп используют файлы параметров JSON.
 
 Дополнительные сведения о файле параметров см. в статье [Создание файла параметров Resource Manager](parameter-files.md).
 
@@ -225,7 +232,7 @@ New-AzResourceGroupDeployment -ResourceGroupName testgroup `
 
 ```powershell
 New-AzResourceGroupDeployment -Name ExampleDeployment -ResourceGroupName ExampleResourceGroup `
-  -TemplateFile c:\MyTemplates\azuredeploy.json `
+  -TemplateFile <path-to-template-or-bicep> `
   -TemplateParameterFile c:\MyTemplates\storage.parameters.json
 ```
 

@@ -11,16 +11,16 @@ author: jpe316
 ms.date: 09/24/2020
 ms.topic: conceptual
 ms.custom: how-to, contperf-fy21q2, devx-track-python, deploy
-ms.openlocfilehash: 39c7d980bf9a90e5f72dfc9366d0ec44204b1ed2
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: e6a58a6555602af2494683037721a1f83e7ea33c
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102212796"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519322"
 ---
 # <a name="deploy-ml-models-to-field-programmable-gate-arrays-fpgas-with-azure-machine-learning"></a>Развертывание моделей машинного обучения в программируемых массивах Gate (FPGA) с Машинное обучение Azure 
 
-В этой статье вы узнаете о FPGA и о том, как развернуть модели машинного обучения в Azure FPGA с помощью [пакета Python для моделей с аппаратным ускорением](/python/api/azureml-accel-models/azureml.accel?preserve-view=true&view=azure-ml-py) из [машинное обучение Azure](overview-what-is-azure-ml.md).
+В этой статье вы узнаете о FPGA и о том, как развернуть модели машинного обучения в Azure FPGA с помощью [пакета Python для моделей с аппаратным ускорением](/python/api/azureml-accel-models/azureml.accel) из [машинное обучение Azure](overview-what-is-azure-ml.md).
 
 ## <a name="what-are-fpgas"></a>Что такое FPGA?
 ППВМ содержат массив программируемых логических блоков и иерархию настраиваемых взаимоподключений. Взаимоподключения позволяют настраивать эти блоки различными способами после производства. В отличие от других микросхем, ППВМ обеспечивают сочетание программируемости и производительности. 
@@ -56,7 +56,7 @@ Azure FPGAs интегрируется с Машинное обучение Azur
 
 ## <a name="deploy-models-on-fpgas"></a>Развертывание моделей в ППВМ
 
-Вы можете развернуть модель как веб-службу на FPGA с помощью [Машинное обучение Azure модели с аппаратным ускорением](/python/api/azureml-accel-models/azureml.accel?preserve-view=true&view=azure-ml-py). Использование FPGA обеспечивает немалое определение задержки, даже с одним размером пакета. 
+Вы можете развернуть модель как веб-службу на FPGA с помощью [Машинное обучение Azure модели с аппаратным ускорением](/python/api/azureml-accel-models/azureml.accel). Использование FPGA обеспечивает немалое определение задержки, даже с одним размером пакета. 
 
 В этом примере вы создадите граф TensorFlow для предварительной обработки входного изображения, сделайте его характеризатора с помощью ResNet 50 для FPGA, а затем запустите эти функции с помощью классификатора, обученного в наборе данных ImageNet. Затем модель развертывается в кластере AKS.
 
@@ -80,7 +80,7 @@ Azure FPGAs интегрируется с Машинное обучение Azur
 
 ### <a name="define-the-tensorflow-model"></a>Определение модели TensorFlow
 
-Начните с использования [пакета SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py) , чтобы создать определение службы. Определение службы представляет собой файл, описывающий конвейер графов (входящие данные, характеризатор и классификатор) на основе TensorFlow. Команда развертывания сжимает определение и графики в ZIP-файл и загружает ZIP-архив в хранилище больших двоичных объектов Azure. DNN уже развернут для запуска в FPGA.
+Начните с использования [пакета SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/intro) , чтобы создать определение службы. Определение службы представляет собой файл, описывающий конвейер графов (входящие данные, характеризатор и классификатор) на основе TensorFlow. Команда развертывания сжимает определение и графики в ZIP-файл и загружает ZIP-архив в хранилище больших двоичных объектов Azure. DNN уже развернут для запуска в FPGA.
 
 1. Рабочая область Машинное обучение Azure нагрузки
 

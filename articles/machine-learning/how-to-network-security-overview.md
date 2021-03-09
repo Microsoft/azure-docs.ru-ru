@@ -11,12 +11,12 @@ author: peterclu
 ms.date: 03/02/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, references_regions, contperf-fy21q1
-ms.openlocfilehash: 1309ad1b3e3f6bd6f9b543959220bf71c569f083
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: fcb678efe29178784c9233e79b307f705c40e3f7
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102175011"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518689"
 ---
 # <a name="virtual-network-isolation-and-privacy-overview"></a>Общие сведения о изоляции и конфиденциальности виртуальной сети
 
@@ -28,7 +28,7 @@ ms.locfileid: "102175011"
 
 **1. Обзор виртуальной сети**  >  [2. Обеспечьте безопасность рабочей области](how-to-secure-workspace-vnet.md)  >  [3. Обеспечьте безопасность среды обучения](how-to-secure-training-vnet.md)  >  [4. Обеспечьте безопасность окружения](how-to-secure-inferencing-vnet.md)  >  [5. Включить функциональные возможности студии](how-to-enable-studio-virtual-network.md)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В этой статье предполагается, что вы знакомы со следующими разделами:
 + [Виртуальные сети Azure](../virtual-network/virtual-networks-overview.md)
@@ -69,9 +69,14 @@ ms.locfileid: "102175011"
 Чтобы защитить рабочую область и связанные с ней ресурсы, выполните следующие действия. Эти действия позволяют службам взаимодействовать в виртуальной сети.
 
 1. Создайте [рабочую область с поддержкой частной связи](how-to-secure-workspace-vnet.md#secure-the-workspace-with-private-endpoint) , чтобы обеспечить взаимодействие между виртуальной сетью и рабочей областью.
-1. Добавьте Azure Key Vault в виртуальную сеть с [конечной точкой службы](../key-vault/general/overview-vnet-service-endpoints.md) или [частной конечной точкой](../key-vault/general/private-link-service.md). Задайте для параметра Key Vault значение ["разрешить доверенным службам Майкрософт обход этого брандмауэра"](how-to-secure-workspace-vnet.md#secure-azure-key-vault).
-1. Добавьте учетную запись хранения Azure в виртуальную сеть с [конечной точкой службы](how-to-secure-workspace-vnet.md#secure-azure-storage-accounts-with-service-endpoints) или [частной конечной точкой](how-to-secure-workspace-vnet.md#secure-azure-storage-accounts-with-private-endpoints).
-1. [Настройка реестра контейнеров Azure для использования частной конечной точки](how-to-secure-workspace-vnet.md#enable-azure-container-registry-acr).
+1. Добавьте следующие службы в виртуальную сеть _, используя_ __конечную точку службы__ или __закрытую конечную точку__. Для доступа к этим службам необходимо также разрешить доверенным службам Майкрософт:
+    
+    | Служба | Сведения о конечных точках | Разрешить надежные сведения |
+    | ----- | ----- | ----- |
+    | __Azure Key Vault__;| [Конечная точка службы](../key-vault/general/overview-vnet-service-endpoints.md)</br>[Частная конечная точка](../key-vault/general/private-link-service.md) | [Разрешить доверенным службам Майкрософт обходить этот брандмауэр](how-to-secure-workspace-vnet.md#secure-azure-key-vault) |
+    | __Учетная запись хранения Azure__ | [Конечная точка службы](how-to-secure-workspace-vnet.md#secure-azure-storage-accounts-with-service-endpoints)</br>[Частная конечная точка](how-to-secure-workspace-vnet.md#secure-azure-storage-accounts-with-private-endpoints) | [Предоставление доступа к доверенным службам Azure](../storage/common/storage-network-security.md#grant-access-to-trusted-azure-services) |
+    | __Реестр контейнеров Azure__ | [Конечная точка службы](how-to-secure-workspace-vnet.md#enable-azure-container-registry-acr)</br>[Частная конечная точка](../container-registry/container-registry-private-link.md) | [Разрешить доверенные службы](../container-registry/allow-access-trusted-services.md) |
+
 
 ![Схема архитектуры, показывающая, как Рабочая область и связанные ресурсы взаимодействуют друг с другом через конечные точки службы или частные конечные точки в виртуальной сети.](./media/how-to-network-security-overview/secure-workspace-resources.png)
 

@@ -8,12 +8,12 @@ ms.date: 01/22/2021
 ms.author: rogarana
 ms.subservice: files
 ms.custom: references_regions, devx-track-azurecli
-ms.openlocfilehash: 778d82cd36e1f7389a443630f0982dd8774fe3ee
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: b085b9991175d8cd43e2dac0db80c5af4e703c34
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/09/2021
-ms.locfileid: "102509206"
+ms.locfileid: "102521243"
 ---
 # <a name="how-to-create-an-nfs-share"></a>Создание общей папки NFS
 Файловые ресурсы Azure — это полностью управляемые общие файловые ресурсы, которые находятся в облаке. В этой статье рассматривается создание общей папки, использующей протокол NFS. Дополнительные сведения об этих протоколах см. в статье [протоколы файловых ресурсов Azure](storage-files-compare-protocols.md).
@@ -192,7 +192,7 @@ az storage account create \
    echo $PSVersionTable.PSVersion.ToString() 
    ```
     
-   Сведения об обновлении версии PowerShell см. в разделе [обновление существующих Windows PowerShell](/powershell/scripting/install/installing-windows-powershell?view=powershell-6&preserve-view=true#upgrading-existing-windows-powershell) .
+   Сведения об обновлении версии PowerShell см. в разделе [обновление существующих Windows PowerShell](/powershell/scripting/install/installing-windows-powershell#upgrading-existing-windows-powershell) .
     
 1. Установите последнюю версию модуля PowershellGet.
 

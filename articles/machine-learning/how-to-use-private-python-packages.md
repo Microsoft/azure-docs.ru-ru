@@ -10,12 +10,12 @@ ms.service: machine-learning
 ms.subservice: core
 ms.topic: conceptual
 ms.date: 07/10/2020
-ms.openlocfilehash: 6a722746c8e06a691e702b095d3081f1530645de
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.openlocfilehash: b922c25561843d140f1e2b8221f62fad89ea00c8
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93318923"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520903"
 ---
 # <a name="use-private-python-packages-with-azure-machine-learning"></a>Использование частных пакетов Python с Машинное обучение Azure
 
@@ -29,14 +29,14 @@ ms.locfileid: "93318923"
 
 Частные пакеты используются через класс [среды](/python/api/azureml-core/azureml.core.environment.environment) . В среде вы объявляете, какие пакеты Python следует использовать, включая частные. Дополнительные сведения о среде в Машинное обучение Azure см. в разделе [использование сред](how-to-use-environments.md). 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
- * [Пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py)
+ * [Пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/install)
  * [Рабочая область машинное обучение Azure](how-to-manage-workspace.md)
 
 ## <a name="use-small-number-of-packages-for-development-and-testing"></a>Использование небольшого числа пакетов для разработки и тестирования
 
-Для небольшого числа частных пакетов в одной рабочей области используйте статический [`Environment.add_private_pip_wheel()`](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py#&preserve-view=trueadd-private-pip-wheel-workspace--file-path--exist-ok-false-) метод. Такой подход позволяет быстро добавить в рабочую область частный пакет, который хорошо подходит для целей разработки и тестирования.
+Для небольшого числа частных пакетов в одной рабочей области используйте статический [`Environment.add_private_pip_wheel()`](/python/api/azureml-core/azureml.core.environment.environment#add-private-pip-wheel-workspace--file-path--exist-ok-false-) метод. Такой подход позволяет быстро добавить в рабочую область частный пакет, который хорошо подходит для целей разработки и тестирования.
 
 Укажите аргумент пути к файлу в локальном файле колеса и выполните ```add_private_pip_wheel``` команду. Команда возвращает URL-адрес, используемый для наблюдения за расположением пакета в рабочей области. Запишите URL-адрес хранилища и передайте ему `add_pip_package()` метод.
 
@@ -58,7 +58,7 @@ myenv.python.conda_dependencies=conda_dep
 
  1. [Создайте личный маркер доступа (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?preserve-view=true&tabs=preview-page&view=azure-devops#create-a-pat) для своего экземпляра Azure DevOps. Задайте область токена для __упаковки > чтения__. 
 
- 2. Добавьте URL-адрес Azure DevOps и PAT в качестве свойств рабочей области с помощью метода [Workspace.set_connection](/python/api/azureml-core/azureml.core.workspace.workspace?preserve-view=true&view=azure-ml-py#&preserve-view=trueset-connection-name--category--target--authtype--value-) .
+ 2. Добавьте URL-адрес Azure DevOps и PAT в качестве свойств рабочей области с помощью метода [Workspace.set_connection](/python/api/azureml-core/azureml.core.workspace.workspace#set-connection-name--category--target--authtype--value-) .
 
      ```python
     from azureml.core import Workspace

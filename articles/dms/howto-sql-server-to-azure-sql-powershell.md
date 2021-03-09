@@ -12,12 +12,12 @@ ms.workload: data-services
 ms.custom: seo-lt-2019, devx-track-azurepowershell
 ms.topic: how-to
 ms.date: 02/20/2020
-ms.openlocfilehash: 87505557653e70aab7f1392aeea8dbdf505327e0
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: a8f7e14500fb377b46f651b53e2704d8477aea7a
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94962762"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520665"
 ---
 # <a name="migrate-a-sql-server-database-to-azure-sql-database-using-azure-powershell"></a>Перенос базы данных SQL Server в базу данных SQL Azure с помощью Azure PowerShell
 
@@ -31,7 +31,7 @@ ms.locfileid: "94962762"
 > * создание проекта миграции в экземпляре Azure Database Migration Service;
 > * выполнение миграции.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для выполнения этих действий вам потребуется следующее:
 
@@ -42,7 +42,7 @@ ms.locfileid: "94962762"
 * [Помощник по миграции данных](https://www.microsoft.com/download/details.aspx?id=53595) 3.3 или более поздней версии.
 * Чтобы создать виртуальная сеть Microsoft Azure с помощью модели развертывания Azure Resource Manager, которая предоставляет Azure Database Migration Service с подключением типа "сеть — сеть" к локальным исходным серверам с помощью [ExpressRoute](../expressroute/expressroute-introduction.md) или [VPN](../vpn-gateway/vpn-gateway-about-vpngateways.md).
 * Чтобы выполнить оценку локальной базы данных и миграции схемы с помощью Помощник по миграции данных, как описано в статье [выполнение SQL Serverной оценки миграции](/sql/dma/dma-assesssqlonprem) .
-* Чтобы скачать и установить модуль AZ. Migration из коллекция PowerShell, используйте [командлет PowerShell Install-Module](/powershell/module/powershellget/Install-Module?view=powershell-5.1). не забудьте открыть командное окно PowerShell с помощью команды Запуск от имени администратора.
+* Чтобы скачать и установить модуль AZ. Migration из коллекция PowerShell, используйте [командлет PowerShell Install-Module](/powershell/module/powershellget/Install-Module). не забудьте открыть командное окно PowerShell с помощью команды Запуск от имени администратора.
 * Убедитесь, что учетные данные, используемые для подключения к исходному экземпляру SQL Server, имеют разрешение [CONTROL SERVER](/sql/t-sql/statements/grant-server-permissions-transact-sql).
 * Убедитесь, что учетные данные, используемые для подключения к целевому экземпляру Базы данных SQL Azure, имеют разрешение на управление базами данных в целевой базе данных SQL Azure.
 * Подписка Azure. Если у вас ее нет, создайте [бесплатную](https://azure.microsoft.com/free/) учетную запись, прежде чем начинать работу.
@@ -254,6 +254,6 @@ if (($mytask.ProjectTask.Properties.State -eq "Running") -or ($mytask.ProjectTas
 Remove-AzDms -ResourceGroupName myResourceGroup -ServiceName MyDMS
 ```
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Дальнейшие действия
 
 * Просмотрите [руководство по миграции базы данных Майкрософт](https://datamigration.microsoft.com/).

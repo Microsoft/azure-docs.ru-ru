@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: TimothyMothra
 ms.author: tilee
 ms.date: 04/23/2019
-ms.openlocfilehash: 2a955273c01d8c0d865aabd91bb1bfcce70fd373
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 29922f088a51e4876e5e2ec8fe87c3bbce4482f3
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100587378"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521685"
 ---
 # <a name="application-insights-agent-formerly-named-status-monitor-v2-detailed-instructions"></a>Агент Application Insights (прежнее название — монитор состояния v2): подробные инструкции
 
@@ -29,7 +29,7 @@ ms.locfileid: "100587378"
 Для внесения изменений на компьютер PowerShell требуются разрешения уровня администратора.
 ### <a name="execution-policy"></a>Политика выполнения
 - Описание: по умолчанию запуск сценариев PowerShell отключен. Рекомендуется разрешить скрипты RemoteSigned только для текущей области.
-- Справочник: [Общие сведения о политиках выполнения](/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-6) и [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6).
+- Справочник: [Общие сведения о политиках выполнения](/powershell/module/microsoft.powershell.core/about/about_execution_policies) и [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy).
 - Команда: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process` .
 - Необязательный параметр:
     - `-Force`. Обход запроса подтверждения.
@@ -71,14 +71,14 @@ SerializationVersion           1.1.0.1
 Эти действия приводят к подготовке сервера к скачиванию модулей из коллекция PowerShell.
 
 > [!NOTE] 
-> Коллекция PowerShell поддерживается в Windows 10, Windows Server 2016 и PowerShell 6.
+> Коллекция PowerShell поддерживается в Windows 10, Windows Server 2016 и PowerShell 6 +.
 > Дополнительные сведения о более ранних версиях см. в разделе [Установка PowerShellGet](/powershell/scripting/gallery/installing-psget).
 
 
 1. Запустите PowerShell от имени администратора с политикой выполнения с повышенными правами.
 2. Установите поставщик пакетов NuGet.
     - Описание. Этот поставщик необходим для взаимодействия с репозиториями на основе NuGet, например коллекция PowerShell.
-    - Ссылка: [Install-PackageProvider](/powershell/module/packagemanagement/install-packageprovider?view=powershell-6).
+    - Ссылка: [Install-PackageProvider](/powershell/module/packagemanagement/install-packageprovider).
     - Команда: `Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201` .
     - Дополнительные параметры:
         - `-Proxy`. Указывает прокси-сервер для запроса.
@@ -98,7 +98,7 @@ SerializationVersion           1.1.0.1
 
 3. Настройте коллекция PowerShell как доверенный репозиторий.
     - Описание: по умолчанию коллекция PowerShell является недоверенным репозиторием.
-    - Ссылка: [Set-PSRepository](/powershell/module/powershellget/set-psrepository?view=powershell-6).
+    - Ссылка: [Set-PSRepository](/powershell/module/powershellget/set-psrepository).
     - Команда: `Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted` .
     - Необязательный параметр:
         - `-Proxy`. Указывает прокси-сервер для запроса.
@@ -144,7 +144,7 @@ SerializationVersion           1.1.0.1
 1. Убедитесь, что выполнены все необходимые условия для коллекция PowerShell.
 2. Запустите PowerShell от имени администратора с политикой выполнения с повышенными правами.
 3. Установите модуль AZ. Аппликатионмонитор.
-    - Ссылка: [Install-Module](/powershell/module/powershellget/install-module?view=powershell-6).
+    - Ссылка: [Install-Module](/powershell/module/powershellget/install-module).
     - Команда: `Install-Module -Name Az.ApplicationMonitor` .
     - Дополнительные параметры:
         - `-Proxy`. Указывает прокси-сервер для запроса.
@@ -170,7 +170,7 @@ SerializationVersion           1.1.0.1
 #### <a name="unzip-nupkg-as-a-zip-file-by-using-expand-archive-v1010"></a>Распакуйте nupkg как ZIP-файл с помощью Expand-Archive (v 1.0.1.0)
 
 - Описание: Базовая версия Microsoft. PowerShell. Archive (v 1.0.1.0) не может распаковать файлы nupkg. Переименуйте файл с расширением ZIP.
-- Ссылка: [разверните-Archive](/powershell/module/microsoft.powershell.archive/expand-archive?view=powershell-6).
+- Ссылка: [разверните-Archive](/powershell/module/microsoft.powershell.archive/expand-archive).
 - Команда:
 
     ```console
@@ -184,7 +184,7 @@ SerializationVersion           1.1.0.1
 #### <a name="unzip-nupkg-by-using-expand-archive-v1100"></a>Распакуйте nupkg с помощью Expand-Archive (v 1.1.0.0)
 
 - Описание: Используйте текущую версию Expand-Archive для распаковки файлов nupkg без изменения расширения.
-- Ссылка: [разверните узел Archive](/powershell/module/microsoft.powershell.archive/expand-archive?view=powershell-6) и [Microsoft. PowerShell. Archive](https://www.powershellgallery.com/packages/Microsoft.PowerShell.Archive/1.1.0.0).
+- Ссылка: [разверните узел Archive](/powershell/module/microsoft.powershell.archive/expand-archive) и [Microsoft. PowerShell. Archive](https://www.powershellgallery.com/packages/Microsoft.PowerShell.Archive/1.1.0.0).
 - Команда:
 
     ```console
@@ -197,7 +197,7 @@ SerializationVersion           1.1.0.1
 Установите модуль PowerShell, загруженный вручную, в каталог PowerShell, чтобы он был обнаружен сеансами PowerShell.
 Дополнительные сведения см. [в разделе Установка модуля PowerShell](/powershell/scripting/developer/module/installing-a-powershell-module).
 
-Если вы устанавливаете модуль в любой другой каталог, вручную Импортируйте модуль с помощью [Import-Module](/powershell/module/microsoft.powershell.core/import-module?view=powershell-6).
+Если вы устанавливаете модуль в любой другой каталог, вручную Импортируйте модуль с помощью [Import-Module](/powershell/module/microsoft.powershell.core/import-module).
 
 > [!IMPORTANT] 
 > Библиотеки DLL будут устанавливаться через относительные пути.
@@ -227,7 +227,7 @@ SerializationVersion           1.1.0.1
 
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
  Просмотр телеметрии:
 

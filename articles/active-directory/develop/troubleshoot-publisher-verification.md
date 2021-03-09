@@ -13,12 +13,12 @@ ms.date: 01/28/2021
 ms.author: ryanwi
 ms.custom: aaddev
 ms.reviewer: jesakowi
-ms.openlocfilehash: 9ae5d2279baab69d762a71b2f6400009747c16fe
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: acce282dcaac971716a97d7722543d78e28b7a34
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99584219"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102517673"
 ---
 # <a name="troubleshoot-publisher-verification"></a>Устранение неполадок с проверкой издателя
 Если не удается завершить процесс или возникло непредвиденное поведение при [проверке издателя](publisher-verification-overview.md), следует начать с следующих действий, если возникают ошибки или возникает непредвиденное поведение. 
@@ -241,7 +241,7 @@ HTTP/1.1 200 OK
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Если вы проверили все предыдущие сведения и по-прежнему получаете сообщение об ошибке от Microsoft Graph, соберите как можно больше указанных ниже сведений, связанных с неудачным запросом, и [обратитесь в службу поддержки Майкрософт](developer-support-help-options.md#open-a-support-request).
+Если вы проверили все предыдущие сведения и по-прежнему получаете сообщение об ошибке от Microsoft Graph, соберите как можно больше указанных ниже сведений, связанных с неудачным запросом, и [обратитесь в службу поддержки Майкрософт](developer-support-help-options.md#create-an-azure-support-request).
 
 - Отметка времени 
 - CorrelationId 

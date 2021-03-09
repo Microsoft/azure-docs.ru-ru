@@ -10,12 +10,12 @@ ms.custom: how-to, devx-track-azurecli, devx-track-azurepowershell
 ms.author: larryfr
 author: Blackmist
 ms.date: 09/30/2020
-ms.openlocfilehash: 98ea51957014a4e9d83f27adefd86d8d0708b500
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 9df8a67fd3dfbf23986f1cc5ed18392463fc7ecb
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/09/2021
-ms.locfileid: "102503187"
+ms.locfileid: "102522212"
 ---
 # <a name="use-an-azure-resource-manager-template-to-create-a-workspace-for-azure-machine-learning"></a>Создание рабочей области для Машинного обучения Azure с помощью шаблона Azure Resource Manager
 
@@ -32,12 +32,7 @@ ms.locfileid: "102503187"
 
 * Чтобы использовать шаблон из командной строки, вам потребуется [Azure PowerShell](/powershell/azure/) или [Azure CLI](/cli/azure/install-azure-cli).
 
-* Для некоторых сценариев требуется открыть запрос в службу поддержки. Они приведены ниже.
-
-    * __Рабочая область с поддержкой Приватного канала с ключом, управляемым клиентом__
-    * __Реестр контейнеров Azure для рабочей области, находящейся за виртуальной сетью__
-
-    Дополнительные сведения см. в статье [Управление квотами и их увеличение](how-to-manage-quotas.md#private-endpoint-and-private-dns-quota-increases).
+* Для некоторых сценариев требуется открыть запрос в службу поддержки. Например, с помощью рабочей области с включенной частной связью с ключом, управляемым клиентом. Дополнительные сведения см. в статье [Управление квотами и их увеличение](how-to-manage-quotas.md#private-endpoint-and-private-dns-quota-increases).
 
 ## <a name="limitations"></a>Ограничения
 

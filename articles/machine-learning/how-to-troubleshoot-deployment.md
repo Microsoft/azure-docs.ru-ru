@@ -10,12 +10,12 @@ ms.author: gopalv
 ms.date: 11/25/2020
 ms.topic: troubleshooting
 ms.custom: contperf-fy20q4, devx-track-python, deploy, contperf-fy21q2
-ms.openlocfilehash: 1a7116f0edbed8270a3345bc924bf50872615b04
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 8bec083e62bec6a0311487c1e64e780ad14f451b
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102217165"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518269"
 ---
 # <a name="troubleshooting-remote-model-deployment"></a>Устранение неполадок при удаленном развертывании моделей 
 
@@ -32,7 +32,7 @@ ms.locfileid: "102217165"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * **Подписка Azure**. Попробуйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree).
-* [Пакет SDK для Машинного обучения Azure](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py).
+* [Пакет SDK для Машинного обучения Azure](/python/api/overview/azure/ml/install).
 * [Интерфейс командной строки Azure](/cli/azure/install-azure-cli).
 * [Расширение CLI для Машинного обучения Azure](reference-azure-machine-learning-cli.md).
 
@@ -99,7 +99,7 @@ print(service.get_logs())
 
 ## <a name="function-fails-get_model_path"></a>Ошибка выполнения функции: get_model_path()
 
-Часто в рамках функции `init()` в скрипте оценки вызывается функция [Model.get_model_path()](/python/api/azureml-core/azureml.core.model.model?preserve-view=true&view=azure-ml-py#&preserve-view=trueget-model-path-model-name--version-none---workspace-none-), чтобы найти файл модели или папку с файлами модели в контейнере. Если файл или папку модели найти не удается, происходит сбой функции. Самый простой способ устранить эту ошибку — это выполнить приведенный ниже код Python в оболочке контейнера.
+Часто в рамках функции `init()` в скрипте оценки вызывается функция [Model.get_model_path()](/python/api/azureml-core/azureml.core.model.model#get-model-path-model-name--version-none---workspace-none-), чтобы найти файл модели или папку с файлами модели в контейнере. Если файл или папку модели найти не удается, происходит сбой функции. Самый простой способ устранить эту ошибку — это выполнить приведенный ниже код Python в оболочке контейнера.
 
 ```python
 from azureml.core.model import Model
@@ -177,7 +177,7 @@ def run(input_data):
     > [!NOTE]
     > Если пики запроса будут превышать новое минимальное количество реплик, снова отобразится код 503. Например, по мере увеличения трафика, поступающего в вашу службу, может потребоваться увеличение минимального количества реплик.
 
-Дополнительные сведения о настройке `autoscale_target_utilization`, `autoscale_max_replicas` и `autoscale_min_replicas` см. на [этой странице](/python/api/azureml-core/azureml.core.webservice.akswebservice?preserve-view=true&view=azure-ml-py).
+Дополнительные сведения о настройке `autoscale_target_utilization`, `autoscale_max_replicas` и `autoscale_min_replicas` см. на [этой странице](/python/api/azureml-core/azureml.core.webservice.akswebservice).
 
 ## <a name="http-status-code-504"></a>Код состояния HTTP 504
 
