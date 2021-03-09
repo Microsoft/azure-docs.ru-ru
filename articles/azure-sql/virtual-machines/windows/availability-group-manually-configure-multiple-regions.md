@@ -15,12 +15,12 @@ ms.workload: iaas-sql-server
 ms.date: 05/02/2017
 ms.author: mathoma
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 314404ef132c55a783ce4d2d0069eb8a930439a1
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 7ef3535158c99226da135ad3726266023ac0690f
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101691456"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102509410"
 ---
 # <a name="configure-a-sql-server-always-on-availability-group-across-different-azure-regions"></a>Настройка группы доступности Always On SQL Server в разных регионах Azure
 
@@ -204,4 +204,4 @@ ms.locfileid: "101691456"
 * [Группы доступности AlwaysOn](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server)
 * [Виртуальные машины Azure](../../../virtual-machines/index.yml)
 * [Подсистемы Azure Load Balancer](availability-group-manually-configure-tutorial.md#configure-internal-load-balancer)
-* [Группы доступности Azure](../../../virtual-machines/manage-availability.md)
+* [Группы доступности Azure](../../../virtual-machines/availability.md)

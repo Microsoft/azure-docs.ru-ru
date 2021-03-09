@@ -8,12 +8,12 @@ ms.date: 09/10/2020
 ms.topic: conceptual
 ms.service: storage
 ms.subservice: queues
-ms.openlocfilehash: 1a73b56c5ed8b15b9bbcf344e91fdd5fdf4b78cc
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.openlocfilehash: 609649c533b184b2ccc3d3a5fee79d75d1b66f5b
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97592201"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102506690"
 ---
 # <a name="azure-queue-storage-reference"></a>Справочник по хранилищу очередей Azure
 
@@ -25,7 +25,7 @@ ms.locfileid: "97592201"
 
 |  Version  | Справочная документация | Пакет | Краткое руководство |
 | :-------: | ----------------------- | ------- | ---------- |
-| 12.x | [Пространство имен Azure. Storage. Queues](/dotnet/api/azure.storage.queues) | [Пакет (NuGet)](https://www.nuget.org/packages/azure.storage.queues/) | [Краткое руководство. Клиентская библиотека хранилища очередей Azure версии 12 для .NET](./storage-quickstart-queues-dotnet.md) |
+| 12.x | [Пространство имен Azure. Storage. Queues](/dotnet/api/azure.storage.queues) | [Пакет (NuGet)](https://www.nuget.org/packages/azure.storage.queues/) | [Краткое руководство. Использование клиентской библиотеки Хранилища очередей Azure версии 12 для .NET](./storage-quickstart-queues-dotnet.md) |
 | 11. x | [Пространство имен Microsoft. Azure. Storage. Queue](/dotnet/api/microsoft.azure.storage.queue) | [Пакет (NuGet)](https://www.nuget.org/packages/microsoft.azure.storage.queue/) | [Краткое руководство. Использование пакета SDK службы хранилища Azure версии 11 для .NET, чтобы управлять очередью](./storage-quickstart-queues-dotnet-legacy.md) |
 
 ### <a name="storage-management"></a>Управление хранением
@@ -50,7 +50,7 @@ ms.locfileid: "97592201"
 
 |  Version  | Справочная документация | Пакет | Краткое руководство |
 | :-------: | ----------------------- | ------- | ---------- |
-| 12.x | [Клиентская библиотека хранилища очередей Azure версии 12 для Java](/java/api/overview/azure/storage-queue-readme) | [Пакет (Maven)](https://mvnrepository.com/artifact/com.azure/azure-storage-queue) | [Краткое руководство. Клиентская библиотека хранилища очередей Azure версии 12 для Java](./storage-quickstart-queues-java.md) |
+| 12.x | [Клиентская библиотека хранилища очередей Azure версии 12 для Java](/java/api/overview/azure/storage-queue-readme) | [Пакет (Maven)](https://mvnrepository.com/artifact/com.azure/azure-storage-queue) | [Краткое руководство. Использование клиентской библиотеки Хранилища очередей Azure версии 12 для Java](./storage-quickstart-queues-java.md) |
 | 8.x | [`com.microsoft.azure.storage.queue` имен](/java/api/com.microsoft.azure.storage.queue) | [Пакет (Maven)](https://mvnrepository.com/artifact/com.microsoft.azure/azure-storage) | [Краткое руководство. Управление большими двоичными объектами с помощью пакета SDK для Java версии 8](../blobs/storage-quickstart-blobs-java-legacy.md) |
 
 ### <a name="storage-management"></a>Управление хранением
@@ -67,7 +67,7 @@ ms.locfileid: "97592201"
 
 |  Version  | Справочная документация | Пакет | Краткое руководство |
 | :-------: | ----------------------- | ------- | ---------- |
-| 12.x | [Клиентская библиотека службы хранилища Azure версии 12 для Python](/azure/developer/python/sdk/storage/overview) | [Пакет (PyPI)](https://pypi.org/project/azure-storage-queue/) | [Краткое руководство. Клиентская библиотека хранилища очередей Azure версии 12 для Python](./storage-quickstart-queues-python.md) |
+| 12.x | [Клиентская библиотека службы хранилища Azure версии 12 для Python](/azure/developer/python/sdk/storage/overview) | [Пакет (PyPI)](https://pypi.org/project/azure-storage-queue/) | [Краткое руководство. Клиентская библиотека Хранилища очередей Azure версии 12 для Python](./storage-quickstart-queues-python.md) |
 | 2.x | [Клиентская библиотека службы хранилища Azure версии 2 для Python](/azure/developer/python/sdk/storage/overview?view=storage-py-v2&preserve-view=true) | [Пакет (PyPI)](https://pypi.org/project/azure-storage-queue/2.1.0/) | [Как использовать хранилище очередей Azure версии 2.1 из Python](./storage-python-how-to-use-queue-storage.md) |
 
 ## <a name="javascript-client-libraries"></a>Клиентские библиотеки JavaScript
@@ -76,7 +76,7 @@ ms.locfileid: "97592201"
 
 |  Version  | Справочная документация | Пакет | Краткое руководство |
 | :-------: | ----------------------- | ------- | ---------- |
-| 12.x | [Клиентская библиотека хранилища очередей Azure версии 12 для JavaScript](/javascript/api/overview/azure/storage-queue-readme) | [Пакет (npm)](https://www.npmjs.com/package/@azure/storage-queue) | [Краткое руководство. Клиентская библиотека хранилища очередей Azure версии 12 для JavaScript](./storage-quickstart-queues-nodejs.md) |
+| 12.x | [Клиентская библиотека хранилища очередей Azure версии 12 для JavaScript](/javascript/api/overview/azure/storage-queue-readme) | [Пакет (npm)](https://www.npmjs.com/package/@azure/storage-queue) | [Краткое руководство. Использование клиентской библиотеки Хранилища очередей Azure версии 12 для JavaScript](./storage-quickstart-queues-nodejs.md) |
 | 10.x | [`@azure/storage-queue`](/javascript/api/@azure/storage-queue/?view=azure-node-legacy&preserve-view=true) | [Пакет (npm)](https://www.npmjs.com/package/@azure/storage-queue/v/10.3.0) | [Использование хранилища очередей Azure для создания и удаления очередей из Node.js](./storage-nodejs-how-to-use-queues.md) |
 
 ## <a name="rest-apis"></a>Интерфейсы REST API
@@ -85,7 +85,7 @@ ms.locfileid: "97592201"
 
 | Справочная документация | Обзор |
 | ----------------------- | -------- |
-| [Справочник по REST API хранилища очередей](/rest/api/storageservices/queue-service-rest-api) | [Основные понятия хранилища очередей](/rest/api/storageservices/queue-service-concepts) |
+| [Справочник по REST API хранилища очередей](/rest/api/storageservices/queue-service-rest-api) | [Основные понятия службы "Хранилища очередей"](/rest/api/storageservices/queue-service-concepts) |
 
 ### <a name="other-rest-reference"></a>Другая ссылка на остальные элементы
 
@@ -107,7 +107,7 @@ ms.locfileid: "97592201"
 
 | Version | Платформа |
 | ------- | -------- |
-|  4.x | [PowerShell](/powershell/module/az.storage/?view=azps-4.6.1&preserve-view=true) |
+|  4.x | [PowerShell](/powershell/module/az.storage/?view=azps-4.8.0&preserve-view=true) |
 |  3.x | [PowerShell](/powershell/module/az.storage/?view=azps-3.8.0&preserve-view=true) |
 |  2.x | [PowerShell](/powershell/module/az.storage/?view=azps-2.8.0&preserve-view=true) |
 

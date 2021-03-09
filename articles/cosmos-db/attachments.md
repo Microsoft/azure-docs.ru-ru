@@ -8,15 +8,15 @@ ms.subservice: cosmosdb-sql
 ms.topic: conceptual
 ms.date: 08/07/2020
 ms.reviewer: sngun
-ms.openlocfilehash: 55d110501d5e0273ebf8cbc666920cacb87cf5cf
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 455fdc7615e0909189f311755571d02a9acca24e
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102434990"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501997"
 ---
 # <a name="azure-cosmos-db-attachments"></a>Azure Cosmos DB вложения
-[!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
+[!INCLUDE[appliesto-sql-api](includes/appliesto-sql-mongodb-api.md)]
 
 Azure Cosmos DB вложения — это специальные элементы, содержащие ссылки на связанные метаданные с внешним BLOB-объектом или файлом мультимедиа.
 
@@ -40,6 +40,11 @@ Azure Cosmos DB поддерживает два типа вложений:
 - Вложения не поддерживаются во всех версиях пакетов SDK для Azure Cosmos DB.
 - Объем управляемых вложений ограничен 2 ГБ на учетную запись базы данных.
 - Управляемые вложения несовместимы с глобальным распределением Azure Cosmos DB, и они не реплицируются в разных регионах.
+
+> [!NOTE]
+> Azure Cosmos DB API для MongoDB версии 3,2 использует управляемые вложения для Гридфс, что, таким образом, подчиняется тем же ограничениям, что и управляемые вложения Azure Cosmos DB.
+>
+> Мы рекомендуем разработчикам использовать набор функций MongoDB Гридфс для обновления до Azure Cosmos DB API для MongoDB версии 3,6 или более поздней, который отделен от вложений и обеспечивает более надежную и надежную работу. Кроме того, разработчики, использующие набор функций MongoDB Гридфс, также должны подумать об использовании хранилища BLOB-объектов Azure, которое предназначено для хранения содержимого большого двоичного объекта и предлагает расширенные функциональные возможности с меньшими затратами по сравнению с Гридфс.
 
 ## <a name="migrating-attachments-to-azure-blob-storage"></a>Миграция вложений в хранилище BLOB-объектов Azure
 

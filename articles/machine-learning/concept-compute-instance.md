@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.author: sgilley
 author: sdgilley
 ms.date: 10/02/2020
-ms.openlocfilehash: ef753043218f259c69082dbb8682517be79cf95c
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: e4f6db9e462f937d44bc0e1dbc2d3c4d3e915ba3
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100099801"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102503646"
 ---
 # <a name="what-is-an-azure-machine-learning-compute-instance"></a>Сведения о вычислительном экземпляре Машинного обучения Azure
 
@@ -77,7 +77,7 @@ ms.locfileid: "100099801"
 |Anaconda Python||
 |Jupyter и расширения||
 |Jupyterlab и расширения||
-[Пакет SDK службы "Машинное обучение Azure" для Python](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py)</br>из PyPI|Включает большинство дополнительных пакетов azureml.  Чтобы просмотреть полный список, [откройте окно терминала в вычислительном экземпляре](how-to-access-terminal.md) и выполните команду <br/> `conda list -n azureml_py36 azureml*` |
+[Пакет SDK службы "Машинное обучение Azure" для Python](/python/api/overview/azure/ml/intro)</br>из PyPI|Включает большинство дополнительных пакетов azureml.  Чтобы просмотреть полный список, [откройте окно терминала в вычислительном экземпляре](how-to-access-terminal.md) и выполните команду <br/> `conda list -n azureml_py36 azureml*` |
 |Другие пакеты PyPI|`jupytext`</br>`tensorboard`</br>`nbconvert`</br>`notebook`</br>`Pillow`|
 |Пакеты Conda|`cython`</br>`numpy`</br>`ipykernel`</br>`scikit-learn`</br>`matplotlib`</br>`tqdm`</br>`joblib`</br>`nodejs`</br>`nb_conda_kernels`|
 |Пакеты глубокого обучения|`PyTorch`</br>`TensorFlow`</br>`Keras`</br>`Horovod`</br>`MLFlow`</br>`pandas-ml`</br>`scrapbook`|

@@ -4,12 +4,12 @@ description: Применяйте собственные ключи (BYOK), чт
 services: container-service
 ms.topic: article
 ms.date: 09/01/2020
-ms.openlocfilehash: 60a7e36039500ccb8a46fd1f5998c23c37174689
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 4b1c311132cc812ccb2bbbc95c4b7414b108008c
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98728141"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102499209"
 ---
 # <a name="bring-your-own-keys-byok-with-azure-disks-in-azure-kubernetes-service-aks"></a>Перенесите собственные ключи (BYOK) с помощью дисков Azure в службе Kubernetes Azure (AKS)
 
@@ -19,7 +19,7 @@ ms.locfileid: "98728141"
 * Поддержка шифрования дисков данных ограничена кластерами AKS, работающими под управлением Kubernetes версии 1,17 и выше.
 * Шифрование ОС и диска данных с ключами, управляемыми клиентом, можно включить только при создании кластера AKS.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 * Необходимо включить обратимое удаление и очистку для *Azure Key Vault* при использовании Key Vault для шифрования управляемых дисков.
 * Требуется Azure CLI версии 2.11.1 или более поздней.
 
@@ -93,7 +93,7 @@ az aks create -n myAKSCluster -g myResourceGroup --node-osdisk-diskencryptionset
 Ключ шифрования диска ОС будет использоваться для шифрования диска данных, если ключ не предоставлен для диска данных из v 1.17.2, а также можно зашифровать диски данных AKS с помощью других ключей.
 
 > [!IMPORTANT]
-> Убедитесь, что у вас есть правильные учетные данные AKS. Субъекту-службе потребуется доступ участника к группе ресурсов, в которой развернута дискенкриптионсет. В противном случае возникнет ошибка, предлагающая, что у субъекта-службы нет разрешений.
+> Убедитесь, что у вас есть правильные учетные данные AKS. Управляемому удостоверению потребуется доступ участника к группе ресурсов, в которой развернута дискенкриптионсет. В противном случае появится сообщение об ошибке с предложением о том, что у управляемого удостоверения нет разрешений.
 
 ```azurecli-interactive
 # Retrieve your Azure Subscription Id from id property as shown below
@@ -141,7 +141,7 @@ az aks get-credentials --name myAksCluster --resource-group myResourceGroup --ou
 kubectl apply -f byok-azure-disk.yaml
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Ознакомьтесь с рекомендациями [по безопасности кластера AKS][best-practices-security]
 

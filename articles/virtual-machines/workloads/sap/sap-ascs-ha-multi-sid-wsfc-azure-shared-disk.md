@@ -16,12 +16,12 @@ ms.workload: infrastructure-services
 ms.date: 08/12/2020
 ms.author: radeltch
 ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: 8b216fafad5cd2f7406320dce3ec28b8830015d7
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: cef0630cfc7ec7d080073085e577153ae7a47ecf
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101673752"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102504462"
 ---
 # <a name="sap-ascsscs-instance-multi-sid-high-availability-with-windows-server-failover-clustering-and-azure-shared-disk"></a>Высокий уровень доступности экземпляра SAP ASCS/SCS с несколькими ИД безопасности с помощью отказоустойчивой кластеризации Windows Server и общего диска Azure
 
@@ -103,11 +103,11 @@ ms.locfileid: "101673752"
 | --- | --- | --- |---| ---|
 | 1-й кластер узлов кластера ASCS/SCS |PR1-ASCS-10 |10.0.0.4 |PR1-ASCS-avset |PR1PPG |
 | кластер ASCS/SCS второго узла кластера |PR1-ASCS-11 |10.0.0.5 |PR1-ASCS-avset |PR1PPG |
-| Сетевое имя кластера | pr1clust |10.0.0.42 (**только** для кластера Win 2016) | Н/Д | Н/Д |
-| **SID1** Сетевое имя кластера ASCS | PR1 — аскскл |10.0.0.43 | Н/Д | Н/Д |
-| **SID1** Сетевое имя кластера ERS (**только** для ERS2) | PR1 — ерскл |10.0.0.44 | Н/Д | Н/Д |
-| **SID2** Сетевое имя кластера ASCS | PR2 — аскскл |10.0.0.45 | Н/Д | Н/Д |
-| **SID2** Сетевое имя кластера ERS (**только** для ERS2) | PR1 — ерскл |10.0.0.46 | Н/Д | Н/Д |
+| Сетевое имя кластера | pr1clust |10.0.0.42 (**только** для кластера Win 2016) | Недоступно | Недоступно |
+| **SID1** Сетевое имя кластера ASCS | PR1 — аскскл |10.0.0.43 | Недоступно | Недоступно |
+| **SID1** Сетевое имя кластера ERS (**только** для ERS2) | PR1 — ерскл |10.0.0.44 | Недоступно | Недоступно |
+| **SID2** Сетевое имя кластера ASCS | PR2 — аскскл |10.0.0.45 | Недоступно | Недоступно |
+| **SID2** Сетевое имя кластера ERS (**только** для ERS2) | PR1 — ерскл |10.0.0.46 | Недоступно | Недоступно |
 
 ### <a name="create-azure-internal-load-balancer"></a>Создание внутренней подсистемы балансировки нагрузки Azure
 
@@ -666,4 +666,4 @@ SAP ASCS, SAP SCS и New SAP ERS2 используют виртуальное и
 
 [virtual-machines-azure-resource-manager-architecture-benefits-arm]:../../../azure-resource-manager/management/overview.md#the-benefits-of-using-resource-manager
 
-[virtual-machines-manage-availability]:../../virtual-machines-windows-manage-availability.md
+[virtual-machines-manage-availability]:../../availability.md

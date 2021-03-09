@@ -3,12 +3,12 @@ title: Матрица поддержки для центра архивации
 description: В этой статье перечислены сценарии, поддерживаемые центром архивации для каждого типа рабочей нагрузки.
 ms.topic: conceptual
 ms.date: 09/07/2020
-ms.openlocfilehash: aedf2d071c4f38d2d873383409c11abdf3c0c72d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: d6e5d34e201edda4fd1e9fda85f210fb88211e28
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101700241"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102504513"
 ---
 # <a name="support-matrix-for-backup-center"></a>Матрица поддержки для центра архивации
 

@@ -6,13 +6,13 @@ ms.author: bagol
 ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: how-to
-ms.date: 01/19/2021
-ms.openlocfilehash: bcfe26bc6f637dd140776df98f8267c4c43684ba
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.date: 03/09/2021
+ms.openlocfilehash: 37ac292acc76c681ea38b2ae881ff8cd2ae5ec3c
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102049558"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102502452"
 ---
 # <a name="automatically-label-your-data-in-azure-purview"></a>Автоматическая маркировка данных в Azure зрения
 
@@ -107,12 +107,20 @@ ms.locfileid: "102049558"
 1. В Microsoft 365 перейдите на страницу **Information Protection** . 
 1. В области **расширение меток для ресурсов в Azure зрения** нажмите кнопку **включить** , а затем в появившемся диалоговом окне подтверждения выберите **Да** .
 
-Пример.
+Пример:
 
 :::image type="content" source="media/create-sensitivity-label/extend-sensitivity-labels-to-purview-small.png" alt-text="Выберите * * включить * *, чтобы расширить метки чувствительности на зрения" lightbox="media/create-sensitivity-label/extend-sensitivity-labels-to-purview.png":::
  
 После расширения меток для ресурсов в Azure зрения можно выбрать метки, которые вы хотите сделать доступными в зрения. Дополнительные сведения см. в разделе [Создание новых меток чувствительности или изменение существующих меток](#creating-new-sensitivity-labels-or-modifying-existing-labels).
 ### <a name="creating-new-sensitivity-labels-or-modifying-existing-labels"></a>Создание новых меток чувствительности или изменение существующих меток
+
+При использовании меток чувствительности для приложений Office в Windows, macOS, iOS и Android пользователи видят новые метки в течение четырех часов и в течение одного часа для Office в Интернете. Однако для репликации изменений во все приложения и службы можно использовать до 24 часов.
+
+> [!IMPORTANT]
+> Не удаляйте метку, если вы не понимаете последствия для пользователей. Дополнительные сведения см. в разделе [Удаление и удаление меток](/microsoft-365/compliance/create-sensitivity-labels#removing-and-deleting-labels) в документации по Microsoft 365.
+>
+
+**Для создания новых меток чувствительности или изменения существующих меток**:
 
 1. Откройте [Центр безопасности и соответствия требованиям Microsoft 365](https://protection.office.com/homepage). 
 
@@ -152,10 +160,6 @@ ms.locfileid: "102049558"
 
     Дополнительные сведения см. в разделе " [приоритет метки" (порядок важен)](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) в документации по Microsoft 365.
 
-> [!IMPORTANT]
-> Не удаляйте метку, если вы не понимаете последствия для пользователей. 
->
-> Дополнительные сведения см. в разделе [Удаление и удаление меток](/microsoft-365/compliance/create-sensitivity-labels#removing-and-deleting-labels) в документации по Microsoft 365.
 
 Продолжайте, [проверяя данные для автоматического применения меток](#scan-your-data-to-apply-labels-automatically), а затем:
 
@@ -168,7 +172,7 @@ ms.locfileid: "102049558"
 
 На странице **Автоматическое добавление меток для приложений Office** включите **автоматическую маркировку для приложений Office,** а затем определите условия, при которых должна автоматически применяться метка к данным.
 
-Пример.
+Пример:
 
 :::image type="content" source="media/create-sensitivity-label/create-auto-labeling-rules-files-small.png" alt-text="Определение правил автоматической метки для файлов в центре безопасности и соответствия требованиям Microsoft 365" lightbox="media/create-sensitivity-label/create-auto-labeling-rules-files.png":::
  
@@ -184,7 +188,7 @@ ms.locfileid: "102049558"
 
 1. Выберите **проверить конфиденциальные типы сведений** , чтобы выбрать типы конфиденциальных сведений, которые нужно применить к метке.
 
-Пример.
+Пример:
         
 :::image type="content" source="media/create-sensitivity-label/create-auto-labeling-rules-db-columns-small.png" alt-text="Определение правил автоматической метки для столбцов SQL в центре безопасности и соответствия требованиям Microsoft 365" lightbox="media/create-sensitivity-label/create-auto-labeling-rules-db-columns.png":::
 
@@ -207,11 +211,11 @@ ms.locfileid: "102049558"
 
 **Чтобы просмотреть метки, применяемые к вашим ресурсам в каталоге Azure зрения, выполните следующие действия.**
 
-В каталоге Azure зрения используйте параметры фильтрации **меток** , чтобы показывать только файлы с конкретными метками. Пример. 
+В каталоге Azure зрения используйте параметры фильтрации **меток** , чтобы показывать только файлы с конкретными метками. Пример: 
 
 :::image type="content" source="media/create-sensitivity-label/filter-search-results-small.png" alt-text="Поиск активов по метке" lightbox="media/create-sensitivity-label/filter-search-results.png":::
 
-Пример.
+Пример:
 
 :::image type="content" source="media/create-sensitivity-label/view-labeled-files-blob-storage-small.png" alt-text="Просмотр метки чувствительности для файла в хранилище BLOB-объектов Azure" lightbox="media/create-sensitivity-label/view-labeled-files-blob-storage.png":::
 

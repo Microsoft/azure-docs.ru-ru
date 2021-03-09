@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 10/06/2019
 ms.author: mbaldwin
 ms.custom: include file, devx-track-azurecli
-ms.openlocfilehash: 26a9e931c42822218e7935f50c1f222ac33c34f2
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 6f8cfc314c75221a88b58095cc71ea685280ac49
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102210113"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501030"
 ---
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
 
@@ -161,7 +161,7 @@ az vm encryption enable -g "MyResourceGroup" --name "myVM" --disk-encryption-key
 
 ###  <a name="azure-powershell"></a>Azure PowerShell 
 
-Используйте командлет [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey?view=azps-2.5.0) в Azure PowerShell, чтобы создать новый KEK и сохранить его в хранилище ключей.
+Используйте командлет [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey) в Azure PowerShell, чтобы создать новый KEK и сохранить его в хранилище ключей.
 
  ```powershell-interactive
 Add-AzKeyVaultKey -Name "myKEK" -VaultName "<your-unique-keyvault-name>" -Destination "HSM"
@@ -169,7 +169,7 @@ Add-AzKeyVaultKey -Name "myKEK" -VaultName "<your-unique-keyvault-name>" -Destin
 
 Вместо этого можно импортировать закрытый ключ с помощью команды [az keyvault key import](/cli/azure/keyvault/key#az-keyvault-key-import) в Azure PowerShell.
 
-В любом случае вы укажете идентификатор хранилища ключей KEK и URL-адрес KEK в параметрах -KeyEncryptionKeyVaultId и -KeyEncryptionKeyUrl команды [Set-AzVMDiskEncryptionExtension](/powershell/module/az.compute/set-azvmdiskencryptionextension?view=azps-2.5.0) в Azure PowerShell. Обратите внимание, что в этом примере предполагается, что вы используете одно хранилище ключей как для ключа шифрования диска, так и для KEK.
+В любом случае вы укажете идентификатор хранилища ключей KEK и URL-адрес KEK в параметрах -KeyEncryptionKeyVaultId и -KeyEncryptionKeyUrl команды [Set-AzVMDiskEncryptionExtension](/powershell/module/az.compute/set-azvmdiskencryptionextension) в Azure PowerShell. Обратите внимание, что в этом примере предполагается, что вы используете одно хранилище ключей как для ключа шифрования диска, так и для KEK.
 
  ```powershell-interactive
 $KeyVault = Get-AzKeyVault -VaultName "<your-unique-keyvault-name>" -ResourceGroupName "myResourceGroup"

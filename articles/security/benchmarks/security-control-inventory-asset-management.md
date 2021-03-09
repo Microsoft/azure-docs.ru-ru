@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: mbaldwin
 ms.custom: security-benchmark
-ms.openlocfilehash: 464439516ee86d2fb6f900c3fcaf179095192acf
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.openlocfilehash: 8a15517c7c34d39dfb1de237d19e84c40bf834ea
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96498886"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102500110"
 ---
 # <a name="security-control-inventory-and-asset-management"></a>Управление безопасностью: Инвентаризация и управление активами
 
@@ -20,7 +20,7 @@ ms.locfileid: "96498886"
 
 ## <a name="61-use-automated-asset-discovery-solution"></a>6,1. Использование автоматизированного решения для обнаружения ресурсов
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6.1 | 1,1, 1,2, 1,3, 1,4, 9,1, 12,1 | Customer |
 
@@ -30,13 +30,13 @@ ms.locfileid: "96498886"
 
 - [Как создавать запросы с помощью Azure Resource Graph](../../governance/resource-graph/first-query-portal.md)
 
-- [Как просматривать подписки Azure](/powershell/module/az.accounts/get-azsubscription?view=azps-3.0.0)
+- [Как просматривать подписки Azure](/powershell/module/az.accounts/get-azsubscription)
 
 - [Общие сведения об Azure RBAC](../../role-based-access-control/overview.md)
 
 ## <a name="62-maintain-asset-metadata"></a>6.2. Ведение метаданных активов
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6.2 | 1.5 | Customer |
 
@@ -46,7 +46,7 @@ ms.locfileid: "96498886"
 
 ## <a name="63-delete-unauthorized-azure-resources"></a>6.3. Удаление неавторизованных ресурсов Azure
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6.3 | 1.6 | Customer |
 
@@ -60,7 +60,7 @@ ms.locfileid: "96498886"
 
 ## <a name="64-define-and-maintain-an-inventory-of-approved-azure-resources"></a>6,4: определение и обслуживание инвентаризации утвержденных ресурсов Azure
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6.4 | 2.1 | Customer |
 
@@ -68,7 +68,7 @@ ms.locfileid: "96498886"
 
 ## <a name="65-monitor-for-unapproved-azure-resources"></a>6.5. Отслеживание неутвержденных ресурсов Azure
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6,5 | 2.3, 2.4 | Customer |
 
@@ -82,7 +82,7 @@ ms.locfileid: "96498886"
 
 ## <a name="66-monitor-for-unapproved-software-applications-within-compute-resources"></a>6.6. Отслеживание неутвержденных программных приложений в рамках ресурсов вычислений
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6.6 | 2.3, 2.4 | Customer |
 
@@ -92,7 +92,7 @@ ms.locfileid: "96498886"
 
 ## <a name="67-remove-unapproved-azure-resources-and-software-applications"></a>6.7. Удаление неутвержденных ресурсов Azure и программных приложений
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6.7 | 2.5 | Customer |
 
@@ -106,7 +106,7 @@ ms.locfileid: "96498886"
 
 ## <a name="68-use-only-approved-applications"></a>6.8. Использование только утвержденных приложений
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6,8 | 2.6 | Customer |
 
@@ -116,7 +116,7 @@ ms.locfileid: "96498886"
 
 ## <a name="69-use-only-approved-azure-services"></a>6.9. Использование только утвержденных служб Azure
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6.9 | 2.6 | Customer |
 
@@ -128,7 +128,7 @@ ms.locfileid: "96498886"
 
 ## <a name="610-maintain-an-inventory-of-approved-software-titles"></a>6,10: ведение инвентаризации утвержденных наименований программного обеспечения
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6.10 | 2.7 | Customer |
 
@@ -140,7 +140,7 @@ ms.locfileid: "96498886"
 
 ## <a name="611-limit-users-ability-to-interact-with-azure-resource-manager"></a>6,11: ограничьте возможность пользователей работать с Azure Resource Manager
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6.11 | 2,9 | Customer |
 
@@ -150,7 +150,7 @@ ms.locfileid: "96498886"
 
 ## <a name="612-limit-users-ability-to-execute-scripts-within-compute-resources"></a>6.12. Ограничение возможности пользователей выполнять сценарии в ресурсах вычислений
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6,12 | 2,9 | Customer |
 
@@ -162,7 +162,7 @@ ms.locfileid: "96498886"
 
 ## <a name="613-physically-or-logically-segregate-high-risk-applications"></a>6.13. Физическое или логическое разделение приложений с высоким риском
 
-| Идентификатор Azure | Идентификаторы CIS | Несет |
+| Идентификатор Azure | Идентификаторы CIS | Обязательство |
 |--|--|--|
 | 6,13 | 2,9 | Customer |
 

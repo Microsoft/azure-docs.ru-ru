@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.author: larryfr
 author: BlackMist
 ms.date: 11/16/2020
-ms.openlocfilehash: 78f8d6d216659eaad01d512dd45696dd31035885
-ms.sourcegitcommit: e2dc549424fb2c10fcbb92b499b960677d67a8dd
+ms.openlocfilehash: 648dbe6b8d275c832f219cb6f3119ac0bc518a54
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94695390"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102508475"
 ---
 # <a name="what-are-azure-machine-learning-environments"></a>Что такое Машинное обучение Azure среды?
 
@@ -78,13 +78,13 @@ ms.locfileid: "94695390"
  1. Загрузка базового образа и выполнения всех действий DOCKER
  2. Создание среды conda в соответствии с зависимостями conda, указанными в определении среды.
 
-Второй шаг опускается, если указаны [управляемые пользователем зависимости](/python/api/azureml-core/azureml.core.environment.pythonsection?preserve-view=true&view=azure-ml-py). В этом случае вы несете ответственность за установку пакетов Python, включая их в базовый образ, или указание пользовательских шагов DOCKER на первом шаге. Вы также несете ответственность за указание правильного расположения исполняемого файла Python. Также можно использовать [Пользовательский базовый образ DOCKER](how-to-deploy-custom-docker-image.md).
+Второй шаг опускается, если указаны [управляемые пользователем зависимости](/python/api/azureml-core/azureml.core.environment.pythonsection). В этом случае вы несете ответственность за установку пакетов Python, включая их в базовый образ, или указание пользовательских шагов DOCKER на первом шаге. Вы также несете ответственность за указание правильного расположения исполняемого файла Python. Также можно использовать [Пользовательский базовый образ DOCKER](how-to-deploy-custom-docker-image.md).
 
 ### <a name="image-caching-and-reuse"></a>Кэширование и повторное использование образов
 
 Если вы используете одно и то же определение среды для другого запуска, служба Машинное обучение Azure повторно использует кэшированный образ из записи контроля доступа рабочей области. 
 
-Чтобы просмотреть сведения о кэшированном изображении, используйте метод [Environment.get_image_details](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py#&preserve-view=trueget-image-details-workspace-) .
+Чтобы просмотреть сведения о кэшированном изображении, используйте метод [Environment.get_image_details](/python/api/azureml-core/azureml.core.environment.environment#get-image-details-workspace-) .
 
 Чтобы определить, следует ли повторно использовать кэшированное изображение или создать новый, служба вычислит [хэш-значение](https://en.wikipedia.org/wiki/Hash_table) из определения среды и сравнивает его с хэшем существующих сред. Хэш основан на:
  
@@ -107,10 +107,10 @@ ms.locfileid: "94695390"
 Чтобы обновить пакет, укажите номер версии для принудительного перестроения образа, например ```numpy==1.18.1``` . Будут установлены новые зависимости, включая вложенные, которые могут нарушить работу ранее работающего сценария. 
 
 > [!WARNING]
->  Метод [Environment. Build](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py#&preserve-view=truebuild-workspace--image-build-compute-none-) выполнит перестроение кэшированного образа с возможным побочным действием обновления незакрепленных пакетов и разрушением воспроизводимость для всех определений среды, соответствующих этому кэшированному изображению.
+>  Метод [Environment. Build](/python/api/azureml-core/azureml.core.environment.environment#build-workspace--image-build-compute-none-) выполнит перестроение кэшированного образа с возможным побочным действием обновления незакрепленных пакетов и разрушением воспроизводимость для всех определений среды, соответствующих этому кэшированному изображению.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте, как [создавать и использовать среды](how-to-use-environments.md) в машинное обучение Azure.
-* См. справочную документацию по пакету SDK для Python для [класса Environment](/python/api/azureml-core/azureml.core.environment%28class%29?preserve-view=true&view=azure-ml-py).
+* См. справочную документацию по пакету SDK для Python для [класса Environment](/python/api/azureml-core/azureml.core.environment%28class%29).
 * См. справочную документацию по пакету SDK R для [сред](https://azure.github.io/azureml-sdk-for-r/reference/index.html#section-environments).

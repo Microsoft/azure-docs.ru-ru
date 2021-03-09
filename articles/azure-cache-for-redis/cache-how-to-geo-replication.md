@@ -6,12 +6,12 @@ ms.service: cache
 ms.topic: conceptual
 ms.date: 02/08/2021
 ms.author: yegu
-ms.openlocfilehash: 130cb1d63da27010012c22dc2cdb40c3d8f03273
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 8701f7bcb2e7ff705e4f1d1b401f4eb3e680f28b
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102178564"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501045"
 ---
 # <a name="configure-geo-replication-for-premium-azure-cache-for-redis-instances"></a>Настройка георепликации для кэша Azure уровня "Премиум" для экземпляров Redis
 
@@ -170,7 +170,7 @@ ms.locfileid: "102178564"
 
 ### <a name="can-i-use-powershell-or-azure-cli-to-manage-geo-replication"></a>Можно ли использовать PowerShell или Azure CLI для управления георепликацией?
 
-Да, георепликацию можно управлять с помощью портал Azure, PowerShell или Azure CLI. Дополнительные сведения см. в документации по [PowerShell](/powershell/module/az.rediscache/?view=azps-1.4.0#redis_cache) или документация [Azure CLI](/cli/azure/redis/server-link).
+Да, георепликацию можно управлять с помощью портал Azure, PowerShell или Azure CLI. Дополнительные сведения см. в документации по [PowerShell](/powershell/module/az.rediscache/#redis_cache) или документация [Azure CLI](/cli/azure/redis/server-link).
 
 ### <a name="how-much-does-it-cost-to-replicate-my-data-across-azure-regions"></a>Сколько стоит реплицировать мои данные между регионами Azure?
 

@@ -8,12 +8,12 @@ ms.topic: reference
 ms.service: iot-pnp
 services: iot-pnp
 ms.custom: mvc
-ms.openlocfilehash: e8320c0b482daa6371736588250ad0bd8d9b7491
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 31e06777a2f2e26f6ef546e60fd0bf4428d272c2
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102435381"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102503816"
 ---
 # <a name="microsoft-sdks-for-iot-plug-and-play"></a>Пакеты SDK для Microsoft самонастраивающийся IoT
 
@@ -26,7 +26,7 @@ ms.locfileid: "102435381"
 | C-устройство | [vcpkg 1.3.9](https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/setting_up_vcpkg.md) | [GitHub](https://github.com/Azure/azure-iot-sdk-c) | [Примеры](https://github.com/Azure/azure-iot-sdk-c/tree/master/iothub_client/samples/pnp) | [Подключение к Центру Интернета вещей](quickstart-connect-device.md) | [Ссылки](/azure/iot-hub/iot-c-sdk-ref/) |
 | .NET — устройство | [1.31.0 NuGet](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client) | [GitHub](https://github.com/Azure/azure-iot-sdk-csharp/tree/master/) | [Примеры](https://github.com/Azure-Samples/azure-iot-samples-csharp/tree/master/iot-hub/Samples/device/PnpDeviceSamples) | [Подключение к Центру Интернета вещей](quickstart-connect-device.md) | [Ссылки](/dotnet/api/microsoft.azure.devices.client) |
 | Java — устройство | [Maven 1.26.0](https://mvnrepository.com/artifact/com.microsoft.azure.sdk.iot/iot-device-client) | [GitHub](https://github.com/Azure/azure-iot-sdk-java/tree/master/) | [Примеры](https://github.com/Azure/azure-iot-sdk-java/tree/master/device/iot-device-samples/pnp-device-sample) | [Подключение к Центру Интернета вещей](quickstart-connect-device.md) | [Ссылки](/java/api/com.microsoft.azure.sdk.iot.device) |
-| Python — устройство | [PIP 2.3.0](https://pypi.org/project/azure-iot-device/) | [GitHub](https://github.com/Azure/azure-iot-sdk-python/tree/master/) | [Примеры](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples/pnp) | [Подключение к Центру Интернета вещей](quickstart-connect-device.md) | [Ссылки](/python/api/azure-iot-device/azure.iot.device?preserve-view=true&view=azure-python) |
+| Python — устройство | [PIP 2.3.0](https://pypi.org/project/azure-iot-device/) | [GitHub](https://github.com/Azure/azure-iot-sdk-python/tree/master/) | [Примеры](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples/pnp) | [Подключение к Центру Интернета вещей](quickstart-connect-device.md) | [Ссылки](/python/api/azure-iot-device/azure.iot.device) |
 | Узел-устройство | [NPM 1.17.2](https://www.npmjs.com/package/azure-iot-device)  | [GitHub](https://github.com/Azure/azure-iot-sdk-node/tree/master/) | [Примеры](https://github.com/Azure/azure-iot-sdk-node/tree/master/device/samples/pnp) | [Подключение к Центру Интернета вещей](quickstart-connect-device.md) | [Ссылки](/javascript/api/azure-iot-device/) |
 | Встроенное C-устройство | Недоступно | [GitHub](https://github.com/Azure/azure-sdk-for-c/)| [Примеры](howto-use-embedded-c.md#samples) | [Как использовать внедренный C](howto-use-embedded-c.md) | Н/Д
 

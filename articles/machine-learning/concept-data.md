@@ -11,12 +11,12 @@ author: nibaccam
 ms.author: nibaccam
 ms.date: 08/31/2020
 ms.custom: devx-track-python, data4ml
-ms.openlocfilehash: 1c2a917712cbde95fda9321e56fe1c033ad444aa
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 601be8409db22162a410d481e6609d378718a7b4
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101659721"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102503595"
 ---
 # <a name="secure-data-access-in-azure-machine-learning"></a>Защита доступа к данным в Машинное обучение Azure
 
@@ -67,7 +67,7 @@ ms.locfileid: "101659721"
 + База данных Azure для MySQL
 
 >[!TIP]
-> Общедоступная функциональность для создания хранилищ данных требует проверки подлинности на основе учетных данных для доступа к службам хранилища, таким как субъект-служба или маркер подписанного URL-доступа (SAS). Доступ к этим учетным данным можно получить у пользователей, имеющих доступ к рабочей области с правами *читателя* . <br><br>Если это проблема,  [Создайте хранилище данных, которое использует доступ к данным на основе удостоверений к службам хранилища (Предварительная версия)](how-to-identity-based-data-access.md). Эта возможность является [экспериментальной](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py#stable-vs-experimental) функцией предварительной версии и может быть изменена в любое время.
+> Общедоступная функциональность для создания хранилищ данных требует проверки подлинности на основе учетных данных для доступа к службам хранилища, таким как субъект-служба или маркер подписанного URL-доступа (SAS). Доступ к этим учетным данным можно получить у пользователей, имеющих доступ к рабочей области с правами *читателя* . <br><br>Если это проблема,  [Создайте хранилище данных, которое использует доступ к данным на основе удостоверений к службам хранилища (Предварительная версия)](how-to-identity-based-data-access.md). Эта возможность является [экспериментальной](/python/api/overview/azure/ml/#stable-vs-experimental) функцией предварительной версии и может быть изменена в любое время.
 
 <a name="datasets"></a>
 ## <a name="reference-data-in-storage-with-datasets"></a>Справочные данные в хранилище с помощью наборов данных
@@ -86,9 +86,9 @@ ms.locfileid: "101659721"
 
 Существует два типа наборов данных: 
 
-+ [Филедатасет](/python/api/azureml-core/azureml.data.file_dataset.filedataset?preserve-view=true&view=azure-ml-py) ссылается на один или несколько файлов в хранилищах данных или общедоступных URL-адресах. Если данные уже очищены и готовы к использованию в учебных экспериментах, можно [загрузить или подключить](how-to-train-with-datasets.md#mount-files-to-remote-compute-targets) к целевому объекту вычислений файлы, на которые ссылается филедатасетс.
++ [Филедатасет](/python/api/azureml-core/azureml.data.file_dataset.filedataset) ссылается на один или несколько файлов в хранилищах данных или общедоступных URL-адресах. Если данные уже очищены и готовы к использованию в учебных экспериментах, можно [загрузить или подключить](how-to-train-with-datasets.md#mount-files-to-remote-compute-targets) к целевому объекту вычислений файлы, на которые ссылается филедатасетс.
 
-+ [Табулардатасет](/python/api/azureml-core/azureml.data.tabulardataset?preserve-view=true&view=azure-ml-py) представляет данные в табличном формате путем синтаксического анализа указанного файла или списка файлов. Вы можете загрузить Табулардатасет в кадр данных Pandas или Spark для дальнейшей обработки и очистки. Полный список форматов данных, которые можно создать Табулардатасетс из, см. в разделе [класс табулардатасетфактори](/python/api/azureml-core/azureml.data.dataset_factory.tabulardatasetfactory).
++ [Табулардатасет](/python/api/azureml-core/azureml.data.tabulardataset) представляет данные в табличном формате путем синтаксического анализа указанного файла или списка файлов. Вы можете загрузить Табулардатасет в кадр данных Pandas или Spark для дальнейшей обработки и очистки. Полный список форматов данных, которые можно создать Табулардатасетс из, см. в разделе [класс табулардатасетфактори](/python/api/azureml-core/azureml.data.dataset_factory.tabulardatasetfactory).
 
 Дополнительные возможности наборов данных можно найти в следующей документации:
 
@@ -103,7 +103,7 @@ ms.locfileid: "101659721"
 + Обучение моделей машинного обучения:
      + [автоматические эксперименты ML](how-to-use-automated-ml-for-ml-models.md)
      + [конструктор](tutorial-designer-automobile-price-train-score.md#import-data)
-     + [Компьютеры](how-to-train-with-datasets.md)
+     + [записные книжки](how-to-train-with-datasets.md)
      + [Конвейеры Машинное обучение Azure](./how-to-create-machine-learning-pipelines.md)
 + Доступ к наборам данных для оценки с помощью [вывода пакетов](./tutorial-pipeline-batch-scoring-classification.md) в [конвейерах машинного обучения](./how-to-create-machine-learning-pipelines.md).
 + Настройте монитор набора данных для обнаружения [несмещенных данных](#drift) .

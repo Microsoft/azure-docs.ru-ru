@@ -8,12 +8,12 @@ ms.date: 01/03/2021
 ms.author: rogarana
 ms.subservice: files
 ms.custom: contperf-fy21q1, devx-track-azurecli
-ms.openlocfilehash: 6d8402f5e8a1a9af1f84ff6beff7324d1675e441
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 3abca397186572cabb4f7ae99edae8688ea4d9a6
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102214411"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102499515"
 ---
 # <a name="enable-azure-active-directory-domain-services-authentication-on-azure-files"></a>Включение проверки подлинности доменных служб Azure Active Directory в службе файлов Azure
 
@@ -89,7 +89,7 @@ ms.locfileid: "102214411"
 1. В портал Azure перейдите к существующей учетной записи хранения или [Создайте учетную запись хранения](../common/storage-account-create.md).
 1. В разделе **Параметры** выберите **Конфигурация**.
 1. В разделе " **доступ на основе удостоверений" для файловых ресурсов** перейдите в режим **Azure Active Directory службы домена (AAD DS)** в значение " **включено**".
-1. Нажмите кнопку **Сохранить**.
+1. Щелкните **Сохранить**.
 
 На следующем рисунке показано, как включить проверку подлинности Azure AD DS по протоколу SMB для вашей учетной записи хранения.
 
@@ -99,7 +99,7 @@ ms.locfileid: "102214411"
 
 Чтобы включить проверку подлинности Azure AD DS в SMB с Azure PowerShell, установите последний модуль AZ (2,4 или более поздней версии) или AZ. Storage Module (1,5 или более поздней версии). Дополнительные сведения об установке PowerShell см. [в статье установка Azure PowerShell в Windows с помощью PowerShellGet](/powershell/azure/install-Az-ps).
 
-Чтобы создать новую учетную запись хранения, вызовите командлет [New-азсторажеаккаунт](/powershell/module/az.storage/New-azStorageAccount?view=azps-2.5.0), а затем установите для параметра **енаблеазуреактиведиректоридомаинсервицесфорфиле** **значение true**. В следующем примере не забудьте заменить значения заполнителей собственными значениями. (Если использовался предыдущий модуль предварительного просмотра, параметр для включения этой функции — **енаблеазурефилесаадинтегратионфорсмб**.)
+Чтобы создать новую учетную запись хранения, вызовите командлет [New-азсторажеаккаунт](/powershell/module/az.storage/New-azStorageAccount), а затем установите для параметра **енаблеазуреактиведиректоридомаинсервицесфорфиле** **значение true**. В следующем примере не забудьте заменить значения заполнителей собственными значениями. (Если использовался предыдущий модуль предварительного просмотра, параметр для включения этой функции — **енаблеазурефилесаадинтегратионфорсмб**.)
 
 ```powershell
 # Create a new storage account

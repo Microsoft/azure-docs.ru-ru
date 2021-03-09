@@ -11,12 +11,12 @@ ms.author: cesardl
 author: CESARDELATORRE
 ms.reviewer: nibaccam
 ms.date: 02/23/2021
-ms.openlocfilehash: add84c2cb53a362fc78fc50a6df13b4976e3868d
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 31d3dc2c2d8194541ba1fe7d0865e6c939d75f73
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101661041"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501588"
 ---
 # <a name="configure-data-splits-and-cross-validation-in-automated-machine-learning"></a>Настройка разбиения и перекрестной проверки данных в автоматизированном машинном обучении
 
@@ -24,7 +24,7 @@ ms.locfileid: "101661041"
 
 В Машинное обучение Azure при использовании автоматизированного машинного обучения для построения нескольких моделей МАШИНного обучения каждому дочернему выполнению необходимо проверить связанную модель, вычисляя метрики качества для этой модели, такие как точность или AUC с весовым коэффициентом. Эти метрики рассчитываются путем сравнения прогнозов, производимых с каждой моделью, с реальными метками прошлых наблюдений в данных проверки. [Узнайте больше о том, как рассчитываются метрики на основе типа проверки](#metric-calculation-for-cross-validation-in-machine-learning). 
 
-Автоматические эксперименты ML выполняют проверку модели автоматически. В следующих разделах описано, как можно дополнительно настроить параметры проверки с помощью [пакета SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py). 
+Автоматические эксперименты ML выполняют проверку модели автоматически. В следующих разделах описано, как можно дополнительно настроить параметры проверки с помощью [пакета SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/). 
 
 Сведения о низком коде или работе без кода см. [в статье Создание автоматических экспериментов машинного обучения в машинное обучение Azure Studio](how-to-use-automated-ml-for-ml-models.md#create-and-run-experiment). 
 
@@ -47,7 +47,7 @@ ms.locfileid: "101661041"
 
 ## <a name="default-data-splits-and-cross-validation-in-machine-learning"></a>Разбиение данных по умолчанию и перекрестная проверка в машинном обучении
 
-Используйте объект [аутомлконфиг](/python/api/azureml-train-automl-client/azureml.train.automl.automlconfig.automlconfig?preserve-view=true&view=azure-ml-py) для определения параметров эксперимента и обучения. В следующем фрагменте кода обратите внимание, что определены только обязательные параметры, которые являются параметрами для `n_cross_validation` или `validation_ data` **не** включены.
+Используйте объект [аутомлконфиг](/python/api/azureml-train-automl-client/azureml.train.automl.automlconfig.automlconfig) для определения параметров эксперимента и обучения. В следующем фрагменте кода обратите внимание, что определены только обязательные параметры, которые являются параметрами для `n_cross_validation` или `validation_ data` **не** включены.
 
 ```python
 data = "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/creditcard.csv"

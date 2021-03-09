@@ -7,12 +7,12 @@ ms.service: firewall
 ms.topic: conceptual
 ms.date: 03/05/2021
 ms.author: victorh
-ms.openlocfilehash: aa543b32efcd1897eb0ee7d8b477742705095ad9
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: adbc2a9eb6cd3b054df84911604143ddb711ad20
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102430740"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102499141"
 ---
 # <a name="azure-firewall-active-ftp-support"></a>Поддержка Active FTP в брандмауэре Azure
 
@@ -23,7 +23,7 @@ ms.locfileid: "102430740"
 
 ## <a name="azure-powershell"></a>Azure PowerShell
 
-Чтобы выполнить развертывание с помощью Azure PowerShell, используйте `AllowActiveFTP` параметр. Дополнительные сведения см. в разделе [Создание брандмауэра с разрешающим активным FTP](/powershell/module/az.network/new-azfirewall?view=azps-5.4.0#16---create-a-firewall-with-allow-active-ftp-).
+Чтобы выполнить развертывание с помощью Azure PowerShell, используйте `AllowActiveFTP` параметр. Дополнительные сведения см. в разделе [Создание брандмауэра с разрешающим активным FTP](/powershell/module/az.network/new-azfirewall#16---create-a-firewall-with-allow-active-ftp-).
 
 ## <a name="azure-cli"></a>Azure CLI
 

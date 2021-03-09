@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/31/2020
 ms.author: robinsh
 ms.custom: mqtt, devx-track-python
-ms.openlocfilehash: 1112df382fb10051ac06c4461a9e4328e1663388
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.openlocfilehash: 77d51b2c839a64567838fa4d6308d203a6bb8b82
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92139310"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501147"
 ---
 # <a name="upload-files-from-your-device-to-the-cloud-with-iot-hub-python"></a>Передача файлов с устройства в облако с помощью центра Интернета вещей (Python)
 
@@ -109,7 +109,7 @@ ms.locfileid: "92139310"
             return (False, ex)
     ```
 
-    Эта функция анализирует структуру *blob_info* , переданную в нее, чтобы создать URL-адрес, используемый для инициализации объекта [Azure. Storage. BLOB. блобклиент](/python/api/azure-storage-blob/azure.storage.blob.blobclient?view=azure-python). Затем он отправляет файл в хранилище BLOB-объектов Azure с помощью этого клиента.
+    Эта функция анализирует структуру *blob_info* , переданную в нее, чтобы создать URL-адрес, используемый для инициализации объекта [Azure. Storage. BLOB. блобклиент](/python/api/azure-storage-blob/azure.storage.blob.blobclient). Затем он отправляет файл в хранилище BLOB-объектов Azure с помощью этого клиента.
 
 1. Добавьте следующий код, чтобы подключить клиент и передать файл:
 
@@ -179,7 +179,7 @@ ms.locfileid: "92139310"
 
 1. Сохраните и закройте файл **UploadFile.py**.
 
-## <a name="run-the-application"></a>Запуск приложения
+## <a name="run-the-application"></a>Выполнение приложения
 
 Теперь все готово для запуска приложения.
 
@@ -211,4 +211,4 @@ ms.locfileid: "92139310"
 
 * [Документация по хранилищу BLOB-объектов Azure](../storage/blobs/index.yml)
 
-* [Документация по службе хранилища BLOB-объектов Azure для API Python](/python/api/overview/azure/storage-blob-readme?view=azure-python)
+* [Документация по службе хранилища BLOB-объектов Azure для API Python](/python/api/overview/azure/storage-blob-readme)

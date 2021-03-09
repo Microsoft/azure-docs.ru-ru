@@ -8,12 +8,12 @@ ms.service: dns
 ms.topic: how-to
 ms.date: 06/18/2019
 ms.author: rohink
-ms.openlocfilehash: bfc7a851442d6dd70d55c9f00e6d2f18d37e56bf
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: 72d046cde70d1224eb1fd47f527c9e49c6b002f6
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102203408"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102500467"
 ---
 # <a name="migrating-legacy-azure-dns-private-zones-to-new-resource-model"></a>Перенос устаревших частных зон Azure DNS на новую модель ресурсов
 
@@ -109,7 +109,7 @@ PrivateDnsMigrationScript.ps1
 Если вы применяете службу автоматизации, включая шаблоны, сценарии PowerShell или пользовательский код, разработанный с помощью пакета SDK, необходимо обновить ее, чтобы использовать новую модель ресурсов для частных зон DNS. Ниже приведены ссылки на документацию по CLI/PS/SDK для новых частных зон DNS.
 * [REST API для частных зон Azure DNS](/rest/api/dns/privatedns/privatezones)
 * [CLI для частных зон Azure DNS](/cli/azure/ext/privatedns/network/private-dns)
-* [PowerShell для частных зон Azure DNS](/powershell/module/az.privatedns/?view=azps-2.3.2)
+* [PowerShell для частных зон Azure DNS](/powershell/module/az.privatedns/)
 * [Пакет SDK для частных зон Azure DNS](/dotnet/api/overview/azure/privatedns/management?view=azure-dotnet-preview)
 
 ## <a name="need-further-help"></a>Дополнительная помощь

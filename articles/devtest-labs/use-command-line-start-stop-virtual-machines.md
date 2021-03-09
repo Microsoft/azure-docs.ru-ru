@@ -3,12 +3,12 @@ title: Запуск и завершение работы виртуальных 
 description: Узнайте, как использовать программы командной строки для запуска и завершения работы виртуальных машин в Azure DevTest Labs.
 ms.topic: article
 ms.date: 06/26/2020
-ms.openlocfilehash: 2b9be3d09c488fdae211d81daf88e8807bc7b4dc
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: 2ddc1620cf86fa203b2f0e31359f9fd262df8916
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102201198"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102499549"
 ---
 # <a name="use-command-line-tools-to-start-and-stop-azure-devtest-labs-virtual-machines"></a>Использование программ командной строки для запуска и завершения Azure DevTest Labs виртуальных машин
 В этой статье показано, как использовать Azure PowerShell или Azure CLI для запуска или завершения работы виртуальных машин в лаборатории в Azure DevTest Labs. Вы можете создать скрипты PowerShell/CLI для автоматизации этих операций. 
@@ -29,7 +29,7 @@ Azure DevTest Labs — это способ создания быстрых, пр
 > [!NOTE]
 > В следующем скрипте используется модуль Azure PowerShell AZ. 
 
-Следующий сценарий PowerShell запускает виртуальную машину в лаборатории. [Командлет Invoke-азресаурцеактион](/powershell/module/az.resources/invoke-azresourceaction?view=azps-1.7.0) является основным фокусом для этого скрипта. Параметр **ResourceId** — это полный идентификатор ресурса для виртуальной машины в лаборатории. Параметр **Action** — это место, где задаются параметры **запуска** или **отмены** в зависимости от того, что требуется.
+Следующий сценарий PowerShell запускает виртуальную машину в лаборатории. [Командлет Invoke-азресаурцеактион](/powershell/module/az.resources/invoke-azresourceaction) является основным фокусом для этого скрипта. Параметр **ResourceId** — это полный идентификатор ресурса для виртуальной машины в лаборатории. Параметр **Action** — это место, где задаются параметры **запуска** или **отмены** в зависимости от того, что требуется.
 
 ```powershell
 # The id of the subscription

@@ -16,12 +16,12 @@ ms.date: 12/23/2020
 ms.author: barclayn
 ms.reviewer: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b635a83c5ea1378a525ff607e5c6f2725337ad1a
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.openlocfilehash: 4c5ab92fcc1d70d12e37ae351e768514b4e7522f
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102453042"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501708"
 ---
 # <a name="archive-logs-and-reporting-on-azure-ad-entitlement-management-in-azure-monitor"></a>Архивируйте журналы и создавайте отчеты в управлении правами Azure AD в Azure Monitor
 
@@ -130,7 +130,7 @@ AuditLogs | where TimeGenerated > ago(3653d) | summarize OldestAuditEvent=min(Ti
 
 ### <a name="install-azure-powershell-module"></a>Установите модуль Azure PowerShell.
 
-Получив необходимое назначение ролей, запустите PowerShell и [установите модуль Azure PowerShell](/powershell/azure/install-az-ps?view=azps-3.3.0) (если вы еще этого не сделали), введя:
+Получив необходимое назначение ролей, запустите PowerShell и [установите модуль Azure PowerShell](/powershell/azure/install-az-ps) (если вы еще этого не сделали), введя:
 
 ```azurepowershell
 install-module -Name az -allowClobber -Scope CurrentUser
@@ -168,8 +168,7 @@ $wks | ft CustomerId, Name
 ```
 
 ### <a name="send-the-query-to-the-log-analytics-workspace"></a>Отправьте запрос в рабочую область Log Analytics
-Наконец, после определения рабочей области можно использовать [Invoke-AzOperationalInsightsQuery](/powershell/module/az.operationalinsights/Invoke-AzOperationalInsightsQuery?view=azps-3.3.0
-), чтобы отправить запрос Kusto в эту рабочую область. Эти запросы написаны на [языке запросов Kusto](/azure/kusto/query/).
+Наконец, после определения рабочей области можно использовать [Invoke-AzOperationalInsightsQuery](/powershell/module/az.operationalinsights/Invoke-AzOperationalInsightsQuery), чтобы отправить запрос Kusto в эту рабочую область. Эти запросы написаны на [языке запросов Kusto](/azure/kusto/query/).
  
 Например, можно получить диапазон дат записей событий аудита из рабочей области Log Analytics, используя командлеты PowerShell для отправки запроса:
  
