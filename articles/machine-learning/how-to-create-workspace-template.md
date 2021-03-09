@@ -10,12 +10,12 @@ ms.custom: how-to, devx-track-azurecli, devx-track-azurepowershell
 ms.author: larryfr
 author: Blackmist
 ms.date: 09/30/2020
-ms.openlocfilehash: f8ceacf88968d884de666b764c1037db9e63450f
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: d64dfdad0c51950228288b704b3fdb7579496abb
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102214921"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102488075"
 ---
 # <a name="use-an-azure-resource-manager-template-to-create-a-workspace-for-azure-machine-learning"></a>Создание рабочей области для Машинного обучения Azure с помощью шаблона Azure Resource Manager
 
@@ -285,7 +285,7 @@ New-AzResourceGroupDeployment `
 Если связанные ресурсы не находятся за виртуальной сетью, можно задать для параметра **приватиндпоинттипе** значение `AutoAproval` или, `ManualApproval` чтобы развернуть рабочую область за частной конечной точкой. Это можно сделать как для новых, так и для существующих рабочих областей. При обновлении существующей рабочей области заполните параметры шаблона данными из существующей рабочей области.
 
 > [!IMPORTANT]
-> Использование рабочей области Машинное обучение Azure с частной ссылкой недоступна в регионах Azure для государственных организаций или в регионах Azure для Китая.
+> Использование рабочей области Машинное обучение Azure с частной ссылкой недоступна в регионах Azure для государственных организаций.
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/azcli)
 

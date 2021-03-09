@@ -13,12 +13,12 @@ ms.author: rolyon
 ms.reviewer: vincesm
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bec789d8ef79e221007b172550100b80b76197a
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.openlocfilehash: 67e77c2dd08386279beeb06ff9081fa2669afa73
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98740284"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102487840"
 ---
 # <a name="assign-custom-admin-roles-using-the-microsoft-graph-api-in-azure-active-directory"></a>Назначение специальных ролей администратора с помощью API Microsoft Graph в Azure Active Directory 
 
@@ -60,7 +60,7 @@ HTTP/1.1 201 Created
 POST
 
 ``` HTTP
-https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
 ```
 
 Текст
@@ -83,7 +83,7 @@ HTTP/1.1 404 Not Found
 POST
 
 ``` HTTP
-https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
 ```
 
 Текст
@@ -107,7 +107,7 @@ HTTP/1.1 201 Created
 POST
 
 ``` HTTP
-https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
 ```
 
 Текст
@@ -145,7 +145,7 @@ HTTP/1.1 400 Bad Request
 GET
 
 ``` HTTP
-https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments&$filter=principalId eq ‘<object-id-of-principal>’
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId+eq+'<object-id-of-principal>'
 ```
 
 Ответ
@@ -175,7 +175,7 @@ HTTP/1.1 200 OK
 GET
 
 ``` HTTP
-https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments&$filter=roleDefinitionId eq ‘<object-id-or-template-id-of-role-definition>’
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=roleDefinitionId+eq+'<object-id-or-template-id-of-role-definition>'
 ```
 
 Ответ
@@ -220,7 +220,7 @@ HTTP/1.1 200 OK
 GET
 
 ``` HTTP
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=directoryScopeId eq '/d23998b1-8853-4c87-b95f-be97d6c6b610'
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=directoryScopeId+eq+'/d23998b1-8853-4c87-b95f-be97d6c6b610'
 ```
 
 Ответ
@@ -252,7 +252,7 @@ HTTP/1.1 200 OK
 DELETE
 
 ``` HTTP
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
+DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
 ```
 
 Ответ
@@ -265,7 +265,7 @@ HTTP/1.1 204 No Content
 DELETE
 
 ``` HTTP
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
+DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
 ```
 
 Ответ
@@ -279,7 +279,7 @@ HTTP/1.1 404 Not Found
 DELETE
 
 ``` HTTP
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
+DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
 ```
 
 Ответ
@@ -302,7 +302,7 @@ HTTP/1.1 400 Bad Request
 
 Мы запрещаем пользователям удалять собственные роли глобального администратора, чтобы избежать ситуации, когда у клиента нет глобальных администраторов. Разрешено удаление других ролей, назначенных Self.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Вы можете поделиться с нами на форуме по [административным ролям Azure AD](https://feedback.azure.com/forums/169401-azure-active-directory?category_id=166032)
 * Дополнительные сведения о ролях и назначении ролей администратора см. в статье [назначение ролей администратора](permissions-reference.md) .

@@ -9,12 +9,12 @@ ms.workload: infrastructure
 ms.date: 10/14/2020
 ms.author: akjosh
 ms.reviewer: cynthn
-ms.openlocfilehash: baba35bd29ec6708aca77bd9c6d74401a365014a
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.openlocfilehash: 9a5bc0620468980da68e1b92f758d5f3862ac7d3
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101091894"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102487259"
 ---
 # <a name="shared-image-galleries-overview"></a>Обзор коллекций общих образов
 
@@ -104,7 +104,7 @@ ms.locfileid: "101091894"
 
 ## <a name="regional-support"></a>Поддержка в регионах
 
-Целевым регионом может быть любой общедоступный регион, но для репликации в регионах "Центральная Австралия" и "Центральная Австралия 2" ваша подписка должна быть добавлена в список разрешений. Чтобы запросить добавление подписок в список разрешений, перейдите по этой ссылке: https://azure.microsoft.com/global-infrastructure/australia/contact/
+Целевым регионом может быть любой общедоступный регион, но для репликации в регионах "Центральная Австралия" и "Центральная Австралия 2" ваша подписка должна быть добавлена в список разрешений. Чтобы запросить добавление подписок в список разрешений, перейдите по этой ссылке: https://docs.microsoft.com/azure/virtual-machines/shared-image-galleries#regional-support
 
 ## <a name="limits"></a>Ограничения 
 
@@ -322,7 +322,6 @@ ms.locfileid: "101091894"
 
 Кроме того, вы можете разместить свой вопрос и пометить его в `azure-virtual-machines-images` [Q&A](/answers/topics/azure-virtual-machines-images.html).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как развертывать общие образы с помощью [Azure CLI](shared-images-cli.md) или [PowerShell](shared-images-powershell.md).
-

@@ -5,19 +5,19 @@ ms.topic: how-to
 manager: nitinme
 ms.author: lajanuar
 author: laujan
-ms.date: 02/11/2021
-ms.openlocfilehash: 104329928c507c288537704fbbef4e35b65cb445
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/05/2021
+ms.openlocfilehash: e40fc569ad1c8ec5894f06915422bea37cfc40ee
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101739442"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102489639"
 ---
-# <a name="create-sas-tokens-for-document-translation"></a>Создание маркеров SAS для перевода документов
+# <a name="create-sas-tokens-for-document-translation-processing"></a>Создание маркеров SAS для обработки перевода документов
 
 В этой статье вы узнаете, как создать маркеры подписанного URL-адрес (SAS) с помощью Обозреватель службы хранилища Azure или портал Azure. Маркер SAS обеспечивает безопасный делегированный доступ к ресурсам в учетной записи хранения Azure.
 
-## <a name="create-sas-tokens-with-azure-storage-explorer"></a>Создание маркеров SAS с помощью Обозреватель службы хранилища Azure
+## <a name="create-your-sas-tokens-with-azure-storage-explorer"></a>Создание маркеров SAS с помощью Обозреватель службы хранилища Azure
 
 ### <a name="prerequisites"></a>Предварительные требования
 
@@ -65,7 +65,7 @@ ms.locfileid: "101739442"
 ## <a name="create-sas-tokens-for-blobs-in-the-azure-portal"></a>Создание маркеров SAS для больших двоичных объектов в портал Azure
 
 > [!NOTE]
-> Создание маркеров SAS для контейнеров непосредственно в портал Azure в настоящее время не поддерживается. Однако можно создать маркер SAS с [**Обозреватель службы хранилища Azure**](#create-sas-tokens-with-azure-storage-explorer) или выполнить задачу [программно](../../../storage/blobs/sas-service-create.md).
+> Создание маркеров SAS для контейнеров непосредственно в портал Azure в настоящее время не поддерживается. Однако можно создать маркер SAS с [**Обозреватель службы хранилища Azure**](#create-your-sas-tokens-with-azure-storage-explorer) или выполнить задачу [программно](../../../storage/blobs/sas-service-create.md).
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="prerequisites"></a>Предварительные требования
@@ -74,7 +74,7 @@ ms.locfileid: "101739442"
 
 * Активная [**учетная запись Azure**](https://azure.microsoft.com/free/cognitive-services/).  Если у вас ее нет, можно [**создать бесплатную учетную запись**](https://azure.microsoft.com/free/).
 * Ресурс службы [**переводчика**](https://ms.portal.azure.com/#create/Microsoft) (**не** Cognitive Services ресурс нескольких служб.  *См. раздел* [Создание нового ресурса Azure](../../cognitive-services-apis-create-account.md#create-a-new-azure-cognitive-services-resource).  
-* [**Учетная запись хранилища BLOB-объектов Azure**](https://ms.portal.azure.com/#create/Microsoft.StorageAccount-ARM). Доступ к хранилищу Azure осуществляется с помощью учетной записи хранения.
+* [**Учетная запись хранилища BLOB-объектов Azure**](https://ms.portal.azure.com/#create/Microsoft.StorageAccount-ARM). Вы создадите контейнеры для хранения и организации данных больших двоичных объектов в вашей учетной записи хранения.
 
 ### <a name="create-your-tokens"></a>Создание маркеров
 
@@ -110,6 +110,6 @@ ms.locfileid: "101739442"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
-> [Приступая к преобразованию документов](get-started-with-document-translation.md)
+> [Начало работы с функцией перевода документов](get-started-with-document-translation.md)
 >
 >

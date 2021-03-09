@@ -12,12 +12,12 @@ ms.date: 07/23/2020
 ms.author: kenwith
 ms.reviewer: japere
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: 19a5d223b587e47c562977cc9fea34f990eb0e46
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: edd2ec633bd78ce1a596782deab57105e9d7f1c3
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100370824"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102487752"
 ---
 # <a name="active-directory-azure-ad-application-proxy-frequently-asked-questions"></a>Часто задаваемые вопросы о прокси приложения Active Directory (Azure AD)
 
@@ -37,6 +37,21 @@ ms.locfileid: "100370824"
 Убедитесь, что у вас есть по крайней мере лицензия Azure AD Premium P1 или P2 и установлен соединитель AD Application Proxy Azure. После успешной установки первого соединителя служба AD Application Proxy Azure будет включена автоматически.
 
 ## <a name="connector-configuration"></a>Конфигурация соединителя
+
+### <a name="why-is-my-connector-still-using-an-older-version-and-not-auto-upgraded-to-latest-version"></a>Почему мой соединитель по-прежнему использует старую версию без автоматического обновления до последней версии?
+
+Это может быть вызвано неправильной работой службы обновления или отсутствием новых обновлений, которые может установить служба.
+
+Служба обновления находится в работоспособном состоянии, если она запущена и в журнале событий не записаны ошибки (журналы приложений и служб — > Microsoft-> AadApplicationProxy-> обновления > администратора). 
+
+> [!IMPORTANT]
+> Для автоматического обновления выпущены только основные версии. Рекомендуем обновить соединитель вручную по регулярному расписанию. Дополнительные сведения о новых выпусках, типе выпуска (Загрузка, автоматическое обновление), исправлении ошибок и новых возможностях см. в статье [Журнал выпусков версий Azure AD application proxy: версия](application-proxy-release-version-history.md).
+
+Чтобы вручную обновить соединитель, выполните следующие действия.
+
+-  Скачайте последнюю версию соединителя. (Его можно найти в разделе прокси приложения на портале Azure. Ссылку можно также найти в [журнале выпусков Azure AD application proxy: версия](application-proxy-release-version-history.md).
+-   Установщик перезапускает службы соединителя Azure AD Application Proxy. В некоторых случаях может потребоваться перезагрузка сервера, если установщик не может заменить все файлы. Поэтому перед началом обновления рекомендуется закрыть все приложения (т. е. Просмотр событий).
+-   Запустите установщик. Процесс обновления выполняется быстро и не требует указания учетных данных, и соединитель не будет повторно зарегистрирован.
 
 ### <a name="can-application-proxy-connector-services-run-in-a-different-user-context-than-the-default"></a>Могут ли службы соединителя прокси приложения запускаться в контексте пользователя, отличном от контекста по умолчанию?
 
@@ -146,7 +161,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 
 В этом случае будет использоваться резервное имя участника-пользователя. Дополнительные сведения о сценарии B2B см. в статье [предоставление пользователям B2B в Azure AD доступа к локальным приложениям](../external-identities/hybrid-cloud-to-on-premises.md).
 
-## <a name="pass-through-authentication"></a>Сквозная проверка подлинности
+## <a name="pass-through-authentication"></a>Сквозная аутентификация
 
 ### <a name="can-i-use-conditional-access-policies-for-applications-published-with-pass-through-authentication"></a>Можно ли использовать политики условного доступа для приложений, опубликованных с помощью сквозной проверки подлинности?
 

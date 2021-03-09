@@ -10,12 +10,12 @@ author: markjones-msft
 ms.author: markjon
 ms.reviewer: mathoma
 ms.date: 11/06/2020
-ms.openlocfilehash: cc2a641cb017edace24db5df69bc4adf3a607524
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.openlocfilehash: d95da29b732e2d520b3413628c9b4a1c403abed6
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98797877"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102488264"
 ---
 # <a name="migration-guide-sql-server-to-sql-server-on-azure-vms"></a>Руководство по миграции. Перенос данных из SQL Server в SQL Server на виртуальных машинах Azure 
 [!INCLUDE[appliesto--sqlmi](../../includes/appliesto-sqlvm.md)]
@@ -58,6 +58,8 @@ ms.locfileid: "98797877"
 
 
 ### <a name="assess"></a>Оценка
+
+[!INCLUDE [assess-estate-with-azure-migrate](../../../../includes/azure-migrate-to-assess-sql-data-estate.md)]
 
 После обнаружения всех источников данных используйте [Помощник по миграции данных (DMA)](/sql/dma/dma-overview) , чтобы оценить миграцию локальных экземпляров SQL Server в экземпляр SQL Server на виртуальной машине Azure, чтобы определить зазоры между исходным и целевым экземплярами. 
 
@@ -123,7 +125,7 @@ ms.locfileid: "98797877"
 1. Приостановка и остановка всех приложений, использующих базы данных, предназначенные для миграции. 
 1. Убедитесь, что пользовательские базы данных неактивны в [режиме одного пользователя](/sql/relational-databases/databases/set-a-database-to-single-user-mode). 
 1. Создайте полную резервную копию базы данных в локальном расположении.
-1. Скопируйте локальные файлы резервных копий на виртуальную машину с помощью удаленного рабочего стола, [Azure обозреватель данных](/azure/data-explorer/data-explorer-overview)или [служебной программы командной строки AZCopy](../../../storage/common/storage-use-azcopy-v10.md) (рекомендуется > 2 ТБ резервных копий).
+1. Скопируйте локальные файлы резервных копий на виртуальную машину с помощью удаленного рабочего стола, [Обозреватель данных Azure](/azure/data-explorer/data-explorer-overview)или [программы командной строки AZCopy](../../../storage/common/storage-use-azcopy-v10.md) (рекомендуется > 2 ТБ резервных копий).
 1. Восстановите полные резервные копии базы данных в SQL Server на виртуальной машине Azure.
 
 ### <a name="log-shipping--minimize-downtime"></a>Доставка журналов (сокращение времени простоя)
@@ -133,7 +135,7 @@ ms.locfileid: "98797877"
 1. Настройте подключение к целевой SQL Server на виртуальной машине Azure в соответствии с вашими требованиями. Ознакомьтесь с разделом [Подключение к виртуальной машине SQL Server в Azure (диспетчер ресурсов)](../../virtual-machines/windows/ways-to-connect-to-sql.md).
 1. Убедитесь, что локальные базы данных пользователей, подлежат миграции, находятся в модели полного восстановления или с неполным протоколированием.
 1. Выполните полное резервное копирование базы данных в локальное расположение и измените любые существующие задания полного резервного копирования базы данных, чтобы использовать ключевое слово [COPY_ONLY](/sql/relational-databases/backup-restore/copy-only-backups-sql-server) для сохранения цепочки журналов.
-1. Скопируйте локальные файлы резервных копий на виртуальную машину с помощью удаленного рабочего стола, [Azure обозреватель данных](/azure/data-explorer/data-explorer-overview)или [служебной программы командной строки AZCopy](../../../storage/common/storage-use-azcopy-v10.md) (рекомендуется >1 ТБ резервных копий).
+1. Скопируйте локальные файлы резервных копий на виртуальную машину с помощью удаленного рабочего стола, [Обозреватель данных Azure](/azure/data-explorer/data-explorer-overview)или [программы командной строки AZCopy](../../../storage/common/storage-use-azcopy-v10.md) (рекомендуется >1 ТБ резервных копий).
 1. Восстановите полные резервные копии базы данных на SQL Server виртуальной машине Azure.
 1. Настройте [доставку журналов](/sql/database-engine/log-shipping/configure-log-shipping-sql-server) между локальной базой данных и целевым SQL Server на виртуальной машине Azure. Не следует повторно инициализировать базы данных, так как она уже была выполнена на предыдущих шагах.
 1. **Вырежьте** на целевой сервер. 
@@ -152,7 +154,7 @@ ms.locfileid: "98797877"
 
 | **Возможность** | **Компонент** | **Методы миграции** |
 | --- | --- | --- |
-| **Базы данных** | Модель  | Скрипт с SQL Server Management Studio |
+| **Базы данных** | Моделирование  | Скрипт с SQL Server Management Studio |
 || Базе | Запланируйте перемещение базы данных TempDB на [временный диск виртуальной машины Azure (SSD](../../virtual-machines/windows/performance-guidelines-best-practices.md#temporary-disk)) для лучшей производительности. Не забудьте выбрать размер виртуальной машины, имеющей достаточный локальный SSD для размещения базы данных TempDB. |
 || Пользовательские базы данных с FILESTREAM |  Используйте методы [резервного копирования и восстановления](../../virtual-machines/windows/migrate-to-vm-from-sql-server.md#back-up-and-restore) для миграции. DMA не поддерживает базы данных с FILESTREAM. |
 | **Безопасность** | Имена входа SQL Server и Windows | Используйте DMA для [переноса имен входа пользователей](/sql/dma/dma-migrateserverlogins). |

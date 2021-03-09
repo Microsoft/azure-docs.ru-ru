@@ -11,12 +11,12 @@ author: jhirono
 ms.date: 11/20/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: 2215c47fcd250a9ac1d6621f7e4b434bd33b3832
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: 66a709f15191a8142f10f15d825276ea2ba4b83f
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98871101"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102487990"
 ---
 # <a name="how-to-use-your-workspace-with-a-custom-dns-server"></a>Использование рабочей области с пользовательским DNS-сервером
 
@@ -52,7 +52,7 @@ ms.locfileid: "98871101"
     > [!NOTE]
     > Доступ к экземплярам вычислений можно получить только в пределах виртуальной сети.
     
-### <a name="these-fqdns-are-in-use-in-all-other-regions"></a>Эти полные доменные имена используются во всех других регионах.
+### <a name="these-fqdns-are-in-use-in-all-other-public-regions"></a>Эти полные доменные имена используются во всех других общедоступных регионах.
 В следующем списке содержатся полные доменные имена, используемые рабочей областью.
 
 * `<workspace-GUID>.workspace.<region>.cert.api.azureml.ms`
@@ -63,6 +63,17 @@ ms.locfileid: "98871101"
     > [!NOTE]
     > Доступ к экземплярам вычислений можно получить только в пределах виртуальной сети.
 
+### <a name="azure-china-21vianet-regions"></a>Регионы Azure для китайского региона (21Vianet)
+
+Следующие полные доменные имена предназначены для регионов Azure для китайского региона (21Vianet):
+
+* `<workspace-GUID>.workspace.<region>.cert.api.ml.azure.cn`
+* `<workspace-GUID>.workspace.<region>.api.ml.azure.cn`
+* `ml-<workspace-name, truncated>-<region>-<workspace-guid>.notebooks.chinacloudapi.cn`
+
+    > [!NOTE]
+    > Имя рабочей области для этого FQDN может быть усечено. Усечение выполняется, чтобы длина полного доменного имени не превышала 63 символов.
+* `<instance-name>.<region>.instances.ml.azure.cn`
 ## <a name="find-the-ip-addresses"></a>Поиск IP-адресов
 
 Чтобы найти внутренние IP-адреса для полных доменных имен в виртуальной сети, используйте один из следующих методов.
@@ -94,7 +105,7 @@ $workspaceDns.CustomDnsConfigs | format-table
 
 ---
 
-Сведения, возвращаемые из всех методов, одинаковы. список полного доменного имени и частного IP-адреса для ресурсов.
+Сведения, возвращаемые из всех методов, одинаковы. список полного доменного имени и частного IP-адреса для ресурсов. Следующий пример относится к глобальному региону Azure:
 
 | Полное доменное имя. | IP-адрес |
 | ----- | ----- |
@@ -112,6 +123,12 @@ $workspaceDns.CustomDnsConfigs | format-table
 >
 > Для всех этих IP-адресов используйте тот же адрес, что и для `*.api.azureml.ms` записей, возвращенных предыдущими шагами.
 
+В следующей таблице приведены примеры IP-адресов из регионов Azure для китайского региона (21Vianet):
+
+| Полное доменное имя. | IP-адрес |
+| ----- | ----- |
+| `52882c08-ead2-44aa-af65-08a75cf094bd.workspace.chinaeast2.api.ml.azure.cn` | `10.1.0.5` |
+| `ml-mype-pltest-chinaeast2-52882c08-ead2-44aa-af65-08a75cf094bd.notebooks.chinacloudapi.cn` | `10.1.0.6` |
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об использовании Машинное обучение Azure с виртуальной сетью см. в [обзоре виртуальной сети](how-to-network-security-overview.md).

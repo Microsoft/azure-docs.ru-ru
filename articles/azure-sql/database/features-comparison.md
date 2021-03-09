@@ -12,12 +12,12 @@ author: danimir
 ms.author: danil
 ms.reviewer: bonova, sstein, danil
 ms.date: 03/08/2021
-ms.openlocfilehash: 56f7a233e7098f18b727da3ce56c5fbe30a328a1
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 8c98ce661e7bb753d4e62d1eaf98702de91c5106
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102447489"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102489775"
 ---
 # <a name="features-comparison-azure-sql-database-and-azure-sql-managed-instance"></a>Сравнение функций: база данных SQL Azure и Управляемый экземпляр Azure SQL
 
@@ -33,8 +33,8 @@ ms.locfileid: "102447489"
 Azure управляет вашими базами данных и гарантирует их высокий уровень доступности. Некоторые функции, которые могут повлиять на высокий уровень доступности или не могут использоваться в мире PaaS, имеют ограниченную функциональность в базе данных SQL и SQL Управляемый экземпляр. Эти функции описаны в таблицах ниже.
 
 Если вам нужны дополнительные сведения о различиях, их можно найти на отдельных страницах:
-- [База данных SQL Azure](transact-sql-tsql-differences-sql-server.md)
-- [Управляемый экземпляр SQL Azure](../managed-instance/transact-sql-tsql-differences-sql-server.md)
+- [Сравнение базы данных SQL Azure и SQL Server различия](transact-sql-tsql-differences-sql-server.md)
+- [Отличия Управляемый экземпляр Azure SQL и SQL Server](../managed-instance/transact-sql-tsql-differences-sql-server.md)
 
 ## <a name="features-of-sql-database-and-sql-managed-instance"></a>Функции базы данных SQL и Управляемый экземпляр SQL
 

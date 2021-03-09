@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: 2d97d02aec84fec92e29e971cd5c667c847b2541
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 733b2375a26b0157f88bc148b52932e2f3e3f2e2
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100368053"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102488279"
 ---
 # <a name="migration-overview-sql-server-to-sql-database"></a>Общие сведения о миграции: SQL Server в базу данных SQL
 [!INCLUDE[appliesto--sqldb](../../includes/appliesto-sqldb.md)]
@@ -104,6 +104,7 @@ ms.locfileid: "100368053"
 
 |Технология | Описание|
 |---------|---------|
+| [Миграция Azure](/azure/migrate/how-to-create-azure-sql-assessment) | Служба "миграция Azure" для SQL Azure позволяет обнаруживать и оценивать размещение данных SQL в масштабе при работе в VMware, предоставляя рекомендации по развертыванию SQL Azure, целевую оценку и ежемесячные оценки. | 
 |[Помощник по миграции данных (DMA)](/sql/dma/dma-migrateonpremsqltosqldb)|Помощник по миграции данных — это средство для настольных ПК, которое обеспечивает простую оценку SQL Server и миграцию в базу данных SQL Azure (как схемы, так и данных). Это средство можно установить на локальный сервер или на локальном компьютере, который имеет возможность подключения к исходным базам данных. Процесс миграции — это логическое перемещение данных между объектами в исходной и целевой базах данных. </br> — Перенос отдельных баз данных (как схемы, так и данных)|
 |[Azure Database Migration Service (DMA)](../../../dms/tutorial-sql-server-to-azure-sql.md)|Служба Azure первого производителя, которая может перенести базы данных SQL Server в базу данных SQL Azure с помощью портал Azure или автоматизировать с помощью PowerShell. Azure DMS требует выбрать предпочтительную виртуальную сеть Azure во время подготовки, чтобы обеспечить подключение к исходным SQL Server базам данных. </br> — Перенос отдельных баз данных или в масштабе. |
 | | |
@@ -157,7 +158,7 @@ ms.locfileid: "100368053"
 Перенос пакетов SQL Server Integration Services (SSIS) в Azure путем повторного развертывания пакетов в среде выполнения Azure-SSIS в [фабрике данных Azure](../../../data-factory/introduction.md). Фабрика данных Azure [поддерживает миграцию пакетов служб SSIS](../../../data-factory/scenario-ssis-migration-overview.md#azure-sql-database-as-database-workload-destination) , предоставляя среду выполнения, созданную для выполнения пакетов служб SSIS в Azure. Кроме того, можно также переписать логику ETL служб SSIS в ADF-файле с помощью [потоков](../../../data-factory/concepts-data-flow-overview.md)данных.
 
 
-#### <a name="sql-server-reporting-services"></a>службы SQL Server Reporting Services
+#### <a name="sql-server-reporting-services"></a>SQL Server Reporting Services
 Миграция отчетов SQL Server Reporting Services (SSRS) в отчеты с разбивкой на страницы в Power BI. Используйте [средство миграции языка определения отчетов](https://github.com/microsoft/RdlMigration) для подготовки и переноса отчетов. Это средство было разработано корпорацией Майкрософт, чтобы помочь клиентам перенести RDL-отчеты с серверов SSRS на платформу Power BI. Он доступен на сайте GitHub, и он документирует полное пошаговое руководство по сценарию миграции. 
 
 #### <a name="high-availability"></a>Высокий уровень доступности
@@ -209,7 +210,7 @@ ms.locfileid: "100368053"
 Эти ресурсы были разработаны в рамках программы Data SQL Ninja, которая спонсируется группой разработчиков Azure Data Group. Основная часть программы Data SQL Ninja заключается в разрешении и ускорении сложной модернизации и реализация перехода на платформу данных Microsoft Azure. Если вы считаете, что ваша организация заинтересована в участии в программе Data SQL Ninja, обратитесь в службу поддержки своей учетной записи и попросите отправить заявку.
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы приступить к переносу SQL Server в базу данных SQL Azure, см. [инструкции по миграции SQL Server в базу данных SQL](sql-server-to-sql-database-guide.md).
 

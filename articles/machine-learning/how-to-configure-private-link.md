@@ -11,12 +11,12 @@ ms.author: aashishb
 author: aashishb
 ms.reviewer: larryfr
 ms.date: 02/09/2021
-ms.openlocfilehash: 34b37fde83ca957e7c90302561589e2568beb59b
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 752f38c0a44d40f2bf7e7b5961dca7743fbf4b76
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102215057"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102488041"
 ---
 # <a name="configure-azure-private-link-for-an-azure-machine-learning-workspace"></a>Настройка частной ссылки Azure для Машинное обучение Azure рабочей области
 
@@ -36,7 +36,7 @@ ms.locfileid: "102215057"
 * Для создания частной конечной точки в необходимо наличие существующей виртуальной сети. Необходимо также [отключить сетевые политики для частных конечных точек](../private-link/disable-private-endpoint-network-policy.md) перед добавлением частной конечной точки.
 ## <a name="limitations"></a>Ограничения
 
-* Использование рабочей области Машинное обучение Azure с частной ссылкой недоступна в регионах Azure для государственных организаций или в регионах Azure для Китая.
+* Использование рабочей области Машинное обучение Azure с частной ссылкой недоступна в регионах Azure для государственных организаций.
 * Если вы включили общий доступ для рабочей области, защищенной с помощью частного канала, и используете Машинное обучение Azure Studio через общедоступный Интернет, некоторые функции, такие как конструктор, могут не получить доступ к данным. Эта проблема возникает, когда данные хранятся в службе, защищенной за пределы виртуальной сети. Например, учетная запись хранения Azure.
 
 ## <a name="create-a-workspace-that-uses-a-private-endpoint"></a>Создание рабочей области, использующей закрытую конечную точку

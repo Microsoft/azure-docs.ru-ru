@@ -3,14 +3,14 @@ title: Обзор функции "Управление обновлениями"
 description: В этой статье представлен обзор функции "Управление обновлениями", которая реализует обновления для компьютеров на платформе Windows и Linux.
 services: automation
 ms.subservice: update-management
-ms.date: 01/22/2021
+ms.date: 03/08/2021
 ms.topic: conceptual
-ms.openlocfilehash: 8c25e54143f0a0815a523bb923b7a7442de2a3d2
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 0a79be9d879e9ccb7ae4583d0674cf2bb23aafa4
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100587860"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102485679"
 ---
 # <a name="update-management-overview"></a>Общие сведения о службе "Управление обновлениями"
 
@@ -78,7 +78,7 @@ ms.locfileid: "100587860"
 |Windows Server 2008 R2 (RTM и Standard с пакетом обновления 1, SP1)| Управление обновлениями поддерживает оценки и исправления для этой операционной системы. [Гибридная Рабочая роль Runbook](../automation-windows-hrw-install.md) поддерживается для Windows Server 2008 R2. |
 |CentOS 6 и 7 (x64)      | Агентам Linux требуется доступ к репозиторию обновлений. Для исправления на основе классификации требуется, чтобы программа `yum` вернула данные безопасности, которых нет в выпусках RTM CentOS. Дополнительные сведения об исправлениях на основе классификации в CentOS см. в разделе о [классификации обновлений в Linux](view-update-assessments.md#linux).          |
 |Red Hat Enterprise 6 и 7 (x64)     | Агентам Linux требуется доступ к репозиторию обновлений.        |
-|SUSE Linux Enterprise Server 12 (x64)     | Агентам Linux требуется доступ к репозиторию обновлений.        |
+|SUSE Linux Enterprise Server 12, 15 и 15,1 (x64)     | Агентам Linux требуется доступ к репозиторию обновлений. Для SUSE 15. x на компьютере требуется Python 3.      |
 |Ubuntu 14,04 LTS, 16,04 LTS и 18,04 LTS (x64)      |Агентам Linux требуется доступ к репозиторию обновлений.         |
 
 > [!NOTE]
@@ -266,7 +266,7 @@ sudo yum -q --security check-update
 > [!NOTE]
 > Для Управления обновлениями требуется связать рабочую область Log Analytics с учетной записью службы автоматизации. Полный список поддерживаемых регионов см. в статье о [сопоставлении рабочих областей Azure](../how-to/region-mappings.md). Сопоставления регионов не влияют на возможность управления виртуальными машинами в отдельном регионе из учетной записи службы автоматизации.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о работе с Управление обновлениями см. в статье [Управление обновлениями для виртуальных машин](manage-updates-for-vm.md).
 
