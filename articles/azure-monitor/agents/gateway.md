@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 12/24/2019
-ms.openlocfilehash: 2c8b77e480f3a4f9ba342c6793a708ca6723ec34
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: bae48dc78eb6973e5bce4d535091bc330c4c897f
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102036577"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102509036"
 ---
 # <a name="connect-computers-without-internet-access-by-using-the-log-analytics-gateway-in-azure-monitor"></a>Подключение компьютеров без доступа к Интернету с помощью шлюза Log Analytics в Azure Monitor
 
@@ -113,7 +113,7 @@ ms.locfileid: "102036577"
  
    ![Снимок экрана с инструкциями по скачиванию шлюза Log Analytics](./media/gateway/download-gateway.png)
 
-или диспетчер конфигурации служб 
+или 
 
 1. В колонке рабочей области в разделе **Параметры** щелкните **Дополнительные параметры**.
 1. Перейдите в раздел **подключенные источники**  >  **серверы Windows** и выберите **Скачать log Analytics шлюз**.
@@ -205,7 +205,7 @@ Msiexec.exe /I "oms gateway.msi" /qn PORTNUMBER=8080 PROXY="10.80.2.200" HASPROX
 Сведения о проектировании и развертывании Azure Load Balancer см. в разделе [что такое Azure Load Balancer?](../../load-balancer/load-balancer-overview.md). Чтобы развернуть базовую подсистему балансировки нагрузки, выполните действия, описанные в этом [кратком руководстве](../../load-balancer/quickstart-load-balancer-standard-public-portal.md) , за исключением шагов, описанных в разделе **создание внутренних серверов**.   
 
 > [!NOTE]
-> Чтобы настроить Azure Load Balancer с помощью **SKU "базовый**", необходимо, чтобы виртуальные машины Azure принадлежали к группе доступности. Дополнительные сведения о группах доступности см. в статье [Управление доступностью виртуальных машин Windows в Azure](../../virtual-machines/manage-availability.md). Чтобы добавить существующие виртуальные машины в группу доступности, обратитесь к статье [set Azure Resource Manager Availability VM Set](https://gallery.technet.microsoft.com/Set-Azure-Resource-Manager-f7509ec4).
+> Чтобы настроить Azure Load Balancer с помощью **SKU "базовый**", необходимо, чтобы виртуальные машины Azure принадлежали к группе доступности. Дополнительные сведения о группах доступности см. в статье [Управление доступностью виртуальных машин Windows в Azure](../../virtual-machines/availability.md). Чтобы добавить существующие виртуальные машины в группу доступности, обратитесь к статье [set Azure Resource Manager Availability VM Set](https://gallery.technet.microsoft.com/Set-Azure-Resource-Manager-f7509ec4).
 > 
 
 После создания подсистемы балансировки нагрузки необходимо создать серверный пул, который распределяет трафик на один или несколько серверов шлюзов. Выполните действия, описанные в разделе Краткое руководство по [созданию ресурсов для балансировщика нагрузки](../../load-balancer/quickstart-load-balancer-standard-public-portal.md).  
@@ -247,7 +247,7 @@ Msiexec.exe /I "oms gateway.msi" /qn PORTNUMBER=8080 PROXY="10.80.2.200" HASPROX
 
 Если группа управления Operations Manager регистрируется в Log Analytics рабочей области в первый раз, вы не увидите параметр, указывающий конфигурацию прокси-сервера для группы управления в консоли. Этот параметр доступен, только если группа управления зарегистрирована в службе.  
 
-Чтобы настроить интеграцию, обновите конфигурацию системного прокси-сервера с помощью команды Netsh в системе, в которой выполняется консоль управления, и на всех серверах управления в этой группе. Выполните следующие действия:
+Чтобы настроить интеграцию, обновите конфигурацию системного прокси-сервера с помощью команды Netsh в системе, в которой выполняется консоль управления, и на всех серверах управления в этой группе. Выполните следующие действия.
 
 1. Откройте командную строку с повышенными привилегиями:
 
@@ -328,7 +328,7 @@ Msiexec.exe /I "oms gateway.msi" /qn PORTNUMBER=8080 PROXY="10.80.2.200" HASPROX
 
 | **Командлет** | **Параметры** | **Описание** | **Пример** |
 | --- | --- | --- | --- |  
-| `Get-OMSGatewayConfig` |Клавиши |Получает конфигурацию службы |`Get-OMSGatewayConfig` |  
+| `Get-OMSGatewayConfig` |Ключ |Получает конфигурацию службы |`Get-OMSGatewayConfig` |  
 | `Set-OMSGatewayConfig` |Ключ (обязательно) <br> Значение |Изменяет конфигурацию службы |`Set-OMSGatewayConfig -Name ListenPort -Value 8080` |  
 | `Get-OMSGatewayRelayProxy` | |Получает адрес (и учетные данные) прокси-сервера ретрансляции (вышестоящего) |`Get-OMSGatewayRelayProxy` |  
 | `Set-OMSGatewayRelayProxy` |Адрес<br> Имя пользователя<br> Пароль (защищенная строка) |Задает адрес (и учетные данные) прокси-сервера ретрансляции (вышестоящего) |1. Задайте прокси-сервер ретрансляции и учетные данные:<br> `Set-OMSGatewayRelayProxy`<br>`-Address http://www.myproxy.com:8080`<br>`-Username user1 -Password 123` <br><br> 2. Укажите прокси-сервер ретрансляции, для которого не требуется проверка подлинности: `Set-OMSGatewayRelayProxy`<br> `-Address http://www.myproxy.com:8080` <br><br> 3. Очистите параметр прокси-сервера ретрансляции:<br> `Set-OMSGatewayRelayProxy` <br> `-Address ""` |  
@@ -369,7 +369,7 @@ Msiexec.exe /I "oms gateway.msi" /qn PORTNUMBER=8080 PROXY="10.80.2.200" HASPROX
 
 В следующей таблице приведены счетчики производительности, доступные для шлюза Log Analytics. Используйте системный монитор для добавления счетчиков.
 
-| **Имя** | **Описание** |
+| **имя**; | **Описание** |
 | --- | --- |
 | Шлюз Log Analytics — Active Client Connection (Активные клиентские подключения) |Количество активных сетевых подключений клиента (TCP) |
 | Шлюз Log Analytics — Error Count (Количество ошибок) |Количество ошибок |

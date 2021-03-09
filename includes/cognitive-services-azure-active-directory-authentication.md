@@ -4,12 +4,12 @@ ms.author: erhopf
 ms.service: cognitive-services
 ms.topic: include
 ms.date: 05/11/2020
-ms.openlocfilehash: fcb4113a4dab1e3de17eb022b1ad386cbc6a9583
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 2d186463f340be14113228baa583fdcf6ff55401
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102109041"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102510619"
 ---
 ## <a name="authenticate-with-azure-active-directory"></a>Проверка подлинности с помощью Azure Active Directory
 
@@ -25,13 +25,13 @@ ms.locfileid: "102109041"
 
 Первым шагом является создание пользовательского поддомена. Если вы хотите использовать существующий ресурс Cognitive Services без имени пользовательского поддомена, следуйте инструкциям в разделе [Cognitive Services пользовательские](../articles/cognitive-services/cognitive-services-custom-subdomains.md#how-does-this-impact-existing-resources) поддомены, чтобы включить пользовательский поддомен для ресурса.
 
-1. Для начала откройте Azure Cloud Shell. Затем [выберите подписку](/powershell/module/az.accounts/set-azcontext?view=azps-3.3.0):
+1. Для начала откройте Azure Cloud Shell. Затем [выберите подписку](/powershell/module/az.accounts/set-azcontext):
 
    ```powershell-interactive
    Set-AzContext -SubscriptionName <SubscriptionName>
    ```
 
-2. Затем [создайте Cognitive Services ресурс](/powershell/module/az.cognitiveservices/new-azcognitiveservicesaccount?view=azps-1.8.0) с пользовательским поддоменом. Имя поддомена должно быть глобально уникальным и не может содержать специальные символы, например: ".", "!", ",".
+2. Затем [создайте Cognitive Services ресурс](/powershell/module/az.cognitiveservices/new-azcognitiveservicesaccount) с пользовательским поддоменом. Имя поддомена должно быть глобально уникальным и не может содержать специальные символы, например: ".", "!", ",".
 
    ```powershell-interactive
    $account = New-AzCognitiveServicesAccount -ResourceGroupName <RESOURCE_GROUP_NAME> -name <ACCOUNT_NAME> -Type <ACCOUNT_TYPE> -SkuName <SUBSCRIPTION_TYPE> -Location <REGION> -CustomSubdomainName <UNIQUE_SUBDOMAIN>
@@ -47,7 +47,7 @@ ms.locfileid: "102109041"
 > [!NOTE]
 > Помните, что для распространения назначений ролей Azure может потребоваться до пяти минут.
 
-1. Сначала выполним регистрацию [приложения AAD](/powershell/module/Az.Resources/New-AzADApplication?view=azps-1.8.0).
+1. Сначала выполним регистрацию [приложения AAD](/powershell/module/Az.Resources/New-AzADApplication).
 
    ```powershell-interactive
    $SecureStringPassword = ConvertTo-SecureString -String <YOUR_PASSWORD> -AsPlainText -Force
@@ -57,7 +57,7 @@ ms.locfileid: "102109041"
 
    Вам потребуется идентификатор **приложения на следующем** шаге.
 
-2. Далее необходимо [создать субъект-службу](/powershell/module/az.resources/new-azadserviceprincipal?view=azps-1.8.0) для приложения AAD.
+2. Далее необходимо [создать субъект-службу](/powershell/module/az.resources/new-azadserviceprincipal) для приложения AAD.
 
    ```powershell-interactive
    New-AzADServicePrincipal -ApplicationId <APPLICATION_ID>
@@ -66,7 +66,7 @@ ms.locfileid: "102109041"
    >[!NOTE]
    > При регистрации приложения в портал Azure этот шаг завершается.
 
-3. Последним шагом является [назначение роли "Cognitive Services пользователя"](/powershell/module/az.Resources/New-azRoleAssignment?view=azps-1.8.0) субъекту-службе (областью действия ресурса). Назначая роль, вы предоставляете субъекту-службе доступ к этому ресурсу. Вы можете предоставить одному субъекту-службе доступ к нескольким ресурсам в подписке.
+3. Последним шагом является [назначение роли "Cognitive Services пользователя"](/powershell/module/az.Resources/New-azRoleAssignment) субъекту-службе (областью действия ресурса). Назначая роль, вы предоставляете субъекту-службе доступ к этому ресурсу. Вы можете предоставить одному субъекту-службе доступ к нескольким ресурсам в подписке.
    >[!NOTE]
    > Используется ObjectId субъекта-службы, а не ObjectId для приложения.
    > ACCOUNT_ID будет идентификатором ресурса Azure созданной учетной записи Cognitive Services. Идентификатор ресурса Azure можно найти в "свойствах" ресурса в портал Azure.

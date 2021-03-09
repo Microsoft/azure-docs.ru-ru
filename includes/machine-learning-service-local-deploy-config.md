@@ -4,14 +4,14 @@ ms.service: machine-learning
 ms.topic: include
 ms.date: 03/16/2020
 ms.author: larryfr
-ms.openlocfilehash: 9240f2616134055d6c97b9b85c264aa7635139cc
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 0eeb82245a53c93af75fc3ce3f37cb588295e5b7
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96027978"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102508101"
 ---
-Записи в документе `deploymentconfig.json` соответствуют параметрам для [LocalWebservice.deploy_configuration](/python/api/azureml-core/azureml.core.webservice.local.localwebservicedeploymentconfiguration?view=azure-ml-py). В следующей таблице описано сопоставление сущностей в документе JSON и параметров метода:
+Записи в документе `deploymentconfig.json` соответствуют параметрам для [LocalWebservice.deploy_configuration](/python/api/azureml-core/azureml.core.webservice.local.localwebservicedeploymentconfiguration). В следующей таблице описано сопоставление сущностей в документе JSON и параметров метода:
 
 | Сущность JSON | Параметр метода | Описание: |
 | ----- | ----- | ----- |

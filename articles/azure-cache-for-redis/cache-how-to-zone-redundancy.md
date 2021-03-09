@@ -6,17 +6,17 @@ ms.author: yegu
 ms.service: cache
 ms.topic: conceptual
 ms.date: 08/11/2020
-ms.openlocfilehash: 0cb7ee5b9fa02e726d03bf1ae9935c07ded6e4a6
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.openlocfilehash: 0623f47528d0530838f62c28cf5546e1e66c187b
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93088018"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102508271"
 ---
 # <a name="enable-zone-redundancy-for-azure-cache-for-redis-preview"></a>Включение избыточности зоны для кэша Azure для Redis (Предварительная версия)
 Из этой статьи вы узнаете, как настроить избыточный в зоне экземпляр кэша Azure с помощью портал Azure.
 
-Кэш Azure для уровней Standard, Premium и Enterprise обеспечивает встроенную избыточность за счет размещения каждого кэша на двух выделенных виртуальных машинах (ВМ). Несмотря на то что эти виртуальные машины находятся в отдельных [доменах сбоя и обновления Azure](../virtual-machines/manage-availability.md) и имеют высокий уровень доступности, они подвержены сбоям на уровне центра обработки данных. Кэш Azure для Redis также поддерживает избыточность зоны на уровнях Premium и Enterprise. Кэш, избыточный в пределах зоны, выполняется на виртуальных машинах, распределенных по нескольким [зонам доступности](../virtual-machines/manage-availability.md#use-availability-zones-to-protect-from-datacenter-level-failures). Он обеспечивает более высокую устойчивость и доступность.
+Кэш Azure для уровней Standard, Premium и Enterprise обеспечивает встроенную избыточность за счет размещения каждого кэша на двух выделенных виртуальных машинах (ВМ). Несмотря на то что эти виртуальные машины находятся в отдельных [доменах сбоя и обновления Azure](../virtual-machines/availability.md) и имеют высокий уровень доступности, они подвержены сбоям на уровне центра обработки данных. Кэш Azure для Redis также поддерживает избыточность зоны на уровнях Premium и Enterprise. Кэш, избыточный в пределах зоны, выполняется на виртуальных машинах, распределенных по нескольким [зонам доступности](../availability-zones/az-overview.md). Он обеспечивает более высокую устойчивость и доступность.
 
 ## <a name="prerequisites"></a>Предварительные требования
 * Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/).
@@ -30,7 +30,7 @@ ms.locfileid: "93088018"
 
 1. Войдите на [портал Azure](https://portal.azure.com) и выберите **Создать ресурс**.
   
-1. На странице **Создание** выберите **Базы данных** , а затем **Кэш Azure для Redis**.
+1. На странице **Создание** выберите **Базы данных**, а затем **Кэш Azure для Redis**.
 
     :::image type="content" source="media/cache-create/new-cache-menu.png" alt-text="Выбор элемента &quot;Кэш Azure для Redis&quot;.":::
    

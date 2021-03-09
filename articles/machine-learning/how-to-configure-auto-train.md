@@ -11,17 +11,17 @@ ms.subservice: core
 ms.date: 09/29/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python,contperf-fy21q1, automl
-ms.openlocfilehash: 98260b909514febf80ea6a1a33b0f9e3d2d1446b
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: e8e904511178f494890b25764a84df8ca64a6b6c
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102431896"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102498869"
 ---
 # <a name="configure-automated-ml-experiments-in-python"></a>Настройка экспериментов автоматизированного машинного обучения на Python
 
 
-В этом руководстве вы узнаете, как определить различные параметры конфигурации для экспериментов автоматизированного машинного обучения с помощью [пакета SDK для Машинного обучения Azure](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py). Автоматическое машинное обучение выбирает алгоритм и гиперпараметры, а также создает модель, готовую для развертывания. Доступно несколько параметров, с помощью которых можно настроить эксперименты автоматического машинного обучения.
+В этом руководстве вы узнаете, как определить различные параметры конфигурации для экспериментов автоматизированного машинного обучения с помощью [пакета SDK для Машинного обучения Azure](/python/api/overview/azure/ml/intro). Автоматическое машинное обучение выбирает алгоритм и гиперпараметры, а также создает модель, готовую для развертывания. Доступно несколько параметров, с помощью которых можно настроить эксперименты автоматического машинного обучения.
 
 Примеры автоматизированных экспериментов машинного обучения см. в разделе [учебник. Обучение модели классификации с помощью автоматического машинного обучения](tutorial-auto-train-models.md) или [обучение моделей с помощью автоматизированного машинного обучения в облаке](how-to-auto-train-remote.md).
 
@@ -46,7 +46,7 @@ ms.locfileid: "102431896"
     Для установки пакета SDK можно либо 
     * Создайте вычислительный экземпляр, который автоматически устанавливает пакет SDK и предварительно настроен для рабочих процессов машинного обучения. Дополнительные сведения см. [в разделе создание машинное обучение Azure вычислительных экземпляров и управление ими](how-to-create-manage-compute-instance.md) . 
 
-    * [Установите `automl` пакет самостоятельно](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/automated-machine-learning/README.md#setup-using-a-local-conda-environment), который включает установку пакета SDK [по умолчанию](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py#default-install) .
+    * [Установите `automl` пакет самостоятельно](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/automated-machine-learning/README.md#setup-using-a-local-conda-environment), который включает установку пакета SDK [по умолчанию](/python/api/overview/azure/ml/install#default-install) .
 
 ## <a name="select-your-experiment-type"></a>Выбор типа эксперимента
 
@@ -69,7 +69,7 @@ automl_config = AutoMLConfig(task = "classification")
 - Данные должны иметь табличный формат.
 - Прогнозируемое значение (целевой столбец) должно присутствовать в данных.
 
-**Для удаленных экспериментов** обучающие данные должны быть доступны из удаленного вычислений. При работе с удаленным вычислением AutoML принимает только [табличные наборы данных для Машинного обучения Azure](/python/api/azureml-core/azureml.data.tabulardataset?preserve-view=true&view=azure-ml-py). 
+**Для удаленных экспериментов** обучающие данные должны быть доступны из удаленного вычислений. При работе с удаленным вычислением AutoML принимает только [табличные наборы данных для Машинного обучения Azure](/python/api/azureml-core/azureml.data.tabulardataset). 
 
 Наборы данных Машинного обучения Azure предоставляют следующие функциональные возможности:
 

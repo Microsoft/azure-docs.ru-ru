@@ -4,12 +4,12 @@ ms.service: virtual-machines
 ms.topic: include
 ms.date: 02/10/2020
 ms.author: cynthn
-ms.openlocfilehash: 61af1f1a97e0ffad0332a34034f5dd1d007d1a5c
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: 397dd3d16fa994df29a08ff9095b4c7c6c4af815
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98901169"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102510766"
 ---
 | Ресурс | Ограничение |
 | --- | --- |
@@ -17,7 +17,7 @@ ms.locfileid: "98901169"
 | Общее количество ядер виртуальных машин на [подписку](https://azure.microsoft.com/pricing/) |20<sup>1</sup> на регион. Чтобы увеличить значение ограничения, обратитесь в службу поддержки. |
 | Общее количество ядер точечных виртуальных машин Azure на [подписку](https://azure.microsoft.com/pricing/) |20<sup>1</sup> на регион. Чтобы увеличить значение ограничения, обратитесь в службу поддержки. |
 | Количество виртуальных машин на ядра серий, таких как Dv2 и F, на [подписку](https://azure.microsoft.com/pricing/) |20<sup>1</sup> на регион. Чтобы увеличить значение ограничения, обратитесь в службу поддержки. |
-| Количество [наборов доступности](../articles/virtual-machines/manage-availability.md#configure-multiple-virtual-machines-in-an-availability-set-for-redundancy) на подписку |2500 на регион. |
+| Количество [наборов доступности](../articles/virtual-machines/availability-set-overview.md) на подписку |2500 на регион. |
 | Количество виртуальных машин на одну группу доступности | 200 |
 | [Количество групп размещения близкого взаимодействия](../articles/virtual-machines/windows/proximity-placement-groups-portal.md) на [группу ресурсов](../articles/azure-resource-manager/management/overview.md#resource-groups) | 800 | 
 | Количество сертификатов на одну группу доступности | 199<sup>2</sup> |

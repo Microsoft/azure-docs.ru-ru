@@ -1,22 +1,22 @@
 ---
-title: Создание виртуальной машины с зоной для Windows с помощью портал Azure
+title: Создание виртуальной машины с зоной с помощью портал Azure
 description: Создание виртуальной машины Windows в зоне доступности с помощью портала Azure
 documentationcenter: virtual-machines
-author: cynthn
-ms.service: virtual-machines-windows
+author: mimckitt
+ms.service: virtual-machines
 ms.topic: conceptual
-ms.workload: infrastructure
-ms.date: 03/27/2018
-ms.author: cynthn
+ms.date: 3/8/2021
+ms.author: mimckitt
+ms.reviewer: cynthn
 ms.custom: ''
-ms.openlocfilehash: 339c093e5444839f9b106cd08980438a864c0474
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 7c7f135d4033a31f855342c172d73f51478931ab
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "87828920"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501691"
 ---
-# <a name="create-a-windows-virtual-machine-in-an-availability-zone-with-the-azure-portal"></a>Создание виртуальной машины Windows в зоне доступности с помощью портала Azure
+# <a name="create-a-virtual-machine-in-an-availability-zone-using-the-azure-portal"></a>Создание виртуальной машины в зоне доступности с помощью портал Azure
 
 В этой статье рассматривается использование портала Azure для создания виртуальной машины в зоне доступности Azure. [Зона доступности](../../availability-zones/az-overview.md) — это физически отдельная зона в регионе Azure. Зоны доступности позволяют защитить приложения и данные от маловероятных сбоев и потери всего центра обработки данных.
 
@@ -40,7 +40,7 @@ ms.locfileid: "87828920"
 
     ![Выбор размера виртуальной машины](./media/create-portal-availability-zone/create-windows-vm-portal-sizes.png)  
 
-5. В разделе **Параметры**  >  **Высокая доступность**выберите одну из пронумерованных зон в раскрывающемся списке **Зона доступности** , примите оставшиеся значения по умолчанию и нажмите кнопку **ОК**.
+5. В разделе **Параметры**  >  **Высокая доступность** выберите одну из пронумерованных зон в раскрывающемся списке **Зона доступности** , примите оставшиеся значения по умолчанию и нажмите кнопку **ОК**.
 
     ![Выбор зоны доступности](./media/create-portal-availability-zone/create-windows-vm-portal-availability-zone.png)
 
@@ -66,6 +66,6 @@ ms.locfileid: "87828920"
 
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Из этой статье вы узнали, как создать виртуальную машину в зоне доступности. Дополнительные сведения о [доступности](../availability.md) для виртуальных машин Azure.

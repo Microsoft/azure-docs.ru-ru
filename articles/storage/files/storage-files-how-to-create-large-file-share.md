@@ -8,12 +8,12 @@ ms.date: 05/29/2020
 ms.author: rogarana
 ms.subservice: files
 ms.custom: devx-track-azurecli, devx-track-azurepowershell
-ms.openlocfilehash: 118c08c8ede369eecd86fe8e6db24473b67ff306
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: c22b3f3164cbb7c1a7ed150d093f77777c7b1023
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102214445"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501300"
 ---
 # <a name="enable-and-create-large-file-shares"></a>Включение и создание больших файловых ресурсов
 
@@ -23,7 +23,7 @@ ms.locfileid: "102214445"
 
 - Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/), прежде чем начинать работу.
 - Если вы хотите использовать Azure CLI, [установите последнюю версию](/cli/azure/install-azure-cli).
-- Если вы планируете использовать модуль Azure PowerShell, [установите последнюю версию](/powershell/azure/install-az-ps?view=azps-4.6.0).
+- Если вы планируете использовать модуль Azure PowerShell, [установите последнюю версию](/powershell/azure/install-az-ps).
 
 ## <a name="restrictions"></a>Ограничения
 
@@ -76,7 +76,7 @@ az storage account create --name <yourStorageAccountName> -g <yourResourceGroup>
 
 # <a name="powershell"></a>[PowerShell](#tab/azure-powershell)
 
-Сначала [установите последнюю версию PowerShell](/powershell/azure/install-az-ps?view=azps-3.0.0) , чтобы можно было включить большие файловые ресурсы.
+Сначала [установите последнюю версию PowerShell](/powershell/azure/install-az-ps) , чтобы можно было включить большие файловые ресурсы.
 
 Чтобы создать учетную запись хранения с включенными большими файловыми ресурсами, используйте следующую команду. Замените `<yourStorageAccountName>` , `<yourResourceGroup>` и данными `<yourDesiredRegion>` .
 

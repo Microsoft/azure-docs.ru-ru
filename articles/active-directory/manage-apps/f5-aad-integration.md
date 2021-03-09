@@ -11,12 +11,12 @@ ms.workload: identity
 ms.date: 11/12/2020
 ms.author: gasinh
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8210e00824d7680f4eecde2f0b299dfcdc93b90
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 38b484bd67f3354132675f343dcc06bd7f9d48a0
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98730577"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102499820"
 ---
 # <a name="f5-big-ip-access-policy-manager-and-azure-active-directory-integration-for-secure-hybrid-access"></a>F5 крупный — диспетчер политики доступа к IP-адресу и интеграция Azure Active Directory для безопасного гибридного доступа
 
@@ -77,7 +77,7 @@ SHA решает эту слабую точку, позволяя организ
 | 5. | КРУПНЫЙ IP-адрес запрашивает дополнительные сведения о сеансе для включения [единого входа](../hybrid/how-to-connect-sso.md) и [управления доступом на основе ролей (RBAC)](../../role-based-access-control/overview.md) в опубликованную службу. |
 | 6. | BIG-IP перенаправляет запрос клиента в серверную службу
 
-## <a name="user-experience"></a>Возможности для пользователя
+## <a name="user-experience"></a>Взаимодействие с пользователем
 
 Является ли непосредственным сотрудником, дочерним или потребителем, что большинство пользователей уже знакомы с входом в Office 365, поэтому доступ к службам с большими IP-адресами через SHA остается практически знакомым.
 
@@ -101,7 +101,7 @@ SHA решает эту слабую точку, позволяя организ
 
 ![На изображении показан поток мониторинга](media/f5-aad-integration/azure-sentinel.png)
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Интеграция F5 BIG-IP с Azure AD для SHA имеет следующие предварительные требования:
 
@@ -155,7 +155,7 @@ SHA решает эту слабую точку, позволяя организ
 
 - [Начало работы с Sentinel в Azure](https://azure.microsoft.com/services/azure-sentinel/?&OCID=AID2100131_SEM_XfknpgAAAHoVMTvh:20200922160358:s&msclkid=5e0e022409fc1c94dab85d4e6f4710e3&ef_id=XfknpgAAAHoVMTvh:20200922160358:s&dclid=CJnX6vHU_esCFUq-ZAod1iQF6A)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Рассмотрите возможность запуска эксперимента SHA (проверка концепции) с помощью существующей инфраструктуры с большим IP-адресом или путем развертывания пробного экземпляра. [Развертывание ВИРТУАЛЬНОЙ машины с большим IP-адресом (VE) в Azure](f5-bigip-deployment-guide.md) занимает примерно 30 минут. в этом случае вы получите следующее:
 

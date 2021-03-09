@@ -3,12 +3,12 @@ title: Создание виртуальной машины в DevTest Labs с A
 description: Узнайте, как использовать Azure DevTest Labs для создания виртуальных машин и управления ими с помощью Azure PowerShell.
 ms.topic: article
 ms.date: 06/26/2020
-ms.openlocfilehash: 6bcc1b8cfe1da7e5eafbee0af008a1defbe6f49d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: f79b6ff92d633cf63477cddaabec918df352bec8
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "85484117"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102499260"
 ---
 # <a name="create-a-virtual-machine-with-devtest-labs-using-azure-powershell"></a>Создание виртуальной машины с DevTest Labs с помощью Azure PowerShell
 В этой статье показано, как создать виртуальную машину в Azure DevTest Labs с помощью Azure PowerShell. Сценарии PowerShell можно использовать для автоматизации создания виртуальных машин в лаборатории в Azure DevTest Labs. 
@@ -17,10 +17,10 @@ ms.locfileid: "85484117"
 Перед началом работы
 
 - [Создайте лабораторию](devtest-lab-create-lab.md) , если вы не хотите использовать существующую лабораторию для тестирования сценария или команд в этой статье. 
-- [Установите Azure PowerShell](/powershell/azure/install-az-ps?view=azps-1.7.0) или используйте Azure Cloud Shell, интегрированные в портал Azure. 
+- [Установите Azure PowerShell](/powershell/azure/install-az-ps) или используйте Azure Cloud Shell, интегрированные в портал Azure. 
 
 ## <a name="powershell-script"></a>Сценарий PowerShell
-В примере сценария в этом разделе используется командлет [Invoke-азресаурцеактион](/powershell/module/az.resources/invoke-azresourceaction?view=azps-1.7.0) .  Этот командлет принимает идентификатор ресурса лаборатории, имя выполняемого действия ( `createEnvironment` ) и параметры, необходимые для выполнения этого действия. Параметры находятся в хэш-таблице, которая содержит все свойства описания виртуальной машины. 
+В примере сценария в этом разделе используется командлет [Invoke-азресаурцеактион](/powershell/module/az.resources/invoke-azresourceaction) .  Этот командлет принимает идентификатор ресурса лаборатории, имя выполняемого действия ( `createEnvironment` ) и параметры, необходимые для выполнения этого действия. Параметры находятся в хэш-таблице, которая содержит все свойства описания виртуальной машины. 
 
 ```powershell
 [CmdletBinding()]

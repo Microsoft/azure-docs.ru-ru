@@ -4,21 +4,21 @@ ms.service: azure-functions
 ms.topic: include
 ms.date: 03/06/2020
 ms.author: glenga
-ms.openlocfilehash: b4b2409928b6a4196738c7cc6c7040e781d34686
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: bff2f05a95faf9c475189cb5a8003cb7fd9f69be
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "80056623"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101701408"
 ---
-1. Чтобы запустить функцию, нажмите клавишу F5 в Visual Studio. Возможно, вам потребуется включить исключение брандмауэра, чтобы инструменты могли обрабатывать HTTP-запросы. Уровни авторизации никогда не применяются при запуске функции в локальной среде.
+1. Чтобы запустить функцию, нажмите клавишу <kbd>F5</kbd> в Visual Studio. Возможно, вам потребуется включить исключение брандмауэра, чтобы инструменты могли обрабатывать HTTP-запросы. Уровни авторизации никогда не применяются при запуске функции в локальной среде.
 
 2. Скопируйте URL-адрес функции из выходных данных среды выполнения функций Azure.
 
     ![Локальная среда выполнения Azure](./media/functions-run-function-test-local-vs/functions-debug-local-vs.png)
 
-3. Вставьте URL-адрес запроса в адресную строку браузера. Добавьте строку запроса `?name=<YOUR_NAME>` в этот URL-адрес и выполните запрос. На следующем изображении показан ответ в браузере на локальный запрос GET, возвращаемый функцией: 
+3. Вставьте URL-адрес для HTTP-запроса в адресной строке браузера. Добавьте строку запроса `?name=<YOUR_NAME>` в этот URL-адрес и выполните запрос. Ниже показан ответ в браузере на локальный запрос GET, возвращенный функцией: 
 
     ![Ответ функции localhost в браузере](./media/functions-run-function-test-local-vs/functions-run-browser-local-vs.png)
 
-4. Чтобы остановить отладку, нажмите клавиши SHIFT+F5 в Visual Studio.
+4. Чтобы остановить отладку, нажмите клавиши <kbd>Shift</kbd>+<kbd>F5</kbd> в Visual Studio.

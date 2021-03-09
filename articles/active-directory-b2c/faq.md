@@ -7,15 +7,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: conceptual
-ms.date: 10/14/2020
+ms.date: 03/08/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: e181b90219f340a29e818801ee2b53f1ccbd9c23
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: cef2636aeecf78a12c48b31b384af2cf76903879
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98660290"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102498835"
 ---
 # <a name="azure-ad-b2c-frequently-asked-questions-faq"></a>Azure AD B2C: часто задаваемые вопросы
 
@@ -82,7 +82,10 @@ Azure AD B2C также поддерживает [пользовательски
 1. Измените поле **Имя**.
 1. Щелкните **Сохранить** в верхней части страницы.
 
-В настоящее время нет возможности изменить значение поля "От:" электронного сообщения.
+В настоящее время нельзя изменить поле "от:" в сообщении электронной почты.
+
+> [!TIP]
+> С Azure AD B2C [настраиваемой политикой](custom-policy-overview.md)можно настроить Azure AD B2C отправки сообщений пользователям, включая поле "от:" в сообщении электронной почты. Для пользовательской проверки электронной почты необходимо использовать сторонний поставщик электронной почты, например [маилжет](custom-email-mailjet.md), [SendGrid](custom-email-sendgrid.md)или [SparkPost](https://sparkpost.com).
 
 ### <a name="how-can-i-migrate-my-existing-user-names-passwords-and-profiles-from-my-database-to-azure-ad-b2c"></a>Как перенести в Azure AD B2C существующие имена пользователей, пароли и профили из своей базы данных?
 

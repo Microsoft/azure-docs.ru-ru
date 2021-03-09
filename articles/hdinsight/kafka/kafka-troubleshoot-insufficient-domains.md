@@ -4,12 +4,12 @@ description: Сбой создания кластера из-за недоста
 ms.service: hdinsight
 ms.topic: troubleshooting
 ms.date: 08/09/2019
-ms.openlocfilehash: 3f7d866d1c9b8c8437bc0f84acca47e0b8631895
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: ed9e98750a469f78855096c3149254cf92c2788f
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98939046"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501351"
 ---
 # <a name="scenario-cluster-creation-failed-due-to-not-sufficient-fault-domains-in-region-in-azure-hdinsight"></a>Сценарий: сбой создания кластера из-за `not sufficient fault domains in region` Azure HDInsight
 
@@ -23,7 +23,7 @@ ms.locfileid: "98939046"
 
 Домен сбоя — это логическое объединение базового оборудования в центре обработки данных Azure. Все домены сбоя используют общий источник питания и сетевой коммутатор. Виртуальные машины и управляемые диски, на которых реализуются узлы в кластере HDInsight, распределяются по этим доменам сбоя. Такая архитектура ограничивает потенциальное влияние сбоев физического оборудования.
 
-В каждом регионе Azure есть определенное количество доменов сбоя. Список доменов и число доменов сбоя, которые они содержат, см. в документации по [наборам доступности](../../virtual-machines/manage-availability.md).
+В каждом регионе Azure есть определенное количество доменов сбоя. Список доменов и число доменов сбоя, которые они содержат, см. в документации по [наборам доступности](../../virtual-machines/availability.md).
 
 В HDInsight кластеры Kafka должны быть подготовлены в регионе с по крайней мере тремя доменами сбоя.
 

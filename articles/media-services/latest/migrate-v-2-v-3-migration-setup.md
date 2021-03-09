@@ -14,12 +14,12 @@ ms.tgt_pltfrm: multiple
 ms.workload: media
 ms.date: 1/14/2021
 ms.author: inhenkel
-ms.openlocfilehash: 3b40ad6c8ef7cc9446f0b60e4cda2efd70b8ed32
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.openlocfilehash: 792f4f81d84b61f0f78c53e62168921221b4f330
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102451580"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102503170"
 ---
 # <a name="step-3---set-up-to-migrate-to-the-v3-rest-api-or-client-sdk"></a>Шаг 3. Настройка миграции на версии 3 REST API или клиентский пакет SDK
 
@@ -50,7 +50,7 @@ API V3 — на основе Azure Resource Management (ARM). Он исполь�
 
 ## <a name="download-client-sdk-of-your-choice-and-set-up-your-environment"></a>Скачайте клиентский пакет SDK и настройте среду.
 
-- Пакеты SDK доступны [для .NET](/dotnet/api/overview/azure/mediaservices/management), .NET Core, [Node.js](/javascript/api/overview/azure/mediaservices/management), [Python](/python/api/overview/azure/mediaservices/management?preserve-view=true&view=azure-python), [Java](/java/api/overview/azure/mediaservices/management), [Go](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/mediaservices/mgmt/2018-07-01/media)и [Ruby](https://github.com/Azure/azure-sdk-for-ruby/blob/master/README.md).
+- Пакеты SDK доступны [для .NET](/dotnet/api/overview/azure/mediaservices/management), .NET Core, [Node.js](/javascript/api/overview/azure/mediaservices/management), [Python](/python/api/overview/azure/mediaservices/management), [Java](/java/api/overview/azure/mediaservices/management), [Go](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/mediaservices/mgmt/2018-07-01/media)и [Ruby](https://github.com/Azure/azure-sdk-for-ruby/blob/master/README.md).
 - [Azure CLI](/cli/azure/ams)   интеграция для простой поддержки сценариев.
 
 > [!NOTE]

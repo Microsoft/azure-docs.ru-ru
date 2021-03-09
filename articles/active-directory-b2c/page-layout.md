@@ -8,15 +8,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 03/04/2021
+ms.date: 03/09/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: df94bb5e6066b83afd566181debbc0872dc1a5b4
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: b15c63545c71d4513abe9102b4de165e2ab5857a
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102120268"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102499855"
 ---
 # <a name="page-layout-versions"></a>Версии макета страницы
 
@@ -73,6 +73,9 @@ ms.locfileid: "102120268"
 - Начальный выпуск
 
 ## <a name="unified-sign-in-sign-up-page-with-password-reset-link-unifiedssp"></a>Страница регистрации единого входа с ссылкой для сброса пароля (унифиедссп)
+
+> [!TIP]
+> При локализации страницы для поддержки нескольких языковых стандартов или языков в потоке пользователя. В статье [идентификаторы локализации](localization-string-ids.md) содержится список идентификаторов локализации, которые можно использовать для выбранных версий страниц.
 
 **2.1.2**
 - Исправлена проблема кодирования локализации для таких языков, как испанский и французский.

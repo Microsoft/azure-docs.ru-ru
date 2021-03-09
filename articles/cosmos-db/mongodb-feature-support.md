@@ -7,12 +7,12 @@ ms.topic: overview
 ms.date: 10/16/2019
 author: sivethe
 ms.author: sivethe
-ms.openlocfilehash: 652be939136139620f6ec024fe98463113c6fb4a
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 61c034d6365909ca6255adcdc0c75e5a8ddd6cb4
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101657525"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101692255"
 ---
 # <a name="azure-cosmos-dbs-api-for-mongodb-32-version-supported-features-and-syntax"></a>API Azure Cosmos DB для MongoDB (версии 3.2) — поддержка возможностей и синтаксиса
 [!INCLUDE[appliesto-mongodb-api](includes/appliesto-mongodb-api.md)]
@@ -22,7 +22,7 @@ Azure Cosmos DB — это глобально распределенная мн
 С помощью API Azure Cosmos DB для MongoDB вы можете пользоваться всеми функциями MongoDB, к которым вы привыкли, и возможностями Cosmos DB для организаций: [глобальное распространение](distribute-data-globally.md), [автоматическое сегментирование](partitioning-overview.md), гарантии по уровням доступности и задержкам, автоматическое индексирование каждого поля, шифрование хранимых данных, резервное копирование и многое другое.
 
 > [!NOTE]
-> Эта статья предназначена для API Azure Cosmos DB для MongoDB (версии 3.2). Сведения о версиях MongoDB 3.6 и 4.0 см. в статьях [MongoDB 3.6: поддержка возможностей и синтаксиса](mongodb-feature-support-36.md) и [MongoDB 4.0: поддержка возможностей и синтаксиса](mongodb-feature-support-40.md).
+> Для версии API Cosmos DB 3.2 для MongoDB в настоящий момент отсутствуют планы по прекращению поддержки (EOL). Мы сообщаем о будущем прекращении поддержки не менее чем за три года.
 
 ## <a name="protocol-support"></a>Поддержка протоколов
 

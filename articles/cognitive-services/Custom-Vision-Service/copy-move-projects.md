@@ -9,12 +9,12 @@ ms.subservice: custom-vision
 ms.topic: how-to
 ms.date: 09/08/2020
 ms.author: pafarley
-ms.openlocfilehash: 363f0062d316b22019b864972d5a830e4a838b93
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 7d58a8239c728f70efe3584c2649e196dffd791f
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102178105"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501096"
 ---
 # <a name="copy-and-move-your-custom-vision-projects"></a>Копирование и перемещение проектов Пользовательское визуальное распознавание
 
@@ -31,7 +31,7 @@ API-интерфейсы **[експортпрожект](https://southcentralus
 - Два Пользовательское визуальное распознавание ресурсов Azure. Если у вас их нет, перейдите к портал Azure и [Создайте новый ресурс пользовательское визуальное распознавание](https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=microsoft_azure_cognitiveservices_customvision#create/Microsoft.CognitiveServicesCustomVision?azure-portal=true).
 - Ключи обучения и URL-адреса конечных точек для ресурсов Пользовательское визуальное распознавание. Эти значения можно найти на вкладке **Обзор** ресурса на портал Azure.
 - Созданный проект Пользовательское визуальное распознавание. Инструкции о том, как это сделать, см. в разделе [Построение классификатора](./getting-started-build-a-classifier.md) .
-* [PowerShell версии 6.0](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1)или аналогичная программа командной строки.
+* [PowerShell версии 6.0](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows)или аналогичная программа командной строки.
 
 ## <a name="process-overview"></a>Общие сведения о процессе
 
