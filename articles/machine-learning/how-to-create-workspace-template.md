@@ -10,12 +10,12 @@ ms.custom: how-to, devx-track-azurecli, devx-track-azurepowershell
 ms.author: larryfr
 author: Blackmist
 ms.date: 09/30/2020
-ms.openlocfilehash: d64dfdad0c51950228288b704b3fdb7579496abb
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: 98ea51957014a4e9d83f27adefd86d8d0708b500
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/09/2021
-ms.locfileid: "102488075"
+ms.locfileid: "102503187"
 ---
 # <a name="use-an-azure-resource-manager-template-to-create-a-workspace-for-azure-machine-learning"></a>Создание рабочей области для Машинного обучения Azure с помощью шаблона Azure Resource Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "102488075"
 
 * **Подписка Azure**. Если у вас ее нет, используйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree).
 
-* Чтобы использовать шаблон из командной строки, вам потребуется [Azure PowerShell](/powershell/azure/?view=azps-1.2.0) или [Azure CLI](/cli/azure/install-azure-cli).
+* Чтобы использовать шаблон из командной строки, вам потребуется [Azure PowerShell](/powershell/azure/) или [Azure CLI](/cli/azure/install-azure-cli).
 
 * Для некоторых сценариев требуется открыть запрос в службу поддержки. Они приведены ниже.
 

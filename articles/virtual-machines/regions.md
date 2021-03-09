@@ -1,18 +1,19 @@
 ---
 title: Регионы Azure
 description: Сведения о регионах для запуска виртуальных машин в Azure.
-author: cynthn
-ms.author: cynthn
+author: mimckitt
+ms.author: mimckitt
+ms.reviewer: cynthnn
 ms.service: virtual-machines
 ms.topic: conceptual
 ms.workload: infrastructure-services
-ms.date: 05/28/2019
-ms.openlocfilehash: 094b78fa35da451101f4f5664cca46292d78d146
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 3/8/2021
+ms.openlocfilehash: e874a76cc447158127da8482f23bf03d56961818
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88650559"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102504615"
 ---
 # <a name="regions-for-virtual-machines-in-azure"></a>Регионы размещения виртуальных машин в Azure
 
@@ -45,9 +46,9 @@ Azure работает на основе множества центров об�
 
 | Первичная | Вторичная |
 |:--- |:--- |
-| западная часть США |Восточная часть США |
+| Западная часть США |Восточная часть США |
 | Северная Европа |Западная Европа |
-| Юго-Восточная Азия |Восточная Азия |
+| Southeast Asia |Восточная Азия |
 
 Полный [список пар регионов](../best-practices-availability-paired-regions.md#what-are-paired-regions)см. здесь.
 

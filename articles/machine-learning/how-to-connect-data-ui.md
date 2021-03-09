@@ -11,12 +11,12 @@ author: nibaccam
 ms.reviewer: nibaccam
 ms.date: 09/22/2020
 ms.custom: how-to, data4ml
-ms.openlocfilehash: 554c815e6384115d56611e497f49a2c97ed15e38
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.openlocfilehash: 0e2230bdcf2b2f4358db4a0d600506b711f39c45
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96461428"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102508237"
 ---
 # <a name="connect-to-data-with-the-azure-machine-learning-studio"></a>Подключение к данным с помощью Машинное обучение Azure Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "96461428"
 
 Сведения о том, где хранятся хранилища данных и наборы данных в общем рабочем процессе доступа к данным Машинное обучение Azure, см. в статье [безопасный доступ к данным](concept-data.md#data-workflow) .
 
-Сведения о первом интерфейсе кода см. в следующих статьях, посвященных использованию [пакета SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) для:
+Сведения о первом интерфейсе кода см. в следующих статьях, посвященных использованию [пакета SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/) для:
 * [Подключение к службам хранилища Azure с хранилищами](how-to-access-data.md)данных. 
 * [Создание машинное обучение Azure наборов данных](how-to-create-register-datasets.md). 
 

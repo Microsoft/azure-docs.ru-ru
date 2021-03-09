@@ -7,12 +7,12 @@ ms.topic: article
 ms.date: 12/17/2020
 ms.author: ccompy
 ms.custom: seodec18
-ms.openlocfilehash: 93fd682f252ac3f85c642633484a9c4eb6c2fb4b
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: fea189952b1452c680255ceb99e38609775a8bd6
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102180859"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102502694"
 ---
 # <a name="set-up-azure-app-service-access-restrictions"></a>Настройка ограничений доступа для службы приложений Azure
 
@@ -173,7 +173,7 @@ ms.locfileid: "102180859"
     --rule-name 'IP example rule' --action Allow --ip-address 122.133.144.0/24 --priority 100
   ```
 
-* Используйте [Azure PowerShell](/powershell/module/Az.Websites/Add-AzWebAppAccessRestrictionRule?view=azps-5.2.0&preserve-view=true). Пример:
+* Используйте [Azure PowerShell](/powershell/module/Az.Websites/Add-AzWebAppAccessRestrictionRule). Пример:
 
 
   ```azurepowershell-interactive

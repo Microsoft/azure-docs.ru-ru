@@ -6,12 +6,12 @@ ms.topic: how-to
 ms.date: 12/15/2020
 ms.author: helohr
 manager: lizross
-ms.openlocfilehash: 05d312296b48f35ea87c5443cc587989e2d11fd5
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: c73f6884a0bf9dc1e12e97439166c8aeabe6e35a
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100587962"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102504564"
 ---
 # <a name="deploy-the-windows-virtual-desktop-classic-diagnostics-tool"></a>Развертывание средства диагностики виртуальных рабочих столов Windows (классическая модель)
 
@@ -38,8 +38,8 @@ ms.locfileid: "100587962"
 
 Кроме того, перед началом работы необходимо установить эти два модуля PowerShell:
 
-- [Overview of Azure PowerShell](/powershell/azure/install-az-ps?view=azps-2.4.0/&preserve-view=true) (Общие сведения об Azure PowerShell)
-- [Модуль Azure AD](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0/&preserve-view=true)
+- [Overview of Azure PowerShell](/powershell/azure/install-az-ps) (Общие сведения об Azure PowerShell)
+- [Модуль Azure AD](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true)
 
 Убедитесь, что ваш идентификатор подписки готов для входа в систему.
 
@@ -193,7 +193,7 @@ ms.locfileid: "100587962"
 
 8. Теперь перейдите к ресурсам Azure, выберите ресурс служб приложений Azure с именем, указанным в шаблоне, и перейдите по URL-адресу, связанному с ним. (Например, если имя приложения, использованное в шаблоне, имело значение `contosoapp45` , связанный URL-адрес — <http://contoso.azurewebsites.net> ).
 9. Войдите в систему с помощью соответствующей учетной записи пользователя Azure Active Directory.
-10.   Выберите **Принять**.
+10.   Нажмите кнопку **Принять**.
 
 ## <a name="distribute-the-diagnostics-tool"></a>Распространение средства диагностики
 
@@ -259,7 +259,7 @@ ms.locfileid: "100587962"
 
     - Пороговое значение: выше 2000 мс помечено как неработоспособное.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как отслеживать журналы действий при [использовании диагностики с log Analytics](diagnostics-log-analytics-2019.md).
 - Ознакомьтесь с распространенными сценариями ошибок и способами их устранения в статье [Обнаружение и диагностика проблем](diagnostics-role-service-2019.md).

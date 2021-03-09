@@ -11,12 +11,12 @@ author: MicrosoftGuyJFlo
 manager: daveba
 ms.reviewer: sandeo
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 419823086fd7ba05ba5023216be302576350e30a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: cadba181ea7d6a12ca64c78f3c7c58654d5f756f
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101687297"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102500814"
 ---
 # <a name="how-to-plan-your-hybrid-azure-active-directory-join-implementation"></a>Руководство. Планирование реализации гибридного присоединения к Azure Active Directory.
 
@@ -63,7 +63,7 @@ ms.locfileid: "101687297"
 
 ### <a name="windows-down-level-devices"></a>Устройства Windows нижнего уровня
 
-- Windows 8.1
+- Windows 8.1
 - Поддержка Windows 7 закончилась 14 января 2020 г. Дополнительные сведения см. в разделе [Поддержка Windows 7 завершена](https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
 - Windows Server 2012 R2
 - Windows Server 2012
@@ -171,7 +171,7 @@ ms.locfileid: "101687297"
 | ----- | ----- | ----- | ----- |
 | Маршрутизируемый | Федеративные | Начиная с выпуска 1703 | Общедоступная версия |
 | Немаршрутизируемый | Федеративные | Начиная с выпуска 1803 | Общедоступная версия |
-| Маршрутизируемый | Управляемый | Начиная с выпуска 1803 | Общедоступная версия Azure AD SSPR в Windows на экране блокировки не поддерживается |
+| Маршрутизируемый | Управляемый | Начиная с выпуска 1803 | Общедоступная версия Azure AD SSPR в Windows не поддерживается. Локальная учетная имя участника-пользователя должна быть синхронизирована с     `onPremisesUserPrincipalName` атрибутом в Azure AD. |
 | Немаршрутизируемый | Управляемый | Не поддерживается | |
 
 ## <a name="next-steps"></a>Дальнейшие действия

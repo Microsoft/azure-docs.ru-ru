@@ -3,12 +3,12 @@ title: Автоматизация добавления пользователя 
 description: В этой статье показано, как автоматизировать добавление пользователя в лабораторию в Azure DevTest Labs с помощью шаблонов Azure Resource Manager, PowerShell и интерфейса командной строки.
 ms.topic: article
 ms.date: 06/26/2020
-ms.openlocfilehash: 61853efacc5974b81d46b2b8cca0f2796672d72d
-ms.sourcegitcommit: 03713bf705301e7f567010714beb236e7c8cee6f
+ms.openlocfilehash: 6dddf06289da79e16cbd7e64869fa77f0a40dd22
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92327966"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102508832"
 ---
 # <a name="automate-adding-a-lab-user-to-a-lab-in-azure-devtest-labs"></a>Автоматизация добавления пользователя лаборатории в лабораторию в Azure DevTest Labs
 Azure DevTest Labs позволяет быстро создавать среды самообслуживания для разработки и тестирования с помощью портал Azure. Однако если у вас есть несколько команд и несколько экземпляров DevTest Labs, Автоматизация процесса создания позволит сэкономить время. [Шаблоны Azure Resource Manager](https://github.com/Azure/azure-devtestlab/tree/master/Environments) позволяют создавать лабораторные и лабораторные виртуальные машины, пользовательские образы, формулы и добавлять пользователей в автоматическом режиме. В этой статье особое внимание уделяется добавлению пользователей в экземпляр DevTest Labs.
@@ -100,7 +100,7 @@ Azure DevTest Labs позволяет быстро создавать среды
 
 Идентификатор подписки получается с помощью `subscription().subscriptionId` функции-шаблона.  
 
-Необходимо получить определение роли для `DevTest Labs User` встроенной роли. Чтобы получить идентификатор GUID для роли [пользователя DevTest Labs](../role-based-access-control/built-in-roles.md#devtest-labs-user) , можно использовать [назначения ролей REST API](/rest/api/authorization/roleassignments) или командлет [Get-азроледефинитион](/powershell/module/az.resources/get-azroledefinition?view=azps-1.8.0) .
+Необходимо получить определение роли для `DevTest Labs User` встроенной роли. Чтобы получить идентификатор GUID для роли [пользователя DevTest Labs](../role-based-access-control/built-in-roles.md#devtest-labs-user) , можно использовать [назначения ролей REST API](/rest/api/authorization/roleassignments) или командлет [Get-азроледефинитион](/powershell/module/az.resources/get-azroledefinition) .
 
 ```powershell
 $dtlUserRoleDefId = (Get-AzRoleDefinition -Name "DevTest Labs User").Id

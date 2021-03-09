@@ -8,12 +8,12 @@ ms.date: 01/22/2021
 ms.author: rogarana
 ms.subservice: files
 ms.custom: references_regions, devx-track-azurecli
-ms.openlocfilehash: 2ff669d0ff3bde791de9bc7773e13d880762f898
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 778d82cd36e1f7389a443630f0982dd8774fe3ee
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102214428"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102509206"
 ---
 # <a name="how-to-create-an-nfs-share"></a>Создание общей папки NFS
 Файловые ресурсы Azure — это полностью управляемые общие файловые ресурсы, которые находятся в облаке. В этой статье рассматривается создание общей папки, использующей протокол NFS. Дополнительные сведения об этих протоколах см. в статье [протоколы файловых ресурсов Azure](storage-files-compare-protocols.md).
@@ -208,7 +208,7 @@ az storage account create \
    Install-Module Az.Storage -Repository PsGallery -RequiredVersion 2.5.2-preview -AllowClobber -AllowPrerelease -Force  
    ```
 
-   Дополнительные сведения об установке модулей PowerShell см. [в статье Установка модуля Azure PowerShell](/powershell/azure/install-az-ps?view=azps-3.0.0&preserve-view=true) .
+   Дополнительные сведения об установке модулей PowerShell см. [в статье Установка модуля Azure PowerShell](/powershell/azure/install-az-ps) .
    
 1. Чтобы создать файловый ресурс уровня "Премиум" с помощью модуля Azure PowerShell, используйте командлет [New-азрмсторажешаре](/powershell/module/az.storage/new-azrmstorageshare) .
 

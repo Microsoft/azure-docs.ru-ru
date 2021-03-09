@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 05/15/2020
 ms.author: v-demjoh
-ms.openlocfilehash: dcfc19700d24ca51d6e28aa511197c1c9e79e521
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: c939c1d061f4e01a00bc2b886056e42f0b059ad5
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102428235"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102510851"
 ---
 ## <a name="download-and-install"></a>Загрузите и установите
 
@@ -19,7 +19,7 @@ ms.locfileid: "102428235"
 Вот как установить интерфейс командной строки службы "Речь" в Windows:
 
 1. В Windows для вашей платформы необходим [распространяемый компонент Microsoft Visual C++ для Visual Studio 2019](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads). При первой установке может потребоваться перезагрузка.
-1. Установите [пакет SDK для .NET Core 3.1](/dotnet/core/install/linux).
+1. Установите [пакет SDK для .NET Core 3.1](/dotnet/core/install/windows).
 2. Установите CLI службы "Речь" с использованием NuGet. Для этого введите следующую команду:
 
    ```console
@@ -52,7 +52,7 @@ ms.locfileid: "102428235"
 
 Вот как установить интерфейс командной строки службы "Речь" в Linux (ЦП с архитектурой x64):
 
-1. Установите [.NET Core 3.1](/dotnet/core/install/linux).
+1. Установите [пакет SDK для .NET Core 3.1](/dotnet/core/install/linux).
 2. Установите CLI службы "Речь" с использованием NuGet. Для этого введите следующую команду:
 
     `dotnet tool install --global Microsoft.CognitiveServices.Speech.CLI --version 1.15.0`

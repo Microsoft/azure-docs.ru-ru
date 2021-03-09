@@ -8,12 +8,12 @@ ms.date: 01/04/2021
 ms.author: chhenk
 ms.reviewer: azmetadatadev
 ms.custom: references_regions
-ms.openlocfilehash: e18c09130fcbcdbb470abc19d76bdf2ccfef0775
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 554730919d4226c07e099d5e457cd0fd20dbad30
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102175728"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102510620"
 ---
 Служба метаданных экземпляров Azure (IMDS) предоставляет сведения о текущих экземплярах виртуальных машин. Его можно использовать для управления виртуальными машинами и их настройки.
 Эти сведения включают SKU, хранилище, конфигурации сети и будущие события обслуживания. Полный список доступных данных см. в разделе [Сводка по категориям конечных точек](#endpoint-categories).
@@ -345,8 +345,8 @@ GET /metadata/instance
 | `osType` | Windows или Linux | 2017-04-02
 | `placementGroupId` | [Группа размещения](../articles/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups.md) масштабируемого набора виртуальных машин | 2017-08-01
 | `plan` | [План](/rest/api/compute/virtualmachines/createorupdate#plan), указывающий наименование, продукт и издателя виртуальной машины (если используется образ Azure Marketplace) | 2018-04-02
-| `platformUpdateDomain` |  [Домен обновления](../articles/virtual-machines/manage-availability.md), на котором запущена виртуальная машина | 2017-04-02
-| `platformFaultDomain` | [Домен сбоя](../articles/virtual-machines/manage-availability.md), на котором запущена виртуальная машина | 2017-04-02
+| `platformUpdateDomain` |  [Домен обновления](../articles/virtual-machines/availability.md), на котором запущена виртуальная машина | 2017-04-02
+| `platformFaultDomain` | [Домен сбоя](../articles/virtual-machines/availability.md), на котором запущена виртуальная машина | 2017-04-02
 | `priority` | Приоритет виртуальной машины. Дополнительные сведения см. в разделе [точки виртуальных машин](../articles/virtual-machines/spot-vms.md) . | 2020-12-01
 | `provider` | Поставщик виртуальной машины | 2018-10-01
 | `publicKeys` | [Коллекция открытых ключей](/rest/api/compute/virtualmachines/createorupdate#sshpublickey), назначенная виртуальной машине и путям | 2018-04-02

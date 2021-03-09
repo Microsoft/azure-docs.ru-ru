@@ -11,12 +11,12 @@ author: anosov1960
 ms.author: sashan
 ms.reviewer: mathoma, sstein
 ms.date: 02/13/2019
-ms.openlocfilehash: 659a8a3b38a79cc9dcc97f6f1e9c4395426ef7a8
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: b7d21852ad684782fa1cb917442fee236d3c882b
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91450256"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102502150"
 ---
 # <a name="manage-rolling-upgrades-of-cloud-applications-by-using-sql-database-active-geo-replication"></a>Управление последовательными обновлениями для облачных приложений с помощью активной георепликации базы данных SQL
 [!INCLUDE[appliesto-sqldb](../includes/appliesto-sqldb.md)]
@@ -110,7 +110,7 @@ ALTER DATABASE <Prod_DB>
 SET (ALLOW_CONNECTIONS = NO)
 ```
 
-2. Завершите георепликацию, отменив соединение с получателем (11). При этом создается независимая, но полностью синхронизированная копия рабочей базы данных-источника. Эта база данных будет обновлена. В следующем примере используется язык Transact-SQL, но также доступен [PowerShell](/powershell/module/az.sql/remove-azsqldatabasesecondary?view=azps-1.5.0&preserve-view=true) . 
+2. Завершите георепликацию, отменив соединение с получателем (11). При этом создается независимая, но полностью синхронизированная копия рабочей базы данных-источника. Эта база данных будет обновлена. В следующем примере используется язык Transact-SQL, но также доступен [PowerShell](/powershell/module/az.sql/remove-azsqldatabasesecondary) . 
 
 ```sql
 -- Disconnect the secondary, terminating geo-replication
@@ -149,7 +149,7 @@ REMOVE SECONDARY ON SERVER <Partner-Server>
 
 Два описанных здесь метода обновления отличаются по сложности и стоимости, но они оба позволяют минимизировать период, в течение которого пользователь сможет выполнять только операции чтения. Это время напрямую зависит от длительности выполнения сценария обновления. Оно не зависит от размера базы данных, выбранного уровня служб, конфигурации веб-сайта и других факторов, которыми нелегко управлять. Подготовительные действия отделены от действий по обновлению и не влияют на рабочее приложение. Эффективность сценария обновления — ключевой фактор, определяющий взаимодействие с пользователем во время обновления. Поэтому для улучшения всей процедуры рекомендуется сосредоточиться на повышении эффективности сценария обновления.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Сведения об обеспечении непрерывности бизнес-процессов и возможные сценарии описаны в [обзоре непрерывности бизнес-процессов](business-continuity-high-availability-disaster-recover-hadr-overview.md).
 * Дополнительные сведения об активной георепликации базы данных SQL Azure см. в статье [Создание считываемых баз данных-получателей с помощью активной георепликации](active-geo-replication-overview.md).

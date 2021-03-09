@@ -9,12 +9,12 @@ ms.subservice: machine-learning
 ms.date: 06/30/2020
 ms.author: midesa
 ms.reviewer: jrasnick
-ms.openlocfilehash: fc9909614a9d557c19a22e215b7513a038f88c33
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 89309cfe427183d594a5cc2f76332ae150d4f803
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98942338"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102498682"
 ---
 # <a name="tutorial-train-a-model-in-python-with-automated-machine-learning"></a>Руководство. Обучение модели на Python с помощью автоматизированного машинного обучения
 
@@ -144,7 +144,7 @@ ws = Workspace(workspace_name = workspace_name,
 ```
 
 ## <a name="convert-a-dataframe-to-an-azure-machine-learning-dataset"></a>Преобразование DataFrame в набор данных Машинного обучения Azure
-Чтобы отправить удаленный эксперимент, преобразуйте набор данных в экземпляр ```TabularDatset``` для Машинного обучения Azure. [TabularDataset](/python/api/azureml-core/azureml.data.tabulardataset?preserve-view=true&view=azure-ml-py) представляет данные в табличном формате, выполняя синтаксический анализ предоставленных файлов.
+Чтобы отправить удаленный эксперимент, преобразуйте набор данных в экземпляр ```TabularDatset``` для Машинного обучения Azure. [TabularDataset](/python/api/azureml-core/azureml.data.tabulardataset) представляет данные в табличном формате, выполняя синтаксический анализ предоставленных файлов.
 
 Приведенный ниже код позволяет получить сведения о существующей рабочей области и стандартном хранилище данных Машинного обучения Azure. Затем это хранилище и расположение файлов передаются в параметре path для создания нового экземпляра ```TabularDataset```. 
 

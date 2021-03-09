@@ -15,12 +15,12 @@ ms.date: 11/07/2019
 ms.author: mathoma
 ms.reviewer: jroth
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 7914f924492264810acd929cc7d422e0cc780a89
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.openlocfilehash: f0b7e04becd42180df3393d7036294c1629cdc21
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97358798"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102499498"
 ---
 # <a name="how-to-use-the-azure-portal-to-provision-a-windows-virtual-machine-with-sql-server"></a>Использование портал Azure для инициализации виртуальной машины Windows с SQL Server
 
@@ -105,7 +105,7 @@ ms.locfileid: "97358798"
 * В разделе **Дополнительно** выберите **Да** для параметра **Использование управляемых дисков**.
 
    > [!NOTE]
-   > Корпорация Майкрософт рекомендует использовать управляемые диски для SQL Server. Управляемые диски управляют хранилищем в фоновом режиме. Кроме того, когда виртуальные машины с управляемыми дисками находятся в одной группе доступности, Azure распределяет ресурсы хранения, чтобы обеспечить соответствующую избыточность. Дополнительные сведения см. в статье [Общие сведения об управляемых дисках Azure](../../../virtual-machines/managed-disks-overview.md). Подробные сведения об управляемых дисках в группе доступности см. в статье [Управление доступностью виртуальных машин Windows в Azure](../../../virtual-machines/manage-availability.md).
+   > Корпорация Майкрософт рекомендует использовать управляемые диски для SQL Server. Управляемые диски управляют хранилищем в фоновом режиме. Кроме того, когда виртуальные машины с управляемыми дисками находятся в одной группе доступности, Azure распределяет ресурсы хранения, чтобы обеспечить соответствующую избыточность. Дополнительные сведения см. в статье [Общие сведения об управляемых дисках Azure](../../../virtual-machines/managed-disks-overview.md). Подробные сведения об управляемых дисках в группе доступности см. в статье [Управление доступностью виртуальных машин Windows в Azure](../../../virtual-machines/availability.md).
 
 ![Параметры диска виртуальной машины SQL](./media/create-sql-vm-portal/azure-sqlvm-disks.png)
   

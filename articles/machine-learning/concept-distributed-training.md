@@ -9,12 +9,12 @@ ms.author: nibaccam
 ms.subservice: core
 ms.topic: conceptual
 ms.date: 03/27/2020
-ms.openlocfilehash: 4e1972e0530656bf6cc0e6319191ab4ebbfbfddb
-ms.sourcegitcommit: 6a902230296a78da21fbc68c365698709c579093
+ms.openlocfilehash: f87175500fcf5bdbcf9a5c2f499f6bab96b37b63
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93358581"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102498971"
 ---
 # <a name="distributed-training-with-azure-machine-learning"></a>Распределенное обучение с помощью Машинное обучение Azure
 
@@ -24,7 +24,7 @@ ms.locfileid: "93358581"
 
 ## <a name="deep-learning-and-distributed-training"></a>Глубокое обучение и распределенное обучение 
 
-Существует два основных типа распределенного обучения: [параллелизм данных](#data-parallelism) и [параллелизм моделей](#model-parallelism). Для распределенного обучения по моделям глубокого обучения [пакет SDK для машинное обучение Azure в Python](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py) поддерживает интеграцию с популярными платформами, PyTorch и TensorFlow. Обе платформы используют параллелизм данных для распределенного обучения и могут использовать [хоровод](https://horovod.readthedocs.io/en/latest/summary_include.html) для оптимизации скорости вычислений. 
+Существует два основных типа распределенного обучения: [параллелизм данных](#data-parallelism) и [параллелизм моделей](#model-parallelism). Для распределенного обучения по моделям глубокого обучения [пакет SDK для машинное обучение Azure в Python](/python/api/overview/azure/ml/intro) поддерживает интеграцию с популярными платформами, PyTorch и TensorFlow. Обе платформы используют параллелизм данных для распределенного обучения и могут использовать [хоровод](https://horovod.readthedocs.io/en/latest/summary_include.html) для оптимизации скорости вычислений. 
 
 * [Распределенное обучение с использованием PyTorch](how-to-train-pytorch.md#distributed-training)
 

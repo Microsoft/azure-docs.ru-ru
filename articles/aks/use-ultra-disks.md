@@ -4,18 +4,18 @@ description: Узнайте, как включить и настроить Ultra
 services: container-service
 ms.topic: article
 ms.date: 07/10/2020
-ms.openlocfilehash: d66b806adb7285e0ce2a21d8fe9254b3dbe89bcb
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: c743162ed3f75386287e050443e82069e797ced9
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102178853"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102502575"
 ---
 # <a name="use-azure-ultra-disks-on-azure-kubernetes-service-preview"></a>Использование Azure Ultra Disks в службе Kubernetes Azure (Предварительная версия)
 
 [Диски Azure "Ultra](../virtual-machines/disks-enable-ultra-ssd.md) " обеспечивают высокую пропускную способность, высокую скорость операций ввода-вывода и постоянную задержку на диске для приложений с отслеживанием состояния. Одним из основных преимуществ использования Ultra Disks является возможность динамического изменения производительности SSD вместе с рабочими нагрузками без необходимости перезапуска узлов агента. Ultra Disks подходит для рабочих нагрузок, интенсивно использующих данные.
 
-## <a name="before-you-begin"></a>Перед началом
+## <a name="before-you-begin"></a>Подготовка к работе
 
 Этот компонент можно задать только при создании кластера или во время создания пула узлов.
 
@@ -84,7 +84,7 @@ az aks create -g MyResourceGroup -n MyManagedCluster -l westus2 --node-vm-size S
 
 ## <a name="enable-ultra-disks-on-an-existing-cluster"></a>Включение Ultra Disks в существующем кластере
 
-Вы можете включить Ultra Disks в существующих кластерах, добавив новый пул узлов в кластер, поддерживающий Ultra Disks. Настройте новый пул узлов для использования шифрования на основе узла с помощью `--aks-custom-headers` флага.
+Вы можете включить Ultra Disks в существующих кластерах, добавив новый пул узлов в кластер, поддерживающий Ultra Disks. Настройте новый пул узлов для использования Ultra Disks с помощью `--aks-custom-headers` флага.
 
 ```azurecli
 az aks nodepool add --name ultradisk --cluster-name myAKSCluster --resource-group myResourceGroup --node-vm-size Standard_L8s_v2 --zones 1 2 --node-count 2 --aks-custom-headers EnableUltraSSD=true

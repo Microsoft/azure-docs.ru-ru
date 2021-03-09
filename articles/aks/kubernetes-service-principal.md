@@ -4,12 +4,12 @@ description: Создание субъект-службы Azure Active Directory
 services: container-service
 ms.topic: conceptual
 ms.date: 06/16/2020
-ms.openlocfilehash: b7f8060666612049026f2602ab7c8511aea22757
-ms.sourcegitcommit: 445ecb22233b75a829d0fcf1c9501ada2a4bdfa3
+ms.openlocfilehash: b4b5b3eedb2e63686e1bb26580ea653e3a50a910
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99475443"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102507829"
 ---
 # <a name="service-principals-with-azure-kubernetes-service-aks"></a>Субъекты-службы со службой Azure Kubernetes
 
@@ -98,7 +98,7 @@ az role assignment create --assignee <appId> --scope <resourceScope> --role Cont
 
 Если вы используете реестр контейнеров Azure (запись контроля доступа) в качестве хранилища образов контейнеров, вам необходимо предоставить разрешения на чтение и извлечение образов для субъекта-службы в кластере AKS. В настоящее время рекомендуемой конфигурацией является использование команды [AZ AKS Create][az-aks-create] или [AZ AKS Update][az-aks-update] для интеграции с реестром и назначения соответствующей роли для субъекта-службы. Подробные инструкции см. в статье [Аутентификация в реестре контейнеров Azure из службы Kubernetes Azure][aks-to-acr].
 
-### <a name="networking"></a>Сеть
+### <a name="networking"></a>сеть;
 
 Вы можете использовать расширенное сетевое взаимодействие, где виртуальная сеть и подсеть или общедоступные IP-адреса находятся в другой группе ресурсов. Назначьте встроенную роль " [участник сети][rbac-network-contributor] " в подсети в виртуальной сети. Кроме того, можно создать [пользовательскую роль][rbac-custom-role] с разрешениями на доступ к сетевым ресурсам в этой группе ресурсов. Дополнительные сведения см. в разделе [разрешения службы AKS][aks-permissions] .
 
@@ -128,13 +128,13 @@ az role assignment create --assignee <appId> --scope <resourceScope> --role Cont
 - Если вы не передаете субъект-службу в дополнительные команды CLI AKS, используется субъект-служба по умолчанию, расположенный по адресу `~/.azure/aksServicePrincipal.json` .  
 - При необходимости можно также удалить aksServicePrincipal.jsдля файла, и AKS создаст новый субъект-службу.
 - При удалении кластера AKS, созданного с помощью команды [az aks create][az-aks-create], автоматически созданная субъект-служба не удаляется.
-    - Чтобы удалить субъект-службу, выполните запрос к кластеру *сервицепринЦипалпрофиле. ClientID* , а затем удалите его с помощью команды [AZ AD SP Delete] [AZ-AD-SP-Delete]. Замените имена группы ресурсов и кластера собственными значениями.
+    - Чтобы удалить субъект-службу, выполните запрос к кластеру *сервицепринЦипалпрофиле. ClientID* и удалите его с помощью команды [AZ AD SP Delete][az-ad-sp-delete]. Замените имена группы ресурсов и кластера собственными значениями.
 
         ```azurecli
         az ad sp delete --id $(az aks show -g myResourceGroup -n myAKSCluster --query servicePrincipalProfile.clientId -o tsv)
         ```
 
-## <a name="troubleshoot"></a>Диагностика
+## <a name="troubleshoot"></a>Устранение неполадок
 
 Учетные данные субъекта-службы для кластера AKS кэшируются Azure CLI. Если срок действия этих учетных данных истек, возникнут ошибки при развертывании кластеров AKS. Следующее сообщение об ошибке при выполнении команды [AZ AKS Create][az-aks-create] может указывать на проблему с кэшированными учетными данными субъекта-службы:
 
@@ -162,6 +162,7 @@ ls -la $HOME/.azure/aksServicePrincipal.json
 [aad-service-principal]:../active-directory/develop/app-objects-and-service-principals.md
 [acr-intro]: ../container-registry/container-registry-intro.md
 [az-ad-sp-create]: /cli/azure/ad/sp#az-ad-sp-create-for-rbac
+[az-ad-sp-delete]: /cli/azure/ad/sp#az_ad_sp_delete
 [azure-load-balancer-overview]: ../load-balancer/load-balancer-overview.md
 [install-azure-cli]: /cli/azure/install-azure-cli
 [service-principal]:../active-directory/develop/app-objects-and-service-principals.md

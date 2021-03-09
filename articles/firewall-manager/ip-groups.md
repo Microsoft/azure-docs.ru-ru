@@ -7,12 +7,12 @@ ms.service: firewall-manager
 ms.topic: conceptual
 ms.date: 07/30/2020
 ms.author: victorh
-ms.openlocfilehash: 921a8b6c808d4eef2b02ef0580d5b2ea9045366d
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.openlocfilehash: 54faa0bc7d414eb15a866b8e1e6d09e15b22b071
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94659511"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102500858"
 ---
 # <a name="ip-groups-in-azure-firewall-policy"></a>IP-группы в политике брандмауэра Azure
 
@@ -72,13 +72,13 @@ IP-группы можно повторно использовать в прав
 
 Для создания групп IP и управления ими можно использовать следующие командлеты Azure PowerShell.
 
-- [New-AzIpGroup](/powershell/module/az.network/new-azipgroup?view=azps-3.4.0)
-- [Remove-Азипграуп](/powershell/module/az.network/remove-azipgroup?view=azps-3.4.0)
-- [Get-AzIpGroup](/powershell/module/az.network/get-azipgroup?view=azps-3.4.0)
-- [Set-AzIpGroup](/powershell/module/az.network/set-azipgroup?view=azps-3.4.0)
-- [New-Азфиреваллполицинетворкруле](/powershell/module/az.network/new-azfirewallpolicynetworkrule?view=azps-3.4.0)
-- [New-Азфиреваллполициаппликатионруле](/powershell/module/az.network/new-azfirewallpolicyapplicationrule?view=azps-3.4.0)
-- [New-Азфиреваллполицинатруле](/powershell/module/az.network/new-azfirewallpolicynatrule?view=azps-3.4.0)
+- [New-AzIpGroup](/powershell/module/az.network/new-azipgroup)
+- [Remove-Азипграуп](/powershell/module/az.network/remove-azipgroup)
+- [Get-AzIpGroup](/powershell/module/az.network/get-azipgroup)
+- [Set-AzIpGroup](/powershell/module/az.network/set-azipgroup)
+- [New-Азфиреваллполицинетворкруле](/powershell/module/az.network/new-azfirewallpolicynetworkrule)
+- [New-Азфиреваллполициаппликатионруле](/powershell/module/az.network/new-azfirewallpolicyapplicationrule)
+- [New-Азфиреваллполицинатруле](/powershell/module/az.network/new-azfirewallpolicynatrule)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

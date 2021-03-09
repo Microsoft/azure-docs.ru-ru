@@ -5,12 +5,12 @@ services: container-service
 ms.topic: article
 ms.date: 06/02/2020
 ms.reviewer: nieberts, jomore
-ms.openlocfilehash: 564ebfd0a0a8aa8500b38edbc37c9a42b02b06ec
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 639bed3dcd8f3f443b73f51efb60e7c8aeaa00a0
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101735171"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102504224"
 ---
 # <a name="use-kubenet-networking-with-your-own-ip-address-ranges-in-azure-kubernetes-service-aks"></a>Использование сети kubenet с пользовательскими диапазонами IP-адресов в Службе Azure Kubernetes (AKS)
 
@@ -25,14 +25,14 @@ ms.locfileid: "101735171"
 * Виртуальная сеть для кластера AKS должна разрешать исходящее подключение к Интернету.
 * Не создавайте больше одного кластера AKS в одной подсети.
 * Кластеры AKS не могут использовать `169.254.0.0/16` , `172.30.0.0/16` , `172.31.0.0/16` или `192.0.2.0/24` для диапазона адресов службы Kubernetes, диапазона адресов Pod или диапазона адресов виртуальной сети кластера.
-* Субъект-служба, используемая кластером AKS, должна иметь по крайней мере роль [участника сети](../role-based-access-control/built-in-roles.md#network-contributor) в подсети в виртуальной сети. Кроме того, для создания субъекта-службы и назначения ему разрешений необходимо иметь соответствующие разрешения, например владелец подписки. Если вы хотите определить [пользовательскую роль](../role-based-access-control/custom-roles.md) вместо того, чтобы использовать встроенную роль участника сети, требуются следующие разрешения:
+* Идентификатор кластера, используемый кластером AKS, должен иметь по крайней мере роль [участника сети](../role-based-access-control/built-in-roles.md#network-contributor) в подсети в виртуальной сети. Кроме того, необходимо иметь соответствующие разрешения, такие как владелец подписки, для создания удостоверения кластера и назначения ему разрешений. Если вы хотите определить [пользовательскую роль](../role-based-access-control/custom-roles.md) вместо того, чтобы использовать встроенную роль участника сети, требуются следующие разрешения:
   * `Microsoft.Network/virtualNetworks/subnets/join/action`
   * `Microsoft.Network/virtualNetworks/subnets/read`
 
 > [!WARNING]
 > Для использования пулов узлов Windows Server необходимо использовать Azure CNI. Использование кубенет в качестве сетевой модели недоступно для контейнеров Windows Server.
 
-## <a name="before-you-begin"></a>Перед началом
+## <a name="before-you-begin"></a>Подготовка к работе
 
 Требуется Azure CLI версии 2.0.65 или более поздней. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0][install-azure-cli].
 
