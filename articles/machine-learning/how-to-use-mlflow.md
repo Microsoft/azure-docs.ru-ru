@@ -11,12 +11,12 @@ ms.reviewer: nibaccam
 ms.date: 12/23/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python
-ms.openlocfilehash: ed9d41a84e455241ed3cfc41b905a671f2a2d499
-ms.sourcegitcommit: 67b44a02af0c8d615b35ec5e57a29d21419d7668
+ms.openlocfilehash: 02684ba91c207357e15684870a6fa0ceab3e17ff
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97912960"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520971"
 ---
 # <a name="train-and-track-ml-models-with-mlflow-and-azure-machine-learning-preview"></a>Обучение и отслеживание моделей машинного обучения с помощью Млфлов и Машинное обучение Azure (Предварительная версия)
 
@@ -46,7 +46,7 @@ ms.locfileid: "97912960"
 
  В следующей таблице перечислены различные клиенты, которые могут использовать Машинное обучение Azure, и соответствующие им возможности функций.
 
- Отслеживание MLflow предлагает функции ведения журнала метрик и хранилища артефактов, которые также доступны только при использовании [пакета SDK Python для Машинного обучения Azure](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py).
+ Отслеживание MLflow предлагает функции ведения журнала метрик и хранилища артефактов, которые также доступны только при использовании [пакета SDK Python для Машинного обучения Azure](/python/api/overview/azure/ml/intro).
 
 | Функция | Развертывание & отслеживания Млфлов | Пакет SDK Python для Машинного обучения Azure |  Интерфейс командной строки службы "Машинное обучение Azure" | Студия машинного обучения Azure.|
 |---|---|---|---|---|
@@ -63,7 +63,7 @@ ms.locfileid: "97912960"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * Установите пакет `azureml-mlflow`. 
-    * Этот пакет автоматически переносится в пакет `azureml-core` [SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py), который обеспечивает подключение для млфлов к рабочей области.
+    * Этот пакет автоматически переносится в пакет `azureml-core` [SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/install), который обеспечивает подключение для млфлов к рабочей области.
 * [Создайте рабочую область Машинного обучения Azure](how-to-manage-workspace.md).
     * Узнайте, какие [разрешения доступа требуются для выполнения операций млфлов с рабочей областью](how-to-assign-roles.md#mlflow-operations).
 
@@ -71,7 +71,7 @@ ms.locfileid: "97912960"
 
 Интеграция отслеживания MLflow с Машинным обучением Azure позволяет хранить данные журнала метрик и артефактов локальных выполнений в рабочей области Машинного обучения Azure.
 
-Импортируйте классы `mlflow` и [`Workspace`](/python/api/azureml-core/azureml.core.workspace%28class%29?preserve-view=true&view=azure-ml-py), чтобы получить доступ к универсальному коду ресурса (URI) отслеживания MLflow и настроить рабочую область.
+Импортируйте классы `mlflow` и [`Workspace`](/python/api/azureml-core/azureml.core.workspace%28class%29), чтобы получить доступ к универсальному коду ресурса (URI) отслеживания MLflow и настроить рабочую область.
 
 В следующем коде метод `get_mlflow_tracking_uri()` присваивает рабочему пространству `ws` уникальный адрес URI отслеживания, а метод `set_tracking_uri()` указывает этот адрес в качестве URI отслеживания MLflow.
 
@@ -118,7 +118,7 @@ dependencies:
     - numpy
 ```
 
-В сценарии Настройте среду выполнения вычислений и обучения с помощью [`Environment`](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py) класса. Затем создайте конструкцию  [`ScriptRunConfig`](/python/api/azureml-core/azureml.core.script_run_config.scriptrunconfig?preserve-view=true&view=azure-ml-py) с удаленным вычислением в качестве целевого объекта вычислений.
+В сценарии Настройте среду выполнения вычислений и обучения с помощью [`Environment`](/python/api/azureml-core/azureml.core.environment.environment) класса. Затем создайте конструкцию  [`ScriptRunConfig`](/python/api/azureml-core/azureml.core.script_run_config.scriptrunconfig) с удаленным вычислением в качестве целевого объекта вычислений.
 
 ```Python
 import mlflow
@@ -145,7 +145,7 @@ run = exp.submit(src)
 pip install azureml-mlflow
 ```
 
-Импортируйте классы `mlflow` и [`Workspace`](/python/api/azureml-core/azureml.core.workspace%28class%29?preserve-view=true&view=azure-ml-py), чтобы получить доступ к универсальному коду ресурса (URI) отслеживания MLflow и настроить рабочую область.
+Импортируйте классы `mlflow` и [`Workspace`](/python/api/azureml-core/azureml.core.workspace%28class%29), чтобы получить доступ к универсальному коду ресурса (URI) отслеживания MLflow и настроить рабочую область.
 
 ```Python
 import mlflow

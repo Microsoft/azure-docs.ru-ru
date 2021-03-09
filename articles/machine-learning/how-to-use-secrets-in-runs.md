@@ -11,12 +11,12 @@ ms.subservice: core
 ms.date: 03/09/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: ce47041d888b8a7786f0f87f54e725919638e7f7
-ms.sourcegitcommit: 99955130348f9d2db7d4fb5032fad89dad3185e7
+ms.openlocfilehash: b93da1e252357830578783c8f3ab5ca02f5a3e5b
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93349024"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520750"
 ---
 # <a name="use-authentication-credential-secrets-in-azure-machine-learning-training-runs"></a>Использование секретов учетных данных для проверки подлинности в Машинное обучение Azure учебных запусков
 
@@ -33,7 +33,7 @@ ms.locfileid: "93349024"
 
 ## <a name="set-secrets"></a>Задать секреты
 
-В Машинное обучение Azure класс [Keyvault](/python/api/azureml-core/azureml.core.keyvault.keyvault?preserve-view=true&view=azure-ml-py) содержит методы для настройки секретов. В локальном сеансе Python сначала получите ссылку на рабочую область Key Vault, а затем используйте [`set_secret()`](/python/api/azureml-core/azureml.core.keyvault.keyvault?preserve-view=true&view=azure-ml-py#&preserve-view=trueset-secret-name--value-) метод, чтобы задать секрет по имени и значению. Метод __set_secret__ обновляет значение секрета, если такое имя уже существует.
+В Машинное обучение Azure класс [Keyvault](/python/api/azureml-core/azureml.core.keyvault.keyvault) содержит методы для настройки секретов. В локальном сеансе Python сначала получите ссылку на рабочую область Key Vault, а затем используйте [`set_secret()`](/python/api/azureml-core/azureml.core.keyvault.keyvault#set-secret-name--value-) метод, чтобы задать секрет по имени и значению. Метод __set_secret__ обновляет значение секрета, если такое имя уже существует.
 
 ```python
 from azureml.core import Workspace
@@ -49,13 +49,13 @@ keyvault.set_secret(name="mysecret", value = my_secret)
 
 Не следует помещайте значение секрета в код Python, так как оно небезопасно для сохранения в файле в виде открытого текста. Вместо этого получите значение секрета из переменной среды, например, для секрета сборки Azure DevOps или из интерактивных входных данных пользователя.
 
-Вы можете получить список имен секретов с помощью [`list_secrets()`](/python/api/azureml-core/azureml.core.keyvault.keyvault?preserve-view=true&view=azure-ml-py#&preserve-view=truelist-secrets--) метода, а также версию пакета,[set_secrets ()](/python/api/azureml-core/azureml.core.keyvault.keyvault?preserve-view=true&view=azure-ml-py#&preserve-view=trueset-secrets-secrets-batch-) , которая позволяет одновременно задать несколько секретов.
+Вы можете получить список имен секретов с помощью [`list_secrets()`](/python/api/azureml-core/azureml.core.keyvault.keyvault#list-secrets--) метода, а также версию пакета,[set_secrets ()](/python/api/azureml-core/azureml.core.keyvault.keyvault#set-secrets-secrets-batch-) , которая позволяет одновременно задать несколько секретов.
 
 ## <a name="get-secrets"></a>получение секретов;
 
-В локальном коде можно использовать [`get_secret()`](/python/api/azureml-core/azureml.core.keyvault.keyvault?preserve-view=true&view=azure-ml-py#&preserve-view=trueget-secret-name-) метод для получения значения секрета по имени.
+В локальном коде можно использовать [`get_secret()`](/python/api/azureml-core/azureml.core.keyvault.keyvault#get-secret-name-) метод для получения значения секрета по имени.
 
-Для запусков, отправленных [`Experiment.submit`](/python/api/azureml-core/azureml.core.experiment.experiment?preserve-view=true&view=azure-ml-py#&preserve-view=truesubmit-config--tags-none----kwargs-)  , используйте [`get_secret()`](/python/api/azureml-core/azureml.core.run.run?preserve-view=true&view=azure-ml-py#&preserve-view=trueget-secret-name-) метод с [`Run`](/python/api/azureml-core/azureml.core.run%28class%29?preserve-view=true&view=azure-ml-py) классом. Так как отправленный запуск осведомлен о своей рабочей области, этот метод назначит создание экземпляра рабочей области и возвращает значение секрета напрямую.
+Для запусков, отправленных [`Experiment.submit`](/python/api/azureml-core/azureml.core.experiment.experiment#submit-config--tags-none----kwargs-)  , используйте [`get_secret()`](/python/api/azureml-core/azureml.core.run.run#get-secret-name-) метод с [`Run`](/python/api/azureml-core/azureml.core.run%28class%29) классом. Так как отправленный запуск осведомлен о своей рабочей области, этот метод назначит создание экземпляра рабочей области и возвращает значение секрета напрямую.
 
 ```python
 # Code in submitted run
@@ -67,7 +67,7 @@ secret_value = run.get_secret(name="mysecret")
 
 Будьте внимательны, чтобы не предоставлять секретное значение, написав или выполнив печать.
 
-Существует также Пакетная версия [get_secrets ()](/python/api/azureml-core/azureml.core.run.run?preserve-view=true&view=azure-ml-py#&preserve-view=trueget-secrets-secrets-) для доступа к нескольким секретам одновременно.
+Существует также Пакетная версия [get_secrets ()](/python/api/azureml-core/azureml.core.run.run#get-secrets-secrets-) для доступа к нескольким секретам одновременно.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

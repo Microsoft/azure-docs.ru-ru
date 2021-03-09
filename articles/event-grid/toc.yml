@@ -212,6 +212,10 @@
           href: diagnostic-logs.md
         - name: Метрики
           href: metrics.md
+    - name: Варианты использования
+      items:
+        - name: Варианты использования доменов
+          href: event-domains-use-cases.md
 - name: Практические руководства
   items:
     - name: 'Создание, просмотр и администрирование системных разделов'

@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 04/09/2019
 ms.author: kumud
-ms.openlocfilehash: 9f3ea595c3cfacc479deea7b7db7689785e3b520
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 1f8b7162787e870337918794f353ab8dc94c1965
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101694960"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518251"
 ---
 # <a name="create-a-virtual-network-peering---resource-manager-different-subscriptions-and-azure-active-directory-tenants"></a>Создание пиринга виртуальных сетей, развернутых с помощью Resource Manager в разных подписках и арендаторах Azure Active Directory
 
@@ -276,7 +276,7 @@ ms.locfileid: "101694960"
    }
    ```
 
-3. Войдите в Azure в качестве пользователя A и разверните шаблон с помощью [портала](../azure-resource-manager/templates/deploy-portal.md?toc=%2fazure%2fvirtual-network%2ftoc.json#deploy-resources-from-custom-template), [PowerShell](../azure-resource-manager/templates/deploy-powershell.md?toc=%2fazure%2fvirtual-network%2ftoc.json#deploy-local-template) или [Azure CLI](../azure-resource-manager/templates/deploy-cli.md?toc=%2fazure%2fvirtual-network%2ftoc.json#deploy-local-template-or-bicep-file). Укажите имя файла, в котором вы сохранили текст JSON на шаге 2.
+3. Войдите в Azure в качестве пользователя A и разверните шаблон с помощью [портала](../azure-resource-manager/templates/deploy-portal.md?toc=%2fazure%2fvirtual-network%2ftoc.json#deploy-resources-from-custom-template), [PowerShell](../azure-resource-manager/templates/deploy-powershell.md?toc=%2fazure%2fvirtual-network%2ftoc.json#deploy-local-template-or-bicep-file) или [Azure CLI](../azure-resource-manager/templates/deploy-cli.md?toc=%2fazure%2fvirtual-network%2ftoc.json#deploy-local-template-or-bicep-file). Укажите имя файла, в котором вы сохранили текст JSON на шаге 2.
 4. Скопируйте пример JSON-файла, полученный на шаге 2, в файл на компьютере и внесите изменения в строки, начинающиеся с:
    - **name**. Замените *myVnetA/myVnetAToMyVnetB* на *myVnetB/myVnetBToMyVnetA*.
    - **id**. Замените `<subscription ID>` идентификатором подписки пользователя B и замените *myVnetB* на *myVnetA*.

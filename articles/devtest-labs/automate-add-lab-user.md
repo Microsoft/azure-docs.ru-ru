@@ -3,12 +3,12 @@ title: Автоматизация добавления пользователя 
 description: В этой статье показано, как автоматизировать добавление пользователя в лабораторию в Azure DevTest Labs с помощью шаблонов Azure Resource Manager, PowerShell и интерфейса командной строки.
 ms.topic: article
 ms.date: 06/26/2020
-ms.openlocfilehash: 6dddf06289da79e16cbd7e64869fa77f0a40dd22
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: dc5522cfe694f193b9bbeeb3145808a367a62c12
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/09/2021
-ms.locfileid: "102508832"
+ms.locfileid: "102519407"
 ---
 # <a name="automate-adding-a-lab-user-to-a-lab-in-azure-devtest-labs"></a>Автоматизация добавления пользователя лаборатории в лабораторию в Azure DevTest Labs
 Azure DevTest Labs позволяет быстро создавать среды самообслуживания для разработки и тестирования с помощью портал Azure. Однако если у вас есть несколько команд и несколько экземпляров DevTest Labs, Автоматизация процесса создания позволит сэкономить время. [Шаблоны Azure Resource Manager](https://github.com/Azure/azure-devtestlab/tree/master/Environments) позволяют создавать лабораторные и лабораторные виртуальные машины, пользовательские образы, формулы и добавлять пользователей в автоматическом режиме. В этой статье особое внимание уделяется добавлению пользователей в экземпляр DevTest Labs.
@@ -161,7 +161,7 @@ New-AzureRmResourceGroupDeployment -Name "MyLabResourceGroup-$(New-Guid)" -Resou
 
 Важно отметить, что имя развертывания группы и идентификатор GUID назначения роли должны быть уникальными. При попытке развернуть назначение ресурса с идентификатором GUID, не являющимся уникальным, вы получите `RoleAssignmentUpdateNotPermitted` сообщение об ошибке.
 
-Если вы планируете использовать шаблон несколько раз, чтобы добавить несколько Active Directory объектов к роли пользователя DevTest Labs для вашей лаборатории, рассмотрите возможность использования динамических объектов в команде PowerShell. В следующем примере используется командлет [New-GUID](/powershell/module/Microsoft.PowerShell.Utility/New-Guid?view=powershell-5.0) для динамического указания имени развертывания группы ресурсов и GUID назначения роли.
+Если вы планируете использовать шаблон несколько раз, чтобы добавить несколько Active Directory объектов к роли пользователя DevTest Labs для вашей лаборатории, рассмотрите возможность использования динамических объектов в команде PowerShell. В следующем примере используется командлет [New-GUID](/powershell/module/Microsoft.PowerShell.Utility/New-Guid) для динамического указания имени развертывания группы ресурсов и GUID назначения роли.
 
 ```powershell
 New-AzureRmResourceGroupDeployment -Name "MyLabResourceGroup-$(New-Guid)" -ResourceGroupName 'MyLabResourceGroup' -TemplateFile .\azuredeploy.json -roleAssignmentGuid "$(New-Guid)" -labName "MyLab" -principalId "11111111-1111-1111-1111-111111111111"

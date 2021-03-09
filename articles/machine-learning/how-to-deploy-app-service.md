@@ -11,12 +11,12 @@ ms.reviewer: larryfr
 ms.date: 06/23/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, deploy, devx-track-azurecli
-ms.openlocfilehash: a87620c12cccbed702a2a299b68f555f2b727dd9
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 3b1b416f3fec9e40261a82c88260c041918c1424
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102215312"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102522008"
 ---
 # <a name="deploy-a-machine-learning-model-to-azure-app-service-preview"></a>Развертывание модели машинного обучения в службе приложений Azure (Предварительная версия)
 
@@ -75,7 +75,7 @@ ms.locfileid: "102215312"
 Эти сущности инкапсулированы в __конфигурацию вывода__. В конфигурации зависимостей указываются скрипт входа и другие зависимости.
 
 > [!IMPORTANT]
-> При создании конфигурации вывода для использования со службой приложений Azure необходимо использовать объект [среды](/python/api/azureml-core/azureml.core.environment(class)?preserve-view=true&view=azure-ml-py) . Обратите внимание, что при определении пользовательской среды необходимо добавить azureml-Defaults с версией >= 1.0.45 в качестве зависимости PIP. Этот пакет содержит функции, необходимые для размещения модели в качестве веб-службы. В следующем примере демонстрируется создание объекта среды и его использование с конфигурацией вывода:
+> При создании конфигурации вывода для использования со службой приложений Azure необходимо использовать объект [среды](/python/api/azureml-core/azureml.core.environment(class)) . Обратите внимание, что при определении пользовательской среды необходимо добавить azureml-Defaults с версией >= 1.0.45 в качестве зависимости PIP. Этот пакет содержит функции, необходимые для размещения модели в качестве веб-службы. В следующем примере демонстрируется создание объекта среды и его использование с конфигурацией вывода:
 >
 > ```python
 > from azureml.core.environment import Environment
@@ -101,7 +101,7 @@ ms.locfileid: "102215312"
 
 ## <a name="create-the-image"></a>Создание образа
 
-Чтобы создать образ DOCKER, развернутый в службе приложений Azure, используйте [модель. Package](/python/api/azureml-core/azureml.core.model.model?preserve-view=true&view=azure-ml-py). В следующем фрагменте кода показано, как создать новый образ из модели и конфигурации вывода:
+Чтобы создать образ DOCKER, развернутый в службе приложений Azure, используйте [модель. Package](/python/api/azureml-core/azureml.core.model.model). В следующем фрагменте кода показано, как создать новый образ из модели и конфигурации вывода:
 
 > [!NOTE]
 > В фрагменте кода предполагается, что `model` содержит зарегистрированную модель и `inference_config` содержит конфигурацию для среды вывода. Дополнительные сведения см. в разделе [Развертывание моделей с помощью машинное обучение Azure](how-to-deploy-and-where.md).

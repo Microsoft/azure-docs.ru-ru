@@ -10,12 +10,12 @@ author: peterclu
 ms.date: 05/05/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, contperf-fy21q2
-ms.openlocfilehash: 7144d576694b6694f426533451717cef58c2da87
-ms.sourcegitcommit: 77ab078e255034bd1a8db499eec6fe9b093a8e4f
+ms.openlocfilehash: 4c03016d003978b3c56361595bec7c559205574b
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97562452"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520886"
 ---
 # <a name="reinforcement-learning-preview-with-azure-machine-learning"></a>Обучение с подкреплением (предварительная версия) в Машинном обучении Azure
 
@@ -49,8 +49,8 @@ ms.locfileid: "97562452"
  
  - Собственный сервер Jupyter Notebook
 
-    - Установите [пакет SDK для Машинного обучения Azure](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py).
-    - Установите [пакет SDK обучения с подкреплением для Машинного обучения Azure](/python/api/azureml-contrib-reinforcementlearning/?preserve-view=true&view=azure-ml-py): `pip install --upgrade azureml-contrib-reinforcementlearning`.
+    - Установите [пакет SDK для Машинного обучения Azure](/python/api/overview/azure/ml/install).
+    - Установите [пакет SDK обучения с подкреплением для Машинного обучения Azure](/python/api/azureml-contrib-reinforcementlearning/): `pip install --upgrade azureml-contrib-reinforcementlearning`.
     - Создайте [файл конфигурации рабочей области](how-to-configure-environment.md#workspace).
     - Запустите виртуальную сеть, чтобы открыть сетевые порты, используемые для распределенного обучения подкреплением.
 
@@ -107,7 +107,7 @@ ws = Workspace.from_config()
 
 ### <a name="create-a-reinforcement-learning-experiment"></a>Создание эксперимента по обучению с подкреплением
 
-Создайте [эксперимент](/python/api/azureml-core/azureml.core.experiment.experiment?preserve-view=true&view=azure-ml-py), чтобы отслеживать выполнение обучения с подкреплением. В Машинном обучении Azure эксперименты — это логические коллекции связанных попыток, используемые для упорядочения журналов выполнения, прочих журналов, выходных данных и многого другого.
+Создайте [эксперимент](/python/api/azureml-core/azureml.core.experiment.experiment), чтобы отслеживать выполнение обучения с подкреплением. В Машинном обучении Azure эксперименты — это логические коллекции связанных попыток, используемые для упорядочения журналов выполнения, прочих журналов, выходных данных и многого другого.
 
 ```python
 experiment_name='rllib-pong-multi-node'
@@ -214,7 +214,7 @@ else:
 ```
 
 ## <a name="create-a-reinforcement-learning-estimator"></a>Создание оценщика обучения с подкреплением
-Используйте [реинфорцементлеарнинжестиматор](/python/api/azureml-contrib-reinforcementlearning/azureml.contrib.train.rl.reinforcementlearningestimator?preserve-view=true&view=azure-ml-py) для отправки учебного задания в машинное обучение Azure.
+Используйте [реинфорцементлеарнинжестиматор](/python/api/azureml-contrib-reinforcementlearning/azureml.contrib.train.rl.reinforcementlearningestimator) для отправки учебного задания в машинное обучение Azure.
 
 Машинное обучение Azure использует классы оценщика для инкапсуляции сведений о конфигурации выполнения. Это позволяет указать, как настроить выполнение скрипта. 
 
@@ -402,7 +402,7 @@ def on_train_result(info):
 
 ## <a name="submit-a-run"></a>Отправка запроса на выполнение
 
-Команда [run](/python/api/azureml-core/azureml.core.run%28class%29?preserve-view=true&view=azure-ml-py) обрабатывает журнал выполнения для выполняющихся или завершенных заданий. 
+Команда [run](/python/api/azureml-core/azureml.core.run%28class%29) обрабатывает журнал выполнения для выполняющихся или завершенных заданий. 
 
 ```python
 run = exp.submit(config=rl_estimator)

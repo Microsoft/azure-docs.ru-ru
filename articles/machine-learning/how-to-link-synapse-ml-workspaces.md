@@ -11,12 +11,12 @@ author: nibaccam
 ms.reviewer: nibaccam
 ms.date: 03/08/2021
 ms.custom: how-to, devx-track-python, data4ml, synapse-azureml
-ms.openlocfilehash: 8941a7f7a27f6ffe58cda3f0bf2c6833ec226783
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.openlocfilehash: d1c4defc53c4af0fb481a57c0a455e987fdd480a
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102456281"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520002"
 ---
 # <a name="link-azure-synapse-analytics-and-azure-machine-learning-workspaces-preview"></a>Связывание Azure синапсе Analytics и рабочих областей Машинное обучение Azure (Предварительная версия)
 
@@ -29,9 +29,9 @@ ms.locfileid: "102456281"
 Вы также можете связать рабочие области и подключить пул синапсе Spark с помощью одного [шаблона Azure Resource Manager (ARM)](https://github.com/Azure/azure-quickstart-templates/blob/master/101-machine-learning-linkedservice-create/azuredeploy.json).
 
 >[!IMPORTANT]
-> Машинное обучение Azure и интеграция Azure синапсе находятся в общедоступной предварительной версии. Функциональные возможности, представленные в `azureml-synapse` пакете, являются [экспериментальными](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py#stable-vs-experimental) функциями предварительной версии и могут быть изменены в любое время.
+> Машинное обучение Azure и интеграция Azure синапсе находятся в общедоступной предварительной версии. Функциональные возможности, представленные в `azureml-synapse` пакете, являются [экспериментальными](/python/api/overview/azure/ml/#stable-vs-experimental) функциями предварительной версии и могут быть изменены в любое время.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Создайте рабочую область Машинного обучения Azure](how-to-manage-workspace.md?tabs=python).
 
@@ -39,7 +39,7 @@ ms.locfileid: "102456281"
 
 * [Создание пула Apache Spark с помощью портал Azure, веб-средств или синапсе Studio](/synapse-analytics/quickstart-create-apache-spark-pool-portal.md)
 
-* Установка [пакета SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py)
+* Установка [пакета SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/intro)
 
 * Доступ к [машинное обучение Azure Studio](https://ml.azure.com/).
 
@@ -51,7 +51,7 @@ ms.locfileid: "102456281"
 >
 > Если вы не являетесь **владельцем** и являетесь **участником** рабочей области синапсе, можно использовать только существующие связанные службы. Узнайте, как [повторить попытку и использовать существующую связанную службу](how-to-data-prep-synapse-spark-pool.md#get-an-existing-linked-service).
 
-В следующем коде [`LinkedService`](/python/api/azureml-core/azureml.core.linked_service.linkedservice?preserve-view=true&view=azure-ml-py) классы и используются [`SynapseWorkspaceLinkedServiceConfiguration`](/python/api/azureml-core/azureml.core.linked_service.synapseworkspacelinkedserviceconfiguration?preserve-view=true&view=azure-ml-py) в,
+В следующем коде [`LinkedService`](/python/api/azureml-core/azureml.core.linked_service.linkedservice) классы и используются [`SynapseWorkspaceLinkedServiceConfiguration`](/python/api/azureml-core/azureml.core.linked_service.synapseworkspacelinkedserviceconfiguration) в,
 
 * Свяжите рабочую область машинного обучения `ws` с рабочей областью Azure синапсе.
 * Зарегистрируйте рабочую область синапсе с Машинное обучение Azure в качестве связанной службы.

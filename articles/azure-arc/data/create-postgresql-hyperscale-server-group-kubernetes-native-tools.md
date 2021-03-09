@@ -9,18 +9,18 @@ ms.author: twright
 ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
-ms.openlocfilehash: 250c1ef837793c2149ff653f395f40272cf43335
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: fd1b74d33793c06e586a92cc8b2e8d2d36f4827a
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100384951"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519968"
 ---
 # <a name="create-a-postgresql-hyperscale-server-group-using-kubernetes-tools"></a>Создание группы PostgreSQL Scale Server с помощью средств Kubernetes
 
 [!INCLUDE [azure-arc-data-preview](../../../includes/azure-arc-data-preview.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Вы уже создали [контроллер данных Arc Azure](./create-data-controller.md).
 
@@ -99,10 +99,10 @@ PowerShell
 Linux/macOS
 
 ```console
-echo '<your string to encode here>' | base64
+echo -n '<your string to encode here>' | base64
 
 #Example
-# echo 'example' | base64
+# echo -n 'example' | base64
 ```
 
 ### <a name="customizing-the-name"></a>Настройка имени

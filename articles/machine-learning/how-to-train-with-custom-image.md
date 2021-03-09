@@ -10,12 +10,12 @@ author: saachigopal
 ms.date: 10/20/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: ad86ebdbef8bf8c8ec00e54e15b751fd2285ad68
-ms.sourcegitcommit: fc401c220eaa40f6b3c8344db84b801aa9ff7185
+ms.openlocfilehash: 03400173dd35660d6e7a98500b831a7c6aa4ebd7
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98601343"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521176"
 ---
 # <a name="train-a-model-by-using-a-custom-docker-image"></a>Обучение модели с помощью пользовательского образа DOCKER
 
@@ -23,7 +23,7 @@ ms.locfileid: "98601343"
 
 Машинное обучение Azure предоставляет базовый образ DOCKER по умолчанию. Можно также использовать Машинное обучение Azure среды, чтобы указать другой базовый образ, например один из обслуживаемых [машинное обучение Azure базовых образов](https://github.com/Azure/AzureML-Containers) или [пользовательский образ](how-to-deploy-custom-docker-image.md#create-a-custom-base-image). Пользовательские базовые образы позволяют тесно управлять зависимостями и поддерживать более строгий контроль версий компонентов при выполнении заданий обучения.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Запустите код в любой из этих сред:
 
@@ -32,7 +32,7 @@ ms.locfileid: "98601343"
   * В [репозитории примеров](https://github.com/Azure/azureml-examples)машинное обучение Azure найдите готовую записную книжку, перейдя к каталогу **Notebooks**  >  **фастаи** Train  >  **-pets-resnet34. ipynb** . 
 * Собственный Jupyter Notebook сервер:
   * Создайте [файл конфигурации рабочей области](how-to-configure-environment.md#workspace).
-  * Установите [пакет SDK для Машинного обучения Azure](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py). 
+  * Установите [пакет SDK для Машинного обучения Azure](/python/api/overview/azure/ml/install). 
   * Создайте [Реестр контейнеров Azure](../container-registry/index.yml) или другой реестр DOCKER, доступный в Интернете.
 
 ## <a name="set-up-a-training-experiment"></a>Настройка обучающего эксперимента
@@ -41,7 +41,7 @@ ms.locfileid: "98601343"
 
 ### <a name="initialize-a-workspace"></a>Инициализация рабочей области
 
-[Машинное обучение Azure Рабочая область](concept-workspace.md) — это ресурс верхнего уровня для службы. Она предоставляет централизованное место для работы со всеми создаваемыми артефактами. В пакете SDK для Python можно получить доступ к артефактам рабочей области, создав [`Workspace`](/python/api/azureml-core/azureml.core.workspace.workspace?preserve-view=true&view=azure-ml-py) объект.
+[Машинное обучение Azure Рабочая область](concept-workspace.md) — это ресурс верхнего уровня для службы. Она предоставляет централизованное место для работы со всеми создаваемыми артефактами. В пакете SDK для Python можно получить доступ к артефактам рабочей области, создав [`Workspace`](/python/api/azureml-core/azureml.core.workspace.workspace) объект.
 
 Создайте `Workspace` объект на основе config.jsв файле, который вы создали в качестве [необходимого компонента](#prerequisites).
 
@@ -169,9 +169,9 @@ run.wait_for_completion(show_output=True)
 ```
 
 > [!WARNING]
-> Машинное обучение Azure запускает скрипты обучения, копируя весь исходный каталог. Если у вас есть конфиденциальные данные, которые не нужно передавать, используйте [файл. Ignore](how-to-save-write-experiment-files.md#storage-limits-of-experiment-snapshots) или не включайте его в исходный каталог. Вместо этого получите доступ к данным с помощью [хранилища](/python/api/azureml-core/azureml.data?preserve-view=true&view=azure-ml-py)данных.
+> Машинное обучение Azure запускает скрипты обучения, копируя весь исходный каталог. Если у вас есть конфиденциальные данные, которые не нужно передавать, используйте [файл. Ignore](how-to-save-write-experiment-files.md#storage-limits-of-experiment-snapshots) или не включайте его в исходный каталог. Вместо этого получите доступ к данным с помощью [хранилища](/python/api/azureml-core/azureml.data)данных.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этой статье вы обучили модель с помощью пользовательского образа DOCKER. Дополнительные сведения о Машинное обучение Azure см. в следующих статьях:
 * [Следите за показателями запуска](how-to-track-experiments.md) во время обучения.
 * [Развертывание модели](how-to-deploy-custom-docker-image.md) с помощью пользовательского образа DOCKER.

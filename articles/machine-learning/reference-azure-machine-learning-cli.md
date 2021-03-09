@@ -9,12 +9,12 @@ ms.author: jordane
 author: jpe316
 ms.date: 06/22/2020
 ms.custom: seodec18, devx-track-azurecli
-ms.openlocfilehash: a4adb5bff80f1ab216a39fa773e027670b9e6509
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 3e073310d62bfb772ea1120bd379cdc277137da0
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102212694"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519118"
 ---
 # <a name="install--use-the-cli-extension-for-azure-machine-learning"></a>Установка и использование расширения CLI для Машинного обучения Azure
 
@@ -242,7 +242,7 @@ az extension remove -n azure-cli-ml
     > [!TIP]
     > Команда `az ml folder attach` создает подкаталог `.azureml`, который содержит два примера файлов runconfig. 
     >
-    > При наличии скрипта Python, который программно создает объект конфигурации запуска, вы можете использовать метод [RunConfig.Save()](/python/api/azureml-core/azureml.core.runconfiguration?preserve-view=true&view=azure-ml-py#&preserve-view=truesave-path-none--name-none--separate-environment-yaml-false-), чтобы сохранить его как файл runconfig.
+    > При наличии скрипта Python, который программно создает объект конфигурации запуска, вы можете использовать метод [RunConfig.Save()](/python/api/azureml-core/azureml.core.runconfiguration#save-path-none--name-none--separate-environment-yaml-false-), чтобы сохранить его как файл runconfig.
     >
     > Полную схему runconfig можно найти в этом [файле JSON](https://github.com/microsoft/MLOps/blob/b4bdcf8c369d188e83f40be8b748b49821f71cf2/infra-as-code/runconfigschema.json). Схема содержит самодокументирующийся код за счет использования ключа `description` для каждого объекта. Кроме того, для каждого объекта предусмотрены перечисления возможных значений, а в конце приведен фрагмент кода с шаблоном.
 
@@ -362,7 +362,7 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
 
 ### <a name="environment-configuration-schema"></a>Схема конфигурации среды
 
-Если вы использовали команду `az ml environment scaffold`, она создает файл шаблона `azureml_environment.json`, который можно изменить и использовать для создания настраиваемых конфигураций среды с помощью интерфейса командной строки. Объект верхнего уровня нестрого сопоставлен с классом [`Environment`](/python/api/azureml-core/azureml.core.environment%28class%29?preserve-view=true&view=azure-ml-py) в пакете SDK для Python. 
+Если вы использовали команду `az ml environment scaffold`, она создает файл шаблона `azureml_environment.json`, который можно изменить и использовать для создания настраиваемых конфигураций среды с помощью интерфейса командной строки. Объект верхнего уровня нестрого сопоставлен с классом [`Environment`](/python/api/azureml-core/azureml.core.environment%28class%29) в пакете SDK для Python. 
 
 ```json
 {
@@ -406,17 +406,17 @@ az ml run submit-hyperdrive -e <experiment> -c <runconfig> --hyperdrive-configur
 }
 ```
 
-В следующей таблице приводятся подробные сведения о каждом поле верхнего уровня в JSON-файле, его тип и описание. Если тип объекта связан с классом из пакета SDK для Python, каждому полю JSON нестрого сопоставлено имя общедоступной переменной в классе Python. В некоторых случаях поле может сопоставляться с аргументом конструктора, а не с переменной класса. Например, поле `environmentVariables` сопоставляется с переменной `environment_variables` в классе [`Environment`](/python/api/azureml-core/azureml.core.environment%28class%29?preserve-view=true&view=azure-ml-py).
+В следующей таблице приводятся подробные сведения о каждом поле верхнего уровня в JSON-файле, его тип и описание. Если тип объекта связан с классом из пакета SDK для Python, каждому полю JSON нестрого сопоставлено имя общедоступной переменной в классе Python. В некоторых случаях поле может сопоставляться с аргументом конструктора, а не с переменной класса. Например, поле `environmentVariables` сопоставляется с переменной `environment_variables` в классе [`Environment`](/python/api/azureml-core/azureml.core.environment%28class%29).
 
 | Поле JSON | Тип | Описание |
 |---|---|---|
 | `name` | `string` | Имя среды. Не начинайте имя с **Microsoft** или **AzureML**. |
 | `version` | `string` | Версия среды. |
 | `environmentVariables` | `{string: string}` | Хэш-карта имен и значений переменных среды. |
-| `python` | [`PythonSection`](/python/api/azureml-core/azureml.core.environment.pythonsection?preserve-view=true&view=azure-ml-py)Hat определяет среду и интерпретатор Python для использования в целевом ресурсе вычислений. |
-| `docker` | [`DockerSection`](/python/api/azureml-core/azureml.core.environment.dockersection?preserve-view=true&view=azure-ml-py) | Определяет параметры для настройки образа Docker, созданного согласно спецификациям среды. |
-| `spark` | [`SparkSection`](/python/api/azureml-core/azureml.core.environment.sparksection?preserve-view=true&view=azure-ml-py) | В разделе настраиваются параметры Spark. Он используется только в том случае, если используется платформа PySpark. |
-| `databricks` | [`DatabricksSection`](/python/api/azureml-core/azureml.core.databricks.databrickssection?preserve-view=true&view=azure-ml-py) | Настраивает зависимости библиотеки Databricks. |
+| `python` | [`PythonSection`](/python/api/azureml-core/azureml.core.environment.pythonsection)Hat определяет среду и интерпретатор Python для использования в целевом ресурсе вычислений. |
+| `docker` | [`DockerSection`](/python/api/azureml-core/azureml.core.environment.dockersection) | Определяет параметры для настройки образа Docker, созданного согласно спецификациям среды. |
+| `spark` | [`SparkSection`](/python/api/azureml-core/azureml.core.environment.sparksection) | В разделе настраиваются параметры Spark. Он используется только в том случае, если используется платформа PySpark. |
+| `databricks` | [`DatabricksSection`](/python/api/azureml-core/azureml.core.databricks.databrickssection) | Настраивает зависимости библиотеки Databricks. |
 | `inferencingStackVersion` | `string` | Указывает версию стека вывода, добавленного в образ. Чтобы не добавлять стек вывода, оставьте для этого поля значение `null`. Допустимое значение: "latest". |
 
 ## <a name="ml-pipeline-management"></a>Управление конвейером Машинного обучения

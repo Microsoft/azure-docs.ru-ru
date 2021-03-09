@@ -7,12 +7,12 @@ ms.subservice: files
 ms.topic: conceptual
 ms.date: 05/29/2020
 ms.author: rogarana
-ms.openlocfilehash: 0493b66928d944e251e6fe4abda4f1d3d8fb7e23
-ms.sourcegitcommit: e2dc549424fb2c10fcbb92b499b960677d67a8dd
+ms.openlocfilehash: 8887243f953a7bb000033a2e56b4655b93cd7ca8
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94695900"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519798"
 ---
 # <a name="overview-of-azure-files-identity-based-authentication-options-for-smb-access"></a>Обзор параметров проверки подлинности на основе удостоверений службы файлов Azure для доступа к SMB
 [!INCLUDE [storage-files-aad-auth-include](../../../includes/storage-files-aad-auth-include.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "94695900"
 
 Сведения о том, как включить аутентификацию Azure AD DS для файловых ресурсов Azure, см. в статье [Включение проверки подлинности доменных служб Azure Active Directory в службе файлов Azure](storage-files-identity-auth-active-directory-domain-service-enable.md).
 
-## <a name="glossary"></a>Глоссарий 
+## <a name="glossary"></a>Словарь терминов 
 Полезно понимать некоторые ключевые термины, связанные с проверкой подлинности службы домена Azure AD по протоколу SMB для файловых ресурсов Azure:
 
 -   **Проверка подлинности Kerberos**
@@ -128,7 +128,7 @@ ms.locfileid: "94695900"
 
 ### <a name="configure-directory-or-file-level-permissions-for-azure-files"></a>Настройка разрешений на уровне каталога или файлов для файлов Azure
 
-Файловые ресурсы Azure обеспечивают стандартные разрешения для файлов Windows на уровне каталога и файлов, включая корневой каталог. Настройка разрешений на уровне каталогов или файлов поддерживается как для SMB, так и для остальных. Подключите целевой файловый ресурс из виртуальной машины и настройте разрешения с помощью проводника Windows File Explorer, Windows [icacls](/windows-server/administration/windows-commands/icacls)или команды [Set-ACL](/powershell/module/microsoft.powershell.security/get-acl?view=powershell-6) .
+Файловые ресурсы Azure обеспечивают стандартные разрешения для файлов Windows на уровне каталога и файлов, включая корневой каталог. Настройка разрешений на уровне каталогов или файлов поддерживается как для SMB, так и для остальных. Подключите целевой файловый ресурс из виртуальной машины и настройте разрешения с помощью проводника Windows File Explorer, Windows [icacls](/windows-server/administration/windows-commands/icacls)или команды [Set-ACL](/powershell/module/microsoft.powershell.security/get-acl) .
 
 ### <a name="use-the-storage-account-key-for-superuser-permissions"></a>Использование ключа учетной записи хранения для разрешений суперпользователя
 
@@ -144,7 +144,7 @@ ms.locfileid: "94695900"
 ## <a name="pricing"></a>Цены
 Для включения проверки подлинности на основе удостоверений через SMB в вашей учетной записи хранения дополнительная плата за обслуживание не взимается. Дополнительные сведения о ценах см. в статье цены на службу [файлов Azure](https://azure.microsoft.com/pricing/details/storage/files/) и [цены на доменные службы Azure AD](https://azure.microsoft.com/pricing/details/active-directory-ds/).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о службе файлов Azure и аутентификации на основе удостоверений по протоколу SMB см. в следующих ресурсах:
 
 - [Планирование развертывания Файлов Azure](storage-files-planning.md)

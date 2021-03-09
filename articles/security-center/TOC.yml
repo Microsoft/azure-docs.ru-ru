@@ -112,7 +112,7 @@
           href: exempt-resource.md
         - name: Создание пользовательских инициатив и политик безопасности
           href: custom-security-policies.md
-    - name: Защита компьютеров с помощью Azure Defender для серверов
+    - name: Защита компьютеров с помощью Defender для серверов
       displayName: 'hybrid, arc, Azure Defender for machines'
       items:
         - name: Обзор Azure Defender для серверов
@@ -146,7 +146,7 @@
         - name: Определение списков безопасных приложений для компьютеров
           displayName: 'aac, whitelist, allowlist, reviewgroup, adaptive application controls'
           href: security-center-adaptive-application.md
-        - name: Отслеживание изменений в файлах и реестрах с помощью мониторинга целостности файлов
+        - name: Отслеживание изменений в файлах и реестрах
           items:
             - name: Общие сведения о мониторинге целостности файлов
               displayName: 'fim, change'
@@ -154,8 +154,8 @@
             - name: Сравнение базовых показателей с помощью мониторинга целостности файлов
               displayName: 'fim, change'
               href: security-center-file-integrity-monitoring-baselines.md
-        - name: Повышение безопасности сети с помощью адаптивной защиты сети
-          displayName: anh
+        - name: Повышение уровня безопасности сети
+          displayName: 'anh, adaptive network hardening'
           href: security-center-adaptive-network-hardening.md
         - name: Защита узлов Docker
           displayName: containers
@@ -209,7 +209,7 @@
         - name: Обзор Azure Defender для Key Vault
           displayName: 'KV, akv'
           href: defender-for-key-vault-introduction.md
-        - name: 'Azure Defender: реагирование на оповещения Key Vault'
+        - name: Обработка оповещений Defender для Key Vault
           displayName: 'akv, kv'
           href: defender-for-key-vault-usage.md
     - name: Мониторинг операций управления ресурсами
@@ -217,7 +217,7 @@
         - name: Обзор Azure Defender для Resource Manager
           displayName: ARM
           href: defender-for-resource-manager-introduction.md
-        - name: 'Azure Defender: реагирование на оповещения Resource Manager'
+        - name: Обработка оповещений Defender для Resource Manager
           displayName: arm
           href: defender-for-resource-manager-usage.md
     - name: 'Мониторинг запросов DNS, поступающих от ресурсов Azure'

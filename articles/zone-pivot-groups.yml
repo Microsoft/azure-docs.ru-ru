@@ -256,8 +256,10 @@ groups:
     title: Go
   - id: programming-language-java
     title: Java
-  - id: programming-language-javascript
-    title: JavaScript
+  - id: programming-language-nodejs
+    title: Node.js
+  - id: programming-language-browserjs
+    title: JavaScript (для браузера)
   - id: programming-languages-objectivec-swift
     title: Objective-C/Swift
   - id: programming-language-python
@@ -1053,9 +1055,9 @@ groups:
   - id: programming-language-kotlin
     title: Kotlin (Android)
 metadata:
-  ms.openlocfilehash: 3e17c3c00f5df915394ee81646d8bc3883a8e1ee
-  ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+  ms.openlocfilehash: 647527256c101e1a0afe37c8dca932228ac10aba
+  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/04/2021
-  ms.locfileid: "102097518"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102176031"

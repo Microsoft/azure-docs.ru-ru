@@ -11,12 +11,12 @@ author: lostmygithubaccount
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.custom: how-to, data4ml
-ms.openlocfilehash: fc890dbaf717d3eb9ec87afcb69c87e80c7f14bc
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+ms.openlocfilehash: f42a2f9e606eaa0475f2e35c479e99545ecf8193
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97680952"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521906"
 ---
 # <a name="collect-data-from-models-in-production"></a>Получение данных из моделей в рабочей среде
 
@@ -65,11 +65,11 @@ ms.locfileid: "97680952"
 
 - Необходим кластер AKS. Сведения о том, как создать и развернуть в нем, см. [в разделе Развертывание и размещение](how-to-deploy-and-where.md).
 
-- [Настройте среду](how-to-configure-environment.md) и установите [пакет SDK для машинное обучение Azure мониторинга](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py).
+- [Настройте среду](how-to-configure-environment.md) и установите [пакет SDK для машинное обучение Azure мониторинга](/python/api/overview/azure/ml/install).
 
 ## <a name="enable-data-collection"></a>Включение сбора данных
 
-[Сбор данных](/python/api/azureml-monitoring/azureml.monitoring.modeldatacollector.modeldatacollector?preserve-view=true&view=azure-ml-py) можно включить независимо от модели, развертываемой с помощью машинное обучение Azure или других средств.
+[Сбор данных](/python/api/azureml-monitoring/azureml.monitoring.modeldatacollector.modeldatacollector) можно включить независимо от модели, развертываемой с помощью машинное обучение Azure или других средств.
 
 Чтобы включить сбор данных, необходимо выполнить следующие действия.
 
@@ -203,7 +203,7 @@ ms.locfileid: "97680952"
 
     [![Создание таблицы кирпичей данных](./media/how-to-enable-data-collection/dbtable.PNG)](././media/how-to-enable-data-collection/dbtable.PNG#lightbox)
 
-1. Обновите расположение данных. Например:
+1. Обновите расположение данных. Пример:
 
     ```
     file_location = "wasbs://mycontainer@storageaccountname.blob.core.windows.net/modeldata/1a2b3c4d-5e6f-7g8h-9i10-j11k12l13m14/myresourcegrp/myWorkspace/aks-w-collv9/best_model/10/inputs/2018/*/*/data.csv" 
@@ -214,6 +214,6 @@ ms.locfileid: "97680952"
 
 1. Выполните действия, описанные в шаблоне, чтобы просмотреть и проанализировать данные.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Обнаружение смещения данных](how-to-monitor-datasets.md) для собранных данных.

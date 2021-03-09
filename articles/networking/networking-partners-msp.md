@@ -7,12 +7,12 @@ ms.service: expressroute
 ms.topic: conceptual
 ms.date: 07/23/2020
 ms.author: sukishen
-ms.openlocfilehash: 6522c6f0a64c5f6f126592b858845f674bb62767
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 9f3043c20dc4ba83da99abeee67f0ee8a3f867ad
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102425538"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102520376"
 ---
 # <a name="about-azure-networking-msp-partners"></a>Сведения о партнерах программы для поставщиков сетевых устройств и служб Azure (MSP)
 
@@ -34,6 +34,7 @@ ms.locfileid: "102425538"
 |[Aryaka Networks](https://www.aryaka.com/azure-msp-vwan-managed-service-provider-launch-partner-aryaka/)||[Aryaka Azure Connect](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/aryaka.cloudconnect_azure_19?tab=Overview)|[Aryaka Managed SD-WAN для виртуальных сетей Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/aryaka.aryaka_azure_virtual_wan?tab=Overview) | | |
 |[аксесдн](https://www.axesdn.com/en/azure-msp.html)||[АКСЕСДН под управлением Azure ExpressRoute](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/1584591601184.axesdn_managed_azure_expressroute?tab=Overview)|[АКСЕСДН управляемой виртуальной глобальной сети Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/1584591601184.axesdn_managed_azure_virtualwan?tab=Overview) | | |
 |[BT](https://www.globalservices.bt.com/en/solutions/products/cloud-connect-azure)|[Консалтинг по преобразованию сети: оценка (1 ч)](https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bt-americas-inc.network-transformation-consulting);[BT Cloud Connect Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bt-americas-inc.bt-cca-lh-001?tab=Overview)|[BT Cloud Connect Azure ExpressRoute](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bt-americas-inc.bt-cca-lh-003?tab=Overview)|[BT Cloud Connect, Виртуальная глобальная сеть Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bt-americas-inc.bt-cca-lh-002?tab=Overview)|||
+|[буи](https://www.bui.co.za/)|[Управление облаком a2zManaged](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bui.a2zmanagement?tab=Overview)||[БУИ Managed SD-WAN с Велоклауд](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bui.buimanaged_sd-wan?tab=Overview)||[БУИ Циберсок](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bui.buicybersoc_msp?tab=Overview)|
 |[Coevolve](https://www.coevolve.com/services/azure-networking-services/)|||[Управляемая Виртуальная глобальная сеть Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/coevolveptylimited1581027739259.coevolve-managed-azure-vwan?tab=Overview); [Управляемая виртуальная сеть VMware SD-Virtual ребро](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/coevolveptylimited1581027739259.managed-vmware-sdwan-edge?tab=Overview)|||
 |[Colt](https://www.colt.net/why-colt/strategic-alliances/microsoft-partnership/msp/)|[Оптимизация сети в Azure: оценка (2 ч)](https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/colttechnologyservices.azure_networking)|||||
 |[Equinix](https://www.equinix.com/)|[Семинар по оптимизированной для облака глобальной сети](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/equinix.cloudoptimizedwan?tab=Overview)|[Семинар по стратегии подключения ExpressRoute](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/equinix.expressroutestrategy?tab=Overview); [Equinix Cloud Exchange Fabric](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/equinix.equinix_ecx_fabric?tab=Overview)||||

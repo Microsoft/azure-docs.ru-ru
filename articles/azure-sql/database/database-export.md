@@ -11,12 +11,12 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: f874803e0ae361255754477ca68184255f35b91f
-ms.sourcegitcommit: 48e5379c373f8bd98bc6de439482248cd07ae883
+ms.openlocfilehash: 1e08f3bd40dbd51a31eb6a78f102c12ab26e2790
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98107384"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519730"
 ---
 # <a name="export-to-a-bacpac-file---azure-sql-database-and-azure-sql-managed-instance"></a>Экспорт в файл BACPAC — база данных SQL Azure и Azure SQL Управляемый экземпляр
 
@@ -55,7 +55,7 @@ ms.locfileid: "98107384"
 
     ![Экспорт базы данных](./media/database-export/database-export2.png)
 
-3. Нажмите **OK**.
+3. Нажмите кнопку **ОК**.
 
 4. Чтобы отслеживать ход выполнения операции экспорта, откройте страницу для сервера, содержащего экспортируемую базу данных. В разделе **Параметры** выберите **Журнал импорта и экспорта**.
 
@@ -103,6 +103,13 @@ while ($exportStatus.Status -eq "InProgress")
 }
 [Console]::WriteLine("")
 $exportStatus
+```
+## <a name="cancel-the-export-request"></a>Отменить запрос на экспорт
+
+Ниже приведен пример команды PowerShell для работы с [базой данных Operations-Cancel API](https://docs.microsoft.com/rest/api/sql/databaseoperations/cancel) или [командой PowerShell остановить-азсклдатабасеактивити](https://docs.microsoft.com/powershell/module/az.sql/Stop-AzSqlDatabaseActivity?view=azps-5.5.0).
+
+```cmd
+Stop-AzSqlDatabaseActivity -ResourceGroupName $ResourceGroupName -ServerName $ServerName -DatabaseName $DatabaseName -OperationId $Operation.OperationId
 ```
 
 ## <a name="next-steps"></a>Дальнейшие действия

@@ -10,12 +10,12 @@ author: lobrien
 ms.date: 01/29/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python
-ms.openlocfilehash: 56a3183e259a0b1c661dfe84d5e47c4c221e5d48
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: 3ecf4458b052f4fdc0eb2e6e697b0468c71ce9c2
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99584874"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519662"
 ---
 # <a name="trigger-machine-learning-pipelines"></a>Активация конвейеров машинного обучения
 
@@ -66,7 +66,7 @@ from azureml.pipeline.core.schedule import ScheduleRecurrence, Schedule
 
 ### <a name="create-a-time-based-schedule"></a>Создание расписания на основе времени
 
-`ScheduleRecurrence`Конструктор имеет обязательный `frequency` аргумент, который должен быть одной из следующих строк: "Minute", "Hour", "Day", "Week" или "month". Кроме того, требуется целочисленный `interval` аргумент, указывающий, сколько `frequency` единиц должно пройти между запусками расписания. Необязательные аргументы позволяют более подробно узнать о времени запуска, как описано в [документации по пакету SDK для счедулерекурренце](/python/api/azureml-pipeline-core/azureml.pipeline.core.schedule.schedulerecurrence?preserve-view=true&view=azure-ml-py).
+`ScheduleRecurrence`Конструктор имеет обязательный `frequency` аргумент, который должен быть одной из следующих строк: "Minute", "Hour", "Day", "Week" или "month". Кроме того, требуется целочисленный `interval` аргумент, указывающий, сколько `frequency` единиц должно пройти между запусками расписания. Необязательные аргументы позволяют более подробно узнать о времени запуска, как описано в [документации по пакету SDK для счедулерекурренце](/python/api/azureml-pipeline-core/azureml.pipeline.core.schedule.schedulerecurrence).
 
 Создайте `Schedule` , который начинает выполнение каждые 15 минут:
 
@@ -83,11 +83,11 @@ recurring_schedule = Schedule.create(ws, name="MyRecurringSchedule",
 
 Конвейеры, активируемые изменениями файлов, могут оказаться более эффективными по сравнению с расписаниями, основанными на времени. Если нужно сделать что-то перед изменением файла или при добавлении нового файла в каталог данных, можно предварительно обработать этот файл. Вы можете отслеживать любые изменения в хранилище данных или изменения в определенном каталоге в хранилище данных. При мониторинге определенного каталога изменения в подкаталогах этого каталога _не_ активируют запуск.
 
-Для создания реактивного файла `Schedule` необходимо задать `datastore` параметр в вызове [Schedule. Create](/python/api/azureml-pipeline-core/azureml.pipeline.core.schedule.schedule?preserve-view=true&view=azure-ml-py#&preserve-view=truecreate-workspace--name--pipeline-id--experiment-name--recurrence-none--description-none--pipeline-parameters-none--wait-for-provisioning-false--wait-timeout-3600--datastore-none--polling-interval-5--data-path-parameter-name-none--continue-on-step-failure-none--path-on-datastore-none---workflow-provider-none---service-endpoint-none-). Для наблюдения за папкой задайте `path_on_datastore` аргумент.
+Для создания реактивного файла `Schedule` необходимо задать `datastore` параметр в вызове [Schedule. Create](/python/api/azureml-pipeline-core/azureml.pipeline.core.schedule.schedule#create-workspace--name--pipeline-id--experiment-name--recurrence-none--description-none--pipeline-parameters-none--wait-for-provisioning-false--wait-timeout-3600--datastore-none--polling-interval-5--data-path-parameter-name-none--continue-on-step-failure-none--path-on-datastore-none---workflow-provider-none---service-endpoint-none-). Для наблюдения за папкой задайте `path_on_datastore` аргумент.
 
 `polling_interval`Аргумент позволяет указать в минутах частоту проверки хранилища данных на наличие изменений.
 
-Если конвейер был создан с помощью [пути](/python/api/azureml-core/azureml.data.datapath.datapath?preserve-view=true&view=azure-ml-py) [пипелинепараметер](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelineparameter?preserve-view=true&view=azure-ml-py), можно присвоить этой переменной имя измененного файла, задав `data_path_parameter_name` аргумент.
+Если конвейер был создан с помощью [пути](/python/api/azureml-core/azureml.data.datapath.datapath) [пипелинепараметер](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelineparameter), можно присвоить этой переменной имя измененного файла, задав `data_path_parameter_name` аргумент.
 
 ```python
 datastore = Datastore(workspace=ws, name="workspaceblobstore")
@@ -221,7 +221,7 @@ published_pipeline.endpoint
 
 :::image type="content" source="media/how-to-trigger-published-pipeline/azure-data-factory-pipeline-activity.png" alt-text="Снимок экрана, показывающий действие конвейера ML в среде разработки фабрики данных Azure":::
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье вы использовали пакет SDK для Машинное обучение Azure для Python, чтобы запланировать конвейер двумя разными способами. Одно расписание повторяется на основе затраченного времени. Другое расписание выполняется при изменении файла на указанном `Datastore` или в каталоге в этом хранилище. Вы узнали, как использовать портал для проверки конвейера и отдельных запусков. Вы узнали, как отключить расписание, чтобы остановить выполнение конвейера. Наконец, вы создали приложение логики Azure для активации конвейера. 
 

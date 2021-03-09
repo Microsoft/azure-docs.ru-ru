@@ -11,12 +11,12 @@ ms.reviewer: nibaccam
 ms.date: 12/23/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python
-ms.openlocfilehash: aaa7dbf2ae7c8acb3b3beeb3e9098c5058af26a7
-ms.sourcegitcommit: 67b44a02af0c8d615b35ec5e57a29d21419d7668
+ms.openlocfilehash: c45b819f9fc02fae40c2bf7fc5c2247c8c0a6147
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97918321"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102517486"
 ---
 # <a name="deploy-mlflow-models-as-azure-web-services-preview"></a>Развертывание моделей Млфлов в качестве веб-служб Azure (Предварительная версия)
 
@@ -39,19 +39,19 @@ MLflow — это библиотека с открытым кодом для у�
 >[!NOTE]
 > Как библиотека с открытым исходным кодом, Млфлов часто меняются. Таким образом, функции, предоставляемые через Машинное обучение Azure и интеграцию с Млфлов, следует рассматривать как предварительную версию, а не полностью поддерживать корпорацией Майкрософт.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Модель машинного обучения. Если у вас нет обученной модели, найдите пример записной книжки, наилучшим образом соответствующий вашему сценарию вычислений в [этом репозитории](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/ml-frameworks/using-mlflow) , и следуйте его инструкциям. 
 * [Настройте универсальный код ресурса (URI) отслеживания млфлов для подключения машинное обучение Azure](how-to-use-mlflow.md#track-local-runs).
 * Установите пакет `azureml-mlflow`. 
-    * Этот пакет автоматически переносится в пакет `azureml-core` [SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py), который обеспечивает подключение для млфлов к рабочей области.
+    * Этот пакет автоматически переносится в пакет `azureml-core` [SDK для машинное обучение Azure Python](/python/api/overview/azure/ml/install), который обеспечивает подключение для млфлов к рабочей области.
 * Узнайте, какие [разрешения доступа требуются для выполнения операций млфлов с рабочей областью](how-to-assign-roles.md#mlflow-operations). 
 
 ## <a name="deploy-to-azure-container-instance-aci"></a>Развертывание в экземпляре контейнера Azure (ACI)
 
 Чтобы развернуть модель Млфлов в веб-службе Машинное обучение Azure, необходимо настроить в модели [универсальный код ресурса (URI) отслеживания млфлов для подключения к машинное обучение Azure](how-to-use-mlflow.md). 
 
-Настройте конфигурацию развертывания с помощью метода [deploy_configuration ()](/python/api/azureml-core/azureml.core.webservice.aciwebservice?preserve-view=true&view=azure-ml-py#&preserve-view=truedeploy-configuration-cpu-cores-none--memory-gb-none--tags-none--properties-none--description-none--location-none--auth-enabled-none--ssl-enabled-none--enable-app-insights-none--ssl-cert-pem-file-none--ssl-key-pem-file-none--ssl-cname-none--dns-name-label-none-) . Кроме того, можно добавить теги и описания, которые помогут отследить веб-службу.
+Настройте конфигурацию развертывания с помощью метода [deploy_configuration ()](/python/api/azureml-core/azureml.core.webservice.aciwebservice#deploy-configuration-cpu-cores-none--memory-gb-none--tags-none--properties-none--description-none--location-none--auth-enabled-none--ssl-enabled-none--enable-app-insights-none--ssl-cert-pem-file-none--ssl-key-pem-file-none--ssl-cname-none--dns-name-label-none-) . Кроме того, можно добавить теги и описания, которые помогут отследить веб-службу.
 
 ```python
 from azureml.core.webservice import AciWebservice, Webservice
@@ -84,7 +84,7 @@ webservice.wait_for_deployment(show_output=True)
 
 Чтобы развернуть модель Млфлов в веб-службе Машинное обучение Azure, необходимо настроить в модели [универсальный код ресурса (URI) отслеживания млфлов для подключения к машинное обучение Azure](how-to-use-mlflow.md). 
 
-Чтобы выполнить развертывание в AKS, сначала создайте кластер AKS. Создайте кластер AKS с помощью метода [ComputeTarget. Create ()](/python/api/azureml-core/azureml.core.computetarget?preserve-view=true&view=azure-ml-py#&preserve-view=truecreate-workspace--name--provisioning-configuration-) . Создание нового кластера может занять 20-25 минут.
+Чтобы выполнить развертывание в AKS, сначала создайте кластер AKS. Создайте кластер AKS с помощью метода [ComputeTarget. Create ()](/python/api/azureml-core/azureml.core.computetarget#create-workspace--name--provisioning-configuration-) . Создание нового кластера может занять 20-25 минут.
 
 ```python
 from azureml.core.compute import AksCompute, ComputeTarget
@@ -104,7 +104,7 @@ aks_target.wait_for_completion(show_output = True)
 print(aks_target.provisioning_state)
 print(aks_target.provisioning_errors)
 ```
-Настройте конфигурацию развертывания с помощью метода [deploy_configuration ()](/python/api/azureml-core/azureml.core.webservice.aciwebservice?preserve-view=true&view=azure-ml-py#&preserve-view=truedeploy-configuration-cpu-cores-none--memory-gb-none--tags-none--properties-none--description-none--location-none--auth-enabled-none--ssl-enabled-none--enable-app-insights-none--ssl-cert-pem-file-none--ssl-key-pem-file-none--ssl-cname-none--dns-name-label-none-) . Кроме того, можно добавить теги и описания, которые помогут отследить веб-службу.
+Настройте конфигурацию развертывания с помощью метода [deploy_configuration ()](/python/api/azureml-core/azureml.core.webservice.aciwebservice#deploy-configuration-cpu-cores-none--memory-gb-none--tags-none--properties-none--description-none--location-none--auth-enabled-none--ssl-enabled-none--enable-app-insights-none--ssl-cert-pem-file-none--ssl-key-pem-file-none--ssl-cname-none--dns-name-label-none-) . Кроме того, можно добавить теги и описания, которые помогут отследить веб-службу.
 
 ```python
 from azureml.core.webservice import Webservice, AksWebservice
@@ -139,7 +139,7 @@ webservice.wait_for_deployment()
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Если вы не планируете использовать развернутую веб-службу, используйте `service.delete()` для ее удаления из записной книжки.  Дополнительные сведения см. в документации по [WebService. Delete ()](/python/api/azureml-core/azureml.core.webservice%28class%29?preserve-view=true&view=azure-ml-py#&preserve-view=truedelete--).
+Если вы не планируете использовать развернутую веб-службу, используйте `service.delete()` для ее удаления из записной книжки.  Дополнительные сведения см. в документации по [WebService. Delete ()](/python/api/azureml-core/azureml.core.webservice%28class%29#delete--).
 
 ## <a name="example-notebooks"></a>Примеры записных книжек
 

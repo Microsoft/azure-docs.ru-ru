@@ -9,12 +9,12 @@ ms.subservice: extensions
 ms.date: 02/12/2021
 ms.reviewer: jushiman
 ms.custom: mimckitt
-ms.openlocfilehash: 71ddb1217be7fe3e1254e0d49e1f40c43a55a3f0
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 8805b3c4947311a3054066b3378d881d673c2b14
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/09/2021
-ms.locfileid: "102502422"
+ms.locfileid: "102521753"
 ---
 # <a name="preview-orchestration-modes-for-virtual-machine-scale-sets-in-azure"></a>Предварительная версия: режимы оркестрации для масштабируемых наборов виртуальных машин в Azure 
 
@@ -97,7 +97,7 @@ az vm create –vmss "myVMSS"  –-platform_fault_domain 1
 ## <a name="a-comparison-of-flexible-uniform-and-availability-sets"></a>Сравнение гибких, единообразных и групп доступности 
 В следующей таблице приводится сравнение гибкого режима оркестрации, универсального режима оркестрации и групп доступности по их функциям.
 
-| Функция | Поддерживается гибким согласованием (Предварительная версия) | Поддерживается универсальным согласованием (общедоступная доступность) | Поддерживается службой Авсетс (общая доступность) |
+| Компонент | Поддерживается гибким согласованием (Предварительная версия) | Поддерживается универсальным согласованием (общедоступная доступность) | Поддерживается службой Авсетс (общая доступность) |
 |-|-|-|-|
 |         Тип виртуальной машины  | Стандартная виртуальная машина Azure IaaS (Microsoft. COMPUTE/виртуалмачинес)  | Виртуальные машины, относящиеся к масштабируемому набору (Microsoft. COMPUTE/виртуалмачинескалесетс/виртуалмачинес)  | Стандартная виртуальная машина Azure IaaS (Microsoft. COMPUTE/виртуалмачинес)  |
 |         Поддерживаемые номера SKU  |            Серии D, серия E серии, серия F серии, серия B, Intel, AMD  |            Все номера SKU  |            Все номера SKU  |
@@ -128,7 +128,7 @@ az vm create –vmss "myVMSS"  –-platform_fault_domain 1
 |         Оповещения Azure  |            Нет  |            Да  |            Да  |
 |         Аналитика виртуальных машин  |            Нет  |            Да  |            Да  |
 |         Azure Backup  |            Да  |            Да  |            Да  |
-|         Azure Site Recovery  |            Да, только PowerShell  |            Да  |            Да  |
+|         Azure Site Recovery  |            Нет  |            Нет  |            Да  |
 |         Добавление или удаление существующей виртуальной машины в группе  |            Нет  |            Нет  |            Нет  | 
 
 

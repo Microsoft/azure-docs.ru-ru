@@ -11,12 +11,12 @@ ms.author: nilsp
 author: NilsPohlmann
 ms.date: 07/31/2020
 ms.custom: devx-track-python
-ms.openlocfilehash: bfeab990c841f6b65e665b4a8aabdfd8b251da60
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.openlocfilehash: e2b5a3322f633ca8301357c2186d78d3ac437ae2
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93323919"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521974"
 ---
 # <a name="define-machine-learning-pipelines-in-yaml"></a>Определение конвейеров машинного обучения в YAML
 
@@ -40,7 +40,7 @@ ms.locfileid: "93323919"
 
 ## <a name="pipeline-definition"></a>Определение конвейера
 
-В определении конвейера используются следующие ключи, которые соответствуют классу [конвейеров](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipeline.pipeline?preserve-view=true&view=azure-ml-py) :
+В определении конвейера используются следующие ключи, которые соответствуют классу [конвейеров](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipeline.pipeline) :
 
 | Ключ YAML | Описание |
 | ----- | ----- |
@@ -52,7 +52,7 @@ ms.locfileid: "93323919"
 
 ## <a name="parameters"></a>Параметры
 
-`parameters`Раздел использует следующие ключи, которые соответствуют классу [пипелинепараметер](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelineparameter?preserve-view=true&view=azure-ml-py) :
+`parameters`Раздел использует следующие ключи, которые соответствуют классу [пипелинепараметер](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelineparameter) :
 
 | Ключ YAML | Описание |
 | ---- | ---- |
@@ -80,7 +80,7 @@ pipeline:
 
 ## <a name="data-reference"></a>Описание данных
 
-`data_references`Раздел использует следующие ключи, которые соответствуют [ссылке](/python/api/azureml-core/azureml.data.data_reference.datareference?preserve-view=true&view=azure-ml-py)на объект.
+`data_references`Раздел использует следующие ключи, которые соответствуют [ссылке](/python/api/azureml-core/azureml.data.data_reference.datareference)на объект.
 
 | Ключ YAML | Описание |
 | ----- | ----- |
@@ -108,12 +108,12 @@ pipeline:
 
 | Тип шага | Описание |
 | ----- | ----- |
-| `AdlaStep` | Выполняет скрипт U-SQL с Azure Data Lake Analytics. Соответствует классу [адластеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.adlastep?preserve-view=true&view=azure-ml-py) . |
-| `AzureBatchStep` | Запускает задания с помощью пакетной службы Azure. Соответствует классу [азуребатчстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.azurebatchstep?preserve-view=true&view=azure-ml-py) . |
-| `DatabricsStep` | Добавляет записную книжку, скрипт Python или JAR-файл. Соответствует классу [датабрикксстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.databricksstep?preserve-view=true&view=azure-ml-py) . |
-| `DataTransferStep` | Передает данные между вариантами хранения. Соответствует классу [дататрансферстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.datatransferstep?preserve-view=true&view=azure-ml-py) . |
-| `PythonScriptStep` | Выполняет скрипт Python. Соответствует классу [писонскриптстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.python_script_step.pythonscriptstep?preserve-view=true&view=azure-ml-py) . |
-| `ParallelRunStep` | Запускает скрипт Python для асинхронного и параллельного обработки больших объемов данных. Соответствует классу [параллелрунстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.parallel_run_step.parallelrunstep?preserve-view=true&view=azure-ml-py) . |
+| `AdlaStep` | Выполняет скрипт U-SQL с Azure Data Lake Analytics. Соответствует классу [адластеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.adlastep) . |
+| `AzureBatchStep` | Запускает задания с помощью пакетной службы Azure. Соответствует классу [азуребатчстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.azurebatchstep) . |
+| `DatabricsStep` | Добавляет записную книжку, скрипт Python или JAR-файл. Соответствует классу [датабрикксстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.databricksstep) . |
+| `DataTransferStep` | Передает данные между вариантами хранения. Соответствует классу [дататрансферстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.datatransferstep) . |
+| `PythonScriptStep` | Выполняет скрипт Python. Соответствует классу [писонскриптстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.python_script_step.pythonscriptstep) . |
+| `ParallelRunStep` | Запускает скрипт Python для асинхронного и параллельного обработки больших объемов данных. Соответствует классу [параллелрунстеп](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.parallel_run_step.parallelrunstep) . |
 
 ### <a name="adla-step"></a>ADLA шаг
 
@@ -122,8 +122,8 @@ pipeline:
 | `script_name` | Имя скрипта U-SQL (относительно `source_directory` ). |
 | `compute_target` | Целевой объект Azure Data Lake вычислений, используемый для этого шага. |
 | `parameters` | [Параметры](#parameters) для конвейера. |
-| `inputs` | Входными данными могут быть [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding?preserve-view=true&view=azure-ml-py), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference?preserve-view=true&view=azure-ml-py), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata?preserve-view=true&view=azure-ml-py), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29?preserve-view=true&view=azure-ml-py), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition?preserve-view=true&view=azure-ml-py)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset?preserve-view=true&view=azure-ml-py). |
-| `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata?preserve-view=true&view=azure-ml-py) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding?preserve-view=true&view=azure-ml-py). |
+| `inputs` | Входными данными могут быть [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset). |
+| `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding). |
 | `source_directory` | Каталог, содержащий скрипт, сборки и т. д. |
 | `priority` | Значение приоритета, используемое для текущего задания. |
 | `params` | Словарь пар "имя-значение". |
@@ -171,8 +171,8 @@ pipeline:
 | Ключ YAML | Описание |
 | ----- | ----- |
 | `compute_target` | Целевой объект вычислений пакетной службы Azure, который будет использоваться для этого шага. |
-| `inputs` | Входными данными могут быть [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding?preserve-view=true&view=azure-ml-py), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference?preserve-view=true&view=azure-ml-py), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata?preserve-view=true&view=azure-ml-py), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29?preserve-view=true&view=azure-ml-py), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition?preserve-view=true&view=azure-ml-py)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset?preserve-view=true&view=azure-ml-py). |
-| `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata?preserve-view=true&view=azure-ml-py) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding?preserve-view=true&view=azure-ml-py). |
+| `inputs` | Входными данными могут быть [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset). |
+| `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding). |
 | `source_directory` | Каталог, содержащий двоичные файлы модуля, исполняемый файл, сборки и т. д. |
 | `executable` | Имя команды или исполняемого файла, которые будут запускаться в рамках этого задания. |
 | `create_pool` | Логический флаг, указывающий, следует ли создать пул перед выполнением задания. |
@@ -225,12 +225,12 @@ pipeline:
 | Ключ YAML | Описание |
 | ----- | ----- |
 | `compute_target` | Целевой объект Azure Databricks вычислений, используемый для этого шага. |
-| `inputs` | Входными данными могут быть [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding?preserve-view=true&view=azure-ml-py), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference?preserve-view=true&view=azure-ml-py), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata?preserve-view=true&view=azure-ml-py), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29?preserve-view=true&view=azure-ml-py), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition?preserve-view=true&view=azure-ml-py)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset?preserve-view=true&view=azure-ml-py). |
-| `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata?preserve-view=true&view=azure-ml-py) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding?preserve-view=true&view=azure-ml-py). |
+| `inputs` | Входными данными могут быть [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset). |
+| `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding). |
 | `run_name` | Имя в модулях для этого запуска. |
 | `source_directory` | Каталог, содержащий скрипт и другие файлы. |
 | `num_workers` | Статическое число рабочих ролей для модуля данных, выполняющих кластер. |
-| `runconfig` | Путь к `.runconfig` файлу. Этот файл является YAML представлением класса [RunConfiguration](/python/api/azureml-core/azureml.core.runconfiguration?preserve-view=true&view=azure-ml-py) . Дополнительные сведения о структуре этого файла см. [ в разделеrunconfigschema.json](https://github.com/microsoft/MLOps/blob/b4bdcf8c369d188e83f40be8b748b49821f71cf2/infra-as-code/runconfigschema.json). |
+| `runconfig` | Путь к `.runconfig` файлу. Этот файл является YAML представлением класса [RunConfiguration](/python/api/azureml-core/azureml.core.runconfiguration) . Дополнительные сведения о структуре этого файла см. [ в разделеrunconfigschema.json](https://github.com/microsoft/MLOps/blob/b4bdcf8c369d188e83f40be8b748b49821f71cf2/infra-as-code/runconfigschema.json). |
 | `allow_reuse` | Определяет, должен ли шаг повторно использовать предыдущие результаты при повторном выполнении с теми же параметрами. |
 
 Следующий пример содержит шаг "кирпичы".
@@ -279,8 +279,8 @@ pipeline:
 | Ключ YAML | Описание |
 | ----- | ----- |
 | `compute_target` | Целевой объект вычислений фабрики данных Azure, который будет использоваться для этого шага. |
-| `source_data_reference` | Входное соединение, служащее источником операций по переносу данных. Поддерживаемые значения: [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding?preserve-view=true&view=azure-ml-py), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference?preserve-view=true&view=azure-ml-py), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata?preserve-view=true&view=azure-ml-py), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29?preserve-view=true&view=azure-ml-py), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition?preserve-view=true&view=azure-ml-py)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset?preserve-view=true&view=azure-ml-py). |
-| `destination_data_reference` | Входное соединение, которое служит в качестве назначения для операций обмена данными. Поддерживаемые значения: [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata?preserve-view=true&view=azure-ml-py) и [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding?preserve-view=true&view=azure-ml-py). |
+| `source_data_reference` | Входное соединение, служащее источником операций по переносу данных. Поддерживаемые значения: [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset). |
+| `destination_data_reference` | Входное соединение, которое служит в качестве назначения для операций обмена данными. Поддерживаемые значения: [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata) и [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding). |
 | `allow_reuse` | Определяет, должен ли шаг повторно использовать предыдущие результаты при повторном выполнении с теми же параметрами. |
 
 В следующем примере показан шаг перемещения данных.
@@ -322,11 +322,11 @@ pipeline:
 
 | Ключ YAML | Описание |
 | ----- | ----- |
-| `inputs` | Входными данными могут быть [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding?preserve-view=true&view=azure-ml-py), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference?preserve-view=true&view=azure-ml-py), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata?preserve-view=true&view=azure-ml-py), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29?preserve-view=true&view=azure-ml-py), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition?preserve-view=true&view=azure-ml-py)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset?preserve-view=true&view=azure-ml-py). |
-| `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata?preserve-view=true&view=azure-ml-py) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding?preserve-view=true&view=azure-ml-py). |
+| `inputs` | Входными данными могут быть [инпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.inputportbinding), [Reference](#data-reference), [портдатареференце](/python/api/azureml-pipeline-core/azureml.pipeline.core.portdatareference), [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata), [DataSet](/python/api/azureml-core/azureml.core.dataset%28class%29), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset). |
+| `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding). |
 | `script_name` | Имя скрипта Python (относительно `source_directory` ). |
 | `source_directory` | Каталог, содержащий скрипт, среду Conda и т. д. |
-| `runconfig` | Путь к `.runconfig` файлу. Этот файл является YAML представлением класса [RunConfiguration](/python/api/azureml-core/azureml.core.runconfiguration?preserve-view=true&view=azure-ml-py) . Дополнительные сведения о структуре этого файла см. [ в разделеrunconfig.json](https://github.com/microsoft/MLOps/blob/b4bdcf8c369d188e83f40be8b748b49821f71cf2/infra-as-code/runconfigschema.json). |
+| `runconfig` | Путь к `.runconfig` файлу. Этот файл является YAML представлением класса [RunConfiguration](/python/api/azureml-core/azureml.core.runconfiguration) . Дополнительные сведения о структуре этого файла см. [ в разделеrunconfig.json](https://github.com/microsoft/MLOps/blob/b4bdcf8c369d188e83f40be8b748b49821f71cf2/infra-as-code/runconfigschema.json). |
 | `allow_reuse` | Определяет, должен ли шаг повторно использовать предыдущие результаты при повторном выполнении с теми же параметрами. |
 
 Следующий пример содержит шаг сценария Python:
@@ -369,11 +369,11 @@ pipeline:
 
 | Ключ YAML | Описание |
 | ----- | ----- |
-| `inputs` | Входными данными могут быть [наборы данных](/python/api/azureml-core/azureml.core.dataset%28class%29?preserve-view=true&view=azure-ml-py), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition?preserve-view=true&view=azure-ml-py)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset?preserve-view=true&view=azure-ml-py). |
-| `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata?preserve-view=true&view=azure-ml-py) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding?preserve-view=true&view=azure-ml-py). |
+| `inputs` | Входными данными могут быть [наборы данных](/python/api/azureml-core/azureml.core.dataset%28class%29), [датасетдефинитион](/python/api/azureml-core/azureml.data.dataset_definition.datasetdefinition)или [пипелинедатасет](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedataset). |
+| `outputs` | Выходные данные могут быть либо [пипелинедата](/python/api/azureml-pipeline-core/azureml.pipeline.core.pipelinedata) , либо [аутпутпортбиндинг](/python/api/azureml-pipeline-core/azureml.pipeline.core.graph.outputportbinding). |
 | `script_name` | Имя скрипта Python (относительно `source_directory` ). |
 | `source_directory` | Каталог, содержащий скрипт, среду Conda и т. д. |
-| `parallel_run_config` | Путь к `parallel_run_config.yml` файлу. Этот файл является YAML представлением класса [параллелрунконфиг](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.parallelrunconfig?preserve-view=true&view=azure-ml-py) . |
+| `parallel_run_config` | Путь к `parallel_run_config.yml` файлу. Этот файл является YAML представлением класса [параллелрунконфиг](/python/api/azureml-pipeline-steps/azureml.pipeline.steps.parallelrunconfig) . |
 | `allow_reuse` | Определяет, должен ли шаг повторно использовать предыдущие результаты при повторном выполнении с теми же параметрами. |
 
 Следующий пример содержит шаг параллельного выполнения:

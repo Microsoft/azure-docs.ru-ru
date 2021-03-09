@@ -8,10 +8,12 @@
       href: whats-new.md
 - name: Краткие руководства
   items:
-    - name: Создание базы знаний и отправка запросов к ней на портале QnA Maker
-      href: Quickstarts/create-publish-knowledge-base.md
-    - name: "Создание базы знаний и отправка запросов к ней с помощью клиентских библиотек или REST\_API"
-      href: Quickstarts/quickstart-sdk.md
+    - name: Создание базы знаний и запросов к ней
+      items:
+        - name: Портал QnA Maker
+          href: Quickstarts/create-publish-knowledge-base.md
+        - name: "Клиентские библиотеки или REST\_API"
+          href: Quickstarts/quickstart-sdk.md
     - name: Выполнение запроса к базе знаний с помощью REST API
       href: Quickstarts/get-answer-from-knowledge-base-using-url-tool.md
 - name: Учебники
@@ -48,6 +50,8 @@
     - name: Управление ресурсами Azure
       href: How-To/set-up-qnamaker-service-azure.md
       displayName: 'azure, resource, key, upgrade, pricing, tier,'
+    - name: Сетевая изоляция для ресурсов Azure
+      href: How-To/network-isolation.md
     - name: Управление ресурсами QnA Maker
       href: How-To/manage-qna-maker-app.md
     - name: Управление базой знаний
@@ -108,7 +112,7 @@
     - name: Формат пакетного тестирования
       href: reference-tsv-format-batch-testing.md
     - name: Шифрование
-      href: qna-maker-encryption-of-data-at-rest.md
+      href: encrypt-data-at-rest.md
     - name: Справочник по REST API
       items:
         - name: QnA Maker 4.0

@@ -11,12 +11,12 @@ ms.reviewer: peterlu
 ms.date: 01/14/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: cb556466a5a76cbb9447538e98a5a2385f7b5614
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: b1cb14e07f6c0e402510abad6f1cb160f5215c63
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101661007"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518387"
 ---
 # <a name="train-pytorch-models-at-scale-with-azure-machine-learning"></a>Обучение моделей PyTorch в масштабе с помощью Машинное обучение Azure
 
@@ -26,7 +26,7 @@ ms.locfileid: "101661007"
 
 Независимо от того, где вы изучаете модель PyTorch глубокого обучения или используете существующую модель в облаке, вы можете использовать Машинное обучение Azure для масштабирования заданий обучения с открытым исходным кодом с помощью эластичных облачных ресурсов. Вы можете создавать, развертывать, выполнять версии и отслеживать модели производственного уровня с помощью Машинное обучение Azure. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Запустите этот код в любой из этих сред:
 
@@ -36,7 +36,7 @@ ms.locfileid: "101661007"
     - В папке примеры глубокого обучения на сервере записной книжки найдите готовую и развернутую записную книжку, перейдя к этому каталогу: **практические советы по использованию azureml > ML-frameworks > pytorch > обучения-параметры-Настройка-Deploy-with-pytorch** Folder. 
  
  - Собственный сервер Jupyter Notebook
-    - [Установите пакет SDK для машинное обучение Azure](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py) (>= 1.15.0).
+    - [Установите пакет SDK для машинное обучение Azure](/python/api/overview/azure/ml/install) (>= 1.15.0).
     - [Создайте файл конфигурации рабочей области](how-to-configure-environment.md#workspace).
     - [Загрузка примеров файлов скриптов](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/ml-frameworks/pytorch/train-hyperparameter-tune-deploy-with-pytorch)`pytorch_train.py`
      
@@ -64,7 +64,7 @@ from azureml.core.compute_target import ComputeTargetException
 
 ### <a name="initialize-a-workspace"></a>Инициализация рабочей области
 
-[Машинное обучение Azure Рабочая область](concept-workspace.md) — это ресурс верхнего уровня для службы. Она предоставляет централизованное расположение для работы со всеми создаваемыми артефактами. В пакете SDK для Python можно получить доступ к артефактам рабочей области, создав [`workspace`](/python/api/azureml-core/azureml.core.workspace.workspace?preserve-view=true&view=azure-ml-py) объект.
+[Машинное обучение Azure Рабочая область](concept-workspace.md) — это ресурс верхнего уровня для службы. Она предоставляет централизованное расположение для работы со всеми создаваемыми артефактами. В пакете SDK для Python можно получить доступ к артефактам рабочей области, создав [`workspace`](/python/api/azureml-core/azureml.core.workspace.workspace) объект.
 
 Создайте объект рабочей области из `config.json` файла, созданного в [разделе Предварительные требования](#prerequisites).
 
@@ -181,7 +181,7 @@ pytorch_env.docker.base_image = 'mcr.microsoft.com/azureml/openmpi3.1.2-cuda10.1
 
 ### <a name="create-a-scriptrunconfig"></a>Создание Скриптрунконфиг
 
-Создайте объект [ScriptRunConfig](/python/api/azureml-core/azureml.core.scriptrunconfig?preserve-view=true&view=azure-ml-py), чтобы указать сведения о конфигурации для вашего задания обучения, в том числе скрипт обучения, используемую среду и целевой объект вычислений, на котором будет выполняться задание. Любые аргументы в скрипте обучения передаются через командную строку, если они указаны в `arguments` параметре. 
+Создайте объект [ScriptRunConfig](/python/api/azureml-core/azureml.core.scriptrunconfig), чтобы указать сведения о конфигурации для вашего задания обучения, в том числе скрипт обучения, используемую среду и целевой объект вычислений, на котором будет выполняться задание. Любые аргументы в скрипте обучения передаются через командную строку, если они указаны в `arguments` параметре. 
 
 ```python
 from azureml.core import ScriptRunConfig
@@ -203,7 +203,7 @@ src = ScriptRunConfig(source_directory=project_folder,
 
 ## <a name="submit-your-run"></a>Отправка выполнения
 
-[Объект Run](/python/api/azureml-core/azureml.core.run%28class%29?preserve-view=true&view=azure-ml-py) предоставляет интерфейс для журнала выполнения во время выполнения задания и после его завершения.
+[Объект Run](/python/api/azureml-core/azureml.core.run%28class%29) предоставляет интерфейс для журнала выполнения во время выполнения задания и после его завершения.
 
 ```Python
 run = Experiment(ws, name='Tutorial-pytorch-birds').submit(src)
@@ -267,7 +267,7 @@ dependencies:
   - horovod==0.19.5
 ```
 
-Чтобы выполнить распределенное задание с использованием MPI или хоровод в МАШИНном обучении Azure, необходимо указать [мпиконфигуратион](/python/api/azureml-core/azureml.core.runconfig.mpiconfiguration?preserve-view=true&view=azure-ml-py) в `distributed_job_config` параметре конструктора скриптрунконфиг. Приведенный ниже код настроит распределенное задание с 2 узлами, выполняющее один процесс на каждом узле. Если вы также хотите запустить несколько процессов на одном узле (т. е. Если номер SKU кластера имеет несколько GPU), дополнительно укажите `process_count_per_node` параметр в мпиконфигуратион (значение по умолчанию — `1` ).
+Чтобы выполнить распределенное задание с использованием MPI или хоровод в МАШИНном обучении Azure, необходимо указать [мпиконфигуратион](/python/api/azureml-core/azureml.core.runconfig.mpiconfiguration) в `distributed_job_config` параметре конструктора скриптрунконфиг. Приведенный ниже код настроит распределенное задание с 2 узлами, выполняющее один процесс на каждом узле. Если вы также хотите запустить несколько процессов на одном узле (т. е. Если номер SKU кластера имеет несколько GPU), дополнительно укажите `process_count_per_node` параметр в мпиконфигуратион (значение по умолчанию — `1` ).
 
 ```python
 from azureml.core import ScriptRunConfig
@@ -294,7 +294,7 @@ src = ScriptRunConfig(source_directory=project_folder,
 #### <a name="per-process-launch"></a>Запуск каждого процесса
 Чтобы использовать этот параметр для выполнения распределенного задания PyTorch, выполните следующие действия.
 1. Укажите скрипт и аргументы для обучения
-2. Создайте [питорчконфигуратион](/python/api/azureml-core/azureml.core.runconfig.pytorchconfiguration?preserve-view=true&view=azure-ml-py) и укажите, а `process_count` также `node_count` . `process_count`Соответствует общему количеству процессов, которые необходимо выполнить для задания. Это значение обычно равно количеству графических процессоров на узел, умноженное на число узлов. Если `process_count` параметр не указан, Azure ML по умолчанию будет запускать по одному процессу на узел.
+2. Создайте [питорчконфигуратион](/python/api/azureml-core/azureml.core.runconfig.pytorchconfiguration) и укажите, а `process_count` также `node_count` . `process_count`Соответствует общему количеству процессов, которые необходимо выполнить для задания. Это значение обычно равно количеству графических процессоров на узел, умноженное на число узлов. Если `process_count` параметр не указан, Azure ML по умолчанию будет запускать по одному процессу на узел.
 
 В МАШИНном обучении Azure будут заданы следующие переменные среды:
 * `MASTER_ADDR` — IP-адрес компьютера, на котором будет размещен процесс с рангом 0.
@@ -370,7 +370,7 @@ run = Experiment(ws, 'experiment_name').submit(src)
 
 Полный учебник по запуску распределенной PyTorch в МАШИНном обучении Azure см. в разделе [Распределенная PyTorch с помощью дистрибутеддатапараллел](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/ml-frameworks/pytorch/distributed-pytorch-with-distributeddataparallel).
 
-### <a name="troubleshooting"></a>Устранение неполадок
+### <a name="troubleshooting"></a>Диагностика
 
 * **Работа хоровод** завершена: в большинстве случаев, если возникла ошибка "Абортедеррор: хоровод завершена", в одном из процессов, вызвавших хоровод, было выработано соответствующее исключение. Каждый ранг в задании MPI получает собственный выделенный файл журнала в Машинном обучении Azure. Эти журналы имеют имя `70_driver_logs`. В случае распределенного обучения к именам журналов добавляются в суффиксы `_rank`, чтобы облегчить различение журналов. Чтобы найти точную ошибку, которая привела к завершению работы хоровод, просмотрите все файлы журнала и найдите `Traceback` в конце файлов driver_log. Один из этих файлов предоставит фактическое базовое исключение. 
 

@@ -10,12 +10,12 @@ ms.subservice: computer-vision
 ms.topic: conceptual
 ms.date: 01/12/2021
 ms.author: aahi
-ms.openlocfilehash: 0316850788a4f762680be91c8ecd86b3aa8bf6bc
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 9989c6ea6b75203d43c37854caef7fdcbc321779
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102433613"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519033"
 ---
 # <a name="install-and-run-the-spatial-analysis-container-preview"></a>Установка и запуск контейнера пространственного анализа (Предварительная версия)
 
@@ -137,7 +137,7 @@ Azure Stack ребро — это решение "оборудование ка�
 3. Назначьте переменную IP-адресу устройства. 
     
     ```powershell
-    $ip = "" Replace with the IP address of your device. 
+    $ip = "<device-IP-address>" 
     ```
     
 4. Чтобы добавить IP-адрес устройства в список доверенных узлов клиента, используйте следующую команду: 
@@ -255,13 +255,22 @@ sudo systemctl --now enable nvidia-mps.service
 
 ```bash
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
+```bash
 sudo az login
-sudo az account set --subscription <name or ID of Azure Subscription>
-sudo az group create --name "test-resource-group" --location "WestUS"
-
-sudo az iot hub create --name "test-iot-hub-123" --sku S1 --resource-group "test-resource-group"
-
-sudo az iot hub device-identity create --hub-name "test-iot-hub-123" --device-id "my-edge-device" --edge-enabled
+```
+```bash
+sudo az account set --subscription "<name or ID of Azure Subscription>"
+```
+```bash
+sudo az group create --name "<resource-group-name>" --location "<your-region>"
+```
+См. раздел [Поддержка регионов](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services) для доступных регионов.
+```bash
+sudo az iot hub create --name "<iothub-group-name>" --sku S1 --resource-group "<resource-group-name>"
+```
+```bash
+sudo az iot hub device-identity create --hub-name "<iothub-name>" --device-id "<device-name>" --edge-enabled
 ```
 
 Необходимо установить [Azure IOT Edge](../../iot-edge/how-to-install-iot-edge.md) версии 1.0.9. Чтобы скачать правильную версию, выполните следующие действия.
@@ -280,6 +289,8 @@ sudo cp ./microsoft-prod.list /etc/apt/sources.list.d/
 
 ```bash
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+```
+```bash
 sudo cp ./microsoft.gpg /etc/apt/trusted.gpg.d/
 ```
 
@@ -406,13 +417,22 @@ sudo systemctl restart docker
 
 ```bash
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
+```bash
 sudo az login
-sudo az account set --subscription <name or ID of Azure Subscription>
-sudo az group create --name "test-resource-group" --location "WestUS"
-
-sudo az iot hub create --name "test-iot-hub-123" --sku S1 --resource-group "test-resource-group"
-
-sudo az iot hub device-identity create --hub-name "test-iot-hub-123" --device-id "my-edge-device" --edge-enabled
+```
+```bash
+sudo az account set --subscription "<name or ID of Azure Subscription>"
+```
+```bash
+sudo az group create --name "<resource-group-name>" --location "<your-region>"
+```
+См. раздел [Поддержка регионов](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services) для доступных регионов.
+```bash
+sudo az iot hub create --name "<iothub-group-name>" --sku S1 --resource-group "<resource-group-name>"
+```
+```bash
+sudo az iot hub device-identity create --hub-name "<iothub-name>" --device-id "<device-name>" --edge-enabled
 ```
 
 Необходимо установить [Azure IOT Edge](../../iot-edge/how-to-install-iot-edge.md) версии 1.0.9. Чтобы скачать правильную версию, выполните следующие действия.
@@ -431,6 +451,8 @@ sudo cp ./microsoft-prod.list /etc/apt/sources.list.d/
 
 ```bash
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+```
+```bash
 sudo cp ./microsoft.gpg /etc/apt/trusted.gpg.d/
 ```
 
@@ -497,7 +519,7 @@ sudo systemctl restart iotedge
 ```azurecli
 sudo az login
 sudo az extension add --name azure-iot
-sudo az iot edge set-modules --hub-name "<IoT Hub name>" --device-id "<IoT Edge device name>" --content DeploymentManifest.json --subscription "<subscriptionId>"
+sudo az iot edge set-modules --hub-name "<iothub-name>" --device-id "<device-name>" --content DeploymentManifest.json --subscription "<name or ID of Azure Subscription>"
 ```
 
 |Параметр  |Описание  |
@@ -564,7 +586,7 @@ sudo az iot edge set-modules --hub-name "<IoT Hub name>" --device-id "<IoT Edge 
 
 ```
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 Если при запуске или запуске контейнера возникли проблемы, см. раздел [телеметрии и устранение неполадок](spatial-analysis-logging.md) для решения распространенных проблем. В этой статье также содержатся сведения о создании и сборе журналов и сборе сведений о работоспособности системы.
 

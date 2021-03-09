@@ -9,14 +9,14 @@ editor: ''
 ms.service: api-management
 ms.workload: integration
 ms.topic: article
-ms.date: 11/14/2020
+ms.date: 03/09/2021
 ms.author: apimpm
-ms.openlocfilehash: 8ec0f8cf090b3ae85a8602fb39cb07f03a417133
-ms.sourcegitcommit: e15c0bc8c63ab3b696e9e32999ef0abc694c7c41
+ms.openlocfilehash: 98237efae89e7d88dd23cb7e8fc9f7e9f05bca70
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97605604"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521549"
 ---
 # <a name="use-managed-identities-in-azure-api-management"></a>Использование управляемых удостоверений в службе управления API Azure
 
@@ -35,7 +35,7 @@ ms.locfileid: "97605604"
 
 1. Создайте экземпляр управления API на портале как обычно. Перейдите к нему на портале.
 2. Выберите **управляемые удостоверения**.
-3. На вкладке **назначенная система** переключите **состояние** **на вкл**. Нажмите **Сохранить**.
+3. На вкладке **назначенная система** переключите **состояние** **на вкл**. Щелкните **Сохранить**.
 
     :::image type="content" source="./media/api-management-msi/enable-system-msi.png" alt-text="Параметры для включения управляемого удостоверения, назначенного системой" border="true":::
 
@@ -264,6 +264,19 @@ ms.locfileid: "97605604"
 
 Вы можете использовать назначенное системой удостоверение для проверки подлинности в серверной части с помощью политики [аутентификации, управляемой удостоверениями](api-management-authentication-policies.md#ManagedIdentity) .
 
+### <a name="connect-to-azure-resources-behind-ip-firewall-using-system-assigned-managed-identity"></a><a name="apim-as-trusted-service"></a>Подключение к ресурсам Azure за брандмауэром IP-адресов с помощью управляемого удостоверения, назначенного системой
+
+
+Управление API — это надежная служба Майкрософт для следующих ресурсов. Это позволяет службе подключаться к следующим ресурсам за брандмауэром. После явного назначения соответствующей роли Azure [управляемому удостоверению, назначенному системой](../active-directory/managed-identities-azure-resources/overview.md) для этого экземпляра ресурса, область доступа для экземпляра соответствует роли Azure, назначенной управляемому удостоверению.
+
+
+|Служба Azure | Ссылка|
+|---|---|
+|Хранилище Azure | [Доверенный доступ к Azure — хранилище](../storage/common/storage-network-security.md?tabs=azure-portal#trusted-access-based-on-system-assigned-managed-identity)|
+|Служебная шина Azure | [Доверенный доступ к Azure-Service-Bus](../service-bus-messaging/service-bus-ip-filtering.md#trusted-microsoft-services)|
+|концентратору событий Azure | [Надежные — доступ к Azure-Event-концентратору](../event-hubs/event-hubs-ip-filtering.md#trusted-microsoft-services)|
+
+
 ## <a name="create-a-user-assigned-managed-identity"></a>Создание управляемого удостоверения, назначаемого пользователем
 
 > [!NOTE]
@@ -401,7 +414,7 @@ ms.locfileid: "97605604"
 
 В этом шаблоне будут развернуты перечисленные ниже компоненты.
 
-* Служба управления Azure API
+* Служба "Управление API Azure"
 * Удостоверение, назначенное пользователем, управляемым Azure
 * Azure KeyVault для хранения сертификата SSL/TLS
 

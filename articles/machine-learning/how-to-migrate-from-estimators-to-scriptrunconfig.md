@@ -11,12 +11,12 @@ ms.subservice: core
 ms.date: 12/14/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, contperf-fy21q1
-ms.openlocfilehash: d603a12f851dac5b7cefc5bad728d42967bb27dc
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: ae0623a11b940a4d142f6bfae02d4b20727a6f55
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98878601"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518878"
 ---
 # <a name="migrating-from-estimators-to-scriptrunconfig"></a>Миграция с оценщиков на Скриптрунконфиг
 
@@ -30,7 +30,7 @@ ms.locfileid: "98878601"
 > Чтобы выполнить миграцию в Скриптрунконфиг из оценщиков, убедитесь, что вы используете >= 1.15.0 пакета SDK для Python.
 
 ## <a name="scriptrunconfig-documentation-and-samples"></a>Документация и примеры Скриптрунконфиг
-Машинное обучение Azure документация и примеры были обновлены, чтобы использовать [скриптрунконфиг](/python/api/azureml-core/azureml.core.script_run_config.scriptrunconfig?preserve-view=true&view=azure-ml-py) для настройки и отправки заданий.
+Машинное обучение Azure документация и примеры были обновлены, чтобы использовать [скриптрунконфиг](/python/api/azureml-core/azureml.core.script_run_config.scriptrunconfig) для настройки и отправки заданий.
 
 Сведения об использовании Скриптрунконфиг см. в следующей документации:
 * [Настройка и отправка запуска на выполнение обучения](how-to-set-up-training-targets.md)
@@ -107,7 +107,7 @@ src.run_config.data_references = {data_ref.data_reference_name: data_ref.to_conf
 * [Обучение с наборами данных в МАШИНном обучении Azure](./how-to-train-with-datasets.md)
 
 ## <a name="distributed-training"></a>Распределенное обучение
-Если необходимо настроить распределенное задание для обучения, это можно сделать, указав `distributed_job_config` параметр в конструкторе скриптрунконфиг. Передайте [мпиконфигуратион](/python/api/azureml-core/azureml.core.runconfig.mpiconfiguration?preserve-view=true&view=azure-ml-py), [питорчконфигуратион](/python/api/azureml-core/azureml.core.runconfig.pytorchconfiguration?preserve-view=true&view=azure-ml-py)или [тенсорфловконфигуратион](/python/api/azureml-core/azureml.core.runconfig.tensorflowconfiguration?preserve-view=true&view=azure-ml-py) для распределенных заданий соответствующих типов.
+Если необходимо настроить распределенное задание для обучения, это можно сделать, указав `distributed_job_config` параметр в конструкторе скриптрунконфиг. Передайте [мпиконфигуратион](/python/api/azureml-core/azureml.core.runconfig.mpiconfiguration), [питорчконфигуратион](/python/api/azureml-core/azureml.core.runconfig.pytorchconfiguration)или [тенсорфловконфигуратион](/python/api/azureml-core/azureml.core.runconfig.tensorflowconfiguration) для распределенных заданий соответствующих типов.
 
 В следующем примере настраивается задание обучения PyTorch для использования распределенного обучения с помощью MPI или хоровод.
 ```python

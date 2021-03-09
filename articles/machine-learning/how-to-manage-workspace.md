@@ -10,23 +10,23 @@ author: sdgilley
 ms.date: 09/30/2020
 ms.topic: conceptual
 ms.custom: how-to, fasttrack-edit
-ms.openlocfilehash: 3fca8e74112b90b3cac70adaa955bbf242999705
-ms.sourcegitcommit: 44844a49afe8ed824a6812346f5bad8bc5455030
+ms.openlocfilehash: 472bc66c75881d622e8ecfe23031f58db773a919
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97739592"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518931"
 ---
 # <a name="create-and-manage-azure-machine-learning-workspaces"></a>Создание рабочих областей Машинное обучение Azure и управление ими 
 
-В этой статье вы создадите, просмотрите и удалите [**машинное обучение Azure рабочие области**](concept-workspace.md) для [Машинное обучение Azure](overview-what-is-azure-ml.md), используя портал Azure или [пакет SDK для Python](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) .
+В этой статье вы создадите, просмотрите и удалите [**машинное обучение Azure рабочие области**](concept-workspace.md) для [Машинное обучение Azure](overview-what-is-azure-ml.md), используя портал Azure или [пакет SDK для Python](/python/api/overview/azure/ml/) .
 
 По мере необходимости изменения или требования к автоматизации можно также создавать и удалять рабочие области [с помощью интерфейса командной строки](reference-azure-machine-learning-cli.md)или с помощью [расширения VS Code](tutorial-setup-vscode-extension.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 * Подписка Azure. Если у вас еще нет подписки Azure, создайте бесплатную учетную запись, прежде чем начинать работу. Опробуйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree) уже сегодня.
-* При использовании пакета SDK для Python [установите пакет SDK](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py).
+* При использовании пакета SDK для Python [установите пакет SDK](/python/api/overview/azure/ml/install).
 
 ## <a name="limitations"></a>Ограничения
 
@@ -34,7 +34,7 @@ ms.locfileid: "97739592"
 
 По умолчанию при создании рабочей области также создается реестр контейнеров Azure (запись контроля доступа).  Так как запись контроля доступа в настоящее время не поддерживает символы Юникода в именах групп ресурсов, используйте группу ресурсов, которая не содержит этих символов.
 
-## <a name="create-a-workspace"></a>Создать рабочую область
+## <a name="create-a-workspace"></a>Создание рабочей области
 
 # <a name="python"></a>[Python](#tab/python)
 
@@ -111,7 +111,7 @@ ms.locfileid: "97739592"
                              exist_ok=False)
    ```
 
-Дополнительные сведения см. в статье [Справочник по пакету SDK для рабочей области](/python/api/azureml-core/azureml.core.workspace.workspace?preserve-view=true&view=azure-ml-py).
+Дополнительные сведения см. в статье [Справочник по пакету SDK для рабочей области](/python/api/azureml-core/azureml.core.workspace.workspace).
 
 Если у вас возникли проблемы при доступе к подписке, см. статью [Настройка проверки подлинности для машинное обучение Azure ресурсов и рабочих процессов](how-to-setup-authentication.md), а также [Проверка подлинности в машинное обучение Azure](https://aka.ms/aml-notebook-auth) записной книжке.
 
@@ -167,7 +167,7 @@ ms.locfileid: "97739592"
 
 # <a name="python"></a>[Python](#tab/python)
 
-Пакет SDK для Машинное обучение Azure Python предоставляет класс [приватиндпоинтконфиг](/python/api/azureml-core/azureml.core.privateendpointconfig?preserve-view=true&view=azure-ml-py) , который можно использовать с [рабочей областью. Create ()](/python/api/azureml-core/azureml.core.workspace.workspace?view=azure-ml-py#create-name--auth-none--subscription-id-none--resource-group-none--location-none--create-resource-group-true--sku--basic---tags-none--friendly-name-none--storage-account-none--key-vault-none--app-insights-none--container-registry-none--adb-workspace-none--cmk-keyvault-none--resource-cmk-uri-none--hbi-workspace-false--default-cpu-compute-target-none--default-gpu-compute-target-none--private-endpoint-config-none--private-endpoint-auto-approval-true--exist-ok-false--show-output-true-&preserve-view=true) для создания рабочей области с закрытой конечной точкой. Для этого класса требуется существующая виртуальная сеть.
+Пакет SDK для Машинное обучение Azure Python предоставляет класс [приватиндпоинтконфиг](/python/api/azureml-core/azureml.core.privateendpointconfig) , который можно использовать с [рабочей областью. Create ()](/python/api/azureml-core/azureml.core.workspace.workspace#create-name--auth-none--subscription-id-none--resource-group-none--location-none--create-resource-group-true--sku--basic---tags-none--friendly-name-none--storage-account-none--key-vault-none--app-insights-none--container-registry-none--adb-workspace-none--cmk-keyvault-none--resource-cmk-uri-none--hbi-workspace-false--default-cpu-compute-target-none--default-gpu-compute-target-none--private-endpoint-config-none--private-endpoint-auto-approval-true--exist-ok-false--show-output-true-) для создания рабочей области с закрытой конечной точкой. Для этого класса требуется существующая виртуальная сеть.
 
 # <a name="portal"></a>[Портал](#tab/azure-portal)
 
@@ -201,7 +201,7 @@ ms.locfileid: "97739592"
 
 Центр безопасности Azure обеспечивает унифицированное управление безопасностью и расширенную защиту от угроз для гибридных облачных рабочих нагрузок. Вы должны разрешить центру безопасности Azure проверять ресурсы и следовать рекомендациям. Дополнительные сведения см. в статье  [сканирование образа реестра контейнеров Azure с помощью центра безопасности](../security-center/defender-for-container-registries-introduction.md) и [интеграции Azure Kubernetes Services с центром безопасности](../security-center/defender-for-kubernetes-introduction.md).
 
-### <a name="advanced"></a>Дополнительно
+### <a name="advanced"></a>Продвинутый уровень
 
 По умолчанию метаданные для рабочей области хранятся в экземпляре Azure Cosmos DB, который обслуживает Корпорация Майкрософт. Эти данные шифруются с помощью ключей, управляемых корпорацией Майкрософт.
 
@@ -371,10 +371,10 @@ ws.delete(delete_dependent_resources=False, no_wait=False)
 
 [!INCLUDE [aml-delete-resource-group](../../includes/aml-delete-resource-group.md)]
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 * **Поддерживаемые браузеры в машинное обучение Azure Studio**. рекомендуется использовать наиболее актуальный браузер, совместимый с вашей операционной системой. Поддерживаются следующие браузеры:
-  * Microsoft ребро (новый Microsoft ребро, последняя версия. Не Microsoft ребра Legacy)
+  * Microsoft Edge (новый Microsoft Edge последней версии, а не устаревшая версия Microsoft Edge);
   * Safari (последняя версия, только для Mac);
   * Chrome (последняя версия);
   * Firefox (последняя версия).

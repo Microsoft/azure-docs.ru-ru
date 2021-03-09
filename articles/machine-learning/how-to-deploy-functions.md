@@ -11,12 +11,12 @@ ms.reviewer: larryfr
 ms.date: 03/06/2020
 ms.topic: conceptual
 ms.custom: how-to, racking-python, devx-track-azurecli
-ms.openlocfilehash: 88408c4d1c1936d364029f73d9e7b2be0bcf9d84
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: abb38ebbdacdf4f153148fbe121e54ede88f066a
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102213119"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519271"
 ---
 # <a name="deploy-a-machine-learning-model-to-azure-functions-preview"></a>Развертывание модели машинного обучения в функциях Azure (Предварительная версия)
 
@@ -63,7 +63,7 @@ ms.locfileid: "102213119"
 Эти сущности инкапсулированы в __конфигурацию вывода__. В конфигурации зависимостей указываются скрипт входа и другие зависимости.
 
 > [!IMPORTANT]
-> При создании конфигурации вывода для использования с функциями Azure необходимо использовать объект [среды](/python/api/azureml-core/azureml.core.environment%28class%29?preserve-view=true&view=azure-ml-py) . Обратите внимание, что при определении пользовательской среды необходимо добавить azureml-Defaults с версией >= 1.0.45 в качестве зависимости PIP. Этот пакет содержит функции, необходимые для размещения модели в качестве веб-службы. В следующем примере демонстрируется создание объекта среды и его использование с конфигурацией вывода:
+> При создании конфигурации вывода для использования с функциями Azure необходимо использовать объект [среды](/python/api/azureml-core/azureml.core.environment%28class%29) . Обратите внимание, что при определении пользовательской среды необходимо добавить azureml-Defaults с версией >= 1.0.45 в качестве зависимости PIP. Этот пакет содержит функции, необходимые для размещения модели в качестве веб-службы. В следующем примере демонстрируется создание объекта среды и его использование с конфигурацией вывода:
 >
 > ```python
 > from azureml.core.environment import Environment
@@ -96,7 +96,7 @@ pip install azureml-contrib-functions
 
 ## <a name="create-the-image"></a>Создание образа
 
-Чтобы создать образ DOCKER, развернутый в функциях Azure, используйте [azureml. от участников сообщества. functions. Package](/python/api/azureml-contrib-functions/azureml.contrib.functions?preserve-view=true&view=azure-ml-py) или конкретную функцию пакета для триггера, который вы хотите использовать. В следующем фрагменте кода показано, как создать новый пакет с триггером большого двоичного объекта из модели и конфигурации вывода:
+Чтобы создать образ DOCKER, развернутый в функциях Azure, используйте [azureml. от участников сообщества. functions. Package](/python/api/azureml-contrib-functions/azureml.contrib.functions) или конкретную функцию пакета для триггера, который вы хотите использовать. В следующем фрагменте кода показано, как создать новый пакет с триггером большого двоичного объекта из модели и конфигурации вывода:
 
 > [!NOTE]
 > В фрагменте кода предполагается, что `model` содержит зарегистрированную модель и `inference_config` содержит конфигурацию для среды вывода. Дополнительные сведения см. в разделе [Развертывание моделей с помощью машинное обучение Azure](how-to-deploy-and-where.md).
@@ -301,4 +301,4 @@ print(blob.location)
 * Дополнительные сведения о службе хранилища BLOB-объектов см. в статье триггеры [хранилища BLOB-объектов Azure](../azure-functions/functions-bindings-storage-blob.md).
 * [Разверните модель в службе приложений Azure](how-to-deploy-app-service.md).
 * [Использование модели Машинного обучения Azure, развернутой в качестве веб-службы](how-to-consume-web-service.md)
-* [Справочник по интерфейсам API](/python/api/azureml-contrib-functions/azureml.contrib.functions?preserve-view=true&view=azure-ml-py)
+* [Справочник по интерфейсам API](/python/api/azureml-contrib-functions/azureml.contrib.functions)

@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: how-to
 ms.date: 03/05/2021
 ms.author: alkohli
-ms.openlocfilehash: bc8d14f3d4621a41c2d2845802313033d0809b4b
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: 40065189f3c1dd52f462985aef344e9cbeb12f0b
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102442134"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102522382"
 ---
 # <a name="deploy-a-kubernetes-stateless-application-via-kubectl-on-your-azure-stack-edge-pro-gpu-device"></a>Развертывание Kubernetes приложения без отслеживания состояния с помощью kubectl на устройстве Azure Stack ребра Pro GPU
 
@@ -21,13 +21,13 @@ ms.locfileid: "102442134"
 
 В этой статье описывается, как развернуть приложение без отслеживания состояния с помощью команд kubectl в существующем кластере Kubernetes. В этой статье также описывается процесс создания и настройки модулей Pod в приложении без отслеживания состояния.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем можно будет создать кластер Kubernetes и использовать `kubectl` программу командной строки, необходимо убедиться в том, что:
 
 - У вас есть учетные данные для входа на 1 узел Azure Stack пограничным устройством Pro.
 
-- Windows PowerShell 5,0 или более поздней версии устанавливается в клиентской системе Windows для доступа к устройству Azure Stack погранично Pro. Также можно использовать любой другой клиент с поддерживаемой операционной системой. В этой статье описывается процедура использования клиента Windows. Чтобы скачать последнюю версию Windows PowerShell, перейдите к разделу [Установка Windows PowerShell](/powershell/scripting/install/installing-windows-powershell?view=powershell-7&preserve-view=true).
+- Windows PowerShell 5,0 или более поздней версии устанавливается в клиентской системе Windows для доступа к устройству Azure Stack погранично Pro. Также можно использовать любой другой клиент с поддерживаемой операционной системой. В этой статье описывается процедура использования клиента Windows. Чтобы скачать последнюю версию Windows PowerShell, перейдите к разделу [Установка Windows PowerShell](/powershell/scripting/install/installing-windows-powershell).
 
 - На устройстве Azure Stack ребра Pro включено вычисление. Чтобы включить вычисление, перейдите на страницу " **Вычисление** " в локальном пользовательском интерфейсе устройства. Затем выберите сетевой интерфейс, который требуется включить для вычислений. Нажмите кнопку **Включить**. Включение вычислений приведет к созданию виртуального коммутатора на устройстве в этом сетевом интерфейсе. Дополнительные сведения см. [в статье Включение вычислений в сети на Azure Stack пограничных Pro](azure-stack-edge-gpu-deploy-configure-network-compute-web-proxy.md).
 

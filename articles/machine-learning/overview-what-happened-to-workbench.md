@@ -10,18 +10,18 @@ ms.custom: how-to
 ms.author: larryfr
 author: BlackMist
 ms.date: 03/05/2020
-ms.openlocfilehash: ec99be6082e01ea49e75ff29b5fb3c37d56b6dd5
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.openlocfilehash: c800901ae139b16e75613b0cc8de3a9485186896
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98683380"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521379"
 ---
 # <a name="what-happened-to-azure-machine-learning-workbench"></a>Что случилось с Azure Machine Learning Workbench?
 
 Приложение Azure Machine Learning Workbench и некоторые другие ранние функции устарели и были заменены в выпуске за **сентябрь 2018 г.** в рамках процесса улучшения [архитектуры](concept-azure-machine-learning-architecture.md).
 
-Этот выпуск содержит множество существенных обновлений, внесенных с учетом отзывов клиентов для улучшения удобства работы. Изменения не коснулись основных функций службы, начиная от запуска эксперимента и кончая развертыванием модели. Но теперь в вашем распоряжении надежные пакеты <a href="/python/api/overview/azure/ml/intro?view=azure-ml-py" target="_blank">Python SDK</a>, R SDK и [интерфейс командной строки Azure](reference-azure-machine-learning-cli.md) для выполнения задач и конвейеров машинного обучения.
+Этот выпуск содержит множество существенных обновлений, внесенных с учетом отзывов клиентов для улучшения удобства работы. Изменения не коснулись основных функций службы, начиная от запуска эксперимента и кончая развертыванием модели. Но теперь в вашем распоряжении надежные пакеты <a href="/python/api/overview/azure/ml/intro" target="_blank">Python SDK</a>, R SDK и [интерфейс командной строки Azure](reference-azure-machine-learning-cli.md) для выполнения задач и конвейеров машинного обучения.
 
 Большинство артефактов, которые были созданы в предыдущей версии Машинного обучения Azure, хранятся в вашем локальном или облачном хранилище. Эти артефакты не исчезнут.
 
@@ -36,7 +36,7 @@ ms.locfileid: "98683380"
 Последний выпуск Машинного обучения Azure включает следующие возможности:
 + [Упрощенная модель ресурсов Azure](concept-azure-machine-learning-architecture.md).
 + [Новый пользовательский интерфейс портала](how-to-track-experiments.md) для управления экспериментами и целевыми объектами вычислений.
-+ Новый, более полный <a href="/python/api/overview/azure/ml/intro?view=azure-ml-py" target="_blank">пакет SDK</a>для Python.
++ Новый, более полный <a href="/python/api/overview/azure/ml/intro" target="_blank">пакет SDK</a>для Python.
 + Обновленное и дополненное [расширение интерфейса командной строки Azure](reference-azure-machine-learning-cli.md) для машинного обучения
 
 Переработанная [архитектура](concept-azure-machine-learning-architecture.md) для упрощения использования. Вместо нескольких ресурсов Azure и учетных записей требуется только [рабочая область машинного обучения Azure](concept-workspace.md). Новые рабочие области можно быстро создать на [портале Azure](how-to-manage-workspace.md). Рабочая область позволяет нескольким пользователя хранить целевые объекты вычислений для обучения и развертывания, экспериментов с моделями, образов Docker, развернутых моделей и т. д.
@@ -49,7 +49,7 @@ ms.locfileid: "98683380"
 
 9 января 2019. Поддержка Машинное обучение Workbench, учетных записей Экспериментирование в Машинном обучении Azure и Управление моделями, а также связанных с ними пакетов SDK и CLI завершена.
 
-Все новейшие возможности доступны при использовании нового <a href="/python/api/overview/azure/ml/intro?view=azure-ml-py" target="_blank">пакета SDK</a>, [интерфейса командной строки](reference-azure-machine-learning-cli.md) и [портала](how-to-manage-workspace.md).
+Все новейшие возможности доступны при использовании нового <a href="/python/api/overview/azure/ml/intro" target="_blank">пакета SDK</a>, [интерфейса командной строки](reference-azure-machine-learning-cli.md) и [портала](how-to-manage-workspace.md).
 
 ## <a name="what-about-run-histories"></a>Что будет с журналами выполнения?
 
@@ -67,7 +67,7 @@ ms.locfileid: "98683380"
 
 Никакой код и никакие наработки не будут потеряны. В более ранней версии проекты являются объектами облака с локальным каталогом. В последней версии локальные каталоги связываются с рабочей областью Машинного обучения Azure с помощью локального файла конфигурации. См. [схему последней архитектуры](concept-azure-machine-learning-architecture.md).
 
-Большая часть содержимого проекта уже находится на локальном компьютере. Это означает, что для подключения к рабочей области осталось создать в этом каталоге файл конфигурации добавить в код ссылку для подключения к рабочей области. Чтобы продолжить использовать локальный каталог, содержащий файлы и скрипты, укажите имя каталога в команде Python ["experiment.submit"](/python/api/azureml-core/azureml.core.experiment.experiment?preserve-view=true&view=azure-ml-py) или с помощью команды интерфейса командной строки `az ml project attach`.  Пример:
+Большая часть содержимого проекта уже находится на локальном компьютере. Это означает, что для подключения к рабочей области осталось создать в этом каталоге файл конфигурации добавить в код ссылку для подключения к рабочей области. Чтобы продолжить использовать локальный каталог, содержащий файлы и скрипты, укажите имя каталога в команде Python ["experiment.submit"](/python/api/azureml-core/azureml.core.experiment.experiment) или с помощью команды интерфейса командной строки `az ml project attach`.  Пример:
 ```python
 run = exp.submit(source_directory=script_folder,
                  script='train.py', run_config=run_config_system_managed)
@@ -91,7 +91,7 @@ run = exp.submit(source_directory=script_folder,
 + [Развертывание моделей с помощью Службы машинного обучения Azure](how-to-deploy-and-where.md)
 + [Учебник. Развертывание моделей с помощью Машинное обучение Azure](tutorial-deploy-models-with-aml.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте об [актуальной архитектуре Машинного обучения Azure](concept-azure-machine-learning-architecture.md).
 

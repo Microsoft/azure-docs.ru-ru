@@ -10,12 +10,12 @@ ms.author: sagopal
 ms.date: 12/3/2020
 ms.topic: troubleshooting
 ms.custom: devx-track-python
-ms.openlocfilehash: da3e5bd9efcdd7d82dd3d3937918c4a64f69edbd
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: ec0c7d64f2145cdaf594cb903c072984f4d376a9
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102215652"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102519135"
 ---
 # <a name="troubleshoot-environment-image-builds"></a>Устранение неполадок сборок образов среды
 
@@ -24,7 +24,7 @@ ms.locfileid: "102215652"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * Подписка Azure. Попробуйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree).
-* [Пакет SDK для Машинного обучения Azure](/python/api/overview/azure/ml/install?preserve-view=true&view=azure-ml-py).
+* [Пакет SDK для Машинного обучения Azure](/python/api/overview/azure/ml/install).
 * [Интерфейс командной строки Azure](/cli/azure/install-azure-cli).
 * [Расширение CLI для Машинного обучения Azure](reference-azure-machine-learning-cli.md).
 * Для локальной отладки вам необходима рабочая установка Docker в локальной системе.
@@ -158,7 +158,7 @@ ERROR: Cannot uninstall 'mypackage'. It is a distutils installed project and thu
 
 ### <a name="you-get-a-401-error-from-a-workspace-container-registry"></a>Вы получаете ошибку 401 из реестра контейнеров рабочих областей.
 
-Повторно синхронизируйте ключи хранилища с помощью [WS.sync_keys ()](/python/api/azureml-core/azureml.core.workspace.workspace?view=azure-ml-py#sync-keys--).
+Повторно синхронизируйте ключи хранилища с помощью [WS.sync_keys ()](/python/api/azureml-core/azureml.core.workspace.workspace#sync-keys--).
 
 ### <a name="the-environment-keeps-throwing-a-waiting-for-other-conda-operations-to-finish-error"></a>Среда продолжает выдачу "ожидания завершения других операций conda..." план
 

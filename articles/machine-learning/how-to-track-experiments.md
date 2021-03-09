@@ -11,12 +11,12 @@ ms.subservice: core
 ms.date: 07/30/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: 0130af66152d4f70db47191ae2f271630a59e179
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: 3d970193bd8d73baeac89fb45da4c8a3d81cbde4
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102441080"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518405"
 ---
 # <a name="enable-logging-in-ml-training-runs"></a>Включение ведения журнала в учебных запусках МАШИНного обучения
 
@@ -37,7 +37,7 @@ ms.locfileid: "102441080"
 
 ## <a name="data-types"></a>Типы данных
 
-Вы можете вести журнал по нескольким типам данных, включая скалярные значения, списки, таблицы, изображения, каталоги и т. д. Дополнительные сведения и примеры кода на Python для разных типов данных см. на [странице справки по классу Run](/python/api/azureml-core/azureml.core.run%28class%29?preserve-view=true&view=azure-ml-py).
+Вы можете вести журнал по нескольким типам данных, включая скалярные значения, списки, таблицы, изображения, каталоги и т. д. Дополнительные сведения и примеры кода на Python для разных типов данных см. на [странице справки по классу Run](/python/api/azureml-core/azureml.core.run%28class%29).
 
 ### <a name="logging-run-metrics"></a>Регистрация метрик запуска 
 
@@ -72,13 +72,13 @@ mlf_logger._run_id = run.id
 
 ## <a name="interactive-logging-session"></a>Интерактивный сеанс ведения журнала
 
-Интерактивные сеансы ведения журнала обычно используются в средах записных книжек. Запустить интерактивный сеанс ведения журнала можно с помощью метода [Experiment.start_logging()](/python/api/azureml-core/azureml.core.experiment%28class%29?preserve-view=true&view=azure-ml-py#&preserve-view=truestart-logging--args----kwargs-). Все метрики, записанные во время сеанса, добавляются в запись о выполнении эксперимента. Метод [run.complete()](/python/api/azureml-core/azureml.core.run%28class%29?preserve-view=true&view=azure-ml-py#&preserve-view=truecomplete--set-status-true-) завершает сеансы и помечает операцию как завершенную.
+Интерактивные сеансы ведения журнала обычно используются в средах записных книжек. Запустить интерактивный сеанс ведения журнала можно с помощью метода [Experiment.start_logging()](/python/api/azureml-core/azureml.core.experiment%28class%29#start-logging--args----kwargs-). Все метрики, записанные во время сеанса, добавляются в запись о выполнении эксперимента. Метод [run.complete()](/python/api/azureml-core/azureml.core.run%28class%29#complete--set-status-true-) завершает сеансы и помечает операцию как завершенную.
 
 ## <a name="scriptrun-logs"></a>Журналы ScriptRun
 
-Из этого раздела вы узнаете, как добавить код ведения журналов в операции выполнения, созданные при настройке с помощью ScriptRunConfig. Вы можете использовать класс [**ScriptRunConfig**](/python/api/azureml-core/azureml.core.scriptrunconfig?preserve-view=true&view=azure-ml-py), чтобы инкапсулировать скрипты и среды для повторяемых операций. Вы также можете использовать этот параметр для отображения визуального мини-приложения Jupyter Notebook для мониторинга.
+Из этого раздела вы узнаете, как добавить код ведения журналов в операции выполнения, созданные при настройке с помощью ScriptRunConfig. Вы можете использовать класс [**ScriptRunConfig**](/python/api/azureml-core/azureml.core.scriptrunconfig), чтобы инкапсулировать скрипты и среды для повторяемых операций. Вы также можете использовать этот параметр для отображения визуального мини-приложения Jupyter Notebook для мониторинга.
 
-В этом примере выполняется очистка параметров для альфа-значений и регистрация результатов с помощью метода [run.log()](/python/api/azureml-core/azureml.core.run%28class%29?preserve-view=true&view=azure-ml-py#&preserve-view=truelog-name--value--description----).
+В этом примере выполняется очистка параметров для альфа-значений и регистрация результатов с помощью метода [run.log()](/python/api/azureml-core/azureml.core.run%28class%29#log-name--value--description----).
 
 1. Создайте скрипт обучения, который включает логику ведения журнала `train.py`.
 

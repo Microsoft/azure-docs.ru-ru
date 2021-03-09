@@ -26,8 +26,6 @@
     - name: Создание фабрики данных с помощью шаблона ARM
       displayName: Resource Manager
       href: quickstart-create-data-factory-resource-manager-template.md
-    - name: Безопасность. Включение шифрования на базе управляемых клиентом ключей
-      href: enable-customer-managed-key.md
     - name: Создание потока данных
       href: data-flow-create.md
 - name: Учебники
@@ -173,10 +171,6 @@
       href: concepts-pipeline-execution-triggers.md
     - name: Среда выполнения интеграции
       href: concepts-integration-runtime.md
-    - name: Безопасность
-      items:
-        - name: Базовые средства безопасности
-          href: security-baseline.md
     - name: Потоки данных
       items:
         - name: Преобразование данных с помощью сопоставления потоков данных
@@ -470,19 +464,19 @@
           href: control-flow-execute-data-flow-activity.md
         - name: Выполнение действия Power Query
           href: control-flow-power-query-activity.md
-        - name: Действия функции Azure
+        - name: Действие функции Azure
           href: control-flow-azure-function-activity.md
         - name: Настраиваемое действие
           href: transform-data-using-dotnet-custom-activity.md
         - name: Действие JAR в Databricks
           href: transform-data-databricks-jar.md
-        - name: Действие записной книжки Databricks
+        - name: Действие Notebook в Databricks
           href: transform-data-databricks-notebook.md
         - name: Действие Python в Databricks
           href: transform-data-databricks-python.md
-        - name: Действие команды обозревателя данных
+        - name: Действие Data Explorer Command
           href: /azure/data-explorer/data-factory-command-activity?toc=/azure/data-factory/toc.json
-        - name: Действие U-SQL Data Lake
+        - name: Действие Data Lake Analytics U-SQL
           href: transform-data-using-data-lake-analytics.md
         - name: Действие Hive HDInsight
           href: transform-data-using-hadoop-hive.md
@@ -494,45 +488,45 @@
           href: transform-data-using-spark.md
         - name: Действие потоковой передачи HDInsight
           href: transform-data-using-hadoop-streaming.md
-        - name: Действия выполнения конвейера в Машинном обучении
+        - name: Действие Execute Pipeline в Машинном обучении
           href: transform-data-machine-learning-service.md
-        - name: Действие выполнения пакета в Студии машинного обучения (классическая)
+        - name: Действие Batch Execution в Студии машинного обучения (классическая)
           href: transform-data-using-machine-learning.md
-        - name: Действие обновления ресурса в Студии машинного обучения (классическая)
+        - name: Действие Update Resource в Студии машинного обучения (классическая)
           href: update-machine-learning-models.md
-        - name: Действие хранимой процедуры
+        - name: Действие Stored Procedure
           href: transform-data-using-stored-procedure.md
         - name: Связанные службы вычислений
           href: compute-linked-services.md
     - name: Поток управления
       items:
-        - name: Добавление действия переменной
+        - name: Действие Append Variable
           href: control-flow-append-variable-activity.md
-        - name: Действие выполнения конвейера
+        - name: Действие Execute Pipeline
           href: control-flow-execute-pipeline-activity.md
-        - name: Действие фильтра
+        - name: Действие Filter
           href: control-flow-filter-activity.md
         - name: Действие For Each
           href: control-flow-for-each-activity.md
-        - name: Действие получения метаданных
+        - name: Действие Get Metadata
           href: control-flow-get-metadata-activity.md
-        - name: Действие условия If
+        - name: Действие If Condition
           href: control-flow-if-condition-activity.md
-        - name: Действие поиска
+        - name: Действие Lookup
           href: control-flow-lookup-activity.md
-        - name: Действие задания переменной
+        - name: Действие Set Variable
           href: control-flow-set-variable-activity.md
-        - name: Действие переключения
+        - name: Действие Set Variable
           href: control-flow-switch-activity.md
         - name: Действие Until
           href: control-flow-until-activity.md
-        - name: Действие проверки
+        - name: Действие Validation
           href: control-flow-validation-activity.md
         - name: Действие Wait
           href: control-flow-wait-activity.md
         - name: Веб-действие
           href: control-flow-web-activity.md
-        - name: Действие веб-перехватчика
+        - name: Действие Webhook
           href: control-flow-webhook-activity.md
     - name: Преобразования потока данных
       items:
@@ -608,12 +602,14 @@
           href: encrypt-credentials-self-hosted-integration-runtime.md
         - name: Управляемое удостоверение для Фабрики данных
           href: data-factory-service-identity.md
-        - name: Шифрование на базе управляемых клиентом ключей
+        - name: Шифрование в фабрике данных с помощью управляемого клиентом ключа
           href: enable-customer-managed-key.md
         - name: Управляемая виртуальная сеть
           href: managed-virtual-network-private-endpoint.md
         - name: Использование Приватного канала Azure для Фабрики данных
           href: data-factory-private-link.md
+        - name: Базовые средства безопасности Azure
+          href: security-baseline.md
     - name: Отслеживание и управление
       items:
         - name: Визуальный мониторинг
