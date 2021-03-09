@@ -7,12 +7,12 @@ ms.date: 11/23/2020
 ms.custom: devx-track-csharp, mvc, devcenter, vs-azure, seodec18, contperf-fy21q1
 zone_pivot_groups: app-service-platform-windows-linux
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: e6675dbc4381a3a21e9daa651948af17f1d70d7d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 4e2e34d73bc3048c587d7c0505f4978dd638370a
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747773"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102180281"
 ---
 # <a name="quickstart-create-an-aspnet-core-web-app-in-azure"></a>Краткое руководство. Создание веб-приложения ASP.NET Core в Azure
 
@@ -266,7 +266,7 @@ az login
     <ul>
     <li>создание группы ресурсов по умолчанию;</li>
     <li>создание плана Службы приложений по умолчанию;</li>
-    <li><a href="/cli/azure/webapp?view=azure-cli-latest#az-webapp-create">создание приложения Службы приложений</a> с указанным именем;</li>
+    <li><a href="/cli/azure/webapp#az-webapp-create">создание приложения Службы приложений</a> с указанным именем;</li>
     <li><a href="/azure/app-service/deploy-zip">развертывание ZIP-файлов</a> для приложения из текущего рабочего каталога.</li>
     <li>При выполнении оно предоставляет сообщения о создании ресурсов, ведении журналов и развертывании из ZIP-файлов.</li>
     </ul>

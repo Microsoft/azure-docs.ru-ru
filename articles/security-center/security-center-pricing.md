@@ -1,30 +1,25 @@
 ---
-title: Цены на Центр безопасности Azure
-description: 'Центр безопасности Azure предлагается в двух режимах: с Azure Defender и без него.'
-services: security-center
-documentationcenter: na
+title: Сравнение бесплатной версии Центра безопасности с включенным средством Azure Defender
+description: Узнайте о преимуществах включения Azure Defender для защиты облачных рабочих нагрузок в Центре безопасности Azure.
 author: memildin
-manager: rkarlin
-ms.assetid: 4d1364cd-7847-425a-bb3a-722cb0779f78
-ms.service: security-center
-ms.devlang: na
-ms.topic: overview
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 02/14/2021
 ms.author: memildin
-ms.openlocfilehash: 845697b9d2fd8d43caa3a9992fea8a780b7d9b7c
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
+manager: rkarlin
+ms.service: security-center
+ms.topic: overview
+ms.date: 02/14/2021
+ms.openlocfilehash: e72e312e932e71d4dac8532983c2c96ba105ba3b
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100522875"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102439482"
 ---
-# <a name="pricing-of-azure-security-center"></a>Цены на Центр безопасности Azure
-Центр безопасности Azure предоставляет возможности унифицированного управления безопасностью и расширенной защиты от угроз для рабочих нагрузок в Azure, в локальной среде и в других облаках. Он повышает вашу информированность о гибридных облачных рабочих нагрузках, обеспечивает управление ими, а также предоставляет активные средства защиты, снижающие уровень риска угроз, и интеллектуальные средства обнаружения, которые позволяют быть в курсе быстро развивающихся рисков для кибербезопасности.
+# <a name="azure-security-center-free-vs-azure-defender-enabled"></a>Сравнение бесплатной версии Центра безопасности с включенным средством Azure Defender
+Azure Defender предоставляется бесплатно в течение 30 дней с начала использования. Если по истечении 30 дней вы продолжаете использовать службу, мы автоматически начнем начислять плату за использование.
 
+Вы можете выполнить обновление на странице **Цены и параметры**, как описано в статье [Краткое руководство. Включение Azure Defender](enable-azure-defender.md). Цены для определенной валюты и региона см. на странице [цен на Центр безопасности](https://azure.microsoft.com/pricing/details/security-center/).
 
-## <a name="free-option-vs-azure-defender-enabled"></a>Сравнение вариантов: "Бесплатный" и с Azure Defender
+## <a name="what-are-the-benefits-of-enabling-azure-defender"></a>Каковы преимущества включения Azure Defender?
 
 Центр безопасности предлагается в следующих двух режимах:
 
@@ -41,43 +36,22 @@ ms.locfileid: "100522875"
     - **Защита от разнообразных угроз для ресурсов, подключенных к среде Azure.** Azure Defender предлагает нативную защиту от разнообразных угроз для служб Azure, общих для всех ваших ресурсов: Azure Resource Manager, Azure DNS, сетевой уровень Azure и Azure Key Vault. Azure Defender обладает уникальным доступом к уровню управления Azure и уровню Azure DNS и, как следствие, может защищать облачные ресурсы, подключенные к этим слоям.
 
 
-## <a name="try-azure-defender-free-for-30-days"></a>Бесплатное использование Azure Defender в течение 30 дней
-Azure Defender предоставляется бесплатно в течение 30 дней с начала использования. Если по истечении 30 дней вы продолжаете использовать службу, мы автоматически начнем начислять плату за использование.
-
-## <a name="enable-azure-defender"></a>Включение Azure Defender
-С помощью Azure Defender вы можете защитить всю подписку Azure, и эта защита будет наследоваться всеми ресурсами в подписке.
-
-Чтобы включить Azure Defender:
-
-1. В главном меню Центра безопасности выберите **Цены и параметры**.
-1. Выберите подписку, которую вы хотите изменить.
-1. Выберите **Включить Azure Defender**.
-1. Щелкните **Сохранить**.
-
-Ниже приведена страница с примером цен на подписку. Здесь вы видите, что каждый план в Azure Defender оплачивается отдельно и может быть включен или отключен отдельно.
-
-:::image type="content" source="./media/security-center-pricing/pricing-tier-page.png" alt-text="Страница цен Центра безопасности на портале":::
-
-> [!NOTE]
-> Чтобы реализовать все возможности Центра безопасности, включая защиту от угроз, необходимо включить Azure Defender для подписки, которая содержит соответствующие рабочие нагрузки. Включение на уровне рабочей области не включает JIT-доступ к виртуальной машине, адаптивные элементы управления приложениями и возможности сетевого обнаружения для ресурсов Azure. Кроме того, единственные планы Azure Defender, доступные на уровне рабочей области, — это Azure Defender для серверов и Azure Defender для экземпляров SQL Server на компьютерах.
->
-> Вы можете включить **Azure Defender для учетных записей хранения** на уровне подписки или ресурсов.
-> Вы можете включить **Azure Defender для SQL** на уровне подписки или ресурсов.
-> Для **Базы данных Azure для MariaDB, MySQL и PostgreSQL** защиту от угроз можно включить только на уровне ресурсов.
-
-
 ## <a name="faq---pricing-and-billing"></a>Вопросы и ответы: цены и выставление счетов 
 
-- [Как узнать, кто из сотрудников моей организации включил изменения Azure Defender в Центре безопасности Azure?](#how-can-i-track-who-in-my-organization-enabled-azure-defender-changes-in-security-center)
-- [Какие планы предлагаются в Центре безопасности?](#what-are-the-plans-offered-by-security-center)
-- [Как включить Azure Defender для моей подписки?](#how-do-i-enable-azure-defender-for-my-subscription)
-- [Можно ли включить Azure Defender для серверов из подмножества серверов в моей подписке?](#can-i-enable-azure-defender-for-servers-on-a-subset-of-servers-in-my-subscription)
-- [Если у меня уже есть лицензия на Microsoft Defender для конечной точки, могу ли я получить скидку на Azure Defender?](#if-i-already-have-a-license-for-microsoft-defender-for-endpoint-can-i-get-a-discount-for-azure-defender)
-- [В моей подписке включено средство "Azure Defender для серверов". Будет ли взиматься плата за незапущенные серверы?](#my-subscription-has-azure-defender-for-servers-enabled-do-i-pay-for-not-running-servers)
-- [Будет ли взиматься плата за компьютеры без установленного агента Log Analytics?](#will-i-be-charged-for-machines-without-the-log-analytics-agent-installed)
-- [Если агент Log Analytics отправляет отчеты в несколько рабочих областей, будет ли плата взиматься дважды?](#if-a-log-analytics-agent-reports-to-multiple-workspaces-will-i-be-charged-twice)
-- [Если агент Log Analytics отправляет отчеты в несколько рабочих областей, распространяется ли возможность бесплатного приема данных объемом 500 МБ на все рабочие области?](#if-a-log-analytics-agent-reports-to-multiple-workspaces-is-the-500-mb-free-data-ingestion-available-on-all-of-them)
-- [Бесплатный прием данных объемом 500 МБ рассчитывается для всей рабочей области или строго для каждого компьютера?](#is-the-500-mb-free-data-ingestion-calculated-for-an-entire-workspace-or-strictly-per-machine)
+- [Сравнение бесплатной версии Центра безопасности с включенным средством Azure Defender](#azure-security-center-free-vs-azure-defender-enabled)
+  - [Каковы преимущества включения Azure Defender?](#what-are-the-benefits-of-enabling-azure-defender)
+  - [Вопросы и ответы: цены и выставление счетов](#faq---pricing-and-billing)
+    - [Как узнать, кто из сотрудников моей организации включил изменения Azure Defender в Центре безопасности?](#how-can-i-track-who-in-my-organization-enabled-azure-defender-changes-in-security-center)
+    - [Какие планы предлагаются в Центре безопасности?](#what-are-the-plans-offered-by-security-center)
+    - [Как включить Azure Defender для моей подписки?](#how-do-i-enable-azure-defender-for-my-subscription)
+    - [Можно ли включить Azure Defender для серверов из подмножества серверов в моей подписке?](#can-i-enable-azure-defender-for-servers-on-a-subset-of-servers-in-my-subscription)
+    - [Если у меня уже есть лицензия на Microsoft Defender для конечной точки, могу ли я получить скидку на Azure Defender?](#if-i-already-have-a-license-for-microsoft-defender-for-endpoint-can-i-get-a-discount-for-azure-defender)
+    - [В моей подписке включено средство "Azure Defender для серверов". Будет ли взиматься плата за незапущенные серверы?](#my-subscription-has-azure-defender-for-servers-enabled-do-i-pay-for-not-running-servers)
+    - [Будет ли взиматься плата за компьютеры без установленного агента Log Analytics?](#will-i-be-charged-for-machines-without-the-log-analytics-agent-installed)
+    - [Если агент Log Analytics отправляет отчеты в несколько рабочих областей, будет ли плата взиматься дважды?](#if-a-log-analytics-agent-reports-to-multiple-workspaces-will-i-be-charged-twice)
+    - [Если агент Log Analytics отправляет отчеты в несколько рабочих областей, распространяется ли возможность бесплатного приема данных объемом 500 МБ на все рабочие области?](#if-a-log-analytics-agent-reports-to-multiple-workspaces-is-the-500-mb-free-data-ingestion-available-on-all-of-them)
+    - [Бесплатный прием данных объемом 500 МБ рассчитывается для всей рабочей области или строго для каждого компьютера?](#is-the-500-mb-free-data-ingestion-calculated-for-an-entire-workspace-or-strictly-per-machine)
+  - [Дальнейшие действия](#next-steps)
 
 ### <a name="how-can-i-track-who-in-my-organization-enabled-azure-defender-changes-in-security-center"></a>Как узнать, кто из сотрудников моей организации включил изменения Azure Defender в Центре безопасности?
 В подписках Azure может быть несколько администраторов с разрешениями на изменение параметров цен. Чтобы узнать, какой именно пользователь внес изменения, используйте журнал действий Azure.
@@ -98,14 +72,14 @@ Azure Defender предоставляется бесплатно в течени
 ### <a name="how-do-i-enable-azure-defender-for-my-subscription"></a>Как включить Azure Defender для моей подписки? 
 Включить Azure Defender для подписки можно любым из приведенных ниже способов. 
 
-|Метод  |Инструкции  |
-|---------|---------|
-|Страницы Центра безопасности Azure на портале Azure|[Включение Azure Defender](#enable-azure-defender)|
-|REST API|[API цен](/rest/api/securitycenter/pricings)|
-|Azure CLI|[az security pricing](/cli/azure/security/pricing)|
-|PowerShell|[Set-AzSecurityPricing](/powershell/module/az.security/set-azsecuritypricing)|
-|Политика Azure|[Цены на пакеты](https://github.com/Azure/Azure-Security-Center/blob/master/Pricing%20%26%20Settings/ARM%20Templates/Set-ASC-Bundle-Pricing.json)|
-|||
+| Метод                                          | Инструкции                                                                                                                                       |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Страницы Центра безопасности Azure на портале Azure | [Включение Azure Defender](enable-azure-defender.md)                                                                                                  |
+| REST API                                        | [API цен](/rest/api/securitycenter/pricings)                                                                                                  |
+| Azure CLI                                       | [az security pricing](/cli/azure/security/pricing)                                                                                                 |
+| PowerShell                                      | [Set-AzSecurityPricing](/powershell/module/az.security/set-azsecuritypricing)                                                                      |
+| Политика Azure                                    | [Цены на пакеты](https://github.com/Azure/Azure-Security-Center/blob/master/Pricing%20%26%20Settings/ARM%20Templates/Set-ASC-Bundle-Pricing.json) |
+|                                                 |                                                                                                                                                    |
 
 ### <a name="can-i-enable-azure-defender-for-servers-on-a-subset-of-servers-in-my-subscription"></a>Можно ли включить Azure Defender для серверов из подмножества серверов в моей подписке?
 Нет. Если в подписке включено средство [Azure Defender для серверов](defender-for-servers-introduction.md), оно будет защищать все относящиеся к ней серверы. 

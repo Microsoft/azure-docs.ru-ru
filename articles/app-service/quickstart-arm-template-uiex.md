@@ -9,12 +9,12 @@ ms.date: 10/16/2020
 ms.custom: subject-armqs, devx-track-azurecli
 zone_pivot_groups: app-service-platform-windows-linux
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 6e0368abcca5f0c38a7b143386d666e7908f30b2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 7437a5208f94b435576b8a38dc65a6e798303a72
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747972"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102179091"
 ---
 # <a name="quickstart-create-app-service-app-using-an-arm-template"></a>Краткое руководство. Создание приложения Службы приложений с помощью шаблона Resource Manager
 
@@ -133,7 +133,7 @@ az deployment group create --resource-group myResourceGroup --parameters webAppN
 <ul>
 <li>Создание стандартной <abbr title="Логический контейнер для связанных ресурсов Azure, которыми можно управлять как единым целым.">resource group</abbr>.</li>
 <li>Создание стандартного <abbr title="План, который позволяет определить расположение, размер и функции фермы веб-серверов для размещения приложения.">План службы приложений</abbr>.</li>
-<li><a href="/cli/azure/webapp?view=azure-cli-latest#az-webapp-create">Создайте <abbr title="Представление веб-приложения, которое содержит код приложения, имена узлов DNS, сертификаты и связанные ресурсы. ">приложение Службы приложений Azure</abbr></a> с указанным именем.</li>
+<li><a href="/cli/azure/webapp#az-webapp-create">Создайте <abbr title="Представление веб-приложения, которое содержит код приложения, имена узлов DNS, сертификаты и связанные ресурсы. ">приложение Службы приложений Azure</abbr></a> с указанным именем.</li>
 </ul>
 </details>
 

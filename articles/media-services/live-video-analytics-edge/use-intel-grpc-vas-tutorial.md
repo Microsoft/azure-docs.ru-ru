@@ -5,13 +5,13 @@ ms.topic: tutorial
 ms.date: 02/04/2021
 ms.service: media-services
 ms.author: faneerde
-author: faneerde
-ms.openlocfilehash: 8679e3d2fc2459e5775c525a0d5dadd4ba42ebb0
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+author: fvneerden
+ms.openlocfilehash: 282ab76c34405f19e7f81b2a8069c178b17ee0c1
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101742897"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102124420"
 ---
 # <a name="tutorial-analyze-live-video-by-using-intel-openvino-dl-streamer--edge-ai-extension"></a>Учебник. Анализ прямой видеотрансляции с помощью модуля Edge DL Streamer в Intel OpenVINO™ (расширение ИИ для Edge). 
 
@@ -327,7 +327,8 @@ ms.locfileid: "101742897"
 "PIPELINE_VERSION=vehicle_attributes_recognition"
 ],
 ```
-> [!TIP] Скопируйте шаблон и сохраните его под новым именем для каждого из используемых конвейеров. Так вы сможете переключаться между моделями, создавая новое развертывание на основе одного из этих шаблонов.
+> [!TIP]
+> Скопируйте шаблон и сохраните его под новым именем для каждого из используемых конвейеров. Так вы сможете переключаться между моделями, создавая новое развертывание на основе одного из этих шаблонов.
 
 После изменения переменных вы можете снова развернуть шаблон на устройстве. Теперь повторите приведенные выше шаги, чтобы снова запустить пример программы с новым конвейером. Результаты вывода будут иметь очень сходные схемы, но содержать больше или меньше информации в зависимости от выбранной модели конвейера.
 
