@@ -2,18 +2,19 @@
 title: Создание и Настройка хранилища ключей для шифрования дисков Azure на виртуальной машине Windows
 description: В этой статье описаны действия по созданию и настройке хранилища ключей для использования с шифрованием дисков Azure на виртуальной машине Windows.
 ms.service: virtual-machines
-ms.subservice: security
+ms.subservice: disks
+ms.collection: windows
 ms.topic: how-to
 author: msmbaldwin
 ms.author: mbaldwin
 ms.date: 08/06/2019
 ms.custom: seodec18
-ms.openlocfilehash: 01d4a11e14aee144d83fe50961744ebb15d1c82f
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: af48bd74bbc38b1cd9b4d3b0f127e7bdf5d3e037
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102181539"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102555454"
 ---
 # <a name="create-and-configure-a-key-vault-for-azure-disk-encryption-on-a-windows-vm"></a>Создание и Настройка хранилища ключей для шифрования дисков Azure на виртуальной машине Windows
 

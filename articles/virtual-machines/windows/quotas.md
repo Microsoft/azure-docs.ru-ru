@@ -3,17 +3,17 @@ title: Квоты виртуальных ЦП для Azure
 description: Дополнительные сведения о квотах виртуальных ЦП для виртуальных машин Azure.
 author: cynthn
 ms.service: virtual-machines
-ms.subservice: sizes
+ms.subservice: quota
 ms.workload: infrastructure-services
 ms.topic: conceptual
 ms.date: 05/31/2018
 ms.author: cynthn
-ms.openlocfilehash: b00d84e1c2dc8f104046fe24360d79e6952dfacc
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: ca7d95a9916aafdab2550eee48ea05ddfa5874c1
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88950295"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560724"
 ---
 # <a name="check-vcpu-quotas-using-azure-powershell"></a>Проверка квот виртуальных ЦП с помощью Azure PowerShell
 

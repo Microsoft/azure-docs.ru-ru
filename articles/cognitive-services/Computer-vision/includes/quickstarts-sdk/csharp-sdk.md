@@ -10,12 +10,12 @@ ms.topic: include
 ms.date: 12/15/2020
 ms.author: pafarley
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 6a78d3d23a167eb0d3c254e079f807ea150fa68f
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: e2c4da612d937488817af3b81d3b99e13cce1d41
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102193926"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102445390"
 ---
 <a name="HOLTop"></a>
 
@@ -30,7 +30,7 @@ ms.locfileid: "102193926"
 
 * подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
 * [IDE Visual Studio](https://visualstudio.microsoft.com/vs/) или текущая версия [.NET Core](https://dotnet.microsoft.com/download/dotnet-core).
-* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesComputerVision"  title="создайте ресурс Компьютерного зрения"  target="_blank">create a Computer Vision resource <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesComputerVision"  title="создайте ресурс Компьютерного зрения"  target="_blank">create a Computer Vision resource </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
     * Для подключения приложения к API Компьютерного зрения потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
     * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
 
@@ -131,7 +131,7 @@ dotnet add package Microsoft.Azure.CognitiveServices.Vision.ComputerVision --ver
 > [!NOTE]
 > В этом кратком руководстве предполагается, что вы уже [создали переменные среды](../../../cognitive-services-apis-create-account.md#configure-an-environment-variable-for-authentication) для ключа API и конечной точки Компьютерного зрения с именами `COMPUTER_VISION_SUBSCRIPTION_KEY` и соответственно `COMPUTER_VISION_ENDPOINT`.
 
-В новом методе в классе **Program** создайте экземпляр клиента с использованием конечной точки и ключа. Создайте объект **[ApiKeyServiceClientCredentials](/dotnet/api/microsoft.azure.cognitiveservices.vision.computervision.apikeyserviceclientcredentials?view=azure-dotnet)** с помощью ключа и используйте его со своей конечной точкой, чтобы создать объект **[ComputerVisionClient](/dotnet/api/microsoft.azure.cognitiveservices.vision.computervision.computervisionclient?view=azure-dotnet)** .
+В новом методе в классе **Program** создайте экземпляр клиента с использованием конечной точки и ключа. Создайте объект **[ApiKeyServiceClientCredentials](/dotnet/api/microsoft.azure.cognitiveservices.vision.computervision.apikeyserviceclientcredentials)** с помощью ключа и используйте его со своей конечной точкой, чтобы создать объект **[ComputerVisionClient](/dotnet/api/microsoft.azure.cognitiveservices.vision.computervision.computervisionclient)** .
 
 [!code-csharp[](~/cognitive-services-quickstart-code/dotnet/ComputerVision/ComputerVisionQuickstart.cs?name=snippet_auth)]
 

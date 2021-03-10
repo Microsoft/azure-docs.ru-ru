@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 08/05/2020
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 09654ddafba6c60db0290a8c7ce08d4b1b168f6c
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 34b06d2b74c0e13e924ae14e85ccfde0c9847793
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102504888"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102554961"
 ---
 # <a name="azure-security-baseline-for-azure-ddos-protection-standard"></a>Базовый план безопасности Azure для Azure от атак DDoS Protection Standard
 
@@ -98,9 +98,9 @@ ms.locfileid: "102504888"
 
 - [Общие сведения о разрешениях в службе защиты Azure от атак DDoS](../../ddos-protection/manage-permissions.md)
 
-- [Как получить роль каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrole?view=azureadps-2.0)
+- [Как получить роль каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrole)
 
-- [Как получить членов роли каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrolemember?view=azureadps-2.0)
+- [Как получить членов роли каталога в Azure AD с помощью PowerShell](/powershell/module/azuread/get-azureaddirectoryrolemember)
 
 **Мониторинг Центра безопасности Azure**: Да
 

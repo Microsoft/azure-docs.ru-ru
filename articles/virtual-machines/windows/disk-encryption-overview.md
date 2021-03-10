@@ -2,18 +2,19 @@
 title: Включение шифрования дисков Azure для виртуальных машин Windows
 description: В этой статье приводятся инструкции по включению Microsoft Azure шифрования дисков для виртуальных машин Windows.
 author: msmbaldwin
-ms.service: virtual-machines-windows
-ms.subservice: security
+ms.service: virtual-machines
+ms.subservice: disks
+ms.collection: windows
 ms.topic: conceptual
 ms.author: mbaldwin
 ms.date: 10/05/2019
 ms.custom: seodec18
-ms.openlocfilehash: e9436a9ec7db660fa2d7012df98188b96ea8ee16
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 8e95f770a3335d66eae0a690e148c4d6ddc22d5c
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101694314"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102555335"
 ---
 # <a name="azure-disk-encryption-for-windows-vms"></a>Шифрование дисков Azure для виртуальных машин Windows
 

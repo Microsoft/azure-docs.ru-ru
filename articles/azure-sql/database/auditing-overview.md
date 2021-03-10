@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: DavidTrigano
 ms.author: datrigan
 ms.reviewer: vanto
-ms.date: 03/03/2021
+ms.date: 03/09/2021
 ms.custom: azure-synapse, sqldbrb=1
-ms.openlocfilehash: 1c587705041b8fb3d37e02142fa10ae5a1d73f9f
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 82445ce7c1ebfc365459bbeba7e04d660221eaf2
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102173853"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102551660"
 ---
 # <a name="auditing-for-azure-sql-database-and-azure-synapse-analytics"></a>Аудит для базы данных SQL Azure и Azure синапсе Analytics
 [!INCLUDE[appliesto-sqldb-asa](../includes/appliesto-sqldb-asa.md)]

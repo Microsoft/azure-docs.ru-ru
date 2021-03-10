@@ -2,16 +2,17 @@
 title: Создание среды Linux с Azure CLI
 description: Узнайте, как с помощью Azure CLI создать "с нуля" хранилище, виртуальную машину Linux, виртуальную сеть и подсеть, балансировщик нагрузки, сетевую карту, общедоступный IP-адрес и группу безопасности сети.
 author: cynthn
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
+ms.collection: linux
 ms.topic: how-to
 ms.date: 12/14/2017
 ms.author: cynthn
-ms.openlocfilehash: e8c21df3b783241a3a4bfdbe28b28b2bceb89b4d
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: ff86651d56abe090ca08c508a220362f9a011a3f
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102509121"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102554706"
 ---
 # <a name="create-a-complete-linux-virtual-machine-with-the-azure-cli"></a>Создание полнофункциональной виртуальной машины Linux с помощью Azure CLI
 Чтобы быстро создать виртуальную машину в Azure, можно использовать одну команду Azure CLI, использующую значения по умолчанию для создания любых необходимых вспомогательных ресурсов. Ресурсы, такие как виртуальная сеть, общедоступный IP-адрес и правила группы сетевой безопасности, создаются автоматически. Чтобы получить дополнительные возможности управления в рабочей среде, можно создать эти ресурсы заранее и затем добавлять в них виртуальные машины. В этой статье описывается, как создать виртуальную машину и каждый из вспомогательных ресурсов по одному.

@@ -4,12 +4,12 @@ description: Ознакомьтесь с рекомендациями по уп�
 services: container-service
 ms.topic: conceptual
 ms.date: 12/06/2018
-ms.openlocfilehash: 4d90ac5b8ab44925b73be2f22cd7a79458da9f5a
-ms.sourcegitcommit: a92fbc09b859941ed64128db6ff72b7a7bcec6ab
+ms.openlocfilehash: 1d2f5465356a94b9ad7014e75aa6fe1515411a81
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92073557"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102564923"
 ---
 # <a name="best-practices-for-container-image-management-and-security-in-azure-kubernetes-service-aks"></a>Рекомендации по управлению и защите образов контейнеров в Службе Azure Kubernetes (AKS)
 
@@ -52,7 +52,7 @@ ms.locfileid: "92073557"
 * [Руководство. автоматизации сборок образов контейнера при обновлении базового образа в службе "Реестр контейнеров Azure"][acr-base-image-update]
 
 <!-- EXTERNAL LINKS -->
-[azure-pipelines]: /azure/devops/pipelines/?view=vsts
+[azure-pipelines]: /azure/devops/pipelines/
 [twistlock]: https://www.twistlock.com/
 [aqua]: https://www.aquasec.com/
 

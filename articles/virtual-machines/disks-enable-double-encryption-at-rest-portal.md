@@ -5,15 +5,15 @@ author: roygara
 ms.date: 08/24/2020
 ms.topic: how-to
 ms.author: rogarana
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
 ms.subservice: disks
 ms.custom: references_regions
-ms.openlocfilehash: 3882aae0fb1ecf330917f886555208c3937dd9a5
-ms.sourcegitcommit: 6a902230296a78da21fbc68c365698709c579093
+ms.openlocfilehash: b5f58b549fc9d879f6c2e5515c679d82c3ff44e4
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93358224"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560367"
 ---
 # <a name="use-the-azure-portal-to-enable-double-encryption-at-rest-for-managed-disks"></a>Использование портал Azure для включения двойного шифрования при хранении для управляемых дисков
 
@@ -30,7 +30,7 @@ ms.locfileid: "93358224"
 
     :::image type="content" source="media/virtual-machines-disks-double-encryption-at-rest-portal/double-encryption-disk-encryption-sets-search.png" alt-text="Снимок экрана основного портал Azure. наборы шифрования диска выделены на панели поиска.":::
 
-1. Нажмите кнопку **+ Добавить**.
+1. Щелкните **+ Добавить**.
 
     :::image type="content" source="media/virtual-machines-disks-double-encryption-at-rest-portal/double-encryption-add-disk-encryption-set.png" alt-text="Снимок экрана: колонка &quot;набор шифрования диска&quot;, &quot;+ Добавить&quot;.":::
 
@@ -51,7 +51,7 @@ ms.locfileid: "93358224"
 
     :::image type="content" source="media/virtual-machines-disks-double-encryption-at-rest-portal/double-encryption-select-key-vault.png" alt-text="Снимок экрана: колонка создания Key Vault.":::
 
-1. Щелкните **Создать**.
+1. Нажмите кнопку **создания**.
 1. Перейдите к созданному набору шифрования дисков и выберите отображаемую ошибку. При этом для шифрования дисков будет настроено значение работает.
 
     :::image type="content" source="media/virtual-machines-disks-double-encryption-at-rest-portal/double-encryption-disk-set-error.png" alt-text="Снимок экрана с сообщением об ошибке: отображаемый код ошибки. сообщение об ошибке. чтобы связать диск, изображение или моментальный снимок с этим набором шифрования диска, необходимо предоставить разрешения для хранилища ключей.":::

@@ -1,7 +1,7 @@
 ---
 title: Общие сведения о настройке требуемого состояния для Azure
 description: Узнайте, как использовать обработчик расширений Microsoft Azure для настройки требуемого состояния (DSC). В статье приведены необходимые компоненты, архитектура и командлеты.
-services: virtual-machines-windows
+services: virtual-machines
 documentationcenter: ''
 author: mgoedtel
 manager: evansma
@@ -9,20 +9,21 @@ editor: ''
 tags: azure-resource-manager
 keywords: DSC
 ms.assetid: bbacbc93-1e7b-4611-a3ec-e3320641f9ba
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
 ms.subservice: extensions
+ms.collection: windows
 ms.topic: article
 ms.tgt_pltfrm: vm-windows
 ms.workload: na
 ms.date: 07/13/2020
 ms.author: magoedte
 ms.custom: devx-track-azurecli, devx-track-azurepowershell
-ms.openlocfilehash: 17ada83f6fa1b57f8dd72d591b6625f25e9a2388
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: dcdc325633aff5ab828cb1c82f4bb2d8becee967
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94955860"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560044"
 ---
 # <a name="introduction-to-the-azure-desired-state-configuration-extension-handler"></a>Общие сведения об обработчике расширения Desired State Configuration в Azure
 
@@ -38,7 +39,7 @@ ms.locfileid: "94955860"
 
 В этой статье предоставлены сведения для двух сценариев — расширения DSC для подключения службы автоматизации и использования расширения DSC как инструмента для назначения конфигураций виртуальным машинам с помощью пакета SDK Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - **Локальный компьютер.** Для взаимодействия с расширением виртуальной машины Azure нужно использовать портал Azure или пакет SDK для Azure PowerShell.
 - **Гостевой агент.** Виртуальная машина Azure, настроенная с помощью конфигурации DSC, должна работать под управлением ОС, которая поддерживает Windows Management Framework (WMF) версии 4.0 или более поздней. Полный список поддерживаемых версий ОС см. в [журнале версий расширения DSC](../../automation/automation-dsc-extension-history.md).
@@ -51,7 +52,7 @@ ms.locfileid: "94955860"
 - **Узел**. Целевой объект для конфигурации DSC. В этом документе *узел* всегда ссылается на виртуальную машину Azure.
 - **Данные конфигурации**. PSD1-файл, содержащий данные среды для конфигурации.
 
-## <a name="architecture"></a>Architecture
+## <a name="architecture"></a>Архитектура
 
 Расширение DSC Azure использует платформу агента Azure, чтобы доставлять и применять конфигурации DSC виртуальных машин Azure, а также сообщать об этих конфигурациях. Расширение DSC принимает документ конфигурации и набор параметров. Если файл не предоставлен, внедряется [скрипт конфигурации по умолчанию](#default-configuration-script) с расширением. Скрипт конфигурации по умолчанию используется только для задания метаданных в [локальном диспетчере конфигураций](/powershell/scripting/dsc/managing-nodes/metaConfig).
 
@@ -61,7 +62,7 @@ ms.locfileid: "94955860"
 - Если указано свойство **wmfVersion**, то устанавливается соответствующая версия WMF (за исключением случаев, когда эта версия несовместима с ОС виртуальной машины).
 - Если свойство **wmfVersion** не указано, то устанавливается последняя применимая версия WMF.
 
-Для установки WMF требуется перезагрузка. После перезапуска расширения скачивается ZIP-файл, указанный в свойстве **modulesUrl**, если оно предоставлено. Если это расположение находится в хранилище BLOB-объектов Azure, то для доступа к файлу в свойстве **sasToken** можно указать маркер SAS. После скачивания и распаковки ZIP-файла функция настройки, определенная в **configurationFunction** , запускает файл. mof ([MOF](/windows/win32/wmisdk/managed-object-format--mof-)). Затем расширение выполняет командлет `Start-DscConfiguration -Force` с созданным MOF-файлом. Расширение фиксирует выходные данные и записывает их в канал состояний Azure.
+Для установки WMF требуется перезагрузка. После перезапуска расширения скачивается ZIP-файл, указанный в свойстве **modulesUrl**, если оно предоставлено. Если это расположение находится в хранилище BLOB-объектов Azure, то для доступа к файлу в свойстве **sasToken** можно указать маркер SAS. После скачивания и распаковки ZIP-файла функция настройки, определенная в **configurationFunction** , запускает файл. mof ([MOF-файл](/windows/win32/wmisdk/managed-object-format--mof-)). Затем расширение выполняет командлет `Start-DscConfiguration -Force` с созданным MOF-файлом. Расширение фиксирует выходные данные и записывает их в канал состояний Azure.
 
 ### <a name="default-configuration-script"></a>Скрипт конфигурации по умолчанию
 
@@ -204,7 +205,7 @@ az vm extension set \
 
 Журналы для расширения хранятся в следующем расположении: `C:\WindowsAzure\Logs\Plugins\Microsoft.Powershell.DSC\<version number>`.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о PowerShell DSC см. в [центре документации по PowerShell](/powershell/scripting/dsc/overview/overview).
 - Изучите [шаблон Resource Manager для расширения DSC](dsc-template.md).

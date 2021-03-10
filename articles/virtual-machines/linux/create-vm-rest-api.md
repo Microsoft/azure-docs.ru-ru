@@ -2,16 +2,17 @@
 title: Создание виртуальной машины Linux с REST API
 description: Сведения о создании виртуальной машины Linux, которая использует управляемые диски и проверку подлинности SSH с Azure REST API, в Azure.
 author: cynthn
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
+ms.collection: linux
 ms.topic: how-to
 ms.date: 06/05/2018
 ms.author: cynthn
-ms.openlocfilehash: b3eeaf5f343b6026e02d17e4d3bd90dba4b991c4
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 519939445e67f0f993662e2faf506eb186686156
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98737051"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102554570"
 ---
 # <a name="create-a-linux-virtual-machine-that-uses-ssh-authentication-with-the-rest-api"></a>Создание виртуальной машины Linux, в которой используется проверка подлинности по SSH с интерфейсом REST API
 
@@ -144,7 +145,7 @@ PUT https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/
 
 Дополнительные сведения об ответах REST API можно узнать в разделе [Process the response message](/rest/api/azure/#process-the-response-message) (Обработка ответного сообщения).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об Azure REST API или других средствах управления (например, Azure CLI или Azure PowerShell) см. в статьях:
 

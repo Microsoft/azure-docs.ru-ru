@@ -5,16 +5,16 @@ author: khyewei
 ms.author: khwei
 ms.reviewer: cynthn
 ms.service: virtual-machines
-ms.subservice: security
+ms.subservice: trusted-launch
 ms.topic: how-to
 ms.date: 03/03/2021
 ms.custom: template-how-to
-ms.openlocfilehash: fca11ce1cfa09fb680c2b288e40fa5f51337bdb8
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: f5e361d32cf2ab436f92ce2ca86a054a6dd3337e
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102200790"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102553754"
 ---
 # <a name="deploy-a-vm-with-trusted-launch-enabled-preview"></a>Развертывание виртуальной машины с включенным доверенным запуском (Предварительная версия)
 

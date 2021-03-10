@@ -8,12 +8,12 @@ ms.author: rogarana
 ms.service: virtual-machines
 ms.subservice: disks
 ms.custom: references_regions
-ms.openlocfilehash: a1fbd536943023d3e6724b9c1638f7a0bd97d847
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 5695b21a09199a46ab38d887f2127a61507426d3
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102036951"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102562798"
 ---
 # <a name="server-side-encryption-of-azure-disk-storage"></a>Шифрование Хранилище дисков Azure на стороне сервера
 

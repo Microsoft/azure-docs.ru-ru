@@ -9,12 +9,12 @@ ms.subservice: forms-recognizer
 ms.topic: include
 ms.date: 12/15/2020
 ms.author: lajanuar
-ms.openlocfilehash: 08026ea04e7f997ae75f6bdb2cea09e1f41e26a3
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.openlocfilehash: 2cff960e2dfe6a85b7e16395a167b77f66690c56
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101102858"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102510686"
 ---
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->
@@ -26,9 +26,10 @@ ms.locfileid: "101102858"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * Установленная программа [cURL](https://curl.haxx.se/windows/).
+* [PowerShell версии 6.0 и выше](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows) или аналогичное приложение командной строки.
 * Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
 * Набор данных для обучения в хранилище BLOB-объектов Azure. Советы и варианты для объединения данных для обучения см. в статье о [создании обучающего набора данных для пользовательской модели](../../build-training-data-set.md). При работе с этим кратким руководством можно использовать файлы в папке **Train** из [примера набора данных](https://go.microsoft.com/fwlink/?linkid=2090451) (скачайте и разархивируйте файл *sample_data.zip*).
-* Получив подписку Azure, перейдите к <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesFormRecognizer"  title="Создание ресурса Распознавателя документов"  target="_blank">созданию ресурса Распознавателя документов <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, перейдите к <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesFormRecognizer"  title="Создание ресурса Распознавателя документов"  target="_blank">созданию ресурса Распознавателя документов </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
   * Для подключения приложения к API Распознавателя документов потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
   * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
 * URL-адрес изображения квитанции. Вы можете использовать [пример изображения](https://raw.githubusercontent.com/Azure-Samples/cognitive-services-REST-api-samples/master/curl/form-recognizer/contoso-allinone.jpg) при изучении этого краткого руководства.
