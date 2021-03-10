@@ -4,12 +4,12 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 12/18/2020
 ms.author: mbullwin
-ms.openlocfilehash: a75962105a7640f4a3c73df80f5ba516565c7076
-ms.sourcegitcommit: e7152996ee917505c7aba707d214b2b520348302
+ms.openlocfilehash: a7579bb53f82dfdfe82c4eba64d2c6984152c875
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2020
-ms.locfileid: "97705049"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102444404"
 ---
 В этом кратком руководстве вы узнаете, как обнаруживать аномалии в пакете данных временных рядов, используя службу Детектора аномалий и cURL.
 
@@ -18,7 +18,7 @@ ms.locfileid: "97705049"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services).
-- Получив подписку Azure, перейдите к <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesAnomalyDetector"  title="Создание ресурса Детектора аномалий"  target="_blank">созданию ресурса Детектора аномалий <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. Дождитесь, пока закончится развертывание, и нажмите кнопку **Перейти к ресурсу**.
+- Получив подписку Azure, перейдите к <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesAnomalyDetector"  title="Создание ресурса Детектора аномалий"  target="_blank">созданию ресурса Детектора аномалий </a> на портале Azure, чтобы получить ключ и конечную точку. Дождитесь, пока закончится развертывание, и нажмите кнопку **Перейти к ресурсу**.
     - Вам понадобятся ключ и адрес конечной точки из созданного ресурса для использования REST API. 
     Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
 

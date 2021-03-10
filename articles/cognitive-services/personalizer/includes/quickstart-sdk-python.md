@@ -8,12 +8,12 @@ ms.subservice: personalizer
 ms.topic: include
 ms.custom: cog-serv-seo-aug-2020
 ms.date: 08/25/2020
-ms.openlocfilehash: b21f78a46a0f8a9d5850212bdc6375add93ee43a
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 0298edc069ee1f61bd3ccd437914c9b01e083900
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98948216"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102445658"
 ---
 [Справочная документация](/python/api/azure-cognitiveservices-personalizer/azure.cognitiveservices.personalizer) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/cognitiveservices/azure-cognitiveservices-personalizer) | [Пакет (pypi)](https://pypi.org/project/azure-cognitiveservices-personalizer/) | [Примеры](https://github.com/Azure-Samples/cognitive-services-quickstart-code/tree/master/python/Personalizer)
 
@@ -21,7 +21,7 @@ ms.locfileid: "98948216"
 
 * Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services).
 * [Python 3.x](https://www.python.org/)
-* Получив подписку Azure, <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesPersonalizer"  title="Создание ресурса Персонализатора"  target="_blank">создайте ресурс Персонализатора <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesPersonalizer"  title="Создание ресурса Персонализатора"  target="_blank">создайте ресурс Персонализатора </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
     * Для подключения приложения к API Персонализатора потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
     * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
 

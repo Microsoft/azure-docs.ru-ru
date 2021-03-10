@@ -9,12 +9,12 @@ ms.service: azure-maps
 services: azure-maps
 manager: timlt
 ms.custom: mvc, devx-track-js
-ms.openlocfilehash: d8aaf093a7e2a0ad1470d72d815e919f5b4e2d05
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.openlocfilehash: 1f1647766eeae917f7a2266ebb8f00fdfab3452e
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98624988"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102210586"
 ---
 # <a name="tutorial-how-to-display-route-directions-using-azure-maps-route-service-and-map-control"></a>Руководство по отображению направлений маршрута с помощью службы "Построение маршрутов" Azure Maps и элемента управления картой
 
@@ -170,7 +170,7 @@ ms.locfileid: "98624988"
 
     Этот код создает два [объекта Point в формате GeoJSON](https://en.wikipedia.org/wiki/GeoJSON), которые будут представлять начальную и конечную точки, и добавляет эти объекты в источник данных. 
 
-    Последний блок кода задает позицию камеры, используя данные о широте и долготе начальной и конечной точек. Начальная и конечная точки добавляются в источник данных. Ограничивающий прямоугольник для начальной и конечной точек вычисляется с использованием функции `atlas.data.BoundingBox.fromData`. Этот ограничивающий прямоугольник используется для формирования вида с камер карты по всему пути с помощью функции `map.setCamera`. Для компенсации размеров пикселей значков символов добавляется заполнение. Дополнительные сведения о свойстве setCamera элемента управления картой см. в документации по свойству [setCamera(CameraOptions | CameraBoundsOptions & AnimationOptions)](/javascript/api/azure-maps-control/atlas.map?view=azure-maps-typescript-latest#setcamera-cameraoptions---cameraboundsoptions---animationoptions-&preserve-view=false).
+    Последний блок кода задает позицию камеры, используя данные о широте и долготе начальной и конечной точек. Начальная и конечная точки добавляются в источник данных. Ограничивающий прямоугольник для начальной и конечной точек вычисляется с использованием функции `atlas.data.BoundingBox.fromData`. Этот ограничивающий прямоугольник используется для формирования вида с камер карты по всему пути с помощью функции `map.setCamera`. Для компенсации размеров пикселей значков символов добавляется заполнение. Дополнительные сведения о свойстве setCamera элемента управления картой см. в документации по свойству [setCamera(CameraOptions | CameraBoundsOptions & AnimationOptions)](/javascript/api/azure-maps-control/atlas.map#setcamera-cameraoptions---cameraboundsoptions---animationoptions-).
 
 3. Сохраните файл **MapRoute.html** и обновите страницу в браузере. Карта сместится так, что в центре окажется Сиэтл. Синий маркер в форме капли обозначает начальную точку. Круглый синий маркер обозначает конечную точку маршрута.
 

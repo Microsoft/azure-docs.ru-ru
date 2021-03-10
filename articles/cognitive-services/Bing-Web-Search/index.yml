@@ -14,12 +14,12 @@ metadata:
   author: aahill
   ms.author: aahi
   ms.date: 11/06/2019
-  ms.openlocfilehash: 5a158da6465c8f881febbf01019a1f10362b3ac4
-  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+  ms.openlocfilehash: cf7d3b916006990e9b13d0afc60d1d72cf2474dd
+  ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/05/2021
-  ms.locfileid: "102183477"
+  ms.lasthandoff: 03/09/2021
+  ms.locfileid: "102499039"
 highlightedContent:
   items:
   - title: Сравнение API-интерфейсов Поиска Bing
@@ -287,23 +287,23 @@ additionalContent:
     - title: Пакет SDK для Java
       links:
       - text: API Поиска в Интернете Bing
-        url: /java/api/overview/azure/cognitiveservices/client/bingwebsearchapi?view=azure-java-stable
+        url: /java/api/overview/azure/cognitiveservices/client/bingwebsearchapi
       - text: Пользовательский поиск Bing
-        url: /java/api/overview/azure/cognitiveservices/client/bingcustomsearch?view=azure-java-stable
+        url: /java/api/overview/azure/cognitiveservices/client/bingcustomsearch
       - text: API Поиска сущностей Bing
-        url: /java/api/overview/azure/cognitiveservices/client/bingentitysearchapi?view=azure-java-stable
+        url: /java/api/overview/azure/cognitiveservices/client/bingentitysearchapi
       - text: API Поиска изображений Bing
-        url: /java/api/overview/azure/cognitiveservices/client/bingimagesearch?view=azure-java-stable
+        url: /java/api/overview/azure/cognitiveservices/client/bingimagesearch
       - text: API Поиска новостей Bing
-        url: /java/api/overview/azure/cognitiveservices/client/bingnewssearch?view=azure-java-stable
+        url: /java/api/overview/azure/cognitiveservices/client/bingnewssearch
       - text: API Поиска видео Bing
-        url: /java/api/overview/azure/cognitiveservices/client/bingvideosearch?view=azure-java-stable
+        url: /java/api/overview/azure/cognitiveservices/client/bingvideosearch
       - text: Визуальный поиск Bing
-        url: /java/api/overview/azure/cognitiveservices/client/bingvisualsearch?view=azure-java-stable
+        url: /java/api/overview/azure/cognitiveservices/client/bingvisualsearch
       - text: API Проверки орфографии Bing
-        url: /java/api/overview/azure/cognitiveservices/client/bingspellcheck?view=azure-java-stable
+        url: /java/api/overview/azure/cognitiveservices/client/bingspellcheck
       - text: API Автозаполнения Bing
-        url: /java/api/overview/azure/cognitiveservices/client/bingautosuggest?view=azure-java-stable
+        url: /java/api/overview/azure/cognitiveservices/client/bingautosuggest
     - title: Пакет SDK для Python
       links:
       - text: API Поиска в Интернете Bing
@@ -323,27 +323,27 @@ additionalContent:
       - text: Визуальный поиск Bing
         url: /python/api/overview/azure/cognitiveservices/bing-visual-search-readme
       - text: API Проверки орфографии Bing
-        url: /python/api/overview/azure/cognitiveservices/spellcheck?view=azure-python
+        url: /python/api/overview/azure/cognitiveservices/spellcheck
     - title: Пакет SDK для Node.js
       links:
       - text: API Поиска в Интернете Bing
-        url: /javascript/api/@azure/cognitiveservices-websearch/?view=azure-node-latest
+        url: /javascript/api/@azure/cognitiveservices-websearch/
       - text: Пользовательский поиск Bing
-        url: /javascript/api/@azure/cognitiveservices-customsearch/?view=azure-node-latest
+        url: /javascript/api/@azure/cognitiveservices-customsearch/
       - text: API Поиска сущностей Bing
-        url: /javascript/api/@azure/cognitiveservices-entitysearch/?view=azure-node-latest
+        url: /javascript/api/@azure/cognitiveservices-entitysearch/
       - text: API Поиска изображений Bing
-        url: /javascript/api/@azure/cognitiveservices-imagesearch/?view=azure-node-latest
+        url: /javascript/api/@azure/cognitiveservices-imagesearch/
       - text: API Поиска новостей Bing
-        url: /javascript/api/@azure/cognitiveservices-newssearch/?view=azure-node-latest
+        url: /javascript/api/@azure/cognitiveservices-newssearch/
       - text: API Поиска видео Bing
-        url: /javascript/api/@azure/cognitiveservices-videosearch/?view=azure-node-latest
+        url: /javascript/api/@azure/cognitiveservices-videosearch/
       - text: Визуальный поиск Bing
-        url: /javascript/api/@azure/cognitiveservices-visualsearch/?view=azure-node-latest
+        url: /javascript/api/@azure/cognitiveservices-visualsearch/
       - text: API Проверки орфографии Bing
-        url: /javascript/api/@azure/cognitiveservices-spellcheck/?view=azure-node-latest
+        url: /javascript/api/@azure/cognitiveservices-spellcheck/
       - text: API Автозаполнения Bing
-        url: /javascript/api/@azure/cognitiveservices-autosuggest/?view=azure-node-latest
+        url: /javascript/api/@azure/cognitiveservices-autosuggest/
     - title: Пакет SDK для GO
       links:
       - text: API Поиска в Интернете Bing

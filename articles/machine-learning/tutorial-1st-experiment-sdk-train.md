@@ -11,12 +11,12 @@ ms.author: amsaied
 ms.reviewer: sgilley
 ms.date: 02/11/2021
 ms.custom: devx-track-python
-ms.openlocfilehash: 65c609343aece4e23917ede79dfb3c4723ffb70c
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: bee2b31f215758bf5cf73ff5393058fb915cdf25
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100369069"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102522348"
 ---
 # <a name="tutorial-train-your-first-machine-learning-model-part-3-of-4"></a>Руководство по обучению первых моделей машинного обучения (часть 3 из 4)
 
@@ -132,7 +132,7 @@ if __name__ == "__main__":
       `env = ...`
    :::column-end:::
    :::column span="2":::
-      Машинное обучение Azure реализует концепцию [среды](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py), чтобы представить воспроизводимую версионную среду Python для выполнения экспериментов. Вы можете легко создать среду из локальной среды Conda или PIP.
+      Машинное обучение Azure реализует концепцию [среды](/python/api/azureml-core/azureml.core.environment.environment), чтобы представить воспроизводимую версионную среду Python для выполнения экспериментов. Вы можете легко создать среду из локальной среды Conda или PIP.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -140,7 +140,7 @@ if __name__ == "__main__":
       `config.run_config.environment = env`
    :::column-end:::
    :::column span="2":::
-      Добавление среды в [ScriptRunConfig](/python/api/azureml-core/azureml.core.scriptrunconfig?preserve-view=true&view=azure-ml-py).
+      Добавление среды в [ScriptRunConfig](/python/api/azureml-core/azureml.core.scriptrunconfig).
    :::column-end:::
 :::row-end:::
 
@@ -262,7 +262,7 @@ python 04-run-pytorch.py
 
 В этом сеансе вы обновили базовый сценарий Hello World! на более реалистичный сценарий обучения, для выполнения которого требуется определенная среда Python. Вы узнали, как использовать локальную среду Conda в облаке со средами Машинного обучение Azure. И наконец, вы узнали, как с помощью нескольких строк кода можно вести журнал метрик в Машинном обучении Azure.
 
-Существуют и другие способы создания сред Машинного обучения Azure, в том числе из [файла requirements.txt для pip](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py#from-pip-requirements-name--file-path-) или даже из [имеющейся локальной среды Conda](/python/api/azureml-core/azureml.core.environment.environment?preserve-view=true&view=azure-ml-py#from-existing-conda-environment-name--conda-environment-name-).
+Существуют и другие способы создания сред Машинного обучения Azure, в том числе из [файла requirements.txt для pip](/python/api/azureml-core/azureml.core.environment.environment#from-pip-requirements-name--file-path-) или даже из [имеющейся локальной среды Conda](/python/api/azureml-core/azureml.core.environment.environment#from-existing-conda-environment-name--conda-environment-name-).
 
 В следующий раз вы узнаете, как работать с данными в Машинном обучении Azure путем передачи набора данных CIFAR10 в Azure.
 

@@ -11,12 +11,12 @@ ms.topic: include
 ms.date: 10/16/2020
 ms.custom: devx-track-java, cog-serv-seo-aug-2020
 ms.author: pafarley
-ms.openlocfilehash: 147985ce5aff54f3784363720a576b7e46d6e647
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 17acd11b6ebb651be170135ab9789f788d4d8077
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98947559"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102445167"
 ---
 Начните работу с клиентской библиотекой Azure Content Moderator для Java. Выполните приведенные здесь действия, чтобы установить пакет Maven и протестировать пример кода для выполнения базовых задач. 
 
@@ -34,7 +34,7 @@ Content Moderator — это служба ИИ, позволяющая упра
 * подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
 * Текущая версия [пакета средств разработки Java (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 * [Средство сборки Gradle](https://gradle.org/install/) или другой диспетчер зависимостей.
-* Получив подписку Azure, <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesContentModerator"  title="Создание ресурса Content Moderator"  target="_blank">создайте ресурс Content Moderator <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. Дождитесь, пока закончится развертывание, и нажмите кнопку **Перейти к ресурсу**.
+* Получив подписку Azure, <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesContentModerator"  title="Создание ресурса Content Moderator"  target="_blank">создайте ресурс Content Moderator </a> на портале Azure, чтобы получить ключ и конечную точку. Дождитесь, пока закончится развертывание, и нажмите кнопку **Перейти к ресурсу**.
     * Для подключения приложения к Content Moderator потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
     * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
 

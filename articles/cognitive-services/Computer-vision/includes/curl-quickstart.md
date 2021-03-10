@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 12/02/2020
 ms.author: pafarley
 ms.custom: seodec18
-ms.openlocfilehash: bfd062da44e32061e191361011c0001373488cde
-ms.sourcegitcommit: 8192034867ee1fd3925c4a48d890f140ca3918ce
+ms.openlocfilehash: c8221a15ddd92276c105f1e441c8da722655d576
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739216"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102444240"
 ---
 С помощью REST API службы "Компьютерное зрение "вы можете выполнять такие задачи:
 
@@ -30,7 +30,7 @@ ms.locfileid: "96739216"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/). 
-* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesComputerVision"  title="создайте ресурс Компьютерного зрения"  target="_blank">create a Computer Vision resource <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesComputerVision"  title="создайте ресурс Компьютерного зрения"  target="_blank">create a Computer Vision resource </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
   * Для подключения приложения к API Компьютерного зрения потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
   * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
 * Установленная программа [cURL](https://curl.haxx.se/).

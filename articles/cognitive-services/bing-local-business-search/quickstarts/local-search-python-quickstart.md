@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 05/12/2020
 ms.author: aahi
 ms.custom: devx-track-python
-ms.openlocfilehash: a6d2ed78c97e247bafefa957cddd777cc127fe6f
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.openlocfilehash: ff06d29c613b626c48c347628992576fc29b3a89
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96493259"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102430145"
 ---
 # <a name="quickstart-send-a-query-to-the-bing-local-business-search-api-in-python"></a>Краткое руководство. Отправка запроса в API Bing Local Business Search с помощью Python
 
@@ -33,7 +33,7 @@ ms.locfileid: "96493259"
 
 * подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
 * [Python](https://www.python.org/) версии 2.x или 3.x.
-* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
 
 ## <a name="run-the-complete-application"></a>Запуск готового приложения
 

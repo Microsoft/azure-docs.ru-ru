@@ -13,12 +13,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 09/10/2019
   ms.author: aahi
-  ms.openlocfilehash: 7e0fe85007aae69bf79557e0f094e275f538d280
-  ms.sourcegitcommit: e0ec3c06206ebd79195d12009fd21349de4a995d
+  ms.openlocfilehash: ccf8dd232bdfa703400a949c8dd948fe9ba21f54
+  ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/18/2020
-  ms.locfileid: "97683450"
+  ms.lasthandoff: 03/08/2021
+  ms.locfileid: "102454929"
 landingContent:
 - title: Узнайте больше об API "Детектор аномалий"
   linkLists:
@@ -58,8 +58,6 @@ landingContent:
     links:
     - text: визуализации аномалий c помощью пакетного обнаружения и Power BI
       url: tutorials/batch-anomaly-detection-powerbi.md
-    - text: Обнаружение аномалий при потоковой передаче данных с помощью Azure Databricks
-      url: tutorials/anomaly-detection-streaming-databricks.md
   - linkListType: video
     links:
     - text: Обнаружение аномалий при потоковой передаче данных с помощью Azure Databricks

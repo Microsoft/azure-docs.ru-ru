@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 02/10/2021
 ms.author: anfeldma
 ms.custom: devx-track-java
-ms.openlocfilehash: d39c1d8c3ac60dda62556b1a8da0dfe29e3c1ee3
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 930594d2c1af198aba3dae936cd0ce8fcf91c336
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100383625"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214105"
 ---
 # <a name="tutorial-build-a-java-web-application-using-azure-cosmos-db-and-the-sql-api"></a>Руководство по Создание веб-приложения Java с использованием Azure Cosmos DB и API SQL
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "100383625"
 
   [!INCLUDE [cosmos-db-emulator-docdb-api](../../includes/cosmos-db-emulator-docdb-api.md)]
 
-* [Комплект разработчика Java (JDK 7 +)](/java/azure/jdk/?view=azure-java-stable&preserve-view=true).
+* [Комплект разработчика Java (JDK 7 +)](/java/azure/jdk/).
 * [Интегрированная среда разработки Eclipse для разработчиков Java EE.](https://www.eclipse.org/downloads/packages/release/luna/sr1/eclipse-ide-java-ee-developers)
 * [Открытый веб-сайт Azure со средой выполнения Java (например, Tomcat или Jetty).](../app-service/quickstart-java.md)
 

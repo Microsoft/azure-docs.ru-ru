@@ -12,12 +12,12 @@ ms.topic: tutorial
 ms.date: 06/24/2020
 ms.author: aahi
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 077c715616e377d8b296e53fdd5a861f944ab940
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.openlocfilehash: 907899d8c5be2cbba7ff3eee4a59713718357a5c
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96349509"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102430094"
 ---
 # <a name="build-a-console-app-search-client-in-c"></a>Создание клиента поиска в виде консольного приложения на C#
 
@@ -38,7 +38,7 @@ ms.locfileid: "96349509"
 Для работы с этим руководством вам потребуется следующее:
 
 * подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
-* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
 * [Интегрированная среда разработки Visual Studio](https://www.visualstudio.com/downloads/).
 
 ## <a name="create-a-new-console-app-project"></a>Создание проекта консольного приложения

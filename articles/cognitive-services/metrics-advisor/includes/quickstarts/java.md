@@ -9,12 +9,12 @@ ms.subservice: metrics-advisor
 ms.topic: include
 ms.date: 11/09/2020
 ms.author: mbullwin
-ms.openlocfilehash: 17c8de41f6c1df4a54ec6bd564df733291a707f7
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.openlocfilehash: 316a27c6b63d71fb87649524adb4b61bd2bd133b
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96356432"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102444233"
 ---
 [Справочная документация](https://westus2.dev.cognitive.microsoft.com/docs/services/MetricsAdvisor/) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/metricsadvisor/azure-ai-metricsadvisor/src) | [Артефакт (Maven)](https://search.maven.org/artifact/com.azure/azure-ai-metricsadvisor) | [Примеры](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/metricsadvisor/azure-ai-metricsadvisor/src/samples)
 
@@ -23,7 +23,7 @@ ms.locfileid: "96356432"
 * Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
 * Текущая версия [пакета средств разработки Java (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 * [Средство сборки Gradle](https://gradle.org/install/) или другой диспетчер зависимостей.
-* Получив подписку Azure, <a href="https://go.microsoft.com/fwlink/?linkid=2142156"  title="Создание ресурса Помощника по метрикам"  target="_blank">создайте ресурс Помощника по метрикам<span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы развернуть экземпляр Помощника по метрикам.  
+* Получив подписку Azure, <a href="https://go.microsoft.com/fwlink/?linkid=2142156"  title="Создание ресурса Помощника по метрикам"  target="_blank">создайте ресурс Помощника по метрикам</a> на портале Azure, чтобы развернуть экземпляр Помощника по метрикам.  
 * Собственная база данных SQL с данными временных рядов.
   
   

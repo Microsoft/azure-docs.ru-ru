@@ -11,12 +11,12 @@ metadata:
   author: PatrickFarley
   ms.author: pafarley
   ms.date: 09/05/2019
-  ms.openlocfilehash: 0e054fdab0e20285f017075cfaf4d3c05570af88
-  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+  ms.openlocfilehash: e357fff89758f7a57e839e7dcfb94854a2e51676
+  ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/05/2021
-  ms.locfileid: "102178037"
+  ms.lasthandoff: 03/09/2021
+  ms.locfileid: "102509461"
 landingContent:
 - title: Сведения о Пользовательском визуальном распознавании
   linkLists:
@@ -101,11 +101,11 @@ landingContent:
     - text: API прогнозирования
       url: https://go.microsoft.com/fwlink/?linkid=865445
     - text: Пакет SDK для .NET
-      url: /dotnet/api/overview/azure/cognitiveservices/client/customvision?view=azure-dotnet
+      url: /dotnet/api/overview/azure/cognitiveservices/client/customvision
     - text: Пакет SDK для Python
-      url: /python/api/azure-cognitiveservices-vision-customvision/?view=azure-python
+      url: /python/api/azure-cognitiveservices-vision-customvision/
     - text: Пакет SDK для Java
-      url: /java/api/overview/azure/cognitiveservices/client/customvision?view=azure-java-stable
+      url: /java/api/overview/azure/cognitiveservices/client/customvision
     - text: Пакет SDK для Go (обучение)
       url: https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/customvision/training
     - text: Пакет SDK для Go (прогнозирование)

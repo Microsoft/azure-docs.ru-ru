@@ -11,12 +11,12 @@ metadata:
   author: PatrickFarley
   ms.author: pafarley
   ms.date: 09/05/2019
-  ms.openlocfilehash: 022e3cb5a6ec9cc85bf445f438ef5c25bc2914df
-  ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+  ms.openlocfilehash: 6aecdb69a390dd5dfd43a541b29437c0feebf53d
+  ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "100516775"
+  ms.lasthandoff: 03/09/2021
+  ms.locfileid: "102503068"
 landingContent:
 - title: Сведения о Распознавателе документов
   linkLists:
@@ -138,12 +138,12 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: REST API
-      url: https://docs.microsoft.com/rest/api/formrecognizer/
+    - text: API Распознавателя документов версии 2.0
+      url: https://westus2.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2/operations/AnalyzeWithCustomForm
     - text: Пакет SDK для .NET
       url: /dotnet/api/overview/azure/ai.formrecognizer-readme
     - text: Пакет SDK для Python
-      url: /python/api/azure-ai-formrecognizer/?view=azure-python
+      url: /python/api/azure-ai-formrecognizer/
     - text: Пакет SDK для Java
       url: /java/api/overview/azure/ai-formrecognizer-readme
     - text: Пакет SDK для JavaScript

@@ -6,18 +6,18 @@ ms.date: 04/04/2020
 ms.topic: include
 ms.author: trbye
 zone_pivot_groups: programming-languages-set-two
-ms.openlocfilehash: 0cb27a8dc5685ce295c2ce30820734c4301e9dc6
-ms.sourcegitcommit: 48e5379c373f8bd98bc6de439482248cd07ae883
+ms.openlocfilehash: f8caa38fa77134ef156360af2fd3d7dc5d84bb3d
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98109422"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102444552"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
 Необходимые условия:
 
-* <a href="~/articles/cognitive-services/Speech-Service/quickstarts/setup-platform.md?pivots=programming-language-python" target="_blank">Установите пакет SDK службы "Речь" для среды разработки и создайте пустой пример проекта<span class="docon docon-navigate-external x-hidden-focus"></span></a>.
+* <a href="~/articles/cognitive-services/Speech-Service/quickstarts/setup-platform.md?pivots=programming-language-python" target="_blank">Установите пакет SDK службы "Речь" для среды разработки и создайте пустой пример проекта</a>.
 
 ## <a name="create-a-luis-app-for-intent-recognition"></a>Создание приложения LUIS для распознавания намерений
 

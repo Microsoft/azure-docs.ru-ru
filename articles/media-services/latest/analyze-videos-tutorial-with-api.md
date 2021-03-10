@@ -12,19 +12,19 @@ ms.topic: tutorial
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: seodec18
-ms.openlocfilehash: c3ca3197e786bbfac20bec2370d2aa920ad2c4df
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.openlocfilehash: 4a050d838bae9b394f5f292698781a9a824af0bf
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98891527"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102454130"
 ---
 # <a name="tutorial-analyze-videos-with-media-services-v3"></a>Руководство по Анализ видео с помощью Служб мультимедиа версии 3
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 > [!NOTE]
-> Несмотря на то что в этом учебнике используются примеры для [пакета SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.liveevent?view=azure-dotnet), общие шаги одинаковы для [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event?view=azure-cli-latest) или других поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks).
+> Несмотря на то что в этом учебнике используются примеры для [пакета SDK для .NET](/dotnet/api/microsoft.azure.management.media.models.liveevent), общие шаги одинаковы для [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event) или других поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks).
 
 Это руководство содержит сведения об анализе видео с помощью Служб мультимедиа Azure. Имеется множество сценариев, в которых может потребоваться получить подробные сведения о видео- и аудиозаписях. Например, чтобы повысить удовлетворенность клиентов, организации могут выполнить преобразование речи в текст. Таким образом можно сделать записи клиентов доступным для поиска каталогом с индексами и панелями мониторинга. Затем они могут получить ценные сведения о своем бизнесе, такие как список распространенных жалоб, источников этих жалоб и другая полезная информация.
 

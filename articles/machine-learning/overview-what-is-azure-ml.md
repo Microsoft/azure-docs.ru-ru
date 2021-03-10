@@ -10,12 +10,12 @@ author: BlackMist
 ms.date: 11/04/2020
 ms.custom: devx-track-python
 adobe-target: true
-ms.openlocfilehash: 09be6a73b092f6298099e4a11bcd606759515c07
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 00a3ab2954d09a7e70e81d8de3644b678b79d005
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100374258"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521396"
 ---
 # <a name="what-is-azure-machine-learning"></a>Что такое служба "Машинное обучение Microsoft Azure"?
 
@@ -42,7 +42,7 @@ ms.locfileid: "100374258"
 Служба "Машинное обучение Microsoft Azure" предоставляет разработчикам и специалистам по обработке и анализу данных все средства, необходимые для рабочих процессов машинного обучения, в том числе:
 + [Конструктор Машинного обучения Azure.](tutorial-designer-automobile-price-train-score.md) Перетащите модули, чтобы создать эксперименты, а затем разверните конвейеры.
 
-+ Записные книжки Jupyter. Используйте наши [примеры записных книжек](https://github.com/Azure/MachineLearningNotebooks) или создайте свои записные книжки, чтобы использовать для машинного обучения наши примеры для <a href="/python/api/overview/azure/ml/intro?view=azure-ml-py" target="_blank">пакета SDK для Python</a>. 
++ Записные книжки Jupyter. Используйте наши [примеры записных книжек](https://github.com/Azure/MachineLearningNotebooks) или создайте свои записные книжки, чтобы использовать для машинного обучения наши примеры для <a href="/python/api/overview/azure/ml/intro" target="_blank">пакета SDK для Python</a>. 
 
 + Скрипты R или записные книжки, в которых используется <a href="https://azure.github.io/azureml-sdk-for-r/reference/index.html" target="_blank">пакет SDK для R</a> для написания собственного кода, или модули R в конструкторе.
 
@@ -60,7 +60,7 @@ ms.locfileid: "100374258"
 
 ## <a name="build-ml-models-in-python-or-r"></a>Создание моделей машинного обучения на языке Python или R
 
-Начните обучение на локальном компьютере с помощью <a href="/python/api/overview/azure/ml/intro?view=azure-ml-py" target="_blank">пакета SDK для Python</a> или <a href="https://azure.github.io/azureml-sdk-for-r/reference/index.html" target="_blank">пакета SDK для R</a> для службы "Машинное обучение Microsoft Azure". Затем можно выполнить горизонтальное увеличение масштаба в облаке. 
+Начните обучение на локальном компьютере с помощью <a href="/python/api/overview/azure/ml/intro" target="_blank">пакета SDK для Python</a> или <a href="https://azure.github.io/azureml-sdk-for-r/reference/index.html" target="_blank">пакета SDK для R</a> для службы "Машинное обучение Microsoft Azure". Затем можно выполнить горизонтальное увеличение масштаба в облаке. 
 
 С большинством доступных [целевых объектов вычислений](how-to-create-attach-compute-studio.md), например вычислительной средой Машинного обучения Azure и [Azure Databricks](/azure/databricks/scenarios/what-is-azure-databricks), и с [расширенными службами настроек гиперпараметров](how-to-tune-hyperparameters.md) можно создавать более высокий уровень модели быстрее, используя мощные возможности облака.
 
@@ -91,7 +91,7 @@ ms.locfileid: "100374258"
 ## <a name="mlops-deploy--lifecycle-management"></a>MLOps: развертывание и управление жизненным циклом
 Имея подходящую модель, вы легко сможете использовать ее в веб-службе, устройстве Интернета вещей или в Power BI. См. дополнительные сведения о [развертывании](how-to-deploy-and-where.md).
 
-Для управления развернутыми моделями можно использовать [пакет SDK Машинного обучения Azure для Python](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py), [Студию машинного обучения Azure](https://ml.azure.com) или [CLI машинного обучения](reference-azure-machine-learning-cli.md).
+Для управления развернутыми моделями можно использовать [пакет SDK Машинного обучения Azure для Python](/python/api/overview/azure/ml/), [Студию машинного обучения Azure](https://ml.azure.com) или [CLI машинного обучения](reference-azure-machine-learning-cli.md).
 
 Эти модели могут использоваться, а также они могут возвращать прогнозы [в реальном времени](how-to-consume-web-service.md) или [асинхронно](./tutorial-pipeline-batch-scoring-classification.md) на больших объемах данных.
 

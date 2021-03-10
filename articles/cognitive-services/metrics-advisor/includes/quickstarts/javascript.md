@@ -9,12 +9,12 @@ ms.subservice: metrics-advisor
 ms.topic: include
 ms.date: 11/09/2020
 ms.author: mbullwin
-ms.openlocfilehash: 668255486b1c53c062907aba9a679cf7a84bc3ca
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: f34720697e545a4d8a5119605db2db70dff6c233
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98947727"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102444974"
 ---
 [Справочная документация](/java/api/overview/azure/ai-metricsadvisor-readme) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-js/blob/master/sdk/metricsadvisor/ai-metrics-advisor/README.md) | [Пакет (npm)](https://www.npmjs.com/package/@azure/ai-metrics-advisor) | [Примеры](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/metricsadvisor/ai-metrics-advisor/samples)
 
@@ -22,7 +22,7 @@ ms.locfileid: "98947727"
 
 * Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
 * Текущая версия [Node.js](https://nodejs.org/)
-* Получив подписку Azure, <a href="https://go.microsoft.com/fwlink/?linkid=2142156"  title="Создание ресурса Помощника по метрикам"  target="_blank">создайте ресурс Помощника по метрикам<span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы развернуть экземпляр Помощника по метрикам.  
+* Получив подписку Azure, <a href="https://go.microsoft.com/fwlink/?linkid=2142156"  title="Создание ресурса Помощника по метрикам"  target="_blank">создайте ресурс Помощника по метрикам</a> на портале Azure, чтобы развернуть экземпляр Помощника по метрикам.  
 * Собственная база данных SQL с данными временных рядов.
   
 > [!TIP]

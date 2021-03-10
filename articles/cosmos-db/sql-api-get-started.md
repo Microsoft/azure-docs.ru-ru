@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 11/05/2019
 ms.author: kirankk
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 49fa928285b29eaff806b009cf327e84e17491c6
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.openlocfilehash: 2ece9ed5cb6eb6ea706db1ed615a64d001f2b17c
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93098728"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102423961"
 ---
 # <a name="tutorial-build-a-net-console-app-to-manage-data-in-azure-cosmos-db-sql-api-account"></a>Руководство по Создание консольного приложения .NET для управления данными в учетной записи API SQL для Azure Cosmos DB
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -126,7 +126,7 @@ ms.locfileid: "93098728"
 
 1. В файле *Program.cs* замените `<your endpoint URL>` значением **URI**. Замените `<your primary key>` фактическим значением **первичного ключа**.
 
-1. Ниже метода **Main** добавьте новую асинхронную задачу с именем **GetStartedDemoAsync** , с помощью которой создается экземпляр `CosmosClient`.
+1. Ниже метода **Main** добавьте новую асинхронную задачу с именем **GetStartedDemoAsync**, с помощью которой создается экземпляр `CosmosClient`.
 
     ```csharp
     public static async Task Main(string[] args)
@@ -279,7 +279,7 @@ ms.locfileid: "93098728"
 >
 >
 
-Контейнер можно создать с помощью метода [**CreateContainerIfNotExistsAsync**](/dotnet/api/microsoft.azure.cosmos.database.createcontainerifnotexistsasync?view=azure-dotnet&preserve-view=true#Microsoft_Azure_Cosmos_Database_CreateContainerIfNotExistsAsync_Microsoft_Azure_Cosmos_ContainerProperties_System_Nullable_System_Int32__Microsoft_Azure_Cosmos_RequestOptions_System_Threading_CancellationToken_) или [**CreateContainerAsync**](/dotnet/api/microsoft.azure.cosmos.database.createcontainerasync?view=azure-dotnet&preserve-view=true#Microsoft_Azure_Cosmos_Database_CreateContainerAsync_Microsoft_Azure_Cosmos_ContainerProperties_System_Nullable_System_Int32__Microsoft_Azure_Cosmos_RequestOptions_System_Threading_CancellationToken_) из класса `CosmosDatabase`. Контейнер состоит из элементов (которые в случае API SQL являются документами JSON) и связанной логики приложения JavaScript на стороне сервера, например хранимых процедур, определяемых пользователем функций и триггеров.
+Контейнер можно создать с помощью метода [**CreateContainerIfNotExistsAsync**](/dotnet/api/microsoft.azure.cosmos.database.createcontainerifnotexistsasync#Microsoft_Azure_Cosmos_Database_CreateContainerIfNotExistsAsync_Microsoft_Azure_Cosmos_ContainerProperties_System_Nullable_System_Int32__Microsoft_Azure_Cosmos_RequestOptions_System_Threading_CancellationToken_) или [**CreateContainerAsync**](/dotnet/api/microsoft.azure.cosmos.database.createcontainerasync#Microsoft_Azure_Cosmos_Database_CreateContainerAsync_Microsoft_Azure_Cosmos_ContainerProperties_System_Nullable_System_Int32__Microsoft_Azure_Cosmos_RequestOptions_System_Threading_CancellationToken_) из класса `CosmosDatabase`. Контейнер состоит из элементов (которые в случае API SQL являются документами JSON) и связанной логики приложения JavaScript на стороне сервера, например хранимых процедур, определяемых пользователем функций и триггеров.
 
 1. Скопируйте и вставьте метод `CreateContainerAsync` ниже метода `CreateDatabaseAsync`. Функция `CreateContainerAsync` позволяет создать контейнер (если он не был создан ранее) с идентификатором `FamilyContainer`. Для идентификатора используется значение из поля `containerId` с разделением по свойству `LastName`.
 
@@ -305,7 +305,7 @@ ms.locfileid: "93098728"
 
 ## <a name="step-6-add-items-to-the-container"></a><a id="CreateDoc"></a>Шаг 6. Добавление элементов в контейнер
 
-Элемент можно создать с помощью метода [**CreateItemAsync**](/dotnet/api/microsoft.azure.cosmos.container.createitemasync?view=azure-dotnet&preserve-view=true#Microsoft_Azure_Cosmos_Container_CreateItemAsync__1___0_System_Nullable_Microsoft_Azure_Cosmos_PartitionKey__Microsoft_Azure_Cosmos_ItemRequestOptions_System_Threading_CancellationToken_) из класса `CosmosContainer`. При использовании API SQL все элементы проецируются как документы с произвольным содержимым JSON, которое определяет пользователь. Теперь можно вставить элемент в ваш контейнер Azure Cosmos.
+Элемент можно создать с помощью метода [**CreateItemAsync**](/dotnet/api/microsoft.azure.cosmos.container.createitemasync#Microsoft_Azure_Cosmos_Container_CreateItemAsync__1___0_System_Nullable_Microsoft_Azure_Cosmos_PartitionKey__Microsoft_Azure_Cosmos_ItemRequestOptions_System_Threading_CancellationToken_) из класса `CosmosContainer`. При использовании API SQL все элементы проецируются как документы с произвольным содержимым JSON, которое определяет пользователь. Теперь можно вставить элемент в ваш контейнер Azure Cosmos.
 
 Сначала создайте класс `Family`, который представляет объекты, хранящиеся в Azure Cosmos DB для нашего примера. Также создайте подклассы `Parent`, `Child`, `Pet` и `Address`, которые вызываются из `Family`. Элемент должен иметь свойство `Id`, сериализованное как `id` в файле JSON.
 

@@ -11,12 +11,12 @@ metadata:
   author: PatrickFarley
   ms.author: pafarley
   ms.date: 9/01/2020
-  ms.openlocfilehash: 406bcedade350a1971d77a2955bb6a2b0da51b67
-  ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+  ms.openlocfilehash: dc7ef676663e94d6ad03a5cfed8ae68cfcfc26c3
+  ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/05/2021
-  ms.locfileid: "102201742"
+  ms.lasthandoff: 03/09/2021
+  ms.locfileid: "102507744"
 landingContent:
 - title: Сведения о службе "Распознавание лиц"
   linkLists:
@@ -95,11 +95,11 @@ landingContent:
     - text: REST API
       url: /rest/api/face/
     - text: Пакет SDK для .NET
-      url: /dotnet/api/overview/azure/cognitiveservices/client/faceapi?view=azure-dotnet
+      url: /dotnet/api/overview/azure/cognitiveservices/client/faceapi
     - text: Пакет SDK для Python
-      url: /python/api/azure-cognitiveservices-vision-face/?view=azure-python
+      url: /python/api/azure-cognitiveservices-vision-face/
     - text: Пакет SDK для Java
-      url: /java/api/overview/azure/cognitiveservices/client/faceapi?view=azure-java-stable
+      url: /java/api/overview/azure/cognitiveservices/client/faceapi
     - text: Пакет SDK для Node.js
       url: /javascript/api/@azure/cognitiveservices-face
     - text: Пакет SDK для GO

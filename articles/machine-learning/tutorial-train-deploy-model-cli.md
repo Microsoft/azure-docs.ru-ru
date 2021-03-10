@@ -9,12 +9,12 @@ ms.service: machine-learning
 ms.subservice: core
 ms.topic: tutorial
 ms.date: 03/26/2020
-ms.openlocfilehash: 55221fa529688fbae1698a094ea31f6a3f765100
-ms.sourcegitcommit: ab829133ee7f024f9364cd731e9b14edbe96b496
+ms.openlocfilehash: 77df97eaecc59bc9160bcf63ae5d3904cd79ec79
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "97796250"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102215193"
 ---
 # <a name="tutorial-train-and-deploy-a-model-from-the-cli"></a>Руководство по Обучение и развертывание моделей из интерфейса командной строки
 
@@ -39,7 +39,7 @@ ms.locfileid: "97796250"
 
 * Подписка Azure. Если у вас еще нет подписки Azure, создайте бесплатную учетную запись, прежде чем начинать работу. Опробуйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree) уже сегодня.
 
-* Чтобы выполнять приведенные в этом документе команды CLI в **локальной среде**, вам потребуется [Azure CLI](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest).
+* Чтобы выполнять приведенные в этом документе команды CLI в **локальной среде**, вам потребуется [Azure CLI](/cli/azure/install-azure-cli).
 
     Если вы используете [Azure Cloud Shell](https://azure.microsoft.com//features/cloud-shell/), интерфейс командной строки доступен через браузер и находится в облаке.
 
@@ -128,7 +128,7 @@ az group create --name <resource-group-name> --location <location>
 }
 ```
 
-Дополнительные сведения о работе с группами ресурсов см. в разделе [az group](/cli/azure/group?preserve-view=true&view=azure-cli-latest).
+Дополнительные сведения о работе с группами ресурсов см. в разделе [az group](/cli/azure/group).
 
 ## <a name="create-a-workspace"></a>Создание рабочей области
 

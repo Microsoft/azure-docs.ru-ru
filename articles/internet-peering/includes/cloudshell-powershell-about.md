@@ -8,12 +8,12 @@ ms.service: internet-peering
 ms.topic: include
 ms.date: 11/27/2019
 ms.author: prmitiki
-ms.openlocfilehash: 607cb824a50da3778ebe34f184abc0dc97c15961
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: d125471d4a6c68aff12921a8524a91ef75b6c51a
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96028527"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102532757"
 ---
 Для запуска командлетов можно использовать бесплатную интерактивную оболочку Azure Cloud Shell. Она включает предварительно установленные общие инструменты Azure и настроена для использования с вашей учетной записью. Выберите **Копировать** , чтобы скопировать код, и вставьте его в Cloud Shell. Затем нажмите клавишу **Ввод** , чтобы запустить его. Существует несколько способов запуска Cloud Shell.
 
@@ -29,4 +29,4 @@ ms.locfileid: "96028527"
 
 Чтобы найти версию PowerShell, которая выполняется локально, используйте командлет **Get-Module-ListAvailable AZ** . Если необходимо выполнить обновление, см. статью [об установке модуля Azure PowerShell](/powershell/azure/azurerm/install-azurerm-ps). Дополнительные сведения см. [в статье Установка и настройка Azure PowerShell](/powershell/azure/azurerm/overview).
 
-Если вы используете PowerShell для macOS, выполните действия, описанные в статье [Установка PowerShell на macOS.](/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
+Если вы используете PowerShell для macOS, выполните действия, описанные в статье [Установка PowerShell на macOS.](/powershell/scripting/install/installing-powershell-core-on-macos)

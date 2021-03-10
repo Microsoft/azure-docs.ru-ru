@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/05/2020
 ms.author: aahi
 ms.custom: devx-track-js
-ms.openlocfilehash: ff54d605fd81fa640314d99359f1aabacf7a469e
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.openlocfilehash: ca542ac6c5184a0307a9293fada305a6c6356edd
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96350387"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102434174"
 ---
 # <a name="tutorial-create-a-single-page-app-using-the-bing-web-search-api"></a>Руководство по Создание одностраничного веб-приложения с помощью API Bing для поиска в Интернете
 
@@ -43,7 +43,7 @@ ms.locfileid: "96350387"
 Для запуска приложения необходимы следующие элементы:
 
 * подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
-* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
 
 * Node.js 8 или более поздняя версия.
 

@@ -4,12 +4,12 @@ ms.author: dobett
 ms.service: iot-pnp
 ms.topic: include
 ms.date: 11/20/2020
-ms.openlocfilehash: bece0f95f3cd87bcf803637835ef1854606b088b
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.openlocfilehash: 32a2ef82888e61c18c298c61c9b7ad268e7db797
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99834192"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102244725"
 ---
 В этом учебнике показано, как создать многокомпонентный пример приложения устройства IoT Plug and Play, подключить его к Центру Интернета вещей и с помощью обозревателя IoT Azure просмотреть телеметрию, которую он отправляет. Пример приложения написан на языке Java и включен в пакет SDK для устройств центра Интернета вещей Azure для Java. Разработчик решения может использовать Azure CLI, чтобы ознакомиться с возможностями устройства IoT Plug and Play, не просматривая код устройства.
 
@@ -29,7 +29,7 @@ ms.locfileid: "99834192"
 
 Для выполнения инструкций из этого учебника в ОС Windows установите в локальной среде Windows такое программное обеспечение:
 
-* Пакет SDK для Java SE 8. В статье [Долгосрочная поддержка Java для Azure и Azure Stack](/java/azure/jdk/?preserve-view=true&view=azure-java-stable) выберите пункт **Java 8** в разделе **Долгосрочная поддержка**.
+* Пакет SDK для Java SE 8. В статье [Долгосрочная поддержка Java для Azure и Azure Stack](/java/azure/jdk/) выберите пункт **Java 8** в разделе **Долгосрочная поддержка**.
 * [Apache Maven 3](https://maven.apache.org/download.cgi).
 
 ## <a name="download-the-code"></a>Загрузка кода

@@ -8,12 +8,12 @@ ms.subservice: managed-hsm
 ms.topic: tutorial
 ms.date: 09/15/2020
 ms.author: ambapat
-ms.openlocfilehash: 594dd2fd154b37eed49c069cef1b539e13ca6876
-ms.sourcegitcommit: b4e6b2627842a1183fce78bce6c6c7e088d6157b
+ms.openlocfilehash: a4cc898744109475bc119f37350d1b689c550f58
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99094247"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209566"
 ---
 # <a name="managed-hsm-role-management"></a>Управление ролями в службе "Управляемое устройство HSM"
 
@@ -46,7 +46,7 @@ ms.locfileid: "99094247"
 az login
 ```
 
-Дополнительные сведения о вариантах входа с помощью Azure CLI см. в [этой статье](/cli/azure/authenticate-azure-cli?view=azure-cli-latest&preserve-view=true).
+Дополнительные сведения о вариантах входа с помощью Azure CLI см. в [этой статье](/cli/azure/authenticate-azure-cli).
 
 ## <a name="create-a-new-role-assignment"></a>Создание нового назначения роли
 

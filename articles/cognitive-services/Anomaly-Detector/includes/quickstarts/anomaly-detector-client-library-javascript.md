@@ -9,12 +9,12 @@ ms.topic: include
 ms.date: 09/22/2020
 ms.author: mbullwin
 ms.custom: devx-track-js
-ms.openlocfilehash: 36b8a6952a8dc0b34df7bf32a708c71547bf5b33
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: ca842a3d235cd58cb12bf9d8d80419e42ddf8441
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98948661"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102445678"
 ---
 Приступите к работе с клиентской библиотекой Детектора аномалий для JavaScript. Выполните следующие действия, чтобы установить пакет и приступить к использованию алгоритмов, предоставляемых службой. Служба Детектора аномалий позволяет находить аномалии в данных временных рядов, автоматически применяя для них наиболее подходящие модели, независимо от отрасли, сценария или объема данных.
 
@@ -30,7 +30,7 @@ ms.locfileid: "98948661"
 
 * Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services).
 * Текущая версия [Node.js](https://nodejs.org/)
-* Получив подписку Azure, перейдите к <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesAnomalyDetector"  title="Создание ресурса Детектора аномалий"  target="_blank">созданию ресурса Детектора аномалий <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. Дождитесь, пока закончится развертывание, и нажмите кнопку **Перейти к ресурсу**.
+* Получив подписку Azure, перейдите к <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesAnomalyDetector"  title="Создание ресурса Детектора аномалий"  target="_blank">созданию ресурса Детектора аномалий </a> на портале Azure, чтобы получить ключ и конечную точку. Дождитесь, пока закончится развертывание, и нажмите кнопку **Перейти к ресурсу**.
     * Для подключения приложения к API "Детектор аномалий" потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
     Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
 
@@ -121,7 +121,7 @@ npm install @azure/ai-anomaly-detector @azure/ms-rest-js csv-parse
 
 ## <a name="detect-change-points-in-the-data-set"></a>Обнаружение точек изменения в наборе данных
 
-Вызовите API для обнаружения точек изменения во временном ряде с помощью метода [detectChangePoint()](https://go.microsoft.com/fwlink/?linkid=2090788) клиента. Сохраните полученный объект [ChangePointDetectResponse](https://go.microsoft.com/fwlink/?linkid=2090788). Выполните итерацию списка ответов `isChangePoint` и выведите индексы любых значений `true`. Эти значения соответствуют индексам точек изменения тенденции, если они были обнаружены.
+Вызовите API для обнаружения точек изменения во временном ряде с помощью метода [detectChangePoint()](https://go.microsoft.com/fwlink/?linkid=2090788) клиента. Сохраните полученный объект [ChangePointDetectResponse](https://go.microsoft.com/fwlink/?linkid=2090788). Выполните итерацию списка ответов `isChangePoint` и выведите индексы любых значений `true`. Эти значения соответствуют индексам точек изменения тенденций, если они были обнаружены.
 
 [!code-javascript[detect change points](~/cognitive-services-quickstart-code/javascript/AnomalyDetector/anomaly_detector_quickstart.js?name=changePointDetection)]
 
