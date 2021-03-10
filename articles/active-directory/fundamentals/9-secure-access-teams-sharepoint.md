@@ -13,12 +13,12 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 218208891cccb4f606a574a9c1c09f30c4ac0b11
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: f373c849cd542769fec7a10f20dad04e742c9591
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98725084"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102565144"
 ---
 # <a name="secure-external-access-to-microsoft-teams-sharepoint-and-onedrive-for-business"></a>Безопасный внешний доступ к Microsoft Teams, SharePoint и OneDrive для бизнеса 
 
@@ -90,7 +90,7 @@ Microsoft Teams, SharePoint и OneDrive для бизнеса — это три 
 
 * [Управление внешним доступом в Microsoft Teams](/microsoftteams/manage-external-access)
 
-* [Модели удостоверений Microsoft 365 и Azure Active Directory](/microsoft-365/enterprise/about-microsoft-365-identity?view=o365-worldwide)
+* [Модели удостоверений Microsoft 365 и Azure Active Directory](/microsoft-365/enterprise/about-microsoft-365-identity)
 
 * [Модели удостоверений и проверка подлинности для Microsoft Teams](/MicrosoftTeams/identify-models-authentication)
 
@@ -175,7 +175,7 @@ Azure AD B2B обеспечивает проверку подлинности и
 
 * [Интеграция SharePoint и OneDrive с Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
 
-#### <a name="next-steps"></a>Следующие шаги
+#### <a name="next-steps"></a>Дальнейшие действия
 
 См. следующие статьи о защите внешнего доступа к ресурсам. Мы рекомендуем выполнить действия в указанном порядке.
 

@@ -6,12 +6,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 01/12/2021
-ms.openlocfilehash: b8cfb483f2b06c072707c57ff45b7ad995a22eb4
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: a2f6023b86b96266be8e625fd5b0d6625500e3fc
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102034444"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102551476"
 ---
 # <a name="overview-of-azure-monitor-agents"></a>Общие сведения об агентах Azure Monitor
 
@@ -34,20 +34,20 @@ ms.locfileid: "102034444"
 | | Агент Azure Monitor (предварительная версия) | Диагностика<br>расширение (WAD) | Log Analytics<br>агент | Зависимость<br>агент |
 |:---|:---|:---|:---|:---|
 | **Поддерживаемые среды** | Azure<br>Другое облако (Дуга Azure)<br>Локально (Дуга Azure)  | Azure | Azure<br>Другое облако<br>В локальной среде | Azure<br>Другое облако<br>В локальной среде | 
-| **Требования к агентам**  | None | None | None | Требуется агент Log Analytics |
+| **Требования к агентам**  | Нет | Нет | Нет | Требуется агент Log Analytics |
 | **Собираемые данные** | журналы событий;<br>Производительность | журналы событий;<br>ETW-события<br>Производительность<br>Файловые журналы<br>Журналы IIS<br>Журналы приложений .NET<br>Аварийные дампы<br>Журналы диагностики агента | журналы событий;<br>Производительность<br>Файловые журналы<br>Журналы IIS<br>Полезные сведения и решения<br>Другие службы | зависимости процессов.<br>Метрики сетевого подключения |
 | **Отправленные данные** | Журналы Azure Monitor<br>Метрики Azure Monitor | Хранилище Azure<br>Метрики Azure Monitor<br>Концентратор событий | Журналы Azure Monitor | Журналы Azure Monitor<br>(с помощью агента Log Analytics) |
-| **Службы и**<br>**features**<br>**поддерживается** | Log Analytics<br>Обозреватель метрик | Обозреватель метрик | Аналитика ВМ<br>Log Analytics<br>Служба автоматизации Azure<br>Центр безопасности Azure<br>Azure Sentinel | Аналитика ВМ<br>Сопоставление служб |
+| **Службы и**<br>**особенностей**<br>**поддерживается** | Log Analytics<br>Обозреватель метрик | Обозреватель метрик | Аналитика виртуальных машин<br>Log Analytics<br>Служба автоматизации Azure<br>Центр безопасности Azure<br>Azure Sentinel | Аналитика виртуальных машин<br>Сопоставление служб |
 
 ### <a name="linux-agents"></a>Агенты Linux
 
 | | Агент Azure Monitor (предварительная версия) | Диагностика<br>расширение (LAD) | Telegraf<br>агент | Log Analytics<br>агент | Зависимость<br>агент |
 |:---|:---|:---|:---|:---|:---|
 | **Поддерживаемые среды** | Azure<br>Другое облако (Дуга Azure)<br>Локально (Дуга Azure) | Azure | Azure<br>Другое облако<br>В локальной среде | Azure<br>Другое облако<br>В локальной среде | Azure<br>Другое облако<br>В локальной среде |
-| **Требования к агентам**  | None | None | None | None | Требуется агент Log Analytics |
+| **Требования к агентам**  | Нет | Нет | Нет | Нет | Требуется агент Log Analytics |
 | **Собираемые данные** | Системный журнал<br>Производительность | Системный журнал<br>Производительность | Производительность | Системный журнал<br>Производительность| зависимости процессов.<br>Метрики сетевого подключения |
 | **Отправленные данные** | Журналы Azure Monitor<br>Метрики Azure Monitor | Хранилище Azure<br>Концентратор событий | Метрики Azure Monitor | Журналы Azure Monitor | Журналы Azure Monitor<br>(с помощью агента Log Analytics) |
-| **Службы и**<br>**features**<br>**поддерживается** | Log Analytics<br>Обозреватель метрик | | Обозреватель метрик | Аналитика ВМ<br>Log Analytics<br>Служба автоматизации Azure<br>Центр безопасности Azure<br>Azure Sentinel | Аналитика ВМ<br>Сопоставление служб |
+| **Службы и**<br>**особенностей**<br>**поддерживается** | Log Analytics<br>Обозреватель метрик | | Обозреватель метрик | Аналитика виртуальных машин<br>Log Analytics<br>Служба автоматизации Azure<br>Центр безопасности Azure<br>Azure Sentinel | Аналитика виртуальных машин<br>Сопоставление служб |
 
 
 ## <a name="azure-monitor-agent-preview"></a>Агент Azure Monitor (предварительная версия)
@@ -152,10 +152,10 @@ ms.locfileid: "102034444"
 
 ### <a name="linux"></a>Linux
 
-| Операционная система | Агент Azure Monitor | Агент Log Analytics | Агент зависимостей | Расширение системы диагностики | 
+| Операционная система | Агент Azure Monitor <sup>1</sup> | Агент Log Analytics <sup>1</sup> | Агент зависимостей | Расширение системы диагностики <sup>2</sup>| 
 |:---|:---:|:---:|:---:|:---:
 | Amazon Linux 2017.09                                        |   | X |   |   |
-| CentOS Linux 8 <sup>1</sup> <sup>2</sup>                    | X | X | X |   |
+| CentOS Linux 8                                              | X <sup>3</sup> | X | X |   |
 | CentOS Linux 7                                              | X | X | X | X |
 | CentOS Linux 6                                              |   | X |   |   |
 | CentOS Linux 6.5 +                                           |   | X | X | X |
@@ -164,31 +164,33 @@ ms.locfileid: "102034444"
 | Debian 8                                                    |   | X | X |   |
 | Debian 7                                                    |   |   |   | X |
 | OpenSUSE 13.1+                                              |   |   |   | X |
-| Oracle Linux 8 <sup>1</sup> <sup>2</sup>                    | X | X |   |   |
+| Oracle Linux 8                                              | X <sup>3</sup> | X |   |   |
 | Oracle Linux 7                                              | X | X |   | X |
 | Oracle Linux 6                                              |   | X |   |   |
 | Oracle Linux 6.4+                                           |   | X |   | X |
-| Red Hat Enterprise Linux Server 8 <sup>1</sup> <sup>2</sup> | X | X | X |   |
+| Red Hat Enterprise Linux Server 8                           | X <sup>3</sup> | X | X |   |
 | Red Hat Enterprise Linux Server 7                           | X | X | X | X |
 | Red Hat Enterprise Linux Server 6                           |   | X | X |   |
 | Red Hat Enterprise Linux Server 6.7 +                        |   | X | X | X |
-| SUSE Linux Enterprise Server 15,2 <sup>1</sup> <sup>2</sup> | X |   |   |   |
-| SUSE Linux Enterprise Server 15,1 <sup>1</sup> <sup>2</sup> | X | X |   |   |
+| SUSE Linux Enterprise Server 15,2                           | X <sup>3</sup> |   |   |   |
+| SUSE Linux Enterprise Server 15,1                           | X <sup>3</sup> | X |   |   |
 | SUSE Linux Enterprise Server 15                             | X | X | X |   |
 | SUSE Linux Enterprise Server 12                             | X | X | X | X |
-| Ubuntu 20,04 LTS <sup>1</sup>                               | X | X | X |   |
+| Ubuntu 20.04 LTS                                            | X | X | X |   |
 | Ubuntu 18.04 LTS                                            | X | X | X | X |
 | Ubuntu 16.04 LTS                                            | X | X | X | X |
 | Ubuntu 14,04 LTS                                            |   | X |   | X |
 
-<sup>1</sup> требует установки Python 3 на компьютере.
+<sup>1</sup> требует установки Python (2 или 3) на компьютере.
 
-<sup>2</sup> известная ошибка при сборе событий системного журнала. В настоящее время поддерживаются только данные о производительности.
+<sup>2</sup> требует установки Python 2 на компьютере.
+
+<sup>3</sup> известная ошибка при сборе событий системного журнала. В настоящее время поддерживаются только данные о производительности.
 #### <a name="dependency-agent-linux-kernel-support"></a>Поддержка ядра Linux для агента зависимостей
 
 Так как агент зависимостей работает на уровне ядра, поддержка также зависит от версии ядра. В следующей таблице перечислены основные и вспомогательные версии ОС Linux и поддерживаемые в агенте зависимости версиях ядра.
 
-| Дистрибутив | Версия ОС | Версия ядра |
+| Distribution | Версия ОС | Версия ядра |
 |:---|:---|:---|
 |  Red Hat Linux 8   | 8.2     | 4.18.0-193.\*el8_2.x86_64 |
 |                    | 8.1     | 4.18.0-147.\*el8_1.x86_64 |

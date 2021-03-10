@@ -7,12 +7,12 @@ ms.service: virtual-wan
 ms.topic: how-to
 ms.date: 09/22/2020
 ms.author: cherylmc
-ms.openlocfilehash: 8e97a2f077efd4d00eec4a91645dc1b65057ebd9
-ms.sourcegitcommit: 04fb3a2b272d4bbc43de5b4dbceda9d4c9701310
+ms.openlocfilehash: 3dbdfb461bc2ae79439f39df3efbc2c564782110
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94565013"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102548399"
 ---
 # <a name="configure-a-vpn-client-for-p2s-openvpn-protocol-connections-azure-ad-authentication"></a>Настройка VPN-клиента для подключений "точка — сеть" по протоколу OpenVPN. Аутентификация Azure AD
 
@@ -54,7 +54,7 @@ ms.locfileid: "94565013"
 
 Если у вас есть рабочий профиль и его необходимо распространить другим пользователям, его можно экспортировать, выполнив следующие действия.
 
-1. Выделите профиль VPN-клиента, который требуется экспортировать, щелкните.. **.** , а затем выберите **Экспорт**.
+1. Выделите профиль VPN-клиента, который требуется экспортировать, щелкните.. **.**, а затем выберите **Экспорт**.
 
     ![На снимке экрана показан экспорт, выбранный в меню.](./media/openvpn-azure-ad-client/export/export1.jpg)
 
@@ -154,7 +154,7 @@ ms.locfileid: "94565013"
 
     ![На снимке экрана показаны результаты диагностики.](./media/openvpn-azure-ad-client/diagnose/diagnose4.jpg)
 
-## <a name="faq"></a>Вопросы и ответы
+## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
 
 ### <a name="how-do-i-add-dns-suffixes-to-the-vpn-client"></a>Разделы справки добавить DNS-суффиксы к VPN-клиенту?
 
@@ -192,7 +192,7 @@ ms.locfileid: "94565013"
 ```
 
 > [!NOTE]
-> Клиент Azure AD Опенвпн использует записи DNS таблица политики разрешения имен (NRPT). Это означает, что DNS-серверы не будут перечислены в выходных данных `ipconfig /all` . Чтобы подтвердить использование параметров DNS, обратитесь к разделу [Get-днсклиентнрптполици](/powershell/module/dnsclient/get-dnsclientnrptpolicy?view=win10-ps) в PowerShell.
+> Клиент Azure AD Опенвпн использует записи DNS таблица политики разрешения имен (NRPT). Это означает, что DNS-серверы не будут перечислены в выходных данных `ipconfig /all` . Чтобы подтвердить использование параметров DNS, обратитесь к разделу [Get-днсклиентнрптполици](/powershell/module/dnsclient/get-dnsclientnrptpolicy) в PowerShell.
 >
 
 ### <a name="how-do-i-add-custom-routes-to-the-vpn-client"></a>Разделы справки добавить настраиваемые маршруты к VPN-клиенту?

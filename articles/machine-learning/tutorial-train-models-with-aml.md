@@ -10,12 +10,12 @@ author: sdgilley
 ms.author: sgilley
 ms.date: 09/28/2020
 ms.custom: seodec18, devx-track-python
-ms.openlocfilehash: 6aa39709a82b01367463f0128af4223446710a1c
-ms.sourcegitcommit: 0aec60c088f1dcb0f89eaad5faf5f2c815e53bf8
+ms.openlocfilehash: 3191987ea2d110487321beb0b11428f446f2b7a6
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98183648"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102503884"
 ---
 # <a name="tutorial-train-image-classification-models-with-mnist-data-and-scikit-learn"></a>Руководство по обучению моделей классификации изображений с использованием данных MNIST и Scikit-learn 
 
@@ -37,7 +37,7 @@ ms.locfileid: "98183648"
 Если у вас еще нет подписки Azure, создайте бесплатную учетную запись, прежде чем начинать работу. Опробуйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree) уже сегодня.
 
 >[!NOTE]
-> Код в этой статье протестирован с помощью [пакета SDK для Машинного обучения Azure](/python/api/overview/azure/ml/intro?preserve-view=true&view=azure-ml-py) версии 1.13.0.
+> Код в этой статье протестирован с помощью [пакета SDK для Машинного обучения Azure](/python/api/overview/azure/ml/intro) версии 1.13.0.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -309,7 +309,7 @@ joblib.dump(value=clf, filename='outputs/sklearn_mnist_model.pkl')
 
 ### <a name="configure-the-training-job"></a>Настройка задания обучения
 
-Создайте объект [ScriptRunConfig](/python/api/azureml-core/azureml.core.scriptrunconfig?preserve-view=true&view=azure-ml-py), чтобы указать сведения о конфигурации для вашего задания обучения, в том числе скрипт обучения, используемую среду и целевой объект вычислений, на котором будет выполняться задание. Настройте ScriptRunConfig, указав следующее:
+Создайте объект [ScriptRunConfig](/python/api/azureml-core/azureml.core.scriptrunconfig), чтобы указать сведения о конфигурации для вашего задания обучения, в том числе скрипт обучения, используемую среду и целевой объект вычислений, на котором будет выполняться задание. Настройте ScriptRunConfig, указав следующее:
 
 * Выберите каталог, который содержит скрипт. Все файлы в этом каталоге передаются в узел кластера для выполнения.
 * Целевой объект вычисления. В этом примере используется созданный вычислительный кластер Службы машинного обучения Azure.
@@ -382,7 +382,7 @@ run
 
 ### <a name="jupyter-widget"></a>Мини-приложение Jupyter
 
-Отслеживайте ход выполнения с помощью [мини-приложения Jupyter](/python/api/azureml-widgets/azureml.widgets?preserve-view=true&view=azure-ml-py). Как и отправка выполнения, мини-приложение работает асинхронно и в реальном времени предоставляет обновления каждые 10–15 секунд, пока не завершит задание.
+Отслеживайте ход выполнения с помощью [мини-приложения Jupyter](/python/api/azureml-widgets/azureml.widgets). Как и отправка выполнения, мини-приложение работает асинхронно и в реальном времени предоставляет обновления каждые 10–15 секунд, пока не завершит задание.
 
 ```python
 from azureml.widgets import RunDetails

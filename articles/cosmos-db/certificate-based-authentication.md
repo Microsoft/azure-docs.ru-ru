@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 06/11/2019
 ms.author: tvoellm
 ms.reviewer: sngun
-ms.openlocfilehash: e0913351d40cd75da17d16cca119b4ad5ce20de0
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.openlocfilehash: 84cbc681d0974e91561daf8918dff389226fa7aa
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93334724"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102553975"
 ---
 # <a name="certificate-based-authentication-for-an-azure-ad-identity-to-access-keys-from-an-azure-cosmos-db-account"></a>Проверка подлинности на основе сертификата для удостоверения Azure AD для доступа к ключам из учетной записи Azure Cosmos DB
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "93334724"
    Set-AzContext $context 
    ```
 
-1. Установка и импорт модуля [AzureAD](/powershell/module/azuread/?view=azureadps-2.0&preserve-view=true)
+1. Установка и импорт модуля [AzureAD](/powershell/module/azuread/)
 
    ```powershell
    Install-Module AzureAD
@@ -80,7 +80,7 @@ ms.locfileid: "93334724"
 Connect-AzureAD 
 ```
 
-## <a name="create-a-self-signed-certificate"></a>Создание самозаверяющего сертификата.
+## <a name="create-a-self-signed-certificate"></a>Создание самозаверяющего сертификата
 
 Откройте другой экземпляр интегрированной среды сценариев Windows PowerShell и выполните следующие команды, чтобы создать самозаверяющий сертификат и прочитать ключ, связанный с сертификатом:
 
@@ -245,7 +245,7 @@ namespace TodoListDaemonWithCert
 Как и в предыдущем разделе, журнал действий учетной записи Azure Cosmos можно просмотреть, чтобы убедиться, что событие запроса GET Keys инициировано приложением "sampleApp". 
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Защита ключей Azure Cosmos с помощью Azure Key Vault](access-secrets-from-keyvault.md)
 

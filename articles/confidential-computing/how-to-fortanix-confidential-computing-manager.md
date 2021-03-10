@@ -3,17 +3,17 @@ title: Диспетчер фортаникс конфиденциальных в
 description: Узнайте, как развернуть Фортаникс конфиденциальный диспетчер вычислительных систем (CCM) в управляемом приложении на портал Azure.
 author: JBCook
 ms.service: virtual-machines
-ms.subservice: workloads
+ms.subservice: confidential-computing
 ms.workload: infrastructure
 ms.topic: how-to
 ms.date: 02/03/2021
 ms.author: jencook
-ms.openlocfilehash: 6132b864e94c5c2af691183e198ca882c361d5ec
-ms.sourcegitcommit: 5b926f173fe52f92fcd882d86707df8315b28667
+ms.openlocfilehash: 757ce9b7502316bbc8a5b8f27ba672048b7bbace
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99551461"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102563427"
 ---
 # <a name="fortanix-confidential-computing-manager-in-an-azure-managed-application"></a>Диспетчер фортаникс конфиденциальных вычислений в управляемом приложении Azure
 
@@ -24,7 +24,7 @@ ms.locfileid: "99551461"
 > [!NOTE]
 >Продукты, упоминаемые в этом документе, не контролируются корпорацией Майкрософт. Корпорация Майкрософт предоставляет эти сведения только для удобства, а ссылки на эти продукты сторонних производителей не подразумевают подтверждения корпорацией Майкрософт.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Частный реестр DOCKER для отправки преобразованных образов приложений.
 - Если у вас еще нет подписки Azure, [создайте учетную запись Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/), прежде чем начинать работу.

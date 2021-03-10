@@ -3,17 +3,17 @@ title: Серия HB
 description: Спецификации виртуальных машин серии ХБ.
 author: vermagit
 ms.service: virtual-machines
-ms.subservice: hpc
+ms.subservice: vm-sizes-hpc
 ms.topic: conceptual
 ms.date: 03/08/2021
 ms.author: amverma
 ms.reviewer: jushiman
-ms.openlocfilehash: 65bf943c57151d209e60aff67892c3ef9c71cb36
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: f0f5d8f5e5e7077c3438005b58d6ed1a132219f4
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102502184"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102566028"
 ---
 # <a name="hb-series"></a>Серия HB
 

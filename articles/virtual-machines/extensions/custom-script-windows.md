@@ -1,22 +1,19 @@
 ---
 title: Расширение Azure Custom Script в ОС Windows
 description: Сведения об автоматизации задач настройки виртуальных машин Windows с помощью расширения пользовательских сценариев
-services: virtual-machines-windows
-manager: gwallace
-author: amjads1
-ms.service: virtual-machines-windows
-ms.subservice: extensions
 ms.topic: article
-ms.tgt_pltfrm: vm-windows
-ms.workload: infrastructure-services
-ms.date: 08/31/2020
+ms.service: virtual-machines
+ms.subservice: extensions
 ms.author: amjads
-ms.openlocfilehash: d06be4efae895cfe6903be4451f892660ce689f3
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+author: amjads1
+ms.collection: windows
+ms.date: 08/31/2020
+ms.openlocfilehash: 13b4c4ef50ea37cabe30474d339acb19176cef97
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100390136"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102553907"
 ---
 # <a name="custom-script-extension-for-windows"></a>Расширение Custom Script в ОС Windows
 
@@ -36,7 +33,7 @@ ms.locfileid: "100390136"
 ### <a name="windows"></a>Windows
 
 * Windows Server 2008 R2
-* Windows Server 2012
+* Windows Server 2012
 * Windows Server 2012 R2
 * Windows 10
 * Windows Server 2016

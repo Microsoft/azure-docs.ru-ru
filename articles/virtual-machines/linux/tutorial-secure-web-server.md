@@ -1,25 +1,26 @@
 ---
 title: Руководство по защите веб-сервера Linux с помощью TLS/SSL-сертификатов в Azure
 description: В этом руководстве описано, как использовать Azure CLI для защиты виртуальной машины Linux, запущенной на веб-сервере NGINX, с помощью SSL-сертификатов, хранящихся в Azure Key Vault.
-services: virtual-machines-linux
+services: virtual-machines
 documentationcenter: virtual-machines
 author: cynthn
 manager: gwallace
 tags: azure-resource-manager
 ms.assetid: ''
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
+ms.collection: linux
 ms.topic: tutorial
 ms.tgt_pltfrm: vm-linux
 ms.workload: infrastructure
 ms.date: 04/30/2018
 ms.author: cynthn
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: e4e80990b32175842556059d005563a220d14688
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: 3f762597ad81dfaba907115cbcf6074d81ec2fa4
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98878465"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102549589"
 ---
 # <a name="tutorial-secure-a-web-server-on-a-linux-virtual-machine-in-azure-with-tlsssl-certificates-stored-in-key-vault"></a>Руководство по защите веб-сервера на виртуальной машине Linux в Azure с помощью TLS/SSL-сертификатов, хранимых в Key Vault
 Чтобы защитить веб-серверы, для шифрования веб-трафика можно использовать протокол TLS, который ранее назывался протоколом SSL. TLS/SSL-сертификаты могут храниться в Azure Key Vault и разрешать безопасное развертывание сертификатов на виртуальных машинах Linux в Azure. Из этого руководства вы узнаете, как выполнить следующие задачи:

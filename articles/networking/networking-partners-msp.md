@@ -7,12 +7,12 @@ ms.service: expressroute
 ms.topic: conceptual
 ms.date: 07/23/2020
 ms.author: sukishen
-ms.openlocfilehash: 9f3043c20dc4ba83da99abeee67f0ee8a3f867ad
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 598451192c44395c28ee6f027e389f1d15cf381c
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102520376"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102551136"
 ---
 # <a name="about-azure-networking-msp-partners"></a>Сведения о партнерах программы для поставщиков сетевых устройств и служб Azure (MSP)
 
@@ -39,7 +39,7 @@ ms.locfileid: "102520376"
 |[Colt](https://www.colt.net/why-colt/strategic-alliances/microsoft-partnership/msp/)|[Оптимизация сети в Azure: оценка (2 ч)](https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/colttechnologyservices.azure_networking)|||||
 |[Equinix](https://www.equinix.com/)|[Семинар по оптимизированной для облака глобальной сети](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/equinix.cloudoptimizedwan?tab=Overview)|[Семинар по стратегии подключения ExpressRoute](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/equinix.expressroutestrategy?tab=Overview); [Equinix Cloud Exchange Fabric](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/equinix.equinix_ecx_fabric?tab=Overview)||||
 |[Федеративная беспроводная сеть](https://www.federatedwireless.com/caas/)||||[Федеративное беспроводное подключение как услуга](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/federatedwireless1580839623708.fw_caas?tab=Overview)|
-|[HCL](https://www.hcltech.com/)||||[Azure HCL предложение частного LTE — 1 день Оценка](https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/hcl-technologies.hclazureprivatelteoffering)|
+|[HCL](https://www.hcltech.com/)|||[Службы виртуальных глобальных сетей Azure (HCL) — Оценка за 1 день](https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/hcl-technologies.hclmanagedazurevitualwan?search=vWAN&page=1)|[Azure HCL предложение частного LTE — 1 день Оценка](https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/hcl-technologies.hclazureprivatelteoffering)|
 |[IIJ](https://www.iij.ad.jp/biz/cloudex/)|[Реализация ExpressRoute: брифинг (1 ч)](https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/internet_initiative_japan_inc.iij_cxm_consulting)|[ExpressRoute: реализация (2 нед.)](https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/internet_initiative_japan_inc.iij_cxmer_consulting)||||
 |[Infosys](https://www.infosys.com/services/microsoft-cloud-business/pages/index.aspx)|[Infosys Integrate+ для Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/infosysltd.infosys-integrate-for-azure?tab=Overview)|||||
 |[Interxion](https://www.interxion.com/products/interconnection/cloud-connect/support-your-cloud-strategy/)|[Сеть Azure: оценка (5 дн.)](https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/interxionhq.inxn_azure_networking_assessment)|||||

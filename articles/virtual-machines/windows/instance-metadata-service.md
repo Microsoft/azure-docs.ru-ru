@@ -6,17 +6,18 @@ author: KumariSupriya
 manager: paulmey
 ms.service: virtual-machines
 ms.subservice: monitoring
+ms.collection: windows
 ms.topic: how-to
 ms.workload: infrastructure-services
 ms.date: 02/21/2021
 ms.author: sukumari
 ms.reviewer: azmetadatadev
-ms.openlocfilehash: d764ab05634104424a2205d4afca60985448964c
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 9de52c8a41db7ecdbf4e6d76700c9a06e3264430
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102175721"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102564379"
 ---
 # <a name="azure-instance-metadata-service-windows"></a>Служба метаданных экземпляров Azure (Windows)
 

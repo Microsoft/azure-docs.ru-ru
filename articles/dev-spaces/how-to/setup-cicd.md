@@ -8,12 +8,12 @@ ms.topic: conceptual
 manager: gwallace
 description: Узнайте, как настроить непрерывную интеграцию и непрерывное развертывание с помощью Azure DevOps с Azure Dev Spaces
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, containers
-ms.openlocfilehash: de409aa060034c9ba0faaaa56ce21f904b02cdac
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 142f01a04066b919a81e1ad1ea95efa31f51f6ca
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96017786"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102548739"
 ---
 # <a name="use-cicd-with-azure-dev-spaces"></a>Использование CI/CD в Azure Dev Spaces
 
@@ -25,10 +25,10 @@ ms.locfileid: "96017786"
 
 В этой статье описывается использование Azure DevOps, но те же принципы применяются и к другим системам непрерывной интеграции и непрерывного развертывания, таким как Jenkins, TeamCity и т. д.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 * Кластер Службы Azure Kubernetes (AKS) с поддержкой Azure Dev Spaces.
 * [Установленный интерфейс командной строки Azure Dev Spaces](upgrade-tools.md).
-* [Организация Azure DevOps с проектом](/azure/devops/user-guide/sign-up-invite-teammates?view=vsts).
+* [Организация Azure DevOps с проектом](/azure/devops/user-guide/sign-up-invite-teammates).
 * [Реестр контейнеров Azure (ACR)](../../container-registry/container-registry-get-started-azure-cli.md).
     * Доступные данные [учетной записи администратора](../../container-registry/container-registry-authentication.md#admin-account) Реестра контейнеров Azure.
 * [Кластер AKS с разрешениями на извлечение данных из Реестра контейнеров Azure](../../aks/cluster-container-registry-integration.md).
@@ -70,7 +70,7 @@ MyAKS  MyResourceGroup  dev       fedcba098.eus.azds.io
 > [!Note]
 > Сейчас предварительная версия функции Azure DevOps _Новый интерфейс для создания конвейеров YAML_ конфликтует с созданием предварительно определенных конвейеров сборки. Прежде чем развернуть предварительно определенный конвейер сборки, необходимо отключить эту функцию.
 
-Мы включили в ветвь _azds_updates_ простую схему [YAML конвейеров Azure](/azure/devops/pipelines/yaml-schema?view=vsts&tabs=schema), которая определяет необходимые шаги для сборки *mywebapi* и *webfrontend*.
+Мы включили в ветвь _azds_updates_ простую схему [YAML конвейеров Azure](/azure/devops/pipelines/yaml-schema?tabs=schema), которая определяет необходимые шаги для сборки *mywebapi* и *webfrontend*.
 
 В зависимости от выбранного языка схема YAML конвейера извлекается в путь, схожий со следующим: `samples/dotnetcore/getting-started/azure-pipelines.dotnetcore.yml`
 

@@ -3,16 +3,17 @@ title: Общие сведения об управлении обслужива�
 description: Узнайте, как управлять применением обслуживания к виртуальным машинам Azure с помощью управления обслуживанием.
 author: cynthn
 ms.service: virtual-machines
+ms.subservice: maintenance-control
 ms.topic: conceptual
 ms.workload: infrastructure-services
 ms.date: 11/19/2020
 ms.author: cynthn
-ms.openlocfilehash: 4b9dec0fe684e002fadbac2db375c354db2b6d01
-ms.sourcegitcommit: f311f112c9ca711d88a096bed43040fcdad24433
+ms.openlocfilehash: 290a1e8da4e9b3e8eff171ab2d5837bfc9c381b9
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94981176"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102552428"
 ---
 # <a name="managing-platform-updates-with-maintenance-control"></a>Управление обновлениями платформы с помощью управления обслуживанием 
 
@@ -43,6 +44,6 @@ ms.locfileid: "94981176"
 
 Пример использования функций Azure см. в разделе [Планирование обновлений обслуживания с помощью функции управления обслуживанием и функций Azure](https://github.com/Azure/azure-docs-powershell-samples/tree/master/maintenance-auto-scheduler).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения см. в разделе [обслуживание и обновления](maintenance-and-updates.md).

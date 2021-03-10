@@ -2,18 +2,19 @@
 title: Включение шифрования дисков Azure для виртуальных машин под управлением Linux
 description: В этой статье приведены инструкции по включению шифрования дисков Microsoft Azure для виртуальных машин под управлением Linux.
 author: msmbaldwin
-ms.service: virtual-machines-linux
-ms.subservice: security
+ms.service: virtual-machines
+ms.subservice: disks
+ms.collection: linux
 ms.topic: conceptual
 ms.author: mbaldwin
 ms.date: 08/06/2019
 ms.custom: seodec18
-ms.openlocfilehash: de67e356e54328944c55f41dc0c9670e2540e82e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 066fb32dc9da13e8a77660a9144b53675d689f63
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101694382"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102553805"
 ---
 # <a name="azure-disk-encryption-for-linux-vms"></a>Шифрование дисков Azure для виртуальных машин под управлением Linux 
 

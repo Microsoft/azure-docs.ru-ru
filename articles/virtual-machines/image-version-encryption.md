@@ -3,17 +3,17 @@ title: Предварительный просмотр — создание в�
 description: Создание версии образа в общей коллекции образов с помощью управляемых клиентом ключей шифрования.
 author: cynthn
 ms.service: virtual-machines
-ms.subservice: imaging
+ms.subservice: shared-image-gallery
 ms.workload: infrastructure-services
 ms.topic: how-to
 ms.date: 11/3/2020
 ms.author: cynthn
-ms.openlocfilehash: f8ea2224020e6fa6c5dae135dc575cc77510efd5
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 258d8ab6ab23a95d73b8ed0c2549f373cf097674
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102123944"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102554094"
 ---
 # <a name="preview-use-customer-managed-keys-for-encrypting-images"></a>Предварительный просмотр: Использование управляемых клиентом ключей для шифрования образов
 
@@ -23,7 +23,7 @@ ms.locfileid: "102123944"
 
 Шифрование на стороне сервера с помощью управляемых клиентом ключей использует Azure Key Vault. Вы можете импортировать [ключи RSA](../key-vault/keys/hsm-protected-keys.md) в хранилище ключей или создать новые ключи rsa в Azure Key Vault.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для работы с этой статьей необходимо, чтобы в каждом регионе, где вы хотите реплицировать образ, был задан набор шифрования дисков:
 

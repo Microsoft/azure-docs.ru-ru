@@ -1,23 +1,24 @@
 ---
 title: Синхронизация времени для виртуальных машин Linux в Azure
 description: Синхронизация времени для виртуальных машин Linux.
-services: virtual-machines-linux
+services: virtual-machines
 documentationcenter: ''
 author: cynthn
 manager: gwallace
 tags: azure-resource-manager
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
+ms.collection: linux
 ms.topic: how-to
 ms.tgt_pltfrm: vm-linux
 ms.workload: infrastructure-services
 ms.date: 08/20/2020
 ms.author: cynthn
-ms.openlocfilehash: 399022c1ef740865e4b2f7b82e2175e748a2a925
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 18c8570a8066985cab5263c4779787062dc32d75
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91306962"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102552649"
 ---
 # <a name="time-sync-for-linux-vms-in-azure"></a>Синхронизация времени для виртуальных машин Linux в Azure
 
@@ -114,7 +115,7 @@ root        391      2  0 17:52 ?        00:00:00 [hv_balloon]
 
 ### <a name="check-for-ptp-clock-source"></a>Проверка источника таймера PTP
 
-В более новых версиях Linux в рамках поставщика VMICTimeSync доступен источник времени PTP. В более ранних версиях Red Hat Enterprise Linux или CentOS 7.x можно скачать [службы интеграции Linux](https://github.com/LIS/lis-next) и использовать их для установки обновленного драйвера. Когда источник таймера PTP доступен, устройство Linux будет иметь вид/Дев/ПТП*x*. 
+В более новых версиях Linux в рамках поставщика VMICTimeSync доступен источник времени PTP. В более ранних версиях Red Hat Enterprise Linux или CentOS 7.x можно скачать [службы интеграции Linux](https://github.com/LIS/lis-next) и использовать их для установки обновленного драйвера. Когда источник таймера PTP доступен, устройство Linux будет иметь вид/Дев/ПТП *x*. 
 
 Проверьте доступные источники времени PTP.
 
@@ -162,7 +163,7 @@ systemctl restart chronyd
 
 В версиях SUSE и Ubuntu до 19,10, синхронизация времени настраивается с использованием [системы](https://www.freedesktop.org/wiki/Software/systemd/). Дополнительные сведения о Ubuntu см. в статье [Синхронизация времени](https://help.ubuntu.com/lts/serverguide/NTP.html). Дополнительные сведения о SUSE см. в разделе 4.5.8 статьи [заметки о Выпуске SUSE Linux Enterprise Server 12 SP3](https://www.suse.com/releasenotes/x86_64/SUSE-SLES/12-SP3/#InfraPackArch.ArchIndependent.SystemsManagement).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения см. в статье [Точное время в Windows Server 2016](/windows-server/networking/windows-time-service/accurate-time).
 

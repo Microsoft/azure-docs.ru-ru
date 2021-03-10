@@ -3,17 +3,19 @@ title: Подготовка виртуального жесткого диска
 description: Узнайте, как подготовить VHD или VHDX Windows к отправке в Azure.
 author: glimoli
 manager: dcscontentpm
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
+ms.subservice: disks
+ms.collection: windows
 ms.workload: infrastructure-services
 ms.topic: troubleshooting
 ms.date: 09/02/2020
 ms.author: genli
-ms.openlocfilehash: e409211c167f7b29128faf9fdfc02aa5c0a7d0e3
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 12ef839cbbbc69230b314bf7c56a63f57a0d6b20
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98736260"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102556270"
 ---
 # <a name="prepare-a-windows-vhd-or-vhdx-to-upload-to-azure"></a>Подготовка диска VHD или VHDX для Windows к отправке в Azure
 
@@ -427,7 +429,7 @@ Get-Service -Name Netlogon, Netman, TermService |
 
     ![Средство SysPrep](media/prepare-for-upload-vhd-image/syspre.png)
 1. В разделе **Параметры завершения работы** выберите **Завершение работы**.
-1. Нажмите кнопку **ОК**.
+1. Щелкните **ОК**.
 1. После завершения работы программы Sysprep завершите работу виртуальной машины. Не используйте **перезагрузку** для завершения работы виртуальной машины.
 
 Теперь диск VHD можно отправлять. Дополнительные сведения о том, как создать виртуальную машину на основе обобщенного диска, см. в разделе [Отправка обобщенного виртуального жесткого диска и его использование для создания новой виртуальной машины в Azure](/previous-versions/azure/virtual-machines/windows/sa-upload-generalized).
@@ -517,7 +519,7 @@ Resize-VHD -Path C:\test\MyNewVM.vhd -SizeBytes 105906176
 
   - Рекомендуется отключить блокирование сценариев, которое может быть предоставлено антивирусным программным обеспечением. Они могут мешать работе и блокировать сценарии агента подготовки Windows, выполняемые при развертывании новой виртуальной машины из образа.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Отправка образа виртуальной машины Windows в Azure для развертываний Resource Manager](upload-generalized-managed.md)
 - [Устранение неполадок при активации виртуальной машины Windows в Azure](../troubleshooting/troubleshoot-activation-problems.md)

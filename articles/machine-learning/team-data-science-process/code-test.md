@@ -11,12 +11,12 @@ ms.topic: article
 ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=weig, previous-ms.author=weig
-ms.openlocfilehash: ce37ee51e549a2bd6f2747f28af8c038c39d8f1f
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.openlocfilehash: 66853b580ba1b619bf4cc995e05bd3cfaff07cfb
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97656841"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102565875"
 ---
 # <a name="data-science-code-testing-on-azure-with-the-team-data-science-process-and-azure-devops-services"></a>Тестирование кода обработки и анализа данных в Azure с помощью командного процесса обработки и анализа данных и Azure DevOps Services
 В этой статье приведены предварительные рекомендации по тестированию кода в рабочем потоке обработки и анализа данных. Такое тестирование предоставляет специалистам по обработке и анализу данных системный и эффективный способ проверки качества и ожидаемого результата выполнения созданного кода. Мы продемонстрируем тестирование кода на примере [проекта для командного процесса обработки и анализа данных (TDSP), основанного на наборе данных UCI с данными о доходе совершеннолетних лиц](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome), который мы опубликовали ранее. 
@@ -112,7 +112,7 @@ ms.locfileid: "97656841"
 
 1. Настройте автоматическую сборку и тестирование в Azure DevOps:
 
-    а. В репозитории проекта выберите **Build and Release** (Сборка и выпуск), а затем щелкните **+Создать**, чтобы создать процесс сборки.
+    a. В репозитории проекта выберите **Build and Release** (Сборка и выпуск), а затем щелкните **+Создать**, чтобы создать процесс сборки.
 
     ![Выбранные параметры для запуска нового процесса сборки](./media/code-test/create_new_build.PNG)
 
@@ -124,7 +124,7 @@ ms.locfileid: "97656841"
 
     ![Список шаблонов и кнопка "Пустой процесс"](./media/code-test/start_empty_process_template.PNG)
 
-    d. Присвойте сборке имя и выберите агент. Вы можете выбрать значение по умолчанию, если вы хотите использовать DSVM для завершения процесса сборки. Дополнительные сведения о настройке агентов см. в статье [Build and Release Agents](/azure/devops/pipelines/agents/agents?view=vsts) (Агенты сборки и выпуска).
+    d. Присвойте сборке имя и выберите агент. Вы можете выбрать значение по умолчанию, если вы хотите использовать DSVM для завершения процесса сборки. Дополнительные сведения о настройке агентов см. в статье [Build and Release Agents](/azure/devops/pipelines/agents/agents) (Агенты сборки и выпуска).
     
     ![Настройки для сборки и агента](./media/code-test/select_agent.PNG)
 
@@ -154,8 +154,8 @@ ms.locfileid: "97656841"
 * В [репозитории прогноза доходов UCI](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome) представлены конкретные примеры модульных тестов для сценариев обработки и анализа данных.
 * Выполните приведенные выше рекомендации и примеры для сценария прогнозирования доходов UCI в собственных проектах обработки и анализа данных.
 
-## <a name="references"></a>Ссылки (на английском языке)
+## <a name="references"></a>Ссылки
 * [Командный процесс обработки и анализа данных](./index.yml)
 * [Средства тестирования для Visual Studio](https://www.visualstudio.com/vs/features/testing-tools/)
 * [Ресурсы для тестирования в Azure DevOps](https://www.visualstudio.com/team-services/)
-* [Виртуальные машины для обработки и анализа данных](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/)
+* [Виртуальная машина для обработки и анализа данных](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/)

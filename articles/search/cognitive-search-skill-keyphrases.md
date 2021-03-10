@@ -8,12 +8,12 @@ ms.author: luisca
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: 2fdebffbf9643febc08cba997b3a5a5fc4bb5998
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.openlocfilehash: 8aafb08ff0ccc9391071f796450e69f87de279ba
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97652319"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547838"
 ---
 #   <a name="key-phrase-extraction-cognitive-skill"></a>Когнитивный навык извлечения ключевой фразы
 
@@ -41,6 +41,7 @@ Microsoft.Skills.Text.KeyPhraseExtractionSkill
 |---------------------|-------------|
 | `defaultLanguageCode` | (Необязательно.) Код языка применяется к документам, в которых не указан язык явным образом.  Если код языка по умолчанию не указан, английский (en) используется как язык по умолчанию. <br/> Ознакомьтесь с [полным списком поддерживаемых языков](../cognitive-services/text-analytics/language-support.md). |
 | `maxKeyPhraseCount`   | (Необязательно.) Максимальное количество ключевых фраз для создания. |
+| `modelVersion`   | Используемых Версия модели, используемая при вызове службы Анализ текста. По умолчанию будет использоваться последняя доступная версия, если она не указана. Мы рекомендуем не указывать это значение, если это не обязательно. Дополнительные сведения см. [в разделе Управление версиями модели в API анализа текста](../cognitive-services/text-analytics/concepts/model-versioning.md) . |
 
 ## <a name="skill-inputs"></a>Входные данные навыков
 
@@ -109,8 +110,8 @@ Microsoft.Skills.Text.KeyPhraseExtractionSkill
 
 Вы можете использовать "Document/Микэйфрасес" в качестве входных данных для других навыков или как источник [сопоставления полей вывода](cognitive-search-output-field-mapping.md).
 
-## <a name="errors-and-warnings"></a>Ошибки и предупреждения
-Если указать неподдерживаемый код языка, сформируется сообщение об ошибке, а ключевые фразы не будут извлечены.
+## <a name="warnings"></a>Предупреждения
+При предоставлении неподдерживаемого кода языка создается предупреждение, и ключевые фразы не извлекаются.
 Если текст пуст, появится предупреждение.
 Если текст больше 50 000 знаков, будут проанализированы только первые 50 000 знаков и появится предупреждение.
 

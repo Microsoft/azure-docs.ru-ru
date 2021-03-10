@@ -7,12 +7,12 @@ ms.subservice: files
 ms.topic: how-to
 ms.date: 09/13/2020
 ms.author: rogarana
-ms.openlocfilehash: 948b30cbf37ae5f4f357860569579d8591412414
-ms.sourcegitcommit: 9826fb9575dcc1d49f16dd8c7794c7b471bd3109
+ms.openlocfilehash: 5ee4481b3151e28d5d37760e486a43adbc194994
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94630402"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102553227"
 ---
 # <a name="part-one-enable-ad-ds-authentication-for-your-azure-file-shares"></a>Часть 1. Включение проверки подлинности AD DS для файловых ресурсов Azure 
 
@@ -41,7 +41,7 @@ ms.locfileid: "94630402"
 Перед выполнением в PowerShell замените значения заполнителей собственными параметрами в приведенных ниже параметрах.
 > [!IMPORTANT]
 > Командлет присоединение к домену создаст учетную запись AD для представления учетной записи хранения (общей папки) в AD. Вы можете зарегистрировать учетную запись компьютера или учетную запись входа службы. Дополнительные сведения см. в разделе [часто задаваемые вопросы](./storage-files-faq.md#security-authentication-and-access-control) . Для учетных записей компьютеров срок действия пароля по умолчанию задается в AD через 30 дней. Аналогичным образом для учетной записи входа в службу может быть задан срок действия пароля по умолчанию в домене AD или подразделении (OU).
-> Для обоих типов учетных записей рекомендуется проверить срок действия пароля, настроенный в среде AD, и запланировать [Обновление пароля учетной записи хранения](storage-files-identity-ad-ds-update-password.md) учетной записи AD до максимального срока действия пароля. Вы можете [создать новое подразделение Active Directory (OU) в AD](/powershell/module/addsadministration/new-adorganizationalunit?view=win10-ps) и отключить политику истечения срока действия паролей для [учетных записей компьютеров](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj852252(v=ws.11)) или учетных записей службы входа в систему. 
+> Для обоих типов учетных записей рекомендуется проверить срок действия пароля, настроенный в среде AD, и запланировать [Обновление пароля учетной записи хранения](storage-files-identity-ad-ds-update-password.md) учетной записи AD до максимального срока действия пароля. Вы можете [создать новое подразделение Active Directory (OU) в AD](/powershell/module/addsadministration/new-adorganizationalunit) и отключить политику истечения срока действия паролей для [учетных записей компьютеров](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj852252(v=ws.11)) или учетных записей службы входа в систему. 
 
 ```PowerShell
 #Change the execution policy to unblock importing AzFilesHybrid.psm1 module
@@ -89,7 +89,7 @@ Debug-AzStorageAccountAuth -StorageAccountName $StorageAccountName -ResourceGrou
 
 ### <a name="checking-environment"></a>Проверка среды
 
-Сначала необходимо проверить состояние среды. В частности, необходимо проверить, установлен ли [Active Directory PowerShell](/powershell/module/addsadministration/?view=win10-ps) и выполняется ли оболочка с правами администратора. Затем проверьте, установлен ли модуль [Az.Storage 2.0](https://www.powershellgallery.com/packages/Az.Storage/2.0.0). Если нет, установите его. После выполнения этих проверок проверьте AD DS, чтобы узнать, есть ли [учетная запись компьютера](/windows/security/identity-protection/access-control/active-directory-accounts#manage-default-local-accounts-in-active-directory) (по умолчанию) или [учетная запись для входа в службу](/windows/win32/ad/about-service-logon-accounts) , которая уже создана с именем субъекта-службы или UPN, как CIFS/My-Storage-Account-Name-WHERE. File. Core. Windows. NET. Если учетная запись не существует, создайте ее, как описано в следующем разделе.
+Сначала необходимо проверить состояние среды. В частности, необходимо проверить, установлен ли [Active Directory PowerShell](/powershell/module/addsadministration/) и выполняется ли оболочка с правами администратора. Затем проверьте, установлен ли модуль [Az.Storage 2.0](https://www.powershellgallery.com/packages/Az.Storage/2.0.0). Если нет, установите его. После выполнения этих проверок проверьте AD DS, чтобы узнать, есть ли [учетная запись компьютера](/windows/security/identity-protection/access-control/active-directory-accounts#manage-default-local-accounts-in-active-directory) (по умолчанию) или [учетная запись для входа в службу](/windows/win32/ad/about-service-logon-accounts) , которая уже создана с именем субъекта-службы или UPN, как CIFS/My-Storage-Account-Name-WHERE. File. Core. Windows. NET. Если учетная запись не существует, создайте ее, как описано в следующем разделе.
 
 ### <a name="creating-an-identity-representing-the-storage-account-in-your-ad-manually"></a>Создание удостоверения, представляющего учетную запись хранения в AD вручную
 

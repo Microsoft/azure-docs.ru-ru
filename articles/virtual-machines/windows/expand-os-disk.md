@@ -1,26 +1,27 @@
 ---
 title: Расширение диска операционной системы виртуальной машины Windows в Azure
 description: Увеличьте размер диска операционной системы виртуальной машины, используя Azure PowerShell в модели развертывания диспетчер ресурсов.
-services: virtual-machines-windows
+services: virtual-machines
 documentationcenter: ''
 author: kirpasingh
 manager: roshar
 editor: ''
 tags: azure-resource-manager
 ms.assetid: d9edfd9f-482f-4c0b-956c-0d2c2c30026c
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
+ms.collection: windows
 ms.topic: article
 ms.tgt_pltfrm: vm-windows
 ms.workload: infrastructure-services
 ms.date: 09/02/2020
 ms.author: kirpas
 ms.subservice: disks
-ms.openlocfilehash: df27d7b25010fa68fc86ffe093318b2b0b7f4e96
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.openlocfilehash: 2f991dd93549cf73005127569af496df541eecde
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93393835"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102549606"
 ---
 # <a name="how-to-expand-the-os-drive-of-a-virtual-machine"></a>Расширение диска ОС виртуальной машины
 
@@ -60,7 +61,7 @@ ms.locfileid: "93393835"
 
     :::image type="content" source="./media/expand-os-disk/size.png" alt-text="Снимок экрана, на котором показана панель конфигурации с выбранным размером диска.":::
 
-6. Нажмите кнопку **Сохранить**.
+6. Щелкните **Сохранить**.
 
     :::image type="content" source="./media/expand-os-disk/save.png" alt-text="Снимок экрана, на котором показана панель конфигурации с выбранной кнопкой &quot;Сохранить&quot;.":::
 
@@ -239,7 +240,7 @@ $vm.StorageProfile.DataDisks[0].DiskSizeGB = 1023
 
 3. В командной строке **DISKPART** введите `list volume`. Найдите том, который требуется расширить.
 
-4. В командной строке **DISKPART** введите `select volume <volumenumber>`. При этом будет выбран том с указанным *номером тома* , который вы хотите расширить в смежную пустую область на том же диске.
+4. В командной строке **DISKPART** введите `select volume <volumenumber>`. При этом будет выбран том с указанным *номером тома*, который вы хотите расширить в смежную пустую область на том же диске.
 
 5. В командной строке **DISKPART** введите `extend [size=<size>]`. Эта команда расширяет выбранный том на указанный *размер* в МБ.
 

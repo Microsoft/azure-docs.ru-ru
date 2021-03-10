@@ -12,14 +12,14 @@ ms.workload: storage
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: conceptual
-ms.date: 01/21/2021
+ms.date: 03/09/2021
 ms.author: b-juche
-ms.openlocfilehash: 2cb0e3829011ca9bd0f2b6f36ebf3e6744a180ec
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6d9d56a7f6d1e265508081f735e2dbc379f195fb
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101713411"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102552037"
 ---
 # <a name="faqs-about-azure-netapp-files"></a>Часто задаваемые вопросы о Azure NetApp Files
 
@@ -145,8 +145,18 @@ Azure NetApp Files поддерживает NFSv3 и Нфсв 4.1. Вы може
 1. Чтобы включить Касесенситивелукуп, используйте следующую команду PowerShell:   
     `Set-NfsClientConfiguration -CaseSensitiveLookup 1`    
 2. Подключите том к серверу Windows Server.   
-    Пример   
+    Пример:   
     `Mount -o rsize=1024 -o wsize=1024 -o mtype=hard \\10.x.x.x\testvol X:*`
+
+### <a name="how-does-azure-netapp-files-support-nfsv41-file-locking"></a>Как Azure NetApp Files поддерживает блокировку файлов Нфсв 4.1? 
+
+Для клиентов Нфсв 4.1 Azure NetApp Files поддерживает механизм блокировки файлов Нфсв 4.1, сохраняющий состояние всех блокировок файлов в модели на основе аренды. 
+
+В соответствии с RFC 3530 Azure NetApp Files определяет один период аренды для всех состояний, удерживаемых клиентом NFS. Если клиент не продлит свою аренду в течение заданного периода, все состояния, связанные с арендой клиента, будут освобождены сервером.  
+
+Например, если клиент, который подключает том, перестает отвечать на запросы или выходит за пределы времени ожидания, блокировки будут освобождены. Клиент может явно или неявно обновить аренду, выполнив такие операции, как чтение файла.   
+
+Льготный период определяет период особой обработки, в которой клиенты могут попытаться восстановить состояние блокировки во время восстановления сервера. Время ожидания по умолчанию для аренды составляет 30 секунд с льготным периодом в 45 секунд. По истечении этого времени Аренда клиента будет освобождена.   
 
 ## <a name="smb-faqs"></a>Часто задаваемые вопросы о SMB
 

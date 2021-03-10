@@ -1,19 +1,19 @@
 ---
 title: Обзор агента виртуальной машины Azure
 description: Обзор агента виртуальной машины Azure
-services: virtual-machines-windows
-ms.subservice: extensions
-author: mimckitt
-ms.service: virtual-machines-windows
 ms.topic: article
+ms.service: virtual-machines
+ms.subservice: extensions
+ms.author: amjads
+author: amjads1
+ms.collection: windows
 ms.date: 07/20/2019
-ms.author: mimckitt
-ms.openlocfilehash: 3724b8a2afb89594c73f7dae782658ec8978963a
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 1b1766c0385303993af436911391a1c858bbff61
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96016477"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547464"
 ---
 # <a name="azure-virtual-machine-agent-overview"></a>Обзор агента виртуальной машины Azure
 Агент виртуальной машины Microsoft Azure — это защищенный упрощенный процесс, который управляет взаимодействием виртуальной машины с контроллером структуры Azure. Основная роль агента виртуальной машины — это включение и выполнение расширений виртуальной машины Azure. Расширения виртуальной машины позволяют выполнять дополнительные действия по настройке виртуальной машины после развертывания, например устанавливать и настраивать программное обеспечение. Они также предоставляют возможности восстановления, такие как сброс пароля администратора виртуальной машины. Расширения виртуальной машины не могут выполняться без агента виртуальной машины Azure.
@@ -63,9 +63,9 @@ $vm.OSProfile.AllowExtensionOperations = $true
 $vm | Update-AzVM
 ```
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
-- Для запуска агента виртуальной машины Windows требуется по меньшей мере Windows Server 2008 с пакетом обновления 2 64 (SP2) с .NET Framework 4,0. См. раздел [Минимальная поддержка версий для агентов виртуальных машин в Azure](https://support.microsoft.com/help/4049215/extensions-and-virtual-machine-agent-minimum-version-support).
+- Для запуска агента виртуальной машины Windows требуется по меньшей мере Windows Server 2008 с пакетом обновления 2 64 (SP2) с платформа .NET Framework 4,0. См. раздел [Минимальная поддержка версий для агентов виртуальных машин в Azure](https://support.microsoft.com/help/4049215/extensions-and-virtual-machine-agent-minimum-version-support).
 
 - Убедитесь, что ваша виртуальная машина имеет доступ к IP-адресу 168.63.129.16. Дополнительные сведения см. в разделе [что такое IP-адрес 168.63.129.16](../../virtual-network/what-is-ip-address-168-63-129-16.md).
 
@@ -124,5 +124,5 @@ foreach ($vm in $vms) {
 Дополнительные сведения о сертификатах масштабируемых наборов виртуальных машин см [. в разделе масштабируемые наборы виртуальных машин — разделы справки удалить устаревшие сертификаты?](../../virtual-machine-scale-sets/virtual-machine-scale-sets-faq.md#how-do-i-remove-deprecated-certificates)
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о расширениях виртуальных машин см. в статье c [обзором расширений и компонентов виртуальной машины Azure](overview.md).

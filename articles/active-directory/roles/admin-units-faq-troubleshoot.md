@@ -14,16 +14,16 @@ ms.author: rolyon
 ms.reviewer: anandy
 ms.custom: oldportal;it-pro;
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0fb61388b13b912166c9c07b9ee28b365c4a63b9
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.openlocfilehash: c1f41dca3b52ce75ba2342506f621cca0618a3bf
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98740386"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102565892"
 ---
 # <a name="azure-ad-administrative-units-troubleshooting-and-faq"></a>Административные единицы Azure AD: Устранение неполадок и часто задаваемые вопросы
 
-Для более детального административного управления в Azure Active Directory (Azure AD) можно назначить пользователей роли Azure AD с областью, ограниченной одним или несколькими административными единицами. Примеры сценариев PowerShell для распространенных задач см. [в разделе Работа с административными единицами](/powershell/azure/active-directory/working-with-administrative-units?view=azureadps-2.0&preserve-view=true).
+Для более детального административного управления в Azure Active Directory (Azure AD) можно назначить пользователей роли Azure AD с областью, ограниченной одним или несколькими административными единицами. Примеры сценариев PowerShell для распространенных задач см. [в разделе Работа с административными единицами](/powershell/azure/active-directory/working-with-administrative-units).
 
 ## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
 
@@ -69,11 +69,11 @@ ms.locfileid: "98740386"
 
 **Вопрос. поддерживаются ли административные единицы в PowerShell и API Graph?**
 
-**Ответ.** Да. Вы найдете поддержку административных единиц в [документации по командлетам PowerShell](/powershell/module/Azuread/?view=azureadps-2.0&preserve-view=true) и [примеры сценариев](/powershell/azure/active-directory/working-with-administrative-units?view=azureadps-2.0&preserve-view=true).
+**Ответ.** Да. Вы найдете поддержку административных единиц в [документации по командлетам PowerShell](/powershell/module/Azuread/) и [примеры сценариев](/powershell/azure/active-directory/working-with-administrative-units).
 
-Найдите поддержку для [типа ресурса administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-1.0&preserve-view=true) в Microsoft Graph.
+Найдите поддержку для [типа ресурса administrativeUnit](/graph/api/resources/administrativeunit) в Microsoft Graph.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Ограничение области для ролей с помощью административных единиц](administrative-units.md)
 - [Управление административными единицами](admin-units-manage.md)

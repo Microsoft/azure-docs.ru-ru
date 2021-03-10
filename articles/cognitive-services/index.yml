@@ -12,12 +12,12 @@ metadata:
   manager: nitinme
   ms.custom: custom-portals-hub
   ms.date: 08/28/2020
-  ms.openlocfilehash: 2d2fe422b9b19e69e2f4e919041e6d50e0616308
-  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+  ms.openlocfilehash: 70e2e77e008738ff7c2ed0981de5ee915614ab8d
+  ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/05/2021
-  ms.locfileid: "102182746"
+  ms.lasthandoff: 03/09/2021
+  ms.locfileid: "102504122"
 highlightedContent:
   items:
   - title: Что такое Cognitive Services?
@@ -167,15 +167,15 @@ additionalContent:
     - title: Пакеты SDK и REST API
       links:
       - text: C#
-        url: /dotnet/api/overview/azure/cognitiveservices/client?view=azure-dotnet
+        url: /dotnet/api/overview/azure/cognitiveservices/client
       - text: Go
         url: https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices
       - text: Java
-        url: /java/api/overview/azure/cognitiveservices/client?view=azure-java-stable
+        url: /java/api/overview/azure/cognitiveservices/client
       - text: JavaScript
-        url: /javascript/api/overview/azure/cognitive-services?view=azure-node-latest
+        url: /javascript/api/overview/azure/cognitive-services
       - text: Python
-        url: /python/api/overview/azure/cognitive-services?view=azure-python
+        url: /python/api/overview/azure/cognitive-services
       - text: R
         url: https://github.com/Azure/AzureCognitive
       - text: Apache Spark и базы данных
@@ -187,4 +187,4 @@ additionalContent:
       - text: Azure CLI
         url: /cli/azure/cognitiveservices
       - text: PowerShell
-        url: /powershell/module/az.cognitiveservices/?view=azps-2.5.0#cognitive_services
+        url: /powershell/module/az.cognitiveservices/#cognitive_services
