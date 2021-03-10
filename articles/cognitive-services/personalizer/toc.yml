@@ -88,7 +88,7 @@
         - name: .NET
           items:
             - name: Справочник
-              href: /dotnet/api/overview/azure/cognitiveservices/client/personalizer?view=azure-dotnet
+              href: /dotnet/api/overview/azure/cognitiveservices/client/personalizer
             - name: Пакет NuGet
               href: 'https://go.microsoft.com/fwlink/?linkid=2092272'
         - name: Go
@@ -98,13 +98,13 @@
         - name: Node.js
           items:
             - name: Справочник
-              href: /javascript/api/@azure/cognitiveservices-personalizer/?view=azure-node-latest
+              href: /javascript/api/@azure/cognitiveservices-personalizer/
             - name: npm
               href: 'https://www.npmjs.com/package/@azure/cognitiveservices-personalizer/v/1.0.0'
         - name: Python
           items:
             - name: Справочник
-              href: /python/api/overview/azure/cognitiveservices/personalizer?view=azure-python
+              href: /python/api/overview/azure/cognitiveservices/personalizer
             - name: Пакет Pypi
               href: 'https://pypi.org/project/azure-cognitiveservices-personalizer/'
 - name: Ресурсы

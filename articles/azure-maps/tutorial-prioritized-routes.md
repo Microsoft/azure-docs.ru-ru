@@ -9,12 +9,12 @@ ms.service: azure-maps
 services: azure-maps
 manager: timlt
 ms.custom: mvc, devx-track-js
-ms.openlocfilehash: dbf2331dc6bcd3187175554b61d347e8bb2c04a4
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.openlocfilehash: 5e7f38e4bbc95e04bf54f8f7a2dd80e21891e8df
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98625004"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102215499"
 ---
 # <a name="tutorial-find-and-display-routes-for-different-modes-of-travel-using-azure-maps"></a>Руководство по поиску и отображению маршрутов для различных способов передвижения с помощью Azure Maps
 
@@ -117,7 +117,7 @@ ms.locfileid: "98625004"
     });
     ```
 
-    В обработчике событий `ready` карты для параметра дорожного движения установлено значение `relative`, что соответствует относительно свободному движению. Дополнительные параметры дорожного движения описаны в разделе [Интерфейс TrafficOptions](/javascript/api/azure-maps-control/atlas.trafficoptions?preserve-view=false&view=azure-maps-typescript-latest).
+    В обработчике событий `ready` карты для параметра дорожного движения установлено значение `relative`, что соответствует относительно свободному движению. Дополнительные параметры дорожного движения описаны в разделе [Интерфейс TrafficOptions](/javascript/api/azure-maps-control/atlas.trafficoptions).
 
 2. Сохраните файл **MapTruckRoute.html** и обновите страницу браузера. Если вы увеличите любой город, например Лос-Анджелес, то увидите, что улицы отображаются с учетом текущих данных о дорожном движении.
 
@@ -193,7 +193,7 @@ ms.locfileid: "98625004"
 
     Этот код создает два [объекта Point в формате GeoJSON](https://en.wikipedia.org/wiki/GeoJSON), которые будут представлять начальную и конечную точки, и добавляет эти объекты в источник данных.
 
-    Последний блок кода задает позицию камеры, используя данные о широте и долготе начальной и конечной точек. Начальная и конечная точки добавляются в источник данных. Ограничивающий прямоугольник для начальной и конечной точек вычисляется с использованием функции `atlas.data.BoundingBox.fromData`. Этот ограничивающий прямоугольник используется для формирования вида с камер карты по всему пути с помощью функции `map.setCamera`. Для компенсации размеров пикселей значков символов добавляется заполнение. Дополнительные сведения о свойстве setCamera элемента управления картой см. в документации по свойству [setCamera(CameraOptions | CameraBoundsOptions & AnimationOptions)](/javascript/api/azure-maps-control/atlas.map?view=azure-maps-typescript-latest#setcamera-cameraoptions---cameraboundsoptions---animationoptions-&preserve-view=false).
+    Последний блок кода задает позицию камеры, используя данные о широте и долготе начальной и конечной точек. Начальная и конечная точки добавляются в источник данных. Ограничивающий прямоугольник для начальной и конечной точек вычисляется с использованием функции `atlas.data.BoundingBox.fromData`. Этот ограничивающий прямоугольник используется для формирования вида с камер карты по всему пути с помощью функции `map.setCamera`. Для компенсации размеров пикселей значков символов добавляется заполнение. Дополнительные сведения о свойстве setCamera элемента управления картой см. в документации по свойству [setCamera(CameraOptions | CameraBoundsOptions & AnimationOptions)](/javascript/api/azure-maps-control/atlas.map#setcamera-cameraoptions---cameraboundsoptions---animationoptions-).
 
 3. Сохраните файл **TruckRoute.html** и обновите страницу в браузере. Карта сместится так, что в центре окажется Сиэтл. Синий маркер в форме капли обозначает начальную точку. Круглый синий маркер обозначает конечную точку маршрута.
 

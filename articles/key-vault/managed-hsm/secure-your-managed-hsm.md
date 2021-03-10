@@ -9,12 +9,12 @@ ms.subservice: managed-hsm
 ms.topic: tutorial
 ms.date: 09/15/2020
 ms.author: ambapat
-ms.openlocfilehash: 99918d039052c9913400b85ac3caa4a1a5481155
-ms.sourcegitcommit: 6109f1d9f0acd8e5d1c1775bc9aa7c61ca076c45
+ms.openlocfilehash: 5a3fcc10f318f2a8065550a48eb2bfb4bbdd4915
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94445325"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102218406"
 ---
 # <a name="secure-access-to-your-managed-hsms"></a>Безопасный доступ к Управляемому устройству HSM
 
@@ -27,7 +27,7 @@ ms.locfileid: "94445325"
 Чтобы выполнить действия, описанные в этой статье, вам потребуется следующее:
 
 * подписка на Microsoft Azure. Если у вас ее нет, зарегистрируйтесь, чтобы воспользоваться [бесплатной пробной версией](https://azure.microsoft.com/pricing/free-trial).
-* Azure CLI 2.12.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI]( /cli/azure/install-azure-cli).
+* Azure CLI 2.12.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI]( /cli/azure/install-azure-cli).
 * Управляемое устройство HSM в подписке. См. [Краткое руководство. Подготовка и активация управляемого устройства HSM с помощью Azure CLI](quick-create-cli.md) для выполнения соответствующих действий.
 
 [!INCLUDE [cloud-shell-try-it.md](../../../includes/cloud-shell-try-it.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "94445325"
 az login
 ```
 
-Дополнительные сведения о вариантах входа с помощью Azure CLI см. в [этой статье](/cli/azure/authenticate-azure-cli?view=azure-cli-latest&preserve-view=true).
+Дополнительные сведения о вариантах входа с помощью Azure CLI см. в [этой статье](/cli/azure/authenticate-azure-cli).
 
 ## <a name="example"></a>Пример
 

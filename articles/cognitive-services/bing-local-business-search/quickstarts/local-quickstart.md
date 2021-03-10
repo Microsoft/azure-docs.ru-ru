@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 10/22/2020
 ms.author: aahi
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 02fc67862a332ef51e164c17ef973bb610cf4fc7
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.openlocfilehash: a4fbde55e8fd774e895b27ec2279b4ea80cfd92a
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96499124"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102430179"
 ---
 # <a name="quickstart-send-a-query-to-the-bing-local-business-search-api-in-c"></a>Краткое руководство. Отправка запроса в API Bing Local Business Search с помощью C#
 
@@ -34,7 +34,7 @@ ms.locfileid: "96499124"
 * подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
 * Любой выпуск [Visual Studio 2019](https://www.visualstudio.com/downloads/).
 * Если вы используете Linux или MacOS, это приложение можно запустить с помощью [Mono](https://www.mono-project.com/).
-* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+* Получив подписку Azure, <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7"  title="создайте ресурс Поиска Bing"  target="_blank">Create a Bing Search resource </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
 
 ## <a name="create-the-request"></a>Создание запроса 
 
@@ -78,8 +78,8 @@ namespace localSearch
     class Program
     {
         // **********************************************
-        // **_ Update or verify the following values. _*_
-        // _*********************************************
+        // *** Update or verify the following values. ***
+        // **********************************************
 
         // Replace the accessKey string value with your valid access key.
         const string accessKey = "enter key here";

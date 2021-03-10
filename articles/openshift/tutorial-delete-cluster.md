@@ -7,12 +7,12 @@ ms.author: suvetriv
 ms.topic: tutorial
 ms.service: azure-redhat-openshift
 ms.date: 04/24/2020
-ms.openlocfilehash: 61347d052aeb5d563f49275d8f072d1079b94f26
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.openlocfilehash: 3830942d63c3db9646b84d43d65f7c68cb5fcf9e
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100634810"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209803"
 ---
 # <a name="tutorial-delete-an-azure-red-hat-openshift-4-cluster"></a>Руководство по Удаление кластера Azure Red Hat OpenShift 4
 
@@ -26,7 +26,7 @@ ms.locfileid: "100634810"
 
 В предыдущих руководствах вы создали кластер Azure Red Hat OpenShift и подключились к нему с помощью веб-консоли OpenShift. Если вы не выполнили эти действия, вы можете начать с руководства 1 [Создание кластера Azure Red Hat OpenShift](tutorial-create-cluster.md).
 
-Если вы решили установить и использовать интерфейс командной строки локально, то для работы с этим руководством вам понадобится Azure CLI 2.6.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0](/cli/azure/install-azure-cli?view=azure-cli-latest).
+Если вы решили установить и использовать интерфейс командной строки локально, то для работы с этим руководством вам понадобится Azure CLI 2.6.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0](/cli/azure/install-azure-cli).
 
 ## <a name="sign-in-to-azure"></a>Вход в Azure
 

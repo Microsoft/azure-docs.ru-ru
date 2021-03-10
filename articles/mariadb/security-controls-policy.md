@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием в службе "Политика Azure" для Базы данных Azure для MariaDB
 description: Содержит список элементов управления соответствием из службы "Политика Azure" для Базы данных Azure для MariaDB. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 02/09/2021
+ms.date: 03/05/2021
 ms.topic: sample
 author: savjani
 ms.author: pariks
 ms.service: mariadb
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: d9cb6ac8ba97067edd7c2647589449d01f7acc3c
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: ab1865a4fc2c4b4882013d793ff1e3a5cbc1bdc0
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100091076"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102438491"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-database-for-mariadb"></a>Элементы управления соответствием в службе "Политика Azure" для Базы данных Azure для MariaDB
 

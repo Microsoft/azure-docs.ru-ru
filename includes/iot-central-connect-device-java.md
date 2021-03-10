@@ -4,19 +4,19 @@ ms.author: dobett
 ms.service: iot-pnp
 ms.topic: include
 ms.date: 11/24/2020
-ms.openlocfilehash: ad305202daf09258bbd439e824fc07f1eed1c5af
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.openlocfilehash: 75533a49c72f13bb9e1e62c160a63ef0606bee23
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97033889"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102244489"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы выполнить действия, описанные в этой статье, необходимо следующее:
 
 * Приложение Azure IoT Central, созданное на основе шаблона **Пользовательское приложение**. Дополнительные сведения см. в [кратком руководстве по созданию приложения](../articles/iot-central/core/quick-deploy-iot-central.md). Приложение должно быть создано не ранее 14 июля 2020 года.
-* Компьютер для разработки с пакетом SDK для Java SE версии 8. В статье [Долгосрочная поддержка Java для Azure и Azure Stack](/java/azure/jdk/?preserve-view=true&view=azure-java-stable) выберите пункт **Java 8** в разделе **Долгосрочная поддержка**.
+* Компьютер для разработки с пакетом SDK для Java SE версии 8. В статье [Долгосрочная поддержка Java для Azure и Azure Stack](/java/azure/jdk/) выберите пункт **Java 8** в разделе **Долгосрочная поддержка**.
 * [Apache Maven 3](https://maven.apache.org/download.cgi).
 * Локальная копия репозитория [пакета SDK Интернета вещей Microsoft Azure для Java](https://github.com/Azure/azure-iot-sdk-java) с сайта GitHub, содержащая образец кода. Используйте эту ссылку, чтобы скачать копию репозитория: [Скачать ZIP-файл](https://github.com/Azure/azure-iot-sdk-java/archive/master.zip). Затем распакуйте файл в подходящее расположение на локальном компьютере.
 

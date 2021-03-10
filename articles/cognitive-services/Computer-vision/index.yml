@@ -11,12 +11,12 @@ metadata:
   author: PatrickFarley
   ms.author: pafarley
   ms.date: 09/22/2020
-  ms.openlocfilehash: 4f93df526275e55524a9a4b67462e47eaa1a73d0
-  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+  ms.openlocfilehash: 940a34cfbf4281649737f0cf3fed7b490a9938a7
+  ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/05/2021
-  ms.locfileid: "102182015"
+  ms.lasthandoff: 03/09/2021
+  ms.locfileid: "102508900"
 landingContent:
 - title: Сведения о Компьютерном зрении
   linkLists:
@@ -165,19 +165,19 @@ landingContent:
   - linkListType: reference
     links:
     - text: API "Компьютерное зрение" версии 3.2 (предварительная версия)
-      url: https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-2/operations/5d986960601faab4bf452005
+      url: https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/56f91f2e778daf14a499f21b
     - text: API "Компьютерное зрение" версии 3.1
       url: https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-1-ga/operations/5d986960601faab4bf452005
     - text: API "Компьютерное зрение" версии 2.1
       url: https://westus.dev.cognitive.microsoft.com/docs/services/5cd27ec07268f6c679a3e641/operations/56f91f2e778daf14a499f21b
     - text: Пакет SDK для .NET
-      url: /dotnet/api/overview/azure/cognitiveservices/client/computervision?view=azure-dotnet
+      url: /dotnet/api/overview/azure/cognitiveservices/client/computervision
     - text: Пакет SDK для Python
-      url: /python/api/overview/azure/cognitiveservices/computervision?view=azure-python
+      url: /python/api/overview/azure/cognitiveservices/computervision
     - text: Пакет SDK для Java
-      url: /java/api/overview/azure/cognitiveservices/client/computervision?view=azure-java-stable
+      url: /java/api/overview/azure/cognitiveservices/client/computervision
     - text: Пакет SDK для Node.js
-      url: /javascript/api/@azure/cognitiveservices-computervision/?view=azure-node-latest
+      url: /javascript/api/@azure/cognitiveservices-computervision/
     - text: Пакет SDK для GO
       url: https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.1/computervision
     - text: Azure PowerShell

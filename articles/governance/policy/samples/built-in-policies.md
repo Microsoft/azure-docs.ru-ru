@@ -1,15 +1,15 @@
 ---
 title: Список определений встроенных политик
 description: Список определений встроенных политик для Политики Azure. К категориям относятся теги, соответствие нормативным требованиям, Key Vault, Kubernetes, гостевая конфигурация и многое другое.
-ms.date: 02/09/2021
+ms.date: 03/05/2021
 ms.topic: sample
 ms.custom: generated
-ms.openlocfilehash: 9f2a28c9acf2287c70bedad305ee1c143868c59d
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: 566a439b2b25a4c8a0a09ca190e79c2cf1dc10a9
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100100432"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102429411"
 ---
 # <a name="azure-policy-built-in-policy-definitions"></a>Определения встроенных политик в Политике Azure
 

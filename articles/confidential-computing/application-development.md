@@ -4,16 +4,16 @@ description: Использование средств и библиотек д�
 services: virtual-machines
 author: JBCook
 ms.service: virtual-machines
-ms.subservice: workloads
+ms.subservice: confidential-computing
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.author: JenCook
-ms.openlocfilehash: 6bb3b8dbc7887419f7901a52b56c25f60c869abb
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 0ba6ee92111da66a2118ba4c490b94e5bc9449e0
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "90997847"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102551391"
 ---
 # <a name="application-development-on-intel-sgx"></a>Разработка приложений на Intel SGX 
 
@@ -58,6 +58,6 @@ ms.locfileid: "90997847"
 Эта платформа с открытым кодом обеспечивает высокий уровень конфиденциальности и управления консорциумом для блокчейн. С каждым узлом, использующим TEEs, можно обеспечить безопасное согласие и обработку транзакций.
 
 
-## <a name="next-steps"></a>Дальнейшие шаги 
+## <a name="next-steps"></a>Дальнейшие действия 
 - [Развертывание конфиденциальной вычислительной DCsv2-Series виртуальной машины](quick-create-portal.md)
 - [Скачайте и установите пакет OE SDK и приступите к разработке приложений.](https://github.com/openenclave/openenclave)

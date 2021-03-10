@@ -16,8 +16,6 @@
   items:
     - name: "Визуализация аномалий в пакетном режиме с помощью Power\_BI"
       href: tutorials/batch-anomaly-detection-powerbi.md
-    - name: Обнаружение аномалий при потоковой передаче данных с помощью Azure Databricks
-      href: tutorials/anomaly-detection-streaming-databricks.md
 - name: Практические руководства
   items:
     - name: Определение аномалий в данных

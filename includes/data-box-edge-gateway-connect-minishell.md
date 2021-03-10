@@ -4,12 +4,12 @@ ms.service: databox
 ms.topic: include
 ms.date: 03/06/2019
 ms.author: alkohli
-ms.openlocfilehash: 10c1680afd6cd6673efe3fe9d2397a0dc6a04859
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 5343653dc87325fa0702c0864f0df1456a36e304
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98738928"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102532562"
 ---
 В зависимости от операционной системы клиента процедуры удаленного подключения к устройству отличаются.
 
@@ -60,11 +60,11 @@ ms.locfileid: "98738928"
 
 На клиенте Linux, который будет использоваться для подключения:
 
-- [Установите последнюю версию PowerShell Core для Linux](/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-6) из GitHub, чтобы получить возможность удаленного взаимодействия SSH. 
+- [Установите последнюю версию PowerShell Core для Linux](/powershell/scripting/install/installing-powershell-core-on-linux) из GitHub, чтобы получить возможность удаленного взаимодействия SSH. 
 - [Установите только `gss-ntlmssp` пакет из модуля NTLM](https://github.com/Microsoft/omi/blob/master/Unix/doc/setup-ntlm-omi.md). Для клиентов Ubuntu используйте следующую команду:
     - `sudo apt-get install gss-ntlmssp`
 
-Дополнительные сведения см. в подразделах [удаленное взаимодействие PowerShell по протоколу SSH](/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-6).
+Дополнительные сведения см. в подразделах [удаленное взаимодействие PowerShell по протоколу SSH](/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core).
 
 Выполните следующие действия, чтобы удаленно подключиться из клиента NFS.
 
