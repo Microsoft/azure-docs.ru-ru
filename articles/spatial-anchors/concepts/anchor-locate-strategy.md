@@ -1,5 +1,5 @@
 ---
-title: Стратегия нахождение привязки
+title: Стратегия поиска привязок
 description: Дополнительные сведения о различных стратегиях при вызове API для размещения
 author: pamistel
 manager: MehranAzimi-msft
@@ -8,18 +8,18 @@ ms.author: pamistel
 ms.date: 02/11/2021
 ms.topic: conceptual
 ms.service: azure-spatial-anchors
-ms.openlocfilehash: 409498201ac94882f1a28917693ffd3a65631fc7
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: 43273ccd7c882bbac6cbc68d359db4ecb100800e
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "102583918"
+ms.locfileid: "102617409"
 ---
 # <a name="understanding-the-anchorlocatecriteria-class"></a>Основные сведения о классе Анчорлокатекритериа
 В этой статье вы узнаете о различных параметрах, которые можно использовать при запросе привязки. Мы будем перейдем к классу Анчорлокатекритериа, его параметрам и допустимым сочетаниям параметров.
 
 ## <a name="anchor-locate-criteria"></a>Критерии поиска привязки
-[Класс анчорлокатекритериа](https://docs.microsoft.com/dotnet/api/microsoft.azure.spatialanchors.anchorlocatecriteria?view=spatialanchors-dotnet) помогает отправлять запросы к службе для ранее созданных привязок. Один объект Анчорлокатекритериа может использоваться для наблюдателя в любое время. Каждый объект Анчорлокатекритериа должен содержать **только одно** из следующих свойств: [идентификаторы](#identifiers), [неаранчор](#nearanchor)или [неардевице](#neardevice). При необходимости можно задать дополнительные свойства, такие как [стратегия](#strategy), [бипасскаче](#bypasscache)и [рекуестедкатегориес](#requestedcategories) . 
+[Класс анчорлокатекритериа](https://docs.microsoft.com/dotnet/api/microsoft.azure.spatialanchors.anchorlocatecriteria) помогает отправлять запросы к службе для ранее созданных привязок. Один объект Анчорлокатекритериа может использоваться для наблюдателя в любое время. Каждый объект Анчорлокатекритериа должен содержать **только одно** из следующих свойств: [идентификаторы](#identifiers), [неаранчор](#nearanchor)или [неардевице](#neardevice). При необходимости можно задать дополнительные свойства, такие как [стратегия](#strategy), [бипасскаче](#bypasscache)и [рекуестедкатегориес](#requestedcategories) . 
 
 ### <a name="properties"></a>Свойства
 Определите в наблюдателе **ровно одно** из следующих свойств:

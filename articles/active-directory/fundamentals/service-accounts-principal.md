@@ -13,12 +13,12 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fff9f9e809c61761ae22bc64cb0810b6e8b98f07
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 6f92625131a35dc91c860923ec6523c189830f65
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102122703"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102552156"
 ---
 # <a name="securing-service-principals"></a>Защита субъектов-служб
 
@@ -89,7 +89,7 @@ ApplicationID представляет глобальное приложение
 `Get-AzureADServicePrincipal -All:$true` 
 
 
-Дополнительные сведения см. в разделе [Get-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/get-azureadserviceprincipal?view=azureadps-2.0) .
+Дополнительные сведения см. в разделе [Get-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/get-azureadserviceprincipal) .
 
 ## <a name="assess-service-principal-security"></a>Оценка безопасности субъекта-службы
 

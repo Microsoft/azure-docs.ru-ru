@@ -13,12 +13,12 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 302e4becd337c8e7b0b425a52ed46d562db5bae4
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 30858e9978f7e8857c5f8a2dcdfd7455f6e97b60
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98725333"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102553431"
 ---
 # <a name="discover-the-current-state-of-external-collaboration-in-your-organization"></a>Обнаружение текущего состояния внешней совместной работы в Организации 
 
@@ -34,11 +34,11 @@ ms.locfileid: "98725333"
 
 Пользователи, инициирующие внешнее сотрудничество, лучше всего понимают приложения, которые наиболее важны для внешней совместной работы, а также когда этот доступ должен завершиться. Понимание этих пользователей поможет определить, кому следует делегировать разрешения на приглашение внешних пользователей, создание пакетов доступа и выполнение проверок доступа.
 
-Чтобы найти пользователей, работающих в настоящее время, изучите [журнал аудита Microsoft 365 для общего доступа и доступа к действиям запросов](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#sharing-and-access-request-activities). Вы также можете ознакомиться с [журналом аудита Azure AD, чтобы узнать о том, кто пригласил пользователей B2B](../external-identities/auditing-and-reporting.md) в ваш каталог.
+Чтобы найти пользователей, работающих в настоящее время, изучите [журнал аудита Microsoft 365 для общего доступа и доступа к действиям запросов](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#sharing-and-access-request-activities). Вы также можете ознакомиться с [журналом аудита Azure AD, чтобы узнать о том, кто пригласил пользователей B2B](../external-identities/auditing-and-reporting.md) в ваш каталог.
 
 ## <a name="find-current-collaboration-partners"></a>Поиск текущих участников совместной работы
 
-Внешние пользователи могут быть [пользователями Azure AD B2B](../external-identities/what-is-b2b.md) (предпочтительно) с учетными данными, управляемыми партнером, или внешними пользователями с локально подготовленными учетными данными. Обычно эти пользователи (но не всегда) помечены с помощью UserType для гостей. Вы можете перечислить гостевых пользователей с помощью [Microsoft Graph API](/graph/api/user-list?tabs=http&view=graph-rest-1.0), [PowerShell](/graph/api/user-list?tabs=http&view=graph-rest-1.0)или [портал Azure](../enterprise-users/users-bulk-download.md).
+Внешние пользователи могут быть [пользователями Azure AD B2B](../external-identities/what-is-b2b.md) (предпочтительно) с учетными данными, управляемыми партнером, или внешними пользователями с локально подготовленными учетными данными. Обычно эти пользователи (но не всегда) помечены с помощью UserType для гостей. Вы можете перечислить гостевых пользователей с помощью [Microsoft Graph API](/graph/api/user-list?tabs=http), [PowerShell](/graph/api/user-list?tabs=http)или [портал Azure](../enterprise-users/users-bulk-download.md).
 
 ### <a name="use-email-domains-and-companyname-property"></a>Использование доменов электронной почты и свойства companyName
 
@@ -55,7 +55,7 @@ ms.locfileid: "98725333"
 
 ## <a name="find-access-being-granted-to-external-users"></a>Найти предоставление доступа внешним пользователям
 
-После инвентаризации внешних пользователей и организаций можно определить доступ, предоставленный этим пользователям, с помощью Microsoft Graph API, чтобы определить [членство в группе](/graph/api/resources/groups-overview?view=graph-rest-1.0) Azure AD или [прямое назначение приложения](/graph/api/resources/approleassignment?view=graph-rest-1.0) в Azure AD.
+После инвентаризации внешних пользователей и организаций можно определить доступ, предоставленный этим пользователям, с помощью Microsoft Graph API, чтобы определить [членство в группе](/graph/api/resources/groups-overview) Azure AD или [прямое назначение приложения](/graph/api/resources/approleassignment) в Azure AD.
 
 
 ### <a name="enumerate-application-specific-permissions"></a>Перечислить разрешения для конкретного приложения
@@ -65,9 +65,9 @@ ms.locfileid: "98725333"
 В частности, следует исследовать доступ ко всем бизнес-приложениям, важным для бизнеса, и обеспечить полную осведомленность о любом внешнем доступе.
 
 ### <a name="detect-ad-hoc-sharing"></a>Обнаружение прямого общего доступа
-Если ваша электронная почта и планы сети включают ее, вы можете исследовать содержимое, доступ к которому осуществляется через электронную почту или через несанкционированные программы как услуги (SaaS). [Microsoft 365 защита от потери данных](/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide) позволяет обнаруживать, предотвращать и отслеживать случайный общий доступ к конфиденциальным сведениям в инфраструктуре Microsoft 365. [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) помогает определить использование неавторизованных приложений SaaS в вашей среде.
+Если ваша электронная почта и планы сети включают ее, вы можете исследовать содержимое, доступ к которому осуществляется через электронную почту или через несанкционированные программы как услуги (SaaS). [Microsoft 365 защита от потери данных](/microsoft-365/compliance/data-loss-prevention-policies) позволяет обнаруживать, предотвращать и отслеживать случайный общий доступ к конфиденциальным сведениям в инфраструктуре Microsoft 365. [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) помогает определить использование неавторизованных приложений SaaS в вашей среде.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 См. следующие статьи о защите внешнего доступа к ресурсам. Мы рекомендуем выполнить действия в указанном порядке.
 

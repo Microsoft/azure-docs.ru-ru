@@ -3,16 +3,16 @@ title: Виртуальные машины Azure серии Dv2 и DSv2
 description: Спецификации для виртуальных машин серии Dv2 и Dsv2.
 author: joelpelley
 ms.service: virtual-machines
-ms.subservice: sizes
+ms.subservice: vm-sizes-general
 ms.topic: conceptual
 ms.date: 02/03/2020
 ms.author: jushiman
-ms.openlocfilehash: ced568c310088e6a001f2a6c42cabcbf69bf2332
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.openlocfilehash: a3dee22a1ee793641e48be6edb1b33a00219217e
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100554968"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560316"
 ---
 # <a name="dv2-and-dsv2-series"></a>Серии Dv2 и DSv2
 

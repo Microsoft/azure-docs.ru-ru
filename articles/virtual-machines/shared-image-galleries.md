@@ -9,12 +9,12 @@ ms.workload: infrastructure
 ms.date: 10/14/2020
 ms.author: akjosh
 ms.reviewer: cynthn
-ms.openlocfilehash: 225aca8c4695db33e504a5857acb856f4e01d1f1
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: 32b4cf1555a2d0e074ae1551a5c0085f2758fa2b
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "102551068"
+ms.locfileid: "102609147"
 ---
 # <a name="shared-image-galleries-overview"></a>Обзор коллекций общих образов
 
@@ -104,7 +104,7 @@ ms.locfileid: "102551068"
 
 ## <a name="regional-support"></a>Поддержка в регионах
 
-Целевым регионом может быть любой общедоступный регион, но для репликации в регионах "Центральная Австралия" и "Центральная Австралия 2" ваша подписка должна быть добавлена в список разрешений. Чтобы запросить добавление подписок в список разрешений, перейдите по этой ссылке: https://docs.microsoft.com/azure/virtual-machines/shared-image-galleries#regional-support
+Все общедоступные регионы могут быть целевыми, но в некоторых регионах для получения доступа клиенты должны пройти процесс запроса. Чтобы запросить Добавление подписки в список разрешений для региона, например Австралии Central или Австралии Central 2, отправьте [запрос на доступ](/troubleshoot/azure/general/region-access-request-process) .
 
 ## <a name="limits"></a>Ограничения 
 

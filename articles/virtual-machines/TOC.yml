@@ -280,28 +280,26 @@
           href: ./linux/spot-template.md
         - name: Коды ошибок
           href: error-codes-spot.md
-    - name: Варианты приобретения
+    - name: Преимущество гибридного использования Azure
       items:
-        - name: Преимущество гибридного использования Azure
+        - name: Linux
+          href: ./linux/azure-hybrid-benefit-linux.md
+        - name: Windows
           items:
-            - name: Linux
-              href: ./linux/azure-hybrid-benefit-linux.md
-            - name: Windows
-              items:
-                - name: Использование лицензии с Преимуществом гибридного использования Azure
-                  href: ./windows/hybrid-use-benefit-licensing.md
-                - name: "Использование прав на мультитенантное размещение для Windows\_10"
-                  href: ./windows/windows-desktop-multitenant-hosting-deployment.md
-        - name: Зарезервированные экземпляры
-          items:
-            - name: Предоплата за виртуальные машины
-              href: ./prepay-reserved-vm-instances.md
-            - name: Предоплата за выделенные узлы
-              href: prepay-dedicated-hosts-reserved-instances.md
-            - name: Основные сведения о резервировании в Azure
-              href: ../cost-management-billing/reservations/save-compute-costs-reservations.md?context=/azure/virtual-machines/context/context
-            - name: Гибкость размера экземпляра виртуальной машины
-              href: reserved-vm-instance-size-flexibility.md
+            - name: Использование лицензии с Преимуществом гибридного использования Azure
+              href: ./windows/hybrid-use-benefit-licensing.md
+            - name: "Использование прав на мультитенантное размещение для Windows\_10"
+              href: ./windows/windows-desktop-multitenant-hosting-deployment.md
+    - name: Зарезервированные экземпляры
+      items:
+        - name: Предоплата за виртуальные машины
+          href: ./prepay-reserved-vm-instances.md
+        - name: Предоплата за выделенные узлы
+          href: prepay-dedicated-hosts-reserved-instances.md
+        - name: Основные сведения о резервировании в Azure
+          href: ../cost-management-billing/reservations/save-compute-costs-reservations.md?context=/azure/virtual-machines/context/context
+        - name: Гибкость размера экземпляра виртуальной машины
+          href: reserved-vm-instance-size-flexibility.md
     - name: Создание виртуальных машин Linux
       items:
         - name: Рекомендуемые дистрибутивы
@@ -783,41 +781,52 @@
           href: ./windows/build-image-with-packer.md
 - name: Высокая доступность и масштабирование
   items:
-    - name: Масштабируемые наборы
-      href: ../virtual-machine-scale-sets/overview.md?context=/azure/virtual-machines/context/context
-    - name: Доступность
+    - name: Обзор
       href: availability.md
-    - name: Совместное размещение
-      href: co-location.md
-    - name: проблемы с производительностью сети;
-      href: ../virtual-network/virtual-network-optimize-network-bandwidth.md?context=/azure/virtual-machines/context/context
-    - name: Состояния и жизненный цикл
-      href: states-lifecycle.md
-    - name: Автомасштабирование
-      href: ../virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview.md?context=/azure/virtual-machines/context/context
-    - name: Высокий уровень доступности
-      href: manage-availability.md
     - name: Группы доступности
       items:
-        - name: Linux
+        - name: Обзор
+          href: availability-set-overview.md
+        - name: CLI
           href: ./linux/tutorial-availability-sets.md
-        - name: Windows
-          items:
-            - name: '"Создать группу доступности"'
-              href: ./windows/tutorial-availability-sets.md
-            - name: Изменение группы доступности
-              href: ./windows/change-availability-set.md
-    - name: Создание группы размещения близкого взаимодействия
-      displayName: PPG aligned colocation co-location
+        - name: PowerShell
+          href: ./windows/tutorial-availability-sets.md
+        - name: Создание группы доступности
+          href: ./windows/change-availability-set.md
+    - name: Зоны доступности
       items:
+        - name: Обзор
+          href: ../availability-zones/az-overview.md?context=/azure/virtual-machines/context/context
+        - name: CLI
+          href: ./linux/create-cli-availability-zone.md
+        - name: PowerShell
+          href: ./windows/create-powershell-availability-zone.md
+        - name: Портал
+          href: ./windows/create-portal-availability-zone.md
+    - name: Группы размещения близкого взаимодействия
+      items:
+        - name: Обзор
+          href: co-location.md
         - name: CLI
           href: ./linux/proximity-placement-groups.md
-        - name: Портал
-          href: ./windows/proximity-placement-groups-portal.md
         - name: PowerShell
           href: ./windows/proximity-placement-groups.md
-    - name: Создание виртуальной машины в зоне доступности
-      href: ./linux/create-cli-availability-zone.md
+        - name: Портал
+          href: ./windows/proximity-placement-groups-portal.md
+    - name: Масштабируемые наборы виртуальных машин Microsoft Azure
+      items:
+        - name: Обзор
+          href: ../virtual-machine-scale-sets/overview.md?context=/azure/virtual-machines/context/context
+        - name: Автомасштабирование
+          href: ../virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview.md?context=/azure/virtual-machines/context/context
+        - name: Режимы оркестрации
+          href: ../virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes.md?context=/azure/virtual-machines/context/context
+    - name: Общие сведения о перезагрузках виртуальных машин
+      href: understand-vm-reboots.md
+    - name: Состояния и выставление счетов
+      href: states-billing.md
+    - name: Регионы Azure
+      href: regions.md
 - name: Диски
   items:
     - name: Общие сведения об управляемых дисках
@@ -1346,7 +1355,7 @@
             - name: Часто задаваемые вопросы об общедоступной версии
               href: ../azure-monitor/vm/vminsights-ga-release-faq.md?context=%2fazure%2fvirtual-machines%2fcontext%2fcontext
             - name: ВОПРОСЫ И ОТВЕТЫ
-              href: ../azure-monitor/faq.md
+              href: ../azure-monitor/faq.md?context=/azure/virtual-machines/context/context
             - name: Включение мониторинга
               items:
                 - name: Общие сведения о включении мониторинга

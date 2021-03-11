@@ -237,7 +237,7 @@
         - name: Настройка условного доступа
           href: conditional-access-user-flow.md
     - name: Настройка проверки возраста
-      href: basic-age-gating.md
+      href: age-gating.md
     - name: Соединители API (предварительная версия)
       items:
         - name: Обзор

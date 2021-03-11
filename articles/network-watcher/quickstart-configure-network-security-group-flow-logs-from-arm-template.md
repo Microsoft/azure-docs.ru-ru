@@ -9,12 +9,12 @@ ms.topic: quickstart
 ms.date: 01/07/2021
 ms.author: damendo
 ms.custom: subject-armqs
-ms.openlocfilehash: ded7b24461fdcdbc3d020a487cafc20620633097
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.openlocfilehash: bc075e5074fe39ad38e45235af932b40fef78fce
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98019726"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102521872"
 ---
 # <a name="quickstart-configure-network-security-group-flow-logs-by-using-an-arm-template"></a>Краткое руководство. Настройка журналов потоков для группы безопасности сети с помощью шаблона Azure Resource Manager
 
@@ -82,7 +82,7 @@ ms.locfileid: "98019726"
 
 Если вы используете шаблоны Resource Manager впервые, ознакомьтесь со следующими статьями, чтобы получить дополнительные сведения:
 
-- [Развертывание ресурсов с помощью шаблонов ARM и Azure PowerShell](../azure-resource-manager/templates/deploy-powershell.md#deploy-local-template)
+- [Развертывание ресурсов с помощью шаблонов ARM и Azure PowerShell](../azure-resource-manager/templates/deploy-powershell.md#deploy-local-template-or-bicep-file)
 - Создание и развертывание первого шаблона ARM[
 
 В следующем примере приведен полный шаблон. Это также самая простая версия шаблона. Пример содержит минимальные параметры, которые передаются для настройки журналов потоков NSG. Дополнительные примеры см. в обзорной статье [Настройка журналов потоков NSG из шаблона Azure Resource Manager](network-watcher-nsg-flow-logging-azure-resource-manager.md).
@@ -145,7 +145,7 @@ New-AzResourceGroupDeployment -Name EnableFlowLog -ResourceGroupName NetworkWatc
 Существует две возможности проверить успешность развертывания:
 
 - На консоли PowerShell для `ProvisioningState` должно отображаться значение `Succeeded`.
-- Вы также можете перейти на [страницу портала журналов потоков NSG](https://ms.portal.azure.com/#blade/Microsoft_Azure_Network/NetworkWatcherMenuBlade/flowLogs), чтобы подтвердить изменения. 
+- Вы также можете перейти на [страницу портала журналов потоков NSG](https://ms.portal.azure.com/#blade/Microsoft_Azure_Network/NetworkWatcherMenuBlade/flowLogs), чтобы подтвердить изменения.
 
 Если возникнут проблемы с развертыванием, см. статью [Устранение распространенных ошибок развертывания в Azure с помощью Azure Resource Manager](../azure-resource-manager/templates/common-deployment-errors.md).
 

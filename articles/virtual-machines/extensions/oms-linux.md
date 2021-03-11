@@ -1,26 +1,19 @@
 ---
 title: Расширение виртуальной машины Log Analytics для Linux
 description: Развертывание агента Log Analytics на виртуальной машине Linux с помощью расширения виртуальной машины.
-services: virtual-machines-linux
-documentationcenter: ''
-author: axayjo
-manager: gwallace
-editor: ''
-tags: azure-resource-manager
-ms.assetid: c7bbf210-7d71-4a37-ba47-9c74567a9ea6
-ms.service: virtual-machines-linux
-ms.subservice: extensions
 ms.topic: article
-ms.tgt_pltfrm: vm-linux
-ms.workload: infrastructure-services
+ms.service: virtual-machines
+ms.subservice: extensions
+author: amjads1
+ms.author: amjads
+ms.collection: linux
 ms.date: 02/18/2020
-ms.author: akjosh
-ms.openlocfilehash: 202cdc341ce31c2347552e6fbc430c679ef28d7f
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 3ac6937d83bd2d21fefc09878408a54aa0eb41f1
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100580097"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102559092"
 ---
 # <a name="log-analytics-virtual-machine-extension-for-linux"></a>Расширение виртуальной машины Log Analytics для Linux
 

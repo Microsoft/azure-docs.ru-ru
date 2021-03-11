@@ -220,10 +220,10 @@
           href: media-services-metrics-diagnostic-logs.md
         - name: Схемы для журналов диагностики
           href: media-services-diagnostic-logs-schema.md
-    - name: Проигрыватель мультимедиа Azure
+    - name: Совместимые проигрыватели
       items:
-        - name: Обзор Проигрывателя мультимедиа Azure
-          href: ../azure-media-player/azure-media-player-overview.md
+        - name: Проигрыватели мультимедиа для Служб мультимедиа
+          href: media-players-overview.md
     - name: "Разработка с использованием API-интерфейсов версии\_3"
       items:
         - name: Обзор

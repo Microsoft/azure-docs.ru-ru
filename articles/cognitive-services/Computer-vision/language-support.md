@@ -10,12 +10,12 @@ ms.subservice: computer-vision
 ms.topic: conceptual
 ms.date: 04/17/2019
 ms.author: pafarley
-ms.openlocfilehash: 2e0cd424b71ff828ed0d8ad4c16d3333cf8a1c45
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.openlocfilehash: 43804907d68ddd58e55c7ce453e0731d0cb4b9b5
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99575878"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560384"
 ---
 # <a name="language-support-for-computer-vision"></a>Языковая поддержка для Компьютерное зрение
 
@@ -68,13 +68,13 @@ ms.locfileid: "99575878"
 |Итальянский | `it` |✔ |✔ |✔ |
 |Японский | `ja` |✔ | |✔ |
 |Яванская письменность | `jv` | | |✔ |
+|Киче  | `quc` | | |✔ |
 |Кабувердиану | `kea` | | |✔ |
 |Качинский (латиница) | `kac` | | |✔ |
 |Kara-Kalpak | `kaa` | | |✔ |
 |кашубиан | `csb` | | |✔ |
 |кхаси  | `kha` | | |✔ |
 |Корейский | `ko` |✔ | |✔ |
-|Киче  | `quc` | | |✔ |
 |Курдский (латиница) | `kur` | | |✔ |
 |Люксембургский  | `lb` | | |✔ |
 |Малайский (латиница)  | `ms` | | |✔ |

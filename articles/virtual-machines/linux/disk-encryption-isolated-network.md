@@ -2,18 +2,19 @@
 title: Шифрование дисков Azure в изолированной сети
 description: В этой статье вы узнаете советы по устранению неполадок Microsoft Azure шифровании дисков на виртуальных машинах Linux.
 author: msmbaldwin
-ms.service: virtual-machines-linux
-ms.subservice: security
+ms.service: virtual-machines
+ms.subservice: disks
+ms.collection: linux
 ms.topic: conceptual
 ms.author: mbaldwin
 ms.date: 02/27/2020
 ms.custom: seodec18
-ms.openlocfilehash: 1d7e019e7759e22e945bddee477a4cb77f17350b
-ms.sourcegitcommit: d76108b476259fe3f5f20a91ed2c237c1577df14
+ms.openlocfilehash: 8d8d2b88251f837a23c4e82a90eb4d4eb0043702
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92913829"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102553057"
 ---
 # <a name="azure-disk-encryption-on-an-isolated-network"></a>Шифрование дисков Azure в изолированной сети
 
@@ -25,18 +26,18 @@ ms.locfileid: "92913829"
 
 Ниже приведены пакеты, необходимые для каждого распределения. Полный список поддерживаемых дистрибутивов и типов томов см. в статье [Поддерживаемые виртуальные машины и операционные системы](disk-encryption-overview.md#supported-vms-and-operating-systems).
 
-- **Ubuntu 14,04, 16,04, 18,04** : lsscsi, псмиск, at, криптсетуп-bin, Python — Parts, Python-Six, прокпс, GRUB-PC-bin
-- **CentOS 7,2-7,7** : lsscsi, псмиск, lvm2, UUID, at, исправление, криптсетуп, криптсетуп-reencrypt, пипартед, прокпс-NG, util-Linux
-- **CentOS 6,8** : lsscsi, псмиск, lvm2, UUID, в, криптсетуп-reencrypt, пипартед, Python-Six
-- **RedHat 7,2-7,7** : lsscsi, псмиск, lvm2, UUID, at, исправление, криптсетуп, криптсетуп-reencrypt, прокпс-NG, util-Linux
-- **RedHat 6,8** : lsscsi, псмиск, lvm2, UUID, в, Patch, криптсетуп — повторное шифрование
-- **openSUSE 42,3, SLES 12 — SP4, 12-SP3** : lsscsi, криптсетуп
+- **Ubuntu 14,04, 16,04, 18,04**: lsscsi, псмиск, at, криптсетуп-bin, Python — Parts, Python-Six, прокпс, GRUB-PC-bin
+- **CentOS 7,2-7,7**: lsscsi, псмиск, lvm2, UUID, at, исправление, криптсетуп, криптсетуп-reencrypt, пипартед, прокпс-NG, util-Linux
+- **CentOS 6,8**: lsscsi, псмиск, lvm2, UUID, в, криптсетуп-reencrypt, пипартед, Python-Six
+- **RedHat 7,2-7,7**: lsscsi, псмиск, lvm2, UUID, at, исправление, криптсетуп, криптсетуп-reencrypt, прокпс-NG, util-Linux
+- **RedHat 6,8**: lsscsi, псмиск, lvm2, UUID, в, Patch, криптсетуп — повторное шифрование
+- **openSUSE 42,3, SLES 12 — SP4, 12-SP3**: lsscsi, криптсетуп
 
 В Red Hat, когда требуется прокси-сервер, необходимо убедиться в правильности настроек диспетчера подписок и yum. Дополнительные сведения см. в статье [How to troubleshoot subscription-manager and yum problems](https://access.redhat.com/solutions/189533) (Устранение неполадок диспетчера подписки и yum).  
 
 Если пакеты устанавливаются вручную, их также необходимо обновить вручную по мере выпуска новых версий.
 
-## <a name="network-security-groups"></a>группы безопасности сети;
+## <a name="network-security-groups"></a>Группы безопасности сети
 Любые применяемые параметры группы безопасности сети должны позволять конечной точке соответствовать предусмотренным предварительным требованиям к конфигурации сети для шифрования диска.  См [. раздел шифрование дисков Azure: требования к сети](disk-encryption-overview.md#networking-requirements)
 
 ## <a name="azure-disk-encryption-with-azure-ad-previous-version"></a>Шифрование дисков Azure с помощью Azure AD (Предыдущая версия)

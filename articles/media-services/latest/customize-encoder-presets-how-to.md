@@ -12,12 +12,12 @@ ms.topic: how-to
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: seodec18
-ms.openlocfilehash: 18127da3064a7eac3e6bfdc0692972d4194119cc
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: eb72c34489755dad17700a16a5109824ad892e83
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102508305"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102553278"
 ---
 # <a name="how-to-encode-with-a-custom-transform---net"></a>Кодирование с помощью пользовательского преобразования — .NET
 
@@ -44,7 +44,7 @@ ms.locfileid: "102508305"
  git clone https://github.com/Azure-Samples/media-services-v3-dotnet.git
  ```
  
-Образец настраиваемой предустановки находится в [кодировке с пользовательской предустановкой с помощью папки .NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/EncodingWithMESCustomPreset) .
+Образец настраиваемой предустановки находится в [кодировке с пользовательской предустановкой с помощью папки .NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/EncodingWithMESCustomPreset_H264) .
 
 ## <a name="create-a-transform-with-a-custom-preset"></a>Создание преобразования с помощью настраиваемой предустановки
 
@@ -52,7 +52,7 @@ ms.locfileid: "102508305"
 
 При создании [преобразования](/rest/api/media/transforms) сначала проверьте, существует ли оно, с помощью метода **Get**, как показано в следующем коде. В службах мультимедиа v3 методы **Get** для сущностей возвращают **значение NULL** , если сущность не существует (в имени не учитывается регистр).
 
-### <a name="example"></a>Пример
+### <a name="example"></a>Например, .
 
 В следующем примере определяется набор выходов, которые нужно создать при использовании этого преобразования. Сначала мы добавим слой AacAudio для кодирования звука и два слоя H264Video для кодирования видео. В видеослоях мы присваиваем метки, чтобы их можно было использовать в именах выходных файлов. Далее мы хотим, чтобы выходные данные также включали эскизы. В приведенном ниже примере мы указываем изображения в формате PNG, созданные на 50% от разрешения входного видео и три метки времени — {25%, 50%, 75%} длиной входного видео. Наконец, мы указываем формат выходных файлов — один для видео + аудио, а другой — для эскизов. Так как у нас есть несколько H264Layers, необходимо использовать макросы, которые создают уникальные имена для каждого слоя. Можно использовать `{Label}` `{Bitrate}` макрос или, а в примере — первый.
 

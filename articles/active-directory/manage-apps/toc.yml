@@ -38,8 +38,14 @@
       items:
         - name: Общие сведения о примерах управления приложениями
           href: app-management-powershell-samples.md
-        - name: 'Экспорт всех регистраций, секретов и сертификатов приложений'
+        - name: Экспорт секретов и сертификатов (регистрация приложений)
           href: ./scripts/powershell-export-all-app-registrations-secrets-and-certs.md
+        - name: Экспорт секретов и сертификатов (корпоративные приложения)
+          href: ./scripts/powershell-export-all-enterprise-apps-secrets-and-certs.md
+        - name: Экспорт секретов и сертификатов с истекающим сроком действия
+          href: ./scripts/powershell-export-apps-with-expriring-secrets.md
+        - name: Экспорт секретов и сертификатов с истекшим сроком действия
+          href: ./scripts/powershell-export-apps-with-secrets-beyond-required.md
     - name: Примеры PowerShell для прокси приложения
       href: application-proxy-powershell-samples.md
 - name: Основные понятия

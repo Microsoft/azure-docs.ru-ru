@@ -8,12 +8,12 @@ ms.date: 01/28/2020
 ms.author: dech
 ms.reviewer: sngun
 ms.custom: devx-track-csharp
-ms.openlocfilehash: a5b8842718aa2d9f90ac06283abc5fe2fdd925cb
-ms.sourcegitcommit: 6a770fc07237f02bea8cc463f3d8cc5c246d7c65
+ms.openlocfilehash: c7246511a88e2d2756a8ef56c5adf51ddbfd3e58
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95997007"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560537"
 ---
 # <a name="set-up-a-cicd-pipeline-with-the-azure-cosmos-db-emulator-build-task-in-azure-devops"></a>Настройка конвейера CI/CD с помощью задачи сборки Azure Cosmos DB Emulator в Azure DevOps
 [!INCLUDE[appliesto-all-apis](includes/appliesto-all-apis.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "95997007"
 Теперь выберите организацию, в которой нужно установить это расширение. 
 
 > [!NOTE]
-> Чтобы установить расширение в организации Azure DevOps, нужно быть владельцем учетной записи или администратором коллекции проектов. Если у вас нет нужных разрешений, но вы являетесь участником учетной записи, попробуйте запросить расширения. [Подробнее.](/azure/devops/marketplace/faq-extensions?preserve-view=true&view=vsts)
+> Чтобы установить расширение в организации Azure DevOps, нужно быть владельцем учетной записи или администратором коллекции проектов. Если у вас нет нужных разрешений, но вы являетесь участником учетной записи, попробуйте запросить расширения. [Подробнее.](/azure/devops/marketplace/faq-extensions)
 
 :::image type="content" source="./media/tutorial-setup-ci-cd/addExtension_2.png" alt-text="Выбор организации Azure DevOps, в которой нужно установить расширение":::
 
 ## <a name="create-a-build-definition"></a>Создание определения сборки
 
-Теперь, когда расширение установлено, войдите в организацию Azure DevOps и найдите проект на панели мониторинга проектов. Вы можете добавить [конвейер сборки](/azure/devops/pipelines/get-started-designer?preserve-view=true&tabs=new-nav&view=vsts) в проект или изменить имеющийся. Если у вас уже есть конвейер сборки, переходите к разделу, посвященному [добавлению задачи конвейера сборки эмулятора в определение сборки](#addEmulatorBuildTaskToBuildDefinition).
+Теперь, когда расширение установлено, войдите в организацию Azure DevOps и найдите проект на панели мониторинга проектов. Вы можете добавить [конвейер сборки](/azure/devops/pipelines/get-started-designer?preserve-view=true&tabs=new-nav) в проект или изменить имеющийся. Если у вас уже есть конвейер сборки, переходите к разделу, посвященному [добавлению задачи конвейера сборки эмулятора в определение сборки](#addEmulatorBuildTaskToBuildDefinition).
 
 1. Чтобы создать определение сборки, откройте в Azure DevOps вкладку **Сборки**. Щелкните **+Создать.** \> **Новый конвейер сборки**
 
@@ -52,7 +52,7 @@ ms.locfileid: "95997007"
 3. И наконец, выберите нужный шаблон для конвейера сборки. В нашем примере для этого руководства выбран шаблон **ASP.NET**. Теперь у вас есть конвейер сборки, который можно настроить для использования задачи сборки Azure Cosmos DB Emulator. 
 
 > [!NOTE]
-> Если в предыдущей задаче в рамках непрерывной интеграции установка выполняется вручную, то у пула агентов, выбираемого для непрерывной интеграции, должен быть установлен Docker для Windows. Чтобы выбрать пул агентов, см. описание [агентов, размещенных корпорацией Майкрософт](/azure/devops/pipelines/agents/hosted?preserve-view=true&tabs=yaml&view=azure-devops) (мы рекомендуем начать с `Hosted VS2017`).
+> Если в предыдущей задаче в рамках непрерывной интеграции установка выполняется вручную, то у пула агентов, выбираемого для непрерывной интеграции, должен быть установлен Docker для Windows. Чтобы выбрать пул агентов, см. описание [агентов, размещенных корпорацией Майкрософт](/azure/devops/pipelines/agents/hosted?tabs=yaml) (мы рекомендуем начать с `Hosted VS2017`).
 
 Эмулятор Azure Cosmos DB в настоящее время не поддерживает размещенный Пул агентов VS2019. Однако эмулятор уже поставляется с VS2019 и используется для запуска эмулятора с помощью следующих командлетов PowerShell. Если при использовании VS2019 возникли проблемы, обратитесь к команде [Azure DevOps](https://developercommunity.visualstudio.com/spaces/21/index.html) для получения справки.
 

@@ -11,12 +11,12 @@ ms.author: amsaied
 ms.reviewer: sgilley
 ms.date: 02/11/2021
 ms.custom: devx-track-python
-ms.openlocfilehash: 18f76480d1327d6ab41c475395a689f8024d7b25
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 4f2b01b7a04958c4bd1f97332b54a1ff4fc32356
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100369036"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102522331"
 ---
 # <a name="tutorial-run-a-hello-world-python-script-part-2-of-4"></a>Руководство по выполнению скрипта "Hello world!" Сценарий Python (часть 2 из 4)
 
@@ -92,7 +92,7 @@ print(aml_url)
       `ws = Workspace.from_config()`
    :::column-end:::
    :::column span="2":::
-      [Workspace](/python/api/azureml-core/azureml.core.workspace.workspace?preserve-view=true&view=azure-ml-py) подключается к рабочей области Машинного обучения Azure, чтобы можно было взаимодействовать с ресурсами Машинного обучения Azure.
+      [Workspace](/python/api/azureml-core/azureml.core.workspace.workspace) подключается к рабочей области Машинного обучения Azure, чтобы можно было взаимодействовать с ресурсами Машинного обучения Azure.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -100,7 +100,7 @@ print(aml_url)
       `experiment =  Experiment( ... )`
    :::column-end:::
    :::column span="2":::
-      [Experiment](/python/api/azureml-core/azureml.core.experiment.experiment?preserve-view=true&view=azure-ml-py) предоставляет простой способ организации нескольких запусков с одним именем. В дальнейшем можно увидеть, как эксперименты упрощают сравнение метрик множества запусков.
+      [Experiment](/python/api/azureml-core/azureml.core.experiment.experiment) предоставляет простой способ организации нескольких запусков с одним именем. В дальнейшем можно увидеть, как эксперименты упрощают сравнение метрик множества запусков.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -108,7 +108,7 @@ print(aml_url)
       `config = ScriptRunConfig( ... )` 
    :::column-end:::
    :::column span="2":::
-      [ScriptRunConfig](/python/api/azureml-core/azureml.core.scriptrunconfig?preserve-view=true&view=azure-ml-py) создает оболочку для кода `hello.py` и передает его в рабочую область. Как следует из названия, этот класс можно использовать для _настройки_ _запуска_ _скрипта_ в Машинном обучении Azure. Кроме того, он указывает, на каком целевом объекте вычислений будет выполняться скрипт. В этом коде целевым объектом является вычислительный кластер, созданный в рамках [учебника по настройке](tutorial-1st-experiment-sdk-setup-local.md).
+      [ScriptRunConfig](/python/api/azureml-core/azureml.core.scriptrunconfig) создает оболочку для кода `hello.py` и передает его в рабочую область. Как следует из названия, этот класс можно использовать для _настройки_ _запуска_ _скрипта_ в Машинном обучении Azure. Кроме того, он указывает, на каком целевом объекте вычислений будет выполняться скрипт. В этом коде целевым объектом является вычислительный кластер, созданный в рамках [учебника по настройке](tutorial-1st-experiment-sdk-setup-local.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -116,7 +116,7 @@ print(aml_url)
       `run = experiment.submit(config)`
    :::column-end:::
    :::column span="2":::
-       Отправляет скрипт. Эта отправка называется [запуском](/python/api/azureml-core/azureml.core.run%28class%29?preserve-view=true&view=azure-ml-py). Запуск инкапсулирует одно выполнение кода. Используйте запуск, чтобы отслеживать ход выполнения скрипта, записывать выходные данные, анализировать результаты, визуализировать метрики и многое другое.
+       Отправляет скрипт. Эта отправка называется [запуском](/python/api/azureml-core/azureml.core.run%28class%29). Запуск инкапсулирует одно выполнение кода. Используйте запуск, чтобы отслеживать ход выполнения скрипта, записывать выходные данные, анализировать результаты, визуализировать метрики и многое другое.
    :::column-end:::
 :::row-end:::
 :::row:::

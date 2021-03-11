@@ -6,15 +6,15 @@ ms.author: brbell
 ms.reviewer: mimckitt
 ms.custom: mimckitt
 ms.service: virtual-machines
-ms.subservice: sizes
+ms.subservice: vm-sizes-general
 ms.topic: conceptual
 ms.date: 06/01/2020
-ms.openlocfilehash: b68ba21e7a676dda46527313f2fceece0fcba578
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.openlocfilehash: feabdcef9298c93f0cba93d3eeb9ebb0a32d6ef2
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100557930"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560350"
 ---
 # <a name="ddv4-and-ddsv4-series"></a>Серии Ddv4 и Ddsv4
 

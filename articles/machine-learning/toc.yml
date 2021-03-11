@@ -258,6 +258,8 @@
         - name: Использование шаблона Resource Manager
           displayName: arm
           href: how-to-create-workspace-template.md
+        - name: "Присоединение к рабочей области Azure Synapse\_Analytics"
+          href: how-to-link-synapse-ml-workspaces.md
     - name: Создание вычислительных ресурсов и управление ими
       items:
         - name: Вычислительная операция
@@ -454,6 +456,8 @@
           href: how-to-understand-automated-ml.md
         - name: Использование модели ONNX в приложении .NET
           href: how-to-use-automl-onnx-model-dotnet.md
+        - name: Устранение неполадок с автоматизированным машинным обучением
+          href: how-to-troubleshoot-auto-ml.md
     - name: Развертывание и обслуживание моделей
       items:
         - name: Где и как развернуть
@@ -590,7 +594,7 @@
   items:
     - name: Пакет SDK для Python
       displayName: 'api, core, package, python, class'
-      href: /python/api/overview/azure/ml/intro?view=azure-ml-py
+      href: /python/api/overview/azure/ml/intro
     - name: Пакет SDK для R
       displayName: 'api, core, package, R, class'
       href: 'https://azure.github.io/azureml-sdk-for-r/reference/index.html'

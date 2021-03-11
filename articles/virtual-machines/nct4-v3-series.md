@@ -2,17 +2,17 @@
 title: НКАС T4 серии v3
 description: Спецификации для виртуальных машин серии НКАС T4 v3.
 ms.service: virtual-machines
-ms.subservice: hpc
+ms.subservice: vm-sizes-gpu
 author: vikancha-MSFT
 ms.topic: conceptual
 ms.date: 01/12/2021
 ms.author: vikancha
-ms.openlocfilehash: 0ead1c5772cb4a2e231867ef1e77bfa646cbb29e
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: b7418825b4f22bfe4fe1941cb1f70ffb9f0a939b
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102042748"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102609215"
 ---
 # <a name="ncast4_v3-series"></a>Серия NCasT4_v3 
 
@@ -28,7 +28,7 @@ ms.locfileid: "102042748"
 [Поддержка создания виртуальных машин](generation-2.md): поколение 1 и 2<br>
 [Ускоренная сеть](../virtual-network/create-vm-accelerated-networking-cli.md): поддерживается<br>
 [Временные диски ОС](ephemeral-os-disks.md): не поддерживаются <br>
-Нвлинкное Interconnect NVIDIA: не поддерживается<br>
+NVIDIA Нвлинк Interconnect: поддерживается<br>
 <br>
 
 | Размер | vCPU | Память: ГиБ | Временное хранилище (SSD): ГиБ | Графический процессор | Память GPU: ГиБ | Максимальное число дисков данных | Максимальное количество сетевых адаптеров / ожидаемая пропускная способность сети (Мбит/с) |

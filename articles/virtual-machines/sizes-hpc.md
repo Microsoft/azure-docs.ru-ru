@@ -3,18 +3,18 @@ title: Размеры виртуальных машин Azure — HPC | Доку
 description: Список различных размеров, доступных для высокопроизводительных вычислительных виртуальных машин в Azure. Сведения о количестве виртуальных ЦП, дисков данных и сетевых адаптеров, а также о пропускной способности хранилища и сети для размеров виртуальных машин этой серии.
 author: vermagit
 ms.service: virtual-machines
-ms.subservice: hpc
+ms.subservice: vm-sizes-hpc
 ms.topic: conceptual
 ms.workload: infrastructure-services
 ms.date: 12/09/2020
 ms.author: amverma
 ms.reviewer: jushiman
-ms.openlocfilehash: 0ccd7a2ff1d4948858e62e224f1376379b4335ec
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: bfc49cf7c9f5489248aeba7465a88e97ad16abd8
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101669151"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102554402"
 ---
 # <a name="high-performance-computing-vm-sizes"></a>Размеры виртуальных машин с высокой производительностью
 

@@ -27,8 +27,6 @@
       href: cdn-custom-ssl.md
     - name: Настройка правил кэширования
       href: cdn-caching-rules-tutorial.md
-    - name: Принудительное применение HTTPS с помощью стандартного обработчика правил
-      href: cdn-standard-rules-engine.md
 - name: Примеры
   items:
     - name: Примеры кода
@@ -76,6 +74,8 @@
           href: cdn-improve-performance.md
         - name: Несколько источников конечной точки
           href: endpoint-multiorigin.md
+        - name: Принудительное применение HTTPS с помощью стандартного обработчика правил
+          href: cdn-standard-rules-engine.md
         - name: Управление поведением кэширования
           items:
             - name: Управление поведением кэширования с помощью правил

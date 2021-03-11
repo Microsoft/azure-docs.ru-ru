@@ -5,14 +5,14 @@ manager: evansma
 author: rayne-wiselman
 ms.service: resource-move
 ms.topic: how-to
-ms.date: 11/30/2020
+ms.date: 02/22/2020
 ms.author: raynew
-ms.openlocfilehash: 63548e2bf470c012e0dd8a5f879a51eeb631f453
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.openlocfilehash: 25311e93e1081b3c7638c275c39153b2c357048d
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96459283"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102559136"
 ---
 # <a name="manage-move-collections-and-resource-groups"></a>Управление перемещением коллекций и групп ресурсов
 
@@ -39,70 +39,111 @@ ms.locfileid: "96459283"
 
 ## <a name="remove-a-resource-powershell"></a>Удаление ресурса (PowerShell)
 
-Удалите ресурс (в нашем примере — Псдемовм Machines) из коллекции с помощью PowerShell, как показано ниже.
+С помощью командлетов PowerShell можно удалить один ресурс из Мовеколлектион или удалить несколько ресурсов.
+
+### <a name="remove-a-single-resource"></a>Удаление одного ресурса
+
+Удалите ресурс (в нашем примере — виртуальная сеть *псдеморм-vnet*) следующим образом:
 
 ```azurepowershell-interactive
 # Remove a resource using the resource ID
-Remove-AzResourceMoverMoveResource -SubscriptionId  <subscription-id> -ResourceGroupName RegionMoveRG-centralus-westcentralus  -MoveCollectionName MoveCollection-centralus-westcentralus -Name PSDemoVM
+Remove-AzResourceMoverMoveResource -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS" -Name "psdemorm-vnet"
 ```
-**Ожидаемый результат**
+**Выходные данные после выполнения командлета**
 
-![Вывод текста после удаления ресурса из коллекции перемещения](./media/remove-move-resources/remove-resource.png)
+![Вывод текста после удаления ресурса из коллекции перемещения](./media/remove-move-resources/powershell-remove-single-resource.png)
 
-## <a name="remove-a-collection-powershell"></a>Удаление коллекции (PowerShell)
+### <a name="remove-multiple-resources"></a>Удаление нескольких ресурсов
 
-Удалите всю коллекцию перемещения с помощью PowerShell, как показано ниже.
+Удалите несколько ресурсов следующим образом:
 
-1. Выполните приведенные выше инструкции, чтобы удалить ресурсы из коллекции с помощью PowerShell.
-2. Выполните:
+1. Проверить зависимости:
+
+    ````azurepowershell-interactive
+    $resp = Invoke-AzResourceMoverBulkRemove -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('psdemorm-vnet') -ValidateOnly
+    ```
+
+    **Output after running cmdlet**
+
+    ![Output text after removing multiple resources from a move collection](./media/remove-move-resources/remove-multiple-validate-dependencies.png)
+
+2. Retrieve the dependent resources that need to be removed (along with our example virtual network psdemorm-vnet):
+
+    ````azurepowershell-interactive
+    $resp.AdditionalInfo[0].InfoMoveResource
+    ```
+
+    **Output after running cmdlet**
+
+    ![Output text after removing multiple resources from a move collection](./media/remove-move-resources/remove-multiple-get-dependencies.png)
+
+
+3. Remove all resources, along with the virtual network:
+
+    
+    ````azurepowershell-interactive
+    Invoke-AzResourceMoverBulkRemove -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('PSDemoVM','psdemovm111', 'PSDemoRM-vnet','PSDemoVM-nsg')
+    ```
+
+    **Output after running cmdlet**
+
+    ![Output text after removing all resources from a move collection](./media/remove-move-resources/remove-multiple-all.png)
+
+
+## Remove a collection (PowerShell)
+
+Remove an entire move collection from the subscription, as follows:
+
+1. Follow the instructions above to remove resources in the collection using PowerShell.
+2. Run:
 
     ```azurepowershell-interactive
-    # Remove a resource using the resource ID
-    Remove-AzResourceMoverMoveCollection -SubscriptionId <subscription-id> -ResourceGroupName RegionMoveRG-centralus-westcentralus -MoveCollectionName MoveCollection-centralus-westcentralus
+    Remove-AzResourceMoverMoveCollection -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"
     ```
-    **Ожидаемый результат**
+
+    **Output after running cmdlet**
     
-    ![Вывод текста после удаления коллекции перемещения](./media/remove-move-resources/remove-collection.png)
+    ![Output text after removing a move collection](./media/remove-move-resources/remove-collection.png)
 
-## <a name="vm-resource-state-after-removing"></a>Состояние ресурса виртуальной машины после удаления
+## VM resource state after removing
 
-Что происходит при удалении ресурса виртуальной машины из коллекции перемещения, зависит от состояния ресурса, как показано в таблице.
+What happens when you remove a VM resource from a move collection depends on the resource state, as summarized in the table.
 
-###  <a name="remove-vm-state"></a>Удалить состояние виртуальной машины
-**Состояние ресурса** | **Виртуальная машина** | **Сеть**
+###  Remove VM state
+**Resource state** | **VM** | **Networking**
 --- | --- | --- 
-**Добавлен для перемещения коллекции** | Удалить из коллекции Move. | Удалить из коллекции Move. 
-**Разрешаемые или подготовленные зависимости** | Удалить из коллекции перемещения  | Удалить из коллекции Move. 
-**Идет подготовка**<br/> (или любое другое состояние) | Операция удаления завершается с ошибкой.  | Операция удаления завершается с ошибкой.
-**Сбой подготовки** | Удалите из коллекции перемещения.<br/>Удалите все, что создано в целевом регионе, включая диски реплики. <br/><br/> Ресурсы инфраструктуры, созданные во время перемещения, необходимо удалить вручную. | Удалите из коллекции перемещения.  
-**Ожидание инициации перемещения** | Удалить из коллекции Move.<br/><br/> Удалите все, что создано в целевом регионе, включая виртуальные машины, диски реплики и т. д.  <br/><br/> Ресурсы инфраструктуры, созданные во время перемещения, необходимо удалить вручную. | Удалить из коллекции Move.
-**Не удалось инициировать перемещение** | Удалить из коллекции Move.<br/><br/> Удалите все, что создано в целевом регионе, включая виртуальные машины, диски реплики и т. д.  <br/><br/> Ресурсы инфраструктуры, созданные во время перемещения, необходимо удалить вручную. | Удалить из коллекции Move.
-**Ожидание фиксации** | Рекомендуется отменить перемещение, чтобы сначала удалить целевые ресурсы.<br/><br/> Ресурс возвращается в состояние **Ожидание запуска перемещения** , и вы можете продолжить отсюда. | Рекомендуется отменить перемещение, чтобы сначала удалить целевые ресурсы.<br/><br/> Ресурс возвращается в состояние **Ожидание запуска перемещения** , и вы можете продолжить отсюда. 
-**Сбой фиксации** | Рекомендуется удалить, чтобы целевые ресурсы были удалены первыми.<br/><br/> Ресурс возвращается в состояние **Ожидание запуска перемещения** , и вы можете продолжить отсюда. | Рекомендуется отменить перемещение, чтобы сначала удалить целевые ресурсы.<br/><br/> Ресурс возвращается в состояние **Ожидание запуска перемещения** , и вы можете продолжить отсюда.
-**Отмена завершена** | Ресурс возвращается в состояние **Ожидание запуска перемещения** .<br/><br/> Он удаляется из коллекции перемещения, а также все, что создается в целевой виртуальной машине, дисках реплики, хранилище и т. д.  <br/><br/> Ресурсы инфраструктуры, созданные во время перемещения, необходимо удалить вручную. <br/><br/> Ресурсы инфраструктуры, созданные во время перемещения, необходимо удалить вручную. |  Ресурс возвращается в состояние **Ожидание запуска перемещения** .<br/><br/> Он удаляется из коллекции перемещения.
-**Сбой при отмене** | Рекомендуется отказаться от перемещений, чтобы сначала удалить целевые ресурсы.<br/><br/> После этого ресурс возвращается в состояние **Ожидание запуска перемещения** , и вы можете продолжить отсюда. | Рекомендуется отказаться от перемещений, чтобы сначала удалить целевые ресурсы.<br/><br/> После этого ресурс возвращается в состояние **Ожидание запуска перемещения** , и вы можете продолжить отсюда.
-**Ожидается удаление источника** | Удаляется из коллекции перемещения.<br/><br/> Он не удаляет все, что было создано в целевом регионе.  | Удаляется из коллекции перемещения.<br/><br/> Он не удаляет все, что было создано в целевом регионе.
-**Не удалось удалить источник** | Удаляется из коллекции перемещения.<br/><br/> Он не удаляет все, что было создано в целевом регионе. | Удаляется из коллекции перемещения.<br/><br/> Он не удаляет все, что было создано в целевом регионе.
+**Added to move collection** | Delete from move collection. | Delete from move collection. 
+**Dependencies resolved/prepare pending** | Delete from move collection  | Delete from move collection. 
+**Prepare in progress**<br/> (or any other state in progress) | Delete operation fails with error.  | Delete operation fails with error.
+**Prepare failed** | Delete from the move collection.<br/>Delete anything created in the target region, including replica disks. <br/><br/> Infrastructure resources created during the move need to be deleted manually. | Delete from the move collection.  
+**Initiate move pending** | Delete from move collection.<br/><br/> Delete anything created in the target region, including VM, replica disks etc.  <br/><br/> Infrastructure resources created during the move need to be deleted manually. | Delete from move collection.
+**Initiate move failed** | Delete from move collection.<br/><br/> Delete anything created in the target region, including VM, replica disks etc.  <br/><br/> Infrastructure resources created during the move need to be deleted manually. | Delete from move collection.
+**Commit pending** | We recommend that you discard the move so that the target resources are deleted first.<br/><br/> The resource goes back to the **Initiate move pending** state, and you can continue from there. | We recommend that you discard the move so that the target resources are deleted first.<br/><br/> The resource goes back to the **Initiate move pending** state, and you can continue from there. 
+**Commit failed** | We recommend that you discard the  so that the target resources are deleted first.<br/><br/> The resource goes back to the **Initiate move pending** state, and you can continue from there. | We recommend that you discard the move so that the target resources are deleted first.<br/><br/> The resource goes back to the **Initiate move pending** state, and you can continue from there.
+**Discard completed** | The resource goes back to the **Initiate move pending** state.<br/><br/> It's deleted from the move collection, along with anything created at target - VM, replica disks, vault etc.  <br/><br/> Infrastructure resources created during the move need to be deleted manually. <br/><br/> Infrastructure resources created during the move need to be deleted manually. |  The resource goes back to the **Initiate move pending** state.<br/><br/> It's deleted from the move collection.
+**Discard failed** | We recommend that you discard the moves so that the target resources are deleted first.<br/><br/> After that, the resource goes back to the **Initiate move pending** state, and you can continue from there. | We recommend that you discard the moves so that the target resources are deleted first.<br/><br/> After that, the resource goes back to the **Initiate move pending** state, and you can continue from there.
+**Delete source pending** | Deleted from the move collection.<br/><br/> It doesn't delete anything created in the target region.  | Deleted from the move collection.<br/><br/> It doesn't delete anything created in the target region.
+**Delete source failed** | Deleted from the move collection.<br/><br/> It doesn't delete anything created in the target region. | Deleted from the move collection.<br/><br/> It doesn't delete anything created in the target region.
 
-## <a name="sql-resource-state-after-removing"></a>Состояние ресурсов SQL после удаления
+## SQL resource state after removing
 
-Что происходит при удалении ресурса SQL Azure из коллекции перемещения, зависит от состояния ресурса, как показано в таблице.
+What happens when you remove an Azure SQL resource from a move collection depends on the resource state, as summarized in the table.
 
-**Состояние ресурса** | **SQL** 
+**Resource state** | **SQL** 
 --- | --- 
-**Добавлен для перемещения коллекции** | Удалить из коллекции Move. 
-**Разрешаемые или подготовленные зависимости** | Удалить из коллекции перемещения 
-**Идет подготовка**<br/> (или любое другое состояние)  | Операция удаления завершается с ошибкой. 
-**Сбой подготовки** | Удалить из коллекции перемещения<br/><br/>Удалите все, что было создано в целевом регионе. 
-**Ожидание инициации перемещения** |  Удалить из коллекции перемещения<br/><br/>Удалите все, что было создано в целевом регионе. База данных SQL существует на этом этапе и будет удалена. 
-**Не удалось инициировать перемещение** | Удалить из коллекции перемещения<br/><br/>Удалите все, что было создано в целевом регионе. База данных SQL существует на этом этапе и должна быть удалена. 
-**Ожидание фиксации** | Рекомендуется отменить перемещение, чтобы сначала удалить целевые ресурсы.<br/><br/> Ресурс возвращается в состояние **Ожидание запуска перемещения** , и вы можете продолжить отсюда.
-**Сбой фиксации** | Рекомендуется отменить перемещение, чтобы сначала удалить целевые ресурсы.<br/><br/> Ресурс возвращается в состояние **Ожидание запуска перемещения** , и вы можете продолжить отсюда. 
-**Отмена завершена** |  Ресурс возвращается в состояние **Ожидание запуска перемещения** .<br/><br/> Он удаляется из коллекции перемещения, а также все, что создается на целевом объекте, включая базы данных SQL. 
-**Сбой при отмене** | Рекомендуется отказаться от перемещений, чтобы сначала удалить целевые ресурсы.<br/><br/> После этого ресурс возвращается в состояние **Ожидание запуска перемещения** , и вы можете продолжить отсюда. 
-**Ожидается удаление источника** | Удаляется из коллекции перемещения.<br/><br/> Он не удаляет все, что было создано в целевом регионе. 
-**Не удалось удалить источник** | Удаляется из коллекции перемещения.<br/><br/> Он не удаляет все, что было создано в целевом регионе. 
+**Added to move collection** | Delete from move collection. 
+**Dependencies resolved/prepare pending** | Delete from move collection 
+**Prepare in progress**<br/> (or any other state in progress)  | Delete operation fails with error. 
+**Prepare failed** | Delete from move collection<br/><br/>Delete anything created in the target region. 
+**Initiate move pending** |  Delete from move collection<br/><br/>Delete anything created in the target region. The SQL database exists at this point and will be deleted. 
+**Initiate move failed** | Delete from move collection<br/><br/>Delete anything created in the target region. The SQL database exists at this point and must be deleted. 
+**Commit pending** | We recommend that you discard the move so that the target resources are deleted first.<br/><br/> The resource goes back to the **Initiate move pending** state, and you can continue from there.
+**Commit failed** | We recommend that you discard the move so that the target resources are deleted first.<br/><br/> The resource goes back to the **Initiate move pending** state, and you can continue from there. 
+**Discard completed** |  The resource goes back to the **Initiate move pending** state.<br/><br/> It's deleted from the move collection, along with anything created at target, including SQL databases. 
+**Discard failed** | We recommend that you discard the moves so that the target resources are deleted first.<br/><br/> After that, the resource goes back to the **Initiate move pending** state, and you can continue from there. 
+**Delete source pending** | Deleted from the move collection.<br/><br/> It doesn't delete anything created in the target region. 
+**Delete source failed** | Deleted from the move collection.<br/><br/> It doesn't delete anything created in the target region. 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## Next steps
 
-Попробуйте [переместить виртуальную машину](tutorial-move-region-virtual-machines.md) в другой регион с помощью перемещения ресурсов.
+Try [moving a VM](tutorial-move-region-virtual-machines.md) to another region with Resource Mover.

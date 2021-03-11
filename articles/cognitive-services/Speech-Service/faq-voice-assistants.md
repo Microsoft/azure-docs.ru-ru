@@ -10,18 +10,18 @@ ms.subservice: speech-service
 ms.topic: conceptual
 ms.date: 11/05/2019
 ms.author: travisw
-ms.openlocfilehash: 4b0bbb982ed48dc052b1a15514ad36b1d69b62b5
-ms.sourcegitcommit: fc401c220eaa40f6b3c8344db84b801aa9ff7185
+ms.openlocfilehash: 511eb12df511fd037fc0b5bec701c0cc5c29bad2
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98599415"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102617783"
 ---
 # <a name="voice-assistants-frequently-asked-questions"></a>Часто задаваемые вопросы о голосовом помощнике
 
 Если вы не можете найти ответы на вопросы в этом документе, ознакомьтесь с [другими вариантами поддержки](../cognitive-services-support-options.md?context=%2fazure%2fcognitive-services%2fspeech-service%2fcontext%2fcontext%253fcontext%253d%2fazure%2fcognitive-services%2fspeech-service%2fcontext%2fcontext).
 
-## <a name="general"></a>Общие сведения
+## <a name="general"></a>Общие
 
 **Вопрос. что такое голосовым помощником?**
 
@@ -36,7 +36,7 @@ ms.locfileid: "98599415"
 Ответ **.** Лучший способ начать с создания приложения настраиваемых команд (Предварительная версия) или основной ленты Bot.
 
 - [Создание приложения настраиваемых команд (Предварительная версия)](./quickstart-custom-commands-application.md)
-- [Создание базовой платформы Bot-Bot](/azure/bot-service/bot-builder-tutorial-basic-deploy?view=azure-bot-service-4.0)
+- [Создание базовой платформы Bot-Bot](/azure/bot-service/bot-builder-tutorial-basic-deploy)
 - [Подключение программы-робота к каналу прямого перевода строки](/azure/bot-service/bot-service-channel-connect-directlinespeech)
 
 ## <a name="debugging"></a>Отладка
