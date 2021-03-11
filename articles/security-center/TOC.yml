@@ -112,7 +112,7 @@
           href: exempt-resource.md
         - name: Создание пользовательских инициатив и политик безопасности
           href: custom-security-policies.md
-    - name: Защита компьютеров с помощью Defender для серверов
+    - name: Защита компьютеров
       displayName: 'hybrid, arc, Azure Defender for machines'
       items:
         - name: Обзор Azure Defender для серверов

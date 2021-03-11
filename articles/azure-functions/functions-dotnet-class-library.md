@@ -1,17 +1,17 @@
 ---
-title: Разработка функций C# с помощью функций Azure
-description: Узнайте, как использовать C# для разработки и публикации кода, который выполняется в процессе с помощью среды выполнения функций Azure.
+title: Разработка функций библиотеки классов C# с помощью функций Azure
+description: Узнайте, как использовать C# для разработки и публикации кода в виде библиотек классов, выполняемых внутри процесса с помощью среды выполнения функций Azure.
 ms.topic: conceptual
 ms.custom: devx-track-csharp
 ms.date: 07/24/2020
-ms.openlocfilehash: 748b4a2a6af1c0183e28af8da732bc90531bee29
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: c7d14599ec1ebbcb94e0c0f3985a3b857f9353dc
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102428419"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102563886"
 ---
-# <a name="develop-c-functions-using-azure-functions"></a>Разработка функций C# с помощью функций Azure
+# <a name="develop-c-class-library-functions-using-azure-functions"></a>Разработка функций библиотеки классов C# с помощью функций Azure
 
 <!-- When updating this article, make corresponding changes to any duplicate content in functions-reference-csharp.md -->
 

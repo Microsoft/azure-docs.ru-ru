@@ -8,12 +8,12 @@ metadata:
   author: rboucher
   ms.author: robb
   ms.date: 10/08/2019
-  ms.openlocfilehash: 4753e4bb7fca1dadf0266c8fae11313872b29a3b
-  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.openlocfilehash: faa8dbd319896cc57f3b04f7ec48000ec2426f0e
+  ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/03/2021
-  ms.locfileid: "101725719"
+  ms.lasthandoff: 03/08/2021
+  ms.locfileid: "102452719"
 landingContent:
 - title: Сведения об Azure Monitor
   linkLists:
@@ -86,11 +86,11 @@ landingContent:
   - linkListType: reference
     links:
     - text: Метрики, автомасштабирование, параметры диагностики, оповещения
-      url: /powershell/module/az.monitor/?view=azps-2.6.0
+      url: /powershell/module/az.monitor
     - text: Log Analytics
       url: /powershell/module/az.operationalinsights
     - text: Application Insights
-      url: /powershell/module/az.applicationinsights/new-azapplicationinsights?view=azps-2.7.0&viewFallbackFrom=azps-2.5.0
+      url: /powershell/module/az.applicationinsights/new-azapplicationinsights
 - title: Справочник по командам REST API
   linkLists:
   - linkListType: reference

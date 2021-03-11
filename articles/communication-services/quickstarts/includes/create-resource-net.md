@@ -4,18 +4,18 @@ ms.service: azure-communication-services
 ms.topic: include
 ms.date: 9/1/2020
 ms.author: mikben
-ms.openlocfilehash: 9a9f8fdda1bc853057f3eb858e85b938357397cd
-ms.sourcegitcommit: 230d5656b525a2c6a6717525b68a10135c568d67
+ms.openlocfilehash: 778255dc7259bd66a7c7059ede855464c1e39569
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94886130"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102444241"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/dotnet/) бесплатно.
 - Последняя версия [клиентской библиотеки NET Core](https://dotnet.microsoft.com/download/dotnet-core) для вашей операционной системы.
-- Получите последнюю версию [клиентской библиотеки идентификатора .NET](/dotnet/api/azure.identity?view=azure-dotnet).
+- Получите последнюю версию [клиентской библиотеки идентификатора .NET](/dotnet/api/azure.identity).
 - Получите последнюю версию [клиентской библиотеки управления .NET](../../concepts/sdk-options.md).
 
 ## <a name="installing-the-client-library"></a>Установка клиентской библиотеки

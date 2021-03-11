@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 03/24/2020
 author: mlearned
 ms.custom: devx-track-js
-ms.openlocfilehash: de98d9db515e4ed88759efa7f22dddcca06151c8
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: d1bdae976d5e5b7d98311d33bb38b5035f2557ca
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91854687"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102548705"
 ---
 # <a name="deploy-nodejs-apps-powered-by-azure-cosmos-db-with-devops-starter"></a>Развертывание приложений Node.js на платформе Azure Cosmos DB с помощью DevOps Starter
 
@@ -167,4 +167,4 @@ DevOps Starter автоматически создает и настраивае
 > * фиксация изменений в Git и их автоматическое развертывание в Azure;
 > * Очистка ресурсов
 
-Подробную информацию и описание дальнейших шагов см. в статье [Define your multi-stage continuous deployment (CD) pipeline](/azure/devops/pipelines/release/define-multistage-release-process?view=azure-devops&viewFallbackFrom=vsts) (Настройка многоэтапного конвейера для непрерывного развертывания).
+Подробную информацию и описание дальнейших шагов см. в статье [Define your multi-stage continuous deployment (CD) pipeline](/azure/devops/pipelines/release/define-multistage-release-process) (Настройка многоэтапного конвейера для непрерывного развертывания).

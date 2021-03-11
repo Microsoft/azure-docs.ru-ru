@@ -12,12 +12,12 @@ ms.date: 05/19/2020
 ms.author: kenwith
 ms.reviewer: arvindh, luleon, phsignor
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: 24b2b8ee6398ef1306aee59b5d7ca7525284f96b
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 8d8604a1dd54ed819bb9e27c46d61a46466bf3da
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101644553"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102548807"
 ---
 # <a name="configure-group-owner-consent-to-apps-accessing-group-data"></a>Настройка согласия владельца группы на приложения, обращающиеся к данным группы
 
@@ -44,7 +44,7 @@ ms.locfileid: "101644553"
 
 Вы можете использовать модуль предварительной версии Azure AD PowerShell, [AzureADPreview](/powershell/module/azuread/?preserve-view=true&view=azureadps-2.0-preview), чтобы разрешить или запретить владельцам групп предоставлять согласие приложениям, обращающимся к данным организации, для групп, которыми они владеют.
 
-1. Убедитесь, что используете модуль [AzureADPreview](/powershell/module/azuread/?preserve-view=true&view=azureadps-2.0-preview). Этот важно, если вы установили модуль [AzureAD](/powershell/module/azuread/?preserve-view=true&view=azureadps-2.0) и модуль [AzureADPreview](/powershell/module/azuread/?preserve-view=true&view=azureadps-2.0-preview).
+1. Убедитесь, что используете модуль [AzureADPreview](/powershell/module/azuread/?preserve-view=true&view=azureadps-2.0-preview). Этот важно, если вы установили модуль [AzureAD](/powershell/module/azuread/) и модуль [AzureADPreview](/powershell/module/azuread/?preserve-view=true&view=azureadps-2.0-preview).
 
     ```powershell
     Remove-Module AzureAD
@@ -74,7 +74,7 @@ ms.locfileid: "101644553"
 
 1. Изучите значения параметров. Есть два значения параметров, которые определяют, какие пользователи смогут предоставлять приложению доступ к данным своей группы:
 
-    | Параметр       | Тип         | Описание  |
+    | Параметр       | Type         | Описание  |
     | ------------- | ------------ | ------------ |
     | _EnableGroupSpecificConsent_   | Логическое | Флаг, указывающий, разрешено ли владельцам групп предоставлять разрешения для конкретной группы. |
     | _ConstrainGroupSpecificConsentToMembersOfGroupId_ | Guid | Если параметр _EnableGroupSpecificConsent_ имеет значение "true", а для этого значения задан идентификатор объекта группы, члены этой группы будут иметь права на предоставление разрешений, относящихся к их группе. |

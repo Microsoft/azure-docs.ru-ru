@@ -3,12 +3,12 @@ title: Резервное копирование виртуальных маши
 description: Настройте среду решения Azure VMware для резервного копирования виртуальных машин с помощью Azure Backup Server.
 ms.topic: how-to
 ms.date: 02/04/2021
-ms.openlocfilehash: ea2164ba19703660e54879c25b975342d824662c
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: 163065556b7dbc979d68613744ea827c209d9fda
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99585030"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102618922"
 ---
 # <a name="back-up-azure-vmware-solution-vms-with-azure-backup-server"></a>Резервное копирование виртуальных машин решения Azure VMware с помощью Azure Backup Server
 
@@ -73,7 +73,7 @@ ms.locfileid: "99585030"
 
 1. Скопируйте следующие параметры реестра и вставьте их в Блокнот. Затем сохраните файл как TLS. REG без расширения txt.
 
-   ```text
+   ```
    
    Windows Registry Editor Version 5.00
    
@@ -354,7 +354,7 @@ ms.locfileid: "99585030"
 
 1. На экране **Сводка** проверьте параметры и нажмите кнопку **восстановить** , чтобы начать процесс восстановления. Экран **Состояния восстановления** демонстрирует ход операции восстановления.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы построили резервное копирование виртуальных машин решения Azure VMware с Azure Backup Server, вы можете узнать о следующих возможностях: 
 

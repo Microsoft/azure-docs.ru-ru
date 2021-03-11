@@ -6,15 +6,15 @@ author: alkohli
 ms.service: databox
 ms.subservice: pod
 ms.topic: quickstart
-ms.date: 09/03/2019
+ms.date: 03/05/2021
 ms.author: alkohli
 ms.localizationpriority: high
-ms.openlocfilehash: 81dee0c63db711b39ff8fd2123623a16b2b9cb91
-ms.sourcegitcommit: 7dacbf3b9ae0652931762bd5c8192a1a3989e701
+ms.openlocfilehash: 3359152455df2701d897689a1f177bf63051b94b
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92122795"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102440723"
 ---
 # <a name="get-started-with-azure-data-box-to-import-data-into-azure"></a>Начало работы с Azure Data Box для импорта данных в Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "92122795"
 Перед началом работы
 
 - Убедитесь, что тип подписки, которую вы используете для службы Data Box, является одним из следующих:
-    - Соглашение Microsoft Enterprise (EA). См. дополнительные сведения о [подписке EA](https://azure.microsoft.com/pricing/enterprise-agreement/).
+    - Клиентское соглашение Майкрософт (MCA) для новых подписок или Microsoft Enterprise Agreement (EA) для существующих подписок. Узнайте больше об [MCA для новых подписок](https://www.microsoft.com/licensing/how-to-buy/microsoft-customer-agreement) и [подписках с EA](https://azure.microsoft.com/pricing/enterprise-agreement/).
     - Поставщик облачных решений (CSP). Дополнительные сведения см. в статье [Обзор Azure CSP](/azure/cloud-solution-provider/overview/azure-csp-overview).
     - Спонсорское предложение Microsoft Azure. Дополнительные сведения см. в статье о [спонсорском предложении Microsoft Azure](https://azure.microsoft.com/offers/ms-azr-0036p/). 
 

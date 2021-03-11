@@ -3,24 +3,24 @@ title: Настройка доступа к WinRM для виртуальной 
 description: Настройте доступ WinRM для использования с виртуальной машиной Azure, созданной в модели развертывания Resource Manager.
 author: mimckitt
 manager: vashan
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
 ms.workload: infrastructure-services
 ms.topic: how-to
 ms.date: 06/16/2016
 ms.author: mimckitt
-ms.openlocfilehash: fbba14980083287c91fdd3defec78b229808fb15
-ms.sourcegitcommit: 8192034867ee1fd3925c4a48d890f140ca3918ce
+ms.openlocfilehash: ab676e7595a8ccd902eea27612e4c2fd035fae0c
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96621694"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102555726"
 ---
 # <a name="setting-up-winrm-access-for-virtual-machines-in-azure-resource-manager"></a>Настройка доступа WinRM для виртуальных машин в Azure Resource Manager
 
 Ниже приведены шаги, которые необходимо выполнить для настройки виртуальной машины с возможностью подключения WinRM:
 
 1. Создание хранилища ключей
-2. Создание самозаверяющего сертификата.
+2. Создание самозаверяющего сертификата
 3. передать самозаверяющий сертификат в хранилище ключей;
 4. получить URL-адрес для самозаверяющего сертификата в хранилище ключей;
 5. сослаться на URL-адрес самозаверяющего сертификата при создании виртуальной машины.
@@ -74,7 +74,7 @@ Set-AzKeyVaultSecret -VaultName "<vault name>" -Name "<secret name>" -SecretValu
 > [!NOTE]
 > URL-адрес секрета также должен включать в себя версию. Пример URL-адреса выглядит примерно ниже HTTPS: \/ /contosovault.Vault.Azure.NET:443/Secrets/contososecret/01h9db0df2cd4300a20ence585a6s7ve
 
-#### <a name="templates"></a>шаблоны;
+#### <a name="templates"></a>Шаблоны
 Получить ссылку на URL-адрес в шаблоне можно с помощью следующего кода:
 
 ```json

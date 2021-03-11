@@ -8,12 +8,12 @@ ms.author: luisca
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 06/17/2020
-ms.openlocfilehash: ddfca965ea32ca726df39f894ba45f9580225d9d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 3300d68c6356cb7cdd56a9ad79eb0ac011942eb2
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91542467"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547906"
 ---
 #    <a name="entity-recognition-cognitive-skill"></a>Когнитивный навык распознавания сущностей
 
@@ -47,13 +47,13 @@ Microsoft.Skills.Text.EntityRecognitionSkill
 
 | Ввод имени      | Описание                   |
 |---------------|-------------------------------|
-| `languageCode`    | Необязательный параметр. Значение по умолчанию — `"en"`.  |
+| `languageCode`    | Необязательный параметр. По умолчанию — `"en"`.  |
 | `text`          | Текст для анализа.          |
 
 ## <a name="skill-outputs"></a>Выходные данные навыка
 
 > [!NOTE]
-> Для некоторых языков категории сущностей не поддерживаются. `"Person"` `"Location"` `"Organization"` Типы категорий сущностей, и поддерживаются для полного списка языков, описанных выше. При _de_извлечении _en_типов, _es_, и поддерживаются только de, EN, ES, _fr_и _zh-Ханс_ `"Quantity"` `"Datetime"` `"URL"` `"Email"` . Дополнительные сведения см. [в разделе Поддержка языков и регионов для API анализа текста](../cognitive-services/text-analytics/language-support.md).  
+> Для некоторых языков категории сущностей не поддерживаются. `"Person"` `"Location"` `"Organization"` Типы категорий сущностей, и поддерживаются для полного списка языков, описанных выше. При извлечении типов, , и поддерживаются только de, EN, ES, _fr_ и _zh-Ханс_ `"Quantity"` `"Datetime"` `"URL"` `"Email"` . Дополнительные сведения см. [в разделе Поддержка языков и регионов для API анализа текста](../cognitive-services/text-analytics/language-support.md).  
 
 | Имя вывода      | Описание                   |
 |---------------|-------------------------------|
@@ -189,8 +189,8 @@ Microsoft.Skills.Text.EntityRecognitionSkill
 
 Обратите внимание, что смещения, возвращаемые для сущностей в выходных данных этого навыка, возвращаются непосредственно из [API анализа текста](../cognitive-services/text-analytics/overview.md). Это означает, что если вы используете их для индексации в исходной строке, следует использовать класс [StringInfo](/dotnet/api/system.globalization.stringinfo) в .NET для извлечения правильного содержимого.  [Дополнительные сведения можно найти здесь.](../cognitive-services/text-analytics/concepts/text-offsets.md)
 
-## <a name="error-cases"></a>Варианты ошибок
-Если код языка для документа не поддерживается, возвращается ошибка и сущности не извлекаются.
+## <a name="warning-cases"></a>Случаи предупреждений
+Если код языка для документа не поддерживается, возвращается предупреждение, и сущности не извлекаются.
 
 ## <a name="see-also"></a>См. также раздел
 

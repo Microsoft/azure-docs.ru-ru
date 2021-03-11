@@ -152,7 +152,7 @@
           items:
             - name: Перенос данных PostgreSQL в группу серверов с Гипермасштабированием Postgres
               href: migrate-postgresql-data-into-postgresql-hyperscale-server-group.md
-            - name: Восстановление примера базы данных AdventureWorks
+            - name: Импорт примера базы данных AdventureWorks
               href: restore-adventureworks-sample-db-into-postgresql-hyperscale-server-group.md
         - name: Диагностика
           href: troubleshoot-postgresql-hyperscale-server-group.md

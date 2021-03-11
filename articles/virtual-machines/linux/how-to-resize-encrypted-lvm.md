@@ -2,17 +2,17 @@
 title: Как изменить размер дисков, зашифрованных с помощью шифрования дисков Azure
 description: В этой статье приводятся инструкции по изменению размера зашифрованных дисков ADE с помощью управления логическими томами.
 author: jofrance
-ms.service: virtual-machines-linux
-ms.subservice: security
+ms.service: virtual-machines
+ms.subservice: disks
 ms.topic: article
 ms.author: jofrance
 ms.date: 09/21/2020
-ms.openlocfilehash: 732a2ef3c6c33d0b17deaf3b9bdc5d1ac5e5934c
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.openlocfilehash: c3f1d08ac6375dcc854f2c16b6f66901295f88e3
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96498920"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102564566"
 ---
 # <a name="how-to-resize-logical-volume-management-devices-that-use-azure-disk-encryption"></a>Изменение размера устройств управления логическими томами, использующих шифрование дисков Azure
 
@@ -318,7 +318,7 @@ lvdisplay lvname
 
 #### <a name="extend-a-traditional-lvm-volume-by-resizing-an-existing-pv"></a>Расширьте традиционный том LVM, изменив размер существующего PV
 
-Обмен мгновенными сообщениями. в некоторых сценариях ограничения могут потребовать изменения размера существующего диска. Это делается так.
+Обмен мгновенными сообщениями. в некоторых сценариях ограничения могут потребовать изменения размера существующего диска. Вот как это сделать.
 
 1. Найдите зашифрованные диски:
 

@@ -9,12 +9,12 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 9c311826c2b17f8e9f95d1ef31980922154635b9
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: db809807f0494b8510ba7eb71c742a7a7631f97e
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102042323"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102609589"
 ---
 # <a name="update-the-iot-edge-security-daemon-and-runtime"></a>Обновление управляющей программы безопасности и среды выполнения IoT Edge
 
@@ -120,8 +120,9 @@ curl -L <iotedge link> -o iotedge.deb && sudo dpkg -i ./iotedge.deb
 # <a name="windows"></a>[Windows](#tab/windows)
 
 <!-- 1.1 -->
-:::moniker range="iotedge-2018-06"
-При использовании IoT Edge для Linux в Windows IoT Edge выполняется на виртуальной машине Linux, размещенной на устройстве Windows. Эта виртуальная машина предустановлена с IoT Edge и управляется Центр обновления Майкрософт для обновления компонентов. В настоящее время нет доступных обновлений.
+::: moniker range="iotedge-2018-06"
+
+При использовании IoT Edge для Linux в Windows IoT Edge выполняется на виртуальной машине Linux, размещенной на устройстве Windows. Эта виртуальная машина предустановлена с IoT Edge и управляется с помощью Центр обновления Майкрософт для обновления компонентов. Если автоматическое обновление включено, новые обновления будут скачиваться и устанавливаться каждый раз, когда они станут доступны.
 
 При использовании IoT Edge для Windows IoT Edge запускается непосредственно на устройстве Windows. Инструкции по обновлению с помощью сценариев PowerShell см. в статье [установка Azure IOT Edge для Windows и управление ими](how-to-install-iot-edge-windows-on-windows.md).
 :::moniker-end

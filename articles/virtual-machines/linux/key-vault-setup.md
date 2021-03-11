@@ -2,19 +2,19 @@
 title: Настройка Azure Key Vault с помощью интерфейса командной строки
 description: Как настроить Key Vault для виртуальной машины с помощью Azure CLI.
 author: mimckitt
-manager: vashan
 ms.service: virtual-machines
+ms.subservice: security
 ms.workload: infrastructure-services
 ms.topic: how-to
 ms.date: 02/24/2017
 ms.author: mimckitt
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 94a48662d2a81b5475b63df99c3f1a7f492e3561
-ms.sourcegitcommit: 4cb89d880be26a2a4531fedcc59317471fe729cd
+ms.openlocfilehash: 84a88c9c563141d6e6e9ba1584d577addcade8fe
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92678354"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102565229"
 ---
 # <a name="how-to-set-up-key-vault-for-virtual-machines-with-the-azure-cli"></a>Настройка Key Vault для виртуальных машин с помощью интерфейса командной строки Azure
 

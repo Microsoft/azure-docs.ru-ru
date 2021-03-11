@@ -11,12 +11,12 @@ ms.workload: identity
 ms.date: 10/12/2020
 ms.author: kenwith
 ms.reviewer: arvinh,luleon
-ms.openlocfilehash: 0593d2b675da533035a70c66784812543909c9db
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: f656f55b0c74103053f110b8c66645d353db9fbf
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100574192"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102561574"
 ---
 # <a name="understand-how-provisioning-integrates-with-azure-monitor-logs"></a>Сведения о том, как подготовка интегрируется с журналами Azure Monitor
 
@@ -45,7 +45,7 @@ ms.locfileid: "100574192"
 |активитидатетиме |TimeGenerated |TimeGenerated |
 
 
-## <a name="azure-monitor-workbooks"></a>книги Azure Monitor;
+## <a name="azure-monitor-workbooks"></a>Azure Monitor книги
 
 Azure Monitor книги предоставляют гибкий холст для анализа данных. Они также обеспечивают создание визуальных отчетов с широкими возможностями в портал Azure. Дополнительные сведения см. в разделе [Общие сведения о Azure Monitor книгах](../../azure-monitor/visualize/workbooks-overview.md).
 
@@ -115,10 +115,10 @@ Azure Monitor позволяет настроить пользовательск
 
 Мы используем подход на основе открытого кода и сообщества для подготовки к работе запросов и панелей мониторинга приложений. Если вы создали запрос, оповещение или книгу, которые могут оказаться полезными для других пользователей, обязательно опубликуйте ее в [репозитории GitHub азуремониторкоммунити](https://github.com/microsoft/AzureMonitorCommunity). Затем прокрутить сообщение электронной почты со ссылкой. Мы будем просматривать и публиковать его в службе, чтобы другие могли воспользоваться преимуществами. Свяжитесь с нами по адресу provisioningfeedback@microsoft.com.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Log Analytics](../reports-monitoring/howto-analyze-activity-logs-log-analytics.md)
 - [Начало работы с запросами журналов Azure Monitor](../../azure-monitor/logs/get-started-queries.md)
 - [Создание групп действий и управление ими на портале Azure](../../azure-monitor/alerts/action-groups.md)
 - [Установка и использование представлений Log Analytics для Azure Active Directory](../reports-monitoring/howto-install-use-log-analytics-views.md)
-- [API подготовки журналов](/graph/api/resources/provisioningobjectsummary?preserve-view=true&view=graph-rest-beta.md)
+- [API подготовки журналов](/graph/api/resources/provisioningobjectsummary?preserve-view=true&view=graph-rest-beta)

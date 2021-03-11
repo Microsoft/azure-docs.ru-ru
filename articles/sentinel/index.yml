@@ -12,12 +12,12 @@ metadata:
   author: yelevin
   ms.author: yelevin
   ms.date: 06/25/2020
-  ms.openlocfilehash: da184f668a669fcd29639e557a8108214bad0302
-  ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+  ms.openlocfilehash: 8d2271fefa6d7044a216a3566290f34be964ddb2
+  ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/03/2021
-  ms.locfileid: "99491911"
+  ms.lasthandoff: 03/08/2021
+  ms.locfileid: "102449651"
 landingContent:
 - title: Об Azure Sentinel
   linkLists:
@@ -67,6 +67,10 @@ landingContent:
       url: tutorial-monitor-your-data.md
     - text: Изучение инцидентов
       url: tutorial-investigate-cases.md
+  - linkListType: reference
+    links:
+    - text: Часто используемые книги Azure Sentinel
+      url: top-workbooks.md
 - title: Обнаружение угроз
   linkLists:
   - linkListType: tutorial
