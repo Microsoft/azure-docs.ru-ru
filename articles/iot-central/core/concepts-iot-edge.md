@@ -10,12 +10,12 @@ services: iot-central
 ms.custom:
 - device-developer
 - iot-edge
-ms.openlocfilehash: 1a464b9e039f256fae52c32d828b1ec39a20a228
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: e0f3464420c5cb429f780999bf5983b2ab142567
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102123281"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102608637"
 ---
 # <a name="connect-azure-iot-edge-devices-to-an-azure-iot-central-application"></a>Подключение устройств Azure IoT Edge к приложению Azure IoT Central
 
@@ -74,8 +74,6 @@ IoT Edge состоит из трех компонентов:
 Подчиненные устройства могут подключаться к устройству шлюза IoT Edge через несколько пользовательских модулей. На следующей схеме показаны подчиненные устройства, подключающиеся через пользовательский модуль Modbus, пользовательский модуль BLE и модуль *IOT Edge Hub*  :
 
 :::image type="content" source="media/concepts-iot-edge/gateway-two-modules-transparent.png" alt-text="Схема подключения с использованием нескольких пользовательских модулей" border="false":::
-
-<!-- To do: add link to how to configure gateway article? -->
 
 ## <a name="iot-edge-devices-and-iot-central"></a>IoT Edge устройств и IoT Central
 
@@ -286,7 +284,7 @@ IoT Central моделирует IoT Edge устройство следующи�
 
 Если в качестве устройства шлюза выбрано устройство IoT Edge, можно добавить подчиненные отношения к моделям устройств для устройств, которые нужно подключить к устройству шлюза.
 
-<!-- TODO - add link to Edge Gateway how-to -->
+Дополнительные сведения см. в статье [Подключение устройств с помощью IOT Edge прозрачного шлюза](how-to-connect-iot-edge-transparent-gateway.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

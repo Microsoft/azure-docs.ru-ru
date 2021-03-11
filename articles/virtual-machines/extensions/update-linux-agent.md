@@ -1,26 +1,19 @@
 ---
 title: Обновление агента Linux для Azure с сайта GitHub
 description: Сведения об обновлении агента Linux для Azure на виртуальной машине Linux
-services: virtual-machines-linux
-documentationcenter: ''
-author: mimckitt
-manager: gwallace
-editor: ''
-tags: azure-resource-manager,azure-service-management
-ms.assetid: f1f19300-987d-4f29-9393-9aba866f049c
-ms.service: virtual-machines-linux
-ms.subservice: extensions
-ms.workload: infrastructure-services
-ms.tgt_pltfrm: vm-linux
 ms.topic: article
+ms.service: virtual-machines
+ms.subservice: extensions
+author: amjads1
+ms.author: amjads
+ms.collection: linux
 ms.date: 08/02/2017
-ms.author: mimckitt
-ms.openlocfilehash: 9de866faeb706893101020c23bbba353b77148f6
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: a274435d6e0fc32bdf5b2ab04702ed971d7c5175
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94964904"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102558990"
 ---
 # <a name="how-to-update-the-azure-linux-agent-on-a-vm"></a>Как обновить агент Azure Linux на виртуальной машине
 

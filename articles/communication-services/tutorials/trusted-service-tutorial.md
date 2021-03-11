@@ -9,14 +9,17 @@ ms.author: dademath
 ms.date: 07/28/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 1d1c6adc15652a8ddbb05eeeda5f5aa013d73f2e
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 8e5fc27ce90755457d02b7ed9be0bd8d5bf3ace3
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101661340"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102489061"
 ---
 # <a name="build-a-trusted-authentication-service-using-azure-functions"></a>Создание доверенной службы проверки подлинности с помощью Функций Azure
+
+[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
+
 
 [!INCLUDE [Trusted Service JavaScript](./includes/trusted-service-js.md)]
 

@@ -3,16 +3,16 @@ title: Серия NVv4
 description: Спецификации виртуальных машин серии NVv4.
 author: vikancha-MSFT
 ms.service: virtual-machines
-ms.subservice: sizes
+ms.subservice: vm-sizes-gpu
 ms.topic: conceptual
 ms.date: 01/12/2020
 ms.author: vikancha
-ms.openlocfilehash: ba7d2997c4ebb2981c1135255fe6e9cb53fbdcfb
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: f2c8b9efd02253026ff568983e42da87fa3c0f32
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102032472"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102551085"
 ---
 # <a name="nvv4-series"></a>Серия NVv4 
 

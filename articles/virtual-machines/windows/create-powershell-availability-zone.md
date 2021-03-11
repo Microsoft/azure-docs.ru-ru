@@ -2,18 +2,18 @@
 title: Создание виртуальной машины с зоной с помощью Azure PowerShell
 description: Создание виртуальной машины в зоне доступности с Azure PowerShell
 author: cynthn
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
 ms.topic: conceptual
 ms.workload: infrastructure
 ms.date: 03/27/2018
 ms.author: cynthn
 ms.custom: ''
-ms.openlocfilehash: 02897add4f3ca51fa7e172bc200af2c7b9065ed4
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 7167c5806fde883a84878d4947dba9fd8c095f69
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102502643"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102558837"
 ---
 # <a name="create-a-virtual-machine-in-an-availability-zone-using-azure-powershell"></a>Создание виртуальной машины в зоне доступности с помощью Azure PowerShell
 

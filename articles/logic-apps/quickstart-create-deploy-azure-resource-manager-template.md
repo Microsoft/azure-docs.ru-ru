@@ -7,12 +7,12 @@ ms.reviewer: jonfan, logicappspm
 ms.topic: quickstart
 ms.custom: mvc, subject-armqs, devx-track-azurecli
 ms.date: 06/30/2020
-ms.openlocfilehash: 689582d73e29cb60cc2ee5294b568b5db2f73244
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.openlocfilehash: 8cee79efd9be53ddb9d450f643c04f21ae5e7fca
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92739329"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102214003"
 ---
 # <a name="quickstart-create-and-deploy-a-logic-app-workflow-by-using-an-arm-template"></a>Краткое руководство. Создание и развертывание рабочего процесса приложения логики с помощью шаблона ARM
 
@@ -20,7 +20,7 @@ ms.locfileid: "92739329"
 
 [!INCLUDE [About Azure Resource Manager](../../includes/resource-manager-quickstart-introduction.md)]
 
-Если среда соответствует предварительным требованиям и вы знакомы с использованием шаблонов ARM, нажмите кнопку **Развертывание в Azure** . Шаблон откроется на портале Azure.
+Если среда соответствует предварительным требованиям и вы знакомы с использованием шаблонов ARM, нажмите кнопку **Развертывание в Azure**. Шаблон откроется на портале Azure.
 
 [![Развертывание в Azure](../media/template-deployments/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fAzure%2fazure-quickstart-templates%2fmaster%2f101-logic-app-create%2fazuredeploy.json)
 
@@ -49,7 +49,7 @@ ms.locfileid: "92739329"
 | Параметр | Описание |
 |--------|-------------|
 | [Портал Azure](../logic-apps/quickstart-create-deploy-azure-resource-manager-template.md?tabs=azure-portal#deploy-template) | Если среда Azure соответствует предварительным требованиям и вы раньше использовали шаблоны ARM, эти действия помогут вам войти в Azure и открыть шаблон быстрого запуска на портале Azure. Дополнительные сведения см. в статье [Развертывание ресурсов с помощью шаблонов ARM на портале Azure](../azure-resource-manager/templates/deploy-portal.md). |
-| [Azure CLI](../logic-apps/quickstart-create-deploy-azure-resource-manager-template.md?tabs=azure-cli#deploy-template) | Интерфейс командной строки (Azure CLI) — это набор команд для создания ресурсов Azure и управления ими. Для выполнения этих команд вам понадобится Azure CLI 2.6 или более поздней версии. Чтобы проверить используемую версию CLI, выполните `az --version`. Дополнительные сведения см. в следующих статьях: <p><p>- [Что такое Azure CLI](/cli/azure/what-is-azure-cli?view=azure-cli-latest) <br>- [Начало работы с Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) |
+| [Azure CLI](../logic-apps/quickstart-create-deploy-azure-resource-manager-template.md?tabs=azure-cli#deploy-template) | Интерфейс командной строки (Azure CLI) — это набор команд для создания ресурсов Azure и управления ими. Для выполнения этих команд вам понадобится Azure CLI 2.6 или более поздней версии. Чтобы проверить используемую версию CLI, выполните `az --version`. Дополнительные сведения см. в следующих статьях: <p><p>- [Что такое Azure CLI](/cli/azure/what-is-azure-cli) <br>- [Начало работы с Azure CLI](/cli/azure/get-started-with-azure-cli) |
 | [Azure PowerShell](../logic-apps/quickstart-create-deploy-azure-resource-manager-template.md?tabs=azure-powershell#deploy-template) | В Azure PowerShell доступен набор командлетов, которые используют модель Azure Resource Manager для управления ресурсами Azure. Дополнительные сведения см. в следующих статьях: <p><p>- [Обзор Azure PowerShell](/powershell/azure/azurerm/overview) <br>- [Знакомство с модулем Az для Azure PowerShell](/powershell/azure/new-azureps-module-az) <br>- [Начало работы с Azure PowerShell](/powershell/azure/get-started-azureps) |
 | [REST API управления ресурсами Azure](../logic-apps/quickstart-create-deploy-azure-resource-manager-template.md?tabs=rest-api#deploy-template) | В Azure доступны REST API (API передачи репрезентативного состояния). Это конечные точки службы, которые поддерживают набор операций HTTP (методов) и предоставляют доступ на создание, получение, обновление или удаление ресурсов сервера. Подробные сведения см. в статье [Справочник по REST API Azure](/rest/api/azure/). |
 |||
@@ -78,7 +78,7 @@ ms.locfileid: "92739329"
 
    ![Предоставление сведений для шаблона быстрого запуска](./media/quickstart-create-deploy-azure-resource-manager-template/create-logic-app-template-portal.png)
 
-1. Когда все будет готово, выберите **Просмотр и создание** .
+1. Когда все будет готово, выберите **Просмотр и создание**.
 
 1. Выполните действия, описанные в разделе [Обзор развернутых ресурсов](#review-deployed-resources).
 
@@ -234,7 +234,7 @@ Read-Host -Prompt "Press [ENTER] to continue ..."
 
 1. После открытия конструктора приложений логики изучите приложение логики, созданное с помощью шаблона быстрого запуска.
 
-1. Чтобы проверить приложение логики, на панели инструментов конструктора щелкните **Запустить** .
+1. Чтобы проверить приложение логики, на панели инструментов конструктора щелкните **Запустить**.
 
 ### <a name="cli"></a>[CLI](#tab/azure-cli)
 
@@ -245,7 +245,7 @@ az logic workflow show --name $logicAppName &&
 echo "Press [ENTER] to continue ..."
 ```
 
-Подробные сведения см. в разделе [Azure CLI: az logic workflow show](/cli/azure/ext/logic/logic/workflow?view=azure-cli-latest#ext-logic-az-logic-workflow-show).
+Подробные сведения см. в разделе [Azure CLI: az logic workflow show](/cli/azure/ext/logic/logic/workflow#ext-logic-az-logic-workflow-show).
 
 ### <a name="powershell"></a>[PowerShell](#tab/azure-powershell)
 
@@ -288,7 +288,7 @@ GET https://management.azure.com/subscriptions/xxxxXXXXxxxxXXXXX/resourceGroups/
 
 1. На портале Azure найдите и выберите группу ресурсов, которую необходимо удалить (в нашем примере — `Check-Azure-Status-RG`).
 
-1. При необходимости в меню группы ресурсов выберите **Обзор** . На странице обзора выберите **Удалить группу ресурсов** .
+1. При необходимости в меню группы ресурсов выберите **Обзор**. На странице обзора выберите **Удалить группу ресурсов**.
 
 1. Для подтверждения введите имя группы ресурсов.
 
@@ -303,7 +303,7 @@ az group delete --name $resourceGroupName &&
 echo "Press [ENTER] to continue ..."
 ```
 
-Подробные сведения см. в разделе [Azure CLI: az group delete](/cli/azure/group?view=azure-cli-latest#az-group-delete).
+Подробные сведения см. в разделе [Azure CLI: az group delete](/cli/azure/group#az-group-delete).
 
 ### <a name="powershell"></a>[PowerShell](#tab/azure-powershell)
 

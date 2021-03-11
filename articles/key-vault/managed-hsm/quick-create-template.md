@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.custom: mvc, devx-track-azurecli
 ms.date: 09/15/2020
 ms.author: mbaldwin
-ms.openlocfilehash: d47935f76347b2d5272b386942a85643a732e643
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.openlocfilehash: d9fb9e0221ad6a5749899c89bbd9dc5631e7a91c
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831758"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102213272"
 ---
 # <a name="quickstart-create-an-key-vault-managed-hsm-using-an-azure-resource-manager-template"></a>Краткое руководство. Создание управляемого устройства HSM в Key Vault с помощью шаблона Azure Resource Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "94831758"
 Чтобы выполнить действия, описанные в этой статье, вам потребуется следующее:
 
 - подписка на Microsoft Azure. Если у вас ее нет, зарегистрируйтесь, чтобы воспользоваться [бесплатной пробной версией](https://azure.microsoft.com/pricing/free-trial).
-- Azure CLI 2.12.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Сведения об установке или обновлении Azure CLI см. в [этой статье]( /cli/azure/install-azure-cli).
+- Azure CLI 2.12.0 или более поздней версии. Чтобы узнать версию, выполните команду `az --version`. Сведения об установке или обновлении Azure CLI см. в [этой статье]( /cli/azure/install-azure-cli).
 
 
 [!INCLUDE [cloud-shell-try-it.md](../../../includes/cloud-shell-try-it.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "94831758"
 az login
 ```
 
-Дополнительные сведения о вариантах входа с помощью Azure CLI см. в [этой статье](/cli/azure/authenticate-azure-cli?view=azure-cli-latest&preserve-view=true).
+Дополнительные сведения о вариантах входа с помощью Azure CLI см. в [этой статье](/cli/azure/authenticate-azure-cli).
 
 ## <a name="create-a-manage-hsm"></a>Создание управляемого устройства HSM
 
@@ -55,13 +55,13 @@ az login
 
 Другие примеры шаблонов хранилища Azure Key Vault можно найти [здесь](https://azure.microsoft.com/resources/templates/?resourceType=Microsoft.Keyvault).
 
-Для шаблона требуется идентификатор объекта, связанный с вашей учетной записью. Чтобы найти его, используйте команду Azure CLI [az ad user show](/cli/azure/ad/user?view=azure-cli-latest&preserve-view=true#az_ad_user_show) для передачи адреса электронной почты в параметр `--id`. Вы можете ограничить выходные данные с помощью параметра `--query`, оставив только идентификатор объекта.
+Для шаблона требуется идентификатор объекта, связанный с вашей учетной записью. Чтобы найти его, используйте команду Azure CLI [az ad user show](/cli/azure/ad/user#az_ad_user_show) для передачи адреса электронной почты в параметр `--id`. Вы можете ограничить выходные данные с помощью параметра `--query`, оставив только идентификатор объекта.
 
 ```azurecli-interactive
 az ad user show --id <your-email-address> --query "objectId"
 ```
 
-Вам также может потребоваться идентификатор клиента. Чтобы найти его, используйте команду Azure CLI [az ad user show](/cli/azure/account?view=azure-cli-latest&preserve-view=true#az_account_show). Вы можете ограничить выходные данные с помощью параметра `--query`, оставив только идентификатор клиента.
+Вам также может потребоваться идентификатор клиента. Чтобы найти его, используйте команду Azure CLI [az ad user show](/cli/azure/account#az_account_show). Вы можете ограничить выходные данные с помощью параметра `--query`, оставив только идентификатор клиента.
 
  ```azurecli-interactive
  az account show --query "tenantId"

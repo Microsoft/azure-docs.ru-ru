@@ -10,12 +10,12 @@ metadata:
   author: philmea
   ms.author: philmea
   ms.date: 09/04/2019
-  ms.openlocfilehash: e7f3d47e17b090d04db6a52260c3a4c70db91fba
-  ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+  ms.openlocfilehash: 1dfbaea2086dd038a55bfb84b350d526ec49466b
+  ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/05/2021
-  ms.locfileid: "102199107"
+  ms.lasthandoff: 03/07/2021
+  ms.locfileid: "102425572"
 highlightedContent:
   items:
   - title: Что такое Azure IoT?
@@ -184,10 +184,10 @@ tools:
     url: https://github.com/Azure/azure-iot-sdk-python
   - title: Справочник по пакету SDK Интернета вещей Azure для Node.js
     imageSrc: https://docs.microsoft.com/media/logos/logo_nodejs.svg
-    url: /javascript/api/overview/azure/iot-hub?view=azure-node-latest
+    url: /javascript/api/overview/azure/iot-hub
   - title: Справочник по пакету SDK Интернета вещей Azure для Java
     imageSrc: https://docs.microsoft.com/media/logos/logo_java.svg
-    url: /java/api/com.microsoft.azure.sdk.iot.service?view=azure-java-stable
+    url: /java/api/com.microsoft.azure.sdk.iot.service
   - title: Справочник по пакету SDK Интернета вещей Azure для .NET
     imageSrc: https://docs.microsoft.com/media/logos/logo_NET.svg
-    url: /dotnet/api/overview/azure/iot?view=azure-dotnet
+    url: /dotnet/api/overview/azure/iot

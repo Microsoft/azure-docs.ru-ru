@@ -3,16 +3,16 @@ title: Серия NP-Series — виртуальные машины Azure
 description: Спецификации виртуальных машин серии NP.
 author: vikancha-MSFT
 ms.service: virtual-machines
-ms.subservice: hpc
+ms.subservice: vm-sizes-gpu
 ms.topic: conceptual
 ms.date: 02/09/2021
 ms.author: vikancha
-ms.openlocfilehash: 4fe6df5a9eabc6e5088618039fdea450ee8314ce
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 09adb19623ea866091e1b949e78263661eddbb52
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693855"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102551153"
 ---
 # <a name="np-series-preview"></a>Серии NP-Series (Предварительная версия) 
 Виртуальные машины серии NP работают на базе [Ксилинкс U250 ](https://www.xilinx.com/products/boards-and-kits/alveo/u250.html) FPGAs для ускорения рабочих нагрузок, включая определение машинного обучения, кодирование видео и анализ базы данных & Analytics. Виртуальные машины серии NP также работают на базе процессоров Intel Xeon 8171M (Skylake) со всеми основными тактами скорости Turbo 3,2 ГГц.

@@ -366,7 +366,7 @@
           href: monitor-azure-backup-with-backup-explorer.md
         - name: Использование портала Azure
           href: backup-azure-monitoring-built-in-monitor.md
-        - name: Использование Azure Monitor
+        - name: Использование журналов Azure Monitor
           href: backup-azure-monitoring-use-azuremonitor.md
     - name: Отчеты
       items:
@@ -374,10 +374,14 @@
           items:
             - name: Настройка отчетов службы Azure Backup
               href: configure-reports.md
+            - name: Отправка отчетов Azure Backup по электронной почте
+              href: backup-reports-email.md
         - name: Настройка диагностических событий для хранилищ Служб восстановления
           items:
             - name: Использование параметров диагностики для хранилищ Службы восстановления
               href: backup-azure-diagnostic-events.md
+            - name: Использование системных функций
+              href: backup-reports-system-functions.md
             - name: 'Модель данных Log Analytics для диагностических событий, связанных с ресурсами'
               href: backup-azure-reports-data-model.md
             - name: Модель данных Log Analytics для Azure Backup (режим Диагностики Azure)

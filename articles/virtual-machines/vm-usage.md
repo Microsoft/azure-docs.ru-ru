@@ -5,17 +5,17 @@ services: virtual-machines
 documentationcenter: ''
 author: mimckitt
 ms.author: mimckitt
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
 ms.topic: how-to
 ms.tgt_pltfrm: vm
 ms.workload: infrastructure-services
 ms.date: 07/28/2020
-ms.openlocfilehash: b845d547224fb173d2a4b156575778783e0281fa
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.openlocfilehash: ba973bd5609dacf05eca842025d4e828d8a9f841
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96488572"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102550953"
 ---
 # <a name="understanding-azure-virtual-machine-usage"></a>Основные сведения об использовании виртуальных машин Azure
 Анализируя сведения об использовании Azure, можно получить важные аналитические данные, которые помогут оптимизировать управление затратами и их распределение в организации. В этом документе предоставлены подробные сведения об использовании вычислительных ресурсов Azure. Дополнительные сведения об использовании Azure см. в статье об [анализе счета](../cost-management-billing/understand/review-individual-bill.md).
@@ -36,7 +36,7 @@ ms.locfileid: "96488572"
 | Расположение ресурса  | Определяет центр обработки данных, где выполняется ресурс.| `JA East`|
 | Потребленная служба | Используемая служба платформы Azure.| `Microsoft.Compute`|
 | Группа ресурсов | Группа ресурсов, в которой выполняется развернутый ресурс. Дополнительные сведения см. в [обзоре Azure Resource Manager](../azure-resource-manager/management/overview.md).|`MyRG`|
-| Идентификатор экземпляра | Идентификатор ресурса. Этот идентификатор содержит имя, заданное для ресурса при его создании. Для виртуальных машин идентификатор экземпляра будет содержать SubscriptionId, ResourceGroupName и VMName (или имя масштабируемого набора для его использования).| `/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/ resourceGroups/MyRG/providers/Microsoft.Compute/virtualMachines/MyVM1`<br><br>или<br><br>`/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/ resourceGroups/MyRG/providers/Microsoft.Compute/virtualMachineScaleSets/MyVMSS1`|
+| Идентификатор экземпляра | Идентификатор ресурса. Этот идентификатор содержит имя, заданное для ресурса при его создании. Для виртуальных машин идентификатор экземпляра будет содержать SubscriptionId, ResourceGroupName и VMName (или имя масштабируемого набора для его использования).| `/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/ resourceGroups/MyRG/providers/Microsoft.Compute/virtualMachines/MyVM1`<br><br>или диспетчер конфигурации служб<br><br>`/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/ resourceGroups/MyRG/providers/Microsoft.Compute/virtualMachineScaleSets/MyVMSS1`|
 | Теги| Тег, присваиваемый ресурсу. Используйте теги, чтобы группировать записи для выставления счетов. Сведения о том, как пометить виртуальные машины с помощью [интерфейса командной строки](./tag-cli.md) или [PowerShell](./tag-portal.md) , доступны только для Диспетчер ресурсов виртуальных машин.| `{"myDepartment":"RD","myUser":"myName"}`|
 | Дополнительные сведения | Метаданные определенных служб. Для виртуальных машин в поле дополнительной информации добавляются следующие сведения. <br><br> Тип образа. Определенный выполняемый образ. Полный список поддерживаемых строк представлен ниже в разделе типов образов.<br><br> Тип службы. Размер развернутой среды.<br><br> VMName. Имя виртуальной машины. Это поле доступно только для виртуальных машин с масштабируемым набором. Имя виртуальной машины в масштабируемом наборе можно найти в строке идентификатора экземпляра выше.<br><br> UsageType. Указывает представляемый тип использования.<br><br> ComputeHR — это использование часа вычислений для базовой виртуальной машины, например Standard_D1_v2.<br><br> ComputeHR_SW — это плата за программное обеспечение категории "Премиум" (если на виртуальной машине используется программное обеспечение категории "Премиум", например Microsoft R Server). | Виртуальные машины<br>`{"ImageType":"Canonical","ServiceType":"Standard_DS1_v2","VMName":"", "UsageType":"ComputeHR"}`<br><br>Масштабируемые наборы виртуальных машин<br> `{"ImageType":"Canonical","ServiceType":"Standard_DS1_v2","VMName":"myVM1", "UsageType":"ComputeHR"}`<br><br>Программное обеспечение Premium<br> `{"ImageType":"","ServiceType":"Standard_DS1_v2","VMName":"", "UsageType":"ComputeHR_SW"}` |
 

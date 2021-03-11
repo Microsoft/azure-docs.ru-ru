@@ -14,12 +14,12 @@ ms.topic: conceptual
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.reviewer: anilmur
-ms.openlocfilehash: f6e9c0a3d9100bc447314f5874107363c6bf5d8a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: f0cf89a755090010bb80507c52f90baa2a4e804a
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89289449"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102617630"
 ---
 # <a name="standard-encoder-formats-and-codecs"></a>Стандартные форматы и кодеки кодировщика
 
@@ -98,9 +98,9 @@ ms.locfileid: "89289449"
 
 | Формат файла | Видеокодек | Аудиокодек |
 | --- | --- | --- |
-| MP4 <br/><br/>(включая контейнеры MP4 с несколькими скоростями) |H.264 (профили High, Main и Baselin) |AAC-LC, HE-AAC v1, HE-AAC v2 |
+| MP4 <br/><br/>(включая контейнеры MP4 с несколькими скоростями) |H. 264 (высокий, основной и базовый профили), HEVC (H. 265) 8-bit |AAC-LC, HE-AAC v1, HE-AAC v2 |
 | MPEG2-TS |H.264 (профили High, Main и Baselin) |AAC-LC, HE-AAC v1, HE-AAC v2 |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Создание преобразования с помощью настраиваемой предустановки](customize-encoder-presets-how-to.md)

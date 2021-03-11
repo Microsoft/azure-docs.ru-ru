@@ -1230,6 +1230,8 @@
               href: virtual-machines/linux/rhel-high-availability-stonith-tutorial.md
             - name: настройке прослушивателя группы доступности для SQL Server на виртуальных машинах RHEL в Azure
               href: virtual-machines/linux/rhel-high-availability-listener-tutorial.md
+            - name: "Настройка группы доступности Always\_On с помощью DH2i DxEnterprise"
+              href: virtual-machines/linux/dh2i-high-availability-tutorial.md
         - name: Ресурсы
           items:
             - name: ВОПРОСЫ И ОТВЕТЫ

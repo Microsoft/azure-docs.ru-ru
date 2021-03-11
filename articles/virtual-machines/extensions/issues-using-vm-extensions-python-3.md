@@ -1,26 +1,27 @@
 ---
 title: Проблемы с использованием расширений виртуальной машины в системах на виртуальных машинах Linux с поддержкой Python 3
 description: Сведения об использовании расширений виртуальных машин в системах Linux с поддержкой Python 3
-services: virtual-machines-windows
+services: virtual-machines
 documentationcenter: ''
 author: v-miegge
 ms.author: jparrel
 manager: dcscontentpm
 editor: ''
 tags: top-support-issue,azure-resource-manager
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
 ms.subservice: extensions
+ms.collection: windows
 ms.topic: article
 ms.tgt_pltfrm: vm-windows
 ms.workload: infrastructure-services
 ms.date: 08/25/2020
 ms.assetid: 3cd520fd-eaf7-4ef9-b4d3-4827057e5028
-ms.openlocfilehash: c5593257fa17944eebce6346a1eb9e88e7af2c06
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: d38b41bc47c01b01fcbb1b05238396dca6d8eb4e
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94965958"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102558650"
 ---
 # <a name="issues-using-vm-extensions-in-python-3-enabled-linux-azure-virtual-machines-systems"></a>Проблемы с использованием расширений виртуальной машины в системах на виртуальных машинах Linux с поддержкой Python 3
 
@@ -42,7 +43,7 @@ ms.locfileid: "94965958"
 
 Обновления на месте, например обновление с **ubuntu 18,04 LTS** до **Ubuntu 20,04 LTS**, должны сохранять `/usr/bin/python` символьную ссылку и остаться без изменений.
 
-## <a name="resolution"></a>Разрешение
+## <a name="resolution"></a>Решение
 
 Рассмотрите эти общие рекомендации перед развертыванием расширений в сценариях, которые описаны ранее в сводке.
 
@@ -91,6 +92,6 @@ ms.locfileid: "94965958"
        },
      ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения см. в [других базовых изменениях базовой системы, начиная с 18,04 LTS-Python 3 по умолчанию](https://wiki.ubuntu.com/FocalFossa/ReleaseNotes#Python3_by_default) .

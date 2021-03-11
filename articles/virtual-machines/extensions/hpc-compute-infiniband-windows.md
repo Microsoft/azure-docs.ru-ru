@@ -1,24 +1,25 @@
 ---
 title: Расширение драйвера InfiniBand — виртуальные машины Azure под управлением Windows
 description: Расширение Microsoft Azure для установки драйверов InfiniBand на виртуальных машинах вычислений серии H и N под управлением Windows.
-services: virtual-machines-windows
+services: virtual-machines
 documentationcenter: ''
 author: vermagit
 editor: ''
 ms.assetid: ''
-ms.service: virtual-machines-windows
-ms.subservice: extensions
+ms.service: virtual-machines
+ms.subservice: hpc
+ms.collection: windows
 ms.topic: article
 ms.tgt_pltfrm: vm-windows
 ms.workload: infrastructure-services
 ms.date: 02/01/2021
 ms.author: amverma
-ms.openlocfilehash: 767d6da7701261836b367ccad121bf3569b43b72
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.openlocfilehash: 81720c18ce858cd5667413a9d39afdadc95acb23
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99260169"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102559704"
 ---
 # <a name="infiniband-driver-extension-for-windows"></a>Расширение драйвера InfiniBand для Windows
 
@@ -32,10 +33,10 @@ ms.locfileid: "99260169"
 
 Это расширение поддерживает указанные ниже дистрибутивы, в зависимости от поддержки драйвера в конкретной версии ОС. Обратите внимание на соответствующую сетевую карту InfiniBand для размера виртуальных машин серии H и N, представляющих интерес.
 
-| Распределение | Драйверы сетевого адаптера InfiniBand |
+| Distribution | Драйверы сетевого адаптера InfiniBand |
 |---|---|
 | быть под управлением ОС Windows 10; | CX5, CX6 |
-| Windows Server 2019 | CX5, CX6 |
+| Windows Server 2019 | CX5, CX6 |
 | Windows Server 2016 | CX3-Pro, CX5, CX6 |
 | Windows Server 2012 R2 | CX3-Pro, CX5, CX6 |
 | Windows Server 2012 | CX3-Pro, CX5, CX6 |

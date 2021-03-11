@@ -10,12 +10,12 @@ ms.subservice: certificates
 ms.topic: overview
 ms.date: 09/04/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 66f077028b9f9f7a7644a318d4447eeaaab19e98
-ms.sourcegitcommit: 03c0a713f602e671b278f5a6101c54c75d87658d
+ms.openlocfilehash: b410dc89b286ef830f0d5b6a9c33fe77d380f5d1
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94919936"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102507217"
 ---
 # <a name="about-azure-key-vault-certificates"></a>Сведения о сертификатах Azure Key Vault
 
@@ -91,7 +91,7 @@ ms.locfileid: "94919936"
 
 При создании сертификата Key Vault с нуля необходимо предоставить политику для Key Vault. Политика указывает, как создать эту или следующую версию сертификата Key Vault. После создания политики при последующих операциях создания не требуется создавать следующие версии сертификатов. Есть только один экземпляр политики для всех версий сертификата Key Vault.  
 
-В целом политика сертификата содержит приведенные ниже элементы (их определения можно найти [здесь](/powershell/module/az.keyvault/set-azkeyvaultcertificatepolicy?view=azps-4.4.0)).  
+В целом политика сертификата содержит приведенные ниже элементы (их определения можно найти [здесь](/powershell/module/az.keyvault/set-azkeyvaultcertificatepolicy)).  
 
 -   Свойства сертификата X509 Содержит имя субъекта, альтернативные имена субъекта и другие свойства, используемые для создания запроса на сертификат X509.  
 -   Свойства ключей. Это поля типа ключа, длины ключа, доступности для экспорта и повторного использования ключа. Эти поля инструктируют хранилище ключей о том, как создать ключ. 

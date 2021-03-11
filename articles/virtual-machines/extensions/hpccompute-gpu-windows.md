@@ -1,25 +1,26 @@
 ---
 title: Расширение драйвера GPU NVIDIA — виртуальные машины Azure под управлением Windows
 description: Расширение Microsoft Azure для установки драйверов GPU NVIDIA на вычислительных виртуальных машинах серии N под управлением Windows.
-services: virtual-machines-windows
+services: virtual-machines
 documentationcenter: ''
 author: vermagit
 manager: gwallace
 editor: ''
 ms.assetid: ''
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
 ms.subservice: extensions
+ms.collection: windows
 ms.topic: article
 ms.tgt_pltfrm: vm-windows
 ms.workload: infrastructure-services
 ms.date: 01/09/2019
 ms.author: akjosh
-ms.openlocfilehash: 82ed1d57d72a4479005d8bfd2234c124a97096ee
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: 7cd2c5e54ccb81294a93c0ecebaa174df8d14011
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94965992"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102559670"
 ---
 # <a name="nvidia-gpu-driver-extension-for-windows"></a>Расширение драйвера GPU NVIDIA для Windows
 
@@ -38,9 +39,9 @@ ms.locfileid: "94965992"
 
 | Distribution | Версия |
 |---|---|
-| Windows 10 | Ядро |
-| Windows Server 2016 | Ядро |
-| Windows Server 2012 R2 | Ядро |
+| быть под управлением ОС Windows 10; | Основные сведения |
+| Windows Server 2016 | Основные сведения |
+| Windows Server 2012 R2 | Основные сведения |
 
 ### <a name="internet-connectivity"></a>Подключение к Интернету
 

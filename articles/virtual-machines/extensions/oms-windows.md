@@ -1,26 +1,19 @@
 ---
 title: Расширение виртуальной машины Log Analytics для Windows
 description: Развертывание агента Log Analytics на виртуальной машине Windows с помощью расширения виртуальной машины.
-services: virtual-machines-windows
-documentationcenter: ''
-author: axayjo
-manager: gwallace
-editor: ''
-tags: azure-resource-manager
-ms.assetid: feae6176-2373-4034-b5d9-a32c6b4e1f10
-ms.service: virtual-machines-windows
-ms.subservice: extensions
 ms.topic: article
-ms.tgt_pltfrm: vm-windows
-ms.workload: infrastructure-services
+ms.service: virtual-machines
+ms.subservice: extensions
+author: amjads1
+ms.author: amjads
+ms.collection: windows
 ms.date: 06/26/2020
-ms.author: akjosh
-ms.openlocfilehash: 1b394a6daf7ba680d193a13dd4cb25dbebc576e4
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 7757bd765bcb02782b6199f71c4a6e460b7b8143
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100580076"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102559024"
 ---
 # <a name="log-analytics-virtual-machine-extension-for-windows"></a>Расширение виртуальной машины Log Analytics для Windows
 
@@ -45,9 +38,9 @@ ms.locfileid: "100580076"
 | 10.20.18011 | 1.0.18011 | Июль 2019 г. | <ul><li> Исправления незначительных ошибок и усовершенствования стабилизации </li><li> Увеличено Максекспрессиондепс до 10000 </li></ul> |
 | 10.20.18001 | 1.0.18001 | Июнь 2019 г. | <ul><li> Исправления незначительных ошибок и усовершенствования стабилизации </li><li> Добавлена возможность отключения учетных данных по умолчанию при подключении прокси-сервера (поддержка WINHTTP_AUTOLOGON_SECURITY_LEVEL_HIGH). </li></ul>|
 | 10.19.13515 | 1.0.13515 | Март 2019 г. | <ul><li>Незначительные исправления стабилизации </li></ul> |
-| 10.19.10006 | Н/Д | Dec 2018 | <ul><li> Незначительные исправления стабилизации </li></ul> | 
-| 8.0.11136 | Н/Д | Сентябрь 2018 г. |  <ul><li> Добавлена поддержка обнаружения изменения идентификатора ресурса при перемещении виртуальной машины. </li><li> Добавлена поддержка для идентификатора ресурса отчетов при использовании установки без расширения. </li></ul>| 
-| 8.0.11103 | Н/Д |  Апрель 2018 г. | |
+| 10.19.10006 | Недоступно | Dec 2018 | <ul><li> Незначительные исправления стабилизации </li></ul> | 
+| 8.0.11136 | Недоступно | Сентябрь 2018 г. |  <ul><li> Добавлена поддержка обнаружения изменения идентификатора ресурса при перемещении виртуальной машины. </li><li> Добавлена поддержка для идентификатора ресурса отчетов при использовании установки без расширения. </li></ul>| 
+| 8.0.11103 | Недоступно |  Апрель 2018 г. | |
 | 8.0.11081 | 1.0.11081 | 2017 ноября | | 
 | 8.0.11072 | 1.0.11072 | Сентябрь 2017 | |
 | 8.0.11049 | 1.0.11049 | Фев 2017 | |
