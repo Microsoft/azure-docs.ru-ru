@@ -6,20 +6,17 @@ ms.author: memildin
 manager: rkarlin
 ms.service: security-center
 ms.topic: how-to
-ms.date: 02/25/2021
-ms.openlocfilehash: b3ddbdf04dc736b6f78a04dc6bb2bc484e67f70f
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.date: 03/11/2021
+ms.openlocfilehash: 0a24546579df020dcb7c7a9b01ee3d181226d2df
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102107949"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102617494"
 ---
 # <a name="grant-and-request-tenant-wide-visibility"></a>Предоставление и запрос видимости на уровне клиента
 
 Пользователь с ролью Azure Active Directory (AD) **глобального администратора** может иметь права на уровне клиента, но не имеет разрешений Azure на просмотр сведений о всей Организации в центре безопасности Azure. Требуется повышение прав, так как назначения ролей Azure AD не предоставляют доступ к ресурсам Azure. 
-
-> [!TIP]
-> Дополнительные сведения о повышении разрешений для роли глобального администратора см. в статье повышение уровня [доступа для управления всеми подписками Azure и группами управления](../role-based-access-control/elevate-access-global-admin.md).
 
 ## <a name="grant-tenant-wide-permissions-to-yourself"></a>Предоставьте себе разрешения для всего клиента
 
@@ -45,6 +42,14 @@ ms.locfileid: "102107949"
 1. Выйдите из портал Azure и снова войдите в систему.
 
 1. После получения повышенных прав доступа откройте или обновите центр безопасности Azure, чтобы проверить, можете ли вы отслеживать все подписки в своем клиенте Azure AD. 
+
+Приведенный выше простой процесс автоматически выполняет ряд операций:
+
+1. Разрешения пользователя временно повышены.
+1. С помощью новых разрешений пользователь назначается требуемой роли RBAC Azure в корневой группе управления.
+1. Разрешения с повышенными правами удаляются.
+
+Дополнительные сведения о процессе повышения прав Azure AD см. [в статье повышение уровня доступа для управления всеми подписками Azure и группами управления](../role-based-access-control/elevate-access-global-admin.md).
 
 
 ## <a name="request-tenant-wide-permissions-when-yours-are-insufficient"></a>Запрашивать разрешения на уровне клиента, если у вас недостаточно

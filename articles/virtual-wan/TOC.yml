@@ -13,6 +13,9 @@
         - name: Маршрутизация "любой к любому"
           displayName: Resource Manager Any-to-any routing
           href: quickstart-any-to-any-template.md
+        - name: Маршруты к виртуальным сетям с общими службами
+          displayName: Resource Manager route to shared services VNets
+          href: quickstart-route-shared-services-vnet-template.md
 - name: Учебники
   expanded: true
   items:
@@ -36,7 +39,7 @@
           href: virtual-wan-locations-partners.md
         - name: Рекомендации по автоматизации для партнеров
           href: virtual-wan-configure-automation-providers.md
-    - name: Architecture
+    - name: Архитектура
       items:
         - name: Переход на Виртуальную глобальную сеть
           href: migrate-from-hub-spoke-topology.md

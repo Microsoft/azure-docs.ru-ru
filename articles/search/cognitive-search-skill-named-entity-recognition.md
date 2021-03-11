@@ -8,12 +8,12 @@ ms.author: luisca
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: 8dc18af933a4570112beb025c1fb9163abafffff
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: e598f16c6b441cf986c7ac82d67c037f75be8982
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88935948"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547447"
 ---
 #    <a name="named-entity-recognition-cognitive-skill"></a>Когнитивный навык распознавания именованных сущностей
 
@@ -150,8 +150,8 @@ Microsoft.Skills.Text.NamedEntityRecognitionSkill
 ```
 
 
-## <a name="error-cases"></a>Варианты ошибок
-Если код языка для документа не поддерживается, возвращается ошибка и сущности не извлекаются.
+## <a name="warning-cases"></a>Случаи предупреждений
+Если код языка для документа не поддерживается, возвращается предупреждение, и сущности не извлекаются.
 
 ## <a name="see-also"></a>См. также раздел
 

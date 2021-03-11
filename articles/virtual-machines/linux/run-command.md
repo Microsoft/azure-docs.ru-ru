@@ -3,17 +3,18 @@ title: Выполнение скриптов оболочки на виртуа�
 description: В этом разделе описывается выполнение скриптов на виртуальной машине Azure Linux с помощью функции "Выполнение команд".
 services: automation
 ms.service: virtual-machines
+ms.collection: linux
 author: bobbytreed
 ms.author: robreed
 ms.date: 04/26/2019
 ms.topic: how-to
 manager: carmonm
-ms.openlocfilehash: dae77dfb72fb6b11721500686991f2b199606b99
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 73dd15a5eed3e27d9b72bc0357e35901c04ba7a2
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98737869"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102552938"
 ---
 # <a name="run-shell-scripts-in-your-linux-vm-by-using-run-command"></a>Выполнение скриптов оболочки в виртуальной машине Linux с помощью функции выполнения команд
 

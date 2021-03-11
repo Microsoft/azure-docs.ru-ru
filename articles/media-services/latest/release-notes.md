@@ -11,12 +11,12 @@ ms.workload: na
 ms.topic: article
 ms.date: 10/21/2020
 ms.author: inhenkel
-ms.openlocfilehash: f14328567fdc9840b0a3d07aa23fe2496fd537ca
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 98310f65767efc6081451d9931c4ea9772df5f3b
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102213102"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102609402"
 ---
 # <a name="azure-media-services-v3-release-notes"></a>Заметки о выпуске Служб мультимедиа Azure версии 3
 
@@ -37,6 +37,77 @@ ms.locfileid: "102213102"
 > Вы можете использовать [портал Azure](https://portal.azure.com/) для управления [динамическими событиями](live-events-outputs-concept.md)v3, просмотреть v3 [Assets](assets-concept.md) and Jobs, получить сведения о доступе к API-интерфейсам, шифровать содержимое. Для всех других задач управления (например, для управления преобразованиями и заданиями) используйте [REST API](/rest/api/media/accountfilters), [CLI](/cli/azure/ams)или один из поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks).
 >
 > Дополнительные сведения см. [в разделе ограничения портал Azure для служб мультимедиа v3](frequently-asked-questions.md#what-are-the-azure-portal-limitations-for-media-services-v3).
+
+
+## <a name="february-2021"></a>Февраль 2021 года
+
+### <a name="hevc-encoding-support-in-standard-encoder"></a>Поддержка кодирования HEVC в стандартном кодировщике
+
+Стандартный кодировщик теперь поддерживает 8-разрядную поддержку кодирования HEVC (H. 265). Содержимое HEVC может доставляться и упаковываться через динамический упаковщик с использованием формата "hev1".  
+
+Новая настраиваемая кодировка .NET с примером HEVC доступна в [репозитории мультимедиа-служб-v3-DotNet Git Hub](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/EncodingWithMESCustomPreset_HEVC).
+Помимо настраиваемого кодирования, теперь доступны следующие новые встроенные предварительные настройки кодирования HEVC:
+
+- H265ContentAwareEncoding
+- H265AdaptiveStreaming
+- H265SingleBitrate720P
+- H265SingleBitrate1080p
+- H265SingleBitrate4K
+
+
+Клиенты, ранее использующие HEVC в кодировщике Premium в API v2, должны выполнить миграцию, чтобы использовать новую поддержку кодирования HEVC в стандартном кодировщике.
+
+### <a name="azure-media-services-v2-api-and-sdks-deprecation-announcement"></a>Объявление об устаревшей версии API служб мультимедиа Azure v2 и пакетов SDK
+
+#### <a name="update-your-azure-media-services-rest-api-and-sdks-to-v3-by-29-february-2024"></a>Обновление REST API Служб мультимедиа Azure и пакетов SDK до версии v3 до 29 февраля 2024
+
+Поскольку версия 3 REST API Служб мультимедиа Azure и клиентские пакеты SDK для .NET и Java предлагают больше возможностей, чем версия 2, мы отменяем версию 2 REST API Служб мультимедиа Azure и клиентских пакетов SDK для .NET и Java. Мы рекомендуем сделать этот ключ более ранним, чтобы получить более широкие преимущества версии 3 REST API Служб мультимедиа Azure и клиентских пакетов SDK для .NET и Java. Версия 3 предоставляет: 
+ 
+- Круглосуточная поддержка интерактивных событий
+- API-интерфейсы RESTFUL, клиентские пакеты SDK для .NET Core, Node.js, Python, Java, Go и Ruby.
+- Управляемые клиентами ключи, интеграция доверенного хранилища, поддержка частной ссылки и [многое другое](https://review.docs.microsoft.com/en-us/azure/media-services/latest/migrate-v-2-v-3-migration-benefits)
+
+#### <a name="action-required"></a>Требуется действие:
+
+Чтобы минимизировать сбои рабочих нагрузок, ознакомьтесь с [руководством по миграции](https://go.microsoft.com/fwlink/?linkid=2149150&clcid=0x409) , чтобы перенести код из API версии 2 и пакеты SDK на версию 3 для API и пакета SDK до 29 февраля 2024.
+**После 29 февраля 2024** службы мультимедиа Azure больше не будут принимать трафик на REST API версии 2, API управления учетными записями ARM версии 2015-10-01 или из пакетов SDK для клиента .NET версии 2. Сюда входят все сторонние пакеты SDK для клиентов с открытым исходным кодом, которые могут вызывать API версии 2.  
+
+См. официальное [объявление об обновлениях Azure](https://azure.microsoft.com/updates/update-your-azure-media-services-rest-api-and-sdks-to-v3-by-29-february-2024/).
+
+### <a name="standard-encoder-support-for-v2-api-features"></a>Поддержка стандартных кодировщиков для функций API v2
+
+Помимо новой добавленной поддержки кодирования HEVC (H. 265), в версии 2020-05-01 API кодирования теперь доступны следующие функции. 
+
+- Теперь поддерживается поддержка нескольких входных файлов с помощью новой поддержки **жобинпутклип** . 
+    - Пример доступен для .NET, демонстрирующий [двустороннюю совместную работу двух ресурсов](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/EncodingWithMESCustomStitchTwoAssets).
+- Выбор звуковой дорожки позволяет клиентам выбирать и сопоставлять входящие звуковые дорожки и перенаправлять их в выходные данные для кодирования.
+    - Дополнительные сведения о **аудиотраккдескриптор** и отслеживании выбора см. в [REST API OpenAPI](https://github.com/Azure/azure-rest-api-specs/blob/8d15dc681b081cca983e4d67fbf6441841d94ce4/specification/mediaservices/resource-manager/Microsoft.Media/stable/2020-05-01/Encoding.json#L385) .
+- Отслеживать выбор для кодирования — позволяет клиентам выбирать дорожки из исходного файла граничным маршрутизатором или в динамическом архиве с несколькими дорожками с скоростью. Чрезвычайно полезно для создания MP4 со множественной из архивных файлов событий Live.
+    - См. [видеотраккдескриптор](https://github.com/Azure/azure-rest-api-specs/blob/8d15dc681b081cca983e4d67fbf6441841d94ce4/specification/mediaservices/resource-manager/Microsoft.Media/stable/2020-05-01/Encoding.json#L1562)
+- Возможности исправления (размытия), добавленные в Фацедетектор
+    - См. раздел Режимы [исправить](https://github.com/Azure/azure-rest-api-specs/blob/8d15dc681b081cca983e4d67fbf6441841d94ce4/specification/mediaservices/resource-manager/Microsoft.Media/stable/2020-05-01/Encoding.json#L634) и [комбинированные](https://github.com/Azure/azure-rest-api-specs/blob/8d15dc681b081cca983e4d67fbf6441841d94ce4/specification/mediaservices/resource-manager/Microsoft.Media/stable/2020-05-01/Encoding.json#L649) настройки фацедетектор.
+
+### <a name="new-client-sdk-releases-for-2020-05-01-version-of-the-azure-media-services-api"></a>Новые выпуски клиентских пакетов SDK для версии 2020-05-01 API служб мультимедиа Azure
+
+Новые версии клиентских пакетов SDK для всех доступных языков теперь доступны в описанных выше функциях.
+Обновите последние версии клиентских пакетов SDK в базах кода с помощью диспетчера пакетов.
+
+- [Пакет SDK для .NET 3.0.4](https://www.nuget.org/packages/Microsoft.Azure.Management.Media/)
+- [Node.js typescript версии 8.1.0](https://www.npmjs.com/package/@azure/arm-mediaservices)
+- [Python Azure-руководства-Media 3.1.0](https://pypi.org/project/azure-mgmt-media/)
+- [Пакет SDK для Java 1.0.0-Beta. 2](https://search.maven.org/artifact/com.azure.resourcemanager/azure-resourcemanager-mediaservices/1.0.0-beta.2/jar)
+
+### <a name="updated-typescript-nodejs-samples-using-isomorphic-sdk-for-javascript"></a>Обновленные примеры Node.js typescript с использованием пакета SDK для сходны для JavaScript
+
+Примеры Node.js были обновлены для использования новейшего пакета SDK для сходны. Примеры теперь демонстрируют использование typescript. Кроме того, для Node.js/Типескрипт. был добавлен новый пример динамической потоковой передачи.
+
+Ознакомьтесь с последними примерами в репозитории " **[Media-Services-v3-node-](https://github.com/Azure-Samples/media-services-v3-node-tutorials)** Tutorial" центра Git.
+
+### <a name="new-live-stand-by-mode-to-support-faster-startup-from-warm-state"></a>Новый режим "в режиме реального времени" для поддержки быстрого запуска из теплого состояния
+
+Активные события теперь поддерживают режим выставления счетов с более низкими затратами для "автономного". Это позволяет клиентам предварительно распределять Интерактивные события по более низкой цене для создания "горячего пула". Затем клиенты могут использовать активные события, чтобы перейти в состояние выполнения быстрее, чем при создании.  Это сокращает время для значительного запуска канала и позволяет быстро выделить компьютеры, работающие в более низком ценовом режиме, с помощью быстрого выделения пула.
+Последние сведения о ценах см. [здесь](https://azure.microsoft.com/pricing/details/media-services).
+Дополнительные сведения о состоянии ожидания и других состояниях событий в реальном времени см. в статье о [состояниях событий в реальном времени и выставлении счетов.](https://docs.microsoft.com/azure/media-services/latest/live-event-states-billing)
 
 ## <a name="december-2020"></a>Декабрь 2020 г.
 

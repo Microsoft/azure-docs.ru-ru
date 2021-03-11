@@ -3,16 +3,16 @@ title: Развертывание в IoT Edge для Linux в Windows — Azure
 description: В этой статье содержатся рекомендации по развертыванию в IoT Edge для Linux на устройстве Windows.
 ms.topic: how-to
 ms.date: 02/18/2021
-ms.openlocfilehash: b635070d6a4834da2c6d82cc768684b6cde9cd71
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 9ec28c62ca804137ede3cd60d1980e55fbaa2807
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102042187"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102618140"
 ---
 # <a name="deploy-to-an-iot-edge-for-linux-on-windows-eflow-device"></a>Развертывание на устройстве IoT Edge для Linux на Windows (ЕФЛОВ)
 
-В этой статье вы узнаете, как развернуть Live Video Analytics на пограничном устройстве с [IOT Edge для Linux в Windows (ефлов)](https://docs.microsoft.com/azure/iot-edge/iot-edge-for-linux-on-windows?view=iotedge-2018-06). После завершения действий, описанных в этом документе, вы сможете запустить [граф мультимедиа](media-graph-concept.md) , который обнаружит движение в видео и выдаст такие события в центр Интернета вещей в облаке. Затем можно переключить граф мультимедиа для расширенных сценариев и перенести возможности интерактивной аналитики видео на устройство IoT Edge под управлением Windows.
+В этой статье вы узнаете, как развернуть Live Video Analytics на пограничном устройстве с [IOT Edge для Linux в Windows (ефлов)](https://docs.microsoft.com/azure/iot-edge/iot-edge-for-linux-on-windows). После завершения действий, описанных в этом документе, вы сможете запустить [граф мультимедиа](media-graph-concept.md) , который обнаружит движение в видео и выдаст такие события в центр Интернета вещей в облаке. Затем можно переключить граф мультимедиа для расширенных сценариев и перенести возможности интерактивной аналитики видео на устройство IoT Edge под управлением Windows.
 
 ## <a name="prerequisites"></a>Предварительные требования 
 

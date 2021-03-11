@@ -82,7 +82,7 @@
     - name: Модуль Az.CloudService
       href: 'https://www.powershellgallery.com/packages/Az.CloudService/0.1.0'
     - name: Командлеты PowerShell
-      href: /powershell/module/az.cloudservice/?view=azps-5.4.0#cloudservice
+      href: /powershell/module/az.cloudservice/#cloudservice
     - name: Справочник по шаблонам ARM
       href: /azure/templates/microsoft.compute/cloudservices
     - name: REST

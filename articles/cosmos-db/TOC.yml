@@ -921,7 +921,7 @@
         - name: REST (плоскость управления)
           href: /rest/api/cosmos-db-resource-provider/2020-04-01/sqlresources
         - name: PowerShell
-          href: /powershell/module/az.cosmosdb/?view=azps-5.5.0#cosmos-db&preserve-view=true
+          href: /powershell/module/az.cosmosdb/#cosmos-db&preserve-view=true
         - name: Шаблон Resource Manager
           href: /azure/templates/microsoft.documentdb/allversions
           displayName: ARM
@@ -1039,7 +1039,7 @@
         - name: Поставщик ресурсов REST
           href: /rest/api/cosmos-db-resource-provider/2020-04-01/cassandraresources
         - name: PowerShell
-          href: /powershell/module/az.cosmosdb/?view=azps-5.5.0#cosmos-db&preserve-view=true
+          href: /powershell/module/az.cosmosdb/#cosmos-db&preserve-view=true
         - name: Шаблон Resource Manager
           href: /azure/templates/microsoft.documentdb/allversions
 - name: API MongoDB
@@ -1170,7 +1170,7 @@
         - name: Поставщик ресурсов REST
           href: /rest/api/cosmos-db-resource-provider/2020-04-01/mongodbresources
         - name: PowerShell
-          href: /powershell/module/az.cosmosdb/?view=azps-5.5.0#cosmos-db&preserve-view=true
+          href: /powershell/module/az.cosmosdb/#cosmos-db&preserve-view=true
         - name: Шаблон Resource Manager
           href: /azure/templates/microsoft.documentdb/allversions
 - name: API Gremlin
@@ -1248,7 +1248,7 @@
         - name: Заголовки откликов
           href: gremlin-headers.md
         - name: PowerShell
-          href: /powershell/module/az.cosmosdb/?view=azps-5.5.0#cosmos-db&preserve-view=true
+          href: /powershell/module/az.cosmosdb/#cosmos-db&preserve-view=true
         - name: Поставщик ресурсов REST
           href: /rest/api/cosmos-db-resource-provider/2020-04-01/gremlinresources
         - name: Шаблон Resource Manager
@@ -1334,7 +1334,7 @@
         - name: Python
           href: table-sdk-python.md
         - name: PowerShell
-          href: /powershell/module/az.cosmosdb/?view=azps-5.5.0#cosmos-db&preserve-view=true
+          href: /powershell/module/az.cosmosdb/#cosmos-db&preserve-view=true
         - name: REST API хранилища таблиц
           href: /rest/api/storageservices/table-service-rest-api
 - name: Практические руководства

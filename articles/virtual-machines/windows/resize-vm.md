@@ -2,18 +2,18 @@
 title: Изменение размера виртуальной машины Windows в Azure
 description: Измените размер ВИРТУАЛЬНОЙ машины, используемой для виртуальной машины Azure.
 author: cynthn
-ms.service: virtual-machines-windows
-ms.subservice: sizes
+ms.service: virtual-machines
+ms.collection: windows
 ms.workload: infrastructure
 ms.topic: how-to
 ms.date: 01/13/2020
 ms.author: cynthn
-ms.openlocfilehash: 4860422fefb5a95fe41912b4898f02867f7b3aeb
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: f7f41c0fb2bf949dd47491761fde8025a2d35155
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "87832252"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560656"
 ---
 # <a name="resize-a-windows-vm"></a>Изменение размера виртуальной машины Windows
 
@@ -21,7 +21,7 @@ ms.locfileid: "87832252"
 
 После того как вы создали виртуальную машину, ее можно масштабировать, изменяя размер. В некоторых случаях сначала необходимо освободить виртуальную машину. Это может случиться, если новый размер недоступен в кластере оборудования, в котором она сейчас размещена.
 
-Если виртуальная машина использует хранилище класса Premium, выберите версию размера **s**, чтобы получить поддержку этого хранилища. Например, выберите Standard_E4**s**_v3 вместо Standard_E4_v3.
+Если виртуальная машина использует хранилище класса Premium, выберите версию размера **s**, чтобы получить поддержку этого хранилища. Например, выберите Standard_E4 **s** _v3 вместо Standard_E4_v3.
 
 ## <a name="use-the-portal"></a>Использование портала
 
@@ -117,6 +117,6 @@ $virtualMachines | Update-AzVM
 $virtualMachines | Start-AzVM
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Для повышения масштабируемости запустите несколько экземпляров виртуальных машин и выполните горизонтальное масштабирование. Дополнительные сведения см. [в статье Автоматическое масштабирование компьютеров Windows в масштабируемом наборе виртуальных машин](../../virtual-machine-scale-sets/tutorial-autoscale-powershell.md).

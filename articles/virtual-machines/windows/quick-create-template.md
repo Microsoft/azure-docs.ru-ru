@@ -2,18 +2,19 @@
 title: Краткое руководство. Развертывание шаблона Resource Manager для создания виртуальной машины
 description: Из этого краткого руководства вы узнаете, как с помощью шаблона Resource Manager создать виртуальную машину Windows.
 author: cynthn
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
+ms.collection: windows
 ms.topic: quickstart
 ms.workload: infrastructure
 ms.date: 06/04/2020
 ms.author: cynthn
 ms.custom: subject-armqs
-ms.openlocfilehash: ded59b2f517c5b109dfd00bde2fb73f8351bf821
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: b2856c51ccc31b57ea567c5d0940cd260797f770
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "88649675"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560758"
 ---
 # <a name="quickstart-create-a-windows-virtual-machine-using-an-arm-template"></a>Краткое руководство. Создание виртуальной машины Windows с помощью шаблона ARM
 

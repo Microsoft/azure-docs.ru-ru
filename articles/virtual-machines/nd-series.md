@@ -3,16 +3,16 @@ title: Серия ND — виртуальные машины Azure
 description: Спецификации для виртуальных машин серии ND.
 author: vikancha-MSFT
 ms.service: virtual-machines
-ms.subservice: hpc
+ms.subservice: vm-sizes-gpu
 ms.topic: conceptual
 ms.date: 02/03/2020
 ms.author: jushiman
-ms.openlocfilehash: c800dd47c92ca4d7d30f5726dfc2ee0fabb93083
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 750d99655098628ef0d72ae3208289f57e625f3d
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101670142"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102562271"
 ---
 # <a name="nd-series"></a>Серия ND
 

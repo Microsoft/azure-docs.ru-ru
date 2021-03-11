@@ -32,7 +32,7 @@
       href: device-update-agent-overview.md
     - name: Файл конфигурации обновления устройства
       href: device-update-configuration-file.md
-    - name: Манифест обновления устройств
+    - name: Манифест обновления
       href: update-manifest.md
     - name: Безопасность обновления устройства
       href: device-update-security.md
@@ -40,7 +40,9 @@
       href: connected-cache-disconnected-device-update.md
     - name: Настройка подключенного кэша Майкрософт для обновления устройств для центра Интернета вещей
       href: connected-cache-configure.md
-    - name: 'Импорт: схема и другие сведения'
+    - name: Импорт обновлений устройства
+      href: import-concepts.md
+    - name: 'Схема, связанная с импортом'
       href: import-schema.md
 - name: Практические руководства
   items:

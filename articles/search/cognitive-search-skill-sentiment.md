@@ -8,12 +8,12 @@ ms.author: luisca
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 06/17/2020
-ms.openlocfilehash: 895e22d94122539ee68bcac8ee4debce2d824ff0
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 6519cd952bd1265b4daad3b77b29aabd47ea4cc5
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88935285"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547481"
 ---
 # <a name="sentiment-cognitive-skill"></a>Когнитивный навык тональности
 
@@ -36,7 +36,7 @@ Microsoft.Skills.Text.SentimentSkill
 
 Параметры зависят от регистра.
 
-| Имя параметра | Описание |
+| имени параметра | Описание |
 |----------------|----------------------|
 | `defaultLanguageCode` | (Необязательно.) Код языка применяется к документам, в которых не указан язык явным образом. <br/> Ознакомьтесь с [полным списком поддерживаемых языков](../cognitive-services/text-analytics/language-support.md). |
 
@@ -110,11 +110,9 @@ Microsoft.Skills.Text.SentimentSkill
 }
 ```
 
-## <a name="notes"></a>Примечания
-Если не указано, оценка тональности не возвращается для этих записей.
-
-## <a name="error-cases"></a>Варианты ошибок
-Если язык не поддерживается, создается ошибка и оценка не возвращается.
+## <a name="warning-cases"></a>Случаи предупреждений
+Если текст пуст, создается предупреждение, а тональности оценка не возвращается.
+Если язык не поддерживается, создается предупреждение и тональности оценка не возвращается.
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -3,19 +3,19 @@ title: Использование Visual Studio на виртуальной ма
 description: Использование Visual Studio на виртуальной машине Azure.
 author: cathysull
 manager: cathys
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/17/2020
 ms.author: cathys
 keywords: visualstudio
-ms.openlocfilehash: 315987060b96312c666bd5aa928588e27d13173b
-ms.sourcegitcommit: dea56e0dd919ad4250dde03c11d5406530c21c28
+ms.openlocfilehash: a6acf27743f17941e14adc3f6deea903f4f5ca87
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96938109"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102562084"
 ---
 # <a name="visual-studio-images-on-azure"></a>Образы Visual Studio в Azure
 Запуск Visual Studio на предварительно настроенной виртуальной машине Azure — простой и быстрый способ получить "с нуля" готовую к работе среду разработки. Образы системы с различными конфигурациями Visual Studio доступны в [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure).
@@ -31,9 +31,9 @@ ms.locfileid: "96938109"
 | Версия выпуска                                                                                                                                                | Выпуски              | Версия продукта   |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------:|
 | [Visual Studio 2019. Последняя (версия 16.8)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Версия 16.8.0    |
-| Visual Studio 2019: RTW                         | Enterprise | Версия 16.0.20    |
+| Visual Studio 2019: RTW                         | Предприятие | Версия 16.0.20    |
 | Visual Studio 2017: последняя версия (15.9)           | Enterprise, Community | Версия 15.9.29   |
-| Visual Studio 2017: RTW                             | Enterprise, Community | Версия 15.0.28  |
+| Visual Studio 2017: RTW                             | Enterprise, Community | Версия 15.0.28  |
 | Visual Studio 2015: последняя версия (обновление 3)               | Enterprise, Community | Версия 14.0.25431.01 |
 
 > [!NOTE]
@@ -46,7 +46,7 @@ ms.locfileid: "96938109"
 
 * все доступные рабочие нагрузки, включая рекомендуемые дополнительные компоненты для них;
 * пакеты SDK для .NET 4.6.2 и .NET 4.7, пакеты нацеливания и средства для разработчиков;
-* Visual F#;
+* Visual F#
 * расширение GitHub для Visual Studio;
 * инструменты LINQ to SQL.
 

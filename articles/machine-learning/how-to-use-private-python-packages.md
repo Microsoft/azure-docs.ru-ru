@@ -10,12 +10,12 @@ ms.service: machine-learning
 ms.subservice: core
 ms.topic: conceptual
 ms.date: 07/10/2020
-ms.openlocfilehash: b922c25561843d140f1e2b8221f62fad89ea00c8
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 5cc1025528959f8c81aa80703e3fc26d59c5266f
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102520903"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102618106"
 ---
 # <a name="use-private-python-packages-with-azure-machine-learning"></a>Использование частных пакетов Python с Машинное обучение Azure
 
@@ -29,7 +29,7 @@ ms.locfileid: "102520903"
 
 Частные пакеты используются через класс [среды](/python/api/azureml-core/azureml.core.environment.environment) . В среде вы объявляете, какие пакеты Python следует использовать, включая частные. Дополнительные сведения о среде в Машинное обучение Azure см. в разделе [использование сред](how-to-use-environments.md). 
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
  * [Пакет SDK для машинное обучение Azure для Python](/python/api/overview/azure/ml/install)
  * [Рабочая область машинное обучение Azure](how-to-manage-workspace.md)
@@ -52,11 +52,11 @@ myenv.python.conda_dependencies=conda_dep
 
 ## <a name="use-a-repository-of-packages-from-azure-devops-feed"></a>Использование репозитория пакетов из веб-канала Azure DevOps
 
-Если вы активно разрабатываете пакеты Python для приложения машинного обучения, их можно разместить в репозитории Azure DevOps как артефакты и опубликовать в виде веб-канала. Такой подход позволяет интегрировать рабочий процесс DevOps для создания пакетов с помощью рабочая область машинного обучения Azure. Чтобы узнать, как настроить веб-каналы Python с помощью Azure DevOps, прочитайте статью [Начало работы с пакетами Python в Azure Artifacts](/azure/devops/artifacts/quickstarts/python-packages?preserve-view=true&view=azure-devops)
+Если вы активно разрабатываете пакеты Python для приложения машинного обучения, их можно разместить в репозитории Azure DevOps как артефакты и опубликовать в виде веб-канала. Такой подход позволяет интегрировать рабочий процесс DevOps для создания пакетов с помощью рабочая область машинного обучения Azure. Чтобы узнать, как настроить веб-каналы Python с помощью Azure DevOps, прочитайте статью [Начало работы с пакетами Python в Azure Artifacts](/azure/devops/artifacts/quickstarts/python-packages)
 
 Этот подход использует личный маркер доступа для проверки подлинности в репозитории. Такой же подход применим к другим репозиториям с проверкой подлинности на основе маркеров, например закрытых репозиториях GitHub. 
 
- 1. [Создайте личный маркер доступа (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?preserve-view=true&tabs=preview-page&view=azure-devops#create-a-pat) для своего экземпляра Azure DevOps. Задайте область токена для __упаковки > чтения__. 
+ 1. [Создайте личный маркер доступа (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?tabs=preview-page#create-a-pat) для своего экземпляра Azure DevOps. Задайте область токена для __упаковки > чтения__. 
 
  2. Добавьте URL-адрес Azure DevOps и PAT в качестве свойств рабочей области с помощью метода [Workspace.set_connection](/python/api/azureml-core/azureml.core.workspace.workspace#set-connection-name--category--target--authtype--value-) .
 
