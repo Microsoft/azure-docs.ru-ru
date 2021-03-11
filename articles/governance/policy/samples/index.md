@@ -3,12 +3,12 @@ title: Индекс примеров политик
 description: Индекс встроенных определений Политики Azure. Теги категорий, соответствие нормативным требованиям, Key Vault, Kubernetes, гостевая конфигурация и многое другое.
 ms.date: 01/29/2021
 ms.topic: sample
-ms.openlocfilehash: ae016e42af582847b871624844773ed971ef583d
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: 7a6a5c5e7c7cb90399d1ba8c232ab7ee8431d112
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100095602"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102498750"
 ---
 # <a name="azure-policy-samples"></a>Примеры для Политики Azure
 
@@ -39,11 +39,12 @@ ms.locfileid: "100095602"
 
 - [Тесты производительности системы безопасности Azure версии 2](./azure-security-benchmark.md)
 - [Тесты производительности системы безопасности Azure версии 1](./azure-security-benchmarkv1.md)
+- [CIS Microsoft Azure Foundations Benchmark версии 1.3.0](./cis-azure-1-3-0.md)
 - [Тесты для оценки безопасности CIS для платформ Microsoft Azure версии 1.1.0](./cis-azure-1-1-0.md)
 - [CMMC уровня 3](./cmmc-l3.md)
 - [HIPAA HITRUST 9.2](./hipaa-hitrust-9-2.md)
 - [ISO 27001:2013](./iso-27001.md).
-- [Information Security Manual в Новой Зеландии](./new-zealand-ism.md)
+- [ISM Restricted (Новая Зеландия)](./new-zealand-ism.md)
 - [NIST SP 800-53, ред. 4](./nist-sp-800-53-r4.md)
 - [NIST SP 800-171 R2](./nist-sp-800-171-r2.md)
 

@@ -10,12 +10,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 01/25/2019
 ms.author: duau
-ms.openlocfilehash: 0c1273f4a2025658520118ed843d90b3378a129f
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 4cf3709574e2055f40759fd2d7026c93ac9db098
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100577874"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102608025"
 ---
 # <a name="enable-resource-logging-in-azure-traffic-manager"></a>Включение ведения журнала ресурсов в диспетчере трафика Azure
 
@@ -39,14 +39,14 @@ ms.locfileid: "100577874"
 
 2. **Включите ведение журнала ресурсов для профиля диспетчера трафика.**
 
-    Включите ведение журнала ресурсов для профиля диспетчера трафика, используя идентификатор, полученный на предыдущем шаге, с помощью [Set-аздиагностиксеттинг](/powershell/module/az.monitor/set-azdiagnosticsetting?view=latest). Следующая команда позволяет сохранить журналы подробных сведений профиля диспетчера трафика для указанной учетной записи службы хранилища Azure. 
+    Включите ведение журнала ресурсов для профиля диспетчера трафика, используя идентификатор, полученный на предыдущем шаге, с помощью [Set-аздиагностиксеттинг](/powershell/module/az.monitor/set-azdiagnosticsetting). Следующая команда позволяет сохранить журналы подробных сведений профиля диспетчера трафика для указанной учетной записи службы хранилища Azure. 
 
       ```azurepowershell-interactive
     Set-AzDiagnosticSetting -ResourceId <TrafficManagerprofileResourceId> -StorageAccountId <storageAccountId> -Enabled $true
       ``` 
 3. **Проверка параметров диагностики.**
 
-      Проверьте параметры диагностики для профиля диспетчера трафика с помощью командлета [Get-AzDiagnosticSetting](/powershell/module/az.monitor/get-azdiagnosticsetting?view=latest). Следующая команда позволяет просмотреть категории, зарегистрированные для ресурса.
+      Проверьте параметры диагностики для профиля диспетчера трафика с помощью командлета [Get-AzDiagnosticSetting](/powershell/module/az.monitor/get-azdiagnosticsetting). Следующая команда позволяет просмотреть категории, зарегистрированные для ресурса.
 
      ```azurepowershell-interactive
      Get-AzDiagnosticSetting -ResourceId <TrafficManagerprofileResourceId>
@@ -74,6 +74,6 @@ ms.locfileid: "100577874"
 |Состояние|Строка|Состояние работоспособности проверенной конечной точки диспетчера трафика. Состояние может иметь значение **Работает** или **Не работает**.|**Работает**.|
 |||||
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения см. в статье [Мониторинг конечных точек в диспетчере трафика](traffic-manager-monitoring.md).

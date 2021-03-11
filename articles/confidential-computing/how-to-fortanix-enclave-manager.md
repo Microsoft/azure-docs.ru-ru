@@ -4,17 +4,17 @@ description: Узнайте, как использовать Фортаникс 
 services: virtual-machines
 author: JBCook
 ms.service: virtual-machines
-ms.subservice: workloads
+ms.subservice: confidential-computing
 ms.workload: infrastructure
 ms.topic: how-to
 ms.date: 8/12/2020
 ms.author: JenCook
-ms.openlocfilehash: 41e47e29553b3e4d9cd0e0e8f280b3648f224bf9
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.openlocfilehash: 5bc1ff4a288e492613f02a8b095c5ef80436d18e
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99832317"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102558752"
 ---
 # <a name="how-to-run-an-application-with-fortanix-confidential-computing-manager"></a>Как запустить приложение с помощью Фортаникс конфиденциального диспетчера вычислительных систем
 
@@ -33,7 +33,7 @@ ms.locfileid: "99832317"
  Чтобы получить поддержку для Фортаникс, присоединитесь к [сообществу резервного времени фортаникс](https://fortanix.com/community/) и используйте #enclavemanager каналов.
 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 1. Если у вас нет учетной записи Фортаникс конфиденциального диспетчера вычислительных систем, [Зарегистрируйтесь](https://em.fortanix.com/auth/sign-up) до начала.
 1. Частный реестр [DOCKER](https://docs.docker.com/) для отправки преобразованных образов приложений.

@@ -3,16 +3,16 @@ title: Виртуальные машины Azure серии NCv2
 description: Спецификации виртуальных машин серии NCv2.
 author: vikancha-MSFT
 ms.service: virtual-machines
-ms.subservice: hpc
+ms.subservice: vm-sizes-gpu
 ms.topic: conceptual
 ms.date: 02/03/2020
 ms.author: jushiman
-ms.openlocfilehash: 4fec1d16cc9ba8f55dca66648f97113bee0778ed
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 14d352a4b960395753b34ddb527955ef35220867
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101670290"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102562424"
 ---
 # <a name="ncv2-series"></a>Серия NCv2
 

@@ -11,12 +11,12 @@ author: NilsPohlmann
 ms.date: 03/02/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, contperf-fy21q1
-ms.openlocfilehash: 0d4f014db85a40819b178b23caa89b90d08026af
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 188df9564905443b8f975eb743b24885b5d03c32
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102522280"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102618208"
 ---
 # <a name="create-and-run-machine-learning-pipelines-with-azure-machine-learning-sdk"></a>Создание и запуск конвейеров машинного обучения с помощью пакета SDK для Машинное обучение Azure
 
@@ -24,7 +24,7 @@ ms.locfileid: "102522280"
 
 Эта статья не является учебником. Рекомендации по созданию первого конвейера см. в разделе [учебник. создание конвейера машинное обучение Azure для пакетной оценки](tutorial-pipeline-batch-scoring-classification.md) или [Использование автоматизированного ML в конвейере машинное обучение Azure в Python](how-to-use-automlstep-in-pipelines.md). 
 
-Хотя можно использовать другой тип конвейера, называемый [конвейером Azure](/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2fmachine-learning%2fservice%2fcontext%2fml-context&preserve-view=true&tabs=yaml&view=azure-devops) для автоматизации задач ML в CI/CD, этот тип конвейера не хранится в рабочей области. [Сравните эти разные конвейеры](concept-ml-pipelines.md#which-azure-pipeline-technology-should-i-use).
+Хотя можно использовать другой тип конвейера, называемый [конвейером Azure](/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2fmachine-learning%2fservice%2fcontext%2fml-context&tabs=yaml) для автоматизации задач ML в CI/CD, этот тип конвейера не хранится в рабочей области. [Сравните эти разные конвейеры](concept-ml-pipelines.md#which-azure-pipeline-technology-should-i-use).
 
 Создаваемые конвейеры машинного обучения видимы для членов [рабочей области](how-to-manage-workspace.md)машинное обучение Azure. 
 
@@ -32,7 +32,7 @@ ms.locfileid: "102522280"
 
 Если у вас еще нет подписки Azure, создайте бесплатную учетную запись, прежде чем начинать работу. Попробуйте [бесплатную или платную версию Машинного обучения Azure](https://aka.ms/AMLFree).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Создайте [рабочую область Машинного обучения Azure](how-to-manage-workspace.md) для хранения всех ресурсов конвейера.
 

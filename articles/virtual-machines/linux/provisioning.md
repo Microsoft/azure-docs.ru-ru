@@ -2,19 +2,20 @@
 title: Общие сведения о подготовке Linux
 description: Общие сведения о том, как применять свои образы виртуальных машин Linux или создать новые образы для использования в Azure.
 author: danielsollondon
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
 ms.subservice: imaging
+ms.collection: linux
 ms.topic: overview
 ms.workload: infrastructure
 ms.date: 06/22/2020
 ms.author: danis
 ms.reviewer: cynthn
-ms.openlocfilehash: a7d9aa7de8bb75a22acc85c77924765eaa1b6b3b
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: 6dafa400f2ce2421db6775084befc0abeab70a04
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "87080154"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102563224"
 ---
 # <a name="azure-linux-vm-provisioning"></a>Подготовка виртуальных машин Linux в Azure
 При создании виртуальной машины из универсального образа (из общей коллекции образов или управляемого образа) плоскость управления позволит создать виртуальную машину и передать ей параметры. Это называется *подготовкой* виртуальной машины. В процессе подготовки платформа предоставляет виртуальной машине доступ к обязательным параметрам (имя узла, имя пользователя, пароль, ключи SSH, customData) по мере ее загрузки. 

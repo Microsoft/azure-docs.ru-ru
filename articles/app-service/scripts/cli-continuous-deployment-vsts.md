@@ -9,19 +9,19 @@ ms.topic: sample
 ms.date: 12/11/2017
 ms.author: msangapu
 ms.custom: mvc, seodec18, devx-track-azurecli
-ms.openlocfilehash: e1fc3771eaf5e8fa59b297e2052d232150ccfab3
-ms.sourcegitcommit: 273c04022b0145aeab68eb6695b99944ac923465
+ms.openlocfilehash: 3d2dd7691ac601e690e9f477b0450da07233e201
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97006299"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102553465"
 ---
 # <a name="create-an-app-service-app-with-continuous-deployment-using-azure-cli"></a>Создание приложения Службы приложений с непрерывным развертыванием с помощью Azure CLI
 
 С помощью этого примера скрипта создается приложение в Службе приложений со связанными ресурсами, а затем настраивается непрерывное развертывание из репозитория Azure DevOps. Для этого примера вам потребуются следующие компоненты:
 
 * репозиторий Azure DevOps с кодом приложения, для которого у вас есть права администратора;
-* [личный маркер доступа (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=vsts) для организации Azure DevOps.
+* [личный маркер доступа (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) для организации Azure DevOps.
 
 [!INCLUDE [quickstarts-free-trial-note](../../../includes/quickstarts-free-trial-note.md)]
 

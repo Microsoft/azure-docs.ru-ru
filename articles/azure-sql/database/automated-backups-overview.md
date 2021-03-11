@@ -10,13 +10,13 @@ ms.topic: conceptual
 author: shkale-msft
 ms.author: shkale
 ms.reviewer: mathoma, stevestein, danil
-ms.date: 11/18/2020
-ms.openlocfilehash: 862d33e523562511796999d82b67d2b4b11efaf3
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/10/2021
+ms.openlocfilehash: 5879c9107a0ab5a2ef150d119e8b5ac8e16ac01d
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101690633"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102609929"
 ---
 # <a name="automated-backups---azure-sql-database--sql-managed-instance"></a>Автоматическое резервное копирование базы данных SQL Azure & SQL Управляемый экземпляр
 
@@ -140,9 +140,12 @@ ms.locfileid: "101690633"
 
 Дополнительные сведения о LTR см. в статье [долгосрочное хранение резервных копий](long-term-retention-overview.md).
 
-## <a name="storage-costs"></a>Затраты на хранение
+## <a name="backup-storage-costs"></a>Затраты на хранение резервных копий
 
 Цена для хранилища резервных копий зависит от модели приобретения (DTU или Виртуальное ядро), выбранного параметра избыточности хранилища резервных копий и в вашем регионе. Плата за хранилище резервных копий насчитывается за ГБ/мес. для получения цен см. страницу [цен на базу данных SQL Azure](https://azure.microsoft.com/pricing/details/sql-database/single/) и страницу [цен на управляемый экземпляр Azure SQL](https://azure.microsoft.com/pricing/details/azure-sql/sql-managed-instance/single/) .
+
+> [!NOTE]
+> В счете Azure будет отображаться только избыточное хранилище резервных копий, а не все использование хранилища резервных копий. Например, в гипотетическом сценарии, если вы подготовили 4 ТБ хранилища данных, вы получите 4 ТБ свободного пространства для хранения резервных копий. Если вы использовали сумму 5,8 ТБ места для хранения резервных копий, в счете Azure будет отображаться только 1,8 ТБ, так как будет выставлена оплата за использование только лишнего хранилища резервных копий.
 
 ### <a name="dtu-model"></a>Модель с DTU
 
@@ -446,7 +449,7 @@ New-AzSqlInstance -Name managedInstance2 -ResourceGroupName ResourceGroup01 -Loc
 Чтобы применить требования местонахождение данных на уровне Организации, эти политики можно назначить подписке. После того как они будут назначены на уровне подписки, пользователи в данной подписке не смогут создать базу данных или управляемый экземпляр с геоизбыточным хранилищем резервных копий с помощью портал Azure или Azure PowerShell. 
 
 > [!IMPORTANT]
-> Политики Azure не применяются при создании базы данных с помощью T-SQL. Чтобы принудительно применить местонахождение данных при создании базы данных с помощью T-SQL, [используйте в качестве входного аргумента "Local" или "Zone" для BACKUP_STORAGE_REDUNDANCY в инструкции CREATE DATABASE](/sql/t-sql/statements/create-database-transact-sql?view=azuresqldb-current#create-database-using-zone-redundancy-for-backups).
+> Политики Azure не применяются при создании базы данных с помощью T-SQL. Чтобы принудительно применить местонахождение данных при создании базы данных с помощью T-SQL, [используйте в качестве входного аргумента "Local" или "Zone" для BACKUP_STORAGE_REDUNDANCY в инструкции CREATE DATABASE](/sql/t-sql/statements/create-database-transact-sql#create-database-using-zone-redundancy-for-backups).
 
 Сведения о назначении политик с помощью [портал Azure](../../governance/policy/assign-policy-portal.md) или [Azure PowerShell](../../governance/policy/assign-policy-powershell.md)
 
@@ -458,4 +461,5 @@ New-AzSqlInstance -Name managedInstance2 -ResourceGroupName ResourceGroup01 -Loc
 - Получите дополнительные сведения о [восстановлении базы данных на момент времени с помощью PowerShell](scripts/restore-database-powershell.md).
 - Сведения о настройке, управлении и восстановлении долгосрочного хранения автоматически создаваемых резервных копий в хранилище BLOB-объектов Azure с помощью портал Azure см. в статье [Управление долгосрочным хранением резервных копий с помощью портал Azure](long-term-backup-retention-configure.md).
 - Сведения о настройке, управлении и восстановлении долгосрочного хранения автоматически создаваемых резервных копий в хранилище BLOB-объектов Azure с помощью PowerShell см. в статье [Управление долгосрочным хранением резервных копий с помощью PowerShell](long-term-backup-retention-configure.md).
+- Дополнительные сведения о потреблении хранилища резервных копий в Управляемый экземпляр Azure SQL см. в статье [Использование хранилища резервных копий в управляемый экземпляр](https://aka.ms/mi-backup-explained).
 - Чтобы узнать, как точно настроить хранение резервных копий и затраты на Управляемый экземпляр Azure SQL, ознакомьтесь [со статьей Настройка затрат на хранение резервных копий в управляемый экземпляр](https://aka.ms/mi-backup-tuning).

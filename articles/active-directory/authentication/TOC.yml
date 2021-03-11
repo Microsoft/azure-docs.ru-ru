@@ -55,7 +55,7 @@
         - name: Лицензии
           href: concept-mfa-licensing.md
         - name: MFA для Office 365
-          href: /office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide
+          href: /office365/admin/security-and-compliance/set-up-multi-factor-authentication
         - name: ВОПРОСЫ И ОТВЕТЫ
           href: multi-factor-authentication-faq.md
     - name: Защита пароля

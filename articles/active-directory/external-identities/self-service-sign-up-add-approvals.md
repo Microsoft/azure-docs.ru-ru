@@ -11,12 +11,12 @@ author: msmimart
 manager: celestedg
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b447873df882847f052125254ea52b5ae6ab9ec4
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 95274f42da7f6cac9b193504df834232d7c0eb90
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101644873"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102609996"
 ---
 # <a name="add-a-custom-approval-workflow-to-self-service-sign-up"></a>Добавление пользовательского рабочего процесса утверждения для самостоятельной регистрации
 
@@ -156,7 +156,6 @@ Content-type: application/json
     "version": "1.0.0",
     "action": "ShowBlockPage",
     "userMessage": "Your access request is already processing. You'll be notified when your request has been approved.",
-    "code": "CONTOSO-APPROVAL-PENDING"
 }
 ```
 
@@ -168,7 +167,6 @@ Content-type: application/json
     "version": "1.0.0",
     "action": "ShowBlockPage",
     "userMessage": "Your sign up request has been denied. Please contact an administrator if you believe this is an error",
-    "code": "CONTOSO-APPROVAL-DENIED"
 }
 ```
 
@@ -244,7 +242,6 @@ Content-type: application/json
     "version": "1.0.0",
     "action": "ShowBlockPage",
     "userMessage": "Your account is now waiting for approval. You'll be notified when your request has been approved.",
-    "code": "CONTOSO-APPROVAL-REQUESTED"
 }
 ```
 
@@ -256,7 +253,6 @@ Content-type: application/json
     "version": "1.0.0",
     "action": "ShowBlockPage",
     "userMessage": "Your sign up request has been denied. Please contact an administrator if you believe this is an error",
-    "code": "CONTOSO-APPROVAL-AUTO-DENIED"
 }
 ```
 
@@ -268,12 +264,12 @@ Content-type: application/json
 
 После получения утверждения вручную система пользовательского утверждения создает учетную запись [пользователя](/graph/azuread-users-concept-overview) с помощью [Microsoft Graph](/graph/use-the-api). Способ, которым система утверждения подготавливает учетную запись пользователя, зависит от поставщика удостоверений, который использовался этим пользователем.
 
-### <a name="for-a-federated-google-or-facebook-user"></a>Для федеративного пользователя Google или Facebook
+### <a name="for-a-federated-google-or-facebook-user-and-email-one-time-passcode"></a>Для федеративного пользователя Google или Facebook и одноразового секретного кода для электронной почты
 
 > [!IMPORTANT]
-> Для использования этого метода система утверждения должна явным образом проверить наличие и наличие, `identities` `identities[0]` а также `identities[0].issuer` `identities[0].issuer` "Facebook" или "Google".
+> Для использования этого метода система утверждения должна явным образом проверить наличие и наличие `identities` `identities[0]` `identities[0].issuer` и то есть `identities[0].issuer` "Facebook", "Google" или "mail".
 
-Если пользователь вошел в учетную запись Google или Facebook, вы можете использовать [API создания пользователей](/graph/api/user-post-users?tabs=http).
+Если пользователь вошел в учетную запись Google или Facebook или одноразовый пароль для электронной почты, можно использовать [API создания пользователей](/graph/api/user-post-users?tabs=http).
 
 1. Система утверждения использует получение HTTP-запроса от потока пользователя.
 
@@ -331,9 +327,9 @@ Content-type: application/json
 | \<otherBuiltInAttribute>                            | Нет       | Другие встроенные атрибуты, такие как `displayName` , `city` и другие. Имена параметров совпадают с параметрами, отправленными соединителем API.                            |
 | \<extension\_\{extensions-app-id}\_CustomAttribute> | Нет       | Настраиваемые атрибуты пользователя. Имена параметров совпадают с параметрами, отправленными соединителем API.                                                            |
 
-### <a name="for-a-federated-azure-active-directory-user"></a>Для федеративного Azure Active Directory пользователя
+### <a name="for-a-federated-azure-active-directory-user-or-microsoft-account-user"></a>Для федеративного Azure Active Directory пользователя или учетная запись Майкрософт пользователя
 
-Если пользователь выполняет вход с помощью федеративной учетной записи Azure Active Directory, необходимо использовать [API приглашения](/graph/api/invitation-post) для создания пользователя, а затем, при необходимости, [API пользовательского обновления](/graph/api/user-update) , чтобы назначить пользователю дополнительные атрибуты.
+Если пользователь выполняет вход с помощью федеративной учетной записи Azure Active Directory или учетная запись Майкрософт, необходимо использовать [API приглашения](/graph/api/invitation-post) для создания пользователя, а затем, при необходимости, [API пользовательского обновления](/graph/api/user-update) , чтобы назначить пользователю дополнительные атрибуты.
 
 1. Система утверждения получает HTTP-запрос от потока пользователя.
 

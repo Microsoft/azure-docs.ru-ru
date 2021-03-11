@@ -10,12 +10,12 @@ ms.subservice: speech-service
 ms.topic: conceptual
 ms.date: 08/11/2020
 ms.author: trbye
-ms.openlocfilehash: e28bd5b5caca259201758f0c633b2120a411f422
-ms.sourcegitcommit: 49ea056bbb5957b5443f035d28c1d8f84f5a407b
+ms.openlocfilehash: 65c0d80394317c2b2bfbf621d3cc2ad0c2e3448a
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100007454"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102618412"
 ---
 # <a name="long-audio-api"></a>Длинный аудио API
 
@@ -47,6 +47,13 @@ ms.locfileid: "100007454"
 * Содержит более 400 символов для обычного текста или 400 [оплачиваемых символов](./text-to-speech.md#pricing-note) для текста SSML и менее 10 000 абзацев
   * Для обычного текста каждый абзац отделяется нажатием клавиши **Ввод/возврат** -просмотр. [пример входного текста с открытым текстом](https://github.com/Azure-Samples/Cognitive-Speech-TTS/blob/master/CustomVoice-API-Samples/Java/en-US.txt)
   * Для текста SSML каждая часть SSML считается абзацом. SSML части должны быть разделены с помощью различных абзацев. [Пример текстового ввода](https://github.com/Azure-Samples/Cognitive-Speech-TTS/blob/master/CustomVoice-API-Samples/Java/SSMLTextInputSample.txt) для просмотра SSML
+
+## <a name="sample-code"></a>Образец кода
+Оставшаяся часть этой страницы посвящена Python, но пример кода для длинного аудио API доступен на сайте GitHub для следующих языков программирования:
+
+* [Пример кода: Python](https://github.com/Azure-Samples/Cognitive-Speech-TTS/tree/master/CustomVoice-API-Samples/Python)
+* [Пример кода: C #](https://github.com/Azure-Samples/Cognitive-Speech-TTS/tree/master/CustomVoice-API-Samples/CSharp)
+* [Пример кода: Java](https://github.com/Azure-Samples/Cognitive-Speech-TTS/blob/master/CustomVoice-API-Samples/Java/)
 
 ## <a name="python-example"></a>Пример на Python
 
@@ -424,7 +431,7 @@ response.status_code: 204
 |        | 404 | Не удается найти модель, объявленную в определении синтеза голоса: {modelID}. | Проверьте правильность {modelID}. |
 |        | 429 | Превышает ограничение активного синтеза речи. Дождитесь завершения некоторых запросов. | Сервер может запуститься и поставить в очередь до 120 запросов для каждой учетной записи Azure. Подождите и не отправляйте новые запросы, пока не будут завершены некоторые запросы. |
 | Все       | 429 | Слишком много запросов. | Клиент может отправлять до 5 запросов на сервер в секунду для каждой учетной записи Azure. Сократите количество запросов в секунду. |
-| Удаление    | 400 | Задача синтеза голоса по-прежнему используется. | Можно удалить только **Завершенные** или **Невыполненные** запросы. |
+| DELETE    | 400 | Задача синтеза голоса по-прежнему используется. | Можно удалить только **Завершенные** или **Невыполненные** запросы. |
 | жетбид   | 404 | Не удается найти указанную сущность. | Убедитесь, что идентификатор синтеза правильный. |
 
 ## <a name="regions-and-endpoints"></a>Регионы и конечные точки
@@ -456,10 +463,3 @@ response.status_code: 204
 * Audio-24khz-48kbitrate-Mono-MP3
 * Audio-24khz-96kbitrate-Mono-MP3
 * Audio-24khz-160kbitrate-Mono-MP3
-
-## <a name="sample-code"></a>Образец кода
-Пример кода для длинного аудио API доступен на сайте GitHub.
-
-* [Пример кода: Python](https://github.com/Azure-Samples/Cognitive-Speech-TTS/tree/master/CustomVoice-API-Samples/Python)
-* [Пример кода: C #](https://github.com/Azure-Samples/Cognitive-Speech-TTS/tree/master/CustomVoice-API-Samples/CSharp)
-* [Пример кода: Java](https://github.com/Azure-Samples/Cognitive-Speech-TTS/blob/master/CustomVoice-API-Samples/Java/)

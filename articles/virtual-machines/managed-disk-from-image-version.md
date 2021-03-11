@@ -3,18 +3,18 @@ title: Создание управляемого диска из версии о
 description: Создание управляемого диска из версии образа в общей коллекции образов.
 author: cynthn
 ms.service: virtual-machines
-ms.subservice: imaging
+ms.subservice: shared-image-gallery
 ms.topic: how-to
 ms.workload: infrastructure
 ms.date: 10/27/2020
 ms.author: cynthn
 ms.reviewer: olayemio
-ms.openlocfilehash: 84ec5ecbfdc2aab2445d050cc51d2b56acb7f3fd
-ms.sourcegitcommit: 2bd0a039be8126c969a795cea3b60ce8e4ce64fc
+ms.openlocfilehash: 359816bbf3fb93a4ec2bfa3092adbb2236ae2f07
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98202561"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102562560"
 ---
 # <a name="create-a-managed-disk-from-an-image-version"></a>Создание управляемого диска из версии образа
 

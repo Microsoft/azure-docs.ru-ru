@@ -4,19 +4,20 @@ description: Узнайте, как настроить непрерывную и
 author: ushan
 tags: azure-devops-pipelines
 ms.assetid: ''
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
+ms.collection: linux
 ms.topic: tutorial
 ms.tgt_pltfrm: azure-pipelines
 ms.workload: infrastructure
 ms.date: 1/3/2020
 ms.author: ushan
 ms.custom: devops, devx-track-js
-ms.openlocfilehash: 4ca431290fe168f8fc073908bb3735ecb5992562
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 49282bf6cbc7c24b75fbe3f1bbe68bd1fac62ae3
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98731256"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102552496"
 ---
 # <a name="tutorial-deploy-your-app-to-linux-virtual-machines-in-azure-using-azure-devops-services-and-azure-pipelines"></a>Руководство по Развертывание приложения на виртуальных машинах Linux в Azure с помощью Azure DevOps Services и Azure Pipelines
 

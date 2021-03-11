@@ -3,17 +3,18 @@ title: Открытие портов для виртуальной машины 
 description: Узнайте, как открыть порт или создать конечную точку для виртуальной машины с помощью Azure PowerShell
 author: cynthn
 ms.service: virtual-machines
+ms.subservice: networking
 ms.topic: how-to
 ms.workload: infrastructure-services
 ms.date: 12/13/2017
 ms.author: cynthn
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: a432ce978f6fa9e3a472cb15e9ef9241bc41004d
-ms.sourcegitcommit: 4064234b1b4be79c411ef677569f29ae73e78731
+ms.openlocfilehash: 8390b5c779e6aa053e1af2754c436dd51e410b06
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92891760"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102550422"
 ---
 # <a name="how-to-open-ports-and-endpoints-to-a-vm-using-powershell"></a>Как открыть порты и конечные точки для виртуальной машины с помощью PowerShell
 [!INCLUDE [virtual-machines-common-nsg-quickstart](../../../includes/virtual-machines-common-nsg-quickstart.md)]
@@ -27,9 +28,9 @@ ms.locfileid: "92891760"
 Connect-AzAccount
 ```
 
-В следующих примерах замените имена параметров собственными значениями. Примеры имен параметров: *myResourceGroup* , *mystorageaccount* и *myVM* .
+В следующих примерах замените имена параметров собственными значениями. Примеры имен параметров: *myResourceGroup*, *mystorageaccount* и *myVM*.
 
-Создайте правило с помощью командлета [New-AzNetworkSecurityRuleConfig](/powershell/module/az.network/new-aznetworksecurityruleconfig). В следующем примере создается правило с именем *myNetworkSecurityGroupRule* . Это правило разрешает *TCP* -трафик через порт  *80* :
+Создайте правило с помощью командлета [New-AzNetworkSecurityRuleConfig](/powershell/module/az.network/new-aznetworksecurityruleconfig). В следующем примере создается правило с именем *myNetworkSecurityGroupRule*. Это правило разрешает *TCP*-трафик через порт *80*:
 
 ```powershell
 $httprule = New-AzNetworkSecurityRuleConfig `
@@ -45,7 +46,7 @@ $httprule = New-AzNetworkSecurityRuleConfig `
     -DestinationPortRange 80
 ```
 
-Затем создайте группу безопасности сети с помощью командлета [New-AzureNetworkSecurityGroup](/powershell/module/az.network/new-aznetworksecuritygroup) и назначьте только что созданное правило HTTP, как показано ниже. В следующем примере создается группа безопасности сети с именем *myNetworkSecurityGroup* .
+Затем создайте группу безопасности сети с помощью командлета [New-AzureNetworkSecurityGroup](/powershell/module/az.network/new-aznetworksecuritygroup) и назначьте только что созданное правило HTTP, как показано ниже. В следующем примере создается группа безопасности сети с именем *myNetworkSecurityGroup*.
 
 ```powershell
 $nsg = New-AzNetworkSecurityGroup `

@@ -1,27 +1,19 @@
 ---
 title: Расширения и компоненты виртуальной машины Azure для Windows
 description: Узнайте о расширениях, доступных для виртуальных машин Azure. Расширения сгруппированы по предоставляемым функциям или улучшениям.
-services: virtual-machines-windows
-documentationcenter: ''
-author: axayjo
-manager: gwallace
-editor: ''
-tags: azure-service-management,azure-resource-manager
-ms.assetid: 999d63ee-890e-432e-9391-25b3fc6cde28
-ms.service: virtual-machines-windows
-ms.subservice: extensions
 ms.topic: article
-ms.tgt_pltfrm: vm-windows
-ms.workload: infrastructure-services
+ms.service: virtual-machines
+ms.subservice: extensions
+author: amjads1
+ms.author: amjads
+ms.collection: windows
 ms.date: 03/30/2018
-ms.author: akjosh
-ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: 44d071c635967e4ce3078be8419414bc9ff0c653
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: eb1b05afbaa57fb86033c568142da32443adc1f9
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100580149"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102559789"
 ---
 # <a name="virtual-machine-extensions-and-features-for-windows"></a>Обзор расширений и компонентов виртуальной машины под управлением Windows
 
@@ -43,7 +35,7 @@ ms.locfileid: "100580149"
 
 Помимо расширений, созданных для конкретных процессов, существует расширение пользовательских сценариев для виртуальных машин под управлением Windows и Linux. Расширение пользовательских скриптов для Windows позволяет запустить на виртуальной машине любой скрипт PowerShell. Пользовательские сценарии могут пригодиться при проектировании развертывания Azure, для которого требуется дополнительная настройка, ее невозможно выполнить собственными средствами Azure. Подробнее см. [Использование расширений пользовательских сценариев для виртуальной машины Windows с шаблонами Azure Resource Manager](custom-script-windows.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы расширения работали на виртуальной машине, необходимо установить агент Windows для Azure. Некоторые расширения имеют дополнительные требования, например доступ к определенным ресурсам или зависимости.
 
@@ -264,7 +256,7 @@ Set-AzVMAccessExtension -ResourceGroupName "myResourceGroup" -VMName "myVM" -Nam
 Когда обновление становится доступно, оно устанавливается на виртуальных машинах только при внесении изменений в расширения или другие элементы модели виртуальной машины, как например:
 
 - Диски данных
-- Модули
+- Расширения
 - контейнер диагностики загрузки;
 - секреты гостевой ОС;
 - Размер виртуальной машины
@@ -429,6 +421,6 @@ Remove-AzVMExtension -ResourceGroupName "myResourceGroup" -VMName "myVM" -Name "
 | Расширение Диагностики Azure |Управляет системой диагностики Azure |[Расширение система диагностики Azure](https://azure.microsoft.com/blog/windows-azure-virtual-machine-monitoring-with-wad-extension/) |
 | Расширение Azure VM Access |Управляет пользователями и учетными данными. |[Расширение для доступа к виртуальной машине для Linux](https://azure.microsoft.com/blog/using-vmaccess-extension-to-reset-login-credentials-for-linux-vm/) |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о расширениях виртуальных машин см. в статье c [обзором расширений и компонентов виртуальной машины Azure](overview.md).

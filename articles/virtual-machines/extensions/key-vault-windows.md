@@ -1,20 +1,21 @@
 ---
 title: Расширение виртуальной машины Azure Key Vault для Windows
 description: С помощью расширения виртуальной машины вы можете развернуть агент, выполняющий автоматическое обновление секретов Key Vault на виртуальных машинах.
-services: virtual-machines-windows
+services: virtual-machines
 author: msmbaldwin
 tags: keyvault
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
 ms.subservice: extensions
+ms.collection: windows
 ms.topic: article
 ms.date: 12/02/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 42212294580b85c2b06cd98603d0f7337cee92e3
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: a984d044134dbd775bacb653f8590ee78724f15b
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102485782"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102563563"
 ---
 # <a name="key-vault-virtual-machine-extension-for-windows"></a>Расширение виртуальной машины Key Vault для Windows
 
@@ -35,7 +36,7 @@ ms.locfileid: "102485782"
 - PKCS #12
 - PEM
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
   - Key Vault экземпляр с сертификатом. См. раздел [создание Key Vault](../../key-vault/general/quick-create-portal.md)
   - Виртуальная машина должна иметь назначенное [управляемое удостоверение](../../active-directory/managed-identities-azure-resources/overview.md)

@@ -7,12 +7,12 @@ ms.topic: article
 ms.date: 2/11/2020
 ms.author: amgowda
 ms.service: container-service
-ms.openlocfilehash: a5db93f096c73679c1b6b6ae464897db843f2e8b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: cf62e6c4e54cc7e6488b26d4251ecb813d62e7ea
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101706271"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102564311"
 ---
 # <a name="confidential-containers"></a>Конфиденциальные контейнеры
 

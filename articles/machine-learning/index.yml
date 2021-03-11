@@ -13,12 +13,12 @@ metadata:
   author: BlackMist
   ms.date: 09/21/2020
   ms.custom: contperf-fy21q1
-  ms.openlocfilehash: b52e7908d07dcd342be59f9870dece13701f1dc6
-  ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+  ms.openlocfilehash: f2cf2622ab4fedbe501eca3053d749694f831390
+  ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/10/2021
-  ms.locfileid: "100096333"
+  ms.lasthandoff: 03/09/2021
+  ms.locfileid: "102520410"
 landingContent:
 - title: 'Приступая к работе: подход Code First'
   linkLists:
@@ -71,11 +71,11 @@ landingContent:
   - linkListType: reference
     links:
     - text: Пакет SDK для Python
-      url: /python/api/overview/azure/ml/?view=azure-ml-py
+      url: /python/api/overview/azure/ml/
     - text: REST API
       url: /rest/api/azureml/
     - text: Интерфейс командной строки для Машинного обучения
-      url: /cli/azure/ext/azure-cli-ml/ml?view=azure-cli-latest
+      url: /cli/azure/ext/azure-cli-ml/ml
 - title: Поиск Студии (классическая версия)
   linkLists:
   - linkListType: overview

@@ -3,16 +3,16 @@ title: Виртуальные машины Azure серии M
 description: Спецификации для виртуальных машин серии M.
 author: ayshakeen
 ms.service: virtual-machines
-ms.subservice: hpc
+ms.subservice: vm-sizes-memory
 ms.topic: conceptual
 ms.date: 03/31/2020
 ms.author: jushiman
-ms.openlocfilehash: b893d2d381ccea286066d6141142c2ab190242bc
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 91c29864367380a303a006d4aac823a22a966a2b
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101667041"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102563098"
 ---
 # <a name="m-series"></a>Серия M
 
@@ -28,7 +28,7 @@ ms.locfileid: "101667041"
 [Поддержка создания виртуальных машин](generation-2.md): поколение 1 и 2<br>
 [Ускоритель записи](./how-to-enable-write-accelerator.md): поддерживается<br>
 [Ускоренная сеть](../virtual-network/create-vm-accelerated-networking-cli.md): поддерживается<br>
-[Временные диски ОС](ephemeral-os-disks.md): не поддерживаются <br>
+[Временные диски ОС](ephemeral-os-disks.md): поддерживаются <br>
 <br>
 
 | Размер | vCPU | Память: ГиБ | Временное хранилище (SSD): ГиБ | Максимальное число дисков данных | Максимальная пропускная способность кэшированного и временного хранилища: операций ввода-вывода в секунду (размер кэша в гиб) | Максимальная пропускная способность дисков без кэширования: операций ввода-вывода в секунду / МБит/с | Максимальное число сетевых адаптеров|Ожидаемая пропускная способность сети (Мбит/с) |

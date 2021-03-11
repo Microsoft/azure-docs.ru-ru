@@ -209,6 +209,8 @@
           href: core/howto-connect-rigado-cascade-500.md
         - name: Подключение других облаков Интернета вещей
           href: core/howto-build-iotc-device-bridge.md
+        - name: Управление устройствами
+          href: core/how-to-move-device-to-iot.md
     - name: Создание интегрированных решений
       items:
         - name: Добавление плиток на панель мониторинга

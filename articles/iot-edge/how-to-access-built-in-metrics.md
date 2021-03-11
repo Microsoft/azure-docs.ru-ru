@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.reviewer: veyalla
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 7924b06b9056a53fa9861fcd0df516845662b34b
-ms.sourcegitcommit: f88074c00f13bcb52eaa5416c61adc1259826ce7
+ms.openlocfilehash: 113c8adccc5e8b1c3321569f32ca3fb33423ccd8
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92341572"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102562883"
 ---
 # <a name="access-built-in-metrics"></a>Доступ к встроенным метрикам
 
@@ -44,7 +44,9 @@ ms.locfileid: "92341572"
 При сопоставлении конечных точек метрик edgeHub и edgeAgent выбирайте разные и уникальные номера портов узлов.
 
 > [!NOTE]
-> Если вы хотите отключить метрики, задайте `MetricsEnabled` для переменной среды значение `false` для **edgeAgent**.
+> Переменная среды `httpSettings__enabled` не должна иметь значение, чтобы `false` встроенные метрики были доступны для коллекции.
+>
+> Переменные среды, которые можно использовать для отключения метрик, перечислены в документации по [репозиторию Azure/iotedge](https://github.com/Azure/iotedge/blob/master/doc/EnvironmentVariables.md).
 
 ## <a name="available-metrics"></a>Доступные метрики
 
@@ -110,7 +112,7 @@ ms.locfileid: "92341572"
 | `edgeAgent_total_disk_write_bytes` | `module_name` | Тип: датчик<br> Число байтов, записанных на диск |
 | `edgeAgent_metadata` | `edge_agent_version`, `experimental_features`, `host_information` | Тип: датчик<br> Общие метаданные об устройстве. Значение всегда равно 0, сведения кодируются в тегах. Обратите внимание `experimental_features` и `host_information` являются объектами JSON. `host_information` выглядит так ```{"OperatingSystemType": "linux", "Architecture": "x86_64", "Version": "1.0.10~dev20200803.4", "Provisioning": {"Type": "dps.tpm", "DynamicReprovisioning": false, "AlwaysReprovisionOnStartup": true}, "ServerVersion": "19.03.6", "KernelVersion": "5.0.0-25-generic", "OperatingSystem": "Ubuntu 18.04.4 LTS", "NumCpus": 6, "Virtualized": "yes"}``` :. Примечание `ServerVersion` . это версия DOCKER, а `Version` — версия управляющей программы безопасности IOT Edge. |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Общие сведения о среде выполнения Azure IoT Edge и ее архитектуре](iot-edge-runtime.md)
 * [Свойства двойников модулей агента IoT Edge и центра IoT Edge](module-edgeagent-edgehub.md)
