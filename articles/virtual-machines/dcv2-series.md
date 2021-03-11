@@ -3,16 +3,16 @@ title: Виртуальные машины Azure серии DC
 description: Спецификации виртуальных машин серии DC.
 author: susaxen
 ms.service: virtual-machines
-ms.subservice: sizes
+ms.subservice: vm-sizes-general
 ms.topic: conceptual
 ms.date: 02/20/2020
 ms.author: jushiman
-ms.openlocfilehash: 84987b12657a37264d3a1ca67fdc423ed8085662
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.openlocfilehash: 677f4df0873f8b72d40dd373035111e2e0002491
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100557910"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102549236"
 ---
 # <a name="dcsv2-series"></a>Серия DCsv2
 

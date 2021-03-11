@@ -3,16 +3,16 @@ title: Серия Fsv2
 description: Спецификации виртуальных машин серии серия fsv2.
 author: brbell
 ms.service: virtual-machines
-ms.subservice: sizes
+ms.subservice: vm-sizes-compute
 ms.topic: conceptual
 ms.date: 02/03/2020
 ms.author: jushiman
-ms.openlocfilehash: e738a3e18d4ee16b2bbfd7edb6cc32152bb82b48
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.openlocfilehash: 7181766d366358719a32b5e7a7f4eeb82de5e935
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100557809"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102549164"
 ---
 # <a name="fsv2-series"></a>Серия Fsv2
 

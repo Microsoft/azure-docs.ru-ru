@@ -2,16 +2,16 @@
 title: Развертывание IBM DB2 pureScale в Azure
 description: Узнайте, как развернуть пример архитектуры, который недавно использовался для переноса данных предприятия из среды IBM DB2 на z/OS в IBM DB2 pureScale в Azure.
 author: njray
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
 ms.topic: how-to
 ms.date: 11/09/2018
 ms.author: edprice
-ms.openlocfilehash: 91ab11dce1c88f698640ce446b529c9cbe92cac5
-ms.sourcegitcommit: 54e1d4cdff28c2fd88eca949c2190da1b09dca91
+ms.openlocfilehash: 481816ca0c1fecfee9396f6cc40582695b0952f2
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2021
-ms.locfileid: "99221690"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102550201"
 ---
 # <a name="deploy-ibm-db2-purescale-on-azure"></a>Развертывание IBM DB2 pureScale в Azure
 
@@ -19,7 +19,7 @@ ms.locfileid: "99221690"
 
 Чтобы выполнить шаги, используемые для миграции, воспользуйтесь скриптами установки в репозитории [DB2onAzure](https://aka.ms/db2onazure) на сайте GitHub. Эти скрипты основаны на архитектуре для обычной рабочей нагрузки OLTP среднего размера.
 
-## <a name="get-started"></a>Приступая к работе
+## <a name="get-started"></a>Начало работы
 
 Чтобы развернуть эту архитектуру, скачайте и запустите сценарий deploy.sh, который находится в репозитории [DB2onAzure](https://aka.ms/db2onazure) на сайте GitHub.
 
@@ -73,9 +73,9 @@ ms.locfileid: "99221690"
 
 | Имя экрана               | Поле                                        | Значение                                                                                                 |
 |---------------------------|----------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Приветствие                   |                                              | "New Install" (Новая установка)                                                                                           |
+| Экран приветствия                   |                                              | "New Install" (Новая установка)                                                                                           |
 | "Choose a Product" (Выбор продукта)          |                                              | "DB2 Version 11.1.3.3. Server Editions with Db2 pureScale" (Db2 версии 11.1.3.3, серверные выпуски с Db2 pureScale)                                              |
-| Параметр Configuration             | Каталог                                    | /data1/opt/ibm/db2/V11.1                                                                              |
+| Конфигурация             | Каталог                                    | /data1/opt/ibm/db2/V11.1                                                                              |
 |                           | "Select the installation type" (Выбор типа установки)                 | "Typical" (Стандартный)                                                                                               |
 |                           | "I agree to the IBM terms" (Я принимаю условия IBM)                     | Флажок установлен                                                                                               |
 | "Instance Owner" (Владелец экземпляра)            | "Existing User For Instance, User name" (Существующий пользователь экземпляра, имя пользователя)        | DB2sdin1                                                                                              |

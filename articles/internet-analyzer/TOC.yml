@@ -25,7 +25,7 @@
     - name: Устранение неполадок с Анализатором Интернета
       href: troubleshoot.md
     - name: Справочник по интерфейсу командной строки службы "Анализатор Интернета"
-      href: /cli/azure/ext/internet-analyzer/internet-analyzer?view=azure-cli-latest
+      href: /cli/azure/ext/internet-analyzer/internet-analyzer
     - name: Стратегия развития Azure
       href: 'https://azure.microsoft.com/roadmap/?category=networking'
     - name: Блог

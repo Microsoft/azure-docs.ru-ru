@@ -41,7 +41,7 @@
 - name: Справочник
   items:
     - name: API
-      href: /javascript/api/azuremediaplayer/?view=azure-node-latest
+      href: /javascript/api/azuremediaplayer/
     - name: Методы API
       href: azure-media-player-api-methods.md
     - name: Параметры

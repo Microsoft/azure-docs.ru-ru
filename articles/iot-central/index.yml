@@ -11,12 +11,12 @@ metadata:
   ms.author: dobett
   ms.date: 09/02/2021
   ms.custom: contperf-fy21q3
-  ms.openlocfilehash: c4aca59eab9e3597e5f9a03931f5854adab5fac6
-  ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+  ms.openlocfilehash: 4b18c599dec89cf7ac5bc594ff6bd47b9919b5eb
+  ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/03/2021
-  ms.locfileid: "101712561"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102212643"
 landingContent:
 - title: Сведения об Azure IoT Central
   linkLists:
@@ -80,6 +80,8 @@ landingContent:
       url: core/howto-create-analytics.md
     - text: Экспорт данных в целевые расположения в облаке
       url: core/howto-export-data.md
+    - text: Перемещение устройств из Центра Интернета вещей
+      url: core/how-to-move-device-to-iot.md
   - linkListType: reference
     links:
     - text: REST API

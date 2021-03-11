@@ -9,16 +9,19 @@ ms.author: apistrak
 ms.date: 01/15/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 2ff787c88c044929bb7eec063f4e8b3906813964
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 8a9191180dcf4a16f586d109e820e63def566a42
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101656998"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102488738"
 ---
 # <a name="sign-an-http-request"></a>Подписывание HTTP-запроса
 
 В этом учебнике описывается, как подписать HTTP-запрос с помощью подписи HMAC.
+
+[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
+
 
 [!INCLUDE [Sign an HTTP request C#](./includes/hmac-header-csharp.md)]
 

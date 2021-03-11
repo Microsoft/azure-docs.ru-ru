@@ -23,7 +23,7 @@
   items:
     - name: Пакет SDK для Python
       displayName: api open datasets reference sdk
-      href: /python/api/azureml-opendatasets/azureml.opendatasets?view=azure-ml-py
+      href: /python/api/azureml-opendatasets/azureml.opendatasets
     - name: Записные книжки Jupyter
       displayName: python notebooks
       href: 'https://github.com/Azure/OpenDatasetsNotebooks'

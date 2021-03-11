@@ -10,15 +10,15 @@ metadata:
   ms.topic: hub-page
   author: rolyon
   ms.author: rolyon
-  ms.date: 01/29/2021
+  ms.date: 03/03/2021
   featureFlags:
   - clicktale
-  ms.openlocfilehash: dbc16f849dd8e0f97c700905fac046edbd0f0c70
-  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+  ms.openlocfilehash: 77c953664459419ca4f3069eb727c6d0cc29892f
+  ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/05/2021
-  ms.locfileid: "102179125"
+  ms.lasthandoff: 03/09/2021
+  ms.locfileid: "102488919"
 highlightedContent:
   items:
   - title: Руководство по началу работы для разработчиков Azure
@@ -1103,6 +1103,12 @@ productDirectory:
     - migration
     - storage
     url: databox/index.yml
+  - title: Объектные привязки (предварительная версия)
+    summary: Автоматическое выравнивание и привязка трехмерного содержимого к объектам в физическом мире
+    imageSrc: ./media/index/object-anchors.svg
+    azureCategories:
+    - mixed-reality
+    url: object-anchors/index.yml
   - title: Пространственные привязки
     summary: Создание многопользовательских решений смешанной реальности, учитывающих расположение в пространстве
     imageSrc: https://static.docs.com/ui/media/product/azure/spatial-anchor-accounts.svg
@@ -1110,7 +1116,7 @@ productDirectory:
     - mixed-reality
     - mobile
     url: spatial-anchors/index.yml
-  - title: Удаленная отрисовка (предварительная версия)
+  - title: Удаленная отрисовка Azure
     summary: Преобразовывайте для просмотра высококачественное интерактивное трехмерное содержимое и выполняйте его потоковую передачу на устройства в реальном времени.
     imageSrc: https://static.docs.com/ui/media/product/azure/remote-rendering.svg
     azureCategories:

@@ -2,18 +2,19 @@
 title: Краткое руководство. Использование шаблона Resource Manager для создания виртуальной машины Ubuntu Linux
 description: Из этого краткого руководства вы узнаете, как с помощью шаблона Resource Manager создать виртуальную машину Linux.
 author: cynthn
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
+ms.collection: linux
 ms.topic: quickstart
 ms.workload: infrastructure
 ms.date: 06/04/2020
 ms.author: cynthn
 ms.custom: subject-armqs
-ms.openlocfilehash: bd22d20703dc72e220f9b479b4a4005033f964ae
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: 97a9d3632cb0e78b899844b1aaa84a030c6da23e
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "88649777"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102549623"
 ---
 # <a name="quickstart-create-an-ubuntu-linux-virtual-machine-using-an-arm-template"></a>Краткое руководство. Создание виртуальной машины Ubuntu Linux с помощью шаблона ARM
 
@@ -61,7 +62,7 @@ ms.locfileid: "88649777"
     - **Тип проверки подлинности.** Можно выбрать использование ключа SSH или пароля.
     - **Пароль или ключ администратора**, в зависимости от выбранного типа проверки подлинности.
         - Если выбран **пароль**, укажите пароль длиной не менее 12 символов, соответствующий [заданным требованиям к сложности](faq.md#what-are-the-password-requirements-when-creating-a-vm).
-        - Если выбран**sshPublicKey**, вставьте содержимое открытого ключа.
+        - Если выбран **sshPublicKey**, вставьте содержимое открытого ключа.
     - **Префикс метки DNS**. Введите уникальный идентификатор, который будет использоваться как префикс метки DNS.
     - **Версия ОС Ubuntu**. Выберите версию Ubuntu, которую требуется запустить на виртуальной машине.
     - **Расположение**. По умолчанию совпадает с расположением группы ресурсов, если она уже существует.

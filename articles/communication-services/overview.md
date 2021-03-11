@@ -8,12 +8,12 @@ ms.author: mikben
 ms.date: 07/20/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 27b1a2654a52c136c0b827b536f5cf99928e5947
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 30b075cfbd7d38ff81cdf79a05a3a95b87b0bc13
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101691592"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102488551"
 ---
 # <a name="what-is-azure-communication-services"></a>Что такое Службы коммуникации Azure?
 
@@ -21,6 +21,7 @@ ms.locfileid: "101691592"
 
 > [!IMPORTANT]
 > Приложения, созданные с помощью Служб коммуникации Azure, могут обмениваться данными с Microsoft Teams. Дополнительные сведения см. в документации по [взаимодействию в Teams](./quickstarts/voice-video-calling/get-started-teams-interop.md).
+
 
 Службы коммуникации Azure позволяют легко добавлять в приложения мультимедийные функции коммуникации, например голосовой, видео и телефонной по протоколу IP в режиме реального времени. Клиентские библиотеки Служб коммуникации также позволяют добавлять функциональность чатов и SMS-сообщений в решения для коммуникации.
 

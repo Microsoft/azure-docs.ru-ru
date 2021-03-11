@@ -9,16 +9,15 @@ ms.date: 10/05/2020
 ms.topic: quickstart
 ms.service: azure-communication-services
 ms.custom: references_regions
-ms.openlocfilehash: 4fda626581265b4b1f6541a3b453b164ccd27963
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 4acc1cb93fb04ba190173fea05805a1a4b833ffc
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101690453"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102488772"
 ---
 # <a name="quickstart-get-a-phone-number-using-the-azure-portal"></a>Краткое руководство. Получение номера телефона с помощью портала Azure
 
-[!INCLUDE [Public Preview Notice](../../includes/public-preview-include.md)]
 [!INCLUDE [Regional Availability Notice](../../includes/regional-availability-include.md)]
 
 Начните работу со Службами коммуникации Azure, приобретя номер телефона с помощью портала Azure.
@@ -40,15 +39,15 @@ ms.locfileid: "101690453"
 
 :::image type="content" source="../media/manage-phone-azure-portal-phone-page.png" alt-text="Снимок экрана: страница с номерами телефонов ресурса Служб коммуникации.":::
 
-Нажмите кнопку **Получить**, чтобы запустить мастер. Мастер в колонке **Номера телефонов** задаст вам ряд вопросов, которые помогут вам выбрать подходящий номер телефона для вашего сценария. 
+Нажмите кнопку **Получить**, чтобы запустить мастер. Мастер в колонке **Номера телефонов** задаст вам ряд вопросов, которые помогут вам выбрать подходящий номер телефона для вашего сценария.
 
-Сначала необходимо выбрать **страну или регион**, где вы хотите подготовить номер телефона. Затем нужно выбрать **вариант использования**, который лучше подходит для ваших потребностей. 
+Сначала необходимо выбрать **страну или регион**, где вы хотите подготовить номер телефона. Затем нужно выбрать **вариант использования**, который лучше подходит для ваших потребностей.
 
 :::image type="content" source="../media/manage-phone-azure-portal-get-numbers.png" alt-text="Снимок экрана: представление &quot;Получение телефонных номеров&quot;.":::
 
 ### <a name="select-your-phone-number-features"></a>Выбор возможностей номера телефона
 
-Настройка номера телефона разделяется на два этапа: 
+Настройка номера телефона разделяется на два этапа:
 
 1. выбор [типа номера](../../concepts/telephony-sms/plan-solution.md#phone-number-types-in-azure-communication-services);
 2. выбор [возможностей номера](../../concepts/telephony-sms/plan-solution.md#phone-number-features-in-azure-communication-services).

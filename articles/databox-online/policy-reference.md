@@ -1,19 +1,19 @@
 ---
 title: Встроенные определения политик для Azure Stack пограничных устройств
 description: Выводит список встроенных определений политик Azure для Azure Stack пограничных устройств. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/05/2021
+ms.date: 03/10/2021
 ms.topic: reference
 ms.custom: subject-policy-reference
 ms.service: databox
 ms.subservice: edge
 author: alkohli
 ms.author: alkohli
-ms.openlocfilehash: 7be90676c54efbe89bcebacc7386f60f1a63bf84
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: d1484e5af1999e3d75c47688f5e8a531cece76bf
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102430910"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102617001"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-stack-edge"></a>Встроенные определения политики Azure для Azure Stack пограничных устройств
 

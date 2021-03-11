@@ -7,12 +7,12 @@ ms.reviewer: maghan
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 07/13/2020
-ms.openlocfilehash: 5e2ecf8dff432f2a0ce6b3356ce3eca7a8127932
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 09456c06f2a171ec32c1b885dc2b4e475fea5371
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100586867"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102550303"
 ---
 # <a name="monitor-and-alert-data-factory-by-using-azure-monitor"></a>Мониторинг и оповещение фабрики данных с помощью Azure Monitor
 
@@ -76,9 +76,9 @@ Azure Monitor предоставляет метрики и журналы инф
    ![Назовите свои параметры и выберите рабочую область log-Analytics.](media/data-factory-monitor-oms/monitor-oms-image2.png)
 
     > [!NOTE]
-    > Так как таблица журналов Azure не может содержать более 500 столбцов, мы **настоятельно рекомендуем** выбрать _режим для конкретного ресурса_. Дополнительные сведения см. в разделе [log Analytics известные ограничения](../azure-monitor/essentials/resource-logs.md#column-limit-in-azurediagnostics).
+    > Так как таблица журналов Azure не может содержать более 500 столбцов, мы **настоятельно рекомендуем** выбрать _режим для конкретного ресурса_. Дополнительные сведения см. в разделе [Справочник по журналам AzureDiagnostics](/azure-monitor/reference/tables/azurediagnostics#additionalfields-column).
 
-1. Нажмите кнопку **Сохранить**.
+1. Щелкните **Сохранить**.
 
 Через несколько секунд в списке параметров для этой фабрики данных появится новый параметр. Журналы диагностики передаются в эту рабочую область, как только создаются новые данные о событиях. Между созданием события и его отображением в Log Analytics может пройти до 15 минут.
 
@@ -449,7 +449,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 |**category**| Строка | Категория журналов диагностики. В качестве значения свойства задайте `ActivityRuns`. | `ActivityRuns` |
 |**level**| Строка | Уровень журналов диагностики. В качестве значения свойства задайте `Informational`. | `Informational` |
 |**operationName**| Строка | Имя действия с его состоянием. Если действие является начальным пульсом, значение свойства равно `MyActivity -` . Если действие является конечным периодом пульса, свойство имеет значение `MyActivity - Succeeded` . | `MyActivity - Succeeded` |
-|**pipelineName**| Строка | Имя конвейера. | `MyPipeline` |
+|**пипелиненаме**| Строка | Имя конвейера. | `MyPipeline` |
 |**activityName**| Строка | Имя действия. | `MyActivity` |
 |**start**| Строка | Время начала действия выполняется в формате времени в формате UTC. | `2017-06-26T20:55:29.5007959Z`|
 |**end**| Строка | Время окончания действия выполняется в формате времени в формате UTC. Если в журнале диагностики указано, что действие началось, но еще не завершено, свойство имеет значение `1601-01-01T00:00:00Z` . | `2017-06-26T20:55:29.5007959Z` |
@@ -494,7 +494,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 |**category**| Строка | Категория журналов диагностики. В качестве значения свойства задайте `PipelineRuns`. | `PipelineRuns` |
 |**level**| Строка | Уровень журналов диагностики. В качестве значения свойства задайте `Informational`. | `Informational` |
 |**operationName**| Строка | Имя конвейера и его состояние. По завершении выполнения конвейера свойство имеет значение `Pipeline - Succeeded` . | `MyPipeline - Succeeded`. |
-|**pipelineName**| Строка | Имя конвейера. | `MyPipeline` |
+|**пипелиненаме**| Строка | Имя конвейера. | `MyPipeline` |
 |**start**| Строка | Время начала действия выполняется в формате времени в формате UTC. | `2017-06-26T20:55:29.5007959Z`. |
 |**end**| Строка | Время окончания действия выполняется в формате времени в формате UTC. Если в журнале диагностики указано, что действие началось, но еще не завершено, свойство имеет значение `1601-01-01T00:00:00Z` .  | `2017-06-26T20:55:29.5007959Z` |
 |**status**| Строка | Конечное состояние выполнения конвейера. Возможные значения свойств: `Succeeded` и `Failed` . | `Succeeded`|
@@ -903,5 +903,5 @@ Log Analytics наследует схему от Monitor со следующим
 
 ![Запрос журналов выполнения пакетов служб SSIS на Log Analytics](media/data-factory-monitor-oms/log-analytics-query2.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Программное отслеживание конвейеров и управление ими](monitor-programmatically.md)

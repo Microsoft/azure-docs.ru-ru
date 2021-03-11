@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.date: 09/08/2020
 ms.custom: devx-track-java, devx-track-azurecli
 zone_pivot_groups: programming-languages-spring-cloud
-ms.openlocfilehash: 22abdb64a2349045923e148db57f683b4be87636
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.openlocfilehash: 6f25c4172b384abd487d2084f31981d16e73ee93
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92742708"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209889"
 ---
 # <a name="quickstart-provision-azure-spring-cloud-service"></a>Краткое руководство. Подготовка службы Azure Spring Cloud
 
@@ -24,7 +24,7 @@ ms.locfileid: "92742708"
 
 * Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
 * [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1). Служба Azure Spring Cloud поддерживает .NET Core 3.1 и более поздние версии.
-* [Azure CLI версии 2.0.67 или выше](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest).
+* [Azure CLI версии 2.0.67 или выше](/cli/azure/install-azure-cli).
 * [Git](https://git-scm.com/).
 
 ## <a name="install-azure-cli-extension"></a>Установка расширения Azure CLI
@@ -90,9 +90,9 @@ az extension add --name spring-cloud
 Вы можете создать экземпляр Azure Spring Cloud с помощью портала Azure или Azure CLI.  Оба метода описаны в следующих процедурах.
 ## <a name="prerequisites"></a>Предварительные требования
 
-* [установите JDK версии 8](/java/azure/jdk/?preserve-view=true&view=azure-java-stable);
+* [установите JDK версии 8](/java/azure/jdk/);
 * [Регистрация для получения подписки Azure](https://azure.microsoft.com/free/)
-* (Необязательно.) [Установите Azure CLI версии 2.0.67 или более поздней](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest) и расширение Azure Spring Cloud с помощью команды `az extension add --name spring-cloud`.
+* (Необязательно.) [Установите Azure CLI версии 2.0.67 или более поздней](/cli/azure/install-azure-cli) и расширение Azure Spring Cloud с помощью команды `az extension add --name spring-cloud`.
 * (Необязательно.) [Установите Azure Toolkit for IntelliJ](https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij/) и [выполните вход](/azure/developer/java/toolkit-for-intellij/create-hello-world-web-app#installation-and-sign-in).
 
 ## <a name="provision-an-instance-of-azure-spring-cloud"></a>Подготовка к работе экземпляра Azure Spring Cloud
@@ -103,25 +103,25 @@ az extension add --name spring-cloud
 
 1. На новой вкладке откройте [портал Azure](https://ms.portal.azure.com/). 
 
-2. В поле поиска сверху введите **Azure Spring Cloud** .
+2. В поле поиска сверху введите **Azure Spring Cloud**.
 
 3. Выберите пункт **Azure Spring Cloud** в списке результатов.
 
     ![Значок ASC — запуск](media/spring-cloud-quickstart-launch-app-portal/find-spring-cloud-start.png)
 
-4. На странице Azure Spring Cloud щелкните элемент **+ Добавить** .
+4. На странице Azure Spring Cloud щелкните элемент **+ Добавить**.
 
     ![Значок ASC — добавление](media/spring-cloud-quickstart-launch-app-portal/spring-cloud-add.png)
 
 5. Заполните форму на странице **создания** Azure Spring Cloud.  Ознакомьтесь со следующими рекомендациями:
-    - **Подписка** : Выберите подписку, на которую будет выставляться счет за этот ресурс.
+    - **Подписка**: Выберите подписку, на которую будет выставляться счет за этот ресурс.
     - **Группа ресурсов.** Советуем создавать группы ресурсов для новых ресурсов. Обратите внимание, что она будет использоваться на следующих шагах как **\<resource group name\>** .
     - **Сведения о службе или ее название.** Укажите **\<service instance name\>** .  Его длина должна быть от 4 до 32 знаков. Имя может содержать только строчные буквы, цифры и дефисы.  Первым символом в имени службы должна быть буква, а последним — буква или цифра.
     - **Расположение.** Выберите расположение для экземпляра службы.
 
     ![Начальная страница портала ASC](media/spring-cloud-quickstart-launch-app-portal/portal-start.png)
 
-6. Щелкните **Проверка и создание** .
+6. Щелкните **Проверка и создание**.
 
 > [!div class="nextstepaction"]
 > [У меня есть проблема](https://www.research.net/r/javae2e?tutorial=asc-cli-quickstart&step=public-endpoint)

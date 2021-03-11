@@ -11,6 +11,10 @@
   items:
     - name: Создание экземпляра Front Door категории "Стандартный" или "Премиум" на портале
       href: create-front-door-portal.md
+- name: Примеры
+  items:
+    - name: Шаблоны Resource Manager
+      href: resource-manager-template-samples.md
 - name: Основные понятия
   items:
     - name: Часто задаваемые вопросы о службе Front Door
