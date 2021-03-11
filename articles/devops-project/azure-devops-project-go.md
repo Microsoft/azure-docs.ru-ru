@@ -13,12 +13,12 @@ ms.topic: quickstart
 ms.date: 07/09/2018
 ms.author: mlearned
 ms.custom: mvc
-ms.openlocfilehash: 2f968bfd0c3d2884c123b82ccf132d77b117ac9a
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.openlocfilehash: 6d6181686eaeb90d4fcdae0231430623b84e2c1c
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97589038"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102548518"
 ---
 # <a name="create-a-cicd-pipeline-for-go-using-azure-devops-starter"></a>Создание конвейера CI/CD для Go с помощью Azure DevOps Starter
 
@@ -123,4 +123,4 @@ DevOps Starter создает репозиторий Git в Azure Repos или �
 См. дополнительные сведения об изменении конвейеров сборки и выпуска в соответствии с потребностями разработчиков:
 
 > [!div class="nextstepaction"]
-> [Define your multi-stage continuous deployment (CD) pipeline](/azure/devops/pipelines/release/define-multistage-release-process?view=vsts) (Настройка многоэтапного конвейера для непрерывного развертывания)
+> [Define your multi-stage continuous deployment (CD) pipeline](/azure/devops/pipelines/release/define-multistage-release-process) (Настройка многоэтапного конвейера для непрерывного развертывания)

@@ -13,12 +13,12 @@ ms.assetid: 521180dc-2cc9-43f1-ae87-2701de7ca6b8
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.openlocfilehash: 8e69803f4740a58adb4230bd82cc723221762cb4
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.openlocfilehash: 52c93bef4529f27ad38677f17209e7b48e997368
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99576622"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102548450"
 ---
 # <a name="develop-secure-applications-on-azure"></a>Разработка защищенных приложений в Azure
 В этой статье представлены действия по обеспечению безопасности и элементы управления безопасностью, которые следует учитывать при разработке приложений для облака. В статье рассматриваются вопросы и концепции безопасности, которые следует учитывать на этапах реализации и проверки [жизненного цикла разработки защищенных приложений (Майкрософт)](/previous-versions/windows/desktop/cc307891(v=msdn.10)) (SDL). Ее цель — помочь вам определить действия и службы Azure, которые можно использовать для разработки хорошо защищенного приложения.
@@ -34,7 +34,7 @@ ms.locfileid: "99576622"
 
 ### <a name="perform-code-reviews"></a>Выполнение проверок кода
 
-Перед фиксацией изменений в коде выполняйте [его проверку](/azure/devops/learn/devops-at-microsoft/code-reviews-not-primarily-finding-bugs), чтобы повысить общее качество и снизить риск возникновения ошибок. Для управления процессом проверки кода можно использовать [Visual Studio](/azure/devops/repos/tfvc/get-code-reviewed-vs?view=vsts).
+Перед фиксацией изменений в коде выполняйте [его проверку](/azure/devops/learn/devops-at-microsoft/code-reviews-not-primarily-finding-bugs), чтобы повысить общее качество и снизить риск возникновения ошибок. Для управления процессом проверки кода можно использовать [Visual Studio](/azure/devops/repos/tfvc/get-code-reviewed-vs).
 
 ### <a name="perform-static-code-analysis"></a>Статический анализ кода
 

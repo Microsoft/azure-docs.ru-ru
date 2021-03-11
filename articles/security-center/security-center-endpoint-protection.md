@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/29/2019
 ms.author: memildin
-ms.openlocfilehash: 778feda8d72101d4ae2a0f0c27549701dfb53340
-ms.sourcegitcommit: f88074c00f13bcb52eaa5416c61adc1259826ce7
+ms.openlocfilehash: 1ce20deed8b26dc5f5bebf4656dd3f1c370d766f
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92341419"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102561234"
 ---
 # <a name="endpoint-protection-assessment-and-recommendations-in-azure-security-center"></a>Оценка и рекомендации по защите конечных точек в центре безопасности Azure
 
@@ -29,9 +29,9 @@ ms.locfileid: "92341419"
 
 ## <a name="windows-defender"></a>Защитник Windows
 
-* Центр безопасности рекомендует **«установить решения Endpoint Protection на виртуальной машине»** при запуске [Get-мпкомпутерстатус](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) , а результат — **амсервицеенаблед: false.**
+* Центр безопасности рекомендует **«установить решения Endpoint Protection на виртуальной машине»** при запуске [Get-мпкомпутерстатус](/powershell/module/defender/get-mpcomputerstatus) , а результат — **амсервицеенаблед: false.**
 
-* Центр безопасности рекомендует **«разрешать проблемы работоспособности Endpoint Protection на ваших компьютерах»** при запуске [Get-мпкомпутерстатус](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) и выполнении любого из следующих условий.
+* Центр безопасности рекомендует **«разрешать проблемы работоспособности Endpoint Protection на ваших компьютерах»** при запуске [Get-мпкомпутерстатус](/powershell/module/defender/get-mpcomputerstatus) и выполнении любого из следующих условий.
 
   * Любое из следующих свойств имеет значение false:
 

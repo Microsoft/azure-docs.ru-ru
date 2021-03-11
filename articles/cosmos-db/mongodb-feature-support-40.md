@@ -7,12 +7,12 @@ ms.topic: overview
 ms.date: 03/02/2021
 author: gahl-levy
 ms.author: gahllevy
-ms.openlocfilehash: 41293f96246dd4badab000c4e7f936d825e7665a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 9eebc77c5b3d9402c766320fddfdaf05d50b574f
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101691133"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102485407"
 ---
 # <a name="azure-cosmos-dbs-api-for-mongodb-40-server-version-supported-features-and-syntax"></a>API Azure Cosmos DB для MongoDB (версии сервера 4.0): поддержка возможностей и синтаксиса
 [!INCLUDE[appliesto-mongodb-api](includes/appliesto-mongodb-api.md)]
@@ -24,6 +24,9 @@ Azure Cosmos DB — это глобально распределенная мн
 ## <a name="protocol-support"></a>Поддержка протоколов
 
 Ниже перечислены поддерживаемые операторы, а также ограничения и исключения. Любой драйвер клиента, который распознает эти протоколы, должен иметь возможность подключения к API Azure Cosmos DB для MongoDB. При использовании API Azure Cosmos DB для учетных записей MongoDB учетные записи версий 3.6+ будут иметь конечную точку в формате `*.mongo.cosmos.azure.com`, в то время как в версии 3.2 конечная точка будет в формате `*.documents.azure.com`.
+
+> [!NOTE]
+> В этой статье приведены только поддерживаемые серверные команды и не указаны функции-оболочки на стороне клиента. Функции-оболочки на стороне клиента, такие как `deleteMany()` и `updateMany()`, внутренне используют серверные команды `delete()` и `update()`. Функции, использующие поддерживаемые серверные команды, совместимы с API Azure Cosmos DB для MongoDB.
 
 ## <a name="query-language-support"></a>Поддержка языка запросов
 

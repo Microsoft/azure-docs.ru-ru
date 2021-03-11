@@ -8,12 +8,12 @@ ms.author: luisca
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 06/17/2020
-ms.openlocfilehash: 087989638193bb59001ed33c4ee253d61682d8bf
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 078a9312a7ee1b3b0eafd000928ed74348a540c3
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88935999"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102548059"
 ---
 #   <a name="language-detection-cognitive-skill"></a>Когнитивный навык распознавания языка
 
@@ -21,7 +21,7 @@ ms.locfileid: "88935999"
 
 Эта возможность особенно полезна, когда требуется предоставить язык текста в качестве входных данных для других навыков (например, [навыка анализа тональности](cognitive-search-skill-sentiment.md) или [разделения текста](cognitive-search-skill-textsplit.md)).
 
-Определение языка использует библиотеки обработки естественного языка Bing, что превышает число [поддерживаемых языков и регионов](../cognitive-services/text-analytics/language-support.md) , перечисленных для анализ текста. Точный список языков не публикуется, но включает в себя все широко знакомые языки, а также варианты, диалекты и некоторые региональные и культурные языки. Если содержимое представлено на менее часто используемом языке, можно [попробовать распознавание языка API](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c7) , чтобы узнать, возвращает ли он код. Для языков, которые не удалась распознать, возвращается ответ `unknown`.
+Определение языка использует библиотеки обработки естественного языка Bing, что превышает число [поддерживаемых языков и регионов](../cognitive-services/text-analytics/language-support.md) , перечисленных для анализ текста. Точный список языков не публикуется, но включает в себя все широко знакомые языки, а также варианты, диалекты и некоторые региональные и культурные языки. Если содержимое представлено на менее часто используемом языке, можно [попробовать распознавание языка API](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-0/operations/Languages) , чтобы узнать, возвращает ли он код. Для языков, которые не удалась распознать, возвращается ответ `(Unknown)`.
 
 > [!NOTE]
 > По мере расширения области путем увеличения частоты обработки и добавления большего количества документов или дополнительных алгоритмов ИИ, вам нужно будет [присоединить оплачиваемый ресурс Cognitive Services](cognitive-search-attach-cognitive-services.md). Плата взимается при вызове API в Cognitive Services и извлечении изображений при распознавании документов в службе "Когнитивный поиск Azure". За извлечение текста из документов плата не взимается.
@@ -35,6 +35,15 @@ Microsoft.Skills.Text.LanguageDetectionSkill
 ## <a name="data-limits"></a>Ограничения данных
 Максимальный размер записи — 50 000 знаков, как определено в [`String.Length`](/dotnet/api/system.string.length). Если необходимо разбить данные перед отправкой в навык определения языка, вы можете использовать [навык разбиения текста](cognitive-search-skill-textsplit.md).
 
+## <a name="skill-parameters"></a>Параметры навыков
+
+Параметры зависят от регистра.
+
+| Входные данные | Описание |
+|---------------------|-------------|
+| `defaultCountryHint` | Используемых Код страны ISO 3166-1 Alpha-2 2 можно использовать в качестве подсказки для модели определения языка, если не удается устранить неоднозначность языка. Дополнительные сведения см. [в анализ текста документации](../cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection.md#ambiguous-content) по этому разделу. В частности, `defaultCountryHint` параметр используется с документами, которые не указывают `countryHint` входные данные явным образом.  |
+| `modelVersion`   | Используемых Версия модели, используемая при вызове службы Анализ текста. По умолчанию будет использоваться последняя доступная версия, если она не указана. Мы рекомендуем не указывать это значение, если это не обязательно. Дополнительные сведения см. [в разделе Управление версиями модели в API анализа текста](../cognitive-services/text-analytics/concepts/model-versioning.md) . |
+
 ## <a name="skill-inputs"></a>Входные данные навыков
 
 Параметры зависят от регистра.
@@ -42,6 +51,7 @@ Microsoft.Skills.Text.LanguageDetectionSkill
 | Входные данные     | Описание |
 |--------------------|-------------|
 | `text` | Анализируемый текст.|
+| `countryHint` | Код страны ISO 3166-1 Alpha-2 2, используемый в качестве подсказки для модели определения языка, если не может устранить неоднозначность языка. Дополнительные сведения см. [в анализ текста документации](../cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection.md#ambiguous-content) по этому разделу. |
 
 ## <a name="skill-outputs"></a>Выходные данные навыка
 
@@ -60,6 +70,10 @@ Microsoft.Skills.Text.LanguageDetectionSkill
       {
         "name": "text",
         "source": "/document/text"
+      },
+      {
+        "name": "countryHint",
+        "source": "/document/countryHint"
       }
     ],
     "outputs": [
@@ -98,6 +112,14 @@ Microsoft.Skills.Text.LanguageDetectionSkill
            {
              "text": "Estamos muy felices de estar con ustedes."
            }
+      },
+      {
+        "recordId": "3",
+        "data":
+           {
+             "text": "impossible",
+             "countryHint": "fr"
+           }
       }
     ]
 ```
@@ -125,16 +147,21 @@ Microsoft.Skills.Text.LanguageDetectionSkill
               "languageName": "Spanish",
               "score": 1,
             }
+      },
+      {
+        "recordId": "3",
+        "data":
+            {
+              "languageCode": "fr",
+              "languageName": "French",
+              "score": 1,
+            }
       }
     ]
 }
 ```
 
-
-## <a name="error-cases"></a>Варианты ошибок
-Если текст написан на неподдерживаемом языке, возникает ошибка и идентификатор языка не возвращается.
-
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 + [Встроенные навыки](cognitive-search-predefined-skills.md)
 + [Определение набора навыков](cognitive-search-defining-skillset.md)

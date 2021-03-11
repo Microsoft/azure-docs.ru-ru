@@ -10,12 +10,12 @@ ms.author: mimart
 author: msmimart
 manager: celestedg
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d843755847d074e00aec9ed2830cb873b6bb3382
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: dea13444a6bd18bd67f05d93a38af70b3b7a2368
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100365418"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102556321"
 ---
 # <a name="reset-redemption-status-for-a-guest-user"></a>Сброс состояния активации для гостевого пользователя
 
@@ -43,7 +43,7 @@ New-AzureADMSInvitation -InvitedUserEmailAddress <<external email>> -SendInvitat
 
 ## <a name="use-microsoft-graph-api-to-reset-redemption-status"></a>Использование API Microsoft Graph для сброса состояния активации
 
-Используя [API приглашения Microsoft Graph](/graph/api/resources/invitation?view=graph-rest-1.0), задайте `resetRedemption` для свойства значение `true` и укажите новый адрес электронной почты в `invitedUserEmailAddress` свойстве.
+Используя [API приглашения Microsoft Graph](/graph/api/resources/invitation), задайте `resetRedemption` для свойства значение `true` и укажите новый адрес электронной почты в `invitedUserEmailAddress` свойстве.
 
 ```json
 POST https://graph.microsoft.com/beta/invitations  
@@ -72,7 +72,7 @@ ContentType: application/json
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Добавление пользователей службы совместной работы Azure Active Directory B2B с помощью PowerShell](customize-invitation-api.md#powershell)
 - [Свойства гостевого пользователя Azure AD B2B](user-properties.md)

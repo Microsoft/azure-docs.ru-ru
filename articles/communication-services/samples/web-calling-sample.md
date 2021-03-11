@@ -9,12 +9,12 @@ ms.author: mariusu
 ms.date: 10/15/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 5752f20cb433a417a684076338214cd2ea80bc8b
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: aadecd3c57f5a145efd43058a5113205d7517c0b
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101658103"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102486409"
 ---
 # <a name="get-started-with-the-web-calling-sample"></a>Начало работы с примером веб-вызова
 
@@ -23,6 +23,9 @@ ms.locfileid: "101658103"
 Этот пример был создан для разработчиков и позволяет легко приступить к работе со Службами коммуникации. Его пользовательский интерфейс делится на несколько разделов, каждый из которых содержит кнопку отображения кода, с помощью которой можно копировать код непосредственно из браузера в собственное приложение Служб коммуникации.
 
 ## <a name="get-started-with-the-web-calling-sample"></a>Начало работы с примером веб-вызова
+
+[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
+
 
 > [!IMPORTANT]
 > [Этот пример можно найти на сайте GitHub](https://github.com/Azure-Samples/communication-services-web-calling-tutorial/).

@@ -1,7 +1,7 @@
 ---
 title: Установка Micro Focus Enterprise Server 5,0 и Enterprise Developer 5,0 в Azure | Документация Майкрософт
 description: Из этой статьи вы узнаете, как установить Micro Focus Enterprise Server 5,0 и Enterprise Developer 5,0 на Microsoft Azure.
-services: virtual-machines-linux
+services: virtual-machines
 documentationcenter: ''
 author: maggsl
 ms.author: edprice
@@ -12,12 +12,12 @@ ms.date: 06/29/2020
 tags: ''
 keywords: ''
 ms.service: multiple
-ms.openlocfilehash: d9e5f9b531fc28caf8f3162a70318927d40bb923
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.openlocfilehash: 0d0a7d9060d751dbf05d39545b332c13010cbfae
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96483068"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102553584"
 ---
 # <a name="install-micro-focus-enterprise-server-50-and-enterprise-developer-50-on-azure"></a>Установка Micro Focus Enterprise Server 5,0 и Enterprise Developer 5,0 в Azure
 
@@ -29,7 +29,7 @@ ms.locfileid: "96483068"
 
 Соответствующей средой разработки для Enterprise Server является корпоративный разработчик, работающий на Microsoft Visual Studio 2017 или более поздней версии, Visual Studio Community (бесплатная для загрузки) или Eclipse. В этой статье показано, как развернуть ее с помощью виртуальной машины Windows Server 2016, поставляемой с Visual Studio 2017 или более поздней версии.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к работе, ознакомьтесь с этими предварительными условиями.
 
@@ -81,13 +81,13 @@ ms.locfileid: "96483068"
 
  ### <a name="check-for-updates"></a>Проверка обновлений
 
-После установки обязательно проверьте наличие дополнительных обновлений в виде ряда предварительных требований, например распространяемого пакета Microsoft C++ и .NET Framework, установленных вместе с Enterprise Server.
+После установки обязательно проверьте наличие дополнительных обновлений в виде ряда предварительных требований, например распространяемого пакета Microsoft C++ и платформа .NET Framework, установленных вместе с Enterprise Server.
 
 ### <a name="upload-the-license"></a>Отправка лицензии
 
 1.  Запустите администрирование лицензий Micro Focus.
 
-2.  Выберите **запустить** микропрограммное \> **Micro Focus License Manager** \> **Управление лицензиями** лицензия диспетчер лицензий, а затем перейдите на вкладку **Установка** . Выберите тип загружаемого формата лицензии: файл лицензии или код лицензии из 16 символов. Например, для файла в **файле лицензии** перейдите к файлу *, `mflic` отправленному ранее на виртуальную машину, и выберите **установить лицензии**.
+2.  Выберите **запустить** микропрограммное \>  \> **Управление лицензиями** лицензия диспетчер лицензий, а затем перейдите на вкладку **Установка** . Выберите тип загружаемого формата лицензии: файл лицензии или код лицензии из 16 символов. Например, для файла в **файле лицензии** перейдите к файлу *, `mflic` отправленному ранее на виртуальную машину, и выберите **установить лицензии**.
 
     ![На снимке экрана показано диалоговое окно Администрирование лицензий Micro Focus, в котором можно выбрать пункт Установить лицензии.](media/install-image-3.png)
 

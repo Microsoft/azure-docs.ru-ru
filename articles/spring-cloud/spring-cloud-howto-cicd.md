@@ -8,22 +8,22 @@ ms.date: 09/08/2020
 ms.author: brendm
 ms.custom: devx-track-java, devx-track-azurecli
 zone_pivot_groups: programming-languages-spring-cloud
-ms.openlocfilehash: ff54c1dc62189f2a00528c6a82abe26c667c5538
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 331ef39facb9f7cf8f069f2a238be325f53de2d0
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102038702"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102618039"
 ---
 # <a name="cicd-for-azure-spring-cloud"></a>CI/CD для Azure Веснного облака
 
-Средства непрерывной интеграции и непрерывной поставки позволяют быстро развертывать обновления для существующих приложений с минимальными усилиями и рисками. Azure DevOps помогает организовывать и контролировать эти ключевые задания. Сейчас Azure Веснного облака не предлагает конкретный подключаемый модуль Azure DevOps.  Однако вы можете интегрировать приложения с пружинным облаком с DevOps, используя [задачу Azure CLI](/azure/devops/pipelines/tasks/deploy/azure-cli?preserve-view=true&view=azure-devops).
+Средства непрерывной интеграции и непрерывной поставки позволяют быстро развертывать обновления для существующих приложений с минимальными усилиями и рисками. Azure DevOps помогает организовывать и контролировать эти ключевые задания. Сейчас Azure Веснного облака не предлагает конкретный подключаемый модуль Azure DevOps.  Однако вы можете интегрировать приложения с пружинным облаком с DevOps, используя [задачу Azure CLI](/azure/devops/pipelines/tasks/deploy/azure-cli).
 
 В этой статье показано, как использовать задачу Azure CLI с Azure "Весна Cloud" для интеграции с Azure DevOps.
 
 ## <a name="create-an-azure-resource-manager-service-connection"></a>Создание подключения к службе Azure Resource Manager
 
-Ознакомьтесь с [этой статьей](/azure/devops/pipelines/library/connect-to-azure?preserve-view=true&view=azure-devops) , чтобы узнать, как создать подключение службы Azure Resource Manager к проекту Azure DevOps. Не забудьте выбрать ту же подписку, которую вы используете для своего экземпляра облачной службы Azure весны.
+Ознакомьтесь с [этой статьей](/azure/devops/pipelines/library/connect-to-azure) , чтобы узнать, как создать подключение службы Azure Resource Manager к проекту Azure DevOps. Не забудьте выбрать ту же подписку, которую вы используете для своего экземпляра облачной службы Azure весны.
 
 ## <a name="azure-cli-task-templates"></a>Azure CLI шаблонов задач
 ::: zone pivot="programming-language-csharp"

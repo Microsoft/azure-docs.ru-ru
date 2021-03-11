@@ -99,6 +99,8 @@
       href: firewall-workbook.md
     - name: Развертывание и настройка Брандмауэра уровня "Премиум"
       href: premium-deploy.md
+    - name: Развертывание сертификатов ЦС предприятия для уровня "Премиум"
+      href: premium-deploy-certificates-enterprise-ca.md
     - name: Переход на Брандмауэр Azure уровня "Премиум"
       href: premium-migrate.md
 - name: Справочник

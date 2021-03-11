@@ -1,5 +1,5 @@
 ---
-title: Создание двойника модуля безопасности
+title: Краткое руководство. Создание двойника модуля безопасности
 description: В этом кратком руководстве объясняется, как создать двойник модуля для использования с решением "Defender для Интернета вещей".
 services: defender-for-iot
 ms.service: defender-for-iot
@@ -13,16 +13,20 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 1/21/2021
 ms.author: shhazam
-ms.openlocfilehash: 68d137caeed91e9dea2dbf3883929d85c25382aa
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
+ms.openlocfilehash: 832c8e426b57e6b447ef805f2868a6d42abe3d9d
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100523266"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102449702"
 ---
-# <a name="create-an-azureiotsecurity-module-twin"></a>Создание двойника модуля azureiotsecurity
+# <a name="quickstart-create-an-azureiotsecurity-module-twin"></a>Краткое руководство. Создание двойника модуля azureiotsecurity
 
 В этом кратком руководстве объясняется, как создать экземпляр двойника модуля _azureiotsecurity_ для новых устройств, а также создать двойники модуля для всех устройств Центра Интернета вещей в пакетном режиме.
+
+## <a name="prerequisites"></a>Предварительные требования
+
+Нет
 
 ## <a name="understanding-azureiotsecurity-module-twins"></a>Основные сведения о двойнике модуля azureiotsecurity
 

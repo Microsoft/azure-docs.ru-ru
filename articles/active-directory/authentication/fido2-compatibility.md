@@ -11,12 +11,12 @@ author: knicholasa
 manager: martinco
 ms.reviewer: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e5eb77a27a7c74ad9738a0e1784066a6a859e43
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 3f90edd5729ff5229be09bc3798082c33bdeead2
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102175374"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102632107"
 ---
 # <a name="browser-support-of-fido2-passwordless-authentication"></a>Поддержка браузера FIDO2 проверки подлинности с паролем
 
@@ -26,7 +26,7 @@ Azure Active Directory позволяет использовать [ключи �
 
 В этой таблице представлена поддержка проверки подлинности Azure Active Directory (Azure AD) и учетных записей Майкрософт (MSA). Учетные записи Майкрософт создаются потребителями для таких служб, как Xbox, Skype или Outlook.com. Поддерживаются следующие типы устройств: **USB**, связь ближнего поля (**NFC**) и Bluetooth Low Energy (**BLE**).
 
-| OS | Chrome | Chrome  | Chrome | Edge | Edge | Edge | Firefox | Firefox | Firefox |
+| ОС | Chrome | Chrome  | Chrome | Edge | Edge | Edge | Firefox | Firefox | Firefox |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | | USB | NFC | BLE | USB | NFC | BLE | USB | NFC | BLE |
 | **Windows**  | ![Chrome поддерживает USB в Windows для учетных записей AAD.][y] | ![Chrome поддерживает использование NFC в Windows для учетных записей AAD.][y] | ![Chrome поддерживает BLE в Windows для учетных записей AAD.][y] | ![Ребро поддерживает USB в Windows для учетных записей AAD.][y] | ![Ребро поддерживает использование NFC в Windows для учетных записей AAD.][y] | ![Ребро поддерживает BLE в Windows для учетных записей AAD.][y] | ![Firefox поддерживает USB в Windows для учетных записей AAD.][y] | ![Firefox поддерживает использование NFC в Windows для учетных записей AAD.][y] | ![Firefox поддерживает BLE в Windows для учетных записей AAD.][y] |
@@ -54,8 +54,7 @@ Azure Active Directory позволяет использовать [ключи �
 | ---- | ---- |
 | Chrome | 76 |
 | Edge | Windows 10, версия 1903<sup>1</sup> |
-| Firefox | Chrome |
-| чромеос | 66 |
+| Firefox | 66 |
 
 <sup>1</sup> Все версии новой Chromium поддержки Microsoft ребра на основе Fido2. Поддержка в версии Microsoft ребра Legacy была добавлена в 1903.
 

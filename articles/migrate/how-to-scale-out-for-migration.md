@@ -6,12 +6,12 @@ ms.author: anvar
 ms.manager: bsiva
 ms.topic: how-to
 ms.date: 03/02/2021
-ms.openlocfilehash: 6e81b3d62fb5b208c88257d7660f74ac25f099b8
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 1c93002a6dd97aadbf407713ab25091436bd85e0
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102048018"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102612071"
 ---
 # <a name="scale-agentless-migration-of-vmware-virtual-machines-to-azure"></a>Масштабирование переноса виртуальных машин VMware в Azure без агента
 
@@ -147,10 +147,10 @@ ms.locfileid: "102048018"
 1. Во всплывающем окне, открытом на предыдущем шаге, выберите расположение скопированного ZIP-файла конфигурации и нажмите кнопку **сохранить**.
 
 После успешного импорта файлов регистрация масштабируемого устройства завершится, и отобразится метка времени последнего успешного импорта. Вы также можете просмотреть сведения о регистрации, щелкнув **Просмотреть сведения**.
-:::image type="content" source="./media/how-to-scale-out-for-migration/import-success.png" alt-text="Импорт выполнен успешно":::
+:::image type="content" source="./media/how-to-scale-out-for-migration/import-success.png" alt-text="На снимке экрана показана регистрация масштабируемого устройства в проекте службы &quot;миграция Azure&quot;.":::
 
 На этом этапе следует повторно проверить, что масштабируемое устройство может подключиться к серверу vCenter. Нажмите кнопку Повторная **Проверка** , чтобы проверить vCenter Server подключение из масштабируемого устройства.
-:::image type="content" source="./media/how-to-scale-out-for-migration/view-sources.png" alt-text="Импорт выполнен успешно":::
+:::image type="content" source="./media/how-to-scale-out-for-migration/view-sources.png" alt-text="На снимке экрана показано, как просмотреть учетные данные и источники обнаружения для проверки.":::
 
 > [!IMPORTANT]
 > При изменении учетных данных vCenter Server на основном устройстве убедитесь, что вы повторно импортируете файлы конфигурации на масштабируемое устройство, чтобы получить последнюю конфигурацию и продолжить все текущие репликации.<br/> Если масштабируемое устройство больше не требуется, убедитесь, что вы отключили масштабируемое устройство. Дополнительные [**сведения**](./common-questions-appliance.md) об отключении масштабируемого устройства, когда это не требуется.

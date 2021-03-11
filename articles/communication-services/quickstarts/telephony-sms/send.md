@@ -11,14 +11,17 @@ ms.topic: overview
 ms.service: azure-communication-services
 ms.custom: tracking-python, devx-track-js
 zone_pivot_groups: acs-js-csharp-java-python
-ms.openlocfilehash: 061a7787183918aaee529b686c1478cd4d4b396b
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: a325f218aecadceb0936d649ece6f5877fbfa5f1
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101661602"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102486496"
 ---
 # <a name="quickstart-send-an-sms-message"></a>Краткое руководство. Отправка SMS-сообщения
+
+[!INCLUDE [Public Preview Notice](../../includes/public-preview-include.md)]
+
 
 [!INCLUDE [Regional Availability Notice](../../includes/regional-availability-include.md)]
 

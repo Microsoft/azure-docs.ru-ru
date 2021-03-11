@@ -8,12 +8,12 @@ ms.author: heidist
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 09/23/2020
-ms.openlocfilehash: 6625cd5ad91826ac5cdf8ec63382e9f94d8a2c08
-ms.sourcegitcommit: d7d5f0da1dda786bda0260cf43bd4716e5bda08b
+ms.openlocfilehash: 3ba0abe8510291351c10ba085ba7e42b8197d886
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97895946"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102553244"
 ---
 # <a name="troubleshooting-common-indexer-errors-and-warnings-in-azure-cognitive-search"></a>Устранение распространенных ошибок индексатора и предупреждений в Azure Когнитивный поиск
 
@@ -236,6 +236,8 @@ ms.locfileid: "97895946"
 
 ## <a name="warning--skill-input-languagecode-has-the-following-language-codes-xyz-at-least-one-of-which-is-invalid"></a>Внимание! ввод навыка "languageCode" имеет следующие коды языка "X, Y, Z", по крайней мере один из которых является недопустимым.
 Одно или несколько значений, переданных в необязательный `languageCode` Ввод подчиненного, не поддерживаются. Это может произойти, если вы передаете выходные данные [лангуажедетектионскилл](cognitive-search-skill-language-detection.md) в последующие навыки, а выходные данные состоят из большего числа языков, чем поддерживаются в этих нижестоящих навыках.
+
+Обратите внимание, что также может появиться предупреждение, аналогичное этому, если в `countryHint` лангуажедетектионскилл передается недопустимый вход. Если это происходит, убедитесь, что поле, используемое в источнике данных для этого входа, содержит допустимые коды стран ISO 3166-1 Alpha-2 2. Если некоторые из них являются допустимыми и некоторые из них являются недопустимыми, перейдите к следующему руководству, но замените на `languageCode` `countryHint` и `defaultLanguageCode` с `defaultCountryHint` в соответствии с вашим вариантом использования.
 
 Если известно, что все наборы данных находятся на одном языке, следует удалить [лангуажедетектионскилл](cognitive-search-skill-language-detection.md) и `languageCode` Ввод навыка и использовать `defaultLanguageCode` параметр навык для этого навыка, предполагая, что язык поддерживается для этого навыка.
 

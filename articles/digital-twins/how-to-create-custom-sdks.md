@@ -1,39 +1,44 @@
 ---
-title: Создание настраиваемых пакетов SDK для Azure Digital двойников с помощью автоотдыха
+title: Создание пакетов SDK для пользовательского языка с помощью автоотдыха
 titleSuffix: Azure Digital Twins
-description: Узнайте, как создавать пользовательские пакеты SDK для использования Azure Digital двойников с языками, отличными от C#.
+description: Узнайте, как использовать Автозапись для создания пакетов SDK для пользовательского языка для написания кода Azure Digital двойников на других языках, у которых нет опубликованных пакетов SDK.
 author: baanders
 ms.author: baanders
-ms.date: 4/24/2020
+ms.date: 3/9/2021
 ms.topic: how-to
 ms.service: digital-twins
-ms.custom: devx-track-js
-ms.openlocfilehash: e7239bfdca1dc464048c0db08488029b0868deb5
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.custom:
+- devx-track-js
+- contperf-fy21q3
+ms.openlocfilehash: 35cf54199f8f2c187ad397c21fb941111f07c4a3
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102049803"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102561846"
 ---
-# <a name="create-custom-sdks-for-azure-digital-twins-using-autorest"></a>Создание настраиваемых пакетов SDK для Azure Digital двойников с помощью функции автоотдыха
+# <a name="create-custom-language-sdks-for-azure-digital-twins-using-autorest"></a>Создание пользовательских пакетов SDK для Azure Digital двойников с помощью функции автоотдыха
 
-Сейчас единственными пакетами SDK для плоскости Data плоскость для взаимодействия с API-интерфейсами Azure Digital двойников являются .NET (C#), JavaScript и Java. Сведения об этих пакетах SDK и интерфейсах API см. в статье [*как использовать интерфейсы API и пакеты SDK для цифровых двойников Azure*](how-to-use-apis-sdks.md). Если вы работаете на другом языке, в этой статье вы узнаете, как создать собственный пакет SDK для плоскости данных на выбранном языке с помощью функции автоотдыха.
+Если вам нужно работать с Azure Digital двойников, используя язык, который не содержит [опубликованного пакета SDK для Azure Digital двойников](how-to-use-apis-sdks.md), в этой статье будет показано, как использовать автооставшуюся для создания собственного пакета SDK на выбранном языке. 
 
->[!NOTE]
-> При необходимости можно также использовать автооставшуюся для создания пакета SDK для плоскости управления. Для этого выполните действия, описанные в этой статье, используя последний файл **Swagger плоскости управления** (OpenAPI) из [папки контрольной плоскости Swagger](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/digitaltwins/resource-manager/Microsoft.DigitalTwins/) , а не из плоскости данных.
+В примерах в этой статье показано создание [пакета SDK для плоскости данных](how-to-use-apis-sdks.md#overview-data-plane-apis), но этот процесс будет работать и для создания  [пакета SDK для плоскости управления](how-to-use-apis-sdks.md#overview-control-plane-apis) .
 
-## <a name="set-up-your-machine"></a>Настройка компьютера
+## <a name="prerequisites"></a>Предварительные условия
 
-Чтобы создать пакет SDK, потребуется:
-* Функция [автоотдыха](https://github.com/Azure/autorest)версии 2.0.4413 (версия 3 сейчас не поддерживается)
-* [Node.js](https://nodejs.org) как предварительные требования для автоотдыха
-* Последний файл **Swagger** (OpenAPI) Azure Digital двойников в [папке Swagger плоскости данных](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/digitaltwins/data-plane/Microsoft.DigitalTwins)и его сопроводительной папке примеров.  Скачайте файл Swagger *digitaltwins.jsв* и его папку примеров на локальном компьютере.
+Чтобы создать пакет SDK, сначала необходимо выполнить следующую настройку на локальном компьютере:
+* Установка [**автоотдыха**](https://github.com/Azure/autorest)версии 2.0.4413 (версия 3 сейчас не поддерживается)
+* Установка [**Node.js**](https://nodejs.org), которая является предварительным условием для использования функции автоотдыха
+* Установка [ **Visual Studio**](https://visualstudio.microsoft.com/downloads/)
+* Скачайте последнюю версию файла **Swagger** (OpenAPI) Azure Digital двойников из [папки Swagger плоскости данных](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/digitaltwins/data-plane/Microsoft.DigitalTwins), а также соответствующую папку примеров. Файл Swagger называется *digitaltwins.jsв*.
+
+>[!TIP]
+> Чтобы создать **пакет SDK для плоскости управления** , выполните действия, описанные в этой статье, используя последний файл **Swagger плоскости управления** (OpenAPI) из [папки контрольной плоскости Swagger](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/digitaltwins/resource-manager/Microsoft.DigitalTwins/) , а не из плоскости данных.
 
 После того как компьютер оснащен всеми данными из приведенного выше списка, вы можете использовать автооставшуюся для создания пакета SDK.
 
-## <a name="create-the-sdk-with-autorest"></a>Создание пакета SDK с помощью автоотдыха 
+## <a name="create-the-sdk-using-autorest"></a>Создание пакета SDK с помощью функции автоотдыха 
 
-Если у вас Node.js установлен, можно выполнить следующую команду, чтобы убедиться, что установлена правильная версия "Автоустановка".
+После установки Node.js можно выполнить следующую команду, чтобы убедиться, что установлена требуемая версия "Автоустановка".
 ```cmd/sh
 npm install -g autorest@2.0.4413
 ```
@@ -51,11 +56,11 @@ autorest --input-file=digitaltwins.json --<language> --output-folder=DigitalTwin
 
 Автооставшаяся версия поддерживает широкий спектр генераторов кода языка.
 
-## <a name="add-the-sdk-to-a-visual-studio-project"></a>Добавление пакета SDK в проект Visual Studio
+## <a name="make-the-sdk-into-a-class-library"></a>Создание пакета SDK в библиотеке классов
 
-Вы можете включить файлы, созданные функцией автоотдыха, непосредственно в решение .NET. Однако, вероятно, потребуется включить пакет SDK для Digital двойников в несколько отдельных проектов (клиентские приложения, приложения функций Azure и т. д.). По этой причине может оказаться полезным создать отдельный проект (библиотеку классов .NET) из созданных файлов. Затем этот проект библиотеки классов можно включить в несколько решений в качестве ссылки на проект.
+Вы можете включить файлы, созданные функцией автоотдыха, непосредственно в решение .NET. Однако, скорее всего, потребуется включить пакет SDK для Digital двойников в несколько отдельных проектов (клиентские приложения, приложения функций Azure и многое другое). По этой причине может оказаться полезным создать отдельный проект (библиотеку классов .NET) из созданных файлов. Затем этот проект библиотеки классов можно включить в несколько решений в качестве ссылки на проект.
 
-В этом разделе приводятся инструкции по созданию пакета SDK в виде библиотеки классов, которая является собственным проектом и может быть включена в другие проекты. Эти действия зависят от **Visual Studio** (вы можете установить последнюю версию отсюда [).](https://visualstudio.microsoft.com/downloads/)
+В этом разделе приводятся инструкции по созданию пакета SDK в виде библиотеки классов, которая является собственным проектом и может быть включена в другие проекты. Эти действия зависят от **Visual Studio**.
 
 Ниже приведены шаги.
 
@@ -81,7 +86,7 @@ autorest --input-file=digitaltwins.json --<language> --output-folder=DigitalTwin
 
 Теперь можно создать проект и включить его в качестве ссылки на проект в любое написанное вами приложение Azure Digital двойников.
 
-## <a name="general-guidelines-for-generated-sdks"></a>Общие рекомендации для созданных пакетов SDK
+## <a name="tips-for-using-the-sdk"></a>Советы по использованию пакета SDK
 
 В этом разделе содержатся общие сведения и рекомендации по использованию созданного пакета SDK.
 

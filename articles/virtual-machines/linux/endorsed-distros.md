@@ -1,24 +1,25 @@
 ---
 title: Дистрибутивы Linux, рекомендованные для использования в Azure
 description: Узнайте о рекомендованных дистрибутивах Linux в Azure, включая рекомендации по Ubuntu, CentOS, Oracle и SUSE.
-services: virtual-machines-linux
+services: virtual-machines
 documentationcenter: ''
 author: danielsollondon
 manager: gwallace
 tags: azure-service-management,azure-resource-manager
 ms.assetid: 2777a526-c260-4cb9-a31a-bdfe1a55fffc
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
+ms.collection: linux
 ms.workload: infrastructure-services
 ms.tgt_pltfrm: vm-linux
 ms.topic: conceptual
 ms.date: 01/03/2021
 ms.author: guybo
-ms.openlocfilehash: 9d278582840404702bfef3e5fc9af395f659d844
-ms.sourcegitcommit: d7d5f0da1dda786bda0260cf43bd4716e5bda08b
+ms.openlocfilehash: 091a06fd608763ac7265670733890e93bf71dde1
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97898085"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547413"
 ---
 # <a name="endorsed-linux-distributions-on-azure"></a>Рекомендуемые дистрибутивы Linux в Azure
 

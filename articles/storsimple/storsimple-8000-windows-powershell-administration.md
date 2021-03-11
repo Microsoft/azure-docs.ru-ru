@@ -6,12 +6,12 @@ ms.service: storsimple
 ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: alkohli
-ms.openlocfilehash: e41d2e531a051738a31325b4ea33961bfb39e7f9
-ms.sourcegitcommit: fc8ce6ff76e64486d5acd7be24faf819f0a7be1d
+ms.openlocfilehash: 3292f337a39e2adb7dc5e78f12785ead8759f5d1
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98808026"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102611952"
 ---
 # <a name="use-windows-powershell-for-storsimple-to-administer-your-device"></a>Администрирование устройства с помощью Windows PowerShell для StorSimple
 
@@ -29,7 +29,7 @@ Windows PowerShell для StorSimple — это интерфейс команд�
 
 > [!NOTE]
 > * Командлеты Windows PowerShell для StorSimple позволяют управлять устройствами StorSimple через последовательную консоль или удаленно с помощью удаленного взаимодействия Windows PowerShell. Дополнительные сведения о каждом отдельном командлете, который можно использовать в этом интерфейсе, см. в [справочнике по командлетам Windows PowerShell для StorSimple](/powershell/module/hcs/?viewFallbackFrom=winserverr2-ps&preserve-view=true).
-> * Командлеты Azure PowerShell для StorSimple — это другая коллекция командлетов, которые позволяют автоматизировать задачи обновления и миграции StorSimple с помощью командной строки. Дополнительные сведения о командлетах Azure PowerShell для StorSimple см. в [справочной документации по командлетам Azure StorSimple](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0&viewFallbackFrom=azuresmps-3.7.0&preserve-view=true#azure).
+> * Командлеты Azure PowerShell для StorSimple — это другая коллекция командлетов, которые позволяют автоматизировать задачи обновления и миграции StorSimple с помощью командной строки. Дополнительные сведения о командлетах Azure PowerShell для StorSimple см. в [справочной документации по командлетам Azure StorSimple](/powershell/module/servicemanagement/azure.service/#azure).
 
 
 Получить доступ к Windows PowerShell для StorSimple можно одним из следующих способов.

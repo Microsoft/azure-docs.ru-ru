@@ -4,18 +4,18 @@ description: В этой статье показана архитектура д
 author: njray
 manager: edprice
 editor: edprice
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
 ms.subservice: workloads
 ms.workload: infrastructure-services
 ms.topic: how-to
 ms.date: 11/09/2018
 ms.author: edprice
-ms.openlocfilehash: 29150f229f1bd6adbbe6a335fdb91a44f3a2345b
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 08e7a594fba3e660ea1a2a8561bcdeed236b1dfb
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101675676"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102561591"
 ---
 # <a name="ibm-db2-purescale-on-azure"></a>IBM DB2 pureScale в Azure
 
@@ -40,7 +40,7 @@ ms.locfileid: "101675676"
 > [!NOTE]
 > В этой статье описывается один из подходов к миграции DB2, но есть и другие. Например, DB2 pureScale также может работать в виртуализированных локальных средах. IBM поддерживает DB2 в Microsoft Hyper-V с различными конфигурациями. Дополнительные сведения см. в статье [архитектура виртуализации DB2 пурескале](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.qb.server.doc/doc/r0061462.html) в центре знаний IBM.
 
-## <a name="architecture"></a>Architecture
+## <a name="architecture"></a>Архитектура
 
 Для поддержки высокого уровня доступности и масштабируемости в Azure для DB2 pureScale можно использовать архитектуру общих данных с горизонтальным масштабированием. Для нашей клиентской миграции использовался приведенный ниже пример архитектуры.
 

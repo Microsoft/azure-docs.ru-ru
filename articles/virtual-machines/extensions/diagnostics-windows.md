@@ -1,25 +1,19 @@
 ---
 title: Использование Azure PowerShell для включения диагностики на виртуальной машине Windows
-services: virtual-machines-windows
-documentationcenter: ''
 description: Описание процедуры включения системы диагностики Azure на виртуальной машине под управлением Windows с помощью PowerShell.
-author: mimckitt
-manager: gwallace
-editor: ''
-ms.assetid: 2e6d88f2-1980-4a24-827e-a81616a0d247
-ms.service: virtual-machines-windows
-ms.subservice: extensions
-ms.workload: infrastructure-services
-ms.tgt_pltfrm: vm-windows
 ms.topic: article
+author: amjads1
+ms.author: amjads
+ms.service: virtual-machines
+ms.subservice: extensions
+ms.collection: windows
 ms.date: 12/15/2015
-ms.author: mimckitt
-ms.openlocfilehash: 990bd7c21bec0f42034a0044b58d1589665700ec
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: e242a45e2c0f8247a1c23bf4d43a6e8b0a033d9b
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100580167"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560101"
 ---
 # <a name="use-powershell-to-enable-azure-diagnostics-in-a-virtual-machine-running-windows"></a>Включение системы диагностики Azure на виртуальной машине под управлением Windows с помощью PowerShell
 
@@ -211,6 +205,6 @@ Update-AzureVM -ServiceName $Service_Name -Name $VM_Name -VM $VM_Update.VM
     </PublicConfig>
     ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Дополнительные рекомендации по использованию системы диагностики Azure и других методов для устранения неполадок см. в статье [Включение системы диагностики Azure в облачных службах Azure](../../cloud-services/cloud-services-dotnet-diagnostics.md).
 * Пояснение различных параметров XML-конфигураций для расширения диагностики см. в статье, посвященной [схеме конфигураций диагностики](../../azure-monitor/agents/diagnostics-extension-versions.md).

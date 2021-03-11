@@ -1,25 +1,19 @@
 ---
 title: Расширение Chef для виртуальных машин Azure
 description: Сведения о развертывании клиента Chef на виртуальной машине, используя расширение Chef.
-services: virtual-machines-linux
-documentationcenter: ''
-author: axayjo
-manager: gwallace
-editor: ''
-tags: azure-resource-manager
-ms.service: virtual-machines-linux
-ms.subservice: extensions
-ms.workload: infrastructure-services
-ms.tgt_pltfrm: vm-linux
 ms.topic: article
+ms.service: virtual-machines
+ms.subservice: extensions
+ms.author: amjads
+author: amjads1
+ms.collection: linux
 ms.date: 09/21/2018
-ms.author: akjosh
-ms.openlocfilehash: 8977563c6b19754eda53686baf85f840a7583e77
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: e316bf9763dd7c2cbbab21992086eac52d108912
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94968372"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102554791"
 ---
 # <a name="chef-vm-extension-for-linux-and-windows"></a>Расширение Chef виртуальной машины для Linux и Windows
 
@@ -75,19 +69,19 @@ Chef работает во всех [операционных системах, 
 | type | `LinuxChefClient` (Linux), `ChefClient` (Windows) | строка |
 | typeHandlerVersion | `1210.13` | Строка (двойная) |
 
-### <a name="settings"></a>Параметры
+### <a name="settings"></a>Settings
 
 | Имя | Значение и пример | Тип данных | Необходим?
 | ---- | ---- | ---- | ----
-| settings/параметры_начальной_загрузки/URL-адрес_сервера_Chef | `https://api.chef.io/organizations/myorg` | Строка (URL-адрес) | Да |
-| settings/параметры_начальной_загрузки/имя_клиента_для_проверки | `myorg-validator` | строка | Да |
-| settings/runlist | `recipe[mycookbook::default]` | строка | Да |
+| settings/параметры_начальной_загрузки/URL-адрес_сервера_Chef | `https://api.chef.io/organizations/myorg` | Строка (URL-адрес) | Y |
+| settings/параметры_начальной_загрузки/имя_клиента_для_проверки | `myorg-validator` | строка | Y |
+| settings/runlist | `recipe[mycookbook::default]` | строка | Y |
 
 ### <a name="protected-settings"></a>Защищенные параметры
 
-| Имя | Пример | Тип данных | Необходим?
+| Имя | Например, . | Тип данных | Необходим?
 | ---- | ---- | ---- | ---- |
-| protectedSettings/ключ_проверки | `-----BEGIN RSA PRIVATE KEY-----\nKEYDATA\n-----END RSA PRIVATE KEY-----` | строка | Да |
+| protectedSettings/ключ_проверки | `-----BEGIN RSA PRIVATE KEY-----\nKEYDATA\n-----END RSA PRIVATE KEY-----` | строка | Y |
 
 <!--
 ### Linux-specific settings
@@ -156,6 +150,6 @@ C:\Packages\Plugins\Chef.Bootstrap.WindowsAzure.ChefClient\
 > [!NOTE]
 > Чтобы получить все остальное, непосредственно связанные с Chef, обратитесь в [службу поддержки Chef](https://www.chef.io/support/).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если в любой момент при изучении этой статьи вам потребуется дополнительная помощь, вы можете обратиться к экспертам по Azure на [форумах MSDN Azure и Stack Overflow](https://azure.microsoft.com/support/forums/). Кроме того, можно зарегистрировать обращение в службу поддержки Azure. Перейдите на [сайт поддержки Azure](https://azure.microsoft.com/support/options/) и щелкните "Получить поддержку". Дополнительные сведения об использовании службы поддержки Azure см. в статье [Часто задаваемые вопросы о поддержке Microsoft Azure](https://azure.microsoft.com/support/faq/).
