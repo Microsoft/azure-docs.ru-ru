@@ -8,12 +8,12 @@ ms.author: tagore
 author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
-ms.openlocfilehash: 989aeaa4396cebcdfec0992231cb0e5ef3e9c237
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.openlocfilehash: 5b1650edb575de8fd59ad2495dafcd628a717c02
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98741355"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102610406"
 ---
 # <a name="enable-remote-desktop-connection-for-a-role-in-azure-cloud-services-classic-using-powershell"></a>Включение подключение к удаленному рабочему столу для роли в облачных службах Azure (классическая модель) с помощью PowerShell
 
@@ -30,7 +30,7 @@ ms.locfileid: "98741355"
 В этой статье описывается включение удаленного рабочего стола для ролей облачной службы с помощью PowerShell. Сведения о компонентах, которые потребуются для выполнения инструкций в этой статье, см. в статье [Установка и настройка Azure PowerShell](/powershell/azure/). В PowerShell используется расширение удаленного рабочего стола, поэтому удаленный рабочий стол можно включить даже после развертывания приложения.
 
 ## <a name="configure-remote-desktop-from-powershell"></a>Настройка удаленного рабочего стола с помощью PowerShell
-Командлет [Set-AzureServiceRemoteDesktopExtension](/powershell/module/servicemanagement/azure.service/set-azureserviceremotedesktopextension?view=azuresmps-3.7.0&preserve-view=true) позволяет включить удаленный рабочий стол для всех или некоторых ролей в развернутой облачной службе. Он позволяет указать имя и пароль пользователя удаленного рабочего стола с помощью параметра *Credential* , который принимает объект PSCredential.
+Командлет [Set-AzureServiceRemoteDesktopExtension](/powershell/module/servicemanagement/azure.service/set-azureserviceremotedesktopextension) позволяет включить удаленный рабочий стол для всех или некоторых ролей в развернутой облачной службе. Он позволяет указать имя и пароль пользователя удаленного рабочего стола с помощью параметра *Credential* , который принимает объект PSCredential.
 
 Если вы используете PowerShell в интерактивном режиме, то можете задать объект PSCredential, вызвав командлет [Get-Credentials](/powershell/module/microsoft.powershell.security/get-credential) .
 
@@ -53,7 +53,7 @@ ConvertTo-SecureString -String "Password123" -AsPlainText -Force | ConvertFrom-S
 
 Чтобы создать объект учетных данных из файла с надежным паролем, необходимо считать содержимое файла и преобразовать его обратно в защищенную строку с помощью командлета [ConvertTo-SecureString](/powershell/module/microsoft.powershell.security/convertto-securestring).
 
-Командлет [Set-AzureServiceRemoteDesktopExtension](/powershell/module/servicemanagement/azure.service/set-azureserviceremotedesktopextension?view=azuresmps-3.7.0&preserve-view=true) принимает также параметр *Expiration* , который указывает значение **DateTime** , определяющее дату и время истечения срока действия учетной записи пользователя. Например, можно задать срок действия учетной записи, который истечет через несколько дней.
+Командлет [Set-AzureServiceRemoteDesktopExtension](/powershell/module/servicemanagement/azure.service/set-azureserviceremotedesktopextension) принимает также параметр *Expiration* , который указывает значение **DateTime** , определяющее дату и время истечения срока действия учетной записи пользователя. Например, можно задать срок действия учетной записи, который истечет через несколько дней.
 
 В этом примере показано, как установить расширение удаленного рабочего стола для облачной службы с помощью PowerShell:
 
@@ -71,7 +71,7 @@ Set-AzureServiceRemoteDesktopExtension -ServiceName $servicename -Credential $cr
 
 ## <a name="remote-desktop-into-a-role-instance"></a>Подключение к экземпляру роли по протоколу удаленного рабочего стола
 
-Командлет [Get-AzureRemoteDesktopFile](/powershell/module/servicemanagement/azure.service/get-azureremotedesktopfile?view=azuresmps-3.7.0&preserve-view=true) можно использовать, чтобы добавить удаленный рабочий стол для определенного экземпляра роли облачной службы. Можно использовать параметр *LocalPath* , чтобы скачать RDP-файл на локальный компьютер. Вы можете также использовать параметр *Launch* , чтобы открыть диалоговое окно "Подключение к удаленному рабочему столу" для доступа к экземпляру роли облачной службы.
+Командлет [Get-AzureRemoteDesktopFile](/powershell/module/servicemanagement/azure.service/get-azureremotedesktopfile) можно использовать, чтобы добавить удаленный рабочий стол для определенного экземпляра роли облачной службы. Можно использовать параметр *LocalPath* , чтобы скачать RDP-файл на локальный компьютер. Вы можете также использовать параметр *Launch* , чтобы открыть диалоговое окно "Подключение к удаленному рабочему столу" для доступа к экземпляру роли облачной службы.
 
 ```powershell
 Get-AzureRemoteDesktopFile -ServiceName $servicename -Name "WorkerRole1_IN_0" -Launch
@@ -79,7 +79,7 @@ Get-AzureRemoteDesktopFile -ServiceName $servicename -Name "WorkerRole1_IN_0" -L
 
 ## <a name="check-if-remote-desktop-extension-is-enabled-on-a-service"></a>Убедитесь, что расширение удаленного рабочего стола включено в службе.
 
-Командлет [Get-AzureServiceRemoteDesktopExtension](/powershell/module/servicemanagement/azure.service/get-azureremotedesktopfile?view=azuresmps-3.7.0&preserve-view=true) показывает, включен ли удаленный рабочий стол в развернутой службе. Он возвращает имя пользователя удаленного рабочего стола и роли, для которых включено расширение удаленного рабочего стола. По умолчанию это выполняется в слоте развертывания, и вы можете выбрать слот промежуточного развертывания.
+Командлет [Get-AzureServiceRemoteDesktopExtension](/powershell/module/servicemanagement/azure.service/get-azureremotedesktopfile) показывает, включен ли удаленный рабочий стол в развернутой службе. Он возвращает имя пользователя удаленного рабочего стола и роли, для которых включено расширение удаленного рабочего стола. По умолчанию это выполняется в слоте развертывания, и вы можете выбрать слот промежуточного развертывания.
 
 ```powershell
 Get-AzureServiceRemoteDesktopExtension -ServiceName $servicename
@@ -89,7 +89,7 @@ Get-AzureServiceRemoteDesktopExtension -ServiceName $servicename
 
 Если вы уже включили расширение удаленного рабочего стола в развернутой службе и хотите обновить параметры удаленного рабочего стола, то сначала удалите расширение удаленного рабочего стола. Затем снова включите его с новыми параметрами. Например, если вы хотите задать новый пароль для учетной записи удаленного пользователя или ее срок действия истек. Данное действие необходимо только для существующих развертываний, в которых включено расширение удаленного рабочего стола. К новым развертываниям можно непосредственно применить расширение.
 
-Чтобы удалить расширение удаленного рабочего стола из развернутой службы, используйте командлет [Remove-AzureServiceRemoteDesktopExtension](/powershell/module/servicemanagement/azure.service/remove-azureserviceremotedesktopextension?view=azuresmps-3.7.0&preserve-view=true) . При необходимости можно также указать слот развертывания и роль, для которой необходимо удалить удаленный рабочий стол.
+Чтобы удалить расширение удаленного рабочего стола из развернутой службы, используйте командлет [Remove-AzureServiceRemoteDesktopExtension](/powershell/module/servicemanagement/azure.service/remove-azureserviceremotedesktopextension) . При необходимости можно также указать слот развертывания и роль, для которой необходимо удалить удаленный рабочий стол.
 
 ```powershell
 Remove-AzureServiceRemoteDesktopExtension -ServiceName $servicename -UninstallConfiguration

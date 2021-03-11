@@ -215,7 +215,7 @@
     - name: Рекомендации по изменению размера виртуальной машины
       href: /windows-server/remote/remote-desktop-services/virtual-machine-recs?context=/azure/virtual-desktop/context/context
     - name: интерфейс командной строки Azure (CLI)
-      href: /cli/azure/ext/desktopvirtualization/?view=azure-cli-latest
+      href: /cli/azure/ext/desktopvirtualization/
     - name: Примеры сценариев Azure
       href: /azure/architecture/example-scenario/wvd/windows-virtual-desktop
     - name: Обнаружение адреса электронной почты
@@ -223,7 +223,7 @@
 - name: Ресурсы
   items:
     - name: PowerShell
-      href: /powershell/module/az.desktopvirtualization/?view=azps-4.2.0#desktopvirtualization
+      href: /powershell/module/az.desktopvirtualization/#desktopvirtualization
     - name: Справочник по REST API
       href: /rest/api/desktopvirtualization/
     - name: Средство оценки удобства работы

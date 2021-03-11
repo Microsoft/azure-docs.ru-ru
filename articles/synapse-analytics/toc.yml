@@ -340,15 +340,12 @@
                 - name: Хранимые процедуры
                   href: sql/develop-stored-procedures.md
                 - name: Transactions
-                  href: sql/develop-transactions.md
-                - name: Transactions
                   items:
-                    - name: Бессерверный пул SQL
+                    - name: Транзакции выделенного пула SQL
+                      href: sql/develop-transactions.md
+                    - name: Рекомендации по транзакциям выделенного пула SQL
                       displayname: 'Transaction, best, practices'
                       href: sql/develop-transaction-best-practices.md
-                    - name: Выделенный пул SQL
-                      displayname: 'Transactions, best, practices'
-                      href: ./sql-data-warehouse/sql-data-warehouse-develop-best-practices-transactions.md?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json
                 - name: Пользовательские схемы
                   href: sql/develop-user-defined-schemas.md
                 - name: Присвоение значения переменной
@@ -1151,7 +1148,7 @@
 - name: Справочник
   items:
     - name: Azure CLI
-      href: /cli/azure/ext/synapse/?view=azure-cli-latest
+      href: /cli/azure/ext/synapse/
     - name: Типы параметров сортировки баз данных
       href: sql/reference-collation-types.md?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json
     - name: Go

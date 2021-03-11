@@ -1,5 +1,5 @@
 ---
-title: Создание двойника модуля для микроагента Defender для Интернета вещей (предварительная версия)
+title: Создание двойника модуля микроагента Defender для Интернета вещей
 titleSuffix: Azure Defender for IoT
 description: Сведения о том, как создать отдельные двойники модуля DefenderIotMicroAgent для новых устройств.
 author: shhazam-ms
@@ -8,14 +8,14 @@ ms.author: shhazam
 ms.date: 1/20/2021
 ms.topic: quickstart
 ms.service: azure
-ms.openlocfilehash: f14f253960b628f2bf8052e92dbec3c897a205db
-ms.sourcegitcommit: 2501fe97400e16f4008449abd1dd6e000973a174
+ms.openlocfilehash: ea82fea89a9e81e66be6b3060aad067d3ceb8f5f
+ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99820846"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102123009"
 ---
-# <a name="create-a-defender-iot-micro-agent-module-twin-preview"></a>Создание двойника модуля для микроагента Defender для Интернета вещей (предварительная версия)
+# <a name="create-a-defender-iot-micro-agent-module-twin"></a>Создание двойника модуля микроагента Defender для Интернета вещей 
 
 Вы можете создать отдельные двойники модуля  **DefenderIotMicroAgent** для новых устройств. Вы также можете создать двойники модуля для всех устройств в Центре Интернета вещей в пакетном режиме. 
 

@@ -11,12 +11,12 @@ ms.reviewer: larryfr
 ms.date: 11/16/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, deploy, devx-track-azurecli
-ms.openlocfilehash: 749ef16139bbab2742c43a81e985fb0a49e9393b
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 440723167ded15933ba46a3a58f9a873496bd6a7
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102519339"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102609368"
 ---
 # <a name="deploy-a-model-using-a-custom-docker-base-image"></a>Развертывание модели с помощью пользовательского базового образа DOCKER
 
@@ -354,4 +354,4 @@ az ml model deploy -n myservice -m mymodel:1 --ic inferenceconfig.json --dc depl
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте больше о том, [где развертывать и как](how-to-deploy-and-where.md).
-* Узнайте, как [обучать и развертывать модели машинного обучения с помощью Azure pipelines](/azure/devops/pipelines/targets/azure-machine-learning?view=azure-devops&preserve-view=true).
+* Узнайте, как [обучать и развертывать модели машинного обучения с помощью Azure pipelines](/azure/devops/pipelines/targets/azure-machine-learning).

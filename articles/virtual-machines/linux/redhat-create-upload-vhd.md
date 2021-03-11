@@ -2,18 +2,20 @@
 title: Создание и передача виртуального жесткого диска Red Hat Enterprise Linux для использования в Azure
 description: Узнайте, как создать и передать виртуальный жесткий диск (VHD) Azure, содержащий операционную систему RedHat Linux.
 author: danielsollondon
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
+ms.subservice: redhat
+ms.collection: linux
 ms.workload: infrastructure-services
 ms.tgt_pltfrm: vm-linux
 ms.topic: how-to
 ms.date: 12/01/2020
 ms.author: danis
-ms.openlocfilehash: 07c5be6339048517169f14032e8c37b1dc5fbf01
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: ff22010f12a7d76e60b629c4c1c4e24946d4af5a
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100546624"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102552972"
 ---
 # <a name="prepare-a-red-hat-based-virtual-machine-for-azure"></a>Подготовка виртуальной машины на основе Red Hat для Azure
 
@@ -23,7 +25,7 @@ ms.locfileid: "100546624"
 
 В этом разделе показано, как подготовить виртуальную машину [RHEL 6](#rhel-6-using-hyper-v-manager), [RHEL 7](#rhel-7-using-hyper-v-manager)или [RHEL 8](#rhel-8-using-hyper-v-manager) с помощью диспетчера Hyper-V.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 В этом разделе предполагается, что вы уже получили ISO-файл с веб-сайта Red Hat и установили образ RHEL на виртуальный жесткий диск. Дополнительные сведения о том, как использовать диспетчер Hyper-V для установки образа операционной системы, см. в статье [Установка Hyper-V и создание виртуальной машины](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh846766(v=ws.11)).
 
 **Замечания по установке RHEL**
@@ -199,7 +201,7 @@ ms.locfileid: "100546624"
     # sudo subscription-manager register --auto-attach --username=XXX --password=XXX
     ```
 
-1. Измените строку загрузки ядра в конфигурации grub, чтобы включить дополнительные параметры ядра для Azure. Для этого откройте файл `/etc/default/grub` в текстовом редакторе и измените параметр `GRUB_CMDLINE_LINUX`. Например:
+1. Измените строку загрузки ядра в конфигурации grub, чтобы включить дополнительные параметры ядра для Azure. Для этого откройте файл `/etc/default/grub` в текстовом редакторе и измените параметр `GRUB_CMDLINE_LINUX`. Пример:
 
     
     ```config-grub
@@ -940,7 +942,7 @@ ms.locfileid: "100546624"
 
 В этом разделе показано, как подготовить [RHEL 6](#rhel-6-using-vmware) или [RHEL 7](#rhel-6-using-vmware)  дистрибутив из VMware.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 В этом разделе предполагается, что вы уже установили виртуальную машину RHEL в VMWare. Дополнительные сведения об установке операционной системы на виртуальной машине VMware см. [здесь](https://partnerweb.vmware.com/GOSIG/home.html).
 
 * При установке операционной системы Linux мы рекомендуем использовать стандартные разделы, а не LVM (который зачастую используется по умолчанию при установке). Это позволит избежать конфликта имен LVM при клонировании виртуальных машин, особенно если диск с OC может быть подключен к другой идентичной виртуальной машине в целях устранения неполадок. При желании на дисках с данными можно использовать LVM или RAID.
@@ -999,7 +1001,7 @@ ms.locfileid: "100546624"
     # subscription-manager repos --enable=rhel-6-server-extras-rpms
     ```
 
-1. Измените строку загрузки ядра в конфигурации grub, чтобы включить дополнительные параметры ядра для Azure. Для этого откройте файл `/etc/default/grub` в текстовом редакторе и измените параметр `GRUB_CMDLINE_LINUX`. Например:
+1. Измените строку загрузки ядра в конфигурации grub, чтобы включить дополнительные параметры ядра для Azure. Для этого откройте файл `/etc/default/grub` в текстовом редакторе и измените параметр `GRUB_CMDLINE_LINUX`. Пример:
 
     ```config-grub
     GRUB_CMDLINE_LINUX="rootdelay=300 console=ttyS0 earlyprintk=ttyS0"
@@ -1431,7 +1433,7 @@ ms.locfileid: "100546624"
 
 1. Откройте параметры виртуальной машины:
 
-    а.  Подключите новый виртуальный жесткий диск к виртуальной машине. Выберите параметры **VHD Format** (Формат VHD) и **Фиксированный размер**.
+    a.  Подключите новый виртуальный жесткий диск к виртуальной машине. Выберите параметры **VHD Format** (Формат VHD) и **Фиксированный размер**.
 
     b.  Подключите установочный ISO-образ к DVD-дисководу.
 
@@ -1466,7 +1468,7 @@ add_drivers+=" hv_vmbus hv_netvsc hv_storvsc "
 
 Дополнительные сведения см. в описании [повторного создания initramfs](https://access.redhat.com/solutions/1958).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Теперь виртуальный жесткий диск Red Hat Enterprise Linux можно использовать для создания новых виртуальных машин Azure. Если вы отправляете VHD-файл в Azure впервые, см. раздел [Вариант 1. Передача VHD](upload-vhd.md#option-1-upload-a-vhd).
 * Чтобы получить дополнительные сведения о низкоуровневых оболочках, сертифицированных для запуска Red Hat Enterprise Linux, посетите [веб-сайт Red Hat](https://access.redhat.com/certified-hypervisors).
 * Чтобы узнать больше об использовании готовых образов RHEL BYOS, перейдите на страницу документации по [BYOS](../workloads/redhat/byos.md).

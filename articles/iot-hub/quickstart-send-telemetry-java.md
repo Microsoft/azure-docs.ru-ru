@@ -16,12 +16,12 @@ ms.custom:
 - devx-track-java
 - devx-track-azurecli
 ms.date: 01/27/2021
-ms.openlocfilehash: c0f1272bf195c6d5ef2dfe88cc6541f731fa51c8
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: df6673f6e8e448b0208ee53c17cf86f55d6d9f8f
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98928573"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102219171"
 ---
 # <a name="quickstart-send-telemetry-to-an-azure-iot-hub-and-read-it-with-a-java-application"></a>Краткое руководство. Отправка данных телеметрии в Центр Интернета вещей и их чтение с помощью приложения Java
 
@@ -33,7 +33,7 @@ ms.locfileid: "98928573"
 
 * Учетная запись Azure с активной подпиской. [Создайте бесплатно](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio).
 
-* Пакет SDK для Java SE 8. В статье [Долгосрочная поддержка Java для Azure и Azure Stack](/java/azure/jdk/?view=azure-java-stable&preserve-view=true) выберите пункт **Java 8** в разделе **Долгосрочная поддержка**.
+* Пакет SDK для Java SE 8. В статье [Долгосрочная поддержка Java для Azure и Azure Stack](/java/azure/jdk/) выберите пункт **Java 8** в разделе **Долгосрочная поддержка**.
 
     Текущую версию Java на компьютере, на котором ведется разработка, можно проверить, используя следующую команду:
 

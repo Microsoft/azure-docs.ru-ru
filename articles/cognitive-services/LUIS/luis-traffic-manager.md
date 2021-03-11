@@ -9,12 +9,12 @@ ms.service: cognitive-services
 ms.subservice: language-understanding
 ms.topic: how-to
 ms.date: 08/20/2019
-ms.openlocfilehash: 6fc5bea71909d0e17b4ef0256ab0cad644dacbb3
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.openlocfilehash: 37c4bd2af080a76e93bc9599f06e4d502985979f
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95993828"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102609657"
 ---
 # <a name="use-microsoft-azure-traffic-manager-to-manage-endpoint-quota-across-keys"></a>Использование диспетчера трафика Microsoft Azure для распределения квоты конечной точки на несколько ключей
 Служба "Распознавание речи" (LUIS) позволяет увеличить квоту запросы конечной точки за пределы квоты для одного ключа. Для этого создайте дополнительные ключи для LUIS и добавьте их в приложение LUIS на странице **Публикация** в разделе **Ресурсы и ключи**.
@@ -369,9 +369,9 @@ dns.resolveAny('luis-dns-parent.trafficmanager.net', (err, ret) => {
 ## <a name="clean-up"></a>Очистка
 Удалите два ключа конечной точки LUIS, три профиля диспетчера трафика и группу ресурсов, содержащую эти пять ресурсов. Это необходимо сделать на портале Azure. Удалите пять ресурсов из списка ресурсов. Затем удалите группу ресурсов.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-Чтобы узнать, как добавить код управления трафиком в бот BotFramework, ознакомьтесь с вариантами [ПО промежуточного слоя](/azure/bot-service/bot-builder-create-middleware?tabs=csaddmiddleware%252ccsetagoverwrite%252ccsmiddlewareshortcircuit%252ccsfallback%252ccsactivityhandler&view=azure-bot-service-4.0) в BotFramework версии 4.
+Чтобы узнать, как добавить код управления трафиком в бот BotFramework, ознакомьтесь с вариантами [ПО промежуточного слоя](/azure/bot-service/bot-builder-create-middleware?tabs=csaddmiddleware%252ccsetagoverwrite%252ccsmiddlewareshortcircuit%252ccsfallback%252ccsactivityhandler) в BotFramework версии 4.
 
 [traffic-manager-marketing]: https://azure.microsoft.com/services/traffic-manager/
 [traffic-manager-docs]: ../../traffic-manager/index.yml

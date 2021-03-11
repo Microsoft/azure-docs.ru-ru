@@ -11,12 +11,12 @@ ms.author: amsaied
 ms.reviewer: sgilley
 ms.date: 02/11/2021
 ms.custom: tracking-python
-ms.openlocfilehash: 5e1af60cccb48195db38e420dfe3df01f404669c
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: bbe28f4fda32ce7d55a437e4ac944dc206f436ee
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100378011"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102522365"
 ---
 # <a name="tutorial-use-your-own-data-part-4-of-4"></a>Руководство по использованию собственных данных (часть 4 из 4)
 
@@ -200,7 +200,7 @@ if __name__ == "__main__":
       `dataset = Dataset.File.from_files( ... )`
    :::column-end:::
    :::column span="2":::
-      Параметр [dataset](/python/api/azureml-core/azureml.core.dataset.dataset?preserve-view=true&view=azure-ml-py) используется для ссылки на данные, отправленные в хранилище BLOB-объектов Azure. Наборы данных — это слой абстрагирования над вашими данными, предназначенный для повышения надежности.
+      Параметр [dataset](/python/api/azureml-core/azureml.core.dataset.dataset) используется для ссылки на данные, отправленные в хранилище BLOB-объектов Azure. Наборы данных — это слой абстрагирования над вашими данными, предназначенный для повышения надежности.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -208,7 +208,7 @@ if __name__ == "__main__":
       `config = ScriptRunConfig(...)`
    :::column-end:::
    :::column span="2":::
-      [ScriptRunConfig](/python/api/azureml-core/azureml.core.scriptrunconfig?preserve-view=true&view=azure-ml-py) изменен для включения списка аргументов, которые будут переданы в `train.py`. Аргумент `dataset.as_named_input('input').as_mount()` означает, что указанный каталог будет _подключен_ к целевому объекту вычислений.
+      [ScriptRunConfig](/python/api/azureml-core/azureml.core.scriptrunconfig) изменен для включения списка аргументов, которые будут переданы в `train.py`. Аргумент `dataset.as_named_input('input').as_mount()` означает, что указанный каталог будет _подключен_ к целевому объекту вычислений.
    :::column-end:::
 :::row-end:::
 

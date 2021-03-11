@@ -5,18 +5,20 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 03/01/2021
 ms.custom: template-concept
-ms.openlocfilehash: ab89c012c985afa8d7375ff94d0f55b0ea6941cc
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: ffdb146b26e83e1973c1d1bfee130eabfa09ea6a
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102449464"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102613958"
 ---
 # <a name="guide-for-running-functions-on-net-50-in-azure"></a>Инструкции по выполнению функций в .NET 5,0 в Azure
 
-_Поддержка .NET 5,0 сейчас доступна в предварительной версии._
-
 Эта статья содержит вводные сведения об использовании C# для разработки функций изолированного процесса .NET, которые выполняются вне процесса в функциях Azure. Выполнение вне процесса позволяет отделить код функции от среды выполнения функций Azure. Он также позволяет создавать и запускать функции, предназначенные для текущего выпуска .NET 5,0. 
+
+| Начало работы | Основные понятия| Примеры |
+|--|--|--| 
+| <ul><li>[Использование Visual Studio Code](dotnet-isolated-process-developer-howtos.md?pivots=development-environment-vscode)</li><li>[Использование средств командной строки](dotnet-isolated-process-developer-howtos.md?pivots=development-environment-cli)</li><li>[Использование Visual Studio](dotnet-isolated-process-developer-howtos.md?pivots=development-environment-vs)</li></ul> | <ul><li>[Сравнение вариантов размещения](functions-scale.md)</li><li>[Мониторинг](functions-monitoring.md)</li> | <ul><li>[Образцы ссылок](https://github.com/Azure/azure-functions-dotnet-worker/tree/main/samples)</li></ul> |
 
 Если вам не требуется поддержка .NET 5,0 или запуск функций вне процесса, вместо этого может потребоваться [разработка функций библиотеки классов C#](functions-dotnet-class-library.md).
 
@@ -80,11 +82,12 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 
 Наличие доступа к конвейеру построителя узлов означает, что во время инициализации можно задать любые конфигурации для конкретного приложения. Эти конфигурации применяются к приложению-функции, выполняемому в отдельном процессе. Чтобы внести изменения в узел функций или в конфигурацию триггера и привязки, по-прежнему необходимо использовать [host.jsв файле](functions-host-json.md).      
 
-В следующем примере показано, как добавить конфигурацию `args` , которая считывается как аргументы командной строки: 
+<!--The following example shows how to add configuration `args`, which are read as command-line arguments: 
  
 :::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" id="docsnippet_configure_app" :::
 
-`ConfigureAppConfiguration`Метод используется для настройки оставшейся части процесса сборки и приложения. В этом примере также используется [IConfigurationBuilder](/dotnet/api/microsoft.extensions.configuration.iconfigurationbuilder?view=dotnet-plat-ext-5.0&preserve-view=true), который упрощает добавление нескольких элементов конфигурации. Поскольку `ConfigureAppConfiguration` возвращает один и тот же экземпляр [`IConfiguration`](/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0&preserve-view=true) , можно также вызвать его несколько раз, чтобы добавить несколько элементов конфигурации. Доступ к полному набору конфигураций можно получить [`HostBuilderContext.Configuration`](/dotnet/api/microsoft.extensions.hosting.hostbuildercontext.configuration?view=dotnet-plat-ext-5.0&preserve-view=true) и в, и в [`IHost.Services`](/dotnet/api/microsoft.extensions.hosting.ihost.services?view=dotnet-plat-ext-5.0&preserve-view=true) .
+The `ConfigureAppConfiguration` method is used to configure the rest of the build process and application. This example also uses an [IConfigurationBuilder](/dotnet/api/microsoft.extensions.configuration.iconfigurationbuilder?view=dotnet-plat-ext-5.0&preserve-view=true), which makes it easier to add multiple configuration items. Because `ConfigureAppConfiguration` returns the same instance of [`IConfiguration`](/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0&preserve-view=true), you can also just call it multiple times to add multiple configuration items.-->  
+Доступ к полному набору конфигураций можно получить [`HostBuilderContext.Configuration`](/dotnet/api/microsoft.extensions.hosting.hostbuildercontext.configuration?view=dotnet-plat-ext-5.0&preserve-view=true) и в, и в [`IHost.Services`](/dotnet/api/microsoft.extensions.hosting.ihost.services?view=dotnet-plat-ext-5.0&preserve-view=true) .
 
 Дополнительные сведения о конфигурации см. [в разделе Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration/?view=aspnetcore-5.0&preserve-view=true). 
 
@@ -98,13 +101,13 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 
 Дополнительные сведения см. [в разделе внедрение зависимостей в ASP.NET Core](/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0&preserve-view=true).
 
-### <a name="middleware"></a>ПО промежуточного слоя
+<!--### Middleware
 
-.NET изолирует также поддерживает регистрацию по промежуточного слоя, используя модель, аналогичную той, что существует в ASP.NET. Эта модель дает возможность вставлять логику в конвейер вызовов, а также до и после выполнения функций.
+.NET isolated also supports middleware registration, again by using a model similar to what exists in ASP.NET. This model gives you the ability to inject logic into the invocation pipeline, and before and after functions execute.
 
-Пока не предоставлен полный набор API-интерфейсов для регистрации по промежуточного слоя, поддерживается регистрация по промежуточного слоя, и мы добавили пример в пример приложения в папке по промежуточного слоя.
+While the full middleware registration set of APIs is not yet exposed, we do support middleware registration and have added an example to the sample application under the Middleware folder.
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" id="docsnippet_middleware" :::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/FunctionApp/Program.cs" id="docsnippet_middleware" :::-->
 
 ## <a name="execution-context"></a>Контекст выполнения
 
@@ -180,12 +183,15 @@ _Поддержка .NET 5,0 сейчас доступна в предварит
 | Устойчивые функции | [Поддерживается](durable/durable-functions-overview.md) | Не поддерживается | 
 | Императивные привязки | [Поддерживается](functions-dotnet-class-library.md#binding-at-runtime) | Не поддерживается |
 | function.jsартефакта | Сформировано | Не создано |
-| Конфигурация | [host.json](functions-host-json.md) | [host.js](functions-host-json.md) и [Настраиваемая инициализация](#configuration) |
+| Конфигурация | [host.json](functions-host-json.md) | [host.js](functions-host-json.md) и настраиваемая инициализация |
 | Внедрение зависимостей | [Поддерживается](functions-dotnet-dependency-injection.md)  | [Поддерживается](#dependency-injection) |
-| ПО промежуточного слоя | Не поддерживается | [Поддерживается](#middleware) |
+| ПО промежуточного слоя | Не поддерживается | Поддерживается |
 | Время холодного запуска | "Typical" (Стандартный) | Больше времени из-за JIT-запуска. Для уменьшения возможных задержек запустите в Linux вместо Windows. |
 | ReadyToRun | [Поддерживается](functions-dotnet-class-library.md#readytorun) | _TBD_ |
 
+## <a name="known-issues"></a>Известные проблемы
+
+Дополнительные сведения о способах устранения проблем, связанных с функциями изолированных процессов .NET, см. на [этой странице известных проблем](https://aka.ms/AAbh18e). Чтобы сообщить о проблемах, [Создайте проблему в этом репозитории GitHub](https://github.com/Azure/azure-functions-dotnet-worker/issues/new/choose).  
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

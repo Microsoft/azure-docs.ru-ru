@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/20/2021
 ms.author: kgremban
 monikerRange: =iotedge-2018-06
-ms.openlocfilehash: 9d6bb9da67f66f46e5c72d5d64b8b6c111c98e08
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.openlocfilehash: 63538661cceb7e1bdd4151a3592ccbd4de0033b0
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102215363"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102612020"
 ---
 # <a name="what-is-azure-iot-edge-for-linux-on-windows-preview"></a>Что такое Azure IoT Edge для Linux в Windows (предварительная версия)
 
@@ -28,7 +28,7 @@ IoT Edge для Linux в Windows работает путем запуска ви
 >[!NOTE]
 >Рекомендуется принять наши [опросы по продуктам](https://aka.ms/AzEFLOW-Registration) , чтобы помочь нам улучшить Azure IOT Edge для Linux в Windows на основе IOT Edge фоновых данных и целей. Этот опрос также можно использовать для регистрации будущих Azure IoT Edge для объявлений Linux в Windows.
 
-## <a name="components"></a>Components
+## <a name="components"></a>Компоненты
 
 IoT Edge для Linux в Windows использует следующие компоненты, чтобы разрешить рабочим нагрузкам Linux и Windows параллельно работать друг с другом и легко взаимодействовать:
 
@@ -52,13 +52,11 @@ IoT Edge для Linux в Windows подчеркивает взаимодейст
 
 IoT Edge для Linux в Windows в настоящее время находится в [общедоступной предварительной версии](https://azure.microsoft.com/support/legal/preview-supplemental-terms/). Процессы установки и управления могут отличаться от общих для общедоступных функций.
 
-В настоящее время IoT Edge для Linux в Windows использует предварительную версию Windows Insider Preview центра администрирования Windows. Дополнительные сведения о программе предварительной оценки Windows и регистрации см. в статье [что такое программа предварительной оценки Windows?](https://insider.windows.com/about-windows-insider-program).
-
 ## <a name="support"></a>Поддержка
 
 Используйте IoT Edge каналы поддержки и обратной связи, чтобы получить помощь в IoT Edge для Linux в Windows.
 
-**Отчеты об ошибках** — ошибки могут быть получены на [странице "проблемы](https://github.com/azure/iotedge/issues) " IOT Edge проекте с открытым кодом. 
+**Отчеты об ошибках** — ошибки могут быть получены на [странице "проблемы](https://github.com/azure/iotedge/issues) " IOT Edge проекте с открытым кодом. Ошибки, связанные с Azure IoT Edge для Linux в Windows, можно получить на [странице проблем iotedge-ефлов](https://github.com/azure/iotedge-eflow/issues).
 
 **Служба поддержки пользователей корпорации Майкрософт**. Пользователи, приобретающие [план поддержки,](https://azure.microsoft.com/support/plans/) могут обращаться в службу поддержки пользователей корпорации Майкрософт, создав запрос прямо на [портале Azure](https://ms.portal.azure.com/signin/index/?feature.settingsportalinstance=mpac).
 

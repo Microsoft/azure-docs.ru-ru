@@ -10,12 +10,12 @@ ms.subservice: computer-vision
 ms.topic: conceptual
 ms.date: 01/12/2021
 ms.author: aahi
-ms.openlocfilehash: 9989c6ea6b75203d43c37854caef7fdcbc321779
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 1a107f812ceb46649126bdbefcf3b828e1938ff3
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102519033"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102612904"
 ---
 # <a name="install-and-run-the-spatial-analysis-container-preview"></a>Установка и запуск контейнера пространственного анализа (Предварительная версия)
 
@@ -306,7 +306,7 @@ sudo apt-get update
 sudo apt-get install iotedge=1.0.9* libiothsm-std=1.0.9*
 ```
 
-Затем зарегистрируйте главный компьютер в качестве устройства IoT Edge в экземпляре центра Интернета вещей, используя [строку подключения](../../iot-edge/how-to-register-device.md?view=iotedge-2018-06).
+Затем зарегистрируйте главный компьютер в качестве устройства IoT Edge в экземпляре центра Интернета вещей, используя [строку подключения](../../iot-edge/how-to-register-device.md).
 
 Необходимо подключить устройство IoT Edge к центру Интернета вещей Azure. Необходимо скопировать строку подключения с IoT Edgeного устройства, созданного ранее. Кроме того, можно выполнить приведенную ниже команду в Azure CLI.
 
@@ -468,7 +468,7 @@ sudo apt-get update
 sudo apt-get install iotedge=1.0.9* libiothsm-std=1.0.9*
 ```
 
-Затем зарегистрируйте виртуальную машину в качестве устройства IoT Edge в экземпляре центра Интернета вещей, используя [строку подключения](../../iot-edge/how-to-register-device.md?view=iotedge-2018-06).
+Затем зарегистрируйте виртуальную машину в качестве устройства IoT Edge в экземпляре центра Интернета вещей, используя [строку подключения](../../iot-edge/how-to-register-device.md).
 
 Необходимо подключить устройство IoT Edge к центру Интернета вещей Azure. Необходимо скопировать строку подключения с IoT Edgeного устройства, созданного ранее. Кроме того, можно выполнить приведенную ниже команду в Azure CLI.
 
@@ -586,7 +586,7 @@ sudo az iot edge set-modules --hub-name "<iothub-name>" --device-id "<device-nam
 
 ```
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 Если при запуске или запуске контейнера возникли проблемы, см. раздел [телеметрии и устранение неполадок](spatial-analysis-logging.md) для решения распространенных проблем. В этой статье также содержатся сведения о создании и сборе журналов и сборе сведений о работоспособности системы.
 

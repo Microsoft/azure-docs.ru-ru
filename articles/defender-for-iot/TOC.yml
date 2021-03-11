@@ -4,13 +4,13 @@
   displayName: 'IoT, OT, getting started'
   href: overview.md
   items:
-    - name: Новые возможности
-      href: release-notes.md
     - name: Безагентная архитектура решения
       displayName: 'deployment, where to deploy'
       href: architecture.md
     - name: Архитектура решения на основе агента
       href: architecture-agent-based.md
+- name: Новые возможности
+  href: release-notes.md
 - name: Краткие руководства
   expanded: true
   items:
@@ -27,12 +27,12 @@
         - name: Подключение решения Defender для Интернета вещей на основе агента
           displayName: 'IoT Hub, existing, enable'
           href: quickstart-onboard-iot-hub.md
-        - name: Установка микроагента Defender для Интернета вещей
+        - name: Установка микроагента Defender для Интернета вещей (предварительная версия)
           displayName: 'package, authentication, methods, certificate, authenticate, version'
           href: quickstart-standalone-agent-binary-installation.md
-        - name: Создание двойника модуля микроагента Defender для Интернета вещей
+        - name: Создание двойника модуля для микроагента Defender для Интернета вещей (предварительная версия)
           href: quickstart-create-micro-agent-module-twin.md
-        - name: Создание микроагента Defender для Интернета вещей на основе исходного кода
+        - name: Создание микроагента Defender для Интернета вещей на основе исходного кода (предварительная версия)
           displayName: 'baseline, configuration, customize, distribution'
           href: quickstart-building-the-defender-micro-agent-from-source.md
         - name: Настройка модуля безопасности для ОСРВ Azure
@@ -56,18 +56,18 @@
           href: concept-key-concepts.md
     - name: Решение на основе агента для разработчиков устройств
       items:
-        - name: Общие сведения о портфеле агентов и поддержке ОС
+        - name: Общие сведения о портфеле агентов и поддержке ОС (предварительная версия)
           displayName: 'standalone agent, micro agent, RTOS'
           href: concept-agent-portfolio-overview-os-support.md
-        - name: Общие сведения об автономном микроагенте
+        - name: Общие сведения об автономном микроагенте (предварительная версия)
           displayName: 'endpoint, posture, distribution, flexible, model'
           href: concept-standalone-micro-agent-overview.md
-        - name: Аутентификация агентов безопасности
+        - name: Аутентификация агентов безопасности (предварительная версия)
           displayName: 'connection string, certificate, authentication'
           href: concept-security-agent-authentication.md
         - name: 'Уровень безопасности: тест производительности CIS'
           href: concept-security-posture.md
-        - name: Агрегация событий
+        - name: Статистическая обработка событий (предварительная версия)
           displayName: 'process events, network connection'
           href: concept-event-aggregation.md
         - name: Встроенные оповещения для Центра Интернета вещей
@@ -297,7 +297,7 @@
               href: how-to-investigate-device.md
 - name: Устранение неполадок
   items:
-    - name: Устранение неполадок с микроагентом Defender для Интернета вещей
+    - name: Устранение неполадок с микроагентом Defender для Интернета вещей (предварительная версия)
       displayName: 'service status, review logs'
       href: troubleshoot-defender-micro-agent.md
 - name: Поддержка и прекращение использования функций

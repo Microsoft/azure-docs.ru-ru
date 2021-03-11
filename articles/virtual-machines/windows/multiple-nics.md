@@ -2,22 +2,23 @@
 title: Создание виртуальных машин Windows в Azure и управление ими, которые используют несколько сетевых интерфейсов
 description: Узнайте, как создать виртуальную машину Windows с несколькими сетевыми адаптерами с помощью Azure PowerShell или шаблонов Resource Manager, а также, как управлять ими.
 author: cynthn
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
+ms.collection: windows
 ms.topic: how-to
 ms.workload: infrastructure
 ms.date: 09/26/2017
 ms.author: cynthn
-ms.openlocfilehash: 66a135cd1629aa2befcd4c56d835473791d62ce8
-ms.sourcegitcommit: d103a93e7ef2dde1298f04e307920378a87e982a
+ms.openlocfilehash: 2664d175818a6e29dcd3f704c6938987bae050cd
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91974011"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102555182"
 ---
 # <a name="create-and-manage-a-windows-virtual-machine-that-has-multiple-nics"></a>Создание виртуальной машины Windows, использующей несколько сетевых адаптеров, и управление ею
 Виртуальные машины (VM) в Azure могут иметь несколько виртуальных сетевых адаптеров (NIC). Распространенный сценарий состоит в том, чтобы иметь разные подсети для интерфейсных и внутренних подключений. Вы можете связать несколько сетевых адаптеров на виртуальной машине с несколькими подсетями, но эти подсети должны находиться в одной и той же виртуальной сети (vNet). В этой статье подробно описывается, как создать виртуальную машину с несколькими сетевыми адаптерами. Вы также узнаете, как добавить или удалить сетевые адаптеры на существующей виртуальной машине. Различные [размеры виртуальных машин](../sizes.md) поддерживают разное число сетевых карт, так что выбирайте соответствующий размер виртуальной машины.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В следующих примерах замените имена параметров собственными значениями. Примеры имен параметров: *myResourceGroup*, *myVnet* и *myVM*.
 
@@ -221,7 +222,7 @@ $myNic2 = New-AzNetworkInterface -ResourceGroupName "myResourceGroup" `
 }
 ```
 
-Дополнительные сведения см. в статье [Развертывание нескольких экземпляров ресурса или свойства в шаблонах Azure Resource Manager*копирования*](../../azure-resource-manager/templates/copy-resources.md). 
+Дополнительные сведения см. в статье [Развертывание нескольких экземпляров ресурса или свойства в шаблонах Azure Resource Manager *копирования*](../../azure-resource-manager/templates/copy-resources.md). 
 
 Вы также можете использовать `copyIndex()`, чтобы добавить номер к имени ресурса. Затем вы можете создать сетевые адаптеры с именами *myNic1*, *MyNic2* и т. д. Ниже показан пример добавления значения индекса.
 

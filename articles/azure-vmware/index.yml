@@ -9,12 +9,12 @@ metadata:
   author: dikamath
   ms.author: dikamath
   ms.date: 11/19/2020
-  ms.openlocfilehash: f02468ca6ba3cc26d06b8caa8b8ae5b863fb51b5
-  ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+  ms.openlocfilehash: 9412889bef1ababa6d44d5cf3aa48c2231bed08d
+  ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/18/2021
-  ms.locfileid: "100651771"
+  ms.lasthandoff: 03/07/2021
+  ms.locfileid: "102436198"
 landingContent:
 - title: О Решении Azure VMware
   linkLists:
@@ -22,6 +22,8 @@ landingContent:
     links:
     - text: Что такое Решение Azure VMware?
       url: introduction.md
+    - text: Обновления платформы
+      url: azure-vmware-solution-platform-updates.md
   - linkListType: concept
     links:
     - text: Частное облако и кластеры

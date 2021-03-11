@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 06/04/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: b9804e119f5b5cfbee1a61eabf217dad7dbf5500
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: cab32a6c2835dc283a169f58c79ff54e7925467b
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102507234"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102554247"
 ---
 # <a name="use-the-azure-digital-twins-apis-and-sdks"></a>Использование интерфейсов API и пакетов SDK для Azure Digital Twins
 
@@ -122,18 +122,21 @@ API-интерфейсы плоскости данных — это API-инте
 Вспомогательные функции сериализации, доступные в пакете SDK, позволяют быстро создавать или десериализовать данные двойника для доступа к основным сведениям. Поскольку основные методы пакета SDK возвращают данные двойника в формате JSON по умолчанию, можно использовать эти вспомогательные классы для дальнейшего разбиения данных двойника.
 
 Доступны следующие вспомогательные классы:
-* `BasicDigitalTwin`— Представляет основные данные цифрового двойникаа.
-* `BasicRelationship`— Представляет основные данные связи.
-* `UpdateOperationUtility`— Представляет сведения об исправлении JSON, используемые при вызове Update.
-* `WriteableProperty`: Представляет метаданные свойства
+* `BasicDigitalTwin`: Универсальный представляет основные данные цифрового двойника
+* `BasicDigitalTwinComponent`: Универсальный представляет компонент в `Contents` свойствах `BasicDigitalTwin`
+* `BasicRelationship`: Универсальный представляет основные данные связи
+* `DigitalTwinsJsonPropertyName`: Содержит строковые константы для использования в сериализации и десериализации JSON для пользовательских типов Digital двойника.
 
 ##### <a name="deserialize-a-digital-twin"></a>Десериализация цифрового двойника
 
-Вы всегда можете десериализовать данные двойника, используя библиотеку JSON по своему усмотрению, например `System.Test.Json` или `Newtonsoft.Json` . Для базового доступа к двойника вспомогательные классы делают это немного более удобным.
+Вы всегда можете десериализовать данные двойника, используя библиотеку JSON по своему усмотрению, например `System.Text.Json` или `Newtonsoft.Json` . Для базового доступа к двойника вспомогательные классы могут сделать это более удобным.
 
 `BasicDigitalTwin`Вспомогательный класс также предоставляет доступ к свойствам, определенным в двойника, через `Dictionary<string, object>` . Чтобы вывести список свойств двойника, можно использовать:
 
 :::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/twin_operations_sample.cs" id="GetTwin":::
+
+> [!NOTE]
+> `BasicDigitalTwin` использует `System.Text.Json` атрибуты. Чтобы использовать `BasicDigitalTwin` с [дигиталтвинсклиент](/dotnet/api/azure.digitaltwins.core.digitaltwinsclient?view=azure-dotnet&preserve-view=true), необходимо либо инициализировать клиент с помощью конструктора по умолчанию, либо, если вы хотите настроить параметр сериализатора, использовать [жсонобжектсериализер](/dotnet/api/azure.core.serialization.jsonobjectserializer?view=azure-dotnet&preserve-view=true).
 
 ##### <a name="create-a-digital-twin"></a>Создание цифрового двойника
 

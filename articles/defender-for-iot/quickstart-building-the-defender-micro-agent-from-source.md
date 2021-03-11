@@ -1,5 +1,5 @@
 ---
-title: Создание микроагента Defender на основе исходного кода
+title: Создание микроагента Defender на основе исходного кода (предварительная версия)
 titleSuffix: Azure Defender for IoT
 description: Микроагент содержит инфраструктуру, которую можно использовать для настройки распределения.
 author: shhazam-ms
@@ -8,14 +8,14 @@ ms.author: shhazam
 ms.date: 1/18/2021
 ms.topic: quickstart
 ms.service: azure
-ms.openlocfilehash: 57360d939ea0cda513732cfbcc35c1d22a899f6c
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 29cac544c858b030cff8e9101737b30e96b863bf
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102124539"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102506605"
 ---
-# <a name="build-the-defender-micro-agent-from-source-code"></a>Создание микроагента Defender на основе исходного кода
+# <a name="build-the-defender-micro-agent-from-source-code-preview"></a>Создание микроагента Defender на основе исходного кода (предварительная версия)
 
 Микроагент содержит инфраструктуру, которую можно использовать для настройки распределения. Чтобы увидеть список доступных параметров конфигурации, ознакомьтесь с файлом `configs/LINUX_BASE.conf`.
 

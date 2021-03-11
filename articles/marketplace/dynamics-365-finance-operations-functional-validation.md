@@ -7,12 +7,12 @@ ms.topic: article
 author: emuench
 ms.author: navits
 ms.date: 07/17/2020
-ms.openlocfilehash: b9685081c0beacd745a83067b9d9876384933377
-ms.sourcegitcommit: 857859267e0820d0c555f5438dc415fc861d9a6b
+ms.openlocfilehash: 9be90cdac742a581c6346f923f44e769c8a70f76
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93131247"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102613635"
 ---
 # <a name="appsource-dynamics-365-finance-and-operations-functional-validation"></a>AppSource Dynamics 365 Финансы и функциональная проверка операций
 
@@ -29,7 +29,7 @@ ms.locfileid: "93131247"
 Существует два варианта функциональной проверки.
 
 - Продемонстрируйте 30-минутный Звонок на конференцию США по тихоокеанскому времени (PST), чтобы продемонстрировать и записать среду и решение [LCS](https://lcs.dynamics.com/) .
-- В центре партнеров перейдите на страницу [Обзор коммерческого рынка](https://partner.microsoft.com/dashboard/commercial-marketplace/overview)  >  **Overview** и загрузите демонстрационный URL-адрес видео и карты LCS на вкладке дополнительное содержимое предложения.
+- В центре партнеров перейдите на страницу [Обзор коммерческого рынка](https://partner.microsoft.com/dashboard/commercial-marketplace/overview)  >   и загрузите демонстрационный URL-адрес видео и карты LCS на вкладке дополнительное содержимое предложения.
 
 Группа сертификации Майкрософт просматривает видео и файлы, а затем либо утверждает решение, либо отправляет вам сообщения электронной почты о дальнейших действиях.
 
@@ -50,17 +50,17 @@ ms.locfileid: "93131247"
 
 2. Примите следующие снимки экрана среды [LCS](https://lcs.dynamics.com/) , соответствующие предложению или решению, которые вы хотите опубликовать. Они должны быть достаточно четкими, чтобы группа сертификации читала текст. Сохраните снимки экрана как JPG файлы. Вы можете предоставить [appSourceCRM@microsoft.com](mailto:appSourceCRM@microsoft.com) разрешение для среды LCS, чтобы мы могли проверить программу установки, а не предоставить снимки экрана.
 
-    1. Перейдите в **LCS**  >  библиотеку проекта "средство **моделирования бизнес-процессов** LCS"  >  **Project library** . Создание снимков экрана всех этапов процесса. Включите **схемы** и **проверенные** столбцы, как показано ниже:
+    1. Перейдите в   >  библиотеку проекта "средство **моделирования бизнес-процессов** LCS"  >  . Создание снимков экрана всех этапов процесса. Включите **схемы** и **проверенные** столбцы, как показано ниже:
 
        :::image type="content" source="media/dynamics-365-finance-operations/project-library.png" alt-text="Отображает окно библиотеки проекта.":::
 
-      2. Выберите **LCS**  >  **Solution Management**  >  **пакет решения** для управления решением LCS. Используйте снимки экрана, которые включают в себя обзор пакета и содержимое, показанное в следующих примерах:
+      2. Выберите   >    >  **пакет решения** для управления решением LCS. Используйте снимки экрана, которые включают в себя обзор пакета и содержимое, показанное в следующих примерах:
 
-    | Поле | Образ — <img src="" width="400px">|
+    | Поле | Образ — |
     | --- | --- |
     | Основные сведения о пакете | [![Снимок экрана, на котором показано окно "Обзор пакета".](media/dynamics-365-finance-operations/package-overview-45.png)](media/dynamics-365-finance-operations/package-overview.png#lightbox) |
     | <ul><li>Утверждающие решения</li></ul> | [![Экран обзора пакета](media/dynamics-365-finance-operations/solution-approvers-45.png)](media/dynamics-365-finance-operations/solution-approvers.png#lightbox) |
-    | Содержимое пакета<ul><li>Модель</li><li>Развертываемый пакет программного обеспечения</li></ul> | [![Первый экран содержимого пакета](media/dynamics-365-finance-operations/package-contents-1-45.png)](media/dynamics-365-finance-operations/package-contents-1.png#lightbox) |
+    | Содержимое пакета<ul><li>Моделирование</li><li>Развертываемый пакет программного обеспечения</li></ul> | [![Первый экран содержимого пакета](media/dynamics-365-finance-operations/package-contents-1-45.png)](media/dynamics-365-finance-operations/package-contents-1.png#lightbox) |
     | <ul><li>Конфигурация GER</li><li>Резервная копия базы данных</li></ul><br>Артефакты не требуются в разделе **конфигурации GER** . | [![Два экрана содержимого пакета](media/dynamics-365-finance-operations/package-contents-2-45.png)](media/dynamics-365-finance-operations/package-contents-2.png#lightbox) |
     | <ul><li>Модель отчета Power BI</li><li>Артефакт BPM</li></ul><br>Артефакты не требуются в разделе **Power BI** . | [![Фильтр содержимого пакета, три](media/dynamics-365-finance-operations/package-contents-3-45.png)](media/dynamics-365-finance-operations/package-contents-3.png#lightbox) |
     | <ul><li>Обработка пакета данных</li><li>Лицензионное соглашение и политика конфиденциальности решений</li></ul><br>Разделы " **Конфигурация GER** " и " **Power BI модели отчета** " являются необязательными для включения в Финансы и предложения операций. | [![Страница "содержимое пакета" 4](media/dynamics-365-finance-operations/package-contents-4-45.png)](media/dynamics-365-finance-operations/package-contents-4.png#lightbox) |

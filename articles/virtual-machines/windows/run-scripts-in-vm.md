@@ -3,17 +3,18 @@ title: Выполнение сценариев в виртуальной маш�
 description: В этом разделе описывается выполнение сценариев в виртуальной машине Windows
 services: automation
 ms.service: virtual-machines
+ms.collection: windows
 author: bobbytreed
 ms.author: robreed
 ms.date: 05/02/2018
 ms.topic: how-to
 manager: carmonm
-ms.openlocfilehash: 23abc86e26686d9a23ed94d0311a44ffe3012657
-ms.sourcegitcommit: 2bd0a039be8126c969a795cea3b60ce8e4ce64fc
+ms.openlocfilehash: ab7d20a83c4cb8cb7a36c4603a5b0b2e69b0662f
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98201779"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560673"
 ---
 # <a name="run-scripts-in-your-windows-vm"></a>Запуск сценариев в виртуальной машине Windows
 
@@ -71,4 +72,4 @@ ms.locfileid: "98201779"
 * [Расширение пользовательских сценариев](../extensions/custom-script-windows.md)
 * [Запуск команды](run-command.md)
 * [Гибридная рабочая роль Runbook](../../automation/automation-hybrid-runbook-worker.md)
-* [Серийная консоль](../troubleshooting/serial-console-windows.md)
+* [Последовательная консоль](../troubleshooting/serial-console-windows.md)

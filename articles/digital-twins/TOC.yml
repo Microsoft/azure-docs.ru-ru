@@ -97,10 +97,10 @@
       items:
         - name: Использование интерфейсов API и пакетов SDK
           href: how-to-use-apis-sdks.md
+        - name: Создание пользовательских пакетов SDK для определенных языков с помощью AutoRest
+          href: how-to-create-custom-sdks.md
         - name: Отправка запросов с помощью Postman
           href: how-to-use-postman.md
-        - name: Создание пользовательских пакетов SDK с помощью AutoRest
-          href: how-to-create-custom-sdks.md
         - name: Интеграция со службой Azure SignalR
           href: how-to-integrate-azure-signalr.md
     - name: Входные данные подключения
@@ -154,19 +154,19 @@
         - name: Уровень управления
           items:
             - name: Пакет SDK для .NET (C#)
-              href: /dotnet/api/overview/azure/digitaltwins/management?view=azure-dotnet
+              href: /dotnet/api/overview/azure/digitaltwins/management
             - name: Пакет SDK для Java
-              href: /java/api/overview/azure/digitaltwins/resourcemanagement?view=azure-java-stable
+              href: /java/api/overview/azure/digitaltwins/resourcemanagement
         - name: Плоскость данных
           items:
             - name: Пакет SDK для .NET (C#)
-              href: /dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet
+              href: /dotnet/api/overview/azure/digitaltwins/client
             - name: Пакет SDK для Java
-              href: /java/api/overview/azure/digitaltwins/client?preserve-view=true&view=azure-java-stable
+              href: /java/api/overview/azure/digitaltwins/client
             - name: Пакет SDK для JavaScript
-              href: /javascript/api/@azure/digital-twins-core/?branch=master&view=azure-node-latest
+              href: /javascript/api/@azure/digital-twins-core/
             - name: Пакет SDK для Python
-              href: /python/api/azure-digitaltwins-core/azure.digitaltwins.core?view=azure-python
+              href: /python/api/azure-digitaltwins-core/azure.digitaltwins.core
     - name: CLI Digital Twins
       href: /cli/azure/ext/azure-iot/dt
 - name: Ресурсы
