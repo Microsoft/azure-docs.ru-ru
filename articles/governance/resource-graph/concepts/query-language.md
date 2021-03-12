@@ -1,14 +1,14 @@
 ---
 title: Основные сведения о языке запросов
 description: Описание таблиц Resource Graph и доступных типов данных, операторов и функций Kusto, которые можно использовать с Azure Resource Graph.
-ms.date: 01/14/2021
+ms.date: 03/10/2021
 ms.topic: conceptual
-ms.openlocfilehash: 137b5c40097d7de82e156b4a0869d7257d3e9964
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.openlocfilehash: f6cb13814fe725ff0253a0a5bf0098f0080fa407
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98624764"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102633807"
 ---
 # <a name="understanding-the-azure-resource-graph-query-language"></a>Общие сведения о языке запросов графика ресурсов Azure
 
@@ -32,7 +32,9 @@ ms.locfileid: "98624764"
 |ResourceContainers |Да |Содержит подписку (в предварительной версии — `Microsoft.Resources/subscriptions`) и типы ресурсов и данные группы ресурсов (`Microsoft.Resources/subscriptions/resourcegroups`). |
 |AdvisorResources |Да (предварительная версия) |Содержит ресурсы, _связанные_ с `Microsoft.Advisor`. |
 |AlertsManagementResources |Да (предварительная версия) |Содержит ресурсы, _связанные_ с `Microsoft.AlertsManagement`. |
+|екстендедлокатионресаурцес |Нет |Содержит ресурсы, _связанные_ с `Microsoft.ExtendedLocation`. |
 |гуестконфигуратионресаурцес |Нет |Содержит ресурсы, _связанные_ с `Microsoft.GuestConfiguration`. |
+|кубернетесконфигуратионресаурцес |Нет |Содержит ресурсы, _связанные_ с `Microsoft.KubernetesConfiguration`. |
 |MaintenanceResources |Частично, только _для_ объединения. (предварительная версия) |Содержит ресурсы, _связанные_ с `Microsoft.Maintenance`. |
 |патчассессментресаурцес|Нет |Включает ресурсы, _относящиеся_ к оценке исправлений на виртуальных машинах Azure. |
 |патчинсталлатионресаурцес|Нет |Включает ресурсы, _связанные_ с установкой исправлений для виртуальных машин Azure. |
@@ -40,6 +42,7 @@ ms.locfileid: "98624764"
 |рековерисервицесресаурцес |Частично, только _для_ объединения. (предварительная версия) |Включает ресурсы, _связанные_ с `Microsoft.DataProtection` и `Microsoft.RecoveryServices` . |
 |SecurityResources |Частично, только _для_ объединения. (предварительная версия) |Содержит ресурсы, _связанные_ с `Microsoft.Security`. |
 |сервицехеалсресаурцес |Нет |Содержит ресурсы, _связанные_ с `Microsoft.ResourceHealth`. |
+|ворклоадмониторресаурцес |Нет |Содержит ресурсы, _связанные_ с `Microsoft.WorkloadMonitor`. |
 
 Полный список, включая типы ресурсов, см. в разделе [reference: Supported Tables and Resource Types](../reference/supported-tables-resources.md).
 

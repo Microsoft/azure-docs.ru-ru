@@ -2,7 +2,7 @@
 заголовок: Общие сведения о Службах мультимедиа Azure версии 3: Azure Media Services description: Общие сведения о Службах мультимедиа Azure версии 3 со ссылками на краткие руководства, учебники и примеры кода.
 services: media-services documentationcenter: na author: IngridAtMicrosoft manager: femila editor: '' tags: '' keywords: azure media services, stream, broadcast, live, offline
 
-ms.service: media-services ms.devlang: multiple ms.topic: overview ms.tgt_pltfrm: multiple ms.workload: media ms.date: 08/31/2020 ms.author: inhenkel ms.custom: mvc
+ms.service: media-services ms.devlang: multiple ms.topic: overview ms.tgt_pltfrm: multiple ms.workload: media ms.date: 3/10/2021 ms.author: inhenkel ms.custom: mvc
 #<a name="customer-intent-as-a-developer-or-a-content-provider-i-want-to-encode-stream-on-demand-or-live-analyze-my-media-content-so-that-my-customers-can-view-the-content-on-a-wide-variety-of-browsers-and-devices-gain-valuable-insights-from-recorded-content"></a>Намерение клиента: Как разработчик или поставщик содержимого, я хочу кодировать, передавать в потоковом режиме (по запросу или в прямой трансляции), анализировать свое мультимедийное содержимое, чтобы мои клиенты могли: просматривать содержимое в различных браузерах и на разных устройствах, получать ценную информацию из записанного содержимого.
 ---
 
@@ -13,9 +13,6 @@ ms.service: media-services ms.devlang: multiple ms.topic: overview ms.tgt_pltfrm
 Службы мультимедиа Azure — это облачная платформа, которая позволяет создавать решения для потоковой передачи видео широковещательного уровня. Она повышает доступность и уровень распространения, дает возможность анализировать содержимое и предоставляет многие другие функции. Службы мультимедиа позволяют создавать приложения для обработки данных мультимедиа высокого качества для крупных аудиторий на самых популярных современных мобильных устройствах и браузерах для всевозможных сфер деятельности. Их могут использовать как разработчики приложений и центры обработки вызовов, так и государственные учреждения или компании, работающие в индустрии развлечений.
 
 Пакеты SDK Служб мультимедиа версии 3 разработаны на основе [спецификации OpenAPI (Swagger) для Служб мультимедиа версии 3](https://aka.ms/ams-v3-rest-sdk).
-
-> [!NOTE]
-> В настоящее время вы можете использовать [портал Azure](https://portal.azure.com/) для: управления [трансляциями](live-events-outputs-concept.md) в Службах мультимедиа версии 3, просмотра (без управления) [активов](assets-concept.md) версии 3, а также [получения сведений о доступе к интерфейсам API](./access-api-howto.md). Для всех других задач управления (например, [преобразований и заданий](transforms-jobs-concept.md), а также [защиты содержимого](content-protection-overview.md)) следует использовать [REST API](/rest/api/media/), [CLI](/cli/azure/ams) или один из поддерживаемых [пакетов SDK](media-services-apis-overview.md#sdks).
 
 [!INCLUDE [quickstarts-free-trial-note](../../../includes/quickstarts-free-trial-note.md)]
 

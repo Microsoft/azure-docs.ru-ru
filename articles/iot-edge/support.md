@@ -8,22 +8,22 @@ ms.date: 02/11/2021
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 75beb214682536b996cf4896588ea32d568579f1
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: edca5a278414288ceb3c3d13f5d49e723e0ee5c2
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102045995"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102615930"
 ---
 # <a name="azure-iot-edge-supported-systems"></a>Поддерживаемые Azure IoT Edge системы
 
 В этой статье приведены сведения о системах и компонентах, поддерживаемых IoT Edge официально или в предварительной версии.
 
-## <a name="get-support"></a>Техническая поддержка
+## <a name="get-support"></a>Получение поддержки
 
 В случае возникновения проблем во время использования службы Azure IoT Edge есть несколько способов обратиться за помощью. Используйте один из приведенных ниже каналов, чтобы получить поддержку.
 
-**Сообщать об ошибках** — большинство разработчиков, которые переходят в Azure IOT Edge продукт, выполняются в IOT Edge проекте с открытым исходным кодом. Вы можете сообщить об ошибках на соответствующей [странице](https://github.com/azure/iotedge/issues) для этого проекта. Внесенные исправления очень быстро попадают из проекта в обновление продукта.
+**Отчеты об ошибках.** Основная часть усилий по разработке продукта Azure IoT Edge, прилагается в рамках проекта IoT Edge с открытым кодом. Вы можете сообщить об ошибках на соответствующей [странице](https://github.com/azure/iotedge/issues) для этого проекта. Ошибки, связанные с Azure IoT Edge для Linux в Windows, можно получить на [странице проблем iotedge-ефлов](https://github.com/azure/iotedge-eflow/issues). Исправления быстро делают их из проектов в для обновлений продукта.
 
 **Служба поддержки пользователей корпорации Майкрософт**. Пользователи, приобретающие [план поддержки,](https://azure.microsoft.com/support/plans/) могут обращаться в службу поддержки пользователей корпорации Майкрософт, создав запрос прямо на [портале Azure](https://ms.portal.azure.com/signin/index/?feature.settingsportalinstance=mpac).
 

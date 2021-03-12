@@ -6,13 +6,13 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
 author: emuench
 ms.author: krsh
-ms.date: 02/18/2021
-ms.openlocfilehash: 7ed3f707ad69c60111bcc97e139c0825fd503d8e
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.date: 03/10/2021
+ms.openlocfilehash: 94d21cb82290e59ebb003969a566c1bfc877713e
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102630117"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200448"
 ---
 # <a name="how-to-create-a-virtual-machine-using-an-approved-base"></a>Создание виртуальной машины с помощью утвержденной базы
 

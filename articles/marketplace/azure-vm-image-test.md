@@ -4,15 +4,15 @@ description: Узнайте, как протестировать и отправ
 ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
-author: github-2407
+author: kriti-ms
 ms.author: krsh
-ms.date: 02/19/2020
-ms.openlocfilehash: 48e41e870676bf6939ccaf5268c462f885e67572
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.date: 03/10/2021
+ms.openlocfilehash: 9ffba221625c57332cd695125651d92adc11cf60
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102630186"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200376"
 ---
 # <a name="test-a-virtual-machine-image"></a>Тестирование образа виртуальной машины
 
@@ -25,7 +25,7 @@ ms.locfileid: "102630186"
 1. Переход к версии образа коллекции общих образов
 1. Щелкните "создать виртуальную машину".
 1. Укажите имя виртуальной машины и выберите размер виртуальной машины.
-1. Щелкните Review + create (Просмотреть и создать). После прохождения проверки нажмите кнопку Создать.
+1. Щелкните Просмотреть и создать. После прохождения проверки нажмите кнопку Создать.
 
 > [!NOTE]
 > Если необходимо создать виртуальную машину из VHD-файла, следуйте инструкциям в следующих статьях, [подготовьте шаблон Azure Resource Manager](https://docs.microsoft.com/azure/marketplace/azure-vm-image-test#prepare-an-azure-resource-manager-template) или [разверните виртуальную машину Azure с помощью PowerShell](https://docs.microsoft.com/azure/marketplace/azure-vm-image-test#deploy-an-azure-vm-using-powershell).
@@ -66,7 +66,7 @@ ms.locfileid: "102630186"
 
     :::image type="content" source="media/vm/azure-vm-cert-4.png" alt-text="Отображает выбор имени пользователя и пароля виртуальной машины.":::
 
-6. Выберите **Далее**.
+6. Щелкните **Далее**.
 
 #### <a name="run-a-certification-test"></a>Выполнение теста сертификации
 

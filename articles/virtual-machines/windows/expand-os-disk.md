@@ -16,12 +16,12 @@ ms.workload: infrastructure-services
 ms.date: 09/02/2020
 ms.author: kirpas
 ms.subservice: disks
-ms.openlocfilehash: 2f991dd93549cf73005127569af496df541eecde
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: af57bc396349286c3edcaefc8385ddbaec066226
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102549606"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103199474"
 ---
 # <a name="how-to-expand-the-os-drive-of-a-virtual-machine"></a>Расширение диска ОС виртуальной машины
 
@@ -49,21 +49,21 @@ ms.locfileid: "102549606"
 
     :::image type="content" source="./media/expand-os-disk/disk-name.png" alt-text="Снимок экрана, на котором отображается панель диски с выбранным именем диска.":::
 
-4. В меню слева в разделе **Параметры** выберите **Конфигурация**.
+4. В меню слева в разделе **Параметры** выберите **размер и производительность**.
 
-    :::image type="content" source="./media/expand-os-disk/configuration.png" alt-text="Снимок экрана, на котором показан параметр конфигурации, выбранный в разделе &quot;Параметры&quot; меню.":::
+    :::image type="content" source="./media/expand-os-disk/configuration.png" alt-text="Снимок экрана, на котором показан параметр &quot;размер и производительность&quot;, выбранный в разделе &quot;Параметры&quot; меню.":::
 
-5. В поле **Размер (гиб)** выберите нужный размер диска.
+5. В поле **размер и производительность** выберите нужный размер диска.
    
    > [!WARNING]
    > Новый размер должен быть больше, чем размер существующего диска. Максимально допустимый объем — 2 048 ГБ для дисков ОС. (Вы можете расширить большой двоичный объект VHD, не выполнив его, но операционная система будет работать только с первыми 2 048 ГБ пространства.)
    > 
 
-    :::image type="content" source="./media/expand-os-disk/size.png" alt-text="Снимок экрана, на котором показана панель конфигурации с выбранным размером диска.":::
+    :::image type="content" source="./media/expand-os-disk/size.png" alt-text="Снимок экрана, на котором показана область размера и производительности с выбранным размером диска.":::
 
-6. Щелкните **Сохранить**.
+6. Выберите **изменить размер** в нижней части страницы.
 
-    :::image type="content" source="./media/expand-os-disk/save.png" alt-text="Снимок экрана, на котором показана панель конфигурации с выбранной кнопкой &quot;Сохранить&quot;.":::
+    :::image type="content" source="./media/expand-os-disk/save.png" alt-text="Снимок экрана, на котором показана панель &quot;размер и производительность&quot; с выбранной кнопкой &quot;изменить размер&quot;.":::
 
 
 ## <a name="resize-a-managed-disk-by-using-powershell"></a>Изменение размера управляемого диска с помощью PowerShell

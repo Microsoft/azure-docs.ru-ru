@@ -3,12 +3,12 @@ title: Запрос базы знаний — QnA Maker
 description: База знаний должна быть опубликована. После публикации база знаний запрашивается на конечной точке прогнозирования времени выполнения с помощью API Женератеансвер.
 ms.topic: conceptual
 ms.date: 11/09/2020
-ms.openlocfilehash: deefc53fdc94851da0e9e255962fbf85692d1393
-ms.sourcegitcommit: 2501fe97400e16f4008449abd1dd6e000973a174
+ms.openlocfilehash: c723d1446c90290929bc8cad066b4744e284f3f4
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99820387"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103008677"
 ---
 # <a name="query-the-knowledge-base-for-answers"></a>Запрос ответов в базе знаний
 
@@ -84,10 +84,9 @@ ms.locfileid: "99820387"
     "userId": "sd53lsY="
 }
 ```
+Вы управляете ответом, задавая такие свойства, как [скоресрешолд](./confidence-score.md#choose-a-score-threshold), [Top](../how-to/improve-knowledge-base.md#use-the-top-property-in-the-generateanswer-request-to-get-several-matching-answers)и [стриктфилтерс](../how-to/query-knowledge-base-with-metadata.md).
 
-Вы управляете ответом, задавая такие свойства, как [скоресрешолд](./confidence-score.md#choose-a-score-threshold), [Top](../how-to/improve-knowledge-base.md#use-the-top-property-in-the-generateanswer-request-to-get-several-matching-answers)и [стриктфилтерс](../how-to/metadata-generateanswer-usage.md#filter-results-with-strictfilters-for-metadata-tags).
-
-Используйте [контекст диалога](../how-to/metadata-generateanswer-usage.md#use-question-and-answer-results-to-keep-conversation-context) с [функцией множественной переворачивания](../how-to/multiturn-conversation.md) , чтобы диалоговое обсуждение продолжало находить вопросы и ответы, чтобы найти правильный и окончательный ответ.
+Используйте [контекст диалога](../how-to/query-knowledge-base-with-metadata.md) с [функцией множественной переворачивания](../how-to/multiturn-conversation.md) , чтобы диалоговое обсуждение продолжало находить вопросы и ответы, чтобы найти правильный и окончательный ответ.
 
 ### <a name="the-response-from-a-call-to-generate-an-answer"></a>Ответ от вызова для создания ответа
 
@@ -122,7 +121,7 @@ ms.locfileid: "99820387"
 ```
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Оценка достоверности](./confidence-score.md)

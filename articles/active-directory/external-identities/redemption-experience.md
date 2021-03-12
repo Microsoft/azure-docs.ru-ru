@@ -10,12 +10,12 @@ ms.author: mimart
 author: msmimart
 manager: celestedg
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df867059a7d4020952f71ca8d663a644ee2428fd
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: 4cd0febe5ffbc1b17718043d5fc97b804f87cc46
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102199634"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103199726"
 ---
 # <a name="azure-active-directory-b2b-collaboration-invitation-redemption"></a>Активация приглашения службы совместной работы Azure Active Directory B2B
 
@@ -65,7 +65,7 @@ ms.locfileid: "102199634"
 
 ![Снимок экрана, показывающий схему потока активации](media/redemption-experience/invitation-redemption-flow.png)
 
-**Если имя субъекта-пользователя (UPN) совпадает с существующей учетной записью Azure AD и личной учетной записью MSA, пользователю будет предложено выбрать учетную запись, которую нужно активировать.*
+**Если имя участника-пользователя (UPN) совпадает с существующей учетной записью Azure AD и личной MSA, пользователю будет предложено выбрать учетную запись, с которой нужно активировать.*
 
 1. Azure AD выполняет обнаружение пользователей, чтобы определить, существует ли пользователь в [имеющемся клиенте Azure AD](./what-is-b2b.md#easily-invite-guest-users-from-the-azure-ad-portal).
 

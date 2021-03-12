@@ -3,18 +3,18 @@ title: Сведения о кодировщиках, рекомендуемых 
 description: В этой статье приведен список локальных кодировщиков, рекомендованных службами мультимедиа Azure.
 services: media-services
 keywords: encoding;encoders;media
-author: dbgeorge
+author: IngridAtMicrosoft
 manager: johndeu
 ms.author: johndeu
-ms.date: 03/20/2019
+ms.date: 03/10/2021
 ms.topic: article
 ms.service: media-services
-ms.openlocfilehash: 11456a8dc55a98778bf44225bf659e506e2d3a3f
-ms.sourcegitcommit: 63d0621404375d4ac64055f1df4177dfad3d6de6
+ms.openlocfilehash: 98d78a105bf06a2e49dee0b8c2be710b220a0023
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97510062"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103009442"
 ---
 # <a name="recommended-on-premises-encoders"></a>Рекомендуемые локальные кодировщики
 

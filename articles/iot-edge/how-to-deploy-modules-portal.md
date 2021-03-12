@@ -8,14 +8,16 @@ ms.date: 10/13/2020
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: ef3f09648e0d9101d07c6d8941ee7f79ae97b2b8
-ms.sourcegitcommit: 2e72661f4853cd42bb4f0b2ded4271b22dc10a52
+ms.openlocfilehash: 9248c9578d94b000c04c82b33eeeb089e55a26ef
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92048038"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200315"
 ---
 # <a name="deploy-azure-iot-edge-modules-from-the-azure-portal"></a>Развертывание модулей IoT Edge Azure с помощью портала Azure
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Создав модули IoT Edge с в соответствии с определенной бизнес-логикой, вы наверняка захотите развернуть их на устройствах, которые будут работать в граничной среде. Если у вас есть несколько модулей, которые работают вместе для сбора и обработки данных, вы можете развернуть их одновременно и объявить правила маршрутизации, которые их соединяют.
 
@@ -105,10 +107,10 @@ ms.locfileid: "92048038"
 Вы можете быстро развернуть модуль из Azure Marketplace на устройстве в центре Интернета вещей на портал Azure.
 
 1. Найдите нужный Центр Интернета вещей на портале Azure.
-1. В левой области в разделе **Автоматическое управление устройствами**выберите **IOT Edge**.
+1. В левой области в разделе **Автоматическое управление устройствами** выберите **IOT Edge**.
 1. Выберите устройство IoT Edge, которое будет принимать развертывание.
 1. На верхней панели выберите **Задание модулей**.
-1. В разделе **модули IOT Edge** щелкните **Добавить**и в раскрывающемся меню выберите **модуль Marketplace** .
+1. В разделе **модули IOT Edge** щелкните **Добавить** и в раскрывающемся меню выберите **модуль Marketplace** .
 
 ![Добавление модуля в центр Интернета вещей](./media/how-to-deploy-modules-portal/iothub-add-module.png)
 

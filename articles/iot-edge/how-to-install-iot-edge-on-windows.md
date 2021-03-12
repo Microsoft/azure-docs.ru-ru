@@ -10,14 +10,16 @@ ms.topic: conceptual
 ms.date: 01/20/2021
 ms.author: v-tcassi
 monikerRange: =iotedge-2018-06
-ms.openlocfilehash: 812bfcc8d82c08600bd7391cdf70661585ceaf2f
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: ffd3d5c09fe19482a69af2309d8e8d574689e712
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103015188"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103199665"
 ---
 # <a name="install-and-provision-azure-iot-edge-for-linux-on-a-windows-device-preview"></a>Установка и инициализация Azure IoT Edge для Linux на устройстве Windows (предварительная версия)
+
+[!INCLUDE [iot-edge-version-201806](../../includes/iot-edge-version-201806.md)]
 
 Среда выполнения Azure IoT Edge превращает устройство в устройство IoT Edge. Среда выполнения может быть развернута на устройствах от класса ПК до промышленных серверов. После настройки устройства с помощью среды выполнения IoT Edge можно приступить к развертыванию в ней бизнес-логики из облака. Дополнительные сведения см. [в разделе Знакомство со средой выполнения Azure IOT EDGE и ее архитектурой](iot-edge-runtime.md).
 
@@ -94,7 +96,7 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
 
    ![Начальная панель мониторинга центра администрирования Windows с указанным целевым устройством](./media/how-to-install-iot-edge-on-windows/windows-admin-center-initial-dashboard.png)
 
-1. Выберите **Добавить**.
+1. Щелкните **Добавить**.
 
 1. На панели **Добавление или создание ресурсов** выберите плитку **Azure IOT Edge** . Выберите **создать** , чтобы установить новый экземпляр Azure IOT Edge для Linux в Windows на устройстве.
 

@@ -3,16 +3,17 @@ title: Использование портала для уведомлений �
 description: Просмотр уведомлений об обслуживании для виртуальных машин, работающих в Azure, и запуск самостоятельного обслуживания с помощью портала.
 author: shants123
 ms.service: virtual-machines
+ms.subservice: maintenance-control
 ms.workload: infrastructure-services
 ms.topic: how-to
 ms.date: 11/19/2019
 ms.author: shants
-ms.openlocfilehash: 318095e6cf68ec100dc9ea5221ecd93cba8f7c1e
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.openlocfilehash: a13d79a28ac07d736b1eaf0d0e6b7f7b1ba4a4ec
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97656824"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102557715"
 ---
 # <a name="handling-planned-maintenance-notifications-using-the-portal"></a>Обработка уведомлений о плановом обслуживании с помощью портала
 

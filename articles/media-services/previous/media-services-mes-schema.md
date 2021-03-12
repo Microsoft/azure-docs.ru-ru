@@ -1,7 +1,7 @@
 ---
 title: Схема Media Encoder Standard | Документация Майкрософт
 description: В этой статье описаны некоторые элементы и типы схемы XML, на которых основаны предустановки Media Encoder Standard.
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 services: media-services
@@ -11,14 +11,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/19/2019
-ms.author: juliako
-ms.openlocfilehash: 35f79702b7aad51b764ce2edb37c3c76d1fe98e8
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: f82e0c3f76dba05c3404b11e07c7130119ce0b9d
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89261518"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103015664"
 ---
 # <a name="media-encoder-standard-schema"></a>Схема Media Encoder Standard
 
@@ -144,7 +144,7 @@ ms.locfileid: "89261518"
 
 ### <a name="audio-codec-details"></a>Сведения об аудиокодеке
 
-Аудиокодек|Подробнее  
+Аудиокодек|Сведения  
 -----------------|---  
 **AACLC** |1:<br/><br/> - 11025: 8 &lt;= скорость &lt; 16<br/><br/> - 12000: 8 &lt;= скорость &lt; 16<br/><br/> - 16000: 8 &lt;= скорость &lt;32<br/><br/>- 22050: 24 &lt;= скорость &lt; 32<br/><br/> - 24000: 24 &lt;= скорость &lt; 32<br/><br/> - 32000: 32 &lt;= скорость &lt;= 192<br/><br/> - 44100: 56 &lt;= скорость &lt;= 288<br/><br/> - 48000: 56 &lt;= скорость &lt;= 288<br/><br/> - 88 200 : 128 &lt;= скорость &lt; 288<br/><br/> - 96 000 : 128 &lt;= скорость &lt; 288<br/><br/> 2:<br/><br/> - 11025: 16 &lt;= скорость &lt; 24<br/><br/> - 12000: 16 &lt;= скорость &lt; 24<br/><br/> - 16000: 16 &lt;= скорость &lt; 40<br/><br/> - 22050: 32 &lt;= скорость &lt; 40<br/><br/> - 24 000 : 32 &lt;= скорость &lt; 40<br/><br/> - 32000: 40 &lt;= скорость &lt;= 384<br/><br/> - 44100: 96 &lt;= скорость &lt;= 576<br/><br/> - 48 000 : 96 &lt;= скорость &lt; 576<br/><br/> - 88200: 256 &lt;= скорость &lt;= 576<br/><br/> - 96000: 256 &lt;= скорость &lt;= 576<br/><br/> 5/6:<br/><br/> - 32000: 160 &lt;= скорость &lt;= 896<br/><br/> - 44100: 240 &lt;= скорость &lt;= 1024<br/><br/> - 48000: 240 &lt;= скорость &lt;= 1024<br/><br/> - 88200: 640 &lt;= скорость &lt;= 1024<br/><br/> - 96000: 640 &lt;= скорость &lt;= 1024<br/><br/> 8:<br/><br/> - 32 000 : 224 &lt;= скорость &lt; 1024<br/><br/> - 44 100 : 384 &lt;= скорость &lt; 1024<br/><br/> - 48000: 384 &lt;= скорость &lt;= 1024<br/><br/> - 88200: 896 &lt;= скорость &lt;= 1024<br/><br/> - 96000: 896 &lt;= скорость &lt;= 1024  
 **HEAACV1** |1:<br/><br/> - 22050: скорость = 8<br/><br/> - 24000: 8 &lt;= скорость &lt;= 10<br/><br/> - 32000: 12 &lt;= скорость &lt;= 64<br/><br/> - 44100: 20 &lt;= скорость &lt;= 64<br/><br/> - 48000: 20 &lt;= скорость &lt;= 64<br/><br/> - 88200: скорость = 64<br/><br/> 2:<br/><br/> - 32000: 16 &lt;= скорость &lt;= 128<br/><br/> - 44100: 16 &lt;= скорость &lt;= 128<br/><br/> - 48000: 16 &lt;= скорость &lt;= 128<br/><br/> - 88 200 : 96 &lt;= скорость &lt;= 128<br/><br/> - 96000: 96 &lt;= скорость &lt;= 128<br/><br/> 5/6:<br/><br/> - 32 000 : 64 &lt;= скорость &lt;= 320<br/><br/> - 44100: 64 &lt;= скорость &lt;= 320<br/><br/> - 48000: 64 &lt;= скорость &lt;= 320<br/><br/> - 88 200 : 256 &lt;= скорость &lt;= 320<br/><br/> - 96000: 256 &lt;= скорость &lt;= 320<br/><br/> 8:<br/><br/> - 32000: 96 &lt;= скорость &lt;= 448<br/><br/> - 44100: 96 &lt;= скорость &lt;= 448<br/><br/> - 48000: 96 &lt;= скорость &lt;= 448<br/><br/> - 88200: 384 &lt;= скорость &lt;= 448<br/><br/> - 96000: 384 &lt;= скорость &lt;= 448  
@@ -163,7 +163,7 @@ ms.locfileid: "89261518"
 
 | Имя | Тип | Описание |
 | --- | --- | --- |
-| **FileName** |**xs:string** |Имя выходного файла.<br/><br/> Для создания имен выходных файлов можно использовать макросы, описанные в следующей таблице. Пример:<br/><br/> **"Outputs": [      {       "FileName": "{Basename}*{Resolution}*{Bitrate}.mp4",       "Format": {         "Type": "MP4Format"       }     }   ]** |
+| **FileName** |**xs:string** |Имя выходного файла.<br/><br/> Для создания имен выходных файлов можно использовать макросы, описанные в следующей таблице. Пример.<br/><br/> **"Outputs": [      {       "FileName": "{Basename}*{Resolution}*{Bitrate}.mp4",       "Format": {         "Type": "MP4Format"       }     }   ]** |
 
 ### <a name="macros"></a>Макросы
 
@@ -183,7 +183,7 @@ ms.locfileid: "89261518"
 
 | Имя | Тип | Описание |
 | --- | --- | --- |
-| **Начало** |**xs:string** | |
+| **Start** |**xs:string** | |
 | **Step** |**xs:string** | |
 | **Диапазон** |**xs:string** | |
 | **PreserveResolutionAfterRotation** |**xs:boolean** |Подробное описание см. в следующем разделе: [PreserveResolutionAfterRotation](media-services-mes-schema.md#PreserveResolutionAfterRotation). |
@@ -300,7 +300,7 @@ ms.locfileid: "89261518"
 ## <a name="examples"></a>Примеры
 Примеры предустановок XML, созданных на основе этой схемы, см. в документации по [предустановкам задач для MES (Media Encoder Standard)](media-services-mes-presets-overview.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
 
 ## <a name="provide-feedback"></a>Отзывы

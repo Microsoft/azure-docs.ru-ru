@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: normesta
 ms.reviewer: jamesbak
-ms.openlocfilehash: d8ef616ef059424846d5c42a91262881b8f6d30b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 4d75e60d0e497dcdd2aa121f8da73f11a7e2af5b
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101701813"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103015222"
 ---
 # <a name="access-control-lists-acls-in-azure-data-lake-storage-gen2"></a>Списки управления доступом (ACL) в Azure Data Lake Storage 2-го поколения
 
@@ -285,7 +285,7 @@ def set_default_acls_for_new_child(parent, child):
 
 ### <a name="does-data-lake-storage-gen2-support-inheritance-of-acls"></a>Поддерживает ли Data Lake Storage 2-го поколения наследование списков ACL?
 
-Списки управления доступом по умолчанию можно использовать для задания списков управления доступом для новых дочерних подкаталогов и файлов, созданных в родительском каталоге. Чтобы обновить списки управления доступом для существующих дочерних элементов, необходимо рекурсивно добавить, обновить или удалить списки управления доступом для нужной иерархии каталогов. Дополнительные сведения см. в разделе [Настройка списков управления доступом (ACL) рекурсивно для Azure Data Lake Storage 2-го поколения](#set-access-control-lists). 
+Списки управления доступом по умолчанию можно использовать для задания списков управления доступом для новых дочерних подкаталогов и файлов, созданных в родительском каталоге. Чтобы обновить списки управления доступом для существующих дочерних элементов, необходимо рекурсивно добавить, обновить или удалить списки управления доступом для нужной иерархии каталогов. Инструкции см. в разделе [Настройка списков управления доступом](#set-access-control-lists) этой статьи. 
 
 ### <a name="which-permissions-are-required-to-recursively-delete-a-directory-and-its-contents"></a>Какие разрешения требуются для рекурсивного удаления каталога и его содержимого?
 

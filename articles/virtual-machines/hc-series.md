@@ -3,17 +3,17 @@ title: Виртуальные машины Azure серии HC
 description: Спецификации виртуальных машин серии HC.
 author: vermagit
 ms.service: virtual-machines
-ms.subservice: hpc
+ms.subservice: vm-sizes-hpc
 ms.topic: conceptual
 ms.date: 03/05/2021
 ms.author: amverma
 ms.reviewer: jushiman
-ms.openlocfilehash: 630d4ab1e20e92cc9dbe3881469df7f209078fba
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: 6ec629629fc774ddb5423db91fe0d71a49305ca1
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102485707"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102566045"
 ---
 # <a name="hc-series"></a>Серия HC
 

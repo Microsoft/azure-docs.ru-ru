@@ -10,14 +10,16 @@ ms.reviewer: veyalla
 ms.service: iot-edge
 ms.custom: devx-track-azurecli
 services: iot-edge
-ms.openlocfilehash: 45df700cc1772250e42a0e007fb4ea91b49471ba
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.openlocfilehash: f4f2f8522f6d3d1039673803d946323deb485db9
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98684209"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200249"
 ---
 # <a name="monitor-iot-edge-deployments"></a>Мониторинг развертываний IoT Edge
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Azure IoT Edge предоставляет отчеты, позволяющие отслеживать сведения о модулях, развернутых на устройствах IoT Edge, в режиме реального времени. Служба Центра Интернета вещей извлекает сведения о состоянии этих устройств и предоставляет эти сведения оператору для мониторинга. Мониторинг также важен для [развертываний, выполняемых в большом масштабе](module-deployment-monitoring.md), включая автоматические развертывания и многоуровневые развертывания.
 

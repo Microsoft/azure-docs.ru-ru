@@ -11,14 +11,16 @@ services: iot-edge
 ms.custom:
 - amqp
 - mqtt
-ms.openlocfilehash: 431c116fee22da27ed0487fc6d2fe3644575491f
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: f7f05fb84ff6cbe320e8f479912bdcdefdc41021
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102046029"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103201655"
 ---
 # <a name="configure-an-iot-edge-device-to-act-as-a-transparent-gateway"></a>Настройка устройства IoT Edge в качестве прозрачного шлюза
+
+[!INCLUDE [iot-edge-version-201806-or-202011](../../includes/iot-edge-version-201806-or-202011.md)]
 
 В этой статье содержатся подробные инструкции по настройке устройства IoT Edge для работы в качестве прозрачного шлюза для взаимодействия других устройств с центром Интернета вещей. В этой статье используется термин *IOT Edge Gateway* для обозначения устройства IOT EDGE, настроенного в качестве прозрачного шлюза. Дополнительные сведения см. [в статье как можно использовать IOT Edge устройство в качестве шлюза](./iot-edge-as-gateway.md).
 
@@ -142,10 +144,10 @@ ms.locfileid: "102046029"
 
 1. Сохраните файл и закройте его.
 
-1. Перезапустите IoT Edge.
+1. Нажмите кнопку Применить, чтобы применить изменения.
 
    ```bash
-   sudo iotedge system restart
+   sudo iotedge config apply
    ```
 
 :::moniker-end
@@ -175,7 +177,7 @@ ms.locfileid: "102046029"
 
 5. Нажмите кнопку **Далее: Маршруты**.
 
-6. На странице **маршруты** убедитесь, что имеется маршрут для работы с сообщениями, поступающими от подчиненных устройств. Пример.
+6. На странице **маршруты** убедитесь, что имеется маршрут для работы с сообщениями, поступающими от подчиненных устройств. Например:
 
    * Маршрут, отправляющий в центр Интернета вещей все сообщения, как из модуля, так и из подчиненного устройства.
        * **Имя**: `allMessagesToHub`

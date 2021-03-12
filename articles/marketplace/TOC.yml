@@ -308,6 +308,48 @@
       href: partner-center-portal/downloads-dashboard.md
     - name: Панель мониторинга оценок и рецензий
       href: partner-center-portal/ratings-reviews.md
+    - name: Программный доступ к данным аналитики
+      items:
+        - name: Начало работы
+          href: analytics-get-started.md
+        - name: Предварительные требования для программного доступа
+          href: analytics-prerequisites.md
+        - name: Парадигма программного доступа
+          href: analytics-programmatic-access.md
+        - name: Выполнение первого вызова API
+          href: analytics-make-your-first-api-call.md
+        - name: Список системных запросов
+          href: analytics-system-queries.md
+        - name: Примеры запросов
+          href: analytics-sample-queries.md
+        - name: Пример приложения
+          href: analytics-sample-application.md
+        - name: Спецификация пользовательского запроса
+          href: analytics-custom-query-specification.md
+        - name: Часто задаваемые вопросы о программном доступе к данным аналитики
+          href: analytics-programmatic-faq.md
+        - name: Справочник по API аналитики
+          items:
+            - name: Список API
+              href: analytics-available-apis.md
+            - name: Получение всех наборов данных
+              href: analytics-api-get-all-datasets.md
+            - name: API получения запросов отчетов
+              href: analytics-api-get-report-queries.md
+            - name: API удаления запросов отчетов
+              href: analytics-api-delete-report-queries.md
+            - name: API пробного выполнения запросов отчетов
+              href: analytics-api-try-report-queries.md
+            - name: API получения отчета
+              href: analytics-api-get-report.md
+            - name: API обновления отчета
+              href: analytics-api-update-report.md
+            - name: API удаления отчета
+              href: analytics-api-delete-report.md
+            - name: API приостановки выполнения отчетов
+              href: analytics-api-pause-report-executions.md
+            - name: API возобновления выполнения отчетов
+              href: analytics-api-resume-report-executions.md
     - name: Управление аномалиями с выставлением счетов по тарифу
       href: anomaly-detection.md
     - name: Часто задаваемые вопросы об аналитике

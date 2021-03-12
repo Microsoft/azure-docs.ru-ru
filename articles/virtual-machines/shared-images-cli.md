@@ -3,19 +3,19 @@ title: Создавайте общие галереи изображений с 
 description: В этой статье вы узнаете, как с помощью Azure CLI создать общий образ виртуальной машины Azure.
 author: cynthn
 ms.service: virtual-machines
-ms.subservice: imaging
+ms.subservice: shared-image-gallery
 ms.topic: how-to
 ms.workload: infrastructure
 ms.date: 05/04/2020
 ms.author: cynthn
 ms.reviewer: akjosh
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: ee7f7b524225845dc68100ee8ec9292eef111232
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: 991b5363b180651b775bd46a0a1353fd124d34e6
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98882354"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102557734"
 ---
 # <a name="create-a-shared-image-gallery-with-the-azure-cli"></a>Создание коллекции общих образов с помощью Azure CLI
 
