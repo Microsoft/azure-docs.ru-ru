@@ -8,14 +8,14 @@ ms.service: active-directory
 ms.subservice: domain-services
 ms.workload: identity
 ms.topic: conceptual
-ms.date: 06/05/2020
+ms.date: 03/10/2021
 ms.author: justinha
-ms.openlocfilehash: 76af477af8290634d2658c58574b8f96cff7b1fb
-ms.sourcegitcommit: 8192034867ee1fd3925c4a48d890f140ca3918ce
+ms.openlocfilehash: 5473ef46751d64fdbbf1d52f39c66f49d707e615
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96620347"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102631393"
 ---
 # <a name="management-concepts-for-user-accounts-passwords-and-administration-in-azure-active-directory-domain-services"></a>Основные понятия управления учетными записями пользователей, паролями и администрированием в доменных службах Azure Active Directory
 
@@ -80,7 +80,7 @@ AD DS Azure включает политику паролей по умолчан
 
 | Номер SKU   | Максимальное число объектов | Частота резервного копирования | Максимальное число доверий исходящих лесов |
 |------------|----------------------|------------------|----|
-| Standard   | Неограниченно            | Каждые 7 дней     | 0  |
+| Standard   | Неограниченно            | Каждые 5 дней     | 0  |
 | Enterprise | Неограниченно            | Каждые 3 дня     | 5  |
 | Премиум    | Неограниченно            | Ежедневно            | 10 |
 

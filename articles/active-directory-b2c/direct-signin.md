@@ -12,12 +12,12 @@ ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: b2342ed978204284bee4d2be0f1c983aa10ade36
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.openlocfilehash: 35e8efa269ab72477b06e86824d368d0a3dced03
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97585043"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103197329"
 ---
 # <a name="set-up-direct-sign-in-using-azure-active-directory-b2c"></a>Настройка прямого входа в систему с помощью Azure Active Directory B2C
 
@@ -79,7 +79,7 @@ ms.locfileid: "97585043"
 
 ::: zone pivot="b2c-custom-policy"
 
-Для поддержки параметра шарнира домена можно настроить имя домена с помощью `<Domain>domain name</Domain>` XML-элемента Any `<ClaimsProvider>` .
+Для поддержки параметра указания домена можно настроить имя домена с помощью `<Domain>domain name</Domain>` XML-элемента Any `<ClaimsProvider>` .
 
 ```xml
 <ClaimsProvider>

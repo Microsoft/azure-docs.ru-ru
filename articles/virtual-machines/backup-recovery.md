@@ -3,15 +3,16 @@ title: Общие сведения о параметрах резервного 
 description: Общие сведения о параметрах резервного копирования для виртуальных машин Azure.
 author: cynthn
 ms.service: virtual-machines
+ms.subservice: recovery
 ms.topic: conceptual
 ms.date: 8/03/2020
 ms.author: cynthn
-ms.openlocfilehash: 5a093de0a27c8379cb6eff9c2bc3867dfdc20db5
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.openlocfilehash: c4116ef8d02bd47d6375371be9381553f8c22eda
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98787813"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102565450"
 ---
 # <a name="backup-and-restore-options-for-virtual-machines-in-azure"></a>Параметры резервного копирования и восстановления для виртуальных машин в Azure
 

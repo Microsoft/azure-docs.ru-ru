@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 8/27/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 4889744347b72603a0f6318f981bc2db4906b835
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 7bb9b6d4a6ca006952d709244e6526345d44431e
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102433545"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102630272"
 ---
 # <a name="connect-function-apps-in-azure-for-processing-data"></a>Подключение приложений функций в Azure для обработки данных
 
@@ -25,7 +25,7 @@ ms.locfileid: "102433545"
 Ниже приведен обзор шагов, которые он содержит.
 
 1. Создание проекта функций Azure в Visual Studio
-2. Написание функции с помощью триггера [сетки событий](../event-grid/overview.md)
+2. Написать функцию с помощью триггера [сетки событий](../event-grid/overview.md)
 3. Добавление кода проверки подлинности в функцию (для доступа к Azure Digital двойников)
 4. Публикация приложения-функции в Azure
 5. Настройка [безопасного](concepts-security.md) доступа для приложения функции
@@ -63,7 +63,7 @@ ms.locfileid: "102433545"
 * [System.Net.Http](https://www.nuget.org/packages/System.Net.Http/)
 * [Azure. Core](https://www.nuget.org/packages/Azure.Core/)
 
-Затем в Visual Studio обозреватель решений откройте файл _function1.CS_ , в котором имеется образец кода, и добавьте следующие `using` инструкции для этих пакетов в функцию. 
+Затем в Visual Studio обозреватель решений откройте файл _function1.CS_ , в котором имеется образец кода, и добавьте следующие `using` инструкции для этих пакетов в функцию.
 
 :::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/adtIngestFunctionSample.cs" id="Function_dependencies":::
 
@@ -96,6 +96,20 @@ ms.locfileid: "102433545"
 ## <a name="publish-the-function-app-to-azure"></a>Публикация приложения-функции в Azure
 
 [!INCLUDE [digital-twins-publish-azure-function.md](../../includes/digital-twins-publish-azure-function.md)]
+
+### <a name="verify-function-publish"></a>Проверка публикации функции
+
+1. Выполните вход с использованием учетных данных в [портал Azure](https://portal.azure.com/).
+2. В строке поиска в верхней части окна найдите **имя приложения функции**.
+
+    :::image type="content" source="media/how-to-create-azure-function/search-function-app.png" alt-text="Найдите приложение функции с его именем в портал Azure." lightbox="media/how-to-create-azure-function/search-function-app.png":::
+
+3. На открывшейся странице *приложения-функции* выберите *функции* в меню слева. Если функция успешно опубликована, вы увидите имя функции в списке.
+Обратите внимание, что может потребоваться подождать несколько минут или обновить страницу несколько раз, прежде чем вы увидите функцию, указанную в списке опубликованных функций.
+
+    :::image type="content" source="media/how-to-create-azure-function/view-published-functions.png" alt-text="Просмотр опубликованных функций в портал Azure." lightbox="media/how-to-create-azure-function/view-published-functions.png":::
+
+Чтобы ваше приложение-функция могло получить доступ к Azure Digital двойников, оно должно иметь управляемое системой удостоверение с разрешениями на доступ к вашему экземпляру Azure Digital двойников. Вы настроите их далее.
 
 ## <a name="set-up-security-access-for-the-function-app"></a>Настройка безопасного доступа для приложения функции
 

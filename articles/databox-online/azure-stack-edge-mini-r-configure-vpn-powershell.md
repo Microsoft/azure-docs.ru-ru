@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: article
 ms.date: 11/17/2020
 ms.author: alkohli
-ms.openlocfilehash: 763ccd397d8cd704ca161032e65f17979bccb53b
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.openlocfilehash: 9fa4c678a04342b47601f81ede7c49ab841f42ba
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96467897"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102630968"
 ---
 # <a name="configure-vpn-on-your-azure-stack-edge-mini-r-device-via-azure-powershell"></a>Настройка VPN на Azure Stack пограничном устройстве R с помощью Azure PowerShell
 
@@ -153,7 +153,7 @@ VPN-подключение обеспечивает второй уровень 
     |ResourceGroupName     | Это имя группы ресурсов, в которой создаются все ресурсы Azure.        |
     |азуредеплойментнаме    |Это имя для развертывания Azure.         |
     |нетворкрулеколлектионнаме            | Это имя для коллекции всех правил сети, которые создаются и добавляются в брандмауэр Azure.             |
-    |Priority            | Это приоритет, назначенный всем создаваемым правилам сети и приложений.              |
+    |Приоритет            | Это приоритет, назначенный всем создаваемым правилам сети и приложений.              |
     |аппрулеколлектионнаме            |Это имя для коллекции всех правил приложения, создаваемых и добавленных в брандмауэр Azure.                |
 
 
@@ -238,7 +238,7 @@ VPN-подключение обеспечивает второй уровень 
 
     ![Включить конфигурацию P2S 3](media/azure-stack-edge-mini-r-configure-vpn-powershell/extract-exe.png)
 
-3. Создайте временный путь. Пример:
+3. Создайте временный путь. Пример.
 
     `C:\NewTemp\vnet\tmp`
 
@@ -284,7 +284,7 @@ VPN-подключение обеспечивает второй уровень 
 
     ![Настройка VPN 1](media/azure-stack-edge-mini-r-configure-vpn-powershell/configure-vpn-1.png)
 
-2. В колонке **Настройка VPN** :
+2. В колонке **Настройка VPN** выполните следующие действия:
     
     1. В файле отправить телефонную книгу укажите файл. pbk, созданный на предыдущем шаге.
     2. В файле конфигурации списка отправки общедоступных IP-адресов укажите в качестве входных данных JSON-файл центра обработки данных Azure. Этот файл был скачан на предыдущем шаге с: [https://www.microsoft.com/download/details.aspx?id=56519](https://www.microsoft.com/download/details.aspx?id=56519) .
@@ -303,7 +303,7 @@ VPN-подключение обеспечивает второй уровень 
 
 ## <a name="validate-data-transfer-through-vpn"></a>Проверка передаваемых данных через VPN
 
-Чтобы убедиться, что VPN работает, скопируйте данные в общую папку SMB. Выполните действия, описанные в разделе [Добавление общей папки](azure-stack-edge-j-series-manage-shares.md#add-a-share) на Azure Stack пограничной устройство. 
+Чтобы убедиться, что VPN работает, скопируйте данные в общую папку SMB. Выполните действия, описанные в разделе [Добавление общей папки](azure-stack-edge-gpu-manage-shares.md#add-a-share) на Azure Stack пограничной устройство. 
 
 1. Скопируйте файл, например \data\pictures\waterfall.jpg, в общую папку SMB, подключенную к клиентской системе. 
 2. Чтобы проверить, что данные проходят через VPN, во время копирования данных:

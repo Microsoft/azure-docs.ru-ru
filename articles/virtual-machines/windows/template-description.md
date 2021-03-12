@@ -2,17 +2,17 @@
 title: Виртуальные машины в шаблоне Azure Resource Manager | Microsoft Azure
 description: Сведения о том, как ресурс виртуальной машины определяется в шаблоне Azure Resource Manager.
 author: cynthn
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
 ms.workload: infrastructure
 ms.topic: how-to
 ms.date: 01/03/2019
 ms.author: cynthn
-ms.openlocfilehash: 2726ba3b337dc785de58b06fb5e8372058f71879
-ms.sourcegitcommit: 2bd0a039be8126c969a795cea3b60ce8e4ce64fc
+ms.openlocfilehash: 32b73be3faf6eedb92220725b292a3e69cf7f965
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98202102"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102555998"
 ---
 # <a name="virtual-machines-in-an-azure-resource-manager-template"></a>Виртуальные машины в шаблоне Azure Resource Manager
 
@@ -277,7 +277,7 @@ Resource Manager параллельно развертывает все ресу
 - [size](../sizes.md)
 - [имя](/azure/architecture/best-practices/resource-naming) и учетные данные;
 - диск и [параметры операционной системы;](cli-ps-findimage.md)
-- [сетевой интерфейс](/previous-versions/azure/virtual-network/virtual-network-deploy-multinic-classic-ps) 
+- [сетевой интерфейс;](/previous-versions/azure/virtual-network/virtual-network-deploy-multinic-classic-ps) 
 - диагностика загрузки.
 
 ## <a name="disks-and-images"></a>Диски и образы
@@ -367,7 +367,7 @@ Resource Manager параллельно развертывает все ресу
 ],
 ```
 
-## <a name="extensions"></a>Расширения
+## <a name="extensions"></a>Модули
 
 Хотя функции [расширения](../extensions/features-windows.md) являются отдельным ресурсом, они тесно связаны с виртуальными машинами. Расширения можно добавить как дочерний ресурс виртуальной машины или как отдельный ресурс. В примере показано добавление [расширения системы диагностики](../extensions/diagnostics-template.md) к виртуальным машинам.
 

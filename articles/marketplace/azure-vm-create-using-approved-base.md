@@ -6,17 +6,17 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
 author: emuench
 ms.author: krsh
-ms.date: 01/06/2021
-ms.openlocfilehash: 9164c1e2542024a02bf4868658d0f29728f32c7b
-ms.sourcegitcommit: 8f0803d3336d8c47654e119f1edd747180fe67aa
+ms.date: 02/18/2021
+ms.openlocfilehash: 7ed3f707ad69c60111bcc97e139c0825fd503d8e
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97976866"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102630117"
 ---
 # <a name="how-to-create-a-virtual-machine-using-an-approved-base"></a>Создание виртуальной машины с помощью утвержденной базы
 
-В этой статье описывается, как создать виртуальную машину, содержащую предварительно настроенную операционную систему, с помощью Azure. Если это не совместимо с вашим решением, можно [создать и настроить локальную виртуальную машину](azure-vm-create-using-own-image.md) с помощью утвержденной операционной системы, затем настроить и подготовить ее для передачи, как описано в статье [Подготовка VHD-диска Windows или VHDX к отправке в Azure](../virtual-machines/windows/prepare-for-upload-vhd-image.md).
+В этой статье описывается, как создать виртуальную машину, содержащую предварительно настроенную операционную систему, с помощью Azure. Если это не совместимо с вашим решением, можно [создать и настроить локальную виртуальную машину](azure-vm-create-using-own-image.md) с помощью утвержденной операционной системы.
 
 > [!NOTE]
 > Перед началом этой процедуры ознакомьтесь с [техническими требованиями](marketplace-virtual-machines.md#technical-requirements) для предложений виртуальных машин Azure, включая требования к виртуальному жесткому диску (VHD).
@@ -78,5 +78,5 @@ Azure начнет подготовку указанной вами виртуа
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Рекомендуемый следующий шаг: [Проверьте образ виртуальной машины](azure-vm-image-test.md) , чтобы убедиться, что он соответствует требованиям к публикации Azure Marketplace. Это необязательно.
-- Если вы не протестируете образ виртуальной машины, продолжайте [создавать URI SAS](azure-vm-get-sas-uri.md).
+- Если вы не хотите протестировать образ виртуальной машины, войдите в [Центр партнеров](https://partner.microsoft.com/) , чтобы опубликовать образ.
 - Если вы столкнулись с трудностями при создании нового виртуального жесткого диска на основе Azure, см. раздел [вопросы и ответы о виртуальной машине для Azure Marketplace](azure-vm-create-faq.md).

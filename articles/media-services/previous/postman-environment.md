@@ -3,7 +3,7 @@ title: Импорт среды Postman для вызовов REST в служб�
 description: В этом разделе приведено определение среды Postman для вызовов REST в службах мультимедиа Azure.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.service: media-services
@@ -11,14 +11,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/20/2019
-ms.author: juliako
-ms.openlocfilehash: 2ccc765a3fb0063d92382edcec260808183f27a2
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 3/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: 5b1705fb2b3b1b69f79158747827d764f1bef4f0
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89259257"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103007854"
 ---
 # <a name="import-the-postman-environment"></a>Импорт среды Postman
 

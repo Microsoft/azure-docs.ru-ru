@@ -4,17 +4,17 @@ description: Узнайте, как использовать Azure PowerShell д
 author: cynthn
 ms.topic: how-to
 ms.service: virtual-machines
-ms.subservice: imaging
+ms.subservice: shared-image-gallery
 ms.workload: infrastructure
 ms.date: 05/04/2020
 ms.author: cynthn
 ms.reviewer: akjosh
-ms.openlocfilehash: a7b8cb10f75d7a99198ddfdc1a1bbef3c34a03da
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.openlocfilehash: f7afc671dbb3d4ef8aa30222c4f235c9f7869d02
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98685112"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102556848"
 ---
 # <a name="create-an-image-from-a-vm"></a>Создание образа из виртуальной машины
 
@@ -27,7 +27,7 @@ ms.locfileid: "98685112"
 - **Версия образа** — это то, что используется для создания виртуальной машины при использовании общей коллекции образов. В зависимости от требований для вашей среды, у вас может быть несколько версий образа. При создании виртуальной машины используется версия образа для создания новых дисков для виртуальной машины. Версии образов можно использовать несколько раз.
 
 
-## <a name="before-you-begin"></a>Перед началом
+## <a name="before-you-begin"></a>Подготовка к работе
 
 Для работы с этой статьей необходимо иметь имеющуюся коллекцию общих образов и существующую виртуальную машину в Azure для использования в качестве источника. 
 
@@ -136,7 +136,7 @@ $job.State
 > Вы также можете сохранить образ в хранилище класса Premium, добавив `-StorageAccountType Premium_LRS` [хранилище или избыточное в зону](../storage/common/storage-redundancy.md) , добавив `-StorageAccountType Standard_ZRS` его при создании версии образа.
 >
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Убедившись, что новая версия образа работает правильно, можно создать виртуальную машину. Создайте виртуальную машину на основе [специализированной версии образа](vm-specialized-image-version-powershell.md) или [обобщенной версии образа](vm-generalized-image-version-powershell.md).
 
