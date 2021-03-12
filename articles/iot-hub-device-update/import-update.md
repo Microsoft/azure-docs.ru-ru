@@ -6,12 +6,12 @@ ms.author: andbrown
 ms.date: 2/11/2021
 ms.topic: how-to
 ms.service: iot-hub-device-update
-ms.openlocfilehash: 6502728a14ea825fadfde107e61f235db5619ae0
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: b9d40848abdd85beeca592001b697e3c50b7cd59
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102507285"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103008568"
 ---
 # <a name="import-new-update"></a>Импорт нового обновления
 Узнайте, как импортировать новое обновление в центр обновления для центра Интернета вещей. Если вы еще не сделали этого, обязательно ознакомьтесь с основными [понятиями импорта](import-concepts.md).
@@ -33,9 +33,9 @@ ms.locfileid: "102507285"
 
 1. Убедитесь, что файл образа обновления или файл манифеста APT находятся в каталоге, доступном из PowerShell.
 
-2. Клонирование [обновления устройства в репозитории центра Интернета вещей](https://github.com/azure/iot-hub-device-update)или скачивание его в виде ZIP-файла в расположение, доступное из PowerShell (после скачивания ZIP-файла щелкните правой кнопкой мыши для `Properties`  >  `General` перехода на вкладку > проверьте `Unblock` раздел, `Security` чтобы избежать появления предупреждений о безопасности PowerShell).
+2. Создайте текстовый файл с именем **адуупдате. PSM1** в каталоге, где находится файл образа обновления или файл манифеста APT. Затем откройте командлет PowerShell [адуупдате. PSM1](https://github.com/Azure/iot-hub-device-update/tree/main/tools/AduCmdlets) , скопируйте содержимое в текстовый файл, а затем сохраните текстовый файл.
 
-3. В PowerShell перейдите в `tools/AduCmdlets` каталог и запустите:
+3. В PowerShell перейдите в каталог, в котором был создан командлет PowerShell, из шага 2. Далее выполните:
 
     ```powershell
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
@@ -57,11 +57,11 @@ ms.locfileid: "102507285"
 
     | Параметр | Описание |
     | --------- | ----------- |
-    | deviceManufacturer | Изготовитель устройства, совместимое с обновлением, например contoso. Должно соответствовать  [свойству устройства](https://docs.microsoft.com/azure/iot-hub-device-update/device-update-plug-and-play#device-properties) производителя
-    | deviceModel | Модель устройства, совместимое с обновлением, например тостер. Должно соответствовать  [свойству устройства](https://docs.microsoft.com/azure/iot-hub-device-update/device-update-plug-and-play#device-properties) модели
+    | deviceManufacturer | Изготовитель устройства, совместимое с обновлением, например contoso. Должно соответствовать  [свойству устройства](https://docs.microsoft.com/azure/iot-hub-device-update/device-update-plug-and-play#device-properties)производителя.
+    | deviceModel | Модель устройства, совместимое с обновлением, например тостер. Должно соответствовать  [свойству устройства](https://docs.microsoft.com/azure/iot-hub-device-update/device-update-plug-and-play#device-properties)модели.
     | упдатепровидер | Сущность, которая создает или непосредственно отвечает за обновление. Часто это будет название компании.
     | упдатенаме | Идентификатор класса обновлений. Класс может быть любым выбранным. Как правило, это имя устройства или модели.
-    | упдатеверсион | Номер версии, отличающий это обновление от других, имеющих одного и того же поставщика и имя. Может быть или не соответствовать версии отдельного программного компонента на устройстве.
+    | упдатеверсион | Номер версии, отличающий это обновление от других, имеющих одного и того же поставщика и имя. Не соответствует версии отдельного программного компонента на устройстве (но может быть, если вы выбрали).
     | updateType | <ul><li>Укажите `microsoft/swupdate:1` для обновления образа</li><li>Укажите `microsoft/apt:1` для обновления пакета</li></ul>
     | инсталледкритериа | <ul><li>Укажите значение Свверсион для `microsoft/swupdate:1` типа обновления</li><li>Укажите рекомендуемое значение для `microsoft/apt:1` типа обновления.
     | Упдатефилепас | Путь к файлам обновления на компьютере
@@ -111,6 +111,9 @@ ms.locfileid: "102507285"
 ```
 
 ## <a name="import-update"></a>Импорт обновлений
+
+[!NOTE]
+В приведенных ниже инструкциях показано, как импортировать обновление с помощью пользовательского интерфейса портал Azure. Вы также можете использовать [обновление устройства для API центра Интернета вещей](https://github.com/Azure/iot-hub-device-update/tree/main/docs/publish-api-reference) , чтобы импортировать обновление. 
 
 1. Войдите в [портал Azure](https://portal.azure.com) и перейдите в центр Интернета вещей с помощью обновления устройства.
 

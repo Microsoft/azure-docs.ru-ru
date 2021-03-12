@@ -1,20 +1,21 @@
 ---
 title: 'Присвоить диску D: виртуальной машине диск данных '
 description: Описывает, как изменить буквы дисков для виртуальной машины Windows, чтобы диск D можно было использовать в качестве диска данных.
-services: virtual-machines-windows
+services: virtual-machines
 author: cynthn
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
+ms.collection: windows
 ms.subservice: disks
 ms.workload: infrastructure-services
 ms.topic: how-to
 ms.date: 01/02/2018
 ms.author: cynthn
-ms.openlocfilehash: cae29954211e62601debb35d76f938fb6a92779e
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 87aa1344b3fbe0d11c1c5cdfa8a56560d67eb54f
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96019809"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102555556"
 ---
 # <a name="use-the-d-drive-as-a-data-drive-on-a-windows-vm"></a>Использование диска D в качестве диска данных на виртуальной машине Windows
 Если вашему приложению нужно использовать диск D для хранения данных, следуйте приведенным указаниям, чтобы использовать другой диск в качестве временного. Никогда не используйте временный диск для хранения данных, которые нужно сохранить.
@@ -57,5 +58,5 @@ ms.locfileid: "96019809"
 8. Нажмите кнопку **Применить**. Вы получите предупреждение о том, что для вступления изменений в силу необходимо перезагрузить компьютер.
 9. Перезапустите виртуальную машину.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Можно увеличить объем хранилища, доступного для виртуальной машины, [присоединив дополнительный диск данных](attach-managed-disk-portal.md).

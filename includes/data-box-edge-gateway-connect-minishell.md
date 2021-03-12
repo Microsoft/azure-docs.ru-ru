@@ -4,12 +4,12 @@ ms.service: databox
 ms.topic: include
 ms.date: 03/06/2019
 ms.author: alkohli
-ms.openlocfilehash: 5343653dc87325fa0702c0864f0df1456a36e304
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 881d22592e57ef14885eedf2330c71ffa154a136
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102532562"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102603371"
 ---
 В зависимости от операционной системы клиента процедуры удаленного подключения к устройству отличаются.
 
@@ -70,7 +70,7 @@ ms.locfileid: "102532562"
 
 1. Чтобы открыть сеанс PowerShell, введите:
 
-    `sudo pwsh`
+    `pwsh`
  
 2. Для подключения с помощью удаленного клиента введите:
 

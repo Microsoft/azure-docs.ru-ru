@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: media
 ms.date: 1/14/2020
 ms.author: inhenkel
-ms.openlocfilehash: 671991a936fd0330c31017dd5f64e7b5eca9b3f4
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: e093e22e2f1db3b432fdf328a077e56a8e56d92b
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "102563665"
+ms.locfileid: "102612508"
 ---
 # <a name="encoding-scenario-based-migration-guidance"></a>Кодирование рекомендаций по миграции на основе сценариев
 
@@ -26,7 +26,7 @@ ms.locfileid: "102563665"
 
 Эта статья содержит рекомендации по кодированию на основе сценариев, которые помогут вам выполнить миграцию из служб мультимедиа Azure версии 2 в v3.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Прежде чем приступить к изменению рабочего процесса кодирования, рекомендуется понимать различия в способах управления хранилищем.  В AMS v3 API службы хранилища Azure используется для управления учетными записями хранения, связанными с учетной записью служб мультимедиа.
 
@@ -58,7 +58,7 @@ ms.locfileid: "102563665"
 
 ### <a name="v3-encoding-workflow"></a>Рабочий процесс кодирования v3
 
-[![Кодирование рабочего процесса для v3 ](./media/migration-guide/V3-pretty.svg)](./media/migration-guide/V3-pretty.svg#lightbox)
+[![Кодирование рабочего процесса для v3](./media/migration-guide/V3-pretty.svg)](./media/migration-guide/V3-pretty.svg#lightbox)
 
 1. Настройка
     1. Создайте ресурс или используйте существующий ресурс. При использовании нового ресурса Отправьте содержимое в этот ресурс. При использовании существующего ресурса необходимо кодировать файлы, которые уже существуют в ресурсе. Не следует *отправлять больше содержимого в этот ресурс.*

@@ -3,14 +3,14 @@ title: Шаблоны развертывания что если
 description: Прежде чем развертывать шаблон Azure Resource Manager, определите, какие изменения будут выполнены для ресурсов.
 author: tfitzmac
 ms.topic: conceptual
-ms.date: 02/05/2021
+ms.date: 03/09/2021
 ms.author: tomfitz
-ms.openlocfilehash: 8122fa5c00a61017b5f358a112c94a5299539cee
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.openlocfilehash: 3f35f00e5fcd26c7aa4bb685dc80f48eabb88b6d
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99591630"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547940"
 ---
 # <a name="arm-template-deployment-what-if-operation"></a>Операция "что если" развертывания шаблона ARM
 
@@ -310,7 +310,7 @@ foreach ($change in $results.Changes)
 }
 ```
 
-# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
 ```azurecli
 results=$(az deployment group what-if --resource-group ExampleGroup --template-uri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-after.json" --no-pretty-print)
@@ -391,8 +391,6 @@ Are you sure you want to execute the deployment?
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
+- Сведения об использовании операции "что если" в конвейере см. [в разделе тестовые шаблоны ARM с What-If в конвейере](https://4bes.nl/2021/03/06/test-arm-templates-with-what-if/).
 - Если вы заметили неправильные результаты операции "что если", сообщите о проблемах по адресу [https://aka.ms/whatifissues](https://aka.ms/whatifissues) .
 - Сведения о модуле Microsoft Learn, который охватывает использование функции, см. в разделе [Предварительный просмотр изменений и проверка ресурсов Azure с помощью средств тестирования шаблонов ARM](/learn/modules/arm-template-test/).
-- Сведения о развертывании шаблонов с помощью Azure PowerShell см. в статье [развертывание ресурсов с помощью шаблонов ARM и Azure PowerShell](deploy-powershell.md).
-- Сведения о развертывании шаблонов с помощью Azure CLI см. в статье [развертывание ресурсов с помощью шаблонов ARM и Azure CLI](deploy-cli.md).
-- Сведения о развертывании шаблонов с помощью RESTFUL см. в статье [развертывание ресурсов с помощью шаблонов ARM и диспетчер ресурсов REST API](deploy-rest.md).

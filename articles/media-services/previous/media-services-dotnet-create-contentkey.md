@@ -3,7 +3,7 @@ title: Создание ContentKey с использованием .NET
 description: В этой статье показано, как создавать ключи содержимого с помощью .NET. Эти ключи обеспечивают безопасный доступ к ресурсам.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: 225b05e5-7d30-409c-b5b7-3ef0634310c7
@@ -12,15 +12,15 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/18/2019
-ms.author: juliako
+ms.date: 03/10/2021
+ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: d5efbc30c80a0052ed99cb129c2e5f9030482012
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 05bf928490e94f43b755e1958213899e9e1e98e9
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91261235"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103014185"
 ---
 # <a name="create-contentkeys-with-net"></a>Создание ContentKey с использованием .NET
 

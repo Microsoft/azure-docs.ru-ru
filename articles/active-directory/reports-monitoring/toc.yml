@@ -98,9 +98,9 @@
     - name: "Командлеты Azure\_AD PowerShell для создания отчетов"
       href: reference-powershell-reporting.md
     - name: Справочник по API журналов аудита
-      href: /graph/api/resources/directoryaudit?view=graph-rest-1.0
+      href: /graph/api/resources/directoryaudit
     - name: Справочник по API журналов входа
-      href: /graph/api/resources/signin?view=graph-rest-1.0
+      href: /graph/api/resources/signin
     - name: Действия аудита
       href: reference-audit-activities.md
     - name: Политики хранения данных

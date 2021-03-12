@@ -2,18 +2,19 @@
 title: Примеры скриптов шифрования дисков Azure
 description: В этой статье описывается, как Microsoft Azure шифрование дисков для виртуальных машин Linux.
 author: msmbaldwin
-ms.service: virtual-machines-linux
-ms.subservice: security
+ms.service: virtual-machines
+ms.subservice: disks
+ms.collection: linux
 ms.topic: how-to
 ms.author: mbaldwin
 ms.date: 08/06/2019
 ms.custom: seodec18, devx-track-azurepowershell
-ms.openlocfilehash: d178ae39d3af6b39047501f0bc47acbc6e792f48
-ms.sourcegitcommit: d76108b476259fe3f5f20a91ed2c237c1577df14
+ms.openlocfilehash: f11677d9ebc31f1c1f7cc6332b07b69f8e35ad52
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92911500"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102561183"
 ---
 # <a name="azure-disk-encryption-sample-scripts-for-linux-vms"></a>Примеры сценариев шифрования дисков Azure для виртуальных машин Linux
 
@@ -54,13 +55,13 @@ ms.locfileid: "92911500"
 
 |Параметр|Описание|Обязательное?|
 |------|------|------|
-|$resourceGroupName| Имя группы ресурсов, к которой принадлежит хранилище ключей.  При отсутствии группы ресурсов с таким именем — она будет создана.| Верно|
-|$keyVaultName|Имя хранилища ключей, в котором будут размещаться ключи шифрования. При отсутствии хранилища ключей с таким именем — оно будет создано.| Верно|
-|$location|Расположение хранилища ключей. Убедитесь, что хранилище ключей и виртуальные машины, которые предстоит зашифровать, находятся в одном расположении. Получите список расположений с помощью команды `Get-AzLocation`.|Верно|
-|$subscriptionId|Идентификатор подписки Azure для использования.  Вы можете получить идентификатор подписки с помощью команды `Get-AzSubscription`.|Верно|
-|$aadAppName|Имя приложения Azure AD, которое будет использоваться для записи секретов в хранилище ключей. Будет создано приложение с таким именем (если оно еще не создано). Если это приложение уже есть, передайте параметр aadClientSecret в сценарий.|Неверно|
-|$aadClientSecret|Секрет клиента приложения Azure AD, который был создан ранее.|Неверно|
-|$keyEncryptionKeyName|Имя дополнительного ключа шифрования ключа в хранилище ключей. При отсутствии ключа с таким именем — он будет создан.|Неверно|
+|$resourceGroupName| Имя группы ресурсов, к которой принадлежит хранилище ключей.  При отсутствии группы ресурсов с таким именем — она будет создана.| True|
+|$keyVaultName|Имя хранилища ключей, в котором будут размещаться ключи шифрования. При отсутствии хранилища ключей с таким именем — оно будет создано.| True|
+|$location|Расположение хранилища ключей. Убедитесь, что хранилище ключей и виртуальные машины, которые предстоит зашифровать, находятся в одном расположении. Получите список расположений с помощью команды `Get-AzLocation`.|True|
+|$subscriptionId|Идентификатор подписки Azure для использования.  Вы можете получить идентификатор подписки с помощью команды `Get-AzSubscription`.|True|
+|$aadAppName|Имя приложения Azure AD, которое будет использоваться для записи секретов в хранилище ключей. Будет создано приложение с таким именем (если оно еще не создано). Если это приложение уже есть, передайте параметр aadClientSecret в сценарий.|False|
+|$aadClientSecret|Секрет клиента приложения Azure AD, который был создан ранее.|False|
+|$keyEncryptionKeyName|Имя дополнительного ключа шифрования ключа в хранилище ключей. При отсутствии ключа с таким именем — он будет создан.|False|
 
 ### <a name="encrypt-or-decrypt-vms-without-an-azure-ad-app"></a>Шифрование или расшифровка виртуальных машин без приложения Azure AD
 
@@ -231,7 +232,7 @@ ms.locfileid: "92911500"
     fi
    ```
 
-2. Измените настройки шифрования в */etc/crypttab* . Он должен выглядеть так:
+2. Измените настройки шифрования в */etc/crypttab*. Он должен выглядеть так:
    ```
     xxx_crypt uuid=xxxxxxxxxxxxxxxxxxxxx none luks,discard,keyscript=/usr/local/sbin/azure_crypt_key.sh
     ```
@@ -240,7 +241,7 @@ ms.locfileid: "92911500"
    ```
     chmod +x /usr/local/sbin/azure_crypt_key.sh
    ```
-5. Измените */etc/initramfs-tools/modules* , добавив приведенные ниже строки.
+5. Измените */etc/initramfs-tools/modules*, добавив приведенные ниже строки.
    ```
     vfat
     ntfs
@@ -331,7 +332,7 @@ ms.locfileid: "92911500"
 
    ![Установка назначения при настройке CentOS 7](./media/disk-encryption/centos-encrypt-fig1.png)
 
-2. Включите шифрование для корневого раздела (параметр **Encrypt** ).
+2. Включите шифрование для корневого раздела (параметр **Encrypt**).
 
    ![Выбор шифрования для корневого раздела при настройке CentOS 7](./media/disk-encryption/centos-encrypt-fig2.png)
 
@@ -375,7 +376,7 @@ ms.locfileid: "92911500"
    ```bash
     if [ -z "$DRACUT_SYSTEMD" ]; then
    ```
-   в
+   значение
    ```bash
     if [ 1 ]; then
    ```

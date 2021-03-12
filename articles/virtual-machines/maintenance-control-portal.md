@@ -3,16 +3,17 @@ title: Управление обслуживанием для виртуальн
 description: Узнайте, как управлять применением обслуживания к виртуальным машинам Azure с помощью управления обслуживанием и портал Azure.
 author: cynthn
 ms.service: virtual-machines
+ms.subservice: maintenance-control
 ms.topic: how-to
 ms.workload: infrastructure-services
 ms.date: 04/22/2020
 ms.author: cynthn
-ms.openlocfilehash: b174e2631131e6bf26d7b1cb62442c8a99102e2e
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 0dea30723a3ebe1598d6304ac3c98bfe1b55b466
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91397289"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102563019"
 ---
 # <a name="control-updates-with-maintenance-control-and-the-azure-portal"></a>Управление обновлениями с помощью управления обслуживанием и портал Azure
 
@@ -70,7 +71,7 @@ ms.locfileid: "91397289"
 
 ## <a name="check-for-pending-updates"></a>Проверить наличие ожидающих обновлений
 
-Есть также два способа проверить, ожидают ли обновления для конфигурации обслуживания. В области **конфигурации обслуживания**на странице сведения о конфигурации щелкните **назначения** и проверьте **состояние обслуживания**.
+Есть также два способа проверить, ожидают ли обновления для конфигурации обслуживания. В области **конфигурации обслуживания** на странице сведения о конфигурации щелкните **назначения** и проверьте **состояние обслуживания**.
 
 ![Снимок экрана, показывающий, как проверить ожидающие обновления](media/virtual-machines-maintenance-control-portal/maintenance-configurations-pending.png)
 
@@ -86,7 +87,7 @@ ms.locfileid: "91397289"
 
 ## <a name="check-the-status-of-applying-updates"></a>Проверка состояния применения обновлений 
 
-Вы можете проверить ход выполнения обновлений для конфигурации в **конфигурациях обслуживания** или с помощью **виртуальных машин**. На странице сведения о виртуальной машине щелкните **обслуживание**. В следующем примере **состояние обслуживания** показывает, что **ожидается**обновление.
+Вы можете проверить ход выполнения обновлений для конфигурации в **конфигурациях обслуживания** или с помощью **виртуальных машин**. На странице сведения о виртуальной машине щелкните **обслуживание**. В следующем примере **состояние обслуживания** показывает, что **ожидается** обновление.
 
 ![Снимок экрана, показывающий, как проверить состояние ожидающих обновлений](media/virtual-machines-maintenance-control-portal/maintenance-configurations-status.png)
 
@@ -97,6 +98,6 @@ ms.locfileid: "91397289"
 ![Снимок экрана, показывающий, как удалить конфигурацию.](media/virtual-machines-maintenance-control-portal/maintenance-configurations-delete.png)
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения см. в разделе [обслуживание и обновления](maintenance-and-updates.md).

@@ -1,20 +1,18 @@
 ---
 title: Расширения и компоненты виртуальной машины Azure
 description: Дополнительные сведения о расширениях виртуальной машины Azure
-services: virtual-machines
-author: amjads1
+ms.topic: article
 ms.service: virtual-machines
 ms.subservice: extensions
-ms.topic: article
-ms.workload: infrastructure-services
-ms.date: 08/03/2020
+author: amjads1
 ms.author: amjads
-ms.openlocfilehash: dd3b713a027df80908e1a8a3ae53e8dc526d7d6e
-ms.sourcegitcommit: dea56e0dd919ad4250dde03c11d5406530c21c28
+ms.date: 08/03/2020
+ms.openlocfilehash: e1b96293db0389201fdab3340d8f0e74fefc4c52
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96936953"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102559721"
 ---
 # <a name="azure-virtual-machine-extensions-and-features"></a>Расширения и компоненты виртуальной машины Azure
 Расширения — это небольшие приложения, которые обеспечивают настройку и автоматизацию после развертывания на виртуальных машинах Azure. Платформа Azure содержит множество расширений, охватывающих конфигурацию виртуальных машин, мониторинг, безопасность и служебные приложения. Издатели принимают приложение, заключает его в расширение и упрощают установку. Все, что нужно сделать, — предоставить обязательные параметры. 
@@ -37,7 +35,7 @@ ms.locfileid: "96936953"
 
 Сведения об устранении неполадок для каждого расширения можно найти в разделе **Устранение неполадок и поддержка** в обзоре расширения. Ниже приведен список доступных сведений по устранению неполадок.
 
-| Пространство имен | Устранение неполадок |
+| Пространство имен | Диагностика |
 |-----------|-----------------|
 | Microsoft. Azure. Monitoring. депенденциажент. депенденциажентлинукс | [Зависимость от Azure Monitor для Linux](agent-dependency-linux.md#troubleshoot-and-support) |
 | Microsoft. Azure. Monitoring. депенденциажент. депенденциажентвиндовс | [Зависимость Azure Monitor для Windows](agent-dependency-windows.md#troubleshoot-and-support) |

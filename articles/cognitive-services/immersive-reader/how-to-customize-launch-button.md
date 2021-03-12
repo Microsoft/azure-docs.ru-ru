@@ -1,5 +1,5 @@
 ---
-title: Кнопка настройки Иммерсивного средства чтения
+title: Изменение кнопки запуска иммерсивного модуля чтения
 titleSuffix: Azure Cognitive Services
 description: В этой статье мы покажем, как настроить кнопку, запускающую иммерсивное средство чтения.
 services: cognitive-services
@@ -7,15 +7,15 @@ author: metanMSFT
 manager: guillasi
 ms.service: cognitive-services
 ms.subservice: immersive-reader
-ms.topic: conceptual
-ms.date: 01/14/2020
+ms.topic: how-to
+ms.date: 03/08/2021
 ms.author: metang
-ms.openlocfilehash: b24a9dcb7a369708b1374f367186dc4d9a6ce475
-ms.sourcegitcommit: 4b76c284eb3d2b81b103430371a10abb912a83f4
+ms.openlocfilehash: d60e37a437cacda8afbe88a901089f9478a53c16
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "93146881"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102608620"
 ---
 # <a name="how-to-customize-the-immersive-reader-button"></a>Настройка кнопки «иммерсивное средство чтения»
 
@@ -31,7 +31,7 @@ ms.locfileid: "93146881"
 
 ## <a name="customize-the-button-style"></a>Настройка стиля кнопки
 
-Используйте `data-button-style` атрибут, чтобы задать стиль кнопки. Допустимые значения: `icon` , `text` и `iconAndText` . Значение по умолчанию — `icon`.
+Используйте `data-button-style` атрибут, чтобы задать стиль кнопки. Допустимые значения: `icon` , `text` и `iconAndText` . Значение по умолчанию — `icon`.
 
 ### <a name="icon-button"></a>Кнопка "значок"
 

@@ -3,16 +3,17 @@ title: Управление обслуживанием для виртуальн
 description: Узнайте, как управлять применением обслуживания к виртуальным машинам Azure с помощью управления обслуживанием и PowerShell.
 author: cynthn
 ms.service: virtual-machines
+ms.subservice: maintenance-control
 ms.topic: how-to
 ms.workload: infrastructure-services
 ms.date: 11/19/2020
 ms.author: cynthn
-ms.openlocfilehash: 2cc935e81e867609159b5c150b6ee7c346bb9f8e
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.openlocfilehash: 2868d559f0d848095fa7fec174e09e1b9376c4ae
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95026154"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102552462"
 ---
 # <a name="control-updates-with-maintenance-control-and-azure-powershell"></a>Управление обновлениями с помощью управления обслуживанием и Azure PowerShell
 
@@ -85,7 +86,7 @@ $config = New-AzMaintenanceConfiguration `
 > [!IMPORTANT]
 > **Длительность** обслуживания должна составлять *2 часа* или больше. Для **периодичности** обслуживания должно быть задано значение по крайней мере один раз в 35 дней.
 
-**Повторение** обслуживания может быть выражено ежедневно, еженедельно или ежемесячно. Некоторые примеры.
+**Повторение** обслуживания может быть выражено ежедневно, еженедельно или ежемесячно. Ниже приведены некоторые примеры.
  - **ежедневно**— Рекуревери "Day" **или** "3Days" 
  - **еженедельно**— Рекуревери "3Weeks" **или** "Неделя Суббота, воскресенье" 
  - **Monthly**-Рекуревери "месяц day23, day24" **или** "месяц прошлого воскресенье" **или** "четвертый понедельник четверть месяца"  

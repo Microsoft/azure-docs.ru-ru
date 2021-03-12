@@ -5,13 +5,13 @@ services: logic-apps
 ms.suite: integration
 ms.reviewer: estfan, logicappspm, az-logic-apps-dev
 ms.topic: conceptual
-ms.date: 03/05/2021
-ms.openlocfilehash: ab2d7c23e69c73c78c852de722733e8f0d09fcec
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.date: 03/08/2021
+ms.openlocfilehash: f7f8082cc9120345336610d5cb49741140d3b606
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102449736"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102557018"
 ---
 # <a name="create-stateful-and-stateless-workflows-in-visual-studio-code-with-the-azure-logic-apps-preview-extension"></a>Создание рабочих процессов с отслеживанием состояния и без отслеживания состояния в Visual Studio Code с помощью расширения Azure Logic Apps (Предварительная версия)
 
@@ -34,6 +34,8 @@ ms.locfileid: "102449736"
 
 * Запуск, тестирование, отладка и анализ журнала выполнения в локальной среде.
 
+* Найдите сведения об имени домена для доступа к брандмауэру.
+
 * Выполните развертывание в Azure, в том числе при необходимости включив Application Insights.
 
 * Управляйте развернутым приложением логики в Visual Studio Code и портал Azure.
@@ -47,7 +49,7 @@ ms.locfileid: "102449736"
 > [!NOTE]
 > Сведения о текущих известных проблемах см. на [странице Logic Apps общедоступная Предварительная версия известных проблем в GitHub](https://github.com/Azure/logicapps/blob/master/articles/logic-apps-public-preview-known-issues.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 ### <a name="access-and-connectivity"></a>Доступ и подключение
 
@@ -576,7 +578,7 @@ ms.locfileid: "102449736"
 
 1. Чтобы просмотреть доступные сведения при попадании в точку останова, в представлении выполнение проверьте панель **переменные** .
 
-1. Чтобы продолжить выполнение рабочего процесса, на панели инструментов Отладка нажмите кнопку **продолжить** (кнопка воспроизведения). 
+1. Чтобы продолжить выполнение рабочего процесса, на панели инструментов Отладка нажмите кнопку **продолжить** (кнопка воспроизведения).
 
 Вы можете добавлять и удалять точки останова в любое время во время выполнения рабочего процесса. Однако если вы обновляете **workflow.jsв** файле после запуска запуска, точки останова не обновляются автоматически. Чтобы обновить точки останова, перезапустите приложение логики.
 
@@ -759,6 +761,55 @@ ms.locfileid: "102449736"
 
 1. Чтобы отключить сеанс отладки, в меню **Запуск** выберите команду **отменить отладку** (Shift + F5).
 
+<a name="firewall-setup"></a>
+
+##  <a name="find-domain-names-for-firewall-access"></a>Поиск доменных имен для доступа к брандмауэру
+
+Перед развертыванием и запуском рабочего процесса приложения логики в портал Azure, если в среде имеются ограниченные сетевые требования или брандмауэры, ограничивающие трафик, необходимо настроить разрешения для всех подключений триггеров или действий, которые существуют в рабочем процессе.
+
+Чтобы найти полные доменные имена (FQDN) для этих подключений, выполните следующие действия.
+
+1. В проекте приложения логики откройте **connections.jsв** файле, который создается после добавления первого триггера или действия на основе подключения в рабочий процесс, и поиска `managedApiConnections` объекта.
+
+1. Для каждого созданного подключения найдите, скопируйте и сохраните `connectionRuntimeUrl` значение свойства в безопасном месте, чтобы можно было настроить брандмауэр с помощью этих сведений.
+
+   Этот пример **connections.jsв** файле содержит два подключения: подключение AS2 и подключение Office 365 со следующими `connectionRuntimeUrl` значениями.
+
+   * AS2 `"connectionRuntimeUrl": https://9d51d1ffc9f77572.00.common.logic-{Azure-region}.azure-apihub.net/apim/as2/11d3fec26c87435a80737460c85f42ba`
+
+   * Office 365: `"connectionRuntimeUrl": https://9d51d1ffc9f77572.00.common.logic-{Azure-region}.azure-apihub.net/apim/office365/668073340efe481192096ac27e7d467f`
+
+   ```json
+   {
+      "managedApiConnections": {
+         "as2": {
+            "api": {
+               "id": "/subscriptions/{Azure-subscription-ID}/providers/Microsoft.Web/locations/{Azure-region}/managedApis/as2"
+            },
+            "connection": {
+               "id": "/subscriptions/{Azure-subscription-ID}/resourceGroups/{Azure-resource-group}/providers/Microsoft.Web/connections/{connection-resource-name}"
+            },
+            "connectionRuntimeUrl": https://9d51d1ffc9f77572.00.common.logic-{Azure-region}.azure-apihub.net/apim/as2/11d3fec26c87435a80737460c85f42ba,
+            "authentication": {
+               "type":"ManagedServiceIdentity"
+            }
+         },
+         "office365": {
+            "api": {
+               "id": "/subscriptions/{Azure-subscription-ID}/providers/Microsoft.Web/locations/{Azure-region}/managedApis/office365"
+            },
+            "connection": {
+               "id": "/subscriptions/{Azure-subscription-ID}/resourceGroups/{Azure-resource-group}/providers/Microsoft.Web/connections/{connection-resource-name}"
+            },
+            "connectionRuntimeUrl": https://9d51d1ffc9f77572.00.common.logic-{Azure-region}.azure-apihub.net/apim/office365/668073340efe481192096ac27e7d467f,
+            "authentication": {
+               "type":"ManagedServiceIdentity"
+            }
+         }
+      }
+   }
+   ```
+
 <a name="deploy-azure"></a>
 
 ## <a name="deploy-to-azure"></a>Развернуть в Azure
@@ -886,7 +937,7 @@ ms.locfileid: "102449736"
          | Critical | Журналы, описывающие неустранимый сбой в приложении логики. |
          | Отладка | Журналы, которые можно использовать для изучения во время разработки, например Входящие и исходящие HTTP-вызовы. |
          | Ошибка | Журналы, указывающие на сбой выполнения рабочего процесса, но не общий сбой в приложении логики. |
-         | Сведения | Журналы, которые отписывают общие действия в приложении логики или рабочем процессе, например: <p><p>— При запуске и завершении триггера, действия или запуска. <br>— При запуске или завершении приложения логики. |
+         | Данные | Журналы, которые отписывают общие действия в приложении логики или рабочем процессе, например: <p><p>— При запуске и завершении триггера, действия или запуска. <br>— При запуске или завершении приложения логики. |
          | Трассировка | Журналы, содержащие наиболее подробные сообщения, например запросы хранилища или действия диспетчера, а также все сообщения, связанные с действием выполнения рабочего процесса. |
          | Предупреждение | Журналы, которые выделяют ненормальное состояние в приложении логики, но не препятствуют его работе. |
          |||

@@ -9,14 +9,17 @@ ms.author: mikben
 ms.date: 09/30/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: b3bdbef5680561d60ab4db6ee42033553e691ed3
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: eeb9d5df70dea945608688130a67f564361a5fec
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101660129"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102489299"
 ---
 # <a name="quickstart-handle-sms-events"></a>Краткое руководство. Обработка событий SMS
+
+[!INCLUDE [Public Preview Notice](../../includes/public-preview-include.md)]
+
 
 [!INCLUDE [Regional Availability Notice](../../includes/regional-availability-include.md)]
 

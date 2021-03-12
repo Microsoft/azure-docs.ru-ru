@@ -123,6 +123,8 @@
           href: spring-cloud-howto-enable-system-assigned-managed-identity.md
         - name: Создание ролей и разрешений
           href: spring-cloud-howto-permissions.md
+        - name: Доступ к плоскости данных с помощью Azure AD RBAC
+          href: spring-cloud-howto-access-data-plane-azure-ad-rbac.md
     - name: Интеграция
       items:
         - name: Привязка приложения к Azure CosmosDB

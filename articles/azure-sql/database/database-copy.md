@@ -9,14 +9,14 @@ ms.devlang: ''
 ms.topic: how-to
 author: stevestein
 ms.author: sashan
-ms.reviewer: ''
-ms.date: 10/30/2020
-ms.openlocfilehash: b112506acead01e8dc2bbe72b0d52f47ada326a7
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.reviewer: wiassaf
+ms.date: 03/10/2021
+ms.openlocfilehash: 1a86522975ffb7b5b2bd514402dd97a76aa2506e
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102440417"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103014610"
 ---
 # <a name="copy-a-transactionally-consistent-copy-of-a-database-in-azure-sql-database"></a>Копирование транзакционно согласованной копии базы данных в базе данных SQL Azure
 
@@ -98,7 +98,7 @@ az sql db copy --dest-name "CopyOfMySampleDatabase" --dest-resource-group "myRes
 Эта команда копирует Database1 в новую базу данных с именем Database2 на том же сервере. Операция копирования может занять некоторое время в зависимости от размера базы данных.
 
    ```sql
-   -- execute on the master database to start copying
+   -- Execute on the master database to start copying
    CREATE DATABASE Database2 AS COPY OF Database1;
    ```
 
@@ -111,10 +111,10 @@ az sql db copy --dest-name "CopyOfMySampleDatabase" --dest-resource-group "myRes
 Database1 может быть отдельной базой данных или в составе пула. Поддерживается копирование между разными пулами уровней, но некоторые межуровневые копии не будут выполнены. Например, можно скопировать одну или эластичную базу данных Standard в пул общего назначения, но нельзя скопировать стандартную эластичную базу данных в пул уровня "Премиум". 
 
    ```sql
-   -- execute on the master database to start copying
+   -- Execute on the master database to start copying
    CREATE DATABASE "Database2"
    AS COPY OF "Database1"
-   (SERVICE_OBJECTIVE = ELASTIC_POOL( name = "pool1" ) ) ;
+   (SERVICE_OBJECTIVE = ELASTIC_POOL( name = "pool1" ) );
    ```
 
 ### <a name="copy-to-a-different-server"></a>Копирование на другой сервер
@@ -136,43 +136,45 @@ CREATE DATABASE Database2 AS COPY OF server1.Database1;
 Вы можете выполнить действия, описанные в разделе [копирование базы данных SQL в другой сервер](#copy-to-a-different-server) , чтобы скопировать базу данных на сервер в другой подписке с помощью T-SQL. Убедитесь, что используется имя входа с тем же именем и паролем, что и у владельца базы данных-источника. Кроме того, имя входа должно быть членом `dbmanager` роли или администратора сервера на исходном и целевом серверах.
 
 ```sql
-Step# 1
-Create login and user in the master database of the source server.
+--Step# 1
+--Create login and user in the master database of the source server.
 
 CREATE LOGIN loginname WITH PASSWORD = 'xxxxxxxxx'
 GO
-CREATE USER [loginname] FOR LOGIN [loginname] WITH DEFAULT_SCHEMA=[dbo]
+CREATE USER [loginname] FOR LOGIN [loginname] WITH DEFAULT_SCHEMA=[dbo];
+GO
+ALTER ROLE dbmanager ADD MEMBER loginname;
 GO
 
-Step# 2
-Create the user in the source database and grant dbowner permission to the database.
+--Step# 2
+--Create the user in the source database and grant dbowner permission to the database.
 
-CREATE USER [loginname] FOR LOGIN [loginname] WITH DEFAULT_SCHEMA=[dbo]
+CREATE USER [loginname] FOR LOGIN [loginname] WITH DEFAULT_SCHEMA=[dbo];
 GO
-exec sp_addrolemember 'db_owner','loginname'
-GO
-
-Step# 3
-Capture the SID of the user “loginname” from master database
-
-SELECT [sid] FROM sysusers WHERE [name] = 'loginname'
-
-Step# 4
-Connect to Destination server.
-Create login and user in the master database, same as of the source server.
-
-CREATE LOGIN loginname WITH PASSWORD = 'xxxxxxxxx', SID = [SID of loginname login on source server]
-GO
-CREATE USER [loginname] FOR LOGIN [loginname] WITH DEFAULT_SCHEMA=[dbo]
-GO
-exec sp_addrolemember 'dbmanager','loginname'
+ALTER ROLE db_owner ADD MEMBER loginname;
 GO
 
-Step# 5
-Execute the copy of database script from the destination server using the credentials created
+--Step# 3
+--Capture the SID of the user "loginname" from master database
+
+SELECT [sid] FROM sysusers WHERE [name] = 'loginname';
+
+--Step# 4
+--Connect to Destination server.
+--Create login and user in the master database, same as of the source server.
+
+CREATE LOGIN loginname WITH PASSWORD = 'xxxxxxxxx', SID = [SID of loginname login on source server];
+GO
+CREATE USER [loginname] FOR LOGIN [loginname] WITH DEFAULT_SCHEMA=[dbo];
+GO
+ALTER ROLE dbmanager ADD MEMBER loginname;
+GO
+
+--Step# 5
+--Execute the copy of database script from the destination server using the credentials created
 
 CREATE DATABASE new_database_name
-AS COPY OF source_server_name.source_database_name
+AS COPY OF source_server_name.source_database_name;
 ```
 
 > [!NOTE]
@@ -192,7 +194,7 @@ AS COPY OF source_server_name.source_database_name
 > Чтобы отменить копирование до его завершения, выполните в новой базе данных инструкцию [DROP DATABASE](/sql/t-sql/statements/drop-database-transact-sql).
 
 > [!IMPORTANT]
-> Если необходимо создать копию с целью существенно меньшей цели обслуживания, чем у источника, то Целевая база данных может не иметь достаточных ресурсов для завершения процесса заполнения, и это может привести к сбою в области Opera. В этом сценарии для создания копии на другом сервере и (или) другом регионе используется запрос географического восстановления. Дополнительные сведения см. в статье [Восстановление базы данных SQL Azure с помощью резервных копий](recovery-using-backups.md#geo-restore) .
+> Если необходимо создать копию с существенно меньшим уровнем обслуживания, чем у источника, то Целевая база данных может не иметь достаточных ресурсов для завершения процесса заполнения и может привести к сбою операции копирования. В этом сценарии для создания копии на другом сервере и (или) другом регионе используется запрос географического восстановления. Дополнительные сведения см. в статье [Восстановление базы данных SQL Azure с помощью резервных копий](recovery-using-backups.md#geo-restore) .
 
 ## <a name="azure-rbac-roles-and-permissions-to-manage-database-copy"></a>Роли и разрешения RBAC Azure для управления копированием базы данных
 

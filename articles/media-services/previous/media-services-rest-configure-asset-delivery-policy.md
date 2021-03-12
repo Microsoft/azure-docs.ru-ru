@@ -3,7 +3,7 @@ title: Настройка политик доставки ресурсов-ко�
 description: В этой статье демонстрируется настройка различных политик доставки ресурсов-контейнеров с помощью REST API служб мультимедиа.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: cfowler
 editor: ''
 ms.assetid: 5cb9d32a-e68b-4585-aa82-58dded0691d0
@@ -12,15 +12,15 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/20/2019
-ms.author: juliako
+ms.date: 03/10/2021
+ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 49fc67bcd45d0c364f47276a9b47676a65f6d837
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 65a7b9479dae1826f478ca5e038ef5feb1caefb6
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89268678"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103017330"
 ---
 # <a name="configuring-asset-delivery-policies"></a>Настройка политик доставки ресурсов-контейнеров
 
@@ -282,7 +282,7 @@ Host: media.windows.net
 
 Если требуется защитить содержимое с помощью Widevine DRM, обновите значения AssetDeliveryConfiguration, чтобы использовать WidevineLicenseAcquisitionUrl (со значением 7), и укажите URL-адрес службы доставки лицензий. Вы можете использовать следующих партнеров AMS для доставки лицензий Widevine: [Axinom](https://www.axinom.com), [EZDRM](https://ezdrm.com/) и [castLabs](https://castlabs.com/company/partners/azure/).
 
-Пример: 
+Пример. 
 
 ```console
 {"Name":"AssetDeliveryPolicy","AssetDeliveryProtocol":2,"AssetDeliveryPolicyType":4,"AssetDeliveryConfiguration":"[{\"Key\":7,\"Value\":\"https:\\/\\/example.net\/WidevineLicenseAcquisition\/"}]"}

@@ -8,15 +8,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 10/26/2020
+ms.date: 03/10/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 08b08e3e799ff7b579889a62ecec70677a3cbce9
-ms.sourcegitcommit: 31cfd3782a448068c0ff1105abe06035ee7b672a
+ms.openlocfilehash: 8d3343838216522abfc11ec3f202ae2da1c0e38f
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2021
-ms.locfileid: "98059064"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102611884"
 ---
 # <a name="define-a-self-asserted-technical-profile-in-an-azure-active-directory-b2c-custom-policy"></a>Определение самоподтвержденного технического профиля в настраиваемой политике Azure Active Directory B2C
 
@@ -212,11 +212,13 @@ ms.locfileid: "98059064"
 | Настройка. Енаблеремемберме <sup>2</sup>| Нет| Отображает флажок [оставаться в](session-behavior.md?pivots=b2c-custom-policy#enable-keep-me-signed-in-kmsi) системе. Возможные значения: `true` или `false` (по умолчанию). |
 | Настройка. Инпутверификатионделайтимеинмиллисекондс <sup>3</sup>| Нет| Улучшает взаимодействие с пользователем, ожидая, когда пользователь останавливает ввод, а затем проверяет значение. Значение по умолчанию 2000 миллисекунд. |
 | инклудеклаимресолвингинклаимшандлинг  | Нет | Для входных и выходных утверждений указывает, включено ли [разрешение утверждений](claim-resolver-overview.md) в технический профиль. Возможные значения: `true` или `false` (по умолчанию). Если вы хотите использовать сопоставитель утверждений в техническом профиле, задайте для этого параметра значение `true` . |
+|Форготпассвордлинковерриде <sup>4</sup>| Нет | Выполняется обмен утверждениями на сброс пароля. Дополнительные сведения см. в разделе [самостоятельный сброс пароля](add-password-reset-policy.md). |
 
 Примечания.
 1. Доступен для определения содержимого [DataUri](contentdefinitions.md#datauri) типа `unifiedssp` , или `unifiedssd` .
 1. Доступен для определения содержимого [DataUri](contentdefinitions.md#datauri) типа `unifiedssp` , или `unifiedssd` . [Макет страницы версии](page-layout.md) 1.1.0 и выше.
 1. Доступно для [макета страницы версии](page-layout.md) 1.2.0 и выше.
+1. Доступен для определения содержимого [DataUri](contentdefinitions.md#datauri) типа `unifiedssp` . [Макет страницы версии](page-layout.md) 2.1.2 и выше.
 
 ## <a name="cryptographic-keys"></a>Криптографические ключи
 

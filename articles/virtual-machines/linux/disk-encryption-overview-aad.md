@@ -2,18 +2,19 @@
 title: Шифрование дисков Azure с предварительными требованиями для приложения Azure AD (предыдущий выпуск)
 description: В этой статье содержатся дополнения к шифрованию дисков Azure для виртуальных машин Linux с дополнительными требованиями и необходимыми компонентами для шифрования дисков Azure с помощью Azure AD.
 author: msmbaldwin
-ms.service: virtual-machines-linux
-ms.subservice: security
+ms.service: virtual-machines
+ms.subservice: disks
+ms.collection: linux
 ms.topic: conceptual
 ms.author: mbaldwin
 ms.date: 03/15/2019
 ms.custom: seodec18
-ms.openlocfilehash: b258d499c78aa5fb734cbee01fb753c292bf2678
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: e27eb64139c20ac2b8c776edc2d0840b80fddb62
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "90970882"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102558344"
 ---
 # <a name="azure-disk-encryption-with-azure-active-directory-ad-previous-release"></a>Шифрование дисков Azure с помощью Azure Active Directory (AD) (предыдущий выпуск)
 
@@ -47,7 +48,7 @@ ms.locfileid: "90970882"
   ```
 
 ### <a name="group-policy"></a>Групповая политика
- - Решение шифрования дисков Azure использует внешний предохранитель ключа BitLocker для виртуальных машин IaaS под управлением Windows. Для виртуальных машин, присоединенных к домену, не следует отправлять групповые политики, обеспечивающие защиту доверенного платформенного модуля. Сведения о групповая политика параметре **Разрешить BitLocker без совместимого доверенного платформенного модуля**см. в разделе [справочник по BitLocker групповая политика](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#bkmk-unlockpol1).
+ - Решение шифрования дисков Azure использует внешний предохранитель ключа BitLocker для виртуальных машин IaaS под управлением Windows. Для виртуальных машин, присоединенных к домену, не следует отправлять групповые политики, обеспечивающие защиту доверенного платформенного модуля. Сведения о групповая политика параметре **Разрешить BitLocker без совместимого доверенного платформенного модуля** см. в разделе [справочник по BitLocker групповая политика](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#bkmk-unlockpol1).
 
 - Политика BitLocker на виртуальных машинах, присоединенных к домену, с настраиваемым групповая политика должен включать следующий параметр: [Настройка хранилища пользователей для сведений о восстановлении BitLocker — > разрешить 256-разрядный ключ восстановления](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings). Сбой шифрования дисков Azure при несовместимости настраиваемых параметров групповая политика для BitLocker. На компьютерах, у которых нет нужного параметра политики, примените новую политику, принудительно обновите новую политику (gpupdate.exe/Force), а затем перезапустите, если это необходимо. 
 
@@ -57,7 +58,7 @@ ms.locfileid: "90970882"
 
 Дополнительные сведения см. в статье [Создание и Настройка хранилища ключей для шифрования дисков Azure с помощью Azure AD (предыдущий выпуск)](disk-encryption-key-vault-aad.md).
  
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Создание и Настройка хранилища ключей для шифрования дисков Azure с помощью Azure AD (предыдущий выпуск)](disk-encryption-key-vault-aad.md)
 - [Включение шифрования дисков Azure с помощью Azure AD на виртуальных машинах Linux (предыдущий выпуск)](disk-encryption-linux-aad.md)

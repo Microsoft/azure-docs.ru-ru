@@ -47,13 +47,17 @@
       href: choose-natural-language-processing-service.md
 - name: Практические руководства
   items:
-    - name: Управление ресурсами Azure
-      href: How-To/set-up-qnamaker-service-azure.md
-      displayName: 'azure, resource, key, upgrade, pricing, tier,'
-    - name: Сетевая изоляция для ресурсов Azure
-      href: How-To/network-isolation.md
     - name: Управление ресурсами QnA Maker
-      href: How-To/manage-qna-maker-app.md
+      items:
+        - name: Настройка ресурсов QnA Maker
+          href: How-To/set-up-qnamaker-service-azure.md
+          displayName: 'azure, resource, key, upgrade, pricing, tier,'
+        - name: Управление доступом к ресурсам QnA Maker
+          href: How-To/manage-qna-maker-app.md
+        - name: Настройка ресурсов QnA Maker
+          href: How-To/configure-qna-maker-resources.md
+        - name: Сетевая изоляция для ресурсов Azure
+          href: How-To/network-isolation.md
     - name: Управление базой знаний
       items:
         - name: Создание базы знаний
@@ -77,8 +81,12 @@
         - name: Изменение ответа по умолчанию
           href: How-To/change-default-answer.md
     - name: Обращение к базе знаний
-      href: How-To/metadata-generateanswer-usage.md
-      displayName: 'isTest, test, route, request, http, post, body, header, json, metadata, top, strictFilters, GenerateAnswer, API, answer, RankerType, id, text, question, context, 200, 2xx, 400, 401, 403, 404'
+      items:
+        - name: Использование API GenerateAnswer
+          href: How-To/metadata-generateanswer-usage.md
+          displayName: 'isTest, test, route, request, http, post, body, header, json, metadata, top, strictFilters, GenerateAnswer, API, answer, RankerType, id, text, question, context, 200, 2xx, 400, 401, 403, 404'
+        - name: Фильтрация вопросов и ответов по метаданным
+          href: How-To/query-knowledge-base-with-metadata.md
     - name: Настройка активного обучения для улучшения базы знаний
       items:
         - name: Включение активного обучения
@@ -124,7 +132,7 @@
         - name: C#
           items:
             - name: Справочная документация
-              href: /dotnet/api/microsoft.azure.cognitiveservices.knowledge.qnamaker?view=azure-dotnet
+              href: /dotnet/api/microsoft.azure.cognitiveservices.knowledge.qnamaker
             - name: Пакет NuGet
               href: 'https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Knowledge.QnAMaker/'
             - name: Примеры
@@ -140,7 +148,7 @@
         - name: JavaScript
           items:
             - name: Справочная документация
-              href: /javascript/api/%40azure/cognitiveservices-qnamaker/index?view=azure-node-latest
+              href: /javascript/api/%40azure/cognitiveservices-qnamaker/index
             - name: "npm\_— разработка"
               href: 'https://www.npmjs.com/package/@azure/cognitiveservices-qnamaker'
             - name: "npm\_— среда выполнения запросов"
@@ -150,7 +158,7 @@
         - name: Python
           items:
             - name: Справочная документация
-              href: /python/api/azure-cognitiveservices-knowledge-qnamaker/azure.cognitiveservices.knowledge.qnamaker?view=azure-python
+              href: /python/api/azure-cognitiveservices-knowledge-qnamaker/azure.cognitiveservices.knowledge.qnamaker
             - name: PIP
               href: 'https://pypi.org/project/azure-cognitiveservices-knowledge-qnamaker/'
             - name: Примеры
