@@ -1,6 +1,6 @@
 ---
-title: 'Azure AD Application Proxy: журнал выпусков версий'
-description: В этой статье перечислены все выпуски Azure AD Application Proxy и описаны новые функции и исправлены проблемы.
+title: 'Azure Active Directory Application Proxy: журнал выпусков версий'
+description: В этой статье перечислены все выпуски Azure Active Directory Application Proxy и описаны новые функции и исправлены проблемы.
 services: active-directory
 author: kenwith
 manager: daveba
@@ -8,15 +8,16 @@ ms.assetid: ''
 ms.service: active-directory
 ms.topic: reference
 ms.workload: identity
-ms.date: 07/22/2020
+ms.date: 02/17/2021
 ms.subservice: app-mgmt
 ms.author: kenwith
-ms.openlocfilehash: 6ba622bd52dc13fb0053b61b65529db6e6912611
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.reviewer: japere
+ms.openlocfilehash: 0244e0ca66f452649d3136eb122d1c2666182ae2
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101686722"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200969"
 ---
 # <a name="azure-ad-application-proxy-version-release-history"></a>Azure AD Application Proxy: журнал выпусков версий
 В этой статье перечислены версии и функции прокси-сервера приложения Azure Active Directory (Azure AD), которые были выпущены. Команда Azure AD регулярно обновляет прокси приложения с помощью новых функций и функций. Соединители прокси приложения обновляются автоматически при выпуске новой версии. 
@@ -25,11 +26,11 @@ ms.locfileid: "101686722"
 
 Ниже приведен список связанных ресурсов.
 
-Ресурс |  Сведения
---------- | --------- |
-Как включить прокси приложения | В этом [руководстве](application-proxy-add-on-premises-application.md)описаны предварительные требования для включения прокси приложения и установки и регистрации соединителя.
-Сведения о соединителях прокси приложения Azure AD | Дополнительные сведения об [управлении соединителями](application-proxy-connectors.md) и том, как соединители подходят к [автоматическому обновлению](application-proxy-connectors.md#automatic-updates).
-Загрузка соединителя Azure AD Application Proxy |  [Скачайте последнюю версию соединителя](https://download.msappproxy.net/subscription/d3c8b69d-6bf7-42be-a529-3fe9c2e70c90/connector/download).
+| Resource                                         | Сведения                                                      |
+| ------------------------------------------------ | ------------------------------------------------------------ |
+| Как включить прокси приложения                  | В этом [руководстве](application-proxy-add-on-premises-application.md)описаны предварительные требования для включения прокси приложения и установки и регистрации соединителя. |
+| Сведения о соединителях прокси приложения Azure AD | Дополнительные сведения об [управлении соединителями](application-proxy-connectors.md) и том, как соединители подходят к [автоматическому обновлению](application-proxy-connectors.md#automatic-updates). |
+| Загрузка соединителя Azure AD Application Proxy    | [Скачайте последнюю версию соединителя](https://download.msappproxy.net/subscription/d3c8b69d-6bf7-42be-a529-3fe9c2e70c90/connector/download). |
 
 ## <a name="1519750"></a>1.5.1975.0
 
@@ -41,6 +42,7 @@ ms.locfileid: "101686722"
 -   Улучшенная поддержка облачных сред Azure для государственных организаций. Инструкции по правильной установке соединителя для облака Azure для государственных организаций см. в статье [Предварительные требования](../hybrid/reference-connect-government-cloud.md#allow-access-to-urls) и [этапы установки](../hybrid/reference-connect-government-cloud.md#install-the-agent-for-the-azure-government-cloud).
 - Поддержка использования веб-клиента службы удаленных рабочих столов с прокси приложения. Дополнительные сведения см. [в статье публикация удаленный рабочий стол с помощью AD application proxy Azure](application-proxy-integrate-with-remote-desktop-services.md) .
 - Улучшенные согласования расширений WebSocket. 
+- Поддержка оптимизированной маршрутизации между группами соединителей и облачными службами прокси приложения на основе региона. Дополнительные сведения см. [в статье Оптимизация потока трафика с помощью Azure Active Directory Application proxy](application-proxy-network-topology.md) . 
 
 ### <a name="fixed-issues"></a>Устраненные проблемы
 - Исправлена проблема WebSocket, которая вынуждена выполнять строки в нижнем регистре.

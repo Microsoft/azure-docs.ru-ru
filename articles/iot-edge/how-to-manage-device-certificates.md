@@ -8,14 +8,16 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 6a4cade6a740bffc33695c40663609df38ba6e7a
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: e5c85d2c3049ea8718d0a9e0e574c13d0d99394c
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102044907"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200278"
 ---
 # <a name="manage-certificates-on-an-iot-edge-device"></a>Управление сертификатами на IoT Edge устройстве
+
+[!INCLUDE [iot-edge-version-201806-or-202011](../../includes/iot-edge-version-201806-or-202011.md)]
 
 Все устройства IoT Edge используют сертификаты для создания безопасных соединений между средой выполнения и любыми модулями, работающими на устройстве. IoT Edge устройства работают, как шлюзы, используют те же сертификаты для подключения к их нижестоящим устройствам.
 
@@ -81,7 +83,7 @@ ms.locfileid: "102044907"
    * Windows: `C:\ProgramData\iotedge\config.yaml`
    * Linux: `/etc/iotedge/config.yaml`
 
-1. Задайте для свойств **сертификата** в файле config. YAML путь универсального кода ресурса (URI) к файлам сертификата и ключа на устройстве IOT Edge. Удалите `#` символ перед свойствами сертификата, чтобы раскомментировать четыре строки. Убедитесь, что **сертификаты:** строка не имеет предшествующих пробелов, а вложенные элементы имеют отступ в два пробела. Пример.
+1. Задайте для свойств **сертификата** в файле config. YAML путь универсального кода ресурса (URI) к файлам сертификата и ключа на устройстве IOT Edge. Удалите `#` символ перед свойствами сертификата, чтобы раскомментировать четыре строки. Убедитесь, что **сертификаты:** строка не имеет предшествующих пробелов, а вложенные элементы имеют отступ в два пробела. Например:
 
    * Windows:
 

@@ -6,14 +6,14 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: article
-ms.date: 02/22/2021
+ms.date: 03/08/2021
 ms.author: alkohli
-ms.openlocfilehash: e8005bbf0373c91cf9f3515059544b9af3d52384
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: 922480eb2f4795729919c6ed039ccf61f19875b3
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102443800"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102630373"
 ---
 # <a name="azure-stack-edge-2101-release-notes"></a>Заметки о выпуске Azure Stack пограничных 2101
 
@@ -29,7 +29,7 @@ ms.locfileid: "102443800"
 
 В выпуске Azure Stack ребра 2101 доступны следующие новые функции. 
 
-- Общедоступная **версия устройств с мини-r Azure Stack с пограничными устройствами r и Azure Stack** . Начиная с этого выпуска, будут доступны Azure Stack пограничные устройства r и Azure Stack пограничных устройств r. Дополнительные сведения см. в статье [что такое Azure Stack пограничных Pro r](azure-stack-edge-j-series-overview.md) и [что такое Azure Stack пограничных Мини-r](azure-stack-edge-k-series-overview.md).  
+- Общедоступная **версия устройств с мини-r Azure Stack с пограничными устройствами r и Azure Stack** . Начиная с этого выпуска, будут доступны Azure Stack пограничные устройства r и Azure Stack пограничных устройств r. Дополнительные сведения см. в статье [что такое Azure Stack пограничных Pro r](azure-stack-edge-pro-r-overview.md) и [что такое Azure Stack пограничных Мини-r](azure-stack-edge-mini-r-overview.md).  
 - **Облачное Управление виртуальными машинами** . Начиная с этого выпуска вы можете создавать виртуальные машины на устройстве и управлять ими с помощью портал Azure. Дополнительные сведения см. [в статье Развертывание виртуальных машин с помощью портал Azure](azure-stack-edge-gpu-deploy-virtual-machine-portal.md).
 - **Интеграция с Azure Monitor** . Теперь вы можете использовать Azure Monitor для мониторинга контейнеров из приложений, работающих на вашем устройстве. Хранилище метрик Azure Monitor не поддерживается в этом выпуске. Дополнительные сведения см. в статье [включение Azure Monitor на устройстве](azure-stack-edge-gpu-enable-azure-monitor.md).
 - **Реестр контейнеров ребра** . в этом выпуске доступен контейнерный реестр контейнеров, который предоставляет репозиторий в пограничном расположении на устройстве. Этот реестр можно использовать для хранения образов контейнеров и управления ими. Дополнительные сведения см. в разделе [Включение контейнера граничных контейнеров](azure-stack-edge-gpu-deploy-arc-kubernetes-cluster.md). 

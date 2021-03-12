@@ -8,14 +8,16 @@ ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 444ab8ccfe5a8441a4fd7d280e33d8e929d9387d
-ms.sourcegitcommit: 5e5a0abe60803704cf8afd407784a1c9469e545f
+ms.openlocfilehash: d9db9997af20fee226214eb12ad32729cab55caa
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96435898"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103199257"
 ---
 # <a name="continuous-integration-and-continuous-deployment-to-azure-iot-edge-devices"></a>Непрерывная интеграция и непрерывное развертывание на Azure IoT Edge устройствах
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Вы можете легко внедрить DevOps для приложений Azure IoT Edge, используя встроенные задания Azure IoT Edge в Azure Pipelines. В этой статье показано, как можно использовать функции непрерывной интеграции и непрерывного развертывания Azure Pipelines для быстрого и эффективного создания, тестирования и развертывания приложений в Azure IoT Edge с помощью YAML. Кроме того, можно [использовать классический редактор](how-to-continuous-integration-continuous-deployment-classic.md).
 

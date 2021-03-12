@@ -12,12 +12,12 @@ ms.workload: identity
 ms.date: 09/17/2019
 ms.author: jmprieur
 ms.custom: aaddev, identityplatformtop40
-ms.openlocfilehash: a7e33f950bc5f13372962694abc8e3e40d8ad5c0
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.openlocfilehash: 960c00f516aac0c804718e439ae3ed9691759329
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98753243"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103010683"
 ---
 # <a name="scenario-web-app-that-signs-in-users"></a>Scenario: Веб-приложение, выполняющее вход пользователей
 
@@ -55,7 +55,7 @@ ms.locfileid: "98753243"
 
 Вы можете добавить проверку подлинности в веб-приложение, чтобы он мог выполнять вход пользователей. Добавление проверки подлинности позволяет веб-приложению получить доступ к сведениям о профиле, чтобы настроить взаимодействие с пользователями.
 
-Веб-приложения проверяют подлинность пользователя в веб-браузере. В этом сценарии веб-приложение направляет браузер пользователя на вход в Azure Active Directory (Azure AD). Azure AD возвращает ответ на вход через браузер пользователя, который содержит утверждения о пользователе в маркере безопасности. Вход пользователей использует преимущества стандартного протокола [Open ID Connect](./v2-protocols-oidc.md) , упрощенного с помощью [библиотек](scenario-web-app-sign-user-app-configuration.md#libraries-for-protecting-web-apps)по промежуточного слоя.
+Веб-приложения проверяют подлинность пользователя в веб-браузере. В этом сценарии веб-приложение направляет браузер пользователя на вход в Azure Active Directory (Azure AD). Azure AD возвращает ответ на вход через браузер пользователя, который содержит утверждения о пользователе в маркере безопасности. Вход пользователей использует преимущества стандартного протокола [Open ID Connect](./v2-protocols-oidc.md) , упрощенного с помощью [библиотек](scenario-web-app-sign-user-app-configuration.md#microsoft libraries supporting web apps)по промежуточного слоя.
 
 ![Выполнение входа пользователей в веб-приложении](./media/scenario-webapp/scenario-webapp-signs-in-users.svg)
 
@@ -74,7 +74,7 @@ ms.locfileid: "98753243"
 
 [!INCLUDE [recommended-topics](../../../includes/active-directory-develop-scenarios-prerequisites.md)]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 # <a name="aspnet-core"></a>[ASP.NET Core](#tab/aspnetcore)
 

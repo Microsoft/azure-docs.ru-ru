@@ -4,12 +4,12 @@ description: Узнайте, как быстро создать кластер K
 services: container-service
 ms.topic: article
 ms.date: 07/16/2020
-ms.openlocfilehash: 4d429b7136158723fa6110975326217c5540bc2e
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 13b4fbd21bb348d1ef79a3ca68128869115745cc
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102181012"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200911"
 ---
 # <a name="create-a-windows-server-container-on-an-azure-kubernetes-service-aks-cluster-using-the-azure-cli"></a>Создание контейнера Windows Server в кластере Службы Azure Kubernetes (AKS) с помощью Azure CLI
 
@@ -69,32 +69,35 @@ az group create --name myResourceGroup --location eastus
 
 Чтобы запустить кластер AKS, который поддерживает пулы узлов для контейнеров Windows Server, такой кластер должен использовать сетевую политику с подключаемым сетевым модулем [Azure CNI][azure-cni-about] (расширенным). Более подробные сведения о том, как планировать диапазоны подсетей и оценивать требования к сети, см в статье о [настройке сетевого взаимодействия Azure CNI][use-advanced-networking]. Используйте команду [AZ AKS Create][az-aks-create] , чтобы создать кластер AKS с именем *myAKSCluster*. Эта команда создаст обязательные сетевые ресурсы, если они еще не существуют.
 
-* Кластер настроен с двумя узлами
-* Параметры *Windows-Admin-Password* и *Windows-Admin-username* устанавливают учетные данные администратора для всех контейнеров Windows Server, созданных в кластере, и должны соответствовать [требованиям к паролю Windows Server][windows-server-password].
-* Пул узлов использует `VirtualMachineScaleSets`
+* Кластер настраивается с двумя узлами.
+* `--windows-admin-password`Параметры и `--windows-admin-username` задают учетные данные администратора для всех контейнеров Windows Server, созданных в кластере, и должны соответствовать [требованиям к паролю Windows Server][windows-server-password]. Если не указать параметр *Windows-Admin-Password* , будет предложено ввести значение.
+* Пул узлов использует `VirtualMachineScaleSets` .
 
 > [!NOTE]
 > Чтобы обеспечить надежную работу кластера, создайте не менее 2 (двух) узлов в пуле узлов по умолчанию.
 
-Предоставьте собственный безопасный *PASSWORD_WIN* (Помните, что команды в этой статье введены в оболочку Bash):
+Создайте имя пользователя для использования в качестве учетных данных администратора для контейнеров Windows Server в кластере. Следующие команды запрашивают имя пользователя и задают его WINDOWS_USERNAME для использования в более поздней команде (Помните, что команды в этой статье введены в оболочку BASH).
 
 ```azurecli-interactive
-PASSWORD_WIN="P@ssw0rd1234"
+echo "Please enter the username to use as administrator credentials for Windows Server containers on your cluster: " && read WINDOWS_USERNAME
+```
 
+Создайте кластер, убедившись, что задан `--windows-admin-username` параметр. В следующем примере команда создает кластер, используя значение из *WINDOWS_USERNAME* , заданное в предыдущей команде. Кроме того, вместо использования *WINDOWS_USERNAME* можно указать другое имя пользователя непосредственно в параметре. При выполнении следующей команды также будет предложено создать пароль для учетных данных администратора для контейнеров Windows Server в кластере. Кроме того, можно использовать параметр *Windows-Admin-Password* и указать в нем собственное значение.
+
+```azurecli-interactive
 az aks create \
     --resource-group myResourceGroup \
     --name myAKSCluster \
     --node-count 2 \
     --enable-addons monitoring \
     --generate-ssh-keys \
-    --windows-admin-password $PASSWORD_WIN \
-    --windows-admin-username azureuser \
+    --windows-admin-username $WINDOWS_USERNAME \
     --vm-set-type VirtualMachineScaleSets \
     --network-plugin azure
 ```
 
 > [!NOTE]
-> При возникновении ошибки проверки пароля убедитесь, что параметр *Windows-Admin-Password* соответствует [требованиям к паролю Windows Server][windows-server-password]. Если ваш пароль соответствует требованиям, попробуйте создать группу ресурсов в другом регионе. Затем попытайтесь создать кластер с новой группой ресурсов.
+> Если вы получаете сообщение об ошибке проверки пароля, проверьте, что заданный пароль соответствует [требованиям к паролю Windows Server][windows-server-password]. Если ваш пароль соответствует требованиям, попробуйте создать группу ресурсов в другом регионе. Затем попытайтесь создать кластер с новой группой ресурсов.
 
 Через несколько минут выполнение команды завершается и отображаются сведения о кластере в формате JSON. Инициализация кластера иногда может выполняться не сразу же. В таком случае подождите примерно 10 минут.
 

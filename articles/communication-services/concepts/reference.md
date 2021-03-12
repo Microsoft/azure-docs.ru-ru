@@ -9,14 +9,17 @@ ms.author: mikben
 ms.date: 09/29/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 04cc4f24f882f7e6d100e6e16a39905fa43e61c7
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: f52fbe9d1c97e5f9e333e71725ea1a5e6580b561
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101655859"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102487599"
 ---
 # <a name="reference-documentation-overview"></a>Обзор справочной документации
+
+[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
+
 
 В следующей таблице приведены сведения о доступных пакетах Служб коммуникации и ссылки на соответствующую справочную документацию.
 

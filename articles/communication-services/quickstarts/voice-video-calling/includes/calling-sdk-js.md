@@ -4,16 +4,16 @@ ms.service: azure-communication-services
 ms.topic: include
 ms.date: 9/1/2020
 ms.author: mikben
-ms.openlocfilehash: 4a9454abc2c4e41d711a4aef6a30438a72d27edb
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: e013765579fd560952172166b24f898b354c1d17
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101749886"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103021181"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно. 
+- Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
 - Развернутый ресурс Служб коммуникации. [Создайте ресурс Служб коммуникации.](../../create-communication-resource.md)
 - `User Access Token` для включения клиента вызова. Дополнительные сведения о том, [как получить `User Access Token`](../../access-tokens.md)
 - (Необязательно) Выполните инструкции из краткого руководства [Добавление функции голосового вызова в приложение](../getting-started-with-calling.md).
@@ -63,14 +63,14 @@ const deviceManager = await callClient.getDeviceManager()
 
 ## <a name="place-an-outgoing-call"></a>Осуществление исходящего вызова
 
-Чтобы создать и запустить вызов, необходимо использовать один из API CallAgent и предоставить пользователя, созданного с помощью клиентской библиотеки администрирования Служб коммуникации.
+Чтобы создать и запустить вызов, необходимо использовать один из API-интерфейсов на Каллажент и предоставить пользователя, созданного с помощью клиентской библиотеки удостоверений служб связи.
 
 Создание и запуск вызова активируются синхронно. Экземпляр Call позволяет подписываться на события вызова.
 
 ## <a name="place-a-call"></a>Осуществление вызовов
 
 ### <a name="place-a-11-call-to-a-user-or-pstn"></a>Осуществление персонального вызова к пользователю или ТСОП
-Чтобы осуществить вызов к другому пользователю Служб коммуникации, вызовите метод `startCall` для `callAgent` и передайте CommunicationUserIdentifier вызываемого пользователя, который вы создали с помощью [библиотеки администрирования Служб коммуникации](https://docs.microsoft.com/azure/communication-services/quickstarts/access-tokens).
+Чтобы поместить вызов другого пользователя служб связи, вызовите `startCall` метод для `callAgent` и передайте вызываемый коммуникатионусеридентифиер, [созданный с помощью библиотеки удостоверений служб связи](https://docs.microsoft.com/azure/communication-services/quickstarts/access-tokens).
 
 ```js
 const userCallee = { communicationUserId: '<ACS_USER_ID>' }
@@ -254,10 +254,10 @@ call.on('callEnded', callEndHander);
 
 ```js
 
-//mute local device 
+//mute local device
 await call.mute();
 
-//unmute local device 
+//unmute local device
 await call.unmute();
 
 ```
@@ -401,7 +401,7 @@ await call.removeParticipant(pstnIdentifier);
 const remoteVideoStream: RemoteVideoStream = call.remoteParticipants[0].videoStreams[0];
 const streamType: MediaStreamType = remoteVideoStream.mediaStreamType;
 ```
- 
+
 Чтобы отрисовывать `RemoteVideoStream`, нужно оформить подписку на событие `isAvailableChanged`.
 Если свойство `isAvailable` изменит значение на `true`, значит этот удаленный участник отправляет поток.
 Когда это произойдет, создайте новый экземпляр `Renderer`, а затем новый экземпляр `RendererView` с помощью асинхронного метода `createView`.  Затем вы сможете присоединить `view.target` к любому элементу пользовательского интерфейса.
@@ -581,7 +581,7 @@ const isRecordingActiveChangedHandler = () => {
 };
 
 callRecordingApi.on('isRecordingActiveChanged', isRecordingActiveChangedHandler);
-               
+
 ```
 
 ## <a name="call-transfer-management"></a>Управление перенаправлением вызовов

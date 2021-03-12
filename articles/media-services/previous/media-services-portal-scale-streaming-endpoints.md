@@ -3,7 +3,7 @@ title: Масштабирование конечных точек потоков
 description: В этом учебнике пошагово описано, как масштабировать конечные точки потоковой передачи с помощью портала Azure.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: 1008b3a3-2fa1-4146-85bd-2cf43cd1e00e
@@ -12,14 +12,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/19/2019
-ms.author: juliako
-ms.openlocfilehash: 814d6b55e5ae04bf27dfb70d4e7b5ea2d5a4315c
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: 4db53d64131e6fb43ce425cf579d79e62775754a
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89266822"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103009763"
 ---
 # <a name="scale-streaming-endpoints-with-the-azure-portal"></a>Масштабирование конечных точек потоковой передачи с помощью портала Azure
 
@@ -43,7 +43,7 @@ ms.locfileid: "89266822"
 Чтобы изменить число единиц потоковой передачи, сделайте следующее.
 
 1. Выберите учетную запись служб мультимедиа Azure на [портале Azure](https://portal.azure.com/).
-2. В окне **Параметры** щелкните**Конечные точки потоковой передачи**.
+2. В окне **Параметры** щелкните **Конечные точки потоковой передачи**.
 3. Щелкните конечную точку потоковой передачи, которую требуется масштабировать. 
 
     > [!NOTE] 
@@ -53,7 +53,7 @@ ms.locfileid: "89266822"
 
     ![конечная точка потоковой передачи](./media/media-services-portal-manage-streaming-endpoints/media-services-manage-streaming-endpoints3.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Просмотрите схемы обучения работе со службами мультимедиа.
 
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]

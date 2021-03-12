@@ -3,13 +3,13 @@ title: Использование удостоверений под управл
 description: Узнайте, как использовать управляемые удостоверения, управляемые модулем AAD, в службе Kubernetes Azure (AKS).
 services: container-service
 ms.topic: article
-ms.date: 12/01/2020
-ms.openlocfilehash: e7c8a96ad012afdcd724a4a242c27018563f3a10
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.date: 3/12/2021
+ms.openlocfilehash: 8b94c859800c3757842ad56df6e20f215bb13a7d
+ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102176320"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103233502"
 ---
 # <a name="use-azure-active-directory-pod-managed-identities-in-azure-kubernetes-service-preview"></a>Использование удостоверений под управлением Azure Active Directory Pod в службе Kubernetes Azure (Предварительная версия)
 
@@ -20,17 +20,17 @@ Azure Active Directory удостоверения, управляемые мод
 
 [!INCLUDE [preview features callout](./includes/preview/preview-callout.md)]
 
-## <a name="before-you-begin"></a>Перед началом
+## <a name="before-you-begin"></a>Подготовка к работе
 
 Необходимо установить следующий ресурс:
 
-* Azure CLI версии 2.8.0 или более поздней.
-* `azure-preview`Расширение 0.4.68 или более поздняя версия
+* Azure CLI версии 2.20.0 или более поздней.
+* `azure-preview`Расширение 0.5.5 или более поздняя версия
 
 ### <a name="limitations"></a>Ограничения
 
-* Для кластера разрешено не более 50 удостоверений Pod.
-* Для кластера разрешено не более 50 исключений идентификации Pod.
+* Для кластера разрешено не более 200 удостоверений Pod.
+* Для кластера разрешено не более 200 исключений идентификации Pod.
 * Управляемые Pod удостоверения доступны только в пулах узлов Linux.
 
 ### <a name="register-the-enablepodidentitypreview"></a>Зарегистрируйте `EnablePodIdentityPreview`.
@@ -66,6 +66,21 @@ az aks create -g myResourceGroup -n myAKSCluster --enable-managed-identity --ena
 
 ```azurecli-interactive
 az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
+```
+## <a name="create-an-aks-cluster-with-kubenet-network-plugin"></a>Создание кластера AKS с подключаемым модулем Кубенет Network
+
+Создайте кластер AKS с включенным сетевым подключаемым модулем Кубенет и удостоверением, управляемым на основе Pod.
+
+```azurecli-interactive
+az aks create -g $MY_RESOURCE_GROUP -n $MY_CLUSTER --enable-pod-identity --enable-pod-identity-with-kubenet
+```
+
+## <a name="update-an-existing-aks-cluster-with-kubenet-network-plugin"></a>Обновление существующего кластера AKS с подключаемым модулем Кубенет Network
+
+Обновите существующий кластер AKS с подключаемым модулем сети Кубнет, чтобы включить удостоверение, управляемое на основе Pod.
+
+```azurecli-interactive
+az aks update -g $MY_RESOURCE_GROUP -n $MY_CLUSTER --enable-pod-identity --enable-pod-identity-with-kubenet
 ```
 
 ## <a name="create-an-identity"></a>Создание удостоверения

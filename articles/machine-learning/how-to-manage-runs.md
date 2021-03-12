@@ -12,29 +12,33 @@ ms.reviewer: nibaccam
 ms.date: 03/04/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, devx-track-azurecli
-ms.openlocfilehash: d142c523862d61bf56723726be50cd6f095c5ee9
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 977498abb17fe592cef344f407a662d3b79749b7
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102520342"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102634784"
 ---
-# <a name="start-monitor-and-cancel-training-runs-in-python"></a>Запуск, отслеживание и отмена обучающих запусков в Python
+# <a name="start-monitor-and-track-runs"></a>Запуск, отслеживание и отслеживание запусков 
 
 [Пакет SDK машинное обучение Azure для Python](/python/api/overview/azure/ml/intro), [Машинное обучение CLI](reference-azure-machine-learning-cli.md)и [машинное обучение Azure Studio](https://ml.azure.com) предоставляют различные методы для мониторинга, Организации и управления запусками для обучения и экспериментирования.
 
 В этой статье приведены примеры следующих задач.
 
 * Мониторинг производительности выполнения.
+* Отслеживание состояния выполнения по электронной почте.
+* Теги и поиск запусков.
+* Добавьте описание запуска. 
+* Выполните поиск. 
 * Отмена или сбой выполнения.
 * Создание дочерних запусков.
-* Теги и поиск запусков.
+ 
 
 > [!TIP]
 > Дополнительные сведения о мониторинге службы Машинное обучение Azure и связанных служб Azure см. [в разделе мониторинг машинное обучение Azure](monitor-azure-machine-learning.md).
 > Сведения о мониторинге моделей, развернутых в виде веб-служб или модулей IoT Edge, см. в разделе [сбора данных модели](how-to-enable-data-collection.md) и [мониторинга с помощью Application Insights](how-to-enable-app-insights.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Вам потребуются следующие элементы:
 
@@ -50,7 +54,8 @@ ms.locfileid: "102520342"
     print(azureml.core.VERSION)
     ```
 
-* Расширение [Azure CLI](/cli/azure/) и [CLI для машинное обучение Azure](reference-azure-machine-learning-cli.md).
+* Расширение [Azure CLI](/cli/azure/?preserve-view=true&view=azure-cli-latest) и [CLI для машинное обучение Azure](reference-azure-machine-learning-cli.md).
+
 
 ## <a name="monitor-run-performance"></a>Мониторинг производительности выполнения
 
@@ -96,7 +101,7 @@ ms.locfileid: "102520342"
     
         Эта команда создает подкаталог `.azureml`, содержащий примеры файлов runconfig и среды Conda. Он также содержит файл `config.json`, который используется для взаимодействия с рабочей областью Машинного обучения Azure.
     
-        См. дополнительные сведения о команде [az ml folder attach](/cli/azure/ext/azure-cli-ml/ml/folder#ext-azure-cli-ml-az-ml-folder-attach).
+        См. дополнительные сведения о команде [az ml folder attach](/cli/azure/ext/azure-cli-ml/ml/folder?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-folder-attach).
     
     2. Чтобы начать выполнение, используйте следующую команду. При использовании этой команды укажите имя файла runconfig (текст перед \*.runconfig в вашей файловой системе) в параметре -c.
     
@@ -111,7 +116,7 @@ ms.locfileid: "102520342"
         >
         > Дополнительные примеры файлов runconfig см. в разделе [https://github.com/MicrosoftDocs/pipelines-azureml/](https://github.com/MicrosoftDocs/pipelines-azureml/) .
     
-        См. дополнительные сведения о команде [az ml run submit-script](/cli/azure/ext/azure-cli-ml/ml/run#ext-azure-cli-ml-az-ml-run-submit-script).
+        См. дополнительные сведения о команде [az ml run submit-script](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-submit-script).
 
     # <a name="studio"></a>[Студия](#tab/azure-studio)
 
@@ -162,7 +167,7 @@ ms.locfileid: "102520342"
     
         Эта команда возвращает документ JSON, в котором перечисляются сведения о выполнении этого эксперимента.
     
-        См. дополнительные сведения о команде [az ml experiment list](/cli/azure/ext/azure-cli-ml/ml/experiment#ext-azure-cli-ml-az-ml-experiment-list).
+        См. дополнительные сведения о команде [az ml experiment list](/cli/azure/ext/azure-cli-ml/ml/experiment?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-experiment-list).
     
     * Чтобы просмотреть сведения о конкретном выполнении, используйте следующую команду. Замените на `runid` идентификатор запуска:
     
@@ -172,7 +177,7 @@ ms.locfileid: "102520342"
     
         Эта команда возвращает документ JSON, в котором перечисляются сведения о выполнении.
     
-        Дополнительные сведения см. в разделе [AZ ML Run показ](/cli/azure/ext/azure-cli-ml/ml/run#ext-azure-cli-ml-az-ml-run-show).
+        Дополнительные сведения см. в разделе [AZ ML Run показ](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-show).
     
     
     # <a name="studio"></a>[Студия](#tab/azure-studio)
@@ -192,6 +197,29 @@ ms.locfileid: "102520342"
     1. Чтобы просмотреть журналы выполнения, выберите конкретный запуск и на вкладке **выходные данные + журналы** можно найти журналы диагностики и ошибок для выполнения.
     
     ---
+
+## <a name="monitor-the-run-status-by-email-notification"></a>Отслеживание состояния выполнения по электронной почте уведомление
+
+1. В [портал Azure](https://ms.portal.azure.com/)на панели навигации слева выберите вкладку **монитор** . 
+
+1. Выберите **параметры диагностики** , а затем выберите **+ Добавить параметр диагностики**.
+
+    ![Снимок экрана параметров диагностики для уведомления по электронной почте](./media/how-to-manage-runs/diagnostic-setting.png)
+
+1. В параметре диагностики 
+    1. в разделе **сведения о категории** выберите **амлрунстатусчанжедевент**. 
+    1. В **сведениях о назначении** выберите **рабочую область отправить в log Analytics**  и укажите **подписку** и **log Analytics рабочую область**. 
+
+    > [!NOTE]
+    > **Рабочая область azure log Analytics** — это ресурс Azure другого типа, отличный от **рабочей области службы машинное обучение Azure**. Если в этом списке нет параметров, можно [создать рабочую область log Analytics](https://docs.microsoft.com/azure/azure-monitor/logs/quick-create-workspace). 
+    
+    ![Где сохранить уведомление по электронной почте](./media/how-to-manage-runs/log-location.png)
+
+1. На вкладке **журналы** добавьте **новое правило генерации оповещений**. 
+
+    ![Новое правило генерации оповещений](./media/how-to-manage-runs/new-alert-rule.png)
+
+1. Узнайте, [как создавать оповещения журналов и управлять ими с помощью Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/alerts/alerts-log).
 
 ## <a name="run-description"></a>Описание запуска 
 
@@ -253,7 +281,7 @@ ms.locfileid: "102520342"
     az ml run update -r runid --add-tag quality='fantastic run'
     ```
     
-    Дополнительные сведения см. в разделе [AZ ML Run Update](/cli/azure/ext/azure-cli-ml/ml/run#ext-azure-cli-ml-az-ml-run-update).
+    Дополнительные сведения см. в разделе [AZ ML Run Update](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-update).
     
     # <a name="studio"></a>[Студия](#tab/azure-studio)
     
@@ -287,17 +315,17 @@ ms.locfileid: "102520342"
     az ml run list --experiment-name experiment [?properties.author=='azureml-user' && tags.quality=='fantastic run']
     ```
     
-    Дополнительные сведения о запросах Azure CLI результатов см. в разделе [запрос Azure CLI команды Output](/cli/azure/query-azure-cli).
+    Дополнительные сведения о запросах Azure CLI результатов см. в разделе [запрос Azure CLI команды Output](/cli/azure/query-azure-cli?preserve-view=true&view=azure-cli-latest).
     
     # <a name="studio"></a>[Студия](#tab/azure-studio)
     
-    1. Перейдите к списку  **все запуски** .
+    Чтобы найти конкретные запуски, перейдите к списку  **все запуски** . У вас есть два варианта:
     
-    1. Используйте панель поиска для фильтрации по метаданным запуска, таким как теги, описания, имена экспериментов и имя отправителя. Фильтр тегов также можно использовать для фильтрации по тегам. 
+    1. Используйте кнопку **Добавить фильтр** и выберите фильтр по тегам, чтобы отфильтровать выполнений по тегу, который был назначен запускам. <br><br>
+    OR
     
-    ---
-
-
+    1. Используйте панель поиска для быстрого поиска запусков, выполнив поиск по метаданным запуска, таким как состояние выполнения, описания, имена экспериментов и имя отправителя. 
+    
 ## <a name="cancel-or-fail-runs"></a>Отмена или неудача выполнения
 
 Если вы заметили ошибку или если выполнение занимает слишком много времени, можно отменить запуск.
@@ -331,7 +359,7 @@ print(local_run.get_status())
 az ml run cancel -r runid -w workspace_name -e experiment_name
 ```
 
-Дополнительные сведения см. в статье [AZ ML Run отмена](/cli/azure/ext/azure-cli-ml/ml/run#ext-azure-cli-ml-az-ml-run-cancel).
+Дополнительные сведения см. в статье [AZ ML Run отмена](/cli/azure/ext/azure-cli-ml/ml/run?preserve-view=true&view=azure-cli-latest#ext-azure-cli-ml-az-ml-run-cancel).
 
 # <a name="studio"></a>[Студия](#tab/azure-studio)
 
@@ -375,7 +403,7 @@ with exp.start_logging() as parent_run:
 
 ### <a name="submit-child-runs"></a>Отправить дочерние выполнения
 
-Дочерние запуски также могут быть отправлены из родительского запуска. Это позволяет создавать иерархии родительских и дочерних запусков. Невозможно создать родительский дочерний элемент Run: даже если родительский запуск не выполняет никаких действий, но запускает дочерний, все равно необходимо создать иерархию. Состояние всех запусков не зависит: родительский элемент может находиться в `"Completed"` успешном состоянии, даже если один или несколько дочерних запусков были отменены или завершились сбоем.  
+Дочерние запуски также могут быть отправлены из родительского запуска. Это позволяет создавать иерархии родительских и дочерних запусков. Невозможно создать родительский дочерний элемент Run: даже если родительский запуск не выполняет никаких действий, но запускает дочерний, все равно необходимо создать иерархию. Состояния всех запусков являются независимыми: родительский элемент может находиться в `"Completed"` успешном состоянии, даже если один или несколько дочерних запусков были отменены или завершились сбоем.  
 
 Может потребоваться, чтобы ваш ребенок мог использовать конфигурацию запуска, отличную от конфигурации родительского запуска. Например, вы можете использовать менее мощную конфигурацию на основе ЦП для родительского элемента, а также использовать конфигурации на основе GPU для своих детей. Другим распространенным желанием является передача каждого дочернего различных аргументов и данных. Чтобы настроить дочерний запуск, создайте `ScriptRunConfig` объект для дочернего запуска. Приведенный ниже код выполняет следующие действия.
 
