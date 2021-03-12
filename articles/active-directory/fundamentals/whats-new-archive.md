@@ -13,12 +13,12 @@ ms.author: ajburnle
 ms.reviewer: dhanyahk
 ms.custom: it-pro, seo-update-azuread-jan, has-adal-ref
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a555d2813030daeca1f2abcdc4b7787444bd0614
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.openlocfilehash: 74bfd0fe8cf1d26ccf96a8a27985e456b4e0e67c
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102453025"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102633484"
 ---
 # <a name="archive-for-whats-new-in-azure-active-directory"></a>Архив сведений о новых возможностях в Azure Active Directory
 
@@ -561,7 +561,7 @@ Azure AD Application Proxy теперь поддерживает веб-клие
 Кроме того, мы завершили работу, чтобы сделать все функции Graph Azure AD доступными через MS Graph. Таким образом, API Graph Azure AD получат только исправления бугфикс и безопасности до 30 июня 2022 г. Дополнительные сведения см. [в статье обновление приложений для использования библиотеки проверки подлинности Майкрософт и Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363) .
  
 ---
-## <a name="may-2020"></a>Май 2020 г.
+## <a name="may-2020"></a>Май 2020 г.
 
 ### <a name="retirement-of-properties-in-signins-riskyusers-and-riskdetections-apis"></a>Выбытие свойств в API-интерфейсах обнаружено, Рискюсерс и Рискдетектионс
 
@@ -2106,7 +2106,7 @@ Azure AD для Microsoft ребр в iOS и Android теперь поддерж
 Доступны новые журналы подготовки для отслеживания и устранения неполадок при подготовке пользователей и групп. Эти новые файлы журналов содержат следующие сведения:
 
 - какие группы были успешно созданы в [ServiceNow](../saas-apps/servicenow-provisioning-tutorial.md);
-- какие роли были импортированы из Amazon Web Services [(AWS)](../saas-apps/amazon-web-service-tutorial.md#configure-and-test-azure-ad-sso-for-amazon-web-services-aws);
+- Какие роли были импортированы из [AWS Single-Account Access](../saas-apps/amazon-web-service-tutorial.md#configure-and-test-azure-ad-sso-for-aws-single-account-access)
 - какие сотрудники не были импортированы из [Workday](../saas-apps/workday-inbound-tutorial.md).
 
 Дополнительные сведения см. в статье [Подготовка отчетов на портале Azure Active Directory (предварительная версия)](../reports-monitoring/concept-provisioning-logs.md).

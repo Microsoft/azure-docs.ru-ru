@@ -18,17 +18,17 @@ ms.author: markvi
 ms.reviewer: dhanyahk
 ms.collection: M365-identity-device-management
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: 9ff923d0231a1b00493a54996c2fcd489012bbe7
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.openlocfilehash: 329036f3ed815eaaba94f441e372f4be86edd629
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862043"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102558089"
 ---
 # <a name="azure-ad-powershell-cmdlets-for-reporting"></a>Командлеты Azure AD PowerShell для создания отчетов
 
 > [!NOTE] 
-> Сейчас эти командлеты PowerShell работают только с модулем [предварительной версии Azure AD](/powershell/module/azuread/?view=azureadps-2.0-preview#directory_auditing) . Обратите внимание, что модуль предварительной версии не предлагается для использования в рабочей среде. 
+> Сейчас эти командлеты PowerShell работают только с модулем [предварительной версии Azure AD](/powershell/module/azuread/?view=azureadps-2.0-preview&preserve-view=true#directory_auditing) . Обратите внимание, что модуль предварительной версии не предлагается для использования в рабочей среде. 
 
 Чтобы установить общедоступный предварительный выпуск, используйте следующую версию. 
 
@@ -74,7 +74,7 @@ Install-module AzureADPreview
 | :--                           | :--                |
 | Отображаемое имя пользователя             | Get-AzureADAuditSignInLogs-Filter "userDisplayName EQ" Тимоти Перкинс "" |
 | Создать дату и время              | Get-AzureADAuditSignInLogs-Filter "Креатеддатетиме gt 2019-04-18T17:30:00.0 Z" (все, начиная с 5:30 PM на 4/18) |
-| Status                        | Get-AzureADAuditSignInLogs-Filter "Status/errorCode EQ 50105" |
+| Состояние                        | Get-AzureADAuditSignInLogs-Filter "Status/errorCode EQ 50105" |
 | Отображаемое имя приложения      | Get-AzureADAuditSignInLogs-Filter "appDisplayName EQ" Сторефронтстудио [WSFED Enabled] " |
 | Все вышеперечисленное              | Get-AzureADAuditSignInLogs-Filter "userDisplayName EQ" Тимоти Перкинс "and Status/errorCode Ne 0 и appDisplayName EQ" Сторефронтстудио [WSFED Enabled] "" |
 

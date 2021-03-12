@@ -1,66 +1,52 @@
 ---
 title: 'Cognitive Services: новые возможности в документах'
-description: Новые возможности в документации по Cognitive Services 1 января 2021-31 января 2021.
+description: Новые возможности в документации по Cognitive Services 1 февраля 2020-28 февраля 2020.
 author: erhopf
 manager: nitinme
 ms.topic: conceptual
 ms.author: erhopf
 ms.service: cognitive-services
-ms.date: 02/08/2021
-ms.openlocfilehash: 1cea159e6939463352102d7d3ff3dafbdea71b5a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/08/2021
+ms.openlocfilehash: b5893ab7c616c30d4febf957c21da56caf7c9673
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101710335"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102631376"
 ---
-# <a name="cognitive-services-docs-whats-new-for-january-1-2021---january-31-2021"></a>Cognitive Services документы: новые возможности для 1 января 2021 — 31 января 2021 г.
+# <a name="cognitive-services-docs-whats-new-for-february-1-2021---february-28-2021"></a>Cognitive Services документы: новые возможности для 1 февраля 2021 — 28 февраля 2021 г.
 
-Добро пожаловать в Cognitive Services документы с 1 января 2021 до 31 января 2021. В этой статье перечислены основные изменения, внесенные в документацию в течение этого периода.
+Добро пожаловать в Cognitive Services документы с 1 февраля 2021 по 28 февраля 2021. В этой статье перечислены основные изменения, внесенные в документацию в течение этого периода.
 
 ## <a name="cognitive-services"></a>Cognitive Services
 
-**Обновленные статьи**
+### <a name="new-articles"></a>Новые статьи
 
-- [Планирование и управление затратами на Cognitive Services Azure](plan-manage-costs.md)
-- [Контейнеры Azure Cognitive Services](cognitive-services-container-support.md)
+- [Элементы управления соответствием Политики Azure для Azure Cognitive Services](security-controls-policy.md)
+
+## <a name="containers"></a>Контейнеры
+
+### <a name="new-articles"></a>Новые статьи
+
+- [Часто задаваемые вопросы о контейнерах Azure Cognitive Services](/azure/cognitive-services/containers/container-faq)
+
+### <a name="updated-articles"></a>Обновленные статьи
+
+- [Теги образа контейнера Cognitive Services Azure и заметки о выпуске](/azure/cognitive-services/containers/container-image-tags)
 
 ## <a name="form-recognizer"></a>Распознаватель документов
 
-**Новые статьи**
+### <a name="updated-articles"></a>Обновленные статьи
 
-- [Руководство по пакетному извлечению данных форм с помощью службы "Фабрика данных Azure"](./form-recognizer/tutorial-bulk-processing.md)
-
-**Обновленные статьи**
-
-- [Что такое Распознаватель документов?](./form-recognizer/overview.md)
-
-## <a name="immersive-reader"></a>Иммерсивное средство чтения
-
-**Обновленные статьи**
-
-- [Создание иммерсивного ресурса чтения и Настройка проверки подлинности Azure Active Directory](./immersive-reader/how-to-create-immersive-reader.md)
-
-## <a name="personalizer"></a>Персонализатор
-
-**Обновленные статьи**
-
-- [Признаки — сведения о действиях и контексте](./personalizer/concepts-features.md)
+- [Развертывание примера средства создания меток](/azure/cognitive-services/form-recognizer/deploy-label-tool)
+- [Что такое Распознаватель документов?](/azure/cognitive-services/form-recognizer/overview)
+- [Обучение модели Распознавателя документов по примерам с метками с помощью средства маркировки данных](/azure/cognitive-services/form-recognizer/quickstarts/label-tool)
 
 ## <a name="text-analytics"></a>Анализ текста
 
-**Обновленные статьи**
+### <a name="updated-articles"></a>Обновленные статьи
 
-- [Поддержка языков API анализа текста v3](./text-analytics/language-support.md)
-- [Переход на версию 3. x API анализа текста](./text-analytics/migration-guide.md)
-- [Новые возможности в API "Анализ текста"](./text-analytics/whats-new.md)
-
-## <a name="community-contributors"></a>Участники сообщества
-
-Следующие пользователи участвовали в Cognitive Services документы в течение этого периода. Спасибо! Сведения о том, как внести участие, см. по ссылкам в разделе "приступить к работе" на [целевой странице](index.yml)"новые возможности".
-
-- [Анвешгангула](https://github.com/AnweshGangula) -анвеш гангула (1)
-- [кдгласз](https://github.com/cdglasz) -Кристофер гласз (1)
-- [хуйбуидак](https://github.com/huybuidac) -буи DAC хуй (1)
+- [Поддержка языков API анализа текста v3](/azure/cognitive-services/text-analytics/language-support)
+- [Как вызвать REST API службы "Анализ текста"](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-call-api)
 
 [!INCLUDE [Service specific updates](./includes/service-specific-updates.md)]

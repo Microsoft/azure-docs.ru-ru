@@ -8,15 +8,15 @@ ms.service: active-directory
 ms.subservice: app-mgmt
 ms.workload: identity
 ms.topic: conceptual
-ms.date: 10/05/2020
+ms.date: 02/22/2021
 ms.author: kenwith
 ms.reviewer: japere
-ms.openlocfilehash: 512316b78a0d6422daf5e268ef30db72ccbcfaeb
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 813e360ffc6c78b52151af5b9867560ae6d58f2f
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101688320"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103198243"
 ---
 # <a name="header-based-single-sign-on-for-on-premises-apps-with-azure-ad-app-proxy"></a>Единый вход на основе заголовка для локальных приложений с Azure AD App прокси-сервером
 
@@ -48,7 +48,7 @@ Azure Active Directory прокси приложения (Azure AD) изнача
 > [!NOTE] 
 > В этой статье описывается подключение приложений проверки подлинности на основе заголовков к Azure AD с помощью прокси приложения и рекомендуемый шаблон. В качестве альтернативы также существует шаблон интеграции, который использует PingAccess с Azure AD для включения проверки подлинности на основе заголовков. Дополнительные сведения см. в статье [Проверка подлинности на основе заголовка для единого входа с помощью прокси приложения и PingAccess](application-proxy-ping-access-publishing-guide.md).
 
-## <a name="how-it-works"></a>Принципы работы
+## <a name="how-it-works"></a>Принцип работы
 
 :::image type="content" source="./media/application-proxy-configure-single-sign-on-with-headers/how-it-works.png" alt-text="Как единый вход на основе заголовков работает с прокси приложения." lightbox="./media/application-proxy-configure-single-sign-on-with-headers/how-it-works.png":::
 

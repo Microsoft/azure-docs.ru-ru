@@ -6,14 +6,14 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 03/05/2021
+ms.date: 03/08/2021
 ms.author: alkohli
-ms.openlocfilehash: 3ff07c773a2976a296d13510a3ddd7b41217aaa2
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: 57633df8c6482a9b0645813519991282bdbf22c1
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102437627"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102633518"
 ---
 # <a name="deploy-azure-data-services-on-your-azure-stack-edge-pro-gpu-device"></a>Развертывание служб данных Azure на устройстве с Azure Stack ребра Pro GPU
 
@@ -87,7 +87,7 @@ ms.locfileid: "102437627"
 
 1. Файл конфигурации должен находиться в `.kube` папке профиля пользователя на локальном компьютере. Скопируйте файл в эту папку в профиле пользователя.
 
-    ![Расположение файла конфигурации на клиенте](media/azure-stack-edge-j-series-create-kubernetes-cluster/location-config-file.png)
+    ![Расположение файла конфигурации на клиенте](media/azure-stack-edge-gpu-create-kubernetes-cluster/location-config-file.png)
 1. Предоставьте пользователю доступ к созданному пространству имен. Тип: 
 
     `Grant-HcsKubernetesNamespaceAccess -Namespace <Name of namespace> -UserName <User name>`

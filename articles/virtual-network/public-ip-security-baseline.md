@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 09/11/2020
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 3dfb2cd445edf33ed8db4807efcc2e6326f838ab
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: 7f8633d791e2dd0f0723b272aefcb343d758b248
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "102549011"
+ms.locfileid: "102612360"
 ---
 # <a name="azure-security-baseline-for-azure-public-ip"></a>Базовый уровень безопасности Azure для общедоступного IP-адреса Azure
 
@@ -350,9 +350,9 @@ Azure PowerShell или Azure CLI можно использовать для п�
 
 **Руководство**. Если вы используете пользовательские определения политики Azure, используйте Azure DevOps или Azure Repos для безопасного хранения кода и управления им.
 
-- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow?view=azure-devops)
+- [Как хранить код в Azure DevOps](/azure/devops/repos/git/gitworkflow)
 
-- [Документация по Azure Repos](/azure/devops/repos/index?view=azure-devops)
+- [Документация по Azure Repos](/azure/devops/repos/index)
 
 **Мониторинг Центра безопасности Azure**. Неприменимо
 

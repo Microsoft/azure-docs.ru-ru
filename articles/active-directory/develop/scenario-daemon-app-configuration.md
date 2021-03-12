@@ -11,26 +11,22 @@ ms.workload: identity
 ms.date: 09/19/2020
 ms.author: jmprieur
 ms.custom: aaddev, devx-track-python
-ms.openlocfilehash: 8a01ee4e2b0d4e72c1b17cf56953675e735ead79
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: 300df35918ea4868664fcb7c5882709eee4090ca
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99582896"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103008011"
 ---
 # <a name="daemon-app-that-calls-web-apis---code-configuration"></a>Управляющее приложение, вызывающее веб-API — конфигурация кода
 
 Узнайте, как настроить код для управляющего приложения, вызывающего веб-API.
 
-## <a name="msal-libraries-that-support-daemon-apps"></a>Библиотеки MSAL, поддерживающие управляющие приложения
+## <a name="microsoft-libraries-supporting-daemon-apps"></a>Библиотеки Майкрософт, поддерживающие управляющие приложения
 
-Эти библиотеки Майкрософт поддерживают приложения управляющей программы:
+Следующие библиотеки Microsoft поддерживают приложения управляющей программы:
 
-  Библиотека MSAL | Описание
-  ------------ | ----------
-  ![MSAL.NET](media/sample-v2-code/logo_NET.png) <br/> MSAL.NET  | Платформы платформа .NET Framework и .NET Core поддерживаются для создания управляющих приложений. (UWP, Xamarin. iOS и Xamarin. Android не поддерживаются, так как эти платформы используются для создания общедоступных клиентских приложений.)
-  ![Python](media/sample-v2-code/logo_python.png) <br/> MSAL Python | Поддержка управляющих приложений в Python.
-  ![Java](media/sample-v2-code/logo_java.png) <br/> MSAL Java | Поддержка управляющих приложений на Java.
+[!INCLUDE [active-directory-develop-libraries-daemon](../../../includes/active-directory-develop-libraries-daemon.md)]
 
 ## <a name="configure-the-authority"></a>Настройка центра
 
@@ -348,7 +344,7 @@ ConfidentialClientApplication cca =
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 # <a name="net"></a>[.NET](#tab/dotnet)
 

@@ -3,7 +3,7 @@ title: Заметки о выпуске служб мультимедиа Azure
 description: В этой статье рассказывается о заметках о выпуске Службы мультимедиа Microsoft Azure версии 2.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.service: media-services
@@ -11,15 +11,15 @@ ms.workload: media
 ms.tgt_pltfrm: media
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 10/01/2019
-ms.author: juliako
+ms.date: 03/10/2021
+ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: e1700489b4f3ee37d95b87b1bf026d47c9f1de4d
-ms.sourcegitcommit: 77afc94755db65a3ec107640069067172f55da67
+ms.openlocfilehash: 019f0bc98de45fa1fe6f9b8c72ef74beb50ea2c2
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98694908"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103017364"
 ---
 # <a name="azure-media-services-release-notes"></a>Заметки о выпуске служб мультимедиа Azure
 
@@ -48,6 +48,26 @@ ms.locfileid: "98694908"
 
 ## <a name="rest-api-version-history"></a><a name="rest_version_history"></a>Журнал версий интерфейса API REST
 Сведения о журнале версий интерфейса REST API служб мультимедиа см. в [этой статье].
+
+## <a name="february-2021"></a>Февраль 2021 года
+
+### <a name="azure-media-services-v2-api-and-sdks-deprecation-announcement"></a>Объявление об устаревшей версии API служб мультимедиа Azure v2 и пакетов SDK
+
+#### <a name="update-your-azure-media-services-rest-api-and-sdks-to-v3-by-29-february-2024"></a>Обновление REST API Служб мультимедиа Azure и пакетов SDK до версии v3 до 29 февраля 2024
+
+Поскольку версия 3 REST API Служб мультимедиа Azure и клиентские пакеты SDK для .NET и Java предлагают больше возможностей, чем версия 2, мы отменяем версию 2 REST API Служб мультимедиа Azure и клиентских пакетов SDK для .NET и Java. Мы рекомендуем сделать этот ключ более ранним, чтобы получить более широкие преимущества версии 3 REST API Служб мультимедиа Azure и клиентских пакетов SDK для .NET и Java.
+Версия 3 предоставляет:
+ 
+- Круглосуточная поддержка интерактивных событий
+- API-интерфейсы RESTFUL, клиентские пакеты SDK для .NET Core, Node.js, Python, Java, Go и Ruby.
+- Управляемые клиентами ключи, интеграция доверенного хранилища, поддержка частной ссылки и [многое другое](https://review.docs.microsoft.com/en-us/azure/media-services/latest/migrate-v-2-v-3-migration-benefits)
+
+#### <a name="action-required"></a>Требуется действие:
+
+Чтобы минимизировать сбои рабочих нагрузок, ознакомьтесь с [руководством по миграции](https://go.microsoft.com/fwlink/?linkid=2149150&clcid=0x409) , чтобы перенести код из API версии 2 и пакеты SDK на версию 3 для API и пакета SDK до 29 февраля 2024.
+**После 29 февраля 2024** службы мультимедиа Azure больше не будут принимать трафик на REST API версии 2, API управления учетными записями ARM версии 2015-10-01 или из пакетов SDK для клиента .NET версии 2. Сюда входят все сторонние пакеты SDK для клиентов с открытым исходным кодом, которые могут вызывать API версии 2.  
+
+См. официальное [объявление об обновлениях Azure](https://azure.microsoft.com/updates/update-your-azure-media-services-rest-api-and-sdks-to-v3-by-29-february-2024/).
 
 ## <a name="september-2020"></a>Сентябрь 2020 г.
 

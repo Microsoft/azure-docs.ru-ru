@@ -3,12 +3,12 @@ title: Расширение графа мультимедиа — Azure
 description: Аналитика видеотрансляций в IoT Edge позволяет расширить возможности обработки графов мультимедиа с помощью узла расширения графа.
 ms.topic: overview
 ms.date: 09/14/2020
-ms.openlocfilehash: 6735148bf453cfe0afb58d51451dea65f06705d6
-ms.sourcegitcommit: cc13f3fc9b8d309986409276b48ffb77953f4458
+ms.openlocfilehash: 66656690e4e53508253091134a67adeb899b3dbf
+ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97401123"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102455845"
 ---
 # <a name="media-graph-extension"></a>Расширение графа мультимедиа
 
@@ -19,11 +19,11 @@ ms.locfileid: "97401123"
 * [обработчик расширений HTTP](media-graph-concept.md#http-extension-processor);
 * [обработчик расширений gRPC](media-graph-concept.md#grpc-extension-processor).
 
-Узел расширения графа ожидает, что подключаемый модуль расширения аналитики вернет результаты в формате JSON. В идеале результаты должны соответствовать [объектной модели схемы метаданных вывода](https://review.docs.microsoft.com/en-us/azure/media-services/live-video-analytics-edge/inference-metadata-schema?branch=release-lva-dec-update).
+Узел расширения графа ожидает, что подключаемый модуль расширения аналитики вернет результаты в формате JSON. В идеале результаты должны соответствовать [объектной модели схемы метаданных вывода](/azure/media-services/live-video-analytics-edge/inference-metadata-schema).
 
 ## <a name="http-extension-processor"></a>Обработчик расширений HTTP
 
-Обработчик расширений HTTP позволяет реализовать сценарии расширения с использованием [протокола HTTP](https://review.docs.microsoft.com/en-us/azure/media-services/live-video-analytics-edge/http-extension-protocol?branch=release-lva-dec-update), в которых производительность и (или) оптимальное использование ресурсов не являются основной задачей. Вы можете предоставить для графа мультимедиа собственный искусственный интеллект через конечную точку HTTP REST. 
+Обработчик расширений HTTP позволяет реализовать сценарии расширения с использованием [протокола HTTP](/azure/media-services/live-video-analytics-edge/http-extension-protocol), в которых производительность и (или) оптимальное использование ресурсов не являются основной задачей. Вы можете предоставить для графа мультимедиа собственный искусственный интеллект через конечную точку HTTP REST. 
 
 Узел обработчика расширений HTTP используется, если:
 
@@ -33,7 +33,7 @@ ms.locfileid: "97401123"
 
 ## <a name="grpc-extension-processor"></a>Обработчик расширений gRPC
 
-Обработчик расширений gRPC позволяет реализовать сценарии расширения с использованием высокопроизводительного [структурированного протокола](https://review.docs.microsoft.com/en-us/azure/media-services/live-video-analytics-edge/grpc-extension-protocol?branch=release-lva-dec-update) на основе gRPC. Он идеально подходит для сценариев, в которых приоритетом являются производительность и (или) оптимальное использование ресурсов. Обработчик расширений gRPC позволяет в полной мере реализовать преимущество определений структурированных данных. gRPC обеспечивает высокую производительность при передаче содержимого за счет:
+Обработчик расширений gRPC позволяет реализовать сценарии расширения с использованием высокопроизводительного [структурированного протокола](/azure/media-services/live-video-analytics-edge/grpc-extension-protocol) на основе gRPC. Он идеально подходит для сценариев, в которых приоритетом являются производительность и (или) оптимальное использование ресурсов. Обработчик расширений gRPC позволяет в полной мере реализовать преимущество определений структурированных данных. gRPC обеспечивает высокую производительность при передаче содержимого за счет:
 
 * использования [встроенной общей памяти](https://en.wikipedia.org/wiki/Shared_memory) или 
 * непосредственного внедрения содержимого в текст сообщений gRPC. 
@@ -57,7 +57,7 @@ ms.locfileid: "97401123"
 
 ## <a name="samples"></a>Примеры
 
-Вы можете начать работу с одного из наших кратких руководств, в которых продемонстрирована видеоаналитика в реальном времени с предварительно созданной службой расширения при низкой частоте кадров с [обработчиком расширения HTTP](https://review.docs.microsoft.com/en-us/azure/media-services/live-video-analytics-edge/use-your-model-quickstart?branch=release-lva-dec-update&pivots=programming-language-csharp) или с высокой частотой кадров с [обработчиком расширения gRPC](https://review.docs.microsoft.com/en-us/azure/media-services/live-video-analytics-edge/analyze-live-video-use-your-grpc-model-quickstart?branch=release-lva-dec-update&pivots=programming-language-csharp).
+Вы можете начать работу с одного из наших кратких руководств, в которых продемонстрирована видеоаналитика в реальном времени с предварительно созданной службой расширения при низкой частоте кадров с [обработчиком расширения HTTP](/azure/media-services/live-video-analytics-edge/use-your-model-quickstart?pivots=programming-language-csharp) или с высокой частотой кадров с [обработчиком расширения gRPC](/azure/media-services/live-video-analytics-edge/analyze-live-video-use-your-grpc-model-quickstart?pivots=programming-language-csharp).
 
 Опытные пользователи могут воспользоваться нашими примерами [записных книжек Jupyter](https://github.com/Azure/live-video-analytics/blob/master/utilities/video-analysis/notebooks/readme.md) для Аналитики видеотрансляций. Эти записные книжки содержат пошаговые инструкции по использованию **расширения графа мультимедиа** для выполнения следующих действий:
 

@@ -4,12 +4,12 @@ ms.service: azure-functions
 ms.topic: include
 ms.date: 02/21/2020
 ms.author: cshoe
-ms.openlocfilehash: dadd86521a7b6c20dab2ed036555b798b869344c
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 9fca69804220021ca7935e562f2026c11749515a
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102511035"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102623269"
 ---
 Используйте выходную привязку Центров событий для записи событий в поток событий. Чтобы записывать события в центр событий, необходимо иметь разрешение на отправку в него событий.
 
@@ -250,7 +250,7 @@ public static string Run([TimerTrigger("0 */5 * * * *")] TimerInfo myTimer, ILog
 |**name** | Недоступно | Имя переменной, используемое в коде функции, которая представляет событие. |
 |**путь** |**EventHubName** | Только служба "Функции" версии 1.x. Имя концентратора событий. Если имя концентратора событий указано также в строке подключения, такое значение переопределяет это свойство во время выполнения. |
 |**eventHubName** |**EventHubName** | Функции 2.x и более поздних версий. Имя концентратора событий. Если имя концентратора событий указано также в строке подключения, такое значение переопределяет это свойство во время выполнения. |
-|**connection**; |**Соединение** | Имя параметра приложения, содержащего строку подключения к пространству имен концентратора событий. Скопируйте эту строку подключения, нажав кнопку **Сведения о подключении** для *пространства имен*, а не сам концентратор событий. Чтобы отправлять сообщения в поток событий, эта строка подключения должна иметь разрешения на отправку.|
+|**connection**; |**Соединение** | Имя параметра приложения, содержащего строку подключения к пространству имен концентратора событий. Скопируйте эту строку подключения, нажав кнопку **Сведения о подключении** для [пространства имен](../articles/event-hubs/event-hubs-create.md#create-an-event-hubs-namespace), а не сам концентратор событий. Чтобы отправлять сообщения в поток событий, эта строка подключения должна иметь разрешения на отправку. <br><br>Если вы используете [расширение версии 5. x или более поздней версии](../articles/azure-functions/functions-bindings-event-hubs.md#event-hubs-extension-5x-and-higher), а не строку подключения, можно указать ссылку на раздел конфигурации, который определяет подключение. См. раздел [Подключения](../articles/azure-functions/functions-reference.md#connections).|
 
 [!INCLUDE [app settings to local.settings.json](../articles/azure-functions/../../includes/functions-app-settings-local.md)]
 
@@ -258,11 +258,39 @@ public static string Run([TimerTrigger("0 */5 * * * *")] TimerInfo myTimer, ILog
 
 # <a name="c"></a>[C#](#tab/csharp)
 
+### <a name="default"></a>По умолчанию
+
+Для привязки к выходным данным концентратора событий можно использовать параметры следующих типов:
+
+* `string`
+* `byte[]`
+* `POCO`
+* `EventData` — свойства EventData по умолчанию предоставляются для [пространства имен Microsoft.Azure.EventHubs](https://docs.microsoft.com/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet).
+
 Для отправки сообщений используйте параметр метода, например `out string paramName`. В скрипте C# `paramName` — это значение, заданное в свойстве `name` файла *function.json*. Для записи нескольких сообщений можно использовать `ICollector<string>` или `IAsyncCollector<string>` вместо `out string`.
+
+### <a name="additional-types"></a>Дополнительные типы 
+Приложения, использующие расширение Центров событий 5.0.0 или более поздней версии, используют тип `EventData` в пространстве имен [Azure.Messaging.EventHubs](https://docs.microsoft.com/dotnet/api/azure.messaging.eventhubs.eventdata?view=azure-dotnet), а не [Microsoft.Azure.EventHubs](https://docs.microsoft.com/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet). В этой версии прекращена поддержка устаревшего типа `Body`. Вместо него теперь поддерживаются следующие типы:
+
+- [EventBody](https://docs.microsoft.com/dotnet/api/azure.messaging.eventhubs.eventdata.eventbody?view=azure-dotnet);
 
 # <a name="c-script"></a>[Скрипт C#](#tab/csharp-script)
 
+### <a name="default"></a>По умолчанию
+
+Для привязки к выходным данным концентратора событий можно использовать параметры следующих типов:
+
+* `string`
+* `byte[]`
+* `POCO`
+* `EventData` — свойства EventData по умолчанию предоставляются для [пространства имен Microsoft.Azure.EventHubs](https://docs.microsoft.com/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet).
+
 Для отправки сообщений используйте параметр метода, например `out string paramName`. В скрипте C# `paramName` — это значение, заданное в свойстве `name` файла *function.json*. Для записи нескольких сообщений можно использовать `ICollector<string>` или `IAsyncCollector<string>` вместо `out string`.
+
+### <a name="additional-types"></a>Дополнительные типы 
+Приложения, использующие расширение Центров событий 5.0.0 или более поздней версии, используют тип `EventData` в пространстве имен [Azure.Messaging.EventHubs](https://docs.microsoft.com/dotnet/api/azure.messaging.eventhubs.eventdata?view=azure-dotnet), а не [Microsoft.Azure.EventHubs](https://docs.microsoft.com/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet). В этой версии прекращена поддержка устаревшего типа `Body`. Вместо него теперь поддерживаются следующие типы:
+
+- [EventBody](https://docs.microsoft.com/dotnet/api/azure.messaging.eventhubs.eventdata.eventbody?view=azure-dotnet);
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 

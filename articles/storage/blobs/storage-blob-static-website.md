@@ -9,12 +9,12 @@ ms.reviewer: dineshm
 ms.date: 09/04/2020
 ms.subservice: blobs
 ms.custom: devx-track-js
-ms.openlocfilehash: b9eb65311951706863c3b18c5fc91bae8c41c7dc
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.openlocfilehash: bbb996362df1f99a8702de310bc11f6828cc303a
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "96007347"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103008456"
 ---
 # <a name="static-website-hosting-in-azure-storage"></a>Размещение статических веб-сайтов в службе хранилища Azure
 
@@ -25,9 +25,6 @@ ms.locfileid: "96007347"
 Если для подготовки содержимого к просмотру требуется веб-сервер, можно использовать [службу приложений Azure](https://azure.microsoft.com/services/app-service/).
 
 [!INCLUDE [storage-multi-protocol-access-preview](../../../includes/storage-multi-protocol-access-preview.md)]
-
-> [!NOTE]
-> Обязательно создайте стандартную учетную запись хранения общего назначения версии 2. Статические веб-сайты недоступны в учетной записи хранения другого типа.
 
 ## <a name="setting-up-a-static-website"></a>Настройка статического веб-сайта
 
