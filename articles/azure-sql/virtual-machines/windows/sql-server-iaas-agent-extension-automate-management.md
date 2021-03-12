@@ -17,12 +17,12 @@ ms.date: 11/07/2020
 ms.author: mathoma
 ms.reviewer: jroth
 ms.custom: seo-lt-2019
-ms.openlocfilehash: cab5ac5e6a8fd900a41ff3690763746033b6200e
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: fdff3f6144f7099f3f61cfe57186357e17136e9f
+ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102034818"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225495"
 ---
 # <a name="automate-management-with-the-sql-server-iaas-agent-extension"></a>Автоматизация управления с помощью расширения агента SQL Server IaaS
 [!INCLUDE[appliesto-sqlvm](../../includes/appliesto-sqlvm.md)]
@@ -164,6 +164,8 @@ ms.locfileid: "102034818"
 - Виртуальные машины SQL Server, развернутые в общедоступном облаке или в облаке Azure для государственных организаций. Развертывания в других частных облаках или облаках для государственных организаций не поддерживаются. 
 
 
+## <a name="in-region-data-residency"></a>Место расположения данных в регионе
+Виртуальная машина SQL Azure и расширение агента IaaS SQL не перемещают и не хранят данные клиентов вне региона, в котором они развернуты.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

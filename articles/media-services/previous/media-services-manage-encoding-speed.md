@@ -3,7 +3,7 @@ title: Управление скоростью и параллелизмом к�
 description: В этой статье вкратце описывается, как можно управлять скоростью и параллелизмом кодирования заданий и задач с помощью служб мультимедиа Azure.
 services: media-services
 documentationcenter: ''
-author: juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: 676313f8-a158-4e3a-a99b-2c29a341ecc9
@@ -12,14 +12,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/18/2019
-ms.author: juliako
-ms.openlocfilehash: 4b6f843678d64bddd276f6123a432699efc89ad9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: f01235e5b02bf2a61a359fa5571c6e6d575c1232
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89269290"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103014814"
 ---
 #  <a name="manage-speed-and-concurrency-of-your-encoding"></a>Управление скоростью и параллелизмом кодирования
 
@@ -35,7 +35,7 @@ ms.locfileid: "89269290"
 
 Дополнительные сведения и примеры масштабирования единиц кодирования см. в [этом](media-services-scale-media-processing-overview.md) разделе.
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Дальнейшие действия
 
 [Масштабирование единиц кодирования](media-services-scale-media-processing-overview.md)
 

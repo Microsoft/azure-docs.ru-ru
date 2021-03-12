@@ -1,7 +1,7 @@
 ---
 title: Схема входных метаданных служб мультимедиа Azure | Документация Майкрософт
 description: В этой статье приводятся общие сведения о схеме входных метаданных служб мультимедиа Azure.
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 services: media-services
@@ -11,14 +11,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/18/2019
-ms.author: juliako
-ms.openlocfilehash: 57a91622bef401d946a383e3be39f2e566fa50b4
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: eebe1c77c9af6791be94c16f0f792a9e7deb9a6e
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89267842"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103017415"
 ---
 # <a name="input-metadata"></a>Входные метаданные
 
@@ -52,7 +52,7 @@ ms.locfileid: "89267842"
 ### <a name="attributes"></a>Атрибуты
 | Имя | Тип | Описание |
 | --- | --- | --- |
-| **Имя**<br /><br /> Обязательно |**xs:string** |Имя файла ресурса-контейнера. |
+| **имя**;<br /><br /> Обязательно |**xs:string** |Имя файла ресурса-контейнера. |
 | **Размер**<br /><br /> Обязательно |**xs:long** |Размер файла ресурса-контейнера в байтах. |
 | **Длительность**<br /><br /> Обязательно |**xs:duration** |Длительность воспроизведения содержимого. Пример: Duration="PT25M37.757S". |
 | **NumberOfStreams**<br /><br /> Обязательно |**xs:int** |Количество потоков в файле ресурса-контейнера. |
@@ -69,10 +69,10 @@ ms.locfileid: "89267842"
 ### <a name="child-elements"></a>Дочерние элементы
 | Имя | Тип | Описание |
 | --- | --- | --- |
-| **Программы**<br /><br /> minOccurs="0" | |Коллекция всех [элементов Programs](media-services-input-metadata-schema.md#Programs), если файл ресурса-контейнера имеет формат MPEG-TS. |
+| **Programs**<br /><br /> minOccurs="0" | |Коллекция всех [элементов Programs](media-services-input-metadata-schema.md#Programs), если файл ресурса-контейнера имеет формат MPEG-TS. |
 | **VideoTracks**<br /><br /> minOccurs="0" | |Каждый физический файл ресурса может содержать ноль или более видеодорожек, чередуемых в соответствующем формате ресурса. Этот элемент содержит коллекцию всех [элементов VideoTracks](media-services-input-metadata-schema.md#VideoTracks), которые являются частью файла ресурса. |
 | **AudioTracks**<br /><br /> minOccurs="0" | |Каждый физический файл ресурса-контейнера может содержать ноль или более звуковых дорожек, чередуемых в соответствующем формате ресурса-контейнера. Этот элемент содержит коллекцию всех [элементов AudioTracks](media-services-input-metadata-schema.md#AudioTracks), которые являются частью файла ресурса. |
-| **Метаданные**<br /><br /> minOccurs="0" maxOccurs="unbounded" |[метадататипе](media-services-input-metadata-schema.md#MetadataType) |Метаданные файла ресурса-контейнера, представленные в виде строки "ключ —значение". Пример:<br /><br /> **&lt;Ключ метаданных = "язык" значение = "ENG"/&gt;** |
+| **Метаданные**<br /><br /> minOccurs="0" maxOccurs="unbounded" |[метадататипе](media-services-input-metadata-schema.md#MetadataType) |Метаданные файла ресурса-контейнера, представленные в виде строки "ключ —значение". Пример.<br /><br /> **&lt;Ключ метаданных = "язык" значение = "ENG"/&gt;** |
 
 ## <a name="tracktype"></a><a name="TrackType"></a> TrackType
 Пример XML-файла см. в разделе [Пример XML-файла](media-services-input-metadata-schema.md#xml) в конце статьи.  
@@ -127,7 +127,7 @@ ms.locfileid: "89267842"
 | Имя | Тип | Описание |
 | --- | --- | --- |
 | **FourCC**<br /><br /> Обязательно |**xs:string** |Код FourCC видеокодека. |
-| **Profile** |**xs: string** |Профиль видеодорожки. |
+| **Профиль** |**xs: string** |Профиль видеодорожки. |
 | **Уровень** |**xs: string** |Уровень видеодорожки. |
 | **PixelFormat** |**xs: string** |Формат пикселей видеодорожки. |
 | **Width**<br /><br /> Обязательно |**xs:int** |Ширина закодированного видео в пикселях. |
@@ -150,8 +150,8 @@ ms.locfileid: "89267842"
 ### <a name="attributes"></a>Атрибуты
 | Имя | Тип | Описание |
 | --- | --- | --- |
-| **key**<br /><br /> Обязательно |**xs:string** |Ключ в паре "ключ — значение". |
-| **value**<br /><br /> Обязательно |**xs:string** |Значение в паре "ключ — значение". |
+| **key**<br /><br /> Обязательно |**xs:string** |Ключ из пары ключ/значение. |
+| **value**<br /><br /> Обязательно |**xs:string** |Значение из пары ключ/значение. |
 
 ## <a name="programtype"></a><a name="ProgramType"></a> програмтипе
 **ProgramType** — глобальный сложный тип, описывающий программу.  
@@ -192,7 +192,7 @@ ms.locfileid: "89267842"
 ### <a name="child-elements"></a>Дочерние элементы
 | Имя | Тип | Описание |
 | --- | --- | --- |
-| **Программа**<br /><br /> minOccurs="0" maxOccurs="unbounded" |[ProgramType](media-services-input-metadata-schema.md#ProgramType) |Содержит сведения о программах в файле ресурса-контейнера (в формате MPEG-TS). |
+| **Program**<br /><br /> minOccurs="0" maxOccurs="unbounded" |[ProgramType](media-services-input-metadata-schema.md#ProgramType) |Содержит сведения о программах в файле ресурса-контейнера (в формате MPEG-TS). |
 
 ## <a name="videotracks-element"></a><a name="VideoTracks"></a> Элемент VideoTracks
  Оболочечный элемент, содержащий несколько элементов **VideoTrack**.  
@@ -647,7 +647,7 @@ ms.locfileid: "89267842"
 </AssetFiles>  
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
 
 ## <a name="provide-feedback"></a>Отзывы

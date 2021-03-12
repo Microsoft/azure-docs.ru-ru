@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.reviewer: veyalla
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 113c8adccc5e8b1c3321569f32ca3fb33423ccd8
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: 1a78db821c0fab01ad5d6752216a8f7682fb2c46
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102562883"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200493"
 ---
 # <a name="access-built-in-metrics"></a>Доступ к встроенным метрикам
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Компоненты среды выполнения IoT Edge, центр IoT Edge и агент IoT Edge создают встроенные метрики в [формате демонстрации Prometheus](https://prometheus.io/docs/instrumenting/exposition_formats/). Удаленный доступ к этим метрикам для отслеживания работоспособности IoT Edge устройства.
 
@@ -64,7 +66,7 @@ ms.locfileid: "102562883"
 
 Модуль **edgeHub** создает следующие метрики:
 
-| Имя | Измерения | Описание |
+| Название | Измерения | Описание |
 |-|-|-|
 | `edgehub_gettwin_total` | `source` (источник операции)<br> `id` (идентификатор модуля) | Тип: Счетчик<br> Общее число вызовов Жеттвин |
 | `edgehub_messages_received_total` | `route_output` (выходные данные отправленного сообщения)<br> `id` | Тип: Счетчик<br> Общее число сообщений, полученных от клиентов |
@@ -87,7 +89,7 @@ ms.locfileid: "102562883"
 
 Модуль **edgeAgent** создает следующие метрики:
 
-| Имя | Измерения | Описание |
+| Название | Измерения | Описание |
 |-|-|-|
 | `edgeAgent_total_time_running_correctly_seconds` | `module_name` | Тип: датчик<br> Время, в течение которого модуль был указан в развертывании и был в состоянии выполнения |
 | `edgeAgent_total_time_expected_running_seconds` | `module_name` | Тип: датчик<br> Время, в течение которого модуль был указан в развертывании |

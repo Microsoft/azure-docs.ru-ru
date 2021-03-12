@@ -8,12 +8,12 @@ ms.author: heidist
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 07/12/2020
-ms.openlocfilehash: a13f78b6aa4fc3cb6f6777c76bc762ec565624fc
-ms.sourcegitcommit: a2d8acc1b0bf4fba90bfed9241b299dc35753ee6
+ms.openlocfilehash: dce4c41d0d6f15ac9dc33e687c9a5ac7b7b96e06
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91951321"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200785"
 ---
 # <a name="configure-a-connection-from-an-azure-cognitive-search-indexer-to-sql-server-on-an-azure-vm"></a>Настройка подключения из индексатора Когнитивный поиск Azure для SQL Server на виртуальной машине Azure
 
@@ -73,20 +73,11 @@ ms.locfileid: "91951321"
 Назначение IP-адресов может создать некоторые сложности, но их можно легко преодолеть, если знать о проблеме и о возможных путях ее решения. В дальнейших разделах приводятся рекомендации по устранению проблем, связанных с IP-адресами в списке управления доступом.
 
 #### <a name="restrict-access-to-the-azure-cognitive-search"></a>Ограничение доступа к Когнитивный поиск Azure
-Мы настоятельно рекомендуем ограничить доступ к IP-адресу службы поиска и к диапазону IP-адресов `AzureCognitiveSearch` [service tag](../virtual-network/service-tags-overview.md#available-service-tags) в списке ACL, а не сделать так, чтобы SQL Azure виртуальные машины открывались для всех запросов на подключение.
+Мы настоятельно рекомендуем ограничить доступ к IP-адресу службы поиска и к диапазону IP-адресов `AzureCognitiveSearch` [](../virtual-network/service-tags-overview.md#available-service-tags) в списке ACL, а не сделать так, чтобы SQL Azure виртуальные машины открывались для всех запросов на подключение.
 
-IP-адрес можно узнать, обратившись к полному доменному имени (например, `<your-search-service-name>.search.windows.net` ) службы поиска.
+IP-адрес можно узнать, обратившись к полному доменному имени (например, `<your-search-service-name>.search.windows.net` ) службы поиска. Хотя IP-адрес службы поиска может измениться, маловероятно, что он изменится. IP-адрес может быть статическим в течение времени существования службы.
 
 Диапазон IP-адресов для `AzureCognitiveSearch` [тега службы](../virtual-network/service-tags-overview.md#available-service-tags) можно узнать с помощью [загружаемых файлов JSON](../virtual-network/service-tags-overview.md#discover-service-tags-by-using-downloadable-json-files) или через [API обнаружения тегов служб](../virtual-network/service-tags-overview.md#use-the-service-tag-discovery-api-public-preview). Диапазон IP-адресов обновляется еженедельно.
-
-#### <a name="managing-ip-address-fluctuations"></a>Управление колебаниями IP-адреса
-Если служба поиска имеет только одну единицу поиска (то есть одну реплику и одну секцию), то IP-адрес может меняться во время перезагрузки службы, аннулируя существующий список управления доступом с вашим IP-адресом службы поиска.
-
-Один из способов избежать последующей ошибки подключения — использовать более одной реплики и одну секцию в Azure Когнитивный поиск. Это увеличивает затраты, но решает проблему с IP-адресами. В Когнитивный поиск Azure IP-адреса не изменяются при наличии нескольких единиц поиска.
-
-Второй подход заключается в том, чтобы позволить подключению завершиться сбоем, а затем перенастроить списки управления доступом в группе безопасности сети. Как правило, IP-адреса меняются раз в несколько недель. Для пользователей, которые нечасто выполняют управляемую индексацию, этот подход может быть эффективным.
-
-Третьим эффективным (но не самым безопасным) подходом является указание диапазона IP-адресов в регионе Azure, в котором выполняется подготовка службы поиска. Список диапазонов IP-адресов, из которых общедоступные IP-адреса назначаются ресурсам Azure, опубликован в файле с [диапазонами IP-адресов центров обработки данных Azure](https://www.microsoft.com/download/details.aspx?id=41653). 
 
 #### <a name="include-the-azure-cognitive-search-portal-ip-addresses"></a>Включение IP-адресов портала Когнитивный поиск Azure
 Если вы используете портал Azure для создания индексатора, логике портала Когнитивный поиск Azure также требуется доступ к виртуальной машине SQL Azure во время создания. IP-адреса портала Когнитивный поиск Azure можно найти с помощью команды ping `stamp2.search.ext.azure.com` .

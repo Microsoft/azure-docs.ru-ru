@@ -3,7 +3,7 @@ title: Квоты и ограничения на службы мультимед
 description: В этом разделе описываются квоты и ограничения, связанные со службами мультимедиа Microsoft Azure.
 services: media-services
 documentationcenter: ''
-author: juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: d4c43afd-dba8-40a2-ad92-6de54152f7ec
@@ -12,14 +12,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 09/16/2020
-ms.author: juliako
-ms.openlocfilehash: a2e80fa8eaec1dbf4137ba72662dfb178b6c9b1a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: 89c8cae9a13225ec76b0a26954b6063332d76495
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91329672"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103009476"
 ---
 # <a name="quotas-and-limitations"></a>Квоты и ограничения
 

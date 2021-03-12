@@ -1,7 +1,7 @@
 ---
 title: H264 Multiple Bitrate 16x9 SD| Документация Майкрософт
 description: В этом разделе приводятся общие сведения о предустановленной задаче **H264 Single bitrate Multiple скоростью 16X9 SD** .
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 services: media-services
@@ -12,14 +12,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/19/2019
-ms.author: juliako
-ms.openlocfilehash: e9bb517af675c8ad6d5cac922afa6316aea714df
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: 498073ebaaf0015d84ce2ad90ca1b5c78accc4aa
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89257217"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103017381"
 ---
 # <a name="h264-multiple-bitrate-16x9-sd"></a>H264 Multiple Bitrate 16x9 SD
 

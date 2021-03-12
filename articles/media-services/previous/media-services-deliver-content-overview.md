@@ -2,20 +2,20 @@
 title: Доставка содержимого клиентам
 description: В этой статье представлен обзор доставки содержимого с помощью служб мультимедиа Azure.
 services: media-services
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 ms.assetid: 89ede54a-6a9c-4814-9858-dcfbb5f4fed5
 ms.service: media-services
 ms.workload: media
 ms.topic: article
-ms.date: 03/18/2019
-ms.author: juliako
-ms.openlocfilehash: 363bb5389eda8336d04b1ff457f8246e89a042d8
-ms.sourcegitcommit: 2c586a0fbec6968205f3dc2af20e89e01f1b74b5
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: 1ad89345a2779766fde4559758e61dff92023741
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92014398"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103016617"
 ---
 # <a name="deliver-content-to-customers"></a>Доставка содержимого клиентам
 
@@ -133,7 +133,7 @@ http: \/ /testendpoint-testaccount.Streaming.mediaservices.Windows.NET/fecebb23-
 
 Необходимо расшифровать все зашифрованные в хранилище ресурсы-контейнеры, которые требуется передать из исходной службы для поэтапной загрузки.
 
-## <a name="download"></a>Скачать
+## <a name="download"></a>Скачивание
 Для скачивания содержимого на клиентское устройство необходимо создать указатель SAS. Он предоставляет доступ к контейнеру службы хранилища Azure, в котором расположен ваш файл. Чтобы создать URL-адрес загрузки, необходимо вставить имя файла между узлом и подписью SAS.
 
 В следующем примере показан URL-адрес, основанный на типе указателя SAS.
@@ -154,7 +154,7 @@ http: \/ /testendpoint-testaccount.Streaming.mediaservices.Windows.NET/fecebb23-
 
 ## <a name="known-issues"></a>Известные проблемы
 ### <a name="changes-to-smooth-streaming-manifest-version"></a>Изменения в версии манифеста Smooth Streaming
-До выпуска набора исправлений в июле 2016 года дело обстояло так. Когда ресурсы-контейнеры, генерируемые стандартным кодировщиком мультимедиа, расширенным рабочим процессом кодировщика мультимедиа или устаревшим кодировщиком мультимедиа Azure, передавались в потоке с помощью динамической упаковки, выдавался манифест Smooth Streaming версии 2.0. В нем для длительностей фрагментов не использовались так называемые теги повтора (r-tag). Пример:
+До выпуска набора исправлений в июле 2016 года дело обстояло так. Когда ресурсы-контейнеры, генерируемые стандартным кодировщиком мультимедиа, расширенным рабочим процессом кодировщика мультимедиа или устаревшим кодировщиком мультимедиа Azure, передавались в потоке с помощью динамической упаковки, выдавался манифест Smooth Streaming версии 2.0. В нем для длительностей фрагментов не использовались так называемые теги повтора (r-tag). Пример.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -169,7 +169,7 @@ http: \/ /testendpoint-testaccount.Streaming.mediaservices.Windows.NET/fecebb23-
 </SmoothStreamingMedia>
 ```
 
-После выпуска набора исправлений в июле 2016 года создаваемый манифест Smooth Streaming соответствует версии 2.2, в которой для длительностей фрагментов используются теги повтора. Пример:
+После выпуска набора исправлений в июле 2016 года создаваемый манифест Smooth Streaming соответствует версии 2.2, в которой для длительностей фрагментов используются теги повтора. Пример.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

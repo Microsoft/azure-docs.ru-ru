@@ -3,7 +3,7 @@ title: Использование веб-перехватчиков Azure для
 description: Узнайте, как выполнять мониторинг уведомлений о заданиях служб мультимедиа с помощью веб-перехватчиков Azure. Пример кода написан на языке C# и использует пакет SDK служб мультимедиа для .NET.
 services: media-services
 documentationcenter: ''
-author: juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: a61fe157-81b1-45c1-89f2-224b7ef55869
@@ -12,15 +12,15 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/18/2019
-ms.author: juliako
+ms.date: 03/10/2021
+ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: e99d2c2676d05772106296d8b960dd55fd30501c
-ms.sourcegitcommit: 77afc94755db65a3ec107640069067172f55da67
+ms.openlocfilehash: 5ae1bdfeeffdb904ba80ed42919e4f51411871c3
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98696478"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103016158"
 ---
 # <a name="use-azure-webhooks-to-monitor-media-services-job-notifications-with-net"></a>Использование веб-перехватчиков Azure для наблюдения за уведомлениями о заданиях служб мультимедиа с использованием .NET
 
@@ -64,7 +64,7 @@ ms.locfileid: "98696478"
 
 Раздел [параметров приложения](media-services-dotnet-how-to-use-azure-functions.md#configure-function-app-settings) определяет параметры, используемые в веб-перехватчике, определенном в этой статье. Добавьте также в приложение параметры ниже. 
 
-|name|Определение|Пример| 
+|Имя|Определение|Пример| 
 |---|---|---|
 |SigningKey |Ключ подписи.| j0txf1f8msjytzvpe40nxbpxdcxtqcgxy0nt|
 |WebHookEndpoint | Адрес конечной точки объекта webhook. После создания функции веб-перехватчика скопируйте URL-адрес из ссылки **Получить URL-адрес функции**. | HTTPS: \/ /juliakofuncapp.azurewebsites.NET/API/Notification_Webhook_Function?Code=iN2phdrTnCxmvaKExFWOTulfnm4C71mMLIy8tzLr7Zvf6Z22HHIK5g = =.|

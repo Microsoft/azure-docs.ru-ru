@@ -9,28 +9,16 @@ ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 11/09/2020
 ms.custom: devx-track-js, devx-track-csharp
-ms.openlocfilehash: 1c2b608107beff2a4f34325f8a6e5be3a0551053
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 7e8d1b13dfd802df820bea4015e411dbb85540ba
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102051911"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103011431"
 ---
-# <a name="get-an-answer-with-the-generateanswer-api-and-metadata"></a>Получение ответа с помощью API и метаданных Женератеансвер
+# <a name="get-an-answer-with-the-generateanswer-api"></a>Получение ответа с помощью API Женератеансвер
 
 Чтобы получить прогнозируемый ответ на вопрос пользователя, используйте API Женератеансвер. При публикации базы знаний можно просмотреть сведения об использовании этого API на странице **Публикация** . Вы также можете настроить API для фильтрации ответов на основе тегов метаданных и проверить базу знаний из конечной точки с помощью параметра строки тестового запроса.
-
-QnA Maker позволяет добавлять метаданные в виде пар "ключ — значение" в свои пары вопросов и ответов. Затем эти сведения можно использовать для фильтрации результатов в пользовательских запросах, а также для хранения дополнительных сведений, которые можно использовать в дальнейших беседах. Дополнительные сведения см. в разделе [Knowledge base](../index.yml) (База знаний).
-
-<a name="qna-entity"></a>
-
-## <a name="store-questions-and-answers-with-a-qna-entity"></a>Хранение вопросов и ответов с помощью сущности QnA
-
-Важно понимать, как QnA Maker хранит данные вопроса и ответов. На рисунке ниже показана сущность QnA.
-
-![Иллюстрация сущности QnA](../media/qnamaker-how-to-metadata-usage/qna-entity.png)
-
-У каждой сущности QnA имеется уникальный постоянный идентификатор. Идентификатор можно использовать для внесения обновлений в определенную сущность QnA.
 
 <a name="generateanswer-api"></a>
 
@@ -45,7 +33,7 @@ QnA Maker позволяет добавлять метаданные в виде
 После публикации базы знаний либо с [портала QnA Maker](https://www.qnamaker.ai), либо с помощью [API](/rest/api/cognitiveservices/qnamaker/knowledgebase/publish)можно получить сведения о конечной точке женератеансвер.
 
 Вот как это можно сделать.
-1. Выполните вход на странице [https://www.qnamaker.ai](https://www.qnamaker.ai).
+1. Войдите на портал [https://www.qnamaker.ai](https://www.qnamaker.ai).
 1. В окне **Мои базы знаний** выберите **Просмотреть код** для своей базы знаний.
     ![Снимок экрана с базами знаний](../media/qnamaker-how-to-metadata-usage/my-knowledge-bases.png)
 1. Получите сведения о конечной точке GenerateAnswer.
@@ -134,6 +122,21 @@ https://{QnA-Maker-endpoint}/knowledgebases/{knowledge-base-ID}/generateAnswer
 
 Предыдущий формат JSON ответил на ответ с показателем 38,5%.
 
+## <a name="match-questions-only-by-text"></a>Сопоставлять только вопросы по тексту
+
+По умолчанию QnA Maker выполняет поиск по вопросам и ответам. Если вы хотите выполнять поиск только по вопросам, используйте `RankerType=QuestionOnly` в тексте сообщения запроса женератеансвер.
+
+Можно выполнять поиск в опубликованной базе знаний, с помощью `isTest=false` или в тесте базы знаний с помощью `isTest=true` .
+
+```json
+{
+  "question": "Hi",
+  "top": 30,
+  "isTest": true,
+  "RankerType":"QuestionOnly"
+}
+
+```
 ## <a name="use-qna-maker-with-a-bot-in-c"></a>Использование QnA Maker с программой-роботом в C #
 
 Платформа Bot предоставляет доступ к свойствам QnA Maker с помощью API- [интерфейса «ответ](/dotnet/api/microsoft.bot.builder.ai.qna.qnamaker.getanswersasync#Microsoft_Bot_Builder_AI_QnA_QnAMaker_GetAnswersAsync_Microsoft_Bot_Builder_ITurnContext_Microsoft_Bot_Builder_AI_QnA_QnAMakerOptions_System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_Double__)»:
@@ -171,108 +174,6 @@ var qnaResults = await this.qnaMaker.getAnswers(stepContext.context, qnaMakerOpt
 
 Предыдущий JSON запросил только ответы, которые имеют пороговую оценку 30% или выше.
 
-<a name="metadata-example"></a>
-
-## <a name="use-metadata-to-filter-answers-by-custom-metadata-tags"></a>Использование метаданных для фильтрации ответов по тегам пользовательских метаданных
-
-Добавление метаданных позволяет фильтровать ответы по этим тегам метаданных. Добавьте столбец метаданных из меню **Параметры представления** . Добавьте метаданные в базу знаний, щелкнув значок метаданных, **+** чтобы добавить пару метаданных. Эта пара состоит из одного ключа и одного значения.
-
-![Снимок экрана: Добавление метаданных](../media/qnamaker-how-to-metadata-usage/add-metadata.png)
-
-<a name="filter-results-with-strictfilters-for-metadata-tags"></a>
-
-## <a name="filter-results-with-strictfilters-for-metadata-tags"></a>Фильтрация результатов с помощью strictFilters по тегам метаданных
-
-Примите во внимание вопрос пользователя "когда закроется это отель?", где предполагается, что цель предполагается для ресторана "сообразительного".
-
-Поскольку результаты требуются только для ресторана "сообразительного", можно установить фильтр в вызове Женератеансвер для метаданных "имя ресторана". Это показано в следующем примере:
-
-```json
-{
-    "question": "When does this hotel close?",
-    "top": 1,
-    "strictFilters": [ { "name": "restaurant", "value": "paradise"}]
-}
-```
-
-### <a name="logical-and-by-default"></a>Логическое и по умолчанию
-
-Чтобы объединить несколько фильтров метаданных в запросе, добавьте фильтры дополнительных метаданных в массив `strictFilters` Свойства. По умолчанию значения логически объединены (и). Логическое сочетание требует, чтобы все фильтры совпадали с парами QnA, чтобы пара возвращалась в ответе.
-
-Это эквивалентно использованию `strictFiltersCompoundOperationType` свойства со значением `AND` .
-
-### <a name="logical-or-using-strictfilterscompoundoperationtype-property"></a>Логическое или с использованием свойства Стриктфилтерскомпаундоператионтипе
-
-При объединении нескольких фильтров метаданных, если важен только один или несколько соответствующих фильтров, используйте `strictFiltersCompoundOperationType` свойство со значением `OR` .
-
-Это позволяет базе знаний возвращать ответы при совпадении фильтра, но не возвращает ответы, не имеющие метаданных.
-
-```json
-{
-    "question": "When do facilities in this hotel close?",
-    "top": 1,
-    "strictFilters": [
-      { "name": "type","value": "restaurant"},
-      { "name": "type", "value": "bar"},
-      { "name": "type", "value": "poolbar"}
-    ],
-    "strictFiltersCompoundOperationType": "OR"
-}
-```
-
-### <a name="metadata-examples-in-quickstarts"></a>Примеры метаданных в кратком руководстве
-
-Дополнительные сведения о метаданных см. в кратком руководстве по QnA Maker портале для метаданных.
-* [Разработка: добавление метаданных в пару "вопрос-ответ"](../quickstarts/add-question-metadata-portal.md#add-metadata-to-filter-the-answers)
-* [Прогнозирование запросов: фильтрация ответов по метаданным](../quickstarts/get-answer-from-knowledge-base-using-url-tool.md)
-
-<a name="keep-context"></a>
-
-## <a name="use-question-and-answer-results-to-keep-conversation-context"></a>Использование результатов вопросов и ответов для сохранения контекста беседы
-
-Ответ на Женератеансвер содержит сведения о метаданных соответствующей пары вопросов и ответов. Эти сведения можно использовать в клиентском приложении для хранения контекста предыдущего диалога, который будет использоваться в последующих диалогах.
-
-```json
-{
-    "answers": [
-        {
-            "questions": [
-                "What is the closing time?"
-            ],
-            "answer": "10.30 PM",
-            "score": 100,
-            "id": 1,
-            "source": "Editorial",
-            "metadata": [
-                {
-                    "name": "restaurant",
-                    "value": "paradise"
-                },
-                {
-                    "name": "location",
-                    "value": "secunderabad"
-                }
-            ]
-        }
-    ]
-}
-```
-
-## <a name="match-questions-only-by-text"></a>Сопоставлять только вопросы по тексту
-
-По умолчанию QnA Maker выполняет поиск по вопросам и ответам. Если вы хотите выполнять поиск только по вопросам, используйте `RankerType=QuestionOnly` в тексте сообщения запроса женератеансвер.
-
-Можно выполнять поиск в опубликованной базе знаний, с помощью `isTest=false` или в тесте базы знаний с помощью `isTest=true` .
-
-```json
-{
-  "question": "Hi",
-  "top": 30,
-  "isTest": true,
-  "RankerType":"QuestionOnly"
-}
-```
-
 ## <a name="return-precise-answers"></a>Возврат точных ответов
 
 ### <a name="generate-answer-api"></a>Создать API ответов 
@@ -307,7 +208,7 @@ var qnaResults = await this.qnaMaker.getAnswers(stepContext.context, qnaMakerOpt
 
 |настройка отображения;|енаблепреЦисеансвер|дисплайпреЦисеансверонли|
 |:--|--|--|
-|Только точные ответы|true|true|
+|Только точные ответы|Да|true|
 |Только длинные ответы|false|false|
 |Как длинные, так и точные ответы|true|false|
 

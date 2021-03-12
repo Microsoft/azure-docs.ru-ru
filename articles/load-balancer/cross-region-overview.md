@@ -13,12 +13,12 @@ ms.workload: infrastructure-services
 ms.date: 09/22/2020
 ms.author: allensu
 ms.custom: references_regions
-ms.openlocfilehash: b0e51d11797bc5767f19b25a92a2d29a66ea1bb2
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 1d435c3b15433b7fec00d5dfa80970c04323e635
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102176728"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103199368"
 ---
 # <a name="cross-region-load-balancer-preview"></a>Балансировщик нагрузки между регионами (Предварительная версия)
 
@@ -100,13 +100,13 @@ Azure Load Balancer (цен. категория "Стандартный") под
 * восточная часть США 2
 * Западная часть США
 * Западная Европа
-* Юго-Восточная Азия
+* Southeast Asia
 * Центральная часть США
 * Северная Европа
 * Восточная Азия
 
 > [!NOTE]
-> Вы можете развернуть подсистему балансировки нагрузки между регионами в одном из 8 регионов выше.
+> Вы можете развернуть только подсистему балансировки нагрузки между регионами в одном из семи регионов выше.
 
 **Область участника** — это место, где доступен глобальный общедоступный IP-адрес балансировщика нагрузки. 
 
@@ -124,7 +124,7 @@ Azure Load Balancer (цен. категория "Стандартный") под
 * Центрально-южная часть США 
 * Западная часть США 2 
 * южная часть Соединенного Королевства 
-* Юго-Восточная Азия 
+* Southeast Asia 
 * Центрально-северная часть США 
 * Japan East 
 * Восточная Азия 

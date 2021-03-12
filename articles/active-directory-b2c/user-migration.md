@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 02/14/2020
+ms.date: 03/11/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 34bc50f5f95725b59c0d2b30b529e12abb6aa7fa
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: d2d4a61f653c5bedb31223d2eb3d37b92a076821
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98661159"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103010173"
 ---
-# <a name="migrate-users-to-azure-ad-b2c"></a>Миграция пользователей в Azure AD B2C
+# <a name="migrate-users-to-azure-ad-b2c"></a>Миграция пользователей в Azure AD B2C
 
 Миграция с другого поставщика удостоверений на Azure Active Directory B2C (Azure AD B2C) также может потребовать миграции существующих учетных записей пользователей. Здесь обсуждаются два метода миграции: *Предварительная миграция* и *Простая миграция*. При использовании любого из этих подходов необходимо написать приложение или сценарий, который использует [Microsoft Graph API](microsoft-graph-operations.md) для создания учетных записей пользователей в Azure AD B2C.
 
@@ -50,7 +50,7 @@ ms.locfileid: "98661159"
 ### <a name="phase-1-pre-migration"></a>Этап 1. Предварительная миграция
 
 1. Приложение для миграции считывает учетные записи пользователей из старого поставщика удостоверений.
-1. Приложение для миграции создает соответствующие учетные записи пользователей в каталоге Azure AD B2C, но *не устанавливает пароли*.
+1. Приложение для миграции создает соответствующие учетные записи пользователей в каталоге Azure AD B2C, но *устанавливает случайные пароли* , которые вы создаете.
 
 ### <a name="phase-2-set-credentials"></a>Этап 2. Настройка учетных данных
 
@@ -99,7 +99,7 @@ ms.locfileid: "98661159"
 
 Если переносимые учетные записи имеют более слабую стойкость пароля, чем [усиленный пароль](../active-directory/authentication/concept-sspr-policy.md) , принудительно установленный Azure AD B2C, можно отключить требование надежного пароля. Дополнительные сведения см. в разделе [свойство политики паролей](user-profile-attributes.md#password-policy-attribute).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В репозитории [Azure-AD-B2C/User-migrations](https://github.com/azure-ad-b2c/user-migration) на сайте GitHub содержится простой пример пользовательской политики миграции и REST API пример кода:
 

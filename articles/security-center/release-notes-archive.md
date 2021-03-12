@@ -7,12 +7,12 @@ ms.service: security-center
 ms.topic: reference
 ms.date: 03/04/2021
 ms.author: memildin
-ms.openlocfilehash: 3766f29f26a6b2ffeb385cffc971b1ac7a1556cb
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: a00c11924d2c0f6860c297ab7e58da21da5e1975
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102182582"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102634708"
 ---
 # <a name="archive-for-whats-new-in-azure-security-center"></a>Архив новых возможностей Центра безопасности Azure
 
@@ -759,13 +759,13 @@ Azure Defender включает средства сканирования для
 
 См. дополнительные сведения о [рекомендациях по удостоверениям и доступу](recommendations-reference.md#recs-identityandaccess).
 
-См. дополнительные сведения о [мониторинге удостоверений и доступа](security-center-identity-access.md).
+Дополнительные сведения об [управлении применением многофакторной проверки подлинности (MFA) в подписках](security-center-identity-access.md).
 
 
 
 ## <a name="march-2020"></a>Март 2020 г.
 
-Обновления в марте включают:
+В марте добавлены следующие обновления:
 
 - [Автоматизация рабочих процессов стала общедоступной](#workflow-automation-is-now-generally-available)
 - [Интеграция Центра безопасности Azure с Windows Admin Center](#integration-of-azure-security-center-with-windows-admin-center)

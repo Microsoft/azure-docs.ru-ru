@@ -11,14 +11,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: how-to
-ms.date: 08/31/2020
+ms.date: 03/10/2021
 ms.author: inhenkel
-ms.openlocfilehash: 00808c25ac84da852cce6169fb210767ee2b56cf
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 2f55d1dcc3364f119faab0c728f6e3b7f5ecbb06
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89265887"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102614944"
 ---
 # <a name="get-credentials-to-access-media-services-api"></a>Получение учетных данных для доступа к API служб мультимедиа
 
@@ -37,7 +37,7 @@ ms.locfileid: "89265887"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Учетная запись Azure. Если у вас нет учетной записи Azure, начните с получения [бесплатной пробной версии](https://azure.microsoft.com/pricing/free-trial/). 
+- Учетная запись Azure. Если у вас нет учетной записи Azure, начните с получения [бесплатной пробной версии](https://azure.microsoft.com/pricing/free-trial/).
 - Учетная запись служб мультимедиа. Дополнительные сведения см. в статье [Создание учетной записи служб мультимедиа Azure с помощью портала Azure](create-account-howto.md).
 
 ## <a name="portal"></a>[Портал](#tab/portal/)
@@ -47,8 +47,8 @@ ms.locfileid: "89265887"
 Страница **доступа к API** позволяет выбрать метод проверки подлинности, который будет использоваться для подключения к API. На этой странице также приведены значения, необходимые для подключения к API.
 
 1. На [портале Azure](https://portal.azure.com/) выберите свою учетную запись служб мультимедиа.
-2. Выберите колонку **доступ к API (Новая)** на панели навигации слева.
-3. В разделе **Подключение к API службы мультимедиа**выберите версию API служб мультимедиа, к которой необходимо подключиться (V3 — последняя версия службы).
+2. Выберите колонку **доступ через API** на левой панели навигации.
+3. В разделе **Подключение к API службы мультимедиа** выберите версию API служб мультимедиа, к которой необходимо подключиться (V3 — последняя версия службы).
 
 ### <a name="service-principal-authentication--recommended"></a>Проверка подлинности на основе участника-службы (рекомендуется)
 

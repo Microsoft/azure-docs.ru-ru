@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: nolavime
 ms.author: v-jysur
 ms.date: 05/12/2020
-ms.openlocfilehash: 046fcb9d7473de5666b3acb25cbcaa1f9549e679
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 40e737a1ec5fb34cd22a08925143a100d36cdc6b
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102039501"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103009323"
 ---
 # <a name="connect-itsm-productsservices-with-it-service-management-connector"></a>Подключение продуктов и служб ITSM с помощью соединителя управления ИТ-службами
 В этой статье описывается, как настроить в Log Analytics связь между продуктами или службами ITSM и соединителем управления ИТ-службами (ITSM), чтобы централизованно управлять рабочими элементами ITSM. Дополнительные сведения об ITSMC см. в [этом обзоре](./itsmc-overview.md).
@@ -24,6 +24,9 @@ ms.locfileid: "102039501"
 
 > [!NOTE]
 > Мы предлагаем нашим клиентам Cherwell и Provance использовать [действие веб-перехватчика](./action-groups.md#webhook) для Cherwell и Provance конечной точки в качестве другого решения интеграции.
+
+## <a name="ip-ranges-for-itsm-partners-connections"></a>Диапазоны IP-адресов для подключений партнеров ITSM
+Чтобы получить список IP-адресов ITSM, чтобы разрешить подключения ITSM от партнеров ITSM Tools, мы рекомендуем использовать для перечисления всего общедоступного диапазона IP-адреса региона Azure, в котором находится рабочая область LogAnalytics. [подробные сведения](https://www.microsoft.com/en-us/download/details.aspx?id=56519) Для регионов ЕУС/ВЕУ/EUS2/WUS2/Юго-Центральный регион США клиент может вывести только тег сети ActionGroup.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

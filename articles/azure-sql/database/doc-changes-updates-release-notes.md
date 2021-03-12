@@ -9,14 +9,14 @@ ms.subservice: service
 ms.custom: sqldbrb=2
 ms.devlang: ''
 ms.topic: conceptual
-ms.date: 06/17/2020
+ms.date: 03/10/2021
 ms.author: sstein
-ms.openlocfilehash: 86687e8259e7abcb9ff0e97f8cb75d96c0abfca8
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 0ddd2c96be3513d253537cefd5b9eb83da2b3c12
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102042510"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102634844"
 ---
 # <a name="whats-new-in-azure-sql-database--sql-managed-instance"></a>Что нового в базе данных SQL Azure & Управляемый экземпляр SQL?
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "102042510"
 |**База данных SQL Azure**|*Единая база* данных SQL Azure| Если явно не указано иное, имя продукта в базе данных SQL Azure включает как отдельные базы данных, так и базы данных, развернутые в эластичном пуле. |
 |**База данных SQL Azure**|*Эластичный пул* базы данных SQL Azure| Если явно не указано иное, имя продукта в базе данных SQL Azure включает как отдельные базы данных, так и базы данных, развернутые в эластичном пуле.  |
 |**База данных SQL Azure** |База данных SQL Azure | Несмотря на то что термин остается прежним, он применяется только к развертыванию одиночной базы данных и пула эластичных БД и не включает управляемый экземпляр. |
-| **Azure SQL;**| Н/Д | Это относится к семейству SQL Server продуктов ядра СУБД, доступных в Azure: база данных SQL Azure, Управляемый экземпляр SQL Azure и SQL Server на виртуальных машинах Azure. | 
+| **Azure SQL;**| Недоступно | Это относится к семейству SQL Server продуктов ядра СУБД, доступных в Azure: база данных SQL Azure, Управляемый экземпляр SQL Azure и SQL Server на виртуальных машинах Azure. | 
 
 ## <a name="features-in-public-preview"></a>Возможности общедоступной предварительной версии
 
@@ -50,13 +50,10 @@ ms.locfileid: "102042510"
 
 | Компонент | Сведения |
 | ---| --- |
-| Ускоренное восстановление базы данных с отдельными базами данных и эластичными пулами | Дополнительные сведения см. в разделе [Ускорение восстановления базы данных](../accelerated-database-recovery.md).|
-| Обнаружение и классификация данных  |Дополнительные сведения см. в разделе [база данных SQL Azure и обнаружение данных Azure синапсе Analytics & классификация](data-discovery-and-classification-overview.md).|
 | Задания обработки эластичных баз данных (Предварительная версия) | Дополнительные сведения см. в статье [Создание и настройка эластичных заданий и управление ими](elastic-jobs-overview.md). |
 | Эластичные запросы | Дополнительные сведения см. в разделе [Общие сведения о эластичных запросах](elastic-query-overview.md). |
 | Эластичные транзакции | [Распределенные транзакции между облачными базами данных](elastic-transactions-overview.md). |
 | Редактор запросов в портал Azure |Дополнительные сведения см. в разделе [Использование редактора запросов SQL портал Azure для подключения и запроса данных](connect-query-portal.md).|
-| Службы R/машинное обучение с отдельными базами данных и эластичными пулами |Дополнительные сведения см. [в разделе службы машинного обучения в базе данных SQL Azure](/sql/advanced-analytics/what-s-new-in-sql-server-machine-learning-services?view=sql-server-2017#machine-learning-services-in-azure-sql-database).|
 |Аналитика SQL|Дополнительные сведения см. в разделе [аналитика SQL Azure](../../azure-monitor/insights/azure-sql.md).|
 | &nbsp; |
 
@@ -66,7 +63,7 @@ ms.locfileid: "102042510"
 | ---| --- |
 | <a href="/azure/azure-sql/database/elastic-transactions-overview">Распределенные транзакции</a> | Распределенные транзакции между управляемыми экземплярами. |
 | <a href="/azure/sql-database/sql-database-instance-pools">Пулы экземпляров</a> | Удобный и экономичный способ переноса небольших экземпляров SQL в облако. |
-| <a href="/en-gb/sql/t-sql/statements/create-login-transact-sql">Участники сервера Azure AD уровня экземпляра (имена для входа)</a> | Создайте имена для входа на уровне экземпляра, используя инструкцию <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current">создания имени входа из внешнего поставщика</a> . |
+| <a href="/en-gb/sql/t-sql/statements/create-login-transact-sql">Участники сервера Azure AD уровня экземпляра (имена для входа)</a> | Создайте имена для входа на уровне экземпляра, используя инструкцию <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true">создания имени входа из внешнего поставщика</a> . |
 | [Репликация транзакций](../managed-instance/replication-transactional-overview.md) | Репликация изменений из таблиц в другие базы данных в SQL Управляемый экземпляр, базе данных SQL или SQL Server. Или обновлять таблицы при изменении некоторых строк в других экземплярах SQL Управляемый экземпляр или SQL Server. Дополнительные сведения см. [в статье Настройка репликации в Azure SQL управляемый экземпляр](../managed-instance/replication-between-two-instances-configure-tutorial.md). |
 | Обнаружение угроз |Дополнительные сведения см. [в статье Настройка обнаружения угроз в Azure SQL управляемый экземпляр](../managed-instance/threat-detection-configure.md).|
 | Долгосрочное хранение резервных копий | Дополнительные сведения см. в статье [Настройка долгосрочного резервного копирования в Azure SQL управляемый экземпляр](../managed-instance/long-term-backup-retention-configure.md), которая в настоящее время ограничена общедоступной предварительной версией. | 
@@ -101,10 +98,10 @@ ms.locfileid: "102042510"
 |[При использовании параметра процедура sp_send_dbmail может выполнить неустранимую ошибку @query](#procedure-sp_send_dbmail-may-transiently-fail-when--parameter-is-used)|Янв 2021|Есть обходной путь||
 |[Распределенные транзакции могут выполняться после удаления Управляемый экземпляр из группы доверия сервера](#distributed-transactions-can-be-executed-after-removing-managed-instance-from-server-trust-group)|Октябрь 2020|Есть обходной путь||
 |[Распределенные транзакции не могут быть выполнены после Управляемый экземпляр операции масштабирования](#distributed-transactions-cannot-be-executed-after-managed-instance-scaling-operation)|Октябрь 2020|Есть обходной путь||
-|[BULK INSERT](/sql/t-sql/statements/bulk-insert-transact-sql) / [Функция OPENROWSET](/sql/t-sql/functions/openrowset-transact-sql?view=sql-server-ver15) в Azure SQL и `BACKUP` / `RESTORE` инструкция в управляемый экземпляр не может использовать удостоверение управления Azure AD для проверки подлинности в службе хранилища Azure|Sep 2020|Есть обходной путь||
+|[BULK INSERT](/sql/t-sql/statements/bulk-insert-transact-sql) / [Функция OPENROWSET](/sql/t-sql/functions/openrowset-transact-sql) в Azure SQL и `BACKUP` / `RESTORE` инструкция в управляемый экземпляр не может использовать удостоверение управления Azure AD для проверки подлинности в службе хранилища Azure|Sep 2020|Есть обходной путь||
 |[Субъект-служба не может получить доступ к Azure AD и AKV](#service-principal-cannot-access-azure-ad-and-akv)|Авг 2020|Есть обходной путь||
-|[Восстановление резервной копии вручную без КОНТРОЛЬной суммы может завершиться ошибкой](#restoring-manual-backup-without-checksum-might-fail)|Май 2020 г.|"Разрешено"|Июнь 2020 г.|
-|[Агент перестает отвечать при изменении, отключении или включении существующих заданий](#agent-becomes-unresponsive-upon-modifying-disabling-or-enabling-existing-jobs)|Май 2020 г.|"Разрешено"|Июнь 2020 г.|
+|[Восстановление резервной копии вручную без КОНТРОЛЬной суммы может завершиться ошибкой](#restoring-manual-backup-without-checksum-might-fail)|Май 2020 г.|"Разрешено"|Июнь 2020 г.|
+|[Агент перестает отвечать при изменении, отключении или включении существующих заданий](#agent-becomes-unresponsive-upon-modifying-disabling-or-enabling-existing-jobs)|Май 2020 г.|"Разрешено"|Июнь 2020 г.|
 |[Разрешения для группы ресурсов, не примененные к SQL Управляемый экземпляр](#permissions-on-resource-group-not-applied-to-sql-managed-instance)|Фев 2020|"Разрешено"|2020 ноября|
 |[Ограничение отработки отказа вручную с помощью портала для групп отработки отказа](#limitation-of-manual-failover-via-portal-for-failover-groups)|Янв 2020|Есть обходной путь||
 |[Ролям агента SQL требуются явные разрешения EXECUTE для имен для входа, отличных от системного администратора](#in-memory-oltp-memory-limits-are-not-applied)|Dec 2019|Есть обходной путь||
@@ -174,7 +171,7 @@ GO
 BULK INSERT Sales.Invoices FROM 'inv-2017-12-08.csv' WITH (DATA_SOURCE = 'MyAzureBlobStorage');
 ```
 
-**Обходное решение**. Используйте [подписанный URL для проверки подлинности в хранилище](/sql/t-sql/statements/bulk-insert-transact-sql?view=sql-server-ver15#f-importing-data-from-a-file-in-azure-blob-storage).
+**Обходное решение**. Используйте [подписанный URL для проверки подлинности в хранилище](/sql/t-sql/statements/bulk-insert-transact-sql#f-importing-data-from-a-file-in-azure-blob-storage).
 
 ### <a name="service-principal-cannot-access-azure-ad-and-akv"></a>Субъект-служба не может получить доступ к Azure AD и AKV
 

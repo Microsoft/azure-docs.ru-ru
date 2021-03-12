@@ -8,16 +8,23 @@ ms.date: 6/30/2020
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 13f78691a3652cc82e261f807c690c04cebec3b4
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 9356da9516ea17243be8e0e5519ec4b19e06db8a
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102175522"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200873"
 ---
 # <a name="create-and-provision-an-iot-edge-device-with-a-tpm-on-linux"></a>Создание и предоставление устройства IoT Edge с помощью доверенного платформенного модуля в Linux
 
+[!INCLUDE [iot-edge-version-201806](../../includes/iot-edge-version-201806.md)]
+
 В этой статье показано, как протестировать автоматическую подготовку на устройстве Linux IoT Edge с помощью доверенный платформенный модуль (TPM) (TPM). Вы можете автоматически подготовить Azure IoT Edge устройства с помощью [службы подготовки устройств](../iot-dps/index.yml). При необходимости ознакомьтесь с обзором [процесса подготовки](../iot-dps/about-iot-dps.md#provisioning-process), прежде чем продолжить.
+
+:::moniker range=">=iotedge-2020-11"
+> [!NOTE]
+> В настоящее время Автоматическая подготовка с использованием проверки подлинности TPM не поддерживается в IoT Edge версии 1,2.
+:::moniker-end
 
 Это следующие задачи:
 

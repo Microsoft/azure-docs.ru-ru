@@ -10,14 +10,16 @@ services: iot-edge
 ms.custom:
 - amqp
 - contperf-fy21q1
-ms.openlocfilehash: 22cea6a641a03d60565e62e64ccdeef72437d476
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 888761bb976b9d7a87211a77cb6504a44f108bbd
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102046148"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200060"
 ---
 # <a name="configure-an-iot-edge-device-to-communicate-through-a-proxy-server"></a>Настройка устройства IoT Edge для обмена данными через прокси-сервер
+
+[!INCLUDE [iot-edge-version-201806-or-202011](../../includes/iot-edge-version-201806-or-202011.md)]
 
 Устройства IoT Edge отправляют HTTPS-запросы для обмена данными с центром IoT. Если устройство подключено к сети, которая использует прокси-сервер, необходимо настроить среду выполнения IoT Edge для обмена данными через сервер. Прокси-серверы могут также влиять на отдельные модули IoT Edge, если они отправляют HTTP- или HTTPS-запросы, которые невозможно направить через центр IoT Edge.
 

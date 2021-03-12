@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.reviewer: veyalla
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: d968fb066e68fe1bb6986c63ce750c5de5c98cf9
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.openlocfilehash: 0b7013979199eefa873a651d99e87dc8b2c47856
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100633184"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103201595"
 ---
 # <a name="monitor-module-twins"></a>Мониторинг двойников модулей
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Модуль двойников в центре Интернета вещей Azure обеспечивает мониторинг подключения и работоспособности IoT Edge развертываний. Модуль двойников хранит полезную информацию о производительности работающих модулей в центре Интернета вещей. [Агент IOT Edge](iot-edge-runtime.md#iot-edge-agent) и модули среды выполнения [центра IOT Edge](iot-edge-runtime.md#iot-edge-hub) , каждый из которых поддерживает свой модуль `$edgeAgent` двойников `$edgeHub` и соответственно:
 
