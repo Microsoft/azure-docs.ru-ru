@@ -5,17 +5,17 @@ ms.topic: include
 ms.date: 11/27/2020
 ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: d09d69db33cadee1b5a214e9cb2f09a508f37242
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 01e62685fa73a7f547ef5246b28fdfdf659e7afa
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102431857"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102623401"
 ---
 |Язык                                 |1.x         |2.x| 3.x |
 |-----------------------------------------|------------|---| --- |
 |[C#](../articles/azure-functions/functions-reference-csharp.md)|Общедоступная версия (.NET Framework 4.7)|Общедоступная версия (.NET Core 2.2<sup>1</sup>)| Общедоступная версия (.NET Core 3.1)<br/>[Предварительная версия (.NET 5.0)](../articles/azure-functions/dotnet-isolated-process-guide.md) |
-|[JavaScript](../articles/azure-functions/functions-reference-node.md#node-version)|Общедоступная версия (Node 6)|Общедоступная версия (Node 10 и Node 8)| Общедоступная версия (Node 12 и Node 10)<br />Предварительная версия (Node 14) |
+|[JavaScript](../articles/azure-functions/functions-reference-node.md#node-version)|Общедоступная версия (Node 6)|Общедоступная версия (Node 10 и Node 8)| Общедоступная версия (Node 14, 12 и 10) |
 |[F#](../articles/azure-functions/functions-reference-fsharp.md)|Общедоступная версия (.NET Framework 4.7)|Общедоступная версия (.NET Core 2.2<sup>1</sup>)| Общедоступная версия (.NET Core 3.1) |
 |[Java](../articles/azure-functions/functions-reference-java.md)|Недоступно|Общедоступная версия (Java 8)| Общедоступная версия (Java 11 и Java 8)|
 |[PowerShell](../articles/azure-functions/functions-reference-powershell.md) |Недоступно|Общедоступная версия (PowerShell Core 6)| Общедоступная версия (PowerShell 7 и Core 6)|

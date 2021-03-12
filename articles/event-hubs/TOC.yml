@@ -268,23 +268,23 @@
             - name: Переход с azure-eventhubs на azure-messaging-eventhubs
               href: 'https://github.com/Azure/azure-sdk-for-java/blob/master/sdk/eventhubs/azure-messaging-eventhubs/migration-guide.md'
             - name: azure-messaging-eventhubs (последняя версия)
-              href: /java/api/overview/azure/messaging-eventhubs-readme?view=azure-java-stable
+              href: /java/api/overview/azure/messaging-eventhubs-readme
             - name: azure-eventhubs (устаревшая версия)
               href: /java/api/overview/azure/eventhubs/client?view=azure-java-legacy
         - name: Библиотека управления
-          href: /java/api/com.microsoft.azure.management.eventhub?view=azure-java-stable
+          href: /java/api/com.microsoft.azure.management.eventhub
     - name: Python
       items:
         - name: Клиентская библиотека
-          href: /python/api/overview/azure/eventhub-readme?view=azure-python
+          href: /python/api/overview/azure/eventhub-readme
         - name: Библиотека управления
-          href: /python/api/overview/azure/event-hub?view=azure-python
+          href: /python/api/overview/azure/event-hub
     - name: JavaScript
       items:
         - name: Клиентская библиотека
-          href: /javascript/api/overview/azure/event-hubs-readme?view=azure-node-latest
+          href: /javascript/api/overview/azure/event-hubs-readme
         - name: Библиотека управления
-          href: /javascript/api/@azure/arm-eventhub/?view=azure-node-latest
+          href: /javascript/api/@azure/arm-eventhub/
     - name: Go
       items:
         - name: Клиентская библиотека

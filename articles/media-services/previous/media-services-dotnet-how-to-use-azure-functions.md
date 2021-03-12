@@ -3,7 +3,7 @@ title: Разработка Функций Azure с помощью служб м
 description: В этой статье описывается разработка Функций Azure с помощью служб мультимедиа на портале Azure.
 services: media-services
 documentationcenter: ''
-author: juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: 51bdcb01-1846-4e1f-bd90-70020ab471b0
@@ -12,15 +12,15 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/18/2019
-ms.author: juliako
+ms.date: 03/10/2021
+ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 520ad8f68e0f995ea05456ebcf6de4c1ba3f9418
-ms.sourcegitcommit: 2e9643d74eb9e1357bc7c6b2bca14dbdd9faa436
+ms.openlocfilehash: ef8e3a2e733247f713fe0240cb8ef6069803fcb7
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96030311"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103013964"
 ---
 # <a name="develop-azure-functions-with-media-services"></a>Разработка Функций Azure с помощью служб мультимедиа
 
@@ -337,13 +337,13 @@ public static async Task<IAsset> CreateAssetFromBlobAsync(CloudBlockBlob blob, s
 
 1. Выберите учетную запись хранилища, которую вы указали в переменной среды **StorageConnection**.
 2. Щелкните **BLOB-объекты**.
-3. Щелкните **+ Container** (+ Контейнер). Введите имя для **входных данных** контейнера.
+3. Щелкните **+ Container** (+ Контейнер). Введите имя для **входных данных** контейнера.
 4. Щелкните **Отправить** и найдите MP4-файл, который требуется отправить.
 
 >[!NOTE]
 > Если используется триггер BLOB-объекта в плане потребления, то после того как приложение-функция стало неактивным, обработка новых BLOB-объектов может осуществляться с задержкой до 10 минут. После запуска приложения-функции большие двоичные объекты обрабатываются немедленно. Дополнительные сведения см. в статье о [привязках и триггерах хранилища BLOB-объектов](../../azure-functions/functions-bindings-storage-blob.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 На этом этапе вы готовы начать разработку приложения служб мультимедиа. 
  

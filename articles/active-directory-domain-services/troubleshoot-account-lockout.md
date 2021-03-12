@@ -10,12 +10,12 @@ ms.workload: identity
 ms.topic: troubleshooting
 ms.date: 07/06/2020
 ms.author: justinha
-ms.openlocfilehash: 7967347fa63c657ba6211328bdd1d55512358521
-ms.sourcegitcommit: 8192034867ee1fd3925c4a48d890f140ca3918ce
+ms.openlocfilehash: 3341f290a5a5bb169b6e70ea22459a2afafedbbc
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96618779"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103198957"
 ---
 # <a name="troubleshoot-account-lockout-problems-with-an-azure-active-directory-domain-services-managed-domain"></a>Устранение неполадок с блокировкой учетных записей с помощью управляемого домена доменных служб Azure Active Directory
 
@@ -83,6 +83,23 @@ AADDomainServicesAccountManagement
 | where OperationName has "4740"
 | sort by TimeGenerated asc
 ```
+
+**Примечание**
+
+Сведения о событиях 4776 и 4740 для "исходной рабочей станции:" пусты. Это связано с тем, что при сетевом входе через некоторые другие устройства произошли неверные пароли.
+Например, если у вас есть сервер RADIUS, который может перенаправлять проверку подлинности в доменные службы AAD. Чтобы убедиться, что серверное подключение RDP к контроллеру домена настроено, настройте журналы Netlogon.
+
+03/04 19:07:29 [вход] [10752] Contoso: Самлогон: транзитный сетевой вход в Контосо\нагаппан.Вираппан из (через LOB11-RADIUS) 
+
+03/04 19:07:29 [вход] [10752] Contoso: Самлогон: транзитный сетевой вход в Контосо\нагаппан.Вираппан из (через LOB11-RADIUS) возвращает 0xC000006A
+
+03/04 19:07:35 [вход] [10753] Contoso: Самлогон: транзитный сетевой вход в Контосо\нагаппан.Вираппан из (через LOB11-RADIUS) 
+
+03/04 19:07:35 [вход] [10753] Contoso: Самлогон: транзитный сетевой вход в Контосо\нагаппан.Вираппан из (через LOB11-RADIUS) возвращает 0xC000006A
+
+Включите RDP для контроллеров домена в NSG to серверной части, чтобы настроить запись диагностики (т. е. Netlogon) https://docs.microsoft.com/azure/active-directory-domain-services/alert-nsg#inbound-security-rules . Если вы уже изменили NSG по умолчанию, выполните пслет способ включения https://docs.microsoft.com/azure/active-directory-domain-services/network-considerations#port-3389---management-using-remote-desktop
+
+Включение журнала Netlogon на любом сервере https://docs.microsoft.com/troubleshoot/windows-client/windows-security/enable-debug-logging-netlogon-service
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

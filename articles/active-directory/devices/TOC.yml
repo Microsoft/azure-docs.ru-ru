@@ -80,7 +80,7 @@
     - name: API-интерфейсы Graph
       items:
         - name: API удостоверений устройств
-          href: /graph/api/resources/device?view=graph-rest-1.0
+          href: /graph/api/resources/device
 - name: Ресурсы
   items:
     - name: Форум отзывов и предложений по Azure

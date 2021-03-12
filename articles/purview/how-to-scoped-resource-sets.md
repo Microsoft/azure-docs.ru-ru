@@ -1,5 +1,5 @@
 ---
-title: Как создать конфигурацию набора ресурсов с заданной областью
+title: Создание конфигурации набора ресурсов с заданной областью
 description: Узнайте, как создать правило конфигурации набора ресурсов с заданной областью для перезаписи ресурсов, сгруппированных в наборы ресурсов.
 author: djpmsft
 ms.author: daperlov
@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 02/17/2021
-ms.openlocfilehash: 8d7d482f38d58c8d6a8959acb51c94c0fb814697
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 10e925a84dbe187ccdf5e444cb8b3dd4b7bb4676
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101668441"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102608008"
 ---
 # <a name="create-scoped-resource-set-configuration-rules"></a>Создание правил конфигурации набора ресурсов с заданной областью
 
@@ -24,20 +24,29 @@ ms.locfileid: "101668441"
 
 Выполните следующие действия, чтобы создать новую конфигурацию набора ресурсов с областью действия.
 
-1. Перейдите в центр управления. Выберите **наборы ресурсов** с заданной областью в меню. Щелкните **+ создать** , чтобы создать новый набор правил конфигурации.
-        :::image type="content" source="media/how-to-scoped-resource-sets/create-new-scoped-resource-set-rule.png" alt-text="Создать новое правило набора ресурсов с областью действия" border="true":::
+1. Перейдите в центр управления. Выберите **наборы ресурсов** с заданной областью в меню. Выберите **+ создать** , чтобы создать новый набор правил конфигурации.
 
-1. Введите область конфигурации набора ресурсов с заданной областью. Выберите тип учетной записи хранения и имя учетной записи хранения, для которой нужно создать правило. Каждый набор правил применяется относительно области пути к папке, указанной в поле **путь к папке** . 
-        :::image type="content" source="media/how-to-scoped-resource-sets/create-new-scoped-resource-set-scope.png" alt-text="Создать новое правило набора ресурсов с областью действия" border="true":::
+   :::image type="content" source="media/how-to-scoped-resource-sets/create-new-scoped-resource-set-rule.png" alt-text="Создать новое правило набора ресурсов с областью действия" border="true":::
+
+1. Введите область конфигурации набора ресурсов с заданной областью. Выберите тип учетной записи хранения и имя учетной записи хранения, для которой нужно создать правило. Каждый набор правил применяется относительно области пути к папке, указанной в поле **путь к папке** .
+
+   :::image type="content" source="media/how-to-scoped-resource-sets/create-new-scoped-resource-set-scope.png" alt-text="Создание конфигураций набора ресурсов с заданной областью" border="true":::
 
 1. Чтобы ввести правило для области конфигурации, выберите **+ создать правило**.
+
 1. Введите следующие поля, чтобы создать правило:
-    1. **Имя правила:** Имя правила конфигурации. Это поле не влияет на активы, к которым применяется правило.
-    1. **Полное имя:** Полный путь, который использует сочетание Text, Dynamic реплацерс и static реплацерс для сопоставления ресурсов с правилом конфигурации. Этот путь задается относительно области действия правила конфигурации. Подробные инструкции по указанию полных имен см. в разделе [синтаксис](#syntax) ниже. 
-    1. **Отображаемое имя:** Отображаемое имя ресурса. Это поле является необязательным. Используйте обычный текст и статический реплацерс для настройки отображения ресурса в каталоге. Более подробные инструкции см. в разделе [синтаксис](#syntax) ниже.
-    1. **Не группировать как набор ресурсов:** Если параметр включен, соответствующий ресурс не будет сгруппирован в набор ресурсов. 
-        :::image type="content" source="media/how-to-scoped-resource-sets/scoped-resource-set-rule-example.png" alt-text="Создать новое правило набора ресурсов с областью действия" border="true"::: 
-1. Сохраните правило, нажав кнопку **Добавить**. 
+
+   1. **Имя правила:** Имя правила конфигурации. Это поле не влияет на активы, к которым применяется правило.
+
+   1. **Полное имя:** Полный путь, который использует сочетание Text, Dynamic реплацерс и static реплацерс для сопоставления ресурсов с правилом конфигурации. Этот путь задается относительно области действия правила конфигурации. Подробные инструкции по указанию полных имен см. в разделе [синтаксис](#syntax) ниже.
+
+   1. **Отображаемое имя:** Отображаемое имя ресурса. Это поле является необязательным. Используйте обычный текст и статический реплацерс для настройки отображения ресурса в каталоге. Более подробные инструкции см. в разделе [синтаксис](#syntax) ниже.
+
+   1. **Не группировать как набор ресурсов:** Если параметр включен, соответствующий ресурс не будет сгруппирован в набор ресурсов.
+
+      :::image type="content" source="media/how-to-scoped-resource-sets/scoped-resource-set-rule-example.png" alt-text="Создать новое правило конфигурации." border="true":::
+
+1. Сохраните правило, нажав кнопку **Добавить**.
 
 ## <a name="scoped-resource-set-syntax"></a><a name="syntax"></a> Синтаксис набора ресурсов с заданной областью
 
@@ -65,25 +74,27 @@ ms.locfileid: "101668441"
 
 Ниже приведены доступные типы, которые можно использовать в статических и динамических реплацерс:
 
-| Тип | structure |
+| Type | structure |
 | ---- | --------- |
 | строка | Последовательность из 1 или более символов Юникода, включая разделители, такие как пробелы. |
 | INT | Последовательность из 1 или более 0-9 символов ASCII, это может быть 0 с префиксом (например, 0001). |
-| guid | Последовательность из 32 или 8-4-4-4-12 строкового представления UUID в виде дефинеддефа в https://tools.ietf.org/html/rfc4122 |
-| Дата | Последовательность из 6 или 8 0-9 символов ASCII с неопределенными разделителями: ГГГГММДД, гггг-мм-дд, YYMMDD, YY-MM-ДД, указанная в https://tools.ietf.org/html/rfc3339 |
-| time | Последовательность из 4 или 6 0-9 символов ASCII с неопределенными разделителями: ЧЧММ, чч: мм, ЧЧММСС, чч: мм: СС, указанные в https://tools.ietf.org/html/rfc3339 |
-| TIMESTAMP | Последовательность из 12 или 14 0-9 символов ASCII с неопределенными разделителями: гггг-мм-ddTHH: mm, ГГГГММДДЧЧмм, гггг-мм-ddTHH: mm: SS, yyyymmddHHmmss, указанный в https://tools.ietf.org/html/rfc3339 |
+| guid | Серия 32 или 8-4-4-4-12 строкового представления UUID в виде дефинеддефа в [RFC 4122](https://tools.ietf.org/html/rfc4122). |
+| Дата | Последовательность из 6 или 8 0-9 символов ASCII с неопределенными разделителями: ГГГГММДД, гггг-мм-дд, YYMMDD, YY-MM-ДД, указанные в [RFC 3339](https://tools.ietf.org/html/rfc3339). |
+| time | Последовательность из 4 или 6 0-9 символов ASCII с необязательными разделителями: ЧЧММ, чч: мм, ЧЧММСС, чч: мм: СС, указанные в [RFC 3339](https://tools.ietf.org/html/rfc3339). |
+| TIMESTAMP | Последовательность из 12 или 14 0-9 символов ASCII с неопределенными разделителями: гггг-мм-ddTHH: mm, ГГГГММДДЧЧмм, гггг-мм-ddTHH: mm: SS, yyyymmddHHmmss, указанный в [RFC 3339](https://tools.ietf.org/html/rfc3339). |
 | Логическое | Может содержать значение "true" или "false", без учета регистра. |
-| number | Последовательность из 0 или более 0-9 символов ASCII, может иметь значение 0 (например, 0001), за которым следует, по желанию, точка. и последовательность из 1 или более 0-9 символов ASCII, может быть 0 (например, 100). | 
+| number | Последовательность из 0 или более 0-9 символов ASCII, может иметь значение 0 (например, 0001), а при необходимости — точку «.» и последовательность из 1 или более 0-9 символов ASCII. это может быть 0 (например,. 100). |
 | hex | Последовательность из 1 или более символов ASCII из набора 0-1 и A-F, может иметь значение 0 с префиксом |
-| локаль | Строка, соответствующая синтаксису, указанному в https://tools.ietf.org/html/rfc5646 |
+| локаль | Строка, соответствующая синтаксису, указанному в [RFC 5646](https://tools.ietf.org/html/rfc5646). |
 
-## <a name="order-of-scoped-resource-set-rules-getting-applied"></a>Порядок применения правил набора ресурсов с областью действия.
+## <a name="order-of-scoped-resource-set-rules-getting-applied"></a>Порядок применения правил набора ресурсов с областью действия
 
 Ниже приведен порядок операций по применению правил набора ресурсов с заданной областью.
 
-1. Более конкретные области будут иметь приоритет, если ресурс соответствует двум правилам. Например, правила в области `container/folder` будут применяться перед правилами в области действия `container` . 
+1. Более конкретные области будут иметь приоритет, если ресурс соответствует двум правилам. Например, правила в области `container/folder` будут применяться перед правилами в области действия `container` .
+
 1. Порядок правил в определенной области. Это можно изменить в UX.
+
 1. Если ресурс не соответствует ни одному определенному правилу, применяется эвристика набора ресурсов по умолчанию.
 
 ## <a name="examples"></a>Примеры
@@ -95,16 +106,16 @@ ms.locfileid: "101668441"
 #### <a name="inputs"></a>Входные данные
 
 Файлы:
--   `https://myazureblob.blob.core.windows.net/bar/customer/full/2020/01/13/saptable_customer_20200101_20200102_01.txt`
--   `https://myazureblob.blob.core.windows.net/bar/customer/full/2020/01/13/saptable_customer_20200101_20200102_02.txt`
--   `https://myazureblob.blob.core.windows.net/bar/customer/delta/2020/01/15/saptable_customer_20200101_20200102_01.txt`
--   `https://myazureblob.blob.core.windows.net/bar/customer/full/2020/01/17/saptable_customer_20200101_20200102_01.txt`
--   `https://myazureblob.blob.core.windows.net/bar/customer/full/2020/01/17/saptable_customer_20200101_20200102_02.txt`
 
+- `https://myazureblob.blob.core.windows.net/bar/customer/full/2020/01/13/saptable_customer_20200101_20200102_01.txt`
+- `https://myazureblob.blob.core.windows.net/bar/customer/full/2020/01/13/saptable_customer_20200101_20200102_02.txt`
+- `https://myazureblob.blob.core.windows.net/bar/customer/delta/2020/01/15/saptable_customer_20200101_20200102_01.txt`
+- `https://myazureblob.blob.core.windows.net/bar/customer/full/2020/01/17/saptable_customer_20200101_20200102_01.txt`
+- `https://myazureblob.blob.core.windows.net/bar/customer/full/2020/01/17/saptable_customer_20200101_20200102_02.txt`
 
-#### <a name="scoped-resource-set-rule"></a>Правило набора ресурсов с заданной областью 
+#### <a name="scoped-resource-set-rule"></a>Правило набора ресурсов с заданной областью
 
-**Область действия:**https://myazureblob.blob.core.windows.net/bar/
+**Область действия:**`https://myazureblob.blob.core.windows.net/bar/`
 
 **Отображаемое имя:** "Внешний клиент"
 
@@ -112,7 +123,7 @@ ms.locfileid: "101668441"
 
 **Набор ресурсов:** true
 
-#### <a name="output"></a>Выходные данные 
+#### <a name="output"></a>Выходные данные
 
 Один ресурс набора ресурсов
 
@@ -124,17 +135,18 @@ ms.locfileid: "101668441"
 
 Данные IoT в формате Avro
 
-#### <a name="inputs"></a>Входные данные 
+#### <a name="inputs"></a>Входные данные
 
 Файлы:
--   `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-001.avro`
--   `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-002.avro`
--   `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/02-01-2020/22:33:22-001.avro`
--   `https://myazureblob.blob.core.windows.net/bar/raw/machinename-90/01-01-2020/22:33:22-001.avro`
 
-#### <a name="scoped-resource-set-rules"></a>Правила набора ресурсов с заданной областью 
+- `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-001.avro`
+- `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-002.avro`
+- `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/02-01-2020/22:33:22-001.avro`
+- `https://myazureblob.blob.core.windows.net/bar/raw/machinename-90/01-01-2020/22:33:22-001.avro`
 
-**Область действия:**https://myazureblob.blob.core.windows.net/bar/
+#### <a name="scoped-resource-set-rules"></a>Правила набора ресурсов с заданной областью
+
+**Область действия:**`https://myazureblob.blob.core.windows.net/bar/`
 
 Правило 1
 
@@ -150,11 +162,11 @@ ms.locfileid: "101668441"
 
 **Полное имя:**`raw/machinename-90/{date:date}/{time:time}-{id:int}.avro`
 
-#### <a name="resource-set-true"></a>*Набор ресурсов: true* 
+#### <a name="resource-set-true"></a>*Набор ресурсов: true*
 
-#### <a name="outputs"></a>Выходные данные 
+#### <a name="outputs"></a>Выходные данные
 
-2 набора ресурсов 
+2 набора ресурсов
 
 Набор ресурсов 1
 
@@ -172,17 +184,18 @@ ms.locfileid: "101668441"
 
 Данные IoT в формате Avro
 
-#### <a name="inputs"></a>Входные данные 
+#### <a name="inputs"></a>Входные данные
 
 Файлы:
--   `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-001.avro`
--   `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-002.avro`
--   `https://myazureblob.blob.core.windows.netbar/raw/machinename-89/02-01-2020/22:33:22-001.avro`
--   `https://myazureblob.blob.core.windows.net/bar/raw/machinename-90/01-01-2020/22:33:22-001.avro`
 
-#### <a name="scoped-resource-set-rule"></a>Правило набора ресурсов с заданной областью 
+- `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-001.avro`
+- `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-002.avro`
+- `https://myazureblob.blob.core.windows.netbar/raw/machinename-89/02-01-2020/22:33:22-001.avro`
+- `https://myazureblob.blob.core.windows.net/bar/raw/machinename-90/01-01-2020/22:33:22-001.avro`
 
-**Область действия:**https://myazureblob.blob.core.windows.net/bar/
+#### <a name="scoped-resource-set-rule"></a>Правило набора ресурсов с заданной областью
+
+**Область действия:**`https://myazureblob.blob.core.windows.net/bar/`
 
 **Отображаемое имя:** "Machine-{{MachineId}}"
 
@@ -190,7 +203,7 @@ ms.locfileid: "101668441"
 
 **Набор ресурсов:** true
 
-#### <a name="outputs"></a>Выходные данные 
+#### <a name="outputs"></a>Выходные данные
 
 Набор ресурсов 1
 
@@ -208,25 +221,26 @@ ms.locfileid: "101668441"
 
 Не группировать в наборы ресурсов
 
-#### <a name="inputs"></a>Входные данные 
+#### <a name="inputs"></a>Входные данные
 
 Файлы:
--   `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-001.avro`
--   `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-002.avro`
--   `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/02-01-2020/22:33:22-001.avro`
--   `https://myazureblob.blob.core.windows.net/bar/raw/machinename-90/01-01-2020/22:33:22-001.avro`
 
-#### <a name="scoped-resource-set-rule"></a>Правило набора ресурсов с заданной областью 
+- `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-001.avro`
+- `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/01-01-2020/22:33:22-002.avro`
+- `https://myazureblob.blob.core.windows.net/bar/raw/machinename-89/02-01-2020/22:33:22-001.avro`
+- `https://myazureblob.blob.core.windows.net/bar/raw/machinename-90/01-01-2020/22:33:22-001.avro`
 
-**Область действия:**https://myazureblob.blob.core.windows.net/bar/
+#### <a name="scoped-resource-set-rule"></a>Правило набора ресурсов с заданной областью
 
-**Отображаемое имя:** "Machine-{{MachineId}}"
+**Область действия:**`https://myazureblob.blob.core.windows.net/bar/`
+
+**Отображаемое имя:**`Machine-{{machineid}}`
 
 **Полное имя:**`raw/machinename-{{machineid:int}}/{{:date}}/{{:time}}-{{:int}}.avro`
 
 **Набор ресурсов:** false
 
-#### <a name="outputs"></a>Выходные данные 
+#### <a name="outputs"></a>Выходные данные
 
 4 отдельных активов
 

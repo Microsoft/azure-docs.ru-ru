@@ -3,7 +3,7 @@ title: Публикация содержимого на портале Azure | �
 description: В этом руководстве пошагово описано, как публиковать содержимое на портале Azure.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: 92c364eb-5a5f-4f4e-8816-b162c031bb40
@@ -12,14 +12,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/19/2019
-ms.author: juliako
-ms.openlocfilehash: 9f86f7a0a7eaef7c0dc244a2e089596de3779eae
-ms.sourcegitcommit: 2c586a0fbec6968205f3dc2af20e89e01f1b74b5
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: c22570153200b9daeae44701c814faa1a28916c8
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92018973"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103009816"
 ---
 # <a name="publish-content-in-the-azure-portal"></a>Публикация содержимого на портале Azure
 

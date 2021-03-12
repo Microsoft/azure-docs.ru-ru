@@ -1,14 +1,14 @@
 ---
 title: Начало работы с Центром быстрого запуска Azure
 description: Чтобы приступить к работе с Azure, воспользуйтесь руководством по центру быстрого запуска Azure. Научитесь настраивать, выполнять миграцию и внедрять новые.
-ms.date: 01/29/2020
+ms.date: 03/10/2021
 ms.topic: conceptual
-ms.openlocfilehash: 2b64e52ed0a15db216d5fb298b66d8ec03fc2f42
-ms.sourcegitcommit: ad83be10e9e910fd4853965661c5edc7bb7b1f7c
+ms.openlocfilehash: dbfe1ea99b09813edbfaa7bc248b4c71f1dd8a45
+ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "96745712"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103232993"
 ---
 # <a name="get-started-with-the-azure-quickstart-center"></a>Начало работы с Центром быстрого запуска Azure
 

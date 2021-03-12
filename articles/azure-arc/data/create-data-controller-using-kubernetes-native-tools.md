@@ -20,7 +20,7 @@ ms.locfileid: "102519985"
 
 [!INCLUDE [azure-arc-data-preview](../../../includes/azure-arc-data-preview.md)]
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Ознакомьтесь с разделом [Создание контроллера данных ARC в Azure](create-data-controller.md) для получения общих сведений.
 

@@ -3,7 +3,7 @@ title: Как обрезать видео с помощью Media Encoder Standa
 description: Обрезка заключается в выборе прямоугольного окна в пределах видеокадра и кодировании в нем пикселей. В этой статье показано, как обрезать видео с помощью Media Encoder Standard.
 services: media-services
 documentationcenter: ''
-author: anilmur
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.service: media-services
@@ -11,15 +11,15 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/18/2019
+ms.date: 03/10/2021
 ms.author: anilmur
 ms.reviewer: juliako
-ms.openlocfilehash: 4264d1c0d83f14da02b26107d336521250fcf13b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 6a15e57884f85e2d56b77c3e5eec1267133fe96d
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89257863"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103016735"
 ---
 # <a name="crop-videos-with-media-encoder-standard"></a>Обрезка видео с помощью Media Encoder Standard
 
@@ -141,10 +141,10 @@ ms.locfileid: "89257863"
 3. Обрезка применяется к видео, записанному в альбомном режиме (т. е. она не применяется к видео, которое записано с использованием смартфона, повернутого вертикально или настроенного на книжный режим).
 4. Рекомендуется применять к прогрессивному видео, которое записывается в пикселях широкоформатного кадра.
 
-## <a name="provide-feedback"></a>Предоставление отзыва
+## <a name="provide-feedback"></a>Отзывы
 [!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Дальнейшие действия
 См. схемы обучения по службам мультимедиа Azure, которые позволят вам узнать о возможностях, предлагаемых AMS.  
 
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]

@@ -5,12 +5,12 @@ services: container-service
 ms.topic: article
 ms.date: 02/25/2020
 ms.custom: mvc
-ms.openlocfilehash: 5881d03603002cc8d5bef1680083f6b4145bc77f
-ms.sourcegitcommit: ea822acf5b7141d26a3776d7ed59630bf7ac9532
+ms.openlocfilehash: 19de94db517afb2a8eeb855e76f2381096f8d7c0
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99526693"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102609113"
 ---
 # <a name="migrate-to-azure-kubernetes-service-aks"></a>Миграция в службу Kubernetes Azure (AKS)
 
@@ -114,7 +114,7 @@ az aks create \
 Тщательно спланируйте миграцию приложений с отслеживанием состояния, чтобы избежать потери данных или непредвиденного простоя.
 
 Если вы используете службу файлов Azure, вы можете подключить общую папку как том в новом кластере:
-* [Подключение статических файлов Azure в качестве тома](./azure-files-volume.md#mount-the-file-share-as-a-volume)
+* [Подключение статических файлов Azure в качестве тома](./azure-files-volume.md#mount-file-share-as-an-persistent-volume)
 
 Если вы используете управляемые диски Azure, вы можете подключить диск только в том случае, если он не подключен к какой бы то ни было виртуальной машине:
 * [Подключение статического диска Azure в качестве тома](./azure-disk-volume.md#mount-disk-as-volume)

@@ -2,17 +2,19 @@
 title: Создание виртуальной машины Windows с помощью специализированного VHD в Azure
 description: Создание новой виртуальной машины Windows на основе подключенного специализированного управляемого диска операционной системы с использованием модели развертывания с помощью Resource Manager.
 author: cynthn
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
+ms.subservice: imaging
+ms.collection: windows
 ms.workload: infrastructure-services
 ms.topic: how-to
 ms.date: 10/10/2019
 ms.author: cynthn
-ms.openlocfilehash: 577b8527d95a6410deca8002cddfaae31be1fc97
-ms.sourcegitcommit: 2bd0a039be8126c969a795cea3b60ce8e4ce64fc
+ms.openlocfilehash: 642a28d5eea6a89de31247ed715c0b352b9ff7d1
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98197495"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102552224"
 ---
 # <a name="create-a-windows-vm-from-a-specialized-disk-by-using-powershell"></a>Создание виртуальной машины Windows из специализированного диска с помощью PowerShell
 

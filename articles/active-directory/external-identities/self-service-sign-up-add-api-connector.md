@@ -11,12 +11,12 @@ author: msmimart
 manager: celestedg
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f190b8ffbb98c6ff5465af869305de4c9135cc3f
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: 703e3b4c951bc4c3a22f82b9faa31789d1abf868
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102610111"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103008728"
 ---
 # <a name="add-an-api-connector-to-a-user-flow"></a>Добавление соединителя API в поток пользователя
 
@@ -59,12 +59,12 @@ ms.locfileid: "102610111"
 
 Сведения о том, как включить и проверить сертификат из конечной точки API, см. в статье [Настройка взаимной проверки подлинности TLS](../../app-service/app-service-web-configure-tls-mutual-auth.md) для службы приложений Azure и функций Azure.
 
-Рекомендуется установить напоминания о том, когда истечет срок действия сертификата. Чтобы отправить новый сертификат в существующий соединитель API, выберите соединитель API в разделе **все соединители API** и щелкните **отправить новый соединитель**. Последний отправленный сертификат, срок действия которого не истек, и Дата последнего запуска будут автоматически использоваться Azure Active Directory.
+Рекомендуется установить напоминания о том, когда истечет срок действия сертификата. Чтобы отправить новый сертификат в существующий соединитель API, выберите соединитель API в разделе **все соединители API** и щелкните **отправить новый сертификат**. Последний отправленный сертификат, срок действия которого не истек, и Дата последнего запуска будут автоматически использоваться Azure Active Directory.
 
 ### <a name="api-key"></a>Ключ API
-Некоторые службы используют механизм "ключ API", чтобы усложнить доступ к конечным точкам HTTP во время разработки. Для [функций Azure](../../azure-functions/functions-bindings-http-webhook-trigger.md#authorization-keys)это можно сделать, включив `code` параметр AS в качестве параметра запроса в **URL-адрес конечной точки**. Например, `https://contoso.azurewebsites.net/api/endpoint` <b>`?code=0123456789`</b> ). 
+Некоторые службы используют механизм "ключ API" для маскировки доступа к конечным точкам HTTP во время разработки. Для [функций Azure](../../azure-functions/functions-bindings-http-webhook-trigger.md#authorization-keys)это можно сделать, включив `code` параметр AS в качестве параметра запроса в **URL-адрес конечной точки**. Например, `https://contoso.azurewebsites.net/api/endpoint` <b>`?code=0123456789`</b> ). 
 
-Это не механизм, который следует использовать в рабочей среде отдельно. Таким образом, всегда требуется настройка для проверки подлинности Basic или Certificate. Если вы хотите реализовать какой-либо метод проверки подлинности (не рекомендуется) для целей разработки, можно выбрать обычную проверку подлинности и использовать временные значения для `username` и `password` , чтобы ваш API мог проигнорироваться во время реализации авторизации в API.
+Это не механизм, который следует использовать в рабочей среде отдельно. Таким образом, всегда требуется настройка для проверки подлинности Basic или Certificate. Если вы не хотите реализовывать какой-либо метод проверки подлинности (не рекомендуется) для целей разработки, можно выбрать обычную проверку подлинности и использовать временные значения для `username` и `password` что ваш API может игнорироваться во время реализации авторизации в API.
 
 ## <a name="the-request-sent-to-your-api"></a>Запрос, отправленный в API
 Соединитель API материализации как запрос **HTTP POST** , отправляющий атрибуты пользователя ("Claims") в качестве пар "ключ-значение" в теле JSON. Атрибуты сериализуются аналогично [Microsoft Graph](/graph/api/resources/user#properties) свойства пользователя. 
@@ -76,7 +76,7 @@ Content-type: application/json
 
 {
  "email": "johnsmith@fabrikam.onmicrosoft.com",
- "identities": [ //Sent for Google and Facebook identity providers
+ "identities": [ // Sent for Google, Facebook, and Email One Time Passcode identity providers 
      {
      "signInType":"federated",
      "issuer":"facebook.com",
@@ -138,7 +138,7 @@ Content-type: application/json
 
 {
  "email": "johnsmith@fabrikam.onmicrosoft.com",
- "identities": [ //Sent for Google and Facebook identity providers
+ "identities": [ // Sent for Google, Facebook, and Email One Time Passcode identity providers 
      {
      "signInType":"federated",
      "issuer":"facebook.com",
@@ -189,7 +189,7 @@ Content-type: application/json
 
 {
  "email": "johnsmith@fabrikam.onmicrosoft.com",
- "identities": [ //Sent for Google and Facebook identity providers
+ "identities": [ // Sent for Google, Facebook, and Email One Time Passcode identity providers 
      {
      "signInType":"federated",
      "issuer":"facebook.com",
@@ -255,7 +255,7 @@ Content-type: application/json
 }
 ```
 
-| Параметр                                          | Type              | Обязательно | Описание                                                                                                                                                                                                                                                                            |
+| Параметр                                          | Тип              | Обязательно | Описание                                                                                                                                                                                                                                                                            |
 | -------------------------------------------------- | ----------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | version                                            | Строка            | Да      | Версия API.                                                                                                                                                                                                                                                                |
 | action                                             | Строка            | Да      | Необходимое значение: `Continue`.                                                                                                                                                                                                                                                              |
@@ -276,7 +276,7 @@ Content-type: application/json
 
 ```
 
-| Параметр   | Type   | Обязательно | Описание                                                                |
+| Параметр   | Тип   | Обязательно | Описание                                                                |
 | ----------- | ------ | -------- | -------------------------------------------------------------------------- |
 | version     | Строка | Да      | Версия API.                                                    |
 | action      | Строка | Да      | Значение должно быть `ShowBlockPage`                                              |
@@ -300,7 +300,7 @@ Content-type: application/json
 }
 ```
 
-| Параметр   | Type    | Обязательно | Описание                                                                |
+| Параметр   | Тип    | Обязательно | Описание                                                                |
 | ----------- | ------- | -------- | -------------------------------------------------------------------------- |
 | version     | Строка  | Да      | Версия API.                                                    |
 | action      | Строка  | Да      | Необходимое значение: `ValidationError`.                                           |

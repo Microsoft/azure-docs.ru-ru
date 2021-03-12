@@ -13,12 +13,12 @@ ms.author: rolyon
 ms.reviewer: vincesm
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7828313844b8f95b2bac5bff37022a822686ab33
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.openlocfilehash: 9f0fb81a4daa57b473e8b2b4b937426eafbf903d
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98740250"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103014542"
 ---
 # <a name="assign-custom-roles-with-resource-scope-using-powershell-in-azure-active-directory"></a>Назначение пользовательских ролей с областью действия ресурса с помощью PowerShell в Azure Active Directory
 
@@ -35,16 +35,16 @@ ms.locfileid: "98740250"
 Установите модуль Azure AD PowerShell из [коллекция PowerShell](https://www.powershellgallery.com/packages/AzureADPreview). Импортируйте модуль Azure AD PowerShell (предварительная версия) с помощью следующей команды:
 
 ``` PowerShell
-Import-Module AzureADPreview
+Import-Module -Name AzureADPreview
 ```
 
 Чтобы убедиться в готовности модуля к использованию, сопоставьте версию, возвращенную следующей командой, с указанной здесь.
 
 ``` PowerShell
-Get-Module AzureADPreview
+Get-Module -Name AzureADPreview
   ModuleType Version      Name                         ExportedCommands
   ---------- ---------    ----                         ----------------
-  Binary     2.0.0.115    azureadpreview               {Add-AzureADMSAdministrati...}
+  Binary     2.0.0.115    AzureADPreview               {Add-AzureADMSAdministrati...}
 ```
 
 Теперь можно начать использование командлетов в модуле. Полное описание командлетов в модуле Azure AD см. в интерактивной справочной документации по [модулю Azure AD Preview](https://www.powershellgallery.com/packages/AzureADPreview).
@@ -160,7 +160,7 @@ Get-AzureADMSRoleAssignment -Filter "roleDefinitionId eq '355aed8a-864b-4e2b-b22
 Remove-AzureADMSRoleAssignment -Id 'qiho4WOb9UKKgng_LbPV7tvKaKRCD61PkJeKMh7Y458-1'
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Поделитесь с нами на [форуме по административным ролям Azure AD](https://feedback.azure.com/forums/169401-azure-active-directory?category_id=166032)
 - Дополнительные сведения о ролях и назначениях ролей администратора Azure AD см. в статье [назначение ролей администратора](permissions-reference.md) .

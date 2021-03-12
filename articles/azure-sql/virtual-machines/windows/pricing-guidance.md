@@ -16,12 +16,12 @@ ms.date: 08/09/2018
 ms.author: mathoma
 ms.reviewer: jroth
 ms.custom: seo-lt-2019
-ms.openlocfilehash: bd58f18959df3aa290083f907be8ab703366a7c6
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.openlocfilehash: d980b92bc4effc58ef84ef6ec70c3908f575e484
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360107"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102615607"
 ---
 # <a name="pricing-guidance-for-sql-server-on-azure-vms"></a>Руководство по ценам для SQL Server на виртуальных машинах Azure
 [!INCLUDE[appliesto-sqlvm](../../includes/appliesto-sqlvm.md)]
@@ -97,10 +97,7 @@ ms.locfileid: "97360107"
 
 ## <a name="bring-your-own-license-byol"></a><a id="byol"></a> Использование собственных лицензий (BYOL)
 
-**Использование собственной лицензии SQL Server посредством License Mobility** (**BYOL**) означает использование на виртуальной машине Azure существующей корпоративной лицензии SQL Server в рамках программы Software Assurance. При использовании виртуальной машины SQL Server с BYOL взимается только плата за выполнение виртуальной машины, но не за лицензию SQL Server, так как вы уже приобрели лицензии и участвуете в программе Software Assurance в рамках программы корпоративного лицензирования.
-
-> [!IMPORTANT]
-> Для образов BYOL требуется соглашение Enterprise с подпиской Software Assurance. Сейчас эти образы не предоставляются в рамках программы Azure Cloud Solution Partner (CSP). Клиенты CSP могут использовать собственную лицензию, развернув образ с оплатой по мере использования, а затем включив [Преимущество гибридного использования Azure](licensing-model-azure-hybrid-benefit-ahb-change.md).
+**Использование собственной лицензии SQL Server посредством License Mobility** (**BYOL**) означает использование на виртуальной машине Azure существующей корпоративной лицензии SQL Server в рамках программы Software Assurance. SQL Serverная виртуальная машина, использующая BYOL, взимается только за затраты на запуск виртуальной машины, а не на SQL Server лицензирования, учитывая, что вы уже приобрели лицензии и Software Assurance через программу корпоративного лицензирования или с помощью партнера по облачным решениям (CSP).
 
 > [!NOTE]
 > Сейчас образы BYOL доступны только для виртуальных машин Windows. Но вы можете вручную установить SQL Server на виртуальной машине только с ОС Linux. См. рекомендации в разделе [SQL Server на виртуальной машине Linux](../linux/frequently-asked-questions-faq.md).
@@ -144,7 +141,7 @@ ms.locfileid: "97360107"
 | Размер виртуальной машины | Число виртуальных ЦП | Память | Максимальное количество дисков | Максимальная пропускная способность ввода-вывода | SQL Server стоимость лицензирования | Общие затраты (вычисление + лицензирование) |
 |---|---|---|---|---|---|---|
 | **Standard_DS14v2** | 16 | 112 ГБ | 32 | 51 200 операций ввода-вывода в секунду (IOPS) или 768 МБ/с | | |
-| **Standard_DS14-4v2** | 4 | 112 ГБ | 32 | 51 200 операций ввода-вывода в секунду (IOPS) или 768 МБ/с | на 75 % ниже | на 57 % ниже |
+| **Standard_DS14-4v2** | 4 | 112 ГБ | 32 | 51 200 операций ввода-вывода в секунду (IOPS) или 768 МБ/с | на 75 % ниже | на 57 % ниже |
 
 > [!IMPORTANT]
 > Это пример "на момент времени". Самые последние спецификации можно найти в статьях о размерах виртуальных машин и на странице цен Azure для [Windows](https://azure.microsoft.com/pricing/details/virtual-machines/windows/) и [Linux](https://azure.microsoft.com/pricing/details/virtual-machines/linux/).
