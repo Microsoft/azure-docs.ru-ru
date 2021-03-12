@@ -3,7 +3,7 @@ title: Мониторинг хода выполнения задания с по
 description: Узнайте, как использовать код обработчика событий для проверки хода выполнения задания и отправки сведений об обновлении состояния. Пример кода написан на языке C# и использует пакет SDK служб мультимедиа для .NET.
 services: media-services
 documentationcenter: ''
-author: juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: ee720ed6-8ce5-4434-b6d6-4df71fca224e
@@ -12,15 +12,15 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/14/2019
-ms.author: juliako
+ms.date: 03/10/2021
+ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: c5a1c45290d07099c1f7d202854284ef638ad638
-ms.sourcegitcommit: 77afc94755db65a3ec107640069067172f55da67
+ms.openlocfilehash: 5a32744f7a2385bf9da92a0f9cae5f664b1a18fc
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98695981"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103016973"
 ---
 # <a name="monitor-job-progress-using-net"></a>Мониторинг хода выполнения задания с помощью .NET
 

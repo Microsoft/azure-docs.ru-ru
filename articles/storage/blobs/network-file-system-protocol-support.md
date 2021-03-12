@@ -9,12 +9,12 @@ ms.date: 02/19/2021
 ms.author: normesta
 ms.reviewer: yzheng
 ms.custom: references_regions
-ms.openlocfilehash: 22f4db04f37985e49065f80da6e4578ed71c5db1
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: b00956a6fb5a79b09602ca1752cc547595f32db6
+ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102428445"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103224600"
 ---
 # <a name="network-file-system-nfs-30-protocol-support-in-azure-blob-storage-preview"></a>Поддержка протокола NFS 3,0 в хранилище BLOB-объектов Azure (Предварительная версия)
 
@@ -112,7 +112,7 @@ ms.locfileid: "102428445"
   
 ## <a name="nfs-30-features-not-yet-supported"></a>Функции NFS 3,0 пока не поддерживаются
 
-Следующие компоненты NFS 3,0 еще не поддерживаются в Azure Data Lake Storage 2-го поколения.
+Следующие компоненты NFS 3,0 пока не поддерживаются.
 
 - NFS 3,0 через UDP. Поддерживается только NFS 3,0 через TCP.
 
@@ -127,6 +127,12 @@ ms.locfileid: "102428445"
 - Жесткая связь
 
 - Экспорт контейнера только для чтения
+
+## <a name="nfs-30-clients-not-yet-supported"></a>Клиенты NFS 3,0 пока не поддерживаются
+
+Следующие клиенты NFS 3,0 пока не поддерживаются.
+
+- Клиент Windows для NFS
 
 ## <a name="pricing"></a>Цены
 

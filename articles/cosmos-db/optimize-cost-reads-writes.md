@@ -6,12 +6,12 @@ ms.author: mjbrown
 ms.service: cosmos-db
 ms.topic: conceptual
 ms.date: 10/14/2020
-ms.openlocfilehash: 3f4c33a88d9a8fbf2c3d64135d93da54cf75fab3
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.openlocfilehash: 36ecef007e10f9a090dbabc8b5a91fd473930141
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93097515"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102633858"
 ---
 # <a name="optimize-request-cost-in-azure-cosmos-db"></a>Оптимизировать стоимость запросов в Azure Cosmos DB
 [!INCLUDE[appliesto-all-apis](includes/appliesto-all-apis.md)]
@@ -105,7 +105,7 @@ Azure Cosmos DB обеспечивает прогнозируемую произ
 - Размер элемента.
 - Количество свойств, охваченных [политикой индексирования](index-policy.md) и необходимое для индексирования.
 
-Вставка элемента размером 1 КБ с менее чем 5 свойствами для индексирования затрат на 5 RUs. При замене затрат на номенклатуру в два раза взимается плата, необходимая для вставки одного и того же элемента.
+Вставка элемента размером 1 КБ без индексирования около ~ 5,5 RUs. При замене затрат на номенклатуру в два раза взимается плата, необходимая для вставки одного и того же элемента.
 
 ### <a name="optimizing-writes"></a>Оптимизация операций записи
 

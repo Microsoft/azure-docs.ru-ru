@@ -3,7 +3,7 @@ title: Использование общего динамического шиф
 description: Службы мультимедиа Microsoft Azure можно использовать для защиты потокового содержимого, которое доставляется по протоколам MPEG-DASH, Smooth Streaming и HTTP Live Streaming (HLS), с помощью технологии Microsoft PlayReady DRM. Кроме того, вы можете использовать их, чтобы передавать DASH с шифрованием, выполненным с помощью Widevine DRM. Здесь описывается выполнение динамического шифрования с помощью PlayReady и Widevine DRM.
 services: media-services
 documentationcenter: ''
-author: juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: 548d1a12-e2cb-45fe-9307-4ec0320567a2
@@ -12,15 +12,15 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: conceptual
-ms.date: 03/20/2019
-ms.author: juliako
+ms.date: 03/10/2021
+ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 58ca7df5a99752f05a4715511685b31a467356f1
-ms.sourcegitcommit: 77afc94755db65a3ec107640069067172f55da67
+ms.openlocfilehash: 9a0e8a513023c093157a3f14a64de9f87de543ab
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98695058"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103009459"
 ---
 # <a name="use-playready-andor-widevine-dynamic-common-encryption"></a>Использование общего динамического шифрования PlayReady и (или) Widevine DRM
 
@@ -55,7 +55,7 @@ ms.locfileid: "98695058"
 >[!NOTE]
 >При создании учетной записи служб мультимедиа в нее добавляется конечная точка потоковой передачи по умолчанию в состоянии "Остановлена". Чтобы начать потоковую передачу содержимого и воспользоваться динамической упаковкой и динамическим шифрованием, конечная точка потоковой передачи, из которой необходимо выполнять потоковую передачу содержимого, должна находиться в состоянии "Выполняется". 
 
-## <a name="download-the-sample"></a>Скачивание примера
+## <a name="download-the-sample"></a>Скачивание примера приложения
 Пример, описанный в этой статье, можно скачать на странице с [примерами Azure в GitHub](https://github.com/Azure-Samples/media-services-dotnet-dynamic-encryption-with-drm).
 
 ## <a name="configure-dynamic-common-encryption-and-drm-license-delivery-services"></a>Настройка общего динамического шифрования и службы доставки лицензий DRM
@@ -616,7 +616,7 @@ namespace DynamicEncryptionWithDRM
 
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
 
-## <a name="provide-feedback"></a>Предоставление отзыва
+## <a name="provide-feedback"></a>Отзывы
 [!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
 
 ## <a name="see-also"></a>См. также раздел

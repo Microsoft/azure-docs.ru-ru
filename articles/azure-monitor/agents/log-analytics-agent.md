@@ -5,19 +5,19 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 01/12/2021
-ms.openlocfilehash: 1dc8e3a78e681947a70ad96638d1d6e09f0bbc88
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 8b3b1d39766d556b820f21c1775210611b995d92
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102050670"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103199901"
 ---
 # <a name="log-analytics-agent-overview"></a>Общие сведения об агенте Log Analytics
 
 Агент Log Analytics Azure собирает данные телеметрии с виртуальных машин Windows и Linux в любом облаке, локальных компьютерах, а также в тех, которые отслеживаются [System Center Operations Manager](/system-center/scom/) и отправляет собранные в log Analytics рабочую область в Azure Monitor. Агент Log Analytics также поддерживает аналитические сведения и другие службы в Azure Monitor, такие как [VM Insights](../vm/vminsights-enable-overview.md), [Центр безопасности Azure](../../security-center/index.yml)и служба [автоматизации Azure](../../automation/automation-intro.md). В этой статье приводятся подробные сведения о требованиях к агенту, системе и сети и методах развертывания.
 
 > [!NOTE]
-> Агент Log Analytics также называется агентом Microsoft Monitoring Agent (MMA) или агентом OMS Linux.
+> Вы также можете увидеть Log Analytics агент, называемый Microsoft Monitoring Agent (MMA).
 
 ## <a name="comparison-to-azure-diagnostics-extension"></a>Сравнение с расширением Диагностика Azure
 Для получения данных мониторинга из гостевой ОС виртуальной машины Azure вы также можете использовать [Расширение Диагностика Azure](./diagnostics-extension-overview.md) в Azure Monitor. Вы можете использовать любое из этих средств или оба сразу в зависимости от конкретных требований. В статье [Общие сведения об агентах Azure Monitor](../agents/agents-overview.md) приведено подробное сравнение разных агентов. 
@@ -133,7 +133,7 @@ ms.locfileid: "102050670"
 
 `[protocol://][user:password@]proxyhost[:port]`
 
-|Свойство| Описание |
+|Свойство.| Описание |
 |--------|-------------|
 |Протокол | HTTPS |
 |пользователь | Необязательное имя пользователя для аутентификации прокси-сервера |

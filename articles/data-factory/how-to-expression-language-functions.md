@@ -7,12 +7,12 @@ ms.reviewer: maghan
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 03/08/2020
-ms.openlocfilehash: 4aa8a0790e7f5812e8c6a70eab1718f92a5e00d0
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 8f22645eafa0969eac3d6c4c0645909f8c650cad
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102520308"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103199812"
 ---
 # <a name="how-to-use-parameters-expressions-and-functions-in-azure-data-factory"></a>Как использовать параметры, выражения и функции в фабрике данных Azure
 
@@ -25,7 +25,7 @@ ms.locfileid: "102520308"
 
 ## <a name="azure-data-factory-ui-and-parameters"></a>Пользовательский интерфейс и параметры фабрики данных Azure
 
-Если вы не знакомы с использованием параметра фабрики данных Azure в пользовательском интерфейсе ADF, проверьте [Пользовательский интерфейс фабрики данных для связанных служб с параметрами](https://docs.microsoft.comazure/data-factory/parameterize-linked-services#data-factory-ui)  и [интерфейсом пользователя фабрики данных для конвейера, управляемого метаданными, с параметрами](https://docs.microsoft.com/azure/data-factory/how-to-use-trigger-parameterization#data-factory-ui) визуального объяснения.
+Если вы не знакомы с использованием параметра фабрики данных Azure в пользовательском интерфейсе ADF, проверьте [Пользовательский интерфейс фабрики данных для связанных служб с параметрами](https://docs.microsoft.com/azure/data-factory/parameterize-linked-services#data-factory-ui)  и [интерфейсом пользователя фабрики данных для конвейера, управляемого метаданными, с параметрами](https://docs.microsoft.com/azure/data-factory/how-to-use-trigger-parameterization#data-factory-ui) визуального объяснения.
 
 ## <a name="parameter-and-expression-concepts"></a>Основные понятия параметров и выражений 
 

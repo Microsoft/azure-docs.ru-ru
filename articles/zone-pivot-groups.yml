@@ -360,6 +360,16 @@ groups:
     title: TypeScript
   - id: programming-language-other
     title: Другое
+- id: development-environment-functions
+  title: Среда разработки
+  prompt: Выбор среды разработки
+  pivots:
+  - id: development-environment-vscode
+    title: Visual Studio Code
+  - id: development-environment-cli
+    title: Командная строка
+  - id: development-environment-vs
+    title: Visual Studio
 - id: programming-languages-metrics-monitor
   title: Языки программирования
   prompt: Выберите язык программирования.
@@ -1055,9 +1065,9 @@ groups:
   - id: programming-language-kotlin
     title: Kotlin (Android)
 metadata:
-  ms.openlocfilehash: 647527256c101e1a0afe37c8dca932228ac10aba
-  ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+  ms.openlocfilehash: 4075041f3a79138c80c1e020a7410bbc252de6f3
+  ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/05/2021
-  ms.locfileid: "102176031"
+  ms.lasthandoff: 03/10/2021
+  ms.locfileid: "102558174"

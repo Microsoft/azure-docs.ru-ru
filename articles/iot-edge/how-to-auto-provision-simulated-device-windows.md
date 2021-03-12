@@ -8,14 +8,16 @@ ms.date: 4/3/2020
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 56696f138fbf58993e990e263d2fa8e490672bb6
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.openlocfilehash: 11279c552cb599c24b72473d6574175450ca7ab0
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92106303"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200853"
 ---
 # <a name="create-and-provision-a-simulated-iot-edge-device-with-a-virtual-tpm-on-windows"></a>Создание и инициализация имитации устройства IoT Edge с помощью виртуального доверенного платформенного модуля в Windows
+
+[!INCLUDE [iot-edge-version-201806](../../includes/iot-edge-version-201806.md)]
 
 Устройства Azure IoT Edge можно подготовить автоматически с помощью [Службы подготовки устройств к добавлению в Центр Интернета вещей](../iot-dps/index.yml) точно так же, как и другие устройства. При необходимости ознакомьтесь с обзором [процесса подготовки](../iot-dps/about-iot-dps.md#provisioning-process), прежде чем продолжить.
 

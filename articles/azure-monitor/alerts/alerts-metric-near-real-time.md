@@ -5,13 +5,13 @@ author: harelbr
 ms.author: harelbr
 services: monitoring
 ms.topic: conceptual
-ms.date: 02/10/2021
-ms.openlocfilehash: c282e6890d56fe047b319f72e05cdc97de76cfcf
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.date: 03/11/2021
+ms.openlocfilehash: efc1438fdc539af278ebff1f292c5fa0a91b7b91
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102038192"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103016106"
 ---
 # <a name="supported-resources-for-metric-alerts-in-azure-monitor"></a>Поддерживаемые ресурсы для оповещений метрик в Azure Monitor
 
@@ -36,6 +36,7 @@ Azure Monitor теперь поддерживает [новый тип опов�
 |Microsoft.Automation/automationAccounts | Да| Нет | [Учетные записи автоматизации](../essentials/metrics-supported.md#microsoftautomationautomationaccounts) |
 |Microsoft. AVS/Приватеклаудс | Нет | Нет | [Решение Azure VMware](../essentials/metrics-supported.md#microsoftavsprivateclouds) |
 |Microsoft.Batch/batchAccounts | Да | Нет | [Ученые записи пакетной службы](../essentials/metrics-supported.md#microsoftbatchbatchaccounts) |
+|Microsoft. Ботсервице/Ботсервицес | Да | Нет | [Службы Bot](../essentials/metrics-supported.md#microsoftbotservicebotservices) |
 |Microsoft.Cache/Redis; | Да | Да | [Кэш Azure для Redis](../essentials/metrics-supported.md#microsoftcacheredis) |
 |Microsoft.ClassicCompute/domainNames/slots/roles | Нет | Нет | [Классические облачные службы](../essentials/metrics-supported.md#microsoftclassiccomputedomainnamesslotsroles) |
 |Microsoft.classicСompute/virtualMachines | Нет | Нет | [Классические виртуальные машины](../essentials/metrics-supported.md#microsoftclassiccomputevirtualmachines) |
@@ -45,6 +46,8 @@ Azure Monitor теперь поддерживает [новый тип опов�
 |Microsoft.ClassicStorage/storageAccounts/queueServices | Да | Нет | [Учетные записи хранения (классические) — очереди](../essentials/metrics-supported.md#microsoftclassicstoragestorageaccountsqueueservices) |
 |Microsoft.ClassicStorage/storageAccounts/tableServices | Да | Нет | [Учетные записи хранения (классические) — таблицы](../essentials/metrics-supported.md#microsoftclassicstoragestorageaccountstableservices) |
 |Microsoft.CognitiveServices/accounts | Да | Нет | [Cognitive Services](../essentials/metrics-supported.md#microsoftcognitiveservicesaccounts) |
+|Microsoft. COMPUTE/Клаудсервицес | Да | Нет |  [Облачные службы](../essentials/metrics-supported.md#microsoftcomputecloudservices) |
+|Microsoft. COMPUTE/Клаудсервицес/Roles | Да | Нет |  [Роли облачной службы](../essentials/metrics-supported.md#microsoftcomputecloudservicesroles) |
 |Microsoft.Compute/virtualMachines | Да | Да<sup>1</sup> | [Виртуальные машины](../essentials/metrics-supported.md#microsoftcomputevirtualmachines) |
 |Microsoft.Compute/virtualMachineScaleSets; | Да | Нет |[Масштабируемые наборы виртуальных машин](../essentials/metrics-supported.md#microsoftcomputevirtualmachinescalesets) |
 |Microsoft.ContainerInstance/containerGroups | Да| Нет | [Группы контейнеров](../essentials/metrics-supported.md#microsoftcontainerinstancecontainergroups) |
@@ -56,9 +59,10 @@ Azure Monitor теперь поддерживает [новый тип опов�
 |Microsoft.DataShare/accounts | Да | Нет | [Общие ресурсы данных](../essentials/metrics-supported.md#microsoftdatashareaccounts) |
 |Microsoft.DBforMariaDB/servers | Нет | Нет | [База данных для MariaDB](../essentials/metrics-supported.md#microsoftdbformariadbservers) |
 |Microsoft.DBforMySQL/servers | Нет | Нет |[База данных для MySQL](../essentials/metrics-supported.md#microsoftdbformysqlservers)|
+|Microsoft.DBforPostgreSQL/flexibleServers | Да | Нет | [База данных для PostgreSQL (гибкие серверы)](../essentials/metrics-supported.md#microsoftdbforpostgresqlflexibleservers)|
+|Microsoft. Дбфорпостгрескл/serverGroupsv2 | Да | Нет | База данных для PostgreSQL (масштабирование) |
 |Microsoft.DBforPostgreSQL/servers | Нет | Нет | [База данных для PostgreSQL](../essentials/metrics-supported.md#microsoftdbforpostgresqlservers)|
 |Microsoft.DBforPostgreSQL/serversv2 | Нет | Нет | [База данных для PostgreSQL v2](../essentials/metrics-supported.md#microsoftdbforpostgresqlserversv2)|
-|Microsoft.DBforPostgreSQL/flexibleServers | Да | Нет | [База данных для PostgreSQL (гибкие серверы)](../essentials/metrics-supported.md#microsoftdbforpostgresqlflexibleservers)|
 |Microsoft.Devices/IotHubs | Да | Нет |[Центр Интернета вещей](../essentials/metrics-supported.md#microsoftdevicesiothubs) |
 |Microsoft.Devices/provisioningServices| Да | Нет | [Службы подготовки устройств](../essentials/metrics-supported.md#microsoftdevicesprovisioningservices) |
 |Microsoft. Дигиталтвинс/Дигиталтвинсинстанцес | Да | Нет | [Digital Twins](../essentials/metrics-supported.md#microsoftdigitaltwinsdigitaltwinsinstances) |
@@ -75,6 +79,8 @@ Azure Monitor теперь поддерживает [новый тип опов�
 |Microsoft.Logic/integrationServiceEnvironments | Да | Нет |[Среды службы интеграции](../essentials/metrics-supported.md#microsoftlogicintegrationserviceenvironments) |
 |Microsoft.Logic/workflows | Нет | Нет |[Logic Apps](../essentials/metrics-supported.md#microsoftlogicworkflows) |
 |Microsoft.MachineLearningServices/workspaces | Да | Нет | [Машинное обучение](../essentials/metrics-supported.md#microsoftmachinelearningservicesworkspaces) |
+|Microsoft. Мачинелеарнингсервицес/workspaces/Онлининдпоинтс | Да | Нет | Машинное обучение-конечные точки |
+|Microsoft. Мачинелеарнингсервицес/workspaces/Онлининдпоинтс/развертывания | Да | Нет | Машинное обучение развертывания конечных точек |
 |Microsoft.Maps/accounts | Да | Нет | [Сопоставление учетных записей](../essentials/metrics-supported.md#microsoftmapsaccounts) |
 |Microsoft.Media/mediaservices | Нет | Нет | [Службы мультимедиа](../essentials/metrics-supported.md#microsoftmediamediaservices) |
 |Microsoft.Media/mediaservices/streamingEndpoints | Да | Нет | [Конечные точки потоковой передачи служб мультимедиа](../essentials/metrics-supported.md#microsoftmediamediaservicesstreamingendpoints) |

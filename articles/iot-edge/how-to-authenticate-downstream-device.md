@@ -8,14 +8,16 @@ ms.date: 10/15/2020
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: d9e3e0f96d235829928c1f7c79864b1dc732f9e4
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: c799e38092c5983b4ad0e3daea6aae99934c7302
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102046352"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200885"
 ---
 # <a name="authenticate-a-downstream-device-to-azure-iot-hub"></a>Аутентификация подчиненного устройства в Центре Интернета вещей
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 В сценарии с прозрачным шлюзом подчиненные устройства (иногда называемые конечными или дочерними устройствами) должны иметь удостоверения в центре Интернета вещей, как и все остальные устройства. В этой статье рассматриваются варианты проверки подлинности подчиненного устройства в центре Интернета вещей, а также показано, как объявляется подключение к шлюзу.
 
@@ -206,7 +208,7 @@ HostName=myiothub.azure-devices.net;DeviceId=myDownstreamDevice;SharedAccessKey=
 HostName=myiothub.azure-devices.net;DeviceId=myDownstreamDevice;x509=true;GatewayHostName=myGatewayDevice
 ```
 
-Благодаря связи "родители-потомки" можно упростить строку подключения, вызвав шлюз непосредственно в качестве узла подключения. Пример.
+Благодаря связи "родители-потомки" можно упростить строку подключения, вызвав шлюз непосредственно в качестве узла подключения. Например:
 
 ```console
 HostName=myGatewayDevice;DeviceId=myDownstreamDevice;SharedAccessKey=xxxyyyzzz

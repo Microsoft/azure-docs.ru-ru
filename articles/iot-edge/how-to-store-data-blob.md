@@ -8,14 +8,16 @@ ms.date: 12/13/2019
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 6cefb60d794defcce54766b9c7f71e7fbf40fe5c
-ms.sourcegitcommit: 44188608edfdff861cc7e8f611694dec79b9ac7d
+ms.openlocfilehash: 5954c3083afc73fb25c796086f8fb8809af03ec1
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99539439"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200670"
 ---
 # <a name="store-data-at-the-edge-with-azure-blob-storage-on-iot-edge"></a>Хранение данных на пограничных устройствах с использованием хранилища BLOB-объектов Azure в IoT Edge
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Хранилище BLOB-объектов Azure на IoT Edge предоставляет хранилище [блочного BLOB](/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-block-blobs) и [Добавление хранилища больших двоичных объектов](/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-append-blobs) на границе. Модуль хранилища BLOB-объектов на устройстве IoT Edge ведет себя как служба BLOB-объектов Azure, за исключением того, что большие двоичные объекты хранятся локально на устройстве IoT Edge. Вы можете получить доступ к BLOB-объектам, используя те же методы пакета SDK службы хранилища Azure или вызовы API BLOB-объектов, которые вы уже используете. В этой статье объясняются основные понятия, связанные с хранилищем BLOB-объектов Azure, в контейнере IoT Edge, где выполняется служба больших двоичных объектов на устройстве IoT Edge.
 
@@ -77,7 +79,7 @@ ms.locfileid: "99539439"
 
 Имя этого параметра — `deviceToCloudUploadProperties` . Если вы используете симулятор IoT Edge, присвойте значения соответствующим переменным среды для этих свойств, которые можно найти в разделе пояснения.
 
-| Свойство | Возможные значения | Описание |
+| Свойство. | Возможные значения | Описание |
 | ----- | ----- | ---- |
 | уплоадон | true, false | По умолчанию задано значение `false` . Если вы хотите включить эту функцию, присвойте этому полю значение `true` . <br><br> Переменная среды: `deviceToCloudUploadProperties__uploadOn={false,true}` |
 | уплоадордер | Невестфирст, OldestFirst | Позволяет выбрать порядок, в котором данные копируются в Azure. По умолчанию задано значение `OldestFirst` . Порядок определяется временем последнего изменения большого двоичного объекта. <br><br> Переменная среды: `deviceToCloudUploadProperties__uploadOrder={NewestFirst,OldestFirst}` |
@@ -89,7 +91,7 @@ ms.locfileid: "99539439"
 
 Имя этого параметра — `deviceAutoDeleteProperties` . Если вы используете симулятор IoT Edge, присвойте значения соответствующим переменным среды для этих свойств, которые можно найти в разделе пояснения.
 
-| Свойство | Возможные значения | Описание |
+| Свойство. | Возможные значения | Описание |
 | ----- | ----- | ---- |
 | делетеон | true, false | По умолчанию задано значение `false` . Если вы хотите включить эту функцию, присвойте этому полю значение `true` . <br><br> Переменная среды: `deviceAutoDeleteProperties__deleteOn={false,true}` |
 | делетеафтерминутес | `<minutes>` | Укажите время в минутах. Модуль автоматически удалит BLOB-объекты из локального хранилища, когда это значение истечет. Текущая максимальная допустимая минута — 35791. <br><br> Переменная среды: `deviceAutoDeleteProperties__ deleteAfterMinutes=<minutes>` |
@@ -110,7 +112,7 @@ $creds = Get-Credential
 New-SmbGlobalMapping -RemotePath <remote SMB path> -Credential $creds -LocalPath <Any available drive letter>
 ```
 
-Пример:
+Например:
 
 ```powershell
 $creds = Get-Credential
@@ -136,7 +138,7 @@ sudo chown -R 11000:11000 <blob-dir>
 sudo chmod -R 700 <blob-dir>
 ```
 
-Пример:
+Например:
 
 ```terminal
 sudo chown -R 11000:11000 /srv/containerdata
@@ -198,7 +200,7 @@ sudo chmod -R 700 <blob-dir>
 
 Для подключения к локальной учетной записи хранения можно использовать [Обозреватель службы хранилища Azure](https://azure.microsoft.com/features/storage-explorer/) .
 
-1. Загрузка и установка Обозревателя службы хранилища Azure
+1. Загрузка и установка обозревателя службы хранилища Azure
 
 1. Подключение к службе хранилища Azure с помощью строки подключения
 
@@ -301,7 +303,7 @@ sudo chmod -R 700 <blob-dir>
 
 Вы можете связаться с нами по адресу absiotfeedback@microsoft.com
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как [развертывать хранилище BLOB-объектов Azure на IOT Edge](how-to-deploy-blob.md)
 

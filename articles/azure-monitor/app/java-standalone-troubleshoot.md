@@ -4,12 +4,12 @@ description: Узнайте, как устранять неполадки аге
 ms.topic: conceptual
 ms.date: 11/30/2020
 ms.custom: devx-track-java
-ms.openlocfilehash: 45f45e71546909b71c71c66303c1459edd74548f
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: f971466f25c2b7a4bd28e5b7eec6268f1b2e8b3d
+ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102199617"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225580"
 ---
 # <a name="troubleshooting-guide-azure-monitor-application-insights-for-java"></a>Руководство по устранению неполадок: Azure Monitor Application Insights для Java
 
@@ -41,7 +41,9 @@ ms.locfileid: "102199617"
 
 ## <a name="some-logging-is-not-auto-collected"></a>Некоторые журналы не собираются
 
-Ведение журнала захватывается только в том случае, если оно сначала соответствует заданному пороговому значению платформ ведения журналов, а вторая также соответствует пороговому значению Application Insights.
+Ведение журнала захватывается только в том случае, если оно сначала соответствует уровню, настроенному для платформы ведения журнала, и, во-вторых, также соответствует уровню, настроенному для Application Insights.
+
+Например, если ваша платформа ведения журналов настроена для ведения журнала `WARN` (и выше) из пакета `com.example` , а Application Insights настроена для записи `INFO` (и более поздних версий), Application Insights будет записывать только `WARN` (и выше) из пакета `com.example` .
 
 Лучший способ узнать, соответствует ли определенная инструкция ведения журнала заданному пороговому значению платформ ведения журналов, — убедиться, что она отображается в нормальном журнале приложений (например, файл или консоль).
 

@@ -7,12 +7,12 @@ ms.custom: references_regions, devx-track-azurecli
 author: bwren
 ms.author: bwren
 ms.date: 02/07/2021
-ms.openlocfilehash: 556570b02664a0afd01137f939bea67a1014b680
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: ea33eff30e712c1597c3606d74cb6d56683211ae
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102449498"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102615590"
 ---
 # <a name="log-analytics-workspace-data-export-in-azure-monitor-preview"></a>Log Analytics экспорт данных рабочей области в Azure Monitor (Предварительная версия)
 Log Analytics экспорт данных рабочей области в Azure Monitor позволяет непрерывно экспортировать данные из выбранных таблиц в Log Analytics рабочей области в учетную запись хранения Azure или концентратор событий Azure по мере их сбора. Эта статья содержит сведения об этой функции и действиях по настройке экспорта данных в рабочих областях.
@@ -117,7 +117,7 @@ Register-AzResourceProvider -ProviderNamespace Microsoft.insights
 ### <a name="create-or-update-data-export-rule"></a>Создать или обновить правило экспорта данных
 Правило экспорта данных определяет таблицы, для которых экспортируются данные и назначение. В настоящее время для каждого назначения можно создать одно правило.
 
-Если вам нужен список таблиц в воркапце для настройки экспорта правил, выполните этот запрос в рабочей области.
+В правило экспорта должны быть включены таблицы, содержащиеся в рабочей области. Выполните этот запрос, чтобы получить список доступных таблиц в рабочей области.
 
 ```kusto
 find where TimeGenerated > ago(24h) | distinct Type
@@ -125,7 +125,7 @@ find where TimeGenerated > ago(24h) | distinct Type
 
 # <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-Н/Д
+Недоступно
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -401,7 +401,7 @@ PUT https://management.azure.com/subscriptions/<subscription-id>/resourcegroups/
 
 # <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-Н/Д
+Недоступно
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -425,7 +425,7 @@ GET https://management.azure.com/subscriptions/<subscription-id>/resourcegroups/
 
 # <a name="template"></a>[Шаблон](#tab/json)
 
-Н/Д
+Недоступно
 
 ---
 
@@ -433,7 +433,7 @@ GET https://management.azure.com/subscriptions/<subscription-id>/resourcegroups/
 
 # <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-Н/Д
+Недоступно
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -480,7 +480,7 @@ Content-type: application/json
 
 # <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-Н/Д
+Недоступно
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -504,7 +504,7 @@ DELETE https://management.azure.com/subscriptions/<subscription-id>/resourcegrou
 
 # <a name="template"></a>[Шаблон](#tab/json)
 
-Н/Д
+Недоступно
 
 ---
 
@@ -512,7 +512,7 @@ DELETE https://management.azure.com/subscriptions/<subscription-id>/resourcegrou
 
 # <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-Н/Д
+Недоступно
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -536,7 +536,7 @@ GET https://management.azure.com/subscriptions/<subscription-id>/resourcegroups/
 
 # <a name="template"></a>[Шаблон](#tab/json)
 
-Н/Д
+Недоступно
 
 ---
 

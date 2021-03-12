@@ -8,12 +8,12 @@ ms.subservice: edge
 ms.topic: article
 ms.date: 10/23/2020
 ms.author: alkohli
-ms.openlocfilehash: 2139080367cdce9a5f018afab0970a7bd0e7504c
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.openlocfilehash: 66edd4cad5b2f38696ef1df2030687bf4c7d9956
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96467306"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102634181"
 ---
 # <a name="configure-vpn-on-your-azure-stack-edge-pro-r-device-via-azure-powershell"></a>Настройка VPN на устройстве Azure Stack ребра Pro R с помощью Azure PowerShell
 
@@ -165,7 +165,7 @@ VPN-подключение между локальными сетями сост
 
 ## <a name="validate-data-transfer-through-vpn"></a>Проверка передаваемых данных через VPN
 
-Чтобы убедиться, что VPN работает, скопируйте данные в общую папку SMB. Выполните действия, описанные в разделе [Добавление общей папки](azure-stack-edge-j-series-manage-shares.md#add-a-share) на устройство Azure Stack пограничной Pro R. 
+Чтобы убедиться, что VPN работает, скопируйте данные в общую папку SMB. Выполните действия, описанные в разделе [Добавление общей папки](azure-stack-edge-gpu-manage-shares.md#add-a-share) на устройство Azure Stack пограничной Pro R. 
 
 1. Скопируйте файл, например \data\pictures\waterfall.jpg, в общую папку SMB, подключенную к клиентской системе. 
 2. Убедитесь, что этот файл отображается в вашей учетной записи хранения в облаке.

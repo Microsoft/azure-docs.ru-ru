@@ -5,12 +5,12 @@ author: srrengar
 ms.topic: conceptual
 ms.date: 04/03/2018
 ms.author: srrengar
-ms.openlocfilehash: 87fc8e30274f0a11b7ddfc5eeb184f1a45a5351d
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: eaf40bafb68820b56fc9bf00dd4c11fbb337406f
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100588383"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102613465"
 ---
 # <a name="event-aggregation-and-collection-using-windows-azure-diagnostics"></a>Агрегирование и сбор событий с помощью Диагностики Azure для Windows
 > [!div class="op_single_selector"]
@@ -181,15 +181,15 @@ Service Fabric настраивает несколько [стандартных
 
 > [!TIP]
 > Если планируется развернуть контейнеры в кластере, разрешите WAD получать статистику Docker, добавив в раздел **WadCfg > DiagnosticMonitorConfiguration** следующий код:
->
->```json
->"DockerSources": {
->    "Stats": {
->        "enabled": true,
->        "sampleRate": "PT1M"
->    }
->},
->```
+
+```json
+"DockerSources": {
+    "Stats": {
+        "enabled": true,
+        "sampleRate": "PT1M"
+    }
+},
+```
 
 ### <a name="update-storage-quota"></a>Изменение квоты хранилища
 
@@ -351,7 +351,7 @@ Service Fabric настраивает несколько [стандартных
 >[!NOTE]
 >Если вы укажете на портале или в шаблоне Resource Manager неправильный ключ Application Insights, придется вручную заменить его, а затем обновить или повторно развернуть кластер.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вы правильно настроили диагностику Azure, данные из журнала трассировки событий Windows и журнала EventSource станут появляться в таблице хранилища. Если вы решили использовать Azure Monitor журналы, Kibana или любую другую платформу аналитики и визуализации данных, которая не настроена непосредственно в шаблоне диспетчер ресурсов, обязательно настройте платформу для чтения данных из этих таблиц хранилища. Сделать это для журналов Azure Monitor довольно тривиальное, и оно объясняется в [анализе событий и журнала](service-fabric-diagnostics-event-analysis-oms.md). В этом смысле Application Insights — это особый случай, так как это решение можно настроить при настройке расширения диагностики. Дополнительные сведения об Application Insights см. в [этой статье](service-fabric-diagnostics-event-analysis-appinsights.md).
 

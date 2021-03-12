@@ -5,33 +5,31 @@
   items:
     - name: Что такое Content Moderator?
       href: overview.md
+    - name: Поддержка языков
+      href: language-support.md
+    - name: Цены
+      href: 'https://azure.microsoft.com/pricing/details/cognitive-services/content-moderator'
       expanded: true
     - name: Новые возможности
       href: whats-new.md
 - name: Краткие руководства
   items:
-    - name: Пробная версия Content Moderator в Интернете
-      href: quick-start.md
     - name: "Использование клиентской библиотеки или REST\_API"
       href: client-libraries.md
-- name: Учебники
+    - name: Использование пользовательского веб-интерфейса
+      href: quick-start.md
+- name: Примеры
   items:
-    - name: Модерация изображений для электронной коммерции
-      href: ecommerce-retail-catalog-moderation.md
-    - name: Модерация содержимого Facebook
-      href: facebook-post-moderation.md
-- name: Основные понятия
-  items:
-    - name: Модерация изображений
-      href: image-moderation-api.md
-    - name: Модерация текста
-      href: text-moderation-api.md
-    - name: Модерация видео
-      href: video-moderation-human-review.md
-    - name: Средство проверки
-      href: Review-Tool-User-Guide/human-in-the-loop.md
-    - name: 'Обзоры, рабочие процессы и задания'
-      href: review-api.md
+    - name: 'Примеры: браузер'
+      href: 'https://docs.microsoft.com/samples/browse/?terms=content%20moderator'
+    - name: Примеры пакета SDK для .NET
+      href: samples-dotnet.md
+    - name: Примеры пакета SDK для Python
+      href: 'https://github.com/Azure-Samples/cognitive-services-python-sdk-samples'
+    - name: Примеры пакета SDK для Node.js
+      href: 'https://github.com/Azure-Samples/cognitive-services-node-sdk-samples'
+    - name: Примеры для REST API на C#
+      href: samples-rest.md
 - name: Практические руководства
   items:
     - name: Модерация содержимого
@@ -80,47 +78,53 @@
       href: Review-Tool-User-Guide/Configure.md
     - name: Экспорт или удаление данных учетной записи
       href: ./export-delete-data.md
+    - name: Настройка Content Moderator
+      items:
+        - name: 'Обзоры, рабочие процессы и задания'
+          href: review-api.md
+- name: Основные понятия
+  items:
+    - name: Модерация изображений
+      href: image-moderation-api.md
+    - name: Модерация текста
+      href: text-moderation-api.md
+    - name: Модерация видео
+      href: video-moderation-human-review.md
+    - name: Средство проверки
+      href: Review-Tool-User-Guide/human-in-the-loop.md
+- name: Учебники
+  items:
+    - name: Модерация изображений для электронной коммерции
+      href: ecommerce-retail-catalog-moderation.md
+    - name: Модерация содержимого Facebook
+      href: facebook-post-moderation.md
 - name: Справочник
   items:
-    - name: API Content Moderator
+    - name: "REST\_API Content Moderator"
       href: api-reference.md
-    - name: Пакеты SDK
-      items:
-        - name: .NET
-          href: /dotnet/api/overview/azure/cognitiveservices/client/contentmoderator
-        - name: Java
-          href: /java/api/overview/azure/cognitiveservices/client/contentmoderator
-        - name: Node.js
-          href: /javascript/api/@azure/cognitiveservices-contentmoderator/
-        - name: Python
-          href: /python/api/overview/azure/cognitiveservices/contentmoderator
-        - name: Go
-          href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/contentmoderator'
+    - name: .NET
+      href: /dotnet/api/overview/azure/cognitiveservices/client/contentmoderator
+    - name: Java
+      href: /java/api/overview/azure/cognitiveservices/client/contentmoderator
+    - name: Node.js
+      href: /javascript/api/@azure/cognitiveservices-contentmoderator/
+    - name: Python
+      href: /python/api/overview/azure/cognitiveservices/contentmoderator
+    - name: Go
+      href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/contentmoderator'
 - name: Ресурсы
   items:
-    - name: Возможности получения поддержки и справки
-      href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/content-moderator/context/context
-    - name: Примеры
-      items:
-        - name: Примеры пакета SDK для .NET
-          href: samples-dotnet.md
-        - name: Примеры пакета SDK для Python
-          href: 'https://github.com/Azure-Samples/cognitive-services-python-sdk-samples'
-        - name: Примеры пакета SDK для Node.js
-          href: 'https://github.com/Azure-Samples/cognitive-services-node-sdk-samples'
-        - name: Примеры для REST API на C#
-          href: samples-rest.md
-        - name: Другие примеры для Azure
-          href: /samples/browse/?products=azure&term=content-moderator
     - name: Серии вебинаров по Azure
       href: 'https://info.microsoft.com/cognitive-services-content-moderator-ondemand.html'
-    - name: Цены и ограничения
-      href: 'https://azure.microsoft.com/pricing/details/cognitive-services/content-moderator'
-    - name: Поддержка языков
-      href: language-support.md
-    - name: Доступность по регионам
+    - name: Поддержка регионов
       href: 'https://azure.microsoft.com/global-infrastructure/services/'
-    - name: Стратегия развития Azure
+    - name: Модули Microsoft Learn
+      href: 'https://docs.microsoft.com/learn/browse/?terms=content%20moderator'
+    - name: Возможности получения поддержки и справки
+      href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/content-moderator/context/context
+    - name: Azure для государственных организаций и глобальное облако Azure
+      href: 'https://docs.microsoft.com/en-us/azure/azure-government/compare-azure-government-global-azure'
+    - name: Обновления Azure
       href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
     - name: Соответствие нормативным требованиям
       href: 'https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/'

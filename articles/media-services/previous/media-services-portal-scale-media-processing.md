@@ -3,7 +3,7 @@ title: Масштабирование обработки мультимедиа 
 description: В этом руководстве описывается, как масштабировать обработку данных мультимедиа с помощью портала Azure.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: e500f733-68aa-450c-b212-cf717c0d15da
@@ -12,14 +12,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/19/2019
-ms.author: juliako
-ms.openlocfilehash: c637817e88e9258a0f80cf72f737b0deae753002
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: 49c3899b912a88605e9269cdb1c34c7e18ed5247
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "96012260"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103009731"
 ---
 # <a name="change-the-reserved-unit-type"></a>Изменение типа зарезервированных единиц
 
@@ -62,7 +62,7 @@ ms.locfileid: "96012260"
    
     Новые зарезервированные единицы выделяются сразу после нажатия кнопки "СОХРАНИТЬ".
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Просмотрите схемы обучения работе со службами мультимедиа.
 
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]

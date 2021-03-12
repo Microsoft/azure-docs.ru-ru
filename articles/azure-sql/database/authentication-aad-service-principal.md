@@ -9,12 +9,12 @@ author: GithubMirek
 ms.author: mireks
 ms.reviewer: vanto
 ms.date: 02/11/2021
-ms.openlocfilehash: 15cc935457f76fb1d2fe4e8d699db831ebacc357
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 68267cdedd2f0b64549791866e8750cf42928ab4
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102181760"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103201245"
 ---
 # <a name="azure-active-directory-service-principal-with-azure-sql"></a>Субъект-служба Azure Active Directory с SQL Azure
 
@@ -52,7 +52,7 @@ ms.locfileid: "102181760"
 
 Чтобы включить создание объектов Azure AD в базе данных SQL и Azure синапсе от имени приложения Azure AD, необходимы следующие параметры:
 
-1. Назначьте удостоверение сервера. Назначенное удостоверение сервера представляет управляемую системную идентификацию (MSI). В настоящее время удостоверение сервера для Azure SQL не поддерживает управляемое пользователем удостоверение (УМИ).
+1. Назначьте удостоверение сервера. Назначенное удостоверение сервера представляет Управляемое удостоверение службы (MSI). В настоящее время удостоверение сервера для Azure SQL не поддерживает управляемое пользователем удостоверение (УМИ).
     - Для нового логического сервера SQL Azure выполните следующую команду PowerShell:
     
     ```powershell
