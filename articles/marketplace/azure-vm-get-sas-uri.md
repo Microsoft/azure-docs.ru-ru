@@ -6,17 +6,18 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
 author: iqshahmicrosoft
 ms.author: krsh
-ms.date: 1/5/2021
-ms.openlocfilehash: 560699296b8cae83413c36820106eedf7fef7414
-ms.sourcegitcommit: 67b44a02af0c8d615b35ec5e57a29d21419d7668
+ms.date: 02/19/2021
+ms.openlocfilehash: 870482ca7894c5e260a78270fb036d6a6b22ee41
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97914167"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102630067"
 ---
 # <a name="how-to-generate-a-sas-uri-for-a-vm-image"></a>Создание URI SAS для образа виртуальной машины
 
-Во время процесса публикации необходимо предоставить URI SAS (подписанный URL-адрес) для каждого виртуального жесткого диска, связанного с планами (ранее именуемыми SKU). Майкрософт понадобится доступ к этим дискам во время сертификации. Этот универсальный код ресурса (URI) вводится на вкладке **планы** в центре партнеров.
+> [!NOTE]
+> Для публикации виртуальной машины не требуется URI SAS. Вы можете просто поделиться изображением в центре части. Дополнительные сведения см. в статье [Создание виртуальной машины с помощью утвержденной базы](https://docs.microsoft.com/azure/marketplace/azure-vm-create-using-approved-base) или [Создание виртуальной машины с помощью собственных образов](https://docs.microsoft.com/azure/marketplace/azure-vm-create-using-own-image) .
 
 Создание URI SAS для виртуальных жестких дисков имеет следующие требования:
 
@@ -24,6 +25,71 @@ ms.locfileid: "97914167"
 - Требуются только разрешения List и Read. Не предоставлять доступ на запись или удаление.
 - длительность предоставления доступа (до даты окончания срока действия) должна составлять не менее трех недель с момента создания URI SAS;
 - чтобы не зависеть от формата времени UTC, укажите дату начала на один день раньше текущей даты; Например, если текущая дата — 16 июня 2020, то выберите 6/15/2020.
+
+## <a name="extract-vhd-from-a-vm"></a>Извлечение виртуального жесткого диска из виртуальной машины
+
+> [!NOTE]
+> Если виртуальный жесткий диск уже передан в учетную запись хранения, этот шаг можно пропустить.
+
+Чтобы извлечь виртуальный жесткий диск из виртуальной машины, необходимо создать моментальный снимок диска виртуальной машины и извлечь VHD из моментального снимка.
+
+Начните с создания моментального снимка диска виртуальной машины:
+
+1. Войдите на портал Azure.
+2. Начиная с верхнего левого угла, выберите Создать ресурс, а затем найдите и выберите снимок.
+3. В колонке моментальный снимок выберите Создать.
+4. Заполните поле Имя для моментального снимка.
+5. Выберите существующую группу ресурсов или введите имя для новой.
+6. В поле Исходный диск выберите управляемый диск, моментальный снимок которого необходимо создать.
+7. Выберите тип учетной записи, которая будет использоваться для хранения моментального снимка. Используйте диск HDD ценовой категории "Стандартный", если вам не нужно хранить моментальный снимок на высокопроизводительном диске SSD.
+8. Нажмите кнопку "Создать".
+
+### <a name="extract-the-vhd"></a>Извлечение виртуального жесткого диска
+
+Используйте следующий скрипт для экспорта моментального снимка в виртуальный жесткий диск в вашей учетной записи хранения.
+
+```azurecli
+#Provide the subscription Id where the snapshot is created
+$subscriptionId=yourSubscriptionId
+
+#Provide the name of your resource group where the snapshot is created
+$resourceGroupName=myResourceGroupName
+
+#Provide the snapshot name
+$snapshotName=mySnapshot
+
+#Provide Shared Access Signature (SAS) expiry duration in seconds (such as 3600)
+#Know more about SAS here: https://docs.microsoft.com/en-us/azure/storage/storage-dotnet-shared-access-signature-part-1
+$sasExpiryDuration=3600
+
+#Provide storage account name where you want to copy the underlying VHD file. 
+$storageAccountName=mystorageaccountname
+
+#Name of the storage container where the downloaded VHD will be stored.
+$storageContainerName=mystoragecontainername
+
+#Provide the key of the storage account where you want to copy the VHD 
+$storageAccountKey=mystorageaccountkey
+
+#Give a name to the destination VHD file to which the VHD will be copied.
+$destinationVHDFileName=myvhdfilename.vhd
+
+az account set --subscription $subscriptionId
+
+sas=$(az snapshot grant-access --resource-group $resourceGroupName --name $snapshotName --duration-in-seconds $sasExpiryDuration --query [accessSas] -o tsv)
+
+az storage blob copy start --destination-blob $destinationVHDFileName --destination-container $storageContainerName --account-name $storageAccountName --account-key $storageAccountKey --source-uri $sas
+```
+
+### <a name="script-explanation"></a>Описание скрипта
+Этот скрипт использует следующие команды для создания URI SAS для моментального снимка и копирует базовый виртуальный жесткий диск в учетную запись хранения с помощью URI SAS. Для каждой команды в таблице приведены ссылки на соответствующую документацию.
+
+
+|Get-Help  |Примечания  |
+|---------|---------|
+| az disk grant-access    |     Создает SAS только для чтения, который используется для копирования базового VHD-файла в учетную запись хранения или загрузки в локальную среду    |
+|  az storage blob copy start   |    Асинхронно копирует большой двоичный объект из одной учетной записи хранения в другую. Чтобы проверить состояние нового большого двоичного объекта, используйте команду AZ Storage BLOB показывать.     |
+|
 
 ## <a name="generate-the-sas-address"></a>Создание адреса SAS
 

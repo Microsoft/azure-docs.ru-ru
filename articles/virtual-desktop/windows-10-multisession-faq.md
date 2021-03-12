@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.date: 02/19/2020
 ms.author: helohr
 manager: lizross
-ms.openlocfilehash: 24d27859aad7642392a5702ab7ddbb727b538d51
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.openlocfilehash: d76fd3b30d823efbf85e84a74a21c694f5a0e6fb
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95025016"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102565569"
 ---
 # <a name="windows-10-enterprise-multi-session-faq"></a>Windows 10 Корпоративная с поддержкой нескольких сеансов: часто задаваемые вопросы
 
@@ -81,7 +81,7 @@ Windows 10 Корпоративная многосеансовая поддер�
 
 - [Публикация встроенных приложений в виртуальном рабочем столе Windows](publish-apps.md)
 - [Параметры командной строки для обслуживания пакета приложения DISM](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
-- [Add-Аппкспровисионедпаккаже](/powershell/module/dism/add-appxprovisionedpackage?view=win10-ps)
+- [Add-Аппкспровисионедпаккаже](/powershell/module/dism/add-appxprovisionedpackage)
 
 ## <a name="how-do-i-make-sure-users-dont-download-and-install-apps-from-the-microsoft-store"></a>Разделы справки убедиться, что пользователи не загружают и не устанавливают приложения из Microsoft Store?
 

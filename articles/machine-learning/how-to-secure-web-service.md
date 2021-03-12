@@ -7,15 +7,15 @@ ms.service: machine-learning
 ms.subservice: core
 ms.author: aashishb
 author: aashishb
-ms.date: 01/04/2021
+ms.date: 03/11/2021
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: e0e25a804ac66ca33715906ce4d397b80887037d
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 71cb2e9e112c49d77a2a0b47c24c49cabfa86589
+ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102518557"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103149024"
 ---
 # <a name="use-tls-to-secure-a-web-service-through-azure-machine-learning"></a>Использование TLS для защиты веб-службы с помощью Машинного обучения Azure.
 
@@ -97,7 +97,7 @@ TLS можно включить с помощью сертификата Май�
     provisioning_config = AksCompute.provisioning_configuration()
 
     # Leaf domain label generates a name using the formula
-    #  "<leaf-domain-label>######.<azure-region>.cloudapp.azure.net"
+    #  "<leaf-domain-label>######.<azure-region>.cloudapp.azure.com"
     #  where "######" is a random series of characters
     provisioning_config.enable_ssl(leaf_domain_label = "contoso")
 
@@ -107,7 +107,7 @@ TLS можно включить с помощью сертификата Май�
                                           cluster_name = cluster_name)
 
     # Leaf domain label generates a name using the formula
-    #  "<leaf-domain-label>######.<azure-region>.cloudapp.azure.net"
+    #  "<leaf-domain-label>######.<azure-region>.cloudapp.azure.com"
     #  where "######" is a random series of characters
     attach_config.enable_ssl(leaf_domain_label = "contoso")
     ```
@@ -173,7 +173,7 @@ aci_config = AciWebservice.deploy_configuration(
 
 > [!IMPORTANT]
 > * Если существующий сертификат по-прежнему действителен, используйте `renew=True` (пакет SDK) или `--ssl-renew` (CLI), чтобы принудительно обновить конфигурацию. Например, если существующий сертификат по-прежнему действителен в течение 10 дней и не используется `renew=True` , то сертификат может быть не продлен.
-> * При первоначальном развертывании службы `leaf_domain_label` используется для создания DNS-имени с помощью шаблона `<leaf-domain-label>######.<azure-region>.cloudapp.azure.net` . Чтобы сохранить существующее имя (включая 6 созданных ранее цифр), используйте исходное `leaf_domain_label` значение. Не включайте созданные 6 цифр.
+> * При первоначальном развертывании службы `leaf_domain_label` используется для создания DNS-имени с помощью шаблона `<leaf-domain-label>######.<azure-region>.cloudapp.azure.com` . Чтобы сохранить существующее имя (включая 6 созданных ранее цифр), используйте исходное `leaf_domain_label` значение. Не включайте созданные 6 цифр.
 
 **Использование пакета SDK**
 

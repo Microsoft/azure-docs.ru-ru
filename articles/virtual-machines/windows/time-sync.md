@@ -2,17 +2,18 @@
 title: Синхронизация времени для виртуальных машин Windows в Azure
 description: Синхронизация времени для виртуальных машин Windows
 author: cynthn
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
+ms.collection: windows
 ms.topic: conceptual
 ms.workload: infrastructure-services
 ms.date: 09/17/2018
 ms.author: cynthn
-ms.openlocfilehash: 830bdd45be4b0365ac45bc3ea366b99a34882a4c
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 85abc77757d31f3b1054a0670ea3f65a4fcb2e52
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96010628"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102555964"
 ---
 # <a name="time-sync-for-windows-vms-in-azure"></a>Синхронизация времени для виртуальных машин Windows в Azure
 
@@ -168,11 +169,11 @@ w32tm /config /update
 w32tm /dumpreg /subkey:Parameters | findstr /i "ntpserver"
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Ниже приведены ссылки на дополнительные материалы по синхронизации времени:
 
 - [Инструменты и параметры службы времени Windows](/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings)
 - [Улучшения Windows Server 2016 ](/windows-server/networking/windows-time-service/windows-server-2016-improvements)
-- [Точное время для Windows Server 2016](/windows-server/networking/windows-time-service/accurate-time)
+- [Точное время в Windows Server 2016](/windows-server/networking/windows-time-service/accurate-time)
 - [Граница области поддержки для настройки службы времени Windows в высокоточных средах](/windows-server/networking/windows-time-service/support-boundary)

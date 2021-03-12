@@ -12,12 +12,12 @@ author: GithubMirek
 ms.author: mireks
 ms.reviewer: vanto, sstein
 ms.date: 08/17/2020
-ms.openlocfilehash: b8711b3995c322614c547434850d7c031abfadd5
-ms.sourcegitcommit: b4e6b2627842a1183fce78bce6c6c7e088d6157b
+ms.openlocfilehash: f3c34526fd4005dbbb0be7e763721e125ed7828e
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99094949"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103201217"
 ---
 # <a name="configure-and-manage-azure-ad-authentication-with-azure-sql"></a>Настройка и администрирование проверки подлинности Azure Active Directory с помощью Azure SQL
 
@@ -345,8 +345,8 @@ Remove-AzSqlServerActiveDirectoryAdministrator -ResourceGroupName "Group-23" -Se
 - Платформа .NET Framework 4,6 или более поздней версии с [https://msdn.microsoft.com/library/5a4x27ek.aspx](/dotnet/framework/install/guide-for-developers) .
 - Библиотека проверки подлинности Azure Active Directory для SQL Server (*ADAL.DLL*). Ниже приведены ссылки для загрузки для установки последнего драйвера SSMS, ODBC и OLE DB, содержащего библиотеку *ADAL.DLL* .
   - [Среда SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms)
-  - [ODBC Driver for SQL Server версии 17](https://www.microsoft.com/download/details.aspx?id=56567)
-  - [OLE DB драйвер 18 для SQL Server](https://www.microsoft.com/download/details.aspx?id=56730)
+  - [ODBC Driver for SQL Server версии 17](/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15)
+  - [OLE DB драйвер 18 для SQL Server](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver15)
 
 Вы можете выполнить эти требования, сделав следующее:
 
@@ -355,9 +355,9 @@ Remove-AzSqlServerActiveDirectoryAdministrator -ResourceGroupName "Group-23" -Se
   - SSDT устанавливает версию amd64 *ADAL.DLL*.
   - Последняя версия Visual Studio из [файлов для загрузки Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs) соответствует требованиям платформа .NET Framework 4,6, но не устанавливает требуемую версию amd64 *ADAL.DLL*.
 
-## <a name="create-contained-users-mapped-to-azure-ad-identities"></a>Создание автономных пользователей, сопоставленных с удостоверениями Azure AD
+## <a name="create-contained-users-mapped-to-azure-ad-identities"></a>Создание автономных пользователей, сопоставленных с удостоверениями Azure AD
 
-Поскольку SQL Управляемый экземпляр поддерживает субъекты сервера Azure AD (имена входа), использование пользователей автономной базы данных не требуется. Участники сервера Azure AD (имена входа) позволяют создавать имена входа из пользователей, групп или приложений Azure AD. Это означает, что вы можете пройти проверку подлинности в Управляемый экземпляр SQL с помощью имени входа сервера Azure AD, а не пользователя автономной базы данных. Дополнительные сведения см. в разделе [SQL управляемый экземпляр Overview](../managed-instance/sql-managed-instance-paas-overview.md#azure-active-directory-integration). Сведения о синтаксисе для создания субъектов сервера (имен для входа) Azure AD см. в статье <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current">CREATE LOGIN (Transact-SQL)</a>.
+Поскольку SQL Управляемый экземпляр поддерживает субъекты сервера Azure AD (имена входа), использование пользователей автономной базы данных не требуется. Субъекты сервера (имена для входа) Azure AD позволяют создавать имена для входа для пользователей, групп или приложений Azure AD. Это означает, что вы можете пройти проверку подлинности в Управляемый экземпляр SQL с помощью имени входа сервера Azure AD, а не пользователя автономной базы данных. Дополнительные сведения см. в разделе [SQL управляемый экземпляр Overview](../managed-instance/sql-managed-instance-paas-overview.md#azure-active-directory-integration). Сведения о синтаксисе для создания субъектов сервера (имен для входа) Azure AD см. в статье <a href="/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current">CREATE LOGIN (Transact-SQL)</a>.
 
 Однако использование Azure Active Directory проверки подлинности с базой данных SQL и Azure синапсе требует использования пользователей автономной базы данных на основе удостоверения Azure AD. Пользователь автономной базы данных не имеет имени входа в базе данных master и сопоставляется с удостоверением в Azure AD, связанным с базой данных. Удостоверение Azure AD может быть учетной записью отдельного пользователя или группы. Дополнительные сведения о пользователях автономной базы данных см. в статье [Пользователи автономной базы данных — создание переносимой базы данных](/sql/relational-databases/security/contained-database-users-making-your-database-portable).
 

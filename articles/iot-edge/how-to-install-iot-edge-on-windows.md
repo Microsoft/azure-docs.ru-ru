@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/20/2021
 ms.author: v-tcassi
 monikerRange: =iotedge-2018-06
-ms.openlocfilehash: c12dbeb81fd2b3d67863b5b84fa30cf77e165549
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 812bfcc8d82c08600bd7391cdf70661585ceaf2f
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102123196"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103015188"
 ---
 # <a name="install-and-provision-azure-iot-edge-for-linux-on-a-windows-device-preview"></a>Установка и инициализация Azure IoT Edge для Linux на устройстве Windows (предварительная версия)
 
@@ -43,18 +43,11 @@ Azure IoT Edge для Linux в Windows позволяет использоват
   * Минимальный объем ОЗУ: 4 ГБ (рекомендуется 8 ГБ)
   * Минимальный объем хранилища: 10 ГБ
 
-* Доступ к сборке Insider Preview в центре администрирования Windows с установленным расширением Azure IoT Edge для центра администрирования Windows:  <!-- The link below needs the language localization to work; otherwise broken -->
-   1. Посетите [предварительную версию Windows Insider](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver)Preview.
+* Доступ к центру администрирования Windows с установленным расширением Azure IoT Edge для центра администрирования Windows:
 
-   1. В раскрывающемся списке предварительного просмотра выберите **Windows Admin Center (Предварительная версия) — сборка 2012** и нажмите кнопку **подтвердить**.
+   1. Скачайте [установщик центра администрирования Windows](https://aka.ms/wacdownload).
 
-      ![В раскрывающемся меню доступные предварительные версии выберите центр администрирования Windows — сборка 2012.](./media/how-to-install-iot-edge-on-windows/select-windows-admin-center-preview-build.png)
-
-   1. В раскрывающемся списке **выберите язык** выберите **Английский** и нажмите кнопку **подтвердить**.
-
-   1. Выберите **скачать сейчас** , чтобы скачать *WindowsAdminCenterPreview2012.msi*.
-
-   1. Запустите *WindowsAdminCenterPreview2012.msi* и следуйте инструкциям мастера установки, чтобы установить центр администрирования Windows. После установки откройте центр администрирования Windows.
+   1. Запустите скачанный установщик и следуйте указаниям мастера установки, чтобы установить центр администрирования Windows. После установки откройте центр администрирования Windows.
 
    1. При первом использовании центра администрирования Windows вам будет предложено выбрать сертификат для использования. В качестве сертификата выберите **клиент центра администрирования Windows** .
 
@@ -91,7 +84,7 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
 
 Создайте развертывание Azure IoT Edge для Linux в Windows на целевом устройстве.
 
-# <a name="windows-admin-center"></a>[Windows Admin Center](#tab/windowsadmincenter);
+# <a name="windows-admin-center"></a>[Windows Admin Center](#tab/windowsadmincenter)
 
 На начальной странице центра администрирования Windows в списке подключений отображается подключение к локальному узлу, представляющее компьютер, на котором работает центр администрирования Windows. Все дополнительные серверы, компьютеры или кластеры, которыми вы управляете, также будут отображаться здесь.
 
@@ -101,7 +94,7 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
 
    ![Начальная панель мониторинга центра администрирования Windows с указанным целевым устройством](./media/how-to-install-iot-edge-on-windows/windows-admin-center-initial-dashboard.png)
 
-1. Нажмите **Добавить**.
+1. Выберите **Добавить**.
 
 1. На панели **Добавление или создание ресурсов** выберите плитку **Azure IOT Edge** . Выберите **создать** , чтобы установить новый экземпляр Azure IOT Edge для Linux в Windows на устройстве.
 
@@ -143,7 +136,7 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
    ```azurepowershell-interactive
    $msiPath = $([io.Path]::Combine($env:TEMP, 'AzureIoTEdge.msi'))
    $ProgressPreference = 'SilentlyContinue'
-   Invoke-WebRequest "https://aka.ms/AzureEdgeForLinuxOnWindowsMSI" -OutFile $msiPath
+   Invoke-WebRequest "https://aka.ms/AzEflowMSI" -OutFile $msiPath
    ```
 
 1. Установите IoT Edge для Linux в Windows на устройстве.
@@ -200,7 +193,7 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
 
 В этом разделе описывается подготовка устройства вручную с помощью строки подключения устройства Azure IoT Edge.
 
-# <a name="windows-admin-center"></a>[Windows Admin Center](#tab/windowsadmincenter);
+# <a name="windows-admin-center"></a>[Windows Admin Center](#tab/windowsadmincenter)
 
 1. В области **Подготовка устройства Azure IOT Edge** выберите **строку подключения (вручную)** в раскрывающемся списке Метод подготовки.
 
@@ -232,7 +225,7 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
 
 В этом разделе описывается подготовка устройства автоматически с помощью политики DPS и симметричных ключей.
 
-# <a name="windows-admin-center"></a>[Windows Admin Center](#tab/windowsadmincenter);
+# <a name="windows-admin-center"></a>[Windows Admin Center](#tab/windowsadmincenter)
 
 1. В области **Подготовка устройства Azure IOT Edge** выберите **симметричный ключ (DPS)** в раскрывающемся списке Метод подготовки.
 
@@ -274,7 +267,7 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
 
 В этом разделе описывается подготовка устройства автоматически с помощью DPS и сертификатов X. 509.
 
-# <a name="windows-admin-center"></a>[Windows Admin Center](#tab/windowsadmincenter);
+# <a name="windows-admin-center"></a>[Windows Admin Center](#tab/windowsadmincenter)
 
 1. В области **Подготовка устройства Azure IOT Edge** выберите **сертификат X. 509 (DPS)** в раскрывающемся списке Метод подготовки.
 
@@ -318,7 +311,7 @@ Azure IoT Edge для Linux в Windows поддерживает следующи
 
 Убедитесь, что IoT Edge для Linux в Windows успешно установлены и настроены на устройстве IoT Edge.
 
-# <a name="windows-admin-center"></a>[Windows Admin Center](#tab/windowsadmincenter);
+# <a name="windows-admin-center"></a>[Windows Admin Center](#tab/windowsadmincenter)
 
 1. Выберите устройство IoT Edge из списка подключенных устройств в центре администрирования Windows, чтобы подключиться к нему.
 

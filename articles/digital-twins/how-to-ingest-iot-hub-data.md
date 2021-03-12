@@ -7,12 +7,12 @@ ms.author: alkarche
 ms.date: 9/15/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 9ecc14aa9591d6e62dccd9899a80de44411928a1
-ms.sourcegitcommit: 8dd8d2caeb38236f79fe5bfc6909cb1a8b609f4a
+ms.openlocfilehash: 3223a1c8e20d8b0caced5d940132c32fa0aba97c
+ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98051094"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103149104"
 ---
 # <a name="ingest-iot-hub-telemetry-into-azure-digital-twins"></a>Прием данных телеметрии центра Интернета вещей в Azure Digital двойников
 
@@ -22,17 +22,16 @@ Azure Digital двойников управляет данными из устр
 
 В этом документе описывается процесс создания функции, которая может принимать данные телеметрии из центра Интернета вещей.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Прежде чем продолжить работу с этим примером, необходимо настроить следующие ресурсы в качестве необходимых компонентов:
 * **Центр Интернета вещей**. Инструкции см. в разделе " *Создание центра Интернета вещей* " [этого руководства центра Интернета вещей](../iot-hub/quickstart-send-telemetry-cli.md).
-* **Функция** с правильными разрешениями для вызова вашего экземпляра Digital двойника. Инструкции см. в разделе [*инструкции. Настройка функции в Azure для обработки данных*](how-to-create-azure-function.md). 
 * **Экземпляр цифрового двойников Azure** , который будет принимать данные телеметрии устройства. Инструкции см. [*в статье Настройка экземпляра и проверки подлинности Azure Digital двойников*](./how-to-set-up-instance-portal.md).
 
 ### <a name="example-telemetry-scenario"></a>Пример сценария телеметрии
 
 В этой инструкции показано, как отправить сообщения из центра Интернета вещей в Azure Digital двойников с помощью функции в Azure. Существует множество возможных конфигураций и стратегий сопоставления, которые можно использовать для отправки сообщений, но пример для этой статьи содержит следующие компоненты.
-* Устройство термометра в центре Интернета вещей с известным ИДЕНТИФИКАТОРом устройства
+* Устройство термостата в центре Интернета вещей с известным ИДЕНТИФИКАТОРом устройства
 * Цифровой двойника для представления устройства с совпадающим ИДЕНТИФИКАТОРом
 
 > [!NOTE]
@@ -44,24 +43,39 @@ Azure Digital двойников управляет данными из устр
 
 ## <a name="add-a-model-and-twin"></a>Добавление модели и двойника
 
-Вы можете добавить или передать модель с помощью приведенной ниже команды CLI, а затем создать двойника с помощью этой модели, которая будет обновлена информацией из центра Интернета вещей.
+В этом разделе вы настроите [цифровое двойника](concepts-twins-graph.md) в Azure Digital двойников, которое будет представлять устройство термостата и будет обновлено с информацией из центра Интернета вещей.
+
+Чтобы создать термостата-тип двойника, сначала необходимо передать в экземпляр [модель](concepts-models.md) термостата, которая описывает свойства термостата и будет использоваться позже для создания двойника. 
 
 Модель выглядит следующим образом:
 :::code language="json" source="~/digital-twins-docs-samples/models/Thermostat.json":::
 
-Чтобы **передать эту модель в экземпляр двойников**, откройте Azure CLI и выполните следующую команду:
+Чтобы **передать эту модель в экземпляр двойников**, выполните следующую команду Azure CLI, которая передает указанную выше модель в виде встроенного JSON. Можно выполнить команду в [Azure Cloud Shell](/cloud-shell/overview.md) в браузере или на компьютере, если интерфейс командной строки [установлен локально](/cli/azure/install-azure-cli.md).
 
 ```azurecli-interactive
 az dt model create --models '{  "@id": "dtmi:contosocom:DigitalTwins:Thermostat;1",  "@type": "Interface",  "@context": "dtmi:dtdl:context;2",  "contents": [    {      "@type": "Property",      "name": "Temperature",      "schema": "double"    }  ]}' -n {digital_twins_instance_name}
 ```
 
-Затем необходимо **создать один двойника с помощью этой модели**. Используйте следующую команду, чтобы создать двойника и установить 0,0 в качестве начального значения температуры.
+Затем необходимо **создать один двойника с помощью этой модели**. Используйте следующую команду, чтобы создать термостата двойника с именем **thermostat67** и задать 0,0 в качестве начального значения температуры.
 
 ```azurecli-interactive
 az dt twin create --dtmi "dtmi:contosocom:DigitalTwins:Thermostat;1" --twin-id thermostat67 --properties '{"Temperature": 0.0,}' --dt-name {digital_twins_instance_name}
 ```
 
-Выходные данные успешной команды двойника Create должны выглядеть следующим образом:
+>[!NOTE]
+> При использовании Cloud Shell в среде PowerShell может потребоваться escape-последовательность символов кавычек во встроенных полях JSON, чтобы их значения были проанализированы должным образом. Ниже приведены команды для отправки модели и создания двойника с этим изменением.
+>
+> Модель передачи:
+> ```azurecli-interactive
+> az dt model create --models '{  \"@id\": \"dtmi:contosocom:DigitalTwins:Thermostat;1\",  \"@type\": \"Interface\",  \"@context\": \"dtmi:dtdl:context;2\",  \"contents\": [    {      \"@type\": \"Property\",      \"name\": \"Temperature\",      \"schema\": \"double\"    }  ]}' -n {digital_twins_instance_name}
+> ```
+>
+> Создайте двойника:
+> ```azurecli-interactive
+> az dt twin create --dtmi "dtmi:contosocom:DigitalTwins:Thermostat;1" --twin-id thermostat67 --properties '{\"Temperature\": 0.0,}' --dt-name {digital_twins_instance_name}
+> ```
+
+После успешного создания двойника выходные данные CLI команды должны выглядеть примерно следующим образом:
 ```json
 {
   "$dtId": "thermostat67",
@@ -82,78 +96,65 @@ az dt twin create --dtmi "dtmi:contosocom:DigitalTwins:Thermostat;1" --twin-id t
 
 ## <a name="create-a-function"></a>Создание функции
 
-В этом разделе используются те же шаги запуска Visual Studio и схема функций из [*руководства: Настройка функции для обработки данных*](how-to-create-azure-function.md). Скелет обрабатывает аутентификацию и создает клиент службы, готовый к обработке данных и вызов интерфейсов API цифровых двойников Azure в ответе. 
+В этом разделе вы создадите функцию Azure для доступа к Azure Digital двойников и Update двойников на основе полученных событий телеметрии IoT. Выполните следующие действия, чтобы создать и опубликовать функцию.
 
-В следующих шагах вы добавите в него Специальный код для обработки событий телеметрии IoT из центра Интернета вещей.  
+#### <a name="step-1-create-a-function-app-project"></a>Шаг 1. Создание проекта приложения-функции
 
-### <a name="add-telemetry-processing"></a>Добавление обработки телеметрии
-    
-События телеметрии поступают в виде сообщений с устройства. Первым шагом при добавлении кода обработки телеметрии является извлечение соответствующей части сообщения об устройстве из события сетки событий. 
+Сначала создайте новый проект приложения-функции в Visual Studio. Инструкции по выполнению этой задачи см. в разделе [**Создание приложения-функции в Visual Studio**](how-to-create-azure-function.md#create-a-function-app-in-visual-studio) статьи инструкции. *Настройка функции для обработки данных* .
 
-Различные устройства могут структурировать свои сообщения по-разному, поэтому код для **этого шага зависит от подключенного устройства.** 
+#### <a name="step-2-fill-in-function-code"></a>Шаг 2. заполнение в коде функции
 
-В следующем коде показан пример для простого устройства, отправляющего данные телеметрии в формате JSON. Этот пример полностью рассмотрен в руководстве по [*подключению комплексного решения*](./tutorial-end-to-end.md). Следующий код находит идентификатор устройства, отправившего сообщение, а также значение температуры.
+Добавьте в проект следующие пакеты:
+* [Azure. Дигиталтвинс. Core](https://www.nuget.org/packages/Azure.DigitalTwins.Core/)
+* [Azure. Identity](https://www.nuget.org/packages/Azure.Identity/)
+* [Microsoft.Azure.WebJobs.Extensions.EventGrid](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.EventGrid/)
 
-:::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/IoTHubToTwins.cs" id="Find_device_ID_and_temperature":::
-
-Следующий пример кода принимает значение ID и температуру и использует их для установки исправления (внесения обновлений) в двойника.
-
-:::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/IoTHubToTwins.cs" id="Update_twin_with_device_temperature":::
-
-### <a name="update-your-function-code"></a>Обновление кода функции
-
-Теперь, когда вы понимаете код из предыдущих примеров, откройте функцию из раздела [*Предварительные требования*](#prerequisites) в Visual Studio. (Если у вас нет функции, созданной в Azure, перейдите по ссылке в предварительных требованиях, чтобы создать ее сейчас).
-
-Замените код функции на этот пример кода.
+Переименуйте демонстрационную функцию *function1.CS* , созданную Visual Studio с новым проектом, на *IoTHubtoTwins.CS*. Замените код в файле следующим кодом:
 
 :::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/IoTHubToTwins.cs":::
 
-Сохраните код функции и опубликуйте приложение функции в Azure. Дополнительные сведения см. в разделе [*Публикация приложения-функции*](./how-to-create-azure-function.md#publish-the-function-app-to-azure) в статье [*как настроить функцию в Azure для обработки данных*](how-to-create-azure-function.md).
+Сохраните код функции.
 
-После успешной публикации вы увидите выходные данные в окне командной строки Visual Studio, как показано ниже:
+#### <a name="step-3-publish-the-function-app-to-azure"></a>Шаг 3. Публикация приложения функции в Azure
 
-```cmd
-1>------ Build started: Project: adtIngestFunctionSample, Configuration: Release Any CPU ------
-1>adtIngestFunctionSample -> C:\Users\source\repos\Others\adtIngestFunctionSample\adtIngestFunctionSample\bin\Release\netcoreapp3.1\bin\adtIngestFunctionSample.dll
-2>------ Publish started: Project: adtIngestFunctionSample, Configuration: Release Any CPU ------
-2>adtIngestFunctionSample -> C:\Users\source\repos\Others\adtIngestFunctionSample\adtIngestFunctionSample\bin\Release\netcoreapp3.1\bin\adtIngestFunctionSample.dll
-2>adtIngestFunctionSample -> C:\Users\source\repos\Others\adtIngestFunctionSample\adtIngestFunctionSample\obj\Release\netcoreapp3.1\PubTmp\Out\
-2>Publishing C:\Users\source\repos\Others\adtIngestFunctionSample\adtIngestFunctionSample\obj\Release\netcoreapp3.1\PubTmp\adtIngestFunctionSample - 20200911112545669.zip to https://adtingestfunctionsample20200818134346.scm.azurewebsites.net/api/zipdeploy...
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
-========== Publish: 1 succeeded, 0 failed, 0 skipped ==========
-```
-Вы также можете проверить состояние процесса публикации в [портал Azure](https://portal.azure.com/). Найдите _группу ресурсов_ и перейдите к _журналу действий_ и найдите в списке пункт _получить профиль публикации веб-приложения_ и убедитесь, что состояние прошло.
+Опубликуйте проект в приложении-функции в Azure.
 
-:::image type="content" source="media/how-to-ingest-iot-hub-data/azure-function-publish-activity-log.png" alt-text="Снимок экрана портал Azure, отображающей состояние процесса публикации.":::
+Инструкции по выполнению этой задачи см. в разделе [**Публикация приложения-функции в Azure**](how-to-create-azure-function.md#publish-the-function-app-to-azure) статьи *как настроить функцию для обработки данных* .
+
+#### <a name="step-4-configure-the-function-app"></a>Шаг 4. Настройка приложения функции
+
+Затем **назначьте роль доступа** для функции и **Настройте параметры приложения** таким образом, чтобы она могла получить доступ к вашему экземпляру Digital двойников для Azure. Инструкции о том, как это сделать, см. в разделе [**Настройка доступа к безопасности для приложения-функции**](how-to-create-azure-function.md#set-up-security-access-for-the-function-app) статьи *инструкции. Настройка функции для обработки данных* .
 
 ## <a name="connect-your-function-to-iot-hub"></a>Подключение функции к центру Интернета вещей
 
-Настройте назначение события для данных концентратора.
+В этом разделе вы настроите функцию в качестве назначения события для данных устройства центра Интернета вещей. Это обеспечит отправку данных с устройства термостата в центре Интернета вещей в функцию Azure для обработки.
+
 В [портал Azure](https://portal.azure.com/)перейдите к экземпляру центра Интернета вещей, созданному в разделе [*Предварительные требования*](#prerequisites) . В разделе **события** создайте подписку для функции.
 
 :::image type="content" source="media/how-to-ingest-iot-hub-data/add-event-subscription.png" alt-text="Снимок экрана портал Azure, который показывает добавление подписки на события.":::
 
 На странице **Создание подписки на события** заполните поля следующим образом:
-  1. В поле **имя** укажите имя подписки.
-  2. В разделе **схема события** выберите _Схема сетки событий_.
-  3. В разделе **типы событий** установите флажок _телеметрии устройства_ и снимите флажки для других типов событий.
-  4. В разделе **тип конечной точки** выберите _функция Azure_.
-  5. В разделе **Конечная точка** выберите ссылку _выбрать конечную точку_ , чтобы создать конечную точку.
+  1. В поле **имя** выберите любое имя для подписки на события.
+  2. Для **схемы событий** выберите _Схема сетки событий_.
+  3. В качестве **имени системного раздела** выберите любое имя.
+  1. **Чтобы применить фильтр к типам событий**, установите флажок _телеметрии устройства_ и снимите флажки для других типов событий.
+  1. В качестве **типа конечной точки** выберите _функция Azure_.
+  1. Для **конечной точки** используйте ссылку _Выбор конечной точки_ , чтобы выбрать функцию Azure, которая будет использоваться для конечной точки.
     
 :::image type="content" source="media/how-to-ingest-iot-hub-data/create-event-subscription.png" alt-text="Снимок экрана портал Azure для создания сведений о подписке на события":::
 
-На открывшейся странице _Выбор функции Azure_ проверьте следующие сведения.
- 1. **Подписка**. Ваша подписка Azure
- 2. **Группа ресурсов**. Ваша группа ресурсов
- 3. **Приложение функции**: имя приложения функции
- 4. **Слот**: _Рабочая_
- 5. **Функция**. Выберите функцию из раскрывающегося списка.
+На открывшейся странице _Выбор функции Azure_ проверьте или заполните указанные ниже сведения.
+ 1. **Подписка**: Вашу подписку Azure.
+ 2. **Группа ресурсов**. Ваша группа ресурсов.
+ 3. **Приложение функции**: имя приложения функции.
+ 4. **Слот**: _Рабочая_.
+ 5. **Функция**. Выберите в раскрывающемся списке функцию из предыдущего *иосубтотвинс*.
 
-Сохраните сведения, нажав кнопку _подтвердить выбор_ .            
+Сохраните данные с помощью кнопки _подтвердить выбор_ .            
       
 :::image type="content" source="media/how-to-ingest-iot-hub-data/select-azure-function.png" alt-text="Снимок экрана портал Azure для выбора функции.":::
 
-Нажмите кнопку _создать_ , чтобы создать подписку на события.
+Нажмите кнопку _создать_ , чтобы создать подписку на событие.
 
 ## <a name="send-simulated-iot-data"></a>Отправка смоделированных данных IoT
 
