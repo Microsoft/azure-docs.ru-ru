@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: infrastructure-services
 ms.date: 12/15/2017
 ms.author: cynthn
-ms.openlocfilehash: d09f27eebba5db2edb56185b658c8ae2b06e42d3
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: 21038a8d1eabfcca21329c093b866607f0343070
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102552275"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200000"
 ---
 # <a name="use-windows-client-in-azure-for-devtest-scenarios"></a>Использование клиента Windows в Azure для сценариев разработки и тестирования
 В сценариях разработки и тестирования Azure можно использовать Windows 7, Windows 8 или Windows 10 Корпоративная (x64) при условии, что у вас есть соответствующая подписка Visual Studio (прежнее название — MSDN). 
@@ -41,10 +41,10 @@ ms.locfileid: "102552275"
 | [Enterprise — разработка и тестирование](https://azure.microsoft.com/offers/ms-azr-0148p/) |0148P | Windows 10 Корпоративная N (x64) <br> Windows 8.1 Enterprise N (x64) <br> Windows 7 Корпоративная N с пакетом обновления 1 (SP1) (x64) |
 
 ## <a name="check-your-azure-subscription"></a>Проверка подписки Azure
-Если вы не знаете идентификатор своего предложения, его можно найти на портале Azure одним из двух способов:  
+Если вы не знакомы с ИДЕНТИФИКАТОРом предложения, его можно получить с помощью портал Azure.  
 - В окне *подписки* : ![ сведения об идентификаторе предложения из портал Azure](./media/client-images/offer-id-azure-portal.png) 
-- Или щелкните **Выставление счетов** и выберите свой идентификатор подписки. Идентификатор предложения отобразится в окне *Выставление счетов*.
-Идентификатор предложения можно также просмотреть на [вкладке "подписки](https://account.windowsazure.com/Subscriptions) " портала учетных записей Azure: ![ сведения об идентификаторе предложения на портале учетных записей Azure.](./media/client-images/offer-id-azure-account-portal.png) 
+- Или щелкните **Выставление счетов** и выберите свой идентификатор подписки. Идентификатор предложения отобразится в окне *Выставление счетов*. 
+- Идентификатор предложения можно также просмотреть на [вкладке "подписки](https://account.windowsazure.com/Subscriptions) " портала учетных записей Azure: ![ сведения об идентификаторе предложения на портале учетных записей Azure.](./media/client-images/offer-id-azure-account-portal.png) 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Теперь вы можете развернуть виртуальные машины с помощью [PowerShell](quick-create-powershell.md), [шаблонов Resource Manager](ps-template.md) или [Visual Studio](../../azure-resource-manager/templates/create-visual-studio-deployment-project.md).

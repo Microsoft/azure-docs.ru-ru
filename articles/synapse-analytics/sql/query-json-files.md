@@ -9,12 +9,12 @@ ms.subservice: sql
 ms.date: 05/20/2020
 ms.author: stefanazaric
 ms.reviewer: jrasnick
-ms.openlocfilehash: 56d9c621579e19cf2c32562560e40fe42ff3989b
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 5fcf688bbe8a5be2fc10b70950990b7b6ca71df8
+ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101677516"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225597"
 ---
 # <a name="query-json-files-using-serverless-sql-pool-in-azure-synapse-analytics"></a>Запрос файлов JSON с помощью бессерверного пула SQL в Azure синапсе Analytics
 
@@ -126,12 +126,13 @@ from openrowset(
 
 ### <a name="query-json-files-using-json_value"></a>Запрашивайте файлы JSON с помощью JSON_VALUE
 
-В следующем запросе показано, как использовать [JSON_VALUE](/sql/t-sql/functions/json-value-transact-sql?view=azure-sqldw-latest&preserve-view=true) для получения скалярных значений (Title, Publisher) из документов JSON:
+В следующем запросе показано, как использовать [JSON_VALUE](/sql/t-sql/functions/json-value-transact-sql?view=azure-sqldw-latest&preserve-view=true) для получения скалярных значений ( `date_rep` , `countries_and_territories` , `cases` ) из документов JSON:
 
 ```sql
 select
     JSON_VALUE(doc, '$.date_rep') AS date_reported,
     JSON_VALUE(doc, '$.countries_and_territories') AS country,
+    CAST(JSON_VALUE(doc, '$.deaths') AS INT) as fatal,
     JSON_VALUE(doc, '$.cases') as cases,
     doc
 from openrowset(
@@ -143,6 +144,8 @@ from openrowset(
     ) with (doc nvarchar(max)) as rows
 order by JSON_VALUE(doc, '$.geo_id') desc
 ```
+
+После извлечения свойств JSON из документа JSON можно определить псевдонимы столбцов и при необходимости привести текстовое значение к определенному типу.
 
 ### <a name="query-json-files-using-openjson"></a>Запрашивание файлов JSON с помощью OPENJSON
 
@@ -166,6 +169,10 @@ from openrowset(
 where country = 'Serbia'
 order by country, date_rep desc;
 ```
+Результаты функционально совпадают с результатами, возвращаемыми `JSON_VALUE` функцией. В некоторых случаях `OPENJSON` преимущество может быть преимуществом `JSON_VALUE` :
+- В `WITH` предложении можно явно задать псевдонимы столбцов и типы для каждого свойства. Вам не нужно размещать `CAST` функцию в каждом столбце `SELECT` списка.
+- `OPENJSON` При возврате большого количества свойств может выполняться быстрее. Если вы возвращаете только свойства 1-2, `OPENJSON` функция может быть дополнительной.
+- Функция должна использоваться, `OPENJSON` Если необходимо проанализировать массив из каждого документа и присоединить его к родительской строке.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

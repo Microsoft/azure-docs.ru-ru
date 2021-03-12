@@ -1,30 +1,26 @@
 - name: Документация по Иммерсивному средству чтения
   href: index.yml
-- name: Что собой представляет Иммерсивное средство чтения?
-  href: Overview.md
-- name: Краткое руководство
-  href: ./quickstarts/client-libraries.md
-- name: Учебники
+- name: Обзор
   items:
-    - name: Запуск иммерсивного средства чтения (Android)
-      href: tutorial-android.md
-    - name: Запуск иммерсивного средства чтения (iOS)
-      href: tutorial-ios.md
-    - name: Запуск иммерсивного средства чтения (Python)
-      href: tutorial-python.md
-    - name: Использование нескольких ресурсов иммерсивного средства чтения
-      href: tutorial-multiple-resources.md
+    - name: Общие сведения об иммерсивном средстве чтения
+      href: Overview.md
+    - name: Поддержка языков
+      href: language-support.md
+    - name: Цены
+      href: 'https://azure.microsoft.com/pricing/details/cognitive-services/immersive-reader/'
+    - name: Заметки о выпуске
+      href: release-notes.md
+- name: Краткое руководство по иммерсивному средству чтения
+  href: ./quickstarts/client-libraries.md
 - name: Инструкции
   items:
     - name: Создание ресурса Иммерсивного средства чтения
       href: how-to-create-immersive-reader.md
-    - name: Настройка политики файлов cookie
-      href: how-to/set-cookie-policy.md
-    - name: Отображение математического содержимого
-      href: how-to/display-math.md
-    - name: Запуск иммерсивного средства чтения с содержимым HTML
-      href: how-to-launch-with-html.md
-    - name: Кнопка настройки Иммерсивного средства чтения
+    - name: Запуск Иммерсивного средства чтения
+      href: how-to-launch-immersive-reader.md
+    - name: Подготовка содержимого HTML
+      href: how-to-prepare-html.md
+    - name: Изменение кнопки запуска иммерсивного средства чтения
       href: how-to-customize-launch-button.md
     - name: Кэширование маркера проверки подлинности
       href: how-to-cache-token.md
@@ -32,21 +28,23 @@
       href: how-to-configure-read-aloud.md
     - name: Настройка перевода
       href: how-to-configure-translation.md
+    - name: Отображение математического содержимого
+      href: how-to/display-math.md
+    - name: Настройка политики файлов cookie
+      href: how-to/set-cookie-policy.md
     - name: Хранение настроек пользователя
       href: how-to-store-user-preferences.md
+    - name: Использование нескольких ресурсов иммерсивного средства чтения
+      href: how-to-multiple-resources.md
 - name: Справочник
   items:
     - name: Пакет SDK для JavaScript
       href: reference.md
-    - name: Заметки о выпуске
-      href: release-notes.md
 - name: Ресурсы
   items:
+    - name: Региональная поддержка
+      href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'
     - name: Возможности получения поддержки и справки
       href: ../cognitive-services-support-options.md?context=/azure/cognitive-services/immersive-reader/context/context
-    - name: Стратегия развития Azure
+    - name: Обновления Azure
       href: 'https://azure.microsoft.com/updates/?product=cognitive-services'
-    - name: Поддержка языков
-      href: language-support.md
-    - name: Доступность по регионам
-      href: 'https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services'

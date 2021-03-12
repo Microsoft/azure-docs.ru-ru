@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.workload: identity
 ms.date: 07/01/2020
 ms.author: kenwith
-ms.openlocfilehash: 3278c9956dd5017572f063059250c97727656923
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.openlocfilehash: 44a838bdce4721d24bd0bdbb45ac7b36ceb34e71
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99252378"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102488375"
 ---
 # <a name="quickstart-set-up-saml-based-single-sign-on-sso-for-an-application-in-your-azure-active-directory-azure-ad-tenant"></a>Краткое руководство. Настройка единого входа на основе SAML для приложения в арендаторе Azure Active Directory (Azure AD)
 
@@ -39,7 +39,7 @@ ms.locfileid: "99252378"
 
 ## <a name="enable-single-sign-on-for-an-app"></a>Включение единого входа для приложения
 
-После того как приложение будет добавлено в арендатор Azure AD, отобразится страница обзора. Если вы настраиваете уже добавленное приложение, ознакомьтесь с первым кратким руководством. Оно поможет просмотреть приложения, добавленные в арендатор. 
+После того как приложение будет добавлено в арендатор Azure AD, отобразится страница обзора. Если вы настраиваете уже добавленное приложение, ознакомьтесь с первым кратким руководством. Оно поможет просмотреть приложения, добавленные в арендатор.
 
 Чтобы настроить единый вход для приложения, сделайте следующее:
 

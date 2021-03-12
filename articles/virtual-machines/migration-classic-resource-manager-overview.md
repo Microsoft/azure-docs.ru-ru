@@ -9,14 +9,14 @@ ms.workload: infrastructure-services
 ms.topic: conceptual
 ms.date: 02/06/2020
 ms.author: tagore
-ms.openlocfilehash: 69eae2bd2e2db27c6cc9d0a0c1eb29576e96179a
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 116e99339ac79e9e6a2de5e7a6222460a71bf4a1
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101669323"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102615097"
 ---
-# <a name="platform-supported-migration-of-iaas-resources-from-classic-to-azure-resource-manager-in-linux"></a>Поддерживаемый платформой перенос ресурсов IaaS из классической модели в Azure Resource Manager в Linux
+# <a name="platform-supported-migration-of-iaas-resources-from-classic-to-azure-resource-manager"></a>Поддерживаемый платформой перенос ресурсов IaaS из классической модели в модель Azure Resource Manager
 
 > [!IMPORTANT]
 > Сегодня около 90% виртуальных машин IaaS используют [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/). По состоянию на 28 февраля 2020, классические виртуальные машины являются устаревшими и будут полностью сняты с 1 марта 2023. [Узнайте больше]( https://aka.ms/classicvmretirement) об этой нерекомендуемости и [о том, как она влияет на вас](classic-vm-deprecation.md#how-does-this-affect-me).
@@ -117,7 +117,7 @@ Resource Manager позволяет развертывать сложные пр
 ### <a name="unsupported-features"></a>Неподдерживаемые функции
 Следующие функции сейчас не поддерживаются. Дополнительно вы можете удалить эти параметры, перенести виртуальные машины, а затем повторно включить параметры в модели развертывания с помощью Resource Manager.
 
-| Поставщик ресурсов | Функция | Рекомендация |
+| Поставщик ресурсов | Компонент | Рекомендация |
 | --- | --- | --- |
 | Службы вычислений | Несвязанные диски виртуальных машин. | При миграции учетной записи хранения переносятся большие двоичные объекты виртуальных жестких дисков. |
 | Службы вычислений | Образы виртуальных машин. | При миграции учетной записи хранения переносятся большие двоичные объекты виртуальных жестких дисков. |

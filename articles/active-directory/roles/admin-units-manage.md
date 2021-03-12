@@ -14,12 +14,12 @@ ms.author: rolyon
 ms.reviewer: anandy
 ms.custom: oldportal;it-pro;
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44faaa6f05a325c2c64040938a1c9d0eb3e864e7
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 0706fad1e5340625c32eab691ac3e4d58eeafc9f
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100574155"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103012127"
 ---
 # <a name="manage-administrative-units-in-azure-active-directory"></a>Управление административными единицами в Azure Active Directory
 
@@ -69,10 +69,15 @@ New-AzureADMSAdministrativeUnit -Description "West Coast region" -DisplayName "W
 
 ### <a name="use-microsoft-graph"></a>Использование Microsoft Graph
 
+Запрос
+
 ```http
-Http Request
 POST /administrativeUnits
-Request body
+```
+
+Текст
+
+```http
 {
   "displayName": "North America Operations",
   "description": "North America Operations administration"
@@ -94,22 +99,27 @@ Request body
 ### <a name="use-powershell"></a>Использование PowerShell
 
 ```powershell
-$delau = Get-AzureADMSAdministrativeUnit -Filter "displayname eq 'DeleteMe Admin Unit'"
-Remove-AzureADMSAdministrativeUnit -ObjectId $delau.ObjectId
+$adminUnitObj = Get-AzureADMSAdministrativeUnit -Filter "displayname eq 'DeleteMe Admin Unit'"
+Remove-AzureADMSAdministrativeUnit -ObjectId $adminUnitObj.ObjectId
 ```
 
 Можно изменить значения, заключенные в кавычки, в соответствии с требованиями конкретной среды.
 
 ### <a name="use-the-graph-api"></a>Использование API Graph.
 
+Запрос
+
 ```http
-HTTP request
-DELETE /administrativeUnits/{Admin id}
-Request body
+DELETE /administrativeUnits/{admin-unit-id}
+```
+
+Текст
+
+```http
 {}
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Управление пользователями в административной единице](admin-units-add-manage-users.md)
 * [Управление группами в административной единице](admin-units-add-manage-groups.md)

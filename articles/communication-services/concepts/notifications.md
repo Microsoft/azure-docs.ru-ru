@@ -9,14 +9,17 @@ ms.author: mikben
 ms.date: 09/30/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 88948f757c41550124acf20ac1cf0e33cdb3e5ba
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 88a5ad66cb401715790bcff8c773e6d7881b103d
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101660163"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102487701"
 ---
 # <a name="communication-services-notifications"></a>Уведомления в Службах коммуникации
+
+[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
+
 
 Чат в Службах коммуникации Azure и вызов клиентских библиотек создают канал обмена сообщениями в режиме реального времени, который позволяет эффективно и надежно передавать сообщения в подключенные клиенты. Это позволяет создавать расширенные возможности взаимодействия в режиме реального времени в приложениях без необходимости реализации сложной логики опроса HTTP. Однако в мобильных приложениях этот сигнальный канал остается подключенным только тогда, когда приложение активно на переднем плане. Если вы хотите, чтобы пользователи получали входящие вызовы или сообщения чата, пока приложение находится в фоновом режиме, следует использовать push-уведомления.
 

@@ -1,0 +1,59 @@
+### YamlMime:Landing
+title: Документация по Azure API для FHIR
+summary: Azure API для FHIR — это управляемый, основанный на стандартах, соответствующий нормативным требованиям API-интерфейс для медицинских данных, с помощью которого можно создавать решения для действенной аналитики и машинного обучения.
+metadata:
+  title: 'Документация по Azure API для FHIR: руководства и инструкции'
+  description: Azure API для FHIR — это управляемый, основанный на стандартах, соответствующий нормативным требованиям API-интерфейс для медицинских данных, с помощью которого можно создавать решения для действенной аналитики и машинного обучения.
+  services: healthcare-apis
+  ms.service: healthcare-apis
+  ms.subservice: fhir
+  ms.topic: landing-page
+  ms.collection: collection
+  author: matjazl
+  ms.author: matjazl
+  ms.date: 08/13/2020
+  ms.openlocfilehash: d633b5376832672ecc7c917e24728666b889e16c
+  ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/11/2021
+  ms.locfileid: "103019595"
+landingContent:
+- title: Начало работы с Azure API для FHIR
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Что такое Azure API для FHIR?
+      url: overview.md
+    - text: Что такое соединитель Интернета вещей Azure для FHIR (предварительная версия)
+      url: overview.md#azure-iot-connector-for-fhir-preview
+  - linkListType: quickstart
+    links:
+    - text: Развертывание сервера API для FHIR
+      url: fhir-paas-portal-quickstart.md
+    - text: Развертывание соединителя "Azure IoT для FHIR" (предварительная версия)
+      url: iot-fhir-portal-quickstart.md
+- title: Руководства по настройке
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Развертывание приложения JavaScript для чтения данных из службы FHIR
+      url: tutorial-web-app-fhir-server.md
+    - text: Получение доступа к API FHIR с помощью Postman
+      url: access-fhir-postman-tutorial.md
+    - text: Интеграция SMART для сторонних приложений и медицинских записей
+      url: use-smart-on-fhir-proxy.md
+    - text: Получение данных устройства через Центр Интернета вещей Azure
+      url: device-data-through-iot-hub.md
+- title: Регистрация приложений для проверки подлинности AD
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Регистрация приложения-ресурса
+      url: register-resource-azure-ad-client-app.md
+    - text: Регистрация конфиденциального клиентского приложения
+      url: register-confidential-azure-ad-client-app.md
+    - text: Регистрация общедоступного клиентского приложения
+      url: register-public-azure-ad-client-app.md
+    - text: Регистрация клиентского приложения службы
+      url: register-service-azure-ad-client-app.md

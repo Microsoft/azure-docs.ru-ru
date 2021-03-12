@@ -12,19 +12,18 @@ ms.topic: how-to
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: a40ce1fd7b3d9d946641c91f5876d8c73755b005
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.openlocfilehash: fc3ab64a35c24df2af9d90a5ad348f840610d188
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101092259"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102635847"
 ---
 # <a name="create-a-job-with-multiple-transform-outputs"></a>Создание задания с несколькими выходами преобразования
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 В этом разделе показано, как создать преобразование с двумя выходами преобразования. Первый из них вызывает для кодирования входных данных для потоковой передачи с адаптивной скоростью с помощью встроенной предустановки [адаптивестреаминг](encoding-concept.md#builtinstandardencoderpreset) . Второй вызов для звукового сигнала во входном видео обрабатывается с помощью [аудиоанализерпресет](analyzing-video-audio-files-concept.md#built-in-presets). После создания преобразования можно отправить задание, которое будет обрабатывать видео соответствующим образом. Поскольку в этом примере мы указываем два выхода преобразования, необходимо указать два выходных данных задания. Вы можете направить выходные данные задания в один и тот же ресурс (как показано ниже), а также можно записать результаты в отдельные активы.
- 
 
 > [!TIP]
 > Перед началом разработки ознакомьтесь [с разработкой с помощью API-интерфейсов служб мультимедиа v3](media-services-apis-overview.md) (содержит сведения о доступе к API, соглашения об именовании и т. д.).
@@ -137,6 +136,6 @@ private static async Task<Job> SubmitJobAsync(IAzureMediaServicesClient client,
 
 См. статью о [кодах ошибок](/rest/api/media/jobs/get#joberrorcode).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Примеры для служб мультимедиа Azure v3 с использованием .NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/master/) 

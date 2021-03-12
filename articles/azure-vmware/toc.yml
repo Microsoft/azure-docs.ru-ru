@@ -4,6 +4,8 @@
   items:
     - name: О Решении Azure VMware
       href: introduction.md
+    - name: Обновления платформы
+      href: azure-vmware-solution-platform-updates.md
 - name: Быстрый запуск
   items:
     - name: 0. Планирование развертывания
@@ -72,6 +74,8 @@
       href: public-ip-usage.md
     - name: Создание туннеля IPSec
       href: create-ipsec-tunnel.md
+    - name: Отказоустойчивый кластер Windows Server
+      href: windows-server-failover-cluster.md
     - name: Интеграция платформенной функциональности Azure
       items:
         - name: Управление API

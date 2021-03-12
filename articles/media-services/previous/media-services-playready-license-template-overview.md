@@ -1,7 +1,7 @@
 ---
 title: Обзор шаблонов лицензий PlayReady служб мультимедиа
 description: В этом разделе содержится обзор шаблонов лицензий PlayReady, которые используются для настройки лицензий PlayReady.
-author: juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 services: media-services
@@ -12,14 +12,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/19/2019
-ms.author: juliako
-ms.openlocfilehash: 6bcf6b439f8e49d194e1c0ea5dc1e996135589cf
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: aab7966b3e7592407bb00d0c81634c5fbb3cc4a8
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102454317"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103008286"
 ---
 # <a name="media-services-playready-license-template-overview"></a>Обзор шаблонов лицензий PlayReady служб мультимедиа
 

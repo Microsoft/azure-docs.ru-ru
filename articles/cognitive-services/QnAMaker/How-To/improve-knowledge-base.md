@@ -6,12 +6,12 @@ ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 04/06/2020
 ms.custom: devx-track-js, devx-track-csharp
-ms.openlocfilehash: 7c477655dfb24eebab9a2669697d9ef610088198
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.openlocfilehash: 3fe6ee8336872c04e85b732713494adf0fefa28a
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99592030"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103011448"
 ---
 # <a name="accept-active-learning-suggested-questions-in-the-knowledge-base"></a>Принять предлагаемые активные обучающие вопросы в базе знаний
 
@@ -79,25 +79,24 @@ ms.locfileid: "99592030"
 
 Для использования активного обучения в роботе или другом клиентском приложении следует использовать следующую архитектурную последовательность:
 
-* Bot [получает ответ от базы знаний](#use-the-top-property-in-the-generateanswer-request-to-get-several-matching-answers) с помощью API женератеансвер, используя `top` свойство для получения ряда ответов.
+1. Bot [получает ответ от базы знаний](#use-the-top-property-in-the-generateanswer-request-to-get-several-matching-answers) с помощью API женератеансвер, используя `top` свойство для получения ряда ответов.
 
-    #### <a name="use-the-top-property-in-the-generateanswer-request-to-get-several-matching-answers"></a>Использование свойства Top в запросе Женератеансвер для получения нескольких соответствующих ответов
-
-    При отправке вопроса в QnA Maker для ответа `top` свойство тела JSON задает число возвращаемых ответов.
-
-    ```json
-    {
-        "question": "wi-fi",
-        "isTest": false,
-        "top": 3
-    }
-    ```
-
-* Bot определяет явный отзыв:
+2. Bot определяет явный отзыв:
     * Используя собственную [бизнес-логику](#use-the-score-property-along-with-business-logic-to-get-list-of-answers-to-show-user), отфильтруйте низкие оценки.
     * В окне "bot" или "клиент-приложение" отобразится список возможных ответов для пользователя и получите выбранный ответ.
-* Bot [отправляет выбранный ответ обратно в QnA Maker](#bot-framework-sample-code) с помощью [API обучения](#train-api).
+3. Bot [отправляет выбранный ответ обратно в QnA Maker](#bot-framework-sample-code) с помощью [API обучения](#train-api).
 
+### <a name="use-the-top-property-in-the-generateanswer-request-to-get-several-matching-answers"></a>Использование свойства Top в запросе Женератеансвер для получения нескольких соответствующих ответов
+
+При отправке вопроса в QnA Maker для ответа `top` свойство тела JSON задает число возвращаемых ответов.
+
+```json
+{
+    "question": "wi-fi",
+    "isTest": false,
+    "top": 3
+}
+```
 
 ### <a name="use-the-score-property-along-with-business-logic-to-get-list-of-answers-to-show-user"></a>Использование свойства Score вместе с бизнес-логикой для получения списка ответов для отображения пользователя
 
@@ -159,10 +158,10 @@ Content-Type: application/json
 
 |Свойство HTTP-запроса|Имя|Тип|Назначение|
 |--|--|--|--|
-|Параметр URL-маршрута|Идентификатор базы знаний|string|Идентификатор GUID для базы знаний.|
-|Пользовательский поддомен|Имя ресурса QnAMaker|string|Имя ресурса используется в качестве пользовательского поддомена для QnA Maker. Это можно найти на странице параметры после публикации базы знаний. Он указан как `host` .|
-|Заголовок|Content-Type|string|Тип носителя текста, отправляемого в API. Значение по умолчанию: `application/json`|
-|Заголовок|Авторизация|string|Ключ конечной точки (EndpointKey xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|
+|Параметр URL-маршрута|Идентификатор базы знаний|строка|Идентификатор GUID для базы знаний.|
+|Пользовательский поддомен|Имя ресурса QnAMaker|строка|Имя ресурса используется в качестве пользовательского поддомена для QnA Maker. Это можно найти на странице параметры после публикации базы знаний. Он указан как `host` .|
+|Заголовок|Content-Type|строка|Тип носителя текста, отправляемого в API. Значение по умолчанию: `application/json`|
+|Заголовок|Авторизация|строка|Ключ конечной точки (EndpointKey xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|
 |Текст запроса POST|Объект JSON|JSON|Отзыв по обучению|
 
 Тело JSON имеет несколько параметров:
@@ -170,9 +169,9 @@ Content-Type: application/json
 |Свойство тела JSON|Тип|Назначение|
 |--|--|--|--|
 |`feedbackRecords`|array|Список отзывов.|
-|`userId`|string|Идентификатор пользователя, который принимает предлагаемые вопросы. Пользователь должен иметь формат идентификатора пользователя. Например, адрес электронной почты может быть допустимым ИДЕНТИФИКАТОРом пользователя в вашей архитектуре. Необязательный элемент.|
-|`userQuestion`|string|Точный текст запроса пользователя. Обязательный элемент.|
-|`qnaID`|число|Идентификатор вопроса, найденный в [ответе женератеансвер](metadata-generateanswer-usage.md#generateanswer-response-properties). |
+|`userId`|строка|Идентификатор пользователя, который принимает предлагаемые вопросы. Пользователь должен иметь формат идентификатора пользователя. Например, адрес электронной почты может быть допустимым ИДЕНТИФИКАТОРом пользователя в вашей архитектуре. Необязательный параметр.|
+|`userQuestion`|строка|Точный текст запроса пользователя. Обязательный.|
+|`qnaID`|number|Идентификатор вопроса, найденный в [ответе женератеансвер](metadata-generateanswer-usage.md#generateanswer-response-properties). |
 
 Пример текста JSON выглядит следующим образом:
 

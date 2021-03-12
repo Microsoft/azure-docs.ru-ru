@@ -7,12 +7,12 @@ ms.topic: include
 author: mingshen-ms
 ms.author: krsh
 ms.date: 10/20/2020
-ms.openlocfilehash: addc18a0ebf9e49d3474d3f40cb1e2a6e0f0b272
-ms.sourcegitcommit: 28c93f364c51774e8fbde9afb5aa62f1299e649e
+ms.openlocfilehash: c60d2a9b13cce9251ff0f730081a9d677206770d
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97826599"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102630124"
 ---
 ## <a name="generalize-the-image"></a>Обобщение образа
 
@@ -38,60 +38,31 @@ ms.locfileid: "97826599"
     1. На портале Azure выберите нужную группу ресурсов (RG) и отмените распределение виртуальной машины.
     2. Теперь ваша виртуальная машина является обобщенной, и вы можете создать новую виртуальную машину с помощью этого диска виртуальной машины.
 
-### <a name="take-a-snapshot-of-the-vm-disk"></a>Создание моментального снимка диска виртуальной машины
+### <a name="capture-image"></a>Запись образа
 
-1. Войдите на [портал Azure](https://ms.portal.azure.com/).
-2. Начиная с верхнего левого угла, выберите **создать ресурс**, а затем найдите и выберите **снимок**.
-3. В колонке моментальный снимок выберите  **создать**.
-4. Заполните поле **Имя** для моментального снимка.
-5. Выберите существующую группу ресурсов или введите имя для новой.
-6. В поле **Исходный диск** выберите управляемый диск, моментальный снимок которого необходимо создать.
-7. Выберите **тип учетной записи**, которая будет использоваться для хранения моментального снимка. Используйте **диск HDD ценовой категории "Стандартный"**, если вам не нужно хранить моментальный снимок на высокопроизводительном диске SSD.
-8. Нажмите кнопку **создания**.
+Когда виртуальная машина будет готова, ее можно записать в галерее образов Azure Shared. Для записи выполните следующие действия.
 
-#### <a name="extract-the-vhd"></a>Извлечение виртуального жесткого диска
+1. На [портал Azure](https://ms.portal.azure.com/)перейдите на страницу виртуальной машины.
+2. Выберите **захват**.
+3. В разделе **Share Image to Shared Image Gallery (общий доступ к коллекции образов**) выберите **Да, предоставьте общий доступ к коллекции в виде версии образа**.
+4. В разделе **состояние операционной системы** выберите обобщенные.
+5. Выберите коллекцию целевых образов или **Создайте новую**.
+6. Выберите определение целевого образа или **Создайте новое**.
+7. Укажите **номер версии** для образа.
+8. Выберите **Просмотр и создание**, чтобы проверить выбранные параметры.
+9. После прохождения проверки выберите **создать**.
 
-Используйте следующий скрипт для экспорта моментального снимка в виртуальный жесткий диск в вашей учетной записи хранения.
+Для публикации учетная запись издателя должна иметь доступ владельца к SIG. Чтобы предоставить доступ:
 
-```azurecli-interactive
-#Provide the subscription Id where the snapshot is created
-$subscriptionId=yourSubscriptionId
+1. Перейдите в коллекцию общих образов.
+2. На панели слева выберите **Управление доступом** (IAM).
+3. Выберите **Добавить** , а затем **добавить назначение ролей**.
+4. Выберите **роль** или **владельца**.
+5. В разделе **назначение доступа для** выберите **пользователя, группы или субъекта-службы**.
+6. Выберите адрес электронной почты Azure пользователя, который будет публиковать образ.
+7. Щелкните **Сохранить**.
 
-#Provide the name of your resource group where the snapshot is created
-$resourceGroupName=myResourceGroupName
+:::image type="content" source="../media/create-vm/add-role-assignment.png" alt-text="Отображает окно Добавление назначения ролей.":::
 
-#Provide the snapshot name
-$snapshotName=mySnapshot
-
-#Provide Shared Access Signature (SAS) expiry duration in seconds (such as 3600)
-#Know more about SAS here: https://docs.microsoft.com/en-us/azure/storage/storage-dotnet-shared-access-signature-part-1
-$sasExpiryDuration=3600
-
-#Provide storage account name where you want to copy the underlying VHD file. 
-$storageAccountName=mystorageaccountname
-
-#Name of the storage container where the downloaded VHD will be stored.
-$storageContainerName=mystoragecontainername
-
-#Provide the key of the storage account where you want to copy the VHD 
-$storageAccountKey=mystorageaccountkey
-
-#Give a name to the destination VHD file to which the VHD will be copied.
-$destinationVHDFileName=myvhdfilename.vhd
-
-az account set --subscription $subscriptionId
-
-sas=$(az snapshot grant-access --resource-group $resourceGroupName --name $snapshotName --duration-in-seconds $sasExpiryDuration --query [accessSas] -o tsv)
-
-az storage blob copy start --destination-blob $destinationVHDFileName --destination-container $storageContainerName --account-name $storageAccountName --account-key $storageAccountKey --source-uri $sas
-```
-
-#### <a name="script-explanation"></a>Описание скрипта
-
-Этот скрипт использует следующие команды для создания URI SAS для моментального снимка и копирует базовый виртуальный жесткий диск в учетную запись хранения с помощью URI SAS. Для каждой команды в таблице приведены ссылки на соответствующую документацию.
-
-| Get-Help | Примечания |
-| --- | --- |
-| az disk grant-access | Создает SAS только для чтения, который используется для копирования базового VHD-файла в учетную запись хранения или загрузки в локальную среду
-| az storage blob copy start | Асинхронно копирует большой двоичный объект из одной учетной записи хранения в другую. Используйте `az storage blob show` для проверки состояния нового большого двоичного объекта. |
-|
+> [!NOTE]
+> Вам не нужно создавать URI SAS, так как теперь вы можете опубликовать образ SIG в центре партнеров. Однако если вам по-прежнему нужно обратиться к шагам создания URI SAS, см. статью [Создание URI SAS для образа виртуальной машины](../azure-vm-get-sas-uri.md).

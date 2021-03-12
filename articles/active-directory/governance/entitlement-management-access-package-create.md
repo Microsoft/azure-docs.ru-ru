@@ -16,12 +16,12 @@ ms.date: 06/18/2020
 ms.author: ajburnle
 ms.reviewer: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2ce3b362d02e7acb0a11e6d93b8e94ca8e4d04e
-ms.sourcegitcommit: 80c1056113a9d65b6db69c06ca79fa531b9e3a00
+ms.openlocfilehash: e3df08272b352ee789c9879b1118105c435cffbd
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96903536"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103011091"
 ---
 # <a name="create-a-new-access-package-in-azure-ad-entitlement-management"></a>Создание нового пакета Access в управлении назначением Azure AD
 
@@ -67,7 +67,7 @@ ms.locfileid: "96903536"
    
     ![Управление правами на портале Azure](./media/entitlement-management-shared/access-packages-list.png)
 
-## <a name="basics"></a>Основы
+## <a name="basics"></a>Основные сведения
 
 На вкладке " **основы** " Присвойте пакету доступа имя и укажите каталог для создания пакета доступа в.
 
@@ -83,7 +83,7 @@ ms.locfileid: "96903536"
 
     Создаваемый пакет Access и все ресурсы, включенные в него, будут добавлены в новый каталог. Вы также можете добавить дополнительных владельцев каталога позже.
 
-1. Нажмите кнопку **Далее**.
+1. Щелкните **Далее**.
 
 ## <a name="resource-roles"></a>Роли ресурсов
 
@@ -105,7 +105,7 @@ ms.locfileid: "96903536"
 
     ![Доступ к пакету — Выбор роли ресурсов](./media/entitlement-management-access-package-create/resource-roles-role.png)
 
-1. Нажмите кнопку **Далее**.
+1. Щелкните **Далее**.
 
 >[!NOTE]
 >Динамические группы можно добавлять в каталог и в пакет Access. Однако вы сможете выбрать только роль владельца при управлении ресурсом динамической группы в пакете Access.
@@ -122,7 +122,7 @@ ms.locfileid: "96903536"
 
 [!INCLUDE [Entitlement management lifecycle policy](../../../includes/active-directory-entitlement-management-lifecycle-policy.md)]
 
-## <a name="review--create"></a>Просмотр и создание
+## <a name="review--create"></a>Отзыв и создание
 
 На вкладке " **Проверка и создание** " можно просмотреть параметры и проверить наличие ошибок проверки.
 
@@ -149,3 +149,4 @@ ms.locfileid: "96903536"
 - [Ссылка на общий доступ для запроса пакета Access](entitlement-management-access-package-settings.md)
 - [Изменение ролей ресурсов для пакета Access](entitlement-management-access-package-resources.md)
 - [Напрямую назначить пользователя пакету доступа](entitlement-management-access-package-assignments.md)
+- [Создание проверки доступа для пакета Access](entitlement-management-access-reviews-create.md)

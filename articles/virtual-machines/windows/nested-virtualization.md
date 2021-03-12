@@ -5,14 +5,15 @@ author: cynthn
 ms.author: cynthn
 ms.date: 10/09/2017
 ms.topic: how-to
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
+ms.collection: windows
 ms.workload: infrastructure
-ms.openlocfilehash: 924ee745804ef31e42dc21437dbb0459f6d37701
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 3988d0ed01e5aa75f498f17f9bbd23e567cb9c07
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693753"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102556304"
 ---
 # <a name="how-to-enable-nested-virtualization-in-an-azure-vm"></a>Как включить вложенную виртуализацию в виртуальных машинах Azure
 

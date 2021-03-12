@@ -7,15 +7,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: reference
-ms.date: 03/08/2021
+ms.date: 03/10/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: e867fee753fb9db530db2b2015c3aea9280bc16f
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: b60b447d8302b89813ca462c3220603ef926eb26
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102448650"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102631189"
 ---
 # <a name="localization-string-ids"></a>Идентификаторы строк локализации
 
@@ -356,7 +356,7 @@ ms.locfileid: "102448650"
 
 | ID | Значение по умолчанию |
 | -- | ------------- |
-|intro_msg| Проверка не требуется. Нажмите кнопку "Отправить".|
+|intro_msg <sup>*</sup>| Проверка не требуется. Нажмите кнопку "Отправить".|
 |success_send_code_msg | Код проверки отправлен. Скопируйте его в поле ввода ниже.|
 |failure_send_code_msg | Возникли проблемы с проверкой адреса электронной почты. Введите допустимый адрес электронной почты и повторите попытку.|
 |success_verify_code_msg | Адрес электронной почты проверен. Вы можете продолжать работу.|
@@ -365,6 +365,12 @@ ms.locfileid: "102448650"
 |but_verify_code | Проверить код|
 |but_send_new_code | Отправить новый код|
 |but_change_claims | Изменить адрес электронной почты|
+
+Примечание. `intro_msg` элемент скрыт и не отображается на странице с автоматическим подтверждением. Чтобы сделать его видимым, используйте [HTML-кустомизтион](customize-ui-with-html.md) с каскадные таблицы стилей. Пример.
+    
+```css
+.verificationInfoText div{display: block!important}
+```
 
 ### <a name="verification-display-control-example"></a>Пример контрольного представления проверки
 
