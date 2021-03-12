@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 11/21/2019
-ms.openlocfilehash: 202182d6485bc340a7f9bb34622e483dcc9ff891
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: f8558644fc24f3190247e57b4de7228af161a2a8
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102041881"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102631172"
 ---
 # <a name="how-to-troubleshoot-issues-with-the-log-analytics-agent-for-linux"></a>Устранение неполадок с агентом Log Analytics для Linux 
 
@@ -82,7 +82,7 @@ ms.locfileid: "102041881"
 
  >[!NOTE]
  >Измененные файлы конфигурации для счетчиков производительности и системный журнал будут перезаписаны при настройке сбора в [меню "Данные" в дополнительных параметрах Log Analytics](../agents/agent-data-sources.md#configuring-data-sources) для рабочей области на портале Azure. Чтобы отключить конфигурацию для всех агентов, отключите сбор в разделе **Дополнительные параметры** Log Analytics, а для одного агента выполните следующую команду:  
-> `sudo su omsagent -c 'python /opt/microsoft/omsconfig/Scripts/OMS_MetaConfigHelper.py --disable'`
+> `sudo /opt/microsoft/omsconfig/Scripts/OMS_MetaConfigHelper.py --disable && sudo rm /etc/opt/omi/conf/omsconfig/configuration/Current.mof* /etc/opt/omi/conf/omsconfig/configuration/Pending.mof*`
 
 ## <a name="installation-error-codes"></a>Коды ошибок установки
 

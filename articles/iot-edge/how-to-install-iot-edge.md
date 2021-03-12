@@ -9,14 +9,16 @@ services: iot-edge
 ms.topic: conceptual
 ms.date: 03/01/2021
 ms.author: kgremban
-ms.openlocfilehash: 3a2d048bfd3b47cd5a3cb93763aa27fac1b89649
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 6a64bb2801830440dc49e72786c9c00a6e4796b3
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102044924"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103201622"
 ---
 # <a name="install-or-uninstall-azure-iot-edge-for-linux"></a>Установка или удаление Azure IoT Edge для Linux
+
+[!INCLUDE [iot-edge-version-201806-or-202011](../../includes/iot-edge-version-201806-or-202011.md)]
 
 Среда выполнения Azure IoT Edge превращает устройство в устройство IoT Edge. Среду выполнения можно развернуть на всех устройствах — от небольшого Raspberry Pi до технического сервера. После настройки устройства с помощью среды выполнения IoT Edge можно приступить к развертыванию в ней бизнес-логики из облака. Дополнительные сведения см. [в разделе Знакомство со средой выполнения Azure IOT EDGE и ее архитектурой](iot-edge-runtime.md).
 
@@ -68,7 +70,7 @@ ms.locfileid: "102044924"
   sudo cp ./microsoft.gpg /etc/apt/trusted.gpg.d/
   ```
 
-Azure IoT Edge пакеты программного обеспечения подчиняются условиям лицензии, расположенным в каждом пакете ( `usr/share/doc/{package-name}` или в `LICENSE` каталоге). Прочтите условия лицензионного соглашения перед использованием пакета. Установка и использование пакета является принятием этих условий. Если вы не согласны с условиями лицензии, не используйте этот пакет.
+Azure IoT Edge пакеты программного обеспечения подчиняются условиям лицензии, расположенным в каждом пакете ( `usr/share/doc/{package-name}` или в `LICENSE` каталоге). Прежде чем использовать пакет, ознакомьтесь с условиями лицензии. Установка и использование пакета означают, что вы принимаете эти условия. Если вы с ними не согласны, не используйте пакет.
 
 ## <a name="install-a-container-engine"></a>Установка подсистемы контейнеров
 

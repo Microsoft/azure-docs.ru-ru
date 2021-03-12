@@ -9,14 +9,16 @@ ms.date: 1/8/2020
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 9ae7009468b548cb9386fd405abfbe110d62f9a3
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: a20992ef26b74bcc37a7403e4ee77cacc0f8f66e
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100377522"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200291"
 ---
 # <a name="deploy-iot-edge-modules-at-scale-using-visual-studio-code"></a>Развертывание модулей IoT Edge в масштабе с помощью Visual Studio Code
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Вы можете создать **IOT Edge автоматическое развертывание** с помощью Visual Studio Code, чтобы управлять текущими развертываниями для нескольких устройств одновременно. Автоматические развертывания для IoT Edge входят в состав функции [автоматического управления устройствами](../iot-hub/iot-hub-automatic-device-management.md) в Центре Интернета вещей. Развертывания — это динамические процессы, которые позволяют развертывать несколько модулей на нескольких устройствах. Кроме того, можно отвести наблюдение за состоянием и работоспособностью модулей, а также при необходимости вносить изменения.
 

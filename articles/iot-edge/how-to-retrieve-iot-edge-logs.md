@@ -10,14 +10,16 @@ ms.reviewer: veyalla
 ms.service: iot-edge
 ms.custom: devx-track-azurecli
 services: iot-edge
-ms.openlocfilehash: 65d95533e4cff02866111881f036225f9f544852
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c06120d1a2e8aa6aa0c006c6f40fed6fab44c5b7
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101719021"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103200694"
 ---
 # <a name="retrieve-logs-from-iot-edge-deployments"></a>Получение журналов из IoT Edge развертываний
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Получение журналов из IoT Edge развертываний без необходимости физического или SSH-доступа к устройству с помощью прямых методов, входящих в модуль агента IoT Edge. Прямые методы реализуются на устройстве, а затем могут быть вызваны из облака. Агент IoT Edge содержит прямые методы, помогающие удаленно отслеживать IoT Edge устройства и управлять ими. Прямые методы, описанные в этой статье, общедоступны в выпуске 1.0.10.
 
@@ -74,7 +76,7 @@ ms.locfileid: "101719021"
     }
 ```
 
-| Имя | Тип | Описание |
+| Название | Тип | Описание |
 |-|-|-|
 | schemaVersion | строка | Установите значение `1.0` |
 | items | Массив JSON | Массив с `id` `filter` кортежами и. |
@@ -85,15 +87,15 @@ ms.locfileid: "101719021"
 | until | строка | Возвращать журналы только до указанного времени, в виде метки времени rfc3339, метки времени UNIX или длительности (1 d, 90 м, 2 дня 3 часа 2 минуты). OPTIONAL. |
 | уровень ведения журнала | Целое число | Фильтровать строки журнала, которые меньше или равны указанному уровню ведения журнала. Строки журнала должны следовать рекомендуемому формату ведения журнала и использовать стандарт [уровня серьезности syslog](https://en.wikipedia.org/wiki/Syslog#Severity_level) . OPTIONAL. |
 | regex | строка | Фильтрация строк журнала, имеющих содержимое, совпадающее с указанным регулярным выражением, с использованием формата [регулярных выражений .NET](/dotnet/standard/base-types/regular-expressions) . OPTIONAL. |
-| encoding | строка | `gzip` или `none`. Значение по умолчанию — `none`. |
-| сontentType | строка | `json` или `text`. Значение по умолчанию — `text`. |
+| encoding | строка | `gzip` или `none`. По умолчанию — `none`. |
+| сontentType | строка | `json` или `text`. По умолчанию — `text`. |
 
 > [!NOTE]
 > Если содержимое журнала превышает предельное значение размера ответа для прямых методов, которое в настоящее время 128 КБ, ответ возвращает ошибку.
 
 Успешный выбор журналов возвращает **"Status": 200** , за которыми следуют полезные данные, содержащие журналы, полученные из модуля, отфильтрованные по параметрам, указанным в запросе.
 
-Пример.
+Например:
 
 ```azurecli
 az iot hub invoke-module-method --method-name 'GetModuleLogs' -n <hub name> -d <device id> -m '$edgeAgent' --method-payload \
@@ -134,7 +136,7 @@ az iot hub invoke-module-method --method-name 'GetModuleLogs' -n <hub name> -d <
 
 ![Вызов прямого метода "Жетмодулелогс" в портал Azure](./media/how-to-retrieve-iot-edge-logs/invoke-get-module-logs.png)
 
-Вы также можете передать выходные данные CLI в служебные программы Linux, например [gzip](https://en.wikipedia.org/wiki/Gzip), для обработки сжатого ответа. Пример.
+Вы также можете передать выходные данные CLI в служебные программы Linux, например [gzip](https://en.wikipedia.org/wiki/Gzip), для обработки сжатого ответа. Например:
 
 ```azurecli
 az iot hub invoke-module-method \
@@ -183,7 +185,7 @@ az iot hub invoke-module-method \
     }
 ```
 
-| Имя | Тип | Описание |
+| Название | Тип | Описание |
 |-|-|-|
 | sasURL | строка (URI) | [URL-адрес подписи общего доступа с доступом на запись к контейнеру хранилища BLOB-объектов Azure](/archive/blogs/jpsanders/easily-create-a-sas-to-download-a-file-from-azure-storage-using-azure-storage-explorer). |
 
@@ -197,13 +199,13 @@ az iot hub invoke-module-method \
     }
 ```
 
-| Имя | Тип | Описание |
+| Название | Тип | Описание |
 |-|-|-|
 | status | строка | Один из `NotStarted` ,,, `Running` `Completed` `Failed` или `Unknown` . |
 | message | строка | Сообщение, если ошибка, пустая строка в противном случае. |
 | correlationId | строка   | Идентификатор для запроса состояния запроса на отправку. |
 
-Пример.
+Например:
 
 Следующий вызов передает последние строки журнала 100 из всех модулей в сжатом формате JSON:
 
@@ -300,7 +302,7 @@ az iot hub invoke-module-method --method-name UploadModuleLogs -n <hub name> -d 
     }
 ```
 
-| Имя | Тип | Описание |
+| Название | Тип | Описание |
 |-|-|-|
 | schemaVersion | строка | Установите значение `1.0` |
 | sasURL | строка (URI) | [URL-адрес подписи общего доступа с доступом на запись к контейнеру хранилища BLOB-объектов Azure](/archive/blogs/jpsanders/easily-create-a-sas-to-download-a-file-from-azure-storage-using-azure-storage-explorer) |
@@ -321,13 +323,13 @@ az iot hub invoke-module-method --method-name UploadModuleLogs -n <hub name> -d 
     }
 ```
 
-| Имя | Тип | Описание |
+| Название | Тип | Описание |
 |-|-|-|
 | status | строка | Один из `NotStarted` ,,, `Running` `Completed` `Failed` или `Unknown` . |
 | message | строка | Сообщение, если ошибка, пустая строка в противном случае. |
 | correlationId | строка   | Идентификатор для запроса состояния запроса на отправку. |
 
-Пример.
+Например:
 
 ```azurecli
 az iot hub invoke-module-method --method-name 'UploadSupportBundle' -n <hub name> -d <device id> -m '$edgeAgent' --method-payload \
@@ -379,13 +381,13 @@ az iot hub invoke-module-method --method-name 'UploadSupportBundle' -n <hub name
     }
 ```
 
-| Имя | Тип | Описание |
+| Название | Тип | Описание |
 |-|-|-|
 | status | строка | Один из `NotStarted` ,,, `Running` `Completed` `Failed` или `Unknown` . |
 | message | строка | Сообщение, если ошибка, пустая строка в противном случае. |
 | correlationId | строка   | Идентификатор для запроса состояния запроса на отправку. |
 
-Пример.
+Например:
 
 ```azurecli
 az iot hub invoke-module-method --method-name 'GetTaskStatus' -n <hub name> -d <device id> -m '$edgeAgent' --method-payload \

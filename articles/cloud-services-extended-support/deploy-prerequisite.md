@@ -8,12 +8,12 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.date: 10/13/2020
 ms.custom: ''
-ms.openlocfilehash: 1473305d7da57d1216ef05c0b88a0f69d586784b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6e5994f05187cd25996bcc007d27a7e10eb76427
+ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101728116"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103232534"
 ---
 # <a name="prerequisites-for-deploying-azure-cloud-services-extended-support"></a>Необходимые условия для развертывания облачных служб Azure (Расширенная поддержка)
 
@@ -87,8 +87,8 @@ CloudServices           Microsoft.Compute    Registered
 | Имя предыдущего размера | Имя измененного размера | 
 |---|---|
 | Очень малый | Standard_A0 | 
-| Малый | Standard_A1 |
-| Средн. | Standard_A2 | 
+| Small | Standard_A1 |
+| Средний | Standard_A2 | 
 | Большой | Standard_A3 | 
 | Очень большой | Standard_A4 | 
 | A5 | Standard_A5 | 
@@ -120,7 +120,7 @@ CloudServices           Microsoft.Compute    Registered
 
 ## <a name="key-vault-creation"></a>Создание Key Vault 
 
-Хранилище ключей используется для хранения сертификатов, связанных с Облачными службами (расширенная поддержка). Добавьте сертификаты в Key Vault, а затем сослаться на отпечатки сертификата в файле конфигурации службы. Также для хранилища ключей необходимо включить соответствующие разрешения, позволяющие ресурсу Облачных служб (расширенная поддержка) получить из хранилища ключей сертификат, хранимый в виде секрета. Key Vault можно создать с помощью [портал Azure](../key-vault/general/quick-create-portal.md)и  [PowerShell](../key-vault/general/quick-create-powershell.md). Key Vault должны быть созданы в том же регионе и в подписке, что и облачная служба. Дополнительные сведения см. в статье [Использование сертификатов с Облачными службами Azure (расширенная поддержка)](certificates-and-key-vault.md).
+Хранилище ключей используется для хранения сертификатов, связанных с Облачными службами (расширенная поддержка). Добавьте сертификаты в Key Vault, а затем сослаться на отпечатки сертификата в файле конфигурации службы. Также для хранилища ключей необходимо включить соответствующие разрешения, позволяющие ресурсу Облачных служб (расширенная поддержка) получить из хранилища ключей сертификат, хранимый в виде секрета. Хранилище ключей можно создать в [портал Azure](../key-vault/general/quick-create-portal.md) или с помощью [PowerShell](../key-vault/general/quick-create-powershell.md). Хранилище ключей должно быть создано в том же регионе и подписке, что и облачная служба. Дополнительные сведения см. в статье [ Использование сертификатов с Облачными службами Azure (расширенная поддержка) ](certificates-and-key-vault.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия 
 - Ознакомьтесь с [предварительными требованиями для развертывания](deploy-prerequisite.md) облачных служб (Расширенная поддержка).

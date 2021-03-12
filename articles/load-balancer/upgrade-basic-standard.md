@@ -7,12 +7,12 @@ ms.service: load-balancer
 ms.topic: how-to
 ms.date: 01/23/2020
 ms.author: irenehua
-ms.openlocfilehash: 0f8476a8759dd445500c2eb6c029cd618a7ff8ce
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 125d4a02d06e2792f9a2a4e646c3788dcf223318
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101718987"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102612836"
 ---
 # <a name="upgrade-azure-public-load-balancer"></a>Обновление общедоступных Load Balancer Azure
 [Azure Load Balancer (цен. Категория "Стандартный")](load-balancer-overview.md) предлагает широкий набор функций и высокий уровень доступности через избыточность зоны. Дополнительные сведения о Load Balancer SKU см. в разделе [Таблица сравнения](./skus.md#skus).
@@ -23,7 +23,7 @@ ms.locfileid: "101718987"
 2. Запустите сценарий PowerShell, чтобы завершить обновление и перенос трафика.
 
 > [!IMPORTANT]
-> Сценарий в настоящее время находится в состоянии обслуживания. Инструкции по обновлению общедоступных IP-адресов см. [на странице с](../virtual-network/virtual-network-public-ip-address-upgrade.md?tabs=option-upgrade-cli%2coption-migrate-powershell#tabpanel_CeZOj-G++Q_option-upgrade-cli) номерами SKU "базовый" и "Стандартный".
+> Сценарий в настоящее время находится в состоянии обслуживания. Инструкции по обновлению общедоступных IP-адресов см. [на странице с](../virtual-network/virtual-network-public-ip-address-upgrade.md) номерами SKU "базовый" и "Стандартный".
 
 ## <a name="upgrade-overview"></a>Общие сведения об обновлении
 

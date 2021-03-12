@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.reviewer: veyalla
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 42c79526288fb7e05959ac60cddc6f468656ffd4
-ms.sourcegitcommit: d103a93e7ef2dde1298f04e307920378a87e982a
+ms.openlocfilehash: 52cd7817594c5c2a1d4e3a4ca9c56891df594cd6
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91972549"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103201113"
 ---
 # <a name="communicate-with-edgeagent-using-built-in-direct-methods"></a>Обмен данными с edgeAgent с помощью встроенных прямых методов
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Отслеживайте развертывания IoT Edge и управляйте ими с помощью прямых методов, входящих в модуль агента IoT Edge. Прямые методы реализуются на устройстве, а затем могут быть вызваны из облака. Агент IoT Edge содержит прямые методы, помогающие удаленно отслеживать IoT Edge устройства и управлять ими.
 
@@ -28,7 +30,7 @@ ms.locfileid: "91972549"
 
 Метод **ping** полезен для проверки того, работает ли IOT EDGE на устройстве, а также имеет ли устройство открытое подключение к центру Интернета вещей. Используйте этот прямой метод для проверки связи с агентом IoT Edge и получения его состояния. Успешный запрос проверки связи возвращает пустую полезную нагрузку и **"Status": 200**.
 
-Пример:
+Например:
 
 ```azurecli
 az iot hub invoke-module-method --method-name 'ping' -n <hub name> -d <device name> -m '$edgeAgent'
@@ -46,7 +48,7 @@ az iot hub invoke-module-method --method-name 'ping' -n <hub name> -d <device na
 
 Прямой метод Рестартмодуле можно использовать для любого модуля, работающего на IoT Edge устройстве, включая сам модуль edgeAgent. Однако если вы используете этот прямой метод для завершения работы edgeAgent, вы не получите результат успешного выполнения, так как подключение будет разорвано во время перезапуска модуля.
 
-Пример:
+Например:
 
 ```azurecli
 az iot hub invoke-module-method --method-name 'RestartModule' -n <hub name> -d <device name> -m '$edgeAgent' --method-payload \

@@ -3,12 +3,12 @@ title: Соответствие требованиям с помощью пол�
 description: Назначение встроенных политик в политике Azure для аудита соответствия реестров контейнеров Azure
 ms.topic: article
 ms.date: 03/01/2021
-ms.openlocfilehash: 3f6809698171950060b54257a365889242f4636e
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 0fed0c4132043e1eaed7e634e1f45b27f7c6e933
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102050585"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103014304"
 ---
 # <a name="audit-compliance-of-azure-container-registries-using-azure-policy"></a>Аудит соответствия реестров контейнеров Azure с помощью политики Azure
 
@@ -23,8 +23,6 @@ ms.locfileid: "102050585"
 Следующие встроенные определения политик относятся к реестру контейнеров Azure:
 
 [!INCLUDE [azure-policy-reference-rp-containerreg](../../includes/policy/reference/byrp/microsoft.containerregistry.md)]
-
-См. также встроенное определение политики сети. [Реестр контейнеров должен использовать конечную точку службы виртуальной сети](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fc4857be7-912a-4c75-87e6-e30292bcdf78).
 
 ## <a name="assign-policies"></a>Назначение политик
 

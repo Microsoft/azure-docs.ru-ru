@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 5d5a580e2b7be4699933b43687dcf164bf8f4a4a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 512ae470d3c9068b9d284095a18013fc84dbf36e
+ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101700088"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103232551"
 ---
 # <a name="collaborate-with-other-authors-and-editors"></a>Совместная работа с другими авторами и редакторами
 
@@ -18,7 +18,7 @@ ms.locfileid: "101700088"
 
 ## <a name="access-is-provided-on-the-qna-maker-resource"></a>Доступ предоставляется на QnA Maker ресурсе
 
-Все разрешения контролируются разрешениями, размещенными в ресурсе QnA Maker. Эти разрешения согласованы с доступом для чтения, записи, публикации и полного доступа.
+Все разрешения контролируются разрешениями, размещенными в ресурсе QnA Maker. Эти разрешения согласованы с доступом для чтения, записи, публикации и полного доступа. Вы можете разрешить совместную работу нескольких пользователей, [обновив доступ RBAC](../how-to/manage-qna-maker-app.md) для ресурса QnA Maker.
 
 Эта функция Azure RBAC включает в себя следующее:
 * Azure Active Directory (AAD) обеспечивает обратную совместимость 100% с проверкой подлинности на основе ключей для владельцев и участников. Клиенты могут использовать проверку подлинности на основе ключей или проверку подлинности на основе Azure RBAC в своих запросах.

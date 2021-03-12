@@ -4,7 +4,7 @@ description: В этой статье показано, как настроит�
 services: media-services
 keywords: DASH, DRM, режим автономной работы Widevine, ExoPlayer, Android
 documentationcenter: ''
-author: willzhan
+author: IngridAtMicrosoft
 manager: steveng
 editor: ''
 ms.service: media-services
@@ -12,15 +12,15 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 04/16/2019
+ms.date: 3/10/2021
 ms.author: willzhan
 ms.reviewer: dwgeo
-ms.openlocfilehash: dc21523d158330d70adfbc33734abe3d49535804
-ms.sourcegitcommit: 77afc94755db65a3ec107640069067172f55da67
+ms.openlocfilehash: b13feeda162f9babe1958402a694b728312ea4e5
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98696301"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103015409"
 ---
 # <a name="offline-widevine-streaming-for-android"></a>Потоковая передача Widevine для Android (автономный режим)
 
@@ -152,7 +152,7 @@ ExoPlayer версии 2.6 и более поздних версий включ�
 
 Кроме того, компания Google выпустила Progressive Web App (PWA) и создала открытый код для него: 
 
-- [Исходный код](https://github.com/GoogleChromeLabs/sample-media-pwa).
+- [Исходный код](https://github.com/GoogleChromeLabs/sample-media-pwa)
 - [Версия, размещенная в Google](https://biograf-155113.appspot.com/ttt/episode-2/) (работает только в Chrome версии 62 и более поздних версий на устройствах Android).
 
 Если обновить браузер Chrome версии 62 (или более поздней) для мобильных устройств на телефоне Android и протестировать размещенный выше пример приложения, будет работать как потоковая передача в оперативном режиме, так и воспроизведение в автономном.

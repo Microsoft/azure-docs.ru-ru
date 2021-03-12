@@ -9,13 +9,13 @@ author: WilliamDAssafMSFT
 ms.author: wiassaf
 ms.reviewer: sstein
 ms.custom: references_regions
-ms.date: 03/05/2021
-ms.openlocfilehash: b658fa9f2df6e8a88df89f9e8ccc1cf6b68cec39
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.date: 03/11/2021
+ms.openlocfilehash: bd91c29ca97c2096c4d8f3df19dbb9eab306b8e7
+ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102426065"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103149755"
 ---
 # <a name="maintenance-window-preview"></a>Период обслуживания (Предварительная версия)
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -61,12 +61,12 @@ Azure периодически выполняет [плановое обслуж
 
 Уведомления об обслуживании можно настроить для оповещения о предстоящих событиях запланированного обслуживания для базы данных SQL Azure за 24 часа, во время обслуживания и после завершения обслуживания. Дополнительные сведения см. в разделе [предварительные уведомления](advance-notifications.md).
 
-## <a name="availability"></a>Доступность
+## <a name="availability"></a>доступность;
 
 ### <a name="supported-service-level-objectives"></a>Поддерживаемые цели уровня обслуживания
 
 Выбор периода обслуживания, отличного от значения по умолчанию, доступен для всех SLO, **за исключением**:
-* Уровень "Гипермасштабирование" 
+* Гипермасштабирование 
 * Пулы экземпляров
 * Устаревший го поколения Виртуальное ядро
 * Basic, S0 и S1 
@@ -83,7 +83,8 @@ Azure периодически выполняет [плановое обслуж
 - Центральная часть США
 - Восточная часть США
 - восточная часть США 2
-- Japan East
+- Восточная Азия
+- Восточная Япония
 - Норсцентрал США
 - Северная Европа
 - Саусцентрал США

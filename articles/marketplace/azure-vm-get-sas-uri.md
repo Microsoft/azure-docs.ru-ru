@@ -6,13 +6,13 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
 author: iqshahmicrosoft
 ms.author: krsh
-ms.date: 01/10/2021
-ms.openlocfilehash: ad101bbaf9ae312e1a55fbb84098850378ca06fd
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.date: 03/10/2021
+ms.openlocfilehash: 976d1dd4044649c9ef5307431c744ff3c2068bca
+ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/12/2021
-ms.locfileid: "103200412"
+ms.locfileid: "103233571"
 ---
 # <a name="how-to-generate-a-sas-uri-for-a-vm-image"></a>Создание URI SAS для образа виртуальной машины
 

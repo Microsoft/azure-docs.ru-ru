@@ -5,13 +5,13 @@ services: logic-apps
 ms.suite: integration
 ms.reviewer: estfan, logicappspm, azla, rarayudu
 ms.topic: conceptual
-ms.date: 02/22/2021
-ms.openlocfilehash: 21edde3eba76b565332acb9c67225f3bbb0fe803
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.date: 03/09/2021
+ms.openlocfilehash: 7b082c226b38633d6c34ee2fe4d5227252b2bfcb
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102177289"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102556389"
 ---
 # <a name="secure-access-and-data-in-azure-logic-apps"></a>Безопасный доступ и данные в Azure Logic Apps
 
@@ -933,7 +933,7 @@ POST /subscriptions/<Azure-subscription-ID>/resourceGroups/<Azure-resource-group
 | [Сертификат клиента](#client-certificate-authentication) | Управление API Azure, службы приложений Azure, HTTP, HTTP + Swagger, веб-перехватчик HTTP |
 | [Active Directory OAuth](#azure-active-directory-oauth-authentication) | Управление API Azure, службы приложений Azure, функции Azure, HTTP, HTTP + Swagger, веб-перехватчик HTTP |
 | [Raw](#raw-authentication) | Управление API Azure, службы приложений Azure, функции Azure, HTTP, HTTP + Swagger, веб-перехватчик HTTP |
-| [Управляемое удостоверение](#managed-identity-authentication) | **Встроенные триггеры и действия** <p><p>Управление API Azure, службы приложений Azure, функции Azure, HTTP, веб-перехватчик HTTP <p><p>**Управляемые соединители** <p><p>Защита идентификации Azure AD, служба автоматизации Azure, экземпляр контейнера Azure, обозреватель данных Azure, фабрика данных Azure, Azure Data Lake, служба "Сетка событий Azure", Azure IoT Central v3, Azure Key Vault, Log Analytics Azure, журналы Azure Monitor, Azure Resource Manager, Sentinel Azure, HTTP с Azure AD <p><p>**Примечание**. Сейчас поддержка управляемых соединителей доступна в предварительной версии. |
+| [Управляемое удостоверение](#managed-identity-authentication) | **Встроенные триггеры и действия** <p><p>Управление API Azure, службы приложений Azure, функции Azure, HTTP, веб-перехватчик HTTP <p><p>**Управляемые соединители** <p><p>Защита идентификации Azure AD, служба автоматизации Azure, экземпляр контейнера Azure, обозреватель данных Azure, фабрика данных Azure, Azure Data Lake, служба "Сетка событий Azure", Azure IoT Central v3, Azure Key Vault, Azure Resource Manager, Sentinel Azure, HTTP с Azure AD <p><p>**Примечание**. Сейчас поддержка управляемых соединителей доступна в предварительной версии. |
 |||
 
 <a name="basic-authentication"></a>
@@ -1133,7 +1133,7 @@ Authorization: OAuth realm="Photos",
    | Свойство (конструктор) | Обязательно | Значение | Описание |
    |---------------------|----------|-------|-------------|
    | **Имя соединения** | Да | <*имя соединения*> ||
-   | **Управляемое удостоверение** | Да | **Управляемое удостоверение, назначаемое системой** <br>or <br> <*назначенное пользователем удостоверение-имя*> | Тип проверки подлинности |
+   | **Управляемое удостоверение** | Да | **Управляемое удостоверение, назначаемое системой** <br>или диспетчер конфигурации служб <br> <*назначенное пользователем удостоверение-имя*> | Тип проверки подлинности |
    |||||
 
 

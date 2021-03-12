@@ -6,14 +6,14 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 02/22/2021
+ms.date: 03/08/2021
 ms.author: alkohli
-ms.openlocfilehash: 5289f9b558a200bf3dbefdf584eab59d1792439b
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: ddbf3c99845f4c38f511260f4dec274903a9d586
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102437746"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102631967"
 ---
 # <a name="connect-to-and-manage-a-kubernetes-cluster-via-kubectl-on-your-azure-stack-edge-pro-gpu-device"></a>Подключение к кластеру Kubernetes и управление им через kubectl на устройстве с графическим процессором Azure Stack. Pro
 
@@ -105,7 +105,7 @@ ms.locfileid: "102437746"
 
 4. Файл конфигурации должен находиться в `.kube` папке профиля пользователя на локальном компьютере. Скопируйте файл в эту папку в профиле пользователя.
 
-    ![Расположение файла конфигурации на клиенте](media/azure-stack-edge-j-series-create-kubernetes-cluster/location-config-file.png)
+    ![Расположение файла конфигурации на клиенте](media/azure-stack-edge-gpu-create-kubernetes-cluster/location-config-file.png)
 
 5. Свяжите пространство имен с созданным пользователем. Тип:
 
@@ -169,9 +169,9 @@ ms.locfileid: "102437746"
 
 Чтобы удалить кластер Kubernetes, необходимо удалить конфигурацию IoT Edge.
 
-Подробные инструкции см. в статье [удаление IOT Edge конфигурации](azure-stack-edge-j-series-manage-compute.md#remove-iot-edge-service).
+Подробные инструкции см. в разделе [Управление конфигурацией IOT Edge](azure-stack-edge-gpu-manage-compute.md#manage-iot-edge-configuration).
    
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Развертывание приложения без отслеживания состояния на Azure Stack пограничной Pro](azure-stack-edge-j-series-deploy-stateless-application-kubernetes.md).
+- [Развертывание приложения без отслеживания состояния на Azure Stack пограничной Pro](azure-stack-edge-gpu-deploy-stateless-application-kubernetes.md).

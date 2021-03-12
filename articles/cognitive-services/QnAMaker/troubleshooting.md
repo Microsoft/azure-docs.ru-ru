@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.subservice: qna-maker
 ms.topic: troubleshooting
 ms.date: 11/09/2020
-ms.openlocfilehash: aea205bee41aed232b8453417dca521d2dfc83ab
-ms.sourcegitcommit: c7153bb48ce003a158e83a1174e1ee7e4b1a5461
+ms.openlocfilehash: 7b7ac20672ee653cbf6d2b82b7a9454c1d742b2c
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98233786"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102612700"
 ---
 # <a name="troubleshooting-for-qna-maker"></a>Устранение неполадок для QnA Maker
 
@@ -389,7 +389,7 @@ ms.locfileid: "98233786"
 <details>
 <summary><b>Нужна ли платформа Bot Framework для использования QnA Maker?</b></summary>
 
-**Ответ**. нет, не нужно использовать [платформу Bot](https://github.com/Microsoft/botbuilder-dotnet) с QnA Maker. Однако QnA Maker предлагается как один из нескольких шаблонов в [службе Azure Bot](/azure/bot-service/?preserve-view=true&view=azure-bot-service-4.0). Служба Azure Bot позволяет быстро разрабатывать интеллектуальные боты на платформе Microsoft Bot Framework, которые выполняются в бессерверной среде.
+**Ответ**. нет, не нужно использовать [платформу Bot](https://github.com/Microsoft/botbuilder-dotnet) с QnA Maker. Однако QnA Maker предлагается как один из нескольких шаблонов в [службе Azure Bot](/azure/bot-service/). Служба Azure Bot позволяет быстро разрабатывать интеллектуальные боты на платформе Microsoft Bot Framework, которые выполняются в бессерверной среде.
 
 </details>
 
@@ -438,7 +438,7 @@ ms.locfileid: "98233786"
 <details>
 <summary><b>Нужна ли платформа Bot Framework для использования QnA Maker?</b></summary>
 
-**Ответ**. нет, не нужно использовать [платформу Bot](https://github.com/Microsoft/botbuilder-dotnet) с QnA Maker. Однако QnA Maker предлагается как один из нескольких шаблонов в [службе Azure Bot](/azure/bot-service/?preserve-view=true&view=azure-bot-service-4.0). Служба Azure Bot позволяет быстро разрабатывать интеллектуальные боты на платформе Microsoft Bot Framework, которые выполняются в бессерверной среде.
+**Ответ**. нет, не нужно использовать [платформу Bot](https://github.com/Microsoft/botbuilder-dotnet) с QnA Maker. Однако QnA Maker предлагается как один из нескольких шаблонов в [службе Azure Bot](/azure/bot-service/). Служба Azure Bot позволяет быстро разрабатывать интеллектуальные боты на платформе Microsoft Bot Framework, которые выполняются в бессерверной среде.
 
 </details>
 

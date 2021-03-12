@@ -1,5 +1,5 @@
 ---
-title: Сценарии Windows для Azure IoT Edge | Документация Майкрософт
+title: Скрипты для Azure IoT Edge с контейнерами Windows | Документация Майкрософт
 description: Справочные сведения по сценариям IoT Edge PowerShell для установки, удаления или обновления на устройствах Windows
 author: kgremban
 manager: philmea
@@ -8,27 +8,27 @@ ms.date: 10/06/2020
 ms.topic: reference
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 2878d682d0f2025a50f26baf87476f66aa236e2c
-ms.sourcegitcommit: 484f510bbb093e9cfca694b56622b5860ca317f7
+ms.openlocfilehash: b7614f7ccd24d0237a043a9b5bf0ad988146d89c
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98630622"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102615913"
 ---
-# <a name="powershell-scripts-for-iot-edge-on-windows"></a>Сценарии PowerShell для IoT Edge в Windows
+# <a name="powershell-scripts-for-iot-edge-with-windows-containers"></a>Скрипты PowerShell для IoT Edge с контейнерами Windows
 
 Ознакомьтесь с сценариями PowerShell, которые устанавливают, обновляют или удаляют IoT Edge на устройствах Windows.
 
 Команды, описанные в этой статье, относятся к `IoTEdgeSecurityDaemon.ps1` файлу, который выпускается в каждом [выпуске IOT Edge](https://github.com/Azure/azure-iotedge/releases). Последняя версия скрипта всегда доступна по адресу aka.ms/iotedge-win.
 
-`Invoke-WebRequest`Для доступа к последней версии скрипта можно выполнить любую команду с помощью командлета. Пример:
+`Invoke-WebRequest`Для доступа к последней версии скрипта можно выполнить любую команду с помощью командлета. Пример.
 
 ```powershell
 . {Invoke-WebRequest -useb https://aka.ms/iotedge-win} | Invoke-Expression; `
 Deploy-IoTEdge
 ```
 
-Можно также скачать этот скрипт или версию скрипта из определенного выпуска для выполнения команд. Пример:
+Можно также скачать этот скрипт или версию скрипта из определенного выпуска для выполнения команд. Пример.
 
 ```powershell
 . <path>\IoTEdgeSecurityDaemon.ps1
@@ -96,7 +96,7 @@ Get-AuthenticodeSignature "C:\<path>\IotEdgeSecurityDaemon.ps1"
 
 | Параметр | Допустимые значения | Комментарии |
 | --------- | --------------- | -------- |
-| **Перевести** | нет | Этот флаг принудительно выполняет удаление, если предыдущая попытка удаления завершилась неудачно.
+| **Force** | нет | Этот флаг принудительно выполняет удаление, если предыдущая попытка удаления завершилась неудачно.
 | **рестартифнидед** | нет | Этот флаг позволяет сценарию удаления перезапускать компьютер без запроса при необходимости. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
