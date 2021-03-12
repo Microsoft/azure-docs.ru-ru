@@ -107,6 +107,8 @@
       href: concepts/logging-diagnostics.md
     - name: Простое уточнение расположения
       href: concepts/coarse-reloc.md
+    - name: Стратегия поиска привязок
+      href: concepts/anchor-locate-strategy.md
 - name: Ссылки
   items:
     - name: Пакет SDK для Unity

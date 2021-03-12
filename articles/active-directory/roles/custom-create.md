@@ -13,12 +13,12 @@ ms.author: rolyon
 ms.reviewer: vincesm
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba8ecf5442ea3da6db02335520eef3856ea48c62
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.openlocfilehash: 0e0e1543f18c18c7fdf97c39f35ba38ded658392
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98740165"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103007823"
 ---
 # <a name="create-and-assign-a-custom-role-in-azure-active-directory"></a>Создание и назначение пользовательской роли в Azure Active Directory
 
@@ -58,18 +58,18 @@ ms.locfileid: "98740165"
 Чтобы установить модуль Azure AD PowerShell, выполните следующие команды:
 
 ``` PowerShell
-install-module azureadpreview 
-import-module azureadpreview 
+Install-Module -Name AzureADPreview 
+Import-Module -Name AzureADPreview 
 ```
 
 Чтобы проверить, готов ли модуль к использованию, выполните следующую команду:
 
 ``` PowerShell
-get-module azureadpreview 
+Get-Module -Name AzureADPreview 
 
   ModuleType Version      Name                         ExportedCommands 
   ---------- ---------    ----                         ---------------- 
-  Binary     2.0.0.115    azureadpreview               {Add-AzureADAdministrati...} 
+  Binary     2.0.0.115    AzureADPreview               {Add-AzureADAdministrati...} 
 ```
 
 ### <a name="connect-to-azure"></a>Подключение к Azure

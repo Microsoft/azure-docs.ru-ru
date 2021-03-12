@@ -5,12 +5,12 @@ ms.topic: include
 ms.date: 10/07/2020
 ms.author: v-jawe
 ms.custom: references_regions
-ms.openlocfilehash: 08e4dbb4d16317efe33b308474ce5c32a7c47862
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 81186e6cf49e5f7e76a938881441cafa99d178eb
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98948572"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102444510"
 ---
 В этом руководстве показаны базовые шаблоны разработки для Распознавания говорящего с помощью пакета SDK службы Речи. В статье рассматриваются следующие темы:
 
@@ -33,17 +33,17 @@ ms.locfileid: "98948572"
 
 ## <a name="install-the-speech-sdk"></a>Установка пакета SDK службы "Речь"
 
-Сначала необходимо установить <a href="https://www.npmjs.com/package/microsoft-cognitiveservices-speech-sdk" target="_blank">пакет SDK службы "Речь" для JavaScript <span class="docon docon-navigate-external x-hidden-focus"></span></a>. В зависимости от используемой платформы выполните следующие действия:
+Сначала необходимо установить <a href="https://www.npmjs.com/package/microsoft-cognitiveservices-speech-sdk" target="_blank">пакет SDK службы "Речь" для JavaScript </a>. В зависимости от используемой платформы выполните следующие действия:
 
 - <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-sdk?tabs=nodejs#get-the-speech-sdk" target="_blank">Node.js <span 
 class="docon docon-navigate-external x-hidden-focus"></span></a>
-- <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-sdk?tabs=browser#get-the-speech-sdk" target="_blank">Веб-браузер <span class="docon docon-navigate-external x-hidden-focus"></span></a>
+- <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-sdk?tabs=browser#get-the-speech-sdk" target="_blank">Веб-браузер </a>
 
 Кроме того, в зависимости от целевой среды используйте один из следующих параметров:
 
 # <a name="script"></a>[script](#tab/script)
 
-Скачайте <a href="https://aka.ms/csspeech/jsbrowserpackage" target="_blank">пакет SDK службы "Речь" для JavaScript <span class="docon docon-navigate-external x-hidden-focus"></span></a>, извлеките из него файл *microsoft.cognitiveservices.speech.sdk.bundle.js* и поместите его в папку, доступную для HTML-файла.
+Скачайте пакет <a href="https://aka.ms/csspeech/jsbrowserpackage" target="_blank">SDK службы "Речь" для JavaScript</a>  , извлеките из него файл *microsoft.cognitiveservices.speech.sdk.bundle.js* и поместите его в папку, доступную для HTML-файла.
 
 ```html
 <script src="microsoft.cognitiveservices.speech.sdk.bundle.js"></script>;
@@ -58,7 +58,7 @@ class="docon docon-navigate-external x-hidden-focus"></span></a>
 import * from "microsoft-cognitiveservices-speech-sdk";
 ```
 
-Дополнительные сведения о директиве `import` см. в статье об <a href="https://javascript.info/import-export" target="_blank">экспорте и импорте <span class="docon docon-navigate-external x-hidden-focus"></span></a>.
+Дополнительные сведения о директиве `import` см. в статье об <a href="https://javascript.info/import-export" target="_blank">экспорте и импорте </a>.
 
 # <a name="require"></a>[require](#tab/require)
 
@@ -66,7 +66,7 @@ import * from "microsoft-cognitiveservices-speech-sdk";
 const sdk = require("microsoft-cognitiveservices-speech-sdk");
 ```
 
-Дополнительные сведения о функции `require` см. <a href="https://nodejs.org/en/knowledge/getting-started/what-is-require/" target="_blank">здесь <span class="docon docon-navigate-external x-hidden-focus"></span></a>.
+Дополнительные сведения о функции `require` см. <a href="https://nodejs.org/en/knowledge/getting-started/what-is-require/" target="_blank">здесь </a>.
 
 ---
 

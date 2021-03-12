@@ -556,7 +556,7 @@
     - name: Java
       href: /java/api/com.microsoft.azure.management.resources
     - name: Python
-      href: /python/api/overview/azure/resources?view=azure-python
+      href: /python/api/overview/azure/resources
 - name: Ресурсы
   items:
     - name: Развитие навыков с помощью Microsoft Learn

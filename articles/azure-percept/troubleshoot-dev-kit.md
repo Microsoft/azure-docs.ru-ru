@@ -1,18 +1,18 @@
 ---
 title: Устранение общих проблем с Azure Перцепт DK и IoT Edge
-description: Советы по устранению неполадок для некоторых наиболее распространенных проблем, возникающих при работе с интегрированной средой
+description: Получите советы по устранению некоторых из наиболее распространенных проблем с Azure Перцепт DK.
 author: mimcco
 ms.author: mimcco
 ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/18/2021
 ms.custom: template-how-to
-ms.openlocfilehash: a6d099e8d267c9fe03e0bb676276e7a4ab8157ab
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 93812cf2b0db7fc3557e31c8d9e8053831c7b90f
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102521532"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103011006"
 ---
 # <a name="azure-percept-dk-dev-kit-troubleshooting"></a>Устранение неполадок в Azure Перцепт DK (комплект разработчика)
 
@@ -28,7 +28,7 @@ ms.locfileid: "102521532"
 Чтобы перенаправить выходные данные в txt-файл для дальнейшего анализа, используйте следующий синтаксис:
 
 ```console
-[command] > [file name].txt
+sudo [command] > [file name].txt
 ```
 
 После перенаправления выходных данных в txt-файл скопируйте файл на главный компьютер с помощью SCP:
@@ -43,17 +43,17 @@ scp [remote username]@[IP address]:[remote file path]/[file name].txt [local hos
 
 |Категория:         |Команда:                    |Функция:                  |
 |------------------|----------------------------|---------------------------|
-|OS                |```cat /etc/os-release```         |Проверка версии образа Маринер |
-|OS                |```cat /etc/os-subrelease```      |проверить версию производного образа |
-|OS                |```cat /etc/adu-version```        |Проверка версии аду |
+|ОС                |```cat /etc/os-release```         |Проверка версии образа Маринер |
+|ОС                |```cat /etc/os-subrelease```      |проверить версию производного образа |
+|ОС                |```cat /etc/adu-version```        |Проверка версии аду |
 |температура;       |```cat /sys/class/thermal/thermal_zone0/temp``` |Проверка температуры DevKit |
-|Wi-Fi             |```journalctl -u hostapd.service``` |Проверка журналов Софтап|
-|Wi-Fi             |```journalctl -u wpa_supplicant.service``` |Проверка журналов Wi-Fi Services |
-|Wi-Fi             |```journalctl -u ztpd.service```  |Проверка Wi-Fi журналов службы подготовки для нулевого сенсорного ввода |
-|Wi-Fi             |```journalctl -u systemd-networkd``` |Проверка журналов сетевого стека Маринер |
-|Wi-Fi             |```/data/misc/wifi/hostapd_virtual.conf``` |Проверка сведений о конфигурации точки доступа WiFi |
-|OOBE              |```journalctl -u oobe -b```       |Проверка журналов OOBE |
-|Телеметрия         |```azure-device-health-id```      |Поиск уникальных HW_ID телеметрии |
+|Wi-Fi             |```sudo journalctl -u hostapd.service``` |Проверка журналов Софтап|
+|Wi-Fi             |```sudo journalctl -u wpa_supplicant.service``` |Проверка журналов Wi-Fi Services |
+|Wi-Fi             |```sudo journalctl -u ztpd.service```  |Проверка Wi-Fi журналов службы подготовки для нулевого сенсорного ввода |
+|Wi-Fi             |```sudo journalctl -u systemd-networkd``` |Проверка журналов сетевого стека Маринер |
+|Wi-Fi             |```sudo cat /etc/hostapd/hostapd-wlan1.conf``` |Проверка сведений о конфигурации точки доступа WiFi |
+|OOBE              |```sudo journalctl -u oobe -b```       |Проверка журналов OOBE |
+|Телеметрия         |```sudo azure-device-health-id```      |Поиск уникальных HW_ID телеметрии |
 |Azure IoT Edge          |```sudo iotedge check```          |Выполните проверку конфигурации и подключения для распространенных проблем. |
 |Azure IoT Edge          |```sudo iotedge logs [container name]``` |Проверка журналов контейнеров, например модулей распознавания речи и концепций |
 |Azure IoT Edge          |```sudo iotedge support-bundle --since 1h``` |получение журналов модулей, Azure IoT Edge журналов диспетчера безопасности, журналов обработчика контейнеров, ```iotedge check``` выходных данных JSON и других полезных сведений об отладке за последний час |
@@ -61,26 +61,26 @@ scp [remote username]@[IP address]:[remote file path]/[file name].txt [local hos
 |Azure IoT Edge          |```sudo systemctl restart iotedge``` |перезапуск управляющей программы Azure IoT Edge Security |
 |Azure IoT Edge          |```sudo iotedge list```           |Вывод списка развернутых модулей Azure IoT Edge |
 |Другое             |```df [option] [file]```          |Отображение сведений о доступном или общем пространстве в указанных файловых системах |
-|Другое             |```ip route get 1.1.1.1```        |Отображение сведений об IP-адресе устройства и интерфейсе |
-|Другое             |```ip route get 1.1.1.1 \| awk '{print $7}'``` <br> ```ifconfig [interface]``` |отображать только IP-адрес устройства |
+|Другое             |`ip route get 1.1.1.1`        |Отображение сведений об IP-адресе устройства и интерфейсе |
+|Другое             |<code>ip route get 1.1.1.1 &#124; awk '{print $7}'</code> <br> `ifconfig [interface]` |отображать только IP-адрес устройства |
 
 
 ```journalctl```Wi-Fi команды могут быть объединены в следующую одну команду:
 
 ```console
-journalctl -u hostapd.service -u wpa_supplicant.service -u ztpd.service -u systemd-networkd -b
+sudo journalctl -u hostapd.service -u wpa_supplicant.service -u ztpd.service -u systemd-networkd -b
 ```
 
 ## <a name="docker-troubleshooting-commands"></a>Команды устранения неполадок DOCKER
 
 |Команда:                        |Функция:                  |
 |--------------------------------|---------------------------|
-|```docker ps``` |[показывает, какие контейнеры выполняются](https://docs.docker.com/engine/reference/commandline/ps/) |
-|```docker images``` |[показывает, какие образы находятся на устройстве](https://docs.docker.com/engine/reference/commandline/images/)|
-|```docker rmi [image id] -f``` |[Удаляет образ с устройства](https://docs.docker.com/engine/reference/commandline/rmi/) |
-|```docker logs -f edgeAgent``` <br> ```docker logs -f [module_name]``` |[принимает журналы контейнеров указанного модуля](https://docs.docker.com/engine/reference/commandline/logs/) |
-|```docker image prune``` |[Удаляет все висячие образы](https://docs.docker.com/engine/reference/commandline/image_prune/) |
-|```watch docker ps``` <br> ```watch ifconfig [interface]``` |Проверка состояния скачивания контейнера DOCKER |
+|```sudo docker ps``` |[показывает, какие контейнеры выполняются](https://docs.docker.com/engine/reference/commandline/ps/) |
+|```sudo docker images``` |[показывает, какие образы находятся на устройстве](https://docs.docker.com/engine/reference/commandline/images/)|
+|```sudo docker rmi [image id] -f``` |[Удаляет образ с устройства](https://docs.docker.com/engine/reference/commandline/rmi/) |
+|```sudo docker logs -f edgeAgent``` <br> ```sudo docker logs -f [module_name]``` |[принимает журналы контейнеров указанного модуля](https://docs.docker.com/engine/reference/commandline/logs/) |
+|```sudo docker image prune``` |[Удаляет все висячие образы](https://docs.docker.com/engine/reference/commandline/image_prune/) |
+|```sudo watch docker ps``` <br> ```watch ifconfig [interface]``` |Проверка состояния скачивания контейнера DOCKER |
 
 ## <a name="usb-updating"></a>Обновление USB
 

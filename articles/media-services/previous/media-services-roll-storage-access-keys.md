@@ -3,7 +3,7 @@ title: Обновление служб мультимедиа после обо�
 description: В этой статье содержится руководство по обновлению служб мультимедиа после оборота ключей доступа к хранилищу.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: a892ebb0-0ea0-4fc8-b715-60347cc5c95b
@@ -12,15 +12,15 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/20/2019
-ms.author: juliako
+ms.date: 3/10/2021
+ms.author: inhenkel
 ms.reviewer: milanga;cenkdin
-ms.openlocfilehash: c68bedb37722fb6a8b7ad9dccdeaaaa4fab9d020
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 12732171f774e6ce010f722cde4a27bb298275b9
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89264136"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103007946"
 ---
 # <a name="update-media-services-after-rolling-storage-access-keys"></a>Обновление Служб мультимедиа после смены ключей доступа к хранилищу
 

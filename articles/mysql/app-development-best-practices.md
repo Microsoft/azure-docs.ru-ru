@@ -6,14 +6,14 @@ ms.author: sumuth
 ms.service: mysql
 ms.topic: conceptual
 ms.date: 08/11/2020
-ms.openlocfilehash: afe14bc03f0d12e56e1512aeb788a77c64151b58
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.openlocfilehash: 7f98e14c2eae133941f3fc87247a427198ebcdc2
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
-ms.locfileid: "92547254"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102611969"
 ---
-# <a name="best-practices-for-building-an-application-with-azure-database-for-mysql"></a>Рекомендации по созданию приложения с помощью базы данных Azure для MySQL 
+# <a name="best-practices-for-building-an-application-with-azure-database-for-mysql"></a>Рекомендации по созданию приложения с помощью Базы данных Azure для MySQL 
 
 Ниже приведены некоторые рекомендации, которые помогут вам создать приложение, готовое к работе в облаке, с помощью базы данных Azure для MySQL. Эти рекомендации могут сократить время разработки приложения. 
 
@@ -73,10 +73,10 @@ ms.locfileid: "92547254"
 
 Вы заметите задержку между источником и репликой, так как репликация выполняется асинхронно. На задержку сети может влиять множество факторов, например размер рабочей нагрузки, выполняемой на исходном сервере, и задержка между центрами обработки данных. В большинстве случаев запаздывание реплики находится в диапазоне от нескольких секунд до нескольких минут.
 
-## <a name="database-deployment"></a>Развертывание базы данных 
+## <a name="database-deployment"></a>Развертывание баз данных 
 
 ### <a name="configure-an-azure-database-for-mysql-task-in-your-cicd-deployment-pipeline"></a>Настройка задачи "база данных Azure для MySQL" в конвейере развертывания CI/CD
-Иногда необходимо развернуть изменения в базе данных. В таких случаях можно использовать непрерывную интеграцию (CI) и непрерывную доставку (CD) с помощью [Azure pipelines](https://azure.microsoft.com/services/devops/pipelines/) и использовать задачу для [сервера MySQL](/azure/devops/pipelines/tasks/deploy/azure-mysql-deployment?view=azure-devops&preserve-view=true) для обновления базы данных, запустив для нее пользовательский сценарий.
+Иногда необходимо развернуть изменения в базе данных. В таких случаях можно использовать непрерывную интеграцию (CI) и непрерывную доставку (CD) с помощью [Azure pipelines](https://azure.microsoft.com/services/devops/pipelines/) и использовать задачу для [сервера MySQL](/azure/devops/pipelines/tasks/deploy/azure-mysql-deployment) для обновления базы данных, запустив для нее пользовательский сценарий.
 
 ### <a name="use-an-effective-process-for-manual-database-deployment"></a>Использование эффективного процесса развертывания базы данных вручную 
 При ручном развертывании базы данных выполните следующие действия, чтобы свести к минимуму время простоя или снизить риск сбоя развертывания. 

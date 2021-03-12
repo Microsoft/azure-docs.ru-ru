@@ -2,19 +2,18 @@
 title: Настройка Key Vault с помощью PowerShell
 description: Как настроить Key Vault для использования с виртуальной машиной с помощью PowerShell.
 author: mimckitt
-manager: vashan
 ms.service: virtual-machines
 ms.subservice: security
 ms.workload: infrastructure-services
 ms.topic: how-to
 ms.date: 01/24/2017
 ms.author: mimckitt
-ms.openlocfilehash: dd4a6ed5f57c536a9e40b2fd81b96d055702b425
-ms.sourcegitcommit: 4cb89d880be26a2a4531fedcc59317471fe729cd
+ms.openlocfilehash: 124ab121186ff7c9047515f2ee1ff51cee1114b8
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92678321"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102557494"
 ---
 # <a name="set-up-key-vault-for-virtual-machines-using-azure-powershell"></a>Настройка Key Vault для виртуальных машин с помощью Azure PowerShell
 

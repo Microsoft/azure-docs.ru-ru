@@ -14,12 +14,12 @@ ms.author: rolyon
 ms.reviewer: anandy
 ms.custom: oldportal;it-pro;
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e82be52cff824c69dd2fe4ea5e7e1c0d7489be1d
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.openlocfilehash: 49f2c290c69fcadd594d6cbd5879e7d9f5304a42
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98740335"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102558021"
 ---
 # <a name="administrative-units-in-azure-active-directory"></a>Административные единицы в Azure Active Directory
 
@@ -47,8 +47,8 @@ ms.locfileid: "98740335"
 Административными единицами можно управлять с помощью портала Azure, командлетов и скриптов PowerShell или Microsoft Graph. Дополнительные сведения можно найти в разделе
 
 - [Создание, удаление, заполнение и добавление ролей в административных единицах](admin-units-manage.md). Включает полное практическое руководство.
-- [Работа с административными единицами](/powershell/azure/active-directory/working-with-administrative-units?view=azureadps-2.0&preserve-view=true). Это инструкции по работе с административными единицами с использованием PowerShell.
-- [Поддержка Graph для административных единиц](/graph/api/resources/administrativeunit?view=graph-rest-1.0&preserve-view=true). Содержит подробную документацию по Microsoft Graph для административных единиц.
+- [Работа с административными единицами](/powershell/azure/active-directory/working-with-administrative-units). Это инструкции по работе с административными единицами с использованием PowerShell.
+- [Поддержка Graph для административных единиц](/graph/api/resources/administrativeunit). Содержит подробную документацию по Microsoft Graph для административных единиц.
 
 ### <a name="plan-your-administrative-units"></a>Планирование административных единиц
 

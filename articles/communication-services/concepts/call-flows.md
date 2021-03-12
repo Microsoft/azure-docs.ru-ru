@@ -9,14 +9,16 @@ ms.author: mikben
 ms.date: 09/30/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 5b1d24dc6056de0b8dd19d0d0e52c85055596a1d
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 0efe9cc3bad599d4ab621fef7308a807cc5e9967
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101664143"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102485992"
 ---
 # <a name="call-flow-basics"></a>Основы потока вызовов
+
+[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
 
 В следующем разделе содержатся общие сведения о потоках вызовов в Службах коммуникации Azure. Потоки сигнализации и мультимедиа могут быть разными в зависимости от типов вызовов, которые совершают ваши пользователи. Например, это могут быть голосовые вызовы через IP (VoIP) "один к одному", ТСОП "один к одному" или групповые вызовы с разными сочетаниями подключений по VoIP и ТСОП. Изучите раздел [Типы вызовов](./voice-video-calling/about-call-types.md).
 

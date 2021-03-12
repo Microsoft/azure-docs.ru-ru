@@ -5,13 +5,13 @@ services: logic-apps
 ms.suite: integration
 ms.reviewer: estfan, logicappspm, azla
 ms.topic: article
-ms.date: 02/12/2021
-ms.openlocfilehash: 055df9d2290ee445e2a7201acd374508a86e839f
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.date: 03/09/2021
+ms.openlocfilehash: 7796fc7e2032559ca3ff5c738c46fe025719942d
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102213324"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102556627"
 ---
 # <a name="authenticate-access-to-azure-resources-by-using-managed-identities-in-azure-logic-apps"></a>Проверка подлинности и получение доступа к ресурсам Azure с помощью управляемых удостоверений в Azure Logic Apps.
 
@@ -39,7 +39,6 @@ Azure Logic Apps поддерживает [*назначенные систем�
 * Служба автоматизации Azure
 * Сетка событий Azure
 * Azure Key Vault
-* Журналы Azure Monitor
 * Azure Resource Manager
 * HTTP с Azure AD
 

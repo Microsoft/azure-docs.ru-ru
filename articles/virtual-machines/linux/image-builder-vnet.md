@@ -5,15 +5,16 @@ author: danielsollondon
 ms.author: danis
 ms.date: 03/02/2021
 ms.topic: how-to
-ms.service: virtual-machines-linux
-ms.subservice: imaging
+ms.service: virtual-machines
+ms.subservice: image-builder
+ms.collection: linux
 ms.reviewer: danis
-ms.openlocfilehash: b523168429aa05a148a6e814881d1338a1bb39cf
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 500ddec9b84f9d73db45ddb4b7f5a8486a48d3e5
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101695623"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102565314"
 ---
 # <a name="use-azure-image-builder-for-linux-vms-allowing-access-to-an-existing-azure-vnet"></a>Использование Azure Image Builder для виртуальных машин Linux, разрешающих доступ к существующей виртуальной сети Azure
 

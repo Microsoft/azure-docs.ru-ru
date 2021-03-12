@@ -11,14 +11,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 10/21/2020
+ms.date: 03/10/2021
 ms.author: inhenkel
-ms.openlocfilehash: 495b6bc68e79e50a0bda773e7229225595236fac
-ms.sourcegitcommit: 77afc94755db65a3ec107640069067172f55da67
+ms.openlocfilehash: 3487e735e48cb5067515762d6276429ca81e43fe
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98694348"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103008745"
 ---
 # <a name="azure-media-services-legacy-components"></a>Устаревшие компоненты служб мультимедиа Azure
 
@@ -47,6 +47,6 @@ ms.locfileid: "98694348"
 | Обнаружение лиц | 1 июня 2020 г. | Этот обработчик мультимедиа был заменен [индексатором видео служб мультимедиа Azure](../video-indexer/index.yml). Кроме того, рассмотрите возможность использования [API служб мультимедиа Azure v3](../latest/analyzing-video-audio-files-concept.md). <br/>См. статью [Сравнение предустановок и индексатора видео служб мультимедиа Azure v3](../video-indexer/compare-video-indexer-with-media-services-presets.md). |
 | Content Moderator | 1 июня 2020 г. |Этот обработчик мультимедиа был заменен [индексатором видео служб мультимедиа Azure](../video-indexer/index.yml). Кроме того, рассмотрите возможность использования [API служб мультимедиа Azure v3](../latest/analyzing-video-audio-files-concept.md). <br/>См. статью [Сравнение предустановок и индексатора видео служб мультимедиа Azure v3](../video-indexer/compare-video-indexer-with-media-services-presets.md). |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Руководство по миграции из версии 2 в версию 3 Служб мультимедиа](../latest/migrate-v-2-v-3-migration-introduction.md)

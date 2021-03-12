@@ -7,12 +7,12 @@ ms.service: dns
 ms.topic: how-to
 ms.date: 02/18/2020
 ms.author: allensu
-ms.openlocfilehash: d5a81a56e6b29bb0cad681876b9476809bd9f3cb
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: 6e77f983f3600ae7c54d7d88f2ad1a006d7325fa
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102203442"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102614196"
 ---
 # <a name="how-to-protect-private-dns-zones-and-records"></a>Как защитить частные зоны и записи DNS
 
@@ -204,7 +204,7 @@ Azure Resource Manager поддерживает другой тип управл
 
 ![Блокировка ресурсов на уровне зоны через портал Azure](./media/dns-protect-private-zones-recordsets/locks1.png)
 
-Блокировки ресурсов на уровне зоны также можно создавать с помощью [Azure PowerShell](/powershell/module/az.resources/new-azresourcelock?view=latest):
+Блокировки ресурсов на уровне зоны также можно создавать с помощью [Azure PowerShell](/powershell/module/az.resources/new-azresourcelock):
 
 ```azurepowershell-interactive
 # Lock a DNS zone

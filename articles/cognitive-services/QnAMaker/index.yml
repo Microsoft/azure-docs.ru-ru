@@ -11,12 +11,12 @@ metadata:
   services: cognitive-services
   title: Документация по QnA Maker
   description: QnA Maker — это облачная служба API, которая позволяет работать с данными в форме вопросов и ответов. QnA Maker представляет собой службу для отправки вопросов и получения ответов из частично структурированного содержимого, например документов с часто задаваемыми вопросами, URL-адресов и руководств по продуктам. Служба QnA Maker отвечает на вопросы, сформулированные на естественном языке, сопоставляя их с наиболее точными ответами в разделе вопросов и ответов вашей базы знаний.
-  ms.openlocfilehash: 00e2f029d467e4bf4acfbc9ee55727328c23ba72
-  ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+  ms.openlocfilehash: d993dfcc4d486190e2501940465598b53808b965
+  ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/09/2021
-  ms.locfileid: "102502218"
+  ms.lasthandoff: 03/10/2021
+  ms.locfileid: "102613890"
 landingContent:
 - title: Сведения о QnA Maker
   linkLists:
@@ -91,7 +91,7 @@ landingContent:
     - text: 'Power Apps: создание бота с поддержкой QnA Maker'
       url: tutorials/integrate-with-power-virtual-assistant-fallback-topic.md
     - text: 'Bot Framework: диспетчеризация между приложениями LUIS и QnA Maker'
-      url: /azure/bot-service/bot-builder-tutorial-dispatch?tabs=cs&view=azure-bot-service-4.0
+      url: /azure/bot-service/bot-builder-tutorial-dispatch?tabs=cs
     - text: Другие примеры ботов
       url: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
 - title: Справочник

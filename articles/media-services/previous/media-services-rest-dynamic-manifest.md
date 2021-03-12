@@ -3,7 +3,7 @@ title: Создание фильтров с помощью REST API служб �
 description: В этом разделе описывается создание фильтров, с помощью которых клиент может передавать определенные секции потока. Службы мультимедиа REST API создают динамические манифесты для реализации этой выборочной потоковой передачи.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: f7d23daf-7cd2-49c7-a195-ab902912ab3c
@@ -12,15 +12,15 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: ne
 ms.topic: article
-ms.date: 03/20/2019
-ms.author: juliako
+ms.date: 03/10/2021
+ms.author: inhenkel
 ms.reviewr: cenkdin
-ms.openlocfilehash: 2b0271edbbd119e1d60f30cc149ba7772fd0cfa9
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b9286260d0fead11c7f55eff213c8ad0241a8cba
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101730224"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103008796"
 ---
 # <a name="creating-filters-with-azure-media-services-rest-api"></a>Создание фильтров с помощью с помощью API REST служб мультимедиа
 

@@ -3,7 +3,7 @@ title: Импорт коллекции Postman с помощью операци�
 description: Сведения о коллекции POST, содержащей сгруппированные HTTP-запросы, вызывающие интерфейсы API служб мультимедиа Azure.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.service: media-services
@@ -11,14 +11,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/20/2019
-ms.author: juliako
-ms.openlocfilehash: 30a139ca0569a2ada4a66befbf7c56a9f8edaab9
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.date: 3/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: 64e7dd754f09a60163decfd419ce6c2cd2c6182d
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97656756"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103007827"
 ---
 # <a name="import-a-postman-collection-with-on-demand-streaming-operations"></a>Импорт коллекции Postman с помощью операций потокового воспроизведения по запросу
 

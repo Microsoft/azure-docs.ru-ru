@@ -11,12 +11,12 @@ author: msmimart
 manager: celestedg
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68ac8eab22054099a6ba6735c020f0ba70d1037f
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: d41d7d45fd11f2dc26fc50182a7649b23cd21196
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/11/2021
-ms.locfileid: "102634272"
+ms.locfileid: "103008762"
 ---
 # <a name="add-a-custom-approval-workflow-to-self-service-sign-up"></a>Добавление пользовательского рабочего процесса утверждения для самостоятельной регистрации
 
@@ -105,7 +105,7 @@ Content-type: application/json
 
 {
  "email": "johnsmith@fabrikam.onmicrosoft.com",
- "identities": [ //Sent for Google and Facebook identity providers
+ "identities": [ //Sent for Google, Facebook, and Email One Time Passcode identity providers 
      {
      "signInType":"federated",
      "issuer":"facebook.com",
@@ -180,7 +180,7 @@ Content-type: application/json
 
 {
  "email": "johnsmith@fabrikam.onmicrosoft.com",
- "identities": [ //Sent for Google and Facebook identity providers
+ "identities": [ // Sent for Google, Facebook, and Email One Time Passcode identity providers 
      {
      "signInType":"federated",
      "issuer":"facebook.com",

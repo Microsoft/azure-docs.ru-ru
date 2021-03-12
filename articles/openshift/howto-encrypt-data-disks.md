@@ -7,12 +7,12 @@ author: stuartatmicrosoft
 ms.author: stkirk
 ms.service: azure-redhat-openshift
 keywords: Шифрование, byok, АТО, CMK, openshift, Red Hat
-ms.openlocfilehash: ca69594952c9fa547390e9a73b48ec8165145378
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: fa84096dcc44e668a6cf7ebd0369c6d3631c28d2
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102505228"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102555624"
 ---
 # <a name="encrypt-persistent-volume-claims-with-a-customer-managed-key-cmk-on-azure-red-hat-openshift-aro-preview"></a>Зашифровать утверждения Постоянного тома с помощью ключа, управляемого клиентом (CMK) в Azure Red Hat OpenShift (АТО) (Предварительная версия)
 
@@ -29,7 +29,7 @@ ms.locfileid: "102505228"
 
 * У вас есть существующий кластер АТО по адресу OpenShift версии 4,4 (или более поздней).
 
-* У вас есть средство командной строки **OC** OpenShift, Base64 (часть основных служебных программ) и **AZ** Azure CLI installed.
+* У вас есть программа командной строки **OC** OpenShift, Base64 (часть кореутилс) и **AZ** Azure CLI installed.
 
 * Вы вошли в кластер АТО с помощью **OC** в качестве глобального кластера (кубеадмин).
 
@@ -43,8 +43,8 @@ ms.locfileid: "102505228"
 ## <a name="declare-cluster--encryption-variables"></a>Объявление переменных шифрования & кластера
 Следует настроить приведенные ниже переменные так, чтобы вы могли подойти к кластеру АТО, в котором вы хотите включить управляемые клиентом ключи шифрования:
 ```
-aroCluster="mycluster"             # The name of the ARO cluster that you wish to enable CMK on. This may be obtained from *az aro list -o table*
-buildRG="mycluster-rg"             # The name of the resource group used when you initially built the ARO cluster. This may be obtained from *az aro list -o table*
+aroCluster="mycluster"             # The name of the ARO cluster that you wish to enable CMK on. This may be obtained from **az aro list -o table**
+buildRG="mycluster-rg"             # The name of the resource group used when you initially built the ARO cluster. This may be obtained from **az aro list -o table**
 desName="aro-des"                  # Your Azure Disk Encryption Set name. This must be unique in your subscription.
 vaultName="aro-keyvault-1"         # Your Azure Key Vault name. This must be unique in your subscription.
 vaultKeyName="myCustomAROKey"      # The name of the key to be used within your Azure Key Vault. This is the name of the key, not the actual value of the key that you will rotate.
@@ -58,11 +58,12 @@ subId="$(az account list -o tsv | grep True | awk '{print $3}')"
 ```
 
 ## <a name="create-an-azure-key-vault-instance"></a>Создание экземпляра Azure Key Vault
-Для хранения ключей необходимо использовать экземпляр Azure Key Vault. Создайте новый Key Vault с включенной защитой очистки и обратимым удалением. Затем создайте новый ключ в хранилище для хранения собственного пользовательского ключа:
+Для хранения ключей необходимо использовать экземпляр Azure Key Vault. Создайте новый Key Vault с включенной защитой очистки. Затем создайте новый ключ в хранилище для хранения собственного пользовательского ключа:
 
 ```azurecli-interactive
 # Create an Azure Key Vault resource in a supported Azure region
 az keyvault create -n $vaultName -g $buildRG --enable-purge-protection true -o table
+
 # Create the actual key within the Azure Key Vault
 az keyvault key create --vault-name $vaultName --name $vaultKeyName --protection software -o jsonc
 ```
@@ -86,20 +87,21 @@ az disk-encryption-set create -n $desName -g $buildRG --source-vault $keyVaultId
 Используйте набор шифрования дисков, созданный на предыдущих шагах, и предоставьте набору шифрования дисков доступ к Azure Key Vault:
 
 ```azurecli-interactive
-# First, find the disk encryption set's AppId value.
+# First, find the disk encryption set's Azure Application ID value.
 desIdentity="$(az disk-encryption-set show -n $desName -g $buildRG --query [identity.principalId] -o tsv)"
 
 # Next, update the Key Vault security policy settings to allow access to the disk encryption set.
 az keyvault set-policy -n $vaultName -g $buildRG --object-id $desIdentity --key-permissions wrapkey unwrapkey get -o table
 
-# Now, ensure the disk encryption set can read the contents of the Azure Key Vault.
+# Now, ensure the Disk Encryption Set can read the contents of the Azure Key Vault.
 az role assignment create --assignee $desIdentity --role Reader --scope $keyVaultId -o jsonc
 ```
 
 ### <a name="obtain-other-ids-required-for-role-assignments"></a>Получение других идентификаторов, необходимых для назначений ролей
 Необходимо разрешить кластеру АТО использовать набор шифрования дисков для шифрования заявок на постоянные тома (PVC) в кластере АТО. Для этого будет создан новый Управляемое удостоверение службы (MSI). Также будут заданы другие разрешения для MSI АТО и для набора шифрования диска.
-```
-# First, get the application ID of the service principal used in the ARO cluster.
+
+```azurecli-interactive
+# First, get the Azure Application ID of the service principal used in the ARO cluster.
 aroSPAppId="$(oc get secret azure-credentials -n kube-system -o jsonpath='{.data.azure_client_id}' | base64 --decode)"
 
 # Next, get the object ID of the service principal used in the ARO cluster.
@@ -111,7 +113,7 @@ msiName="$aroCluster-msi"
 # Create the Managed Service Identity (MSI) required for disk encryption.
 az identity create -g $buildRG -n $msiName -o jsonc
 
-# Get the ARO Managed Service Identity application ID.
+# Get the ARO Managed Service Identity Azure Application ID.
 aroMSIAppId="$(az identity show -n $msiName -g $buildRG -o tsv --query [clientId])"
 
 # Get the resource ID for the disk encryption set and the Key Vault resource group.
@@ -132,9 +134,10 @@ az role assignment create --assignee $aroMSIAppId --role Reader --scope $buildRG
 az role assignment create --assignee $aroSPObjId --role Contributor --scope $buildRGResourceId -o jsonc
 ```
 
-## <a name="create-a-k8s-storage-class-for-encrypted-premium--ultra-disks-optional"></a>Создание класса хранения K8S для зашифрованных высокоскоростных дисков Premium & (необязательно)
+## <a name="create-a-k8s-storage-class-for-encrypted-premium--ultra-disks"></a>Создание класса хранения K8S для зашифрованных высокоскоростных дисков & Premium
 Создайте классы хранения, которые будут использоваться для CMK для дисков Premium_LRS и UltraSSD_LRS.
-```
+
+```azurecli-interactive
 # Premium Disks
 cat > managed-premium-encrypted-cmk.yaml<< EOF
 kind: StorageClass
@@ -174,13 +177,15 @@ EOF
 ```
 
 Затем запустите это развертывание в кластере АТО, чтобы применить конфигурацию класса хранения:
-```
+
+```azurecli-interactive
 # Update cluster with the new storage classes
 oc apply -f managed-premium-encrypted-cmk.yaml
 oc apply -f managed-ultra-encrypted-cmk.yaml
 ```
-## <a name="test-encryption-with-customer-managed-keys"></a>Тестирование шифрования с помощью управляемых клиентом ключей
-Чтобы проверить, использует ли кластер ключ, управляемый клиентом, для шифрования PVC, мы создадим утверждение Постоянного тома с помощью соответствующего класса хранилища. Приведенный ниже фрагмент кода создает Pod и подключает постоянное требование к тому с помощью стандартных дисков.
+
+## <a name="test-encryption-with-customer-managed-keys-optional"></a>Проверка шифрования с помощью управляемых клиентом ключей (необязательно)
+Чтобы проверить, использует ли кластер ключ, управляемый клиентом, для шифрования PVC, мы создадим утверждение Постоянного тома с помощью нового класса хранилища. Приведенный ниже фрагмент кода создает Pod и подключает устойчивое утверждение тома с помощью дисков уровня "Премиум".
 ```
 # Create a pod which uses a persistent volume claim referencing the new storage class
 cat > test-pvc.yaml<< EOF
@@ -220,9 +225,9 @@ spec:
         claimName: mypod-with-cmk-encryption-pvc
 EOF
 ```
-### <a name="apply-the-test-pod-configuration-file"></a>Применение файла конфигурации тестового модуля
+### <a name="apply-the-test-pod-configuration-file-optional"></a>Применение файла конфигурации тестового модуля (необязательно)
 Выполните приведенные ниже команды, чтобы применить конфигурацию модуля тестирования и вернуть идентификатор нового утверждения Постоянного тома. Идентификатор UID будет использоваться для проверки того, зашифрован ли диск с помощью CMK.
-```
+```azurecli-interactive
 # Apply the test pod configuration file and set the PVC UID as a variable to query in Azure later.
 pvcUid="$(oc apply -f test-pvc.yaml -o jsonpath='{.items[0].metadata.uid}')"
 
@@ -230,8 +235,9 @@ pvcUid="$(oc apply -f test-pvc.yaml -o jsonpath='{.items[0].metadata.uid}')"
 pvName="$(oc get pv pvc-$pvcUid -o jsonpath='{.spec.azureDisk.diskName}')"
 ```
 > [!NOTE]
-> В некоторых случаях при применении назначений ролей в Azure Active Directory возникает небольшая задержка. В зависимости от скорости выполнения этих команд Команда "определить полное имя диска Azure" может не выполняться. В этом случае просмотрите выходные данные **OC описание PVC мипод-with-CMK-Encryption-PVC** , чтобы убедиться, что диск был успешно подготовлен. Если распространение назначения ролей не завершено, необходимо будет *Удалить* и *применить* модуль Pod & PVC YAML.
-### <a name="verify-pvc-disk-is-configured-with-encryptionatrestwithcustomerkey"></a>Проверка настройки диска PVC на "Енкриптионатрествискустомеркэй" 
+> В некоторых случаях при применении назначений ролей в Azure Active Directory может возникнуть небольшая задержка. В зависимости от скорости выполнения этих инструкций команда "определить полное имя диска Azure" может не выполняться. В этом случае ознакомьтесь с выходными данными о **PVC мипод-with-CMK-Encryption-PVC** , чтобы убедиться, что диск успешно подготовлен. Если распространение назначения ролей не завершено, возможно, потребуется *Удалить* и повторно *применить* модуль Pod & PVC YAML.
+
+### <a name="verify-pvc-disk-is-configured-with-encryptionatrestwithcustomerkey-optional"></a>Убедитесь, что для диска PVC настроено "Енкриптионатрествискустомеркэй" (необязательно)
 Модуль должен создать постоянное утверждение тома, которое ссылается на класс хранилища CMK. При выполнении следующей команды будет выполнена проверка развертывания PVC, как ожидалось:
 ```azurecli-interactive
 # Describe the OpenShift cluster-wide persistent volume claims

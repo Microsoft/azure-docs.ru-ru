@@ -1,25 +1,19 @@
 ---
 title: Шифрование дисков Azure для Linux
 description: Развертывание шифрования дисков Azure на виртуальной машине Linux с помощью расширения виртуальной машины.
-services: virtual-machines-linux
-documentationcenter: ''
-author: ejarvi
-manager: gwallace
-editor: ''
-ms.assetid: ''
-ms.service: virtual-machines-linux
-ms.subservice: extensions
 ms.topic: article
-ms.tgt_pltfrm: vm-linux
-ms.workload: infrastructure-services
-ms.date: 03/19/2020
+ms.service: virtual-machines
+ms.subservice: disks
+author: ejarvi
 ms.author: ejarvi
-ms.openlocfilehash: 61f8fd3d671bbd66d2dc5656e9a467b06798d280
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.date: 03/19/2020
+ms.collection: linux
+ms.openlocfilehash: 7c79391e3459804a4b5ce72c2230d17af3269641
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94968423"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102566266"
 ---
 # <a name="azure-disk-encryption-for-linux-microsoftazuresecurityazurediskencryptionforlinux"></a>Шифрование дисков Azure для Linux (Microsoft.Azure.Security.AzureDiskEncryptionForLinux)
 
@@ -27,7 +21,7 @@ ms.locfileid: "94968423"
 
 Шифрование дисков Azure использует подсистему dm-crypt в Linux для шифрования всего диска в [выбранных дистрибутивах Azure Linux](../linux/disk-encryption-overview.md).  Решение интегрируется с Azure Key Vault, обеспечивая управление секретами и ключами шифрования диска.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Полный список необходимых компонентов см. в разделах [Шифрование дисков Azure для виртуальных машин Linux](../linux/disk-encryption-overview.md), в частности следующие разделы:
 
@@ -188,7 +182,7 @@ ms.locfileid: "94968423"
 
 Кроме того, можно зарегистрировать обращение в службу поддержки Azure. Перейдите в [службу поддержки Azure](https://azure.microsoft.com/support/options/) и выберите получить поддержку. Сведения об использовании службы поддержки Azure см. в статье [часто задаваемые вопросы о поддержке Microsoft Azure](https://azure.microsoft.com/support/faq/).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о расширениях виртуальных машин см. в обзоре [расширений и компонентов виртуальной машины для Linux](features-linux.md).
 * Дополнительные сведения о шифровании дисков Azure для Linux см. в статье [виртуальные машины Linux](../../security/fundamentals/azure-disk-encryption-vms-vmss.md#linux-virtual-machines).

@@ -3,7 +3,7 @@ title: Кодирование ресурса с использованием к�
 description: В этом руководстве описаны шаги кодирования ресурса с помощью кодировщика мультимедиа Standard на портале Azure.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: 107d9e9a-71e9-43e5-b17c-6e00983aceab
@@ -12,14 +12,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/19/2019
-ms.author: juliako
-ms.openlocfilehash: 606a4d753675475cf0138b688523e9029e6d3b0a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: 5f4bb3c9b23ffd68939f1088b1252c6e31c1dad7
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89260787"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103010513"
 ---
 # <a name="encode-an-asset-by-using-media-encoder-standard-in-the-azure-portal"></a>Кодирование ресурса с помощью кодировщика мультимедиа Standard на портале Azure
 
@@ -58,6 +58,6 @@ ms.locfileid: "89260787"
 ## <a name="provide-feedback"></a>Отзывы
 [!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Отслеживайте ход выполнения задания кодирования](media-services-portal-check-job-progress.md) на портале Azure.  
 
