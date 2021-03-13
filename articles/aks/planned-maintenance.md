@@ -7,12 +7,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.author: qpetraroia
 author: qpetraroia
-ms.openlocfilehash: f5c85f371dbe0fe3488c1ca6ff806f114153d3a7
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: 307183292b60a6556df69a4e5541cbfb5e13098f
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102639190"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103201568"
 ---
 # <a name="use-planned-maintenance-to-schedule-maintenance-windows-for-your-azure-kubernetes-service-aks-cluster-preview"></a>Использование планового обслуживания для планирования периодов обслуживания для кластера Azure Kubernetes Service (AKS) (Предварительная версия)
 
@@ -28,8 +28,8 @@ ms.locfileid: "102639190"
 
 При использовании планового обслуживания действуют следующие ограничения.
 
-- AKS оставляет за собой право разбивать эти окна на несрочные и экстренные исправления.
-- Выполнение операций обслуживания считается *наиболее оптимальным* и не гарантируется в пределах указанного окна.
+- AKS оставляет за собой право разбивать эти окна на незапланированные или реактивные операции обслуживания, которые являются срочными или критическими.
+- В настоящее время операции обслуживания считаются *оптимальными* и не гарантированно выполняются в пределах указанного окна.
 - Обновления не могут быть заблокированы более семи дней.
 
 ### <a name="install-aks-preview-cli-extension"></a>Установка расширения интерфейса командной строки предварительной версии AKS

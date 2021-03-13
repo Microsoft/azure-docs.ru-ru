@@ -6,12 +6,12 @@ ms.date: 11/04/2020
 author: MS-jgol
 ms.custom: devx-track-java
 ms.author: jgol
-ms.openlocfilehash: 4ed3b3d60be0e5e4bedcb604ce021f6a64002120
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.openlocfilehash: e58d69634712a9cc640ba9e4785a7bf1effaf88c
+ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/12/2021
-ms.locfileid: "103201256"
+ms.locfileid: "103224662"
 ---
 # <a name="configuration-options---azure-monitor-application-insights-for-java"></a>Параметры конфигурации — Application Insights Azure Monitor для Java
 
@@ -184,9 +184,11 @@ ms.locfileid: "103201256"
 
 Log4j, Logback и Java. util. Logging устанавливаются в автоматическом инструментировании. ведение журнала выполняется с помощью этих платформ ведения журналов.
 
-Ведение журнала захватывается только в том случае, если оно сначала соответствует заданному пороговому значению платформ ведения журналов, а вторая также соответствует пороговому значению Application Insights.
+Ведение журнала захватывается только в том случае, если оно сначала соответствует уровню, настроенному для платформы ведения журнала, и, во-вторых, также соответствует уровню, настроенному для Application Insights.
 
-Пороговое значение Application Insights по умолчанию — `INFO` . Если вы хотите изменить этот уровень:
+Например, если ваша платформа ведения журналов настроена для ведения журнала `WARN` (и выше) из пакета `com.example` , а Application Insights настроена для записи `INFO` (и более поздних версий), Application Insights будет записывать только `WARN` (и выше) из пакета `com.example` .
+
+Уровень по умолчанию, настроенный для Application Insights, — `INFO` . Если вы хотите изменить этот уровень:
 
 ```json
 {

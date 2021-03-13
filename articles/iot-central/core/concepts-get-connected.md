@@ -12,12 +12,12 @@ ms.custom:
 - amqp
 - mqtt
 - device-developer
-ms.openlocfilehash: 828f0ff81048ca0b6f07b7fdee9ed29c87991db4
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: dc0655aba424d29a4055f0d50a20057f22d084ed
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102032642"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103015461"
 ---
 # <a name="get-connected-to-azure-iot-central"></a>Подключение к Azure IoT Central
 
@@ -178,7 +178,7 @@ IoT Central позволяет изготовителям оборудовани
 
 ## <a name="associate-a-device-with-a-device-template"></a>Связывание устройства с шаблоном устройства
 
-IoT Central автоматически связывает устройство с шаблоном устройства при подключении устройства. Устройство отправляет [идентификатор модели](../../iot-pnp/iot-plug-and-play-glossary.md#model-id) при подключении. IoT Central использует идентификатор модели для идентификации шаблона устройства для конкретной модели устройства. Процесс обнаружения выполняется следующим образом.
+IoT Central автоматически связывает устройство с шаблоном устройства при подключении устройства. Устройство отправляет [идентификатор модели](../../iot-fundamentals/iot-glossary.md?toc=/azure/iot-central/toc.json&bc=/azure/iot-central/breadcrumb/toc.json#model-id) при подключении. IoT Central использует идентификатор модели для идентификации шаблона устройства для конкретной модели устройства. Процесс обнаружения выполняется следующим образом.
 
 1. Если шаблон устройства уже опубликован в IoT Central приложении, устройство связывается с шаблоном устройства.
 1. Если шаблон устройства еще не опубликован в IoT Central приложении, IoT Central ищет модель устройства в [репозитории общедоступной модели](https://github.com/Azure/iot-plugandplay-models). Если IoT Central находит модель, она использует ее для создания базового шаблона устройства.

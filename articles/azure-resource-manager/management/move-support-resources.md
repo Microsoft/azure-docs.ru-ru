@@ -3,12 +3,12 @@ title: Поддержка операции перемещения типом р�
 description: Список типов ресурсов Azure, подлежащих перемещению в новую группу ресурсов или подписку.
 ms.topic: conceptual
 ms.date: 01/11/2021
-ms.openlocfilehash: fe8f6705fdce1a692dd8a969cfc4b3b21d2d2a11
-ms.sourcegitcommit: 3af12dc5b0b3833acb5d591d0d5a398c926919c8
+ms.openlocfilehash: ae59bcc65f296a10c68b88f5f6a1ecbc923f8856
+ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98072111"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103232602"
 ---
 # <a name="move-operation-support-for-resources"></a>Поддержка операции перемещения для ресурсов
 
@@ -213,7 +213,7 @@ ms.locfileid: "98072111"
 > | Тип ресурса | Группа ресурсов | Подписка |
 > | ------------- | ----------- | ---------- |
 > | diagnosticsettings | нет | нет |
-> | diagnosticsettingscategories | нет | нет |
+> | diagnosticsettingscategories | нет | Нет |
 > | privatelinkforazuread | Да | Да |
 > | tenants | Да | Да |
 
@@ -330,8 +330,8 @@ ms.locfileid: "98072111"
 > | разрешения | нет | нет |
 > | policyassignments | нет | нет |
 > | policydefinitions | нет | нет |
-> | policysetdefinitions | нет | нет |
-> | привателинкассоЦиатионс | нет | нет |
+> | policysetdefinitions | нет | Нет |
+> | привателинкассоЦиатионс | Нет | Нет |
 > | ресаурцеманажементпривателинкс | Нет | нет |
 > | roleassignments | нет | нет |
 > | roleassignmentsusagemetrics | нет | нет |
@@ -471,7 +471,7 @@ ms.locfileid: "98072111"
 > | Тип ресурса | Группа ресурсов | Подписка |
 > | ------------- | ----------- | ---------- |
 > | redis | Да | Да |
-> | redisenterprise | нет | нет |
+> | redisenterprise | нет | Нет |
 
 ## <a name="microsoftcapacity"></a>Microsoft.Capacity
 
@@ -534,7 +534,7 @@ ms.locfileid: "98072111"
 > [!div class="mx-tableFixed"]
 > | Тип ресурса | Группа ресурсов | Подписка |
 > | ------------- | ----------- | ---------- |
-> | classicinfrastructureresources | нет | нет |
+> | classicinfrastructureresources | нет | Нет |
 
 ## <a name="microsoftclassicnetwork"></a>Microsoft.ClassicNetwork
 
@@ -551,7 +551,7 @@ ms.locfileid: "98072111"
 > | networksecuritygroups | нет | нет |
 > | quotas | нет | нет |
 > | reservedips | нет | нет |
-> | virtualnetworks | нет | нет |
+> | virtualnetworks | нет | Нет |
 
 ## <a name="microsoftclassicstorage"></a>Microsoft.ClassicStorage
 
@@ -568,7 +568,7 @@ ms.locfileid: "98072111"
 > | publicimages | нет | нет |
 > | quotas | нет | нет |
 > | storageaccounts | Да | нет |
-> | vmimages | нет | нет |
+> | vmimages | нет | Нет |
 
 ## <a name="microsoftclassicsubscription"></a>Microsoft.ClassicSubscription
 
@@ -647,7 +647,7 @@ ms.locfileid: "98072111"
 > | reservationrecommendations | нет | нет |
 > | reservationsummaries | нет | нет |
 > | reservationtransactions | нет | нет |
-> | tags | нет | нет |
+> | tags | Нет | нет |
 > | tenants | нет | нет |
 > | terms | нет | нет |
 > | usagedetails | нет | нет |
@@ -753,7 +753,7 @@ ms.locfileid: "98072111"
 > [!div class="mx-tableFixed"]
 > | Тип ресурса | Группа ресурсов | Подписка |
 > | ------------- | ----------- | ---------- |
-> | аваилаблескус | нет | нет |
+> | аваилаблескус | Нет | Нет |
 > | databoxedgedevices | нет | нет |
 
 ## <a name="microsoftdatabricks"></a>Microsoft.Databricks
@@ -858,7 +858,7 @@ ms.locfileid: "98072111"
 > [!div class="mx-tableFixed"]
 > | Тип ресурса | Группа ресурсов | Подписка |
 > | ------------- | ----------- | ---------- |
-> | флексиблесерверс | Да | Да |
+> | флексиблесерверс | Нет | нет |
 > | servergroups | нет | нет |
 > | servers | Да | Да |
 > | serversv2 | Да | Да |
@@ -1026,7 +1026,7 @@ ms.locfileid: "98072111"
 > | Тип ресурса | Группа ресурсов | Подписка |
 > | ------------- | ----------- | ---------- |
 > | hanainstances | нет | нет |
-> | sapmonitors | Нет | нет |
+> | sapmonitors | Нет | Нет |
 
 ## <a name="microsofthardwaresecuritymodules"></a>Microsoft.HardwareSecurityModules
 
@@ -1163,7 +1163,7 @@ ms.locfileid: "98072111"
 > | ------------- | ----------- | ---------- |
 > | deletedvaults | нет | нет |
 > | hsmpools | нет | Нет |
-> | манажедхсмс | нет | нет |
+> | манажедхсмс | Нет | нет |
 > | vaults | Да | Да |
 
 ## <a name="microsoftkubernetes"></a>Microsoft.Kubernetes
@@ -1366,8 +1366,8 @@ ms.locfileid: "98072111"
 > [!div class="mx-tableFixed"]
 > | Тип ресурса | Группа ресурсов | Подписка |
 > | ------------- | ----------- | ---------- |
-> | assessmentprojects | нет | нет |
-> | migrateprojects | нет | нет |
+> | assessmentprojects | Нет | нет |
+> | migrateprojects | Нет | Нет |
 > | movecollections | нет | нет |
 > | projects | нет | нет |
 
@@ -1417,13 +1417,13 @@ ms.locfileid: "98072111"
 > | ipgroups | Да | Да |
 > | loadbalancers | Да — Базовый SKU<br> Да — SKU "Стандартный" | Да — Базовый SKU<br>Нет — Стандартный SKU |
 > | localnetworkgateways | Да | Да |
-> | natgateways | нет | нет |
+> | natgateways | Нет | Нет |
 > | networkexperimentprofiles | нет | нет |
 > | networkintentpolicies | Да | Да |
 > | networkinterfaces | Да | Да |
 > | networkprofiles | нет | нет |
 > | networksecuritygroups | Да | Да |
-> | networkwatchers | нет | нет |
+> | networkwatchers | Нет | нет |
 > | networkwatchers / connectionmonitors | Да | нет |
 > | networkwatchers / flowlogs | Да | нет |
 > | networkwatchers / pingmeshes | Да | нет |
@@ -1474,10 +1474,10 @@ ms.locfileid: "98072111"
 > [!div class="mx-tableFixed"]
 > | Тип ресурса | Группа ресурсов | Подписка |
 > | ------------- | ----------- | ---------- |
-> | hypervsites | нет | Нет |
+> | hypervsites | Нет | Нет |
 > | importsites | Нет | нет |
 > | serversites | Нет | Нет |
-> | vmwaresites | нет | нет |
+> | vmwaresites | Нет | Нет |
 
 ## <a name="microsoftoperationalinsights"></a>Microsoft.OperationalInsights
 
@@ -1513,7 +1513,7 @@ ms.locfileid: "98072111"
 > | legacypeerings | нет | нет |
 > | peerasns | нет | нет |
 > | peeringlocations | нет | нет |
-> | peerings | нет | нет |
+> | peerings | Нет | Нет |
 > | peeringservicecountries | нет | нет |
 > | peeringservicelocations | нет | нет |
 > | peeringserviceproviders | нет | нет |
@@ -1711,8 +1711,8 @@ ms.locfileid: "98072111"
 > | ------------- | ----------- | ---------- |
 > | aggregations | нет | нет |
 > | alertrules | нет | нет |
-> | alertruletemplates | нет | нет |
-> | аутоматионрулес | нет | нет |
+> | alertruletemplates | нет | Нет |
+> | аутоматионрулес | Нет | нет |
 > | bookmarks | нет | нет |
 > | cases | нет | нет |
 > | dataconnectors | нет | нет |
@@ -1913,8 +1913,8 @@ ms.locfileid: "98072111"
 > | Тип ресурса | Группа ресурсов | Подписка |
 > | ------------- | ----------- | ---------- |
 > | workspaces | нет | Нет |
-> | workspaces / bigdatapools | нет | нет |
-> | workspaces / sqlpools | нет | нет |
+> | workspaces / bigdatapools | Нет | нет |
+> | workspaces / sqlpools | Нет | нет |
 
 ## <a name="microsofttimeseriesinsights"></a>Microsoft.TimeSeriesInsights
 
@@ -2032,14 +2032,14 @@ ms.locfileid: "98072111"
 > [!div class="mx-tableFixed"]
 > | Тип ресурса | Группа ресурсов | Подписка |
 > | ------------- | ----------- | ---------- |
-> | deviceservices | нет | нет |
+> | deviceservices | нет | Нет |
 
 ## <a name="microsoftworkloadbuilder"></a>Microsoft. Ворклоадбуилдер
 
 > [!div class="mx-tableFixed"]
 > | Тип ресурса | Группа ресурсов | Подписка |
 > | ------------- | ----------- | ---------- |
-> | рабочие нагрузки | нет | нет |
+> | рабочие нагрузки | Нет | нет |
 
 ## <a name="microsoftworkloadmonitor"></a>Microsoft.WorkloadMonitor
 

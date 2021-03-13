@@ -9,12 +9,12 @@ ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 11/09/2020
 ms.custom: devx-track-js, devx-track-csharp
-ms.openlocfilehash: 7e8d1b13dfd802df820bea4015e411dbb85540ba
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: 9d2100dbc2c5f24742a949778a1b7450bf303c5f
+ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103011431"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103232211"
 ---
 # <a name="get-an-answer-with-the-generateanswer-api"></a>Получение ответа с помощью API Женератеансвер
 
@@ -174,9 +174,13 @@ var qnaResults = await this.qnaMaker.getAnswers(stepContext.context, qnaMakerOpt
 
 Предыдущий JSON запросил только ответы, которые имеют пороговую оценку 30% или выше.
 
-## <a name="return-precise-answers"></a>Возврат точных ответов
+## <a name="get-precise-answers-with-generateanswer-api"></a>Получение точных ответов с помощью API Женератеансвер
 
-### <a name="generate-answer-api"></a>Создать API ответов 
+# <a name="qna-maker-ga-stable-release"></a>[Общедоступная версия QnA Maker (стабильный выпуск)](#tab/v1)
+
+Мы предлагаем точную функцию ответа только с помощью управляемой версии QnA Maker.
+
+# <a name="qna-maker-managed-preview-release"></a>[Управляемая служба QnA Maker (предварительный выпуск)](#tab/v2)
 
 Пользователь может включить [точные ответы](../reference-precise-answering.md) при использовании управляемого ресурса QnA Maker. Параметр Ансверспанрекуест должен быть обновлен для того же самого.
 
@@ -212,11 +216,13 @@ var qnaResults = await this.qnaMaker.getAnswers(stepContext.context, qnaMakerOpt
 |Только длинные ответы|false|false|
 |Как длинные, так и точные ответы|true|false|
 
+---
+
 ## <a name="common-http-errors"></a>Распространенные ошибки HTTP
 
 |Код|Описание|
 |:--|--|
-|"2xx"|Успешное завершение|
+|"2xx"|Success|
 |400|Параметры запроса указаны неправильно. Это означает, что требуемые параметры отсутствуют, имеют неправильный формат или слишком большой размер|
 |400|Текст запроса указан неправильно. Это означает, что JSON отсутствует, имеет неправильный формат или слишком большой размер|
 |401|Недопустимый ключ|

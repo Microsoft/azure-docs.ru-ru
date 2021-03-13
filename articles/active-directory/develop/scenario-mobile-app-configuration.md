@@ -12,30 +12,26 @@ ms.workload: identity
 ms.date: 06/16/2020
 ms.author: jmprieur
 ms.custom: aaddev
-ms.openlocfilehash: 1187c768a54dd04d25b6de0e6785ebb81a7dfc24
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: 6f13d789cd63bb568bb8940ce614ebdb2dbcdb83
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99584437"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103199752"
 ---
 # <a name="configure-a-mobile-app-that-calls-web-apis"></a>Настройка мобильного приложения, вызывающего веб-API
 
 После создания приложения вы узнаете, как настроить код с помощью параметров регистрации приложения. Мобильные приложения представляют некоторые сложности, связанные с подгонками своей инфраструктуры создания.
 
-## <a name="find-msal-support-for-mobile-apps"></a>Поиск поддержки MSAL для мобильных приложений
+## <a name="microsoft-libraries-supporting-mobile-apps"></a>Библиотеки Майкрософт, поддерживающие мобильные приложения
 
-Следующие типы библиотеки проверки подлинности Microsoft (MSAL) поддерживают мобильные приложения.
+Следующие библиотеки Майкрософт поддерживают мобильные приложения:
 
-MSAL | Описание
------------- | ----------
-![MSAL.NET](media/sample-v2-code/logo_NET.png) <br/> MSAL.NET  | Используется для разработки переносимых приложений. MSAL.NET поддерживает следующие платформы для создания мобильного приложения: универсальная платформа Windows (UWP), Xamarin. iOS и Xamarin. Android.
-![MSAL.iOS](media/sample-v2-code/logo_iOS.png) <br/> MSAL.iOS | Используется для разработки собственных приложений iOS с помощью цели-C или SWIFT.
-![MSAL.Android](media/sample-v2-code/logo_android.png) <br/> MSAL.Android | Используется для разработки собственных приложений Android на Java для Android.
+[!INCLUDE [active-directory-develop-libraries-mobile](../../../includes/active-directory-develop-libraries-mobile.md)]
 
 ## <a name="instantiate-the-application"></a>Создание экземпляра приложения
 
-### <a name="android"></a>Android
+### <a name="android"></a>Android.
 
 Мобильные приложения используют `PublicClientApplication` класс. Вот как создать его экземпляр:
 
@@ -130,7 +126,7 @@ var pca = PublicClientApplicationBuilder
 При использовании Xamarin. Android выполните следующие задачи.
 
 - [Убедитесь, что управление возвращается к MSAL после завершения интерактивной части потока проверки подлинности.](msal-net-xamarin-android-considerations.md#ensure-that-control-returns-to-msal)
-- [Обновление манифеста Android](msal-net-xamarin-android-considerations.md#update-the-android-manifest)
+- [Обновление манифеста Android](msal-net-xamarin-android-considerations.md#update-the-android-manifest-for-system-webview-support)
 - [Использовать внедренное веб-представление (необязательно)](msal-net-xamarin-android-considerations.md#use-the-embedded-web-view-optional)
 - [Устранение неполадок при необходимости](msal-net-xamarin-android-considerations.md#troubleshooting)
 
@@ -218,7 +214,7 @@ public override bool OpenUrl(UIApplication app, NSUrl url,
 
     `"uiviewcontroller_required_for_ios_broker":"UIViewController is null, so MSAL.NET cannot invoke the iOS broker. See https://aka.ms/msal-net-ios-broker."`
 
-1. В `AcquireTokenInteractive` вызове используйте `.WithParentActivityOrWindow(App.RootViewController)` . Передайте ссылку на окно объекта, которое вы будете использовать. Пример:
+1. В `AcquireTokenInteractive` вызове используйте `.WithParentActivityOrWindow(App.RootViewController)` . Передайте ссылку на окно объекта, которое вы будете использовать. Ниже приведен пример:
 
     В `App.cs`:
     ```csharp
