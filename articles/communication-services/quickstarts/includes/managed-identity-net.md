@@ -1,18 +1,18 @@
 ---
-ms.openlocfilehash: 8295849a7177eab774517816a239472677689434
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: b552629c23991880a2f9cfc6f9e96376daecc1a0
+ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103021231"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103439314"
 ---
 ## <a name="add-managed-identity-to-your-communication-services-solution-net"></a>Добавление управляемого удостоверения в решение служб связи (.NET)
 
 ### <a name="install-the-client-library-packages"></a>Установка пакетов клиентской библиотеки
 
 ```console
-dotnet add package Azure.Communication.Identity
-dotnet add package Azure.Communication.Sms
+dotnet add package Azure.Communication.Identity  --version 1.0.0-beta.5
+dotnet add package Azure.Communication.Sms  --version 1.0.0-beta.4
 dotnet add package Azure.Identity
 ```
 
@@ -24,6 +24,7 @@ dotnet add package Azure.Identity
 using Azure.Identity;
 using Azure.Communication.Identity;
 using Azure.Communication.Sms;
+using Azure.Core;
 ```
 
 В приведенных ниже примерах используется [дефаултазурекредентиал](/dotnet/api/azure.identity.defaultazurecredential). Эти учетные данные подходят для сред рабочей среды и разработки.
@@ -37,7 +38,7 @@ using Azure.Communication.Sms;
 Затем используйте клиент, чтобы выдать маркер для нового пользователя:
 
 ```csharp
-     public async Task<Response<AccessToken>> CreateIdentityAndGetTokenAsync(Uri resourceEndpoint)
+     public Response<AccessToken> CreateIdentityAndGetTokenAsync(Uri resourceEndpoint)
      {
           TokenCredential credential = new DefaultAzureCredential();
 
@@ -45,10 +46,10 @@ using Azure.Communication.Sms;
           // "https://<RESOURCE_NAME>.communication.azure.com";
 
           var client = new CommunicationIdentityClient(resourceEndpoint, credential);
-          var identityResponse = await client.CreateUserAsync();
+          var identityResponse = client.CreateUser();
           var identity = identityResponse.Value;
 
-          var tokenResponse = await client.GetTokenAsync(identity, scopes: new[] { CommunicationTokenScope.VoIP });
+          var tokenResponse = client.GetToken(identity, scopes: new[] { CommunicationTokenScope.VoIP });
 
           return tokenResponse;
      }
@@ -59,19 +60,21 @@ using Azure.Communication.Sms;
 В следующем примере кода показано, как создать объект клиента службы SMS с управляемым удостоверением, а затем использовать клиент для отправки SMS-сообщения:
 
 ```csharp
-     public async Task SendSms(Uri resourceEndpoint, string from, string to, string message)
+     public SmsSendResult SendSms(Uri resourceEndpoint, string from, string to, string message)
      {
           TokenCredential credential = new DefaultAzureCredential();
           // You can find your endpoint and access key from your resource in the Azure portal
           // "https://<RESOURCE_NAME>.communication.azure.com";
 
           SmsClient smsClient = new SmsClient(resourceEndpoint, credential);
-          smsClient.Send(
+          SmsSendResult sendResult = smsClient.Send(
                from: from,
                to: to,
                message: message,
                new SmsSendOptions(enableDeliveryReport: true) // optional
           );
+
+          return sendResult;
       }
 ```
 

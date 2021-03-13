@@ -1,32 +1,32 @@
 ---
-title: Управление Управляемый экземпляр Azure для ресурсов Apache Cassandra с помощью Azure CLI
+title: Управление ресурсами службы "Управляемый экземпляр Azure для ресурсов Apache Cassandra" с помощью Azure CLI
 description: Сведения об общих командах для автоматизации управления Управляемый экземпляр Azure для Apache Cassandra с помощью Azure CLI.
 author: TheovanKraay
 ms.service: managed-instance-apache-cassandra
 ms.topic: how-to
 ms.date: 03/02/2021
 ms.author: thvankra
-ms.openlocfilehash: 3cd5fdbf6cdc504a1290c8fbd80cf89cf85ce714
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 68b1ca625b5c8bd7ec195b89de63485c542e6691
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101746736"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103419079"
 ---
 # <a name="manage-azure-managed-instance-for-apache-cassandra-resources-using-azure-cli-preview"></a>Управление Управляемый экземпляр Azure для ресурсов Apache Cassandra с помощью Azure CLI (Предварительная версия)
 
 В этой статье описаны распространенные команды для автоматизации управления Управляемый экземпляр Azure для кластеров Apache Cassandra с помощью Azure CLI.
 
 > [!IMPORTANT]
-> Azure Управляемый экземпляр для Apache Cassandra в настоящее время находится в общедоступной предварительной версии.
+> Служба "Управляемый экземпляр Azure для Apache Cassandra" сейчас предоставляется в общедоступной предварительной версии.
 > Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены.
 > Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
-* Для работы с этой статьей требуется Azure CLI версии 2.12.1 или выше. Если вы используете Azure Cloud Shell, то последняя версия уже установлена.
-
 > [!IMPORTANT]
+> Для работы с этой статьей потребуется Azure CLI 2.12.1 или более поздней версии. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
+>
 > Управление Управляемый экземпляр Azure для ресурсов Apache Cassandra невозможно переименовать, так как это нарушает работу Azure Resource Manager с URI ресурсов.
 
 ## <a name="azure-managed-instance-for-apache-cassandra-clusters"></a>Управляемый экземпляр Azure для кластеров Apache Cassandra
@@ -40,7 +40,7 @@ ms.locfileid: "101746736"
 * [Вывод списка кластеров по группе ресурсов](#list-clusters-resource-group)
 * [Список кластеров по ИДЕНТИФИКАТОРу подписки](#list-clusters-subscription)
 
-### <a name="create-a-managed-instance-cluster"></a><a id="create-cluster"></a>Создание кластера управляемых экземпляров
+### <a name="create-a-managed-instance-cluster"></a><a id="create-cluster"></a>Создание кластера с управляемым экземпляром
 
 Создайте Управляемый экземпляр Azure для кластера Apache Cassandra:
 
@@ -218,5 +218,5 @@ az managed-cassandra datacenter list \
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Создание кластера управляемых экземпляров из портал Azure](create-cluster-portal.md)
+* [Создание кластера управляемых экземпляров на портале Azure](create-cluster-portal.md)
 * [Развертывание управляемого кластера Apache Spark с Azure Databricks](deploy-cluster-databricks.md)

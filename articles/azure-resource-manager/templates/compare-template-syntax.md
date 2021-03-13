@@ -2,13 +2,13 @@
 title: Синтаксис Compare для шаблонов Azure Resource Manager в JSON и Бицеп
 description: Сравнение шаблонов Azure Resource Manager, разработанных с помощью JSON и Бицеп, и показано, как выполнять преобразование между языками.
 ms.topic: conceptual
-ms.date: 03/03/2021
-ms.openlocfilehash: 29c2b9948957ebc10a26f22f0fe3daf383dfe5ba
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.date: 03/12/2021
+ms.openlocfilehash: 85f85e66e69eede68bab847e4bc68514e65115eb
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102036220"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103418051"
 ---
 # <a name="comparing-json-and-bicep-for-templates"></a>Сравнение JSON и Бицеп для шаблонов
 
@@ -40,42 +40,7 @@ ms.locfileid: "102036220"
 * Используйте постоянный регистр для идентификаторов. Если вы не знаете, какой тип регистра используется, попробуйте использовать прописные буквы в стиле Camel. Например, `param myCamelCasedParameter string`.
 * Добавьте описание к параметру только в том случае, если описание предоставляет пользователям нужные сведения. `//`Для получения некоторых сведений можно использовать комментарии.
 
-## <a name="decompile-json-to-bicep"></a>Декомпилировать JSON в Бицеп
-
-Интерфейс командной строки Бицеп предоставляет команду для декомпиляции любого существующего шаблона ARM в файл Бицеп. Чтобы декомпилировать JSON-файл, используйте: `bicep decompile "path/to/file.json"`
-
-Эта команда предоставляет отправную точку для создания Бицеп, но команда не работает для всех шаблонов. Команда может завершиться ошибкой, или после декомпиляции может потребоваться устранить проблемы. В настоящее время вложенные шаблоны можно декомпилировать только в том случае, если они используют область вычисления выражения Inner.
-
-Вы можете экспортировать шаблон для группы ресурсов, а затем передать его непосредственно в команду декомпиляции бицеп. В следующем примере показано, как декомпилировать экспортированный шаблон.
-
-# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
-
-```azurecli
-az group export --name "your_resource_group_name" > main.json
-bicep decompile main.json
-```
-
-# <a name="powershell"></a>[PowerShell](#tab/azure-powershell)
-
-```azurepowershell
-Export-AzResourceGroup -ResourceGroupName "your_resource_group_name" -Path ./main.json
-bicep decompile main.json
-```
-
-# <a name="portal"></a>[Портал](#tab/azure-portal)
-
-[Экспортируйте шаблон](export-template-portal.md) на портале. Используйте `bicep decompile <filename>` для скачанного файла.
-
----
-
-## <a name="build-json-from-bicep"></a>Сборка JSON из Бицеп
-
-Интерфейс командной строки Бицеп также предоставляет команду для преобразования Бицеп в JSON. Чтобы создать JSON-файл, используйте: `bicep build "path/to/file.json"`
-
-## <a name="side-by-side-view"></a>Параллельное представление
-
-[Бицеп Playground](https://aka.ms/bicepdemo) позволяет просматривать эквивалентные файлы JSON и бицеп параллельно. Можно выбрать пример шаблона для просмотра обеих версий. Или выберите, `Decompile` чтобы отправить собственный шаблон JSON и просмотреть эквивалентный файл бицеп.
-
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Сведения о Бицеп см. в разделе [учебник по бицеп](./bicep-tutorial-create-first-bicep.md).
+* Сведения о Бицеп см. в разделе [учебник по бицеп](./bicep-tutorial-create-first-bicep.md).
+* Дополнительные сведения о преобразовании шаблонов между языками см. в разделе [Преобразование шаблонов ARM между JSON и бицеп](bicep-decompile.md).

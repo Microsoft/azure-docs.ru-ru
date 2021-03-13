@@ -9,12 +9,12 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 56ec893de159f4c8a90c5a229ccf7669856fb066
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 2e77bbd6e82d0d4a48b72e13e60b60608f2d7674
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89020224"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103419597"
 ---
 # <a name="how-to-process-and-extract-information-from-images-in-ai-enrichment-scenarios"></a>Обработка и извлечение информации из изображений в сценариях обогащения искусственного интеллекта
 
@@ -63,7 +63,7 @@ ms.locfileid: "89020224"
 
 | Элемент изображения       | Описание                             |
 |--------------------|-----------------------------------------|
-| Данные               | Строка нормализованного изображения в формате JPEG в кодировке Base64.   |
+| .               | Строка нормализованного изображения в формате JPEG в кодировке Base64.   |
 | width              | Ширина нормализованного изображения в пикселях. |
 | рост             | Высота нормализованного изображения в пикселях. |
 | originalWidth      | Исходная ширина изображения перед нормализацией. |
@@ -88,7 +88,7 @@ ms.locfileid: "89020224"
 ]
 ```
 
-## <a name="image-related-skills"></a>Навыки, связанные с изображениями
+## <a name="image-related-skills"></a>Навыки, связанные с образами
 
 Есть два встроенных когнитивных навыка, которые принимают изображения в качестве входных данных: [OCR](cognitive-search-skill-ocr.md) и [Анализ образов](cognitive-search-skill-image-analysis.md). 
 
@@ -213,6 +213,77 @@ ms.locfileid: "89020224"
             return original;
         }
 ```
+## <a name="passing-images-to-custom-skills"></a>Передача изображений в пользовательские навыки
+
+В сценариях, где для работы с изображениями требуется пользовательский навык, можно передавать изображения в пользовательский навык и возвращать текст или изображения. Пример обработки образа [Python](https://github.com/Azure-Samples/azure-search-python-samples/tree/master/Image-Processing) демонстрирует рабочий процесс. В примере используется следующий набор навыков.
+
+Следующий набор навыков принимает нормализованное изображение (полученное во время взлома документа) и выводит срезы изображения.
+
+#### <a name="sample-skillset"></a>Пример набора навыков
+```json
+{
+  "description": "Extract text from images and merge with content text to produce merged_text",
+  "skills":
+  [
+    {
+          "@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+          "name": "ImageSkill",
+          "description": "Segment Images",
+          "context": "/document/normalized_images/*",
+          "uri": "https://your.custom.skill.url",
+          "httpMethod": "POST",
+          "timeout": "PT30S",
+          "batchSize": 100,
+          "degreeOfParallelism": 1,
+          "inputs": [
+            {
+              "name": "image",
+              "source": "/document/normalized_images/*"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "slices",
+              "targetName": "slices"
+            }
+          ],
+          "httpHeaders": {}
+        }
+  ]
+}
+```
+
+#### <a name="custom-skill"></a>Пользовательский навык
+
+Пользовательский навык является внешним по отношению к набору навыков. В этом случае это код Python, который сначала циклически обрабатывает пакет записей запросов в пользовательском формате навыка, а затем преобразует строку в кодировке Base64 в изображение.
+
+```python
+# deserialize the request, for each item in the batch
+for value in values:
+  data = value['data']
+  base64String = data["image"]["data"]
+  base64Bytes = base64String.encode('utf-8')
+  inputBytes = base64.b64decode(base64Bytes)
+  # Use numpy to convert the string to an image
+  jpg_as_np = np.frombuffer(inputBytes, dtype=np.uint8)
+  # you now have an image to work with
+```
+Аналогично возврату изображения следует возвращать строку в кодировке Base64 в объекте JSON со `$type` свойством `file` .
+
+```python
+def base64EncodeImage(image):
+    is_success, im_buf_arr = cv2.imencode(".jpg", image)
+    byte_im = im_buf_arr.tobytes()
+    base64Bytes = base64.b64encode(byte_im)
+    base64String = base64Bytes.decode('utf-8')
+    return base64String
+
+ base64String = base64EncodeImage(jpg_as_np)
+ result = { 
+  "$type": "file", 
+  "data": base64String 
+}
+```
 
 ## <a name="see-also"></a>См. также раздел
 + [Создание индексатора (остальное)](/rest/api/searchservice/create-indexer)
@@ -221,3 +292,4 @@ ms.locfileid: "89020224"
 + [Навык объединения текста](cognitive-search-skill-textmerger.md)
 + [Определение набора навыков](cognitive-search-defining-skillset.md)
 + [Сопоставление обогащенных полей](cognitive-search-output-field-mapping.md)
++ [Передача изображений в пользовательские навыки](https://github.com/Azure-Samples/azure-search-python-samples/tree/master/Image-Processing)

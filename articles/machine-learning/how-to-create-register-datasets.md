@@ -12,12 +12,12 @@ author: MayMSFT
 manager: cgronlun
 ms.reviewer: nibaccam
 ms.date: 07/31/2020
-ms.openlocfilehash: a8f1ca1da54c816199a0504eb17fa0a7bbfc441b
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 54b1fd14f97855dd42afde9a4bb34795373ff229
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102522195"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103417643"
 ---
 # <a name="create-azure-machine-learning-datasets"></a>Создание наборов данных Машинного обучения Azure
 
@@ -35,7 +35,7 @@ ms.locfileid: "102522195"
 
 * Совместное использование данных и совместная работа с другими пользователями.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Для создания наборов данных и работы с ними требуется:
 
@@ -174,17 +174,63 @@ titanic_ds = Dataset.Tabular.from_delimited_files(path=web_path, set_column_type
 titanic_ds.take(3).to_pandas_dataframe()
 ```
 
-|Номер|PassengerId|Survived|пкласс|Имя|Пол|возраст;|сибсп|парч|Билет|Плата|кабин|Предпринимались
+|Номер|PassengerId|Survived|пкласс|Название|Пол|возраст;|сибсп|парч|Билет|Плата|кабин|Предпринимались
 -|-----------|--------|------|----|---|---|-----|-----|------|----|-----|--------|
 0|1|False|3|Браунд, Mr. О'мэлли Owen Харрис|Мужской|22,0|1|0|A/5 21171|7,2500||S
 1|2|True|1|Кумингс, Mrs. Джон Кирилл (Флоренция Бриггс TH...|Женский|38,0|1|0|PC 17599|71,2833|C85|C
-2|3|True|3|Хеиккинен, промах. лаина|Женский|26,0|0|0|СТОН/O2. 3101282|7,9250||S
+2|3|Верно|3|Хеиккинен, промах. лаина|Женский|26,0|0|0|СТОН/O2. 3101282|7,9250||S
 
 Чтобы повторно использовать наборы данных и обмениваться ими между экспериментами в рабочей области, [зарегистрируйте свой DataSet](#register-datasets).
 
+## <a name="wrangle-data"></a>Данные врангле
+После создания и [регистрации](#register-datasets) набора данных его можно загрузить в записную книжку для структурирование данных и [изучения](#explore-data) перед обучением модели. 
+
+Если вам не нужно выполнять структурирование данных или исследовать их, см. статью как использовать наборы DataSet в сценариях обучения для отправки экспериментов ML в процессе [обучения с помощью наборов](how-to-train-with-datasets.md)данных.
+
+### <a name="filter-datasets-preview"></a>Фильтровать наборы данных (Предварительная версия)
+Возможности фильтрации зависят от типа набора данных. 
+> [!IMPORTANT]
+> Фильтрация наборов данных с помощью общедоступного метода предварительной версии [`filter()`](/python/api/azureml-core/azureml.data.tabulardataset#filter-expression-) является [экспериментальной](/python/api/overview/azure/ml/#stable-vs-experimental) функцией предварительной версии и может быть изменена в любое время. 
+> 
+**Для табулардатасетс** можно продолжить или удалить столбцы с помощью методов [keep_columns ()](/python/api/azureml-core/azureml.data.tabulardataset#keep-columns-columns--validate-false-) и [drop_columns ()](/python/api/azureml-core/azureml.data.tabulardataset#drop-columns-columns-) .
+
+Чтобы отфильтровать строки по определенному значению столбца в Табулардатасет, используйте метод [Filter ()](/python/api/azureml-core/azureml.data.tabulardataset#filter-expression-) (Предварительная версия). 
+
+В следующих примерах возвращается незарегистрированный набор данных на основе указанных выражений.
+
+```python
+# TabularDataset that only contains records where the age column value is greater than 15
+tabular_dataset = tabular_dataset.filter(tabular_dataset['age'] > 15)
+
+# TabularDataset that contains records where the name column value contains 'Bri' and the age column value is greater than 15
+tabular_dataset = tabular_dataset.filter((tabular_dataset['name'].contains('Bri')) & (tabular_dataset['age'] > 15))
+```
+
+**В филедатасетс** каждая строка соответствует пути к файлу, поэтому фильтрация по значению столбца не полезна. Но можно [фильтровать ()](/python/api/azureml-core/azureml.data.filedataset#filter-expression-) строки по метаданным, таким как, CreationTime, Size и т. д.
+
+В следующих примерах возвращается незарегистрированный набор данных на основе указанных выражений.
+
+```python
+# FileDataset that only contains files where Size is less than 100000
+file_dataset = file_dataset.filter(file_dataset.file_metadata['Size'] < 100000)
+
+# FileDataset that only contains files that were either created prior to Jan 1, 2020 or where 
+file_dataset = file_dataset.filter((file_dataset.file_metadata['CreatedTime'] < datetime(2020,1,1)) | (file_dataset.file_metadata['CanSeek'] == False))
+```
+
+**Набор данных с метками** , создаваемый из [проектов меток данных](how-to-create-labeling-projects.md) , является особым случаем. Эти наборы данных представляют собой тип Табулардатасет, состоящие из файлов изображений. Для этих типов наборов данных можно [фильтровать ()](/python/api/azureml-core/azureml.data.tabulardataset#filter-expression-) изображения по метаданным, а также по значениям столбцов, таким как `label` и `image_details` .
+
+```python
+# Dataset that only contains records where the label column value is dog
+labeled_dataset = labeled_dataset.filter(labeled_dataset['label'] == 'dog')
+
+# Dataset that only contains records where the label and isCrowd columns are True and where the file size is larger than 100000
+labeled_dataset = labeled_dataset.filter((labeled_dataset['label']['isCrowd'] == True) & (labeled_dataset.file_metadata['Size'] > 100000))
+```
+
 ## <a name="explore-data"></a>Анализ данных
 
-После создания и [регистрации](#register-datasets) набора данных его можно загрузить в записную книжку, чтобы исследовать данные перед обучением модели. Если вам не нужно выполнять какие бы то ни было исследования данных, см. статью как использовать DataSet в сценариях обучения для отправки экспериментов ML в процессе [обучения с наборами](how-to-train-with-datasets.md).
+После того как вы закончите структурирование данные, вы сможете [зарегистрировать](#register-datasets) набор данных, а затем загрузить его в записную книжку для просмотра данных перед обучением модели.
 
 Для Филедатасетс можно **подключить** или **скачать** набор данных, а также применить библиотеки Python, которые обычно используются для исследования данных. [Дополнительные сведения о подключении VS download](how-to-train-with-datasets.md#mount-vs-download).
 
@@ -208,11 +254,11 @@ mount_context.start()
 titanic_ds.take(3).to_pandas_dataframe()
 ```
 
-|Номер|PassengerId|Survived|пкласс|Имя|Пол|возраст;|сибсп|парч|Билет|Плата|кабин|Предпринимались
+|Номер|PassengerId|Survived|пкласс|Название|Пол|возраст;|сибсп|парч|Билет|Плата|кабин|Предпринимались
 -|-----------|--------|------|----|---|---|-----|-----|------|----|-----|--------|
 0|1|False|3|Браунд, Mr. О'мэлли Owen Харрис|Мужской|22,0|1|0|A/5 21171|7,2500||S
 1|2|True|1|Кумингс, Mrs. Джон Кирилл (Флоренция Бриггс TH...|Женский|38,0|1|0|PC 17599|71,2833|C85|C
-2|3|True|3|Хеиккинен, промах. лаина|Женский|26,0|0|0|СТОН/O2. 3101282|7,9250||S
+2|3|Верно|3|Хеиккинен, промах. лаина|Женский|26,0|0|0|СТОН/O2. 3101282|7,9250||S
 
 ## <a name="create-a-dataset-from-pandas-dataframe"></a>Создание набора данных на основе Pandas
 
@@ -261,7 +307,7 @@ titanic_ds = titanic_ds.register(workspace=workspace,
 
 ## <a name="create-datasets-using-azure-resource-manager"></a>Создание наборов данных с помощью Azure Resource Manager
 
-Существует ряд шаблонов [https://github.com/Azure/azure-quickstart-templates/tree/master/101-machine-learning-dataset-create-*](https://github.com/Azure/azure-quickstart-templates/tree/master/) , которые можно использовать для создания наборов данных.
+Существует множество шаблонов [https://github.com/Azure/azure-quickstart-templates/tree/master/101-machine-learning-dataset-create-*](https://github.com/Azure/azure-quickstart-templates/tree/master/) , которые можно использовать для создания наборов данных.
 
 Сведения об использовании этих шаблонов см. в разделе [Использование шаблона Azure Resource Manager для создания рабочей области для машинное обучение Azure](how-to-create-workspace-template.md).
 

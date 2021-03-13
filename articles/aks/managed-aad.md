@@ -5,12 +5,12 @@ services: container-service
 ms.topic: article
 ms.date: 02/1/2021
 ms.author: miwithro
-ms.openlocfilehash: ca8b9a511de1b71e5d03b8aac7631fc8f524500f
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 2cf72da8f7ca82c37088cd6456f094ada2580982
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102177942"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103418969"
 ---
 # <a name="aks-managed-azure-active-directory-integration"></a>Интеграция Azure Active Directory с управляемым AKS
 
@@ -36,7 +36,7 @@ ms.locfileid: "102177942"
 * Если используется [Helm](https://github.com/helm/helm), минимальная версия Helm 3,3.
 
 > [!Important]
-> Необходимо использовать Kubectl с минимальной версией 1.18.1 или кубелогин. Если вы не используете правильную версию, вы увидите проблемы с проверкой подлинности.
+> Необходимо использовать Kubectl с минимальной версией 1.18.1 или кубелогин. Разница между дополнительными версиями Kubernetes и kubectl не должна превышать 1 версию. Если вы не используете правильную версию, вы увидите проблемы с проверкой подлинности.
 
 Чтобы установить kubectl и кубелогин, используйте следующие команды:
 
@@ -48,7 +48,7 @@ kubelogin --version
 
 Используйте [эти инструкции](https://kubernetes.io/docs/tasks/tools/install-kubectl/) для других операционных систем.
 
-## <a name="before-you-begin"></a>Перед началом
+## <a name="before-you-begin"></a>Подготовка к работе
 
 Для кластера требуется группа Azure AD. Эта группа необходима в качестве группы администраторов кластера для предоставления разрешений администратора кластера. Вы можете использовать существующую группу Azure AD или создать новую. Запишите идентификатор объекта вашей группы Azure AD.
 
@@ -286,7 +286,7 @@ aks-nodepool1-61156405-vmss000001   Ready    agent   6m42s   v1.18.14
 aks-nodepool1-61156405-vmss000002   Ready    agent   6m33s   v1.18.14
 ```
 
-### <a name="troubleshooting"></a>Устранение неполадок
+### <a name="troubleshooting"></a>Диагностика
 
 Если функция `kubectl get nodes` возвращает ошибку, аналогичную следующей:
 

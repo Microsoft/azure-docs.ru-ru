@@ -3,12 +3,12 @@ title: Язык бицеп для шаблонов Azure Resource Manager
 description: Описание языка Бицеп для развертывания инфраструктуры в Azure с помощью шаблонов Azure Resource Manager.
 ms.topic: conceptual
 ms.date: 03/12/2021
-ms.openlocfilehash: 11ba562fa3d91ffc7baeca647ed05e839f9c8013
-ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
+ms.openlocfilehash: 599cb378da51c5d13e7db3cf45cacf750c5843cc
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103232976"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103419836"
 ---
 # <a name="what-is-bicep-preview"></a>Что такое Бицеп (Предварительная версия)?
 
@@ -24,7 +24,7 @@ ms.locfileid: "103232976"
 
 Чтобы просмотреть эквивалентные файлы JSON и Бицеп рядом, см. раздел [Бицеп Playground](https://aka.ms/bicepdemo).
 
-Если у вас есть шаблон ARM, который вы хотите преобразовать в Бицеп, см. раздел [декомпиляция JSON в бицеп](compare-template-syntax.md#decompile-json-to-bicep).
+Если у вас есть шаблон ARM, который вы хотите преобразовать в Бицеп, см. раздел [Преобразование шаблонов ARM между JSON и бицеп](bicep-decompile.md).
 
 ## <a name="bicep-improvements"></a>Усовершенствования бицеп
 
@@ -89,7 +89,7 @@ output hostname string = publicIP.properties.dnsSettings.fqdn
 
 Они продолжают работать точно так же, как и всегда. Вносить изменения не требуется. Мы будем продолжать поддерживать базовый язык JSON шаблона ARM. Файлы бицеп компилируются в JSON, и этот JSON отправляется в Azure для развертывания.
 
-Когда вы будете готовы, можно [преобразовать JSON файлы в бицеп](compare-template-syntax.md#decompile-json-to-bicep).
+Когда вы будете готовы, можно [преобразовать JSON файлы в бицеп](bicep-decompile.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

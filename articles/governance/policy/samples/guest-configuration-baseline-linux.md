@@ -1,19 +1,19 @@
 ---
 title: Справочник по базовым настройкам гостевой конфигурации для Linux в политике Azure
 description: Сведения о базовом плане Linux в Azure, реализованном с помощью гостевой конфигурации политики Azure.
-ms.date: 02/26/2021
+ms.date: 03/12/2021
 ms.topic: reference
 ms.custom: generated
-ms.openlocfilehash: 20f589b02f2a43bb3feb954dc4eac2dd6a9c3925
-ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
+ms.openlocfilehash: 6b1d3048fdc0945e1ee64e211d2f7b1f9de5e6e6
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103235033"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103419870"
 ---
 # <a name="azure-policy-guest-configuration-baseline-for-linux"></a>Базовая конфигурация гостевой конфигурации политики Azure для Linux
 
-В следующей статье подробно описаны действия **\[ предварительной версии \] компьютеров Linux в соответствии с требованиями для** аудита инициативы по базовым политикам гостевой конфигурации. Дополнительные сведения см. в статье [Конфигурация гостя политики Azure](../concepts/guest-configuration.md) и [Обзор производительности системы безопасности Azure (версия 2)](../../../security/benchmarks/overview.md).
+В следующей статье подробно описаны **\[ требования к предварительной версии \] компьютеров Linux в соответствии с требованиями** аудита определения политики гостевой конфигурации Azure. Дополнительные сведения см. в статье [Конфигурация гостя политики Azure](../concepts/guest-configuration.md) и [Обзор производительности системы безопасности Azure (версия 2)](../../../security/benchmarks/overview.md).
 
 ## <a name="general-security-controls"></a>Общие элементы безопасности
 

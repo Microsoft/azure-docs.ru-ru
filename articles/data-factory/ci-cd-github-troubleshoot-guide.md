@@ -6,13 +6,13 @@ ms.author: susabat
 ms.reviewer: susabat
 ms.service: data-factory
 ms.topic: troubleshooting
-ms.date: 12/03/2020
-ms.openlocfilehash: d96c467807af868c07be12f52d913f881b82f732
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.date: 03/12/2021
+ms.openlocfilehash: 4be015b1a8ba4b6fc6ea3acc74318f9a8b298e8e
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102175878"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103418102"
 ---
 # <a name="troubleshoot-ci-cd-azure-devops-and-github-issues-in-adf"></a>Устранение неполадок непрерывной интеграции — CD, Azure DevOps и GitHub в ADF 
 
@@ -178,19 +178,21 @@ Azure Resource Manager ограничивают размер шаблона 4 М
 
 Для небольших и средних решений отдельный шаблон проще в понимании и обслуживании. Все ресурсы и значения можно увидеть в отдельном файле. Для более сложных сценариев связанные шаблоны позволяют разбить решение на целевые компоненты. Следуйте рекомендациям по [использованию связанных и вложенных шаблонов](../azure-resource-manager/templates/linked-templates.md?tabs=azure-powershell).
 
-### <a name="cannot-connect-to-git-enterprise"></a>Не удается подключиться к GIT Enterprise 
+### <a name="cannot-connect-to-git-enterprise-cloud"></a>Не удается подключиться к облаку GIT Enterprise 
 
 ##### <a name="issue"></a>Проблема
 
-Невозможно подключиться к GIT Enterprise из-за проблем с разрешениями. Можно увидеть ошибку, например **422-Необрабатываемый объект.**
+Невозможно подключиться к облаку GIT Enterprise из-за проблем с разрешениями. Можно увидеть ошибку, например **422-Необрабатываемый объект.**
 
 #### <a name="cause"></a>Причина
 
-Вы не настроили OAuth для ADF. URL-адрес настроен неправильно.
+* Вы используете Git Enterprise на локальном сервере. 
+* Вы не настроили OAuth для ADF. 
+* URL-адрес настроен неправильно.
 
 ##### <a name="resolution"></a>Решение
 
-Сначала предоставляется доступ по протоколу OAuth к ADF. Затем необходимо использовать правильный URL-адрес для подключения к GIT Enterprise. Для конфигурации должны быть заданы клиентские организации. Например, ADF будет сначала пытаться выполнить *https://hostname/api/v3/search/repositories?q=user%3 <customer credential> ....* и завершиться ошибкой. Затем он попытается выполнить *https://hostname/api/v3/orgs/ <org> / <repo> ...* и завершится. 
+Сначала предоставляется доступ по протоколу OAuth к ADF. Затем необходимо использовать правильный URL-адрес для подключения к GIT Enterprise. Для конфигурации должны быть заданы клиентские организации. Например, ADF попытается выполнить *https://hostname/api/v3/search/repositories?q=user%3 <customer credential> ....* сначала и завершится ошибкой. Затем он попытается выполнить *https://hostname/api/v3/orgs/ <org> / <repo> ...* и завершится. 
  
 ### <a name="recover-from-a-deleted-data-factory"></a>Восстановление из удаленной фабрики данных
 

@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.date: 11/16/2020
 ms.author: gunjanj
 ms.subservice: files
-ms.openlocfilehash: 388a4f06d79116c42bf80cb25d0b133474c02192
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 9f858549f36d196c6412aec549d0ab2e2d864145
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101737636"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103417677"
 ---
 # <a name="troubleshoot-azure-file-shares-performance-issues"></a>Устранение проблем с производительностью файловых ресурсов Azure
 
@@ -39,7 +39,8 @@ ms.locfileid: "101737636"
     Для стандартных файловых ресурсов в журнале регистрируются следующие типы ответов, если запрос регулируется:
 
     - сукцессвиссроттлинг
-    - ClientThrottlingError
+    - сукцессвисшареиопссроттлинг
+    - клиентшареиопссроттлинжеррор
 
     Для общих файловых ресурсов уровня "Премиум" регистрируются следующие типы ответов, если запрос регулируется:
 
@@ -174,7 +175,7 @@ ms.locfileid: "101737636"
 
 ### <a name="workaround"></a>Обходной путь
 
-- Нет.
+- Отсутствует.
 
 ## <a name="slow-performance-from-windows-81-or-server-2012-r2"></a>Снижение производительности Windows 8.1 или сервера 2012 R2
 
@@ -244,7 +245,8 @@ ms.locfileid: "101737636"
     Для стандартных файловых ресурсов выберите следующие типы ответов:
 
     - сукцессвиссроттлинг
-    - ClientThrottlingError
+    - сукцессвисшареиопссроттлинг
+    - клиентшареиопссроттлинжеррор
 
     Для общих файловых ресурсов уровня "Премиум" выберите следующие типы ответов:
 

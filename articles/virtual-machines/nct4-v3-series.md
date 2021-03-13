@@ -7,12 +7,12 @@ author: vikancha-MSFT
 ms.topic: conceptual
 ms.date: 01/12/2021
 ms.author: vikancha
-ms.openlocfilehash: b7418825b4f22bfe4fe1941cb1f70ffb9f0a939b
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: d73bd81f15263c79e16b574eb961d4ae0ac61175
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102609215"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103417813"
 ---
 # <a name="ncast4_v3-series"></a>Серия NCasT4_v3 
 
@@ -46,6 +46,8 @@ NVIDIA Нвлинк Interconnect: поддерживается<br>
 Чтобы воспользоваться возможностями GPU виртуальных машин серии NCasT4_v3 Azure под управлением Windows или Linux, необходимо установить драйверы GPU NVIDIA.
 
 Чтобы установить драйверы NVIDIA GPU вручную, см. раздел [Установка драйвера GPU серии N для Windows](./windows/n-series-driver-setup.md) для поддерживаемых операционных систем, драйверов, установки и проверки.
+
+Расширение драйвера GPU для Azure NVIDIA будет развертывать драйверы CUDA на виртуальных машинах серии NCasT4_v3. Для рабочих нагрузок графики и визуализации вручную установите драйверы сетки, поддерживаемые Azure.
 
 ## <a name="other-sizes"></a>Остальные размеры
 

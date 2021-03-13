@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 07/29/2020
 ms.author: allensu
-ms.openlocfilehash: 3d98107075c215c0a00bc2035325a6ad8bf5bfc5
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.openlocfilehash: 874cb283f0076905393aa529e4ff9e1bad3ae047
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98222434"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103419683"
 ---
 # <a name="public-ip-address-prefix"></a>Префикс общедоступного IP-адреса
 
@@ -63,7 +63,7 @@ ms.locfileid: "98222434"
 |Виртуальные машины| Связывание общедоступных IP-адресов от префикса к виртуальным машинам в Azure сокращает затраты на управление при добавлении IP-адресов в список разрешений в брандмауэре. Можно добавить весь префикс с одним правилом брандмауэра. При масштабировании виртуальных машин в Azure вы можете связывать IP-адреса с одинаковым префиксом, уменьшая необходимые для этого расходы, время и операции управления.| Чтобы связать IP-адреса, определяемые префиксом, с виртуальной машиной, сделайте следующее. </br> 1. [Создайте префикс.](manage-public-ip-address-prefix.md) </br> 2. [Создайте IP-адрес на основе префикса.](manage-public-ip-address-prefix.md) </br> 3. [свяжите IP-адрес с сетевым интерфейсом виртуальной машины.](virtual-network-network-interface-addresses.md#add-ip-addresses) </br> Вы также можете [связать IP-адреса с масштабируемым набором виртуальных машин](https://azure.microsoft.com/resources/templates/101-vmms-with-public-ip-prefix/).
 | Стандартные подсистемы балансировки нагрузки | Связывание общедоступных IP-адресов от префикса к конфигурации переднего плана и исходящего трафика подсистемы балансировки нагрузки гарантирует упрощение пространства общедоступного IP-адреса Azure. Упростите свой сценарий путем очистки исходящих соединений из диапазона непрерывных IP-адресов. | Чтобы связать IP-адреса из префикса с подсистемой балансировки нагрузки, выполните следующие действия. </br> 1. [Создайте префикс.](manage-public-ip-address-prefix.md) </br> 2. [Создайте IP-адрес на основе префикса.](manage-public-ip-address-prefix.md) </br> 3. при создании балансировщика нагрузки выберите или обновите IP-адрес, созданный на шаге 2, как интерфейсный IP-адрес балансировщика нагрузки. |
 | Брандмауэр Azure | Общедоступный IP-адрес, определяемый префиксом, можно использовать для исходящих SNAT-подключений. Весь исходящий трафик виртуальной сети преобразуется в общедоступный IP-адрес [брандмауэра Azure](../firewall/overview.md?toc=%2fazure%2fvirtual-network%2ftoc.json) . | Чтобы связать IP-адрес с префиксом и брандмауэром, выполните следующие действия. </br> 1. [Создайте префикс.](manage-public-ip-address-prefix.md) </br> 2. [Создайте IP-адрес на основе префикса.](manage-public-ip-address-prefix.md) </br> 3. при [развертывании брандмауэра Azure](../firewall/tutorial-firewall-deploy-portal.md?toc=%2fazure%2fvirtual-network%2ftoc.json#deploy-the-firewall)обязательно выберите IP-адрес, полученный ранее с префикса.|
-| Шлюз приложений версии 2 | Вы можете использовать общедоступный IP-адрес из префикса для автоматического масштабирования и шлюза приложений версии 2, избыточного в виде зоны. | Чтобы связать IP-адрес с префиксом и шлюзом, выполните следующие действия. </br> 1. [Создайте префикс.](manage-public-ip-address-prefix.md) </br> 2. [Создайте IP-адрес на основе префикса.](manage-public-ip-address-prefix.md) </br> 3. при [развертывании шлюза приложений](../application-gateway/quick-create-portal.md#create-an-application-gateway)обязательно выберите IP-адрес, полученный ранее с префикса.|
+| VPN-шлюз (AZ SKU) или шлюз приложений версии 2 | Вы можете использовать общедоступный IP-адрес из префикса для виртуальной частной зоны или шлюза приложений версии 2. | Чтобы связать IP-адрес с префиксом и шлюзом, выполните следующие действия. </br> 1. [Создайте префикс.](manage-public-ip-address-prefix.md) </br> 2. [Создайте IP-адрес на основе префикса.](manage-public-ip-address-prefix.md) </br> 3. при развертывании [VPN-шлюза](https://docs.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal) или [шлюза приложений](../application-gateway/quick-create-portal.md#create-an-application-gateway)обязательно выберите IP-адрес, полученный ранее с префикса.|
 
 ## <a name="constraints"></a>Ограничения
 

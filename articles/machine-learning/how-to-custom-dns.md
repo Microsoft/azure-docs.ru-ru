@@ -8,15 +8,15 @@ ms.subservice: core
 ms.reviewer: larryfr
 ms.author: jhirono
 author: jhirono
-ms.date: 11/20/2020
+ms.date: 03/12/2021
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: 66a709f15191a8142f10f15d825276ea2ba4b83f
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: 67341fcc7be21e4fa62c6e52a921fe397c8ffeb6
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102487990"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103417626"
 ---
 # <a name="how-to-use-your-workspace-with-a-custom-dns-server"></a>Использование рабочей области с пользовательским DNS-сервером
 
@@ -37,23 +37,9 @@ ms.locfileid: "102487990"
 
 - При необходимости [Azure CLI](/cli/azure/install-azure-cli) или [Azure PowerShell](/powershell/azure/install-az-ps).
 
-## <a name="fqdns-in-use"></a>Используемые полные доменные имена
-### <a name="these-fqdns-are-in-use-in-the-following-regions-eastus-southcentralus-and-westus2"></a>Эти полные доменные имена используются в следующих регионах: eastus, southcentralus и westus2.
-В следующем списке содержатся полные доменные имена, используемые рабочей областью.
+## <a name="public-regions"></a>Общедоступные регионы
 
-* `<workspace-GUID>.workspace.<region>.cert.api.azureml.ms`
-* `<workspace-GUID>.workspace.<region>.api.azureml.ms`
-* `<workspace-GUID>.workspace.<region>.experiments.azureml.net`
-* `<workspace-GUID>.workspace.<region>.modelmanagement.azureml.net`
-* `<workspace-GUID>.workspace.<region>.aether.ms`
-* `ml-<workspace-name>-<region>-<workspace-guid>.notebooks.azure.net`
-* При создании вычислительного экземпляра необходимо также добавить запись для `<instance-name>.<region>.instances.azureml.ms` с частным IP-адресом частной конечной точки рабочей области.
-
-    > [!NOTE]
-    > Доступ к экземплярам вычислений можно получить только в пределах виртуальной сети.
-    
-### <a name="these-fqdns-are-in-use-in-all-other-public-regions"></a>Эти полные доменные имена используются во всех других общедоступных регионах.
-В следующем списке содержатся полные доменные имена, используемые рабочей областью.
+В следующем списке содержатся полные доменные имена (FQDN), используемые рабочей областью, если она находится в общедоступном регионе:
 
 * `<workspace-GUID>.workspace.<region>.cert.api.azureml.ms`
 * `<workspace-GUID>.workspace.<region>.api.azureml.ms`
@@ -63,7 +49,7 @@ ms.locfileid: "102487990"
     > [!NOTE]
     > Доступ к экземплярам вычислений можно получить только в пределах виртуальной сети.
 
-### <a name="azure-china-21vianet-regions"></a>Регионы Azure для китайского региона (21Vianet)
+## <a name="azure-china-21vianet-regions"></a>Регионы Azure для китайского региона (21Vianet)
 
 Следующие полные доменные имена предназначены для регионов Azure для китайского региона (21Vianet):
 

@@ -6,12 +6,12 @@ ms.author: bwren
 ms.reviewer: bwren
 ms.topic: conceptual
 ms.date: 12/02/2020
-ms.openlocfilehash: 1857f0e39cd5d9ddc616eed1db18cd58b98721a4
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: a800f78df26ce76144994bb9da2cac6271323eb4
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102031129"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103419428"
 ---
 # <a name="cross-resource-query-azure-data-explorer-by-using-azure-monitor"></a>Запрос перекрестных ресурсов Azure обозреватель данных с помощью Azure Monitor
 Azure Monitor поддерживает запросы между службами между обозреватель данныхами Azure, [Application Insights](../app/app-insights-overview.md)и [log Analytics](../logs/data-platform-logs.md). Затем можно выполнить запрос к кластеру Azure обозреватель данных с помощью средств Log Analytics/Application Insights и обратиться к нему в запросах между службами. В этой статье показано, как выполнить запрос между службами.
@@ -37,6 +37,7 @@ adx('https://help.kusto.windows.net/Samples').StormEvents
 > [!NOTE]
 >* В именах баз данных учитывается регистр.
 >* Запрос перекрестных ресурсов в виде предупреждения не поддерживается.
+>* Определение столбца отметок времени в кластере не поддерживается, Log Analytics API запросов не будет проходить по фильтру времени
 
 ## <a name="combine-azure-data-explorer-cluster-tables-with-a-log-analytics-workspace"></a>Объединение таблиц кластера Azure обозреватель данных с рабочей областью Log Analytics
 

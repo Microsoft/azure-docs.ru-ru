@@ -4,13 +4,13 @@ description: Сведения о разработке приложений Spark
 ms.service: hdinsight
 ms.topic: how-to
 ms.custom: hdinsightactive
-ms.date: 04/13/2020
-ms.openlocfilehash: 0b2c2a91ba9d029bcf24b0980d0a2339194e6d8a
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.date: 04/14/2020
+ms.openlocfilehash: ced066623d23c6894745374ace812454c52f3109
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98931036"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103420023"
 ---
 # <a name="use-azure-toolkit-for-intellij-to-create-apache-spark-applications-for-hdinsight-cluster"></a>Использование Azure Toolkit for IntelliJ для создания приложений Apache Spark для кластера HDInsight
 
@@ -95,17 +95,17 @@ ms.locfileid: "98931036"
 
 9. Добавьте исходный код приложения, выполнив следующие действия.
 
-    а. В Project перейдите к папке **MyApp**  >  **src**  >  **Main**  >  **Scala**.  
+    А. В Project перейдите к папке **MyApp**  >  **src**  >  **Main**  >  **Scala**.  
 
-    b. Щелкните правой кнопкой мыши папку **scala**, а затем выберите **New** (Новый) > **Scala Class** (Класс Scala).
+    Б. Щелкните правой кнопкой мыши папку **scala**, а затем выберите **New** (Новый) > **Scala Class** (Класс Scala).
 
    ![Команды для создания класса Scala в проекте](./media/apache-spark-intellij-tool-plugin/hdi-spark-scala-code.png)
 
-   c. В диалоговом окне **Create New Scala Class** (Создание класса Scala) введите имя, в раскрывающемся списке **Kind** (Вид) выберите **Object** (Объект) и нажмите кнопку **ОК**.
+   В. В диалоговом окне **Create New Scala Class** (Создание класса Scala) введите имя, в раскрывающемся списке **Kind** (Вид) выберите **Object** (Объект) и нажмите кнопку **ОК**.
 
      ![Диалоговое окно создания класса Scala](./media/apache-spark-intellij-tool-plugin/hdi-spark-scala-code-object.png)
 
-   d. После этого файл **MyApp.scala** откроется в главном представлении. Замените код по умолчанию на приведенный ниже:  
+   Г. После этого файл **MyApp.scala** откроется в главном представлении. Замените код по умолчанию на приведенный ниже:  
 
     ```scala
     import org.apache.spark.SparkConf
@@ -185,7 +185,7 @@ ms.locfileid: "98931036"
 
     * **Кластер HDInsight**  
   
-        |Свойство |Значение |
+        |Свойство |Применение |
         |----|----|
         |Link Resource Type (Связать тип ресурса)|Из раскрывающегося списка выберите **HDInsight Cluster** (Кластер HDInsight).|
         |Cluster Name/URL (Имя или URL-адрес кластера)| Введите имя кластера.|
@@ -197,12 +197,12 @@ ms.locfileid: "98931036"
 
     * **Livy Service** (Служба Livy)  
   
-        |Свойство |Значение |
+        |Свойство |Применение |
         |----|----|
         |Link Resource Type (Связать тип ресурса)|Из раскрывающегося списка выберите **Livy Service** (Служба Livy).|
         |Livy Endpoint (Конечная точка Livy)| Введите конечную точку Livy|
         |Имя кластера,| Введите имя кластера.|
-        |Yarn Endpoint (Конечная точка Yarn)|Необязательный элемент.|
+        |Yarn Endpoint (Конечная точка Yarn)|Необязательный параметр.|
         |тип проверки подлинности;| Оставьте значение **Basic Authentication** (Обычная аутентификация)|
         |Имя пользователя| Введите имя пользователя кластера. Значение по умолчанию — admin.|
         |Пароль| Введите пароль для этого имени пользователя.|

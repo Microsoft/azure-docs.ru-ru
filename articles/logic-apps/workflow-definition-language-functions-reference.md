@@ -5,13 +5,13 @@ services: logic-apps
 ms.suite: integration
 ms.reviewer: estfan, logicappspm, azla
 ms.topic: reference
-ms.date: 02/18/2021
-ms.openlocfilehash: 484ee9e67aa2adc11529f8a2239a813b3b12f7b2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/12/2021
+ms.openlocfilehash: 8093b61213c3e26b93df2a3f495e7efe0a61d523
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101702493"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103420040"
 ---
 # <a name="reference-guide-to-using-functions-in-expressions-for-azure-logic-apps-and-power-automate"></a>Справочное руководство по использованию функций в выражениях для Azure Logic Apps и Power Automate
 
@@ -1136,7 +1136,7 @@ bool(<value>)
 
 | Возвращаемое значение | Тип | Описание |
 | ------------ | ---- | ----------- |
-| `true` или `false` | Логическое | Логическая версия указанного значения. |
+| `true` или `false` | Логический | Логическая версия указанного значения. |
 ||||
 
 *Выходные данные*
@@ -4708,16 +4708,22 @@ workflow().<property>
 
 | Параметр | Обязательно | Тип | Описание |
 | --------- | -------- | ---- | ----------- |
-| <*property*> | нет | Строка | Имя свойства рабочего процесса, значение которого требуется <p>Объект рабочего процесса имеет такие свойства: **name**, **type**, **id**, **location** и **run**. Значение свойства **run** также является объектом, имеющим следующие свойства: **name**, **type** и **id**. |
+| <*property*> | нет | Строка | Имя свойства рабочего процесса, значение которого требуется <p><p>По умолчанию объект рабочего процесса имеет следующие свойства: `name` , `type` , `id` , `location` , `run` и `tags` . <p><p>— `run` Значение свойства — это объект JSON, который включает следующие свойства: `name` , `type` и `id` . <p><p>— `tags` Свойство — это объект JSON, который включает [теги, связанные с приложением логики, в Azure Logic Apps или пошаговое выполнение в Power автоматизирующих](../azure-resource-manager/management/tag-resources.md) и значения этих тегов. Дополнительные сведения о тегах в ресурсах Azure см. [в статье ресурсы тегов, группы ресурсов и подписки для логической организации в Azure](../azure-resource-manager/management/tag-resources.md). <p><p>**Примечание**. по умолчанию приложение логики не имеет тегов, но в потоке Power автоматизиру есть `flowDisplayName` `environmentName` теги и. |
 |||||
 
-*Пример*
+*Пример 1*
 
 В этом примере возвращается имя текущего выполнения рабочего процесса:
 
-```
-workflow().run.name
-```
+`workflow().run.name`
+
+*Пример 2*
+
+При использовании Power автоматизиру можно создать `@workflow()` выражение, которое использует `tags` свойство Output для получения значений из `flowDisplayName` Свойства потока или `environmentName` .
+
+Например, можно отправить настраиваемые уведомления по электронной почте из самого потока, который свяжется с потоком. Эти уведомления могут содержать ссылку HTML, которая содержит отображаемое имя потока в заголовке сообщения электронной почты и соответствует этому синтаксису:
+
+`<a href=https://flow.microsoft.com/manage/environments/@{workflow()['tags']['environmentName']}/flows/@{workflow()['name']}/details>Open flow @{workflow()['tags']['flowDisplayName']}</a>`
 
 <a name="xml"></a>
 
