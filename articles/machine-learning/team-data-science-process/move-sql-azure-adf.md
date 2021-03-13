@@ -11,12 +11,12 @@ ms.topic: article
 ms.date: 09/03/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
-ms.openlocfilehash: 02fd6c1d4cbd1c2db287a38e086045042b5f220a
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.openlocfilehash: e477e4bb3b31477f9407e981d4c8da2340411f55
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93309536"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102615743"
 ---
 # <a name="move-data-from-a-sql-server-database-to-sql-database-with-azure-data-factory"></a>Перемещение данных из базы данных SQL Server в базу данных SQL с помощью фабрики данных Azure
 
@@ -87,7 +87,7 @@ Integration Runtime — это управляемая клиентом инфр�
 Для создания таблиц, которые определяют структуру, расположение и доступность наборов данных, используются следующие процедуры на основе сценариев. Для определения таблиц используются файлы JSON. Дополнительные сведения о структуре этих файлов см. в статье [Наборы данных в фабрике данных Azure](../../data-factory/concepts-datasets-linked-services.md).
 
 > [!NOTE]
-> Перед выполнением командлета [New-AzureDataFactoryTable](/previous-versions/azure/dn835096(v=azure.100)) необходимо проверить, правильно ли выбрана подписка для его выполнения, выполнив командлет `Add-AzureAccount`. Документацию по этим командлетам см. в статье [Add-AzureAccount](/powershell/module/servicemanagement/azure.service/add-azureaccount?view=azuresmps-3.7.0).
+> Перед выполнением командлета [New-AzureDataFactoryTable](/previous-versions/azure/dn835096(v=azure.100)) необходимо проверить, правильно ли выбрана подписка для его выполнения, выполнив командлет `Add-AzureAccount`. Документацию по этим командлетам см. в статье [Add-AzureAccount](/powershell/module/servicemanagement/azure.service/add-azureaccount).
 >
 >
 
@@ -138,7 +138,7 @@ Integration Runtime — это управляемая клиентом инфр�
 
 Сюда не были включены имена столбцов. Можно подделать подзапросы к именам столбцов, включив их здесь (Дополнительные сведения см. в [документации по ADF-документу](../../data-factory/copy-activity-overview.md) ).
 
-Скопируйте определение таблицы JSON в файл с именем *onpremtabledef.json* и сохраните его в известном месте (например, *C:\temp\onpremtabledef.json* ). Создайте таблицу в ADF с помощью следующего командлета Azure PowerShell:
+Скопируйте определение таблицы JSON в файл с именем *onpremtabledef.json* и сохраните его в известном месте (например, *C:\temp\onpremtabledef.json*). Создайте таблицу в ADF с помощью следующего командлета Azure PowerShell:
 
 ```azurepowershell
 New-AzureDataFactoryTable -ResourceGroupName ADFdsprg -DataFactoryName ADFdsp –File C:\temp\onpremtabledef.json
@@ -173,7 +173,7 @@ New-AzureDataFactoryTable -ResourceGroupName ADFdsprg -DataFactoryName ADFdsp �
 }
 ```
 
-Скопируйте определение таблицы JSON в файл с именем *bloboutputtabledef.json* и сохраните его в известном месте (например, *C:\temp\bloboutputtabledef.json* ). Создайте таблицу в ADF с помощью следующего командлета Azure PowerShell:
+Скопируйте определение таблицы JSON в файл с именем *bloboutputtabledef.json* и сохраните его в известном месте (например, *C:\temp\bloboutputtabledef.json*). Создайте таблицу в ADF с помощью следующего командлета Azure PowerShell:
 
 ```azurepowershell
 New-AzureDataFactoryTable -ResourceGroupName adfdsprg -DataFactoryName adfdsp -File C:\temp\bloboutputtabledef.json
@@ -207,7 +207,7 @@ New-AzureDataFactoryTable -ResourceGroupName adfdsprg -DataFactoryName adfdsp -F
 }
 ```
 
-Скопируйте определение таблицы JSON в файл с именем *AzureSqlTable.json* и сохраните его в известном месте (например, *C:\temp\AzureSqlTable.json* ). Создайте таблицу в ADF с помощью следующего командлета Azure PowerShell:
+Скопируйте определение таблицы JSON в файл с именем *AzureSqlTable.json* и сохраните его в известном месте (например, *C:\temp\AzureSqlTable.json*). Создайте таблицу в ADF с помощью следующего командлета Azure PowerShell:
 
 ```azurepowershell
 New-AzureDataFactoryTable -ResourceGroupName adfdsprg -DataFactoryName adfdsp -File C:\temp\AzureSqlTable.json
@@ -294,7 +294,7 @@ New-AzureDataFactoryTable -ResourceGroupName adfdsprg -DataFactoryName adfdsp -F
 }
 ```
 
-Скопируйте определение JSON конвейера в файл с именем *pipelinedef.json* и сохраните его в известном месте (например, *C:\temp\pipelinedef.json* ). Создайте конвейер в ADF с помощью следующего командлета Azure PowerShell:
+Скопируйте определение JSON конвейера в файл с именем *pipelinedef.json* и сохраните его в известном месте (например, *C:\temp\pipelinedef.json*). Создайте конвейер в ADF с помощью следующего командлета Azure PowerShell:
 
 ```azurepowershell
 New-AzureDataFactoryPipeline  -ResourceGroupName adfdsprg -DataFactoryName adfdsp -File C:\temp\pipelinedef.json

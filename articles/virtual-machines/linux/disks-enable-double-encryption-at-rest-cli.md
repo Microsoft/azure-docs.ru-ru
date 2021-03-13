@@ -5,21 +5,21 @@ author: roygara
 ms.date: 08/24/2020
 ms.topic: how-to
 ms.author: rogarana
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
 ms.subservice: disks
 ms.custom: references_regions, devx-track-azurecli
-ms.openlocfilehash: 7fabf5afa60590e92f7c0ca10197c436c1c0b8a0
-ms.sourcegitcommit: e7152996ee917505c7aba707d214b2b520348302
+ms.openlocfilehash: 266ba4a6fbe0607fd09f86f5cd01addfa60252aa
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2020
-ms.locfileid: "97702265"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102558327"
 ---
 # <a name="use-the-azure-cli-to-enable-double-encryption-at-rest-for-managed-disks"></a>Использование Azure CLI для включения двойного шифрования при хранении для управляемых дисков
 
 Хранилище дисков Azure поддерживает двойное шифрование при хранении для управляемых дисков. Концептуальные сведения о двойном шифровании неактивных данных и других типах шифрования дисков см. в разделе [двойное шифрование при](../disk-encryption.md#double-encryption-at-rest) хранении статьи о шифровании диска.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Установите последнюю [Azure CLI](/cli/azure/install-az-cli2) и войдите в учетную запись Azure с помощью команды [AZ login](/cli/azure/reference-index).
 

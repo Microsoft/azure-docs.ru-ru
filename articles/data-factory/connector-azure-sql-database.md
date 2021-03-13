@@ -6,13 +6,13 @@ author: linda33wj
 ms.service: data-factory
 ms.topic: conceptual
 ms.custom: seo-lt-2019
-ms.date: 01/11/2021
-ms.openlocfilehash: 07fbc7b1137d7eaf8a73a806c6a3714fab274df0
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.date: 03/12/2021
+ms.openlocfilehash: 2f716fd7723f35fb5e7071afb15cfa8dab4ce5d2
+ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100393111"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225291"
 ---
 # <a name="copy-and-transform-data-in-azure-sql-database-by-using-azure-data-factory"></a>Копирование и преобразование данных в базе данных SQL Azure с помощью фабрики данных Azure
 
@@ -49,7 +49,7 @@ ms.locfileid: "100393111"
 > При копировании данных с помощью среды выполнения интеграции Azure настройте [правило брандмауэра на уровне сервера](../azure-sql/database/firewall-configure.md) , чтобы службы Azure могли получить доступ к серверу.
 > При копировании данных с помощью локальной среды выполнения интеграции настройте брандмауэр таким образом, чтобы он разрешал соответствующий диапазон IP-адресов. Этот диапазон включает IP-адрес компьютера, используемый для подключения к базе данных SQL Azure.
 
-## <a name="get-started"></a>Начало работы
+## <a name="get-started"></a>Приступая к работе
 
 [!INCLUDE [data-factory-v2-connector-get-started](../../includes/data-factory-v2-connector-get-started.md)]
 
@@ -734,7 +734,7 @@ END
 | smallint |Int16 |
 | smallmoney |Decimal |
 | sql_variant |Объект |
-| текст |String, Char[] |
+| text |String, Char[] |
 | time |TimeSpan |
 | TIMESTAMP |Byte[] |
 | tinyint |Byte |
@@ -772,7 +772,7 @@ END
         Driver={ODBC Driver 17 for SQL Server};Server=<serverName>;Database=<databaseName>;ColumnEncryption=Enabled;KeyStoreAuthentication=KeyVaultClientSecret;KeyStorePrincipalId=<servicePrincipalKey>;KeyStoreSecret=<servicePrincipalKey>
         ```
 
-    - Использование **проверки подлинности управляемого удостоверения в фабрике данных**: 
+    - При запуске автономного Integration Runtime на виртуальной машине Azure вы можете использовать **проверку подлинности управляемого удостоверения** с помощью удостоверения виртуальной машины Azure:
 
         1. Выполните те же [Предварительные требования](#managed-identity) , чтобы создать пользователя базы данных для управляемого удостоверения и предоставить соответствующую роль в базе данных.
         2. В поле связанная служба укажите строку подключения ODBC, как показано ниже, и выберите **Анонимная** проверка подлинности, так как сама строка подключения указывает `Authentication=ActiveDirectoryMsi` .
@@ -783,6 +783,6 @@ END
 
 4. Создайте набор данных и действие копирования с соответствующим типом ODBC. Дополнительные сведения см. в статье о [соединителе ODBC](connector-odbc.md) .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Список хранилищ данных, поддерживаемых действием копирования в фабрике данных Azure в качестве источников и приемников, см. в разделе [Поддерживаемые хранилища данных и форматы](copy-activity-overview.md#supported-data-stores-and-formats).

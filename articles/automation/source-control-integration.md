@@ -3,14 +3,14 @@ title: Использование интеграции системы управ
 description: В этой статье рассказывается, как синхронизировать систему управления версиями службы автоматизации Azure с другими репозиториями.
 services: automation
 ms.subservice: process-automation
-ms.date: 11/12/2020
+ms.date: 03/10/2021
 ms.topic: conceptual
-ms.openlocfilehash: e7a6b6d3e753352820cdcb910dcbfa9362793493
-ms.sourcegitcommit: d1e56036f3ecb79bfbdb2d6a84e6932ee6a0830e
+ms.openlocfilehash: 281da27ce95649e85dae5d0795bb743f21fdb578
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99050776"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102631750"
 ---
 # <a name="use-source-control-integration"></a>Использование интеграции системы управления версиями
 
@@ -30,7 +30,7 @@ ms.locfileid: "99050776"
 
 * Репозиторий системы управления версиями (GitHub или Azure Repos)
 * [Учетная запись запуска от имени](automation-security-overview.md#run-as-accounts)
-* [Последние модули Azure](automation-update-azure-modules.md) в учетной записи службы автоматизации, включая модуль `Az.Accounts` (модуль Az, эквивалентный `AzureRM.Profile`)
+* [ `AzureRM.Profile` Модуль](/powershell/module/azurerm.profile/) необходимо импортировать в учетную запись службы автоматизации. Обратите внимание, что эквивалентный модуль AZ ( `Az.Accounts` ) не будет работать с системой управления версиями службы автоматизации.
 
 > [!NOTE]
 > Задания синхронизации системы управления версиями выполняются от имени учетной записи службы автоматизации Azure соответствующих пользователей и оплачиваются по тому же тарифу, что и другие задания службы автоматизации.

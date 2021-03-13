@@ -11,12 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2020
 ms.author: memildin
-ms.openlocfilehash: 7778607b533a836eb5a47a12b73374c2a8299621
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 55f8d37d435aa8adeb4d97246ce7b2c7811140be
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100590573"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102558004"
 ---
 # <a name="security-alerts-schemas"></a>Схемы оповещений системы безопасности
 
@@ -173,12 +173,12 @@ ms.locfileid: "100590573"
 
 Microsoft Graph — это шлюз для данных и аналитики в Microsoft 365. Она предоставляет унифицированную модель программирования, которую можно использовать для доступа к огромному объему данных в Microsoft 365, Windows 10 и Enterprise Mobility + Security. Используйте множество данных в Microsoft Graph для создания приложений для организаций и потребителей, взаимодействующих с миллионами пользователей.
 
-Схема и представление JSON для оповещений системы безопасности, отправляемых в MS Graph, доступны в [документации по Microsoft Graph](/graph/api/resources/alert?preserve-view=true&view=graph-rest-1.0).
+Схема и представление JSON для оповещений системы безопасности, отправляемых в MS Graph, доступны в [документации по Microsoft Graph](/graph/api/resources/alert).
 
 ---
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье описаны схемы, используемые средствами защиты от угроз центра безопасности Azure при отправке сведений об оповещениях системы безопасности.
 

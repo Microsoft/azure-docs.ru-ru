@@ -20,6 +20,8 @@
       href: ../../search/cognitive-search-custom-skill-form.md
     - name: "Использование Распознавателя документов с AI\_Builder"
       href: tutorial-ai-builder.md
+    - name: Использование Распознавателя документов с Функциями Azure
+      href: tutorial-azure-function.md
     - name: Массовое извлечение данных из форм
       href: tutorial-bulk-processing.md
 - name: Основные понятия

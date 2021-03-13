@@ -3,7 +3,7 @@ title: Использование Axinom для предоставления л�
 description: В этой статье описывается использование служб мультимедиа Azure (AMS) для доставки потока, который зашифрован динамически службой AMS, с помощью лицензий DRM PlayReady и Widevine. Лицензию PlayReady выдает сервер лицензирования служб мультимедиа PlayReady, а лицензию Widevine — сервер лицензирования Axinom.
 services: media-services
 documentationcenter: ''
-author: willzhan
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.assetid: 9c93fa4e-b4da-4774-ab6d-8b12b371631d
@@ -12,16 +12,16 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 03/14/2019
+ms.date: 03/10/2021
 ms.author: willzhan
 ms.reviewer: Mingfeiy;rajputam;Juliako
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 1f486bfe7cb96e81cef2da64552be5ddfd87990b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 532e982b02bb35074370db45fec8cc42a898c83e
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89264697"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103015528"
 ---
 # <a name="using-axinom-to-deliver-widevine-licenses-to-azure-media-services"></a>Использование Axinom для доставки лицензий Widevine в службы мультимедиа Azure
 
@@ -188,7 +188,7 @@ public static string GetKeyID(string dashUrl)
 }
 ```
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В систему защиты содержимого служб мультимедиа Azure и Проигрыватель мультимедиа Azure недавно добавлена поддержка Widevine. Благодаря этому мы смогли реализовать потоковую передачу DASH и нескольких собственных технологий DRM (PlayReady + Widevine) со службой лицензий PlayReady в AMS и сервером лицензирования Widevine от Axinom для следующих современных браузеров:
 

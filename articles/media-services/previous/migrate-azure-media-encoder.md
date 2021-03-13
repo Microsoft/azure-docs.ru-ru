@@ -3,7 +3,7 @@ title: Миграция из кодировщика мультимедиа Azure
 description: В этом разделе описано, как выполнить миграцию из кодировщика мультимедиа Azure в обработчик Media Encoder Standard мультимедиа.
 services: media-services
 documentationcenter: ''
-author: juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.service: media-services
@@ -11,15 +11,15 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: article
-ms.date: 08/21/2019
-ms.author: juliako
+ms.date: 3/10/2021
+ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 32eab0f729280ad25f45853e05ea982b60a6d9f7
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 4f528cea9b475c0158524ad9b46623a78df5761d
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89259342"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103016209"
 ---
 # <a name="migrate-from-azure-media-encoder-to-media-encoder-standard"></a>Миграция из кодировщика мультимедиа Azure в Media Encoder Standard
 
@@ -70,12 +70,12 @@ ITask task = job.Tasks.AddNew("My encoding task",
 Если вы создали собственную предустановку кодирования для \ "имя \", используя схему, то [для Media Encoder Standard существует эквивалентная схема](media-services-mes-schema.md). Если у вас возникли вопросы по сопоставлению старых параметров с новым кодировщиком, свяжитесь с нами по адресу mailto:amshelp@microsoft.com  
 ## <a name="known-differences"></a>Известные различия 
 
-Media Encoder Standard более надежна, надежна, имеет лучшую производительность и обеспечивает лучшую качество вывода, чем кодировщик устаревшей версии. Дополнительно 
+Media Encoder Standard более надежна, надежна, имеет лучшую производительность и обеспечивает лучшую качество вывода, чем кодировщик устаревшей версии. Кроме того: 
 
 * Media Encoder Standard создает выходные файлы с другим соглашением об именовании, чем имя в имени.
 * Media Encoder Standard создает такие артефакты, как файлы, содержащие [метаданные входного файла](media-services-input-metadata-schema.md) и [метаданные выходных файлов](media-services-output-metadata-schema.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Устаревшие компоненты](legacy-components.md)
 * [Страница цен](https://azure.microsoft.com/pricing/details/media-services/#encoding)

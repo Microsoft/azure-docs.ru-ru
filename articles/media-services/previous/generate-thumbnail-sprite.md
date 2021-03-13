@@ -3,20 +3,20 @@ title: Создание эскиза спрайта с помощью Служб
 description: В этой статье показано, как создать эскиз спрайта с помощью Служб мультимедиа Azure.
 services: media-services
 documentationcenter: ''
-author: Juliako
+author: IngridAtMicrosoft
 manager: femila
 editor: ''
 ms.service: media-services
 ms.workload: ''
 ms.topic: article
-ms.date: 08/31/2020
-ms.author: juliako
-ms.openlocfilehash: 1d05e73bc9aa51bf20121790de94b1b6d0e26615
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.date: 03/10/2021
+ms.author: inhenkel
+ms.openlocfilehash: ce66b6f605b10f65ec8a98d14c682928c7b21321
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89268576"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103012247"
 ---
 # <a name="generate-a-thumbnail-sprite"></a>Создание эскиза спрайта
 
@@ -35,7 +35,7 @@ Media Encoder Standard можно использовать для создани
 
     1. Если для SpriteColumn установлено значение M >= 1, выходное изображение представляет собой прямоугольник со столбцами M. Если количество эскизов, сгенерированных с помощью # 2, не является точным кратным M, последняя строка будет неполной и останется с черными пикселями.  
 
-Например:
+Пример:
 
 ```json
 {
@@ -74,6 +74,6 @@ Media Encoder Standard можно использовать для создани
 2.  Фрагментирование изображений спрайтов в изображения JPEG со средним размером еще не поддерживается. Таким образом, следует принять меры для ограничения числа эскизов и их размеров, чтобы результирующий совмещенный эскиз спрайта имел около 8М пикселей или меньше.
 3.  Проигрыватель мультимедиа Azure поддерживает спрайты только в браузерах Microsoft Edge, Chrome и Firefox. Разбор VTT в IE11 не поддерживается.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Кодирование контента](media-services-encode-asset.md)

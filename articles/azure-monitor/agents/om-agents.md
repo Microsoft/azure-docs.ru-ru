@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 07/24/2020
-ms.openlocfilehash: e429b87397b91de28f7fea14729b0d18187fa8ff
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 99a8e331e265e686d1de06f8143d2345e51143f1
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102031384"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102613006"
 ---
 # <a name="connect-operations-manager-to-azure-monitor"></a>Подключение Operations Manager к Azure Monitor
 
@@ -99,6 +99,10 @@ ms.locfileid: "102031384"
 ## <a name="connecting-operations-manager-to-azure-monitor"></a>Подключение Operations Manager к Azure Monitor
 
 Выполните следующие действия, чтобы настроить группу управления Operations Manager для подключения к одной из рабочих областей Log Analytics.
+
+> [!NOTE]
+> Если вы заметили, что Log Analytics данные перестают приходить с определенного агента или с сервера управления, можно попытаться сбросить каталог Winsock (использовать `netsh winsock reset` ), а затем перезагрузить сервер. Сброс каталога Winsock позволяет переустановить сетевые подключения, которые были нарушены.
+
 
 Во время первой регистрации группы управления Operations Manager в рабочей области Log Analytics параметр для указания конфигурации прокси-сервера для группы управления недоступен в консоли управления.  Этот параметр станет доступным после успешной регистрации группы управления в службе.  Для обхода этой проблемы вам необходимо обновить конфигурацию прокси-сервера системы с помощью Netsh в системе, в которой выполняется консоль управления, чтобы настроить интеграцию, и обновить все серверы управления в группе управления.  
 

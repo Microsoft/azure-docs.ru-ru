@@ -13,12 +13,12 @@ ms.date: 08/28/2020
 ms.author: marsma
 ms.reviewer: saeeda
 ms.custom: devx-track-csharp, aaddev
-ms.openlocfilehash: 34f2b146dda6e739f977c4894b5ec333c79d74d4
-ms.sourcegitcommit: 2488894b8ece49d493399d2ed7c98d29b53a5599
+ms.openlocfilehash: 11642480ac817b50d102e396b8ab5e200948a615
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98063439"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103199567"
 ---
 # <a name="configuration-requirements-and-troubleshooting-tips-for-xamarin-android-with-msalnet"></a>Требования к конфигурации и советы по устранению неполадок для Xamarin Android с MSAL.NET
 
@@ -74,26 +74,26 @@ protected override void OnActivityResult(int requestCode,
 }
 ```
 
-## <a name="update-the-android-manifest"></a>Обновление манифеста Android
+## <a name="update-the-android-manifest-for-system-webview-support"></a>Обновление манифеста Android для поддержки System WebView 
 
-Файл *AndroidManifest.xml* должен содержать следующие значения:
+Для поддержки System WebView файл *AndroidManifest.xml* должен содержать следующие значения:
 
-```XML
-  <!--Intent filter to capture System Browser or Authenticator calling back to our app after sign-in-->
-  <activity
-        android:name="microsoft.identity.client.BrowserTabActivity">
-     <intent-filter>
-            <action android:name="android.intent.action.VIEW" />
-            <category android:name="android.intent.category.DEFAULT" />
-            <category android:name="android.intent.category.BROWSABLE" />
-            <data android:scheme="msauth"
-                android:host="Enter_the_Package_Name"
-                android:path="/Enter_the_Signature_Hash" />
-     </intent-filter>
-  </activity>
+```xml
+<activity android:name="microsoft.identity.client.BrowserTabActivity" android:configChanges="orientation|screenSize">
+  <intent-filter>
+    <action android:name="android.intent.action.VIEW" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.BROWSABLE" />
+    <data android:scheme="msal{Client Id}" android:host="auth" />
+  </intent-filter>
+</activity>
 ```
 
-Замените имя пакета, зарегистрированное в портал Azure, на `android:host=` значение. Замените хэш ключа, зарегистрированный в портал Azure, на `android:path=` значение. Хэш подписи *не* должен быть закодирован в URL-адресе. Убедитесь, что в начале хэша подписи отображается начальная косая черта ( `/` ).
+`android:scheme`Значение создается из URI перенаправления, настроенного на портале приложения. Например, если URI перенаправления — `msal4a1aa1d5-c567-49d0-ad0b-cd957a47f842://auth` , `android:scheme` запись в манифесте будет выглядеть, как в следующем примере:
+
+```xml
+<data android:scheme="msal4a1aa1d5-c567-49d0-ad0b-cd957a47f842" android:host="auth" />
+```
 
 Кроме того, можно [создать действие в коде](/xamarin/android/platform/android-manifest#the-basics) , а не вручную изменять *AndroidManifest.xml*. Чтобы создать действие в коде, сначала создайте класс, включающий `Activity` атрибут и `IntentFilter` атрибут.
 
@@ -110,9 +110,107 @@ protected override void OnActivityResult(int requestCode,
   }
 ```
 
+### <a name="use-system-webview-in-brokered-authentication"></a>Использование System WebView при проверке подлинности через посредника
+
+Чтобы использовать System WebView в качестве резервной для интерактивной проверки подлинности, когда вы настроили приложение для использования проверки подлинности через посредника и на устройстве не установлен брокер, включите MSAL для записи ответа проверки подлинности с помощью URI перенаправления брокера. MSAL попытается выполнить проверку подлинности с помощью системной WebView по умолчанию на устройстве, когда обнаружит, что брокер недоступен. Использование этого значения по умолчанию приведет к сбою, так как URI перенаправления настроен для использования брокера, а System WebView не знает, как использовать его для возврата в MSAL. Чтобы устранить эту проблему, создайте _Фильтр с намерением_ с помощью URI перенаправления брокера, настроенного ранее. Добавьте фильтр намерения, изменив манифест приложения, как показано в следующем примере:
+
+```xml
+<!--Intent filter to capture System WebView or Authenticator calling back to our app after sign-in-->
+<activity
+      android:name="microsoft.identity.client.BrowserTabActivity">
+    <intent-filter>
+          <action android:name="android.intent.action.VIEW" />
+          <category android:name="android.intent.category.DEFAULT" />
+          <category android:name="android.intent.category.BROWSABLE" />
+          <data android:scheme="msauth"
+              android:host="Enter_the_Package_Name"
+              android:path="/Enter_the_Signature_Hash" />
+    </intent-filter>
+</activity>
+```
+
+Замените имя пакета, зарегистрированное в портал Azure, на `android:host=` значение. Замените хэш ключа, зарегистрированный в портал Azure, на `android:path=` значение. Хэш подписи *не* должен быть закодирован в URL-адресе. Убедитесь, что в начале хэша подписи отображается начальная косая черта ( `/` ).
+
 ### <a name="xamarinforms-43x-manifest"></a>Манифест Xamarin. Forms 4.3. x
 
 Xamarin. Forms 4.3. x создает код, который присваивает `package` атрибуту значение `com.companyname.{appName}` в *AndroidManifest.xml*. Если используется `DataScheme` как `msal{client_id}` , может потребоваться изменить значение в соответствии со значением `MainActivity.cs` пространства имен.
+
+## <a name="android-11-support"></a>Поддержка Android 11
+
+Чтобы использовать системный браузер и аутентификацию через посредника в Android 11, необходимо сначала объявить эти пакеты, чтобы они были видны приложению. Приложения, предназначенные для Android 10 (API 29) и более ранних версий, могут запрашивать в операционной системе список пакетов, доступных на устройстве в любое заданное время. Для обеспечения конфиденциальности и безопасности Android 11 сокращает видимость пакетов до списка пакетов ОС по умолчанию и пакетов, указанных в файле *AndroidManifest.xml* приложения. 
+
+Чтобы разрешить приложению проходить проверку подлинности с помощью системного браузера и брокера, добавьте следующий раздел в *AndroidManifest.xml*:
+
+```xml
+<!-- Required for API Level 30 to make sure the app can detect browsers and other apps where communication is needed.-->
+<!--https://developer.android.com/training/basics/intents/package-visibility-use-cases-->
+<queries>
+  <package android:name="com.azure.authenticator" />
+  <package android:name="{Package Name}" />
+  <package android:name="com.microsoft.windowsintune.companyportal" />
+  <!-- Required for API Level 30 to make sure the app detect browsers
+      (that don't support custom tabs) -->
+  <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <category android:name="android.intent.category.BROWSABLE" />
+    <data android:scheme="https" />
+  </intent>
+  <!-- Required for API Level 30 to make sure the app can detect browsers that support custom tabs -->
+  <!-- https://developers.google.com/web/updates/2020/07/custom-tabs-android-11#detecting_browsers_that_support_custom_tabs -->
+  <intent>
+    <action android:name="android.support.customtabs.action.CustomTabsService" />
+  </intent>
+</queries>
+``` 
+
+Замените на `{Package Name}` имя пакета приложения. 
+
+Обновленный манифест, который теперь включает поддержку для браузера системы и проверки подлинности через посредника, должен выглядеть следующим образом:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.XamarinDev">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name="microsoft.identity.client.BrowserTabActivity" android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="msal4a1aa1d5-c567-49d0-ad0b-cd957a47f842" android:host="auth" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="msauth" android:host="com.companyname.XamarinDev" android:path="/Fc4l/5I4mMvLnF+l+XopDuQ2gEM=" />
+            </intent-filter>
+        </activity>
+    </application>
+    <!-- Required for API Level 30 to make sure we can detect browsers and other apps we want to
+     be able to talk to.-->
+    <!--https://developer.android.com/training/basics/intents/package-visibility-use-cases-->
+    <queries>
+        <package android:name="com.azure.authenticator" />
+        <package android:name="com.companyname.xamarindev" />
+        <package android:name="com.microsoft.windowsintune.companyportal" />
+        <!-- Required for API Level 30 to make sure we can detect browsers
+        (that don't support custom tabs) -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+        <!-- Required for API Level 30 to make sure we can detect browsers that support custom tabs -->
+        <!-- https://developers.google.com/web/updates/2020/07/custom-tabs-android-11#detecting_browsers_that_support_custom_tabs -->
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+    </queries>
+</manifest>
+```
 
 ## <a name="use-the-embedded-web-view-optional"></a>Использовать внедренное веб-представление (необязательно)
 

@@ -3,14 +3,14 @@ title: Создание контейнера Windows Server в кластере 
 description: Узнайте, как быстро создать кластер Kubernetes и развернуть приложение в контейнере Windows Server в Службе Azure Kubernetes (AKS) с помощью PowerShell.
 services: container-service
 ms.topic: article
-ms.date: 05/26/2020
+ms.date: 03/12/2021
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: 56fc11583bcdd271d0225de90ef7ab06bcf87cbf
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.openlocfilehash: b877ecbdca06ff73d152e1b491e993798a99f98a
+ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98625120"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103233520"
 ---
 # <a name="create-a-windows-server-container-on-an-azure-kubernetes-service-aks-cluster-using-powershell"></a>Создание контейнера Windows Server в кластере Службы Azure Kubernetes (AKS) с помощью PowerShell
 
@@ -83,8 +83,9 @@ ResourceId        : /subscriptions/00000000-0000-0000-0000-000000000000/resource
 > Чтобы обеспечить надежную работу кластера, создайте не менее 2 (двух) узлов в пуле узлов по умолчанию.
 
 ```azurepowershell-interactive
-$Password = Read-Host -Prompt 'Please enter your password' -AsSecureString
-New-AzAksCluster -ResourceGroupName myResourceGroup -Name myAKSCluster -NodeCount 2 -KubernetesVersion 1.16.7 -NetworkPlugin azure -NodeVmSetType VirtualMachineScaleSets -WindowsProfileAdminUserName akswinuser -WindowsProfileAdminUserPassword $Password
+$Username = Read-Host -Prompt 'Please create a username for the administrator credentials on your Windows Server containers: '
+$Password = Read-Host -Prompt 'Please create a password for the administrator credentials on your Windows Server containers: ' -AsSecureString
+New-AzAksCluster -ResourceGroupName myResourceGroup -Name myAKSCluster -NodeCount 2 -NetworkPlugin azure -NodeVmSetType VirtualMachineScaleSets -WindowsProfileAdminUserName $Username -WindowsProfileAdminUserPassword $Password
 ```
 
 > [!Note]
@@ -97,7 +98,7 @@ New-AzAksCluster -ResourceGroupName myResourceGroup -Name myAKSCluster -NodeCoun
 По умолчанию кластер AKS создается с пулом узлов, который может выполнять контейнеры Linux. Используйте командлет `New-AzAksNodePool`, чтобы добавить к пулу узлов Linux пул узлов, который может выполнять контейнеры Windows Server.
 
 ```azurepowershell-interactive
-New-AzAksNodePool -ResourceGroupName myResourceGroup -ClusterName myAKSCluster -VmSetType VirtualMachineScaleSets -OsType Windows -Name npwin -KubernetesVersion 1.16.7
+New-AzAksNodePool -ResourceGroupName myResourceGroup -ClusterName myAKSCluster -VmSetType VirtualMachineScaleSets -OsType Windows -Name npwin
 ```
 
 Приведенная выше команда создает новый пул узлов с именем **npwin** и добавляет его в **myAKSCluster**. При создании пула узлов для запуска контейнеров Windows Server для параметра **VmSize** по умолчанию задается значение **Standard_D2s_v3**. Если вы хотите указать другое значение для параметра **VmSize**, не забудьте проверить список [ограниченных размеров виртуальных машин][restricted-vm-sizes]. Минимальное рекомендуемое значение размера: **Standard_D2s_v3**. Приведенная выше команда также использует подсеть по умолчанию в виртуальной сети по умолчанию, созданной при запуске `New-AzAks`.

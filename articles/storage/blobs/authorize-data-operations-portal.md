@@ -11,12 +11,12 @@ ms.author: tamram
 ms.reviewer: ozgun
 ms.subservice: blobs
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: 319bbdd7809e224ca608fdac06d4b304c2052e86
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: a12936f8f9f84dacfab4850253df665ae7758be1
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100391547"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102613263"
 ---
 # <a name="choose-how-to-authorize-access-to-blob-data-in-the-azure-portal"></a>Выберите способ авторизации доступа к данным BLOB-объектов в портал Azure
 
@@ -66,9 +66,9 @@ ms.locfileid: "100391547"
 
 ## <a name="navigate-to-blobs-in-the-azure-portal"></a>Перейдите к BLOB-объектам в портал Azure
 
-Чтобы просмотреть данные большого двоичного объекта на портале, перейдите к **обзору** учетной записи хранения и щелкните ссылки для **больших двоичных объектов**. Кроме того, можно переходить к разделу **Служба BLOB-объектов** в меню.
+Чтобы просмотреть данные большого двоичного объекта на портале, перейдите к **обзору** учетной записи хранения и щелкните ссылки для **больших двоичных объектов**. Кроме того, можно переходить к разделу **контейнеры** в меню.
 
-:::image type="content" source="media/anonymous-read-access-configure/blob-public-access-portal.png" alt-text="Снимок экрана, показывающий, как переходить к данным большого двоичного объекта в портал Azure":::
+:::image type="content" source="media/authorize-data-operations-portal/blob-access-portal.png" alt-text="Снимок экрана, показывающий, как переходить к данным большого двоичного объекта в портал Azure":::
 
 ## <a name="determine-the-current-authentication-method"></a>Определение текущего метода проверки подлинности
 
@@ -111,7 +111,7 @@ ms.locfileid: "100391547"
 
     :::image type="content" source="media/authorize-data-operations-portal/auth-blob-upload.png" alt-text="Снимок экрана, показывающий, как изменить метод авторизации при передаче BLOB-объекта":::
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Проверка подлинности доступа к BLOB-объектам и очередям Azure с помощью Azure Active Directory](../common/storage-auth-aad.md)
 - [Назначение роли Azure для доступа к большим двоичным объектам и данным очереди с помощью портала Azure](../common/storage-auth-aad-rbac-portal.md)

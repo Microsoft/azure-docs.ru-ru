@@ -7,16 +7,16 @@ ms.service: attestation
 ms.topic: overview
 ms.date: 08/31/2020
 ms.author: mbaldwin
-ms.openlocfilehash: 3c908fffe93d657662310d4e91ed25ae28ca6908
-ms.sourcegitcommit: eb546f78c31dfa65937b3a1be134fb5f153447d6
+ms.openlocfilehash: cbc415411e05d6fdecee1acf2fbc02b3c170b9d6
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99429098"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501130"
 ---
 # <a name="quickstart-set-up-azure-attestation-with-azure-powershell"></a>Краткое руководство. Настройка службы "Аттестация Azure" с помощью Azure PowerShell
 
-Выполнив описанные ниже шаги, вы установите и настроите поставщик аттестации с помощью Azure PowerShell. Сведения о том, как установить и запустить Azure PowerShell, см. в статье [Общие сведения об Azure PowerShell](/powershell/azure/?view=azps-2.8.0&viewFallbackFrom=azps-2.4.0).
+Выполнив описанные ниже шаги, вы установите и настроите поставщик аттестации с помощью Azure PowerShell. Сведения о том, как установить и запустить Azure PowerShell, см. в статье [Общие сведения об Azure PowerShell](/powershell/azure/).
 
 Обратите особое внимание, что для коллекции PowerShell не рекомендуется использовать протокол TLS (Transport Layer Security) версий 1.0 и 1.1. Используйте TLS версии 1.2 или более поздней. По этой причине могут появляться следующие сообщения об ошибках.
 
@@ -226,7 +226,7 @@ Remove-AzAttestationPolicySigner -Name $attestationProvider -ResourceGroupName $
 
 Пример использования сертификата для подписывания политик см. [здесь](policy-signer-examples.md).
 
-Дополнительные сведения о командлетах и их параметрах см. в статье [Командлеты PowerShell для службы "Аттестация Azure"](/powershell/module/az.attestation/?view=azps-4.3.0#attestation). 
+Дополнительные сведения о командлетах и их параметрах см. в статье [Командлеты PowerShell для службы "Аттестация Azure"](/powershell/module/az.attestation/#attestation). 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
