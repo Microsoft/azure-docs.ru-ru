@@ -8,12 +8,12 @@ ms.date: 11/19/2020
 ms.topic: how-to
 ms.service: digital-twins
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: a38af4c942de280e7b1c094885a1ede6774ead56
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.openlocfilehash: 3fd504ec36abae3f00cd2a7eb4e1f7b639be0cea
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102433222"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103462683"
 ---
 # <a name="query-the-azure-digital-twins-twin-graph"></a>Запрос к графу Azure Digital двойников двойника
 
@@ -36,8 +36,10 @@ ms.locfileid: "102433222"
 
 :::code language="sql" source="~/digital-twins-docs-samples/queries/queries.sql" id="QueryByProperty1":::
 
-> [!NOTE]
-> Идентификатор цифрового двойника запрашивается с помощью поля метаданных `$dtId`.
+Как показано в приведенном выше запросе, идентификатор цифрового двойника запрашивается с помощью поля метаданных `$dtId` .
+
+>[!TIP]
+> Если для выполнения запроса с полями метаданных, начинающимися с, используется Cloud Shell, следует отключить `$` его `$` с обратным импульсом, чтобы позволить Cloud Shell известно, что это не переменная, и ее следует использовать в качестве литерала в тексте запроса.
 
 Вы также можете получить двойников в зависимости от **того, определено ли определенное свойство**. Ниже приведен запрос, который получает двойников с определенным свойством *Location* :
 

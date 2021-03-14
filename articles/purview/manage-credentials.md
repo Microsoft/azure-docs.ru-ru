@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 02/11/2021
-ms.openlocfilehash: 1857eab485e8651c05959f82cf11e69b6353c575
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 3802d25ebd8f21ab5b8991a66ceb6650f2f276a9
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101673522"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103461714"
 ---
 # <a name="credentials-for-source-authentication-in-azure-purview"></a>Учетные данные для исходной проверки подлинности в Azure зрения
 
@@ -41,7 +41,7 @@ ms.locfileid: "101673522"
 
 Прежде чем можно будет создать учетные данные, сначала Свяжите один или несколько существующих экземпляров Azure Key Vault с учетной записью Azure зрения.
 
-1. В [портал Azure](https://portal.azure.com)выберите свою учетную запись Azure зрения. Перейдите в **центр управления** и перейдите к **учетным данным**.
+1. В [портал Azure](https://portal.azure.com)выберите учетную запись Azure зрения и откройте Azure зрения Studio. Перейдите в **центр управления** в Azure зрения Studio и перейдите к **учетным данным**.
 
 2. На странице **учетные данные** выберите **управление подключениями Key Vault**.
 
@@ -71,7 +71,7 @@ ms.locfileid: "101673522"
 
    :::image type="content" source="media/manage-credentials/add-access-policy.png" alt-text="Добавление политики доступа":::
 
-6. Нажмите **Добавить**.
+6. Щелкните **Добавить**.
 
 7. Нажмите кнопку **сохранить** , чтобы сохранить политику доступа.
 

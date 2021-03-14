@@ -1,5 +1,5 @@
 ---
-title: Политика управления версиями — база данных Azure для MySQL — одиночный сервер и гибкий сервер (Предварительная версия)
+title: Политика поддержки версий — база данных Azure для MySQL — одиночный сервер и гибкий сервер (Предварительная версия)
 description: Описание политики для основных и вспомогательных версий MySQL в базе данных Azure для MySQL
 author: sr-msft
 ms.author: srranga
@@ -7,14 +7,14 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 11/03/2020
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 6acb3268ba40399612940b395437fde3beffda1a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 9f34e1ff7134788d064a82ec7b646df915dbe24e
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101732876"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103462564"
 ---
-# <a name="azure-database-for-mysql-versioning-policy"></a>Политика управления версиями базы данных Azure для MySQL
+# <a name="azure-database-for-mysql-version-support-policy"></a>Политика поддержки версии базы данных Azure для MySQL
 
 На этой странице описывается политика управления версиями базы данных Azure для MySQL и она применима к режимам развертывания базы данных Azure для MySQL — "один сервер" и "база данных Azure для MySQL — гибкий сервер (Предварительная версия)".
 

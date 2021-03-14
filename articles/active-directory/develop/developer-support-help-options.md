@@ -1,27 +1,26 @@
 ---
-title: Поддержка и параметры справки для разработчиков приложений Azure AD
-description: Узнайте, как получить справку и поддержку по вопросам и проблемам разработки, возникающим при создании приложения, которое интегрируется с удостоверениями Майкрософт (Azure Active Directory и учетной записью Майкрософт)
+title: Поддержка и параметры справки для разработчиков платформы Microsoft Identity Службы
+description: Узнайте, где можно получить помощь и найти ответы на ваши вопросы по мере создания решений управления удостоверениями и доступом (IAM), которые интегрируются с Azure Active Directory (Azure AD) и другими компонентами платформы Microsoft Identity.
 services: active-directory
-author: rwike77
+author: mmacy
 manager: CelesteDG
 ms.service: active-directory
 ms.subservice: develop
 ms.topic: conceptual
 ms.workload: identity
-ms.date: 05/23/2019
-ms.author: ryanwi
+ms.date: 03/09/2021
+ms.author: marsma
 ms.reviewer: jmprieur, saeeda
-ms.custom: aaddev
-ms.openlocfilehash: 43990952f6cbe90c729ac2df421c682fe8d42b1b
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 8b0d6ffc00a140073c2dfb5789fbf9760e1767c9
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102517955"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103462768"
 ---
 # <a name="support-and-help-options-for-developers"></a>Возможности получения поддержки и справки для разработчиков
 
-Если вы только приступаете к интеграции с Azure Active Directory (Azure AD), удостоверениями Майкрософт или API Microsoft Graph либо реализуете в приложении новую возможность, бывают случаи, когда вам как разработчику требуется помощь сообщества или техническая поддержка. Ниже приведены рекомендации по разработке решений для платформ Microsoft Identity.
+Если вам нужен ответ на вопрос или помощь в решении проблемы, не описанной в нашей документации, может быть пора обратиться к экспертам за помощью. Ниже приведено несколько советов по получению ответов на вопросы по мере разработки приложений, которые интегрируются с платформой Microsoft Identity.
 
 ## <a name="create-an-azure-support-request"></a>Создание запроса на поддержку Azure
 
@@ -33,9 +32,10 @@ ms.locfileid: "102517955"
 
 - Если у вас уже есть план поддержки Azure, отправьте [запрос в службу поддержки здесь](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest).
 
-- Если вы не являетесь клиентом Azure, можно подать запрос в корпорацию Майкрософт на странице [коммерческой поддержки](https://support.serviceshub.microsoft.com/supportforbusiness).
+- Если вы не являетесь клиентом Azure, вы можете отправить запрос в службу поддержки с помощью [Служба поддержки Майкрософт для бизнеса](https://support.serviceshub.microsoft.com/supportforbusiness).
 
 ## <a name="post-a-question-to-microsoft-qa"></a>Публикация вопроса на веб-сайте Microsoft Q&A
+
 <div class='icon is-large'>
     <img alt='Microsoft Q&A' src='./media/common/question-mark-icon.png'>
 </div>             

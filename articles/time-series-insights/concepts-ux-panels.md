@@ -10,22 +10,22 @@ services: time-series-insights
 ms.topic: conceptual
 ms.date: 01/22/2021
 ms.custom: seodec18
-ms.openlocfilehash: 55e102cc7e27cbcd9a65999f590c8264f1ad4434
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 77c6e8790451ef830b37cc5914ce9de8e92174f5
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98736858"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103464094"
 ---
 # <a name="azure-time-series-insights-explorer"></a>Обозреватель службы "Аналитика временных рядов Azure"
 
 В этой статье описываются различные функции и параметры, доступные в [демонстрационной среде](https://insights.timeseries.azure.com/preview/demo)Azure Time Series Insights Gen2.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы приступить к работе с обозревателем службы "аналитика временных рядов Azure", необходимо выполнить следующие действия.
 
-* Подготовить среду Gen2 "аналитика временных рядов Azure". Дополнительные сведения о подготовке экземпляра см. в руководстве по [Gen2 Azure Time Series Insights](./tutorials-set-up-tsi-environment.md) .
+* Подготовить среду Gen2 "аналитика временных рядов Azure". Дополнительные сведения о подготовке экземпляра см. в руководстве по [Gen2 Azure Time Series Insights](./tutorial-set-up-environment.md) .
 * [Предоставьте доступ к данным](./concepts-access-policies.md) в среду Gen2 "аналитика временных рядов Azure", созданную для учетной записи. Вы можете предоставить доступ как другим пользователям, так и себе.
 * Добавьте источник событий в среду Gen2 "аналитика временных рядов Azure" для отправки данных в среду:
   * Сведения [о подключении к концентратору событий](./how-to-ingest-data-event-hub.md)
@@ -92,7 +92,7 @@ Gen2 "аналитика временных рядов Azure" поддержив
 
 Вы можете удалить определенные элементы данных из текущих данных, выбрав красный элемент управления **Удаление** (корзина) в левой части элемента. Также можно управлять отображением каждого элемента на диаграмме. Можно добавить тени min/max, точки данных, сдвинуть элемент во времени и визуализировать экземпляр с пошаговым способом.
 
-Кроме того, элемент управления исследования позволяет легко создавать изменения времени и точечные диаграммы.  
+Кроме того, элемент управления исследования позволяет легко создавать изменения времени и точечные диаграммы.
 
   [![Параметры удобного макета](media/v2-update-explorer/well-layout-options.png)](media/v2-update-explorer/well-layout-options.png#lightbox)
 
@@ -219,7 +219,7 @@ Gen2 "аналитика временных рядов Azure" поддержив
 | `<`, `>`, `<=`, `>=` | Double, DateTime, TimeSpan | |
 | `=`, `!=`, `<>` | String, Bool, Double, DateTime, TimeSpan, NULL |
 | `IN` | String, Bool, Double, DateTime, TimeSpan, NULL | Все операнды должны быть одного типа или являться константой NULL. |
-| `HAS` | Строка | В правой части разрешены только константные строковые литералы. Пустые строки и значения NULL не допускаются. |
+| `HAS` | Строковый | В правой части разрешены только константные строковые литералы. Пустые строки и значения NULL не допускаются. |
 
 Дополнительные сведения о поддерживаемых операциях запросов и типах данных см. в статье [выражение временных рядов (целевой сервер)](/rest/api/time-series-insights/reference-time-series-expression-syntax).
 
@@ -237,7 +237,7 @@ Gen2 "аналитика временных рядов Azure" поддержив
 
   [![Отмена запрошенного и отфильтрованного параметра](media/v2-update-explorer/s1-s2-preview-filtered-view-cancel.png)](media/v2-update-explorer/s1-s2-preview-filtered-view-cancel.png#lightbox)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте, как принимать [данные](./concepts-ingestion-overview.md) в вашу среду.
 

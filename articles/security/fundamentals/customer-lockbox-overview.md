@@ -8,12 +8,12 @@ ms.topic: article
 ms.author: terrylan
 manager: rkarlin
 ms.date: 02/19/2021
-ms.openlocfilehash: b39b1d33885de46607cd55acee9919473fab7733
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 0146e4fcaf70d37975dc587a266c47bf4b3f4601
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102051435"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103461680"
 ---
 # <a name="customer-lockbox-for-microsoft-azure"></a>Защищенное хранилище для Microsoft Azure
 
@@ -24,7 +24,7 @@ ms.locfileid: "102051435"
 
 В этой статье описывается, как включить защищенное хранилище и как инициируются, отправляются и сохраняются запросы на защищенное хранилище для последующих проверок и аудита.
 
-<a name='supported-services-and-scenarios-in-general-availability'><a name='supported-services-and-scenarios-in-preview'>
+<a name='supported-services-and-scenarios-in-general-availability'></a><a name='supported-services-and-scenarios-in-preview'></a>
 ## <a name="supported-services-and-scenarios-general-availability"></a>Поддерживаемые службы и сценарии (общедоступная доступность)
 
 Следующие службы теперь общедоступны для защищенное хранилище:
@@ -95,7 +95,7 @@ ms.locfileid: "102051435"
 
     ![Azure защищенное хранилище — Просмотр ожидающего запроса](./media/customer-lockbox-overview/customer-lockbox-pending-requests.png)
 
-10. Указанный утверждающий может также выбрать **идентификатор запроса на обслуживание** , чтобы просмотреть запрос в службу поддержки, созданный исходным пользователем. Эта информация содержит контекст для того, почему служба поддержки Майкрософт используется, а также журнал сообщаемой проблемы. Пример.
+10. Указанный утверждающий может также выбрать **идентификатор запроса на обслуживание** , чтобы просмотреть запрос в службу поддержки, созданный исходным пользователем. Эта информация содержит контекст для того, почему служба поддержки Майкрософт используется, а также журнал сообщаемой проблемы. Пример:
 
     ![Azure защищенное хранилище — Просмотр запроса на запрос в службу поддержки](./media/customer-lockbox-overview/customer-lockbox-support-ticket.png)
 

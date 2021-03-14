@@ -9,12 +9,12 @@ ms.service: time-series-insights
 services: time-series-insights
 ms.topic: conceptual
 ms.date: 01/19/2021
-ms.openlocfilehash: ae07f51a91745acdaf2601d3a50bf282129dac71
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: 7b7e29b6e2ebb3b229045df439848264540b59b1
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98881811"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103461629"
 ---
 # <a name="azure-time-series-insights-gen2-event-sources"></a>Источники событий Gen2 для службы "аналитика временных рядов Azure"
 
@@ -27,7 +27,7 @@ ms.locfileid: "98881811"
 
 ## <a name="create-or-edit-event-sources"></a>Создание или изменение источников событий
 
-Ресурсы источника событий могут находиться в той же подписке Azure, что и среда Gen2 для аналитики временных рядов Azure, или другую подписку. Для создания, изменения и удаления источников событий среды можно использовать [портал Azure](./tutorials-set-up-tsi-environment.md#create-an-azure-time-series-insights-gen2-environment), [Azure CLI](https://github.com/Azure/azure-cli-extensions/tree/master/src/timeseriesinsights), [шаблоны ARM](time-series-insights-manage-resources-using-azure-resource-manager-template.md)и [REST API](/rest/api/time-series-insights/management(gen1/gen2)/eventsources) .
+Ресурсы источника событий могут находиться в той же подписке Azure, что и среда Gen2 для аналитики временных рядов Azure, или другую подписку. Для создания, изменения и удаления источников событий среды можно использовать [портал Azure](./tutorial-set-up-environment.md#create-an-azure-time-series-insights-gen2-environment), [Azure CLI](https://github.com/Azure/azure-cli-extensions/tree/master/src/timeseriesinsights), [шаблоны ARM](time-series-insights-manage-resources-using-azure-resource-manager-template.md)и [REST API](/rest/api/time-series-insights/management(gen1/gen2)/eventsources) .
 
 При подключении источника событий среда Gen2 "аналитика временных рядов Azure" будет считывать все события, которые в настоящее время хранятся в вашем центре Интернета вещей или концентраторе событий, начиная с самого раннего события.
 

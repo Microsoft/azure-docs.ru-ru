@@ -7,14 +7,14 @@ ms.service: cosmos-db
 ms.subservice: cosmosdb-sql
 ms.devlang: dotnet
 ms.topic: conceptual
-ms.date: 03/01/2021
+ms.date: 03/10/2021
 ms.reviewer: sngun
-ms.openlocfilehash: 979194efc5ea956c99943cba15efc4a5e3fea2f9
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 9279dddc92629b17a2a73f3a41fe261d322d677e
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101691609"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103463686"
 ---
 # <a name="change-feed-pull-model-in-azure-cosmos-db"></a>Модель извлечения канала изменений в Azure Cosmos DB
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -65,19 +65,19 @@ ms.locfileid: "101691609"
 Следующий пример получает `FeedIterator`, который возвращает объекты сущности, роль которых здесь выполняет объект `User`:
 
 ```csharp
-FeedIterator<User> InteratorWithPOCOS = container.GetChangeFeedIterator<User>(ChangeFeedMode.Incremental, ChangeFeedStartFrom.Beginning());
+FeedIterator<User> InteratorWithPOCOS = container.GetChangeFeedIterator<User>(ChangeFeedStartFrom.Beginning(), ChangeFeedMode.Incremental);
 ```
 
 Этот пример получает `FeedIterator`, который возвращает `Stream`:
 
 ```csharp
-FeedIterator iteratorWithStreams = container.GetChangeFeedStreamIterator<User>(ChangeFeedMode.Incremental, ChangeFeedStartFrom.Beginning());
+FeedIterator iteratorWithStreams = container.GetChangeFeedStreamIterator<User>(ChangeFeedStartFrom.Beginning(), ChangeFeedMode.Incremental);
 ```
 
 Если вы не передаете `FeedRange` в `FeedIterator` , вы можете обрабатывать веб-канал изменений всего контейнера в удобном для вас темпе. Ниже приведен пример, с которого начинается чтение всех изменений, начиная с текущего времени:
 
 ```csharp
-FeedIterator iteratorForTheEntireContainer = container.GetChangeFeedStreamIterator<User>(ChangeFeedMode.Incremental, ChangeFeedStartFrom.Now());
+FeedIterator iteratorForTheEntireContainer = container.GetChangeFeedStreamIterator<User>(ChangeFeedStartFrom.Now(), ChangeFeedMode.Incremental);
 
 while (iteratorForTheEntireContainer.HasMoreResults)
 {
@@ -104,8 +104,7 @@ while (iteratorForTheEntireContainer.HasMoreResults)
 
 ```csharp
 FeedIterator<User> iteratorForPartitionKey = container.GetChangeFeedIterator<User>(
-    ChangeFeedMode.Incremental, 
-    ChangeFeedStartFrom.Beginning(FeedRange.FromPartitionKey(new PartitionKey("PartitionKeyValue"))));
+    ChangeFeedStartFrom.Beginning(FeedRange.FromPartitionKey(new PartitionKey("PartitionKeyValue")), ChangeFeedMode.Incremental));
 
 while (iteratorForThePartitionKey.HasMoreResults)
 {
@@ -149,7 +148,7 @@ IReadOnlyList<FeedRange> ranges = await container.GetFeedRangesAsync();
 Компьютер 1:
 
 ```csharp
-FeedIterator<User> iteratorA = container.GetChangeFeedIterator<User>(ChangeFeedMode.Incremental, ChangeFeedStartFrom.Beginning(ranges[0]));
+FeedIterator<User> iteratorA = container.GetChangeFeedIterator<User>(ChangeFeedStartFrom.Beginning(ranges[0]), ChangeFeedMode.Incremental);
 while (iteratorA.HasMoreResults)
 {
     try {
@@ -171,7 +170,7 @@ while (iteratorA.HasMoreResults)
 Компьютер 2:
 
 ```csharp
-FeedIterator<User> iteratorB = container.GetChangeFeedIterator<User>(ChangeFeedMode.Incremental, ChangeFeedStartFrom.Beginning(ranges[1]));
+FeedIterator<User> iteratorB = container.GetChangeFeedIterator<User>(ChangeFeedStartFrom.Beginning(ranges[1]), ChangeFeedMode.Incremental);
 while (iteratorB.HasMoreResults)
 {
     try {
@@ -195,7 +194,7 @@ while (iteratorB.HasMoreResults)
 Вы можете сохранить текущее расположение `FeedIterator`, создав маркер продолжения. Маркер продолжения — это строковое значение, которое отслеживает последние изменения, обработанные в FeedIterator. Это позволяет позднее возобновить `FeedIterator` с той же позиции. Следующий код постоянно считывает веб-канал изменений с момента создания контейнера. Когда не останется доступных изменений, он сохраняет маркер продолжения, чтобы позднее возобновить обработку этого веб-канала изменений.
 
 ```csharp
-FeedIterator<User> iterator = container.GetChangeFeedIterator<User>(ChangeFeedMode.Incremental, ChangeFeedStartFrom.Beginning());
+FeedIterator<User> iterator = container.GetChangeFeedIterator<User>(ChangeFeedStartFrom.Beginning(), ChangeFeedMode.Incremental);
 
 string continuation = null;
 
@@ -218,7 +217,7 @@ while (iterator.HasMoreResults)
 }
 
 // Some time later
-FeedIterator<User> iteratorThatResumesFromLastPoint = container.GetChangeFeedIterator<User>(ChangeFeedMode.Incremental, ChangeFeedStartFrom.ContinuationToken(continuation));
+FeedIterator<User> iteratorThatResumesFromLastPoint = container.GetChangeFeedIterator<User>(ChangeFeedStartFrom.ContinuationToken(continuation), ChangeFeedMode.Incremental);
 ```
 
 Пока существует контейнер Cosmos, маркер продолжения FeedIterator считается действительным.
