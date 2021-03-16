@@ -77,7 +77,7 @@ ms.locfileid: "98737920"
 
 В командлеты ниже был добавлен новый параметр переключения **-WriteAccelerator**.
 
-- [Set-Азвмосдиск](/powershell/module/az.compute/set-azvmosdisk)
+- [Set-AzVMOSDisk](/powershell/module/az.compute/set-azvmosdisk)
 - [Add-AzVMDataDisk](/powershell/module/az.compute/Add-AzVMDataDisk)
 - [Set-AzVMDataDisk](/powershell/module/az.compute/Set-AzVMDataDisk)
 - [Add-AzVmssDataDisk](/powershell/module/az.compute/Add-AzVmssDataDisk)
