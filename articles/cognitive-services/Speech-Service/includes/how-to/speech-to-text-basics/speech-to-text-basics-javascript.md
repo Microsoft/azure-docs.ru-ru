@@ -2,15 +2,15 @@
 author: trevorbye
 ms.service: cognitive-services
 ms.topic: include
-ms.date: 04/15/2020
+ms.date: 03/04/2021
 ms.author: trbye
 ms.custom: devx-track-js
-ms.openlocfilehash: a27fba6e426b72d72160a9a238f68cf8cef5c73b
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: cc5e306aa9677c7370d03dbb26ef3fe69293a630
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98947556"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102180067"
 ---
 Одной из основных функций службы "Речь" является распознавание и преобразование человеческой речи (часто это называется преобразованием речи в текст). Из этого краткого руководство вы узнаете, как использовать пакет SDK для службы "Речь" в приложениях и продуктах для выполнения высококачественного преобразования речи в текст.
 
@@ -18,40 +18,23 @@ ms.locfileid: "98947556"
 
 Если вы хотите сразу перейти к примерам кода, см. [этот репозиторий](https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master/quickstart/javascript/node) на сайте GitHub.
 
+Сведения о том, как использовать пакет SDK службы "Речь" в среде на основе браузера, также см. на странице [примера React](https://github.com/Azure-Samples/AzureSpeechReactSample).
+
 ## <a name="prerequisites"></a>Предварительные требования
 
 В этой статье предполагается, что у вас есть учетная запись Azure и подписка на службу "Речь". Если у вас нет учетной записи и подписки, [попробуйте службу "Речь" бесплатно](../../../overview.md#try-the-speech-service-for-free).
 
 ## <a name="install-the-speech-sdk"></a>Установка пакета SDK службы "Речь"
 
-Сначала необходимо установить <a href="https://www.npmjs.com/package/microsoft-cognitiveservices-speech-sdk" target="_blank">пакет SDK службы "Речь" для JavaScript <span class="docon docon-navigate-external x-hidden-focus"></span></a>. В зависимости от используемой платформы выполните следующие действия:
+Прежде чем выполнять какие-либо действия, установите пакет SDK службы "Речь" для Node.js. Если вам только нужно имя пакета для установки, выполните команду `npm install microsoft-cognitiveservices-speech-sdk`. Пошаговые инструкции по установке см. в статье по [началу работы](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/setup-platform?tabs=dotnet%2Clinux%2Cjre%2Cnodejs&pivots=programming-language-javascript).
 
-- <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-sdk?tabs=nodejs#get-the-speech-sdk" target="_blank">Node.js <span 
-class="docon docon-navigate-external x-hidden-focus"></span></a>
-- <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-sdk?tabs=browser#get-the-speech-sdk" target="_blank">Веб-браузер <span class="docon docon-navigate-external x-hidden-focus"></span></a>
-
-Кроме того, в зависимости от целевой среды используйте один из следующих параметров:
-
-# <a name="script"></a>[script](#tab/script)
-
-Скачайте <a href="https://aka.ms/csspeech/jsbrowserpackage" target="_blank">пакет SDK службы "Речь" для JavaScript <span class="docon docon-navigate-external x-hidden-focus"></span></a>, извлеките из него файл *microsoft.cognitiveservices.speech.sdk.bundle.js* и поместите его в папку, доступную для HTML-файла.
-
-```html
-<script src="microsoft.cognitiveservices.speech.sdk.bundle.js"></script>;
-```
-
-> [!TIP]
-> Если в качестве платформы вы используете веб-браузер и применяете тег `<script>`, при ссылке на классы использовать префикс `sdk` не нужно. Префикс `sdk` является псевдонимом для присвоения имени модулю `require`.
-
-# <a name="require"></a>[require](#tab/require)
+Воспользуйтесь следующим оператором `require`, чтобы импортировать пакет SDK.
 
 ```javascript
 const sdk = require("microsoft-cognitiveservices-speech-sdk");
 ```
 
-Дополнительные сведения о функции `require` см. <a href="https://nodejs.org/en/knowledge/getting-started/what-is-require/" target="_blank">здесь <span class="docon docon-navigate-external x-hidden-focus"></span></a>.
-
----
+Дополнительные сведения об операторе `require` см. в [документации по require](https://nodejs.org/en/knowledge/getting-started/what-is-require/).
 
 ## <a name="create-a-speech-configuration"></a>Создание конфигурации службы "Речь"
 
@@ -72,52 +55,14 @@ const speechConfig = sdk.SpeechConfig.fromSubscription("<paste-your-subscription
 
 ## <a name="recognize-from-microphone-browser-only"></a>Распознавание речи с микрофона (только с помощью браузера)
 
-Чтобы распознать речь с микрофона устройства, создайте `AudioConfig` с помощью `fromDefaultMicrophoneInput()`. Затем инициализируйте [`SpeechRecognizer`](/javascript/api/microsoft-cognitiveservices-speech-sdk/speechrecognizer), передав `speechConfig` и `audioConfig`.
+Распознавание речи с микрофона **не поддерживается в Node.js** и поддерживается только в среде JavaScript на основе браузера. [Реализацию преобразования речи с микрофона в текст](https://github.com/Azure-Samples/AzureSpeechReactSample/blob/main/src/App.js#L29) см. в [примере React](https://github.com/Azure-Samples/AzureSpeechReactSample) на сайте GitHub.
 
-```javascript
-const sdk = require("microsoft-cognitiveservices-speech-sdk");
-const speechConfig = sdk.SpeechConfig.fromSubscription("<paste-your-subscription-key>", "<paste-your-region>");
-
-function fromMic() {
-    let audioConfig = sdk.AudioConfig.fromDefaultMicrophoneInput();
-    let recognizer = new sdk.SpeechRecognizer(speechConfig, audioConfig);
-    
-    console.log('Speak into your microphone.');
-    recognizer.recognizeOnceAsync(result => {
-        console.log(`RECOGNIZED: Text=${result.text}`);
-    });
-}
-fromMic();
-```
-
-Если необходимо использовать *конкретное* входное аудиоустройство, необходимо указать код устройства в `AudioConfig`. Узнайте, [как получить код устройства](../../../how-to-select-audio-input-devices.md) для входного аудиоустройства.
+> [!NOTE]
+> Если необходимо использовать *конкретное* входное аудиоустройство, необходимо указать код устройства в `AudioConfig`. Узнайте, [как получить код устройства](../../../how-to-select-audio-input-devices.md) для входного аудиоустройства.
 
 ## <a name="recognize-from-file"></a>Распознавание речи из файла 
 
-# <a name="browser"></a>[Браузер](#tab/browser)
-
-Чтобы распознать речь из звукового файла в среде JavaScript на основе браузера, создайте [`AudioConfig`](/javascript/api/microsoft-cognitiveservices-speech-sdk/audioconfig) с помощью функции `fromWavFileInput()`. Для функции `fromWavFileInput()` в качестве параметра необходим объект [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File/File) JavaScript.
-
-```javascript
-const sdk = require("microsoft-cognitiveservices-speech-sdk");
-const speechConfig = sdk.SpeechConfig.fromSubscription("<paste-your-subscription-key>", "<paste-your-region>");
-
-function fromFile() {
-    // wavByteContent should be a byte array of the raw wav content
-    let file = new File([wavByteContent]);
-    let audioConfig = sdk.AudioConfig.fromWavFileInput(file);
-    let recognizer = new sdk.SpeechRecognizer(speechConfig, audioConfig);
-    
-    recognizer.recognizeOnceAsync(result => {
-        console.log(`RECOGNIZED: Text=${result.text}`);
-    });
-}
-fromFile();
-```
-
-# <a name="nodejs"></a>[Node.js](#tab/node)
-
-Чтобы распознать речь из звукового файла в Node.js, необходимо использовать альтернативный конструктивный шаблон, применяющий поток push-передачи, так как объект [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File/File) JavaScript не может использоваться в среде выполнения Node.js. В приведенном ниже коде
+Чтобы распознать речь из звукового файла в Node.js, необходимо использовать альтернативный конструктивный шаблон, применяющий поток push-передачи, так как объект `File` JavaScript не может использоваться в среде выполнения Node.js. В приведенном ниже коде
 
 * создается поток push-передачи с помощью `createPushStream()`;
 * открывается файл `.wav`, создавая поток чтения, и осуществляется его запись в поток push-передачи;
@@ -149,8 +94,6 @@ fromFile();
 
 При использовании потока push-передачи в качестве входных данных предполагается, что звуковые данные являются необработанным PCM (пропуская все заголовки).
 API будет по-прежнему работать в некоторых случаях, если заголовок не пропущен, но для получения наилучших результатов рекомендуется реализовать логику для чтения заголовков, чтобы `fs` начинался с *начала звуковых данных*.
-
----
 
 ## <a name="error-handling"></a>Обработка ошибок
 
@@ -190,7 +133,7 @@ switch (result.reason) {
 Начните с определения входных данных и инициализации [`SpeechRecognizer`](/javascript/api/microsoft-cognitiveservices-speech-sdk/speechrecognizer):
 
 ```javascript
-const recognizer = new sdk.SpeechRecognizer(speechConfig);
+const recognizer = new sdk.SpeechRecognizer(speechConfig, audioConfig);
 ```
 
 Теперь подпишитесь на события, отправленные из [`SpeechRecognizer`](/javascript/api/microsoft-cognitiveservices-speech-sdk/speechrecognizer).

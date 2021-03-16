@@ -4,16 +4,16 @@ description: В этой статье содержатся справочные 
 author: normesta
 ms.service: storage
 ms.topic: reference
-ms.date: 12/11/2020
+ms.date: 03/08/2021
 ms.author: normesta
 ms.subservice: common
 ms.reviewer: zezha-msft
-ms.openlocfilehash: c4e85195ace0a24aa11d4a03b8f429f2714399b0
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: c676b92fd07c6e444aa22f25c48fdb1b1957ca7a
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98879162"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103493770"
 ---
 # <a name="azcopy-copy"></a>azcopy copy
 
@@ -31,6 +31,7 @@ ms.locfileid: "98879162"
   - Службы файлов Azure (SAS) — > файлы Azure (SAS)
   - Служба файлов Azure (SAS) — > большой двоичный объект Azure (SAS или OAuth Authentication)
   - Amazon Web Services (AWS) S3 (ключ доступа) — > блочный BLOB-объект Azure (проверка подлинности SAS или OAuth)
+  - Облачное хранилище Google (ключ учетной записи службы) — > блочный BLOB-объект Azure (проверка подлинности SAS или OAuth) [Предварительная версия]
 
 Дополнительные сведения см. в разделе "примеры" этой статьи.
 
@@ -90,7 +91,7 @@ cat "/path/to/file.txt" | azcopy cp "https://[account].blob.core.windows.net/[co
 azcopy cp "/path/to/dir" "https://[account].blob.core.windows.net/[container]/[path/to/directory]?[SAS]" --recursive
 ```
 
-или
+или диспетчер конфигурации служб
 
 ```azcopy
 azcopy cp "/path/to/dir" "https://[account].blob.core.windows.net/[container]/[path/to/directory]?[SAS]" --recursive --put-md5
@@ -230,7 +231,37 @@ azcopy cp "https://s3.amazonaws.com/" "https://[destaccount].blob.core.windows.n
     
 - При задании тегов для больших двоичных объектов существуют дополнительные разрешения (t "для тегов) в SAS, без которых служба будет выдавать ошибку авторизации.
 
-## <a name="options"></a>Варианты
+Скопируйте один объект в хранилище BLOB-объектов из Google Cloud Storage с помощью ключа учетной записи службы и маркера SAS. Сначала задайте переменную среды GOOGLE_APPLICATION_CREDENTIALS для источника Google Cloud Storage.
+  
+```azcopy
+azcopy cp "https://storage.cloud.google.com/[bucket]/[object]" "https://[destaccount].blob.core.windows.net/[container]/[path/to/blob]?[SAS]"
+```
+
+Скопируйте весь каталог в хранилище BLOB-объектов из Google Cloud Storage с помощью ключа учетной записи службы и маркера SAS. Сначала задайте переменную среды GOOGLE_APPLICATION_CREDENTIALS для источника Google Cloud Storage.
+ 
+```azcopy
+  - azcopy cp "https://storage.cloud.google.com/[bucket]/[folder]" "https://[destaccount].blob.core.windows.net/[container]/[path/to/directory]?[SAS]" --recursive=true
+```
+
+Скопируйте весь контейнер в хранилище BLOB-объектов из Google Cloud Storage с помощью ключа учетной записи службы и маркера SAS. Сначала задайте переменную среды GOOGLE_APPLICATION_CREDENTIALS для источника Google Cloud Storage.
+
+```azcopy 
+azcopy cp "https://storage.cloud.google.com/[bucket]" "https://[destaccount].blob.core.windows.net/?[SAS]" --recursive=true
+```
+
+Скопируйте все контейнеры в хранилище BLOB-объектов из Google Cloud Storage с помощью ключа учетной записи службы и маркера SAS. Сначала задайте переменные среды GOOGLE_APPLICATION_CREDENTIALS и GOOGLE_CLOUD_PROJECT =<> идентификатора проекта для источника GC.
+
+```azcopy
+  - azcopy cp "https://storage.cloud.google.com/" "https://[destaccount].blob.core.windows.net/?[SAS]" --recursive=true
+```
+
+Скопируйте подмножество контейнеров, используя символ-шаблон (*) в имени контейнера из Google Cloud Storage, используя ключ учетной записи службы и маркер SAS для назначения. Сначала задайте переменные среды GOOGLE_APPLICATION_CREDENTIALS и GOOGLE_CLOUD_PROJECT =<> идентификатора проекта для источника Google Cloud Storage.
+ 
+```azcopy
+azcopy cp "https://storage.cloud.google.com/[bucket*name]/" "https://[destaccount].blob.core.windows.net/?[SAS]" --recursive=true
+```
+
+## <a name="options"></a>Параметры
 
 **--BACKUP** Активирует Windows "Себаккуппривилеже для отправки" или "Сересторепривилеже для скачивания", чтобы разрешить AzCopy просматривать и читать все файлы независимо от разрешений файловой системы и восстанавливать все разрешения. Требует, чтобы учетная запись, в которой запущен AzCopy, уже имеет эти разрешения (например, имеет права администратора или является членом `Backup Operators` группы). Этот флаг активирует привилегии, которые у учетной записи уже есть.
 
@@ -320,7 +351,7 @@ azcopy cp "https://s3.amazonaws.com/" "https://[destaccount].blob.core.windows.n
 
 **--Cap-Мбит/с, с плавающей запятой**   Скорость передачи с прописными буквами в мегабит в секунду. Посекундная пропускная способность может немного отличаться от ограничения. Если этот параметр имеет значение 0 или пропущен, пропускная способность не ограничена.
 
-**--выходной** формат строки выходных данных команды. Среди вариантов: Text, JSON. Значение по умолчанию — `text`. ("текст" по умолчанию)
+**--выходной** формат строки выходных данных команды. Среди вариантов: Text, JSON. Значение по умолчанию — `text`. ("текст" по умолчанию)
 
 **--Trusted-Microsoft-суффиксы** указывает дополнительные суффиксы домена, в которых могут отправляться Azure Active Directory токены входа.  Значение по умолчанию — `*.core.windows.net;*.core.chinacloudapi.cn;*.core.cloudapi.de;*.core.usgovcloudapi.net`. Все перечисленные здесь значения добавляются к значениям по умолчанию. В целях безопасности следует размещать только Microsoft Azureные домены. Несколько записей разделяются точкой с запятой.
 

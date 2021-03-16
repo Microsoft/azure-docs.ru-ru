@@ -11,12 +11,12 @@ ms.topic: how-to
 ms.date: 09/16/2020
 ms.author: gasinh
 ms.subservice: B2C
-ms.openlocfilehash: 99741a412ae02a2d30293e1aa254245f5ca7b662
-ms.sourcegitcommit: d22a86a1329be8fd1913ce4d1bfbd2a125b2bcae
+ms.openlocfilehash: b1889a693c08ce78a8bd06b6fe348c0c67bf3812
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96171438"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103465680"
 ---
 # <a name="tutorial-for-configuring-saviynt-with-azure-active-directory-b2c"></a>Руководство по настройке Савийнт с помощью Azure Active Directory B2C
 
@@ -69,7 +69,7 @@ ms.locfileid: "96171438"
 
 1. Чтобы создать учетную запись Савийнт, обратитесь в [савийнт](https://saviynt.com/contact-us/)
 
-2. Создание политик делегированного администрирования и назначение пользователей в качестве [полномочных администраторов](../active-directory/roles/concept-delegation.md) с помощью различных ролей.
+2. Создание политик делегированного администрирования и назначение пользователей в качестве полномочных администраторов с помощью различных ролей.
 
 ## <a name="configure-azure-ad-b2c-with-saviynt"></a>Настройка Azure AD B2C с помощью Савийнт
 
@@ -95,7 +95,7 @@ ms.locfileid: "96171438"
 
 10. Выберите **Добавить разрешения**. Ознакомьтесь с добавленными разрешениями.
 
-11. Выберите параметр **предоставить согласие администратора для сохранения каталога по умолчанию**  >  **Save**.
+11. Выберите параметр **предоставить согласие администратора для сохранения каталога по умолчанию**  >  .
 
 12. Перейдите в раздел **Сертификаты и секреты** и выберите **+ Добавить секрет клиента**. Введите описание секрета клиента, выберите параметр срок действия и нажмите кнопку **Добавить**.
 

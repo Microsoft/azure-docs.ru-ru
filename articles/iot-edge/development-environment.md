@@ -8,14 +8,16 @@ ms.date: 01/04/2019
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: 4064acd6d2857ebc00a38ea7f6ff5d5e30bbd699
-ms.sourcegitcommit: 4f4a2b16ff3a76e5d39e3fcf295bca19cff43540
+ms.openlocfilehash: 517bcdab375db819b0942306df82e7285b9473b1
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93041383"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103487706"
 ---
 # <a name="prepare-your-development-and-test-environment-for-iot-edge"></a>Подготовка среды разработки и тестирования для IoT Edge
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Azure IoT Edge переносит существующую бизнес-логику на пограничные устройства. Чтобы подготовить приложения и рабочие нагрузки для запуска в качестве [модулей IoT Edge](iot-edge-modules.md), необходимо создать их в качестве контейнеров. Эта статья содержит рекомендации по настройке среды разработки для успешного создания решений IoT Edge. Выполнив настройку среды разработки, вы можете перейти к [разработке собственных модулей IoT Edge](module-development.md).
 
@@ -35,7 +37,7 @@ Azure IoT Edge работает в определенном наборе [по
 
 Единственным поддерживаемым модулем контейнеров для устройств IoT Edge в рабочей среде является Moby. Тем не менее любой модуль контейнеров, совместимый с Open Container Initiative, например Docker, может создавать образы модулей IoT Edge.
 
-## <a name="development-tools"></a>Средства разработки
+## <a name="development-tools"></a>Инструменты разработки
 
 Visual Studio и Visual Studio Code включают дополнительные расширения для разработки решений IoT Edge. Эти расширения предоставляют шаблоны для конкретного языка, которые помогают создавать и развертывать новые сценарии IoT Edge. Расширения Azure IoT Edge для Visual Studio и Visual Studio Code позволяют писать код, создавать, развертывать и отлаживать решения IoT Edge. Вы можете создать полное решение IoT Edge, которое содержит несколько модулей, и расширения будут автоматически изменять шаблон манифеста развертывания при добавлении каждого нового модуля. С помощью расширений вы также можете управлять устройствами Интернета вещей из Visual Studio или Visual Studio Code. Вы можете развертывать модули на устройстве, отслеживать состояние и просматривать сообщения по мере их поступления в Центр Интернета вещей. Оба расширения используют [средство разработки IoT EdgeHub](#iot-edgehub-dev-tool) для включения локального запуска и отладки модулей на компьютере разработки.
 
@@ -55,7 +57,7 @@ Visual Studio и Visual Studio Code включают дополнительн
 
 | Шаблон модуля | Предварительное требование |
 | --------------- | ------------ |
-| Функции Azure | [Пакет SDK для .NET Core 2,1](https://www.microsoft.com/net/download) |
+| Функции Azure; | [Пакет SDK для .NET Core 2,1](https://www.microsoft.com/net/download) |
 | C | [Git](https://git-scm.com/); |
 | C# | [Пакет SDK для .NET Core 2,1](https://www.microsoft.com/net/download) |
 | Java | <ul><li>[Пакет SDK для Java SE 10](/azure/developer/java/fundamentals/java-jdk-long-term-support) <li> [Настройка переменной среды JAVA_HOME](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/) <li> [Maven](https://maven.apache.org/)</ul> |
@@ -80,7 +82,7 @@ Visual Studio и Visual Studio Code включают дополнительн
 
 Для развертывания в рабочей среде поддерживаются только среда выполнения IoT Edge, однако следующие средства позволяют моделировать и легко создавать устройства IoT Edge для разработки и тестирования. Эти средства не являются взаимоисключающими и могут работать, формируя полноценную среду разработки.
 
-| Средство | Другое название | Поддерживаемые платформы | Сценарии применения |
+| Инструмент | Другое название | Поддерживаемые платформы | Сценарии применения |
 | ---- | ------------- | ------------------- | --------- |
 | Средство разработки IoT EdgeHub  | iotedgehubdev | Windows, Linux, macOS | Имитация устройства для отладки модулей. |
 | Контейнер разработки IoT Edge | иотеджедев | Windows, Linux, macOS | Разработка без установки зависимостей. |

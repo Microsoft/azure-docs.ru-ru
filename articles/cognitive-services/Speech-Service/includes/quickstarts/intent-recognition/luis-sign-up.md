@@ -5,12 +5,12 @@ ms.subservice: speech-service
 ms.topic: include
 ms.date: 01/27/2020
 ms.author: trbye
-ms.openlocfilehash: a41c9dc888e85baf021712e3302da7ae6106db47
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: 42dc7eb1a74bf2e376f834ee3198ad6a492226e9
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "81422231"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102444939"
 ---
 Чтобы выполнить инструкции в кратком руководстве по распознаванию намерений, необходимо создать учетную запись LUIS и проект с помощью портала LUIS предварительной версии. В этом кратком руководстве требуется только подписка LUIS. Подписка на службу "Речь" *не* является обязательной.
 
@@ -18,7 +18,7 @@ ms.locfileid: "81422231"
 
 Чтобы создать приложение LUIS, выполните эти инструкции:
 
-* <a href="https://docs.microsoft.com/azure/cognitive-services/luis/luis-get-started-create-app" target="_blank">Краткое руководство. Краткое руководство. Использование предварительно созданного приложения для системы домашней автоматики <span class="docon docon-navigate-external x-hidden-focus"></span></a>
+* <a href="https://docs.microsoft.com/azure/cognitive-services/luis/luis-get-started-create-app" target="_blank">Краткое руководство. Создание готового приложения домена</a>
 
 Когда все будет готово, вам потребуется следующее:
 
@@ -31,7 +31,7 @@ ms.locfileid: "81422231"
 
 1. На портале предварительной версии LUIS выберите свое приложение и нажмите кнопку **Опубликовать**.
 
-2. Выберите **рабочий** слот, если используете `en-US`. Переведите переключатель параметра **подготовки речи** в положение **Вкл.** . Затем нажмите кнопку **Опубликовать**.
+2. Выберите **рабочий** слот, если используете `en-US`. Переведите переключатель параметра **подготовки речи** в положение **Вкл**. Затем нажмите кнопку **Опубликовать**.
 
     > [!IMPORTANT]
     > Настоятельно рекомендуем включить **подготовку речи**. Это повысит точность распознавания речи.

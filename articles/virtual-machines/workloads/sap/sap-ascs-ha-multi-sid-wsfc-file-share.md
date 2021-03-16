@@ -13,15 +13,15 @@ ms.service: virtual-machines-sap
 ms.topic: article
 ms.tgt_pltfrm: vm-windows
 ms.workload: infrastructure-services
-ms.date: 08/24/2020
+ms.date: 03/15/2021
 ms.author: juergent
 ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: 30f2e0e96f11203633b756a320d3da503686ed9f
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 8b1a29b0f94c5009d0535ca92363c25ad5c6c884
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102504496"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103493498"
 ---
 # <a name="sap-ascsscs-instance-multi-sid-high-availability-with-windows-server-failover-clustering-and-file-share-on-azure"></a>Обеспечение высокого уровня доступности экземпляра ASCS/SCS с несколькими ИД безопасности с помощью отказоустойчивой кластеризации Windows Server и файлового ресурса в Azure
 
@@ -59,6 +59,7 @@ _**Рис. 1.** Экземпляр SAP ASCS/SCS и SOFS, развернутые 
 > Установка должна соответствовать двум таким условиям:
 > * Экземпляры SAP ASCS/SCS должны совместно использовать один кластер WSFC.
 > * Другие общие файловые ресурсы глобальных узлов SAP, относящиеся к разным идентификаторам безопасности SAP, должны совместно использовать один кластер SOFS.
+> * Экземпляры SAP ASCS/SCS и общие папки SOFS не должны объединяться в одном кластере. 
 > * Для каждого идентификатора безопасности системы управления базами данных (СУБД) должен быть выделен кластер WSFC.
 > * Серверы приложений SAP, связанные с одним ИД безопасности системы SAP, должны размещаться на выделенных виртуальных машинах.
 > * Не поддерживается сочетание сервера репликации очереди 1 и постановки в очередь сервера репликации 2 в одном кластере.  
@@ -242,7 +243,7 @@ _**Рис 7.** "Общий ресурс SMB — быстрый профиль"_
 
 ![Рис 8. Выбор "sapglobalhost2" и указание пути на Volume2][sap-ha-guide-figure-8019]
 
-_**Рис 8.** Выбор "sapglobalhost2" и указание пути на Volume2_
+_**Рис. 8.** Выберите "sapglobalhost2" и укажите путь в Volume2_
 
 <br>
 

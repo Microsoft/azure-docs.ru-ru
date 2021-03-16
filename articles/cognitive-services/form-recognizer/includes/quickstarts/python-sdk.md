@@ -2,21 +2,26 @@
 title: Краткое руководство. Клиентская библиотека Распознавателя документов для Python
 description: Использование клиентской библиотеки Распознавателя документов для Python для создания приложения для обработки форм, которое извлекает из документов пары "ключ — значение" и табличные данные.
 services: cognitive-services
-author: PatrickFarley
+author: laujan
 manager: nitinme
 ms.service: cognitive-services
 ms.subservice: forms-recognizer
 ms.topic: include
 ms.date: 10/26/2020
-ms.author: pafarley
-ms.openlocfilehash: d0c26a4b0cc860b959afc6703ee3e709c606f209
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.author: lajanuar
+ms.openlocfilehash: 445fdea4cb92ed8080528a41cf19ad774751b9ce
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99584619"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102510688"
 ---
+<!-- markdownlint-disable MD001 -->
+<!-- markdownlint-disable MD024 -->
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD034 -->
 > [!IMPORTANT]
+>
 > * В коде, приведенном в этой статье, для простоты используются синхронные методы и незащищенное хранилище учетных данных. См. справочную документацию ниже. 
 
 [Справочная документация](/python/api/azure-ai-formrecognizer) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/formrecognizer/azure-ai-formrecognizer/azure/ai/formrecognizer) | [Пакет (PyPi)](https://pypi.org/project/azure-ai-formrecognizer/) | [Примеры](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/formrecognizer/azure-ai-formrecognizer/samples)
@@ -25,10 +30,11 @@ ms.locfileid: "99584619"
 
 * Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services).
 * [Python 3.x](https://www.python.org/)
+  * Установка Python должна включать [pip](https://pip.pypa.io/en/stable/). Чтобы проверить, установлен ли pip, выполните команду `pip --version` в командной строке. Чтобы использовать pip, установите последнюю версию Python.
 * Набор данных для обучения в хранилище BLOB-объектов Azure. Советы и варианты для объединения данных для обучения см. в статье о [создании обучающего набора данных для пользовательской модели](../../build-training-data-set.md). При работе с этим кратким руководством можно использовать файлы в папке **Train** из [примера набора данных](https://go.microsoft.com/fwlink/?linkid=2090451) (скачайте и разархивируйте файл *sample_data.zip*).
-* Получив подписку Azure, перейдите к <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesFormRecognizer"  title="Создание ресурса Распознавателя документов"  target="_blank">созданию ресурса Распознавателя документов <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
-    * Для подключения приложения к API Распознавателя документов потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
-    * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
+* Получив подписку Azure, перейдите к <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesFormRecognizer"  title="Создание ресурса Распознавателя документов"  target="_blank">созданию ресурса Распознавателя документов </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+  * Для подключения приложения к API Распознавателя документов потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
+  * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
 
 ## <a name="setting-up"></a>Настройка
 
@@ -36,23 +42,23 @@ ms.locfileid: "99584619"
 
 После установки Python можно установить последнюю версию клиентской библиотеки Распознавателя документов с помощью приведенной ниже команды.
 
-#### <a name="version-20"></a>[Версия 2.0](#tab/ga)
-
-```console
-pip install azure-ai-formrecognizer
-```
-
-> [!NOTE]
-> В Распознавателе документов последней версии используется API версии 2.0.
-
-#### <a name="version-21-preview"></a>[Предварительная версия 2.1](#tab/preview)
+#### <a name="v21-preview"></a>[Предварительная версия 2.1](#tab/preview)
 
 ```console
 pip install azure-ai-formrecognizer --pre
 ```
 
 > [!NOTE]
-> В предварительной версии пакета SDK Распознавателя документов используется API предварительной версии 2.1.
+> В пакете SDK 3.1.0 Распознавателя документов используется API предварительной версии 2.1.
+
+#### <a name="v20"></a>[Версия 2.0](#tab/ga)
+
+```console
+pip install azure-ai-formrecognizer
+```
+
+> [!NOTE]
+> В пакете SDK 3.0.0 Распознавателя документов используется API версии 2.0
 
 ---
 
@@ -65,24 +71,24 @@ pip install azure-ai-formrecognizer --pre
 > [!TIP]
 > Хотите просмотреть готовый файл с кодом для этого краткого руководства? Его можно найти [на сайте GitHub](https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/python/FormRecognizer/FormRecognizerQuickstart.py), где размещены примеры кода для этого краткого руководства.
 
-
 Создайте переменные для конечной точки Azure и ключа ресурса. 
 
 [!code-python[](~/cognitive-services-quickstart-code/python/FormRecognizer/FormRecognizerQuickstart.py?name=snippet_creds)]
 
-
-## <a name="object-model"></a>Объектная модель 
+## <a name="object-model"></a>Объектная модель
 
 С помощью Распознавателя документов можно создавать клиенты двух разных типов. Первый, `form_recognizer_client`, используется для запроса из службы распознанных полей и содержимого форм. Второй, `form_training_client`, используется для создания настраиваемых моделей и управления ими. Эти модели можно использовать для улучшения распознавания. 
 
 ### <a name="formrecognizerclient"></a>FormRecognizerClient
+
 `form_recognizer_client` предоставляет операции для перечисленных ниже целей.
 
- * Распознавание полей форм и содержимого с помощью настраиваемых моделей, обученных для анализа пользовательских форм. 
- * Распознавание содержимого формы, в том числе таблиц, строк и слов, без необходимости обучения модели. 
- * Распознавание общих полей в квитанциях с помощью предварительно обученной модели для обработки квитанций в службе "Распознаватель документов".
+* Распознавание полей форм и содержимого с помощью настраиваемых моделей, обученных для анализа пользовательских форм.
+* Распознавание содержимого формы, в том числе таблиц, строк и слов, без необходимости обучения модели.
+* Распознавание общих полей в квитанциях с помощью предварительно обученной модели для обработки квитанций в службе "Распознаватель документов".
 
 ### <a name="formtrainingclient"></a>FormTrainingClient
+
 `form_training_client` предоставляет операции для перечисленных ниже целей.
 
 * Обучение настраиваемых моделей для анализа всех полей и значений в пользовательских формах. Более подробное описание процесса создания набора данных для обучения см. в [документации службы по обучению модели без добавления меток](#train-a-model-without-labels).
@@ -96,23 +102,24 @@ pip install azure-ai-formrecognizer --pre
 ## <a name="code-examples"></a>Примеры кода
 
 Эти фрагменты кода показывают, как выполнить следующие действия с помощью клиентской библиотеки Распознавателя документов для Python:
-
-#### <a name="version-20"></a>[Версия 2.0](#tab/ga)
-
-* [аутентификация клиента](#authenticate-the-client);
-* [анализ макета](#analyze-layout);
-* [анализ квитанций](#analyze-receipts);
-* [обучение пользовательской модели](#train-a-custom-model);
-* [анализ документов с помощью пользовательской модели](#analyze-forms-with-a-custom-model);
-* [управление пользовательскими моделями](#manage-your-custom-models).
-
-#### <a name="version-21-preview"></a>[Предварительная версия 2.1](#tab/preview)
+<!-- markdownlint-disable MD001 -->
+<!-- markdownlint-disable MD024 -->
+#### <a name="v21-preview"></a>[Предварительная версия 2.1](#tab/preview)
 
 * [аутентификация клиента](#authenticate-the-client);
 * [анализ макета](#analyze-layout);
 * [анализ квитанций](#analyze-receipts);
 * [анализ визитных карточек](#analyze-business-cards);
 * [анализ счетов](#analyze-invoices);
+* [обучение пользовательской модели](#train-a-custom-model);
+* [анализ документов с помощью пользовательской модели](#analyze-forms-with-a-custom-model);
+* [управление пользовательскими моделями](#manage-your-custom-models).
+
+#### <a name="v20"></a>[Версия 2.0](#tab/ga)
+
+* [аутентификация клиента](#authenticate-the-client);
+* [анализ макета](#analyze-layout);
+* [анализ квитанций](#analyze-receipts);
 * [обучение пользовательской модели](#train-a-custom-model);
 * [анализ документов с помощью пользовательской модели](#analyze-forms-with-a-custom-model);
 * [управление пользовательскими моделями](#manage-your-custom-models).
@@ -125,10 +132,10 @@ pip install azure-ai-formrecognizer --pre
 
 [!code-python[](~/cognitive-services-quickstart-code/python/FormRecognizer/FormRecognizerQuickstart.py?name=snippet_auth)]
 
-
 ## <a name="get-assets-for-testing"></a>Получение ресурсов для тестирования
 
 Потребуется добавить URL-адреса данных для обучения и тестирования.
+
 * [!INCLUDE [get SAS URL](../../includes/sas-instructions.md)]
   
    :::image type="content" source="../../media/quickstarts/get-sas-url.png" alt-text="Получение подписанного URL-адреса":::
@@ -171,22 +178,21 @@ Confidence score: 1.0
 
 ```
 
-
 ## <a name="analyze-invoices"></a>Анализ счетов
 
-#### <a name="version-20"></a>[Версия 2.0](#tab/ga)
+#### <a name="v21-preview"></a>[Предварительная версия 2.1](#tab/preview)
 
-> [!IMPORTANT]
-> Эта функция недоступна в выбранной версии API.
-
-#### <a name="version-21-preview"></a>[Предварительная версия 2.1](#tab/preview)
-
-В этом разделе показано, как с помощью предварительно обученной модели анализировать счета на продажу и извлекать из них содержимое стандартных полей. Дополнительные сведения об анализе счета см. в статье [Служба макета Распознавателя документов](../../concept-invoices.md). Для анализа накладных по URL-адресу используйте метод `begin_recognize_invoices_from_url`. 
+В этом разделе показано, как с помощью предварительно обученной модели анализировать счета на продажу и извлекать из них содержимое стандартных полей. Дополнительные сведения об анализе счета см. в статье [Служба макета Распознавателя документов](../../concept-invoices.md). Для анализа счетов по URL-адресу используйте метод `begin_recognize_invoices_from_url`. 
 
 [!code-python[](~/cognitive-services-quickstart-code/python/FormRecognizer/FormRecognizerQuickstart-preview.py?name=snippet_invoice)]
 
 > [!TIP]
-> Можно также проанализировать локальные изображения счетов. Изучите информацию о методах класса [FormRecognizerClient](/python/api/azure-ai-formrecognizer/azure.ai.formrecognizer.formrecognizerclient?view=azure-python), например о `begin_recognize_invoices`. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/formrecognizer/azure-ai-formrecognizer/samples) для сценариев, включающих использование локальных изображений.
+> Можно также проанализировать локальные изображения счетов. Изучите информацию о методах класса [FormRecognizerClient](/python/api/azure-ai-formrecognizer/azure.ai.formrecognizer.formrecognizerclient), например о `begin_recognize_invoices`. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/formrecognizer/azure-ai-formrecognizer/samples) для сценариев, включающих использование локальных изображений.
+
+#### <a name="v20"></a>[Версия 2.0](#tab/ga)
+
+> [!IMPORTANT]
+> Эта функция недоступна в выбранной версии API.
 
 ---
 
@@ -324,12 +330,12 @@ Field 'Total' has label 'Total' with value 'None' and a confidence score of None
 
 ## <a name="analyze-receipts"></a>Анализ квитанций
 
-В этом разделе объясняется, как с помощью предварительно обученной модели можно анализировать используемые в США квитанции и извлекать из них содержимое стандартных полей. Дополнительные сведения об анализе квитанций см. в статье [Готовая модель получения Распознавателя форм](../../concept-receipts.md). Для анализа квитанций по URL-адресу используйте метод `begin_recognize_receipts_from_url`. 
+В этом разделе объясняется, как с помощью предварительно обученной модели можно анализировать используемые в США квитанции и извлекать из них содержимое стандартных полей. Дополнительные сведения об анализе квитанций см. в статье [Готовая модель получения Распознавателя форм](../../concept-receipts.md). Для анализа чеков по URL-адресу используйте метод `begin_recognize_receipts_from_url`. 
 
 [!code-python[](~/cognitive-services-quickstart-code/python/FormRecognizer/FormRecognizerQuickstart.py?name=snippet_receipts)]
 
 > [!TIP]
-> Можно также проанализировать локальные изображения квитанций. Изучите информацию о методах класса [FormRecognizerClient](/python/api/azure-ai-formrecognizer/azure.ai.formrecognizer.formrecognizerclient?view=azure-python), например о `begin_recognize_receipts`. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/formrecognizer/azure-ai-formrecognizer/samples) для сценариев, включающих использование локальных изображений.
+> Можно также проанализировать локальные изображения квитанций. Изучите информацию о методах класса [FormRecognizerClient](/python/api/azure-ai-formrecognizer/azure.ai.formrecognizer.formrecognizerclient), например о `begin_recognize_receipts`. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/formrecognizer/azure-ai-formrecognizer/samples) для сценариев, включающих использование локальных изображений.
 
 ### <a name="output"></a>Выходные данные
 
@@ -353,22 +359,21 @@ Tax: 104.4 has confidence 0.713
 Total: 1203.39 has confidence 0.774
 ```
 
-
 ## <a name="analyze-business-cards"></a>Анализ визитных карточек
 
-#### <a name="version-20"></a>[Версия 2.0](#tab/ga)
-
-> [!IMPORTANT]
-> Эта функция недоступна в выбранной версии API.
-
-#### <a name="version-21-preview"></a>[Предварительная версия 2.1](#tab/preview)
+#### <a name="v21-preview"></a>[Предварительная версия 2.1](#tab/preview)
 
 В этом разделе показано, как с помощью предварительно обученной модели анализировать визитные карточки на английском языке и извлекать из них содержимое стандартных полей. Дополнительные сведения об анализе визитных карточек см. в статье [Готовая модель для анализа визитных карточек с помощью Распознавателя форм](../../concept-business-cards.md). Для анализа визитных карточек по URL-адресу используйте метод `begin_recognize_business_cards_from_url`. 
 
 [!code-python[](~/cognitive-services-quickstart-code/python/FormRecognizer/FormRecognizerQuickstart-preview.py?name=snippet_bc)]
 
 > [!TIP]
-> Можно также проанализировать локальные изображения визитных карточек. Изучите информацию о методах класса [FormRecognizerClient](/python/api/azure-ai-formrecognizer/azure.ai.formrecognizer.formrecognizerclient?view=azure-python), например о `begin_recognize_business_cards`. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/formrecognizer/azure-ai-formrecognizer/samples) для сценариев, включающих использование локальных изображений.
+> Можно также проанализировать локальные изображения визитных карточек. Изучите информацию о методах класса [FormRecognizerClient](/python/api/azure-ai-formrecognizer/azure.ai.formrecognizer.formrecognizerclient), например о `begin_recognize_business_cards`. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/formrecognizer/azure-ai-formrecognizer/samples) для сценариев, включающих использование локальных изображений.
+
+#### <a name="v20"></a>[Версия 2.0](#tab/ga)
+
+> [!IMPORTANT]
+> Эта функция недоступна в выбранной версии API.
 
 ---
 

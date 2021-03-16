@@ -10,16 +10,25 @@ ms.subservice: computer-vision
 ms.topic: overview
 ms.date: 01/13/2021
 ms.author: pafarley
-ms.openlocfilehash: 4f5ea68102e98a9abc3e5a0a31d3153bc1bd1663
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 78746e7623f58af5ae9df829b48245295dc39f01
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101738231"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102487106"
 ---
 # <a name="whats-new-in-computer-vision"></a>Новые возможности Компьютерного зрения
 
 Узнайте о новых возможностях службы. Эти элементы могут включать заметки о выпуске, видео, записи блогов и другие типы информации. Создайте закладку для этой страницы, чтобы получать последние сведения об обновлениях службы.
+
+## <a name="march-2021"></a>Март 2021 г.
+
+### <a name="computer-vision-32-public-preview-update"></a>Обновление общедоступной предварительной версии Компьютерного зрения версии 3.2
+
+Общедоступная предварительная версия API компьютерного зрения версии 3.2 была обновлена. В предварительной версии доступны все функции Компьютерного зрения, а также обновленные API чтения и анализа.
+
+> [!div class="nextstepaction"]
+> [Подробнее о Компьютерном зрении версии 3.2, общедоступная предварительная версия 3](https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/5d986960601faab4bf452005)
 
 ## <a name="february-2021"></a>Февраль 2021 года
 
@@ -34,7 +43,7 @@ ms.locfileid: "101738231"
 [См. дополнительные сведения об API чтения.](concept-recognizing-text.md)
 
 > [!div class="nextstepaction"]
-> [Получить общедоступную предварительную версию API чтения версии 3.2](https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-2/operations/5d986960601faab4bf452005)
+> [Получить общедоступную предварительную версию API чтения версии 3.2](https://westus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2-preview-3/operations/5d986960601faab4bf452005)
 
 
 ## <a name="january-2021"></a>Январь 2021 г.

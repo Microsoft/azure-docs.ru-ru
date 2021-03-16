@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
-ms.openlocfilehash: f6d014ced6e25f4c27e1d8ae7225069863e154b3
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: 10ff568ede601c57369f8c942ed61cb7a39ba703
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103015885"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103465714"
 ---
 # <a name="use-media-services-to-deliver-drm-licenses-or-aes-keys"></a>Доставка лицензий DRM или ключей AES с помощью Служб мультимедиа
 
@@ -41,9 +41,6 @@ ms.locfileid: "103015885"
 На следующей схеме представлены основные действия, которые необходимо выполнить, чтобы доставлять лицензии PlayReady и Widevine с помощью Служб мультимедиа. При этом остальные задачи выполняются на локальных серверах:
 
 ![Защита с помощью PlayReady](./media/media-services-deliver-keys-and-licenses/media-services-diagram1.png)
-
-## <a name="download-sample"></a>Скачивание образца
-Описанный здесь пример кода можно просмотреть в статье [Use Azure Media Services to deliver PlayReady and/or Widevine licenses with .NET](https://github.com/Azure/media-services-dotnet-deliver-drm-licenses) (Предоставления лицензий PlayReady и (или) Widevine с помощью .NET в Службах мультимедиа Microsoft Azure).
 
 ## <a name="create-and-configure-a-visual-studio-project"></a>Создание и настройка проекта Visual Studio
 

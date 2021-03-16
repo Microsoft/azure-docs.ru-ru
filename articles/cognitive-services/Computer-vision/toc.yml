@@ -52,78 +52,76 @@
     - name: "Обновление Read версии\_2.x до версии\_3.x"
       href: upgrade-api-versions.md
     - name: Как настроить проверку подлинности AAD
-      href: /azure/cognitive-services/authentication?tabs=powershell#authenticate-with-azure-active-directory?context=/azure/cognitive-services/computer-vision/context/context
+      href: /azure/cognitive-services/authentication?tabs=powershell?context=/azure/cognitive-services/computer-vision/context/context
     - name: 'Как использовать ключи, управляемые клиентом'
       href: /azure/cognitive-services/encryption/cognitive-services-encryption-keys-portal?context=/azure/cognitive-services/computer-vision/context/context
-- name: Развертывание Компьютерного зрения
-  items:
-    - name: Контейнеры
+    - name: Развертывание Компьютерного зрения
       items:
-        - name: Документация по контейнерам Cognitive Services
-          href: ../containers/index.yml
-        - name: "Контейнер API\_чтения"
+        - name: Контейнеры
           items:
-            - name: Установка и запуск контейнеров
-              href: computer-vision-how-to-install-containers.md
-              displayName: 'docker, container, package, packaged app, swagger, open api, openapi, train, publish, az, acr, cli, tps, core, curl, try it now, import, pull, on-premises'
-            - name: Настройка контейнеров
-              href: computer-vision-resource-container-config.md
-            - name: "Переход на контейнер с доступом на чтение версии\_3"
-              href: read-container-migration-guide.md
-              displayName: 'docker, container, billing, apikey, pull, logging, on-premises'
-            - name: Использование с Kubernetes и Helm
-              href: deploy-computer-vision-on-premises.md
-              displayName: 'kubectl, docker, helm, kubernetes, K8s, tiller, container, image, on-prem, on-premises'
-            - name: Использование экземпляров контейнеров
-              maintainContext: true
-              href: ../containers/azure-container-instance-recipe.md
-              displayName: 'container instances, container, containers, images'
-        - name: Контейнер для пространственного анализа
-          items:
-            - name: Общие сведения о пространственном анализе
-              href: intro-to-spatial-analysis-public-preview.md
-            - name: Настройка главного компьютера и запуск контейнера
-              href: spatial-analysis-container.md
-            - name: Настройка операций
-              href: spatial-analysis-operations.md
-            - name: Развертывание веб-приложения для пересчета людей
-              href: Spatial-analysis-web-app.md
-            - name: Ведение журнала и устранение неполадок
-              href: spatial-analysis-logging.md
-            - name: Размещение зон и линий
-              href: spatial-analysis-zone-line-placement.md
-            - name: Размещение камеры
-              href: spatial-analysis-camera-placement.md
+            - name: Документация по контейнерам Cognitive Services
+              href: ../containers/index.yml
+            - name: "Контейнер API\_чтения"
+              items:
+                - name: Установка и запуск контейнеров
+                  href: computer-vision-how-to-install-containers.md
+                  displayName: 'docker, container, package, packaged app, swagger, open api, openapi, train, publish, az, acr, cli, tps, core, curl, try it now, import, pull, on-premises'
+                - name: Настройка контейнеров
+                  href: computer-vision-resource-container-config.md
+                - name: "Переход на контейнер с доступом на чтение версии\_3"
+                  href: read-container-migration-guide.md
+                  displayName: 'docker, container, billing, apikey, pull, logging, on-premises'
+                - name: Использование с Kubernetes и Helm
+                  href: deploy-computer-vision-on-premises.md
+                  displayName: 'kubectl, docker, helm, kubernetes, K8s, tiller, container, image, on-prem, on-premises'
+                - name: Использование экземпляров контейнеров
+                  maintainContext: true
+                  href: ../containers/azure-container-instance-recipe.md
+                  displayName: 'container instances, container, containers, images'
+            - name: Контейнер для пространственного анализа
+              items:
+                - name: Общие сведения о пространственном анализе
+                  href: intro-to-spatial-analysis-public-preview.md
+                - name: Настройка главного компьютера и запуск контейнера
+                  href: spatial-analysis-container.md
+                - name: Настройка операций
+                  href: spatial-analysis-operations.md
+                - name: Развертывание веб-приложения для пересчета людей
+                  href: Spatial-analysis-web-app.md
+                - name: Ведение журнала и устранение неполадок
+                  href: spatial-analysis-logging.md
+                - name: Размещение зон и линий
+                  href: spatial-analysis-zone-line-placement.md
+                - name: Размещение камеры
+                  href: spatial-analysis-camera-placement.md
 - name: Основные понятия
   items:
-    - name: Режимы
-      items:
-        - name: Оптическое распознавание текста (OCR)
-          href: concept-recognizing-text.md
-        - name: Обнаружение объектов
-          href: concept-object-detection.md
-        - name: Обнаружение торговых марок
-          href: concept-brand-detection.md
-        - name: Теги содержимого
-          href: concept-tagging-images.md
-        - name: Классификация изображений
-          href: concept-categorizing-images.md
-        - name: Классификация категорий
-          href: Category-Taxonomy.md
-        - name: Описания изображений
-          href: concept-describing-images.md
-        - name: Определение лиц
-          href: concept-detecting-faces.md
-        - name: Обнаружение типов изображений
-          href: concept-detecting-image-types.md
-        - name: 'Содержимое, связанное с доменами'
-          href: concept-detecting-domain-content.md
-        - name: Определение цветовой схемы
-          href: concept-detecting-color-schemes.md
-        - name: Эскизы со смарт-обрезанием
-          href: concept-generating-thumbnails.md
-        - name: Обнаружение содержимого для взрослых
-          href: concept-detecting-adult-content.md
+    - name: Оптическое распознавание текста (OCR)
+      href: concept-recognizing-text.md
+    - name: Обнаружение объектов
+      href: concept-object-detection.md
+    - name: Обнаружение торговых марок
+      href: concept-brand-detection.md
+    - name: Теги содержимого
+      href: concept-tagging-images.md
+    - name: Классификация изображений
+      href: concept-categorizing-images.md
+    - name: Классификация категорий
+      href: Category-Taxonomy.md
+    - name: Описания изображений
+      href: concept-describing-images.md
+    - name: Определение лиц
+      href: concept-detecting-faces.md
+    - name: Обнаружение типов изображений
+      href: concept-detecting-image-types.md
+    - name: 'Содержимое, связанное с доменами'
+      href: concept-detecting-domain-content.md
+    - name: Определение цветовой схемы
+      href: concept-detecting-color-schemes.md
+    - name: Эскизы со смарт-обрезанием
+      href: concept-generating-thumbnails.md
+    - name: Обнаружение содержимого для взрослых
+      href: concept-detecting-adult-content.md
 - name: Учебники
   items:
     - name: Создание метаданных для изображений

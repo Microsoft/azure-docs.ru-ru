@@ -13,12 +13,12 @@ metadata:
   ms.topic: hub-page
   ms.date: 03/24/2020
   ms.author: trbye
-  ms.openlocfilehash: 8e97fe287335837ad79e6446bb7abf196cda6f75
-  ms.sourcegitcommit: b85ce02785edc13d7fb8eba29ea8027e614c52a2
+  ms.openlocfilehash: be3cbee5bee706bc10036349950c3b128d007a34
+  ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/03/2021
-  ms.locfileid: "99508122"
+  ms.lasthandoff: 03/13/2021
+  ms.locfileid: "103419632"
 highlightedContent:
   items:
   - title: Что собой представляет служба "Речь"
@@ -44,7 +44,7 @@ conceptualContent:
       text: Начало работы с преобразованием речи в текст
       url: get-started-speech-to-text.md
     - itemType: overview
-      text: Сведения о Пользовательском распознавании речи
+      text: Повышение точности с помощью пользовательского распознавания речи
       url: custom-speech-overview.md
     footerLink:
       text: Подробнее
@@ -60,6 +60,12 @@ conceptualContent:
     - itemType: how-to-guide
       text: Улучшение синтеза с помощью SSML
       url: speech-synthesis-markup.md
+    - itemType: overview
+      text: Создание пользовательского голоса
+      url: custom-neural-voice.md
+    - itemType: how-to-guide
+      text: Реализация естественного звучания при преобразовании текста в речь
+      url: how-to-audio-content-creation.md
     footerLink:
       text: Подробнее
       url: index-text-to-speech.yml
@@ -74,20 +80,6 @@ conceptualContent:
     footerLink:
       text: Подробнее
       url: index-speech-translation.yml
-  - title: Распознавание намерений
-    links:
-    - itemType: quickstart
-      text: Распознавание речи, намерений и сущностей
-      url: quickstarts/intent-recognition.md
-    - itemType: how-to-guide
-      text: Распознавание намерений в речи с помощью LUIS и C#
-      url: how-to-recognize-intents-from-speech-csharp.md
-    - itemType: reference
-      text: Портал службы "Распознавание речи" (LUIS)
-      url: https://www.luis.ai
-    footerLink:
-      text: Подробнее
-      url: index-intent-recognition.yml
   - title: API Распознавания говорящего
     links:
     - itemType: overview
@@ -107,6 +99,20 @@ conceptualContent:
     - itemType: quickstart
       text: Начало работы с Пользовательскими ключевыми словами
       url: custom-keyword-basics.md
+  - title: Распознавание намерений
+    links:
+    - itemType: quickstart
+      text: Распознавание речи, намерений и сущностей
+      url: quickstarts/intent-recognition.md
+    - itemType: how-to-guide
+      text: Распознавание намерений в речи с помощью LUIS и C#
+      url: how-to-recognize-intents-from-speech-csharp.md
+    - itemType: reference
+      text: Портал службы "Распознавание речи" (LUIS)
+      url: https://www.luis.ai
+    footerLink:
+      text: Подробнее
+      url: index-intent-recognition.yml
   - title: Подробный анализ сценария
     links:
     - itemType: overview

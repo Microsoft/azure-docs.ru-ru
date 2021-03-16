@@ -7,12 +7,12 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 11/03/2020
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 9f34e1ff7134788d064a82ec7b646df915dbe24e
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.openlocfilehash: 8ad79f2f27864b4fbc78b7c104828230ff7f93bc
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
-ms.locfileid: "103462564"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103465663"
 ---
 # <a name="azure-database-for-mysql-version-support-policy"></a>Политика поддержки версии базы данных Azure для MySQL
 
@@ -29,10 +29,11 @@ ms.locfileid: "103462564"
 
 | Версия | Одиночный сервер <br/> Текущая дополнительная версия |Гибкий сервер (предварительная версия) <br/> Текущая дополнительная версия  |
 |:-------------------|:-------------------------------------------|:---------------------------------------------|
-|MySQL версии 5.6 |  [5.6.47](https://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-47.html) | Не поддерживается|
+|MySQL версии 5.6 |  [5.6.47](https://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-47.html)(прекращено) | Не поддерживается|
 |MySQL версии 5.7 | [5.7.29](https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-29.html) | [5.7.29](https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-29.html)|
 |MySQL версии 8,0 | [8.0.15](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-15.html) | [8.0.21](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-21.html)|
 
+Дополнительные сведения о политике поддержки версий см [. в документации по политике поддержки версий.](concepts-version-policy.md#retired-mysql-engine-versions-not-supported-in-azure-database-for-mysql)
 
 ## <a name="major-version-support"></a>Поддержка основного номера версии
 Каждая основная версия MySQL будет поддерживаться базой данных Azure для MySQL в соответствии с датой, с которой Azure начинает поддерживать версию до тех пор, пока версия не будет удалена из сообщества MySQL, как указано в [политике управления версиями](https://www.mysql.com/support/eol-notice.html).

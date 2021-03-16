@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 07/27/2020
 ms.author: normesta
 ms.subservice: common
-ms.openlocfilehash: b94cb6d6302cd92816fe25f6e672b1ce3bb9398d
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.openlocfilehash: 34f54bb30e959ecc2fa27fba5ab7392b9eddc68e
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98792003"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103494518"
 ---
 # <a name="copy-data-from-amazon-s3-to-azure-storage-by-using-azcopy"></a>Копирование данных из Amazon S3 в службу хранилища Azure с помощью AzCopy
 
@@ -34,13 +34,13 @@ AzCopy — это служебная программа командной ст
 >
 > Если вы предпочитаете использовать маркер SAS для авторизации доступа к данным большого двоичного объекта, можно добавить этот маркер к URL-адресу ресурса в каждой команде AzCopy.
 >
-> Например: `https://mystorageaccount.blob.core.windows.net/mycontainer?<SAS-token>`.
+> Например, так: `https://mystorageaccount.blob.core.windows.net/mycontainer?<SAS-token>`.
 
 ### <a name="authorize-with-aws-s3"></a>Авторизация с помощью AWS S3
 
 Соберите ключ доступа AWS и секретный ключ доступа, а затем задайте следующие переменные среды:
 
-| Операционная система | Команда  |
+| Операционная система | Get-Help  |
 |--------|-----------|
 | **Windows** | `set AWS_ACCESS_KEY_ID=<access-key>`<br>`set AWS_SECRET_ACCESS_KEY=<secret-access-key>` |
 | **Linux** | `export AWS_ACCESS_KEY_ID=<access-key>`<br>`export AWS_SECRET_ACCESS_KEY=<secret-access-key>` |
@@ -70,7 +70,7 @@ AzCopy использует [блок размещения из API URL-адре
 >
 > Кроме того, можно использовать виртуальные URL-адреса в стиле (например: `http://bucket.s3.amazonaws.com` ). 
 >
-> Дополнительные сведения о виртуальном размещении сегментов см. в разделе [виртуальное размещение сегментов]] ( https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html) .
+> Дополнительные сведения о виртуальном размещении сегментов см. в статье [виртуальное размещение сегментов](https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html).
 
 ### <a name="copy-a-directory"></a>Копирование каталога
 
@@ -103,7 +103,7 @@ AzCopy использует [блок размещения из API URL-адре
 |--------|-----------|
 | **Синтаксис** | `azcopy copy 'https://s3.amazonaws.com/<bucket-name>' 'https://<storage-account-name>.blob.core.windows.net/<container-name>' --recursive=true` |
 | **Пример** | `azcopy copy 'https://s3.amazonaws.com/mybucket' 'https://mystorageaccount.blob.core.windows.net/mycontainer' --recursive=true` |
-| **Пример** (иерархическое пространство имен)| `azcopy copy 'https://s3.amazonaws.com/mybucket/mydirectory' 'https://mystorageaccount.blob.core.windows.net/mycontainer/mydirectory' --recursive=true` |
+| **Пример** (иерархическое пространство имен)| `azcopy copy 'https://s3.amazonaws.com/mybucket/mydirectory' 'https://mystorageaccount.blob.core.windows.net/mycontainer' --recursive=true` |
 
 ### <a name="copy-all-buckets-in-all-regions"></a>Копировать все контейнеры во всех регионах
 
@@ -113,7 +113,7 @@ AzCopy использует [блок размещения из API URL-адре
 |--------|-----------|
 | **Синтаксис** | `azcopy copy 'https://s3.amazonaws.com/' 'https://<storage-account-name>.blob.core.windows.net' --recursive=true` |
 | **Пример** | `azcopy copy 'https://s3.amazonaws.com' 'https://mystorageaccount.blob.core.windows.net' --recursive=true` |
-| **Пример** (иерархическое пространство имен)| `azcopy copy 'https://s3.amazonaws.com/mybucket/mydirectory' 'https://mystorageaccount.blob.core.windows.net/mycontainer/mydirectory' --recursive=true` |
+| **Пример** (иерархическое пространство имен)| `azcopy copy 'https://s3.amazonaws.com' 'https://mystorageaccount.blob.core.windows.net' --recursive=true` |
 
 ### <a name="copy-all-buckets-in-a-specific-s3-region"></a>Копирование всех контейнеров в заданном регионе S3
 
@@ -123,7 +123,7 @@ AzCopy использует [блок размещения из API URL-адре
 |--------|-----------|
 | **Синтаксис** | `azcopy copy 'https://s3-<region-name>.amazonaws.com/' 'https://<storage-account-name>.blob.core.windows.net' --recursive=true` |
 | **Пример** | `azcopy copy 'https://s3-rds.eu-north-1.amazonaws.com' 'https://mystorageaccount.blob.core.windows.net' --recursive=true` |
-| **Пример** (иерархическое пространство имен)| `azcopy copy 'https://s3.amazonaws.com/mybucket/mydirectory' 'https://mystorageaccount.blob.core.windows.net/mycontainer/mydirectory' --recursive=true` |
+| **Пример** (иерархическое пространство имен)| `azcopy copy 'https://s3.amazonaws.com/mybucket' 'https://mystorageaccount.blob.core.windows.net/mycontainer/mydirectory' --recursive=true` |
 
 ## <a name="handle-differences-in-object-naming-rules"></a>Обработку различий в правилах именования объектов
 
@@ -168,7 +168,5 @@ AzCopy выполняет следующие действия:
 - [Начало работы с AzCopy](storage-use-azcopy-v10.md)
 
 - [Передача данных](storage-use-azcopy-v10.md#transfer-data)
-
-- [Перенос данных с помощью AzCopy и хранилища файлов](storage-use-azcopy-files.md)
 
 - [Configure, optimize, and troubleshoot AzCopy](storage-use-azcopy-configure.md) (Настройка, оптимизация и устранение неполадок с AzCopy)

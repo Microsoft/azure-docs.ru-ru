@@ -7,14 +7,14 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: forms-recognizer
 ms.topic: conceptual
-ms.date: 05/19/2020
+ms.date: 03/15/2021
 ms.author: lajanuar
-ms.openlocfilehash: 6760194fea71cd97b4d206ccd2ccc281e18ea279
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.openlocfilehash: 47e145c5d96ba54b02f5453ff97d16dec302eabd
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103467055"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103493515"
 ---
 <!-- markdownlint-disable MD024 -->
 # <a name="whats-new-in-form-recognizer"></a>Новые возможности Распознавателя документов

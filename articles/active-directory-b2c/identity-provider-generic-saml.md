@@ -13,12 +13,12 @@ ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 357ea903ed4bbc87717dfefc1c542722f5bd40c0
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 9e47171fc20ba07823e73f71713307e3a0e37278
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102448410"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103488930"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-saml-identity-provider-using-azure-active-directory-b2c"></a>Настройка регистрации и входа с помощью поставщика удостоверений SAML с использованием Azure Active Directory B2C
 
@@ -205,15 +205,22 @@ Azure Active Directory B2C (Azure AD B2C) поддерживает федера�
 https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/<your-policy>/samlp/metadata?idptp=<your-technical-profile>
 ```
 
+При использовании [пользовательского домена](custom-domain.md)используйте следующий формат:
+
+```
+https://your-domain-name/<your-tenant-name>.onmicrosoft.com/<your-policy>/samlp/metadata?idptp=<your-technical-profile>
+```
+
 Измените следующие значения:
 
-- **ваш клиент** с именем клиента, например Your-tenant.onmicrosoft.com.
+- **имя** клиента с именем клиента, например Your-tenant.onmicrosoft.com.
+- **имя вашего домена** с именем пользовательского домена, например Login.contoso.com.
 - **your-policy** — именем собственной политики. Например, B2C_1A_signup_signin_adfs.
 - **ваш-технический профиль** с именем технического профиля поставщика удостоверений SAML. Например, Contoso-SAML2.
 
 Откройте браузер и перейдите по URL-адресу. Убедитесь, что ввели правильный URL-адрес и что имеете доступ к XML-файлу метаданных.
 
-## <a name="test-your-custom-policy"></a>Тестирование пользовательской политики
+## <a name="test-your-custom-policy"></a>Тестирование настраиваемой политики
 
 1. Войдите на [портал Azure](https://portal.azure.com).
 1. Выберите значок **Каталог и подписка** в верхней панели инструментов портала, а затем выберите каталог, содержащий клиент Azure AD B2C.
