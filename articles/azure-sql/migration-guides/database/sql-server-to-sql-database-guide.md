@@ -9,13 +9,13 @@ ms.topic: how-to
 author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
-ms.date: 11/06/2020
-ms.openlocfilehash: 2d43eda404a5257c0ec28a884b6ebf182330ba51
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.date: 03/19/2021
+ms.openlocfilehash: 9205301cb77941e4ea7ca026710d44ba82f6a937
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102488421"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563850"
 ---
 # <a name="migration-guide-sql-server-to-sql-database"></a>Руководство по миграции: SQL Server в базу данных SQL
 [!INCLUDE[appliesto--sqldb](../../includes/appliesto-sqldb.md)]
@@ -183,9 +183,6 @@ ms.locfileid: "102488421"
 1. **Настройка тестовой среды**. Тестовая среда должна содержать копию исходной и целевой баз данных. Не забудьте изолировать тестовую среду.
 1. **Выполнение проверочных тестов**. Выполните проверочные тесты для источника и целевого объекта, а затем проанализируйте результаты.
 1. **Выполнение тестов производительности**. Запустите тест производительности для источника и целевого объекта, а затем проанализируйте и сравните результаты.
-
-   > [!NOTE]
-   > Чтобы получить помощь в разработке и выполнении проверочных тестов, выполняемых после переноса, используйте решение по обеспечению качества данных, предоставляемое нашим партнером [QuerySurge](https://www.querysurge.com/company/partners/microsoft). 
 
 
 ## <a name="leverage-advanced-features"></a>Использование дополнительных функций 

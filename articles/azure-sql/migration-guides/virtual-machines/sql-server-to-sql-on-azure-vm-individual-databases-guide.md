@@ -1,6 +1,6 @@
 ---
-title: SQL Server SQL Server на виртуальных машинах Azure (руководством по миграции)
-description: Следуйте этому руководству, чтобы перенести отдельные базы данных SQL Server в SQL Server на виртуальных машинах Azure.
+title: 'SQL Server SQL Server на виртуальных машинах Azure: руководство по миграции'
+description: В этом руководстве описывается перенос отдельных баз данных SQL Server в SQL Server на виртуальных машинах Azure.
 ms.custom: ''
 ms.service: virtual-machines-sql
 ms.subservice: migration-guide
@@ -9,13 +9,13 @@ ms.topic: how-to
 author: markjones-msft
 ms.author: markjon
 ms.reviewer: mathoma
-ms.date: 11/06/2020
-ms.openlocfilehash: d95da29b732e2d520b3413628c9b4a1c403abed6
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.date: 03/19/2021
+ms.openlocfilehash: 0e1b44667a5ff42978b22ab9450d6a8e9870960b
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102488264"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563221"
 ---
 # <a name="migration-guide-sql-server-to-sql-server-on-azure-vms"></a>Руководство по миграции. Перенос данных из SQL Server в SQL Server на виртуальных машинах Azure 
 [!INCLUDE[appliesto--sqlmi](../../includes/appliesto-sqlvm.md)]
@@ -152,7 +152,7 @@ ms.locfileid: "102488264"
 В следующей таблице перечислены компоненты и рекомендуемые методы миграции, которые можно выполнить до или после миграции пользовательских баз данных. 
 
 
-| **Возможность** | **Компонент** | **Методы миграции** |
+| **Компонент** | **Компонент** | **Методы миграции** |
 | --- | --- | --- |
 | **Базы данных** | Моделирование  | Скрипт с SQL Server Management Studio |
 || Базе | Запланируйте перемещение базы данных TempDB на [временный диск виртуальной машины Azure (SSD](../../virtual-machines/windows/performance-guidelines-best-practices.md#temporary-disk)) для лучшей производительности. Не забудьте выбрать размер виртуальной машины, имеющей достаточный локальный SSD для размещения базы данных TempDB. |
@@ -195,7 +195,7 @@ ms.locfileid: "102488264"
 
 > [!TIP]
 > Используйте [Database experimentation Assistant (ДЕА)](/sql/dea/database-experimentation-assistant-overview) , чтобы помочь в оценке производительности целевого SQL Server.
->
+
 
 ### <a name="optimize"></a>Оптимизация
 

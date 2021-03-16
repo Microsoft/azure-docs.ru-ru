@@ -10,12 +10,12 @@ ms.author: migreene
 ms.date: 08/08/2019
 ms.topic: conceptual
 manager: carmonm
-ms.openlocfilehash: 8c834caa2285135b7d39c440489b42c366418042
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 5833308f03d328d988ac818d83ff5ee618a4c79c
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "86186475"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563578"
 ---
 # <a name="convert-configurations-to-composite-resources"></a>Преобразование конфигураций в составные ресурсы
 
@@ -49,7 +49,7 @@ CompositeResource автоматизирует процесс создания �
 
 Когда создание модуля завершится, увеличьте номер версии и добавьте заметки о выпуске. Это нужно делать каждый раз после внесения изменений и до публикации модуля в [репозиторий PowerShellGet](https://powershellexplained.com/2018-03-03-Powershell-Using-a-NuGet-server-for-a-PSRepository/?utm_source=blog&utm_medium=blog&utm_content=psscriptrepo).
 
-Создав готовый модуль составного ресурса с нужной конфигурацией (или с несколькими конфигурациями), вы сможете применить его в [интерфейсе составного создания](./compose-configurationwithcompositeresources.md) в Azure или добавить в [скрипты конфигурации DSC](/powershell/scripting/dsc/configurations/configurations) для получения MOF-файлов, которые вы затем [отправите в службу автоматизации Azure](./tutorial-configure-servers-desired-state.md#create-and-upload-a-configuration-to-azure-automation).
+После создания составного модуля ресурсов, содержащего конфигурацию (или несколько конфигураций), вы можете использовать их в [интерфейсе разработки](./compose-configurationwithcompositeresources.md) с поддержкой наборов символов в Azure или добавить их в [скрипты конфигурации DSC](/powershell/scripting/dsc/configurations/configurations) для создания MOF-файлов и [передачи MOF-файлов в службу автоматизации Azure](./tutorial-configure-servers-desired-state.md#create-and-upload-a-configuration-to-azure-automation).
 Затем зарегистрируйте серверы [локально](./automation-dsc-onboarding.md#enable-physicalvirtual-linux-machines) или [в Azure](./automation-dsc-onboarding.md#enable-azure-vms) для получения конфигураций.
 В последнем обновлении этого проекта предоставляются опубликованные [runbook](https://www.powershellgallery.com/packages?q=DscGallerySamples) для службы автоматизации Azure, которые позволяют автоматизировать процесс импорта конфигураций из коллекции PowerShell.
 
@@ -57,6 +57,6 @@ CompositeResource автоматизирует процесс создания �
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Дополнительные сведения о DSC для PowerShell см. в статье [Общие сведения о службе настройки требуемого состояния Windows PowerShell](/powershell/scripting/dsc/overview/overview).
-- Сведения о ресурсах для PowerShell DSC см. в статье [Ресурсы DSC](/powershell/scripting/dsc/resources/resources).
-- Дополнительные сведения см. в статье [Настройка локального диспетчера конфигураций](/powershell/scripting/dsc/managing-nodes/metaconfig).
+- Дополнительные сведения о DSC для PowerShell см. в статье [Общие сведения о Desired State Configuration Windows PowerShell](/powershell/scripting/dsc/overview/overview).
+- Изучите [ресурсы](/powershell/scripting/dsc/resources/resources), предоставляемые для PowerShell DSC.
+- Дополнительные сведения о конфигурации Local Configuration Manager см. в статье [Настройка локального диспетчера конфигураций](/powershell/scripting/dsc/managing-nodes/metaconfig).

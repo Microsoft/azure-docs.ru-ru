@@ -2,13 +2,13 @@
 title: Добавление сегмента сети NSX-T
 description: Инструкции по добавлению сегмента сети NSX-T в Решении Azure VMware.
 ms.topic: include
-ms.date: 11/09/2020
-ms.openlocfilehash: 7db45650588d37c39e7d156fa189b3ff7da2239f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/13/2021
+ms.openlocfilehash: 14d698413d31af2dcbbdea5f37ec7f24f65199ad
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "100514979"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103462136"
 ---
 <!-- Used in manage-dhcp.md and tutorial-nsx-t-network-segment.md -->
 
@@ -16,7 +16,7 @@ ms.locfileid: "100514979"
 
    :::image type="content" source="../media/nsxt/nsxt-segments-overview.png" alt-text="Снимок экрана, на котором показано, как добавить новый сегмент":::
 
-1. Выберите **Добавить сегмент** и введите его имя.
+1. Введите имя сегмента.
 
 1. Выберите шлюз уровня 1 (TNTxx-T1) в качестве **подключенного шлюза** и оставьте значение Flexible (Гибкий) в поле **Type** (Тип).
 

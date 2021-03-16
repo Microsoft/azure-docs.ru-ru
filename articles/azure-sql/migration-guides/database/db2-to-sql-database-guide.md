@@ -1,6 +1,6 @@
 ---
 title: 'Из DB2 в базу данных SQL: руководство по миграции'
-description: Следуйте этому руководству, чтобы перенести базы данных DB2 в базу данных SQL Azure.
+description: В этом руководстве описывается перенос баз данных DB2 в базу данных SQL Azure с помощью Помощник по миграции SQL Server для DB2 (SSMA для DB2).
 ms.service: sql-database
 ms.subservice: migration-guide
 ms.custom: ''
@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: 3e216c4aeb8d1206011ff9cca2d80900c23b2399
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.openlocfilehash: 917390b43a772cbb9374c560fc3a65cfa7278839
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97356350"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563952"
 ---
 # <a name="migration-guide-db2-to-sql-database"></a>Руководство по миграции: DB2 в базу данных SQL
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqldb.md)]
@@ -142,9 +142,6 @@ ms.locfileid: "97356350"
 1. **Настройка тестовой среды**. Тестовая среда должна содержать копию исходной и целевой баз данных. Не забудьте изолировать тестовую среду.
 1. **Выполнение проверочных тестов**. Выполните проверочные тесты для источника и целевого объекта, а затем проанализируйте результаты.
 1. **Выполнение тестов производительности**. Запустите тест производительности для источника и целевого объекта, а затем проанализируйте и сравните результаты.
-
-   > [!NOTE]
-   > Чтобы получить помощь в разработке и выполнении проверочных тестов, выполняемых после переноса, используйте решение по обеспечению качества данных, предоставляемое нашим партнером [QuerySurge](https://www.querysurge.com/company/partners/microsoft). 
 
 
 ## <a name="leverage-advanced-features"></a>Использование дополнительных функций 

@@ -1,6 +1,6 @@
 ---
-title: SQL Server DB2 на виртуальные машины Azure (руководством по миграции)
-description: Следуйте этому руководству, чтобы перенести сервер DB2 на SQL Server на виртуальных машинах Azure.
+title: 'DB2 для SQL Server на виртуальных машинах Azure: руководство по миграции'
+description: В этом руководстве описывается миграция базы данных DB2 в SQL Server на виртуальных машинах Azure с помощью Помощник по миграции SQL Server для DB2.
 ms.custom: ''
 ms.service: virtual-machines-sql
 ms.subservice: migration-guide
@@ -10,12 +10,12 @@ author: markjones-msft
 ms.author: markjon
 ms.reviewer: mathoma
 ms.date: 11/06/2020
-ms.openlocfilehash: c3f3af6a1c114d6587992f79e95dcc0c1ccb41e6
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.openlocfilehash: aadfd2d96e2ed610ee1e3eaaec9276212e912b0d
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98797475"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103562235"
 ---
 # <a name="migration-guide-db2-to-sql-server-on-azure-vms"></a>Руководство по миграции: DB2 для SQL Server на виртуальных машинах Azure
 [!INCLUDE[appliesto--sqlmi](../../includes/appliesto-sqlvm.md)]
@@ -144,8 +144,6 @@ ms.locfileid: "98797475"
 1. **Выполнение проверочных тестов**. Выполните проверочные тесты для источника и целевого объекта, а затем проанализируйте результаты.
 1. **Выполнение тестов производительности**. Запустите тест производительности для источника и целевого объекта, а затем проанализируйте и сравните результаты.
 
-   > [!NOTE]
-   > Чтобы получить помощь в разработке и выполнении проверочных тестов, выполняемых после переноса, используйте решение по обеспечению качества данных, предоставляемое нашим партнером [QuerySurge](https://www.querysurge.com/company/partners/microsoft). 
 
 ## <a name="migration-assets"></a>Ресурсы, посвященные миграции 
 
@@ -169,5 +167,4 @@ ms.locfileid: "98797475"
 Другие руководства по миграции см. в разделе [Перенос базы данных](https://datamigration.microsoft.com/). 
 
 Видеоматериалы см. в следующих статьях:
-- [Работа с руководством по переносу баз данных](https://azure.microsoft.com/resources/videos/how-to-use-the-azure-database-migration-guide/)
 - [Обзор процесса миграции](https://azure.microsoft.com/resources/videos/overview-of-migration-and-recommended-tools-services/)

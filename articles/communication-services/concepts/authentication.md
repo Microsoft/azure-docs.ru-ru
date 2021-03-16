@@ -2,19 +2,19 @@
 title: Аутентификация в службах связи Azure
 titleSuffix: An Azure Communication Services concept document
 description: Узнайте о различных способах проверки подлинности приложения или службы в службах связи.
-author: GrantMeStrength
+author: mikben
 manager: jken
 services: azure-communication-services
-ms.author: jken
-ms.date: 07/24/2020
+ms.author: mikben
+ms.date: 03/10/2021
 ms.topic: conceptual
 ms.service: azure-communication-services
-ms.openlocfilehash: b702afe9c4359d9f8711846d93fd79df9fc2f42e
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: b3cd0643a74ccadb8390ce906eb391420de15a29
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102485967"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103490795"
 ---
 # <a name="authenticate-to-azure-communication-services"></a>Аутентификация в службах связи Azure
 

@@ -11,12 +11,12 @@ ms.subservice: core
 ms.date: 09/29/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python,contperf-fy21q1, automl
-ms.openlocfilehash: e8e904511178f494890b25764a84df8ca64a6b6c
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 24c0d57490ecd039039992310f93ca3e21c47b3b
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102498869"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563493"
 ---
 # <a name="configure-automated-ml-experiments-in-python"></a>Настройка экспериментов автоматизированного машинного обучения на Python
 
@@ -342,7 +342,7 @@ automl_classifier = AutoMLConfig(
 
 Существует несколько параметров, которые можно определить в Аутомлконфиг, чтобы завершить эксперимент.
 
-|Критерии| description
+|Критерии| описание
 |----|----
 Без &nbsp; критериев | Если вы не определили никаких параметров выхода, эксперимент будет продолжен до тех пор, пока не будет выполнен дальнейший переход к основной метрике.
 После &nbsp; &nbsp; длительного &nbsp; &nbsp; времени| Используйте `experiment_timeout_minutes` в параметрах, чтобы определить время, в течение которого ваш эксперимент должен продолжать выполняться. <br><br> Чтобы избежать сбоев при экспериментах, не менее 15 минут или 60 минут, если строка по размеру столбца превышает 10 000 000.
@@ -396,9 +396,29 @@ run = experiment.submit(automl_config, show_output=True)
 > Алгоритмы, применяемые автоматизированным МАШИНным шифрованием, имеют случайное значение, что может привести к незначительной вариации в окончательной оценке метрик в рекомендуемой модели, такой как точность. При необходимости автоматизированное ML выполняет операции с данными, такими как разбиение по учению и проверке, разбиение на действия по обучению или перекрестная проверка. Поэтому, если вы запускаете эксперимент с теми же параметрами конфигурации и основной метрикой несколько раз, вы, вероятно, увидите вариант в последних метриках каждого эксперимента в соответствии с этими факторами. 
 
 ## <a name="register-and-deploy-models"></a>Регистрация и развертывание моделей
+Вы можете зарегистрировать модель, чтобы вернуться к ней для последующего использования. 
 
-Дополнительные сведения о загрузке или регистрации модели для развертывания в веб-службе см. в статье [как и где развертывать модель](how-to-deploy-and-where.md).
+Чтобы зарегистрировать модель из автоматического запуска ML, используйте [`register_model()`](/python/api/azureml-train-automl-client/azureml.train.automl.run.automlrun#register-model-model-name-none--description-none--tags-none--iteration-none--metric-none-) метод. 
 
+```Python
+
+best_run, fitted_model = run.get_output()
+print(fitted_model.steps)
+
+model_name = best_run.properties['model_name']
+description = 'AutoML forecast example'
+tags = None
+
+model = remote_run.register_model(model_name = model_name, 
+                                  description = description, 
+                                  tags = tags)
+```
+
+
+Дополнительные сведения о создании конфигурации развертывания и развертывании зарегистрированной модели в веб-службе см. в разделе [как и где развертывается модель](how-to-deploy-and-where.md?tabs=python#define-a-deployment-configuration).
+
+> [!TIP]
+> Для зарегистрированных моделей развертывание одним щелчком доступно через [машинное обучение Azure Studio](https://ml.azure.com). См. статью [развертывание зарегистрированных моделей из студии](how-to-use-automated-ml-for-ml-models.md#deploy-your-model). 
 <a name="explain"></a>
 
 ## <a name="model-interpretability"></a>Интерпретируемость модели

@@ -8,14 +8,16 @@ ms.date: 02/11/2021
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: edca5a278414288ceb3c3d13f5d49e723e0ee5c2
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: a3656d6dd81132a7fd10103fc0199d55d9288df3
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102615930"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103489617"
 ---
 # <a name="azure-iot-edge-supported-systems"></a>Поддерживаемые Azure IoT Edge системы
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 В этой статье приведены сведения о системах и компонентах, поддерживаемых IoT Edge официально или в предварительной версии.
 
@@ -71,7 +73,7 @@ Azure IoT Edge поддерживает модули, созданные как 
 | Растяжение ОС Raspberry Pi |  | ![Растягивание ОС Raspberry Pi + ARM32v7](./media/tutorial-c-module/green-check.png) |  |
 | Ubuntu Server 18.04 | ![Ubuntu Server 18.04 + AMD64](./media/tutorial-c-module/green-check.png) |  | Общедоступная предварительная версия |
 | Windows 10 Pro | Общедоступная предварительная версия |  |  |
-| Windows 10 Корпоративная | Общедоступная предварительная версия |  |  |
+| Windows 10 Корпоративная | Общедоступная предварительная версия |  |  |
 | Windows 10 IoT Корпоративная | Общедоступная предварительная версия |  |  |
 | Windows Server 2019 | Общедоступная предварительная версия |  |  |
 

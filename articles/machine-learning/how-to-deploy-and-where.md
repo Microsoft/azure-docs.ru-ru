@@ -12,12 +12,12 @@ ms.date: 01/13/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, deploy, devx-track-azurecli
 adobe-target: true
-ms.openlocfilehash: fa68db4bd166ebe1acd1ae85fca2d7e51236a4c4
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: ed397e9f8db721a6baa641fc958af0dda570ce57
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102522059"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103561946"
 ---
 # <a name="deploy-machine-learning-models-to-azure"></a>Развертывание моделей машинного обучения в Azure
 
@@ -145,6 +145,7 @@ az ml model register -n onnx_mnist -p mnist/model.onnx
 
     Дополнительные сведения см. в документации по [AutoMLRun.register_model](/python/api/azureml-train-automl-client/azureml.train.automl.run.automlrun#register-model-model-name-none--description-none--tags-none--iteration-none--metric-none-) .
 
+    Чтобы развернуть зарегистрированную модель из `AutoMLRun` , мы рекомендуем сделать это с помощью [кнопки развертывания одним щелчком в студии машинного обучения Azure](how-to-use-automated-ml-for-ml-models.md#deploy-your-model). 
 ### <a name="register-a-model-from-a-local-file"></a>Регистрация модели из локального файла
 
 Вы можете зарегистрировать модель, указав локальный путь к модели. Можно указать путь либо к папке, либо к одному файлу. С помощью этого метода можно регистрировать модели, обученные Машинное обучение Azure, а затем загружать их. Этот метод также можно использовать для регистрации моделей, обученных за пределами Машинное обучение Azure.
@@ -368,6 +369,7 @@ print(service.state)
 * [Создание клиентских приложений для использования веб-служб](how-to-consume-web-service.md)
 * [Обновление веб-службы](how-to-deploy-update-web-service.md)
 * [Развертывание модели с помощью пользовательского образа DOCKER](how-to-deploy-custom-docker-image.md)
+* [Развертывание с помощью автоматического запуска машинного обучения в Машинное обучение Azure Studio](how-to-use-automated-ml-for-ml-models.md#deploy-your-model)
 * [Использование TLS для защиты веб-службы с помощью Машинного обучения Azure](how-to-secure-web-service.md).
 * [Мониторинг моделей Машинное обучение Azure с помощью Application Insights](how-to-enable-app-insights.md)
 * [Сбор данных для моделей в рабочей среде](how-to-enable-data-collection.md)

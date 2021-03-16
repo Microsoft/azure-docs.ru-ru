@@ -10,12 +10,12 @@ ms.date: 02/17/2021
 ms.author: normesta
 ms.reviewer: prishet
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 9814dc06e7e570a923ba3ea5b3b0df7ade99bb28
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.openlocfilehash: 5ec7d2b243a5eadab2d22dea14ebeac8eabb1722
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "100654488"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563170"
 ---
 # <a name="use-azure-cli-to-manage-acls-in-azure-data-lake-storage-gen2"></a>Использование Azure CLI для управления списками ACL в Azure Data Lake Storage 2-го поколения
 
@@ -31,7 +31,7 @@ ms.locfileid: "100654488"
 
 - Учетная запись хранения с включенным иерархическим пространством имен. Выполните [эти](create-data-lake-storage-account.md) инструкции, чтобы создать учетную запись.
 
-- Azure CLI версии`2.6.0` или выше.
+- Azure CLI версии`2.14.0` или выше.
 
 - Одно из следующих разрешений безопасности:
 
@@ -137,6 +137,9 @@ az storage fs access set --acl "default:user::rw-,group::rw-,other::-wx" -p my-d
 az storage fs access set --acl "user::rw-,group::rw-,other::-wx" -p my-directory/upload.txt -f my-file-system --account-name mystorageaccount --auth-mode login
 ```
 
+> [!NOTE]
+> Чтобы задать список управления доступом для определенной группы или пользователя, используйте соответствующие идентификаторы объектов. Например, `group:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` или `user:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.
+
 На следующем изображении показаны выходные данные после установки списка ACL для файла.
 
 ![Получить выходные данные ACL 2](./media/data-lake-storage-directory-file-acl-cli/set-acl-file.png)
@@ -184,6 +187,9 @@ az storage fs access set --permissions rwxrwxrwx -p my-directory -f my-file-syst
 ```azurecli
 az storage fs access set --permissions rwxrwxrwx -p my-directory/upload.txt -f my-file-system --account-name mystorageaccount --auth-mode login
 ```
+
+> [!NOTE]
+> Чтобы обновить список управления доступом для определенной группы или пользователя, используйте соответствующие идентификаторы объектов. Например, `group:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` или `user:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.
 
 Вы также можете сделать обновление для владельца и группы каталога или файла, установив параметры `--owner` или `group` для пользовательского имени субъекта-пользователя или идентификатора сущности.
 
@@ -248,7 +254,7 @@ az storage fs access set-recursive --acl "user::rw-,group::r-x,other::---" --con
 
 [!INCLUDE [updated-for-az](../../../includes/recursive-acl-best-practices.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Примеры](https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/docs/ADLS%20Gen2.md)
 - [Отправка отзывов](https://github.com/Azure/azure-cli-extensions/issues)

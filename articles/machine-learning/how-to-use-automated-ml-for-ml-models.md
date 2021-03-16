@@ -11,12 +11,12 @@ ms.reviewer: nibaccam
 ms.date: 12/20/2020
 ms.topic: conceptual
 ms.custom: how-to, automl
-ms.openlocfilehash: a91a4f3a2e686c8d502093dc41520df32b313209
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 2e06375441d6540d6630cfe9d4d8c3beec558879
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102520645"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103562728"
 ---
 # <a name="create-review-and-deploy-automated-machine-learning-models-with-azure-machine-learning"></a>Создание, проверка и развертывание моделей автоматизированного машинного обучения с помощью Машинного обучения Azure
 
@@ -37,7 +37,7 @@ ms.locfileid: "102520645"
 
 ## <a name="get-started"></a>Начало работы
 
-1. Войдите в Машинное обучение Azure по адресу https://ml.azure.com. 
+1. Войдите в [Студию машинного обучения Azure](https://ml.azure.com). 
 
 1. Выберите подписку и рабочую область. 
 
@@ -198,6 +198,11 @@ ms.locfileid: "102520645"
 ## <a name="deploy-your-model"></a>Развертывание модели
 
 Теперь, когда у вас есть лучшая модель, можно развернуть ее как веб-службу для прогнозирования новых данных.
+
+>[!TIP]
+> Если вы хотите развернуть модель, созданную `automl` с помощью пакета, с пакетом SDK для Python, необходимо [зарегистрировать модель](how-to-deploy-and-where.md?tabs=python#register-a-model-from-an-azure-ml-training-run-1) в рабочей области. 
+>
+> После регистрации модели найдите ее в студии, выбрав **модели** на левой панели. После открытия модели можно нажать кнопку **развернуть** в верхней части экрана, а затем выполнить инструкции, описанные в **шаге 2** раздела **развертывание модели** .
 
 Автоматизированное машинное обучение позволяет с легкостью развернуть модель без написания кода.
 

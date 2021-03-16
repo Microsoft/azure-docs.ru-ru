@@ -11,12 +11,12 @@ ms.workload: na
 ms.topic: article
 ms.date: 10/21/2020
 ms.author: inhenkel
-ms.openlocfilehash: 5a36b5c8b0c8f24d093d887ad788c4ce9857d355
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: d7cfb4cf9b6b061f5fb53667e968cb0403f22bfc
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/16/2021
-ms.locfileid: "103492682"
+ms.locfileid: "103562575"
 ---
 # <a name="azure-media-services-v3-release-notes"></a>Заметки о выпуске Служб мультимедиа Azure версии 3
 
@@ -27,9 +27,34 @@ ms.locfileid: "103492682"
 * Последние выпуски.
 * Известные проблемы
 * Исправления ошибок
-* Нерекомендуемые функции.
+* Нерекомендуемые функции
 
-## <a name="known-issues"></a>Известные проблемы
+## <a name="march-2021"></a>Март 2021 г.
+
+### <a name="new-language-support-added-to-the-audioanalyzer-preset"></a>Добавлена поддержка нового языка в предустановку Аудиоанализер
+
+Дополнительные языки для записи видео и подзаголовочных данных теперь доступны в предаудиоанализерной предустановке (режимах "базовый" и "Стандартный").
+
+* Английский (Австралия), en-AU
+* Французский (Канада), fr-CA
+* Арабский (Бахрейн) современный Standard, "AR-BH"
+* Арабский (Египет), "ar-EG"
+* Арабский (Ирак), "AR-IQ"
+* Арабский (Израиль), "AR-IL"
+* Арабский (Иордания), "AR-Петр"
+* Арабский (Кувейт), "AR-кВт *"
+* Арабский (Ливан), "AR-фунтов"
+* Арабский (Оман), "AR-OM"
+* Арабский (Катар), "AR-QA"
+* Арабский (Саудовская Аравия), "AR-SA"
+* Датский, "da-DK"
+* Норвежский, "NetBIOS-нет"
+* Шведский, "SV-SE"
+* Финский, "Fi-FI"
+* Тайский, "th-TH"
+* Турецкий, tr-TR
+
+Ознакомьтесь с последними доступными языками в [статье анализ концепции видео и звуковых файлов.](analyzing-video-audio-files-concept.md)
 
 ## <a name="february-2021"></a>Февраль 2021 года
 

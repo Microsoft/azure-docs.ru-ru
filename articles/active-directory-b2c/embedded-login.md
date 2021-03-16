@@ -8,15 +8,15 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/15/2021
+ms.date: 03/16/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 526d8bfa0124fba75eb33518acd83169ff020698
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: fd4724fc19814a5ffd35380c0b326e035a340ef2
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/16/2021
-ms.locfileid: "103555435"
+ms.locfileid: "103561521"
 ---
 # <a name="embedded-sign-in-experience"></a>Встроенные возможности входа в систему
 
@@ -31,7 +31,7 @@ ms.locfileid: "103555435"
 При использовании iframe учитывайте следующее.
 
 - Встроенный вход поддерживает только локальные учетные записи. Большинство поставщиков удостоверений социальных сетей (например, Google и Facebook) блокируют страницы входа из подставляемых кадров.
-- Так как файлы cookie сеанса Azure AD B2C в IFRAME считаются сторонними файлами cookie, некоторые браузеры (например, Safari или Chrome в режиме режиме инкогнито) блокируют или удаляют эти файлы cookie, что приводит к нежелательным последствиям для пользователя. Чтобы избежать этой проблемы, убедитесь, что имя домена приложения и домен Azure AD B2C имеют *один и тот же источник*. Например, размещенное в приложении Приложение https://app.contoso.com имеет тот же источник, что и Azure AD B2C, на котором работает https://login.contoso.com .
+- Так как файлы cookie сеанса Azure AD B2C в IFRAME считаются сторонними файлами cookie, некоторые браузеры (например, Safari или Chrome в режиме режиме инкогнито) блокируют или удаляют эти файлы cookie, что приводит к нежелательным последствиям для пользователя. Чтобы избежать этой проблемы, убедитесь, что имя домена приложения и домен Azure AD B2C имеют *один и тот же источник*. Чтобы использовать тот же источник, [включите личные домены](custom-domain.md) для Azure AD B2C клиента, а затем настройте веб-приложение с тем же источником. Например, размещенное в приложении Приложение https://app.contoso.com имеет тот же источник, что и Azure AD B2C, на котором работает https://login.contoso.com .
  
 ## <a name="configure-your-policy"></a>Настройка политики
 

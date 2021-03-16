@@ -4,14 +4,14 @@ description: Сведения об общих командах для автом
 author: TheovanKraay
 ms.service: managed-instance-apache-cassandra
 ms.topic: how-to
-ms.date: 03/02/2021
+ms.date: 03/15/2021
 ms.author: thvankra
-ms.openlocfilehash: 68b1ca625b5c8bd7ec195b89de63485c542e6691
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.openlocfilehash: 3e44625d23a302c58ea065a4fc3ecec5605e60b9
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103419079"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103564530"
 ---
 # <a name="manage-azure-managed-instance-for-apache-cassandra-resources-using-azure-cli-preview"></a>Управление Управляемый экземпляр Azure для ресурсов Apache Cassandra с помощью Azure CLI (Предварительная версия)
 
@@ -25,7 +25,7 @@ ms.locfileid: "103419079"
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
 > [!IMPORTANT]
-> Для работы с этой статьей потребуется Azure CLI 2.12.1 или более поздней версии. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
+> Для работы с этой статьей требуется Azure CLI версии 2.17.1 или выше. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 >
 > Управление Управляемый экземпляр Azure для ресурсов Apache Cassandra невозможно переименовать, так как это нарушает работу Azure Resource Manager с URI ресурсов.
 
@@ -42,7 +42,7 @@ ms.locfileid: "103419079"
 
 ### <a name="create-a-managed-instance-cluster"></a><a id="create-cluster"></a>Создание кластера с управляемым экземпляром
 
-Создайте Управляемый экземпляр Azure для кластера Apache Cassandra:
+Создайте Управляемый экземпляр Azure для кластера Apache Cassandra с помощью команды [AZ Managed-Cassandra Cluster Create](/cli/azure/ext/cosmosdb-preview/managed-cassandra/cluster?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_cluster_create) .
 
 ```azurecli-interactive
 resourceGroupName='MyResourceGroup'
@@ -65,7 +65,7 @@ az managed-cassandra cluster create \
 
 ### <a name="delete-a-managed-instance-cluster"></a><a id="delete-cluster"></a>Удаление кластера управляемых экземпляров
 
-Удаление кластера:
+Удалите кластер с помощью команды [AZ Managed-Cassandra кластера Delete](/cli/azure/ext/cosmosdb-preview/managed-cassandra/cluster?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_cluster_delete) :
 
 ```azurecli-interactive
 resourceGroupName='MyResourceGroup'
@@ -78,7 +78,7 @@ az managed-cassandra cluster delete \
 
 ### <a name="get-the-cluster-details"></a><a id="get-cluster-details"></a>Получение сведений о кластере
 
-Получить сведения о кластере:
+Получите сведения о кластере с помощью команды [AZ Managed-Cassandra Cluster](/cli/azure/ext/cosmosdb-preview/managed-cassandra/cluster?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_cluster_show) .
 
 ```azurecli-interactive
 resourceGroupName='MyResourceGroup'
@@ -91,7 +91,7 @@ az managed-cassandra cluster show \
 
 ### <a name="get-the-cluster-node-status"></a><a id="get-cluster-status"></a>Получение состояния узла кластера
 
-Получить сведения о кластере:
+Получите сведения о кластере с помощью команды [AZ Managed-Cassandra кластера-Status](/cli/azure/ext/cosmosdb-preview/managed-cassandra/cluster?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_cluster_node_status) :
 
 ```azurecli-interactive
 clusterName='cassandra-hybrid-cluster'
@@ -104,7 +104,7 @@ az managed-cassandra cluster node-status \
 
 ### <a name="list-the-clusters-by-resource-group"></a><a id="list-clusters-resource-group"></a>Список кластеров по группе ресурсов
 
-Список кластеров по группе ресурсов:
+Выведите список кластеров по группе ресурсов с помощью команды [AZ Managed-Cassandra Cluster List](/cli/azure/ext/cosmosdb-preview/managed-cassandra/cluster?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_cluster_list) :
 
 ```azurecli-interactive
 subscriptionId='MySubscriptionId'
@@ -116,7 +116,7 @@ az managed-cassandra cluster list\
 
 ### <a name="list-clusters-by-subscription-id"></a><a id="list-clusters-subscription"></a>Список кластеров по ИДЕНТИФИКАТОРу подписки
 
-Список кластеров по ИДЕНТИФИКАТОРу подписки:
+Вычислите кластеры по ИДЕНТИФИКАТОРу подписки с помощью команды [AZ Managed-Cassandra Cluster List](/cli/azure/ext/cosmosdb-preview/managed-cassandra?view=azure-cli-latest&preserve-view=true) :
 
 ```azurecli-interactive
 # set your subscription id
@@ -137,7 +137,7 @@ az managed-cassandra cluster list
 
 ### <a name="create-a-datacenter"></a><a id="create-datacenter"></a>Создание центра обработки данных
 
-Создайте центр обработки данных:
+Создайте центр обработки данных с помощью команды [AZ Managed-Cassandra Datacenter Create](/cli/azure/ext/cosmosdb-preview/managed-cassandra/datacenter?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_datacenter_create) :
 
 ```azurecli-interactive
 resourceGroupName='MyResourceGroup'
@@ -157,7 +157,7 @@ az managed-cassandra datacenter create \
 
 ### <a name="delete-a-datacenter"></a><a id="delete-datacenter"></a>Удаление центра обработки данных
 
-Удаление центра обработки данных:
+Удалите центр обработки данных с помощью команды [AZ Managed-Cassandra Datacenter Delete](/cli/azure/ext/cosmosdb-preview/managed-cassandra/datacenter?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_datacenter_delete) :
 
 ```azurecli-interactive
 resourceGroupName='MyResourceGroup'
@@ -172,7 +172,7 @@ az managed-cassandra datacenter delete \
 
 ### <a name="get-datacenter-details"></a><a id="get-datacenter-details"></a>Получение сведений о центре обработки данных
 
-Получить сведения о центре обработки данных:
+Получите сведения о центре обработки данных с помощью команды [AZ Managed-Cassandra Datacenter демонстрация](/cli/azure/ext/cosmosdb-preview/managed-cassandra/datacenter?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_datacenter_show) .
 
 ```azurecli-interactive
 resourceGroupName='MyResourceGroup'
@@ -187,7 +187,7 @@ az managed-cassandra datacenter show \
 
 ### <a name="update-or-scale-a-datacenter"></a><a id="update-datacenter"></a>Обновление или масштабирование центра обработки данных
 
-Обновление или масштабирование центра обработки данных (для масштабирования значения nodeCount изменения):
+Обновите или масштабируйте центр обработки данных (для масштабирования значения nodeCount изменения) с помощью команды [AZ Managed-Cassandra Datacenter Update](/cli/azure/ext/cosmosdb-preview/managed-cassandra/datacenter?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_datacenter_update) :
 
 ```azurecli-interactive
 resourceGroupName='MyResourceGroup'
@@ -205,7 +205,7 @@ az managed-cassandra datacenter update \
 
 ### <a name="get-the-datacenters-in-a-cluster"></a><a id="get-datacenters-cluster"></a>Получение центров обработки данных в кластере
 
-Получение центров обработки данных в кластере:
+Получение центров обработки данных в кластере с помощью команды [AZ Managed-Cassandra Datacenter List](/cli/azure/ext/cosmosdb-preview/managed-cassandra/datacenter?view=azure-cli-latest&preserve-view=true#ext_cosmosdb_preview_az_managed_cassandra_datacenter_list) .
 
 ```azurecli-interactive
 resourceGroupName='MyResourceGroup'

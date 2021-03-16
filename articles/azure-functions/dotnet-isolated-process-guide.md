@@ -5,12 +5,12 @@ ms.service: azure-functions
 ms.topic: conceptual
 ms.date: 03/01/2021
 ms.custom: template-concept
-ms.openlocfilehash: cfef510646489e65f5cbc5d0d3e14c468301f48e
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.openlocfilehash: 5ee38fa4b005cf053890c223dfec9244c637bd00
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103199954"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103561827"
 ---
 # <a name="guide-for-running-functions-on-net-50-in-azure"></a>Инструкции по выполнению функций в .NET 5,0 в Azure
 
@@ -122,7 +122,7 @@ While the full middleware registration set of APIs is not yet exposed, we do sup
 
 Привязки определяются с помощью атрибутов методов, параметров и возвращаемых типов. Метод функции — это метод с `Function` атрибутом и, который применяется к входному параметру, как показано в следующем примере:
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Queue/QueueFunction.cs" id="docsnippet_queue_trigger" :::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/Extensions/Queue/QueueFunction.cs" id="docsnippet_queue_trigger" :::
 
 Атрибут триггера указывает тип триггера и привязывает входные данные к параметру метода. Предыдущий пример функции активируется сообщением очереди, а сообщение очереди передается в метод в `myQueueItem` параметре.
 
@@ -140,7 +140,7 @@ While the full middleware registration set of APIs is not yet exposed, we do sup
 
 Для записи в выходную привязку необходимо применить атрибут выходной привязки к методу функции, который определил, как выполнять запись в привязанную службу. Значение, возвращаемое методом, записывается в выходную привязку. Например, в следующем примере строковое значение записывается в очередь сообщений с `functiontesting2` помощью выходной привязки.
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Queue/QueueFunction.cs" id="docsnippet_queue_output_binding" :::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/Extensions/Queue/QueueFunction.cs" id="docsnippet_queue_output_binding" :::
 
 ### <a name="multiple-output-bindings"></a>Несколько выходных привязок
 
@@ -156,7 +156,7 @@ While the full middleware registration set of APIs is not yet exposed, we do sup
 
 Следующий код является триггером HTTP 
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Http/HttpFunction.cs" id="docsnippet_http_trigger" :::
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/Extensions/Http/HttpFunction.cs" id="docsnippet_http_trigger" :::
 
 ## <a name="logging"></a>Ведение журнала
 
@@ -164,7 +164,7 @@ While the full middleware registration set of APIs is not yet exposed, we do sup
 
 В следующем примере показано, как получить `ILogger` и записать журналы внутри функции:
 
-:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/SampleApp/Http/HttpFunction.cs" id="docsnippet_logging" ::: 
+:::code language="csharp" source="~/azure-functions-dotnet-worker/samples/Extensions/Http/HttpFunction.cs" id="docsnippet_logging" ::: 
 
 Используйте различные методы `ILogger` для записи различных уровней ведения журнала, например `LogWarning` или `LogError` . Дополнительные сведения об уровнях ведения журнала см. в [статье мониторинг](functions-monitoring.md#log-levels-and-categories).
 

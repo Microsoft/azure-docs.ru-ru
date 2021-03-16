@@ -2,13 +2,13 @@
 title: Руководство. Масштабирование частного облака
 description: В этом руководстве показано, как масштабировать частное облако Решения Azure VMware с помощью портала Azure.
 ms.topic: tutorial
-ms.date: 09/21/2020
-ms.openlocfilehash: d49d973cc6d97280dc0c7ea6681f2602b871e1ba
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.date: 03/13/2021
+ms.openlocfilehash: 2129a3f5d04311883369b7b708689a13f07ec118
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92791245"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103463635"
 ---
 # <a name="tutorial-scale-an-azure-vmware-solution-private-cloud"></a>Руководство по Масштабирование частного облака Решения Azure VMware
 
@@ -22,7 +22,7 @@ ms.locfileid: "92791245"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Частное облако для работы с этим учебником. Если вы еще не создали частное облако, воспользуйтесь [учебником по созданию частного облака](tutorial-create-private-cloud.md). Настройте сеть для своего частного облака VMware в Azure, чтобы развернуть необходимую виртуальную сеть.
+Для этого учебника необходимо наличие частного облака. Если вы еще не создали частное облако, воспользуйтесь [учебником по созданию частного облака](tutorial-create-private-cloud.md). 
 
 ## <a name="add-a-new-cluster"></a>Добавление нового кластера
 
@@ -38,7 +38,7 @@ ms.locfileid: "92791245"
 
 ## <a name="scale-a-cluster"></a>Масштабировать кластер 
 
-1. На странице обзора существующего частного облака щелкните **Масштабировать частное облако** , а затем щелкните значок карандаша, чтобы изменить кластер.
+1. На странице обзора существующего частного облака щелкните **Масштабировать частное облако**, а затем щелкните значок карандаша, чтобы изменить кластер.
 
    :::image type="content" source="./media/tutorial-scale-private-cloud/ss4-select-scale-private-cloud-2.png" alt-text="Масштабирование частного облака на странице обзора" border="true":::
 
@@ -46,7 +46,7 @@ ms.locfileid: "92791245"
 
    :::image type="content" source="./media/tutorial-scale-private-cloud/ss5-scale-cluster.png" alt-text="На странице &quot;Изменение кластера&quot; с помощью ползунка выберите нужное количество узлов. Щелкните &quot;Сохранить&quot;." border="true":::
 
-   Будет начато добавление узлов в кластер.
+   Начнется добавление узлов в кластер.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

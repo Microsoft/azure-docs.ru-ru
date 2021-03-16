@@ -11,12 +11,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 08/20/2019
-ms.openlocfilehash: 55fa106f0515405dcad969f05d28e0bc7b975b40
-ms.sourcegitcommit: fec60094b829270387c104cc6c21257826fccc54
+ms.openlocfilehash: c38e4681c76fb0dd52d77c7dc1438b87a9571a80
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96922288"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103562065"
 ---
 # <a name="what-is-sql-data-sync-for-azure"></a>Что такое синхронизация данных SQL для Azure?
 
@@ -101,6 +101,9 @@ ms.locfileid: "96922288"
 - [Синхронизация нескольких баз данных в базе данных SQL Azure с помощью PowerShell](scripts/sql-data-sync-sync-data-between-sql-databases.md)
 - [Использование PowerShell для синхронизации между базой данных в базе данных SQL Azure и базами данных в экземпляре SQL Server](scripts/sql-data-sync-sync-data-between-azure-onprem.md)
 
+### <a name="set-up-data-sync-with-rest-api"></a>Настройка синхронизации данных с REST API
+- [Использование REST API для синхронизации нескольких баз данных в базе данных SQL Azure](scripts/sql-data-sync-sync-data-between-sql-databases-rest-api.md)
+
 ### <a name="review-the-best-practices-for-data-sync"></a>Рекомендации по синхронизации данных
 
 - [Best practices for SQL Data Sync (Preview)](sql-data-sync-best-practices.md) (Рекомендации по синхронизации данных SQL (предварительная версия))
@@ -158,7 +161,7 @@ ms.locfileid: "96922288"
 
 #### <a name="unsupported-column-types"></a>Неподдерживаемые типы столбцов
 
-При синхронизации данных столбцы только для чтения и созданные системой столбцы не синхронизируются. Пример:
+При синхронизации данных столбцы только для чтения и созданные системой столбцы не синхронизируются. Пример.
 
 - вычисляемые столбцы;
 - Созданные системой столбцы для темпоральных таблиц.

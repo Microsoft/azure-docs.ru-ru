@@ -4,14 +4,14 @@ description: Определение целевых объектов хранил
 author: ekpgh
 ms.service: hpc-cache
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 03/15/2021
 ms.author: v-erkel
-ms.openlocfilehash: 4e6c5b5ea69c55c09887528f1723414f53fcb0f9
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.openlocfilehash: bba6745a4cc0be30648e23501f9a9e2f0cc6c8db
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103471950"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563256"
 ---
 # <a name="add-storage-targets"></a>Добавление целевых объектов хранилища
 
@@ -194,15 +194,17 @@ az hpc-cache blob-storage-target add --resource-group "hpc-cache-group" \
 
 В этой таблице перечислены различия между всеми моделями использования.
 
-| Модель использования | Режим кэширования | Проверка серверной части | Максимальная задержка записи на сервер |
+[!INCLUDE [usage-models-table.md](includes/usage-models-table.md)]
+
+<!-- | Usage model | Caching mode | Back-end verification | Maximum write-back delay |
 |--|--|--|--|
-| Частое чтение, редкие операции записи | Чтение | Никогда | Нет |
-| Более 15% операций записи | Чтение/запись | 8 ч | 20 минут |
-| Клиенты обходят кэш | Чтение | 30 секунд | Нет |
-| Более 15% операций записи, частая проверка серверной части (30 секунд) | Чтение/запись | 30 секунд | 20 минут |
-| Более 15% операций записи, частая проверка серверной части (60 секунд) | Чтение/запись | 60 секунд | 20 минут |
-| Более 15% операций записи, частая обратная запись | Чтение/запись | 30 секунд | 30 секунд |
-| Высокая частота чтения, проверка резервного сервера каждые 3 часа | Чтение | 3 часа | Нет |
+| Read heavy, infrequent writes | Read | Never | None |
+| Greater than 15% writes | Read/write | 8 hours | 20 minutes |
+| Clients bypass the cache | Read | 30 seconds | None |
+| Greater than 15% writes, frequent back-end checking (30 seconds) | Read/write | 30 seconds | 20 minutes |
+| Greater than 15% writes, frequent back-end checking (60 seconds) | Read/write | 60 seconds | 20 minutes |
+| Greater than 15% writes, frequent write-back | Read/write | 30 seconds | 30 seconds |
+| Read heavy, checking the backing server every 3 hours | Read | 3 hours | None | -->
 
 > [!NOTE]
 > Значение **серверной проверки** показывает, когда кэш автоматически сравнивает свои файлы с исходными файлами в удаленном хранилище. Однако можно запустить сравнение, отправив клиентский запрос, включающий операцию реаддирплус, в систему хранения серверной части. Реаддирплус — это стандартный API NFS (также называемый расширенным чтением), который возвращает метаданные каталога, что приводит к сравнению и обновлению файлов в кэше.
@@ -314,7 +316,7 @@ ADLS — целевые объекты хранилища NFS использую
 >
 > Последние сведения см. в статье [Поддержка протокола NFS 3,0](../storage/blobs/network-file-system-protocol-support.md) .
 
-Целевые объекты хранилища ADLS-NFS имеют некоторые сходства с целевыми объектами хранилища BLOB-объектов, а некоторые — с целевыми объектами хранилища NFS. Пример:
+Целевые объекты хранилища ADLS-NFS имеют некоторые сходства с целевыми объектами хранилища BLOB-объектов, а некоторые — с целевыми объектами хранилища NFS. Пример.
 
 * Как и целевое хранилище BLOB-объектов, необходимо предоставить Azure HPC кэширование для [доступа к вашей учетной записи хранения](#add-the-access-control-roles-to-your-account).
 * Как и целевое хранилище NFS, необходимо задать [модель использования](#choose-a-usage-model)кэша.

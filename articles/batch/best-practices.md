@@ -3,12 +3,12 @@ title: Рекомендации
 description: Ознакомьтесь с рекомендациями и полезными советами по разработке решений пакетной службы Azure.
 ms.date: 03/11/2020
 ms.topic: conceptual
-ms.openlocfilehash: 15ff46ad74c4c48c6b5f320622bc364adf59d4cc
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: d1040762c171af486c7f5d66daca44ec65602aff
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/16/2021
-ms.locfileid: "103496292"
+ms.locfileid: "103561844"
 ---
 # <a name="azure-batch-best-practices"></a>Рекомендации для пакетной службы Azure
 
@@ -238,6 +238,6 @@ Linux:
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Создание учетной записи пакетной службы Azure](batch-account-create-portal.md) на портале Azure.
 - Узнайте подробнее о [рабочем процессе и основных ресурсах пакетной службы](batch-service-workflow-features.md), таких как пулы, узлы, задания и задачи.
 - Сведения о [квотах, ограничениях и ограничениях пакетной службы Azure по умолчанию, а так же о том, как запросить увеличение квоты](batch-quota-limit.md).
+- Узнайте, как [обнаруживать и предотвращать сбои в фоновых операциях пула и узла ](batch-pool-node-error-checking.md).

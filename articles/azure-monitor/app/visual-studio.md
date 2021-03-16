@@ -4,12 +4,12 @@ description: Анализ производительности веб-прило
 ms.topic: conceptual
 ms.date: 03/17/2017
 ms.custom: vs-azure
-ms.openlocfilehash: d2de29d897c84496fd44d74d88d58decbc64b7f8
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.openlocfilehash: 2507dbf7bb8294c949f434d5fa96ccc0af9a7eb3
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94532908"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563544"
 ---
 # <a name="debug-your-applications-with-azure-application-insights-in-visual-studio"></a>Отладка приложений с помощью Azure Application Insights в Visual Studio
 В Visual Studio 2015 и более поздних версиях можно анализировать производительность веб-приложения ASP.NET и диагностировать проблемы во время отладки и в рабочей среде с помощью телеметрии из [Azure Application Insights](./app-insights-overview.md).
@@ -65,17 +65,6 @@ ms.locfileid: "94532908"
 >
 
 [Телеметрия Application Insights в Visual Studio CodeLens](./visual-studio-codelens.md)
-
-## <a name="trends"></a>Тренды
-Тренды — это средство для визуализации того, как изменяется поведение приложения со временем. 
-
-Нажмите кнопку **Обзор трендов телеметрии** на панели инструментов Application Insights или в окне поиска Application Insights. Выберите один из пяти стандартных запросов, чтобы приступить к работе. Анализировать разные наборы данных можно на основе типов данных телеметрии, диапазонов времени и других свойств. 
-
-Чтобы найти аномалии в данных, выберите один из вариантов аномалий в раскрывающемся списке "Тип представления". Параметры фильтрации в нижней части окна позволяют легко находить конкретные подмножества данных телеметрии.
-
-![Тренды](./media/visual-studio/51.png)
-
-[Дополнительные сведения о тенденциях](./visual-studio-trends.md)
 
 ## <a name="local-monitoring"></a>Локальный мониторинг
 (Относится к Visual Studio 2015 с обновлением 2) Если ваш пакет SDK не отправляет данные телеметрии на портал Application Insights (то есть в файле ApplicationInsights.config нет ключа инструментирования), в окне диагностики выводятся данные телеметрии, полученные в ходе последнего сеанса отладки. 

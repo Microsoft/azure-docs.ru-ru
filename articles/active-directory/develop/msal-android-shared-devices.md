@@ -13,17 +13,14 @@ ms.date: 03/31/2020
 ms.author: marsma
 ms.reviewer: hahamil
 ms.custom: aaddev, identitypla | Azuretformtop40
-ms.openlocfilehash: ea902b8b609d226f6bb9e61ec0bfd60f75a3825d
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: a67e0d851ab544f737097eff9a884752cff9f5fc
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102038583"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103491563"
 ---
 # <a name="shared-device-mode-for-android-devices"></a>Режим совместной работы с устройством Android
-
->[!IMPORTANT]
-> Эта функция [!INCLUDE [PREVIEW BOILERPLATE](../../../includes/active-directory-develop-preview.md)]
 
 Фирстлиненые работники, такие как розничные организации, участники рейсов, а также сотрудники службы "поле" часто используют общее мобильное устройство для работы. Это создает проблемы, когда они начинают совместно использовать пароли или ПИН-коды для доступа к данным клиентов и бизнес-данных на общем устройстве.
 
@@ -83,7 +80,7 @@ private IPublicClientApplication mApplication;
 |---------|---------|---------|
 | **Учетные записи**     | Одна учетная запись | Несколько учетных записей |
 | **Вход в систему** | Глобальный | Глобальный |
-| **Функция выхода** | Глобальный | Каждое приложение может контролировать, является ли выход локальным для приложения или для семейства приложений. |
+| **Функция выхода** | Глобальная | Каждое приложение может контролировать, является ли выход локальным для приложения или для семейства приложений. |
 | **Поддерживаемые типы учетных записей** | Только рабочие учетные записи | Персональные и рабочие учетные записи поддерживаются  |
 
 ## <a name="why-you-may-want-to-only-support-single-account-mode"></a>Почему может потребоваться поддержка только одной учетной записи

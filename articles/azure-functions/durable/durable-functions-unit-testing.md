@@ -3,19 +3,19 @@ title: Модульное тестирование устойчивых функ
 description: Информация о модульном тестировании устойчивых функций.
 ms.topic: conceptual
 ms.date: 11/03/2019
-ms.openlocfilehash: 7786a0a2e2d31086e1938b70e63fe2374e16fe7f
-ms.sourcegitcommit: c4246c2b986c6f53b20b94d4e75ccc49ec768a9a
+ms.openlocfilehash: 89b6419e95b3971b0d272490e19354f300204e1e
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96601362"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103491050"
 ---
 # <a name="durable-functions-unit-testing"></a>Модульное тестирование устойчивых функций
 
 Модульное тестирование является важной частью современных способов разработки программного обеспечения. Модульные тесты позволяют проверить поведение бизнес-логики и предотвратить внедрение незамеченных критических изменений в будущем. Степень сложности устойчивых функций может быстро увеличиться, поэтому использование модульных тестов поможет предотвращать внесение критических изменений. В следующих разделах объясняется, как выполнить модульное тестирование трех типов функций: клиент оркестрации, Orchestrator и функции действий.
 
 > [!NOTE]
-> В этой статье приводятся рекомендации по модульному тестированию для Устойчивые функции приложений, предназначенных для Устойчивые функции 1. x. Она еще не обновлена, чтобы учитывать изменения, появившиеся в Устойчивые функции 2. x. Дополнительные сведения о различиях между версиями см. в статье [устойчивые функции версии](durable-functions-versions.md) .
+> В этой статье приводятся рекомендации по модульному тестированию для Устойчивые функции приложений, предназначенных для Устойчивые функции 2. x. Дополнительные сведения о различиях между версиями см. в статье [устойчивые функции версии](durable-functions-versions.md) .
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -31,20 +31,17 @@ ms.locfileid: "96601362"
 
 ## <a name="base-classes-for-mocking"></a>Базовые классы для имитации
 
-Макетирование поддерживается через три абстрактных класса в Устойчивые функции 1. x:
+Макетирование поддерживается через следующий интерфейс:
 
-* `DurableOrchestrationClientBase`
+* [Идураблеорчестратионклиент](/dotnet/api/microsoft.azure.webjobs.IDurableOrchestrationClient), [идураблинтитиклиент](/dotnet/api/microsoft.azure.webjobs.IDurableEntityClient) и [идураблеклиент](/dotnet/api/microsoft.azure.webjobs.IDurableClient)
 
-* `DurableOrchestrationContextBase`
+* [идураблеорчестратионконтекст](/dotnet/api/microsoft.azure.webjobs.IDurableOrchestrationContext)
 
-* `DurableActivityContextBase`
+* [идураблеактивитиконтекст](/dotnet/api/microsoft.azure.webjobs.IDurableActivityContext)
+  
+* [идураблинтитиконтекст](/dotnet/api/microsoft.azure.webjobs.IDurableEntityContext)
 
-Эти классы являются базовыми классами для `DurableOrchestrationClient` , `DurableOrchestrationContext` и `DurableActivityContext` , которые определяют методы клиента оркестрации, Orchestrator и действия. В процессе имитирования устанавливается ожидаемое поведение методов базового класса. Таким образом модульный тест может проверить бизнес-логику. При модульном тестировании бизнес-логики в клиенте оркестрации и оркестраторе выполняется двухэтапный рабочий процесс.
-
-1. Используйте базовые классы вместо конкретной реализации при определении сигнатур клиента оркестрации и функции Orchestrator.
-2. Настройте модульные тесты, выполняющие имитирование поведения базовых классов и проверку бизнес-логики.
-
-Подробные сведения по функциям тестирования, использующим привязку клиента оркестрации и триггера оркестратора, изложены в следующих разделах.
+Эти интерфейсы можно использовать с различными триггерами и привязками, поддерживаемыми Устойчивые функции. При выполнении функций Azure среда выполнения функций будет выполнять код функции с конкретной реализацией этих интерфейсов. Для модульного тестирования можно передать макетную версию этих интерфейсов для тестирования бизнес-логики.
 
 ## <a name="unit-testing-trigger-functions"></a>Функции триггеров в модульном тестировании
 
@@ -52,71 +49,77 @@ ms.locfileid: "96601362"
 
 [!code-csharp[Main](~/samples-durable-functions/samples/precompiled/HttpStart.cs)]
 
-Модульному тесту необходимо проверить заголовок `Retry-After` в полезных данных ответа. Поэтому модульный тест будет макетирование некоторые `DurableOrchestrationClientBase` методы, чтобы обеспечить предсказуемое поведение.
+Модульному тесту необходимо проверить заголовок `Retry-After` в полезных данных ответа. Поэтому модульный тест будет макетирование некоторые `IDurableClient` методы, чтобы обеспечить предсказуемое поведение.
 
-Во-первых, требуется макет базового класса, `DurableOrchestrationClientBase` . Макет может быть новым классом, реализующим интерфейс `DurableOrchestrationClientBase` . Однако, использование платформы имитированной реализации наподобие [moq](https://github.com/moq/moq4) упрощает данный процесс.
+Во-первых, в нашем примере используется инфраструктура макетирования ([MOQ](https://github.com/moq/moq4) ) для макетирования `IDurableClient` :
 
 ```csharp
-    // Mock DurableOrchestrationClientBase
-    var durableOrchestrationClientBaseMock = new Mock<DurableOrchestrationClientBase>();
+// Mock IDurableClient
+var durableClientMock = new Mock<IDurableClient>();
 ```
+
+> [!NOTE]
+> Хотя вы можете макетирование интерфейсы, напрямую реализовав интерфейс как класс, макеты инфраструктуры упрощают процесс различными способами. Например, если новый метод добавляется в интерфейс во вспомогательных выпусках, MOQ не потребует каких-либо изменений кода, в отличие от конкретных реализаций.
 
 Затем метод `StartNewAsync` имитируется для возвращения идентификатора известного экземпляра.
 
 ```csharp
-    // Mock StartNewAsync method
-    durableOrchestrationClientBaseMock.
-        Setup(x => x.StartNewAsync(functionName, It.IsAny<object>())).
-        ReturnsAsync(instanceId);
+// Mock StartNewAsync method
+durableClientMock.
+    Setup(x => x.StartNewAsync(functionName, It.IsAny<object>())).
+    ReturnsAsync(instanceId);
 ```
 
 Кроме того, `CreateCheckStatusResponse` имитируется таким образом, чтобы всегда возвращать пустой ответ HTTP 200.
 
 ```csharp
-    // Mock CreateCheckStatusResponse method
-    durableOrchestrationClientBaseMock
-        .Setup(x => x.CreateCheckStatusResponse(It.IsAny<HttpRequestMessage>(), instanceId))
-        .Returns(new HttpResponseMessage
+// Mock CreateCheckStatusResponse method
+durableClientMock
+    // Notice that even though the HttpStart function does not call IDurableClient.CreateCheckStatusResponse() 
+    // with the optional parameter returnInternalServerErrorOnFailure, moq requires the method to be set up
+    // with each of the optional parameters provided. Simply use It.IsAny<> for each optional parameter
+    .Setup(x => x.CreateCheckStatusResponse(It.IsAny<HttpRequestMessage>(), instanceId, returnInternalServerErrorOnFailure: It.IsAny<bool>())
+    .Returns(new HttpResponseMessage
+    {
+        StatusCode = HttpStatusCode.OK,
+        Content = new StringContent(string.Empty),
+        Headers =
         {
-            StatusCode = HttpStatusCode.OK,
-            Content = new StringContent(string.Empty),
-            Headers =
-            {
-                RetryAfter = new RetryConditionHeaderValue(TimeSpan.FromSeconds(10))
-            }
-        });
+            RetryAfter = new RetryConditionHeaderValue(TimeSpan.FromSeconds(10))
+        }
+    });
 ```
 
 `ILogger` также имитируется.
 
 ```csharp
-    // Mock ILogger
-    var loggerMock = new Mock<ILogger>();
+// Mock ILogger
+var loggerMock = new Mock<ILogger>();
 ```  
 
 Теперь `Run` метод вызывается из модульного теста.
 
 ```csharp
-    // Call Orchestration trigger function
-    var result = await HttpStart.Run(
-        new HttpRequestMessage()
-        {
-            Content = new StringContent("{}", Encoding.UTF8, "application/json"),
-            RequestUri = new Uri("http://localhost:7071/orchestrators/E1_HelloSequence"),
-        },
-        durableOrchestrationClientBaseMock.Object,
-        functionName,
-        loggerMock.Object);
+// Call Orchestration trigger function
+var result = await HttpStart.Run(
+    new HttpRequestMessage()
+    {
+        Content = new StringContent("{}", Encoding.UTF8, "application/json"),
+        RequestUri = new Uri("http://localhost:7071/orchestrators/E1_HelloSequence"),
+    },
+    durableClientMock.Object,
+    functionName,
+    loggerMock.Object);
  ```
 
  На последнем шаге происходит сравнение вывода с ожидаемым значением.
 
 ```csharp
-    // Validate that output is not null
-    Assert.NotNull(result.Headers.RetryAfter);
+// Validate that output is not null
+Assert.NotNull(result.Headers.RetryAfter);
 
-    // Validate output's Retry-After header value
-    Assert.Equal(TimeSpan.FromSeconds(10), result.Headers.RetryAfter.Delta);
+// Validate output's Retry-After header value
+Assert.Equal(TimeSpan.FromSeconds(10), result.Headers.RetryAfter.Delta);
 ```
 
 После объединения всех шагов код модульного теста будет выглядеть следующим образом.
@@ -134,30 +137,30 @@ ms.locfileid: "96601362"
 Код модульного теста начинается со строки для создания имитации.
 
 ```csharp
-    var durableOrchestrationContextMock = new Mock<DurableOrchestrationContextBase>();
+var durableOrchestrationContextMock = new Mock<IDurableOrchestrationContext>();
 ```
 
 Затем имитируются вызовы метода действий.
 
 ```csharp
-    durableOrchestrationContextMock.Setup(x => x.CallActivityAsync<string>("E1_SayHello", "Tokyo")).ReturnsAsync("Hello Tokyo!");
-    durableOrchestrationContextMock.Setup(x => x.CallActivityAsync<string>("E1_SayHello", "Seattle")).ReturnsAsync("Hello Seattle!");
-    durableOrchestrationContextMock.Setup(x => x.CallActivityAsync<string>("E1_SayHello", "London")).ReturnsAsync("Hello London!");
+durableOrchestrationContextMock.Setup(x => x.CallActivityAsync<string>("E1_SayHello", "Tokyo")).ReturnsAsync("Hello Tokyo!");
+durableOrchestrationContextMock.Setup(x => x.CallActivityAsync<string>("E1_SayHello", "Seattle")).ReturnsAsync("Hello Seattle!");
+durableOrchestrationContextMock.Setup(x => x.CallActivityAsync<string>("E1_SayHello", "London")).ReturnsAsync("Hello London!");
 ```
 
 Далее модульный тест вызывает метод `HelloSequence.Run`.
 
 ```csharp
-    var result = await HelloSequence.Run(durableOrchestrationContextMock.Object);
+var result = await HelloSequence.Run(durableOrchestrationContextMock.Object);
 ```
 
 И, наконец, проверяются выходные данные.
 
 ```csharp
-    Assert.Equal(3, result.Count);
-    Assert.Equal("Hello Tokyo!", result[0]);
-    Assert.Equal("Hello Seattle!", result[1]);
-    Assert.Equal("Hello London!", result[2]);
+Assert.Equal(3, result.Count);
+Assert.Equal("Hello Tokyo!", result[0]);
+Assert.Equal("Hello Seattle!", result[1]);
+Assert.Equal("Hello London!", result[2]);
 ```
 
 После объединения всех шагов код модульного теста будет выглядеть следующим образом.
@@ -172,7 +175,7 @@ ms.locfileid: "96601362"
 
 [!code-csharp[Main](~/samples-durable-functions/samples/precompiled/HelloSequence.cs)]
 
-Кроме того, модульный тест позволяет проверить формат выходных данных. Модульные тесты могут использовать типы параметров напрямую или макетирование `DurableActivityContextBase` класса:
+Кроме того, модульный тест позволяет проверить формат выходных данных. Модульные тесты могут использовать типы параметров напрямую или макетирование `IDurableActivityContext` класса:
 
 [!code-csharp[Main](~/samples-durable-functions/samples/VSSample.Tests/HelloSequenceActivityTests.cs)]
 

@@ -7,12 +7,12 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 03/10/2021
-ms.openlocfilehash: 78a17ad6599e1ac4f455f2806a5f944675198b4b
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: 0e60ac6da55c11d45e8b691b4883b0f5f93a2498
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102631495"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563942"
 ---
 # <a name="data-transformation-expressions-in-mapping-data-flow"></a>Выражения преобразования данных в потоке данных для сопоставления
 
@@ -152,14 +152,13 @@ ___
 ___
 ### <code>columnNames</code>
 <code><b>columnNames(<i>&lt;value1&gt;</i> : string) => array</b></code><br/><br/>
-Получает все выходные столбцы для потока. В качестве второго аргумента вы можете передать необязательное имя потока.  
+Возвращает имена всех выходных столбцов потока. В качестве второго аргумента вы можете передать необязательное имя потока.  
 * ``columnNames()``
 * ``columnNames('DeriveStream')``
-
 ___
 ### <code>columns</code>
 <code><b>columns([<i>&lt;stream name&gt;</i> : string]) => any</b></code><br/><br/>
-Получает все выходные столбцы для потока. В качестве второго аргумента вы можете передать необязательное имя потока.   
+Возвращает значения всех выходных столбцов потока. В качестве второго аргумента вы можете передать необязательное имя потока.   
 * ``columns()``
 * ``columns('DeriveStream')``
 ___

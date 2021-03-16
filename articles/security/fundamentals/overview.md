@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/03/2021
 ms.author: TomSh
-ms.openlocfilehash: a62326d99eee8407b65c0c640b4db8a6f051c758
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 1159736d59e15fa36c0feb7e5d5b5553953fb6b9
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102101194"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103564517"
 ---
 # <a name="introduction-to-azure-security"></a>Введение в систему безопасности Azure
 
@@ -201,6 +201,14 @@ Application Insights создает диаграммы и таблицы, кот
 - [Подключение локальной сети к виртуальной сети Azure с помощью выделенного канала глобальной сети](../../expressroute/expressroute-introduction.md)
 
 - [Подключение виртуальных сетей Azure друг к другу](../../vpn-gateway/vpn-gateway-vnet-vnet-rm-ps.md)
+
+### <a name="azure-private-link"></a>Приватный канал Azure
+
+[Частная ссылка Azure](https://azure.microsoft.com/services/private-link/) позволяет получить доступ к службам Azure PaaS (например, к службе хранилища Azure и базе данных SQL), а также службам, принадлежащим заказчику, и партнерам, размещенным в виртуальной сети, в [частной конечной точке](https://docs.microsoft.com/azure/private-link/private-endpoint-overview). Настройка и потребление с использованием Приватного канала Azure согласованы между службами Azure PaaS, клиентскими и общими партнерскими службами. Трафик, поступающий из виртуальной сети в службу Azure, всегда остается в магистральной сети Microsoft Azure.
+
+[Частные конечные точки](https://docs.microsoft.com/azure/private-link/private-endpoint-overview) позволяют защищать важные ресурсы службы Azure только для виртуальных сетей. Частная конечная точка Azure использует частный IP-адрес из виртуальной сети для надежного подключения к службе с помощью частной связи Azure и, в своюмся образом, присоединяет службу к виртуальной сети. Предоставление виртуальной сети для общедоступного Интернета больше не требуется для использования служб в Azure. 
+
+Вы также можете создать собственную службу частной связи в виртуальной сети. [Служба "Частная связь Azure](https://docs.microsoft.com/azure/private-link/private-link-service-overview) " — это ссылка на вашу собственную службу, которая работает на базе частной связи Azure. Служба, работающая на Load Balancer (цен. категория "Стандартный") Azure, может быть включена для доступа к частным каналам, чтобы пользователи службы могли получить к ней доступ в частном порядке из своих виртуальных сетей. Ваши клиенты могут создать частную конечную точку в своей виртуальной сети и соотнести ее с этой службой. Предоставление доступа к службе через общедоступный Интернет больше не требуется для отрисовки служб в Azure. 
 
 ### <a name="vpn-gateway"></a>VPN-шлюз
 

@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 02/25/2021
-ms.openlocfilehash: 3e12bef7569110084cd059b0dfde8562bd914823
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 5b906bdbd07d59d2acc88f6b30f0db6b6cbc961a
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102030772"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103562252"
 ---
 # <a name="standard-columns-in-azure-monitor-logs"></a>Стандартные столбцы в журналах Azure Monitor
 Данные в журналах Azure Monitor [хранятся в виде набора записей в log Analytics рабочей области или в Application Insights приложении](../logs/data-platform-logs.md), каждый из которых имеет определенный тип данных, имеющий уникальный набор столбцов. Многие типы данных будут иметь стандартные столбцы, которые являются общими для нескольких типов. В этой статье описываются эти столбцы и приводятся примеры их использования в запросах.
@@ -132,7 +132,7 @@ union withsource = tt *
 
 Всегда более эффективно использовать \_ столбец SubscriptionId, чем извлекать его путем синтаксического анализа \_ столбца ResourceId.
 
-## <a name="_substriptionid"></a>\_субстриптионид
+## <a name="_subscriptionid"></a>\_Подписки
 Столбец **\_ SUBSCRIPTIONID** содержит идентификатор подписки ресурса, с которым связана запись. Это предоставляет стандартный столбец для использования в качестве области запроса только для записей из конкретной подписки или для сравнения разных подписок.
 
 Для ресурсов Azure значение **__SubscriptionId** является частью подписки [URL-адреса Azure Resource id](../../azure-resource-manager/templates/template-functions-resource.md). Этот столбец ограничен ресурсами Azure, включая ресурсы [ARC в Azure](../../azure-arc/overview.md) , или пользовательскими журналами, которые указали идентификатор ресурса во время приема.
