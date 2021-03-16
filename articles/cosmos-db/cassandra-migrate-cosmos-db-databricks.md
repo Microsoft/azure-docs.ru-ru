@@ -5,15 +5,15 @@ author: TheovanKraay
 ms.service: cosmos-db
 ms.subservice: cosmosdb-cassandra
 ms.topic: how-to
-ms.date: 11/16/2020
+ms.date: 03/10/2021
 ms.author: thvankra
 ms.reviewer: thvankra
-ms.openlocfilehash: 3cbcb7eb3695e6f57daef741d4cd4b15577d8f58
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.openlocfilehash: caf9cbb0ca017ee00c5061d94e0d37703194943d
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99493281"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103573386"
 ---
 # <a name="migrate-data-from-cassandra-to-azure-cosmos-db-cassandra-api-account-using-azure-databricks"></a>Перенос данных из Cassandra в учетную запись API Cassandra Azure Cosmos DB с помощью Azure Databricks
 [!INCLUDE[appliesto-cassandra-api](includes/appliesto-cassandra-api.md)]
@@ -42,20 +42,18 @@ API Cassandra в Azure Cosmos DB стали отличным выбором дл
 
 ## <a name="provision-an-azure-databricks-cluster"></a>Предоставление кластера Azure Databricks
 
-Вы можете выполнить инструкции по [подготовке кластера Azure Databricks](/azure/databricks/scenarios/quickstart-create-databricks-workspace-portal). Однако обратите внимание, Apache Spark 3. x в настоящее время не поддерживается для соединителя Apache Cassandra. Необходимо подготавливать среду выполнения для модуля данных с поддерживаемой версией версии 2. x Apache Spark. Рекомендуется выбрать версию среды выполнения модуля данных, которая поддерживает последнюю версию Spark 2. x, но не более поздней версии, чем Scala версии 2,11:
+Вы можете выполнить инструкции по [подготовке кластера Azure Databricks](/azure/databricks/scenarios/quickstart-create-databricks-workspace-portal). Рекомендуется выбрать среду выполнения для модуля, версия 7,5, которая поддерживает Spark 3,0:
 
 :::image type="content" source="./media/cassandra-migrate-cosmos-db-databricks/databricks-runtime.png" alt-text="Среда выполнения модулями":::
 
 
 ## <a name="add-dependencies"></a>Добавление зависимостей
 
-Чтобы подключиться как к собственным, так и Cosmos DBным конечным точкам Cassandra, необходимо добавить в кластер библиотеку соединителей Apache Spark Cassandra. В кластере выберите библиотеки. > установить новые > пакеты поиска Maven->:
+Чтобы подключиться как к собственным, так и Cosmos DBным конечным точкам Cassandra, необходимо добавить в кластер библиотеку соединителей Apache Spark Cassandra. В кластере выберите библиотеки. > установить New-> Maven. добавить `com.datastax.spark:spark-cassandra-connector-assembly_2.12:3.0.0` в Maven координатах:
 
 :::image type="content" source="./media/cassandra-migrate-cosmos-db-databricks/databricks-search-packages.png" alt-text="Пакеты поиска в модулях":::
 
-Введите `Cassandra` в поле поиска и выберите `spark-cassandra-connector` доступный последний репозиторий Maven, а затем нажмите кнопку установить.
-
-:::image type="content" source="./media/cassandra-migrate-cosmos-db-databricks/databricks-search-packages-2.png" alt-text="Выбор пакетов в модулях":::
+Выберите установить и при завершении установки убедитесь, что кластер перезапускается. 
 
 > [!NOTE]
 > Убедитесь, что кластер кирпичей перезапускается после установки библиотеки соединителей Cassandra.
@@ -91,7 +89,6 @@ val cosmosCassandra = Map(
     "table" -> "<TABLE>",
     //throughput related settings below - tweak these depending on data volumes. 
     "spark.cassandra.output.batch.size.rows"-> "1",
-    "spark.cassandra.connection.connections_per_executor_max" -> "10",
     "spark.cassandra.output.concurrent.writes" -> "1000",
     "spark.cassandra.concurrent.reads" -> "512",
     "spark.cassandra.output.batch.grouping.buffer.size" -> "1000",
@@ -110,32 +107,22 @@ DFfromNativeCassandra
   .write
   .format("org.apache.spark.sql.cassandra")
   .options(cosmosCassandra)
+  .mode(SaveMode.Append)
   .save
 ```
 
 > [!NOTE]
-> `spark.cassandra.output.batch.size.rows`Конфигурации, `spark.cassandra.output.concurrent.writes` и `connections_per_executor_max` важны для предотвращения [ограничения скорости](/samples/azure-samples/azure-cosmos-cassandra-java-retry-sample/azure-cosmos-db-cassandra-java-retry-sample/), что происходит, когда запросы Azure Cosmos DB превышают подготовленную пропускную способность/([единицы запроса](./request-units.md)). Может потребоваться изменить эти параметры в зависимости от количества исполнителей в кластере Spark и, возможно, размера (и, следовательно, стоимости на ЕДИНИЦу) каждой записи, записываемой в целевые таблицы.
+> Значения параметров `spark.cassandra.output.batch.size.rows` и `spark.cassandra.output.concurrent.writes` , а также число рабочих ролей в кластере Spark — это важные конфигурации, которые необходимо настроить, чтобы избежать [ограничения скорости](/samples/azure-samples/azure-cosmos-cassandra-java-retry-sample/azure-cosmos-db-cassandra-java-retry-sample/), которое происходит, когда запросы Azure Cosmos DB превышают подготовленную пропускную способность/([единицы запроса](./request-units.md)). Может потребоваться изменить эти параметры в зависимости от количества исполнителей в кластере Spark и, возможно, размера (и, следовательно, стоимости на ЕДИНИЦу) каждой записи, записываемой в целевые таблицы.
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 ### <a name="rate-limiting-429-error"></a>Ограничение скорости (429 ошибка)
 Вы можете увидеть код ошибки 429 или `request rate is large` текст ошибки, несмотря на то, что указанные выше параметры имеют минимальные значения. Ниже перечислены некоторые сценарии.
 
 - **Пропускная способность, выделенная для таблицы, меньше 6000 [единиц запросов](./request-units.md)**. Даже при минимальных настройках Spark сможет выполнять операции записи с частотой около 6000 единиц запросов. Если вы подготовили таблицу в пространства ключей с подготовленной пропускной способностью, возможно, что эта таблица имеет менее 6000 в секунду, доступной во время выполнения. Убедитесь, что в таблице, в которую выполняется миграция, имеется по крайней мере 6000. д. при выполнении миграции, а также при необходимости выделения выделенных единиц запросов для этой таблицы. 
 - **Чрезмерное смещение данных с большим объемом данных**. Если имеется большой объем данных (т. е. строк таблицы) для переноса в заданную таблицу, но в данных имеется значительный отклонения (т. е. большое количество записей, записываемых для одного и того же значения ключа секции), вы можете по-прежнему использовать ограничение скорости, даже если в таблице было подготовлено большое количество [единиц запросов](./request-units.md) . Это обусловлено тем, что единицы запросов делятся между физическими секциями, а высокая интенсивность данных может привести к узким местам запросов к одной секции, что приводит к ограничению частоты. В этом случае рекомендуется сократить до минимальных настроек пропускной способности в Spark, чтобы избежать ограничения скорости и заставить миграцию выполняться медленно. Этот сценарий может оказаться более распространенным при переносе ссылочных таблиц или элементов управления, где доступ менее частый, но может быть очень высок. Однако если в любой другой тип таблицы имеется значительный отклонения, может быть целесообразно изучить модель данных, чтобы избежать проблем с горячей секцией для рабочей нагрузки во время операций стабильного состояния. 
-- **Не удалось получить счетчик для большой таблицы**. `select count(*) from table`В настоящее время выполнение не поддерживается для больших таблиц. Счетчик можно получить из метрик в портал Azure (см. [статью Устранение неполадок](cassandra-troubleshoot.md)), но если необходимо определить количество больших таблиц в контексте задания Spark, можно скопировать данные во временную таблицу, а затем использовать Spark SQL для получения числа, например, ниже (замените на `<primary key>` некоторое поле из результирующей временной таблицы).
 
-  ```scala
-  val ReadFromCosmosCassandra = sqlContext
-    .read
-    .format("org.apache.spark.sql.cassandra")
-    .options(cosmosCassandra)
-    .load
 
-  ReadFromCosmosCassandra.createOrReplaceTempView("CosmosCassandraResult")
-  %sql
-  select count(<primary key>) from CosmosCassandraResult
-  ```
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

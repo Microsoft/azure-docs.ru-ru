@@ -5,12 +5,12 @@ author: macolso
 ms.author: macolso
 ms.topic: article
 ms.date: 06/02/2020
-ms.openlocfilehash: 5de1188ee018e796f918d7559c0e2c24c77834f4
-ms.sourcegitcommit: 0aec60c088f1dcb0f89eaad5faf5f2c815e53bf8
+ms.openlocfilehash: 2645c3f183e2217dff28a96c9c0d376eb82a6476
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98186198"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103573138"
 ---
 # <a name="frequently-asked-questions-about-azure-container-instances"></a>Часто задаваемые вопросы о службе "экземпляры контейнеров Azure"
 
@@ -45,7 +45,7 @@ ms.locfileid: "98186198"
 > [!NOTE]
 > Образы Windows на основе Semi-Annualного канала выпуска 1709 или 1803 не поддерживаются.
 
-#### <a name="windows-server-2019-and-client-base-images-preview"></a>Windows Server 2019 и базовые образы клиента (Предварительная версия)
+#### <a name="windows-server-2019-and-client-base-images"></a>Windows Server 2019 и базовые образы клиента
 
 * [Nano Server](https://hub.docker.com/_/microsoft-windows-nanoserver): `1809` `10.0.17763.1040` или более поздняя версия
 * [Windows Server Core](https://hub.docker.com/_/microsoft-windows-servercore): `ltsc2019` , `1809` `10.0.17763.1040` или более поздней версии
@@ -53,11 +53,14 @@ ms.locfileid: "98186198"
 
 ### <a name="what-net-or-net-core-image-layer-should-i-use-in-my-container"></a>Какой уровень образа .NET или .NET Core следует использовать в моем контейнере? 
 
-Используйте наименьшее изображение, удовлетворяющее вашим требованиям. Для Linux можно использовать образ *среды выполнения — Alpine* .NET Core, который поддерживался с момента выпуска .net Core 2,1. Для Windows, если используется полная .NET Framework, необходимо использовать образ Windows Server Core (образ только для среды выполнения, например  *4.7.2-windowsservercore-ltsc2016*). Образы только для среды выполнения меньше, но не поддерживают рабочие нагрузки, для которых требуется пакет SDK для .NET.
+Используйте наименьшее изображение, удовлетворяющее вашим требованиям. Для Linux можно использовать образ *среды выполнения — Alpine* .NET Core, который поддерживался с момента выпуска .net Core 2,1. Для Windows, если используется полная платформа .NET Framework, необходимо использовать образ Windows Server Core (образ только для среды выполнения, например  *4.7.2-windowsservercore-ltsc2016*). Образы только для среды выполнения меньше, но не поддерживают рабочие нагрузки, для которых требуется пакет SDK для .NET.
+
+> [!NOTE]
+> ACI не может получать образы из реестров, не соответствующих OCI.
 
 ### <a name="what-types-of-container-registries-are-compatible-with-aci"></a>Какие типы реестров контейнеров совместимы с ACI?
 
-ACI поддерживает извлечение изображений из записи контроля доступа и других сторонних реестров контейнеров, таких как DockerHub. ACI также поддерживает извлечение изображений из локальных реестров, если они совместимы с OCR и имеют общедоступную конечную точку в Интернете.
+ACI поддерживает извлечение изображений из записи контроля доступа и других сторонних реестров контейнеров, таких как DockerHub. ACI поддерживает извлечение изображений из записи контроля доступа и других совместимых с ними сторонних реестров контейнеров, таких как DockerHub, с конечной точкой, общедоступной для Интернета.
 
 ## <a name="availability-and-quotas"></a>Доступность и квоты
 

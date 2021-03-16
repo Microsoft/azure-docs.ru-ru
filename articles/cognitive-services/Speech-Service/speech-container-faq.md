@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/11/2021
 ms.author: trbye
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 86c8943531171094600bc7d93b8694bdd1c6e051
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.openlocfilehash: 16158b4ecfb46ea9092fe9eeb31cc4dee259b1ab
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225837"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103573750"
 ---
 # <a name="speech-service-containers-frequently-asked-questions-faq"></a>Часто задаваемые вопросы о контейнерах речевых служб
 
@@ -98,7 +98,7 @@ Cannot find Scan4_llvm__mcpu_skylake_avx512 in cache, using JIT...
 
 **Ответ.** `speech_recognition_language=<YOUR_LANGUAGE>` Должен быть явно настроен в запросе, если они используют клиента.
 
-Пример:
+Например:
 
 ```python
 if not recognize_once(
@@ -344,20 +344,6 @@ https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/6805d96bf69d
 - Для MIC он будет находиться в режиме реального времени. Общее использование должно быть около 1 ядра для одного распознавания.
 
 Все это можно проверить в журналах DOCKER. Мы фактически выведите дамп строки с статистикой сеанса и фразой/utterance, которая включает номера RTF.
-
-
-<br>
-</details>
-
-<details>
-<summary>
-<b>Можно ли разделить звуковые файлы на чуккс для использования контейнера речи?</b>
-</summary>
-
-Текущий план — взять существующий звуковой файл и разделить его на 10 секунд и отправить их через контейнер. Является ли допустимым сценарий?  Существует ли лучший способ обработки больших звуковых файлов с помощью контейнера?
-
-**Ответ.** Просто используйте пакет SDK для распознавания речи и присвойте ему файл, он сделает это правильно. Зачем нужно выполнять фрагментацию файла?
-
 
 <br>
 </details>

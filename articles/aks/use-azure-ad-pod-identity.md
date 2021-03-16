@@ -4,12 +4,12 @@ description: Узнайте, как использовать управляем�
 services: container-service
 ms.topic: article
 ms.date: 3/12/2021
-ms.openlocfilehash: 8b94c859800c3757842ad56df6e20f215bb13a7d
-ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
+ms.openlocfilehash: f3d0db5b085fcdb9a24310cb2fe310d390b1790a
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103233502"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574379"
 ---
 # <a name="use-azure-active-directory-pod-managed-identities-in-azure-kubernetes-service-preview"></a>Использование удостоверений под управлением Azure Active Directory Pod в службе Kubernetes Azure (Предварительная версия)
 
@@ -53,13 +53,16 @@ az extension add --name aks-preview
 az extension update --name aks-preview
 ```
 
-## <a name="create-an-aks-cluster-with-managed-identities"></a>Создание кластера AKS с управляемыми удостоверениями
+## <a name="create-an-aks-cluster-with-azure-cni"></a>Создание кластера AKS с помощью Azure CNI
 
-Создайте кластер AKS с включенным управляемым удостоверением и удостоверением, управляемым на основе Pod. Следующие команды используют команду [AZ Group Create][az-group-create] для создания группы ресурсов с именем *myResourceGroup* и команды [AZ AKS Create][az-aks-create] для создания кластера AKS с именем *myAKSCluster* в группе ресурсов *myResourceGroup* .
+> [!NOTE]
+> Это рекомендуемая конфигурация по умолчанию
+
+Создание кластера AKS с включенным удостоверением Azure CNI и управлением на основе Pod. Следующие команды используют команду [AZ Group Create][az-group-create] для создания группы ресурсов с именем *myResourceGroup* и команды [AZ AKS Create][az-aks-create] для создания кластера AKS с именем *myAKSCluster* в группе ресурсов *myResourceGroup* .
 
 ```azurecli-interactive
 az group create --name myResourceGroup --location eastus
-az aks create -g myResourceGroup -n myAKSCluster --enable-managed-identity --enable-pod-identity --network-plugin azure
+az aks create -g myResourceGroup -n myAKSCluster --enable-pod-identity --network-plugin azure
 ```
 
 Для входа в кластер AKS используйте команду [AZ AKS Get-Credential][az-aks-get-credentials] . Эта команда также скачивает и настраивает `kubectl` сертификат клиента на компьютере разработчика.
@@ -67,6 +70,44 @@ az aks create -g myResourceGroup -n myAKSCluster --enable-managed-identity --ena
 ```azurecli-interactive
 az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
 ```
+
+## <a name="update-an-existing-aks-cluster-with-azure-cni"></a>Обновление существующего кластера AKS с помощью Azure CNI
+
+Обновите существующий кластер AKS с помощью Azure CNI, чтобы включить удостоверение, управляемое на основе Pod.
+
+```azurecli-interactive
+az aks update -g $MY_RESOURCE_GROUP -n $MY_CLUSTER --enable-pod-identity --network-plugin azure
+```
+## <a name="using-kubenet-network-plugin-with-azure-active-directory-pod-managed-identities"></a>Использование подключаемого модуля Кубенет Network Azure Active Directory с удостоверениями, управляемыми модулем Pod 
+
+> [!IMPORTANT]
+> Выполнение AAD-Pod-Identity в кластере с Кубенет не является рекомендуемой конфигурацией из-за неважности безопасности. Выполните действия по устранению рисков и настройте политики перед включением AAD-Pod-Identity в кластер с Кубенет.
+
+## <a name="mitigation"></a>Меры по снижению риска
+
+Чтобы устранить уязвимость на уровне кластера, можно использовать контроллер Опенполициажент, а также веб-перехватчик с проверкой привратника. Если у вас уже установлен привратник в кластере, добавьте Констраинттемплате типа K8sPSPCapabilities:
+
+```
+kubectl apply -f https://raw.githubusercontent.com/open-policy-agent/gatekeeper-library/master/library/pod-security-policy/capabilities/template.yaml
+```
+Добавьте шаблон, чтобы ограничить порождение модулей Pod с помощью функции NET_RAW:
+
+```
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sPSPCapabilities
+metadata:
+  name: prevent-net-raw
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    excludedNamespaces:
+      - "kube-system"
+  parameters:
+    requiredDropCapabilities: ["NET_RAW"]
+```
+
 ## <a name="create-an-aks-cluster-with-kubenet-network-plugin"></a>Создание кластера AKS с подключаемым модулем Кубенет Network
 
 Создайте кластер AKS с включенным сетевым подключаемым модулем Кубенет и удостоверением, управляемым на основе Pod.

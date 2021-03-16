@@ -10,12 +10,12 @@ ms.date: 12/07/2020
 ms.author: tamram
 ms.subservice: common
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 6d6a152096ce4e16849542c26d1c7a675a972b89
-ms.sourcegitcommit: 8b4b4e060c109a97d58e8f8df6f5d759f1ef12cf
+ms.openlocfilehash: baad1a0b173ae89fec9d160572224c6cb0aa615d
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96779079"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574634"
 ---
 # <a name="acquire-a-token-from-azure-ad-for-authorizing-requests-from-a-client-application"></a>Получение маркера из Azure AD для авторизации запросов из клиентского приложения
 
@@ -81,7 +81,7 @@ ms.locfileid: "96779079"
 
 ### <a name="enable-implicit-grant-flow"></a>Включить неявный поток предоставления разрешений
 
-Затем настройте неявный поток предоставления для приложения. Выполните следующие действия:
+Затем настройте неявный поток предоставления для приложения. Выполните следующие действия.
 
 1. Перейдите к регистрации приложения в портал Azure.
 1. В разделе **Управление** выберите параметр **Проверка подлинности** .
@@ -266,7 +266,7 @@ public async Task<IActionResult> Blob()
     "Domain": "<azure-ad-domain-name>.onmicrosoft.com",
     "TenantId": "<tenant-id>",
     "ClientId": "<client-id>",
-    "ClientSecret": "<client-secret>"
+    "ClientSecret": "<client-secret>",
     "ClientCertificates": [
     ],
     "CallbackPath": "/signin-oidc"

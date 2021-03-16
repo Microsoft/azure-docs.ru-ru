@@ -11,12 +11,12 @@ ms.author: peterlu
 author: peterclu
 ms.date: 10/23/2020
 ms.custom: contperf-fy20q4, tracking-python, contperf-fy21q1, devx-track-azurecli
-ms.openlocfilehash: 5d029f4328f955d64c5ce479e553769f8a107e45
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 1a1a9158c06a12caaeb5702f2fdf7da3c801c143
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102518574"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103573444"
 ---
 # <a name="secure-an-azure-machine-learning-inferencing-environment-with-virtual-networks"></a>Обеспечение безопасности Машинное обучение Azure окружения с помощью виртуальных сетей
 
@@ -35,7 +35,7 @@ ms.locfileid: "102518574"
 > - Кластер AKS с закрытой ссылкой
 > - Экземпляры контейнеров Azure (ACI)
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 + Ознакомьтесь со статьей [Обзор сетевой безопасности](how-to-network-security-overview.md) , чтобы ознакомиться с общими сценариями виртуальной сети и общей архитектурой виртуальной сети.
 
@@ -278,3 +278,5 @@ aks_target.wait_for_completion(show_output = True)
 * [Часть 2. Защита ресурсов рабочей области](how-to-secure-workspace-vnet.md)
 * [Часть 3. Защита среды обучения](how-to-secure-training-vnet.md)
 * [Часть 5. Включение функций Studio](how-to-enable-studio-virtual-network.md)
+
+См. также статью об использовании [ПОЛЬЗОВАТЕЛЬСКОГО DNS](how-to-custom-dns.md) для разрешения имен.

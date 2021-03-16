@@ -6,12 +6,12 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 12/10/2019
 ms.author: jingwang
-ms.openlocfilehash: 0462dac12d41fff667212902152b420d1460186d
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: f3184602bad8aabf654c8fa94d33372d08c11a66
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100383642"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103573206"
 ---
 # <a name="copy-data-from-an-http-endpoint-by-using-azure-data-factory"></a>Копирование данных с источника HTTP с помощью фабрики данных Azure
 
@@ -221,7 +221,7 @@ ms.locfileid: "100383642"
 | ------------------------ | ------------------------------------------------------------ | -------- |
 | type                     | Свойство Type в разделе `storeSettings` должно иметь значение **хттпреадсеттингс**. | Да      |
 | requestMethod            | Метод HTTP. <br>Допустимые значения: **GET** (по умолчанию) и **POST**. | Нет       |
-| аддтионалхеадерс         | Дополнительные заголовки HTTP-запроса.                             | Нет       |
+| additionalHeaders         | Дополнительные заголовки HTTP-запроса.                             | Нет       |
 | requestBody              | Текст HTTP-запроса.                               | нет       |
 | httpRequestTimeout           | Время ожидания (значение **Временной диапазон**) ответа для HTTP-запроса. Это значение является интервалом времени для получения ответа, а не считывания данных ответа. По умолчанию используется значение **00:01:40**. | Нет       |
 | maxConcurrentConnections | Количество одновременных подключений к хранилищу. Укажите, только если требуется ограничить одновременные подключения к хранилищу данных. | Нет       |

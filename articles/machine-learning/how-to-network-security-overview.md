@@ -11,12 +11,12 @@ author: peterclu
 ms.date: 03/02/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, references_regions, contperf-fy21q1
-ms.openlocfilehash: fcb678efe29178784c9233e79b307f705c40e3f7
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 1c3d9b286a8262efa126ba9c661c50dd88e78b64
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102518689"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103573478"
 ---
 # <a name="virtual-network-isolation-and-privacy-overview"></a>Общие сведения о изоляции и конфиденциальности виртуальной сети
 
@@ -28,7 +28,7 @@ ms.locfileid: "102518689"
 
 **1. Обзор виртуальной сети**  >  [2. Обеспечьте безопасность рабочей области](how-to-secure-workspace-vnet.md)  >  [3. Обеспечьте безопасность среды обучения](how-to-secure-training-vnet.md)  >  [4. Обеспечьте безопасность окружения](how-to-secure-inferencing-vnet.md)  >  [5. Включить функциональные возможности студии](how-to-enable-studio-virtual-network.md)
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 В этой статье предполагается, что вы знакомы со следующими разделами:
 + [Виртуальные сети Azure](../virtual-network/virtual-networks-overview.md)
@@ -36,7 +36,6 @@ ms.locfileid: "102518689"
 + [Приватный канал Azure](how-to-configure-private-link.md)
 + [Группы безопасности сети (NSG)](../virtual-network/network-security-groups-overview.md)
 + [Сетевые брандмауэры](../firewall/overview.md)
-
 ## <a name="example-scenario"></a>Пример сценария
 
 В этом разделе вы узнаете, как настроить общий сетевой сценарий для защиты Машинное обучение Azure связи с частными IP-адресами.
@@ -62,8 +61,8 @@ ms.locfileid: "102518689"
 1. Обеспечьте безопасность [**среды обучения**](#secure-the-training-environment).
 1. Обеспечьте безопасность [**окружения**](#secure-the-inferencing-environment).
 1. Дополнительно: [**Включение функциональных возможностей Studio**](#optional-enable-studio-functionality).
-1. Настройка [ **параметров брандмауэра**](#configure-firewall-settings)
-
+1. Настройка [**параметров брандмауэра**](#configure-firewall-settings).
+1. Настройте [разрешение DNS-имен](#custom-dns).
 ## <a name="secure-the-workspace-and-associated-resources"></a>Защита рабочей области и связанных ресурсов
 
 Чтобы защитить рабочую область и связанные с ней ресурсы, выполните следующие действия. Эти действия позволяют службам взаимодействовать в виртуальной сети.
@@ -186,3 +185,5 @@ ms.locfileid: "102518689"
 * [Часть 3. Защита среды обучения](how-to-secure-training-vnet.md)
 * [Часть 4. Защита окружения](how-to-secure-inferencing-vnet.md)
 * [Часть 5. Включение функций Studio](how-to-enable-studio-virtual-network.md)
+
+См. также статью об использовании [ПОЛЬЗОВАТЕЛЬСКОГО DNS](how-to-custom-dns.md) для разрешения имен.

@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 03/06/2021
 ms.author: duau
 ms.custom: seodec18
-ms.openlocfilehash: 15ec8417ba5e2858b45176f0a214f6126209f942
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 3b6ed39c11e3f90b986ef904ff3f8e9ff3158d0d
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102449753"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574175"
 ---
 # <a name="configure-expressroute-and-site-to-site-coexisting-connections-using-powershell"></a>Настройка параллельных подключений "сеть — сеть" и ExpressRoute с помощью PowerShell
 > [!div class="op_single_selector"]
@@ -250,9 +250,9 @@ VPN-подключение типа "сеть-сеть" можно настро�
 
    ```azurepowershell-interactive
    $azureVpn = Get-AzVirtualNetworkGateway -Name "VPNGateway" -ResourceGroupName $resgrp.ResourceGroupName
-   Set-AzVirtualNetworkGatewayVpnClientConfig -VirtualNetworkGateway $azureVpn -VpnClientAddressPool "10.251.251.0/24"
+   Set-AzVirtualNetworkGateway -VirtualNetworkGateway $azureVpn -VpnClientAddressPool "10.251.251.0/24"
    ```
-2. Отправьте корневой сертификат VPN в Azure для VPN-шлюза. В этом примере предполагается, что корневой сертификат хранится на локальном компьютере, где выполняются следующие командлеты PowerShell и вы используете PowerShell локально. Также можно передать сертификат с помощью портал Azure.
+2. Отправьте [корневой сертификат](../vpn-gateway/vpn-gateway-howto-point-to-site-rm-ps.md#Certificates) VPN в Azure для VPN-шлюза. В этом примере предполагается, что корневой сертификат хранится на локальном компьютере, где выполняются следующие командлеты PowerShell и вы используете PowerShell локально. Также можно передать сертификат с помощью портал Azure.
 
    ```powershell
    $p2sCertFullName = "RootErVpnCoexP2S.cer" 

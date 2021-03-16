@@ -5,13 +5,13 @@ author: jseb225
 ms.author: jeanb
 ms.service: stream-analytics
 ms.topic: how-to
-ms.date: 03/16/2020
-ms.openlocfilehash: b9768bacf8d29b37f479ea080afddd494b506262
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.date: 01/15/2021
+ms.openlocfilehash: 1ee1411aba7724d76ed8626de9b8b038d02339dc
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98013946"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574260"
 ---
 # <a name="scale-your-stream-analytics-job-with-azure-machine-learning-studio-classic-functions"></a>Масштабирование заданий Stream Analytics с помощью функций Студии машинного обучения Azure (классической)
 
@@ -24,7 +24,7 @@ ms.locfileid: "98013946"
 
 Функцию Машинное обучение Studio (классическая модель) в Stream Analytics можно использовать как обычный вызов функции на языке Stream Analytics запросов. Однако в фоновом режиме эти вызовы функций фактически являются запросами веб-службы Studio (классические).
 
-Вы можете повысить пропускную способность запросов веб-службы Studio (классической) путем пакетной обработки нескольких строк вместе в одном вызове API веб-службы. Такая группировка называется мини-пакетом. Дополнительные сведения см. в разделе [Веб-службы Студии машинного обучения Azure Studio (классической)](../machine-learning/classic/consume-web-services.md). Поддержка для студии (классическая модель) в Stream Analytics доступна в предварительной версии.
+Вы можете повысить пропускную способность запросов веб-службы Studio (классической) путем пакетной обработки нескольких строк вместе в одном вызове API веб-службы. Такая группировка называется мини-пакетом. Дополнительные сведения см. в разделе [Веб-службы Студии машинного обучения Azure Studio (классической)](../machine-learning/classic/consume-web-services.md). Поддержка Studio (классической) в Stream Analytics.
 
 ## <a name="configure-a-stream-analytics-job-with-studio-classic-functions"></a>Настройка задания Stream Analytics с помощью функций студии (классическая модель)
 
@@ -51,7 +51,7 @@ ms.locfileid: "98013946"
 
 ![Масштабирование Stream Analytics с помощью функций Studio (классическая модель) два примера задания](./media/stream-analytics-scale-with-ml-functions/stream-analytics-scale-with-ml-functions-00.png "Масштабирование Stream Analytics с помощью функций Studio (классическая модель) два примера задания")
 
-В общем, **_B_* _ для размера пакета, _*_L_*_ для задержки веб-службы в пакетном режиме B в миллисекундах пропускная способность Stream Analytics задания с _*_N_*_ копиями SUs:
+Как правило, ***B** _ для размера пакета, _*_L_*_ для задержки веб-службы в пакетной службе размером в миллисекундах, пропускная способность Stream Analyticsного задания с помощью _ *_N_** SUs:
 
 ![Формула масштабирования Stream Analytics с помощью функции Studio (классическая модель)](./media/stream-analytics-scale-with-ml-functions/stream-analytics-scale-with-ml-functions-02.png "Формула масштабирования Stream Analytics с помощью функции Studio (классическая модель)")
 
@@ -62,7 +62,7 @@ ms.locfileid: "98013946"
 ## <a name="example--sentiment-analysis"></a>Пример: анализ мнений
 Следующий пример включает задание Stream Analytics с функцией тональности Analysis Studio (классическая модель), как описано в [руководстве по интеграции Stream Analytics машинное обучение Studio (классическая модель)](stream-analytics-machine-learning-integration-tutorial.md).
 
-Запрос представляет собой простой полностью секционированный запрос, за которым следует функция _ *тональности**, как показано в следующем примере:
+Запрос представляет собой простой полностью секционированный запрос, за которым следует функция **sentiment**, как показано в следующем примере:
 
 ```SQL
     WITH subquery AS (
