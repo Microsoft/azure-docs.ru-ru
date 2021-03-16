@@ -56,7 +56,7 @@ ms.locfileid: "102485764"
 
 ## <a name="powershell"></a>PowerShell
 
-Чтобы использовать временный диск для развертывания виртуальной машины PowerShell, используйте [Set-азвмосдиск](/powershell/module/az.compute/set-azvmosdisk) в конфигурации виртуальной машины. Задайте `-DiffDiskSetting` для значение `Local` и `-Caching` равным `ReadOnly` .     
+Чтобы использовать временный диск для развертывания виртуальной машины PowerShell, используйте [Set-AzVMOSDisk](/powershell/module/az.compute/set-azvmosdisk) в конфигурации виртуальной машины. Задайте `-DiffDiskSetting` для значение `Local` и `-Caching` равным `ReadOnly` .     
 
 ```powershell
 Set-AzVMOSDisk -DiffDiskSetting Local -Caching ReadOnly
