@@ -7,12 +7,12 @@ ms.service: security-center
 ms.topic: overview
 ms.date: 03/31/2020
 ms.author: memildin
-ms.openlocfilehash: 65f383b37b6fb5c89fb987f179d7900eb667d76e
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: 88dc0760f320a99b0cbc99b7637dc34dd11dfecc
+ms.sourcegitcommit: 33ac5cd254c33659f668a76a2e295fddcd5d194d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102438290"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103465452"
 ---
 # <a name="supported-platforms"></a>Поддерживаемые платформы 
 
@@ -51,7 +51,7 @@ ms.locfileid: "102438290"
 
 Виртуальные машины, запущенные в облачной службе, также поддерживаются. Мониторинг выполняется только для облачных служб и рабочих ролей, запущенных в слотах рабочей среды. Дополнительные сведения см. в статье [Общие сведения об облачных службах Azure](../cloud-services/cloud-services-choose-me.md).
 
-Кроме того, обеспечивается защита виртуальных машин, находящихся в Azure Stack. Дополнительные сведения об интеграции Центра безопасности с Azure Stack см. в разделе [Подключение виртуальных машин Azure Stack к Центру безопасности](quickstart-onboard-machines.md). 
+Кроме того, обеспечивается защита виртуальных машин, находящихся в Azure Stack Hub. Дополнительные сведения об интеграции Центра безопасности с Azure Stack Hub см. в разделе [Подключение виртуальных машин Azure Stack Hub к Центру безопасности](quickstart-onboard-machines.md?pivots=azure-portal#onboard-your-azure-stack-hub-vms). 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

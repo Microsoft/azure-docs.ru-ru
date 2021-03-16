@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/08/2021
+ms.date: 03/15/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 3082c249b04b5efc71187dd03515bc8c875b7c2f
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 292a244a4804f97e8622d6841c33b153af373290
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102448597"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103489174"
 ---
 # <a name="add-ad-fs-as-a-saml-identity-provider-using-custom-policies-in-azure-active-directory-b2c"></a>Добавление AD FS в качестве поставщика удостоверений SAML с помощью пользовательских политик в Azure Active Directory B2C
 
@@ -40,7 +40,7 @@ ms.locfileid: "102448597"
 
 [!INCLUDE [active-directory-b2c-customization-prerequisites-custom-policy](../../includes/active-directory-b2c-customization-prerequisites-custom-policy.md)]
 
-## <a name="create-a-self-signed-certificate"></a>Создание самозаверяющего сертификата
+## <a name="create-a-self-signed-certificate"></a>Создание самозаверяющего сертификата.
 
 [!INCLUDE [active-directory-b2c-create-self-signed-certificate](../../includes/active-directory-b2c-create-self-signed-certificate.md)]
 
@@ -156,9 +156,16 @@ ms.locfileid: "102448597"
 https://your-tenant-name.b2clogin.com/your-tenant-name.onmicrosoft.com/your-policy/samlp/metadata?idptp=your-technical-profile
 ```
 
+При использовании [пользовательского домена](custom-domain.md)используйте следующий формат:
+
+```
+https://your-domain-name/your-tenant-name.onmicrosoft.com/your-policy/samlp/metadata?idptp=your-technical-profile
+```
+
 Измените следующие значения:
 
-- **ваш клиент** с именем клиента, например Your-tenant.onmicrosoft.com.
+- **имя** клиента с именем клиента, например Your-tenant.onmicrosoft.com.
+- **имя вашего домена** с именем пользовательского домена, например Login.contoso.com.
 - **your-policy** — именем собственной политики. Например, B2C_1A_signup_signin_adfs.
 - **ваш-технический профиль** с именем технического профиля поставщика удостоверений SAML. Например, Contoso-SAML2.
 
@@ -190,7 +197,7 @@ https://your-tenant-name.b2clogin.com/your-tenant-name.onmicrosoft.com/your-poli
 13. В диспетчер сервера выберите **инструменты**, а затем выберите **AD FS управление**.
 14. Выберите созданное отношение доверия проверяющей стороны, щелкните **Update from Federation Metadata** (Обновить с метаданных федерации), а затем выберите **Обновить**.
 
-## <a name="test-your-custom-policy"></a>Тестирование пользовательской политики
+## <a name="test-your-custom-policy"></a>Тестирование настраиваемой политики
 
 1. Войдите на [портал Azure](https://portal.azure.com).
 1. Выберите значок **Каталог и подписка** в верхней панели инструментов портала, а затем выберите каталог, содержащий клиент Azure AD B2C.

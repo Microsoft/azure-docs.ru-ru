@@ -6,14 +6,14 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: how-to
-ms.date: 03/08/2021
+ms.date: 03/12/2021
 ms.author: alkohli
-ms.openlocfilehash: 8be0a444dca4cae9b8f7a1e7c04be8a3046e56be
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: 348ddff56ed61cd608d6b9f28417e7cd4c4e6b13
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102639078"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563969"
 ---
 # <a name="configure-and-run-a-module-on-gpu-on-azure-stack-edge-pro-device"></a>Настройка и запуск модуля на GPU на устройстве Azure Stack ребра Pro
 
@@ -104,7 +104,7 @@ ms.locfileid: "102639078"
        Дополнительные сведения о переменных среды, которые можно использовать с графическим процессором NVIDIA, см. в подразделе " [Среда выполнения контейнера NVIDIA](https://github.com/NVIDIA/nvidia-container-runtime#environment-variables-oci-spec)".
 
     > [!NOTE]
-    > GPU можно сопоставить только с одним модулем. В модуле можно использовать один и тот же или не GPU.
+    > Модуль может использовать один, как, так и без GPU.
 
 12. Введите имя модуля. На этом этапе можно указать параметр создать контейнер и изменить параметры двойникаа модуля или, если это сделано, нажать кнопку **Добавить**. 
 

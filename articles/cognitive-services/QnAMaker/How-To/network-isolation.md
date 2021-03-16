@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 11/09/2020
-ms.openlocfilehash: 731d94aa76146bf06a03842e8f3907d1762eeca3
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.openlocfilehash: afb396bc364a2fa2db923fbcbe6bfe1b7aedbc26
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225614"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103467550"
 ---
 # <a name="recommended-settings-for-network-isolation"></a>Рекомендуемые параметры для сетевой изоляции
 
@@ -22,8 +22,7 @@ ms.locfileid: "103225614"
 
 #### <a name="add-ips-to-app-service-allow-list"></a>Добавление IP-адресов в список разрешений службы приложений
 
-1. 
-трафик только от Cognitive Services IP-адресов. Они уже включены в тег службы `CognitiveServicesManagement` . Это необходимо для создания API-интерфейсов (создания или обновления базы знаний), чтобы вызвать службу приложений и соответствующим образом обновить службу поиска Azure. Ознакомьтесь с [дополнительными сведениями о тегах служб.](../../../virtual-network/service-tags-overview.md)
+1. Разрешать трафик только с Cognitive Services IP-адресов. Они уже включены в тег службы `CognitiveServicesManagement` . Это необходимо для создания API-интерфейсов (создания или обновления базы знаний), чтобы вызвать службу приложений и соответствующим образом обновить службу поиска Azure. Ознакомьтесь с [дополнительными сведениями о тегах служб.](../../../virtual-network/service-tags-overview.md)
 2. Убедитесь, что вы также Разрешите другим точкам входа, таким как служба Azure Bot, QnA Maker портал и т. д., для доступа к API прогнозирования "Женератеансвер".
 3. Чтобы добавить диапазоны IP-адресов в список разрешений, выполните следующие действия:
 

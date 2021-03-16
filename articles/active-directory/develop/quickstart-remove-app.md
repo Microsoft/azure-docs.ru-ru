@@ -13,12 +13,12 @@ ms.date: 11/15/2020
 ms.author: ryanwi
 ms.custom: aaddev
 ms.reviewer: marsma, aragra, lenalepa, sureshja
-ms.openlocfilehash: a0543905f41abc9c21327159d63f7adaa5b025dc
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: e04884c078bd9a5693ddcbc4e71470bb23e13d60
+ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101645897"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103199798"
 ---
 # <a name="how-to-remove-an-application-registered-with-the-microsoft-identity-platform"></a>Удаление приложения, зарегистрированного с помощью платформы удостоверений Майкрософт
 
@@ -47,7 +47,8 @@ ms.locfileid: "101645897"
 1. Найдите и выберите **Azure Active Directory**. 
 1. В разделе **Управление** выберите **Регистрация приложений** и выберите приложение, которое требуется настроить. После выбора приложения появится страница **Обзор** приложения.
 1. На странице **Обзор** выберите **Удалить**.
-1. Выберите **Да**, чтобы подтвердить удаление приложения.
+1. Прочтите о последствиях удаления.  Установите флажок, если он отображается в нижней части области.
+1. Выберите команду **Удалить**, чтобы подтвердить удаление приложения.
 
 ## <a name="remove-an-application-authored-by-another-organization"></a>Удаление приложения, созданного другой организацией
 

@@ -4,14 +4,15 @@ description: Описывает, как извлечь базу данных Pos
 author: sr-msft
 ms.author: srranga
 ms.service: postgresql
+ms.subservice: migration-guide
 ms.topic: how-to
 ms.date: 09/22/2020
-ms.openlocfilehash: 4fe15d1bd23f36b7289c54bedf575ae4760600e0
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 16166183b56b371fe8338894f83dbacf2e659c53
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91710810"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563561"
 ---
 # <a name="migrate-your-postgresql-database-using-dump-and-restore"></a>Перенос базы данных PostgreSQL с помощью дампа и ее восстановление
 [!INCLUDE[applies-to-postgres-single-flexible-server](includes/applies-to-postgres-single-flexible-server.md)]
@@ -73,7 +74,7 @@ pg_restore -v --no-owner --host=mydemoserver.postgres.database.azure.com --port=
 >
 
 ### <a name="for-the-backup"></a>Для резервного копирования
-- Создайте резервную копию с использованием параметра -Fc, чтобы вы могли выполнять восстановление параллельно, что позволит ускорить его. Пример:
+- Создайте резервную копию с использованием параметра -Fc, чтобы вы могли выполнять восстановление параллельно, что позволит ускорить его. Пример.
 
     ```bash
     pg_dump -h my-source-server-name -U source-server-username -Fc -d source-databasename -f Z:\Data\Backups\my-database-backup.dump
@@ -84,7 +85,7 @@ pg_restore -v --no-owner --host=mydemoserver.postgres.database.azure.com --port=
 
 - Это должно происходить по умолчанию, но откройте файл дампа, чтобы проверить, что инструкции создания индекса находятся после вставленных данных. Если это не так, переместите инструкции создания индекса после вставленных данных.
 
-- Для параллелизации восстановления необходимо выполнить восстановление с помощью коммутаторов-FC и-j *#* . *#* число ядер на целевом сервере. Также можно попробовать *#* установить в два раза больше, чем количество ядер целевого сервера, чтобы увидеть влияние. Пример:
+- Для параллелизации восстановления необходимо выполнить восстановление с помощью коммутаторов-FC и-j *#* . *#* число ядер на целевом сервере. Также можно попробовать *#* установить в два раза больше, чем количество ядер целевого сервера, чтобы увидеть влияние. Пример.
 
 Ниже приведен пример использования этого **pg_restore** для **одного сервера**:
 ```bash
@@ -106,6 +107,6 @@ pg_restore -v --no-owner --host=mydemoserver.postgres.database.azure.com --port=
 
 Не забудьте проверить и протестировать эти команды в тестовой среде, прежде чем использовать их в рабочей среде.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Сведения о миграции базы данных PostgreSQL с помощью экспорта и импорта см. в статье [Перенос базы данных PostgreSQL с помощью экспорта и импорта](howto-migrate-using-export-and-import.md).
 - Дополнительные сведения о переносе баз данных в службу "База данных Azure для PostgreSQL" см. в [этой статье](https://aka.ms/datamigration).

@@ -8,7 +8,7 @@
     - name: Новые возможности
       href: whats-new.md
 - name: Начало работы с Распознавателем документов
-  expaned: true
+  expanded: true
   items:
     - name: "Использование клиентской библиотеки или REST\_API"
       href: quickstarts/client-library.md
@@ -26,18 +26,27 @@
       href: tutorial-bulk-processing.md
 - name: Основные понятия
   items:
-    - name: Извлечение макета
-      href: concept-layout.md
+    - name: API макета
+      expanded: true
+      items:
+        - name: Извлечение из данных
+          href: concept-layout.md
+    - name: Настраиваемые модели
+      href: concept-custom.md
     - name: Receipts
       href: concept-receipts.md
     - name: Визитные карточки
       href: concept-business-cards.md
     - name: Счета
       href: concept-invoices.md
+    - name: Карточки идентификации
+      href: concept-identification-cards.md
 - name: Практические руководства
   items:
     - name: Создание набора данных для обучения
       href: build-training-data-set.md
+    - name: Обучение пользовательской модели с использованием тегов та блиц
+      href: supervised-table-tags.md
     - name: Развертывание примера средства создания меток
       href: deploy-label-tool.md
     - name: Использование контейнеров
@@ -57,8 +66,8 @@
       href: disaster-recovery.md
 - name: Справочник
   items:
-    - name: API Распознавателя документов версии 2.1 (предварительная версия)
-      href: 'https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-2/operations/AnalyzeBusinessCardAsync'
+    - name: "API \"Распознаватель документов\" версии\_2.1 (предварительная версия\_3)"
+      href: 'https://westus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/AnalyzeWithCustomForm'
     - name: API Распознавателя документов версии 2.0
       href: 'https://westus2.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2/operations/AnalyzeWithCustomForm'
     - name: Пакеты SDK

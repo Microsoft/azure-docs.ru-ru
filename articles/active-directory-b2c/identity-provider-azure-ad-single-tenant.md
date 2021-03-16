@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/08/2021
+ms.date: 03/15/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.custom: fasttrack-edit, project-no-code
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: dc824c7e4caa2a634a60f7d8a69870ddd961998c
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 497b171cad956dee23139bcfb0ec76fad82bfb33
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102448478"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103488974"
 ---
 # <a name="set-up-sign-in-for-a-specific-azure-active-directory-organization-in-azure-active-directory-b2c"></a>Настройка входа для определенной организации Azure Active Directory в Azure Active Directory B2C
 
@@ -53,6 +53,8 @@ ms.locfileid: "102448478"
     ```
 
     Например, `https://fabrikam.b2clogin.com/fabrikam.onmicrosoft.com/oauth2/authresp`.
+
+    Если используется [личный домен](custom-domain.md), введите `https://your-domain-name/your-tenant-name.onmicrosoft.com/oauth2/authresp` . Замените `your-domain-name` пользовательским доменом и `your-tenant-name` именем своего клиента.
 
 1. Выберите **Зарегистрировать**. Запишите значение параметра **Идентификатор приложения (клиент)** . Оно вам потребуется в дальнейшем.
 1. Выберите **сертификаты & секреты**, а затем выберите **новый секрет клиента**.
@@ -223,7 +225,7 @@ ms.locfileid: "102448478"
 
 [!INCLUDE [active-directory-b2c-configure-relying-party-policy](../../includes/active-directory-b2c-configure-relying-party-policy-user-journey.md)]
 
-## <a name="test-your-custom-policy"></a>Тестирование пользовательской политики
+## <a name="test-your-custom-policy"></a>Тестирование настраиваемой политики
 
 1. Выберите политику проверяющей стороны, например `B2C_1A_signup_signin` .
 1. Для **приложения** выберите [ранее зарегистрированное](troubleshoot-custom-policies.md#troubleshoot-the-runtime)веб-приложение. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.

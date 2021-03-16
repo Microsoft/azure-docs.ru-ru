@@ -5,16 +5,16 @@ author: alkohli
 services: storage
 ms.service: storage
 ms.topic: how-to
-ms.date: 03/03/2021
+ms.date: 03/15/2021
 ms.author: alkohli
 ms.subservice: common
 ms.custom: devx-track-azurepowershell, devx-track-azurecli, contperf-fy21q3
-ms.openlocfilehash: 77a1c02c1ec59778521104e57f3bf3de8e52fa44
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 74f5565ba9dfa48dabfe56c25e3ef30a8caafe14
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102177420"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563289"
 ---
 # <a name="use-the-azure-importexport-service-to-import-data-to-azure-blob-storage"></a>Использование службы "Импорт и экспорт Azure" для импорта данных в хранилище BLOB-объектов Azure
 
@@ -60,7 +60,7 @@ ms.locfileid: "102177420"
 
    * Если вы добавили данные на диск, который был зашифрован с помощью средства WAImportExport, используйте следующую команду для разблокировки диска:
 
-        `WAImportExport Unlock /externalKey:<BitLocker key (base 64 string) copied from journal (*.jrn*) file>`
+        `WAImportExport Unlock /bk:<BitLocker key (base 64 string) copied from journal (*.jrn*) file>`
 
 5. Откройте PowerShell или окно командной строки с правами администратора. Чтобы перейти в распакованную папку, выполните следующую команду:
 
@@ -154,7 +154,7 @@ ms.locfileid: "102177420"
 
    1. Просмотрите **условия**, а затем выберите «я подтверждаю, что все предоставленные сведения верны и согласны с условиями». Затем выполняется проверка.
    1. Просмотрите сведения о задании, предоставленные в сводке. Запишите имя задания и адрес центра обработки данных Azure для отправки дисков обратно в Azure. Эта информация указывается позже на транспортной этикетке.
-   1. Нажмите кнопку **создания**.
+   1. Нажмите кнопку **Создать**.
 
      ![Создание задания импорта — шаг 4](./media/storage-import-export-data-to-blobs/import-to-blob-6.png)
 

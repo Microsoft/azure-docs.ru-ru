@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/09/2020
 ms.author: mlottner
-ms.openlocfilehash: ec26cd0b66b6d08d8bd686d8f3e5ad8011df10b1
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: f2251ef79f568677d6ef09d918cb61ffeba07888
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102449770"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103494552"
 ---
 # <a name="deploy-defender-for-iot-c-based-security-agent-for-linux"></a>Развертывание агента безопасности на основе C# для Azure IoT для Linux
 
@@ -38,7 +38,7 @@ ms.locfileid: "102449770"
 
 1. Для развертывания агента безопасности требуются права локального администратора на компьютере, используемом для установки.
 
-1. [Создайте модуль безопасности](quickstart-create-security-twin.md) для устройства.
+1. [Создайте защитник-IOT-Micro-Agent](quickstart-create-security-twin.md) для устройства.
 
 ## <a name="installation"></a>Установка
 
@@ -79,7 +79,7 @@ ms.locfileid: "102449770"
 > [!NOTE]
 > Удаление не приводит к удалению всех ранее отсутствующих необходимых компонентов, которые были установлены во время установки.
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 1. Проверьте состояние развертывания, выполнив следующую команду:
 

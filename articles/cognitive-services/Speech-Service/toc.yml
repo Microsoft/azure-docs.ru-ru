@@ -61,6 +61,8 @@
           href: how-to-custom-speech-continuous-integration-continuous-deployment.md
         - name: Создание транскрипций с подписями человека
           href: how-to-custom-speech-human-labeled-transcriptions.md
+        - name: Жизненный цикл модели и конечной точки
+          href: how-to-custom-speech-model-and-endpoint-lifecycle.md
     - name: Справочник
       items:
         - name: C++
@@ -529,6 +531,8 @@
           displayName: 'ACI,azure container instances,container instances,containers'
           maintainContext: true
           href: ../containers/azure-container-instance-recipe.md
+        - name: Часто задаваемые вопросы о контейнерах
+          href: speech-container-faq.md
         - name: Документация по контейнерам Cognitive Services
           href: ../containers/index.yml
 - name: Устройства

@@ -9,16 +9,16 @@ ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
 ms.custom: project-no-code
-ms.date: 03/08/2021
+ms.date: 03/15/2021
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 5880b6f44caec053aef292960cecbf64f25c6743
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 3e1eaf4f97b9b04ed02aeb3c6de65b90bf4947e1
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102448580"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103489157"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-an-amazon-account-using-azure-active-directory-b2c"></a>Настройка регистрации и входа с учетной записью Amazon через Azure Active Directory B2C
 
@@ -38,12 +38,17 @@ ms.locfileid: "102448580"
 
 Чтобы включить вход для пользователей с учетной записью Amazon в Azure Active Directory B2C (Azure AD B2C), необходимо создать приложение в [службах и технологиях Amazon Developer](https://developer.amazon.com). Дополнительные сведения см. в разделе [Регистрация для входа с помощью Amazon](https://developer.amazon.com/docs/login-with-amazon/register-web.html). Если у вас еще нет учетной записи Amazon, вы можете зарегистрироваться по адресу [https://www.amazon.com/](https://www.amazon.com/) .
 
-> [!NOTE]  
-> Используйте следующие URL-адреса на **шаге 8** ниже, заменив `your-tenant-name` именем своего клиента. При вводе имени клиента используйте все строчные буквы, даже если клиент определен с прописными буквами в Azure AD B2C.
-> - Для **разрешенных источников** введите `https://your-tenant-name.b2clogin.com` 
-> - Для **разрешенных URL-адресов возврата** введите `https://your-tenant-name.b2clogin.com/your-tenant-name.onmicrosoft.com/oauth2/authresp`
-
-[!INCLUDE [identity-provider-amazon-idp-register.md](../../includes/identity-provider-amazon-idp-register.md)]
+1. Войдите в [Консоль разработчика Amazon](https://developer.amazon.com/dashboard) с помощью учетной записи Amazon.
+1. Если вы еще не сделали этого, выберите **зарегистрироваться**, следуйте инструкциям по регистрации для разработчиков и примите политику.
+1. На панели мониторинга выберите **имя входа в Amazon**.
+1. Щелкните **Create a New Security Profile** (Создать профиль безопасности).
+1. Введите **имя профиля безопасности**, **Описание профиля безопасности** и **URL-адрес уведомления о конфиденциальности согласия**, например `https://www.contoso.com/privacy` URL-адрес уведомления о конфиденциальности — это страница, которую вы управляете, которая предоставляет пользователям сведения о конфиденциальности. Затем нажмите кнопку **Сохранить**.
+1. В разделе **Вход с настройками Amazon** выберите созданное **имя профиля безопасности** , щелкните значок **Управление** , а затем выберите **веб-параметры**.
+1. В разделе **Web Settings** (Веб-параметры) скопируйте значение **Client ID** (Идентификатор клиента). Выберите параметр **Показывать секрет** , чтобы получить секрет клиента, а затем скопируйте его. Оба значения необходимы для настройки учетной записи Amazon в качестве поставщика удостоверений в клиенте. **Секрет клиента**— важный элемент обеспечения безопасности.
+1. В разделе **веб-параметры** выберите **изменить**. 
+    1. В списке **Разрешенные источники** введите `https://your-tenant-name.b2clogin.com` . Замените `your-tenant-name` именем вашего клиента. Если используется [личный домен](custom-domain.md), введите `https://your-domain-name` .
+    1.  **Допустимые URL-адреса возврата** , введите `https://your-tenant-name.b2clogin.com/your-tenant-name.onmicrosoft.com/oauth2/authresp` .  Если используется [личный домен](custom-domain.md), введите `https://your-domain-name/your-tenant-name.onmicrosoft.com/oauth2/authresp` .  Замените `your-tenant-name` именем своего клиента и `your-domain-name` личным доменом.
+1. Щелкните **Сохранить**.
 
 ::: zone pivot="b2c-user-flow"
 
@@ -165,7 +170,7 @@ ms.locfileid: "102448580"
 
 [!INCLUDE [active-directory-b2c-configure-relying-party-policy](../../includes/active-directory-b2c-configure-relying-party-policy-user-journey.md)]
 
-## <a name="test-your-custom-policy"></a>Тестирование пользовательской политики
+## <a name="test-your-custom-policy"></a>Тестирование настраиваемой политики
 
 1. Выберите политику проверяющей стороны, например `B2C_1A_signup_signin` .
 1. Для **приложения** выберите [ранее зарегистрированное](troubleshoot-custom-policies.md#troubleshoot-the-runtime)веб-приложение. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.

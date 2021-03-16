@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/09/2020
 ms.author: mlottner
-ms.openlocfilehash: a4223dbc913b7b46cf73c0ed99f607fff67b7e67
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: e7c7fdd5874dbde5ca304309d0840724cb3872df
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102448070"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103494535"
 ---
 # <a name="deploy-a-defender-for-iot-c-based-security-agent-for-windows"></a>Развертывание агента безопасности на основе C# для Windows IoT
 
@@ -38,7 +38,7 @@ ms.locfileid: "102448070"
 
 1. Права локального администратора на компьютере, на котором вы хотите установить.
 
-1. [Создайте модуль безопасности](quickstart-create-security-twin.md) для устройства.
+1. [Создайте защитник-IOT-Micro-Agent](quickstart-create-security-twin.md) для устройства.
 
 ## <a name="installation"></a>Установка
 
@@ -96,7 +96,7 @@ Get-Help пример:    ```Get-Help .\InstallSecurityAgent.ps1```
     .\InstallSecurityAgent.ps1 -Uninstall
     ```
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 Если агент не запускается, включите ведение журнала (по умолчанию ведение журнала *отключено*), чтобы просмотреть дополнительные сведения.
 
@@ -124,7 +124,7 @@ Get-Help пример:    ```Get-Help .\InstallSecurityAgent.ps1```
      Restart-Service "ASC IoT Agent"
      ```
 
-   или
+   или диспетчер конфигурации служб
 
     **CMD**
 

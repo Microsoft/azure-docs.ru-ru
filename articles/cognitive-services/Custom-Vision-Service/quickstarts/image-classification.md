@@ -1,22 +1,22 @@
 ---
 title: Краткое руководство. Классификация изображений с помощью клиентской библиотеки для службы "Пользовательское визуальное распознавание" или REST API
 titleSuffix: Azure Cognitive Services
-description: Краткое руководство. Создание проекта классификации изображений, добавление тегов, отправка изображений, обучение проекта и выполнение прогнозирования с использованием клиентской библиотеки для службы "Пользовательское визуальное распознавание" или REST API с помощью cURL
+description: Краткое руководство. Создание проекта классификации изображений, добавление тегов, отправка изображений, обучение проекта и выполнение прогнозирования с использованием клиентской библиотеки для службы "Пользовательское визуальное распознавание" или REST API
 author: PatrickFarley
 ms.author: pafarley
 ms.service: cognitive-services
 ms.subservice: custom-vision
 ms.topic: quickstart
-ms.date: 10/25/2020
+ms.date: 02/25/2021
 ms.custom: devx-track-python, devx-track-js, devx-track-csharp, cog-serv-seo-aug-2020
 keywords: Пользовательское визуальное распознавание, распознавание изображений, приложение для распознавания изображений, анализ изображений, ПО для распознавания изображений
 zone_pivot_groups: programming-languages-set-cusvis
-ms.openlocfilehash: 30ed0afe258b0952a7ff312e48c24027d1fc4b93
-ms.sourcegitcommit: 1140ff2b0424633e6e10797f6654359947038b8d
+ms.openlocfilehash: e99d15a48946706585879e9a1eaaf24bb2edfdef
+ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97813740"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102184307"
 ---
 # <a name="quickstart-create-an-image-classification-project-with-the-custom-vision-client-library-or-rest-api"></a>Краткое руководство. Создание проекта классификации изображений с помощью клиентской библиотеки для службы "Пользовательское визуальное распознавание" или REST API
 

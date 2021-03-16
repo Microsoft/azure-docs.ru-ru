@@ -9,12 +9,12 @@ ms.author: ericg
 ms.service: app-service
 ms.workload: web
 ms.custom: fasttrack-edit, references_regions
-ms.openlocfilehash: 4534a315429a120af45dfd495df4a8c29b233de7
-ms.sourcegitcommit: 3c3ec8cd21f2b0671bcd2230fc22e4b4adb11ce7
+ms.openlocfilehash: 8d471b680a6ff97b4b96a9c5f90f5548488dd35f
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98763035"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563617"
 ---
 # <a name="using-private-endpoints-for-azure-web-app"></a>Использование частных конечных точек для веб-приложения Azure
 
@@ -70,8 +70,8 @@ ms.locfileid: "98763035"
 
 |Имя |Тип |Значение |
 |-----|-----|------|
-|mywebapp.azurewebsites.net|CNAME|clustername.azurewebsites.windows.net|
-|clustername.azurewebsites.windows.net|CNAME|cloudservicename.cloudapp.net|
+|mywebapp.azurewebsites.net|CNAME.|clustername.azurewebsites.windows.net|
+|clustername.azurewebsites.windows.net|CNAME.|cloudservicename.cloudapp.net|
 |cloudservicename.cloudapp.net|A|40.122.110.154| 
 
 
@@ -80,9 +80,9 @@ ms.locfileid: "98763035"
 
 |Имя |Тип |Значение |Комментарий |
 |-----|-----|------|-------|
-|mywebapp.azurewebsites.net|CNAME|mywebapp.privatelink.azurewebsites.net|
-|mywebapp.privatelink.azurewebsites.net|CNAME|clustername.azurewebsites.windows.net|
-|clustername.azurewebsites.windows.net|CNAME|cloudservicename.cloudapp.net|
+|mywebapp.azurewebsites.net|CNAME.|mywebapp.privatelink.azurewebsites.net|
+|mywebapp.privatelink.azurewebsites.net|CNAME.|clustername.azurewebsites.windows.net|
+|clustername.azurewebsites.windows.net|CNAME.|cloudservicename.cloudapp.net|
 |cloudservicename.cloudapp.net|A|40.122.110.154|< — этот общедоступный IP-адрес не является частной конечной точкой, вы получите ошибку 403.|
 
 Необходимо настроить частный DNS-сервер или Azure DNS частную зону. для тестов можно изменить запись узла тестового компьютера.
@@ -91,7 +91,7 @@ ms.locfileid: "98763035"
 
 |Имя |Тип |Значение |Комментарий |
 |-----|-----|------|-------|
-|mywebapp.azurewebsites.net|CNAME|mywebapp.privatelink.azurewebsites.net|< — Azure создает эту запись в общедоступном DNS-сервере Azure, чтобы указать службе приложений на привателинк, и это управляется нами|
+|mywebapp.azurewebsites.net|CNAME.|mywebapp.privatelink.azurewebsites.net|< — Azure создает эту запись в общедоступном DNS-сервере Azure, чтобы указать службе приложений на привателинк, и это управляется нами|
 |mywebapp.privatelink.azurewebsites.net|A|10.10.10.8|<--вы управляете этой записью в системе DNS, чтобы указать IP-адрес частной конечной точки.|
 
 После этой конфигурации DNS можно получить доступ к веб-приложению в частном порядке с именем по умолчанию mywebappname.azurewebsites.net. Необходимо использовать это имя, так как сертификат по умолчанию выдается для *. azurewebsites.net.
@@ -121,6 +121,8 @@ ms.locfileid: "98763035"
 Слоты не могут использовать закрытую конечную точку.
 
 Функция удаленной отладки недоступна, если для веб-приложения включена частная конечная точка. Рекомендуется развернуть код в слоте и выполнить удаленную отладку.
+
+Доступ по FTP предоставляется через входящий общедоступный IP-адрес. Частная конечная точка не поддерживает доступ по FTP к веб-приложению.
 
 Мы регулярно улучшаем функцию приватного канала и частной конечной точки. Дополнительные сведения об ограничениях см. в [этой статье][pllimitations].
 

@@ -10,21 +10,21 @@ ms.service: api-management
 ms.workload: mobile
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: 11/19/2017
+ms.date: 02/17/2021
 ms.author: apimpm
-ms.openlocfilehash: 312a496a5acda05a6b04a0bb47abb101f4ffcc8e
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.openlocfilehash: e809efa9da32da5fe9ca296608c602e770f78265
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92107595"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103562354"
 ---
 # <a name="api-management-policies"></a>Политики управления API
 В этом разделе рассматриваются приведенные ниже политики управления API. Дополнительные сведения о добавлении и настройке политик см. в статье о [политиках в управлении API](api-management-howto-policies.md).
 
  Политики представляют собой одну из эффективных функций системы, позволяющих издателю изменять поведение интерфейса API путем его настройки. Политика — это коллекция операторов, которые выполняются последовательно по запросу интерфейса API или при получении из него ответа. К часто используемым операторам относятся преобразование формата из XML в JSON, а также ограничение скорости вызовов, позволяющее ограничивать количество входящих вызовов от разработчика. Также существует много готовых политик.
 
- Выражения политики можно использовать в качестве значений атрибутов или текстовых значений в любой политике управления API, если в ней не указано иное. Некоторые политики (в том числе [Поток управления](api-management-advanced-policies.md#choose) и [Задание переменной](api-management-advanced-policies.md#set-variable)) основаны на выражениях политики. Дополнительные сведения см. в разделе [Расширенные политики](api-management-advanced-policies.md#AdvancedPolicies) и [выражения политик](api-management-policy-expressions.md).
+ Выражения политики можно использовать в качестве значений атрибутов или текстовых значений в любой политике управления API, если в ней не указано иное. Некоторые политики (в том числе [Поток управления](api-management-advanced-policies.md#choose) и [Задание переменной](api-management-advanced-policies.md#set-variable)) основаны на выражениях политики. Дополнительную информацию см. в документации по [расширенным политикам](api-management-advanced-policies.md#AdvancedPolicies) и [выражениям политики](api-management-policy-expressions.md).
 
 ##  <a name="policies"></a><a name="ProxyPolicies"></a> Политике
 
@@ -81,6 +81,12 @@ ms.locfileid: "92107595"
     - [Отправить запрос в службу](api-management-dapr-policies.md#invoke) — использует среду выполнения ДАПР для выявления и надежной связи с микрослужбой ДАПР.
     -  [Отправить сообщение в Pub/подраздел](api-management-dapr-policies.md#pubsub) . Использование среды выполнения ДАПР для публикации сообщения в раздел публикации и подписки.
     -  [Выходная привязка триггера](api-management-dapr-policies.md#bind) — использует среду выполнения ДАПР для вызова внешней системы через выходную привязку.
+- [Политики проверки](validation-policies.md)
+    - [Проверка содержимого](validation-policies.md#validate-content) — проверяет размер или схему JSON текста запроса или ответа на схему API.
+. 
+    - [Проверить параметры](validation-policies.md#validate-parameters) — проверяет параметры заголовка запроса, запроса или пути к схеме API.
+    - [Проверка заголовков](validation-policies.md#validate-headers) — проверяет заголовки ответов на соответствие схеме API.
+    - [Проверка кода состояния](validation-policies.md#validate-status-code) — проверяет коды состояния HTTP в ответах на схему API.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о работе с политиками см. в следующих статьях:

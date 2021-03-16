@@ -3,12 +3,12 @@ title: Ресурсы без ограничения числа 800
 description: Список типов ресурсов Azure, которые могут иметь более 800 экземпляров в группе ресурсов.
 ms.topic: conceptual
 ms.date: 01/08/2021
-ms.openlocfilehash: 6a63fd7e41c03b542f4a43b483243702c5be5f14
-ms.sourcegitcommit: c4c554db636f829d7abe70e2c433d27281b35183
+ms.openlocfilehash: 6736118f0713a27a91618173e06423530e6f10cb
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98034940"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563119"
 ---
 # <a name="resources-not-limited-to-800-instances-per-resource-group"></a>Ресурсы, не ограниченные 800 экземплярами на группу ресурсов
 
@@ -80,7 +80,6 @@ ms.locfileid: "98034940"
 
 ## <a name="microsoftdevtestlab"></a>Microsoft.DevTestLab
 
-* Labs/virtualMachines — по умолчанию ограничено до 800 экземпляров. 
 * schedules
 
 ## <a name="microsoftenterpriseknowledgegraph"></a>Microsoft.EnterpriseKnowledgeGraph

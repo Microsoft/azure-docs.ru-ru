@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/09/2021
+ms.date: 03/15/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: cc385c3a7ceb0245e3a4acbedb037b1b28bde7b3
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.openlocfilehash: 24377cf02b30a550043ee63267229039d680cd1c
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102518115"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103489140"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-an-apple-id--using-azure-active-directory-b2c-preview"></a>Настройка регистрации и входа с помощью идентификатора Apple ID с помощью Azure Active Directory B2C (Предварительная версия)
 
@@ -30,7 +30,7 @@ ms.locfileid: "102518115"
 
 ::: zone-end
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 [!INCLUDE [active-directory-b2c-customization-prerequisites](../../includes/active-directory-b2c-customization-prerequisites.md)]
 
@@ -57,8 +57,8 @@ ms.locfileid: "102518115"
 1. В поле **идентификаторы** выберите созданный идентификатор.
 1. Выберите **войти с помощью Apple**, а затем щелкните **настроить**.
     1. Выберите **идентификатор основного приложения** , для которого вы хотите настроить вход с помощью Apple.
-    1. В **области домены и поддомены** введите `your-tenant-name.b2clogin.com` . Замените your-tenant-name именем вашего клиента.
-    1. В окне **возвращаемые URL-адреса** введите `https://your-tenant-name.b2clogin.com/your-tenant-name.onmicrosoft.com/oauth2/authresp` . Замените your-tenant-name именем вашего клиента.
+    1. В **области домены и поддомены** введите `your-tenant-name.b2clogin.com` . Замените your-tenant-name именем вашего клиента. Если используется [личный домен](custom-domain.md), введите `https://your-domain-name` .
+    1. В окне **возвращаемые URL-адреса** введите `https://your-tenant-name.b2clogin.com/your-tenant-name.onmicrosoft.com/oauth2/authresp` . Если используется [личный домен](custom-domain.md), введите `https://your-domain-name/your-tenant-name.onmicrosoft.com/oauth2/authresp` . Замените `your-tenant-name` именем своего клиента и `your-domain-name` личным доменом.
     1. Нажмите кнопку **Далее** и выберите **Готово**.
     1. Когда всплывающее окно закроется, выберите **продолжить** и нажмите кнопку **сохранить**.
 

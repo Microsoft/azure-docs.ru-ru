@@ -10,16 +10,23 @@ ms.subservice: speech-service
 ms.topic: conceptual
 ms.date: 02/12/2020
 ms.author: wellsi
-ms.openlocfilehash: af66f2ec56551a5177cd9323d216e9bf4b0c41be
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.openlocfilehash: 1b2418b248e995b0f64eec82ccb477b15583c81e
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95021853"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103562337"
 ---
 # <a name="release-notes-speech-devices-sdk"></a>Заметки о выпуске: пакет SDK для речевых устройств
 
 В следующих разделах перечислены изменения в последних выпусках.
+
+## <a name="speech-devices-sdk-1150"></a>1.15.0 пакета SDK для речевых устройств:
+
+- Обновлена до новой версии Microsoft Audio Stack (MAS) с улучшенным беамформинг и снижением шума для речи.
+- Размер двоичного файла уменьшился до 70% в зависимости от целевого объекта.
+- Поддержка [Перцепт Azure Audio](https://docs.microsoft.com/azure/azure-percept/overview-azure-percept-audio) с [двоичным выпуском](https://aka.ms/sdsdk-download-APAudio).
+- Обновлен компонент [речевого пакета SDK](./speech-sdk.md) до версии 1.15.0. Дополнительные сведения см. в [заметках о выпуске](./releasenotes.md).
 
 ## <a name="speech-devices-sdk-1110"></a>1.11.0 пакета SDK для речевых устройств:
 

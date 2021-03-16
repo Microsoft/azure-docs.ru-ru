@@ -1,6 +1,6 @@
 ---
 title: 'Управляемый экземпляр DB2 в SQL: руководство по миграции'
-description: Следуйте этому руководству, чтобы перенести базы данных DB2 в Azure SQL Управляемый экземпляр.
+description: В этом руководстве описывается перенос баз данных DB2 в Azure SQL Управляемый экземпляр с помощью Помощник по миграции SQL Server для DB2.
 ms.service: sql-managed-instance
 ms.subservice: migration-guide
 ms.custom: ''
@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: 3902661553bbb390e6e999e0f67cd043eee8df09
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.openlocfilehash: 9ad838b8c5f54d3ecdd5c8ce56b197cdb6cec1ba
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97359189"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563867"
 ---
 # <a name="migration-guide-db2-to-sql-managed-instance"></a>Руководство по миграции: DB2 в SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqlmi.md)]
@@ -142,9 +142,6 @@ ms.locfileid: "97359189"
 1. **Настройка тестовой среды**. Тестовая среда должна содержать копию исходной и целевой баз данных. Не забудьте изолировать тестовую среду.
 1. **Выполнение проверочных тестов**. Выполните проверочные тесты для источника и целевого объекта, а затем проанализируйте результаты.
 1. **Выполнение тестов производительности**. Запустите тест производительности для источника и целевого объекта, а затем проанализируйте и сравните результаты.
-
-   > [!NOTE]
-   > Чтобы получить помощь в разработке и выполнении проверочных тестов, выполняемых после переноса, используйте решение по обеспечению качества данных, предоставляемое нашим партнером [QuerySurge](https://www.querysurge.com/company/partners/microsoft). 
 
 
 ## <a name="leverage-advanced-features"></a>Использование дополнительных функций 

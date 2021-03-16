@@ -6,16 +6,26 @@ ms.topic: conceptual
 ms.date: 02/19/2021
 author: tfitzmac
 ms.author: tomfitz
-ms.openlocfilehash: a8bb28892fe42215876b5cc8771ae73c7d2aab7f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0e3c82f711de4cd9710c9aafe798a986e3403ed4
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747116"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563714"
 ---
-# <a name="troubleshooting-datadog-on-azure"></a>Устранение неполадок Datadog в Azure
+# <a name="troubleshooting-datadog-on-azure"></a>Устранение неполадок с Datadog в Azure
 
 Этот документ содержит сведения об устранении неполадок решений, использующих Datadog.
+
+## <a name="purchase-errors"></a>Ошибки покупки
+
+* Не удается выполнить покупку, так как допустимая кредитная карта не подключена к подписке Azure или метод оплаты не связан с подпиской.
+
+  Используйте другую подписку Azure. Или добавьте или обновите кредитную карту или метод оплаты для подписки. Дополнительные сведения см. [в разделе Обновление метода кредита и оплаты](../../cost-management-billing/manage/change-credit-card.md).
+
+* Подписка EA не допускает покупки в Marketplace.
+
+  Используйте другую подписку. Или проверьте, включена ли подписка EA для покупки в Marketplace. Дополнительные сведения см. в статье [Включение покупок в Marketplace](../../cost-management-billing/manage/ea-azure-marketplace.md#enabling-azure-marketplace-purchases). Если эти параметры не устраняют проблему, обратитесь в [службу поддержки Datadog](https://www.datadoghq.com/support).
 
 ## <a name="unable-to-create-datadog-resource"></a>Не удалось создать ресурс Datadog
 

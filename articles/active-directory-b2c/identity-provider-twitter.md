@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/08/2021
+ms.date: 03/15/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 8cb31f57e5403e99e2ef9bfcc5d1042e33516d1d
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 397fff3fafad52b3b989049096fb2d3e1fa2cba1
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102448155"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103488522"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-a-twitter-account-using-azure-active-directory-b2c"></a>Настройка регистрации и входа с учетной записью Twitter через Azure Active Directory B2C
 
@@ -45,8 +45,12 @@ ms.locfileid: "102448155"
 1. В разделе **Параметры проверки подлинности** выберите **изменить** .
     1. Установите флажок **включить 3-legged OAuth** .
     1. Установите флажок **запросить адрес электронной почты у пользователей** .
-    1. Для **URL-адресов обратного вызова** введите `https://your-tenant.b2clogin.com/your-tenant.onmicrosoft.com/your-user-flow-Id/oauth1/authresp` . Замените `your-tenant` именем своего клиента, а `your-user-flow-Id` — идентификатором своего потока пользователя. Например, `b2c_1a_signup_signin_twitter`. Используйте все строчные буквы при вводе имени клиента и идентификатора потока пользователя, даже если они определены с прописными буквами в Azure AD B2C.
-    1. Введите в качестве **URL-адреса веб-сайта** `https://your-tenant.b2clogin.com` . Замените `your-tenant` именем вашего клиента. Например, `https://contosob2c.b2clogin.com`.
+    1. Для **URL-адресов обратного вызова** введите `https://your-tenant.b2clogin.com/your-tenant-name.onmicrosoft.com/your-user-flow-Id/oauth1/authresp` .  Если используется [личный домен](custom-domain.md), введите `https://your-domain-name/your-tenant-name.onmicrosoft.com/your-user-flow-Id/oauth1/authresp` . Используйте все строчные буквы при вводе имени клиента и идентификатора потока пользователя, даже если они определены с прописными буквами в Azure AD B2C. Замените
+        - `your-tenant-name` с именем своего имени клиента.
+        - `your-domain-name` с пользовательским доменом.
+        - `your-user-flow-Id` с идентификатором потока пользователя. Например, `b2c_1a_signup_signin_twitter`. 
+    
+    1. Введите в качестве **URL-адреса веб-сайта** `https://your-tenant.b2clogin.com` . Замените `your-tenant` именем вашего клиента. Например, `https://contosob2c.b2clogin.com`. Если используется [личный домен](custom-domain.md), введите `https://your-domain-name` .
     1. Введите URL-адрес **условий предоставления услуг**, например `http://www.contoso.com/tos` . URL-адрес политики — это страница, которую вы поддерживаете для предоставления условий для приложения.
     1. Введите URL-адрес **политики конфиденциальности**, например `http://www.contoso.com/privacy` . URL-адрес политики — это управляемая вами страница, где предоставляются сведения о конфиденциальности для вашего приложения.
     1. Щелкните **Сохранить**.
@@ -170,7 +174,7 @@ ms.locfileid: "102448155"
 
 [!INCLUDE [active-directory-b2c-configure-relying-party-policy](../../includes/active-directory-b2c-configure-relying-party-policy-user-journey.md)]
 
-## <a name="test-your-custom-policy"></a>Тестирование пользовательской политики
+## <a name="test-your-custom-policy"></a>Тестирование настраиваемой политики
 
 1. Выберите политику проверяющей стороны, например `B2C_1A_signup_signin` .
 1. Для **приложения** выберите [ранее зарегистрированное](troubleshoot-custom-policies.md#troubleshoot-the-runtime)веб-приложение. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.

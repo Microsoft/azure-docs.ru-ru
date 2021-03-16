@@ -2,13 +2,13 @@
 title: Учебник. Контрольный список для планирования сети
 description: Узнайте о требованиях к сети для сетевых подключений и сетевых портов в Решении Azure VMware.
 ms.topic: tutorial
-ms.date: 01/27/2021
-ms.openlocfilehash: f493443da617f5f76771e5d1b2b3b190b37f9b5d
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.date: 03/13/2021
+ms.openlocfilehash: 8cee5fa24aab8bd7fe6a9527f9c8e7cdff997511
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98918591"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103462071"
 ---
 # <a name="networking-planning-checklist-for-azure-vmware-solution"></a>Контрольный список для планирования сети для Решения Azure VMware 
 
@@ -89,13 +89,12 @@ ms.locfileid: "98918591"
 
 Используйте встроенную в NSX службу DHCP или локальный DHCP-сервер в частном облаке вместо того, чтобы направлять широковещательный трафик DHCP через глобальную сеть обратно в локальную сеть.
 
+Дополнительные сведения см. в разделе [Предоставление служб DHCP для сегмента сети NSX-T](deploy-azure-vmware-solution.md#optional-provide-dhcp-services-to-nsx-t-network-segment).
+
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-В этом учебнике описаны рекомендации и требования, связанные с развертыванием частного облака Решения Azure VMware. 
-
-
-Настроив сеть соответствующим образом, переходите к следующему руководству, где показано, как создать частное облако Решения Azure VMware.
+В этом учебнике описаны рекомендации и требования, связанные с развертыванием частного облака Решения Azure VMware. Настроив сеть соответствующим образом, переходите к следующему руководству, где показано, как создать частное облако Решения Azure VMware.
 
 > [!div class="nextstepaction"]
 > [Создание частного облака Решения Azure VMware](tutorial-create-private-cloud.md)
