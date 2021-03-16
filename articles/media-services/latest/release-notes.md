@@ -11,12 +11,12 @@ ms.workload: na
 ms.topic: article
 ms.date: 10/21/2020
 ms.author: inhenkel
-ms.openlocfilehash: fc48c9b8a0a7510dd8792c959c1f63a0340f89ce
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: 5a36b5c8b0c8f24d093d887ad788c4ce9857d355
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103011211"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103492682"
 ---
 # <a name="azure-media-services-v3-release-notes"></a>Заметки о выпуске Служб мультимедиа Azure версии 3
 
@@ -312,7 +312,7 @@ ms.locfileid: "103011211"
 * Используйте журналы диагностики Azure Monitor, чтобы отслеживать запросы, отправленные конечной точкой доставки ключей Служб мультимедиа. 
 * Отслеживайте метрики, созданные [конечными точками потоковой передачи](streaming-endpoint-concept.md) Служб мультимедиа.   
 
-Дополнительные сведения см. в статье, посвященной [мониторингу метрик и журналов диагностики Служб мультимедиа](media-services-metrics-diagnostic-logs.md).
+Дополнительные сведения см. в статье, посвященной [мониторингу метрик и журналов диагностики Служб мультимедиа](monitoring/monitor-media-services-data-reference.md).
 
 ### <a name="multi-audio-tracks-support-in-dynamic-packaging"></a>Поддержка нескольких звуковых дорожек в динамической упаковке 
 

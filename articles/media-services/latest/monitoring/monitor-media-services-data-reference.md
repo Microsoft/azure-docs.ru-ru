@@ -7,12 +7,12 @@ manager: femila
 ms.topic: reference
 ms.service: media-services
 ms.date: 03/11/2021
-ms.openlocfilehash: c5545ead3e4d40c7a0642aee6273c4df241bd394
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.openlocfilehash: 461c998aa85d70d69cb267fdbeabd7eabcfb5854
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
-ms.locfileid: "103464534"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103471544"
 ---
 # <a name="monitoring-media-services-data-reference"></a>Справочник по мониторингу данных служб мультимедиа
 
@@ -61,7 +61,7 @@ ms.locfileid: "103464534"
 
 Дополнительные сведения об измерениях метрик см. в разделе [Многомерные метрики](https://docs.microsoft.com/azure/azure-monitor/platform/data-platform-metrics#multi-dimensional-metrics).
 
-**Заполнитель** для таблицы измерений.
+<!--**PLACEHOLDER** for dimensions table.-->
 
 ## <a name="resource-logs"></a>Журналы ресурсов
 
@@ -75,7 +75,7 @@ ms.locfileid: "103464534"
 
 ### <a name="key-delivery"></a>Доставка ключей
 
-|Название|Описание|
+|Имя|Описание|
 |---|---|
 |Запрос службы доставки ключей|Журналы, отображающие сведения о запросе службы доставки ключей. Дополнительные сведения см. в разделе [схемы](monitor-media-services-data-reference.md).|
 
@@ -87,7 +87,7 @@ ms.locfileid: "103464534"
 
 Эти свойства относятся к схеме журнала доставки ключей.
 
-|Название|Описание|
+|Имя|Описание|
 |---|---|
 |keyId|ИДЕНТИФИКАТОР запрошенного ключа.|
 |keyType|Может принимать одно из следующих значений: "Clear" (без шифрования), "FairPlay", "PlayReady" или "Widevine".|

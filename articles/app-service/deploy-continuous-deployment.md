@@ -3,15 +3,15 @@ title: настройка непрерывного развертывания;
 description: Узнайте, как включить CI/CD в службу приложений Azure из GitHub, BitBucket, Azure Repos или других репозиториев. Выберите конвейер сборки, соответствующий вашим потребностям.
 ms.assetid: 6adb5c84-6cf3-424e-a336-c554f23b4000
 ms.topic: article
-ms.date: 03/03/2021
+ms.date: 03/12/2021
 ms.reviewer: dariac
 ms.custom: seodec18
-ms.openlocfilehash: 5af8294518759181326e7736ef755f0a83581014
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: 52f0db739cff9614dc4e9f5ef71d582e926fc65a
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102564971"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103470274"
 ---
 # <a name="continuous-deployment-to-azure-app-service"></a>Непрерывное развертывание в службе приложений Azure
 
@@ -97,7 +97,7 @@ ms.locfileid: "102564971"
 
 1. По умолчанию файл рабочего процесса действия GitHub сохраняется в репозитории, но он по-прежнему будет запускать развертывание в приложении. Чтобы удалить его из репозитория, выберите **удалить файл рабочего процесса**.
 
-1. Нажмите кнопку **ОК**.
+1. Нажмите кнопку **OK**.
 
 [!INCLUDE [What happens to my app during deployment?](../../includes/app-service-deploy-atomicity.md)]
 
@@ -116,6 +116,8 @@ ms.locfileid: "102564971"
 - Вместо профиля публикации разверните его с помощью [субъекта-службы](../active-directory/develop/app-objects-and-service-principals.md#service-principal-object) в Azure Active Directory.
 
 #### <a name="authenticate-with-a-service-principal"></a>Проверка подлинности с помощью субъекта-службы
+
+Эта необязательная конфигурация заменяет проверку подлинности по умолчанию профилями публикации в созданном файле рабочего процесса.
 
 1. Создание субъекта-службы с помощью команды [AZ AD SP Create-for-RBAC](/cli/azure/ad/sp#az-ad-sp-create-for-rbac) в [Azure CLI](/cli/azure/). В следующем примере замените *\<subscription-id>* , *\<group-name>* и *\<app-name>* собственными значениями:
 

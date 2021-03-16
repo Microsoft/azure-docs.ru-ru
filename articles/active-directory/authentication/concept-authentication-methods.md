@@ -5,18 +5,18 @@ services: active-directory
 ms.service: active-directory
 ms.subservice: authentication
 ms.topic: conceptual
-ms.date: 02/22/2021
+ms.date: 03/15/2021
 ms.author: justinha
 author: justinha
 manager: daveba
 ms.collection: M365-identity-device-management
 ms.custom: contperf-fy20q4
-ms.openlocfilehash: 0bbaf5fa4f3404b0e4fdb4dc016b703c58910457
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: ee10aa7c461aca65f385c735f6e9aaa28af7f9e5
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101652085"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103471695"
 ---
 # <a name="what-authentication-and-verification-methods-are-available-in-azure-active-directory"></a>Какие методы проверки подлинности и подтверждения доступны в Azure Active Directory?
 
@@ -43,9 +43,9 @@ ms.locfileid: "101652085"
 | Windows Hello для бизнеса     | Высокий     | Высокий      | Высокий         |
 | Приложение Microsoft Authenticator    | Высокий     | Высокий      | Высокий         |
 | Ключ безопасности FIDO2             | Высокий     | Высокий      | Высокий         |
-| Токены оборудования OATH           | Средн.   | Средн.    | Высокий         |
+| Аппаратные маркеры OATH (предварительная версия) | Средн.   | Средн.    | Высокий         |
 | Программные маркеры OATH           | Средн.   | Средн.    | Высокий         |
-| SMS                            | Средн.   | Высокий      | Средний       |
+| SMS                            | Средний   | Высокий      | Средний       |
 | Голосовая связь                          | Средн.   | Средн.    | Средн.       |
 | Пароль                       | Низкий      | Высокий      | Высокий         |
 
@@ -68,7 +68,7 @@ ms.locfileid: "101652085"
 | Windows Hello для бизнеса     | Да                    | MFA                       |
 | Приложение Microsoft Authenticator    | Да                    | MFA и SSPR              |
 | Ключ безопасности FIDO2             | Да                    | MFA                       |
-| Токены оборудования OATH           | нет                     | MFA                       |
+| Аппаратные маркеры OATH (предварительная версия) | нет                     | MFA                       |
 | Программные маркеры OATH           | нет                     | MFA                       |
 | SMS                            | Да                    | MFA и SSPR              |
 | Голосовой звонок                     | нет                     | MFA и SSPR              |
@@ -81,7 +81,7 @@ ms.locfileid: "101652085"
 * [Windows Hello для бизнеса](/windows/security/identity-protection/hello-for-business/hello-overview)
 * [Приложение Microsoft Authenticator](concept-authentication-authenticator-app.md)
 * [Ключ безопасности FIDO2](concept-authentication-passwordless.md#fido2-security-keys)
-* [Токены оборудования OATH](concept-authentication-oath-tokens.md#oath-hardware-tokens)
+* [Аппаратные маркеры OATH (предварительная версия)](concept-authentication-oath-tokens.md#oath-hardware-tokens-preview)
 * [Программные маркеры OATH](concept-authentication-oath-tokens.md#oath-software-tokens)
 * [Вход](howto-authentication-sms-signin.md) и [Проверка](concept-authentication-phone-options.md#mobile-phone-verification) SMS
 * [Проверка речевого вызова](concept-authentication-phone-options.md)

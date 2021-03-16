@@ -10,12 +10,12 @@ ms.date: 03/12/2020
 ms.author: santoshc
 ms.reviewer: santoshc
 ms.subservice: common
-ms.openlocfilehash: 16d3d50d5ade298e2ca22f271466c70e74724381
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: 67480786e963235d4d3c010bea72e551a8be7bbc
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102613567"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103493804"
 ---
 # <a name="use-private-endpoints-for-azure-storage"></a>Использование частных конечных точек для службы хранилища Azure
 
@@ -91,20 +91,20 @@ ms.locfileid: "102613567"
 
 В приведенном выше примере записи ресурсов DNS для учетной записи хранения "Сторажеаккаунта" при разрешении из-за пределов виртуальной сети, в которой размещается частная конечная точка, будут:
 
-| Имя                                                  | Type  | Значение                                                 |
+| Имя                                                  | Тип  | Значение                                                 |
 | :---------------------------------------------------- | :---: | :---------------------------------------------------- |
-| ``StorageAccountA.blob.core.windows.net``             | CNAME | ``StorageAccountA.privatelink.blob.core.windows.net`` |
-| ``StorageAccountA.privatelink.blob.core.windows.net`` | CNAME | \<storage service public endpoint\>                   |
-| \<storage service public endpoint\>                   | Объект     | \<storage service public IP address\>                 |
+| ``StorageAccountA.blob.core.windows.net``             | CNAME. | ``StorageAccountA.privatelink.blob.core.windows.net`` |
+| ``StorageAccountA.privatelink.blob.core.windows.net`` | CNAME. | \<storage service public endpoint\>                   |
+| \<storage service public endpoint\>                   | A     | \<storage service public IP address\>                 |
 
 Как упоминалось ранее, вы можете запретить или контролировать доступ клиентов за пределами виртуальной сети через общедоступную конечную точку с помощью брандмауэра хранилища.
 
 Записи ресурсов DNS для Сторажеаккаунта, разрешенные клиентом в виртуальной сети, где размещается частная конечная точка, будут:
 
-| Имя                                                  | Type  | Значение                                                 |
+| Имя                                                  | Тип  | Значение                                                 |
 | :---------------------------------------------------- | :---: | :---------------------------------------------------- |
-| ``StorageAccountA.blob.core.windows.net``             | CNAME | ``StorageAccountA.privatelink.blob.core.windows.net`` |
-| ``StorageAccountA.privatelink.blob.core.windows.net`` | Объект     | 10.1.1.5                                              |
+| ``StorageAccountA.blob.core.windows.net``             | CNAME. | ``StorageAccountA.privatelink.blob.core.windows.net`` |
+| ``StorageAccountA.privatelink.blob.core.windows.net`` | A     | 10.1.1.5                                              |
 
 Такой подход обеспечивает доступ к учетной записи хранения **, используя ту же строку подключения** для клиентов в виртуальной сети, где размещаются частные конечные точки, а также клиенты за пределами виртуальной сети.
 
@@ -146,6 +146,12 @@ ms.locfileid: "102613567"
 ### <a name="network-security-group-rules-for-subnets-with-private-endpoints"></a>Правила групп безопасности сети для сетей с частными конечными точками
 
 Сейчас нельзя настроить правила [группы безопасности сети](../../virtual-network/network-security-groups-overview.md) (NSG) и определяемые пользователем маршруты для частных конечных точек. Правила NSG, применяемые к подсети, в которой размещается частная конечная точка, не применяются к частной конечной точке. Они применяются только к другим конечным точкам (например, к контроллерам сетевых интерфейсов). Для этой проблемы ограниченный обходной путь заключается в реализации правил доступа для частных конечных точек в исходных подсетях, хотя этот подход может потребовать более высоких затрат на управление.
+
+### <a name="copying-blobs-between-storage-accounts"></a>Копирование больших двоичных объектов между учетными записями хранения
+
+Вы можете копировать большие двоичные объекты между учетными записями хранения, используя частные конечные точки, только если вы используете REST API Azure или средства, использующие REST API. К этим средствам относятся AzCopy, Обозреватель службы хранилища, Azure PowerShell, Azure CLI и пакеты SDK хранилища BLOB-объектов Azure. 
+
+Поддерживаются только частные конечные точки, предназначенные для ресурса хранилища BLOB-объектов. Частные конечные точки, предназначенные для Data Lake Storage 2-го поколения или файлового ресурса, пока не поддерживаются. Кроме того, копирование между учетными записями хранения с помощью протокола NFS пока не поддерживается. 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

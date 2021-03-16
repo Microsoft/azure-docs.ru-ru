@@ -6,12 +6,12 @@ ms.service: hpc-cache
 ms.topic: troubleshooting
 ms.date: 03/18/2020
 ms.author: v-erkel
-ms.openlocfilehash: efa163a2c10a7dc93bf5d26865a0e7eb43f11dea
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: d2a5ffa337f789c4edc3a34b3be81285337473e2
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "87082772"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103471720"
 ---
 # <a name="troubleshoot-nas-configuration-and-nfs-storage-target-issues"></a>Устранение неполадок конфигурации NAS и целевого объекта хранилища NFS
 
@@ -64,7 +64,7 @@ rpcinfo -p <storage_IP> |egrep "100000\s+4\s+tcp|100005\s+3\s+tcp|100003\s+3\s+t
 При использовании правил экспорта Помните, что кэш может использовать несколько разных IP-адресов из подсети кэша. Разрешение доступа из полного диапазона возможных IP-адресов подсети.
 
 > [!NOTE]
-> По умолчанию кэш Azure HPC скуашес корневой доступ. Дополнительные сведения см. в статье [Настройка дополнительных параметров кэша](configuration.md#configure-root-squash) .
+> Хотя для кэша требуется корневой доступ к серверной системе хранения данных, можно ограничить доступ для клиентов, подключающихся через кэш. Дополнительные сведения см. в статье [Управление доступом клиента](access-policies.md#root-squash) .
 
 Обратитесь к поставщику хранилища NAS, чтобы обеспечить правильный уровень доступа к кэшу.
 

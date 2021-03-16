@@ -5,18 +5,18 @@ services: active-directory
 ms.service: active-directory
 ms.subservice: authentication
 ms.topic: conceptual
-ms.date: 03/12/2021
+ms.date: 03/15/2021
 ms.author: justinha
 author: justinha
 manager: daveba
 ms.reviewer: rateller
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd2a38e3d59af18477a1e5bb11e8b58dbbe81e0b
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.openlocfilehash: 8e9052502eba71f025bb6724278b7001173c5217
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103471660"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103491623"
 ---
 # <a name="configure-and-enable-users-for-sms-based-authentication-using-azure-active-directory"></a>Настройка и включение пользователей для проверки подлинности на основе SMS с помощью Azure Active Directory 
 
@@ -36,6 +36,7 @@ ms.locfileid: "103471660"
 * Каждый пользователь, который подключен к политике метода аутентификации через SMS, должен иметь лицензию, даже если он ее не использует. Каждый подключенный пользователь должен иметь одну из следующих лицензий Azure AD, EMS или Microsoft 365:
     * [Microsoft 365 (M365) F1 или F3][m365-firstline-workers-licensing]
     * [Enterprise Mobility + Security (EMS) E3 или E5][ems-licensing] или [Microsoft 365 (M365) E3 или E5][m365-licensing]
+    * [Office 365 F3][o365-f3]
 
 ## <a name="limitations"></a>Ограничения
 

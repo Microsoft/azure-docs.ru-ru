@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/04/2021
+ms.date: 03/15/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.custom: fasttrack-edit
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: adfe5318949ffa624ebe3548944b558bd0dda9e1
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: 09cfdd026105a34db976118f38b011e2c4578a24
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102198478"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103470773"
 ---
 # <a name="options-for-registering-a-saml-application-in-azure-ad-b2c"></a>Параметры регистрации приложения SAML в Azure AD B2C
 
@@ -250,7 +250,7 @@ https://<tenant-name>.b2clogin.com/<tenant-name>.onmicrosoft.com/<policy-name>/g
 > [!TIP]
 > Скопируйте `<ClaimsProviders>` раздел из базы данных и сохраните эти элементы в поставщике утверждений: `<DisplayName>Token Issuer</DisplayName>` , `<TechnicalProfile Id="Saml2AssertionIssuer">` и `<DisplayName>Token Issuer</DisplayName>` .
  
-Пример.
+Пример
 
 ```xml
    <ClaimsProviders>   
@@ -278,6 +278,19 @@ https://<tenant-name>.b2clogin.com/<tenant-name>.onmicrosoft.com/<policy-name>/g
 ## <a name="session-management"></a>Управление сеансом
 
 Вы можете управлять сеансом между Azure AD B2C и приложением проверяющей стороны SAML с помощью `UseTechnicalProfileForSessionManagement` элемента и [самлссосессионпровидер](custom-policy-reference-sso.md#samlssosessionprovider).
+
+## <a name="force-users-to-re-authenticate"></a>Принудительная повторная проверка подлинности пользователей 
+
+Чтобы принудительно выполнить повторную проверку подлинности пользователей, приложение может включить `ForceAuthn` атрибут в запрос проверки подлинности SAML. `ForceAuthn`Атрибут является логическим значением. Если задано значение true, сеанс пользователя становится недействительным на Azure AD B2C, и пользователь вынужден пройти повторную проверку подлинности. Следующий запрос проверки подлинности SAML показывает, как задать `ForceAuthn` для атрибута значение true. 
+
+
+```xml
+<samlp:AuthnRequest 
+       Destination="https://contoso.b2clogin.com/contoso.onmicrosoft.com/B2C_1A_SAML2_signup_signin/samlp/sso/login"
+       ForceAuthn="true" ...>
+    ...
+</samlp:AuthnRequest>
+```
 
 ## <a name="debug-the-saml-protocol"></a>Отладка протокола SAML
 

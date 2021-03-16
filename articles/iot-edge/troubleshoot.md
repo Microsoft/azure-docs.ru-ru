@@ -8,14 +8,16 @@ ms.date: 11/12/2020
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: d46ad8238faa42ca657b18b3997407d91a224537
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 7b3b8078a03ef0e891306f056c604545cde71459
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102045927"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103489463"
 ---
 # <a name="troubleshoot-your-iot-edge-device"></a>Устранение неполадок устройства с IoT Edge
+
+[!INCLUDE [iot-edge-version-201806-or-202011](../../includes/iot-edge-version-201806-or-202011.md)]
 
 При возникновении проблем, связанных с Azure IoT Edge в вашей среде, используйте эту статью в качестве рекомендации по устранению неполадок и диагностике.
 
@@ -276,7 +278,7 @@ Windows:
 Модули edgeHub и edgeAgent имеют эту переменную среды выполнения log, со значением по умолчанию, равным `info` . Эта переменная среды может принимать следующие значения:
 
 * аварий
-* error
+* Ошибка
 * warning
 * сведения
 * debug

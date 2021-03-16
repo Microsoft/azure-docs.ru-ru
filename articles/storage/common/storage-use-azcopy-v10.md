@@ -8,12 +8,12 @@ ms.date: 12/08/2020
 ms.author: normesta
 ms.subservice: common
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: a1651ef1b49ecedb8070f32c56e9d23a0f8fd0da
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.openlocfilehash: 826effb152d3f069e0a7c5b8e169f7083117ed22
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103201590"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103494501"
 ---
 # <a name="get-started-with-azcopy"></a>Начало работы с AzCopy
 
@@ -110,7 +110,8 @@ azcopy copy "C:\local\path" "https://account.blob.core.windows.net/mycontainer1/
 |--------|-----------|
 |хранилище BLOB-объектов Azure |[Отправка файлов в хранилище BLOB-объектов Azure](storage-use-azcopy-blobs-upload.md)<br><br>[Скачивание больших двоичных объектов из хранилища BLOB-объектов Azure](storage-use-azcopy-blobs-download.md)<br><br>[Копирование больших двоичных объектов между учетными записями хранения Azure](storage-use-azcopy-blobs-copy.md)<br><br>[Синхронизация с хранилищем BLOB-объектов Azure](storage-use-azcopy-blobs-synchronize.md)|
 |Файлы Azure |[Перенос данных с помощью AzCopy и хранилища файлов](storage-use-azcopy-files.md)|
-|Amazon S3|[Передача данных с помощью AzCopy и контейнеров Amazon S3](storage-use-azcopy-s3.md)|
+|Amazon S3|[Копирование данных из Amazon S3 в службу хранилища Azure](storage-use-azcopy-s3.md)|
+|Google Cloud Storage|[Копирование данных из Google Cloud Storage в службу хранилища Azure (Предварительная версия)](storage-use-azcopy-google-cloud.md)|
 |Хранилище Azure Stack|[Перенос данных с помощью AzCopy и хранилища Azure Stack](/azure-stack/user/azure-stack-storage-transfer#azcopy)|
 
 ## <a name="use-in-a-script"></a>Использование в скрипте
@@ -123,7 +124,7 @@ azcopy copy "C:\local\path" "https://account.blob.core.windows.net/mycontainer1/
 
 Чтобы получить ссылку, выполните следующую команду:
 
-| Операционная система  | Команда |
+| Операционная система  | Get-Help |
 |--------|-----------|
 | **Linux** | `curl -s -D- https://aka.ms/downloadazcopy-v10-linux | grep ^Location` |
 | **Windows** | `(curl https://aka.ms/downloadazcopy-v10-windows -MaximumRedirection 0 -ErrorAction silentlycontinue).headers.location` |
@@ -133,7 +134,7 @@ azcopy copy "C:\local\path" "https://account.blob.core.windows.net/mycontainer1/
 
 URL-адрес отображается в выходных данных этой команды. Затем скрипт может скачать AzCopy с помощью этого URL-адреса.
 
-| Операционная система  | Команда |
+| Операционная система  | Get-Help |
 |--------|-----------|
 | **Linux** | `wget -O azcopy_v10.tar.gz https://aka.ms/downloadazcopy-v10-linux && tar -xf azcopy_v10.tar.gz --strip-components=1` |
 | **Windows** | `Invoke-WebRequest https://azcopyvnext.azureedge.net/release20190517/azcopy_windows_amd64_10.1.2.zip -OutFile azcopyv10.zip <<Unzip here>>` |

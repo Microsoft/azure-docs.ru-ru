@@ -1,60 +1,60 @@
 ---
 title: Создание ресурса Cognitive Services с помощью интерфейса командной строки Azure
 titleSuffix: Azure Cognitive Services
-description: Приступая к работе с Azure Cognitive Services, создав и подпишитесь на ресурс с помощью интерфейса командной строки Azure.
+description: Начните работу с Azure Cognitive Services, создав ресурс и оформив подписку на него с помощью интерфейса командной строки Azure.
 services: cognitive-services
 author: aahill
 manager: nitinme
 ms.service: cognitive-services
 keywords: Cognitive Services, когнитивня аналитика, когнитивные решения, службы ИИ
-ms.topic: conceptual
+ms.topic: quickstart
 ms.date: 09/14/2020
 ms.author: aahi
-ms.openlocfilehash: c52d935738916ebc546315d9913d7a48c77cbf9a
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
-ms.translationtype: MT
+ms.openlocfilehash: c1e8b260f6c06d8f26f5ba99b4fb02edfa5e8656
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98945007"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103472104"
 ---
-# <a name="quickstart-create-a-cognitive-services-resource-using-the-azure-command-line-interfacecli"></a>Краткое руководство. Создание Cognitive Services ресурса с помощью интерфейса Command-Line Azure (CLI)
+# <a name="quickstart-create-a-cognitive-services-resource-using-the-azure-command-line-interfacecli"></a>Краткое руководство. Создание ресурса Cognitive Services с помощью интерфейса командной строки Azure (Azure CLI)
 
-Используйте это краткое руководство для начала работы с Azure Cognitive Services с помощью [интерфейса командной строки Azure (CLI)](/cli/azure/install-azure-cli).
+Это краткое руководство позволит вам начать работу с Azure Cognitive Services с помощью [интерфейса командной строки Azure (Azure CLI)](/cli/azure/install-azure-cli).
 
 Azure Cognitive Services — это облачные службы с REST API и пакетами SDK клиентских библиотек, которые помогают разработчикам без опыта работы со средствами искусственного интеллекта (ИИ) и обработки и анализа данных создавать когнитивные интеллектуальные приложения. С помощью Azure Cognitive Services разработчики могут без усилий добавлять в свои приложения когнитивные функции, создавая когнитивные решения, которые могут видеть, слышать, говорить, понимать и даже в некоторой степени размышлять.
 
-Cognitive Services представлены [ресурсами](../azure-resource-manager/management/manage-resources-portal.md) Azure, созданными в подписке Azure. После создания ресурса используйте ключи и конечную точку, созданные для проверки подлинности приложений.
+Cognitive Services представлены [ресурсами](../azure-resource-manager/management/manage-resources-portal.md) Azure, которые вы создаете в подписке Azure. После создания ресурса вы будете применять созданные для вас ключи и конечную точку для аутентификации приложений.
 
-В этом кратком руководстве вы узнаете, как зарегистрироваться в Azure Cognitive Services и создать учетную запись с одной или несколькими службами, используя [интерфейс командной строки Azure (CLI)](/cli/azure/install-azure-cli). Эти службы представлены [ресурсами](../azure-resource-manager/management/manage-resources-portal.md)Azure, которые позволяют подключиться к одному или нескольким API-интерфейсы Cognitive Services Azure.
+Из этого краткого руководства вы узнаете, как зарегистрироваться в Azure Cognitive Services и создать учетную запись с подпиской на одну или несколько служб, используя [интерфейс командной строки Azure (Azure CLI)](/cli/azure/install-azure-cli). Эти службы представлены [ресурсами](../azure-resource-manager/management/manage-resources-portal.md) Azure, которые позволяют подключиться к одному или нескольким API-интерфейсам Azure Cognitive Services.
 
 [!INCLUDE [cognitive-services-subscription-types](../../includes/cognitive-services-subscription-types.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Допустимая подписка Azure — [создайте ее](https://azure.microsoft.com/free/cognitive-services) бесплатно.
-* [Интерфейс командной строки Azure (CLI)](/cli/azure/install-azure-cli)
+* Действующая подписка Azure ([создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services)).
+* [Интерфейс командной строки (CLI) Azure](/cli/azure/install-azure-cli).
 
-## <a name="install-the-azure-cli-and-sign-in"></a>Установка Azure CLI и вход в систему
+## <a name="install-the-azure-cli-and-sign-in"></a>Установка Azure CLI и вход
 
-Установка [Azure CLI](/cli/azure/install-azure-cli). Чтобы войти в локальную установку интерфейса командной строки, выполните команду [AZ login](/cli/azure/reference-index#az-login) :
+Установка [Azure CLI](/cli/azure/install-azure-cli). Чтобы войти в локальную установку CLI, выполните команду [az login](/cli/azure/reference-index#az-login):
 
 ```azurecli-interactive
 az login
 ```
 
-Для выполнения этих команд в браузере можно также использовать зеленую кнопку **попробовать** .
+Для выполнения этих команд можно также использовать зеленую кнопку **Попробовать** в браузере.
 
-## <a name="create-a-new-azure-cognitive-services-resource-group"></a>Создание новой группы ресурсов Azure Cognitive Services
+## <a name="create-a-new-azure-cognitive-services-resource-group"></a>Создание группы ресурсов Cognitive Services
 
-Перед созданием ресурса Cognitive Services необходимо иметь группу ресурсов Azure, в которой будет содержаться ресурс. При создании нового ресурса можно либо создать новую группу ресурсов, либо использовать существующую. В этой статье показано, как создать группу ресурсов.
+Чтобы создать ресурс Cognitive Services, в учетной записи должна присутствовать группа ресурсов Azure для размещения этого ресурса. При создании ресурса вы можете создать новую или использовать имеющуюся группу ресурсов. В этой статье показано, как создать группу ресурсов.
 
-### <a name="choose-your-resource-group-location"></a>Выберите расположение группы ресурсов
+### <a name="choose-your-resource-group-location"></a>Выбор расположения группы ресурсов
 
-Чтобы создать ресурс, вам потребуется одно из расположений Azure, доступных для вашей подписки. Список доступных расположений можно получить с помощью команды [AZ Account List-Locations](/cli/azure/account#az-account-list-locations) . Большинство Cognitive Services доступны из нескольких расположений. Выберите ближайший вариант или посмотрите, какие расположения доступны для службы.
+Чтобы создать ресурс, для подписки должно быть доступно одно из расположений Azure. Список доступных расположений можно получить с помощью команды [az account list-locations](/cli/azure/account#az-account-list-locations). Доступ к большинству служб Cognitive Services можно получить из нескольких расположений. Выберите ближайший вариант из тех расположений, которые доступны для службы.
 
 > [!IMPORTANT]
-> * Запомните расположение Azure, так как оно понадобится вам при вызове Cognitive Services Azure.
-> * Доступность некоторых Cognitive Services может варьироваться в зависимости от региона. Дополнительные сведения см. в статье [продукты Azure по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services).
+> * Запомните это расположение Azure, так как оно понадобится при вызове Azure Cognitive Services.
+> * Доступность некоторых служб Cognitive Services может варьироваться в зависимости от региона. Дополнительные сведения см. на странице [Доступность продуктов по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services).
 
 ```azurecli-interactive
 az account list-locations \
@@ -62,9 +62,9 @@ az account list-locations \
     --out table
 ```
 
-Создав расположение Azure, создайте новую группу ресурсов в Azure CLI с помощью команды [AZ Group Create](/cli/azure/group#az-group-create) .
+Создав расположение Azure, создайте новую группу ресурсов с помощью команды [az group create](/cli/azure/group#az-group-create) в Azure CLI.
 
-В приведенном ниже примере замените расположение Azure на `westus2` одно из расположений Azure, доступных для вашей подписки.
+В приведенном ниже примере замените расположение Azure `westus2` одним из расположений Azure, доступных для вашей подписки.
 
 ```azurecli-interactive
 az group create \
@@ -74,19 +74,19 @@ az group create \
 
 ## <a name="create-a-cognitive-services-resource"></a>Создание ресурса Cognitive Services
 
-### <a name="choose-a-cognitive-service-and-pricing-tier"></a>Выбор службы и ценовой категории
+### <a name="choose-a-cognitive-service-and-pricing-tier"></a>Выбор службы Cognitive Services и ценовой категории
 
-При создании нового ресурса необходимо знать тип службы, которую вы хотите использовать, а также [ценовую категорию](https://azure.microsoft.com/pricing/details/cognitive-services/) (или номер SKU). Эта и другие сведения будут использоваться в качестве параметров при создании ресурса.
+При создании ресурса необходимо знать, какой вид службы вы хотите использовать, а также требуемую [ценовую категорию](https://azure.microsoft.com/pricing/details/cognitive-services/) (номер SKU). Эту и другую информацию вы укажете в качестве параметров при создании ресурса.
 
 ### <a name="multi-service"></a>Несколько служб
 
 | Служба                    | Вид                      |
 |----------------------------|---------------------------|
-| Несколько служб. Дополнительные сведения см. на странице с [ценами](https://azure.microsoft.com/pricing/details/cognitive-services/) .            | `CognitiveServices`     |
+| Несколько служб. Дополнительные сведения см. на [странице с ценами](https://azure.microsoft.com/pricing/details/cognitive-services/).            | `CognitiveServices`     |
 
 
 > [!NOTE]
-> Многие из Cognitive Services ниже имеют бесплатный уровень, который можно использовать для пробного использования службы. Чтобы использовать уровень "бесплатный", используйте в `F0` качестве номера SKU для ресурса.
+> Многие из перечисленных ниже служб Cognitive Services имеют бесплатный уровень, который можно использовать для пробного использования службы. Чтобы использовать бесплатный уровень, укажите для ресурса номер SKU `F0`.
 
 ### <a name="vision"></a>Компьютерное зрение
 
@@ -98,16 +98,6 @@ az group create \
 | Распознавание лиц                       | `Face`                    |
 | Распознаватель документов            | `FormRecognizer`          |
 | Распознаватель рукописного текста             | `InkRecognizer`           |
-
-### <a name="search"></a>Поиск
-
-| Служба            | Вид                  |
-|--------------------|-----------------------|
-| Автозаполнение Bing   | `Bing.Autosuggest.v7` |
-| Пользовательский поиск Bing | `Bing.CustomSearch`   |
-| API Поиска сущностей Bing | `Bing.EntitySearch`   |
-| Поиск Bing        | `Bing.Search.v7`      |
-| API Проверки орфографии Bing   | `Bing.SpellCheck.v7`  |
 
 ### <a name="speech"></a>Речь
 
@@ -134,7 +124,7 @@ az group create \
 | Content Moderator | `ContentModerator` |
 | Персонализатор      | `Personalizer`     |
 
-Список доступных типов "виды" можно найти с помощью команды [AZ cognitiveservices Account List-видах](/cli/azure/cognitiveservices/account#az-cognitiveservices-account-list-kinds) :
+Список доступных видов Cognitive Services можно получить с помощью команды [az cognitiveservices account list-kinds](/cli/azure/cognitiveservices/account#az-cognitiveservices-account-list-kinds):
 
 ```azurecli-interactive
 az cognitiveservices account list-kinds
@@ -142,9 +132,9 @@ az cognitiveservices account list-kinds
 
 ### <a name="add-a-new-resource-to-your-resource-group"></a>Добавление нового ресурса в группу ресурсов
 
-Чтобы создать новый ресурс Cognitive Services и подписываться на него, используйте команду [AZ cognitiveservices Account Create](/cli/azure/cognitiveservices/account#az-cognitiveservices-account-create) . Эта команда добавляет новый оплачиваемый ресурс в группу ресурсов, созданную ранее. При создании нового ресурса необходимо знать тип службы, которую вы хотите использовать, а также ценовую категорию (или SKU) и расположение Azure:
+Чтобы создать ресурс Cognitive Services и подписку на него, выполните команду [az cognitiveservices account create](/cli/azure/cognitiveservices/account#az-cognitiveservices-account-create). Эта команда добавляет новый платный ресурс в созданную ранее группу ресурсов. При создании ресурса нужно знать, какой вид службы вы хотите использовать, а также ценовую категорию (номер SKU) и расположение Azure.
 
-Вы можете создать ресурс F0 (Free) для детектора аномалий с именем, `anomaly-detector-resource` используя приведенную ниже команду.
+Следующая команда позволяет создать ресурс ценовой категории F0 ("Бесплатный") для Детектора аномалий с именем `anomaly-detector-resource`.
 
 ```azurecli-interactive
 az cognitiveservices account create \
@@ -160,13 +150,13 @@ az cognitiveservices account create \
 
 ## <a name="get-the-keys-for-your-resource"></a>Получение ключей для ресурса
 
-Чтобы войти в локальную установку интерфейса Command-Line (CLI), используйте команду [AZ login](/cli/azure/reference-index#az-login) .
+Чтобы войти в локальную установку интерфейса командной строки (CLI), выполните команду [az login](/cli/azure/reference-index#az-login).
 
 ```azurecli-interactive
 az login
 ```
 
-Используйте команду [AZ cognitiveservices Account Keys List](/cli/azure/cognitiveservices/account/keys#az-cognitiveservices-account-keys-list) , чтобы получить ключи для своего ресурса службы.
+Команда [az cognitiveservices account keys list](/cli/azure/cognitiveservices/account/keys#az-cognitiveservices-account-keys-list) позволяет получить ключи для ресурса службы Cognitive Services.
 
 ```azurecli-interactive
     az cognitiveservices account keys list \
@@ -181,11 +171,11 @@ az login
 Ценовые категории (и сумма в выставленных счетах) основаны на количестве отправленных вами транзакций с использованием данных аутентификации. Каждая ценовая категория определяет:
 * максимальное количество разрешенных транзакций, обрабатываемых в секунду (TPS);
 * функции службы, включенные в ценовой категории;
-* Стоимость предопределенного количества транзакций. При превышении этого объема взимается плата за дополнительную плату, указанную в [сведениях о ценах](https://azure.microsoft.com/pricing/details/cognitive-services/custom-vision-service/) для вашей службы.
+* стоимость предопределенного количества транзакций. При превышении этого ограничения будет взиматься дополнительная плата, как указано в [сведениях о ценах](https://azure.microsoft.com/pricing/details/cognitive-services/custom-vision-service/) для вашей службы.
 
-## <a name="get-current-quota-usage-for-your-resource"></a>Получение сведений об используемой квоте для ресурса
+## <a name="get-current-quota-usage-for-your-resource"></a>Получение сведений об использовании квоты для ресурса
 
-Используйте команду [AZ cognitiveservices Account List-Usage](/cli/azure/cognitiveservices/account#az-cognitiveservices-account-list-usage) , чтобы получить сведения об использовании для вашего ресурса службы "неприятный".
+Команда [az cognitiveservices account list-usage](/cli/azure/cognitiveservices/account#az-cognitiveservices-account-list-usage) позволяет получить сведения о потреблении для ресурса Cognitive Services.
 
 ```azurecli-interactive
 az cognitiveservices account list-usage \
@@ -196,15 +186,15 @@ az cognitiveservices account list-usage \
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Если вы хотите очистить и удалить Cognitive Services ресурс, можно удалить его или группу ресурсов. При удалении группы ресурсов удаляются также все другие ресурсы, содержащиеся в этой группе.
+Если вы хотите очистить и удалить ресурс Cognitive Services, вы можете удалить его отдельно или вместе с группой ресурсов. При удалении группы ресурсов удаляются также все другие ресурсы, содержащиеся в этой группе.
 
-Чтобы удалить группу ресурсов и связанные с ней ресурсы, используйте команду AZ Group DELETE.
+Команда az group delete позволяет удалить группу ресурсов и все связанные с ней ресурсы.
 
 ```azurecli-interactive
 az group delete --name cognitive-services-resource-group
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Проверка подлинности запросов к Azure Cognitive Services](authentication.md)
 * [Общие сведения об Azure Cognitive Services](./what-are-cognitive-services.md)

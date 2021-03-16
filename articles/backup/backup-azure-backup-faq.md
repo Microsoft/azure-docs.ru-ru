@@ -3,12 +3,12 @@ title: Ответы на часто задаваемые вопросы
 description: 'Ответы на часто задаваемые вопросы о возможностях службы Azure Backup, в частности о хранилищах служб восстановления, объектах, для которых можно создавать резервные копии, принципе работы, шифровании и ограничениях. '
 ms.topic: conceptual
 ms.date: 07/07/2019
-ms.openlocfilehash: f819440001180a3c446f366e61e3ac0f983fa67f
-ms.sourcegitcommit: fc8ce6ff76e64486d5acd7be24faf819f0a7be1d
+ms.openlocfilehash: ac58cee66aa2a89efb7194a051801b068628d3bc
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98806648"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103467635"
 ---
 # <a name="azure-backup---frequently-asked-questions"></a>Часто задаваемые вопросы по Azure Backup
 
@@ -58,7 +58,7 @@ ms.locfileid: "98806648"
 - Восстановление на уровне элементов поддерживается для виртуальных машин Azure, резервные копии которых были созданы с помощью соответствующей функции Azure. Дополнительные сведения см. в этой [статье](backup-azure-restore-files-from-vm.md).
 - ILR не поддерживается для точек оперативного восстановления локальных виртуальных машин, резервная копия которых создана с помощью Azure Backup Server (MABS) или System Center DPM.
 
-### <a name="how-can-i-move-data-from-the-recovery-services-vault-to-on-premises"></a>Как переместить данные из хранилища служб восстановления в локальную среду?
+### <a name="how-can-i-move-data-from-the-recovery-services-vault-to-on-premises"></a>Как переместить данные из хранилища Служб восстановления в локальное хранилище?
 
 Экспорт данных непосредственно из хранилища служб восстановления в локальную среду с помощью Data Box не поддерживается. Данные необходимо восстановить в учетную запись хранения, после чего их можно переместить в локальную среду с помощью [Data Box](../databox/data-box-overview.md) или [импорта и экспорта](../import-export/storage-import-export-service.md).
 
@@ -66,7 +66,14 @@ ms.locfileid: "98806648"
 
 Если в хранилище [GRS](azure-backup-glossary.md#grs) не включена возможность [КРР](azure-backup-glossary.md#cross-region-restore-crr) , доступ к данным в дополнительном регионе невозможен, пока Azure не заявляет аварии в основном регионе. В таком случае восстановление происходит из дополнительного региона. Если КРР включен, даже если основной регион работает, можно запустить восстановление в дополнительном регионе.
 
-## <a name="azure-backup-agent"></a>Агент Azure Backup
+### <a name="can-i-move-a-subscription-that-contains-a-vault-to-a-different-azure-active-directory"></a>Можно ли переместить подписку, содержащую хранилище, в другую Azure Active Directory?
+
+Да. Сведения о перемещении подписки (которая содержит хранилище) в другую Azure Active Directory (AD) см. в статье [Перемещение подписки в другой каталог](../role-based-access-control/transfer-subscription.md).
+
+>[!IMPORTANT]
+>После перемещения подписки убедитесь, что выполнены следующие действия.<ul><li>Разрешения на управление доступом на основе ролей и пользовательские роли не локальную систему. Необходимо повторно создать разрешения и роли в новом Azure AD.</li><li>Необходимо повторно создать управляемое удостоверение (MI) хранилища, отключив и включив его снова. Кроме того, необходимо оценить и повторно создать разрешения MI.</li><li>Если в хранилище используются функции, использующие MI, такие как [частные конечные точки](private-endpoints.md#before-you-start) и [управляемые клиентом ключи](encryption-at-rest-with-cmk.md#before-you-start), необходимо перенастроить эти функции.</li></ul>
+
+## <a name="azure-backup-agent"></a>Агент службы Azure Backup
 
 ### <a name="where-can-i-find-common-questions-about-the-azure-backup-agent-for-azure-vm-backup"></a>Где мне найти вопросы и ответы об агенте Azure Backup для резервного копирования виртуальных машин Azure?
 
@@ -119,7 +126,7 @@ Windows 8 или более поздняя версия | 54 400 ГБ
 Windows 7 |1700 ГБ
 Windows Server 2012 или более поздней версии; | 54 400 ГБ
 Windows Server 2008, Windows Server 2008 R2 | 1700 ГБ
-Виртуальная машина Azure | См. [таблицу поддержки для резервного копирования виртуальных машин Azure](./backup-support-matrix-iaas.md#vm-storage-support) .
+Azure | См. [таблицу поддержки для резервного копирования виртуальных машин Azure](./backup-support-matrix-iaas.md#vm-storage-support) .
 
 ### <a name="how-is-the-data-source-size-determined"></a>Как вычисляется размер источника данных?
 
