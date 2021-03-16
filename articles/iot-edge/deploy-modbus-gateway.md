@@ -8,14 +8,16 @@ services: iot-edge
 ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: kgremban
-ms.openlocfilehash: d07a1d1ab0d3b1f4315c09f1c403126139b34612
-ms.sourcegitcommit: 2e72661f4853cd42bb4f0b2ded4271b22dc10a52
+ms.openlocfilehash: 0388520903e208b3225375d5cee81e8321740a1b
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92043907"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103487740"
 ---
 # <a name="connect-modbus-tcp-devices-through-an-iot-edge-device-gateway"></a>Подключение устройств Modbus TCP через шлюз устройств IoT Edge
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Если вы хотите подключить устройства IoT, использующие протоколы Modbus TCP или рту, к центру Интернета вещей Azure, вы можете использовать устройство IoT Edge в качестве шлюза. Устройство шлюза считывает данные с устройства Modbus, а затем передает эти данные в облако с помощью поддерживаемого протокола.
 
@@ -58,7 +60,7 @@ ms.locfileid: "92043907"
 
 6. Найдите свойство **славеконнектион** в JSON и присвойте ему значение IPv4-адреса устройства MODBUS.
 
-7. Выберите **Обновить**.
+7. Нажмите кнопку **Обновить**.
 
 8. Выберите **Проверка + создать**, просмотрите развертывание, а затем выберите **создать**.
 

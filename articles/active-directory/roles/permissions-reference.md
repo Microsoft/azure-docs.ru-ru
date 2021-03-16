@@ -9,17 +9,17 @@ ms.service: active-directory
 ms.workload: identity
 ms.subservice: roles
 ms.topic: reference
-ms.date: 02/17/2021
+ms.date: 03/13/2021
 ms.author: rolyon
 ms.reviewer: vincesm
 ms.custom: it-pro, fasttrack-edit
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7a0f50a7f84b89d7c048e57eadc85635df10f77
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.openlocfilehash: a2c327154e2f4eae735e7078be3b057b1d8cf1c5
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103467686"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103490880"
 ---
 # <a name="azure-ad-built-in-roles"></a>Встроенные роли в Azure AD
 
@@ -76,6 +76,7 @@ ms.locfileid: "103467686"
 > | [Руководитель предприятия Insights](#insights-business-leader) | Может просматривать панели мониторинга и аналитические сведения и предоставлять к ним доступ с помощью приложения M365 Insights. | 31e939ad-9672-4796-9c2e-873181342d2d |
 > | [Администратор Intune](#intune-administrator) | Может контролировать все аспекты продукта Intune. | 3a2c62db-5318-420d-8d74-23affee5d9d5 |
 > | [Администратор Kaizala](#kaizala-administrator) | Может управлять параметрами для Microsoft Kaizala. | 74ef975b-6605-40af-a5d2-b9539d836353 |
+> | [Администратор базы знаний](#knowledge-administrator) | Может настраивать знания, изучать и другие интеллектуальные функции. | b5a8dcf3-09d5-43a9-a639-8e29ef291470 |
 > | [Администратор лицензий](#license-administrator) | Может управлять лицензиями продуктов для пользователей и групп. | 4d6ac14f-3453-41d0-bef9-a3e0c569773a |
 > | [Читатель конфиденциальности данных Центра сообщений](#message-center-privacy-reader) | Может читать сообщения безопасности и обновления только в центре сообщений Office 365. | ac16e43d-7b2d-40e0-ac05-243ff356ab5b |
 > | [Читатель центра сообщений](#message-center-reader) | Может читать сообщения и обновления для своей организации только в Центре сообщений Office 365. | 790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b |
@@ -401,7 +402,7 @@ ms.locfileid: "103467686"
 > | microsoft.directory/servicePrincipals/synchronizationJobs/manage | Запуск, перезапуск и приостановка заданий метка подготовки приложений |
 > | microsoft.directory/servicePrincipals/synchronizationSchema/manage | Создание заданий и схемы метка подготовки приложений и управление ими |
 > | microsoft.directory/servicePrincipals/managePasswordSingleSignOnCredentials | Чтение учетных данных единого входа с паролем для субъектов-служб |
-> | Microsoft. Directory/свойства serviceprincipals/Манажепермиссионгрантсфоралл. Микрософт-аппликатион-админ | Предоставление согласия для разрешений приложения и делегированных разрешений от имени любого пользователя или всех пользователей, за исключением разрешений приложения для Microsoft Graph и Azure AD Graph  |
+> | Microsoft. Directory/свойства serviceprincipals/Манажепермиссионгрантсфоралл. Микрософт-аппликатион-админ | Предоставление согласия для разрешений приложения и делегированных разрешений от имени любого пользователя или всех пользователей, за исключением разрешений приложения для Microsoft Graph и Azure AD Graph |
 > | microsoft.directory/servicePrincipals/appRoleAssignedTo/update | Обновление назначений ролей субъекта-службы |
 > | microsoft.directory/servicePrincipals/audience/update | Обновление свойств аудитории для субъектов-служб |
 > | microsoft.directory/servicePrincipals/authentication/update | Обновление свойств проверки подлинности в субъектах-службах |
@@ -730,7 +731,7 @@ ms.locfileid: "103467686"
 > | Microsoft. каталог/группы. Unified/Owners/Update | Обновление владельцев групп Microsoft 365 с исключением групп, назначаемых ролью |
 > | microsoft.azure.serviceHealth/allEntities/allTasks | Чтение и Настройка службы работоспособности служб Azure |
 > | microsoft.azure.supportTickets/allEntities/allTasks | Создание билетов службы поддержки Azure и управление ими |
-> | microsoft.office365.exchange/allEntities/allTasks | Управление всеми аспектами Exchange Online |
+> | Microsoft. Office 365. Exchange/Аллентитиес/Basic/Аллтаскс | Управление всеми аспектами Exchange Online |
 > | microsoft.office365.network/performance/allProperties/read | Чтение всех свойств производительности сети в центре администрирования Microsoft 365 |
 > | microsoft.office365.serviceHealth/allEntities/allTasks | Чтение и Настройка работоспособности службы в центре администрирования Microsoft 365 |
 > | microsoft.office365.supportTickets/allEntities/allTasks | Создание запросов на обслуживание Microsoft 365 и управление ими |
@@ -774,6 +775,7 @@ ms.locfileid: "103467686"
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
 > | --- | --- |
+> | Microsoft. Directory/Акцессревиевс/Аллпропертиес/Аллтаскс | Создание и удаление проверок доступа и чтение и изменение всех свойств проверок доступа в Azure AD |
 > | microsoft.directory/administrativeUnits/allProperties/allTasks | Создание административных единиц и управление ими (включая члены) |
 > | microsoft.directory/applications/allProperties/allTasks | Создание и удаление приложений, чтение и изменение всех свойств |
 > | microsoft.directory/applications/synchronization/standard/read | Чтение параметров подготовки к работе, связанных с объектом приложения |
@@ -801,9 +803,10 @@ ms.locfileid: "103467686"
 > | microsoft.directory/domains/allProperties/allTasks | Создание и удаление доменов, чтение и изменение всех свойств |
 > | Microsoft. Directory/Ентитлементманажемент/Аллпропертиес/Аллтаскс | Создание и удаление ресурсов, чтение и обновление всех свойств в управлении назначениями Azure AD |
 > | microsoft.directory/groups/allProperties/allTasks | Создание и удаление групп, чтение и изменение всех свойств |
-> | Microsoft. Directory/Граупсассигнаблеторолес/Аллпропертиес/Update | Обновить группы со свойством Исассигнаблетороле, имеющим значение true |
-> | Microsoft. Directory/Граупсассигнаблеторолес/создать | Создать группы со свойством Исассигнаблетороле, имеющим значение true |
-> | Microsoft. Directory/Граупсассигнаблеторолес/удаление | Удалить группы со свойством Исассигнаблетороле, имеющим значение true |
+> | Microsoft. Directory/Граупсассигнаблеторолес/создать | Создание групп с назначением ролей |
+> | Microsoft. Directory/Граупсассигнаблеторолес/удаление | Удаление назначаемых в роли групп |
+> | Microsoft. Directory/Граупсассигнаблеторолес/Restore | Восстановление назначаемых групп ролей |
+> | Microsoft. Directory/Граупсассигнаблеторолес/Аллпропертиес/Update | Обновление назначаемых групп ролей |
 > | microsoft.directory/groupSettings/allProperties/allTasks | Создание и удаление параметров групп, чтение и изменение всех свойств |
 > | microsoft.directory/groupSettingTemplates/allProperties/allTasks | Создание и удаление шаблонов параметров групп, чтение и обновление всех свойств |
 > | Microsoft. Directory/Идентитипротектион/Аллпропертиес/Аллтаскс | Создание и удаление всех ресурсов и чтение и обновление стандартных свойств в защита идентификации Azure AD |
@@ -823,7 +826,7 @@ ms.locfileid: "103467686"
 > | microsoft.directory/serviceAction/getAvailableExtentionProperties | Может выполнить действие службы Жетаваилабликстентионпропертиес |
 > | microsoft.directory/servicePrincipals/allProperties/allTasks | Создание и удаление субъектов-служб, а затем чтение и изменение всех свойств |
 > | Microsoft. Directory/свойства serviceprincipals/Манажепермиссионгрантсфоралл. Микрософт-компани-админ | Предоставление согласия для любого разрешения на любое приложение |
-> | Microsoft. Directory/свойства serviceprincipals/Манажепермиссионгрантсфорграуп. Микрософт-Алл-аппликатион-пермиссионс | Предоставление службе используемой прямой доступ к данным группы  |
+> | Microsoft. Directory/свойства serviceprincipals/Манажепермиссионгрантсфорграуп. Микрософт-Алл-аппликатион-пермиссионс | Предоставление службе используемой прямой доступ к данным группы |
 > | microsoft.directory/servicePrincipals/synchronization/standard/read | Чтение параметров подготовки к работе, связанных с субъектом-службой |
 > | microsoft.directory/signInReports/allProperties/read | Чтение всех свойств отчетов о входе, включая привилегированные свойства |
 > | microsoft.directory/subscribedSkus/allProperties/allTasks | Приобретение подписок и управление ими и удаление подписок |
@@ -832,6 +835,10 @@ ms.locfileid: "103467686"
 > | microsoft.directory/permissionGrantPolicies/delete | Удалить политики предоставления разрешений |
 > | microsoft.directory/permissionGrantPolicies/standard/read | Чтение стандартных свойств политик предоставления разрешений |
 > | microsoft.directory/permissionGrantPolicies/basic/update | Обновление основных свойств политик предоставления разрешений |
+> | Microsoft. Directory/СервицепринЦипалкреатионполиЦиес/создать | Создание политик создания субъекта-службы |
+> | Microsoft. Directory/СервицепринЦипалкреатионполиЦиес/удаление | Удаление политик создания субъекта-службы |
+> | Microsoft. Directory/СервицепринЦипалкреатионполиЦиес/Standard/Read | Чтение стандартных свойств политик создания субъекта-службы |
+> | Microsoft. Directory/СервицепринЦипалкреатионполиЦиес/Basic/Update | Обновление основных свойств политик создания субъекта-службы |
 > | Microsoft. Azure. Адванцедсреатпротектион/Аллентитиес/Аллтаскс | Управление всеми аспектами Azure Advanced Threat protection |
 > | microsoft.azure.informationProtection/allEntities/allTasks | Управление всеми аспектами Azure Information Protection |
 > | microsoft.azure.serviceHealth/allEntities/allTasks | Чтение и Настройка службы работоспособности служб Azure |
@@ -842,11 +849,12 @@ ms.locfileid: "103467686"
 > | microsoft.intune/allEntities/allTasks | Управление всеми аспектами Microsoft Intune |
 > | microsoft.office365.complianceManager/allEntities/allTasks | Управление всеми аспектами Office 365 Compliance Manager. |
 > | microsoft.office365.desktopAnalytics/allEntities/allTasks | Управление всеми аспектами аналитики настольных систем |
-> | microsoft.office365.exchange/allEntities/allTasks | Управление всеми аспектами Exchange Online |
+> | Microsoft. Office 365. Exchange/Аллентитиес/Basic/Аллтаскс | Управление всеми аспектами Exchange Online |
 > | microsoft.office365.lockbox/allEntities/allTasks | Управление всеми аспектами защищенное хранилище |
 > | microsoft.office365.messageCenter/messages/read | Чтение сообщений в центре сообщений в центре администрирования Microsoft 365, за исключением сообщений безопасности |
 > | microsoft.office365.messageCenter/securityMessages/read | Чтение сообщений безопасности в центре сообщений в центре администрирования Microsoft 365 |
-> | Microsoft. Office 365. Протектионцентер/Аллентитиес/Аллпропертиес/Аллтаскс | Управление всеми аспектами центра защиты Office 365 |
+> | microsoft.office365.network/performance/allProperties/read | Чтение всех свойств производительности сети в центре администрирования Microsoft 365 |
+> | Microsoft. Office 365. Протектионцентер/Аллентитиес/Аллпропертиес/Аллтаскс | Управление всеми аспектами центров обеспечения безопасности и соответствия требованиям |
 > | Microsoft. Office 365. Поиск/содержимое/управление | Создание и удаление содержимого и чтение и изменение всех свойств в Microsoft Search |
 > | microsoft.office365.securityComplianceCenter/allEntities/allTasks | Создание и удаление всех ресурсов, а также чтение и обновление стандартных свойств в Microsoft 365 центре безопасности и соответствия требованиям. |
 > | microsoft.office365.serviceHealth/allEntities/allTasks | Чтение и Настройка работоспособности службы в центре администрирования Microsoft 365 |
@@ -902,11 +910,11 @@ ms.locfileid: "103467686"
 > | microsoft.directory/signInReports/allProperties/read | Чтение всех свойств отчетов о входе, включая привилегированные свойства |
 > | microsoft.directory/users/strongAuthentication/read | Чтение свойства строгой проверки подлинности для пользователей |
 > | microsoft.commerce.billing/allEntities/read | Чтение всех ресурсов для выставления счетов на Office 365 |
-> | microsoft.office365.exchange/allEntities/read | Чтение всех ресурсов Exchange Online |
+> | Microsoft. Office 365. Exchange/Аллентитиес/Standard/Read | Чтение всех ресурсов Exchange Online |
 > | microsoft.office365.messageCenter/messages/read | Чтение сообщений в центре сообщений в центре администрирования Microsoft 365, за исключением сообщений безопасности |
 > | microsoft.office365.messageCenter/securityMessages/read | Чтение сообщений безопасности в центре сообщений в центре администрирования Microsoft 365 |
 > | microsoft.office365.network/performance/allProperties/read | Чтение всех свойств производительности сети в центре администрирования Microsoft 365 |
-> | Microsoft. Office 365. Протектионцентер/Аллентитиес/Аллпропертиес/Read | Ознакомьтесь со всеми аспектами центра защиты Office 365 |
+> | Microsoft. Office 365. Протектионцентер/Аллентитиес/Аллпропертиес/Read | Чтение всех свойств в центрах безопасности и соответствия требованиям |
 > | microsoft.office365.securityComplianceCenter/allEntities/read | Чтение стандартных свойств в центре безопасности и соответствия требованиям Microsoft 365 |
 > | Microsoft. Office 365. Усажерепортс/Аллентитиес/Аллпропертиес/Read | Чтение отчетов об использовании Office 365 |
 > | microsoft.office365.webPortal/allEntities/standard/read | Чтение основных свойств всех ресурсов в центре администрирования Microsoft 365 |
@@ -933,7 +941,7 @@ ms.locfileid: "103467686"
 > | microsoft.directory/groups/owners/update | Обновление владельцев групп, за исключением назначаемых ролью групп |
 > | microsoft.directory/groups/settings/update | Обновить параметры групп |
 > | Microsoft. Directory, группы, видимость и обновление | Обновление свойства видимости групп |
-> | Microsoft. Directory/свойства serviceprincipals/Манажепермиссионгрантсфорграуп. Микрософт-Алл-аппликатион-пермиссионс | Предоставление службе используемой прямой доступ к данным группы  |
+> | Microsoft. Directory/свойства serviceprincipals/Манажепермиссионгрантсфорграуп. Микрософт-Алл-аппликатион-пермиссионс | Предоставление службе используемой прямой доступ к данным группы |
 > | microsoft.azure.serviceHealth/allEntities/allTasks | Чтение и Настройка службы работоспособности служб Azure |
 > | microsoft.azure.supportTickets/allEntities/allTasks | Создание билетов службы поддержки Azure и управление ими |
 > | microsoft.office365.serviceHealth/allEntities/allTasks | Чтение и Настройка работоспособности службы в центре администрирования Microsoft 365 |
@@ -1092,7 +1100,6 @@ ms.locfileid: "103467686"
 > | Microsoft. каталог/группы. Безопасность/базовый/обновление | Обновление основных свойств групп безопасности с исключением групп, назначаемых ролью |
 > | Microsoft. Directory/Groups. Безопасность/классификация/обновление | Обновление свойства классификации групп безопасности с исключением групп, назначаемых ролью |
 > | Microsoft. Directory/Groups. Security/dynamicMembershipRule/Update | Обновление свойства dynamicMembershipRule групп безопасности с исключением групп, назначаемых ролью |
-> | Microsoft. Directory/Groups. Security/groupType/Update | Обновление свойства типа группы групп безопасности с исключением групп, назначаемых ролью |
 > | Microsoft. Directory/Groups. безопасность, участники и обновление | Обновление членов групп безопасности с исключением групп, назначаемых ролью |
 > | Microsoft. Directory/Groups. Security/Owners/Update | Обновление владельцев групп безопасности с исключением групп, назначаемых ролью |
 > | Microsoft. Directory/Groups. безопасность, видимость и обновление | Обновление свойства видимости групп безопасности с исключением групп, назначаемых ролью |
@@ -1111,6 +1118,26 @@ ms.locfileid: "103467686"
 > | Действия | Описание |
 > | --- | --- |
 > | microsoft.office365.serviceHealth/allEntities/allTasks | Чтение и Настройка работоспособности службы в центре администрирования Microsoft 365 |
+> | microsoft.office365.supportTickets/allEntities/allTasks | Создание запросов на обслуживание Microsoft 365 и управление ими |
+> | microsoft.office365.webPortal/allEntities/standard/read | Чтение основных свойств всех ресурсов в центре администрирования Microsoft 365 |
+
+## <a name="knowledge-administrator"></a>Администратор базы знаний
+
+Пользователи с этой ролью имеют полный доступ ко всем настройкам знаний, Learning и Intelligent Features в центре администрирования Microsoft 365. Они имеют общее представление о наборе продуктов, сведения о лицензировании и отвечают за управление доступом. Администратор базы знаний может создавать и администрировать содержимое, например разделы, акронимы и учебные материалы. Кроме того, эти пользователи могут создавать центры содержимого, отслеживать работоспособность служб и создавать запросы на обслуживание.
+
+> [!div class="mx-tableFixed"]
+> | Действия | Описание |
+> | --- | --- |
+> | Microsoft. Directory/Groups. Безопасность/создать | Создание групп безопасности с исключением назначаемых ролями групп |
+> | Microsoft. Directory/Groups. Security/Креатеасовнер | Создание групп безопасности с исключением назначаемых ролями групп и создателей, добавленных в качестве первого владельца |
+> | Microsoft. каталог/группы. Безопасность/удаление | Удаление групп безопасности с исключением назначаемых ролью групп |
+> | Microsoft. каталог/группы. Безопасность/базовый/обновление | Обновление основных свойств групп безопасности с исключением групп, назначаемых ролью |
+> | Microsoft. Directory/Groups. безопасность, участники и обновление | Обновление членов групп безопасности с исключением групп, назначаемых ролью |
+> | Microsoft. Directory/Groups. Security/Owners/Update | Обновление владельцев групп безопасности с исключением групп, назначаемых ролью |
+> | Microsoft. Office 365. Knowledge/Контентундерстандинг/Аллпропертиес/Аллтаскс | Чтение и обновление всех свойств содержимого в центре администрирования Microsoft 365 |
+> | Microsoft. Office 365. Knowledge/Кновледженетворк/Аллпропертиес/Аллтаскс | Чтение и обновление всех свойств сети знаний в Microsoft 365 центре администрирования |
+> | Microsoft. Office 365. Протектионцентер/Сенситивитилабелс/Аллпропертиес/Read | Прочтите метки чувствительности в центрах безопасности и соответствия требованиям |
+> | Microsoft. Office 365. sharePoint/Аллентитиес/Аллтаскс | Создание и удаление всех ресурсов, а затем чтение и обновление стандартных свойств в SharePoint |
 > | microsoft.office365.supportTickets/allEntities/allTasks | Создание запросов на обслуживание Microsoft 365 и управление ими |
 > | microsoft.office365.webPortal/allEntities/standard/read | Чтение основных свойств всех ресурсов в центре администрирования Microsoft 365 |
 
@@ -1415,9 +1442,10 @@ ms.locfileid: "103467686"
 > | microsoft.directory/appRoleAssignments/allProperties/allTasks | Создание и удаление appRoleAssignments и чтение и изменение всех свойств |
 > | Microsoft. Directory/authorizationPolicy/Аллпропертиес/Аллтаскс | Управление всеми аспектами политик авторизации |
 > | microsoft.directory/directoryRoles/allProperties/allTasks | Создание и удаление ролей каталога, чтение и изменение всех свойств |
-> | Microsoft. Directory/Граупсассигнаблеторолес/Аллпропертиес/Update | Обновить группы со свойством Исассигнаблетороле, имеющим значение true |
-> | Microsoft. Directory/Граупсассигнаблеторолес/создать | Создать группы со свойством Исассигнаблетороле, имеющим значение true |
-> | Microsoft. Directory/Граупсассигнаблеторолес/удаление | Удалить группы со свойством Исассигнаблетороле, имеющим значение true |
+> | Microsoft. Directory/Граупсассигнаблеторолес/создать | Создание групп с назначением ролей |
+> | Microsoft. Directory/Граупсассигнаблеторолес/удаление | Удаление назначаемых в роли групп |
+> | Microsoft. Directory/Граупсассигнаблеторолес/Restore | Восстановление назначаемых групп ролей |
+> | Microsoft. Directory/Граупсассигнаблеторолес/Аллпропертиес/Update | Обновление назначаемых групп ролей |
 > | microsoft.directory/oAuth2PermissionGrants/allProperties/allTasks | Создание и удаление разрешений OAuth 2,0, а затем чтение и обновление всех свойств. |
 > | Microsoft. Directory/Привилежедидентитиманажемент/Аллпропертиес/Аллтаскс | Создание и удаление всех ресурсов и чтение и обновление стандартных свойств в управление привилегированными пользователями |
 > | microsoft.directory/roleAssignments/allProperties/allTasks | Создание и удаление назначений ролей, а затем чтение и обновление всех свойств назначения ролей |
@@ -1439,6 +1467,7 @@ ms.locfileid: "103467686"
 > | microsoft.directory/provisioningLogs/allProperties/read | Чтение всех свойств журналов подготовки к работе. |
 > | microsoft.directory/signInReports/allProperties/read | Чтение всех свойств отчетов о входе, включая привилегированные свойства |
 > | microsoft.azure.serviceHealth/allEntities/allTasks | Чтение и Настройка службы работоспособности служб Azure |
+> | microsoft.office365.network/performance/allProperties/read | Чтение всех свойств производительности сети в центре администрирования Microsoft 365 |
 > | microsoft.office365.serviceHealth/allEntities/allTasks | Чтение и Настройка работоспособности службы в центре администрирования Microsoft 365 |
 > | Microsoft. Office 365. Усажерепортс/Аллентитиес/Аллпропертиес/Read | Чтение отчетов об использовании Office 365 |
 > | microsoft.office365.webPortal/allEntities/standard/read | Чтение основных свойств всех ресурсов в центре администрирования Microsoft 365 |
@@ -1514,8 +1543,8 @@ EDR и ATP в Защитнике Windows | Назначение ролей<br>У
 > | microsoft.directory/signInReports/allProperties/read | Чтение всех свойств отчетов о входе, включая привилегированные свойства |
 > | microsoft.azure.serviceHealth/allEntities/allTasks | Чтение и Настройка службы работоспособности служб Azure |
 > | microsoft.azure.supportTickets/allEntities/allTasks | Создание билетов службы поддержки Azure и управление ими |
-> | Microsoft. Office 365. Протектионцентер/Аллентитиес/Standard/Read | Чтение стандартных свойств всех ресурсов в центре защиты Office 365 |
-> | Microsoft. Office 365. Протектионцентер/Аллентитиес/Basic/Update | Обновление основных свойств всех ресурсов в центре защиты Office 365 |
+> | Microsoft. Office 365. Протектионцентер/Аллентитиес/Standard/Read | Чтение стандартных свойств всех ресурсов в центрах безопасности и соответствия требованиям |
+> | Microsoft. Office 365. Протектионцентер/Аллентитиес/Basic/Update | Обновление основных свойств всех ресурсов в центрах безопасности и соответствия требованиям |
 > | Microsoft. Office 365. Протектионцентер/Аттакксимулатор/полезная нагрузка/Аллпропертиес/Аллтаскс | Создание полезных данных атак и управление ими в симуляторе атак |
 > | Microsoft. Office 365. Протектионцентер/Аттакксимулатор/Reports/Аллпропертиес/Read | Ознакомьтесь с отчетами о моделировании атак, ответах и связанных учебных курсах |
 > | Microsoft. Office 365. Протектионцентер/Аттакксимулатор/моделирование/Аллпропертиес/Аллтаскс | Создание шаблонов моделирования атак и управление ими в симуляторе атак |
@@ -1545,6 +1574,7 @@ EDR и ATP в Защитнике Windows | Все разрешения роли 
 > | Microsoft. Directory/Клаудаппсекурити/Аллпропертиес/Аллтаскс | Создание и удаление всех ресурсов и чтение и обновление стандартных свойств в Microsoft Cloud App Security |
 > | Microsoft. Directory/Идентитипротектион/Аллпропертиес/Аллтаскс | Создание и удаление всех ресурсов и чтение и обновление стандартных свойств в защита идентификации Azure AD |
 > | Microsoft. Directory/Привилежедидентитиманажемент/Аллпропертиес/Read | Чтение всех ресурсов в управление привилегированными пользователями |
+> | microsoft.directory/provisioningLogs/allProperties/read | Чтение всех свойств журналов подготовки к работе. |
 > | microsoft.directory/signInReports/allProperties/read | Чтение всех свойств отчетов о входе, включая привилегированные свойства |
 > | Microsoft. Azure. Адванцедсреатпротектион/Аллентитиес/Аллтаскс | Управление всеми аспектами Azure Advanced Threat protection |
 > | microsoft.azure.supportTickets/allEntities/allTasks | Создание билетов службы поддержки Azure и управление ими |
@@ -1586,7 +1616,7 @@ EDR и ATP в Защитнике Windows | Просмотр и анализ оп
 > | microsoft.directory/provisioningLogs/allProperties/read | Чтение всех свойств журналов подготовки к работе. |
 > | microsoft.directory/signInReports/allProperties/read | Чтение всех свойств отчетов о входе, включая привилегированные свойства |
 > | microsoft.azure.serviceHealth/allEntities/allTasks | Чтение и Настройка службы работоспособности служб Azure |
-> | Microsoft. Office 365. Протектионцентер/Аллентитиес/Standard/Read | Чтение стандартных свойств всех ресурсов в центре защиты Office 365 |
+> | Microsoft. Office 365. Протектионцентер/Аллентитиес/Standard/Read | Чтение стандартных свойств всех ресурсов в центрах безопасности и соответствия требованиям |
 > | Microsoft. Office 365. Протектионцентер/Аттакксимулатор/полезная нагрузка/Аллпропертиес/чтение | Чтение всех свойств полезных данных для атак в симуляторе атак |
 > | Microsoft. Office 365. Протектионцентер/Аттакксимулатор/Reports/Аллпропертиес/Read | Ознакомьтесь с отчетами о моделировании атак, ответах и связанных учебных курсах |
 > | Microsoft. Office 365. Протектионцентер/Аттакксимулатор/моделирование/Аллпропертиес/чтение | Чтение всех свойств шаблонов имитации атак в симуляторе атак |
@@ -1605,6 +1635,7 @@ EDR и ATP в Защитнике Windows | Просмотр и анализ оп
 > | --- | --- |
 > | microsoft.azure.serviceHealth/allEntities/allTasks | Чтение и Настройка службы работоспособности служб Azure |
 > | microsoft.azure.supportTickets/allEntities/allTasks | Создание билетов службы поддержки Azure и управление ими |
+> | microsoft.office365.network/performance/allProperties/read | Чтение всех свойств производительности сети в центре администрирования Microsoft 365 |
 > | microsoft.office365.serviceHealth/allEntities/allTasks | Чтение и Настройка работоспособности службы в центре администрирования Microsoft 365 |
 > | microsoft.office365.supportTickets/allEntities/allTasks | Создание запросов на обслуживание Microsoft 365 и управление ими |
 > | microsoft.office365.webPortal/allEntities/standard/read | Чтение основных свойств всех ресурсов в центре администрирования Microsoft 365 |
@@ -1669,7 +1700,7 @@ EDR и ATP в Защитнике Windows | Просмотр и анализ оп
 > | Microsoft. каталог/группы. Unified/Basic/Update | Обновление основных свойств групп Microsoft 365 с исключением групп, назначаемых ролью |
 > | Microsoft. каталог/группы. Unified/Members/Update | Обновление членов групп Microsoft 365 с исключением групп, назначаемых ролью |
 > | Microsoft. каталог/группы. Unified/Owners/Update | Обновление владельцев групп Microsoft 365 с исключением групп, назначаемых ролью |
-> | Microsoft. Directory/свойства serviceprincipals/Манажепермиссионгрантсфорграуп. Микрософт-Алл-аппликатион-пермиссионс | Предоставление службе используемой прямой доступ к данным группы  |
+> | Microsoft. Directory/свойства serviceprincipals/Манажепермиссионгрантсфорграуп. Микрософт-Алл-аппликатион-пермиссионс | Предоставление службе используемой прямой доступ к данным группы |
 > | microsoft.azure.serviceHealth/allEntities/allTasks | Чтение и Настройка службы работоспособности служб Azure |
 > | microsoft.azure.supportTickets/allEntities/allTasks | Создание билетов службы поддержки Azure и управление ими |
 > | microsoft.office365.network/performance/allProperties/read | Чтение всех свойств производительности сети в центре администрирования Microsoft 365 |
@@ -1741,6 +1772,7 @@ EDR и ATP в Защитнике Windows | Просмотр и анализ оп
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
 > | --- | --- |
+> | microsoft.office365.network/performance/allProperties/read | Чтение всех свойств производительности сети в центре администрирования Microsoft 365 |
 > | Microsoft. Office 365. Усажерепортс/Аллентитиес/Standard/Read | Чтение сводных отчетов об использовании Office 365 на уровне клиента |
 > | microsoft.office365.webPortal/allEntities/standard/read | Чтение основных свойств всех ресурсов в центре администрирования Microsoft 365 |
 

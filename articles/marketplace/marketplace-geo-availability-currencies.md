@@ -6,19 +6,21 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: reference
 author: keferna
 ms.author: keferna
-ms.date: 12/07/2020
-ms.openlocfilehash: c71c13701d064110be0ef976920c0cc01f2fa308
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.date: 03/08/2021
+ms.openlocfilehash: e583d39e2eed1b08dfeb17cafc1e12c583176d7b
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98879770"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103493039"
 ---
 # <a name="geographic-availability-and-currency-support-for-the-commercial-marketplace"></a>Поддержка географической доступности и валюты для коммерческого рынка
 
 ## <a name="supported-geographic-locations"></a>Поддерживаемые географические расположения
 
 Предложения на коммерческой платформе можно приобрести в 141 регионах в соответствии с адресом для выставления счетов клиента, а транзакции могут осуществляться в 17 валютах. В следующей таблице перечислены все поддерживаемые географические расположения, их [буквенно-цифровой код ISO 3166 2](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes)и назначенная Валюта.
+
+CSP может приобрести предложение в центре партнеров в своей валюте клиента, чтобы они могли выставлять счета за ту же валюту. Дополнительные сведения об этом см. в [этих часто задаваемых](https://partner.microsoft.com/resources/detail/eu-efta-change-of-partner-billing-currency-faq-pdf)вопросах.
 
 |   Название региона или страны               |   ISO-2   |   Валюта</br>(Все типы предложений)  |    Валюта</br>(Только консультационные услуги)    |
 |-------------------------------------|-----------|--------------|---------------------------------------------|

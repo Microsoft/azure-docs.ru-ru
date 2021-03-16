@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/08/2021
+ms.date: 03/15/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.custom: fasttrack-edit, project-no-code
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: c9a20305f05b285b29d4a5eaf75116c862f3a6d4
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 4b357213f4e552fd791fb575d8b7a287b924c7f9
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102448495"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103489076"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-an-azure-ad-b2c-account-from-another-azure-ad-b2c-tenant"></a>Настройка регистрации и входа с учетной записью Azure AD B2C из другого клиента Azure AD B2C
 
@@ -63,6 +63,8 @@ ms.locfileid: "102448495"
     ```
 
     Например, `https://contoso.b2clogin.com/contoso.onmicrosoft.com/oauth2/authresp`.
+
+    Если используется [личный домен](custom-domain.md), введите `https://your-domain-name/your-tenant-name.onmicrosoft.com/oauth2/authresp` . Замените `your-domain-name` пользовательским доменом и `your-tenant-name` именем своего клиента.
 
 1. В разделе Разрешения установите флажок **предоставить согласие администратора для OpenID Connect и offline_access разрешения** .
 1. Выберите **Зарегистрировать**.
@@ -224,7 +226,7 @@ ms.locfileid: "102448495"
 [!INCLUDE [active-directory-b2c-configure-relying-party-policy](../../includes/active-directory-b2c-configure-relying-party-policy-user-journey.md)]
 
 
-## <a name="test-your-custom-policy"></a>Тестирование пользовательской политики
+## <a name="test-your-custom-policy"></a>Тестирование настраиваемой политики
 
 1. Выберите политику проверяющей стороны, например `B2C_1A_signup_signin` .
 1. Для **приложения** выберите [ранее зарегистрированное](troubleshoot-custom-policies.md#troubleshoot-the-runtime)веб-приложение. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.

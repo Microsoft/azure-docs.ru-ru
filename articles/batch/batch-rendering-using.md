@@ -3,16 +3,19 @@ title: Использование возможностей рендеринга
 description: Узнайте, как использовать возможности рендеринга пакетной службы Azure. Опробуйте приложение Batch Explorer напрямую либо через вызов из подключаемого модуля клиентского приложения.
 author: mscurrell
 ms.author: markscu
-ms.date: 03/05/2020
+ms.date: 03/12/2020
 ms.topic: how-to
-ms.openlocfilehash: a5bf4d0ed2173d048d968f60dea72a1a0c25ab05
-ms.sourcegitcommit: eb546f78c31dfa65937b3a1be134fb5f153447d6
+ms.openlocfilehash: dc3d2cc53b478b1ec955d8f4b3717b0407772849
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99429791"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103496632"
 ---
 # <a name="using-azure-batch-rendering"></a>Использование службы рендеринга пакетной службы Azure
+
+> [!IMPORTANT]
+> Образы виртуальных машин для подготовки к просмотру и лицензирование с оплатой за использование являются [устаревшими и будут прекращены на 29 февраля 2024](https://azure.microsoft.com/updates/azure-batch-rendering-vm-images-licensing-will-be-retired-on-29-february-2024/). Чтобы использовать пакет для подготовки к просмотру, [следует использовать пользовательский образ виртуальной машины и лицензирование стандартного приложения.](batch-rendering-functionality.md#batch-pools-using-custom-vm-images-and-standard-application-licensing)
 
 Существует несколько способов использовать службу рендеринга пакетной службы Azure.
 

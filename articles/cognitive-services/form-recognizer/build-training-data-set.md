@@ -2,23 +2,23 @@
 title: Создание набора обучающих данных для пользовательского распознавателя форм
 titleSuffix: Azure Cognitive Services
 description: Узнайте, как обеспечить оптимизацию набора обучающих данных для обучения модели распознавателя форм.
-author: PatrickFarley
+author: laujan
 manager: nitinme
 ms.service: cognitive-services
 ms.subservice: forms-recognizer
 ms.topic: conceptual
 ms.date: 06/19/2019
-ms.author: pafarley
-ms.openlocfilehash: ee57ccb82e771ee8ab93b09e476a94df32278069
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.author: lajanuar
+ms.openlocfilehash: b33ac3cb710a2d2a9d92efadf14dc829cb5da6e8
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99585115"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103467499"
 ---
 # <a name="build-a-training-data-set-for-a-custom-model"></a>Создание набора обучающих данных для пользовательской модели
 
-При использовании настраиваемой модели распознавателя форм вы предоставляете собственные обучающие данные для операции [обучения пользовательской модели](https://westus2.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2/operations/TrainCustomModelAsync) , чтобы модель могла обучить свои отраслевые формы. Следуйте указаниям этого руководства, чтобы узнать, как получить и подготовить данные для эффективного обучения модели.
+При использовании настраиваемой модели распознавателя форм вы предоставляете собственные обучающие данные для операции [обучения пользовательской модели](https://westus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/TrainCustomModelAsync) , чтобы модель могла обучить свои отраслевые формы. Следуйте указаниям этого руководства, чтобы узнать, как получить и подготовить данные для эффективного обучения модели.
 
 Требуется по крайней мере пять заполненных форм одного типа.
 
@@ -47,7 +47,7 @@ ms.locfileid: "99585115"
 
 ### <a name="organize-your-data-in-subfolders-optional"></a>Упорядочение данных во вложенных папках (необязательно)
 
-По умолчанию API для [обучения настраиваемой модели](https://westus2.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2/operations/TrainCustomModelAsync) будет использовать только документы форм, расположенные в корне контейнера хранилища. Однако вы можете обучить данные во вложенных папках, если указать их в вызове API. Как правило, тело вызова функции [обучения пользовательской модели](https://westus2.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2/operations/TrainCustomModelAsync) имеет следующий формат, где `<SAS URL>` — URL-адрес подписи общего доступа к контейнеру:
+По умолчанию API для [обучения настраиваемой модели](https://westus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/TrainCustomModelAsync) будет использовать только документы форм, расположенные в корне контейнера хранилища. Однако вы можете обучить данные во вложенных папках, если указать их в вызове API. Как правило, тело вызова функции [обучения пользовательской модели](https://westus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/TrainCustomModelAsync) имеет следующий формат, где `<SAS URL>` — URL-адрес подписи общего доступа к контейнеру:
 
 ```json
 {
@@ -68,7 +68,7 @@ ms.locfileid: "99585115"
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы узнали, как создать набор обучающих данных, выполните инструкции из краткого руководства по обучению настраиваемой модели распознавателя форм и начните использовать ее в своих формах.
 

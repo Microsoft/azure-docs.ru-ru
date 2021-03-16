@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/04/2021
+ms.date: 03/15/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 075b04414c752ce87365d03212fcdabab6eaa7dd
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 43c57950d317de42df666ddd25cbcb2e9a4c9611
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102119830"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103488879"
 ---
 # <a name="configure-saml-identity-provider-options-with-azure-active-directory-b2c"></a>Настройка параметров поставщика удостоверений SAML с помощью Azure Active Directory B2C
 

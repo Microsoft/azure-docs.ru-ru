@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: nolavime
 ms.author: nolavime
 ms.date: 01/18/2021
-ms.openlocfilehash: 5cc3c4a07cc698f3592a2ff2fd76e9f4bbef441b
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 727e744c59d0a8d90cf320e1ee2e2a17e10ff847
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102036458"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103471528"
 ---
 # <a name="connector-status-errors-in-the-itsmc-dashboard"></a>Ошибки состояния соединителя на панели мониторинга ITSMC
 
@@ -88,3 +88,11 @@ ms.locfileid: "102036458"
 
 * При создании нового экземпляра ITSMC начинается синхронизация данных из системы ITSM, например шаблонов рабочих элементов и рабочих элементов. [ITSMC синхронизации для создания нового маркера обновления](./itsmc-resync-servicenow.md).
 * [Проверьте сведения о подключении в ITSMC](./itsmc-connections-servicenow.md#create-a-connection) и убедитесь, что ITSMC может успешно [синхронизироваться](./itsmc-resync-servicenow.md).
+
+
+## <a name="ip-restrictions"></a>Ограничения IP-адресов
+**Ошибка**: "не удалось добавить подключение ITSM с именем" XXX "из-за неправильного запроса. Ошибка: неправильный запрос. Для соединения указаны недопустимые параметры. Исключение http: код состояния запрещен. "
+
+**Причина**: IP-адрес приложения ITSM не РАЗРЕШАЕТ подключения ITSM от партнеров ITSM Tools.
+
+**Решение**. чтобы получить список IP-адресов ITSM, чтобы разрешить подключения ITSM от партнеров ITSM Tools, мы рекомендуем использовать для получения списка общедоступного диапазона, в котором находится область Azure, к которой принадлежит LogAnalytics Рабочая область. [подробные сведения](https://www.microsoft.com/download/details.aspx?id=56519) Для регионов ЕУС/ВЕУ/EUS2/WUS2/Юго-Центральный регион США клиент может вывести только тег сети ActionGroup.

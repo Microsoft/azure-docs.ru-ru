@@ -2,13 +2,13 @@
 title: Использование функции в Azure в качестве обработчика событий для событий службы "Сетка событий Azure"
 description: Описывает, как использовать функции, созданные в и размещенные в функциях Azure, в качестве обработчиков событий для событий службы "Сетка событий".
 ms.topic: conceptual
-ms.date: 09/18/2020
-ms.openlocfilehash: beddc35f2dd8db974492d14aec27ce754a74737c
-ms.sourcegitcommit: 484f510bbb093e9cfca694b56622b5860ca317f7
+ms.date: 03/15/2021
+ms.openlocfilehash: f547b09fe7e62eb3fa9e02bd17298a936350f871
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98632518"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103496547"
 ---
 # <a name="use-a-function-as-an-event-handler-for-event-grid-events"></a>Использование функции в качестве обработчика событий для событий сетки событий
 
@@ -79,6 +79,9 @@ ms.locfileid: "98632518"
 
 ### <a name="azure-powershell"></a>Azure PowerShell
 С помощью командлета [New-азевентгридсубскриптион](/powershell/module/az.eventgrid/new-azeventgridsubscription) или [Update-азевентгридсубскриптион](/powershell/module/az.eventgrid/update-azeventgridsubscription) можно настроить параметры, связанные с пакетной службой, используя следующие параметры: `-MaxEventsPerBatch` или `-PreferredBatchSizeInKiloBytes` .
+
+> [!NOTE]
+> При использовании триггера сетки событий служба сетки событий получает секрет клиента для целевой функции Azure и использует ее для доставки событий в функцию Azure. Если вы защищаете функцию Azure с помощью Azure Active Directory приложения, необходимо принять общий подход к веб-перехватчику и использовать триггер HTTP.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 См. список поддерживаемых обработчиков событий в статье [Обработчики событий](event-handlers.md).

@@ -3,14 +3,14 @@ title: Возможности рендеринга
 description: Стандартные возможности пакетной службы Azure используются для запуска рабочих нагрузок рендеринга и приложений. Пакетная служба также включает в себя определенные компоненты для поддержки рабочих нагрузок рендеринга.
 author: mscurrell
 ms.author: markscu
-ms.date: 02/01/2021
+ms.date: 03/12/2021
 ms.topic: how-to
-ms.openlocfilehash: c748c51311a70cd3b4fc6d435e97a33d709467b9
-ms.sourcegitcommit: eb546f78c31dfa65937b3a1be134fb5f153447d6
+ms.openlocfilehash: a2e2cfb71999bd5ab83591448342d4bac1dabdd5
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99429808"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103496343"
 ---
 # <a name="azure-batch-rendering-capabilities"></a>Возможности рендеринга в пакетной службе Azure
 
@@ -27,6 +27,9 @@ ms.locfileid: "99429808"
 Большинству приложений для подготовки к просмотру требуются лицензии, полученные с сервера лицензирования. Если имеется существующий локальный сервер лицензирования, то пул и сервер лицензирования должны находиться в одной [виртуальной сети](../virtual-network/virtual-networks-overview.md). Можно также запустить сервер лицензирования на виртуальной машине Azure, если пул пакетной службы и виртуальная машина сервера лицензирования находятся в одной виртуальной сети.
 
 ## <a name="batch-pools-using-rendering-vm-images"></a>Пулы пакетной службы с использованием подготовки к просмотру образов виртуальных машин
+
+> [!IMPORTANT]
+> Образы виртуальных машин для подготовки к просмотру и лицензирование с оплатой за использование являются [устаревшими и будут прекращены на 29 февраля 2024](https://azure.microsoft.com/updates/azure-batch-rendering-vm-images-licensing-will-be-retired-on-29-february-2024/). Чтобы использовать пакет для подготовки к просмотру, [следует использовать пользовательский образ виртуальной машины и лицензирование стандартного приложения.](batch-rendering-functionality.md#batch-pools-using-custom-vm-images-and-standard-application-licensing)
 
 ### <a name="rendering-application-installation"></a>Установка приложения для рендеринга
 
