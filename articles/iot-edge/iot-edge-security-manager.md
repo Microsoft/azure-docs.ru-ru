@@ -9,14 +9,16 @@ ms.author: eustacea
 ms.date: 08/30/2019
 ms.topic: conceptual
 ms.service: iot-edge
-ms.openlocfilehash: d50ff37c3d29ae8e9e25d8759ef3c55787a58047
-ms.sourcegitcommit: 2e72661f4853cd42bb4f0b2ded4271b22dc10a52
+ms.openlocfilehash: 468f1b91d6c6157cd2af6de9599bad7f43c1ad8f
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92043006"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103492563"
 ---
 # <a name="azure-iot-edge-security-manager"></a>Диспетчер безопасности Azure IoT Edge
+
+[!INCLUDE [iot-edge-version-201806](../../includes/iot-edge-version-201806.md)]
 
 Диспетчер безопасности Azure IoT Edge — это хорошо ограниченное ядро обеспечения ​​безопасности для защиты устройства IoT Edge и всех его компонентов путем абстрагирования защищенного кремниевого оборудования. Диспетчер безопасности является фокальной точкой для усиления безопасности и обеспечивает интеграцию технологии с производителями оборудования (OEM).
 

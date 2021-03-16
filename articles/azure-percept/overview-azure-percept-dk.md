@@ -7,16 +7,19 @@ ms.service: azure-percept
 ms.topic: conceptual
 ms.date: 02/18/2021
 ms.custom: template-concept
-ms.openlocfilehash: c93ecdc138e757f84e995a69a6c3d7f1b5460abe
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: ba960465ab0ca8d5124d5882e3578e61fee2cf14
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102179380"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103490149"
 ---
 # <a name="azure-percept-dk-overview"></a>Обзор Azure Percept DK
 
 Azure Перцепт DK — это пограничная версия пакета SDK для искусственного интеллекта и IoT, предназначенная для разработки концепций и экспериментов в виде аудиовизуальных данных. В сочетании с [Azure Перцепт Studio](./overview-azure-percept-studio.md) и [Azure перцепт Audio](./overview-azure-percept-audio.md)она стала мощным и простым в использовании платформой для создания пограничных решений искусственного интеллекта для широкого спектра концепций или приложений для работы с аудио AI. Его можно приобрести в [Microsoft Online Store](https://go.microsoft.com/fwlink/p/?LinkId=2155270).
+
+> [!div class="nextstepaction"]
+> [купить сейчас](https://go.microsoft.com/fwlink/p/?LinkId=2155270)
 
 :::image type="content" source="./media/overview-azure-percept-dk/dk-image.png" alt-text="Устройство Azure Перцепт DK.":::
 
@@ -52,4 +55,5 @@ Azure Перцепт DK — это пограничная версия паке�
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Закажите Azure Перцепт DK в [Microsoft Online Store](https://go.microsoft.com/fwlink/p/?LinkId=2155270).
+> [!div class="nextstepaction"]
+> [Купить Azure Перцепт DK из Microsoft Online Store](https://go.microsoft.com/fwlink/p/?LinkId=2155270)

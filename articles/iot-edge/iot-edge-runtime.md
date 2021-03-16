@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
 ms.custom: amqp, mqtt, devx-track-csharp
-ms.openlocfilehash: c0c3a452c93b88483ac7027405665c26ceab8183
-ms.sourcegitcommit: 1bdcaca5978c3a4929cccbc8dc42fc0c93ca7b30
+ms.openlocfilehash: 74cfe4ba3c92d8d96dd196ef6f612b9ed7c0da9d
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97368517"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103496258"
 ---
 # <a name="understand-the-azure-iot-edge-runtime-and-its-architecture"></a>Общие сведения о среде выполнения Azure IoT Edge и ее архитектуре
+
+[!INCLUDE [iot-edge-version-201806-or-202011](../../includes/iot-edge-version-201806-or-202011.md)]
 
 Среда выполнения IoT Edge — это набор программ, превращающих устройство в устройство IoT Edge. В совокупности компоненты среды выполнения IoT Edge позволяют устройствам IoT Edge получать код для выполнения на границе и передавать результаты.
 
@@ -194,7 +196,7 @@ ms.locfileid: "97368517"
 
 Действия по установке этого корневого сертификата брокера на клиентах устройств описаны в разделе [прозрачный шлюз](how-to-create-transparent-gateway.md) и в документации [Подготовка подчиненного устройства](how-to-connect-downstream-device.md#prepare-a-downstream-device) . Модули могут использовать тот же корневой сертификат, что и центр IoT Edge, используя API управляющей программы IoT Edge.
 
-#### <a name="authentication"></a>Проверка подлинности
+#### <a name="authentication"></a>Аутентификация
 
 Концентратор IoT Edge принимает только подключения от устройств или модулей, имеющих удостоверение центра Интернета вещей, например, которые были зарегистрированы в центре Интернета вещей и имеют один из трех методов проверки подлинности клиента, поддерживаемых центром Интернета вещей для подтверждения их подлинности: [симметричные ключи аутентификации](how-to-authenticate-downstream-device.md#symmetric-key-authentication), [самоподписанная аутентификация x. 509, самозаверяющий](how-to-authenticate-downstream-device.md#x509-self-signed-authentication)сертификат [x. 509](how-to-authenticate-downstream-device.md#x509-ca-signed-authentication).  Эти удостоверения центра Интернета вещей можно проверить локально в центре IoT Edge, чтобы подключения могли быть сделаны в автономном режиме.
 

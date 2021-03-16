@@ -1,24 +1,24 @@
 ---
 title: Краткое руководство. Изучение примера сценария
 titleSuffix: Azure Digital Twins
-description: Краткое руководство. Использование примера ADT Explorer для визуализации и изучения предварительно построенного сценария.
+description: Краткое руководство. Использование примера Azure Digital Twins Explorer для визуализации и изучения предварительно созданного сценария.
 author: baanders
 ms.author: baanders
 ms.date: 9/24/2020
 ms.topic: quickstart
 ms.service: digital-twins
-ms.openlocfilehash: 9d09bca246938f972a212f7ee71f03a618e16ac4
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.openlocfilehash: f1b25b853977b3a1f4871e232a562d6a3cfd2fae
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99575696"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102434208"
 ---
-# <a name="quickstart---explore-a-sample-azure-digital-twins-scenario-using-adt-explorer"></a>Краткое руководство. Изучение примера сценария Azure Digital Twins с помощью ADT Explorer
+# <a name="quickstart---explore-a-sample-azure-digital-twins-scenario-using-azure-digital-twins-explorer"></a>Краткое руководство. Изучение примера сценария Azure Digital Twins с помощью Azure Digital Twins Explorer
 
 С помощью Azure Digital Twins можно создавать модели реальных сред и взаимодействовать с ними. Сначала вы выполните моделирование отдельных элементов в виде *цифровых двойников*. Затем вы подключите их к *графу* знаний, который умеет реагировать на события в реальном времени и отвечать на запросы информации.
 
-В этом кратком руководстве вы изучите предварительно созданный граф Azure Digital Twins на примере приложения, которое называется [Azure Digital Twins (ADT) Explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). ADT Explorer позволяет выполнять следующие операции:
+С помощью этого краткого руководства вы изучите предварительно созданный граф Azure Digital Twins на примере приложения, которое называется [Azure Digital Twins Explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). С помощью Azure Digital Twins Explorer можно выполнять следующие операции:
 
 - отправка цифрового представления среды;
 - просмотр визуальных отображений цифровых двойников и графа, которые создаются как представление среды в Azure Digital Twins;
@@ -26,7 +26,7 @@ ms.locfileid: "99575696"
 
 Краткое руководство содержит следующие основные шаги.
 
-1. Настройка экземпляра Azure Digital Twins и ADT Explorer.
+1. Настройка экземпляра Azure Digital Twins и Azure Digital Twins Explorer.
 1. Отправка предварительно построенных моделей и данных графа для создания примера сценария.
 1. Изучение созданного графа сценария.
 1. Внесение изменений в граф.
@@ -41,11 +41,11 @@ ms.locfileid: "99575696"
 
 Вам также потребуется **Node.js** на компьютере. Последнюю версию Node.js можно получить [здесь](https://nodejs.org/).
 
-Наконец, вам нужно скачать пример для использования с этим кратким руководством. В качестве примера здесь используется приложение **ADT Explorer**. Этот пример содержит приложение, с помощью которого вы загрузите и изучите сценарий Azure Digital Twins. Он также содержит файлы для примера сценария. Ссылку на пример можно найти в статье [Azure Digital Twins (ADT) Explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). Нажмите кнопку **Скачать ZIP**, чтобы скачать ZIP-файл с этим примером кода на свой компьютер. Распакуйте папку **Azure_Digital_Twins__ADT__explorer. zip** и извлеките файлы.
+Наконец, вам нужно скачать пример для использования с этим кратким руководством. Используйте пример приложения **Azure Digital Twins Explorer**. Этот пример содержит приложение, с помощью которого вы загрузите и изучите сценарий Azure Digital Twins. Он также содержит файлы для примера сценария. Этот пример можно получить на странице [Azure Digital Twins Explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). Нажмите кнопку **Скачать ZIP**, чтобы скачать ZIP-файл с этим примером кода на свой компьютер. Распакуйте папку **Azure_Digital_Twins__ADT__explorer. zip** и извлеките файлы.
 
-## <a name="set-up-azure-digital-twins-and-adt-explorer"></a>Настройка Azure Digital Twins и ADT Explorer
+## <a name="set-up-azure-digital-twins-and-azure-digital-twins-explorer"></a>Настройка Azure Digital Twins и Azure Digital Twins Explorer
 
-Первым шагом в работе с Azure Digital Twins является настройка экземпляра Azure Digital Twins. После создания экземпляра службы и настройки ваших учетных данных для аутентификации в ADT Explorer вы можете подключиться к экземпляру в ADT Explorer и позже передать в него данные примера.
+Первым шагом в работе с Azure Digital Twins является настройка экземпляра Azure Digital Twins. После создания экземпляра службы и настройки ваших учетных данных для аутентификации в Azure Digital Twins Explorer вы сможете подключиться к экземпляру в Azure Digital Twins Explorer и передать в него данные примера далее в этом кратком руководстве.
 
 Соответствующие действия описаны далее в разделе.
 
@@ -55,26 +55,26 @@ ms.locfileid: "99575696"
 
 ### <a name="set-up-local-azure-credentials"></a>Настройка локальных учетных данных Azure
 
-Приложение ADT Explorer использует [DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential?preserve-view=true&view=azure-dotnet) (часть библиотеки `Azure.Identity`) для аутентификации пользователей с помощью экземпляра Azure Digital Twins, запускаемого на локальном компьютере. Дополнительные сведения о различных способах аутентификации клиентского приложения в Azure Digital Twins см. в статье [о записи кода аутентификации приложения](how-to-authenticate-client.md).
+Приложение Azure Digital Twins Explorer использует [DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential) (часть библиотеки `Azure.Identity`) для аутентификации пользователей в экземпляре Azure Digital Twins, запускаемом на локальном компьютере. Дополнительные сведения о различных способах аутентификации клиентского приложения в Azure Digital Twins см. в статье [о записи кода аутентификации приложения](how-to-authenticate-client.md).
 
-При использовании такого типа аутентификации ADT Explorer будет искать учетные данные в локальной среде, например имя для входа Azure в локальной версии [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true), в Visual Studio либо Visual Studio Code. Поэтому вам следует *войти в Azure локально* с помощью одного из этих механизмов, чтобы настроить учетные данные для приложения ADT Explorer.
+При использовании такого типа аутентификации Azure Digital Twins Explorer будет искать учетные данные в локальной среде, например имя для входа Azure в локальной версии [Azure CLI](/cli/azure/install-azure-cli), в Visual Studio либо Visual Studio Code. Поэтому вам следует *войти в Azure локально* с помощью одного из этих механизмов, чтобы настроить учетные данные для приложения Azure Digital Twins Explorer.
 
-Если вы уже вошли в Azure с помощью любого из этих методов, можете перейти к [следующему разделу](#run-and-configure-adt-explorer).
+Если вы уже вошли в Azure с помощью любого из этих методов, можете перейти к [следующему разделу](#run-and-configure-azure-digital-twins-explorer).
 
 Если нет, установите локальную версию Azure CLI, выполнив следующие действия:
 
-1. Следуйте инструкциям, приведенным на [странице установки](/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true), чтобы выполнить установку для своей ОС.
+1. Следуйте инструкциям, приведенным на [странице установки](/cli/azure/install-azure-cli), чтобы выполнить установку для своей ОС.
 1. Откройте окно консоли на своем компьютере.
 1. Выполните команду `az login` и следуйте указаниям процесса аутентификации по входу в учетную запись Azure.
 1. Возможный последний шаг: если вы используете несколько подписок Azure с этой учетной записью, задайте контекст аутентификации для подписки Azure, который будет содержать ваш экземпляр Azure Digital Twins, выполнив команду `az account set --subscription "<your-subscription-name-or-ID>"` (можно указать имя или значение идентификатора для подписки).
 
-После входа приложение ADT Explorer автоматически применит учетные данные Azure, когда вы запустите его при работе со следующим разделом.
+После входа приложение Azure Digital Twins Explorer автоматически применит учетные данные Azure, когда вы запустите его при работе со следующим разделом.
 
 Теперь окно консоли аутентификации можно закрыть. Но вы можете оставить его открытым, чтобы использовать на следующем шаге.
 
-### <a name="run-and-configure-adt-explorer"></a>Запуск и настройка ADT Explorer
+### <a name="run-and-configure-azure-digital-twins-explorer"></a>Запуск и настройка Azure Digital Twins Explorer
 
-Затем запустите приложение ADT Explorer и настройте его для своего экземпляра Azure Digital Twins.
+Теперь запустите приложение Azure Digital Twins Explorer и настройте его для работы с экземпляром Azure Digital Twins.
 
 1. Перейдите к расположению, в котором вы распаковали скачанную папку **Azure_Digital_Twins__ADT__explorer**.
 Откройте окно консоли в папке **Azure_Digital_Twins__ADT__explorer/client/src**.
@@ -85,11 +85,11 @@ ms.locfileid: "99575696"
 
    Через несколько секунд откроется окно браузера с приложением.
 
-   :::image type="content" source="media/quickstart-adt-explorer/explorer-blank.png" alt-text="Окно браузера, в котором отображается приложение, запущенное на localhost:3000. Приложение с именем ADT Explorer содержит поля для обозревателя запросов, представления модели, представления графа и обозревателя свойств. Данных на экране пока нет." lightbox="media/quickstart-adt-explorer/explorer-blank.png":::
+   :::image type="content" source="media/quickstart-adt-explorer/explorer-blank.png" alt-text="Окно браузера, в котором отображается приложение, запущенное на localhost:3000. Приложение с именем Azure Digital Twins Explorer содержит поля Query Explorer (Обозреватель запросов), Model View (Представление модели), Graph View (Представление графа) и Property Explorer (Обозреватель свойств). Данных на экране пока нет." lightbox="media/quickstart-adt-explorer/explorer-blank.png":::
 
-1. Нажмите кнопку **Sign In** (Вход) в правом верхнем углу окна, как показано на следующем снимке экрана, чтобы настроить в ADT Explorer работу с ранее настроенным экземпляром.
+1. Нажмите кнопку **Sign In** (Вход) в правом верхнем углу окна, как показано на следующем снимке экрана, чтобы настроить в Azure Digital Twins Explorer работу с ранее настроенным экземпляром.
 
-   :::image type="content" source="media/quickstart-adt-explorer/sign-in.png" alt-text="ADT Explorer с выделенным значком &quot;Войти&quot; в верхней части окна. На значке изображен простой силуэт человека, перекрытый силуэтом ключа." lightbox="media/quickstart-adt-explorer/sign-in.png":::
+   :::image type="content" source="media/quickstart-adt-explorer/sign-in.png" alt-text="Azure Digital Twins Explorer с выделенным значком Sign In (Войти) в верхней части окна. На значке изображен простой силуэт человека, перекрытый силуэтом ключа." lightbox="media/quickstart-adt-explorer/sign-in.png":::
 
 1. Введите URL-адрес экземпляра Azure Digital Twins, который вы получили ранее при работе с разделом [Настройка экземпляра Azure Digital Twins](#set-up-an-azure-digital-twins-instance), в формате *https://{имя узла экземпляра}* .
 
@@ -103,7 +103,7 @@ ms.locfileid: "99575696"
 
 ## <a name="add-the-sample-data"></a>Добавление образца данных
 
-Теперь импортируйте примеры сценария и графа в ADT Explorer. Пример сценария также расположен в папке **Azure_Digital_Twins__ADT__explorer**, которую вы скачали ранее.
+Теперь импортируйте примеры сценария и графа в Azure Digital Twins Explorer. Пример сценария также расположен в папке **Azure_Digital_Twins__ADT__explorer**, которую вы скачали ранее.
 
 ### <a name="models"></a>Модели
 
@@ -138,7 +138,7 @@ ms.locfileid: "99575696"
 >Если вы видите следующее сообщение об ошибке: :::image type="content" source="media/quickstart-adt-explorer/error-models-popup.png" alt-text="Всплывающее окно с текстом &quot;Ошибка: Ошибка выборки моделей: ClientAuthError: Ошибка открытия всплывающего окна. Это может произойти, если используется браузер IE или в браузере заблокированы всплывающие окна.&quot; и кнопка &quot;Закрыть&quot; в нижней части." border="false"::: 
 > Попробуйте отключить блокирование всплывающих окон или используйте другой браузер.
 
-Теперь ADT Explorer отправит выбранные файлы моделей в экземпляр Azure Digital Twins. Они должны появиться в окне **Представление модели** с указанием понятных имен и полных идентификаторов. Вы можете щелкнуть значки сведений в окне **Представление модели**, чтобы увидеть соответствующий код DTDL.
+Azure Digital Twins Explorer отправит выбранные файлы моделей в экземпляр Azure Digital Twins. Они должны появиться в окне **Представление модели** с указанием понятных имен и полных идентификаторов. Вы можете щелкнуть значки сведений в окне **Представление модели**, чтобы увидеть соответствующий код DTDL.
 
 :::row:::
     :::column:::
@@ -173,7 +173,7 @@ ms.locfileid: "99575696"
 
 2. В окне выбора файла перейдите к папке **Azure_Digital_Twins__ADT__explorer/client/examples** и щелкните файл электронной таблицы **buildingScenario.xlsx**. Этот файл содержит описание примера графа. Щелкните **ОК**.
 
-   Через несколько секунд ADT Explorer откроет представление **Импорт** с предварительным просмотром загружаемого графа.
+   Через несколько секунд в Azure Digital Twins Explorer откроется представление **Import** (Импорт) с предварительным просмотром загружаемого графа.
 
 3. Чтобы подтвердить отправку графа, щелкните значок **Сохранить** в правом верхнем углу поля **Представление графа**.
 
@@ -185,7 +185,7 @@ ms.locfileid: "99575696"
     :::column-end:::
    :::row-end:::
 
-4. Теперь ADT Explorer применит переданный файл для создания запрашиваемых двойников и связей между ними. По завершении откроется диалоговое окно. Щелкните **Закрыть**.
+4. Теперь Azure Digital Twins Explorer применит переданный файл для создания запрашиваемых двойников и связей между ними. По завершении откроется диалоговое окно. Щелкните **Закрыть**.
 
    :::row:::
     :::column:::
@@ -197,11 +197,11 @@ ms.locfileid: "99575696"
     :::column-end:::
    :::row-end:::
 
-5. Теперь граф отправлен в ADT Explorer. Чтобы увидеть граф, нажмите кнопку **Выполнить запрос** в поле **Обозреватель графа** в верхней части окна ADT Explorer.
+5. Теперь этот граф успешно отправлен в Azure Digital Twins Explorer. Чтобы увидеть граф, нажмите кнопку **Run Query** (Выполнить запрос) в области **GRAPH EXPLORER** (Обозреватель графа) в верхней части окна Azure Digital Twins Explorer.
 
    :::image type="content" source="media/quickstart-adt-explorer/run-query.png" alt-text="Выделенная кнопка &quot;Выполнить запрос&quot; в правом верхнем углу окна." lightbox="media/quickstart-adt-explorer/run-query.png":::
 
-Это действие запускает стандартный запрос для выбора и отображения всех цифровых двойников. ADT Explorer извлекает из службы данные обо всех двойниках и связях между ними. По ним он формирует граф в поле **Представление графа**.
+Это действие запускает стандартный запрос для выбора и отображения всех цифровых двойников. Azure Digital Twins Explorer извлекает из службы данные обо всех двойниках и связях между ними. По ним он формирует граф в поле **Представление графа**.
 
 ## <a name="explore-the-graph"></a>Просмотр графа
 
@@ -262,7 +262,7 @@ ms.locfileid: "99575696"
 
 ## <a name="edit-data-in-the-graph"></a>Изменение данных в графе
 
-Для изменения свойств двойников, представленных в графе, можно использовать ADT Explorer. В этом разделе мы увеличим температуру Room0 до 76.
+Azure Digital Twins Explorer позволяет изменять свойства двойников, представленных в графе. В этом разделе мы увеличим температуру Room0 до 76.
 
 Для начала выберите **Room0**, чтобы открыть список свойств в поле **Обозреватель свойств**.
 
@@ -290,7 +290,7 @@ ms.locfileid: "99575696"
 
 ## <a name="review-and-contextualize-learnings"></a>Просмотр и контекстуализация учебных моделей
 
-В этом кратком руководстве вы создали экземпляр Azure Digital Twins, подключили его к ADT Explorer, и заполнили его примером сценария.
+С помощью этого краткого руководства вы создали экземпляр Azure Digital Twins, подключили его к Azure Digital Twins Explorer и заполнили его данными примера сценария.
 
 Затем вы изучили граф, выполнив следующие действия:
 
@@ -304,7 +304,7 @@ ms.locfileid: "99575696"
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Чтобы окончательно завершить пример в этом кратком руководстве, сначала завершите работу консольного приложения. Это действие закрывает подключение браузера к приложению ADT Explorer. Вы больше не сможете просматривать динамические данные в браузере. Теперь можно закрыть вкладку браузера.
+Чтобы окончательно завершить пример в этом кратком руководстве, сначала завершите работу консольного приложения. Это действие закрывает подключение к приложению Azure Digital Twins Explorer в браузере. Вы больше не сможете просматривать динамические данные в браузере. Теперь можно закрыть вкладку браузера.
 
 Теперь вы можете выбрать ресурсы, которые нужно удалить, в зависимости от планируемых действий.
 

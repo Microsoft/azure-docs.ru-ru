@@ -1,5 +1,5 @@
 ---
-title: Поддержка функций и прекращение использования
+title: Поддержка и прекращение использования функций
 titleSuffix: Azure Defender for IoT
 description: Защитник для IoT продолжит поддерживать C, C# и ребра до 1 марта 2022 г.
 author: shhazam-ms
@@ -8,22 +8,22 @@ ms.author: shhazam
 ms.date: 1/21/2021
 ms.service: azure
 ms.topic: how-to
-ms.openlocfilehash: 2779a73d3a5f77e3a3b144309baf6d2788565443
-ms.sourcegitcommit: 4784fbba18bab59b203734b6e3a4d62d1dadf031
+ms.openlocfilehash: a33e7ff230292d4ceb14610e3cf00935dc1a67a0
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99809972"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103493175"
 ---
-# <a name="feature-support-and-retirement"></a>Поддержка функций и прекращение использования
+# <a name="feature-support-and-retirement"></a>Поддержка и прекращение использования функций
 
 В этой статье описывается защитник Azure для функций Интернета вещей и поддержка различных возможностей в защитнике для Интернета вещей.
 
-## <a name="defender-for-iot-c-c-and-edge-security-module-deprecation"></a>Прекращение использования модуля безопасности защитника для Интернета вещей C, C# и ребра
+## <a name="defender-for-iot-c-c-and-edge-defender-iot-micro-agent-deprecation"></a>Защитник для центра Интернета вещей C, C# и ребра — IoT-Micro-Agent устарел
 
-Новый Micro Agent заменит текущий модуль безопасности C, C# и ребра.  
+Новый Micro Agent заменит текущий защитник в C, C# и ребро на "IoT-Micro-Agent".  
 
-Новый Micro Agent основан на базе знаний, а также на основе отзывов о разработке, заказчиках и партнерах в области безопасности с четырьмя важными улучшениями: 
+Новый микроагент основан на базе знаний, а также на основе отзывов о разработке, заказчиках и партнерах в области выхода из защитника — IoT-Micro-Agent с четырьмя важными улучшениями: 
 
 - **Значение безопасности глубины**. новый агент будет выполняться на уровне узла, что обеспечит более четкое представление об основных операциях устройства и позволяет повысить уровень безопасности.
 

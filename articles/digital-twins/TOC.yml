@@ -13,8 +13,12 @@
   items:
     - name: Написание кода для клиентского приложения
       href: tutorial-code.md
-    - name: Изучение основ с помощью примера клиентского приложения
-      href: tutorial-command-line-app.md
+    - name: Создание графа
+      items:
+        - name: Использование примера клиентского приложения
+          href: tutorial-command-line-app.md
+        - name: "Использование команд Azure\_CLI"
+          href: tutorial-command-line-cli.md
     - name: Подключение комплексного решения
       href: tutorial-end-to-end.md
 - name: Основные понятия

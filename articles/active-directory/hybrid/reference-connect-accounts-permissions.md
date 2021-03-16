@@ -17,12 +17,12 @@ ms.date: 01/04/2021
 ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b0771687aa7ccf9b749c107a6b1c507cb3ba08d
-ms.sourcegitcommit: 6d6030de2d776f3d5fb89f68aaead148c05837e2
+ms.openlocfilehash: 1f7466931537745fb188a3bdb05646bff19912e8
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97881945"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103466258"
 ---
 # <a name="azure-ad-connect-accounts-and-permissions"></a>Azure AD Connect выполняет следующие функции: Учетные записи и разрешения
 
@@ -44,7 +44,7 @@ Azure AD Connect использует 3 учетные записи, чтобы 
 
 - **Учетная запись администратора предприятия AD DS**: используется, если нужно создать учетную запись соединителя Azure AD, описанную выше.
 
-- **Учетная запись глобального администратора Azure AD**: используется для создания учетной записи соединителя Azure AD и настройки Azure AD.  Учетные записи глобального администратора можно просмотреть на портале Azure.  См. раздел [Просмотр ролей](../../active-directory/roles/manage-roles-portal.md#view-all-roles).
+- **Учетная запись глобального администратора Azure AD**: используется для создания учетной записи соединителя Azure AD и настройки Azure AD.  Учетные записи глобального администратора можно просмотреть в портал Azure.  См. раздел [список назначений ролей Azure AD](../../active-directory/roles/view-assignments.md).
 
 - **Учетная запись SQL SA** (необязательная): используется для создания базы данных ADSync при использовании полной версии SQL Server.  Этот сервер SQL Server может быть локальным или удаленным для установки Azure AD Connect.  Этой учетной записью может быть учетная запись администратора предприятия.  Внешнюю подготовку базы данных может выполнять администратор SQL, а установку — администратор Azure AD Connect с правами владельца базы данных.  Дополнительные сведения см. в статье [Установка Azure AD Connect с использованием делегированных разрешений администратора SQL](how-to-connect-install-sql-delegation.md).
 

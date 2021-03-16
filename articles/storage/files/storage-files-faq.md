@@ -7,12 +7,12 @@ ms.date: 02/23/2020
 ms.author: rogarana
 ms.subservice: files
 ms.topic: conceptual
-ms.openlocfilehash: 2d4286cc8bc08eaf7d0b376a8b7789c8c8db183d
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: 81cabe8dea178b2988039640065cb0eabc3287af
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102202643"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103470900"
 ---
 # <a name="frequently-asked-questions-faq-about-azure-files"></a>Часто задаваемые вопросы о службе файлов Azure
 Служба [файлов Azure](storage-files-introduction.md) предлагает полностью управляемые общие файловые ресурсы в облаке, доступные через стандартный промышленный [протокол SMB](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview) и [протокол NFS](https://en.wikipedia.org/wiki/Network_File_System) (Предварительная версия). Общие ресурсы службы файлов Azure можно одновременно подключить к облачным или локальным развертываниям Windows, Linux и macOS. Вы также можете кэшировать общие файловые ресурсы Azure на компьютерах под управлением Windows Server с помощью функции "Синхронизация файлов Azure", чтобы получить быстрый доступ из расположения, где используются данные.
@@ -308,6 +308,18 @@ ms.locfileid: "102202643"
 **Существуют ли интерфейсы API-интерфейсов RESTFUL для поддержки Get/Set/Copy Directory/File ACL Windows?**
 
     Да, мы поддерживаем API-интерфейсы REST, которые получают, устанавливают или копируют списки ACL NTFS для каталогов или файлов при использовании API REST [2019-07-07](/rest/api/storageservices/versioning-for-the-azure-storage-services#version-2019-07-07) (или более поздней версии). Мы также поддерживаем сохранение списков ACL Windows в инструментах на основе RESTFUL: [AzCopy v 10.4 +](https://github.com/Azure/azure-storage-azcopy/releases).
+
+* <a id="ad-support-rest-apis"></a>
+**Как удалить кэшированные учетные данные с ключом учетной записи хранения и удалить существующие подключения SMB перед инициализацией нового подключения с помощью учетных данных Azure AD или AD?**
+
+    Вы можете выполнить два шага ниже, чтобы удалить сохраненные учетные данные, связанные с ключом учетной записи хранения, и удалить подключение SMB. 
+    1. Выполните командлет ниже в Windows Cmd.exe, чтобы удалить учетные данные. Если его найти не удается, это означает, что вы не сохранили учетные данные и не можете пропустить этот шаг.
+    
+       cmdkey/Delete: домен: target = хранилище-Account-name.file.core.windows.net
+    
+    2. Удалите существующее подключение к общей папке. Путь подключения можно указать как букву подключенного диска или путь storage-account-name.file.core.windows.net.
+    
+       NET USE <диск-буква_диска/Share-Path>/Delete
 
 ## <a name="network-file-system"></a>NFS
 

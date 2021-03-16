@@ -6,15 +6,15 @@ author: mikben
 manager: mikben
 services: azure-communication-services
 ms.author: mikben
-ms.date: 09/30/2020
+ms.date: 03/10/2021
 ms.topic: conceptual
 ms.service: azure-communication-services
-ms.openlocfilehash: 27f444c6889767e0333384a779883805d1e8f348
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: 74a48b05e7e3b00d331da4fcf66092490ae70374
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102485916"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103490676"
 ---
 # <a name="client-and-server-architecture"></a>Архитектура клиента и сервера
 

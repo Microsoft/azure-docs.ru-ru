@@ -14,16 +14,16 @@ ms.author: rolyon
 ms.reviewer: vincesm
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 310dd82f9a5f7f98fbca720b48212b7963e25a63
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: f56f8ac42f0db3d2cd27453cd023a2e869b0cde0
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102551510"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103466088"
 ---
 # <a name="roles-for-microsoft-365-services-in-azure-active-directory"></a>Роли для служб Microsoft 365 в Azure Active Directory
 
-Все продукты в Microsoft 365 могут управляться административными ролями в Azure Active Directory (Azure AD). Некоторые продукты также предоставляют дополнительные роли, относящиеся к этому продукту. Сведения о ролях, включенных в каждый продукт, см. в следующей таблице. Общие обсуждения проблем делегирования см. в статье [Делегирование администрирования в Azure Active Directory](concept-delegation.md).
+Все продукты в Microsoft 365 могут управляться административными ролями в Azure Active Directory (Azure AD). Некоторые продукты также предоставляют дополнительные роли, относящиеся к этому продукту. Сведения о ролях, включенных в каждый продукт, см. в следующей таблице. Рекомендации по планированию безопасности ролей см. [в статье Защита привилегированного доступа для гибридных и облачных развертываний в Azure AD](security-planning.md).
 
 ## <a name="where-to-find-content"></a>Где найти содержимое
 

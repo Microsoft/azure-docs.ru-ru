@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/07/2019
 ms.author: mlottner
-ms.openlocfilehash: 04fe87cd69efc4c064b8fbdc596a5f9e187abbb1
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.openlocfilehash: bced45474a3a851bc5785f662c0b2e50ae3a380c
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100102246"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103491084"
 ---
 # <a name="azure-defender-for-iot-baseline-and-custom-checks"></a>Azure Defender для базового плана IoT и пользовательские проверки
 
@@ -42,7 +42,7 @@ ms.locfileid: "100102246"
 
 1. Передайте на устройство файл **базовых пользовательских проверок** .
 
-1. Добавьте свойства базового плана в модуль безопасности и нажмите кнопку **сохранить**.
+1. Добавьте свойства базового плана в защитник-IoT-Micro-Agent и нажмите кнопку **сохранить**.
 
 ### <a name="baseline-custom-check-file-example"></a>Пример файла пользовательской проверки базового уровня
 
@@ -66,7 +66,7 @@ ms.locfileid: "100102246"
 
 ## <a name="baseline-custom-check-properties"></a>Свойства базовой пользовательской проверки
 
-| Имя| Состояние | Допустимые значения| Значения по умолчанию| Description |
+| Имя| Состояние | Допустимые значения| Значения по умолчанию| Описание |
 |------|-----|------|-----|-----|
 |баселинекустомчекксенаблед|Обязательный: true |Допустимые значения: **Boolean** |Значение по умолчанию: **false** |Максимальный интервал времени до отправки сообщений с высоким приоритетом.|
 |баселинекустомчекксфилепас |Обязательный: true|Допустимые значения: **String**, **null** |Значение по умолчанию: **null** |Полный путь к базовой конфигурации XML|
@@ -74,7 +74,7 @@ ms.locfileid: "100102246"
 
 Дополнительные примеры базовых показателей см. в разделе [Пользовательский базовый пример 1](https://ascforiot.blob.core.windows.net/public/custom_baseline_example_hyperv_ubuntu1804.xml) и [Пользовательский базовый пример — 2](https://ascforiot.blob.core.windows.net/public/oms_audits.xml).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Доступ к [необработанным данным безопасности](how-to-security-data-access.md)
 - [Исследование устройства](how-to-investigate-device.md)

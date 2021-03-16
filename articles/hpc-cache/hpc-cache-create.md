@@ -6,12 +6,12 @@ ms.service: hpc-cache
 ms.topic: how-to
 ms.date: 09/30/2020
 ms.author: v-erkel
-ms.openlocfilehash: 77bd5e3b7a258ef83e5de4ec645ea70578fb9dfb
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.openlocfilehash: 50fdab1fa8def1b4e3b9a9d59d3b2593e5526c65
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94657097"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103472043"
 ---
 # <a name="create-an-azure-hpc-cache"></a>Создание Azure HPC Cache
 
@@ -59,7 +59,7 @@ Azure HPC Cache определяет, какие файлы необходимо
 
 ## <a name="enable-azure-key-vault-encryption-optional"></a>Включить шифрование Azure Key Vault (необязательно)
 
-Если кэш находится в регионе, поддерживающем управляемые клиентом ключи шифрования, на вкладках **кэш** и **теги** отображается страница **ключи шифрования диска** . Ознакомьтесь с [региональными](hpc-cache-overview.md#region-availability) сведениями о доступности, чтобы узнать больше о поддержке регионов.
+На вкладках " **кэш** " и " **теги** " отображается страница " **ключи шифрования диска** ".<!-- Read [Regional availability](hpc-cache-overview.md#region-availability) to learn more about region support. -->
 
 Если вы хотите управлять ключами шифрования, используемыми для хранилища кэша, укажите сведения о Azure Key Vault на странице **ключи шифрования диска** . Хранилище ключей должно находиться в том же регионе и в той же подписке, что и кэш.
 

@@ -6,12 +6,12 @@ ms.service: hpc-cache
 ms.topic: how-to
 ms.date: 07/20/2020
 ms.author: v-erkel
-ms.openlocfilehash: 90af33a01450002c7d36a4ab4cf4a3da647068c5
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.openlocfilehash: e8f1b3fffefcdf1d2ec8bd3e9b1aaea93697ca8a
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96444566"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103471974"
 ---
 # <a name="use-customer-managed-encryption-keys-for-azure-hpc-cache"></a>Использование управляемых клиентом ключей шифрования для кэша HPC Azure
 
@@ -22,7 +22,7 @@ ms.locfileid: "96444566"
 
 Кэш HPC Azure также защищен [шифрованием узлов виртуальных машин](../virtual-machines/disk-encryption.md#encryption-at-host---end-to-end-encryption-for-your-vm-data) на управляемых дисках, содержащих кэшированные данные, даже если вы добавили ключ клиента для дисков кэша. Добавление ключа, управляемого клиентом, для двойного шифрования обеспечивает дополнительный уровень безопасности для клиентов с высокими требованиями к безопасности. Дополнительные сведения см. в статье о [шифровании хранилища дисков Azure на стороне сервера](../virtual-machines/disk-encryption.md) .
 
-Эта функция доступна только в некоторых регионах Azure, где доступен кэш Azure HPC. Дополнительные сведения см. в списке [доступности регионов](hpc-cache-overview.md#region-availability) .
+<!-- This feature is available only in some of the Azure regions where Azure HPC Cache is available. Refer to the [Region availability](hpc-cache-overview.md#region-availability) list for details. -->
 
 Существует три шага по включению шифрования ключей, управляемых клиентом, для кэша HPC Azure.
 

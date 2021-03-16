@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/08/2021
+ms.date: 03/15/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: a43551adf8dbe1a03ac7f7b22d58d63aa8c2c503
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 49abd2cc62ff7a2eab3d95265f3db8f5c894ebb6
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102448427"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103488947"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-a-facebook-account-using-azure-active-directory-b2c"></a>Настройка регистрации и входа с учетной записью Facebook через Azure Active Directory B2C
 
@@ -55,7 +55,8 @@ ms.locfileid: "102448427"
 1. Щелкните **Show** (Показать) и скопируйте значение **App Secret** (Секрет приложения). Оба значения потребуются вам для настройки Facebook в качестве поставщика удостоверений для вашего клиента. **Секрет приложения** — это важные учетные данные безопасности.
 1. В меню щелкните знак « **плюс»** рядом с пунктом **товары**. В разделе **Добавление продуктов в приложение** выберите **Настройка** в поле **имя входа Facebook**.
 1. В меню выберите **имя входа Facebook** и щелкните **Параметры**.
-1. В поле **Valid OAuth redirect URIs** (Допустимые URI перенаправления OAuth) введите `https://your-tenant-name.b2clogin.com/your-tenant-name.onmicrosoft.com/oauth2/authresp`. Замените `your-tenant-name` именем вашего клиента. Щелкните **Save Changes** (Сохранить изменения) в нижней части страницы.
+1. В поле **Valid OAuth redirect URIs** (Допустимые URI перенаправления OAuth) введите `https://your-tenant-name.b2clogin.com/your-tenant-name.onmicrosoft.com/oauth2/authresp`. Если используется [личный домен](custom-domain.md), введите `https://your-domain-name/your-tenant-name.onmicrosoft.com/oauth2/authresp` . Замените `your-tenant-name` именем своего клиента и `your-domain-name` личным доменом. 
+1. Щелкните **Save Changes** (Сохранить изменения) в нижней части страницы.
 1. Чтобы сделать приложение Facebook доступным для Azure AD B2C, щелкните селектор состояния в правом верхнем углу страницы и **включите его,** чтобы сделать приложение общедоступным, а затем выберите **режим переключения**.  На этом этапе состояние должно измениться с **Разработка** на **Активно**.
 
 ::: zone pivot="b2c-user-flow"

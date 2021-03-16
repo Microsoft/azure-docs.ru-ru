@@ -1,6 +1,6 @@
 ---
-title: API модуля безопасности для ОСРВ Azure
-description: Справочный API модуля безопасности для Azure RTO.
+title: Защитник — IoT-Micro-Agent для Azure RTO API
+description: Справочный API для защитника IoT-Micro-Agent для Azure RTO.
 services: defender-for-iot
 ms.service: defender-for-iot
 documentationcenter: na
@@ -13,18 +13,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/07/2020
 ms.author: mlottner
-ms.openlocfilehash: cec28f9290808836ec2dfd334b23fe8c76df03fc
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 9a285636ba10f7ca0668f597d0e9016cff73494a
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102120068"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103494297"
 ---
-# <a name="security-module-for-azure-rtos-api"></a>API модуля безопасности для ОСРВ Azure 
+# <a name="defender-iot-micro-agent-for-azure-rtos-api-preview"></a>Защитник-IoT-Micro-Agent для Azure RTO API (Предварительная версия)
 
-Этот API предназначен для использования с модулем безопасности только для Azure RTO. Дополнительные ресурсы см. в разделе [модуль безопасности для Azure RTO GitHub Resource](https://github.com/azure-rtos/azure-iot-preview/releases). 
+Этот API предназначен только для использования с защитником-IoT-Micro-Agent для Azure RTO. Дополнительные ресурсы см. в разделе [защитник-IOT-Micro-Agent для Azure RTO GitHub](https://github.com/azure-rtos/azure-iot-preview/releases). 
 
-## <a name="enable-security-module-for-azure-rtos"></a>Включение модуля безопасности для Azure RTO
+## <a name="enable-defender-iot-micro-agent-for-azure-rtos"></a>Включение защитника — IoT-Micro-Agent для Azure RTO
 
 **nx_azure_iot_security_module_enable**
 
@@ -36,7 +36,7 @@ UINT nx_azure_iot_security_module_enable(NX_AZURE_IOT *nx_azure_iot_ptr);
 
 ### <a name="description"></a>Описание
 
-Эта подпрограммы включает подсистему модуля безопасности Интернета вещей Azure. Внутренний конечный автомат управляет сбором событий безопасности и отправляет их в центр Интернета вещей Azure. Для управления сбором данных необходим только один экземпляр NX_AZURE_IOT_SECURITY_MODULE.
+Эта подсистема включает подсистему "защитник Интернета вещей Azure — IoT-Micro-Agent". Внутренний конечный автомат управляет сбором событий безопасности и отправляет их в центр Интернета вещей Azure. Для управления сбором данных необходим только один экземпляр NX_AZURE_IOT_SECURITY_MODULE.
 
 ### <a name="parameters"></a>Параметры
 
@@ -56,7 +56,7 @@ UINT nx_azure_iot_security_module_enable(NX_AZURE_IOT *nx_azure_iot_ptr);
 
 Потоки
 
-## <a name="disable-azure-iot-security-module"></a>Отключение модуля безопасности Azure IoT
+## <a name="disable-azure-iot-defender-iot-micro-agent"></a>Отключение защитника Интернета вещей Azure — IoT-Micro-Agent
 
 **nx_azure_iot_security_module_disable**
 
@@ -69,7 +69,7 @@ UINT nx_azure_iot_security_module_disable(NX_AZURE_IOT *nx_azure_iot_ptr);
 
 ### <a name="description"></a>Описание
 
-Эта подпрограммы отключает подсистему модуля безопасности Интернета вещей Azure.
+Эта подпрограммы отключает подсистему "защитник Интернета вещей Azure — IoT-Micro-Agent".
 
 ### <a name="parameters"></a>Параметры
 
@@ -92,6 +92,6 @@ UINT nx_azure_iot_security_module_disable(NX_AZURE_IOT *nx_azure_iot_ptr);
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения о том, как приступить к работе с модулем безопасности Azure RTO, см. в следующих статьях:
+Дополнительные сведения о том, как приступить к работе с Azure RTO Defender — IoT-Micro-Agent, см. в следующих статьях:
 
-- Ознакомьтесь с [обзором](iot-security-azure-rtos.md)модуля безопасности защитника для IOT RTO.
+- Ознакомьтесь с [обзором](iot-security-azure-rtos.md)защитника RTO защитника IOT-Micro-Agent.

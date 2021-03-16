@@ -8,12 +8,12 @@ ms.subservice: fhir
 ms.topic: overview
 ms.date: 01/19/2021
 ms.author: ranku
-ms.openlocfilehash: 7518f5e2984029c087eec1e6697f3237410bda4b
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: 2a34cfee57ecc1870c420c4c0f3c9261aa02f192
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103020426"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103490931"
 ---
 # <a name="how-to-convert-data-to-fhir-preview"></a>Преобразование данных для FHIR (предварительная версия)
 
@@ -125,6 +125,12 @@ $convert-data принимает в тексте запроса ресурс [Pa
 
 ### <a name="register-the-acr-servers-in-azure-api-for-fhir"></a>Регистрация серверов Реестра контейнеров Azure в Azure API для FHIR.
 
+Сервер записи контроля доступа можно зарегистрировать с помощью портал Azure или с помощью интерфейса командной строки.
+
+#### <a name="registering-the-acr-server-using-azure-portal"></a>Регистрация сервера записи контроля доступа с помощью портал Azure
+Перейдите в колонку _артефакты_ в разделе _Преобразование данных_ в API Azure для экземпляра FHIR. Вы увидите список зарегистрированных в настоящее время серверов записи контроля доступа. Щелкните _Добавить_ и выберите сервер реестра в раскрывающемся списке. Чтобы регистрация вступила в силу, необходимо нажать кнопку _сохранить_ . Применение изменений и перезапуск экземпляра может занять несколько минут.
+
+#### <a name="registering-the-acr-server-using-cli"></a>Регистрация сервера записи контроля доступа с помощью интерфейса командной строки
 Вы можете зарегистрировать в Azure API для FHIR до двадцати серверов Реестра контейнеров Azure.
 
 При желании можно установить CLI для API здравоохранения с помощью Azure PowerShell:
@@ -135,13 +141,13 @@ az extension add -n healthcareapis
 
 Зарегистрируйте серверы Реестра контейнеров Azure в Azure API для FHIR по аналогии со следующими примерами.
 
-#### <a name="register-a-single-acr-server"></a>Регистрация одного сервера Реестра контейнеров Azure
+##### <a name="register-a-single-acr-server"></a>Регистрация одного сервера Реестра контейнеров Azure
 
 ```powershell
 az healthcareapis acr add --login-servers "fhiracr2021.azurecr.io" --resource-group fhir-test --resource-name fhirtest2021
 ```
 
-#### <a name="register-multiple-acr-servers"></a>Регистрация нескольких серверов Реестра контейнеров Azure
+##### <a name="register-multiple-acr-servers"></a>Регистрация нескольких серверов Реестра контейнеров Azure
 
 ```powershell
 az healthcareapis acr add --login-servers "fhiracr2021.azurecr.io fhiracr2020.azurecr.io" --resource-group fhir-test --resource-name fhirtest2021
@@ -152,8 +158,3 @@ az healthcareapis acr add --login-servers "fhiracr2021.azurecr.io fhiracr2020.az
 Выполните вызов к API $convert-data, указав ссылку на шаблон в параметре templateCollectionReference.
 
 `<RegistryServer>/<imageName>@<imageDigest>`
-
-## <a name="known-issues-and-workarounds"></a>Известные проблемы и их решения
-
-- Некоторые файлы шаблонов по умолчанию содержат метку порядка байтов UTF-8. Это приводит к тому, что создаваемые значения идентификатора будут содержать символ метки порядка байтов. Иногда это приводит к проблемам совместимости с сервером FHIR. Чтобы устранить эту проблему, следует извлечь шаблоны Майкрософт с помощью расширения VS Code и передать их в собственный Реестр контейнеров Azure, предварительно удалив символы метки порядка байтов из файлов _ID/_Procedure.liquid_, _ID/_Provenance.liquid_ и _ID/_Immunization.liquid_.
-

@@ -13,12 +13,12 @@ ms.author: trbye
 ms.custom: devx-track-python, devx-track-js, devx-track-csharp, cog-serv-seo-aug-2020
 zone_pivot_groups: programming-languages-set-twenty-four
 keywords: Преобразование текста в речь
-ms.openlocfilehash: c3f1db836ce028b6881efe0b2fa90e9ac19caac8
-ms.sourcegitcommit: 1b47921ae4298e7992c856b82cb8263470e9e6f9
+ms.openlocfilehash: 7a41c4d9c1074b376da3de556caf63ced0bc84ec
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92058239"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102428242"
 ---
 # <a name="get-started-with-text-to-speech"></a>Начало работы с преобразованием текста в речь
 
@@ -53,6 +53,20 @@ ms.locfileid: "92058239"
 ::: zone pivot="programmer-tool-spx"
 [!INCLUDE [CLI Basics include](includes/how-to/text-to-speech-basics/text-to-speech-basics-cli.md)]
 ::: zone-end
+
+## <a name="get-position-information"></a>Получение сведений о расположении
+
+Иногда в проекте важно иметь информацию о том, когда произносится конкретное слово службой преобразования речи в текст, чтобы выполнять определенные действия с учетом времени этого события. Например, если вы хотите выделять произносимые слова, вам нужны данные для определения выделяемого слова, времени начала и завершения выделения.
+
+Для этого вы можете применить событие `WordBoundary`, предоставляемое в `SpeechSynthesizer`. Это событие создается в начале произнесения каждого нового слова и содержит значения смещений по времени в пределах речевого потока и по длине текста в строке входных данных.
+
+* `AudioOffset` передает значение времени, прошедшего в выходном аудиопотоке с момента начала синтеза до начала произнесения следующего слова. Этот параметр измеряется в единицах HNS (сотни наносекунд), то есть значение 10 000 HNS соответствует 1 миллисекунде.
+* `WordOffset` передает положение символа в строке входных данных (исходного текста или [SSML](speech-synthesis-markup.md)), расположенного непосредственно перед произносимым словом.
+
+> [!NOTE]
+> События `WordBoundary` создаются в момент, когда становятся доступными исходящие аудиоданные, что происходит раньше начала реального воспроизведения на устройстве вывода. Обеспечение синхронизации исходящего потока с "реальным временем" возлагается на вызывающую сторону.
+
+Применение `WordBoundary` можно изучить в [примерах преобразования текста в речь](https://aka.ms/csspeech/samples) на сайте GitHub.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -6,13 +6,13 @@ ms.author: tisande
 ms.service: cosmos-db
 ms.subservice: cosmosdb-sql
 ms.topic: conceptual
-ms.date: 07/29/2020
-ms.openlocfilehash: 5faff410fa18c5161d93f739f77eeb9c85d581a8
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.date: 03/15/2021
+ms.openlocfilehash: d47a7b9e2229ffbd747b1ff7b9491ce99e9b190f
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102430961"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103492240"
 ---
 # <a name="pagination-in-azure-cosmos-db"></a>Разбиение на страницы в Azure Cosmos DB
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]

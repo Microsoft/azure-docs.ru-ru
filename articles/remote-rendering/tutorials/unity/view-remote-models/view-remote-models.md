@@ -6,12 +6,12 @@ ms.author: flborn
 ms.date: 06/15/2020
 ms.topic: tutorial
 ms.custom: devx-track-csharp
-ms.openlocfilehash: bfcd1e600c722cf3a4951da60097c7c373f9b1a6
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.openlocfilehash: ef2d0eb409cbef2fdd3579ae5e8b409e24bdda2f
+ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99592047"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101735970"
 ---
 # <a name="tutorial-viewing-a-remotely-rendered-model"></a>Руководство по Просмотр модели удаленной отрисовки
 
@@ -55,43 +55,9 @@ ms.locfileid: "99592047"
 
 ## <a name="include-the-azure-remote-rendering-package"></a>Включение пакета Удаленной отрисовки Azure
 
-Необходимо изменить файл `Packages/manifest.json`, расположенный в папке проекта Unity. Откройте файл в текстовом редакторе и добавьте в верхнюю часть манифеста следующие строки:
+[Следуйте инструкциям](../../../how-tos/unity/install-remote-rendering-unity-package.md) по добавлению пакета Удаленной отрисовки Azure к проекту Unity.
 
-```json
-{
-    "scopedRegistries": [
-    {
-        "name": "Azure Mixed Reality Services",
-        "url": "https://api.bintray.com/npm/microsoft/AzureMixedReality-NPM/",
-        "scopes": ["com.microsoft.azure"]
-    }
-    ],
-    "dependencies": {
-        "com.unity.render-pipelines.universal": "7.3.1",
-        "com.microsoft.azure.remote-rendering": "0.1.31",
-        ...existing dependencies...
-    }
-}
-```
 
-После изменения и сохранения манифеста Unity обновится автоматически. Убедитесь, что пакеты загружены в окне *Project* (Проект):
-
-:::image type="content" source="./media/confirm-packages.png" alt-text="Подтверждение импорта пакетов":::
-
-Если пакеты не загружаются, проверьте наличие ошибок в консоли Unity. Если ошибок нет, но пакеты не отображаются в папке **Packages**, проверьте положение выключателя видимости пакетов.\
-![Снимок экрана со стрелкой, указывающей на выключатель видимости пакетов.](./media/unity-package-visibility.png)
-
-## <a name="ensure-you-have-the-latest-version-of-the-package"></a>Убедитесь, что у вас установлена последняя версия пакета.
-
-Выполните следующие шаги, чтобы обеспечить использование последней версии пакета удаленной отрисовки для проекта.
-
-1. В верхнем меню редактора Unity откройте окно *Window —> Package Manager* (Окно —> Диспетчер пакетов).
-1. Выберите пакет **Удаленная отрисовка Microsoft Azure**.
-1. На странице диспетчера пакетов проверьте, доступна ли для пакета **Удаленная отрисовка Microsoft Azure** кнопка **Update** (Обновить). Если это так, нажмите ее, чтобы обновить версию пакета до последней.\
-![Пакет Удаленной отрисовки Azure в диспетчере пакетов](./media/package-manager.png)
-1. Обновление пакета может иногда приводить к ошибкам консоли. Если это происходит, попробуйте закрыть и снова открыть проект.
-1. Если пакет обновлен, в диспетчере пакетов вместо кнопки Update (Обновить) будет отображаться надпись **Up to date** (Обновлен).\
-![Обновленный пакет](./media/package-up-to-date.png)
 ## <a name="configure-the-camera"></a>Настройка камеры
 
 1. Выберите узел **Main Camera** (Основная камера).

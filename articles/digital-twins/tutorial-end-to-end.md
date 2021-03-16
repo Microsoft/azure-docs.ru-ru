@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 4/15/2020
 ms.topic: tutorial
 ms.service: digital-twins
-ms.openlocfilehash: cff40385edc89c0f6d2d105d089b66c046b0c04b
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.openlocfilehash: 30b30697750a0b9068cfcde19ea4bf9c474f9ad9
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100545944"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102424586"
 ---
 # <a name="tutorial-build-out-an-end-to-end-solution"></a>Руководство по Создание комплексного решения
 
@@ -48,7 +48,7 @@ ms.locfileid: "100545944"
 
 Ниже перечислены компоненты, реализованные в примере приложения *AdtSampleApp* для сценария сборки.
 * Проверка подлинности устройства 
-* Примеры использования [пакета SDK .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client?view=azure-dotnet&preserve-view=true) (находятся в *CommandLoop.cs*)
+* Примеры использования [пакета SDK .NET (C#)](/dotnet/api/overview/azure/digitaltwins/client) (находятся в *CommandLoop.cs*)
 * Консольный интерфейс для вызова API Azure Digital Twins
 * *SampleClientApp* — пример решения Azure Digital Twins
 * *SampleFunctionsApp* — приложение Функций Azure, которое обновляет ваш граф Azure Digital Twins на основе данных телеметрии из событий Центра Интернета вещей и Azure Digital Twins
@@ -107,7 +107,7 @@ Query
 
 Перед публикацией приложения рекомендуется убедиться в актуальности зависимостей и проверить, что у вас установлена последняя версия всех включенных пакетов.
 
-На панели *обозреватель решений* разверните узел *SampleFunctionsApp > Зависимости*. Щелкните правой кнопкой мыши *Пакеты* и выберите *Управление пакетами NuGet…* .
+В области *Обозреватель решений* разверните узел _**SampleFunctionsApp** > Зависимости_. Щелкните правой кнопкой мыши *Пакеты* и выберите *Управление пакетами NuGet…* .
 
 :::image type="content" source="media/tutorial-end-to-end/update-dependencies-1.png" alt-text="Visual Studio: управление пакетами NuGet для проекта SampleFunctionsApp" border="false":::
 
@@ -131,15 +131,17 @@ Query
 az functionapp config appsettings set -g <your-resource-group> -n <your-App-Service-(function-app)-name> --settings "ADT_SERVICE_URL=<your-Azure-Digital-Twins-instance-URL>"
 ```
 
-В выходных данных будет представлен список параметров функции Azure, в котором теперь должна присутствовать запись *ADT_SERVICE_URL*.
+В выходных данных будет представлен список параметров функции Azure, в котором теперь должна присутствовать запись **ADT_SERVICE_URL**.
 
-С помощью следующей команды создайте управляемое системой удостоверение. Запишите значение поля *principalId* в выходных данных команды.
+С помощью следующей команды создайте управляемое системой удостоверение. Найдите поле **principalId** в выходных данных.
 
 ```azurecli-interactive
 az functionapp identity assign -g <your-resource-group> -n <your-App-Service-(function-app)-name>
 ```
 
-Используйте значение *principalId* из выходных данных в следующей команде, чтобы назначить удостоверению приложения-функции роль *владельца данных Azure Digital Twins* для своего экземпляра Azure Digital Twins:
+Используйте значение **principalId** из выходных данных в следующей команде, чтобы назначить удостоверению приложения-функции роль *владельца данных Azure Digital Twins* для своего экземпляра Azure Digital Twins.
+
+[!INCLUDE [digital-twins-permissions-required.md](../../includes/digital-twins-permissions-required.md)]
 
 ```azurecli-interactive
 az dt role-assignment create --dt-name <your-Azure-Digital-Twins-instance> --assignee "<principal-ID>" --role "Azure Digital Twins Data Owner"
@@ -176,7 +178,7 @@ az iot hub create --name <name-for-your-IoT-hub> -g <your-resource-group> --sku 
 
 В выходных данных этой команды содержатся сведения о созданном Центре Интернета вещей.
 
-Сохраните имя, которое вы дали своему Центру Интернета вещей. Оно понадобится вам позже.
+Сохраните **имя** своего центра Интернета вещей. Оно понадобится вам позже.
 
 ### <a name="connect-the-iot-hub-to-the-azure-function"></a>Подключение Центра Интернета вещей к функции Azure
 
@@ -269,7 +271,10 @@ deviceConnectionString = <your-device-connection-string>
 ObserveProperties thermostat67 Temperature
 ```
 
-Вы должны увидеть обновления температуры в реальном времени *из своего экземпляра Azure Digital Twins*, которые регистрируются в консоли каждые 10 секунд.
+Вы должны увидеть обновления температуры в реальном времени *из своего экземпляра Azure Digital Twins*, которые регистрируются в консоли каждые 2 секунды.
+
+>[!NOTE]
+> На распространение данных с устройства на двойник может потребоваться несколько секунд. Первые значения температуры могут быть нулевыми, пока на двойник не начнут поступать данные.
 
 :::image type="content" source="media/tutorial-end-to-end/console-digital-twins-telemetry.png" alt-text="Выходные данные консоли, показывающие журнал сообщений о температуре из цифрового двойника thermostat67":::
 
@@ -327,7 +332,7 @@ az dt endpoint show --dt-name <your-Azure-Digital-Twins-instance> --endpoint-nam
 
 :::image type="content" source="media/tutorial-end-to-end/output-endpoints.png" alt-text="Результат запроса конечной точки, показывающий конечную точку с параметром provisioningState, имеющим значение Succeeded":::
 
-Сохраните имена, которые вы назначили разделу Сетки событий и конечной точке Сетке событий, в Azure Digital Twins. Они понадобятся вам позже.
+Сохраните имена, которые вы назначили **разделу Сетки событий** и **конечной точке** Сетке событий в Azure Digital Twins. Они понадобятся вам позже.
 
 ### <a name="set-up-route"></a>Настройка маршрута
 
@@ -346,7 +351,7 @@ az dt route create --dt-name <your-Azure-Digital-Twins-instance> --endpoint-name
 
 Подпишите функцию Azure *ProcessDTRoutedData* на раздел Сетки событий, созданный ранее, чтобы данные телеметрии могли поступать из двойника *thermostat67* через раздел Сетки событий в эту функцию, которая будет возвращаться в Azure Digital Twins и соответствующим образом обновлять двойник *room21*.
 
-Для этого создайте **подписку на события** из раздела Сетки событий для вашей функции Azure *ProcessDTRoutedData*, которая выступает как конечная точка.
+Для этого вы создадите **подписку на службу "Сетка событий"** , которая отправляет данные из созданного ранее **раздела Сетки событий** в функцию Azure *ProcessDTRoutedData*.
 
 На [портале Azure](https://portal.azure.com/) перейдите к своему разделу Сетки событий, выполнив поиск по его имени в верхней строке поиска. Выберите *+ Event Subscription* (+ Подписка на события).
 
@@ -381,7 +386,7 @@ az dt route create --dt-name <your-Azure-Digital-Twins-instance> --endpoint-name
 ObserveProperties thermostat67 Temperature room21 Temperature
 ```
 
-Вы должны увидеть обновления температуры в реальном времени *из своего экземпляра Azure Digital Twins*, которые регистрируются в консоли каждые 10 секунд. Обратите внимание, что температура для *room21* обновляется в соответствии с обновлениями в *thermostat67*.
+Вы должны увидеть обновления температуры в реальном времени *из своего экземпляра Azure Digital Twins*, которые регистрируются в консоли каждые 2 секунды. Обратите внимание, что температура для *room21* обновляется в соответствии с обновлениями в *thermostat67*.
 
 :::image type="content" source="media/tutorial-end-to-end/console-digital-twins-telemetry-b.png" alt-text="Выходные данные консоли, показывающие журнал сообщений о температуре из цифровых двойников терморегулятора и комнаты":::
 
@@ -403,9 +408,9 @@ ObserveProperties thermostat67 Temperature room21 Temperature
 
 [!INCLUDE [digital-twins-cleanup-basic.md](../../includes/digital-twins-cleanup-basic.md)]
 
-* **Если вы хотите и дальше использовать экземпляр Azure Digital Twins, который настроили при работе с этой статьей, но вам нужно очистить некоторые или все его модели, двойники и связи**, вы можете воспользоваться командами CLI [az dt](/cli/azure/ext/azure-iot/dt?view=azure-cli-latest&preserve-view=true) в окне [Azure Cloud Shell](https://shell.azure.com).
+* **Если вы хотите и дальше использовать экземпляр Azure Digital Twins, который настроили при работе с этой статьей, но вам нужно очистить некоторые или все его модели, двойники и связи**, вы можете воспользоваться командами CLI [az dt](/cli/azure/ext/azure-iot/dt) в окне [Azure Cloud Shell](https://shell.azure.com).
 
-    Этот параметр не приведет к удалению других ресурсов Azure, созданных с помощью этого руководства (Центр Интернета вещей, приложение Функций Azure и т. д.). Их можно удалить по отдельности с помощью [команд dt](/cli/azure/reference-index?view=azure-cli-latest&preserve-view=true), подходящих для каждого типа ресурсов.
+    Этот параметр не приведет к удалению других ресурсов Azure, созданных с помощью этого руководства (Центр Интернета вещей, приложение Функций Azure и т. д.). Их можно удалить по отдельности с помощью [команд dt](/cli/azure/reference-index), подходящих для каждого типа ресурсов.
 
 Также, возможно, потребуется удалить папку проекта с вашего локального компьютера.
 
