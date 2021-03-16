@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: trbye
 ms.custom: devx-track-js, devx-track-csharp
-ms.openlocfilehash: f2d3b6b40a7b258da682d36260f6292d10635095
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 0a0f48a311e5adf0dd7c70c43317d99cc94fca86
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102498725"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103470529"
 ---
 # <a name="improve-synthesis-with-speech-synthesis-markup-language-ssml"></a>Улучшение синтеза с помощью языка разметки речи (SSML)
 
@@ -63,9 +63,9 @@ ms.locfileid: "102498725"
 
 | attribute | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
-| `version` | Указывает версию спецификации SSML, используемую для интерпретации разметки документа. Текущая версия — 1,0. | Обязательно |
-| `xml:lang` | Указывает язык корневого документа. Значение может содержать символы в нижнем регистре, двухбуквенный код языка (например, `en` ), языковой код и страну или регион в верхнем регистре (например, `en-US` ). | Обязательно |
-| `xmlns` | Задает универсальный код ресурса (URI) документа, который определяет словарь разметки (типы элементов и имена атрибутов) документа SSML. Текущий URI — http://www.w3.org/2001/10/synthesis . | Обязательно |
+| `version` | Указывает версию спецификации SSML, используемую для интерпретации разметки документа. Текущая версия — 1,0. | Обязательный |
+| `xml:lang` | Указывает язык корневого документа. Значение может содержать символы в нижнем регистре, двухбуквенный код языка (например, `en` ), языковой код и страну или регион в верхнем регистре (например, `en-US` ). | Обязательный |
+| `xmlns` | Задает универсальный код ресурса (URI) документа, который определяет словарь разметки (типы элементов и имена атрибутов) документа SSML. Текущий URI — http://www.w3.org/2001/10/synthesis . | Обязательный |
 
 ## <a name="choose-a-voice-for-text-to-speech"></a>Выбор голоса для преобразования текста в речь
 
@@ -88,11 +88,11 @@ ms.locfileid: "102498725"
 **Пример**
 
 > [!NOTE]
-> В этом примере используется `en-US-AriaRUS` речь. Полный список поддерживаемых голосов см. в разделе [Поддержка языков](language-support.md#text-to-speech).
+> В этом примере используется `en-US-JennyNeural` речь. Полный список поддерживаемых голосов см. в разделе [Поддержка языков](language-support.md#text-to-speech).
 
 ```XML
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-    <voice name="en-US-AriaRUS">
+    <voice name="en-US-JennyNeural">
         This is the text that is spoken.
     </voice>
 </speak>
@@ -106,7 +106,7 @@ ms.locfileid: "102498725"
 
 | attribute | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
-| `name` | Определяет голос, используемый для вывода текста в речь. Полный список поддерживаемых голосов см. в разделе [Поддержка языков](language-support.md#text-to-speech). | Обязательно |
+| `name` | Определяет голос, используемый для вывода текста в речь. Полный список поддерживаемых голосов см. в разделе [Поддержка языков](language-support.md#text-to-speech). | Обязательный |
 
 > [!IMPORTANT]
 > Несколько голосов несовместимы с функцией границы слова. Чтобы использовать несколько голосов, необходимо отключить функцию границ слов.
@@ -117,7 +117,7 @@ ms.locfileid: "102498725"
 
 # <a name="c"></a>[C#](#tab/csharp)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechconfig.setproperty" target="_blank"> `SetProperty` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechconfig.setproperty" target="_blank"> `SetProperty` </a>.
 
 ```csharp
 speechConfig.SetProperty(
@@ -126,7 +126,7 @@ speechConfig.SetProperty(
 
 # <a name="c"></a>[C++](#tab/cpp)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/cpp/cognitive-services/speech/speechconfig#setproperty" target="_blank"> `SetProperty` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/cpp/cognitive-services/speech/speechconfig#setproperty" target="_blank"> `SetProperty` </a>.
 
 ```cpp
 speechConfig->SetProperty(
@@ -135,7 +135,7 @@ speechConfig->SetProperty(
 
 # <a name="java"></a>[Java](#tab/java)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/java/api/com.microsoft.cognitiveservices.speech.speechconfig.setproperty#com_microsoft_cognitiveservices_speech_SpeechConfig_setProperty_String_String_" target="_blank"> `setProperty` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/java/api/com.microsoft.cognitiveservices.speech.speechconfig.setproperty#com_microsoft_cognitiveservices_speech_SpeechConfig_setProperty_String_String_" target="_blank"> `setProperty` </a>.
 
 ```java
 speechConfig.setProperty(
@@ -144,7 +144,7 @@ speechConfig.setProperty(
 
 # <a name="python"></a>[Python](#tab/python)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechconfig#set-property-by-name-property-name--str--value--str-" target="_blank"> `set_property_by_name` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechconfig#set-property-by-name-property-name--str--value--str-" target="_blank"> `set_property_by_name` </a>.
 
 ```python
 speech_config.set_property_by_name(
@@ -162,7 +162,7 @@ speechConfig.setProperty(
 
 # <a name="objective-c"></a>[Objective-C](#tab/objectivec)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>.
 
 ```objectivec
 [speechConfig setPropertyTo:@"false" byName:@"SpeechServiceResponse_Synthesis_WordBoundaryEnabled"];
@@ -170,7 +170,7 @@ speechConfig.setProperty(
 
 # <a name="swift"></a>[Swift](#tab/swift)
 
-Дополнительные сведения см. в <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>разделе.
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>.
 
 ```swift
 speechConfig!.setPropertyTo(
@@ -183,11 +183,11 @@ speechConfig!.setPropertyTo(
 
 ```xml
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-    <voice name="en-US-AriaRUS">
+    <voice name="en-US-JennyNeural">
         Good morning!
     </voice>
-    <voice name="en-US-Guy24kRUS">
-        Good morning to you too Aria!
+    <voice name="en-US-GuyNeural">
+        Good morning to you too Jenny!
     </voice>
 </speak>
 ```
@@ -434,8 +434,8 @@ speechConfig!.setPropertyTo(
 
 | attribute | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
-| `type` | Указывает место добавления тишины: <ul><li>Ведущие — в начале текста </li><li>Хвост — в конце текста </li><li>Сентенцебаундари — между соседними предложениями </li></ul> | Обязательно |
-| `Value` | Указывает абсолютную длительность паузы в секундах или миллисекундах, это значение должно быть меньше 5000ms. Примеры допустимых значений — `2s` и. `500ms` | Обязательно |
+| `type` | Указывает место добавления тишины: <ul><li>Ведущие — в начале текста </li><li>Хвост — в конце текста </li><li>Сентенцебаундари — между соседними предложениями </li></ul> | Обязательный |
+| `Value` | Указывает абсолютную длительность паузы в секундах или миллисекундах, это значение должно быть меньше 5000ms. Примеры допустимых значений — `2s` и. `500ms` | Обязательный |
 
 **Пример** В этом примере `mtts:silence` используется для добавления 200 мс бездействия между двумя предложениями.
 ```xml
@@ -467,7 +467,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 ```XML
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-    <voice name="en-US-AriaRUS">
+    <voice name="en-US-JennyNeural">
         <p>
             <s>Introducing the sentence element.</s>
             <s>Used to mark individual sentences.</s>
@@ -506,7 +506,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 ```xml
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-    <voice name="en-US-AriaRUS">
+    <voice name="en-US-JennyNeural">
         <phoneme alphabet="ipa" ph="t&#x259;mei&#x325;&#x27E;ou&#x325;"> tomato </phoneme>
     </voice>
 </speak>
@@ -514,7 +514,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 ```xml
 <speak version="1.0" xmlns="https://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-    <voice name="en-US-AriaRUS">
+    <voice name="en-US-JennyNeural">
         <phoneme alphabet="sapi" ph="iy eh n y uw eh s"> en-US </phoneme>
     </voice>
 </speak>
@@ -522,7 +522,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 ```xml
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-    <voice name="en-US-AriaRUS">
+    <voice name="en-US-JennyNeural">
         <s>His name is Mike <phoneme alphabet="ups" ph="JH AU"> Zhou </phoneme></s>
     </voice>
 </speak>
@@ -613,7 +613,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" 
           xmlns:mstts="http://www.w3.org/2001/mstts" 
           xml:lang="en-US">
-    <voice name="en-US-AriaRUS">
+    <voice name="en-US-JennyNeural">
         <lexicon uri="http://www.example.com/customlexicon.xml"/>
         BTW, we will be there probably at 8:00 tomorrow morning.
         Could you help leave a message to Robert Benigni for me?
@@ -703,7 +703,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 ```xml
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-    <voice name="en-US-AriaRUS">
+    <voice name="en-US-JennyNeural">
         <prosody volume="+20.00%">
             Welcome to Microsoft Cognitive Services Text-to-Speech API.
         </prosody>
@@ -755,7 +755,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 | attribute | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
-| `interpret-as` | Указывает тип содержимого текста элемента. Список типов см. в таблице ниже. | Обязательно |
+| `interpret-as` | Указывает тип содержимого текста элемента. Список типов см. в таблице ниже. | Обязательный |
 | `format` | Предоставляет дополнительные сведения о точном форматировании текста элемента для типов содержимого, которые могут иметь неоднозначные форматы. SSML определяет форматы для типов содержимого, которые их используют (см. таблицу ниже). | Необязательно |
 | `detail` | Указывает уровень детализации для речи. Например, этот атрибут может запросить, чтобы механизм синтеза речи произносит знаки пунктуации. Для не определено ни одного стандартного значения `detail` . | Необязательно |
 
@@ -785,7 +785,7 @@ A good place to start is by trying out the slew of educational apps that are hel
  
 ```XML
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-    <voice name="en-US-AriaRUS">
+    <voice name="en-US-JennyNeural">
         <p>
         Your <say-as interpret-as="ordinal"> 1st </say-as> request was for <say-as interpret-as="cardinal"> 1 </say-as> room
         on <say-as interpret-as="date" format="mdy"> 10/19/2010 </say-as>, with early arrival at <say-as interpret-as="time" format="hms12"> 12:35pm </say-as>.
@@ -823,7 +823,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 ```xml
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-    <voice name="en-US-AriaRUS">
+    <voice name="en-US-JennyNeural">
         <p>
             <audio src="https://contoso.com/opinionprompt.wav"/>
             Thanks for offering your opinion. Please begin speaking after the beep.
@@ -854,7 +854,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 | attribute | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
 | `src` | Указывает расположение или URL-адрес фонового звукового файла. | Требуется при использовании фонового звука в документе SSML. |
-| `volume` | Указывает громкость фонового звукового файла. **Допустимые значения**: `0` в `100` включительно. Значение по умолчанию — `1`. | Необязательно |
+| `volume` | Указывает громкость фонового звукового файла. **Допустимые значения**: `0` в `100` включительно. Значение по умолчанию — `1`. | Необязательно |
 | `fadein` | Задает время, в течение которого фоновый звук постепенно передается в миллисекундах. Значение по умолчанию — `0` , что эквивалентно отсутствию появления. **Допустимые значения**: `0` в `10000` включительно.  | Необязательно |
 | `fadeout` | Указывает длительность фонового исчезновения в миллисекундах. Значение по умолчанию — `0` , что эквивалентно значению без затухания. **Допустимые значения**: `0` в `10000` включительно.  | Необязательно |
 
@@ -863,7 +863,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 ```xml
 <speak version="1.0" xml:lang="en-US" xmlns:mstts="http://www.w3.org/2001/mstts">
     <mstts:backgroundaudio src="https://contoso.com/sample.wav" volume="0.7" fadein="3000" fadeout="4000"/>
-    <voice name="Microsoft Server Speech Text to Speech Voice (en-US, AriaRUS)">
+    <voice name="Microsoft Server Speech Text to Speech Voice (en-US, JennyNeural)">
         The text provided in this document will be spoken over the background audio.
     </voice>
 </speak>

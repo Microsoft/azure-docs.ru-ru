@@ -5,19 +5,19 @@ services: route-server
 author: duongau
 ms.service: route-server
 ms.topic: how-to
-ms.date: 03/02/2021
+ms.date: 03/15/2021
 ms.author: duau
-ms.openlocfilehash: 9fa0f73d06bda02d784628823ee70bc538b375e2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 83f1e83653c5674988cadcb5b54d3c675ae0b8b8
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101695810"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103489446"
 ---
 # <a name="troubleshooting-azure-route-server-issues"></a>Устранение неполадок сервера маршрутизации Azure
 
 > [!IMPORTANT]
-> Сервер маршрутизации Azure (Предварительная версия) сейчас находится в общедоступной предварительной версии.
+> Сервер маршрутизации Azure (предварительная версия) сейчас предоставляется в общедоступной предварительной версии.
 > Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены.
 > Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
@@ -31,7 +31,7 @@ ms.locfileid: "101695810"
 | 0.0.0.0/0 | Интернет |
 
 
-### <a name="why-can-i-ping-from-my-nva-to-the-bgp-peer-ip-on-azure-route-server-but-after-i-set-up-the-bgp-peering-between-them-i-cant-ping-the-same-ip-anymore-why-does-the-bgp-peering-goes-down"></a>Почему я могу проверить связь из моего NVA с IP-адресом BGP на сервере маршрутизации Azure, но после настройки пиринга BGP для них больше не удается проверить связь с тем же IP-адресом? Почему пиринг BGP становится неработоспособным?
+### <a name="why-can-i-ping-from-my-nva-to-the-bgp-peer-ip-on-azure-route-server-but-after-i-set-up-the-bgp-peering-between-them-i-cant-ping-the-same-ip-anymore-why-does-the-bgp-peering-go-down"></a>Почему я могу проверить связь из моего NVA с IP-адресом BGP на сервере маршрутизации Azure, но после настройки пиринга BGP для них больше не удается проверить связь с тем же IP-адресом? Почему пиринг BGP не работает?
 
 В некоторых NVA необходимо добавить статический маршрут для подсети сервера маршрутизации Azure. Например, если сервер маршрутизации Azure находится в 10.0.255.0/27, а NVA находится в 10.0.1.0/24, необходимо добавить следующий маршрут в таблицу маршрутизации в NVA:
 

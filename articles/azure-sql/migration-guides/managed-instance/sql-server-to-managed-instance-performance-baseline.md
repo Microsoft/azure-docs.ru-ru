@@ -1,8 +1,8 @@
 ---
 title: 'SQL Server SQL Управляемый экземпляр: анализ производительности'
 description: Узнайте, как создавать и сравнивать базовые показатели производительности при переносе баз данных SQL Server в Azure SQL Управляемый экземпляр.
-ms.service: sql-database
-ms.subservice: migration
+ms.service: sql-managed-instance
+ms.subservice: migration-guide
 ms.custom: ''
 ms.devlang: ''
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: mokabiru
 ms.date: 11/06/2020
-ms.openlocfilehash: 2b6f9bef445cc07a3aa00377b41010a536855935
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.openlocfilehash: 28eedd3a22a0a5adc6e9a37c9e0f0fa0214a4e47
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97358866"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103564445"
 ---
 # <a name="migration-performance-sql-server-to-sql-managed-instance-performance-analysis"></a>Производительность миграции: SQL Server в анализ производительности SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqlmi.md)]

@@ -3,12 +3,12 @@ title: Узлы и пулы в пакетной службе Azure
 description: Сведения о вычислительных узлах и пулах, а также о том, как они используются в рабочем процессе пакетной службы Azure с точки зрения разработки.
 ms.topic: conceptual
 ms.date: 03/11/2021
-ms.openlocfilehash: e1edcc805e0e8c59d189a4622e494101fb31bb6d
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.openlocfilehash: 7d4c2d45849deb011498efe4c8a1ae91724b9acd
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103200227"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103563901"
 ---
 # <a name="nodes-and-pools-in-azure-batch"></a>Узлы и пулы в пакетной службе Azure
 
@@ -208,3 +208,4 @@ ms.locfileid: "103200227"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Изучите сведения [о заданиях и задачах](jobs-and-tasks.md).
+- Узнайте, как [обнаруживать и предотвращать сбои в фоновых операциях пула и узла ](batch-pool-node-error-checking.md).

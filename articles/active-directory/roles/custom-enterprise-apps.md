@@ -1,5 +1,5 @@
 ---
-title: Разрешения пользовательской роли для назначения доступа к корпоративным приложениям — Azure Active Directory | Документация Майкрософт
+title: Создание пользовательских ролей для управления корпоративными приложениями в Azure Active Directory
 description: Создание и назначение пользовательских ролей Azure AD для доступа к корпоративным приложениям в Azure Active Directory
 services: active-directory
 author: rolyon
@@ -13,14 +13,14 @@ ms.author: rolyon
 ms.reviewer: vincesm
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb04616fb442f4a6c000e11919638231e3ddf64c
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: 1a76e2d37e9dcdd285a8608fdbfd715bfb834eb8
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103012179"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103467754"
 ---
-# <a name="assign-custom-roles-to-manage-enterprise-apps-in-azure-active-directory"></a>Назначение пользовательских ролей для управления корпоративными приложениями в Azure Active Directory
+# <a name="create-custom-roles-to-manage-enterprise-apps-in-azure-active-directory"></a>Создание пользовательских ролей для управления корпоративными приложениями в Azure Active Directory
 
 В этой статье объясняется, как создать настраиваемую роль с разрешениями на управление назначениями корпоративных приложений для пользователей и групп в Azure Active Directory (Azure AD). Сведения об элементах назначений ролей и значении терминов, таких как подтип, разрешение и набор свойств, см. в разделе [Обзор пользовательских ролей](custom-overview.md).
 

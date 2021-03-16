@@ -5,14 +5,14 @@ author: memildin
 manager: rkarlin
 ms.service: security-center
 ms.topic: reference
-ms.date: 03/10/2021
+ms.date: 03/11/2021
 ms.author: memildin
-ms.openlocfilehash: 7080f79ca85a401ddcd3d421bb4a0292994508dd
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: 4f2b31a4760a07779eebdd9492731ffe7e324d37
+ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/11/2021
-ms.locfileid: "102636680"
+ms.locfileid: "103149648"
 ---
 # <a name="whats-new-in-azure-security-center"></a>Новые возможности в Центре безопасности Azure
 
@@ -35,6 +35,7 @@ ms.locfileid: "102636680"
 - [средство оценки уязвимостей SQL теперь включает функцию "Отключить правило" (предварительная версия);](#sql-vulnerability-assessment-now-includes-the-disable-rule-experience-preview)
 - [книги Azure Monitor интегрированы в Центр безопасности, предоставлены три шаблона;](#azure-monitor-workbooks-integrated-into-security-center-and-three-templates-provided)
 - [панель мониторинга соответствия нормативным требованиям теперь включает отчеты об аудите Azure (предварительная версия);](#regulatory-compliance-dashboard-now-includes-azure-audit-reports-preview)
+- [Данные рекомендаций можно просмотреть в Azure Resource Graph с помощью кнопки Explore in ARG (Обзор в ARG)](#recommendation-data-can-be-viewed-in-azure-resource-graph-with-explore-in-arg)
 - [обновлены политики для развертывания процедур автоматизации рабочих процессов.](#updates-to-the-policies-for-deploying-workflow-automation)
 - [Данные двух устаревших рекомендаций больше не записываются непосредственно в журнал действий Azure](#two-legacy-recommendations-no-longer-write-data-directly-to-azure-activity-log)
 
@@ -91,6 +92,17 @@ ms.locfileid: "102636680"
 
 :::image type="content" source="media/release-notes/audit-reports-list-regulatory-compliance-dashboard.png" alt-text="Фильтрация списка доступных отчетов об аудите Azure":::
 
+
+
+### <a name="recommendation-data-can-be-viewed-in-azure-resource-graph-with-explore-in-arg"></a>Данные рекомендаций можно просмотреть в Azure Resource Graph с помощью кнопки Explore in ARG (Обзор в ARG)
+
+На панели инструментов страниц со сведениями о рекомендациях теперь есть кнопка Explore in ARG (Обзор в ARG). С помощью этой кнопки можно открыть запрос к Azure Resource Graph, чтобы изучить и экспортировать данные рекомендаций, а также предоставить к ним общий доступ.
+
+Azure Resource Graph (ARG) обеспечивает мгновенный доступ к сведениям о ресурсах в облачных средах с помощью надежных средств фильтрации, группировки и сортировки. Это быстрый и эффективный способ запросить сведения по подпискам Azure программно или с помощью портала Azure.
+
+Узнайте больше об [Azure Resource Graph (ARG)](../governance/resource-graph/index.yml).
+
+:::image type="content" source="media/release-notes/explore-in-resource-graph.png" alt-text="Обзор данных рекомендаций в Azure Resource Graph.":::
 
 
 ### <a name="updates-to-the-policies-for-deploying-workflow-automation"></a>Обновлены политики для развертывания процедур автоматизации рабочих процессов
