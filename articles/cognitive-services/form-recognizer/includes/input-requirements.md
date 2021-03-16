@@ -1,16 +1,16 @@
 ---
-author: PatrickFarley
+author: laujan
 ms.service: cognitive-services
 ms.subservice: forms-recognizer
 ms.topic: include
 ms.date: 06/27/2019
-ms.author: pafarley
-ms.openlocfilehash: 7cf3d86eeea9d1b0f5fcbb757d3597e21cbcc369
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.author: lajanuar
+ms.openlocfilehash: 324fde5198fe3469e3979cf5cd102715118a49aa
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98901172"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103467327"
 ---
 Распознаватель документов работает со входными документами, которые соответствуют следующим требованиям:
 

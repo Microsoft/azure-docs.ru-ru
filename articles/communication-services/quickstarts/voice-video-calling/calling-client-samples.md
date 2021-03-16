@@ -6,16 +6,16 @@ author: mikben
 manager: jken
 services: azure-communication-services
 ms.author: mikben
-ms.date: 03/18/2020
+ms.date: 03/10/2021
 ms.topic: conceptual
 ms.service: azure-communication-services
 zone_pivot_groups: acs-plat-web-ios-android
-ms.openlocfilehash: 60e1b75ee8d8da9a7696ad4f7074207597ec2d0b
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: b4689f9777cee99b5bd85f733812ba986162360c
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102486245"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103488131"
 ---
 # <a name="quickstart-use-the-communication-services-calling-client-library"></a>Краткое руководство. Использование клиентской библиотеки вызова служб связи
 

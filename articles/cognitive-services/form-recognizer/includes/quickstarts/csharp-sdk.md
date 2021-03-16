@@ -2,20 +2,21 @@
 title: Краткое руководство. Клиентская библиотека Распознавателя документов для .NET
 description: Использование клиентской библиотеки Распознавателя документов для .NET для создания приложения для обработки форм, которое извлекает из документов пары "ключ — значение" и табличные данные.
 services: cognitive-services
-author: PatrickFarley
+author: laujan
 manager: nitinme
 ms.service: cognitive-services
 ms.subservice: forms-recognizer
 ms.topic: include
-ms.date: 10/06/2020
-ms.author: pafarley
-ms.openlocfilehash: e85a6ad4619897a6c655874b43e6a6b1a7723d3a
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.date: 02/12/2021
+ms.author: lajanuar
+ms.openlocfilehash: c3d81e0de1c20e77278cb718fdcbc21eb6df455d
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99584640"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102444991"
 ---
+<!-- markdownlint-disable MD024 -->
 > [!IMPORTANT]
 > В коде, приведенном в этой статье, для простоты используются синхронные методы и незащищенное хранилище учетных данных.
 
@@ -26,13 +27,13 @@ ms.locfileid: "99584640"
 * Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
 * [IDE Visual Studio](https://visualstudio.microsoft.com/vs/) или текущая версия [.NET Core](https://dotnet.microsoft.com/download/dotnet-core).
 * Набор данных для обучения в хранилище BLOB-объектов Azure. Советы и варианты для объединения данных для обучения см. в статье о [создании обучающего набора данных для пользовательской модели](../../build-training-data-set.md). При работе с этим кратким руководством можно использовать файлы в папке **Train** из [примера набора данных](https://go.microsoft.com/fwlink/?linkid=2090451) (скачайте и разархивируйте файл *sample_data.zip*).
-* Получив подписку Azure, перейдите к <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesFormRecognizer"  title="Создание ресурса Распознавателя документов"  target="_blank">созданию ресурса Распознавателя документов <span class="docon docon-navigate-external x-hidden-focus"></span></a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
-    * Для подключения приложения к API Распознавателя документов потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
-    * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
+* Получив подписку Azure, перейдите к <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesFormRecognizer"  title="Создание ресурса Распознавателя документов"  target="_blank">созданию ресурса Распознавателя документов </a> на портале Azure, чтобы получить ключ и конечную точку. После развертывания щелкните **Перейти к ресурсам**.
+  * Для подключения приложения к API Распознавателя документов потребуется ключ и конечная точка из созданного ресурса. Ключ и конечная точка будут вставлены в приведенный ниже код в кратком руководстве.
+  * Используйте бесплатную ценовую категорию (`F0`), чтобы опробовать службу, а затем выполните обновление до платного уровня для рабочей среды.
 
 ## <a name="setting-up"></a>Настройка
 
-В окне консоли (cmd, PowerShell или Bash) выполните команду `dotnet new`, чтобы создать консольное приложение с именем `formrecognizer-quickstart`. Эта команда создает простой проект "Hello World" на языке C# с одним файлом исходного кода: *program.cs*. 
+В окне консоли (cmd, PowerShell или Bash) выполните команду `dotnet new`, чтобы создать консольное приложение с именем `formrecognizer-quickstart`. Эта команда создает простой проект "Hello World" на языке C# с одним файлом исходного кода: *program.cs*.
 
 ```console
 dotnet new console -n formrecognizer-quickstart
@@ -54,20 +55,11 @@ Build succeeded.
 ...
 ```
 
-### <a name="install-the-client-library"></a>Установка клиентской библиотеки 
+### <a name="install-the-client-library"></a>Установка клиентской библиотеки
 
 В каталоге приложения установите клиентскую библиотеку Распознавателя документов для .NET с помощью следующей команды:
 
-#### <a name="version-20"></a>[Версия 2.0](#tab/ga)
-
-```console
-dotnet add package Azure.AI.FormRecognizer --version 3.0.0
-```
-
-> [!NOTE]
-> В пакете SDK 3.0.0 Распознавателя документов используется API версии 2.0.
-
-#### <a name="version-21-preview"></a>[Предварительная версия 2.1](#tab/preview)
+#### <a name="v21-preview"></a>[Предварительная версия 2.1](#tab/preview)
 
 ```console
 dotnet add package Azure.AI.FormRecognizer --version 3.1.0-beta.1
@@ -75,6 +67,15 @@ dotnet add package Azure.AI.FormRecognizer --version 3.1.0-beta.1
 
 > [!NOTE]
 > В пакете SDK 3.1.0 Распознавателя документов используется API предварительной версии 2.1.
+
+#### <a name="v20"></a>[Версия 2.0](#tab/ga)
+
+```console
+dotnet add package Azure.AI.FormRecognizer --version 3.0.0
+```
+
+> [!NOTE]
+> В пакете SDK 3.0.0 Распознавателя документов используется API версии 2.0
 
 ---
 
@@ -96,10 +97,14 @@ dotnet add package Azure.AI.FormRecognizer --version 3.1.0-beta.1
 
 В методе **Main** приложения добавьте вызов асинхронных задач, используемых в этом руководстве. Вы реализуете их позже.
 
-#### <a name="version-20"></a>[Версия 2.0](#tab/ga)
-[!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart.cs?name=snippet_main)]
-#### <a name="version-21-preview"></a>[Предварительная версия 2.1](#tab/preview)
+#### <a name="v21-preview"></a>[Предварительная версия 2.1](#tab/preview)
+
 [!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart-preview.cs?name=snippet_main)]
+
+#### <a name="v20"></a>[Версия 2.0](#tab/ga)
+
+[!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart.cs?name=snippet_main)]
+
 
 ---
 
@@ -112,18 +117,18 @@ dotnet add package Azure.AI.FormRecognizer --version 3.1.0-beta.1
 
 `FormRecognizerClient` предоставляет операции для перечисленных ниже целей.
 
- - Распознавание полей форм и содержимого с помощью настраиваемых моделей, обученных для анализа пользовательских форм.  Эти значения возвращаются в коллекцию объектов `RecognizedForm`. См. пример в разделе об [анализе пользовательских форм](#analyze-forms-with-a-custom-model).
- - Распознавание содержимого формы, в том числе таблиц, строк и слов, без необходимости обучения модели.  Содержимое форм возвращается в коллекцию объектов `FormPage`. См. пример [анализа макета](#analyze-layout).
- - Распознавание общих полей в квитанциях для США с помощью предварительно обученной модели для обработки квитанций в службе "Распознаватель документов". Эти поля и метаданные возвращаются в коллекцию объектов `RecognizedForm`. См. пример [анализа квитанций](#analyze-receipts).
+* Распознавание полей форм и содержимого с помощью настраиваемых моделей, обученных для анализа пользовательских форм.  Эти значения возвращаются в коллекцию объектов `RecognizedForm`. См. пример в разделе об [анализе пользовательских форм](#analyze-forms-with-a-custom-model).
+* Распознавание содержимого формы, в том числе таблиц, строк и слов, без необходимости обучения модели.  Содержимое форм возвращается в коллекцию объектов `FormPage`. См. пример [анализа макета](#analyze-layout).
+* Распознавание общих полей в квитанциях для США с помощью предварительно обученной модели для обработки квитанций в службе "Распознаватель документов". Эти поля и метаданные возвращаются в коллекцию объектов `RecognizedForm`. См. пример [анализа квитанций](#analyze-receipts).
 
 ### <a name="formtrainingclient"></a>FormTrainingClient
 
 `FormTrainingClient` предоставляет операции для перечисленных ниже целей.
 
-- Обучение настраиваемых моделей для анализа всех полей и значений в пользовательских формах.  Возвращаемый объект `CustomFormModel` задает типы форм, которые будет анализировать модель, и поля, которые она будет извлекать для каждого из этих типов.
-- Обучение пользовательских моделей для анализа конкретных полей и значений, указываемых путем добавления меток к пользовательским формам.  Возвращаемый объект `CustomFormModel` задает поля, которые будут извлечены моделью, а также предполагаемую точность для каждого поля.
-- Управление моделями, созданными в учетной записи.
-- Копирование настраиваемой модели из одного ресурса Распознавателя документов в другой.
+* Обучение настраиваемых моделей для анализа всех полей и значений в пользовательских формах.  Возвращаемый объект `CustomFormModel` задает типы форм, которые будет анализировать модель, и поля, которые она будет извлекать для каждого из этих типов.
+* Обучение пользовательских моделей для анализа конкретных полей и значений, указываемых путем добавления меток к пользовательским формам.  Возвращаемый объект `CustomFormModel` задает поля, которые будут извлечены моделью, а также предполагаемую точность для каждого поля.
+* Управление моделями, созданными в учетной записи.
+* Копирование настраиваемой модели из одного ресурса Распознавателя документов в другой.
 
 См. примеры для [обучения модели](#train-a-custom-model) и [управления настраиваемыми моделями](#manage-custom-models).
 
@@ -133,23 +138,24 @@ dotnet add package Azure.AI.FormRecognizer --version 3.1.0-beta.1
 ## <a name="code-examples"></a>Примеры кода
 
 Эти фрагменты кода показывают, как выполнить следующие действия с помощью клиентской библиотеки Распознавателя документов для .NET:
+<!-- markdownlint-disable MD001 -->
 
-#### <a name="version-20"></a>[Версия 2.0](#tab/ga)
-
-* [аутентификация клиента](#authenticate-the-client);
-* [анализ макета](#analyze-layout);
-* [анализ квитанций](#analyze-receipts);
-* [обучение пользовательской модели](#train-a-custom-model);
-* [анализ документов с помощью пользовательской модели](#analyze-forms-with-a-custom-model);
-* [управление пользовательскими моделями](#manage-your-custom-models).
-
-#### <a name="version-21-preview"></a>[Предварительная версия 2.1](#tab/preview)
+#### <a name="v21-preview"></a>[Предварительная версия 2.1](#tab/preview)
 
 * [аутентификация клиента](#authenticate-the-client);
 * [анализ макета](#analyze-layout);
 * [анализ квитанций](#analyze-receipts);
 * [анализ визитных карточек](#analyze-business-cards);
 * [анализ счетов](#analyze-invoices);
+* [обучение пользовательской модели](#train-a-custom-model);
+* [анализ документов с помощью пользовательской модели](#analyze-forms-with-a-custom-model);
+* [управление пользовательскими моделями](#manage-your-custom-models).
+
+#### <a name="v20"></a>[Версия 2.0](#tab/ga)
+
+* [аутентификация клиента](#authenticate-the-client);
+* [анализ макета](#analyze-layout);
+* [анализ квитанций](#analyze-receipts);
 * [обучение пользовательской модели](#train-a-custom-model);
 * [анализ документов с помощью пользовательской модели](#analyze-forms-with-a-custom-model);
 * [управление пользовательскими моделями](#manage-your-custom-models).
@@ -179,15 +185,17 @@ dotnet add package Azure.AI.FormRecognizer --version 3.1.0-beta.1
 
    :::image type="content" source="../../media/quickstarts/get-sas-url.png" alt-text="Получение подписанного URL-адреса":::
 * Чтобы получить подписанный URL-адрес отдельного документа в контейнере Хранилища BLOB-объектов, повторите описанные выше действия. Также сохраните его во временном расположении.
-* Наконец, сохраните URL-адрес примеров изображений квитанции, приведенных ниже (также доступны на [GitHub](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/formrecognizer/azure-ai-formrecognizer/samples/sample_forms)). 
+* Наконец, сохраните URL-адрес примеров изображений квитанции, приведенных ниже (также доступны на [GitHub](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/formrecognizer/azure-ai-formrecognizer/samples/sample_forms)).
 
-#### <a name="version-20"></a>[Версия 2.0](#tab/ga)
-[!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart.cs?name=snippet_urls)]
-#### <a name="version-21-preview"></a>[Предварительная версия 2.1](#tab/preview)
+#### <a name="v21-preview"></a>[Предварительная версия 2.1](#tab/preview)
+
 [!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart-preview.cs?name=snippet_urls)]
 
----
+#### <a name="v20"></a>[Версия 2.0](#tab/ga)
 
+[!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart.cs?name=snippet_urls)]
+
+---
 
 ## <a name="analyze-layout"></a>Анализ макета
 
@@ -239,15 +247,9 @@ Table 0 has 2 rows and 6 columns.
     Cell (1, 5) contains text: 'PT'.
 ```
 
-
 ## <a name="analyze-invoices"></a>Анализ счетов
 
-#### <a name="version-20"></a>[Версия 2.0](#tab/ga)
-
-> [!IMPORTANT]
-> Эта функция недоступна в выбранной версии API.
-
-#### <a name="version-21-preview"></a>[Предварительная версия 2.1](#tab/preview)
+#### <a name="v21-preview"></a>[Предварительная версия 2.1](#tab/preview)
 
 В этом разделе показано, как с помощью предварительно обученной модели анализировать счета на продажу и извлекать из них содержимое стандартных полей. Дополнительные сведения об анализе счета см. в статье [Служба макета Распознавателя документов](../../concept-invoices.md).
 
@@ -256,14 +258,18 @@ Table 0 has 2 rows and 6 columns.
 [!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart-preview.cs?name=snippet_invoice_call)]
 
 > [!TIP]
-> Можно также проанализировать локальные изображения счетов. Изучите информацию о методах класса [FormRecognizerClient](/dotnet/api/azure.ai.formrecognizer.formrecognizerclient?view=azure-dotnet), например о **StartRecognizeInvoices**. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/README.md) для сценариев, включающих использование локальных изображений.
+> Можно также проанализировать локальные изображения счетов. Изучите информацию о методах класса [FormRecognizerClient](/dotnet/api/azure.ai.formrecognizer.formrecognizerclient), например о **StartRecognizeInvoices**. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/README.md) для сценариев, включающих использование локальных изображений.
 
 Возвращаемое значение представляет собой коллекцию объектов `RecognizedForm`: по одному для каждого счета в отправленном документе. В приведенном ниже блоке кода обрабатывается счет с указанным универсальным кодом ресурса (URI) и все ее основные поля с соответствующими значениями выводятся в консоль.
 
 [!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart-preview.cs?name=snippet_invoice_print)]
 
----
+#### <a name="v20"></a>[Версия 2.0](#tab/ga)
 
+> [!IMPORTANT]
+> Эта функция недоступна в выбранной версии API.
+
+---
 
 ## <a name="train-a-custom-model"></a>Обучение пользовательской модели
 
@@ -355,7 +361,6 @@ Submodel Form Type: form-0
 
 [!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart.cs?name=snippet_trainlabels_response)]
 
-
 ### <a name="output"></a>Выходные данные
 
 Этот ответ усечен для удобства чтения.
@@ -415,7 +420,6 @@ Submodel Form Type: form-63c013e3-1cab-43eb-84b0-f4b20cb9214c
 Возвращаемое значение представляет собой коллекцию объектов `RecognizedForm`: по одному для каждой страницы обработанного документа. Следующий код выводит в консоль результаты анализа. Он отображает каждое из распознанных полей с соответствующим значением и коэффициентом достоверности.
 
 [!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart.cs?name=snippet_analyze_response)]
-
 
 ### <a name="output"></a>Выходные данные
 
@@ -487,7 +491,7 @@ Field 'Azure.AI.FormRecognizer.Models.FieldValue:
 [!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart.cs?name=snippet_receipt_call)]
 
 > [!TIP]
-> Можно также проанализировать локальные изображения квитанций. Изучите информацию о методах класса [FormRecognizerClient](/dotnet/api/azure.ai.formrecognizer.formrecognizerclient?view=azure-dotnet), например о **StartRecognizeReceipts**. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/README.md) для сценариев, включающих использование локальных изображений.
+> Можно также проанализировать локальные изображения квитанций. Изучите информацию о методах класса [FormRecognizerClient](/dotnet/api/azure.ai.formrecognizer.formrecognizerclient), например о **StartRecognizeReceipts**. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/README.md) для сценариев, включающих использование локальных изображений.
 
 Возвращаемое значение представляет собой коллекцию объектов `RecognizedReceipt`: по одному для каждой страницы обработанного документа. В следующем блоке кода обрабатывается квитанция с указанным универсальным кодом ресурса (URI) и все ее основные поля с соответствующими значениями выводятся в консоль.
 
@@ -539,13 +543,12 @@ Total: '1203.39', with confidence '0.774'
 
 ## <a name="analyze-business-cards"></a>Анализ визитных карточек
 
-#### <a name="version-20"></a>[Версия 2.0](#tab/ga)
+#### <a name="v20"></a>[Версия 2.0](#tab/ga)
 
 > [!IMPORTANT]
 > Эта функция недоступна в выбранной версии API.
 
-#### <a name="version-21-preview"></a>[Предварительная версия 2.1](#tab/preview)
-
+#### <a name="v21-preview"></a>[Предварительная версия 2.1](#tab/preview)
 
 В этом разделе показано, как с помощью предварительно обученной модели анализировать визитные карточки на английском языке и извлекать из них содержимое стандартных полей. Дополнительные сведения об анализе визитных карточек см. в статье [Готовая модель для анализа визитных карточек с помощью Распознавателя форм](../../concept-business-cards.md).
 
@@ -554,7 +557,7 @@ Total: '1203.39', with confidence '0.774'
 [!code-csharp[](~/cognitive-services-quickstart-code/dotnet/FormRecognizer/FormRecognizerQuickstart-preview.cs?name=snippet_bc_call)]
 
 > [!TIP]
-> Можно также проанализировать локальные изображения квитанций. Изучите информацию о методах класса [FormRecognizerClient](/dotnet/api/azure.ai.formrecognizer.formrecognizerclient?view=azure-dotnet), например о **StartRecognizeBusinessCards**. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/README.md) для сценариев, включающих использование локальных изображений.
+> Можно также проанализировать локальные изображения квитанций. Изучите информацию о методах класса [FormRecognizerClient](/dotnet/api/azure.ai.formrecognizer.formrecognizerclient), например о **StartRecognizeBusinessCards**. Либо просмотрите пример кода на [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/README.md) для сценариев, включающих использование локальных изображений.
 
 Возвращаемое значение представляет собой коллекцию объектов `RecognizedForm`: по одному для каждой карточки в документе. В следующем блоке кода обрабатывается визитная карточка с указанным универсальным кодом ресурса (URI) и все ее основные поля с соответствующими значениями выводятся в консоль.
 

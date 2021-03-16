@@ -11,19 +11,19 @@ author: stevestein
 ms.author: sstein
 ms.reviewer: ''
 ms.date: 01/25/2019
-ms.openlocfilehash: d2d501206dcb1fc6b9bb545f9dcf4d5c61af994e
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.openlocfilehash: 216410d423a70037588a6fb596771a702a13c003
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92777883"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103472237"
 ---
 # <a name="load-data-from-csv-into-azure-sql-database-or-sql-managed-instance-flat-files"></a>Загрузка данных из CSV-файла в базу данных SQL Azure или Управляемый экземпляр SQL (неструктурированные файлы)
 [!INCLUDE[appliesto-sqldb-sqlmi](includes/appliesto-sqldb-sqlmi.md)]
 
 Вы можете использовать программу командной строки bcp для импорта данных из CSV-файла в базу данных SQL Azure или Azure SQL Управляемый экземпляр.
 
-## <a name="before-you-begin"></a>Перед началом
+## <a name="before-you-begin"></a>Подготовка к работе
 
 ### <a name="prerequisites"></a>Предварительные требования
 
@@ -33,7 +33,7 @@ ms.locfileid: "92777883"
 * установленная служебная программа командной строки bcp;
 * установленная служебная программа командной строки sqlcmd.
 
-Вы можете скачать служебные программы bcp и sqlcmd в [Центре загрузки Майкрософт][Microsoft Download Center].
+Программы bcp и sqlcmd можно загрузить из [документации по Microsoft sqlcmd] [ https://docs.microsoft.com/sql/tools/sqlcmd-utility?view=sql-server-ver15 ].
 
 ### <a name="data-in-ascii-or-utf-16-format"></a>Данные в формате ASCII или UTF-16
 

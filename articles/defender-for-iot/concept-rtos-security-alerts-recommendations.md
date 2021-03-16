@@ -1,6 +1,6 @@
 ---
-title: Модуль безопасности для Azure RTO встроенные & настраиваемые оповещения и рекомендации
-description: Сведения об оповещениях системы безопасности и рекомендуемом исправлении с помощью модуля безопасности Azure IoT — RTO.
+title: Защитник-IoT-Micro-Agent для Azure RTO встроенные & настраиваемые оповещения и рекомендации
+description: Сведения об оповещениях системы безопасности и рекомендуемом исправлении с помощью защитника Интернета вещей Azure — IoT-Micro-Agent-RTO.
 services: defender-for-iot
 ms.service: defender-for-iot
 documentationcenter: na
@@ -13,24 +13,24 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/07/2020
 ms.author: mlottner
-ms.openlocfilehash: cf4924f8a9b97487e64e12ab80df92f2b2a81de2
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: d6dfeb01e174d71c926e9fcf7f5f1ee078524cf9
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "90939518"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103494280"
 ---
-# <a name="security-module-for-azure-rtos-security-alerts-and-recommendations-preview"></a>Модуль безопасности для оповещений и рекомендаций системы безопасности Azure RTO (Предварительная версия)
+# <a name="defender-iot-micro-agent-for-azure-rtos-security-alerts-and-recommendations-preview"></a>Защитник-IoT-Micro-Agent для уведомлений системы безопасности Azure RTO и рекомендации (Предварительная версия)
 
-Модуль безопасности для Azure RTO постоянно анализирует решение Интернета вещей с помощью расширенной аналитики и анализа угроз, чтобы предупредить о потенциально вредоносных действиях и подозрительных изменениях в системе. Вы также можете создавать настраиваемые оповещения на основе знаний о ожидаемом поведении устройства и базовых показателях.
+Защитник-IoT-Micro-Agent для Azure RTO постоянно анализирует решение Интернета вещей с помощью расширенной аналитики и анализа угроз, чтобы предупредить о потенциально вредоносных действиях и подозрительных изменениях в системе. Вы также можете создавать настраиваемые оповещения на основе знаний о ожидаемом поведении устройства и базовых показателях.
 
-Модуль безопасности для оповещения Azure RTO выступает в качестве индикатора потенциальной компрометации и должен быть исследован и исправлен. Модуль безопасности для рекомендации Azure RTO определяет слабую защиту, которую необходимо исправить и обновить. 
+Оповещение защитника IoT-Micro-Agent для Azure RTO выступает в качестве индикатора потенциальной компрометации, и его следует исследовать и устранять. Рекомендация защитника IoT-Micro-Agent для Azure RTO определяет слабую защиту, которую необходимо исправить и обновить. 
 
 В этой статье вы найдете список встроенных предупреждений и рекомендаций, которые запускаются на основе диапазонов по умолчанию, и настраиваемые значения с учетом ожидаемого или базового поведения. 
 
-Дополнительные сведения о работе настройки оповещений в службе "защитник для Интернета вещей" см. в разделе [настраиваемые оповещения](concept-customizable-security-alerts.md). Конкретные предупреждения и рекомендации, доступные для настройки при использовании модуля безопасности для Azure RTO, подробно описаны в следующих таблицах. 
+Дополнительные сведения о работе настройки оповещений в службе "защитник для Интернета вещей" см. в разделе [настраиваемые оповещения](concept-customizable-security-alerts.md). Конкретные предупреждения и рекомендации, доступные для настройки при использовании защитник-IoT-Micro-Agent для Azure RTO, подробно описаны в следующих таблицах. 
 
-## <a name="security-module-for-azure-rtos-supported-security-alerts"></a>Модуль безопасности для оповещений системы безопасности, поддерживаемых Azure RTO
+## <a name="defender-iot-micro-agent-for-azure-rtos-supported-security-alerts"></a>Защитник-IoT-Micro-Agent для Azure RTO поддерживаемые оповещения системы безопасности
 
 ### <a name="device-related-security-alerts"></a>Оповещения системы безопасности, связанные с устройствами
 
@@ -53,7 +53,7 @@ ms.locfileid: "90939518"
 |Сертификат удален    | Обнаружено Удаление сертификата из центра Интернета вещей        |
 |Новый сертификат     |  Обнаружено Добавление нового сертификата в центр Интернета вещей       |
 
-## <a name="security-module-for-azure-rtos-supported-customizable-alerts"></a>Модуль безопасности для поддерживаемых настраиваемых оповещений Azure RTO
+## <a name="defender-iot-micro-agent-for-azure-rtos-supported-customizable-alerts"></a>Защитник-IoT-Micro-Agent для Azure RTO поддерживаемые настраиваемые оповещения
 
 ### <a name="device-related-customizable-alerts"></a>Настраиваемые оповещения, связанные с устройством
 
@@ -75,7 +75,7 @@ ms.locfileid: "90939518"
 |Обновления модулей двойника     |  Число обновлений модулей двойника за пределами допустимого диапазона       |
 |Несанкционированные операции    |  Число несанкционированных операций за пределами допустимого диапазона       |
 
-## <a name="security-module-for-azure-rtos-supported-recommendations"></a>Модуль безопасности для поддерживаемых рекомендаций Azure RTO
+## <a name="defender-iot-micro-agent-for-azure-rtos-supported-recommendations"></a>Поддерживаемые рекомендации защитника IoT-Micro-Agent для Azure RTO
 
 ### <a name="device-related-recommendations"></a>Рекомендации, связанные с устройствами
 
@@ -95,8 +95,8 @@ ms.locfileid: "90939518"
 
 Полный список всех оповещений и рекомендаций, связанных со службой IoT, см. в статье [оповещения системы безопасности](concept-security-alerts.md)IOT, [рекомендации](concept-recommendations.md)по безопасности IOT.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-- [Краткое руководство. модуль безопасности для Azure RTO](quickstart-azure-rtos-security-module.md)
-- [Настройка и Настройка модуля безопасности для Azure RTO](how-to-azure-rtos-security-module.md)
-- См. [модуль Security for Azure RTO API](azure-rtos-security-module-api.md)
+- [Краткое руководство. защитник-IoT-Micro-Agent для Azure RTO](quickstart-azure-rtos-security-module.md)
+- [Настройка и настройка защитника — IoT-Micro-Agent для Azure RTO](how-to-azure-rtos-security-module.md)
+- См. [сведения об API-интерфейсе защитника IOT-Micro-Agent для Azure RTO](azure-rtos-security-module-api.md) .

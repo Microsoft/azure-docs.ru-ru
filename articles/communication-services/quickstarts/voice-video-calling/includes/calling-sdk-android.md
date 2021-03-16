@@ -2,14 +2,14 @@
 author: mikben
 ms.service: azure-communication-services
 ms.topic: include
-ms.date: 9/1/2020
+ms.date: 03/10/2021
 ms.author: mikben
-ms.openlocfilehash: 3b2fb1c4e7a08619a0321e188b54bb581f97fd6d
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 3eadf556d467fb67be0b0fe3a83dfd4ed89e6463
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101661553"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103488146"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 

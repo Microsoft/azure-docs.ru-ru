@@ -7,14 +7,16 @@ ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: bf8b8554aa2ea1d6d06f58f726ca65f77499ec5f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: c748034145781f639da244b16e3df7053da3d5d2
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91440039"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103489971"
 ---
 # <a name="understand-extended-offline-capabilities-for-iot-edge-devices-modules-and-child-devices"></a>Сведения о расширенных возможностях автономной работы устройств, модулей и дочерних устройств IoT Edge
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Azure IoT Edge поддерживает расширенную автономную работу устройств IoT Edge и обеспечивает автономную работу для дочерних устройств не из IoT Edge. Пока у устройства IoT Edge есть возможность подключиться к Центру Интернета вещей, оно и его дочерние устройства могут продолжать работу с нестабильным подключением к Интернету или даже без него.
 
@@ -84,11 +86,11 @@ device_list=$(az iot hub query \
 
 # Add all IoT devices to IoT Edge (as child)
 az iot hub device-identity add-children \
-  --device-id $egde_device \
-  --child-list $device_list \
-  --hub-name replace-with-hub-name \
-  --resource-group replace-with-rg-name \
-  --subscription replace-with-sub-name
+  --device-id $egde_device \
+  --child-list $device_list \
+  --hub-name replace-with-hub-name \
+  --resource-group replace-with-rg-name \
+  --subscription replace-with-sub-name
 ```
 
 Можно изменить [запрос](../iot-hub/iot-hub-devguide-query-language.md), чтобы выбрать другое подмножество устройств. Выполнение команды может занять несколько секунд, если задан большой набор устройств.

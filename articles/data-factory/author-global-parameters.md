@@ -5,13 +5,13 @@ ms.service: data-factory
 ms.topic: conceptual
 author: dcstwh
 ms.author: weetok
-ms.date: 03/04/2021
-ms.openlocfilehash: 06d04eb8679b4484f330b69a8cffb263d353bdcd
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.date: 03/15/2021
+ms.openlocfilehash: 3110ce8cb97379fd4690903ec769cc1dfc7f1326
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102197912"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103492768"
 ---
 # <a name="global-parameters-in-azure-data-factory"></a>Глобальные параметры в фабрике данных Azure
 
@@ -49,7 +49,10 @@ ms.locfileid: "102197912"
 Для большинства вариантов использования рекомендуется включать глобальные параметры в шаблон ARM. Это будет интегрировано с решением, описанным в [документе CI/CD](continuous-integration-deployment.md). Глобальные параметры будут добавлены в качестве параметра шаблона ARM по умолчанию, так как они часто меняются из среды в среду. Включение глобальных параметров в шаблон ARM можно включить из центра **управления** .
 
 > [!NOTE]
-> **Включение в конфигурацию шаблона ARM** доступно только в "режиме Git". Сейчас она отключена в режиме "динамический режим" или "Фабрика данных".
+> **Включение в конфигурацию шаблона ARM** доступно только в "режиме Git". Сейчас она отключена в режиме "динамический режим" или "Фабрика данных". 
+
+> [!WARNING]
+>Нельзя использовать "-" в имени параметра. Вы получите код ошибки "{" Code ":" BadRequest "," сообщение ":" ErrorCode = Инвалидтемплате, ErrorMessage = выражение > "конвейер (). globalParameters. MyParam-dbtest-URL" является недопустимым:.....} ". Но в имени параметра можно использовать "_".
 
 ![Включить в шаблон ARM](media/author-global-parameters/include-arm-template.png)
 

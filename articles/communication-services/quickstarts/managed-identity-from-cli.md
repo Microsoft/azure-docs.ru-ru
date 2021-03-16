@@ -6,15 +6,15 @@ services: azure-communication-services
 author: jbeauregardb
 ms.service: azure-communication-services
 ms.topic: how-to
-ms.date: 02/25/2021
+ms.date: 03/10/2021
 ms.author: jbeauregardb
 ms.reviewer: mikben
-ms.openlocfilehash: d9e60b02f34c020cfa180f0348fcc8e70998d7f5
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: e708536395807fc74dc5bfd73836e050832cca39
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102486562"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103493345"
 ---
 # <a name="authorize-access-with-managed-identity-to-your-communication-resource-in-your-development-environment"></a>Авторизация доступа с помощью управляемого удостоверения к ресурсу связи в среде разработки
 

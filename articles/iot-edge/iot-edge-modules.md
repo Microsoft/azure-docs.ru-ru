@@ -9,14 +9,16 @@ ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 9feef9ec04bcc44bc09d55202b72ada4adc94cf5
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: a9b1ffb2dbcbd6e81856277f4b672cf876cc75f1
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89017062"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103492376"
 ---
 # <a name="understand-azure-iot-edge-modules"></a>Общие сведения о модулях Azure IoT Edge
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Azure IoT Edge позволяет развертывать бизнес-логику и управлять ею на границе в виде *модулей*. Модуль Azure IoT Edge представляет собой наименьшую единицу вычислительных ресурсов, которыми управляет IoT Edge. Эти модули могут содержать службы Azure (например, Azure Stream Analytics) или пользовательский код для конкретного решения. Чтобы понять, как разрабатываются, развертываются и обслуживаются модули, рассмотрим четыре концептуальных элемента модуля:
 

@@ -3,14 +3,15 @@ title: Apache Hadoop компонентов и версий — Azure HDInsight 
 description: Сведения о компонентах и версиях Apache Hadoop в Azure HDInsight 3,6.
 ms.service: hdinsight
 ms.topic: conceptual
-ms.custom: deshriva
+author: deshriva
+ms.author: deshriva
 ms.date: 02/08/2021
-ms.openlocfilehash: ee4ae5e0b92fb0627143f2d2f998747f7e956b6d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0180f94109d01443390da363d9e09c5ad0b26d18
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101746170"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103496122"
 ---
 # <a name="hdinsight-36-component-versions"></a>Версии компонентов HDInsight 3,6
 
@@ -27,7 +28,7 @@ ms.locfileid: "101746170"
 | HDInsight 3,6 Spark             | 2.2               | Прекращено 30 июня 2020 г.          |                             |
 | HDInsight 3,6 Spark             | 2.1               | Прекращено 30 июня 2020 г.          |                             |
 | HDInsight 3,6 Kafka             | 1,1               | 31 декабря 2020 г.                      | 30 июня 2021 г.               |
-| HDInsight 3,6 Kafka             | 1,0               | Прекращено 30 июня 2020 г.         |                             |
+| HDInsight 3,6 Kafka             | 1.0               | Прекращено 30 июня 2020 г.         |                             |
 | HDInsight 3,6 HBase             | 1,1               | 31 декабря 2020 г.                      | 30 июня 2021 г.               |
 | Интерактивный запрос HDInsight 3,6 | 2.1               | 31 декабря 2020 г.                      | 30 июня 2021 г.               |
 | HDInsight 3,6             | 1,1               | 31 декабря 2020 г.                      | 30 июня 2021 г.               |

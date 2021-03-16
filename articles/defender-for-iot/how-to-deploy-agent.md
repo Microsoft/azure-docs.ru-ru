@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/23/2019
 ms.author: mlottner
-ms.openlocfilehash: 89ecf26778433a3f075f76905183f3fe866cb5db
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: e35e3dd0bacc0b1e3a44d9338f612a70ca4b52bf
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102447271"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103496530"
 ---
 # <a name="select-and-deploy-a-security-agent-on-your-iot-device"></a>Выбор и развертывание агента безопасности на устройстве IoT
 
@@ -45,13 +45,13 @@ ms.locfileid: "102447271"
 | **Поддерживаемые платформы Windows** | Нет | Да |
 | **Предварительные требования для Windows** | --- | [WMI](/windows/desktop/wmisdk/) |
 | **Поддерживаемые платформы Linux?** | Да, x64 и x86 | Да, только x64 |
-| **Предварительные требования для Linux** | libunwind8, libcurl3, UUID — среда выполнения, аудит, аудиспд — подключаемые модули | libunwind8, libcurl3, UUID-Runtime, audited, аудиспд-plugins, sudo, netstat, iptables |
+| **Предварительные условия (и необходимые компоненты) для Linux** | libunwind8, libcurl3, UUID — среда выполнения, аудит, аудиспд — подключаемые модули | libunwind8, libcurl3, UUID-Runtime, audited, аудиспд-plugins, sudo, netstat, iptables |
 | **Место на диске** | 10,5 МБ | 90 МБ |
 | **Объем памяти (в среднем)** | 5,5 МБ | 33 МБ |
 | **[Проверка подлинности](concept-security-agent-authentication-methods.md) в центре Интернета вещей** | Да | Да |
 | **[Сбор](how-to-agent-configuration.md#supported-security-events) данных безопасности** | Да | Да |
 | **Агрегация событий** | Да | Да |
-| **Удаленная настройка через [модуль безопасности двойника](concept-security-module.md)** | Да | Да |
+| **Удаленная настройка с помощью [защитника IOT-Micro-Agent двойника](concept-security-module.md)** | Да | Да |
 
 ## <a name="security-agent-installation-guidelines"></a>Рекомендации по установке агента безопасности
 

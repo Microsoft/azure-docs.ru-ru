@@ -1,5 +1,5 @@
 ---
-title: Миграция веб-API на основе OWIN в b2clogin.com
+title: Миграция веб-API на основе OWIN в b2clogin.com или пользовательский домен
 titleSuffix: Azure AD B2C
 description: Узнайте, как включить поддержку маркеров, выдаваемых несколькими поставщиками маркеров, в веб-API .NET при переносе приложений в b2clogin.com.
 services: active-directory-b2c
@@ -8,26 +8,23 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 07/31/2019
+ms.date: 03/15/2021
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: c362ce256259606c85af0a7e13ccde1715bb012b
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: 860f167913211ee7c511e515937f29ba5bf954cf
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94953939"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103491575"
 ---
-# <a name="migrate-an-owin-based-web-api-to-b2clogincom"></a>Перенос веб-API на основе OWIN в b2clogin.com
+# <a name="migrate-an-owin-based-web-api-to-b2clogincom-or-a-custom-domain"></a>Перенос веб-API на основе OWIN в b2clogin.com или пользовательский домен
 
-В этой статье описывается способ включения поддержки нескольких издателей маркеров в веб-API, реализующих [открытый веб-интерфейс для .NET (OWIN)](http://owin.org/). Поддержка нескольких конечных точек маркеров полезна при переносе API Azure Active Directory B2C (Azure AD B2C) и их приложений из *Login.microsoftonline.com* в *b2clogin.com*.
+В этой статье описывается способ включения поддержки нескольких издателей маркеров в веб-API, реализующих [открытый веб-интерфейс для .NET (OWIN)](http://owin.org/). Поддержка нескольких конечных точек маркеров полезна при переносе API Azure Active Directory B2C (Azure AD B2C) и их приложений из одного домена в другой. Например, от *Login.microsoftonline.com* к *b2clogin.com* или к [пользовательскому домену](custom-domain.md).
 
-Добавив поддержку в API для приема маркеров, выдаваемых как в b2clogin.com, так и в login.microsoftonline.com, можно выполнить миграцию веб-приложений в промежуточном виде перед удалением поддержки маркеров, выпущенных login.microsoftonline.com, из API.
+Добавив поддержку в API для приема маркеров, выпущенных b2clogin.com, login.microsoftonline.com или настраиваемого домена, можно выполнить миграцию веб-приложений в промежуточном виде перед удалением поддержки маркеров, выпущенных login.microsoftonline.com, из API.
 
 В следующих разделах представлен пример включения нескольких издателей в веб-интерфейсе API, который использует компоненты по промежуточного слоя [Microsoft OWIN][katana] (Katana). Хотя примеры кода специфичны для по промежуточного слоя Microsoft OWIN, общий метод должен быть применим к другим библиотекам OWIN.
-
-> [!NOTE]
-> Эта статья предназначена для Azure AD B2C клиентов с развернутыми интерфейсами API и приложениями, которые ссылаются `login.microsoftonline.com` и которые хотят перейти на рекомендуемую `b2clogin.com` конечную точку. Если вы настраиваете новое приложение, используйте [b2clogin.com](b2clogin.md) в качестве направленного.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -73,7 +70,7 @@ https://your-b2c-tenant.b2clogin.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/v2.0/
 1. Запишите `issuer` значение
 1. Выполните шаги 4-6 для другого домена, например *Login.microsoftonline.com*
 
-## <a name="get-the-sample-code"></a>Получение кода примера
+## <a name="get-the-sample-code"></a>Получение примера кода
 
 Теперь, когда у вас есть оба URI конечной точки маркера, необходимо обновить код, чтобы указать, что обе конечные точки являются действительными поставщиками. Чтобы проанализировать пример, скачайте или клонировать пример приложения, а затем обновите пример для поддержки обеих конечных точек в качестве действительных поставщиков.
 
@@ -88,7 +85,7 @@ git clone https://github.com/Azure-Samples/active-directory-b2c-dotnet-webapp-an
 В этом разделе вы обновите код, чтобы указать, что обе конечные точки поставщика маркеров являются допустимыми.
 
 1. Открытие решения **B2C-WebAPI-DotNet. sln** в Visual Studio
-1. В проекте **TaskService** откройте файл * TaskService \\ App_Start \\ **Startup.auth.CS** _ в редакторе.
+1. В проекте **TaskService** откройте файл *TaskService \\ App_Start * * \\ Startup.auth.CS** * в редакторе.
 1. Добавьте следующую директиву `using` в начало файла.
 
     `using System.Collections.Generic;`
@@ -102,12 +99,13 @@ git clone https://github.com/Azure-Samples/active-directory-b2c-dotnet-webapp-an
         AuthenticationType = Startup.DefaultPolicy,
         ValidIssuers = new List<string> {
             "https://login.microsoftonline.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/v2.0/",
-            "https://{your-b2c-tenant}.b2clogin.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/v2.0/"
+            "https://{your-b2c-tenant}.b2clogin.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/v2.0/"//,
+            //"https://your-custom-domain/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/v2.0/"
         }
     };
     ```
 
-`TokenValidationParameters` предоставляется MSAL.NET и используется по промежуточного слоя OWIN в следующем разделе кода в _Startup. auth. cs *. Если указано несколько допустимых издателей, конвейер приложения OWIN учитывает, что обе конечные точки маркеров являются действительными поставщиками.
+`TokenValidationParameters` предоставляется MSAL.NET и используется по промежуточного слоя OWIN в следующем разделе кода в *Startup.auth.CS*. Если указано несколько допустимых издателей, конвейер приложения OWIN учитывает, что обе конечные точки маркеров являются действительными поставщиками.
 
 ```csharp
 app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions
@@ -143,7 +141,14 @@ app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions
 
 Когда строки конечной точки создаются во время выполнения веб-приложения, конечные точки на основе b2clogin.com используются при запросе токенов.
 
-## <a name="next-steps"></a>Следующие шаги
+При использовании пользовательского домена:
+
+```xml
+<!-- Custom domain -->
+<add key="ida:AadInstance" value="https://custom-domain/{0}/{1}" />
+```
+
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье представлен метод настройки веб-API, реализующий по промежуточного слоя Microsoft OWIN (Katana), для приема маркеров из нескольких конечных точек поставщика. Как вы могли заметить, в файлах *Web.Config* и в проектах TaskService и TaskWebApp есть несколько других строк, которые необходимо изменить, если требуется собрать и запустить эти проекты для собственного клиента. Вы можете соответствующим образом изменить проекты, если вы хотите увидеть их в действии, но полное пошаговое руководство выходит за рамки этой статьи.
 

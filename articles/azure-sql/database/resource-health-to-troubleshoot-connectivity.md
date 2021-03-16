@@ -11,12 +11,12 @@ author: aamalvea
 ms.author: aamalvea
 ms.reviewer: wiassaf, sstein
 ms.date: 02/26/2019
-ms.openlocfilehash: a51840daa2c8b19c323ad761ff6e6d1dcef15f75
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.openlocfilehash: 1a74a2f44ac9b03e39e9fea48a3428b82111a48c
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96497968"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103471996"
 ---
 # <a name="use-resource-health-to-troubleshoot-connectivity-for-azure-sql-database-and-azure-sql-managed-instance"></a>Использование Работоспособность ресурсов для устранения неполадок подключения к базе данных SQL Azure и Azure SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "96497968"
 
 ### <a name="downtime-reasons"></a>Причины простоя
 
-Когда база данных работает просто, выполняется анализ для определения причины. Если это возможно, причина простоя сообщается в разделе журнала работоспособности службы "Работоспособность ресурсов Azure". Причины простоя обычно публикуются через 30 минут после события.
+Когда база данных работает просто, выполняется анализ для определения причины. Если это возможно, причина простоя сообщается в разделе журнала работоспособности службы "Работоспособность ресурсов Azure". Причины простоя обычно публикуются в течение 45 минут после события.
 
 #### <a name="planned-maintenance"></a>Плановое техническое обслуживание
 

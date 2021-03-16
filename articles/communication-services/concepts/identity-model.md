@@ -6,15 +6,15 @@ author: tomaschladek
 manager: nmurav
 services: azure-communication-services
 ms.author: tchladek
-ms.date: 10/26/2020
+ms.date: 03/10/2021
 ms.topic: conceptual
 ms.service: azure-communication-services
-ms.openlocfilehash: 254d35331459e70ad56bcef43569f51ff6f50a93
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 5e53f9e89dd9718111da4f8016bc3e5a7f791627
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101656216"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103496581"
 ---
 # <a name="identity-model"></a>Модель удостоверений
 
