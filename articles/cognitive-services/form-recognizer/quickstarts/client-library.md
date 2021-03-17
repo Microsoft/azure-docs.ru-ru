@@ -3,22 +3,22 @@ title: Краткое руководство. Клиентская библио�
 titleSuffix: Azure Cognitive Services
 description: Узнайте, как с помощью клиентской библиотеки или REST API Распознавателя документов создать приложение для обработки форм, которое извлекает из пользовательских документов пары "ключ-значение" и табличные данные.
 services: cognitive-services
-author: PatrickFarley
+author: laujan
 manager: nitinme
 ms.service: cognitive-services
 ms.subservice: forms-recognizer
 ms.topic: quickstart
 ms.date: 01/29/2021
-ms.author: pafarley
+ms.author: lajanuar
 zone_pivot_groups: programming-languages-set-formre
 ms.custom: devx-track-js, devx-track-csharp, cog-serv-seo-aug-2020
 keywords: Обработка форм, автоматизированная обработка данных
-ms.openlocfilehash: d468f40d9de7fd7efb4ac7d8021a667e0c6c31f6
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: 43182892aa80f6226ffb5177d0be2e24d15ead5c
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99584614"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103467232"
 ---
 # <a name="quickstart-use-the-form-recognizer-client-library-or-rest-api"></a>Краткое руководство. Использование клиентской библиотеки или REST API Распознавателя документов
 

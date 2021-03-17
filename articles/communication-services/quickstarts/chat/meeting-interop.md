@@ -4,15 +4,15 @@ titleSuffix: An Azure Communication Services quickstart
 description: Из этого краткого руководства вы узнаете, как присоединиться к собранию в Teams с помощью клиентской библиотеки чата Служб коммуникации Azure.
 author: askaur
 ms.author: askaur
-ms.date: 12/08/2020
+ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: 8c4753b2041c2ab15fd586a8b1add6c4dd1a167b
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 75580931b2df33b02b9759b6faaa5bec548daaae
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102124029"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103496186"
 ---
 # <a name="quickstart-join-your-chat-app-to-a-teams-meeting"></a>Краткое руководство. Подключение приложения чата к собранию в Teams
 

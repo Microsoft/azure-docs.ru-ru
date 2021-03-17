@@ -5,15 +5,15 @@ author: boris-bazilevskiy
 manager: nmurav
 services: azure-communication-services
 ms.author: bobazile
-ms.date: 02/09/2021
+ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 06029590a2fbca66cd3a672af3f93d6a842ba0b2
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.openlocfilehash: d5e4920dcc422e848266f35c8a59175b5149b924
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "100651035"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103492750"
 ---
 # <a name="telephony-concepts"></a>Основные понятия телефонии
 

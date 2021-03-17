@@ -7,12 +7,12 @@ ms.author: andyriv
 ms.date: 2/16/2021
 ms.topic: tutorial
 ms.service: iot-hub-device-update
-ms.openlocfilehash: 1501153b73683081dfac0684d6714eb537c03380
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 0128d0de4f078b62bc9571c8758d80cb26585354
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101658865"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102615386"
 ---
 # <a name="microsoft-connected-cache-preview-deployment-scenario-sample-two-level-nested-azure-iot-edge-gateway-with-outbound-unauthenticated-proxy"></a>Пример сценария развертывания для Подключенного кэша Майкрософт (предварительная версия): шлюз Azure IoT Edge с двумя уровнями вложенности с исходящим непроверяемым прокси-сервером
 
@@ -70,7 +70,7 @@ ms.locfileid: "101658865"
 ## <a name="child-gateway-configuration"></a>Настройка дочернего шлюза
 
 >[!Note]
->Если в вашем собственном частном реестре есть реплицированные контейнеры, используемые в конфигурации, потребуется внести изменения в параметры config.toml и параметры среды выполнения в развертывании модуля. Дополнительные сведения см. в руководстве [Создание иерархии устройств IoT Edge — Azure IoT Edge](https://docs.microsoft.com/azure/iot-edge/tutorial-nested-iot-edge?view=iotedge-2020-11&tabs=azure-portal#deploy-modules-to-the-lower-layer-device&preserve-view=true).
+>Если в вашем собственном частном реестре есть реплицированные контейнеры, используемые в конфигурации, потребуется внести изменения в параметры config.toml и параметры среды выполнения в развертывании модуля. Дополнительные сведения см. в руководстве [Создание иерархии устройств IoT Edge — Azure IoT Edge](https://docs.microsoft.com/azure/iot-edge/tutorial-nested-iot-edge?view=iotedge-2020-11&tabs=azure-portal&preserve-view=true#deploy-modules-to-the-lower-layer-device).
 
 1. Измените путь к образу для агента Edge, как показано в этом примере:
 

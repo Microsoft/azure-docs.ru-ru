@@ -6,12 +6,12 @@ ms.author: flborn
 ms.date: 06/15/2020
 ms.topic: tutorial
 ms.custom: devx-track-csharp
-ms.openlocfilehash: ef2d0eb409cbef2fdd3579ae5e8b409e24bdda2f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 3370aac242fb47a133a5f7d6dc9b3444c65e3691
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101735970"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103573121"
 ---
 # <a name="tutorial-viewing-a-remotely-rendered-model"></a>Руководство по Просмотр модели удаленной отрисовки
 
@@ -606,7 +606,7 @@ public async void JoinRemoteSession()
     else
     {
         CurrentCoordinatorState = RemoteRenderingState.ConnectingToNewRemoteSession;
-        joinResult = await ARRSessionService.StartSession(new RenderingSessionCreationOptions(renderingSessionVmSize, maxLeaseHours, maxLeaseMinutes));
+        joinResult = await ARRSessionService.StartSession(new RenderingSessionCreationOptions(renderingSessionVmSize, (int)maxLeaseHours, (int)maxLeaseMinutes));
     }
 
     if (joinResult.Status == RenderingSessionStatus.Ready || joinResult.Status == RenderingSessionStatus.Starting)
@@ -744,7 +744,7 @@ private void LateUpdate()
     #endif
 
         //Load a model that will be parented to the entity
-        var loadModelParams = new LoadModelFromSasParams(modelPath, modelEntity);
+        var loadModelParams = new LoadModelFromSasOptions(modelPath, modelEntity);
         var loadModelAsync = ARRSessionService.CurrentActiveSession.Connection.LoadModelFromSasAsync(loadModelParams, progress);
         var result = await loadModelAsync;
         return modelEntity;

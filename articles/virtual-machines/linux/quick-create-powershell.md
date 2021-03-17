@@ -9,12 +9,12 @@ ms.workload: infrastructure
 ms.date: 07/31/2020
 ms.author: cynthn
 ms.custom: mvc
-ms.openlocfilehash: 5711e3f406af04d0dc3a233031379c9ef18244ba
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: 2cef611fe79ca04303840076b09b4cf6344b7e7d
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "102549657"
+ms.locfileid: "102616236"
 ---
 # <a name="quickstart-create-a-linux-virtual-machine-in-azure-with-powershell"></a>Краткое руководство. Создание виртуальной машины Linux в Azure с помощью PowerShell
 
@@ -34,7 +34,7 @@ Azure Cloud Shell — это бесплатная интерактивная о�
 
 
 ```azurepowershell-interactive
-ssh-keygen -m PEM -t rsa -b 4096
+ssh-keygen -t rsa -b 4096
 ```
 
 Вам будет предложено указать имя файла для пары ключей, или вы можете нажать клавишу **ВВОД**, чтобы использовать расположение `/home/<username>/.ssh/id_rsa` по умолчанию. При необходимости вы также сможете создать пароль для ключей.

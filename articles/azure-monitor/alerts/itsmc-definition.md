@@ -6,12 +6,12 @@ author: nolavime
 ms.author: v-jysur
 ms.date: 05/24/2018
 ms.custom: references_regions
-ms.openlocfilehash: 30be0343b7c3282e3ce4da165225ab8209d07f4a
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.openlocfilehash: 98f53ec1b6506a6d47146377e837576254f445e2
+ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102452413"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103601072"
 ---
 # <a name="connect-azure-to-itsm-tools-by-using-it-service-management-solution"></a>Подключение Azure к средствам ITSM с помощью решения для управления ИТ
 
@@ -90,7 +90,7 @@ ms.locfileid: "102452413"
 
 ## <a name="define-a-template"></a>Определение шаблона
 
-Некоторые типы рабочих элементов могут использовать шаблоны, определенные в средстве ITSM. С помощью шаблонов можно определить поля, которые будут автоматически заполняться в соответствии с фиксированными значениями для группы действий. Вы можете определить шаблон, который будет использоваться в составе определения группы действий.
+Некоторые типы рабочих элементов могут использовать шаблоны, определенные в средстве ITSM. С помощью шаблонов можно определить поля, которые будут автоматически заполняться в соответствии с фиксированными значениями для группы действий. Вы можете определить шаблон, который будет использоваться в составе определения группы действий. В документации ServiceNow содержатся сведения о создании шаблонов (здесь) [ https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/form-administration/task/t_CreateATemplateUsingTheTmplForm.html ].
 
 Чтобы создать группу действий, выполните следующие действия.
 
