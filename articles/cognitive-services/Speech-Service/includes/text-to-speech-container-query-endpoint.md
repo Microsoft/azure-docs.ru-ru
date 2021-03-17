@@ -8,20 +8,20 @@ ms.subservice: speech-service
 ms.topic: include
 ms.date: 08/31/2020
 ms.author: aahi
-ms.openlocfilehash: 7e5ea8dcddce31a414d983d14fba483eb388d5d5
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 9a29244745b154aa81997813fcf4e1457f599270
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91334687"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103621990"
 ---
 Контейнер предоставляет [интерфейсы API конечной точки на основе интерфейса RESTful](../rest-text-to-speech.md). Существует множество [примеров проектов исходного кода](https://github.com/Azure-Samples/Cognitive-Speech-TTS) для платформ, платформ и языковых вариантов.
 
-Используя стандартные или нейронные контейнеры преобразования текста в речь, вы должны полагаться на языковой стандарт и голоса скачанного тега образа. Например, если вы загрузили `latest` тег, язык по умолчанию — `en-US` и `AriaRUS` Voice. `{VOICE_NAME}`Затем аргумент будет иметь значение [`en-US-AriaRUS`](../language-support.md#standard-voices) . См. пример SSML ниже:
+Используя стандартные или нейронные контейнеры преобразования текста в речь, вы должны полагаться на языковой стандарт и голоса скачанного тега образа. Например, если вы загрузили `latest` тег, язык по умолчанию — `en-US` и `AriaNeural` Voice. `{VOICE_NAME}`Затем аргумент будет иметь значение [`en-US-AriaNeural`](../language-support.md#neural-voices) . См. пример SSML ниже:
 
 ```xml
 <speak version="1.0" xml:lang="en-US">
-    <voice name="en-US-AriaRUS">
+    <voice name="en-US-AriaNeural">
         This text will get converted into synthesized speech.
     </voice>
 </speak>

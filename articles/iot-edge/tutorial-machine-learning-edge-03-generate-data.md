@@ -8,14 +8,16 @@ ms.date: 1/20/2020
 ms.topic: tutorial
 ms.service: iot-edge
 services: iot-edge
-ms.openlocfilehash: eef5e60b06eedb1fb07c57aa2e369dd3830fcad5
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.openlocfilehash: d5fdd762834d351119116c5e4854dd4233671c29
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96932410"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103463135"
 ---
 # <a name="tutorial-generate-simulated-device-data"></a>Руководство по Создание данных имитированного устройства
+
+[!INCLUDE [iot-edge-version-201806](../../includes/iot-edge-version-201806.md)]
 
 В этой статье мы используем данные машинного обучения для имитации устройства, отправляющего данные телеметрии в Центр Интернета вещей Azure. Как уже указано во введении, в этом руководстве используется [набор данных для моделирования ухудшения состояния турбореактивного двигателя](https://c3.nasa.gov/dashlink/resources/139/), на основе которого имитируются данные от нескольких авиационных двигателей для обучения и тестирования.
 

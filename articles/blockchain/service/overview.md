@@ -1,15 +1,15 @@
 ---
 title: Общие сведения о службе "Блокчейн Azure"
 description: Общие сведения о службе "Блокчейн Azure".
-ms.date: 01/04/2021
+ms.date: 03/15/2021
 ms.topic: overview
-ms.reviewer: ravastra
-ms.openlocfilehash: 15d1126a98a4d3194a256ed07de3918cb066a4e2
-ms.sourcegitcommit: f6f928180504444470af713c32e7df667c17ac20
+ms.reviewer: patricka
+ms.openlocfilehash: 035e2c1df5912f291ad241ade25361f9cc098b22
+ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97963884"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103573631"
 ---
 # <a name="what-is-azure-blockchain-service"></a>Что собой представляет служба "Блокчейн Azure"?
 
@@ -19,7 +19,7 @@ ms.locfileid: "97963884"
 * Встроенные возможности управления консорциумом
 * разработка смарт-контрактов с помощью привычных средств разработки.
 
-Служба "Блокчейн Azure" предназначена для поддержки нескольких финансовых протоколов. В настоящее время она поддерживает реестр Ethereum [Quorum](https://www.goquorum.com/), используя механизм консенсуса [IBFT (Istanbul Byzantine Fault Tolerance)](https://github.com/jpmorganchase/quorum/wiki/Quorum-Consensus).
+Служба "Блокчейн Azure" предназначена для поддержки нескольких финансовых протоколов. В настоящее время она поддерживает реестр Ethereum [Quorum](https://www.goquorum.com/), используя механизм консенсуса [IBFT (Istanbul Byzantine Fault Tolerance)](https://docs.goquorum.consensys.net/en/stable/Concepts/Consensus/IBFT/).
 
 Эти возможности почти не требуют администрирования и предоставляются без дополнительной оплаты. Вы можете сосредоточиться на разработке приложений и бизнес-логики, не тратя время и ресурсы на управление виртуальными машинами и инфраструктурой. Кроме того, вы можете продолжить разработку приложения, используя инструменты и платформу с открытым кодом по вашему выбору, чтобы предоставлять решения, не изучая ничего нового.
 

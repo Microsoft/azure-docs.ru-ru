@@ -6,15 +6,15 @@ author: mikben
 manager: jken
 services: azure-communication-services
 ms.author: mikben
-ms.date: 10/15/2020
+ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: a1c803ed24542cbc4a2f0aaaee82ac0f57559cb9
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 5ed75a7f8c7915645778696282e179af3a4d4091
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100591859"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103493600"
 ---
 # <a name="communication-services-logs"></a>Журналы Служб коммуникации
 
