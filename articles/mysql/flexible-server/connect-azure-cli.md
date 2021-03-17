@@ -7,12 +7,12 @@ ms.service: mysql
 ms.custom: mvc
 ms.topic: quickstart
 ms.date: 03/01/2021
-ms.openlocfilehash: d2b899150f0f740349c991319c87ef3a50f839b0
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: b28c4457129985a1d5c47d251873eaa52a253f72
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102491353"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607974"
 ---
 # <a name="quickstart-connect-and-query-with-azure-cli--with-azure-database-for-mysql---flexible-server"></a>Краткое руководство. Подключение и выполнение запроса к гибкому серверу Базы данных Azure для MySQL с помощью Azure CLI
 
@@ -21,7 +21,7 @@ ms.locfileid: "102491353"
 
 В этом кратком руководстве объясняется, как подключиться к гибкому серверу Базы данных Azure для MySQL с помощью команды ```az mysql flexible-server connect``` Azure CLI. С помощью этой команды можно проверить подключение к серверу базы данных и выполнить запросы непосредственно к серверу.  Вы можете также запустить команду в интерактивном режиме, чтобы выполнить несколько запросов.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure. Если у вас ее нет, [получите бесплатную пробную версию](https://azure.microsoft.com/free/).
 - Установите последнюю версию [Azure CLI](/cli/azure/install-azure-cli) (2.20.0 или более позднюю).
@@ -36,7 +36,7 @@ ms.locfileid: "102491353"
 az mysql flexible-server create --public-access <your-ip-address>
 ```
 
-Чтобы настроить эту команду, вы можете указать дополнительные аргументы. Ознакомьтесь со всеми аргументами для команды [az mysql flexible-server create](/cli/azure/mysql/flexible-server?view=azure-cli-latest#az_mysql_flexible_server_create).
+Чтобы настроить эту команду, вы можете указать дополнительные аргументы. Ознакомьтесь со всеми аргументами для команды [az mysql flexible-server create](/cli/azure/mysql/flexible-server#az_mysql_flexible_server_create).
 
 ## <a name="create-a-database"></a>Создание базы данных
 Выполните следующую команду, чтобы создать базу данных **newdatabase**, если она еще не создана.
@@ -154,7 +154,7 @@ Your preference of  are now saved to local context. To learn more, type in `az l
 ```
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
 
 > [!div class="nextstepaction"]
 > [Управление сервером](./how-to-manage-server-cli.md)

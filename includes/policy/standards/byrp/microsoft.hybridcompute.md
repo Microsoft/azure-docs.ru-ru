@@ -2,15 +2,15 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 03/05/2021
+ms.date: 03/10/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: e0eaf5b4b0c8770fdeaaa73606f997d5708c41eb
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: 9bb88a0a1a3ade2e398621eccd9ca4de144a289f
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102441774"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102636580"
 ---
 ## <a name="azure-security-benchmark"></a>Тестирование безопасности Azure
 
@@ -145,10 +145,10 @@ ms.locfileid: "102441774"
 |Управление доступом |9.4.3 |Система управления паролями |[Аудит компьютеров Windows, которые не ограничивают минимальную длину пароля 14 символами](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fa2d0e922-65d0-40c4-8f87-ea6da2d307a2) |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Guest%20Configuration/GuestConfiguration_WindowsPasswordLength_AINE.json) |
 |Шифрование |10.1.1 |Политика использования элементов управления шифрованием |[Аудит компьютеров Windows, которые не хранят пароли с использованием обратимого шифрования](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fda0f98fe-a24b-4ad5-af69-bd0400233661) |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Guest%20Configuration/GuestConfiguration_WindowsPasswordEncryption_AINE.json) |
 
-## <a name="new-zealand-ism-restricted"></a>Руководство по мерам информационной безопасности для Новой Зеландии
+## <a name="new-zealand-ism-restricted"></a>ISM Restricted (Новая Зеландия)
 
-Дополнительные сведения о том, как доступные встроенные компоненты Политики Azure для всех служб Azure сопоставляются с этим стандартом соответствия, см. в статье [Обеспечение соответствия нормативным требованиям для Политики Azure — Руководство по мерам информационной безопасности для Новой Зеландии](../../../../articles/governance/policy/samples/new-zealand-ism.md).
-Дополнительные сведения об этом стандарте соответствия см. на странице с [Руководством по мерам информационной безопасности для Новой Зеландии](https://www.nzism.gcsb.govt.nz/).
+Дополнительные сведения о том, как доступные встроенные компоненты Политики Azure для всех служб Azure сопоставляются с этим стандартом соответствия, см. в статье [Обеспечение соответствия нормативным требованиям для Политики Azure — ISM Restricted (Новая Зеландия)](../../../../articles/governance/policy/samples/new-zealand-ism.md).
+Дополнительные сведения об этом стандарте соответствия см. на странице об [ISM Restricted (Новая Зеландия)](https://www.nzism.gcsb.govt.nz/).
 
 |Домен |Идентификатор элемента управления |Заголовок элемента управления |Политика<br /><sub>(портал Azure)</sub> |Версия политики<br /><sub>(GitHub)</sub>  |
 |---|---|---|---|---|

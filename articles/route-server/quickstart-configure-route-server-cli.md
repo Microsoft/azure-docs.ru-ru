@@ -7,12 +7,12 @@ ms.service: route-server
 ms.topic: quickstart
 ms.date: 03/02/2021
 ms.author: duau
-ms.openlocfilehash: 73dc54ca04ad6ddb275947663959164cc2e3c019
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: e9c583db7493afc04b2c66553801f62d364b0a80
+ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102547889"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103419614"
 ---
 # <a name="quickstart-create-and-configure-route-server-using-azure-cli"></a>Краткое руководство. Создание и настройка сервера маршрутизации с помощью Azure CLI 
 
@@ -71,7 +71,7 @@ az network vnet create -g "RouteServerRG" -n "myVirtualNetwork" --address-prefix
 1. Получите идентификатор RouteServerSubnet. Чтобы просмотреть идентификатор ресурса всех подсетей в виртуальной сети, выполните следующую команду: 
 
     ```azurecli-interactive 
-    subnet_id = $(az network vnet subnet show -n "RouteServerSubnet" --vnet-name "myVirtualNetwork" -g "RouteServerRG" --query id -o tsv) 
+    $subnet_id = $(az network vnet subnet show -n "RouteServerSubnet" --vnet-name "myVirtualNetwork" -g "RouteServerRG" --query id -o tsv) 
     ``` 
 
 Идентификатор RouteServerSubnet выглядит следующим образом: 
