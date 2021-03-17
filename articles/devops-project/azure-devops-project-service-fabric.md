@@ -8,12 +8,12 @@ ms.technology: devops-cicd
 ms.topic: tutorial
 ms.date: 03/24/2020
 author: mlearned
-ms.openlocfilehash: 723f46652643883dc8e718468a9ca9eead50e1aa
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 078331c35c76a3cda97398b1a487933a3f0f5ab8
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91856030"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102559313"
 ---
 # <a name="tutorial-deploy-your-aspnet-core-app-to-azure-service-fabric-by-using-azure-devops-starter"></a>Руководство по развертыванию приложения ASP.NET Core в Azure Service Fabric с помощью Azure DevOps Starter
 
@@ -158,4 +158,4 @@ DevOps Starter автоматически создает и настраивае
 Дополнительные сведения о Service Fabric и микрослужбах
 
 > [!div class="nextstepaction"]
-> [Define your multi-stage continuous deployment (CD) process](/azure/devops/pipelines/release/define-multistage-release-process?view=vsts)(Определение процесса многоэтапного непрерывного развертывания (CD))
+> [Define your multi-stage continuous deployment (CD) process](/azure/devops/pipelines/release/define-multistage-release-process)(Определение процесса многоэтапного непрерывного развертывания (CD))

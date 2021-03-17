@@ -6,15 +6,15 @@ author: mikben
 manager: jken
 services: azure-communication-services
 ms.author: mikben
-ms.date: 09/30/2020
+ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 0efe9cc3bad599d4ab621fef7308a807cc5e9967
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: cc8e0edd1109162f0b426be31eb875ba8465d091
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102485992"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103490778"
 ---
 # <a name="call-flow-basics"></a>Основы потока вызовов
 

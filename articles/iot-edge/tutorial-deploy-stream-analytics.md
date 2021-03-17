@@ -7,14 +7,16 @@ ms.date: 07/29/2020
 ms.topic: tutorial
 ms.service: iot-edge
 ms.custom: mvc
-ms.openlocfilehash: 61779527d4b855f4327ad4b77a1e22207a94b8c0
-ms.sourcegitcommit: 2e72661f4853cd42bb4f0b2ded4271b22dc10a52
+ms.openlocfilehash: 323973b7646acee07a0c4dbc59834e0aceca75ee
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92048378"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103462054"
 ---
 # <a name="tutorial-deploy-azure-stream-analytics-as-an-iot-edge-module"></a>Руководство по Развертывание Azure Stream Analytics в качестве модуля IoT Edge
+
+[!INCLUDE [iot-edge-version-all-supported](../../includes/iot-edge-version-all-supported.md)]
 
 Многие решения Интернета вещей используют службы аналитики, чтобы получать аналитические сведения о данных по мере того, как они попадают в облако с устройств Интернета вещей. С помощью Azure IoT Edge можно переместить логику [Azure Stream Analytics](../stream-analytics/index.yml) на само устройство. Обрабатывая потоки данных телеметрии в Edge, можно сократить объем отправленных данных и время, необходимое для реагирования на полезные аналитические сведения.
 

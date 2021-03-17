@@ -11,12 +11,12 @@ ms.custom:
 ms.author: timlt
 author: timlt
 ms.date: 11/12/2019
-ms.openlocfilehash: 112039b9227d5ff34e68b6dc6643597f335fbdb5
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.openlocfilehash: caa61170504c3ee4b7162cc06db4df16d1232395
+ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99832238"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103014372"
 ---
 # <a name="tutorial-create-an-in-store-analytics-application-in-azure-iot-central"></a>Руководство по Создание приложения аналитики в магазине в Azure IoT Central
 
@@ -228,8 +228,8 @@ ms.locfileid: "99832238"
 
 Выполните действия, описанные в следующих двух статьях, чтобы подключить настоящие шлюз Rigado и датчики RuuviTag. Закончив, вернитесь к этому руководству. Так как вы уже создали шаблоны устройств в рамках этого руководства, их не нужно создавать повторно в следующем наборе инструкций.
 
-- Сведения о подключении шлюза Rigado см. в статье [Подключение Rigado Cascade 500 к приложению Azure IoT Central](../core/howto-connect-rigado-cascade-500.md?toc=/azure/iot-central/retail/toc.json&bc=/azure/iot-central/retail/breadcrumb/toc.json).
-- Сведения о подключении датчиков RuuviTag см. в статье [Подключение RuuviTag к приложению Azure IoT Central](../core/howto-connect-ruuvi.md?toc=/azure/iot-central/retail/toc.json&bc=/azure/iot-central/retail/breadcrumb/toc.json). Эти инструкции также можно использовать для создания двух имитированных датчиков, если это необходимо.
+- Сведения о подключении шлюза Rigado см. в статье [Подключение Rigado Cascade 500 к приложению Azure IoT Central](../core/howto-connect-rigado-cascade-500.md).
+- Сведения о подключении датчиков RuuviTag см. в статье [Подключение RuuviTag к приложению Azure IoT Central](../core/howto-connect-ruuvi.md). Эти инструкции также можно использовать для создания двух имитированных датчиков, если это необходимо.
 
 ## <a name="add-rules-and-actions"></a>Добавление правил и действий
 В рамках использования датчиков в приложении Azure IoT Central для мониторинга условий можно создать правила для запуска действий при выполнении определенных условий. Правило связывается с шаблоном устройства и одним устройством или несколькими, а также содержит условия, которые должны быть выполнены на основе данных телеметрии или событий устройства. Правило также имеет одно связанное действие или несколько. Действия могут включать отправку уведомлений по электронной почте или активацию действия веб-перехватчика для отправки данных в другие службы. Шаблон приложения **Аналитика в магазине — оформление заказов** содержит ряд предопределенных правил для устройств в приложении.

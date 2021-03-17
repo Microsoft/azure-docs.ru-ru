@@ -6,16 +6,16 @@ author: ddematheu2
 manager: nimag
 services: azure-communication-services
 ms.author: dademath
-ms.date: 07/20/2020
+ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
 zone_pivot_groups: acs-web-ios
-ms.openlocfilehash: 81947371fa07fcd4afcb89eaf8efe8be998d0357
-ms.sourcegitcommit: 445ecb22233b75a829d0fcf1c9501ada2a4bdfa3
+ms.openlocfilehash: d117983b6098dd4856613a97bee7ac498f0fffef
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99475690"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103487950"
 ---
 # <a name="get-started-with-the-group-calling-hero-sample"></a>Начало работы с примером функции группового вызова
 
