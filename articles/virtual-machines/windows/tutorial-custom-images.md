@@ -2,19 +2,19 @@
 title: Учебник. Создание пользовательских образов виртуальных машин с помощью Azure PowerShell
 description: В этом руководстве описано, как с помощью Azure PowerShell создать пользовательский образ виртуальной машины Windows, который будет храниться в Общей коллекции образов Azure.
 author: cynthn
-ms.service: virtual-machines-windows
-ms.subservice: imaging
+ms.service: virtual-machines
+ms.subservice: shared-image-gallery
 ms.topic: tutorial
 ms.workload: infrastructure
 ms.date: 05/01/2020
 ms.author: cynthn
 ms.custom: mvc
-ms.openlocfilehash: 0e3521603c4651133f1420809e4921ad27279860
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: 145b7300272243099cfccad0c99d8f69e83e6762
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98873198"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102555828"
 ---
 # <a name="tutorial-create-windows-vm-images-with-azure-powershell"></a>Руководство по Создание образов виртуальных машин Windows с помощью Azure PowerShell
 
@@ -25,7 +25,7 @@ ms.locfileid: "98873198"
 > * Создание определения образа
 > * Создание версии образа
 > * Создание виртуальной машины из образа 
-> * Предоставление общего доступа к коллекции образов
+> * Предоставление общего доступа к коллекции образов.
 
 
 

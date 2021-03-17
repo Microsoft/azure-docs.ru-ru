@@ -9,12 +9,12 @@ ms.workload: identity
 ms.author: kenwith
 author: kenwith
 manager: daveba
-ms.openlocfilehash: ebd8839fd17f79bc53b5093af83d457bb23712d9
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.openlocfilehash: cd46bb1c6905747ffb98c7e950f66e648c541534
+ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102452056"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103601769"
 ---
 # <a name="azure-active-directory-application-management-whats-new"></a>Azure Active Directory Управление приложениями: новые возможности
 
@@ -33,7 +33,6 @@ ms.locfileid: "102452056"
 - [Предоставление приложению согласия администратора на уровне арендатора](grant-admin-consent.md)
 - [Перенос проверки подлинности приложения из службы федерации Active Directory (AD FS) в Azure Active Directory](migrate-adfs-apps-to-azure.md)
 - [Руководство по Добавление локального приложения для удаленного доступа через Application Proxy в Azure Active Directory](application-proxy-add-on-premises-application.md)
-- [Проблемы при входе в приложения, настроенные для единого входа на основе SAML](application-sign-in-problem-federated-sso-gallery.md)
 - [Использование ограничений клиентов для управления доступом к облачным приложениям SaaS](tenant-restrictions.md)
 
 ## <a name="january-2021"></a>Январь 2021 г.
@@ -84,7 +83,6 @@ ms.locfileid: "102452056"
 
 ### <a name="updated-articles"></a>Обновленные статьи
 - [Azure Active Directory Управление приложениями: новые возможности](whats-new-docs.md)
-- [Проблемы при входе в приложения, настроенные для единого входа на основе SAML](application-sign-in-problem-federated-sso-gallery.md)
 
 
 ## <a name="october-2020"></a>Октябрь 2020 г.
@@ -99,7 +97,6 @@ ms.locfileid: "102452056"
 
 ### <a name="updated-articles"></a>Обновленные статьи
 
-- [Проблемы при входе в приложения, настроенные для единого входа на основе SAML](application-sign-in-problem-federated-sso-gallery.md)
 - [Проблема при установке соединителя агента прокси приложения](application-proxy-connector-installation-problem.md)
 - [Перенос проверки подлинности приложения из службы федерации Active Directory (AD FS) в Azure Active Directory](migrate-adfs-apps-to-azure.md)
 - [Настройка согласия конечных пользователей для приложений](configure-user-consent.md)
@@ -110,7 +107,7 @@ ms.locfileid: "102452056"
 ### <a name="new-articles"></a>Новые статьи
 - [Краткое руководство. Настройка единого входа на основе OIDC для приложения в арендаторе Azure Active Directory (Azure AD)](add-application-portal-setup-oidc-sso.md)
 - [Краткое руководство. Назначение пользователей приложению, которое использует Azure AD в качестве поставщика удостоверений](add-application-portal-assign-users.md)
-- [Новые возможности в Документации Майкрософт](whats-new-docs.md)
+- [Новые возможности в документах](whats-new-docs.md)
 
 
 ### <a name="updated-articles"></a>Обновленные статьи

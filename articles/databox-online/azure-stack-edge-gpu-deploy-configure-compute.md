@@ -6,15 +6,15 @@ author: alkohli
 ms.service: databox
 ms.subservice: edge
 ms.topic: tutorial
-ms.date: 01/07/2021
+ms.date: 03/08/2021
 ms.author: alkohli
 Customer intent: As an IT admin, I need to understand how to configure compute on Azure Stack Edge Pro so I can use it to transform the data before sending it to Azure.
-ms.openlocfilehash: d8f4693fd6e1e443dd44aa745f338efd00282983
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: 750b7a8367d46434f48626268a0eb37c9edddfb1
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102438256"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102633547"
 ---
 # <a name="tutorial-configure-compute-on-azure-stack-edge-pro-gpu-device"></a>Руководство по Настройка вычислений на устройстве Azure Stack Edge Pro с GPU
 
@@ -52,7 +52,7 @@ ms.locfileid: "102438256"
 1. Перейдите на страницу **Устройства** в локальном пользовательском веб-интерфейсе устройства.
 2. В разделе **Device endpoints** (Конечные точки устройства) скопируйте конечную точку **службы API Kubernetes**. Эта конечная точка представляет собой строку в следующем формате: `https://compute.<device-name>.<DNS-domain>[Kubernetes-cluster-IP-address]`. 
 
-    ![Страница "Устройство" в локальном пользовательском интерфейсе](./media/azure-stack-edge-j-series-create-kubernetes-cluster/device-kubernetes-endpoint-1.png)
+    ![Страница "Устройство" в локальном пользовательском интерфейсе](./media/azure-stack-edge-gpu-create-kubernetes-cluster/device-kubernetes-endpoint-1.png)
 
 3. Сохраните строку конечной точки. Вы будете использовать ее позже при настройке клиента для доступа к кластеру Kubernetes через kubectl.
 

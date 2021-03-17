@@ -6,12 +6,12 @@ ms.date: 02/04/2021
 ms.service: media-services
 ms.author: faneerde
 author: fvneerden
-ms.openlocfilehash: 282ab76c34405f19e7f81b2a8069c178b17ee0c1
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 20a22d11973f5bb01e2c1345538d5d94ce311dc7
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102124420"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103465765"
 ---
 # <a name="tutorial-analyze-live-video-by-using-intel-openvino-dl-streamer--edge-ai-extension"></a>Учебник. Анализ прямой видеотрансляции с помощью модуля Edge DL Streamer в Intel OpenVINO™ (расширение ИИ для Edge). 
 
@@ -128,7 +128,7 @@ ms.locfileid: "102124420"
     Файл манифеста *deployment.openvino.grpc.cpu.amd64.json* создается в папке *src/edge/config*.
 
 > [!NOTE]
-Мы также добавили шаблон *deployment.openvino.grpc.gpu.template.json*, который предоставляет поддержку GPU для модуля DL Streamer в Intel OpenVINO (расширение ИИ для Edge). Эти шаблоны содержат ссылки на образ центра Docker компании Intel.
+> Мы также добавили шаблон *deployment.openvino.grpc.gpu.template.json*, который предоставляет поддержку GPU для модуля DL Streamer в Intel OpenVINO (расширение ИИ для Edge). Эти шаблоны содержат ссылки на образ центра Docker компании Intel.
 
 Упомянутые выше шаблоны содержат ссылки на образ центра Docker компании Intel. Если вы предпочитаете хранить копию шаблона в собственном Реестре контейнеров Azure, можно выполнить указанные ниже шаги 1 и 2:
 1. Подключитесь по протоколу SSH к устройству, на котором установлены средства CLI для Docker (например, к пограничному устройству), а затем извлеките контейнер, присвойте ему тег и отправьте его, как описано ниже:

@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: virtual-machines-windows
 ms.collection: windows
 ms.subservice: imaging
-ms.openlocfilehash: a2c4e3c1079d488b9255fb1b9660ff5c4b0aad8f
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.openlocfilehash: 01b253747791fc29abf4434bebfd85865099f9ee
+ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103422198"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103602024"
 ---
 # <a name="create-a-windows-virtual-desktop-image-using-azure-vm-image-builder-and-powershell"></a>Создание образа виртуального рабочего стола Windows с помощью построителя образов виртуальных машин Azure и PowerShell
 
@@ -39,14 +39,14 @@ ms.locfileid: "103422198"
 ## <a name="tips-for-building-windows-images"></a>Советы по созданию образов Windows 
 
 - Размер виртуальной машины. размер виртуальной машины по умолчанию — `Standard_D1_v2` , который не подходит для Windows. Используйте `Standard_D2_v2` или более.
-- В этом примере используются [скрипты настраиваемого PowerShell](../linux/image-builder-json.md). Необходимо использовать эти параметры, иначе сборка забудет зависнуть.
+- В этом примере используются [скрипты настраиваемого PowerShell](../linux/image-builder-json.md). Необходимо использовать эти параметры, иначе сборка перестанет отвечать на запросы.
 
     ```json
       "runElevated": true,
       "runAsSystem": true,
     ```
 
-    Пример:
+    Например:
 
     ```json
       {

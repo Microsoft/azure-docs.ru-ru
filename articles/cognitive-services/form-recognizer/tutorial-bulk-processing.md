@@ -2,19 +2,19 @@
 title: Руководство. Пакетное извлечение данных форм с помощью Фабрики данных Azure — Распознаватель документов
 titleSuffix: Azure Cognitive Services
 description: Настройте действия Фабрики данных Azure, чтобы активировать обучение и выполнение моделей Распознавателя документов, а также оцифровку большого пакета документов.
-author: PatrickFarley
+author: laujan
 manager: nitinme
 ms.service: cognitive-services
 ms.subservice: forms-recognizer
 ms.topic: tutorial
 ms.date: 01/04/2021
-ms.author: pafarley
-ms.openlocfilehash: 5b220652009f54482c757f01232517569596c562
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.author: lajanuar
+ms.openlocfilehash: 0c009a87a5834997cdc489efc75ebb16f9459754
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102423902"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103467108"
 ---
 # <a name="tutorial-extract-form-data-in-bulk-by-using-azure-data-factory"></a>Руководство. Пакетное извлечение данных форм с помощью Фабрики данных Azure
 
@@ -511,4 +511,4 @@ END
 
 С помощью этого руководства вы настроили конвейеры Фабрики данных Azure, чтобы активировать обучение и запуск моделей Распознавателя документов для оцифровки большого пакета файлов. Теперь изучите API "Распознаватель документов", чтобы узнать о других его возможностях.
 
-* [REST API "Распознаватель документов"](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-2/operations/AnalyzeBusinessCardAsync)
+* [REST API "Распознаватель документов"](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/AnalyzeBusinessCardAsync)

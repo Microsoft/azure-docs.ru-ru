@@ -1,23 +1,23 @@
 ---
 title: Руководство. Управление виртуальными машинами с помощью CLI
 description: Из этого руководства вы узнаете, как управлять виртуальными машинами Azure с применением Azure RBAC, политик, блокировок и тегов с помощью Azure CLI.
-services: virtual-machines-linux
+services: virtual-machines
 documentationcenter: virtual-machines
 author: tfitzmac
 manager: gwallace
-ms.service: virtual-machines-linux
+ms.service: virtual-machines
 ms.workload: infrastructure
 ms.tgt_pltfrm: vm-linux
 ms.topic: tutorial
 ms.date: 09/30/2019
 ms.author: tomfitz
 ms.custom: mvc, devx-track-azurecli
-ms.openlocfilehash: 695bf57e120889207151209702c16d456da79385
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: c724f41172ef675f94139cea0ed77fc0232b126b
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98736773"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102561795"
 ---
 # <a name="tutorial-learn-about-linux-virtual-machine-management-with-azure-cli"></a>Руководство по Управление виртуальными машинами Linux с помощью Azure CLI
 
