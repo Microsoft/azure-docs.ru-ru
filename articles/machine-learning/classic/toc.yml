@@ -140,6 +140,20 @@
         - name: Данные в Коллекции решений
           displayName: export
           href: ai-gallery-control-personal-data-dsr.md
+    - name: Миграция в Машинное обучение Azure
+      items:
+        - name: Общие сведения о переносе
+          href: migrate-overview.md
+        - name: Перенос наборов данных
+          href: migrate-register-dataset.md
+        - name: Перестроение экспериментов
+          href: migrate-rebuild-experiment.md
+        - name: Перестроение веб-служб
+          href: migrate-rebuild-web-service.md
+        - name: Перенос клиентских приложений
+          href: migrate-rebuild-integrate-with-client-app.md
+        - name: Перестроение модулей "Выполнить сценарий R"
+          href: migrate-execute-r-script.md
 - name: Справочник
   items:
     - name: Справочник по алгоритмам и модулям

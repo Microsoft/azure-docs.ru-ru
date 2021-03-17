@@ -10,12 +10,12 @@ ms.service: synapse-analytics
 ms.subservice: workspace
 ms.topic: tutorial
 ms.date: 12/31/2020
-ms.openlocfilehash: ad16b63360364acd88ab12fb4715d1fd3115c0fb
-ms.sourcegitcommit: f5b8410738bee1381407786fcb9d3d3ab838d813
+ms.openlocfilehash: 71ba3d99ceee89464dafdf5bf4c16e70df146bef
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98209378"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102426082"
 ---
 # <a name="analyze-data-in-a-storage-account"></a>Анализируйте данные в учетной записи хранения
 
@@ -45,7 +45,7 @@ df.write.mode("overwrite").parquet("/NYCTaxi/PassengerCountStats_parquetformat")
 Вы можете проанализировать данные в стандартной учетной записи ADLS 2-го поколения для рабочей области или связать учетную запись ADLS 2-го поколения или хранилища BLOB-объектов с рабочей областью, выбрав **Управление** > **Связанные службы** > **Создать** (приведенные ниже действия относятся к основной учетной записи ADLS 2-го поколения).
 
 1. В Synapse Studio перейдите в центр **Данные**, а затем выберите команду **Связанный**.
-1. Перейдите в раздел **Учетные записи хранения** > **myworkspace (Primary — contosolake)** .
+1. Выберите **Azure Data Lake Storage 2-го поколения** > **myworkspace (основная — contosolake)** .
 1. Выберите **Пользователи (Основной)** . Вы увидите папку **NYCTaxi**. Внутри вы увидите две папки: **PassengerCountStats_csvformat** и **PassengerCountStats_parquetformat**.
 1. Откройте папку **PassengerCountStats_parquetformat**. Внутри вы увидите PARQUET-файл следующего вида `part-00000-2638e00c-0790-496b-a523-578da9a15019-c000.snappy.parquet`.
 1. Щелкните правой кнопкой мыши файл **Parquet**, а затем последовательно выберите элементы **Новая записная книжка** и **Load to DataFrame** (Загрузить в DataFrame). Будет создана записная книжка с примерно такой ячейкой:

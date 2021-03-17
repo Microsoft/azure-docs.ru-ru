@@ -4,12 +4,12 @@ ms.service: azure-functions
 ms.topic: include
 ms.date: 03/05/2019
 ms.author: cshoe
-ms.openlocfilehash: 0cd514c852e13b83a679821ca2d940e4ed112bd8
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.openlocfilehash: 145db7693db126d4e114e8c8a885ea7fd7809e69
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95554818"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102608921"
 ---
 Используйте триггер функции для ответа на событие, отправленное в поток событий концентратора событий. Чтобы настроить триггер, необходимо иметь доступ на чтение к базовому концентратору событий. При активации функции в строковом виде вводится сообщение, передаваемое в функцию.
 
@@ -360,15 +360,65 @@ public static void Run([EventHubTrigger("samples-workitems", Connection = "Event
 |**eventHubName** |**EventHubName** | Функции 2.x и более поздних версий. Имя концентратора событий. Если имя концентратора событий указано также в строке подключения, такое значение переопределяет это свойство во время выполнения. Ссылаться на него можно с помощью [параметров приложения](../articles/azure-functions/functions-bindings-expressions-patterns.md#binding-expressions---app-settings) `%eventHubName%`. |
 |**consumerGroup** |**ConsumerGroup** | Необязательное свойство, которое используется для задания [группы потребителей](../articles/event-hubs/event-hubs-features.md#event-consumers), используемой для подписки на события в концентраторе. Если аргумент опущен, используется группа потребителей `$Default`. |
 |**кратность** | Н/Д | Используется для всех языков, кроме C#. Задайте значение `many`, чтобы включить пакетную обработку.  Если этот параметр отсутствует или имеет значение `one`, функции передается одно сообщение.<br><br>В C# это свойство автоматически присваивается всякий раз, когда тип триггера является массивом.|
-|**connection**; |**Соединение** | Имя параметра приложения, содержащего строку подключения к пространству имен концентратора событий. Скопируйте эту строку подключения, нажав кнопку **Сведения о подключении** для [пространства имен](../articles/event-hubs/event-hubs-create.md#create-an-event-hubs-namespace), а не сам концентратор событий. Для активации триггера эта строка подключения должна обладать, по крайней мере, правами на чтение.|
+|**connection**; |**Соединение** | Имя параметра приложения, содержащего строку подключения к пространству имен концентратора событий. Скопируйте эту строку подключения, нажав кнопку **Сведения о подключении** для [пространства имен](../articles/event-hubs/event-hubs-create.md#create-an-event-hubs-namespace), а не сам концентратор событий. Для активации триггера эта строка подключения должна обладать, по крайней мере, правами на чтение.<br><br>Если вы используете [расширение версии 5. x или более поздней](../articles/azure-functions/functions-bindings-event-hubs.md#event-hubs-extension-5x-and-higher), а не строку подключения, можно указать ссылку на раздел конфигурации, который определяет подключение. См. раздел [Подключения](../articles/azure-functions/functions-reference.md#connections).|
 
 [!INCLUDE [app settings to local.settings.json](../articles/azure-functions/../../includes/functions-app-settings-local.md)]
+
+## <a name="usage"></a>Использование
+
+# <a name="c"></a>[C#](#tab/csharp)
+
+### <a name="default"></a>По умолчанию
+
+Для Центра событий, запускающего триггер, можно использовать параметры следующих типов:
+
+* `string`
+* `byte[]`
+* `POCO`
+* `EventData` — свойства EventData по умолчанию предоставляются для [пространства имен Microsoft.Azure.EventHubs](https://docs.microsoft.com/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet).
+
+### <a name="additional-types"></a>Дополнительные типы 
+Приложения, использующие расширение Центра событий 5.0.0 или более поздней версии, используют тип `EventData` в пространстве имен [Azure.Messaging.EventHubs](https://docs.microsoft.com/dotnet/api/azure.messaging.eventhubs.eventdata?view=azure-dotnet), а не [Microsoft.Azure.EventHubs](https://docs.microsoft.com/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet). В этой версии прекращена поддержка устаревшего типа `Body`. Вместо него теперь поддерживаются следующие типы:
+
+- [EventBody](https://docs.microsoft.com/dotnet/api/azure.messaging.eventhubs.eventdata.eventbody?view=azure-dotnet);
+
+# <a name="c-script"></a>[Скрипт C#](#tab/csharp-script)
+
+### <a name="default"></a>По умолчанию
+
+Для Центра событий, запускающего триггер, можно использовать параметры следующих типов:
+
+* `string`
+* `byte[]`
+* `POCO`
+* `EventData` — свойства EventData по умолчанию предоставляются для [пространства имен Microsoft.Azure.EventHubs](https://docs.microsoft.com/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet).
+
+### <a name="additional-types"></a>Дополнительные типы 
+Приложения, использующие расширение Центра событий 5.0.0 или более поздней версии, используют тип `EventData` в пространстве имен [Azure.Messaging.EventHubs](https://docs.microsoft.com/dotnet/api/azure.messaging.eventhubs.eventdata?view=azure-dotnet), а не [Microsoft.Azure.EventHubs](https://docs.microsoft.com/dotnet/api/microsoft.azure.eventhubs.eventdata?view=azure-dotnet). В этой версии прекращена поддержка устаревшего типа `Body`. Вместо него теперь поддерживаются следующие типы:
+
+- [EventBody](https://docs.microsoft.com/dotnet/api/azure.messaging.eventhubs.eventdata.eventbody?view=azure-dotnet);
+
+# <a name="java"></a>[Java](#tab/java)
+
+Дополнительные сведения см. в [примере триггера](#example) на Java.
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+
+Дополнительные сведения см. в [примере триггера](#example) на JavaScript.
+
+# <a name="python"></a>[Python](#tab/python)
+
+Дополнительные сведения см. в [примере триггера](#example) на Python.
+
+
+---
+
 
 ## <a name="event-metadata"></a>Метаданные события
 
 Триггер Центров событий предоставляет несколько [свойств метаданных](../articles/azure-functions/./functions-bindings-expressions-patterns.md). Свойства метаданных можно использовать как часть выражений привязки в других привязках или как параметры в коде. Эти свойства передаются из класса [EventData](/dotnet/api/microsoft.servicebus.messaging.eventdata).
 
-|Свойство|Тип|Описание|
+|Свойство|Type|Описание|
 |--------|----|-----------|
 |`PartitionContext`|[PartitionContext](/dotnet/api/microsoft.servicebus.messaging.partitioncontext)|Экземпляр класса `PartitionContext`.|
 |`EnqueuedTimeUtc`|`DateTime`|Время попадания в очередь в формате UTC.|
@@ -379,10 +429,3 @@ public static void Run([EventHubTrigger("samples-workitems", Connection = "Event
 |`SystemProperties`|`IDictionary<String,Object>`|Свойства системы, включая данные события.|
 
 См. [примеры кода](#example), в которых используются эти свойства, в предыдущих разделах этой статьи.
-
-## <a name="hostjson-properties"></a>Свойства host.json
-<a name="host-json"></a>
-
-В файле [host.json](../articles/azure-functions/functions-host-json.md#eventhub) содержатся параметры, управляющие реакцией триггера Центров событий на событие. Конфигурация будет разной в зависимости от версии Функций Azure.
-
-[!INCLUDE [functions-host-json-event-hubs](../articles/azure-functions/../../includes/functions-host-json-event-hubs.md)]

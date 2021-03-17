@@ -10,12 +10,12 @@ ms.service: synapse-analytics
 ms.subservice: sql
 ms.topic: tutorial
 ms.date: 12/31/2020
-ms.openlocfilehash: 683da659dcfa07c0a105382f4cc93d1f4dfb21b5
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.openlocfilehash: 54b650d598cf19e061465b3a4fa18d50808e7f29
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98219543"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102426167"
 ---
 # <a name="analyze-data-with-dedicated-sql-pools"></a>Анализ данных с помощью выделенных пулов SQL
 
@@ -77,11 +77,12 @@ Azure Synapse Analytics позволяет анализировать данны
 ## <a name="explore-the-nyc-taxi-data-in-the-dedicated-sql-pool"></a>Обзор данных о такси Нью-Йорка в выделенном пуле SQL
 
 1. В Synapse Studio перейдите в центр **Данные**.
+1. Должна отобразиться база данных с именем **SQLPOOL1**. Если команда не отображается, нажмите кнопку **Обновить**.
 1. Выберите **SQLPOOL1** > **Таблицы**. 
-1. Щелкните правой кнопкой мыши таблицу **dbo.Trip** и выберите команду **Создать скрипт SQL** > **Выбрать первые 100 строк**.
-1. Подождите, пока новый скрипт SQL будет создан и запущен.
-1. Обратите внимание, что в верхней части скрипта SQL для параметра **Connect to** (Подключиться к) автоматически задано значение пула SQL с именем **SQLPOOL1**.
-1. Замените текст скрипта SQL этим кодом и запустите его.
+3. Щелкните правой кнопкой мыши таблицу **dbo.Trip** и выберите команду **Создать скрипт SQL** > **Выбрать первые 100 строк**.
+4. Подождите, пока новый скрипт SQL будет создан и запущен.
+5. Обратите внимание, что в верхней части скрипта SQL для параметра **Connect to** (Подключиться к) автоматически задано значение пула SQL с именем **SQLPOOL1**.
+6. Замените текст скрипта SQL этим кодом и запустите его.
 
     ```sql
     SELECT PassengerCount,

@@ -4,12 +4,12 @@ description: Узнайте, как создать функцию JavaScript в 
 ms.date: 11/03/2020
 ms.topic: quickstart
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 3b14b7d9f97be12a73ffcb2416a00cd4a51bca5f
-ms.sourcegitcommit: 2aa52d30e7b733616d6d92633436e499fbe8b069
+ms.openlocfilehash: c9810b1eb9e5f6bc65843d65f2f2452eac1be703
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97937252"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102447322"
 ---
 # <a name="quickstart-create-a-javascript-function-in-azure-from-the-command-line"></a>Краткое руководство. Создание функции JavaScript в Azure из командной строки
 
@@ -96,7 +96,7 @@ ms.locfileid: "97937252"
 
 :::code language="javascript" source="~/functions-quickstart-templates/Functions.Templates/Templates/HttpTrigger-JavaScript/index.js":::
 
-Для триггера HTTP функция получает данные запроса в переменной `req`, как определено в файле *function.json*. Ответом является объект, определенный как `$return` в файле *function.json*. Дополнительные сведения см. в статье [Триггеры и привязки HTTP в службе "Функции Azure"](./functions-bindings-http-webhook.md?tabs=javascript).
+Для триггера HTTP функция получает данные запроса в переменной `req`, как определено в файле *function.json*. Ответ определяется так же, как `res` в *function.json*. Доступ к нему можно получить с помощью `context.res`. Дополнительные сведения см. в статье [Триггеры и привязки HTTP в службе "Функции Azure"](./functions-bindings-http-webhook.md?tabs=javascript).
 
 #### <a name="functionjson"></a>function.json
 

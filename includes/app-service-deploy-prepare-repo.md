@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 06/12/2019
 ms.author: cephalin
 ms.custom: include file
-ms.openlocfilehash: aed23bf5008f850b19a1e5a8c7b0ff21f329eb3a
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.openlocfilehash: 93bfb515c46413400ecd47105de378c7b677cecd
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100560486"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102564970"
 ---
 ## <a name="prepare-your-repository"></a>Подготовка репозитория
 
@@ -34,6 +34,6 @@ ms.locfileid: "100560486"
 Чтобы настроить развертывание, добавьте в корень репозитория *DEPLOYMENT*-файл. См. сведения о [настройке развертываний](https://github.com/projectkudu/kudu/wiki/Customizing-deployments) и [настраиваемом скрипте развертывания](https://github.com/projectkudu/kudu/wiki/Custom-Deployment-Script).
 
 > [!NOTE]
-> Если для разработки используется Visual Studio, позвольте [Visual Studio автоматически создать репозиторий](/azure/devops/repos/git/creatingrepo?view=vsts&tabs=visual-studio&preserve-view=true). Проект немедленно будет готов к развертыванию с помощью Git.
+> Если для разработки используется Visual Studio, позвольте [Visual Studio автоматически создать репозиторий](/azure/devops/repos/git/creatingrepo?tabs=visual-studio). Проект немедленно будет готов к развертыванию с помощью Git.
 >
 

@@ -2,17 +2,17 @@
 author: DCtheGeek
 ms.service: azure-policy
 ms.topic: include
-ms.date: 02/09/2021
+ms.date: 03/05/2021
 ms.author: dacoulte
 ms.custom: generated
-ms.openlocfilehash: bc8270bde06a337cc183d0f26cbee2de5d393876
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: db0034467646e4b6476db278dbcae7e88e59970b
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100096130"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102442488"
 ---
-## <a name="azure-security-benchmark"></a>Azure Security Benchmark
+## <a name="azure-security-benchmark"></a>Тестирование безопасности Azure
 
 [Azure Security Benchmark](../../../../articles/security/benchmarks/overview.md) содержит рекомендации по обеспечению безопасности облачных решений в Azure. Сведения о том, как эта служба полностью сопоставляется с Azure Security Benchmark, см. [на этой странице](https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Offer%20Security%20Baselines).
 
@@ -70,7 +70,7 @@ ms.locfileid: "100096130"
 |Восстановление данных |9.1 |Обеспечение регулярного автоматического резервного копирования |[Базы данных SQL Azure должны использовать долгосрочное геоизбыточное резервное копирование](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fd38fc420-0735-4ef3-ac11-c806f651a570) |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/GeoRedundant_SQLDatabase_AuditIfNotExists.json) |
 |Восстановление данных |9.2 |Выполнение полного резервного копирования системы и любых ключей, управляемых клиентом |[Базы данных SQL Azure должны использовать долгосрочное геоизбыточное резервное копирование](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fd38fc420-0735-4ef3-ac11-c806f651a570) |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/GeoRedundant_SQLDatabase_AuditIfNotExists.json) |
 
-## <a name="cis-microsoft-azure-foundations-benchmark"></a>Тест производительности CIS для платформ Microsoft Azure
+## <a name="cis-microsoft-azure-foundations-benchmark-110"></a>Тесты для оценки безопасности CIS для платформ Microsoft Azure 1.1.0
 
 Дополнительную информацию о том, как доступные встроенные компоненты Политики Azure для всех служб Azure сопоставляются с этим стандартом соответствия, см. в статье [Подробные сведения о встроенной инициативе о соответствии нормативным требованиям теста производительности CIS для платформ Microsoft Azure](../../../../articles/governance/policy/samples/cis-azure-1-1-0.md).
 Дополнительные сведения об этом стандарте соответствия требованиям см. в статье [Тест производительности CIS для платформ Microsoft Azure](https://www.cisecurity.org/benchmark/azure/).
@@ -88,6 +88,25 @@ ms.locfileid: "100096130"
 |Службы баз данных |4.9 |Обеспечение того, что для параметра "Шифрование данных" в Базе данных SQL установлено значение "Вкл." |[В базах данных SQL должно применяться прозрачное шифрование данных](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F17k78e20-9358-41c9-923c-fb736d382a12) |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlDBEncryption_Audit.json) |
 |Службы баз данных |4.10 |Обеспечение того, что предохранитель TDE сервера SQL зашифрован с помощью BYOK (используйте собственный ключ) |[Управляемые экземпляры SQL должны использовать ключи, управляемые клиентом, для шифрования неактивных данных](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F048248b0-55cd-46da-b1ff-39efd52db260) |[1.0.2](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlManagedInstance_EnsureServerTDEisEncryptedWithYourOwnKey_Audit.json) |
 |Службы баз данных |4.10 |Обеспечение того, что предохранитель TDE сервера SQL зашифрован с помощью BYOK (используйте собственный ключ) |[Серверы SQL должны использовать управляемые клиентом ключи для шифрования неактивных данных](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F0d134df8-db83-46fb-ad72-fe0c9428c8dd) |[2.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServer_EnsureServerTDEisEncryptedWithYourOwnKey_Audit.json) |
+
+## <a name="cis-microsoft-azure-foundations-benchmark-130"></a>CIS Microsoft Azure Foundations Benchmark 1.3.0
+
+Дополнительные сведения о том, как доступные встроенные компоненты Политики Azure для всех служб Azure сопоставляются с этим стандартом соответствия, см. в статье [Обеспечение соответствия нормативным требованиям для Политики Azure — CIS Microsoft Azure Foundations Benchmark 1.3.0](../../../../articles/governance/policy/samples/cis-azure-1-3-0.md).
+Дополнительные сведения об этом стандарте соответствия требованиям см. в статье [Тест производительности CIS для платформ Microsoft Azure](https://www.cisecurity.org/benchmark/azure/).
+
+|Домен |Идентификатор элемента управления |Заголовок элемента управления |Политика<br /><sub>(портал Azure)</sub> |Версия политики<br /><sub>(GitHub)</sub>  |
+|---|---|---|---|---|
+|Службы баз данных |4.1.1 |Обеспечение того, что для параметра "Аудит" задано значение "Вкл." |[Необходимо включить аудит на сервере SQL](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fa6fb4358-5bf4-4ad7-ba82-2cd2f41ce5e9) |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServerAuditing_Audit.json) |
+|Службы баз данных |4.1.2 |Обеспечение того, что для параметра "Шифрование данных" в Базе данных SQL установлено значение "Вкл." |[В базах данных SQL должно применяться прозрачное шифрование данных](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F17k78e20-9358-41c9-923c-fb736d382a12) |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlDBEncryption_Audit.json) |
+|Службы баз данных |4.1.3 |Обеспечение того, что задан период хранения данных аудита более 90 дней |[Для серверов SQL должен быть настроен срок хранения данных аудита не менее 90 дней](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F89099bee-89e0-4b26-a5f4-165451757743) |[2.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServerAuditingRetentionDays_Audit.json) |
+|Службы баз данных |4.2.1 |Обеспечение того, что для службы "Расширенная защита от угроз" на SQL сервере установлено значение "Включено" |[В Управляемом экземпляре SQL должна быть включена Расширенная защита данных](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fabfb7388-5bf4-4ad7-ba99-2cd2f41cebb9) |[1.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlManagedInstance_AdvancedDataSecurity_Audit.json) |
+|Службы баз данных |4.2.1 |Обеспечение того, что для службы "Расширенная защита от угроз" на SQL сервере установлено значение "Включено" |[На серверах SQL должна быть включена Расширенная защита данных](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fabfb4388-5bf4-4ad7-ba82-2cd2f41ceae9) |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServer_AdvancedDataSecurity_Audit.json) |
+|Службы баз данных |4.2.2 |Обеспечение того, что оценка уязвимостей включена на сервере SQL путем задания учетной записи хранения |[В Управляемых экземплярах SQL должна быть включена оценка уязвимостей](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1b7aa243-30e4-4c9e-bca8-d0d3022b634a) |[1.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/VulnerabilityAssessmentOnManagedInstance_Audit.json) |
+|Службы баз данных |4.2.2 |Обеспечение того, что оценка уязвимостей включена на сервере SQL путем задания учетной записи хранения |[На серверах SQL Server должна быть включена оценка уязвимости](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fef2a8f2a-b3d9-49cd-a8a8-9a3aaaf647d9) |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/VulnerabilityAssessmentOnServer_Audit.json) |
+|Службы баз данных |4.2.4 |Обеспечение того, что параметр оценки уязвимости "Куда отправлять отчеты о проверке" настроен для сервера SQL |[Параметры оценки уязвимостей для сервера SQL должны включать адрес электронной почты для получения отчетов о проверке](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F057d6cfe-9c4f-4a6d-bc60-14420ea1f1a9) |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServer_VulnerabilityAssessmentEmails_Audit.json) |
+|Службы баз данных |4.4. |Обеспечение того, что администратор Azure Active Directory настроен |[Для серверов SQL должен быть подготовлен администратор Azure Active Directory](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1f314764-cb73-4fc9-b863-8eca98ac36e9) |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SQL_DB_AuditServerADAdmins_Audit.json) |
+|Службы баз данных |4.5. |Обеспечение того, что предохранитель TDE сервера SQL зашифрован с помощью ключа, управляемого клиентом |[Управляемые экземпляры SQL должны использовать ключи, управляемые клиентом, для шифрования неактивных данных](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F048248b0-55cd-46da-b1ff-39efd52db260) |[1.0.2](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlManagedInstance_EnsureServerTDEisEncryptedWithYourOwnKey_Audit.json) |
+|Службы баз данных |4.5. |Обеспечение того, что предохранитель TDE сервера SQL зашифрован с помощью ключа, управляемого клиентом |[Серверы SQL должны использовать управляемые клиентом ключи для шифрования неактивных данных](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F0d134df8-db83-46fb-ad72-fe0c9428c8dd) |[2.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServer_EnsureServerTDEisEncryptedWithYourOwnKey_Audit.json) |
 
 ## <a name="cmmc-level-3"></a>CMMC уровня 3
 
@@ -195,10 +214,10 @@ ms.locfileid: "100096130"
 |Безопасность операций |12.4.4 |Синхронизация времени |[Необходимо включить аудит на сервере SQL](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fa6fb4358-5bf4-4ad7-ba82-2cd2f41ce5e9) |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/SQL/SqlServerAuditing_Audit.json) |
 |Безопасность операций |12.6.1 |Управление техническими уязвимостями |[Уязвимости в базах данных SQL должны быть устранены.](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Ffeedbf84-6b99-488c-acc2-71c829aa5ffc) |[4.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Security%20Center/ASC_SQLDbVulnerabilities_Audit.json) |
 
-## <a name="new-zealand-ism"></a>ISM в Новой Зеландии
+## <a name="new-zealand-ism-restricted"></a>ISM Restricted (Новая Зеландия)
 
-Дополнительную информацию о том, как доступные встроенные компоненты Политики Azure для всех служб Azure сопоставляются с этим стандартом соответствия, см. в статье [Подробные сведения о встроенной инициативе о соответствии нормативным требованиям Information Security Manual в Новой Зеландии](../../../../articles/governance/policy/samples/new-zealand-ism.md).
-Дополнительные сведения об этом стандарте соответствия см. в статье об [Information Security Manual в Новой Зеландии](https://www.nzism.gcsb.govt.nz/).
+Дополнительные сведения о том, как доступные встроенные компоненты Политики Azure для всех служб Azure сопоставляются с этим стандартом соответствия, см. в статье [Обеспечение соответствия нормативным требованиям для Политики Azure — ISM Restricted (Новая Зеландия)](../../../../articles/governance/policy/samples/new-zealand-ism.md).
+Дополнительные сведения об этом стандарте соответствия см. на странице об [ISM Restricted (Новая Зеландия)](https://www.nzism.gcsb.govt.nz/).
 
 |Домен |Идентификатор элемента управления |Заголовок элемента управления |Политика<br /><sub>(портал Azure)</sub> |Версия политики<br /><sub>(GitHub)</sub>  |
 |---|---|---|---|---|

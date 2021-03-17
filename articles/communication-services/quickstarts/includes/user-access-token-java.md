@@ -6,21 +6,21 @@ author: tomaschladek
 manager: nmurav
 ms.service: azure-communication-services
 ms.subservice: azure-communication-services
-ms.date: 08/20/2020
+ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: tchladek
-ms.openlocfilehash: 1881b05c32fb0a7206ba6439db5c44ad909de798
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6b75548d6fce7539c2eeb71523a5a045b0b6607b
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101750726"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103495356"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
-- [комплект SDK для Java (JDK)](/java/azure/jdk/?preserve-view=true&view=azure-java-stable) версии 8 или более поздней версии.
+- [комплект SDK для Java (JDK)](/java/azure/jdk/) версии 8 или более поздней версии.
 - [Apache Maven](https://maven.apache.org/download.cgi).
 - Развернутый ресурс Служб коммуникации и строка подключения. [Создайте ресурс Служб коммуникации.](../create-communication-resource.md)
 
@@ -44,7 +44,7 @@ mvn archetype:generate -DgroupId=com.communication.quickstart -DartifactId=commu
 <dependency>
     <groupId>com.azure</groupId>
     <artifactId>azure-communication-identity</artifactId>
-    <version>1.0.0-beta.3</version> 
+    <version>1.0.0-beta.6</version>
 </dependency>
 ```
 
@@ -60,13 +60,18 @@ mvn archetype:generate -DgroupId=com.communication.quickstart -DartifactId=commu
 Используйте следующий код:
 
 ```java
-import com.azure.communication.identity.*;
-import com.azure.communication.common.*;
-import java.io.*;
-import java.util.*;
-import java.time.*;
+package com.communication.quickstart;
 
+import com.azure.communication.common.*;
+import com.azure.communication.identity.*;
+import com.azure.communication.identity.models.*;
+import com.azure.core.credential.*;
 import com.azure.core.http.*;
+import com.azure.core.http.netty.*;
+
+import java.io.IOException;
+import java.time.*;
+import java.util.*;
 
 public class App
 {
@@ -85,7 +90,7 @@ public class App
 Добавьте следующий код в метод `main`:
 
 ```java
-// Your can find your endpoint and access key from your resource in the Azure Portal
+// Your can find your endpoint and access key from your resource in the Azure portal
 String endpoint = "https://<RESOURCE_NAME>.communication.azure.com";
 String accessKey = "SECRET";
 
@@ -97,18 +102,20 @@ String accessKey = "SECRET";
 HttpClient httpClient = new NettyAsyncHttpClientBuilder().build();
 
 CommunicationIdentityClient communicationIdentityClient = new CommunicationIdentityClientBuilder()
-    .endpoint(endpoint)
-    .accessKey(accessKey)
-    .httpClient(httpClient)
-    .buildClient();
+        .endpoint(endpoint)
+        .credential(new AzureKeyCredential(accessKey))
+        .httpClient(httpClient)
+        .buildClient();
 ```
 
-Вы можете инициализировать клиент с помощью любого пользовательского HTTP-клиента, реализующего интерфейс `com.azure.core.http.HttpClient`. В приведенном выше коде показано, как использовать [HTTP-клиент Netty Azure Core](/java/api/overview/azure/core-http-netty-readme?preserve-view=true&view=azure-java-stable), предоставляемый `azure-core`.
+Вы можете инициализировать клиент с помощью любого пользовательского HTTP-клиента, реализующего интерфейс `com.azure.core.http.HttpClient`. В приведенном выше коде показано, как использовать [HTTP-клиент Netty Azure Core](/java/api/overview/azure/core-http-netty-readme), предоставляемый `azure-core`.
 
-Чтобы не указывать конечную точку и ключ доступа, вы можете указать всю строку подключения с помощью функции connectionString(). 
+Чтобы не указывать конечную точку и ключ доступа, вы можете указать всю строку подключения с помощью функции `connectionString()`.
 ```java
-// Your can find your connection string from your resource in the Azure Portal
+// Your can find your connection string from your resource in the Azure portal
 String connectionString = "<connection_string>";
+HttpClient httpClient = new NettyAsyncHttpClientBuilder().build();
+
 CommunicationIdentityClient communicationIdentityClient = new CommunicationIdentityClientBuilder()
     .connectionString(connectionString)
     .httpClient(httpClient)
@@ -120,42 +127,57 @@ CommunicationIdentityClient communicationIdentityClient = new CommunicationIdent
 Службы коммуникации Azure позволяют использовать упрощенный каталог удостоверений. Чтобы создать новую запись в каталоге с уникальным идентификатором (`Id`), используйте метод `createUser`. Сохраните полученное удостоверение с сопоставлением с пользователями вашего приложения. Например, сохраните их в базе данных сервера приложений. Удостоверение потребуется позже для выдачи маркеров доступа.
 
 ```java
-CommunicationUser identity = communicationIdentityClient.createUser();
-System.out.println("\nCreated an identity with ID: " + identity.getId());
+CommunicationUserIdentifier user = communicationIdentityClient.createUser();
+System.out.println("\nCreated an identity with ID: " + user.getId());
 ```
 
 ## <a name="issue-access-tokens"></a>Выпуск маркеров доступа
 
-Чтобы выдать маркер доступа для имеющегося удостоверения Служб коммуникации, используйте метод `issueToken`. Параметр `scopes` определяет набор базовых функций, которые будут авторизовать этот маркер доступа. Ознакомьтесь со [списком поддерживаемых действий](../../concepts/authentication.md). Новый экземпляр параметра `user` можно создать на основе строкового представления удостоверения Служб коммуникации Azure.
+Чтобы выдать маркер доступа для имеющегося удостоверения Служб коммуникации, используйте метод `getToken`. Параметр `scopes` определяет набор базовых функций, которые будут авторизовать этот маркер доступа. Ознакомьтесь со [списком поддерживаемых действий](../../concepts/authentication.md). Новый экземпляр параметра `user` можно создать на основе строкового представления удостоверения Служб коммуникации Azure.
 
 ```java
-// Issue an access token with the "voip" scope for an identity
-List<String> scopes = new ArrayList<>(Arrays.asList("voip"));
-CommunicationUserToken response = communicationIdentityClient.issueToken(identity, scopes);
-OffsetDateTime expiresOn = response.getExpiresOn();
-String token = response.getToken();
-System.out.println("\nIssued an access token with 'voip' scope that expires at: " + expiresOn + ": " + token);
+// Issue an access token with the "voip" scope for a user identity
+List<CommunicationTokenScope> scopes = new ArrayList<>(Arrays.asList(CommunicationTokenScope.VOIP));
+AccessToken accessToken = communicationIdentityClient.getToken(user, scopes);
+OffsetDateTime expiresAt = accessToken.getExpiresAt();
+String token = accessToken.getToken();
+System.out.println("\nIssued an access token with 'voip' scope that expires at: " + expiresAt + ": " + token);
 ```
 
-Маркеры доступа — это недолговечные учетные данные, которые необходимо выдавать повторно. Если этого не сделать, это может привести к нарушению работы пользователей приложения. Свойство ответа `expiresAt` указывает время существования маркера доступа.
+## <a name="create-an-identity-and-issue-token-in-one-call"></a>Создание удостоверения и маркера в одном вызове
+
+Кроме того, с помощью метода createUserAndToken вы можете создать новую запись в каталоге с уникальным значением `Id`, а также маркер доступа.
+
+```java
+List<CommunicationTokenScope> scopes = Arrays.asList(CommunicationTokenScope.CHAT);
+CommunicationUserIdentifierAndToken result = communicationIdentityClient.createUserAndToken(scopes);
+CommunicationUserIdentifier user = result.getUser();
+System.out.println("\nCreated a user identity with ID: " + user.getId());
+AccessToken accessToken = result.getUserToken();
+OffsetDateTime expiresAt = accessToken.getExpiresAt();
+String token = accessToken.getToken();
+System.out.println("\nIssued an access token with 'chat' scope that expires at: " + expiresAt + ": " + token);
+```
+
+Маркеры доступа — это недолговечные учетные данные, которые необходимо выдавать повторно. Если этого не сделать, это может привести к нарушению работы пользователей приложения. Свойство `expiresAt` обозначает время существования маркера доступа.
 
 ## <a name="refresh-access-tokens"></a>Обновление токенов доступа
 
-Чтобы обновить маркер доступа, используйте объект `CommunicationUser` для повторной выдачи:
+Чтобы обновить маркер доступа, используйте объект `CommunicationUserIdentifier` для повторной выдачи:
 
-```java  
+```java
 // Value existingIdentity represents identity of Azure Communication Services stored during identity creation
-CommunicationUser identity = new CommunicationUser(existingIdentity);
-response = communicationIdentityClient.issueToken(identity, scopes);
+CommunicationUserIdentifier identity = new CommunicationUserIdentifier(existingIdentity);
+AccessToken response = communicationIdentityClient.getToken(identity, scopes);
 ```
 
 ## <a name="revoke-access-tokens"></a>Отмена маркеров доступа
 
 В некоторых случаях вы можете явно отменить маркеры доступа. Например, когда пользователь приложения меняет пароль, который он использует для проверки подлинности в службе. Метод `revokeTokens` аннулирует все активные маркеры доступа, выданные удостоверению.
 
-```java  
-communicationIdentityClient.revokeTokens(identity, OffsetDateTime.now());
-System.out.println("\nSuccessfully revoked all access tokens for identity with ID: " + identity.getId());
+```java
+communicationIdentityClient.revokeTokens(user);
+System.out.println("\nSuccessfully revoked all access tokens for user identity with ID: " + user.getId());
 ```
 
 ## <a name="delete-an-identity"></a>Удаление удостоверения
@@ -163,8 +185,8 @@ System.out.println("\nSuccessfully revoked all access tokens for identity with I
 При удалении удостоверения отзываются все активные маркеры доступа и запрещается выдача последующих маркеров для удостоверения. Вместе с этим удаляется и все хранимое содержимое, связанное с удостоверением.
 
 ```java
-communicationIdentityClient.deleteUser(identity);
-System.out.println("\nDeleted the identity with ID: " + identity.getId());
+communicationIdentityClient.deleteUser(user);
+System.out.println("\nDeleted the user identity with ID: " + user.getId());
 ```
 
 ## <a name="run-the-code"></a>Выполнение кода

@@ -3,13 +3,13 @@ author: rothja
 ms.service: app-service
 ms.topic: include
 ms.date: 03/04/2020
-ms.author: jroth
-ms.openlocfilehash: 71782661fd960cae3248005a8b90944eff9bef45
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.author: msangapu
+ms.openlocfilehash: bcbbd133c71b2917b73c200c4453ea57385fcaf1
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98024290"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102532745"
 ---
 | Ресурс | Бесплатный | Совмещаемая блокировка | Basic | Standard | Премиум (версия 1–3) | Isolated </th> |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -24,7 +24,7 @@ ms.locfileid: "98024290"
 | Пропускная способность |165 MB |Без ограничений, применяются [тарифы на передачу данных](https://azure.microsoft.com/pricing/details/data-transfers/) |Без ограничений, применяются [тарифы на передачу данных](https://azure.microsoft.com/pricing/details/data-transfers/) |Без ограничений, применяются [тарифы на передачу данных](https://azure.microsoft.com/pricing/details/data-transfers/) |Без ограничений, применяются [тарифы на передачу данных](https://azure.microsoft.com/pricing/details/data-transfers/) |Без ограничений, применяются [тарифы на передачу данных](https://azure.microsoft.com/pricing/details/data-transfers/) |
 | Архитектура приложения |32-битная |32-битная |32- или 64-битная |32- или 64-битная |32- или 64-битная |32- или 64-битная |
 | Количество веб-сокетов на один экземпляр<sup>7</sup> |5 |35 |350 |Неограниченно |Неограниченно |Неограниченно |
-| Соединения по протоколу IP | 600 | 600 | Зависит от размера экземпляра<sup>8</sup> | Зависит от размера экземпляра<sup>8</sup> | Зависит от размера экземпляра<sup>8</sup> | 16 000 |
+| Исходящих IP-подключений на экземпляр | 600 | 600 | Зависит от размера экземпляра<sup>8</sup> | Зависит от размера экземпляра<sup>8</sup> | Зависит от размера экземпляра<sup>8</sup> | 16 000 |
 | Количество одновременных [подключений к отладчику](../articles/app-service/troubleshoot-dotnet-visual-studio.md) для каждого приложения |1 |1 |1 |5 |5 |5 |
 | Сертификаты службы приложений на подписку<sup>9</sup>| Не поддерживается | Не поддерживается |10 |10 |10 |10 |
 | Количество личных доменов на одно приложение</a> |0 (только поддомен azurewebsites.net)|500 |500 |500 |500 |500 |

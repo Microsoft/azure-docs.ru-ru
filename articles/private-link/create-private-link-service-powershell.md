@@ -1,20 +1,20 @@
 ---
 title: Краткое руководство. Создание службы "Приватный канал Azure" с помощью Azure PowerShell
-description: Сведения о том, как создать службу "Приватный канал Azure" с помощью Azure PowerShell.
+description: В этом кратком руководстве показано, как создать службу Приватного канала Azure с помощью Azure PowerShell.
 services: private-link
 author: asudbring
 ms.service: private-link
 ms.topic: quickstart
 ms.date: 01/24/2021
 ms.author: allensu
-ms.openlocfilehash: 4780bc573796581438b8d331b1d1d9421a65414f
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.openlocfilehash: 366be37135808a6d3d5cc1a277e2de3e3d6da8ae
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "100653250"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102566411"
 ---
-# <a name="create-a-private-link-service-using-azure-powershell"></a>Создание службы "Приватный канал" с помощью Azure PowerShell
+# <a name="quickstart-create-a-private-link-service-using-azure-powershell"></a>Краткое руководство. Создание службы Приватного канала с помощью Azure PowerShell
 
 Приступите к созданию службы приватного канала, которая ссылается на вашу службу.  Предоставьте Приватному каналу доступ к службе или ресурсу, которые развернуты за Azure Load Balancer (цен. категория "Стандартный").  Пользователи службы имеют закрытый доступ из своей виртуальной сети.
 

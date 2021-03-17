@@ -7,12 +7,12 @@ ms.service: key-vault
 ms.subservice: general
 ms.topic: tutorial
 ms.date: 09/25/2020
-ms.openlocfilehash: fd40ad41bda50d93943a514cd9cc3aeeab4ac948
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: b130fd3f85b676f0a394ad95730181ff499dac96
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102198886"
+ms.locfileid: "102216502"
 ---
 # <a name="tutorial-configure-and-run-the-azure-key-vault-provider-for-the-secrets-store-csi-driver-on-kubernetes"></a>Руководство по настройке и запуску поставщика Azure Key Vault для драйвера CSI хранилища секретов в Kubernetes
 
@@ -107,7 +107,7 @@ ms.locfileid: "102198886"
 
 ## <a name="create-your-own-secretproviderclass-object"></a>Создание собственного объекта SecretProviderClass
 
-Используйте этот [шаблон](https://raw.githubusercontent.com/Azure/secrets-store-csi-driver-provider-azure/master/examples/pod-identity/v1alpha1_secretproviderclass_pod_identity.yaml), чтобы создать собственный пользовательский объект SecretProviderClass с заданными поставщиком параметрами для драйвера CSI хранилища секретов. Этот объект предоставит доступ к удостоверениям хранилища ключей.
+Используйте этот [шаблон](https://github.com/Azure/secrets-store-csi-driver-provider-azure/blob/master/examples/service-principal/v1alpha1_secretproviderclass_service_principal.yaml), чтобы создать собственный пользовательский объект SecretProviderClass с заданными поставщиком параметрами для драйвера CSI хранилища секретов. Этот объект предоставит доступ к удостоверениям хранилища ключей.
 
 В файле YAML SecretProviderClass введите отсутствующие параметры. Требуются следующие параметры.
 

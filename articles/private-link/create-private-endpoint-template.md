@@ -1,19 +1,19 @@
 ---
-title: Создание частной конечной точки в Приватном канале Azure
+title: Краткое руководство. Создание частной конечной точки с помощью шаблона ARM
 description: В этом кратком руководстве показано, как создать частную конечную точку с помощью шаблона Azure Resource Manager (шаблона ARM).
 services: private-link
-author: mblanco77
+author: asudbring
 ms.service: private-link
 ms.topic: quickstart
 ms.custom: subject-armqs
 ms.date: 05/26/2020
 ms.author: allensu
-ms.openlocfilehash: 553d36a86671617417b6b9b1ea47966c3ba3fdf6
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: e80adc16e08e676ac2daabec01a11c10d537c547
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "88705815"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102562951"
 ---
 # <a name="quickstart-create-a-private-endpoint-by-using-an-arm-template"></a>Краткое руководство. Создание частной конечной точки с помощью шаблона ARM
 
@@ -118,7 +118,7 @@ ms.locfileid: "88705815"
     - **Имя сервера**: Выберите **sqlserver{uniqueid}.database.windows.net**.
     - **Имя пользователя**. Введите имя пользователя, указанное во время создания.
     - **Пароль**. Введите пароль, указанный во время создания.
-    - **Запомнить пароль**: Выберите **Да**.
+    - **Запомнить пароль**: Выберите  **Да**.
 
 5.  Выберите **Подключиться**.
 6.  В меню слева перейдите к разделу **Базы данных**.
@@ -137,4 +137,6 @@ Remove-AzResourceGroup -Name <your resource group name>
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-См. сведения о службе [Приватный канал Azure](private-link-overview.md).
+Дополнительные сведения о службах, поддерживающих частную конечную точку, см. в следующей статье:
+> [!div class="nextstepaction"]
+> [Доступность Приватного канала](private-link-overview.md#availability)

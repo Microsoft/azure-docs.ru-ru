@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 12/03/2020
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: cb680221447594b4784f61112655d507397b1c00
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 673e2260f358332de00a15b29729f14d62fe82a4
+ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101648855"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102518013"
 ---
 # <a name="tutorial-create-an-azure-active-directory-b2c-tenant"></a>Руководство по Создание клиента Azure Active Directory B2C
 
@@ -23,6 +23,8 @@ ms.locfileid: "101648855"
 
 > [!NOTE]
 > В одной подписке можно создать до 20 арендаторов. Это ограничение помогает защитить ресурсы от угроз, таких как атаки типа "отказ в обслуживании", и применяется на портале Azure и в базовом API создания арендатора. Если необходимо создать более 20 арендаторов, обратитесь в [службу поддержки Майкрософт](support-options.md).
+> 
+> Если вы хотите повторно использовать имя арендатора, которого вы пытались удалить ранее, но при вводе доменного имени появляется сообщение об ошибке Already in use by another directory (Уже используется другим каталогом), вам необходимо [сначала выполнить действия по полному удалению арендатора](https://docs.microsoft.com/azure/active-directory-b2c/faq?tabs=app-reg-ga#how-do-i-delete-my-azure-ad-b2c-tenant). Для этого требуется роль с уровнем прав не ниже администратора подписки. После удаления арендатора, возможно, вам придется выйти и повторно войти, прежде чем можно будет снова использовать доменное имя.
 
 Вы узнаете, как выполнять следующие задачи:
 

@@ -7,14 +7,14 @@ ms.service: cache
 ms.custom: mvc
 ms.topic: quickstart
 ms.date: 02/08/2021
-ms.openlocfilehash: 50535ab9ac2a3541ade7b9abd8f355bbeaf6d4b3
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 63daa7cda2f10448e9a0f8e250412137dc2af892
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100365010"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102563903"
 ---
-# <a name="quickstart-create-a-redis-enterprise-cache-preview"></a>Краткое руководство. Создание Кэша Azure для Redis уровня "Корпоративный" (предварительная версия)
+# <a name="quickstart-create-a-redis-enterprise-cache"></a>Краткое руководство. Создание Кэша Azure для Redis уровня "Корпоративный"
 
 Кэш Azure для Redis уровня Enterprise предоставляет полностью интегрированные и управляемые экземпляры [Redis Enterprise](https://redislabs.com/redis-enterprise/) в Azure. Эти экземпляры в настоящее время доступны в предварительной версии. В этой версии реализованы два новых уровня.
 * Enterprise использует для хранения данных энергозависимую память (DRAM) на виртуальной машине.
@@ -22,7 +22,7 @@ ms.locfileid: "100365010"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Прежде всего для работы вам понадобится подписка Azure. Если ее нет, создайте [учетную запись](https://azure.microsoft.com/). Дополнительные сведения см. в разделе [Требования к уровню "Корпоративный"](cache-overview.md#enterprise-and-enterprise-flash-tier-requirements).
+Прежде всего для работы вам понадобится подписка Azure. Если ее нет, создайте [учетную запись](https://azure.microsoft.com/). См. [особые рекомендации для корпоративных уровней](cache-overview.md#special-considerations-for-enterprise-tiers).
 
 ## <a name="create-a-cache"></a>Создание кэша
 1. Чтобы создать кэш, войдите на портал Azure по ссылке из приглашения к участию в предварительной версии и щелкните **Создать ресурс**.
@@ -41,7 +41,7 @@ ms.locfileid: "100365010"
    | **Расположение** | Откройте список и выберите расположение. | Уровни Enterprise предоставляются в предварительной версии только в некоторых регионах Azure. |
    | **Тип кэша** | Щелкните раскрывающийся список и выберите нужный уровень (*Enterprise* или *Enterprise Flash*) и размер. |  Уровень определяет размер, производительность кэша и доступные функции. |
    
-   :::image type="content" source="media/cache-create/enterprise-tier-basics.png" alt-text="Основные сведения об уровне Enterprise":::
+   :::image type="content" source="media/cache-create/enterprise-tier-basics.png" alt-text="Вкладка &quot;Основные сведения&quot; корпоративного уровня":::
 
    > [!NOTE] 
    > Прежде чем продолжить, установите флажок рядом с полем "Условия".
@@ -49,25 +49,15 @@ ms.locfileid: "100365010"
 
 1. По завершении выберите **Next: Сети** и пропустите этот этап.
 
-   > [!NOTE] 
-   > Вариант с приватным каналом находится в процессе развертывания и пока может быть недоступным в вашем регионе.
-   >
+1. По завершении выберите **Next: Дополнительно** и задайте для параметра **Политика кластеризации** значение **Enterprise**. Включите параметр **Только доступ без TLS**, если планируется подключение к новому кэшу без использования TLS. Но это делать не рекомендуется.
 
-1. По завершении выберите **Next: Дополнительно** и задайте для параметра **Политика кластеризации** значение **Enterprise**.
-   
-   Вы можете сохранить значения по умолчанию или изменить их, как сочтете нужным. Если вы включите параметр **Allow access only via TLS** (Разрешить доступ только через TLS), для доступа к новому кэшу из приложения придется использовать TLS.
+   :::image type="content" source="media/cache-create/enterprise-tier-advanced.png" alt-text="Вкладка &quot;Дополнительно&quot; корпоративного уровня":::
 
-   :::image type="content" source="media/cache-create/enterprise-tier-advanced.png" alt-text="Расширенные сведения об уровне Enterprise":::
-
-   > [!NOTE] 
-   > Модули Redis на уровне Enterprise Flash пока не поддерживаются. Если вы намерены использовать модуль Redis, выберите кэш уровня Enterprise.
-   >
-   
 1. По завершении выберите **Next: Теги** и пропустите этот этап.
 
 1. По завершении выберите **Next: Отзыв и создание**.
 
-   :::image type="content" source="media/cache-create/enterprise-tier-summary.png" alt-text="Сводная информация об уровне Enterprise":::
+   :::image type="content" source="media/cache-create/enterprise-tier-summary.png" alt-text="Вкладка &quot;Просмотр и создание&quot; корпоративного уровня":::
 
 1. Проверьте параметры и нажмите кнопку **Создать**.
    

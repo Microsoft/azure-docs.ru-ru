@@ -1,25 +1,25 @@
 ---
-title: Сведения о соответствии нормативным требованиям теста производительности CIS для платформ Microsoft Azure
-description: Подробные сведения о встроенной инициативе о соответствии нормативным требованиям теста производительности CIS для платформ Microsoft Azure. Каждый элемент управления сопоставляется с определениями одной или нескольких Политик Azure, которые помогают выполнять оценку.
-ms.date: 02/09/2021
+title: Сведения о соответствии нормативным требованиям теста производительности CIS для платформ Microsoft Azure 1.1.0
+description: Подробные сведения о встроенной инициативе о соответствии нормативным требованиям теста производительности CIS для платформ Microsoft Azure 1.1.0. Каждый элемент управления сопоставляется с одним или несколькими определениями Политики Azure, которые помогают выполнять оценку.
+ms.date: 03/05/2021
 ms.topic: sample
 ms.custom: generated
-ms.openlocfilehash: 02976da72027f9e5c5396148cd15e361aaf20ab0
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.openlocfilehash: 8ad263a4199bb0de88421254d5b537cb5b80732d
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100099784"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102437354"
 ---
-# <a name="details-of-the-cis-microsoft-azure-foundations-benchmark-regulatory-compliance-built-in-initiative"></a>Подробные сведения о встроенной инициативе о соответствии нормативным требованиям теста производительности CIS для платформ Microsoft Azure
+# <a name="details-of-the-cis-microsoft-azure-foundations-benchmark-110-regulatory-compliance-built-in-initiative"></a>Подробные сведения о встроенной инициативе о соответствии нормативным требованиям теста производительности CIS для платформ Microsoft Azure 1.1.0.
 
-В следующей статье подробно описано, как определение встроенной инициативы о соответствии нормативным требованиям Политики Azure сопоставляется с **областями соответствия нормативным требованиям** и **элементами управления** в тестах CIS оценки безопасности для платформ Microsoft Azure.
-Дополнительные сведения об этом стандарте соответствия требованиям см. в статье [Тест производительности CIS для платформ Microsoft Azure](https://www.cisecurity.org/benchmark/azure/). Сведения о термине _Ответственный_ см. в статьях [Определение службы "Политика Azure"](../concepts/definition-structure.md#type) и [Разделение ответственности в облаке](../../../security/fundamentals/shared-responsibility.md).
+В следующей статье подробно описано, как определение встроенной инициативы о соответствии нормативным требованиям Политики Azure сопоставляется с **областями соответствия нормативным требованиям** и **элементами управления** в тестах CIS оценки безопасности для платформ Microsoft Azure 1.1.0.
+Дополнительные сведения об этом стандарте соответствия требованиям см. в статье [Тест производительности CIS для платформ Microsoft Azure 1.1.0](https://www.cisecurity.org/benchmark/azure/). Сведения о термине _Ответственность_ см. в статьях [Определение службы "Политика Azure"](../concepts/definition-structure.md#type) и [Разделение ответственности в облаке](../../../security/fundamentals/shared-responsibility.md).
 
-Ниже приведены сопоставления соответствующие элементам управления **Теста производительности CIS для платформ Microsoft Azure v1.1.0**. Используйте панель навигации справа для перехода непосредственно к конкретной **области соответствия нормативным требованиям**. Многие элементы управления реализуются с помощью определения инициативы [Политики Azure](../overview.md). Чтобы просмотреть полное определение инициативы, откройте раздел **Политика** на портале Azure и перейдите на страницу **Определения**.
+Ниже приведены сопоставления, соответствующие элементам управления **CIS Microsoft Azure Foundations Benchmark 1.1.0**. Используйте панель навигации справа для перехода непосредственно к конкретной **области соответствия нормативным требованиям**. Многие элементы управления реализуются с помощью определения инициативы [Политики Azure](../overview.md). Чтобы просмотреть полное определение инициативы, откройте раздел **Политика** на портале Azure и перейдите на страницу **Определения**.
 Затем найдите и выберите определение встроенной инициативы о соответствии требованиям **теста производительности CIS для платформ Microsoft Azure версии 1.1.0**.
 
-Эта встроенная инициатива развертывается в составе [примера схемы CIS для оценки безопасности для платформ Microsoft Azure](../../blueprints/samples/cis-azure-1-1-0.md).
+Эта встроенная инициатива развертывается в составе [примера схемы CIS для оценки безопасности для платформ Microsoft Azure 1.1.0](../../blueprints/samples/cis-azure-1-1-0.md).
 
 > [!IMPORTANT]
 > Каждый элемент управления ниже связан с одним или несколькими определениями [Политики Azure](../overview.md).
@@ -191,7 +191,7 @@ ms.locfileid: "100099784"
 
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
-|[Для оповещений высокого уровня серьезности нужно включить уведомление владельца подписки по электронной почте](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F0b15565f-aa9e-48ba-8619-45960f2c314d) |Чтобы настроить информирование владельцев подписки при возникновении потенциального нарушения безопасности в подписке, включите для владельцев подписок уведомления по электронной почте для отправки оповещений с высоким уровнем серьезности в Центре безопасности. |AuditIfNotExists, Disabled |[1.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Security%20Center/ASC_Email_notification_to_subscription_owner.json) |
+|[Для оповещений высокого уровня серьезности нужно включить уведомление владельца подписки по электронной почте](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F0b15565f-aa9e-48ba-8619-45960f2c314d) |Чтобы настроить информирование владельцев подписки при возникновении потенциального нарушения безопасности в подписке, включите для владельцев подписок уведомления по электронной почте для отправки оповещений с высоким уровнем серьезности в Центре безопасности. |AuditIfNotExists, Disabled |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Security%20Center/ASC_Email_notification_to_subscription_owner.json) |
 
 ## <a name="storage-accounts"></a>Учетные записи хранения
 
@@ -391,6 +391,7 @@ ms.locfileid: "100099784"
 
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
+|[В управляемом модуле HSM в Azure Key Vault необходимо включить журналы ресурсов](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fa2a5b911-5617-447e-a49e-59dbe0e0434b) |Чтобы воссоздать следы действий для расследования инцидентов безопасности или несанкционированного доступа к сети, можно выполнить аудит, включив журналы ресурсов в управляемых модулях HSM. Следуйте инструкциям из этой статьи: [https://docs.microsoft.com/azure/key-vault/managed-hsm/logging](https://docs.microsoft.com/azure/key-vault/managed-hsm/logging). |AuditIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Key%20Vault/ManagedHsm_AuditDiagnosticLog_Audit.json) |
 |[В Key Vault должны быть включены журналы ресурсов](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fcf820ca0-f99e-4f3e-84fb-66e913812d21) |Выполняйте аудит для включения журналов ресурсов. Это позволит воссоздать действия для анализа инцидентов безопасности или компрометации сети. |AuditIfNotExists, Disabled |[4.0.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Key%20Vault/KeyVault_AuditDiagnosticLog_Audit.json) |
 
 ### <a name="ensure-that-activity-log-alert-exists-for-create-policy-assignment"></a>Обеспечение того, что для операции создания назначения политики существует оповещение журнала действий
@@ -565,6 +566,7 @@ ms.locfileid: "100099784"
 
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
+|[Для управляемого модуля HSM для Azure Key Vault должна быть включена защита от очистки](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fc39ba22d-4428-4149-b981-70acb31fc383) |Удаление управляемого модуля HSM для Azure Key Vault злоумышленником может привести к необратимой потере данных. Потенциальный злоумышленник в вашей организации может удалить и очистить управляемый модуль HSM для Azure Key Vault. Защита от очистки позволяет оградить вас от атак злоумышленников. Для этого применяется обязательный период хранения данных для управляемого модуля HSM для Azure Key Vault, который был обратимо удален. Ни корпорация Майкрософт, ни пользователи вашей организации не смогут очистить управляемый модуль HSM для Azure Key Vault во время периода хранения при обратимом удалении. |Audit, Deny, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Key%20Vault/ManagedHsm_Recoverable_Audit.json) |
 |[В хранилищах ключей должна быть включена защита от очистки](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F0b60c0b2-2dc2-4e1c-b5c9-abbed971de53) |Удаление хранилища ключей злоумышленником может привести к необратимой потере данных. Потенциальный злоумышленник в вашей организации может удалить и очистить хранилища ключей. Защита от очистки позволяет оградить вас от атак злоумышленников. Для этого применяется обязательный период хранения данных для хранилищ ключей, которые были обратимо удалены. Ни корпорация Майкрософт, ни пользователи вашей организации не смогут очистить хранилища ключей во время периода хранения при обратимом удалении. |Audit, Deny, Disabled |[1.1.1](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Key%20Vault/KeyVault_Recoverable_Audit.json) |
 
 ### <a name="enable-role-based-access-control-rbac-within-azure-kubernetes-services"></a>Включение управления доступом на основе ролей (RBAC) в службе Azure Kubernetes
@@ -621,9 +623,9 @@ ms.locfileid: "100099784"
 
 |Имя<br /><sub>(портал Azure)</sub> |Описание |Действие |Версия<br /><sub>(GitHub)</sub> |
 |---|---|---|---|
-|[В вашем приложении API необходимо использовать управляемое удостоверение](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fc4d441f8-f9d9-4a9e-9cef-e82117cb3eef) |Используйте управляемое удостоверение для повышения безопасности проверки подлинности. |AuditIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/App%20Service/AppService_UseManagedIdentity_ApiApp_Audit.json) |
-|[В вашем приложении-функции необходимо использовать управляемое удостоверение](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F0da106f2-4ca3-48e8-bc85-c638fe6aea8f) |Используйте управляемое удостоверение для повышения безопасности проверки подлинности. |AuditIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/App%20Service/AppService_UseManagedIdentity_FunctionApp_Audit.json) |
-|[В вашем веб-приложении необходимо использовать управляемое удостоверение](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F2b9ad585-36bc-4615-b300-fd4435808332) |Используйте управляемое удостоверение для повышения безопасности проверки подлинности. |AuditIfNotExists, Disabled |[1.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/App%20Service/AppService_UseManagedIdentity_WebApp_Audit.json) |
+|[В вашем приложении API необходимо использовать управляемое удостоверение](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fc4d441f8-f9d9-4a9e-9cef-e82117cb3eef) |Используйте управляемое удостоверение для повышения безопасности проверки подлинности. |AuditIfNotExists, Disabled |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/App%20Service/AppService_UseManagedIdentity_ApiApp_Audit.json) |
+|[В вашем приложении-функции необходимо использовать управляемое удостоверение](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F0da106f2-4ca3-48e8-bc85-c638fe6aea8f) |Используйте управляемое удостоверение для повышения безопасности проверки подлинности. |AuditIfNotExists, Disabled |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/App%20Service/AppService_UseManagedIdentity_FunctionApp_Audit.json) |
+|[В вашем веб-приложении необходимо использовать управляемое удостоверение](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F2b9ad585-36bc-4615-b300-fd4435808332) |Используйте управляемое удостоверение для повышения безопасности проверки подлинности. |AuditIfNotExists, Disabled |[2.0.0](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/App%20Service/AppService_UseManagedIdentity_WebApp_Audit.json) |
 
 ### <a name="ensure-that-php-version-is-the-latest-if-used-to-run-the-web-app"></a>В веб-приложении должна использоваться последняя версия PHP
 

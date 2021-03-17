@@ -2,15 +2,15 @@
 title: Развертывание шаблона — портал Azure
 description: Узнайте, как создать и развернуть первый шаблон Azure Resource Manager (шаблон ARM) с помощью портала Azure.
 author: mumian
-ms.date: 01/26/2021
+ms.date: 03/09/2021
 ms.topic: quickstart
 ms.author: jgao
-ms.openlocfilehash: 946156caa7252a89cab006d604eb6b441e09c643
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.openlocfilehash: 20b1bf47ae2fd63e91a11c8cccd1f03cf3464899
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98892510"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102548175"
 ---
 # <a name="quickstart-create-and-deploy-arm-templates-by-using-the-azure-portal"></a>Краткое руководство. Создание и развертывание шаблонов ARM с помощью портала Azure
 
@@ -34,7 +34,7 @@ ms.locfileid: "98892510"
     ![Выберите команду "Создать ресурс" в меню на портале Azure.](./media/quickstart-create-templates-use-the-portal/azure-resource-manager-template-tutorial-create-a-resource.png)
 
 1. В поле поиска введите **учетная запись хранения** и нажмите клавишу **[ВВОД]** .
-1. Нажмите кнопку **Создать**.
+1. Щелкните стрелку вниз рядом с пунктом **Создать**, а затем выберите **Учетная запись хранения**.
 
     ![Создание учетной записи хранения Azure](./media/quickstart-create-templates-use-the-portal/azure-resource-manager-template-tutorial-create-storage-account-portal.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "98892510"
 
     Шаблон отображается на главной панели. Это файл JSON с шестью элементами верхнего уровня: `schema`, `contentVersion`, `parameters`, `variables`, `resources` и `output`. Дополнительные сведения см. в статье [Понимание структуры и синтаксиса шаблонов ARM](./template-syntax.md).
 
-    В шаблоне определяются восемь параметров. Один из них — **storageAccountName**. На втором выделенном элементе на предыдущем снимке экрана показано, как ссылаться на этот параметр в шаблоне. В следующем разделе описано, как изменить шаблон, указав в нем имя созданной учетной записи хранения.
+    Определено девять параметров. Один из них — **storageAccountName**. На втором выделенном элементе на предыдущем снимке экрана показано, как ссылаться на этот параметр в шаблоне. В следующем разделе описано, как изменить шаблон, указав в нем имя созданной учетной записи хранения.
 
     В шаблоне определяется один ресурс Azure. Тип — `Microsoft.Storage/storageAccounts`. Рассмотрите, как определен ресурс и какова структура его определения.
 1. В верхней части экрана выберите **Загрузить**.
@@ -92,72 +92,76 @@ ms.locfileid: "98892510"
    - Удалите параметр **storageAccountName**, как показано на предыдущем снимке экрана.
    - Добавьте одну переменную с именем **storageAccountName**, как показано на предыдущем снимке экрана:
 
-       ```json
-       "storageAccountName": "[concat(uniqueString(subscription().subscriptionId), 'storage')]"
-       ```
+      ```json
+      "storageAccountName": "[concat(uniqueString(subscription().subscriptionId), 'storage')]"
+      ```
 
-       Здесь используются две функции шаблона: `concat()` и `uniqueString()`.
+      Здесь используются две функции шаблона: `concat()` и `uniqueString()`.
    - Обновите элемент name ресурса **Microsoft.Storage/storageAccounts**, чтобы использовать новую заданную переменную вместо параметра:
 
-       ```json
-       "name": "[variables('storageAccountName')]",
-       ```
+      ```json
+      "name": "[variables('storageAccountName')]",
+      ```
 
-     Окончательная версия шаблона должна выглядеть так:
+      Окончательная версия шаблона должна выглядеть так:
 
-     ```json
-     {
-       "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-       "contentVersion": "1.0.0.0",
-       "parameters": {
-         "location": {
-           "type": "string"
-         },
-         "accountType": {
-           "type": "string"
-         },
-         "kind": {
-           "type": "string"
-         },
-         "accessTier": {
-           "type": "string"
-         },
-         "minimumTlsVersion": {
-           "type": "string"
-         },
-         "supportsHttpsTrafficOnly": {
-          "type": "bool"
-         },
-         "allowBlobPublicAccess": {
-           "type": "bool"
-         }
-       },
-       "variables": {
-         "storageAccountName": "[concat(uniqueString(subscription().subscriptionId), 'storage')]"
-       },
-       "resources": [
-         {
-           "name": "[variables('storageAccountName')]",
-           "type": "Microsoft.Storage/storageAccounts",
-           "apiVersion": "2019-06-01",
-           "location": "[parameters('location')]",
-           "properties": {
-             "accessTier": "[parameters('accessTier')]",
-             "minimumTlsVersion": "[parameters('minimumTlsVersion')]",
-             "supportsHttpsTrafficOnly": "[parameters('supportsHttpsTrafficOnly')]",
-             "allowBlobPublicAccess": "[parameters('allowBlobPublicAccess')]"
-           },
-           "dependsOn": [],
-           "sku": {
-             "name": "[parameters('accountType')]"
-           },
-           "kind": "[parameters('kind')]",
-           "tags": {}
-         }
-       ],
-       "outputs": {}
-     }
-     ```
+      ```json
+      {
+        "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+        "contentVersion": "1.0.0.0",
+        "parameters": {
+          "location": {
+            "type": "string"
+          },
+          "accountType": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "accessTier": {
+            "type": "string"
+          },
+          "minimumTlsVersion": {
+            "type": "string"
+          },
+          "supportsHttpsTrafficOnly": {
+            "type": "bool"
+          },
+          "allowBlobPublicAccess": {
+            "type": "bool"
+          },
+          "allowSharedKeyAccess": {
+            "type": "bool"
+          }
+        },
+        "variables": {
+          "storageAccountName": "[concat(uniqueString(subscription().subscriptionId), 'storage')]"
+        },
+        "resources": [
+          {
+            "name": "[variables('storageAccountName')]",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2019-06-01",
+            "location": "[parameters('location')]",
+            "properties": {
+              "accessTier": "[parameters('accessTier')]",
+              "minimumTlsVersion": "[parameters('minimumTlsVersion')]",
+              "supportsHttpsTrafficOnly": "[parameters('supportsHttpsTrafficOnly')]",
+              "allowBlobPublicAccess": "[parameters('allowBlobPublicAccess')]",
+              "allowSharedKeyAccess": "[parameters('allowSharedKeyAccess')]"
+            },
+            "dependsOn": [],
+            "sku": {
+              "name": "[parameters('accountType')]"
+            },
+            "kind": "[parameters('kind')]",
+            "tags": {}
+          }
+        ],
+        "outputs": {}
+      }
+      ```
 
 1. Щелкните **Сохранить**.
 1. Введите следующие значения.
@@ -173,6 +177,7 @@ ms.locfileid: "98892510"
     |**Минимальная версия TLS**|Введите **TLS1_0**. |
     |**Supports Https Traffic Only** (Поддержка только трафика HTTPS)| В нашем примере используется значение **true**. |
     |**Allow Blob Public Access** (Разрешить общий доступ к BLOB-объектам)| Для этого краткого руководства выберите **false**. |
+    |**Разрешить доступ с использованием общего ключа**| В нашем примере используется значение **true**. |
 
 1. Выберите **Review + create** (Просмотреть и создать).
 1. Нажмите кнопку **создания**.

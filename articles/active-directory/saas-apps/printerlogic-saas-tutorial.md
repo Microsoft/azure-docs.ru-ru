@@ -9,14 +9,14 @@ ms.service: active-directory
 ms.subservice: saas-app-tutorial
 ms.workload: identity
 ms.topic: tutorial
-ms.date: 12/18/2020
+ms.date: 02/25/2021
 ms.author: jeedes
-ms.openlocfilehash: b471e113a7e5ae2277e275d53ff8ac8ca9187d1d
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 23b534f1ccbd51b028beeee173e5c3e0accd47a3
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98731240"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102486188"
 ---
 # <a name="tutorial-azure-active-directory-single-sign-on-sso-integration-with-printerlogic-saas"></a>Руководство по Интеграция единого входа Azure Active Directory с PrinterLogic SaaS
 
@@ -38,9 +38,9 @@ ms.locfileid: "98731240"
 В рамках этого руководства вы настроите и проверите единый вход Azure AD в тестовой среде.
 
 * PrinterLogic SaaS поддерживает единый вход, инициированный **поставщиком услуг и поставщиком удостоверений**.
-* PrinterLogic SaaS поддерживает **JIT-подготовку** пользователей
+* PrinterLogic SaaS поддерживает **JIT-подготовку** пользователей.
 
-## <a name="adding-printerlogic-saas-from-the-gallery"></a>Добавление PrinterLogic SaaS из коллекции
+## <a name="add-printerlogic-saas-from-the-gallery"></a>Добавление PrinterLogic SaaS из коллекции
 
 Чтобы настроить интеграцию PrinterLogic SaaS с Azure AD, необходимо добавить PrinterLogic SaaS из коллекции в список управляемых приложений SaaS.
 
@@ -152,11 +152,10 @@ ms.locfileid: "98731240"
 
 #### <a name="idp-initiated"></a>Вход, инициированный поставщиком удостоверений
 
-* На портале Azure выберите **Тестировать приложение**, и вы автоматически войдете в приложение PrinterLogic SaaS, для которого настроен единый вход. 
+* На портале Azure щелкните **Тестировать приложение**, и вы автоматически войдете в приложение PrinterLogic SaaS, для которого настроили единый вход. 
 
-Вы можете также использовать портал "Мои приложения" корпорации Майкрософт для тестирования приложения в любом режиме. Щелкнув плитку PrinterLogic SaaS на портале "Мои приложения", вы будете перенаправлены на страницу входа приложения для инициации потока входа (при настройке в режиме поставщика услуг) или автоматически войдете в приложение PrinterLogic SaaS, для которого настроен единый вход (при настройке в режиме поставщика удостоверений). Дополнительные сведения о портале "Мои приложения" см. в [этой статье](../user-help/my-apps-portal-end-user-access.md).
-
+Вы можете также использовать портал "Мои приложения" корпорации Майкрософт для тестирования приложения в любом режиме. Щелкнув плитку PrinterLogic SaaS на портале "Мои приложения", вы попадете на страницу входа приложения для инициации потока входа (при настройке в режиме поставщика службы) или автоматически войдете в приложение PrinterLogic SaaS, для которого настроен единый вход (при настройке в режиме поставщика удостоверений). Дополнительные сведения о портале "Мои приложения" см. в [этой статье](https://docs.microsoft.com/azure/active-directory/active-directory-saas-access-panel-introduction).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-После настройки PrinterLogic SaaS вы можете применить управление сеансами, которое в реальном времени защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-any-app).
+После настройки PrinterLogic SaaS вы можете применить управление сеансами, которое в реальном времени защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-any-app).

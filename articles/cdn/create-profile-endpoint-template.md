@@ -1,7 +1,7 @@
 ---
 title: Краткое руководство. Создание профиля и конечной точки — шаблон Resource Manager
 titleSuffix: Azure Content Delivery Network
-description: Узнайте, как создать конечную точку и профиль сети доставки содержимого Azure с помощью шаблона Resource Manager
+description: В этом кратком руководстве показано, как создать конечную точку и профиль сети доставки содержимого Azure с помощью шаблона Resource Manager
 services: cdn
 author: asudbring
 manager: KumudD
@@ -12,12 +12,12 @@ ms.topic: quickstart
 ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 06/25/2020
 ms.author: allensu
-ms.openlocfilehash: b215dfff3bf62b67b89aa260b0134381de6edeae
-ms.sourcegitcommit: b6267bc931ef1a4bd33d67ba76895e14b9d0c661
+ms.openlocfilehash: a36484bea3a2bc9caadc5cf4482aae3bea84eafa
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97695716"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102560469"
 ---
 # <a name="quickstart-create-an-azure-cdn-profile-and-endpoint---arm-template"></a>Краткое руководство. Создание конечной точки и профиля Azure CDN — шаблон ARM
 
@@ -107,7 +107,7 @@ New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateUri
 
 ### <a name="powershell"></a>PowerShell
 
-Вы можете удалить группу ресурсов и все ресурсы в ней, если они больше не нужны, выполнив команду [Remove-AzResourceGroup](/powershell/module/az.resources/remove-azresourcegroup?view=latest).
+Вы можете удалить группу ресурсов и все ресурсы в ней, если они больше не нужны, выполнив команду [Remove-AzResourceGroup](/powershell/module/az.resources/remove-azresourcegroup).
 
 ```azurepowershell-interactive 
 Remove-AzResourceGroup -Name myResourceGroupCDN
@@ -126,5 +126,5 @@ Remove-AzResourceGroup -Name myResourceGroupCDN
 
 Дополнительные сведения об Azure CDN и Azure Resource Manager см. в статьях ниже.
 
-* Ознакомьтесь с [обзором Azure CDN](cdn-overview.md).
-* Сведения об [Azure Resource Manager](../azure-resource-manager/management/overview.md)
+> [!div class="nextstepaction"]
+> [Руководство. Использование CDN для обслуживания статического содержимого из веб-приложения](cdn-add-to-web-app.md)

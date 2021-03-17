@@ -3,21 +3,21 @@ title: Учебник по развертыванию и настройке VMwa
 description: Узнайте, как развернуть и настроить решение VMware HCX для частного облака Решения Azure VMware.
 ms.topic: tutorial
 ms.date: 11/25/2020
-ms.openlocfilehash: a792f8dbc646f61377cf0a88e1a6e386340f23e8
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.openlocfilehash: a8b089ce834d5b49e4ad32081a58e371835e8602
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97357897"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102488311"
 ---
 # <a name="deploy-and-configure-vmware-hcx"></a>Развертывание и настройка VMware HCX
 
 В этой статье показано, как развернуть и настроить локальный соединитель VMware HCX для частного облака Решения Azure VMware. С помощью VMware HCX вы можете перенести рабочие нагрузки VMware в Решение Azure VMware и на другие подключенные сайты, используя разные типы миграции. Решение Azure VMware развертывает и настраивает HCX Cloud Manager, поэтому вам нужно скачать, активировать и настроить соединитель HCX в локальном центре обработки данных VMware.
 
-Расширенный соединитель VMware HCX уже развернут в Решении Azure VMware. Он поддерживает до трех подключений к сайтам (из локальной среды в облако или из облака в облако). Если вам нужно более трех подключений к сайтам, создайте [запрос в службу поддержки](https://portal.azure.com/#create/Microsoft.Support), чтобы включить надстройку [VMware HCX Enterprise](https://cloud.vmware.com/community/2019/08/08/introducing-hcx-enterprise/). Сейчас надстройка доступна в предварительной версии. 
+Расширенный соединитель VMware HCX уже развернут в Решении Azure VMware. Он поддерживает до трех подключений к сайтам (из локальной среды в облако или из облака в облако). Если вам нужно более трех подключений к сайтам, создайте [запрос в службу поддержки](https://portal.azure.com/#create/Microsoft.Support), чтобы включить надстройку [VMware HCX Enterprise](https://cloud.vmware.com/community/2019/08/08/introducing-hcx-enterprise/).  
 
 >[!TIP]
->Хотя в средстве VMware Configuration Manager максимально допустимо 25 пар сайтов между локальным соединителем и диспетчером облачных сред, лицензии ограничивают это число до 3 для выпуска Advanced и до 10 для выпуска Enterprise.
+>Хотя в средстве VMware Configuration Manager максимально допустимо 25 пар сайтов между локальным соединителем и диспетчером облачных сред, лицензии ограничивают это число до 3 для выпуска HCX Advanced и до 10 для выпуска HCX Enterprise.
 
 >[!NOTE]
 >VMware HCX Enterprise предоставляется в составе Решения Azure VMware в предварительной версии службы. Эту службу можно использовать бесплатно на условиях предварительной версии. Когда служба VMware HCX Enterprise станет общедоступной, вы получите уведомление о том, что через 30 дней начнут выставляться счета. Вы сможете отключить эту службу или отказаться от ее использования. Простого способа перейти с версии VMware HCX Enterprise к версии VMware HCX Advanced нет. Если вы решите перейти на использование более ранней версии, потребуется выполнить повторное развертывание, что предполагает простой.
@@ -58,9 +58,9 @@ ms.locfileid: "97357897"
 
 ### <a name="network-and-ports"></a>Сеть и порты
 
-* [ExpressRoute Global Reach](tutorial-expressroute-global-reach-private-cloud.md) настраивается между каналами ExpressRoute в локальной среде и программно-определяемом центре обработки данных Решения Azure VMware.
+* [ExpressRoute Global Reach](tutorial-expressroute-global-reach-private-cloud.md) настраивается между каналами ExpressRoute в локальной среде и частным облаком Решения Azure VMware.
 
-* Открыты [все требуемые порты](https://ports.vmware.com/home/VMware-HCX) для обмена данными между локальными компонентами и программно-определяемым центром обработки данных Решения Azure VMware.
+* Открыты [все требуемые порты](https://ports.vmware.com/home/VMware-HCX) для обмена данными между локальными компонентами и частным облаком Решения Azure VMware.
 
 ### <a name="ip-addresses"></a>IP-адреса
 
@@ -76,12 +76,15 @@ ms.locfileid: "97357897"
 
    :::image type="content" source="media/tutorial-vmware-hcx/find-hcx-ip-address.png" alt-text="Снимок экрана: получение IP-адреса VMware HCX." lightbox="media/tutorial-vmware-hcx/find-hcx-ip-address.png":::
 
-1. Последовательно выберите **Управление** > **Удостоверение**, а затем щелкните **Пароль администратора vCenter**, чтобы узнать пароль.
+1. Выберите **Управление** > **Удостоверение**. 
+
+   Отобразятся URL-адреса и учетные данные пользователя в vCenter и NSX-T Manager частного облака.
 
    > [!TIP]
-   > Пароль vCenter был определен при настройке частного облака. Это тот же пароль, который вы будете использовать для входа в диспетчер HCX Решения Azure VMware.
+   > Пароль vCenter был определен при настройке частного облака. Это тот же пароль, который вы будете использовать для входа в диспетчер HCX Решения Azure VMware. Вы можете выбрать **Создать пароль**, чтобы создать новые пароли для vCenter и NSX-T.
 
-   :::image type="content" source="media/tutorial-vmware-hcx/hcx-admin-password.png" alt-text="Получение пароля HCX." lightbox="media/tutorial-vmware-hcx/hcx-admin-password.png":::
+   :::image type="content" source="media/tutorial-access-private-cloud/ss4-display-identity.png" alt-text="Отобразите URL-адреса и учетные данные частного облака vCenter и NSX Manager." border="true":::
+
 
 1. Откройте окно браузера, войдите в диспетчер HCX Решения Azure VMware по адресу `https://x.x.x.9`, используя порт 443 и учетные данные данными пользователя **cloudadmin\@vsphere.local**.
 
@@ -166,7 +169,7 @@ ms.locfileid: "97357897"
 Полный обзор этой процедуры см. в видео [Azure VMware Solution: Activate HCX](https://www.youtube.com/embed/PnVg6SZkQsY?rel=0&amp;vq=hd720) (Решение Azure VMware — активация HCX).
 
    > [!IMPORTANT]
-   > Независимо от того, используете ли вы VMware HCX Advanced или VMware HCX Enterprise, может потребоваться установка исправления, указанного в [статье 81558 базы знаний](https://kb.vmware.com/s/article/81558) для VMware. 
+   > Независимо от того, используете ли вы HCX Advanced или HCX Enterprise, может потребоваться установка исправления, указанного в [статье 81558 базы знаний](https://kb.vmware.com/s/article/81558) VMware. 
 
 ## <a name="configure-the-vmware-hcx-connector"></a>Настройка соединителя VMware HCX
 
@@ -279,7 +282,7 @@ ms.locfileid: "97357897"
 
 ### <a name="create-a-service-mesh"></a>Создание сетки служб
 
-Теперь нужно настроить сетку служб между локальной средой и программно-определяемым центром обработки данных Решения Azure VMware.
+Теперь нужно настроить сетку служб между локальной средой и частным облаком Решения Azure VMware.
 
 
 
@@ -366,7 +369,7 @@ ms.locfileid: "97357897"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Если туннель подключения устройств имеет состояние **UP** (Активно) и обозначен зеленым цветом, вы можете перенести и защитить виртуальные машины Решения Azure VMware с помощью VMware HCX. Решение Azure VMware поддерживает миграцию рабочих нагрузок (с расширением сети или без). Вы по-прежнему можете переносить рабочие нагрузки в среду vSphere, создавать сети в локальной среде и развертывать виртуальные машины в этих сетях.  
+Если туннель подключения HCX имеет состояние **UP** (Активно) и обозначен зеленым цветом, вы можете перенести и защитить виртуальные машины Решения Azure VMware с помощью VMware HCX. Решение Azure VMware поддерживает миграцию рабочих нагрузок (с расширением сети или без). Вы по-прежнему можете переносить рабочие нагрузки в среду vSphere, создавать сети в локальной среде и развертывать виртуальные машины в этих сетях.  
 
 Дополнительные сведения об использовании HCX см. в технической документации по VMware:
 

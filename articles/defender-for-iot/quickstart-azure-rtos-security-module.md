@@ -1,6 +1,6 @@
 ---
 title: Краткое руководство. Настройка и включение модуля безопасности для ОСРВ Azure
-description: Узнайте, как подключить и включить модуль безопасности для службы ОСРВ Azure в Центре Интернета вещей Azure.
+description: В этом кратком руководстве показано, как подключить и включить модуль безопасности для службы ОСРВ Azure в Центре Интернета вещей Azure.
 services: defender-for-iot
 ms.service: defender-for-iot
 documentationcenter: na
@@ -13,14 +13,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/24/2021
 ms.author: shhazam
-ms.openlocfilehash: a11a8ec2d8eb82950cf0ab55eb6ca1913b41c84a
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
+ms.openlocfilehash: 19a439ec48d4a8705ffb46db7ca037b51449083d
+ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100522943"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102447305"
 ---
-# <a name="quickstart-security-module-for-azure-rtos-preview"></a>Краткое руководство. Модуль безопасности для ОСРВ Azure (предварительная версия)
+# <a name="quickstart-security-module-for-azure-rtos"></a>Краткое руководство. Модуль безопасности для ОСРВ Azure 
 
 В этой статье описаны предварительные требования для начала работы и объясняется, как включить модуль безопасности для службы ОСРВ Azure в Центре Интернета вещей. Если у вас сейчас нет Центра Интернета вещей, ознакомьтесь со статьей [Создание Центра Интернета вещей с помощью портала Azure](../iot-hub/iot-hub-create-through-portal.md), чтобы приступить к работе.
 

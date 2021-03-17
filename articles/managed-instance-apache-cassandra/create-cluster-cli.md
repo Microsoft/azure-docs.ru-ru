@@ -6,12 +6,12 @@ ms.author: thvankra
 ms.service: managed-instance-apache-cassandra
 ms.topic: quickstart
 ms.date: 03/02/2021
-ms.openlocfilehash: 510fcf48091266af255c15aced80651619133aab
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 86fa7e2e45dacb86b6601b699dca46b1b909fd08
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747846"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102424705"
 ---
 # <a name="quickstart-create-an-azure-managed-instance-for-apache-cassandra-cluster-using-azure-cli-preview"></a>Краткое руководство. Создание Управляемого экземпляра Azure для кластера Apache Cassandra с помощью Azure CLI (предварительная версия)
 
@@ -30,9 +30,8 @@ ms.locfileid: "101747846"
 
 * [Виртуальная сеть Azure](../virtual-network/virtual-networks-overview.md) с подключением к собственной или локальной среде. Дополнительные сведения о подключении локальных сред к Azure см. в статье [Подключение локальной сети к Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/).
 
-## <a name="prerequisites"></a>Предварительные требования
+* Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
 
-Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
 
 ## <a name="create-a-managed-instance-cluster"></a><a id="create-cluster"></a>Создание кластера с управляемым экземпляром
 
@@ -50,16 +49,10 @@ ms.locfileid: "101747846"
    az network vnet create -n <VNet_Name> -l eastus2 -g <Resource_Group_Name> --subnet-name <Subnet Name>
    ```
 
-1. Примените несколько специальных разрешений к виртуальной сети и подсети, которые необходимы для управляемого экземпляра. Для этого необходимо получить идентификатор ресурса для существующей виртуальной сети. Выполните следующую команду и скопируйте значение параметра `Resource ID`:
+1. Примените несколько специальных разрешений к виртуальной сети и подсети, которые необходимы для управляемого экземпляра. Выполните команду `az role assignment create`, заменив `<subscription ID>`, `<resource group name>`, `<VNet name>` и `<subnet name>` следующими значениями:
 
    ```azurecli-interactive
-   # get the resource ID of the Virtual Network
-   az network vnet show -n <VNet_name> -g <Resource_Group_Name> --query "id" --output tsv
-
-1. Now apply the special permissions by using the `az role assignment create` command. Use the `Resource ID` parameter from the output of previous command to the `scope` parameter:
-
-   ```azurecli-interactive
-   az role assignment create --assignee e5007d2c-4b13-4a74-9b6a-605d99f03501 --role 4d97b98b-1d4f-4787-a291-c67834d212e7 --scope <Resource ID>
+   az role assignment create --assignee e5007d2c-4b13-4a74-9b6a-605d99f03501 --role 4d97b98b-1d4f-4787-a291-c67834d212e7 --scope /subscriptions/<subscription ID>/resourceGroups/<resource group name>/providers/Microsoft.Network/virtualNetworks/<VNet name>/subnets/<subnet name>
    ```
 
    > [!NOTE]

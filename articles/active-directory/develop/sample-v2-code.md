@@ -12,12 +12,12 @@ ms.date: 11/04/2020
 ms.author: marsma
 ms.reviewer: jmprieur
 ms.custom: aaddev, identityplatformtop40
-ms.openlocfilehash: 43a019c8bd3544b769a6b4346d8986bc8e01a4a1
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.openlocfilehash: d61ddee1ac510b6d3528a2221a52fd266a2dd5ad
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100560132"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102436504"
 ---
 # <a name="microsoft-identity-platform-code-samples-v20-endpoint"></a>Примеры кода для платформы удостоверений Майкрософт (конечная точка версии 2.0)
 
@@ -61,12 +61,24 @@ ms.locfileid: "100560132"
 | ![На этом изображении показан логотип ASP.NET Core](media/sample-v2-code/logo_NETcore.png)</p>ASP.NET Core | [Руководство по входу пользователей в систему для веб-приложений ASP.NET Core](https://aka.ms/aspnetcore-webapp-sign-in) | Тот же пример на этапе [Веб-приложение ASP.NET Core вызывает Microsoft Graph](https://aka.ms/aspnetcore-webapp-call-msgraph)</p>Расширенный пример [Доступ к кэшу маркеров выполнившего вход пользователя из фоновых приложений, интерфейсов API и служб](https://github.com/Azure-Samples/ms-identity-dotnet-advanced-token-cache) |
 | ![На этом изображении показан логотип ASP.NET Framework](media/sample-v2-code/logo_NETframework.png)</p>ASP.NET Core | [Сборник схем для разработчиков, посвященный миграции приложений из AD FS в Azure AD](https://github.com/Azure-Samples/ms-identity-dotnet-adfs-to-aad). Узнайте, как безопасно переносить приложения, интегрированные со службами федерации Active Directory (AD FS), в Azure Active Directory (Azure AD). | |
 | ![На этом изображении показан логотип ASP.NET Framework](media/sample-v2-code/logo_NETframework.png)</p> ASP.NET | [Краткое руководство по ASP.NET](https://github.com/AzureAdQuickstarts/AppModelv2-WebApp-OpenIDConnect-DotNet) </p> [dotnet-webapp-openidconnect-v2](https://github.com/azure-samples/active-directory-dotnet-webapp-openidconnect-v2)  |  [dotnet-admin-restricted-scopes-v2](https://github.com/azure-samples/active-directory-dotnet-admin-restricted-scopes-v2) </p> |[msgraph-training-aspnetmvcapp](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp)
-| ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png)  |                   | [ms-identity-java-webapp](https://github.com/Azure-Samples/ms-identity-java-webapp) |
+| ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png)  |[Учебник по Java Servlet. Глава 1.1](https://github.com/Azure-Samples/ms-identity-java-servlet-webapp-authentication/blob/main/README.md) Вход с помощью AAD| |
+| ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png)  |[Учебник по Java Servlet. Глава 1.2](https://github.com/Azure-Samples/ms-identity-java-servlet-webapp-authentication/blob/main/README.md) Вход с помощью B2C |
+| ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png)  | | [Учебник по Java Servlet. Глава 2.1](https://github.com/Azure-Samples/ms-identity-java-servlet-webapp-authentication/blob/main/README.md) Вход с помощью AAD и графа вызовов|
+| ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png)  |[Учебник по Java Servlet. Глава 3.1](https://github.com/Azure-Samples/ms-identity-java-servlet-webapp-authentication/blob/main/README.md) Вход с помощью AAD и контроль доступа с помощью утверждения ролей| |
+| ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png)  | | [Учебник по Java Servlet. Глава 3.2](https://github.com/Azure-Samples/ms-identity-java-servlet-webapp-authentication/blob/main/README.md) Вход с помощью AAD и контроль доступа с помощью утверждения групп|
+| ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png) | |[Учебник по Java Servlet. Глава 4.1](https://github.com/Azure-Samples/ms-identity-java-servlet-webapp-authentication/blob/main/README.md) Развертывание в Службе приложений Azure|
+| ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png)  | | [ms-identity-java-webapp](https://github.com/Azure-Samples/ms-identity-java-webapp) |
 | ![На этом изображении показан логотип Java](media/sample-v2-code/logo_java.png)  | [ms-identity-b2c-java-servlet-webapp-authentication](https://github.com/Azure-Samples/ms-identity-b2c-java-servlet-webapp-authentication)|  |
 | ![На этом изображении показан логотип Node.js](media/sample-v2-code/logo_nodejs.png)</p>Node.js (MSAL Node) | [Учебник по быстрому входу в веб-приложения для пользователей](https://github.com/Azure-Samples/ms-identity-node) | |
-| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | [ms-identity-python-flask-webapp-authentication](https://github.com/Azure-Samples/ms-identity-python-flask-webapp-authentication) | [ms-identity-python-webapp](https://github.com/Azure-Samples/ms-identity-python-webapp) |
-| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | Руководство по реализации входа пользователей в [веб-приложении Python Flask](https://github.com/Azure-Samples/ms-identity-python-flask-tutorial/blob/main/README.md)                   | Руководство по реализации входа пользователей и вызовов Graph в [веб-приложении Python Flask](https://github.com/Azure-Samples/ms-identity-python-flask-tutorial/blob/main/README.md) |
-| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | Реализация входа пользователей в [веб-приложении Python Flask](https://github.com/Azure-Samples/ms-identity-b2c-python-flask-webapp-authentication/blob/main/README.md) с помощью B2C                    |  |
+| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | [Учебник по Python Flask. Глава 1.1](https://github.com/Azure-Samples/ms-identity-python-flask-tutorial/blob/main/README.md) Вход с помощью AAD  |  |
+| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | [Учебник по Python Flask. Глава 1.2](https://github.com/Azure-Samples/ms-identity-python-flask-tutorial/blob/main/README.md) Вход с помощью B2C                    |  |
+| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | | [Учебник по Python Flask. Глава 2.1](https://github.com/Azure-Samples/ms-identity-python-flask-tutorial/blob/main/README.md) Вход с помощью AAD и графа вызовов |
+| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | |[Учебник по Python Flask. Глава 3.1](https://github.com/Azure-Samples/ms-identity-python-flask-tutorial/blob/main/README.md) Развертывание в Службе приложений Azure  |
+| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | [Учебник по Python Django. Глава 1.1](https://github.com/Azure-Samples/ms-identity-python-django-tutorial/blob/main/README.md) Вход с помощью AAD  | |
+| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | [Учебник по Python Django. Глава 1.2](https://github.com/Azure-Samples/ms-identity-python-django-tutorial/blob/main/README.md) Вход с помощью B2C                    |  |
+| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | | [Учебник по Python Django. Глава 2.1](https://github.com/Azure-Samples/ms-identity-python-django-tutorial/blob/main/README.md) Вход с помощью AAD и графа вызовов|
+| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | | [Учебник по Python Django. Глава 3.1](https://github.com/Azure-Samples/ms-identity-python-django-tutorial/blob/main/README.md) Развертывание в Службе приложений Azure                    |
+| ![На этом изображении показан логотип Python](media/sample-v2-code/logo_python.png)  | | [Веб-приложения Python Flask](https://github.com/Azure-Samples/ms-identity-python-webapp) |
 | ![На этом изображении показан логотип Ruby](media/sample-v2-code/logo_ruby.png) |                   | [msgraph-training-rubyrailsapp](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
 | ![На этом изображении показан логотип Blazor](media/sample-v2-code/logo-blazor.png)</p>Blazor Server | Учебник по реализации входа пользователей в [приложение Blazor Server](https://github.com/Azure-Samples/ms-identity-blazor-server/tree/main/WebApp-OIDC) | [Вызов Microsoft Graph приложением Blazor Server](https://github.com/Azure-Samples/ms-identity-blazor-server/tree/main/WebApp-graph-user/Call-MSGraph)</p>Учебник, разделенный на главы: [Предоставление приложению Blazor Server возможности реализовать вход пользователей и вызов API с помощью Azure Active Directory](https://github.com/Azure-Samples/ms-identity-blazor-server) |
 

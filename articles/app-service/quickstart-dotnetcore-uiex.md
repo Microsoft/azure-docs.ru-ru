@@ -7,12 +7,12 @@ ms.date: 11/23/2020
 ms.custom: devx-track-csharp, mvc, devcenter, vs-azure, seodec18, contperf-fy21q1
 zone_pivot_groups: app-service-platform-windows-linux
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 4e2e34d73bc3048c587d7c0505f4978dd638370a
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 2a789b4ca1261c79e8e6eb93a4ed44e7e8e9272e
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102180281"
+ms.locfileid: "102214241"
 ---
 # <a name="quickstart-create-an-aspnet-core-web-app-in-azure"></a>Краткое руководство. Создание веб-приложения ASP.NET Core в Azure
 
@@ -31,10 +31,12 @@ ms.locfileid: "102180281"
 
 <details>
 <summary>Уже есть Visual Studio 2019?</summary>
-  Если у вас уже установлена версия Visual Studio 2019, сделайте следующее.
+Если у вас уже установлена версия Visual Studio 2019, сделайте следующее.
 
-  - **Установите последние обновления** для Visual Studio, выбрав **Справка** > **Проверить обновления**. Последние обновления содержат пакет SDK для .NET 5.0.
-  - **Добавьте рабочую нагрузку**, выбрав **Инструменты** > **Получить инструменты и возможности**.
+<ul>
+<li><strong>Установите последние обновления</strong> для Visual Studio, выбрав <strong>Справка</strong> &gt; <strong>Проверить обновления</strong>. Последние обновления содержат пакет SDK для .NET 5.0.</li>
+<li><strong>Добавьте рабочую нагрузку</strong>, выбрав <strong>Инструменты</strong> &gt; <strong>Получить инструменты и возможности</strong>.</li>
+</ul>
 </details>
 
 <hr/> 
@@ -314,19 +316,19 @@ http://<app_name>.azurewebsites.net
 
 1. **Выполните** `az webapp up`, чтобы повторить развертывание:
 
-```azurecli
-az webapp up --os-type linux
-```
-
-<details>
-<summary>Что делает <code>az webapp up</code> на этот раз?</summary>
-При первом выполнении команды она сохранила имя приложения, группу ресурсов и план службы приложений в файле <i>.azure/config</i> из корневой папки проекта. При повторном выполнении из корневой папки проекта команда использует значения, сохраненные в <i>.azure/config</i>, определяет, что ресурсы службы приложений уже существуют, и повторно выполняет развертывание из ZIP-файла.
-</details>
-
+    ```azurecli
+    az webapp up --os-type linux
+    ```
+    
+    <details>
+    <summary>Что делает <code>az webapp up</code> на этот раз?</summary>
+    При первом выполнении команды она сохранила имя приложения, группу ресурсов и план службы приложений в файле <i>.azure/config</i> из корневой папки проекта. При повторном выполнении из корневой папки проекта команда использует значения, сохраненные в <i>.azure/config</i>, определяет, что ресурсы службы приложений уже существуют, и повторно выполняет развертывание из ZIP-файла.
+    </details>
+    
 1. По завершении развертывания **нажмите кнопку "Обновить"** в ранее открытом окне браузера.
 
-![Обновленный пример приложения, выполняющегося в Azure](media/quickstart-dotnetcore/dotnet-browse-azure-updated.png)
-
+    ![Обновленный пример приложения, выполняющегося в Azure](media/quickstart-dotnetcore/dotnet-browse-azure-updated.png)
+    
 [Возникли проблемы? Сообщите нам!](https://aka.ms/DotNetAppServiceLinuxQuickStart)
 
 <hr/> 
@@ -341,8 +343,8 @@ az webapp up --os-type linux
 
 1. На странице обзора можно выполнять базовые задачи управления: обзор, завершение, запуск, перезагрузку и удаление. В меню слева доступно несколько страниц для настройки приложения. 
 
-![Страница службы приложений на портале Azure](media/quickstart-dotnetcore/portal-app-overview-up.png)
-
+    ![Страница службы приложений на портале Azure](media/quickstart-dotnetcore/portal-app-overview-up.png)
+    
 <hr/> 
 
 ## <a name="9-clean-up-resources"></a>9. Очистка ресурсов

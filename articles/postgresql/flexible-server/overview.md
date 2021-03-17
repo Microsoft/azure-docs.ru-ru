@@ -6,13 +6,13 @@ ms.author: sunila
 ms.custom: mvc
 ms.service: postgresql
 ms.topic: overview
-ms.date: 09/22/2020
-ms.openlocfilehash: b4df91f4654f39780f81e0a27139677431926238
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.date: 03/03/2021
+ms.openlocfilehash: a080a3b536cb6e11a254f15d745334fbf17531e8
+ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
-ms.locfileid: "92532668"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102439567"
 ---
 # <a name="azure-database-for-postgresql---flexible-server"></a>Гибкий сервер Базы данных Azure для PostgreSQL
 
@@ -56,7 +56,7 @@ ms.locfileid: "92532668"
 
 Если настроен высокий уровень доступности с избыточностью в пределах зоны, служба подготавливает и обслуживает сервер горячей замены в зоне доступности в одном и том же регионе Azure. Изменения данных на исходном сервере синхронно реплицируются на резервный сервер во избежание потери данных. При повышении уровня доступности с избыточностью в пределах зоны после запуска планового или внепланового события отработки отказа резервный сервер немедленно переходит в оперативный режим и становится доступным для обработки входящих транзакций. Это обеспечивает устойчивость службы к сбоям зон доступности в пределах региона Azure, который поддерживает несколько зон доступности, как показано на рисунке ниже.
 
- :::image type="content" source="./media/business-continuity/concepts-zone-redundant-high-availability-architecture.png" alt-text="Гибкий сервер — сбои виртуальных машин и хранилищ":::
+ :::image type="content" source="./media/business-continuity/concepts-zone-redundant-high-availability-architecture.png" alt-text="Высокий уровень доступности с избыточностью в пределах зоны":::
 
  Дополнительные сведения см. в документации [по высокому уровню доступности](./concepts-high-availability.md).
 
@@ -86,6 +86,24 @@ ms.locfileid: "92532668"
 
 Служба гибкого сервера оснащена встроенными функциями мониторинга производительности и оповещений. Все метрики Azure записываются ежеминутно, и каждая из них предоставляет данные за последние 30 дней. Вы можете настроить оповещения на основе метрик. Служба предоставляет метрики сервера узла для мониторинга использования ресурсов и позволяет настраивать журналы медленных запросов. С помощью этих средств можно быстро оптимизировать рабочие нагрузки и настроить оптимальную производительность сервера.
 
+## <a name="azure-regions"></a>Регионы Azure
+
+Одним из преимуществ выполнения рабочей нагрузки в Azure является глобальный доступ. На сегодня гибкий сервер доступен в следующих регионах Azure:
+
+| Region | Доступность | Высокий уровень доступности, избыточный между зонами | 
+| --- | --- | --- |
+| Западная Европа | :heavy_check_mark: | :heavy_check_mark: |
+| Северная Европа | :heavy_check_mark: | :heavy_check_mark: |
+| южная часть Соединенного Королевства | :heavy_check_mark: | :heavy_check_mark: | 
+| восточная часть США 2 | :heavy_check_mark: | :heavy_check_mark: |
+| Западная часть США 2 | :heavy_check_mark: | :heavy_check_mark: |
+| Центральная часть США | :heavy_check_mark: | :heavy_check_mark: | 
+| Восточная часть США | :heavy_check_mark: | :heavy_check_mark: | 
+| Southeast Asia | :heavy_check_mark: | :heavy_check_mark: |
+| Japan East | :heavy_check_mark: | :heavy_check_mark: | 
+
+Мы продолжаем добавлять дополнительные регионы для гибкого сервера.
+
 ## <a name="migration"></a>Миграция
 
 В этой службе работает версия PostgreSQL виртуального сообщества. Это обеспечивает полную совместимость приложений и минимальные затраты на рефакторинг при переносе на гибкий сервер существующих приложений, разработанных для ядра СУБД PostgreSQL. 
@@ -93,6 +111,16 @@ ms.locfileid: "92532668"
 - **Создание резервной копии и восстановление.** Для миграций в автономной среде, где допустим некоторый простой для пользователей, самым быстрым способом миграции будет создание резервной копии с последующим восстановлением, для которой применяются такие средства сообщества, как pg_dump and pg_restore. Дополнительные сведения см. в статье [Миграция с использованием дампа и восстановления](../howto-migrate-using-dump-and-restore.md).
 - **Azure Database Migration Service.** Чтобы без проблем выполнить простую миграцию на гибкий сервер с минимальным временем простоя, можно применить Azure Database Migration Service. Изучите возможности [DMS с использованием портала](../../dms/tutorial-postgresql-azure-postgresql-online-portal.md) и [DMS с использованием CLI](../../dms/tutorial-postgresql-azure-postgresql-online.md). Вы можете выполнить миграцию из Базы данных Azure для PostgreSQL (с отдельного сервера на гибкий сервер). Подробные сведения см. в [статье о DMS](../../dms/tutorial-azure-postgresql-to-azure-postgresql-online-portal.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="contacts"></a>Контакты
+Если у вас возникли вопросы или предложения, связанные с использованием гибкого сервера Базы данных Azure для PostgreSQL, вы можете отправить сообщение команде разработчиков Базы данных Azure для PostgreSQL ([@AskБаза данных Azure для PostgreSQL](mailto:AskAzureDBforPostgreSQL@service.microsoft.com)). Учтите, что это не электронный адрес службы технической поддержки.
+
+Кроме того, попробуйте обратиться сюда:
+
+- Для обращения в службу поддержки Azure [отправьте запрос с портала Azure](https://portal.azure.com/?#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
+- Чтобы устранить проблему, связанную с учетной записью, отправьте [запрос в службу поддержки](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) на портале Azure.
+- Чтобы отправить отзыв или отправить запрос на новые возможности, создайте запись через [UserVoice](https://feedback.azure.com/forums/597976-azure-database-for-postgresql).
+  
+
+## <a name="next-steps"></a>Дальнейшие действия
 
 Итак, вы завершили знакомство с режимом развертывания Базы данных Azure для PostgreSQL с отдельным сервером и теперь готовы создать свой первый сервер. [Создание гибкого сервера Базы данных Azure для PostgreSQL с помощью портала Azure](./quickstart-create-server-portal.md)

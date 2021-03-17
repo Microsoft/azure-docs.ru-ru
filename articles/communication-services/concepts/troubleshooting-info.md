@@ -8,12 +8,12 @@ ms.author: manoskow
 ms.date: 10/23/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: ef1c4d87be39b6af90ed07cba9249cca4cf8bd6a
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: e35fcd94ef2fbdde0ac3bb7c71f85a3afd15add4
+ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102036033"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102487293"
 ---
 # <a name="troubleshooting-in-azure-communication-services"></a>Устранение неполадок в Службах коммуникации Azure
 
@@ -25,7 +25,7 @@ ms.locfileid: "102036033"
 
 Для устранения определенных типов проблем могут потребоваться указанные ниже сведения.
 
-* **ИД MS-CV**. Этот идентификатор используется для устранения неполадок при вызовах и сообщениях. 
+* **ИД MS-CV**. Этот идентификатор используется для устранения неполадок при вызовах и сообщениях.
 * **ИД вызова**. Этот идентификатор используется для идентификации вызовов Служб коммуникации.
 * **ИД SMS-сообщений**. Этот идентификатор используется для идентификации SMS-сообщений.
 * **Журналы вызовов**. В этих журналах содержится подробная информация, которую можно использовать для устранения проблем с вызовами и сетью.
@@ -33,14 +33,14 @@ ms.locfileid: "102036033"
 
 ## <a name="access-your-ms-cv-id"></a>Доступ к ИД MS-CV
 
-Доступ к ИД MS-CV можно получить, настроив диагностику в экземпляре объекта `clientOptions` при инициализации клиентских библиотек. Диагностику можно настроить для любой из клиентских библиотек Azure, включая "Чат", "Администрирование" и "Вызовы VoIP".
+Доступ к ИД MS-CV можно получить, настроив диагностику в экземпляре объекта `clientOptions` при инициализации клиентских библиотек. Диагностику можно настроить для любой из клиентских библиотек Azure, включая библиотеку чатов, удостоверений и вызовов VoIP.
 
 ### <a name="client-options-example"></a>Пример параметров клиента
 
 В указанных ниже фрагментах кода показана конфигурация диагностики. При использовании клиентских библиотек с включенной диагностикой сведения о диагностике передаются настроенному прослушивателю событий:
 
 # <a name="c"></a>[C#](#tab/csharp)
-``` 
+```
 // 1. Import Azure.Core.Diagnostics
 using Azure.Core.Diagnostics;
 
@@ -61,13 +61,13 @@ var clientOptions = new ChatClientOptions()
     }
 };
 
-// 4. Initialize the ChatClient instance with the clientOptions 
+// 4. Initialize the ChatClient instance with the clientOptions
 ChatClient chatClient = new ChatClient(endpoint, communicationUserCredential, clientOptions);
 ChatThreadClient chatThreadClient = await chatClient.CreateChatThreadAsync("Thread Topic", new[] { new ChatThreadMember(communicationUser) });
 ```
 
 # <a name="python"></a>[Python](#tab/python)
-``` 
+```
 from azure.communication.chat import ChatClient, CommunicationUserCredential
 endpoint = "https://communication-services-sdk-live-tests-for-python.communication.azure.com"
 chat_client = ChatClient(
@@ -83,22 +83,22 @@ chat_client = ChatClient(
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 ```javascript
-// `call` is an instance of a call created by `callAgent.call` or `callAgent.join` methods 
+// `call` is an instance of a call created by `callAgent.call` or `callAgent.join` methods
 console.log(call.id)
 ```
 
 # <a name="ios"></a>[iOS](#tab/ios)
 ```objc
-// The `call id` property can be retrieved by calling the `call.getCallId()` method on a call object after a call ends 
+// The `call id` property can be retrieved by calling the `call.getCallId()` method on a call object after a call ends
 // todo: the code snippet suggests it's a property while the comment suggests it's a method call
-print(call.callId) 
+print(call.callId)
 ```
 
 # <a name="android"></a>[Android](#tab/android)
 ```java
 // The `call id` property can be retrieved by calling the `call.getCallId()` method on a call object after a call ends
-// `call` is an instance of a call created by `callAgent.call(…)` or `callAgent.join(…)` methods 
-Log.d(call.getCallId()) 
+// `call` is an instance of a call created by `callAgent.call(…)` or `callAgent.join(…)` methods
+Log.d(call.getCallId())
 ```
 ---
 
@@ -130,21 +130,21 @@ console.log(result); // your message ID will be in the result
 Следующий код можно использовать для настройки `AzureLogger` для вывода журналов на консоль с помощью клиентской библиотеки JavaScript:
 
 ```javascript
-import { AzureLogger } from '@azure/logger'; 
+import { AzureLogger } from '@azure/logger';
 
-AzureLogger.verbose = (...args) => { console.info(...args); } 
-AzureLogger.info = (...args) => { console.info(...args); } 
-AzureLogger.warning = (...args) => { console.info(...args); } 
-AzureLogger.error = (...args) => { console.info(...args); } 
+AzureLogger.verbose = (...args) => { console.info(...args); }
+AzureLogger.info = (...args) => { console.info(...args); }
+AzureLogger.warning = (...args) => { console.info(...args); }
+AzureLogger.error = (...args) => { console.info(...args); }
 
-callClient = new CallClient({logger: AzureLogger}); 
+callClient = new CallClient({logger: AzureLogger});
 ```
 
 # <a name="ios"></a>[iOS](#tab/ios)
 
 При разработке для iOS ваши журналы хранятся в файлах `.blog`. Обратите внимание, что вы не можете просматривать журналы напрямую, потому что они зашифрованы.
 
-Доступ к ним можно получить, открыв Xcode. Последовательно выберите Windows > Devices and Simulators (Устройства и симуляторы) > Devices (Устройства). Выберите свое устройство. В разделе "Установленные приложения" выберите свое приложение и нажмите Download container (Загрузить контейнер). 
+Доступ к ним можно получить, открыв Xcode. Последовательно выберите Windows > Devices and Simulators (Устройства и симуляторы) > Devices (Устройства). Выберите свое устройство. В разделе "Установленные приложения" выберите свое приложение и нажмите Download container (Загрузить контейнер).
 
 Таким образом, вы получите файл `xcappdata`. Щелкните этот файл правой кнопкой мыши и выберите Show package contents (Показать содержимое пакета). Затем вы увидите файлы `.blog`, которые затем можно будет прикрепить к запросу в службу поддержки Azure.
 
@@ -152,8 +152,8 @@ callClient = new CallClient({logger: AzureLogger});
 
 При разработке для Android ваши журналы хранятся в файлах `.blog`. Обратите внимание, что вы не можете просматривать журналы напрямую, потому что они зашифрованы.
 
-В Android Studio перейдите в проводник файлов устройства, последовательно выбрав View > Tool Windows > Device File Explorer (Вид >Окна инструментов > Проводник файлов устройства) как в симуляторе, так и на устройстве. Файл `.blog` будет находиться в каталоге приложения, которое должно выглядеть примерно так: `/data/data/[app_name_space:com.contoso.com.acsquickstartapp]/files/acs_sdk.blog`. Вы можете прикрепить этот файл к запросу в службу поддержки. 
-   
+В Android Studio перейдите в проводник файлов устройства, последовательно выбрав View > Tool Windows > Device File Explorer (Вид >Окна инструментов > Проводник файлов устройства) как в симуляторе, так и на устройстве. Файл `.blog` будет находиться в каталоге приложения, которое должно выглядеть примерно так: `/data/data/[app_name_space:com.contoso.com.acsquickstartapp]/files/acs_sdk.blog`. Вы можете прикрепить этот файл к запросу в службу поддержки.
+
 
 ---
 

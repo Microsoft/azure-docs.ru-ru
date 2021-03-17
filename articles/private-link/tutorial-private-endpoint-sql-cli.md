@@ -1,5 +1,5 @@
 ---
-title: Учебник. Подключение к серверу SQL Azure с использованием частной конечной точки Azure (Azure CLI)
+title: Руководство. Подключение к серверу SQL Azure с использованием частной конечной точки Azure (Azure CLI)
 description: Из этого учебника вы узнаете, как создать сервер SQL Azure с частной конечной точкой с помощью Azure CLI
 services: private-link
 author: asudbring
@@ -7,14 +7,15 @@ ms.service: private-link
 ms.topic: tutorial
 ms.date: 11/03/2020
 ms.author: allensu
-ms.openlocfilehash: 8cfe44b9433ee1daac028253aa45c97804c88ae5
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.custom: fasttrack-edit
+ms.openlocfilehash: 998b52a23894dcb7fa08b2c0fd42e4ef8e3678ae
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95544111"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102554995"
 ---
-# <a name="tutorial---connect-to-an-azure-sql-server-using-an-azure-private-endpoint---azure-cli"></a>Учебник. Подключение к серверу SQL Azure с использованием частной конечной точки Azure (Azure CLI)
+# <a name="tutorial-connect-to-an-azure-sql-server-using-an-azure-private-endpoint---azure-cli"></a>Руководство. Подключение к серверу SQL Azure с использованием частной конечной точки Azure (Azure CLI)
 
 Частная конечная точка Azure — ключевой компонент для построения Приватного канала в Azure. Это позволяет ресурсам Azure, таким как виртуальные машины (ВМ), обмениваться данными с ресурсами Приватного канала в частном порядке.
 
@@ -327,6 +328,6 @@ az group delete \
 
 Вы использовали виртуальную машину для безопасного тестирования подключения к SQL Server через частную конечную точку.
 
-Создание службы Приватного канала:
+В качестве следующего шага вы также можете ознакомиться со сценарием архитектуры **веб-приложения с частным подключением к базе данных SQL Azure**, когда веб-приложение за пределами виртуальной сети подключается к частной конечной точке базы данных.
 > [!div class="nextstepaction"]
-> [Создание службы "Приватный канал"](create-private-link-service-portal.md)
+> [Веб-приложение с частным подключением к базе данных SQL Azure](/azure/architecture/example-scenario/private-web-app/private-web-app)

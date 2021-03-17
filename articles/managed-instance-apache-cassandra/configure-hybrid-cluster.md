@@ -6,12 +6,12 @@ ms.author: thvankra
 ms.service: managed-instance-apache-cassandra
 ms.topic: quickstart
 ms.date: 03/02/2021
-ms.openlocfilehash: dac59fb5262cc55acfbabedd304913fc7ac57751
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 11daa548e90aa1906ba87e081fa1e0be6fe6aff8
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747918"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102430774"
 ---
 # <a name="quickstart-configure-a-hybrid-cluster-with-azure-managed-instance-for-apache-cassandra-preview"></a>Краткое руководство. Настройка гибридного кластера с помощью службы "Управляемый экземпляр Azure для Apache Cassandra" (предварительная версия)
 
@@ -39,20 +39,14 @@ ms.locfileid: "101747918"
    :::image type="content" source="./media/configure-hybrid-cluster/subnet.png" alt-text="Создание подсети в виртуальной сети." lightbox="./media/configure-hybrid-cluster/subnet.png" border="true":::
     <!-- ![image](./media/configure-hybrid-cluster/subnet.png) -->
 
-1. Теперь мы с помощью Azure CLI применим к виртуальной сети и подсетям специальные разрешения, которые требует Управляемый экземпляр Cassandra. Для начала нам нужно найти `Resource ID` для существующей виртуальной сети. Скопируйте значение из выходных данных этой команды, оно будет использоваться как `Resource ID`.
+1. Теперь мы с помощью Azure CLI применим к виртуальной сети и подсетям специальные разрешения, которые требует Управляемый экземпляр Cassandra. Выполните команду `az role assignment create`, заменив `<subscription ID>`, `<resource group name>`, `<VNet name>` и `<subnet name>` следующими значениями:
 
    ```azurecli-interactive
-    # discover the vnet id
-    az network vnet show -n <your VNet name> -g <Resource Group Name> --query "id" --output tsv
+   az role assignment create --assignee e5007d2c-4b13-4a74-9b6a-605d99f03501 --role 4d97b98b-1d4f-4787-a291-c67834d212e7 --scope /subscriptions/<subscription ID>/resourceGroups/<resource group name>/providers/Microsoft.Network/virtualNetworks/<VNet name>/subnets/<subnet name>
    ```
 
-1. Теперь мы применим специальные разрешения, передав выходные данные предыдущей команды в качестве параметра области:
-
-   ```azurecli-interactive
-    az role assignment create --assignee e5007d2c-4b13-4a74-9b6a-605d99f03501 --role 4d97b98b-1d4f-4787-a291-c67834d212e7 --scope <Resource ID>
-   ```
-    > [!NOTE]
-    > Указанные выше значения `assignee` и `role` являются фиксированными идентификаторами субъекта-службы и роли соответственно. 
+   > [!NOTE]
+   > Значения `assignee` и `role` в предыдущей команде являются фиксированными идентификаторами субъекта-службы и роли соответственно.
 
 1. Теперь нам предстоит настроить ресурсы для гибридного кластера. Так как кластер у вас уже есть, имя кластера здесь является логическим ресурсом, который позволяет указать имя существующего кластера. Обязательно указывайте имя существующего кластера при определении переменных `clusterName` и `clusterNameOverride` в следующем скрипте.
 
@@ -150,7 +144,7 @@ ms.locfileid: "101747918"
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Если вы не планируете в дальнейшем использовать кластер с управляемым экземпляром, удалите его, выполнив следующие действия:
+Если вы не собираетесь в дальнейшем использовать кластер с управляемым экземпляром, удалите его, выполнив следующие действия:
 
 1. В меню слева на портале Azure выберите **Группы ресурсов**.
 1. Выберите из списка группу ресурсов, созданную для этого краткого руководства.

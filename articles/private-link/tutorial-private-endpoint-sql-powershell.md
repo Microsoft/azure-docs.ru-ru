@@ -7,14 +7,15 @@ ms.service: private-link
 ms.topic: tutorial
 ms.date: 10/31/2020
 ms.author: allensu
-ms.openlocfilehash: 7448e003771bea1e235d4e0776ebce3cb1beae17
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.custom: fasttrack-edit
+ms.openlocfilehash: 8668bdb9dc391582234bf5741c0dd287d026defd
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95544094"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102554944"
 ---
-# <a name="tutorial---connect-to-an-azure-sql-server-using-an-azure-private-endpoint---azure-powershell"></a>Руководство. Подключение к серверу SQL Azure с использованием частной конечной точки Azure с помощью Azure PowerShell
+# <a name="tutorial-connect-to-an-azure-sql-server-using-an-azure-private-endpoint---azure-powershell"></a>Руководство. Подключение к серверу SQL Azure с использованием частной конечной точки Azure с помощью Azure PowerShell
 
 Частная конечная точка Azure — ключевой компонент для построения Приватного канала в Azure. Это позволяет ресурсам Azure, таким как виртуальные машины (ВМ), обмениваться данными с ресурсами Приватного канала в частном порядке.
 
@@ -337,6 +338,6 @@ New-AzPrivateDnsZoneGroup @parameters4
 
 Вы использовали виртуальную машину для безопасного тестирования подключения к SQL Server через частную конечную точку.
 
-Создание службы Приватного канала:
+В качестве следующего шага вы также можете ознакомиться со сценарием архитектуры **веб-приложения с частным подключением к базе данных SQL Azure**, когда веб-приложение за пределами виртуальной сети подключается к частной конечной точке базы данных.
 > [!div class="nextstepaction"]
-> [Создание службы "Приватный канал"](create-private-link-service-portal.md)
+> [Веб-приложение с частным подключением к базе данных SQL Azure](/azure/architecture/example-scenario/private-web-app/private-web-app)

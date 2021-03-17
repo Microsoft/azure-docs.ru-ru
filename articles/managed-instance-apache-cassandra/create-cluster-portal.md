@@ -7,19 +7,19 @@ ms.service: managed-instance-apache-cassandra
 ms.topic: quickstart
 ms.date: 03/02/2021
 ms.custom: references_regions
-ms.openlocfilehash: a05769c66c4b13de5c7197ef5612d64781574987
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: d94bedad1ba7a2c6d814021b733404ccc58148ed
+ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101747909"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102424688"
 ---
 # <a name="quickstart-create-an-azure-managed-instance-for-apache-cassandra-cluster-from-the-azure-portal-preview"></a>Краткое руководство. Создание управляемого экземпляра Azure для кластера Apache Cassandra на портале Microsoft Azure (предварительная версия)
  
 Управляемый экземпляр базы данных SQL Azure для Apache Cassandra позволяет автоматизировать операции развертывания и масштабирования для управляемых центров обработки данных Apache Cassandra с открытым кодом, ускоряя работу в гибридных сценариях и сокращая необходимый объем текущего обслуживания.
 
 > [!IMPORTANT]
-> Управляемый экземпляр базы данных SQL Azure для Apache Cassandra в настоящее время предоставляется в режиме общедоступной предварительной версии.
+> Служба "Управляемый экземпляр Azure для Apache Cassandra" сейчас предоставляется в общедоступной предварительной версии.
 > Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены.
 > Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
@@ -63,16 +63,10 @@ ms.locfileid: "101747909"
 
    :::image type="content" source="./media/create-cluster-portal/networking.png" alt-text="Настройка параметров сетевого подключения." lightbox="./media/create-cluster-portal/networking.png" border="true":::
 
-1. Если вы создали новую виртуальную сеть на последнем шаге, перейдите к шагу 9. Если вы выбрали существующую виртуальную сеть Microsoft Azure, перед созданием кластера необходимо применить некоторые специальные разрешения к виртуальной сети и подсети. Для этого необходимо получить идентификатор ресурса для существующей виртуальной сети Microsoft Azure. Выполните следующую команду в [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli):
+1. Если вы создали новую виртуальную сеть на последнем шаге, перейдите к шагу 8. Если вы выбрали существующую виртуальную сеть Microsoft Azure, перед созданием кластера необходимо применить некоторые специальные разрешения к виртуальной сети и подсети. Для этого выполните команду `az role assignment create`, заменив `<subscription ID>`, `<resource group name>`, `<VNet name>` и `<subnet name>` следующими значениями:
 
    ```azurecli-interactive
-   # get the resource ID of the Virtual Network
-   az network vnet show -n <VNet_name> -g <Resource_Group_Name> --query "id" --output tsv
-
-1. Now apply the special permissions by using the `az role assignment create` command. Replace `<Resource ID>` with the output of previous command:
-
-   ```azurecli-interactive
-   az role assignment create --assignee e5007d2c-4b13-4a74-9b6a-605d99f03501 --role 4d97b98b-1d4f-4787-a291-c67834d212e7 --scope <Resource ID>
+   az role assignment create --assignee e5007d2c-4b13-4a74-9b6a-605d99f03501 --role 4d97b98b-1d4f-4787-a291-c67834d212e7 --scope /subscriptions/<subscription ID>/resourceGroups/<resource group name>/providers/Microsoft.Network/virtualNetworks/<VNet name>/subnets/<subnet name>
    ```
 
    > [!NOTE]
@@ -122,11 +116,11 @@ cqlsh $host 9042 -u cassandra -p cassandra --ssl
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-Если вы не планируете в дальнейшем использовать кластер с управляемым экземпляром, удалите его, выполнив следующие действия:
+Если вы не собираетесь в дальнейшем использовать кластер с управляемым экземпляром, удалите его, выполнив следующие действия:
 
-1. В меню слева на портале Microsoft Azure выберите **Группы ресурсов**.
+1. В меню слева на портале Azure выберите **Группы ресурсов**.
 1. Выберите из списка группу ресурсов, созданную для этого краткого руководства.
-1. В области **Обзор** на странице группы ресурсов выберите **Удалить группу ресурсов**.
+1. На панели **Обзор** на странице группы ресурсов выберите **Удалить группу ресурсов**.
 1. В следующем окне введите имя группы ресурсов, которую требуется удалить, и щелкните **Удалить**.
 
 ## <a name="next-steps"></a>Дальнейшие действия

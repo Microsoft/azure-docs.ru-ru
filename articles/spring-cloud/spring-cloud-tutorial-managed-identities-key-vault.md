@@ -7,12 +7,12 @@ ms.service: spring-cloud
 ms.topic: tutorial
 ms.date: 07/08/2020
 ms.custom: devx-track-java, devx-track-azurecli
-ms.openlocfilehash: fc44dd6cf91d687f47afadf1c3378956d838bc9d
-ms.sourcegitcommit: 1d6ec4b6f60b7d9759269ce55b00c5ac5fb57d32
+ms.openlocfilehash: 7e02bfb295460797edf46eac57afa628cd1544be
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94579510"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102212932"
 ---
 # <a name="tutorial-use-a-managed-identity-to-connect-key-vault-to-an-azure-spring-cloud-app"></a>Руководство по использованию управляемого удостоверения для подключения Key Vault к приложению Azure Spring Cloud
 
@@ -25,18 +25,18 @@ ms.locfileid: "94579510"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * [Регистрация для получения подписки Azure](https://azure.microsoft.com/free/)
-* [установите Azure CLI (версии 2.0.67 или выше)](/cli/azure/install-azure-cli?preserve-view=true&view=azure-cli-latest);
+* [установите Azure CLI (версии 2.0.67 или выше)](/cli/azure/install-azure-cli);
 * [установите Maven 3.0 или более поздней версии](https://maven.apache.org/download.cgi);
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
-Группа ресурсов — это логический контейнер, в котором происходит развертывание ресурсов Azure и управление ими. Создайте группу ресурсов, которая будет содержать Key Vault и Spring Cloud, с помощью команды [az group create](/cli/azure/group?view=azure-cli-latest&preserve-view=true#az-group-create).
+Группа ресурсов — это логический контейнер, в котором происходит развертывание ресурсов Azure и управление ими. Создайте группу ресурсов, которая будет содержать Key Vault и Spring Cloud, с помощью команды [az group create](/cli/azure/group#az-group-create).
 
 ```azurecli-interactive
 az group create --name "myResourceGroup" -l "EastUS"
 ```
 
 ## <a name="set-up-your-key-vault"></a>Настройка Key Vault
-Чтобы создать Key Vault, используйте команду [az keyvault create](/cli/azure/keyvault?view=azure-cli-latest&preserve-view=true#az-keyvault-create).
+Чтобы создать Key Vault, используйте команду [az keyvault create](/cli/azure/keyvault#az-keyvault-create).
 
 > [!Important]
 > Каждый Key Vault должен иметь уникальное имя. В следующих примерах замените заполнитель <your-keyvault-name> именем своего экземпляра Key Vault.
@@ -47,7 +47,7 @@ az keyvault create --name "<your-keyvault-name>" -g "myResourceGroup"
 
 Запишите полученное значение `vaultUri` в формате https://<your-keyvault-name>.vault.azure.net. Оно понадобится вам позже.
 
-Теперь поместите секрет в Key Vault с помощью команды [az keyvault secret set](/cli/azure/keyvault/secret?view=azure-cli-latest&preserve-view=true#az-keyvault-secret-set).
+Теперь поместите секрет в Key Vault с помощью команды [az keyvault secret set](/cli/azure/keyvault/secret#az-keyvault-secret-set).
 
 ```azurecli-interactive
 az keyvault secret set --vault-name "<your-keyvault-name>" \
@@ -65,11 +65,11 @@ az spring-cloud create -n "myspringcloud" -g "myResourceGroup"
 В приведенном ниже примере создается приложение `springapp` с управляемым удостоверением, назначаемым системой, как определено параметром `--assign-identity`.
 
 ```azurecli
-az spring-cloud app create -n "springapp" -s "myspringcloud" -g "myResourceGroup" --is-public true --assign-identity
+az spring-cloud app create -n "springapp" -s "myspringcloud" -g "myResourceGroup" --assign-endpoint true --assign-identity
 export SERVICE_IDENTITY=$(az spring-cloud app show --name "springapp" -s "myspringcloud" -g "myResourceGroup" | jq -r '.identity.principalId')
 ```
 
-Запишите полученное значение `url` в формате https://<your-app-name>.azuremicroservices.io. Оно понадобится вам позже.
+Запишите полученное значение `url` в формате `https://<your-app-name>.azuremicroservices.io`. Оно понадобится вам позже.
 
 
 ## <a name="grant-your-app-access-to-key-vault"></a>Предоставление приложению доступа к Key Vault
@@ -169,7 +169,7 @@ az keyvault set-policy --name "<your-keyvault-name>" --object-id ${SERVICE_IDENT
 
 ## <a name="build-sample-spring-boot-app-with-java-sdk"></a>Создание примера приложения Spring Boot с помощью пакета SDK для Java
 
-Этот пример может определять и получать секреты из Azure Key Vault. [Клиентская библиотека секретов Azure Key Vault для Java](/java/api/overview/azure/security-keyvault-secrets-readme?preserve-view=true&view=azure-java-stablelibrary) поддерживает проверку подлинности Azure Active Directory на основе токенов в пакете SDK Azure. Она предоставляет набор реализаций **TokenCredential**, которые можно использовать для создания клиентов пакета SDK Azure и включения поддержки проверки подлинности AAD на основе токенов.
+Этот пример может определять и получать секреты из Azure Key Vault. [Клиентская библиотека секретов Azure Key Vault для Java](/java/api/overview/azure/security-keyvault-secrets-readme) поддерживает проверку подлинности Azure Active Directory на основе токенов в пакете SDK Azure. Она предоставляет набор реализаций **TokenCredential**, которые можно использовать для создания клиентов пакета SDK Azure и включения поддержки проверки подлинности AAD на основе токенов.
 
 Эта библиотека позволяет безопасно хранить токены, пароли, ключи API и другие секреты, а также контролировать доступ к этой информации. Библиотека предоставляет операции для создания, извлечения, обновления, удаления, очистки, резервного копирования, восстановления и перечисления секретов и их версий.
 
@@ -193,7 +193,7 @@ az keyvault set-policy --name "<your-keyvault-name>" --object-id ${SERVICE_IDENT
     azure.keyvault.uri=https://<your-keyvault-name>.vault.azure.net
     ```
 
-3. Включите [ManagedIdentityCredentialBuilder](/java/api/com.azure.identity.managedidentitycredentialbuilder?preserve-view=true&view=azure-java-stable), чтобы получить токен из Azure Active Directory и [SecretClientBuilder](/java/api/com.azure.security.keyvault.secrets.secretclientbuilder?preserve-view=true&view=azure-java-stable), чтобы определить или получить секреты из Key Vault в коде.
+3. Включите [ManagedIdentityCredentialBuilder](/java/api/com.azure.identity.managedidentitycredentialbuilder), чтобы получить токен из Azure Active Directory и [SecretClientBuilder](/java/api/com.azure.security.keyvault.secrets.secretclientbuilder), чтобы определить или получить секреты из Key Vault в коде.
 
     Получите пример из [MainController.java](https://github.com/Azure-Samples/Azure-Spring-Cloud-Samples/blob/master/managed-identity-keyvault/src/main/java/com/microsoft/azure/MainController.java#L28) клонированного примера проекта.
 

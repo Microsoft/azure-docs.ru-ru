@@ -1,19 +1,19 @@
 ---
-title: Создание службы приватного канала в Приватном канале Azure
+title: Краткое руководство. Создание службы приватного канала в Приватном канале Azure
 description: В этом кратком руководстве показано, как создать службу "Приватный канал" с помощью шаблона Azure Resource Manager (шаблона ARM).
 services: private-link
-author: mblanco77
+author: asudbring
 ms.service: private-link
 ms.topic: quickstart
 ms.custom: subject-armqs
 ms.date: 05/29/2020
 ms.author: allensu
-ms.openlocfilehash: dce80d70af7cd711cf852a60b98ad65b6d21117f
-ms.sourcegitcommit: eb6bef1274b9e6390c7a77ff69bf6a3b94e827fc
+ms.openlocfilehash: 34993ad3d3d0494f89bd264a8b7194f52129ad7c
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "88705254"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102555063"
 ---
 # <a name="quickstart-create-a-private-link-service-by-using-an-arm-template"></a>Краткое руководство. Создание службы "Приватный канал" с помощью шаблона ARM
 
@@ -42,13 +42,13 @@ ms.locfileid: "88705254"
 В шаблоне определено несколько ресурсов Azure:
 
 - [**Microsoft.Network/virtualNetworks**](/azure/templates/microsoft.network/virtualnetworks). Для каждой виртуальной машины существует одна виртуальная сеть.
-- [**Microsoft.Network/loadBalancers.** ](/azure/templates/microsoft.network/loadBalancers) Подсистема балансировки нагрузки, предоставляющая виртуальные машины с размещенной службой.
-- [**Microsoft.Network/networkInterfaces.** ](/azure/templates/microsoft.network/networkinterfaces) Две сетевых интерфейса — по одному для каждой виртуальной машины.
-- [**Microsoft.Compute/virtualMachines.** ](/azure/templates/microsoft.compute/virtualmachines) Две виртуальные машины — на одной размещена служба, а другая используется для проверки подключения к частной конечной точке.
-- [**Microsoft.Compute/virtualMachines/extensions.** ](/azure/templates/Microsoft.Compute/virtualMachines/extensions) Расширение, устанавливающее веб-сервер.
-- [**Microsoft.Network/privateLinkServices.** ](/azure/templates/microsoft.network/privateLinkServices) Служба приватного канала для предоставления службы.
-- [**Microsoft.Network/publicIpAddresses.** ](/azure/templates/microsoft.network/publicIpAddresses) Два общедоступных IP-адреса, по одному для каждой виртуальной машины.
-- [**Microsoft.Network/privateendpoints.** ](/azure/templates/microsoft.network/privateendpoints) Частная конечная точка для обращения к службе.
+- [**Microsoft.Network/loadBalancers.**](/azure/templates/microsoft.network/loadBalancers) Подсистема балансировки нагрузки, предоставляющая виртуальные машины с размещенной службой.
+- [**Microsoft.Network/networkInterfaces.**](/azure/templates/microsoft.network/networkinterfaces) Две сетевых интерфейса — по одному для каждой виртуальной машины.
+- [**Microsoft.Compute/virtualMachines.**](/azure/templates/microsoft.compute/virtualmachines) Две виртуальные машины — на одной размещена служба, а другая используется для проверки подключения к частной конечной точке.
+- [**Microsoft.Compute/virtualMachines/extensions.**](/azure/templates/Microsoft.Compute/virtualMachines/extensions) Расширение, устанавливающее веб-сервер.
+- [**Microsoft.Network/privateLinkServices.**](/azure/templates/microsoft.network/privateLinkServices) Служба приватного канала для предоставления службы.
+- [**Microsoft.Network/publicIpAddresses.**](/azure/templates/microsoft.network/publicIpAddresses) Два общедоступных IP-адреса, по одному для каждой виртуальной машины.
+- [**Microsoft.Network/privateendpoints.**](/azure/templates/microsoft.network/privateendpoints) Частная конечная точка для обращения к службе.
 
 ## <a name="deploy-the-template"></a>Развертывание шаблона
 
@@ -112,4 +112,7 @@ Remove-AzResourceGroup -Name <your resource group name>
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-См. сведения о службе [Приватный канал Azure](private-link-overview.md).
+
+Дополнительные сведения о службах, поддерживающих частную конечную точку, см. в следующей статье:
+> [!div class="nextstepaction"]
+> [Доступность Приватного канала](private-link-overview.md#availability)

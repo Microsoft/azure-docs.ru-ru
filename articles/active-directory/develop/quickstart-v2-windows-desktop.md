@@ -11,12 +11,12 @@ ms.workload: identity
 ms.date: 12/12/2019
 ms.author: jmprieur
 ms.custom: aaddev, identityplatformtop40
-ms.openlocfilehash: 81a5f28f0bf2f7f7ea005a4d9fe8d42337f6d0b9
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.openlocfilehash: 02dc2b4e86c9d0bad0c8274967aa4da77440ec01
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100103402"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102498767"
 ---
 # <a name="quickstart-acquire-a-token-and-call-microsoft-graph-api-from-a-windows-desktop-app"></a>Краткое руководство. Получение маркера безопасности и вызов API Microsoft Graph из классического приложения Windows
 
@@ -54,12 +54,12 @@ ms.locfileid: "100103402"
 > 1. Выберите **Зарегистрировать**, чтобы создать приложение.
 > 1. В разделе **Управление** выберите **Проверка подлинности**.
 > 1. Поочередно выберите **Добавить платформу** > **Мобильные и классические приложения**.
-> 1. В разделе **URI перенаправления** выберите `https://login.microsoftonline.com/common/oauth2/nativeclient`.
+> 1. В разделе **URI перенаправления** выберите `https://login.microsoftonline.com/common/oauth2/nativeclient` и в поле **Пользовательские URI перенаправления** добавьте `ms-appx-web://microsoft.aad.brokerplugin/{client_id}`, где `{client_id}` — это идентификатор приложения (клиента) приложения (тот же GUID, который отображается в поле `msal{client_id}://auth`).
 > 1. Нажмите кнопку **Настроить**.
 
 > [!div class="sxs-lookup" renderon="portal"]
 > #### <a name="step-1-configure-your-application-in-azure-portal"></a>Шаг 1. Настройка приложения на портале Azure
-> Чтобы пример кода, приведенный в этом кратком руководстве, работал, добавьте **URI перенаправления** `https://login.microsoftonline.com/common/oauth2/nativeclient`.
+> Чтобы пример кода, приведенный в этом кратком руководстве, работал, добавьте **URI перенаправления** `https://login.microsoftonline.com/common/oauth2/nativeclient` и `ms-appx-web://microsoft.aad.brokerplugin/{client_id}`.
 > > [!div renderon="portal" id="makechanges" class="nextstepaction"]
 > > [Внести это изменение для меня]()
 >

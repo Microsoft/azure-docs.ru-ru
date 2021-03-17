@@ -5,12 +5,12 @@ services: container-service
 ms.topic: quickstart
 ms.date: 01/13/2021
 ms.custom: mvc,subject-armqs, devx-track-azurecli
-ms.openlocfilehash: 56bacf1ae68081d5822fdb0e80762926d4eb581c
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: f17e42915968f52aee8bd106b5cadd26457998ff
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102173738"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102501329"
 ---
 # <a name="quickstart-deploy-an-azure-kubernetes-service-aks-cluster-using-an-arm-template"></a>Краткое руководство. Развертывание кластера Службы Azure Kubernetes (AKS) с помощью шаблона ARM
 
@@ -32,7 +32,7 @@ ms.locfileid: "102173738"
 
 - Для работы с этой статьей требуется Azure CLI версии 2.0.61 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
-- Чтобы создать кластер AKS с использованием шаблона Resource Manager, укажите открытый ключ SSH и субъект-службу Azure Active Directory. Кроме того, для разрешений можно использовать [управляемое удостоверение](use-managed-identity.md) вместо субъекта-службы. Если вам требуется один из этих ресурсов, выполните инструкции из следующего раздела. В противном случае перейдите к разделу [Изучение шаблона](#review-the-template).
+- Чтобы создать кластер AKS с использованием шаблона Resource Manager, укажите открытый ключ SSH. Если вам требуется этот ресурс, выполните инструкции из следующего раздела. В противном случае перейдите к разделу [Изучение шаблона](#review-the-template).
 
 ### <a name="create-an-ssh-key-pair"></a>Создание пары ключей SSH
 
@@ -47,28 +47,6 @@ ssh-keygen -t rsa -b 2048
 ```
 
 Дополнительные сведения о создании ключей SSH см. в статье [Detailed steps: Create and manage SSH keys for authentication to a Linux VM in Azure][ssh-keys] (Подробные инструкции. Создание ключей SSH для проверки подлинности на виртуальной машине Linux в Azure и управление этими ключами).
-
-### <a name="create-a-service-principal"></a>Создание субъекта-службы
-
-Для взаимодействия с API-интерфейсами Azure кластеру AKS требуется субъект-служба Azure Active Directory. Создайте субъект-службу с помощью команды [az ad sp create-for-rbac][az-ad-sp-create-for-rbac]. Параметр `--skip-assignment` ограничивает назначение дополнительных разрешений. По умолчанию этот субъект-служба действителен в течение одного года. Обратите внимание, что вместо субъекта-службы можно использовать управляемое удостоверение. Дополнительные сведения см. в статье о том, [как использовать управляемые удостоверения](use-managed-identity.md).
-
-```azurecli-interactive
-az ad sp create-for-rbac --skip-assignment
-```
-
-Вы должны увидеть результат, аналогичный приведенному ниже.
-
-```json
-{
-  "appId": "8b1ede42-d407-46c2-a1bc-6b213b04295f",
-  "displayName": "azure-cli-2019-04-19-21-42-11",
-  "name": "http://azure-cli-2019-04-19-21-42-11",
-  "password": "27e5ac58-81b0-46c1-bd87-85b4ef622682",
-  "tenant": "73f978cf-87f2-41bf-92ab-2e7ce012db57"
-}
-```
-
-Запишите значения параметров *appId* и *password*. Эти значения используются в приведенных далее действиях.
 
 ## <a name="review-the-template"></a>Изучение шаблона
 
@@ -95,13 +73,10 @@ az ad sp create-for-rbac --skip-assignment
     * **DNS-префикс**. Введите уникальный префикс DNS для своего кластера, например *myakscluster*.
     * **Имя администратора Linux**. Введите имя пользователя для подключения с помощью SSH, например *azureuser*.
     * **Открытый ключ SSH RSA**. Скопируйте и вставьте *открытую* часть пары ключей SSH (по умолчанию содержимое *~/.ssh/id_rsa.pub*).
-    * **Идентификатор клиента для субъекта-службы**. Скопируйте и вставьте *appId* участника-службы из команды `az ad sp create-for-rbac`.
-    * **Секрет клиента субъекта-службы**. Скопируйте и вставьте *пароль* участника-службы из команды `az ad sp create-for-rbac`.
-    * **I agree to the terms and conditions state above** (Я принимаю указанные выше условия). Установите этот флажок, чтобы принять условия.
 
     ![Шаблон Resource Manager для создания кластера Службы Azure Kubernetes на портале](./media/kubernetes-walkthrough-rm-template/create-aks-cluster-using-template-portal.png)
 
-3. Щелкните **Приобрести**.
+3. Выберите **Review + Create** (Просмотреть и создать).
 
 Создание кластера AKS занимает несколько минут. Дождитесь успешного развертывания кластера, прежде чем перейти к следующему шагу.
 

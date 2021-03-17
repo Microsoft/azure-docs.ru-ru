@@ -8,16 +8,18 @@ ms.author: chpalm
 ms.date: 10/03/2020
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 8e08c531cd46d5112138a3feedf97b27307e3dca
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 6fbc20ec7145a474d9f3aada153f2d012aba34f8
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101656199"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102561353"
 ---
 # <a name="region-availability-and-data-residency"></a>Доступность в регионах и место расположения данных
 
-Службы коммуникации Azure помогают нашим клиентам установить необходимый уровень конфиденциальности и защиты персональных данных. Будучи разработчиком, который использует Службы коммуникации с прямой связью с пользователями приложения, вы являетесь потенциальным контроллером их данных. Поскольку Службы коммуникации Azure хранят эти данные от вашего имени, мы, по всей вероятности, выступаем процессором данных. Эта страница отображает процесс хранения данных и способы определения, экспорта и удаления этих данных.
+[!INCLUDE [Public Preview Notice](../includes/public-preview-include.md)]
+
+Службы коммуникации Azure помогают нашим клиентам установить необходимый уровень конфиденциальности и защиты персональных данных. Будучи разработчиком, который использует Службы коммуникации с прямой связью с пользователями приложения, вы являетесь потенциальным контроллером их данных. Так как Службы коммуникации Azure хранят и шифруют эти неактивные данные от вашего имени, мы, видимо, выступаем в роли обработчика данных. Эта страница отображает процесс хранения данных и способы определения, экспорта и удаления этих данных.
 
 ## <a name="data-residency"></a>Местонахождение данных
 
@@ -79,6 +81,6 @@ ms.locfileid: "101656199"
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-- [Запросы субъектов данных Azure в рамках GDPR и CCPA](/microsoft-365/compliance/gdpr-dsr-azure?preserve-view=true&view=o365-worldwide)
+- [Запросы субъектов данных Azure в рамках GDPR и CCPA](/microsoft-365/compliance/gdpr-dsr-azure)
 - [Центр управления безопасностью Майкрософт](https://www.microsoft.com/trust-center/privacy/data-location)
 - [Интерактивная карта Azure. Где размещены данные моих клиентов?](https://azuredatacentermap.azurewebsites.net/)

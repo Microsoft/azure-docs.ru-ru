@@ -1,0 +1,41 @@
+---
+title: Общие сведения о проигрывателях мультимедиа для Служб мультимедиа
+description: Какие проигрыватели мультимедиа можно использовать со Службами мультимедиа Azure? На сегодняшний день можно использовать Проигрыватель мультимедиа Azure, Shaka и Video.js.
+author: IngridAtMicrosoft
+ms.author: inhenkel
+ms.service: media-services
+ms.topic: overview
+ms.date: 3/08/2021
+ms.openlocfilehash: 1a1d415b374818d9a51c87e78e7ac422fa374bc5
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102510605"
+---
+# <a name="media-players-for-media-services"></a>Проигрыватели мультимедиа для Служб мультимедиа
+
+Для Служб мультимедиа можно использовать несколько проигрывателей мультимедиа.
+
+## <a name="azure-media-player"></a>Проигрыватель мультимедиа Azure
+
+Проигрыватель мультимедиа Azure — это видеопроигрыватель, который можно использовать для широкого спектра браузеров и устройств. Проигрыватель мультимедиа Azure использует такие отраслевые стандарты, как HTML5, Media Source Extensions (MSE) и Encrypted Media Extensions (EME), для оптимальной адаптивной потоковой передачи. Если эти стандарты недоступны на устройстве или в браузере, Проигрыватель мультимедиа Azure использует Flash и Silverlight. Независимо от используемой технологии воспроизведения разработчики получают единый интерфейс JavaScript для доступа к интерфейсам API. Это позволяет службам мультимедиа Azure обслуживать содержимое для воспроизведения на широком спектре устройств и в различных браузерах без дополнительных усилий.
+
+См. [документацию по Проигрывателю мультимедиа Azure](https://docs.microsoft.com/azure/media-services/azure-media-player/azure-media-player-overview).
+
+## <a name="shaka"></a>Shaka
+
+Проигрыватель Shaka — это библиотека JavaScript с открытым исходным кодом для адаптивных мультимедиа. Он воспроизводит в браузере адаптивные форматы мультимедиа (например, DASH и HLS) без использования подключаемых модулей или Flash. Вместо этого проигрыватель Shaka использует открытые веб-стандарты Media Source Extensions и Encrypted Media Extensions.
+
+См. статью [Как использовать проигрыватель Shaka с помощью Служб мультимедиа Azure](how-to-shaka-player.md).
+
+## <a name="videojs"></a>Video.js
+
+Video.js — это видеопроигрыватель, который воспроизводит в браузере адаптивные форматы мультимедиа (например, DASH и HLS). Video.js использует открытые веб-стандарты Media Source Extensions и Encrypted Media Extensions. Он поддерживает воспроизведение видео на настольных компьютерах и мобильных устройствах. Официальную документацию можно найти на странице https://docs.videojs.com/.
+
+См. статью [Как использовать проигрыватель Video.js с помощью Служб мультимедиа Azure](how-to-video-js-player.md).
+
+
+## <a name="next-steps"></a>Дальнейшие действия ##
+
+- [Краткое руководство. Проигрыватель мультимедиа Azure](../azure-media-player/azure-media-player-quickstart.md)

@@ -8,12 +8,12 @@ ms.topic: tutorial
 ms.date: 08/25/2020
 ms.custom: mvc, seodec18
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 476a88e41382842d91859d319a571784bd6e9b49
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: ca1308c969227336bfb4970f7c5c77b9f2e0cc22
+ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101742959"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102216536"
 ---
 # <a name="tutorial-map-an-existing-custom-dns-name-to-azure-app-service"></a>Руководство по Сопоставление существующего настраиваемого DNS-имени со Службой приложений Azure
 
@@ -27,6 +27,8 @@ ms.locfileid: "101742959"
 > * Сопоставление домена с подстановочным знаком с помощью записи CNAME.
 > * Перенаправление URL-адреса по умолчанию к пользовательскому каталогу.
 
+<hr/> 
+
 ## <a name="1-prepare-your-environment"></a>1. Подготовка среды
 
 * [Создайте приложение службы приложений](./index.yml) или используйте приложение, созданное для работы с другим руководством.
@@ -34,18 +36,20 @@ ms.locfileid: "101742959"
 
     <details>
         <summary>Что нужно для изменения записей DNS?</summary>
-        Вам потребуется доступ к реестру DNS используемого поставщика доменов, например GoDaddy. Чтобы добавить записи DNS для адресов contoso.com и www.contoso.com, потребуется возможность настраивать параметры DNS для корневого домена contoso.com.
+        Вам потребуется доступ к реестру DNS используемого поставщика доменов, например GoDaddy. Например, чтобы добавить записи DNS для <code>contoso.com</code> и <code>www.contoso.com</code>, необходимо настроить параметры DNS для корневого домена <code>contoso.com</code>.
     </details>
+
+<hr/> 
 
 ## <a name="2-prepare-the-app"></a>2. Подготовка приложения
 
 Чтобы сопоставить пользовательское DNS-имя с приложением, требуется приложение <abbr title="Определяет расположение, размер и функции фермы веб-серверов для размещения приложения.">План службы приложений</abbr> платного уровня (не <abbr title="Уровень Службы приложений Azure, в котором на одной виртуальной машине выполняются все приложения, в том числе приложения других клиентов. Этот уровень предназначен только для разработки и тестирования.">**Бесплатный (F1)**</abbr>). Дополнительные сведения см. в статье [Обзор планов Службы приложений Azure](overview-hosting-plans.md).
 
-### <a name="sign-in-to-azure"></a>Вход в Azure
+#### <a name="sign-in-to-azure"></a>Вход в Azure
 
 Откройте [портал Azure](https://portal.azure.com) и войдите в систему, используя свою учетную запись Azure.
 
-### <a name="select-the-app-in-the-azure-portal"></a>Выбор приложения на портале Azure
+#### <a name="select-the-app-in-the-azure-portal"></a>Выбор приложения на портале Azure
 
 1. Найдите в поиске и выберите **Службы приложений**.
 
@@ -59,7 +63,7 @@ ms.locfileid: "101742959"
 
 <a name="checkpricing" aria-hidden="true"></a>
 
-### <a name="check-the-pricing-tier"></a>Проверка ценовой категории
+#### <a name="check-the-pricing-tier"></a>Проверка ценовой категории
 
 1. В левой области страницы приложения перейдите к разделу **Параметры** и выберите **Увеличить масштаб (план службы приложений)** .
 
@@ -73,7 +77,7 @@ ms.locfileid: "101742959"
 
 <a name="scaleup" aria-hidden="true"></a>
 
-### <a name="scale-up-the-app-service-plan"></a>Изменение уровня плана службы приложений
+#### <a name="scale-up-the-app-service-plan"></a>Изменение уровня плана службы приложений
 
 1. Выберите любой платный уровень (**D1**, **B1**, **B2**, **B3** или любой уровень в категории **Рабочие**). Чтобы просмотреть дополнительные параметры, выберите **См. дополнительные параметры**.
 
@@ -84,6 +88,8 @@ ms.locfileid: "101742959"
    Если вы увидите уведомление ниже, значит уровень плана службы приложений изменен.
 
    ![Снимок экрана, на котором показано подтверждение операции масштабирования.](./media/app-service-web-tutorial-custom-domain/scale-notification.png)
+
+<hr/> 
 
 <a name="cname" aria-hidden="true"></a>
 
@@ -98,14 +104,16 @@ ms.locfileid: "101742959"
 
     <details>
         <summary>Зачем мне это нужно?</summary>
-        Добавление идентификаторов проверки доменов в личный домен может предотвратить появление несвязанных записей DNS и захват поддоменов. Личные домены, которые вы настроили ранее без этого идентификатора проверки, следует защитить от такого же риска, добавив идентификатор проверки в запись DNS. Дополнительные сведения о таких распространенных угрозах с высоким уровнем серьезности см. в статье [Захват поддомена](../security/fundamentals/subdomain-takeover.md).
+        Добавление идентификаторов проверки доменов в личный домен может предотвратить появление несвязанных записей DNS и захват поддоменов. Личные домены, которые вы настроили ранее без этого идентификатора проверки, следует защитить от такого же риска, добавив идентификатор проверки в запись DNS. Дополнительные сведения о таких распространенных угрозах с высоким уровнем серьезности см. в статье <a href="/azure/security/fundamentals/subdomain-takeover">Захват поддомена</a>.
     </details>
     
 <a name="info"></a>
 
-3. **(Только запись A)    ** Чтобы сопоставить <abbr title="Запись DNS для адреса сопоставляет имя узла с IP-адресом.">Запись A</abbr>, вам нужно знать внешний IP-адрес приложения. На странице **Личные домены** скопируйте значение **IP-адрес приложения**.
+3. **(Только запись A)** Чтобы сопоставить <abbr title="Запись DNS для адреса сопоставляет имя узла с IP-адресом.">Запись A</abbr>, вам нужно знать внешний IP-адрес приложения. На странице **Личные домены** скопируйте значение **IP-адрес приложения**.
 
    ![Снимок экрана, на котором показан переход к приложению Azure на портале.](./media/app-service-web-tutorial-custom-domain/mapping-information.png)
+
+<hr/> 
 
 ## <a name="4-create-the-dns-records"></a>4. Создание записей DNS
 
@@ -148,52 +156,71 @@ ms.locfileid: "101742959"
 
 Для поддомена, например `www` в `www.contoso.com`, создайте две представленные в следующей таблице записи.
 
-    | Тип записи | Узел | Значение | Комментарии |
-    | - | - | - |
-    | CNAME | `<subdomain>` (например, `www`) | `<app-name>.azurewebsites.net` | Само сопоставление домена. |
-    | TXT | `asuid.<subdomain>` (например, `asuid.www`) | [Идентификатор проверки, полученный ранее](#3-get-a-domain-verification-id) | Служба приложений обращается к записи в формате TXT `asuid.<subdomain>`, чтобы проверить владение личным доменом. |
-    
-    ![Screenshot that shows the portal navigation to an Azure app.](./media/app-service-web-tutorial-custom-domain/cname-record.png)
+| Тип записи | Узел | Значение | Комментарии |
+| - | - | - |
+| CNAME | `<subdomain>` (например, `www`) | `<app-name>.azurewebsites.net` | Само сопоставление домена. |
+| TXT | `asuid.<subdomain>` (например, `asuid.www`) | [Идентификатор проверки, полученный ранее](#3-get-a-domain-verification-id) | Служба приложений обращается к записи в формате TXT `asuid.<subdomain>`, чтобы проверить владение личным доменом. |
+
+![Снимок экрана, на котором показан переход к приложению Azure на портале.](./media/app-service-web-tutorial-custom-domain/cname-record.png)
     
 # <a name="a"></a>[А](#tab/a)
 
 Для корневого домена, например `contoso.com`, создайте две представленные в следующей таблице записи.
 
-    | Тип записи | Узел | Значение | Комментарии |
-    | - | - | - |
-    | Объект | `@` | IP-адрес из раздела [Копирование IP-адреса приложения](#3-get-a-domain-verification-id). | Само сопоставление домена (`@` обычно представляет корневой домен). |
-    | TXT | `asuid` | [Идентификатор проверки, полученный ранее](#3-get-a-domain-verification-id) | Служба приложений обращается к записи в формате TXT `asuid.<subdomain>`, чтобы проверить владение личным доменом. В качестве корневого домена используйте `asuid`. |
-    
-    ![Screenshot that shows a DNS records page.](./media/app-service-web-tutorial-custom-domain/a-record.png)
+| Тип записи | Узел | Значение | Комментарии |
+| - | - | - |
+| Объект | `@` | IP-адрес из раздела [Копирование IP-адреса приложения](#3-get-a-domain-verification-id). | Само сопоставление домена (`@` обычно представляет корневой домен). |
+| TXT | `asuid` | [Идентификатор проверки, полученный ранее](#3-get-a-domain-verification-id) | Служба приложений обращается к записи в формате TXT `asuid.<subdomain>`, чтобы проверить владение личным доменом. В качестве корневого домена используйте `asuid`. |
 
-    <details>
-    <summary>What if I want to map a subdomain with an A record?</summary>
-    To map a subdomain like `www.contoso.com` with an A record instead of a recommended CNAME record, your A record and TXT record should look like the following table instead:
+![Снимок экрана, на котором показана страница записей DNS.](./media/app-service-web-tutorial-custom-domain/a-record.png)
 
-    | Тип записи | Узел | Значение |
-    | - | - | - |
-    | Объект | `<subdomain>` (например, `www`) | IP-адрес из раздела [Копирование IP-адреса приложения](#info). |
-    | TXT | `asuid.<subdomain>` (например, `asuid.www`) | [Идентификатор проверки, полученный ранее](#3-get-a-domain-verification-id) |
-    </details>
-    
+<details>
+<summary>Что делать, если поддомен должен быть сопоставлен с записью A?</summary>
+Чтобы сопоставить поддомен (например, `www.contoso.com`) с записью A вместо рекомендуемой записи CNAME, запись A и запись TXT должны выглядеть так, как показано в следующей таблице.
+
+<div class="table-scroll-wrapper"><table class="table"><caption class="visually-hidden">Таблица 3.</caption>
+<thead>
+<tr>
+<th>Тип записи</th>
+<th>Узел</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Объект</td>
+<td><code>&lt;subdomain&gt;</code> (например, <code>www</code>)</td>
+<td>IP-адрес из раздела <a href="#info" data-linktype="self-bookmark">Копирование IP-адреса приложения</a>.</td>
+</tr>
+<tr>
+<td>TXT</td>
+<td><code>asuid.&lt;subdomain&gt;</code> (например, <code>asuid.www</code>)</td>
+<td><a href="#3-get-a-domain-verification-id" data-linktype="self-bookmark">Идентификатор проверки, полученный ранее</a></td>
+</tr>
+</tbody>
+</table></div>
+</details>
+
 # <a name="wildcard-cname"></a>[Подстановочный знак (CNAME)](#tab/wildcard)
 
 Для имени с подстановочным знаком, например `*` в `*.contoso.com`, создайте две представленные в следующей таблице записи.
 
-    | Тип записи | Узел | Значение | Комментарии |
-    | - | - | - |
-    | CNAME | `*` | `<app-name>.azurewebsites.net` | Само сопоставление домена. |
-    | TXT | `asuid` | [Идентификатор проверки, полученный ранее](#3-get-a-domain-verification-id) | Служба приложений обращается к записи в формате TXT `asuid`, чтобы проверить владение личным доменом. |
-    
-    ![Screenshot that shows the navigation to an Azure app.](./media/app-service-web-tutorial-custom-domain/cname-record-wildcard.png)
-    
----
+| Тип записи | Узел | Значение | Комментарии |
+| - | - | - |
+| CNAME | `*` | `<app-name>.azurewebsites.net` | Само сопоставление домена. |
+| TXT | `asuid` | [Идентификатор проверки, полученный ранее](#3-get-a-domain-verification-id) | Служба приложений обращается к записи в формате TXT `asuid`, чтобы проверить владение личным доменом. |
 
-    <details>
-        <summary>My changes are erased after I leave the page.</summary>
-        For certain providers, such as GoDaddy, changes to DNS records don't become effective until you select a separate **Save Changes** link.
-    </details>
+![Снимок экрана, на котором показан переход к приложению Azure.](./media/app-service-web-tutorial-custom-domain/cname-record-wildcard.png)
     
+-----
+
+<details>
+<summary>Мои изменения удаляются после выхода из страницы.</summary>
+<p>У некоторых поставщиков, например GoDaddy, изменения записей DNS не вступают в силу, пока вы не щелкнете ссылку <strong>Сохранить изменения</strong>.</p>
+</details>
+
+<hr/>
+
 ## <a name="5-enable-the-mapping-in-your-app"></a>5. Включение сопоставления в приложении
 
 1. В левой области страницы приложения на портале Azure выберите **Личные домены**.
@@ -273,8 +300,10 @@ ms.locfileid: "101742959"
         Метка предупреждения для личного домена означает, что он еще не привязан к TLS/SSL-сертификату. На любой HTTPS-запрос из браузера к такому личному домену возвращается сообщение об ошибке или предупреждение в зависимости от браузера. Сведения о добавлении привязки TLS см. в статье <a href="https://docs.microsoft.com/azure/app-service/configure-ssl-bindings">Защита пользовательского доменного имени с помощью привязки TLS/SSL в Службе приложений Azure</a>.
     </details>
 
----
-    
+-----
+
+<hr/> 
+
 ## <a name="6-test-in-a-browser"></a>6. Проверка в браузере
 
 Откройте в браузере DNS-имена, настроенные ранее.
@@ -290,9 +319,13 @@ ms.locfileid: "101742959"
 </ul>
 </details>
 
+<hr/> 
+
 ## <a name="migrate-an-active-domain"></a>Перенос активного домена
 
 Сведения о том, как перенести активный веб-сайт и его DNS-имя домена в службу приложений без простоев, см. в статье [Перенос активного DNS-имени в службу приложений Azure](manage-custom-dns-migrate-domain.md).
+
+<hr/> 
 
 <a name="virtualdir" aria-hidden="true"></a>
 
@@ -313,11 +346,13 @@ ms.locfileid: "101742959"
 
 1. Когда операция завершится, для проверки откройте в браузере адрес корневого пути приложения (например, `http://contoso.com` или `http://<app-name>.azurewebsites.net`).
 
+<hr/> 
+
 ## <a name="automate-with-scripts"></a>Автоматизация с помощью сценариев
 
 Управление личными доменами можно автоматизировать с помощью сценариев, воспользовавшись [Azure CLI](/cli/azure/install-azure-cli) или [Azure PowerShell](/powershell/azure/).
 
-### <a name="azure-cli"></a>Azure CLI
+#### <a name="azure-cli"></a>Azure CLI
 
 Приведенная ниже команда добавляет заданное настраиваемое DNS-имя для приложения службы приложений.
 
@@ -330,7 +365,7 @@ az webapp config hostname add \
 
 Дополнительные сведения см. в статье [Сопоставление пользовательского домена с веб-приложением](scripts/cli-configure-custom-domain.md).
 
-### <a name="azure-powershell"></a>Azure PowerShell
+#### <a name="azure-powershell"></a>Azure PowerShell
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
@@ -344,6 +379,8 @@ Set-AzWebApp `
 ```
 
 Дополнительные сведения см. в статье [Назначение пользовательского домена веб-приложению](scripts/powershell-configure-custom-domain.md).
+
+<hr/> 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

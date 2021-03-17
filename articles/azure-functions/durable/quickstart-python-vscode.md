@@ -5,12 +5,12 @@ author: anthonychu
 ms.topic: quickstart
 ms.date: 12/23/2020
 ms.reviewer: azfuncdf, antchu
-ms.openlocfilehash: 749dea2d9d46cb69d0c7c8a799a3f82c04d020e8
-ms.sourcegitcommit: 2aa52d30e7b733616d6d92633436e499fbe8b069
+ms.openlocfilehash: 567388277f5a68ae23e8c806a8581c177c3fd1dd
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97936181"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102549470"
 ---
 # <a name="create-your-first-durable-function-in-python"></a>Создание устойчивой функции в Python
 
@@ -58,22 +58,7 @@ ms.locfileid: "97936181"
 
 При необходимости Visual Studio Code устанавливает Azure Functions Core Tools. Кроме того, создается проект приложения-функции в папке. Проект будет содержать файлы конфигурации [host.json](../functions-host-json.md) и [local.settings.json](../functions-run-local.md#local-settings-file).
 
-В корневой папке также создается файл requirements.txt. В нем указаны пакеты Python, необходимые для запуска приложения-функции.
-
-## <a name="update-azure-functions-extension-bundles-version"></a>Обновление версии пакетов расширений для Функций Azure
-
-Функции Azure Python требуют версию 2.x для [пакетов расширений Функций Azure](../functions-bindings-register.md#access-extensions-in-non-net-languages). Пакеты расширений настраиваются в файле *host.json*.
-
-1. Откройте файл *host.json* в проекте. Обновите версию пакета расширений `version` до `[2.*, 3.0.0)`. Задает число из диапазона версий, равное или больше 2.0 и меньше 3.0.
-
-    ```json
-    "extensionBundle": {
-        "id": "Microsoft.Azure.Functions.ExtensionBundle",
-        "version": "[2.*, 3.0.0)"
-    }
-    ```
-
-1. VS Code необходимо перезагрузить, прежде чем будет отображена обновленная версия пакета расширений. В палитре команд найдите команду *Разработчик: Перезагрузить окно* и выполните ее.
+В корневой папке также будет создан файл *requirements.txt*. В нем указаны пакеты Python, необходимые для запуска приложения-функции.
 
 ## <a name="install-azure-functions-durable-from-pypi"></a>Установка azure-functions-durable из PyPI
 
@@ -83,7 +68,7 @@ ms.locfileid: "97936181"
 
     ```
     azure-functions
-    azure-functions-durable>=1.0.0b12
+    azure-functions-durable
     ```
 
 1. Откройте встроенный терминал редактора в текущей папке (<kbd>CTRL+SHIFT+`</kbd>).

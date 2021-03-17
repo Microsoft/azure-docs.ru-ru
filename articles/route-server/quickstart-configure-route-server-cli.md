@@ -7,12 +7,12 @@ ms.service: route-server
 ms.topic: quickstart
 ms.date: 03/02/2021
 ms.author: duau
-ms.openlocfilehash: c24d88e47569da430153dedfd1ff68a584083775
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 73dc54ca04ad6ddb275947663959164cc2e3c019
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101695249"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547889"
 ---
 # <a name="quickstart-create-and-configure-route-server-using-azure-cli"></a>Краткое руководство. Создание и настройка сервера маршрутизации с помощью Azure CLI 
 
@@ -56,8 +56,8 @@ az account set --subscription "<subscription ID>"
 Перед созданием сервера маршрутизации Azure нужно создать виртуальную сеть для размещения развертывания. Чтобы создать группу ресурсов и виртуальную сеть, выполните приведенную ниже команду. Если у вас уже есть виртуальная сеть, можно перейти к следующему разделу.
 
 ```azurecli-interactive
-az group create -n “RouteServerRG” -l “westus” 
-az network vnet create -g “RouteServerRG” -n “myVirtualNetwork” --address-prefix “10.0.0.0/16” 
+az group create -n "RouteServerRG" -l "westus" 
+az network vnet create -g "RouteServerRG" -n "myVirtualNetwork" --address-prefix "10.0.0.0/16" 
 ``` 
 
 ### <a name="add-a-subnet"></a>Добавление подсети 
@@ -65,13 +65,13 @@ az network vnet create -g “RouteServerRG” -n “myVirtualNetwork” --addres
 1. Добавьте подсеть с именем *RouteServerSubnet*, чтобы развернуть в ней сервер маршрутизации Azure. Эта подсеть является выделенной подсетью только для сервера маршрутизации Azure. Для подсети RouteServerSubnet требуется префикс /27 или более короткий (например, /26 или /25), иначе при добавлении сервера маршрутизации Azure появится сообщение об ошибке.
 
     ```azurecli-interactive 
-    az network vnet subnet create -g “RouteServerRG” --vnet-name “myVirtualNetwork” --name “RouteServerSubnet” --address-prefix “10.0.0.0/24”  
+    az network vnet subnet create -g "RouteServerRG" --vnet-name "myVirtualNetwork" --name "RouteServerSubnet" --address-prefix "10.0.0.0/24"  
     ``` 
 
 1. Получите идентификатор RouteServerSubnet. Чтобы просмотреть идентификатор ресурса всех подсетей в виртуальной сети, выполните следующую команду: 
 
     ```azurecli-interactive 
-    subnet_id = $(az network vnet subnet show -n “RouteServerSubnet” --vnet-name “myVirtualNetwork” -g “RouteServerRG” --query id -o tsv) 
+    subnet_id = $(az network vnet subnet show -n "RouteServerSubnet" --vnet-name "myVirtualNetwork" -g "RouteServerRG" --query id -o tsv) 
     ``` 
 
 Идентификатор RouteServerSubnet выглядит следующим образом: 
@@ -83,7 +83,7 @@ az network vnet create -g “RouteServerRG” -n “myVirtualNetwork” --addres
 Создайте сервер маршрутизации, выполнив следующую команду: 
 
 ```azurecli-interactive
-az network routeserver create -n “myRouteServer” -g “RouteServerRG” --hosted-subnet $subnet_id  
+az network routeserver create -n "myRouteServer" -g "RouteServerRG" --hosted-subnet $subnet_id  
 ``` 
 
 Расположение должно совпадать с расположением виртуальной сети. HostedSubnet — это идентификатор RouteServerSubnet, полученный в предыдущем разделе. 
@@ -94,7 +94,7 @@ az network routeserver create -n “myRouteServer” -g “RouteServerRG” --ho
 
 ```azurecli-interactive 
 
-az network routeserver peering create --routeserver-name “myRouteServer” -g “RouteServerRG” --peer-ip “nva_ip” --peer-asn “nva_asn” -n “NVA1_name” 
+az network routeserver peering create --routeserver-name "myRouteServer" -g "RouteServerRG" --peer-ip "nva_ip" --peer-asn "nva_asn" -n "NVA1_name" 
 
 ``` 
 
@@ -104,7 +104,7 @@ nva_ip — это IP-адрес виртуальной сети, назначе
 
 ```azurecli-interactive 
 
-az network routeserver peering create --routeserver-name “myRouteServer” -g “RouteServerRG” --peer-ip “nva_ip” --peer-asn “nva_asn” -n “NVA2_name” 
+az network routeserver peering create --routeserver-name "myRouteServer" -g "RouteServerRG" --peer-ip "nva_ip" --peer-asn "nva_asn" -n "NVA2_name" 
 ``` 
 
 ## <a name="complete-the-configuration-on-the-nva"></a>Завершение настройки NVA 
@@ -112,7 +112,7 @@ az network routeserver peering create --routeserver-name “myRouteServer” -g 
 Чтобы завершить настройку NVA и включить сеансы BGP, требуется IP-адрес и номер ASN сервера маршрутизации Azure. Эти сведения можно получить, выполнив следующую команду: 
 
 ```azurecli-interactive 
-az network routeserver show -g “RouteServerRG” -n “myRouteServer” 
+az network routeserver show -g "RouteServerRG" -n "myRouteServer" 
 ``` 
 
 В выходных данных будут содержаться указанные ниже сведения. 
@@ -143,14 +143,14 @@ RouteServerIps  : {10.5.10.4, 10.5.10.5}  "virtualRouterAsn": 65515,
 1. Чтобы включить обмен маршрутами между сервером маршрутизации Azure и шлюзами, выполните следующую команду:
 
 ```azurecli-interactive 
-az network routeserver update -g “RouteServerRG” -n “myRouteServer” --allow-b2b-traffic true 
+az network routeserver update -g "RouteServerRG" -n "myRouteServer" --allow-b2b-traffic true 
 
 ``` 
 
 2. Чтобы отключить обмен маршрутами между сервером маршрутизации Azure и шлюзами, выполните следующую команду:
 
 ```azurecli-interactive
-az network routeserver update -g “RouteServerRG” -n “myRouteServer” --allow-b2b-traffic false 
+az network routeserver update -g "RouteServerRG" -n "myRouteServer" --allow-b2b-traffic false 
 ``` 
 
 ## <a name="troubleshooting"></a>Устранение неполадок 
@@ -162,20 +162,20 @@ az network routeserver peering list-advertised-routes -g RouteServerRG --vrouter
 az network routeserver peering list-learned-routes -g RouteServerRG --vrouter-name myRouteServer -n NVA1_name 
 ``` 
 
-## <a name="clean-up"></a>Очистка 
+## <a name="clean-up-resources"></a>Очистка ресурсов
 
 Если сервер маршрутизации Azure больше не нужен, удалите пиринг BGP и сервер маршрутизации, выполнив следующие команды: 
 
 1. Удалите пиринг BGP между сервером маршрутизации Azure и NVA, выполнив следующую команду:
 
 ```azurecli-interactive
-az network routeserver peering delete --routeserver-name “myRouteServer” -g “RouteServerRG” -n “NVA2_name” 
+az network routeserver peering delete --routeserver-name "myRouteServer" -g "RouteServerRG" -n "NVA2_name" 
 ``` 
 
 2. Удалите сервер маршрутизации Azure, выполнив следующую команду: 
 
 ```azurecli-interactive 
-az network routeserver delete -n “myRouteServer” -g “RouteServerRG” 
+az network routeserver delete -n "myRouteServer" -g "RouteServerRG" 
 ``` 
 
 ## <a name="next-steps"></a>Дальнейшие действия

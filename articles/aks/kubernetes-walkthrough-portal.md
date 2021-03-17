@@ -1,17 +1,17 @@
 ---
-title: Создание кластера AKS на портале
+title: Краткое руководство. Развертывание кластера AKS с помощью портала Azure
 titleSuffix: Azure Kubernetes Service
 description: Узнайте, как быстро создать кластер Kubernetes, развертывать приложение и отслеживать производительность в Службе Azure Kubernetes (AKS) с помощью портала Azure.
 services: container-service
 ms.topic: quickstart
 ms.date: 01/13/2021
-ms.custom: mvc, seo-javascript-october2019
-ms.openlocfilehash: 7f59924b2a50f29e01d46e12389e5ca52769225d
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.custom: mvc, seo-javascript-october2019, contperfq3
+ms.openlocfilehash: 5f758c0bc50b2d4f22b3dbf0efaa4ecbc3f334cb
+ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100578692"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102507812"
 ---
 # <a name="quickstart-deploy-an-azure-kubernetes-service-aks-cluster-using-the-azure-portal"></a>Краткое руководство. Развертывание кластера Службы Azure Kubernetes (AKS) с помощью портала Azure
 
@@ -47,13 +47,11 @@ ms.locfileid: "100578692"
 
 4. На странице **Пулы узлов** оставьте значения по умолчанию. В нижней части экрана щелкните **Next: Authentication** (Далее: аутентификация).
     > [!CAUTION]
-    > При создании новых субъектов-служб AAD может потребоваться несколько минут на их распространение и запуск, а также поиск субъектом-службой ошибок и сбоев проверки на портале Azure. Если таковые будут обнаружены, см.[эту статью](troubleshooting.md#received-an-error-saying-my-service-principal-wasnt-found-or-is-invalid-when-i-try-to-create-a-new-cluster) для их устранения.
+    > При создании нового идентификатора кластера может потребоваться несколько минут на его распространение и запуск, а также поиск субъектом-службой ошибок и сбоев проверки на портале Azure. Если вы столкнулись с этой проблемой, посетите страницу [Устранение распространенных проблем Службы Azure Kubernetes](troubleshooting.md#received-an-error-saying-my-service-principal-wasnt-found-or-is-invalid-when-i-try-to-create-a-new-cluster) для устранения неполадок.
 
 5. На странице **Аутентификация** настройте следующие параметры.
-    - Создайте новый субъект-службу, оставив в поле **Субъект-служба** значение **Субъект-служба по умолчанию (новый)** . Можно также выбрать *Настроить субъект-службу*, чтобы использовать существующий субъект-службу. При использовании существующего имени субъекта-службы необходимо указать для него идентификатор клиента и секрет.
+    - Создайте новое удостоверение кластера, оставьте поле **Authentication** (Проверка подлинности) с **управляемым удостоверением System--assinged**. В качестве альтернативы можно выбрать **Субъект-службу**, чтобы использовать его. Выберите пункт *(создать) субъект-службу по умолчанию*, чтобы создать субъект-службу по умолчанию или *настроить субъект-службу* для использования существующей. При использовании существующего имени субъекта-службы необходимо указать для него идентификатор клиента и секрет.
     - Включите параметр для элементов управления доступом Kubernetes на основе ролей (Kubernetes RBAC). Это обеспечит более точный контроль доступа к ресурсам Kubernetes, развернутым в кластере AKS.
-
-    Кроме того, вместо субъекта-службы можно использовать управляемое удостоверение. Дополнительные сведения см. в статье о том, [как использовать управляемые удостоверения](use-managed-identity.md).
 
 *Базовые* сетевые подключения используются по умолчанию, и включена служба Azure Monitor для контейнеров. Выберите **Review + create** (Проверить и создать), а по завершении проверки щелкните **Создать**.
 
@@ -78,7 +76,7 @@ ms.locfileid: "100578692"
 az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
 ```
 
-Чтобы проверить подключение к кластеру, используйте команду [kubectl get][kubectl-get] для получения списка узлов кластера.
+Чтобы проверить подключение к кластеру, используйте команду `kubectl get` для получения списка узлов кластера.
 
 ```console
 kubectl get nodes
@@ -93,7 +91,7 @@ aks-agentpool-14693408-0   Ready     agent     15m       v1.11.5
 
 ## <a name="run-the-application"></a>Выполнение приложения
 
-Файл манифеста Kubernetes определяет требуемое состояние для кластера, включая образы контейнеров, которые нужно запустить. В этом кратком руководстве манифест используется для создания всех объектов, необходимых для запуска приложения Azure для голосования. Этот манифест включает в себя два [развертывания Kubernetes][kubernetes-deployment]. Одно используется для примера приложений Azure для голосования на Python, а другое — для экземпляра Redis. Создаются две [службы Kubernetes][kubernetes-service], внутренняя и внешняя. Внутренняя служба используется для экземпляра Redis, а внешняя — для доступа к приложению Azure для голосования через Интернет.
+Файл манифеста Kubernetes определяет требуемое состояние для кластера, включая образы контейнеров, которые нужно запустить. В этом кратком руководстве манифест используется для создания всех объектов, необходимых для запуска приложения Azure для голосования. Этот манифест включает в себя два развертывания Kubernetes. Одно используется для примера приложений Azure для голосования на Python, а другое — для экземпляра Redis. Создаются две службы Kubernetes, внутренняя и внешняя. Внутренняя служба используется для экземпляра Redis, а внешняя — для доступа к приложению Azure для голосования через Интернет.
 
 В Cloud Shell с помощью редактора создайте файл `azure-vote.yaml` (например, выполнив команду `code azure-vote.yaml`, `nano azure-vote.yaml` или `vi azure-vote.yaml`). Затем скопируйте в него следующее определение YAML:
 
@@ -185,7 +183,7 @@ spec:
     app: azure-vote-front
 ```
 
-Разверните приложение с помощью команды [kubectl apply][kubectl-apply] и укажите имя манифеста YAML:
+Разверните приложение с помощью команды `kubectl apply` и укажите имя манифеста YAML:
 
 ```console
 kubectl apply -f azure-vote.yaml
@@ -204,7 +202,7 @@ service "azure-vote-front" created
 
 При запуске приложения Служба Kubernetes предоставляет внешний интерфейс приложения в Интернете. Процесс создания может занять несколько минут.
 
-Чтобы отслеживать ход выполнения, используйте команду [kubectl get service][kubectl-get] с аргументом `--watch`.
+Чтобы отслеживать ход выполнения, используйте команду `kubectl get service` с аргументом `--watch`.
 
 ```console
 kubectl get service azure-vote-front --watch
@@ -267,7 +265,7 @@ az aks delete --resource-group myResourceGroup --name myAKSCluster --no-wait
 
 С помощью этого краткого руководства мы развернули кластер Kubernetes, а затем развернули в нем многоконтейнерное приложение.
 
-Дополнительные сведения о AKS и инструкции по созданию полного кода для примера развертывания см. в руководстве по кластерам Kubernetes.
+Чтобы получить дополнительные сведения об AKS с полным примером создания приложения, развертыванием из Реестра контейнеров Azure, обновления работающего приложения, а также масштабирования и обновления кластера, ознакомьтесь с учебником по кластеру Kubernetes.
 
 > [!div class="nextstepaction"]
 > [Руководство по AKS][aks-tutorial]
@@ -281,13 +279,10 @@ az aks delete --resource-group myResourceGroup --name myAKSCluster --no-wait
 
 <!-- LINKS - internal -->
 [kubernetes-concepts]: concepts-clusters-workloads.md
-[az-aks-get-credentials]: /cli/azure/aks?view=azure-cli-latest&preserve-view=true#az-aks-get-credentials
+[az-aks-get-credentials]: /cli/azure/aks#az-aks-get-credentials
 [az-aks-delete]: /cli/azure/aks#az-aks-delete
 [aks-monitor]: ../azure-monitor/containers/container-insights-overview.md
 [aks-network]: ./concepts-network.md
 [aks-tutorial]: ./tutorial-kubernetes-prepare-app.md
 [http-routing]: ./http-application-routing.md
 [sp-delete]: kubernetes-service-principal.md#additional-considerations
-[azure-dev-spaces]: ../dev-spaces/index.yml
-[kubernetes-deployment]: concepts-clusters-workloads.md#deployments-and-yaml-manifests
-[kubernetes-service]: concepts-network.md#services

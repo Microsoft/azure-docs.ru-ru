@@ -6,12 +6,12 @@ ms.author: anvar
 ms.manager: bsiva
 ms.topic: how-to
 ms.date: 06/08/2020
-ms.openlocfilehash: 543fb7474c0a9efc41667945c89489054a44d657
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 8083b9edd49f65f29fe9c9b2cfa30edfacf89507
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101724495"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102614893"
 ---
 # <a name="prepare-on-premises-machines-for-migration-to-azure"></a>Подготовка локальных компьютеров к миграции в Azure
 
@@ -111,11 +111,12 @@ ms.locfileid: "101724495"
 
 Служба "Миграция Azure" автоматически выполняет эти действия для данных версий
 
-- Red Hat Enterprise Linux 7.8, 7.7, 7.6, 7.5, 7.4, 7.0, 6.x;
-- Cent OS 7.7, 7.6, 7.5, 7.4, 6.x;
+- Red Hat Enterprise Linux 7.8, 7.7, 7.6, 7.5, 7.4, 7.0, 6.x (также в ходе миграции автоматически устанавливается агент виртуальной машины Linux в Azure)
+- Cent OS 7.7, 7.6, 7.5, 7.4, 6.x (также в ходе миграции автоматически устанавливается агент виртуальной машины Linux в Azure)
 - SUSE Linux Enterprise Server 12 SP1+;
 - SUSE Linux Enterprise Server 15 SP1;
-- Ubuntu 19.04, 19.10, 18.04LTS, 16.04LTS, 14.04LTS;
+- Ubuntu 19.04, 19.10, 18.04LTS, 16.04LTS, 14.04LTS (также в ходе миграции автоматически устанавливается агент виртуальной машины Linux в Azure)
+- Ubuntu 18.04LTS, 16.04LTS
 - Debian 9, 8, 7
 - Oracle Linux 7.7, Oracle Linux 7.7-CI.
 
@@ -147,6 +148,7 @@ ms.locfileid: "101724495"
 
 Ознакомьтесь с дополнительными сведениями об [этапах запуска виртуальной машины Linux в Azure](../virtual-machines/linux/create-upload-generic.md) и инструкциями для некоторых популярных дистрибутивов Linux в этой статье.
 
+Изучите список [обязательных пакетов](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux#requirements) для установки агента виртуальной машины Linux. Служба "Миграция Azure" автоматически устанавливает агент виртуальной машины Linux для RHEL6, RHEL7, CentOS7 (6 должна поддерживаться аналогично RHEL), Ubuntu 14.04, Ubuntu 16.04, Ubuntu18.04, если используется метод миграции VMware без агента.
 
 ## <a name="check-azure-vm-requirements"></a>Проверка требований для виртуальных машин Azure
 
