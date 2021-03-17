@@ -6,15 +6,15 @@ author: mikben
 manager: jken
 services: azure-communication-services
 ms.author: mikben
-ms.date: 09/30/2020
+ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: 66a5ed65b0582aafd641473163e1b273d4a4263d
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: eea54be9d159c6aacbbc24e2fe8edf874f8e2d83
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102489656"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103492342"
 ---
 # <a name="voice-and-video-concepts"></a>Основные понятия о голосовой и видеосвязи
 

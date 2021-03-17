@@ -13,12 +13,12 @@ ms.topic: tutorial
 ms.date: 03/24/2020
 author: mlearned
 ms.custom: mvc
-ms.openlocfilehash: 41f2ee9806b8f6818f2b2dd7a48920ac9907ca79
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: c03ba657ac264b72d035f28956354398421ed2f9
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91854653"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102566606"
 ---
 # <a name="create-a-cicd-pipeline-for-github-repo-using-azure-devops-starter"></a>Создание конвейера CI/CD для репозитория GitHub с помощью Azure DevOps Starter
 
@@ -118,7 +118,7 @@ Azure DevOps Starter автоматически настраивает конв�
 См. дополнительные сведения о конвейере CI/CD:
 
 > [!div class="nextstepaction"]
-> [Define your multi-stage continuous deployment (CD) pipeline](/azure/devops/pipelines/release/define-multistage-release-process?view=vsts) (Настройка многоэтапного конвейера для непрерывного развертывания)
+> [Define your multi-stage continuous deployment (CD) pipeline](/azure/devops/pipelines/release/define-multistage-release-process) (Настройка многоэтапного конвейера для непрерывного развертывания)
 
 Дополнительные сведения о мониторинге приложений см. в следующей статье:
   

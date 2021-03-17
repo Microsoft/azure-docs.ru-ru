@@ -2,13 +2,13 @@
 title: Развертывание ресурсов в группе управления
 description: Описывает развертывание ресурсов в области группы управления в шаблоне Azure Resource Manager.
 ms.topic: conceptual
-ms.date: 01/13/2021
-ms.openlocfilehash: a203dd2c52bdc889452a6755fb025c7ed5721a59
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.date: 03/16/2021
+ms.openlocfilehash: b14dc3622a6ad6519968bd2998aa354a850f2515
+ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99491617"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103601599"
 ---
 # <a name="management-group-deployments-with-arm-templates"></a>Развертывание группы управления с помощью шаблонов ARM
 
@@ -219,6 +219,8 @@ New-AzManagementGroupDeployment `
     }
 }
 ```
+
+Сведения о развертывании шаблона, который перемещает существующую подписку Azure в новую группу управления, см. в разделе [перемещение подписок в шаблоне ARM](../../governance/management-groups/manage.md#move-subscriptions-in-arm-template) .
 
 ## <a name="azure-policy"></a>Политика Azure
 

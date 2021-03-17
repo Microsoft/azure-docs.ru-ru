@@ -8,12 +8,12 @@ ms.subservice: security
 ms.date: 04/15/2020
 ms.author: ronytho
 ms.reviewer: jrasnick
-ms.openlocfilehash: b937dad6c3c8f5a5773ca7779493b41c905307b1
-ms.sourcegitcommit: 2dd0932ba9925b6d8e3be34822cc389cade21b0d
+ms.openlocfilehash: 787e600df4185346b250d9a96bdb89927e134075
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99226511"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103472016"
 ---
 # <a name="azure-synapse-analytics-ip-firewall-rules"></a>Правила брандмауэра для IP-адресов Azure Synapse Analytics
 
@@ -42,10 +42,6 @@ ms.locfileid: "99226511"
 Убедитесь, что брандмауэр в сети и на локальном компьютере допускают исходящие подключения через TCP-порты 80, 443 и 1443 для Synapse Studio.
 
 Кроме того, для Synapse Studio необходимо разрешить исходящий обмен данными через UDP-порт 53. Для подключения с помощью таких средств, как SSMS и Power BI, необходимо разрешить исходящие подключения через TCP-порт 1433.
-
-Для политики подключения SQL, применяемой к рабочей области, используется значение *по умолчанию*. Подробные сведения об IP-адресах и портах, для которых клиенты должны разрешить исходящий трафик, см. [здесь](../../azure-sql/database/connectivity-architecture.md#connection-policy).
-
-
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

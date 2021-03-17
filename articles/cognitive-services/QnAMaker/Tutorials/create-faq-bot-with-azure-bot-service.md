@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.subservice: qna-maker
 ms.topic: tutorial
 ms.date: 08/31/2020
-ms.openlocfilehash: 356b954c65086ff65264ce7a62b038cd7a8eac3d
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.openlocfilehash: ab6607175c596a0d82cf75f0ad786a76e85b6959
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96350965"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102612156"
 ---
 # <a name="tutorial-create-an-faq-bot-with-azure-bot-service"></a>Руководство по Создание бота вопросов и ответов с помощью Службы Azure Bot
 Создайте бот вопросов и ответов с помощью QnA Maker и [Службы Azure Bot](https://azure.microsoft.com/services/bot-service/) без необходимости писать код.
@@ -80,4 +80,4 @@ ms.locfileid: "96350965"
     Чат-бот ответит, используя ответ из базы знаний.
 
     :::image type="content" source="../media/qnamaker-create-publish-knowledge-base/test-web-chat.png" alt-text="Введите запрос пользователя в тестовый веб-чат.":::
-1. Подключите бот к другим [поддерживаемым каналам](/azure/bot-service/bot-service-manage-channels?preserve-view=true&view=azure-bot-service-4.0).
+1. Подключите бот к другим [поддерживаемым каналам](/azure/bot-service/bot-service-manage-channels).

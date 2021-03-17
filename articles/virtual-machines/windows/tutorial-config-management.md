@@ -2,18 +2,19 @@
 title: Учебник по управлению конфигурацией виртуальных машин Windows в Azure
 description: В этом учебнике описано, как выявлять пакетные обновления и управлять ими на виртуальных машинах Windows.
 author: cynthn
-ms.service: virtual-machines-windows
+ms.service: virtual-machines
+ms.collection: windows
 ms.topic: tutorial
 ms.workload: infrastructure
 ms.date: 12/05/2018
 ms.author: cynthn
 ms.custom: mvc
-ms.openlocfilehash: a478d9c620219a768983570897715f924565a80f
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: db7c0f2dbc547d78e3caa9ab37450c86278929bd
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100594309"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102555947"
 ---
 # <a name="tutorial-monitor-changes-and-update-a-windows-virtual-machine-in-azure"></a>Руководство по Мониторинг изменений и обновление виртуальных машин Windows в Azure
 

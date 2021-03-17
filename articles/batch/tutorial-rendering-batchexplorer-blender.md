@@ -5,12 +5,13 @@ author: mscurrell
 ms.author: markscu
 ms.date: 08/02/2018
 ms.topic: tutorial
-ms.openlocfilehash: 5c015e4e83b0505a45690e92c1d732f74b6f6b0e
-ms.sourcegitcommit: 6172a6ae13d7062a0a5e00ff411fd363b5c38597
+ROBOTS: NOINDEX
+ms.openlocfilehash: 11805d2a15e7f369ad38ab7e92409c1b357d2d8e
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97106472"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103490846"
 ---
 # <a name="tutorial-render-a-blender-scene-using-batch-explorer"></a>Руководство. Преобразование для просмотра сцены Blender с помощью Batch Explorer
 

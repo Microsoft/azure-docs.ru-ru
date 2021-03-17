@@ -4,15 +4,15 @@ titleSuffix: An Azure Communication Services quickstart
 description: В этом кратком руководстве описывается, как начать работу с составными компонентами инфраструктуры пользовательского интерфейса
 author: ddematheu2
 ms.author: dademath
-ms.date: 11/16/2020
+ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
-ms.openlocfilehash: 17a8369463a27acffc8bdc52c48e4ae0624f41cd
-ms.sourcegitcommit: 44188608edfdff861cc7e8f611694dec79b9ac7d
+ms.openlocfilehash: 7356fb90914e948b6a74a478ce1e19722b224346
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99539716"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103488063"
 ---
 # <a name="quickstart-get-started-with-ui-framework-composite-components"></a>Краткое руководство. Начало работы с составными компонентами инфраструктуры пользовательского интерфейса
 
@@ -23,7 +23,7 @@ ms.locfileid: "99539716"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
-- [Node.js](https://nodejs.org/) версий Active LTS и Maintenance LTS (рекомендуется Node 12).
+- [Node.js](https://nodejs.org/) версий Active LTS и Maintenance LTS (рекомендуется Node 12).
 - Активный ресурс Служб коммуникации. [Создайте ресурс Служб коммуникации.](./../create-communication-resource.md)
 - Маркер доступа пользователя для создания экземпляра составного компонента вызова. Узнайте, как [создать маркер доступа пользователя и обеспечить управление им](./../access-tokens.md).
 
@@ -59,9 +59,9 @@ npm install --save ./{path for tarball}
 
 Параметр `--save` указывает библиотеку как зависимость в файле пакета **package.json**.
 
-### <a name="run-create-react-app"></a>Запуск установки "Создание приложения React"
+### <a name="run-create-react-app"></a>Выполнение Create React App
 
-Проверим установку "Создание приложения React", выполнив следующую команду:
+Проверим установку Create React App, выполнив следующую команду:
 
 ```console
 

@@ -4,20 +4,20 @@ description: Это версия JavaScript для создания довере
 author: dademath
 manager: nimag
 services: azure-communication-services
-ms.author: dademath
-ms.date: 07/28/2020
+ms.author: ddematheu2
+ms.date: 03/10/2021
 ms.topic: include
 ms.service: azure-communication-services
-ms.openlocfilehash: 6790335e5aa63f515cd125f31a8ccd7877132c10
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 41d959468e3183af00d2ab514e7c1bf0a134a1f8
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101661348"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103490486"
 ---
 ## <a name="download-code"></a>Скачивание кода
 
-Итоговый код для этого краткого руководства можно найти на сайте [GitHub](https://github.com/Azure-Samples/communication-services-javascript-quickstarts/tree/main/Trusted%20Authentication%20Service).
+Итоговый код для этого краткого руководства можно найти на сайте [GitHub](https://github.com/Azure-Samples/communication-services-javascript-quickstarts/tree/main/trusted-authentication-service).
 
 ## <a name="prerequisites"></a>Предварительные требования
 

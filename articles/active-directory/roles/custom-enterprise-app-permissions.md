@@ -12,12 +12,12 @@ ms.date: 11/04/2020
 ms.author: rolyon
 ms.reviewer: vincesm
 ms.custom: it-pro
-ms.openlocfilehash: 110da0a12336415d9d9c781e24684d7e2af8bc9d
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.openlocfilehash: d2159540c688a63082efb792fd4d261062ef65d9
+ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98741661"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103466799"
 ---
 # <a name="enterprise-application-permissions-for-custom-roles-in-azure-active-directory"></a>Разрешения корпоративных приложений для пользовательских ролей в Azure Active Directory
 
@@ -169,4 +169,4 @@ microsoft.directory/provisioningLogs/allProperties/read | Чтение всех 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Создание настраиваемых ролей с помощью портала Azure, Azure AD PowerShell или API Graph](custom-create.md)
-- [Просмотрите назначения для настраиваемой роли](custom-view-assignments.md).
+- [Список назначений ролей](view-assignments.md)

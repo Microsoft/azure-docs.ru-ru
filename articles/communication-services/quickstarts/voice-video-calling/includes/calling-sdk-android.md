@@ -4,12 +4,12 @@ ms.service: azure-communication-services
 ms.topic: include
 ms.date: 03/10/2021
 ms.author: mikben
-ms.openlocfilehash: 3eadf556d467fb67be0b0fe3a83dfd4ed89e6463
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 8d4e573cefd595669d9cb2cf9a7b83595eea7971
+ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/16/2021
-ms.locfileid: "103488146"
+ms.locfileid: "103622130"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -79,8 +79,8 @@ String userToken = '<user token>';
 CallClient callClient = new CallClient();
 CommunicationTokenCredential tokenCredential = new CommunicationTokenCredential(userToken);
 android.content.Context appContext = this.getApplicationContext(); // From within an Activity for instance
-CallAgent callAgent = callClient.createCallAgent((appContext, tokenCredential).get();
-DeviceManage deviceManager = callClient.getDeviceManager().get();
+CallAgent callAgent = callClient.createCallAgent(appContext, tokenCredential).get();
+DeviceManager deviceManager = callClient.getDeviceManager().get();
 ```
 Чтобы задать отображаемое имя для вызывающей стороны, используйте следующий альтернативный метод:
 
@@ -91,8 +91,8 @@ CommunicationTokenCredential tokenCredential = new CommunicationTokenCredential(
 android.content.Context appContext = this.getApplicationContext(); // From within an Activity for instance
 CallAgentOptions callAgentOptions = new CallAgentOptions();
 callAgentOptions.setDisplayName("Alice Bob");
-CallAgent callAgent = callClient.createCallAgent((appContext, tokenCredential, callAgentOptions).get();
-DeviceManage deviceManager = callClient.getDeviceManager().get();
+CallAgent callAgent = callClient.createCallAgent(appContext, tokenCredential, callAgentOptions).get();
+DeviceManager deviceManager = callClient.getDeviceManager().get();
 ```
 
 

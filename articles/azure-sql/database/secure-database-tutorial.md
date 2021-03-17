@@ -10,12 +10,12 @@ ms.author: vanto
 ms.reviewer: ''
 ms.date: 09/21/2020
 ms.custom: seoapril2019 sqldbrb=1
-ms.openlocfilehash: f42db48e0fa0e85d919d6894e5476b7ef5380698
-ms.sourcegitcommit: b4e6b2627842a1183fce78bce6c6c7e088d6157b
+ms.openlocfilehash: 8cdf95dd3c0e801896328136b15e4bd4efe53005
+ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99089297"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102563818"
 ---
 # <a name="tutorial-secure-a-database-in-azure-sql-database"></a>Руководство по Защита базы данных в службе "База данных SQL Azure"
 [!INCLUDE[appliesto-sqldb](../includes/appliesto-sqldb.md)]
@@ -146,7 +146,7 @@ ms.locfileid: "99089297"
 - [Добавление имени личного домена с помощью портала Azure Active Directory](../../active-directory/fundamentals/add-custom-domain.md)
 - [Windows Azure now supports federation with Windows Server Active Directory](https://azure.microsoft.com/blog/20../../windows-azure-now-supports-federation-with-windows-server-active-directory/) (Теперь Microsoft Azure поддерживает федерацию с Windows Server AD)
 - [Администрирование каталога Azure AD](../../active-directory/fundamentals/active-directory-whatis.md)
-- [Общие сведения об Azure PowerShell](/powershell/azure/?view=azureadps-2.0)
+- [Общие сведения об Azure PowerShell](/powershell/azure/)
 - [Порты и протоколы, необходимые для гибридной идентификации](../../active-directory/hybrid/reference-connect-ports.md)
 
 ## <a name="manage-database-access"></a>Управление доступом к базе данных

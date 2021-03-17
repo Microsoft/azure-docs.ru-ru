@@ -6,16 +6,16 @@ author: tomaschladek
 manager: nmurav
 services: azure-communication-services
 ms.author: tchladek
-ms.date: 08/20/2020
+ms.date: 03/10/2021
 ms.topic: quickstart
 ms.service: azure-communication-services
 zone_pivot_groups: acs-js-csharp-java-python
-ms.openlocfilehash: 8937210b366981d9768e5329989a8ad14f5e8f35
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 921934e581d9b3d32cba644d85987ebb9802f73b
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101657099"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103495348"
 ---
 # <a name="quickstart-create-and-manage-access-tokens"></a>Краткое руководство. Создание маркеров доступа и управление ими
 

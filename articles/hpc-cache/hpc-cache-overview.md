@@ -4,15 +4,15 @@ description: Сведения об Azure HPC Cache, решения для быс
 author: ekpgh
 ms.service: hpc-cache
 ms.topic: overview
-ms.date: 11/23/2020
+ms.date: 03/11/2021
 ms.author: v-erkel
 ms.custom: references_regions
-ms.openlocfilehash: 0568d9b7fea2e4e048c0c1d1b2d6f81d64a9b114
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.openlocfilehash: bbb0ca345dc76f566dd55956911703e2c9bf0183
+ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95519342"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103471820"
 ---
 # <a name="what-is-azure-hpc-cache"></a>Что такое Azure HPC Cache?
 
@@ -55,15 +55,6 @@ Azure HPC Cache также можно использовать для повыш
 ## <a name="region-availability"></a>Доступность по регионам
 
 Посетите страницу [доступности продуктов глобальной инфраструктуры Azure по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=hpc-cache), чтобы узнать, где доступна служба Azure HPC Cache.
-
-Функция [Управляемые клиентом ключи](customer-keys.md) поддерживается только в следующих регионах Azure:
-
-* Восточная часть США
-* Центрально-южная часть США
-* Западная часть США 2
-* Западная Европа
-* US Gov (Аризона)
-* US Gov (Вирджиния)
 
 Служба Azure HPC Cache находится в одном регионе. Она может получить доступ к данным, хранящимся в других регионах, если подключить ее к контейнерам BLOB-объектов, расположенным в этих регионах. Кэш временно хранит данные клиента.
 

@@ -6,16 +6,16 @@ author: tomaschladek
 manager: nmurav
 ms.service: azure-communication-services
 ms.subservice: azure-communication-services
-ms.date: 08/20/2020
+ms.date: 03/10/2021
 ms.topic: include
 ms.custom: include file
 ms.author: tchladek
-ms.openlocfilehash: 42fbd1c89418bfe944d416f47a0a885c76f1f22a
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: 68114893ed3db858d00ca7811b1a83395ff02507
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102510901"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103495355"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -37,7 +37,7 @@ ms.locfileid: "102510901"
 
    ```python
    import os
-   from azure.communication.identity import CommunicationIdentityClient
+   from azure.communication.identity import CommunicationIdentityClient, CommunicationUserIdentifier
 
    try:
       print('Azure Communication Services - Access Tokens Quickstart')

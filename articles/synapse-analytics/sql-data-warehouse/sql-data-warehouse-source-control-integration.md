@@ -10,12 +10,12 @@ ms.subservice: sql-dw
 ms.date: 08/23/2019
 ms.author: kevin
 ms.reviewer: igorstan
-ms.openlocfilehash: 0eeea04cd42498c5ba066a3a3e977c92b2906292
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: 681b60ac664a210971f083900b9d8b5ba5df119f
+ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98738039"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102617562"
 ---
 # <a name="source-control-integration-for-dedicated-sql-pool-in-azure-synapse-analytics"></a>Интеграция системы управления версиями для выделенного пула SQL в Azure Synapse Analytics
 
@@ -51,7 +51,7 @@ ms.locfileid: "98738039"
 
    ![Клонирование репозиториев](./media/sql-data-warehouse-source-control-integration/4-clone-repo.png "Клонирование репозиториев")
 
-Дополнительные сведения о подключении проектов с помощью Visual Studio см. в статье [Подключение к проектам в Team Explorer](/visualstudio/ide/connect-team-project?view=vs-2019&preserve-view=true). Инструкции по клонированию репозитория с помощью Visual Studio см. в статье [Клонирование существующего репозитория Git](/azure/devops/repos/git/clone?tabs=visual-studio&view=azure-devops&preserve-view=true). 
+Дополнительные сведения о подключении проектов с помощью Visual Studio см. в статье [Подключение к проектам в Team Explorer](/visualstudio/ide/connect-team-project?view=vs-2019&preserve-view=true). Инструкции по клонированию репозитория с помощью Visual Studio см. в статье [Клонирование существующего репозитория Git](/azure/devops/repos/git/clone?tabs=visual-studio). 
 
 ## <a name="create-and-connect-your-project"></a>Создание и подключение проекта
 

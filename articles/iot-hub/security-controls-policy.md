@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием в службе "Политика Azure" для Центра Интернета вещей Azure
 description: Содержит список элементов управления соответствием из службы "Политика Azure", доступных для Центра Интернета вещей Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/05/2021
+ms.date: 03/10/2021
 ms.topic: sample
 author: robinsh
 ms.author: robinsh
 ms.service: iot-hub
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: 59199a5da65ea63b5953096ef9625848e5f8bf8b
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: c827a2a67a5ab9652214949c934e930493a69858
+ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102443440"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102631157"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-iot-hub"></a>Элементы управления соответствием в службе "Политика Azure" для Центра Интернета вещей Azure
 

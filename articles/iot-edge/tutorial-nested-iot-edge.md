@@ -9,14 +9,16 @@ ms.topic: tutorial
 ms.service: iot-edge
 services: iot-edge
 monikerRange: '>=iotedge-2020-11'
-ms.openlocfilehash: f1b1a94dc1d96e625947eef5730c24f080fc155a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: c1b30a1eafe9af92c1ef3f81773d213ccf96555c
+ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101721418"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103462037"
 ---
 # <a name="tutorial-create-a-hierarchy-of-iot-edge-devices-preview"></a>Руководство по созданию иерархии устройств IoT Edge (предварительная версия)
+
+[!INCLUDE [iot-edge-version-202011](../../includes/iot-edge-version-202011.md)]
 
 Разверните узлы Azure IoT Edge по сетям, организованным в виде иерархических слоев. Каждый слой в иерархии — это устройство шлюза, которое обрабатывает сообщения и запросы от устройств в слое под ним.
 
@@ -526,7 +528,7 @@ ms.locfileid: "101721418"
            "$edgeAgent": {
                "properties.desired": {
                    "modules": {
-                       "dockerContainerRegistry": {
+                       "registry": {
                            "settings": {
                                "image": "registry:latest",
                                "createOptions": "{\"HostConfig\":{\"PortBindings\":{\"5000/tcp\":[{\"HostPort\":\"5000\"}]}}}"
