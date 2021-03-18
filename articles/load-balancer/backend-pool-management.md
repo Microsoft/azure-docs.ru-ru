@@ -8,12 +8,12 @@ ms.service: load-balancer
 ms.topic: how-to
 ms.date: 01/28/2021
 ms.author: allensu
-ms.openlocfilehash: 0218bfef66e779a31d999c8d58bc1ce2691f46d4
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: ac21e1f00dc2a5580b90a1a5eb43da05288e800a
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102179227"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103489429"
 ---
 # <a name="backend-pool-management"></a>Управление внутренним пулом
 Внутренний пул является важнейшим компонентом подсистемы балансировки нагрузки. Внутренний пул определяет группу ресурсов, которая будет обрабатывать трафик по определенному правилу балансировки нагрузки.
@@ -250,7 +250,11 @@ PUT https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/
 ```
 
 ### <a name="resource-manager-template"></a>Шаблон Resource Manager
+
 Выполните инструкции из этого [краткого руководства по применению шаблона Resource Manager](https://github.com/Azure/azure-quickstart-templates/tree/master/101-load-balancer-standard-create/), чтобы развернуть подсистему балансировки нагрузки и виртуальные машины, а затем добавить эти виртуальные машины во внутренний пул с помощью сетевого интерфейса.
+
+Воспользуйтесь этим [шаблоном быстрого запуска для Resource Manager](https://github.com/Azure/azure-quickstart-templates/tree/master/101-load-balancer-ip-configured-backend-pool), чтобы развернуть подсистему балансировки нагрузки и виртуальные машины, а затем добавить эти виртуальные машины во внутренний пул с помощью IP-адреса.
+
 
 ## <a name="configure-backend-pool-by-ip-address-and-virtual-network"></a>Настройка внутреннего пула по IP-адресу и виртуальной сети
 В сценариях с использованием предварительно заполненных внутренних пулов следует применять сочетание IP-адресов и виртуальной сети.

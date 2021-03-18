@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 5/8/2020
 ms.topic: tutorial
 ms.service: digital-twins
-ms.openlocfilehash: 54f3004c190c104f2f869b2878b50f5b6c88856b
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.openlocfilehash: c18366fd4bc510f32ac0ef255b27709797a3b626
+ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
-ms.locfileid: "103463944"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103493716"
 ---
 # <a name="tutorial-create-an-azure-digital-twins-graph-using-a-sample-client-app"></a>Учебник. Создание графа Azure Digital Twins с помощью примера клиентского приложения
 
@@ -37,18 +37,17 @@ ms.locfileid: "103463944"
 
 Настроив приложение и проверку подлинности, запустите проект, нажав кнопку на панели инструментов:
 
-:::image type="content" source="media/tutorial-command-line/app/start-button-sample.png" alt-text="Кнопка запуска Visual Studio (проект SampleClientApp)":::
+:::image type="content" source="media/tutorial-command-line/app/start-button-sample.png" alt-text="Снимок экрана с кнопкой запуска Visual Studio (проект SampleClientApp)." lightbox="media/tutorial-command-line/app/start-button-sample.png":::
 
 Откроется окно консоли. Выполните проверку подлинности и дождитесь выполнения команды. 
 * Проверка подлинности осуществляется через браузер: ваш веб-браузер по умолчанию открывается с запросом проверки подлинности. Используйте этот запрос для входа со своими учетными данными Azure. Затем можно закрыть эту вкладку или окно браузера.
 
 Ниже приведен снимок экрана, показывающий, как выглядит консоль проекта.
 
-:::image type="content" source="media/tutorial-command-line/app/command-line-app.png" alt-text="Приветственное сообщение приложения командной строки":::
+:::image type="content" source="media/tutorial-command-line/app/command-line-app.png" alt-text="Снимок экрана приветственного сообщения из приложения командной строки." lightbox="media/tutorial-command-line/app/command-line-app.png":::
 
 > [!TIP]
 > Чтобы получить список команд, которые вы можете использовать с этим проектом, введите `help` в консоли проекта и нажмите клавишу ВВОД.
-> :::image type="content" source="media/tutorial-command-line/app/command-line-app-help.png" alt-text="Результат выполнения команды help":::
 
 Оставьте консоль проекта в рабочем состоянии для выполнения остальных шагов в этом учебнике.
 
@@ -83,7 +82,7 @@ ms.locfileid: "103463944"
 
 1. Убедитесь, что модели успешно созданы, выполнив команду `GetModels true`. Эта команда запрашивает в экземпляре Azure Digital Twins все отправленные модели и возвращает полные сведения о них. Найдите отредактированную модель *Room* в результатах команды:
 
-    :::image type="content" source="media/tutorial-command-line/app/output-get-models.png" alt-text="Результаты GetModels, показывающие обновленную модель Room":::
+    :::image type="content" source="media/tutorial-command-line/app/output-get-models.png" alt-text="Снимок экрана результатов GetModels, демонстрирующих обновленную модель Room." lightbox="media/tutorial-command-line/app/output-get-models.png":::
 
 ### <a name="errors"></a>ошибки
 
@@ -128,9 +127,9 @@ Content-Type: application/json; charset=utf-8
 
     В выходных данных этих команд должно быть указано, что двойники успешно созданы. 
     
-    :::image type="content" source="media/tutorial-command-line/app/output-create-digital-twin.png" alt-text="Фрагмент выходных данных команд CreateDigitalTwin, показывающий floor0, floor1, room0 и room1":::
+    :::image type="content" source="media/tutorial-command-line/app/output-create-digital-twin.png" alt-text="Снимок экрана с фрагментом результатов команд CreateDigitalTwin, включающим floor0, floor1, room0 и room1." lightbox="media/tutorial-command-line/app/output-create-digital-twin.png":::
 
-1. Вы можете проверить создание двойников, выполнив команду `Query`. Эта команда запрашивает в вашем экземпляре Azure Digital Twins все содержащиеся в нем цифровые двойники. Проверьте наличие в результатах двойников *room0*, *room1*, *floor0* и *floor1*.
+1. Вы можете проверить создание двойников, выполнив команду `Query`. Эта команда запрашивает в вашем экземпляре Azure Digital Twins все содержащиеся в нем цифровые близнецы. Проверьте наличие в результатах двойников *room0*, *room1*, *floor0* и *floor1*.
 
 ### <a name="modify-a-digital-twin"></a>Изменение цифровых двойников
 
@@ -180,7 +179,7 @@ Content-Type: application/json; charset=utf-8
     
     Выходные данные этих команд подтверждают, что связи были успешно созданы:
     
-    :::image type="content" source="media/tutorial-command-line/app/output-create-relationship.png" alt-text="Фрагмент выходных данных команд CreateRelationship, показывающий relationship0 и relationship1":::
+    :::image type="content" source="media/tutorial-command-line/app/output-create-relationship.png" alt-text="Снимок экрана с фрагментом результатов команд CreateRelationship, включающим relationship0 и relationship1." lightbox="media/tutorial-command-line/app/output-create-relationship.png":::
 
 1. Для проверки связей используйте любые из приведенных ниже команд, которые запрашивают связи в вашем экземпляре Azure Digital Twins.
     * Чтобы просмотреть все связи, исходящие от каждого этажа (просмотреть связи с одной стороны):
@@ -201,7 +200,7 @@ Content-Type: application/json; charset=utf-8
 
 Двойники и связи, которые вы настроили в этом учебнике, образуют следующий концептуальный граф:
 
-:::image type="content" source="media/tutorial-command-line/app/sample-graph.png" alt-text="Граф, показывающий floor0, связанный с помощью relationship0 с room0, и floor1, связанный с помощью relationship1 с room1" border="false":::
+:::image type="content" source="media/tutorial-command-line/app/sample-graph.png" alt-text="Диаграмма концептуального графа, где floor0 соединяется связью relationship0 с room0, а floor1 — связью relationship1 с room1." border="false" lightbox="media/tutorial-command-line/app/sample-graph.png":::
 
 ## <a name="query-the-twin-graph-to-answer-environment-questions"></a>Запрос графа двойников для получения ответов по среде
 
@@ -217,7 +216,7 @@ Content-Type: application/json; charset=utf-8
 
     Это позволяет быстро оценить состояние среды и убедиться, что в Azure Digital Twins все представлено именно так, как вы хотите. В результате будут выведены все цифровые двойники с подробными сведениями. Ниже приведен фрагмент:
 
-    :::image type="content" source="media/tutorial-command-line/app/output-query-all.png" alt-text="Частичные результаты запроса двойников, показывающие room0 и floor1":::
+    :::image type="content" source="media/tutorial-command-line/app/output-query-all.png" alt-text="Снимок экрана с частью результатов запроса к двойнику, включающей room0 и floor1.":::
 
     >[!NOTE]
     >В примере проекта команда `Query` без дополнительных аргументов является эквивалентом запроса `Query SELECT * FROM DIGITALTWINS`. Чтобы запросить данные о всех двойниках в экземпляре с помощью [интерфейсов API для запросов](/rest/api/digital-twins/dataplane/query) или [команд CLI](how-to-use-cli.md), используйте более длинный (полный) запрос.
@@ -230,7 +229,7 @@ Content-Type: application/json; charset=utf-8
 
     Вы можете ограничить свой запрос двойниками определенного типа, чтобы получить более конкретную информацию о том, что есть в вашей среде. В результате будут показаны *room0* и *room1*, но **не** показаны *floor0* и *room1* (так как это этажи, а не комнаты).
     
-    :::image type="content" source="media/tutorial-command-line/app/output-query-model.png" alt-text="Результаты запроса по модели, показывающие только room0 и room1":::
+    :::image type="content" source="media/tutorial-command-line/app/output-query-model.png" alt-text="Снимок экрана результатов запроса к модели, где показаны только room0 и room1.":::
 
 1. **Какие комнаты есть на этаже *floor0*?** (запрос по связи)
 
@@ -240,7 +239,7 @@ Content-Type: application/json; charset=utf-8
 
     Вы можете выполнять запрос в свой граф на основе связей, чтобы получить сведения о том, как связаны двойники, или чтобы ограничить запрос определенной областью. На этаже *floor0* есть только комната *room0*, так что в результате будет только одна комната.
 
-    :::image type="content" source="media/tutorial-command-line/app/output-query-relationship.png" alt-text="Результаты запроса по связи, показывающие room0":::
+    :::image type="content" source="media/tutorial-command-line/app/output-query-relationship.png" alt-text="Снимок экрана результатов запроса связи, где показано room0.":::
 
 1. **Какие двойники имеют температуру выше 75?** (запрос по свойству)
 
@@ -250,7 +249,7 @@ Content-Type: application/json; charset=utf-8
 
     Вы можете запрашивать граф на основе свойств, чтобы получать ответы на множество вопросов, например о наличии в вашей среде выбросов, которые требуют внимания. Поддерживаются также и другие операторы сравнения ( *<* , *>* , *=* и *!=* ). В результатах отображается комната *room1*, так как она имеет температуру 80.
 
-    :::image type="content" source="media/tutorial-command-line/app/output-query-property.png" alt-text="Результаты запроса по свойству, показывающие только room1":::
+    :::image type="content" source="media/tutorial-command-line/app/output-query-property.png" alt-text="Снимок экрана результатов запроса свойства, где показано только room1.":::
 
 1. **Какие комнаты на этаже *floor0* имеют температуру выше 75?** (составной запрос)
 
@@ -260,7 +259,7 @@ Content-Type: application/json; charset=utf-8
 
     Вы можете сочетать предыдущие запросы, как это делается в SQL, с помощью логических операторов, таких как `AND`, `OR`, `NOT`. В этом запросе используется `AND`, чтобы уточнить предыдущий запрос о температурах двойников. Теперь результат должен включать только комнаты с температурой выше 75, которые находятся на этаже *floor0* — в данном случае таких комнат нет. В результате мы получим пустой набор.
 
-    :::image type="content" source="media/tutorial-command-line/app/output-query-compound.png" alt-text="Результаты составного запроса, показывающие пустой набор":::
+    :::image type="content" source="media/tutorial-command-line/app/output-query-compound.png" alt-text="Снимок экрана результатов составного запроса, где никаких результатов не показано." lightbox="media/tutorial-command-line/app/output-query-compound.png":::
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
