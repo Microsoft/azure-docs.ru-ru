@@ -6,12 +6,12 @@ ms.topic: conceptual
 author: milismsft
 ms.author: adrianmi
 ms.date: 09/21/2020
-ms.openlocfilehash: ff20479062e31bb61756b3de7bbf04540b2d5598
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 23f85fa69224d78d748e6fc94436fd08fa6d971f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101690402"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104586018"
 ---
 # <a name="azure-cosmos-db-emulator---release-notes-and-download-information"></a>Эмулятор Azure Cosmos DB. Заметки о выпуске и сведения о скачивании
 [!INCLUDE[appliesto-all-apis](includes/appliesto-all-apis.md)]
@@ -20,7 +20,7 @@ ms.locfileid: "101690402"
 
 ## <a name="download"></a>Скачивание
 
-| | |
+| |Ссылки |
 |---------|---------|
 |**Скачивание MSI**|[Центре загрузки Майкрософт](https://aka.ms/cosmosdb-emulator)|
 |**Начало работы**|[Разработка в локальной среде с помощью эмулятора Azure Cosmos DB](local-emulator.md)|

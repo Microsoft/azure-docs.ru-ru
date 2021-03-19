@@ -8,10 +8,10 @@ ms.subservice: hyperscale-citus
 ms.topic: conceptual
 ms.date: 9/12/2019
 ms.openlocfilehash: 559c5eca6fa8a6eceb37ade003d4f1983c0a1a1b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90902082"
 ---
 # <a name="firewall-rules-in-azure-database-for-postgresql---hyperscale-citus"></a>Правила брандмауэра в базе данных Azure для PostgreSQL — масштабирование (Цитус)
@@ -52,6 +52,6 @@ ms.locfileid: "90902082"
 
 * Получите статические IP-адреса для клиентских компьютеров, а затем добавьте статические IP-адреса как правила брандмауэра.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Ниже перечислены статьи о создании правил брандмауэра уровня сервера и уровня базы данных.
 * [Создание правил брандмауэра базы данных Azure для PostgreSQL и управление ими с помощью портала Azure](howto-hyperscale-manage-firewall-using-portal.md)

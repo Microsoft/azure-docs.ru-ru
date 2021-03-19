@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 01/19/2021
-ms.openlocfilehash: a0c5e9f89b983871224e79c2fc4f518a15d42a6f
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: a52d6dca423565e7b5e4b6ac059bcf21b637c87c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102039620"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104586341"
 ---
 # <a name="data-collection-rules-in-azure-monitor-preview"></a>Правила сбора данных в Azure Monitor (Предварительная версия)
 Правила сбора данных (ДКР) определяют данные, поступающие в Azure Monitor, и указывают, куда должны отправляться или храниться эти данные. В этой статье приводятся общие сведения о правилах сбора данных, включая их содержимое и структуру, а также способах создания и работы с ними.
@@ -81,6 +81,10 @@ ms.locfileid: "102039620"
   - Собирает предупреждения, критические события и аварийные ситуации из средства syslog.
 - Места назначения
   - Отправляет все данные в Log Analytics рабочую область с именем Централворкспаце.
+
+> [!NOTE]
+> Описание XPaths, которые используются для указания коллекции событий в правилах сбора данных, см. в разделе [Ограничение сбора данных с помощью пользовательских запросов XPath](data-collection-rule-azure-monitor-agent.md#limit-data-collection-with-custom-xpath-queries) .
+
 
 ```json
 {

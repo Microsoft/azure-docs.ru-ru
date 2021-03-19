@@ -4,20 +4,20 @@ description: Установка средств разработки Visual Studi
 services: synapse-analytics
 ms.custom: vs-azure, azure-synapse
 ms.workload: azure-vs
-author: kevinvngo
+author: gaursa
 manager: craigg
 ms.service: synapse-analytics
 ms.topic: conceptual
 ms.subservice: sql-dw
 ms.date: 05/11/2020
-ms.author: kevin
+ms.author: gaursa
 ms.reviewer: igorstan
-ms.openlocfilehash: b70694011aa0467d8ca037ac309ffb0811c79c01
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: ab70ec4f7f2c313c2ae4efcc6d1ad994fbec8b03
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98737954"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104585576"
 ---
 # <a name="getting-started-with-visual-studio-2019"></a>Начало работы с Visual Studio 2019
 
@@ -47,6 +47,6 @@ Visual Studio **2019** SQL Server Data Tools (SSDT) — это единый ин
 - Некоторые функции T-SQL, такие как:
    - В предложении *Group* в функции [STRING_AGG](/sql/t-sql/functions/string-agg-transact-sql) строк.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда у вас установлена последняя версия SSDT, вы можете [Подключиться](sql-data-warehouse-query-visual-studio.md) к пулу SQL.

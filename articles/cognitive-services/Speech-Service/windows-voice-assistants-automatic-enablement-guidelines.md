@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 04/15/2020
 ms.author: travisw
 ms.openlocfilehash: a9fe083818c5850ad05556b18911c19fe19e0e72
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90987388"
 ---
 # <a name="privacy-guidelines-for-voice-assistants-on-windows"></a>Рекомендации по конфиденциальности для речевых помощников в Windows
@@ -59,7 +59,7 @@ ms.locfileid: "90987388"
 > [!NOTE]
 > Активация голоса выше блокировки не предусматривает автоматическое включение с использованием микрофона и по-прежнему требует от пользователя посетить страницу "конфиденциальность активации речи", чтобы включить доступ на основе блокировки для помощника.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Ознакомьтесь с рекомендациями по голосовым помощникам в Windows](windows-voice-assistants-best-practices.md)

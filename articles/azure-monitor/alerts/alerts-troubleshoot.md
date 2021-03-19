@@ -5,12 +5,12 @@ author: ofirmanor
 ms.author: ofmanor
 ms.topic: reference
 ms.date: 03/16/2020
-ms.openlocfilehash: d65fa03a183c15022535debee6476844192ec6bf
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 08ac23fbb29829bf2a7a46e41f9a7f646ad97915
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102037852"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104586324"
 ---
 # <a name="troubleshooting-problems-in-azure-monitor-alerts"></a>Устранение неполадок в Azure Monitor оповещениях
 
@@ -21,7 +21,7 @@ ms.locfileid: "102037852"
 Если у вас возникла проблема, связанная с срабатыванием предупреждения или без срабатывания, см. следующие статьи. В портал Azure можно просмотреть оповещения, которые будут срабатывать.
 
 - [Устранение неполадок Azure Monitor оповещений метрик в Microsoft Azure](alerts-troubleshoot-metric.md)  
-- [Устранение неполадок Azure Monitor оповещений журнала в Microsoft Azure](alerts-troubleshoot-metric.md)
+- [Устранение неполадок Azure Monitor оповещений журнала в Microsoft Azure](alerts-troubleshoot-log.md)
 
 Если предупреждение срабатывает в соответствии с портал Azure но соответствующие уведомления не возникают, используйте сведения в оставшейся части этой статьи для устранения этой проблемы.
 

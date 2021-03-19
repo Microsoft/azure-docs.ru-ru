@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 08/21/2019
 ms.author: alkohli
 ms.openlocfilehash: b5c5143c7bc92487aeabc3cdc1afea5061466027
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90903156"
 ---
 # <a name="azure-stack-edge-pro-security-and-data-protection"></a>Azure Stack пограничной Pro безопасность и защита данных
@@ -93,6 +93,6 @@ Azure Stack пограничным Pro состоит из четырех осн
 
 Для получения дополнительных сведений ознакомьтесь с политикой конфиденциальности Майкрософт в [центре управления безопасностью](https://www.microsoft.com/trustcenter).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Развертывание устройства Azure Stack пограничной Pro](azure-stack-edge-deploy-prep.md)

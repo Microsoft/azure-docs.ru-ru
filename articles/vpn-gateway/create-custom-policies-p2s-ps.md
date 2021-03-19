@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 09/09/2020
 ms.author: cherylmc
 ms.openlocfilehash: a77a870304e20c179e22b4a4ffe404315894d8a0
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91743698"
 ---
 # <a name="create-and-set-custom-ipsec-policies-for-point-to-site-preview"></a>Создание и Настройка настраиваемых политик IPsec для "точка — сеть" (Предварительная версия)
@@ -21,7 +21,7 @@ ms.locfileid: "91743698"
 
 ## <a name="before-you-begin"></a>Перед началом
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Убедитесь, что среда соответствует следующим предварительным требованиям:
 
@@ -57,6 +57,6 @@ $gateway = Get-AzVirtualNetworkGateway -ResourceGroupName $RG -name $GWName
 Set-AzVirtualNetworkGateway -VirtualNetworkGateway $gateway -VpnClientIpsecPolicy $vpnclientipsecpolicy
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о конфигурациях P2S см. в статье [о VPN-подключениях типа "точка — сеть](point-to-site-about.md)".

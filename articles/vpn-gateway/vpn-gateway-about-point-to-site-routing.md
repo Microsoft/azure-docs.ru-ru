@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 10/07/2020
 ms.author: cherylmc
 ms.openlocfilehash: 0b9b8ba555cddd56c49c750709e69ec180291c95
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91827293"
 ---
 # <a name="about-point-to-site-vpn-routing"></a>Сведения о маршрутизации VPN-подключений "точка — сеть"
@@ -56,7 +56,7 @@ ms.locfileid: "91827293"
 
 Клиенты, использующие Windows, имеют доступ к виртуальным сетям с прямым пирингом, но при внесении каких-либо изменений в пиринг виртуальных сетей или топологию сети требуется повторно скачать пакет VPN-клиента. Клиенты не под управлением Windows имеют доступ к виртуальным сетям с прямым пирингом. Доступ не является транзитивным и ограничен только виртуальными сетями с прямым пирингом.
 
-:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/multiple.jpg" alt-text="Маршрутизация изолированной виртуальной сети" lightbox="./media/vpn-gateway-about-point-to-site-routing/multiple.jpg":::
+:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/multiple.jpg" alt-text="Несколько одноранговых виртуальных сетей" lightbox="./media/vpn-gateway-about-point-to-site-routing/multiple.jpg":::
 
 ### <a name="address-space"></a>Диапазон адресов:
 
@@ -86,7 +86,7 @@ ms.locfileid: "91827293"
 
 Клиентам, использующим Windows или другую поддерживаемую операционную систему, доступна только сеть VNet1. Для обеспечения доступа к дополнительным виртуальным сетям необходимо использовать протокол BGP.
 
-:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/multiple-s2s.jpg" alt-text="Маршрутизация изолированной виртуальной сети" lightbox="./media/vpn-gateway-about-point-to-site-routing/multiple-s2s.jpg":::
+:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/multiple-s2s.jpg" alt-text="Несколько виртуальных сетей и S2S" lightbox="./media/vpn-gateway-about-point-to-site-routing/multiple-s2s.jpg":::
 
 ### <a name="address-space"></a>Пространство адресов
 
@@ -114,7 +114,7 @@ ms.locfileid: "91827293"
 
 Клиенты, использующие Windows или другую поддерживаемую операционную систему, имеют доступ ко всех виртуальным сетям, подключенных посредством VPN-подключения типа "сеть — сеть", но маршруты для подключенных виртуальных сетей нужно добавлять в клиенты Windows вручную.
 
-:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/multiple-bgp.jpg" alt-text="Маршрутизация изолированной виртуальной сети" lightbox="./media/vpn-gateway-about-point-to-site-routing/multiple-bgp.jpg":::
+:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/multiple-bgp.jpg" alt-text="Несколько виртуальных сетей и S2S (BGP)" lightbox="./media/vpn-gateway-about-point-to-site-routing/multiple-bgp.jpg":::
 
 ### <a name="address-space"></a>Пространство адресов
 
@@ -142,7 +142,7 @@ ms.locfileid: "91827293"
 
 Клиенты под управлением Windows и других ОС могут осуществлять доступ только к VNet1.
 
-:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/branch-office.jpg" alt-text="Маршрутизация изолированной виртуальной сети" lightbox="./media/vpn-gateway-about-point-to-site-routing/branch-office.jpg":::
+:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/branch-office.jpg" alt-text="Маршрутизация с помощью виртуальной сети и филиала" lightbox="./media/vpn-gateway-about-point-to-site-routing/branch-office.jpg":::
 
 ### <a name="address-space"></a>Пространство адресов
 
@@ -168,7 +168,7 @@ ms.locfileid: "91827293"
 
 Клиенты Windows имеют доступ к сети VNet1 и филиалу (Site1), но маршруты к сайту Site1 необходимо добавить в клиент вручную. Клиенты не под управлением Windows имеют доступ к сети VNet1, а также к локальному филиалу.
 
-:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/branch-bgp.jpg" alt-text="Маршрутизация изолированной виртуальной сети" lightbox="./media/vpn-gateway-about-point-to-site-routing/branch-bgp.jpg":::
+:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/branch-bgp.jpg" alt-text="Маршрутизация с помощью виртуальной сети и филиала — BGP" lightbox="./media/vpn-gateway-about-point-to-site-routing/branch-bgp.jpg":::
 
 ### <a name="address-space"></a>Пространство адресов
 
@@ -195,7 +195,7 @@ ms.locfileid: "91827293"
 
 Все клиенты могут подключаться только к сети VNet1.
 
-:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/multi-branch.jpg" alt-text="Маршрутизация изолированной виртуальной сети" lightbox="./media/vpn-gateway-about-point-to-site-routing/multi-branch.jpg":::
+:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/multi-branch.jpg" alt-text="Схема, показывающая многовиртуальную сеть S2S и филиал" lightbox="./media/vpn-gateway-about-point-to-site-routing/multi-branch.jpg":::
 
 ### <a name="address-space"></a>Пространство адресов
 
@@ -225,7 +225,7 @@ ms.locfileid: "91827293"
 
 Клиенты Windows имеют доступ к виртуальным сетям и сайтам, подключенным с помощью VPN-подключений типа "сеть — сеть", но маршруты к сетям VNet2, VNet3 и сайту Site1 необходимо добавить в клиент вручную. Клиенты не под управлением Windows имеют доступ к виртуальным сетям и сайтам, подключенным с помощью VPN-подключений типа "сеть — сеть", и какая-либо дополнительная настройка не требуется. Такой доступ является транзитивным, и клиенты могут обращаться к ресурсам во всех подключенных виртуальных сетях и на всех подключенных сайтах (локальных).
 
-:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/multi-branch-bgp.jpg" alt-text="Маршрутизация изолированной виртуальной сети" lightbox="./media/vpn-gateway-about-point-to-site-routing/multi-branch-bgp.jpg":::
+:::image type="content" source="./media/vpn-gateway-about-point-to-site-routing/multi-branch-bgp.jpg" alt-text="многовиртуальная сеть S2S и филиал" lightbox="./media/vpn-gateway-about-point-to-site-routing/multi-branch-bgp.jpg":::
 
 ### <a name="address-space"></a>Пространство адресов
 
@@ -249,6 +249,6 @@ ms.locfileid: "91827293"
 
 * Клиенты не под управлением Windows имеют доступ к сетям VNet1, VNet2, VNet3 и сайту Site1.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Раздел [Настройка подключения "точка — сеть" к виртуальной сети с использованием собственной аутентификации Azure на основе сертификата и портала Azure](vpn-gateway-howto-point-to-site-resource-manager-portal.md) поможет приступить к созданию VPN-подключения типа "точка — сеть".

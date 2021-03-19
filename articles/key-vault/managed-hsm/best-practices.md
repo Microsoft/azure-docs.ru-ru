@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 09/17/2020
 ms.author: ambapat
 ms.openlocfilehash: 7a30a7ab6689b602bc9ad4f696a6fe54c80f2151
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90996851"
 ---
 # <a name="best-practices-when-using-managed-hsm"></a>Рекомендации по использованию управляемого HSM
@@ -43,7 +43,7 @@ ms.locfileid: "90996851"
 - [Обратимое удаление](../general/soft-delete-overview.md) включено по умолчанию.
 - Включите защиту от очистки, если требуется защитить от принудительного удаления HSM, даже после включения обратимого удаления.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о полной резервной копии и восстановлении HSM см. в статье [полное резервное копирование и восстановление](backup-restore.md) .
 - Сведения об использовании Azure Monitor для настройки ведения журнала см. в разделе [управляемое протоколирование HSM](logging.md) .

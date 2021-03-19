@@ -11,10 +11,10 @@ ms.topic: how-to
 ms.date: 07/15/2020
 ms.author: alkohli
 ms.openlocfilehash: 5ebb7f1d9440bc7a8b75afe64403762532213c1d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91767577"
 ---
 # <a name="use-the-storsimple-device-manager-service-in-azure-portal-to-clone-a-volume"></a>Использование службы диспетчера устройств StorSimple на портале Azure для клонирования тома
@@ -113,7 +113,7 @@ ms.locfileid: "91767577"
 ### <a name="testing-in-the-production-environment-with-a-permanent-clone"></a>Тестирование в рабочей среде с помощью постоянного клона
 Необходимо проверить ошибки в рабочей среде. Создайте клон тома в рабочей среде, а затем создайте облачный моментальный снимок этого клона, чтобы создать независимый клонированный том. В этом сценарии используется постоянный клон.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте, как [восстановить том StorSimple из резервного набора данных](storsimple-8000-restore-from-backup-set-u2.md).
 * Узнайте, как [использовать службу диспетчера устройств StorSimple для администрирования устройства StorSimple](storsimple-8000-manager-service-administration.md).
 

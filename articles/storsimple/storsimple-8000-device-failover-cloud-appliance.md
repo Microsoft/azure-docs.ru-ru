@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 07/03/2017
 ms.author: alkohli
 ms.openlocfilehash: 18b34ff466f3935cb5cd18d46e6d26e36e756a9b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91774466"
 ---
 # <a name="fail-over-to-your-storsimple-cloud-appliance"></a>Отработка отказа на облачное устройство StorSimple
@@ -31,7 +31,7 @@ ms.locfileid: "91774466"
 
 Сведения об отработке отказа с одного физического устройства StorSimple на другое физическое устройство см. в статье [Fail over to a StorSimple physical device](storsimple-8000-device-failover-physical-device.md) (Отработка отказа на физическое устройство StorSimple). Сведения об отработке отказа на то же устройство см. в статье [Fail over to a StorSimple 8000 series physical device](storsimple-8000-device-failover-same-device.md) (Отработка отказа на то же физическое устройство StorSimple).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Обязательно ознакомьтесь с рекомендациями по отработке отказа устройств. Дополнительные сведения см. в статье с [общими рекомендациями по отработке отказа устройств](storsimple-8000-device-failover-disaster-recovery.md).
 
@@ -90,7 +90,7 @@ ms.locfileid: "91774466"
        ![Просмотр целевых контейнеров томов](./media/storsimple-8000-device-failover-disaster-recovery/failover-phy-dev17.png)
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * После отработки отказа, возможно, нужно будет [отключить или удалить устройство StorSimple](storsimple-8000-deactivate-and-delete-device.md).
 

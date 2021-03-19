@@ -10,10 +10,10 @@ ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
 ms.openlocfilehash: 86563b0a44bade2cedaf76af3c247821756111fe
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90939634"
 ---
 # <a name="migrate-sql-server-to-azure-arc-enabled-sql-managed-instance"></a>Миграция: SQL Server в SQL Управляемый экземпляр с поддержкой Arc
@@ -47,7 +47,7 @@ ms.locfileid: "90939634"
 
 1. Выберите **Чтение**, **запись** и **список** .
 
-1. Нажмите кнопку **Создать**
+1. Выберите **Создать**.
 
    Запишите URI и строку запроса с этого экрана. Они понадобятся в последующих шагах. Нажмите кнопку " **Копировать** ", чтобы сохранить его в блокноте или OneNote и т. д.
 
@@ -150,7 +150,7 @@ GO
 kubectl get pods -n <namespace of data controller>
 ```
 
-Пример.
+Пример
 
 Скопируйте файл резервной копии из локального хранилища в модуль SQL в кластере.
 
@@ -175,7 +175,7 @@ WITH MOVE '<database name>' to '/var/opt/mssql/data/<file name>.mdf'
 GO
 ```
 
-Пример.
+Пример
 
 ```sql
 RESTORE DATABASE test FROM DISK = '/var/opt/mssql/data/test.bak'
@@ -188,7 +188,7 @@ GO
 ```
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Дополнительные сведения о функциях и возможностях SQL Управляемый экземпляр с поддержкой ARC в Azure](managed-instance-features.md)
 

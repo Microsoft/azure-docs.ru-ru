@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 08/21/2020
 ms.custom: seodec18
 ms.openlocfilehash: e2c5ba137d5277466cf1b382d2b0b1bc02259f00
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88723458"
 ---
 # <a name="track-asynchronous-azure-operations"></a>Отслеживание асинхронных операций Azure
@@ -81,8 +81,8 @@ ms.locfileid: "88723458"
 
 Операции, которые создают, обновляют или удаляют ресурсы (PUT, PATCH, DELETE), обычно возвращают значение `provisioningState`. После завершения операции возвращается одно из следующих трех значений:
 
-* Успешно
-* Ошибка
+* Выполнено
+* Сбой
 * Отменено
 
 Любое другое значение означает, что операция еще выполняется. Поставщик ресурсов может возвращать настраиваемое значение, указывающее его состояние. Например, значение **Accepted** (Принято) может сигнализировать о том, что запрос успешно получен и выполняется.

@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: how-to
 ms.date: 09/22/2020
 ms.openlocfilehash: 852bce26e348c817b609d5ff837641741afe4461
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90940391"
 ---
 # <a name="logs-in-azure-database-for-postgresql---flexible-server"></a>Журналы в базе данных Azure для PostgreSQL-гибкого сервера
@@ -44,14 +44,14 @@ ms.locfileid: "90940391"
 | TenantId | Идентификатор клиента |
 | SourceSystem | `Azure` |
 | TimeGenerated [UTC] | Метка времени, когда журнал был записан в формате UTC |
-| Тип | Тип журнала Всегда `AzureDiagnostics`. |
+| Type | Тип журнала Всегда `AzureDiagnostics`. |
 | SubscriptionId | Идентификатор GUID для подписки, принадлежащей серверу |
 | ResourceGroup | Имя группы ресурсов, принадлежащей серверу |
 | ResourceProvider | Имя поставщика ресурсов. Всегда `MICROSOFT.DBFORPOSTGRESQL`. |
 | ResourceType | `Servers` |
 | ResourceId | Универсальный код ресурса (URI) |
 | Ресурс | Имя сервера |
-| Категория | `PostgreSQLLogs` |
+| Category | `PostgreSQLLogs` |
 | OperationName | `LogEvent` |
 | errorLevel | Уровень ведения журнала, например: LOG, ERROR, NOTICE |
 | Сообщение | Первичное сообщение журнала | 
@@ -65,7 +65,7 @@ ms.locfileid: "90940391"
 | Prefix | Префикс строки журнала |
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о [настройке журналов и доступе к ним](howto-configure-and-access-logs.md).
 - Дополнительные сведения о [ценах на Azure Monitor](https://azure.microsoft.com/pricing/details/monitor/).
