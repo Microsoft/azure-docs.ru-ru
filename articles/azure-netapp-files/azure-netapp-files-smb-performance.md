@@ -15,10 +15,10 @@ ms.topic: conceptual
 ms.date: 09/30/2020
 ms.author: b-juche
 ms.openlocfilehash: 9a07c6ae48cdca68a95db7770d90076eb8f10f95
-ms.sourcegitcommit: 50802bffd56155f3b01bfb4ed009b70045131750
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91929462"
 ---
 # <a name="faqs-about-smb-performance-for-azure-netapp-files"></a>Часто задаваемые вопросы о производительности SMB для Azure NetApp Files
@@ -154,7 +154,7 @@ Azure размещает ограничения сетевой частоты д
 ![Диаграмма, показывающая влияние подписи SMB на производительность.](../media/azure-netapp-files/azure-netapp-files-smb-signing-performance.png)
 
 
-## <a name="next-steps"></a>Дальнейшие шаги  
+## <a name="next-steps"></a>Дальнейшие действия  
 
 - [Часто задаваемые вопросы о Azure NetApp Files](azure-netapp-files-faqs.md)
 - См. раздел [Azure NetApp Files. управляемые корпоративные файловые ресурсы для рабочих нагрузок SMB](https://cloud.netapp.com/hubfs/Resources/ANF%20SMB%20Quickstart%20doc%20-%2027-Aug-2019.pdf?__hstc=177456119.bb186880ac5cfbb6108d962fcef99615.1550595766408.1573471687088.1573477411104.328&__hssc=177456119.1.1573486285424&__hsfp=1115680788&hsCtaTracking=cd03aeb4-7f3a-4458-8680-1ddeae3f045e%7C5d5c041f-29b4-44c3-9096-b46a0a15b9b1) об использовании файловых ресурсов smb с Azure NetApp Files.

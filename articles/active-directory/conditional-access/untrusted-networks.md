@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: calebb
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e4c020a9be7683bf045dbcc747dad3cb45058dd7
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93077682"
 ---
 # <a name="how-to-require-mfa-for-access-from-untrusted-networks-with-conditional-access"></a>Как запросить MFA для доступа из ненадежных сетей с помощью условного доступа   
@@ -24,7 +24,7 @@ Azure Active Directory (Azure AD) обеспечивает единый вход
 
 Эта статья содержит сведения, необходимые для настройки политики условного доступа, которая требует MFA для доступа из ненадежных сетей. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В этой статье предполагается, что вы знакомы с [основными понятиями](overview.md) условного доступа. 
 
@@ -48,7 +48,7 @@ Azure Active Directory (Azure AD) обеспечивает единый вход
 Чтобы настроить именованное расположение, сделайте следующее:
 
 - Указание этого диапазона (199.30.16.0/28) 
-- Назначьте описательное имя, например **Корпоративная сеть** . 
+- Назначьте описательное имя, например **Корпоративная сеть**. 
 
 Вместо того, чтобы пытаться определить ненадежные расположения, вы можете сделать следующее:
 
@@ -58,7 +58,7 @@ Azure Active Directory (Azure AD) обеспечивает единый вход
 
 - Исключить все надежные расположения. 
 
-   :::image type="content" source="./media/untrusted-networks/01.png" alt-text="Снимок экрана: панель расположения Azure A D, параметру configure присвоено значение Да, вкладка включить отображается и выбранное и выделенное расположение." border="false":::
+   :::image type="content" source="./media/untrusted-networks/01.png" alt-text="Снимок экрана: панель расположений Azure A D, параметру configure присвоено значение Да, вкладка исключения видима и выбран параметр все надежные расположения." border="false":::
 
 ## <a name="policy-deployment"></a>Развертывание политики
 

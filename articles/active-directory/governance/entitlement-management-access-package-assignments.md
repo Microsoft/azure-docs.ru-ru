@@ -17,17 +17,17 @@ ms.author: ajburnle
 ms.reviewer: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 18bc7ca9e108a35fd27f7b3155f186221a8caae3
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90980062"
 ---
 # <a name="view-add-and-remove-assignments-for-an-access-package-in-azure-ad-entitlement-management"></a>Просмотр, Добавление и удаление назначений для пакета Access в управлении назначением Azure AD
 
 В разделе Управление назначением Azure AD можно увидеть, кто назначен для пакетов доступа, их политику и состояние. Если у пакета доступа есть соответствующая политика, можно также напрямую назначить пользователя пакету доступа. В этой статье описывается просмотр, Добавление и удаление назначений для пакетов доступа.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы использовать управление назначением Azure AD и назначить пользователям доступ к пакетам, необходимо иметь одну из следующих лицензий:
 
@@ -110,7 +110,7 @@ ms.locfileid: "90980062"
 
     Появится уведомление о том, что назначение удалено. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Запрос на изменение и параметры для пакета Access](entitlement-management-access-package-request-policy.md)
 - [Просмотр отчетов и журналов](entitlement-management-reports.md)

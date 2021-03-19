@@ -4,10 +4,10 @@ description: Просмотрите и отфильтруйте рекоменд
 ms.topic: article
 ms.date: 04/03/2019
 ms.openlocfilehash: 43bdaba7d774bba8857a6eb3ef296d7ab8e1c264
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90986857"
 ---
 # <a name="view-azure-advisor-recommendations-that-matter-to-you"></a>Ознакомьтесь с рекомендациями помощника по Azure, которые важны для вас
@@ -47,7 +47,7 @@ ms.locfileid: "90986857"
 1. Выберите рекомендацию из списка рекомендаций.
 1. Выберите отложить или отклонить для рекомендации, которую нужно отложить или отклонить
 
-     :::image type="content" source="./media/view-recommendations/postpone-dismiss.png" alt-text="Снимок экрана помощника по Azure, отображающий параметры фильтрации.":::
+     :::image type="content" source="./media/view-recommendations/postpone-dismiss.png" alt-text="Снимок экрана: окно &quot;Использование управляемых дисков&quot; с отображением действий &quot;Выбор столбца&quot; и &quot;отложить&quot; и &quot;отклонить&quot; для выбранной рекомендации.":::
 
 ### <a name="postpone-or-dismiss-a-multiple-recommendations-in-the-azure-portal"></a>Отложить или отклонить несколько рекомендаций в портал Azure
 
@@ -57,7 +57,7 @@ ms.locfileid: "90986857"
 1. Установите флажок слева от строки для всех ресурсов, которые необходимо отложить или отклонить.
 1. Выберите **отложить** или **Закрыть** в верхнем левом углу таблицы.
 
-     :::image type="content" source="./media/view-recommendations/postpone-dismiss-multiple.png" alt-text="Снимок экрана помощника по Azure, отображающий параметры фильтрации.":::
+     :::image type="content" source="./media/view-recommendations/postpone-dismiss-multiple.png" alt-text="Снимок экрана: окно &quot;Использование управляемых дисков&quot;, в котором отображаются действия &quot;выбрать столбец&quot; и &quot;отложить&quot; и &quot;отклонить&quot; в левом верхнем углу выделенной таблицы.":::
 
 > [!NOTE]
 > Чтобы отклонить или отложить рекомендацию, требуется разрешение участника или владельца. Дополнительные сведения о разрешениях см. в статье помощник по Azure.
@@ -67,13 +67,13 @@ ms.locfileid: "90986857"
 
 ### <a name="reactivate-a-postponed-or-dismissed-recommendation"></a>Повторная активация отложенной или отклоненной рекомендации
 
-Вы можете активировать рекомендацию, которая была отложена или отклонена. Это действие можно выполнить в портал Azure или программно. На портале Azure выполните следующие действия.
+Вы можете активировать рекомендацию, которая была отложена или отклонена. Это действие можно выполнить в портал Azure или программно. На портале Azure выполните следующие действия:
 
 1. Откройте [Помощник по Azure](https://aka.ms/azureadvisordashboard) в портал Azure.
 
 1. Измените фильтр на панели Обзор, чтобы она была **отложена**. Затем помощник отображает отложенные или Отклоненные рекомендации.
 
-    :::image type="content" source="./media/view-recommendations/activate-postponed.png" alt-text="Снимок экрана помощника по Azure, отображающий параметры фильтрации.":::
+    :::image type="content" source="./media/view-recommendations/activate-postponed.png" alt-text="Снимок экрана: окно помощника Azure, в котором отображается отложенное раскрывающееся меню.":::
 
 1. Выберите категорию, чтобы просмотреть **отложенные** и **отклоненные** рекомендации.
 
@@ -81,9 +81,9 @@ ms.locfileid: "90986857"
 
 1. Щелкните **активировать** в конце строки. После нажатия рекомендации для этого ресурса активна и поэтому удаляются из этой таблицы. Теперь рекомендация отображается на **активной** вкладке.
  
-     :::image type="content" source="./media/view-recommendations/activate-postponed-2.png" alt-text="Снимок экрана помощника по Azure, отображающий параметры фильтрации.":::
+     :::image type="content" source="./media/view-recommendations/activate-postponed-2.png" alt-text="Снимок экрана: окно &quot;включить обратимое удаление&quot; с выделенной вкладкой &quot;Отложенная &&quot; с выделено действием &quot;активировать&quot;.":::
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье объясняется, как можно просмотреть рекомендации, которые важны для вас в помощнике по Azure. Дополнительные сведения о Помощнике см. в таких разделах. 
 

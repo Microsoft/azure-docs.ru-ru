@@ -9,10 +9,10 @@ ms.author: rogarana
 ms.subservice: files
 ms.custom: devx-track-python
 ms.openlocfilehash: 8bef69037fad8bf8ee9537e90f26ca967560b9d2
-ms.sourcegitcommit: fbb620e0c47f49a8cf0a568ba704edefd0e30f81
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91876103"
 ---
 # <a name="develop-for-azure-files-with-python"></a>Разработка для файлов Azure с помощью Python
@@ -103,7 +103,7 @@ file_service = FileService(account_name='myaccount', account_key='mykey')
 
 ---
 
-## <a name="create-an-azure-file-share"></a>создать файловый ресурс Azure;
+## <a name="create-an-azure-file-share"></a>Создание файлового ресурса Azure
 
 # <a name="python-v12"></a>[Python версии 12](#tab/python)
 
@@ -191,7 +191,7 @@ for file_or_dir in generator:
 
 ---
 
-## <a name="download-a-file"></a>скачать файл;
+## <a name="download-a-file"></a>Загрузка файла
 
 # <a name="python-v12"></a>[Python версии 12](#tab/python)
 
@@ -339,7 +339,7 @@ file_service.delete_share(share_name, delete_snapshots=DeleteSnapshot.Include)
 
 ---
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы узнали, как работать с файлами Azure с помощью Python, воспользуйтесь следующими ссылками для получения дополнительных сведений.
 

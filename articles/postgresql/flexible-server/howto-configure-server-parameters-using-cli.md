@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 9/22/2020
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 43b14858cc99cac41e277b03171fd4cac4d6eafa
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90940738"
 ---
 # <a name="customize-server-parameters-for-azure-database-for-postgresql---flexible-server-using-azure-cli"></a>Настройка параметров сервера для базы данных Azure для PostgreSQL — гибкого сервера с помощью Azure CLI
@@ -29,7 +29,7 @@ ms.locfileid: "90940738"
 
 Чтобы получить список всех изменяемых параметров на сервере и их значения, выполните команду [AZ postgres гибок-Server parameter list](/cli/azure/postgres/flexible-server/parameter) .
 
-Вы можете вывести список параметров сервера для сервера **mydemoserver.postgres.Database.Azure.com** в разделе **myresourcegroup**группы ресурсов.
+Вы можете вывести список параметров сервера для сервера **mydemoserver.postgres.Database.Azure.com** в разделе **myresourcegroup** группы ресурсов.
 
 ```azurecli-interactive
 az postgres flexible-server parameter list --resource-group myresourcegroup --server-name mydemoserver
@@ -63,6 +63,6 @@ az postgres flexible-server parameter set --name log_min_messages --resource-gro
 
 Эта команда сбрасывает значение параметра **log \_ min \_ Messages** до значения по умолчанию **warning**. Дополнительные сведения о параметрах сервера и допустимых значениях см. в документации по PostgreSQL в разделе Параметры [параметров](https://www.postgresql.org/docs/12/config-setting.html).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Чтобы настроить журналы сервера и получать к ним доступ, ознакомьтесь с разделом [Журналы сервера в базе данных Azure для PostgreSQL](concepts-logging.md).

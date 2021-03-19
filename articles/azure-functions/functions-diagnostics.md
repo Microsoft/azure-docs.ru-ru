@@ -7,10 +7,10 @@ ms.date: 11/01/2019
 ms.author: yunjchoi
 ms.custom: na
 ms.openlocfilehash: fb329273d442c023233fee2e7e01aabe5f5bff8c
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "83122377"
 ---
 # <a name="azure-functions-diagnostics-overview"></a>Общие сведения о системе диагностики Функций Azure
@@ -31,11 +31,11 @@ ms.locfileid: "83122377"
 
 После выбора на домашней страницы категории, которая лучше всего соответствует проблеме с приложением-функцией, интерактивный интерфейс системы диагностики Функций Azure под названием Genie поможет вам определить и устранить проблему с приложением. С использованием предоставленных Genie плиток быстрых действий вы можете просмотреть полный диагностический отчет о проблемах интересующей вас категории. Плитки быстрых действий обеспечивают прямой доступ к метрикам диагностики.
 
-:::image type="content" source="./media/functions-diagnostics/genie.png" alt-text="Поиск системы диагностики Функций Azure." border="false":::
+:::image type="content" source="./media/functions-diagnostics/genie.png" alt-text="Genie — это интерфейс системы диагностики Функций Azure." border="false":::
 
 Выбрав плитку, вы можете просмотреть список статей, связанных с описанной в плитке проблемой. Эти статьи содержат фрагменты с важными сведениями из полного отчета. Выберите любую из этих статей для дальнейшего изучения проблем. Кроме того, можно выбрать элемент **Просмотреть полный отчет**, чтобы просмотреть все статьи на одной странице.
 
-:::image type="content" source="./media/functions-diagnostics/preview-of-diagnostic-report.png" alt-text="Поиск системы диагностики Функций Azure." border="false":::
+:::image type="content" source="./media/functions-diagnostics/preview-of-diagnostic-report.png" alt-text="Пример диагностического отчета" border="false":::
 
 ## <a name="view-a-diagnostic-report"></a>Просмотр диагностического отчета
 
@@ -45,9 +45,9 @@ ms.locfileid: "83122377"
 
 Для функций, основанных на сценариях, можно использовать элемент **Function Execution and Errors** (Выполнение функции и ошибки) в разделе **Function App Down or Reporting Errors** (Приложение-функция не работает, или поступает сообщение об ошибке), чтобы определить строку кода, вызывающую исключения или ошибки. Этот инструмент можно использовать для определения первопричины проблемы в определенной строке кода и ее исправления. Этот параметр недоступен для предварительно компилированных функций C# и Java.
 
-:::image type="content" source="./media/functions-diagnostics/diagnostic-report-on-function-execution-errors.png" alt-text="Поиск системы диагностики Функций Azure." border="false":::
+:::image type="content" source="./media/functions-diagnostics/diagnostic-report-on-function-execution-errors.png" alt-text="Диагностический отчет об ошибках выполнения функций" border="false":::
 
-:::image type="content" source="./media/functions-diagnostics/function-exception.png" alt-text="Поиск системы диагностики Функций Azure." border="false":::
+:::image type="content" source="./media/functions-diagnostics/function-exception.png" alt-text="Просмотр сведений об исключении." border="false":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

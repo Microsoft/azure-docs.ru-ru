@@ -8,19 +8,57 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: text-analytics
 ms.topic: conceptual
-ms.date: 02/23/2021
+ms.date: 03/18/2021
 ms.author: aahi
 ms.custom: references_regions
-ms.openlocfilehash: 629b40567ad9a1126413f5a97d1dc6264b4b10ca
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a2b001d34d265c8e7246b03875c32168f2c5c962
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101736648"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104598904"
 ---
 # <a name="whats-new-in-the-text-analytics-api"></a>Новые возможности в API "Анализ текста"
 
 API анализа текста обновляется на постоянной основе. В этой статье содержатся сведения о новых выпусках и функциях, чтобы оставаться в курсе последних нововведений.
+
+## <a name="march-2021"></a>Март 2021 г.
+
+### <a name="general-api-updates"></a>Общие обновления API
+* Выпуск нового API версии 3.1-Preview. 4, который включает 
+   * Изменения в тексте ответа JSON интеллектуального анализа данных. 
+      * `aspects` Сейчас `targets` и `opinions` сейчас `assessments` . 
+   * Изменения в тексте ответа JSON размещенного веб-API Анализ текста для работоспособности: 
+      * `isNegated`Логическое имя обнаруженного объекта сущности для отрицания является устаревшим и заменяется функцией обнаружения утверждения.
+      * Новое свойство, именуемое `role` , теперь является частью извлеченной связи между атрибутом и сущностью, а также отношением между сущностями.  Это добавляет конкретную определенную связь к обнаруженному типу связи.
+   * Связывание сущностей теперь доступно в качестве асинхронной задачи в `/analyze` конечной точке.
+   * `pii-categories`Теперь в конечной точке доступен новый параметр `/pii` .
+      * Этот параметр позволяет указать вариант выбора личных объектов, а также тех, которые не поддерживаются по умолчанию для языка ввода.
+* Обновлены клиентские библиотеки, которые включают в себя асинхронное анализ и Анализ текста для операций работоспособности. Примеры можно найти на сайте GitHub:
+
+    * [C#](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/textanalytics/Azure.AI.TextAnalytics)
+    * [Python](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/textanalytics/azure-ai-textanalytics/)
+    * [Java](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/textanalytics/azure-ai-textanalytics)
+    * [JavaScript](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/textanalytics/ai-text-analytics/samples/javascript)
+    
+> [!div class="nextstepaction"]
+> [Дополнительные сведения о API анализа текста версии 3.1-Preview. 4](https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-preview-4/operations/Languages)
+
+### <a name="text-analytics-for-health-updates"></a>Анализ текста обновлений работоспособности
+
+* Новая версия модели `2021-03-01` для `/health` конечной точки и локального контейнера, которые предоставляют
+    * Переименование `Gene` типа сущности в `GeneOrProtein` .
+    * Новый `Date` тип сущности.
+    * Обнаружение утверждения, которое заменяет обнаружение отрицания (доступно только в API версии 3.1-Preview. 4).
+    * Новое предпочитаемое `name` свойство для связанных сущностей, нормализованное из различных онтологиес и систем кодирования (доступно только в API версии 3.1 – Preview. 4). 
+* В `3.0.015370001-onprem-amd64` `2021-03-01` репозиторий предварительной версии контейнера была выпущен новый образ контейнера с тегом, а также новая версия модели. 
+* Анализ текста для образа контейнера работоспособности будет перемещен в новый репозиторий в следующем месяце.  Просмотрите сообщения электронной почты о расположении новой домашней папки.
+> [!div class="nextstepaction"]
+> [Дополнительные сведения о Анализ текста для работоспособности](how-tos/text-analytics-for-health.md)
+>
+
+### <a name="text-analytics-resource-portal-update"></a>Обновление портала ресурсов Анализ текста
+* **Обработанные текстовые записи** теперь доступны в качестве метрики в разделе " **мониторинг** " для ресурса анализ текста в портал Azure.  
 
 ## <a name="february-2021"></a>Февраль 2021 года
 
@@ -46,7 +84,7 @@ API анализа текста обновляется на постоянной
 
 ## <a name="december-2020"></a>Декабрь 2020 г.
 
-* [Обновлены](https://azure.microsoft.com/pricing/details/cognitive-services/text-analytics/) сведения о ценах на API анализа текста
+* [Обновлены](https://azure.microsoft.com/pricing/details/cognitive-services/text-analytics/) сведения о ценах на API анализа текста.
 
 ## <a name="november-2020"></a>Ноябрь 2020 г.
 
@@ -59,8 +97,7 @@ API анализа текста обновляется на постоянной
     * [C#](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/textanalytics/Azure.AI.TextAnalytics)
     * [Python](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/textanalytics/azure-ai-textanalytics/)
     * [Java](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/textanalytics/azure-ai-textanalytics)
-
-
+    * 
 > [!div class="nextstepaction"]
 > [Дополнительные сведения о API анализа текста версии 3.1-Preview. 3](https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-preview-3/operations/Languages)
 
@@ -219,10 +256,10 @@ API анализа текста v3 теперь общедоступен со с
 
 * Распознавание следующих типов сущностей личных сведений (только на английском языке):
     * Человек
-    * План
+    * Организация
     * Возраст в качестве подтипа по количеству
     * Дата в качестве подтипа в разделе DateTime
-    * Email 
+    * электронная почта; 
     * Номер телефона (только США)
     * URL-адрес
     * IP-адрес
@@ -238,7 +275,7 @@ API анализа текста v3 теперь общедоступен со с
 * [Версия модели](concepts/model-versioning.md) `2019-10-01` , которая включает в себя:
     * Расширенное обнаружение и классификация сущностей, найденных в тексте. 
     * Распознавание следующих новых типов сущностей:
-        * номер телефона.
+        * Номер телефона
         * IP-адрес
 
 Связывание сущностей поддерживает английский и испанский языки. Языковая поддержка NER зависит от типа сущности.

@@ -5,10 +5,10 @@ ms.assetid: 361daf37-598c-4703-8d78-c77dbef91643
 ms.topic: conceptual
 ms.date: 09/25/2019
 ms.openlocfilehash: e49c235e11eea17fdd1a7ff7751cc0493934d725
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "83123697"
 ---
 # <a name="continuous-deployment-for-azure-functions"></a>Непрерывное развертывание для Функций Azure
@@ -36,13 +36,13 @@ ms.locfileid: "83123697"
 
 Чтобы настроить непрерывное развертывание для существующего приложения функции, выполните следующие действия. Шаги демонстрируют интеграцию с репозиторием GitHub, но аналогичные действия применяются для Azure Repos или других репозиториев исходного кода.
 
-1. В приложении функции в [портал Azure](https://portal.azure.com)выберите **центр развертывания**, выберите **GitHub**и щелкните **авторизовать**. Если у вас уже есть авторизация GitHub, нажмите кнопку **продолжить** и перейдите к следующему шагу. 
+1. В приложении функции в [портал Azure](https://portal.azure.com)выберите **центр развертывания**, выберите **GitHub** и щелкните **авторизовать**. Если у вас уже есть авторизация GitHub, нажмите кнопку **продолжить** и перейдите к следующему шагу. 
 
     :::image type="content" source="./media/functions-continuous-deployment/github.png" alt-text="Центр развертывания службы приложений Azure":::
 
 3. В GitHub выберите **авторизовать AzureAppService**.
 
-    :::image type="content" source="./media/functions-continuous-deployment/authorize.png" alt-text="Центр развертывания службы приложений Azure":::
+    :::image type="content" source="./media/functions-continuous-deployment/authorize.png" alt-text="Авторизация службы приложений Azure":::
 
     Введите пароль GitHub и нажмите кнопку **продолжить**.
 
@@ -53,9 +53,9 @@ ms.locfileid: "83123697"
 
     Выберите **Continue** (Продолжить).
 
-5. Настройте сведения, относящиеся к указанному параметру системы управления версиями. Для GitHub необходимо ввести или выбрать значения для параметров **Организация**, **репозиторий**и **ветвь**. Значения основаны на расположении кода. Затем выберите **продолжить**.
+5. Настройте сведения, относящиеся к указанному параметру системы управления версиями. Для GitHub необходимо ввести или выбрать значения для параметров **Организация**, **репозиторий** и **ветвь**. Значения основаны на расположении кода. Затем выберите **продолжить**.
 
-    :::image type="content" source="./media/functions-continuous-deployment/github-specifics.png" alt-text="Центр развертывания службы приложений Azure":::
+    :::image type="content" source="./media/functions-continuous-deployment/github-specifics.png" alt-text="Настройка GitHub":::
 
 6. Просмотрите все сведения, а затем нажмите кнопку **Готово** , чтобы завершить настройку развертывания.
 

@@ -8,10 +8,10 @@ ms.subservice: cosmosdb-cassandra
 ms.topic: conceptual
 ms.date: 05/20/2020
 ms.openlocfilehash: ba615d3e41393afe007238a0fe1e694732ad123e
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93087644"
 ---
 # <a name="partitioning-in-azure-cosmos-db-cassandra-api"></a>Секционирование в Azure Cosmos DB API Cassandra
@@ -84,11 +84,11 @@ insert into uprofile.user (user, id, message) values ('theo', 2, 'hello again');
 
 При возвращении данных они сортируются по ключу кластеризации, как ожидалось в Apache Cassandra:
 
-:::image type="content" source="./media/cassandra-partitioning/select-from-pk.png" alt-text="Partition":::
+:::image type="content" source="./media/cassandra-partitioning/select-from-pk.png" alt-text="Снимок экрана, на котором показаны возвращенные данные, отсортированные по ключу кластеризации.":::
 
 При использовании данных, смоделированных таким образом, каждой секции можно назначить несколько записей, сгруппированных по пользователям. Таким способом можно выдать запрос, который эффективно направляется `partition key` (в данном случае), `user` чтобы получить все сообщения для данного пользователя. 
 
-:::image type="content" source="./media/cassandra-partitioning/cassandra-partitioning2.png" alt-text="Partition" border="false":::
+:::image type="content" source="./media/cassandra-partitioning/cassandra-partitioning2.png" alt-text="Схема, на которой показано, как можно назначить несколько записей каждой секции, сгруппированные по пользователям." border="false":::
 
 
 ## <a name="composite-partition-key"></a>Составной ключ секции

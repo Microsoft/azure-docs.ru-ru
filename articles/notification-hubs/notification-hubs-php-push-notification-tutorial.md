@@ -15,10 +15,10 @@ ms.author: sethm
 ms.reviewer: jowargo
 ms.lastreviewed: 01/04/2019
 ms.openlocfilehash: daebf7c6a5fc9056e16b77a40ee9f90db598749f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87076629"
 ---
 # <a name="how-to-use-notification-hubs-from-php"></a>Использование концентраторов уведомлений из PHP
@@ -278,9 +278,9 @@ $hub->sendNotification($notification, null);
 
 После выполнения кода PHP на целевом устройстве должно отобразиться уведомление.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-В этом разделе было показано, как создать простой клиент Java REST для службы "Центры уведомлений". Здесь вы можете сделать следующее:
+В этом разделе было показано, как создать простой клиент Java REST для службы "Центры уведомлений". Здесь можно выполнять следующие действия:
 
 * Загрузить полный [Примере оболочки PHP REST], содержащий весь указанный выше код.
 * Продолжить изучение функции тегов в концентраторах уведомлений в [учебнике "Срочные новости"]

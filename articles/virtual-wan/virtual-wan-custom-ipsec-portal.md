@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 10/14/2019
 ms.author: cherylmc
 ms.openlocfilehash: 07eae453441ea8bff81d7cdb60f9c46c08a22829
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91851185"
 ---
 # <a name="configure-a-custom-ipsec-policy-for-virtual-wan-using-the-portal"></a>Настройка настраиваемой политики IPsec для виртуальной глобальной сети с помощью портала
@@ -28,7 +28,7 @@ ms.locfileid: "91851185"
 2. **Выберите VPN-сайт**. На странице обзора концентратора щелкните **VPN (сайт-сайт)** и выберите VPN-сайт, для которого требуется настроить настраиваемую политику IPSec.
 
    ![select](./media/virtual-wan-custom-ipsec-portal/locate.png)
-3. **Измените VPN-подключение**. В **контекстном меню** **...** выберите **изменить VPN-подключение**.
+3. **Измените VPN-подключение**. В **контекстном меню** выберите **изменить VPN-подключение**.
 
    ![изменение;](./media/virtual-wan-custom-ipsec-portal/contextmenu.png)
 4. **Настройте параметры**. На странице **изменение VPN-подключения** измените значение параметра IPSec с default на Custom и настройте политику IPSec. Нажмите кнопку **Save** (Сохранить), чтобы сохранить настройки.
