@@ -9,12 +9,12 @@ ms.devlang: dotnet
 ms.topic: reference
 ms.date: 03/18/2019
 ms.custom: devx-track-dotnet
-ms.openlocfilehash: eee59d906da46e315ede52796bd89c7827833ede
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.openlocfilehash: f41a895aef3476386b8b530fc3e265ffaa21e8c5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93095736"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104597609"
 ---
 # <a name="azure-cosmos-db-table-net-standard-api-download-and-release-notes"></a>API таблиц Azure Cosmos DB и .NET Standard. Скачивание и заметки о выпуске
 [!INCLUDE[appliesto-table-api](includes/appliesto-table-api.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "93095736"
 > * [Node.js](table-sdk-nodejs.md)
 > * [Python](table-sdk-python.md)
 
-|   |   |
+|   | Ссылки  |
 |---|---|
 |**Скачивание пакета SDK**|[NuGet](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table)|
 |**Образец**|[Пример Cosmos DB API таблиц .NET](https://github.com/Azure-Samples/azure-cosmos-table-dotnet-core-getting-started)|
@@ -98,7 +98,7 @@ ms.locfileid: "93095736"
 ## <a name="release-and-retirement-dates"></a>Даты выпуска и вывода из эксплуатации
 Корпорация Майкрософт отправляет уведомление минимум за **12 месяцев** до вывода пакета SDK из эксплуатации, чтобы обеспечить более плавный переход на новую или поддерживаемую версию.
 
-Эта кросс-платформенная библиотека .NET Standard [Microsoft. Azure. Cosmos. Table](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table) заменит библиотеку .NET Framework [Microsoft. Azure. CosmosDB. Table](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.Table).
+Эта кросс-платформенная библиотека .NET Standard [Microsoft. Azure. Cosmos. Table](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table) заменит библиотеку платформа .NET Framework [Microsoft. Azure. CosmosDB. Table](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.Table).
 
 ### <a name="200-series"></a>Серия 2.0.0
 | Версия | Дата выпуска | Дата вывода |

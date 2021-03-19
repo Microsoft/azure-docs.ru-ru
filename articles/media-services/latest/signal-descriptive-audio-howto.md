@@ -12,12 +12,12 @@ ms.topic: how-to
 ms.custom: devx-track-csharp
 ms.date: 08/31/2020
 ms.author: inhenkel
-ms.openlocfilehash: 5174cb584f2e8df236725f7427b423fda1a02c88
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: 01854e7636f53ec1faab157b51cc84f3539582b4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102630866"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104596728"
 ---
 # <a name="signal-descriptive-audio-tracks"></a>Сигнальные звуковые дорожки сигнала
 
@@ -80,7 +80,7 @@ ms.locfileid: "102630866"
 
 Задание обычно проходит через следующие состояния: **запланировано**, **поставлено в очередь**, **Обработка**, **завершено** (конечное состояние). Если в задании обнаружена ошибка, вы получите состояние **Ошибка**. Если задание находится в процессе отмены, вы получите состояние **Выполнение отмены** и **Отменено** по завершении.
 
-Дополнительные сведения см. в разделе [Обработка событий сетки событий](reacting-to-media-services-events.md).
+Дополнительные сведения см. в разделе [Обработка событий сетки событий](monitoring/reacting-to-media-services-events.md).
 
 ## <a name="upload-the-audio-only-mp4-file"></a>Отправить звуковой файл MP4
 

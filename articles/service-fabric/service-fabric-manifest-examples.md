@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 06/11/2018
 ms.author: pepogors
 ms.openlocfilehash: 6f44d2ddaac11545a3a3dc52fd20e02263c6ad67
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "75451644"
 ---
 # <a name="service-fabric-application-and-service-manifest-examples"></a>Примеры манифестов приложений и служб Service Fabric
@@ -17,7 +17,7 @@ ms.locfileid: "75451644"
 
 Ниже приведен список возможностей и примеры манифестов, частью которых они являются.
 
-|Функция|манифеста|
+|Компонент|манифеста|
 |---|---|
 |[Управление ресурсами](service-fabric-resource-governance.md)|[Манифест приложения Reliable Services](service-fabric-manifest-example-reliable-services-app.md#application-manifest), [манифест приложения контейнера](service-fabric-manifest-example-container-app.md#application-manifest)|
 |[Запуск службы с использованием учетной записи локального администратора](service-fabric-application-runas-security.md)|[Манифест приложения Reliable Services](service-fabric-manifest-example-reliable-services-app.md#application-manifest)|

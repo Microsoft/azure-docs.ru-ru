@@ -8,10 +8,10 @@ ms.date: 05/29/2018
 ms.author: twooley
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 67ba4f12aec9e987d79109b7197d03301bf40650
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89004788"
 ---
 # <a name="end-user-authentication-with-azure-data-lake-storage-gen1-using-net-sdk"></a>Проверка подлинности пользователей в Azure Data Lake Storage 1-го поколения с помощью .NET SDK
@@ -34,8 +34,8 @@ ms.locfileid: "89004788"
 
 ## <a name="create-a-net-application"></a>Создание приложения .NET
 1. В Visual Studio выберите меню **файл** , **создать**, а затем **проект**.
-2. Выберите **консольное приложение (.NET Framework)**, а затем нажмите кнопку **Далее**.
-3. В окне**Имя проекта** введите `CreateADLApplication`, а затем выберите **Создать**.
+2. Выберите **консольное приложение (платформа .NET Framework)**, а затем нажмите кнопку **Далее**.
+3. В окне **Имя проекта** введите `CreateADLApplication`, а затем выберите **Создать**.
 
 4. Добавьте пакеты NuGet в проект.
 
@@ -49,7 +49,7 @@ ms.locfileid: "89004788"
         ![Добавление источника NuGet](./media/data-lake-store-get-started-net-sdk/data-lake-store-install-nuget-package.png "Создание новой учетной записи Azure Data Lake")
    4. Закройте **Диспетчер пакетов NuGet**.
 
-5. Открыть **Program.CS**
+5. Открыть **программу. CS**
 6. Замените операторы using следующими строками:
 
     ```csharp

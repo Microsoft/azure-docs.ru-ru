@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: tomfitz
 ms.openlocfilehash: a8172b63039d2d247f30fca4099254cb8fca068e
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87073395"
 ---
 # <a name="microsoftstoragemultistorageaccountcombo-ui-element"></a>Элемент пользовательского интерфейса Microsoft.Storage.MultiStorageAccountCombo
@@ -47,7 +47,7 @@ ms.locfileid: "87073395"
 }
 ```
 
-## <a name="sample-output"></a>Пример полученных результатов
+## <a name="sample-output"></a>Пример выходных данных
 
 ```json
 {
@@ -58,7 +58,7 @@ ms.locfileid: "87073395"
 }
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 - Значение для `defaultValue.prefix` объединяется с одним или несколькими целыми числами для создания последовательности имен учетных записей хранения. Например, если для параметра `defaultValue.prefix` задано значение **sa**, а для параметра `count` — **2**, тогда для учетных записей хранения создаются имена **sa1** и **sa2**. Созданные имена учетных записей хранения автоматически проверяются на уникальность.
 - Имена учетных записей хранения формируются лексикографически на основе `count`. Например, если для параметра `count` задано значение 10, тогда имена учетных записей хранения будут заканчиваться на двухзначное число (01, 02, 03 и т. д.).

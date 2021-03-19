@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 11/13/2019
 ms.author: v-erkel
 ms.openlocfilehash: 95247985be955b71403a5c2c78962792c6451183
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87061427"
 ---
 # <a name="open-a-support-ticket-for-azure-hpc-cache"></a>Отправьте запрос в службу поддержки для кэша HPC Azure
@@ -21,7 +21,7 @@ ms.locfileid: "87061427"
 
 Щелкните **новый запрос в службу поддержки** и выберите **Техническая** для получения справки по кэшу Azure HPC.
 
-Выберите подписку из списка.
+Выберите свою подписку в списке.
 
 Чтобы найти службу кэша Azure HPC, нажмите кнопку **все службы** и выполните поиск HPC.
 

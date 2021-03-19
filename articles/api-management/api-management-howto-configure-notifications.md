@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 01/10/2020
 ms.author: apimpm
 ms.openlocfilehash: 786a9e26003a7afb98307e0bd7fae94c42a2f00d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "84690308"
 ---
 # <a name="how-to-configure-notifications-and-email-templates-in-azure-api-management"></a>Как настраивать уведомления и почтовые шаблоны в Azure API Management
@@ -88,7 +88,7 @@ ms.locfileid: "84690308"
 > [!NOTE]
 > При предварительном просмотре или отправке тестового сообщения параметры не заменяются фактическими значениями.
 
-Чтобы сохранить изменения в почтовом шаблоне, щелкните**Сохранить**. Для отмены изменений щелкните **Отклонить**.
+Чтобы сохранить изменения в почтовом шаблоне, щелкните **Сохранить**. Для отмены изменений щелкните **Отклонить**.
 
 [api-management-management-console]: ./media/api-management-howto-configure-notifications/api-management-management-console.png
 [api-management-publisher-notifications]: ./media/api-management-howto-configure-notifications/api-management-publisher-notifications.png

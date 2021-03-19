@@ -20,10 +20,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: fc5803f96c30ea1df362676aa8c4104bb0b69db3
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88934877"
 ---
 # <a name="odata-comparison-operators-in-azure-cognitive-search---eq-ne-gt-lt-ge-and-le"></a>Операторы сравнения OData в Azure когнитивный поиск- `eq` , `ne` ,,, `gt` `lt` `ge` и `le`
@@ -81,13 +81,13 @@ comparison_operator ::= 'gt' | 'lt' | 'ge' | 'le' | 'eq' | 'ne'
 | --- | --- | --- |
 | `Edm.Double` | `Edm.Double` | Для сравнения применяются [специальные правила для `NaN` ](#special-case-nan) |
 | `Edm.Double` | `Edm.Int64` | Константа преобразуется в `Edm.Double` , что приводит к утере точности для значений большой величины |
-| `Edm.Double` | `Edm.Int32` | Недоступно |
+| `Edm.Double` | `Edm.Int32` | Н/Д |
 | `Edm.Int64` | `Edm.Double` | Сравнения с `NaN` , `-INF` или `INF` не разрешены |
-| `Edm.Int64` | `Edm.Int64` | Недоступно |
+| `Edm.Int64` | `Edm.Int64` | Н/Д |
 | `Edm.Int64` | `Edm.Int32` | Константа преобразуется в `Edm.Int64` перед сравнением |
 | `Edm.Int32` | `Edm.Double` | Сравнения с `NaN` , `-INF` или `INF` не разрешены |
-| `Edm.Int32` | `Edm.Int64` | Недоступно |
-| `Edm.Int32` | `Edm.Int32` | Недоступно |
+| `Edm.Int32` | `Edm.Int64` | Н/Д |
+| `Edm.Int32` | `Edm.Int32` | Н/Д |
 
 Для недопустимых сравнений, например для сравнения поля типа `Edm.Int64` с `NaN` , REST API когнитивный Поиск Azure будет возвращать ошибку "HTTP 400: недопустимый запрос".
 

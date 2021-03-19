@@ -10,14 +10,14 @@ ms.service: virtual-machines-sap
 ms.topic: article
 ms.tgt_pltfrm: vm-linux
 ms.workload: infrastructure
-ms.date: 10/16/2020
+ms.date: 03/16/2021
 ms.author: radeltch
-ms.openlocfilehash: 817a17de240ee10966a6cd20d758def7c2ab9c87
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 42a4c4a41f6c8bdf9d4a8e78f634893722c8f389
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101669679"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104576409"
 ---
 # <a name="high-availability-of-sap-hana-on-azure-vms-on-suse-linux-enterprise-server"></a>Обеспечение высокого уровня доступности SAP HANA на виртуальных машинах Azure в SUSE Linux Enterprise Server
 
@@ -69,7 +69,7 @@ ms.locfileid: "101669679"
 * примечание к SAP [1999351], содержащее дополнительные сведения об устранении неполадок, связанных с расширением для расширенного мониторинга Azure для SAP;
 * Примечание к SAP [401162] содержит сведения о том, как избежать ошибки "адрес уже используется" при настройке репликации системы HANA.
 * [вики-сайт сообщества SAP](https://wiki.scn.sap.com/wiki/display/HOME/SAPonLinuxNotes) со всеми необходимыми примечаниями к SAP для Linux;
-* [Платформы IaaS, сертифицированные для SAP HANA](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure)
+* [SAP HANA сертифицированные платформы IaaS](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure)
 * [SAP NetWeaver на виртуальных машинах Windows. Руководство по планированию и внедрению][planning-guide];
 * [Развертывание виртуальных машин Azure для SAP в Linux][deployment-guide] (Эта статья).
 * [SAP NetWeaver на виртуальных машинах Windows. Руководство по развертыванию СУБД][dbms-guide];
@@ -592,6 +592,115 @@ sudo crm configure rsc_defaults migration-threshold=5000
 #     rsc_ip_HN1_HDB03   (ocf::heartbeat:IPaddr2):       Started hn1-db-0
 #     rsc_nc_HN1_HDB03   (ocf::heartbeat:azure-lb):      Started hn1-db-0
 </code></pre>
+
+## <a name="configure-hana-activeread-enabled-system-replication-in-pacemaker-cluster"></a>Настройка репликации системы HANA Active/Read с поддержкой в кластере Pacemaker
+
+Начиная с SAP HANA 2,0 SPS 01 SAP позволяет выполнять установку в режиме "активный/только для чтения" для репликации системы SAP HANA, где вторичные системы SAP HANA репликации системы можно использовать для интенсивных рабочих нагрузок с возможностью чтения. Для поддержки такой настройки в кластере требуется второй виртуальный IP-адрес, который позволяет клиентам получать доступ к дополнительной базе данных SAP HANA, доступной для чтения. Чтобы гарантировать, что вторичный сайт репликации по-прежнему будет доступен после перенаправление, кластеру необходимо переместить виртуальный IP-адрес, сопоставленный с дополнительным ресурсом SAPHana.
+
+В этом разделе описаны дополнительные действия, необходимые для управления репликацией системы HANA Active/Read с поддержкой в высокодоступном кластере SUSE с вторым виртуальным IP-адресом.    
+Прежде чем продолжить, убедитесь, что вы полностью настроили кластер SUSE высокой доступности, управляющий SAP HANA базой данных, как описано в приведенных выше сегментах документации.  
+
+![SAP HANA высокий уровень доступности с помощью вторичной реплики с поддержкой чтения](./media/sap-hana-high-availability/ha-hana-read-enabled-secondary.png)
+
+### <a name="additional-setup-in-azure-load-balancer-for-activeread-enabled-setup"></a>Дополнительная настройка в подсистеме балансировки нагрузки Azure для активных и доступных для чтения настроек
+
+Чтобы продолжить выполнение дополнительных действий по подготовке второго виртуального IP-адреса, убедитесь, что вы настроили Azure Load Balancer, как описано в разделе [Развертывание вручную](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/sap-hana-high-availability#manual-deployment) .
+
+1. Для **стандартного** балансировщика нагрузки выполните дополнительные действия в той же подсистеме балансировки нагрузки, которая была создана в предыдущем разделе.
+
+   а. Создайте второй интерфейсный пул IP-адресов: 
+
+   - Откройте подсистему балансировки нагрузки, выберите **пул интерфейсных IP-адресов** и щелкните **Добавить**.
+   - Введите имя второго внешнего интерфейса пула IP-адресов (например, **Hana-секондарип**).
+   - Задайте для **назначения** значение **static** и введите IP-адрес (например, **10.0.0.14**).
+   - Щелкните **ОК**.
+   - После создания нового внешнего пула IP-адресов запишите внешний IP-адрес.
+
+   b. Создайте зонд работоспособности.
+
+   - Откройте подсистему балансировки нагрузки, выберите **Зонды работоспособности** и щелкните **Добавить**.
+   - Введите имя новой проверки работоспособности (например, **Hana-секондарихп**).
+   - Выберите **TCP** в качестве протокола и порта **62603**. Сохраните значение "5" для параметра **Интервал** и значение "2" для параметра **Порог состояния неработоспособности**.
+   - Щелкните **ОК**.
+
+   c. Теперь создайте правила балансировки нагрузки.
+
+   - Откройте подсистему балансировки нагрузки, выберите **Правила балансировки нагрузки** щелкните **Добавить**.
+   - Введите имя нового правила балансировщика нагрузки (например, **Hana-секондарилб**).
+   - Выберите интерфейсный IP-адрес, пул внутренних серверов и пробы работоспособности, созданные ранее (например, **Hana-секондарип**, **Hana-сервер** и **Hana-секондарихп**).
+   - Выберите **Порты высокой доступности**.
+   - Увеличьте **время ожидания** до 30 минут.
+   - Не забудьте **включить плавающий IP-адрес**.
+   - Щелкните **ОК**.
+
+### <a name="configure-hana-activeread-enabled-system-replication"></a>Настройка репликации системы (Active/Read) с поддержкой HANA
+
+Действия по настройке репликации системы HANA описаны в разделе [Настройка репликации системы в SAP HANA 2,0](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/sap-hana-high-availability#configure-sap-hana-20-system-replication) . При развертывании вторичного сценария с поддержкой чтения во время настройки репликации системы на втором узле выполните следующую команду в качестве **ханасид** ADM:
+
+```
+sapcontrol -nr 03 -function StopWait 600 10 
+
+hdbnsutil -sr_register --remoteHost=hn1-db-0 --remoteInstance=03 --replicationMode=sync --name=SITE2 --operationMode=logreplay_readaccess 
+```
+
+### <a name="adding-a-secondary-virtual-ip-address-resource-for-an-activeread-enabled-setup"></a>Добавление дополнительного ресурса виртуального IP-адреса для установки с активной или доступной для чтения конфигурацией
+
+Второй виртуальный IP-адрес и соответствующее ограничение совместного размещения можно настроить с помощью следующих команд:
+
+```
+crm configure property maintenance-mode=true
+
+crm configure primitive rsc_secip_HN1_HDB03 ocf:heartbeat:IPaddr2 \
+ meta target-role="Started" \
+ operations \$id="rsc_secip_HN1_HDB03-operations" \
+ op monitor interval="10s" timeout="20s" \
+ params ip="10.0.0.14"
+
+crm configure primitive rsc_secnc_HN1_HDB03 azure-lb port=62603 \
+ meta resource-stickiness=0
+
+crm configure group g_secip_HN1_HDB03 rsc_secip_HN1_HDB03 rsc_secnc_HN1_HDB03
+
+crm configure colocation col_saphana_secip_HN1_HDB03 4000: g_secip_HN1_HDB03:Started \
+ msl_SAPHana_HN1_HDB03:Slave 
+
+crm configure property maintenance-mode=false
+```
+Убедитесь, что состоянию кластера соответствует значение ОК и все ресурсы запущены. Второй виртуальный IP-адрес будет выполняться на вторичном сайте вместе с дополнительным ресурсом SAPHana.
+
+```
+sudo crm_mon -r
+
+# Online: [ hn1-db-0 hn1-db-1 ]
+#
+# Full list of resources:
+#
+# stonith-sbd     (stonith:external/sbd): Started hn1-db-0
+# Clone Set: cln_SAPHanaTopology_HN1_HDB03 [rsc_SAPHanaTopology_HN1_HDB03]
+#     Started: [ hn1-db-0 hn1-db-1 ]
+# Master/Slave Set: msl_SAPHana_HN1_HDB03 [rsc_SAPHana_HN1_HDB03]
+#     Masters: [ hn1-db-0 ]
+#     Slaves: [ hn1-db-1 ]
+# Resource Group: g_ip_HN1_HDB03
+#     rsc_ip_HN1_HDB03   (ocf::heartbeat:IPaddr2):       Started hn1-db-0
+#     rsc_nc_HN1_HDB03   (ocf::heartbeat:azure-lb):      Started hn1-db-0
+# Resource Group: g_secip_HN1_HDB03:
+#     rsc_secip_HN1_HDB03       (ocf::heartbeat:IPaddr2):        Started hn1-db-1
+#     rsc_secnc_HN1_HDB03       (ocf::heartbeat:azure-lb):       Started hn1-db-1
+
+```
+
+В следующем разделе можно найти типичный набор тестов отработки отказа для выполнения.
+
+Учитывайте второе поведение виртуального IP-адреса при тестировании кластера HANA, настроенного с помощью вторичного сервера с поддержкой чтения:
+
+1. При переносе ресурса кластера **SAPHana_HN1_HDB03** в **HN1-DB-1** второй виртуальный IP-адрес перейдет на другой сервер **HN1-DB-0**. Если вы настроили AUTOMATED_REGISTER = "false" и репликация системы HANA не зарегистрирована автоматически, второй виртуальный IP-адрес будет работать на **HN1-DB-0,** так как сервер доступен и службы кластеров находятся в сети.  
+
+2. При тестировании сбоя сервера второй виртуальный IP-ресурс (**rsc_secip_HN1_HDB03**) и ресурс порта балансировщика нагрузки Azure (**rsc_secnc_HN1_HDB03**) будут выполняться на основном сервере вместе с основными ресурсами виртуального IP-адреса. Пока сервер-получатель не работает, приложения, подключенные к базе данных HANA с поддержкой чтения, будут подключаться к первичной базе данных HANA. Предполагается, что не нужно, чтобы приложения, подключенные к базе данных HANA с поддержкой чтения, были недоступны, пока сервер-получатель недоступен.
+  
+3. Если сервер-получатель доступен и службы кластеров находятся в сети, второй виртуальный IP-адрес и порты будут автоматически перемещены на сервер-получатель, даже если репликация системы HANA не может быть зарегистрирована как вторичная. Перед запуском служб кластеров на этом сервере необходимо зарегистрировать вторичную базу данных HANA как доступную для чтения. Ресурс кластера экземпляра HANA можно настроить для автоматической регистрации базы-получателя с параметром AUTOMATED_REGISTER = true.       
+
+4. Во время отработки отказа и отката существующие подключения для приложений, использующие второй виртуальный IP-адрес для подключения к базе данных HANA, могут быть прерваны.  
 
 ## <a name="test-the-cluster-setup"></a>Проверка настройки кластера
 

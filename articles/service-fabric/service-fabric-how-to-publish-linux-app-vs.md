@@ -6,10 +6,10 @@ ms.topic: troubleshooting
 ms.date: 5/20/2019
 ms.author: pepogors
 ms.openlocfilehash: c30eedb6782e4172d677f16e27441f28c78cdd89
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "75614355"
 ---
 # <a name="use-visual-studio-to-create-and-publish-net-core-applications-targeting-a-remote-linux-service-fabric-cluster"></a>Создание и публикация приложений .Net Core, предназначенных для удаленного кластера Service Fabric Linux, с помощью Visual Studio
@@ -54,7 +54,7 @@ ms.locfileid: "75614355"
     </EntryPoint>
 ```
 6. В обозреватель решений щелкните приложение правой кнопкой мыши и выберите **опубликовать**. Откроется диалоговое окно **Publish** (Опубликовать).
-7. В поле **Конечная точка подключения**выберите конечную точку для удаленного кластера Service Fabric Linux, который вы хотите назначить.
+7. В поле **Конечная точка подключения** выберите конечную точку для удаленного кластера Service Fabric Linux, который вы хотите назначить.
 ![Публикация — приложение]
 
 <!--Image references-->

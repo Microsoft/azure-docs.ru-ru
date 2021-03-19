@@ -12,14 +12,14 @@ ms.devlang: na
 ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/12/2017
+ms.date: 03/17/2021
 ms.author: alkohli
-ms.openlocfilehash: 69a36f38cc76693f596b45d4df6e232bc01584d5
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: 0e25d41fbf6a9683f178cbfd1b07fde1b6796509
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94967981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104656827"
 ---
 # <a name="use-the-storsimple-device-manager-service-to-administer-your-storsimple-device"></a>Использование службы диспетчера устройств StorSimple для администрирования устройства StorSimple
 
@@ -47,6 +47,8 @@ ms.locfileid: "94967981"
 В следующей таблице собраны все стандартные задачи управления и сложные рабочие процессы, которые могут быть выполнены в пользовательском интерфейсе службы диспетчера устройств StorSimple. Эти задачи представлены в колонках пользовательского интерфейса, откуда их можно инициировать.
 
 Чтобы получить дополнительные сведения о каждом рабочем процессе, щелкните соответствующую процедуру в таблице.
+
+[!INCLUDE [StorSimple software warning](../../includes/storsimple-update-software-warning.md)]
 
 #### <a name="storsimple-device-manager-workflows"></a>Рабочие процессы диспетчера устройств StorSimple
 
@@ -80,7 +82,7 @@ ms.locfileid: "94967981"
 | Создать пакет поддержки. |[Создание пакетов поддержки и управление ими](storsimple-8000-contact-microsoft-support.md#start-a-support-session-in-windows-powershell-for-storsimple) |
 | Установка обновлений программного обеспечения |[Обновление устройства](storsimple-update-device.md) |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 При возникновении проблем с ежедневной работой устройства StorSimple или любого из его аппаратных компонентов см. следующие источники.
 

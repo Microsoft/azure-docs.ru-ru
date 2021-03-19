@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 11/11/2019
 ms.author: tomfitz
 ms.openlocfilehash: e730201812005a9b469a964e4acd081ebe86b100
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87063938"
 ---
 # <a name="microsoftcommontagsbyresource-ui-element"></a>Элемент пользовательского интерфейса Microsoft. Common. Тагсбиресаурце
@@ -33,7 +33,7 @@ ms.locfileid: "87063938"
 }
 ```
 
-## <a name="sample-output"></a>Пример полученных результатов
+## <a name="sample-output"></a>Пример выходных данных
 
 ```json
 {
@@ -47,7 +47,7 @@ ms.locfileid: "87063938"
 }
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 - Необходимо указать хотя бы один элемент в `resources` массиве.
 - Каждый элемент в `resources` должен быть полным типом ресурса. Эти элементы отображаются в раскрывающемся списке **ресурсов** и таггабле пользователем.

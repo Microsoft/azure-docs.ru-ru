@@ -9,12 +9,12 @@ ms.subservice: spot
 ms.date: 02/26/2021
 ms.reviewer: cynthn
 ms.custom: devx-track-azurecli, devx-track-azurepowershell
-ms.openlocfilehash: b20a5bd9c06c3948097389d5439defa219a7931b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: a176a30a1e21ec03c2da329785ab895ec67a4faf
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101694994"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104596422"
 ---
 # <a name="azure-spot-virtual-machines-for-virtual-machine-scale-sets"></a>Виртуальные машины Azure для масштабируемых наборов виртуальных машин 
 
@@ -46,7 +46,7 @@ ms.locfileid: "101694994"
 -   Соглашение Enterprise
 -   Код предложения с оплатой по мере использования 003P
 -   Спонсорские
-- Для поставщика облачных служб (CSP) обратитесь к [центру партнеров](https://docs.microsoft.com/partner-center/azure-plan-get-started) или непосредственно обратитесь к своему партнеру.
+- Для поставщика облачных служб (CSP) обратитесь к [центру партнеров](/partner-center/azure-plan-get-started) или непосредственно обратитесь к своему партнеру.
 
 ## <a name="eviction-policy"></a>Политика вытеснения
 
@@ -202,7 +202,7 @@ $vmssConfig = New-AzVmssConfig `
 
 ## <a name="simulate-an-eviction"></a>Имитация вытеснения
 
-Вы можете [имитировать вытеснение](https://docs.microsoft.com/rest/api/compute/virtualmachines/simulateeviction) виртуальной машины Azure, чтобы проверить, насколько хорошо ваше приложение будет реагировать на внезапное вытеснение. 
+Вы можете [имитировать вытеснение](/rest/api/compute/virtualmachines/simulateeviction) виртуальной машины Azure, чтобы проверить, насколько хорошо ваше приложение будет реагировать на внезапное вытеснение. 
 
 Замените следующие сведения: 
 
@@ -217,7 +217,7 @@ POST https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/
 
 `Response Code: 204` означает, что имитация вытеснения прошла успешно. 
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 **Вопрос.** После создания виртуальный экземпляр виртуальной машины Azure совпадает со стандартным экземпляром?
 

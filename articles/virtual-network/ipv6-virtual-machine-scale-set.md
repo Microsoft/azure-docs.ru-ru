@@ -14,10 +14,10 @@ ms.workload: infrastructure-services
 ms.date: 03/31/2020
 ms.author: kumud
 ms.openlocfilehash: f969d7edc22c9c36481ca42449193af5f8c7b0d9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "84710003"
 ---
 # <a name="deploy-virtual-machine-scale-sets-with-ipv6-in-azure"></a>Развертывание масштабируемых наборов виртуальных машин с помощью IPv6 в Azure

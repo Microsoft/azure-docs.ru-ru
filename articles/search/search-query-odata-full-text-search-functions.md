@@ -20,10 +20,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 78f9e4d8fa80fdf74bdb5cd79f4489d12696fcc2
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88935795"
 ---
 # <a name="odata-full-text-search-functions-in-azure-cognitive-search---searchismatch-and-searchismatchscoring"></a>Функции полнотекстового поиска OData в Azure Когнитивный поиск — `search.ismatch` и `search.ismatchscoring`
@@ -69,7 +69,7 @@ search_mode ::= "'any'" | "'all'"
 
 Параметры определены в следующей таблице.
 
-| Имя параметра | Тип | Описание |
+| Имя параметра | Type | Описание |
 | --- | --- | --- |
 | `search` | `Edm.String` | Поисковый запрос (как [простой](query-simple-syntax.md) , так и [полный](query-lucene-syntax.md) синтаксис запроса Lucene). |
 | `searchFields` | `Edm.String` | Разделенный запятыми список полей с возможностью поиска, в которых выполняется поиск; по умолчанию для всех полей, поддерживающих поиск, в индексе. При использовании [поискового](query-lucene-syntax.md#bkmk_fields) запроса в `search` параметре описатели полей в запросе Lucene переопределяют все поля, указанные в этом параметре. |

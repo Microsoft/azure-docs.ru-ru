@@ -8,16 +8,16 @@ ms.service: active-directory
 ms.subservice: develop
 ms.workload: identity
 ms.topic: reference
-ms.date: 02/01/2021
+ms.date: 03/17/2021
 ms.author: ryanwi
 ms.reviewer: hirsin
 ms.custom: aaddev
-ms.openlocfilehash: 606704621a4904dd0fb7b6f55e753dbe77e39cb5
-ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
+ms.openlocfilehash: 56ffa8c33c409e274318407a70f33edaabb5073d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103601021"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104578504"
 ---
 # <a name="azure-ad-authentication-and-authorization-error-codes"></a>Коды ошибок аутентификации и авторизации Azure AD
 
@@ -269,6 +269,7 @@ ms.locfileid: "103601021"
 | AADSTS90094 | AdminConsentRequired: требуется согласие администратора. |
 | AADSTS900382 | Конфиденциальный клиент не поддерживается в запросе между облаками. |
 | AADSTS90099 | Приложение "{appId}" ({appName}) не было разрешено в клиенте "{клиент}". Приложения должны иметь права на доступ к клиенту клиента, прежде чем партнер-полномочные администраторы смогут их использовать. Предоставьте предварительное согласие или выполните соответствующий API центра партнеров для авторизации приложения. |
+| AADSTS900971| Не указан адрес ответа.|
 | AADSTS90100 | InvalidRequestParameter: пустой или недопустимый параметр. |
 | AADSTS901002 | AADSTS901002: параметр запроса "Resource" не поддерживается. |
 | AADSTS90101 | InvalidEmailAddress: указан недопустимый адрес электронной почты. Необходимый формат: `someone@example.com`. |

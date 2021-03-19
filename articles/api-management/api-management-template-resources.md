@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 11/04/2019
 ms.author: apimpm
 ms.openlocfilehash: c3b6123c63bf530463379a175745ef86baf2c5a3
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "84689993"
 ---
 # <a name="azure-api-management-template-resources"></a>Ресурсы шаблонов управления API Azure
@@ -115,7 +115,7 @@ ms.locfileid: "84689993"
   
 |Имя|Текст|  
 |----------|----------|  
-|PageTitleApis|Программные интерфейсы|  
+|PageTitleApis|API-интерфейсы|  
   
 ###  <a name="appdetailsstrings"></a><a name="AppDetailsStrings"></a> аппдетаилсстрингс  
   
@@ -133,7 +133,7 @@ ms.locfileid: "84689993"
 |WebDevelopersAppDeleteConfirmation|Вы действительно хотите удалить приложение?|  
 |WebDevelopersAppNotPublished|Не опубликовано|  
 |WebDevelopersAppNotSubmitted|Не отправлено|  
-|WebDevelopersAppTableCategoryHeader|Категория|  
+|WebDevelopersAppTableCategoryHeader|Category|  
 |WebDevelopersAppTableNameHeader|Имя|  
 |WebDevelopersAppTableStateHeader|Состояние|  
 |WebDevelopersEditLink|Изменить|  
@@ -163,7 +163,7 @@ ms.locfileid: "84689993"
   
 |Имя|Текст|  
 |----------|----------|  
-|ButtonLabelCancel|Отмена|  
+|ButtonLabelCancel|Отменить|  
 |ButtonLabelSave|Сохранить|  
 |GeneralExceptionMessage|Возникла проблема. Возможно, это временный сбой или ошибка. Повторите попытку позже.|  
 |NoItemsToDisplay|Нет элементов для отображения|  
@@ -322,12 +322,12 @@ ms.locfileid: "84689993"
 |TooltipTextDoubleClickToSelectAll|Дважды щелкните, чтобы выделить все.|  
 |TooltipTextHideRevealSecret|Показать или скрыть|  
 |ButtonLinkOpenConsole|Попробовать|  
-|SectionHeadingRequestBody|Тело запроса|  
+|SectionHeadingRequestBody|Текст запроса|  
 |SectionHeadingRequestParameters|Параметры запроса|  
-|SectionHeadingRequestUrl|Request URL (URL-адрес запроса)|  
+|SectionHeadingRequestUrl|URL-адрес запроса|  
 |SectionHeadingResponse|Ответ|  
-|SectionHeadingRequestHeaders|Заголовки запроса|  
-|FormLabelSubtextOptional|необязательный|  
+|SectionHeadingRequestHeaders|Заголовки запросов|  
+|FormLabelSubtextOptional|необязательно|  
 |SectionHeadingCodeSamples|Примеры кода|  
 |TextblockOpenidConnectHeaderDescription|Маркер OpenID Connect Connect ID получен от <i \> {0}</i \> . Поддерживаемые типы предоставления: <i\>{1}</i\>.|  
   
@@ -516,7 +516,7 @@ ms.locfileid: "84689993"
 |WebAuthenticationNotAMember|Еще не являетесь участником? `<a href="/signup"\>Sign up now</a\>`|  
 |WebAuthenticationRemember|Запомнить меня на этом компьютере|  
 |WebAuthenticationSigininWithPassword|Войдите с использованием имени пользователя и пароля.|  
-|WebAuthenticationSigninTitle|Войти|  
+|WebAuthenticationSigninTitle|Вход|  
 |WebAuthenticationSignUpNow|Зарегистрируйтесь сейчас|  
   
 ###  <a name="signupstrings"></a><a name="SignupStrings"></a> сигнупстрингс  
@@ -582,7 +582,7 @@ ms.locfileid: "84689993"
 |TextboxLabelEmailLastName|Фамилия|  
 |TextboxLabelNotificationsSenderEmail|Электронная почта отправителя уведомлений|  
 |TextboxLabelOrganizationName|Название организации|  
-|SubscriptionStateActive|Активно|  
+|SubscriptionStateActive|Активен|  
 |SubscriptionStateCancelled|Отменено|  
 |SubscriptionStateExpired|Срок действия истек|  
 |SubscriptionStateRejected|Отклонено|  

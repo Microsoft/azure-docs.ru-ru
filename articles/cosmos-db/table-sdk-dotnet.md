@@ -9,12 +9,12 @@ ms.devlang: dotnet
 ms.topic: reference
 ms.date: 08/17/2018
 ms.custom: devx-track-dotnet
-ms.openlocfilehash: ea5f3fca18e6a5781bf46112134ae4efc7159106
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.openlocfilehash: 4bea9f202d40090217219752a13ffde64b466140
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93101210"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104597600"
 ---
 # <a name="azure-cosmos-db-table-net-api-download-and-release-notes"></a>API таблицы .NET для базы данных Azure Cosmos DB. Скачивание и заметки о выпуске
 [!INCLUDE[appliesto-table-api](includes/appliesto-table-api.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "93101210"
 > * [Node.js](table-sdk-nodejs.md)
 > * [Python](table-sdk-python.md)
 
-|   |   |
+|   | Ссылки  |
 |---|---|
 |**Скачивание пакета SDK**|[NuGet](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.Table)|
 |**Краткое руководство**|[Azure Cosmos DB: Build a .NET application using the Table API](create-table-dotnet.md) (Создание приложения .NET с помощью API таблицы Azure Cosmos DB)|
@@ -82,7 +82,7 @@ ms.locfileid: "93101210"
 
 Корпорация Майкрософт отправляет уведомление минимум за **12 месяцев** до вывода пакета SDK из эксплуатации, чтобы обеспечить более плавный переход на новую или поддерживаемую версию.
 
-`Microsoft.Azure.CosmosDB.Table`Библиотека в настоящее время доступна только для .NET Framework и находится в режиме обслуживания и скоро будет считаться устаревшей. Новые функции и возможности и оптимизации добавляются только в библиотеку .NET Standard [Microsoft. Azure. Cosmos. Table](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table), поэтому рекомендуется выполнить обновление до [Microsoft. Azure. Cosmos. Table](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table).
+`Microsoft.Azure.CosmosDB.Table`Библиотека в настоящее время доступна только для платформа .NET Framework и находится в режиме обслуживания и скоро будет считаться устаревшей. Новые функции и возможности и оптимизации добавляются только в библиотеку .NET Standard [Microsoft. Azure. Cosmos. Table](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table), поэтому рекомендуется выполнить обновление до [Microsoft. Azure. Cosmos. Table](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table).
 
 Пакет предварительной версии [WindowsAzure. Storage-PremiumTable](https://www.nuget.org/packages/WindowsAzure.Storage-PremiumTable/0.1.0-preview) является устаревшим. Поддержка пакета SDK WindowsAzure.Storage PremiumTable будет прекращена 15 ноября 2018 г. С этого времени запросы к устаревшему пакету SDK будут запрещены.
 
@@ -97,7 +97,7 @@ ms.locfileid: "93101210"
 | [1.0.0](#1.0.0) |15 ноября 2017 г.|15 ноября 2019 г. |
 | 0.9.0 (предварительная версия) |11 ноября 2017 г. |11 ноября 2019 г. |
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 Если возникает ошибка 
 

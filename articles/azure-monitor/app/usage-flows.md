@@ -7,10 +7,10 @@ ms.author: daviste
 ms.date: 01/24/2018
 ms.reviewer: mbullwin
 ms.openlocfilehash: a31ab24b96fa44787d08801a0680f94ff98bb5a2
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87309275"
 ---
 # <a name="analyze-user-navigation-patterns-with-user-flows-in-application-insights"></a>Анализ шаблонов навигации пользователя с помощью инструмента "Маршруты пользователя"в Azure Application Insights

@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 07/13/2020
 ms.author: tomfitz
 ms.openlocfilehash: 2a075c5c99f457681cd49e75014487bf9cca263c
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87098202"
 ---
 # <a name="createuidefinition-collection-functions"></a>Функции коллекции CreateUiDefinition
@@ -223,7 +223,7 @@ ms.locfileid: "87098202"
 
 Возвращает новый массив после вызова лямбда-функции для предоставленного массива. Первый параметр — это массив, используемый для лямбда-функции. Вторым параметром является лямбда-функция.
 
-В следующем примере возвращается новый массив с каждым значением, которое удваивается. Результат `[2, 4, 6]`.
+В следующем примере возвращается новый массив с каждым значением, которое удваивается. Результат равен `[2, 4, 6]`.
 
 ```json
 "[map(parse('[1, 2, 3]'), (item) => mul(2, item))]"

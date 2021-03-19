@@ -18,10 +18,10 @@ ms.reviewer: jowargo
 ms.lastreviewed: 01/04/2019
 ms.custom: devx-track-java
 ms.openlocfilehash: 09553f587916e8204541b36f259a450d72c1b270
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87322947"
 ---
 # <a name="how-to-use-notification-hubs-from-java"></a>Использование концентраторов уведомлений из Java
@@ -377,7 +377,7 @@ hub.sendNotification(n);
 
 ## <a name="next-steps"></a><a name="next-steps"></a>Дальнейшие действия
 
-В этом разделе было показано, как создать простой клиент REST Java для службы "Центры уведомлений". Здесь вы можете сделать следующее:
+В этом разделе было показано, как создать простой клиент REST Java для службы "Центры уведомлений". Здесь можно выполнять следующие действия:
 
 * Скачайте полный [пакет SDK для Java], содержащий весь код пакета SDK.
 * Попробуйте разные примеры:

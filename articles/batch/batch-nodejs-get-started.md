@@ -3,12 +3,12 @@ title: Использование клиентской библиотеки па
 description: Изучите основные принципы работы пакетной службы Azure и создайте простое решение с использованием Node.js.
 ms.topic: how-to
 ms.date: 10/08/2020
-ms.openlocfilehash: 36a127a20014e87554f0d3e3927b05679b6f72f1
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.openlocfilehash: a2d86582c94804a20a3a9e952bc64d60414e25a5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98737292"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104656028"
 ---
 # <a name="get-started-with-batch-sdk-for-nodejs"></a>Приступая к работе с пакетом SDK для пакетной службы для Node.js
 
@@ -32,9 +32,9 @@ ms.locfileid: "98737292"
 
 Клиент Node.js развертывает задание пакетной службы с задачей подготовки (описанной далее) и набор задач в зависимости от числа контейнеров в учетной записи хранения. Скрипты можно скачать из репозитория GitHub.
 
-- [Клиент Node.js](https://github.com/Azure/azure-batch-samples/blob/master/Node.js/GettingStarted/nodejs_batch_client_sample.js)
-- [Скрипты оболочки для задач подготовки](https://github.com/Azure/azure-batch-samples/blob/master/Node.js/GettingStarted/startup_prereq.sh)
-- [Преобразователь Python CSV в JSON](https://github.com/Azure/azure-batch-samples/blob/master/Node.js/GettingStarted/processcsv.py)
+- [Клиент Node.js](https://github.com/Azure-Samples/azure-batch-samples/blob/master/JavaScript/Node.js/sample.js)
+- [Скрипты оболочки для задач подготовки](https://github.com/Azure-Samples/azure-batch-samples/blob/master/JavaScript/Node.js/startup_prereq.sh)
+- [Преобразователь Python CSV в JSON](https://github.com/Azure-Samples/azure-batch-samples/blob/master/JavaScript/Node.js/processcsv.py)
 
 > [!TIP]
 > Клиент Node.js по указанной ссылке не содержит код, который необходимо развертывать в качестве приложения-функции Azure. Перейдите по следующим ссылкам, чтобы ознакомиться с инструкциями по его созданию.

@@ -4,10 +4,10 @@ description: Из этой статьи вы узнаете, как создат
 ms.topic: conceptual
 ms.date: 08/20/2019
 ms.openlocfilehash: 948931764769bc967b88e7942b7e8384b0f93dff
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87077003"
 ---
 # <a name="back-up-an-azure-file-share-by-using-powershell"></a>Резервное копирование файлового ресурса Azure с помощью PowerShell
@@ -223,7 +223,7 @@ $afsPol =  Get-AzRecoveryServicesBackupProtectionPolicy -Name "dailyafs"
 
 Включите защиту с помощью команды [Enable-азрековерисервицесбаккуппротектион](/powershell/module/az.recoveryservices/enable-azrecoveryservicesbackupprotection). После того как политика будет связана с хранилищем, резервные копии будут активированы в соответствии с расписанием политики.
 
-В следующем примере включается защита файлового ресурса Azure **тестазурефилешаре** в учетной записи хранения **тестсторажеаккт**с политикой **даиляфс**:
+В следующем примере включается защита файлового ресурса Azure **тестазурефилешаре** в учетной записи хранения **тестсторажеаккт** с политикой **даиляфс**:
 
 ```powershell
 Enable-AzRecoveryServicesBackupProtection -StorageAccountName "testStorageAcct" -Name "testAzureFS" -Policy $afsPol

@@ -6,10 +6,10 @@ ms.author: lazinnat
 author: lazinnat
 ms.date: 07/11/2019
 ms.openlocfilehash: 5173db54abef132a4a4d5d117881352ca37d6b23
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "75651206"
 ---
 # <a name="reference-view-definition-artifact"></a>Ссылка: Просмотр артефакта определения
@@ -87,6 +87,6 @@ ms.locfileid: "75651206"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Учебник. Создание управляемого приложения с настраиваемыми действиями и ресурсами](tutorial-create-managed-app-with-custom-provider.md)
+- [Руководство по созданию управляемого приложения с настраиваемыми действиями и ресурсами](tutorial-create-managed-app-with-custom-provider.md)
 - [Ссылка: артефакт элементов пользовательского интерфейса](reference-createuidefinition-artifact.md)
 - [Ссылка: артефакт шаблона развертывания](reference-main-template-artifact.md)

@@ -10,10 +10,10 @@ ms.service: storage
 ms.subservice: blobs
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 06be168ff9dfd55a56578b3afcdab8d984416756
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89078016"
 ---
 # <a name="quickstart-route-storage-events-to-web-endpoint-with-powershell"></a>Краткое руководство. Маршрутизация событий хранилища в конечную точку веб-сайта с помощью PowerShell
@@ -30,7 +30,7 @@ ms.locfileid: "89078016"
 
 [!INCLUDE [updated-for-az](../../../includes/updated-for-az.md)]
 
-Для работы с этой статьей требуется последняя версия Azure PowerShell. Если необходимо установить или обновить, см. статью [Установка и настройка Azure PowerShell](/powershell/azure/install-Az-ps).
+Для работы с этой статьей требуется последняя версия Azure PowerShell. Если вам необходимо выполнить установку или обновление, см. статью [об установке модуля Azure PowerShell](/powershell/azure/install-Az-ps).
 
 ## <a name="sign-in-to-azure"></a>Вход в Azure
 
@@ -169,7 +169,7 @@ Set-AzStorageBlobContent -File gridTestFile.txt -Container $containerName -Conte
 Remove-AzResourceGroup -Name $resourceGroup
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы знаете, как создавать разделы и подписки на события, ознакомьтесь с дополнительными сведениями о событиях хранилища BLOB-объектов и возможностях службы "Сетка событий":
 
