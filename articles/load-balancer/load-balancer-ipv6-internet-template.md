@@ -15,10 +15,10 @@ ms.workload: infrastructure-services
 ms.date: 09/25/2017
 ms.author: allensu
 ms.openlocfilehash: 415c95a441ac0cc6ed2dbf2d6a37f57d7a9e7341
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90562525"
 ---
 # <a name="deploy-an-internet-facing-load-balancer-solution-with-ipv6-using-a-template"></a>Развертывание решения балансировки нагрузки для Интернета с поддержкой IPv6 с помощью шаблона
@@ -136,6 +136,6 @@ Azure Load Balancer является балансировщиком нагруз
 
 Остальные переменные в шаблоне содержат производные значения, которые назначаются, когда Azure создает ресурсы. Не изменяйте эти переменные.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Синтаксис JSON и свойства подсистемы балансировки нагрузки в шаблоне см. в справочнике по шаблону для ресурса [Microsoft.Network/loadBalancers](/azure/templates/microsoft.network/loadbalancers).

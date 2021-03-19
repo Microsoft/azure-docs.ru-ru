@@ -7,12 +7,12 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 01/28/2020
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 6f48245983898c542197deb7e0b3cd53bd39be33
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: c8fa6e108550b1417f736d1caff5cafd3e16f63a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91707529"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104595011"
 ---
 # <a name="limits-in-azure-database-for-postgresql---single-server"></a>Ограничения в базе данных Azure для PostgreSQL — один сервер
 В следующих разделах описываются действующие ограничения емкости и функциональных возможностей в службе базы данных. Дополнительные сведения о уровнях ресурсов (вычислений, памяти, хранилища) см. [в статье ценовые категории.](concepts-pricing-tiers.md)
@@ -68,11 +68,14 @@ PostgreSQL подключение, даже бездействующее, мож
 - В некоторых сценариях символы UTF-8 не полностью поддерживаются в среде PostgreSQL с открытым исходным кодом в операционной системе Windows, что влияет на службу "База данных Azure для PostgreSQL". Дополнительные сведения см. в беседе об [ошибке 15476 в postgresql-archive](https://www.postgresql-archive.org/BUG-15476-Problem-on-show-trgm-with-4-byte-UTF-8-characters-td6056677.html).
 
 ### <a name="gss-error"></a>Ошибка GSS
-Если отображается сообщение об ошибке, связанное с **GSS**, скорее всего, вы используете более новую версию клиента или драйвера, которая еще не полностью поддерживается в Azure postgres Single Server. Эта ошибка известна как воздействие на [версии драйверов JDBC 42.2.15 и 42.2.16](https://github.com/pgjdbc/pgjdbc/issues/1868).
-   - Мы планируем завершить обновление до конца ноября. Рекомендуется использовать рабочую версию драйвера.
-   - Или попробуйте отключить запрос GSS.  Используйте параметр соединения, например `gssEncMode=disable` .
+Если вы увидите ошибку, связанную с **GSS**, скорее всего используется клиент или драйвер более новой версии, которую одиночный сервер Azure Postgres поддерживает пока не полностью. Эта ошибка влияет на [драйвер JDBC версий 42.2.15 и 42.2.16](https://github.com/pgjdbc/pgjdbc/issues/1868).
+   - Мы планируем завершить обновление до конца ноября. Сейчас рекомендуется использовать рабочую версию драйвера.
+   - Или попробуйте отключить запрос GSS.  Используйте параметр подключения, например `gssEncMode=disable`.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+### <a name="storage-size-reduction"></a>Уменьшение размера хранилища
+Размер хранилища не может быть уменьшен. Необходимо создать новый сервер с требуемым размером хранилища, вручную выполнить дамп, [восстановить](./howto-migrate-using-dump-and-restore.md) и перенести базы данных на новый сервер.
+
+## <a name="next-steps"></a>Дальнейшие действия
 - См. [доступные возможности в каждой ценовой категории](concepts-pricing-tiers.md).
 - См. [поддерживаемые версии базы данных PostgreSQL](concepts-supported-versions.md).
 - Узнайте [Как выполнить резервное копирование и восстановление сервера в службе "База данных Azure для PostgreSQL" с помощью портала Azure](howto-restore-server-portal.md).

@@ -8,10 +8,10 @@ ms.service: web-application-firewall
 ms.date: 10/31/2019
 ms.author: victorh
 ms.openlocfilehash: 89c863e85d9eab27a47bc1bf7b98cd1c8d89e900
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "73516868"
 ---
 # <a name="configure-bot-protection-for-web-application-firewall-on-azure-application-gateway-preview"></a>Настройка защиты от ботов для брандмауэра веб-приложения Azure в Шлюзе приложений Azure (предварительная версия)
@@ -29,9 +29,9 @@ ms.locfileid: "73516868"
 
 ## <a name="enable-bot-protection-rule-set"></a>Включить набор правил для защиты Bot
 
-1. На странице **Basic** Policy (базовая политика), созданной ранее, в разделе **Параметры**выберите **правила**.  
+1. На странице **Basic** Policy (базовая политика), созданной ранее, в разделе **Параметры** выберите **правила**.  
 
-2. На странице сведения в разделе **Управление правилами**в раскрывающемся   меню установите флажок для правила защиты Bot и нажмите кнопку **сохранить**.
+2. На странице сведения в разделе  **Управление правилами** в раскрывающемся   меню установите флажок для правила защиты Bot и нажмите кнопку **сохранить**.
 
 > [!div class="mx-imgBorder"]
 > ![Защита от ботов](../media/bot-protection/bot-protection.png)

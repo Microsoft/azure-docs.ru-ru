@@ -16,10 +16,10 @@ ms.author: curtand
 ms.custom: pim
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1601c9fc750df1f8e18bdaa072ede1b5ee164329
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "84743819"
 ---
 # <a name="complete-an-access-review-of-azure-resource-roles-in-privileged-identity-management"></a>Выполните проверку доступа к ролям ресурсов Azure в управление привилегированными пользователями
@@ -30,7 +30,7 @@ ms.locfileid: "84743819"
 
 ## <a name="manage-access-reviews"></a>Управление проверками доступа
 
-1. Перейдите на [портал Azure](https://portal.azure.com/). На панели мониторинга выберите службу **ресурсов Azure** .
+1. Перейдите на [портал Microsoft Azure](https://portal.azure.com/). На панели мониторинга выберите службу **ресурсов Azure** .
 
 2. Выберите ресурс.
 
@@ -44,7 +44,7 @@ ms.locfileid: "84743819"
 
 ![Параметры для управления проверкой — "отключить", "сбросить", "Применить", "Удалить"](media/pim-resource-roles-complete-access-review/rbac-access-review-menu.png)
 
-### <a name="stop"></a>Стоп
+### <a name="stop"></a>Остановить
 
 Все проверки доступа имеют дату окончания. Нажмите кнопку " **завершить** ", чтобы завершить его раньше. Все пользователи, которые еще не завершили проверку на этот раз, не смогут завершить их после того, как вы завершите проверку. Нельзя перезапустить проверку после ее остановки.
 
@@ -56,7 +56,7 @@ ms.locfileid: "84743819"
 
 После завершения проверки доступа нажмите кнопку **Применить** , чтобы реализовать результат проверки. Если в процессе проверки пользователю было отказано в доступе, то это приведет к удалению назначенной пользователю роли.  
 
-### <a name="delete"></a>DELETE
+### <a name="delete"></a>Удалить
 
 Если проверка вам больше не нужна, удалите ее. Выберите **Удалить** Yo удалить проверку из службы Управление привилегированными пользователями.
 

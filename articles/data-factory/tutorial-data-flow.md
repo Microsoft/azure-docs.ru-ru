@@ -8,12 +8,12 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 03/11/2021
-ms.openlocfilehash: 5deaef04330e21c8d9c580bf2a16814d4e902f6a
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.openlocfilehash: 52509dbf529076eaa0af73ea48db9a7f3fd10241
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103199872"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104584539"
 ---
 # <a name="transform-data-using-mapping-data-flows"></a>Преобразование данных с помощью потоков данных для сопоставления
 
@@ -54,7 +54,7 @@ ms.locfileid: "103199872"
 
    Имя фабрики данных Azure должно быть *глобально уникальным*. Если вы увидите следующую ошибку касательно значения имени, введите другое имя фабрики данных. (Например, используйте yournameADFTutorialDataFactory.) Дополнительные сведения о правилах именования артефактов фабрики данных см. в статье [Фабрика данных Azure — правила именования](naming-rules.md).
 
-     ![Новая фабрика данных](./media/doc-common-process/name-not-available-error.png)
+    :::image type="content" source="./media/doc-common-process/name-not-available-error.png" alt-text="Новое сообщение об ошибке фабрики данных для повторяющегося имени.":::
 4. Выберите **подписку** Azure, в рамках которой вы хотите создать фабрику данных.
 5. Для **группы ресурсов** выполните одно из следующих действий:
 

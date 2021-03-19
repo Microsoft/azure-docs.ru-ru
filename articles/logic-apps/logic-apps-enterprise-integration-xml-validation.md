@@ -9,10 +9,10 @@ ms.reviewer: jonfan, estfan, logicappspm
 ms.topic: article
 ms.date: 10/21/2019
 ms.openlocfilehash: ff21b059e712489c1914b2d12c6aa6a3d78d66d3
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "74792162"
 ---
 # <a name="validate-xml-for-b2b-enterprise-integration-in-azure-logic-apps-with-enterprise-integration-pack"></a>Проверка XML для интеграции с предприятием B2B в Azure Logic Apps с помощью Пакета интеграции Enterprise
@@ -57,7 +57,7 @@ ms.locfileid: "74792162"
 
    ![Выберите схему, которая будет использоваться для проверки](./media/logic-apps-enterprise-integration-xml-validation/select-validation-schema.png)
 
-1. Сохраните приложение логики.
+1. Сохраните приложение логики
 
    Настройка проверки завершена. В реальном приложении может потребоваться сохранить проверенные данные в бизнес-приложении (LOB), например SalesForce. Чтобы отправить проверенные выходные данные в Salesforce, добавьте действие.
 

@@ -1,20 +1,20 @@
 ---
-title: Настройка Опенвпн на VPN-шлюзе Azure
-description: Узнайте, как использовать PowerShell для включения протокола Опенвпн на VPN-шлюзе Azure для среды типа "точка — сеть".
+title: Настройка Опенвпн для VPN-шлюза Azure
+description: Узнайте, как включить протокол Опенвпн на VPN-шлюзе Azure для среды типа "точка — сеть".
 services: vpn-gateway
 author: cherylmc
 ms.service: vpn-gateway
 ms.topic: how-to
 ms.date: 02/05/2021
 ms.author: cherylmc
-ms.openlocfilehash: 4b48e98ab35b620030b15165d4c9341c0f11b440
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 137e4e1372ef1af3319c0b9af7ba965fffcb9e34
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100393281"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104584046"
 ---
-# <a name="configure-openvpn-for-azure-point-to-site-vpn-gateway"></a>Настройка Опенвпн для VPN-шлюза типа "точка — сеть" Azure
+# <a name="configure-openvpn-for-point-to-site-vpn-gateways"></a>Настройка Опенвпн для VPN-шлюзов типа "точка — сеть"
 
 Эта статья поможет вам настроить **протокол опенвпн®** на VPN-шлюзе Azure. Можно использовать либо портал, либо инструкции PowerShell.
 
@@ -36,7 +36,7 @@ ms.locfileid: "100393281"
    :::image type="content" source="./media/vpn-gateway-howto-openvpn/portal.png" alt-text="Выберите Опенвпн SSL из раскрывающегося списка.":::
 1. Сохраните изменения и продолжайте **дальнейшие действия**.
 
-## <a name="enable-openvpn-on-your-gateway-using-powershell"></a>Включите Опенвпн на шлюзе с помощью PowerShell.
+## <a name="powershell"></a>PowerShell
 
 1. Включите Опенвпн на шлюзе, используя следующий пример:
 
@@ -46,7 +46,7 @@ ms.locfileid: "100393281"
    ```
 1. Перейдите к **следующим шагам**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 См. дополнительные сведения о [настройке клиентов OpenVPN](vpn-gateway-howto-openvpn-clients.md).
 

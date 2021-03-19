@@ -4,10 +4,10 @@ description: Содержит список ошибок AMQP, которые м�
 ms.topic: article
 ms.date: 06/23/2020
 ms.openlocfilehash: 88b10940e0b910f50e6ccf7f8c53134fa7f0ba2f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88064355"
 ---
 # <a name="amqp-errors-in-azure-service-bus"></a>Ошибки AMQP в служебной шине Azure
@@ -34,7 +34,7 @@ Error{condition=amqp:connection:forced, description='The connection was inactive
 Error{condition=amqp:connection:forced, description='The connection was inactive for more than the allowed 60000 milliseconds and is closed by container 'LinkTracker'. TrackingId:0000000000000000000000000000000000000_G21, SystemTracker:gateway5, Timestamp:2019-03-06T18:41:51', info=null}
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения о служебной шине и AMQP см. по следующим ссылкам.
 

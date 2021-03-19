@@ -7,13 +7,13 @@ ms.date: 07/29/2020
 ms.author: hazeng
 ms.custom: devx-track-python
 ms.openlocfilehash: 9b9f5d389eda5d74e7e78cfcfa9a46fba7276cbd
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87846043"
 ---
-# <a name="troubleshoot-python-errors-in-azure-functions"></a>Устранение ошибок Python в функциях Azure
+# <a name="troubleshoot-python-errors-in-azure-functions"></a>Устранение неполадок при появлении ошибок Python в Функциях Azure
 
 Ниже приведен список руководств по устранению распространенных проблем в функциях Python.
 
@@ -178,7 +178,7 @@ you must uninstall azure-storage first.</pre>
 
 Если версия интерпретатора Python не соответствует нашему предположении, скачайте интерпретатор Python 3,6, 3,7 или 3,8 из [Python Software Foundation](https://python.org/downloads/release).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вы не можете решить проблему, сообщите о ней команде функций:
 

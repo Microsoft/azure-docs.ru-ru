@@ -7,10 +7,10 @@ ms.date: 06/29/2018
 ms.custom: devx-track-java
 ms.author: pepogors
 ms.openlocfilehash: cc65deb924a9f3367c2ea1d7c71544743ccf2697
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87327367"
 ---
 # <a name="develop-java-service-fabric-applications-with-visual-studio-code"></a>Разработка приложений Java Service Fabric с помощью Visual Studio Code
@@ -41,7 +41,7 @@ git clone https://github.com/Azure-Samples/service-fabric-java-quickstart.git
 
 ![Приложение для голосования Java в рабочей области](./media/service-fabric-develop-java-applications-with-vs-code/java-voting-application.png)
 
-## <a name="build-the-application"></a>создание приложения;
+## <a name="build-the-application"></a>Построение приложения
 
 1. Нажмите клавиши CTRL+SHIFT+P, чтобы открыть **палитру команд** в VS Code.
 2. Найдите и выберите команду **Service Fabric: Build Application (Создание приложения Service Fabric)**. Выходные данные сборки передаются во встроенный терминал.

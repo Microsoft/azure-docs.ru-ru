@@ -8,10 +8,10 @@ ms.date: 07/20/2020
 ms.author: surmb
 ms.topic: conceptual
 ms.openlocfilehash: 53f6f37454de886934a483b40daad24204958baf
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87474331"
 ---
 # <a name="application-gateway-multiple-site-hosting"></a>Размещение нескольких сайтов с помощью шлюза приложений
@@ -35,7 +35,7 @@ ms.locfileid: "87474331"
 
 Используя подстановочный знак в имени узла, можно сопоставить несколько имен узлов в одном прослушивателе. Например, `*.contoso.com` может сопоставляться с `ecom.contoso.com` , а `b2b.contoso.com` также `customer1.b2b.contoso.com` и т. д. Используя массив имен узлов, можно настроить более одного имени узла для прослушивателя, чтобы маршрутизировать запросы к внутреннему пулу. Например, прослушиватель может содержать, `contoso.com, fabrikam.com` который будет принимать запросы для имен узлов.
 
-:::image type="content" source="./media/multiple-site-overview/wildcard-listener-diag.png" alt-text="Многосайтовый шлюз приложений":::
+:::image type="content" source="./media/multiple-site-overview/wildcard-listener-diag.png" alt-text="Прослушиватель с подстановочными знаками":::
 
 >[!NOTE]
 > Эта функция доступна в предварительной версии и доступна только для Standard_v2 и WAF_v2 SKU шлюза приложений. Дополнительные сведения о предварительных версиях см. в [статье условия использования](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
@@ -44,9 +44,9 @@ ms.locfileid: "87474331"
 >В настоящее время эта функция доступна только с помощью [Azure PowerShell](tutorial-multiple-sites-powershell.md) и [Azure CLI](tutorial-multiple-sites-cli.md). Поддержка портала скоро появится.
 > Обратите внимание, что поскольку поддержка портала не полностью доступна, если используется только параметр HostNames, прослушиватель будет отображаться как базовый прослушиватель на портале, а столбец имя узла в представлении списка прослушивателей не будет отображать настроенные имена узлов. Чтобы внести изменения в прослушиватель с подстановочными знаками, убедитесь, что вы используете Azure PowerShell или CLI, пока он не будет поддерживаться на портале.
 
-В [Azure PowerShell](tutorial-multiple-sites-powershell.md)необходимо использовать `-HostNames` вместо `-HostName` . При использовании имен узлов можно указать до 5 имен узлов в виде значений с разделителями-запятыми и использовать подстановочные знаки. Например `-HostNames "*.contoso.com,*.fabrikam.com"`.
+В [Azure PowerShell](tutorial-multiple-sites-powershell.md)необходимо использовать `-HostNames` вместо `-HostName` . При использовании имен узлов можно указать до 5 имен узлов в виде значений с разделителями-запятыми и использовать подстановочные знаки. Например: `-HostNames "*.contoso.com,*.fabrikam.com"`
 
-В [Azure CLI](tutorial-multiple-sites-cli.md)необходимо использовать `--host-names` вместо `--host-name` . При использовании имен узлов можно указать до 5 имен узлов в виде значений с разделителями-запятыми и использовать подстановочные знаки. Например `--host-names "*.contoso.com,*.fabrikam.com"`.
+В [Azure CLI](tutorial-multiple-sites-cli.md)необходимо использовать `--host-names` вместо `--host-name` . При использовании имен узлов можно указать до 5 имен узлов в виде значений с разделителями-запятыми и использовать подстановочные знаки. Например: `--host-names "*.contoso.com,*.fabrikam.com"`
 
 ### <a name="allowed-characters-in-the-host-names-field"></a>Разрешенные символы в поле имен узлов:
 

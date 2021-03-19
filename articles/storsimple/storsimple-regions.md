@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 11/16/2017
 ms.author: alkohli
 ms.openlocfilehash: 5efb87ad674474b2e21b86b5cdc48785753a51dc
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90564157"
 ---
 # <a name="available-regions-for-your-storsimple"></a>Доступные регионы для StorSimple
@@ -39,7 +39,7 @@ ms.locfileid: "90564157"
 
 Ниже приведен список регионов, где служба диспетчера устройств доступна для развертывания в общедоступных облаках Azure.
 
-![На снимке экрана показан Device Manager StorSimple с выделенным списком расположений.](./media/storsimple-region/storsimple-device-manager-service-regions.png)
+![На снимке экрана показан диспетчер устройств StorSimple с выделенным списком расположений.](./media/storsimple-region/storsimple-device-manager-service-regions.png)
 
 Что касается облака Azure для государственных организаций, служба диспетчера устройств StorSimple доступна в центрах обработки данных US Gov (Айова) и US Gov (Вирджиния).
 
@@ -96,7 +96,7 @@ ms.locfileid: "90564157"
 
 Если вам нужен виртуальный массив StorSimple серии 1200, образ виртуального диска для него поддерживается во всех регионах Azure.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о ценах на разные модели StorSimple см. [здесь](https://azure.microsoft.com/pricing/calculator/#storsimple2).
 * Узнайте больше об [управлении учетной записью хранения StorSimple](storsimple-8000-manage-storage-accounts.md).

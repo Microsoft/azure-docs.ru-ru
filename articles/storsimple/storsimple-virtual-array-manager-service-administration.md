@@ -12,14 +12,14 @@ ms.devlang: na
 ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/1/2016
+ms.date: 03/17/2021
 ms.author: alkohli
-ms.openlocfilehash: 2395e3c6f2026bc1024de38122bc20959fdcf9b7
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.openlocfilehash: cb5b6b1a2d890fe49d78da17d549c5676557b971
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94967097"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104654261"
 ---
 # <a name="use-the-storsimple-device-manager-service-to-administer-your-storsimple-virtual-array"></a>Администрирование виртуального массива StorSimple с помощью службы диспетчера устройств StorSimple
 ![Последовательность операций процесса настройки](./media/storsimple-virtual-array-manager-service-administration/manage4.png)
@@ -35,14 +35,12 @@ ms.locfileid: "94967097"
 
 > [!NOTE]
 > Сведения о работе с устройствами StorSimple 8000 см. в статье [Использование службы StorSimple Manager для администрирования устройства StorSimple](./storsimple-8000-manager-service-administration.md).
-> 
-> 
 
 ## <a name="connect-to-the-storsimple-device-manager-service"></a>Подключение к службе диспетчера устройств StorSimple
 Служба диспетчера устройств StorSimple работает в Microsoft Azure и подключается к нескольким виртуальным массивам StorSimple. Для управления этими устройствами используется центральный портал Microsoft Azure в браузере. Чтобы подключиться к службе диспетчера устройств StorSimple, выполните следующие действия.
 
 #### <a name="to-connect-to-the-service"></a>Подключение к службе
-1. Перейдите по адресу [https://ms.portal.azure.com](https://ms.portal.azure.com).
+1. Перейдите на страницу [https://portal.azure.com](https://portal.azure.com).
 2. С помощью учетной записи Майкрософт войдите на портал Microsoft Azure (расположен в правой верхней части панели).
 3. Для просмотра всех диспетчеров устройств в данной подписки щелкните "Больше служб" и примените фильтр "Диспетчеры устройств StorSimple".
 
@@ -50,6 +48,8 @@ ms.locfileid: "94967097"
 В следующей таблице собраны все стандартные задачи управления и сложные рабочие процессы, которые могут быть выполнены в колонке сводных данных службы диспетчера устройств StorSimple. Эти задачи организованы по колонкам, на которых они инициируются.
 
 Чтобы получить дополнительные сведения о каждом рабочем процессе, щелкните соответствующую процедуру в таблице.
+
+[!INCLUDE [StorSimple software warning](../../includes/storsimple-update-software-warning.md)]
 
 #### <a name="storsimple-device-manager-workflows"></a>Рабочие процессы диспетчера устройств StorSimple
 | Если вы хотите... | Статья с описанием процедуры |
@@ -76,5 +76,5 @@ ms.locfileid: "94967097"
 > 
 > 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Сведения о веб-интерфейсе и способах его использования см. в статье [Использование веб-интерфейса для администрирования виртуального массива StorSimple](storsimple-ova-web-ui-admin.md).

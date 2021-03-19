@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 128303cb51b39db8442fdda71f949db17923bfa2
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90088976"
 ---
 # <a name="azure-ad-connect-sync-service-shadow-attributes"></a>Теневые атрибуты службы синхронизации Azure AD Connect
@@ -38,7 +38,7 @@ ms.locfileid: "90088976"
 ### <a name="userprincipalname"></a>userPrincipalName
 У пользователя имеются следующие значения атрибутов в непроверенном домене.
 
-| attribute | Значение |
+| Атрибут | Значение |
 | --- | --- |
 | userPrincipalName для локальной среды | lee.sperry@fabrikam.com |
 | shadowUserPrincipalName для Azure AD | lee.sperry@fabrikam.com |
@@ -53,7 +53,7 @@ ms.locfileid: "90088976"
 
 Для пользователя почтового ящика, размещенного в локальной среде или Exchange Online, отображаются только значения для проверенных доменов. Это выглядит следующим образом.
 
-| attribute | Значение |
+| Атрибут | Значение |
 | --- | --- |
 | proxyAddresses для локальной среды | SMTP:abbie.spencer@fabrikamonline.com</br>smtp:abbie.spencer@fabrikam.com</br>smtp:abbie@fabrikamonline.com |
 | proxyAddresses для Exchange Online | SMTP:abbie.spencer@fabrikamonline.com</br>smtp:abbie@fabrikamonline.com</br>SIP:abbie.spencer@fabrikamonline.com |
