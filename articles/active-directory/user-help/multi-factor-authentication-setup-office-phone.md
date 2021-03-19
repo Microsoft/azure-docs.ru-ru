@@ -11,10 +11,10 @@ ms.topic: end-user-help
 ms.date: 08/12/2019
 ms.author: curtand
 ms.openlocfilehash: 9dd9853bae324a047c673852f14d2b4c1639d914
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "83739215"
 ---
 # <a name="set-up-an-office-phone-as-your-two-factor-verification-method"></a>Настройка рабочего телефона в качестве метода двухфакторной проверки подлинности
@@ -26,7 +26,7 @@ ms.locfileid: "83739215"
 
 ## <a name="set-up-your-office-phone-number-as-your-verification-method"></a>Настройка номера рабочего телефона в качестве метода проверки подлинности
 
-1. На странице **Дополнительная проверка безопасности** выберите **Рабочий телефон** в области **Шаг 1. Как с вами связаться?** , выберите страну или регион в раскрывающемся списке, введите номер рабочего телефона, а затем введите дополнительный код (при наличии).
+1. На странице **Дополнительная проверка безопасности** выберите **Рабочий телефон** в разделе **Шаг 1. как связаться с вами** , выберите страну или регион в раскрывающемся списке, введите номер рабочего телефона, а затем введите расширение, если оно у вас есть.
 
     ![Страница дополнительной проверки безопасности с параметром "Телефон для проверки подлинности" и вариантом получения телефонного звонка](media/multi-factor-authentication-verification-methods/multi-factor-authentication-office-phone.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "83739215"
 
     ![Тестирование указанного номера телефона](media/multi-factor-authentication-verification-methods/multi-factor-authentication-office-phone-test.png)
 
-3. В области **Шаг 3. Продолжайте использовать имеющиеся приложения** скопируйте предоставленный пароль приложения и сохраните его в безопасном месте.
+3. В разделе **Шаг 3. сохранить использование существующих приложений** скопируйте предоставленный пароль приложения и вставьте его в безопасном месте.
 
     ![Область паролей приложений на странице дополнительной проверки безопасности](media/multi-factor-authentication-verification-methods/multi-factor-authentication-app-passwords.png)
 

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: dobett
 ms.openlocfilehash: e492ebf70f69c985691852a1c1f2351d1e09578e
-ms.sourcegitcommit: 6906980890a8321dec78dd174e6a7eb5f5fcc029
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92425010"
 ---
 # <a name="what-is-connected-factory-iot-solution-accelerator"></a>Общие сведения об акселераторе решений IoT для подключенной фабрики
@@ -47,7 +47,7 @@ ms.locfileid: "92425010"
 - Просмотр иерархии промышленных активов в топологии дерева и на интерактивной карте.
 - Просмотр, подтверждение и закрытие оповещений через облачную панель мониторинга.
 
-## <a name="azure-time-series-insights"></a>Azure Time Series Insights
+## <a name="azure-time-series-insights"></a>Аналитика временных рядов Azure
 
 - [Служба "Аналитика временных рядов"](../time-series-insights/time-series-insights-overview.md) разработана для того, чтобы сохранять, визуализировать и запрашивать большие объемы данных временных рядов. Подключенная фабрика использует эту службу.
 - Подключенная фабрика интегрируется с этой службой, позволяя выполнять глубокий анализ данных устройства в режиме реального времени.

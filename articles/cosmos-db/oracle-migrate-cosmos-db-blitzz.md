@@ -9,10 +9,10 @@ ms.date: 08/21/2019
 ms.author: sngun
 ms.reviewer: sngun
 ms.openlocfilehash: 15bcd0c54fc5f6614f4d1925759704309048acae
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93336448"
 ---
 # <a name="migrate-data-from-oracle-to-azure-cosmos-db-cassandra-api-account-using-blitzz"></a>Перенос данных из Oracle в учетную запись Azure Cosmos DB API Cassandra с помощью Блитзз
@@ -148,7 +148,7 @@ API Cassandra в Azure Cosmos DB стали отличным выбором дл
 
 Дополнительные сведения о переносе данных в назначение, перенос в режиме реального времени см. в [блитзз Репликант Demo](https://www.youtube.com/watch?v=y5ZeRK5A-MI).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Обеспечение необходимой пропускной способности для контейнеров и баз данных](set-throughput.md) 
 * [Рекомендации по использованию ключа секции](partitioning-overview.md#choose-partitionkey)

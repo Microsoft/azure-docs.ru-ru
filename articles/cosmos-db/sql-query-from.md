@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 05/08/2020
 ms.author: tisande
 ms.openlocfilehash: 3844a628a8e3773821736324bfdaab3f64ff9da5
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93336288"
 ---
 # <a name="from-clause-in-azure-cosmos-db"></a>Предложение FROM в Azure Cosmos DB
@@ -89,7 +89,7 @@ FROM <from_specification>
   
   Указывает, что документ необходимо извлечь из свойства `property_name` или элемента массива array_index всех документов, полученных указанным выражением контейнера.  
   
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
   
 Все псевдонимы, предоставленные или выведенные в аргументе `<from_source>(`, должны быть уникальными. Синтаксис `<container_expression>.`property_name совпадает с синтаксисом `<container_expression>' ['"property_name"']'`. Второй синтаксис можно использовать, если имя свойства содержит знак, не являющийся идентификатором.  
   
@@ -116,7 +116,7 @@ FROM <from_specification>
     FROM Families.children
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [

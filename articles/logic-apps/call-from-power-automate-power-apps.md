@@ -7,10 +7,10 @@ ms.reviewer: estfan, logicappspm
 ms.topic: conceptual
 ms.date: 10/05/2020
 ms.openlocfilehash: b402dab4c6e94a7634e11f0330b5379315e43abf
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91762509"
 ---
 # <a name="call-logic-apps-from-power-automate-and-power-apps"></a>Вызов приложений логики из Power Automate и Power Apps
@@ -42,7 +42,7 @@ ms.locfileid: "91762509"
 
 1. Войдите на [портал Azure](https://portal.azure.com).
 
-1. В поле поиска портал Azure введите `Logic Apps` . В результатах в разделе **службы**выберите **Logic Apps**.
+1. В поле поиска портал Azure введите `Logic Apps` . В результатах в разделе **службы** выберите **Logic Apps**.
 
 1. Выберите приложение логики, которое необходимо экспортировать.
 
@@ -50,9 +50,9 @@ ms.locfileid: "91762509"
 
     :::image type="content" source="./media/call-logic-apps-from-power-automate-power-apps/export-logic-app.png" alt-text="Снимок экрана: страница приложения логики в портал Azure, показывающая меню с выбранной кнопкой &quot;экспорт&quot;.":::
 
-1. В области **Экспорт** в поле **имя**введите имя пользовательского соединителя в приложение логики. В списке **Среда** выберите среду Power автоматизировать или Power Apps, из которой вы хотите вызвать приложение логики. Закончив, нажмите кнопку **OK**.
+1. В области **Экспорт** в поле **имя** введите имя пользовательского соединителя в приложение логики. В списке **Среда** выберите среду Power автоматизировать или Power Apps, из которой вы хотите вызвать приложение логики. Закончив, нажмите кнопку **OK**.
 
-    :::image type="content" source="./media/call-logic-apps-from-power-automate-power-apps/export-logic-app2.png" alt-text="Снимок экрана: страница приложения логики в портал Azure, показывающая меню с выбранной кнопкой &quot;экспорт&quot;.":::
+    :::image type="content" source="./media/call-logic-apps-from-power-automate-power-apps/export-logic-app2.png" alt-text="Снимок экрана: панель экспорта для приложения логики, показывающая обязательные поля для имени пользовательского соединителя и среды.":::
 
 1. Чтобы убедиться, что приложение логики было успешно экспортировано, проверьте панель уведомлений.
 
@@ -78,9 +78,9 @@ ms.locfileid: "91762509"
 
 1. В редакторе потоков выберите **&#43; новый шаг**.
 
-1. В разделе **Выбор действия**в поле поиска введите имя соединителя приложения логики. При необходимости для отображения только пользовательских соединителей в среде отфильтруйте результаты, выбрав **настраиваемую** вкладку.
+1. В разделе **Выбор действия** в поле поиска введите имя соединителя приложения логики. При необходимости для отображения только пользовательских соединителей в среде отфильтруйте результаты, выбрав **настраиваемую** вкладку.
 
-    :::image type="content" source="./media/call-logic-apps-from-power-automate-power-apps/power-automate-custom-connector-action.png" alt-text="Снимок экрана: страница приложения логики в портал Azure, показывающая меню с выбранной кнопкой &quot;экспорт&quot;.":::
+    :::image type="content" source="./media/call-logic-apps-from-power-automate-power-apps/power-automate-custom-connector-action.png" alt-text="Снимок экрана редактора потока Power автоматизиру, в котором показан новый шаг, добавляемый для пользовательского соединителя и доступных действий.":::
 
 1. Выберите действие, которое необходимо выполнить с соединителем приложения логики. 
 
@@ -98,11 +98,11 @@ ms.locfileid: "91762509"
 
 1. Войдите в [Power Automate](https://flow.microsoft.com).
 
-1. На домашней странице **Power Автоматизируйте** в меню **Data** выберите пункт &gt; **настраиваемые соединители** данных.
+1. На домашней странице **Power Автоматизируйте** в меню  выберите пункт &gt; **настраиваемые соединители** данных.
 
 1. В списке найдите настраиваемый соединитель и нажмите кнопку с многоточием (**...**) &gt; **Удалить**.
 
-    :::image type="content" source="./media/call-logic-apps-from-power-automate-power-apps/delete-custom-connector.png" alt-text="Снимок экрана: страница приложения логики в портал Azure, показывающая меню с выбранной кнопкой &quot;экспорт&quot;.":::
+    :::image type="content" source="./media/call-logic-apps-from-power-automate-power-apps/delete-custom-connector.png" alt-text="Снимок экрана: страница настраиваемых соединителей Power автоматизиру, отображающая пользовательские кнопки управления соединителем приложения логики.":::
 
 1. Чтобы подтвердить удаление, нажмите кнопку **ОК**.
 
@@ -122,7 +122,7 @@ ms.locfileid: "91762509"
 
 1. В разделе **выберите действие** на новом шаге введите имя соединителя приложения логики в поле поиска. При необходимости можно отфильтровать результаты по **настраиваемой** вкладке, чтобы просмотреть в среде только пользовательские соединители.
 
-    :::image type="content" source="./media/call-logic-apps-from-power-automate-power-apps/power-apps-custom-connector-action.png" alt-text="Снимок экрана: страница приложения логики в портал Azure, показывающая меню с выбранной кнопкой &quot;экспорт&quot;.":::
+    :::image type="content" source="./media/call-logic-apps-from-power-automate-power-apps/power-apps-custom-connector-action.png" alt-text="Снимок экрана: редактор потока Power Apps, показывающий Добавление нового шага для пользовательского соединителя и доступных действий.":::
 
 1. Выберите действие, которое нужно выполнить с соединителем. 
 
@@ -140,15 +140,15 @@ ms.locfileid: "91762509"
 
 1. Войдите в [Power Apps](https://powerapps.microsoft.com).
 
-1. На домашней странице **Power Apps** в меню выберите **Data** пункт &gt; **настраиваемые соединители** данных.
+1. На домашней странице **Power Apps** в меню выберите  пункт &gt; **настраиваемые соединители** данных.
 
 1. В списке найдите настраиваемый соединитель и нажмите кнопку с многоточием (**...**) &gt; **Удалить**.
 
-    :::image type="content" source="./media/call-logic-apps-from-power-automate-power-apps/delete-custom-connector.png" alt-text="Снимок экрана: страница приложения логики в портал Azure, показывающая меню с выбранной кнопкой &quot;экспорт&quot;.":::
+    :::image type="content" source="./media/call-logic-apps-from-power-automate-power-apps/delete-custom-connector.png" alt-text="Снимок экрана со страницей пользовательских соединителей Power Apps: отображение пользовательских кнопок управления соединителем приложения логики.":::
 
 1. Чтобы подтвердить удаление, нажмите кнопку **ОК**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о [соединителях для Azure Logic Apps](../connectors/apis-list.md)
 * Дополнительные сведения о [Azure Logic Apps](../logic-apps/logic-apps-overview.md)

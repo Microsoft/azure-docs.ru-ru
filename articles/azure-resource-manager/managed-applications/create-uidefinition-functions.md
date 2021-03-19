@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 07/13/2020
 ms.author: tomfitz
 ms.openlocfilehash: e4255f0d42e28a72ad55d9b7f81d0dc49b2950cb
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87040993"
 ---
 # <a name="createuidefinition-functions"></a>Функции CreateUiDefinition
@@ -18,19 +18,19 @@ ms.locfileid: "87040993"
 
 ## <a name="function-syntax"></a>Синтаксис функции
 
-Чтобы использовать функцию, заключите вызов в квадратные скобки. Пример.
+Чтобы использовать функцию, заключите вызов в квадратные скобки. Пример:
 
 ```json
 "[function()]"
 ```
 
-На строки и другие функции можно ссылаться как на параметры функции, но строки должны быть заключены в одинарные кавычки. Пример.
+На строки и другие функции можно ссылаться как на параметры функции, но строки должны быть заключены в одинарные кавычки. Пример:
 
 ```json
 "[fn1(fn2(), 'demo text')]"
 ```
 
-Там, где это применимо, вы можете ссылаться на свойства выходных данных функции с помощью оператора "точка". Пример.
+Там, где это применимо, вы можете ссылаться на свойства выходных данных функции с помощью оператора "точка". Пример:
 
 ```json
 "[func().prop1]"
@@ -62,7 +62,7 @@ ms.locfileid: "87040993"
 * [encodeUriComponent](create-ui-definition-conversion-functions.md#encodeuricomponent)
 * [float](create-ui-definition-conversion-functions.md#float)
 * [int](create-ui-definition-conversion-functions.md#int)
-* [проанализировать](create-ui-definition-conversion-functions.md#parse)
+* [parse](create-ui-definition-conversion-functions.md#parse)
 * [string](create-ui-definition-conversion-functions.md#string)
 
 ## <a name="date-functions"></a>Функции данных

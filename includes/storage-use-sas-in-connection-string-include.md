@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 10/26/2018
 ms.author: tamram
 ms.openlocfilehash: 2f27c50b1d016265c20102521a137bcbb0646115
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "67185505"
 ---
 При наличии подписанного URL-адреса (SAS), предоставляющего доступ к ресурсам в учетной записи хранения, SAS можно использовать в строке подключения. Так как SAS содержит сведения URI, необходимые для аутентификации запроса, строка подключения с SAS предоставляет протокол, конечную точку службы и учетные данные, необходимые для доступа к ресурсу.

@@ -10,10 +10,10 @@ ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
 ms.openlocfilehash: abd27e15ccf5b421e69e78b2b726d192ffdecacb
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92372367"
 ---
 # <a name="connect-to-azure-arc-enabled-sql-managed-instance"></a>Подключение к SQL Управляемый экземпляр с включенной службой Arc
@@ -90,7 +90,7 @@ az network nsg list -g azurearcvm-rg --query "[].{NSGName:name}" -o table
 az network nsg rule create -n db_port --destination-port-ranges 30913 --source-address-prefixes '*' --nsg-name azurearcvmNSG --priority 500 -g azurearcvm-rg --access Allow --description 'Allow port through for db access' --destination-address-prefixes '*' --direction Inbound --protocol Tcp --source-port-ranges '*'
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Просмотр панелей мониторинга управляемого экземпляра SQL](azure-data-studio-dashboards.md#view-the-sql-managed-instance-dashboards)
 - [Просмотр Управляемый экземпляр SQL в портал Azure](view-arc-data-services-inventory-in-azure-portal.md)

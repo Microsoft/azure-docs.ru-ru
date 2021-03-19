@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.date: 01/13/2020
 ms.author: rohogue
 ms.openlocfilehash: 110fc658ffc3b72de91bbf1c9562f3efeecaf55b
-ms.sourcegitcommit: f88074c00f13bcb52eaa5416c61adc1259826ce7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92342422"
 ---
 # <a name="deploy-the-vfxt-cluster"></a>Развертывание кластера vFXT
 
-Эта процедура описывает использование мастера развертывания, который предоставляется в Azure Marketplace. Этот мастер автоматически развертывает кластер с помощью шаблона Azure Resource Manager. После ввода параметров в форме и нажатия кнопки **создать**Azure автоматически выполняет следующие задачи:
+Эта процедура описывает использование мастера развертывания, который предоставляется в Azure Marketplace. Этот мастер автоматически развертывает кластер с помощью шаблона Azure Resource Manager. После ввода параметров в форме и нажатия кнопки **создать** Azure автоматически выполняет следующие задачи:
 
 * Создает контроллер кластера, который представляет собой базовую виртуальную машину, которая содержит программное обеспечение, необходимое для развертывания кластера и управления им.
 * Настраивает группу ресурсов и инфраструктуру виртуальной сети, включая создание новых элементов.
@@ -155,7 +155,7 @@ ms.locfileid: "92342422"
 
    ![Страница выходных значений со значениями SSHSTRING, RESOURCE_GROUP, LOCATION, NETWORK_RESOURCE_GROUP, NETWORK, SUBNET, SUBNET_ID, VSERVER_IPs и MGMT_IP в полях с метками](media/avere-vfxt-outputs-values.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда кластер работает и вы узнаете его IP-адрес управления, [подключитесь к средству настройки кластера](avere-vfxt-cluster-gui.md).
 

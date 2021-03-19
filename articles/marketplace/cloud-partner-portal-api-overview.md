@@ -8,10 +8,10 @@ author: mingshen-ms
 ms.author: mingshen
 ms.date: 07/14/2020
 ms.openlocfilehash: 57d3d1c6bb14db3eb2ca499069934a628d2f7fea
-ms.sourcegitcommit: 6906980890a8321dec78dd174e6a7eb5f5fcc029
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92425774"
 ---
 # <a name="cloud-partner-portal-api-reference"></a>Справочные материалы по API портала Cloud Partner
@@ -50,7 +50,7 @@ REST API портала Cloud Partner позволяют осуществлят�
 - [Создание предложения](./cloud-partner-portal-api-creating-offer.md)
 - [Публикация предложения](./cloud-partner-portal-api-publish-offer.md)
 
-### <a name="operations"></a>Operations
+### <a name="operations"></a>Операции
 
 - [Получение операций](./cloud-partner-portal-api-retrieve-operations.md)
 - [Отмена операций](./cloud-partner-portal-api-cancel-operations.md)

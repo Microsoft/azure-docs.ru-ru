@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: hich
 ms.openlocfilehash: 00cd1d39c0110aac9ea96f73127e83197976c95a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "82190135"
 ---
 # <a name="deploy-associations-for-a-custom-provider-using-azure-policy"></a>Развертывание ассоциаций для настраиваемого поставщика с помощью политики Azure
@@ -43,7 +43,7 @@ ms.locfileid: "82190135"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-В этой статье вы узнаете об использовании встроенной политики для развертывания ассоциаций. Дополнительные сведения см. в следующих статьях:
+В этой статье вы узнаете об использовании встроенной политики для развертывания ассоциаций. Дополнительные сведения см. в статьях ниже:
 
 - [Основные понятия: адаптация ресурсов настраиваемых поставщиков Azure](./concepts-resource-onboarding.md)
 - [Учебник. Адаптация ресурсов с помощью настраиваемых поставщиков](./tutorial-resource-onboarding.md)

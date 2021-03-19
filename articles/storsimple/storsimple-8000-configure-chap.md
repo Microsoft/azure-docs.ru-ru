@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 05/09/2018
 ms.author: alkohli
 ms.openlocfilehash: 694d63dacedd8ffcd075e73bb91b5ab0a089b58c
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91766495"
 ---
 # <a name="configure-chap-for-your-storsimple-device"></a>Настроить CHAP для устройства StorSimple.
@@ -80,7 +80,7 @@ CHAP лучше всего использовать для повышения б
    1. Установите флажок **Разрешить вход CHAP**.
    2. В поле **Имя** введите имя пользователя, указанное для инициатора CHAP на портале Azure.
    3. В поле **Секрет** введите пароль, указанный для инициатора CHAP на портале Azure.
-   4. Нажмите кнопку **ОК**.
+   4. Нажмите кнопку **OK**.
       
        ![Расширенные параметры: общие](./media/storsimple-configure-chap/IC740946.png)
 5. На вкладке **Целевые объекты** окна **iSCSI Initiator Properties** (Свойства инициатора iSCSI) состояние устройства должно измениться на **Подключено**. Если вы используете устройство StorSimple 1200, каждый том будет подключаться как целевое устройство iSCSI. Поэтому необходимо будет повторить шаги 3 и 4 для каждого тома.
@@ -123,7 +123,7 @@ CHAP лучше всего использовать для повышения б
 4. В диалоговом окне **Секрет взаимного CHAP инициатора iSCSI**:
    
    1. Введите **Пароль обратного CHAP**, который вы назначили на портале Azure.
-   2. Нажмите кнопку **ОК**.
+   2. Нажмите кнопку **OK**.
       
        ![Секрет взаимного CHAP инициатора iSCSI](./media/storsimple-configure-chap/IC740949.png)
 5. Перейдите на вкладку **Целевые объекты**.
@@ -167,7 +167,7 @@ CHAP лучше всего использовать для повышения б
    
     ![Сведения об избранном целевом устройстве](./media/storsimple-configure-chap/IC740952.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте больше о [безопасности StorSimple](storsimple-8000-security.md).
 * Узнайте больше об [использовании службы диспетчера устройств StorSimple для администрирования устройства StorSimple](storsimple-8000-manager-service-administration.md).

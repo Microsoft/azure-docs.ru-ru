@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: tilarso
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8c319489fe4c884cd5de48ac2d3e47e7beb3026f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90705492"
 ---
 # <a name="what-is-the-identity-secure-score-in-azure-active-directory"></a>Общие сведения об оценке безопасности удостоверений в Azure Active Directory
@@ -48,7 +48,7 @@ ms.locfileid: "90705492"
 
 ## <a name="how-do-i-get-my-secure-score"></a>Как выполнить оценку безопасности
 
-Оценка безопасности идентификации доступна во всех выпусках Azure AD. Организации могут получить доступ к удостоверению безопасности идентификации из **портал Azure**  >  **Azure Active Directory**  >  **Security**  >  **оценки безопасного удостоверения**.
+Оценка безопасности идентификации доступна во всех выпусках Azure AD. Организации могут получить доступ к удостоверению безопасности идентификации из **портал Azure**  >  **Azure Active Directory**  >    >  **оценки безопасного удостоверения**.
 
 ## <a name="how-does-it-work"></a>Как это работает?
 
@@ -66,7 +66,7 @@ ms.locfileid: "90705492"
 - спланировать улучшения безопасности;
 - оценить успешность внесенных улучшений.
 
-## <a name="what-you-should-know"></a>Учитываемые аспекты
+## <a name="what-you-should-know"></a>Необходимая информация
 
 ### <a name="who-can-use-the-identity-secure-score"></a>Кто может использовать оценку безопасности удостоверений
 
@@ -114,6 +114,6 @@ ms.locfileid: "90705492"
 
 Оценка безопасного удостоверения представляет собой удостоверение, представляющее собой часть оценки безопасности Майкрософт. Такое перекрытие означает, что ваши рекомендации для оценки безопасности идентификации и оценки удостоверения в корпорации Майкрософт одинаковы.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Узнайте больше о Microsoft Secure Score](/office365/securitycompliance/microsoft-secure-score)
