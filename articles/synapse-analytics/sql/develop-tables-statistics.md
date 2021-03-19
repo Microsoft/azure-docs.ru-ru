@@ -11,12 +11,12 @@ ms.date: 04/19/2020
 ms.author: fipopovi
 ms.reviewer: jrasnick
 ms.custom: ''
-ms.openlocfilehash: 218803d0b7e1f5add2f033a7ce01e0a8f6ffc956
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 450a089c6cc1c77ac26cb0aa339277d5c49b41c8
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101674094"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104594790"
 ---
 # <a name="statistics-in-synapse-sql"></a>Статистика в Synapse SQL
 
@@ -92,7 +92,7 @@ DBCC SHOW_STATISTICS (<table_name>, <target>)
 
 Ниже приведены рекомендации по обновлению статистики.
 
-|||
+|Тип|Рекомендация|
 |-|-|
 | **Частота обновления статистики**  | Консервативная: Ежедневно </br> После загрузки или преобразования данных |
 | **Выборка** |  Если менее 1 млрд строк, используйте выборку по умолчанию (20 %). </br> Если строк более 1 000 000 000, используйте выборку в 2 %. |
@@ -884,6 +884,6 @@ WHERE   st.[user_created] = 1
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения о повышении производительности запросов для выделенного пула SQL см. в статье [мониторинг рабочей нагрузки](../sql-data-warehouse/sql-data-warehouse-manage-monitor.md?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json) и рекомендации [для выделенного пула SQL](best-practices-sql-pool.md#maintain-statistics).
+Дополнительные сведения о повышении производительности запросов для выделенного пула SQL см. в статье [мониторинг рабочей нагрузки](../sql-data-warehouse/sql-data-warehouse-manage-monitor.md?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json) и рекомендации [для выделенного пула SQL](best-practices-dedicated-sql-pool.md#maintain-statistics).
 
-Дополнительные сведения о производительности запросов для несерверного пула SQL см. в статье [рекомендации по использованию бессерверного пула SQL](best-practices-sql-on-demand.md) .
+Дополнительные сведения о производительности запросов для несерверного пула SQL см. в статье [рекомендации по использованию бессерверного пула SQL](best-practices-serverless-sql-pool.md) .

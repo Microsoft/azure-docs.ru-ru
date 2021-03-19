@@ -2,13 +2,13 @@
 title: Развертывание ресурсов в группе управления
 description: Описывает развертывание ресурсов в области группы управления в шаблоне Azure Resource Manager.
 ms.topic: conceptual
-ms.date: 03/16/2021
-ms.openlocfilehash: b14dc3622a6ad6519968bd2998aa354a850f2515
-ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
+ms.date: 03/18/2021
+ms.openlocfilehash: 79020e8e24cb43697a44ac9accd4e777bffe959e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103601599"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104594212"
 ---
 # <a name="management-group-deployments-with-arm-templates"></a>Развертывание группы управления с помощью шаблонов ARM
 
@@ -219,6 +219,14 @@ New-AzManagementGroupDeployment `
     }
 }
 ```
+
+## <a name="subscriptions"></a>Подписки
+
+Чтобы создать новую подписку Azure в группе управления с помощью шаблона ARM, см. следующие статьи:
+
+* [Программное создание подписок Azure Соглашение Enterprise](../../cost-management-billing/manage/programmatically-create-subscription-enterprise-agreement.md)
+* [Программное создание подписок Azure для соглашения клиента Майкрософт](../../cost-management-billing/manage/programmatically-create-subscription-microsoft-customer-agreement.md)
+* [Программное создание подписок Azure для партнерского соглашения Майкрософт](../../cost-management-billing/manage/programmatically-create-subscription-microsoft-partner-agreement.md)
 
 Сведения о развертывании шаблона, который перемещает существующую подписку Azure в новую группу управления, см. в разделе [перемещение подписок в шаблоне ARM](../../governance/management-groups/manage.md#move-subscriptions-in-arm-template) .
 

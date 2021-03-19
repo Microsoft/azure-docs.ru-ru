@@ -9,12 +9,12 @@ ms.subservice: trusted-launch
 ms.topic: how-to
 ms.date: 03/03/2021
 ms.custom: template-how-to
-ms.openlocfilehash: f5e361d32cf2ab436f92ce2ca86a054a6dd3337e
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: dec9c7581bbcf55196b04e0a76e9e61f81a27244
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102553754"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104582074"
 ---
 # <a name="deploy-a-vm-with-trusted-launch-enabled-preview"></a>Развертывание виртуальной машины с включенным доверенным запуском (Предварительная версия)
 
@@ -134,13 +134,13 @@ ls: cannot access '/dev/tpm0': No such file or directory
 
 Шаблон необходимо развернуть только один раз для каждой подписки. Он автоматически устанавливает `GuestAttestation` и выполняет `AzureSecurity` расширения на всех поддерживаемых виртуальных машинах. При возникновении ошибок попробуйте повторно развернуть шаблон.
 
-Чтобы получить рекомендации по vTPM и безопасной загрузке для доверенных виртуальных машин, см. статью [Добавление пользовательской инициативы в подписку](https://docs.microsoft.com/azure/security-center/custom-security-policies#to-add-a-custom-initiative-to-your-subscription).
+Чтобы получить рекомендации по vTPM и безопасной загрузке для доверенных виртуальных машин, см. статью [Добавление пользовательской инициативы в подписку](../security-center/custom-security-policies.md#to-add-a-custom-initiative-to-your-subscription).
  
 ## <a name="sign-things-for-secure-boot-on-linux"></a>Знакомство с безопасной загрузкой в Linux
 
 В некоторых случаях может потребоваться подписывать вещи для безопасной загрузки UEFI.  Например, может потребоваться выполнить [Подписывание элементов для безопасной загрузки](https://ubuntu.com/blog/how-to-sign-things-for-secure-boot) Ubuntu. В таких случаях необходимо ввести ключи регистрации служебной программы МОК для виртуальной машины. Для этого необходимо использовать последовательную консоль Azure для доступа к служебной программе МОК.
 
-1. Включение последовательной консоли Azure для Linux. Дополнительные сведения см. в разделе [последовательная консоль для Linux](https://docs.microsoft.com/troubleshoot/azure/virtual-machines/serial-console-linux).
+1. Включение последовательной консоли Azure для Linux. Дополнительные сведения см. в разделе [последовательная консоль для Linux](/troubleshoot/azure/virtual-machines/serial-console-linux).
 1. Войдите на [портал Azure](https://portal.azure.com).
 1. Выполните поиск **виртуальных машин** и выберите свою виртуальную машину из списка.
 1. В меню слева в разделе **Поддержка и устранение неполадок** выберите **серийная консоль**. Страница откроется справа с последовательной консолью.

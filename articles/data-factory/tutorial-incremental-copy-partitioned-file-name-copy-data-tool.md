@@ -7,12 +7,12 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 02/18/2021
-ms.openlocfilehash: aa6c0d9035f172cc7fb520ff58f233a82fca228a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 26703920fda8746badf085f96686f922ee250513
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101741078"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104606639"
 ---
 # <a name="incrementally-copy-new-files-based-on-time-partitioned-file-name-by-using-the-copy-data-tool"></a>Добавочное копирование новых файлов на основе временного секционированного файла с помощью средства Копирование данных
 
@@ -58,7 +58,7 @@ ms.locfileid: "101741078"
 
     Имя фабрики данных должно быть _глобально уникальным_. Вы можете получить следующее сообщение об ошибке.
 
-   ![Сообщение об ошибке фабрики данных](./media/doc-common-process/name-not-available-error.png)
+   :::image type="content" source="./media/doc-common-process/name-not-available-error.png" alt-text="Новое сообщение об ошибке фабрики данных для повторяющегося имени.":::
 
    Если вы увидите следующую ошибку касательно значения имени, введите другое имя фабрики данных. Например,**_ваше_имя_** **ADFTutorialDataFactory**. Правила именования артефактов службы "Фабрика данных" см. в [этой](naming-rules.md) статье.
 3. Выберите **подписку** Azure, в которой нужно создать фабрику данных.
@@ -76,8 +76,7 @@ ms.locfileid: "101741078"
 8. Когда создание завершится, откроется домашняя страница **Фабрика данных**.
 9. Щелкните плитку **Author & Monitor** (Создание и мониторинг), чтобы запустить на отдельной вкладке пользовательский интерфейс фабрики данных Azure.
 
-    ![Домашняя страница фабрики данных](./media/doc-common-process/data-factory-home-page.png)
-
+    :::image type="content" source="./media/doc-common-process/data-factory-home-page.png" alt-text="Домашняя страница фабрики данных Azure с плиткой &quot;автор & монитор&quot;.":::
 
 ## <a name="use-the-copy-data-tool-to-create-a-pipeline"></a>Создание конвейера с помощью средства копирования данных
 

@@ -6,13 +6,13 @@ author: dcstwh
 ms.author: weetok
 ms.reviewer: maghan
 ms.topic: conceptual
-ms.date: 01/16/2018
-ms.openlocfilehash: 69d29fca13f24bfccd585de3ad83bdc13ec48a37
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.date: 03/16/2021
+ms.openlocfilehash: 99b7725f4b693b3eb42444dca1516bdcef34b8a7
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100373646"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104595555"
 ---
 # <a name="azure-powershell-samples-for-azure-data-factory"></a>Примеры Azure PowerShell для фабрики данных Azure
 

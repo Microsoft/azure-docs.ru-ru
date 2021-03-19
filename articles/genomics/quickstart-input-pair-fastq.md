@@ -10,10 +10,10 @@ ms.service: genomics
 ms.topic: conceptual
 ms.date: 12/07/2017
 ms.openlocfilehash: 3806b165e5abb661e53c6a315650d025fd42e17f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "72248545"
 ---
 # <a name="submit-a-workflow-using-fastq-file-inputs-in-microsoft-genomics"></a>Отправка рабочего процесса с помощью входных FASTQ-файлов в Microsoft Genomics
@@ -21,7 +21,7 @@ ms.locfileid: "72248545"
 В этой статье показано, как отправить рабочий процесс в службу Microsoft Genomics, если входные файлы представляют собой единую пару файлов FASTQ-. В этом разделе предполагается, что вы уже установили и запустили клиент `msgen` и знаете, как использовать службу хранилища Azure. Если вы успешно отправили рабочий процесс с помощью предоставленных примеров данных, можно приступать к работе с этой статьей. 
 
 ## <a name="set-up-upload-your-fastq-files-to-azure-storage"></a>Настройка: передача FASTQ-файлов в службу хранилища Azure
-Предположим, что у вас есть два файла — *reads_1.fq.gz* и *reads_2.fq.gz* — и вы отправили их в свою учетную запись хранения *myaccount* в Azure как **https://<span></span>myaccount.blob.core<span></span>.windows<span></span>.net<span></span>/inputs/reads_1<span></span>.fq<span></span>.gz<span></span>** и **https://<span></span>myaccount.blob.core.<span></span>windows<span></span>.net/<span></span>inputs/<span></span>reads_2.fq<span></span>.gz<span></span>**. У вас есть URL-адрес API и ключ доступа. Вы хотите разместить выходные данные на странице **https://<span></span>myaccount.blob.core<span></span>.windows<span></span>.net<span></span>/outputs<span></span>**.
+Предположим, что у вас есть два файла — *reads_1.fq.gz* и *reads_2.fq.gz* — и вы отправили их в свою учетную запись хранения *myaccount* в Azure как **https://<span></span>myaccount.blob.core <span></span>.windows <span></span>.net <span></span>/inputs/reads_1 <span></span>.fq <span></span>.gz <span></span>** и **https://<span></span>myaccount.blob.core.<span></span>windows <span></span>.net/<span></span>inputs/<span></span>reads_2.fq <span></span>.gz <span></span>**. У вас есть URL-адрес API и ключ доступа. Вы хотите разместить выходные данные на странице **https://<span></span>myaccount.blob.core <span></span>.windows <span></span>.net <span></span>/outputs <span></span>**.
 
 
 ## <a name="submit-your-job-to-the-msgen-client"></a>Отправка задания в клиент `msgen` 

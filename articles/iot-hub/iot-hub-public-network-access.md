@@ -7,12 +7,12 @@ ms.service: iot-hub
 services: iot-hub
 ms.topic: conceptual
 ms.date: 03/12/2021
-ms.openlocfilehash: 539e420cb9085fad10ea3972ba0e9e5ffb9d0622
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.openlocfilehash: b225ad7e12a95b4dcbb8656f54f8a9e9562b2ee8
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103419768"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104604701"
 ---
 # <a name="managing-public-network-access-for-your-iot-hub"></a>Управление доступом к общедоступной сети для центра Интернета вещей
 
@@ -32,7 +32,7 @@ ms.locfileid: "103419768"
 
 ## <a name="accessing-the-iot-hub-after-disabling-public-network-access"></a>Доступ к центру Интернета вещей после отключения доступа к общедоступной сети
 
-После отключения доступа к общедоступной сети центр Интернета вещей доступен только через [его закрытую конечную точку в частной связи Azure](virtual-network-support.md). Это ограничение включает доступ через портал Azure, так как вызовы API в службе центра Интернета вещей выполняются непосредственно в браузере с вашими учетными данными. 
+После отключения доступа к общедоступной сети центр Интернета вещей доступен только через [его закрытую конечную точку в частной связи Azure](virtual-network-support.md).
 
 ## <a name="iot-hub-endpoint-ip-address-and-ports-after-disabling-public-network-access"></a>Конечная точка центра Интернета вещей, IP-адрес и порты после отключения доступа к общедоступной сети
 

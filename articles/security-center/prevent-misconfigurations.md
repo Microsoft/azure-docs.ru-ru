@@ -5,14 +5,14 @@ author: memildin
 manager: rkarlin
 ms.service: security-center
 ms.topic: how-to
-ms.date: 02/04/2021
+ms.date: 03/17/2021
 ms.author: memildin
-ms.openlocfilehash: 5d172a73674195e7f64f5ef02322e2bd2d6314df
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: fabbd255f64e5614ae052c9d7c8d65fc35d45856
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102439533"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104600502"
 ---
 # <a name="prevent-misconfigurations-with-enforcedeny-recommendations"></a>Предотвращение ошибок конфигурации с помощью рекомендаций о применении и отклонении
 
@@ -68,6 +68,7 @@ ms.locfileid: "102439533"
 - Необходимо включить аудит на сервере SQL.
 - Необходимо включить Azure Backup для виртуальных машин.
 - Средство Azure Defender для SQL должно быть включено на серверах SQL
+- В кластерах должна быть установлена и включена надстройка Политики Azure для Kubernetes
 - Должны быть включены журналы диагностики в Azure Stream Analytics.
 - Необходимо включить журналы диагностики в учетных записях пакетной службы
 - В Data Lake Analytics должны быть включены журналы диагностики.

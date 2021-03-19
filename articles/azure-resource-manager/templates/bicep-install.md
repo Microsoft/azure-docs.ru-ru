@@ -2,13 +2,13 @@
 title: Настройка сред разработки и развертывания Бицеп
 description: Настройка сред разработки и развертывания Бицеп
 ms.topic: conceptual
-ms.date: 03/09/2021
-ms.openlocfilehash: 0434c08a4427d2549a9adf4e4ab1e7e73a465ad8
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.date: 03/17/2021
+ms.openlocfilehash: d665a863affdec2009fc208f76b85a7f25de451d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102620136"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104594399"
 ---
 # <a name="setup-bicep-development-and-deployment-environment"></a>Настройка среды разработки и развертывания Бицеп
 
@@ -18,7 +18,7 @@ ms.locfileid: "102620136"
 
 Чтобы получить наилучший опыт создания Бицеп, вам потребуется два компонента:
 
-- **Расширение бицеп для Visual Studio Code**. Для создания файлов Бицеп необходим хороший редактор Бицеп. Рекомендуется [Visual Studio Code](https://code.visualstudio.com/) с [расширением бицеп](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Эти средства обеспечивают поддержку языка и автозавершение ресурсов. Они помогают создавать и проверять файлы Бицеп. Дополнительные сведения см. в разделе [Краткое руководство. Создание бицеп файлов с помощью Visual Studio Code](./quickstart-create-bicep-use-visual-studio-code.md).
+- **Расширение бицеп для Visual Studio Code**. Для создания файлов Бицеп необходим хороший редактор Бицеп. Рекомендуется [Visual Studio Code](https://code.visualstudio.com/) с [расширением бицеп](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Эти средства обеспечивают поддержку языка и автозавершение ресурсов. Они помогают создавать и проверять файлы Бицеп. Дополнительные сведения об использовании Visual Studio Code и расширении Бицеп см. в разделе [Краткое руководство. Создание файлов бицеп с помощью Visual Studio Code](./quickstart-create-bicep-use-visual-studio-code.md).
 - **БИЦЕП CLI**. Используйте Бицеп CLI для компиляции файлов Бицеп в шаблоны JSON в ARM и декомпиляцию шаблонов JSON ARM в файлы Бицеп. Дополнительные сведения см. в разделе [Install БИЦЕП CLI](#install-bicep-cli).
 
 ## <a name="deployment-environment"></a>Среда развертывания

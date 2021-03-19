@@ -12,12 +12,12 @@ author: anosov1960
 ms.author: sashan
 ms.reviewer: mathoma, sstein
 ms.date: 12/26/2020
-ms.openlocfilehash: 91375f4460b55617ace0b18b60d59d961a762f4c
-ms.sourcegitcommit: 00aa5afaa9fac91f1059cfed3d8dbc954caaabe2
+ms.openlocfilehash: e0b9eea7be97b9b67e75c314c4a1d9e69322e5b5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2020
-ms.locfileid: "97792506"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104594263"
 ---
 # <a name="use-auto-failover-groups-to-enable-transparent-and-coordinated-failover-of-multiple-databases"></a>Использование групп автоматической отработки отказа для включения прозрачной и согласованной отработки отказа в нескольких базах данных
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "97792506"
 - [Портал Azure](geo-distributed-application-configure-tutorial.md)
 - [Azure CLI: Группа отработки отказа](scripts/add-database-to-failover-group-cli.md)
 - [PowerShell: группу отработки отказа](scripts/add-database-to-failover-group-powershell.md);
-- [REST API: группу отработки отказа](/rest/api/sql/failovergroups).
+- [REST API: Группа отработки отказа](/rest/api/sql/failovergroups)
 
 После отработки отказа убедитесь, что требования к проверке подлинности для базы данных и сервера или экземпляра настроены в новом первичном экземпляре. Дополнительные сведения см. в разделе [Безопасность базы данных SQL после аварийного восстановления](active-geo-replication-security-configure.md).
 
@@ -115,7 +115,7 @@ ms.locfileid: "97792506"
 
   - Тестирование аварийного восстановления (DR) в рабочей среде в случае, если потеря данных неприемлема.
   - Перемещение баз данных в другой регион.
-  - Возвращение баз данных в основной регион после устранения сбоя (восстановление размещения).
+  - Возврат баз данных в основной регион после устранения сбоя (восстановление размещения)
 
 - **Внеплановая отработка отказа**
 
@@ -176,7 +176,7 @@ ms.locfileid: "97792506"
 
 ### <a name="using-read-only-listener-for-read-only-workload"></a>Использование прослушивателя только для чтения для рабочей нагрузки только для чтения
 
-Если вы используете логически изолированную рабочую нагрузку в режиме только для чтения, устойчивую к некоторым задержкам в обновлении данных, в приложении можно использовать базу данных-получатель. Для сеансов с доступом только для чтения используйте `<fog-name>.secondary.database.windows.net` в качестве URL-адреса сервера, чтобы подключение автоматически перенаправлялось на сервер-получатель. Также рекомендуется указать в качестве цели считывания строки подключения с помощью `ApplicationIntent=ReadOnly` .
+Если вы используете логически изолированную рабочую нагрузку в режиме только для чтения, устойчивую к некоторым задержкам в обновлении данных, в приложении можно использовать базу данных-получатель. Для сеансов с доступом только для чтения используйте `<fog-name>.secondary.database.windows.net` в качестве URL-адреса сервера, чтобы подключение автоматически перенаправлялось на сервер-получатель. Также рекомендуется указывать намерение Read в строке подключения с помощью `ApplicationIntent=ReadOnly` .
 
 ### <a name="preparing-for-performance-degradation"></a>Подготовка к снижению производительности
 

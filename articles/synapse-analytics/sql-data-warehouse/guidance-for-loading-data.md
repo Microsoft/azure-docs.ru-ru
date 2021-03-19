@@ -2,21 +2,21 @@
 title: Рекомендации по загрузке данных для выделенных пулов SQL
 description: Рекомендации и оптимизация производительности для загрузки данных с помощью выделенных пулов SQL в Azure синапсе Analytics.
 services: synapse-analytics
-author: kevinvngo
+author: gaursa
 manager: craigg
 ms.service: synapse-analytics
 ms.topic: conceptual
 ms.subservice: sql-dw
 ms.date: 11/20/2020
-ms.author: kevin
+ms.author: gaursa
 ms.reviewer: igorstan
 ms.custom: azure-synapse
-ms.openlocfilehash: 10e43332728ea70d27c08cf4d3dfe116c83b3f1f
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.openlocfilehash: 004084097e2f24a4ceb36f7a016049a574b80b42
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98679810"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104594841"
 ---
 # <a name="best-practices-for-loading-data-using-dedicated-sql-pools-in-azure-synapse-analytics"></a>Рекомендации по загрузке данных с помощью выделенных пулов SQL в Azure синапсе Analytics
 
@@ -40,14 +40,14 @@ ms.locfileid: "98679810"
 
 ### <a name="example-of-creating-a-loading-user"></a>Пример создания пользователя, выполняющего загрузку
 
-В этом примере создается пользователь, классифицированный как относящийся к определенной группе рабочей нагрузки. На первом шаге устанавливается **подключение к главному серверу** и создается имя входа.
+В этом примере создается пользователь, классифицированный как относящийся к определенной группе рабочей нагрузки. Первым шагом является **Подключение к Master** и создание имени входа.
 
 ```sql
    -- Connect to master
    CREATE LOGIN loader WITH PASSWORD = 'a123STRONGpassword!';
 ```
 
-Подключитесь к выделенному пулу SQL и создайте пользователя. В следующем коде предполагается, что вы подключены к базе данных с именем mySampleDataWarehouse. Здесь показано, как создать пользователя с именем Loader и получить разрешения пользователя на создание таблиц и загрузку с помощью [инструкции Copy](/sql/t-sql/statements/copy-into-transact-sql?view=azure-sqldw-latest&preserve-view=true). Затем он классифицирует пользователя на группу рабочей нагрузки "загрузки" с максимальным количеством ресурсов. 
+Подключитесь к выделенному пулу SQL и создайте пользователя. В коде ниже предполагается, что вы установили подключение к базе данных с именем mySampleDataWarehouse. Здесь показано, как создать пользователя с именем Loader и получить разрешения пользователя на создание таблиц и загрузку с помощью [инструкции Copy](/sql/t-sql/statements/copy-into-transact-sql?view=azure-sqldw-latest&preserve-view=true). Затем пользователь классифицируется как принадлежащий группе рабочей нагрузки DataLoads с максимальным количеством ресурсов. 
 
 ```sql
    -- Connect to the dedicated SQL pool
@@ -160,7 +160,7 @@ create statistics [YearMeasured] on [Customer_Speed] ([YearMeasured]);
 
 Для каждой учетной записи хранения с измененным ключом выполните [ALTER DATABASE SCOPED CREDENTIAL](/sql/t-sql/statements/alter-database-scoped-credential-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true).
 
-Пример.
+Пример
 
 Исходный ключ создан
 
@@ -176,7 +176,7 @@ ALTER DATABASE SCOPED CREDENTIAL my_credential WITH IDENTITY = 'my_identity', SE
 
 Вносить изменения в базовые внешние источники данных больше не нужно.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о инструкции COPY или Polybase при проектировании процесса извлечения, загрузки и преобразования (ELT) см. в статье [проектирование ELT для Azure синапсе Analytics](design-elt-data-loading.md).
 - В руководстве по загрузке [используйте инструкцию Copy для загрузки данных из хранилища BLOB-объектов Azure в СИНАПСЕ SQL](./load-data-from-azure-blob-storage-using-copy.md).

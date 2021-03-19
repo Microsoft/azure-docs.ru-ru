@@ -11,10 +11,10 @@ ms.date: 09/25/2019
 ms.subservice: hybrid
 ms.author: billmath
 ms.openlocfilehash: bc159452c81a673ca4a7ed46aa7eff19fd9209eb
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "73176023"
 ---
 # <a name="understanding-azure-ad-connect-14xxx-and-device-disappearance"></a>Основные сведения об Azure AD Connect 1.4. XX. x и о выявление устройства
@@ -22,7 +22,7 @@ ms.locfileid: "73176023"
 
 Если вы видите, что удаление объектов устройств в Azure AD превышает пороговое значение удаления экспорта, рекомендуется, чтобы клиент разрешал удаление. [Как разрешить удаление в поток, если они превышают пороговое значение удаления](how-to-connect-sync-feature-prevent-accidental-deletes.md)
 
-## <a name="background"></a>История
+## <a name="background"></a>Историческая справка
 Устройства Windows, зарегистрированные как гибридные присоединенные к Azure AD, представлены в Azure AD как объекты устройств. Эти объекты устройств можно использовать для условного доступа. Устройства Windows 10 синхронизируются с облаком с помощью Azure AD Connect, устройства Windows нижнего уровня регистрируются напрямую с помощью AD FS или простого единого входа.
 
 ## <a name="windows-10-devices"></a>Устройства под управлением Windows 10

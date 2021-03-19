@@ -7,13 +7,13 @@ ms.author: joanpo
 ms.topic: conceptual
 ms.date: 07/10/2019
 ms.openlocfilehash: 33532380d8f98df44029eeea998130d1da5fdafd
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "73468559"
 ---
-# <a name="azure-data-share-concepts"></a>Общие сведения об общих ресурсах Azure 
+# <a name="azure-data-share-concepts"></a>Понятия Azure Data Share 
 
 Общая папка данных Azure представляет собой некоторую новую терминологию, связанную с обменом данными. В этой статье описываются некоторые часто используемые термины, которые могут быть использованы во всей службе. 
 
@@ -27,7 +27,7 @@ ms.locfileid: "73468559"
 
 ## <a name="data-share"></a>Data Share
 
-Общая папка представляет собой группу наборов данных, которые являются общими для одной сущности. Наборы данных могут быть из нескольких источников, поддерживаемых общей папкой данных Azure. Сейчас общая папка данных Azure поддерживает хранилище BLOB-объектов Azure и Azure Data Lake Store. 
+Общий ресурс данных — это группа наборов данных, которые совместно используются как одна сущность. Наборы данных могут поступать из нескольких источников, поддерживаемых Azure Data Share. Сейчас Azure Data Share поддерживает Хранилище BLOB-объектов Azure и Azure Data Lake Storage. 
 
 ## <a name="share-subscription"></a>Поделиться подпиской 
 
