@@ -7,12 +7,12 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 01/29/2020
-ms.openlocfilehash: 94f5884cb9d1886a9e7aa6b09817b26bba6d47f7
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 0ebbbcd7430a86ee431f67f7b6174b45d60056e5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100370722"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104593719"
 ---
 # <a name="load-data-into-azure-synapse-analytics-by-using-azure-data-factory"></a>Загрузка данных в Azure синапсе Analytics с помощью фабрики данных Azure
 
@@ -56,7 +56,7 @@ ms.locfileid: "100370722"
 3. Нажмите кнопку **создания**.
 4. После создания перейдите к фабрике данных. Вы увидите домашнюю страницу **фабрики данных**, как показано на следующем изображении:
 
-   ![Домашняя страница фабрики данных](./media/doc-common-process/data-factory-home-page.png)
+    :::image type="content" source="./media/doc-common-process/data-factory-home-page.png" alt-text="Домашняя страница фабрики данных Azure с плиткой &quot;автор & монитор&quot;.":::
 
    Выберите плитку **Создание и мониторинг**, чтобы открыть на отдельной вкладке приложение интеграции данных.
 

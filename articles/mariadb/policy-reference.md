@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для Базы данных Azure для MariaDB
 description: Здесь приведены встроенные определения политик в Политике Azure для Базы данных Azure для MariaDB. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 ms.topic: reference
 author: savjani
 ms.author: pariks
 ms.service: mariadb
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 5c77f2aa629954210d06670c42fcc1144ce041fa
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: 46eb570ae2064b5489f22c84ff5d087180b381e1
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102613341"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104593549"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-database-for-mariadb"></a>Встроенные определения в Политике Azure для Базы данных Azure для MariaDB
 

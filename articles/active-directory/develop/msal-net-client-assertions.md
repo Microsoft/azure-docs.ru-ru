@@ -9,16 +9,16 @@ ms.service: active-directory
 ms.subservice: develop
 ms.topic: conceptual
 ms.workload: identity
-ms.date: 9/30/2020
+ms.date: 03/18/2021
 ms.author: jmprieur
 ms.reviewer: saeeda
 ms.custom: devx-track-csharp, aaddev
-ms.openlocfilehash: f1ff679bddf2afc355516f2a04b3307d4a260a5c
-ms.sourcegitcommit: 2488894b8ece49d493399d2ed7c98d29b53a5599
+ms.openlocfilehash: 8fb4ecb8fa8d6938e9afbc77064380b7b213029a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98063626"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104578742"
 ---
 # <a name="confidential-client-assertions"></a>Конфиденциальные утверждения клиентов
 
@@ -48,7 +48,16 @@ app = ConfidentialClientApplicationBuilder.Create(config.ClientId)
                                           .Build();
 ```
 
-[Утверждения, ожидаемые Azure AD](active-directory-certificate-credentials.md) :
+Можно также использовать форму делегата, которая позволяет вычислять утверждение только вовремя:
+
+```csharp
+string signedClientAssertion = ComputeAssertion();
+app = ConfidentialClientApplicationBuilder.Create(config.ClientId)
+                                          .WithClientAssertion(() => { return GetSignedClientAssertion(); } )
+                                          .Build();
+```
+
+[Утверждения, ожидаемые Azure AD](active-directory-certificate-credentials.md) в подписанном утверждении:
 
 Тип утверждения | Значение | Описание
 ---------- | ---------- | ----------

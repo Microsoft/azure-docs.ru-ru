@@ -5,18 +5,18 @@ services: active-directory
 ms.service: active-directory
 ms.subservice: conditional-access
 ms.topic: conceptual
-ms.date: 02/10/2021
+ms.date: 03/17/2021
 ms.author: joflore
 author: MicrosoftGuyJFlo
 manager: daveba
 ms.reviewer: calebb
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fecf3f1a302a6734d92335bc15722df4d5288a56
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: ab840b46503aed1a318e3b39a4e8fe3e4d11735c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100362426"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579133"
 ---
 # <a name="conditional-access-conditions"></a>Условный доступ: условия
 
@@ -30,11 +30,11 @@ ms.locfileid: "100362426"
 
 ## <a name="sign-in-risk"></a>Риск при входе
 
-Для клиентов, имеющих доступ к [защите идентификации](../identity-protection/overview-identity-protection.md), риск входа можно оценить как часть политики условного доступа. Риск входа представляет вероятность того, что данный запрос проверки подлинности не является полномочным для владельца удостоверения. Дополнительные сведения о риске при входе можно найти в статьях, [что такое риск](../identity-protection/concept-identity-protection-risks.md#sign-in-risk) и [как настроить и включить политики риска](../identity-protection/howto-identity-protection-configure-risk-policies.md).
+Для клиентов, имеющих доступ к [защите идентификации](../identity-protection/overview-identity-protection.md), риск входа можно оценить как часть политики условного доступа. Риск при входе указывает на вероятность того, что данный запрос проверки подлинности отправлен не владельцем удостоверения. Дополнительные сведения о риске при входе можно найти в статьях, [что такое риск](../identity-protection/concept-identity-protection-risks.md#sign-in-risk) и [как настроить и включить политики риска](../identity-protection/howto-identity-protection-configure-risk-policies.md).
 
 ## <a name="user-risk"></a>Риск пользователя 
 
-Для клиентов, имеющих доступ к [защите идентификации](../identity-protection/overview-identity-protection.md), риск для пользователей можно оценить как часть политики условного доступа. Риск для пользователей представляет вероятность компрометации данного удостоверения или учетной записи. Дополнительные сведения о риске для пользователей можно найти в статьях, [что такое риск](../identity-protection/concept-identity-protection-risks.md#user-risk) и [как настроить и включить политики риска](../identity-protection/howto-identity-protection-configure-risk-policies.md).
+Для клиентов, имеющих доступ к [защите идентификации](../identity-protection/overview-identity-protection.md), риск для пользователей можно оценить как часть политики условного доступа. Риск пользователя обозначает вероятность того, что данное удостоверение или учетная запись скомпрометированы. Дополнительные сведения о риске для пользователей можно найти в статьях, [что такое риск](../identity-protection/concept-identity-protection-risks.md#user-risk) и [как настроить и включить политики риска](../identity-protection/howto-identity-protection-configure-risk-policies.md).
 
 ## <a name="device-platforms"></a>Платформы устройств
 
@@ -46,7 +46,7 @@ ms.locfileid: "100362426"
 - iOS
 - Windows Phone
 - Windows
-- macOS
+- MacOS
 
 Если вы блокируете устаревшую проверку подлинности с помощью условия **другие клиенты** , можно также задать условие платформы устройства.
 
@@ -117,7 +117,7 @@ ms.locfileid: "100362426"
 | Windows Server 2016 | Internet Explorer |
 | Windows Server 2012 R2 | Internet Explorer |
 | Windows Server 2008 R2 | Internet Explorer |
-| macOS | Chrome, Safari |
+| MacOS | Chrome, Safari |
 
 > [!NOTE]
 > Пограничная 85 + требует, чтобы пользователь вошел в браузер для правильной передачи удостоверения устройства. В противном случае он ведет себя как Chrome без расширения Accounts. Этот вход может не выполняться автоматически в гибридном сценарии присоединение к Azure AD. 
@@ -160,12 +160,12 @@ ms.locfileid: "100362426"
 | Microsoft Teams Services — контролируют все службы, которые поддерживают Microsoft Teams, и все их клиентские приложения: для Windows Desktop, iOS, Android, WP, а также веб-клиент. | Microsoft Teams | Windows 10, Windows 8.1, Windows 7, iOS, Android и macOS |
 | Приложения Office 2016, Office 2013 (с современной проверкой подлинности), [клиент синхронизации OneDrive](/onedrive/enable-conditional-access) | SharePoint | Windows 8.1, Windows 7 |
 | Приложения Office 2016, универсальные приложения Office, Office 2013 (с современной проверкой подлинности), [клиент синхронизации OneDrive](/onedrive/enable-conditional-access) | SharePoint Online | Windows 10 |
-| Office 2016 (только Word, Excel, PowerPoint, OneNote). | SharePoint | macOS |
+| Office 2016 (только Word, Excel, PowerPoint, OneNote). | SharePoint | MacOS |
 | Office 2019| SharePoint | Windows 10, macOS |
 | Мобильные приложения Office | SharePoint | Android, iOS |
 | Приложение Office Yammer | Yammer | Windows 10, iOS, Android |
 | Outlook 2019 | SharePoint | Windows 10, macOS |
-| Outlook 2016 (Office для macOS) | Exchange Online | macOS |
+| Outlook 2016 (Office для macOS) | Exchange Online | MacOS |
 | Outlook 2016, Outlook 2013 (с современной проверкой подлинности), Skype для бизнеса (с современной проверкой подлинности) | Exchange Online | Windows 8.1, Windows 7 |
 | Мобильное приложение Outlook | Exchange Online | Android, iOS |
 | Приложение Power BI | Служба Power BI | Windows 10, Windows 8.1, Windows 7, Android и iOS |
@@ -174,11 +174,11 @@ ms.locfileid: "100362426"
 
 ### <a name="exchange-activesync-clients"></a>Клиенты Exchange ActiveSync
 
-- Организации могут выбирать только клиенты Exchange ActiveSync при назначении политики пользователям или группам. Выбор **всех пользователей**, **всех гостевых и внешних пользователей** или **ролей каталога** приведет к блокировке всех пользователей.
+- Организации могут выбирать только клиенты Exchange ActiveSync при назначении политики пользователям или группам. Выбор **всех пользователей**, **всех гостевых и внешних пользователей** или **ролей каталога** приведет к тому, что все пользователи будут подвергаться политике.
 - При создании политики, назначенной клиентам Exchange ActiveSync, **Exchange Online** должен быть единственным облачным приложением, назначенным политике. 
 - Организации могут ограничить область этой политики конкретными платформами с помощью условия **платформы устройства** .
 
-Если для управления доступом, назначенного политике, **требуется утвержденное клиентское приложение**, пользователь будет перенаправлен на установку и использование Outlook Mobile Client. Если требуется **многофакторная проверка подлинности** , затронутые пользователи блокируются, так как обычная проверка подлинности не поддерживает многофакторную проверку подлинности.
+Если для управления доступом, назначенного политике, **требуется утвержденное клиентское приложение**, пользователь будет перенаправлен на установку и использование Outlook Mobile Client. В случае, если требуется **многофакторная проверка подлинности**, **условия использования** или **пользовательские элементы управления** , затронутые пользователи блокируются, так как обычная проверка подлинности не поддерживает эти элементы управления.
 
 Дополнительные сведения см. в следующих статьях:
 
@@ -196,7 +196,7 @@ ms.locfileid: "100362426"
 Например, *все пользователи* , обращающиеся к облачному приложению *Microsoft Azure Management* , включая **все состояние устройства** , за исключением **гибридного устройства, присоединенного к Azure AD** , и **устройства, помеченные как соответствующие** и для *элементов управления доступом*, **блок**. 
    - В этом примере создается политика, которая разрешает доступ к управлению Microsoft Azure только с устройств, присоединенных к домену Azure AD или устройств, помеченных как соответствующие требованиям.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Условный доступ: предоставление](concept-conditional-access-grant.md)
 

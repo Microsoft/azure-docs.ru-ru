@@ -4,13 +4,13 @@ description: Узнайте, как создать кластер, которы�
 services: container-service
 ms.custom: fasttrack-edit, references_regions, devx-track-azurecli
 ms.topic: article
-ms.date: 09/04/2020
-ms.openlocfilehash: 3eec8a6c331227d9d6298c46b272a5784080d342
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.date: 03/16/2021
+ms.openlocfilehash: 4c5b0ceb3f8e0b96f18a67ed0c7dbf1b56ac30da
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102180332"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104583553"
 ---
 # <a name="create-an-azure-kubernetes-service-aks-cluster-that-uses-availability-zones"></a>Создание кластера Службы Azure Kubernetes (AKS), который использует зоны доступности
 
@@ -29,6 +29,7 @@ ms.locfileid: "102180332"
 В настоящее время кластеры AKS можно создавать с помощью зон доступности в следующих регионах.
 
 * Восточная Австралия
+* Южная Бразилия
 * Центральная Канада
 * Центральная часть США
 * Восточная часть США 
@@ -167,7 +168,7 @@ Name:       aks-nodepool1-28993262-vmss000004
 Теперь у нас есть два дополнительных узла в зонах 1 и 2. Можно развернуть приложение, состоящее из трех реплик. В качестве примера мы будем использовать NGINX:
 
 ```console
-kubectl create deployment nginx --image=nginx
+kubectl create deployment nginx --image=mcr.microsoft.com/oss/nginx/nginx:1.15.5-alpine
 kubectl scale deployment nginx --replicas=3
 ```
 

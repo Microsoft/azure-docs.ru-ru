@@ -7,12 +7,12 @@ ms.date: 11/17/2020
 ms.topic: conceptual
 ms.service: iot-pnp
 services: iot-pnp
-ms.openlocfilehash: 1a58a2f69b9c6c6742c4b9daf32dd0e13341aac1
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 33ff96b4e51dbf80bfdb924bc37786a344cdfdc6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101742149"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104582652"
 ---
 # <a name="device-models-repository"></a>Репозиторий моделей устройств
 
@@ -47,38 +47,50 @@ ms.locfileid: "101742149"
 
 ### <a name="resolve-models"></a>Разрешение моделей
 
-Для программного доступа к этим интерфейсам необходимо преобразовать ДТМИ в относительный путь, который можно использовать для запроса общедоступной конечной точки.
+Для программного доступа к этим интерфейсам можно использовать `ModelsRepositoryClient` Доступные в пакете NuGet [Azure. IOT. моделсрепоситори](https://www.nuget.org/packages/Azure.IoT.ModelsRepository). Этот клиент настроен по умолчанию для запроса общедоступных ДМР, доступных по адресу [devicemodels.Azure.com](https://devicemodels.azure.com/) , и может быть настроен для любого пользовательского репозитория.
 
-Чтобы преобразовать ДТМИ в абсолютный путь, используйте `DtmiToPath` функцию с `IsValidDtmi` :
-
-```cs
-static string DtmiToPath(string dtmi)
-{
-    if (!IsValidDtmi(dtmi))
-    {
-        return null;
-    }
-    // dtmi:com:example:Thermostat;1 -> dtmi/com/example/thermostat-1.json
-    return $"/{dtmi.ToLowerInvariant().Replace(":", "/").Replace(";", "-")}.json";
-}
-
-static bool IsValidDtmi(string dtmi)
-{
-    // Regex defined at https://github.com/Azure/digital-twin-model-identifier#validation-regular-expressions
-    Regex rx = new Regex(@"^dtmi:[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?)*;[1-9][0-9]{0,8}$");
-    return rx.IsMatch(dtmi);
-}
-```
-
-С результирующим путем и базовым URL-адресом для репозитория можно получить интерфейс:
+Клиент принимает `DTMI` входные данные и возвращает словарь со всеми необходимыми интерфейсами:
 
 ```cs
-const string _repositoryEndpoint = "https://devicemodels.azure.com";
+using Azure.IoT.ModelsRepository;
 
-string dtmiPath = DtmiToPath(dtmi.ToString());
-string fullyQualifiedPath = $"{_repositoryEndpoint}{dtmiPath}";
-string modelContent = await _httpClient.GetStringAsync(fullyQualifiedPath);
+var client = new ModelsRepositoryClient();
+IDictionary<string, string> models = client.GetModels("dtmi:com:example:TemperatureController;1");
+models.Keys.ToList().ForEach(k => Console.WriteLine(k));
 ```
+
+Ожидаемый результат должен отображать `DTMI` список из трех интерфейсов, найденных в цепочке зависимостей:
+
+```txt
+dtmi:com:example:TemperatureController;1
+dtmi:com:example:Thermostat;1
+dtmi:azure:DeviceManagement:DeviceInformation;1
+```
+
+`ModelsRepositoryClient`Можно настроить для запроса репозитория настраиваемой модели, доступного через HTTP (s), и задать разрешение зависимостей с помощью любого из доступных `ModelDependencyResolution` :
+
+- Отключена. Возвращает только указанный интерфейс без зависимости.
+- Включен. Возвращает все интерфейсы в цепочке зависимостей
+- Трифромекспандед. Использование `.expanded.json` файла для получения предварительно вычисленных зависимостей 
+
+> [!Tip] 
+> Пользовательские репозитории могут не предоставлять `.expanded.json` файл, если он недоступен, клиент будет выполнять обработку каждой зависимости локально.
+
+В следующем примере кода показано, как инициализировать с `ModelsRepositoryClient` помощью базового URL-адреса пользовательского репозитория, в данном случае с использованием `raw` URL-адресов из API GitHub без использования `expanded` формы, так как она недоступна в `raw` конечной точке. `AzureEventSourceListener`Инициализируется для проверки HTTP-запроса, выполняемого клиентом:
+
+```cs
+using AzureEventSourceListener listener = AzureEventSourceListener.CreateConsoleLogger();
+
+var client = new ModelsRepositoryClient(
+    new Uri("https://raw.githubusercontent.com/Azure/iot-plugandplay-models/main"),
+    new ModelsRepositoryClientOptions(dependencyResolution: ModelDependencyResolution.Enabled));
+
+IDictionary<string, string> models = client.GetModels("dtmi:com:example:TemperatureController;1");
+
+models.Keys.ToList().ForEach(k => Console.WriteLine(k));
+```
+
+В исходном коде в репозитории Azure SDK GitHub доступны дополнительные примеры: [Azure. IOT. моделсрепоситори/Samples](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/modelsrepository/Azure.IoT.ModelsRepository/samples) .
 
 ## <a name="publish-a-model"></a>Публикация модели
 

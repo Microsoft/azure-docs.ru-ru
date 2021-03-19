@@ -4,14 +4,14 @@ description: Узнайте, как настроить управление до
 author: ThomasWeiss
 ms.service: cosmos-db
 ms.topic: how-to
-ms.date: 03/03/2021
+ms.date: 03/17/2021
 ms.author: thweiss
-ms.openlocfilehash: 7c5497615ce71d0be713ef9ae28ab1e0f85b7ddb
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: efde86eac3e0830b36eabfc9e80df09daeed9f6f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102177238"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104586069"
 ---
 # <a name="configure-role-based-access-control-with-azure-active-directory-for-your-azure-cosmos-db-account-preview"></a>Настройка управления доступом на основе ролей с помощью Azure Active Directory для учетной записи Azure Cosmos DB (Предварительная версия)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -325,13 +325,13 @@ az cosmosdb sql role assignment create --account-name $accountName --resource-gr
 
 - [в .NET](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme#credential-classes)
 - [в Java](https://docs.microsoft.com/java/api/overview/azure/identity-readme#credential-classes)
+- [в JavaScript](https://docs.microsoft.com/javascript/api/overview/azure/identity-readme#credential-classes)
 
 В приведенных ниже примерах используется субъект-служба с `ClientSecretCredential` экземпляром.
 
 ### <a name="in-net"></a>в .NET;
 
-> [!NOTE]
-> `preview`Для доступа к этой функции необходимо использовать версию пакета SDK для Azure Cosmos DB .NET.
+В настоящее время в `preview` версии [пакета SDK v3 для .net](sql-api-sdk-dotnet-standard.md)поддерживается Azure Cosmos DB RBAC.
 
 ```csharp
 TokenCredential servicePrincipal = new ClientSecretCredential(
@@ -342,6 +342,8 @@ CosmosClient client = new CosmosClient("<account-endpoint>", servicePrincipal);
 ```
 
 ### <a name="in-java"></a>В Java
+
+В настоящее время в [пакете SDK для Java v4](sql-api-sdk-java-v4.md)поддерживается Azure Cosmos DB RBAC.
 
 ```java
 TokenCredential ServicePrincipal = new ClientSecretCredentialBuilder()
@@ -354,6 +356,21 @@ CosmosAsyncClient Client = new CosmosClientBuilder()
     .endpoint("<account-endpoint>")
     .credential(ServicePrincipal)
     .build();
+```
+
+### <a name="in-javascript"></a>В JavaScript
+
+В настоящее время в [пакете SDK v3 для JavaScript](sql-api-sdk-node.md)поддерживается Azure Cosmos DB RBAC.
+
+```javascript
+const servicePrincipal = new ClientSecretCredential(
+    "<azure-ad-tenant-id>",
+    "<client-application-id>",
+    "<client-application-secret>");
+const client = new CosmosClient({
+    "<account-endpoint>",
+    aadCredentials: servicePrincipal
+});
 ```
 
 ## <a name="auditing-data-requests"></a>Аудит запросов данных
@@ -374,19 +391,19 @@ CosmosAsyncClient Client = new CosmosClientBuilder()
 
 ## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
 
-### <a name="which-azure-cosmos-db-apis-are-supported-by-rbac"></a>Какие интерфейсы API Azure Cosmos DB поддерживаются RBAC?
+### <a name="which-azure-cosmos-db-apis-are-supported-by-rbac"></a>Какие интерфейсы API Azure Cosmos DB поддерживаются RBAC?
 
-В настоящее время поддерживается только API SQL.
+В настоящее время поддерживается только API SQL.
 
-### <a name="is-it-possible-to-manage-role-definitions-and-role-assignments-from-the-azure-portal"></a>Можно ли управлять определениями ролей и назначениями ролей из портал Azure?
+### <a name="is-it-possible-to-manage-role-definitions-and-role-assignments-from-the-azure-portal"></a>Можно ли управлять определениями и назначениями ролей на портале Azure?
 
-Портал Azure поддержка управления ролями пока недоступна.
+Управление ролями с помощью портала Azure пока не поддерживается.
 
 ### <a name="which-sdks-in-azure-cosmos-db-sql-api-support-rbac"></a>Какие пакеты SDK в Azure Cosmos DB поддержки SQL API RBAC?
 
 Пакеты SDK для [.NET v3](sql-api-sdk-dotnet-standard.md) и [Java v4](sql-api-sdk-java-v4.md) в настоящее время поддерживаются.
 
-### <a name="is-the-azure-ad-token-automatically-refreshed-by-the-azure-cosmos-db-sdks-when-it-expires"></a>Будет ли маркер Azure AD автоматически обновляться Azure Cosmos DB пакетами SDK по истечении срока действия?
+### <a name="is-the-azure-ad-token-automatically-refreshed-by-the-azure-cosmos-db-sdks-when-it-expires"></a>Будут ли пакеты SDK Azure Cosmos DB автоматически обновлять маркер Azure AD по истечении срока действия?
 
 Да.
 

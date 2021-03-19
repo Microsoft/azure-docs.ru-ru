@@ -2,20 +2,20 @@
 title: Проектирование стратегии загрузки данных Polybase для выделенного пула SQL
 description: Вместо ETL Создайте процесс извлечения, загрузки и преобразования (ELT) для загрузки данных с помощью выделенного SQL.
 services: synapse-analytics
-author: kevinvngo
+author: gaursa
 manager: craigg
 ms.service: synapse-analytics
 ms.topic: conceptual
 ms.subservice: sql
 ms.date: 04/15/2020
-ms.author: kevin
+ms.author: gaursa
 ms.reviewer: igorstan
-ms.openlocfilehash: 18a2cf0de94641c955ed72a48f28352d13115ef0
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 850c03d5cbda8fb11bbc804f2cd2c848a5a2411f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101667572"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104589505"
 ---
 # <a name="design-a-polybase-data-loading-strategy-for-dedicated-sql-pool-in-azure-synapse-analytics"></a>Проектирование стратегии загрузки данных Polybase для выделенного пула SQL в Azure синапсе Analytics
 

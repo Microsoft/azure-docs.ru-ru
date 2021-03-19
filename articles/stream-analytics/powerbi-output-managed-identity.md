@@ -6,14 +6,14 @@ author: enkrumah
 ms.author: ebnkruma
 ms.topic: how-to
 ms.date: 3/10/2020
-ms.openlocfilehash: b468df97f168562f4f5ce9e0e6d6e9a70835648b
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.openlocfilehash: 7c1ddbbbd8198cf769e89cfa824de370184a992c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102436113"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104589690"
 ---
-# <a name="use-managed-identity-to-authenticate-your-azure-stream-analytics-job-to-power-bi-preview"></a>Использование управляемого удостоверения для проверки подлинности задания Azure Stream Analytics в Power BI (Предварительная версия)
+# <a name="use-managed-identity-to-authenticate-your-azure-stream-analytics-job-to-power-bi"></a>Используйте управляемое удостоверение для проверки подлинности задания Azure Stream Analytics для Power BI
 
 [Проверка подлинности с помощью управляемого удостоверения](../active-directory/managed-identities-azure-resources/overview.md) для выходных данных Power BI предоставляет Stream Analytics заданиям прямой доступ к рабочей области в учетной записи Power BI. Эта функция позволяет развертывать задания Stream Analytics для полной автоматизации, поскольку больше не требуется пользователю интерактивно входить в систему для Power BI с помощью портал Azure. Кроме того, длительные задания, выполняющие запись в Power BI, теперь лучше поддерживаются, так как вам не потребуется периодически повторно авторизовать задание.
 

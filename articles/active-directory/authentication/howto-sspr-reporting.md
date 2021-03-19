@@ -11,12 +11,12 @@ author: justinha
 manager: daveba
 ms.reviewer: rhicock
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a764538ebc73927b1d274b2538e123ec90ce60e
-ms.sourcegitcommit: ad83be10e9e910fd4853965661c5edc7bb7b1f7c
+ms.openlocfilehash: 5ad1b8318e261c7dfef7fc125716736087a84bdc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "96741564"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579184"
 ---
 # <a name="reporting-options-for-azure-ad-password-management"></a>Параметры отчетов для управления паролями Azure AD
 
@@ -53,7 +53,7 @@ ms.locfileid: "96741564"
 
 ### <a name="combined-registration"></a>Объединенная регистрация
 
-Если включена [Объединенная регистрация](./concept-registration-mfa-sspr-combined.md), сведения о действиях пользователей в журналах аудита будут найдены в разделе **Security**  >  **методы проверки подлинности** безопасности.
+Если включена [Объединенная регистрация](./concept-registration-mfa-sspr-combined.md), сведения о действиях пользователей в журналах аудита будут найдены в разделе   >  **методы проверки подлинности** безопасности.
 
 ## <a name="description-of-the-report-columns-in-the-azure-portal"></a>Описание столбцов отчета на портале Azure
 
@@ -171,7 +171,7 @@ ms.locfileid: "96741564"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* [Отчеты об использовании и аналитике SSPR и MFA](howto-authentication-methods-usage-insights.md)
+* [Отчеты об использовании и аналитике SSPR и MFA](./howto-authentication-methods-activity.md)
 * [Как развернуть самостоятельный сброс пароля?](howto-sspr-deployment.md)
 * [Сбросьте или измените пароль](../user-help/active-directory-passwords-update-your-own-password.md).
 * [Регистрация для самостоятельного сброса пароля](../user-help/active-directory-passwords-reset-register.md).

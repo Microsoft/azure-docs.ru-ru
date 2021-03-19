@@ -6,13 +6,13 @@ ms.author: inhenkel
 manager: femilia
 ms.topic: how-to
 ms.service: media-services
-ms.date: 03/12/2021
-ms.openlocfilehash: 895c674fdbe5c413b68fe12862e7846f1eb7bd0b
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.date: 03/17/2021
+ms.openlocfilehash: 783d9e1b4ab86f6580cf3418a0676921aef2db6a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
-ms.locfileid: "103464535"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104598207"
 ---
 # <a name="monitor-media-services"></a>Мониторинг служб мультимедиа
 

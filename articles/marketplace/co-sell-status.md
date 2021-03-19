@@ -6,13 +6,14 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
 author: vamahtan
 ms.author: vamahtan
-ms.date: 02/24/2021
-ms.openlocfilehash: 9c788109b014be244560fb652de830ba14a44d68
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.reviewer: stmummer
+ms.date: 03/17/2021
+ms.openlocfilehash: d45b46f69480f24f5b2724116984a903093ffc62
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225019"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104593362"
 ---
 # <a name="verify-co-sell-status-of-a-commercial-marketplace-offer"></a>Проверка статуса сопутствующих продаж предложения коммерческого магазина
 
@@ -33,7 +34,7 @@ ms.locfileid: "103225019"
 | Не готовы к совместной продаже | Не выполнены минимальные [требования к состоянию готовности к совместной продаже](co-sell-requirements.md#requirements-for-co-sell-ready-status) . |
 | Готовность к совместной продаже | Выполнены все [требования к состоянию готовности к совместной продаже](co-sell-requirements.md#requirements-for-co-sell-ready-status) . |
 | Совместная продажа Azure IP выгодно | В дополнение к [этим дополнительным требованиям](co-sell-requirements.md#requirements-for-azure-ip-co-sell-incentivized-status)соблюдаются требования к готовности к совместной продаже. |
-| BizTalk приложения ISV Connect Premium  | Это состояние применяется к предложениям Dynamics 365 и Power Apps и указывает, что все [требования для этого состояния](co-sell-requirements.md#requirements-for-biz-apps-isv-connect-premium-incentive-status) выполнены. |
+| Business Applications совместных продаж выгодно | Это состояние применяется к предложениям Dynamics 365 и Power Apps в [программе ISV Connect](business-applications-isv-program.md) и показывает, что все [требования для этого состояния](co-sell-requirements.md#requirements-for-business-applications-co-sell-incentivized-status) выполнены. |
 |||
 
 ## <a name="next-steps"></a>Дальнейшие действия

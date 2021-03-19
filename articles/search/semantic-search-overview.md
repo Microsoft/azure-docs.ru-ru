@@ -7,19 +7,19 @@ author: HeidiSteen
 ms.author: heidist
 ms.service: cognitive-search
 ms.topic: conceptual
-ms.date: 03/12/2021
+ms.date: 03/18/2021
 ms.custom: references_regions
-ms.openlocfilehash: 634298952d990cd3639aa1c62592fde534b3e8b8
-ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
+ms.openlocfilehash: 443d6349aab68fd05edfe4c4007fd043c932f4f0
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103232683"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104604276"
 ---
 # <a name="semantic-search-in-azure-cognitive-search"></a>Семантический поиск в Azure Когнитивный поиск
 
 > [!IMPORTANT]
-> Функции семантического поиска доступны в общедоступной предварительной версии, доступной только в предварительной версии REST API. Функции предварительной версии предлагаются "как есть", в [дополнение к дополнительным условиям использования](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)и не обязательно должны иметь одинаковую реализацию при общедоступной доступности. Дополнительные сведения см. в разделе [доступность и цены](semantic-search-overview.md#availability-and-pricing).
+> Семантический поиск находится в общедоступной предварительной версии, доступном только в предварительной версии REST API. Функции предварительной версии предлагаются "как есть", в [дополнение к дополнительным условиям использования](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)и не обязательно должны иметь одинаковую реализацию при общедоступной доступности. Эти функции являются оплачиваемыми. Дополнительные сведения см. в разделе [доступность и цены](semantic-search-overview.md#availability-and-pricing).
 
 Семантический поиск — это набор функций, связанных с запросами, которые поддерживают более высококачественные и естественные запросы. 
 
@@ -35,7 +35,7 @@ ms.locfileid: "103232683"
 
 Семантический поиск позволяет улучшить точность и вызвать следующие возможности:
 
-| Функция | Описание |
+| Компонент | Описание |
 |---------|-------------|
 | [Проверка орфографии](speller-how-to-add.md) | Исправление опечаток до того, как условия запроса попадают в поисковую подсистему. |
 | [Семантический рейтинг](semantic-ranking.md) | Использует контекст или семантическое значение для расчета новой оценки релевантности. |
@@ -73,3 +73,5 @@ ms.locfileid: "103232683"
 + [Добавление проверки орфографии в термины запроса](speller-how-to-add.md)
 + [Возврат семантического ответа](semantic-answers.md)
 + [Семантический рейтинг](semantic-ranking.md)
++ [Введение в семантический поиск (запись блога)](https://techcommunity.microsoft.com/t5/azure-ai/introducing-semantic-search-bringing-more-meaningful-results-to/ba-p/2175636)
++ [Поиск осмысленных сведений с помощью семантических возможностей (пример представления для AI-изображения)](https://channel9.msdn.com/Shows/AI-Show/Find-meaningful-insights-using-semantic-capabilities-in-Azure-Cognitive-Search)

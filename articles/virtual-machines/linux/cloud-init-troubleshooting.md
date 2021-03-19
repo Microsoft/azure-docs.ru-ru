@@ -8,12 +8,12 @@ ms.topic: troubleshooting
 ms.date: 07/06/2020
 ms.author: danis
 ms.reviewer: cynthn
-ms.openlocfilehash: 6c5922137b5d3ee14461adb88fba2e8b2cf41e16
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: 842107245fe26155d53866bf95e11b08d7593ad1
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102558973"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104582159"
 ---
 # <a name="troubleshooting-vm-provisioning-with-cloud-init"></a>Устранение неполадок при подготовке виртуальной машины с помощью Cloud-init
 
@@ -56,11 +56,11 @@ Cloud-init может принять `customData` , если виртуальн�
 
 Пока виртуальная машина запущена, вам понадобятся журналы с виртуальной машины, чтобы понять, почему подготовка не удалась.  Чтобы понять, почему не удалось подготовить виртуальную машину, не останавливайте ее. Обеспечьте работоспособность виртуальной машины. Для получения журналов необходимо сохранить работоспособность виртуальной машины в состоянии выполнения. Чтобы получить журналы, используйте один из следующих методов.
 
-- [Последовательная консоль](../troubleshooting/serial-console-grub-single-user-mode.md)
+- [Последовательная консоль](/troubleshoot/azure/virtual-machines/serial-console-grub-single-user-mode)
 
 - [Включите диагностику загрузки](/previous-versions/azure/virtual-machines/linux/tutorial-monitor#enable-boot-diagnostics) перед созданием виртуальной машины и [Просмотрите](/previous-versions/azure/virtual-machines/linux/tutorial-monitor#view-boot-diagnostics) их во время загрузки.
 
-- [Выполните команду AZ VM Repair](../troubleshooting/repair-linux-vm-using-azure-virtual-machine-repair-commands.md) , чтобы подключить и ПОДКЛЮЧИТЬ диск ОС, который позволит вам получать следующие журналы:
+- [Выполните команду AZ VM Repair](/troubleshoot/azure/virtual-machines/repair-linux-vm-using-azure-virtual-machine-repair-commands) , чтобы подключить и ПОДКЛЮЧИТЬ диск ОС, который позволит вам получать следующие журналы:
 ```bash
 /var/log/cloud-init*
 /var/log/waagent*
@@ -108,7 +108,7 @@ Stderr: mount: unknown filesystem type 'udf'
 2019-10-10 04:51:24,010 - util.py[DEBUG]: Running command ['mount', '-o', 'ro,sync', '-t', 'auto', u'/dev/sr0', '/run/cloud-init/tmp/tmpXXXXX'] with allowed return codes [0] (shell=False, capture=True)
 ```
 
-Если у вас есть доступ к [последовательной консоли](../troubleshooting/serial-console-grub-single-user-mode.md), можно попробовать повторно выполнить команду, которую пытался запустить Cloud-init.
+Если у вас есть доступ к [последовательной консоли](/troubleshoot/azure/virtual-machines/serial-console-grub-single-user-mode), можно попробовать повторно выполнить команду, которую пытался запустить Cloud-init.
 
 Ведение журнала для `/var/log/cloud-init.log` можно также перенастроить в/етк/клауд/клауд.кфг.д/05_logging. cfg. Дополнительные сведения о ведении журнала Cloud-init см. в [документации по Cloud-init](https://cloudinit.readthedocs.io/en/latest/topics/logging.html). 
 

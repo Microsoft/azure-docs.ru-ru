@@ -12,14 +12,14 @@ ms.workload: storage
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: how-to
-ms.date: 09/16/2020
+ms.date: 03/10/2021
 ms.author: b-juche
-ms.openlocfilehash: 412724a072bfc03a67bf1005173702f757c6fdf4
-ms.sourcegitcommit: 30906a33111621bc7b9b245a9a2ab2e33310f33f
+ms.openlocfilehash: 2a3c788ce50ccc1d537fd2903fe05acffd079b0b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2020
-ms.locfileid: "95249943"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104591016"
 ---
 # <a name="create-volume-replication-for-azure-netapp-files"></a>Создание репликации тома для Azure NetApp Files
 
@@ -67,7 +67,7 @@ Azure NetApp Files репликация в настоящее время не п
     * Пул емкости
     * Квота тома
         > [!NOTE] 
-        > Рекомендуется использовать зеркальное отображение размера квоты тома для исходного тома.
+        > Квота тома (размер) для целевого тома должна быть зеркально отображена на исходном томе. Если указать размер, меньший, чем исходный том, целевой том автоматически изменится на размер исходного тома. 
     * Виртуальная сеть 
     * Подсеть
 
@@ -113,6 +113,6 @@ Azure NetApp Files репликация в настоящее время не п
 * [Отображение состояния работоспособности отношения репликации](cross-region-replication-display-health-status.md)
 * [Метрики репликации томов](azure-netapp-files-metrics.md#replication)
 * [Управление аварийным восстановлением](cross-region-replication-manage-disaster-recovery.md)
-* [Удаление репликации томов или томов](cross-region-replication-delete.md)
+* [Удаление репликаций томов или томов](cross-region-replication-delete.md)
 * [Устранение неполадок при репликации между регионами](troubleshoot-cross-region-replication.md)
 

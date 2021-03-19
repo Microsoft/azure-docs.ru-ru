@@ -6,14 +6,14 @@ author: memildin
 manager: rkarlin
 ms.service: security-center
 ms.topic: how-to
-ms.date: 02/16/2021
+ms.date: 03/17/2021
 ms.author: memildin
-ms.openlocfilehash: 6d0e660ecce1d45dab4d6003cdba391ba2eb4ee9
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: eacca5573c672e9f4485c26b1b580ee4c982c5d2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102095601"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104580762"
 ---
 # <a name="protect-your-kubernetes-workloads"></a>Защита рабочих нагрузок Kubernetes
 
@@ -21,7 +21,7 @@ ms.locfileid: "102095601"
 
 Дополнительные сведения об этих функциях см. в статье [рекомендации по защите рабочих нагрузок с помощью управления допуском Kubernetes](container-security.md#workload-protection-best-practices-using-kubernetes-admission-control)
 
-Центр безопасности предлагает больше функций безопасности контейнеров, если вы включаете защитник Azure. В частности:
+Центр безопасности предлагает больше функций безопасности контейнеров, если вы включаете защитник Azure. В частности, внесены следующие изменения.
 
 - Проверка реестров контейнеров на наличие уязвимостей с помощью [защитника Azure для реестров контейнеров](defender-for-container-registries-introduction.md)
 - Получение оповещений об обнаружении угроз в реальном времени для вашего кластера K8s в [защитнике Azure для Kubernetes](defender-for-kubernetes-introduction.md)

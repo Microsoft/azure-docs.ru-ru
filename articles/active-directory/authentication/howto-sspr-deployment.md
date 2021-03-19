@@ -11,12 +11,12 @@ author: barbaraselden
 manager: daveba
 ms.reviewer: rhicock
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94187f2f94581b4ff48ddb0cd014dc26268fcf15
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 55fc4c0b5f3e2bbf57c972ad4a7fd2c9bdd3810e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102500518"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579201"
 ---
 # <a name="plan-an-azure-active-directory-self-service-password-reset-deployment"></a>Планирование развертывания самостоятельного сброса пароля Azure Active Directory
 
@@ -322,7 +322,7 @@ Azure AD может предоставить дополнительные све
 
 ### <a name="authentication-methods--usage-and-insights"></a>Методы проверки подлинности — использование и аналитика
 
-[Использование и аналитика](./howto-authentication-methods-usage-insights.md) позволяют понять, как методы проверки подлинности для таких функций, как Azure AD MFA и SSPR, работают в вашей организации. С помощью этой возможности создания отчетов ваша организация может получить понимание того, какие методы регистрируются и как их использовать.
+[Использование и аналитика](./howto-authentication-methods-activity.md) позволяют понять, как методы проверки подлинности для таких функций, как Azure AD MFA и SSPR, работают в вашей организации. С помощью этой возможности создания отчетов ваша организация может получить понимание того, какие методы регистрируются и как их использовать.
 
 ### <a name="troubleshoot"></a>Диагностика
 

@@ -2,27 +2,27 @@
 title: Непрерывная интеграция и развертывание для выделенного пула SQL
 description: DevOps в базе данных корпоративного класса для выделенного пула SQL в Azure синапсе Analytics со встроенной поддержкой непрерывной интеграции и развертывания с помощью Azure Pipelines.
 services: synapse-analytics
-author: kevinvngo
+author: gaursa
 manager: craigg
 ms.service: synapse-analytics
 ms.topic: how-to
 ms.subservice: sql-dw
 ms.date: 02/04/2020
-ms.author: kevin
+ms.author: gaursa
 ms.reviewer: igorstan
 ms.custom: azure-synapse
-ms.openlocfilehash: cb80f2d21246a75d41fc5753e72995d409d5c6b4
-ms.sourcegitcommit: aacbf77e4e40266e497b6073679642d97d110cda
+ms.openlocfilehash: d43039c98e991cd23a8e5c4fb866a8e3dcab6fc2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98119192"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104585644"
 ---
 # <a name="continuous-integration-and-deployment-for-dedicated-sql-pool-in-azure-synapse-analytics"></a>Непрерывная интеграция и развертывание для выделенного пула SQL в Azure синапсе Analytics
 
 В этом простом учебнике объясняется, как интегрировать проект базы данных SQL Server Data Tools (SSDT) с Azure DevOps и настроить непрерывную интеграцию и развертывание с помощью Azure Pipelines. Это руководство является вторым шагом в создании конвейера непрерывной интеграции и развертывания для хранения данных.
 
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="before-you-begin"></a>Перед началом
 
 - Изучите [учебник по интеграции системы управления версиями](sql-data-warehouse-source-control-integration.md).
 

@@ -5,18 +5,18 @@ services: active-directory
 ms.service: active-directory
 ms.subservice: conditional-access
 ms.topic: conceptual
-ms.date: 11/24/2020
+ms.date: 03/17/2021
 ms.author: joflore
 author: MicrosoftGuyJFlo
 manager: daveba
 ms.reviewer: calebb
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f0a84af0c7a4105327405cfb809f5101ab42931
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: d01a750948f8e3c264b9bcffdaad3ae72fa40ac0
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98938385"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579116"
 ---
 # <a name="conditional-access-grant"></a>Условный доступ: предоставление
 
@@ -36,9 +36,9 @@ ms.locfileid: "98938385"
 
 - [Требовать многофакторную проверку подлинности (многофакторная идентификация Azure AD)](../authentication/concept-mfa-howitworks.md)
 - [Требовать, чтобы устройство было помечено как соответствующее (Microsoft Intune)](/intune/protect/device-compliance-get-started)
-- [Требовать устройство с гибридным присоединением к Azure AD.](../devices/concept-azure-ad-join-hybrid.md)
+- [Требовать гибридное устройство, присоединенное к Azure AD](../devices/concept-azure-ad-join-hybrid.md)
 - [Требовать утвержденное клиентское приложение](app-based-conditional-access.md)
-- [Требовать политику защиты приложений.](app-protection-based-conditional-access.md)
+- [Требование политики защиты приложений](app-protection-based-conditional-access.md)
 - [Требовать смены пароля](#require-password-change)
 
 Когда Администраторы выбирают вариант объединения этих параметров, они могут выбрать следующие методы.
@@ -51,6 +51,8 @@ ms.locfileid: "98938385"
 ### <a name="require-multi-factor-authentication"></a>Требование многофакторной идентификации
 
 Если установить этот флажок, пользователи должны будут выполнять многофакторную идентификацию Azure AD. Дополнительные сведения о развертывании многофакторной идентификации Azure AD см. в статье [Планирование развертывания службы многофакторной идентификации Azure AD на основе облачных](../authentication/howto-mfa-getstarted.md)служб.
+
+[Windows Hello для бизнеса](/windows/security/identity-protection/hello-for-business/hello-overview) удовлетворяет требованиям многофакторной проверки подлинности в политиках условного доступа. 
 
 ### <a name="require-device-to-be-marked-as-compliant"></a>Требовать, чтобы устройство было отмечено как соответствующее
 
@@ -66,7 +68,7 @@ ms.locfileid: "98938385"
 
 При использовании [потока OAuth "код устройства](../develop/v2-oauth2-device-code.md)" требуется управление предоставлением управляемого устройства или условие состояния устройства не поддерживается. Это происходит потому, что устройство, выполняющее проверку подлинности, не может предоставить устройству состояние устройства, предоставляющего код, и состояние устройства в маркере блокируется на устройстве, выполняющем проверку подлинности. Используйте вместо него управление предоставлением многофакторной проверки подлинности.
 
-### <a name="require-approved-client-app"></a>Требовать утвержденное клиентское приложение.
+### <a name="require-approved-client-app"></a>Требование утвержденного клиентского приложения
 
 Организации могут потребовать, чтобы попытка доступа к выбранным облачным приложениям выполнялась из утвержденного клиентского приложения. Эти утвержденные клиентские приложения поддерживают [политики защиты приложений Intune](/intune/app-protection-policy) независимо от любого решения по управлению мобильными устройствами (MDM).
 
@@ -115,7 +117,7 @@ ms.locfileid: "98938385"
 
 Примеры конфигурации см. в статье [как требовать утвержденные клиентские приложения для облачного доступа к приложениям с помощью условного доступа](app-based-conditional-access.md) .
 
-### <a name="require-app-protection-policy"></a>Требовать политику защиты приложений.
+### <a name="require-app-protection-policy"></a>Требование политики защиты приложений
 
 В политике условного доступа можно настроить для клиентского приложения [политику защиты приложений Intune](/intune/app-protection-policy) , чтобы доступ к выбранным облачным приложениям был доступен. 
 
