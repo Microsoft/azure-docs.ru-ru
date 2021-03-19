@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: jobreen
 ms.openlocfilehash: 1846b036f12fe7e691021ec0248782cad946d9b7
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "75650413"
 ---
 # <a name="azure-custom-providers-resource-onboarding-overview"></a>Обзор адаптации ресурсов настраиваемых поставщиков Azure
@@ -154,7 +154,7 @@ X-MS-CustomProviders-ExtendedResource: /subscriptions/{subscriptionId}/resourceG
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Из этой статьи вы узнали о настраиваемых поставщиках. Дополнительные сведения см. в следующих статьях:
+Из этой статьи вы узнали о настраиваемых поставщиках. Дополнительные сведения см. в статьях ниже:
 
 - [Учебник. Адаптация ресурсов с помощью настраиваемых поставщиков](./tutorial-resource-onboarding.md)
 - [Руководство. Создание настраиваемых действий и ресурсов в Azure](./tutorial-get-started-with-custom-providers.md)

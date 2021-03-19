@@ -5,24 +5,24 @@ services: active-directory
 ms.service: active-directory
 ms.subservice: conditional-access
 ms.topic: conceptual
-ms.date: 03/04/2021
+ms.date: 03/17/2021
 ms.author: joflore
 author: MicrosoftGuyJFlo
 manager: daveba
 ms.reviewer: calebb
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f316b17096e1241fe23cbf2c965122fd8966522
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: b878abbead68b3268891e1f35087e5942969730c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102630883"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579065"
 ---
 # <a name="conditional-access-users-and-groups"></a>Условный доступ: пользователи и группы
 
-Политика условного доступа должна включать назначение пользователя в качестве одного из сигналов в процессе принятия решений. Пользователи могут быть включены или исключены из политик условного доступа. Azure Active Directory оценивает все политики и гарантирует, что все требования будут выполнены перед предоставлением доступа пользователю. Помимо этой статьи, у нас есть видео [о том, как включать или исключать пользователей из политик условного доступа](https://www.youtube.com/watch?v=5DsW1hB3Jqs) , которые помогут выполнить описанный ниже процесс. 
+Политика условного доступа должна включать назначение пользователя в качестве одного из сигналов в процессе принятия решений. Пользователи могут быть включены или исключены из политик условного доступа. Azure Active Directory оценивает все политики и гарантирует, что все требования будут выполнены перед предоставлением доступа пользователю. 
 
-![Пользователь как сигнал в решениях, сделанных с помощью условного доступа](./media/concept-conditional-access-users-groups/conditional-access-users-and-groups.png)
+> [!VIDEO https://www.youtube.com/embed/5DsW1hB3Jqs]
 
 ## <a name="include-users"></a>Включить пользователей
 
@@ -77,7 +77,7 @@ ms.locfileid: "102630883"
 
 ![Внимание! не блокируйте себя!](./media/concept-conditional-access-users-groups/conditional-access-users-and-groups-lockout-warning.png)
 
-[Что делать, если вы блокируете портал Azure?](troubleshoot-conditional-access.md#what-to-do-if-you-are-locked-out-of-the-azure-portal)
+Если вы обнаружите,[что делать, если вы блокируете портал Azure?](troubleshoot-conditional-access.md#what-to-do-if-you-are-locked-out-of-the-azure-portal)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

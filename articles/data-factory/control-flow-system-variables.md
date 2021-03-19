@@ -7,12 +7,12 @@ ms.reviewer: maghan
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 06/12/2018
-ms.openlocfilehash: 119ecb3ec9c208340f09f513bf10b3ad24312cb5
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: a5d2043c29db87876cc0d5ddb5b3708abad033c5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102201232"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104591985"
 ---
 # <a name="system-variables-supported-by-azure-data-factory"></a>Системные переменные, поддерживаемые в фабрике данных Azure
 
@@ -66,6 +66,20 @@ ms.locfileid: "102201232"
 | @triggerBody(). имя файла  |Имя файла, создание или удаление которого вызвало срабатывание триггера.   |
 | @triggerBody(). имя_папки  |Путь к папке, содержащей файл, заданный параметром `@triggerBody().fileName` . Первый сегмент пути к папке — это имя контейнера хранилища BLOB-объектов Azure.  |
 | @trigger().startTime |Время срабатывания триггера для вызова выполнения конвейера. |
+
+## <a name="custom-event-trigger-scope"></a>Область действия триггера настраиваемого события
+
+К этим системным переменным можно обращаться в любом месте в JSON триггера для триггеров типа [кустомевентстригжер](concepts-pipeline-execution-triggers.md#event-based-trigger).
+
+>[!NOTE]
+>Фабрика данных Azure ждет, что пользовательское событие будет отформатировано с помощью [схемы событий службы "Сетка событий Azure](../event-grid/event-schema.md)".
+
+| Имя переменной | Описание
+| --- | --- |
+| @triggerBody(). Event. eventType | Тип событий, вызвавших запуск триггера пользовательского события. Тип события является полем, определяемым клиентом, и принимает любые значения строкового типа. |
+| @triggerBody(). событие. subject | Тема пользовательского события, вызвавшего срабатывание триггера. |
+| @triggerBody(). Event. Data. _keyName_ | Поле данных в пользовательском событии доступно бесплатно из большого двоичного объекта JSON, который клиент может использовать для отправки сообщений и данных. Используйте данные. _keyName_ для ссылки на каждое поле. Например, @triggerBody (). Event. Data. callback возвращает значение для поля _обратного вызова_ , хранящегося в разделе _данные_. |
+| @trigger().startTime | Время срабатывания триггера для вызова выполнения конвейера. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

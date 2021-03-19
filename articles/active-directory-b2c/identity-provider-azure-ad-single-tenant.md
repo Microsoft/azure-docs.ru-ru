@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/15/2021
+ms.date: 03/17/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.custom: fasttrack-edit, project-no-code
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 497b171cad956dee23139bcfb0ec76fad82bfb33
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 490880e4a37711a92b44a0ffe01315edfa6ddb26
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103488974"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104580136"
 ---
 # <a name="set-up-sign-in-for-a-specific-azure-active-directory-organization-in-azure-active-directory-b2c"></a>Настройка входа для определенной организации Azure Active Directory в Azure Active Directory B2C
 
@@ -106,6 +106,8 @@ ms.locfileid: "103488974"
 1. Щелкните **Сохранить**.
 
 ## <a name="add-azure-ad-identity-provider-to-a-user-flow"></a>Добавление поставщика удостоверений Azure AD в поток пользователя 
+
+На этом этапе поставщик удостоверений Azure AD настроен, но еще не доступен ни на одной из страниц входа. Чтобы добавить поставщик удостоверений Azure AD в поток пользователя, выполните следующие действия.
 
 1. В клиенте Azure AD B2C выберите **Потоки пользователей**.
 1. Щелкните поток пользователя, для которого требуется добавить поставщик удостоверений Azure AD.
@@ -198,7 +200,7 @@ ms.locfileid: "103488974"
 1. Обновите значение **DisplayName**. Это значение будет отображаться на кнопке входа на экране входа в систему.
 1. Обновите значение **Description**.
 1. Azure AD использует протокол OpenID Connect, поэтому для параметра **Protocol** должно быть задано значение `OpenIdConnect`.
-1. Задайте для параметра **METADATA** значение `https://login.microsoftonline.com/tenant-name.onmicrosoft.com/v2.0/.well-known/openid-configuration`, где `tenant-name` — это имя клиента Azure AD. Например `https://login.microsoftonline.com/contoso.onmicrosoft.com/v2.0/.well-known/openid-configuration`.
+1. Задайте для параметра **METADATA** значение `https://login.microsoftonline.com/tenant-name.onmicrosoft.com/v2.0/.well-known/openid-configuration`, где `tenant-name` — это имя клиента Azure AD. Например: `https://login.microsoftonline.com/contoso.onmicrosoft.com/v2.0/.well-known/openid-configuration`
 1. Задайте для параметра **client_id** значение идентификатора приложения из регистрации приложения.
 1. В разделе **криптографиккэйс** измените значение **идентификатором storagereferenceid** на имя созданного ранее ключа политики. Например, `B2C_1A_ContosoAppSecret`.
 

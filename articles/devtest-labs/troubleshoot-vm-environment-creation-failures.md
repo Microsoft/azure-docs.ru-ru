@@ -4,10 +4,10 @@ description: Узнайте, как устранить неполадки вир
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: b7d3f3ad34d8a5bb48607816623c67121d21d78c
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85476484"
 ---
 # <a name="troubleshoot-virtual-machine-vm-and-environment-creation-failures-in-azure-devtest-labs"></a>Устранение сбоев при создании виртуальной машины и сбоя создания среды в Azure DevTest Labs
@@ -19,7 +19,7 @@ DevTest Labs выдает предупреждения, если имя комп
 ![Уведомление портал Azure](./media/troubleshoot-vm-environment-creation-failures/portal-notification.png)
 
 ### <a name="vm-in-corruption-state"></a>Виртуальная машина в состоянии повреждения
-Если в лаборатории вы видите состояние **поврежденной**виртуальной машины, возможно, базовая виртуальная машина была удалена со страницы **виртуальной машины** , к которой пользователь может переходить со страницы **виртуальные машины** (не со страницы DevTest Labs). Очистите лабораторию в DevTest Labs, удалив виртуальную машину из лаборатории. Затем повторно создайте виртуальную машину в лаборатории. 
+Если в лаборатории вы видите состояние **поврежденной** виртуальной машины, возможно, базовая виртуальная машина была удалена со страницы **виртуальной машины** , к которой пользователь может переходить со страницы **виртуальные машины** (не со страницы DevTest Labs). Очистите лабораторию в DevTest Labs, удалив виртуальную машину из лаборатории. Затем повторно создайте виртуальную машину в лаборатории. 
 
 ![Виртуальная машина в поврежденном состоянии](./media/troubleshoot-vm-environment-creation-failures/vm-corrupted-state.png)
 

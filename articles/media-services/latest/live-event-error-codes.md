@@ -13,12 +13,12 @@ ms.devlang: na
 ms.topic: error-reference
 ms.date: 02/12/2020
 ms.author: inhenkel
-ms.openlocfilehash: b3be465c488bdd3c5dbd62f757733939d1bee393
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 5463f1d8376cbe1a6e81d17c1f95a84e67f3b418
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100393519"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104581088"
 ---
 # <a name="media-services-live-event-error-codes"></a>Коды ошибок динамических событий служб мультимедиа
 
@@ -28,7 +28,7 @@ ms.locfileid: "100393519"
 
 ## <a name="liveeventconnectionrejected"></a>LiveEventConnectionRejected;
 
-При оформлении подписки на события [сетки событий](../../event-grid/index.yml) для события в реальном времени может появиться одна из следующих ошибок события [лививентконнектионрежектед](media-services-event-schemas.md\#liveeventconnectionrejected) .
+При оформлении подписки на события [сетки событий](../../event-grid/index.yml) для события в реальном времени может появиться одна из следующих ошибок события [лививентконнектионрежектед](monitoring/media-services-event-schemas.md\#liveeventconnectionrejected) .
 > [!div class="mx-tdCol2BreakAll"]
 >| Ошибка | Сведения |
 >|--|--|
@@ -68,7 +68,7 @@ ms.locfileid: "100393519"
 
 ## <a name="liveeventencoderdisconnected"></a>LiveEventEncoderDisconnected.
 
-Может появиться одна из следующих ошибок события [лививентенкодердисконнектед](media-services-event-schemas.md\#liveeventencoderdisconnected) .
+Может появиться одна из следующих ошибок события [лививентенкодердисконнектед](monitoring/media-services-event-schemas.md\#liveeventencoderdisconnected) .
 
 > [!div class="mx-tdCol2BreakAll"]
 >| Ошибка | Сведения |
@@ -92,7 +92,7 @@ ms.locfileid: "100393519"
 >|--|--|--|
 >|**ERROR_END_OF_MEDIA** ||Да|
 >| Описание|Это общая ошибка. ||
->|Предлагаемое решение| Нет.||
+>|Предлагаемое решение| Отсутствует.||
 >|**MPI_SYSTEM_MAINTENANCE** ||Да|
 >| Описание|Кодировщик отключился из-за обновления службы или обслуживания системы. ||
 >|Предлагаемое решение|Убедитесь, что кодировщик включает "автоматическое подключение". Это функция кодировщика для восстановления неожиданного отключения сеанса. ||
@@ -113,6 +113,6 @@ ms.locfileid: "100393519"
 
 [Коды ошибок конечной точки потоковой передачи (исходного кода)](streaming-endpoint-error-codes.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Руководство по Потоковая трансляция в реальном времени с помощью Служб мультимедиа](stream-live-tutorial-with-api.md)

@@ -11,12 +11,12 @@ ms.topic: how-to
 ms.author: mimart
 ms.subservice: B2C
 ms.date: 01/29/2021
-ms.openlocfilehash: 712a933276393890bf017a2517196031306233ad
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: bc1dea8121d7986b8394adf6545a0b2c30afb133
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100573008"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104580187"
 ---
 # <a name="monitor-azure-ad-b2c-with-azure-monitor"></a>Мониторинг Azure AD B2C с помощью Azure Monitor
 
@@ -46,7 +46,7 @@ Azure AD B2C использует [мониторинг Azure Active Directory](
 
 ![Проекция группы ресурсов](./media/azure-monitor/resource-group-projection.png)
 
-Во время этого развертывания вы настроите клиент Azure AD B2C и клиент Azure AD, где будет размещена Log Analytics Рабочая область. Учетной записи, используемой для запуска развертывания, должна быть назначена роль [глобального администратора](../active-directory/roles/permissions-reference.md#limit-use-of-global-administrator) в обоих клиентах. Также важно убедиться, что вы вошли в правильный каталог по мере выполнения каждого шага, как описано выше.
+Во время этого развертывания вы настроите клиент Azure AD B2C и клиент Azure AD, где будет размещена Log Analytics Рабочая область. Учетной записи Azure AD B2C должна быть назначена роль [глобального администратора](../active-directory/roles/permissions-reference.md#limit-use-of-global-administrator) в клиенте Azure AD B2C. Учетной записи Azure AD, используемой для запуска развертывания, должна быть назначена роль [владельца](../role-based-access-control/built-in-roles.md#owner) в подписке Azure AD. Также важно убедиться, что вы вошли в правильный каталог по мере выполнения каждого шага, как описано выше.
 
 ## <a name="1-create-or-choose-resource-group"></a>1. Создайте или выберите группу ресурсов.
 
@@ -97,7 +97,7 @@ Azure AD B2C использует [мониторинг Azure Active Directory](
 2. На панели инструментов портала щелкните значок **Каталог + подписка** , а затем выберите каталог, содержащий ваш клиент **Azure AD** .
 3. Используйте кнопку **развертывание в Azure** , чтобы открыть портал Azure и развернуть шаблон непосредственно на портале. Дополнительные сведения см. в разделе [Создание шаблона Azure Resource Manager](../lighthouse/how-to/onboard-customer.md#create-an-azure-resource-manager-template).
 
-   [![Развертывание в Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Lighthouse-samples%2Fmaster%2Ftemplates%2Frg-delegated-resource-management%2FrgDelegatedResourceManagement.json)
+   [![Развертывание в Azure](https://aka.ms/deploytoazurebutton)](   https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure-ad-b2c%2Fsiem%2Fmaster%2Ftemplates%2FrgDelegatedResourceManagement.json)
 
 5. На странице **Настраиваемое развертывание** введите следующие сведения.
 
@@ -168,7 +168,7 @@ Azure AD B2C использует [мониторинг Azure Active Directory](
 1. Установите флажок для каждого назначения, чтобы отправить журналы. Выберите **настроить** , чтобы указать их параметры **, как описано в следующей таблице**.
 1. Выберите **отправить log Analytics**, а затем выберите имя созданной ранее **рабочей области** ( `AzureAdB2C` ).
 1. Выберите **AuditLogs** и **сигнинлогс**.
-1. Нажмите кнопку **Сохранить**.
+1. Щелкните **Сохранить**.
 
 > [!NOTE]
 > После выпуска события для [отображения в log Analytics рабочей области](../azure-monitor/logs/data-ingestion-time.md)может пройти до 15 минут. Кроме того, Узнайте больше о [Active Directoryх задержки отчетов](../active-directory/reports-monitoring/reference-reports-latencies.md), которые могут повлиять на устаревшие данные и играют важную роль в отчетности.
@@ -207,7 +207,7 @@ Azure AD B2C использует [мониторинг Azure Active Directory](
     - **Сохранить как** -выбрать `query` .
     - **Категория** — выберите `Log` .
 
-1. Нажмите кнопку **Сохранить**.
+1. Щелкните **Сохранить**.
 
 Можно также изменить запрос для визуализации данных с помощью оператора [Render](/azure/data-explorer/kusto/query/renderoperator?pivots=azuremonitor) .
 
@@ -244,7 +244,7 @@ AuditLogs
 1. Нажмите кнопку **done Edit (готово к редактированию** ) на панели инструментов, чтобы завершить редактирование книги.
 1. Наконец, сохраните книгу с помощью кнопки **сохранить** на панели инструментов.
 1. Укажите **заголовок**, например *панель мониторинга Azure AD B2C*.
-1. Нажмите кнопку **Сохранить**.
+1. Щелкните **Сохранить**.
 
     ![Сохранение книги](./media/azure-monitor/wrkb-title.png)
 
@@ -318,7 +318,7 @@ workspace("AD-B2C-TENANT1").AuditLogs
 
 Журналы Azure Monitor предназначены для масштабирования и поддержки сбора, индексирования и хранения больших объемов данных в день из любого источника в вашей организации или развертывания в Azure. По умолчанию журналы хранятся в течение 30 дней, но длительность хранения может быть увеличена до двух лет. Узнайте, как [управлять использованием и затратами с помощью журналов Azure Monitor](../azure-monitor/logs/manage-cost-storage.md). После выбора ценовой категории можно [изменить срок хранения данных](../azure-monitor/logs/manage-cost-storage.md#change-the-data-retention-period).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные примеры находятся в коллекции Azure AD B2C [SIEM](https://aka.ms/b2csiem). 
 

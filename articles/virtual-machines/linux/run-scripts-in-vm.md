@@ -8,12 +8,12 @@ author: bobbytreed
 ms.author: robreed
 ms.date: 05/02/2018
 ms.topic: how-to
-ms.openlocfilehash: 9531b5b3d5f178e204d408c677e8908be86e3367
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: 633f4fa6254b2db7a802bb29bffc83b271216d49
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102552870"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104601760"
 ---
 # <a name="run-scripts-in-your-linux-vm"></a>Запуск сценариев в виртуальной машине Linux
 
@@ -57,7 +57,7 @@ ms.locfileid: "102552870"
 
 ## <a name="serial-console"></a>Последовательная консоль
 
-[Последовательная консоль](../troubleshooting/serial-console-linux.md)обеспечивает прямой доступ к виртуальной машине аналогично подключению клавиатуры к виртуальной машине.
+[Последовательная консоль](/troubleshoot/azure/virtual-machines/serial-console-linux)обеспечивает прямой доступ к виртуальной машине аналогично подключению клавиатуры к виртуальной машине.
 
 * Выполнение команд в виртуальных машинах Azure
 * Можно выполнять с помощью текстовой консоли на компьютере, на портале Microsoft Azure.
@@ -71,4 +71,4 @@ ms.locfileid: "102552870"
 * [Расширение пользовательских сценариев](../extensions/custom-script-linux.md)
 * [Запуск команды](run-command.md)
 * [Гибридная рабочая роль Runbook](../../automation/automation-hybrid-runbook-worker.md)
-* [Последовательная консоль](../troubleshooting/serial-console-linux.md)
+* [Последовательная консоль](/troubleshoot/azure/virtual-machines/serial-console-linux)

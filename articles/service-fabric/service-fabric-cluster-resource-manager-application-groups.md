@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 08/18/2017
 ms.author: masnider
 ms.openlocfilehash: 988c7ce52125800c16aa785d5b1458604a927ecd
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "75452152"
 ---
 # <a name="introduction-to-application-groups"></a>Введение в группы приложений
@@ -35,7 +35,7 @@ ms.locfileid: "75452152"
 
 Такое поведение управляется параметром MaximumNodes. Этот параметр можно задать при создании приложения или изменить для уже выполняющегося экземпляра приложения.
 
-PowerShell;
+PowerShell
 
 ``` posh
 New-ServiceFabricApplication -ApplicationName fabric:/AppName -ApplicationTypeName AppType1 -ApplicationTypeVersion 1.0.0.0 -MaximumNodes 3
@@ -121,7 +121,7 @@ await fc.ApplicationManager.CreateApplicationAsync(ad);
 - для приложения определена метрика со следующими значениями:
   - NodeReservationCapacity = 20;
 
-PowerShell;
+PowerShell
 
  ``` posh
  New-ServiceFabricApplication -ApplicationName fabric:/AppName -ApplicationTypeName AppType1 -ApplicationTypeVersion 1.0.0.0 -MinimumNodes 2 -Metrics @("MetricName:Metric1,NodeReservationCapacity:20")

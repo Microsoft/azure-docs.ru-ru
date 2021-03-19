@@ -8,10 +8,10 @@ author: mingshen-ms
 ms.author: mingshen
 ms.date: 07/14/2020
 ms.openlocfilehash: 095d9cf68374ee81cafdb6e7a32df29a57d122cb
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87287927"
 ---
 # <a name="cancel-operation"></a>Отмена операции
@@ -27,10 +27,10 @@ ms.locfileid: "87287927"
 
 --------------
 
-|  **Имя**    |      **Описание**                                  |    **Data type**  |
+|  **имя**;    |      **Описание**                                  |    **Data type**  |
 | ------------ |     ----------------                                  |     -----------   |
-| publisherid  |  Идентификатор издателя, например `contoso`         |   Строковый тип          |
-| offerId      |  Идентификатор предложения                                     |   Строковый тип          |
+| publisherid  |  Идентификатор издателя, например `contoso`         |   Строка          |
+| offerId      |  Идентификатор предложения                                     |   Строка          |
 | api-version  |  Текущая версия клиента API                               |    Дата           |
 |  |  |  |
 
@@ -58,7 +58,7 @@ ms.locfileid: "87287927"
 
 ### <a name="request-body-properties"></a>Свойства текста запроса
 
-|  **Имя**                |  **Описание**                                               |
+|  **имя**;                |  **Описание**                                               |
 |  --------                |  ---------------                                               |
 |  электронные уведомления     | Список адресов электронной почты, разделенных запятыми, для получения уведомлений о ходе публикации. |
 |  |  |

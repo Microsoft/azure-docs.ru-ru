@@ -4,13 +4,13 @@ titleSuffix: Azure Kubernetes Service
 description: Узнайте, как для защитить входящий и исходящий трафик групп pod с помощью политик сети Kubernetes в Службе Azure Kubernetes (AKS).
 services: container-service
 ms.topic: article
-ms.date: 05/06/2019
-ms.openlocfilehash: 4b72c5551d6ed33deb4df40a60215aed8071141d
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.date: 03/16/2021
+ms.openlocfilehash: 17e14859ecdfe11872d5b0526d755d01bc1b034a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102178904"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104577858"
 ---
 # <a name="secure-traffic-between-pods-using-network-policies-in-azure-kubernetes-service-aks"></a>Защита трафика между группами pod с использованием политик сети в Службе Azure Kubernetes (AKS)
 
@@ -181,9 +181,13 @@ az provider register --namespace Microsoft.ContainerService
 
 [!INCLUDE [preview features callout](./includes/preview/preview-callout.md)]
 
-```azurecli
-PASSWORD_WIN="P@ssw0rd1234"
+Создайте имя пользователя для использования в качестве учетных данных администратора для контейнеров Windows Server в кластере. Следующие команды запрашивают имя пользователя и задают его WINDOWS_USERNAME для использования в более поздней команде (Помните, что команды в этой статье введены в оболочку BASH).
 
+```azurecli-interactive
+echo "Please enter the username to use as administrator credentials for Windows Server containers on your cluster: " && read WINDOWS_USERNAME
+```
+
+```azurecli
 az aks create \
     --resource-group $RESOURCE_GROUP_NAME \
     --name $CLUSTER_NAME \
@@ -195,8 +199,7 @@ az aks create \
     --vnet-subnet-id $SUBNET_ID \
     --service-principal $SP_ID \
     --client-secret $SP_PASSWORD \
-    --windows-admin-password $PASSWORD_WIN \
-    --windows-admin-username azureuser \
+    --windows-admin-username $WINDOWS_USERNAME \
     --vm-set-type VirtualMachineScaleSets \
     --kubernetes-version 1.20.2 \
     --network-plugin azure \
@@ -222,7 +225,7 @@ az aks get-credentials --resource-group $RESOURCE_GROUP_NAME --name $CLUSTER_NAM
 
 ## <a name="deny-all-inbound-traffic-to-a-pod"></a>Запрещение всего входящего трафика pod
 
-Прежде чем определить правила, разрешающие определенный сетевой трафик, создайте политику сети, чтобы запретить весь трафик. Эта политика представляет собой отправную точку для создания списка разрешений только для нужного трафика. Кроме того, вы увидите, как трафик блокируется при применении политики сети.
+Прежде чем определить правила, разрешающие определенный сетевой трафик, создайте политику сети, чтобы запретить весь трафик. Эта политика дает отправную точку для начала создания разрешенных только для требуемого трафика. Кроме того, вы увидите, как трафик блокируется при применении политики сети.
 
 Давайте сначала создадим для среды с примером приложения и правилами трафика пространство имен *development* для запуска примеров pod.
 
@@ -234,13 +237,13 @@ kubectl label namespace/development purpose=development
 Теперь создайте пример серверной группы pod, в которой выполняется NGINX. Эту серверную группу pod можно использовать для имитации серверного веб-приложения. Создайте этот pod в пространстве имен *development* и откройте порт *80* для обслуживания веб-трафика. Добавьте к pod метку с помощью *app=webapp,role=backend*. Так мы сможем указать его в политике сети в приведенном ниже разделе.
 
 ```console
-kubectl run backend --image=nginx --labels app=webapp,role=backend --namespace development --expose --port 80
+kubectl run backend --image=mcr.microsoft.com/oss/nginx/nginx:1.15.5-alpine --labels app=webapp,role=backend --namespace development --expose --port 80
 ```
 
 Чтобы проверить, можно ли связаться с веб-страницей NGINX по умолчанию, создайте другую группу pod и подключите сеанс терминала.
 
 ```console
-kubectl run --rm -it --image=alpine network-policy --namespace development
+kubectl run --rm -it --image=mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11 network-policy --namespace development
 ```
 
 В командной строке оболочки введите `wget`, чтобы подтвердить, что вы можете получить доступ к веб-странице NGINX по умолчанию.
@@ -296,7 +299,7 @@ kubectl apply -f backend-policy.yaml
 Давайте узнаем, сможете ли вы использовать веб-страницу NGINX в серверной группе pod. Создайте еще один тестовый pod и подключите сеанс терминала.
 
 ```console
-kubectl run --rm -it --image=alpine network-policy --namespace development
+kubectl run --rm -it --image=mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11 network-policy --namespace development
 ```
 
 В командной строке оболочки введите `wget`, чтобы узнать, можете ли вы получить доступ к веб-странице NGINX по умолчанию. На этот раз установите значение времени ожидания в *2* секунды. Теперь политика сети блокирует весь входящий трафик, поэтому загрузить страницу не удается, как показано в следующем примере.
@@ -353,7 +356,7 @@ kubectl apply -f backend-policy.yaml
 Запланируйте запуск pod с метками *app=webapp,role=frontend* и подключите сеанс терминала.
 
 ```console
-kubectl run --rm -it frontend --image=alpine --labels app=webapp,role=frontend --namespace development
+kubectl run --rm -it frontend --image=mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11 --labels app=webapp,role=frontend --namespace development
 ```
 
 В командной строке оболочки введите `wget`, чтобы узнать, можете ли вы получить доступ к веб-странице NGINX по умолчанию.
@@ -383,7 +386,7 @@ exit
 Политика сети разрешает трафик из групп pod с метками *app:webapp,role:frontend*, но должна блокировать весь остальной трафик. Давайте проверим, сможет ли другая группа pod без этих меток получить доступ к серверной группе pod NGINX. Создайте еще один тестовый pod и подключите сеанс терминала.
 
 ```console
-kubectl run --rm -it --image=alpine network-policy --namespace development
+kubectl run --rm -it --image=mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11 network-policy --namespace development
 ```
 
 В командной строке оболочки введите `wget`, чтобы узнать, можете ли вы получить доступ к веб-странице NGINX по умолчанию. Политика сети блокирует входящий трафик, поэтому загрузить страницу не удается, как показано в следующем примере.
@@ -416,7 +419,7 @@ kubectl label namespace/production purpose=production
 Запланируйте запуск тестового pod в пространстве имен *production*, которое помечено как *app=webapp,role=frontend*. Подключите сеанс терминала.
 
 ```console
-kubectl run --rm -it frontend --image=alpine --labels app=webapp,role=frontend --namespace production
+kubectl run --rm -it frontend --image=mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11 --labels app=webapp,role=frontend --namespace production
 ```
 
 В командной строке оболочки введите `wget`, чтобы подтвердить, что вы можете получить доступ к веб-странице NGINX по умолчанию.
@@ -480,7 +483,7 @@ kubectl apply -f backend-policy.yaml
 Запланируйте запуск еще одной группы pod в пространстве имен *production* и подключите сеанс терминала.
 
 ```console
-kubectl run --rm -it frontend --image=alpine --labels app=webapp,role=frontend --namespace production
+kubectl run --rm -it frontend --image=mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11 --labels app=webapp,role=frontend --namespace production
 ```
 
 В командной строке оболочки введите `wget`, чтобы увидеть, что теперь политика сети запрещает трафик.
@@ -502,7 +505,7 @@ exit
 Вы запретили трафик пространства имен *production*. Теперь запланируйте запуск тестовой группы pod в пространстве имен *development* и подключите сеанс терминала.
 
 ```console
-kubectl run --rm -it frontend --image=alpine --labels app=webapp,role=frontend --namespace development
+kubectl run --rm -it frontend --image=mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11 --labels app=webapp,role=frontend --namespace development
 ```
 
 В командной строке оболочки введите `wget`, чтобы увидеть, что теперь политика сети разрешает трафик.

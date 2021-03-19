@@ -3,14 +3,14 @@ title: Создание виртуальных узлов в Службе Azure 
 description: Сведения о том, как с помощью портала Azure создать кластер Службы Azure Kubernetes (AKS), который использует виртуальные узлы для запуска групп pod.
 services: container-service
 ms.topic: conceptual
-ms.date: 05/06/2019
+ms.date: 03/15/2021
 ms.custom: references_regions, devx-track-azurecli
-ms.openlocfilehash: 06a3e7263b2e03cfc37f7ba3c733e07536b5d473
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: c1ecaa88dd5329d86818565983a6ba891a6d8424
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102501810"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104577837"
 ---
 # <a name="create-and-configure-an-azure-kubernetes-services-aks-cluster-to-use-virtual-nodes-in-the-azure-portal"></a>Создание и настройка кластера Службы Azure Kubernetes (AKS) для использования виртуальных узлов на портале Azure
 
@@ -54,15 +54,15 @@ az provider register --namespace Microsoft.ContainerInstance
 На странице **Основные** настройте следующие параметры:
 
 - *Сведения о проекте*. Выберите подписку Azure, а затем выберите или создайте группу ресурсов Azure, например *myResourceGroup*. Введите **Имя кластера Kubernetes**, например *myAKSCluster*.
-- *Сведения о кластере*. Выберите регион, версию Kubernetes и префикс DNS-имени для кластера AKS.
+- *Сведения о кластере*: Выберите регион и версию Kubernetes для кластера AKS.
 - *Пул первичных узлов*. Выберите размер виртуальной машины для узлов AKS. Размер виртуальной машины **невозможно** изменить после развертывания кластера с AKS.
      - Выберите количество узлов для развертывания в кластере. Для задач в этой статье задайте для параметра **Число узлов** значение *1*. Количество узлов **можно** изменить после развертывания кластера.
 
-Щелкните **Далее: Масштабирование**.
+Щелкните **Далее: пулы узлов**.
 
-На странице **Масштабирование** для параметра **Виртуальные узлы** выберите *Включено*.
+На странице **Пулы узлов** выберите *Включить виртуальные узлы*.
 
-![Создание кластера AKS и включение виртуальных узлов](media/virtual-nodes-portal/enable-virtual-nodes.png)
+:::image type="content" source="media/virtual-nodes-portal/enable-virtual-nodes.png" alt-text="В браузере показано, как создать кластер с включенными виртуальными узлами на портал Azure. Параметр &quot;включить виртуальные узлы&quot; выделен.":::
 
 По умолчанию создается удостоверение кластера. Это удостоверение кластера используется для связи с кластером и интеграции с другими службами Azure. По умолчанию это удостоверение кластера является управляемым удостоверением. Дополнительные сведения см. в статье о том, [как использовать управляемые удостоверения](use-managed-identity.md). Вы также можете использовать субъект-службу в качестве удостоверения кластера.
 
@@ -158,7 +158,7 @@ virtual-node-helloworld-9b55975f-bnmfl   1/1       Running   0          4m      
 Чтобы протестировать выполнение группы pod на виртуальном узле, откройте демонстрационную версию приложения в веб-клиенте. Так как группа pod получает внутренний IP-адрес, вы можете быстро проверить это подключение с другой группой pod в том же кластере AKS. Создайте тестовый системный модуль pod и свяжите с ним сеанс терминала.
 
 ```console
-kubectl run -it --rm virtual-node-test --image=debian
+kubectl run -it --rm virtual-node-test --image=mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11
 ```
 
 Установите `curl` в модуле pod с помощью `apt-get`:

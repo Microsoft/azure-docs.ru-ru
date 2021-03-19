@@ -8,12 +8,12 @@ ms.date: 03/15/2021
 ms.topic: conceptual
 ms.service: storage
 ms.subservice: partner
-ms.openlocfilehash: 29484bee685fcc15073ef255e65a780e05f1200d
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.openlocfilehash: ce321574ce2878f51864f55bf5618df2c96d1068
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103561674"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104589894"
 ---
 # <a name="backup-to-azure-with-commvault"></a>Резервное копирование в Azure с помощью Commvault
 
@@ -39,13 +39,13 @@ ms.locfileid: "103561674"
 | Большой двоичный объект Azure | v 11.6 | v 11.6 | v 11.6 | Н/Д |
 | Файлы Azure | v 11.6 | v 11.6 | v 11.6 | Н/Д |
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Небольшое предварительное планирование поможет вам использовать Azure как автономный целевой объект резервного копирования и сайт восстановления.
 
 ### <a name="get-started-with-azure"></a>Начало работы с Azure
 
-Корпорация Майкрософт предлагает платформу для работы с Azure. [Инфраструктура внедрения в облако](https://docs.microsoft.com/azure/architecture/cloud-adoption/) (КАФ) — это подробный подход к корпоративному преобразованию и исчерпывающему руководству по планированию внедрения в облако. КАФ содержит пошаговое [руководств по установке Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-setup-guide/) , которые помогут вам быстро и безопасно приступить к работе. Интерактивную версию можно найти в [портал Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade). Вы найдете примеры архитектур, конкретные рекомендации по развертыванию приложений и бесплатные учебные материалы, которые помогут вам в обеспечении пути к Azure.
+Корпорация Майкрософт предлагает платформу для работы с Azure. [Инфраструктура внедрения в облако](/azure/architecture/cloud-adoption/) (КАФ) — это подробный подход к корпоративному преобразованию и исчерпывающему руководству по планированию внедрения в облако. КАФ содержит пошаговое [руководств по установке Azure](/azure/cloud-adoption-framework/ready/azure-setup-guide/) , которые помогут вам быстро и безопасно приступить к работе. Интерактивную версию можно найти в [портал Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade). Вы найдете примеры архитектур, конкретные рекомендации по развертыванию приложений и бесплатные учебные материалы, которые помогут вам в обеспечении пути к Azure.
 
 ### <a name="consider-the-network-between-your-location-and-azure"></a>Рассмотрим сеть между расположением и Azure
 
@@ -187,7 +187,7 @@ Azure Data Box предоставляет способ передачи базо
 
 #### <a name="azure-portal"></a>Портал Azure
 
-Azure предоставляет надежное решение для мониторинга в виде [Azure Monitor](../../../../../azure-monitor/essentials/monitor-azure-resource.md). Вы можете [настроить Azure Monitor](../../../../common/monitor-storage.md) для мониторинга емкости хранилища Azure, транзакций, доступности, проверки подлинности и многого другого. Полную ссылку на метрики, собранные здесь, можно найти [здесь](../../../../blobs/monitor-blob-storage-reference.md). Ниже приведены несколько полезных метрик, которые необходимо отBlobCapacity, чтобы убедиться, что вы следите за максимальным [предельным значением емкости учетной записи хранения](../../../../common/scalability-targets-standard-account.md), входящим и исходящим, чтобы отвести данные, записываемые в учетную запись хранения Azure и считанные из нее, а также SuccessE2ELatency — для учета времени обмена запросами в службу хранилища Azure и из нее, а также в медиаажент.
+Azure предоставляет надежное решение для мониторинга в виде [Azure Monitor](../../../../../azure-monitor/essentials/monitor-azure-resource.md). Вы можете [настроить Azure Monitor](../../../../blobs/monitor-blob-storage.md) для мониторинга емкости хранилища Azure, транзакций, доступности, проверки подлинности и многого другого. Полную ссылку на метрики, собранные здесь, можно найти [здесь](../../../../blobs/monitor-blob-storage-reference.md). Ниже приведены несколько полезных метрик, которые необходимо отBlobCapacity, чтобы убедиться, что вы следите за максимальным [предельным значением емкости учетной записи хранения](../../../../common/scalability-targets-standard-account.md), входящим и исходящим, чтобы отвести данные, записываемые в учетную запись хранения Azure и считанные из нее, а также SuccessE2ELatency — для учета времени обмена запросами в службу хранилища Azure и из нее, а также в медиаажент.
 
 Вы также можете [создавать оповещения журнала](../../../../../service-health/alerts-activity-log-service-notifications-portal.md) для трассировки работоспособности службы хранилища Azure и просматривать [панель мониторинга состояния Azure](https://status.azure.com/status) в любое время.
 
