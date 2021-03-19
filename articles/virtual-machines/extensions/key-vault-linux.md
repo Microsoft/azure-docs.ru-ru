@@ -10,16 +10,16 @@ ms.collection: linux
 ms.topic: article
 ms.date: 12/02/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 23a0d7cd45ceef8f97bb56d65f4807f8d60735dc
-ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
+ms.openlocfilehash: 9032bfca30ead56c91d7904e18b76753cf3b6dfc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103601055"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104582176"
 ---
 # <a name="key-vault-virtual-machine-extension-for-linux"></a>Расширение виртуальной машины Key Vault для Linux
 
-Расширение виртуальной машины Key Vault обеспечивает автоматическое обновление секретов, хранящихся в Azure Key Vault. В частности, расширение отслеживает список наблюдаемых сертификатов, хранящихся в хранилищах ключей.  При обнаружении изменений расширение получает и устанавливает соответствующие сертификаты. Расширение установит полную цепочку сертификатов на виртуальной машине. Публикация и поддержка расширения виртуальной машины Key Vault осуществляется корпорацией Майкрософт, теперь и для виртуальных машин Linux. В этом документе подробно описаны поддерживаемые платформы, конфигурации и параметры развертывания для расширения виртуальной машины Key Vault для Linux. 
+Расширение виртуальной машины Key Vault обеспечивает автоматическое обновление секретов, хранящихся в Azure Key Vault. В частности, расширение отслеживает список наблюдаемых сертификатов, хранящихся в хранилищах ключей.  При обнаружении изменений расширение получает и устанавливает соответствующие сертификаты. Публикация и поддержка расширения виртуальной машины Key Vault осуществляется корпорацией Майкрософт, теперь и для виртуальных машин Linux. В этом документе подробно описаны поддерживаемые платформы, конфигурации и параметры развертывания для расширения виртуальной машины Key Vault для Linux. 
 
 ### <a name="operating-system"></a>Операционная система
 
@@ -36,6 +36,7 @@ ms.locfileid: "103601055"
 
 - PKCS #12
 - PEM
+
 
 ## <a name="prerequisities"></a>Предварительные требования
   - Key Vault экземпляр с сертификатом. См. раздел [создание Key Vault](../../key-vault/general/quick-create-portal.md)
@@ -56,6 +57,20 @@ ms.locfileid: "103601055"
                     "msiClientId": "[reference(parameters('userAssignedIdentityResourceId'), variables('msiApiVersion')).clientId]"
                   }
    `
+## <a name="key-vault-vm-extension-version"></a>Версия расширения виртуальной машины Key Vault
+* Пользователи Ubuntu-18,04 и SUSE-15 могут обновить свою версию расширения виртуальной машины хранилища ключей до `V2.0` полной функции загрузки в цепочку сертификатов. Сертификаты издателя (промежуточный и корневой) будут добавлены к конечному сертификату в PEM-файле.
+
+* Если вы предпочитаете обновить до `v2.0` , сначала необходимо удалить `v1.0` , а затем установить `v2.0` .
+```
+  az vm extension delete --name KeyVaultForLinux --resource-group ${resourceGroup} --vm-name ${vmName}
+  az vm extension set -n "KeyVaultForLinux" --publisher Microsoft.Azure.KeyVault --resource-group "${resourceGroup}" --vm-name "${vmName}" –settings .\akvvm.json –version 2.0
+```  
+  Флаг--версия 2,0 является необязательной, так как по умолчанию устанавливается последняя версия.   
+
+* Если виртуальная машина содержит сертификаты, скачанные в версии 1.0, удаление расширения v 1.0 АКВВМ не приведет к удалению скачанных сертификатов.  После установки версии 2.0 существующие сертификаты не будут изменены.  Чтобы получить PEM-файл с полной цепочкой на виртуальной машине, необходимо удалить файлы сертификата или перевернуть сертификат.
+
+
+
 
 ## <a name="extension-schema"></a>Схема расширения
 
@@ -72,7 +87,7 @@ ms.locfileid: "103601055"
       "properties": {
       "publisher": "Microsoft.Azure.KeyVault",
       "type": "KeyVaultForLinux",
-      "typeHandlerVersion": "1.0",
+      "typeHandlerVersion": "2.0",
       "autoUpgradeMinorVersion": true,
       "settings": {
         "secretsManagementSettings": {
@@ -109,7 +124,7 @@ ms.locfileid: "103601055"
 | версия_API | 07.01.2019 | Дата |
 | publisher | Microsoft.Azure.KeyVault | строка |
 | type | KeyVaultForLinux | строка |
-| typeHandlerVersion | 1.0 | INT |
+| typeHandlerVersion | 2.0 | INT |
 | pollingIntervalInS | 3600 | строка |
 | certificateStoreName | Он игнорируется в Linux | строка |
 | linkOnRenewal | false | Логическое |
@@ -142,7 +157,7 @@ ms.locfileid: "103601055"
       "properties": {
       "publisher": "Microsoft.Azure.KeyVault",
       "type": "KeyVaultForLinux",
-      "typeHandlerVersion": "1.0",
+      "typeHandlerVersion": "2.0",
       "autoUpgradeMinorVersion": true,
       "settings": {
           "secretsManagementSettings": {
@@ -189,7 +204,7 @@ Azure PowerShell можно использовать для развертыва
        
     
         # Start the deployment
-        Set-AzVmExtension -TypeHandlerVersion "1.0" -ResourceGroupName <ResourceGroupName> -Location <Location> -VMName <VMName> -Name $extName -Publisher $extPublisher -Type $extType -SettingString $settings
+        Set-AzVmExtension -TypeHandlerVersion "2.0" -ResourceGroupName <ResourceGroupName> -Location <Location> -VMName <VMName> -Name $extName -Publisher $extPublisher -Type $extType -SettingString $settings
     
     ```
 
@@ -209,7 +224,7 @@ Azure PowerShell можно использовать для развертыва
         
         # Add Extension to VMSS
         $vmss = Get-AzVmss -ResourceGroupName <ResourceGroupName> -VMScaleSetName <VmssName>
-        Add-AzVmssExtension -VirtualMachineScaleSet $vmss  -Name $extName -Publisher $extPublisher -Type $extType -TypeHandlerVersion "1.0" -Setting $settings
+        Add-AzVmssExtension -VirtualMachineScaleSet $vmss  -Name $extName -Publisher $extPublisher -Type $extType -TypeHandlerVersion "2.0" -Setting $settings
 
         # Start the deployment
         Update-AzVmss -ResourceGroupName <ResourceGroupName> -VMScaleSetName <VmssName> -VirtualMachineScaleSet $vmss 
@@ -228,6 +243,7 @@ Azure PowerShell можно использовать для развертыва
          --publisher Microsoft.Azure.KeyVault `
          -g "<resourcegroup>" `
          --vm-name "<vmName>" `
+         --version 2.0 `
          --settings '{\"secretsManagementSettings\": { \"pollingIntervalInS\": \"<pollingInterval>\", \"certificateStoreName\": \"<certStoreName>\", \"certificateStoreLocation\": \"<certStoreLoc>\", \"observedCertificates\": [\" <observedCert1> \", \" <observedCert2> \"] }}'
     ```
 
@@ -239,6 +255,7 @@ Azure PowerShell можно использовать для развертыва
         --publisher Microsoft.Azure.KeyVault `
         -g "<resourcegroup>" `
         --vmss-name "<vmssName>" `
+        --version 2.0 `
         --settings '{\"secretsManagementSettings\": { \"pollingIntervalInS\": \"<pollingInterval>\", \"certificateStoreName\": \"<certStoreName>\", \"certificateStoreLocation\": \"<certStoreLoc>\", \"observedCertificates\": [\" <observedCert1> \", \" <observedCert2> \"] }}'
     ```
 Ознакомьтесь со следующими ограничениями и требованиями.

@@ -10,12 +10,13 @@ ms.subservice: speech-service
 ms.topic: conceptual
 ms.date: 01/16/2020
 ms.author: jhakulin
-ms.openlocfilehash: 42960c25c4124203b64646fdc5cbca833b246e21
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+zone_pivot_groups: programming-languages-set-two
+ms.openlocfilehash: a6225fec30a87ca0bbe57e414733bc21489f87ad
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "81683162"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104577450"
 ---
 # <a name="configure-openssl-for-linux"></a>Настройка OpenSSL для Linux
 
@@ -50,6 +51,97 @@ export SSL_CERT_DIR=/opt/ssl/certs
 ```bash
 export SSL_CERT_FILE=/etc/pki/tls/certs/ca-bundle.crt
 ```
+
+## <a name="certificate-revocation-checks"></a>Проверки отзыва сертификатов
+При подключении к службе речи речевой пакет SDK проверит, не отозван ли сертификат TLS, используемый службой речи. Для выполнения этой проверки речевому пакету SDK потребуется доступ к точкам распространения списков отзыва сертификатов для центров сертификации, используемых в Azure. Список возможных расположений загрузки списков отзыва сертификатов можно найти в [этом документе](https://docs.microsoft.com/azure/security/fundamentals/tls-certificate-changes). Если сертификат был отозван или не удается скачать его, пакет SDK для распознавания речи прерывает подключение и вызывает отмененное событие.
+
+В случае, если сеть, в которой используется речевой пакет SDK, настроена таким образом, что не позволяет получить доступ к расположениям скачивания списка отзыва сертификатов, проверка списка отзыва сертификатов может быть отключена или настроена на неудачу, если не удается извлечь список отзыва сертификатов. Эта конфигурация выполняется через объект конфигурации, используемый для создания объекта распознавателя.
+
+Чтобы продолжить подключение, когда не удается получить список отзыва сертификатов, установите свойство OPENSSL_CONTINUE_ON_CRL_DOWNLOAD_FAILURE.
+
+::: zone pivot="programming-language-csharp"
+
+```csharp
+config.SetProperty("OPENSSL_CONTINUE_ON_CRL_DOWNLOAD_FAILURE", "true");
+```
+
+::: zone-end
+
+::: zone pivot="programming-language-cpp"
+
+```C++
+config->SetProperty("OPENSSL_CONTINUE_ON_CRL_DOWNLOAD_FAILURE", "true");
+```
+
+::: zone-end
+
+::: zone pivot="programming-language-java"
+
+```java
+config.setProperty("OPENSSL_CONTINUE_ON_CRL_DOWNLOAD_FAILURE", "true");
+```
+
+::: zone-end
+
+::: zone pivot="programming-language-python"
+
+```Python
+speech_config.set_property_by_name("OPENSSL_CONTINUE_ON_CRL_DOWNLOAD_FAILURE", "true")?
+```
+
+::: zone-end
+
+::: zone pivot="programming-language-more"
+
+```ObjectiveC
+[config setPropertyTo:@"true" byName:"OPENSSL_CONTINUE_ON_CRL_DOWNLOAD_FAILURE"];
+```
+
+::: zone-end
+Если задано значение "true", будет предпринята попытка получить список отзыва сертификатов и, если извлечение будет успешным, сертификат будет проверен на отзыв, если при извлечении произойдет сбой, подключение будет разрешено.
+
+Чтобы полностью отключить проверку отзыва сертификатов, присвойте свойству OPENSSL_DISABLE_CRL_CHECK значение true.
+::: zone pivot="programming-language-csharp"
+
+```csharp
+config.SetProperty("OPENSSL_DISABLE_CRL_CHECK", "true");
+```
+
+::: zone-end
+
+::: zone pivot="programming-language-cpp"
+
+```C++
+config->SetProperty("OPENSSL_DISABLE_CRL_CHECK", "true");
+```
+
+::: zone-end
+
+::: zone pivot="programming-language-java"
+
+```java
+config.setProperty("OPENSSL_DISABLE_CRL_CHECK", "true");
+```
+
+::: zone-end
+
+::: zone pivot="programming-language-python"
+
+```Python
+speech_config.set_property_by_name("OPENSSL_DISABLE_CRL_CHECK", "true")?
+```
+
+::: zone-end
+
+::: zone pivot="programming-language-more"
+
+```ObjectiveC
+[config setPropertyTo:@"true" byName:"OPENSSL_DISABLE_CRL_CHECK"];
+```
+
+::: zone-end
+
+
 > [!NOTE]
 > Также следует отметить, что в некоторых дистрибутивах Linux не определена переменная среды TMP или TMPDIR. Это приведет к тому, что речевой пакет SDK скачивает список отзыва сертификатов (CRL) каждый раз, а не кэширует его на диск для повторного использования до истечения срока действия. Чтобы улучшить начальную производительность подключения, можно [создать переменную среды с именем TMPDIR и задать путь к выбранному временному каталогу.](https://help.ubuntu.com/community/EnvironmentVariables)
 

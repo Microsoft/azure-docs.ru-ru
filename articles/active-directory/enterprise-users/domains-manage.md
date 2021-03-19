@@ -9,17 +9,17 @@ ms.service: active-directory
 ms.subservice: enterprise-users
 ms.workload: identity
 ms.topic: how-to
-ms.date: 12/20/2020
+ms.date: 03/12/2021
 ms.author: curtand
 ms.reviewer: sumitp
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47c991457925664c82baed1a47d89f77a323ff45
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: a201452a9c708d898ee1762385955b63684876c7
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102561540"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104577977"
 ---
 # <a name="managing-custom-domain-names-in-your-azure-active-directory"></a>Управление личными доменными именами в Azure Active Directory
 
@@ -43,7 +43,7 @@ ms.locfileid: "102561540"
 
 ## <a name="add-custom-domain-names-to-your-azure-ad-organization"></a>Добавление личных доменных имен в организацию Azure AD
 
-Можно добавить до 900 имен управляемых доменов. Если вы настраиваете все домены для Федерации с локальными Active Directory, можно добавить до 450 доменных имен в каждой организации.
+Можно добавить до 5000 управляемых доменных имен. Если вы настраиваете все домены для Федерации с локальными Active Directory, можно добавить до 2500 доменных имен в каждой организации.
 
 ## <a name="add-subdomains-of-a-custom-domain"></a>Добавление поддоменов для личного домена
 

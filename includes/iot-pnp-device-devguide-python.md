@@ -4,12 +4,12 @@ ms.author: dobett
 ms.service: iot-pnp
 ms.topic: include
 ms.date: 11/19/2020
-ms.openlocfilehash: 236c8856dc2e693518f2f0055b622c9a1c88695c
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.openlocfilehash: f4eb312aff200389f59a3e342305b8eda98f213e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99616598"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104582825"
 ---
 ## <a name="model-id-announcement"></a>Объявление идентификатора модели
 
@@ -42,7 +42,7 @@ device_client = IoTHubDeviceClient.create_from_symmetric_key(
 
 ## <a name="implement-telemetry-properties-and-commands"></a>Реализация телеметрии, свойств и команд
 
-Как описано в разделе [Общие сведения о компонентах Самонастраивающийся моделей Интернета вещей](../articles/iot-pnp/concepts-components.md), построители устройств должны решить, хотят ли они использовать компоненты для описания своих устройств. При использовании компонентов устройства должны соответствовать правилам, описанным в этом разделе.
+Как описано в разделе [Общие сведения о компонентах Самонастраивающийся моделей Интернета вещей](../articles/iot-pnp/concepts-modeling-guide.md), построители устройств должны решить, хотят ли они использовать компоненты для описания своих устройств. При использовании компонентов устройства должны соответствовать правилам, описанным в этом разделе.
 
 ### <a name="telemetry"></a>Телеметрия
 

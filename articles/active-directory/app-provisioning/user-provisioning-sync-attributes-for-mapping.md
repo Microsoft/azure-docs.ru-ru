@@ -1,6 +1,6 @@
 ---
 title: Синхронизация атрибутов в Azure AD для сопоставления
-description: Узнайте, как синхронизировать атрибуты из локального Active Directory с Azure AD. При настройке подготовки пользователей для приложений SaaS используйте функцию расширения каталога, чтобы добавить исходные атрибуты, которые не синхронизированы по умолчанию.
+description: При настройке подготовки пользователей для приложений SaaS используйте функцию расширения каталога, чтобы добавить исходные атрибуты, которые не синхронизированы по умолчанию.
 services: active-directory
 author: kenwith
 manager: daveba
@@ -8,23 +8,23 @@ ms.service: active-directory
 ms.subservice: app-provisioning
 ms.workload: identity
 ms.topic: troubleshooting
-ms.date: 03/12/2021
+ms.date: 03/17/2021
 ms.author: kenwith
-ms.openlocfilehash: 0f8369c80a7a219b159f31aacb7d10a0dd009d00
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.openlocfilehash: 52f34cdafac76a9bca2b4ff0b00e0b3efaa63f5d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103418680"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579439"
 ---
-# <a name="sync-an-attribute-from-your-on-premises-active-directory-to-azure-ad-for-provisioning-to-an-application"></a>Синхронизация атрибута из локального Active Directory с Azure AD для подготовки приложения
+# <a name="syncing-extension-attributes-attributes"></a>Синхронизация атрибутов атрибутов расширения
 
-При настройке сопоставлений атрибутов для подготовки пользователей может оказаться, что атрибут, который нужно сопоставить, не отображается в списке **исходных атрибутов** . В этой статье показано, как добавить недостающий атрибут, синхронизируя его из локальной Active Directory (AD) с Azure Active Directory (Azure AD).
+При настройке сопоставлений атрибутов для подготовки пользователей может оказаться, что атрибут, который нужно сопоставить, не отображается в списке **исходных атрибутов** . В этой статье показано, как добавить недостающий атрибут, синхронизируя его из локальной Active Directory (AD) с Azure Active Directory (Azure AD) или создав атрибуты расширения в Azure AD для пользователя облака. 
 
-В Azure AD должны содержаться все данные, необходимые для создания профиля пользователя при подготовке учетных записей пользователей из Azure AD в приложение SaaS. В некоторых случаях для обеспечения доступности данных может потребоваться синхронизация атрибутов из локальной службы AD в Azure AD. Azure AD Connect автоматически синхронизирует определенные атрибуты с Azure AD, но не со всеми атрибутами. Кроме того, некоторые атрибуты (например, SAMAccountName), синхронизированные по умолчанию, могут быть недоступны с помощью Microsoft Graph API. В таких случаях можно использовать функцию расширения каталога Azure AD Connect, чтобы синхронизировать атрибут с Azure AD. Таким образом, атрибут будет видим для Microsoft Graph API и службы подготовки Azure AD.
+В Azure AD должны содержаться все данные, необходимые для создания профиля пользователя при подготовке учетных записей пользователей из Azure AD в приложение SaaS. В некоторых случаях для обеспечения доступности данных может потребоваться синхронизация атрибутов из локальной службы AD в Azure AD. Azure AD Connect автоматически синхронизирует определенные атрибуты с Azure AD, но не со всеми атрибутами. Кроме того, некоторые атрибуты (например, SAMAccountName), синхронизированные по умолчанию, могут быть недоступны с помощью API Graph Azure AD. В таких случаях можно использовать функцию расширения каталога Azure AD Connect, чтобы синхронизировать атрибут с Azure AD. Таким образом, атрибут будет отображаться для API Graph Azure AD и службы подготовки Azure AD. Если данные, необходимые для подготовки, находятся в Active Directory но недоступны для подготовки из-за описанных выше причин, можно использовать Azure AD Connect для создания атрибутов расширения. 
 
-Если данные, необходимые для подготовки, находятся в Active Directory но недоступны для подготовки из-за описанных выше причин, можно использовать Azure AD Connect или PowerShell для создания атрибутов расширения. 
- 
+Хотя большинство пользователей скорее всего являются гибридными пользователями, которые синхронизируются с Active Directory, вы также можете создавать расширения только для облачных пользователей без использования Azure AD Connect. С помощью PowerShell или Microsoft Graph можно расширить схему только облачного пользователя. 
+
 ## <a name="create-an-extension-attribute-using-azure-ad-connect"></a>Создание атрибута расширения с помощью Azure AD Connect
 
 1. Откройте мастер Azure AD Connect, выберите задачи, а затем выберите **настроить параметры синхронизации**.
@@ -52,7 +52,47 @@ ms.locfileid: "103418680"
 > [!NOTE]
 > Возможность подготавливать ссылочные атрибуты из локальной службы AD, например **ManagedBy** или **DN/distinguishedName**, сейчас не поддерживается. Эту функцию можно запросить на [голоса пользователя](https://feedback.azure.com/forums/169401-azure-active-directory). 
 
-## <a name="create-an-extension-attribute-using-powershell"></a>Создание атрибута расширения с помощью PowerShell
+## <a name="create-an-extension-attribute-on-a-cloud-only-user"></a>Создание атрибута расширения только для облачного пользователя
+Клиенты могут использовать Microsoft Graph и PowerShell для расширения схемы пользователя. Эти атрибуты расширений автоматически обнаруживаются в большинстве случаев, но у клиентов, у которых более 1000 субъектов-служб, могут обнаружиться расширения, отсутствующие в списке исходных атрибутов. Если атрибут, созданный с помощью описанных ниже шагов, не отображается в списке исходных атрибутов автоматически, проверьте использование Graph, который был успешно создан атрибутом расширения, и добавьте его в схему [вручную](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes#editing-the-list-of-supported-attributes). При выполнении запросов графов ниже щелкните Дополнительные сведения, чтобы проверить разрешения, необходимые для выполнения запросов. Для выполнения запросов можно использовать [Обозреватель Graph](https://docs.microsoft.com/graph/graph-explorer/graph-explorer-overview) . 
+
+### <a name="create-an-extension-attribute-on-a-cloud-only-user-using-microsoft-graph"></a>Создание атрибута расширения только для облачного пользователя с помощью Microsoft Graph
+Для расширения схемы пользователей необходимо использовать приложение. Перечислите приложения в клиенте, чтобы указать идентификатор приложения, которое вы хотите использовать для расширения схемы пользователя. [Подробнее.](https://docs.microsoft.com/graph/api/application-list?view=graph-rest-1.0&tabs=http)
+
+```json
+GET https://graph.microsoft.com/v1.0/applications
+```
+
+Создайте атрибут расширения. Замените приведенное ниже свойство **ID** на **идентификатор** , полученный на предыдущем шаге. Необходимо будет использовать атрибут **ID** , а не AppID. [Подробнее.](https://docs.microsoft.com/graph/api/application-post-extensionproperty?view=graph-rest-1.0&tabs=http)
+```json
+POST https://graph.microsoft.com/v1.0/applications/{id}/extensionProperties
+Content-type: application/json
+
+{
+    "name": "extensionName",
+    "dataType": "string",
+    "targetObjects": [
+        "User"
+    ]
+}
+```
+
+Предыдущий запрос создал атрибут расширения с форматом "extension_appID_extensionName". Обновите пользователя с помощью атрибута расширения. [Подробнее.](https://docs.microsoft.com/graph/api/user-update?view=graph-rest-1.0&tabs=http)
+```json
+PATCH https://graph.microsoft.com/v1.0/users/{id}
+Content-type: application/json
+
+{
+  "extension_inputAppId_extensionName": "extensionValue"
+}
+```
+Проверьте пользователя, чтобы убедиться, что атрибут был успешно обновлен. [Подробнее.](https://docs.microsoft.com/graph/api/user-get?view=graph-rest-1.0&tabs=http#example-3-users-request-using-select)
+
+```json
+GET https://graph.microsoft.com/v1.0/users/{id}?$select=displayName,extension_inputAppId_extensionName
+```
+
+
+### <a name="create-an-extension-attribute-on-a-cloud-only-user-using-powershell"></a>Создание атрибута расширения только для облачного пользователя с помощью PowerShell
 Создайте пользовательское расширение с помощью PowerShell и назначьте ему значение. 
 
 ```

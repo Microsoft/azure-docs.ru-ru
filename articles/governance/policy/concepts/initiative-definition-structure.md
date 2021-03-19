@@ -1,14 +1,14 @@
 ---
 title: Сведения о структуре определения инициативы
 description: Описание использования определений инициативы политики для определения групповых политик для развертывания в ресурсах Azure в Организации.
-ms.date: 10/07/2020
+ms.date: 03/16/2021
 ms.topic: conceptual
-ms.openlocfilehash: 8f9c6146e1dde5b5a7f6595c61638319de60a82d
-ms.sourcegitcommit: fbb620e0c47f49a8cf0a568ba704edefd0e30f81
+ms.openlocfilehash: edd3f25dd528d1a718c9287c9f30988b87fb73e2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91876181"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104587225"
 ---
 # <a name="azure-policy-initiative-definition-structure"></a>Структура определения инициативы политики Azure
 
@@ -19,7 +19,7 @@ ms.locfileid: "91876181"
 - display name
 - description
 - метаданные
-- параметры
+- parameters
 - определения политик
 - группы политик (это свойство является частью [функции соответствия нормативным требованиям (Предварительная версия)](./regulatory-compliance.md))
 
@@ -167,7 +167,7 @@ ms.locfileid: "91876181"
 
 Вы определяете, какие из параметров инициативы были переданы, включая определения политик в массиве [PolicyDefinitions](#policy-definitions) определения инициативы. Хотя имя параметра может быть одинаковым, использование различных имен в инициативах, чем в определениях политик, упрощает удобочитаемость кода.
 
-Например, параметр **init_allowedLocations** инициативы, определенный ранее, можно передать в несколько включаемых определений политик и их параметров, **sql_locations** и **vm_locations**следующим образом:
+Например, параметр **init_allowedLocations** инициативы, определенный ранее, можно передать в несколько включаемых определений политик и их параметров, **sql_locations** и **vm_locations** следующим образом:
 
 ```json
 "policyDefinitions": [
@@ -282,7 +282,7 @@ ms.locfileid: "91876181"
 Эти сведения:
 
 - Отображается в портал Azure в обзоре **элемента управления** в рамках инициативы по соответствию нормативным требованиям.
-- Доступно через REST API. См. сведения о `Microsoft.PolicyInsights` поставщике ресурсов и [группе операций полициметадата](/rest/api/policy-insights/policymetadata/getresource).
+- Доступно через REST API. См. сведения о `Microsoft.PolicyInsights` поставщике ресурсов и [группе операций полициметадата](/rest/api/policy/policymetadata/getresource).
 - Доступно через Azure CLI. См. команду [AZ Policy Metadata](/cli/azure/policy/metadata) .
 
 > [!IMPORTANT]
@@ -318,7 +318,7 @@ ms.locfileid: "91876181"
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - См. [структуру определения](./definition-structure.md)
 - См. другие [примеры шаблонов для службы Политика Azure](../samples/index.md).

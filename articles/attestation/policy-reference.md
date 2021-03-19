@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для аттестации Azure
 description: Выводит список встроенных определений политик Azure для аттестации Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 ms.topic: reference
 ms.service: attestation
 author: msmbaldwin
 ms.author: mbaldwin
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 3c3c0d96f27fdb429b6daaab0dcc9803e432d626
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: 00be2bd99f1722d7096cf60fa26151080376c3ee
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102617948"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104607030"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-attestation"></a>Встроенные определения политики Azure для аттестации Azure
 

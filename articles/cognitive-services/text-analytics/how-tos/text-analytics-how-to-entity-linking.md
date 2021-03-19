@@ -8,14 +8,14 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: text-analytics
 ms.topic: article
-ms.date: 02/17/2021
+ms.date: 03/15/2021
 ms.author: aahi
-ms.openlocfilehash: 3fd3695490331a1f599db71bf5cafb25e957bf08
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0876dd00933203c943417d87978567cf555a3e4f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101710351"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104599006"
 ---
 # <a name="how-to-use-named-entity-recognition-in-text-analytics"></a>Как использовать распознавание именованных сущностей в Анализ текста
 
@@ -35,7 +35,7 @@ API анализа текста позволяет получить нестру
 
 ## <a name="named-entity-recognition-features-and-versions"></a>Функции и версии распознавания сущностей
 
-| Функция                                                         | NER версии 3.0 | NER версии 3.1 – Preview. 3 |
+| Компонент                                                         | NER версии 3.0 | NER версии 3.1 – Preview. 4 |
 |-----------------------------------------------------------------|--------|----------|
 | Методы для одиночных и пакетных запросов                          | X      | X        |
 | Расширенное распознавание сущностей в нескольких категориях           | X      | X        |
@@ -47,8 +47,8 @@ API анализа текста позволяет получить нестру
 
 Распознавание именованных сущностей v3 обеспечивает Расширенное обнаружение для нескольких типов. В настоящее время NER v 3.0 может распознавать сущности в [категории общих сущностей](../named-entity-types.md).
 
-Распознавание имен сущностей версии 3.1 – Preview. 3 включает возможности обнаружения версий 3.0 и: 
-* Возможность обнаружения персональных данных ( `PII` ) с помощью `v3.1-preview.3/entities/recognition/pii` конечной точки. 
+Распознавание имен сущностей версии 3.1 – Preview. 4 включает возможности обнаружения версий 3.0 и: 
+* Возможность обнаружения персональных данных ( `PII` ) с помощью `v3.1-preview.4/entities/recognition/pii` конечной точки. 
 * Необязательный `domain=phi` параметр для обнаружения конфиденциальных сведений о работоспособности ( `PHI` ).
 * [Асинхронная операция](text-analytics-how-to-call-api.md) с использованием `/analyze` конечной точки.
 
@@ -72,36 +72,40 @@ API анализа текста позволяет получить нестру
 
 ### <a name="request-endpoints"></a>Конечные точки запроса
 
-#### <a name="version-31-preview3"></a>[Версия 3.1 (предварительная версия 3)](#tab/version-3-preview)
+#### <a name="version-31-preview"></a>[Версия 3.1 (предварительная версия)](#tab/version-3-preview)
 
-При распознавании именованных сущностей `v3.1-preview.3` используются отдельные конечные точки для NER, PII и запросов на связывание сущностей. Используйте следующий формат URL-адреса в зависимости от вашего запроса.
+При распознавании именованных сущностей `v3.1-preview.4` используются отдельные конечные точки для NER, PII и запросов на связывание сущностей. Используйте следующий формат URL-адреса в зависимости от вашего запроса.
 
 **Связывание сущностей**
-* `https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.3/entities/linking`
+* `https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.4/entities/linking`
 
-[Распознавание именованных сущностей версии 3,1 — Предварительная версия справочника для `Linking`](https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-Preview-3/operations/EntitiesLinking)
+[Распознавание именованных сущностей версии 3,1 — Предварительная версия справочника для `Linking`](https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-Preview-4/operations/EntitiesLinking)
 
 **Распознавание именованных сущностей**
-* Общие сущности — `https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.3/entities/recognition/general`
+* Общие сущности — `https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.4/entities/recognition/general`
 
-[Распознавание именованных сущностей версии 3,1 — Предварительная версия справочника для `General`](https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-Preview-3/operations/EntitiesRecognitionGeneral)
+[Распознавание именованных сущностей версии 3,1 — Предварительная версия справочника для `General`](https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-Preview-4/operations/EntitiesRecognitionGeneral)
 
 **личные сведения (PII).**
-* Личные `PII` сведения () — `https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.3/entities/recognition/pii`
+* Личные `PII` сведения () — `https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.4/entities/recognition/pii`
 
 Кроме того, можно использовать необязательный `domain=phi` параметр для обнаружения `PHI` сведений о работоспособности () в тексте. 
 
-`https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.3/entities/recognition/pii?domain=phi`
+`https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.4/entities/recognition/pii?domain=phi`
 
-Начиная с `v3.1-preview.3` , в ответе JSON содержится `redactedText` свойство, содержащее измененный входной текст, в котором обнаруженные персональные сущности заменяются на `*` для каждого символа в сущностях.
+Начиная с `v3.1-preview.4` , в ответе JSON содержится `redactedText` свойство, содержащее измененный входной текст, в котором обнаруженные персональные сущности заменяются на `*` для каждого символа в сущностях.
 
-[Распознавание именованных сущностей версии 3,1 — Предварительная версия справочника для `PII`](https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-Preview-3/operations/EntitiesRecognitionPii)
+[Распознавание именованных сущностей версии 3,1 — Предварительная версия справочника для `PII`](https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-Preview-4/operations/EntitiesRecognitionPii)
+
+API будет пытаться обнаружить [указанные категории сущностей](../named-entity-types.md?tabs=personal) для данного языка документа. Если необходимо указать, какие сущности будут обнаружены и возвращены, используйте необязательный параметр PII-Categories с соответствующими категориями сущностей. Этот параметр также позволяет обнаруживать сущности, которые не включены по умолчанию для языка документа. Например, номер водительского номера драйвера для французского языка, который может возникнуть в тексте на английском языке.
+
+`https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.4/entities/recognition/pii?piiCategories=[FRDriversLicenseNumber]`
 
 **Асинхронная операция**
 
-Начиная `v3.1-preview.3` с, запросы NER можно отправить асинхронно с помощью `/analyze` конечной точки.
+Начиная `v3.1-preview.4` с, запросы на связывание NER и сущности можно передавать асинхронно с помощью `/analyze` конечной точки.
 
-* Асинхронная операция — `https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.3/analyze`
+* Асинхронная операция — `https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.4/analyze`
 
 Сведения об отправке асинхронных запросов см. в разделе [вызов API анализа текста](text-analytics-how-to-call-api.md) .
 

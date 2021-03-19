@@ -12,12 +12,12 @@ ms.workload: identity
 ms.date: 07/14/2020
 ms.author: jmprieur
 ms.custom: aaddev, devx-track-python
-ms.openlocfilehash: f8fa5532a5664741c9ddb9b78b35d5eed8e2e4e0
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.openlocfilehash: 10ddee404de21c5bc04672fdb6dd32c30f481ba3
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98937853"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104578249"
 ---
 # <a name="web-app-that-signs-in-users-sign-in-and-sign-out"></a>Веб-приложение, которое входит в систему пользователей: вход и выход
 
@@ -95,6 +95,16 @@ else
 </html>
 ```
 
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+В кратком руководстве по Node.js нет кнопки входа. При достижении корня веб-приложения код программной части автоматически предлагает пользователю выполнить вход.
+
+```javascript
+app.get('/', (req, res) => {
+    // authentication logic
+});
+```
+
 # <a name="python"></a>[Python](#tab/python)
 
 В кратком руководстве по Python отсутствует кнопка входа. При достижении корня веб-приложения код программной части автоматически предлагает пользователю выполнить вход. См. раздел [app. Корректировка # L14-L18](https://github.com/Azure-Samples/ms-identity-python-webapp/blob/0.1.0/app.py#L14-L18).
@@ -113,7 +123,7 @@ def index():
 
 # <a name="aspnet-core"></a>[ASP.NET Core](#tab/aspnetcore)
 
-В ASP.NET при нажатии кнопки **входа** в веб-приложении действие будет инициировано `SignIn` на `AccountController` контроллере. В предыдущих версиях шаблонов ASP.NET Core `Account` контроллер был внедрен в веб-приложение. Это не так, потому что контроллер теперь входит в пакет NuGet **Microsoft. Identity. Web. UI** . Дополнительные сведения см. в разделе [AccountController.CS](https://github.com/AzureAD/microsoft-identity-web/blob/master/src/Microsoft.Identity.Web.UI/Areas/MicrosoftIdentity/Controllers/AccountController.cs) .
+В ASP.NET при нажатии кнопки **входа** в веб-приложении действие будет инициировано `SignIn` на `AccountController` контроллере. В предыдущих версиях шаблонов ASP.NET Core `Account` контроллер был внедрен в веб-приложение. Это не так, потому что контроллер теперь входит в пакет NuGet **Microsoft. Identity. Web. UI** . Дополнительные сведения см. в разделе [AccountController. CS](https://github.com/AzureAD/microsoft-identity-web/blob/master/src/Microsoft.Identity.Web.UI/Areas/MicrosoftIdentity/Controllers/AccountController.cs) .
 
 Этот контроллер также обрабатывает Azure AD B2C приложения.
 
@@ -158,6 +168,43 @@ public class AuthPageController {
     }
 
     // More code omitted for simplicity
+```
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+В отличие от других платформ, в этом случае узел MSAL берет на себя разрешение на вход пользователя со страницы входа.
+
+```javascript
+
+// 1st leg of auth code flow: acquire a code
+app.get('/', (req, res) => {
+    const authCodeUrlParameters = {
+        scopes: ["user.read"],
+        redirectUri: REDIRECT_URI,
+    };
+
+    // get url to sign user in and consent to scopes needed for application
+    pca.getAuthCodeUrl(authCodeUrlParameters).then((response) => {
+        res.redirect(response);
+    }).catch((error) => console.log(JSON.stringify(error)));
+});
+
+// 2nd leg of auth code flow: exchange code for token
+app.get('/redirect', (req, res) => {
+    const tokenRequest = {
+        code: req.query.code,
+        scopes: ["user.read"],
+        redirectUri: REDIRECT_URI,
+    };
+
+    pca.acquireTokenByCode(tokenRequest).then((response) => {
+        console.log("\nResponse: \n:", response);
+        res.sendStatus(200);
+    }).catch((error) => {
+        console.log(error);
+        res.status(500).send(error);
+    });
+});
 ```
 
 # <a name="python"></a>[Python](#tab/python)
@@ -229,6 +276,10 @@ def _get_token_from_cache(scope=None):
 Во время регистрации приложения не нужно регистрировать дополнительный URL-адрес для выхода на переднюю канал. Приложение будет вызываться обратно по его основному URL-адресу. 
 
 # <a name="java"></a>[Java](#tab/java)
+
+В регистрации приложения не требуется URL-адрес для выхода из внешнего канала.
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
 
 В регистрации приложения не требуется URL-адрес для выхода из внешнего канала.
 
@@ -305,6 +356,10 @@ else
 ...
 ```
 
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+Этот пример приложения не реализует выход.
+
 # <a name="python"></a>[Python](#tab/python)
 
 В кратком руководстве по Python кнопка выхода находится в файле [Templates/index.html # L10](https://github.com/Azure-Samples/ms-identity-python-webapp/blob/e03be352914bfbd58be0d4170eba1fb7a4951d84/templates/index.html#L10) .
@@ -330,13 +385,13 @@ else
 
 # <a name="aspnet-core"></a>[ASP.NET Core](#tab/aspnetcore)
 
-В предыдущих версиях шаблонов ASP.NET Core `Account` контроллер был внедрен в веб-приложение. Это не так, потому что контроллер теперь входит в пакет NuGet **Microsoft. Identity. Web. UI** . Дополнительные сведения см. в разделе [AccountController.CS](https://github.com/AzureAD/microsoft-identity-web/blob/master/src/Microsoft.Identity.Web.UI/Areas/MicrosoftIdentity/Controllers/AccountController.cs) .
+В предыдущих версиях шаблонов ASP.NET Core `Account` контроллер был внедрен в веб-приложение. Это не так, потому что контроллер теперь входит в пакет NuGet **Microsoft. Identity. Web. UI** . Дополнительные сведения см. в разделе [AccountController. CS](https://github.com/AzureAD/microsoft-identity-web/blob/master/src/Microsoft.Identity.Web.UI/Areas/MicrosoftIdentity/Controllers/AccountController.cs) .
 
 - Задает универсальный код ресурса (URI) перенаправления OpenID Connect, чтобы `/Account/SignedOut` контроллер вызывался обратно, когда Azure AD завершает выход.
 - Вызовы `Signout()` , которые позволяют по промежуточного слоя OpenID Connect Connect обращаться к `logout` конечной точке платформы идентификации Майкрософт. Затем конечная точка:
 
   - Удаляет файл cookie сеанса из браузера.
-  - Вызывает обратный URI перенаправления после выхода. По умолчанию URI перенаправления после выхода отображает страницу представления выхода [SignedOut.cshtml.CS](https://github.com/AzureAD/microsoft-identity-web/blob/master/src/Microsoft.Identity.Web.UI/Areas/MicrosoftIdentity/Pages/Account/SignedOut.cshtml.cs). Эта страница также предоставляется как часть Microsoft. Identity. Web.
+  - Вызывает обратный URI перенаправления после выхода. По умолчанию URI перенаправления после выхода отображает страницу представление выхода с подписью [. cshtml. CS](https://github.com/AzureAD/microsoft-identity-web/blob/master/src/Microsoft.Identity.Web.UI/Areas/MicrosoftIdentity/Pages/Account/SignedOut.cshtml.cs). Эта страница также предоставляется как часть Microsoft. Identity. Web.
 
 # <a name="aspnet"></a>[ASP.NET](#tab/aspnet)
 
@@ -376,6 +431,10 @@ public void SignOut()
                 URLEncoder.encode(redirectUrl, "UTF-8"));
     }
 ```
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+Этот пример приложения не реализует выход.
 
 # <a name="python"></a>[Python](#tab/python)
 
@@ -420,6 +479,10 @@ public class AccountController : Controller
 # <a name="java"></a>[Java](#tab/java)
 
 В кратком руководстве по Java в URI перенаправления после выхода просто отображается страница index.html.
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+Этот пример приложения не реализует выход.
 
 # <a name="python"></a>[Python](#tab/python)
 

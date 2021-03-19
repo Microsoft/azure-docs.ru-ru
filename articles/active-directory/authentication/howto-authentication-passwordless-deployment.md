@@ -11,12 +11,12 @@ author: justinha
 manager: daveba
 ms.reviewer: baselden, librown
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc5916cf4277935f6d7d7f453fd4dd76d7909ef2
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: 8d4ff717a49ba9c9b4d66e54e5eae1248af3fcea
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101651133"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579371"
 ---
 # <a name="plan-a-passwordless-authentication-deployment-in-azure-active-directory"></a>Планирование развертывания проверки подлинности с незащищенным паролем в Azure Active Directory
 
@@ -330,4 +330,4 @@ Azure AD добавляет записи в журналы аудита в сл�
 
 - [Включение безпарольных ключей безопасности для входа в Azure AD](howto-authentication-passwordless-security-key.md)
 - [Включение входа без пароля с помощью приложения Microsoft Authenticator](howto-authentication-passwordless-phone.md)
-- [Дополнительные сведения об использовании методов проверки подлинности & Insights](howto-authentication-methods-usage-insights.md)
+- [Дополнительные сведения об использовании методов проверки подлинности & Insights](./howto-authentication-methods-activity.md)

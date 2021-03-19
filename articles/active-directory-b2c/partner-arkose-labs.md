@@ -11,12 +11,12 @@ ms.topic: how-to
 ms.date: 02/18/2021
 ms.author: gasinh
 ms.subservice: B2C
-ms.openlocfilehash: 46f117b13909c2d9624b88e9f5d9a62c4c646e51
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: c2aceedd57bcc7cd88c4e822c7b696e36b28bd8f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102500298"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579796"
 ---
 # <a name="tutorial-configure-arkose-labs-with-azure-active-directory-b2c"></a>Руководство. Настройка Аркосе Labs с помощью Azure Active Directory B2C
 
@@ -81,13 +81,13 @@ ms.locfileid: "102500298"
 
 5. Выберите **Создать**.
 
-Дополнительные сведения о [настраиваемых атрибутах](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-custom-attributes?pivots=b2c-user-flow).
+Дополнительные сведения о [настраиваемых атрибутах](./user-flow-custom-attributes.md?pivots=b2c-user-flow).
 
 ### <a name="part-2---create-a-user-flow"></a>Часть 2. Создание потока пользователя
 
 Поток пользователя может использоваться для **регистрации** и **входа в** систему или только для **регистрации**. Пользовательский поток Аркосе Labs будет отображаться только во время регистрации.
 
-1. Инструкции по созданию потока пользователя см. в этой [статье](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-create-user-flows) . При использовании существующего потока пользователя он должен иметь рекомендованный тип версии **(Предварительная версия нового поколения)** .
+1. Инструкции по созданию потока пользователя см. в этой [статье](./tutorial-create-user-flows.md) . При использовании существующего потока пользователя он должен иметь рекомендованный тип версии **(Предварительная версия нового поколения)** .
 
 2. В параметрах потока пользователя перейдите к **атрибутам пользователя** и выберите утверждение **аркосесессионтокен** .
 
@@ -109,7 +109,7 @@ ms.locfileid: "102500298"
 
 1. Измените файл [selfAsserted.html](https://github.com/Azure-Samples/active-directory-b2c-node-sign-up-user-flow-arkose/blob/main/Assets/selfAsserted.html) , чтобы он `<ARKOSE_PUBLIC_KEY>` соответствовал значению, созданному для проверки на стороне клиента, и использовался для загрузки скрипта Аркосе Labs для вашей учетной записи.
 
-2. Разместите страницу HTML на веб-конечной точке с поддержкой общего доступа к ресурсам в разных источниках (CORS). [Создайте учетную запись хранилища BLOB-объектов Azure](https://docs.microsoft.com/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal) и [Настройте CORS](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services).
+2. Разместите страницу HTML на веб-конечной точке с поддержкой общего доступа к ресурсам в разных источниках (CORS). [Создайте учетную запись хранилища BLOB-объектов Azure](../storage/common/storage-account-create.md?tabs=azure-portal&toc=%2fazure%2fstorage%2fblobs%2ftoc.json) и [Настройте CORS](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services).
 
   >[!NOTE]
   >Если у вас есть собственный HTML-код, скопируйте и вставьте `<script>` элементы на страницу HTML.
@@ -132,7 +132,7 @@ ms.locfileid: "102500298"
 
    ![изображение, показывающее макеты страниц](media/partner-arkose-labs/page-layouts.png)
 
-4. В потоке пользователя перейдите в раздел **Свойства** и выберите **включить** применение макета страницы (Предварительная версия) JavaScript. Дополнительные сведения см. в этой [статье](https://docs.microsoft.com/azure/active-directory-b2c/javascript-and-page-layout?pivots=b2c-user-flow) .
+4. В потоке пользователя перейдите в раздел **Свойства** и выберите **включить** применение макета страницы (Предварительная версия) JavaScript. Дополнительные сведения см. в этой [статье](./javascript-and-page-layout.md?pivots=b2c-user-flow) .
 
 ### <a name="part-4---create-and-deploy-your-api"></a>Часть 4. Создание и развертывание API
 
@@ -157,7 +157,7 @@ ms.locfileid: "102500298"
 
 Этот пример защищает конечную точку веб-API с помощью [обычной проверки подлинности HTTP](https://tools.ietf.org/html/rfc7617).
 
-Имя пользователя и пароль хранятся в виде переменных среды, а не в составе репозитория. Дополнительные сведения см. [ в разделеlocal.settings.jsв](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash#local-settings-file) файле.
+Имя пользователя и пароль хранятся в виде переменных среды, а не в составе репозитория. Дополнительные сведения см. [ в разделеlocal.settings.jsв](../azure-functions/functions-run-local.md?tabs=macos%2ccsharp%2cbash#local-settings-file) файле.
 
 1. Создание local.settings.jsдля файла в корневой папке
 
@@ -186,15 +186,15 @@ ms.locfileid: "102500298"
 
 #### <a name="deploy-the-application-to-the-web"></a>Развертывание приложения в Интернете
 
-1. Выполните действия, описанные в [этом](https://docs.microsoft.com/azure/javascript/tutorial-vscode-serverless-node-04) руководстве, чтобы развернуть функцию Azure в облаке. Скопируйте URL-адрес конечной точки функции Azure.
+1. Выполните действия, описанные в [этом](/azure/javascript/tutorial-vscode-serverless-node-04) руководстве, чтобы развернуть функцию Azure в облаке. Скопируйте URL-адрес конечной точки функции Azure.
 
-2. После развертывания выберите параметр **передать параметры** . Переменные среды будут загружены в [Параметры приложения](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs-code?tabs=csharp#application-settings-in-azure) службы приложений. Эти параметры приложения также можно настраивать или [управлять с помощью портал Azure.](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
+2. После развертывания выберите параметр **передать параметры** . Переменные среды будут загружены в [Параметры приложения](../azure-functions/functions-develop-vs-code.md?tabs=csharp#application-settings-in-azure) службы приложений. Эти параметры приложения также можно настраивать или [управлять с помощью портал Azure.](../azure-functions/functions-how-to-use-azure-function-app-settings.md)
 
-Дополнительные сведения о разработке Visual Studio Code для функций Azure см. в [этой статье](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs-code?tabs=csharp#republish-project-files) .
+Дополнительные сведения о разработке Visual Studio Code для функций Azure см. в [этой статье](../azure-functions/functions-develop-vs-code.md?tabs=csharp#republish-project-files) .
 
 #### <a name="configure-and-enable-the-api-connector"></a>Настройка и включение соединителя API
 
-[Создайте соединитель API](https://docs.microsoft.com/azure/active-directory-b2c/add-api-connector) и включите его для пользовательского потока. Конфигурация соединителя API должна выглядеть следующим образом:
+[Создайте соединитель API](./add-api-connector.md) и включите его для пользовательского потока. Конфигурация соединителя API должна выглядеть следующим образом:
 
 ![На рисунке показано, как настроить соединитель API](media/partner-arkose-labs/configure-api-connector.png)
 
@@ -232,6 +232,6 @@ ms.locfileid: "102500298"
 
 - [Примеры кодов](https://github.com/Azure-Samples/active-directory-b2c-node-sign-up-user-flow-arkose) для пользовательского потока регистрации Azure AD B2C
 
-- [Пользовательские политики в Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/custom-policy-overview)
+- [Пользовательские политики в Azure AD B2C](./custom-policy-overview.md)
 
-- [Приступая к работе с пользовательскими политиками в Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/custom-policy-get-started?tabs=applications)
+- [Приступая к работе с пользовательскими политиками в Azure AD B2C](./custom-policy-get-started.md?tabs=applications)
