@@ -12,10 +12,10 @@ ms.date: 06/03/2020
 ms.author: curtand
 ms.reviewer: olhaun
 ms.openlocfilehash: e7608196c962a6918a90b91457f856f3e11b04f0
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91530907"
 ---
 # <a name="back-up-and-recover-account-credentials-using-the-microsoft-authenticator-app"></a>Резервное копирование и восстановление учетных данных с использованием приложения Microsoft Authenticator
@@ -87,17 +87,17 @@ ms.locfileid: "91530907"
 
 1. Коснитесь плитки для восстанавливаемой учетной записи, а затем выберите вариант входа для восстановления. Введите пароль, а затем подтвердите свой адрес электронной почты или номер телефона в качестве дополнительной проверки.
 
-    :::image type="content" source="media/user-help-auth-app-backup-recovery/backup-and-recovery-codes.png" alt-text="Снимок экрана, на котором показано приложение Microsoft Authenticator с плитками доступных учетных записей." border="true":::
+    :::image type="content" source="media/user-help-auth-app-backup-recovery/backup-and-recovery-codes.png" alt-text="Снимок экрана, на котором показан Microsoft Authenticator код одноразового пароля." border="true":::
 
 ### <a name="to-provide-more-verification-for-work-or-school-accounts"></a>Предоставление дополнительной проверки для рабочих или учебных учетных записей
 
 1. На экране **учетные записи** Microsoft Authenticator приложения выберите учетную запись, которую нужно восстановить, чтобы открыть полноэкранный режим.
 
-    :::image type="content" source="media/user-help-auth-app-backup-recovery/work-or-school-recovery-arrow.png" alt-text="Снимок экрана, на котором показано приложение Microsoft Authenticator с плитками доступных учетных записей." border="true":::
+    :::image type="content" source="media/user-help-auth-app-backup-recovery/work-or-school-recovery-arrow.png" alt-text="Microsoft Authenticator приложение с отображением доступных плиток учетной записи" border="true":::
 
 1. В полноэкранном режиме коснитесь параметра, чтобы сканировать QR-код для полного восстановления.
 
-    :::image type="content" source="media/user-help-auth-app-backup-recovery/work-or-school-recovery-qr-code.png" alt-text="Снимок экрана, на котором показано приложение Microsoft Authenticator с плитками доступных учетных записей." border="true":::
+    :::image type="content" source="media/user-help-auth-app-backup-recovery/work-or-school-recovery-qr-code.png" alt-text="Средство проверки подлинности представляет одноразовый пароль в качестве кода проверки" border="true":::
 
 >[!NOTE]
 >Дополнительные сведения о QR-кодах и о том, где их получить, см. в статье [Начало работы с приложение Microsoft Authenticator](./user-help-auth-app-download-install.md) или [Настройка использования приложения проверки подлинности в сведениях для защиты](./security-info-setup-auth-app.md) (в зависимости от того, включил ли администратор сведения о безопасности).

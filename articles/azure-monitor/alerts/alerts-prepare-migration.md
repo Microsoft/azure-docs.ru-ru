@@ -6,10 +6,10 @@ ms.author: yalavi
 ms.topic: conceptual
 ms.date: 02/14/2021
 ms.openlocfilehash: ce61c3539a4ea29cbeb48c379ed143363500701e
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102038022"
 ---
 # <a name="prepare-your-logic-apps-and-runbooks-for-migration-of-classic-alert-rules"></a>Prepare your logic apps and runbooks for migration of classic alert rules (Подготовка приложений логики и модулей runbook для миграции классических правил генерации оповещений)
@@ -52,7 +52,7 @@ ms.locfileid: "102038022"
 | Статистическая обработка времени (вычисление метрики в окне оценки)| **context. Condition. timeAggregation** | **context. Condition. timeAggregation** |
 | Период оценки | **context. Condition. windowSize** | **Data. Context. Condition. windowSize** |
 | Оператор (как агрегированное значение метрики сравнивается с пороговым значением) | **context. Condition. оператор** | **Data. Context. Condition. оператор** |
-| Порог | **context. Condition. threshold** | **Data. Context. Condition. allOf [0]. пороговое значение** |
+| Пороговое значение | **context. Condition. threshold** | **Data. Context. Condition. allOf [0]. пороговое значение** |
 | Значение метрики | **context. Condition. Метриквалуе** | **Data. Context. Condition. allOf [0]. Метриквалуе** |
 | Идентификатор подписки | **context. subscriptionId** | **Data. Context. subscriptionId** |
 | Группа ресурсов затронутого ресурса | **context. resourceGroup** | **Data. Context. resourceGroup** |
@@ -69,7 +69,7 @@ ms.locfileid: "102038022"
 
 ## <a name="modify-a-logic-app-to-receive-a-metric-alert-notification"></a>Изменение приложения логики для получения уведомлений о предупреждениях метрик
 
-Если вы используете приложения логики с классическими оповещениями, необходимо изменить код логики приложения, чтобы проанализировать новые полезные данные оповещений метрик. Выполните следующие действия:
+Если вы используете приложения логики с классическими оповещениями, необходимо изменить код логики приложения, чтобы проанализировать новые полезные данные оповещений метрик. Выполните следующие действия.
 
 1. Создайте новое приложение логики.
 

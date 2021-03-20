@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 08/25/2020
 ms.custom: seodec18
 ms.openlocfilehash: e1b50675bef0f883ff617b3098a742d3491b3c13
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89484310"
 ---
 # <a name="migrate-an-active-dns-name-to-azure-app-service"></a>Перенос активного DNS-имени в службу приложений Azure
@@ -106,8 +106,8 @@ ms.locfileid: "89484310"
 | Пример полного доменного имени | Тип записи | Узел | Значение |
 | - | - | - | - |
 | contoso.com (корневой домен) | Объект | `@` | IP-адрес из раздела [Копирование IP-адреса приложения](#info). |
-| www \. contoso.com (подсистема) | CNAME | `www` | _&lt;AppName>. azurewebsites.net_ |
-| \*.contoso.com (с подстановочным знаком) | CNAME | _\*_ | _&lt;AppName>. azurewebsites.net_ |
+| www \. contoso.com (подсистема) | CNAME. | `www` | _&lt;AppName>. azurewebsites.net_ |
+| \*.contoso.com (с подстановочным знаком) | CNAME. | _\*_ | _&lt;AppName>. azurewebsites.net_ |
 
 Сохраните параметры.
 
@@ -119,7 +119,7 @@ ms.locfileid: "89484310"
 
 Вы можете найти единицу развертывания для приложения, просмотрев доменное имя URL-адреса FTP/S `<deployment-unit>.ftp.azurewebsites.windows.net` . Проверьте и убедитесь, что единица развертывания отличается между исходным и целевым приложениями. Единица развертывания приложения определяется [планом службы приложений](overview-hosting-plans.md) , в котором он находится. Он выбирается случайным образом в Azure при создании плана и не может быть изменен. В Azure только два плана находятся в одной и той же единице развертывания при [их создании в той же группе ресурсов *и* одном регионе](app-service-plan-manage.md#create-an-app-service-plan), но нет логики, чтобы убедиться в том, что планы находятся в разных единицах развертывания. Единственным способом создания плана в другой единице развертывания является создание плана в новой группе ресурсов или регионе до тех пор, пока вы не получите другую единицу развертывания.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как привязать пользовательский сертификат TLS/SSL к службе приложений.
 

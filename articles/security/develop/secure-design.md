@@ -14,10 +14,10 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.openlocfilehash: 743412b7602e5781911cdf190e41a5ee15bfddd4
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96487683"
 ---
 # <a name="design-secure-applications-on-azure"></a>Разработка безопасных приложений в Azure
@@ -158,7 +158,7 @@ Azure предлагает другие службы, которые можно 
 | Отказ            | Невозможность отказа       | Включите [мониторинг и диагностику](/azure/architecture/best-practices/monitoring) в Azure.|
 | Раскрытие информации | Конфиденциальность       | Шифрование конфиденциальных [неактивных](../fundamentals/encryption-atrest.md) и [транзитных](../fundamentals/data-encryption-best-practices.md#protect-data-in-transit)данных. |
 | Отказ в обслуживании      | Доступность          | Мониторинг метрик производительности для потенциальных условий отказа в обслуживании. Примените фильтры подключения. [Защита от атак DDoS Azure](../../ddos-protection/ddos-protection-overview.md#next-steps)в сочетании с рекомендациями по проектированию приложений обеспечивает защиту от атак от атак DDoS.|
-| Несанкционированное получение привилегий | Авторизация         | Используйте Azure Active Directory <span class="underline"> </span> [Управление привилегированными пользователями](../../active-directory/privileged-identity-management/pim-configure.md).|
+| Несанкционированное получение привилегий | Авторизация         | Используйте Azure Active Directory <span class="underline"></span> [Управление привилегированными пользователями](../../active-directory/privileged-identity-management/pim-configure.md).|
 
 ### <a name="reduce-your-attack-surface"></a>Сократите контактную зону для атак
 

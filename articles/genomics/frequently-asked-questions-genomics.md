@@ -10,10 +10,10 @@ ms.service: genomics
 ms.topic: troubleshooting
 ms.date: 12/07/2017
 ms.openlocfilehash: e8806bc4f761214e6740a22093b7e18030fdf881
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96018330"
 ---
 # <a name="microsoft-genomics-common-questions"></a>Microsoft Genomics: часто задаваемые вопросы
@@ -40,7 +40,7 @@ ms.locfileid: "96018330"
 ## <a name="what-are-the-most-commonly-used-commands-for-the-msgen-client"></a>Какие команды используются чаще всего для клиента `msgen`?
 Самые часто используемые команды для клиента `msgen` представляют собой аргументы, указанные ниже: 
 
- |**Command**          |  **Описание поля** |
+ |**Команда**          |  **Описание поля** |
  |:--------------------|:-------------         |
  |`list`               |Возвращает список отправленных заданий. Чтобы запросить аргументы, выполните команду `msgen help list`.  |
  |`submit`             |Отправляет запрос рабочего процесса к службе. Чтобы запросить аргументы, выполните команду `msgen help submit`.|
@@ -84,7 +84,7 @@ msgen распознает файлы конфигурации в следующ
   |`-k/--access-key KEY`            | *access_key:KEY*              |      
   |`-pa/--process-args R=B37m1`     | *process_args:R-b37m1*        |  
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Используйте следующие ресурсы, чтобы приступить к работе с Microsoft Genomics:
 - Приступить к работе, запустив первый рабочий процесс с помощью службы Microsoft Genomics. [Запуск рабочего процесса в службе Microsoft Genomics](quickstart-run-genomics-workflow-portal.md)

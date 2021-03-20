@@ -7,10 +7,10 @@ ms.date: 08/28/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 760e0212d2d863e6b869c23c2e523a0e056a28ed
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90033036"
 ---
 # <a name="how-to-resolve-azure-advisor-recommendations"></a>Как разрешить рекомендации помощника по Azure
@@ -77,6 +77,6 @@ ms.locfileid: "90033036"
 
 Вы можете помочь нам улучшить помощник по Azure, отправив идеи для получения рекомендаций. Ваша рекомендация может помочь другим пользователям изойтись из трудной точки. Чтобы отправить предложение, перейдите на [наш форум UserVoice](https://windowsvirtualdesktop.uservoice.com/forums/930847-azure-advisor-recommendations) и заполните форму отправки. При заполнении формы необходимо предоставить нам как можно больше данных.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вам нужны более подробные руководства по устранению распространенных проблем, ознакомьтесь с [обзором устранения неполадок, отзывами и поддержкой виртуальных рабочих столов Windows](troubleshoot-set-up-overview.md).

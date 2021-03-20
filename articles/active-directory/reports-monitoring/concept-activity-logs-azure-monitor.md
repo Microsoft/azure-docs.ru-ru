@@ -18,10 +18,10 @@ ms.author: markvi
 ms.reviewer: dhanyahk
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 73130c906d4d9f0da51db1b666e8562570cce40f
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100571271"
 ---
 # <a name="azure-ad-activity-logs-in-azure-monitor"></a>Журналы действий Azure AD в Azure Monitor
@@ -48,7 +48,7 @@ ms.locfileid: "100571271"
 > В настоящее время журналы действий аудита и входов в систему в клиенте B2C не поддерживаются.
 >
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для использования этой функции необходимо иметь следующее.
 
@@ -64,7 +64,7 @@ ms.locfileid: "100571271"
 * Пространство имен Центров событий Azure для интеграции со сторонними решениями.
 * Рабочая область Azure Log Analytics для отправки данных в журналы Azure Monitor.
 
-## <a name="cost-considerations"></a>Рекомендации по стоимости
+## <a name="cost-considerations"></a>Рекомендации по затратам
 
 Если уже имеется лицензия Azure AD, то понадобится подписка Azure для настройки учетной записи хранения и концентратора событий. Подписка Azure предоставляется бесплатно, но необходимо будет оплатить использование ресурсов Azure, включая учетную запись хранения, которая используется для архивирования, и концентратор событий, который используется для потоковой передачи. Количество данных и, следовательно, понесенные затраты могут значительно отличаться в зависимости от размера клиента. 
 
@@ -203,7 +203,7 @@ ms.locfileid: "100571271"
 ---
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Руководство. Архивация журналов Azure Active Directory в учетной записи хранения Azure (предварительная версия)](quickstart-azure-monitor-route-logs-to-storage-account.md)
 * [Руководство. Потоковая передача журналов Azure Active Directory в концентратор событий Azure (предварительная версия)](./tutorial-azure-monitor-stream-logs-to-event-hub.md)

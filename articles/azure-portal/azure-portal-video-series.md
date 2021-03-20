@@ -5,10 +5,10 @@ keywords: ''
 ms.date: 10/05/2020
 ms.topic: conceptual
 ms.openlocfilehash: d0b356729f2fab418b2322aeb20a44fc74cb199c
-ms.sourcegitcommit: 5b926f173fe52f92fcd882d86707df8315b28667
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99550447"
 ---
 # <a name="azure-portal-how-to-video-series"></a>Серия видеоинструкций по работе с порталом Azure

@@ -4,10 +4,10 @@ description: Описание использования определения 
 ms.date: 08/17/2020
 ms.topic: conceptual
 ms.openlocfilehash: 15b03b5a40cba1290859b02883df70e3df54c5cf
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89645522"
 ---
 # <a name="regulatory-compliance-in-azure-policy"></a>Соответствие нормативным требованиям в политике Azure
@@ -40,11 +40,11 @@ ms.locfileid: "89645522"
 > [!NOTE]
 > Тип оценки, **управляемый Майкрософт** , — это определение [статической](./definition-structure.md#type) политики `type` .
 
-:::image type="content" source="../media/regulatory-compliance/regulatory-compliance-policies.png" alt-text="Снимок экрана с обзором соответствия нормативным требованиям для встроенного определения NIST SP 800-53 R4, отображающего соответствующие и несовместимые элементы управления.":::
+:::image type="content" source="../media/regulatory-compliance/regulatory-compliance-policies.png" alt-text="Снимок экрана со сведениями о соответствии нормативным требованиям для управления пограничной защитой встроенного определения NIST SP 800-53 R4.":::
 
 На той же странице **управления** при переходе на вкладку **соответствие ресурсов** отображаются все ресурсы, включая определения политик этого **элемента управления**. Фильтры доступны для имени или идентификатора, состояния соответствия, типа ресурса и расположения.
 
-:::image type="content" source="../media/regulatory-compliance/regulatory-compliance-resources.png" alt-text="Снимок экрана с обзором соответствия нормативным требованиям для встроенного определения NIST SP 800-53 R4, отображающего соответствующие и несовместимые элементы управления.":::
+:::image type="content" source="../media/regulatory-compliance/regulatory-compliance-resources.png" alt-text="Снимок экрана соответствия ресурсов с контролем границ для встроенного определения NIST SP 800-53 R4.":::
 
 ## <a name="regulatory-compliance-in-sdk"></a>Соответствие нормативным требованиям в пакете SDK
 
@@ -64,7 +64,7 @@ ms.locfileid: "89645522"
 ]
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - См. [структуру определения инициативы](./initiative-definition-structure.md)
 - См. другие [примеры шаблонов для службы Политика Azure](../samples/index.md).

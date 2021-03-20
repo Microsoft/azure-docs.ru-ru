@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 9/06/2020
 ms.author: allensu
 ms.openlocfilehash: 6e433950c04c4494201b090063b17a10e54a4822
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98685777"
 ---
 # <a name="azure-cdn-endpoint-multi-origin"></a>Azure CDN с несколькими источниками для конечной точки
@@ -144,7 +144,7 @@ ms.locfileid: "98685777"
 
 Для всех входящих запросов, если URL-путь содержит **/Images**, запрос будет назначен группе источника в разделе действия **(мйоригинграуп)**. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этой статье вы включили Azure CDNную конечную точку с несколькими источниками.
 
 Дополнительные сведения о Azure CDN и других службах Azure, упомянутых в этой статье, см. в следующих статьях:

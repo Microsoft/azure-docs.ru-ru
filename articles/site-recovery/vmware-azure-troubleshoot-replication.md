@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 08/2/2019
 ms.author: mayg
 ms.openlocfilehash: 8b44a1d6119cc658b9460e0a52fa0629f759964a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91336211"
 ---
 # <a name="troubleshoot-replication-issues-for-vmware-vms-and-physical-servers"></a>Устранение неполадок с репликацией виртуальных машин VMware и физических серверов
@@ -118,7 +118,7 @@ Site Recovery использует [сервер обработки](vmware-phys
     - Проверьте журналы в следующем расположении, чтобы получить сведения об ошибке:
 
         *C:\Program Files (x86) \Microsoft Azure site Рековери\ажент\сважентс \* . log*
-3. Чтобы зарегистрировать главный целевой сервер на сервере конфигурации, перейдите в папку **%PROGRAMDATA%\ASR\Agent**и выполните следующую команду в командной строке:
+3. Чтобы зарегистрировать главный целевой сервер на сервере конфигурации, перейдите в папку **%PROGRAMDATA%\ASR\Agent** и выполните следующую команду в командной строке:
    ```
    cmd
    cdpcli.exe --registermt

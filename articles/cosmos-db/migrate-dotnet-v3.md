@@ -8,10 +8,10 @@ ms.subservice: cosmosdb-sql
 ms.topic: how-to
 ms.date: 09/23/2020
 ms.openlocfilehash: 514a6c6daccfe63865ae0b2b9f5bf29c5cbedc29
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93334027"
 ---
 # <a name="migrate-your-application-to-use-the-azure-cosmos-db-net-sdk-v3"></a>Перенос приложения для использования пакета SDK для Azure Cosmos DB .NET v3
@@ -23,7 +23,7 @@ ms.locfileid: "93334027"
 
 В этой статье рассматриваются некоторые вопросы обновления существующего приложения .NET до более нового Azure Cosmos DB API .NET v3 для Core (SQL). Azure Cosmos DB пакета SDK для .NET v3 соответствует пространству имен Microsoft. Azure. Cosmos. Сведения, приведенные в этом документе, можно использовать при переносе приложения из любого из следующих Azure Cosmos DB пакетов SDK для .NET:
 
-* Azure Cosmos DB .NET Framework SDK v2 для API SQL
+* Azure Cosmos DB платформа .NET Framework SDK v2 для API SQL
 * Azure Cosmos DB пакет SDK для .NET Core v2 для API SQL
 
 Инструкции, приведенные в этой статье, также помогут перенести следующие внешние библиотеки, которые теперь входят в состав API-интерфейса Azure Cosmos DB .NET SDK v3 для Core (SQL):
@@ -46,7 +46,7 @@ ms.locfileid: "93334027"
 * Подключаемые сериализаторы
 * Масштабировать контейнеры без секционирования и автомасштабирования
 
-* * Пакет SDK предназначен для .NET Standard 2,0, который объединяет существующие Azure Cosmos DB .NET Framework и пакеты SDK для .NET Core в один пакет SDK для .NET. Пакет SDK для .NET можно использовать на любой платформе, реализующей .NET Standard 2,0, включая приложения .NET Framework 4.6.1 + и .NET Core 2.0 +.
+* * Пакет SDK предназначен для .NET Standard 2,0, который объединяет существующие Azure Cosmos DB платформа .NET Framework и пакеты SDK для .NET Core в один пакет SDK для .NET. Пакет SDK для .NET можно использовать на любой платформе, реализующей .NET Standard 2,0, включая приложения платформа .NET Framework 4.6.1 + и .NET Core 2.0 +.
 
 Большинство сетей, логика повторных попыток и более низкие уровни пакета SDK остаются в значительной степени без изменений.
 
@@ -640,7 +640,7 @@ private static async Task DeleteItemAsync(DocumentClient client)
 ```
 ---
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Создание консольного приложения](sql-api-get-started.md) для управления Azure Cosmos DB данных API SQL с помощью пакета SDK v3
 * Дополнительные сведения о том, [что можно сделать с помощью пакета SDK v3](sql-api-dotnet-v3sdk-samples.md)

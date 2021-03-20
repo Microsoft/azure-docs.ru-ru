@@ -6,10 +6,10 @@ ms.topic: troubleshooting
 ms.date: 8/24/2018
 ms.author: pkc
 ms.openlocfilehash: 977cd79de629670cef526f072340f8897fa6446e
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92316500"
 ---
 # <a name="azure-service-fabric-support-options"></a>Варианты поддержки Azure Service Fabric
@@ -47,7 +47,7 @@ ms.locfileid: "92316500"
 
 ### <a name="github-repo"></a>Репозиторий GitHub 
 
-Сообщите о проблемах Service Fabric Azure на сайте [Service Fabric GitHub](https://github.com/microsoft/service-fabric/issues). Этот репозиторий предназначен для составления отчетов и отслеживания проблем, а также для создания небольших запросов функций, связанных с Service Fabric Azure. **Не используйте этот носитель для сообщения о проблемах в реальном**рабочем месте.
+Сообщите о проблемах Service Fabric Azure на сайте [Service Fabric GitHub](https://github.com/microsoft/service-fabric/issues). Этот репозиторий предназначен для составления отчетов и отслеживания проблем, а также для создания небольших запросов функций, связанных с Service Fabric Azure. **Не используйте этот носитель для сообщения о проблемах в реальном** рабочем месте.
 
 ### <a name="stackoverflow-and-msdn-forums"></a>Сайт StackOverflow и форум MSDN
 

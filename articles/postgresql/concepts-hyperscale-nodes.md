@@ -8,10 +8,10 @@ ms.subservice: hyperscale-citus
 ms.topic: conceptual
 ms.date: 07/28/2019
 ms.openlocfilehash: b3eda2c8de8319552f32938f20ff98af0e0a49fc
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91314833"
 ---
 # <a name="nodes-and-tables-in-azure-database-for-postgresql--hyperscale-citus"></a>Узлы и таблицы в базе данных Azure для PostgreSQL — масштабирование (Цитус)
@@ -101,6 +101,6 @@ WHERE shardid = 102027;
 └─────────┴───────────┴──────────┘
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Определение типа приложения](concepts-hyperscale-app-type.md) для подготовки к моделированию данных

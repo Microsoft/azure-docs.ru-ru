@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 10/14/2020
 ms.custom: devx-track-csharp, fasttrack-edit, contperf-fy21q2, devx-track-js
 ms.openlocfilehash: 637f09c5ee52928631b965dfa6caea9368b44991
-ms.sourcegitcommit: 5b926f173fe52f92fcd882d86707df8315b28667
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99550765"
 ---
 # <a name="monitor-azure-functions"></a>Мониторинг Функций Azure
@@ -61,7 +61,7 @@ Application Insights собирает данные журнала, произв�
 Начиная с версии 2. x функций, среда выполнения автоматически собирает данные о зависимостях для привязок, использующих определенные клиентские пакеты SDK. Application Insights собирает данные по следующим зависимостям:
 
 + Azure Cosmos DB; 
-+ центры событий Azure;
++ Центры событий Azure
 + Azure Service Bus
 + Службы хранилища Azure (BLOB-объекты, очереди и таблицы)
 

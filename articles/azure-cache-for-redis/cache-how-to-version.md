@@ -7,10 +7,10 @@ ms.service: cache
 ms.topic: conceptual
 ms.date: 09/30/2020
 ms.openlocfilehash: d9f48de7ef5d9525a995af4ebbd12c5f14f40189
-ms.sourcegitcommit: 99955130348f9d2db7d4fb5032fad89dad3185e7
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93349143"
 ---
 # <a name="set-redis-version-for-azure-cache-for-redis-preview"></a>Задание версии Redis для кэша Azure для Redis (Предварительная версия)
@@ -24,7 +24,7 @@ ms.locfileid: "93349143"
 
 1. Войдите на [портал Azure](https://portal.azure.com) и выберите **Создать ресурс**.
   
-1. На странице **Создание** выберите **Базы данных** , а затем **Кэш Azure для Redis**.
+1. На странице **Создание** выберите **Базы данных**, а затем **Кэш Azure для Redis**.
 
     :::image type="content" source="media/cache-create/new-cache-menu.png" alt-text="Выбор элемента &quot;Кэш Azure для Redis&quot;.":::
    
@@ -50,7 +50,7 @@ ms.locfileid: "93349143"
     > В настоящее время версию Redis нельзя изменить после создания кэша.
     >
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о кэше Azure для функций Redis.
 
 > [!div class="nextstepaction"]
