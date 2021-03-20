@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: 9610b32207f8367b9415c0881e49b54e24c49ad7
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98741168"
 ---
 # <a name="common-issues-that-cause-azure-cloud-service-classic-roles-to-recycle"></a>Распространенные проблемы, приводящие к перезапуску ролей облачной службы Azure (классическая модель)
@@ -60,7 +60,7 @@ DefaultEndpointsProtocol=https;AccountName=MyAccountName;AccountKey=MyAccountKey
 ## <a name="exported-certificate-does-not-include-private-key"></a>Экспортированный сертификат не содержит закрытый ключ.
 Чтобы запустить веб-роль с помощью TLS, необходимо убедиться, что экспортированный сертификат управления включает закрытый ключ. При использовании *диспетчера сертификатов Windows* для экспорта сертификата обязательно выберите **Да** в качестве значения параметра **Экспорт закрытого ключа**. Сертификат следует экспортировать в формате PFX, так как в настоящее время поддерживается только он.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Просмотрите дополнительные [статьи об устранении неполадок](../index.yml?product=cloud-services&tag=top-support-issue) в облачных службах.
 
 Дополнительные сценарии перезапуска ролей см. в [серии статей в блоге Кевина Уильямсона](/archive/blogs/kwill/windows-azure-paas-compute-diagnostics-data).

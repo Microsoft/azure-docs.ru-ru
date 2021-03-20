@@ -8,10 +8,10 @@ ms.custom: devx-track-csharp
 ms.date: 03/01/2019
 ms.author: kenchen
 ms.openlocfilehash: b1cb48d1ae858dbcd0df80780b4c3cee3deac75b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90976494"
 ---
 # <a name="resiliency-and-disaster-recovery-in-azure-signalr-service"></a>Устойчивость и аварийное восстановление Службы Azure SignalR
@@ -132,7 +132,7 @@ app.MapAzureSignalR(GetType().FullName, hub,  options => options.Endpoints = new
 Кроме того, из-за характера подключения Службы Azure SignalR (длинное подключение), когда происходит сбой и аварийное переключение, подключение клиентов будет обрываться.
 Такие случаи необходимо обрабатывать на стороне клиента, чтобы предоставить своим конечным клиентам всю необходимую информацию. Например, подключитесь повторно после закрытия подключения.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Из этой статьи вы узнали, как настроить приложение и обеспечить устойчивость Службы Azure SignalR. Дополнительные сведения о подключении "сервер — клиент" и маршрутизации подключений Службы Azure SignalR см. в [этой статье](signalr-concept-internals.md) с описанием внутренних компонентов Службы Azure SignalR.
 

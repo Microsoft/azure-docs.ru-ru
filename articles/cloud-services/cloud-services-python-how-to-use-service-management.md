@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: 02993f2b79e37e5e50c20c4ee07220bcbd36edb8
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98741406"
 ---
 # <a name="use-service-management-from-python"></a>Использование управления службами в Python
@@ -120,7 +120,7 @@ for location in result:
 * Центральная часть США
 * Центрально-северная часть США
 * Центрально-южная часть США
-* западная часть США
+* Западная часть США
 * Восточная часть США
 * Восточная Япония
 * Западная Япония

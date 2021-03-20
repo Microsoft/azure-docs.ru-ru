@@ -6,10 +6,10 @@ ms.topic: article
 ms.date: 06/23/2020
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 40529df5195a29fbf2ff4887311932c2ffbf471d
-ms.sourcegitcommit: 2e9643d74eb9e1357bc7c6b2bca14dbdd9faa436
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96029901"
 ---
 # <a name="net-multi-tier-application-using-azure-service-bus-queues"></a>Многоуровневое приложение .NET, использующее очереди служебной шины Azure
@@ -344,7 +344,7 @@ ms.locfileid: "96029901"
     
     ![Снимок экрана: диалоговое окно "эмулятор вычислений Microsoft Azure (Express)".][20]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительную информацию о Service Bus см. на следующих ресурсах.  
 
 * [Начало работы с очередями служебной шины][sbacomqhowto]

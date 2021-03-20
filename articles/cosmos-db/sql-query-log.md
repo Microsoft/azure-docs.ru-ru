@@ -9,10 +9,10 @@ ms.date: 09/13/2019
 ms.author: girobins
 ms.custom: query-reference
 ms.openlocfilehash: 44a9d5b273e13886b0674b3b2e9f5f7a75e72fcc
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93338583"
 ---
 # <a name="log-azure-cosmos-db"></a>Журнал (Azure Cosmos DB)
@@ -38,11 +38,11 @@ LOG (<numeric_expr> [, <base>])
   
   Возвращает числовое выражение.  
   
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
   
   По умолчанию функция LOG() возвращает натуральный логарифм. Основание логарифма можно изменить с помощью дополнительного параметра основания.  
   
-  Натуральный логарифм — это логарифм по основанию **e** , где **e**  — это иррациональная константа, равная приблизительно 2,718281828.  
+  Натуральный логарифм — это логарифм по основанию **e**, где **e** — это иррациональная константа, равная приблизительно 2,718281828.  
   
   Натуральный логарифм экспоненты числа — это само число. Например, LOG( EXP( n ) ) = n. И экспонента натурального логарифма числа также является самым числом. Например, EXP( LOG( n ) ) = n.
 
@@ -74,7 +74,7 @@ SELECT EXP(LOG(10)) AS expLog
 [{expLog: 10.000000000000002}]  
 ```  
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Математические функции Azure Cosmos DB](sql-query-mathematical-functions.md)
 - [Системные функции Azure Cosmos DB](sql-query-system-functions.md)

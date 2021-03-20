@@ -4,10 +4,10 @@ description: Узнайте, как служба работоспособнос�
 ms.topic: conceptual
 ms.date: 05/10/2019
 ms.openlocfilehash: 8246b0ab93b95c13858e4ff96d0f24b255d05e55
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90967785"
 ---
 # <a name="service-health-overview"></a>Обзор работоспособности службы
@@ -72,6 +72,6 @@ ms.locfileid: "90967785"
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2OaXt]
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Настройте оповещения о проблемах, связанных с работоспособностью. Дополнительные сведения см. в разделе рекомендации [по настройке оповещений о работоспособности служб Azure](https://www.youtube.com/watch?v=k5d5ca8K6tc&list=PLLasX02E8BPBBSqygdRvlTnHfp1POwE8K&index=6&t=0s). 

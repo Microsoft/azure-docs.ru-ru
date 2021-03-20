@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: 1cf8e966b80e005a0cb2cf7ea46f355e38cb0011
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98741542"
 ---
 # <a name="what-is-the-cloud-service-classic-model-and-how-do-i-package-it"></a>Что такое классическая модель облачной службы и как ее упаковать?
@@ -278,7 +278,7 @@ cspack [DirectoryName]\[ServiceDefinition]
 | \[PhysicalPath\] |Физические каталоги содержимого для каждого виртуального пути, заданного в узле «Сайт» определения службы. |
 | \[RoleAssemblyName\] |Имя двоичного файла для роли. |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Я создаю пакет облачной службы и я хочу выполнить следующие действия.
 
 * [Настроить удаленный рабочий стол для экземпляра облачной службы.][remotedesktop]
@@ -286,7 +286,7 @@ cspack [DirectoryName]\[ServiceDefinition]
 
 Я использую Visual Studio и хочу выполнить следующие действия.
 
-* [Создать новую облачную службу.][vs_create]
+* [Создание новой облачной службы][vs_create]
 * [Изменить конфигурацию существующей облачной службы.][vs_reconfigure]
 * [Развернуть проект облачной службы.][vs_deploy]
 * [Настроить удаленный рабочий стол для экземпляра облачной службы.][vs_remote]

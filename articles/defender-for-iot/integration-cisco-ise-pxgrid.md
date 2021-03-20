@@ -9,10 +9,10 @@ ms.date: 12/28/2020
 ms.topic: how-to
 ms.service: azure
 ms.openlocfilehash: 3f1fb099aa18ebec5a7e2063740556cf806302e7
-ms.sourcegitcommit: 6628bce68a5a99f451417a115be4b21d49878bb2
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98558701"
 ---
 # <a name="about-the-cisco-ise-pxgrid-integration"></a>Сведения об интеграции Пксгрид Cisco ISE

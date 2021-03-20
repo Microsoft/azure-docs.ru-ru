@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: c73f9812f344eecf4e51f43405b48693ddfa191b
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98739740"
 ---
 # <a name="certificates-overview-for-azure-cloud-services-classic"></a>Общие сведения о сертификатах для облачных служб Azure (классическая модель)
@@ -86,13 +86,13 @@ Export-PfxCertificate -Cert $cert -FilePath ".\my-cert-file.pfx" -Password $pass
 Export-Certificate -Type CERT -Cert $cert -FilePath .\my-cert-file.cer
 ```
 
-### <a name="internet-information-services-iis"></a>службы IIS
+### <a name="internet-information-services-iis"></a>IIS
 В Интернете вы найдете множество информации о том, как это сделать с помощью IIS. [этой странице](https://www.sslshopper.com/article-how-to-create-a-self-signed-certificate-in-iis-7.html) . 
 
 ### <a name="linux"></a>Linux
 В [этой](../virtual-machines/linux/mac-create-ssh-keys.md?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json) статье рассматривается создание сертификатов с использованием SSH.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Передача сертификата службы на портал Azure](cloud-services-configure-ssl-certificate-portal.md).
 
 Передайте на портал Azure [сертификат API управления](/previous-versions/azure/azure-api-management-certs).

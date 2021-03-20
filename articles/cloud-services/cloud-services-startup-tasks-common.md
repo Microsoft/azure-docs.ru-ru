@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: f55b225e615a3e7a5fbcf56b405054883d3b5413
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98741202"
 ---
 # <a name="common-cloud-service-classic-startup-tasks"></a>Стандартные задачи запуска облачной службы (классические)
@@ -87,7 +87,7 @@ ms.locfileid: "98741202"
 Пакетный файл *Startup.cmd* использует *AppCmd.exe* для добавления раздела сжатия и записи сжатия для JSON в файл *Web.config*. Ожидаемый **errorlevel** 183 получает значение 0 с помощью программы командной строки VERIFY.EXE. Непредвиденные значения errorlevel заносятся в файл StartupErrorLog.txt.
 
 ```cmd
-REM   **_ Add a compression section to the Web.config file. _*_
+REM   *** Add a compression section to the Web.config file. ***
 %windir%\system32\inetsrv\appcmd set config /section:urlCompression /doDynamicCompression:True /commit:apphost >> "%TEMP%\StartupLog.txt" 2>&1
 
 REM   ERRORLEVEL 183 occurs when trying to add a section that already exists. This error is expected if this
@@ -102,7 +102,7 @@ IF %ERRORLEVEL% NEQ 0 (
     GOTO ErrorExit
 )
 
-REM   _*_ Add compression for json. _*_
+REM   *** Add compression for json. ***
 %windir%\system32\inetsrv\appcmd set config  -section:system.webServer/httpCompression /+"dynamicTypes.[mimeType='application/json; charset=utf-8',enabled='True']" /commit:apphost >> "%TEMP%\StartupLog.txt" 2>&1
 IF %ERRORLEVEL% EQU 183 VERIFY > NUL
 IF %ERRORLEVEL% NEQ 0 (
@@ -110,10 +110,10 @@ IF %ERRORLEVEL% NEQ 0 (
     GOTO ErrorExit
 )
 
-REM   _*_ Exit batch file. _*_
+REM   *** Exit batch file. ***
 EXIT /b 0
 
-REM   _*_ Log error and exit _*_
+REM   *** Log error and exit ***
 :ErrorExit
 REM   Report the date, time, and ERRORLEVEL of the error.
 DATE /T >> "%TEMP%\StartupLog.txt" 2>&1
@@ -129,7 +129,7 @@ EXIT %ERRORLEVEL%
 
 Azure создает правила брандмауэра для процессов, запущенных в ваших ролях. Например, при запуске службы или программы Azure автоматически создает необходимые правила брандмауэра, чтобы служба могла взаимодействовать с Интернетом. Тем не менее если создать службу, которую запускает процесс извне роли (например, службу COM+ или запланированную задачу Windows), необходимо будет вручную создать правило брандмауэра, чтобы разрешить доступ к этой службе. Эти правила брандмауэра можно создавать с помощью задачи запуска.
 
-Задача запуска, создающая правило брандмауэра, должна иметь задачу [контекстного][задания] со статусом _ * с повышенными привилегиями * *. Добавьте следующую задачу запуска в файл [ServiceDefinition.csdef] .
+У задачи запуска, которая создает правило брандмауэра, должен быть [executionContext][Task] со значением **elevated**. Добавьте следующую задачу запуска в файл [ServiceDefinition.csdef] .
 
 ```xml
 <ServiceDefinition name="MyService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
@@ -495,7 +495,7 @@ EXIT %ERRORLEVEL%
 ### <a name="use-local-storage-to-store-files-that-must-be-accessed-in-the-role"></a>Используйте локальное хранилище для хранения файлов, которые должны использоваться в роли
 Если вы хотите во время выполнения задачи запуска скопировать или создать файл, который затем будет доступен вашей роли, этот файл необходимо поместить в локальное хранилище. См. [предыдущий раздел](#create-files-in-local-storage-from-a-startup-task).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Ознакомьтесь с [моделью и пакетом облачной службы](cloud-services-model-and-package.md)
 
 Узнайте, как работают [задачи](cloud-services-startup-tasks.md) .

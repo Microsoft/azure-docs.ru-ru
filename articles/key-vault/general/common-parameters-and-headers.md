@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/07/2019
 ms.author: mbaldwin
 ms.openlocfilehash: d1d93bcd84fd9460e658b221089a4b24d46b0429
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "83005813"
 ---
 # <a name="common-parameters-and-headers"></a>Распространенные параметры и заголовки
@@ -49,4 +49,4 @@ ms.locfileid: "83005813"
 
 
 ## <a name="see-also"></a>См. также:
- [Azure Key Vault REST API reference](/rest/api/keyvault/) (Справочник по REST API для Azure Key Vault)
+ [Ссылка на REST API Azure Key Vault](/rest/api/keyvault/)

@@ -9,10 +9,10 @@ ms.date: 07/17/2019
 ms.author: robinsh
 ms.custom: include file
 ms.openlocfilehash: e493d1c4f5851ee510ea83e706afce5fbb6f487e
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "70049044"
 ---
 <!-- This contains intro text for the "Get an IoT hub connection string" section in the iot-hub-lang-lang-schedule-jobs.md files-->

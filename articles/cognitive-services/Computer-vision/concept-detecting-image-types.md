@@ -12,10 +12,10 @@ ms.date: 03/11/2019
 ms.author: pafarley
 ms.custom: seodec18
 ms.openlocfilehash: 6d2ed00f3fc6f5b52a9a13a96f1e1659e30f02d5
-ms.sourcegitcommit: 5b93010b69895f146b5afd637a42f17d780c165b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96532607"
 ---
 # <a name="detecting-image-types-with-computer-vision"></a>Определение типов изображений с помощью API компьютерного зрения
@@ -117,4 +117,4 @@ ms.locfileid: "96532607"
 
 Функция обнаружения типов изображений является частью API [анализа изображений](https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-1-ga/operations/56f91f2e778daf14a499f21b) . Вы можете вызывать этот API с помощью собственного пакета SDK или с помощью вызовов REST. Включите `ImageType` в параметр запроса **висуалфеатурес** . Затем, когда вы получаете полный ответ JSON, просто Проанализируйте строку для содержимого `"imageType"` раздела.
 
-* [Краткое руководство. Компьютерное зрение REST API или клиентских библиотек](./quickstarts-sdk/client-library.md?pivots=programming-language-csharp)
+* [Краткое руководство. REST API или клиентские библиотеки Компьютерного зрения](./quickstarts-sdk/client-library.md?pivots=programming-language-csharp)

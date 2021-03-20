@@ -6,10 +6,10 @@ ms.author: jobreen
 author: jjbfour
 ms.date: 06/20/2019
 ms.openlocfilehash: 46b38686b39836f3d4bfb80686d514f932a79bf3
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "75650465"
 ---
 # <a name="custom-resource-proxy-reference"></a>Справочник по прокси-службе настраиваемого ресурса
@@ -68,7 +68,7 @@ ms.locfileid: "75650465"
 Свойство | Образец | Описание
 ---|---|---
 name | {myCustomResourceName} | Название настраиваемого ресурса.
-type | Microsoft.CustomProviders/resourceProviders/{имя типа ресурса} | Пространство имен типа ресурса.
+тип | Microsoft.CustomProviders/resourceProviders/{имя типа ресурса} | Пространство имен типа ресурса.
 идентификатор | /subscriptions/{ИД подписки}/resourceGroups/{имя группы ресурсов}/<br>providers/Microsoft.CustomProviders/resourceProviders/{имя поставщика ресурсов}/<br>Микустомресаурцес/{Микустомресаурценаме} " | Идентификатор ресурса.
 
 ### <a name="create-a-custom-resource"></a>Создание настраиваемого ресурса

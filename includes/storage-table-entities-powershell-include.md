@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 03/27/2019
 ms.author: tamram
 ms.openlocfilehash: 9a60c624b181a1efd2f6deebd349daa82214a8a4
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "67184962"
 ---
 <!--created by Robin Shahan to go in the articles for table storage w/powershell.
@@ -18,7 +18,7 @@ ms.locfileid: "67184962"
 
 Теперь, когда имеется таблица, рассмотрим управление сущностями или строками в таблице. 
 
-Сущности могут иметь до 255 свойств, включая три свойства системы: **PartitionKey**, **RowKey**и **timestamp**. Вы несете ответственность за вставку и обновление значений **PartitionKey** и **RowKey**. Сервер управляет значением **метки времени**, которое нельзя изменить. Вместе **PartitionKey** и **RowKey** однозначно идентифицируют каждую сущность в пределах таблицы.
+Сущности могут иметь до 255 свойств, включая три свойства системы: **PartitionKey**, **RowKey** и **timestamp**. Вы несете ответственность за вставку и обновление значений **PartitionKey** и **RowKey**. Сервер управляет значением **метки времени**, которое нельзя изменить. Вместе **PartitionKey** и **RowKey** однозначно идентифицируют каждую сущность в пределах таблицы.
 
 * **PartitionKey**— определяет раздел, в котором хранится сущность.
 * **RowKey**— уникально определяет сущность в разделе.
@@ -60,7 +60,7 @@ Add-AzTableRow `
 Запросы к сущностям в таблице можно выполнять с помощью команды **Get-азтаблеров** .
 
 > [!NOTE]
-> Командлеты **Get-азуресторажетаблеровалл**, **Get-азуресторажетаблеровбипартитионкэй**, **Get-азуресторажетаблеровбиколумннаме**и **Get-AzureStorageTableRowByCustomFilter** являются устаревшими и будут удалены в будущих обновлениях версий.
+> Командлеты **Get-азуресторажетаблеровалл**, **Get-азуресторажетаблеровбипартитионкэй**, **Get-азуресторажетаблеровбиколумннаме** и **Get-AzureStorageTableRowByCustomFilter** являются устаревшими и будут удалены в будущих обновлениях версий.
 
 #### <a name="retrieve-all-entities"></a>Получение всех сущностей
 
@@ -72,7 +72,7 @@ Get-AzTableRow -table $cloudTable | ft
 
 | userid | username | partition | rowkey |
 |----|---------|---------------|----|
-| 1 | Chris | partition1 | CA |
+| 1 | Chris | partition1 | Целостности и доступности |
 | 3 | Christine | partition1 | WA |
 | 2 | Jessie | partition2 | NM |
 | 4 | Steven | partition2 | TX |
@@ -87,7 +87,7 @@ Get-AzTableRow -table $cloudTable -partitionKey $partitionKey1 | ft
 
 | userid | username | partition | rowkey |
 |----|---------|---------------|----|
-| 1 | Chris | partition1 | CA |
+| 1 | Chris | partition1 | Целостности и доступности |
 | 3 | Christine | partition1 | WA |
 
 #### <a name="retrieve-entities-for-a-specific-value-in-a-specific-column"></a>Получение сущностей для конкретного значения в определенном столбце
@@ -101,12 +101,12 @@ Get-AzTableRow -table $cloudTable `
 
 Этот запрос получает одну запись.
 
-|поле|значение|
+|поле|value|
 |----|----|
 | userid | 1 |
 | username | Chris |
 | PartitionKey | partition1 |
-| RowKey      | CA |
+| RowKey      | Целостности и доступности |
 
 #### <a name="retrieve-entities-using-a-custom-filter"></a>Получение сущностей с использованием пользовательского фильтра 
 
@@ -118,12 +118,12 @@ Get-AzTableRow `
 
 Этот запрос получает одну запись.
 
-|поле|значение|
+|поле|value|
 |----|----|
 | userid | 1 |
 | username | Chris |
 | PartitionKey | partition1 |
-| RowKey      | CA |
+| RowKey      | Целостности и доступности |
 
 ### <a name="updating-entities"></a>Обновление сущностей 
 
@@ -153,7 +153,7 @@ Get-AzTableRow -table $cloudTable `
 
 В результатах показана запись Jessie2.
 
-|поле|значение|
+|поле|value|
 |----|----|
 | userid | 2 |
 | username | Jessie2 |

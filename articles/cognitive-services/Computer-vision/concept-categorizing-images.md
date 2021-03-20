@@ -12,10 +12,10 @@ ms.date: 04/17/2019
 ms.author: pafarley
 ms.custom: seodec18
 ms.openlocfilehash: 9721ffa807c9adbeb50839113bc64fd23d8eb13f
-ms.sourcegitcommit: 5b93010b69895f146b5afd637a42f17d780c165b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96533729"
 ---
 # <a name="categorize-images-by-subject-matter"></a>Категоризация изображений по темам
@@ -53,7 +53,7 @@ ms.locfileid: "96533729"
 
 В приведенной ниже таблице показаны типичный набор изображений и категория, возвращаемая компьютерным зрением для каждого из них.
 
-| Образ — | Категория |
+| Образ — | Category |
 |-------|----------|
 | ![Четыре человека позируют как семья](./Images/family_photo.png) | people_group |
 | ![Щенок, сидящий на лужайке](./Images/cute_dog.png) | animal_dog |
@@ -64,7 +64,7 @@ ms.locfileid: "96533729"
 
 Функция классификации является частью API [анализа изображений](https://westcentralus.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-1-ga/operations/56f91f2e778daf14a499f21b) . Вы можете вызывать этот API с помощью собственного пакета SDK или с помощью вызовов REST. Включите `Categories` в параметр запроса **висуалфеатурес** . Затем, когда вы получаете полный ответ JSON, просто Проанализируйте строку для содержимого `"categories"` раздела.
 
-* [Краткое руководство. Компьютерное зрение REST API или клиентских библиотек](./quickstarts-sdk/client-library.md?pivots=programming-language-csharp)
+* [Краткое руководство. REST API или клиентские библиотеки Компьютерного зрения](./quickstarts-sdk/client-library.md?pivots=programming-language-csharp)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

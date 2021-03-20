@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 06/03/2019
 ms.author: evanhi
 ms.openlocfilehash: 4a3604a3256fb2d3f4253891bbc28c7685748cd2
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "75651024"
 ---
 # <a name="configure-and-approve-just-in-time-access-for-azure-managed-applications"></a>Настройка и утверждение JIT-доступа для управляемых приложений Azure
@@ -37,7 +37,7 @@ ms.locfileid: "75651024"
 
 1. Войдите на [портал Azure](https://portal.azure.com).
 
-1. Найдите запись Marketplace для управляемого приложения с включенным JIT. Нажмите кнопку **создания**.
+1. Найдите запись Marketplace для управляемого приложения с включенным JIT. Нажмите кнопку **Создать**.
 
 1. При предоставлении значений для нового управляемого приложения этап **настройки JIT** позволяет включить или отключить JIT-доступ для управляемого приложения. Выберите **Да** , чтобы **включить JIT-доступ**. Этот параметр выбран по умолчанию для управляемых приложений, которые определены с поддержкой JIT в Marketplace.
 
@@ -95,7 +95,7 @@ ms.locfileid: "75651024"
 
 Чтобы утвердить запросы с помощью Azure AD Privileged Identity Management:
 
-1. Выберите **все службы** и начните поиск **Azure AD privileged Identity Management**. Выберите его из доступных параметров.
+1. Выберите **все службы** и начните поиск **Azure AD privileged Identity Management**. Выберите подходящий вариант из предложенных.
 
    ![Поиск службы](./media/approve-just-in-time-access/search.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "75651024"
 
    ![Выбор утверждения запросов](./media/approve-just-in-time-access/select-approve-requests.png)
 
-1. Выберите **управляемые приложения Azure**и выберите запрос для утверждения.
+1. Выберите **управляемые приложения Azure** и выберите запрос для утверждения.
 
    ![Запросы SELECT](./media/approve-just-in-time-access/view-requests.png)
 
