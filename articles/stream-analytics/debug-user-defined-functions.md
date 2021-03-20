@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 06/24/2020
 ms.custom: devx-track-js
 ms.openlocfilehash: 7f5a24e4d351d7c133251900a80c70094b84cc4e
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98019437"
 ---
 # <a name="debug-user-defined-functions-in-azure-stream-analytics"></a>Отладка определяемых пользователем функций в Azure Stream Analytics 
@@ -48,7 +48,7 @@ JavaScript — это еще один вариант для создания ф�
 
 В следующем примере показано, как выполнить отладку определяемых пользователем функций JavaScript с некоторыми ограничениями в интегрированной среде выполнения в [Visual Studio Code](quick-create-visual-studio-code.md).
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем начать, убедитесь, что проект Azure Stream Analytics содержит следующие элементы:
 

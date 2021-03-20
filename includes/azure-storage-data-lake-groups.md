@@ -7,10 +7,10 @@ ms.date: 09/29/2020
 ms.author: normesta
 ms.custom: include file
 ms.openlocfilehash: 9750eabf2aa5af4f431f2db17e113b07d3bce863
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96017695"
 ---
 Всегда используйте [группы безопасности Azure AD](../articles/active-directory/fundamentals/active-directory-manage-groups.md) в качестве назначенного участника в записи ACL. Не назначайте напрямую отдельных пользователей или субъекты-службы. Использование этой структуры позволяет добавлять и удалять пользователей или субъекты-службы без необходимости повторно применять списки ACL ко всей структуре каталогов. Вместо этого можно просто добавить или удалить пользователей и субъектов-служб из соответствующей группы безопасности Azure AD. 

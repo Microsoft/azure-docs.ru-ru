@@ -12,10 +12,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 26112b1e799cbde3145e7137c686b4b336db4bab
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98919941"
 ---
 # <a name="disable-pta-when-using-azure-ad-connect"></a>Отключить PTA при использовании Azure AD Connect
@@ -27,7 +27,7 @@ ms.locfileid: "98919941"
 
 Отключение PTA можно выполнить с помощью следующих командлетов. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Ниже перечислены необходимые компоненты.
 - Любой компьютер Windows, на котором установлен агент PTA. 
 - Агент должен иметь версию 1.5.1742.0 или более позднюю. 
@@ -39,7 +39,7 @@ ms.locfileid: "98919941"
 > [!IMPORTANT]
 > Если вы используете облако Azure для государственных организаций, вам потребуется передать параметр ENVIRONMENTNAME со следующим значением. 
 >
->| Имя среды | Cloud |
+>| Имя среды | Облако |
 >| - | - |
 >| AzureUSGovernment; | US Gov|
 

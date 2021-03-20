@@ -6,17 +6,17 @@ ms.service: data-lake-analytics
 ms.topic: how-to
 ms.date: 07/17/2018
 ms.openlocfilehash: b080b433f5af49e970faba02003fb68e21a08365
-ms.sourcegitcommit: 8d8deb9a406165de5050522681b782fb2917762d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92221457"
 ---
 # <a name="schedule-u-sql-jobs-using-sql-server-integration-services-ssis"></a>Планирование заданий U-SQL с использованием служб Integration Services (SSIS)
 
 Этот документ содержит сведения о координации и создании задания U-SQL с помощью службы Integration Service (SSIS). 
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [Пакет дополнительных компонентов Azure для служб Integration Services](/sql/integration-services/azure-feature-pack-for-integration-services-ssis#scenario-managing-data-in-the-cloud) предоставляет [задачу Azure Data Lake Analytics](/sql/integration-services/control-flow/azure-data-lake-analytics-task) и [диспетчер подключений Azure Data Lake Analytics](/sql/integration-services/connection-manager/azure-data-lake-analytics-connection-manager), что позволяет подключиться к службе Azure Data Lake Analytics. Чтобы использовать эту задачу, убедитесь, что установлено следующее ПО.
 
@@ -126,7 +126,7 @@ ms.locfileid: "92221457"
 
 1. Щелкните правой кнопкой мыши **Диспетчер подключений** в проекте служб SSIS и выберите **Создать диспетчер подключений**.
 
-2. Выберите тип **Файл** и нажмите кнопку **Добавить... **.
+2. Выберите тип **Файл** и нажмите кнопку **Добавить...**.
 
 3. Задайте параметру **Тип использования** значение **Существующий файл**, а параметру **Файл** — путь к файлу на локальном компьютере.
 

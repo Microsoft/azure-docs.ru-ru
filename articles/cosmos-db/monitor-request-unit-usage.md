@@ -7,10 +7,10 @@ author: kanshiG
 ms.author: govindk
 ms.date: 04/09/2020
 ms.openlocfilehash: d6f0f30d7437b6f8ecc1d915eb3d3195f2504fec
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93098252"
 ---
 # <a name="how-to-monitor-throughput-or-request-unit-usage-of-an-operation-in-azure-cosmos-db"></a>Мониторинг пропускной способности или использования единиц запросов для операции в Azure Cosmos DB
@@ -37,29 +37,29 @@ Azure Monitor для Azure Cosmos DB предоставляет представ
 
 1. Войдите на [портал Azure](https://portal.azure.com/).
 
-1. Выберите **монитор** на панели навигации слева и щелкните **метрики** .
+1. Выберите **монитор** на панели навигации слева и щелкните **метрики**.
 
    :::image type="content" source="./media/monitor-request-unit-usage/monitor-metrics-blade.png" alt-text="Область метрик в Azure Monitor":::
 
-1. В области **Метрики** щелкните **Выбрать ресурс** и выберите требуемые **подписку** и **группу ресурсов** . В поле **Тип ресурса** выберите **Учетные записи Azure Cosmos DB** , выберите одну из существующих учетных записей Azure Cosmos и нажмите кнопку **Применить** .
+1. В области **Метрики** щелкните **Выбрать ресурс** и выберите требуемые **подписку** и **группу ресурсов**. В поле **Тип ресурса** выберите **Учетные записи Azure Cosmos DB**, выберите одну из существующих учетных записей Azure Cosmos и нажмите кнопку **Применить**.
 
-   :::image type="content" source="./media/monitor-request-unit-usage/select-cosmos-db-account.png" alt-text="Область метрик в Azure Monitor":::
+   :::image type="content" source="./media/monitor-request-unit-usage/select-cosmos-db-account.png" alt-text="Выберите учетную запись Azure Cosmos DB для просмотра метрик":::
 
 1. Далее выберите метрику **Общее количество единиц запроса** из списка доступных метрик. Подробные сведения о всех доступных метриках в списке см. в статье с [перечнем метрик по категориям](monitor-cosmos-db-reference.md). В этом примере выберем **Общие единицы запроса** и **AVG** в качестве значения статистической обработки. Помимо этих сведений, можно также выбрать **диапазон времени** и **степень детализации времени** для метрик. Вы можете просмотреть метрики максимум за последние 30 дней.  После применения фильтра отображается диаграмма на его основе. На ней можно увидеть среднее количество единиц запросов, употреблявшихся в минуту за выбранный период.  
 
-   :::image type="content" source="./media/monitor-request-unit-usage/request-unit-usage-metric.png" alt-text="Область метрик в Azure Monitor":::
+   :::image type="content" source="./media/monitor-request-unit-usage/request-unit-usage-metric.png" alt-text="Выбор метрики на портале Azure":::
 
 ## <a name="filters-for-request-unit-usage"></a>Фильтры для использования единиц запросов
 
-Можно также фильтровать метрики и получать диаграммы, отображаемые конкретными **CollectionName** , **DatabaseName** , **OperationType** , **Region** , **Status** и **StatusCode** . Параметры **Добавить фильтр** и **Применить разбиение** позволяют фильтровать данные об использовании единиц запросов и группировать метрики.
+Можно также фильтровать метрики и получать диаграммы, отображаемые конкретными **CollectionName**, **DatabaseName**, **OperationType**, **Region**, **Status** и **StatusCode**. Параметры **Добавить фильтр** и **Применить разбиение** позволяют фильтровать данные об использовании единиц запросов и группировать метрики.
 
 Чтобы получить сведения об использовании единиц запросов для каждой операции либо по общему (SUM), либо по среднему значению, выберите **Применить разделение** и выберите **тип операции** и значение фильтра, как показано на следующем рисунке:
 
-   :::image type="content" source="./media/monitor-request-unit-usage/request-unit-usage-operations.png" alt-text="Область метрик в Azure Monitor":::
+   :::image type="content" source="./media/monitor-request-unit-usage/request-unit-usage-operations.png" alt-text="Единицы запроса Cosmos DB для операций в Azure Monitor":::
 
 Если вы хотите просмотреть сведения об использовании единиц запросов по коллекциям, выберите **Применить разделение** и выберите имя коллекции в качестве фильтра. Вы увидите разговор, как показано ниже, с выбором коллекций на панели мониторинга. Затем можно выбрать определенное имя коллекции, чтобы просмотреть дополнительные сведения:
 
-   :::image type="content" source="./media/monitor-request-unit-usage/request-unit-usage-collection.png" alt-text="Область метрик в Azure Monitor":::
+   :::image type="content" source="./media/monitor-request-unit-usage/request-unit-usage-collection.png" alt-text="Cosmos DB единиц запросов для всех операций коллекции в Azure Monitor":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

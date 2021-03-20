@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 12/24/2020
 ms.author: memildin
 ms.openlocfilehash: fc3774a01665b88ccae2e25ae8382497f8010c35
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102096978"
 ---
 # <a name="continuously-export-security-center-data"></a>Непрерывный экспорт данных Центра безопасности
@@ -65,7 +65,7 @@ ms.locfileid: "102096978"
 
 Вы можете настроить непрерывный экспорт из страниц центра безопасности в портал Azure, через центр безопасности REST API или в масштабе, используя указанные шаблоны политик Azure. Перейдите на соответствующую вкладку ниже, чтобы получить подробные сведения о каждой из них.
 
-### <a name="use-the-azure-portal"></a>[**Использование портала Azure**](#tab/azure-portal)
+### <a name="use-the-azure-portal"></a>[**Использование портал Azure**](#tab/azure-portal)
 
 ### <a name="configure-continuous-export-from-the-security-center-pages-in-azure-portal"></a>Настройка непрерывного экспорта из страниц центра безопасности в портал Azure
 

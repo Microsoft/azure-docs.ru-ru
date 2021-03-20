@@ -9,10 +9,10 @@ ms.date: 10/16/2020
 ms.author: mjbrown
 ms.custom: devx-track-azurecli, devx-track-csharp
 ms.openlocfilehash: f7e9de1f23ec46af08fe96b5db3170fac9a7eb2e
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93101635"
 ---
 # <a name="create-a-container-in-azure-cosmos-db-gremlin-api"></a>Создание контейнера в Azure Cosmos DB API Gremlin
@@ -31,14 +31,14 @@ ms.locfileid: "93101635"
 
 1. [Создайте новую учетную запись Azure Cosmos](create-graph-dotnet.md#create-a-database-account)или выберите существующую.
 
-1. Откройте панель **Обозреватель данных** и выберите **создать граф** . После этого предоставьте следующие сведения.
+1. Откройте панель **Обозреватель данных** и выберите **создать граф**. После этого предоставьте следующие сведения.
 
    * Укажите, создаете ли вы новую базу данных или используете существующую.
    * Укажите идентификатор графа.
-   * Выберите емкость **Без ограничений** .
+   * Выберите емкость **Без ограничений**.
    * Введите ключ секции для вершин.
    * Укажите подготавливаемую пропускную способность (например, 1000 ЕЗ/с).
-   * Щелкните **ОК** .
+   * Щелкните **ОК**.
 
     :::image type="content" source="./media/how-to-create-container/partitioned-collection-create-gremlin.png" alt-text="Снимок экрана API Gremlin, диалоговое окно добавления графа":::
 

@@ -9,10 +9,10 @@ ms.author: samkemp
 ms.topic: conceptual
 ms.date: 07/17/2020
 ms.openlocfilehash: 3795d531c5c4c543587ab817c05cd1cfeea6be06
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100518544"
 ---
 # <a name="track-experiments-and-deploy-models-in-azure-machine-learning"></a>Отслеживание экспериментов и развертывание моделей в Машинное обучение Azure
@@ -23,7 +23,7 @@ ms.locfileid: "100518544"
 
 ![Прослеживание экспериментов](./media/how-to-track-experiments/mlflow-diagram-track.png)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Необходимо [подготавливать Рабочая область машинного обучения Azure](../how-to-manage-workspace.md#create-a-workspace)
 
@@ -164,7 +164,7 @@ with mlflow.start_run():
 
 Затем нажмите кнопку __развернуть__ в области сведения о модели:
 
-![Развертывание](./media/how-to-track-experiments/mlflow-experiments-4.png)
+![Развернуть](./media/how-to-track-experiments/mlflow-experiments-4.png)
 
 Мы выполним развертывание модели в кластере вывода (служба Azure Kubernetes), созданном на шаге 1. Заполните приведенные ниже сведения, указав имя службы и имя кластера вычислений AKS (созданного на шаге 1). Также рекомендуется увеличить __емкость резерва ЦП__ до 1 (от 0,1) и __емкость резерва памяти__ равна 1 (из 0,5). Вы можете увеличить это увеличение, щелкнув __Дополнительно__ и заполнив подробные сведения. Затем нажмите кнопку __развернуть__.
 
@@ -201,6 +201,6 @@ print(output)
 
 Удалите вычисление, созданное на шаге 1, чтобы не вычислять непрерывные затраты на вычисления. В меню слева в Машинное обучение Azure Studio щелкните вычисления кластеры вывода > > выберите вычисления > удалить.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о [развертывании моделей в AzureML](../how-to-deploy-and-where.md)

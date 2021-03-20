@@ -1,5 +1,5 @@
 ---
-title: Использование сводки устройств в службе StorSimple Device Manager
+title: Использование сводки устройств в службе StorSimple диспетчер устройств
 description: Описание сводки по устройству службы диспетчера устройств StorSimple и ее использования для просмотра метрик хранилища и подключенных инициаторов, а также поиска серийного номера и IQN.
 services: storsimple
 documentationcenter: NA
@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 07/03/2017
 ms.author: alkohli
 ms.openlocfilehash: 34bbf4d723e46663efe77560245db74d9dea1fc4
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96017157"
 ---
 # <a name="use-the-device-summary-in-storsimple-device-manager-service"></a>Использование сводки по устройству в службе диспетчера устройств StorSimple
@@ -38,13 +38,13 @@ ms.locfileid: "96017157"
 
 ![Панель команд управления](./media/storsimple-8000-device-dashboard/device-summary2.png)
 
-## <a name="essentials"></a>Основные компоненты
+## <a name="essentials"></a>Essentials
 
 В области "Основные компоненты" расположены некоторые важные свойства, такие как состояние, модель, целевой IQN и версия программного обеспечения. 
 
 ![Основные компоненты устройства](./media/storsimple-8000-device-dashboard/device-summary3.png)
 
-## <a name="monitoring"></a>Наблюдение
+## <a name="monitoring"></a>Мониторинг
 
 * Элемент **Оповещения** содержит все активные оповещения для устройства, сгруппированные по уровню серьезности.
 
@@ -93,6 +93,6 @@ ms.locfileid: "96017157"
     ![Щелкните диаграмму использования](./media/storsimple-8000-device-dashboard/device-summary13.png)
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте больше об [использовании колонки сводки службы StorSimple](storsimple-8000-service-dashboard.md)
 * Узнайте больше об [использовании службы диспетчера устройств StorSimple для администрирования устройства StorSimple](storsimple-8000-manager-service-administration.md).

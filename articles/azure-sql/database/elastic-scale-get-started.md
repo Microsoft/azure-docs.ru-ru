@@ -12,10 +12,10 @@ ms.author: anjangsh
 ms.reviewer: sstein
 ms.date: 01/25/2019
 ms.openlocfilehash: 74343b2f05bb4a59e475449c87524ff66cdd605d
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98919550"
 ---
 # <a name="get-started-with-elastic-database-tools"></a>Начало работы с инструментами эластичных баз данных
@@ -25,7 +25,7 @@ ms.locfileid: "98919550"
 
 ## <a name="elastic-database-tools-for-java"></a>Инструменты эластичных баз данных для Java
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 * Java Developer Kit (JDK) версии 1.8 или более поздней
 * [Maven](https://maven.apache.org/download.cgi)
@@ -72,7 +72,7 @@ ms.locfileid: "98919550"
 
 ## <a name="elastic-database-tools-for-net"></a>Инструменты эластичных баз данных для .NET
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 * Visual Studio 2012 или более поздней версии с C#. Загрузите бесплатную версию на странице [Загрузок Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx).
 * NuGet 2.7 или более поздней версии. Сведения о получении последней версии см. в разделе [Установка NuGet](https://docs.nuget.org/docs/start-here/installing-nuget).
@@ -91,7 +91,7 @@ ms.locfileid: "98919550"
 
 4. В проекте *решение elasticscalestarterkit* откройте файл *App.config* . Затем следуйте инструкциям в файле, чтобы добавить имя сервера и сведения о входе (имя пользователя и пароль).
 
-5. Выполните сборку и запустите приложение. После соответствующего запроса разрешите Visual Studio восстановить пакеты NuGet решения. В результате из NuGet скачивается последняя версия клиентской библиотеки эластичной базы данных.
+5. Выполните сборку и запуск приложения. После соответствующего запроса разрешите Visual Studio восстановить пакеты NuGet решения. В результате из NuGet скачивается последняя версия клиентской библиотеки эластичной базы данных.
 
 6. Попробуйте устанавливать различные значения параметров, чтобы более подробно исследовать возможности клиентской библиотеки. Обратите внимание на то, какие действия выполняет приложение, отслеживая выводимые им в консоль сообщения, и ознакомьтесь с отвечающим за эти действия программным кодом.
 

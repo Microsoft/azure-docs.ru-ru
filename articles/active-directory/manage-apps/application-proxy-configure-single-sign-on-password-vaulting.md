@@ -15,10 +15,10 @@ ms.reviewer: japere
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c0cb2830c019635e9020a4b586bdc370450fddb0
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99254008"
 ---
 # <a name="password-vaulting-for-single-sign-on-with-application-proxy"></a>Хранение паролей для единого входа с помощью прокси приложения
@@ -45,10 +45,10 @@ ms.locfileid: "99254008"
 
    ![Выбор входа по паролю и ввод URL-адрес](./media/application-proxy-configure-single-sign-on-password-vaulting/password-sso.png)
 
-1. Нажмите **Сохранить**.
+1. Щелкните **Сохранить**.
 1. Выберите **Прокси приложения**. 
 1. Измените **Тип предварительной проверки подлинности** на **Azure Active Directory** и нажмите кнопку **сохранить**. 
-1. Выберите **Пользователи и группы**.
+1. Выберите пункт **Пользователи и группы**.
 1. Назначьте пользователям приложение, выбрав **Добавить пользователя**. 
 1. Если вы хотите предварительно определить учетные данные для пользователя, установите флажок перед именем пользователя и выберите **обновить учетные данные**.
 1. Выберите **Azure Active Directory**  >  **Регистрация приложений**  >  **все приложения**.

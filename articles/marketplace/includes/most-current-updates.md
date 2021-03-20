@@ -8,10 +8,10 @@ author: emuench
 ms.author: mingshen
 ms.date: 10/09/2020
 ms.openlocfilehash: c6f20d7767021b0f1ed32bf88b3342e200c4b61d
-ms.sourcegitcommit: b6f3ccaadf2f7eba4254a402e954adf430a90003
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92284810"
 ---
 Базовые образы виртуальных машин с операционной системой должны содержать все последние обновления до даты публикации образа. Перед публикацией убедитесь, что вы обновили операционную систему и все установленные службы со всеми последними исправлениями безопасности и обслуживания.

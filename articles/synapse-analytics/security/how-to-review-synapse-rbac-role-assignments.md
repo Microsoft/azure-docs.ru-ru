@@ -9,10 +9,10 @@ ms.date: 12/1/2020
 ms.author: ronytho
 ms.reviewer: jrasnick
 ms.openlocfilehash: 9065ca9c7638f3d2bda36e4831b81963936f4b45
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100102161"
 ---
 # <a name="how-to-review-synapse-rbac-role-assignments"></a>Как проверить назначения ролей RBAC синапсе
@@ -56,7 +56,7 @@ ms.locfileid: "100102161"
 
 При создании рабочей области вы и субъект-служба MSI рабочей области автоматически получают роль администратора синапсе в области рабочей области.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте [, как управлять назначениями РОЛЕЙ RBAC синапсе](./how-to-manage-synapse-rbac-role-assignments.md).
 

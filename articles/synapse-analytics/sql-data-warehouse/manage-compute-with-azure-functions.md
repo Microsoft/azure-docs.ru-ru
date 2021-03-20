@@ -12,10 +12,10 @@ ms.author: jrasnick
 ms.reviewer: igorstan
 ms.custom: seo-lt-2019, azure-synapse
 ms.openlocfilehash: f0731f0deaf46ec419cfe43037804e10f2b73fd4
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96448387"
 ---
 # <a name="use-azure-functions-to-manage-compute-resources-for-your-dedicated-sql-pool-formerly-sql-dw-in-azure-synapse-analytics"></a>Использование функций Azure для управления ресурсами вычислений для выделенного пула SQL (ранее — хранилища данных SQL) в Azure синапсе Analytics
@@ -139,7 +139,7 @@ ms.locfileid: "96448387"
 
 Ежедневное увеличение масштаба в 8:00 до DW600c и уменьшение масштаба в 20:00 до DW200c.
 
-| Функция  | Расписание     | Операция                                |
+| Компонент  | Расписание     | Операция                                |
 | :-------- | :----------- | :--------------------------------------- |
 | Функция 1 | 0 0 8 * * *  | `var operation = {"operationType": "ScaleDw",    "ServiceLevelObjective": "DW600c"}` |
 | Функция 2 | 0 0 20 * * * | `var operation = {"operationType": "ScaleDw", "ServiceLevelObjective": "DW200c"}` |
@@ -148,7 +148,7 @@ ms.locfileid: "96448387"
 
 Ежедневное увеличение масштаба в 8:00 до DW1000c, уменьшение масштаба до DW600 в 16:00 и масштабирование в 10pm до DW200c.
 
-| Функция  | Расписание     | Операция                                |
+| Компонент  | Расписание     | Операция                                |
 | :-------- | :----------- | :--------------------------------------- |
 | Функция 1 | 0 0 8 * * *  | `var operation = {"operationType": "ScaleDw",    "ServiceLevelObjective": "DW1000c"}` |
 | Функция 2 | 0 0 16 * * * | `var operation = {"operationType": "ScaleDw", "ServiceLevelObjective": "DW600c"}` |
@@ -158,7 +158,7 @@ ms.locfileid: "96448387"
 
 Увеличьте масштаб в 8:00 до DW1000c, прокрутите один раз на DW600c в 16:00 по рабочим дням. Приостановка работы в пятницу в 23:00 и возобновление работы в понедельник в 7:00.
 
-| Функция  | Расписание       | Операция                                |
+| Компонент  | Расписание       | Операция                                |
 | :-------- | :------------- | :--------------------------------------- |
 | Функция 1 | 0 0 8 * * 1-5  | `var operation = {"operationType": "ScaleDw",    "ServiceLevelObjective": "DW1000c"}` |
 | Функция 2 | 0 0 16 * * 1-5 | `var operation = {"operationType": "ScaleDw", "ServiceLevelObjective": "DW600c"}` |

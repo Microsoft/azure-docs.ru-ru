@@ -10,10 +10,10 @@ services: azure-maps
 manager: cpendle
 zone_pivot_groups: azure-maps-android
 ms.openlocfilehash: ff071d03e00a0380d1ab6642828b0940931d3302
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102097454"
 ---
 # <a name="add-a-line-layer-to-the-map-android-sdk"></a>Добавление слоя линии на карту (пакет SDK для Android)
@@ -23,7 +23,7 @@ ms.locfileid: "102097454"
 > [!TIP]
 > Слои линий по умолчанию отображают координаты многоугольников, а также линий в источнике данных. Чтобы ограничить слой таким образом, чтобы он отображал только функции LineString Geometry, установите `filter` параметр слоя в значение `eq(geometryType(), "LineString")` . Если вы хотите включить функции MultiLineString, установите `filter` параметр слоя в значение `any(eq(geometryType(), "LineString"), eq(geometryType(), "MultiLineString"))` .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Не забудьте выполнить действия, описанные в разделе [Краткое руководство. Создание документа приложения Android](quick-android-map.md) . Блоки кода в этой статье можно вставить в `onReady` обработчик событий Maps.
 

@@ -4,10 +4,10 @@ description: Узнайте, как перенести сервер с подд�
 ms.date: 02/10/2021
 ms.topic: conceptual
 ms.openlocfilehash: 251a347205d93af715add52db293d8000438df44
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101650181"
 ---
 # <a name="how-to-migrate-azure-arc-enabled-servers-across-regions"></a>Как перенести серверы с поддержкой ARC в Azure в разных регионах

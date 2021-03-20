@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 11/11/2020
 ms.author: cherylmc
 ms.openlocfilehash: c7b186aa1a6f63b1bc3e9dbefa5001faac967762
-ms.sourcegitcommit: dc342bef86e822358efe2d363958f6075bcfc22a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94556170"
 ---
 # <a name="create-and-install-vpn-client-configuration-files-for-native-azure-certificate-authentication-p2s-configurations"></a>Создание и установка файлов конфигурации VPN-клиента для настройки подключений типа "точка — сеть" с использованием собственной аутентификации Azure на основе сертификата
@@ -40,7 +40,7 @@ ms.locfileid: "94556170"
 ### <a name="generate-files-using-the-azure-portal"></a><a name="zipportal"></a>Создание файлов с помощью портала Azure
 
 1. На портале Azure перейдите в шлюз виртуальной сети, к которой необходимо подключиться.
-1. На странице шлюз виртуальной сети выберите Конфигурация " **точка — сеть** ".
+1. На странице шлюз виртуальной сети выберите Конфигурация " **точка — сеть**".
 
    :::image type="content" source="./media/point-to-site-vpn-client-configuration-azure-cert/download-client.png" alt-text="Скачивание VPN-клиента":::
 1. В верхней части страницы Конфигурация "точка — сеть" выберите **скачать VPN-клиент**. Пакет конфигурации клиента создается несколько минут.
@@ -66,8 +66,8 @@ ms.locfileid: "94556170"
 
  Необходимо вручную настроить VPN-клиент IKEv2 на каждом компьютере Mac, который будет подключаться к Azure. Azure не предоставляет файл mobileconfig для собственной аутентификации Azure на основе сертификата. В папке **Generic** содержатся все необходимые для конфигурации сведения. Если папки Generic нет в скачанных файлах, вполне вероятно, что IKEv2 не был выбран в качестве типа туннеля. Обратите внимание, что базовый SKU VPN-шлюза не поддерживает IKEv2. Выбрав IKEv2, создайте ZIP-файл еще раз для получения папки Generic.<br>Эта папка содержит следующие файлы:
 
-* **VpnSettings.xml** , который содержит важные параметры, такие как адрес сервера и тип туннеля. 
-* **VpnServerRoot. cer** , содержащий корневой сертификат, необходимый для проверки VPN-шлюза Azure во время установки подключения P2S.
+* **VpnSettings.xml**, который содержит важные параметры, такие как адрес сервера и тип туннеля. 
+* **VpnServerRoot. cer**, содержащий корневой сертификат, необходимый для проверки VPN-шлюза Azure во время установки подключения P2S.
 
 Чтобы настроить на устройстве Mac собственный VPN-клиент для аутентификации на основе сертификата, сделайте следующее: Выполните следующие действия на каждом компьютере Mac, который будет подключаться к Azure:
 
@@ -88,7 +88,7 @@ ms.locfileid: "94556170"
 1. В папке **Generic** из файла **VpnSettings.xml** скопируйте значение тега **VpnServer**. Вставьте это значение в поля профиля **Server Address** (Адрес сервера) и **Remote ID** (Удаленный ИД).
 
    :::image type="content" source="./media/point-to-site-vpn-client-configuration-azure-cert/server.png" alt-text="На снимке экрана показаны сведения о сервере.":::
-1. Выберите **Параметры проверки подлинности** и выберите **сертификат**. Для **Catalina** выберите **нет** , а затем — **сертификат**.
+1. Выберите **Параметры проверки подлинности** и выберите **сертификат**. Для **Catalina** выберите **нет**, а затем — **сертификат**.
 
    :::image type="content" source="./media/point-to-site-vpn-client-configuration-azure-cert/authentication-settings.png" alt-text="На снимке экрана показаны параметры проверки подлинности.":::
 
@@ -114,7 +114,7 @@ ms.locfileid: "94556170"
 
 [!INCLUDE [install strongSwan](../../includes/vpn-gateway-strongswan-install-include.md)]
 
-### <a name="generate-certificates"></a><a name="genlinuxcerts"></a>Создайте сертификаты.
+### <a name="generate-certificates"></a><a name="genlinuxcerts"></a>Создание сертификатов
 
 Если вы еще не создали сертификаты, выполните следующие действия.
 
@@ -124,12 +124,12 @@ ms.locfileid: "94556170"
 
 Следующие инструкции были созданы в Ubuntu 18.0.4. Ubuntu 16.0.10 не поддерживает графический пользовательский интерфейс strongSwan. Использовать Ubuntu 16.0.10 можно только с помощью [командной строки](#linuxinstallcli). В зависимости от версии Linux и strongSwan указанные ниже примеры могут отличаться от экранов, которые вы видите.
 
-1. Откройте приложение **Terminal** , чтобы установить **strongSwan** и его Network Manager, выполнив команду из примера.
+1. Откройте приложение **Terminal**, чтобы установить **strongSwan** и его Network Manager, выполнив команду из примера.
 
    ```
    sudo apt install network-manager-strongswan
    ```
-1. Выберите **Параметры** , а затем выберите **сеть**. Нажмите **+** кнопку, чтобы создать новое соединение.
+1. Выберите **Параметры**, а затем выберите **сеть**. Нажмите **+** кнопку, чтобы создать новое соединение.
 
    :::image type="content" source="./media/point-to-site-vpn-client-configuration-azure-cert/edit-connections.png" alt-text="На снимке экрана показана страница &quot;Сетевые подключения&quot;.":::
 

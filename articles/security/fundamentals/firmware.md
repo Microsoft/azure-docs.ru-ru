@@ -9,13 +9,13 @@ ms.author: terrylan
 manager: rkarlin
 ms.date: 11/10/2020
 ms.openlocfilehash: 8233cc714d977083f4d55716d35c0b7094a069ea
-ms.sourcegitcommit: dc342bef86e822358efe2d363958f6075bcfc22a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94557961"
 ---
-# <a name="firmware-security"></a>Безопасность встроенного по
+# <a name="firmware-security"></a>Безопасность встроенного ПО
 В этой статье описывается, как корпорация Майкрософт обеспечивает защиту облачных экосистем оборудования и цепочек поставок.
 
 ## <a name="securing-the-cloud-hardware-ecosystem"></a>Обеспечение безопасности облачной экосистемы оборудования

@@ -13,10 +13,10 @@ ms.author: ronmat
 ms.reviewer: vanto
 ms.date: 12/01/2020
 ms.openlocfilehash: 69bebcf872f55055117acf5cef410d1f89eafe34
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96446899"
 ---
 # <a name="configure-advanced-threat-protection-in-azure-sql-managed-instance"></a>Настройка расширенной защиты от угроз в Azure SQL Управляемый экземпляр

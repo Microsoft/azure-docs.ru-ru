@@ -7,10 +7,10 @@ ms.reviewer: mijos, rarayudu, logicappspm
 ms.topic: conceptual
 ms.date: 01/20/2021
 ms.openlocfilehash: d31fbd813f0c5d63ee9eddbff5b299209618626b
-ms.sourcegitcommit: 484f510bbb093e9cfca694b56622b5860ca317f7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98629680"
 ---
 # <a name="set-up-customer-managed-keys-to-encrypt-data-at-rest-for-integration-service-environments-ises-in-azure-logic-apps"></a>Настройка ключей, управляемых клиентом, для шифрования неактивных данных в средах службы интеграции (Исес) в Azure Logic Apps
@@ -37,7 +37,7 @@ Azure Logic Apps использует хранилище Azure для хране
 
   * **Назначаемое пользователем управляемое удостоверение**. перед отправкой запроса HTTPS-размещения, который создает интегрированную среду сценариев, [Предоставьте доступ к хранилищу ключей для управляемого удостоверения в интегрированной среде сценариев](#identity-access-to-key-vault).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Те же [условия](../logic-apps/connect-virtual-network-vnet-isolated-environment.md#prerequisites) и [требования, необходимые для обеспечения доступа к интегрированной среде сценариев](../logic-apps/connect-virtual-network-vnet-isolated-environment.md#enable-access) , как при создании интегрированной среды сценариев в портал Azure
 
@@ -47,7 +47,7 @@ Azure Logic Apps использует хранилище Azure для хране
 
 * В хранилище ключей — ключ, который создается со следующими значениями свойств:
 
-  | Свойство | Значение |
+  | Свойство. | Значение |
   |----------|-------|
   | **Тип ключа** | RSA |
   | **Размер ключа RSA** | 2048 |
@@ -88,7 +88,7 @@ Azure Logic Apps использует хранилище Azure для хране
 
 * `Authorization`: Задайте для этого свойства токен носителя для клиента, который имеет доступ к подписке Azure или группе ресурсов, которые вы хотите использовать.
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Текст запроса
 
 В тексте запроса включите поддержку этих дополнительных элементов, предоставив сведения в определении интегрированной среды сценариев:
 

@@ -16,10 +16,10 @@ ms.date: 06/02/2017
 ms.author: alkohli
 ms.custom: ''
 ms.openlocfilehash: 12ab5a9598cc0222f5a3e64985be2e2ea9e7e2fd
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96014862"
 ---
 # <a name="replace-a-hardware-component-on-your-storsimple-8000-series-device"></a>Замена аппаратного компонента на устройстве StorSimple серии 8000
@@ -46,7 +46,7 @@ ms.locfileid: "96014862"
 | ![Значок "Обязательно прочтите инструкции"](./media/storsimple-hardware-component-replacement/ReadInstructions.png) |**Сначала ознакомьтесь с инструкциями** | |
 | ![Значок "Опасность опрокидывания"](./media/storsimple-hardware-component-replacement/TipHazard.png) |**Опасность опрокидывания** | |
 
-### <a name="before-you-begin"></a>Подготовка к работе
+### <a name="before-you-begin"></a>Перед началом
 
 Ознакомьтесь со сведениями безопасности для вашего устройства и условными обозначениями сведений о безопасности, используемыми в данном руководстве. Подробные сведения см. в разделе [Безопасная установка и эксплуатация устройства StorSimple](storsimple-8000-safety.md). Перед обращением с устройством StorSimple ознакомьтесь с [мерами предосторожности](storsimple-8000-safety.md#handling-precautions).
 
@@ -67,9 +67,9 @@ ms.locfileid: "96014862"
 
 В следующих таблицах приведены основные аппаратные компоненты вашего устройства. Щелкните ссылку в столбце **Процедура замены** для перехода к соответствующему руководству.
 
-| Components | Количество | Подключаемый модуль? | Процедура замены |
+| Компоненты | Количество | Подключаемый модуль? | Процедура замены |
 |:--- |:--- |:--- |:--- |
-| Корпус |1 |нет |[Замена корпуса устройства StorSimple](storsimple-8000-chassis-replacement.md) |
+| Корпус |1 |Нет |[Замена корпуса устройства StorSimple](storsimple-8000-chassis-replacement.md) |
 | Основные контроллеры |2 |Да |[Замена модуля контроллера на устройстве StorSimple](storsimple-8000-controller-replacement.md) |
 | Блоки питания и охлаждения (БПО) мощностью 764 Вт |2 |Да |[Замена блока питания и охлаждения на устройстве StorSimple](storsimple-8000-power-cooling-module-replacement.md) |
 | Резервный аккумулятор |2 |Да |[Замена резервного аккумулятора на устройстве StorSimple](storsimple-8000-battery-replacement.md) |
@@ -79,9 +79,9 @@ ms.locfileid: "96014862"
 
 Основной корпус и корпус EBOD отличаются модулями ввода/вывода. Кроме того, их ПБО имеют различную мощность. БПО для основного корпуса имеют мощность 764 Вт, а для корпуса EBOD 580 Вт. Блоки питания и охлаждения в основном корпусе также содержат резервный аккумулятор.
 
-| Components | Количество | Подключаемый модуль? | Процедура замены |
+| Компоненты | Количество | Подключаемый модуль? | Процедура замены |
 |:--- |:--- |:--- |:--- |
-| Корпус |1 |нет |[Замена корпуса устройства StorSimple](storsimple-8000-chassis-replacement.md) |
+| Корпус |1 |Нет |[Замена корпуса устройства StorSimple](storsimple-8000-chassis-replacement.md) |
 | Контроллеры EBOD |2 |Да |[Замена контроллера EBOD на устройстве StorSimple](storsimple-8000-ebod-controller-replacement.md) |
 | Блоки питания и охлаждения (БПО) мощностью 580 Вт |2 |Да |[Замена блока питания и охлаждения на устройстве StorSimple](storsimple-8000-power-cooling-module-replacement.md) |
 | Диски |12 |Да |[Замена диска на устройстве StorSimple](storsimple-8000-disk-drive-replacement.md) |
@@ -137,6 +137,6 @@ ms.locfileid: "96014862"
 
 [Обратитесь в службу технической поддержки Майкрософт](storsimple-8000-contact-microsoft-support.md), чтобы заказать любые из этих запасных частей.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Перед заменой компонентов оборудования StorSimple ознакомьтесь со всеми [мерами предосторожности](storsimple-8000-safety.md) .

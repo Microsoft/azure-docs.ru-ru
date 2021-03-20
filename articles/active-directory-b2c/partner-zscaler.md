@@ -12,17 +12,17 @@ ms.date: 12/09/2020
 ms.author: gasinh
 ms.subservice: B2C
 ms.openlocfilehash: dbeb3cd4fccf80f434e6c7ac08c658632f64b135
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102096859"
 ---
 # <a name="tutorial-configure-zscaler-private-access-with-azure-active-directory-b2c"></a>Руководство. Настройка частного доступа Zscaler с помощью Azure Active Directory B2C
 
 В этом руководстве вы узнаете, как интегрировать проверку подлинности Azure Active Directory B2C (Azure AD B2C) с [Zscaler Private Access (ZPA)](https://www.zscaler.com/products/zscaler-private-access). ZPA обеспечивает безопасный доступ к частным приложениям и ресурсам на основе политик без затрат, проблем или угроз безопасности виртуальной частной сети (VPN). Предложение безопасного гибридного доступа Zscaler позволяет получать нулевую атаку для приложений, ориентированных на потребителей, при объединении с Azure AD B2C.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем начать, вам потребуется:
 

@@ -13,10 +13,10 @@ ms.topic: article
 ms.date: 05/01/2020
 ms.author: apimpm
 ms.openlocfilehash: 7c4d32dd63120a52fd7351977943574455e5cfad
-ms.sourcegitcommit: 4b76c284eb3d2b81b103430371a10abb912a83f4
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93146660"
 ---
 # <a name="export-apis-from-azure-api-management-to-the-power-platform"></a>Экспорт API из службы "Управление API" в Power Platform 
@@ -35,12 +35,12 @@ ms.locfileid: "93146660"
 
 1. На портале Azure перейдите к службе "Управление API" и выберите **Интерфейсы API** в меню.
 2. Щелкните три точки рядом с API, который необходимо экспортировать. 
-3. Щелкните **Экспортировать** .
-4. Выберите **Power Apps и Power Automate** .
+3. Щелкните **Экспортировать**.
+4. Выберите **Power Apps и Power Automate**.
 5. Выберите среду, в которую нужно экспортировать API. 
 6. Укажите отображаемое имя, которое будет использоваться в качестве имени настраиваемого соединителя.  
 7. Если API защищен сервером OAuth 2.0, необходимо предоставить дополнительные сведения, включая `Client ID`, `Client secret`, `Authorization URL`, `Token URL` и `Refresh URL`.  
-8. Щелкните **Экспортировать** . 
+8. Щелкните **Экспортировать**. 
 
 Когда экспорт будет завершен, перейдите в среду Power App или Power Automate. Вы увидите API в виде настраиваемого соединителя.
 

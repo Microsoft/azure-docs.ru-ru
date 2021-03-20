@@ -15,10 +15,10 @@ ms.date: 07/07/2020
 ms.author: aschhab
 ms.custom: devx-track-java
 ms.openlocfilehash: b8408dde86d1902cf5b4899c4783c9dd185449ee
-ms.sourcegitcommit: 59f506857abb1ed3328fda34d37800b55159c91d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92515752"
 ---
 # <a name="migrate-existing-java-message-service-jms-20-applications-from-apache-activemq-to-azure-service-bus"></a>Перенос существующих приложений службы сообщений Java (JMS) 2,0 из Apache Активемк в служебную шину Azure
@@ -35,7 +35,7 @@ ms.locfileid: "92515752"
 
 Несмотря на это, существуют некоторые различия между ними, как показано в следующей таблице.
 
-| Категория | ActiveMQ | Azure Service Bus |
+| Category | ActiveMQ | Azure Service Bus |
 | --- | --- | --- |
 | Распределение по уровням приложений | Кластеризованный Монолит | Двухуровневая <br> (шлюз + серверная части) |
 | Поддержка протоколов | <ul> <li>AMQP</li> <li> стомп </li> <li> опенвире </li> </ul> | AMQP |
@@ -134,7 +134,7 @@ ms.locfileid: "92515752"
 > [!NOTE]
 > Для приложений JMS в качестве операции времени выполнения создаются очереди, разделы и подписки. Большинство поставщиков JMS (брокеров сообщений) дают возможность создавать их во время выполнения. Вот почему этот шаг экспорта считается необязательным. Чтобы убедиться, что приложение имеет разрешения на создание топологии во время выполнения, используйте строку подключения с `Manage` разрешениями SAS.
 
-Выполните указанные ниже действия.
+Для этого выполните следующие действия.
 
 1. Чтобы экспортировать топологию, используйте [программы командной строки активемк](https://activemq.apache.org/activemq-command-line-tools-reference) .
 1. Повторно создайте ту же топологию с помощью [шаблона Azure Resource Manager](../azure-resource-manager/templates/quickstart-create-templates-use-the-portal.md).
@@ -214,7 +214,7 @@ ms.locfileid: "92515752"
 </Context>
 ```
 
-#### <a name="spring-applications"></a>Пружинные приложения
+#### <a name="spring-applications"></a>Приложения Spring
 
 ##### <a name="update-the-applicationproperties-file"></a>Обновление `application.properties` файла
 
@@ -266,7 +266,7 @@ connection.start();
 
 ```
 
-## <a name="post-migration"></a>Действия после миграции
+## <a name="post-migration"></a>После миграции
 
 Теперь, когда вы изменили приложение, чтобы начать отправку и получение сообщений из служебной шины, следует убедиться, что она работает правильно. По завершении вы можете продолжить и модернизировать стека приложений.
 

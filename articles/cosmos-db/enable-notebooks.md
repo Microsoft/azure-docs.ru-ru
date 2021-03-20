@@ -9,10 +9,10 @@ ms.date: 02/22/2021
 ms.author: dech
 ms.custom: references_regions
 ms.openlocfilehash: 02e8ad5f2b5326f947ba0bca6456ce9d9d3c27d7
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101692782"
 ---
 # <a name="enable-notebooks-for-azure-cosmos-db-accounts-preview"></a>Включение записных книжек для учетных записей Azure Cosmos DB (Предварительная версия)
@@ -106,7 +106,7 @@ ms.locfileid: "101692782"
 - центрально-западная часть США
 - Западная Европа
 - Западная Индия
-- Западная часть США 2
+- Западная часть США 2
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

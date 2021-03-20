@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 06/17/2020
 ms.openlocfilehash: cb5ee7d3549e433fb184b8c55c28b9a28ed89272
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96011937"
 ---
 # <a name="custom-web-api-skill-in-an-azure-cognitive-search-enrichment-pipeline"></a>Пользовательский навык веб-API в конвейере Когнитивный поиск обогащения Azure
@@ -201,7 +201,7 @@ Microsoft.Skills.Custom.WebApiSkill
 
 В тех случаях, когда веб-API недоступен или возвращает ошибку HTTP, в журнал выполнения индексатора будет добавлено понятное сообщение об ошибке с доступными сведениями об ошибке HTTP.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 + [Определение набора навыков](cognitive-search-defining-skillset.md)
 + [Добавление пользовательского навыка в конвейер обогащения искусственного интеллекта](cognitive-search-custom-skill-interface.md)
