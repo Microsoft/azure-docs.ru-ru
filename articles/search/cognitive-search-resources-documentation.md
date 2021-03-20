@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 06/12/2020
 ms.openlocfilehash: eaafb9536a8667417c0abf4ab570609f2db290bc
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88935353"
 ---
 # <a name="documentation-resources-for-ai-enrichment-in-azure-cognitive-search"></a>Ресурсы документации для обогащения данных с помощью ИИ в Когнитивном поиске Azure
@@ -90,7 +90,7 @@ ms.locfileid: "88935353"
 + [Устаревшие навыки](cognitive-search-skill-deprecated.md)
   + [Microsoft.Skills.Text.NamedEntityRecognitionSkill](cognitive-search-skill-named-entity-recognition.md)
 
-## <a name="apis"></a>Программные интерфейсы
+## <a name="apis"></a>API-интерфейсы
 
 + [REST API](/rest/api/searchservice/)
   + [Создание набора навыков (API-Version = 2020-06-30)](/rest/api/searchservice/create-skillset)
@@ -100,4 +100,4 @@ ms.locfileid: "88935353"
 
 + [REST API Когнитивного поиска Azure](/rest/api/searchservice/)
 + [Indexers in Azure Cognitive Search](search-indexer-overview.md) (Индексаторы в службе "Когнитивный поиск Azure")
-+ [Что такое Azure Когнитивный поиск?](search-what-is-azure-search.md)
++ [Что собой представляет Когнитивный поиск Azure?](search-what-is-azure-search.md)

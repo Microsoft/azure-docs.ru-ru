@@ -10,16 +10,16 @@ ms.subservice: text-analytics
 ms.topic: article
 ms.date: 02/17/2021
 ms.author: aahi
-ms.openlocfilehash: 278c8a48d2d0644f63a3e265ea81d3f62c68bae2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: ee3a56fed87f493d79796c0d91e5324c94e87eca
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101725311"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104599363"
 ---
 # <a name="model-versioning-in-the-text-analytics-api"></a>Управление версиями модели в API анализа текста
 
-Версия 3 API анализа текста позволяет выбрать версию модели, используемую для данных. Используйте необязательный `model-version` параметр, чтобы выбрать версию модели в запросах API. Например: `<resource-url>/text/analytics/v3.0/sentiment?model-version=2020-04-01`. Если этот параметр не указан, API по умолчанию будет иметь последнюю стабильную версию. 
+Версия 3 API анализа текста позволяет выбрать версию модели, используемую для данных. Используйте необязательный `model-version` параметр, чтобы выбрать версию модели в запросах API. Например, `<resource-url>/text/analytics/v3.0/sentiment?model-version=2020-04-01`. Если этот параметр не указан, API по умолчанию будет иметь последнюю стабильную версию. 
 
 ## <a name="available-versions"></a>Доступные версии
 
@@ -33,7 +33,7 @@ ms.locfileid: "101725311"
 | `/entities/linking`             | `2019-10-01`, `2020-02-01`                             | `2020-02-01`   |
 | `/entities/recognition/general` | `2019-10-01`, `2020-02-01`, `2020-04-01`,`2021-01-15`  | `2021-01-15`   |
 | `/entities/recognition/pii`     | `2019-10-01`, `2020-02-01`, `2020-04-01`,`2020-07-01`, `2021-01-15`  | `2021-01-15`   |
-| `/entities/health`              | `2020-09-03`                           | `2020-09-03`   |
+| `/entities/health`              | `2021-03-01`                           | `2021-03-01`   |
 | `/keyphrases`                   | `2019-10-01`, `2020-07-01`                             | `2020-07-01`   |
 
 
@@ -45,7 +45,8 @@ ms.locfileid: "101725311"
 
 | Конечная точка                        | Тег образа контейнера                     | Версия модели |
 |---------------------------------|-----------------------------------------|---------------|
-| `/entities/health`              | `1.1.013530001-amd64-preview` или последняя версия          | `2020-09-03`  |
+| `/entities/health`              | `3.0.015370001-onprem-amd64` или последняя версия          | `2021-03-01`  |
+| `/entities/health`              | `1.1.013530001-amd64-preview`           | `2020-09-03`  |
 | `/entities/health`              | `1.1.013150001-amd64-preview`           | `2020-07-24`  |
 | `/domains/health`               | `1.1.012640001-amd64-preview`           | `2020-05-08`  |
 | `/domains/health`               | `1.1.012420001-amd64-preview`           | `2020-05-08`  |

@@ -8,10 +8,10 @@ author: dcstwh
 ms.author: weetok
 ms.reviewer: maghan
 ms.openlocfilehash: 122a0a01c420d5efa12fa267a0d3605fc7a25960
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100385342"
 ---
 # <a name="set-variable-activity-in-azure-data-factory"></a>Установка действия переменной в фабрике данных Azure

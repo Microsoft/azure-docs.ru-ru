@@ -9,10 +9,10 @@ ms.date: 06/19/2018
 ms.author: wesmc
 ms.custom: include file
 ms.openlocfilehash: 49fbfe116a2fe554abb3a3ca4d1dcd6cab2b746d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "69626390"
 ---
 Можно сохранить созданные ресурсы и повторно использовать их при выполнении задач в следующей рекомендуемой статье, если вы планируете перейти к ней.
@@ -25,11 +25,11 @@ ms.locfileid: "69626390"
 
 Удаление группы ресурсов по имени:
 
-1. Войдите в портал [Azure](https://portal.azure.com) и выберите**Группы ресурсов**.
+1. Войдите в портал [Azure](https://portal.azure.com) и выберите **Группы ресурсов**.
 
 2. В текстовое поле **Фильтровать по имени** введите имя группы ресурсов, содержащей Центр Интернета вещей. 
 
-3. Справа от своей группы ресурсов в списке результатов щелкните **...** , а затем выберите **Удалить группу ресурсов**.
+3. Справа от своей группы ресурсов в списке результатов щелкните **...**, а затем выберите **Удалить группу ресурсов**.
 
     ![DELETE](./media/iot-hub-quickstarts-clean-up-resources/iot-hub-delete-resource-group.png)
 

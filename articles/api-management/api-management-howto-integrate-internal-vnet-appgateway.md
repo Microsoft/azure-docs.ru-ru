@@ -15,15 +15,15 @@ ms.topic: article
 ms.date: 11/04/2019
 ms.author: sasolank
 ms.openlocfilehash: 3db1c8bfc3a11151342589af0873d88e3d90c6a1
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91825634"
 ---
 # <a name="integrate-api-management-in-an-internal-vnet-with-application-gateway"></a>Интеграция службы управления API во внутреннюю сеть со шлюзом приложений
 
-## <a name="overview"></a><a name="overview"> </a> Общие сведения
+## <a name="overview"></a><a name="overview"></a> Общие сведения
 
 Если настроить службу управления API для работы в виртуальной сети в режиме внутренней сети, она будет доступна только из этой виртуальной сети. Шлюз приложений Azure — это служба PaaS, выполняющая функции подсистемы балансировки нагрузки на сетевом уровне 7. Это служба обратного прокси-сервера, которая содержит также брандмауэр веб-приложения (WAF).
 
@@ -35,7 +35,7 @@ ms.locfileid: "91825634"
 
 [!INCLUDE [premium-dev.md](../../includes/api-management-availability-premium-dev.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
@@ -47,7 +47,7 @@ ms.locfileid: "91825634"
 
 * Сертификаты — PFX- и CER-файл для имени узла API и PFX-файл для имени узла на портале разработчика.
 
-## <a name="scenario"></a><a name="scenario"> </a> Сценарий
+## <a name="scenario"></a><a name="scenario"></a> Сценарий
 
 В этой статье описывается, как использовать одну службу управления API как для внутренних, так и для внешних потребителей, а также как единый интерфейс для локальных и облачных API. Также вы узнаете, как предоставить некоторое подмножество этих API-интерфейсов (в нашем примере они выделены зеленым цветом) для внешнего использования, применив функцию маршрутизации, предоставляемую Шлюзом приложений.
 
@@ -55,7 +55,7 @@ ms.locfileid: "91825634"
 
 ![Маршрут URL-адреса](./media/api-management-howto-integrate-internal-vnet-appgateway/api-management-howto-integrate-internal-vnet-appgateway.png)
 
-## <a name="before-you-begin"></a><a name="before-you-begin"> </a> Перед началом
+## <a name="before-you-begin"></a><a name="before-you-begin"></a> Перед началом
 
 * Убедитесь, что у вас установлена последняя версия Azure PowerShell. Инструкции по установке см. в статье [установка Azure PowerShell](/powershell/azure/install-az-ps). 
 
@@ -368,10 +368,10 @@ $appgw = New-AzApplicationGateway -Name $appgwName -ResourceGroupName $resGroupN
 Get-AzPublicIpAddress -ResourceGroupName $resGroupName -Name "publicIP01"
 ```
 
-## <a name="summary"></a><a name="summary"> </a> Сводка по
+## <a name="summary"></a><a name="summary"></a> Сводка по
 Служба управления API Azure, настроенная в виртуальной сети, предоставляет один интерфейс шлюза для всех настроенных интерфейсов API, размещенных в локальной среде или в облаке. Интеграция шлюза приложений с управлением API дает вам дополнительную гибкость, позволяя избирательно предоставлять доступ к API-интерфейсам через Интернет. Также вы можете использовать брандмауэр веб-приложения в качестве интерфейсного компонента для экземпляра службы управления API.
 
-## <a name="next-steps"></a><a name="next-steps"> </a> Дальнейшие действия
+## <a name="next-steps"></a><a name="next-steps"></a> Дальнейшие действия
 * Дополнительные сведения о шлюзе приложений Azure:
   * [Обзор шлюза приложений](../application-gateway/overview.md)
   * [Брандмауэр веб-приложения шлюза приложений](../web-application-firewall/ag/ag-overview.md)

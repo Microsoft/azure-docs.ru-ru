@@ -5,16 +5,16 @@ author: enkrumah
 ms.author: ebnkruma
 ms.service: stream-analytics
 ms.topic: how-to
-ms.date: 04/08/2019
+ms.date: 03/16/2021
 ms.custom: seodec18
-ms.openlocfilehash: d7e9b1ecef9cfda804b89f0ba1beeb54d7d48b98
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.openlocfilehash: d5b406d260b1c6518d9227c51d84ab7eb3754329
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98020355"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104598156"
 ---
-# <a name="authenticate-stream-analytics-to-azure-data-lake-storage-gen1-using-managed-identities-preview"></a>Проверка подлинности Stream Analytics для Azure Data Lake Storage 1-го поколения с использованием управляемых удостоверений (Предварительная версия)
+# <a name="authenticate-stream-analytics-to-azure-data-lake-storage-gen1-using-managed-identities"></a>Проверка подлинности Stream Analytics для Azure Data Lake Storage 1-го поколения с помощью управляемых удостоверений
 
 Azure Stream Analytics поддерживает аутентификацию с помощью управляемого удостоверения для вывода данных в Azure Data Lake Storage (ADLS) 1-го поколения. Удостоверение — это зарегистрированное в Azure Active Directory управляемое приложение, представляющее данное задание Stream Analytics и используемое для аутентификации в целевом ресурсе. Управляемые удостоверения устраняют ограничения пользовательских методов аутентификации, такие как необходимость повторной аутентификации из-за изменения пароля или после истечения срока действия пользовательских токенов (каждые 90 дней). Кроме того, управляемые удостоверения позволяют автоматизировать развертывания заданий Stream Analytics, которые выводят данные в Azure Data Lake Storage 1-го поколения.
 
@@ -36,7 +36,7 @@ Azure Stream Analytics поддерживает аутентификацию с 
  
    Субъект-служба имеет то же имя, что и задание Stream Analytics. Например, если имя задания — **MyASAJob**, имя созданного субъекта-службы будет также **MyASAJob**.
 
-3. В окне Выходные свойства приемника выходных данных ADLS 1-го поколения щелкните раскрывающийся список режим проверки подлинности и выберите * * управляемое удостоверение * *.
+3. В окне Выходные свойства приемника выходных данных ADLS 1-го поколения щелкните раскрывающийся список режим проверки подлинности и выберите пункт **управляемое удостоверение**.
 
 4. Укажите остальные свойства. Дополнительные сведения о создании выходных данных для ADLS см. в статье [Потоковая передача данных из большого двоичного объекта службы хранилища Azure в Data Lake Storage 1-го поколения с помощью Azure Stream Analytics](../data-lake-store/data-lake-store-stream-analytics.md). Закончив, нажмите кнопку **Сохранить**.
 
@@ -70,7 +70,7 @@ Azure Stream Analytics поддерживает аутентификацию с 
 
    ![Управляемые идентификаторы конфигурации задания Stream Analytics](./media/stream-analytics-managed-identities-adls/adls-mi-jobconfig-vs.png)
 
-2. В окне Выходные свойства приемника выходных данных ADLS 1-го поколения щелкните раскрывающийся список режим проверки подлинности и выберите * * управляемое удостоверение * *.
+2. В окне Выходные свойства приемника выходных данных ADLS 1-го поколения щелкните раскрывающийся список режим проверки подлинности и выберите пункт **управляемое удостоверение**.
 
    ![Управляемые удостоверения выходных данных ADLS](./media/stream-analytics-managed-identities-adls/adls-mi-output-vs.png)
 

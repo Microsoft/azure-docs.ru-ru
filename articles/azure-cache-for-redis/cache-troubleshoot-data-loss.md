@@ -7,10 +7,10 @@ ms.service: cache
 ms.topic: conceptual
 ms.date: 10/17/2019
 ms.openlocfilehash: 6db036752bab7b84b72a37b148eaec7aa5765ef3
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92538601"
 ---
 # <a name="troubleshoot-data-loss-in-azure-cache-for-redis"></a>Устранение неполадок, связанных с потерей данных, в Кэше Azure для Redis
@@ -36,7 +36,7 @@ ms.locfileid: "92538601"
 
 ### <a name="key-expiration"></a>Окончание срока действия ключа
 
-Кэш Azure для Redis удаляет ключ автоматически, если этому ключу назначено время ожидания и этот период истек. Дополнительные сведения об окончании срока действия ключа Redis см. в документации по команде [EXPIRE](https://redis.io/commands/expire). Значения времени ожидания также можно задать с помощью [SET](https://redis.io/commands/set), [SETEX](https://redis.io/commands/setex), [GETSET](https://redis.io/commands/getset) и других команд **\*STORE** .
+Кэш Azure для Redis удаляет ключ автоматически, если этому ключу назначено время ожидания и этот период истек. Дополнительные сведения об окончании срока действия ключа Redis см. в документации по команде [EXPIRE](https://redis.io/commands/expire). Значения времени ожидания также можно задать с помощью [SET](https://redis.io/commands/set), [SETEX](https://redis.io/commands/setex), [GETSET](https://redis.io/commands/getset) и других команд **\*STORE**.
 
 Чтобы получить данные статистики о числе ключей с истекшим сроком действия, используйте команду [INFO](https://redis.io/commands/info). В разделе `Stats` отображается общее число ключей с истекшим сроком действия. В разделе `Keyspace` содержатся дополнительные сведения о числе ключей с истекшим временем ожидания и средним значением времени ожидания.
 
@@ -54,7 +54,7 @@ db0:keys=3450,expires=2,avg_ttl=91861015336
 
 ### <a name="key-eviction"></a>Вытеснение ключей
 
-Для хранения данных Кэшу Azure для Redis требуется определенный объем памяти. Он очищает ключи, если нужно освободить память. Когда значения **used_memory** или **used_memory_rss** в команде [INFO](https://redis.io/commands/info) приближаются к заданному значению параметра **maxmemory** , Кэш Azure для Redis начинает вытеснять ключи из памяти на основе [политики кэша](https://redis.io/topics/lru-cache).
+Для хранения данных Кэшу Azure для Redis требуется определенный объем памяти. Он очищает ключи, если нужно освободить память. Когда значения **used_memory** или **used_memory_rss** в команде [INFO](https://redis.io/commands/info) приближаются к заданному значению параметра **maxmemory**, Кэш Azure для Redis начинает вытеснять ключи из памяти на основе [политики кэша](https://redis.io/topics/lru-cache).
 
 Количество вытесненных ключей можно отслеживать с помощью команды [INFO](https://redis.io/commands/info).
 
@@ -68,7 +68,7 @@ evicted_keys:13224
 
 ### <a name="key-deletion"></a>Удаление ключей
 
-Клиенты Redis могут использовать команду [DEL](https://redis.io/commands/del) или [HDEL](https://redis.io/commands/hdel), чтобы явно удалить ключи из Кэша Azure для Redis. Число операций удаления можно узнать с помощью команды [INFO](https://redis.io/commands/info). Если были вызваны команды **DEL** или **HDEL** , они будут указаны в разделе `Commandstats`.
+Клиенты Redis могут использовать команду [DEL](https://redis.io/commands/del) или [HDEL](https://redis.io/commands/hdel), чтобы явно удалить ключи из Кэша Azure для Redis. Число операций удаления можно узнать с помощью команды [INFO](https://redis.io/commands/info). Если были вызваны команды **DEL** или **HDEL**, они будут указаны в разделе `Commandstats`.
 
 ```
 # Commandstats
@@ -94,7 +94,7 @@ cmdstat_hdel:calls=1,usec=47,usec_per_call=47.00
 
 ### <a name="key-flushing"></a>Очистка ключей
 
-Клиенты могут использовать команду [FLUSHDB](https://redis.io/commands/flushdb), чтобы удалить все ключи в *одной* базе данных или [FLUSHALL](https://redis.io/commands/flushall), чтобы удалить все ключи из *всех* баз данных в кэше Redis. Чтобы узнать, очищены ли ключи, используйте команду [INFO](https://redis.io/commands/info). В разделе `Commandstats` показано, была ли вызвана команда **FLUSH** :
+Клиенты могут использовать команду [FLUSHDB](https://redis.io/commands/flushdb), чтобы удалить все ключи в *одной* базе данных или [FLUSHALL](https://redis.io/commands/flushall), чтобы удалить все ключи из *всех* баз данных в кэше Redis. Чтобы узнать, очищены ли ключи, используйте команду [INFO](https://redis.io/commands/info). В разделе `Commandstats` показано, была ли вызвана команда **FLUSH**:
 
 ```
 # Commandstats
@@ -106,7 +106,7 @@ cmdstat_flushdb:calls=1,usec=110,usec_per_call=52.00
 
 ### <a name="incorrect-database-selection"></a>Неправильный выбор базы данных
 
-Кэш Azure для Redis использует базу данных **db0** по умолчанию. Если переключиться на другую базу данных (например, **db1** ) и попытаться считать ключи из нее, то Кэш Azure для Redis не обнаружит их там. Каждая база данных является логически отдельной единицей и содержит разный набор данных. Примените команду [SELECT](https://redis.io/commands/select), чтобы использовать другие доступные базы данных и искать в них ключи.
+Кэш Azure для Redis использует базу данных **db0** по умолчанию. Если переключиться на другую базу данных (например, **db1**) и попытаться считать ключи из нее, то Кэш Azure для Redis не обнаружит их там. Каждая база данных является логически отдельной единицей и содержит разный набор данных. Примените команду [SELECT](https://redis.io/commands/select), чтобы использовать другие доступные базы данных и искать в них ключи.
 
 ### <a name="redis-instance-failure"></a>Сбой экземпляра Redis
 

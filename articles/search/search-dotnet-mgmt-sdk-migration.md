@@ -10,10 +10,10 @@ ms.devlang: dotnet
 ms.topic: conceptual
 ms.date: 07/08/2020
 ms.openlocfilehash: 8648347eb48081389cf360fa949b31bbd0b8c71e
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88936713"
 ---
 # <a name="upgrading-versions-of-the-azure-search-net-management-sdk"></a>Обновление версий пакета SDK для службы поиска Azure для .NET
@@ -28,7 +28,7 @@ ms.locfileid: "88936713"
 |-------------|--------------------------------|-------------------------------------|
 | [3.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Search/3.0.0) | API-Version = 2020-30-20 | Добавляет безопасность конечных точек (брандмауэры IP и интеграция с помощью [частной ссылки Azure](../private-link/private-endpoint-overview.md)) |
 | [2.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Search/2.0.0) | API-Version = 2019-10-01 | Повышение удобства использования. Критическое изменение [ключей запроса списка](/rest/api/searchmanagement/querykeys/listbysearchservice) (Get больше не поддерживается). |
-| [1,0](https://www.nuget.org/packages/Microsoft.Azure.Management.Search/1.0.1) | API-Version = 2015-08-19  | Первая версия |
+| [1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Search/1.0.1) | API-Version = 2015-08-19  | Первая версия |
 
 ## <a name="how-to-upgrade"></a>Обновление
 
@@ -46,7 +46,7 @@ ms.locfileid: "88936713"
 
 ### <a name="new-apis"></a>Новые интерфейсы API
 
-| API | Категория| Подробнее |
+| API | Category| Сведения |
 |-----|--------|------------------|
 | [нетворкрулесет](/rest/api/searchmanagement/services/createorupdate#networkruleset) | Брандмауэр IP-адресов | Ограничьте доступ к конечной точке службы списком разрешенных IP-адресов. Основные понятия и инструкции на портале см. в разделе [Настройка брандмауэра IP](service-configure-firewall.md) . |
 | [Общий ресурс частной ссылки](/rest/api/searchmanagement/sharedprivatelinkresources) | Приватный канал | Создайте общий ресурс частной ссылки, который будет использоваться службой поиска.  |

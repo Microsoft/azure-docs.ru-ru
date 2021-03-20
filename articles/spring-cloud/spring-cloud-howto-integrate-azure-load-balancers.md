@@ -7,12 +7,12 @@ ms.service: spring-cloud
 ms.topic: how-to
 ms.date: 04/20/2020
 ms.custom: devx-track-java
-ms.openlocfilehash: cd0b9d1369fb1c0e662de83b7056da0ff7c83bd1
-ms.sourcegitcommit: 30505c01d43ef71dac08138a960903c2b53f2499
+ms.openlocfilehash: 50b09fd82461221ae6cd008f6918ac2f3a26fd94
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92090834"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104588398"
 ---
 # <a name="integrate-azure-spring-cloud-with-azure-load-balance-solutions"></a>Интеграция Azure Spring Cloud с решениями Azure для распределения нагрузки
 
@@ -76,6 +76,17 @@ Azure уже предоставляет различные решения бал
 1.  **Использовать пользовательскую пробу**: выберите *Да* и выберите пользовательскую пробную версию, созданную выше.
 
     ![Шлюз приложений 3](media/spring-cloud-load-balancers/app-gateway-3.png)
+
+### <a name="configure-rewrite-set"></a>Настройка набора перезаписи
+1.  Выберите **Перезапись** , а затем **набор** перезаписи, чтобы добавить набор перезаписи.
+1.  Выберите правила маршрутизации, которые перенаправляют запросы в общедоступные конечные точки Azure Веснного облака.
+1.  На вкладке **конфигурация правила перезаписи** выберите **Добавить правило перезаписи**.
+1.  **Тип перезаписи**: выберите **заголовок запроса** .
+1.  **Тип действия**: выберите **Удалить** .
+1.  **Имя заголовка**: выберите **общий заголовок** .
+1.  **Общий заголовок**: выберите **X-Forwarded-определяемый пользователем**
+
+    ![Шлюз приложений 4](media/spring-cloud-load-balancers/app-gateway-4.png)
 
 ## <a name="integrate-azure-spring-cloud-with-azure-front-door"></a>Интеграция Azure Веснного облака с помощью передней дверцы Azure
 

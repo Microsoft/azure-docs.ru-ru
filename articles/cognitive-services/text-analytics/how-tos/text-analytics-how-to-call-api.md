@@ -8,15 +8,15 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: text-analytics
 ms.topic: conceptual
-ms.date: 12/17/2020
+ms.date: 03/01/2021
 ms.author: aahi
 ms.custom: references_regions
-ms.openlocfilehash: 9302bde13a303dda2107900dc0c10cc180669a18
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.openlocfilehash: 3c6fb1ca23bcc9c57e73bcaf960e0387611fcff3
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "100650734"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104599220"
 ---
 # <a name="how-to-call-the-text-analytics-rest-api"></a>Как вызвать REST API службы "Анализ текста"
 
@@ -59,13 +59,14 @@ ms.locfileid: "100650734"
 
 См. таблицу ниже, чтобы узнать, какие функции можно использовать асинхронно. Обратите внимание, что из конечной точки можно вызывать только несколько функций `/analyze` . 
 
-| Функция | Синхронная | Асинхронный |
+| Компонент | Синхронная | Асинхронный |
 |--|--|--|
 | Определение языка | ✔ |  |
 | Анализ мнений | ✔ |  |
 | Интеллектуальный анализ данных | ✔ |  |
 | Извлечение ключевой фразы | ✔ | ✔* |
 | Распознавание именованных сущностей (включая персональные и фи) | ✔ | ✔* |
+| Связывание сущностей | ✔ | ✔* |
 | Анализ текста для работоспособности (контейнер) | ✔ |  |
 | Анализ текста для работоспособности (API) |  | ✔  |
 
@@ -118,8 +119,9 @@ ms.locfileid: "100650734"
 
 `/analyze`Конечная точка позволяет выбрать, какие из поддерживаемых функций анализ текста будут использоваться в одном вызове API. Сейчас эта конечная точка поддерживает:
 
-* извлечение ключевых фраз 
+* Извлечение ключевых фраз 
 * Распознавание именованных сущностей (включая персональные и фи)
+* Связывание сущностей
 
 | Элемент | Допустимые значения | Необходим? | Использование |
 |---------|--------------|-----------|-------|
@@ -128,7 +130,7 @@ ms.locfileid: "100650734"
 |`documents` | Включает `id` поля и `text` ниже | Обязательно | Содержит сведения для каждого отправляемого документа и необработанный текст документа. |
 |`id` | Строка | Обязательно | Предоставленные идентификаторы используются для структурирования выходных данных. |
 |`text` | Неструктурированный необработанный текст, не более 125 000 символов. | Обязательно | Язык должен быть на английском языке, который в настоящее время поддерживается. |
-|`tasks` | Включает следующие функции Анализ текста: `entityRecognitionTasks` `keyPhraseExtractionTasks` или `entityRecognitionPiiTasks` . | Обязательно | Одна или несколько Анализ текста функций, которые вы хотите использовать. Обратите внимание, что `entityRecognitionPiiTasks` имеет необязательный `domain` параметр, для которого можно задать значение `pii` или `phi` . Если значение не указано, по умолчанию система принимает значение `pii` . |
+|`tasks` | Включает следующие функции анализ текста: `entityRecognitionTasks` , `entityLinkingTasks` `keyPhraseExtractionTasks` или `entityRecognitionPiiTasks` . | Обязательно | Одна или несколько Анализ текста функций, которые вы хотите использовать. Обратите внимание, что `entityRecognitionPiiTasks` имеет необязательный `domain` параметр, для которого можно задать значение `pii` или, `phi` и `pii-categories` для обнаружения выбранных типов сущностей. Если `domain` параметр не указан, система по умолчанию принимает значение `pii` . |
 |`parameters` | Включает `model-version` поля и `stringIndexType` ниже | Обязательно | Это поле включено в указанные выше задачи функции. Они содержат сведения о версии модели, которую необходимо использовать, и типе индекса. |
 |`model-version` | Строка | Обязательно | Укажите версию вызываемой модели, которую необходимо использовать.  |
 |`stringIndexType` | Строка | Обязательно | Укажите текстовый декодер, соответствующий используемой среде программирования.  Поддерживаются типы `textElement_v8` (по умолчанию), `unicodeCodePoint` , `utf16CodeUnit` . Дополнительные сведения см. в [статье о смещениях текста](../concepts/text-offsets.md#offsets-in-api-version-31-preview) .  |
@@ -158,6 +160,14 @@ ms.locfileid: "100650734"
                 }
             }
         ],
+        "entityLinkingTasks": [
+            {
+                "parameters": {
+                    "model-version": "latest",
+                    "stringIndexType": "TextElements_v8"
+                }
+            }
+        ],
         "keyPhraseExtractionTasks": [{
             "parameters": {
                 "model-version": "latest"
@@ -165,7 +175,10 @@ ms.locfileid: "100650734"
         }],
         "entityRecognitionPiiTasks": [{
             "parameters": {
-                "model-version": "latest"
+                "model-version": "latest",
+                "stringIndexType": "TextElements_v8",
+                "domain": "phi",
+                "pii-categories":"default"
             }
         }]
     }
@@ -207,7 +220,7 @@ example.json
 
 ## <a name="set-up-a-request"></a>Настройка запроса 
 
-В POST (или другом средстве тестирования веб-API) добавьте конечную точку для компонента, который вы хотите использовать. Используйте приведенную ниже таблицу, чтобы найти соответствующий формат конечной точки и заменить `<your-text-analytics-resource>` его конечной точкой ресурса. Пример.
+В POST (или другом средстве тестирования веб-API) добавьте конечную точку для компонента, который вы хотите использовать. Используйте приведенную ниже таблицу, чтобы найти соответствующий формат конечной точки и заменить `<your-text-analytics-resource>` его конечной точкой ресурса. Пример:
 
 `https://my-resource.cognitiveservices.azure.com/text/analytics/v3.0/languages`
 
@@ -215,32 +228,32 @@ example.json
 
 ### <a name="endpoints-for-sending-synchronous-requests"></a>Конечные точки для отправки синхронных запросов
 
-| Функция | Тип запроса | Конечные точки ресурсов |
+| Компонент | Тип запроса | Конечные точки ресурсов |
 |--|--|--|
-| Определение языка | ПОМЕСТИТЬ | `<your-text-analytics-resource>/text/analytics/v3.0/languages` |
-| Анализ мнений | ПОМЕСТИТЬ | `<your-text-analytics-resource>/text/analytics/v3.0/sentiment` |
-| Интеллектуальный анализ мнений | ПОМЕСТИТЬ | `<your-text-analytics-resource>/text/analytics/v3.0/sentiment?opinionMining=true` |
-| Извлечение ключевой фразы | ПОМЕСТИТЬ | `<your-text-analytics-resource>/text/analytics/v3.0/keyPhrases` |
-| Распознавание именованных сущностей — общие | ПОМЕСТИТЬ | `<your-text-analytics-resource>/text/analytics/v3.0/entities/recognition/general` |
-| Распознавание именованных сущностей — PII | ПОМЕСТИТЬ | `<your-text-analytics-resource>/text/analytics/v3.0/entities/recognition/pii` |
-| Распознавание именованных сущностей — фи | ПОМЕСТИТЬ |  `<your-text-analytics-resource>/text/analytics/v3.0/entities/recognition/pii?domain=phi` |
+| Определение языка | POST | `<your-text-analytics-resource>/text/analytics/v3.0/languages` |
+| Анализ мнений | POST | `<your-text-analytics-resource>/text/analytics/v3.0/sentiment` |
+| Интеллектуальный анализ мнений | POST | `<your-text-analytics-resource>/text/analytics/v3.0/sentiment?opinionMining=true` |
+| Извлечение ключевой фразы | POST | `<your-text-analytics-resource>/text/analytics/v3.0/keyPhrases` |
+| Распознавание именованных сущностей — общие | POST | `<your-text-analytics-resource>/text/analytics/v3.0/entities/recognition/general` |
+| Распознавание именованных сущностей — PII | POST | `<your-text-analytics-resource>/text/analytics/v3.0/entities/recognition/pii` |
+| Распознавание именованных сущностей — фи | POST |  `<your-text-analytics-resource>/text/analytics/v3.0/entities/recognition/pii?domain=phi` |
 
 #### <a name="asynchronous"></a>[Асинхронный](#tab/asynchronous)
 
 ### <a name="endpoints-for-sending-asynchronous-requests-to-the-analyze-endpoint"></a>Конечные точки для отправки асинхронных запросов к `/analyze` конечной точке
 
-| Функция | Тип запроса | Конечные точки ресурсов |
+| Компонент | Тип запроса | Конечные точки ресурсов |
 |--|--|--|
-| Отправить задание анализа | ПОМЕСТИТЬ | `https://<your-text-analytics-resource>/text/analytics/v3.1-preview.3/analyze` |
-| Получение состояния и результатов анализа | GET | `https://<your-text-analytics-resource>/text/analytics/v3.1-preview.3/analyze/jobs/<Operation-Location>` |
+| Отправить задание анализа | POST | `https://<your-text-analytics-resource>/text/analytics/v3.1-preview.4/analyze` |
+| Получение состояния и результатов анализа | GET | `https://<your-text-analytics-resource>/text/analytics/v3.1-preview.4/analyze/jobs/<Operation-Location>` |
 
 ### <a name="endpoints-for-sending-asynchronous-requests-to-the-health-endpoint"></a>Конечные точки для отправки асинхронных запросов к `/health` конечной точке
 
-| Функция | Тип запроса | Конечные точки ресурсов |
+| Компонент | Тип запроса | Конечные точки ресурсов |
 |--|--|--|
-| Отправка Анализ текста для задания работоспособности  | ПОМЕСТИТЬ | `https://<your-text-analytics-resource>/text/analytics/v3.1-preview.3/entities/health/jobs` |
-| Получение состояния задания и результатов | GET | `https://<your-text-analytics-resource>/text/analytics/v3.1-preview.3/entities/health/jobs/<Operation-Location>` |
-| отмена задания. | DELETE | `https://<your-text-analytics-resource>/text/analytics/v3.1-preview.3/entities/health/jobs/<Operation-Location>` |
+| Отправка Анализ текста для задания работоспособности  | POST | `https://<your-text-analytics-resource>/text/analytics/v3.1-preview.4/entities/health/jobs` |
+| Получение состояния задания и результатов | GET | `https://<your-text-analytics-resource>/text/analytics/v3.1-preview.4/entities/health/jobs/<Operation-Location>` |
+| отмена задания. | DELETE | `https://<your-text-analytics-resource>/text/analytics/v3.1-preview.4/entities/health/jobs/<Operation-Location>` |
 
 --- 
 
@@ -276,9 +289,9 @@ example.json
 Если вы выполнили вызов асинхронной `/analyze` или `/health` конечной точки, убедитесь, что получен код ответа 202. чтобы просмотреть результаты, необходимо получить ответ:
 
 1. В ответе API найдите `Operation-Location` из заголовка, который определяет задание, отправленное в API. 
-2. Создайте запрос GET для используемой конечной точки. см. приведенную [выше таблицу](#set-up-a-request) для формата конечной точки и просмотрите [справочную документацию по API](https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-preview-3/operations/AnalyzeStatus). Пример.
+2. Создайте запрос GET для используемой конечной точки. см. приведенную [выше таблицу](#set-up-a-request) для формата конечной точки и просмотрите [справочную документацию по API](https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-preview-3/operations/AnalyzeStatus). Пример:
 
-    `https://my-resource.cognitiveservices.azure.com/text/analytics/v3.1-preview.3/analyze/jobs/<Operation-Location>`
+    `https://my-resource.cognitiveservices.azure.com/text/analytics/v3.1-preview.4/analyze/jobs/<Operation-Location>`
 
 3. Добавьте в `Operation-Location` запрос.
 

@@ -9,10 +9,10 @@ ms.reviewer: klam, estfan
 ms.topic: article
 ms.date: 08/16/2016
 ms.openlocfilehash: 98a6672af7e74fdd0732f3ba03264d2f674eb44f
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92368151"
 ---
 # <a name="high-availability-and-reliability-for-azure-scheduler"></a>Высокая доступность и надежность для планировщика Azure
@@ -42,7 +42,7 @@ ms.locfileid: "92368151"
 
 Планировщик Azure также гарантирует, что ваши данные остаются в пределах того же, но более широкого географического региона, если сбой происходит в Azure. Таким образом, вам не нужно дублировать задания для реализации высокой доступности. Планировщик Azure автоматически обеспечивает высокую доступность для ваших заданий.
 
-## <a name="reliability"></a>Надежность
+## <a name="reliability"></a>надежность;
 
 Доступность самого планировщика Azure поддерживается на высоком уровне, однако к созданным пользователями заданиям применяются другие методы. Предположим, что конечная точка HTTP, вызываемая вашим заданием, недоступна. Планировщик Azure по-прежнему попытается успешно выполнить задание, предоставляя альтернативные способы для обработки ошибок: 
 
@@ -71,7 +71,7 @@ ms.locfileid: "92368151"
 
 Сведения о настройке альтернативной конечной точки см. в разделе [errorAction](scheduler-concepts-terms.md#error-action).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Основные понятия, терминология и иерархия сущностей](scheduler-concepts-terms.md)
 * [Справочник по API REST планировщика Azure](/rest/api/scheduler)

@@ -8,12 +8,12 @@ ms.date: 12/04/2020
 ms.author: rogarana
 ms.subservice: files
 ms.custom: references_regions
-ms.openlocfilehash: 482e6c9f2e25b867574090a1f34e95f466916ba9
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0ed41cc01fcf5aa35b3d2195518b8e2bb0f3b9c4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101711847"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104588245"
 ---
 # <a name="azure-file-share-protocols"></a>Протоколы файловых ресурсов Azure
 
@@ -21,12 +21,12 @@ ms.locfileid: "101711847"
 
 ## <a name="differences-at-a-glance"></a>Краткий обзор различий
 
-|Функция  |NFS (Предварительная версия)  |SMB  |
+|Компонент  |NFS (Предварительная версия)  |SMB  |
 |---------|---------|---------|
 |Протоколы доступа     |NFS 4,1         |SMB 2,1, SMB 3,0         |
 |Рекомендуемая ОС     |Ядро Linux версии 4.3 +         |Windows 2008 R2 +, ядро Linux версии 4.11 +         |
 |[Доступные уровни](storage-files-planning.md#storage-tiers)     |Хранилище уровня "Премиум"         |Хранилище класса Premium, оптимизированное, неактивное, холодное         |
-|Модель выставления счетов         |[Оплата подготовленной емкости](https://docs.microsoft.com/azure/storage/files/understanding-billing#provisioned-model)         |[Оплата подготовленной емкости для уровня "Премиум](https://docs.microsoft.com/azure/storage/files/understanding-billing#provisioned-model)" с [оплатой по мере использования для уровня "Стандартный"](https://docs.microsoft.com/azure/storage/files/understanding-billing#pay-as-you-go-model)         |
+|Модель выставления счетов         |[Оплата подготовленной емкости](./understanding-billing.md#provisioned-model)         |[Оплата подготовленной емкости для уровня "Премиум](./understanding-billing.md#provisioned-model)" с [оплатой по мере использования для уровня "Стандартный"](./understanding-billing.md#pay-as-you-go-model)         |
 |[Избыточность](storage-files-planning.md#redundancy)     |LRS, ZRS         |LRS, ZRS, GRS         |
 |Аутентификация     |Только проверка подлинности на основе узла        |Аутентификация на основе удостоверений, проверка подлинности на основе пользователей         |
 |Разрешения     |Разрешения в стиле UNIX         |Разрешения в стиле NTFS         |

@@ -11,19 +11,19 @@ ms.date: 03/15/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 608017c15d039be940d1d67b8f9e1bf7618134b7
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 87415fc98bbcc9331ae4ff6282a65c85b570042d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103491517"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579779"
 ---
 # <a name="web-sign-in-with-openid-connect-in-azure-active-directory-b2c"></a>Вход в веб-приложения с помощью OpenID Connect в Azure Active Directory B2C
 
 OpenID Connect — это протокол проверки подлинности на основе OAuth 2.0, который может использоваться для безопасного входа пользователей в веб-приложения. Используя реализацию OpenID Connect в Azure Active Directory B2C (Azure AD B2C), можно передать Azure Active Directory (Azure AD) регистрацию, вход в систему и другие действия по управлению пользователями в веб-приложениях. В этом руководстве показано, как это сделать (независимо от языка программирования). и описывает, как отправлять и получать сообщения HTTP, не используя ни одну из наших библиотек с открытым исходным кодом.
 
 > [!NOTE]
-> Большинство библиотек проверки подлинности с открытым исходным кодом получают и проверяют маркеры JWT для вашего приложения. Мы рекомендуем изучить эти варианты, а не реализовывать собственный код. Дополнительные сведения см. [в статье Обзор библиотеки проверки подлинности Майкрософт (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)и [библиотеки веб-аутентификации Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/microsoft-identity-web).
+> Большинство библиотек проверки подлинности с открытым исходным кодом получают и проверяют маркеры JWT для вашего приложения. Мы рекомендуем изучить эти варианты, а не реализовывать собственный код. Дополнительные сведения см. [в статье Обзор библиотеки проверки подлинности Майкрософт (MSAL)](../active-directory/develop/msal-overview.md)и [библиотеки веб-аутентификации Microsoft Identity](../active-directory/develop/microsoft-identity-web.md).
 
 [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html) расширяет возможности протокола *авторизации* OAuth 2.0 и позволяет использовать его в качестве протокола *проверки подлинности*, Этот протокол проверки подлинности позволяет выполнять единый вход. В нем представлено понятие *маркера идентификации*, которое позволяет клиенту проверить подлинность пользователя и получить основные сведения о профиле пользователя.
 
@@ -48,7 +48,7 @@ client_id=90c0fe63-bcf2-44d5-8fb7-b8bbc0b29dc6
 &nonce=12345
 ```
 
-| Параметр | Обязательный | Описание |
+| Параметр | Обязательно | Описание |
 | --------- | -------- | ----------- |
 | клиентом | Да | Имя клиента Azure AD B2C |
 | политик | Да | Выполняемый пользователем поток. Укажите имя потока пользователей, созданного в Azure AD B2C клиенте. Например, `b2c_1_sign_in`, `b2c_1_sign_up`или `b2c_1_edit_profile`. |
@@ -103,7 +103,7 @@ error=access_denied
 Получение маркера идентификации не является достаточным для прохождения пользователем проверки подлинности. Проверьте подпись маркера идентификации и проверьте утверждения в маркере на соответствие требованиям приложения. В Azure AD B2C для подписи маркеров и проверки их правильности используются [веб-маркеры JSON Web Token (JWT)](https://self-issued.info/docs/draft-ietf-oauth-json-web-token.html) и шифрование с открытым ключом. 
 
 > [!NOTE]
-> Большинство библиотек проверки подлинности с открытым исходным кодом проверяют токены JWT для вашего приложения. Мы рекомендуем изучить эти варианты, а не реализовывать собственную логику проверки. Дополнительные сведения см. [в статье Обзор библиотеки проверки подлинности Майкрософт (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)и [библиотеки веб-аутентификации Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/microsoft-identity-web).
+> Большинство библиотек проверки подлинности с открытым исходным кодом проверяют токены JWT для вашего приложения. Мы рекомендуем изучить эти варианты, а не реализовывать собственную логику проверки. Дополнительные сведения см. [в статье Обзор библиотеки проверки подлинности Майкрософт (MSAL)](../active-directory/develop/msal-overview.md)и [библиотеки веб-аутентификации Microsoft Identity](../active-directory/develop/microsoft-identity-web.md).
 
 Azure AD B2C имеет конечную точку метаданных OpenID Connect Connect, которая позволяет приложению получать сведения о Azure AD B2C во время выполнения. Эти сведения включают конечные точки, содержимое маркеров и ключи подписи маркеров. Для каждого потока пользователя в клиенте B2C есть собственный документ метаданных JSON. Например, документ метаданных для потока пользователя `b2c_1_sign_in` в `fabrikamb2c.onmicrosoft.com` находится в каталоге:
 
@@ -153,7 +153,7 @@ Content-Type: application/x-www-form-urlencoded
 grant_type=authorization_code&client_id=90c0fe63-bcf2-44d5-8fb7-b8bbc0b29dc6&scope=90c0fe63-bcf2-44d5-8fb7-b8bbc0b29dc6 offline_access&code=AwABAAAAvPM1KaPlrEqdFSBzjqfTGBCmLdgfSTLEMPGYuNHSUYBrq...&redirect_uri=urn:ietf:wg:oauth:2.0:oob
 ```
 
-| Параметр | Обязательный | Описание |
+| Параметр | Обязательно | Описание |
 | --------- | -------- | ----------- |
 | клиентом | Да | Имя клиента Azure AD B2C |
 | политик | Да | Поток пользователя, который использовался для получения кода авторизации. В этом запросе нельзя использовать другой поток пользователя. Добавьте этот параметр в строку запроса, а не в тело сообщения POST. |
@@ -222,7 +222,7 @@ Content-Type: application/x-www-form-urlencoded
 grant_type=refresh_token&client_id=90c0fe63-bcf2-44d5-8fb7-b8bbc0b29dc6&scope=openid offline_access&refresh_token=AwABAAAAvPM1KaPlrEqdFSBzjqfTGBCmLdgfSTLEMPGYuNHSUYBrq...&redirect_uri=urn:ietf:wg:oauth:2.0:oob
 ```
 
-| Параметр | Обязательный | Описание |
+| Параметр | Обязательно | Описание |
 | --------- | -------- | ----------- |
 | клиентом | Да | Имя клиента Azure AD B2C |
 | политик | Да | Поток пользователя, который использовался для получения исходного маркера обновления. В этом запросе нельзя использовать другой поток пользователя. Добавьте этот параметр в строку запроса, а не в тело сообщения POST. |
@@ -279,7 +279,7 @@ grant_type=refresh_token&client_id=90c0fe63-bcf2-44d5-8fb7-b8bbc0b29dc6&scope=op
 GET https://{tenant}.b2clogin.com/{tenant}.onmicrosoft.com/{policy}/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Fjwt.ms%2F
 ```
 
-| Параметр | Обязательный | Описание |
+| Параметр | Обязательно | Описание |
 | --------- | -------- | ----------- |
 | клиентом | Да | Имя клиента Azure AD B2C |
 | политик | Да | Поток пользователя, который вы хотите использовать для выхода пользователя из приложения. |

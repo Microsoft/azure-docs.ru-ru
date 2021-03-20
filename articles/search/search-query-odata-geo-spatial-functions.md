@@ -20,17 +20,17 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 376cece922ca424ec78011224852b1fa5499da16
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88934843"
 ---
 # <a name="odata-geo-spatial-functions-in-azure-cognitive-search---geodistance-and-geointersects"></a>Геопространственные функции OData в Azure Когнитивный поиск `geo.distance` и `geo.intersects`
 
 Azure Когнитивный поиск поддерживает геопространственные запросы в [выражениях фильтра OData](query-odata-filter-orderby-syntax.md) с помощью `geo.distance` `geo.intersects` функций и. `geo.distance`Функция возвращает расстояние в километрах между двумя точками, одно из которых является переменной поля или диапазона, а второй — константой, передаваемой в качестве части фильтра. `geo.intersects`Функция возвращает `true` , если заданная точка находится внутри заданного многоугольника, где точка — это поле или переменная диапазона, а многоугольник — как константа, передаваемая как часть фильтра.
 
-`geo.distance`Функция также может использоваться в [параметре **$OrderBy** ](search-query-odata-orderby.md) для сортировки результатов поиска по расстоянию от заданной точки. Синтаксис для `geo.distance` в **$orderby** такой же, как и в **$filter**. При использовании `geo.distance` в **$OrderBy**поле, к которому оно применяется, должно иметь тип `Edm.GeographyPoint` , а также быть **сортируемый**.
+`geo.distance`Функция также может использоваться в [параметре **$OrderBy**](search-query-odata-orderby.md) для сортировки результатов поиска по расстоянию от заданной точки. Синтаксис для `geo.distance` в **$orderby** такой же, как и в **$filter**. При использовании `geo.distance` в **$OrderBy** поле, к которому оно применяется, должно иметь тип `Edm.GeographyPoint` , а также быть **сортируемый**.
 
 > [!NOTE]
 > При использовании `geo.distance` в параметре **$OrderBy** поле, передаваемое в функцию, должно содержать только одну географическую точку. Иными словами, он должен иметь тип `Edm.GeographyPoint` , а не `Collection(Edm.GeographyPoint)` . Невозможно выполнить сортировку по полям коллекции в Когнитивный поиск Azure.

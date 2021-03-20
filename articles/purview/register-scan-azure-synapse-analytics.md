@@ -7,12 +7,12 @@ ms.service: purview
 ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 10/22/2020
-ms.openlocfilehash: 62ca32ab4e348e1488fbb87672e582436b91d05d
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.openlocfilehash: 3111b3a102abd923169cf655f1d71e79b19f7d5d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98875015"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104598139"
 ---
 # <a name="register-and-scan-azure-synapse-analytics"></a>Регистрация и проверка Azure синапсе Analytics
 
@@ -127,7 +127,7 @@ GO
 На экране **Register Sources (Azure синапсе Analytics) (регистрация источников)** выполните следующие действия.
 
 1. Введите **Имя**, под которым этот источник данных будет включен в каталог.
-1. Выберите способ указания нужной учетной записи хранения:
+1. Выберите способ указания нужного логического SQL Server:
    1. Выберите **из подписки Azure**, выберите подходящую подписку в раскрывающемся списке **Подписка Azure** и соответствующий сервер в раскрывающемся списке **имя сервера** .
    1. Можно также выбрать действие **Ввести вручную** и указать **Имя сервера**.
 1. Щелкните **Готово**, чтобы завершить регистрацию источника данных.

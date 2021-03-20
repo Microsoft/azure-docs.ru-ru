@@ -6,10 +6,10 @@ ms.topic: reference
 ms.date: 08/16/2020
 ms.author: cshoe
 ms.openlocfilehash: 942ca3229808b57894598c3477e9dc97e40e8c80
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88689575"
 ---
 # <a name="register-azure-functions-binding-extensions"></a>Регистрация расширений привязки функций Azure
@@ -25,7 +25,7 @@ ms.locfileid: "88689575"
 |Портал Azure|Автоматически|Автоматически<sup>*</sup>|
 |Non-.NET языки|Автоматически|Использовать [пакеты расширений](#extension-bundles) (рекомендуется) или [явно устанавливать расширения](#explicitly-install-extensions)|
 |Библиотека классов C# с использованием Visual Studio|[С помощью средств NuGet](#vs)|[С помощью средств NuGet](#vs)|
-|Библиотека классов C# с использованием Visual Studio Code|Недоступно|[С помощью .NET Core CLI](#vs-code)|
+|Библиотека классов C# с использованием Visual Studio Code|Н/Д|[С помощью .NET Core CLI](#vs-code)|
 
 <sup>*</sup> Портал использует пакеты расширений.
 
@@ -65,7 +65,7 @@ ms.locfileid: "88689575"
 
 ### <a name="c-class-library-with-visual-studio"></a><a name="vs"></a>\#Библиотека классов C в Visual Studio
 
-В **Visual Studio**пакеты можно установить из консоли диспетчера пакетов с помощью команды [Install-Package](/nuget/tools/ps-ref-install-package) , как показано в следующем примере:
+В **Visual Studio** пакеты можно установить из консоли диспетчера пакетов с помощью команды [Install-Package](/nuget/tools/ps-ref-install-package) , как показано в следующем примере:
 
 ```powershell
 Install-Package Microsoft.Azure.WebJobs.Extensions.ServiceBus -Version <TARGET_VERSION>
@@ -79,7 +79,7 @@ Install-Package Microsoft.Azure.WebJobs.Extensions.ServiceBus -Version <TARGET_V
 
 ### <a name="c-class-library-with-visual-studio-code"></a><a name="vs-code"></a> Библиотека классов C# с Visual Studio Code
 
-В **Visual Studio Code**установите пакеты для проекта библиотеки классов C# из командной строки с помощью команды [DotNet add package](/dotnet/core/tools/dotnet-add-package) в .NET Core CLI. В следующем примере показано, как добавить привязку:
+В **Visual Studio Code** установите пакеты для проекта библиотеки классов C# из командной строки с помощью команды [DotNet add package](/dotnet/core/tools/dotnet-add-package) в .NET Core CLI. В следующем примере показано, как добавить привязку:
 
 ```terminal
 dotnet add package Microsoft.Azure.WebJobs.Extensions.<BINDING_TYPE_NAME> --version <TARGET_VERSION>
