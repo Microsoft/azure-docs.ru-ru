@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 02/11/2019
 ms.author: jgao
 ms.openlocfilehash: 12d704b0a3d92aa0585fb120f969000def282396
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101092196"
 ---
 # <a name="manage-azure-resources-by-using-the-azure-portal"></a>Управление ресурсами Azure с помощью портал Azure
@@ -33,7 +33,7 @@ ms.locfileid: "101092196"
 
 Чтобы открыть ресурс по типу службы, выполните следующие действия.
 
-1. Войдите на [портал Microsoft Azure](https://portal.azure.com).
+1. Войдите на [портал Azure](https://portal.azure.com).
 2. В левой области выберите службу Azure. В этом случае это **учетные записи хранения**.  Если служба не отображается в списке, выберите **все службы**, а затем выберите тип службы.
 
     ![Открытие ресурса Azure на портале](./media/manage-resources-portal/manage-azure-resources-portal-open-service.png)
@@ -48,7 +48,7 @@ ms.locfileid: "101092196"
 
 Чтобы открыть ресурс по группе ресурсов, выполните следующие действия.
 
-1. Войдите на [портал Microsoft Azure](https://portal.azure.com).
+1. Войдите на [портал Azure](https://portal.azure.com).
 2. В области слева выберите **группы ресурсов** , чтобы получить список ресурсов в группе.
 3. Выберите ресурс, который необходимо открыть. 
 
@@ -63,7 +63,7 @@ ms.locfileid: "101092196"
 ## <a name="delete-resources"></a>Удаление ресурсов
 
 1. Откройте ресурс на портале. Инструкции см. в разделе [Открытие ресурсов](#open-resources).
-2. Выберите команду **Удалить**. На следующем снимке экрана показаны параметры управления для виртуальной машины.
+2. Нажмите кнопку **Удалить**. На следующем снимке экрана показаны параметры управления для виртуальной машины.
 
     ![Удаление ресурса Azure](./media/manage-resources-portal/manage-azure-resources-portal-delete-resource.png)
 3. Введите имя ресурса, чтобы подтвердить удаление, а затем выберите **Удалить**.
@@ -114,9 +114,9 @@ ms.locfileid: "101092196"
 
 ## <a name="manage-access-to-resources"></a>Управление доступом к ресурсам
 
-Управление [доступом на основе ролей в Azure (Azure RBAC)](../../role-based-access-control/overview.md) — это способ управления доступом к ресурсам в Azure. Дополнительные сведения см. [в статье назначение ролей Azure с помощью портал Azure](../../role-based-access-control/role-assignments-portal.md).
+Управление [доступом на основе ролей в Azure (Azure RBAC)](../../role-based-access-control/overview.md) — это способ управления доступом к ресурсам в Azure. Дополнительные сведения см. в статье [Назначение ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о Azure Resource Manager см. в разделе [Общие сведения о Azure Resource Manager](overview.md).
 - Сведения о синтаксисе шаблона диспетчер ресурсов см. в разделе [Общие сведения о структуре и синтаксисе шаблонов Azure Resource Manager](../templates/template-syntax.md).

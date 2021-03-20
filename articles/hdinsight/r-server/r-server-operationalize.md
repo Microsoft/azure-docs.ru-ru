@@ -6,17 +6,17 @@ ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 06/27/2018
 ms.openlocfilehash: c90642e58c026c78ce854e7fe74dd36963d48b67
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98944003"
 ---
 # <a name="operationalize-ml-services-cluster-on-azure-hdinsight"></a>Ввод в эксплуатацию кластера служб машинного обучения в Azure HDInsight
 
 После того как вы выполните моделирование данных на кластере служб машинного обучения в HDInsight, полученную модель можно ввести в эксплуатацию для предоставления прогнозов. В этой статье описано выполнение этой задачи.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Кластер служб машинного обучения в HDInsight. Ознакомьтесь со статьей [Create Linux-based clusters in HDInsight by using the Azure portal](../hdinsight-hadoop-create-linux-clusters-portal.md) (Создание кластеров под управлением Linux в HDInsight с помощью портала Azure) и выберите **Службы машинного обучения ML Services** для параметра **Тип кластера**.
 

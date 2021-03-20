@@ -9,17 +9,17 @@ ms.date: 11/18/2019
 ms.author: normesta
 ms.reviewer: stewu
 ms.openlocfilehash: 4b1e5dd3c72122ade2fd4d4092bb18a7acf215f5
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95912949"
 ---
 # <a name="tune-performance-hive-hdinsight--azure-data-lake-storage-gen2"></a>Настройка производительности: Hive, HDInsight & Azure Data Lake Storage 2-го поколения
 
 По умолчанию устанавливаются параметры, которые должны обеспечить оптимальную производительность для самых разных сценариев использования.  Но для запросов с большим количеством операций ввода-вывода, можно повысить производительность Hive в Azure Data Lake Storage 2-го поколения, изменив некоторые настройки.  
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * **Подписка Azure**. См. страницу [бесплатной пробной версии Azure](https://azure.microsoft.com/pricing/free-trial/).
 * **Учетная запись Azure Data Lake Storage 2-го поколения**. Инструкции по ее созданию см. в разделе [Краткое руководство. Создание учетной записи хранения Azure Data Lake Storage 2-го поколения](../common/storage-account-create.md)

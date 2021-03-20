@@ -7,10 +7,10 @@ ms.date: 08/03/2020
 ms.service: signalr
 ms.topic: conceptual
 ms.openlocfilehash: c561bb507a5178f4a838b370a3da8af9447829f4
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101092556"
 ---
 # <a name="authenticate-a-managed-identity-with-azure-active-directory-to-access-azure-signalr-resources"></a>Проверка подлинности управляемого удостоверения с Azure Active Directory для доступа к ресурсам Azure SignalR
@@ -47,7 +47,7 @@ ms.locfileid: "101092556"
 
 Теперь назначьте это удостоверение службы роли в требуемой области в ресурсах службы Azure SignalR.
 
-## <a name="assign-azure-roles-using-the-azure-portal"></a>Назначение ролей Azure с помощью портал Azure  
+## <a name="assign-azure-roles-using-the-azure-portal"></a>Назначение ролей Azure с помощью портала Azure  
 Дополнительные сведения об управлении доступом к ресурсам Azure с помощью Azure RBAC и портал Azure см. в [этой статье](..//role-based-access-control/role-assignments-portal.md). 
 
 Определив соответствующую область для назначения ролей, перейдите к этому ресурсу в портал Azure. Отобразить параметры управления доступом (IAM) для ресурса и выполнить следующие инструкции для управления назначениями ролей:
@@ -82,7 +82,7 @@ services.AddSignalR().AddAzureSignalR(option =>
 });
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения о RBAC см. в статье [что такое управление доступом на основе ролей в Azure (Azure RBAC)](../role-based-access-control/overview.md)?
 - Чтобы узнать, как назначать назначения ролей Azure и управлять ими с помощью Azure PowerShell, Azure CLI или REST API, см. следующие статьи:
     - [Управление доступом на основе ролей с помощью Azure PowerShell](../role-based-access-control/role-assignments-powershell.md)  

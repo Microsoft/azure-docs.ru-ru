@@ -12,10 +12,10 @@ ms.author: aamalvea
 ms.reviewer: wiassaf, sstein
 ms.date: 05/04/2020
 ms.openlocfilehash: c7f72a9b140c68320e221a4cfb20cbf107a5f531
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100572268"
 ---
 # <a name="create-alerts-for-azure-sql-database-and-azure-synapse-analytics-using-the-azure-portal"></a>Создание оповещений для базы данных SQL Azure и Azure синапсе Analytics с помощью портал Azure
@@ -52,7 +52,7 @@ ms.locfileid: "100572268"
 1. На [портале](https://portal.azure.com/)найдите ресурс, который нужно отслеживать, и выберите его.
 2. В разделе Мониторинг выберите **оповещения** . Текст и значок для разных ресурсов могут незначительно отличаться.  
 
-   ![Наблюдение](./media/alerts-insights-configure-portal/Alerts.png)
+   ![Мониторинг](./media/alerts-insights-configure-portal/Alerts.png)
   
 3. Нажмите кнопку **создать правило генерации оповещений** , чтобы открыть страницу **Создание правила** .
   ![Создать правило](./media/alerts-insights-configure-portal/create-rule.png)
@@ -71,6 +71,6 @@ ms.locfileid: "100572268"
 
 В течение 10 минут оповещение активно и активируется, как описано выше.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте больше о [настройке веб-перехватчиков webhook в оповещениях](../../azure-monitor/alerts/alerts-webhooks.md).

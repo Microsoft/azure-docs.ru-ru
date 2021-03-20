@@ -8,10 +8,10 @@ ms.date: 2/18/2021
 author: sayantanroy83
 ms.author: sroy
 ms.openlocfilehash: 1ff6262a75261c575082f3fc48d588c868ad0b51
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101092516"
 ---
 # <a name="manage-metered-billing-anomalies-in-partner-center"></a>Управление аномалиями с оплатой в центре партнеров
@@ -77,7 +77,7 @@ ms.locfileid: "101092516"
 > [!IMPORTANT]
 > Вы можете повторно отправить избыточные сведения об использовании в случае чрезмерной зарядки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Выставление счетов за использование SaaS с помощью службы контроля использования коммерческих рынков](./partner-center-portal/saas-metered-billing.md)
 - [Выставленный счет за контролируемое приложение](./partner-center-portal/azure-app-metered-billing.md)
 - [Служба обнаружения аномалий для выставления счетов по тарифу](./partner-center-portal/anomaly-detection-service-for-metered-billing.md)

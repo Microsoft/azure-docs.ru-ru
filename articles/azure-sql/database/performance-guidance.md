@@ -13,10 +13,10 @@ ms.author: wiassaf
 ms.reviewer: sstein
 ms.date: 03/10/2020
 ms.openlocfilehash: 40657ad2f3b69d62e0e0d9c7d9e0f0be7343547b
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96490607"
 ---
 # <a name="tune-applications-and-databases-for-performance-in-azure-sql-database-and-azure-sql-managed-instance"></a>Настройка приложений и баз данных для повышения производительности в базе данных SQL Azure и Управляемый экземпляр Azure SQL

@@ -16,10 +16,10 @@ ms.workload: infrastructure-services
 ms.date: 09/16/2019
 ms.author: genli
 ms.openlocfilehash: 208e99f61694f5a81a98dbc649e2a6035f57891b
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96018279"
 ---
 # <a name="integrate-azure-vpn-gateway-radius-authentication-with-nps-server-for-multi-factor-authentication"></a>Интеграция аутентификации RADIUS шлюза Azure с NPS-сервером для обеспечения Многофакторной идентификации 
@@ -79,7 +79,7 @@ ms.locfileid: "96018279"
 
       ![Рисунок: параметры подключения типа "точка — сеть"](./media/vpn-gateway-radiuis-mfa-nsp/configure-p2s.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-- [Многофакторная идентификация Azure AD](../active-directory/authentication/concept-mfa-howitworks.md)
+- [Многофакторная идентификация Azure AD](../active-directory/authentication/concept-mfa-howitworks.md)
 - [Интеграция существующей инфраструктуры NPS с многофакторной идентификацией Azure AD](../active-directory/authentication/howto-mfa-nps-extension.md)

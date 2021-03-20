@@ -5,10 +5,10 @@ ms.topic: how-to
 ms.date: 10/08/2020
 ms.custom: seodec18, devx-track-azurecli
 ms.openlocfilehash: 845a32c2feda5a5a3b8d44d237c62db94cae1779
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91848727"
 ---
 # <a name="use-azure-batch-cli-templates-and-file-transfer"></a>Использование шаблонов интерфейса командной строки для пакетной службы Azure и передачи файлов

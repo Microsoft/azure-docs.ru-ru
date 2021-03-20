@@ -13,10 +13,10 @@ ms.date: 11/4/2020
 ms.author: inhenkel
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: b9234b27e2f08e65f569393bde342cba3f37adee
-ms.sourcegitcommit: c157b830430f9937a7fa7a3a6666dcb66caa338b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95971328"
 ---
 # <a name="create-a-media-services-account"></a>Создание учетной записи служб мультимедиа
@@ -61,6 +61,6 @@ ms.locfileid: "95971328"
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Краткое руководство по потоковой передаче видеофайлов — .NET](stream-files-dotnet-quickstart.md)

@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 09/29/2020
 ms.author: duau
 ms.openlocfilehash: d001a7a24d44c46a19bde08051e21d3ae3c5acb8
-ms.sourcegitcommit: 44188608edfdff861cc7e8f611694dec79b9ac7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99538057"
 ---
 # <a name="caching-with-azure-front-door"></a>Кэширование с помощью передней дверцы Azure
@@ -115,7 +115,7 @@ ms.locfileid: "99538057"
 
 Cache-Control заголовки ответа, указывающие, что ответ не будет кэшироваться, например Cache-Control: Private, Cache-Control: un-Cache и Cache-Control: No-Store, не учитывается.  Если Cache-Control отсутствует, то по умолчанию на передней дверце будет кэшироваться ресурс на X-й период, где X возвращается случайным образом в диапазоне от 1 до 3 дней.
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="request-headers"></a>Заголовки запросов
 
 Следующие заголовки запросов не будут перенаправляться в серверную часть при использовании кэширования.
 - Content-Length

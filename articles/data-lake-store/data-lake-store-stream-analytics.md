@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 05/30/2018
 ms.author: twooley
 ms.openlocfilehash: 4c289ecb1d8471a7b99f1d4c85a0163de4d0c593
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91576223"
 ---
 # <a name="stream-data-from-azure-storage-blob-into-azure-data-lake-storage-gen1-using-azure-stream-analytics"></a>Потоковая передача данных из большого двоичного объекта службы хранилища Azure в Azure Data Lake Storage 1-го поколения с помощью Azure Stream Analytics
@@ -72,7 +72,7 @@ ms.locfileid: "91576223"
     ![Снимок экрана: Data Lake Storage Новая колонка вывода с вызываемым параметром авторизации.](./media/data-lake-store-stream-analytics/create.output.2.png "Добавление выходных данных в задание")
 
     * **Выходной псевдоним** — введите уникальное имя для этих выходных данных задания. Это понятное имя, которое используется в запросах для направления выходных данных запроса в соответствующую учетную запись Data Lake Storage 1-го поколения.
-    * Появится запрос на авторизацию доступа к учетной записи Data Lake Storage 1-го поколения. Щелкните **Авторизовать**.
+    * Появится запрос на авторизацию доступа к учетной записи Data Lake Storage 1-го поколения. Нажмите кнопку **авторизовать**.
 
 3. В колонке **Новые выходные данные** продолжайте ввод значений.
 
@@ -92,7 +92,7 @@ ms.locfileid: "91576223"
 
 1. Чтобы выполнить Stream Analytics задание, необходимо выполнить запрос на вкладке **запрос** . В этом руководстве можно выполнить пример запроса, заменив заполнители на входные и выходные псевдонимы задания, как показано на снимке экрана ниже.
 
-    ![Выполнение запроса](./media/data-lake-store-stream-analytics/run.query.png "Выполнение запроса")
+    ![Выполнить запрос](./media/data-lake-store-stream-analytics/run.query.png "Выполнение запроса")
 
 2. Щелкните **Сохранить** в верхней части экрана, а затем на вкладке **Обзор** щелкните **Запустить**. В диалоговом окне выберите **Настраиваемое время** и установите текущие дату и время.
 
@@ -112,5 +112,5 @@ ms.locfileid: "91576223"
 
     В области обозревателя данных Azure Data Explorer можно увидеть, что выходные данные записаны в папку, указанную в параметрах выходных данных Data Lake Storage 1-го поколения (`streamanalytics/job/output/{date}/{time}`).  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 * [Создание кластера HDInsight для работы с Data Lake Storage 1-го поколения](data-lake-store-hdinsight-hadoop-use-portal.md)

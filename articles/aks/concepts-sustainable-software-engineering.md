@@ -5,10 +5,10 @@ services: container-service
 ms.topic: conceptual
 ms.date: 08/26/2020
 ms.openlocfilehash: e179b49879b78b2bab738407984c0f50d161114b
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100572672"
 ---
 # <a name="sustainable-software-engineering-principles-in-azure-kubernetes-service-aks"></a>Устойчивые принципы проектирования программного обеспечения в службе Azure Kubernetes (AKS)
@@ -45,7 +45,7 @@ ms.locfileid: "100572672"
 
 По возможности рассмотрите возможность сдвига ресурсов кластера на время или регионы, в которых можно использовать избыточную емкость. Например, можно изменить время или регион для пакетного задания, чтобы запустить или использовать [плашечные пулы][spot-pools]. Также рекомендуется выполнить рефакторинг приложения, чтобы использовать очередь для отсчета выполняющихся рабочих нагрузок, которые не требуют немедленной обработки.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о функциях AKS, упомянутых в этой статье:
 
@@ -57,7 +57,7 @@ ms.locfileid: "100572672"
 * [Плашечные пулы][spot-pools]
 * [Пулы систем][system-pools]
 * [Резервирование ресурсов][resource-reservations]
-* [Группы размещения близкого взаимодействия][proiximity-placement-groups]
+* [Группы размещения с учетом расположения][proiximity-placement-groups]
 * [Зоны доступности][availability-zones]
 
 [availability-zones]: availability-zones.md

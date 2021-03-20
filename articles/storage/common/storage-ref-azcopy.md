@@ -9,10 +9,10 @@ ms.author: normesta
 ms.subservice: common
 ms.reviewer: zezha-msft
 ms.openlocfilehash: 19d5a5214ae4d2d6c0a18b68863211aa1f6573c6
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98878992"
 ---
 # <a name="azcopy"></a>azcopy
@@ -32,7 +32,7 @@ AzCopy — это программа командной строки, котор
 - [Перенос данных с помощью AzCopy и хранилища файлов](storage-use-azcopy-files.md)
 - [Configure, optimize, and troubleshoot AzCopy](storage-use-azcopy-configure.md) (Настройка, оптимизация и устранение неполадок с AzCopy)
 
-## <a name="options"></a>Варианты
+## <a name="options"></a>Параметры
 
 **--Cap-Мбит/** с (float) — скорость передачи, в мегабит в секунду. Посекундная пропускная способность может немного отличаться от ограничения. Если этот параметр имеет значение 0 или пропущен, пропускная способность не ограничена.
 

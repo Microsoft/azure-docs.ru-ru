@@ -7,10 +7,10 @@ ms.date: 03/30/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: cd7496690ec88fbe4297386c32d1b8a2c3234577
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91540767"
 ---
 # <a name="customize-feed-for-windows-virtual-desktop-classic-users"></a>Настройка веб-канала для пользователей виртуальных рабочих столов Windows (классические)
@@ -70,7 +70,7 @@ Set-RdsRemoteDesktop -TenantName <tenantname> -HostPoolName <hostpoolname> -AppG
 > [!div class="mx-imgBorder"]
 > ![Снимок экрана командлета PowerShell Set-RDSRemoteApp с именем и другим выделенным FriendlyName.](../media/set-rdsremotedesktop.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы настроили веб-канал для пользователей, вы можете войти в клиент виртуальных рабочих столов Windows, чтобы протестировать его. Для этого перейдите к инструкциям по подключению к виртуальному рабочему столу Windows.
 

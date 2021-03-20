@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.custom: devx-track-dotnet
 ms.date: 06/23/2020
 ms.openlocfilehash: bf22b8b11dc386644803b43ee4e3a51d04b70419
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90527434"
 ---
 # <a name="get-started-with-relay-hybrid-connections-websockets-in-net"></a>Начало работы с гибридными подключениями Azure Relay с использованием WebSocket и .NET
@@ -56,7 +56,7 @@ ms.locfileid: "90527434"
 
 Поздравляем, вы создали законченное приложение гибридные подключения!
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этом кратком руководстве описано, как создать клиентские и серверные приложения .NET, которые отправляют и получают сообщения по протоколу WebSocket. Функция гибридных подключений службы Azure Relay также поддерживает использование протокола HTTP для отправки и получения сообщений. См. дополнительные сведения об [использовании протокола HTTP с гибридными подключениями Azure Relay](relay-hybrid-connections-http-requests-dotnet-get-started.md).
 
 В этом кратком руководстве описано, как использовать .NET Framework для создания клиентских и серверных приложений. Сведения о том, как создавать клиентские и серверные приложения с помощью Node.js, см. в руководствах по использованию [Node.js и WebSocket](relay-hybrid-connections-node-get-started.md) или [Node.js и HTTP](relay-hybrid-connections-http-requests-dotnet-get-started.md).

@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ad7b0039602add7f4cd3cdd300bd829c4f148a79
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90084742"
 ---
 # <a name="azure-ad-connect-sync-scheduler"></a>Синхронизация Azure AD Connect: планировщик
@@ -169,7 +169,7 @@ ms.locfileid: "90084742"
 
    ![На снимке экрана показаны Synchronization Service Manager с выбранными соединителями и выделенный соединитель с выбранным действием "выполнить прерывание".](./media/how-to-connect-sync-feature-scheduler/stopaconnector.png)
 
-   * Запустите **службу синхронизации** из меню "Пуск". Перейдите в раздел **соединители**, выделите соединитель с состоянием **работает**и выберите пункт **приостанавливаться** на действиях.
+   * Запустите **службу синхронизации** из меню "Пуск". Перейдите в раздел **соединители**, выделите соединитель с состоянием **работает** и выберите пункт **приостанавливаться** на действиях.
 
 Планировщик останется активным и при первой возможности запустится снова.
 
@@ -215,7 +215,7 @@ Get-ADSyncConnectorRunStatus
 ## <a name="scheduler-and-installation-wizard"></a>Планировщик и мастер установки
 При запуске мастера установки планировщик приостанавливается. Это связано с тем, что вы можете внести изменения в конфигурацию, а во время активной работы модуля синхронизации их нельзя будет применить. Пока мастер установки открыт, модуль синхронизации не выполняет никаких действий по синхронизации.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте больше о настройке [службы синхронизации Azure AD Connect](how-to-connect-sync-whatis.md) .
 
 Узнайте больше об [интеграции локальных удостоверений с Azure Active Directory](whatis-hybrid-identity.md).

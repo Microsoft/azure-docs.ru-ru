@@ -14,10 +14,10 @@ ms.date: 03/16/2018
 ms.author: duau
 ms.custom: ''
 ms.openlocfilehash: 2bb104fd9cfc3c4ffddb82e4cf442e94c4650550
-ms.sourcegitcommit: 0aec60c088f1dcb0f89eaad5faf5f2c815e53bf8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98184564"
 ---
 # <a name="how-to-send-real-user-measurements-to-azure-traffic-manager-using-web-pages"></a>Как отправить измерения на стороне пользователей в диспетчер трафика Azure с использованием веб-страниц
@@ -66,6 +66,6 @@ ms.locfileid: "98184564"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - Узнайте больше об [измерениях на стороне пользователей](traffic-manager-rum-overview.md).
-- Узнайте о том, [как работает диспетчер трафика](traffic-manager-overview.md)
+- Узнайте, [как работает диспетчер трафика](traffic-manager-overview.md)
 - Узнайте больше о [методах маршрутизации трафика](traffic-manager-routing-methods.md) , поддерживаемых в диспетчере трафика.
 - Узнайте, как [создать профиль диспетчера трафика](./quickstart-create-traffic-manager-profile.md)

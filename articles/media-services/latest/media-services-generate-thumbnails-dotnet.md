@@ -15,10 +15,10 @@ ms.date: 12/01/2020
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 3efb5aa864f0940b7b5aa6a9131da9ce8bd732ee
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101092818"
 ---
 # <a name="how-to-generate-thumbnails-using-encoder-standard-with-net"></a>Создание эскизов с помощью кодировщика Standard в .NET
@@ -95,6 +95,6 @@ private static Transform EnsureTransformExists(IAzureMediaServicesClient client,
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Создание эскизов с помощью функции "ОСТАВШАЯся"](media-services-generate-thumbnails-rest.md)

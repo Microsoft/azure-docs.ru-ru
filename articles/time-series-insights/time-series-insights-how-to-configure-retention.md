@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 09/29/2020
 ms.custom: seodec18
 ms.openlocfilehash: 468b4f7ca7b0af4abc32df5d9ef64a74154d3de1
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91569407"
 ---
 # <a name="configuring-retention-in-azure-time-series-insights-gen1"></a>Настройка хранения в Gen1 "аналитика временных рядов Azure"
@@ -35,7 +35,7 @@ ms.locfileid: "91569407"
 
 Подробные сведения о том, как лучше понять эти параметры, см. [в этой статьи](time-series-insights-concepts-retention.md).  
 
-## <a name="configure-data-retention"></a>Настройка срока хранения данных
+## <a name="configure-data-retention"></a>Настройка хранения данных
 
 1. Войдите на [портал Azure](https://portal.azure.com).
 
@@ -55,7 +55,7 @@ ms.locfileid: "91569407"
 
 1. Изучите документацию, чтобы понять потенциальные риски потери данных. Нажмите кнопку **Сохранить**, чтобы сохранить изменения.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения см. в обзоре [хранения в службе "аналитика временных рядов Azure](time-series-insights-concepts-retention.md)".
 

@@ -11,10 +11,10 @@ services: azure-maps
 manager: timlt
 ms.custom: devx-track-js
 ms.openlocfilehash: 9d2af0bf731ab069a8512cb10feccf5ba18d3fa0
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101092725"
 ---
 # <a name="how-to-secure-a-single-page-application-with-non-interactive-sign-in"></a>Как защитить одностраничное приложение с помощью неинтерактивного входа
@@ -109,14 +109,14 @@ ms.locfileid: "101092725"
     > [!div class="mx-imgBorder"]
     > ![Предоставление доступа с помощью Azure RBAC](./media/how-to-manage-authentication/how-to-grant-rbac.png)
 
-2. На вкладке **назначения ролей** в разделе **роль** выберите встроенное определение роли Azure Maps, например **Azure Maps модуль чтения данных** или **участник данных Azure Maps**. В разделе **назначение доступа к** выберите **приложение-функция**. Выберите участника по имени. Затем выберите **Сохранить**.
+2. На вкладке **назначения ролей** в разделе **роль** выберите встроенное определение роли Azure Maps, например **Azure Maps модуль чтения данных** или **участник данных Azure Maps**. В разделе **назначение доступа к** выберите **приложение-функция**. Выберите участника по имени. Затем нажмите кнопку **Save** (Сохранить).
 
    * См. Дополнительные сведения о [назначении ролей Azure](../role-based-access-control/role-assignments-portal.md).
 
 > [!WARNING]
 > Azure Maps определения встроенных ролей предоставляют очень большие разрешения на доступ к множеству Azure Maps интерфейсов API. Чтобы ограничить доступ через API к минимуму, см. раздел [Создание пользовательского определения роли и назначение назначенного системой удостоверения](../role-based-access-control/custom-roles.md) пользовательскому определению роли. Это обеспечит минимальный уровень привилегий, необходимых приложению для доступа к Azure Maps.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дальнейшее понимание сценария одностраничного приложения:
 > [!div class="nextstepaction"]

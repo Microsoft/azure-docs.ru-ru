@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/25/2019
 ms.author: ramamill
 ms.openlocfilehash: d921bddf90c415cb244e2cc9ad98354392a537ee
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90530171"
 ---
 # <a name="manage-the-mobility-agent"></a>Управление агентом службы "Мобильность" 
@@ -69,8 +69,8 @@ Update-AzRecoveryServicesAsrMobilityService -ReplicationProtectedItem $rpi -Acco
 
 Выполните удаление из пользовательского интерфейса или командной строки.
 
-- **Из пользовательского интерфейса**: на панели управления компьютера выберите **Программы**. Выберите **Microsoft Azure Site Recovery удаление службы Mobility Service/главного целевого сервера**  >  **Uninstall**.
-- **Из командной строки**: откройте окно командной строки с правами администратора компьютера. Выполните следующую команду: 
+- **Из пользовательского интерфейса**: на панели управления компьютера выберите **Программы**. Выберите **Microsoft Azure Site Recovery удаление службы Mobility Service/главного целевого сервера**  >  .
+- **Из командной строки**: откройте окно командной строки с правами администратора компьютера. Выполните следующую команду. 
     ```
     MsiExec.exe /qn /x {275197FC-14FD-4560-A5EB-38217F80CBD1} /L+*V "C:\ProgramData\ASRSetupLogs\UnifiedAgentMSIUninstall.log"
     ```
@@ -78,7 +78,7 @@ Update-AzRecoveryServicesAsrMobilityService -ReplicationProtectedItem $rpi -Acco
 ### <a name="on-a-linux-machine"></a>На компьютере с Linux
 1. На компьютере с Linux войдите в систему как **привилегированный** пользователь.
 2. В терминале перейдите по адресу/usr/local/ASR.
-3. Выполните следующую команду:
+3. Выполните следующую команду.
     ```
     uninstall.sh -Y
    ```
@@ -92,7 +92,7 @@ Update-AzRecoveryServicesAsrMobilityService -ReplicationProtectedItem $rpi -Acco
 3. Запустите скрипт InMageVSSProvider_Uninstall. cmd. Служба будет удалена, если она уже существует.
 4. Выполните скрипт InMageVSSProvider_Install. cmd, чтобы установить поставщик VSS вручную.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Настройка аварийного восстановления для виртуальных машин VMware](vmware-azure-tutorial.md)
 - [Настройка аварийного восстановления в Azure для локальных физических серверов](physical-azure-disaster-recovery.md)

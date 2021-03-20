@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 05/29/2018
 ms.author: twooley
 ms.openlocfilehash: b7cb9d5c5c2ca850678d3f3194a9af8de526ada4
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92103396"
 ---
 # <a name="use-azure-powershell-to-create-an-hdinsight-cluster-with-azure-data-lake-storage-gen1-as-additional-storage"></a>Использование Azure PowerShell для создания кластера HDInsight с Azure Data Lake Storage 1-го поколения (в качестве дополнительного хранилища)
@@ -51,7 +51,7 @@ ms.locfileid: "92103396"
 Перед началом работы с этим учебником необходимо иметь следующее:
 
 * **Подписка Azure**. См. страницу [бесплатной пробной версии Azure](https://azure.microsoft.com/pricing/free-trial/).
-* **Azure PowerShell 1,0 или более поздней**версии. Ознакомьтесь со статьей [Установка и настройка Azure PowerShell](/powershell/azure/).
+* **Azure PowerShell 1,0 или более поздней** версии. Ознакомьтесь со статьей [Установка и настройка Azure PowerShell](/powershell/azure/).
 * **Windows SDK**. Его можно установить [отсюда](https://dev.windows.com/en-us/downloads). Пакет используется для создания сертификата безопасности.
 * **Субъект-служба Azure Active Directory**. В этом учебнике приведены инструкции по созданию субъекта-службы в Azure AD. Однако, чтобы создать субъект-службу, необходимо быть администратором Azure AD. Если вы являетесь администратором Azure AD, то можете пропустить это предварительное требование и продолжить работу с учебником.
 
@@ -87,7 +87,7 @@ ms.locfileid: "92103396"
     New-AzResourceGroup -Name $resourceGroupName -Location "East US 2"
     ```
 
-    Вы должны увидеть следующий результат:
+    Вы должны увидеть такие выходные данные:
 
     ```output
     ResourceGroupName : hdiadlgrp

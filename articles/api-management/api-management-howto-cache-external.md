@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 04/26/2020
 ms.author: apimpm
 ms.openlocfilehash: 6288a10e111e42629abf5e09b84a6a7791dcfe95
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96018228"
 ---
 # <a name="use-an-external-redis-compatible-cache-in-azure-api-management"></a>Использование внешнего Redis кэша в службе управления API Azure
@@ -46,13 +46,13 @@ ms.locfileid: "96018228"
 + [Создание экземпляра службы управления API Azure](get-started-create-service-instance.md)
 + Понимание принципа [кеширования в службе управления API Azure](api-management-howto-cache.md)
 
-## <a name="create-azure-cache-for-redis"></a><a name="create-cache"> </a> Создание кэша Azure для Redis
+## <a name="create-azure-cache-for-redis"></a><a name="create-cache"></a> Создание кэша Azure для Redis
 
 В этом разделе описано, как создать в Azure кэш Redis для Azure. Если у вас уже есть кэш Redis для Azure в Azure или за пределами, вы можете <a href="#add-external-cache">пропустить</a> этот раздел.
 
 [!INCLUDE [redis-cache-create](../../includes/redis-cache-create.md)]
 
-## <a name="deploy-redis-cache-to-kubernetes"></a><a name="create-cache"> </a> Развертывание кэша Redis в Kubernetes
+## <a name="deploy-redis-cache-to-kubernetes"></a><a name="create-cache"></a> Развертывание кэша Redis в Kubernetes
 
 Для кэширования самостоятельные шлюзы основываются исключительно на внешних кэшах. Чтобы кэширование можно было эффективно размещать на самостоятельных шлюзах, и кэш, на котором они основаны, должен располагаться рядом друг с другом, чтобы максимально быстро найти и задержать задержки. Лучшим вариантом является развертывание кэша Redis в том же кластере Kubernetes или в отдельном кластере поблизости. Перейдите по этой [ссылке](https://github.com/kubernetes/examples/tree/master/guestbook) , чтобы узнать, как развернуть кэш Redis в кластере Kubernetes.
 

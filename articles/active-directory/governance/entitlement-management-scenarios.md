@@ -17,15 +17,15 @@ ms.author: ajburnle
 ms.reviewer: mwahl
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c0f45a1481661aa350815560d795ab7411f99545
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92317842"
 ---
 # <a name="common-scenarios-in-azure-ad-entitlement-management"></a>Распространенные сценарии в управлении назначениями Azure AD
 
-Существует несколько способов настройки управления назначениями для Организации. Тем не менее, если вы только начинаете работу, полезно понимать распространенные сценарии для администраторов, владельцев каталогов, доступа к менеджерам пакетов, утверждающим и запрашивающим лицам.
+Существует несколько способов настройки управления правами для организации. Тем не менее, если вы только начинаете работу, полезно понимать распространенные сценарии для администраторов, владельцев каталогов, менеджеров пакетов доступа, утверждающих и запрашивающих лиц.
 
 ## <a name="delegate"></a>Делегат
 
@@ -48,7 +48,7 @@ ms.locfileid: "92317842"
 1. [Просмотр видео: делегирование владельца каталога для доступа к диспетчеру пакетов](https://www.microsoft.com/videoplayer/embed/RE3Lq08)
 1. [Делегирование пользователям доступа к роли диспетчера пакетов](entitlement-management-delegate-managers.md)
 
-## <a name="govern-access-for-users-in-your-organization"></a>Управление доступом для пользователей в Организации
+## <a name="govern-access-for-users-in-your-organization"></a>Управление доступом для пользователей в организации
 
 ### <a name="access-package-manager-allow-employees-in-your-organization-to-request-access-to-resources"></a>Доступ к диспетчеру пакетов: разрешить сотрудникам в вашей организации запрашивать доступ к ресурсам
 
@@ -73,7 +73,7 @@ ms.locfileid: "92317842"
 1. [Войдите на портал доступа](entitlement-management-request-access.md#sign-in-to-the-my-access-portal)
 1. Просмотр пакетов активного доступа
 
-## <a name="govern-access-for-users-outside-your-organization"></a>Управление доступом пользователей за пределами Организации
+## <a name="govern-access-for-users-outside-your-organization"></a>Управление доступом для пользователей в организации
 
 ### <a name="administrator-collaborate-with-an-external-partner-organization"></a>Администратор: совместная работа с внешней партнерской организацией
 
@@ -154,7 +154,7 @@ ms.locfileid: "92317842"
 
 ## <a name="programmatic-administration"></a>Программное администрирование
 
-Вы также можете управлять пакетами доступа, каталогами, политиками, запросами и назначениями с помощью Microsoft Graph.  Пользователь в соответствующей роли с приложением с делегированным `EntitlementManagement.ReadWrite.All` разрешением может вызывать [API управления](/graph/tutorial-access-package-api?view=graph-rest-beta)назначением.
+Вы также можете управлять пакетами доступа, каталогами, политиками, запросами и назначениями с помощью Microsoft Graph.  Пользователь в соответствующей роли с приложением с делегированным `EntitlementManagement.ReadWrite.All` допуском может вызывать [API управления назначением](/graph/tutorial-access-package-api?view=graph-rest-beta).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

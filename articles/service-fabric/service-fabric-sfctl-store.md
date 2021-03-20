@@ -6,10 +6,10 @@ ms.topic: reference
 ms.date: 1/16/2020
 ms.author: jejarry
 ms.openlocfilehash: af5399be44d2946775622598c5c1db3d8355f7cd
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86257076"
 ---
 # <a name="sfctl-store"></a>sfctl store
@@ -19,7 +19,7 @@ ms.locfileid: "86257076"
 
 |Команда|Описание|
 | --- | --- |
-| "Удалить" | Удаляет существующее содержимое хранилища образов. |
+| удалить | Удаляет существующее содержимое хранилища образов. |
 | root-info | Возвращает сведения о содержимом корневого хранилища образов. |
 | stat | Возвращает сведения о содержимом хранилища образов. |
 

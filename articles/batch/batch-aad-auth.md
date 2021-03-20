@@ -5,10 +5,10 @@ ms.topic: how-to
 ms.date: 10/20/2020
 ms.custom: has-adal-ref
 ms.openlocfilehash: 2ceefa538c44208750da8986fcf3d161f0c0865f
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102180026"
 ---
 # <a name="authenticate-batch-service-solutions-with-active-directory"></a>Аутентификация решений пакетной службы с помощью Active Directory

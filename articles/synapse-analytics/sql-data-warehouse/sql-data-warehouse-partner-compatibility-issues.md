@@ -10,10 +10,10 @@ ms.date: 11/18/2020
 ms.author: procha
 ms.reviewer: jrasnick
 ms.openlocfilehash: a1031656eaa5125d07ae078773379270b26625e7
-ms.sourcegitcommit: aacbf77e4e40266e497b6073679642d97d110cda
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98121385"
 ---
 # <a name="compatibility-issues-with-third-party-applications-and-azure-synapse-analytics"></a>Проблемы совместимости с приложениями сторонних производителей и Azure синапсе Analytics

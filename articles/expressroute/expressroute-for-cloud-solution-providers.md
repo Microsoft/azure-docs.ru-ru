@@ -9,10 +9,10 @@ ms.date: 10/10/2016
 ms.author: duau
 ms.custom: seodec18
 ms.openlocfilehash: 09fee610ccc15874481ecfd4693e4b89379caa7a
-ms.sourcegitcommit: 03713bf705301e7f567010714beb236e7c8cee6f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92330042"
 ---
 # <a name="expressroute-for-cloud-solution-providers-csp"></a>ExpressRoute для поставщиков облачных решений (CSP)
@@ -124,7 +124,7 @@ ExpressRoute подключается к сети Azure через шлюз ви
 
 ![замещающий текст](./media/expressroute-for-cloud-solution-providers/expressroute-security.png)  
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Служба Cloud Solution Provider позволяет вам повысить эффективность взаимодействия с клиентом без необходимости приобретать дорогостоящие инфраструктуру и возможности. При этом вы продолжаете выполнять функции основного поставщика услуг аутсорсинга. API CSP обеспечивает простую интеграцию со средой Microsoft Azure, позволяя интегрировать управление Microsoft Azure в существующую платформу управления.  
 
 Дополнительные сведения см. по ссылкам ниже:

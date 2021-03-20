@@ -12,10 +12,10 @@ ms.reviewer: igorstan
 ms.custom: seo-lt-2019
 tags: azure-synapse
 ms.openlocfilehash: ad19c976cceab76d6eb0dbfbea5840d9764bffec
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101092942"
 ---
 # <a name="secure-a-dedicated-sql-pool-formerly-sql-dw-in-azure-synapse-analytics"></a>Защита выделенного пула SQL (ранее — хранилища данных SQL) в Azure синапсе Analytics
@@ -92,9 +92,9 @@ EXEC sp_addrolemember 'db_datawriter', 'ApplicationUser'; -- allows ApplicationU
 GRANT SELECT ON SCHEMA::Test to ApplicationUser
 ```
 
-Управление базами данных и серверами из портал Azure или использование API Azure Resource Manager управляется назначением ролей учетной записи пользователя портала. Дополнительные сведения см. [в статье назначение ролей Azure с помощью портал Azure](../../role-based-access-control/role-assignments-portal.md?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json).
+Управление базами данных и серверами из портал Azure или использование API Azure Resource Manager управляется назначением ролей учетной записи пользователя портала. Дополнительные сведения см. в статье [Назначение ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json).
 
-## <a name="encryption"></a>Шифрование
+## <a name="encryption"></a>Encryption
 
 Прозрачное шифрование данных (TDE) помогает защититься от угроз вредоносных действий путем шифрования и расшифровки неактивных данных. При шифровании базы связанные резервные копии и файлы журналов транзакций шифруются без необходимости вносить изменения в приложения. При использовании TDE хранилище всей базы данных шифруется с помощью симметричного ключа, который называется ключом шифрования базы данных.
 
@@ -102,6 +102,6 @@ GRANT SELECT ON SCHEMA::Test to ApplicationUser
 
 Базу данных можно зашифровать с помощью [портала Azure](sql-data-warehouse-encryption-tde.md) или [T-SQL](sql-data-warehouse-encryption-tde-tsql.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения и примеры подключения к хранилищу с различными протоколами см. в разделе [Подключение к выделенному пулу SQL (ранее — хранилище данных SQL)](sql-data-warehouse-connect-overview.md).
