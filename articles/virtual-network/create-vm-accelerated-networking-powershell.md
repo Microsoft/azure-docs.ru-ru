@@ -15,10 +15,10 @@ ms.workload: infrastructure
 ms.date: 04/15/2020
 ms.author: gsilva
 ms.openlocfilehash: b0ebb75530858a589c3166e21261e2f737fff50d
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98919975"
 ---
 # <a name="create-a-windows-vm-with-accelerated-networking-using-azure-powershell"></a>Создание виртуальной машины Windows с функцией ускорения сети с помощью Azure PowerShell

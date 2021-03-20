@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 03/01/2020
 ms.author: memildin
 ms.openlocfilehash: 4c56f8cba232220844a8a8f9c408a60c89c581cd
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91613634"
 ---
 # <a name="feature-coverage-for-azure-paas-services"></a>Покрытие компонентов для служб Azure PaaS <a name="paas-services"></a>
@@ -32,7 +32,7 @@ ms.locfileid: "91613634"
 |хранилище BLOB-объектов Azure|✔|✔|-|
 |Кэш Azure для Redis|✔|-|-|
 |Oблачныe службы Azure|✔|-|-|
-|Когнитивный поиск Azure|✔|-|-|
+|Когнитивный поиск Azure|✔|-|-|
 |Реестр контейнеров Azure|-|-|✔|
 |Azure Cosmos DB*|-|✔|-|
 |Аналитика озера данных Azure|✔|-|-|

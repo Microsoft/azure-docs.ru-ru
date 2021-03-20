@@ -12,10 +12,10 @@ ms.author: rohitna
 ms.reviewer: vanto, genemi
 ms.date: 11/14/2019
 ms.openlocfilehash: 0dcffe6731c177d1d45c569361fcb200f23af86c
-ms.sourcegitcommit: b4e6b2627842a1183fce78bce6c6c7e088d6157b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99095364"
 ---
 # <a name="use-virtual-network-service-endpoints-and-rules-for-servers-in-azure-sql-database"></a>Использование конечных точек службы и правил виртуальной сети для серверов в Базе данных SQL Azure
@@ -108,7 +108,7 @@ When searching for blogs about ASM, you probably need to use this old and now-fo
 
 Polybase и инструкция COPY обычно используются для загрузки данных в Azure синапсе Analytics из учетных записей хранения Azure для приема данных с высокой пропускной способностью. Если учетная запись хранения Azure, из которой загружаются данные, ограничивает доступ только к набору подсетей виртуальной сети, подключение при использовании Polybase и инструкция COPY в учетной записи хранения будут нарушены. Чтобы включить сценарии импорта и экспорта с помощью копирования и Polybase с Azure синапсе Analytics и подключения к службе хранилища Azure, защищенной для виртуальной сети, выполните действия, описанные в этом разделе.
 
-#### <a name="prerequisites"></a>Предварительные требования
+#### <a name="prerequisites"></a>Предварительные условия
 
 - Установите Azure PowerShell с помощью [этого руководством](/powershell/azure/install-az-ps).
 - При наличии учетной записи общего назначения версии 1 или хранилища BLOB-объектов Azure сначала необходимо выполнить обновление до общего назначения v2, выполнив действия, описанные в статье [обновление до учетной записи хранения общего назначения версии 2](../../storage/common/storage-account-upgrade.md).
@@ -233,7 +233,7 @@ Polybase и инструкция COPY обычно используются дл
 
 - [Правила виртуальной сети: операции][rest-api-virtual-network-rules-operations-862r]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 У вас уже должна быть подсеть, помеченная определенным *именем типа* конечной точки службы виртуальной сети, относящейся к базе данных SQL.
 

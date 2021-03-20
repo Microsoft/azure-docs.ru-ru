@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 06/05/2017
 ms.author: alkohli
 ms.openlocfilehash: 01064c3668b673baea7aedd9a65c92b03c48dc10
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90056009"
 ---
 # <a name="use-the-mmc-menu-actions-in-storsimple-snapshot-manager"></a>Использование действий меню MMC в диспетчере моментальных снимков StorSimple
@@ -98,7 +98,7 @@ ms.locfileid: "90056009"
 1. Щелкните соответствующий значок на рабочем столе, чтобы запустить диспетчер моментальных снимков StorSimple.
 2. На панели **Область** щелкните правой кнопкой мыши любой узел или разверните узел и щелкните правой кнопкой мыши элемент на панели **Результаты**, а затем выберите пункт **Справка**. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте больше о [пользовательском интерфейсе диспетчера моментальных снимков StorSimple](storsimple-use-snapshot-manager.md).
 * Узнайте больше об [использовании диспетчера моментальных снимков StorSimple для администрирования решения StorSimple](storsimple-snapshot-manager-admin.md).
 

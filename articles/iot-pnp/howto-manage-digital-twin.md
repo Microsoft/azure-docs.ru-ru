@@ -1,6 +1,6 @@
 ---
-title: Управление Plug and Play Интернета вещей Digital двойников
-description: Управление устройством Plug and Play IoT с помощью цифровых API-интерфейсов двойника
+title: Управление самонастраивающийся Интернета вещей Digital двойников
+description: Управление устройством самонастраивающийся IoT с помощью цифровых API-интерфейсов двойника
 author: prashmo
 ms.author: prashmo
 ms.date: 07/20/2020
@@ -8,25 +8,25 @@ ms.topic: how-to
 ms.service: iot-pnp
 services: iot-pnp
 ms.openlocfilehash: ddb8027c145f6a38bfcd953be66dae2943a20c3a
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97654614"
 ---
-# <a name="manage-iot-plug-and-play-digital-twins"></a>Управление Plug and Play Интернета вещей Digital двойников
+# <a name="manage-iot-plug-and-play-digital-twins"></a>Управление самонастраивающийся Интернета вещей Digital двойников
 
-IoT Plug and Play поддерживает **получение цифровых двойника** и **обновление цифровых двойниканых** операций для управления цифровыми двойников. Можно использовать [API-интерфейсы](/rest/api/iothub/service/digitaltwin) или один из [пакетов SDK для служб](libraries-sdks.md).
+IoT самонастраивающийся поддерживает **получение цифровых двойника** и **обновление цифровых двойниканых** операций для управления цифровыми двойников. Можно использовать [API-интерфейсы](/rest/api/iothub/service/digitaltwin) или один из [пакетов SDK для служб](libraries-sdks.md).
 
 На момент написания статьи версия API Digital двойника — `2020-09-30` .
 
 ## <a name="update-a-digital-twin"></a>Обновление цифрового двойника
 
-Устройство IoT Plug and Play реализует модель, описанную в статье [Digital двойников Definition Language v2 (дтдл)](https://github.com/Azure/opendigitaltwins-dtdl). Разработчики решений могут использовать **API обновления Digital двойника** для обновления состояния компонента и свойств цифрового двойника.
+Устройство IoT самонастраивающийся реализует модель, описанную в статье [Digital двойников Definition Language v2 (дтдл)](https://github.com/Azure/opendigitaltwins-dtdl). Разработчики решений могут использовать **API обновления Digital двойника** для обновления состояния компонента и свойств цифрового двойника.
 
-Устройство IoT Plug and Play, используемое в качестве примера в этой статье, реализует [модель контроллера температуры](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/samples/TemperatureController.json) с компонентами [термостата](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/samples/Thermostat.json) .
+Устройство IoT самонастраивающийся, используемое в качестве примера в этой статье, реализует [модель контроллера температуры](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/samples/TemperatureController.json) с компонентами [термостата](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/samples/Thermostat.json) .
 
-В следующем фрагменте кода показан ответ на запрос **Get Digital двойника** , отформатированный как объект JSON. Дополнительные сведения о формате Digital двойника см. в разделе [Общие сведения об IoT Plug and Play Digital двойников](./concepts-digital-twin.md#digital-twin-example).
+В следующем фрагменте кода показан ответ на запрос **Get Digital двойника** , отформатированный как объект JSON. Дополнительные сведения о формате Digital двойника см. в разделе [Общие сведения об IoT Самонастраивающийся Digital двойников](./concepts-digital-twin.md#digital-twin-example).
 
 ```json
 {

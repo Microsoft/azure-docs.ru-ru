@@ -14,10 +14,10 @@ ms.custom:
 - mqtt
 - devx-track-js
 ms.openlocfilehash: 58891bdb4601744129c97454f43202d3ba07b709
-ms.sourcegitcommit: 48cb2b7d4022a85175309cf3573e72c4e67288f5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96852563"
 ---
 # <a name="create-an-advanced-device-model"></a>Создание расширенной модели устройства
@@ -30,11 +30,11 @@ ms.locfileid: "96852563"
 
 Чтобы выполнить действия, описанные в этом практическом руководстве, требуется развернутый в подписке Azure экземпляр симулятора устройств.
 
-Если вы еще не развернули симуляцию устройств, см. статью [моделирование устройств](https://github.com/Azure/device-simulation-dotnet/blob/master/README.md) на GitHub.
+Если вы еще не развернули имитацию устройств, см. сведения о [развертывании имитации устройств](https://github.com/Azure/device-simulation-dotnet/blob/master/README.md) на сайте GitHub.
 
 ### <a name="open-device-simulation"></a>Открытие симулятора устройств
 
-Если вы еще не развернули симуляцию устройств, см. статью [моделирование устройств](https://github.com/Azure/device-simulation-dotnet/blob/master/README.md) на GitHub.
+Если вы еще не развернули имитацию устройств, см. сведения о [развертывании имитации устройств](https://github.com/Azure/device-simulation-dotnet/blob/master/README.md) на сайте GitHub.
 
 ## <a name="device-models"></a>Модель устройства
 

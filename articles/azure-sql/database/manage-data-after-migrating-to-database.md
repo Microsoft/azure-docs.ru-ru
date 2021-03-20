@@ -13,10 +13,10 @@ ms.author: josack
 ms.reviewer: sstein
 ms.date: 02/13/2019
 ms.openlocfilehash: b34ac24cb26bf5db4a49a5ad5b531deb252f4695
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96446111"
 ---
 # <a name="new-dba-in-the-cloud--managing-azure-sql-database-after-migration"></a>Создание баз данных администраторов в облаке
@@ -65,8 +65,8 @@ ms.locfileid: "96446111"
 
 |Уровень служб|Срок хранения в днях|
 |---|:---:|
-|Основные|7|
-|Standard|35|
+|Basic|7|
+|Стандартный|35|
 |Premium|35|
 |||
 

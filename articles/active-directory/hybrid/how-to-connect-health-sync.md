@@ -17,10 +17,10 @@ ms.author: billmath
 ms.custom: H1Hack27Feb2017
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e803614a02e76d179579a2258abd563b5c58e63a
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98016989"
 ---
 # <a name="monitor-azure-ad-connect-sync-with-azure-ad-connect-health"></a>Мониторинг синхронизации Azure AD Connect с помощью Azure AD Connect Health
@@ -122,4 +122,4 @@ ms.locfileid: "98016989"
 * [Использование Azure AD Connect Health с AD FS](how-to-connect-health-adfs.md)
 * [Использование Azure AD Connect Health с AD DS](how-to-connect-health-adds.md)
 * [Часто задаваемые вопросы об Azure AD Connect Health](reference-connect-health-faq.md)
-* [Журнал версий Azure AD Connect Health](reference-connect-health-version-history.md)
+* [Azure AD Connect Health: история версий](reference-connect-health-version-history.md)

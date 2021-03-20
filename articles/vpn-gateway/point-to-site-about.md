@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 09/02/2020
 ms.author: cherylmc
 ms.openlocfilehash: 795b6f13913590041b463115c0be65a6201fedab
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97654070"
 ---
 # <a name="about-point-to-site-vpn"></a>Сведения о VPN-подключениях типа "точка — сеть"
@@ -178,7 +178,7 @@ ZIP-файл также содержит значения важных пара�
 
 [!INCLUDE [vpn-gateway-point-to-site-faq-include](../../includes/vpn-gateway-faq-p2s-radius-include.md)]
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Настройка подключения типа "точка — сеть" к виртуальной сети с использованием аутентификации RADIUS и PowerShell](point-to-site-how-to-radius-ps.md)
 

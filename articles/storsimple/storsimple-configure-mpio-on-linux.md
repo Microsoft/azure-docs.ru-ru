@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 06/12/2019
 ms.author: alkohli
 ms.openlocfilehash: 2b7ddf6423db4c471ee2065635f4e3e89f7eb7b2
-ms.sourcegitcommit: 4d48a54d0a3f772c01171719a9b80ee9c41c0c5d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98745739"
 ---
 # <a name="configure-mpio-on-a-storsimple-host-running-centos"></a>Настройка MPIO на узле StorSimple под управлением CentOS
@@ -268,7 +268,7 @@ ms.locfileid: "98745739"
 ### <a name="step-5-verify-multipathing"></a>Этап 5. Проверка работы многоканального ввода-вывода
 1. Сначала убедитесь, что соединение iSCSI с устройством StorSimple установлено.
    
-   a. Обнаружьте устройство StorSimple. Тип:
+   а. Обнаружьте устройство StorSimple. Тип:
       
     `iscsiadm -m discovery -t sendtargets -p  <IP address of network interface on the device>:<iSCSI port on StorSimple device>`
     
@@ -443,7 +443,7 @@ dm-3 devnode blacklisted, unmonitored
 | &nbsp; |`mpathconf --enable` |Создание примера файла mulitpath.conf в `/etc/mulitpath.conf` |
 |  | | |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Во время настройки MPIO на узле Linux вам могут пригодиться следующие документы по CentOS 6.6.
 
 * [Настройка MPIO на CentOS](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/dm_multipath/index)

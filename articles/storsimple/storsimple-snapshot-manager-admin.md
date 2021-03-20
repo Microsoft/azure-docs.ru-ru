@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 06/05/2016
 ms.author: alkohli
 ms.openlocfilehash: 16d782c6a25d8d2d8e1323b7cb683f41d8c99649
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90054982"
 ---
 # <a name="use-storsimple-snapshot-manager-to-administer-your-storsimple-solution"></a>Использование диспетчера моментальных снимков StorSimple для администрирования решения StorSimple
@@ -59,6 +59,6 @@ ms.locfileid: "90054982"
 | Просмотр запланированных заданий архивации и управление ими<br>Просмотр недавних заданий архивации и управление ими<br>Просмотр текущих заданий архивации и управление ими |[Просмотр заданий архивации и управление ими с помощью диспетчера моментальных снимков StorSimple](storsimple-snapshot-manager-manage-backup-jobs.md) |
 | восстановление тома;<br>клонирование тома или группы томов;<br>удаление резервной копии;<br>восстановление файла;<br>восстановление базы данных диспетчера моментальных снимков StorSimple. |[Использование диспетчера моментальных снимков StorSimple для управления каталогом резервных копий](storsimple-snapshot-manager-manage-backup-catalog.md) |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Скачать диспетчер моментальных снимков StorSimple](https://www.microsoft.com/download/details.aspx?id=44220).
 

@@ -7,10 +7,10 @@ ms.date: 02/11/2021
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: c775d81b88c891d6d8ea0a4597b4fa4fee29c86a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101737551"
 ---
 # <a name="set-up-msix-app-attach-with-the-azure-portal"></a>Настройка технологии подключения приложений MSIX с использованием портала Azure

@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 11/04/2019
 ms.author: apimpm
 ms.openlocfilehash: 1aef238ec0b947dda1417b567b343ae9d92754d9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86249518"
 ---
 # <a name="user-profile-templates-in-azure-api-management"></a>Шаблоны профилей пользователей в службе управления API Azure
@@ -25,13 +25,13 @@ ms.locfileid: "86249518"
   
  С помощью шаблонов в этом разделе вы сможете настроить содержимое страниц профилей пользователей на портале разработчика.  
   
--   [Profile](#Profile)  
+-   [Профиль](#Profile)  
   
 -   [Подписки](#Subscriptions)  
   
 -   [Приложения](#Applications)  
   
--   [Обновить сведения об учетной записи](#UpdateAccountInfo)  
+-   [Обновление сведений об учетной записи](#UpdateAccountInfo).  
   
 > [!NOTE]
 >  Примеры шаблонов по умолчанию включены в следующую документацию, но могут в любой момент измениться, так как ведется постоянная работа по их улучшению. Актуальные шаблоны по умолчанию можно просмотреть на портале разработчика, перейдя к требуемому отдельному шаблону. Дополнительные сведения о работе с шаблонами см. в статье [Настройка портала разработчика в службе управления API Azure с помощью шаблонов](./api-management-developer-portal-templates.md).  
@@ -105,7 +105,7 @@ ms.locfileid: "86249518"
 > [!NOTE]
 >  Шаблоны [профиля](#Profile), [приложений](#Applications) и [подписок](#Subscriptions) используют одинаковую модель данных и получают одни и те же данные шаблона.  
   
-|Свойство|Тип|Описание|  
+|Свойство.|Type|Описание|  
 |--------------|----------|-----------------|  
 |`firstName`|строка|Имя текущего пользователя.|  
 |`lastName`|строка|Фамилия текущего пользователя.|  
@@ -287,7 +287,7 @@ ms.locfileid: "86249518"
                 <a href="#" class="btn-link" id="regenerateSecondary_{{subscription.id}}" data-bind="click: regenerateKey, text: regenerateKeyLabel">{% localized "SubscriptionListStrings|WebDevelopersRegenerateLink" %}</a>  
               </div>  
             </div>  
-            <div class="clearfix"> </div>  
+            <div class="clearfix"> </div>  
           </div>  
           <!-- /ko -->  
           {% endif %}  
@@ -326,7 +326,7 @@ ms.locfileid: "86249518"
 > [!NOTE]
 >  Шаблоны [профиля](#Profile), [приложений](#Applications) и [подписок](#Subscriptions) используют одинаковую модель данных и получают одни и те же данные шаблона.  
   
-|Свойство|Тип|Описание|  
+|Свойство.|Type|Описание|  
 |--------------|----------|-----------------|  
 |`firstName`|строка|Имя текущего пользователя.|  
 |`lastName`|строка|Фамилия текущего пользователя.|  
@@ -489,7 +489,7 @@ ms.locfileid: "86249518"
 > [!NOTE]
 >  Шаблоны [профиля](#Profile), [приложений](#Applications) и [подписок](#Subscriptions) используют одинаковую модель данных и получают одни и те же данные шаблона.  
   
-|Свойство|Тип|Описание|  
+|Свойство.|Type|Описание|  
 |--------------|----------|-----------------|  
 |`firstName`|строка|Имя текущего пользователя.|  
 |`lastName`|строка|Фамилия текущего пользователя.|  
@@ -569,7 +569,7 @@ ms.locfileid: "86249518"
 }  
 ```  
   
-##  <a name="update-account-info"></a><a name="UpdateAccountInfo"></a> Обновление сведений об учетной записи  
+##  <a name="update-account-info"></a><a name="UpdateAccountInfo"></a> Обновить сведения об учетной записи  
  Шаблон **обновления сведений об учетной записи** позволяет настраивать страницу **обновления сведений об учетной записи** на портале разработчика.  
   
  ![Шаблоны портала разработчика страницы сведений об учетной записи пользователя](./media/api-management-user-profile-templates/APIM-User-Account-Info-Page-Developer-Portal-Templates.png "Шаблоны портала разработчика на странице сведений об учетной записи пользователя APIM")  

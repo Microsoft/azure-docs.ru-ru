@@ -13,10 +13,10 @@ ms.date: 01/25/2021
 ms.author: marsma
 ms.reviewer: saeeda
 ms.openlocfilehash: 78932e5852453fe996e26a278f8a1859a8ecf546
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98755018"
 ---
 # <a name="authentication-flows"></a>Потоки проверки подлинности
@@ -227,7 +227,7 @@ IWA не обходит многофакторную проверку подли
 
 Дополнительные сведения о согласии см. в разделе [разрешения и согласия в версии 2.0](v2-permissions-and-consent.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы проверили потоки проверки подлинности, поддерживаемые библиотекой проверки подлинности Майкрософт (MSAL), Узнайте о получении и кэшировании маркеров, используемых в этих потоках:
 

@@ -6,10 +6,10 @@ manager: rochakm
 ms.topic: how-to
 ms.date: 04/29/2018
 ms.openlocfilehash: 427b471158e89b2b3ae4ea6477133f1e69247078
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100518850"
 ---
 # <a name="replicate-azure-vms-to-another-azure-region"></a>Репликация виртуальных машин Azure в другой регион Azure
@@ -124,6 +124,6 @@ ms.locfileid: "100518850"
 > - Во время начальной репликации обновление состояния может занять некоторое время (без видимого прогресса). Щелкните **Обновить**, чтобы получить последние сведения о состоянии задания.
 > - Если точка восстановления не была создана за последние 60 минут, то работоспособность репликации виртуальной машины станет критической.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о выполнении тестовой отработки отказа см. в [этой статье](site-recovery-test-failover-to-azure.md).

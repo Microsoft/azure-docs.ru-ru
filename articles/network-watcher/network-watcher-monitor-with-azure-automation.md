@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 02/22/2017
 ms.author: damendo
 ms.openlocfilehash: af671996722524de9af1a90ae8dfde27f814c8c2
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96011818"
 ---
 # <a name="monitor-vpn-gateways-with-network-watcher-troubleshooting"></a>Мониторинг VPN-шлюзов с помощью средства устранения неполадок Наблюдателя за сетями
@@ -36,7 +36,7 @@ ms.locfileid: "96011818"
 - Как создать модуль runbook, вызывающий командлет `Start-AzureRmNetworkWatcherResourceTroubleshooting` для устранения неполадок подключения.
 - Подключение расписания к модулю runbook
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Прежде чем приступить к работе с этим сценарием, следует подготовить такие необходимые компоненты:
 
@@ -183,7 +183,7 @@ else
 
 ![Шаг 10][10]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы узнать, как интегрировать средство устранения неполадок Наблюдателя за сетями со службой автоматизации Azure, научитесь активировать захват пакетов на основе предупреждений виртуальной машины. Инструкции см. в статье о том, как [с помощью Наблюдателя за сетями Azure создать захват пакетов, который активируется оповещениями](network-watcher-alert-triggered-packet-capture.md).
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 01/07/2021
 tags: connectors
 ms.openlocfilehash: 75c657236b6e06a7e0f6c717d746bcc8c034d423
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98013453"
 ---
 # <a name="automate-workflows-for-a-sql-database-by-using-azure-logic-apps"></a>Автоматизация рабочих процессов для базы данных SQL с помощью Azure Logic Apps
@@ -269,7 +269,7 @@ ms.locfileid: "98013453"
 
 ### <a name="connection-problems"></a>Проблемы с подключением
 
-Проблемы с подключением часто возникают, поэтому для устранения неполадок и устранения таких проблем ознакомьтесь [с устранением ошибок подключения, чтобы SQL Server](https://support.microsoft.com/help/4009936/solving-connectivity-errors-to-sql-server). Вот несколько примеров:
+Проблемы с подключением часто возникают, поэтому для устранения неполадок и устранения таких проблем ознакомьтесь [с устранением ошибок подключения, чтобы SQL Server](https://support.microsoft.com/help/4009936/solving-connectivity-errors-to-sql-server). Ниже приведены некоторые примеры:
 
 * `A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections.`
 

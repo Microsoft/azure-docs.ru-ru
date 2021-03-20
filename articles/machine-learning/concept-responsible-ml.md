@@ -11,10 +11,10 @@ author: luisquintanilla
 ms.date: 02/25/2021
 ms.custom: responsible-ml
 ms.openlocfilehash: f849968c16d2c3d8940a71da0e0cda536882d9c8
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101692068"
 ---
 # <a name="what-is-responsible-machine-learning-preview"></a>Что такое машинное обучение? (предварительная версия)

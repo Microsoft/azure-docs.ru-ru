@@ -10,10 +10,10 @@ ms.custom: mvc, amqp, devx-track-csharp
 ms.date: 11/06/2018
 ms.author: dobett
 ms.openlocfilehash: 77a795b8f704084b612a2dcbd364b8d5be0a3333
-ms.sourcegitcommit: 48cb2b7d4022a85175309cf3573e72c4e67288f5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96852156"
 ---
 # <a name="serialize-telemetry-using-protocol-buffers"></a>Сериализация данных телеметрии с помощью буферов протокола
@@ -32,7 +32,7 @@ ms.locfileid: "96852156"
 1. формировать классы Protobuf.
 1. Локальное тестирование
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Выполните следующие шаги для изучения данного руководства:
 

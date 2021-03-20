@@ -9,10 +9,10 @@ ms.custom: devx-track-java
 ms.author: rogarana
 ms.subservice: files
 ms.openlocfilehash: 25baa278961b93b04e60f2e997b98753cb6cf3ab
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95024115"
 ---
 # <a name="develop-for-azure-files-with-java"></a>Разработка для файлов Azure с использованием языка Java
@@ -284,7 +284,7 @@ cloudFile.uploadFromFile(filePath);
 
 ---
 
-## <a name="download-a-file"></a>Скачивание файла
+## <a name="download-a-file"></a>Загрузка файла
 
 Одной из наиболее частых операций является скачивание файлов из хранилища файлов Azure.
 

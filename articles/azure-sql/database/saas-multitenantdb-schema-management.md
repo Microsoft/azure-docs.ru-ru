@@ -12,10 +12,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 12/18/2018
 ms.openlocfilehash: d222234cd6ff3d910e6dbc51a394695ce467edce
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96011866"
 ---
 # <a name="manage-schema-in-a-saas-application-that-uses-sharded-multi-tenant-databases"></a>Управление схемой в приложении SaaS, которое использует сегментированные мультитенантные базы данных

@@ -14,10 +14,10 @@ ms.author: hirsin
 ms.reviewer: hirsin
 ms.custom: aaddev
 ms.openlocfilehash: 3bd0621d607b121f19bc47c717343b8e2e39b04f
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98752730"
 ---
 # <a name="microsoft-identity-platform-userinfo-endpoint"></a>Конечная точка UserInfo платформы идентификации Майкрософт
@@ -89,7 +89,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJub25jZSI6Il…
 * Не удается настроить ответ от конечной точки UserInfo.  Если вы хотите настроить утверждения, используйте [сопоставление утверждений]( active-directory-claims-mapping.md) для изменения информации, возвращенной в токенах.
 * Ответ от конечной точки UserInfo не может быть добавлен в.  Если вы хотите получить дополнительные утверждения о пользователе, используйте [дополнительные утверждения]( active-directory-optional-claims.md) , чтобы добавить новые утверждения в токены.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Проверка содержимого токенов ИДЕНТИФИКАТОРов](id-tokens.md)
 * [Настройка содержимого маркера идентификации с помощью необязательных утверждений](active-directory-optional-claims.md)

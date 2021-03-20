@@ -13,10 +13,10 @@ ms.author: ryanwi
 ms.reviewer: jeedes
 ms.custom: aaddev
 ms.openlocfilehash: 7731aa2eb1a962d4674ed382911ba0058e1ebdaf
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101647512"
 ---
 # <a name="get-appsource-certified-for-azure-active-directory"></a>Получить сертификат AppSource для Azure Active Directory
@@ -102,7 +102,7 @@ ms.locfileid: "101647512"
 
 Дополнительные сведения о пробной версии AppSource см. [в этом видео](https://aka.ms/trialexperienceforwebapps). 
 
-## <a name="get-support"></a>Техническая поддержка
+## <a name="get-support"></a>Получение поддержки
 
 Для интеграции Azure AD мы используем [Microsoft Q&A](/answers/topics/azure-active-directory.html) с сообществом для предоставления поддержки.
 

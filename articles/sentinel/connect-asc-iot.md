@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 01/20/2021
 ms.author: yelevin
 ms.openlocfilehash: 67bc104434dc0db30f5973bec0979afb7480fe4c
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98621385"
 ---
 # <a name="connect-your-data-from-azure-defender-formerly-azure-security-center-for-iot-to-azure-sentinel"></a>Подключение данных из Azure Defender (прежнее название — центр безопасности Azure) для Azure IoT 
@@ -26,7 +26,7 @@ ms.locfileid: "98621385"
 Используйте соединитель защитник для IoT для потоковой передачи всех событий вашего защитника в Azure Sentinel. 
 
 Такая интеграция позволяет организациям быстро обнаруживать многоступенчатыхные атаки, которые часто пересекаются с границами. Кроме того, защитник для интеграции IoT с возможностями оркестрации в отношении безопасности, автоматизации и реагирования Azure Sentinel (ВЗЛЕТЕЛ) обеспечивает автоматический отклик и предотвращение с помощью встроенных оптимизированных модули PlayBook. 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Разрешения на **Чтение** и **запись** в рабочей области, на которой развернута Sentinel Azure
 - **Защитник для Интернета вещей** должен быть **включен** в соответствующих центрах Интернета вещей
@@ -63,7 +63,7 @@ SecurityAlert | where ProductName == "Azure Security Center for IoT"
 После подключения **подписки** данные концентратора доступны в Azure Sentinel примерно через 15 минут позже.
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом документе вы узнали, как подключить защитник для Интернета вещей к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 

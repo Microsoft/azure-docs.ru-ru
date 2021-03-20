@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.date: 05/29/2018
 ms.author: twooley
 ms.openlocfilehash: 8be242369ecae2c809a38428284c9ddcad440e3f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91578246"
 ---
 # <a name="use-azure-data-lake-storage-gen1-to-capture-data-from-event-hubs"></a>Сбор данных из Центров событий с помощью Azure Data Lake Storage 1-го поколения
 
 В этой статье приведены сведения о сборе данных, полученных Центрами событий Azure, с помощью Azure Data Lake Storage 1-го поколения.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * **Подписка Azure**. См. страницу [бесплатной пробной версии Azure](https://azure.microsoft.com/pricing/free-trial/).
 
@@ -40,7 +40,7 @@ ms.locfileid: "91578246"
 
 1. Назначьте разрешения в корневой папке Data Lake Storage 1-го поколения. 
 
-    a. Щелкните **Обозреватель данных**, выберите корневую папку учетной записи Data Lake Storage 1-го поколения, а затем — **Доступ**.
+    а. Щелкните **Обозреватель данных**, выберите корневую папку учетной записи Data Lake Storage 1-го поколения, а затем — **Доступ**.
 
     ![Снимок экрана обозревателя данных с корнем учетной записи и параметром доступа «out».](./media/data-lake-store-archive-eventhub-capture/data-lake-store-assign-permissions-to-root.png "Назначение разрешений для корневого Data Lake Storage 1-го поколения")
 
@@ -57,11 +57,11 @@ ms.locfileid: "91578246"
 
     ![Снимок экрана с разделом назначение разрешений с параметром SELECT Permissions (вызываемый). Раздел Выбор разрешений рядом с ним с параметром выполнить, добавить в параметр и добавить параметр AS с именем out.](./media/data-lake-store-archive-eventhub-capture/data-lake-store-assign-eventhub-sp1.png "Назначение разрешений для корневого Data Lake Storage 1-го поколения")
 
-    Нажмите кнопку **ОК**.
+    Нажмите кнопку **OK**.
 
 1. Назначьте разрешения папке в учетной записи Data Lake Storage 1-го поколения, в которой необходимо сохранить данные.
 
-    a. Щелкните **Обозреватель данных**, выберите папку в учетной записи Data Lake Storage 1-го поколения, а затем — **Доступ**.
+    а. Щелкните **Обозреватель данных**, выберите папку в учетной записи Data Lake Storage 1-го поколения, а затем — **Доступ**.
 
     ![Снимок экрана обозревателя данных с папкой в учетной записи и параметром доступа «out».](./media/data-lake-store-archive-eventhub-capture/data-lake-store-assign-permissions-to-folder.png "Назначение разрешений для папки Data Lake Storage 1-го поколения")
 
@@ -75,7 +75,7 @@ ms.locfileid: "91578246"
 
     ![Снимок экрана с разделом назначение разрешений с параметром SELECT Permissions (вызываемый). Раздел SELECT Permissions (выбор разрешений) рядом с параметрами "чтение", "запись" и "выполнение", параметр "добавить в" и параметр "добавить как" — "out".](./media/data-lake-store-archive-eventhub-capture/data-lake-store-assign-eventhub-sp-folder.png "Назначение разрешений для папки Data Lake Storage 1-го поколения")
     
-    Нажмите кнопку **ОК**. 
+    Нажмите кнопку **OK**. 
 
 ## <a name="configure-event-hubs-to-capture-data-to-data-lake-storage-gen1"></a>Настройка Центров событий для сбора данных в Data Lake Storage 1-го поколения
 
@@ -89,7 +89,7 @@ ms.locfileid: "91578246"
 
     ![Снимок экрана: диалоговое окно "Создание концентратора событий" с именем текстового поля, параметром записи, параметром поставщика записи, параметром выбора Data Lake Store и параметром пути Data Lake.](./media/data-lake-store-archive-eventhub-capture/data-lake-store-configure-eventhub.png "Создание концентратора событий")
 
-    a. Укажите имя концентратора событий.
+    а. Укажите имя концентратора событий.
     
     b. В этом руководстве задайте для параметров **Количество разделов** и **Хранение сообщений** значения по умолчанию.
     
@@ -117,6 +117,6 @@ ms.locfileid: "91578246"
 Когда данные появятся в Data Lake Storage 1-го поколения, вы можете выполнить задания аналитики, чтобы обработать их. Сведения об использовании Azure Data Lake Analytics для выполнения этих действий см. в [примере USQL Avro](https://github.com/Azure/usql/tree/master/Examples/AvroExamples).
   
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 * [Защита данных в Data Lake Storage Gen1](data-lake-store-secure-data.md)
 * [Копирование данных из больших двоичных объектов хранилища Azure в хранилище озера данных](data-lake-store-copy-data-azure-storage-blob.md)

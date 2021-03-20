@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7d6689b4b67b8462e983ae9b111e0fbc60c422b7
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89657118"
 ---
 # <a name="next-steps-and-how-to-manage-azure-ad-connect"></a>Дальнейшие действия и управление Azure AD Connect
@@ -84,5 +84,5 @@ ms.locfileid: "89657118"
 |**Управление интеграцией**|Управление инфраструктурой AD FS, продление сертификатов и добавление серверов AD FS|
 |**Устранение проблем**|Справка по устранению неполадок Azure AD Connect|
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения об [интеграции локальных удостоверений с Azure Active Directory](whatis-hybrid-identity.md).

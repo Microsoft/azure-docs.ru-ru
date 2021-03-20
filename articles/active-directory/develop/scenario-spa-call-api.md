@@ -13,10 +13,10 @@ ms.date: 05/06/2019
 ms.author: ryanwi
 ms.custom: aaddev
 ms.openlocfilehash: 4dd4a40233fc1c030581fd1ae2827061435a0ab3
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98753543"
 ---
 # <a name="single-page-application-call-a-web-api"></a>Одностраничное приложение: вызов веб-API
@@ -27,7 +27,7 @@ ms.locfileid: "98753543"
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 
-Используйте полученный маркер доступа в качестве носителя в HTTP-запросе для вызова любого веб-API, например Microsoft Graph API. Вот несколько примеров.
+Используйте полученный маркер доступа в качестве носителя в HTTP-запросе для вызова любого веб-API, например Microsoft Graph API. Пример:
 
 ```javascript
     var headers = new Headers();
@@ -51,6 +51,6 @@ ms.locfileid: "98753543"
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Перейдите к следующей статье в этом сценарии, [перейдите в рабочую среду](scenario-spa-production.md).

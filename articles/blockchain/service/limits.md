@@ -5,10 +5,10 @@ ms.date: 04/02/2020
 ms.topic: conceptual
 ms.reviewer: ravastra
 ms.openlocfilehash: 71e1bebf10fa0142870d03977182472da1ad031f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "80676516"
 ---
 # <a name="limits-in-azure-blockchain-service"></a>Ограничения в службе Блокчейн Azure
@@ -22,7 +22,7 @@ ms.locfileid: "80676516"
 | Ценовая категория | Максимальное число узлов транзакций | Максимальное количество проверяющих узлов |
 |:---|:---:|:---:|
 | Basic | 10 | 1 |
-| Standard | 10 | 2 |
+| Стандартный | 10 | 2 |
 
 Сеть консорциума Организации должна иметь по крайней мере два узла уровня "Стандартный" службы Azure Блокчейн. Узлы уровня "Стандартный" включают два проверяющих узла. Для соответствия требованиям к [отказоустойчивости бизантине в Стамбул](https://github.com/jpmorganchase/quorum/wiki/Quorum-Consensus)требуется четыре проверяющих узла.
 

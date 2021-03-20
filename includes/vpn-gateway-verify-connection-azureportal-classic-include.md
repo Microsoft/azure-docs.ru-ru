@@ -9,10 +9,10 @@ ms.date: 10/19/2020
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: a0694003e2eb5005186f5c7ad450533437955d82
-ms.sourcegitcommit: 8d8deb9a406165de5050522681b782fb2917762d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92217946"
 ---
 Чтобы на портале Azure просмотреть состояние подключения для VPN-шлюза виртуальной сети в классической модели развертывания, перейдите к нужному подключению. Ниже показано, как перейти к подключению и проверить его.

@@ -9,10 +9,10 @@ ms.date: 05/17/2019
 ms.author: girobins
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 66aefea441d78303ccd611d9df10eea985d61e7c
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93097402"
 ---
 # <a name="get-sql-query-execution-metrics-and-analyze-query-performance-using-net-sdk"></a>Получение метрик выполнения запросов SQL и анализ производительности запросов с помощью пакета SDK для .NET
@@ -235,7 +235,7 @@ WHERE c.description = "BABYFOOD, DESSERT, FRUIT DESSERT, WITHOUT ASCORBIC ACID, 
 
 Дополнительные сведения о настройке производительности запросов см. в статье [Настройка производительности запросов](./sql-api-query-metrics.md) .
 
-## <a name="references"></a><a id="References"></a>Ссылки
+## <a name="references"></a><a id="References"></a>Ссылку
 
 - [DocumentDB SQL Syntax](./sql-query-getting-started.md) (Синтаксис SQL в DocumentDB)
 - [ANSI SQL 2011](https://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=53681)
