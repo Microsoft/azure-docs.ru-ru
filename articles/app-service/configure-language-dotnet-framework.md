@@ -6,10 +6,10 @@ ms.custom: devx-track-csharp, devx-track-azurecli
 ms.topic: article
 ms.date: 06/02/2020
 ms.openlocfilehash: 8ed6835583cc4881b19eee14ed392b193324535e
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92744155"
 ---
 # <a name="configure-an-aspnet-app-for-azure-app-service"></a>Настройка приложения ASP.NET для службы приложений Azure
@@ -21,25 +21,25 @@ ms.locfileid: "92744155"
 
 Это краткое описание содержит основные понятия и инструкции для разработчиков ASP.NET. Если вы никогда не использовали службу приложений Azure, сначала выполните инструкции из руководства по [ASP.NET](quickstart-dotnet-framework.md) и [ASP.NET с базой данных SQL](app-service-web-tutorial-dotnet-sqldatabase.md) .
 
-## <a name="show-supported-net-framework-runtime-versions"></a>Отображение поддерживаемых версий среды выполнения .NET Framework
+## <a name="show-supported-net-framework-runtime-versions"></a>Отображение поддерживаемых версий среды выполнения платформа .NET Framework
 
-В службе приложений на экземплярах Windows уже установлены все поддерживаемые версии .NET Framework. Чтобы отобразить доступные версии среды выполнения .NET Framework и пакета SDK, перейдите к `https://<app-name>.scm.azurewebsites.net/DebugConsole` и выполните соответствующую команду в консоли на основе браузера:
+В службе приложений на экземплярах Windows уже установлены все поддерживаемые версии платформа .NET Framework. Чтобы отобразить доступные версии среды выполнения платформа .NET Framework и пакета SDK, перейдите к `https://<app-name>.scm.azurewebsites.net/DebugConsole` и выполните соответствующую команду в консоли на основе браузера:
 
-Для версий среды выполнения CLR 4 (.NET Framework 4 и выше):
+Для версий среды выполнения CLR 4 (платформа .NET Framework 4 и выше):
 
 ```CMD
 ls "D:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\"
 ```
 
-Последняя версия .NET Framework может быть недоступна немедленно.
+Последняя версия платформа .NET Framework может быть недоступна немедленно.
 
-Для версий среды выполнения CLR 2 (.NET Framework 3,5 и ниже):
+Для версий среды выполнения CLR 2 (платформа .NET Framework 3,5 и ниже):
 
 ```CMD
 ls "D:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\"
 ```
 
-## <a name="show-current-net-framework-runtime-version"></a>Показывать текущую версию среды выполнения .NET Framework
+## <a name="show-current-net-framework-runtime-version"></a>Показывать текущую версию среды выполнения платформа .NET Framework
 
 Выполните следующую команду в [Cloud Shell](https://shell.azure.com):
 
@@ -47,11 +47,11 @@ ls "D:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\"
 az webapp config show --resource-group <resource-group-name> --name <app-name> --query netFrameworkVersion
 ```
 
-Значение `v4.0` означает, что используется последняя версия CLR 4 (.NET Framework 4. x). Значение `v2.0` означает, что используется версия CLR 2 (.NET Framework 3,5).
+Значение `v4.0` означает, что используется последняя версия CLR 4 (платформа .NET Framework 4. x). Значение `v2.0` означает, что используется версия CLR 2 (платформа .NET Framework 3,5).
 
-## <a name="set-net-framework-runtime-version"></a>Задать версию среды выполнения .NET Framework
+## <a name="set-net-framework-runtime-version"></a>Задать версию среды выполнения платформа .NET Framework
 
-По умолчанию служба приложений использует последнюю поддерживаемую версию .NET Framework для запуска приложения ASP.NET. Чтобы запустить приложение с помощью .NET Framework 3,5, выполните следующую команду в [Cloud Shell](https://shell.azure.com) (v 2.0 означает CLR 2):
+По умолчанию служба приложений использует последнюю поддерживаемую версию платформа .NET Framework для запуска приложения ASP.NET. Чтобы запустить приложение с помощью платформа .NET Framework 3,5, выполните следующую команду в [Cloud Shell](https://shell.azure.com) (v 2.0 означает CLR 2):
 
 ```azurecli-interactive
 az webapp config set --resource-group <resource-group-name> --name <app-name> --net-framework-version v2.0
@@ -71,7 +71,7 @@ ConfigurationManager.ConnectionStrings["MyConnection"];
 }
 ```
 
-Если вы настроили параметр приложения с тем же именем в службе приложений и в *web.config* , значение службы приложений имеет приоритет над значением *web.config* . Локальное значение *web.config* позволяет выполнять отладку приложения локально, но значение службы приложений позволяет запускать приложение в продукте с параметрами рабочей среды. Строки подключения работают таким же образом. Таким образом вы сможете защитить секреты приложения за пределами репозитория кода и получить доступ к соответствующим значениям без изменения кода.
+Если вы настроили параметр приложения с тем же именем в службе приложений и в *web.config*, значение службы приложений имеет приоритет над значением *web.config* . Локальное значение *web.config* позволяет выполнять отладку приложения локально, но значение службы приложений позволяет запускать приложение в продукте с параметрами рабочей среды. Строки подключения работают таким же образом. Таким образом вы сможете защитить секреты приложения за пределами репозитория кода и получить доступ к соответствующим значениям без изменения кода.
 
 ## <a name="deploy-multi-project-solutions"></a>Развертывание решений с несколькими проектами
 
@@ -91,7 +91,7 @@ az webapp config appsettings set --resource-group <resource-group-name> --name <
 </system.web>
 ```
 
-Повторно разверните приложение с помощью обновленной *Web.config* . Теперь должна отобразиться одна и та же страница подробного исключения.
+Повторно разверните приложение с помощью обновленной *Web.config*. Теперь должна отобразиться одна и та же страница подробного исключения.
 
 ## <a name="access-diagnostic-logs"></a>Доступ к журналам диагностики
 
@@ -108,4 +108,4 @@ Trace.TraceInformation("GET /Home/Index"); // Information trace
 ## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
-> [Руководство. Создание приложения ASP.NET в Azure с подключением к Базе данных SQL](app-service-web-tutorial-dotnet-sqldatabase.md)
+> [Руководство. Создание приложения ASP.NET в Azure с подключением к базе данных SQL](app-service-web-tutorial-dotnet-sqldatabase.md)

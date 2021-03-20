@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 09/28/2020
 ms.author: yitoh
 ms.openlocfilehash: 69f9b5a74566879ecf8f15f23e689ebb731da45a
-ms.sourcegitcommit: 1140ff2b0424633e6e10797f6654359947038b8d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97814148"
 ---
 # <a name="quickstart-create-and-configure-azure-ddos-protection-standard-using-azure-powershell"></a>Краткое руководство. Создание и Настройка стандарта защиты от атак DDoS Azure с помощью Azure PowerShell
@@ -111,7 +111,7 @@ $vnet | Set-AzVirtualNetwork
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Чтобы узнать, как просмотреть и настроить данные телеметрии для плана защиты от атак DDoS, перейдите к руководствам.
+Чтобы узнать, как просмотреть и настроить данные телеметрии для плана защиты от атак DDoS, перейдите к следующим руководствам.
 
 > [!div class="nextstepaction"]
 > [Настройка телеметрии защиты от атак DDoS и просмотр данных телеметрии](telemetry.md)

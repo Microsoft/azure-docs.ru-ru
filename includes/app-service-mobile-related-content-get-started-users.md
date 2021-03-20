@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 09/02/2019
 ms.author: crdun
 ms.openlocfilehash: 27aeb7c2c094a558992b11b9fb35b519836495cb
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96028087"
 ---
 * [Проверка подлинности и авторизация в службе приложений Azure](../articles/app-service/overview-authentication-authorization.md).

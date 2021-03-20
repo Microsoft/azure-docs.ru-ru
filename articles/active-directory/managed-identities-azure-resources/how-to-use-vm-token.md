@@ -16,10 +16,10 @@ ms.date: 11/03/2020
 ms.author: barclayn
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 541f76ad825f492679530902c571096ca4b01902
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98726237"
 ---
 # <a name="how-to-use-managed-identities-for-azure-resources-on-an-azure-vm-to-acquire-an-access-token"></a>Как использовать управляемые удостоверения для ресурсов Azure на виртуальной машине Azure для получения маркера доступа 
@@ -364,7 +364,7 @@ echo The managed identities for Azure resources access token is $access_token
 
 | Элемент | Описание |
 | ------- | ----------- |
-| error   | Идентификатор ошибки. |
+| Ошибка   | Идентификатор ошибки. |
 | error_description | Подробное описание ошибки. **Описания ошибок могут изменяться в любое время. Не создавайте код, который выполняет ветвление на основе значений в описании ошибки.**|
 
 ### <a name="http-response-reference"></a>Ссылка ответа HTTP
@@ -391,7 +391,7 @@ echo The managed identities for Azure resources access token is $access_token
 
 Для повторных попыток рекомендуем следующую стратегию: 
 
-| **Стратегия повторов** | **Параметры** | **Значения** | **Принципы работы** |
+| **Стратегия повторов** | **Параметры** | **Значения** | **Принцип работы** |
 | --- | --- | --- | --- |
 |ExponentialBackoff |Число повторных попыток<br />Минимальная задержка<br />Максимальная задержка<br />Разностная задержка<br />Первый быстрый повтор |5<br />0 с<br />60 с<br />2 с<br />false |Попытка 1 — задержка 0 с<br />Попытка 2 — задержка 2 с<br />Попытка 3 — задержка 6 с<br />Попытка 4 — задержка 14 с<br />Попытка 5 — задержка 30 с |
 
@@ -400,6 +400,6 @@ echo The managed identities for Azure resources access token is $access_token
 Список ресурсов, которые поддерживают Azure AD и были протестированы с управляемыми удостоверениями для ресурсов Azure и соответствующими идентификаторами ресурсов, приведен в разделе [Службы Azure, поддерживающие аутентификацию Azure AD](./services-support-managed-identities.md).
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Чтобы включить управляемые удостоверения для ресурсов Azure на виртуальной машине Azure, ознакомьтесь с разделом [Настройка управляемых удостоверений для ресурсов Azure на виртуальной машине с помощью портала Azure](qs-configure-portal-windows-vm.md).

@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 01/31/2020
 ms.author: cweining
 ms.openlocfilehash: 357e0289f3237ed32b0801280316225ba5530282
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "76963875"
 ---
 # <a name="update-visual-studio-template-deployment-script-to-use-az-powershell-module"></a>Обновите скрипт развертывания шаблона Visual Studio, чтобы использовать команду AZ PowerShell Module

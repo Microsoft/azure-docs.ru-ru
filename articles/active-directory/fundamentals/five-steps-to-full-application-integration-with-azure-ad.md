@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/05/2020
 ms.author: nichola
 ms.openlocfilehash: 7fd9e504448d55b4a2ef8c10b4ba1176cb2e3402
-ms.sourcegitcommit: d22a86a1329be8fd1913ce4d1bfbd2a125b2bcae
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96172641"
 ---
 # <a name="five-steps-for-integrating-all-your-apps-with-azure-ad"></a>Пять шагов по интеграции всех приложений с Azure AD
 
-Azure Active Directory (Azure AD) — это облачная служба управления удостоверениями и доступом Майкрософт. Azure AD предоставляет безопасные решения для проверки подлинности и авторизации, чтобы клиенты, партнеры и сотрудники могли получить доступ к необходимым приложениям. В Azure AD, [Условный доступ](../conditional-access/overview.md), [многофакторная идентификация](../authentication/concept-mfa-howitworks.md), [единый вход](../hybrid/how-to-connect-sso.md)и [Автоматическая подготовка пользователей](../app-provisioning/user-provisioning.md) обеспечивают простоту и безопасность управления удостоверениями и доступом.
+Azure Active Directory (Azure AD) — это облачная служба управления удостоверениями и доступом от корпорации Майкрософт. Azure AD предоставляет безопасные решения для проверки подлинности и авторизации, чтобы клиенты, партнеры и сотрудники могли получить доступ к необходимым приложениям. В Azure AD, [Условный доступ](../conditional-access/overview.md), [многофакторная идентификация](../authentication/concept-mfa-howitworks.md), [единый вход](../hybrid/how-to-connect-sso.md)и [Автоматическая подготовка пользователей](../app-provisioning/user-provisioning.md) обеспечивают простоту и безопасность управления удостоверениями и доступом.
 
 Если у вашей компании есть подписка Microsoft 365, скорее всего, вы [уже используете](/office365/enterprise/about-office-365-identity) Azure AD. Тем не менее Azure AD можно использовать для всех приложений, а благодаря [централизации управления приложениями](../manage-apps/common-scenarios.md) вы можете использовать одни и те же функции управления удостоверениями, средства и политики для всего портфеля приложений. Это обеспечит единое решение, повышающее безопасность, уменьшая затраты, повышает производительность и позволяет обеспечить соответствие требованиям. И вы получите удаленный доступ к локальным приложениям.
 

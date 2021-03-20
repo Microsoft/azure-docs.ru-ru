@@ -9,10 +9,10 @@ ms.date: 05/19/2020
 ms.author: dech
 ms.custom: devx-track-python, devx-track-csharp
 ms.openlocfilehash: 67fe71d8e2d6ab239989cb30e9bf5a1b4d731037
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93340487"
 ---
 # <a name="use-built-in-notebook-commands-and-features-in-azure-cosmos-db-c-notebooks-preview"></a>Использование встроенных команд и функций записных книжек в Azure Cosmos DB C# (предварительная версия)
@@ -160,7 +160,7 @@ Total RUs consumed : 25022.58
 Замените ``{notebookName}`` именем записной книжки, которую нужно запустить. Записная книжка должна находиться в текущей рабочей области "Мои записные книжки". 
 
 ## <a name="reset-notebooks-workspace"></a>Сброс рабочей области записных книжек
-Чтобы сбросить рабочую область записных книжек до значений по умолчанию, выберите **Сбросить рабочую область** на панели команд. При этом будут удалены все установленные пользовательские пакеты и перезапущен сервер Jupyter. Ваши записные книжки, файлы и ресурсы Azure Cosmos затронуты не будут.  
+Чтобы сбросить рабочую область записных книжек до параметров по умолчанию, выберите **Сбросить рабочую область** на панели команд. При этом будут удалены все установленные пользовательские пакеты и перезапущен сервер Jupyter. Ваши записные книжки, файлы и ресурсы Azure Cosmos затронуты не будут.  
 
 :::image type="content" source="media/use-notebook-features-and-commands/reset-workspace.png" alt-text="Сброс рабочей области записных книжек":::
 

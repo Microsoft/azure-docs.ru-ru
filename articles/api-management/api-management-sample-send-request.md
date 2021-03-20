@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 12/15/2016
 ms.author: apimpm
 ms.openlocfilehash: 2f4bd040d7e5858fd561444f56dbce7b3f940d9a
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92742397"
 ---
 # <a name="using-external-services-from-the-azure-api-management-service"></a>Использование внешних служб из службы управления API Azure
@@ -286,5 +286,5 @@ ms.locfileid: "92742397"
 
 В конфигурации операции заполнителя можно настроить ресурс панели мониторинга для кэширования в течение как минимум часа. 
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 Служба управления API Azure предоставляет гибкие политики, выборочно применяемые к HTTP-трафику, и позволяет формировать серверные службы. Если вы хотите усовершенствовать имеющийся шлюз API за счет функций оповещения, проверки или создать новые сложные ресурсы на основе нескольких серверных служб, `send-request` и связанные политики предоставят вам широкий диапазон новых возможностей.

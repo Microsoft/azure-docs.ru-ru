@@ -7,10 +7,10 @@ ms.manager: abhemraj
 ms.topic: conceptual
 ms.date: 07/23/2020
 ms.openlocfilehash: 0e1cb33ca0a5fb9a1c7ddb2c4625dfef4acd3a1e
-ms.sourcegitcommit: 59cfed657839f41c36ccdf7dc2bee4535c920dd4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99627404"
 ---
 # <a name="azure-migrate-support-matrix"></a>Таблица поддержки службы "Миграция Azure"
@@ -38,19 +38,19 @@ ms.locfileid: "99627404"
 
 **Инструмент** | **Оценка** | **анализа** 
 --- | --- | ---
-Служба "миграция Azure": Оценка сервера | Оценка [виртуальных машин VMware](./tutorial-discover-vmware.md), [виртуальных машин Hyper-V](./tutorial-discover-hyper-v.md) и [физических серверов](./tutorial-discover-physical.md). |  Недоступно (н/д)
-Azure Migrate: Server Migration (Миграция Azure: миграция сервера). | н/д | Миграция [виртуальных машин VMware](tutorial-migrate-vmware.md), [виртуальных машин Hyper-V](tutorial-migrate-hyper-v.md) и [физических серверов](tutorial-migrate-physical-virtual-machines.md).
-[Carbonite](https://www.carbonite.com/data-protection-resources/resource/Datasheet/carbonite-migrate-for-microsoft-azure) | н/д | Миграция виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках. 
-[Cloudamize](https://www.cloudamize.com/platform#tab-0);| Оценка виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках. | н/д
+Azure Migrate: Server Assessment (Миграция Azure: оценка сервера). | Оценка [виртуальных машин VMware](./tutorial-discover-vmware.md), [виртуальных машин Hyper-V](./tutorial-discover-hyper-v.md) и [физических серверов](./tutorial-discover-physical.md). |  Недоступно (н/д)
+Azure Migrate: Server Migration (Миграция Azure: миграция сервера). | Н/Д | Миграция [виртуальных машин VMware](tutorial-migrate-vmware.md), [виртуальных машин Hyper-V](tutorial-migrate-hyper-v.md) и [физических серверов](tutorial-migrate-physical-virtual-machines.md).
+[Carbonite](https://www.carbonite.com/data-protection-resources/resource/Datasheet/carbonite-migrate-for-microsoft-azure) | Н/Д | Миграция виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках. 
+[Cloudamize](https://www.cloudamize.com/platform#tab-0);| Оценка виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках. | Н/Д
 [Corent Technology](https://go.microsoft.com/fwlink/?linkid=2084928) | Оценка и миграция виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках. |  Миграция виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках.
-[Устройство 42](https://go.microsoft.com/fwlink/?linkid=2097158) | Оценка виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках.| н/д
-[DMA](/sql/dma/dma-overview?view=sql-server-2017) | Оценка SQL Server баз данных. | н/д
-[DMS](../dms/dms-overview.md) | н/д | Миграция SQL Server, Oracle, MySQL, PostgreSQL, MongoDB. 
-[Lakeside](https://go.microsoft.com/fwlink/?linkid=2104908) | Оценка инфраструктуры виртуальных рабочих столов (VDI). | н/д
-[Movere](https://www.movere.io/) | Оценка виртуальных машин VMware, виртуальных машин Hyper-V, виртуальных машин Xen, физических компьютеров, рабочих станций (включая VDI), рабочих нагрузок в общедоступном облаке | н/д
-[RackWare](https://go.microsoft.com/fwlink/?linkid=2102735) | н/д | Миграция виртуальных машин VMware, Hyper-V, Xen и KVM, физических компьютеров, рабочих нагрузок в общедоступных облаках. 
-[Turbonomic](https://go.microsoft.com/fwlink/?linkid=2094295)  | Оценка виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках. | н/д
-[UnifyCloud](https://go.microsoft.com/fwlink/?linkid=2097195) | Оценка виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках и баз данных SQL Server. | н/д
+[Устройство 42](https://go.microsoft.com/fwlink/?linkid=2097158) | Оценка виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках.| Н/Д
+[DMA](/sql/dma/dma-overview?view=sql-server-2017) | Оценка SQL Server баз данных. | Н/Д
+[DMS](../dms/dms-overview.md) | Н/Д | Миграция SQL Server, Oracle, MySQL, PostgreSQL, MongoDB. 
+[Lakeside](https://go.microsoft.com/fwlink/?linkid=2104908) | Оценка инфраструктуры виртуальных рабочих столов (VDI). | Н/Д
+[Movere](https://www.movere.io/) | Оценка виртуальных машин VMware, виртуальных машин Hyper-V, виртуальных машин Xen, физических компьютеров, рабочих станций (включая VDI), рабочих нагрузок в общедоступном облаке | Н/Д
+[RackWare](https://go.microsoft.com/fwlink/?linkid=2102735) | Н/Д | Миграция виртуальных машин VMware, Hyper-V, Xen и KVM, физических компьютеров, рабочих нагрузок в общедоступных облаках. 
+[Turbonomic](https://go.microsoft.com/fwlink/?linkid=2094295)  | Оценка виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках. | Н/Д
+[UnifyCloud](https://go.microsoft.com/fwlink/?linkid=2097195) | Оценка виртуальных машин VMware, виртуальных машин Hyper-V, физических серверов, рабочих нагрузок в общедоступных облаках и баз данных SQL Server. | Н/Д
 [Помощник по миграции веб-приложений](https://appmigration.microsoft.com/) | Оценка веб-приложений. | Миграция веб-приложений.
 
 

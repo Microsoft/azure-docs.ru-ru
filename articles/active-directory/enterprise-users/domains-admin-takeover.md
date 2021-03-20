@@ -14,10 +14,10 @@ ms.reviewer: sumitp
 ms.custom: it-pro;seo-update-azuread-jan
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0af74967e2de47afeb357e2ac31b1a0ee849ef36
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96547106"
 ---
 # <a name="take-over-an-unmanaged-directory-as-administrator-in-azure-active-directory"></a>Смена неуправляемого каталога от имени администратора в Azure Active Directory
@@ -71,7 +71,7 @@ ms.locfileid: "96547106"
    ![домен проверен как добавленный в Azure AD](./media/domains-admin-takeover/add-domain-to-azure-ad.png)
   
 > [!NOTE]
-> Все пользователи Power BI или службы Rights Management Azure, имеющие лицензии, назначенные в Microsoft 365 организации, должны сохранить свои панели мониторинга при удалении доменного имени. Они должны выполнить вход с именем пользователя, например *user \@ fourthcoffeexyz.onmicrosoft.com* , а не *user \@ FourthCoffee. XYZ*.
+> Все пользователи Power BI или службы Rights Management Azure, имеющие лицензии, назначенные в Microsoft 365 организации, должны сохранить свои панели мониторинга при удалении доменного имени. Они должны входить в систему по имени пользователя, например *user \@ fourthcoffeexyz.onmicrosoft.com* , а не *\@ FourthCoffee.XYZ User*.
 
 ## <a name="external-admin-takeover"></a>Внешняя передача контроля
 

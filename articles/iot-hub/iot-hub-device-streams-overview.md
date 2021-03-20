@@ -12,10 +12,10 @@ ms.custom:
 - 'Role: IoT Device'
 - 'Role: Technical Support'
 ms.openlocfilehash: 9487fc562fa099d2650aabc8d15fc1449c7fcb5c
-ms.sourcegitcommit: e7179fa4708c3af01f9246b5c99ab87a6f0df11c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97825178"
 ---
 # <a name="iot-hub-device-streams-preview"></a>Потоки устройств Центра Интернета вещей (предварительная версия)
@@ -142,7 +142,7 @@ az iot hub devicestream show --name <YourIoTHubName>
 
 Дополнительные сведения об использовании Azure Monitor с центром Интернета вещей см. в статье [мониторинг центра Интернета вещей](monitor-iot-hub.md). Сведения о всех журналах ресурсов, метриках и таблицах, доступных для центра Интернета вещей, см. в статье [мониторинг справочника по данным центра Интернета вещей Azure](monitor-iot-hub-reference.md).
 
-## <a name="regional-availability"></a>Доступность по регионам
+## <a name="regional-availability"></a>Доступность в регионах
 
 Во время общедоступной предварительной версии потоки устройств центра Интернета вещей доступны в центральной части США, центральной части США (EUAP), Северной Европе и Юго-Восточной Азии. Убедитесь, что центр создан в одном из этих регионов.
 

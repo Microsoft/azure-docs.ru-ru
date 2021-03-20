@@ -15,10 +15,10 @@ ms.author: kenwith
 ms.custom: aaddev
 ms.reviewer: paulgarn
 ms.openlocfilehash: 40bf202e0f14f18d817e4e918f8372ba3c0a4ad8
-ms.sourcegitcommit: a2d8acc1b0bf4fba90bfed9241b299dc35753ee6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91950675"
 ---
 # <a name="single-sign-on-saml-protocol"></a>Протокол единого входа SAML
@@ -46,7 +46,7 @@ xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
 </samlp:AuthnRequest>
 ```
 
-| Параметр | Тип | Описание |
+| Параметр | Type | Описание |
 | --- | --- | --- |
 | ID | Обязательно | Azure AD использует этот атрибут для заполнения атрибута `InResponseTo` возвращенного ответа. Идентификатор не должен начинаться с цифры, поэтому общая стратегия предусматривает добавление такой строки, как id, в начало строкового представления GUID. Например, `id6c1c178c166d486687be4aaf5e482730` — допустимый идентификатор. |
 | Версия | Обязательно | Этот параметр должен иметь значение **2.0**. |

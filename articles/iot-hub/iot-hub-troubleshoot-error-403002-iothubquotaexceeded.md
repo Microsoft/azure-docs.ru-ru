@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.date: 01/30/2020
 ms.author: jlian
 ms.openlocfilehash: 8312c3267e826088f34b3bffe1520703eec00bdc
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "76961118"
 ---
 # <a name="403002-iothubquotaexceeded"></a>403002 IoTHubQuotaExceeded
@@ -34,4 +34,4 @@ ms.locfileid: "76961118"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * Чтобы понять, как выполняется подсчет операций в отношении квоты, например двойника запросы и прямые методы, см. раздел [Общие сведения о ценах на центр Интернета вещей](iot-hub-devguide-pricing.md#charges-per-operation) .
-* Чтобы настроить мониторинг для ежедневного использования квот, настройте оповещение с *общим количеством используемых сообщений*метрики. Пошаговые инструкции см. в разделе [Настройка метрик и оповещений с помощью центра Интернета вещей](tutorial-use-metrics-and-diags.md#set-up-metrics) .
+* Чтобы настроить мониторинг для ежедневного использования квот, настройте оповещение с *общим количеством используемых сообщений* метрики. Пошаговые инструкции см. в разделе [Настройка метрик и оповещений с помощью центра Интернета вещей](tutorial-use-metrics-and-diags.md#set-up-metrics) .

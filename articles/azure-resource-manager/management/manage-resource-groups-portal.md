@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 03/26/2019
 ms.author: jgao
 ms.openlocfilehash: aabaad54dce52d57aaa4689f591351e290b0f9a3
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101093689"
 ---
 # <a name="manage-azure-resource-manager-resource-groups-by-using-the-azure-portal"></a>Управление группами ресурсов Azure Resource Manager с помощью портала Azure.
@@ -32,7 +32,7 @@ ms.locfileid: "101093689"
 
 ## <a name="create-resource-groups"></a>Создание группы ресурсов
 
-1. Войдите на [портал Microsoft Azure](https://portal.azure.com).
+1. Войдите на [портал Azure](https://portal.azure.com).
 2. Выбор **групп ресурсов**
 
     ![добавление группы ресурсов](./media/manage-resource-groups-portal/manage-resource-groups-add-group.png)
@@ -52,7 +52,7 @@ ms.locfileid: "101093689"
 
 ## <a name="list-resource-groups"></a>Перечислить группы ресурсов
 
-1. Войдите на [портал Microsoft Azure](https://portal.azure.com).
+1. Войдите на [портал Azure](https://portal.azure.com).
 2. Чтобы вывести список групп ресурсов, выберите **группы ресурсов** .
 
     ![просмотр групп ресурсов](./media/manage-resource-groups-portal/manage-resource-groups-list-groups.png)
@@ -61,14 +61,14 @@ ms.locfileid: "101093689"
 
 ## <a name="open-resource-groups"></a>Открытие групп ресурсов
 
-1. Войдите на [портал Microsoft Azure](https://portal.azure.com).
+1. Войдите на [портал Azure](https://portal.azure.com).
 2. Выберите элемент **Группы ресурсов**.
 3. Выберите группу ресурсов, которую необходимо открыть.
 
 ## <a name="delete-resource-groups"></a>Удаление групп ресурсов
 
 1. Откройте группу ресурсов, которую необходимо удалить.  См. раздел [Открытие групп ресурсов](#open-resource-groups).
-2. Выберите **Удалить группу ресурсов**.
+2. Выберите команду **Удалить группу ресурсов**.
 
     ![Удаление группы ресурсов Azure](./media/manage-resource-groups-portal/delete-group.png)
 
@@ -105,9 +105,9 @@ ms.locfileid: "101093689"
 
 ## <a name="manage-access-to-resource-groups"></a>Управление доступом к группам ресурсов
 
-Управление [доступом на основе ролей в Azure (Azure RBAC)](../../role-based-access-control/overview.md) — это способ управления доступом к ресурсам в Azure. Дополнительные сведения см. [в статье назначение ролей Azure с помощью портал Azure](../../role-based-access-control/role-assignments-portal.md).
+Управление [доступом на основе ролей в Azure (Azure RBAC)](../../role-based-access-control/overview.md) — это способ управления доступом к ресурсам в Azure. Дополнительные сведения см. в статье [Назначение ролей Azure с помощью портала Azure](../../role-based-access-control/role-assignments-portal.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о Azure Resource Manager см. в разделе [Общие сведения о Azure Resource Manager](overview.md).
 - Сведения о синтаксисе шаблона диспетчер ресурсов см. в разделе [Общие сведения о структуре и синтаксисе шаблонов Azure Resource Manager](../templates/template-syntax.md).

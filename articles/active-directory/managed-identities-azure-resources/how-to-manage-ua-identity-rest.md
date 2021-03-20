@@ -16,10 +16,10 @@ ms.date: 12/02/2020
 ms.author: barclayn
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 117f9a1c173f2083dd4621f4f3f41b6e83d1d46b
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96546698"
 ---
 # <a name="create-list-or-delete-a-user-assigned-managed-identity-using-rest-api-calls"></a>Создание, перечисление или удаление назначенного пользователем управляемого удостоверения с помощью вызовов REST API
@@ -117,6 +117,6 @@ DELETE https://management.azure.com/subscriptions/80c696ff-5efa-4909-a64d-f1b616
 |*Content-Type*     | Обязательный элемент. Задайте значение `application/json`.        |
 |*Авторизация*     | Обязательный элемент. Задайте допустимый маркер доступа для `Bearer`.        |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения о том, как задать управляемое удостоверение, назначаемое пользователем, для виртуальной машины или масштабируемого набора виртуальных машин Azure, см. в разделах [Настройка управляемых удостоверений для ресурсов Azure на виртуальной машине Azure с помощью вызовов REST API](qs-configure-rest-vm.md#user-assigned-managed-identity) и [Настройка управляемых удостоверений для ресурсов Azure в масштабируемом наборе виртуальных машин с помощью вызовов REST API](qs-configure-rest-vmss.md#user-assigned-managed-identity).

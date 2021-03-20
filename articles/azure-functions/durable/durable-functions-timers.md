@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 07/13/2020
 ms.author: azfuncdf
 ms.openlocfilehash: bb91f205a9b83b0b4b410644ef6c0fcbbf60876a
-ms.sourcegitcommit: fbb620e0c47f49a8cf0a568ba704edefd0e30f81
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91876453"
 ---
 # <a name="timers-in-durable-functions-azure-functions"></a>Таймеры в устойчивых функциях (Функции Azure)
@@ -177,7 +177,7 @@ main = df.Orchestrator.create(orchestrator_function)
 
 Более подробный пример реализации времени ожидания в функциях Orchestrator см. в статье [взаимодействие с человеком & время ожидания — Проверка телефона](durable-functions-phone-verification.md) .
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Сведения о том, как вызывать и обрабатывать внешние события](durable-functions-external-events.md)

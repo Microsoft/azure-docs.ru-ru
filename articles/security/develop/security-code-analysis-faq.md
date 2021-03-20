@@ -13,10 +13,10 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.openlocfilehash: b851e52141cf93aba4aab9b2768658f0aac4660f
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98879921"
 ---
 # <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
@@ -158,7 +158,7 @@ ms.locfileid: "98879921"
 
 Следующие ресурсы помогут безопасно управлять секретами и получать доступ к конфиденциальным сведениям из приложений.
 
- - [Azure Key Vault](../../key-vault/index.yml)
+ - [Azure Key Vault](../../key-vault/index.yml);
  - [Azure Active Directory (Azure AD)](../../azure-sql/database/authentication-aad-overview.md)
  - [Управляемое удостоверение службы Azure AD (MSI)](https://azure.microsoft.com/blog/keep-credentials-out-of-code-introducing-azure-ad-managed-service-identity/)
  - [Управляемые удостоверения для ресурсов Azure](../../active-directory/managed-identities-azure-resources/overview.md)
@@ -192,11 +192,11 @@ ms.locfileid: "98879921"
 
 #### <a name="what-are-common-errors-when-using-the-roslyn-analyzers-task"></a>Каковы распространенные ошибки при использовании задачи «анализаторы Roslyn»?
 
-##### <a name="the-project-was-restored-using-a-wrong-microsoftnetcoreapp-version"></a>Проект был восстановлен с использованием неверной версии Microsoft. NETCore. app
+##### <a name="the-project-was-restored-using-a-wrong-microsoftnetcoreapp-version"></a>Проект был восстановлен с использованием неверной версии Microsoft.NETCore.App
 
 Полное сообщение об ошибке:
 
-"Ошибка: проект был восстановлен с помощью Microsoft. NETCore. app версии *x. x. x*, но с текущими параметрами вместо него будет использоваться версия *y. y. y* . Чтобы устранить эту проблему, убедитесь, что для операции восстановления и для последующих операций, например сборки или публикации, используются одинаковые параметры. Обычно эта проблема возникает, если свойство RuntimeIdentifier задается во время сборки или публикации, а не во время восстановления".
+"Ошибка: проект был восстановлен с использованием Microsoft.NETCore.App версии *x. x. x*, но с текущими параметрами вместо этого будет использоваться версия *y. y. y* . Чтобы устранить эту проблему, убедитесь, что для операции восстановления и для последующих операций, например сборки или публикации, используются одинаковые параметры. Обычно эта проблема возникает, если свойство RuntimeIdentifier задается во время сборки или публикации, а не во время восстановления".
 
 Поскольку задачи Roslyn Analyzer выполняются как часть компиляции, исходное дерево на компьютере сборки должно находиться в состоянии построения.
 

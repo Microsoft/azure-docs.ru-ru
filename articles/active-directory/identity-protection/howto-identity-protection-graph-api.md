@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: sahandle
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2db8cfe652c0fca4b68b00d846e345c1b60cd05d
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98880242"
 ---
 # <a name="azure-active-directory-identity-protection-and-the-microsoft-graph-powershell-sdk"></a>Защита идентификации Azure Active Directory и пакет SDK для Microsoft Graph PowerShell

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 09/02/2020
 ms.author: yushwang
 ms.openlocfilehash: 467c2b9fe8758db5c1da43a65c1bfde133df0823
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98880107"
 ---
 # <a name="vpn-gateway-faq"></a>VPN-шлюз: вопросы и ответы
