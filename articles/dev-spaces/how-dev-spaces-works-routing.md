@@ -6,10 +6,10 @@ ms.topic: conceptual
 description: Описывает процессы, работающие с Power Azure Dev Spaces и принцип работы маршрутизации.
 keywords: Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, AKS, Служба Azure Kubernetes, контейнеры
 ms.openlocfilehash: 2d2c6f336222b4ae0907d6579289a8cad8d73aa6
-ms.sourcegitcommit: d103a93e7ef2dde1298f04e307920378a87e982a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91977975"
 ---
 # <a name="how-routing-works-with-azure-dev-spaces"></a>Как работает маршрутизация с Azure Dev Spaces
@@ -62,7 +62,7 @@ Azure Dev Spaces предоставляет несколько способов
 * *Azureuser* пространства разработки является производным от *значения по умолчанию*.
 * Обновленная версия *Service* a развертывается в *azureuser*.
 
-При использовании *azureuser*все запросы к *Service* a будут направляться в обновленную версию в *azureuser*. Запрос к *serviceB* сначала попытается направляться в *azureuser* версию *serviceB*. Так как она не существует, она будет направляться в версию *serviceB* *по умолчанию* . При удалении версии *azureuser* *Service* a все запросы к *Service* a будут возвращаться к использованию версии *Service*a *по умолчанию* .
+При использовании *azureuser* все запросы к *Service* a будут направляться в обновленную версию в *azureuser*. Запрос к *serviceB* сначала попытается направляться в *azureuser* версию *serviceB*. Так как она не существует, она будет направляться в версию *serviceB* *по умолчанию* . При удалении версии *azureuser* *Service* a все запросы к *Service* a будут возвращаться к использованию версии *Service* a *по умолчанию* .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

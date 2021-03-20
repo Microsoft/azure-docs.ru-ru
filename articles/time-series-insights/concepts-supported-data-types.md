@@ -10,10 +10,10 @@ services: time-series-insights
 ms.topic: conceptual
 ms.date: 01/19/2021
 ms.openlocfilehash: b0536a152797d17cba0930b3a142a7fb92eaf5ea
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98685163"
 ---
 # <a name="supported-data-types"></a>Поддерживаемые типы данных
@@ -26,7 +26,7 @@ ms.locfileid: "98685163"
 | **datetime** | Представляет текущее время, обычно выраженное как дата и время суток. Выражено в формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html). Свойства DateTime всегда хранятся в формате UTC. Смещения часового пояса, если они правильно отформатированы, будут применены, а затем получится значение, хранящееся в формате UTC. Дополнительные сведения о свойстве timestamp среды и смещениях DateTime см. в [этом](concepts-streaming-ingestion-event-sources.md#event-source-timestamp) разделе. | `"eventProcessedLocalTime": "2020-03-20T09:03:32.8301668Z"` |  Если "Евентпроцесседлокалтиме" является меткой времени источника события: `$event.$ts` . Если это другое свойство JSON: `$event.eventProcessedLocalTime.DateTime` или `$event['eventProcessedLocalTime'].DateTime` | `eventProcessedLocalTime_datetime`
 | **double** | 64-разрядное число двойной точности  | `"value": 31.0482941` | `$event.value.Double` или `$event['value'].Double` |  `value_double`
 | **long** | 64-разрядное целое число со знаком  | `"value" : 31` | `$event.value.Long` или `$event['value'].Long` |  `value_long`
-| **строка** | Текстовые значения должны состоять из допустимых UTF-8. Значения NULL и пустые строки считаются одинаковыми. |  `"site": "DIM_MLGGG"`| `$event.site.String` или `$event['site'].String`| `site_string`
+| **string** | Текстовые значения должны состоять из допустимых UTF-8. Значения NULL и пустые строки считаются одинаковыми. |  `"site": "DIM_MLGGG"`| `$event.site.String` или `$event['site'].String`| `site_string`
 | **dynamic** | Сложный (не являющийся примитивом) тип, состоящий из массива или контейнера свойств (Dictionary). Сейчас только переведенные массивы JSON примитивов или массивов объектов, не содержащих идентификатор TS или свойство timestamp, будут храниться как динамические. Ознакомьтесь с этой [статьей](./concepts-json-flattening-escaping-rules.md) , чтобы понять, как объекты будут сведены, а массивы можно будет отменить. Свойства полезных данных, хранящиеся в этом типе, доступны только при выборе `Explore Events` в обозревателе "аналитика временных рядов" для просмотра необработанных событий или через [`GetEvents`](/rest/api/time-series-insights/dataaccessgen2/query/execute#getevents) API запросов для синтаксического анализа на стороне клиента. |  `"values": "[197, 194, 189, 188]"` | Ссылки на динамические типы в выражении временных рядов пока не поддерживаются | `values_dynamic`
 
 > [!NOTE]
@@ -51,7 +51,7 @@ ms.locfileid: "98685163"
 
 В качестве части полезных данных события можно передавать сложные типы, такие как объекты и массивы. Вложенные объекты будут плоскими, а массивы будут храниться как `dynamic` или сведены для создания нескольких событий в зависимости от конфигурации среды и фигуры JSON. Дополнительные сведения о [правилах плоской обработки и экранирования JSON](./concepts-json-flattening-escaping-rules.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Ознакомьтесь с [правилами преобразования и экранирования JSON](./concepts-json-flattening-escaping-rules.md) , чтобы понять, как будут храниться события.
 

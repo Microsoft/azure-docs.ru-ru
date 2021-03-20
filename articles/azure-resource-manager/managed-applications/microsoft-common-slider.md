@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 07/10/2020
 ms.author: tomfitz
 ms.openlocfilehash: bb168a4bff6d2570f539307530232b5063bb535c
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87098532"
 ---
 # <a name="microsoftcommonslider-ui-element"></a>Элемент пользовательского интерфейса Microsoft. Common. Slider
@@ -40,13 +40,13 @@ ms.locfileid: "87098532"
 }
 ```
 
-## <a name="sample-output"></a>Пример полученных результатов
+## <a name="sample-output"></a>Пример выходных данных
 
 ```json
 26
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 - `min`Значения и `max` являются обязательными. Они устанавливают начальную и конечную точки для ползунка.
 - `showStepMarkers`Свойство по умолчанию имеет значение true. Маркеры шага отображаются, только если диапазон от min до max равен 100 или меньше.

@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 09/18/2020
 ms.author: yushwang
 ms.openlocfilehash: 2b298185866d16da02fe8d3b3fdb41f0b0b1f726
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98878550"
 ---
 # <a name="configure-ipsecike-policy-for-s2s-vpn-or-vnet-to-vnet-connections-azure-portal"></a>Настройка политики IPsec/IKE для подключений S2S VPN или VNet-to-VNet: портал Azure
@@ -28,8 +28,10 @@ ms.locfileid: "98878550"
 ### <a name="considerations"></a>Рекомендации
 
 * Политика IPsec/IKE работает только со следующими номерами SKU шлюза:
-  * ***VpnGw1 ~ 5 и VpnGw1AZ ~ 5AZ** _ _ ***Standard** _ and _*_HighPerformance_*_ _. Вы можете указать только **одно** сочетание политики * 1 для данного соединения.
-  _ Необходимо указать все алгоритмы и параметры для IKE (основной режим) и IPsec (быстрый режим). Указать частичную политику нельзя.
+  * ***VpnGw1 ~ 5 и VpnGw1AZ ~ 5AZ***
+  * ***Стандартные** _ и _ *_HighPerformance_**
+* Можно указать только ***одну*** комбинацию политик для каждого подключения.
+* Вам следует указать все алгоритмы и параметры для IKE (основной режим) и IPsec (быстрый режим). Указать частичную политику нельзя.
 * Ознакомьтесь со спецификациями поставщиков VPN-устройств, чтобы убедиться, что политика поддерживается на локальных VPN-устройствах. Если политики несовместимы, невозможно будет установить VPN-подключения типа "сеть — сеть" или "виртуальная сеть — виртуальная сеть".
 
 ## <a name="workflow"></a><a name ="workflow"></a>Рабочий процесс
@@ -122,7 +124,7 @@ ms.locfileid: "98878550"
 
 * **Виртуальная сеть:**  TestVNet1
 
-   :::image type="content" source="./media/ipsec-ike-policy-howto/testvnet-1.png" alt-text="Региональной":::
+   :::image type="content" source="./media/ipsec-ike-policy-howto/testvnet-1.png" alt-text="Виртуальная сеть":::
 
 * **VPN-шлюз:** VNet1GW
 

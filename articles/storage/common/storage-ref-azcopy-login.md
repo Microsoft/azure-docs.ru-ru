@@ -9,10 +9,10 @@ ms.author: normesta
 ms.subservice: common
 ms.reviewer: zezha-msft
 ms.openlocfilehash: e4740870dd2d9748aad55150ce1946e3eb666619
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98878364"
 ---
 # <a name="azcopy-login"></a>azcopy login
@@ -97,7 +97,7 @@ azcopy login --service-principal --certificate-path /path/to/my/cert --applicati
 
 `--certificate-path` является обязательным при выполнении проверки подлинности субъекта-службы на основе сертификата.
 
-## <a name="options"></a>Варианты
+## <a name="options"></a>Параметры
 
 **--AAD — строка конечной точки** , используемая Azure Active Directoryой конечной точкой. Значение по умолчанию ( https://login.microsoftonline.com) является верным для глобального облака Azure. Задайте этот параметр при проверке подлинности в национальном облаке. Не требуется для Управляемое удостоверение службы.
 

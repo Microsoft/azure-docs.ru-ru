@@ -8,10 +8,10 @@ ms.subservice: hyperscale-citus
 ms.topic: conceptual
 ms.date: 05/06/2019
 ms.openlocfilehash: 842563319e09a001fd6e85403d8aee6fb14690ee
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90884431"
 ---
 # <a name="table-colocation-in-azure-database-for-postgresql--hyperscale-citus"></a>Совместное размещение таблиц в базе данных Azure для PostgreSQL — масштабирование (Цитус)
@@ -96,7 +96,7 @@ GROUP BY page_id ORDER BY count DESC LIMIT 10;
 
 Выполнение запросов должно обращаться к данным в сегментах, разбросанных по узлам.
 
-:::image type="content" source="media/concepts-hyperscale-colocation/colocation-inefficient-queries.png" alt-text="Сегментов":::
+:::image type="content" source="media/concepts-hyperscale-colocation/colocation-inefficient-queries.png" alt-text="Неэффективные запросы":::
 
 В этом случае распределение данных создает существенные недостатки.
 
@@ -134,10 +134,10 @@ GROUP BY page_id;
 
 Из-за фильтрации и объединения в tenant_id, Цитуса, чтобы получить ответ на весь запрос, можно использовать набор соразмещенных сегментов, содержащих данные для конкретного клиента. Один PostgreSQL узел может ответить на запрос за один шаг.
 
-:::image type="content" source="media/concepts-hyperscale-colocation/colocation-better-query.png" alt-text="Сегментов":::
+:::image type="content" source="media/concepts-hyperscale-colocation/colocation-better-query.png" alt-text="Улучшенный запрос":::
 
 В некоторых случаях необходимо изменить запросы и схемы таблиц, чтобы включить идентификатор клиента в ограничения UNIQUE и условия JOIN. Это изменение обычно является простым.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как данные клиента сохранятся в [учебнике по нескольким клиентам](tutorial-design-database-hyperscale-multi-tenant.md).

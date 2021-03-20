@@ -5,10 +5,10 @@ services: container-service
 ms.topic: article
 ms.date: 12/07/2018
 ms.openlocfilehash: e8f9c1946567ac3c3ea1045a216d6b0486fd959a
-ms.sourcegitcommit: c157b830430f9937a7fa7a3a6666dcb66caa338b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94686265"
 ---
 # <a name="cluster-operator-and-developer-best-practices-to-build-and-manage-applications-on-azure-kubernetes-service-aks"></a>Лучшие методики по созданию приложений и управлению ими в Службе Azure Kubernetes (AKS) для оператора и разработчика кластера
@@ -38,7 +38,7 @@ ms.locfileid: "94686265"
     * Содержит сведения о защите доступа к серверу API, ограничении доступа к контейнеру и управлении обновлениями и перезагрузками узла.
 * [Best practices for container image management and security in Azure Kubernetes Service (AKS)](operator-best-practices-container-image-management.md) (Рекомендации по управлению образами контейнеров и обеспечении их безопасности в Службе Azure Kubernetes (AKS))
     * Включает в себя защиту образа и сред выполнения и автоматизированных сборок на обновлениях базовых образов.
-* [Best practices for pod security in Azure Kubernetes Service (AKS)](developer-best-practices-pod-security.md) (Рекомендации по обеспечению безопасности pod в Службе Azure Kubernetes (AKS))
+* [Best practices for pod security in Azure Kubernetes Service (AKS) (Рекомендации по обеспечению безопасности pod в Службе Azure Kubernetes (AKS))](developer-best-practices-pod-security.md)
     * Содержит сведения о защите доступа к ресурсам, ограничении доступности учетных данных и использовании удостоверений pod и цифровых хранилищ ключей.
 
 **Сеть и хранилище**
@@ -59,7 +59,7 @@ ms.locfileid: "94686265"
 
 * [Рекомендации для разработчиков приложений по управлению ресурсами в Службе Azure Kubernetes (AKS)](developer-best-practices-resource-management.md)
     * Содержит сведения об определении запросов и ограничений ресурсов pod, настройке средств разработки и проверке наличия проблем приложений.
-* [Best practices for pod security in Azure Kubernetes Service (AKS)](developer-best-practices-pod-security.md) (Рекомендации по обеспечению безопасности pod в Службе Azure Kubernetes (AKS))
+* [Best practices for pod security in Azure Kubernetes Service (AKS) (Рекомендации по обеспечению безопасности pod в Службе Azure Kubernetes (AKS))](developer-best-practices-pod-security.md)
     * Содержит сведения о защите доступа к ресурсам, ограничении доступности учетных данных и использовании удостоверений pod и цифровых хранилищ ключей.
 
 ## <a name="kubernetes--aks-concepts"></a>Концепции Kubernetes и AKS

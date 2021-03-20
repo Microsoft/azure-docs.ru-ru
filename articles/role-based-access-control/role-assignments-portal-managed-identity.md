@@ -10,10 +10,10 @@ ms.workload: identity
 ms.date: 02/15/2021
 ms.author: rolyon
 ms.openlocfilehash: 57c8c00a64996bc6223fbe7e514db9db38ccdcc2
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100556853"
 ---
 # <a name="assign-azure-roles-to-a-managed-identity-preview"></a>Назначение ролей Azure управляемому удостоверению (Предварительная версия)
@@ -92,5 +92,5 @@ ms.locfileid: "100556853"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Что такое управляемые удостоверения для ресурсов Azure?](../active-directory/managed-identities-azure-resources/overview.md)
-- [Назначение ролей Azure с помощью портал Azure](role-assignments-portal.md)
+- [Назначение ролей Azure с помощью портала Azure](role-assignments-portal.md)
 - [Вывод списка назначений ролей Azure с помощью портала Azure](role-assignments-list-portal.md).

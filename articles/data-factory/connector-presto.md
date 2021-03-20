@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 12/18/2020
 ms.author: jingwang
 ms.openlocfilehash: 33e521d418c219be8eb85b79a0e07d999edb1b08
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100374275"
 ---
 # <a name="copy-data-from-presto-using-azure-data-factory"></a>Копирование данных из Presto с помощью Фабрики данных Azure
@@ -39,7 +39,7 @@ ms.locfileid: "100374275"
 
 Для связанной службы Presto поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства type необходимо задать значение **Presto** | Да |
 | host | IP-адрес или имя узла службы Presto. (например, 192.168.222.160)  | Да |

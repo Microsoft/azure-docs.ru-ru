@@ -9,16 +9,16 @@ ms.topic: include
 ms.date: 3/18/2020
 ms.author: derekol
 ms.openlocfilehash: e5804aa1b005e670d8b430b1c0a3bd62efd0bb06
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "81687041"
 ---
 1. Выберите подключение пиринга, которое вы хотите включить для службы пиринга Azure. Затем выберите **...**  >  **Изменить соединение**.
     > [!div class="mx-imgBorder"]
     > ![Соединение для изменения соединения с пирингом](../media/setup-direct-modify-editconnection.png)
-1. В разделе **использовать для службы пиринга**выберите **включено** и нажмите кнопку **сохранить**.
+1. В разделе **использовать для службы пиринга** выберите **включено** и нажмите кнопку **сохранить**.
     > [!div class="mx-imgBorder"]
     > ![Подключение пиринга включение службы пиринга](../media/setup-direct-modify-editconnectionsettings-peering-service.png)
 1. На экране **обзора** отображаются сведения о развертывании. После завершения развертывания выберите **Переход к ресурсу**.

@@ -9,10 +9,10 @@ ms.author: normesta
 ms.subservice: common
 ms.reviewer: zezha-msft
 ms.openlocfilehash: d28a20a6afc78939491e56f46a32782b4c0844cc
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98879009"
 ---
 # <a name="azcopy-remove"></a>azcopy remove
@@ -85,7 +85,7 @@ azcopy rm "https://[account].dfs.core.windows.net/[container]/[path/to/file]?[SA
 azcopy rm "https://[account].dfs.core.windows.net/[container]/[path/to/directory]?[SAS]"
 ```
 
-## <a name="options"></a>Варианты
+## <a name="options"></a>Параметры
 
 **--Delete — строка моментальных снимков** по умолчанию операция удаления завершается ошибкой, если BLOB-объект имеет моментальные снимки. Укажите `include` , чтобы удалить корневой BLOB-объект и все его моментальные снимки. Кроме того, можно указать `only` , чтобы удалить только моментальные снимки, но сохранив корневой большой двоичный объект.
 

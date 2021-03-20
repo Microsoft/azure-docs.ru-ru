@@ -16,10 +16,10 @@ ms.date: 02/03/2020
 ms.author: barclayn
 ROBOTS: NOINDEX
 ms.openlocfilehash: dca5f9ed2911ae3042fb9871f849212ec18b1b58
-ms.sourcegitcommit: 44188608edfdff861cc7e8f611694dec79b9ac7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99539389"
 ---
 # <a name="how-to-stop-using-the-virtual-machine-managed-identities-extension-and-start-using-the-azure-instance-metadata-service"></a>Как отключить использование расширения управляемых удостоверений виртуальной машины и начать использовать службу метаданных экземпляра Azure
@@ -210,7 +210,7 @@ Set-AzVMExtension -Name <extension name>  -Type <extension Type>  -Location <loc
 По этим причинам служба IMDS Azure является нерекомендуемым способом запроса токенов, как только расширение виртуальной машины будет признано устаревшим. 
 
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Использование управляемых удостоверений для ресурсов Azure на виртуальной машине Azure для получения маркера доступа](how-to-use-vm-token.md)
 * [Служба метаданных экземпляров Azure](../../virtual-machines/windows/instance-metadata-service.md)

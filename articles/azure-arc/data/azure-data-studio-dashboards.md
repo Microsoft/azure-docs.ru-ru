@@ -10,10 +10,10 @@ ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
 ms.openlocfilehash: a96be6d4da3d292b2e9881652aad28f318ccee8a
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92107578"
 ---
 # <a name="azure-data-studio-dashboards"></a>Панели мониторинга Azure Data Studio
@@ -24,7 +24,7 @@ ms.locfileid: "92107578"
 
 ## <a name="connecting-to-a-data-controller"></a>Подключение к контроллеру данных
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 - Скачать [Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio)
 - Расширение ARC для Azure установлено

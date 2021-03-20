@@ -15,10 +15,10 @@ ms.date: 09/29/2020
 ms.author: curtand
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 42d38990289169412f06b0c7e4bcbdf67f688da7
-ms.sourcegitcommit: 44188608edfdff861cc7e8f611694dec79b9ac7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99539015"
 ---
 # <a name="discover-azure-resources-to-manage-in-privileged-identity-management"></a>Обнаружение ресурсов Azure для управления в управление привилегированными пользователями
@@ -70,7 +70,7 @@ ms.locfileid: "99539015"
 
     ![Сообщение, подтверждающее подключение выбранных ресурсов для управления](./media/pim-resource-roles-discover-resources/discovery-manage-resource-message.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Настройка параметров роли ресурсов Azure в управление привилегированными пользователями](pim-resource-roles-configure-role-settings.md)
 - [Назначение ролей ресурсов Azure в управление привилегированными пользователями](pim-resource-roles-assign-roles.md)

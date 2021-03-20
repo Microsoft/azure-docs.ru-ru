@@ -16,10 +16,10 @@ ms.author: RamaKoni
 ms.reviewer: sqlblt, daleche
 ms.custom: seo-lt-2019
 ms.openlocfilehash: 5dbd5725c666afe04d57d4432f0a4798fcb34c03
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97358849"
 ---
 # <a name="in-place-change-of-sql-server-version-on-azure-vm"></a>Изменение версии SQL Server на месте на виртуальной машине Azure
@@ -28,7 +28,7 @@ ms.locfileid: "97358849"
 
 В этой статье описывается, как изменить версию Microsoft SQL Server на виртуальной машине Windows в Microsoft Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы выполнить обновление на месте SQL Server, применяются следующие условия.
 
@@ -110,7 +110,7 @@ ms.locfileid: "97358849"
 > [!NOTE]
 > Если вы уже зарегистрировались в расширении агента IaaS SQL, [Отмените регистрацию в RP](sql-agent-extension-manually-register-single-vm.md#unregister-from-extension) и снова [зарегистрируйте ресурс виртуальной машины SQL](sql-agent-extension-manually-register-single-vm.md#register-with-extension) , чтобы он обнаружил правильную версию и выпуск SQL Server, установленных на виртуальной машине. При этом обновляются метаданные и сведения о выставлении счетов, связанные с этой виртуальной машиной.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 - Рекомендуется инициировать резервное копирование, обновление статистики, перестроение индексов и проверку согласованности после завершения обновления. Кроме того, можно проверить уровни совместимости отдельных баз данных, чтобы убедиться, что они соответствуют нужному уровню.
 - После обновления SQL Server на виртуальной машине убедитесь, что свойство **edition** SQL Server в портал Azure соответствует номеру установленного выпуска для выставления счетов.

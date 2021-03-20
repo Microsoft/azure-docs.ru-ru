@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 05/27/2020
 ms.custom: devx-track-java
 ms.openlocfilehash: 0c90062f1968cc7be5a742a67363f57b9632fdfa
-ms.sourcegitcommit: 30505c01d43ef71dac08138a960903c2b53f2499
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92090681"
 ---
 # <a name="java-and-base-os-for-spring-microservice-apps"></a>Java и базовая операционная система для приложений микрослужбы Spring

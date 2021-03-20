@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 452fee4bca3748edfd563e98995331bb0808369f
-ms.sourcegitcommit: 431bf5709b433bb12ab1f2e591f1f61f6d87f66c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95998348"
 ---
 ПРИМЕНИМО К: :::image type="icon" source="../media/applies-to/yes.png" border="false":::API SQL

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 08/13/2020
 keywords: миграция, АТО, openshift, Red Hat
 ms.openlocfilehash: 371672de83a6d745d7b367f8327a64e11059923e
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100653284"
 ---
 # <a name="migrate-from-azure-red-hat-openshift-311-to-azure-red-hat-openshift-4"></a>Миграция из Azure Red Hat OpenShift 3,11 в Azure Red Hat OpenShift 4
@@ -25,7 +25,7 @@ Azure Red Hat OpenShift в OpenShift 4 включает Kubernetes 1,16 в ОС 
 > [!NOTE]
 > Средства миграции Red Hat OpenShift, такие как средство поддержки миграции плоскости управления и средство переноса приложений кластера (камера), не могут использоваться с кластерами Azure Red Hat OpenShift 3,11.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 В этой статье предполагается, что у вас уже есть кластер Azure Red Hat OpenShift 3,11.
 
@@ -81,7 +81,7 @@ az aro create \
 
 Azure Red Hat OpenShift 4 использует несколько различных операторов для настройки сети в кластере: [оператор сети кластера](https://docs.openshift.com/container-platform/4.6/networking/cluster-network-operator.html#nw-cluster-network-operator_cluster-network-operator), [оператор DNS](https://docs.openshift.com/container-platform/4.6/networking/dns-operator.html)и [оператор](https://docs.openshift.com/container-platform/4.6/networking/ingress-operator.html)входящего трафика. Дополнительные сведения о настройке сети в кластере Azure Red Hat OpenShift 4 см. в статье [Схема сетей](concepts-networking.md) и [Общие сведения о](https://docs.openshift.com/container-platform/4.6/networking/understanding-networking.html)работе в сети.
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Azure Red Hat OpenShift 4 поддерживает следующие подключаемые модули Персистентволуме:
 
 - Хранилище эластичных блоков AWS (EBS)
@@ -102,7 +102,7 @@ Azure Red Hat OpenShift 4 может создавать образы из исх
 
 Если вы используете такие внешние реестры, как [Реестр контейнеров Azure](../container-registry/index.yml), [Red Hat Quay](https://docs.openshift.com/container-platform/4.6/registry/registry-options.html#registry-quay-overview_registry-options)или [Реестр Red Hat с поддержкой проверки подлинности](https://docs.openshift.com/container-platform/4.6/registry/registry-options.html#registry-authentication-enabled-registry-overview_registry-options), выполните действия по предоставлению учетных данных в кластер, чтобы разрешить кластеру доступ к репозиториям.
 
-### <a name="monitoring"></a>Наблюдение
+### <a name="monitoring"></a>Мониторинг
 
 Azure Red Hat OpenShift включает предварительно настроенный, предварительно установленный и самообновляемый стек мониторинга, основанный на проекте с открытым исходным кодом Prometheus и его более широкой системе. Он обеспечивает мониторинг компонентов кластера и включает набор предупреждений для немедленного уведомления администратора кластера о возникших проблемах и наборе панелей мониторинга Grafana. Стек мониторинга кластера поддерживается только для мониторинга кластеров Azure Red Hat OpenShift. Дополнительные сведения см. в статье [мониторинг кластера для Azure Red Hat OpenShift](https://docs.openshift.com/container-platform/4.6/monitoring/understanding-the-monitoring-stack.html).
 
