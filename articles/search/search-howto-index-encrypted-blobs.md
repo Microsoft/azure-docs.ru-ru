@@ -10,10 +10,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 11/02/2020
 ms.openlocfilehash: 4bab8def514df21d948d67f3cfba846c43917be2
-ms.sourcegitcommit: 5b93010b69895f146b5afd637a42f17d780c165b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96530941"
 ---
 # <a name="how-to-index-encrypted-blobs-using-blob-indexers-and-skillsets-in-azure-cognitive-search"></a>Индексирование зашифрованных больших двоичных объектов с помощью индексаторов больших двоичных объектов и навыков в Azure Когнитивный поиск
@@ -86,7 +86,7 @@ ms.locfileid: "96530941"
      
         ![Код ключа узла функции](media/indexing-encrypted-blob-files/function-host-key.jpg "Где найти код ключа узла функции Azure")
 
-### <a name="cognitive-services"></a>Cognitive Services
+### <a name="cognitive-services"></a>Службы Cognitive Services
 
 Процесс обогащения и подготовки к ИСКУССТВЕНному выполнению осуществляется с помощью Cognitive Services, в том числе Анализ текста и Компьютерное зрение для обработки естественного языка и изображений. Если бы вы создавали реальный прототип или проект, на этом этапе нужно было бы создать Cognitive Services (в том же регионе, что и Когнитивный поиск Azure) для связывания с операциями индексирования.
 

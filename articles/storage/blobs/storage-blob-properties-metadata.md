@@ -10,10 +10,10 @@ ms.subservice: blobs
 ms.topic: how-to
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 984fb00e163a090534da1fb41850dcfef6c5d516
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95521535"
 ---
 # <a name="manage-blob-properties-and-metadata-with-net"></a>Управление свойствами и метаданными больших двоичных объектов с помощью .NET
@@ -35,13 +35,13 @@ ms.locfileid: "95521535"
 
 В следующем примере кода задаются `ContentType` `ContentLanguage` системные свойства и для большого двоичного объекта.
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Чтобы задать свойства для большого двоичного объекта, вызовите [сесттфеадерс](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.sethttpheaders) или [сесттфеадерсасинк](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.sethttpheadersasync). Все свойства, не заданные явно, очищаются. В следующем примере кода сначала возвращаются существующие свойства большого двоичного объекта, а затем они используются для заполнения заголовков, которые не обновляются.
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/Metadata.cs" id="Snippet_SetBlobProperties":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 ```csharp
 public static async Task SetBlobPropertiesAsync(CloudBlob blob)
@@ -72,11 +72,11 @@ public static async Task SetBlobPropertiesAsync(CloudBlob blob)
 
 Следующий пример кода получает системные свойства большого двоичного объекта и отображает некоторые из значений.
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/Metadata.cs" id="Snippet_ReadBlobProperties":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 Получение метаданных и значений свойств для ресурса хранилища BLOB-объектов — это двухэтапный процесс. Прежде чем можно будет прочитать эти значения, необходимо явно получить их, вызвав `FetchAttributes` `FetchAttributesAsync` метод или. Исключением из этого правила является то, `Exists` что `ExistsAsync` методы и вызывают соответствующий `FetchAttributes` метод в рамках. При вызове одного из этих методов также не требуется вызывать `FetchAttributes` .
 
@@ -115,12 +115,12 @@ private static async Task GetBlobPropertiesAsync(CloudBlob blob)
 
 Метаданные можно указать как одну или несколько пар "имя-значение" для BLOB-ресурса или ресурса контейнера. Чтобы задать метаданные, добавьте пары "имя-значение" в `Metadata` коллекцию ресурса. Затем вызовите один из следующих методов для записи значений:
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 - [сетметадата](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.setmetadata)
 - [сетметадатаасинк](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.setmetadataasync)
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 - [сетметадата](/dotnet/api/microsoft.azure.storage.blob.cloudblob.setmetadata)
 - [сетметадатаасинк](/dotnet/api/microsoft.azure.storage.blob.cloudblob.setmetadataasync)
@@ -132,11 +132,11 @@ private static async Task GetBlobPropertiesAsync(CloudBlob blob)
 
 В следующем примере кода задаются метаданные для большого двоичного объекта. Одно значение задается с помощью `Add` метода коллекции. Другое значение задается с помощью неявного синтаксиса «ключ/значение».
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/Metadata.cs" id="Snippet_AddBlobMetadata":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 ```csharp
 public static async Task AddBlobMetadataAsync(CloudBlob blob)
@@ -166,13 +166,13 @@ public static async Task AddBlobMetadataAsync(CloudBlob blob)
 
 В следующем примере кода считываются метаданные в большом двоичном объекте.
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Чтобы получить метаданные, вызовите метод [жетпропертиесасинк](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.getpropertiesasync) или для большого двоичного [объекта или контейнера](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.getproperties) , чтобы заполнить коллекцию [метаданных](/dotnet/api/azure.storage.blobs.models.blobproperties.metadata) , а затем считайте значения, как показано в примере ниже. Методы- **Свойства** извлекают свойства и метаданные большого двоичного объекта в одном вызове. Это отличается от интерфейсов API, для которых требуются отдельные вызовы для [получения свойств большого двоичного объекта](/rest/api/storageservices/get-blob-properties) и [получения метаданных большого двоичного объекта](/rest/api/storageservices/get-blob-metadata).
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/Metadata.cs" id="Snippet_ReadBlobMetadata":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 Чтобы получить метаданные, вызовите `FetchAttributes` метод или для `FetchAttributesAsync` большого двоичного объекта или контейнера, чтобы заполнить `Metadata` коллекцию, а затем считайте значения, как показано в примере ниже.
 
@@ -208,7 +208,7 @@ public static async Task ReadBlobMetadataAsync(CloudBlob blob)
 
 [!INCLUDE [storage-blob-dotnet-resources-include](../../../includes/storage-blob-dotnet-resources-include.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Операция задания свойств BLOB-объекта](/rest/api/storageservices/set-blob-properties)
 - [Операция получения свойств BLOB-объекта](/rest/api/storageservices/get-blob-properties)

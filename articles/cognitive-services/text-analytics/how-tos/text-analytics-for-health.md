@@ -8,15 +8,15 @@ manager: nitinme
 ms.service: cognitive-services
 ms.subservice: text-analytics
 ms.topic: conceptual
-ms.date: 02/03/2021
+ms.date: 03/11/2021
 ms.author: aahi
 ms.custom: references_regions
-ms.openlocfilehash: f7ba6363ec3a38d37ea3df0f76409289069638e8
-ms.sourcegitcommit: 44188608edfdff861cc7e8f611694dec79b9ac7d
+ms.openlocfilehash: 80a943d235783852f57832363b5af8048f010575
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99537802"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104599441"
 ---
 # <a name="how-to-use-text-analytics-for-health-preview"></a>Как использовать Анализ текста для работоспособности (Предварительная версия)
 
@@ -44,7 +44,7 @@ ms.locfileid: "99537802"
 
 ### <a name="relation-extraction"></a>[Извлечение связей](#tab/relation-extraction)
 
-Извлечение связей определяет осмысленные соединения между понятиями, упомянутыми в тексте. Например, связь "время условия" обнаруживается путем связывания имени условия с временем. 
+Извлечение связей определяет осмысленные соединения между понятиями, упомянутыми в тексте. Например, отношение "время выполнения" обнаруживается путем сопоставления имени условия со временем или между сокращением и полным описанием.  
 
 > [!div class="mx-imgBorder"]
 > ![Повтор работоспособности](../media/ta-for-health/health-relation-extraction.png)
@@ -52,19 +52,23 @@ ms.locfileid: "99537802"
 
 ### <a name="entity-linking"></a>[Связывание сущностей](#tab/entity-linking)
 
-Сущность, связывающая сущности различения, сопоставляя именованные сущности, упомянутые в тексте, с концепциями, найденными в предопределенной базе данных концепций. Например, единая медицинское языковая система (УМЛС).
+Сущность, связывающая сущности различения, сопоставляя именованные сущности, упомянутые в тексте, с концепциями, найденными в предопределенной базе данных концепций, включая унифицированную систему медицинских языков (УМЛС). Медицинские понятия также назначают предпочтительное именование в качестве дополнительной формы нормализации.
 
 > [!div class="mx-imgBorder"]
 > ![Работоспособность EL](../media/ta-for-health/health-entity-linking.png)
 
 Анализ текста для работоспособности поддерживает связывание с работоспособностью и биомедицинских словари, найденных в источнике знаний об метасесаурусе единой системы обработки медицинских языков ([умлс](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/index.html)).
 
-### <a name="negation-detection"></a>[Обнаружение отрицания](#tab/negation-detection) 
+### <a name="assertion-detection"></a>[Обнаружение утверждения](#tab/assertion-detection) 
 
-Значение медицинских материалов сильно влияет на модификаторы, такие как отрицание, которое может иметь критически важное значение при неточной диагностике. Анализ текста для работоспособности поддерживает обнаружение отрицания для различных сущностей, упомянутых в тексте. 
+Значение медицинских материалов сильно зависит от модификаторов, например отрицательных или условных утверждений, которые могут иметь критические последствия, если они не представлены. Анализ текста для работоспособности поддерживает три категории обнаружения утверждения для сущностей в тексте: 
+
+* уверен
+* условные
+* связь
 
 > [!div class="mx-imgBorder"]
-> ![РАСХОД работоспособности](../media/ta-for-health/health-negation.png)
+> ![РАСХОД работоспособности](../media/ta-for-health/assertions.png)
 
 ---
 
@@ -137,20 +141,20 @@ example.json
 
 Так как этот запрос POST используется для отправки задания для асинхронной операции, в объекте Response нет текста.  Однако для выполнения запроса GET для проверки состояния задания и выходных данных требуется значение ключа Operation-Location в заголовках ответа.  Ниже приведен пример значения ключа Location операции в заголовке ответа запроса POST:
 
-`https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.3/entities/health/jobs/<jobID>`
+`https://<your-custom-subdomain>.cognitiveservices.azure.com/text/analytics/v3.1-preview.4/entities/health/jobs/<jobID>`
 
 Чтобы проверить состояние задания, выполните запрос GET к URL-адресу в заголовке ключа операции запроса POST.  Для отражения состояния задания используются следующие состояния: `NotStarted` , `running` ,,,, `succeeded` `failed` `rejected` `cancelling` и `cancelled` .  
 
 Можно отменить задание с `NotStarted` состоянием или, `running` используя вызов HTTP DELETE с тем же URL-адресом, что и у запроса GET.  Дополнительные сведения о вызове DELETE доступны в [анализ текста для Справочника по API, размещенного в исправности](https://westus2.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v3-1-preview-3/operations/CancelHealthJob).
 
-Ниже приведен пример ответа на запрос GET.  Обратите внимание, что выходные данные доступны для получения до тех пор, пока не `expirationDateTime` прошло (24 часа со времени создания задания), после чего выходные данные очищаются.
+Ниже приведен пример ответа на запрос GET.  Выходные данные доступны для получения до тех пор, пока не `expirationDateTime` пройдет время (24 часа со времени создания задания), после чего выходные данные будут очищены.
 
 ```json
 {
-    "jobId": "b672c6f5-7c0d-4783-ba8c-4d0c47213454",
-    "lastUpdateDateTime": "2020-11-18T01:45:00Z",
-    "createdDateTime": "2020-11-18T01:44:55Z",
-    "expirationDateTime": "2020-11-19T01:44:55Z",
+    "jobId": "be437134-a76b-4e45-829e-9b37dcd209bf",
+    "lastUpdateDateTime": "2021-03-11T05:43:37Z",
+    "createdDateTime": "2021-03-11T05:42:32Z",
+    "expirationDateTime": "2021-03-12T05:42:32Z",
     "status": "succeeded",
     "errors": [],
     "results": {
@@ -163,8 +167,7 @@ example.json
                         "length": 5,
                         "text": "100mg",
                         "category": "Dosage",
-                        "confidenceScore": 1.0,
-                        "isNegated": false
+                        "confidenceScore": 1.0
                     },
                     {
                         "offset": 31,
@@ -172,15 +175,35 @@ example.json
                         "text": "remdesivir",
                         "category": "MedicationName",
                         "confidenceScore": 1.0,
-                        "isNegated": false,
+                        "name": "remdesivir",
                         "links": [
                             {
                                 "dataSource": "UMLS",
                                 "id": "C4726677"
                             },
                             {
+                                "dataSource": "DRUGBANK",
+                                "id": "DB14761"
+                            },
+                            {
+                                "dataSource": "GS",
+                                "id": "6192"
+                            },
+                            {
+                                "dataSource": "MEDCIN",
+                                "id": "398132"
+                            },
+                            {
+                                "dataSource": "MMSL",
+                                "id": "d09540"
+                            },
+                            {
                                 "dataSource": "MSH",
                                 "id": "C000606551"
+                            },
+                            {
+                                "dataSource": "MTHSPL",
+                                "id": "3QKI37EEHE"
                             },
                             {
                                 "dataSource": "NCI",
@@ -189,6 +212,22 @@ example.json
                             {
                                 "dataSource": "NCI_FDA",
                                 "id": "3QKI37EEHE"
+                            },
+                            {
+                                "dataSource": "NDDF",
+                                "id": "018308"
+                            },
+                            {
+                                "dataSource": "RXNORM",
+                                "id": "2284718"
+                            },
+                            {
+                                "dataSource": "SNOMEDCT_US",
+                                "id": "870592005"
+                            },
+                            {
+                                "dataSource": "VANDF",
+                                "id": "4039395"
                             }
                         ]
                     },
@@ -197,57 +236,62 @@ example.json
                         "length": 13,
                         "text": "intravenously",
                         "category": "MedicationRoute",
-                        "confidenceScore": 1.0,
-                        "isNegated": false
-                    },
-                    {
-                        "offset": 56,
-                        "length": 4,
-                        "text": "over",
-                        "category": "Time",
-                        "confidenceScore": 0.87,
-                        "isNegated": false
+                        "confidenceScore": 1.0
                     },
                     {
                         "offset": 73,
                         "length": 7,
                         "text": "120 min",
                         "category": "Time",
-                        "confidenceScore": 0.99,
-                        "isNegated": false
+                        "confidenceScore": 0.94
                     }
                 ],
                 "relations": [
                     {
                         "relationType": "DosageOfMedication",
-                        "bidirectional": false,
-                        "source": "#/results/documents/0/entities/0",
-                        "target": "#/results/documents/0/entities/1"
+                        "entities": [
+                            {
+                                "ref": "#/results/documents/0/entities/0",
+                                "role": "Dosage"
+                            },
+                            {
+                                "ref": "#/results/documents/0/entities/1",
+                                "role": "Medication"
+                            }
+                        ]
                     },
                     {
                         "relationType": "RouteOfMedication",
-                        "bidirectional": false,
-                        "source": "#/results/documents/0/entities/2",
-                        "target": "#/results/documents/0/entities/1"
+                        "entities": [
+                            {
+                                "ref": "#/results/documents/0/entities/1",
+                                "role": "Medication"
+                            },
+                            {
+                                "ref": "#/results/documents/0/entities/2",
+                                "role": "Route"
+                            }
+                        ]
                     },
                     {
                         "relationType": "TimeOfMedication",
-                        "bidirectional": false,
-                        "source": "#/results/documents/0/entities/3",
-                        "target": "#/results/documents/0/entities/1"
-                    },
-                    {
-                        "relationType": "TimeOfMedication",
-                        "bidirectional": false,
-                        "source": "#/results/documents/0/entities/4",
-                        "target": "#/results/documents/0/entities/1"
+                        "entities": [
+                            {
+                                "ref": "#/results/documents/0/entities/1",
+                                "role": "Medication"
+                            },
+                            {
+                                "ref": "#/results/documents/0/entities/3",
+                                "role": "Time"
+                            }
+                        ]
                     }
                 ],
                 "warnings": []
             }
         ],
         "errors": [],
-        "modelVersion": "2020-09-03"
+        "modelVersion": "2021-03-01"
     }
 }
 ```
@@ -294,30 +338,47 @@ example.json
             "id": "1",
             "entities": [
                 {
-                    "id": "0",
                     "offset": 25,
                     "length": 5,
                     "text": "100mg",
                     "category": "Dosage",
-                    "confidenceScore": 1.0,
-                    "isNegated": false
+                    "confidenceScore": 1.0
                 },
                 {
-                    "id": "1",
                     "offset": 31,
                     "length": 10,
                     "text": "remdesivir",
                     "category": "MedicationName",
                     "confidenceScore": 1.0,
-                    "isNegated": false,
+                    "name": "remdesivir",
                     "links": [
                         {
                             "dataSource": "UMLS",
                             "id": "C4726677"
                         },
                         {
+                            "dataSource": "DRUGBANK",
+                            "id": "DB14761"
+                        },
+                        {
+                            "dataSource": "GS",
+                            "id": "6192"
+                        },
+                        {
+                            "dataSource": "MEDCIN",
+                            "id": "398132"
+                        },
+                        {
+                            "dataSource": "MMSL",
+                            "id": "d09540"
+                        },
+                        {
                             "dataSource": "MSH",
                             "id": "C000606551"
+                        },
+                        {
+                            "dataSource": "MTHSPL",
+                            "id": "3QKI37EEHE"
                         },
                         {
                             "dataSource": "NCI",
@@ -326,115 +387,215 @@ example.json
                         {
                             "dataSource": "NCI_FDA",
                             "id": "3QKI37EEHE"
+                        },
+                        {
+                            "dataSource": "NDDF",
+                            "id": "018308"
+                        },
+                        {
+                            "dataSource": "RXNORM",
+                            "id": "2284718"
+                        },
+                        {
+                            "dataSource": "SNOMEDCT_US",
+                            "id": "870592005"
+                        },
+                        {
+                            "dataSource": "VANDF",
+                            "id": "4039395"
                         }
                     ]
                 },
                 {
-                    "id": "2",
                     "offset": 42,
                     "length": 13,
                     "text": "intravenously",
                     "category": "MedicationRoute",
-                    "confidenceScore": 1.0,
-                    "isNegated": false
+                    "confidenceScore": 1.0
                 },
                 {
-                    "id": "3",
-                    "offset": 56,
-                    "length": 4,
-                    "text": "over",
-                    "category": "Time",
-                    "confidenceScore": 0.87,
-                    "isNegated": false
-                },
-                {
-                    "id": "4",
                     "offset": 73,
                     "length": 7,
                     "text": "120 min",
                     "category": "Time",
-                    "confidenceScore": 0.99,
-                    "isNegated": false
+                    "confidenceScore": 0.94
                 }
             ],
             "relations": [
                 {
                     "relationType": "DosageOfMedication",
-                    "bidirectional": false,
-                    "source": "#/documents/0/entities/0",
-                    "target": "#/documents/0/entities/1"
+                    "entities": [
+                        {
+                            "ref": "#/documents/0/entities/0",
+                            "role": "Dosage"
+                        },
+                        {
+                            "ref": "#/documents/0/entities/1",
+                            "role": "Medication"
+                        }
+                    ]
                 },
                 {
                     "relationType": "RouteOfMedication",
-                    "bidirectional": false,
-                    "source": "#/documents/0/entities/2",
-                    "target": "#/documents/0/entities/1"
+                    "entities": [
+                        {
+                            "ref": "#/documents/0/entities/1",
+                            "role": "Medication"
+                        },
+                        {
+                            "ref": "#/documents/0/entities/2",
+                            "role": "Route"
+                        }
+                    ]
                 },
                 {
                     "relationType": "TimeOfMedication",
-                    "bidirectional": false,
-                    "source": "#/documents/0/entities/3",
-                    "target": "#/documents/0/entities/1"
-                },
-                {
-                    "relationType": "TimeOfMedication",
-                    "bidirectional": false,
-                    "source": "#/documents/0/entities/4",
-                    "target": "#/documents/0/entities/1"
+                    "entities": [
+                        {
+                            "ref": "#/documents/0/entities/1",
+                            "role": "Medication"
+                        },
+                        {
+                            "ref": "#/documents/0/entities/3",
+                            "role": "Time"
+                        }
+                    ]
                 }
-            ]
+            ],
+            "warnings": []
         }
     ],
     "errors": [],
-    "modelVersion": "2020-09-03"
+    "modelVersion": "2021-03-01"
 }
 ```
 
-### <a name="negation-detection-output"></a>Вывод обнаружения отрицания
+### <a name="assertion-output"></a>Выходные данные утверждения
 
-При использовании обнаружения отрицания в некоторых случаях один термин отрицания может одновременно обращаться к нескольким терминам. Отрицание распознанной сущности представлено в выходных данных JSON логическим значением `isNegated` флага, например:
+Анализ текста для проверки работоспособности возвращает модификаторы утверждения, которые представляют собой информативные атрибуты, назначенные медицинских концепциям, которые предоставляют более глубокое представление о контексте концепций в тексте. Эти модификаторы делятся на три категории, каждое из которых сосредоточено на различных аспектах и содержат набор взаимоисключающих значений. Каждой сущности присваивается только одно значение каждой категории. Наиболее распространенным значением для каждой категории является значение по умолчанию. Выходной ответ службы содержит только модификаторы утверждения, отличные от значений по умолчанию.
+
+**Защита**  . предоставляет сведения о присутствии (в настоящее время и отсутствии) концепции, а также о том, насколько текст относится к его присутствию (определенному и возможному).
+*   **Положительный** [по умолчанию]: концепция существует или произошла.
+* **Отрицательное**: концепция не существует или никогда не выполняется.
+* **Positive_Possible**: вероятно, концепция существует, но есть какая-то неопределенность.
+* **Negative_Possible**: существование концепции маловероятно, но есть какая-то неопределенность.
+* **Neutral_Possible**: концепция может быть или не существовать без тенденции в обе стороны.
+
+**Условность** — предоставляет сведения о том, зависит ли существование концепции от определенных условий. 
+*   **None** [default]: концепция является фактом и не является гипотетической и не зависит от определенных условий.
+*   **Гипотетический**: концепция может разрабатываться или происходить в будущем.
+*   **Условное**: концепция существует или имеет место только при определенных условиях.
+
+**Ассоциация** — описывает, связана ли концепция с темой текста или другим пользователем.
+*   **Subject** [по умолчанию]: концепция связана с темой текста, обычно с пациентами.
+*   **Someone_Else**: концепция связана с пользователем, который не является темой текста.
+
+
+Функция обнаружения утверждений представляет сущности с отрицанием в виде отрицательного значения для категории «уверенность», например:
 
 ```json
 {
-  "id": "2",
-  "offset": 90,
-  "length": 10,
-  "text": "chest pain",
-  "category": "SymptomOrSign",
-  "score": 0.9972,
-  "isNegated": true,
-  "links": [
-    {
-      "dataSource": "UMLS",
-      "id": "C0008031"
-    },
-    {
-      "dataSource": "CHV",
-      "id": "0000023593"
-    },
+                        "offset": 381,
+                        "length": 3,
+                        "text": "SOB",
+                        "category": "SymptomOrSign",
+                        "confidenceScore": 0.98,
+                        "assertion": {
+                            "certainty": "negative"
+                        },
+                        "name": "Dyspnea",
+                        "links": [
+                            {
+                                "dataSource": "UMLS",
+                                "id": "C0013404"
+                            },
+                            {
+                                "dataSource": "AOD",
+                                "id": "0000005442"
+                            },
     ...
 ```
 
 ### <a name="relation-extraction-output"></a>Выход извлечения связи
 
-Выход извлечения связи содержит ссылки URI на *источник* связи и его *целевой объект*. Сущности с ролью отношения `ENTITY` принадлежат `target` полю. Сущности с ролью отношения `ATTRIBUTE` принадлежат `source` полю. Связи аббревиатур содержат двунаправленную форму `source` и `target` поля, `bidirectional` для которых будет задано значение `true` . 
+Анализ текста для работоспособности распознает отношения между разными концепциями, включая связи между атрибутом и сущностью (например, направление структуры текста, досаже лечения) и между сущностями (например, определение сокращения).
+
+**СОКРАЩЕНИЕ**
+
+**DIRECTION_OF_BODY_STRUCTURE**
+
+**DIRECTION_OF_CONDITION**
+
+**DIRECTION_OF_EXAMINATION**
+
+**DIRECTION_OF_TREATMENT**
+
+**DOSAGE_OF_MEDICATION**
+
+**FORM_OF_MEDICATION**
+
+**FREQUENCY_OF_MEDICATION**
+
+**FREQUENCY_OF_TREATMENT**
+
+**QUALIFIER_OF_CONDITION**
+
+**RELATION_OF_EXAMINATION**
+
+**ROUTE_OF_MEDICATION** 
+
+**TIME_OF_CONDITION**
+
+**TIME_OF_EVENT**
+
+**TIME_OF_EXAMINATION**
+
+**TIME_OF_MEDICATION**
+
+**TIME_OF_TREATMENT**
+
+**UNIT_OF_CONDITION**
+
+**UNIT_OF_EXAMINATION**
+
+**VALUE_OF_CONDITION**  
+
+**VALUE_OF_EXAMINATION**
+
+> [!NOTE]
+> * Связи, ссылающиеся на условие, могут ссылаться либо на тип сущности ДИАГНОЗа, либо на тип сущности SYMPTOM_OR_SIGN.
+> * Связи, которые ссылаются на лечения, могут ссылаться либо на MEDICATION_NAME тип сущности, либо на MEDICATION_CLASS тип сущности.
+> * Связи, которые ссылаются на время, могут ссылаться либо на тип сущности времени, либо на тип сущности DATE.
+
+Выход извлечения связи содержит ссылки URI и назначенные роли сущностей типа связи. Пример:
 
 ```json
-"relations": [
-                {
-                    "relationType": "DosageOfMedication",
-                    "bidirectional": false,
-                    "source": "#/documents/1/entities/0",
-                    "target": "#/documents/1/entities/1"
-                },
-                {
-                    "relationType": "FrequencyOfMedication",
-                    "bidirectional": false,
-                    "source": "#/documents/1/entities/2",
-                    "target": "#/documents/1/entities/1"
-                }
-            ]
-  },
+                "relations": [
+                    {
+                        "relationType": "DosageOfMedication",
+                        "entities": [
+                            {
+                                "ref": "#/results/documents/0/entities/0",
+                                "role": "Dosage"
+                            },
+                            {
+                                "ref": "#/results/documents/0/entities/1",
+                                "role": "Medication"
+                            }
+                        ]
+                    },
+                    {
+                        "relationType": "RouteOfMedication",
+                        "entities": [
+                            {
+                                "ref": "#/results/documents/0/entities/1",
+                                "role": "Medication"
+                            },
+                            {
+                                "ref": "#/results/documents/0/entities/2",
+                                "role": "Route"
+                            }
+                        ]
 ...
 ]
 ```

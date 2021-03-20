@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 06/06/2020
 ms.author: tisande
 ms.openlocfilehash: 887dc13eb5e351688718d2a221e69499557b23e5
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93338309"
 ---
 # <a name="order-by-clause-in-azure-cosmos-db"></a>Предложение ORDER BY в Azure Cosmos DB
@@ -49,7 +49,7 @@ ORDER BY <sort_specification>
   
    Указывает порядок сортировки значений в указанном столбце — по возрастанию или по убыванию. `ASC` Сортировка от наименьшего значения до самого высокого. `DESC` Сортировка от самого высокого значения к наименьшему значению. `ASC` порядок сортировки по умолчанию. Значения NULL рассматриваются как минимально возможные значения.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
    `ORDER BY`Для предложения требуется, чтобы политика индексирования включала индекс для полей, для которых выполняется сортировка. Среда выполнения запросов Azure Cosmos DB поддерживает сортировку по имени свойства, а не к вычисленным свойствам. Azure Cosmos DB поддерживает несколько `ORDER BY` свойств. Чтобы выполнить запрос с несколькими свойствами ORDER BY, необходимо определить [составной индекс](index-policy.md#composite-indexes) для полей, для которых выполняется сортировка.
 
@@ -66,7 +66,7 @@ ORDER BY <sort_specification>
     ORDER BY f.address.city
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [
@@ -89,7 +89,7 @@ ORDER BY <sort_specification>
     ORDER BY f.creationDate DESC
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [
@@ -182,7 +182,7 @@ ORDER BY <sort_specification>
     ORDER BY f.lastName
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
 [
@@ -204,7 +204,7 @@ ORDER BY <sort_specification>
     ORDER BY f.lastName DESC
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
 [

@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 06/03/2020
 ms.asset: 0c4127f2-d936-48ef-b430-a9198e425d81
 ms.openlocfilehash: 87bc415c125a387d98ac88255d77fb1867564acf
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91254267"
 ---
 # <a name="release-notes-for-microsoft-azure-backup-server"></a>Заметки о выпуске Microsoft Azure Backup Server
@@ -97,7 +97,7 @@ ms.locfileid: "91254267"
 
     Последние файлы отчетов можно найти по пути `<MABS Installation Directory>\Program Files\Microsoft Azure Backup Server\DPM\DPM\bin\DpmReports`
 
-    Например: `C:\Program Files\Microsoft Azure Backup Server\DPM\DPM\bin\DpmReports`
+    Пример: `C:\Program Files\Microsoft Azure Backup Server\DPM\DPM\bin\DpmReports`
 
     ![Замена файлов последними файлами отчетов](./media/backup-mabs-release-notes-v3/replace-files.png)
 
@@ -105,6 +105,6 @@ ms.locfileid: "91254267"
 
 1. После замены файлов перезапустите службы MABS и используйте файлы отчетов.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Новые возможности в MABS](backup-mabs-whats-new-mabs.md)

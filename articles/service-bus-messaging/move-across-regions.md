@@ -5,10 +5,10 @@ ms.topic: how-to
 ms.date: 06/23/2020
 ms.custom: subject-moving-resources
 ms.openlocfilehash: 573ea96437cf6cb76854ffa417fd3ad3fb86138b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88861068"
 ---
 # <a name="move-an-azure-service-bus-namespace-to-another-region"></a>Перемещение пространства имен служебной шины Azure в другой регион
@@ -25,7 +25,7 @@ ms.locfileid: "88861068"
 ## <a name="prerequisites"></a>Предварительные требования
 Убедитесь, что служебная шина и функции Azure, используемые вашей учетной записью, поддерживаются в целевом регионе.
  
-## <a name="prepare"></a>Подготовка.
+## <a name="prepare"></a>Подготовка
 Чтобы приступить к работе, экспортируйте шаблон диспетчер ресурсов. Этот шаблон содержит параметры, описывающие пространство имен служебной шины.
 
 1. Войдите на [портал Azure](https://portal.azure.com).
@@ -45,60 +45,60 @@ ms.locfileid: "88861068"
 ## <a name="move"></a>Переместить
 Разверните шаблон, чтобы создать пространство имен служебной шины в целевом регионе. 
 
-1. В портал Azure выберите **создать ресурс**.
-2. В **поле Поиск в Marketplace**введите **шаблон развертывания** для искомого текста, выберите **шаблоны развертывания (развернуть с помощью пользовательских шаблонов)** и нажмите клавишу **Ввод**.
+1. На портале Azure выберите **Создать ресурс**.
+2. В **поле Поиск в Marketplace** введите **шаблон развертывания** для искомого текста, выберите **шаблоны развертывания (развернуть с помощью пользовательских шаблонов)** и нажмите клавишу **Ввод**.
 
-    :::image type="content" source="./media/move-across-regions/new-template-deployment.png" alt-text="Загрузить шаблон диспетчер ресурсов":::    
+    :::image type="content" source="./media/move-across-regions/new-template-deployment.png" alt-text="Развертывание нового шаблона":::    
 1. На странице **шаблоны развертывания** выберите **создать**.
 
-    :::image type="content" source="./media/move-across-regions/template-deployment-create-button.png" alt-text="Загрузить шаблон диспетчер ресурсов":::        
+    :::image type="content" source="./media/move-across-regions/template-deployment-create-button.png" alt-text="Новое развертывание шаблона — кнопка &quot;создать&quot;":::        
 1. На странице **Настраиваемое развертывание** выберите **создать собственный шаблон в редакторе**.
 
-    :::image type="content" source="./media/move-across-regions/build-template-link.png" alt-text="Загрузить шаблон диспетчер ресурсов":::            
+    :::image type="content" source="./media/move-across-regions/build-template-link.png" alt-text="Создание собственного шаблона в ссылке редактора":::            
 1. На странице **изменение шаблона** на панели инструментов выберите пункт **загрузить файл** , а затем следуйте инструкциям по загрузке **template.jsдля** файла, скачанного в предыдущем разделе.
 
-    :::image type="content" source="./media/move-across-regions/select-template.png" alt-text="Загрузить шаблон диспетчер ресурсов":::                
+    :::image type="content" source="./media/move-across-regions/select-template.png" alt-text="Выбор шаблона":::                
 1. Нажмите кнопку **сохранить** , чтобы сохранить шаблон. 
 
-    :::image type="content" source="./media/move-across-regions/save-template.png" alt-text="Загрузить шаблон диспетчер ресурсов":::                    
+    :::image type="content" source="./media/move-across-regions/save-template.png" alt-text="Сохранение шаблона":::                    
 1. На странице **Настраиваемое развертывание** выполните следующие действия. 
-    1. Выберите **подписку**Azure. 
+    1. Выберите **подписку** Azure. 
     2. Выберите существующую **группу ресурсов** или создайте новую. 
     3. Выберите целевое **Расположение** или регион. Если выбрана существующая группа ресурсов, этот параметр доступен только для чтения. 
     4. Введите новое **имя для пространства имен**.
     1. Выберите **Review + create** (Просмотреть и создать). 
 
-        :::image type="content" source="./media/move-across-regions/deploy-template.png" alt-text="Загрузить шаблон диспетчер ресурсов":::
+        :::image type="content" source="./media/move-across-regions/deploy-template.png" alt-text="Развертывание шаблона диспетчер ресурсов":::
     1. На странице **Просмотр и создание** выберите **создать** в нижней части страницы. 
     
 ## <a name="verify"></a>Проверка
 1. После успешного развертывания выберите **Переход к группе ресурсов**.
 
-    :::image type="content" source="./media/move-across-regions/resource-group-navigation-link.png" alt-text="Загрузить шаблон диспетчер ресурсов":::    
+    :::image type="content" source="./media/move-across-regions/resource-group-navigation-link.png" alt-text="Ссылка &quot;переход к группе ресурсов&quot;":::    
 1. На странице **Группа ресурсов** выберите пространство имен служебной шины. 
 
-    :::image type="content" source="./media/move-across-regions/select-namespace.png" alt-text="Загрузить шаблон диспетчер ресурсов":::    
+    :::image type="content" source="./media/move-across-regions/select-namespace.png" alt-text="Выбор пространства имен служебной шины":::    
 1. На странице **пространство имен служебной шины** убедитесь, что в исходном регионе отображаются очереди, разделы и подписки. 
     1. В нижней части правой панели появятся **очереди** в пространстве имен.         
     
-        :::image type="content" source="./media/move-across-regions/queue-namespace.png" alt-text="Загрузить шаблон диспетчер ресурсов":::
+        :::image type="content" source="./media/move-across-regions/queue-namespace.png" alt-text="Очереди в пространстве имен":::
     2. Перейдите на вкладку **разделы** , чтобы просмотреть разделы в пространстве имен.
     
-        :::image type="content" source="./media/move-across-regions/topics-namespace.png" alt-text="Загрузить шаблон диспетчер ресурсов":::
+        :::image type="content" source="./media/move-across-regions/topics-namespace.png" alt-text="Разделы в пространстве имен":::
     3. Выберите раздел для проверки создания подписок. 
 
-        :::image type="content" source="./media/move-across-regions/topic-subscriptions.png" alt-text="Загрузить шаблон диспетчер ресурсов":::      
+        :::image type="content" source="./media/move-across-regions/topic-subscriptions.png" alt-text="Подписки на разделы":::      
     
     
 
 ## <a name="discard-or-clean-up"></a>Отмена или очистка
-Если после развертывания вы хотите начать заново, можно удалить **целевое пространство имен служебной шины**и повторить действия, описанные в разделах [Подготовка](#prepare) и [Перемещение](#move) этой статьи.
+Если после развертывания вы хотите начать заново, можно удалить **целевое пространство имен служебной шины** и повторить действия, описанные в разделах [Подготовка](#prepare) и [Перемещение](#move) этой статьи.
 
 Чтобы зафиксировать изменения и завершить перемещение пространства имен служебной шины, удалите **исходное пространство имен служебной шины**. Перед удалением пространства имен убедитесь, что обработаны все сообщения. 
 
 Чтобы удалить пространство имен служебной шины (источник или цель) с помощью портал Azure:
 
-1. В окне поиска в верхней части портал Azure введите **служебная шина**и выберите **служебная шина** из результатов поиска. В списке отображаются пространства имен служебной шины.
+1. В окне поиска в верхней части портал Azure введите **служебная шина** и выберите **служебная шина** из результатов поиска. В списке отображаются пространства имен служебной шины.
 2. Выберите целевое пространство имен для удаления и щелкните **Удалить** на панели инструментов. 
 
     ![Кнопка "удалить пространство имен"](./media/move-across-regions/delete-namespace-button.png)

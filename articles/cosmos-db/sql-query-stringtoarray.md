@@ -9,10 +9,10 @@ ms.date: 03/03/2020
 ms.author: girobins
 ms.custom: query-reference
 ms.openlocfilehash: 7ae1f69e92e890daae528eb1f4dfb95f76560043
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93337988"
 ---
 # <a name="stringtoarray-azure-cosmos-db"></a>Стрингтоаррай (Azure Cosmos DB)
@@ -35,7 +35,7 @@ StringToArray(<str_expr>)
   
   Возвращает выражение массива или значение undefine. 
   
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
   Вложенные строковые значения должны быть записаны с двойными кавычками, чтобы быть допустимыми JSON. Дополнительные сведения о формате JSON см. в разделе [JSON.org](https://json.org/). Эта системная функция не будет использовать индекс.
   
 ## <a name="examples"></a>Примеры

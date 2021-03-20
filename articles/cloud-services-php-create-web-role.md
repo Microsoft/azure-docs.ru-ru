@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 04/11/2018
 ms.author: msangapu
 ms.openlocfilehash: 0b02662658b2199a13f117ad95c6402f9b2974f9
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95519852"
 ---
 # <a name="create-php-web-and-worker-roles"></a>Создание веб-ролей и рабочих ролей PHP
@@ -184,7 +184,7 @@ PS C:\MyProject> Stop-AzureEmulator
 
 Чтобы опубликовать приложение, сначала импортируйте параметры публикации с помощью командлета [Import-AzurePublishSettingsFile](/powershell/module/servicemanagement/azure.service/import-azurepublishsettingsfile) . После этого опубликуйте приложение, используя командлет [Publish-AzureServiceProject](/powershell/module/servicemanagement/azure.service/publish-azureserviceproject) . Подробнее о входе: [Установка и настройка Azure PowerShell](/powershell/azure/).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительную информацию можно найти в [Центре разработчика PHP](https://azure.microsoft.com/develop/php/).
 

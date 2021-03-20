@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 08/24/2020
 ms.author: tomfitz
 ms.openlocfilehash: 04f86883a75110985d1cbe050fe3fd3e0582986a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88893817"
 ---
 # <a name="microsoftcommoneditablegrid-ui-element"></a>Элемент пользовательского интерфейса Microsoft. Common. Едитаблегрид
@@ -112,7 +112,7 @@ ms.locfileid: "88893817"
 }
 ```
 
-## <a name="sample-output"></a>Пример полученных результатов
+## <a name="sample-output"></a>Пример выходных данных
 
 ```json
 {
@@ -122,7 +122,7 @@ ms.locfileid: "88893817"
 }
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 - Единственными допустимыми элементами управления в массиве Columns являются [TextBox](microsoft-common-textbox.md), [OptionsGroup](microsoft-common-optionsgroup.md)и [dropdown](microsoft-common-dropdown.md).
 - `$rowIndex`Переменная допустима только в выражениях, содержащихся в дочерних столбцах сетки. Это целое число, представляющее индекс относительной строки элемента, а отсчет начинается с единицы и увеличивается на единицу. Как показано в `"columns":` разделе схемы, `$rowIndex` используется для проверки.

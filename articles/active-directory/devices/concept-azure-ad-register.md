@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: sandeo
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 72c40b7962090492f8b4b85e555a947130c3628d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91256444"
 ---
 # <a name="azure-ad-registered-devices"></a>Устройства, зарегистрированные в Azure AD
@@ -31,8 +31,8 @@ ms.locfileid: "91256444"
 | **Владение устройствами** | Пользователь или организация |
 | **Операционные системы** | Windows 10, iOS, Android и MacOS |
 | **Подготовка** | Windows 10 — параметры |
-|   | iOS/Android — корпоративный портал или Microsoft Authenticator приложение |
-|   | MacOS — корпоративный портал |
+|   | iOS/Android — Корпоративный портал или Microsoft Authenticator приложение |
+|   | MacOS — Корпоративный портал |
 | **Варианты для входа на устройство** | Локальные учетные данные конечного пользователя |
 |   | Пароль |
 |   | Windows Hello |
@@ -59,7 +59,7 @@ ms.locfileid: "91256444"
 
 Другой пользователь хочет получить доступ к электронной почте Организации на своем личном телефоне Android, который был корневым. Для вашей компании требуется соответствующее устройство и создана политика соответствия Intune для блокировки всех устройств с корнем. Сотрудник прекратил доступ к ресурсам Организации на этом устройстве.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Управление удостоверениями устройств с помощью портала Azure](device-management-azure-portal.md)
 - [Управление неактивными устройствами в Azure AD](manage-stale-devices.md)

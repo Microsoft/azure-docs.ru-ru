@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 4/28/2020
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 94b3586f13ad1f5bf5f042ef1dc824bd0a5da0d1
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94542207"
 ---
 # <a name="restart-azure-database-for-mysql-server-using-powershell"></a>Перезапуск базы данных Azure для сервера MySQL с помощью PowerShell
@@ -22,7 +22,7 @@ ms.locfileid: "94542207"
 
 Количество времени, необходимое для выполнения перезапуска, зависит от процесса восстановления MySQL. Чтобы сократить время перезапуска, рекомендуется свести к минимальному объему действий, происходящих на сервере, до перезапуска.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Вот что вам нужно, чтобы выполнить инструкции, приведенные в этом руководстве:
 
@@ -37,7 +37,7 @@ ms.locfileid: "94542207"
 
 [!INCLUDE [cloud-shell-try-it.md](../../includes/cloud-shell-try-it.md)]
 
-## <a name="restart-the-server"></a>Перезагрузите сервер.
+## <a name="restart-the-server"></a>Перезапустите сервер.
 
 Перезапустите сервер с помощью следующей команды:
 

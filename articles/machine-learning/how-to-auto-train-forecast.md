@@ -10,12 +10,12 @@ ms.subservice: core
 ms.topic: conceptual
 ms.custom: how-to, contperf-fy21q1, automl
 ms.date: 08/20/2020
-ms.openlocfilehash: 14837391f7bf907acbbe1d573f3171acef4db658
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 66fa56b45e8d3cff7a8ace300a450b9c41df9bc0
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102503510"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104588721"
 ---
 # <a name="auto-train-a-time-series-forecast-model"></a>Автоматическое обучение прогнозной модели временных рядов
 
@@ -349,7 +349,7 @@ best_run, fitted_model = local_run.get_output()
 ```python
 label_query = test_labels.copy().astype(np.float)
 label_query.fill(np.nan)
-label_fcst, data_trans = fitted_pipeline.forecast(
+label_fcst, data_trans = fitted_model.forecast(
     test_data, label_query, forecast_destination=pd.Timestamp(2019, 1, 8))
 ```
 
@@ -373,7 +373,7 @@ day_datetime,store,week_of_year
 01/01/2019,A,1
 ```
 
-Повторите необходимые шаги, чтобы загрузить эти будущие данные в объект DataFrame, а затем запустите `best_run.predict(test_data)` для прогнозирования будущих значений.
+Повторите необходимые шаги, чтобы загрузить эти будущие данные в объект DataFrame, а затем запустите `best_run.forecast(test_data)` для прогнозирования будущих значений.
 
 > [!NOTE]
 > Встроенные прогнозы не поддерживаются для прогнозирования с помощью автоматического ML, если `target_lags` включены и/или `target_rolling_window_size` .

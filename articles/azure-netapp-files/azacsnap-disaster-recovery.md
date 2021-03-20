@@ -15,10 +15,10 @@ ms.topic: how-to
 ms.date: 12/14/2020
 ms.author: phjensen
 ms.openlocfilehash: 70e1823b30814d7dc29fef69215fcb53a2a2ab96
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98730876"
 ---
 # <a name="disaster-recovery-using-azure-application-consistent-snapshot-tool-preview"></a>Аварийное восстановление с помощью средства создания моментальных снимков для приложений Azure (Предварительная версия)
@@ -282,7 +282,7 @@ tmpfs 76G 0 76G 0% /run/user/0
 > [!IMPORTANT]
 > При запуске `azacsnap -c backup` можно создавать моментальные снимки хранилища на сайте аварийного восстановления, которые не реплицируются автоматически на другой сайт.  Работа с Microsoft Operations для лучшего понимания возврата файлов и данных на исходный рабочий сайт.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Получение сведений о снимке](azacsnap-cmd-ref-details.md)
 - [Создание резервной копии](azacsnap-cmd-ref-backup.md)

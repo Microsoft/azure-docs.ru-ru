@@ -8,10 +8,10 @@ ms.topic: troubleshooting
 ms.date: 11/10/2019
 ms.author: raynew
 ms.openlocfilehash: 5a6e4b415a9fe8ea80a84e415879df9d2f359478
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "84434369"
 ---
 # <a name="troubleshoot-microsoft-azure-site-recovery-provider-upgrade-failures"></a>Устранение неполадок с обновлением поставщика службы Microsoft Azure Site Recovery
@@ -74,7 +74,7 @@ Upgrade is not supported as a higher version of the software is already installe
 Это может быть вызвано значением NULL для параметра в разделе реестра. Для устранения проблемы —
 
 1. Запустите редактор реестра (regedit.exe) и откройте ветвь HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\InMage Systems\Installed Products\4.
-1. Проверьте значение ключа "InstallDirectory".Если он имеет значение null, добавьте текущее значение каталога установки.
-1. Аналогичным образом откройте ветвь HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\InMage Системс\инсталлед Products\5 в редакторе реестра.
+1. Проверьте значение ключа "InstallDirectory". Если он имеет значение null, добавьте текущее значение каталога установки.
+1. Аналогичным образом откройте ветвь HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\InMage Systems\Installed Products\5 в редакторе реестра.
 1. Проверьте значение ключа "InstallDirectory" и добавьте текущее значение каталога установки.
 1. Повторно запустите единый установщик установки.

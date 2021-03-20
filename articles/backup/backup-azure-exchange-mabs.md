@@ -5,17 +5,17 @@ ms.reviewer: kasinh
 ms.topic: conceptual
 ms.date: 03/24/2017
 ms.openlocfilehash: 86389ef89ced74905db0fc8bfeaabcea6140762a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91263000"
 ---
 # <a name="back-up-an-exchange-server-to-azure-with-azure-backup-server"></a>Резервное копирование сервера Exchange Server в Azure с помощью Azure Backup Server
 
 В этой статье описывается, как настроить Microsoft Azure Backup Server (MABS) для резервного копирования сервера Microsoft Exchange Server в Azure.  
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем продолжить, убедитесь, что Azure Backup Server [установлен и подготовлен](backup-azure-microsoft-azure-backup.md).
 
@@ -58,7 +58,7 @@ ms.locfileid: "91263000"
    >
    >
 8. Выберите **Далее**.
-9. Выберите базу данных для **резервного**копирования, а затем нажмите кнопку **Далее**.
+9. Выберите базу данных для **резервного** копирования, а затем нажмите кнопку **Далее**.
 
    > [!NOTE]
    > Если не выбрать параметр "полная архивация" по крайней мере для одной копии базы данных DAG, журналы не будут обрезаны.
@@ -86,7 +86,7 @@ ms.locfileid: "91263000"
 
     ![Выбор политики оперативного хранения](./media/backup-azure-backup-exchange-server/specify-online-retention-policy.png)
 18. Подтвердите параметры и нажмите кнопку **создать группу**.
-19. Выберите **Закрыть**.
+19. Щелкните **Закрыть**.
 
 ## <a name="recover-the-exchange-database"></a>Восстановление базы данных Exchange
 
@@ -105,6 +105,6 @@ ms.locfileid: "91263000"
 
     ![Выбор оперативной репликации](./media/backup-azure-backup-exchange-server/choose-online-replication.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Часто задаваемые вопросы о службе архивации Azure](backup-azure-backup-faq.md)
