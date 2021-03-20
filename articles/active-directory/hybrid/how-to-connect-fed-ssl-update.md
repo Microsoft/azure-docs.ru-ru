@@ -17,10 +17,10 @@ ms.custom: seohack1
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 451b50e70b98849dfc4654566d09a5a961abe451
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89279913"
 ---
 # <a name="update-the-tlsssl-certificate-for-an-active-directory-federation-services-ad-fs-farm"></a>Обновление сертификата TLS/SSL для фермы службы федерации Active Directory (AD FS) (AD FS)
@@ -105,7 +105,7 @@ Azure AD Connect попытается автоматически получит�
 
     Удаление сервера из списка в Azure AD Connect не приводит к его удалению из конфигурации AD FS. Azure AD Connect обращается к AD FS (Windows Server 2016 или более поздней версии) для получения сведений о ферме. Если сервер по-прежнему присутствует в конфигурации AD FS, он будет указан в списке.  
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Azure AD Connect и федерация](how-to-connect-fed-whatis.md)
 - [Управление службами федерации Active Directory и их настройка с помощью Azure AD Connect](how-to-connect-fed-management.md)

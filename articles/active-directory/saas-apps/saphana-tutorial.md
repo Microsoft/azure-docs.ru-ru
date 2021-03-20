@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 12/27/2020
 ms.author: jeedes
 ms.openlocfilehash: 1a1e155974b66dce9a036a20cdebe19ded81fed5
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98727087"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-sap-hana"></a>Руководство по интеграции Azure Active Directory с SAP HANA

@@ -9,10 +9,10 @@ ms.date: 12/02/2020
 ms.author: tisande
 ms.custom: query-reference
 ms.openlocfilehash: 2cfbca798a7b404e4ee12b93396b2a5b08d7d5bb
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96555421"
 ---
 # <a name="avg-azure-cosmos-db"></a>AVG (Azure Cosmos DB)
@@ -48,7 +48,7 @@ FROM c
 
 Эта системная функция будет использовать преимущества [индекса диапазона](index-policy.md#includeexclude-strategy). Если какие бы то ни было аргументы в `AVG` строках типа String, Boolean или null, будет возвращена вся агрегатная системная функция `undefined` . Если какой бы то ни было аргумент имеет `undefined` значение, это не повлияет на `AVG` вычисление.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Математические функции в Azure Cosmos DB](sql-query-mathematical-functions.md)
 - [Системные функции в Azure Cosmos DB](sql-query-system-functions.md)

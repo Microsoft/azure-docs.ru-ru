@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 07/14/2020
 ms.author: tomfitz
 ms.openlocfilehash: 327fa1d7eb73d8e65bb4f81c1dff0fe2bec2913b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89319579"
 ---
 # <a name="createuidefinitionjson-for-azure-managed-applications-create-experience"></a>Использование файла CreateUiDefinition.json для создания управляемого приложения Azure
@@ -40,7 +40,7 @@ ms.locfileid: "89319579"
 
 * handler;
 * version
-* параметры
+* parameters
 
 Обработчик всегда должен иметь значение `Microsoft.Azure.CreateUIDef` , а последняя поддерживаемая версия — `0.1.2-preview` .
 
@@ -129,7 +129,7 @@ ms.locfileid: "89319579"
 
 Этап **основы** — это первый шаг, созданный при портал Azure синтаксического анализа файла. По умолчанию на этапе основ пользователи выбирают подписку, группу ресурсов и расположение для развертывания.
 
-:::image type="content" source="./media/create-uidefinition-overview/basics.png" alt-text="Мастер вкладок":::
+:::image type="content" source="./media/create-uidefinition-overview/basics.png" alt-text="Основные сведения по умолчанию":::
 
 В этом разделе можно добавить дополнительные элементы. По возможности добавляйте элементы, которые запрашивают параметры уровня развертывания, такие как имя кластера или учетные данные администратора.
 
@@ -199,7 +199,7 @@ ms.locfileid: "89319579"
 
 CreateUiDefinition предоставляет [функции](create-uidefinition-functions.md) для работы с входными и выходными элементами элементов, а также такими функциями, как условия. Эти функции похожи как в синтаксисе, так и в функциональности для Azure Resource Manager функций шаблонов.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Файл createUiDefinition.json имеет простую схему. Его реальные возможности основаны на поддерживаемых элементах и функциях. Эти элементы более подробно описаны здесь:
 

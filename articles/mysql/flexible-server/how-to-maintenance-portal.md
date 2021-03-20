@@ -7,20 +7,20 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 9/21/2020
 ms.openlocfilehash: c8251eb2a89a7481ebc981f2b89668c363651b39
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91315020"
 ---
-# <a name="manage-scheduled-maintenance-settings-for-azure-database-for-mysql--flexible-server"></a>Управление параметрами запланированного обслуживания для базы данных Azure для MySQL — гибкого сервера
+# <a name="manage-scheduled-maintenance-settings-for-azure-database-for-mysql--flexible-server"></a>Управление параметрами запланированного обслуживания на гибком сервере Базы данных Azure для MySQL
  
 Вы можете указать параметры обслуживания для каждого гибкого сервера в подписке Azure. К параметрам относятся расписание обслуживания и параметры уведомлений для предстоящих и завершенных событий обслуживания.
 
 > [!IMPORTANT]
 > База данных Azure для MySQL — гибкий сервер находится на этапе предварительной версии.
  
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Вот что вам нужно, чтобы выполнить инструкции, приведенные в этом руководстве:
 - [База данных Azure для MySQL — гибкий сервер](quickstart-create-server-portal.md)
  
@@ -33,7 +33,7 @@ ms.locfileid: "91315020"
  
 Службу работоспособности служб Azure можно использовать для [просмотра уведомлений](../../service-health/service-notifications.md) о предстоящем и запланированном обслуживании на гибком сервере. Вы также можете [настроить](../../service-health/resource-health-alert-monitor-guide.md) оповещения в службе "работоспособность служб Azure", чтобы получать уведомления о событиях обслуживания.
  
-## <a name="next-steps"></a>Дальнейшие шаги  
+## <a name="next-steps"></a>Дальнейшие действия  
  
 * Сведения о [плановом обслуживании в базе данных Azure для MySQL — гибком сервере](concepts-maintenance.md)
 * Экономичность [службы работоспособности служб Azure](../../service-health/overview.md)

@@ -14,10 +14,10 @@ ms.author: rayluo
 ms.reviewer: nacanuma
 ms.custom: aaddev, devx-track-python
 ms.openlocfilehash: 7aaf59377949101ba8dd5c9454b89229e925e859
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87846196"
 ---
 # <a name="custom-token-cache-serialization-in-msal-for-python"></a>Сериализация кэша пользовательской лексемы в MSAL для Python
@@ -36,6 +36,6 @@ ms.locfileid: "87846196"
 
 Для веб-приложений или веб-API можно использовать сеанс или кэш Redis или базу данных для хранения кэша маркеров. Должен существовать один кэш маркеров на пользователя (на учетную запись), чтобы обеспечить сериализацию кэша маркеров на учетную запись.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Пример использования кэша маркеров для веб-приложения Windows или Linux или веб-API см. в статье [MS-Identity-Python-webapp](https://github.com/Azure-Samples/ms-identity-python-webapp/blob/master/app.py#L64-L72) . Этот пример предназначен для веб-приложения, которое вызывает API Microsoft Graph.

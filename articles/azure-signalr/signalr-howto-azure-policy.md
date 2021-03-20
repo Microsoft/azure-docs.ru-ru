@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 06/17/2020
 ms.author: jixin
 ms.openlocfilehash: 018033d3a6123948191a7261f5a1ee2ae526e25a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89295031"
 ---
 # <a name="audit-compliance-of-azure-signalr-service-resources-using-azure-policy"></a>Аудит соответствия ресурсов службы Azure SignalR с помощью политики Azure
@@ -44,7 +44,7 @@ ms.locfileid: "89295031"
 
 ### <a name="policy-compliance-in-the-portal"></a>Соответствие политике на портале:
 
-1. Выберите **все службы**и выполните поиск по запросу **Политика**.
+1. Выберите **все службы** и выполните поиск по запросу **Политика**.
 1. Выберите **соответствие**.
 1. Используйте фильтры для ограничения состояний соответствия или поиска политик.
    
@@ -59,7 +59,7 @@ ms.locfileid: "89295031"
 az policy assignment list --query "[?contains(displayName,'SignalR')].{name:displayName, ID:id}" --output table
 ```
 
-Образец вывода:
+Пример результатов выполнения:
 
 ```
 Name                                                                                   ID
@@ -82,7 +82,7 @@ az policy state list \
  --resource-group <resourceGroup>
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о [определениях](../governance/policy/concepts/definition-structure.md) и [влиянии](../governance/policy/concepts/effects.md) политики Azure
 

@@ -16,10 +16,10 @@ ms.date: 04/26/2018
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 58ecdfefa79716bcc0a69063293d5a1067693a78
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89182366"
 ---
 # <a name="user-privacy-and-azure-ad-connect-health"></a>Конфиденциальность пользователей и Azure AD Connect Health 
@@ -96,7 +96,7 @@ Azure AD Connect Health также позволяет остановить сб�
 5. Выполните [процедуру установки](how-to-connect-health-agent-install.md), чтобы повторно установить агент на отслеживаемых серверах. Службы появятся на портале.  
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Просмотр политики конфиденциальности корпорации Майкрософт в центре управления безопасностью](https://www.microsoft.com/trustcenter)
 * [Конфиденциальность пользователей в Azure AD Connect](reference-connect-user-privacy.md)
 

@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.author: makromer
 ms.date: 01/03/2021
 ms.openlocfilehash: 0663690318773ccad3bddfaaa03e456c2f58895e
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100383387"
 ---
 # <a name="data-flow-activity-in-azure-data-factory"></a>Действие потока данных в фабрике данных Azure
@@ -170,7 +170,7 @@ traceLevel | Задание уровня ведения журнала для в
 > [!NOTE]
 > Если в приемнике записано ноль строк, он не будет отображаться в метриках. Существование можно проверить с помощью `contains` функции. Например, `contains(activity('dataflowActivity').output.runStatus.metrics, 'sink1')` проверит, были ли строки записаны в sink1.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 См. раздел действия потока управления, поддерживаемые фабрикой данных. 
 

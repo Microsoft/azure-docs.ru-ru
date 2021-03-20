@@ -12,10 +12,10 @@ ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
 ms.openlocfilehash: bb38a76de41885b6f39a1c6dce7c44bcb52a4d60
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86027449"
 ---
 # <a name="operationalize-spark-built-machine-learning-models"></a>Ввод моделей машинного обучения, созданных с помощью Spark, в эксплуатацию
@@ -545,7 +545,7 @@ BoostedTreeRegressionFileLoc: GradientBoostingTreeRegression_2016-05-0317_23_56.
 В кластере Spark реализован механизм, который позволяет отправлять пакетные задания или интерактивные запросы удаленно через интерфейс REST с помощью компонента Livy. Livy включен по умолчанию в кластере Spark в HDInsight. Дополнительные сведения о Livy см. в статье [Удаленная отправка заданий Spark с помощью Livy](../../hdinsight/spark/apache-spark-livy-rest-interface.md). 
 
 Вы можете использовать Livy, чтобы удаленно отправить запрос на выполнение пакетного задания оценки файла, сохраненного в большом двоичном объекте Azure, а затем записать результаты в другой большой двоичный объект. Чтобы сделать это, необходимо загрузить сценарий Python из   
-репозитория [GitHub](https://raw.githubusercontent.com/Azure/Azure-MachineLearning-DataScience/master/Misc/Spark/Python/ConsumeGBNYCReg.py) в большой двоичный объект кластера Spark. Используйте **Microsoft Azure Storage Explorer** или **AzCopy**, чтобы скопировать сценарий в большой двоичный объект кластера. В нашем случае мы отправили сценарий в ***wasb:///example/Python/ConsumeGBNYCReg.py***.   
+репозитория [GitHub](https://raw.githubusercontent.com/Azure/Azure-MachineLearning-DataScience/master/Misc/Spark/Python/ConsumeGBNYCReg.py) в большой двоичный объект кластера Spark. Используйте **Microsoft Azure Storage Explorer** или **AzCopy**, чтобы скопировать сценарий в большой двоичный объект кластера. В нашем случае мы отправили сценарий в **_wasb:///example/Python/ConsumeGBNYCReg.py_**.   
 
 > [!NOTE]
 > Необходимые ключи доступа можно найти на портале для учетной записи хранения, связанной с кластером Spark. 

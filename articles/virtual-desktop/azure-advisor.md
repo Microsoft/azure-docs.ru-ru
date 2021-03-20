@@ -7,10 +7,10 @@ ms.date: 08/28/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 76b7f97b6020a3a0d5571a3a105d15f7d7893485
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89147656"
 ---
 # <a name="use-azure-advisor-with-windows-virtual-desktop"></a>Использование помощника по Azure с виртуальным рабочим столом Windows
@@ -58,7 +58,7 @@ ms.locfileid: "89147656"
 
 - При возникновении проблемы в виртуальном рабочем столе Windows всегда сначала следует проверять помощник по Azure. Помощник по Azure предоставит вам указания по решению проблемы или по крайней мере, к ресурсу, который может помочь.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения об устранении рекомендаций см. в разделе [разрешение рекомендаций помощника по Azure](azure-advisor-recommendations.md).
 

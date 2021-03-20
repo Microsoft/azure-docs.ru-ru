@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 11/4/2019
 ms.author: caya
 ms.openlocfilehash: 3b816ddc0eccf8c406cfed37d6bfc594e27d3629
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85850350"
 ---
 # <a name="expose-an-aks-service-over-http-or-https-using-application-gateway"></a>Предоставление службы AKS по протоколу HTTP или HTTPS с помощью шлюза приложений 
@@ -31,7 +31,7 @@ ms.locfileid: "85850350"
 
 Следуйте приведенным ниже инструкциям, чтобы развернуть приложение гостевой книги.
 
-1. Загрузить `guestbook-all-in-one.yaml` отсюда [here](https://raw.githubusercontent.com/kubernetes/examples/master/guestbook/all-in-one/guestbook-all-in-one.yaml)
+1. Загрузить `guestbook-all-in-one.yaml` отсюда [](https://raw.githubusercontent.com/kubernetes/examples/master/guestbook/all-in-one/guestbook-all-in-one.yaml)
 1. Разверните `guestbook-all-in-one.yaml` в кластер AKS, выполнив
 
   ```bash

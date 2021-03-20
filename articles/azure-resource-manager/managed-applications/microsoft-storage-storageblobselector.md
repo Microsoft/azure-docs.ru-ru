@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 10/27/2020
 ms.author: tomfitz
 ms.openlocfilehash: 1085b70df67a3f16a7f7f8c5ae85c9ab271b62ac
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92754622"
 ---
 # <a name="microsoftstoragestorageblobselector-ui-element"></a>Элемент пользовательского интерфейса Microsoft. Storage. Сторажеблобселектор
@@ -24,19 +24,19 @@ ms.locfileid: "92754622"
 
 После нажатия кнопки **Обзор** пользователь может выбрать учетную запись хранения.
 
-:::image type="content" source="./media/managed-application-elements/microsoft-storage-storageblobselector-select.png" alt-text="Microsoft. Storage. Сторажеблобселектор — обзор":::
+:::image type="content" source="./media/managed-application-elements/microsoft-storage-storageblobselector-select.png" alt-text="Microsoft. Storage. Сторажеблобселектор — Выбор хранилища":::
 
 Пользователь видит контейнеры в учетной записи хранения и может выбрать одну из них.
 
-:::image type="content" source="./media/managed-application-elements/microsoft-storage-storageblobselector-containers.png" alt-text="Microsoft. Storage. Сторажеблобселектор — обзор":::
+:::image type="content" source="./media/managed-application-elements/microsoft-storage-storageblobselector-containers.png" alt-text="Microsoft. Storage. Сторажеблобселектор — выбор контейнера":::
 
 Из контейнера пользователь может выбрать файл.
 
-:::image type="content" source="./media/managed-application-elements/microsoft-storage-storageblobselector-file.png" alt-text="Microsoft. Storage. Сторажеблобселектор — обзор":::
+:::image type="content" source="./media/managed-application-elements/microsoft-storage-storageblobselector-file.png" alt-text="Файл Microsoft. Storage. Сторажеблобселектор-File":::
 
 Элемент управления обновляется для вывода имени выбранного файла.
 
-:::image type="content" source="./media/managed-application-elements/microsoft-storage-storageblobselector-result.png" alt-text="Microsoft. Storage. Сторажеблобселектор — обзор":::
+:::image type="content" source="./media/managed-application-elements/microsoft-storage-storageblobselector-result.png" alt-text="Microsoft. Storage. Сторажеблобселектор — показывать Select File":::
 
 ## <a name="schema"></a>схема
 
@@ -56,7 +56,7 @@ ms.locfileid: "92754622"
 }
 ```
 
-## <a name="sample-output"></a>Пример полученных результатов
+## <a name="sample-output"></a>Пример выходных данных
 
 ```json
 {

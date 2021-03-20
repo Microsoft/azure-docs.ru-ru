@@ -11,10 +11,10 @@ ms.service: active-directory
 manager: daveba
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 58b4bbcac110398ee4ff132b76ce8c4868ee17f8
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91317597"
 ---
 # <a name="azure-ad-userprincipalname-population"></a>Указание атрибута UserPrincipalName в Azure AD
@@ -177,6 +177,6 @@ UserPrincipalName — это атрибут, который является и�
 - MailNickName      : us4     
 - UserPrincipalName : us5@verified.contoso.com
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 - [Интеграция локальных каталогов с Azure Active Directory](whatis-hybrid-identity.md)
 - [Выборочная установка Azure AD Connect](how-to-connect-install-custom.md)

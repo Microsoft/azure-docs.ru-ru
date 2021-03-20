@@ -8,10 +8,10 @@ ms.service: api-management
 ms.topic: how-to
 ms.date: 12/15/2020
 ms.openlocfilehash: 1ebb89ae318e57f1d4e0708a08019515ca43158d
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99581335"
 ---
 # <a name="plan-and-manage-costs-for-api-management"></a>Планирование и управление затратами на управление API
@@ -20,7 +20,7 @@ ms.locfileid: "99581335"
 
 Затраты на управление API — это лишь часть ежемесячных затрат в счете Azure. Хотя в этой статье объясняется, как спланировать и управлять затратами на управление API, вы оплачиваете все службы и ресурсы Azure, используемые в вашей подписке Azure, включая сторонние службы.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Анализ затрат в службе "Управление затратами" поддерживает большинство типов учетных записей Azure, но не все из них. Полный список поддерживаемых типов учетных записей см. в статье [Understand Cost Management data](../cost-management-billing/costs/understand-cost-mgt-data.md?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn) (Интерпретация данных службы "Управление затратами"). Для просмотра данных о затратах требуется по крайней мере доступ на чтение для учетной записи Azure. Дополнительные сведения о назначении доступа к данным службы "Управление затратами" Azure см. в [этой статье](../cost-management-billing/costs/assign-access-acm-data.md?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn).
 
@@ -104,7 +104,7 @@ ms.locfileid: "99581335"
 
 [Отслеживайте](api-management-howto-use-azure-monitor.md) метрики емкости для экземпляра управления API, чтобы принимать решения о том, следует ли масштабировать или обновлять экземпляр управления API в соответствии с большей нагрузкой.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте [, как оптимизировать инвестиции в облако с помощью службы "Управление затратами Azure](../cost-management-billing/costs/cost-mgt-best-practices.md?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn)".
 - Дополнительные сведения об управлении затратами с помощью [анализа затрат](../cost-management-billing/costs/quick-acm-cost-analysis.md?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn).

@@ -16,10 +16,10 @@ ms.date: 10/07/2020
 ms.author: mathoma
 ms.reviewer: jroth
 ms.openlocfilehash: 8549592ace00e712929ebc76045a32531b9db659
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97358322"
 ---
 # <a name="configure-a-dnn-for-failover-cluster-instance"></a>Настройка DNN для экземпляра отказоустойчивого кластера
@@ -33,7 +33,7 @@ ms.locfileid: "97358322"
 
 В качестве альтернативного варианта подключения рассмотрим [имя виртуальной сети и Azure Load Balancer](failover-cluster-instance-vnn-azure-load-balancer-configure.md) . 
 
-## <a name="overview"></a>Общие сведения
+## <a name="overview"></a>Обзор
 
 Имя распределенной сети (DNN) заменяет имя виртуальной сети (VNN) в качестве точки подключения при использовании с [экземпляром отказоустойчивого кластера Always on на SQL Server виртуальных машинах](failover-cluster-instance-overview.md). Это отрицательно потребует от Azure Load Balancer трафика маршрутизации к VNN, упрощая развертывание, Обслуживание и повышение отработки отказа. 
 

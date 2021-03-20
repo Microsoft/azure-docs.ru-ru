@@ -8,10 +8,10 @@ ms.date: 03/01/2019
 ms.author: antchu
 ms.custom: devx-track-js, devx-track-csharp
 ms.openlocfilehash: 3d69b72012819e3d9099e447b9048fe07aea86d3
-ms.sourcegitcommit: 89c0482c16bfec316a79caa3667c256ee40b163f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97858711"
 ---
 # <a name="azure-functions-development-and-configuration-with-azure-signalr-service"></a>Azure Functions development and configuration with Azure SignalR Service (Разработка и настройка функций Azure с помощью Службы Azure SignalR)

@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 06/30/2020
 ms.openlocfilehash: 91e75b60f5324288c9f1adac59e31b9c1a1b0e9e
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89289177"
 ---
 # <a name="connect-a-knowledge-store-with-power-bi"></a>Подключение хранилища знаний с помощью Power BI
@@ -45,7 +45,7 @@ ms.locfileid: "89289177"
 
 1. В окне **Получение данных** выберите **Azure**, а затем выберите **Хранилище таблиц Azure**.
 
-1. Нажмите кнопку **Соединить**.
+1. Нажмите кнопку **Подключить**.
 
 1. В поле **Имя или URL-адрес учетной записи** введите имя своей учетной записи хранилища Azure (для вас будет создан полный URL-адрес).
 

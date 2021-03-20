@@ -6,10 +6,10 @@ ms.topic: reference
 ms.date: 2/25/2019
 ms.author: srrengar
 ms.openlocfilehash: e69b407bc7d58a83616daa44272ec008ccff9fad
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85846652"
 ---
 # <a name="list-of-service-fabric-events"></a>Список событий Service Fabric 
@@ -114,7 +114,7 @@ Service Fabric предоставляет основной набор событ
 | 63648 | релиаблеконкурренткуеуеопенед | LifeCycle | Открыта надежная параллельная очередь | ReliableConcurrentQueue | Informational |
 | 63649 | релиаблеконкурренткуеуеклосед | LifeCycle | Надежная параллельная очередь закрыта | ReliableConcurrentQueue | Informational |
 | 63650 | релиаблеконкурренткуеуечеккпоинтрековеред | LifeCycle | Надежная параллельная очередь восстановила свою контрольную точку | ReliableConcurrentQueue | Informational |
-| 61687 | тсториррор | Сбой | В надежной коллекции получена непредвиденная ошибка | тсторе | Ошибка |
+| 61687 | тсториррор | Failure | В надежной коллекции получена непредвиденная ошибка | тсторе | Ошибка |
 | 63831 | примарифуллкопинитиатед | LifeCycle | Первичная реплика запустила полную копию | трепликатор | Informational |
 | 63832 | примарипартиалкопинитиатед | LifeCycle | Первичная реплика инициировала частичную копию | трепликатор | Informational |
 | 16831 | буилдидлерепликастартед | LifeCycle | Первичная реплика начала создание неактивной реплики | Репликация | Informational |

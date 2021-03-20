@@ -9,10 +9,10 @@ ms.date: 03/03/2020
 ms.author: girobins
 ms.custom: query-reference
 ms.openlocfilehash: 7c0f1673c620ceadeb5ccca2a15cc9b7ce8d7685
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93341609"
 ---
 # <a name="replicate-azure-cosmos-db"></a>РЕПЛИКАЦИя (Azure Cosmos DB)
@@ -38,9 +38,9 @@ REPLICATE(<str_expr>, <num_expr>)
   
   Возвращает строковое выражение.
   
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
-  Максимальная длина результата — 10 000 символов, например (Length ( *str_expr* ) *  *num_expr* ) <= 10 000. Эта системная функция не будет использовать индекс.
+  Максимальная длина результата — 10 000 символов, например (Length (*str_expr*) *  *num_expr*) <= 10 000. Эта системная функция не будет использовать индекс.
 
 ## <a name="examples"></a>Примеры
   

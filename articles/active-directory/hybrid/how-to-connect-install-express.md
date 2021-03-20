@@ -16,10 +16,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0a655f355bb77d937f4daff2f8987769416ebd8c
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89279675"
 ---
 # <a name="getting-started-with-azure-ad-connect-using-express-settings"></a>Приступая к работе с Azure AD Connect с использованием стандартных параметров
@@ -33,7 +33,7 @@ ms.locfileid: "89279675"
 Чтобы ознакомиться с этими действиями на практике, см. раздел с [видео](#videos).
 
 1. Войдите с правами локального администратора на сервер, на котором требуется установить Azure AD Connect. Это должен быть сервер, который нужно сделать сервером синхронизации.
-2. Перейдите к файлу **AzureADConnect.msi**и дважды щелкните его.
+2. Перейдите к файлу **AzureADConnect.msi** и дважды щелкните его.
 3. На экране приветствия установите флажок, подтверждающий ваше согласие с условиями лицензионного соглашения, и нажмите кнопку **Продолжить**.  
 4. На экране «Стандартные параметры» щелкните **Использовать стандартные параметры**.  
    ![Приветствие мастера установки Azure AD Connect.](./media/how-to-connect-install-express/express.png)
@@ -53,14 +53,14 @@ ms.locfileid: "89279675"
 9. По завершении установки щелкните **Выход**.
 10. После завершения установки выполните выход и снова войдите, прежде чем начинать использовать диспетчер службы синхронизации или редактор правил синхронизации.
 
-## <a name="videos"></a>Видео
+## <a name="videos"></a>Видеоролики
 Рекомендуем посмотреть видео по экспресс-установке:
 
 > [!VIDEO https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Azure-Active-Directory-Connect-Express-Settings/player]
 >
 >
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 После установки Azure AD Connect можно [проверить установку и назначить лицензии](how-to-connect-post-installation.md).
 
 Дополнительные сведения о функциях, которые были включены в процессе установки, см. в следующих статьях: [Azure AD Connect: автоматическое обновление](how-to-connect-install-automatic-upgrade.md), [Синхронизация Azure AD Connect: предотвращение случайного удаления](how-to-connect-sync-feature-prevent-accidental-deletes.md) и [Использование Azure AD Connect Health для синхронизации](how-to-connect-health-sync.md).

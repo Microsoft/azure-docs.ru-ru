@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 02490839a9e35695ae2e8b3f750e139ad7413aa4
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89280219"
 ---
 # <a name="azure-ad-connect-sync-understanding-declarative-provisioning-expressions"></a>Служба синхронизации Azure AD Connect: общие сведения о выражениях декларативной подготовки
@@ -53,7 +53,7 @@ ms.locfileid: "89280219"
 
 Соединитель Active Directory предоставляет следующие параметры для входящих правил синхронизации.
 
-| Имя параметра | Комментарий |
+| имени параметра | Комментировать |
 | --- | --- |
 | Domain.Netbios |Формат NetBIOS импортируемого домена, например FABRIKAMSALES |
 | Domain.FQDN |Формат FQDN импортируемого домена, например sales.fabrikam.com |
@@ -82,7 +82,7 @@ ms.locfileid: "89280219"
 ## <a name="multi-valued-attributes"></a>Многозначные атрибуты
 Функции могут работать с однозначными и многозначными атрибутами. Для многозначных атрибутов функция работает с каждым отдельным значением и применяет одну и ту же функцию к каждому отдельному значению.
 
-Пример:  
+Например:  
 `Trim([proxyAddresses])` выполняет обрезку (Trim) для каждого значения атрибута proxyAddress.  
 `Word([proxyAddresses],1,"@") & "@contoso.com"` Для каждого значения со знаком @-sign замените домен @contoso.com.  
 `IIF(InStr([proxyAddresses],"SIP:")=1,NULL,[proxyAddresses])` Найдите SIP-адрес и удалите его из значений.
@@ -97,6 +97,6 @@ ms.locfileid: "89280219"
 * [Синхронизация Azure AD Connect: общие сведений о синхронизации и ее настройка](how-to-connect-sync-whatis.md)
 * [Интеграция локальных удостоверений с Azure Active Directory](whatis-hybrid-identity.md)
 
-**Справочные разделы**
+**Справочные материалы**
 
 * [Синхронизация Azure AD Connect: справочник по функциям](reference-connect-sync-functions-reference.md)

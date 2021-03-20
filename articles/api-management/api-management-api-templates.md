@@ -15,10 +15,10 @@ ms.date: 11/04/2019
 ms.author: apimpm
 ms.custom: devx-track-python
 ms.openlocfilehash: b63f38609b4b61130e515dd118e8ced9f201defd
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87851720"
 ---
 # <a name="api-templates-in-azure-api-management"></a>Шаблоны API в службе управления API Azure
@@ -30,11 +30,11 @@ ms.locfileid: "87851720"
 -   [Список API](#APIList)  
 -   [Операция](#Product)  
 -   [Примеры кода](#CodeSamples)  
-    -   [Листывания](#Curl)  
+    -   [Curl](#Curl)  
     -   [C#](#CSharp)  
     -   [Java](#Stub)  
     -   [JavaScript](#JavaScript)  
-    -   [Цель в](#ObjectiveC)  
+    -   [Objective C](#ObjectiveC)  
     -   [PHP](#PHP)  
     -   [Python](#Python)  
     -   [Ruby](#Ruby)  
@@ -90,7 +90,7 @@ ms.locfileid: "87851720"
   
 ### <a name="data-model"></a>Модель данных  
   
-|Свойство|Тип|Описание|  
+|Свойство.|Type|Описание|  
 |--------------|----------|-----------------|  
 |`apis`|Коллекция сущностей [API summary](api-management-template-data-model-reference.md#APISummary) (Сводные данные API).|API, доступные для текущего пользователя.|  
   
@@ -345,7 +345,7 @@ ms.locfileid: "87851720"
   
 ### <a name="data-model"></a>Модель данных  
   
-|Свойство|Тип|Описание|  
+|Свойство.|Type|Описание|  
 |--------------|----------|-----------------|  
 |`apiId`|строка|Идентификатор текущего API.|  
 |`apiName`|строка|Имя API.|  
@@ -649,7 +649,7 @@ ms.locfileid: "87851720"
   
  ![Примеры кода для шаблонов портала разработчика](./media/api-management-api-templates/APIM-Developer-Portal-Templates-Code-samples.png "Примеры кода для шаблонов портала разработчика APIM")  
   
--   [Листывания](#Curl)  
+-   [Curl](#Curl)  
   
 -   [C#](#CSharp)  
   
@@ -657,7 +657,7 @@ ms.locfileid: "87851720"
   
 -   [JavaScript](#JavaScript)  
   
--   [Цель в](#ObjectiveC)  
+-   [Objective C](#ObjectiveC)  
   
 -   [PHP](#PHP)  
   
@@ -1082,7 +1082,7 @@ public class JavaSample
 }  
 ```  
   
-### <a name="objective-c"></a><a name="ObjectiveC"></a>Objective C  
+### <a name="objective-c"></a><a name="ObjectiveC"></a> Цель в  
  Шаблон **DocumentationSamplesObjc** позволяет настраивать отображение примеров такого кода в разделе примеров кода на странице операции.  
   
 #### <a name="default-template"></a>Шаблон по умолчанию  
@@ -1473,5 +1473,5 @@ puts response.body
 }  
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о работе с шаблонами см. в статье [Настройка портала разработчика в службе управления API Azure с помощью шаблонов](api-management-developer-portal-templates.md).

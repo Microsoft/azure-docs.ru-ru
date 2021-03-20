@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 10/01/2020
 ms.openlocfilehash: a0bd7a4cd8afafc16f05b4a37cd5723304ad931e
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96554888"
 ---
 # <a name="register-and-scan-azure-files"></a>Регистрация и проверка файлов Azure
@@ -20,7 +20,7 @@ ms.locfileid: "96554888"
 
 Служба файлов Azure поддерживает полные и добавочные Просмотры для записи метаданных и применения классификаций к метаданным на основе классификаций системы и клиентов.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Перед регистрацией источников данных создайте учетную запись Azure зрения. Дополнительные сведения о создании учетной записи зрения см. в разделе [Краткое руководство. Создание учетной записи Azure зрения](create-catalog-portal.md).
 - Чтобы настроить и запланировать сканирование, необходимо быть администратором источника данных. Дополнительные сведения см. в разделе [разрешения каталога](catalog-permissions.md) .
@@ -35,15 +35,15 @@ ms.locfileid: "96554888"
 1. Выберите **+ Создать**.
 1. В меню **Регистрация источников** выберите службы **файлов Azure**. Выберите **Continue** (Продолжить).
 
-:::image type="content" source="media/register-scan-azure-files/register-new-data-source.png" alt-text="зарегистрировать новый источник данных" border="true":::
+:::image type="content" source="media/register-scan-azure-files/register-new-data-source.png" alt-text="Регистрация источника данных" border="true":::
 
 На экране **Регистрация источников (службы файлов Azure)** выполните следующие действия.
 
-1. Введите **имя** , в котором будет указан источник данных в каталоге.
+1. Введите **Имя**, под которым этот источник данных будет включен в каталог.
 1. Выберите способ указания нужной учетной записи хранения:
    1. Выберите **из подписки Azure**, выберите подходящую подписку в раскрывающемся списке **Подписка Azure** и соответствующую учетную запись хранения из раскрывающегося списка **имя учетной записи хранения** .
    1. Можно также нажать клавишу **Ввод вручную** и ввести конечную точку службы (URL-адрес).
-1. **Готово** для регистрации источника данных.
+1. Щелкните **Готово**, чтобы завершить регистрацию источника данных.
 
 :::image type="content" source="media/register-scan-azure-files/register-sources.png" alt-text="Параметры регистрации источников" border="true":::
 
@@ -59,7 +59,7 @@ ms.locfileid: "96554888"
 
 [!INCLUDE [create and manage scans](includes/manage-scans.md)]
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-- [Обзор каталога данных Azure зрения](how-to-browse-catalog.md)
-- [Поиск в каталоге данных Azure зрения](how-to-search-catalog.md)
+- [Обзор каталога данных Azure Purview](how-to-browse-catalog.md)
+- [Поиск по каталогу данных Azure Purview](how-to-search-catalog.md)

@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive,hdiseo17may2017,seoapr2020
 ms.date: 04/24/2020
 ms.openlocfilehash: 35941f585a0ae5c0d3915c769db5b18737b299f0
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98945409"
 ---
 # <a name="use-data-lake-storage-gen1-with-azure-hdinsight-clusters"></a>Использование Data Lake Storage 1-го поколения с кластерами Azure HDInsight
@@ -39,13 +39,13 @@ ms.locfileid: "98945409"
 
 | Тип кластера HDInsight | Использование Data Lake Storage 1-го поколения как хранилища по умолчанию | Использование Data Lake Storage 1-го поколения как дополнительного хранилища| Примечания |
 |------------------------|------------------------------------|---------------------------------------|------|
-| HDInsight версии 4,0 | Нет | Нет |ADLS 1-го поколения не поддерживается в HDInsight 4,0 |
+| HDInsight версии 4.0 | Нет | Нет |ADLS 1-го поколения не поддерживается в HDInsight 4,0 |
 | HDInsight версии 3.6 | Да | Да | За исключением HBase|
 | HDInsight версии 3.5 | Да | Да | За исключением HBase|
 | HDInsight версия 3.4 | Нет | Да | |
 | HDInsight версии 3.3 | Нет | Нет | |
 | HDInsight версии 3.2 | Нет | Да | |
-| Storm | | |Data Lake Storage 1-го поколения можно использовать для записи данных из топологии Storm. Можно также использовать Data Lake Storage 1-го поколения для ссылочных данных, которые затем можно прочитать с помощью топологии с различными топологиями.|
+| Буря | | |Data Lake Storage 1-го поколения можно использовать для записи данных из топологии Storm. Можно также использовать Data Lake Storage 1-го поколения для ссылочных данных, которые затем можно прочитать с помощью топологии с различными топологиями.|
 
 > [!WARNING]  
 > HDInsight HBase не поддерживается в Azure Data Lake Storage 1-го поколения.
@@ -105,13 +105,13 @@ New-AzResourceGroupDeployment `
 
 ## <a name="use-data-lake-storage-gen1-as-additional-storage"></a>Использование Data Lake Storage 1-го поколения как дополнительного хранилища
 
-Data Lake Storage 1-го поколения можно использовать в качестве дополнительного хранилища кластера. В таких случаях хранилищем кластера по умолчанию может быть либо хранилище BLOB-объектов Azure, либо учетная запись Azure Data Lake Storage 1-го поколения. При запуске заданий HDInsight для данных, хранящихся в Azure Data Lake Storage 1-го поколения в качестве дополнительного хранилища, используйте полный путь. Пример.
+Data Lake Storage 1-го поколения можно использовать в качестве дополнительного хранилища кластера. В таких случаях хранилищем кластера по умолчанию может быть либо хранилище BLOB-объектов Azure, либо учетная запись Azure Data Lake Storage 1-го поколения. При запуске заданий HDInsight для данных, хранящихся в Azure Data Lake Storage 1-го поколения в качестве дополнительного хранилища, используйте полный путь. Пример:
 
 `adl://mydatalakestore.azuredatalakestore.net/<file_path>`
 
 Сейчас в URL-адресе нет **cluster_root_path** . Это связано с тем, что в данном случае Data Lake Storage не является хранилищем по умолчанию. Поэтому достаточно указать путь к файлам.
 
-Чтобы использовать Data Lake Storage 1-го поколения в качестве дополнительного хранилища, предоставьте субъекту-службе доступ к путям, в которых хранятся файлы.  Пример.
+Чтобы использовать Data Lake Storage 1-го поколения в качестве дополнительного хранилища, предоставьте субъекту-службе доступ к путям, в которых хранятся файлы.  Пример:
 
 `adl://mydatalakestore.azuredatalakestore.net/<file_path>`
 

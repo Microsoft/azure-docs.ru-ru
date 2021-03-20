@@ -8,10 +8,10 @@ ms.date: 10/30/2019
 ms.author: chlound
 ms.custom: references_regions
 ms.openlocfilehash: 8a8d434fca7cab4432f38fc64093cf1fe060bd5f
-ms.sourcegitcommit: 2c586a0fbec6968205f3dc2af20e89e01f1b74b5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92019092"
 ---
 # <a name="refresh-with-logic-apps"></a>Обновление с помощью Logic Apps
@@ -63,10 +63,10 @@ ms.locfileid: "92019092"
 
 Настройте действие HTTP следующим образом:
 
-|Свойство  |Значение  |
+|Свойство.  |Значение  |
 |---------|---------|
 |**Метод**     |POST         |
-|**URI**     | https://*/серверс/* имя*сервера консультантов*/Моделс/*имя базы данных*/рефрешес <br /> <br /> Пример: https: \/ /westus.asazure.Windows.NET/Servers/MyServer/Models/AdventureWorks/refreshes|
+|**URI**     | https://*/серверс/* имя *сервера консультантов*/Моделс/*имя базы данных*/рефрешес <br /> <br /> Пример: https: \/ /westus.asazure.Windows.NET/Servers/MyServer/Models/AdventureWorks/refreshes|
 |**Заголовки**     |   Content-Type, Application/JSON <br /> <br />  ![Заголовки](./media/analysis-services-async-refresh-logic-app/6.png)    |
 |**Текст**     |   Дополнительные сведения о создании текста запроса см. в разделе [асинхронное обновление с помощью REST API-POST/рефрешес](analysis-services-async-refresh.md#post-refreshes). |
 |**Аутентификация**     |Active Directory OAuth         |

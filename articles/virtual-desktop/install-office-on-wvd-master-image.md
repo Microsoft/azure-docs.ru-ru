@@ -7,10 +7,10 @@ ms.date: 05/02/2019
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: b6369013d605ae538ad611a28a90e9c099bb7d80
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91326054"
 ---
 # <a name="install-office-on-a-master-vhd-image"></a>Установка Office в главный образ VHD
@@ -30,7 +30,7 @@ ms.locfileid: "91326054"
 
 Используйте [средство развертывания Office](https://www.microsoft.com/download/details.aspx?id=49117) для установки Office. Многосеансовая поддержка Windows 10 Enterprise поддерживает только следующие версии Office:
 
-   - Приложения Microsoft 365 для предприятий
+   - Приложения Microsoft 365 для предприятия
    - Microsoft 365 приложения для бизнеса, поставляемые с подпиской Microsoft 365 бизнес Premium
 
 Средству развертывания Office требуется XML-файл конфигурации. Чтобы настроить следующий пример, см. раздел [Параметры конфигурации средства развертывания Office](/deployoffice/configuration-options-for-the-office-2016-deployment-tool/).
@@ -161,6 +161,6 @@ reg add HKLM\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate /v hide
 
 Сведения об установке Microsoft Teams см. в статье [использование Microsoft Teams на виртуальных рабочих столах Windows](teams-on-wvd.md). Оптимизация мультимедиа для Microsoft Teams на виртуальных рабочих столах Windows доступна в предварительной версии.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы добавили Office в образ, вы можете продолжить настройку главного образа VHD. См. раздел [Подготовка и настройка главного образа VHD](set-up-customize-master-image.md).

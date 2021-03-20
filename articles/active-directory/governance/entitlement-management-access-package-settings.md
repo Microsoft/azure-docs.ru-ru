@@ -17,10 +17,10 @@ ms.author: ajburnle
 ms.reviewer: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 32973d063c36a45eee79db0b4da4e7419cb70013
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87798552"
 ---
 # <a name="share-link-to-request-an-access-package-in-azure-ad-entitlement-management"></a>Ссылка на общий доступ для запроса пакета Access в управлении назначением Azure AD
@@ -47,7 +47,7 @@ ms.locfileid: "87798552"
 
 1. Отправьте ссылку на ваш внешний бизнес-партнер по электронной почте. Они могут поделиться ссылкой с пользователями, чтобы запросить пакет Access.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Запрос доступа к пакету Access](entitlement-management-request-access.md)
 - [Утверждение или отклонение запросов на доступ](entitlement-management-request-approve.md)
