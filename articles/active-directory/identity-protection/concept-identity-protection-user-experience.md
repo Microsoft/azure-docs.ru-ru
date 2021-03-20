@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: sahandle
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4d4897b9187caab50be4db75bbc0af03e3d35aa4
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94835991"
 ---
 # <a name="user-experiences-with-azure-ad-identity-protection"></a>Взаимодействие с пользователем с защита идентификации Azure AD
@@ -80,7 +80,7 @@ ms.locfileid: "94835991"
 
 ИТ-специалисты могут следовать инструкциям в разделе [разблокирование пользователей](howto-identity-protection-remediate-unblock.md#unblocking-based-on-user-risk) , чтобы пользователи могли снова войти в систему.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Устранение рисков и разблокирование пользователей](howto-identity-protection-remediate-unblock.md)
 

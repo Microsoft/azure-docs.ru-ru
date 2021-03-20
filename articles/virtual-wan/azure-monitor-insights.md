@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 09/22/2020
 ms.author: cherylmc
 ms.openlocfilehash: 6ead00a0979d81ef11ac81fb13a1abe31317691d
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100571327"
 ---
 # <a name="azure-monitor-insights-for-virtual-wan"></a>Azure Monitor аналитику для виртуальной глобальной сети
@@ -24,7 +24,7 @@ ms.locfileid: "100571327"
 > Пункт меню **Insights** находится на портале ВИРТУАЛЬНОЙ глобальной сети в разделе **мониторинг**. Вы также можете получить доступ к книге топология и метрики виртуальной глобальной сети с помощью Azure Monitor для сетей. Дополнительные сведения см. в разделе [Azure Monitor for Networks](../azure-monitor/insights/network-insights-overview.md). 
 >
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Чтобы выполнить действия, описанные в этой статье, необходимо иметь виртуальную сеть WAN с одним или несколькими концентраторами. Чтобы создать виртуальную глобальную сеть и концентратор, выполните действия, описанные в следующих статьях:
 
@@ -85,7 +85,7 @@ ms.locfileid: "100571327"
 
 :::image type="content" source="./media/azure-monitor-insights/detailed-metrics.png" alt-text="Снимок экрана, на котором показана подробная панель мониторинга метрик." lightbox="./media/azure-monitor-insights/detailed-metrics.png":::
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения см. [в разделе метрики в Azure Monitor](../azure-monitor/essentials/data-platform-metrics.md).
 * Полное описание всех метрик виртуальной глобальной сети см. в разделе [журналы и метрики ВИРТУАЛЬНОЙ глобальной](logs-metrics.md)сети.

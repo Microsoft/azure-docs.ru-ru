@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/24/2020
 ms.custom: devx-track-js, devx-track-csharp
 ms.openlocfilehash: 25c87971455ed3c5f59c92748794720d61e599e3
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96339614"
 ---
 # <a name="add-autocomplete-and-suggestions-to-client-apps-using-azure-cognitive-search"></a>Добавление автозаполнения и предложений в клиентские приложения с помощью Azure Когнитивный поиск
@@ -117,7 +117,7 @@ $(function () {
 });
 ```
 
-`source`Сообщает функции автозаполнения интерфейса jQuery, где можно получить список элементов, отображаемых под полем поиска. Поскольку этот проект является проектом MVC, он вызывает функцию **предлагаю** в **HomeController.CS** , которая содержит логику для возврата предложений запросов. Также эта функция передает несколько параметров для управления выделением, нечетким соответствием и терминами. API JavaScript автозаполнения добавляет параметр термина.
+`source`Сообщает функции автозаполнения интерфейса jQuery, где можно получить список элементов, отображаемых под полем поиска. Поскольку этот проект является проектом MVC, он вызывает функцию **предлагаю** в **HomeController. CS** , которая содержит логику для возврата предложений запросов. Также эта функция передает несколько параметров для управления выделением, нечетким соответствием и терминами. API JavaScript автозаполнения добавляет параметр термина.
 
 Параметр `minLength: 3` гарантирует, что рекомендации будут отображаться только в том случае, если в поле поиска есть по крайней мере три символа.
 
@@ -139,7 +139,7 @@ source: "/home/suggest?highlights=true&fuzzy=true&",
 
 ### <a name="suggest-function"></a>Предложение Function
 
-Если вы используете C# и приложение MVC, файл **HomeController.CS** в каталоге Controllers — это место, где можно создать класс для предлагаемых результатов. В .NET функция предлагаю основана на [методе сугжестасинк](/dotnet/api/azure.search.documents.searchclient.suggestasync). Дополнительные сведения о пакете SDK для .NET см. в статье [использование когнитивный Поиск Azure из приложения .NET](search-howto-dotnet-sdk.md).
+Если вы используете C# и приложение MVC, файл **HomeController. CS** в каталоге Controllers — это место, где можно создать класс для предлагаемых результатов. В .NET функция предлагаю основана на [методе сугжестасинк](/dotnet/api/azure.search.documents.searchclient.suggestasync). Дополнительные сведения о пакете SDK для .NET см. в статье [использование когнитивный Поиск Azure из приложения .NET](search-howto-dotnet-sdk.md).
 
 `InitSearch`Метод создает клиент индексов HTTP с проверкой подлинности в службе когнитивный Поиск Azure. Свойства класса [сугжестоптионс](/dotnet/api/azure.search.documents.suggestoptions) определяют, какие поля ищутся и возвращаются в результатах, число совпадений и используется ли нечеткое сопоставление. 
 
@@ -218,7 +218,7 @@ $(function () {
 
 ### <a name="autocomplete-function"></a>Функция автозаполнения
 
-Автозаполнение основано на [методе аутокомплетеасинк](/dotnet/api/azure.search.documents.searchclient.autocompleteasync). Как и в случае с предложениями, этот блок кода пойдет в файл **HomeController.CS** .
+Автозаполнение основано на [методе аутокомплетеасинк](/dotnet/api/azure.search.documents.searchclient.autocompleteasync). Как и в случае с предложениями, этот блок кода будет идти в файле **HomeController. CS** .
 
 ```csharp
 public async Task<ActionResult> AutoCompleteAsync(string term)

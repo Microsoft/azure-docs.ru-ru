@@ -8,10 +8,10 @@ ms.date: 09/03/2020
 ms.author: ceespino
 ms.reviewer: daperlov
 ms.openlocfilehash: b423b008453ca5f1b76e5c277f5a434dbf14cdb1
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100382843"
 ---
 # <a name="troubleshoot-azure-data-factory-ux-issues"></a>Устранение неполадок с UX в фабрике данных Azure

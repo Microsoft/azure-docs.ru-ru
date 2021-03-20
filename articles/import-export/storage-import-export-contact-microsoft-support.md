@@ -9,10 +9,10 @@ ms.date: 01/14/2021
 ms.author: alkohli
 ms.subservice: common
 ms.openlocfilehash: 03d953bd534595e47702642403626a05b7f67aba
-ms.sourcegitcommit: 75041f1bce98b1d20cd93945a7b3bd875e6999d0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98706920"
 ---
 # <a name="open-a-support-ticket-for-an-importexport-job"></a>Создание запроса в службу поддержки для задания импорта и экспорта
@@ -28,7 +28,7 @@ ms.locfileid: "98706920"
 
 1. Перейдите к заданию импорта и экспорта. Перейдите в раздел **Поддержка и устранение неполадок** , а затем выберите **новый запрос в службу поддержки**.
      
-    ![Основные сведения](./media/storage-import-export-contact-microsoft-support/import-export-support1.png)
+    ![Основы](./media/storage-import-export-contact-microsoft-support/import-export-support1.png)
    
 2. В разделе **Новый запрос в службу поддержки** выберите **Основные**. В колонке **Основные** сделайте следующее:
     
@@ -59,7 +59,7 @@ ms.locfileid: "98706920"
 
    1. В поле **Параметры контакта** укажите предпочтительный способ контакта (телефон или электронную почту) и язык. Время ответа выбирается автоматически в зависимости от плана подписки.
    2. В поле Контактные данные укажите ваше имя, электронную почту, дополнительное контактное лицо, страну или регион. Установите флажок **Save contact changes for future support requests** (Сохранить изменения контактных данных для будущих обращений в службу поддержки).
-   3. Нажмите кнопку **Создать**.
+   3. Нажмите кнопку **создания**.
    
        ![Контактные данные](./media/storage-import-export-contact-microsoft-support/import-export-support7.png)   
 
@@ -85,6 +85,6 @@ ms.locfileid: "98706920"
     ![На снимке экрана показано новое сообщение, выбранное для этого запроса.](./media/storage-import-export-contact-microsoft-support/manage-support-ticket3.png) 
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как [использовать службу импорта и экспорта Azure для перемещения данных в службу хранилища Azure и обратно](storage-import-export-service.md).

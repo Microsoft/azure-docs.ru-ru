@@ -5,10 +5,10 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.openlocfilehash: 3bc5c659d9871cb8f1d49d2a3bfde2ce03faea86
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100571904"
 ---
 # <a name="how-to-monitor-cluster-availability-with-azure-monitor-logs-in-hdinsight"></a>Как отслеживать доступность кластера с помощью журналов Azure Monitor в HDInsight
@@ -119,7 +119,7 @@ ms.locfileid: "100571904"
 
 ![Log Analytics рабочей области уровень серьезности одно оповещение](media/cluster-availability-monitor-logs/portal-oms-alerts-sev1.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Доступность кластера — Apache Ambari](./hdinsight-cluster-availability.md)
 * [Использование журналов Azure Monitor](hdinsight-hadoop-oms-log-analytics-tutorial.md)

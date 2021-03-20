@@ -9,10 +9,10 @@ ms.date: 01/05/2021
 ms.author: abhishgu
 ms.reviewer: abhishgu
 ms.openlocfilehash: 0038219ee8c1721ff5ab2be76231d33d2bd9064d
-ms.sourcegitcommit: 2bd0a039be8126c969a795cea3b60ce8e4ce64fc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98203071"
 ---
 # <a name="migrate-data-from-postgresql-to-azure-cosmos-db-cassandra-api-account-using-apache-kafka"></a>Перенос данных из PostgreSQL в учетную запись API Cassandra Azure Cosmos DB с помощью Apache Kafka
@@ -30,7 +30,7 @@ API Cassandra в Azure Cosmos DB стали отличным выбором дл
 
 В этой статье показано, как использовать сочетание соединителей Kafka для настройки конвейера данных для непрерывной синхронизации записей из реляционной базы данных, например [PostgreSQL](https://www.postgresql.org/) [Azure Cosmos DB API Cassandra](cassandra-introduction.md).
 
-## <a name="overview"></a>Общие сведения
+## <a name="overview"></a>Обзор
 
 Ниже приведен общий обзор сквозного потока, представленного в этой статье.
 
@@ -39,7 +39,7 @@ API Cassandra в Azure Cosmos DB стали отличным выбором дл
 > [!NOTE]
 > Использование конкретных функций соединителя DataStax Apache Kafka позволяет отправлять данные в несколько таблиц. В этом примере соединитель поможет нам сохранить записи измененных данных в две Cassandra таблицы, которые могут поддерживать различные требования к запросам.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Предоставление учетной записи API Cassandra для Azure Cosmos DB](create-cassandra-dotnet.md#create-a-database-account)
 * [Использование cqlsh или размещенной оболочки для проверки](cassandra-support.md#hosted-cql-shell-preview)

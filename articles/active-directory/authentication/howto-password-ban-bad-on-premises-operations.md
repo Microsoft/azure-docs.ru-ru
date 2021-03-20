@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: jsimmons
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f2e11fa1bb9f1d3a3986a19da8ed44229829ec81
-ms.sourcegitcommit: ad83be10e9e910fd4853965661c5edc7bb7b1f7c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96741785"
 ---
 # <a name="enable-on-premises-azure-active-directory-password-protection"></a>Включить локальную Azure Active Directory защиту паролем
@@ -26,13 +26,13 @@ ms.locfileid: "96741785"
 
 Дополнительные сведения о том, как служба защиты паролей Azure AD работает в локальной среде, см. в статье [как применить защиту паролей Azure AD для Windows Server Active Directory](concept-password-ban-bad-on-premises.md).
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 В этой статье показано, как включить защиту паролей Azure AD для локальной среды. Прежде чем завершить работу с этой статьей, [установите и зарегистрируйте службу защиты паролей Azure AD и агенты контроллера домена](howto-password-ban-bad-on-premises-deploy.md) в локальной среде AD DS.
 
 ## <a name="enable-on-premises-password-protection"></a>Включить локальную защиту паролей
 
-1. Войдите в [портал Azure](https://portal.azure.com) и перейдите к **Azure Active Directory**  >  **Security**  >  **методы проверки подлинности** защиты  >  **пароля**.
+1. Войдите в [портал Azure](https://portal.azure.com) и перейдите к **Azure Active Directory**  >    >  **методы проверки подлинности** защиты  >  **пароля**.
 1. Задайте для параметра **включить защиту паролем в Windows Server Active Directory** значение *Да*.
 
     Если для этого параметра установлено значение *нет*, все развернутые агенты контроллера домена для защиты ПАРОЛЕЙ Azure AD переходят в режим загружена, где все пароли принимаются как есть. Действия проверки не выполняются, и события аудита не создаются.

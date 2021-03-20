@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.custom: mvc
 ms.date: 09/06/2020
 ms.openlocfilehash: 97509b878fb5e0cb28bddc5d1b58c21b32c34675
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99555652"
 ---
 # <a name="use-azure-sentinel-watchlists"></a>Использование списков видео к просмотру Azure Sentinel
@@ -121,7 +121,7 @@ Azure Sentinel ватчлистс включает сбор данных из в
 > [!div class="mx-imgBorder"]
 > ![ватчлистс списка](./media/watchlists/sentinel-watchlist-alias.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этом документе вы узнали, как использовать ватчлистс в Azure Sentinel для обогащения данных и улучшения исследований. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 - Узнайте, как [отслеживать свои данные и потенциальные угрозы](quickstart-get-visibility.md).
 - Узнайте, как приступить к [обнаружению угроз с помощью Azure Sentinel](./tutorial-detect-threats-built-in.md).

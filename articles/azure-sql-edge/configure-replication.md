@@ -10,10 +10,10 @@ ms.author: sourabha
 ms.reviewer: sstein
 ms.date: 05/19/2020
 ms.openlocfilehash: 3b424ece9207328d87068160f78ebc78a3bd1a8d
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93395229"
 ---
 # <a name="configure-replication-to-azure-sql-edge"></a>Настройка репликации на границе Azure SQL 
@@ -32,7 +32,7 @@ ms.locfileid: "93395229"
 > [!NOTE]
 > При попытке настроить репликацию с использованием неподдерживаемой версии могут возникать следующие две ошибки: MSSQL_REPL20084 ("процессу не удалось подключиться к подписчику") и MSSQL_REPL40532 ("не удается открыть сервер, \<name> запрошенный именем для входа. Ошибка входа. ").  
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Следующие требования и рекомендации важны для понимания при настройке репликации.
 
@@ -83,9 +83,9 @@ ms.locfileid: "93395229"
 Создайте публикацию и принудительную подписку. Дополнительные сведения см. в разделе:
   
 - [Создание публикации](/sql/relational-databases/replication/publish/create-a-publication)
-- [Создайте принудительную подписку](/sql/relational-databases/replication/create-a-push-subscription/) , используя имя сервера SQL Azure и IP-адрес в качестве подписчика (например, **меджеинстанце, 1433** ), а также имя базы данных в экземпляре SQL Azure в качестве целевой базы данных (например, **AdventureWorks** ).  
+- [Создайте принудительную подписку](/sql/relational-databases/replication/create-a-push-subscription/) , используя имя сервера SQL Azure и IP-адрес в качестве подписчика (например, **меджеинстанце, 1433**), а также имя базы данных в экземпляре SQL Azure в качестве целевой базы данных (например, **AdventureWorks**).  
 
-## <a name="next-steps"></a>Дальнейшие шаги  
+## <a name="next-steps"></a>Дальнейшие действия  
 
 - [Создание публикации](/sql/relational-databases/replication/publish/create-a-publication)
 - [Создание принудительной подписки](/sql/relational-databases/replication/create-a-push-subscription/)

@@ -9,13 +9,13 @@ ms.topic: how-to
 ms.date: 11/14/2019
 ms.author: victorh
 ms.openlocfilehash: cb0f9ef64cb8032c02f2ccd4b42028103b6d3ec6
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93397932"
 ---
-# <a name="configure-tls-policy-versions-and-cipher-suites-on-application-gateway"></a>Настройка версий политик TLS и комплектов шифров в шлюзе приложений
+# <a name="configure-tls-policy-versions-and-cipher-suites-on-application-gateway"></a>Настройка версий политики TLS и комплектов шифров в Шлюзе приложений
 
 Узнайте, как настроить версии политик TLS/SSL и комплекты шифров в шлюзе приложений. Можно выбрать из списка стандартных политик, которые содержат различные конфигурации версий политик TLS и включенных комплектов шифров. Вы также можете определить [пользовательскую политику TLS](#configure-a-custom-tls-policy) в соответствии с вашими требованиями.
 
@@ -191,7 +191,7 @@ $appgw = New-AzApplicationGateway -Name appgwtest -ResourceGroupName $rg.Resourc
 
 ## <a name="update-an-existing-application-gateway-with-a-pre-defined-tls-policy"></a>Обновление существующего шлюза приложений с помощью предварительно определенной политики TLS
 
-Чтобы задать пользовательскую политику TLS, передайте следующие параметры: **PolicyType** , **MinProtocolVersion** , **CipherSuite** и **ApplicationGateway**. Чтобы задать стандартную политику TLS, передайте следующие параметры: **PolicyType** , **PolicyName** и **ApplicationGateway**. Если вы попытаетесь передать другие параметры, поступит сообщение об ошибке создания или обновления шлюза приложений.
+Чтобы задать пользовательскую политику TLS, передайте следующие параметры: **PolicyType**, **MinProtocolVersion**, **CipherSuite** и **ApplicationGateway**. Чтобы задать стандартную политику TLS, передайте следующие параметры: **PolicyType**, **PolicyName** и **ApplicationGateway**. Если вы попытаетесь передать другие параметры, поступит сообщение об ошибке создания или обновления шлюза приложений.
 
 Ниже приводятся примеры кода для настраиваемой и предопределенной политик. Раскомментируйте политику, которую нужно использовать.
 
@@ -215,6 +215,6 @@ $AppGw = get-Azapplicationgateway -Name $AppGWname -ResourceGroupName $RG
 $SetGW = Set-AzApplicationGateway -ApplicationGateway $AppGW
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о перенаправлении трафика HTTP на конечную точку HTTPS см. в статье [Общие сведения о перенаправлении для шлюза приложений](./redirect-overview.md).

@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 09/14/2018
 ms.custom: devx-track-java, devx-track-azurecli
 ms.openlocfilehash: 1ffbd760ae75605d75652b29d379420d6946aa8f
-ms.sourcegitcommit: 4295037553d1e407edeb719a3699f0567ebf4293
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96326460"
 ---
 # <a name="azure-functions-java-developer-guide"></a>Руководство разработчика Java по Функциям Azure
@@ -19,7 +19,7 @@ ms.locfileid: "96326460"
 
 | Начало работы | Основные понятия| 
 | -- | -- |  
-| <ul><li>[Функция Java с использованием Visual Studio Code](./create-first-function-vs-code-java.md)</li><li>[Функция Java/Maven с терминалом/Командная строка](./create-first-function-cli-java.md)</li><li>[Функция Java с использованием Gradle](functions-create-first-java-gradle.md)</li><li>[Функция Java с использованием Eclipse](functions-create-maven-eclipse.md)</li><li>[Функция Java, использующая идею IntelliJ](functions-create-maven-intellij.md)</li></ul> | <ul><li>[Руководство для разработчиков](functions-reference.md)</li><li>[Сравнение вариантов размещения](functions-scale.md)</li><li>[&nbsp;Вопросы производительности](functions-best-practices.md)</li></ul> |
+| <ul><li>[Функция Java с использованием Visual Studio Code](./create-first-function-vs-code-java.md)</li><li>[Функция Java/Maven в терминале / командной строке](./create-first-function-cli-java.md)</li><li>[Функция Java с использованием Gradle](functions-create-first-java-gradle.md)</li><li>[Функция Java с использованием Eclipse](functions-create-maven-eclipse.md)</li><li>[Функция Java, использующая идею IntelliJ](functions-create-maven-intellij.md)</li></ul> | <ul><li>[Руководство для разработчиков](functions-reference.md)</li><li>[Сравнение вариантов размещения](functions-scale.md)</li><li>[&nbsp;Вопросы производительности](functions-best-practices.md)</li></ul> |
 
 ## <a name="java-function-basics"></a>Основы функций Java
 
@@ -155,7 +155,7 @@ public class Function {
 | Версия службы "Функции" | Версии Java (Windows) | Версии Java (Linux) |
 | ----- | ----- | --- |
 | 3.x | 11 <br/>8 | 11 <br/>8 |
-| 2.x | 8 | Недоступно |
+| 2.x | 8 | Н/Д |
 
 Если для развертывания не указана версия Java, Maven архетипа по умолчанию имеет значение Java 8 во время развертывания в Azure.
 

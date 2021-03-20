@@ -4,17 +4,17 @@ description: Узнайте, как настроить GitHub Enterprise Server 
 ms.topic: how-to
 ms.date: 02/11/2021
 ms.openlocfilehash: 59a76c3976f6fcda88423b7b78344f2abed1ea84
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100382027"
 ---
 # <a name="set-up-github-enterprise-server-on-your-azure-vmware-solution-private-cloud"></a>Настройка сервера GitHub Enterprise в частном облаке решения Azure VMware
 
 В этой статье описано, как настроить GitHub Enterprise Server, локальную версию [GitHub.com](https://github.com/), в частном облаке решения Azure VMware. Здесь мы обсудим экземпляр сервера GitHub Enterprise Server, который может обслуживать до 3 000 разработчиков, использующих до 25 заданий в минуту на действия GitHub. Он включает в себя установку (на момент написания статьи) *предварительных* версий функций, таких как действия GitHub. Чтобы настроить настройку в соответствии с конкретными потребностями, ознакомьтесь с требованиями, приведенными в подразделе [Установка GitHub Enterprise Server в VMware](https://docs.github.com/en/enterprise/admin/installation/installing-github-enterprise-server-on-vmware#hardware-considerations).
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Для GitHub Enterprise Server требуется действительный лицензионный ключ. Вы можете зарегистрироваться для получения [пробной лицензии](https://enterprise.github.com/trial). Если вы хотите расширить возможности сервера GitHub Enterprise с помощью интеграции, вы можете воспользоваться бесплатной лицензией разработчика на пять мест. Примените эту лицензию с помощью [партнерской программы GitHub](https://partner.github.com/).
 
@@ -225,7 +225,7 @@ ms.locfileid: "100382027"
 
 В этой статье мы настроили новый экземпляр GitHub Enterprise Server, самостоятельный аналог GitHub.com, поверх частного облака решения Azure VMware. Этот экземпляр включает поддержку действий GitHub и использует хранилище BLOB-объектов Azure для сохранения журналов и артефактов. Но мы просто попытаемся узнать, что можно сделать с помощью действий GitHub. Ознакомьтесь со списком действий в [Marketplace](https://github.com/marketplace)или [Создайте свой собственный](https://docs.github.com/en/actions/creating-actions).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы настроили настройку сервера GitHub Enterprise Server в частном облаке решения Azure VMware, вам может потребоваться изучить следующее: 
 

@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 06/17/2020
 ms.openlocfilehash: acacf617d3f1d9ab891d08b32fc2dfb14deb64a4
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91540529"
 ---
 # <a name="pii-detection-cognitive-skill"></a>Опыт распознавания личных сведений
@@ -50,14 +50,14 @@ Microsoft.Skills.Text.PIIDetectionSkill
 
 | Ввод имени      | Описание                   |
 |---------------|-------------------------------|
-| `languageCode`    | Необязательный параметр. Значение по умолчанию — `en`.  |
+| `languageCode`    | Необязательный параметр. По умолчанию — `en`.  |
 | `text`          | Текст для анализа.          |
 
 ## <a name="skill-outputs"></a>Выходные данные навыка
 
 | Имя вывода      | Описание                   |
 |---------------|-------------------------------|
-| `piiEntities` | Массив сложных типов, содержащий следующие поля: <ul><li>текст (реальные PII как извлеченные)</li> <li>type</li><li>Подтип</li><li>Оценка (более высокое значение означает, что скорее всего будет реальная сущность)</li><li>смещение (во входном тексте)</li><li>length</li></ul> </br> [Возможные типы и подтипы можно найти здесь.](../cognitive-services/text-analytics/named-entity-types.md?tabs=personal) |
+| `piiEntities` | Массив сложных типов, содержащий следующие поля: <ul><li>текст (реальные PII как извлеченные)</li> <li>тип</li><li>Подтип</li><li>Оценка (более высокое значение означает, что скорее всего будет реальная сущность)</li><li>смещение (во входном тексте)</li><li>length</li></ul> </br> [Возможные типы и подтипы можно найти здесь.](../cognitive-services/text-analytics/named-entity-types.md?tabs=personal) |
 | `maskedText` | Если для параметра задано `maskingMode` значение, отличное от `none` , то этот результат будет строковым результатом маскирования, выполняемого для входного текста, как описано в выбранном `maskingMode` .  Если параметр `maskingMode` имеет значение `none` , выходные данные не будут присутствовать. |
 
 ## <a name="sample-definition"></a>Пример определения

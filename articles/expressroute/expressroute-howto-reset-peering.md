@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 12/15/2020
 ms.author: duau
 ms.openlocfilehash: 0bde96ae5f4a9aff6f4a16a4f1544d9b39e5cb66
-ms.sourcegitcommit: 77ab078e255034bd1a8db499eec6fe9b093a8e4f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97559579"
 ---
 # <a name="reset-expressroute-circuit-peerings"></a>Сброс пиринга канала ExpressRoute
@@ -141,7 +141,7 @@ ms.locfileid: "97559579"
    ```
    Теперь пиринг должен находиться в состоянии, установленном пользователем. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Если вам нужна помощь с устранением неполадок ExpressRoute, см. следующие статьи:
 * [Проверка подключения ExpressRoute](expressroute-troubleshooting-expressroute-overview.md)
 * [Устранение проблем с производительностью сети](expressroute-troubleshooting-network-performance.md)

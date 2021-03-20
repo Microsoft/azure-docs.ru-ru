@@ -9,10 +9,10 @@ ms.date: 02/17/2021
 ms.author: normesta
 ms.reviewer: stewu
 ms.openlocfilehash: 36e1a8a288e1f9b2a8d65ab966b607b594d66f4e
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100653607"
 ---
 # <a name="azure-services-that-support-azure-data-lake-storage-gen2"></a>Службы Azure, поддерживающие Azure Data Lake Storage 2-го поколения
@@ -26,7 +26,7 @@ ms.locfileid: "100653607"
 > [!NOTE]
 > Уровень поддержки относится только к поддержке службы с Data Lake Storage Gen 2.
 
-|Служба Azure |Уровень поддержки |Azure AD |Общий ключ| Связанные статьи |
+|Служба Azure |Уровень поддержки |Azure AD |Общий ключ| Похожие статьи |
 |---------------|-------------------|---|---|---|
 |Фабрика данных Azure|Общедоступная версия|Да|Да|[Загрузка данных в Azure Data Lake Storage 2-го поколения с помощью Фабрики данных Azure](../../data-factory/load-azure-data-lake-storage-gen2.md?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)|
 |Azure Databricks|Общедоступная версия|Да|Да|[Использование с Azure Databricks](/azure/databricks/data/data-sources/azure/azure-datalake-gen2) <br> [Руководство. Извлечение, преобразование и загрузка данных с помощью Azure Databricks](/azure/databricks/scenarios/databricks-extract-load-sql-data-warehouse) <br>[Учебник. доступ к данным Data Lake Storage 2-го поколения с помощью Azure Databricks с использованием Spark](data-lake-storage-use-databricks-spark.md)|
@@ -40,8 +40,8 @@ ms.locfileid: "100653607"
 |Центр Интернета вещей |Общедоступная версия|Да|Да|[Использование маршрутизации сообщений в Центре Интернета вещей для отправки с устройства в облако в разные конечные точки](../../iot-hub/iot-hub-devguide-messages-d2c.md)|
 |Power BI|Общедоступная версия|Да|Да|[Анализ данных в Data Lake Storage 2-го поколения с помощью Power BI](/power-query/connectors/datalakestorage)|
 |Azure Synapse Analytics (прежнее название — Хранилище данных SQL)|Общедоступная версия|Да|Да|[Анализируйте данные в учетной записи хранения](../../synapse-analytics/get-started-analyze-storage.md)|
-|SQL Server Integration Services (SSIS);|Общедоступная версия|Да|Да|[Диспетчер подключений службы хранилища Azure](/sql/integration-services/connection-manager/azure-storage-connection-manager)|
-|Azure Data Explorer|Общедоступная версия|Да|Да|[Запрос данных в Azure Data Lake с помощью Azure Data Explorer](/azure/data-explorer/data-lake-query-data)|
+|SQL Server Integration Services (SSIS)|Общедоступная версия|Да|Да|[Диспетчер подключений службы хранилища Azure](/sql/integration-services/connection-manager/azure-storage-connection-manager)|
+|Обозреватель данных Azure|Общедоступная версия|Да|Да|[Запрос данных в Azure Data Lake с помощью Azure Data Explorer](/azure/data-explorer/data-lake-query-data)|
 |Когнитивный поиск Azure|Preview (Предварительный просмотр)|Да|Да|[Индексирование и поиск Azure Data Lake Storage 2-го поколения документов (Предварительная версия)](../../search/search-howto-index-azure-data-lake-storage.md)|
 |Сеть доставки содержимого Azure|Еще не поддерживается|Неприменимо|Неприменимо|[Индексирование и поиск Azure Data Lake Storage 2-го поколения документов (Предварительная версия)](../../cdn/cdn-overview.md)|
 |База данных SQL Azure|Еще не поддерживается|Неприменимо|Неприменимо|[Что такое База данных SQL Azure](../../azure-sql/database/sql-database-paas-overview.md)|

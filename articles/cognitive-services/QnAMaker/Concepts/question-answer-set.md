@@ -6,10 +6,10 @@ ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 01/27/2020
 ms.openlocfilehash: c21c82b5fd024598da30f4ac7b1ed01e64561e3b
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96000119"
 ---
 # <a name="question-and-answer-pair-concepts"></a>Концепции пары вопросов и ответов
@@ -45,7 +45,7 @@ ms.locfileid: "96000119"
 
 Закончив внесение изменений, повторно импортируйте TSV-файл со страницы **Параметры**. Это полностью заменит текущую базу знаний на импортированную.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Время существования базы знаний в QnA Maker](./development-lifecycle-knowledge-base.md)

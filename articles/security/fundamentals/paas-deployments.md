@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/28/2019
 ms.author: terrylan
 ms.openlocfilehash: 77a2a32b9a6358c39a14cfe37eeb44f7cb90af0a
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94841994"
 ---
 # <a name="securing-paas-deployments"></a>Защита развернутых служб PaaS
@@ -156,8 +156,8 @@ Application Insights предоставляет обширные инструм�
 - [Служба приложений Azure](paas-applications-using-app-services.md)
 - [База данных SQL Azure и Azure синапсе Analytics](paas-applications-using-sql.md)
 - [Хранилище Azure](paas-applications-using-storage.md)
-- Кэш Redis для Azure
-- Служебная шина Azure
+- Кэш Azure для Redis
+- Azure Service Bus
 - Брандмауэры веб-приложения
 
 Контрольные вопросы и элементы управления, которые следует учитывать на каждом этапе жизненного цикла разработки программного обеспечения при разработке приложений для облака, см. в статье [Разработка безопасных приложений в Azure](https://azure.microsoft.com/resources/develop-secure-applications-on-azure/) .

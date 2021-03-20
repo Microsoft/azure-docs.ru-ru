@@ -11,10 +11,10 @@ ms.topic: reference
 ms.date: 02/01/2019
 ms.author: lajanuar
 ms.openlocfilehash: 0d5a7f8df0c722ca52780ba254e9af9608f26b54
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98895430"
 ---
 # <a name="translator-30-transliterate"></a>Переводчик 3,0: транслитерированный
@@ -41,7 +41,7 @@ https://api.cognitive.microsofttranslator.com/transliterate?api-version=3.0
     <td>*Обязательный параметр*.<br/>Версия API, запрошенная клиентом. Необходимое значение: `3.0`.</td>
   </tr>
   <tr>
-    <td>язык</td>
+    <td>Язык</td>
     <td>*Обязательный параметр*.<br/>Указывает язык текста, преобразуемого из одного набора символов в другой. Возможные языки перечисляются в области `transliteration`, получаемой путем отправки запроса к службе на предмет [поддерживаемых языков](./v3-0-languages.md).</td>
   </tr>
   <tr>
@@ -77,7 +77,7 @@ https://api.cognitive.microsofttranslator.com/transliterate?api-version=3.0
   </tr>
 </table> 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Текст запроса является массивом в формате JSON. Каждый элемент этого массива представляет собой объект JSON со строковым свойством `Text`, который соответствует преобразуемой строке.
 

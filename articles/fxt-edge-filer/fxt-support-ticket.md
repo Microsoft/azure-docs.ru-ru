@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 07/10/2019
 ms.author: rohogue
 ms.openlocfilehash: 0b23bd81f7b527f578bfd0adcedc79caed7c60fe
-ms.sourcegitcommit: 8d8deb9a406165de5050522681b782fb2917762d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92217377"
 ---
 # <a name="open-a-support-ticket-for-the-azure-fxt-edge-filer"></a>Откройте запрос в службу поддержки для фильтр Azure ФКСТ.
@@ -28,7 +28,7 @@ ms.locfileid: "92217377"
 1. Заполните форму запроса.  
     1. На вкладке **Основные сведения** выберите **тип проблемы** ``Technical`` .
     1. Выберите свою подписку.
-    1. В разделе **Служба**выберите **Azure фкст ребра фильтр**. Чтобы найти его, может потребоваться щелкнуть элемент управления фильтр **всех служб** .
+    1. В разделе **Служба** выберите **Azure фкст ребра фильтр**. Чтобы найти его, может потребоваться щелкнуть элемент управления фильтр **всех служб** .
     1. Введите **сводку** и выберите **тип проблемы**.
     ![Снимок экрана: пустая форма запроса на поддержку](media/fxt-support-populated.png)
     1. Чтобы продолжить, нажмите кнопку **Далее** .

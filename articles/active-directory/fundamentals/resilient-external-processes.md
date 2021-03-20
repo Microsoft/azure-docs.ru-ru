@@ -14,10 +14,10 @@ ms.date: 11/30/2020
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 58ef522f5b048db0ef120625d9e894c8e14c070e
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98724413"
 ---
 # <a name="resilient-interfaces-with-external-processes"></a>Устойчивые интерфейсы с внешними процессами
@@ -66,7 +66,7 @@ ms.locfileid: "98724413"
 
 - Рекомендуется получить правильный маркер в начале пути взаимодействия пользователя вместо многократного вызова для каждого API и [обеспечения безопасности API APIM для Azure](../../active-directory-b2c/secure-api-management.md?tabs=app-reg-ga).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Ресурсы устойчивости для разработчиков Azure AD B2C](resilience-b2c.md)
   - [Устойчивая работа конечного пользователя](resilient-end-user-experience.md)

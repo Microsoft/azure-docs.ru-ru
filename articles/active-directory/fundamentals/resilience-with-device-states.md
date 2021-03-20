@@ -14,10 +14,10 @@ ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6d476be7a417cfc31cca76d3409074aaaa281a56
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98724616"
 ---
 # <a name="build-resilience-with-device-states"></a>Устойчивость сборки к состояниям устройств
@@ -48,7 +48,7 @@ ms.locfileid: "98724616"
 
 * [Используйте подключаемый модуль единого входа Microsoft Enterprise для устройств Apple (Предварительная версия)](../develop/apple-sso-plugin.md). Регистрация устройства и предоставление единого входа в браузере и собственных приложениях Azure AD. 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Ресурсы по устойчивости для администраторов и архитекторов
  
 * [Устойчивость к сборке с помощью управления учетными данными](resilience-in-credentials.md)

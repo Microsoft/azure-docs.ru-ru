@@ -9,10 +9,10 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
 ms.date: 11/06/2020
 ms.openlocfilehash: 461f9354bb3a6eae0af186de8fe9f39c6b5fff2c
-ms.sourcegitcommit: 8192034867ee1fd3925c4a48d890f140ca3918ce
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96620925"
 ---
 # <a name="how-to-test-and-publish-an-azure-application-offer"></a>Как протестировать и опубликовать предложение приложения Azure
@@ -69,7 +69,7 @@ ms.locfileid: "96620925"
 
 Если на одном или нескольких этапах публикации возникли ошибки, их необходимо исправить и выполнить повторную публикацию приложения.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 - [Доступ к аналитическим отчетам для коммерческого рынка в центре партнеров](partner-center-portal/analytics.md)
 - Узнайте, [как продать предложение приложения Azure](create-new-azure-apps-offer-marketing.md) через совместную продажу с корпорацией Майкрософт и пропродавать программы CSP.

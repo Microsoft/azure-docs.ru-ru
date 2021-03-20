@@ -11,10 +11,10 @@ ms.topic: include
 ms.date: 05/05/2020
 ms.author: trbye
 ms.openlocfilehash: 85c4e0641e1989ddea6c8aa8b8a8895a966a5ddb
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96002301"
 ---
 ### <a name="speech-to-text-sub-chart-chartsspeechtotext"></a>Преобразование речи в текст (диаграмма/Спичтотекст)
@@ -64,6 +64,6 @@ ms.locfileid: "96002301"
 |`textanalytics.service.sentimentURISuffix`| Суффикс URI анализа тональности, полный URI имеет формат "http:// `<service>` : `<port>` / `<sentimentURISuffix>` ". | | `text/analytics/v3.0-preview/sentiment`|
 |`textanalytics.service.type`| Тип службы **Text-Analytics** в Kubernetes. См. раздел [типы служб Kubernetes](https://kubernetes.io/docs/concepts/services-networking/service/) | допустимый тип службы Kubernetes | `LoadBalancer` |
 |`textanalytics.service.port`| Порт службы **Text-Analytics**| INT| `50085`|
-|`textanalytics.service.annotations`| Заметки, которые пользователи могут добавлять в метаданные службы **Text-Analytics** . например<br/> **Примечания**<br/>`   `**Some/annotation1: значение1**<br/>`  `**Some/annotation2: значение2** | заметки, по одному на каждую строку| |
+|`textanalytics.service.annotations`| Заметки, которые пользователи могут добавлять в метаданные службы **Text-Analytics** . Например:<br/> **Примечания**<br/>`   `**Some/annotation1: значение1**<br/>`  `**Some/annotation2: значение2** | заметки, по одному на каждую строку| |
 |`textanalytics.serivce.autoScaler.enabled`| Включен ли [Горизонтальный Автомасштабирование Pod](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) . Если параметр включен, `text-analytics-autoscaler` будет развернут в кластере Kubernetes | true/false| `true`|
 |`textanalytics.service.podDisruption.enabled`| Включен ли [бюджет на прерывание Pod](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/) . Если параметр включен, `text-analytics-poddisruptionbudget` будет развернут в кластере Kubernetes| true/false| `true`|

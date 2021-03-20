@@ -4,10 +4,10 @@ description: В этой статье перечислены часто зада
 ms.date: 11/12/2019
 ms.topic: conceptual
 ms.openlocfilehash: 649bd69f14cdf8d81fe05d3a5f5cac3389419fc3
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98879450"
 ---
 # <a name="common-questions---hyper-v-to-azure-disaster-recovery"></a>Часто задаваемые вопросы. Аварийное восстановление Hyper-V в Azure
@@ -74,7 +74,7 @@ Site Recovery имеет сертификаты ISO 27001:2013, 27018, HIPAA, DP
 Да, поддерживается и шифрование в процессе передачи, и [шифрование в Azure](../storage/common/storage-service-encryption.md).
 
 
-## <a name="deployment"></a>Развертывание
+## <a name="deployment"></a>Deployment (Развертывание)
 
 ### <a name="what-can-i-do-with-hyper-v-to-azure-replication"></a>Что можно сделать с помощью репликации Hyper-V в Azure?
 

@@ -9,10 +9,10 @@ ms.author: normesta
 ms.subservice: common
 ms.reviewer: zezha-msft
 ms.openlocfilehash: 4a2c717601747e15556608559450b35bb934410b
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98879111"
 ---
 # <a name="azcopy-jobs-clean"></a>azcopy jobs clean
@@ -36,7 +36,7 @@ azcopy jobs clean [flags]
   azcopy jobs clean --with-status=completed
 ```
 
-## <a name="options"></a>Варианты
+## <a name="options"></a>Параметры
 
 **--Справка**                Справка по очистке.
 

@@ -5,10 +5,10 @@ ms.reviewer: saurse
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.openlocfilehash: 3ea470c2e732b7e0ef46e9e5fa78c744aa30c955
-ms.sourcegitcommit: 75041f1bce98b1d20cd93945a7b3bd875e6999d0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98704369"
 ---
 # <a name="offline-backup-workflow-in-azure-backup"></a>Автономное резервное копирование в Azure Backup
@@ -129,7 +129,7 @@ ms.locfileid: "98704369"
      > [!IMPORTANT]
      > Если исходный компьютер является виртуальной машиной, то копирующий компьютер должен быть физическим сервером или клиентским компьютером, отличным от исходного компьютера.
 
-1. Откройте командную строку с повышенными привилегиями на компьютере копирования с каталогом служебной программы *AzureOfflineBackupDiskPrep* в качестве текущего каталога. Выполните следующую команду:
+1. Откройте командную строку с повышенными привилегиями на компьютере копирования с каталогом служебной программы *AzureOfflineBackupDiskPrep* в качестве текущего каталога. Выполните следующую команду.
 
     ```.\AzureOfflineBackupDiskPrep.exe s:<Staging Location Path>```
 
@@ -216,6 +216,6 @@ ms.locfileid: "98704369"
 
 После завершения начальной архивации можно безопасно удалить данные, импортированные в контейнер хранилища Azure, и данные резервных копий в промежуточном расположении.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Вопросы о рабочем процессе службы импорта и экспорта Azure см. в статье [Использование службы импорт и экспорт Microsoft Azure для перемещения данных в хранилище BLOB-объектов](../import-export/storage-import-export-service.md).

@@ -9,10 +9,10 @@ ms.author: brendm
 ms.custom: devx-track-java
 zone_pivot_groups: programming-languages-spring-cloud
 ms.openlocfilehash: a78aec8c18f3b89629bbf696de3a097397ac59bc
-ms.sourcegitcommit: 2a8a53e5438596f99537f7279619258e9ecb357a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94337922"
 ---
 # <a name="use-distributed-tracing-with-azure-spring-cloud"></a>Использование распределенной трассировки в Azure Spring Cloud
@@ -22,7 +22,7 @@ ms.locfileid: "94337922"
 ::: zone pivot="programming-language-csharp"
 Из этой статьи вы узнаете, как разрешить приложению .NET Core Стилтое использовать распределенную трассировку.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для выполнения этих процедур требуется приложение Стилтое, которое уже [подготовлено к развертыванию в Azure веснного облака](spring-cloud-tutorial-prepare-app-deployment.md).
 
@@ -37,7 +37,7 @@ ms.locfileid: "94337922"
 
 * [Стилтое. Management. ТраЦингкоре](https://www.nuget.org/packages/Steeltoe.Management.TracingCore/)
 
-## <a name="update-startupcs"></a>Обновление Startup.cs
+## <a name="update-startupcs"></a>Обновление запуска. CS
 
 1. Для Стилтое 2.4.4 вызовите `AddDistributedTracing` и `AddZipkinExporter` в `ConfigureServices` методе.
 
@@ -79,7 +79,7 @@ ms.locfileid: "94337922"
 
 1. `management.tracing.alwaysSample` — присвойте значение True.
 
-2. Если вы хотите просмотреть диапазоны трассировки, отправляемые между сервером Еурека, сервером конфигурации и пользовательскими приложениями: значение `management.tracing.egressIgnorePattern` "/API/v2/spans |/v2/Apps/. */пермиссионс |/Еурека/.* | /оаус/. * ".
+2. Если вы хотите просмотреть диапазоны трассировки, отправляемые между сервером Еурека, сервером конфигурации и пользовательскими приложениями: значение `management.tracing.egressIgnorePattern` "/API/v2/spans |/v2/Apps/.*/пермиссионс |/Еурека/.*| /оаус/. * ".
 
 Например, *appsettings.jsв* будет содержать следующие свойства:
  
@@ -156,10 +156,10 @@ spring.sleuth.sampler.probability=0.5
 
 1. Перейдите к странице своей службы Azure Spring Cloud на портале Azure.
 1. На странице **Мониторинг** выберите элемент **Распределенная трассировка**.
-1. Выберите **Изменить параметр** , чтобы изменить или добавить новый параметр.
+1. Выберите **Изменить параметр**, чтобы изменить или добавить новый параметр.
 1. Создайте новый запрос Application Insights или выберите имеющийся.
 1. Выберите категорию ведения журнала, которую требуется отслеживать, и укажите период удержания (в днях).
-1. Выберите **Применить** , чтобы применить новую трассировку.
+1. Выберите **Применить**, чтобы применить новую трассировку.
 
 ## <a name="view-the-application-map"></a>Просмотр схемы приложений
 
@@ -177,7 +177,7 @@ spring.sleuth.sampler.probability=0.5
 
 1. Перейдите к странице своей службы Azure Spring Cloud на портале Azure.
 1. В разделе **Мониторинг** выберите элемент **Распределенная трассировка**.
-1. Щелкните **Отключить** , чтобы отключить Application Insights
+1. Щелкните **Отключить**, чтобы отключить Application Insights
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -12,10 +12,10 @@ ms.date: 02/10/2020
 ms.author: trbye
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 93a3adf00203e317be912e3e72de7a3f7ca666c6
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96001114"
 ---
 # <a name="how-to-recognize-intents-from-speech-using-the-speech-sdk-for-c"></a>Распознавание целей распознавания речи с помощью речевого пакета SDK для C #
@@ -36,7 +36,7 @@ ms.locfileid: "96001114"
 > - распознать речь из файла;
 > - использовать асинхронное непрерывное распознавание при определенном событии.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к работе с этим руководством, убедитесь, что у вас есть следующие элементы:
 
@@ -198,7 +198,7 @@ result.Properties.GetProperty(PropertyId.LanguageUnderstandingServiceResponse_Js
 [!INCLUDE [Download the sample](../../../includes/cognitive-services-speech-service-speech-sdk-sample-download-h2.md)]
 Код, используемый в данной статье, можно найти в папке **samples/csharp/sharedcontent/console**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Краткое руководство. по распознаванию речи с микрофона](./get-started-speech-to-text.md?pivots=programming-language-csharp&tabs=dotnetcore)

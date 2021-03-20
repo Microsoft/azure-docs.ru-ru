@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.openlocfilehash: 50a1656fcb92d9777d4a9476ef2a4c1fd2f2efc6
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96002754"
 ---
 # <a name="full-text-search-in-azure-cognitive-search"></a>Полнотекстовый поиск в Azure Когнитивный поиск
@@ -381,7 +381,7 @@ search=Spacious, air-condition* +"Ocean view"
 
 В этой статье рассматривается полнотекстовый поиск в контексте Когнитивный поиск Azure. Мы надеемся, вы достаточно хорошо разобрались с этим вопросом и сможете применить полученные знания для разрешения распространенных проблем запросов. 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 + Создайте пример индекса, попробуйте выполнить различные запросы и проанализируйте результаты. Дополнительные сведения см. в разделе о [запросе индекса](search-get-started-portal.md#query-index).
 
@@ -393,13 +393,13 @@ search=Spacious, air-condition* +"Ocean view"
 
 + [Настройте пользовательские анализаторы](/rest/api/searchservice/custom-analyzers-in-azure-search) для минимальной или специализированной обработки определенных полей.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Поиск документов REST API](/rest/api/searchservice/search-documents) 
+[Search Documents (Azure Search Service REST API)](/rest/api/searchservice/search-documents) (Поиск по документам (REST API службы поиска Azure)) 
 
-[Простой синтаксис запросов](/rest/api/searchservice/simple-query-syntax-in-azure-search) 
+[Синтаксис простых запросов](/rest/api/searchservice/simple-query-syntax-in-azure-search) 
 
-[Полный синтаксис запроса Lucene](/rest/api/searchservice/lucene-query-syntax-in-azure-search) 
+[Lucene query syntax in Azure Search](/rest/api/searchservice/lucene-query-syntax-in-azure-search) (Синтаксис запросов Lucene в службе поиска Azure) 
 
 [Обработка результатов поиска](./search-pagination-page-layout.md)
 

@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 12/12/2019
 ms.author: thvankra
 ms.openlocfilehash: 53a3317f38cc22ffa3745f5f0e58cc01a54b825c
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93096756"
 ---
 # <a name="migrate-one-to-few-relational-data-into-azure-cosmos-db-sql-api-account"></a>Миграция реляционных данных "один к нескольким" в учетную запись SQL API Azure Cosmos DB
@@ -49,13 +49,13 @@ FROM Orders o;
 
 Результаты этого запроса будут выглядеть следующим образом: 
 
-:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/for-json-query-result.png" alt-text="Снимок экрана, на котором показаны таблицы Orders и OrderDetails в базе данных SQL." lightbox="./media/migrate-relational-to-cosmos-sql-api/for-json-query-result.png":::
+:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/for-json-query-result.png" alt-text="Сведения о заказе" lightbox="./media/migrate-relational-to-cosmos-sql-api/for-json-query-result.png":::
 
 В идеале вы хотите использовать одно действие копирования фабрики данных Azure (ADF) для запроса данных SQL в качестве источника и записывать выходные данные непосредственно в Azure Cosmos DB приемника в качестве правильных объектов JSON. Сейчас невозможно выполнить необходимое преобразование JSON в одном действии копирования. При попытке скопировать результаты приведенного выше запроса в контейнер API SQL Azure Cosmos DB мы видим поле OrderDetails как строковое свойство документа, а не ожидаемый массив JSON.
 
 Мы можем обойти это текущее ограничение одним из следующих способов:
 
-* **Используйте фабрику данных Azure с двумя действиями копирования** : 
+* **Используйте фабрику данных Azure с двумя действиями копирования**: 
   1. Получение данных в формате JSON из SQL в текстовый файл в промежуточном расположении хранилища BLOB-объектов и 
   2. Загрузка данных из текстового файла JSON в контейнер в Azure Cosmos DB.
 
@@ -91,25 +91,31 @@ SELECT [value] FROM OPENJSON(
 )
 ```
 
-:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf1.png" alt-text="Снимок экрана, на котором показаны таблицы Orders и OrderDetails в базе данных SQL." без кавычек ".
+:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf1.png" alt-text="Копия ADF":::
 
-:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf2.png" alt-text="Снимок экрана, на котором показаны таблицы Orders и OrderDetails в базе данных SQL.":::
+
+Для приемника действия копирования Склжсонтоблобтекст мы выберем «текст с разделителями» и назначим ему определенную папку в хранилище BLOB-объектов Azure с динамически формируемым уникальным именем файла (например, « @concat конвейер ()». RunId, '. JSON ').
+Так как наш текстовый файл не является «разделителем», и мы не хотим, чтобы он был проанализирован в отдельные столбцы с помощью запятых и нужно сохранить двойные кавычки ("), мы зададим" разделитель столбцов "на знак табуляции (" \t ") или другой символ, не являющийся в данных, а" символ кавычки "—" без кавычек ".
+
+:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf2.png" alt-text="Снимок экрана, на котором выделены параметры разделителя столбцов и кавычек.":::
 
 ### <a name="copy-activity-2-blobjsontocosmos"></a>#2 действия копирования: Блобжсонтокосмос
 
 Далее мы изменим конвейер ADF, добавив второе действие копирования, которое ищет в хранилище BLOB-объектов Azure текстовый файл, созданный первым действием. Он обрабатывает его как источник JSON для вставки в Cosmos DB приемника как один документ для каждой строки JSON, найденный в текстовом файле.
 
-:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf3.png" alt-text="Снимок экрана, на котором показаны таблицы Orders и OrderDetails в базе данных SQL." в конвейер, чтобы оно удалило все предыдущие файлы, оставшиеся в папке/ордерс/, перед каждым запуском. Наш конвейер ADF теперь выглядит примерно так:
+:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf3.png" alt-text="Снимок экрана, на котором выделены исходный файл JSON и поля пути к файлу.":::
 
-:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf4.png" alt-text="Снимок экрана, на котором показаны таблицы Orders и OrderDetails в базе данных SQL.":::
+При необходимости мы также добавляем действие "Удалить" в конвейер, чтобы оно удалило все предыдущие файлы, оставшиеся в папке/ордерс/, перед каждым запуском. Наш конвейер ADF теперь выглядит примерно так:
+
+:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf4.png" alt-text="Снимок экрана, на котором выделено действие удаления.":::
 
 После запуска конвейера мы видим файл, созданный в нашем промежуточном хранилище BLOB-объектов Azure, содержащем один объект JSON (на строку):
 
-:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf5.png" alt-text="Снимок экрана, на котором показаны таблицы Orders и OrderDetails в базе данных SQL.":::
+:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf5.png" alt-text="Снимок экрана, на котором показан созданный файл, содержащий объекты JSON.":::
 
 Мы также видим документы о заказах с правильно внедренной OrderDetails, вставленными в нашу коллекцию Cosmos DB:
 
-:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf6.png" alt-text="Снимок экрана, на котором показаны таблицы Orders и OrderDetails в базе данных SQL.":::
+:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/adf6.png" alt-text="Снимок экрана, показывающий сведения о заказе в составе Cosmos DB документа":::
 
 
 ## <a name="azure-databricks"></a>Azure Databricks
@@ -122,7 +128,7 @@ SELECT [value] FROM OPENJSON(
 
 Сначала мы создадим и подключим необходимые [соединители SQL](https://docs.databricks.com/data/data-sources/sql-databases-azure.html) и [Azure Cosmos DB библиотеки соединителей](https://docs.databricks.com/data/data-sources/azure/cosmosdb-connector.html) к Azure Databricksному кластеру. Перезапустите кластер, чтобы убедиться, что библиотеки загружены.
 
-:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/databricks1.png" alt-text="Снимок экрана, на котором показаны таблицы Orders и OrderDetails в базе данных SQL.":::
+:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/databricks1.png" alt-text="Снимок экрана, на котором показано, где создать и подключить требуемый соединитель SQL и библиотеки соединителей для Azure Cosmos DB к Azure Databricksному кластеру.":::
 
 Далее мы представим два примера для Scala и Python. 
 
@@ -145,7 +151,7 @@ val orders = sqlContext.read.sqlDB(configSql)
 display(orders)
 ```
 
-:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/databricks2.png" alt-text="Снимок экрана, на котором показаны таблицы Orders и OrderDetails в базе данных SQL.":::
+:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/databricks2.png" alt-text="Снимок экрана, показывающий выходные данные SQL-запроса в кадре данных.":::
 
 Далее мы подключимся к нашей Cosmos DB базе данных и коллекции:
 
@@ -202,7 +208,7 @@ display(ordersWithSchema)
 CosmosDBSpark.save(ordersWithSchema, configCosmos)
 ```
 
-:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/databricks3.png" alt-text="Снимок экрана, на котором показаны таблицы Orders и OrderDetails в базе данных SQL.":::
+:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/databricks3.png" alt-text="Снимок экрана, в котором выделяется правильный массив для сохранения в коллекцию Cosmos DB.":::
 
 
 ### <a name="python"></a>Python
@@ -332,7 +338,7 @@ pool.map(writeOrder, orderids)
 ```
 В любом из подходов в конце мы должны правильно сохранить внедренную OrderDetails в каждом документе в Cosmos DB коллекции:
 
-:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/databricks4.png" alt-text="Снимок экрана, на котором показаны таблицы Orders и OrderDetails в базе данных SQL.":::
+:::image type="content" source="./media/migrate-relational-to-cosmos-sql-api/databricks4.png" alt-text="Databricks":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 * Сведения о [моделировании данных в Azure Cosmos DB](./modeling-data.md)
