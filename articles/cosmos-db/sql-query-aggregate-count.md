@@ -9,10 +9,10 @@ ms.date: 12/02/2020
 ms.author: tisande
 ms.custom: query-reference
 ms.openlocfilehash: 5228558f4bcb146ec08ee5fff45fb1bdf4d56f01
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96553404"
 ---
 # <a name="count-azure-cosmos-db"></a>Количество (Azure Cosmos DB)
@@ -54,7 +54,7 @@ FROM c
 
 Эта системная функция будет использовать [индекс диапазона](index-policy.md#includeexclude-strategy) для всех свойств в фильтре запроса.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Математические функции в Azure Cosmos DB](sql-query-mathematical-functions.md)
 - [Системные функции в Azure Cosmos DB](sql-query-system-functions.md)

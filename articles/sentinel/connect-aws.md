@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 05/27/2020
 ms.author: yelevin
 ms.openlocfilehash: 3d24fa1ea046a860feb40d09a6d0a57c79371450
-ms.sourcegitcommit: 8245325f9170371e08bbc66da7a6c292bbbd94cc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99807603"
 ---
 # <a name="connect-azure-sentinel-to-aws-cloudtrail"></a>Подключение Sentinel Azure к AWS Клаудтраил
@@ -28,7 +28,7 @@ ms.locfileid: "99807603"
 > [!NOTE]
 > AWS Клаудтраил имеет [встроенные ограничения](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) в своем API лукупевентс. Он позволяет не более двух транзакций в секунду (TPS) на каждую учетную запись, и каждый запрос может возвращать не более 50 записей. Следовательно, если один клиент постоянно создает более 100 записей в одну секунду в одном регионе, могут возникнуть невыполненные работы и задержки при приеме данных.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 У вас должно быть разрешение на запись в рабочей области "Sentinel" Azure.
 

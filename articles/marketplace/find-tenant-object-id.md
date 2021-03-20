@@ -7,10 +7,10 @@ author: keferna
 ms.author: keferna
 ms.date: 10/09/2020
 ms.openlocfilehash: 2b1ba0779649c4955987c7dae9802cefaba89b79
-ms.sourcegitcommit: 6172a6ae13d7062a0a5e00ff411fd363b5c38597
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97109352"
 ---
 # <a name="find-tenant-id-object-id-and-partner-association-details"></a>Поиск идентификатора клиента, идентификатора объекта и сведений о сопоставлении партнера
@@ -24,7 +24,7 @@ ms.locfileid: "97109352"
 
 ## <a name="find-tenant-id"></a>Поиск идентификатора клиента
 
-1. Перейдите на [портал Azure](https://ms.portal.azure.com/).
+1. Перейдите на [портал Microsoft Azure](https://ms.portal.azure.com/).
 2. Выберите **Azure Active Directory**.
 
     :::image type="content" source="media/tenant-and-object-id/icon-azure-ad.png" alt-text="Значок Azure Active Directory в портал Azure.":::
@@ -70,7 +70,7 @@ ms.locfileid: "97109352"
 
 В этом разделе описывается, как найти клиент, объект и связь с ИДЕНТИФИКАТОРом партнера в целях отладки.
 
-1. Перейдите на [портал Azure](https://ms.portal.azure.com/).
+1. Перейдите на [портал Microsoft Azure](https://ms.portal.azure.com/).
 2. Откройте Azure Cloud Shell, щелкнув значок PowerShell в правом верхнем углу.
 
     :::image type="content" source="media/tenant-and-object-id/icon-azure-cloud-shell-1.png" alt-text="Значок PowerShell в правом верхнем углу экрана.":::

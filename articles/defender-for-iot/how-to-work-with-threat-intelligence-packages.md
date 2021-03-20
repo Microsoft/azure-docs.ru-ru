@@ -7,11 +7,11 @@ ms.author: shhazam
 ms.date: 12/14/2020
 ms.service: azure
 ms.topic: how-to
-ms.openlocfilehash: a210771d99d28a0e9c15d7952d491a5e5f94e704
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
+ms.openlocfilehash: ddf2eb2fab6281e76bac0a958024b639d18a7ccc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100521413"
 ---
 # <a name="threat-intelligence-research-and-packages"></a>Исследование и пакеты аналитики угроз
@@ -73,6 +73,6 @@ ms.locfileid: "100521413"
 
 7. Отправьте пакет.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="see-also"></a>См. также раздел
 
 [Версии обновления](how-to-manage-sensors-from-the-on-premises-management-console.md#update-versions)

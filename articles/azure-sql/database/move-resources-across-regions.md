@@ -13,10 +13,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 06/25/2019
 ms.openlocfilehash: ae6c87c9eabea837ba9c43676d4ca712caa385cb
-ms.sourcegitcommit: 1cf157f9a57850739adef72219e79d76ed89e264
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94594170"
 ---
 # <a name="move-resources-to-new-region---azure-sql-database--azure-sql-managed-instance"></a>Перемещение ресурсов в новый регион — база данных SQL Azure & Управляемый экземпляр SQL Azure
@@ -44,7 +44,7 @@ ms.locfileid: "94594170"
 
 ## <a name="move-a-database"></a>Перемещение базы данных
 
-### <a name="verify-prerequisites"></a>проверка предварительных требований;
+### <a name="verify-prerequisites"></a>Проверка необходимых условий
 
 1. Создайте целевой сервер для каждого исходного сервера.
 1. Настройте брандмауэр с помощью правильного исключения с помощью [PowerShell](scripts/create-and-configure-database-powershell.md).  
@@ -68,7 +68,7 @@ ms.locfileid: "94594170"
 
 ### <a name="monitor-the-preparation-process"></a>Мониторинг процесса подготовки
 
-Вы можете периодически вызывать [Get-азсклдатабасефаиловерграуп](/powershell/module/az.sql/get-azsqldatabasefailovergroup) для мониторинга репликации баз данных из источника в целевой объект. Выходной объект `Get-AzSqlDatabaseFailoverGroup` включает свойство для **ReplicationState** :
+Вы можете периодически вызывать [Get-азсклдатабасефаиловерграуп](/powershell/module/az.sql/get-azsqldatabasefailovergroup) для мониторинга репликации баз данных из источника в целевой объект. Выходной объект `Get-AzSqlDatabaseFailoverGroup` включает свойство для **ReplicationState**:
 
 - **ReplicationState = 2** (CATCH_UP) указывает, что база данных синхронизирована и для нее можно выполнить безопасную отработку отказа.
 - **ReplicationState = 0** (заполнение) указывает, что база данных еще не заполнена и попытка отработки отказа завершится ошибкой.
@@ -94,7 +94,7 @@ ms.locfileid: "94594170"
 
 ## <a name="move-elastic-pools"></a>Перемещение эластичных пулов
 
-### <a name="verify-prerequisites"></a>проверка предварительных требований;
+### <a name="verify-prerequisites"></a>Проверка необходимых условий
 
 1. Создайте целевой сервер для каждого исходного сервера.
 1. Настройте брандмауэр с нужными исключениями с помощью [PowerShell](scripts/create-and-configure-database-powershell.md).
@@ -122,7 +122,7 @@ ms.locfileid: "94594170"
 
 ### <a name="monitor-the-preparation-process"></a>Мониторинг процесса подготовки
 
-Вы можете периодически вызывать [Get-азсклдатабасефаиловерграуп](/powershell/module/az.sql/get-azsqldatabasefailovergroup) для мониторинга репликации баз данных из источника в целевой объект. Выходной объект `Get-AzSqlDatabaseFailoverGroup` включает свойство для **ReplicationState** :
+Вы можете периодически вызывать [Get-азсклдатабасефаиловерграуп](/powershell/module/az.sql/get-azsqldatabasefailovergroup) для мониторинга репликации баз данных из источника в целевой объект. Выходной объект `Get-AzSqlDatabaseFailoverGroup` включает свойство для **ReplicationState**:
 
 - **ReplicationState = 2** (CATCH_UP) указывает, что база данных синхронизирована и для нее можно выполнить безопасную отработку отказа.
 - **ReplicationState = 0** (заполнение) указывает, что база данных еще не заполнена и попытка отработки отказа завершится ошибкой.
@@ -148,7 +148,7 @@ ms.locfileid: "94594170"
 
 ## <a name="move-a-managed-instance"></a>Перемещение управляемого экземпляра
 
-### <a name="verify-prerequisites"></a>проверка предварительных требований;
+### <a name="verify-prerequisites"></a>Проверка необходимых условий
 
 1. Для каждого исходного управляемого экземпляра Создайте целевой экземпляр SQL Управляемый экземпляр того же размера в целевом регионе.  
 1. Настройка сети для управляемого экземпляра. Дополнительные сведения см. в разделе [Сетевая конфигурация](../managed-instance/how-to-content-reference-guide.md#network-configuration).
@@ -170,7 +170,7 @@ ms.locfileid: "94594170"
 
 ### <a name="monitor-the-preparation-process"></a>Мониторинг процесса подготовки
 
-Вы можете периодически вызывать [Get-азсклдатабасефаиловерграуп](/powershell/module/az.sql/get-azsqldatabasefailovergroup) для мониторинга репликации баз данных из источника в целевой объект. Выходной объект `Get-AzSqlDatabaseFailoverGroup` включает свойство для **ReplicationState** :
+Вы можете периодически вызывать [Get-азсклдатабасефаиловерграуп](/powershell/module/az.sql/get-azsqldatabasefailovergroup) для мониторинга репликации баз данных из источника в целевой объект. Выходной объект `Get-AzSqlDatabaseFailoverGroup` включает свойство для **ReplicationState**:
 
 - **ReplicationState = 2** (CATCH_UP) указывает, что база данных синхронизирована и для нее можно выполнить безопасную отработку отказа.
 - **ReplicationState = 0** (заполнение) указывает, что база данных еще не заполнена и попытка отработки отказа завершится ошибкой.

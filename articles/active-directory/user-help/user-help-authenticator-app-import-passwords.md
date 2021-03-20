@@ -12,10 +12,10 @@ ms.date: 01/28/2021
 ms.author: curtand
 ms.reviewer: olhaun
 ms.openlocfilehash: ecc6580148dfba92077336a26ff9160fbe88eb2c
-ms.sourcegitcommit: 8245325f9170371e08bbc66da7a6c292bbbd94cc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99806161"
 ---
 # <a name="import-passwords-into-the-microsoft-authenticator-app"></a>Импорт паролей в приложение Microsoft Authenticator
@@ -24,7 +24,7 @@ Microsoft Authenticator поддерживает импорт паролей и�
 
 ## <a name="import-from-google-chrome-or-android-smart-lock"></a>Импорт из Google Chrome или Android Smart Lock
 
-Вы можете импортировать пароли из Google Chrome или Android Smart Lock в средство проверки подлинности на смартфоне или на настольном компьютере. Можно сделать следующее:
+Вы можете импортировать пароли из Google Chrome или Android Smart Lock в средство проверки подлинности на смартфоне или на настольном компьютере. Вы можете:
 
 - [Импорт из Chrome в Android и iOS](#import-from-chrome-on-android-and-ios)
 - [Импорт из браузера Chrome для настольных систем](#import-from-chrome-desktop-browser)

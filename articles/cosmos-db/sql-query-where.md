@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/06/2020
 ms.author: tisande
 ms.openlocfilehash: 5620a9fb95fb52a487095afd75d5f30c82a8bce1
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93341475"
 ---
 # <a name="where-clause-in-azure-cosmos-db"></a>Предложение WHERE в Azure Cosmos DB
@@ -37,7 +37,7 @@ WHERE <filter_condition>
   
    Выражение, представляющее вычисляемое значение. Дополнительные сведения см. в разделе [скалярные выражения](sql-query-scalar-expressions.md) .  
   
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
   
   Чтобы вернуть документ, выражение, указанное в качестве условия фильтра, должно иметь значение true. Условие будет соответствовать только логическому значению `true` , любое другое значение: undefine, null, false, Number, Array или Object не будет соответствовать условию.
 
@@ -53,7 +53,7 @@ WHERE <filter_condition>
     WHERE f.id = "AndersenFamily"
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [{
@@ -75,7 +75,7 @@ WHERE <filter_condition>
 |---------|---------|
 |Арифметический | +,-,*,/,% |
 |Побитовые операторы    | \|, &, ^, <<, >>, >>> (сдвиг вправо с заполнением нулями) |
-|Логический    | AND, OR, NOT      |
+|Логические    | AND, OR, NOT      |
 |Сравнение | =, !=, &lt;, &gt;, &lt;=, &gt;=, <> |
 |Строка     |  \|\| (объединение) |
 

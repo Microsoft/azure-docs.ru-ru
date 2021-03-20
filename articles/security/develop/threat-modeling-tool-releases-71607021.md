@@ -9,17 +9,17 @@ ms.subservice: security-develop
 ms.topic: article
 ms.date: 07/02/2019
 ms.openlocfilehash: 0e62f6950f90d7f15aa231783e292ec8eee0b4c4
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87539124"
 ---
 # <a name="threat-modeling-tool-update-release-71607021---722019"></a>Threat Modeling Tool обновления выпуска 7.1.60702.1 — 7/2/2019
 
 Версия 7.1.60702.1 Microsoft Threat Modeling Tool (ТМТ) была выпущена 2 2019 июля и содержит следующие изменения:
 
-- Улучшения специальных возможностей
+- Улучшение специальных возможностей
 - Исправления ошибок
 - Включение набора трафаретов, предоставленных сообществом с открытым исходным кодом
 
@@ -44,6 +44,6 @@ ms.locfileid: "87539124"
 
 - Документация по Threat Modeling Tool находится на сайте [docs.microsoft.com](threat-modeling-tool.md) и содержит информацию [об использовании средства](threat-modeling-tool-getting-started.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Скачайте последнюю версию [Microsoft Threat Modeling Tool](https://aka.ms/threatmodelingtool).

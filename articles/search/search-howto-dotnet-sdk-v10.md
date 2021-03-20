@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 10/27/2020
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 11102d95bc2aba65e6bc3cba71805a67f195947b
-ms.sourcegitcommit: 4cb89d880be26a2a4531fedcc59317471fe729cd
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92681718"
 ---
 # <a name="how-to-use-microsoftazuresearch-in-a-c-net-application"></a>Как использовать Microsoft. Azure. Search в приложении C# .NET
@@ -57,7 +57,7 @@ ms.locfileid: "92681718"
 2. Ваша собственная служба Когнитивный поиск Azure. Чтобы использовать пакет SDK, необходимо указать имя службы и один или несколько ключей API. [Создание службы на портале](search-create-service-portal.md) поможет вам это сделать.
 3. Скачайте [пакет NuGet пакета](https://www.nuget.org/packages/Microsoft.Azure.Search) SDK для Azure когнитивный Поиск .NET с помощью команды "Управление пакетами NuGet" в Visual Studio. Достаточно найти имя пакета `Microsoft.Azure.Search` на сайте NuGet.org (или одно из указанных выше имен пакета, если требуется только подмножество функциональных возможностей).
 
-Пакет SDK Azure Когнитивный поиск .NET поддерживает приложения, предназначенные для .NET Framework 4.5.2 и более поздних версий, а также .NET Core 2,0 и более поздних версий.
+Пакет SDK Azure Когнитивный поиск .NET поддерживает приложения, предназначенные для платформа .NET Framework 4.5.2 и более поздних версий, а также .NET Core 2,0 и более поздних версий.
 
 ## <a name="core-scenarios"></a>Основные сценарии
 В приложении поиска необходимо выполнить несколько действий. В данном руководстве мы обсудим эти основные сценарии:

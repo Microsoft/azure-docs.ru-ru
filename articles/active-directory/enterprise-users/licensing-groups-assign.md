@@ -16,10 +16,10 @@ ms.reviewer: sumitp
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1c1a6957d347681f1c7dd9979429fffb153ccb39
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96546613"
 ---
 # <a name="assign-licenses-to-users-by-group-membership-in-azure-active-directory"></a>Назначение лицензий пользователям в соответствии с членством в группах в Azure Active Directory
@@ -93,7 +93,7 @@ ms.locfileid: "96546613"
 
 1. Чтобы устранить этот конфликт, удалите пользователя из группы **Пользователи киоска**. После того как служба Azure AD обработает изменение, лицензии группы **Отдел кадров** будут назначены правильно.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о наборе функций для назначения лицензий с помощью групп см. в следующих статьях:
 

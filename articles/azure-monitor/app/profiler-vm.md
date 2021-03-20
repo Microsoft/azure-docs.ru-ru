@@ -7,10 +7,10 @@ ms.author: cweining
 ms.date: 11/08/2019
 ms.reviewer: mbullwin
 ms.openlocfilehash: f514dd7b54ac091535aeab43a8a7d2a645b50a09
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87315841"
 ---
 # <a name="profile-web-apps-running-on-an-azure-virtual-machine-or-a-virtual-machine-scale-set-by-using-application-insights-profiler"></a>Профилирование веб-приложений, работающих на виртуальной машине Azure или в масштабируемом наборе виртуальных машин, с использованием Application Insights Profiler
@@ -67,7 +67,7 @@ ms.locfileid: "87315841"
 
 1. Если нужное приложение выполняется с помощью [IIS](https://www.microsoft.com/web/downloads/platform.aspx), необходимо включить компонент Windows `IIS Http Tracing`.
 
-   a. Установите удаленный доступ к среде, а затем используйте окно [Добавить функции Windows](/iis/configuration/system.webserver/tracing/) или выполните следующую команду в PowerShell (с правами администратора):  
+   а. Установите удаленный доступ к среде, а затем используйте окно [Добавить функции Windows](/iis/configuration/system.webserver/tracing/) или выполните следующую команду в PowerShell (с правами администратора):  
 
     ```powershell
     Enable-WindowsOptionalFeature -FeatureName IIS-HttpTracing -Online -All
@@ -87,7 +87,7 @@ ms.locfileid: "87315841"
 
     ![Проверьте, установлено ли расширение WAD][wadextension]
 
-2. Найдите расширение диагностики виртуальных машин для виртуальной машины. Перейдите по адресу [https://resources.azure.com](https://resources.azure.com). Разверните группу ресурсов, Microsoft. COMPUTE virtualMachines, имя виртуальной машины и расширения.  
+2. Найдите расширение диагностики виртуальных машин для виртуальной машины. Перейдите на страницу [https://resources.azure.com](https://resources.azure.com). Разверните группу ресурсов, Microsoft. COMPUTE virtualMachines, имя виртуальной машины и расширения.  
 
     ![Перейдите к WAD config в обозреватель ресурсов Azure][azureresourceexplorer]
 

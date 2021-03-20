@@ -15,10 +15,10 @@ ms.topic: how-to
 ms.date: 09/22/2020
 ms.author: b-juche
 ms.openlocfilehash: 2b52ad50854092cddd7b9e79cbeebd4a83017081
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91325422"
 ---
 # <a name="set-up-a-capacity-pool"></a>Настройка пула емкости
@@ -41,7 +41,7 @@ ms.locfileid: "91325422"
     Появится окно New Capacity Pool (Новый пул емкости).
 
 3. Укажите следующую информацию для нового пула емкости.  
-   * **Имя**  
+   * **имя**;  
      Придумайте название для пула емкости.  
      Название пула емкости должно быть уникальным для каждой учетной записи NetApp.
 
@@ -66,7 +66,7 @@ ms.locfileid: "91325422"
 
 4. Нажмите кнопку **Создать**.
 
-## <a name="next-steps"></a>Дальнейшие шаги 
+## <a name="next-steps"></a>Дальнейшие действия 
 
 - [Иерархия хранилища](azure-netapp-files-understand-storage-hierarchy.md) 
 - [Уровни обслуживания для Azure NetApp Files](azure-netapp-files-service-levels.md)

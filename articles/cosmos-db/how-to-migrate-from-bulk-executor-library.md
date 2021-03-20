@@ -9,10 +9,10 @@ ms.date: 04/24/2020
 ms.author: maquaran
 ms.custom: devx-track-dotnet
 ms.openlocfilehash: 24d6b475964e4bf7745495e9c41d0e89bb76f7e9
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93341301"
 ---
 # <a name="migrate-from-the-bulk-executor-library-to-the-bulk-support-in-azure-cosmos-db-net-v3-sdk"></a>Миграция из библиотеки NET выполнителя в пакетную поддержку в Azure Cosmos DB пакете SDK для .NET v3
@@ -83,20 +83,20 @@ ms.locfileid: "93341301"
 
 ## <a name="retry-configuration"></a>Настройка повторных попыток
 
-Библиотека полного Исполнительного исполнителя представила [рекомендации](bulk-executor-dot-net.md#bulk-import-data-to-an-azure-cosmos-account) по установке и для RetryOptions в для `MaxRetryWaitTimeInSeconds` `MaxRetryAttemptsOnThrottledRequests` [RetryOptions](/dotnet/api/microsoft.azure.documents.client.connectionpolicy.retryoptions) `0` делегирования управления библиотеке.
+Библиотека полного Исполнительного исполнителя представила [рекомендации](bulk-executor-dot-net.md#bulk-import-data-to-an-azure-cosmos-account) по установке и для RetryOptions в для `MaxRetryWaitTimeInSeconds` `MaxRetryAttemptsOnThrottledRequests` [](/dotnet/api/microsoft.azure.documents.client.connectionpolicy.retryoptions) `0` делегирования управления библиотеке.
 
 Для пакетной поддержки в пакете SDK для .NET нет скрытого поведения. Параметры повтора можно настроить непосредственно с помощью [космосклиентоптионс. максретряттемптсонрателимитедрекуестс](/dotnet/api/microsoft.azure.cosmos.cosmosclientoptions.maxretryattemptsonratelimitedrequests) и [космосклиентоптионс. MaxRetryWaitTimeOnRateLimitedRequests](/dotnet/api/microsoft.azure.cosmos.cosmosclientoptions.maxretrywaittimeonratelimitedrequests).
 
 > [!NOTE]
 > В тех случаях, когда подготовленные единицы запроса значительно ниже, чем ожидалось, в зависимости от объема данных, может потребоваться задать для них высокие значения. Эта операция требует больше времени, но она имеет более высокую шансы на полное успешное завершение из-за более высоких повторных попыток.
 
-## <a name="performance-improvements"></a>Усовершенствования в области производительности
+## <a name="performance-improvements"></a>Улучшения производительности
 
 Как и в случае с другими операциями с пакетом SDK для .NET, использование интерфейсов API потока приводит к повышению производительности и позволяет избежать ненужной сериализации. 
 
 Использование API-интерфейсов потока возможно только в том случае, если характер используемых данных соответствует потоку байтов (например, потокам файлов). В таких случаях использование `CreateItemStreamAsync` `ReplaceItemStreamAsync` методов, или `DeleteItemStreamAsync` и работы с `ResponseMessage` (а не `ItemResponse` ) увеличивает пропускную способность, которую можно достичь.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о выпусках пакета SDK для .NET см. в статье [Azure Cosmos DB SDK](sql-api-sdk-dotnet.md) .
 * Получите полный [Исходный код миграции](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/master/Microsoft.Azure.Cosmos.Samples/Usage/BulkExecutorMigration) с сайта GitHub.

@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: how-to
 ms.date: 09/22/2020
 ms.openlocfilehash: be6040b8b84a4b86746d62bd2f1c07f0ffea0a3b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91336298"
 ---
 # <a name="manage-scheduled-maintenance-settings-for-azure-database-for-postgresql--flexible-server"></a>Управление параметрами запланированного обслуживания для базы данных Azure для PostgreSQL — гибкого сервера
@@ -20,7 +20,7 @@ ms.locfileid: "91336298"
 > [!IMPORTANT]
 > База данных Azure для PostgreSQL — гибкий сервер в предварительной версии.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Вот что вам нужно, чтобы выполнить инструкции, приведенные в этом руководстве:
 - [База данных Azure для PostgreSQL — гибкий сервер](quickstart-create-server-portal.md)
  
@@ -33,7 +33,7 @@ ms.locfileid: "91336298"
  
 Службу работоспособности служб Azure можно использовать для [просмотра уведомлений](../../service-health/service-notifications.md) о предстоящем и запланированном обслуживании на гибком сервере. Вы также можете [настроить](../../service-health/resource-health-alert-monitor-guide.md) оповещения в службе "работоспособность служб Azure", чтобы получать уведомления о событиях обслуживания.
  
-## <a name="next-steps"></a>Дальнейшие шаги  
+## <a name="next-steps"></a>Дальнейшие действия  
  
 * Сведения о [плановом обслуживании в базе данных Azure для PostgreSQL — гибком сервере](concepts-maintenance.md)
 * Экономичность [службы работоспособности служб Azure](../../service-health/overview.md)

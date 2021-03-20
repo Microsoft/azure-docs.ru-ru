@@ -5,10 +5,10 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.date: 11/03/2020
 ms.openlocfilehash: 47ba11260c3b58566963e5a3ffac80ca461a8a23
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98946819"
 ---
 # <a name="azure-hdinsight-id-broker-hib"></a>Брокер ИДЕНТИФИКАТОРов Azure HDInsight (ХИБ)
@@ -135,7 +135,7 @@ curl -k -v -H "Authorization: Bearer Access_TOKEN" -H "Content-Type: application
 
 Для использования Beeline и Livy можно также воспользоваться приведенными [здесь](https://github.com/Azure-Samples/hdinsight-enterprise-security/tree/main/HIB/HIBSamples) кодами примеров, чтобы настроить клиент для использования OAuth и подключения к кластеру.
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 ### <a name="what-app-is-created-by-hdinsight-in-aad"></a>Какое приложение создано в HDInsight в AAD?
 Для каждого кластера стороннее приложение будет зарегистрировано в AAD с универсальным кодом ресурса (URI) кластера в качестве identifierUri (например, `https://clustername.azurehdinsight.net` ).
 
