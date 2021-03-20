@@ -7,10 +7,10 @@ ms.custom: devx-track-csharp
 ms.date: 11/21/2017
 ms.author: cshoe
 ms.openlocfilehash: 5ea58cc3d9f3615a74249b36f3f9ffb79caddda1
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88212235"
 ---
 # <a name="mobile-apps-bindings-for-azure-functions"></a>Привязки мобильных приложений для службы "Функции Azure" 
@@ -287,7 +287,7 @@ public static object Run(
 }
 ```
 
-Полный пример см. в разделе [пример выходных данных C#](#output---c-example).
+Полный пример см. в разделе [Пример выходных данных C#](#output---c-example).
 
 ## <a name="output---configuration"></a>Выходная конфигурация
 
@@ -317,7 +317,7 @@ public static object Run(
 
 Для доступа к выходной записи в функциях Node.js используйте `context.bindings.<name>`.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Основные понятия триггеров и привязок в Функциях Azure](functions-triggers-bindings.md)

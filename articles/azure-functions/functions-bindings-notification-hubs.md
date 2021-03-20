@@ -7,10 +7,10 @@ ms.custom: devx-track-csharp
 ms.date: 11/21/2017
 ms.author: cshoe
 ms.openlocfilehash: c4198a1b73f76d61e39324befc85b55bd260e363
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88212225"
 ---
 # <a name="notification-hubs-output-binding-for-azure-functions"></a>Выходная привязка Центра уведомлений для службы "Функции Azure"
@@ -301,7 +301,7 @@ public static async Task Run(string myQueueItem, IAsyncCollector<Notification> n
 |---|---|
 | Центр уведомлений | [Руководство по операциям](/rest/api/notificationhubs/) |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Основные понятия триггеров и привязок в Функциях Azure](functions-triggers-bindings.md)

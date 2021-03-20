@@ -4,10 +4,10 @@ description: Настройте обратный прокси-сервер, чт
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.openlocfilehash: b01ce559b3c790164992d6618149afa9df069466
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86256141"
 ---
 # <a name="connect-to-a-secure-service-with-the-reverse-proxy"></a>Подключение к защищенной службе с помощью обратного прокси-сервера
@@ -20,7 +20,7 @@ ms.locfileid: "86256141"
 ## <a name="secure-connection-establishment-between-the-reverse-proxy-and-services"></a>Установление безопасного подключения между обратным прокси-сервером и службами 
 
 ### <a name="reverse-proxy-authenticating-to-services"></a>Обратный прокси-сервер проходит аутентификацию в службах
-Обратный прокси-сервер идентифицирует себя в службах с помощью своего сертификата. Для кластеров Azure сертификат указывается с помощью свойства ***ReverseProxyCertificate*** ресурса [**Microsoft.ServiceFabric/clusters** в ](/azure/templates/microsoft.servicefabric/clusters) [разделе типов ресурсов](../azure-resource-manager/templates/template-syntax.md) шаблона Resource Manager. Для автономных кластеров сертификат указывается с помощью свойства ***ReverseProxyCertificate*** или ***ReverseProxyCertificateCommonNames*** в разделе **Security** файла ClusterConfig.json. Дополнительные сведения см. в разделе [Enable reverse proxy on standalone clusters](service-fabric-reverseproxy-setup.md#enable-reverse-proxy-on-standalone-clusters) (Включение обратного прокси-сервера в автономных кластерах). 
+Обратный прокси-сервер идентифицирует себя в службах с помощью своего сертификата. Для кластеров Azure сертификат указывается с помощью свойства ***reverseProxyCertificate** _ в [разделе Тип ресурса](../azure-resource-manager/templates/template-syntax.md) [_ *Microsoft. ServiceFabric/Clusters* *](/azure/templates/microsoft.servicefabric/clusters) шаблона диспетчер ресурсов. Для автономных кластеров сертификат указывается с помощью **свойства _ReverseProxyCertificate_*_ или _*_реверсепроксицертификатекоммоннамес_*_ в разделе _* Security** раздела ClusterConfig.json. Дополнительные сведения см. в разделе [Enable reverse proxy on standalone clusters](service-fabric-reverseproxy-setup.md#enable-reverse-proxy-on-standalone-clusters) (Включение обратного прокси-сервера в автономных кластерах). 
 
 Службы могут реализовать логику для проверки сертификата, представленного обратным прокси-сервером. Службы могут указывать сведения о принятом сертификате клиента как параметры конфигурации в пакете конфигурации. Их можно считывать во время выполнения и использовать для проверки сертификата, представленного обратным прокси-сервером. Сведения о добавлении параметров конфигурации см. в статье [Управление параметрами приложения](service-fabric-manage-multiple-environment-app-configuration.md). 
 
@@ -32,7 +32,7 @@ ms.locfileid: "86256141"
 
 ### <a name="service-certificate-validation-options"></a>Параметры проверки сертификата службы 
 
-- **None**: обратный прокси-сервер пропускает проверку сертификата службы, подключаемой через прокси-сервер, и устанавливает безопасное подключение. Это поведение по умолчанию.
+- **None**: обратный прокси-сервер пропускает проверку сертификата службы, подключаемой через прокси-сервер, и устанавливает безопасное подключение. Это поведение установлено по умолчанию.
 Задайте для свойства **ApplicationCertificateValidationPolicy** значение **None** в разделе [**ApplicationGateway/Http**](./service-fabric-cluster-fabric-settings.md#applicationgatewayhttp).
 
    ```json
@@ -174,7 +174,7 @@ Service Fabric поддерживает настройку нескольких 
 Завершение TLS происходит на обратном прокси-сервере, и все данные сертификата клиента теряются. Чтобы службы могли выполнять аутентификацию на основе сертификата клиента, задайте параметр **ForwardClientCertificate** в разделе [**ApplicationGateway/Http**](./service-fabric-cluster-fabric-settings.md#applicationgatewayhttp).
 
 1. Если для **параметра forwardclientcertificate** задано **значение false**, обратный прокси-сервер не будет запрашивать сертификат клиента во время подтверждения TLS с клиентом.
-Это поведение по умолчанию.
+Это поведение установлено по умолчанию.
 
 2. Если для **параметра forwardclientcertificate** задано **значение true**, обратный прокси-сервер запрашивает сертификат клиента во время подтверждения TLS с клиентом.
 Затем он пересылает данные сертификата клиента в пользовательский заголовок HTTP с именем **X-Client-Certificate**. Значение заголовка является строкой формата PEM в кодировке base64 сертификата клиента. Служба может успешно или неудачно выполнить запрос с соответствующим кодом состояния после проверки данных сертификата.

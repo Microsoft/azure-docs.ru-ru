@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 05/29/2018
 ms.author: twooley
 ms.openlocfilehash: a7283ad4c4c61ecc293a55ffc4cb9626bb28d630
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92108734"
 ---
 # <a name="create-an-hdinsight-cluster-with-azure-data-lake-storage-gen1-using-azure-resource-manager-template"></a>Создание кластера HDInsight с Azure Data Lake Storage 1-го поколения с помощью шаблона Azure Resource Manager
@@ -43,7 +43,7 @@ ms.locfileid: "92108734"
 Перед началом работы с этим учебником необходимо иметь следующее:
 
 * **Подписка Azure**. См. страницу [бесплатной пробной версии Azure](https://azure.microsoft.com/pricing/free-trial/).
-* **Azure PowerShell 1,0 или более поздней**версии. Ознакомьтесь со статьей [Установка и настройка Azure PowerShell](/powershell/azure/).
+* **Azure PowerShell 1,0 или более поздней** версии. Ознакомьтесь со статьей [Установка и настройка Azure PowerShell](/powershell/azure/).
 * **Субъект-служба Azure Active Directory**. В этом учебнике приведены инструкции по созданию субъекта-службы в Azure AD. Однако, чтобы создать субъект-службу, необходимо быть администратором Azure AD. Если вы являетесь администратором Azure AD, то можете пропустить это предварительное требование и продолжить работу с учебником.
 
     **Если вы не являетесь администратором Azure AD**, то вы не сможете выполнить шаги, необходимые для создания субъекта-службы. В этом случае администратор Azure AD должен сначала создать субъект-службу, после чего вы сможете создать кластер HDInsight с Data Lake Storage 1-го поколения. При создании субъекта-службы также необходимо использовать сертификат, как описано в разделе [Create a service principal with certificate](../active-directory/develop/howto-authenticate-service-principal-powershell.md#create-service-principal-with-certificate-from-certificate-authority) (Создание субъекта-службы с сертификатом).
@@ -99,7 +99,7 @@ Set-AzContext -SubscriptionId <subscription ID>
    SELECT * FROM vehicles LIMIT 10;
    ```
 
-   Вы должны увидеть результат, аналогичный приведенному ниже:
+   Выходные данные должны иметь следующий вид.
 
    ```
    1,1,2014-09-14 00:00:03,46.81006,-92.08174,51,S,1

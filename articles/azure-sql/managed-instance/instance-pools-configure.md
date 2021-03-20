@@ -13,10 +13,10 @@ ms.author: bonova
 ms.reviewer: sstein
 ms.date: 09/05/2019
 ms.openlocfilehash: 732a9bab018103321a9a3a759b31495bd67a209e
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92793115"
 ---
 # <a name="deploy-azure-sql-managed-instance-to-an-instance-pool"></a>Развертывание Управляемый экземпляр SQL Azure в пуле экземпляров
@@ -54,7 +54,7 @@ ms.locfileid: "92793115"
 
 Чтобы использовать PowerShell, [установите последнюю версию PowerShell Core](/powershell/scripting/install/installing-powershell#powershell) и следуйте инструкциям по [установке модуля Azure PowerShell](/powershell/azure/install-az-ps).
 
-Для операций, относящихся к экземплярам внутри пулов и отдельным экземплярам, используйте стандартные [команды управляемого экземпляра](api-references-create-manage-instance.md#powershell-create-and-configure-managed-instances), но при использовании этих команд для экземпляра в пуле необходимо заполнить свойство *имени пула экземпляров* .
+Для операций, относящихся к экземплярам внутри пулов и отдельным экземплярам, используйте стандартные [команды управляемого экземпляра](api-references-create-manage-instance.md#powershell-create-and-configure-managed-instances), но при использовании этих команд для экземпляра в пуле необходимо заполнить свойство *имени пула экземпляров*.
 
 ## <a name="deployment-process"></a>Процесс развертывания
 

@@ -11,10 +11,10 @@ ms.workload: identity
 ms.date: 12/10/2020
 ms.author: rolyon
 ms.openlocfilehash: 5a4be6052e72c27ad83b5af64f1acb3ad8d4e3be
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100555903"
 ---
 # <a name="transfer-an-azure-subscription-to-a-different-azure-ad-directory"></a>Перенос подписки Azure в другой каталог Azure AD
@@ -88,7 +88,7 @@ ms.locfileid: "100555903"
 > [!WARNING]
 > Если для ресурса, например учетной записи хранения или базы данных SQL, используется шифрование неактивных ресурсов, которое зависит от хранилища ключей, которое **не** находится в той же подписке, которое передается, это может привести к неустранимому сценарию. В этом случае следует предпринять действия по использованию другого хранилища ключей или временно отключить ключи, управляемые клиентом, чтобы избежать такого неисправимого сценария.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для выполнения этих действий потребуется:
 
@@ -323,7 +323,7 @@ ms.locfileid: "100555903"
     | --- | --- |
     | Виртуальные машины | [Настройка управляемых удостоверений для ресурсов Azure на виртуальной машине Azure с помощью Azure CLI](../active-directory/managed-identities-azure-resources/qs-configure-cli-windows-vm.md#system-assigned-managed-identity) |
     | Масштабируемые наборы виртуальных машин | [Настройка управляемых удостоверений для ресурсов Azure в масштабируемом наборе виртуальных машин с помощью Azure CLI](../active-directory/managed-identities-azure-resources/qs-configure-cli-windows-vmss.md#system-assigned-managed-identity) |
-    | Другие службы | [Службы с поддержкой управляемых удостоверений для ресурсов Azure](../active-directory/managed-identities-azure-resources/services-support-managed-identities.md) |
+    | другие службы. | [Службы с поддержкой управляемых удостоверений для ресурсов Azure](../active-directory/managed-identities-azure-resources/services-support-managed-identities.md) |
 
 1. Чтобы назначить роли управляемым удостоверениям, назначенным системой, используйте команду [AZ Role назначение Create](/cli/azure/role/assignment#az_role_assignment_create) . Дополнительные сведения см. в статье [назначение управляемому удостоверению доступа к ресурсу с помощью Azure CLI](../active-directory/managed-identities-azure-resources/howto-assign-access-cli.md).
 
@@ -339,7 +339,7 @@ ms.locfileid: "100555903"
     | --- | --- |
     | Виртуальные машины | [Настройка управляемых удостоверений для ресурсов Azure на виртуальной машине Azure с помощью Azure CLI](../active-directory/managed-identities-azure-resources/qs-configure-cli-windows-vm.md#user-assigned-managed-identity) |
     | Масштабируемые наборы виртуальных машин | [Настройка управляемых удостоверений для ресурсов Azure в масштабируемом наборе виртуальных машин с помощью Azure CLI](../active-directory/managed-identities-azure-resources/qs-configure-cli-windows-vmss.md#user-assigned-managed-identity) |
-    | Другие службы | [Службы с поддержкой управляемых удостоверений для ресурсов Azure](../active-directory/managed-identities-azure-resources/services-support-managed-identities.md)<br/>[Создание, перечисление или удаление назначенного пользователем управляемого удостоверения с помощью Azure CLI](../active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-cli.md) |
+    | другие службы. | [Службы с поддержкой управляемых удостоверений для ресурсов Azure](../active-directory/managed-identities-azure-resources/services-support-managed-identities.md)<br/>[Создание, перечисление или удаление назначенного пользователем управляемого удостоверения с помощью Azure CLI](../active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-cli.md) |
 
 1. Чтобы назначить роли управляемым удостоверениям, назначенным пользователем, используйте команду [AZ Role назначение Create](/cli/azure/role/assignment#az_role_assignment_create) . Дополнительные сведения см. в статье [назначение управляемому удостоверению доступа к ресурсу с помощью Azure CLI](../active-directory/managed-identities-azure-resources/howto-assign-access-cli.md).
 

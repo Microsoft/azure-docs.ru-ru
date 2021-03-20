@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/22/2021
 ms.custom: seodec18
 ms.openlocfilehash: b1b055fa7f083bd8bccda16498e2894d5d67eace
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100374139"
 ---
 # <a name="querying-data-from-azure-time-series-insights-gen2"></a>Запрос данных из Gen2 службы "аналитика временных рядов Azure"
@@ -79,7 +79,7 @@ Gen2 "аналитика временных рядов Azure" используе
 Обозреватель службы " [аналитика временных рядов Azure](./concepts-ux-panels.md) " и [соединитель Power BI](./how-to-connect-power-bi.md) выполняют вызовы к приведенным выше API и автоматически выбирают правильный параметр storeType, если это уместно. 
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте больше о различных переменных, которые могут быть определены в [модели временных рядов](./concepts-model-overview.md).
 * Узнайте больше о том, как запрашивать данные из обозревателя службы " [аналитика временных рядов Azure](./concepts-ux-panels.md)".

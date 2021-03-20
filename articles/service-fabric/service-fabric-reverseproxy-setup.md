@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: pepogors
 ms.openlocfilehash: f8a9025a50b2815f0e6030e7baf317b261c8c462
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86256338"
 ---
 # <a name="set-up-and-configure-reverse-proxy-in-azure-service-fabric"></a>Установка и настройка обратного прокси-сервера в Azure Service Fabric
@@ -74,7 +74,7 @@ ms.locfileid: "86256338"
         ...
     }
     ```
-3. Чтобы настроить сертификаты TLS/SSL в порте для обратных прокси-серверов, добавьте сертификат в свойство ***reverseProxyCertificate*** в [разделе Тип ресурса](../azure-resource-manager/templates/template-syntax.md) **Microsoft. ServiceFabric/Clusters** .
+3. Чтобы настроить сертификаты TLS/SSL в порте для обратных прокси-серверов, добавьте сертификат в свойство ***reverseProxyCertificate** _ в разделе Тип ресурса _ *Microsoft. ServiceFabric/Clusters* *  [](../azure-resource-manager/templates/template-syntax.md).
 
     ```json
     {

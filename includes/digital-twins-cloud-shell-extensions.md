@@ -5,16 +5,16 @@ ms.service: digital-twins
 ms.topic: include
 ms.date: 7/31/2020
 ms.author: baanders
-ms.openlocfilehash: 7e43ab6d419d6a08973864838c66aef0941d74f5
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 984739a728f6ac5e28eeb561e0d7b6ec0485ca13
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90606906"
 ---
 Сначала выполните эту команду, чтобы просмотреть список всех установленных расширений.
 
-```azurecli
+```azurecli-interactive
 az extension list
 ```
 
@@ -23,18 +23,18 @@ az extension list
 С помощью выходных данных определите, какую из следующих команд нужно выполнить для настройки расширения (команд может быть несколько).
 * Если список содержит `azure-iot`, это расширение уже установлено. Выполните эту команду, чтобы убедиться, что у вас установлены самые последние обновления:
 
-   ```azurecli
+   ```azurecli-interactive
    az extension update --name azure-iot
    ```
 
 * Если список **не** содержит `azure-iot`, расширение необходимо установить. Используйте эту команду:
 
-    ```azurecli
+    ```azurecli-interactive
     az extension add --name azure-iot
     ```
 
 * Если список содержит `azure-iot-cli-ext`, это устаревшая версия расширения. Может быть установлена только одна версия расширения, поэтому удалите устаревшее расширение. Используйте эту команду:
 
-   ```azurecli
+   ```azurecli-interactive
    az extension remove --name azure-cli-iot-ext
    ```

@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 07/10/2019
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 225ccb67153a33ed47af68ebb1549dce37426278
-ms.sourcegitcommit: 16c7fd8fe944ece07b6cf42a9c0e82b057900662
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96573467"
 ---
 # <a name="getting-started-with-reliable-actors"></a>Приступая к работе с Reliable Actors
@@ -18,7 +18,7 @@ ms.locfileid: "96573467"
 
 В этой статье описывается создание и отладка простого приложения Reliable Actor в Visual Studio. Дополнительные сведения о Reliable Actors см. в статье [Общие сведения о надежных субъектах Service Fabric](service-fabric-reliable-actors-introduction.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Приступая к работе, убедитесь, что на вашем компьютере установлена и настроена среда разработки Service Fabric, включая Visual Studio. Дополнительные сведения см. в разделе [Подготовка среды разработки в Linux](service-fabric-get-started.md).
 
@@ -106,7 +106,7 @@ internal class HelloWorld : Actor, IHelloWorld
 
     Пакет NuGet и все его зависимости будут установлены в проект ActorClient.
 
-5. В проекте клиента также требуется ссылка на проект интерфейсов.  В проекте ActorClient щелкните правой кнопкой мыши элемент **зависимости** и выберите команду **Добавить ссылку на проект...**.  Выберите **проекты > решение** (если оно еще не выбрано), а затем установите флажок рядом с **HelloWorld. interfaces**.  Щелкните **ОК**.
+5. В проекте клиента также требуется ссылка на проект интерфейсов.  В проекте ActorClient щелкните правой кнопкой мыши элемент **зависимости** и выберите команду **Добавить ссылку на проект...**.  Выберите **проекты > решение** (если оно еще не выбрано), а затем установите флажок рядом с **HelloWorld. interfaces**.  Нажмите кнопку **OK**.
     
     ![Диалоговое окно "Добавление ссылки"][7]
 

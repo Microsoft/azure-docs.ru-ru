@@ -15,10 +15,10 @@ ms.date: 11/30/2020
 ms.author: rolyon
 ms.reviewer: bagovind
 ms.openlocfilehash: b61636d6048f63ae962d4f755a29c02e6785d5e1
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100557527"
 ---
 # <a name="azure-classic-subscription-administrators"></a>Классические администраторы подписок Azure
@@ -38,7 +38,7 @@ ms.locfileid: "100557527"
 
     Соадминистраторов можно назначать только в области подписки.
 
-1. Выберите **Управление доступом (IAM)**.
+1. Щелкните **Управление доступом (IAM)** .
 
 1. Щелкните вкладку **Классические администраторы**.
 
@@ -83,13 +83,13 @@ ms.locfileid: "100557527"
 
 1. Откройте раздел [Подписки](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) и выберите нужную подписку.
 
-1. Выберите **Управление доступом (IAM)**.
+1. Щелкните **Управление доступом (IAM)** .
 
 1. Щелкните вкладку **Классические администраторы**.
 
 1. Установите флажок рядом с тем соадминистратором, которого вы намерены удалить.
 
-1. Нажмите кнопку **Удалить**.
+1. Щелкните **Удалить**.
 
 1. Щелкните **Да** в появившемся диалоговом окне.
 
@@ -126,7 +126,7 @@ ms.locfileid: "100557527"
 | Учетная запись администратора учетной записи | Может ли администратор службы изменить другой учетная запись Майкрософт? | Может ли администратор службы изменить учетную запись Azure AD в том же каталоге? | Может ли администратор службы изменить учетную запись Azure AD в другом каталоге? |
 | --- | --- | --- | --- |
 | Учетная запись Майкрософт | Да | Нет | Нет |
-| учетная запись Azure AD; | Да | Да | Нет |
+| Учетная запись Azure AD | Да | Да | Нет |
 
 Если администратор учетной записи является учетной записью Azure AD, можно изменить ее администратора на учетную запись Azure AD в том же каталоге, но не в другом каталоге. Например, abby@contoso.com может изменить администратора службы на bob@contoso.com , но не сможет изменить администратора службы до john@notcontoso.com тех пор, пока john@notcontoso.com в каталоге contoso.com не будет присутствия.
 
@@ -151,5 +151,5 @@ ms.locfileid: "100557527"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * [Общие сведения о различных ролях](../role-based-access-control/rbac-and-directory-admin-roles.md)
-* [Назначение ролей Azure с помощью портал Azure](../role-based-access-control/role-assignments-portal.md)
+* [Назначение ролей Azure с помощью портала Azure](../role-based-access-control/role-assignments-portal.md)
 * [Добавление или изменение администраторов подписки Azure](../cost-management-billing/manage/add-change-subscription-administrator.md)

@@ -13,10 +13,10 @@ ms.author: jaszymas
 ms.reviewer: vanto
 ms.date: 10/12/2020
 ms.openlocfilehash: 8fbbd7a2aabc9de417f1eefd2513edba3119bfc0
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92791398"
 ---
 # <a name="transparent-data-encryption-for-sql-database-sql-managed-instance-and-azure-synapse-analytics"></a>Прозрачное шифрование данных для базы данных SQL, SQL Управляемый экземпляр и Azure синапсе Analytics
@@ -120,7 +120,7 @@ ms.locfileid: "92791398"
 
 Подключитесь к базе данных, указав имя входа администратора или члена роли **dbmanager** в базе данных master.
 
-| Get-Help | Описание |
+| Команда | Описание |
 | --- | --- |
 | [CREATE DATABASE (база данных SQL Azure)](/sql/t-sql/statements/alter-database-azure-sql-database) | SET ENCRYPTION ON/OFF — шифрование или расшифровка базы данных |
 | [sys.dm_database_encryption_keys](/sql/relational-databases/system-dynamic-management-views/sys-dm-database-encryption-keys-transact-sql) |Возврат сведений о состоянии шифрования для базы данных и связанных с ней ключей шифрования |
@@ -136,7 +136,7 @@ ms.locfileid: "92791398"
 Чтобы настроить TDE с помощью REST API, необходимо подключиться как владелец, участник или диспетчер безопасности SQL Azure.
 Используйте следующий набор команд для базы данных SQL Azure и Azure синапсе:
 
-| Get-Help | Описание |
+| Команда | Описание |
 | --- | --- |
 |[Создание или обновление сервера](/rest/api/sql/servers/createorupdate)|Добавляет удостоверение Azure Active Directory на сервер. (используется для предоставления доступа к Key Vault)|
 |[Создание или обновление ключа сервера](/rest/api/sql/serverkeys/createorupdate)|Добавляет ключ Key Vault на сервер.|

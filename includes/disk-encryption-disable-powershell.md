@@ -9,10 +9,10 @@ ms.date: 06/19/2020
 ms.author: rogarana
 ms.custom: include file
 ms.openlocfilehash: 1e3cdfccc36549d2aa127636b15b698a4e19ccf0
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85610576"
 ---
 Вы можете отключить шифрование с помощью Azure PowerShell, Azure CLI или шаблона Resource Manager. Отключение шифрования диска данных на виртуальной машине Windows, когда оба диска (диск ОС и диск данных)зашифрованы и работают не так, как ожидалось. В этом случае отключите шифрование на всех дисках.

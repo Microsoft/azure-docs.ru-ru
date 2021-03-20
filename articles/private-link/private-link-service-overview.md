@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 09/16/2019
 ms.author: sumi
 ms.openlocfilehash: 7983a80da8a5ca9d900e44515b5e078cc9d70d79
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98684192"
 ---
 # <a name="what-is-azure-private-link-service"></a>Что такое служба частной связи Azure?
@@ -113,7 +113,7 @@ ms.locfileid: "98684192"
 
 |Поле |Длина (октетов)  |Описание  |
 |---------|---------|----------|
-|Тип  |1        |PP2_TYPE_AZURE (0xEE)|
+|Type  |1        |PP2_TYPE_AZURE (0xEE)|
 |Длина  |2      |Длина значения|
 |Значение  |1     |PP2_SUBTYPE_AZURE_PRIVATEENDPOINT_LINKID (0x01)|
 |  |4        |UINT32 (4 байта), представляющее LINKID для закрытой конечной точки. Кодировка в формате с прямым порядком байтов.|
@@ -128,6 +128,6 @@ ms.locfileid: "98684192"
 - Поддерживает только трафик IPv4
 - Поддерживает только трафик TCP и UDP
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Создание службы частной связи с помощью Azure PowerShell](create-private-link-service-powershell.md)
 - [Создание службы частной связи с помощью Azure CLI](create-private-link-service-cli.md)

@@ -10,10 +10,10 @@ ms.author: sourabha
 ms.reviewer: sstein
 ms.date: 09/04/2020
 ms.openlocfilehash: f547f0b3219889b54364c4805c2dd5b183a9861a
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93392373"
 ---
 # <a name="manage-historical-data-with-retention-policy"></a>Управление историческими данными с помощью политики хранения
@@ -70,7 +70,7 @@ select @rowcnt
 
 Следующие шесть расширенных событий помогают отслеживанию состояния операций очистки. 
 
-| name | Описание |
+| Имя | Описание |
 |------| ------------|
 | data_retention_task_started  | Происходит при запуске фоновой задачи очистки таблиц с политикой хранения. |
 | data_retention_task_completed  | Происходит при завершении фоновой задачи очистки таблиц с политикой хранения. |
@@ -82,6 +82,6 @@ select @rowcnt
 Кроме того, `RING_BUFFER_DATA_RETENTION_CLEANUP` в динамическом административном представлении sys.dm_os_ring_buffers добавлен новый тип кольцевого буфера. Это представление можно использовать для отслеживания операций очистки хранения данных. 
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Политика хранения данных](data-retention-overview.md)
 - [Включение и отключение политик хранения данных](data-retention-enable-disable.md)

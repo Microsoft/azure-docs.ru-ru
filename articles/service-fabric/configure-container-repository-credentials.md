@@ -4,10 +4,10 @@ description: Настройка учетных данных репозитори
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.openlocfilehash: 0c6421fed88a3909db717c13a6b3faf51c4491cd
-ms.sourcegitcommit: 16c7fd8fe944ece07b6cf42a9c0e82b057900662
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96574825"
 ---
 # <a name="configure-repository-credentials-for-your-application-to-download-container-images"></a>Настройка учетных данных репозитория для приложения для скачивания образов контейнеров

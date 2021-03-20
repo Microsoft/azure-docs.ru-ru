@@ -7,10 +7,10 @@ ms.date: 07/11/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: dfc9858bea468389d8ce90677f048e5d1fd3bb82
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88007596"
 ---
 # <a name="delete-a-host-pool"></a>Удаление пула узлов
@@ -51,11 +51,11 @@ Remove-AzWvdHostPool -Name <hostpoolname> -ResourceGroupName <resourcegroupname>
 
 7. Щелкните **Удалить**.
 
-8. Если в удаляемом пуле узлов есть узлы сеансов, появится сообщение с запросом на продолжение. Выберите **Да**.
+8. Если в удаляемом пуле узлов есть узлы сеансов, появится сообщение с запросом на продолжение. Выберите ответ **Да**.
 
 9. Теперь портал Azure удалит все узлы сеансов и удалит пул узлов. Виртуальные машины, связанные с узлом сеансов, не будут удалены и останутся в вашей подписке.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы узнать, как создать пул узлов, ознакомьтесь со следующими статьями:
 

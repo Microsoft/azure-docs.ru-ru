@@ -4,10 +4,10 @@ description: Сведения о миграции из службы контро
 ms.topic: article
 ms.date: 06/23/2020
 ms.openlocfilehash: e8cd12ac97020417f9958beded1fd198dd485fff
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88064627"
 ---
 # <a name="service-bus---migrate-from-azure-active-directory-access-control-service-to-shared-access-signature-authorization"></a>Служебная шина — миграция из службы контроля доступа Azure Active Directory в авторизацию подписанного URL-доступа
@@ -50,7 +50,7 @@ ACS и служебная шина интегрируются за счет из
 
 Правила SAS не считаются учетными записями. Это именованные ключи подписи, связанные с правами. Таким образом в сценариях, в которых приложение создает множество удостоверений службы и предоставляет им права доступа к нескольким сущностям или ко всему пространству имен, по-прежнему требуется посредник, выпускающий токены. Рекомендации по поводу такого посредника можно получить у [специалистов службы поддержки](https://azure.microsoft.com/support/options/).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об аутентификации с помощью служебной шины см. в следующих разделах:
 

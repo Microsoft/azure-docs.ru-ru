@@ -10,10 +10,10 @@ services: azure-maps
 manager: philmea
 ms.custom: mvc
 ms.openlocfilehash: d14eda84144105bf2e04f1238284bc58a91c4c03
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98684061"
 ---
 # <a name="request-elevation-data-using-the-azure-maps-elevation-service-preview"></a>Запрос данных о повышении прав с помощью службы повышения прав Azure Maps (Предварительная версия)
@@ -480,7 +480,7 @@ ms.locfileid: "98684061"
 </iframe>
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об API повышения уровня Azure Maps (Предварительная версия) см. в следующих статьях:
 

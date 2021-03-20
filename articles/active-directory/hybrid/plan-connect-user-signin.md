@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3365a58a0c667ca55b74a5120cdd7a78ad0abc79
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95997789"
 ---
 # <a name="azure-ad-connect-user-sign-in-options"></a>Параметры входа в Azure AD Connect
@@ -60,7 +60,7 @@ Azure AD поддерживает следующие методы проверк
 
 Дополнительные сведения см. в статье [Синхронизация хэша паролей](how-to-connect-password-hash-synchronization.md).
 
-### <a name="pass-through-authentication"></a>Сквозная проверка подлинности
+### <a name="pass-through-authentication"></a>Сквозная аутентификация
 При сквозной аутентификации пароль пользователя проверяется в локальном контроллере Active Directory. Пароль не должен в каком-либо виде указываться в Azure AD. Это позволяет оценивать соблюдение локальных политик (например, ограничение часов, когда возможен вход) во время аутентификации в облачных службах.
 
 Для сквозной аутентификация используется простой агент на присоединенном к домену компьютере Windows Server 2012 R2 в локальной среде. Этот агент ожидает передачи запросов на проверку пароля. Ему не требуется открывать входящие порты для доступа из Интернета.
@@ -190,6 +190,6 @@ Azure AD поддерживает следующие методы проверк
 >
 >
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения об [интеграции локальных удостоверений с Azure Active Directory](whatis-hybrid-identity.md).
 - Дополнительные сведения о [Azure AD Connect концепциях проектирования](plan-connect-design-concepts.md).

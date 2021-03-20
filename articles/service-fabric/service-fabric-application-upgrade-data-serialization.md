@@ -4,10 +4,10 @@ description: Лучшие методики для сериализации да�
 ms.topic: conceptual
 ms.date: 11/02/2017
 ms.openlocfilehash: 9474a0bf8041ac541389f782f60bf1220d690cde
-ms.sourcegitcommit: 16c7fd8fe944ece07b6cf42a9c0e82b057900662
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96575641"
 ---
 # <a name="how-data-serialization-affects-an-application-upgrade"></a>Влияние сериализации данных на обновление приложений

@@ -6,10 +6,10 @@ ms.topic: reference
 ms.date: 1/16/2020
 ms.author: jejarry
 ms.openlocfilehash: 880770345eb7d65850db322bd97d64c60b6681ee
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86260866"
 ---
 # <a name="sfctl-application"></a>sfctl application
@@ -20,7 +20,7 @@ ms.locfileid: "86260866"
 |Команда|Описание|
 | --- | --- |
 | create | Создает приложение Service Fabric с помощью указанного описания. |
-| "Удалить" | Удаляет существующее приложение Service Fabric. |
+| удалить | Удаляет существующее приложение Service Fabric. |
 | deployed | Возвращает сведения о приложении, развернутом на узле Service Fabric. |
 | deployed-health | Возвращает сведения о работоспособности приложения, развернутого на узле Service Fabric. |
 | deployed-list | Возвращает список приложений, развернутых на узле Service Fabric. |
@@ -31,7 +31,7 @@ ms.locfileid: "86260866"
 | manifest | Возвращает манифест, описывающий тип приложения. |
 | provision | Подготавливает или регистрирует Service Fabric тип приложения в кластере с помощью пакета ". sfpkg" во внешнем хранилище или с помощью пакета приложения в хранилище образов. |
 | report-health | Отправляет отчет о работоспособности приложения Service Fabric. |
-| type | Возвращает список типов приложений в кластере Service Fabric, которые соответствуют точно указанному имени. |
+| тип | Возвращает список типов приложений в кластере Service Fabric, которые соответствуют точно указанному имени. |
 | type-list | Возвращает список типов приложений в кластере Service Fabric. |
 | unprovision | Удаляет тип приложения Service Fabric или отменяет его регистрацию в кластере. |
 | обновление | Запускает обновление приложения в кластере Service Fabric. |

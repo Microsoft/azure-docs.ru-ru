@@ -6,10 +6,10 @@ ms.topic: reference
 ms.date: 1/16/2020
 ms.author: jejarry
 ms.openlocfilehash: f59eb3296c27e64eb6a4644b2f455e3704381f49
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86260841"
 ---
 # <a name="sfctl-chaos"></a>sfctl chaos
@@ -25,7 +25,7 @@ ms.locfileid: "86260841"
 | --- | --- |
 | события | Получает следующий сегмент событий службы Chaos на основе маркера продолжения или диапазона времени. |
 | get | Получение состояния службы Chaos. |
-| запуск | Запускает службу Chaos в кластере. |
+| start | Запускает службу Chaos в кластере. |
 | stop | Останавливает службу Chaos, если она запущена в кластере, и помещает расписание Chaos в состояние остановки. |
 
 ## <a name="sfctl-chaos-events"></a>sfctl chaos events
