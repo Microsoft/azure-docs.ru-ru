@@ -10,10 +10,10 @@ ms.date: 04/03/2020
 ms.author: menchi
 ms.custom: devx-track-python
 ms.openlocfilehash: 665281adc892e6b3655c0b1d0533cb3148e62940
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92139395"
 ---
 # <a name="get-started-with-iot-hub-module-identity-and-module-twin-python"></a>Начало работы с удостоверениями модулей центра Интернета вещей и модулем двойника (Python)
@@ -34,7 +34,7 @@ ms.locfileid: "92139395"
 
 [!INCLUDE [iot-hub-include-python-sdk-note](../../includes/iot-hub-include-python-sdk-note.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [iot-hub-include-python-v2-installation-notes](../../includes/iot-hub-include-python-v2-installation-notes.md)]
 
@@ -187,7 +187,7 @@ ms.locfileid: "92139395"
 
 В этом разделе вы создадите приложение Python для получения двойникаого обновления требуемых свойств модуля на устройстве.
 
-1. Получите строку подключения модуля. В [портал Azure](https://portal.azure.com/)перейдите в центр Интернета вещей и выберите **устройства IOT** в левой области. Выберите **myFirstDevice** в списке устройств и откройте его. В разделе **удостоверения модулей**выберите **мифирстмодуле**. Скопируйте строку подключения модуля. Он понадобится на следующем шаге.
+1. Получите строку подключения модуля. В [портал Azure](https://portal.azure.com/)перейдите в центр Интернета вещей и выберите **устройства IOT** в левой области. Выберите **myFirstDevice** в списке устройств и откройте его. В разделе **удостоверения модулей** выберите **мифирстмодуле**. Скопируйте строку подключения модуля. Он понадобится на следующем шаге.
 
    ![Сведения о модуле на портале Azure](./media/iot-hub-python-python-module-twin-getstarted/module-detail.png)
 

@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 08/27/2020
 ms.author: azfuncdf
 ms.openlocfilehash: 01c400f51cce85ef39e9d39bcad1221253c6942d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89071216"
 ---
 # <a name="disaster-recovery-and-geo-distribution-in-azure-durable-functions"></a>Аварийное восстановление и географическое распространение в Azure Устойчивые функции
@@ -95,7 +95,7 @@ ms.locfileid: "89071216"
 
 Дополнительные сведения см. в документации по [аварийному восстановлению службы хранилища Azure и отработке отказа учетной записи хранения](../../storage/common/storage-disaster-recovery-guidance.md) .
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Дополнительные сведения о проектировании высокодоступных приложений в службе хранилища Azure](../../storage/common/geo-redundant-design.md)

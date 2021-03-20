@@ -5,17 +5,17 @@ ms.topic: include
 ms.date: 10/26/2018
 ms.author: alkohli
 ms.openlocfilehash: 3129bbe171329ecf37f8712394cedf9b70188220
-ms.sourcegitcommit: b8eba4e733ace4eb6d33cc2c59456f550218b234
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96005828"
 ---
 #### <a name="to-install-updates-via-the-azure-portal"></a>Установка обновлений с помощью портала Azure
 
 1. Откройте диспетчер устройств StorSimple и выберите **Устройства**. Из списка устройств, подключенных к службе, выберите то, которое требуется обновить.
 
-    ![В последней версии Device Manager Миссдевманажер выделены и выбраны, устройства выделяются и выбираются, а устройство MYSSIS1103 выделяется и выбирается.](../includes/media/storsimple-virtual-array-install-update-via-portal-04/azupdate1m.png) 
+    ![В последней версии диспетчер устройств Миссдевманажер выделены и выбраны, устройства выделяются и выбираются, а устройство MYSSIS1103 выделяется и выбирается.](../includes/media/storsimple-virtual-array-install-update-via-portal-04/azupdate1m.png) 
 
 2. В колонке **Параметры** щелкните **Обновления устройства**.
 
@@ -33,7 +33,7 @@ ms.locfileid: "96005828"
 
     ![В области обновления устройства отображается сообщение "новые обновления доступны". Будет выделена кнопка Загрузить обновления.](../includes/media/storsimple-virtual-array-install-update-via-portal-1/azupdate6m.png)
 
-5. В колонке **новых обновлений** просмотрите заметки о выпуске. Обратите внимание, что после скачивания обновлений необходимо подтвердить установку. Нажмите кнопку **ОК**.
+5. В колонке **новых обновлений** просмотрите заметки о выпуске. Обратите внимание, что после скачивания обновлений необходимо подтвердить установку. Нажмите кнопку **OK**.
 
     ![В области новые обновления появится сообщение "после загрузки обновлений необходимо подтвердить установку". Кнопка ОК выделяется.](../includes/media/storsimple-virtual-array-install-update-via-portal-1/azupdate7m.png)
 

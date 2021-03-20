@@ -1,13 +1,13 @@
 ---
-title: Устранение проблем с сеткой событий
+title: Устранение проблем с Сеткой событий
 description: В этой статье представлены различные способы устранения неполадок с сеткой событий Azure.
 ms.topic: conceptual
 ms.date: 02/11/2021
 ms.openlocfilehash: 9c52ba8561c10dd94ec6ef51c78b8534c6c58e96
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100418049"
 ---
 # <a name="troubleshoot-azure-event-grid-issues"></a>Устранение проблем с сеткой событий Azure

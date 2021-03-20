@@ -9,10 +9,10 @@ ms.service: iot-central
 services: iot-central
 ms.custom: mvc
 ms.openlocfilehash: 72aa8e5e3284e0ee7fbe63e0fb617b9eba03292e
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100418234"
 ---
 # <a name="iot-central-solution-builder-guide"></a>Построитель решений IoT Central
@@ -56,6 +56,6 @@ IoT Central имеет встроенные возможности аналит�
 - [Расширьте IoT Central Azure с помощью настраиваемой аналитики, используя Azure Databricks](howto-create-custom-analytics.md)
 - [Визуализация и анализ данных Azure IoT Central на панели мониторинга Power BI](howto-connect-powerbi.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вы хотите узнать больше об использовании IoT Central, рекомендуем далее ознакомиться с циклом кратких руководств. Начните со статьи [Создание приложения Azure IoT Central](./quick-deploy-iot-central.md).

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2021
 ms.date: 02/09/2021
 ms.openlocfilehash: cb8d44353e826df14ed3baab2c4ca66ffed4a569
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100418113"
 ---
 # <a name="transform-data-in-delta-lake-using-mapping-data-flows"></a>Преобразование данных в Дельта Lake с помощью сопоставления потоков данных
@@ -123,6 +123,6 @@ ms.locfileid: "100418113"
 ### <a name="download-completed-sample"></a>Загрузка завершенного примера
 [Ниже приведен пример решения для разностного конвейера с потоком данных для обновления или удаления строк в Lake:](https://github.com/kromerm/adfdataflowdocs/blob/master/sampledata/DeltaPipeline.zip)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о [языке выражений потока данных](data-flow-expression-functions.md).

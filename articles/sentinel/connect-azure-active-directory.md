@@ -16,15 +16,15 @@ ms.workload: na
 ms.date: 01/20/2021
 ms.author: yelevin
 ms.openlocfilehash: f8931fedb380cf81d72b7b5280a5795498daaa57
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99251987"
 ---
 # <a name="connect-azure-active-directory-azure-ad-data-to-azure-sentinel"></a>Подключение данных Azure Active Directory (Azure AD) к Azure Sentinel
 
-С помощью встроенного соединителя Azure Sentinel можно собирать данные из [Azure Active Directory](../active-directory/fundamentals/active-directory-whatis.md) и передавать их в поток Azure Sentinel. Соединитель позволяет выполнять потоковую передачу следующих типов журналов:
+С помощью встроенного соединителя Azure Sentinel можно собирать данные из [Azure Active Directory](../active-directory/fundamentals/active-directory-whatis.md) и выполнять их потоковую передачу в Azure Sentinel. Соединитель позволяет выполнять потоковую передачу следующих типов журналов:
 
 - [**Журналы входа**](../active-directory/reports-monitoring/concept-all-sign-ins.md), содержащие сведения о [входах интерактивных пользователей](../active-directory/reports-monitoring/concept-all-sign-ins.md#user-sign-ins) , где пользователь предоставляет фактор проверки подлинности.
 
@@ -42,13 +42,13 @@ ms.locfileid: "99251987"
 
 > [!IMPORTANT]
 > Как указано выше, некоторые из доступных типов журналов сейчас доступны в **предварительной версии**. Ознакомьтесь с дополнительными [условиями использования Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) предварительных версий для дополнительных юридических условий, которые относятся к функциям Azure, которые доступны в бета-версии, предварительном просмотре или еще не выпущены в общедоступную версию.
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
-- Любой лицензии Azure AD (Free/O365/P1/P2) достаточно для приема журналов входа в Azure Sentinel. Для Azure Monitor (Log Analytics) и Azure Sentinel может взиматься дополнительная плата за гигабайт.
+- Любой лицензии Azure AD (бесплатная/O365/P1/P2) достаточно для приема журналов событий входа в Azure Sentinel. Для Azure Monitor (анализ журналов) и Azure Sentinel может взиматься дополнительная плата за гигабайт.
 
-- Пользователю должна быть назначена роль "участник Sentinel Azure" в рабочей области.
+- Пользователю необходимо назначить роль участника Azure Sentinel в рабочей области.
 
-- Пользователю должны быть назначены роли глобального администратора или администратора безопасности на клиенте, с которого нужно выполнять потоковую передачу журналов.
+- Пользователю необходимо назначить роли глобального администратора или администратора безопасности на клиенте, с которого требуется выполнять потоковую передачу журналов.
 
 - Чтобы увидеть состояние подключения, пользователь должен иметь разрешения на чтение и запись для параметров диагностики Azure AD. 
 

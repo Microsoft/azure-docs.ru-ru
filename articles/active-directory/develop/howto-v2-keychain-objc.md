@@ -14,10 +14,10 @@ ms.author: marsma
 ms.reviewer: oldalton
 ms.custom: aaddev
 ms.openlocfilehash: 06e197a6e445c7dc1179be696318905f2132ee36
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85477742"
 ---
 # <a name="configure-keychain"></a>Настройка цепочки ключей
@@ -32,9 +32,9 @@ ms.locfileid: "85477742"
 
 По умолчанию MSAL в iOS использует `com.microsoft.adalcache` группу доступа. Это группа общего доступа, используемая как в пакетах SDK MSAL, так и в библиотеке аутентификация Azure AD Library (ADAL), и обеспечивает оптимальное взаимодействие единого входа между несколькими приложениями из одного издателя.
 
-В iOS добавьте `com.microsoft.adalcache` группу цепочки ключей в назначение вашего приложения в Xcode в разделе **Параметры проекта**  >  **Capabilities**  >  **общий доступ к цепочке ключей**
+В iOS добавьте `com.microsoft.adalcache` группу цепочки ключей в назначение вашего приложения в Xcode в разделе **Параметры проекта**  >    >  **общий доступ к цепочке ключей**
 
-### <a name="macos"></a>macOS
+### <a name="macos"></a>MacOS
 
 MSAL в macOS использует `com.microsoft.identity.universalstorage` группу доступа по умолчанию.
 

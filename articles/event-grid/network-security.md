@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 07/07/2020
 ms.author: vkukke
 ms.openlocfilehash: 10c9b165041f0a4a1f09511f17bef3629353c3b2
-ms.sourcegitcommit: f6236e0fa28343cf0e478ab630d43e3fd78b9596
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94917534"
 ---
 # <a name="network-security-for-azure-event-grid-resources"></a>Сетевая безопасность для ресурсов службы "Сетка событий Azure"
@@ -59,8 +59,8 @@ ms.locfileid: "94917534"
 
 | Имя                                          | Type      | Значение                                         |
 | --------------------------------------------- | ----------| --------------------------------------------- |  
-| `topicA.westus.eventgrid.azure.net`             | CNAME     | `topicA.westus.privatelink.eventgrid.azure.net` |
-| `topicA.westus.privatelink.eventgrid.azure.net` | CNAME     | \<Azure traffic manager profile\>
+| `topicA.westus.eventgrid.azure.net`             | CNAME.     | `topicA.westus.privatelink.eventgrid.azure.net` |
+| `topicA.westus.privatelink.eventgrid.azure.net` | CNAME.     | \<Azure traffic manager profile\>
 
 Вы можете запретить или управлять доступом клиента за пределами виртуальной сети через общедоступную конечную точку с помощью [брандмауэра IP](#ip-firewall). 
 
@@ -68,8 +68,8 @@ ms.locfileid: "94917534"
 
 | Имя                                          | Type      | Значение                                         |
 | --------------------------------------------- | ----------| --------------------------------------------- |  
-| `topicA.westus.eventgrid.azure.net`             | CNAME     | `topicA.westus.privatelink.eventgrid.azure.net` |
-| `topicA.westus.privatelink.eventgrid.azure.net` | А         | 10.0.0.5
+| `topicA.westus.eventgrid.azure.net`             | CNAME.     | `topicA.westus.privatelink.eventgrid.azure.net` |
+| `topicA.westus.privatelink.eventgrid.azure.net` | A         | 10.0.0.5
 
 Такой подход обеспечивает доступ к разделу или домену, используя одну и ту же строку подключения для клиентов в виртуальной сети, где размещаются частные конечные точки, и клиентов за пределами виртуальной сети.
 

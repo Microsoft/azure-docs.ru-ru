@@ -16,10 +16,10 @@ ms.date: 02/27/2017
 ms.author: alkohli
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: bad0d7adfd77dff53b1582e63a91f2cd87a9233d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85507625"
 ---
 # <a name="use-storsimple-device-manager-to-manage-access-control-records-for-storsimple-virtual-array"></a>Управление записями контроля доступа для виртуального массива StorSimple с помощью диспетчера устройств StorSimple
@@ -69,7 +69,7 @@ ms.locfileid: "85507625"
    
     1. Введите **имя** для ACR.
     
-    2. В строке **Имя инициатора iSCSI**введите имя IQN своего узла Windows. Чтобы получить IQN узла Windows Server, выполните следующие действия:
+    2. В строке **Имя инициатора iSCSI** введите имя IQN своего узла Windows. Чтобы получить IQN узла Windows Server, выполните следующие действия:
    
     3. Запустите инициатор iSCSI (Майкрософт) на узле Windows. В окне iSCSI Initiator Properties (Свойства инициатора iSCSI) на вкладке **Конфигурация** выберите и скопируйте строку из поля **Имя инициатора**.
     Вставьте эту строку в поле **IQN** в колонке **Добавление записи контроля доступа**.

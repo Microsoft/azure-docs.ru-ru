@@ -1,5 +1,5 @@
 ---
-title: Отключение геоархивации
+title: Отключение геоизбыточного резервного копирования
 description: Руководство по отключению геоархивации для выделенного пула SQL (ранее — хранилища данных SQL) в Azure синапсе Analytics
 services: synapse-analytics
 author: joannapea
@@ -12,10 +12,10 @@ ms.author: joanpo
 ms.reviewer: igorstan
 ms.custom: seo-lt-2019
 ms.openlocfilehash: 395d5f0697138155b0bb0c629461aada9e9c18c6
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98739148"
 ---
 # <a name="disable-geo-backups-for-a-dedicated-sql-pool-formerly-sql-dw-in-azure-synapse-analytics"></a>Отключение геоархивации для выделенного пула SQL (ранее — хранилища данных SQL) в Azure синапсе Analytics
@@ -44,7 +44,7 @@ ms.locfileid: "98739148"
 
    ![Сохранить параметры геоархивации](./media/sql-data-warehouse-restore-from-geo-backup/disable-geo-backup-3.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Восстановление существующего выделенного пула SQL (ранее — хранилища данных SQL)](sql-data-warehouse-restore-active-paused-dw.md)
 - [Восстановление удаленного выделенного пула SQL (ранее — хранилища данных SQL)](sql-data-warehouse-restore-deleted-dw.md)

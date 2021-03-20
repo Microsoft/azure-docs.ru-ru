@@ -8,10 +8,10 @@ ms.date: 01/27/2021
 ms.author: rogarana
 ms.subservice: files
 ms.openlocfilehash: 6bb608492327baae958c32be05d8f2a1bb4dbfbf
-ms.sourcegitcommit: 2dd0932ba9925b6d8e3be34822cc389cade21b0d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99226647"
 ---
 # <a name="understand-azure-files-billing"></a>Общие сведения о выставлении счетов в службе файлов Azure
@@ -33,7 +33,7 @@ ms.locfileid: "99226647"
 |ГиБ     |1024 MiB (1 073 741 824 байт)         |Гибибайт         |ГБ (гигабайт)         |
 |Тиб     |1024 гиб (1 099 511 627 776 байт)         |тебибите         |ТБ (терабайт)         |
 
-### <a name="macos"></a>MacOS
+### <a name="macos"></a>macOS
 
 Сведения о [том, как iOS и macOS отчет о емкости хранилища](https://support.apple.com/HT201402) на веб-сайте Apple, чтобы определить, какая система инвентаризации используется.
 
@@ -114,7 +114,7 @@ ms.locfileid: "99226647"
 > [!Note]  
 > NFS 4,1 доступна только для файловых ресурсов уровня "Премиум", которые используют подготовленную модель выставления счетов. транзакции не влияют на выставление счетов для общих файловых ресурсов уровня "Премиум".
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Страница цен на службы файлов Azure](https://azure.microsoft.com/pricing/details/storage/files/).
 - [Планирование развертывания файлов Azure](./storage-files-planning.md) и [Планирование развертывания Синхронизация файлов Azure](./storage-sync-files-planning.md).
 - [Создайте общую папку](./storage-how-to-create-file-share.md) и [разверните синхронизация файлов Azure](./storage-sync-files-deployment-guide.md).

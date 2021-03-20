@@ -13,10 +13,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 02/11/2019
 ms.openlocfilehash: fab52fcea03a2f65c868cfac27f8a8cef115b2be
-ms.sourcegitcommit: f6236e0fa28343cf0e478ab630d43e3fd78b9596
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94917653"
 ---
 # <a name="sql-server-database-migration-to-azure-sql-database"></a>Перенос базы данных SQL Server в Базу данных SQL Azure
@@ -60,7 +60,7 @@ ms.locfileid: "94917653"
 - Отключение автостатистики во время миграции
 - Секционированные таблицы и индексы
 - Удалите индексированные представления и заново создайте их по завершении миграции.
-- Удалите редко запрашиваемые исторические данные в другую базу данных и перенесите эти исторические данные в отдельную базу данных в базе данных SQL Azure. Затем вы сможете запросить эти данные с помощью [эластичных запросов](elastic-query-overview.md).
+- Удалите редко запрашиваемые исторические данные в другую базу данных и перенесите эти исторические данные в отдельную базу данных в базе данных SQL Azure. Затем можно запросить эти исторические данные с помощью [эластичных запросов](elastic-query-overview.md).
 
 ### <a name="optimize-performance-after-the-migration-completes"></a>Оптимизация производительности после завершения миграции
 
@@ -120,7 +120,7 @@ ms.locfileid: "94917653"
 > [!IMPORTANT]
 > Управляемый экземпляр Azure SQL позволяет перенести существующий экземпляр SQL Server и его базы данных с минимальными затратами на проблемы с совместимостью. См. раздел [что такое управляемый экземпляр](../managed-instance/sql-managed-instance-paas-overview.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Воспользуйтесь скриптом в блоге разработчиков EMEA SQL Azure для [отслеживания использования базы данных TempDB во время миграции](/archive/blogs/azuresqlemea/lesson-learned-10-monitoring-tempdb-usage).
 - Воспользуйтесь скриптом в блоге разработчиков EMEA SQL Azure, чтобы [отслеживать объем, занимаемый журналом транзакций в базе данных, во время миграции](/archive/blogs/azuresqlemea/lesson-learned-7-monitoring-the-transaction-log-space-of-my-database).

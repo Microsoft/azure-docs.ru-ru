@@ -4,10 +4,10 @@ description: Узнайте, как настроить существующую 
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: 21fe23b6be6fdc924c5502ff97f9c03a3f3e759d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87283560"
 ---
 # <a name="configure-a-virtual-network-in-azure-devtest-labs"></a>Настройка виртуальной сети в Azure DevTest Labs

@@ -14,10 +14,10 @@ ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 22faba20cb12ae755f19fe43c295d98f9b364cbe
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100417982"
 ---
 # <a name="securing-computer-accounts"></a>Защита учетных записей компьютеров
@@ -82,11 +82,11 @@ Get-ADGroupMember -Identity Administrators -Recursive | Where objectClass -eq "c
 
 * Используйте учетную запись пользователя домена с только привилегиями, необходимыми для запуска службы.
 
-## <a name="next-steps"></a>Next Steps 
+## <a name="next-steps"></a>Дальнейшие действия 
 
 См. следующие статьи о защите учетных записей служб.
 
-* [Общие сведения о локальных учетных записях служб](service-accounts-on-premises.md)
+* [Вводные сведения о локальных учетных записях служб](service-accounts-on-premises.md)
 
 * [Безопасная групповая управляемая учетная запись службы](service-accounts-group-managed.md)
 
@@ -96,7 +96,7 @@ Get-ADGroupMember -Identity Administrators -Recursive | Where objectClass -eq "c
 
 * [Защита учетных записей пользователей](service-accounts-user-on-premises.md)
 
-* [Управление учетными записями локальной службы](service-accounts-govern-on-premises.md)
+* [Управление локальными учетными записями служб](service-accounts-govern-on-premises.md)
 
  
 

@@ -13,10 +13,10 @@ ms.author: hirsin
 ms.reviewer: hirsin
 ms.custom: aaddev
 ms.openlocfilehash: f3598c6f072d09d7e427db66dcfbf8721b92a3a1
-ms.sourcegitcommit: 2dd0932ba9925b6d8e3be34822cc389cade21b0d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99226494"
 ---
 # <a name="microsoft-identity-platform-and-implicit-grant-flow"></a>Платформа удостоверений Майкрософт и неявный поток предоставления

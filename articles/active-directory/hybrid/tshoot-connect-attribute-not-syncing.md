@@ -16,10 +16,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a6df1347eab57a6971fe2e39c0a55869c8f23939
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91317493"
 ---
 # <a name="troubleshoot-an-attribute-not-synchronizing-in-azure-ad-connect"></a>Устранение неполадок атрибута, связанных с отсутствием синхронизации в Azure AD Connect
@@ -83,12 +83,12 @@ ms.locfileid: "91317493"
 * [Синхронизация Azure AD Connect: технические понятия](./how-to-connect-sync-technical-concepts.md)
 * [Синхронизация Azure AD Connect: общие сведения об архитектуре](./concept-azure-ad-connect-sync-architecture.md)
 * [Служба синхронизации Azure AD Connect: общие сведения о декларативной подготовке](./concept-azure-ad-connect-sync-declarative-provisioning.md)
-* [Azure AD Connect синхронизации: Общие сведения о выражениях декларативной подготовки](./concept-azure-ad-connect-sync-declarative-provisioning-expressions.md)
+* [Служба синхронизации Azure AD Connect: общие сведения о выражениях декларативной подготовки](./concept-azure-ad-connect-sync-declarative-provisioning-expressions.md)
 * [Службы синхронизации Azure AD Connect: общие сведения о конфигурации по умолчанию](./concept-azure-ad-connect-sync-default-configuration.md)
 * [Синхронизация Azure AD Connect: общие сведения о пользователях, группах и контактах](./concept-azure-ad-connect-sync-user-and-contacts.md)
 * [Синхронизация Azure AD Connect: теневые атрибуты](./how-to-connect-syncservice-shadow-attributes.md)
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Синхронизация Azure AD Connect](how-to-connect-sync-whatis.md).
 - [Что такое Гибридная идентификация?](whatis-hybrid-identity.md)

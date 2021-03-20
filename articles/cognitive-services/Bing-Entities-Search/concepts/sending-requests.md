@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 06/27/2019
 ms.author: aahi
 ms.openlocfilehash: ad6d89fec9f2c94129e19c09ee3e1e76d5bb6e44
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96353278"
 ---
 # <a name="sending-search-requests-to-the-bing-entity-search-api"></a>Отправка поисковых запросов в API Bing для поиска сущностей
@@ -44,7 +44,7 @@ https://api.cognitive.microsoft.com/bing/v7.0/entities
   
 Запрос должен содержать заголовок [Ocp-Apim-Subscription-Key](/rest/api/cognitiveservices-bingsearch/bing-entities-api-v7-reference#subscriptionkey). Приведенные ниже заголовки являются необязательными, но их также рекомендуется указать:  
   
--   [User-Agent](/rest/api/cognitiveservices-bingsearch/bing-entities-api-v7-reference#useragent)  
+-   [Агент пользователя](/rest/api/cognitiveservices-bingsearch/bing-entities-api-v7-reference#useragent)  
 -   [X-MSEdge-ClientID](/rest/api/cognitiveservices-bingsearch/bing-entities-api-v7-reference#clientid)  
 -   [X-Мседже-ClientIP](/rest/api/cognitiveservices-bingsearch/bing-entities-api-v7-reference#clientip)  
 -   [X-Search-расположение](/rest/api/cognitiveservices-bingsearch/bing-entities-api-v7-reference#location)  

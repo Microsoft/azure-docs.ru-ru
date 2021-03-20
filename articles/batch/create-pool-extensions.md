@@ -4,10 +4,10 @@ description: Расширения — это небольшие приложен
 ms.topic: how-to
 ms.date: 02/10/2021
 ms.openlocfilehash: 1bf9847af57347c143ee3d790d89988ba7cd48e4
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100417945"
 ---
 # <a name="use-extensions-with-batch-pools"></a>Использование расширений с пулами пакетной службы
@@ -16,7 +16,7 @@ ms.locfileid: "100417945"
 
 Вы можете проверить динамическое состояние используемых расширений и получить сведения, которые они возвращают, чтобы использовать любые возможности обнаружения, исправления или диагностики.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Пулы с расширениями должны использовать [конфигурацию виртуальной машины](nodes-and-pools.md#virtual-machine-configuration).
 - Тип расширения CustomScript зарезервирован для пакетной службы Azure и не может быть переопределен.
@@ -123,7 +123,7 @@ ms.locfileid: "100417945"
 
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте о различных способах [копирования приложений и данных на узлы пула](batch-applications-to-pool-nodes.md).
 - Дополнительные сведения о работе с [узлами и пулами](nodes-and-pools.md).

@@ -4,10 +4,10 @@ description: Узнайте, как можно быстро автоматизи
 ms.topic: conceptual
 ms.date: 03/11/2019
 ms.openlocfilehash: d7ff75be3cb847235405a740df4a20803cdc87b3
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100589924"
 ---
 # <a name="automate-application-insights-processes-by-using-logic-apps"></a>Автоматизация процессов Application Insights с помощью Logic Apps
@@ -128,7 +128,7 @@ ms.locfileid: "100589924"
 
 ![Сообщение электронной почты приложения логики](./media/automate-with-logic-apps/flow9.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте больше о создании [запросов Analytics](../logs/get-started-queries.md).
 - Дополнительные сведения о [Logic Apps](../../logic-apps/logic-apps-overview.md).

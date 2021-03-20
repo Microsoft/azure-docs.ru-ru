@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: aagup
 ms.openlocfilehash: d7986c8cd8d0714215c7b4dc57170be346e627ed
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98928043"
 ---
 # <a name="on-demand-backup-in-azure-service-fabric"></a>Резервное копирование по запросу в Azure Service Fabric
@@ -19,7 +19,7 @@ ms.locfileid: "98928043"
 Azure Service Fabric предоставляет функции для [периодического резервного копирования данных](service-fabric-backuprestoreservice-quickstart-azurecluster.md) и резервного копирования данных по мере необходимости. Резервное копирование по запросу полезно, так как оно защищает от / _повреждения данных_ потери данных из-за запланированных изменений в базовой службе или ее среде.
 
 Функции резервного копирования по запросу позволяют записать сведения о состоянии служб перед любой выполняющейся вручную операцией, которая относится к этой службе или к ее среде. Например, когда вы вносите изменения в двоичные файлы службы при ее обновлении или переходе на более раннюю версию. В этом случае резервное копирование по запросу защищает данные от повреждения из-за ошибок в коде приложения.
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Установите модуль Microsoft. ServiceFabric. PowerShell. HTTP (Предварительная версия) для выполнения вызовов конфигурации.
 

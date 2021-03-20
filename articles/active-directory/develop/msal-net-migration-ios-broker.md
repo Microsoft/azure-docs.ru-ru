@@ -13,10 +13,10 @@ ms.author: jmprieur
 ms.reviewer: saeeda
 ms.custom: devx-track-csharp, aaddev
 ms.openlocfilehash: b4eff5910ff5230902d497b55b2afbe6d605365a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89177437"
 ---
 # <a name="migrate-ios-applications-that-use-microsoft-authenticator-from-adalnet-to-msalnet"></a>Перенос приложений iOS, использующих Microsoft Authenticator из ADAL.NET в MSAL.NET
@@ -28,7 +28,7 @@ ms.locfileid: "89177437"
 ## <a name="prerequisites"></a>Предварительные требования
 В этой статье предполагается, что у вас уже есть приложение Xamarin iOS, интегрированное с брокером iOS. Если этого не сделать, перейдите непосредственно к MSAL.NET и начните реализацию брокера. Сведения о том, как вызвать брокер iOS в MSAL.NET с помощью нового приложения, см. в [этой документации](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Leveraging-the-broker-on-iOS#why-use-brokers-on-xamarinios-and-xamarinandroid-applications).
 
-## <a name="background"></a>История
+## <a name="background"></a>Историческая справка
 
 ### <a name="what-are-brokers"></a>Что такое брокеры?
 
@@ -160,7 +160,7 @@ ADAL.NET и MSAL.NET используют URL-адреса для вызова �
 
 в качестве префикса, за которым следует `CFBundleURLName`
 
-Например: `$"msauth.(BundleId")`
+Пример: `$"msauth.(BundleId")`
 
 ```csharp
  <key>CFBundleURLTypes</key>
@@ -225,14 +225,14 @@ ADAL.NET и MSAL.NET добавляют дополнительные требо�
 
 `"<app-scheme>://<your.bundle.id>"`
 
-Пример.
+Пример
 
 `mytestiosapp://com.mycompany.myapp`
 </td><td>
 
 `$"msauth.{BundleId}://auth"`
 
-Пример.
+Пример
 
 `public static string redirectUriOnIos = "msauth.com.yourcompany.XForms://auth"; `
 
@@ -253,6 +253,6 @@ ADAL.NET и MSAL.NET добавляют дополнительные требо�
 
 Дополнительные сведения о включении доступа к цепочке ключей см. в разделе [Включение доступа к цепочке ключей](msal-net-xamarin-ios-considerations.md#enable-keychain-access).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте о [вопросах, связанных с Xamarin iOS, в MSAL.NET](msal-net-xamarin-ios-considerations.md).

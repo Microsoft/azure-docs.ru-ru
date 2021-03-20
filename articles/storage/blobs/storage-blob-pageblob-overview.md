@@ -11,10 +11,10 @@ ms.reviewer: wielriac
 ms.subservice: blobs
 ms.custom: devx-track-csharp
 ms.openlocfilehash: aada418b4f74c38a2a35c793deb85b94b703fb89
-ms.sourcegitcommit: 8c3a656f82aa6f9c2792a27b02bbaa634786f42d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97629363"
 ---
 # <a name="overview-of-azure-page-blobs"></a>Общие сведения о страничных BLOB-объектах Azure
@@ -55,13 +55,13 @@ ms.locfileid: "97629363"
 
 #### <a name="creating-an-empty-page-blob-of-a-specified-size"></a>Создание пустого страничного BLOB-объекта указанного размера
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Сначала получите ссылку на контейнер. Чтобы создать страничный BLOB-объект, вызовите метод Жетпажеблобклиент, а затем вызовите метод [пажеблобклиент. Create](/dotnet/api/azure.storage.blobs.specialized.pageblobclient.create) . Передайте максимальный размер создаваемого большого двоичного объекта. Этот размер должен быть кратен 512 байт.
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/CRUD.cs" id="Snippet_CreatePageBlob":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 Для создания страничного BLOB-объекта сначала создается объект **CloudBlobClient** с базовым URI доступа к хранилищу BLOB-объектов для вашей учетной записи хранения (*pbaccount* на рис. 1) и объектом **StorageCredentialsAccountAndKey**, как показано в приведенном ниже примере. В примере демонстрируется создание ссылки на объект **CloudBlobContainer**, а затем создание контейнера (*testvhds*), если он еще не существует. После этого с помощью объекта **CloudBlobContainer** следует создать ссылку на объект **CloudPageBlob**, указав имя страничного BLOB-объекта (os4.vhd), к которому необходимо получить доступ. Чтобы создать страничный BLOB-объект, вызовите [CloudPageBlob. Create](/dotnet/api/microsoft.azure.storage.blob.cloudpageblob.create), передав максимальный размер создаваемого большого двоичного объекта. Этот размер (*blobSize*) должен быть кратен 512 байтам.
 
@@ -92,13 +92,13 @@ pageBlob.Create(16 * OneGigabyteAsBytes);
 
 #### <a name="resizing-a-page-blob"></a>Изменение размера страничного BLOB-объекта
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Чтобы изменить размер страничного BLOB-объекта после создания, используйте метод [изменения размера](/dotnet/api/azure.storage.blobs.specialized.pageblobclient.resize) . Запрошенный размер должен быть кратен 512 байтам.
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/CRUD.cs" id="Snippet_ResizePageBlob":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 Чтобы изменить размер страничного BLOB-объекта после создания, используйте метод [изменения размера](/dotnet/api/microsoft.azure.storage.blob.cloudpageblob.resize) . Запрошенный размер должен быть кратен 512 байтам.
 
@@ -110,13 +110,13 @@ pageBlob.Resize(32 * OneGigabyteAsBytes);
 
 #### <a name="writing-pages-to-a-page-blob"></a>Запись страниц в страничный BLOB-объект
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Для записи страниц используйте метод [пажеблобклиент. уплоадпажес](/dotnet/api/azure.storage.blobs.specialized.pageblobclient.uploadpages) .  
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/CRUD.cs" id="Snippet_WriteToPageBlob":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 Для записи страниц используйте метод [CloudPageBlob.WritePages](/dotnet/api/microsoft.azure.storage.blob.cloudpageblob.beginwritepages).  
 
@@ -139,13 +139,13 @@ pageBlob.WritePages(dataStream, startingOffset);
 
 #### <a name="reading-pages-from-a-page-blob"></a>Чтение страниц из страничного BLOB-объекта
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Для чтения страниц используйте метод [пажеблобклиент. download](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.download) для чтения диапазона байтов из страничного BLOB-объекта. 
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/CRUD.cs" id="Snippet_ReadFromPageBlob":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 Для чтения страниц используйте метод [CloudPageBlob.DownloadRangeToByteArray](/dotnet/api/microsoft.azure.storage.blob.icloudblob.downloadrangetobytearray), чтобы считать диапазон байтов из страничного BLOB-объекта. 
 
@@ -164,13 +164,13 @@ pageBlob.DownloadRangeToByteArray(buffer, bufferOffset, pageBlobOffset, rangeSiz
 
 Если большой двоичный объект является фрагментарным, возможно, потребуется загружать только значимые области страницы. Это позволит не оплачивать передачу нулевых байтов и сократить задержку при загрузке.  
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Чтобы определить, какие страницы поддерживаются данными, используйте [пажеблобклиент. GetPageRanges](/dotnet/api/azure.storage.blobs.specialized.pageblobclient.getpageranges). Вы можете перечислить возвращаемые диапазоны и загрузить данные в каждом диапазоне. 
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/CRUD.cs" id="Snippet_ReadValidPageRegionsFromPageBlob":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 Чтобы определить, какие страницы поддерживаются данными, используйте метод [CloudPageBlob.GetPageRanges](/dotnet/api/microsoft.azure.storage.blob.cloudpageblob.getpageranges). Вы можете перечислить возвращаемые диапазоны и загрузить данные в каждом диапазоне. 
 

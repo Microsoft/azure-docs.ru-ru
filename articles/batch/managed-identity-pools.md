@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 02/10/2021
 ms.custom: references_regions
 ms.openlocfilehash: 4a59383d119f88bb3ee180f629ba0a6ea6ac2f44
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100418066"
 ---
 # <a name="configure-managed-identities-in-batch-pools"></a>Настройка управляемых удостоверений в пулах пакетной службы
@@ -96,7 +96,7 @@ curl 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-
 
 Дополнительные сведения см. в статье [Использование управляемых удостоверений для ресурсов Azure на виртуальной машине Azure для получения маркера доступа](../active-directory/managed-identities-azure-resources/how-to-use-vm-token.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения об [управляемых удостоверениях для ресурсов Azure](../active-directory/managed-identities-azure-resources/overview.md).
 - Узнайте, как использовать [управляемые клиентом ключи с удостоверениями, управляемыми пользователем](batch-customer-managed-key.md).

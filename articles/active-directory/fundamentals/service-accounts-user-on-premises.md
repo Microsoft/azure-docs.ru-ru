@@ -14,10 +14,10 @@ ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e484bdda33142024f2067649eaa67042fe7776f8
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100417957"
 ---
 # <a name="securing-user-based-service-accounts-in-active-directory"></a>Защита учетных записей служб на основе пользователей в Active Directory
@@ -118,10 +118,10 @@ Get-ADUser -Filter * -Properties PasswordNeverExpires | where {$_.PasswordNeverE
 
 Кроме того, оцените, может ли сама служба быть перемещена в Azure, чтобы можно было использовать более безопасные типы учетных записей служб. 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 См. следующие статьи о защите учетных записей служб.
 
-* [Общие сведения о локальных учетных записях служб](service-accounts-on-premises.md)
+* [Вводные сведения о локальных учетных записях служб](service-accounts-on-premises.md)
 
 * [Безопасная групповая управляемая учетная запись службы](service-accounts-group-managed.md)
 
@@ -131,6 +131,6 @@ Get-ADUser -Filter * -Properties PasswordNeverExpires | where {$_.PasswordNeverE
 
 * [Защита учетных записей пользователей](service-accounts-user-on-premises.md)
 
-* [Управление учетными записями локальной службы](service-accounts-govern-on-premises.md)
+* [Управление локальными учетными записями служб](service-accounts-govern-on-premises.md)
 
  

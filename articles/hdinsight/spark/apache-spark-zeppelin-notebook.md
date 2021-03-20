@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 04/23/2020
 ms.openlocfilehash: ba58c007dc0bc3776f429366651cb79404b137b3
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98928475"
 ---
 # <a name="use-apache-zeppelin-notebooks-with-apache-spark-cluster-on-azure-hdinsight"></a>Использование записных книжек Apache Zeppelin с кластером Apache Spark в Azure HDInsight
@@ -202,7 +202,7 @@ ms.locfileid: "98928475"
 
 ### <a name="log-locations"></a>Расположения журналов
 
-|Служба |путь |
+|Служба |Путь |
 |---|---|
 |Zeppelin — сервер|/уср/хдп/куррент/зеппелин-сервер/|
 |Журналы сервера|/вар/лог/зеппелин|

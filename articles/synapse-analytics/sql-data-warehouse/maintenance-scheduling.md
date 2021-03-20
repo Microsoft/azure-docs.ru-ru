@@ -11,10 +11,10 @@ ms.date: 02/02/2019
 ms.author: anvang
 ms.reviewer: jrasnick
 ms.openlocfilehash: 886e99d6f56a008c694b3bcb366cfb4049f3528e
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100590211"
 ---
 # <a name="use-maintenance-schedules-to-manage-service-updates-and-maintenance"></a>Использование расписаний обслуживания для управления обновлениями и обслуживанием службы
@@ -88,13 +88,13 @@ ms.locfileid: "100590211"
 
    **Сводка расписания** внизу страницы обновится в соответствии с выбранными значениями.
   
-5. Нажмите кнопку **Сохранить**. Появится сообщение, подтверждающее назначение нового расписания.
+5. Щелкните **Сохранить**. Появится сообщение, подтверждающее назначение нового расписания.
 
    В случае сохранения расписания обслуживания в регионе, в котором еще не поддерживается эта функция, появится следующее сообщение. Ваши параметры сохранятся и станут активными, когда функция будет доступна в выбранном регионе.
 
    ![Сообщение о доступности по регионам](./media/maintenance-scheduling/maintenance-not-active-toast.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о создании, просмотре оповещений и управлении ими с помощью Azure Monitor см. в [этой статье](../../azure-monitor/alerts/alerts-metric.md?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json).
 - Дополнительные сведения о действиях веб-перехватчика для правил генерации оповещений журнала см. в [этой статье](../..//azure-monitor/alerts/alerts-log-webhook.md?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json).

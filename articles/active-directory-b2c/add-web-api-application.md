@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: active-directory
 ms.subservice: B2C
 ms.openlocfilehash: 0eeff0c8c338b09fbe375587db2b955a143138c2
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94949825"
 ---
 # <a name="add-a-web-api-application-to-your-azure-active-directory-b2c-tenant"></a>Добавление веб-API приложения в клиент Azure Active Directory B2C
 
  Зарегистрируйте ресурсы веб-API в клиенте, чтобы они могли принимать запросы и отвечать на них клиентскими приложениями, которые представляют маркер доступа. В этой статье показано, как зарегистрировать веб-API в Azure Active Directory B2C (Azure AD B2C).
 
-Чтобы зарегистрировать приложение в клиенте Azure AD B2C, можно использовать новый унифицированный интерфейс **регистрации приложений** или устаревший интерфейс **приложений (прежняя версия)** . [См. дополнительные сведения о новом интерфейсе](./app-registrations-training-guide.md).
+Чтобы зарегистрировать приложение в клиенте Azure AD B2C, можно использовать новый унифицированный интерфейс **Регистрации приложений** или устаревший интерфейс **Приложения (прежние версии)** . [См. дополнительные сведения о новом интерфейсе](./app-registrations-training-guide.md).
 
 #### <a name="app-registrations"></a>[Регистрация приложений](#tab/app-reg-ga/)
 
