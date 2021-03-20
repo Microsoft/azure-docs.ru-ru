@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: sahandle
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1a17f52e519a84c58c9ed5b75259cc0b96d0a175
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88949180"
 ---
 # <a name="azure-active-directory-identity-protection-glossary"></a>Глоссарий по защите идентификации Azure Active Directory
@@ -26,7 +26,7 @@ ms.locfileid: "88949180"
 ### <a name="atypical-sign-in-location"></a>Нетипичное расположение входа
 Вход из географического расположения, которое не является типичным для конкретного пользователя, схожих пользователей или клиента.
 
-### <a name="azure-ad-identity-protection"></a>Защита идентификации Azure AD
+### <a name="azure-ad-identity-protection"></a>Защита идентификации Azure AD
 Модуль безопасности Azure Active Directory, обеспечивающий объединенное представление об обнаружении рисков и потенциальных уязвимостях, влияющих на удостоверения Организации.
 
 ### <a name="conditional-access"></a>Условный доступ

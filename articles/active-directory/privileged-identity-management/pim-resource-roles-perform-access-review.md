@@ -17,10 +17,10 @@ ms.author: curtand
 ms.custom: pim
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8091890d174ae68f012a6ec24685a0e705100f8b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "84743683"
 ---
 # <a name="review-access-to-azure-resource-roles-in-privileged-identity-management"></a>Проверка доступа к ролям ресурсов Azure в управление привилегированными пользователями
@@ -44,7 +44,7 @@ ms.locfileid: "84743683"
    ![Снимок экрана управление привилегированными пользователями приложения с выбранной колонкой "Проверка доступа"](media/pim-resource-roles-perform-access-review/rbac-access-review-complete.png)
 
 1. Выберите проверку, которую необходимо завершить.
-1. Выберите **утвердить** или **отклонить**. В **поле указать причину**введите Деловое обоснование для решения при необходимости.
+1. Выберите **утвердить** или **отклонить**. В **поле указать причину** введите Деловое обоснование для решения при необходимости.
 
    ![Снимок экрана страницы просмотра подробностей](media/pim-resource-roles-perform-access-review/rbac-access-review-choice.png)
 

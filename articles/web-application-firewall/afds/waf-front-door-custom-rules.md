@@ -8,10 +8,10 @@ services: web-application-firewall
 ms.date: 09/05/2019
 ms.author: victorh
 ms.openlocfilehash: 158bfe30bf48ee420be8efb9ff32fff0e555d9e7
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "79475830"
 ---
 #  <a name="custom-rules-for-web-application-firewall-with-azure-front-door"></a>Пользовательские правила для брандмауэра веб-приложения с помощью передней дверцы Azure
@@ -67,8 +67,8 @@ ms.locfileid: "79475830"
   - **Инвертировать [необязательно]:** Можно установить условие *отрицания* в true, если результат условия должен быть инвертирован.
       
   - **Преобразование [необязательно]:** Список строк с именами преобразований, которые необходимо выполнить до попытки сопоставления. Это могут быть следующие преобразования:
-     - Верхний регистр 
-     - Нижний регистр
+     - Прописные буквы 
+     - Строчные буквы
      - Trim
      - ремовенуллс
      - урлдекоде

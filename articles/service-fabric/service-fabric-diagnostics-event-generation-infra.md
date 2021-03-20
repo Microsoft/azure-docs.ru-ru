@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 11/21/2018
 ms.author: srrengar
 ms.openlocfilehash: f9db0df9370197190c11b740f1fd1af3fb69f19c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100581406"
 ---
 # <a name="monitoring-the-cluster"></a>Мониторинг кластера
@@ -86,7 +86,7 @@ Service Fabric предоставляет несколько событий ст
 * **Счетчики производительности в Хранилище таблиц Azure.**  
 Вы также можете отправлять метрики производительности в то же хранилище таблиц, что и события. Это требует изменения конфигурации системы диагностики Azure таким образом, чтобы выполнялся сбор соответствующих данных счетчиков производительности с виртуальных машин в кластере и статистики Docker при развертывании контейнеров. Дополнительные сведения о настройке счетчиков производительности в WAD и Service Fabric для настройки их сбора см. в [этой статье](service-fabric-diagnostics-event-aggregation-wad.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте об [интеграции журналов Azure Monitor](service-fabric-diagnostics-event-analysis-oms.md) Service Fabric, чтобы получить сведения о диагностике кластера и создать пользовательские запросы и оповещения.
 * Ознакомьтесь со встроенными возможностями диагностики Service Fabric — [службой EventStore](service-fabric-diagnostics-eventstore.md).

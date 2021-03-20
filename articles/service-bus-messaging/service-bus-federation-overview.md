@@ -4,10 +4,10 @@ description: В этой статье представлен обзор репл
 ms.topic: article
 ms.date: 12/12/2020
 ms.openlocfilehash: e47f633fcd9248eab6f47936aa7c45877decc1fe
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98880833"
 ---
 # <a name="message-replication-and-cross-region-federation"></a>Репликация сообщений и федерация между регионами
@@ -156,7 +156,7 @@ az servicebus topic subscription rule create --resource-group myresourcegroup \
 
 В отличие от всех этих, наиболее распространенных механизмов репликации для обмена сообщениями и событий, таких как [MirrorMaker](http://kafka.apache.org/documentation/#basic_ops_mirror_maker) Apache Kafka, требуется предоставить среду размещения и самостоятельно масштабировать модуль репликации. Это включает в себя настройку и интеграцию функций безопасности и сети, а также упрощает поток данных мониторинга, а затем не имеет возможности внедрять в последовательность пользовательские задачи репликации. 
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье мы изучили ряд шаблонов Федерации и объяснили роль функций Azure в качестве среды выполнения репликации событий и обмена сообщениями в Azure. 
 

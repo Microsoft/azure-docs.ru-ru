@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 01/25/2019
 ms.custom: devx-track-python
 ms.openlocfilehash: 197423670ffe05f15fdc5bfd351efdfba33b53cd
-ms.sourcegitcommit: 5b93010b69895f146b5afd637a42f17d780c165b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96533780"
 ---
 # <a name="create-your-first-service-fabric-container-application-on-windows"></a>Создание первого контейнера-приложения Service Fabric в Windows
@@ -25,7 +25,7 @@ ms.locfileid: "96533780"
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Компьютер для разработки, на котором установлено ПО, перечисленное ниже.
   * Visual Studio 2015 или Visual Studio 2019.
@@ -193,7 +193,7 @@ docker push myregistry.azurecr.io/samples/helloworldapp
 ## <a name="create-the-containerized-service-in-visual-studio"></a>Создание контейнерной службы в Visual Studio
 Пакет SDK и средства для Service Fabric предоставляют шаблон службы для создания контейнерного приложения.
 
-1. Запустите Visual Studio. Выберите **File** > **New** > **Project** ( Файл > Создать > Проект).
+1. Запустите среду Visual Studio. Выберите **File** > **New** > **Project** ( Файл > Создать > Проект).
 2. Выберите **Приложение Service Fabric**, назовите его MyFirstContainer и нажмите кнопку **ОК**.
 3. В списке **шаблонов служб** выберите значение **Container** (Контейнер).
 4. В поле **Имя образа** введите myregistry.azurecr.io/samples/helloworldapp — это образ, который вы отправили в репозиторий контейнера.

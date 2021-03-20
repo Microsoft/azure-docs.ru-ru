@@ -9,10 +9,10 @@ ms.date: 02/25/2020
 ms.author: normesta
 ms.reviewer: stewu
 ms.openlocfilehash: e3997fc215637175165402a926bffc6ac8d02771
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "77914864"
 ---
 # <a name="multi-protocol-access-on-azure-data-lake-storage"></a>Multi-protocol access on Azure Data Lake Storage (preview) (Доступ с использованием нескольких протоколов на Azure Data Lake Storage (предварительная версия))
@@ -40,7 +40,7 @@ API-интерфейсы больших двоичных объектов и API
 
 Существующие средства и приложения, использующие API больших двоичных объектов, получают эти преимущества автоматически. Разработчикам не придется изменять их. Data Lake Storage 2-го поколения постоянно применяет списки ACL уровня каталога и файлов независимо от протокола, используемого инструментами и приложениями для доступа к данным. 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функции хранилища BLOB-объектов, доступные в Azure Data Lake Storage 2-го поколения](data-lake-storage-supported-blob-storage-features.md)
 - [Службы Azure, поддерживающие Azure Data Lake Storage 2-го поколения](data-lake-storage-supported-azure-services.md)

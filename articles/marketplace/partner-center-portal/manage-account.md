@@ -8,10 +8,10 @@ author: parthpandyaMSFT
 ms.author: parthp
 ms.date: 11/02/2020
 ms.openlocfilehash: cc853285e193dd3ac4e348525b8bf0db9f8cb023
-ms.sourcegitcommit: 5b93010b69895f146b5afd637a42f17d780c165b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96533950"
 ---
 # <a name="manage-your-commercial-marketplace-account-in-partner-center"></a>Управление коммерческой учетной записью Marketplace в Центре партнеров

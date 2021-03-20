@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 6/08/2018
 ms.author: pepogors
 ms.openlocfilehash: 3de97bc277195dff2daf5868c0eb9aec5d6e27c0
-ms.sourcegitcommit: 5b93010b69895f146b5afd637a42f17d780c165b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96534035"
 ---
 # <a name="create-service-fabric-container-running-apache-tomcat-server-on-linux"></a>Создание контейнера Service Fabric в Linux с сервером Apache Tomcat
@@ -16,7 +16,7 @@ Apache Tomcat — это популярная реализация технол�
 
 Дополнительные сведения об Apache Tomcat см. на [главной странице Apache Tomcat](https://tomcat.apache.org/). 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 * Компьютер для разработки, на котором установлено ПО, перечисленное ниже.
   * [Service Fabric пакет SDK и средства](service-fabric-get-started-linux.md).
   * [Предварительные выпуски](https://docs.docker.com/engine/installation/#prior-releases). 

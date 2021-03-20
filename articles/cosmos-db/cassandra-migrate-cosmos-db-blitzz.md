@@ -9,10 +9,10 @@ ms.date: 08/21/2019
 ms.author: sngun
 ms.reviewer: sngun
 ms.openlocfilehash: c26d21e74e9808fe65890b7f4eba31ee742552a4
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93339994"
 ---
 # <a name="migrate-data-from-cassandra-to-azure-cosmos-db-cassandra-api-account-using-blitzz"></a>Перенос данных из Cassandra в учетную запись API Cassandra Azure Cosmos DB с помощью Блитзз
@@ -143,7 +143,7 @@ API Cassandra в Azure Cosmos DB стали отличным выбором дл
 
 Дополнительные сведения о переносе данных в назначение, перенос в режиме реального времени см. в [блитзз Репликант Demo](https://www.youtube.com/watch?v=fsUhF9LUZmM).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Обеспечение необходимой пропускной способности для контейнеров и баз данных](set-throughput.md) 
 * [Рекомендации по использованию ключа секции](partitioning-overview.md#choose-partitionkey)

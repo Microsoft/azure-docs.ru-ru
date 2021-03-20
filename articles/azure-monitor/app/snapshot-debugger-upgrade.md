@@ -7,10 +7,10 @@ ms.author: pharring
 ms.date: 03/28/2019
 ms.reviewer: mbullwin
 ms.openlocfilehash: 6991db6055ca8556adff67f194bac0f4aa04cb06
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "77671398"
 ---
 # <a name="upgrading-the-snapshot-debugger"></a>Обновление Snapshot Debugger
@@ -50,7 +50,7 @@ ms.locfileid: "77671398"
 
    ![Снимок экрана страницы настройки службы приложений Application Insights с кнопкой "Применить", выделенной красным цветом](./media/snapshot-debugger-upgrade/view-application-insights-data.png)
 
-8. После нажатия кнопки **Применить**вам будет предложено подтвердить изменения.
+8. После нажатия кнопки **Применить** вам будет предложено подтвердить изменения.
 
     > [!NOTE]
     > Сайт будет перезапущен в рамках процесса обновления.

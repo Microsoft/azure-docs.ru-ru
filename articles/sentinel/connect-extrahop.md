@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 12/30/2019
 ms.author: yelevin
 ms.openlocfilehash: 8d82d8c5a76c34875e9a4aae22c547aec897c18a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "77588303"
 ---
 # <a name="connect-extrahop-revealx"></a>Подключение ExtraHop Reveal(x)
@@ -34,7 +34,7 @@ ms.locfileid: "77588303"
 
 ## <a name="connect-azure-sentinel-to-extrahop-revealx"></a>Подключение метки Azure к Екстрахоп раскрытия (x)
 
-1. В портал Azure перейдите к **Azure Sentinel**  >  **соединителям данных** Azure Sentinel и выберите соединитель **раскрытия (x) екстрахоп** .
+1. В портал Azure перейдите к   >  **соединителям данных** Azure Sentinel и выберите соединитель **раскрытия (x) екстрахоп** .
 
 2. Выберите **открыть страницу соединителя**.
 

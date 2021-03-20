@@ -8,10 +8,10 @@ author: mingshen-ms
 ms.author: mingshen
 ms.date: 09/23/2020
 ms.openlocfilehash: 374cc3398d1037b19ceddcbdaafd333f643e44ff
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91261164"
 ---
 # <a name="api-prerequisites"></a>Предварительные требования для API
@@ -29,6 +29,6 @@ ms.locfileid: "91261164"
 
 Теперь, когда вы создали субъект-службу в клиенте, вы можете добавить его в качестве пользователя в учетную запись портала центра партнеров. Как и пользователь, субъект-служба может быть владельцем или участником на портале. Дополнительные сведения см. в разделе **дальнейшие действия** ниже.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 См. раздел [Управление приложениями Azure AD](partner-center-portal/manage-account.md#manage-azure-ad-applications).

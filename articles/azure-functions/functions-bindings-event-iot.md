@@ -6,10 +6,10 @@ ms.topic: reference
 ms.date: 02/21/2020
 ms.author: cshoe
 ms.openlocfilehash: 1c25543b16c3486a8f6a445427346382faaaa09a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "77586141"
 ---
 # <a name="azure-iot-hub-bindings-for-azure-functions"></a>Привязки центра Интернета вещей Azure для функций Azure
@@ -19,7 +19,7 @@ ms.locfileid: "77586141"
 > [!IMPORTANT]
 > Хотя в следующих примерах кода используется API концентратора событий, заданный синтаксис применим к функциям центра Интернета вещей.
 
-| Действие | Type |
+| Действие | Тип |
 |--------|------|
 | Реагирование на события, отправляемые в поток событий центра Интернета вещей. | [Триггер](./functions-bindings-event-iot-trigger.md) |
 | Запись событий в поток событий Интернета вещей | [Выходная привязка](./functions-bindings-event-iot-output.md) |

@@ -5,10 +5,10 @@ ms.reviewer: kasinh
 ms.topic: conceptual
 ms.date: 01/31/2019
 ms.openlocfilehash: ee89af311619922fa6ca585381d70ca66955f36a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91271653"
 ---
 # <a name="back-up-an-exchange-server-to-azure-backup-with-system-center-2012-r2-dpm"></a>Резервное копирование Exchange Server в службу архивации Azure с помощью System Center 2012 R2 DPM
@@ -24,7 +24,7 @@ ms.locfileid: "91271653"
 >
 >
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем продолжить, выполните все [предварительные требования](backup-azure-dpm-introduction.md#prerequisites-and-limitations) по использованию Microsoft Azure Backup для защиты рабочих нагрузок. Список предварительных требований:
 
@@ -73,7 +73,7 @@ ms.locfileid: "91271653"
    >
    >
 8. Выберите **Далее**.
-9. Выберите базу данных для **резервного**копирования, а затем нажмите кнопку **Далее**.
+9. Выберите базу данных для **резервного** копирования, а затем нажмите кнопку **Далее**.
 
    > [!NOTE]
    > Если не выбрать параметр "полная архивация" по крайней мере для одной копии базы данных DAG, журналы не будут обрезаны.
@@ -101,7 +101,7 @@ ms.locfileid: "91271653"
 
     ![Выбор политики оперативного хранения](./media/backup-azure-backup-exchange-server/specify-online-retention-policy.png)
 18. Подтвердите параметры и нажмите кнопку **создать группу**.
-19. Выберите **Закрыть**.
+19. Щелкните **Закрыть**.
 
 ## <a name="recover-the-exchange-database"></a>Восстановление базы данных Exchange
 
@@ -120,6 +120,6 @@ ms.locfileid: "91271653"
 
     ![Выбор оперативной репликации](./media/backup-azure-backup-exchange-server/choose-online-replication.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Часто задаваемые вопросы о службе архивации Azure](backup-azure-backup-faq.md)

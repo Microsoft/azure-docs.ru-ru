@@ -7,17 +7,17 @@ ms.date: 09/03/2018
 ms.author: cshoe
 ms.custom: devx-track-csharp, devx-track-python
 ms.openlocfilehash: 4f2b890dc60cd50b5fcaefabe8d418268b738c20
-ms.sourcegitcommit: 93329b2fcdb9b4091dbd632ee031801f74beb05b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92096731"
 ---
 # <a name="azure-table-storage-bindings-for-azure-functions"></a>Привязки хранилища таблиц Azure для службы "Функции Azure"
 
 Функции Azure интегрируются с [хранилищем Azure](../storage/index.yml) с помощью [триггеров и привязок](./functions-triggers-bindings.md). Интеграция с хранилищем таблиц позволяет создавать функции, считывающие и записывающие данные хранилища таблиц.
 
-| Действие | Тип |
+| Действие | Type |
 |---------|---------|
 | Чтение данных хранилища таблиц в функции | [Входная привязка](./functions-bindings-storage-table-input.md) |
 | Разрешение функции записи данных хранилища таблиц |[Выходная привязка](./functions-bindings-storage-table-output.md) |

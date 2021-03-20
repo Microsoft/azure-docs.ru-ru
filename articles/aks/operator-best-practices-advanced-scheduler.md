@@ -6,10 +6,10 @@ services: container-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.openlocfilehash: 1a8138b4b2fdab2cdef8d2cb4c27de8d12ef38cd
-ms.sourcegitcommit: 6172a6ae13d7062a0a5e00ff411fd363b5c38597
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97107352"
 ---
 # <a name="best-practices-for-advanced-scheduler-features-in-azure-kubernetes-service-aks"></a>Рекомендации по расширенным возможностям планировщика в службе Azure Kubernetes (AKS)
@@ -182,7 +182,7 @@ spec:
 
 Эта статья посвящена расширенным возможностям планировщика Kubernetes. Дополнительную информацию об операциях кластера в AKS см. в рекомендациях на такие темы:
 
-* [Мультитенантность и изоляция кластера][aks-best-practices-scheduler]
+* [Мультитенантность и изоляция кластеров][aks-best-practices-scheduler]
 * [Основные функции планировщика Kubernetes][aks-best-practices-scheduler]
 * [Аутентификация и авторизация][aks-best-practices-identity]
 

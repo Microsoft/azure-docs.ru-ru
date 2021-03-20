@@ -9,10 +9,10 @@ ms.service: iot-pnp
 services: iot-pnp
 ms.custom: mvc
 ms.openlocfilehash: a45efd90043ecb4d457db7ed39651f1a9b5bbd4d
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98890613"
 ---
 # <a name="iot-plug-and-play-bridge"></a>Мост для IoT Plug and Play
@@ -34,7 +34,7 @@ ms.locfileid: "98890613"
 |[Адаптер Modbus](https://github.com/Azure/iot-plug-and-play-bridge/blob/master/pnpbridge/docs/modbus_adapters.md) подключает датчики на устройстве Modbus.              |Да|Да|
 |[Адаптер MQTT](https://github.com/Azure/iot-plug-and-play-bridge/blob/master/pnpbridge/docs/mqtt_adapter.md) подключает устройства, ИСПОЛЬЗУЮЩИЕ брокер MQTT.                  |Да|Да|
 |[Адаптер сериалпнп](https://github.com/Azure/iot-plug-and-play-bridge/blob/master/serialpnp/Readme.md) подключает устройства, взаимодействующие по последовательному подключению.               |Да|Да|
-|[Периферийные устройства Windows USB](https://github.com/Azure/iot-plug-and-play-bridge/blob/master/pnpbridge/docs/coredevicehealth_adapter.md) используют список классов интерфейсов устройств, поддерживаемых адаптером, для подключения устройств с указанным идентификатором оборудования.  |Да|Неприменимо|
+|[Периферийные устройства Windows USB](https://github.com/Azure/iot-plug-and-play-bridge/blob/master/pnpbridge/docs/coredevicehealth_adapter.md) используют список классов интерфейсов устройств, поддерживаемых адаптером, для подключения устройств с указанным идентификатором оборудования.  |Да|Не применимо|
 
 Дополнительные сведения о расширении моста самонастраивающийся IoT для поддержки дополнительных протоколов устройств см. в разделе [расширение моста Самонастраивающийся IOT](howto-author-pnp-bridge-adapter.md). Чтобы узнать, как создать и развернуть мост Интернета вещей самонастраивающийся, см. статью [Создание и развертывание моста Самонастраивающийся IOT](howto-build-deploy-extend-pnp-bridge.md).
 

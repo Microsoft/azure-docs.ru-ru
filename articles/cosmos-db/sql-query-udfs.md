@@ -9,10 +9,10 @@ ms.date: 04/09/2020
 ms.author: tisande
 ms.custom: devx-track-js
 ms.openlocfilehash: 98698264f0beb25a8b4f74861f1150ae889d7115
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96546345"
 ---
 # <a name="user-defined-functions-udfs-in-azure-cosmos-db"></a>Определяемые пользователем функции (UDF) в Azure Cosmos DB
@@ -58,7 +58,7 @@ API расширяет синтаксис SQL для поддержки поль
     FROM Families
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [
@@ -79,7 +79,7 @@ API расширяет синтаксис SQL для поддержки поль
     WHERE udf.REGEX_MATCH(Families.address.city, ".*eattle")
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [{
@@ -121,7 +121,7 @@ API расширяет синтаксис SQL для поддержки поль
     FROM Families f
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
      [
@@ -140,7 +140,7 @@ API расширяет синтаксис SQL для поддержки поль
 
 Как показано в предыдущих примерах, UDF интегрирует возможности языка JavaScript с API SQL. Определяемые пользователем функции предоставляют богатый программируемый интерфейс для выполнения сложной процедурной логики с помощью встроенных возможностей среды выполнения JavaScript. API SQL предоставляет аргументы для определяемых пользователем функций для каждого исходного элемента на этапе обработки текущего предложения WHERE или SELECT. Результат легко встроить в общий конвейер выполнения. В целом, UDF — это отличные средства для выполнения сложной бизнес-логики в рамках запросов.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Общие сведения об Azure Cosmos DB](introduction.md)
 - [Системные функции](sql-query-system-functions.md)
