@@ -13,10 +13,10 @@ ms.author: ryanwi
 ms.reviewer: lenalepa, sureshja, jesakowi
 ms.custom: aaddev, identityplatformtop40, scenarios:getting-started
 ms.openlocfilehash: a6a7bf24571660d8e728c1acba29af2504539a18
-ms.sourcegitcommit: 54e1d4cdff28c2fd88eca949c2190da1b09dca91
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99219966"
 ---
 # <a name="microsoft-identity-platform-best-practices-and-recommendations"></a>Рекомендации и советы по платформе удостоверений Майкрософт
@@ -30,7 +30,7 @@ ms.locfileid: "99219966"
 > [!TIP]
 > *Помощник по интеграции* в портал Azure может помочь в применении многих из этих рекомендаций и рекомендаций. Выберите любую [регистрацию приложения](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) в портал Azure, а затем выберите пункт меню **помощника по интеграции** , чтобы начать работу с помощником.
 
-## <a name="basics"></a>Основные сведения
+## <a name="basics"></a>Основы
 
 ![CheckBox ](./media/active-directory-integration-checklist/checkbox-two.svg) Прочтите и изучите [политики платформы Майкрософт](/legal/microsoft-identity-platform/terms-of-use). Убедитесь, что ваше приложение соответствует условиям, которые были разработаны для защиты пользователей и платформы.
 
@@ -38,7 +38,7 @@ ms.locfileid: "99219966"
 
 ![флажок](./media/active-directory-integration-checklist/checkbox-two.svg) Убедитесь, что сведения, связанные с учетной записью, используемой для регистрации и управления приложениями, обновлены.
 
-## <a name="branding"></a>Branding
+## <a name="branding"></a>Фирменная символика
 
 ![](./media/active-directory-integration-checklist/checkbox-two.svg)должен соответствовать [рекомендациям по фирменной символике для приложений](howto-add-branding-in-azure-ad-apps.md).
 

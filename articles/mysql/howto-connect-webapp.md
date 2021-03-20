@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 3/18/2020
 ms.openlocfilehash: 6355afe6ce5decbed029db4536b1b1b19f5a876c
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94541510"
 ---
 # <a name="connect-an-existing-azure-app-service-to-azure-database-for-mysql-server"></a>Подключение существующей службы приложений Azure к базе данных Azure для сервера MySQL
@@ -24,11 +24,11 @@ ms.locfileid: "94541510"
 ## <a name="solution-1---allow-azure-services"></a>Решение 1: разрешение доступа к службам Azure
 База данных Azure для MySQL обеспечивает безопасность доступа, используя брандмауэр для защиты данных. При настройке подключения из службы приложений Azure к базе данных Azure для сервера MySQL имейте в виду, что исходящие IP-адреса службы приложений являются динамическими по своей природе. Если выбрать параметр "Разрешить доступ к службам Azure", служба приложений сможет подключаться к серверу MySQL.
 
-1. В колонке сервера MySQL в разделе "Параметры" щелкните **Безопасность подключения** , чтобы открыть колонку "Безопасность подключения" базы данных Azure для MySQL.
+1. В колонке сервера MySQL в разделе "Параметры" щелкните **Безопасность подключения**, чтобы открыть колонку "Безопасность подключения" базы данных Azure для MySQL.
 
    :::image type="content" source="./media/howto-connect-webapp/1-connection-security.png" alt-text="Портал Azure: щелчок пункта &quot;Безопасность подключения&quot;":::
 
-2. Выберите значение **ВКЛ.** для параметра **Разрешить доступ к службам Azure** , а затем нажмите кнопку **Сохранить**.
+2. Выберите значение **ВКЛ.** для параметра **Разрешить доступ к службам Azure**, а затем нажмите кнопку **Сохранить**.
    :::image type="content" source="./media/howto-connect-webapp/allow-azure.png" alt-text="Портал Azure: параметр &quot;Разрешить доступ к службам Azure&quot;":::
 
 ## <a name="solution-2---create-a-firewall-rule-to-explicitly-allow-outbound-ips"></a>Решение 2. Создание правила брандмауэра, явно разрешающего исходящие IP-адреса

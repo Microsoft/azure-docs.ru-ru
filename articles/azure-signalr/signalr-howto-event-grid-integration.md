@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/13/2019
 ms.author: chenyl
 ms.openlocfilehash: 84b83c1dd541418c446a89a6f51be668cb41e54e
-ms.sourcegitcommit: 04fb3a2b272d4bbc43de5b4dbceda9d4c9701310
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94562650"
 ---
 # <a name="how-to-send-events-from-azure-signalr-service-to-event-grid"></a>How to send events from Azure SignalR Service to Event Grid (Отправка событий из службы Azure SignalR в службу "Сетка событий")
@@ -94,7 +94,7 @@ az deployment group create \
 
 ## <a name="subscribe-to-registry-events"></a>Подписка на события реестра
 
-Подпишитесь на *раздел* , чтобы определить в Сетке событий Azure, какие события необходимо отслеживать и куда их отправлять. Следующая команда [AZ eventgrid Event-Subscription создает][az-eventgrid-event-subscription-create] подписку на созданную службу Azure SignalR и указывает URL-адрес вашего веб приложения в качестве конечной точки, в которую он должен отправить события. Переменные среды, которые вы заполнили в предыдущих разделах, используются здесь повторно, поэтому никаких изменений не требуется.
+Подпишитесь на *раздел*, чтобы определить в Сетке событий Azure, какие события необходимо отслеживать и куда их отправлять. Следующая команда [AZ eventgrid Event-Subscription создает][az-eventgrid-event-subscription-create] подписку на созданную службу Azure SignalR и указывает URL-адрес вашего веб приложения в качестве конечной точки, в которую он должен отправить события. Переменные среды, которые вы заполнили в предыдущих разделах, используются здесь повторно, поэтому никаких изменений не требуется.
 
 ```azurecli-interactive
 SIGNALR_SERVICE_ID=$(az signalr show --resource-group $RESOURCE_GROUP_NAME --name $SIGNALR_NAME --query id --output tsv)

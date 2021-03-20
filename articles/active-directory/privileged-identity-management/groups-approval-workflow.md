@@ -16,10 +16,10 @@ ms.author: curtand
 ms.custom: pim
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0a3b6dad33ce678478a201dc8b7b612f4b8507c0
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91536993"
 ---
 # <a name="approve-activation-requests-for-privileged-access-group-members-and-owners-preview"></a>Утверждение запросов на активацию для членов группы привилегированного доступа и владельцев (Предварительная версия)
@@ -73,7 +73,7 @@ ms.locfileid: "91536993"
 >[!Note]
 >Администратор, который считает, что одобренный пользователь не должен быть активным, может удалить назначение активной группы в управление привилегированными пользователями. Хотя администраторы ресурсов не получают уведомления о ожидающих запросах, если они не являются утверждающими, они могут просматривать и отменять ожидающие запросы для всех пользователей, просматривая ожидающие запросы в управление привилегированными пользователями.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Расширение или продление назначения групп в управление привилегированными пользователями](pim-resource-roles-renew-extend.md)
 - [Уведомления по электронной почте в управление привилегированными пользователями](pim-email-notifications.md)

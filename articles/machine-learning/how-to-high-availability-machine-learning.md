@@ -11,10 +11,10 @@ author: jhirono
 ms.reviewer: larryfr
 ms.date: 09/16/2020
 ms.openlocfilehash: 7a1a63893e6e2988fc5f21e84f21c74315d856b4
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93325476"
 ---
 # <a name="increase-azure-machine-learning-resiliency"></a>Повышение устойчивости Машинное обучение Azure
@@ -32,15 +32,15 @@ ms.locfileid: "93325476"
 
 Службы Azure включают:
 
-* **Инфраструктура машинное обучение Azure** : среда, управляемая Майкрософт, для рабочей области машинное обучение Azure.
+* **Инфраструктура машинное обучение Azure**: среда, управляемая Майкрософт, для рабочей области машинное обучение Azure.
 
-* **Связанные ресурсы** : ресурсы, подготовленные в подписке во время создания рабочей области машинное обучение Azure. К этим ресурсам относятся служба хранилища Azure, Azure Key Vault, реестр контейнеров Azure и Application Insights. Вы несете ответственность за настройку параметров высокого уровня доступности для этих ресурсов.
+* **Связанные ресурсы**: ресурсы, подготовленные в подписке во время создания рабочей области машинное обучение Azure. К этим ресурсам относятся служба хранилища Azure, Azure Key Vault, реестр контейнеров Azure и Application Insights. Вы несете ответственность за настройку параметров высокого уровня доступности для этих ресурсов.
   * Хранилище по умолчанию содержит такие данные, как модель, данные журнала обучения и набор данных.
   * Key Vault имеет учетные данные для хранилища Azure, реестра контейнеров и хранилищ данных.
   * В реестре контейнеров есть образ DOCKER для обучения и изучения сред.
   * Application Insights предназначен для мониторинга Машинное обучение Azure.
 
-* **Ресурсы вычислений** : ресурсы, создаваемые после развертывания рабочей области. Например, вы можете создать вычислительный экземпляр или вычислительный кластер для обучения модели Машинное обучение.
+* **Ресурсы вычислений**: ресурсы, создаваемые после развертывания рабочей области. Например, вы можете создать вычислительный экземпляр или вычислительный кластер для обучения модели Машинное обучение.
   * Вычислительный экземпляр и вычислительный кластер: среды разработки моделей, управляемые корпорацией Майкрософт.
   * Другие ресурсы: вычислительные ресурсы Майкрософт, которые можно подключить к Машинное обучение Azure, например службу Azure Kubernetes Service (AKS), Azure Databricks, экземпляры контейнеров Azure и Azure HDInsight. Вы несете ответственность за настройку параметров высокого уровня доступности для этих ресурсов.
 
@@ -72,29 +72,29 @@ ms.locfileid: "93325476"
 Обязательно настройте параметры высокого уровня доступности для каждого ресурса, обратившись к следующей документации:
 
 * Служба **хранилища Azure**. сведения о настройке параметров высокого уровня доступности см. в статье [избыточность службы хранилища Azure](../storage/common/storage-redundancy.md).
-* **Key Vault** : Key Vault обеспечивает высокий уровень доступности по умолчанию и не требует вмешательства пользователя.  См. раздел [доступность Azure Key Vault и избыточность](../key-vault/general/disaster-recovery-guidance.md).
-* **Реестр контейнеров** : выберите параметр реестра Premium для георепликации. См. [раздел Георепликация в реестре контейнеров Azure](../container-registry/container-registry-geo-replication.md).
-* **Application Insights** : Application Insights не предоставляет параметры высокого уровня доступности. Сведения об изменении срока хранения данных и сведений см. [в разделе Сбор данных, хранение и хранение в Application Insights](../azure-monitor/app/data-retention-privacy.md#how-long-is-the-data-kept).
+* **Key Vault**: Key Vault обеспечивает высокий уровень доступности по умолчанию и не требует вмешательства пользователя.  См. раздел [доступность Azure Key Vault и избыточность](../key-vault/general/disaster-recovery-guidance.md).
+* **Реестр контейнеров**: выберите параметр реестра Premium для георепликации. См. [раздел Георепликация в реестре контейнеров Azure](../container-registry/container-registry-geo-replication.md).
+* **Application Insights**: Application Insights не предоставляет параметры высокого уровня доступности. Сведения об изменении срока хранения данных и сведений см. [в разделе Сбор данных, хранение и хранение в Application Insights](../azure-monitor/app/data-retention-privacy.md#how-long-is-the-data-kept).
 
 ## <a name="compute-resources"></a>Вычислительные ресурсы
 
 Обязательно настройте параметры высокого уровня доступности для каждого ресурса, обратившись к следующей документации:
 
 * **Служба Kubernetes Azure**. Ознакомьтесь с [рекомендациями по обеспечению непрерывности бизнес-процессов и аварийному восстановлению в службе KUBERNETES Azure (AKS)](../aks/operator-best-practices-multi-region.md) и [Создайте кластер Azure Kubernetes Service (AKS), использующий зоны доступности](../aks/availability-zones.md). Если кластер AKS был создан с помощью Машинное обучение Azure Studio, пакета SDK или интерфейса командной строки, высокий уровень доступности в разных регионах не поддерживается.
-* **Azure Databricks** : см. раздел [региональные аварийное восстановление для Azure Databricks кластеров](/azure/databricks/scenarios/howto-regional-disaster-recovery).
-* **Экземпляры контейнеров** : Orchestrator отвечает за отработку отказа. См. раздел [экземпляры контейнеров Azure и оркестрации контейнеров](../container-instances/container-instances-orchestrator-relationship.md).
+* **Azure Databricks**: см. раздел [региональные аварийное восстановление для Azure Databricks кластеров](/azure/databricks/scenarios/howto-regional-disaster-recovery).
+* **Экземпляры контейнеров**: Orchestrator отвечает за отработку отказа. См. раздел [экземпляры контейнеров Azure и оркестрации контейнеров](../container-instances/container-instances-orchestrator-relationship.md).
 * **Hdinsight**. см. раздел [службы высокого уровня доступности, поддерживаемые Azure HDInsight](../hdinsight/hdinsight-high-availability-components.md).
 
 ## <a name="additional-data-stores"></a>Дополнительные хранилища данных
 
 Обязательно настройте параметры высокого уровня доступности для каждого ресурса, обратившись к следующей документации:
 
-* **Контейнер больших двоичных объектов Azure/файлы Azure/Data Lake Storage 2-го поколения** : то же, что и хранилище по умолчанию.
+* **Контейнер больших двоичных объектов Azure/файлы Azure/Data Lake Storage 2-го поколения**: то же, что и хранилище по умолчанию.
 * **Data Lake Storage 1-го поколения**. см. раздел [руководство по обеспечению высокого уровня доступности и аварийного восстановления для Data Lake Storage 1-го поколения](../data-lake-store/data-lake-store-disaster-recovery-guidance.md).
 * **База данных SQL**. см. статью [высокий уровень доступности для базы данных sql Azure и управляемый экземпляр SQL](../azure-sql/database/high-availability-sla.md).
-* **База данных Azure для PostgreSQL** : см. раздел [Основные понятия высокой доступности в базе данных Azure для PostgreSQL-Single Server](../postgresql/concepts-high-availability.md).
+* **База данных Azure для PostgreSQL**: см. раздел [Основные понятия высокой доступности в базе данных Azure для PostgreSQL-Single Server](../postgresql/concepts-high-availability.md).
 * **База данных Azure для MySQL**. см. статью [сведения о непрерывности бизнес-процессов в базе данных Azure для MySQL](../mysql/concepts-business-continuity.md).
-* **Azure Databricks файловая система** : см. раздел [региональные аварийное восстановление для Azure Databricks кластеров](/azure/databricks/scenarios/howto-regional-disaster-recovery).
+* **Azure Databricks файловая система**: см. раздел [региональные аварийное восстановление для Azure Databricks кластеров](/azure/databricks/scenarios/howto-regional-disaster-recovery).
 
 ## <a name="azure-cosmos-db"></a>Azure Cosmos DB
 

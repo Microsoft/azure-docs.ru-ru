@@ -10,10 +10,10 @@ ms.author: sourabha
 ms.reviewer: sstein
 ms.date: 09/22/2020
 ms.openlocfilehash: 56b9f06547f737bc05d573f98ce1dbac2ba48758
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90937625"
 ---
 # <a name="high-availability-for-azure-sql-edge-containers"></a>Высокий уровень доступности для контейнеров Azure SQL
@@ -40,7 +40,7 @@ Kubernetes 1,6 и более поздней версии поддерживаю�
 
 Сведения о создании контейнера в Kubernetes см. [в статье Развертывание контейнера ребра Azure SQL в Kubernetes](deploy-Kubernetes.md)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы развернуть контейнеры Azure SQL в службе Azure Kubernetes (AKS), см. следующие статьи:
 - [Развертывание контейнера Azure SQL в Kubernetes](deploy-Kubernetes.md)

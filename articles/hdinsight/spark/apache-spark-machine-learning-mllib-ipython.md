@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive,hdiseo17may2017,seoapr2020, devx-track-python
 ms.date: 04/27/2020
 ms.openlocfilehash: d2054058bb00b0801aa1c3694c73b6a2edb46c80
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98930032"
 ---
 # <a name="use-apache-spark-mllib-to-build-a-machine-learning-application-and-analyze-a-dataset"></a>Использование Apache Spark MLlib для создания приложения машинного обучения и анализа набора данных
@@ -346,7 +346,7 @@ model = pipeline.fit(labeledData)
     plt.axis('equal')
     ```
 
-    Вы должны увидеть следующий результат:
+    Вы должны увидеть следующий результат.
 
     ![Выходные данные приложения машинного обучения Spark — процентные доли непройденных проверок пищи.](./media/apache-spark-machine-learning-mllib-ipython/spark-machine-learning-result-output-2.png "Выходные данные результатов машинного обучения Spark")
 

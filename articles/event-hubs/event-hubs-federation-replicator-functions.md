@@ -4,10 +4,10 @@ description: В этой статье приводятся общие сведе
 ms.topic: article
 ms.date: 12/01/2020
 ms.openlocfilehash: a65815c7da400af8b5b6d46358e6bca6edbd7543
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97663699"
 ---
 # <a name="event-replication-tasks-and-applications-with-azure-functions"></a>Задачи и приложения репликации событий с помощью функций Azure

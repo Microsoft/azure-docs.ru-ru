@@ -13,10 +13,10 @@ ms.date: 08/03/2018
 ms.author: curtand
 ms.reviewer: jairoc
 ms.openlocfilehash: efb3ee24add847baf8264eccdf71278be5ee9496
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91536976"
 ---
 # <a name="join-your-work-device-to-your-organizations-network"></a>Присоединения рабочего устройства к сети организации
@@ -61,7 +61,7 @@ ms.locfileid: "91536976"
 
     ![Пункт "Учетные записи" в окне параметров](./media/user-help-join-device-on-network/join-device-settings-accounts.png)
 
-2. Выберите **доступ к рабочей или учебной**учетной записи и убедитесь, что вы видите текст с сообщением о **подключении к *\<your_organization>* Azure AD**.
+2. Выберите **доступ к рабочей или учебной** учетной записи и убедитесь, что вы видите текст с сообщением о **подключении к *\<your_organization>* Azure AD**.
 
     ![Снимок экрана с выбранным окном "доступ к рабочей или учебной организации" с выбранной учетной записью "подключено к Azure AD".](./media/user-help-join-device-on-network/join-device-oobe-verify.png)
 
@@ -106,7 +106,7 @@ ms.locfileid: "91536976"
 
     ![Пункт "Учетные записи" в окне параметров](./media/user-help-join-device-on-network/join-device-settings-accounts.png)
 
-2. Выберите **доступ к рабочей или учебной**учетной записи и убедитесь, что вы видите текст с сообщением о **подключении к *\<your_organization>* Azure AD**.
+2. Выберите **доступ к рабочей или учебной** учетной записи и убедитесь, что вы видите текст с сообщением о **подключении к *\<your_organization>* Azure AD**.
 
     ![Окно доступа к учетной записи места работы или учебного заведения с подключенной учетной записью Contoso](./media/user-help-join-device-on-network/join-device-setup-verify.png)
 

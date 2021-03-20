@@ -7,10 +7,10 @@ ms.service: mariadb
 ms.topic: how-to
 ms.date: 3/18/2020
 ms.openlocfilehash: 689e830d2486420be8d551d1f88dccba8d982428
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "100593060"
 ---
 # <a name="use-the-azure-portal-to-set-up-alerts-on-metrics-for-azure-database-for-mariadb"></a>Настройка оповещений на основе метрик для Базы данных Azure для MariaDB на портале Azure
@@ -84,6 +84,6 @@ ms.locfileid: "100593060"
 * **отключить** или **включить** его, если нужно временно остановить или возобновить получение уведомлений.
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте больше о [настройке веб-перехватчиков webhook в оповещениях](../azure-monitor/alerts/alerts-webhooks.md).
 * Прочитайте [обзор сбора метрики](../azure-monitor/data-platform.md) и узнайте, как можно обеспечить, чтобы служба была доступна и отвечала на запросы.

@@ -8,17 +8,17 @@ ms.topic: how-to
 ms.date: 11/17/2020
 ms.custom: devx-track-java
 ms.openlocfilehash: 6c22d1bae4f1d116aa52846880498c7c2a425174
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101738724"
 ---
 # <a name="expose-applications-to-the-internet-using-application-gateway-and-azure-firewall"></a>Предоставление доступа к приложениям через Интернет с помощью шлюза приложений и брандмауэра Azure
 
 В этом документе объясняется, как предоставить приложениям доступ к Интернету с помощью шлюза приложений и брандмауэра Azure. При развертывании экземпляра облачной службы Azure весны в виртуальной сети приложения в экземпляре службы доступны только в частной сети. Чтобы сделать приложения доступными в Интернете, необходимо интегрировать его со **шлюзом приложений Azure** и, при необходимости, с **брандмауэром Azure**.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - [Azure CLI версии 2.0.4 или более поздней](/cli/azure/install-azure-cli).
 

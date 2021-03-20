@@ -12,10 +12,10 @@ ms.author: sethm
 ms.reviewer: thsomasu
 ms.lastreviewed: 03/25/2019
 ms.openlocfilehash: 62d73a23fff3bd15d873a579d451b2f91509b7fe
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87758736"
 ---
 # <a name="configure-windows-push-notification-service-settings-in-the-azure-portal"></a>Настройка параметров службы push-уведомлений Windows в портал Azure
@@ -36,6 +36,6 @@ ms.locfileid: "87758736"
 
    ![Снимок экрана, на котором показаны поля "ИД безопасности пакета" и "Ключ безопасности"](./media/notification-hubs-windows-store-dotnet-get-started/notification-hub-configure-wns.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Пошаговые инструкции по отправке push-уведомлений для универсальная платформа Windows приложений с помощью центров уведомлений Azure и службы push-уведомлений Windows (WNS) см. в статье [Отправка уведомлений в приложения UWP с помощью концентраторов уведомлений Azure](notification-hubs-windows-store-dotnet-get-started-wns-push-notification.md).

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 08/28/2020
 ms.author: egeaney
 ms.openlocfilehash: 2dcfff005eaaac034f5fed13b6d4d18e20d2afae
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100524562"
 ---
 # <a name="language-understanding-service-encryption-of-data-at-rest"></a>Распознавание речи шифрование неактивных данных в службе
@@ -83,7 +83,7 @@ ms.locfileid: "100524562"
 
 Чтобы отозвать доступ к ключам, управляемым клиентом, используйте PowerShell или Azure CLI. Дополнительные сведения см. в разделе [Azure Key Vault PowerShell](/powershell/module/az.keyvault//) или [Azure Key Vault CLI](/cli/azure/keyvault). Отзыв доступа позволяет блокировать доступ ко всем данным в Cognitive Services ресурсе, так как ключ шифрования недоступен для Cognitive Services.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Форма запроса ключа Customer-Managed службы LUIS](https://aka.ms/cogsvc-cmk)
 * [Дополнительные сведения об Azure Key Vault](../../key-vault/general/overview.md)

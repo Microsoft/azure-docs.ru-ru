@@ -9,10 +9,10 @@ ms.date: 10/05/2020
 ms.author: duau
 ms.custom: seodec18
 ms.openlocfilehash: 2b75e6e0a8b79f374900e6cb2dfc49680d3d0190
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101739064"
 ---
 # <a name="tutorial-configure-a-virtual-network-gateway-for-expressroute-using-powershell"></a>Руководство по Настройка шлюза виртуальной сети для ExpressRoute с помощью PowerShell
@@ -50,7 +50,7 @@ ms.locfileid: "101739064"
 | Имя шлюза | *GW* |   
 | Имя IP-адреса шлюза | *GWIP* |
 | Имя конфигурации IP-адреса шлюза | *gwipconf* |
-| Тип | *ExpressRoute* |
+| Type | *ExpressRoute* |
 | Имя общедоступного IP-адреса шлюза  | *gwpip* |
 
 > [!IMPORTANT]
