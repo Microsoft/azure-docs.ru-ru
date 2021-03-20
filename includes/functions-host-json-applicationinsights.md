@@ -8,10 +8,10 @@ ms.date: 10/19/2018
 ms.author: glenga
 ms.custom: include file
 ms.openlocfilehash: 218e98e65c7c78272f32f75a0fdb93e4d87e6948
-ms.sourcegitcommit: 419c8c8061c0ff6dc12c66ad6eda1b266d2f40bd
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92167731"
 ---
 Управляет [функцией выборки в Application Insights](../articles/azure-functions/configure-monitoring.md#configure-sampling).
@@ -29,5 +29,5 @@ ms.locfileid: "92167731"
 
 |Свойство  |По умолчанию | Описание |
 |---------|---------|---------| 
-|isEnabled|Да|Включает или отключает выборку.| 
+|isEnabled|true|Включает или отключает выборку.| 
 |maxTelemetryItemsPerSecond|5|Пороговое значение, при котором начинается выборка.| 

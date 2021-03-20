@@ -14,10 +14,10 @@ ms.custom:
 - 'Role: Cloud Development'
 - devx-track-js
 ms.openlocfilehash: c96f674b64401250d45542d0f59f13654cf37caa
-ms.sourcegitcommit: 7e97ae405c1c6c8ac63850e1b88cf9c9c82372da
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97802530"
 ---
 # <a name="connect-raspberry-pi-to-azure-iot-hub-nodejs"></a>Подключение Raspberry Pi к Центру Интернета вещей Azure (Node.js)
@@ -97,13 +97,13 @@ ms.locfileid: "97802530"
 
 1. Скачайте ОС Raspbian.
 
-   a. [Raspbian бустер с рабочим столом](https://www.raspberrypi.org/software/) (ZIP-файл).
+   а. [Raspbian бустер с рабочим столом](https://www.raspberrypi.org/software/) (ZIP-файл).
 
    b. Извлеките образ ОС Raspbian в папку на компьютере.
 
 2. Установите ОС Raspbian на карту microSD.
 
-   a. [Скачайте и установите служебную программу для записи SD Card](https://etcher.io/).
+   а. [Скачайте и установите служебную программу для записи SD Card](https://etcher.io/).
 
    b. Запустите Etcher и выберите образ Raspbian, извлеченный на шаге 1.
 

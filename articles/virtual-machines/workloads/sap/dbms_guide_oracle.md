@@ -16,10 +16,10 @@ ms.date: 01/18/2021
 ms.author: juergent
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: 29b1bcec58d6350d0f63c3fe0ce11ef99a648019
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101668979"
 ---
 # <a name="azure-virtual-machines-oracle-dbms-deployment-for-sap-workload"></a>Виртуальные машины Azure развертывание СУБД Oracle для рабочей нагрузки SAP
@@ -380,7 +380,7 @@ Oracle Database и файлы журнала повторяемых операц
 | \oracle\<SID>\origlogaB & mirrlogA | Premium или Ultra Disk | None | Не требуется. |
 | \oracle\<SID>\sapdata1...n | Premium или Ultra Disk | Только для чтения | Можно использовать для Premium |
 | \oracle\<SID>\oraarch | Standard | None | Не требуется. |
-| Домашняя страница Oracle, `saptrace` ,... | Диск ОС (Premium) | | Не требуется |
+| Домашняя страница Oracle, `saptrace` ,... | Диск ОС (Premium) | | Не требуется. |
 
 
 Выбор дисков для размещения журналов повторов в сети должен осуществляться с помощью требований операций ввода-вывода в секунду. Есть возможность хранить все табличные пространства (sapdata1...n) на одном подключенном диске, если он соответствует всем требованиям по размеру, операциям ввода-вывода в секунду и пропускной способности. 

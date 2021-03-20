@@ -16,10 +16,10 @@ ms.workload: infrastructure-services
 ms.date: 10/31/2019
 ms.author: anupand
 ms.openlocfilehash: 555c903dc3375080a8b0d006d2aac7216854c939
-ms.sourcegitcommit: 44188608edfdff861cc7e8f611694dec79b9ac7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99539304"
 ---
 # <a name="subnet-extension"></a>Расширение подсети
@@ -52,5 +52,5 @@ IP-адреса из подсети назначаются виртуальны�
 
 В следующем разделе вы найдете сведения о решениях расширения подсети, протестированных в Azure.
 
-## <a name="next-steps"></a>Следующие шаги 
+## <a name="next-steps"></a>Дальнейшие действия 
 [Расширьте подсеть в Azure с помощью решений поставщиков.](https://github.com/microsoft/Azure-LISP)

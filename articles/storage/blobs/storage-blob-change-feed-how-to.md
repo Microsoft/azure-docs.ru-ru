@@ -10,10 +10,10 @@ ms.subservice: blobs
 ms.reviewer: sadodd
 ms.custom: devx-track-csharp
 ms.openlocfilehash: f0e89fdfba852fc056cf48efd1b92daabb272cf0
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89568257"
 ---
 # <a name="process-change-feed-in-azure-blob-storage"></a>Обработка веб-канала изменений в хранилище BLOB-объектов Azure
@@ -25,7 +25,7 @@ ms.locfileid: "89568257"
 ## <a name="get-the-blob-change-feed-processor-library"></a>Получение библиотеки обработчика канала изменений больших двоичных объектов
 
 1. Откройте командное окно (например, Windows PowerShell).
-2. В каталоге проекта установите [пакет NuGet **Azure. Storage. blobs. пр** ](https://www.nuget.org/packages/Azure.Storage.Blobs.ChangeFeed/).
+2. В каталоге проекта установите [пакет NuGet **Azure. Storage. blobs. пр**](https://www.nuget.org/packages/Azure.Storage.Blobs.ChangeFeed/).
 
 ```console
 dotnet add package Azure.Storage.Blobs --version 12.5.1
@@ -214,6 +214,6 @@ public async Task<List<BlobChangeFeedEvent>> ChangeFeedBetweenDatesAsync(string 
 
 Предоставленное время начала округляется вниз до ближайшего часа, а время окончания округляется до ближайшего часа. Возможно, пользователи увидят события, произошедшие до времени начала и после времени окончания. Также возможно, что некоторые события, происходящие между временем начала и окончания, не будут отображаться. Это связано с тем, что события могут записываться в течение часа, предшествующего времени начала, или в течение часа после времени окончания.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о журналах веб-канала изменений. См. [веб-канал изменений в хранилище BLOB-объектов Azure](storage-blob-change-feed.md)

@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 09/17/2020
 ms.custom: devx-track-java
 ms.openlocfilehash: 04174b9cffb7e853dee235a4141ccda74a7847c6
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94663774"
 ---
 # <a name="how-to-identify-outbound-public-ip-addresses-in-azure-spring-cloud"></a>Определение исходящих общедоступных IP-адресов в Azure Веснного облака

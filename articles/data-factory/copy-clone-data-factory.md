@@ -8,10 +8,10 @@ ms.reviewer: maghan
 ms.topic: conceptual
 ms.date: 06/30/2020
 ms.openlocfilehash: 1ea16785502ce8a82087b79dd8e7f0014c0059fc
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100375244"
 ---
 # <a name="copy-or-clone-a-data-factory-in-azure-data-factory"></a>Копирование или клонирование фабрики данных в службе "Фабрика данных Azure"
@@ -47,6 +47,6 @@ ms.locfileid: "100375244"
 
 1. По соображениям безопасности созданный шаблон диспетчер ресурсов не будет содержать секретных сведений, например паролей для связанных служб. Поэтому необходимо предоставить учетные данные в качестве параметров развертывания. Если ввод учетных данных вручную нежелателен для ваших параметров, попробуйте получить строки подключения и пароли из Azure Key Vault. [Подробнее](store-credentials-in-key-vault.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Ознакомьтесь с руководством по созданию фабрики данных на портале Azure в статье [Создание фабрики данных с помощью пользовательского интерфейса службы "Фабрика данных Azure"](quickstart-create-data-factory-portal.md).

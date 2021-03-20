@@ -6,10 +6,10 @@ ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 07/16/2020
 ms.openlocfilehash: 8d9f54c1fcd142c77fb73c294b81bf0f11ee083f
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99557697"
 ---
 # <a name="edit-qna-pairs-in-your-knowledge-base"></a>Изменение пар QnA в базе знаний
@@ -87,7 +87,7 @@ QnA Maker позволяет управлять содержимым базы з
     |Добавьте ссылку на общедоступный URL-адрес.|CTRL + K|
     |Смайлик — Добавление из набора значков настроения.|CTRL+E|
     |Меню "Дополнительно" — "отменить"|CTRL+Z|
-    |Меню "Дополнительно" — Повтор|CTRL+Y|
+    |Меню "Дополнительно" — Повтор|CTRL + Y|
 
 1. Добавьте изображение к ответу, используя значок изображения на панели инструментов Rich Text. Редактору на месте требуется общедоступный URL-адрес изображения и альтернативный текст для изображения.
 
@@ -157,7 +157,7 @@ QnA Maker позволяет управлять содержимым базы з
 
 Закончив внесение изменений, повторно импортируйте TSV-файл со страницы **Параметры**. Это полностью заменит текущую базу знаний на импортированную.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Collaborate on a knowledge base](../index.yml) (Совместная работа над базой знаний)

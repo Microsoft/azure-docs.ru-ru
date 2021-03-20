@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.date: 09/09/2020
 ms.author: surmb
 ms.openlocfilehash: 047ce9b33836e2c23a37b1383942323d7c382485
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93397541"
 ---
 # <a name="application-gateway-request-routing-rules"></a>Правила маршрутизации запросов шлюза приложений
 
-При создании шлюза приложений с помощью портал Azure создается правило по умолчанию ( *Rule1* ). Это правило связывает прослушиватель по умолчанию ( *appGatewayHttpListener* ) с внутренним пулом по умолчанию ( *appGatewayBackendPool* ) и параметрами HTTP серверной части по умолчанию ( *appGatewayBackendHttpSettings* ). После создания шлюза можно изменить параметры правила по умолчанию или создать новые правила.
+При создании шлюза приложений с помощью портал Azure создается правило по умолчанию (*Rule1*). Это правило связывает прослушиватель по умолчанию (*appGatewayHttpListener*) с внутренним пулом по умолчанию (*appGatewayBackendPool*) и параметрами HTTP серверной части по умолчанию (*appGatewayBackendHttpSettings*). После создания шлюза можно изменить параметры правила по умолчанию или создать новые правила.
 
 ## <a name="rule-type"></a>Тип правила
 
@@ -57,7 +57,7 @@ ms.locfileid: "93397541"
 
 ### <a name="redirection-type"></a>Тип перенаправления
 
-Выберите тип нужного перенаправления: *Постоянный (301)* , *временный (307)* , *найденный (302* ) или *другой (303)*.
+Выберите тип нужного перенаправления: *Постоянный (301)*, *временный (307)*, *найденный (302*) или *другой (303)*.
 
 ### <a name="redirection-target"></a>Цель перенаправления
 
@@ -93,6 +93,6 @@ ms.locfileid: "93397541"
  - [Настройка перезаписи HTTP-заголовка](rewrite-http-headers-portal.md)
  - [Настройка переопределения URL-адресов](rewrite-url-portal.md)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Сведения о параметрах HTTP](configuration-http-settings.md)

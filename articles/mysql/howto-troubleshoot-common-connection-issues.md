@@ -8,10 +8,10 @@ ms.service: mysql
 ms.topic: troubleshooting
 ms.date: 3/18/2020
 ms.openlocfilehash: da500087aeb4ad5e2bf516c3d0ce3cceaf8396af
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96000289"
 ---
 # <a name="troubleshoot-connection-issues-to-azure-database-for-mysql"></a>Узнайте, как устранить проблемы с подключением к Базе данных Azure для MySQL
@@ -57,6 +57,6 @@ ms.locfileid: "96000289"
 3. Проверьте строку подключения и другие параметры подключения. См. статью [Как подключить приложения к базе данных Azure для MySQL](howto-connection-string.md).
 4. Проверьте работоспособность службы на панели мониторинга. Если вы считаете, что у вас есть региональный сбой, см. статью [Обзор непрерывности бизнес-процессов с помощью базы данных Azure для MySQL](concepts-business-continuity.md) , чтобы выполнить действия по восстановлению в новом регионе.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Обработка временных ошибок подключения к Базе данных Azure для MySQL](concepts-connectivity.md)

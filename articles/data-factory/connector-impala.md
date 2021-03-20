@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: jingwang
 ms.openlocfilehash: 810ee757b70550c9dbeea708266b3fec48669571
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100378576"
 ---
 # <a name="copy-data-from-impala-by-using-azure-data-factory"></a>Копирование данных из Impala с помощью Фабрики данных Azure
@@ -44,7 +44,7 @@ ms.locfileid: "100378576"
 
 Для связанной службы Impala поддерживаются следующие свойства.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства Type необходимо задать значение **Impala**. | Да |
 | host | IP-адрес или имя узла сервера Impala (192.168.222.160).  | Да |

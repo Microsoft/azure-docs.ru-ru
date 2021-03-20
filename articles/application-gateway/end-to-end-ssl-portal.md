@@ -10,13 +10,13 @@ ms.date: 11/14/2019
 ms.author: absha
 ms.custom: mvc
 ms.openlocfilehash: 6e2d1828acefacb03cc2f42193b8cd8897578b6f
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93397507"
 ---
-# <a name="configure-end-to-end-tls-by-using-application-gateway-with-the-portal"></a>Настройка сквозного протокола TLS с помощью шлюза приложений на портале
+# <a name="configure-end-to-end-tls-by-using-application-gateway-with-the-portal"></a>Настройка сквозного подключения TLS для Шлюза приложений с помощью портала
 
 В этой статье описывается, как использовать портал Azure для настройки сквозного шифрования TLS, ранее известного как шифрование SSL (SSL), с помощью SKU шлюза приложений Azure версии v1.
 
@@ -43,7 +43,7 @@ ms.locfileid: "93397507"
 
 ### <a name="add-authenticationroot-certificates-of-back-end-servers"></a>Добавление проверки подлинности и корневых сертификатов внутренних серверов
 
-1. Выберите **Все ресурсы** , а затем — **myAppGateway**.
+1. Выберите **Все ресурсы**, а затем — **myAppGateway**.
 
 2. Выберите **Параметры HTTP** в меню слева. Azure автоматически создал параметр HTTP по умолчанию **appGatewayBackendHttpSettings** при создании шлюза приложений. 
 
@@ -67,7 +67,7 @@ ms.locfileid: "93397507"
 
    ![Корневой сертификат](./media/end-to-end-ssl-portal/trustedrootcert.png)
 
-8. Нажмите кнопку **Сохранить**.
+8. Щелкните **Сохранить**.
 
 ## <a name="enable-end-to-end-tls-for-an-existing-application-gateway"></a>Включение сквозного протокола TLS для существующего шлюза приложений
 
@@ -78,7 +78,7 @@ ms.locfileid: "93397507"
 При выборе второго варианта примените действия, описанные в следующей процедуре.
 ### <a name="enable-tls-termination-in-an-existing-application-gateway"></a>Включение завершения TLS в существующем шлюзе приложений
 
-1. Выберите **Все ресурсы** , а затем — **myAppGateway**.
+1. Выберите **Все ресурсы**, а затем — **myAppGateway**.
 
 2. Выберите пункт **прослушиватели** в меню слева.
 
@@ -93,11 +93,11 @@ ms.locfileid: "93397507"
 
 6. Добавьте другие обязательные параметры для **прослушивателя** в зависимости от требований.
 
-7. Нажмите кнопку **ОК** , чтобы сохранить введенные данные.
+7. Нажмите кнопку **ОК**, чтобы сохранить введенные данные.
 
 ### <a name="add-authenticationtrusted-root-certificates-of-back-end-servers"></a>Добавление проверки подлинности и доверенных корневых сертификатов внутренних серверов
 
-1. Выберите **Все ресурсы** , а затем — **myAppGateway**.
+1. Выберите **Все ресурсы**, а затем — **myAppGateway**.
 
 2. Выберите **Параметры HTTP** в меню слева. Можно либо разместить сертификаты в существующем параметре HTTP серверной части в списке Надежные получатели, либо создать новый параметр HTTP. (На следующем шаге сертификат для параметра HTTP по умолчанию **appGatewayBackendHttpSettings** добавляется в список Надежные получатели.)
 

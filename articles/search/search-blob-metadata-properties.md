@@ -1,5 +1,5 @@
 ---
-title: Свойства метаданных содержимого
+title: Свойства метаданных контента
 titleSuffix: Azure Cognitive Search
 description: Свойства метаданных документов могут предоставлять содержимое для полей в индексе поиска или сведения, уведомляющие о поведении индексирования во время выполнения. В этой статье перечислены свойства метаданных, поддерживаемые Когнитивный поиск Azure.
 manager: nitinme
@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 02/22/2021
 ms.openlocfilehash: cbb35f596a1d32816d1a73b462bf590d9dde0d52
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101668424"
 ---
 # <a name="content-metadata-properties-used-in-azure-cognitive-search"></a>Свойства метаданных содержимого, используемые в Когнитивный поиск Azure

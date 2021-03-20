@@ -18,10 +18,10 @@ ms.date: 10/26/2018
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6bf9347d4d14e6583febd4ffaf0447e912133b80
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89660919"
 ---
 # <a name="change-signature-hash-algorithm-for-microsoft-365-relying-party-trust"></a>Изменение хэш-алгоритма подписи для отношения доверия с проверяющей стороной Microsoft 365
@@ -39,7 +39,7 @@ ms.locfileid: "89660919"
 2. Разверните узел AD FS и выберите **Relying party trusts**(Отношения доверия с проверяющей стороной).
 3. Щелкните правой кнопкой мыши Microsoft 365 отношения доверия с проверяющей стороной Azure и выберите пункт **Свойства**.
 4. Перейдите на вкладку **Дополнительно** и в поле "Secure hash algorithm" (Алгоритм SHA) выберите значение SHA256.
-5. Нажмите кнопку **ОК**.
+5. Нажмите кнопку **OK**.
 
 ![Алгоритм подписи SHA256 — MMC](./media/how-to-connect-fed-sha256-guidance/mmc.png)
 

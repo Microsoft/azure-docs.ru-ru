@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 12/15/2019
 tags: connectors
 ms.openlocfilehash: f4cad2b658547d56d00efdd5e1496110f8e4a5e6
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95999589"
 ---
 # <a name="create-monitor-and-manage-ftp-files-by-using-azure-logic-apps"></a>Создание и отслеживание FTP-файлов, а также управление ими с помощью Azure Logic Apps
@@ -153,7 +153,7 @@ ms.locfileid: "95999589"
 
    ![Выбрано свойство "ID"](./media/connectors-create-api-ftp/selected-get-file-content-id-ftp-action.png)
 
-1. Сохраните приложение логики.
+1. Сохраните приложение логики
 
 ## <a name="test-your-logic-app"></a>Тестирование приложения логики
 
@@ -167,7 +167,7 @@ ms.locfileid: "95999589"
 
    ![Предоставление сведений о действии электронной почты](./media/connectors-create-api-ftp/selected-send-email-action.png)
 
-1. Сохраните приложение логики. Чтобы запустить и активировать приложение логики, на панели инструментов выберите **выполнить**, а затем добавьте файл в папку FTP, которую теперь отслеживает приложение логики.
+1. Сохраните приложение логики Чтобы запустить и активировать приложение логики, на панели инструментов выберите **выполнить**, а затем добавьте файл в папку FTP, которую теперь отслеживает приложение логики.
 
 ## <a name="connector-reference"></a>Справочник по соединителям
 

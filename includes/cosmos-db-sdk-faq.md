@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 8/12/2020
 ms.author: sngun
 ms.openlocfilehash: 42d1e0f056457ba54e0102a4d23f42a81ebea08d
-ms.sourcegitcommit: ac7029597b54419ca13238f36f48c053a4492cb6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90068747"
 ---
 **Как меня уведомят о прекращении поддержки пакета SDK?**

@@ -6,10 +6,10 @@ ms.date: 01/17/2020
 author: macolso
 ms.author: macolso
 ms.openlocfilehash: 1b73ce5c994231a1c7b2f26ad702f2ad5880ba44
-ms.sourcegitcommit: c157b830430f9937a7fa7a3a6666dcb66caa338b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94686282"
 ---
 # <a name="encrypt-deployment-data"></a>Шифрование данных развертывания
@@ -28,7 +28,7 @@ ms.locfileid: "94686282"
 |----|----|----|
 |    **Операции шифрования и расшифровки**    |    Azure    |    Azure    |
 |    **Хранилище ключей**    |    Хранилище ключей (Майкрософт)    |    Azure Key Vault    |
-|    **Ответственность за смену ключей**    |    Microsoft    |    Customer    |
+|    **Ответственность за смену ключей**    |    Microsoft    |    Клиент    |
 |    **Доступ к ключам**    |    Только Майкрософт    |    Майкрософт, клиент    |
 
 Оставшаяся часть документа описывает шаги, необходимые для шифрования данных развертывания ACI с помощью ключа (управляемого клиентом ключа). 
@@ -59,10 +59,10 @@ az ad sp create --id 6bb8e274-af5d-4df2-98a3-4fd78b4cafd9
 
 ### <a name="create-a-key-vault-resource"></a>Создание ресурса хранилища ключей
 
-Создайте Azure Key Vault с помощью [портал Azure](../key-vault/general/quick-create-portal.md), [Azure CLI](../key-vault/general/quick-create-cli.md)или [Azure PowerShell](../key-vault/general/quick-create-powershell.md).
+Создайте хранилище ключей Azure с помощью [портала Azure](../key-vault/general/quick-create-portal.md), [Azure CLI](../key-vault/general/quick-create-cli.md) или [Azure PowerShell](../key-vault/general/quick-create-powershell.md).
 
 Для свойств хранилища ключей используйте следующие рекомендации. 
-* Name (Имя). Укажите уникальное имя. 
+* Имя: требуется уникальное имя. 
 * Подписка: Выберите подписку.
 * В разделе Группа ресурсов выберите существующую группу ресурсов либо создайте новую и введите имя группы ресурсов.
 * Выберите расположение в раскрывающемся меню "Расположение".

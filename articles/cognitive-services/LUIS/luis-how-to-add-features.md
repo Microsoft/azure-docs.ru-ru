@@ -10,10 +10,10 @@ ms.subservice: language-understanding
 ms.topic: how-to
 ms.date: 05/17/2020
 ms.openlocfilehash: 33435d2367b92f312d41f0e32fdbb3a93d59a9fd
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95999932"
 ---
 # <a name="use-features-to-boost-signal-of-word-list"></a>Использование функций для повышения сигнала списка слов
@@ -65,6 +65,6 @@ ms.locfileid: "95999932"
 
 Чтобы добавить сущность в качестве функции в другую сущность, можно добавить эту функцию на странице сведений о намерениях с помощью [палитры сущностей](label-entity-example-utterance.md#adding-entity-as-a-feature-from-the-entity-palette) или [Добавить эту функцию](luis-how-to-add-entities.md#add-a-feature-to-a-machine-learned-entity) на странице сведений о сущности.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 После добавления, изменения, удаления или деактивации функции выполните [обучение и тестирование приложения](luis-interactive-test.md) еще раз, чтобы узнать, не улучшилась ли производительность.

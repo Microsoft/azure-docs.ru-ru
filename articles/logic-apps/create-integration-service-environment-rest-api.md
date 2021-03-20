@@ -7,10 +7,10 @@ ms.reviewer: rarayudu, logicappspm
 ms.topic: conceptual
 ms.date: 02/03/2021
 ms.openlocfilehash: d4500229800fa5d1743779b29927637777647e47
-ms.sourcegitcommit: 5b926f173fe52f92fcd882d86707df8315b28667
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99550663"
 ---
 # <a name="create-an-integration-service-environment-ise-by-using-the-logic-apps-rest-api"></a>Создание среды службы интеграции (ISE) с помощью REST API Logic Apps 
@@ -25,7 +25,7 @@ ms.locfileid: "99550663"
 * [Создание интегрированной среды сценариев с помощью образца шаблона быстрого запуска Azure Resource Manager](https://github.com/Azure/azure-quickstart-templates/tree/master/201-integration-service-environment)
 * [Создание интегрированной среды сценариев, поддерживающей использование управляемых клиентом ключей для шифрования неактивных данных](customer-managed-keys-integration-service-environment.md)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Те же [условия](../logic-apps/connect-virtual-network-vnet-isolated-environment.md#prerequisites) и [требования к доступу](../logic-apps/connect-virtual-network-vnet-isolated-environment.md#enable-access) , что и при создании интегрированной среды сценариев в портал Azure
 
@@ -65,7 +65,7 @@ ms.locfileid: "99550663"
 
 <a name="request-body"></a>
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите определение ресурса для использования при создании интегрированной среды сценариев, включая сведения о дополнительных возможностях, которые необходимо включить в интегрированной среде сценариев, например:
 

@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 09/14/2020
 ms.openlocfilehash: 78395873457f9fe53d45dfbfd94aa9ccdccd614d
-ms.sourcegitcommit: 3bcce2e26935f523226ea269f034e0d75aa6693a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92485466"
 ---
 # <a name="postgresql-extensions-in-azure-database-for-postgresql---single-server"></a>Расширения PostgreSQL в Базе данных Azure для PostgreSQL — один сервер
@@ -36,13 +36,13 @@ PostgreSQL предоставляет возможность расширить 
 > |[Куба](https://www.postgresql.org/docs/11/cube.html)                         | 1.4             | тип данных для многомерных кубов|
 > |[dblink](https://www.postgresql.org/docs/11/dblink.html)                       | 1.2             | подключение к другим базам данных PostgreSQL из базы данных|
 > |[dict_int](https://www.postgresql.org/docs/11/dict-int.html)                     | 1.0             | шаблон словаря поиска текста для целых чисел|
-> |[earthdistance](https://www.postgresql.org/docs/11/earthdistance.html)                | 1.1             | Вычислите большие расстояния на поверхности земли|
-> |[fuzzystrmatch](https://www.postgresql.org/docs/11/fuzzystrmatch.html)                | 1.1             | определение сходства и расстояния между строками|
+> |[earthdistance](https://www.postgresql.org/docs/11/earthdistance.html)                | 1,1             | Вычислите большие расстояния на поверхности земли|
+> |[fuzzystrmatch](https://www.postgresql.org/docs/11/fuzzystrmatch.html)                | 1,1             | определение сходства и расстояния между строками|
 > |[hstore](https://www.postgresql.org/docs/11/hstore.html)                       | 1.5             | тип данных для хранения наборов пар (ключ, значение)|
 > |[hypopg](https://hypopg.readthedocs.io/en/latest/)                       | 1.1.2           | Гипотетические индексы для PostgreSQL|
 > |[intarray](https://www.postgresql.org/docs/11/intarray.html)                     | 1.2             | функции, операторы и поддержка индексов для 1-D массивов целых чисел|
 > |[isn](https://www.postgresql.org/docs/11/isn.html)                          | 1.2             | типы данных для международных стандартов нумерации продуктов|
-> |[ltree](https://www.postgresql.org/docs/11/ltree.html)                        | 1.1             | тип данных для иерархических структур, схожих с деревом|
+> |[ltree](https://www.postgresql.org/docs/11/ltree.html)                        | 1,1             | тип данных для иерархических структур, схожих с деревом|
 > |[орафце](https://github.com/orafce/orafce)                       | 3,7             | Функции и операторы, имитирующие подмножество функций и пакетов из коммерческой RDBMS|
 > |[пгаудит](https://www.pgaudit.org/)                     | 1.3.1             | предоставляет функции аудита|
 > |[pgcrypto](https://www.postgresql.org/docs/11/pgcrypto.html)                     | 1,3             | криптографические функции|
@@ -63,8 +63,8 @@ PostgreSQL предоставляет возможность расширить 
 > |[postgres_fdw](https://www.postgresql.org/docs/11/postgres-fdw.html)                 | 1.0             | оболочка внешних данных для удаленных серверов PostgreSQL|
 > |[tablefunc](https://www.postgresql.org/docs/11/tablefunc.html)                    | 1.0             | функции, управляющие целыми таблицами, включая перекрестный|
 > |[тимескаледб](https://docs.timescale.com/latest)                    | 1.3.2             | Включает масштабируемые операции вставки и сложные запросы для данных временных рядов|
-> |[unaccent](https://www.postgresql.org/docs/11/unaccent.html)                     | 1.1             | словарь поиска текста, который удаляет диакритические знаки|
-> |[uuid-ossp](https://www.postgresql.org/docs/11/uuid-ossp.html)                    | 1.1             | создать универсальные уникальные идентификаторы (UUID)|
+> |[unaccent](https://www.postgresql.org/docs/11/unaccent.html)                     | 1,1             | словарь поиска текста, который удаляет диакритические знаки|
+> |[uuid-ossp](https://www.postgresql.org/docs/11/uuid-ossp.html)                    | 1,1             | создать универсальные уникальные идентификаторы (UUID)|
 
 ## <a name="postgres-10-extensions"></a>Расширения postgres 10 
 
@@ -82,13 +82,13 @@ PostgreSQL предоставляет возможность расширить 
 > |[Куба](https://www.postgresql.org/docs/10/cube.html)                         | 1.2             | тип данных для многомерных кубов|
 > |[dblink](https://www.postgresql.org/docs/10/dblink.html)                       | 1.2             | подключение к другим базам данных PostgreSQL из базы данных|
 > |[dict_int](https://www.postgresql.org/docs/10/dict-int.html)                     | 1.0             | шаблон словаря поиска текста для целых чисел|
-> |[earthdistance](https://www.postgresql.org/docs/10/earthdistance.html)                | 1.1             | Вычислите большие расстояния на поверхности земли|
-> |[fuzzystrmatch](https://www.postgresql.org/docs/10/fuzzystrmatch.html)                | 1.1             | определение сходства и расстояния между строками|
+> |[earthdistance](https://www.postgresql.org/docs/10/earthdistance.html)                | 1,1             | Вычислите большие расстояния на поверхности земли|
+> |[fuzzystrmatch](https://www.postgresql.org/docs/10/fuzzystrmatch.html)                | 1,1             | определение сходства и расстояния между строками|
 > |[hstore](https://www.postgresql.org/docs/10/hstore.html)                       | 1.4             | тип данных для хранения наборов пар (ключ, значение)|
 > |[hypopg](https://hypopg.readthedocs.io/en/latest/)                       | 1.1.1           | Гипотетические индексы для PostgreSQL|
 > |[intarray](https://www.postgresql.org/docs/10/intarray.html)                     | 1.2             | функции, операторы и поддержка индексов для 1-D массивов целых чисел|
-> |[isn](https://www.postgresql.org/docs/10/isn.html)                          | 1.1             | типы данных для международных стандартов нумерации продуктов|
-> |[ltree](https://www.postgresql.org/docs/10/ltree.html)                        | 1.1             | тип данных для иерархических структур, схожих с деревом|
+> |[isn](https://www.postgresql.org/docs/10/isn.html)                          | 1,1             | типы данных для международных стандартов нумерации продуктов|
+> |[ltree](https://www.postgresql.org/docs/10/ltree.html)                        | 1,1             | тип данных для иерархических структур, схожих с деревом|
 > |[орафце](https://github.com/orafce/orafce)                       | 3,7             | Функции и операторы, имитирующие подмножество функций и пакетов из коммерческой RDBMS|
 > |[пгаудит](https://www.pgaudit.org/)                     | 1.2             | предоставляет функции аудита|
 > |[pgcrypto](https://www.postgresql.org/docs/10/pgcrypto.html)                     | 1,3             | криптографические функции|
@@ -97,7 +97,7 @@ PostgreSQL предоставляет возможность расширить 
 > |[pgstattuple](https://www.postgresql.org/docs/10/pgstattuple.html)                  | 1.5             | Отображение статистики на уровне кортежей|
 > |[pg_buffercache](https://www.postgresql.org/docs/10/pgbuffercache.html)               | 1,3             | Проверка общего кэша буфера|
 > |[pg_partman](https://github.com/pgpartman/pg_partman)                   | 2.6.3           | Расширение для управления секционированными таблицами по времени или ИДЕНТИФИКАТОРу|
-> |[pg_prewarm](https://www.postgresql.org/docs/10/pgprewarm.html)                   | 1.1             | предтеплое отношение данных|
+> |[pg_prewarm](https://www.postgresql.org/docs/10/pgprewarm.html)                   | 1,1             | предтеплое отношение данных|
 > |[pg_stat_statements](https://www.postgresql.org/docs/10/pgstatstatements.html)           | 1.6             | Трассировка статистики выполнения всех выполненных инструкций SQL|
 > |[pg_trgm](https://www.postgresql.org/docs/10/pgtrgm.html)                      | 1,3             | измерение подобия текста и поиск по индексу на основе триграммов|
 > |[plpgsql](https://www.postgresql.org/docs/10/plpgsql.html)                      | 1.0             | Процедурный язык PL/pgSQL|
@@ -109,8 +109,8 @@ PostgreSQL предоставляет возможность расширить 
 > |[postgres_fdw](https://www.postgresql.org/docs/10/postgres-fdw.html)                 | 1.0             | оболочка внешних данных для удаленных серверов PostgreSQL|
 > |[tablefunc](https://www.postgresql.org/docs/10/tablefunc.html)                    | 1.0             | функции, управляющие целыми таблицами, включая перекрестный|
 > |[тимескаледб](https://docs.timescale.com/latest)                    | 1.1.1             | Включает масштабируемые операции вставки и сложные запросы для данных временных рядов|
-> |[unaccent](https://www.postgresql.org/docs/10/unaccent.html)                     | 1.1             | словарь поиска текста, который удаляет диакритические знаки|
-> |[uuid-ossp](https://www.postgresql.org/docs/10/uuid-ossp.html)                    | 1.1             | создать универсальные уникальные идентификаторы (UUID)|
+> |[unaccent](https://www.postgresql.org/docs/10/unaccent.html)                     | 1,1             | словарь поиска текста, который удаляет диакритические знаки|
+> |[uuid-ossp](https://www.postgresql.org/docs/10/uuid-ossp.html)                    | 1,1             | создать универсальные уникальные идентификаторы (UUID)|
 
 ## <a name="postgres-96-extensions"></a>Расширения postgres 9,6 
 
@@ -128,13 +128,13 @@ PostgreSQL предоставляет возможность расширить 
 > |[Куба](https://www.postgresql.org/docs/9.6/cube.html)                         | 1.2             | тип данных для многомерных кубов|
 > |[dblink](https://www.postgresql.org/docs/9.6/dblink.html)                       | 1.2             | подключение к другим базам данных PostgreSQL из базы данных|
 > |[dict_int](https://www.postgresql.org/docs/9.6/dict-int.html)                     | 1.0             | шаблон словаря поиска текста для целых чисел|
-> |[earthdistance](https://www.postgresql.org/docs/9.6/earthdistance.html)                | 1.1             | Вычислите большие расстояния на поверхности земли|
-> |[fuzzystrmatch](https://www.postgresql.org/docs/9.6/fuzzystrmatch.html)                | 1.1             | определение сходства и расстояния между строками|
+> |[earthdistance](https://www.postgresql.org/docs/9.6/earthdistance.html)                | 1,1             | Вычислите большие расстояния на поверхности земли|
+> |[fuzzystrmatch](https://www.postgresql.org/docs/9.6/fuzzystrmatch.html)                | 1,1             | определение сходства и расстояния между строками|
 > |[hstore](https://www.postgresql.org/docs/9.6/hstore.html)                       | 1.4             | тип данных для хранения наборов пар (ключ, значение)|
 > |[hypopg](https://hypopg.readthedocs.io/en/latest/)                       | 1.1.1           | Гипотетические индексы для PostgreSQL|
 > |[intarray](https://www.postgresql.org/docs/9.6/intarray.html)                     | 1.2             | функции, операторы и поддержка индексов для 1-D массивов целых чисел|
-> |[isn](https://www.postgresql.org/docs/9.6/isn.html)                          | 1.1             | типы данных для международных стандартов нумерации продуктов|
-> |[ltree](https://www.postgresql.org/docs/9.6/ltree.html)                        | 1.1             | тип данных для иерархических структур, схожих с деревом|
+> |[isn](https://www.postgresql.org/docs/9.6/isn.html)                          | 1,1             | типы данных для международных стандартов нумерации продуктов|
+> |[ltree](https://www.postgresql.org/docs/9.6/ltree.html)                        | 1,1             | тип данных для иерархических структур, схожих с деревом|
 > |[орафце](https://github.com/orafce/orafce)                       | 3,7             | Функции и операторы, имитирующие подмножество функций и пакетов из коммерческой RDBMS|
 > |[пгаудит](https://www.pgaudit.org/)                     | 1.1.2             | предоставляет функции аудита|
 > |[pgcrypto](https://www.postgresql.org/docs/9.6/pgcrypto.html)                     | 1,3             | криптографические функции|
@@ -143,7 +143,7 @@ PostgreSQL предоставляет возможность расширить 
 > |[pgstattuple](https://www.postgresql.org/docs/9.6/pgstattuple.html)                  | 1.4             | Отображение статистики на уровне кортежей|
 > |[pg_buffercache](https://www.postgresql.org/docs/9.6/pgbuffercache.html)               | 1.2             | Проверка общего кэша буфера|
 > |[pg_partman](https://github.com/pgpartman/pg_partman)                   | 2.6.3           | Расширение для управления секционированными таблицами по времени или ИДЕНТИФИКАТОРу|
-> |[pg_prewarm](https://www.postgresql.org/docs/9.6/pgprewarm.html)                   | 1.1             | предтеплое отношение данных|
+> |[pg_prewarm](https://www.postgresql.org/docs/9.6/pgprewarm.html)                   | 1,1             | предтеплое отношение данных|
 > |[pg_stat_statements](https://www.postgresql.org/docs/9.6/pgstatstatements.html)           | 1.4             | Трассировка статистики выполнения всех выполненных инструкций SQL|
 > |[pg_trgm](https://www.postgresql.org/docs/9.6/pgtrgm.html)                      | 1,3             | измерение подобия текста и поиск по индексу на основе триграммов|
 > |[plpgsql](https://www.postgresql.org/docs/9.6/plpgsql.html)                      | 1.0             | Процедурный язык PL/pgSQL|
@@ -155,8 +155,8 @@ PostgreSQL предоставляет возможность расширить 
 > |[postgres_fdw](https://www.postgresql.org/docs/9.6/postgres-fdw.html)                 | 1.0             | оболочка внешних данных для удаленных серверов PostgreSQL|
 > |[tablefunc](https://www.postgresql.org/docs/9.6/tablefunc.html)                    | 1.0             | функции, управляющие целыми таблицами, включая перекрестный|
 > |[тимескаледб](https://docs.timescale.com/latest)                    | 1.1.1             | Включает масштабируемые операции вставки и сложные запросы для данных временных рядов|
-> |[unaccent](https://www.postgresql.org/docs/9.6/unaccent.html)                     | 1.1             | словарь поиска текста, который удаляет диакритические знаки|
-> |[uuid-ossp](https://www.postgresql.org/docs/9.6/uuid-ossp.html)                    | 1.1             | создать универсальные уникальные идентификаторы (UUID)|
+> |[unaccent](https://www.postgresql.org/docs/9.6/unaccent.html)                     | 1,1             | словарь поиска текста, который удаляет диакритические знаки|
+> |[uuid-ossp](https://www.postgresql.org/docs/9.6/uuid-ossp.html)                    | 1,1             | создать универсальные уникальные идентификаторы (UUID)|
 
 ## <a name="postgres-95-extensions"></a>Расширения postgres 9,5 
 
@@ -168,11 +168,11 @@ PostgreSQL предоставляет возможность расширить 
 > |[address_standardizer](http://postgis.net/docs/Address_Standardizer.html)         | 2.3.0           | Используются для анализа адреса в составных элементы. |
 > |[address_standardizer_data_us](http://postgis.net/docs/Address_Standardizer.html) | 2.3.0           | Пример набора данных для стандартизации адресов США|
 > |[btree_gin](https://www.postgresql.org/docs/9.5/btree-gin.html)                    | 1.0             | Поддержка индексирования общих типов в Ло|
-> |[btree_gist](https://www.postgresql.org/docs/9.5/btree-gist.html)                   | 1.1             | Поддержка индексирования общих типов в реестрах|
+> |[btree_gist](https://www.postgresql.org/docs/9.5/btree-gist.html)                   | 1,1             | Поддержка индексирования общих типов в реестрах|
 > |[chkpass](https://www.postgresql.org/docs/9.5/chkpass.html)                       | 1.0             | тип данных для автоматического шифрования паролей|
-> |[citext](https://www.postgresql.org/docs/9.5/citext.html)                       | 1.1             | тип данных для символьных строк без учета регистра|
+> |[citext](https://www.postgresql.org/docs/9.5/citext.html)                       | 1,1             | тип данных для символьных строк без учета регистра|
 > |[Куба](https://www.postgresql.org/docs/9.5/cube.html)                         | 1.0             | тип данных для многомерных кубов|
-> |[dblink](https://www.postgresql.org/docs/9.5/dblink.html)                       | 1.1             | подключение к другим базам данных PostgreSQL из базы данных|
+> |[dblink](https://www.postgresql.org/docs/9.5/dblink.html)                       | 1,1             | подключение к другим базам данных PostgreSQL из базы данных|
 > |[dict_int](https://www.postgresql.org/docs/9.5/dict-int.html)                     | 1.0             | шаблон словаря поиска текста для целых чисел|
 > |[earthdistance](https://www.postgresql.org/docs/9.5/earthdistance.html)                | 1.0             | Вычислите большие расстояния на поверхности земли|
 > |[fuzzystrmatch](https://www.postgresql.org/docs/9.5/fuzzystrmatch.html)                | 1.0             | определение сходства и расстояния между строками|
@@ -185,13 +185,13 @@ PostgreSQL предоставляет возможность расширить 
 > |[пгаудит](https://www.pgaudit.org/)                     | 1.0.7             | предоставляет функции аудита|
 > |[pgcrypto](https://www.postgresql.org/docs/9.5/pgcrypto.html)                     | 1.2             | криптографические функции|
 > |[pgrouting](https://pgrouting.org/)                    | 2.3.0           | Расширение Пграутинг|
-> |[pgrowlocks](https://www.postgresql.org/docs/9.5/pgrowlocks.html)                   | 1.1             | показывать сведения о блокировке на уровне строк|
+> |[pgrowlocks](https://www.postgresql.org/docs/9.5/pgrowlocks.html)                   | 1,1             | показывать сведения о блокировке на уровне строк|
 > |[pgstattuple](https://www.postgresql.org/docs/9.5/pgstattuple.html)                  | 1,3             | Отображение статистики на уровне кортежей|
-> |[pg_buffercache](https://www.postgresql.org/docs/9.5/pgbuffercache.html)               | 1.1             | Проверка общего кэша буфера|
+> |[pg_buffercache](https://www.postgresql.org/docs/9.5/pgbuffercache.html)               | 1,1             | Проверка общего кэша буфера|
 > |[pg_partman](https://github.com/pgpartman/pg_partman)                   | 2.6.3           | Расширение для управления секционированными таблицами по времени или ИДЕНТИФИКАТОРу|
 > |[pg_prewarm](https://www.postgresql.org/docs/9.5/pgprewarm.html)                   | 1.0             | предтеплое отношение данных|
 > |[pg_stat_statements](https://www.postgresql.org/docs/9.5/pgstatstatements.html)           | 1,3             | Трассировка статистики выполнения всех выполненных инструкций SQL|
-> |[pg_trgm](https://www.postgresql.org/docs/9.5/pgtrgm.html)                      | 1.1             | измерение подобия текста и поиск по индексу на основе триграммов|
+> |[pg_trgm](https://www.postgresql.org/docs/9.5/pgtrgm.html)                      | 1,1             | измерение подобия текста и поиск по индексу на основе триграммов|
 > |[plpgsql](https://www.postgresql.org/docs/9.5/plpgsql.html)                      | 1.0             | Процедурный язык PL/pgSQL|
 > |[PostGIS](https://www.postgis.net/)                      | 2.3.0           | PostGISие геометрических, географических и растровых пространственных типов и функций|
 > |[postgis_sfcgal](https://www.postgis.net/)               | 2.3.0           | Функции СФКГАЛ PostGIS|
@@ -278,5 +278,5 @@ SELECT timescaledb_post_restore();
 ```
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Если вы не видите расширение, которое вы хотите использовать, сообщите нам. Проголосуйте за существующие запросы или создавайте новые запросы на отзыв на [форуме отзывов](https://feedback.azure.com/forums/597976-azure-database-for-postgresql).

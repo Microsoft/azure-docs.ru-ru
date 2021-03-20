@@ -18,10 +18,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 246f8326f7112825de98ee824cf4bab7952a7878
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90014593"
 ---
 # <a name="azure-ad-connect-in-microsoft-cloud-germany---public-preview"></a>Общедоступная предварительная версия Azure AD Connect в Microsoft Cloud для Германии
@@ -38,7 +38,7 @@ Azure AD Connect обеспечивает синхронизацию локал�
 * При входе в каталог Azure AD необходимо использовать учетную запись в домене onmicrosoft.de.
 
  
-## <a name="download"></a>Скачивание
+## <a name="download"></a>Скачать
 Вы можете загрузить Azure AD Connect из колонки Azure AD Connect на портале.  Чтобы найти колонку Azure AD Connect, следуйте указанным ниже инструкциям.
 
 ### <a name="the-azure-ad-connect-blade"></a>Колонка Azure AD Connect

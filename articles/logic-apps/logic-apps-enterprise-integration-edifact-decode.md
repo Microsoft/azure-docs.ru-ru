@@ -9,10 +9,10 @@ ms.reviewer: jonfan, divswa, logicappspm
 ms.topic: article
 ms.date: 04/22/2020
 ms.openlocfilehash: b36641677dbf36402c7f578b9b1887c52f441afd
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96000017"
 ---
 # <a name="decode-edifact-messages-for-azure-logic-apps-with-the-enterprise-integration-pack"></a>Декодирование сообщений EDIFACT для Azure Logic Apps с помощью пакета интеграции Enterprise
@@ -48,7 +48,7 @@ ms.locfileid: "96000017"
 
     Свойства со звездочкой обязательные.
 
-    | Свойство | Сведения |
+    | Свойство. | Сведения |
     | --- | --- |
     | Имя подключения* |Введите имя подключения |
     | Учетная запись интеграции* |Выберите имя для учетной записи интеграции. Убедитесь, что учетная запись интеграции и приложение логики находятся в одном регионе Azure. |
@@ -98,6 +98,6 @@ ms.locfileid: "96000017"
 ## <a name="view-swagger-file"></a>Просмотр файла Swagger
 Дополнительные сведения о Swagger для соединителя EDIFACT см.в [этой статье](/connectors/edifact/).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Дополнительные сведения о Пакете интеграции Enterprise](logic-apps-enterprise-integration-overview.md "Дополнительные сведения о Пакет интеграции Enterprise") 
 

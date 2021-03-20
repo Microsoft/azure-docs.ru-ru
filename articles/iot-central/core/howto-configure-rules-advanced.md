@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.service: iot-central
 services: iot-central
 ms.openlocfilehash: 257855b4f7b1fae56ed8d6a063acfb0588da9b6a
-ms.sourcegitcommit: 7dacbf3b9ae0652931762bd5c8192a1a3989e701
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92123326"
 ---
 # <a name="use-workflows-to-integrate-your-azure-iot-central-application-with-other-cloud-services"></a>Использование рабочих процессов для интеграции приложения Azure IoT Central с другими облачными службами
@@ -41,7 +41,7 @@ ms.locfileid: "92123326"
 Добавление соединителя **Azure IOT Central v3-Preview** в качестве триггера в Power автоматизиру:
 
 1. В Power Automate щелкните **+ Создать**, а затем выберите вкладку **Пользовательские**.
-1. Найдите *IOT Central*и выберите соединитель **Azure IOT Central v3-Preview** .
+1. Найдите *IOT Central* и выберите соединитель **Azure IOT Central v3-Preview** .
 1. В списке триггеров выберите **При активации правила (предварительная версия)** .
 1. Для шага **При активации правила** выберите приложение IoT Central и правило, которое вы используете.
 
@@ -49,7 +49,7 @@ ms.locfileid: "92123326"
 
 1. В **конструкторе Logic Apps** выберите шаблон **Пустое приложение логики**.
 1. Там же в конструкторе перейдите на вкладку **Пользовательские**.
-1. Найдите *IOT Central*и выберите соединитель **Azure IOT Central v3-Preview** .
+1. Найдите *IOT Central* и выберите соединитель **Azure IOT Central v3-Preview** .
 1. В списке триггеров выберите **При активации правила (предварительная версия)** .
 1. Для шага **При активации правила** выберите приложение IoT Central и правило, которое вы используете.
 
@@ -71,11 +71,11 @@ ms.locfileid: "92123326"
 Чтобы добавить соединитель **Azure IOT Central v3-Preview** в качестве действия в Azure Logic Apps:
 
 1. В **конструкторе Logic Apps** в области **Выберите действие** перейдите на вкладку **Пользовательское**.
-1. Найдите *IOT Central*и выберите соединитель **Azure IOT Central v3-Preview** .
+1. Найдите *IOT Central* и выберите соединитель **Azure IOT Central v3-Preview** .
 1. В списке действий выберите нужное действие IoT Central.
 1. На этом шаге настройте параметры для выбранного действия. Затем нажмите кнопку **Save** (Сохранить).
 
-:::image type="content" source="./media/howto-configure-rules-advanced/actions.png" alt-text="Найдите соединитель Azure IoT Central (предварительная версия) и выберите триггер":::
+:::image type="content" source="./media/howto-configure-rules-advanced/actions.png" alt-text="Найдите соединитель Azure IoT Central v3 и выберите действие.":::
 
 ## <a name="list-of-actions"></a>Список действий
 

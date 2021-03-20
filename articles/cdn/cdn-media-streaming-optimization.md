@@ -15,10 +15,10 @@ ms.topic: how-to
 ms.date: 05/01/2018
 ms.author: allensu
 ms.openlocfilehash: c3ab722f182e32cf2f3aca6bb2f3d5a9598264af
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88192603"
 ---
 # <a name="media-streaming-optimization-with-azure-cdn"></a>Оптимизация потоковой передачи мультимедиа с помощью Azure CDN 
@@ -86,7 +86,7 @@ ms.locfileid: "88192603"
 | Кэширование  | Общая веб-доставка | Общая потоковая передача мультимедиа | Потоковая передача видео по запросу  
 |--- | --- | --- | ---
 | Кэширование: положительное <br> HTTP 200, 203, 300, <br> 301, 302 и 410 | 7 дней |365 дней | 365 дней   
-| Кэширование: отрицательное <br> HTTP 204, 305, 404 <br> и 405 | None | 1 с | 1 с
+| Кэширование: отрицательное <br> HTTP 204, 305, 404 <br> и 405 | Нет | 1 с | 1 с
  
 ### <a name="deal-with-origin-failure"></a>Устранение сбоев источника  
 

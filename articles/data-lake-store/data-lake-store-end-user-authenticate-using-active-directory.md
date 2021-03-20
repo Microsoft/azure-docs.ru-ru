@@ -8,10 +8,10 @@ ms.date: 05/29/2018
 ms.author: twooley
 ms.custom: has-adal-ref
 ms.openlocfilehash: a5272f7d580a3f8a68afda9150a1e95c1807eba6
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92103787"
 ---
 # <a name="end-user-authentication-with-azure-data-lake-storage-gen1-using-azure-active-directory"></a>Проверка подлинности пользователей в Azure Data Lake Storage 1-го поколения с помощью Azure Active Directory
@@ -107,7 +107,7 @@ Azure Data Lake Storage 1-го поколения (ADLS 1-го поколени�
 
     ![Снимок экрана: Добавление колонки "доступ к API" с параметром "выбрать разрешения" и в колонке "включить доступ" с полным доступом к параметру службы Azure Data Lake и параметром SELECT, вызываемым.](./media/data-lake-store-end-user-authenticate-using-active-directory/aad-end-user-auth-set-permission-3.png)
 
-    Нажмите кнопку **Готово**.
+    Нажмите кнопку **Done**(Готово).
 
 5. Повторите последние два шага, чтобы также предоставить разрешения для **API управления службами Microsoft Azure**.
 

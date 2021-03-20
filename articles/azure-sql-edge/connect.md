@@ -10,10 +10,10 @@ ms.author: sourabha
 ms.reviewer: sstein
 ms.date: 07/25/2020
 ms.openlocfilehash: b56b65261950e9cf534a3755d214229ef7d5bb1e
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93395212"
 ---
 # <a name="connect-and-query-azure-sql-edge"></a>Подключение и запрос SQL Azure
@@ -36,7 +36,7 @@ ms.locfileid: "93395212"
 
 Чтобы подключиться к ядру СУБД Azure SQL с сетевого компьютера, вам потребуется следующее:
 
-- **IP-адрес или сетевое имя главного компьютера** : это ведущий компьютер, на котором работает контейнер Azure SQL.
+- **IP-адрес или сетевое имя главного компьютера**: это ведущий компьютер, на котором работает контейнер Azure SQL.
 - **Сопоставление портов узла контейнера Azure SQL**. это сопоставление для порта контейнера DOCKER с портом на узле. В контейнере Azure SQL ребро всегда сопоставляется с портом 1433. Вы можете изменить это значение, если хотите. Чтобы изменить номер порта, обновите **Параметры создания контейнера** для модуля Azure SQL в Azure IOT Edge. В следующем примере порт 1433 в контейнере сопоставляется с портом 1600 на узле.
 
     ```JSON
@@ -51,7 +51,7 @@ ms.locfileid: "93395212"
     }
     ```
 
-- **Пароль SA для экземпляра Azure SQL ребра** : это значение, указанное для `SA_PASSWORD` переменной среды во время развертывания Azure SQL ребро.
+- **Пароль SA для экземпляра Azure SQL ребра**: это значение, указанное для `SA_PASSWORD` переменной среды во время развертывания Azure SQL ребро.
 
 ## <a name="connect-to-the-database-engine-from-within-the-container"></a>Подключение к ядру СУБД из контейнера
 
@@ -94,7 +94,7 @@ conn = pyodbc.connect(db_connection_string, autocommit=True)
 
 ## <a name="connect-to-azure-sql-edge-from-another-network-machine"></a>Подключение к Azure SQL с другого сетевого компьютера
 
-Возможно, вам потребуется подключиться к экземпляру Azure SQL Server с другого компьютера в сети. Для этого используйте IP-адрес узла DOCKER и порт узла, с которым сопоставлен контейнер Azure SQL. Например, если IP-адрес узла DOCKER — *xxx.xxx.xxx.XXX* , а контейнер Azure SQL — с портом узла *1600* , то адресом сервера для экземпляра Azure SQL ребро будет *xxx. xxx. xxx. XXX, 1600*. Обновленный скрипт Python:
+Возможно, вам потребуется подключиться к экземпляру Azure SQL Server с другого компьютера в сети. Для этого используйте IP-адрес узла DOCKER и порт узла, с которым сопоставлен контейнер Azure SQL. Например, если IP-адрес узла DOCKER — *xxx.xxx.xxx.XXX*, а контейнер Azure SQL — с портом узла *1600*, то адресом сервера для экземпляра Azure SQL ребро будет *xxx. xxx. xxx. XXX, 1600*. Обновленный скрипт Python:
 
 ```python
 
@@ -114,7 +114,7 @@ conn = pyodbc.connect(db_connection_string, autocommit=True)
 
 Чтобы подключиться к экземпляру Azure SQL с помощью Azure Data Studio на компьютере под управлением Windows, Mac или Linux, см. раздел [Azure Data Studio](/sql/azure-data-studio/quickstart-sql-server).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Подключение и запрос](/sql/linux/sql-server-linux-configure-docker#connect-and-query)
 

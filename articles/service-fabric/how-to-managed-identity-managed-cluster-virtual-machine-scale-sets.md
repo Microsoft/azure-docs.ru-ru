@@ -5,10 +5,10 @@ ms.topic: how-to
 ms.date: 11/24/2020
 ms.custom: references_regions
 ms.openlocfilehash: 3ff5d66160ddbb037469378634826fd9eeae0c54
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100651652"
 ---
 # <a name="add-a-managed-identity-to-a-service-fabric-managed-cluster-node-type-preview"></a>Добавление управляемого удостоверения в тип узла управляемого кластера Service Fabric (Предварительная версия)
@@ -133,7 +133,7 @@ New-AzRoleAssignment -PrincipalId fbc587f2-66f5-4459-a027-bcd908b9d278 -RoleDefi
 
 :::image type="content" source="media/how-to-managed-identity-managed-cluster-vmss/role-assignment-error.png" alt-text="Ошибка развертывания портал Azure, показывающая клиент с ИДЕНТИФИКАТОРом объекта или приложения SFRP, у которого нет разрешения на выполнение действия по управлению удостоверениями":::
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Развертывание приложения в управляемом кластере Service Fabric](./tutorial-managed-cluster-deploy-app.md)

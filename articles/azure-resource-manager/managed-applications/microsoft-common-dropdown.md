@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 07/14/2020
 ms.author: tomfitz
 ms.openlocfilehash: b9b27a432776635290c7e8e796e84d8c1e0e8675
-ms.sourcegitcommit: 419c8c8061c0ff6dc12c66ad6eda1b266d2f40bd
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92168347"
 ---
 # <a name="microsoftcommondropdown-ui-element"></a>Элемент пользовательского интерфейса Microsoft.Common.DropDown
@@ -26,19 +26,19 @@ ms.locfileid: "92168347"
 
 Если описания включены, элемент управления выглядит следующим образом:
 
-:::image type="content" source="./media/managed-application-elements/microsoft-common-dropdown-2.png" alt-text="Один выделенный фрагмент Microsoft. Common. DropDown":::
+:::image type="content" source="./media/managed-application-elements/microsoft-common-dropdown-2.png" alt-text="Один выделенный фрагмент Microsoft. Common. DropDown с описаниями":::
 
 Если включен множественный выбор, то элемент управления добавляет параметр **выбрать все** и флажки для выбора более одного элемента:
 
-:::image type="content" source="./media/managed-application-elements/microsoft-common-dropdown-3.png" alt-text="Один выделенный фрагмент Microsoft. Common. DropDown":::
+:::image type="content" source="./media/managed-application-elements/microsoft-common-dropdown-3.png" alt-text="Множественный выбор Microsoft. Common. DropDown":::
 
 Описания могут включаться при включенном множественном выборе.
 
-:::image type="content" source="./media/managed-application-elements/microsoft-common-dropdown-4.png" alt-text="Один выделенный фрагмент Microsoft. Common. DropDown":::
+:::image type="content" source="./media/managed-application-elements/microsoft-common-dropdown-4.png" alt-text="Снимок экрана, показывающий, как можно включить несколько описаний при включенном множественном выборе":::
 
 Если фильтрация включена, элемент управления включает текстовое поле для добавления значения фильтрации.
 
-:::image type="content" source="./media/managed-application-elements/microsoft-common-dropdown-5.png" alt-text="Один выделенный фрагмент Microsoft. Common. DropDown":::
+:::image type="content" source="./media/managed-application-elements/microsoft-common-dropdown-5.png" alt-text="Множественный выбор с описанием Microsoft. Common. DropDown":::
 
 ## <a name="schema"></a>схема
 
@@ -75,13 +75,13 @@ ms.locfileid: "92168347"
 }
 ```
 
-## <a name="sample-output"></a>Пример полученных результатов
+## <a name="sample-output"></a>Пример выходных данных
 
 ```json
 "two"
 ```
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 - Используйте `multiselect` , чтобы указать, могут ли пользователи выбирать более одного элемента.
 - По умолчанию `selectAll` , `true` Если включен множественный выбор.

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 4/9/2019
 ms.author: mayg
 ms.openlocfilehash: 29457f2f5021fed9d8785f5764c4119de4be1fa9
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95999218"
 ---
 # <a name="cost-estimation-report-by-azure-site-recovery-deployment-planner"></a>Отчет об оценке затрат, созданный в планировщике развертывания Azure Site Recovery 
@@ -107,7 +107,7 @@ ms.locfileid: "95999218"
 
 1. Укажите значения в следующих столбцах на основе приблизительного размера и числа виртуальных машин, которые соответствуют этой конфигурации: 
 
-    a. **Число виртуальных машин**
+    а. **Число виртуальных машин**
 
     b. **IaaS size (Your selection)** (Размер IaaS (по вашему выбору)).
 
@@ -178,5 +178,5 @@ eastus, eastus2, westus, centralus, northcentralus, southcentralus, northeurope,
 |SAR|Саудовский риял (SR)|SEK|Шведская крона (kr)|TWD|Тайваньский доллар (NT$)|
 |TRY|Турецкая лира (TL)|USD| Доллар США ($)|ZAR|Южноафриканский рэнд (R)|
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о способах защиты см. в статье [Set up disaster recovery of on-premises Hyper-V VMs to Azure](hyper-v-azure-tutorial.md) (Настройка аварийного восстановления локальных виртуальных машин Hyper-V в Azure).

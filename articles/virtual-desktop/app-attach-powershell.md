@@ -7,10 +7,10 @@ ms.date: 12/14/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 1196982fedc7321805e36cceed27c90e43a6e705
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99558334"
 ---
 # <a name="set-up-msix-app-attach-preview-using-powershell"></a>Настройка присоединения приложения MSIX (Предварительная версия) с помощью PowerShell
@@ -240,7 +240,7 @@ $grName = "<AppGroupName>"
 >[!NOTE]
 >Если пользователь назначен как в удаленную группу приложений, так и в группу классических приложений в одном пуле узлов, то при подключении пользователя к удаленному рабочему столу они увидят приложения MSIX из обеих групп.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Запросите наши вопросы сообщества об этой функции в [Windows Virtual Desktop течкоммунити](https://techcommunity.microsoft.com/t5/Windows-Virtual-Desktop/bd-p/WindowsVirtualDesktop).
 

@@ -6,17 +6,17 @@ ms.topic: how-to
 ms.date: 10/28/2020
 ms.custom: contperf-fy21q1, contperf-fy21q2
 ms.openlocfilehash: e8b7478ba64da0f99a9b7a710222ff2953795adf
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98943205"
 ---
 # <a name="use-the-apache-beeline-client-with-apache-hive"></a>Использование клиента Apache Beeline с Apache Hive
 
 В этой статье описывается, как использовать клиент [Apache Beeline](https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Clients#HiveServer2Clients-Beeline–NewCommandLineShell) для создания и выполнения запросов Apache Hive через SSH-подключение.
 
-## <a name="background"></a>Фон
+## <a name="background"></a>Историческая справка
 
 Beeline — это клиент Hive, установленный на головных узлах кластера HDInsight. Чтобы подключиться к клиенту Beeline, установленному в кластере HDInsight, или установить Beeline локально, см. раздел [Подключение к или установка Apache Beeline](connect-install-beeline.md). Он подключается к службе HiveServer2, размещенной на кластере HDInsight, с помощью JDBC. Beeline также позволяет удаленно подключаться к Hive в HDInsight через Интернет. В следующих примерах приведены наиболее распространенные строки подключения, используемые для подключения к HDInsight из Beeline.
 

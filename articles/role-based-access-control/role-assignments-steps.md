@@ -10,10 +10,10 @@ ms.workload: identity
 ms.date: 02/15/2021
 ms.author: rolyon
 ms.openlocfilehash: 081335779ffc4b3a6ddf09e56b773c6d34b210be
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100556039"
 ---
 # <a name="steps-to-assign-an-azure-role"></a>Действия по назначению роли Azure
@@ -85,7 +85,7 @@ ms.locfileid: "100556039"
 
 Подробные инструкции по назначению ролей см. в следующих статьях.
 
-- [Назначение ролей Azure с помощью портал Azure](role-assignments-portal.md)
+- [Назначение ролей Azure с помощью портала Azure](role-assignments-portal.md)
 - [Назначение ролей Azure с помощью Azure PowerShell](role-assignments-powershell.md)
 - [Назначение ролей Azure с помощью Azure CLI](role-assignments-cli.md)
 - [Назначение ролей Azure с помощью REST API](role-assignments-rest.md)

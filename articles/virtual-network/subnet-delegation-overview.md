@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 12/15/2020
 ms.author: kumud
 ms.openlocfilehash: 2801aa6b2e2b72df815b170200587c49ec0bae14
-ms.sourcegitcommit: 44188608edfdff861cc7e8f611694dec79b9ac7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99538998"
 ---
 # <a name="what-is-subnet-delegation"></a>Что такое делегирование подсети?
@@ -64,6 +64,6 @@ ms.locfileid: "99538998"
 -  Службы Azure могут внедрять экземпляры в подсети клиента, но не могут повлиять на существующие рабочие нагрузки.
 -  Политики или маршруты, которые применяются этими службами, являются гибкими и могут быть переопределены клиентом.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Делегирование подсети](manage-subnet-delegation.md)

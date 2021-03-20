@@ -10,10 +10,10 @@ ms.author: normesta
 ms.subservice: common
 ms.reviewer: zezha-msft
 ms.openlocfilehash: b36ea25180c31fef199aaacb10e46b3caa20f807
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98878381"
 ---
 # <a name="azcopy-load-clfs"></a>azcopy load clfs
@@ -57,7 +57,7 @@ azcopy load clfs [local dir] [container URL] [flags]
 azcopy load clfs "/path/to/dir" "https://[account].blob.core.windows.net/[container]?[SAS]" --state-path="/path/to/state/path"
 ```
 
-## <a name="options"></a>Варианты
+## <a name="options"></a>Параметры
 
 **--Compression-Type** строка укажите тип сжатия, используемый для передачи. Доступные значения: `DISABLED` , `LZ4` . (по умолчанию `LZ4` )
 

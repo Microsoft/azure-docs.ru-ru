@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 06/05/2017
 ms.author: alkohli
 ms.openlocfilehash: 745aeb9844f1abad075d34b34735563200ea618b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90054948"
 ---
 # <a name="use-storsimple-snapshot-manager-to-create-and-manage-backup-policies"></a>Создание политик архивации и управление ими с помощью диспетчера моментальных снимков StorSimple
@@ -58,7 +58,7 @@ ms.locfileid: "90054948"
    2. В разделе **Параметры** выберите **Один раз**, **Ежедневно**, **Еженедельно** или **Ежемесячно**.
    3. В поле **Начало** щелкните значок календаря и выберите дату начала.
    4. В разделе **Расширенные параметры** можно задать дополнительное расписание повторения и дату окончания.
-   5. Нажмите кнопку **ОК**.
+   5. Нажмите кнопку **OK**.
 
 После создания политики резервного копирования на панели **Результаты** появятся следующие сведения.
 
@@ -91,6 +91,6 @@ ms.locfileid: "90054948"
 
     ![Подтверждение удаления политики архивации](./media/storsimple-snapshot-manager-manage-backup-policies/HCS_SSM_Delete_BU_policy.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте, как [использовать диспетчер моментальных снимков StorSimple для администрирования решения StorSimple](storsimple-snapshot-manager-admin.md).
 * Узнайте о [просмотре заданий архивации и управлении ими с помощью диспетчера моментальных снимков StorSimple](storsimple-snapshot-manager-manage-backup-jobs.md).

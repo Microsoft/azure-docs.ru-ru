@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 09/29/2020
 ms.custom: seodec18
 ms.openlocfilehash: 4f236679d0662df852581a6a8408ed6bc0d4e3fe
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91535695"
 ---
 # <a name="understand-data-retention-in-azure-time-series-insights-gen1"></a>Общие сведения о хранении данных в Azure Time Series Insights Gen1
@@ -98,7 +98,7 @@ ms.locfileid: "91535695"
 
 Узнайте [, как масштабировать среду службы "аналитика временных рядов Azure](time-series-insights-how-to-scale-your-environment.md) ", чтобы масштабировать среду в соответствии с дополнительной емкостью или увеличить продолжительность удержания.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о настройке и изменении параметров хранения данных см. [в этой статьи](time-series-insights-how-to-configure-retention.md).
 
