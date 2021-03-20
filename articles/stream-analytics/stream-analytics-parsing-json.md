@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.custom: devx-track-js
 ms.openlocfilehash: f6cb131fb3ff3cab4122aac5e1c6960dee4f8421
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98012246"
 ---
 # <a name="parse-json-and-avro-data-in-azure-stream-analytics"></a>Анализ данных JSON и AVRO в Azure Stream Analytics

@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 02/13/2018
 ms.author: apimpm
 ms.openlocfilehash: c808d4659b5987b099dd96d73bb8c18c08fe3c99
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86249401"
 ---
 # <a name="managing-azure-api-management-using-azure-automation"></a>Управление управлением API с помощью службы автоматизации Azure
@@ -37,7 +37,7 @@ ms.locfileid: "86249401"
 
 * [Примеры Azure PowerShell для службы "Управление API"](./powershell-samples.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
 Теперь, после знакомства с основами службы автоматизации Azure и способами ее использования для управления управлением API Azure, вы можете пройти по следующим ссылкам, чтобы узнать больше.
 
-* См. Руководство по [началу работы](../automation/learn/automation-tutorial-runbook-graphical.md)со службой автоматизации Azure.
+* Изучите [руководство по началу работы](../automation/learn/automation-tutorial-runbook-graphical.md) со службой автоматизации Azure.

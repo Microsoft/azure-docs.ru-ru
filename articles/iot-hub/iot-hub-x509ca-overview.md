@@ -13,10 +13,10 @@ ms.custom:
 - 'Role: IoT Device'
 - 'Role: System Architecture'
 ms.openlocfilehash: 455f1f3e1c8181646fbe165d0f1aea6a2fb2fb13
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92150705"
 ---
 # <a name="device-authentication-using-x509-ca-certificates"></a>Проверка подлинности устройства с помощью сертификатов ЦС X.509
@@ -56,7 +56,7 @@ ms.locfileid: "92150705"
 
 ![img-generic-cert-chain-of-trust](./media/generic-cert-chain-of-trust.png)
 
-Сертификат устройства (также называемый конечным сертификатом) должен иметь *Subject Name* **идентификатор устройства** ( `CN=deviceId` ), который использовался при регистрации устройства IOT в центре Интернета вещей Azure. Этот параметр требуется для проверки подлинности.
+Сертификат устройства (также называемый конечным сертификатом) должен иметь  **идентификатор устройства** ( `CN=deviceId` ), который использовался при регистрации устройства IOT в центре Интернета вещей Azure. Этот параметр требуется для проверки подлинности.
 
 Узнайте, как [создать цепочку сертификатов](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md), как это было сделано при подписи устройств.
 
@@ -86,7 +86,7 @@ ms.locfileid: "92150705"
 
 Дополнительные сведения о завершении подключения устройства см. в [этой статье](iot-hub-security-x509-get-started.md#authenticate-your-x509-device-with-the-x509-certificates).
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте о [значении проверки подлинности на основе ЦС X.509 в Центре Интернета вещей](iot-hub-x509ca-concept.md).
 

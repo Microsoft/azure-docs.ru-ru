@@ -16,10 +16,10 @@ ms.author: sethm
 ms.reviewer: thsomasu
 ms.lastreviewed: 11/13/2019
 ms.openlocfilehash: 0f79402956148c566bc34faa88e10895657883c2
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "100591734"
 ---
 # <a name="push-notifications-with-azure-notification-hubs-frequently-asked-questions"></a>Часто задаваемые вопросы об отправке push-уведомлений с помощью Центров уведомлений Azure

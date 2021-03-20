@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 07/26/2019
 ms.author: zhchia
 ms.openlocfilehash: 221f63ab9a7eb3f71a4c730a11565dda64c9edc9
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96353592"
 ---
 # <a name="tutorial-configure-mypolicies-for-automatic-user-provisioning"></a>Руководство по Настройка myPolicies для автоматической подготовки пользователей

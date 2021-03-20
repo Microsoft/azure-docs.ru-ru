@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 12/06/2019
 ms.author: duau
 ms.openlocfilehash: a4a3bad1e868fa0e75611630ffb5db5ba13126b6
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89395559"
 ---
 # <a name="create-and-modify-peering-for-an-expressroute-circuit-classic"></a>Создание и изменение пиринга для канала ExpressRoute (классическая модель)
@@ -302,7 +302,7 @@ Remove-AzureBGPPeering -AccessType Public -ServiceKey "*************************
    * Объявленные префиксы: необходимо предоставить список всех префиксов, которые вы планируете объявить во время сеанса BGP. Допускаются только общедоступные префиксы IP-адресов. Если планируется отправить набор префиксов, можно отправить список с разделителями-запятыми. Эти префиксы должны быть зарегистрированы в RIR/IRR на ваше имя.
    * Клиент ASN: для объявления префиксов, не зарегистрированных с номером AS для пиринга, можно указать номер AS, с которым они зарегистрированы. **Необязательно**.
    * Имя реестра маршрутизации: можно указать RIR/IRR, в котором зарегистрированы номер AS и префиксы.
-   * Хэш MD5, если вы решите его использовать. **Необязательный параметр.**
+   * Хэш MD5, если вы решите его использовать. **Необязательный элемент.**
      
    Чтобы настроить пиринг Майкрософт для своего канала, выполните следующий командлет:
  
@@ -350,7 +350,7 @@ Set-AzureBGPPeering -AccessType Microsoft -ServiceKey "*************************
 Remove-AzureBGPPeering -AccessType Microsoft -ServiceKey "*********************************"
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Затем необходимо выполнить [связывание виртуальной сети с каналом ExpressRoute](expressroute-howto-linkvnet-classic.md).
 

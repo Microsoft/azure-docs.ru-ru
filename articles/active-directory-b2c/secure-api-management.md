@@ -11,10 +11,10 @@ ms.date: 07/30/2020
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 60b7bb33dfbf29b7e448887ce992d03009133b2e
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94953497"
 ---
 # <a name="secure-an-azure-api-management-api-with-azure-ad-b2c"></a>Защита API службы управления API Azure с помощью Azure AD B2C
@@ -35,7 +35,7 @@ ms.locfileid: "94953497"
 
 При защите API службы управления API Azure с помощью Azure AD B2C требуется несколько значений для [политики входящего трафика](../api-management/api-management-howto-policies.md), создаваемой в APIM. Сначала запишите идентификатор приложения, созданного ранее в клиенте Azure AD B2C. Если вы используете приложение, созданное в предварительных требованиях, используйте идентификатор приложения для *webbapp1*.
 
-Чтобы зарегистрировать приложение в клиенте Azure AD B2C, можно использовать новый унифицированный интерфейс **регистрации приложений** или устаревший интерфейс **приложений (прежняя версия)** . [См. дополнительные сведения о новом интерфейсе](./app-registrations-training-guide.md).
+Чтобы зарегистрировать приложение в клиенте Azure AD B2C, можно использовать новый унифицированный интерфейс **Регистрации приложений** или устаревший интерфейс **Приложения (прежние версии)** . [См. дополнительные сведения о новом интерфейсе](./app-registrations-training-guide.md).
 
 #### <a name="app-registrations"></a>[Регистрация приложений](#tab/app-reg-ga/)
 

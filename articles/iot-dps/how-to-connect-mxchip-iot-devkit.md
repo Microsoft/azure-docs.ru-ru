@@ -9,15 +9,15 @@ ms.service: iot-dps
 services: iot-dps
 manager: eliotgra
 ms.openlocfilehash: d6b6649d03da319171b24baa24983972bf270679
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94954551"
 ---
 # <a name="use-azure-iot-hub-device-provisioning-service-auto-provisioning-to-register-the-mxchip-iot-devkit-with-iot-hub"></a>Использование автоподготовки в службе подготовки устройств к добавлению в Центр Интернета вещей Azure для регистрации MXChip IoT DevKit в Центре Интернета вещей
 
-В этой статье описывается, как использовать службу подготовки устройств для центра Интернета вещей Azure для [подготовки](about-iot-dps.md#provisioning-process) DevKit MXChip IOT в центре Интернета вещей Azure. В этом руководстве вы узнаете, как:
+В этой статье описывается, как использовать службу подготовки устройств для центра Интернета вещей Azure для [подготовки](about-iot-dps.md#provisioning-process) DevKit MXChip IOT в центре Интернета вещей Azure. В этом руководстве описано следующее:
 
 * настройка глобальной конечной точки службы подготовки устройств на устройстве;
 * создание сертификата X.509 с помощью уникального секрета устройства (UDS);
@@ -26,7 +26,7 @@ ms.locfileid: "94954551"
 
 [MXChip IoT DevKit](https://aka.ms/iot-devkit) — это универсальная совместимая с Arduino плата со множеством периферийных устройств и датчиков. Решения для нее можно разрабатывать с помощью [Azure IoT Device Workbench](https://aka.ms/iot-workbench) или пакета расширений [Инструменты Azure IoT](https://aka.ms/azure-iot-tools) в Visual Studio Code. DevKit предоставляется с расширяющимся [каталогом проектов](https://microsoft.github.io/azure-iot-developer-kit/docs/projects/), чтобы помочь вам выполнить прототипирование решений Интернета вещей, использующих службы Azure.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Для работы с этим руководством сначала следует выполнить следующие задачи:
 

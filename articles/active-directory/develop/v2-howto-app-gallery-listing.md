@@ -13,10 +13,10 @@ ms.author: kenwith
 ms.reviewer: jeedes
 ms.custom: aaddev
 ms.openlocfilehash: f2a04a341239b62290eecac8c0e1ce70b7c927c1
-ms.sourcegitcommit: 7e117cfec95a7e61f4720db3c36c4fa35021846b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99988911"
 ---
 # <a name="publish-your-app-to-the-azure-ad-app-gallery"></a>Публикация приложения в коллекции приложений Azure AD
@@ -69,7 +69,7 @@ ms.locfileid: "99988911"
 - Нашим общим клиентам предлагается пошаговое руководство по настройке.
 - Клиенты, использующие систему для управления идентификаторами в разных доменах ([scim](https://techcommunity.microsoft.com/t5/Identity-Standards-Blog/Provisioning-with-SCIM-getting-started/ba-p/880010)), могут использовать подготовку для одного и того же приложения.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Вам потребуется постоянная учетная запись для тестирования по крайней мере двух зарегистрированных пользователей.
 
@@ -317,6 +317,6 @@ Azure AD предоставляет [справочный код](https://aka.ms
 Microsoft Partner Network обеспечивает мгновенный доступ к эксклюзивным ресурсам, программам, средствам и подключениям. Чтобы присоединиться к сети и создать план рынка, см. статью [доступ к коммерческим клиентам](https://partner.microsoft.com/explore/commercial#gtm).
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Создание конечной точки SCIM и настройка подготовки пользователей](../app-provisioning/use-scim-to-provision-users-and-groups.md)
 * [Сценарии проверки подлинности в Azure AD](authentication-flows-app-scenarios.md)

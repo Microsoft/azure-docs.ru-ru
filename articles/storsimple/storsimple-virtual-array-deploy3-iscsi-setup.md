@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 07/25/2019
 ms.author: alkohli
 ms.openlocfilehash: 6289f335234c9b7efec02a18e12b40a1140c1b3f
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94956557"
 ---
 # <a name="deploy-storsimple-virtual-array--set-up-as-an-iscsi-server-via-azure-portal"></a>Развертывание виртуального массива StorSimple. Установка в качестве сервера iSCSI на портале Azure
@@ -217,7 +217,7 @@ ms.locfileid: "94956557"
 12. Присвойте тому букву диска и нажмите кнопку **Далее**.
     
     ![мастер создания тома 2](./media/storsimple-virtual-array-deploy3-iscsi-setup/image30.png)
-13. Введите параметры для форматирования тома. **В Windows Server поддерживается только файловая система NTFS.** Задайте для размер единицы выделения 64 КБ. Укажите метку для тома. Рекомендуем выбирать метку, идентичную имени тома, которое вы указали в виртуальном массиве StorSimple. Нажмите кнопку **Далее**.
+13. Введите параметры для форматирования тома. **В Windows Server поддерживается только файловая система NTFS.** Задайте для размер единицы выделения 64 КБ. Укажите метку для тома. Рекомендуем выбирать метку, идентичную имени тома, которое вы указали в виртуальном массиве StorSimple. Щелкните **Далее**.
     
     ![мастер создания тома 3](./media/storsimple-virtual-array-deploy3-iscsi-setup/image31.png)
 14. Установите значения для тома и нажмите кнопку **Готово**.
@@ -228,7 +228,7 @@ ms.locfileid: "94956557"
     
     ![подключенные тома](./media/storsimple-virtual-array-deploy3-iscsi-setup/image33.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как использовать локальный веб-интерфейс для [администрирования виртуального массива StorSimple](storsimple-ova-web-ui-admin.md).
 

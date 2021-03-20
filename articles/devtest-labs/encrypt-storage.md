@@ -4,10 +4,10 @@ description: Узнайте, как настроить шифрование сл
 ms.topic: how-to
 ms.date: 07/29/2020
 ms.openlocfilehash: dcede89fb23c532742e41121688bcb51a5a73833
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92149312"
 ---
 # <a name="encrypt-azure-storage-used-by-a-lab-in-azure-devtest-labs"></a>Шифрование хранилища Azure, используемого лабораторией в Azure DevTest Labs
@@ -28,10 +28,10 @@ ms.locfileid: "92149312"
     :::image type="content" source="./media/encrypt-storage/overview-resource-group-link.png" alt-text="Выбор группы ресурсов на странице &quot;Обзор&quot;":::
 1. Выберите учетную запись хранения Azure лаборатории. Соглашение об именовании для учетной записи хранения лаборатории: `a<labNameWithoutInvalidCharacters><4-digit number>` . Например, если имя лаборатории — `contosolab` , то имя учетной записи хранения может иметь значение `acontosolab7576` . 
 
-    :::image type="content" source="./media/encrypt-storage/select-storage-account.png" alt-text="Выбор группы ресурсов на странице &quot;Обзор&quot;":::
+    :::image type="content" source="./media/encrypt-storage/select-storage-account.png" alt-text="Выбор учетной записи хранения в группе ресурсов лаборатории":::
 3. На странице **учетная запись хранения** выберите **Обозреватель службы хранилища (Предварительная версия)** в меню слева, а затем щелкните **контейнеры больших двоичных объектов** , чтобы найти соответствующее содержимое, связанное с лабораторией. 
 
-   :::image type="content" source="./media/encrypt-storage/storage-explorer.png" alt-text="Выбор группы ресурсов на странице &quot;Обзор&quot;" lightbox="./media/encrypt-storage/storage-explorer.png":::
+   :::image type="content" source="./media/encrypt-storage/storage-explorer.png" alt-text="Обозреватель хранилищ (предварительная версия)" lightbox="./media/encrypt-storage/storage-explorer.png":::
 
 ## <a name="encrypt-the-lab-storage-account"></a>Шифрование учетной записи хранения лаборатории
 Служба хранилища Azure автоматически шифрует данные при их сохранении в облаке. Шифрование службы хранилища Azure защищает ваши данные и помогает удовлетворить ваши обязательства по обеспечению безопасности и соответствия требованиям Организации. Дополнительные сведения см. в статье [Шифрование службы хранилища Azure для неактивных данных](../storage/common/storage-service-encryption.md).

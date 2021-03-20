@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 09/10/2020
 ms.author: azfuncdf
 ms.openlocfilehash: 50ed473d61dff19f41f77a79513c0ddab521e56f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91325748"
 ---
 # <a name="singleton-orchestrators-in-durable-functions-azure-functions"></a>Одноэлементные экземпляры в устойчивых функциях (Функции Azure)
@@ -148,7 +148,7 @@ module.exports = async function(context, req) {
 }
 ```
 
-**__init__.py**
+**__init__. Корректировка**
 
 ```python
 import logging
@@ -184,7 +184,7 @@ async def main(req: func.HttpRequest, starter: str) -> func.HttpResponse:
 
 Сведения о реализации функции Orchestrator не имеют значения. Это может быть обычная функция оркестратора, которая начинает и завершает работу, или же выполняющаяся бесконечно (т. е. [вечная оркестрация](durable-functions-eternal-orchestrations.md)). Важно то, что в любой момент времени выполняется только один экземпляр.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Сведения о собственных функциях HTTP оркестрации](durable-functions-http-features.md)

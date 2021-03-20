@@ -13,10 +13,10 @@ ms.author: kenwith
 ms.reviewer: japere
 ms.custom: contperf-fy21q2
 ms.openlocfilehash: a4fdd8d16854e76cdf20d27a6048694c01de8499
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99253889"
 ---
 # <a name="kerberos-constrained-delegation-for-single-sign-on-sso-to-your-apps-with-application-proxy"></a>Ограниченное делегирование Kerberos для единого входа (SSO) в приложения с помощью прокси приложения
@@ -39,7 +39,7 @@ ms.locfileid: "99253889"
 7. Соединитель отправляет исходный запрос на сервер приложений, используя токен Kerberos, полученный от AD.
 8. Приложение отправляет соединителю ответ, который затем возвращается службе прокси приложения и пользователю.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Прежде чем организовать единый вход для приложений IWA, проверьте готовность следующих параметров и настроек в своей среде.
 
 * Настройте свои приложения, например веб-приложения SharePoint, на использование встроенной проверки подлинности Windows. Дополнительные сведения см. в статье [Включение поддержки протокола проверки подлинности Kerberos](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759186(v=ws.11)) или (для SharePoint) в статье [Планирование проверки подлинности Kerberos в SharePoint 2013](/SharePoint/security-for-sharepoint-server/kerberos-authentication-planning).

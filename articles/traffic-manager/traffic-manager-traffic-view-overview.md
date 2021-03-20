@@ -13,10 +13,10 @@ ms.date: 01/22/2021
 ms.author: duau
 ms.custom: ''
 ms.openlocfilehash: 66376655c61903761d93ea228c6d72fa05734353
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98743055"
 ---
 # <a name="traffic-manager-traffic-view"></a>Представление трафика в диспетчере трафика
@@ -79,7 +79,7 @@ ms.locfileid: "98743055"
 
 При использовании Представление трафика счет выставляется в зависимости от количества точек данных, используемых для создания ценных сведений. Сейчас используется только один тип точек данных — запросы, полученные в профиле диспетчера трафика. Дополнительные сведения о ценах см. на [странице цен на диспетчер трафика](https://azure.microsoft.com/pricing/details/traffic-manager/).
 
-## <a name="faqs"></a>Частые вопросы
+## <a name="faqs"></a>Часто задаваемые вопросы
 
 * [Что делает представление трафика?](./traffic-manager-faqs.md#what-does-traffic-view-do)
 
@@ -99,9 +99,9 @@ ms.locfileid: "98743055"
 
 * [Как выставляются счета за представление трафика?](./traffic-manager-faqs.md#how-does-traffic-view-billing-work)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-- Узнайте о том, [как работает диспетчер трафика](traffic-manager-overview.md)
+- Узнайте, [как работает диспетчер трафика](traffic-manager-overview.md)
 - Узнайте больше о [методах маршрутизации трафика](traffic-manager-routing-methods.md) , поддерживаемых в диспетчере трафика.
 - Узнайте, как [создать профиль диспетчера трафика](./quickstart-create-traffic-manager-profile.md)
 

@@ -6,10 +6,10 @@ ms.reviewer: jasonh
 ms.topic: how-to
 ms.date: 02/09/2018
 ms.openlocfilehash: d04f108b45070b27c4ff9ed833e8fb77b74cd597
-ms.sourcegitcommit: ea551dad8d870ddcc0fee4423026f51bf4532e19
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96754756"
 ---
 # <a name="accessing-resources-with-azure-data-lake-tools"></a>Доступ к ресурсам с помощью средств Azure Data Lake
@@ -98,7 +98,7 @@ ms.locfileid: "96754756"
 
 Вы можете [отслеживать состояние отправки](#check-storage-tasks-status).
 
-### <a name="download-a-file"></a>скачать файл;
+### <a name="download-a-file"></a>Загрузка файла
 
 Скачать файл можно с помощью команды **ADL: Download File** или **ADL: Download File (Advanced)**.
 
@@ -228,7 +228,7 @@ ms.locfileid: "96754756"
 > [!NOTE]
 > Рекомендуем обновить средства Azure Data Lake для Visual Studio до версии 2.3.3000.4 или выше. Предыдущие версии являются устаревшими и недоступными для скачивания.  
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Разработка U-SQL с помощью Python, R, и C Sharp для Azure Data Lake Analytics в VS Code](data-lake-analytics-u-sql-develop-with-python-r-csharp-in-vscode.md)
 - [Локальный запуск и локальная отладка U-SQL в Visual Studio Code](data-lake-tools-for-vscode-local-run-and-debug.md)

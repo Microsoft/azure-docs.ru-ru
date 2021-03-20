@@ -1,6 +1,6 @@
 ---
 title: Устранение неполадок виртуального массива StorSimple | Документация Майкрософт
-description: Узнайте о возможности самостоятельного устранения неполадок, предоставляемой в службе Device Manager StorSimple.
+description: Узнайте о возможности самостоятельного устранения неполадок, предоставляемой в службе диспетчер устройств StorSimple.
 services: storsimple
 documentationcenter: ''
 author: manuaery
@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 11/21/2016
 ms.author: manuaery
 ms.openlocfilehash: 6cb78a7042ca3acbb27f510207783b97f733cfb0
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96005849"
 ---
 # <a name="use-the-storsimple-device-manager-service-to-troubleshoot-the-storsimple-virtual-array"></a>Устранение неполадок виртуального массива StorSimple с помощью диспетчера устройств StorSimple
@@ -42,6 +42,6 @@ ms.locfileid: "96005849"
 
 3. Если не удается найти справочные материалы о проблеме и ее устранении, обратитесь за помощью в службу технической поддержки Майкрософт.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Инструкции по регистрации запроса в службу поддержки](storsimple-virtual-array-log-support-ticket.md)
 

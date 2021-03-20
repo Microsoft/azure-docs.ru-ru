@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 01/14/2020
 ms.openlocfilehash: cddbc4b6a5c7a2c787c8305fdf703e34543746f8
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98929965"
 ---
 # <a name="use-microsoft-cognitive-toolkit-deep-learning-model-with-azure-hdinsight-spark-cluster"></a>Использование модели глубокого обучения Microsoft Cognitive Toolkit в кластере Azure HDInsight Spark
@@ -55,7 +55,7 @@ Microsoft Cognitive Toolkit в кластере Spark можно установ�
 
 Инструкции по использованию портал Azure для выполнения действия сценария см. в разделе [Настройка кластеров HDInsight с помощью действия сценария](../hdinsight-hadoop-customize-cluster-linux.md#script-action-during-cluster-creation). Обязательно укажите приведенные ниже данные для установки Microsoft Cognitive Toolkit. Используйте следующие значения для действия скрипта:
 
-|Свойство |Значение |
+|Свойство. |Значение |
 |---|---|
 |Тип скрипта|- Custom|
 |Имя| Установка MCT|
@@ -79,7 +79,7 @@ Microsoft Cognitive Toolkit в кластере Spark можно установ�
 
 1. После отправки записной книжки щелкните имя записной книжки, а затем следуйте инструкциям в самой записной книжке о том, как загрузить набор данных и выполнить статью.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Обзор: Spark в Azure HDInsight](apache-spark-overview.md)
 

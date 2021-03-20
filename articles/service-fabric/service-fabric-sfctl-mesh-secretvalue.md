@@ -6,10 +6,10 @@ ms.topic: reference
 ms.date: 1/16/2020
 ms.author: jejarry
 ms.openlocfilehash: 985fb505aae96f4ebd1ba8aeb61679081f303243
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86245778"
 ---
 # <a name="sfctl-mesh-secretvalue"></a>sfctl mesh secretvalue
@@ -19,7 +19,7 @@ ms.locfileid: "86245778"
 
 |Команда|Описание|
 | --- | --- |
-| "Удалить" | Удаление указанного значения именованного ресурса секрета. |
+| удалить | Удаление указанного значения именованного ресурса секрета. |
 | list | Вывод списка имен всех значений указанного ресурса секрета. |
 | показать | Выводит указанное значение секретного ресурса. |
 

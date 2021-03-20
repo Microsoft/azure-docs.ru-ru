@@ -9,10 +9,10 @@ ms.date: 10/16/2018
 ms.author: spelluru
 ms.custom: include file
 ms.openlocfilehash: bf107da82fb3f772a341e70ce472f08ea674a450
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "75692533"
 ---
 ### <a name="create-a-storage-account-for-event-processor-host"></a>Создание учетной записи хранения для узла обработчика событий
@@ -32,7 +32,7 @@ ms.locfileid: "75692533"
    2. Выберите **подписку** Azure, содержащую концентратор событий.
    3. Выберите или создайте **группу ресурсов**, содержащую концентратор событий.
    4. Выберите **расположение** для создания ресурса. 
-   5. Выберите **Review + create** (Просмотреть и создать).
+   5. Выберите **Review + create** (Просмотреть и создать).
    
         ![Команда просмотра и создания, создание учетной записи хранения, портал Microsoft Azure](./media/event-hubs-create-storage/review-create.png)
 

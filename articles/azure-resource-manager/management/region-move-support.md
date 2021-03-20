@@ -7,10 +7,10 @@ ms.topic: reference
 ms.date: 08/25/2020
 ms.author: raynew
 ms.openlocfilehash: 18d4d84462d528b718d784ff6a16ecf990ed0d20
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100094021"
 ---
 # <a name="support-for-moving-azure-resources-across-regions"></a>Поддержка перемещения ресурсов Azure в разных регионах
@@ -812,14 +812,14 @@ ms.locfileid: "100094021"
 > [!div class="mx-tableFixed"]
 > | Тип ресурса | Перемещение региона | 
 > | ------------- | ----------- |
-> | servers | Для перемещения существующего сервера можно использовать реплику чтения между регионами. [Подробнее.](../../postgresql/howto-move-regions-portal.md)<br/><br/> Если служба подготовлена с геоизбыточным хранилищем резервных копий, можно использовать геовосстановление для восстановления в других регионах. [Подробнее.](../../mariadb/concepts-business-continuity.md#recover-from-an-azure-regional-data-center-outage)
+> | servers | Для перемещения существующего сервера можно использовать реплику чтения между регионами. [Подробнее](../../postgresql/howto-move-regions-portal.md).<br/><br/> Если служба подготовлена с геоизбыточным хранилищем резервных копий, можно использовать геовосстановление для восстановления в других регионах. [Подробнее](../../mariadb/concepts-business-continuity.md#recover-from-an-azure-regional-data-center-outage).
 
 ## <a name="microsoftdbformysql"></a>Microsoft.DBforMySQL
 
 > [!div class="mx-tableFixed"]
 > | Тип ресурса | Перемещение региона | 
 > | ------------- | ----------- |
-> | servers | Для перемещения существующего сервера можно использовать реплику чтения между регионами. [Подробнее.](../../mysql/howto-move-regions-portal.md)
+> | servers | Для перемещения существующего сервера можно использовать реплику чтения между регионами. [Подробнее](../../mysql/howto-move-regions-portal.md).
 
 ## <a name="microsoftdbforpostgresql"></a>Microsoft.DBforPostgreSQL
 
@@ -1061,7 +1061,7 @@ ms.locfileid: "100094021"
 > [!div class="mx-tableFixed"]
 > | Тип ресурса | Перемещение региона | 
 > | ------------- | ----------- |
-> | accounts | Нет. [Подробнее.](../../azure-monitor/faq.md#how-do-i-move-an-application-insights-resource-to-a-new-region)
+> | accounts | Нет. [Подробнее](../../azure-monitor/faq.md#how-do-i-move-an-application-insights-resource-to-a-new-region).
 > | actiongroups |  Нет | 
 > | activitylogalerts | нет | 
 > | alertrules |  нет | 
@@ -1954,7 +1954,7 @@ ms.locfileid: "100094021"
 > | resourcehealthmetadata | нет | 
 > | runtimes | нет | 
 > | serverfarms | Нет |  
-> | serverfarms / eventgridfilters | Нет
+> | serverfarms / eventgridfilters | N
 > | sites |  нет | 
 > | sites / premieraddons |  Нет |  
 > | sites / slots |  нет |  

@@ -5,10 +5,10 @@ ms.topic: article
 ms.date: 01/23/2019
 ms.custom: seodec18, H1Hack27Feb2017
 ms.openlocfilehash: 83ef385313b035f5e5d7d993e7948725906c75a7
-ms.sourcegitcommit: 7e117cfec95a7e61f4720db3c36c4fa35021846b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99987765"
 ---
 # <a name="push-your-first-image-to-your-azure-container-registry-using-the-docker-cli"></a>Отправка первого образа в реестр контейнеров Azure с помощью DOCKER CLI
@@ -17,7 +17,7 @@ ms.locfileid: "99987765"
 
 На следующих шагах вы скачиваете общедоступный [образ nginx](https://store.docker.com/images/nginx), размещаете его для частного реестра контейнеров Azure, отправляете его в реестр, а затем извлекаете из реестра.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * **Реестр контейнеров Azure** . Создайте реестр контейнеров в подписке Azure. Это можно сделать на [портале Azure](container-registry-get-started-portal.md) или с помощью [Azure CLI](container-registry-get-started-azure-cli.md).
 * **Docker CLI**. Также необходим локально установленный модуль Docker. Docker предоставляет пакеты, которые позволяют быстро настроить Docker в системе под управлением [macOS][docker-mac], [Windows][docker-windows] или [Linux][docker-linux].

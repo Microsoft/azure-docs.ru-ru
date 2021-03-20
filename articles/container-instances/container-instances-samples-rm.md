@@ -4,10 +4,10 @@ description: Поиск образцов шаблонов Azure Resource Manager
 ms.topic: article
 ms.date: 03/07/2019
 ms.openlocfilehash: 6c487087b39244178643fd81364150ceb3ac4a63
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86169652"
 ---
 # <a name="azure-resource-manager-templates-for-azure-container-instances"></a>Шаблоны Azure Resource Manager для службы "Экземпляры контейнеров Azure"
@@ -34,7 +34,7 @@ ms.locfileid: "86169652"
 | **Ресурсы Azure** ||
 | [Создание учетной записи хранения Azure и общей папки][az-files] | Создает учетную запись хранения и общую папку Azure в экземпляре контейнера с помощью Azure CLI.
 
-## <a name="deployment"></a>Развертывание
+## <a name="deployment"></a>Deployment (Развертывание)
 
 Для развертывания ресурсов с помощью шаблонов Resource Manager доступны несколько вариантов:
 

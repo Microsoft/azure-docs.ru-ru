@@ -5,17 +5,17 @@ ms.topic: conceptual
 ms.date: 04/17/2017
 ms.reviewer: sergkanz
 ms.openlocfilehash: 0f9fc96479569c3411024068ed614d422035ab17
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87315977"
 ---
 # <a name="dependency-telemetry-application-insights-data-model"></a>Телеметрия зависимостей: модель данных Application Insights
 
 Телеметрия зависимостей (в [Application Insights](./app-insights-overview.md)) представляет взаимодействие отслеживаемого компонента с удаленным, таким как SQL или конечная точка HTTP.
 
-## <a name="name"></a>name
+## <a name="name"></a>Имя
 
 Имя команды, инициированной этим вызовом зависимости. Низкое значение кратности. Примерами являются имя хранимой процедуры и шаблон пути URL-адреса.
 
@@ -27,11 +27,11 @@ ms.locfileid: "87315977"
 
 Команда, инициированная этим вызовом зависимости. Примерами являются оператор SQL и HTTP URL со всеми параметрами запроса.
 
-## <a name="type"></a>Type
+## <a name="type"></a>Тип
 
 Имя типа зависимости. Низкое значение кратности для логической группировки зависимостей и интерпретации других полей, таких как commandName и resultCode. Примерами являются SQL, таблица Azure и HTTP.
 
-## <a name="target"></a>Назначение
+## <a name="target"></a>Целевой объект
 
 Целевой сайт вызова зависимости. Примерами являются имя сервера, адрес узла. Дополнительные сведения см. на странице [корреляции](./correlation.md).
 
@@ -43,7 +43,7 @@ ms.locfileid: "87315977"
 
 Код результата для вызова зависимости. Примерами являются код ошибки SQL и код состояния HTTP.
 
-## <a name="success"></a>Успех
+## <a name="success"></a>Успешно
 
 Указание того, был ли вызов успешным.
 
