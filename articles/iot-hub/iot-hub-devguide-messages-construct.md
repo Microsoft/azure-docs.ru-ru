@@ -12,10 +12,10 @@ ms.custom:
 - 'Role: Cloud Development'
 - 'Role: IoT Device'
 ms.openlocfilehash: 6d6b7122963b51619f26b8d02a8be4ad39261afb
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92147702"
 ---
 # <a name="create-and-read-iot-hub-messages"></a>Создание и чтение сообщений Центра Интернета вещей
@@ -61,7 +61,7 @@ ms.locfileid: "92147702"
 | iothub-connection-module-id |Центр Интернета вещей устанавливает этот идентификатор в сообщениях, отправляемых с устройства в облако. Содержит идентификатор **moduleId** устройства, с которого было отправлено сообщение. | нет | connectionModuleId |
 | iothub-connection-auth-generation-id |Центр Интернета вещей устанавливает этот идентификатор в сообщениях, отправляемых с устройства в облако. Содержит идентификатор **generationId** устройства, с которого было отправлено сообщение (согласно разделу [Свойства удостоверений устройств](iot-hub-devguide-identity-registry.md#device-identity-properties)). | нет |connectionDeviceGenerationId |
 | iothub-connection-auth-method |Центр Интернета вещей устанавливает этот метод проверки подлинности в сообщениях, отправляемых с устройства в облако. Это свойство содержит сведения о методе проверки подлинности, используемом для аутентификации устройства, отправляющего сообщение.| нет | connectionAuthMethod |
-| DT — схема схемы | Это значение задается центром Интернета вещей в сообщениях, отправляемых с устройства в облако. Он содержит идентификатор модели устройства, заданный в подключении устройства. | Нет | Недоступно |
+| DT — схема схемы | Это значение задается центром Интернета вещей в сообщениях, отправляемых с устройства в облако. Он содержит идентификатор модели устройства, заданный в подключении устройства. | Нет | Н/Д |
 | DT-subject | Имя компонента, отправляющего сообщения, отправляемые с устройства в облако. | Да | Н/Д |
 
 ## <a name="system-properties-of-c2d-iot-hub-messages"></a>Системные свойства сообщений Центра Интернета вещей **C2D**
@@ -90,7 +90,7 @@ ms.locfileid: "92147702"
 |Метод проверки подлинности подключения|iothub-connection-auth-method|connectionAuthMethod|iothub-connection-auth-method|iothub-connection-auth-method|
 |сontentType|content-type|сontentType|ContentType|iothub-content-type|
 |contentEncoding|content-encoding|contentEncoding|ContentEncoding|iothub-content-encoding|
-|iothub-enqueuedtime|iothub-enqueuedtime|enqueuedTime| Недоступно |iothub-enqueuedtime|
+|iothub-enqueuedtime|iothub-enqueuedtime|enqueuedTime| Н/Д |iothub-enqueuedtime|
 |CorrelationId|correlation-id|correlationId|CorrelationId|correlation-id|
 |DT — схема схемы|DT — схема схемы|DT — схема схемы|DT — схема схемы|DT — схема схемы|
 |DT-subject|DT-subject|DT-subject|DT-subject|DT-subject|

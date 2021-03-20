@@ -12,10 +12,10 @@ ms.date: 07/24/2019
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 07897823a3ba3b83e240e8e8dc005ea13b036fce
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94952052"
 ---
 # <a name="application-types-that-can-be-used-in-active-directory-b2c"></a>Типы приложений, которые можно использовать в Active Directory B2C
@@ -162,6 +162,6 @@ Accept: application/json
 
 Чтобы удалить приложение, перейдите на [портал регистрации приложений](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) и удалите его. Приложения отображаются только для владельцев. Прав администратора клиента недостаточно.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте больше о встроенных политиках, предоставляемых [потоками пользователей в Azure Active Directory B2C](user-flow-overview.md).

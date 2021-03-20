@@ -17,10 +17,10 @@ ms.reviewer: harshja
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ebef93455414c114fb60df9af8ebc629769a33e6
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99254434"
 ---
 # <a name="set-a-custom-home-page-for-published-apps-by-using-azure-ad-application-proxy"></a>Настройка пользовательской домашней страницы для опубликованных приложений с помощью прокси приложения Azure AD
@@ -63,7 +63,7 @@ URL-адрес домашней страницы можно задать либ�
 
    ![Страница фирменной символики для зарегистрированного приложения, показывающего поле URL-адреса домашней страницы](media/application-proxy-configure-custom-home-page/app-proxy-app-branding.png)
 
-1. Нажмите **Сохранить**.
+1. Щелкните **Сохранить**.
 
 ## <a name="change-the-home-page-with-powershell"></a>Изменение домашней страницы с помощью PowerShell
 

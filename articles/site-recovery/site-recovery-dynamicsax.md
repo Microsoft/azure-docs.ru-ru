@@ -6,10 +6,10 @@ manager: rochakm
 ms.topic: how-to
 ms.date: 11/27/2018
 ms.openlocfilehash: dfa3c108d00aeba9c7d42e96e7a40736a087a508
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86133822"
 ---
 # <a name="set-up-disaster-recovery-for-a-multitier-dynamics-ax-application"></a>Настройка аварийного восстановления для многоуровневого приложения Dynamics AX   
@@ -178,7 +178,7 @@ ms.locfileid: "86133822"
 
 Дополнительные сведения о выполнении восстановления размещения см. в статье [Восстановление размещения виртуальных машин VMware и физических серверов на локальном сайте](./vmware-azure-failback.md).
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 С помощью Site Recovery можно создать полностью автоматизированный план аварийного восстановления для приложения Dynamics AX. Отработку отказа можно запустить из любого места в течение нескольких секунд в случае сбоя и восстановить таким образом работоспособность приложения за считанные минуты.
 
 ## <a name="next-steps"></a>Дальнейшие действия

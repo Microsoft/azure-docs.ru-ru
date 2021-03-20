@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: bced2345473dbcbb5b9adf0269de0bef0549e862
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98742375"
 ---
 # <a name="configuring-a-custom-domain-name-for-an-azure-cloud-service-classic"></a>Настройка пользовательского доменного имени для облачной службы Azure (классическая модель)
@@ -127,7 +127,7 @@ ms.locfileid: "98742375"
 > 
 > 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Управление облачными службами](cloud-services-how-to-manage-portal.md)
 * [Сопоставление содержимого CDN с пользовательским доменом](../cdn/cdn-map-content-to-custom-domain.md)
 * [Общая настройка облачной службы](cloud-services-how-to-configure-portal.md).

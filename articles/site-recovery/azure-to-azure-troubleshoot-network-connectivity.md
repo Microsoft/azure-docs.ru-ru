@@ -6,10 +6,10 @@ manager: rochakm
 ms.topic: how-to
 ms.date: 04/06/2020
 ms.openlocfilehash: 24ffce1528aa5c82fec9666fa0cb7b8717107f54
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97652268"
 ---
 # <a name="troubleshoot-azure-to-azure-vm-network-connectivity-issues"></a>Устранение неполадок с сетевым подключением Azure к виртуальной машине Azure
@@ -108,7 +108,7 @@ ms.locfileid: "97652268"
 
 #### <a name="resolution"></a>Решение
 
-Если вы используете правило или прокси-сервер брандмауэра группы безопасности сети Azure (NSG) для управления исходящими сетевыми подключениями на компьютере, необходимо разрешить несколько тегов служб. [Дополнительные сведения](azure-to-azure-about-networking.md#outbound-connectivity-using-service-tags).
+Если вы используете правило или прокси-сервер брандмауэра группы безопасности сети Azure (NSG) для управления исходящими сетевыми подключениями на компьютере, необходимо разрешить несколько тегов служб. [Подробнее](azure-to-azure-about-networking.md#outbound-connectivity-using-service-tags).
 
 ### <a name="issue-4-azure-to-azure-replication-failed-when-the-network-traffic-goes-through-on-premises-proxy-server-151072"></a>Причина 4. сбой репликации из Azure в Azure, если сетевой трафик проходит через локальный прокси-сервер (151072)
 

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 02/12/2021
 ms.author: allensu
 ms.openlocfilehash: 0d7d08eb5e77e744fb6ce0abefc550bc79de4c8c
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100519088"
 ---
 # <a name="retrieve-load-balancer-information-by-using-the-azure-instance-metadata-service"></a>Получение сведений о подсистеме балансировки нагрузки с помощью службы метаданных экземпляра Azure
@@ -39,7 +39,7 @@ IMDS (служба метаданных экземпляра Azure) предос
 
 Если не удается получить ответ на метаданные после нескольких попыток, создайте ошибку поддержки в портал Azure.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о [службе метаданных экземпляров Azure](../virtual-machines/windows/instance-metadata-service.md)
 
 [Развертывание стандартной подсистемы балансировки нагрузки](quickstart-load-balancer-standard-public-portal.md)

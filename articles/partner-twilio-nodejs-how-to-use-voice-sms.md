@@ -10,10 +10,10 @@ ms.topic: article
 ms.date: 11/25/2014
 ms.author: gwallace
 ms.openlocfilehash: c4b1c506ff0e78e5e304ceb1682c73f9cd784c95
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88080547"
 ---
 # <a name="using-twilio-for-voice-voip-and-sms-messaging-in-azure"></a>Использование Twilio для голосовой связи, VoIP и SMS сообщений в Azure
@@ -229,7 +229,7 @@ app.post('/sms', (request, response) => {
 
 <a name="nextsteps"></a>
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 Вы узнали основные сведения об использовании node.js и Twilio для создания приложений, поддерживающих связь. Но эти примеры открывают лишь некоторые возможности Twilio и node.js. Для получения дополнительных сведений об использовании Twilio с node.js обратитесь к следующим ресурсам:
 
 * [Официальные документы по модулю][docs]

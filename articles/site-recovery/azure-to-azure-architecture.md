@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 3/13/2020
 ms.author: raynew
 ms.openlocfilehash: 64d1084fd7025c74676977f065062e5e94dabf1d
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97652251"
 ---
 # <a name="azure-to-azure-disaster-recovery-architecture"></a>Архитектура аварийного восстановления из Azure в Azure
@@ -62,7 +62,7 @@ ms.locfileid: "97652251"
 
 По умолчанию при включении репликации виртуальной машины Azure Site Recovery создает политику репликации, стандартные параметры которой представлены в следующей таблице.
 
-**Параметр политики** | **Сведения** | **Default**
+**Параметр политики** | **Сведения** | **По умолчанию**
 --- | --- | ---
 **Хранение точки восстановления** | Указывает, как долго в Site Recovery хранятся точки восстановления. | 24 часа
 **Периодичность создания моментальных снимков с согласованием приложений** | Определяет, как часто Site Recovery создает моментальные снимки с согласованностью на уровне приложений. | Каждые четыре часа

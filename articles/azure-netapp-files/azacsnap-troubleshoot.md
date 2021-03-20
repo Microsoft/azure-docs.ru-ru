@@ -15,10 +15,10 @@ ms.topic: troubleshooting
 ms.date: 12/14/2020
 ms.author: phjensen
 ms.openlocfilehash: 903cb3323b9441ec8bb382054f065760875e3e89
-ms.sourcegitcommit: 8c3a656f82aa6f9c2792a27b02bbaa634786f42d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97632831"
 ---
 # <a name="troubleshoot-azure-application-consistent-snapshot-tool-preview"></a>Устранение неполадок инструмента моментальных снимков для приложений Azure (Предварительная версия)
@@ -27,7 +27,7 @@ ms.locfileid: "97632831"
 
 Ниже приведены распространенные проблемы, которые могут возникнуть при выполнении команд. Выполните инструкции по устранению проблемы, описанные в этой статье. Если по-прежнему возникают проблемы, откройте запрос на обслуживание из портал Azure и назначьте запрос в очередь SAP HANA крупные экземпляры, чтобы служба поддержки Майкрософт ответить.
 
-## <a name="log-files"></a>файлы журналов.
+## <a name="log-files"></a>Файлы журнала
 
 Одним из лучших источников информации для отладки любых ошибок с Азакснап являются файлы журналов.  
 

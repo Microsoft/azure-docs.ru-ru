@@ -8,10 +8,10 @@ ms.topic: troubleshooting
 ms.date: 01/30/2017
 ms.author: duau
 ms.openlocfilehash: 7c83b6d25936e184c70d4bf0a51636a3986bf4b2
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89394845"
 ---
 # <a name="getting-arp-tables-in-the-classic-deployment-model"></a>Получение таблиц ARP в классической модели развертывания
@@ -176,7 +176,7 @@ Age InterfaceProperty IpAddress  MacAddress
 * Вы не увидите таблицу ARP для пиринга при наличии проблем на стороне сети Майкрософт.
 * Отправьте запрос на поддержку с помощью функции [Справка и поддержка Microsoft Azure](https://portal.azure.com/?#blade/Microsoft_Azure_Support/HelpAndSupportBlade). Укажите, что у вас возникла проблема с возможностями подключения уровня 2.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Проверка конфигураций уровня 3 для канала ExpressRoute.
   * Получение сводки маршрутов для определения состояния сеансов BGP.
   * Получение таблицы маршрутов для определения того, какие префиксы объявляются в ExpressRoute.

@@ -10,10 +10,10 @@ ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
 ms.openlocfilehash: 17bdae658c7095c44a7ae9f30fd85a6c45bf1546
-ms.sourcegitcommit: 8b4b4e060c109a97d58e8f8df6f5d759f1ef12cf
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96779980"
 ---
 # <a name="scale-out-your-azure-arc-enabled-postgresql-hyperscale-server-group-by-adding-more-worker-nodes"></a>Масштабирование группы масштабируемых серверов PostgreSQL в службе "Дуга Azure" путем добавления дополнительных рабочих узлов
@@ -160,7 +160,7 @@ azdata arc postgres server edit -n <server group name> -w <target number of work
 azdata arc postgres server edit -n postgres01 -w 4
 ```
 
-После добавления узлов вы увидите состояние ожидания для группы серверов. Пример.
+После добавления узлов вы увидите состояние ожидания для группы серверов. Пример:
 ```console
 azdata arc postgres server list
 ```
@@ -182,7 +182,7 @@ postgres01  Pending 4/5    4
 azdata arc postgres server list
 ```
 
-Он возвращает список групп серверов, созданных в пространстве имен, и указывает их количество рабочих узлов. Пример.
+Он возвращает список групп серверов, созданных в пространстве имен, и указывает их количество рабочих узлов. Пример:
 ```console
 Name        State    Workers
 ----------  -------  ---------
@@ -195,7 +195,7 @@ postgres01  Ready    4
 kubectl get postgresql-12
 ```
 
-Он возвращает список групп серверов, созданных в пространстве имен, и указывает их количество рабочих узлов. Пример.
+Он возвращает список групп серверов, созданных в пространстве имен, и указывает их количество рабочих узлов. Пример:
 ```console
 NAME         STATE   READY-PODS   EXTERNAL-ENDPOINT   AGE
 postgres01   Ready   4/4          10.0.0.4:31066      4d20h

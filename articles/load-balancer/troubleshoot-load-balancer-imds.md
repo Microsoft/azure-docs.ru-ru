@@ -1,5 +1,5 @@
 ---
-title: Распространенные коды ошибок службы метаданных экземпляров Azure (IMDS)
+title: Распространенные коды ошибок для Службы метаданных экземпляров (IMDS) Azure
 titleSuffix: Azure Load Balancer
 description: Обзор распространенных кодов ошибок и соответствующих методов их устранения для службы метаданных экземпляров Azure (IMDS)
 services: load-balancer
@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.date: 02/12/2021
 ms.author: allensu
 ms.openlocfilehash: e932e211996a05b2740613381735a7de3492e5bf
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100519190"
 ---
 # <a name="error-codes-common-error-codes-when-using-imds-to-retrieve-load-balancer-information"></a>Коды ошибок: распространенные коды ошибок при использовании IMDS для получения сведений о подсистеме балансировки нагрузки
@@ -39,7 +39,7 @@ ms.locfileid: "100519190"
 | 503 | Внутренняя служба недоступна. Повторите попытку позже  | Код ошибки указывает, что API временно недоступен. Повторите запрос позже. |
 |  |  |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о [службе метаданных экземпляров Azure](../virtual-machines/windows/instance-metadata-service.md)
 

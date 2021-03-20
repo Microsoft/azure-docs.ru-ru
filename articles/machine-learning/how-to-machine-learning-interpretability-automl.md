@@ -11,10 +11,10 @@ ms.author: mithigpe
 author: minthigpen
 ms.date: 07/09/2020
 ms.openlocfilehash: 709c85bed4a028c6c168c79cd9fffd6b7b40cb68
-ms.sourcegitcommit: 49ea056bbb5957b5443f035d28c1d8f84f5a407b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100008049"
 ---
 # <a name="interpretability-model-explanations-in-automated-machine-learning-preview"></a>Интерпретируемость: пояснения к модели в автоматизированном машинном обучении (предварительная версия)
@@ -31,7 +31,7 @@ ms.locfileid: "100008049"
 - Включите визуализации, чтобы видеть закономерности в данных и объяснениях.
 - Реализуйте интерпретируемость во время вывода или оценки.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Функции интерпретации. Выполните команду `pip install azureml-interpret` , чтобы получить необходимый пакет.
 - Знания о создании экспериментов Аутомл. Дополнительные сведения об использовании пакета SDK для Машинное обучение Azure см. в руководстве по [модели регрессии](tutorial-auto-train-models.md) или в статье [Настройка экспериментов аутомл](how-to-configure-auto-train.md).

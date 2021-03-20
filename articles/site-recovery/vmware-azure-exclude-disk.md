@@ -7,10 +7,10 @@ ms.date: 12/10/2019
 ms.author: mayg
 ms.topic: conceptual
 ms.openlocfilehash: c4842172ff181b5cdbe7f6fecf69da8755ae43fa
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86129870"
 ---
 # <a name="exclude-disks-from-vmware-vm-replication-to-azure"></a>Исключение дисков из репликации виртуальных машин VMware в Azure

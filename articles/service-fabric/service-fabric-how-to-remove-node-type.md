@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 08/11/2020
 ms.author: chrpap
 ms.openlocfilehash: ede999bee9ce1a4a9dd10652a2c52a840d5b24be
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88163583"
 ---
 # <a name="how-to-remove-a-service-fabric-node-type"></a>Удаление типа узла Service Fabric
@@ -193,7 +193,7 @@ Service Fabric "координирует" базовые изменения и �
 > [!Note]
 > Этот шаг является необязательным, если тот же Load Balancer и IP-адрес используется повторно между типами узлов.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения о [характеристиках устойчивости](./service-fabric-cluster-capacity.md#durability-characteristics-of-the-cluster) кластера.
 - Дополнительные сведения о [типах узлов и масштабируемых наборах виртуальных машин](service-fabric-cluster-nodetypes.md).
 - Дополнительные сведения о [масштабировании кластеров Service Fabric](service-fabric-cluster-scaling.md).

@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: 82aa1579a1f7feb36732153341e1eacf266a7218
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98743038"
 ---
 # <a name="enable-communication-for-role-instances-in-azure-cloud-services-classic"></a>Включение взаимодействия для экземпляров ролей в облачных службах Azure (классическая модель)
@@ -368,7 +368,7 @@ namespace WorkerRole1
 
 Справочник по схеме XML для элементов, используемых выше, можно найти [здесь](/previous-versions/azure/reference/gg557551(v=azure.100)).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительная информация о [модели](cloud-services-model-and-package.md)облачной службы
 
 

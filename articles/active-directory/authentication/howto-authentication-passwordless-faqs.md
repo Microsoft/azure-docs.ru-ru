@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: aakapo
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ca4943293f9474d4089267d05460d6d8766b79e6
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101646390"
 ---
 # <a name="deployment-frequently-asked-questions-faqs-for-hybrid-fido2-security-keys-in-azure-ad"></a>Часто задаваемые вопросы о развертывании для гибридных FIDO2 ключей безопасности в Azure AD 
@@ -66,7 +66,7 @@ ms.locfileid: "101646390"
 
 Нет, в настоящее время нет.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Работает ли эта функция при отсутствии подключения к Интернету?](#does-this-feature-work-if-theres-no-internet-connectivity)
 * [Каковы конкретные конечные точки, которые должны быть открыты для Azure AD?](#what-are-the-specific-end-points-that-are-required-to-be-open-to-azure-ad)
@@ -176,7 +176,7 @@ nltest /dsgetdc:<domain> /keylist /kdc
 
 Существует два компонента: локальная среда AD DS и клиент Azure AD.
 
-**Службы домен Active Directory (AD DS)**
+**Доменные службы Active Directory (AD DS)**
 
 Сервер Kerberos Azure AD представлен в локальной среде AD DS в качестве объекта контроллера домена (DC). Этот объект контроллера домена состоит из нескольких объектов:
 

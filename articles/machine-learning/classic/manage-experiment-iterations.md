@@ -10,10 +10,10 @@ ms.author: keli19
 ms.custom: seodec18
 ms.date: 03/20/2017
 ms.openlocfilehash: 419a696da1244afab7aa03cd8c4521ea819a5298
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100515960"
 ---
 # <a name="manage-experiment-runs-in-azure-machine-learning-studio-classic"></a>Управление запусками экспериментов в Машинное обучение Azure Studio (классическая модель)

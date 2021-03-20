@@ -8,10 +8,10 @@ ms.date: 11/28/2018
 ms.author: thfalgou
 ms.custom: fasttrack-edit
 ms.openlocfilehash: 3ff8406a3634fa946ab8ce7aca694bbc57d556a5
-ms.sourcegitcommit: 8f0803d3336d8c47654e119f1edd747180fe67aa
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97976407"
 ---
 # <a name="best-practices-for-business-continuity-and-disaster-recovery-in-azure-kubernetes-service-aks"></a>Рекомендации по обеспечению непрерывности бизнес-процессов и аварийного восстановления в Службе Azure Kubernetes (AKS)
@@ -131,7 +131,7 @@ ms.locfileid: "97976407"
 
 В этой статье рассматриваются вопросы обеспечения непрерывности бизнес-процессов и аварийного восстановления для кластеров AKS. Дополнительные сведения об операциях кластера в AKS см. в следующих статьях о рекомендациях:
 
-* [Мультитенантность и изоляция кластеров][aks-best-practices-cluster-isolation]
+* [Мультитенантность и изоляция кластера][aks-best-practices-cluster-isolation]
 * [Основные функции планировщика Kubernetes][aks-best-practices-scheduler]
 
 <!-- INTERNAL LINKS -->
