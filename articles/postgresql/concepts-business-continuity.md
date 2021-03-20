@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 08/07/2020
 ms.openlocfilehash: f8d8547c2d4900e6258f7360c50d8dfc17157832
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100517250"
 ---
 # <a name="overview-of-business-continuity-with-azure-database-for-postgresql---single-server"></a>Общие сведения о непрерывности бизнес-процессов с помощью базы данных Azure для PostgreSQL — один сервер
@@ -63,12 +63,12 @@ ms.locfileid: "100517250"
 ## <a name="cross-region-read-replicas"></a>Реплики чтения между регионами
 Для повышения непрерывности бизнес-процессов и планирования аварийного восстановления можно использовать реплики чтения в разных регионах. Реплики чтения обновляются асинхронно с помощью технологии физической репликации PostgreSQL и могут отставать от основного. Дополнительные сведения о репликах чтения, доступных регионах и отработки отказа см. в [статье основные понятия чтения реплик](concepts-read-replicas.md). 
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 ### <a name="where-does-azure-database-for-postgresql-store-customer-data"></a>Где база данных Azure для PostgreSQL хранит данные клиента?
 По умолчанию база данных Azure для PostgreSQL не перемещает и не хранит данные клиента вне региона, в котором они развернуты. Тем не менее клиенты могут дополнительно включить [геоизбыточные резервные копии](concepts-backup.md#backup-redundancy-options) или создать [реплику чтения между регионами](concepts-read-replicas.md#cross-region-replication) для хранения данных в другом регионе.
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения об автоматическом создании резервных копий см. в [этой статье](concepts-backup.md). 
 - Дополнительные сведения см. в статьях [Как заархивировать и восстановить сервер в базе данных Azure для PostgreSQL с помощью портала Azure](howto-restore-server-portal.md) или [Как выполнить резервное копирование и восстановление сервера в базе данных Azure для PostgreSQL с помощью Azure CLI](howto-restore-server-cli.md).
 - См. дополнительные сведения в статье [Реплики чтения в Базе данных Azure для PostgreSQL](concepts-read-replicas.md).

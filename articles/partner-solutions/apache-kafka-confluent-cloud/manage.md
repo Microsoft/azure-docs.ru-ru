@@ -7,10 +7,10 @@ ms.date: 02/08/2021
 author: tfitzmac
 ms.author: tomfitz
 ms.openlocfilehash: f8a54096ecda4729f7070120a02be3055f933cea
-ms.sourcegitcommit: 7e117cfec95a7e61f4720db3c36c4fa35021846b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99989143"
 ---
 # <a name="manage-the-confluent-cloud-resource"></a>Управление ресурсом Confluent Cloud
@@ -84,6 +84,6 @@ ms.locfileid: "99989143"
 
     :::image type="content" source="media/support-request.png" alt-text="Создание запроса на поддержку из экземпляра.":::
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об устранении неполадок см. в разделе [Устранение неполадок Apache Kafka для решения облачных решений для Fluent](troubleshoot.md).

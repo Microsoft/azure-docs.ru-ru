@@ -7,10 +7,10 @@ ms.date: 03/30/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 0152dc5102fd3f77418448234cab1234d25b97c6
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88008157"
 ---
 # <a name="delegated-access-in-windows-virtual-desktop-classic"></a>Делегированный доступ в виртуальном рабочем столе Windows (классическая модель)
@@ -29,7 +29,7 @@ ms.locfileid: "88008157"
     * Встроенные роли
 * Область
     * Группы клиентов
-    * Клиенты
+    * Клиентов
     * Пулы узлов
     * Группы приложений
 
@@ -64,7 +64,7 @@ ms.locfileid: "88008157"
 * **SignInName**: адрес электронной почты пользователя или имя участника-пользователя.
 * **TenantName**: имя клиента удаленный рабочий стол.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Более полный список командлетов PowerShell, которые может использовать каждая роль, см. в [справочнике по PowerShell](/powershell/windows-virtual-desktop/overview).
 

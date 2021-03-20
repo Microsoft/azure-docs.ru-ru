@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 05/24/2019
 ms.author: alkohli
 ms.openlocfilehash: 80c4d8a70454c007ac45f588e59c03ef45f10933
-ms.sourcegitcommit: 7dacbf3b9ae0652931762bd5c8192a1a3989e701
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92125070"
 ---
 # <a name="use-azure-data-box-or-azure-data-box-heavy-to-send-data-to-appropriate-azure-storage-blob-tier"></a>Использование Azure Data Box или Azure Data Box Heavy для отправки данных на соответствующий уровень BLOB-объектов службы хранилища Azure
@@ -114,6 +114,6 @@ ms.locfileid: "92125070"
    > [!TIP]
    > Если вам нужно, чтобы данные архивировались во время принятия, задайте горячий как уровень по умолчанию для учетной записи. Если уровень по умолчанию — "холодный" и данные немедленно перемещаются на архивный уровень, тогда штраф за досрочное удаление составляет 30 дней.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 -  Узнайте, как разрешать [распространенные сценарии распределения данных по уровням с помощью правил политики жизненного цикла](../storage/blobs/storage-lifecycle-management-concepts.md#examples).

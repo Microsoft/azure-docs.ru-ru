@@ -4,10 +4,10 @@ description: Ссылка на событие создания пула паке
 ms.topic: reference
 ms.date: 10/08/2020
 ms.openlocfilehash: f8b020401443b2a9e80837599d6fd4b2a3001d27
-ms.sourcegitcommit: e15c0bc8c63ab3b696e9e32999ef0abc694c7c41
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97609009"
 ---
 # <a name="pool-create-event"></a>Событие создания пула
@@ -49,7 +49,7 @@ ms.locfileid: "97609009"
 }
 ```
 
-|Элемент|Тип|Примечания|
+|Элемент|Type|Примечания|
 |-------------|----------|-----------|
 |`id`|Строка|Идентификатор пула.|
 |`displayName`|Строка|Отображаемое имя пула.|

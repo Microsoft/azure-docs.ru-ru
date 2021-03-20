@@ -7,10 +7,10 @@ ms.manager: bsiva
 ms.topic: how-to
 ms.date: 03/12/2020
 ms.openlocfilehash: 8a174c3b2bfb390eb7d691ae1bdcb0e28dde9032
-ms.sourcegitcommit: ea551dad8d870ddcc0fee4423026f51bf4532e19
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96751093"
 ---
 # <a name="migrate-vmware-vms-to-azure-vms-enabled-with-server-side-encryption-and-customer-managed-keys"></a>Перенос виртуальных машин VMware на виртуальные машины Azure, поддерживающие шифрование на стороне сервера и управляемые клиентом ключи
@@ -23,7 +23,7 @@ ms.locfileid: "96751093"
 
 Дополнительные [сведения](../virtual-machines/disk-encryption.md) о шифровании на стороне сервера (SSE) с помощью управляемых пользователем ключей (CMK) для управляемых дисков.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - [Ознакомьтесь с руководством](tutorial-migrate-vmware.md) по переносу виртуальных машин VMware в Azure с помощью безагентной репликации, чтобы понять требования к инструментам.
 - [Выполните эти инструкции](./create-manage-projects.md) , чтобы создать проект службы "миграция Azure" и добавить в проект средство **миграции для Azure Migration: Server** .
@@ -55,7 +55,7 @@ ms.locfileid: "96751093"
 
 ## <a name="create-a-disk-encryption-set"></a>Создание набора шифрования дисков
 
-Объект "набор шифрования дисков" сопоставляет управляемые диски с Key Vault, который содержит CMK для использования в SSE. Чтобы реплицировать виртуальные машины с помощью CMK, необходимо создать набор шифрования дисков и передать его в качестве входных данных для операции репликации.
+Объект набора шифрования дисков сопоставляет управляемые диски с Key Vault, где содержится CMK для использования в SSE. Чтобы реплицировать виртуальные машины с помощью CMK, необходимо создать набор шифрования дисков и передать его в качестве входных данных для операции репликации.
 
 Выполните [приведенный ниже пример,](../virtual-machines/windows/disks-enable-customer-managed-keys-powershell.md) чтобы создать набор шифрования дисков с помощью Azure PowerShell. Убедитесь, что набор шифрования дисков создан в целевой подписке, в которую выполняется миграция виртуальных машин, и в целевом регионе Azure для миграции.
 
@@ -271,6 +271,6 @@ DeploymentDebugLogLevel :
 
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Мониторинг состояния репликации](tutorial-migrate-vmware.md#track-and-monitor) с помощью портала и выполнение тестов миграции и миграции.

@@ -9,10 +9,10 @@ services: iot-hub
 ms.topic: conceptual
 ms.date: 04/09/2018
 ms.openlocfilehash: 8aebb5b6f6a3ac53bc49fd1d2f75de88667865fb
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92147639"
 ---
 # <a name="use-message-routes-and-custom-endpoints-for-device-to-cloud-messages"></a>Использование правил маршрутизации и пользовательских конечных точек для сообщений, отправляемых с устройства в облако
@@ -23,8 +23,8 @@ ms.locfileid: "92147639"
 
 | Свойство      | Описание |
 | ------------- | ----------- |
-| **имя**;      | Уникальное имя, определяющее запрос. |
-| **Source**    | Источник потока данных, в отношении которого выполняются действия. Например, телеметрия устройства. |
+| **Имя**      | Уникальное имя, определяющее запрос. |
+| **Источник**    | Источник потока данных, в отношении которого выполняются действия. Например, телеметрия устройства. |
 | **Condition** | Выражение для запроса маршрутизации, вычисляется для свойств приложения сообщений, свойств системы, текста сообщения, тегов двойника устройства и свойств двойника устройства, чтобы определить, соответствует ли сообщение конечной точке. Дополнительные сведения о построении запроса см. в статье [Синтаксис запросов маршрутизации сообщений центра Интернета вещей](iot-hub-devguide-routing-query-syntax.md). |
 | **Конечная точка**  | Имя конечной точки, в которую Центр Интернета вещей отправляет сообщения, соответствующие запросу. Рекомендуется выбрать конечную точку в том же регионе, в котором находится Центр Интернета вещей. |
 
@@ -46,9 +46,9 @@ ms.locfileid: "92147639"
 
 * Считыванию данных из [контейнеров службы хранилища Azure](../storage/blobs/storage-blobs-introduction.md).
 
-* Чтение из [концентраторов событий](../event-hubs/event-hubs-dotnet-standard-getstarted-send.md).
+* Считыванию данных из [Центров событий](../event-hubs/event-hubs-dotnet-standard-getstarted-send.md).
 
-* Чтение из [очередей служебной шины](../service-bus-messaging/service-bus-dotnet-get-started-with-queues.md).
+* Считыванию данных из [очередей служебной шины](../service-bus-messaging/service-bus-dotnet-get-started-with-queues.md).
 
 * Считыванию данных из [разделов служебной шины](../service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions.md).
 

@@ -8,10 +8,10 @@ ms.reviewer: spelluru
 ms.date: 07/08/2020
 ms.topic: article
 ms.openlocfilehash: 2a7cc864366bd9a35c96dd453c0dc68f77d8abd9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86171454"
 ---
 # <a name="tutorial-publish-subscribe-to-events-locally"></a>Учебник. Публикация, подписка на события локально
@@ -55,7 +55,7 @@ ms.locfileid: "86171454"
 
    * **Имя**: евентгридмодуле
    * **URI изображения**: `mcr.microsoft.com/azure-event-grid/iotedge:latest`
-   * **Параметры создания контейнера.**
+   * **Параметры создания контейнера**:
 
    [!INCLUDE [event-grid-edge-module-version-update](../../../includes/event-grid-edge-module-version-update.md)]
 
@@ -108,7 +108,7 @@ ms.locfileid: "86171454"
 
 1. В разделе "Проверка" показан манифест развертывания JSON, созданный на основе параметров, сделанных в предыдущем разделе. Убедитесь, что в JSON отображаются оба модуля: **евентгридмодуле** и **подписчик** . 
 1. Просмотрите сведения о развертывании, а затем выберите **Отправить**. После отправки развертывания вы вернетесь на страницу **устройства** .
-1. Убедитесь, что в **разделе модули**указаны оба модуля: **eventgrid** и **подписчик** . И убедитесь, что для столбцов, **указанных в** параметре развертывание и **отчеты по** столбцам устройства, задано значение **Да**.
+1. Убедитесь, что в **разделе модули** указаны оба модуля: **eventgrid** и **подписчик** . И убедитесь, что для столбцов, **указанных в** параметре развертывание и **отчеты по** столбцам устройства, задано значение **Да**.
 
     Запуск модуля на устройстве может занять несколько секунд. Затем информация о нем передается в Центр Интернета вещей. Обновите страницу, чтобы увидеть обновленное состояние.
 
@@ -139,7 +139,7 @@ ms.locfileid: "86171454"
     curl -k -H "Content-Type: application/json" -X GET -g https://<your-edge-device-public-ip-here>:4438/topics/sampleTopic1?api-version=2019-01-01-preview
     ```
 
-   Образец вывода:
+   Пример результатов выполнения:
 
    ```json
         [
@@ -189,7 +189,7 @@ ms.locfileid: "86171454"
     curl -k -H "Content-Type: application/json" -X GET -g https://<your-edge-device-public-ip-here>:4438/topics/sampleTopic1/eventSubscriptions/sampleSubscription1?api-version=2019-01-01-preview
     ```
 
-    Образец вывода:
+    Пример результатов выполнения:
 
    ```json
         {
@@ -250,7 +250,7 @@ ms.locfileid: "86171454"
     sudo docker logs subscriber
     ```
 
-    Образец вывода:
+    Пример результатов выполнения:
 
     ```sh
         Received Event:

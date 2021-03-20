@@ -4,10 +4,10 @@ description: Описывает пакеты SDK для службы "Сетка
 ms.topic: reference
 ms.date: 07/07/2019
 ms.openlocfilehash: c5b79f7cb7ae0112e2dacd077289786fc7b5c956
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100516766"
 ---
 # <a name="event-grid-sdks-for-management-and-publishing"></a>Пакеты SDK для управления службой "Сетка событий Azure" и публикации в ней
@@ -39,7 +39,7 @@ ms.locfileid: "100516766"
 | Ruby | [azure_event_grid](https://rubygems.org/gems/azure_event_grid) | | 
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Примеры приложений см. на странице [с примерами кода для Сетки событий](https://azure.microsoft.com/resources/samples/?sort=0&service=event-grid).
 * См. дополнительные сведения о [службе "Сетка событий Azure"](overview.md).

@@ -4,10 +4,10 @@ description: Описывает разницу между плоскостью �
 ms.topic: conceptual
 ms.date: 09/10/2020
 ms.openlocfilehash: f478037c3e83c1d28cc900d64512a41619628dd7
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91371275"
 ---
 # <a name="azure-control-plane-and-data-plane"></a>Плоскость управления Azure и плоскость данных
@@ -64,7 +64,7 @@ POST {Endpoint}/text/analytics/v2.0/languages
 
 Для управления операциями с плоскостью данных можно использовать некоторые политики. Дополнительные сведения см. [в разделе Режимы поставщиков ресурсов (Предварительная версия) в политике Azure](../../governance/policy/concepts/definition-structure.md#resource-provider-modes).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Общие сведения о Azure Resource Manager см. в разделе [что такое Azure Resource Manager?](overview.md)
 

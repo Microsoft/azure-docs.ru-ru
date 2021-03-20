@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 07/30/2019
 ms.author: scottwhi
 ms.openlocfilehash: 32c3279cacddf10e77e8d245ba525ab766efd6fd
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96351884"
 ---
 # <a name="using-decoration-markers-to-highlight-text"></a>Использование маркеров оформления для выделения текста
@@ -41,7 +41,7 @@ Bing поддерживает выделение совпадений, отме�
 
 Bing предоставляет возможность использовать либо символы Юникода, либо HTML-теги в качестве маркеров. Чтобы указать, какие маркеры следует использовать, включите параметр запроса [TextFormat](/rest/api/cognitiveservices-bingsearch/bing-web-api-v7-reference#textformat) : 
 
-| Значение             | Marker                       |
+| Значение             | Маркер                       |
 |-------------------|------------------------------|
 | `textFormat=Raw`  | Символы Юникода (по умолчанию) |
 | `textFormat=HTML` | Символы HTML              |

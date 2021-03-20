@@ -4,10 +4,10 @@ description: В этой статье показано, как создать с
 ms.topic: how-to
 ms.date: 11/26/2020
 ms.openlocfilehash: 88244f268d5ed038e9bb7082d3d5cc1179e5ec4e
-ms.sourcegitcommit: f6236e0fa28343cf0e478ab630d43e3fd78b9596
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94918262"
 ---
 # <a name="create-an-application-centric-environment"></a>Создание среды, ориентированной на приложения
@@ -20,7 +20,7 @@ ms.locfileid: "94918262"
 
 1. Подпишитесь на бесплатную пробную версию [колонии](https://azuremarketplace.microsoft.com/marketplace/apps/quali_systems.cloudshell_colony?tab=Overview).
 
-    :::image type="content" source="./media/create-application-centric-environment/free-trial.png" alt-text="зарегистрируйтесь для получения бесплатной пробной версии":::.    
+    :::image type="content" source="./media/create-application-centric-environment/free-trial.png" alt-text="Зарегистрируйтесь для получения бесплатной пробной версии":::    
 1. Свяжите учетную запись Azure ([Просмотрите шаги здесь](https://colonysupport.quali.com/hc/articles/360008222234)).
 
     :::image type="content" source="./media/create-application-centric-environment/welcome.png" alt-text="Добро пожаловать в колонии":::     
@@ -40,6 +40,6 @@ ms.locfileid: "94918262"
 
 :::image type="content" source="./media/create-application-centric-environment/devops-pipeline.png" alt-text="Подключение к конвейеру Azure DevOps":::    
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Запросить демонстрацию колонии](https://info.quali.com/cloudshell-colony-demo-request)

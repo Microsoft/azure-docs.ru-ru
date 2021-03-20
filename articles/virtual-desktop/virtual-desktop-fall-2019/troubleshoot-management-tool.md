@@ -7,10 +7,10 @@ ms.date: 03/30/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 6f03284103b4a2aa6900bf1ba5c50a4688c50b0e
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88005488"
 ---
 # <a name="troubleshoot-the-windows-virtual-desktop-classic-management-tool"></a>Устранение неполадок в средстве управления виртуальными рабочими столами Windows (классическая модель)
@@ -56,7 +56,7 @@ ms.locfileid: "88005488"
 
 Чтобы устранить эту проблему, разверните средство управления в другом регионе. Повторное развертывание средства в другом регионе не должно повлиять на взаимодействие с пользователем.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения об отслеживании эскалации см. в статье [Обзор, Отзывы и поддержка](troubleshoot-set-up-overview-2019.md).
 - Узнайте, как сообщать о проблемах с помощью средств виртуальных рабочих столов Windows в [шаблонах ARM для службы удаленных рабочих столов](https://github.com/Azure/RDS-Templates/blob/master/README.md).

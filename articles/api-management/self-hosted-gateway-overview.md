@@ -11,10 +11,10 @@ ms.topic: article
 ms.date: 01/25/2021
 ms.author: apimpm
 ms.openlocfilehash: 48abce693ca22163c0a1742ba71faf36fc6156a1
-ms.sourcegitcommit: 7e117cfec95a7e61f4720db3c36c4fa35021846b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99989094"
 ---
 # <a name="self-hosted-gateway-overview"></a>Общие сведения о независимом шлюзе
@@ -80,7 +80,7 @@ ms.locfileid: "99989094"
 
 Когда подключение будет восстановлено, каждый размещенный шлюз, затронутый сбоем, автоматически подключится к соответствующей службе управления API и загрузит все обновления конфигурации, произошедшие, когда шлюз был отключен от сети.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 -   [Прочитайте технический документ с дополнительными сведениями по этой теме](https://aka.ms/hybrid-and-multi-cloud-api-management)
 -   [Развертывание самостоятельно размещенного шлюза в DOCKER](how-to-deploy-self-hosted-gateway-docker.md)

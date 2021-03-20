@@ -11,10 +11,10 @@ ms.author: srbozovi
 ms.reviewer: vanto, sstein
 ms.date: 05/08/2019
 ms.openlocfilehash: d9c1828732b9a4e0e85c3af2263f097edd54437d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91332854"
 ---
 # <a name="use-azure-sql-managed-instance-securely-with-public-endpoints"></a>Безопасное использование Azure SQL Управляемый экземпляр с общедоступными конечными точками
@@ -52,6 +52,6 @@ ms.locfileid: "91332854"
 
 Если подключения запускаются из Azure, мы рекомендуем использовать трафик, полученный с помощью известного назначенного [виртуального IP-адреса](/previous-versions/azure/virtual-network/virtual-networks-reserved-public-ip) (например, виртуальной машины). Чтобы упростить управление виртуальными IP-адресами, может потребоваться использовать [префиксы общедоступного IP-адреса](../../virtual-network/public-ip-address-prefix.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как настроить общедоступную конечную точку для управления экземплярами: [Настройка общедоступной конечной точки](public-endpoint-configure.md)

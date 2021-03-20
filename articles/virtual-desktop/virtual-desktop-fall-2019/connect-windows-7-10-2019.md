@@ -7,10 +7,10 @@ ms.date: 07/16/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 420c507361e3e2437366e6ccf2d46a8b78684e59
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88008368"
 ---
 # <a name="connect-with-the-windows-desktop-classic-client"></a>Подключение к классическому клиенту Windows Desktop (классическая модель)
@@ -68,6 +68,6 @@ ms.locfileid: "88008368"
 4. При появлении запроса войдите в систему со своей учетной записью.
 5. Ресурсы должны отображаться в центре подключений, сгруппированном по рабочим областям.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об использовании настольного клиента Windows см. в статье Начало [работы с настольным клиентом Windows](/windows-server/remote/remote-desktop-services/clients/windowsdesktop/).

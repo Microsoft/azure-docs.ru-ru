@@ -10,10 +10,10 @@ ms.author: sourabha
 ms.reviewer: sstein
 ms.date: 09/22/2020
 ms.openlocfilehash: 517fed0dd9eb1736344546bde9f79e52ee17182f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91333109"
 ---
 # <a name="troubleshooting-azure-sql-edge-deployments"></a>Устранение неполадок при развертывании Azure SQL ребра 
@@ -28,7 +28,7 @@ Azure SQL ребра поддерживает две модели разверт
 ## <a name="troubleshooting-iot-edge-device-and-deployments"></a>Устранение неполадок IoT Edge устройств и развертываний
 
 Если при развертывании SQL-сервера с помощью Azure IoT Edge появляется сообщение об ошибке, убедитесь, что `iotedge` служба правильно настроена и запущена. Следующие документы могут быть полезны при устранении проблем, связанных с Azure IoT Edge.
-- [Распространенные проблемы и способы их устранения для Azure IOT Edge](../iot-edge/troubleshoot-common-errors.md).
+- [Распространенные проблемы в Azure IoT Edge и их решения.](../iot-edge/troubleshoot-common-errors.md)
 - [Устранение неполадок устройства с IoT Edge](../iot-edge/troubleshoot.md)
 
 ## <a name="docker-command-errors"></a>Ошибки команды Docker
@@ -146,7 +146,7 @@ docker exec -it <Container ID> /bin/bash
 > Параметр подробного ведения журнала следует использовать только для устранения неполадок, а не для обычной рабочей нагрузки. 
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Машинное обучение и искусственный интеллект с помощью ONNX в SQL Server ребра](onnx-overview.md)
 - [Потоковая передача данных в SQL Azure для пограничных вычислений](stream-data.md)

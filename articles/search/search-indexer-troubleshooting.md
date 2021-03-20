@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.openlocfilehash: 7eadc9121c54b636fa8b42579284d4018043e1c1
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91355131"
 ---
 # <a name="troubleshooting-common-indexer-issues-in-azure-cognitive-search"></a>Устранение распространенных проблем с индексатором в Azure Когнитивный поиск
@@ -47,7 +47,7 @@ ms.locfileid: "91355131"
 
 * [База данных Cosmos](../storage/common/storage-network-security.md#grant-access-from-an-internet-ip-range)
 
-* [Azure SQL](../azure-sql/database/firewall-configure.md#create-and-manage-ip-firewall-rules)
+* [Azure SQL;](../azure-sql/database/firewall-configure.md#create-and-manage-ip-firewall-rules)
 
 **Ограничение**. как указано в документации по службе хранилища Azure, ограничения диапазона IP-адресов будут работать только в том случае, если служба поиска и учетная запись хранения находятся в разных регионах.
 

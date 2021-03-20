@@ -8,10 +8,10 @@ ms.date: 01/10/2020
 ms.topic: conceptual
 ms.author: sutalasi
 ms.openlocfilehash: de25a3f9df04b09a7337dc889a688a171d98db28
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86129908"
 ---
 # <a name="set-up-disaster-recovery-of-vmware-vms-to-azure-with-powershell"></a>Настройка аварийного восстановления виртуальных машин VMware в Azure с помощью PowerShell
@@ -33,7 +33,7 @@ ms.locfileid: "86129908"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Перед началом:
+Перед началом работы
 
 - Вам должны быть понятны [архитектура и компоненты сценария](vmware-azure-architecture.md).
 - [Ознакомьтесь](./vmware-physical-azure-support-matrix.md) с требованиями поддержки для всех компонентов.
@@ -105,7 +105,7 @@ Select-AzSubscription -SubscriptionName "ASR Test Subscription"
 Задайте контекст хранилища с помощью командлета Set-ASRVaultContext. После этого последующие операции Azure Site Recovery в сеансе PowerShell будут выполняться в контексте выбранного хранилища.
 
 > [!TIP]
-> Модуль Azure Site Recovery PowerShell (az. RecoveryServices Module) поставляется с простым использованием псевдонимов для большинства командлетов. Командлеты в модуле принимают форму * \<Operation> - **азрековерисервицесаср** \<Object> * и имеют эквивалентные псевдонимы, которые принимают форму * \<Operation> - **ASR** \<Object> *. Можно заменить псевдонимы командлетов для простоты использования.
+> Модуль Azure Site Recovery PowerShell (az. RecoveryServices Module) поставляется с простым использованием псевдонимов для большинства командлетов. Командлеты в модуле принимают форму *\<Operation> - **азрековерисервицесаср** \<Object>* и имеют эквивалентные псевдонимы, которые принимают форму *\<Operation> - **ASR** \<Object>*. Можно заменить псевдонимы командлетов для простоты использования.
 
 В следующем примере данные хранилища из переменной $vault используется для указания контекста хранилища для сеанса PowerShell.
 
@@ -172,7 +172,7 @@ Select-AzSubscription -SubscriptionName "ASR Test Subscription"
    1     ConfigurationServer
    ```
 
-   В приведенных выше выходных данных ***$ProcessServers[0]*** соответствует *ScaleOut-ProcessServer*, а ***$ProcessServers[1]*** соответствует роли сервера обработки на сервере *ConfigurationServer*.
+   Из выходных данных выше ***$ProcessServers [0]** _ соответствует _scaleing-ProcessServer * и ***$ProcessServers [1]**_ соответствует роли сервера обработки на _ConfigurationServer *
 
 3. Определите учетные записи, которые были настроены на сервере конфигурации.
 
@@ -189,7 +189,7 @@ Select-AzSubscription -SubscriptionName "ASR Test Subscription"
    3         LinuxAccount
    ```
 
-   В приведенных выше выходных данных ***$AccountHandles[0]*** соответствует учетной записи *vCenter_account*, ***$AccountHandles[1]*** — учетной записи *WindowsAccount*, а ***$AccountHandles[2]*** — учетной записи *LinuxAccount*.
+   Из выходных данных выше ***$AccountHandles [0]** _ соответствует учетной записи _vCenter_account *, ***$AccountHandles [1]**_ в учетную запись _WindowsAccount *, а ***$AccountHandles [2]** —_ _LinuxAccount *.
 
 ## <a name="create-a-replication-policy"></a>Создание политики репликации
 
@@ -342,7 +342,7 @@ $ReplicationStdStorageAccount= New-AzStorageAccount -ResourceGroupName "VMwareDR
 * Защищаемый элемент, который требуется реплицировать.
 * Учетная запись хранения для репликации виртуальной машины (только в том случае, если выполняется репликация в учетную запись хранения). 
 * Хранилище журналов требуется для защиты виртуальных машин в учетной записи хранения класса Premium или на управляемом диске.
-* Сервер обработки для репликации. Список доступных серверов обработки должен быть получен и сохранен в переменных ***$ProcessServers[0]***  *(ScaleOut-ProcessServer)* и ***$ProcessServers[1]*** *(ConfigurationServer)*.
+* Сервер обработки для репликации. Список доступных серверов обработки был получен и сохранен в переменных ***$ProcessServers [0]** _ _(scaleing-ProcessServer) * и ***$ProcessServers [1]**_ _ (ConfigurationServer) *.
 * Учетная запись, используемая для принудительной установки программного обеспечения Mobility Service на компьютерах. Список доступных учетных записей должен быть получен и сохранен в переменной ***$AccountHandles***.
 * Сопоставление контейнера защиты для политики репликации, используемой для репликации.
 * Группа ресурсов, в которой должны создаваться виртуальные машины при отработке отказа.
@@ -353,9 +353,9 @@ $ReplicationStdStorageAccount= New-AzStorageAccount -ResourceGroupName "VMwareDR
 
 |Виртуальная машина  |Сервер обработки        |Учетная запись хранения              |Учетная запись хранения журналов  |Политика           |Учетная запись для установки службы Mobility Service|Целевая группа ресурсов  | Целевая виртуальная сеть  |Целевая подсеть  |
 |-----------------|----------------------|-----------------------------|---------------------|-----------------|-----------------------------------------|-----------------------|-------------------------|---------------|
-|CentOSVM1       |ConfigurationServer   |Недоступно| logstorageaccount1                 |ReplicationPolicy|LinuxAccount                             |VMwareDRToAzurePs      |ASR-vnet                 |Subnet-1       |
+|CentOSVM1       |ConfigurationServer   |Н/Д| logstorageaccount1                 |ReplicationPolicy|LinuxAccount                             |VMwareDRToAzurePs      |ASR-vnet                 |Subnet-1       |
 |Win2K12VM1       |ScaleOut-ProcessServer|premiumstorageaccount1       |logstorageaccount1   |ReplicationPolicy|WindowsAccount                           |VMwareDRToAzurePs      |ASR-vnet                 |Subnet-1       |   
-|CentOSVM2       |ConfigurationServer   |replicationstdstorageaccount1| Недоступно                 |ReplicationPolicy|LinuxAccount                             |VMwareDRToAzurePs      |ASR-vnet                 |Subnet-1       |   
+|CentOSVM2       |ConfigurationServer   |replicationstdstorageaccount1| Н/Д                 |ReplicationPolicy|LinuxAccount                             |VMwareDRToAzurePs      |ASR-vnet                 |Subnet-1       |   
 
 
 ```azurepowershell

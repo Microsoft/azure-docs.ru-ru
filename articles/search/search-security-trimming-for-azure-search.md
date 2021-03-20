@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 12/16/2020
 ms.openlocfilehash: 8bd162fcf2011d2ccce716564763e7f54f19ff69
-ms.sourcegitcommit: 8c3a656f82aa6f9c2792a27b02bbaa634786f42d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97631809"
 ---
 # <a name="security-filters-for-trimming-results-in-azure-cognitive-search"></a>Фильтры безопасности для усечения результатов в Azure Когнитивный поиск
@@ -32,7 +32,7 @@ ms.locfileid: "97631809"
 >[!NOTE]
 > В этом документе не рассматривается процесс получения идентификаторов субъектов. Его следует узнать у поставщика службы идентификации.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В этой статье предполагается, что у вас есть [Подписка Azure](https://azure.microsoft.com/pricing/free-trial/?WT.mc_id=A261C142F),[Служба когнитивный Поиск Azure](search-create-service-portal.md)и [индекс](search-what-is-an-index.md).  
 
