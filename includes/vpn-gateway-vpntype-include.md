@@ -9,10 +9,10 @@ ms.date: 03/21/2018
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: b3907882df09bfae1d6453fbffbd3e7562554f7c
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96010882"
 ---
 * **PolicyBased**. В классической модели развертывания сети VPN на основе политик (PolicyBased) назывались шлюзами статической маршрутизации. Сети VPN на основе политик шифруют и направляют пакеты через туннели IPsec на основе политик IPsec, настроенных с помощью комбинаций префиксов адресов, между локальной сетью и виртуальной сетью Azure. Политика (или селектор трафика) обычно определяется как список доступа в конфигурации VPN-устройства. Значение для типа VPN на основе политик — *PolicyBased*. При использовании VPN на основе политик необходимо учитывать следующие ограничения:

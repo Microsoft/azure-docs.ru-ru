@@ -8,10 +8,10 @@ author: keferna
 ms.author: keferna
 ms.date: 08/07/2020
 ms.openlocfilehash: 23af7b3f7cfd5ec0531c5cac73cf8a334ef4aa62
-ms.sourcegitcommit: b4e6b2627842a1183fce78bce6c6c7e088d6157b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99096446"
 ---
 # <a name="create-an-iot-edge-module-offer"></a>Создание предложения модуля IoT Edge
@@ -234,7 +234,7 @@ ms.locfileid: "99096446"
 3. Адрес поддержки (ссылка)
 4. Terms and conditions (Условия)
 5. Адрес политики конфиденциальности (ссылка)
-6. name
+6. Имя
 7. Итоги
 8. Описание
 9. Полезные ссылки
@@ -256,7 +256,7 @@ ms.locfileid: "99096446"
 
 #### <a name="call-out-descriptions"></a>Описания вызова
 
-1. name
+1. Имя
 2. Описание
 3. Полезные ссылки
 4. Снимки экрана

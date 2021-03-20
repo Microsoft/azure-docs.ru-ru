@@ -9,10 +9,10 @@ ms.subservice: security-develop
 ms.topic: article
 ms.date: 01/15/2019
 ms.openlocfilehash: e48e14c13ef2ff171145022f4eafa6e0f80a9b22
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87539022"
 ---
 # <a name="threat-modeling-tool-update-release-71510231---1112018"></a>Threat Modeling Tool, выпуск обновления 7.1.51023.1 — 1.11.2018
@@ -25,7 +25,7 @@ ms.locfileid: "87539022"
 
 ## <a name="feature-changes"></a>Изменения функций
 
-- None
+- Нет
 
 ## <a name="system-requirements"></a>Требования к системе
 
@@ -40,6 +40,6 @@ ms.locfileid: "87539022"
 
 - Документация по Threat Modeling Tool находится на сайте [docs.microsoft.com](threat-modeling-tool.md) и содержит информацию [об использовании средства](threat-modeling-tool-getting-started.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Скачайте последнюю версию [Microsoft Threat Modeling Tool](https://aka.ms/threatmodelingtool).

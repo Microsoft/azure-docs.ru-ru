@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: cdd6c9da5a1895d4aadd73133734cd4c8204ecf1
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98742171"
 ---
 # <a name="what-to-do-in-the-event-of-an-azure-service-disruption-that-impacts-azure-cloud-services-classic"></a>Что делать в случае прерывания работы службы Azure, влияющего на облачные службы Azure (классические)
@@ -55,7 +55,7 @@ ms.locfileid: "98742171"
 ## <a name="option-3-wait-for-recovery"></a>Вариант 3. Ожидание восстановления
 В этом случае вам не нужно ничего делать. Однако служба будет недоступна до восстановления региона. Текущее состояние службы можно просмотреть на [панели мониторинга работоспособности служб Azure](https://azure.microsoft.com/status/).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Чтобы больше узнать о том, как реализовать стратегию обеспечения аварийного восстановления и высокого уровня доступности, ознакомьтесь с разделом [Аварийное восстановление и высокий уровень доступности для приложений на платформе Azure](/azure/architecture/framework/resiliency/backup-and-recovery).
 
 Возможности облачной платформы подробно описаны в [техническом руководстве по обеспечению непрерывности бизнес-процессов Azure](/azure/architecture/checklist/resiliency-per-service).

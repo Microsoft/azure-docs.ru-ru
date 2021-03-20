@@ -6,10 +6,10 @@ ms.reviewer: jasonh
 ms.topic: how-to
 ms.date: 07/14/2017
 ms.openlocfilehash: 194fe3494915be9f6784e1596e647885634817ad
-ms.sourcegitcommit: 9514d24118135b6f753d8fc312f4b702a2957780
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97969016"
 ---
 # <a name="run-u-sql-and-debug-locally-in-visual-studio-code"></a>Запуск и отладка заданий U-SQL локально в Visual Studio Code

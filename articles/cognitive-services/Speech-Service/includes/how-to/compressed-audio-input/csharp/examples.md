@@ -6,10 +6,10 @@ ms.date: 03/09/2020
 ms.author: trbye
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 754b9c5215299a6f7488633c0871bceb61cbedba
-ms.sourcegitcommit: 9514d24118135b6f753d8fc312f4b702a2957780
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97978880"
 ---
 Чтобы настроить речевой пакет SDK для приема сжатого звукового ввода, создайте `PullAudioInputStream` или `PushAudioInputStream` . Затем создайте объект `AudioConfig` из экземпляра класса Stream, указав формат сжатия потока.

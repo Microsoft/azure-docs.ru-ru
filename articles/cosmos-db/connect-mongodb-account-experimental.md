@@ -10,10 +10,10 @@ ms.date: 02/08/2021
 ms.reviewer: sngun
 robots: noindex
 ms.openlocfilehash: bd244b0bb0aa5c5b2377b5a5675466645da3256c
-ms.sourcegitcommit: 706e7d3eaa27f242312d3d8e3ff072d2ae685956
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99982112"
 ---
 # <a name="connect-a-mongodb-application-to-azure-cosmos-db"></a>Подключение приложения MongoDB к Azure Cosmos DB
@@ -26,7 +26,7 @@ ms.locfileid: "99982112"
 - [Метод "Быстрый запуск"](#get-the-mongodb-connection-string-by-using-the-quick-start) для использования с драйверами .NET, Node.js, Java, Python или MongoDB.
 - [Пользовательский метод строки соединения](#get-the-mongodb-connection-string-to-customize)для использования с другими драйверами
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Учетная запись Azure. Если у вас нет учетной записи, вы можете создать [бесплатную учетную запись Azure](https://azure.microsoft.com/free/).
 - Учетная запись Cosmos. Инструкции см. в статье о [создании веб-приложения с помощью API Azure Cosmos DB для MongoDB и пакета SDK для .NET](create-mongodb-dotnet.md).

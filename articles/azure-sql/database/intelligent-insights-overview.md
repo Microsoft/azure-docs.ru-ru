@@ -12,10 +12,10 @@ ms.author: danil
 ms.reviewer: wiassaf, sstein
 ms.date: 06/12/2020
 ms.openlocfilehash: 61033e3eb8264c1e462faac3e4553a855a1d06c7
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100592075"
 ---
 # <a name="intelligent-insights-using-ai-to-monitor-and-troubleshoot-database-performance-preview"></a>Intelligent Insights использование искусственного интеллекта для отслеживания и устранения неполадок производительности базы данных (Предварительная версия)
@@ -49,7 +49,7 @@ Intelligent Insights анализирует производительность
 
 Выявленные снижения производительности базы данных записываются в журнал SQLInsights с помощью интеллектуальных записей, состоящих из следующих свойств:
 
-| Свойство | Сведения |
+| Свойство. | Сведения |
 | :------------------- | ------------------- |
 | сведения о базе данных; | Метаданные базы данных, для которой была обнаружена аналитика. Например, URI ресурса. |
 | Наблюдаемый диапазон времени | Время начала и окончания периода обнаруженной аналитики. |
@@ -185,7 +185,7 @@ Intelligent Insights неисправностей обнаружения и ус
 
 Если какое-либо из отслеживаемых критических исключений превышает абсолютное пороговое значение, управляемое системой, создается ценная аналитика, содержащая сведения о критическом исключении.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как [осуществлять мониторинг баз данных с помощью SQL Analytics](../../azure-monitor/insights/azure-sql.md).
 - Узнайте, как [устранять проблемы с производительностью Intelligent Insights](intelligent-insights-troubleshoot-performance.md).

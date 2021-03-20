@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 07/10/2018
 ms.author: dobett
 ms.openlocfilehash: 797bd97940aa49db87b4ca4dd96f140208cd69b6
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96011223"
 ---
 # <a name="use-features-in-the-connected-factory-solution-accelerator-dashboard"></a>Использование функций панели мониторинга акселератора решений для подключенной фабрики
@@ -110,7 +110,7 @@ ms.locfileid: "96011223"
 > [!NOTE]
 > Полностью удалить все ресурсы, связанные с акселератором решений, можно на сайте [azureiotsolutions.com](https://www.azureiotsolutions.com/Accelerators#dashboard). Не удаляйте группу ресурсов на портале.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы развернули рабочей акселератор решений, можно продолжить знакомство с акселератором решений Интернета вещей. Для этого ознакомьтесь со следующими статьями:
 

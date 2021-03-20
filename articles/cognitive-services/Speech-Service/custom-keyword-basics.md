@@ -13,17 +13,17 @@ ms.author: trbye
 ms.custom: devx-track-csharp
 zone_pivot_groups: keyword-quickstart
 ms.openlocfilehash: 49ac70b6881085f48c8bc3a12e31e4a1aa220c6a
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95021955"
 ---
 # <a name="get-started-with-custom-keyword"></a>Начало работы с Пользовательскими ключевыми словами
 
 В этом кратком руководстве вы узнаете основы работы с пользовательскими ключевыми словами с помощью Speech Studio и речевого пакета SDK. Ключевое слово — это слово или короткая фраза, которая позволяет активировать ваш продукт. Вы создаете модели ключевых слов в Speech Studio, затем экспортируете файл модели, который используется в приложениях с пакетом SDK для распознавания речи.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для выполнения действий, описанных в этой статье, требуется подписка на речь и речевой пакет SDK. Если у вас еще нет подписки, [попробуйте службу распознавания речи бесплатно](overview.md#try-the-speech-service-for-free). Чтобы получить пакет SDK, ознакомьтесь с [руководством по установке](quickstarts/setup-platform.md) платформы.
 

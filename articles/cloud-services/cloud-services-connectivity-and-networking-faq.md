@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: c7b83c615e4ac19e10b5c4f6cc1a102206b1a39a
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98742426"
 ---
 # <a name="connectivity-and-networking-issues-for-azure-cloud-services-classic-frequently-asked-questions-faqs"></a>Проблемы подключения и сети для облачных служб Azure (классическая модель): часто задаваемые вопросы

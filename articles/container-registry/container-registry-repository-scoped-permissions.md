@@ -4,10 +4,10 @@ description: Создание маркера с разрешениями, огр
 ms.topic: article
 ms.date: 02/04/2021
 ms.openlocfilehash: ceec69d746f77ea7a23bc70d029c8b3736e7f292
-ms.sourcegitcommit: 7e117cfec95a7e61f4720db3c36c4fa35021846b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99988265"
 ---
 # <a name="create-a-token-with-repository-scoped-permissions"></a>Создание токена с разрешениями уровня репозитория
@@ -186,8 +186,8 @@ az acr token create --name MyToken \
 
 |Действие  |Процедура проверки подлинности  |
   |---------|---------|
-  |`content/delete`    | `az acr repository delete` в Azure CLI<br/><br/>Пример: `az acr repository delete --name myregistry --repository myrepo --username MyToken --password xxxxxxxxxx`|
-  |`content/read`     |  `docker login`<br/><br/>`az acr login` в Azure CLI<br/><br/>Пример: `az acr login --name myregistry --username MyToken --password xxxxxxxxxx`  |
+  |`content/delete`    | `az acr repository delete` в Azure CLI<br/><br/>Например, `az acr repository delete --name myregistry --repository myrepo --username MyToken --password xxxxxxxxxx`.|
+  |`content/read`     |  `docker login`<br/><br/>`az acr login` в Azure CLI<br/><br/>Например, `az acr login --name myregistry --username MyToken --password xxxxxxxxxx`.  |
   |`content/write`     |  `docker login`<br/><br/>`az acr login` в Azure CLI     |
   |`metadata/read`    | `az acr repository show`<br/><br/>`az acr repository show-tags`<br/><br/>`az acr repository show-manifests` в Azure CLI   |
   |`metadata/write`     |  `az acr repository untag`<br/><br/>`az acr repository update` в Azure CLI |

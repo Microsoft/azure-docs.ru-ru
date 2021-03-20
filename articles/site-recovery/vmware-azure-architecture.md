@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/06/2019
 ms.author: raynew
 ms.openlocfilehash: 5cf4dc5123040fd2af8efe54153867a8709fe1ef
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97652234"
 ---
 # <a name="vmware-to-azure-disaster-recovery-architecture"></a>Архитектура аварийного восстановления из VMware в Azure
@@ -89,7 +89,7 @@ ms.locfileid: "97652234"
 
 По умолчанию при включении репликации виртуальной машины Azure Site Recovery создает политику репликации, стандартные параметры которой представлены в следующей таблице.
 
-**Параметр политики** | **Сведения** | **Default**
+**Параметр политики** | **Сведения** | **По умолчанию**
 --- | --- | ---
 **Хранение точки восстановления** | Указывает, как долго в Site Recovery хранятся точки восстановления. | 24 часа
 **Периодичность создания моментальных снимков с согласованием приложений** | Определяет, как часто Site Recovery создает моментальные снимки с согласованностью на уровне приложений. | Каждые четыре часа

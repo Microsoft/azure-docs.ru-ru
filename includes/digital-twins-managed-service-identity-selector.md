@@ -9,10 +9,10 @@ ms.date: 02/09/2020
 ms.author: baanders
 ms.custom: include file
 ms.openlocfilehash: 95b180a82929036ff658a2957e1d36cd18adadbe
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100418121"
 ---
 > [!div class="op_single_selector"]

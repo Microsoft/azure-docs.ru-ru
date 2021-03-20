@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 06/19/2017
 ms.author: damendo
 ms.openlocfilehash: 0d0597c2df8731171505a090de6959d8a112c004
-ms.sourcegitcommit: 9d9221ba4bfdf8d8294cf56e12344ed05be82843
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98569986"
 ---
 # <a name="introduction-to-resource-troubleshooting-in-azure-network-watcher"></a>Общие сведения об устранении неполадок ресурсов в Наблюдателе за сетями Azure

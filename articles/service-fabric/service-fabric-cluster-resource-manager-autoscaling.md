@@ -7,10 +7,10 @@ ms.date: 04/17/2018
 ms.author: miradic
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 060bb9dcdd504846c76ab4c782b2857fdddfa394
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91354808"
 ---
 # <a name="introduction-to-auto-scaling"></a>Знакомство с автомасштабированием
@@ -202,5 +202,5 @@ New-ServiceFabricService -ApplicationName $applicationName -ServiceName $service
 Существуют две метрики, которые представляют фактические физические ресурсы. Один из них — servicefabric:/_CpuCores, представляющий собой фактическое использование ЦП (поэтому представляет собой половину ядра), а другой — servicefabric:/_MemoryInMB, который представляет собой использование памяти в МБ.
 Служба ResourceMonitorService отвечает за отслеживание использования ЦП и памяти служб обслуживания пользователей. Эта служба будет применять взвешенное скользящее среднее для учета потенциальных кратковременных пиков. Мониторинг ресурсов поддерживается для контейнерных и неконтейнерных приложений в Windows, а также для контейнерных приложений — в Linux. Автомасштабирование ресурсов доступно только для служб, активированных в [модели с монопольным процессом](service-fabric-hosting-model.md#exclusive-process-model).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Масштабирование в Service Fabric](service-fabric-concepts-scalability.md).

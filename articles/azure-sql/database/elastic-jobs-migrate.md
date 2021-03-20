@@ -12,10 +12,10 @@ ms.author: joke
 ms.reviewer: sstein
 ms.date: 03/13/2019
 ms.openlocfilehash: e8c222d7cdcdb203cd323cde38818e5b51643159
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91443373"
 ---
 # <a name="migrate-to-the-new-elastic-database-jobs-preview"></a>Переход на новый Задания обработки эластичных баз данных (Предварительная версия)
@@ -32,7 +32,7 @@ ms.locfileid: "91443373"
 
 ### <a name="install-the-latest-elastic-jobs-cmdlets"></a>Установка агента задания обработки эластичных баз данных
 
-Если у вас еще нет подписки Azure, [Создайте бесплатную учетную запись](https://azure.microsoft.com/free/) , прежде чем начинать работу.
+Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/), прежде чем начинать работу.
 
 Установите модуль **Az.Sql** предварительной версии 1.1.1, чтобы получать актуальные командлеты заданий обработки эластичных баз данных. Выполните приведенные ниже команды в PowerShell с правами администратора.
 
@@ -46,7 +46,7 @@ Find-Package PowerShellGet -RequiredVersion 1.6.5 | Install-Package -Force
 # Restart your powershell session with administrative access
 
 # Places Az.Sql preview cmdlets side by side with existing Az.Sql version
-Install-Module -Name Az.Sql -RequiredVersion 1.1.1-preview -AllowPrerelease
+Install-Module -Name Az.Sql -RequiredVersion 1.1.1-preview -AllowPrerelease
 
 # Import the Az.Sql module
 Import-Module Az.Sql -RequiredVersion 1.1.1
@@ -145,7 +145,7 @@ function Migrate-Credentials ($agent) {
 Migrate-Credentials $agent
 ```
 
-Пример полученных результатов
+Пример выходных данных
 
 ```powershell
 # You should see similar output after executing the above
@@ -376,7 +376,7 @@ function Setup-TargetGroup ($tgName, $agent) {
 Migrate-TargetGroups $agent
 ```
 
-Образец вывода:
+Пример результатов выполнения:
 
 ```powershell
 # --------------------- Migrating target groups ---------------------
@@ -573,7 +573,7 @@ function Setup-JobStep ($newJob, $job) {
 Migrate-Jobs $agent
 ```
 
-Образец вывода:
+Пример результатов выполнения:
 ```powershell
 --------------------- Migrating jobs and job steps ---------------------
 Job job1
@@ -628,7 +628,7 @@ $jobs | Start-AzSqlElasticJob
 $jobs | Set-AzSqlElasticJob -Enable
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Создание заданий обработки эластичных баз данных и управление ими с помощью PowerShell](elastic-jobs-powershell-create.md)
 - [Use Transact-SQL (T-SQL) to create and manage Elastic Database Jobs](elastic-jobs-tsql-create-manage.md) (Создание заданий обработки эластичных БД и управление ими с использованием Transact-SQL (T-SQL))

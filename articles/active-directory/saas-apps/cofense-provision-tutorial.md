@@ -16,10 +16,10 @@ ms.topic: tutorial
 ms.date: 09/11/2020
 ms.author: Zhchia
 ms.openlocfilehash: 70766fd93f0a70ecf6b5ee54dbdba3571f783878
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101646050"
 ---
 # <a name="tutorial-configure-cofense-recipient-sync-for-automatic-user-provisioning"></a>Руководство по Настройка Cofense Recipient Sync для автоматической подготовки пользователей

@@ -8,10 +8,10 @@ ms.subservice: hyperscale-citus
 ms.topic: reference
 ms.date: 08/10/2020
 ms.openlocfilehash: 07f966c7b0be542f848f1a0a4eaf2b5549735b4b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91336247"
 ---
 # <a name="server-parameters"></a>Параметры сервера
@@ -53,7 +53,7 @@ ms.locfileid: "91336247"
 
 #### <a name="citusdistributed_deadlock_detection_factor-floating-point"></a>Цитус. \_ коэффициент обнаружения распределенной взаимоблокировки \_ \_ (с плавающей запятой)
 
-Задает время ожидания перед проверкой распределенных взаимоблокировок. В частности, время ожидания будет умножено на значение \' параметра [ \_ времени ожидания взаимоблокировки](https://www.postgresql.org/docs/current/static/runtime-config-locks.html) PostgreSQL s. Значение по умолчанию — `2`. Значение `-1` Отключает обнаружение распределенной взаимоблокировки.
+Задает время ожидания перед проверкой распределенных взаимоблокировок. В частности, время ожидания будет умножено на значение \' параметра [ \_ времени ожидания взаимоблокировки](https://www.postgresql.org/docs/current/static/runtime-config-locks.html) PostgreSQL s. Значение по умолчанию — `2`. Значение `-1` Отключает обнаружение распределенной взаимоблокировки.
 
 #### <a name="citusnode_connection_timeout-integer"></a>\_время ожидания подключения Цитус. Node \_ (целое число)
 
@@ -383,7 +383,7 @@ STATEMENT:  select * from foo;
 * [ксмлбинари](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-XMLBINARY) — задает способ кодирования двоичных значений в формате XML
 * [ксмлоптион](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-XMLOPTION) — указывает, следует ли рассматривать XML-данные в операциях неявного анализа и сериализации как документы или фрагменты содержимого.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Другой формой конфигурации, помимо параметров сервера, являются [Параметры конфигурации](concepts-hyperscale-configuration-options.md) ресурсов в группе серверов Цитус.
 * Базовая база данных PostgreSQL также имеет [Параметры конфигурации](http://www.postgresql.org/docs/current/static/runtime-config.html).

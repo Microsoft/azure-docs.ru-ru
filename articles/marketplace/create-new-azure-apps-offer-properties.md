@@ -9,10 +9,10 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
 ms.date: 11/06/2020
 ms.openlocfilehash: 6f92c138a02c9dbdc1d22ca04c733cfbee69dcd0
-ms.sourcegitcommit: b4880683d23f5c91e9901eac22ea31f50a0f116f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94488525"
 ---
 # <a name="how-to-configure-your-azure-application-offer-properties"></a>Настройка свойств предложения приложения Azure
@@ -78,6 +78,6 @@ ms.locfileid: "94488525"
 1. В поле **условий** введите до 10 000 символов текста.
 1. Выберите **Сохранить черновик** , прежде чем перейти к следующей вкладке: список предложений.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Как настроить сведения о списке предложений приложений Azure](create-new-azure-apps-offer-listing.md)

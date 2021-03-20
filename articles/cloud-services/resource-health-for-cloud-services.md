@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: 37294e681066eb27ace69bcacee3a813b750b8eb
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98743514"
 ---
 # <a name="resource-health-check-rhc-support-for-azure-cloud-services-classic"></a>Работоспособность ресурсовная проверка (RHC) поддержка облачных служб Azure (классическая модель)

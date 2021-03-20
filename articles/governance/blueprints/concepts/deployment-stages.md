@@ -4,10 +4,10 @@ description: Изучите шаги по обеспечению безопас�
 ms.date: 01/27/2021
 ms.topic: conceptual
 ms.openlocfilehash: e686dec1c9d79e42dafee17d8a937284aac4fdd6
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98918557"
 ---
 # <a name="stages-of-a-blueprint-deployment"></a>Этапы развертывания схемы

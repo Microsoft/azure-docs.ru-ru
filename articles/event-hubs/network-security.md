@@ -4,10 +4,10 @@ description: В этой статье описывается настройка 
 ms.topic: conceptual
 ms.date: 10/20/2020
 ms.openlocfilehash: 9503fc26c22d7dbff13c5754288f577b7bb3242f
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96011002"
 ---
 # <a name="network-security-for-azure-event-hubs"></a>Сетевая безопасность для концентраторов событий Azure 

@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 09/02/2020
 ms.author: tomfitz
 ms.openlocfilehash: ba42b60ce1e168cbf07daf0c302e6f11e2ff2532
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89421205"
 ---
 | Ресурс | Ограничение |
@@ -18,5 +18,5 @@ ms.locfileid: "89421205"
 | Запросы хранилища конфигурации — уровень Free | 1 000 запросов в день  |
 | Запросы к хранилищу конфигураций — уровень Standard | Регулирование начинается с 20 000 запросов в час  |
 | Уровень "бесплатный" на уровне хранилища | 10 МБ |
-| Хранилище — уровень "Стандартный" | 1 ГБ |
+| Хранилище — уровень "Стандартный" | 1 ГБ |
 | ключи и значения | 10 КБ для одного элемента "ключ-значение" |

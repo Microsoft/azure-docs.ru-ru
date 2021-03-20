@@ -9,10 +9,10 @@ ms.date: 11/12/2019
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 8087025810214f3edbb74e628698eb69558f3500
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96010868"
 ---
 Во время создания шлюза виртуальной сети нужно указать SKU шлюза, который вы хотите использовать. Выберите номер SKU, который соответствует требованиям, в зависимости от типов рабочих нагрузок, пропускной способности, функций и соглашений об уровне обслуживания. См. сведения о [номерах SKU шлюза виртуальной сети в Зонах доступности Azure](../articles/vpn-gateway/about-zone-redundant-vnet-gateways.md).

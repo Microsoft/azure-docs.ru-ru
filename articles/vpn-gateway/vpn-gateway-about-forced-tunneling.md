@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 10/15/2020
 ms.author: cherylmc
 ms.openlocfilehash: af4359efb48898c12bb8ee7ffb882448b5012d19
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92151352"
 ---
 # <a name="configure-forced-tunneling-using-the-classic-deployment-model"></a>Настройка принудительного туннелирования с помощью классической модели развертывания
@@ -49,11 +49,11 @@ ms.locfileid: "92151352"
 
 ![Принудительное туннелирование](./media/vpn-gateway-about-forced-tunneling/forced-tunnel.png)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед началом настройки убедитесь, что у вас есть следующее:
 
-* Подписка Azure. Если у вас еще нет подписки Azure, вы можете активировать преимущества для [подписчиков MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) или зарегистрироваться для использования [бесплатной учетной записи](https://azure.microsoft.com/pricing/free-trial/).
+* Подписка Azure. Если у вас нет подписки Azure, вы можете [активировать преимущества для подписчиков MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) или [зарегистрировать бесплатную учетную запись](https://azure.microsoft.com/pricing/free-trial/).
 * Настроенная виртуальная сеть. 
 * [!INCLUDE [vpn-gateway-classic-powershell](../../includes/vpn-gateway-powershell-classic-locally.md)]
 

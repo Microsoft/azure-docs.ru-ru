@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 09/21/2020
 ms.openlocfilehash: d297d215d4b0edfdd67b603ba4707bf02057ad78
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100516878"
 ---
 # <a name="stopstart-an-azure-database-for-mysql"></a>Завершение работы и запуск базы данных Azure для MySQL
@@ -20,7 +20,7 @@ ms.locfileid: "100516878"
 
 В этой статье приводятся пошаговые инструкции по выполнению и запуску одного сервера.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Вот что вам нужно, чтобы выполнить инструкции, приведенные в этом руководстве:
 
@@ -79,5 +79,5 @@ ms.locfileid: "100516878"
     > [!NOTE]
     > После запуска сервера все операции управления теперь доступны для одного сервера.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте [, как создавать оповещения по метрикам](howto-alert-on-metric.md).

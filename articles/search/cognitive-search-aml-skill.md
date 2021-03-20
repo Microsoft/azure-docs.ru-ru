@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 06/12/2020
 ms.openlocfilehash: 6cefe543ea8ba992b028448070bf041a77bfec64
-ms.sourcegitcommit: 8c3a656f82aa6f9c2792a27b02bbaa634786f42d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97630281"
 ---
 # <a name="aml-skill-in-an-azure-cognitive-search-enrichment-pipeline"></a>Навык AML в конвейере Когнитивный поиск обогащения Azure
@@ -29,7 +29,7 @@ ms.locfileid: "97630281"
 > * `503 Service Unavailable`
 > * `429 Too Many Requests`
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Рабочая область AML](../machine-learning/concept-workspace.md)
 * [Целевой объект вычислений AML службы Azure Kubernetes](../machine-learning/concept-compute-target.md) в этой рабочей области с [развернутой моделью](../machine-learning/how-to-deploy-azure-kubernetes-service.md)

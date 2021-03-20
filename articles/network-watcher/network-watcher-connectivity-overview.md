@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 07/11/2017
 ms.author: damendo
 ms.openlocfilehash: 9c855fff9e5791b9c0cf870acfc6de53e7a700b2
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97654002"
 ---
 # <a name="introduction-to-connection-troubleshoot-in-azure-network-watcher"></a>Общие сведения об устранении неполадок подключения в службе "Наблюдатель за сетями Azure"
@@ -29,7 +29,7 @@ ms.locfileid: "97654002"
 
 В таблице ниже приведены свойства, возвращаемые после устранения неполадок подключения.
 
-|Свойство  |Описание  |
+|Свойство.  |Описание  |
 |---------|---------|
 |ConnectionStatus     | Состояние проверки подключения. Возможные результаты: **Reachable** и **Unreachable**.        |
 |AvgLatencyInMs     | Среднее время задержки при проверке подключения в миллисекундах. (Возвращается, только если подключение доступно.)        |
@@ -72,7 +72,7 @@ ms.locfileid: "97654002"
 
 Устранение неполадок подключения возвращает типы ошибок подключения. Следующая таблица предоставляет список возвращаемых типов текущих ошибок.
 
-|Тип  |Описание  |
+|Type  |Описание  |
 |---------|---------|
 |ЦП     | Высокая загрузка ЦП.       |
 |Память     | Высокий уровень использования памяти.       |

@@ -4,10 +4,10 @@ description: Подготовка приложения Service Fabric и раб�
 ms.topic: conceptual
 ms.date: 6/05/2019
 ms.openlocfilehash: a03df40a8ce213c5de9ed7017d47713c4de3449d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87835873"
 ---
 # <a name="production-readiness-checklist"></a>Контрольный список готовности рабочей среды
@@ -54,7 +54,7 @@ ms.locfileid: "87835873"
 1. Разверните пользовательскую службу наблюдения, которая отслеживает приложение и сообщает о [загрузке](service-fabric-cluster-resource-manager-metrics.md) для [балансировки ресурсов](service-fabric-cluster-resource-manager-balancing.md). 
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Руководство. Развертывание кластера Service Fabric на платформе Windows в виртуальной сети Azure](service-fabric-tutorial-create-vnet-and-windows-cluster.md)
 * [Руководство. Развертывание кластера Service Fabric на платформе Linux в виртуальной сети Azure](service-fabric-tutorial-create-vnet-and-linux-cluster.md)
 * Дополнительные сведения о [жизненном цикле приложения](service-fabric-application-lifecycle.md) Service Fabric.

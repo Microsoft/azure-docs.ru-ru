@@ -8,10 +8,10 @@ services: application-gateway
 ms.topic: conceptual
 ms.date: 11/16/2019
 ms.openlocfilehash: 59ca7708b24d2e75381290b80adeb671e2b49822
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91362701"
 ---
 # <a name="overview-of-websocket-support-in-application-gateway"></a>Общие сведения о поддержке WebSocket в шлюзе приложений
@@ -121,6 +121,6 @@ ms.locfileid: "91362701"
 
 Другой причиной является то, что проверка работоспособности серверного шлюза приложений поддерживает только протоколы HTTP и HTTPS. Если внутренний сервер не отвечает на проверки по протоколу HTTP или HTTPS, он удаляется из внутреннего пула.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Ознакомившись с поддержкой протокола WebSocket, приступите к [созданию шлюза приложений](quick-create-powershell.md) , чтобы начать работу с веб-приложением с поддержкой WebSocket.

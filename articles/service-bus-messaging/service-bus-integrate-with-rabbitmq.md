@@ -8,10 +8,10 @@ ms.service: service-bus
 ms.date: 07/02/2020
 ms.author: alvidela
 ms.openlocfilehash: 6366824b8dc7f63f99ebda2a542d95d3eb1c6146
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91301207"
 ---
 # <a name="how-to-integrate-rabbitmq-with-azure-service-bus"></a>Как интегрировать RabbitMQ с служебной шиной Azure
@@ -22,7 +22,7 @@ ms.locfileid: "91301207"
 
 - **Настройки ребра**. у нас есть настройка ребра, где мы отправляем сообщения в RabbitMQ, но мы хотим пересылать эти сообщения в [служебную шину Azure](./service-bus-messaging-overview.md) для дальнейшей обработки, поэтому мы можем использовать многие [возможности больших данных Azure](/azure/architecture/guide/architecture-styles/big-data).
 - **Гибридное облако**. Ваша компания приобрела только третью сторону, которая использует RabbitMQ для обмена сообщениями. Они находятся в другом облаке. При переходе в Azure вы уже можете приступить к совместному использованию данных, выполнив мост RabbitMQ с помощью служебной шины Azure.
-- **Интеграция**со сторонними разработчиками. Третья сторона использует RabbitMQ в качестве брокера и хочет отправить нам свои данные, но они выходят за пределы нашей Организации. Мы можем предоставить им ключ SAS, который предоставляет им доступ к ограниченному набору очередей служебной шины Azure, куда они могут пересылать свои сообщения.
+- **Интеграция** со сторонними разработчиками. Третья сторона использует RabbitMQ в качестве брокера и хочет отправить нам свои данные, но они выходят за пределы нашей Организации. Мы можем предоставить им ключ SAS, который предоставляет им доступ к ограниченному набору очередей служебной шины Azure, куда они могут пересылать свои сообщения.
 
 Список продолжается, но мы можем решить большинство этих вариантов использования, выполнив мост RabbitMQ в Azure.
 
@@ -34,31 +34,31 @@ ms.locfileid: "91301207"
 
 В портал Azure нажмите большую кнопку плюса, чтобы добавить новый ресурс.
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/create-resource.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/create-resource.png" alt-text="Создайте ресурс":::
 
 Затем выберите интеграция и щелкните служебная шина Azure, чтобы создать пространство имен обмена сообщениями:
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/integration.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/integration.png" alt-text="Выбор служебной шины Azure":::
 
 Вам будет предложено ввести сведения о пространстве имен. Выберите подписку Azure, которую нужно использовать. Если у вас нет [группы ресурсов](../azure-resource-manager/management/manage-resource-groups-portal.md), можно создать новую.
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/create-namespace.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/create-namespace.png" alt-text="Создание пространства имен":::
 
 Используйте `rabbitmq` для `Namespace name` , но это может быть любое необходимое. Затем задайте `East US` для расположения. Выберите в `Basic` качестве ценовой категории.
 
 Если все прошло успешно, вы увидите следующий экран подтверждения:
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/create-namespace-confirm.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/create-namespace-confirm.png" alt-text="Подтверждение создания пространства имен":::
 
 Затем вернитесь на портал Azure вы увидите новое `rabbitmq` пространство имен в списке. Щелкните его, чтобы получить доступ к ресурсу, чтобы можно было добавить в него очередь.
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/resource-view-with-namespace.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/resource-view-with-namespace.png" alt-text="Список ресурсов с новым пространством имен":::
 
 ## <a name="creating-our-azure-service-bus-queue"></a>Создание очереди служебной шины Azure
 
 Теперь, когда у вас есть пространство имен служебной шины Azure, нажмите кнопку `Queues` слева в разделе `Entities` , чтобы можно было добавить новую очередь:
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/create-queue.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/create-queue.png" alt-text="Создать очередь":::
 
 Имя очереди будет таким `from-rabbitmq` же, как напоминание о том, откуда поступают сообщения. Можно оставить все остальные параметры по умолчанию, но вы можете изменить их в соответствии с потребностями приложения.
 
@@ -78,21 +78,21 @@ rabbitmq-plugins enable rabbitmq_shovel_management
 
 Вам потребуется создать [политику общего доступа](../storage/common/storage-sas-overview.md) (SAS) для своей очереди, чтобы RabbitMQ мог публиковать в ней сообщения. Политика SAS позволяет указать, какая внешняя сторона может делать с вашим ресурсом. Идея заключается в том, что RabbitMQ может отсылать сообщения, но не прослушивать очередь или управлять ею.
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/create-sas-policy.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/create-sas-policy.png" alt-text="Добавление политики SAS":::
 
 Установите `Send` флажок, `Create` чтобы установить политику SAS.
 
 После создания политики щелкните ее, чтобы увидеть **основную строку подключения**. Мы будем использовать его, чтобы позволить RabbitMQ взаимодействовать с служебной шиной Azure:
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/sas-policy-key.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/sas-policy-key.png" alt-text="Получить политику SAS":::
 
 Прежде чем можно будет использовать эту строку подключения, необходимо преобразовать ее в формат подключения AMQP RabbitMQ. Поэтому перейдите к [средству преобразования строк подключения](https://red-mushroom-0f7446a0f.azurestaticapps.net/) и вставьте строку подключения в форму, а затем нажмите кнопку преобразовать. Вы получите строку подключения, которая RabbitMQ готова. (Этот веб-сайт работает в браузере все локально, поэтому данные не передаются по сети). Вы можете получить доступ к его исходному коду на [GitHub](https://github.com/videlalvaro/connstring_to_amqp).
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/converter.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/converter.png" alt-text="Преобразовать строку подключения":::
 
 Теперь откройте подключаемый модуль управления RabbitMQ в наших браузерах `http://localhost:15672/#/dynamic-shovels` и перейдите к `Admin -> Shovel Management` , где можно добавить новый шовел, который будет отсылать сообщения из очереди RabbitMQ в очередь служебной шины Azure.
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/add-shovel.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/add-shovel.png" alt-text="Добавить RabbitMQ Шовел":::
 
 Здесь следует вызвать Шовел `azure` и выбрать в `AMQP 0.9.1` качестве исходного протокола. На снимке экрана у нас есть `amqp://` универсальный код ресурса (URI) по умолчанию, который подключает нас к локальному серверу RabbitMQ. Не забудьте адаптировать его к текущему развертыванию.
 
@@ -110,15 +110,15 @@ amqps://rabbitmq-shovel:StringOfRandomChars@rabbitmq.servicebus.windows.net:5671
 
 В интерфейсе управления RabbitMQ можно `Queues` выбрать `azure` очередь и выполнить поиск по `Publish message` панели. Появится форма, которая позволит публиковать сообщения непосредственно в очереди. В нашем примере мы просто добавим в `fist message` качестве `Payload` и нажмем `Publish Message` :
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/first-message.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/first-message.png" alt-text="Опубликовать первое сообщение":::
 
 Вернитесь в Azure и проверьте очередь. Щелкните `Service Bus Explorer` на левой панели, а затем нажмите кнопку _просмотра_ . Если все прошло успешно, вы увидите, что ваша очередь теперь содержит одно сообщение. Ура, Поздравляем!
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/service-bus-queue.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/service-bus-queue.png" alt-text="Очередь служебной шины Azure":::
 
 Но давайте убедитесь, что сообщение отправлено из RabbitMQ. Выберите `Peek` вкладку и нажмите кнопку, `Peek` чтобы получить последние сообщения в очереди. Щелкните сообщение, чтобы проверить его содержимое. Вы должны увидеть нечто вроде приведенного ниже изображения `first message` .
 
-:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/peek.png" alt-text="Создание ресурса":::
+:::image type="content" source="./media/service-bus-integrate-with-rabbitmq/peek.png" alt-text="Просмотр очереди":::
 
 ## <a name="lets-recap"></a>Давайте посмотрим
 
@@ -137,7 +137,7 @@ amqps://rabbitmq-shovel:StringOfRandomChars@rabbitmq.servicebus.windows.net:5671
 
 В итоге система обмена сообщениями посвящена включению подключений. при этом мы просто открыли новый метод.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о [служебной шине Azure](./service-bus-messaging-overview.md).
 - Дополнительные сведения о [поддержке AMQP 1,0 в служебной шине](./service-bus-amqp-overview.md)

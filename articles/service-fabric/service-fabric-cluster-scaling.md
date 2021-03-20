@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: atsenthi
 ms.openlocfilehash: 610c43f64f9073aefe8008473209039122cf36d7
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100591794"
 ---
 # <a name="scaling-azure-service-fabric-clusters"></a>Масштабирование кластеров Azure Service Fabric
@@ -74,7 +74,7 @@ API-интерфейс, используемый для взаимодейств
 
 Если это невозможно, создайте кластер и [восстановите состояние приложения](service-fabric-reliable-services-backup-restore.md) (если это применимо) из старого кластера. Не нужно восстанавливать состояния службы системы, так как при развертывании приложений в новом кластере они будут созданы заново. Если приложения в кластере выполнялись без отслеживания состояния, достаточно развернуть их в новом кластере. Восстановление выполнять не нужно.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Дополнительные сведения об [обновлениях приложений](service-fabric-concepts-scalability.md).
 * [Руководство. Масштабирование кластера Service Fabric](service-fabric-tutorial-scale-cluster.md)
 * [Масштабируйте кластер Azure программно](service-fabric-cluster-programmatic-scaling.md), используя свободный пакет SDK для вычислений Azure.

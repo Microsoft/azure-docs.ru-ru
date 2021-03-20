@@ -18,10 +18,10 @@ ms.author: markvi
 ms.reviewer: dhanyahk
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b4d32e0b939731d64f3ef2495ab606b5dc0780e4
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "100592291"
 ---
 # <a name="interpret-the-azure-ad-audit-logs-schema-in-azure-monitor-preview"></a>Интерпретация схемы журналов аудита Azure AD в Azure Monitor (предварительная версия)
@@ -176,7 +176,7 @@ ms.locfileid: "100592291"
 | Target Resource Name | Имя целевого ресурса. Это может быть имя приложения, имя роли, имя участника-пользователя или имя субъекта-службы. |
 | additionalTargets | Содержит список дополнительных свойств для конкретных операций. Например, для операции обновления старые значения и новые значения перечислены в разделе *таржетупдатедпропертиес*. | 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Interpret the Azure AD sign-in logs schema in Azure Monitor (preview)](reference-azure-monitor-sign-ins-log-schema.md) (Интерпретация схемы журналов входа Azure Active Directory в Azure Monitor (предварительная версия))
 * [Журналы диагностики Azure](../../azure-monitor/essentials/platform-logs-overview.md)

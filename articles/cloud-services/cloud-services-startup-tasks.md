@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: 25190075bdd13bd4b75dd82c97ee06ee60f4c26c
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98743191"
 ---
 # <a name="how-to-configure-and-run-startup-tasks-for-an-azure-cloud-service-classic"></a>Настройка и запуск задач запуска для облачной службы Azure (классическая модель)
@@ -153,7 +153,7 @@ EXIT /B 0
 </Startup>
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте, как выполнять некоторые [стандартные задачи запуска](cloud-services-startup-tasks-common.md) с помощью облачной службы.
 
 [Упакуйте](cloud-services-model-and-package.md) облачную службу.  

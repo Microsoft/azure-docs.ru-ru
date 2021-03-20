@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 02/03/2021
 ms.author: stevelas
 ms.openlocfilehash: 8a73f295999888dab20531ffdd0fb042790a5357
-ms.sourcegitcommit: 7e117cfec95a7e61f4720db3c36c4fa35021846b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99988230"
 ---
 # <a name="push-and-pull-an-oci-artifact-using-an-azure-container-registry"></a>Отправка и извлечение артефакта OCI с помощью реестра контейнеров Azure
@@ -19,7 +19,7 @@ ms.locfileid: "99988230"
 
 Чтобы продемонстрировать эту возможность, в этой статье показано, как использовать средство [реестра OCI как хранилище (Орас)](https://github.com/deislabs/oras) для отправки примера артефакта — текстового файла в реестр контейнеров Azure. Затем извлекать артефакт из реестра. Вы можете управлять множеством артефактов OCI в реестре контейнеров Azure, используя различные программы командной строки, подходящие для каждого артефакта.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * **Реестр контейнеров Azure** . Создайте реестр контейнеров в подписке Azure. Это можно сделать на [портале Azure](container-registry-get-started-portal.md) или с помощью [Azure CLI](container-registry-get-started-azure-cli.md).
 * **Средство Орас** . Скачайте и установите текущий выпуск Орас для вашей операционной системы из [репозитория GitHub](https://github.com/deislabs/oras/releases). Средство выпускается как сжатый tarball ( `.tar.gz` файл). Извлеките и установите файл, используя стандартные процедуры для вашей операционной системы.
@@ -181,7 +181,7 @@ az acr build --registry myregistry --image builds/hello-world:v1 \
   oci://myregistry.azurecr.io/dockerfile:1.0
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о [библиотеке Орас](https://github.com/deislabs/oras/tree/master/docs), включая настройку манифеста для артефакта
 * Справочные сведения о новых типах артефактов см. в репозитории [артефактов OCI](https://github.com/opencontainers/artifacts) .

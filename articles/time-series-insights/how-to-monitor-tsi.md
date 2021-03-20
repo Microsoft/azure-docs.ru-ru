@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 12/10/2020
 ms.custom: lyrana
 ms.openlocfilehash: a46ddeddfcefcd4d6e7f87747fe36cfc6ec82e35
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101737568"
 ---
 # <a name="monitoring-time-series-insights"></a>Мониторинг анализа временных рядов
@@ -119,7 +119,7 @@ ms.locfileid: "101737568"
 
 При создании правила генерации оповещений на основе метрик платформы имейте в виду, что для метрик платформы "аналитика временных рядов", собранных в единицах счетчика, некоторые агрегаты могут быть недоступны или использоваться.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Справочник по журналам и метрикам, созданным службой "аналитика временных рядов Azure", см. в [справочнике по данным мониторинга "аналитика временных рядов Azure](how-to-monitor-tsi-reference.md) ".
 * Подробные сведения о мониторинге ресурсов Azure см. в статье [Мониторинг ресурсов Azure с помощью Azure Monitor](../azure-monitor/essentials/monitor-azure-resource.md).

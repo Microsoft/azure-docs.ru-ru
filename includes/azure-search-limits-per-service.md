@@ -9,10 +9,10 @@ ms.date: 05/11/2020
 ms.author: heidist
 ms.custom: include file
 ms.openlocfilehash: fe5c8129434ddb4eec2dd25a3f123f28b4db221b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "83682610"
 ---
 Возможности службы поиска ограничиваются дисковым пространством или аппаратным ограничением максимального количества индексов или документов (в зависимости от того, какое из ограничений достигается первым). Ограничения хранилища приведены в таблице ниже. См. [ограничения максимального количества объектов по ресурсам](../articles/search/search-limits-quotas-capacity.md#index-limits).

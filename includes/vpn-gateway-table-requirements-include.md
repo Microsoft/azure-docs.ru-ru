@@ -9,10 +9,10 @@ ms.date: 03/21/2018
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: dc018b5d09c9b33c10cd2d54ac6572537e05ed25
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96010854"
 ---
 В таблице ниже перечислены требования к VPN-шлюзам с маршрутизацией на основе политик и маршрутов. Эта таблица относится к классической модели развертывания и модели диспетчера ресурсов. При классической модели VPN-шлюзы с маршрутизацией на основе политик совпадают со статическими шлюзами, а шлюзы с маршрутизацией на основе маршрутов — с динамическими шлюзами.

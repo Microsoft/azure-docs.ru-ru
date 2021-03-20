@@ -14,10 +14,10 @@ ms.author: marsma
 ms.reviewer: saeeda
 ms.custom: devx-track-csharp, aaddev
 ms.openlocfilehash: 6616b0573019703f287d3be521569f5953aeb032
-ms.sourcegitcommit: fc401c220eaa40f6b3c8344db84b801aa9ff7185
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98600291"
 ---
 # <a name="initialize-client-applications-using-msalnet"></a>Инициализация клиентских приложений с помощью MSAL.NET
@@ -25,7 +25,7 @@ ms.locfileid: "98600291"
 
 При использовании MSAL.NET 3. x рекомендуемым способом создания экземпляра приложения является использование построителей приложений: `PublicClientApplicationBuilder` и `ConfidentialClientApplicationBuilder` . Они предлагают мощный механизм настройки приложения либо из кода, либо из файла конфигурации, либо путем смешивания обоих подходов.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Перед инициализацией приложения необходимо сначала [зарегистрировать его](quickstart-register-app.md) , чтобы приложение можно было интегрировать с платформой Microsoft Identity.  После регистрации может потребоваться следующая информация (которую можно найти в портал Azure):
 
 - Идентификатор клиента (строка, представляющая GUID)
@@ -167,7 +167,7 @@ app = PublicClientApplicationBuilder.Create(clientId)
         .Build();
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 После инициализации клиентского приложения необходимо добавить поддержку входа пользователя, доступного API-интерфейса или и того, и другого.
 
