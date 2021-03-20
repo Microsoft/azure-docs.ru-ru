@@ -7,17 +7,17 @@ ms.reviewer: klam, logicappspm
 ms.topic: article
 ms.date: 06/20/2019
 ms.openlocfilehash: 1758cca902eb77ffc66824cb56b8add9446fabf9
-ms.sourcegitcommit: 003ac3b45abcdb05dc4406661aca067ece84389f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96749153"
 ---
 # <a name="build-your-first-serverless-app-by-using-azure-logic-apps-and-azure-functions-in-visual-studio"></a>Создание первого бессерверного приложения с помощью Azure Logic Apps и функций Azure в Visual Studio
 
 Вы можете быстро разрабатывать и развертывать облачные приложения с помощью бессерверных средств и возможностей в Azure, таких как [Azure Logic Apps](../logic-apps/logic-apps-overview.md) и [функции Azure](../azure-functions/functions-overview.md). В этой статье показано, как в Visual Studio приступить к созданию бессерверного приложения на основе приложения логики, которое вызывает функцию Azure. Дополнительные сведения о бессерверных решениях в Azure см. в статье [Обзор бессерверных компонентов Azure с функциями и Logic Apps](../logic-apps/logic-apps-serverless-overview.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы создать бессерверное приложение в Visual Studio, вам потребуется:
 
@@ -64,7 +64,7 @@ ms.locfileid: "96749153"
 
    ![Создание проекта в Visual Studio](./media/logic-apps-serverless-get-started-vs/create-new-project-visual-studio.png)
 
-1. В разделе **Установленные** выберите **Visual C#** или **Visual Basic**. Затем выберите **Cloud**  >  **Группа ресурсов Cloud Azure**.
+1. В разделе **Установленные** выберите **Visual C#** или **Visual Basic**. Затем выберите   >  **Группа ресурсов Cloud Azure**.
 
    > [!NOTE]
    > Если категория **облако** или проект **группы ресурсов Azure** не существуют, убедитесь, что вы установили пакет Azure SDK для Visual Studio.

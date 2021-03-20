@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 04/14/2019
 ms.author: sharrai
 ms.openlocfilehash: c804e13029dcec42a43885cbf0d9b227b3d0338f
-ms.sourcegitcommit: ea551dad8d870ddcc0fee4423026f51bf4532e19
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96750808"
 ---
 # <a name="troubleshoot-hyper-v-to-azure-replication-and-failover"></a>Устранение неполадок с отработкой отказа и репликацией из Hyper-V в Azure
@@ -128,9 +128,9 @@ ms.locfileid: "96750808"
         - Категория: "Виртуальное устройство хранения Hyper-V".
         - Счетчик: "Записанных байтов в секунду".</br>
         - Скорость изменения данных увеличится или останется на высоком уровне. Это зависит от текущей загруженности виртуальной машины или ее приложений.
-        - Для стандартного хранилища в Site Recovery среднее значение скорости изменения данных исходного диска составляет 2 МБ в секунду. [Подробнее](hyper-v-deployment-planner-analyze-report.md#azure-site-recovery-limits)
+        - Для стандартного хранилища в Site Recovery среднее значение скорости изменения данных исходного диска составляет 2 МБ в секунду. [Дополнительные сведения](hyper-v-deployment-planner-analyze-report.md#azure-site-recovery-limits)
     - Кроме того, можно [проверить целевые показатели масштабируемости хранилища](../storage/common/scalability-targets-standard-account.md).
-8. Убедитесь, что если вы используете сервер под управлением Linux, вы включили на нем согласованность приложений. [Подробнее](./site-recovery-faq.md#replication)
+8. Убедитесь, что если вы используете сервер под управлением Linux, вы включили на нем согласованность приложений. [Дополнительные сведения](./site-recovery-faq.md#replication)
 9. Запустите [планировщик развертывания](hyper-v-deployment-planner-run.md).
 10. Просмотрите рекомендации для настройки [сети](hyper-v-deployment-planner-analyze-report.md#recommendations-with-available-bandwidth-as-input) и [хранилища](hyper-v-deployment-planner-analyze-report.md#recommendations-with-available-bandwidth-as-input).
 
@@ -138,7 +138,7 @@ ms.locfileid: "96750808"
 ### <a name="vss-failing-inside-the-hyper-v-host"></a>Сбой VSS внутри узла Hyper-V
 
 1. Проверьте журналы событий на наличие ошибок VSS и просмотрите рекомендации.
-    - На сервере узла Hyper-v откройте журнал событий администратора Hyper-v в **Просмотр событий**  >  **журналы приложений и служб**  >  **Администратор Microsoft**  >  **Windows**  >  **Hyper-v**  >  **Admin**.
+    - На сервере узла Hyper-v откройте журнал событий администратора Hyper-v в **Просмотр событий**  >  **журналы приложений и служб**  >  **Администратор Microsoft**  >  **Windows**  >  **Hyper-v**  >  .
     - Проверьте, есть ли там события, указывающие на сбои моментальных снимков с согласованием приложений.
     - Распространенная ошибка: "Hyper-V failed to generate VSS snapshot set for virtual machine 'XYZ': The writer experienced a non-transient error. Restarting the VSS service might resolve issues if the service is unresponsive" (Hyper-V не удалось создать набор моментальных снимков VSS для виртуальной машины XYZ. Повторяющаяся ошибка модуля записи. Если служба VSS не отвечает, можно попробовать перезапустить ее).
 
@@ -149,7 +149,7 @@ ms.locfileid: "96750808"
 
 ### <a name="common-errors"></a>Распространенные ошибки
 
-**Код ошибки** | **Message** | **Сведения**
+**Код ошибки** | **Сообщение** | **Сведения**
 --- | --- | ---
 **0x800700EA** | "Hyper-V failed to generate VSS snapshot set for virtual machine: More data is available. (0x800700EA). VSS snapshot set generation can fail if backup operation is in progress.<br/><br/> Replication operation for virtual machine failed: More data is available" (Hyper-V не удалось создать набор моментальных снимков VSS для виртуальной машины. Доступно больше данных. Процесс создания моментальных снимков VSS может завершиться неудачно, если выполняется операция резервного копирования. Не удалось выполнить операцию репликации для виртуальной машины. Доступно больше данных). | Проверьте, включен ли на виртуальной машине динамический диск. Эта возможность не поддерживается.
 **0x80070032** | "Hyper-V Volume Shadow Copy Requestor failed to connect to virtual machine <./VMname> because the version does not match the version expected by Hyper-V" (Не удалось подключить службу запросов на теневое копирование томов Hyper-V к виртуальной машине <./имя ВМ>, так как имеющаяся версия не соответствует ожидаемый Hyper-V). | Проверьте, установлены ли последние обновления Windows.<br/><br/> [Обновите](/windows-server/virtualization/hyper-v/manage/manage-hyper-v-integration-services#keep-integration-services-up-to-date) службы Integration Services до последней версии.

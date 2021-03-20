@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 01/07/2021
 ms.author: tisande
 ms.openlocfilehash: cb7b2e62a9fabeeca675edb8e6aa356213e0999e
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98011413"
 ---
 # <a name="joins-in-azure-cosmos-db"></a>Объединения в Azure Cosmos DB
@@ -128,7 +128,7 @@ ms.locfileid: "98011413"
     JOIN f.children
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [
@@ -149,7 +149,7 @@ ms.locfileid: "98011413"
     JOIN c IN f.children
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [
@@ -186,7 +186,7 @@ ms.locfileid: "98011413"
     JOIN p IN c.pets
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [
@@ -242,7 +242,7 @@ ms.locfileid: "98011413"
     WHERE p.givenName = "Shadow"
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [
@@ -260,4 +260,4 @@ ms.locfileid: "98011413"
 
 - [Начало работы](sql-query-getting-started.md)
 - [Примеры .NET для Azure Cosmos DB](https://github.com/Azure/azure-cosmosdb-dotnet)
-- [Вложенные запросы](sql-query-subquery.md)
+- [Подзапросы](sql-query-subquery.md)

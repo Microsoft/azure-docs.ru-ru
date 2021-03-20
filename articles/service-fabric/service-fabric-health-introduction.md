@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 2/28/2018
 ms.author: gwallace
 ms.openlocfilehash: f691eb6433907ed10737329de3edd78547f130f1
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96008282"
 ---
 # <a name="introduction-to-service-fabric-health-monitoring"></a>Общие сведения о наблюдении за работоспособностью системы в Service Fabric
@@ -294,7 +294,7 @@ HealthEvents                    :
 
 Описанная модель часто используется для мониторинга и диагностики, оценки работоспособности кластера и приложения, а также для отслеживаемых обновлений. В других службах данные о работоспособности используются для автоматического исправления, создания журнала работоспособности кластера и отображения предупреждений, связанных с определенными условиями.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Просмотр отчетов о работоспособности Service Fabric](service-fabric-view-entities-aggregated-health.md)
 
 [Использование отчетов о работоспособности системы для устранения неполадок](service-fabric-understand-and-troubleshoot-with-system-health-reports.md)

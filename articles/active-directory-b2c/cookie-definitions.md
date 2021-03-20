@@ -12,10 +12,10 @@ ms.date: 01/23/2020
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 5e44e2e1eb37e808e60134a6fba5051552e84029
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85389349"
 ---
 # <a name="cookies-definitions-for-azure-ad-b2c"></a>Определения файлов cookie для Azure AD B2C
@@ -30,7 +30,7 @@ ms.locfileid: "85389349"
 
 `SameSite=None`Чтобы назначить файлы cookie для межсайтового доступа, разработчики должны использовать параметр «новый файл cookie». При `SameSite=None` наличии атрибута `Secure` необходимо использовать дополнительный атрибут, чтобы межсайтовые файлы cookie могли быть доступны только через HTTPS-соединения. Проверка и тестирование всех приложений, в том числе приложений, использующих Azure AD B2C.
 
-Дополнительные сведения можно найти в разделе
+Дополнительные сведения см. в разделе:
 
 * [Обработка изменений свойства SameSite в файлах cookie в браузере Chrome](../active-directory/develop/howto-handle-samesite-cookie-changes-chrome-browser.md)
 * [Воздействие на веб-сайты клиентов и службы Майкрософт и продукты в Chrome версии 80 или более поздней](https://support.microsoft.com/help/4522904/potential-disruption-to-customer-websites-in-latest-chrome)
@@ -39,7 +39,7 @@ ms.locfileid: "85389349"
 
 В следующей таблице перечислены файлы cookie, используемые в Azure AD B2C.
 
-| name | Домен | Окончание срока действия | Назначение |
+| Имя | Домен | Окончание срока действия | Назначение |
 | ----------- | ------ | -------------------------- | --------- |
 | `x-ms-cpim-admin` | main.b2cadmin.ext.azure.com | Конец [сеанса браузера](session-behavior.md) | Хранит данные о членстве пользователей в клиентах. Клиенты, членом которых является пользователь и уровень членства (администратор или пользователь). |
 | `x-ms-cpim-slice` | b2clogin.com, login.microsoftonline.com, домен с фирменной символикой | Конец [сеанса браузера](session-behavior.md) | Используется для маршрутизации запросов к соответствующему рабочему экземпляру. |

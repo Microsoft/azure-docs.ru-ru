@@ -12,10 +12,10 @@ ms.date: 10/24/2019
 ms.author: pafarley
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 93d90232fb530a6c14c40558fc6a9974a1da42de
-ms.sourcegitcommit: 693df7d78dfd5393a28bf1508e3e7487e2132293
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92900918"
 ---
 # <a name="check-text-against-a-custom-term-list-in-c"></a>Проверка текста с помощью списка пользовательских терминов на C#
@@ -41,9 +41,9 @@ ms.locfileid: "92900918"
 
 ## <a name="create-your-visual-studio-project"></a>Создание проекта Visual Studio
 
-1. Добавьте в свое решение новый проект **Консольное приложение (.NET Framework)** .
+1. Добавьте в свое решение новый проект **Консольное приложение (.NET Framework)**.
 
-1. Присвойте проекту имя **TermLists** . Выберите этот проект в качестве единственного запускаемого проекта для решения.
+1. Присвойте проекту имя **TermLists**. Выберите этот проект в качестве единственного запускаемого проекта для решения.
 
 ### <a name="install-required-packages"></a>Установка необходимых пакетов
 
@@ -134,10 +134,10 @@ private const double latencyDelay = 0.5;
 
 ## <a name="create-a-term-list"></a>Создание списка терминов
 
-Создайте список терминов с помощью **ContentModeratorClient.ListManagementTermLists.Create** . Первый **создаваемый** параметр — это строка, обозначающая тип MIME, которая должна иметь значение "application/json". Дополнительные сведения см. в [справочнике по API](https://westus2.dev.cognitive.microsoft.com/docs/services/57cf755e3f9b070c105bd2c2/operations/57cf755e3f9b070868a1f67f). Второй параметр — объект **Body** , содержащий имя и описание нового списка терминов.
+Создайте список терминов с помощью **ContentModeratorClient.ListManagementTermLists.Create**. Первый **создаваемый** параметр — это строка, обозначающая тип MIME, которая должна иметь значение "application/json". Дополнительные сведения см. в [справочнике по API](https://westus2.dev.cognitive.microsoft.com/docs/services/57cf755e3f9b070c105bd2c2/operations/57cf755e3f9b070868a1f67f). Второй параметр — объект **Body**, содержащий имя и описание нового списка терминов.
 
 > [!NOTE]
-> Существует максимальное ограничение в **5 списков терминов** , каждый из которых может содержать **не более 10 000 терминов** .
+> Существует максимальное ограничение в **5 списков терминов**, каждый из которых может содержать **не более 10 000 терминов**.
 
 Добавьте следующее определение метода в пространство имен TermLists в классе Program.
 
@@ -172,7 +172,7 @@ static string CreateTermList (ContentModeratorClient client)
 
 ## <a name="update-term-list-name-and-description"></a>Обновление имени и описания списка терминов
 
-Обновить сведения о списке терминов можно с помощью **ContentModeratorClient.ListManagementTermLists.Update** . Первый **обновляемый** параметр — идентификатор списка терминов. Второй параметр — это тип MIME, который должен иметь значение "application/json". Дополнительные сведения см. в [справочнике по API](https://westus2.dev.cognitive.microsoft.com/docs/services/57cf755e3f9b070c105bd2c2/operations/57cf755e3f9b070868a1f685). Третий параметр — объект **Body** , который содержит новые имя и описание.
+Обновить сведения о списке терминов можно с помощью **ContentModeratorClient.ListManagementTermLists.Update**. Первый **обновляемый** параметр — идентификатор списка терминов. Второй параметр — это тип MIME, который должен иметь значение "application/json". Дополнительные сведения см. в [справочнике по API](https://westus2.dev.cognitive.microsoft.com/docs/services/57cf755e3f9b070c105bd2c2/operations/57cf755e3f9b070868a1f685). Третий параметр — объект **Body**, который содержит новые имя и описание.
 
 Добавьте следующее определение метода в пространство имен TermLists в классе Program.
 
@@ -239,7 +239,7 @@ static void GetAllTerms(ContentModeratorClient client, string list_id)
 
 После внесения изменений в список терминов следует обновить его индекс поиска, чтобы эти изменения учитывались при следующем использовании списка терминов для проверки текста. Точно так же поисковая система на компьютере (если она включена) или поисковая система в Интернете постоянно обновляет свой индекс, чтобы добавлять новые файлы или страницы.
 
-Обновить индекс поиска списка терминов можно с помощью **ContentModeratorClient.ListManagementTermLists.RefreshIndexMethod** .
+Обновить индекс поиска списка терминов можно с помощью **ContentModeratorClient.ListManagementTermLists.RefreshIndexMethod**.
 
 Добавьте следующее определение метода в пространство имен TermLists в классе Program.
 
@@ -259,18 +259,18 @@ static void RefreshSearchIndex (ContentModeratorClient client, string list_id)
 
 ## <a name="screen-text-using-a-term-list"></a>Проверка текста с помощью списка терминов
 
-Для проверки текста с помощью списка терминов используется метод **ContentModeratorClient.TextModeration.ScreenText** , который принимает следующие параметры.
+Для проверки текста с помощью списка терминов используется метод **ContentModeratorClient.TextModeration.ScreenText**, который принимает следующие параметры.
 
 - Язык терминов в список терминов.
 - Тип MIME: "text/html", "text/xml", "text/markdown" или "text/plain".
 - Текст для проверки.
-- Логическое значение. Задайте для этого поля значение **true** , чтобы выполнить автозамену в тексте перед проверкой.
+- Логическое значение. Задайте для этого поля значение **true**, чтобы выполнить автозамену в тексте перед проверкой.
 - Логическое значение. Задайте для этого поля **значение true** , чтобы определить персональные данные в тексте.
 - Идентификатор списка терминов.
 
 Дополнительные сведения см. в [справочнике по API](https://westus2.dev.cognitive.microsoft.com/docs/services/57cf753a3f9b070c105bd2c1/operations/57cf753a3f9b070868a1f66f).
 
-**ScreenText** возвращает объект **Screen** , содержащий свойство **Terms** , которое содержит все термины, обнаруженные Content Moderator при проверке. Обратите внимание на то, что если Content Moderator не обнаружил термины при проверке, то свойство **Terms** имеет значение **NULL** .
+**ScreenText** возвращает объект **Screen**, содержащий свойство **Terms**, которое содержит все термины, обнаруженные Content Moderator при проверке. Обратите внимание на то, что если Content Moderator не обнаружил термины при проверке, то свойство **Terms** имеет значение **NULL**.
 
 Добавьте следующее определение метода в пространство имен TermLists в классе Program.
 
@@ -304,9 +304,9 @@ static void ScreenText (ContentModeratorClient client, string list_id, string te
 
 Удалить термин или список достаточно просто. С помощью пакета SDK можно выполнить следующие задачи:
 
-- удаление термина ( **ContentModeratorClient.ListManagementTerm.DeleteTerm** );
-- удаление всех терминов в списке без удаления самого списка ( **ContentModeratorClient.ListManagementTerm.DeleteAllTerms** );
-- удаление списка и всего его содержимого ( **ContentModeratorClient.ListManagementTermLists.Delete** ).
+- удаление термина (**ContentModeratorClient.ListManagementTerm.DeleteTerm**);
+- удаление всех терминов в списке без удаления самого списка (**ContentModeratorClient.ListManagementTerm.DeleteAllTerms**);
+- удаление списка и всего его содержимого (**ContentModeratorClient.ListManagementTermLists.Delete**).
 
 ### <a name="delete-a-term"></a>Удаление термина
 
@@ -365,7 +365,7 @@ static void DeleteTermList (ContentModeratorClient client, string list_id)
 
 ## <a name="compose-the-main-method"></a>Создание метода Main
 
-Добавьте определение метода **Main** в пространство имен **TermLists** в классе **Program** . Наконец, закройте класс **Program** и пространство имен **TermLists** .
+Добавьте определение метода **Main** в пространство имен **TermLists** в классе **Program**. Наконец, закройте класс **Program** и пространство имен **TermLists**.
 
 ```csharp
 static void Main(string[] args)

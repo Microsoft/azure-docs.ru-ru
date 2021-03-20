@@ -7,17 +7,17 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 08/08/2018
 ms.openlocfilehash: f325280cb4b18def603410464a06fddaed09c78a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87285413"
 ---
 # <a name="azure-database-for-mysql-migration-partners"></a>Партнеры по миграции для базы данных Azure для MySQL
 Чтобы существенно расширить поддержку вашего решения базы данных Azure для MySQL, вы можете выбрать инструменты и партнеров из обширного списка ведущих в отрасли партнеров. В данной статье рассматриваются партнеры корпорации Майкрософт, которые предлагают решения миграции, поддерживающие базу данных Azure для MySQL.
 
 ## <a name="migration-partners"></a>Партнеры по миграции
-| Партнер | Описание | Ссылки | Видео |
+| Партнер | Описание | Ссылки | Видеоролики |
 | --- | --- | --- | --- |
 | ![SNP Technologies][1] |**SNP Technologies**<br>SNP Technologies — поставщик облачных услуг, создающий надежные и безопасные решения для организаций будущего. Компания SNP Technologies стремится создавать по-настоящему ценные продукты для вашего бизнеса. SNP Technologies работает совместно с клиентами от постановки задачи до ее воплощения, чтобы их инвестиции дали результат.|[Веб-сайт][snp_website]<br>[Twitter][snp_twitter]<br>[Contact][snp_contact] | |
 | ![DB Best Technologies, LLC][2] |**DB Best Technologies, LLC**<br>DB Best Technologies, LLC помогает клиентам использовать службу управляемой базы данных Azure с максимальной эффективностью. Компания предлагает несколько решений, которые помогут вам начать работу, включая [Проектирование архитектуры будущего](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.dbbest.com%2Fservices%2Ffuture-state-architectural-design%2F&data=02%7C01%7Cjtoland%40microsoft.com%7C7311aa2024894a80eff208d5cfd45696%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636643433261194557&sdata=SCr3kseFvcU7mI1%2FZt7K2elXAqLY%2FyL6AO944QiWoLg%3D&reserved=0), [Оптимизация управления данными для платформы данных Майкрософт](https://www.dbbest.com/services/data-management-optimization-for-microsoft-data-platform/), [Услуги по планированию развертывания Microsoft Azure](https://www.dbbest.com/services/microsoft-azure-deployment-planning-services) и [Подготовка к работе с платформой данных Azure](https://www.dbbest.com/services/azure-data-platform-readiness-training).|[Веб-сайт][dbbest_website]<br>[Twitter][dbbest_twitter]<br>[YouTube][dbbest_youtube]<br>[Contact][dbbest_contact] | |

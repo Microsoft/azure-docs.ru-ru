@@ -14,10 +14,10 @@ ms.reviewer: nacanuma
 ms.custom: aaddev
 ROBOTS: NOINDEX
 ms.openlocfilehash: 977dfea28c5c0dc3f34ada0c138556d70c979e04
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85551714"
 ---
 # <a name="service-to-service-calls-using-client-credentials-shared-secret-or-certificate"></a>Вызовы между службами с помощью учетных данных клиента (общий секрет или сертификат)
@@ -52,7 +52,7 @@ https://login.microsoftonline.com/<tenant id>/oauth2/token
 ### <a name="first-case-access-token-request-with-a-shared-secret"></a>Первый вариант. Запрос маркера доступа с помощью общего секрета
 При использовании общего секрета запрос маркера взаимного доступа между службами содержит следующие параметры:
 
-| Параметр | Тип | Описание |
+| Параметр | Type | Описание |
 | --- | --- | --- |
 | grant_type |обязательно |Указывает запрашиваемый тип предоставления. В потоке предоставления учетных данных клиента этот параметр должен иметь значение **client_credentials**. |
 | client_id |обязательно |Указывает идентификатор клиента Azure AD вызывающей веб-службы. Чтобы узнать идентификатор клиента вызывающего приложения, на [портале Azure](https://portal.azure.com) последовательно выберите **Azure Active Directory** и **Регистрация приложений**, затем щелкните приложение. Параметр client_id — это *идентификатор приложения*. |
@@ -73,7 +73,7 @@ grant_type=client_credentials&client_id=625bc9f6-3bf6-4b6d-94ba-e97cf07a22de&cli
 ### <a name="second-case-access-token-request-with-a-certificate"></a>Второй вариант. Запрос маркера доступа с помощью сертификата
 Запрос маркера взаимного доступа между службами с помощью сертификата содержит следующие параметры:
 
-| Параметр | Тип | Описание |
+| Параметр | Type | Описание |
 | --- | --- | --- |
 | grant_type |обязательно |Указывает запрашиваемый тип ответа. В потоке предоставления учетных данных клиента этот параметр должен иметь значение **client_credentials**. |
 | client_id |обязательно |Указывает идентификатор клиента Azure AD вызывающей веб-службы. Чтобы узнать идентификатор клиента вызывающего приложения, на [портале Azure](https://portal.azure.com) последовательно выберите **Azure Active Directory** и **Регистрация приложений**, затем щелкните приложение. Параметр client_id — это *идентификатор приложения*. |

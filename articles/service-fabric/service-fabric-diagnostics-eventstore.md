@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 6/6/2019
 ms.author: srrengar
 ms.openlocfilehash: 0b6258e160794eaf7d0c05775f8fd3b796e3ba47
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91354825"
 ---
 # <a name="eventstore-overview"></a>Обзор Евентсторе
@@ -122,7 +122,7 @@ EventStore — это служба Service Fabric с отслеживанием
 ```
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Сведения о начале работы с API EventStore см. в статье [Выполнение запросов к интерфейсам API EventStore для получения событий кластера](service-fabric-diagnostics-eventstore-query.md).
 * Дополнительные сведения о списке событий, предоставляемых EventStore, см. в статье [о событиях Service Fabric](service-fabric-diagnostics-event-generation-operational.md).
 * Общие сведения о мониторинге и диагностике в Service Fabric см. в [этой статье](service-fabric-diagnostics-overview.md).

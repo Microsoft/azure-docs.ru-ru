@@ -13,10 +13,10 @@ ms.author: jovanpop
 ms.reviewer: sstein
 ms.date: 02/07/2019
 ms.openlocfilehash: ee218253309995e721c97f4a7f7b4547b32f7c36
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85986647"
 ---
 # <a name="general-purpose-service-tier---azure-sql-database-and-azure-sql-managed-instance"></a>Общего назначения уровня служб — база данных SQL Azure и Azure SQL Управляемый экземпляр
@@ -34,7 +34,7 @@ ms.locfileid: "85986647"
 
 База данных SQL Azure также имеет третий уровень служб, который сейчас недоступен для Управляемый экземпляр Azure SQL:
 
-- Уровень "Гипермасштабирование"
+- Гипермасштабирование
 
 Модель архитектуры для уровня служб общего назначения основана на разделении вычислений и хранилища. Эта модель архитектуры зависит от высокого уровня доступности и надежности хранилища BLOB-объектов Azure, которое прозрачно реплицирует файлы базы данных и предотвращает потерю данных, если происходит сбой базовой инфраструктуры.
 

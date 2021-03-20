@@ -8,10 +8,10 @@ ms.author: philmea
 ms.date: 11/19/2020
 ms.topic: how-to
 ms.openlocfilehash: 19d8738790b5634b9de989fa94edac6a542f85f4
-ms.sourcegitcommit: f6236e0fa28343cf0e478ab630d43e3fd78b9596
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94917347"
 ---
 # <a name="create-and-run-a-job-in-your-azure-iot-central-application"></a>Создание и выполнение задания в приложении IoT Central Azure
@@ -167,7 +167,7 @@ ms.locfileid: "94917347"
 >
 > После завершения задания и удаления устройства, которое находится в списке устройств задания, запись устройства отображается как удаленная в имени устройства. Ссылка на сведения недоступна для удаленного устройства.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы узнали, как создавать задания в приложении IoT Central Azure, выполните следующие действия.
 

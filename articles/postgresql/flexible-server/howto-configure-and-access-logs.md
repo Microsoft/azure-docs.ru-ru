@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: how-to
 ms.date: 09/22/2020
 ms.openlocfilehash: e52f0f22065d89788d08659476d14af0351cc493
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100590580"
 ---
 # <a name="configure-and-access-logs-in-azure-database-for-postgresql---flexible-server"></a>Настройка журналов и доступ к ним в базе данных Azure для PostgreSQL-гибкого сервера
@@ -69,7 +69,7 @@ AzureDiagnostics
 
 В приведенном выше запросе отобразятся результаты за последние 6 часов для любого журнала postgres сервера в этой рабочей области.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Приступая к работе с запросами log Analytics](../../azure-monitor/logs/log-analytics-tutorial.md)
 - Сведения о [концентраторах событий Azure](../../event-hubs/event-hubs-about.md)

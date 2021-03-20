@@ -14,10 +14,10 @@ ms.author: marsma
 ms.reviewer: saeeda
 ms.custom: aaddev
 ms.openlocfilehash: 98ae81626db637f5b0bd6bfe9e294c32293d09e5
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98755075"
 ---
 # <a name="acquire-and-cache-tokens-using-the-microsoft-authentication-library-msal"></a>Получение и кэширование маркеров с помощью библиотеки проверки подлинности Майкрософт (MSAL)
@@ -122,7 +122,7 @@ MSAL поддерживает кэш маркеров (или два кэша д
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Некоторые платформы, поддерживаемые MSAL, имеют дополнительные сведения о кэше маркеров в документации для библиотеки этой платформы. Вот несколько примеров.
+Некоторые платформы, поддерживаемые MSAL, имеют дополнительные сведения о кэше маркеров в документации для библиотеки этой платформы. Пример:
 - [Получение маркера из кэша маркеров с помощью MSAL.NET](msal-net-acquire-token-silently.md)
 - [Единый вход с использованием MSAL.js](msal-js-sso.md)
 - [Сериализация кэша пользовательской лексемы в MSAL для Python](msal-python-token-cache-serialization.md)

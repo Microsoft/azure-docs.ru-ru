@@ -4,10 +4,10 @@ description: В этой статье описывается, как включ�
 ms.topic: article
 ms.date: 03/22/2019
 ms.openlocfilehash: c600d822d20b0e5a0ca613935b1dfa4be838fcec
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "78252811"
 ---
 # <a name="enable-disk-encryption-for-azure-service-fabric-cluster-nodes-in-linux"></a>Включение шифрования дисков для узлов кластера Azure Service Fabric в Linux 
@@ -35,11 +35,11 @@ ms.locfileid: "78252811"
 
 Для предварительного просмотра шифрования дисков в масштабируемом наборе виртуальных машин требуется самостоятельная регистрация. Выполните указанные ниже действия.
 
-1. Выполните следующую команду: 
+1. Выполните следующую команду. 
     ```powershell
     Register-AzProviderFeature -ProviderNamespace Microsoft.Compute -FeatureName "UnifiedDiskEncryption"
     ```
-2. Подождите около 10 минут, пока не будет *зарегистрировано*состояние READS. Состояние можно проверить, выполнив следующую команду:
+2. Подождите около 10 минут, пока не будет *зарегистрировано* состояние READS. Состояние можно проверить, выполнив следующую команду:
     ```powershell
     Get-AzProviderFeature -ProviderNamespace "Microsoft.Compute" -FeatureName "UnifiedDiskEncryption"
     Register-AzResourceProvider -ProviderNamespace Microsoft.Compute
@@ -55,7 +55,7 @@ ms.locfileid: "78252811"
 3. Установите последнюю версию [пакета SDK для Azure из Azure PowerShell](https://github.com/Azure/azure-powershell/releases) выпуска. Ниже приведены командлеты для шифрования дисков Azure масштабируемого набора виртуальных машин, позволяющие включить ([настроить](/powershell/module/az.compute/set-azvmssdiskencryptionextension)) шифрование, получить ([получить](/powershell/module/az.compute/get-azvmssvmdiskencryption)) состояние шифрования и удалить ([Отключить](/powershell/module/az.compute/disable-azvmssdiskencryption)) шифрование в экземпляре масштабируемого набора.
 
 
-| Get-Help | Version |  Источник  |
+| Get-Help | Версия |  Источник  |
 | ------------- |-------------| ------------|
 | Get-AzVmssDiskEncryptionStatus   | 1.0.0 или более поздняя версия | Az.Compute |
 | Get-AzVmssVMDiskEncryptionStatus   | 1.0.0 или более поздняя версия | Az.Compute |

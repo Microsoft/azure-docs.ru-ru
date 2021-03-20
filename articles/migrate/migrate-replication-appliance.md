@@ -7,10 +7,10 @@ ms.manager: bsiva
 ms.topic: conceptual
 ms.date: 01/30/2020
 ms.openlocfilehash: ec277bcc3e361561f54e72c54526d65487c113b4
-ms.sourcegitcommit: ea551dad8d870ddcc0fee4423026f51bf4532e19
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96754102"
 ---
 # <a name="replication-appliance"></a>Устройство репликации
@@ -57,7 +57,7 @@ PowerCLI | [PowerCLI версии 6,0](https://my.vmware.com/web/vmware/details?
 Лицензия | Устройство поставляется с лицензией на ознакомительную версию Windows Server 2016, которая действительна в течение 180 дней.<br/><br/> Если ознакомительный период завершается, рекомендуется скачать и развернуть новое устройство или активировать лицензию операционной системы на виртуальной машине устройства.
 Язык операционной системы | Английский (en-us)
 TLS | Необходимо включить TLS 1,2.
-.NET Framework | На компьютере должен быть установлен .NET Framework 4,6 или более поздней версии (с включенной стойким шифрованием).
+.NET Framework | На компьютере должен быть установлен платформа .NET Framework 4,6 или более поздней версии (с включенной стойким шифрованием).
 MySQL | На устройстве должна быть установлена MySQL.<br/> Должен быть установлен компонент MySQL. Можно установить вручную или Site Recovery может установить его во время развертывания устройства.
 Другие приложения | Не запускайте другие приложения на устройстве репликации.
 Роли Windows Server | Не включайте эти роли: <br> — доменные службы Active Directory; <br>— службы IIS; <br> — Hyper-V.
@@ -142,7 +142,7 @@ https:\//dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-5.
 2. На **серверах конфигурации** в **версии агента** появляется ссылка, если доступна новая версия устройства репликации. 
 3. Скачайте установщик на компьютер с устройством репликации и установите обновление. Установщик определяет текущую версию, выполняемую на устройстве.
  
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Узнайте, как](tutorial-migrate-vmware-agent.md#set-up-the-replication-appliance) настроить устройство репликации для миграции виртуальных машин VMware на основе агентов.
 - [Узнайте, как](tutorial-migrate-physical-virtual-machines.md#set-up-the-replication-appliance) настроить устройство репликации для физических серверов.

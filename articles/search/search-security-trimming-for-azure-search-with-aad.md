@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/16/2020
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 5788585b2365b12a90a508e5a972b61f73e48c15
-ms.sourcegitcommit: 8c3a656f82aa6f9c2792a27b02bbaa634786f42d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97629516"
 ---
 # <a name="security-filters-for-trimming-azure-cognitive-search-results-using-active-directory-identities"></a>Фильтры безопасности для усечения результатов Когнитивный поиск Azure с использованием удостоверений Active Directory
@@ -31,7 +31,7 @@ ms.locfileid: "97629516"
 > [!NOTE]
 > Примеры фрагментов когда в этой статье написаны языке C#. Полный исходный код можно найти на сайте [GitHub](https://github.com/Azure-Samples/search-dotnet-getting-started). 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Индекс в Когнитивный поиске Azure должен иметь [поле безопасности](search-security-trimming-for-azure-search.md) для хранения списка удостоверений групп, имеющих доступ на чтение документа. Этот вариант использования предполагает прямое соответствие между защищаемым элементом (например, заявление на вступление в колледж конкретного человека) и полем безопасности, в котором указывается, кто имеет доступ к этому элементу (персонал приемной комиссии).
 

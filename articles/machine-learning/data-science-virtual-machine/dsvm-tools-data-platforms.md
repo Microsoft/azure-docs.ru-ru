@@ -10,10 +10,10 @@ ms.author: laobri
 ms.topic: conceptual
 ms.date: 12/12/2019
 ms.openlocfilehash: 927e945a0d045abcd1caa2951dbd484224b2f425
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100519547"
 ---
 # <a name="data-platforms-supported-on-the-data-science-virtual-machine"></a>Языки, поддерживаемые Виртуальной машиной для обработки и анализа данных
@@ -30,7 +30,7 @@ ms.locfileid: "100519547"
 | Поддерживаемые выпуски DSVM      | Windows 2016: SQL Server 2017, Windows 2019: SQL Server 2019      |
 | Распространенные способы применения      | <ul><li>Быстрая локальная разработка приложений с меньшим набором данных</li><li>Запуск R внутри базы данных</li></ul> |
 | Ссылки на примеры      | <ul><li>Небольшой пример набора данных о городе Нью-Йорка загружается в базу данных SQL:<br/>  `nyctaxi`</li><li>Образец Jupyter, отображающий Microsoft Machine Learning Server и аналитическую аналитику в базе данных, можно найти по адресу:<br/> `~notebooks/SQL_R_Services_End_to_End_Tutorial.ipynb`</li></ul> |
-| Связанные средства на DSVM       | <ul><li>SQL Server Management Studio.</li><li>Драйверы ODBC и JDBC</li><li>pyodbc, RODBC</li><li>Apache Drill</li></ul> |
+| Связанные средства на DSVM       | <ul><li>SQL Server Management Studio</li><li>Драйверы ODBC и JDBC</li><li>pyodbc, RODBC</li><li>Apache Drill</li></ul> |
 
 > [!NOTE]
 > SQL Server Developer Edition можно использовать только в целях разработки и тестирования. Для запуска в рабочей среде вам потребуется лицензия или одна из виртуальных машин SQL Server.

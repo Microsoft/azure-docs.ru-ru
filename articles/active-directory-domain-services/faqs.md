@@ -12,17 +12,17 @@ ms.topic: how-to
 ms.date: 02/09/2021
 ms.author: justinha
 ms.openlocfilehash: 3d0f2b44f37cb318be2117b5dc5d8b42b418ff19
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100090995"
 ---
 # <a name="frequently-asked-questions-faqs-about-azure-active-directory-ad-domain-services"></a>Часто задаваемые вопросы о доменных службах Azure Active Directory (AD)
 
 На этой странице приведены ответы на часто задаваемые вопросы об Azure Active Directory доменных службах.
 
-## <a name="configuration"></a>Параметр Configuration
+## <a name="configuration"></a>Конфигурация
 
 * [Можно ли создать несколько управляемых доменов для одного каталога Azure AD?](#can-i-create-multiple-managed-domains-for-a-single-azure-ad-directory)
 * [Можно ли включить доменные службы Azure AD в классической виртуальной сети?](#can-i-enable-azure-ad-domain-services-in-a-classic-virtual-network)

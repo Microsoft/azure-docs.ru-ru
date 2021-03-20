@@ -13,10 +13,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 05/29/2020
 ms.openlocfilehash: 304ad51bc40c8165c2dc11bb70287491e3d6dfb9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91444030"
 ---
 # <a name="connect-excel-to-a-database-in-azure-sql-database-or-azure-sql-managed-instance-and-create-a-report"></a>Подключение Excel к базе данных в базе данных SQL Azure или Управляемый экземпляр SQL Azure и создание отчета
@@ -62,7 +62,7 @@ ms.locfileid: "91444030"
     ![Выбор формата данных в Excel](./media/connect-excel/import-data.png)
 
     Лист теперь содержит пустую сводную таблицу и диаграмму.
-3. В разделе **Поля сводной таблицы**установите все флажки для полей, которые требуется просмотреть.
+3. В разделе **Поля сводной таблицы** установите все флажки для полей, которые требуется просмотреть.
 
     ![Настройте отчет базы данных.](./media/connect-excel/power-pivot-results.png)
 
@@ -99,7 +99,7 @@ ms.locfileid: "91444030"
 
     ![Существующее подключение](./media/connect-excel/existing-connection.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте, как [подключиться к SQL Server Management Studio и выполнить запросы](connect-query-ssms.md) к расширенным запросам и анализу.
 * Узнайте о преимуществах использования [пулов эластичных БД](elastic-pool-overview.md).

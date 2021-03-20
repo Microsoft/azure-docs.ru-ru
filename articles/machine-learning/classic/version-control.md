@@ -9,10 +9,10 @@ author: likebupt
 ms.author: keli19
 ms.date: 10/27/2016
 ms.openlocfilehash: 82d6f1fd250621ec34015970e1339ccfbd134675
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100518408"
 ---
 # <a name="application-lifecycle-management-in-azure-machine-learning-studio-classic"></a>Управление жизненным циклом приложений в Машинное обучение Azure Studio (классическая модель)
@@ -96,7 +96,7 @@ ms.locfileid: "100518408"
 9. [Разверните веб-службу](https://github.com/hning86/azuremlps#new-amlwebservice) из прогнозного эксперимента.
 10. Протестируйте конечную точку [RRS](https://github.com/hning86/azuremlps#invoke-amlwebservicerrsendpoint) или [BES](https://github.com/hning86/azuremlps#invoke-amlwebservicebesendpoint) веб-службы.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Скачайте модуль [PowerShell для машинное обучение Azure Studio (классическая модель)](https://aka.ms/amlps) и начните АВТОМАТИЗИРОВАТЬ задачи ALM.
 * Узнайте, как [создавать большое число моделей машинного обучения и управлять ими, используя только один эксперимент](create-models-and-endpoints-with-powershell.md), с помощью PowerShell и API переобучения.
 * См. дополнительные сведения о [развертывании веб-служб машинного обучения Azure](deploy-a-machine-learning-web-service.md).

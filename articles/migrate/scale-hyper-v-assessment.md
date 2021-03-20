@@ -7,10 +7,10 @@ ms.manager: abhemraj
 ms.topic: how-to
 ms.date: 07/10/2019
 ms.openlocfilehash: 92c275ee3f8e00e71b80e448c9adb94f0b6d21dc
-ms.sourcegitcommit: ea551dad8d870ddcc0fee4423026f51bf4532e19
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96753728"
 ---
 # <a name="assess-large-numbers-of-hyper-v-vms-for-migration-to-azure"></a>Оценка большого количества виртуальных машин Hyper-V для миграции в Azure
@@ -74,7 +74,7 @@ ms.locfileid: "96753728"
 1. Создайте проекты службы "миграция Azure".
 2. Добавьте средство Azure Migrate Server для оценки в проекты.
 
-[Подробнее](./create-manage-projects.md)
+[Дополнительные сведения](./create-manage-projects.md)
 
 ## <a name="create-and-review-an-assessment"></a>Создание и проверка оценки
 

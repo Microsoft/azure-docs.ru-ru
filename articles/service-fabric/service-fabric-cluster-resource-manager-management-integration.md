@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 08/18/2017
 ms.author: masnider
 ms.openlocfilehash: ae80ac5833e90164fc4ff92010fd1830ae932cd2
-ms.sourcegitcommit: 2989396c328c70832dcadc8f435270522c113229
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92174047"
 ---
 # <a name="cluster-resource-manager-integration-with-service-fabric-cluster-management"></a>Интеграция диспетчера кластерных ресурсов с управлением кластерами Service Fabric
@@ -105,7 +105,7 @@ HealthEvents          :
 
 Изучив все эти ограничения, вы можете прийти к выводу, что ограничения для доменов сбоя — это самый важный аспект в вашей системе. Чтобы обеспечить отсутствие нарушений ограничения для доменов сбоя, мне стоит нарушать другие ограничения".
 
-Для ограничений можно настроить различные уровни приоритета, Эти особые значения приведены ниже.
+Для ограничений можно настроить различные уровни приоритета, А именно:
 
    - "жесткий" (0);
    - "мягкий" (1);

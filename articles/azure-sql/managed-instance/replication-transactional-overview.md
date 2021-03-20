@@ -13,10 +13,10 @@ ms.author: mathoma
 ms.reviewer: sstein
 ms.date: 04/20/2020
 ms.openlocfilehash: 3e4b4fc3d4a6c9529c7c0ac0daef8a28173e0bf3
-ms.sourcegitcommit: 2dd0932ba9925b6d8e3be34822cc389cade21b0d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99225349"
 ---
 # <a name="transactional-replication-with-azure-sql-managed-instance-preview"></a>Репликация транзакций с помощью Управляемый экземпляр Azure SQL (Предварительная версия)
@@ -43,12 +43,12 @@ ms.locfileid: "99225349"
 
 ![Репликация с Базой данных SQL](./media/replication-transactional-overview/replication-to-sql-database.png)
 
-| Роль | База данных SQL Azure | Управляемый экземпляр SQL Azure |
+| Роль | База данных SQL Azure | Управляемый экземпляр SQL Azure |
 | :----| :------------- | :--------------- |
 | **Издатель** | Нет | Да |
 | **Распространитель** | Нет | Да|
 | **Подписчик по запросу** | Нет | Да|
-| **Принудительный подписчик**| Да | Да|
+| **Принудительная подписка**| Да | Да|
 | &nbsp; | &nbsp; | &nbsp; |
 
 **Издатель** публикует изменения, внесенные в некоторые таблицы (статьи), отправляя обновления на распространитель. Издатель может быть Управляемый экземпляром SQL Azure или экземпляром SQL Server.
@@ -72,7 +72,7 @@ ms.locfileid: "99225349"
 
 Существуют разные [типы репликации](/sql/relational-databases/replication/types-of-replication).
 
-| Репликация | База данных SQL Azure | Управляемый экземпляр SQL Azure |
+| Репликация | База данных SQL Azure | Управляемый экземпляр SQL Azure |
 | :----| :------------- | :--------------- |
 | [**Стандартная транзакционная**](/sql/relational-databases/replication/transactional/transactional-replication) | Да (только в качестве подписчика) | Да |
 | [**Моментальный снимок**](/sql/relational-databases/replication/snapshot-replication) | Да (только в качестве подписчика) | Да|
@@ -106,7 +106,7 @@ ms.locfileid: "99225349"
 
 ### <a name="compare-data-sync-with-transactional-replication"></a>Сравнение синхронизации данных с репликацией транзакций
 
-| Категория | Синхронизация данных | репликация транзакций |
+| Category | Синхронизация данных | репликация транзакций |
 |---|---|---|
 | Преимущества | — Поддержка режима "активный — активный"<br/>— Двусторонняя передача данных между локальной базой данных и службой "База данных SQL Azure" | — Низкая задержка<br/>— Согласованность транзакций<br/>— Повторное использование существующей топологии после миграции |
 | Недостатки | — Отсутствует согласованность транзакций<br/>— Большее влияние на производительность | -Не удается опубликовать из базы данных SQL Azure <br/>— Дорогое обслуживание |
@@ -199,7 +199,7 @@ ms.locfileid: "99225349"
 - [Создайте публикацию](/sql/relational-databases/replication/publish/create-a-publication).
 - [Создайте принудительную подписку](/sql/relational-databases/replication/create-a-push-subscription) , используя имя сервера в качестве подписчика (например, `N'azuresqldbdns.database.windows.net` и базу данных в имени базы данных SQL Azure в качестве целевой базы данных (например, **AdventureWorks**). )
 
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
 
 - [Репликация с помощью Управляемый экземпляр SQL и группы отработки отказа](transact-sql-tsql-differences-sql-server.md#replication)
 - [Репликация в Базу данных SQL](../database/replication-to-sql-database.md)

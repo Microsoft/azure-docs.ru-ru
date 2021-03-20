@@ -15,10 +15,10 @@ ms.topic: how-to
 ms.date: 03/25/2019
 ms.author: allensu
 ms.openlocfilehash: 5387fdc224cd77ee5273767df5033a51dc27608c
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96008367"
 ---
 # <a name="dynamic-site-acceleration-via-azure-cdn"></a>Динамическое ускорение сайтов с помощью Azure CDN
@@ -147,7 +147,7 @@ ms.locfileid: "96008367"
 --- | ---  
 Сжатие JPEG | .jpg, .jpeg, .jpe, .jig, .jgig, .jgi
 
-## <a name="caching"></a>Caching
+## <a name="caching"></a>Кэширование
 
 С DSA кэширование по умолчанию отключено в CDN, даже если сервер-источник включает в ответ заголовки `Cache-Control` или `Expires`. DSA обычно используется для динамических ресурсов, которые не нужно кэшировать, так как они уникальны для каждого клиента. Кэширование может нарушить работу.
 

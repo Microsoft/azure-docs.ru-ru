@@ -8,10 +8,10 @@ ms.custom:
 - seodec18
 - fasttrack-edit
 ms.openlocfilehash: 11c913b12b4dcb7d2a5ffa532064b347b82904ef
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "80519908"
 ---
 # <a name="configure-your-app-service-or-azure-functions-app-to-use-twitter-login"></a>Настройка службы приложений или приложения "функции Azure" для использования имени для входа Twitter
@@ -43,7 +43,7 @@ ms.locfileid: "80519908"
 1. Последовательно выберите **Параметры** > **Аутентификация или авторизация** и установите для параметра **Проверка подлинности Службы приложений** значение **Вкл**.
 1. Выберите **Twitter**.
 1. Вставьте `API key` `API secret key` значения и, полученные ранее.
-1. Щелкните **ОК**.
+1. Нажмите кнопку **ОК**.
 
    ![Снимок экрана параметров "мобильное приложение" в Twitter][1]
 

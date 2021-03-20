@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 09/02/2020
 ms.author: cherylmc
 ms.openlocfilehash: 2030469262baf406635fd170af384e154fec6ae6
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89401118"
 ---
 # <a name="about-zone-redundant-virtual-network-gateways-in-azure-availability-zones"></a>Избыточные между зонами шлюзы виртуальной сети в Зонах доступности Azure
@@ -85,6 +85,6 @@ ms.locfileid: "89401118"
 
 Допускается одновременное функционирование VPN-шлюзов и шлюзов Express Route в одной виртуальной сети. Но при этом необходимо зарезервировать диапазон IP-адресов /27 для подсети шлюза.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Создание шлюза виртуальной сети, избыточного между зонами](create-zone-redundant-vnet-gateway.md)

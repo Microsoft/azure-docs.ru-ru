@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: f16fcfe227663958279281659b09929a4cd2d386
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98743429"
 ---
 # <a name="how-to-configure-and-azure-cloud-service-classic"></a>Как настроить и облачную службу Azure (классическая модель)
@@ -47,7 +47,7 @@ ms.locfileid: "98743429"
 >[!IMPORTANT]
 > В случае выбора конкретной версии ОС автоматические обновления операционной системы отключаются, а ответственность за установку исправлений ложится на вас. Вы должны обеспечить установку обновлений в экземплярах роли, иначе система безопасности вашего приложения будет уязвима.
 
-## <a name="monitoring"></a>Наблюдение
+## <a name="monitoring"></a>Мониторинг
 
 Вы можете включить оповещения в облачной службе. Щелкните **Параметры**  >  **правила генерации оповещений**  >  **Добавить оповещение**.
 
@@ -98,10 +98,10 @@ ms.locfileid: "98743429"
     ![Скачать](./media/cloud-services-how-to-configure-portal/cs-settings-config-panel-download.png)
 4. Чтобы применить обновления конфигурации, передайте новый файл в службу:
 
-    ![Отправка](./media/cloud-services-how-to-configure-portal/cs-settings-config-panel-upload.png)
+    ![Передать](./media/cloud-services-how-to-configure-portal/cs-settings-config-panel-upload.png)
 5. Выберите файл .cscfg и нажмите **ОК**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте, как [развернуть облачную службу](cloud-services-how-to-create-deploy-portal.md).
 * Настройте [имя пользовательского домена](cloud-services-custom-domain-name-portal.md).

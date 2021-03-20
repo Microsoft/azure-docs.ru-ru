@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 07/07/2020
 ms.author: duau
 ms.openlocfilehash: 7831e7944321e074c312853e1534c47970ebdfdb
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89397956"
 ---
 # <a name="about-upgrading-expressroute-circuit-bandwidth"></a>Об обновлении пропускной способности канала ExpressRoute
@@ -41,7 +41,7 @@ ExpressRoute обеспечивает выделенное и частное п�
 
 Если для ExpressRoute Direct не хватает емкости, можно либо удалить каналы, связанные с прямым ресурсом ExpressRoute, которые больше не нужны, либо создать новый прямой ресурс ExpressRoute. Инструкции по управлению прямым ресурсом ExpressRoute см. в разделе [Настройка Direct для](how-to-expressroute-direct-portal.md)канала expressroute.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Создание и изменение канала](expressroute-howto-circuit-portal-resource-manager.md)
 * [Создание и изменение конфигурации пиринга](expressroute-howto-routing-portal-resource-manager.md)

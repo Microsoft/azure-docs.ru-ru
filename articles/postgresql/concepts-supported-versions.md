@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/16/2020
 ms.custom: fasttrack-edit
 ms.openlocfilehash: 41662c5e4cc0ed9458f8b1b1279e2753daed789f
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100518459"
 ---
 # <a name="supported-postgresql-major-versions"></a>Поддерживаемые основные версии PostgreSQL
@@ -43,5 +43,5 @@ ms.locfileid: "100518459"
 ### <a name="version-syntax"></a>Синтаксис версии
 До PostgreSQL версии 10 [Политика управления версиями PostgreSQL](https://www.postgresql.org/support/versioning/) считается обновлением _основного номера версии_ , что приводит к увеличению первого _или_ второго числа. Например, 9,5 на 9,6 считалось обновлением _основной_ версии. Начиная с версии 10, только изменение первого числа считается обновлением основной версии. Например, 10,0 на 10,1 — это _незначительное_ обновление выпуска. Версия 10 до 11 является _основным_ обновлением версии.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Сведения о поддерживаемых расширениях PostgreSQL см. [в документе о расширениях](concepts-extensions.md).

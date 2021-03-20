@@ -10,10 +10,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.openlocfilehash: 2a1744feedc3e0ffae6cf2cd45cd090a6c2f06d5
-ms.sourcegitcommit: 7cc10b9c3c12c97a2903d01293e42e442f8ac751
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93422099"
 ---
 # <a name="set-up-an-indexer-connection-to-a-cosmos-db-database-using-a-managed-identity"></a>Настройка подключения индексатора к базе данных Cosmos DB с помощью управляемого удостоверения
@@ -33,7 +33,7 @@ ms.locfileid: "93422099"
 
 ![Включение управляемого удостоверения, назначаемого системой](./media/search-managed-identities/turn-on-system-assigned-identity.png "Включение управляемого удостоверения, назначаемого системой")
 
-Нажав **Сохранить** , вы увидите идентификатор объекта, назначенный вашей службе поиска.
+Нажав **Сохранить**, вы увидите идентификатор объекта, назначенный вашей службе поиска.
 
 ![Идентификатор объекта](./media/search-managed-identities/system-assigned-identity-object-id.png "Идентификатор объекта.")
  
@@ -43,7 +43,7 @@ ms.locfileid: "93422099"
 
 1. На портале Azure перейдите к учетной записи Cosmos DB, которая содержит данные для индексирования.
 2. Выберите **Управление доступом (IAM)**
-3. Щелкните **Добавить** , а затем **Добавить назначение роли**.
+3. Щелкните **Добавить**, а затем **Добавить назначение роли**.
 
     ![Добавление назначения роли](./media/search-managed-identities/add-role-assignment-cosmos-db.png "Добавление назначения роли")
 
@@ -84,7 +84,7 @@ api-key: [Search service admin key]
 |---------|-------------|
 | **name** | Обязательный элемент. Введите любое имя для представления вашего объекта источника данных. |
 |**type**| Обязательный элемент. Этот параметр должен содержать значение `cosmosdb`. |
-|**credentials** | Обязательный элемент. <br/><br/>При подключении с использованием управляемого удостоверения формат **учетных данных** должен быть следующим: *Database=[имя_базы_данных];ResourceId=[строка_ИД_ресурса];(ApiKind=[тип_API];)*<br/> <br/>Формат ResourceId: *ResourceId=/subscriptions/ **идентификатор_подписки** /resourceGroups/ **имя_группы_ресурсов** /providers/Microsoft.DocumentDB/databaseAccounts/ **имя_учетной_записи_Cosmos_DB** /;*<br/><br/>Для коллекций SQL указание параметра ApiKind в строке подключения не требуется.<br/><br/>Для коллекций MongoDB добавьте **ApiKind=MongoDb** в строку подключения. <br/><br/>Для графов Gremlin и таблиц Cassandra зарегистрируйтесь для [предварительной версии индексатора](https://aka.ms/azure-cognitive-search/indexer-preview), чтобы получить доступ к предварительной версии и сведениям о том, как отформатировать учетные данные.<br/>|
+|**credentials** | Обязательный элемент. <br/><br/>При подключении с использованием управляемого удостоверения формат **учетных данных** должен быть следующим: *Database=[имя_базы_данных];ResourceId=[строка_ИД_ресурса];(ApiKind=[тип_API];)*<br/> <br/>Формат ResourceId: *ResourceId=/subscriptions/**идентификатор_подписки**/resourceGroups/**имя_группы_ресурсов**/providers/Microsoft.DocumentDB/databaseAccounts/**имя_учетной_записи_Cosmos_DB**/;*<br/><br/>Для коллекций SQL указание параметра ApiKind в строке подключения не требуется.<br/><br/>Для коллекций MongoDB добавьте **ApiKind=MongoDb** в строку подключения. <br/><br/>Для графов Gremlin и таблиц Cassandra зарегистрируйтесь для [предварительной версии индексатора](https://aka.ms/azure-cognitive-search/indexer-preview), чтобы получить доступ к предварительной версии и сведениям о том, как отформатировать учетные данные.<br/>|
 | **container** | В данной вкладке содержатся следующие элементы. <br/>**name**. Обязательный элемент. Укажите идентификатор коллекции базы данных, которая будет индексироваться.<br/>**query**. Необязательный параметр. Можно указать запрос на сведение произвольного документа JSON в неструктурированную схему, индексируемую Когнитивным поиском Azure.<br/>Для API MongoDB, Gremlin и Cassandra запросы не поддерживаются. |
 | **dataChangeDetectionPolicy** | Рекомендуемая |
 |**dataDeletionDetectionPolicy** | Необязательно |
@@ -146,6 +146,6 @@ api-key: [admin key]
 
 1. Проверьте, ограничен ли доступ к учетной записи Cosmos DB для выбора сетей. Если это так, обратитесь к [индексатору доступ к содержимому, защищенному с помощью функций безопасности сети Azure](search-indexer-securing-resources.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Индексатор Azure Cosmos DB](search-howto-index-cosmosdb.md)

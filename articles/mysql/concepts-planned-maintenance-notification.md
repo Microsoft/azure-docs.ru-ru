@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 10/21/2020
 ms.openlocfilehash: ff197f8add65782a594d64661ffecdaced4598c2
-ms.sourcegitcommit: 03c0a713f602e671b278f5a6101c54c75d87658d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94919630"
 ---
 # <a name="planned-maintenance-notification-in-azure-database-for-mysql---single-server"></a>Уведомление о плановом обслуживании в базе данных Azure для MySQL — одиночный сервер
@@ -76,7 +76,7 @@ ms.locfileid: "94919630"
 Временная ошибка, также известная как временный сбой, является ошибкой, которая устраняется автоматически. Во время обслуживания могут возникать [временные ошибки](./concepts-connectivity.md#transient-errors) . Большинство из этих событий автоматически устраняются системой менее чем за 60 секунд. Временные ошибки следует обрабатывать с помощью [логики повторных попыток](./concepts-connectivity.md#handling-transient-errors).
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - На вопросы и предложения, которые могут возникнуть при работе с базой данных Azure для MySQL, отправьте сообщение электронной почты для команды базы данных Azure для MySQL по адресу AskAzureDBforMySQL@service.microsoft.com
 - См. рекомендации по созданию оповещений для метрики в статье [Как настраивать оповещения](howto-alert-on-metric.md).

@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: michmcla
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 695261ceae9d64be9395e6de082f97be04292078
-ms.sourcegitcommit: 4d48a54d0a3f772c01171719a9b80ee9c41c0c5d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98745991"
 ---
 # <a name="advanced-configuration-options-for-the-nps-extension-for-multi-factor-authentication"></a>Параметры расширенной конфигурации расширения NPS для Многофакторной идентификации
@@ -53,6 +53,6 @@ ms.locfileid: "98745991"
 
 Когда запрос поступает с IP-адреса, который существует в `IP_WHITELIST` , двухфакторная проверка подлинности пропускается. Список IP-адресов сравнивается с IP-адресом, указанным в атрибуте *ратнасипаддресс* запроса RADIUS. Если запрос RADIUS происходит без атрибута Ратнасипаддресс, записывается предупреждение: "IP_WHITE_LIST_WARNING:: IP список разрешений игнорируется, так как исходный IP-адрес отсутствует в атрибуте Насипаддресс запроса RADIUS.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Разрешение сообщений об ошибках из расширения NPS для многофакторной идентификации Azure AD](howto-mfa-nps-extension-errors.md)
