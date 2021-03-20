@@ -9,10 +9,10 @@ ms.service: iot-dps
 services: iot-dps
 manager: briz
 ms.openlocfilehash: 12860629d78391ed271306daba29a51aeb326c1d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90531599"
 ---
 # <a name="tpm-attestation"></a>Аттестация доверенного платформенного модуля
@@ -63,7 +63,7 @@ ms.locfileid: "90531599"
 
 ![Процесс восстановления устройством подключения к службе подготовки устройств для проверки владения EK.](./media/concepts-tpm-attestation/step-three-validation.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь устройство подключается к Центру Интернета вещей и вы можете быть уверены в безопасности хранения ключей ваших устройств. Теперь, когда вы знаете, как служба подготовки устройств проверяет удостоверение устройства с помощью модуля TPM с поддержкой надлежащего уровня безопасности, можно приступать к следующим материалам:
 

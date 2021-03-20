@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 09/09/2020
 ms.author: sharrai
 ms.openlocfilehash: aeb89a9d18e4550fa1d6162920d60507fd50c208
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92359872"
 ---
 # <a name="monitoring-churn-patterns-on-virtual-machines"></a>Мониторинг шаблонов обновлений на виртуальных машинах
@@ -80,6 +80,6 @@ IoStat — это простое средство, которое будет в�
 
 Откройте командную строку и выполните команду `iostat` .
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как отслеживать с помощью [Azure Monitor](monitor-log-analytics.md).

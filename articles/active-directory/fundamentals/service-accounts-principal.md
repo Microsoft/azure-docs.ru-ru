@@ -13,16 +13,16 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f92625131a35dc91c860923ec6523c189830f65
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: bab8e8c6dfb944e496c636d53217e63175be9fbc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102552156"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104587854"
 ---
 # <a name="securing-service-principals"></a>Защита субъектов-служб
 
-[Субъект-служба](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) Azure Active Directory (Azure AD) — это локальное представление объекта приложения в одном клиенте или каталоге.  Он выступает в качестве удостоверения экземпляра приложения. Субъекты-службы определяют, кто может получить доступ к приложению, а также ресурсы, к которым приложение может получить доступ. Субъект-служба создается в каждом клиенте, где используется приложение, и ссылается на глобальный уникальный объект приложения. Клиент защищает вход субъекта-службы и доступ к ресурсам.  
+[Субъект-служба](../develop/app-objects-and-service-principals.md) Azure Active Directory (Azure AD) — это локальное представление объекта приложения в одном клиенте или каталоге.  Он выступает в качестве удостоверения экземпляра приложения. Субъекты-службы определяют, кто может получить доступ к приложению, а также ресурсы, к которым приложение может получить доступ. Субъект-служба создается в каждом клиенте, где используется приложение, и ссылается на глобальный уникальный объект приложения. Клиент защищает вход субъекта-службы и доступ к ресурсам.  
 
 ### <a name="tenant-service-principal-relationships"></a>Отношения субъекта-службы клиента
 Приложение с одним клиентом имеет только одного субъекта-службы в своем домашнем клиенте. Для веб-приложения или API с несколькими клиентами требуется субъект службы в каждом клиенте. Субъект-служба создается, когда пользователь из этого клиента придается к использованию приложением или API. Это согласие создает связь "один ко многим" между приложением с несколькими клиентами и связанными с ним субъектами-службами.
@@ -39,7 +39,7 @@ ms.locfileid: "102552156"
 
 ApplicationID представляет глобальное приложение и одинаково для всех экземпляров приложения в разных клиентах. ObjectID — это уникальное значение для объекта приложения, представляющее субъект-службу. Как и в случае с пользователями, группами и другими ресурсами, ObjectID помогает однозначно идентифицировать экземпляр приложения в Azure AD.
 
-Более подробные сведения по этой теме см. в разделе [связь приложения и субъекта-службы](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
+Более подробные сведения по этой теме см. в разделе [связь приложения и субъекта-службы](../develop/app-objects-and-service-principals.md).
 
 Кроме того, в клиенте можно создать приложение и его объект субъекта-службы (ObjectID), используя Azure PowerShell, Azure CLI, Microsoft Graph, портал Azure и другие средства. 
 
@@ -63,7 +63,7 @@ ApplicationID представляет глобальное приложение
 
 * Пароли 
 
-Дополнительные сведения о Azure Key Vault и их использовании для управления сертификатами и секретами см. в статьях [о Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview) и [назначении политики Key Vault доступа с помощью портал Azure](https://docs.microsoft.com/azure/key-vault/general/assign-access-policy-portal). 
+Дополнительные сведения о Azure Key Vault и их использовании для управления сертификатами и секретами см. в статьях [о Azure Key Vault](../../key-vault/general/overview.md) и [назначении политики Key Vault доступа с помощью портал Azure](../../key-vault/general/assign-access-policy-portal.md). 
 
  ### <a name="challenges-and-mitigations"></a>Проблемы и способы их устранения
 В следующей таблице представлены способы устранения проблем, с которыми вы можете столкнуться при использовании субъектов-служб.
@@ -89,7 +89,7 @@ ApplicationID представляет глобальное приложение
 `Get-AzureADServicePrincipal -All:$true` 
 
 
-Дополнительные сведения см. в разделе [Get-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/get-azureadserviceprincipal) .
+Дополнительные сведения см. в разделе [Get-AzureADServicePrincipal](/powershell/module/azuread/get-azureadserviceprincipal) .
 
 ## <a name="assess-service-principal-security"></a>Оценка безопасности субъекта-службы
 
@@ -105,7 +105,7 @@ ApplicationID представляет глобальное приложение
 | Роль RBAC Azure по умолчанию — участник. |Оцените потребности и примените роль с минимально возможными разрешениями для удовлетворения этой потребности.|
 
 ## <a name="move-from-a-user-account-to-a-service-principal"></a>Переход от учетной записи пользователя к субъекту-службе  
-Если вы используете учетную запись пользователя Azure в качестве субъекта-службы, оцените, можно ли перейти на [управляемое удостоверение](https://docs.microsoft.com/azure/app-service/overview-managed-identity?tabs=dotnet) или субъект-службу. Если вы не можете использовать управляемое удостоверение, подготавливаете субъект-службу, имеющую достаточно разрешений и область действия для выполнения необходимых задач. Чтобы создать субъект-службу, можно [зарегистрировать приложение](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)или [PowerShell](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+Если вы используете учетную запись пользователя Azure в качестве субъекта-службы, оцените, можно ли перейти на [управляемое удостоверение](../../app-service/overview-managed-identity.md?tabs=dotnet) или субъект-службу. Если вы не можете использовать управляемое удостоверение, подготавливаете субъект-службу, имеющую достаточно разрешений и область действия для выполнения необходимых задач. Чтобы создать субъект-службу, можно [зарегистрировать приложение](../develop/howto-create-service-principal-portal.md)или [PowerShell](../develop/howto-authenticate-service-principal-powershell.md).
 
 При использовании Microsoft Graph просмотрите документацию по конкретному API, [как в этом примере](/powershell/azure/create-azure-service-principal-azureps), и убедитесь, что тип разрешения для приложения отображается как поддерживаемый.
 
@@ -115,7 +115,7 @@ ApplicationID представляет глобальное приложение
 
 [Создание субъекта-службы](../develop/howto-create-service-principal-portal.md)
 
- [Мониторинг входа субъекта-службы](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins#sign-ins-report)
+ [Мониторинг входа субъекта-службы](../reports-monitoring/concept-sign-ins.md#sign-ins-report)
 
 **Дополнительные сведения о защите учетных записей служб:**
 

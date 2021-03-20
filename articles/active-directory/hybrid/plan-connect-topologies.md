@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8d3f8e9441064a5d2d1372e3f177534b8dfefb93
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92359838"
 ---
 # <a name="topologies-for-azure-ad-connect"></a>Топологии для Azure AD Connect
@@ -37,7 +37,7 @@ ms.locfileid: "92359838"
 | Промежуточный режим сервера синхронизации Azure AD Connect |![Промежуточный режим сервера синхронизации Azure AD Connect](./media/plan-connect-topologies/legendsync2.png) |
 | GALSync с Forefront Identity Manager (FIM) 2010 или Microsoft Identity Manager (MIM) 2016 |![GALSync с FIM 2010 или MIM 2016](./media/plan-connect-topologies/legendsync3.png) |
 | Сервер синхронизации Azure AD Connect, подробно |![Сервер синхронизации Azure AD Connect, подробно](./media/plan-connect-topologies/legendsync4.png) |
-| Azure AD |![Azure Active Directory](./media/plan-connect-topologies/legendaad.png) |
+| Azure AD |![Azure Active Directory](./media/plan-connect-topologies/legendaad.png) |
 | Неподдерживаемый сценарий |![Неподдерживаемый сценарий](./media/plan-connect-topologies/legendunsupported.png) |
 
 
@@ -200,7 +200,7 @@ Azure AD Connect поддерживает установку второго се
 
 Сервер Azure Active Directory Connect взаимодействует с Azure Active Directory через серверную часть Azure Active Directory Connect. Единственным программным обеспечением, которое можно использовать для взаимодействия с этой серверной частью, является Azure Active Directory Connect. Не поддерживается обмен данными с Azure Active Directory Connect серверной частью с помощью любого другого программного обеспечения или метода. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Больше об установке Azure AD Connect для этих сценариев можно узнать в статье [Выборочная установка Azure AD Connect](how-to-connect-install-custom.md).
 
 Узнайте больше о настройке [службы синхронизации Azure AD Connect](how-to-connect-sync-whatis.md) .

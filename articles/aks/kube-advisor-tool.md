@@ -8,10 +8,10 @@ ms.topic: troubleshooting
 ms.date: 11/05/2018
 ms.author: seanmck
 ms.openlocfilehash: 7730146f30487eb5d20f0d3138e9e5ba799daa99
-ms.sourcegitcommit: c157b830430f9937a7fa7a3a6666dcb66caa338b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94681522"
 ---
 # <a name="checking-for-kubernetes-best-practices-in-your-cluster"></a>Проверка применения рекомендаций Kubernetes в кластере

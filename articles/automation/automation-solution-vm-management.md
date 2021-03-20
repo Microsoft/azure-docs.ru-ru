@@ -5,12 +5,12 @@ services: automation
 ms.subservice: process-automation
 ms.date: 02/04/2020
 ms.topic: conceptual
-ms.openlocfilehash: e9a5427f7c3a057f291067ac83d3d9032d7e693d
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: b71e5b1a8ba5f3ee8f883c71a7221e01d4af4fb6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102559364"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104597714"
 ---
 # <a name="startstop-vms-during-off-hours-overview"></a>Обзор функции "Запуск и остановка виртуальных машин в нерабочее время"
 
@@ -91,7 +91,8 @@ ms.locfileid: "102559364"
 | Microsoft.Authorization/permissions/read |Подписка|
 | Microsoft.Authorization/roleAssignments/read | Подписка |
 | Microsoft.Authorization/roleAssignments/write. | Подписка |
-| Microsoft.Authorization/roleAssignments/delete | Подписка || Microsoft.Automation/automationAccounts/connections/read | Группа ресурсов |
+| Microsoft.Authorization/roleAssignments/delete | Подписка |
+| Microsoft.Automation/automationAccounts/connections/read | Группа ресурсов |
 | Microsoft.Automation/automationAccounts/certificates/read | Группа ресурсов |
 | Microsoft.Automation/automationAccounts/write | Группа ресурсов |
 | Microsoft.OperationalInsights/workspaces/write | Группа ресурсов |
@@ -167,7 +168,7 @@ ms.locfileid: "102559364"
 |Scheduled_StopVM | Устанавливается пользователем, ежедневно. | Запускает runbook **ScheduledStopStart_Parent** со значением параметра, равным `Stop`, каждый день в указанное время.  Автоматически останавливает все виртуальные машины, удовлетворяющие правилам, определенным с помощью ресурса переменной.  Включает связанное расписание **Scheduled-StartVM**.|
 |Scheduled_StartVM | Устанавливается пользователем, ежедневно. | Запускает runbook **ScheduledStopStart_Parent** со значением параметра, равным `Start`, каждый день в указанное время. Автоматически запускает все виртуальные машины, удовлетворяющие правилам, определенным с помощью ресурса переменной  Включает связанное расписание **Scheduled-StopVM**.|
 |Sequenced-StopVM | 01:00 (UTC), каждую пятницу | Запускает runbook **Sequenced_StopStop_Parent** со значением параметра, равным `Stop`, каждую пятницу в указанное время.  Последовательно (по возрастанию) останавливает все виртуальные машины с тегом **SequenceStop**, которые указаны в соответствующих переменных. Ознакомьтесь с разделом [Модули Runbook](#runbooks), чтобы получить дополнительные сведения о значениях тегов и переменных ресурсов.  Включите связанное расписание **Sequenced-StartVM**.|
-|Sequenced-StartVM | 13:00 (UTC), каждый понедельник | Запускает runbook **SequencedStopStart_Parent** со значением параметра, равным `Start`, каждый понедельник в указанное время. Последовательно (по убыванию) запускает все виртуальные машины с тегом **SequenceStart**, которые указаны в соответствующих переменных. Ознакомьтесь с разделом [Модули Runbook](#runbooks), чтобы получить дополнительные сведения о значениях тегов и переменных ресурсов. Включите связанное расписание **Sequenced-StopVM**.
+|Sequenced-StartVM | 13:00 (UTC), каждый понедельник | Запускает runbook **SequencedStopStart_Parent** со значением параметра, равным `Start`, каждый понедельник в указанное время. Последовательно (по убыванию) запускает все виртуальные машины с тегом **SequenceStart**, которые указаны в соответствующих переменных. Ознакомьтесь с разделом [Модули Runbook](#runbooks), чтобы получить дополнительные сведения о значениях тегов и переменных ресурсов. Включите связанное расписание **Sequenced-StopVM**.|
 
 ## <a name="use-the-feature-with-classic-vms"></a>Использование функции с классическими виртуальными машинами
 

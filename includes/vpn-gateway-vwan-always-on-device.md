@@ -9,10 +9,10 @@ ms.date: 03/12/2020
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 34e841a5f17d589c4fbef54a4a8674a99ac6c640
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96026324"
 ---
 Чтобы успешно установить туннель устройства, необходимо соблюдение следующих требований.
@@ -28,7 +28,7 @@ ms.locfileid: "96026324"
 
 После настройки шлюза виртуальной сети и установки сертификата клиента в хранилище локального компьютера на клиенте Windows 10 используйте следующие примеры для настройки туннеля клиентского устройства.
 
-1. Скопируйте приведенный ниже текст и сохраните его как ***devicecert.ps1** _.
+1. Скопируйте приведенный ниже текст и сохраните его как ***devicecert.ps1***.
 
    ```
    Param(
@@ -80,7 +80,7 @@ ms.locfileid: "96026324"
    $Message = "Complete."
    Write-Host "$Message"
    ```
-1. Скопируйте приведенный ниже текст и сохраните его как _*_VPNProfile.xml_*_ в той же папке, что и _ * devicecert.ps1 * *. Измените следующий текст в соответствии с вашей средой.
+1. Скопируйте приведенный ниже текст и сохраните его как ***VPNProfile.xml** _ в той же папке, что и _ * devicecert.ps1 * *. Измените следующий текст в соответствии с вашей средой.
 
    * `<Servers>azuregateway-1234-56-78dc.cloudapp.net</Servers> <= Can be found in the VpnSettings.xml in the downloaded profile zip file`
    * `<Address>192.168.3.5</Address> <= IP of resource in the vnet or the vnet address space`

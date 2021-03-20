@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 10/05/2020
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 9360fc000e01e1c52561cbaa3e2f2968e67e2fa2
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91740876"
 ---
 # <a name="how-to-build-a-facet-filter-in-azure-cognitive-search"></a>Как создать фильтр аспекта в Azure Когнитивный поиск 
@@ -29,8 +29,8 @@ ms.locfileid: "91740876"
 
 Аспекты являются динамическими и возвращаются в запросе. В ответах поиска приводятся фасетные категории, используемые для навигации по результатам. Если вы не знакомы с аспектами, ниже приведен пример структуры фасетной навигации.
 
-:::image type="complex" source="media/search-filters-facets/facet-nav.png" alt-text="отфильтрованные результаты поиска&quot;:::
-&quot;Изображение, показывающее диалоговое окно поиска с отфильтрованными результатами поиска, сгруппированными по бизнес-наименованиям. Стрелка указывает, что результаты представляют собой аспекты, отображаемые в структуре навигации аспекта " :::image-end:::
+:::image type="complex" source="media/search-filters-facets/facet-nav.png" alt-text="отфильтрованные результаты поиска":::
+"Изображение, показывающее диалоговое окно поиска с отфильтрованными результатами поиска, сгруппированными по бизнес-наименованиям. Стрелка указывает, что результаты представляют собой аспекты, отображаемые в структуре навигации аспекта " :::image-end:::
 
 Хотите подробнее узнать о фасетной навигации? См. статью [как реализовать аспектную навигацию в Azure когнитивный Поиск](search-faceted-navigation.md).
 
@@ -123,8 +123,8 @@ if (!String.IsNullOrEmpty(categoryFacet))
 
 Хотя это распространенный вариант использования, структура фасетной навигации в настоящее время не предоставляет этого изначально. Разработчики, которым требуются статические аспекты, обычно обходят ограничение, выполняя два отфильтрованных запроса: один в пределах результатов, а другой для создания статического списка аспектов для навигации.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 + [Фильтры в Когнитивный поиск Azure](search-filters.md)
 + [Create Index (Azure Search Service REST API)](/rest/api/searchservice/create-index) (Создание индексов (REST API службы "Поиск Azure")).
-+ [Поиск документов REST API](/rest/api/searchservice/search-documents)
++ [Search Documents (Azure Search Service REST API)](/rest/api/searchservice/search-documents) (Поиск по документам (REST API службы поиска Azure))

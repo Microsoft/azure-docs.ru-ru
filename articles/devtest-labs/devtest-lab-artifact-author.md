@@ -4,10 +4,10 @@ description: Узнайте, как создавать артефакты для
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: 85acfcc3811e671e58fadab08a23951778e1323d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88270688"
 ---
 # <a name="create-custom-artifacts-for-your-devtest-labs-virtual-machine"></a>Создание пользовательских артефактов для виртуальной машины DevTest Labs
@@ -48,10 +48,10 @@ ms.locfileid: "88270688"
 | --- | --- | --- |
 | $schema |Нет |Расположение файла схемы JSON, позволяющего проверять подлинность файла определения. |
 | title |Да |Имя артефакта отображается в лаборатории. |
-| description |Да |Описание артефакта отображается в лаборатории. |
+| description; |Да |Описание артефакта отображается в лаборатории. |
 | iconUri |Нет |URI значка отображается в лаборатории. |
 | targetOsType |Да |Операционная система виртуальной машины, на которую устанавливается артефакт. Поддерживаемые параметры: Windows и Linux. |
-| параметры |Нет |Значения, предоставляемые, когда на компьютере выполняется команда установки артефакта. Это поможет вам настроить артефакт. |
+| parameters |Нет |Значения, предоставляемые, когда на компьютере выполняется команда установки артефакта. Это поможет вам настроить артефакт. |
 | runCommand |Да |Команда установки артефакта, выполняемая на виртуальной машине. |
 
 ### <a name="artifact-parameters"></a>Параметры артефакта
@@ -73,7 +73,7 @@ ms.locfileid: "88270688"
 | --- | --- | --- |
 | type |Да |Тип значения параметра. Ниже приведен список допустимых типов. |
 | displayName |Да |Имя параметра, отображаемое для пользователя в лаборатории. |
-| description |Да |Описание параметра, отображаемого в лаборатории. |
+| description; |Да |Описание параметра, отображаемого в лаборатории. |
 
 Допустимые типы:
 
@@ -148,5 +148,5 @@ ms.locfileid: "88270688"
 * [Диагностика сбоев артефактов на виртуальной машине Azure DevTest Labs](devtest-lab-troubleshoot-artifact-failure.md)
 * [Join a VM to existing AD Domain using ARM template in Azure Dev Test Lab](https://www.visualstudiogeeks.com/blog/DevOps/Join-a-VM-to-existing-AD-domain-using-ARM-template-AzureDevTestLabs) (Присоединение виртуальной машины к имеющемуся домену AD с помощью шаблона ARM в Azure DevTest Labs)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте, как [добавить репозиторий артефактов Git в лабораторию](devtest-lab-add-artifact-repo.md).

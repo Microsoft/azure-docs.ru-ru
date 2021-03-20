@@ -8,13 +8,13 @@ author: mksuni
 ms.author: sumuth
 ms.date: 09/21/2020
 ms.openlocfilehash: 413f5fc1f6579102b62042c1470816470c2e1449
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92546557"
 ---
-# <a name="connect-and-query-overview-for-azure-database-for-postgresql--single-server"></a>Общие сведения о подключении и запросах для базы данных Azure для PostgreSQL — один сервер
+# <a name="connect-and-query-overview-for-azure-database-for-postgresql--single-server"></a>Общие сведения о подключении к отдельному серверу Базы данных Azure для PostgreSQL и отправка запросов к нему
 
 В следующем документе приведены ссылки на примеры, демонстрирующие подключение и выполнение запросов к серверу базы данных Azure для PostgreSQL. В этом руководством также содержатся рекомендации и расширения TLS, которые можно использовать для подключения к серверу на поддерживаемых языках.
 

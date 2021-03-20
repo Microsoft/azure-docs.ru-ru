@@ -9,10 +9,10 @@ ms.date: 03/21/2018
 ms.author: subsarma
 ms.custom: include file for PowerShell for Azure DNS
 ms.openlocfilehash: 32c516ccee3a9f4f7604a3e330285703a776b47d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "67133194"
 ---
 ## <a name="set-up-azure-powershell-for-azure-dns"></a>Настройка Azure PowerShell для Azure DNS
@@ -23,7 +23,7 @@ ms.locfileid: "67133194"
 
 Перед началом настройки убедитесь, что у вас есть следующие компоненты.
 
-* Подписка Azure. Если у вас еще нет подписки Azure, вы можете активировать преимущества для [подписчиков MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) или зарегистрироваться для использования [бесплатной учетной записи](https://azure.microsoft.com/pricing/free-trial/).
+* Подписка Azure. Если у вас нет подписки Azure, вы можете [активировать преимущества для подписчиков MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) или [зарегистрировать бесплатную учетную запись](https://azure.microsoft.com/pricing/free-trial/).
 * Вам потребуется установить последнюю версию командлетов PowerShell Azure Resource Manager. Подробнее: [Установка и настройка Azure PowerShell](/powershell/azureps-cmdlets-docs).
 
 Кроме того, для использования Частных зон (предварительная версия) необходимо убедиться, что у вас есть следующие модули и версии PowerShell. 

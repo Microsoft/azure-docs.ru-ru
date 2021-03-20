@@ -4,10 +4,10 @@ description: Сведения о том, как создать и разверн
 ms.topic: conceptual
 ms.date: 04/11/2018
 ms.openlocfilehash: 556d8dee4efd492fa98755f1ffd1cdc1c9887856
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "82193655"
 ---
 # <a name="create-your-first-azure-service-fabric-application"></a>Создание первого приложения Azure Service Fabric
@@ -58,7 +58,7 @@ Service Fabric предоставляет средства формирован�
 >
 >
 
-## <a name="build-the-application"></a>создание приложения;
+## <a name="build-the-application"></a>Построение приложения
 Шаблоны Service Fabric для Yeoman включают скрипт сборки, с помощью которого можно создать приложение из терминала (после перемещения в папку приложения).
 
   ```sh

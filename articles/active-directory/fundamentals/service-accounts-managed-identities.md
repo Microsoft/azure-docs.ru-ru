@@ -13,12 +13,12 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88a7600239d6e960fa2e635c9e7d9049a7c02db3
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 4584b0a605bd63c1f71082014d3c0622ca7d2c37
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102032371"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104587837"
 ---
 # <a name="securing-managed-identities"></a>Защита управляемых удостоверений
 
@@ -50,11 +50,11 @@ ms.locfileid: "102032371"
 
 После того как целевая система принимает маркер для проверки подлинности, она может поддерживать различные механизмы авторизации для своей плоскости управления и плоскости данных.
 
-Все операции плоскости управления Azure управляются [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) и используют [Управление доступом на основе ролей Azure](https://docs.microsoft.com/azure/role-based-access-control/overview). В плоскости данных каждая целевая система имеет собственный механизм авторизации. Служба хранилища Azure поддерживает Azure RBAC в плоскости данных. Например, приложения, использующие службы приложений Azure, могут считывать данные из хранилища Azure, а приложения, использующие службу Kubernetes Azure, могут считывать секреты, хранящиеся в Azure Key Vault.
+Все операции плоскости управления Azure управляются [Azure Resource Manager](../../azure-resource-manager/management/overview.md) и используют [Управление доступом на основе ролей Azure](../../role-based-access-control/overview.md). В плоскости данных каждая целевая система имеет собственный механизм авторизации. Служба хранилища Azure поддерживает Azure RBAC в плоскости данных. Например, приложения, использующие службы приложений Azure, могут считывать данные из хранилища Azure, а приложения, использующие службу Kubernetes Azure, могут считывать секреты, хранящиеся в Azure Key Vault.
 
-Дополнительные сведения о плоскостях управления и данных см. в статье [операции с плоскостью управления и плоскостью данных — Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/control-plane-and-data-plane).
+Дополнительные сведения о плоскостях управления и данных см. в статье [операции с плоскостью управления и плоскостью данных — Azure Resource Manager](../../azure-resource-manager/management/control-plane-and-data-plane.md).
 
-В конечном итоге все службы Azure будут поддерживать управляемые удостоверения. Дополнительные сведения см. в статье [службы, поддерживающие управляемые удостоверения для ресурсов Azure](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/services-support-managed-identities).
+В конечном итоге все службы Azure будут поддерживать управляемые удостоверения. Дополнительные сведения см. в статье [службы, поддерживающие управляемые удостоверения для ресурсов Azure](../managed-identities-azure-resources/services-support-managed-identities.md).
 
 ##  
 
@@ -116,7 +116,7 @@ ms.locfileid: "102032371"
 
    `Get-AzureADGroupMember -ObjectId <String> [-All <Boolean>] [-Top <Int32>] [<CommonParameters>]`
 
-* [Убедитесь, что вам известно, к каким ресурсам обращается управляемое удостоверение](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-list-powershell).
+* [Убедитесь, что вам известно, к каким ресурсам обращается управляемое удостоверение](../../role-based-access-control/role-assignments-list-powershell.md).
 
 ## <a name="move-to-managed-identities"></a>Перейти к управляемым удостоверениям
 
@@ -126,11 +126,11 @@ ms.locfileid: "102032371"
 
 **Сведения о создании управляемых удостоверений см. в следующих статьях:** 
 
-[Создание управляемого удостоверения, назначенного пользователем](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-portal). 
+[Создание управляемого удостоверения, назначенного пользователем](../managed-identities-azure-resources/how-to-manage-ua-identity-portal.md). 
 
-[Включение управляемого удостоверения, назначенного системой, во время создания ресурса](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
+[Включение управляемого удостоверения, назначенного системой, во время создания ресурса](../managed-identities-azure-resources/qs-configure-portal-windows-vm.md)
 
-[Включение управляемого удостоверения, назначенного системой, в существующем ресурсе](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
+[Включение управляемого удостоверения, назначенного системой, в существующем ресурсе](../managed-identities-azure-resources/qs-configure-portal-windows-vm.md)
 
 **Дополнительные сведения об учетных записях служб см. в следующих статьях:**
 
@@ -146,4 +146,3 @@ ms.locfileid: "102032371"
 
  
 
- 

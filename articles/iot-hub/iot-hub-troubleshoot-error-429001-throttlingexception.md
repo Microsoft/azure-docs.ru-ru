@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.date: 01/30/2020
 ms.author: jlian
 ms.openlocfilehash: d2f12a6982886eeaa375151c5b8a73acc573aab9
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92545367"
 ---
 # <a name="429001-throttlingexception"></a>429001 ThrottlingException
@@ -21,7 +21,7 @@ ms.locfileid: "92545367"
 
 ## <a name="symptoms"></a>Симптомы
 
-Запросы в центр Интернета вещей завершаются ошибкой **429001 сроттлинжексцептион** .
+Запросы в центр Интернета вещей завершаются ошибкой **429001 сроттлинжексцептион**.
 
 ## <a name="cause"></a>Причина
 

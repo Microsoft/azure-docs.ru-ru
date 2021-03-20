@@ -11,12 +11,12 @@ ms.workload: identity
 ms.date: 10/30/2019
 ms.author: jmprieur
 ms.custom: aaddev
-ms.openlocfilehash: 295897be03a7dd8e397e8202ff1cf10e6d59cdfb
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.openlocfilehash: 19ead7fe063992e95588641f7fd739081cf54a2f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98753871"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104578419"
 ---
 # <a name="daemon-app-that-calls-web-apis---acquire-a-token"></a>Управляющее приложение, вызывающее веб-API — получение маркера
 
@@ -24,13 +24,27 @@ ms.locfileid: "98753871"
 
 ## <a name="scopes-to-request"></a>Области для запроса
 
-Область запроса учетных данных клиента — это имя ресурса, за которым следует `/.default` . Эта нотация указывает Azure Active Directory (Azure AD) использовать *разрешения уровня приложения* , объявленные статически во время регистрации приложения. Кроме того, эти разрешения API должны быть предоставлены администратором клиента.
+Область запросов для потока учетных данных клиента — это имя ресурса с добавлением `/.default`. Эта нотация указывает Azure Active Directory (Azure AD) использовать *разрешения уровня приложения* , объявленные статически во время регистрации приложения. Кроме того, эти разрешения API должны быть предоставлены администратором арендатора.
 
 # <a name="net"></a>[.NET](#tab/dotnet)
 
 ```csharp
 ResourceId = "someAppIDURI";
 var scopes = new [] {  ResourceId+"/.default"};
+```
+
+# <a name="java"></a>[Java](#tab/java)
+
+```Java
+final static String GRAPH_DEFAULT_SCOPE = "https://graph.microsoft.com/.default";
+```
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+```JavaScript
+const tokenRequest = {
+    scopes: [process.env.GRAPH_ENDPOINT + '.default'], // e.g. 'https://graph.microsoft.com/.default'
+};
 ```
 
 # <a name="python"></a>[Python](#tab/python)
@@ -41,12 +55,6 @@ var scopes = new [] {  ResourceId+"/.default"};
 {
     "scope": ["https://graph.microsoft.com/.default"],
 }
-```
-
-# <a name="java"></a>[Java](#tab/java)
-
-```Java
-final static String GRAPH_DEFAULT_SCOPE = "https://graph.microsoft.com/.default";
 ```
 
 ---
@@ -95,30 +103,6 @@ catch (MsalServiceException ex) when (ex.Message.Contains("AADSTS70011"))
 ### <a name="acquiretokenforclient-uses-the-application-token-cache"></a>Аккуиретокенфорклиент использует кэш маркеров приложений
 
 В MSAL.NET `AcquireTokenForClient` использует кэш маркеров приложений. (Все остальные методы AcquireToken *XX* используют кэш пользовательских маркеров.) Не вызывайте метод `AcquireTokenSilent` перед вызовом `AcquireTokenForClient` , так как `AcquireTokenSilent` использует кэш *пользовательских* маркеров. `AcquireTokenForClient` проверяет сам кэш маркера *приложения* и обновляет его.
-
-# <a name="python"></a>[Python](#tab/python)
-
-```Python
-# The pattern to acquire a token looks like this.
-result = None
-
-# First, the code looks up a token from the cache.
-# Because we're looking for a token for the current app, not for a user,
-# use None for the account parameter.
-result = app.acquire_token_silent(config["scope"], account=None)
-
-if not result:
-    logging.info("No suitable token exists in cache. Let's get a new one from AAD.")
-    result = app.acquire_token_for_client(scopes=config["scope"])
-
-if "access_token" in result:
-    # Call a protected API with the access token.
-    print(result["token_type"])
-else:
-    print(result.get("error"))
-    print(result.get("error_description"))
-    print(result.get("correlation_id"))  # You might need this when reporting a bug.
-```
 
 # <a name="java"></a>[Java](#tab/java)
 
@@ -169,6 +153,43 @@ private static IAuthenticationResult acquireToken() throws Exception {
  }
 ```
 
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+Приведенный ниже фрагмент кода иллюстрирует получение токена в конфиденциальном клиентском приложении MSAL Node:
+
+```JavaScript
+try {
+    const authResponse = await cca.acquireTokenByClientCredential(tokenRequest);
+    console.log(authResponse.accessToken) // display access token
+} catch (error) {
+    console.log(error);
+}
+```
+
+# <a name="python"></a>[Python](#tab/python)
+
+```Python
+# The pattern to acquire a token looks like this.
+result = None
+
+# First, the code looks up a token from the cache.
+# Because we're looking for a token for the current app, not for a user,
+# use None for the account parameter.
+result = app.acquire_token_silent(config["scope"], account=None)
+
+if not result:
+    logging.info("No suitable token exists in cache. Let's get a new one from AAD.")
+    result = app.acquire_token_for_client(scopes=config["scope"])
+
+if "access_token" in result:
+    # Call a protected API with the access token.
+    print(result["token_type"])
+else:
+    print(result.get("error"))
+    print(result.get("error_description"))
+    print(result.get("correlation_id"))  # You might need this when reporting a bug.
+```
+
 ---
 
 ### <a name="protocol"></a>Протокол
@@ -204,7 +225,7 @@ scope=https%3A%2F%2Fgraph.microsoft.com%2F.default
 
 Дополнительные сведения см. в документации по протоколу: [платформа удостоверений Майкрософт и поток учетных данных клиента OAuth 2,0](v2-oauth2-client-creds-grant-flow.md).
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 ### <a name="did-you-use-the-resourcedefault-scope"></a>Вы использовали область ресурсов/. по умолчанию?
 
@@ -235,18 +256,22 @@ Content: {
 
 Дополнительные сведения см. в статьях [предоставление разрешений приложению (роли приложений)](scenario-protected-web-api-app-registration.md#exposing-application-permissions-app-roles) и, в частности, [обеспечение того, что Azure AD выдает маркеры для веб-API только для клиентов](scenario-protected-web-api-app-registration.md#ensuring-that-azure-ad-issues-tokens-for-your-web-api-to-only-allowed-clients).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 # <a name="net"></a>[.NET](#tab/dotnet)
 
 Перейдите к следующей статье в этом сценарии, [вызвав веб-API](./scenario-daemon-call-api.md?tabs=dotnet).
 
-# <a name="python"></a>[Python](#tab/python)
-
-Перейдите к следующей статье в этом сценарии, [вызвав веб-API](./scenario-daemon-call-api.md?tabs=python).
-
 # <a name="java"></a>[Java](#tab/java)
 
 Перейдите к следующей статье в этом сценарии, [вызвав веб-API](./scenario-daemon-call-api.md?tabs=java).
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+Перейдите к следующей статье в этом сценарии, [вызвав веб-API](./scenario-daemon-call-api.md?tabs=nodejs).
+
+# <a name="python"></a>[Python](#tab/python)
+
+Перейдите к следующей статье в этом сценарии, [вызвав веб-API](./scenario-daemon-call-api.md?tabs=python).
 
 ---

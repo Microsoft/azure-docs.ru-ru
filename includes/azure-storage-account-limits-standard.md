@@ -9,10 +9,10 @@ ms.date: 09/30/2020
 ms.author: tamram
 ms.custom: include file
 ms.openlocfilehash: ef9efe389894af7c792e980922ca422e9d05929b
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96027355"
 ---
 В следующей таблице приведены стандартные ограничения таких учетных записей хранения Azure: общего назначения версии 1 и версии 2, хранилища BLOB-объектов и хранилища блочных BLOB-объектов. Под ограничением на *входящий трафик* подразумеваются все данные, отправляемые в учетную запись хранения. Под ограничением на *исходящий трафик* подразумеваются все данные, получаемые из учетной записи хранения.

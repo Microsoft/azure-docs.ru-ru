@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 08/21/2019
 ms.openlocfilehash: babf2c8208732a194184549dfa5ed3228b376d0f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91710266"
 ---
 # <a name="query-performance-insight"></a>Анализ производительности запросов 
@@ -40,12 +40,12 @@ ms.locfileid: "91710266"
 
 Откройте вкладку **Статистика ожидания**, чтобы посмотреть визуализации ожидания на сервере.
 
-:::image type="content" source="./media/concepts-query-performance-insight/query-performance-insight-wait-statistics.png" alt-text="Анализ производительности медленно выполняющихся запросов":::
+:::image type="content" source="./media/concepts-query-performance-insight/query-performance-insight-wait-statistics.png" alt-text="Статистика ожидания в анализе производительности запросов":::
 
 ## <a name="considerations"></a>Рекомендации
 * Анализ производительности запросов недоступна для [реплик чтения](concepts-read-replicas.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения о [мониторинге и настройке](concepts-monitoring.md) см. в базе данных Azure для PostgreSQL.
 
 

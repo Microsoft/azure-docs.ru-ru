@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 11/19/2020
 ms.custom: devx-track-js, devx-track-csharp
 ms.openlocfilehash: 75c80fb85d39298f1130537971bc700897c039d0
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96023735"
 ---
 # <a name="receive-events-to-an-http-endpoint"></a>Получение событий через конечную точку HTTP
@@ -18,7 +18,7 @@ ms.locfileid: "96023735"
 > [!NOTE]
 > При активации службы "Функции Azure" с помощью Сетки событий **настоятельно** рекомендуется использовать [триггер Сетки событий](../azure-functions/functions-bindings-event-grid.md). Универсальный триггер веб-перехватчика используется для демонстрации.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Вам потребуется приложение-функция с функцией, активируемой HTTP.
 
@@ -399,7 +399,7 @@ module.exports = function (context, req) {
 
 [!INCLUDE [event-grid-message-headers](../../includes/event-grid-message-headers.md)]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Ознакомьтесь со статьей [Пакеты SDK для управления службой "Сетка событий Azure" и публикации в ней](./sdk-overview.md).
 * Дополнительные сведения см. в статье [Публикация в пользовательском разделе для службы "Сетка событий Azure"](./post-to-custom-topic.md).

@@ -4,10 +4,10 @@ description: Уведомления о работоспособности слу
 ms.topic: conceptual
 ms.date: 4/12/2018
 ms.openlocfilehash: 4f2b4a0779d775ed5be5bfa28831cccc68c33caf
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86529018"
 ---
 # <a name="use-the-azure-portal-to-view-service-health-notifications"></a>Использование портал Azure для просмотра уведомлений о работоспособности службы
@@ -43,12 +43,12 @@ operationName | Имя операции.
 resourceId | Идентификатор затронутого ресурса.
 Properties.title | Локализованное название этого сообщения. По умолчанию используется английский язык.
 Properties.communication | Локализованные сведения сообщения с разметкой HTML. По умолчанию используется английский язык.
-Properties.incidentType | Одно из следующих значений: **ActionRequired**, **информационное**, **инцидентное**, **техническое обслуживание**или **Безопасность**.
+Properties.incidentType | Одно из следующих значений: **ActionRequired**, **информационное**, **инцидентное**, **техническое обслуживание** или **Безопасность**.
 Properties.trackingId | Инцидент, с которым связано это событие. Используйте его для сопоставления событий, связанных с инцидентом.
 Properties.impactedServices | Экранированный большой двоичный объект в формате JSON, описывающий службы и регионы, на которые влияет инцидент. Это свойство содержит список служб, у каждой из которых есть имя **ServiceName**, и список затронутых регионов, у каждого из которых есть регион **RegionName**.
 Properties.defaultLanguageTitle | Сообщение на английском языке.
 Properties.defaultLanguageContent | Сообщение на английском языке с разметкой HTML или в виде обычного текста.
-Properties.stage | Возможные значения параметров **Incident** и **Security**: **Active,** **Resolved** или **RCA**. У параметров **ActionRequired** и **Informational** может быть только одно значение — **Active**. Для **обслуживания** : **активно**, **запланировано**, **выполняется**, **отменено**, **перепланировано**, **разрешено**или **завершено**.
+Properties.stage | Возможные значения параметров **Incident** и **Security**: **Active,** **Resolved** или **RCA**. У параметров **ActionRequired** и **Informational** может быть только одно значение — **Active**. Для **обслуживания** : **активно**, **запланировано**, **выполняется**, **отменено**, **перепланировано**, **разрешено** или **завершено**.
 Properties.communicationId | Сообщение, с которым связано это событие.
 
 ### <a name="details-on-service-health-level-information"></a>Подробнее о сведениях уровня работоспособности служб

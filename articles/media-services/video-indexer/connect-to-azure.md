@@ -10,12 +10,12 @@ ms.subservice: video-indexer
 ms.topic: article
 ms.date: 01/14/2021
 ms.author: juliako
-ms.openlocfilehash: fe6be5778997f0ef4a3f53ae45d17352eca60d8e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 35d01fd60d0549a528a45013add48bd203b86d6e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101727266"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104654685"
 ---
 # <a name="create-a-video-indexer-account"></a>Создание учетной записи индексатора видео
 
@@ -203,7 +203,7 @@ ms.locfileid: "101727266"
 
 -   Подписка Azure в [Azure для государственных организаций](../../azure-government/index.yml).
 - Учетная запись Azure AD в Azure для государственных организаций.
-- Все предварительные требования к разрешениям и ресурсам, описанные выше в разделе [Предварительные требования для подключения к Azure](#prerequisites-for-connecting-to-azure).
+- Все предварительные требования к разрешениям и ресурсам, описанные выше в разделе [Предварительные требования для подключения к Azure](#prerequisites-for-connecting-to-azure). Обязательно ознакомьтесь с [дополнительными требованиями для автоматического](#additional-prerequisites-for-automatic-flow) последовательного выполнения и [дополнительными требованиями для ручного потока](#additional-prerequisites-for-manual-flow).
 
 ### <a name="create-new-account-via-the-azure-government-portal"></a>Создание новой учетной записи с помощью портала Azure для государственных организаций
 
