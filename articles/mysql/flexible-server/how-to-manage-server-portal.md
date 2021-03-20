@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 9/21/2020
 ms.openlocfilehash: 7a01863b3a0c29e94550be67ca957655cff32660
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90937331"
 ---
 # <a name="manage-an-azure-database-for-mysql---flexible-server-preview-using-azure-portal"></a>Управление базой данных Azure для MySQL — гибким сервером (Предварительная версия) с помощью портал Azure
@@ -26,7 +26,7 @@ ms.locfileid: "90937331"
 
 ## <a name="scale-compute-and-storage"></a>Масштабирование вычислений и хранилища
 
-После создания сервера можно масштабировать различные [ценовые категории](https://azure.microsoft.com/pricing/details/mysql/) по мере изменения потребностей. Вы также можете увеличить или уменьшить размер вычислений и памяти, увеличив или уменьшив виртуальных ядер.
+После создания сервера можно масштабировать различные [ценовые категории](https://azure.microsoft.com/pricing/details/mysql/) по мере изменения потребностей. Вы также можете увеличить или уменьшить объем вычислительных ресурсов и памяти, увеличив или уменьшив число виртуальных ядер.
 
 1. Выберите сервер в портал Azure. В разделе **Параметры** выберите пункт **вычислить + хранилище**.
 
@@ -50,7 +50,7 @@ ms.locfileid: "90937331"
 2. Введите новый пароль и подтвердите его. В текстовом поле будет предложено ввести требования к сложности пароля.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/howto-manage-server-portal/reset-password.png" alt-text="масштабирование гибкого сервера хранилища":::
+   > :::image type="content" source="./media/howto-manage-server-portal/reset-password.png" alt-text="Сброс пароля для гибкого сервера":::
 
 3. Нажмите кнопку **сохранить** , чтобы сохранить новый пароль.
 
@@ -63,12 +63,12 @@ ms.locfileid: "90937331"
 2. Введите имя сервера в поле ввода, чтобы подтвердить, что вы хотите удалить сервер.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/howto-manage-server-portal/delete-server.png" alt-text="масштабирование гибкого сервера хранилища":::
+   > :::image type="content" source="./media/howto-manage-server-portal/delete-server.png" alt-text="Удаление гибкого сервера":::
 
    > [!NOTE]
    > Удаление сервера необратимо.
 
-3. Выберите команду **Удалить**.
+3. Выберите **Удалить**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - [Узнайте, как запустить или отключить сервер](how-to-stop-start-server-portal.md)

@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: how-to
 ms.date: 09/22/2020
 ms.openlocfilehash: 4c393e0048a0058ebe0fbf2b0ee65f6ae2e184c5
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90938858"
 ---
 # <a name="stopstart-an-azure-database-for-postgresql---flexible-server-preview"></a>Завершение работы и запуск базы данных Azure для PostgreSQL — гибкого сервера (Предварительная версия)
@@ -46,6 +46,6 @@ ms.locfileid: "90938858"
 > [!NOTE]
 > После запуска сервера все операции управления теперь доступны для гибкого сервера.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о [вариантах вычислений и хранилища в базе данных Azure для гибкого сервера PostgreSQL](./concepts-compute-storage.md).

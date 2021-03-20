@@ -4,10 +4,10 @@ description: Описывает функции, используемые в ша
 ms.topic: conceptual
 ms.date: 11/18/2020
 ms.openlocfilehash: 40a6815bb10ce9725405d68498b9a554706f3af8
-ms.sourcegitcommit: fec60094b829270387c104cc6c21257826fccc54
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96920553"
 ---
 # <a name="array-functions-for-arm-templates"></a>Функции массивов для шаблонов ARM
@@ -34,7 +34,7 @@ ms.locfileid: "96920553"
 
 [!INCLUDE [Bicep preview](../../../includes/resource-manager-bicep-preview.md)]
 
-## <a name="array"></a>массиве
+## <a name="array"></a>array
 
 `array(convertToArray)`
 
@@ -115,11 +115,11 @@ output objectOutput array = array(objectToConvert)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
-| intOutput | Массив |  [1] |
-| stringOutput | Массив | ["efgh"] |
-| objectOutput | Массив | [{"a": "b", "c": "d"}] |
+| intOutput | Array |  [1] |
+| stringOutput | Array | ["efgh"] |
+| objectOutput | Array | [{"a": "b", "c": "d"}] |
 
 ## <a name="concat"></a>concat
 
@@ -200,9 +200,9 @@ output return array = concat(firstArray, secondArray)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
-| return | Массив | ["1-1", "1-2", "1-3", "2-1", "2-2", "2-3"] |
+| return | Array | ["1-1", "1-2", "1-3", "2-1", "2-2", "2-3"] |
 
 В следующем [примере шаблона](https://github.com/Azure/azure-docs-json-samples/blob/master/azure-resource-manager/functions/concat-string.json) показано, как объединить два строковых значения и получить сцепленную строку.
 
@@ -240,11 +240,11 @@ output concatOutput string = concat(prefix, '-', uniqueString(resourceGroup().id
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | concatOutput | Строка | prefix-5yj4yjf5mbg72 |
 
-## <a name="contains"></a>contains
+## <a name="contains"></a>содержит
 
 `contains(container, itemToFind)`
 
@@ -347,7 +347,7 @@ output arrayFalse bool = contains(arrayToTest, 'four')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | stringTrue | Bool | True |
 | stringFalse | Bool | Неверно |
@@ -432,13 +432,13 @@ output arrayFalse bool = contains(arrayToTest, 'four')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
-| stringArray | Массив | ["a", "b", "c"] |
-| intArray | Массив | [1, 2, 3] |
-| objectArray | Массив | [{"one": "a", "two": "b", "three": "c"}] |
-| arrayArray | Массив | [["one", "two", "three"]] |
-| емптяррай | Массив | [] |
+| stringArray | Array | ["a", "b", "c"] |
+| intArray | Array | [1, 2, 3] |
+| objectArray | Array | [{"one": "a", "two": "b", "three": "c"}] |
+| arrayArray | Array | [["one", "two", "three"]] |
+| емптяррай | Array | [] |
 
 ## <a name="empty"></a>пустых
 
@@ -515,7 +515,7 @@ output stringEmpty bool = empty(testString)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayEmpty | Bool | True |
 | objectEmpty | Bool | True |
@@ -585,7 +585,7 @@ output stringOutput string = first('One Two Three')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayOutput | Строка | one |
 | stringOutput | Строка | O |
@@ -693,10 +693,10 @@ output arrayOutput array = intersection(firstArray, secondArray)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | objectOutput | Объект | {"one": "a", "three": "c"} |
-| arrayOutput | Массив | ["two", "three"] |
+| arrayOutput | Array | ["two", "three"] |
 
 ## <a name="last"></a>last
 
@@ -762,7 +762,7 @@ output stringOutput string = last('One Two three')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayOutput | Строка | three |
 | stringOutput | Строка | й |
@@ -865,7 +865,7 @@ output objectLength int = length(objectToTest)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayLength | Int | 3 |
 | stringLength | Int | 13 |
@@ -956,7 +956,7 @@ output intOutput int = max(0,3,2,5,4)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayOutput | Int | 5 |
 | intOutput | Int | 5 |
@@ -1026,7 +1026,7 @@ output intOutput int = min(0,3,2,5,4)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayOutput | Int | 0 |
 | intOutput | Int | 0 |
@@ -1091,9 +1091,9 @@ output rangeOutput array = range(startingInt, numberOfElements)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
-| rangeOutput | Массив | [5, 6, 7] |
+| rangeOutput | Array | [5, 6, 7] |
 
 ## <a name="skip"></a>skip
 
@@ -1178,9 +1178,9 @@ output stringOutput string = skip(testString, charactersToSkip)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
-| arrayOutput | Массив | ["three"] |
+| arrayOutput | Array | ["three"] |
 | stringOutput | Строка | two three |
 
 ## <a name="take"></a>take
@@ -1266,9 +1266,9 @@ output stringOutput string = take(testString, charactersToTake)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
-| arrayOutput | Массив | ["one", "two"] |
+| arrayOutput | Array | ["one", "two"] |
 | stringOutput | Строка | on |
 
 ## <a name="union"></a>union
@@ -1374,10 +1374,10 @@ output arrayOutput array = union(firstArray, secondArray)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | objectOutput | Объект | {"one": "a", "two": "b", "three": "c2", "four": "d", "five": "e"} |
-| arrayOutput | Массив | ["one", "two", "three", "four"] |
+| arrayOutput | Array | ["one", "two", "three", "four"] |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

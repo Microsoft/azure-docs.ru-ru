@@ -10,10 +10,10 @@ ms.devlang: rest-api
 ms.topic: conceptual
 ms.date: 01/06/2020
 ms.openlocfilehash: a1b317b651b0e17c07eb17dbdb8a7c6657d39564
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90971608"
 ---
 # <a name="how-to-configure-caching-for-incremental-enrichment-in-azure-cognitive-search"></a>Настройка кэширования для добавочного дополнения в Azure Когнитивный поиск
@@ -179,7 +179,7 @@ api-key: [YOUR-ADMIN-KEY]
 
 Дополнительные сведения об управлении тем, что происходит с кэшем, см. в разделе [Управление кэшем](cognitive-search-incremental-indexing-conceptual.md#cache-management).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Добавочное углубление применяется к индексаторам, содержащим навыков. В качестве следующего шага посетите документацию по набору навыков, чтобы понять концепцию и композицию. 
 

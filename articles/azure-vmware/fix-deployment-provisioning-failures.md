@@ -4,10 +4,10 @@ description: Получите сведения из частного облак�
 ms.topic: how-to
 ms.date: 10/28/2020
 ms.openlocfilehash: 27b645f4ca225fdd74bca6499b6581b3803e41a4
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94542411"
 ---
 # <a name="open-a-support-request-for-an-azure-vmware-solution-deployment-or-provisioning-failure"></a>Откройте запрос в службу поддержки для развертывания решения Azure VMware или сбоя подготовки.
@@ -55,7 +55,7 @@ ms.locfileid: "94542411"
 
    :::image type="content" source="media/fix-deployment-provisioning-failures/open-notifications.png" alt-text="Снимок экрана, на котором показан значок уведомлений в портал Azure.":::
 
-1. В области **уведомления** выберите **дополнительные события в журнале действий** :
+1. В области **уведомления** выберите **дополнительные события в журнале действий**:
 
     :::image type="content" source="media/fix-deployment-provisioning-failures/more-events-in-activity-log.png" alt-text="Снимок экрана, показывающий больше событий в ссылке журнала действий, выбранной на панели &quot;уведомления&quot;.":::
 

@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 09/21/2020
 ms.openlocfilehash: 24a8dd4d21cb6ab6edeb985db4e6e6a1349a758d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90940487"
 ---
 # <a name="encrypted-connectivity-using-transport-layer-security-tls-12-in-azure-database-for-mysql---flexible-server"></a>Зашифрованное подключение с использованием протокола TLS 1,2 в базе данных Azure для MySQL — гибкий сервер
@@ -54,7 +54,7 @@ mysql> status
 
 Некоторые платформы приложений, использующие MySQL для своих служб баз данных, по умолчанию не включают TLS во время установки. Сервер MySQL применяет TLS-подключения, но если приложение не настроено для TLS, приложение может не подключиться к серверу базы данных. Чтобы узнать, как включить TLS, ознакомьтесь с документацией по приложению.
 
-## <a name="sample-code"></a>Образец кода
+## <a name="sample-code"></a>Пример кода
 Строки подключения, предварительно определенные на странице "строки подключения", доступной для сервера в портал Azure включают необходимые параметры для общих языков для подключения к серверу базы данных с помощью TLS/SSL. Параметр TLS/SSL зависит от соединителя. Например, "useSSL = true", "sslmode = Required" или "ssl_verify_cert = true" и другие варианты.
 
 Чтобы установить зашифрованное подключение к гибкому серверу через TLS/SSL из приложения, ознакомьтесь со следующими примерами кода:
@@ -222,7 +222,7 @@ using (var connection = new MySqlConnection(builder.ConnectionString))
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Подключение и запрос данных в базе данных Azure для гибкого сервера MySQL с помощью MySQL Workbench](./connect-workbench.md)
 - [Подключение и запрос данных в базе данных Azure для гибкого сервера MySQL с помощью PHP](./connect-php.md)
 - [Создание и управление базой данных Azure для гибкого сервера виртуальной сети MySQL с помощью Azure CLI](./how-to-manage-virtual-network-cli.md).

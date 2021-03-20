@@ -14,10 +14,10 @@ ms.workload: infrastructure-services
 ms.date: 01/31/2020
 ms.author: rdhillon
 ms.openlocfilehash: 45a7a146dd929408b50a0045fe2598726ee05505
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95544315"
 ---
 # <a name="troubleshoot-azure-private-link-connectivity-problems"></a>Устранение проблем с подключением к Приватному каналу Azure
@@ -47,7 +47,7 @@ ms.locfileid: "95544315"
 
 1. Просмотрите конфигурацию частной связи, просмотрев ресурс.
 
-    a. Перейдите в раздел " **частный центр ссылок**".
+    а. Перейдите в раздел " **частный центр ссылок**".
 
       ![Частный центр ссылок](./media/private-link-tsg/private-link-center.png)
 
@@ -101,7 +101,7 @@ ms.locfileid: "95544315"
 
 1. Используйте [Azure Monitor](../azure-monitor/overview.md) , чтобы узнать, передаются ли данные.
 
-    a. В ресурсе службы частной связи выберите **метрики**.
+    а. В ресурсе службы частной связи выберите **метрики**.
      - Выберите **байт в или в** **байтах**.
      - Проверьте, передаются ли данные при попытке подключения к службе частной связи. Задержка должна составлять примерно 10 минут.
 
@@ -109,7 +109,7 @@ ms.locfileid: "95544315"
 
 1. Обратитесь в службу [поддержки Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) , если проблема не устранена, а проблема с подключением все еще существует.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
  * [Создание службы частной связи (CLI)](./create-private-link-service-cli.md)
  * [Руководство по устранению неполадок в частной конечной точке Azure](troubleshoot-private-endpoint-connectivity.md)

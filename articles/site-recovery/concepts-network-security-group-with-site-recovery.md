@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: harshacs
 ms.openlocfilehash: 367aba09f84da1e227c08721077aa1b2132a62bf
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92367980"
 ---
 # <a name="network-security-groups-with-azure-site-recovery"></a>Группы безопасности сети и Azure Site Recovery
@@ -71,7 +71,7 @@ Azure Site Recovery позволяет выполнять аварийное в�
 
 После создания и настройки групп безопасности сети мы рекомендуем выполнить [тестовую отработку отказа](azure-to-azure-tutorial-dr-drill.md) для проверки сценариев связи NSG и подключение виртуальной машины после отработки отказа.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 -    Узнайте больше о [группах безопасности сети](../virtual-network/network-security-groups-overview.md#network-security-groups).
 -    Дополнительные сведения о [правилах безопасности](../virtual-network/network-security-groups-overview.md#security-rules) NSG.
 -    Дополнительные сведения об [эффективных правилах безопасности](../virtual-network/diagnose-network-traffic-filter-problem.md) для NSG.

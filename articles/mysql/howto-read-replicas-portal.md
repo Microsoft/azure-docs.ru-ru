@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 6/10/2020
 ms.openlocfilehash: 26b503e7d55ed3d2f9bd06837551655e7af05a17
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94541946"
 ---
 # <a name="how-to-create-and-manage-read-replicas-in-azure-database-for-mysql-using-the-azure-portal"></a>Создание реплик чтения и управление ими в базе данных Azure для MySQL с помощью портала Azure
@@ -52,7 +52,7 @@ ms.locfileid: "94541946"
    > [!NOTE]
    > Дополнительные сведения о том, в каких регионах можно создать реплику, см. в статье [об основных понятиях реплики чтения](concepts-read-replicas.md). 
 
-7. Нажмите кнопку **ОК** , чтобы подтвердить создание реплики.
+7. Нажмите кнопку **ОК**, чтобы подтвердить создание реплики.
 
 > [!NOTE]
 > Реплики чтения создаются с той же конфигурацией сервера, что и у главного сервера. Вы можете изменить созданную конфигурацию сервера-реплики. Сервер реплики всегда создается в той же группе ресурсов и в той же подписке, что и исходный сервер. Если вы хотите создать сервер реплики в другой группе ресурсов или другой подписке, можно [переместить сервер реплики](../azure-resource-manager/management/move-resource-group-and-subscription.md) после его создания. Рекомендуется, чтобы конфигурация сервера реплики хранилась в значении, превышающем значение источника, чтобы реплика могла поддерживать базу данных master.
@@ -100,7 +100,7 @@ ms.locfileid: "94541946"
 
    :::image type="content" source="./media/howto-read-replica-portal/delete-replica.png" alt-text="База данных Azure для MySQL — удаление реплики":::
 
-5. Введите имя реплики и нажмите кнопку **Удалить** , чтобы подтвердить удаление реплики.  
+5. Введите имя реплики и нажмите кнопку **Удалить**, чтобы подтвердить удаление реплики.  
 
    :::image type="content" source="./media/howto-read-replica-portal/delete-replica-confirm.png" alt-text="База данных Azure для MySQL — подтверждение удаления реплики":::
 

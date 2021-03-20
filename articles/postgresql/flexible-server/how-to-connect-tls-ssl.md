@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.openlocfilehash: 0ba04ff14e62cd411515a765dc95ef7a3e72b709
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90938919"
 ---
 # <a name="encrypted-connectivity-using-transport-layer-security-in-azure-database-for-postgresql---flexible-server"></a>Зашифрованное подключение с использованием защиты транспортного уровня в базе данных Azure для PostgreSQL-гибкого сервера
@@ -43,7 +43,7 @@ ms.locfileid: "90938919"
 
 Некоторые платформы приложений, использующие PostgreSQL для своих служб баз данных, по умолчанию не включают TLS во время установки. Сервер PostgreSQL принудительно использует TLS-подключения, но если приложение не настроено для TLS, приложение может не подключиться к серверу базы данных. Чтобы узнать, как включить TLS, ознакомьтесь с документацией по приложению.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Создание базы данных Azure для PostgreSQL-гибкой виртуальной сети сервера и управление ею с помощью Azure CLI](./how-to-manage-virtual-network-cli.md).
 - Дополнительные сведения о работе [в сети в базе данных Azure для PostgreSQL-гибкого сервера](./concepts-networking.md)
 - Дополнительные сведения о [базе данных Azure для PostgreSQL. правила брандмауэра для гибких серверов](./concepts-networking.md#public-access-allowed-ip-addresses)

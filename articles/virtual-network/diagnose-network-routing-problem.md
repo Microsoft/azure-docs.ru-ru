@@ -16,10 +16,10 @@ ms.workload: infrastructure-services
 ms.date: 05/30/2018
 ms.author: kumud
 ms.openlocfilehash: 1c23244707179e05c63ed44b5915e58eefd3f4a3
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "84705055"
 ---
 # <a name="diagnose-a-virtual-machine-routing-problem"></a>Диагностика проблем с маршрутизацией виртуальной машины
@@ -36,7 +36,7 @@ ms.locfileid: "84705055"
 
 1. Войдите на [портал Azure](https://portal.azure.com) с помощью учетной записи Azure, которая предоставляет необходимые [разрешения](virtual-network-network-interface.md#permissions).
 2. В верхней части окна портала Azure введите в поле поиска имя запущенной виртуальной машины. Когда в результатах поиска появится имя виртуальной машины, щелкните его.
-3. В разделе **Параметры** слева выберите **сеть**и перейдите к ресурсу сетевого интерфейса, выбрав его имя.
+3. В разделе **Параметры** слева выберите **сеть** и перейдите к ресурсу сетевого интерфейса, выбрав его имя.
      ![Просмотр сетевых интерфейсов](./media/diagnose-network-routing-problem/view-nics.png)
 4. Слева выберите **действующие маршруты**. Действующие маршруты для сетевого интерфейса с именем **myVMNic1** показаны на следующем рисунке: ![ Просмотр действующих маршрутов.](./media/diagnose-network-routing-problem/view-effective-routes.png)
 

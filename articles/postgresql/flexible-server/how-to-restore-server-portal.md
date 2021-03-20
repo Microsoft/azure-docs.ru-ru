@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: how-to
 ms.date: 09/22/2020
 ms.openlocfilehash: e69bcb3d9e4dca4c45bf9a6fe8ed4d54e7f4a8cd
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90938868"
 ---
 # <a name="point-in-time-restore-of-a-flexible-server"></a>Восстановление гибкого сервера на момент времени
@@ -30,7 +30,7 @@ ms.locfileid: "90938868"
 
 Выполните следующие действия, чтобы восстановить гибкий сервер с помощью самой ранней существующей резервной копии.
 
-1.  В [портал Azure](https://portal.azure.com/)выберите гибкий сервер, с которого требуется восстановить резервную копию.
+1.  В [портал Azure](https://portal.azure.com/)выберите гибкий сервер, с которого требуется восстановить резервную копию.
 
 2.  Нажмите кнопку **Обзор** на панели слева и выберите **восстановить** .
    
@@ -40,9 +40,9 @@ ms.locfileid: "90938868"
 
 4.  Выберите **ближайшую точку восстановления** и укажите новое имя сервера в поле **восстановить в новый сервер** . Отображается самая ранняя метка времени, в которую можно восстановить. 
    
-   :::image type="content" source="./media/how-to-restore-server-portal/restore-earliest.png" alt-text="Обзор восстановления":::
+   :::image type="content" source="./media/how-to-restore-server-portal/restore-earliest.png" alt-text="Самое раннее время восстановления":::
 
-5.  Нажмите кнопку **ОК**.
+5.  Нажмите кнопку **OK**.
 
 6.  Будет отображено уведомление о том, что операция восстановления была инициирована.
 
@@ -50,7 +50,7 @@ ms.locfileid: "90938868"
 
 Выполните следующие действия, чтобы восстановить гибкий сервер с помощью самой ранней существующей резервной копии.
 
-1.  В [портал Azure](https://portal.azure.com/)выберите гибкий сервер, с которого требуется восстановить резервную копию.
+1.  В [портал Azure](https://portal.azure.com/)выберите гибкий сервер, с которого требуется восстановить резервную копию.
 
 2.  На странице Обзор нажмите кнопку **восстановить**.
  :::image type="content" source="./media/how-to-restore-server-portal/restore-overview.png" alt-text="Обзор восстановления":::
@@ -61,14 +61,14 @@ ms.locfileid: "90938868"
 
 5.  Выберите Дата и время и укажите новое имя сервера в поле **восстановить в новый сервер** . 
    
-:::image type="content" source="./media/how-to-restore-server-portal/restore-custom.png" alt-text="Обзор восстановления":::
+:::image type="content" source="./media/how-to-restore-server-portal/restore-custom.png" alt-text="Время пользовательского восстановления":::
  
-6.  Нажмите кнопку **ОК**.
+6.  Нажмите кнопку **OK**.
 
 7.  Будет отображено уведомление о том, что операция восстановления была инициирована.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 -   Сведения о [непрерывности бизнес-процессов](./concepts-business-continuity.md)
--   Сведения о [высокой доступности с избыточностью зоны](./concepts-high-availability.md)
+-   Сведения о [высокой доступности с избыточностью зоны](./concepts-high-availability.md)
 -   Сведения о [резервном копировании и восстановлении](./concepts-backup-restore.md)

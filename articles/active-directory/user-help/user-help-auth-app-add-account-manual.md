@@ -12,10 +12,10 @@ ms.date: 01/24/2019
 ms.author: curtand
 ms.reviewer: olhaun
 ms.openlocfilehash: 3838234f9f65fcf91f8de33e3d7196aa13f2b903
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "83741720"
 ---
 # <a name="manually-add-an-account-to-the-app"></a>Добавление учетной записи в приложение вручную
@@ -104,6 +104,6 @@ ms.locfileid: "83741720"
 
 - Добавив учетные записи в приложение, вы можете использовать их для входа с помощью приложения Microsoft Authenticator на мобильном устройстве. Дополнительные сведения см. в статье [Вход с использованием телефона вместо ввода пароля](user-help-auth-app-sign-in.md).
 
-- Если у вас возникли проблемы с получением кода проверки для вашей личной учетной записи Майкрософт, ознакомьтесь с разделом **Устранение проблем проверки кода** в статье [Сведения для защиты учетной записи Майкрософт и коды проверки](https://support.microsoft.com/help/12428/microsoft-account-security-info-verification-codes).
+- Если у вас возникли проблемы с получением кода проверки для личной учетной записи Майкрософт, см. раздел **Устранение проблем проверки кода** статьи [Сведения для защиты учетной записи Майкрософт и коды проверки](https://support.microsoft.com/help/12428/microsoft-account-security-info-verification-codes).
 
 - Для устройств под управлением iOS вы можете также выполнить резервное копирование в облако учетных данных и связанных с ними параметров приложений (например, порядок учетных записей). Дополнительные сведения см. в статье [Резервное копирование и восстановление учетных данных с помощью приложения Microsoft Authenticator](user-help-auth-app-backup-recovery.md).

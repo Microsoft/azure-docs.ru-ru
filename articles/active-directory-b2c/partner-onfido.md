@@ -12,10 +12,10 @@ ms.date: 08/03/2020
 ms.author: gasinh
 ms.subservice: B2C
 ms.openlocfilehash: 46c6eac80ddbff73d99e05c070e66aa1700da174
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96928636"
 ---
 # <a name="tutorial-for-configuring-onfido-with-azure-active-directory-b2c"></a>Руководство по настройке Онфидо с помощью Azure Active Directory B2C
@@ -24,7 +24,7 @@ ms.locfileid: "96928636"
 
 В этом примере мы подключимся к службе Онфидо в потоке регистрации или входа, чтобы выполнить проверку личности. Информированные решения о том, какой продукт и служба у пользователя могут получить доступ, создаются на основе результатов Онфидо.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы приступить к работе, вам потребуется:
 
@@ -138,7 +138,7 @@ ms.locfileid: "96928636"
 |{your_ui_file_base_url}| URL-адрес расположения, в котором находятся папки пользовательского интерфейса **ocean_blue**, **расп** и **Assets** | https://yourstorage.blob.core.windows.net/UI/|
 | {your_app_service_URL}                                 | URL-адрес настроенной службы приложений                                             | `https://yourapp.azurewebsites.net`          |
 
-* App Insights может находиться в другом клиенте. Это необязательный шаг. Удалите соответствующие TechnicalProfiles и Орчестратионстепс, если они не требуются.
+* App Insights может находиться в другом клиенте. Этот шаг является необязательным. Удалите соответствующие TechnicalProfiles и Орчестратионстепс, если они не требуются.
 
 ### <a name="part-4---configure-the-azure-ad-b2c-policy"></a>Часть 4. Настройка политики Azure AD B2C
 

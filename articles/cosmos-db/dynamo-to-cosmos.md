@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 04/29/2020
 ms.author: mansha
 ms.openlocfilehash: 9b4b5fca8017a906fa44b02edcf5f0bdcf6166b3
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93334231"
 ---
 # <a name="migrate-your-application-from-amazon-dynamodb-to-azure-cosmos-db"></a>Перенос приложения из Amazon DynamoDB в Azure Cosmos DB
@@ -146,13 +146,13 @@ client_documentDB = new CosmosClient("your connectionstring from the Azure porta
 
 В Azure Cosmos DB можно оптимизировать подключение с помощью следующих параметров.
 
-* **ConnectionMode**  — использование режима прямого подключения для подключения к узлам данных в службе Azure Cosmos DB. Используйте режим шлюза только для инициализации и кэширования логических адресов и выполняйте обновление в случае изменений. Подробнее см. в статье о [режимах подключения](sql-sdk-connection-modes.md).
+* **ConnectionMode** — использование режима прямого подключения для подключения к узлам данных в службе Azure Cosmos DB. Используйте режим шлюза только для инициализации и кэширования логических адресов и выполняйте обновление в случае изменений. Подробнее см. в статье о [режимах подключения](sql-sdk-connection-modes.md).
 
-* **ApplicationRegion**  — этот параметр используется для задания предпочитаемого геореплицированного региона, который используется для взаимодействия с Azure Cosmos DB. Подробнее см. в статье о [глобальном распределении](distribute-data-globally.md).
+* **ApplicationRegion** — этот параметр используется для задания предпочитаемого геореплицированного региона, который используется для взаимодействия с Azure Cosmos DB. Подробнее см. в статье о [глобальном распределении](distribute-data-globally.md).
 
-* **ConsistencyLevel**  — этот параметр используется для переопределения уровня согласованности по умолчанию. Подробнее см. в статье об [уровнях согласованности](consistency-levels.md).
+* **ConsistencyLevel** — этот параметр используется для переопределения уровня согласованности по умолчанию. Подробнее см. в статье об [уровнях согласованности](consistency-levels.md).
 
-* **BulkExecutionMode**  — этот параметр используется для выполнения массовых операций путем установки для свойства *AllowBulkExecution* значения true. Подробнее см. в статье о [массовом импорте](tutorial-sql-api-dotnet-bulk-import.md).
+* **BulkExecutionMode** — этот параметр используется для выполнения массовых операций путем установки для свойства *AllowBulkExecution* значения true. Подробнее см. в статье о [массовом импорте](tutorial-sql-api-dotnet-bulk-import.md).
 
    ```csharp
    client_cosmosDB = new CosmosClient(" Your connection string ",new CosmosClientOptions()
@@ -266,7 +266,7 @@ for( int i = 0, j = 99; i < n; i++ )
 
 **Azure Cosmos DB**.
 
-В Azure Cosmos DB можно выбрать потоковую передачу и запись с помощью метода `moviesContainer.CreateItemStreamAsync()`. Однако в этом примере JSON будет десериализирован в тип *MovieModel* , чтобы продемонстрировать функцию приведения типов. Код является многопоточным. Благодаря этому будет использоваться распределенная архитектура Azure Cosmos DB и загрузка будет происходить быстрее.
+В Azure Cosmos DB можно выбрать потоковую передачу и запись с помощью метода `moviesContainer.CreateItemStreamAsync()`. Однако в этом примере JSON будет десериализирован в тип *MovieModel*, чтобы продемонстрировать функцию приведения типов. Код является многопоточным. Благодаря этому будет использоваться распределенная архитектура Azure Cosmos DB и загрузка будет происходить быстрее.
 
 ```csharp
 List<Task> concurrentTasks = new List<Task>();

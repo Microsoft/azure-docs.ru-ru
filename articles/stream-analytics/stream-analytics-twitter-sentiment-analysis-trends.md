@@ -1,21 +1,21 @@
 ---
-title: Анализ тональности в Twitter в режиме реального времени с помощью Azure Stream Analytics
-description: В этой статье объясняется, как с помощью Stream Analytics анализировать тональность данных Twitter в режиме реального времени. Пошаговое руководство с шагами от создания событий до отображения данных на динамической панели мониторинга.
+title: Анализ социальных сетей с помощью Azure Stream Analytics
+description: В этой статье описывается, как использовать Stream Analytics для анализа социальных сетей с помощью API клиента Twitter. Пошаговое руководство с шагами от создания событий до отображения данных на динамической панели мониторинга.
 services: stream-analytics
 author: enkrumah
 ms.author: ebnkruma
 ms.reviewer: jasonh
 ms.service: stream-analytics
 ms.topic: how-to
-ms.date: 02/10/2020
-ms.openlocfilehash: 6a461ad906f7611c8a13e2ee495f4d2f62fedd53
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.date: 03/16/2021
+ms.openlocfilehash: e2369e8f4349a3b4a83c1729c6414d319dd8419e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98734850"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104589673"
 ---
-# <a name="real-time-twitter-sentiment-analysis-in-azure-stream-analytics"></a>Анализ тональности в Twitter в режиме реального времени в Azure Stream Analytics
+# <a name="social-media-analysis-with-azure-stream-analytics"></a>Анализ социальных сетей с помощью Azure Stream Analytics
 
 Эта статья рассказывает, как создать решение анализа тональности для социальных сетей путем переноса событий Twitter в Центры событий Azure в режиме реального времени. Надо составить запрос Azure Stream Analytics для анализа данных, а затем сохранить результаты для последующего использования или создать панель мониторинга [Power BI](https://powerbi.com/) для получения аналитической информации в режиме реального времени.
 
