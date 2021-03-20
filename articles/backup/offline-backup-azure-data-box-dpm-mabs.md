@@ -4,10 +4,10 @@ description: Вы можете использовать Azure Data Box для з
 ms.topic: conceptual
 ms.date: 08/12/2020
 ms.openlocfilehash: 1cfd9131099ad6a8ccd3d43e93f3d97641514f03
-ms.sourcegitcommit: ea551dad8d870ddcc0fee4423026f51bf4532e19
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96752555"
 ---
 # <a name="offline-seeding-using-azure-data-box-for-dpm-and-mabs-preview"></a>Автономное заполнение с помощью Azure Data Box для DPM и MABS (Предварительная версия)
@@ -84,7 +84,7 @@ ms.locfileid: "96752555"
 
 ## <a name="setup-azure-data-box"></a>Настройка диска Azure Data Box
 
-Если вы задали Azure Data Box (до 100 ТБ), выполните действия, описанные [здесь](../databox/data-box-deploy-set-up.md) , чтобы настроить Data Box.
+Если вы заказали Azure Data Box (до 100 ТБ), выполните описанные [здесь](../databox/data-box-deploy-set-up.md) действия по его настройке.
 
 ### <a name="mount-your-azure-data-box-as-local-system"></a>Подключение Azure Data Box в качестве локальной системы
 

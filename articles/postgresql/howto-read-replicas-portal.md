@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: how-to
 ms.date: 11/05/2020
 ms.openlocfilehash: 9fdef187e9bdf77b29c548f767a4b4edfeb62f44
-ms.sourcegitcommit: 7cc10b9c3c12c97a2903d01293e42e442f8ac751
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93422184"
 ---
 # <a name="create-and-manage-read-replicas-in-azure-database-for-postgresql---single-server-from-the-azure-portal"></a>Создание реплик чтения и управление ими в базе данных Azure для PostgreSQL — один сервер из портал Azure
@@ -18,7 +18,7 @@ ms.locfileid: "93422184"
 В этой статье описано, как создавать реплики чтения и управлять ими в службе "База данных Azure для PostgreSQL" с помощью портала Azure. Дополнительные сведения о репликах чтения см. в [этой статье](concepts-read-replicas.md).
 
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 [Сервер базы данных Azure для PostgreSQL](quickstart-create-server-database-portal.md) , который будет основным сервером.
 
 ## <a name="azure-replication-support"></a>Поддержка репликации Azure
@@ -39,9 +39,9 @@ ms.locfileid: "93422184"
 
 1. В портал Azure выберите существующий сервер базы данных Azure для PostgreSQL, который будет использоваться в качестве главного.
 
-2. В меню сервера выберите **репликация**. Если для службы репликации Azure задана по крайней мере **реплика** , можно создать реплики чтения. 
+2. В меню сервера выберите **репликация**. Если для службы репликации Azure задана по крайней мере **реплика**, можно создать реплики чтения. 
 
-3. Если для службы репликации Azure не задана хотя бы **реплика** , установите ее. Нажмите кнопку **Сохранить**.
+3. Если для службы репликации Azure не задана хотя бы **реплика**, установите ее. Щелкните **Сохранить**.
 
    :::image type="content" source="./media/howto-read-replicas-portal/set-replica-save.png" alt-text="База данных Azure для PostgreSQL — репликация — установка реплики и сохранение":::
 
@@ -78,9 +78,9 @@ ms.locfileid: "93422184"
    > [!NOTE]
    > Дополнительные сведения о том, в каких регионах можно создать реплику, см. в статье [об основных понятиях реплики чтения](concepts-read-replicas.md). 
 
-6. Нажмите кнопку **ОК** , чтобы подтвердить создание реплики.
+6. Нажмите кнопку **ОК**, чтобы подтвердить создание реплики.
 
-Созданную реплику чтения можно просмотреть в окне **Репликация** :
+Созданную реплику чтения можно просмотреть в окне **Репликация**:
 
 :::image type="content" source="./media/howto-read-replicas-portal/list-replica.png" alt-text="Просмотр новой реплики в окне &quot;Репликация&quot;":::
  
@@ -110,7 +110,7 @@ ms.locfileid: "93422184"
 
    :::image type="content" source="./media/howto-read-replicas-portal/select-stop-replication.png" alt-text="Выберите пункт &quot;отменить репликацию&quot;":::
  
-5. Нажмите кнопку **ОК** , чтобы подтвердить остановку репликации.
+5. Нажмите кнопку **ОК**, чтобы подтвердить остановку репликации.
 
    :::image type="content" source="./media/howto-read-replicas-portal/confirm-stop-replication.png" alt-text="Подтверждение остановки репликации":::
  
@@ -125,7 +125,7 @@ ms.locfileid: "93422184"
 
 1. В портал Azure выберите основной сервер базы данных Azure для PostgreSQL.
 
-2. Откройте страницу **Обзор** сервера. Выберите команду **Удалить**.
+2. Откройте страницу **Обзор** сервера. Нажмите кнопку **Удалить**.
 
    :::image type="content" source="./media/howto-read-replicas-portal/delete-server.png" alt-text="На странице Обзор сервера выберите, чтобы удалить сервер-источник.":::
  
@@ -137,11 +137,11 @@ ms.locfileid: "93422184"
 ## <a name="delete-a-replica"></a>Удаление реплики
 Реплику чтения можно удалить аналогично удалению сервера-источника.
 
-- На портале Azure откройте страницу **Обзор** реплики чтения. Выберите команду **Удалить**.
+- На портале Azure откройте страницу **Обзор** реплики чтения. Нажмите кнопку **Удалить**.
 
    :::image type="content" source="./media/howto-read-replicas-portal/delete-replica.png" alt-text="Удаление реплики на странице &quot;Обзор&quot;":::
  
-Кроме того, реплику можно удалить из окна **Репликация** , выполнив следующие действия:
+Кроме того, реплику можно удалить из окна **Репликация**, выполнив следующие действия:
 
 1. В портал Azure выберите основной сервер базы данных Azure для PostgreSQL.
 
@@ -155,7 +155,7 @@ ms.locfileid: "93422184"
 
    :::image type="content" source="./media/howto-read-replicas-portal/select-delete-replica.png" alt-text="Выбор удаления реплики":::
  
-5. Введите имя реплики, которую нужно удалить. Нажмите кнопку **Удалить** , чтобы подтвердить удаление реплики.
+5. Введите имя реплики, которую нужно удалить. Нажмите кнопку **Удалить**, чтобы подтвердить удаление реплики.
 
    :::image type="content" source="./media/howto-read-replicas-portal/confirm-delete-replica.png" alt-text="Подтверждение удаления реплики":::
  
@@ -186,6 +186,6 @@ ms.locfileid: "93422184"
  
 3. Для параметра **агрегирования** установите значение **Макс.** 
  
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * См. дополнительные сведения о [репликах чтения в Базе данных Azure для PostgreSQL](concepts-read-replicas.md).
 * Узнайте, как [создавать реплики чтения и управлять ими в Azure CLI и REST API](howto-read-replicas-cli.md).

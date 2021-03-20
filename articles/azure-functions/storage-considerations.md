@@ -4,10 +4,10 @@ description: Узнайте о требованиях к хранению в Ф�
 ms.topic: conceptual
 ms.date: 07/27/2020
 ms.openlocfilehash: c4ffb622482585e35337caf8e43b69e0f3b0385c
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100517269"
 ---
 # <a name="storage-considerations-for-azure-functions"></a>Рекомендации по хранению для Функций Azure

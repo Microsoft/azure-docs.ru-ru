@@ -10,10 +10,10 @@ ms.date: 09/22/2020
 ms.author: jomore
 ms.custom: fasttrack-new
 ms.openlocfilehash: cc8e7314c941035207ecf809a9d85ef46bd58379
-ms.sourcegitcommit: d76108b476259fe3f5f20a91ed2c237c1577df14
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92913761"
 ---
 # <a name="use-private-link-in-virtual-wan"></a>Использование частной ссылки в виртуальной глобальной сети
@@ -38,11 +38,11 @@ ms.locfileid: "92913761"
 
 После создания базы данных SQL Azure вы можете проверить IP-адрес частной конечной точки, просмотрев частные конечные точки:
 
-:::image type="content" source="./media/howto-private-link/endpoints.png" alt-text="создать закрытую ссылку" lightbox="./media/howto-private-link/endpoints.png":::
+:::image type="content" source="./media/howto-private-link/endpoints.png" alt-text="частные конечные точки" lightbox="./media/howto-private-link/endpoints.png":::
 
 Щелкнув созданную закрытую конечную точку, вы должны увидеть его частный IP-адрес, а также полное доменное имя (FQDN). Обратите внимание, что частная конечная точка имеет IP-адрес в диапазоне виртуальной сети, в которой он был развернут (10.1.3.0/24):
 
-:::image type="content" source="./media/howto-private-link/sql-endpoint.png" alt-text="создать закрытую ссылку" lightbox="./media/howto-private-link/sql-endpoint.png":::
+:::image type="content" source="./media/howto-private-link/sql-endpoint.png" alt-text="Конечная точка SQL" lightbox="./media/howto-private-link/sql-endpoint.png":::
 
 ## <a name="verify-connectivity-from-the-same-vnet"></a><a name="connectivity"></a>Проверка подключения из той же виртуальной сети
 
@@ -61,7 +61,7 @@ Address: 10.1.3.228
 
 Как видно из предыдущих выходных данных, полное доменное имя `wantest.database.windows.net` сопоставляется с `wantest.privatelink.database.windows.net` , что частная зона DNS, созданная на частной конечной точке, будет разрешаться в частный IP-адрес `10.1.3.228` . При поиске в частной зоне DNS будет подтверждено наличие записи A для частной конечной точки, сопоставленной с частным IP-адресом:
 
-:::image type="content" source="./media/howto-private-link/dns-zone.png" alt-text="создать закрытую ссылку" lightbox="./media/howto-private-link/dns-zone.png":::
+:::image type="content" source="./media/howto-private-link/dns-zone.png" alt-text="Зона DNS" lightbox="./media/howto-private-link/dns-zone.png":::
 
 После проверки правильного разрешения DNS можно попытаться подключиться к базе данных:
 
@@ -87,7 +87,7 @@ $ sqlcmd -S wantest.database.windows.net -U $username -P $password -Q "$query"
 
 В этом примере мы будем подключаться из другой виртуальной сети, поэтому сначала мы подключим частную зону DNS к новой виртуальной сети, чтобы ее рабочие нагрузки могли разрешить полное доменное имя базы данных SQL Azure в частный IP-адрес. Это делается путем связывания частной зоны DNS с новой виртуальной сетью.
 
-:::image type="content" source="./media/howto-private-link/dns-link.png" alt-text="создать закрытую ссылку" lightbox="./media/howto-private-link/dns-link.png":::
+:::image type="content" source="./media/howto-private-link/dns-link.png" alt-text="Ссылка на DNS" lightbox="./media/howto-private-link/dns-link.png":::
 
 Теперь любая виртуальная машина в подключенной виртуальной сети должна правильно разрешить полное доменное имя базы данных SQL Azure в частный IP-адрес частной ссылки:
 
@@ -104,7 +104,7 @@ Address: 10.1.3.228
 
 Чтобы убедиться, что эта виртуальная сеть (10.1.1.0/24) имеет подключение к исходной виртуальной сети, в которой была настроена частная конечная точка (10.1.3.0/24), вы можете проверить действующую таблицу маршрутов на любой виртуальной машине в виртуальной сети:
 
-:::image type="content" source="./media/howto-private-link/effective-routes.png" alt-text="создать закрытую ссылку" lightbox="./media/howto-private-link/effective-routes.png":::
+:::image type="content" source="./media/howto-private-link/effective-routes.png" alt-text="действующие маршруты" lightbox="./media/howto-private-link/effective-routes.png":::
 
 Как видите, существует маршрут, указывающий на виртуальную сеть 10.1.3.0/24, которая была введена шлюзами виртуальной глобальной сети Azure. Теперь мы можем проверить возможность подключения к базе данных:
 

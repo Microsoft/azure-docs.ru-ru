@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 01/20/2021
 ms.author: yelevin
 ms.openlocfilehash: b21ce75bfb33b5a8869c63b7d3f71fb9f0c93768
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98621301"
 ---
 # <a name="connect-data-from-azure-firewall"></a>Подключение данных из брандмауэра Azure
@@ -24,7 +24,7 @@ ms.locfileid: "98621301"
 
 Дополнительные сведения о [мониторинге журналов брандмауэра Azure](../firewall/firewall-diagnostics.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - У вас должны быть разрешения на чтение и запись в рабочей области Sentinel Azure.
 
@@ -56,7 +56,7 @@ ms.locfileid: "98621301"
 >
 > С этим конкретным соединителем данных индикаторы состояния подключения (цветовая полоса в коллекции соединителей данных и значки подключения рядом с именами типов данных) отображаются как *подключенные* (зеленые), только если данные были приняты в течение последних двух недель. По прошествии двух недель без приема данных соединитель будет отображаться как отключенный. В то время, когда поступает больше данных, состояние *Connected* будет возвращено.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этом документе вы узнали, как подключить журналы брандмауэра Azure к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 - Узнайте, как [отслеживать свои данные и потенциальные угрозы](quickstart-get-visibility.md).
 - Узнайте, как приступить к [обнаружению угроз с помощью Azure Sentinel](tutorial-detect-threats-built-in.md).
