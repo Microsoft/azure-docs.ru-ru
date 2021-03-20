@@ -13,10 +13,10 @@ ms.author: sasapopo
 ms.reviewer: sstein, bonova
 ms.date: 10/08/2020
 ms.openlocfilehash: f9d5528746a85668677ab122d98e954bd39cd163
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92790735"
 ---
 # <a name="use-server-trust-groups-to-set-up-and-manage-trust-between-sql-managed-instances"></a>Использование групп доверия серверов для установки отношений доверия между управляемыми экземплярами SQL и управления ими
@@ -32,7 +32,7 @@ ms.locfileid: "92790735"
 
 В следующем разделе описывается настройка группы доверия сервера.
 
-1. Перейдите на [портал Azure](https://portal.azure.com/).
+1. Перейдите на [портал Microsoft Azure](https://portal.azure.com/).
 
 2. Перейдите к Управляемый экземпляр Azure SQL, который планируется добавить во вновь созданную группу доверия серверов.
 
@@ -42,13 +42,13 @@ ms.locfileid: "92790735"
 
 4. На странице Конфигурация группы доверия сервера щелкните значок **создать группу** .
 
-   :::image type="content" source="./media/server-trust-group-overview/server-trust-group-create-new-group.png" alt-text="Группы доверия сервера":::
+   :::image type="content" source="./media/server-trust-group-overview/server-trust-group-create-new-group.png" alt-text="Новая группа":::
 
-5. В колонке создание **группы доверия SQL** задайте **имя группы** . Он должен быть уникальным во всех регионах, где находятся члены группы. **Область доверия** определяет тип сценария для перекрестного экземпляра, включенного в группу доверия сервера. В предварительной версии единственной применимой областью доверия являются **распределенные транзакции** , поэтому она не может быть изменена. Все **члены группы** должны принадлежать к одной **подписке** , но могут находиться в разных группах ресурсов. Выберите **группу ресурсов** и **SQL Server или экземпляр** , чтобы выбрать управляемый экземпляр SQL Azure, который будет входить в группу.
+5. В колонке создание **группы доверия SQL** задайте **имя группы**. Он должен быть уникальным во всех регионах, где находятся члены группы. **Область доверия** определяет тип сценария для перекрестного экземпляра, включенного в группу доверия сервера. В предварительной версии единственной применимой областью доверия являются **распределенные транзакции**, поэтому она не может быть изменена. Все **члены группы** должны принадлежать к одной **подписке** , но могут находиться в разных группах ресурсов. Выберите **группу ресурсов** и **SQL Server или экземпляр** , чтобы выбрать управляемый экземпляр SQL Azure, который будет входить в группу.
 
-   :::image type="content" source="./media/server-trust-group-overview/server-trust-group-create-blade.png" alt-text="Группы доверия сервера":::
+   :::image type="content" source="./media/server-trust-group-overview/server-trust-group-create-blade.png" alt-text="Колонка создания группы доверия серверов":::
 
-6. После заполнения всех обязательных полей нажмите кнопку **сохранить** .
+6. После заполнения всех обязательных полей нажмите кнопку **сохранить**.
 
 ## <a name="server-trust-group-maintenance-and-deletion"></a>Обслуживание и удаление группы доверия сервера
 
@@ -59,11 +59,11 @@ ms.locfileid: "92790735"
 2. Перейдите к Управляемый экземпляр, который принадлежит к группе доверия.
 3. На вкладке Параметры **безопасности** перейдите на вкладку **группы доверия SQL** .
 4. Выберите группу доверия, которую нужно удалить.
-   :::image type="content" source="./media/server-trust-group-overview/server-trust-group-manage-select.png" alt-text="Группы доверия сервера":::
-5. Нажмите кнопку **Удалить группу** .
-   :::image type="content" source="./media/server-trust-group-overview/server-trust-group-manage-delete.png" alt-text="Группы доверия сервера":::
-6. Введите имя группы доверия сервера, чтобы подтвердить удаление, и нажмите кнопку **Удалить** .
-   :::image type="content" source="./media/server-trust-group-overview/server-trust-group-manage-delete-confirm.png" alt-text="Группы доверия сервера":::
+   :::image type="content" source="./media/server-trust-group-overview/server-trust-group-manage-select.png" alt-text="Выбор группы доверия сервера":::
+5. Нажмите кнопку **Удалить группу**.
+   :::image type="content" source="./media/server-trust-group-overview/server-trust-group-manage-delete.png" alt-text="Удаление группы доверия сервера":::
+6. Введите имя группы доверия сервера, чтобы подтвердить удаление, и нажмите кнопку **Удалить**.
+   :::image type="content" source="./media/server-trust-group-overview/server-trust-group-manage-delete-confirm.png" alt-text="Подтверждение удаления группы доверия сервера":::
 
 > [!NOTE]
 > Удаление группы доверия сервера может не сразу удалить доверие между двумя управляемыми экземплярами. Удаление доверия может быть применено путем вызова [отработки отказа](/powershell/module/az.sql/Invoke-AzSqlInstanceFailover) управляемых экземпляров. Ознакомьтесь с [известными проблемами](../database/doc-changes-updates-release-notes.md?tabs=managed-instance#known-issues) для последних обновлений.

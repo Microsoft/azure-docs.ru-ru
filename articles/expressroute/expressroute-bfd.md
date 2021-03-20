@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 12/14/2020
 ms.author: duau
 ms.openlocfilehash: 254f5909e7ed8db4dc18ade2677a3213b268cf41
-ms.sourcegitcommit: 63d0621404375d4ac64055f1df4177dfad3d6de6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97511269"
 ---
 # <a name="configure-bfd-over-expressroute"></a>Настройка обнаружения двунаправленной передачи через ExpressRoute
@@ -68,7 +68,7 @@ router bgp 65020
 >Если вы настроили геоизбыточные каналы ExpressRoute или используете VPN-подключение типа "сеть — сеть" в качестве резервной копии. Включение БФД может ускорить отработку отказа после сбоя подключения ExpressRoute. 
 >
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения доступны в следующих источниках:
 

@@ -1,6 +1,6 @@
 ---
-title: Включить файл
-description: Включить файл
+title: включить файл
+description: включить файл
 services: media-services
 author: Juliako
 ms.service: media-services
@@ -9,10 +9,10 @@ ms.date: 05/01/2019
 ms.author: juliako
 ms.custom: include file, devx-track-azurecli
 ms.openlocfilehash: 9a9aaf723b7b89b5b9c5611cea05c22c4003b99a
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92755611"
 ---
 ### <a name="access-the-media-services-api"></a>Доступ к API Служб мультимедиа.

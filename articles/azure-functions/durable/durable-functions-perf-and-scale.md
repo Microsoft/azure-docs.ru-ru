@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 11/03/2019
 ms.author: azfuncdf
 ms.openlocfilehash: 120335a7bce83bc3d4771ea64f665d67c7d1079a
-ms.sourcegitcommit: 65cef6e5d7c2827cf1194451c8f26a3458bc310a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98572805"
 ---
 # <a name="performance-and-scale-in-durable-functions-azure-functions"></a>Производительность и масштабирование в устойчивых функциях (Функции Azure)
@@ -277,7 +277,7 @@ ms.locfileid: "98572805"
 
 Если вы не видите показателей пропускной способности, и ваш ЦП и использование памяти отображаются в работоспособном состоянии, проверьте, описаны ли эти случаи в разделе [рекомендации по устранению неполадок](../../storage/common/storage-monitoring-diagnosing-troubleshooting.md#troubleshooting-guidance). Расширение устойчивых функций может существенно увеличить нагрузку на учетную запись службы хранения Azure, что при достаточно высоких загрузках может привести к регулированию учетной записи.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Сведения об аварийном восстановлении и географическом распределении](durable-functions-disaster-recovery-geo-distribution.md)

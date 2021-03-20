@@ -9,15 +9,15 @@ ms.date: 07/12/2019
 ms.author: danlep
 ms.custom: include file, devx-track-azurecli
 ms.openlocfilehash: d81b6f5367efa92c9249956faa058441edf98561
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92755847"
 ---
 ### <a name="create-a-user-assigned-identity"></a>Создание назначаемого пользователем удостоверения
 
-Создайте в подписке удостоверение с именем *myACRTasksId* , используя команду [az identity create][az-identity-create]. Вы можете использовать ту же группу ресурсов, которую указали ранее для создания реестра контейнеров, либо другую.
+Создайте в подписке удостоверение с именем *myACRTasksId*, используя команду [az identity create][az-identity-create]. Вы можете использовать ту же группу ресурсов, которую указали ранее для создания реестра контейнеров, либо другую.
 
 ```azurecli
 az identity create \

@@ -12,10 +12,10 @@ ms.date: 12/13/2017
 ms.author: mathoma
 ms.reviewer: jroth
 ms.openlocfilehash: ad991974df30060e552d21a44d5796cd2ba165e2
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92792554"
 ---
 # <a name="frequently-asked-questions-for-sql-server-on-linux-virtual-machines"></a>Часто задаваемые вопросы о SQL Server на Linux виртуальных машинах
@@ -95,13 +95,13 @@ ms.locfileid: "92792554"
 
 ## <a name="resources"></a>Ресурсы
 
-**Для виртуальных машин Linux** :
+**Для виртуальных машин Linux**:
 
 * [Обзор SQL Server на виртуальных машинах Linux](sql-server-on-linux-vm-what-is-iaas-overview.md).
 * [Инициализация SQL Server на виртуальной машине Linux](sql-vm-create-portal-quickstart.md)
 * [Документация по SQL Server в Linux](/sql/linux/sql-server-linux-overview).
 
-**Для виртуальных машин Windows** :
+**Для виртуальных машин Windows**:
 
 * [Обзор SQL Server на виртуальных машинах Windows](../windows/sql-server-on-azure-vm-iaas-what-is-overview.md).
 * [Инициализация SQL Server на виртуальной машине Windows](../windows/sql-vm-create-portal-quickstart.md)

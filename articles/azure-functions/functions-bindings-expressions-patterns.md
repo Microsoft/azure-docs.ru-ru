@@ -7,10 +7,10 @@ ms.custom: devx-track-csharp
 ms.date: 02/18/2019
 ms.author: cshoe
 ms.openlocfilehash: 7245b0c0fb1e96959ef5dca4992cf52a38accb58
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98920296"
 ---
 # <a name="azure-functions-binding-expression-patterns"></a>Шаблоны выражений привязки функций Azure
@@ -156,7 +156,7 @@ public static void Run(
 * QueueTrigger (содержимое активирующего сообщения, если строка допустима)
 * DequeueCount
 * ExpirationTime
-* Id
+* Идентификатор
 * InsertionTime
 * NextVisibleTime
 * PopReceipt

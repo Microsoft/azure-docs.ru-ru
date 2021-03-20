@@ -9,10 +9,10 @@ ms.subservice: hyperscale-citus
 ms.topic: how-to
 ms.date: 10/8/2019
 ms.openlocfilehash: e1c6825820ae943d10157279dfe93922a7521b75
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91295623"
 ---
 # <a name="troubleshoot-connection-issues-to-azure-database-for-postgresql---hyperscale-citus"></a>Устранение неполадок подключения к базе данных Azure для PostgreSQL — масштабирование (Цитус)
@@ -60,7 +60,7 @@ ms.locfileid: "91295623"
 3. Проверьте строку подключения и другие параметры подключения.
 4. Проверьте работоспособность службы на панели мониторинга.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Основные сведения о [правилах брандмауэра в базе данных Azure для PostgreSQL — масштабирование (Цитус)](concepts-hyperscale-firewall-rules.md)
 * См. раздел [Управление правилами брандмауэра для базы данных Azure для PostgreSQL-Scale (Цитус)](howto-hyperscale-manage-firewall-using-portal.md) .

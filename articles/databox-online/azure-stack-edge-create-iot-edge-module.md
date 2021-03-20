@@ -10,10 +10,10 @@ ms.date: 08/06/2019
 ms.author: alkohli
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 96a6692524eca3a2845d648ab3df2932d00ce823
-ms.sourcegitcommit: a2d8acc1b0bf4fba90bfed9241b299dc35753ee6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91951151"
 ---
 # <a name="develop-a-c-iot-edge-module-to-move-files-with-azure-stack-edge-pro"></a>Разработка модуля IoT Edge C# для перемещения файлов с помощью Azure Stack пограничных Pro
@@ -42,7 +42,7 @@ ms.locfileid: "91951151"
 
 Как только файл попадает в общий облачный ресурс, он автоматически загружается в учетную запись хранения Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед началом работы убедитесь, что у вас есть следующие ресурсы:
 
@@ -77,7 +77,7 @@ ms.locfileid: "91951151"
 
       ![Создание реестра контейнеров](./media/azure-stack-edge-create-iot-edge-module/create-container-registry-1.png)
  
-4. Щелкните **Создать**.
+4. Нажмите кнопку **создания**.
 5. После создания реестра контейнеров просмотрите его и выберите **Ключи доступа**.
 
     ![Получение ключей доступа](./media/azure-stack-edge-create-iot-edge-module/get-access-keys-1.png)
@@ -125,7 +125,7 @@ ms.locfileid: "91951151"
 
 ### <a name="update-the-module-with-custom-code"></a>Обновление модуля с помощью пользовательского кода
 
-1. В обозревателе VS Code откройте **модули > филекопимодуле > Program.CS**.
+1. В обозревателе VS Code откройте **модули > филекопимодуле > Program. CS**.
 2. В верхней части **пространства имен CSharpModule** добавьте следующие операторы using для типов, которые будут использоваться позже. **Microsoft.Azure.Devices.Client.Transport.Mqtt** — это протокол отправки сообщений в центр IoT Edge.
 
     ```
@@ -160,7 +160,7 @@ ms.locfileid: "91951151"
     }
     ```
 
-5. В **методе init**код создает и настраивает объект **модулеклиент** . Этот объект позволяет модулю подключаться к локальной среде выполнения Azure IoT Edge по протоколу MQTT для отправки и получения сообщений. Строка подключения, используемая в методе Init, предоставляется модулю средой выполнения IoT Edge. Этот код регистрирует обратный вызов FileCopy для получения сообщений от центра IoT Edge через конечную точку **input1**. Замените **метод init** следующим кодом.
+5. В **методе init** код создает и настраивает объект **модулеклиент** . Этот объект позволяет модулю подключаться к локальной среде выполнения Azure IoT Edge по протоколу MQTT для отправки и получения сообщений. Строка подключения, используемая в методе Init, предоставляется модулю средой выполнения IoT Edge. Этот код регистрирует обратный вызов FileCopy для получения сообщений от центра IoT Edge через конечную точку **input1**. Замените **метод init** следующим кодом.
 
     ```
     /// <summary>
@@ -240,7 +240,7 @@ ms.locfileid: "91951151"
     ```
 
 7. Сохраните этот файл.
-8. Вы также можете [скачать существующий пример кода](https://azure.microsoft.com/resources/samples/data-box-edge-csharp-modules/?cdn=disable) для этого проекта. Затем можно проверить файл, сохраненный в файле **Program.CS** в этом примере.
+8. Вы также можете [скачать существующий пример кода](https://azure.microsoft.com/resources/samples/data-box-edge-csharp-modules/?cdn=disable) для этого проекта. Затем можно проверить файл, сохраненный в файле **Program. CS** в этом примере.
 
 ## <a name="build-your-iot-edge-solution"></a>Сборка решения IoT Edge
 

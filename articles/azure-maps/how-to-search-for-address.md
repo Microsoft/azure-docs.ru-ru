@@ -9,10 +9,10 @@ ms.service: azure-maps
 services: azure-maps
 manager: philmea
 ms.openlocfilehash: dddf56edf2037d87a28589a59834db32f8d04a4c
-ms.sourcegitcommit: fc401c220eaa40f6b3c8344db84b801aa9ff7185
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98598361"
 ---
 # <a name="search-for-a-location-using-azure-maps-search-services"></a>Поиск расположения с помощью служб поиска Azure Maps
@@ -137,10 +137,10 @@ API Azure Maps [нечеткий поиск](/rest/api/maps/search/getsearchfuzz
 
     | Ключ | Значение | Возвращаемое значение
     |-----|------------|------|
-    | number | 1 |Ответ может включать сторону улицы (слева направо), а также смещение для числа.|
-    | returnSpeedLimit | Да | Возвращает ограничение скорости по адресу.|
-    | returnRoadUse | Да | Возвращает дорожные типы использования по адресу. Все возможные типы использования в пути см. в разделе [типы использования дорожек](/rest/api/maps/search/getsearchaddressreverse#uri-parameters).|
-    | ретурнматчтипе | Да| Возвращает тип соответствия. Все возможные значения см. в разделе [обратные результаты поиска адресов](/rest/api/maps/search/getsearchaddressreverse#searchaddressreverseresult) .
+    | Число | 1 |Ответ может включать сторону улицы (слева направо), а также смещение для числа.|
+    | returnSpeedLimit | true | Возвращает ограничение скорости по адресу.|
+    | returnRoadUse | true | Возвращает дорожные типы использования по адресу. Все возможные типы использования в пути см. в разделе [типы использования дорожек](/rest/api/maps/search/getsearchaddressreverse#uri-parameters).|
+    | ретурнматчтипе | true| Возвращает тип соответствия. Все возможные значения см. в разделе [обратные результаты поиска адресов](/rest/api/maps/search/getsearchaddressreverse#searchaddressreverseresult) .
 
    :::image type="content" source="./media/how-to-search-for-address/search-reverse.png" alt-text="Обратный поиск.":::
 
@@ -171,7 +171,7 @@ API Azure Maps [нечеткий поиск](/rest/api/maps/search/getsearchfuzz
   
 3. Нажмите кнопку **Отправить** и проверьте текст ответа. Обратите внимание, что ответ содержит `crossStreet` значение `South Atlantic Street` .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Azure Maps Служба поиска REST API](/rest/api/maps/search)

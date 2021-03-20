@@ -7,17 +7,17 @@ ms.date: 03/05/2018
 ms.author: juda
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: 319107127b79383fc3b49f0eeb856a0e6c5b09f8
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92747766"
 ---
 # <a name="using-openfaas-on-aks"></a>Использование OpenFaaS в AKS
 
 [OpenFaaS][open-faas] — это платформа для создания бессерверных функций с помощью контейнеров. Как проект с открытым кодом она стала очень популярной в сообществе. В этом документе описано, как установить и использовать OpenFaas в кластере Службы Azure Kubernetes (AKS).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы выполнить действия, описанные в этой статье, необходимо следующее:
 
@@ -132,7 +132,7 @@ echo -n $PASSWORD | ./faas-cli login -g $OPENFAAS_URL -u admin --password-stdin
 
 Теперь, когда OpenFaaS можно использовать, создайте функцию с помощью портала OpenFaas.
 
-Щелкните **Deploy New Function** (Развернуть новую функцию) и выполните поиск по слову **Figlet** . Выберите функцию Figlet и нажмите кнопку **Deploy** (Развернуть).
+Щелкните **Deploy New Function** (Развернуть новую функцию) и выполните поиск по слову **Figlet**. Выберите функцию Figlet и нажмите кнопку **Deploy** (Развернуть).
 
 ![На снимке экрана показано диалоговое окно Развертывание новой функции с текстом figlet в строке поиска.](media/container-service-serverless/figlet.png)
 
@@ -245,7 +245,7 @@ curl -s http://52.186.64.52:8080/function/cosmos-query
 
 ![замещающий текст](media/container-service-serverless/OpenFaaSUI.png)
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Вы можете продолжить изучение OpenFaaSного семинара с помощью набора практических лабораторных занятий, в которых рассматриваются такие темы, как создание собственного робота GitHub, использование секретов, просмотр метрик и автоматическое масштабирование.
 

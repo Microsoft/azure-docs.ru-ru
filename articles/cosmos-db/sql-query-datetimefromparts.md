@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 07/09/2020
 ms.author: tisande
 ms.custom: query-reference
-ms.openlocfilehash: da992715b5cf624592db72cacefd35c9513ac43f
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.openlocfilehash: b0e7996b71e68db371201da1f0f5c93486ae4e29
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93335778"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104592104"
 ---
 # <a name="datetimefromparts-azure-cosmos-db"></a>DateTimeFromParts (Azure Cosmos DB)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -48,17 +48,17 @@ DateTimeFromParts(<numberYear>, <numberMonth>, <numberDay> [, numberHour]  [, nu
 
 Возвращает строковое значение даты и времени ISO 8601 по ГРИНВИЧу в формате, `YYYY-MM-DDThh:mm:ss.fffffffZ` где:
   
-  |Формат|Описание|
-  |-|-|
-  |YYYY|год из четырех цифр|
-  |ММ|месяц (2 цифры) (01 = Январь и т. д.)|
-  |DD|четырехзначный день месяца (от 01 до 31)|
-  |T|обозначает начало элементов времени|
-  |hh|час с двумя цифрами (от 00 до 23)|
-  |mm|двузначное число минут (от 00 до 59)|
-  |ss|двузначное число секунд (от 00 до 59)|
-  |. fffffff|семь цифр в долях секунды|
-  |Z|Обозначение времени в формате UTC (Универсальное координированное время)||
+|Формат|Описание|
+|-|-|
+|YYYY|год из четырех цифр|
+|ММ|месяц (2 цифры) (01 = Январь и т. д.)|
+|DD|четырехзначный день месяца (от 01 до 31)|
+|T|обозначает начало элементов времени|
+|hh|час с двумя цифрами (от 00 до 23)|
+|ММ|двузначное число минут (от 00 до 59)|
+|сс|двузначное число секунд (от 00 до 59)|
+|. fffffff|семь цифр в долях секунды|
+|Z|Обозначение времени в формате UTC (Универсальное координированное время)|
   
  Дополнительные сведения о формате ISO 8601 см. в разделе [ISO_8601](https://en.wikipedia.org/wiki/ISO_8601)
 
@@ -112,7 +112,7 @@ SELECT DateTimeFromParts(2020, 9, 4, 10, 52, 12, 3456789) AS DateTime
 ]
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Функции даты и времени Azure Cosmos DB](sql-query-date-time-functions.md)
 - [Системные функции Azure Cosmos DB](sql-query-system-functions.md)

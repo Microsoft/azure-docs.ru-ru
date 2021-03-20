@@ -8,10 +8,10 @@ ms.date: 3/16/2020
 ms.topic: conceptual
 ms.service: digital-twins
 ms.openlocfilehash: 118b02ab694d27dbe4e13cbfa1a617a56b052772
-ms.sourcegitcommit: 2e72661f4853cd42bb4f0b2ded4271b22dc10a52
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92043074"
 ---
 # <a name="integrate-azure-digital-twins-with-other-services"></a>Интеграция Azure Digital двойников с другими службами
@@ -39,9 +39,9 @@ Azure Digital двойников может передавать данные в
 * [Сетка событий](../event-grid/overview.md)
 * [Служебная шина](../service-bus-messaging/service-bus-messaging-overview.md)
 
-Конечные точки подключены к цифровым двойников Azure с помощью API-интерфейсов управления или портал Azure. Дополнительные сведения о подключении конечной точки к цифровым двойников Azure см. в статье [*Управление конечными точками и маршрутами*](how-to-manage-routes-apis-cli.md).
+Конечные точки подключаются к Azure Digital Twins помощью API-интерфейсов управления или портала Azure. Дополнительные сведения о подключении конечной точки к цифровым двойников Azure см. в статье [*Управление конечными точками и маршрутами*](how-to-manage-routes-apis-cli.md).
 
-Существует множество других служб, которые могут захотеть направлять ваши данные, такие как [хранилище Azure](../storage/common/storage-introduction.md), [Azure Maps](../azure-maps/about-azure-maps.md)или [аналитика временных рядов](../time-series-insights/overview-what-is-tsi.md). Чтобы отправить данные в подобные службы, присоедините целевую службу к конечной точке.
+Существует ряд других служб, в которые можно отправлять данные, например [служба хранилища Azure](../storage/common/storage-introduction.md), [Azure Maps](../azure-maps/about-azure-maps.md) или [Аналитика временных рядов](../time-series-insights/overview-what-is-tsi.md). Чтобы отправить данные в подобные службы, присоедините целевую службу к конечной точке.
 
 Например, если вы также используете Azure Maps и хотите сопоставить расположение с [графом двойника](concepts-twins-graph.md)Azure Digital двойников, вы можете использовать функции Azure с сеткой событий для установления связи между всеми службами в развертывании. Дополнительные сведения об этом [ *см. в статье Использование Azure Digital двойников для обновления карт Azure Maps*](how-to-integrate-maps.md)
 

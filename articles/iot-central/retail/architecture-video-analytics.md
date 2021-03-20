@@ -9,19 +9,19 @@ ms.service: iot-central
 ms.subservice: iot-central-retail
 services: iot-central
 ms.openlocfilehash: 48808f762536390287bae40e8af3849da20b81c2
-ms.sourcegitcommit: fbb620e0c47f49a8cf0a568ba704edefd0e30f81
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91874294"
 ---
 # <a name="video-analytics---object-and-motion-detection-application-architecture"></a>Аналитика видео — архитектура приложения для обнаружения объектов и движения
 
 Шаблон приложения " **аналитика видео — объект и приложение обнаружения движения** " позволяет создавать решения IOT, включая возможности Live Video Analytics.
 
-:::image type="content" source="media/architecture-video-analytics/architecture.png" alt-text="Схема обзора объектов и компонентов обнаружения движения видео.&quot;:::
+:::image type="content" source="media/architecture-video-analytics/architecture.png" alt-text="Схема обзора объектов и компонентов обнаружения движения видео.":::
 
-Ключевые компоненты решения &quot;аналитика видео" включают:
+Ключевые компоненты решения "аналитика видео" включают:
 
 ## <a name="live-video-analytics-lva"></a>Интерактивная аналитика видео (лва)
 
@@ -39,6 +39,6 @@ ms.locfileid: "91874294"
 
 Media Graph позволяет определить, откуда следует записывать носитель, как обработать его и куда доставлять результаты. Вы настраиваете Media Graph, подключаясь к компонентам или узлам нужным образом. Дополнительные сведения см. в статье [Media Graph](https://github.com/Azure/live-video-analytics/tree/master/MediaGraph) на GitHub.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 На следующем шаге мы научитесь [развертывать приложение IOT Central с помощью шаблона приложения Video Analytics — объект и приложение обнаружения движения](tutorial-video-analytics-deploy.md).

@@ -11,14 +11,14 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: how-to
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 ms.author: inhenkel
-ms.openlocfilehash: 2f55d1dcc3364f119faab0c728f6e3b7f5ecbb06
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: 6b59276cc340f133c0f270e8ab95051b3c392e1c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102614944"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104581292"
 ---
 # <a name="get-credentials-to-access-media-services-api"></a>Получение учетных данных для доступа к API служб мультимедиа
 

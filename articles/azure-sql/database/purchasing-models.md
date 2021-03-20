@@ -13,10 +13,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 05/28/2020
 ms.openlocfilehash: 8883263d6ddb2fb8ddc809f464288fcd282531bd
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92788831"
 ---
 # <a name="choose-between-the-vcore-and-dtu-purchasing-models---azure-sql-database-and-sql-managed-instance"></a>Выбор между моделями приобретения Виртуальное ядро и DTU в базе данных SQL Azure и SQL Управляемый экземпляр
@@ -162,11 +162,11 @@ DTU наиболее полезны для понимания относител
 
 ### <a name="do-i-need-to-take-my-application-offline-to-convert-from-a-dtu-based-service-tier-to-a-vcore-based-service-tier"></a>Нужно ли переводить приложение в автономный режим для преобразования из уровня служб на основе DTU на уровень служб на основе виртуальное ядро?
 
-Нет. Перевести приложение в автономный режим не требуется. Новые уровни служб предлагают простой метод интерактивного преобразования, похожий на существующий процесс обновления баз данных со Standard до уровня служб Premium и наоборот. Это преобразование можно начать с помощью портал Azure, PowerShell, Azure CLI, T-SQL или REST API. См. раздел [Управление отдельными базами данных](single-database-scale.md) и [Управление пулами эластичных БД](elastic-pool-overview.md).
+Нет. Перевести приложение в автономный режим не требуется. Новые уровни служб предлагают простой метод интерактивного преобразования, похожий на существующий процесс обновления баз данных со Standard до уровня служб Premium и наоборот. Это преобразование можно начать с помощью портал Azure, PowerShell, Azure CLI, T-SQL или REST API. Ознакомьтесь со статьями [Управление ресурсами отдельной базы данных в Базе данных SQL Azure](single-database-scale.md) и [Управление несколькими базами данных SQL Azure и их масштабирование с помощью эластичных пулов](elastic-pool-overview.md).
 
 ### <a name="can-i-convert-a-database-from-a-service-tier-in-the-vcore-based-purchasing-model-to-a-service-tier-in-the-dtu-based-purchasing-model"></a>Можно ли преобразовать базу данных из уровня службы в модели приобретения на основе виртуальное ядро в уровень служб в модели приобретения на основе DTU?
 
-Да, можно легко преобразовать базу данных в любую поддерживаемую цель производительности с помощью портал Azure, PowerShell, Azure CLI, T-SQL или REST API. См. раздел [Управление отдельными базами данных](single-database-scale.md) и [Управление пулами эластичных БД](elastic-pool-overview.md).
+Да, можно легко преобразовать базу данных в любую поддерживаемую цель производительности с помощью портал Azure, PowerShell, Azure CLI, T-SQL или REST API. Ознакомьтесь со статьями [Управление ресурсами отдельной базы данных в Базе данных SQL Azure](single-database-scale.md) и [Управление несколькими базами данных SQL Azure и их масштабирование с помощью эластичных пулов](elastic-pool-overview.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

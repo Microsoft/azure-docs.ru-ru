@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: 2c8ab53068b71652d03d03bf79a224fe5e34dff3
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98739774"
 ---
 # <a name="azure-cloud-services-classic-definition-networktrafficrules-schema"></a>Схема NetworkTrafficRules определения облачных служб Azure (классическая модель)
@@ -97,7 +97,7 @@ ms.locfileid: "98739774"
 | ---------- | -------- | ----------- |
 | `roleName` | `string` | Обязательный. Имя роли, из которой разрешается обмен данными.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [Схема определения облачных служб (классических)](schema-csdef-file.md).
 
 

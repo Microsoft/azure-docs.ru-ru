@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 10/09/2020
 ms.openlocfilehash: d7734fde529c24e8113ea3b019d343b7223f0122
-ms.sourcegitcommit: 50802bffd56155f3b01bfb4ed009b70045131750
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91929648"
 ---
 # <a name="upgrade-to-the-latest-rest-api-in-azure-cognitive-search"></a>Обновление до последней версии REST API в Azure Когнитивный поиск
@@ -52,7 +52,7 @@ ms.locfileid: "91929648"
 
 * Любые литералы EDM. Date (Дата, состоящая из года-месяца-дня, например `2020-12-12` ) в выражениях фильтра, должны соответствовать формату EDM. DateTimeOffset: `2020-12-12T00:00:00Z` . Это изменение требовалось для управления ошибочными или непредвиденными результатами запроса из-за различий в часовых поясах.
 
-### <a name="behavior-changes"></a>Изменения в работе
+### <a name="behavior-changes"></a>Изменения в поведении
 
 * [Алгоритм ранжирования BM25](index-ranking-similarity.md) заменяет предыдущий алгоритм ранжирования на новую технологию. Новые службы будут использовать этот алгоритм автоматически. Для существующих служб необходимо задать параметры для использования нового алгоритма.
 
@@ -147,7 +147,7 @@ ms.locfileid: "91929648"
 > [!NOTE]
 > Нельзя управлять индексами, созданными со старым форматом "плоский", из портал Azure. Обновите индексы с "плоского" представления до "дерева" в самом раннем удобства.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Ознакомьтесь с справочной документацией по поиску REST API. При возникновении проблем попросите помощь по [Stack overflow](https://stackoverflow.com/) или [обратитесь в службу поддержки](https://azure.microsoft.com/support/community/?product=search).
 

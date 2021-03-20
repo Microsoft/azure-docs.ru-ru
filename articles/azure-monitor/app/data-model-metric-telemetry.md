@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 04/25/2017
 ms.reviewer: sergkanz
 ms.openlocfilehash: f8e787b8a94987e7d68e12a0e4e69f4c63e21e19
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87320584"
 ---
 # <a name="metric-telemetry-application-insights-data-model"></a>Телеметрия метрик: модель данных Application Insights
@@ -33,7 +33,7 @@ ms.locfileid: "87320584"
 | `\ASP.NET Applications(??APP_W3SVC_PROC??)\Request Execution Time`   | Ведется работа... | [requestExecutionTime](https://dev.applicationinsights.io/apiexplorer/metrics?appId=DEMO_APP&apiKey=DEMO_KEY&metricId=performanceCounters%2FrequestExecutionTime) | Среднее время выполнения запросов
 | `\ASP.NET Applications(??APP_W3SVC_PROC??)\Requests In Application Queue` | Ведется работа... | [requestsInQueue](https://dev.applicationinsights.io/apiexplorer/metrics?appId=DEMO_APP&apiKey=DEMO_KEY&metricId=performanceCounters%2FrequestsInQueue) | Количество запросов в очереди, ожидающих обработки
 
-## <a name="name"></a>name
+## <a name="name"></a>Имя
 
 Имя метрики, которое нужно отобразить на портале Application Insights и в пользовательском интерфейсе. 
 
@@ -49,7 +49,7 @@ ms.locfileid: "87320584"
 
 Минимальное значение вычисленной метрики. Не следует задавать для измерения.
 
-## <a name="max"></a>Max
+## <a name="max"></a>Макс.
 
 Максимальное значение вычисленной метрики. Не следует задавать для измерения.
 

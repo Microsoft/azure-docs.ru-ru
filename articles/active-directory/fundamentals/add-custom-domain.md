@@ -14,17 +14,17 @@ ms.reviewer: elkuzmen
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 28847ece3c08e93d14d381b35fc93fb16dad95a1
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95973904"
 ---
 # <a name="add-your-custom-domain-name-using-the-azure-active-directory-portal"></a>Добавление имени личного домена с помощью портала Azure Active Directory
 
 Каждый новый клиент Azure AD поставляется с исходным именем домена, *\<domainname> . onmicrosoft.com*. Нельзя изменить или удалить исходное доменное имя, но можно добавить имена Организации. Добавление пользовательских доменных имен поможет вам создать имена пользователей, знакомых с пользователями, например *(alain \@ contoso.com*.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Перед добавлением имени личного домена создайте доменное имя с помощью регистратора доменных имен. Аккредитованные регистраторы перечислены [на этой странице](https://www.icann.org/registrar-reports/accredited-list.html).
 
@@ -108,7 +108,7 @@ ms.locfileid: "95973904"
 
 - **Убедитесь, что у вас нет неуправляемых клиентов Power BI.** Если пользователи активировали Power BI через функцию самостоятельной регистрации и создали неуправляемый клиент для организации, необходимо взять на себя управление в качестве внутреннего или внешнего администратора с помощью PowerShell. Дополнительные сведения см. в [Смена неуправляемого каталога от имени администратора в Azure Active Directory](../enterprise-users/domains-admin-takeover.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Добавьте в каталог еще одного глобального администратора. Дополнительные сведения см. в статье [Назначение ролей администратора и других ролей пользователям с помощью Azure Active Directory](active-directory-users-assign-role-azure-portal.md).
 

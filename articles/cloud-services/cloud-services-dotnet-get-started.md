@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: ae7fd5a7c9bc858cb18473374e7bd5589717eac6
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98742086"
 ---
 # <a name="get-started-with-azure-cloud-services-classic-and-aspnet"></a>Приступая к работе с облачными службами Azure (классическая модель) и ASP.NET
@@ -71,7 +71,7 @@ ms.locfileid: "98742086"
 
 ## <a name="download-and-run-the-completed-solution"></a>Загрузка и запуск готового решения
 1. Загрузите и распакуйте [готовое решение](https://code.msdn.microsoft.com/Simple-Azure-Cloud-Service-e01df2e4).
-2. Запустите Visual Studio.
+2. Запустите среду Visual Studio.
 3. В меню **Файл** выберите **Открыть проект**, перейдите к папке, куда вы скачали решение, а затем откройте файл решения.
 4. Чтобы построить решение, нажмите CTRL+SHIFT+B.
 
@@ -407,10 +407,10 @@ ms.locfileid: "98742086"
 1. В проекте ContosoAdsCommon удалите файл *Class1.cs* и добавьте на его место файлы *Ad.cs* и *ContosoAdscontext.cs* из скачанного проекта.
 2. В проекте ContosoAdsCommon добавьте следующие файлы из загруженного проекта.
 
-   * *Global.asax.CS*.  
+   * *Global. asax. CS*.  
    * В папку *Views\Shared*: файл *\_Layout.cshtml*.
    * В папке *Views\Home* : *index. cshtml*.
-   * В папке *Controllers* : *AdController.CS*.
+   * В папке *Controllers* : *адконтроллер. CS*.
    * В папку *Views\Ad* (сначала создайте эту папку): пять файлов *CSHTML*.
 3. В проекте ContosoAdsCommon добавьте *WorkerRole.cs* из загруженного проекта.
 
@@ -534,7 +534,7 @@ imagesQueue.CreateIfNotExists();
 ### <a name="contosoadsweb---adcontrollercs"></a>ContosoAdsWeb - AdController.cs
 В файле *AdController.cs* конструктор вызывает метод `InitializeStorage` для создания объектов клиентской библиотеки службы хранилища Azure, которые предоставляют API-интерфейс для работы с большими двоичными объектами и очередями.
 
-Затем код получает ссылку на контейнер больших двоичных объектов *Images* , как было показано ранее в *Global.asax.CS*. При этом он устанавливает [политику повторения](https://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) по умолчанию, подходящую для веб-приложения. Стандартная политика повтора по умолчанию может привести к тому, что веб-приложение перестанет отвечать на запросы дольше, чем за минуту, при повторной попытке выполнения временной ошибки. Политика повторения здесь указывает ожидание в три секунды после каждой попытки, всего до трех повторений.
+Затем код получает ссылку на контейнер больших двоичных объектов *Images* , как было показано ранее в *Global. asax. CS*. При этом он устанавливает [политику повторения](https://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) по умолчанию, подходящую для веб-приложения. Стандартная политика повтора по умолчанию может привести к тому, что веб-приложение перестанет отвечать на запросы дольше, чем за минуту, при повторной попытке выполнения временной ошибки. Политика повторения здесь указывает ожидание в три секунды после каждой попытки, всего до трех повторений.
 
 ```csharp
 var blobClient = storageAccount.CreateCloudBlobClient();
@@ -762,7 +762,7 @@ private void ProcessQueueMessage(CloudQueueMessage msg)
 
 Для запуска приложения с полным эмулятором следует открыть Visual Studio с правами администратора.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Приложение Contoso Ads намеренно сделано простым для руководства по началу работы. Например, оно не реализует [вставку зависимостей](https://www.asp.net/mvc/tutorials/hands-on-labs/aspnet-mvc-4-dependency-injection) или [репозиторий и блок рабочих шаблонов](https://www.asp.net/mvc/tutorials/getting-started-with-ef-using-mvc/advanced-entity-framework-scenarios-for-an-mvc-web-application#repo), не использует [интерфейс для журналов](https://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/monitoring-and-telemetry#log), не использует [EF Code First Migrations](https://www.asp.net/mvc/tutorials/getting-started-with-ef-using-mvc/migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application) для управления изменениями модели данных или [EF Connection Resiliency](https://www.asp.net/mvc/tutorials/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application) для управления кратковременными ошибками сети и т. д.
 
 Есть несколько примеров приложений облачной службы, которые демонстрируют более жизненные примеры кодирования — от менее сложных к более сложным:

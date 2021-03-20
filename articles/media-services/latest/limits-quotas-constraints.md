@@ -12,10 +12,10 @@ ms.topic: article
 ms.date: 10/23/2020
 ms.author: inhenkel
 ms.openlocfilehash: d6ca7a444f2a3d4babe220548edb10bd37784be7
-ms.sourcegitcommit: 4cb89d880be26a2a4531fedcc59317471fe729cd
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92678120"
 ---
 <!-- If you update limits in this topic, make sure to also update https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#media-services-limits -->
@@ -32,13 +32,13 @@ ms.locfileid: "92678120"
 
 | Ресурс | Ограничение по умолчанию |
 | --- | --- |
-| [Учетные записи служб мультимедиа](media-services-account-concept.md) в одной подписке | 100 (исправлено) |
+| [Учетные записи служб мультимедиа](media-services-account-concept.md) в одной подписке | 100 (фиксированное значение) |
 
 ## <a name="asset-limits"></a>Ограничения для ресурсов
 
 | Ресурс | Ограничение по умолчанию |
 | --- | --- |
-| [Assets](assets-concept.md) Учетная запись служб мультимедиа | 1 000 000|
+| [](assets-concept.md) Учетная запись служб мультимедиа | 1 000 000|
 
 ## <a name="storage-limits"></a>Ограничения хранилища
 

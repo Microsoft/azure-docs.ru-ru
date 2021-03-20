@@ -20,10 +20,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 6af0f2b5221a737687578e939c14cecf3be14509
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88932922"
 ---
 # <a name="understanding-odata-collection-filters-in-azure-cognitive-search"></a>Основные сведения о фильтрах коллекции OData в Azure Когнитивный поиск
@@ -105,7 +105,7 @@ ms.locfileid: "88932922"
 | комната | 1, 2 |
 | standard | 1 |
 | Suite | 1 |
-| view | 1 |
+| представление | 1 |
 
 Таким образом, в отличие от приведенного выше фильтра, в котором по сути говорится о совпадении документов, в которых комната имеет значение `Type` "Deluxe Room", и **что в этой комнате** `BaseRate` меньше 100 ", поисковый запрос говорит «найти документы `Rooms/Type` , где есть термин «Deluxe» и `Rooms/Description` фразу «представление города». Нет концепции отдельных комнат, поля которых можно связать в последнем случае.
 

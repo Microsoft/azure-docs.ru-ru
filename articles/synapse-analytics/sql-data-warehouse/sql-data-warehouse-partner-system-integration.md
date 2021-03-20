@@ -10,10 +10,10 @@ ms.date: 11/24/2020
 ms.author: procha
 ms.reviewer: jrasnick
 ms.openlocfilehash: 19941963b5200b3ffdb9f2360301d30fe9df4823
-ms.sourcegitcommit: b8a175b6391cddd5a2c92575c311cc3e8c820018
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96121847"
 ---
 # <a name="azure-synapse-analytics-system-integration-partners"></a>Партнеры по интеграции системы Azure синапсе Analytics
@@ -32,6 +32,6 @@ ms.locfileid: "96121847"
 | ![Neal Analytics](./media/sql-data-warehouse-partner-public-preview/neal-analytics-logo.png) |**Neal Analytics**<br>Neal Analytics помогает компаниям ориентироваться в своем цифровом процессе преобразования, превращая данные в ценные активы и конкурентное преимущество. Благодаря нашему опыту в области машинного обучения и инженерии данных мы используем данные для повышения рентабельности и прибыльности аналитических проектов. В штате Neal Analytics состоят консультанты, специализирующиеся на обработке и анализе данных, бизнес-аналитике, когнитивных службах, практическом ИИ, управлении данными и Интернете вещей, благодаря чему ей доверяют решение уникальных бизнес-задач и оптимизацию операций в различных отраслях.|[Страница партнера](https://nealanalytics.com/)<br>|
 | ![Pragmatic Works](./media/sql-data-warehouse-partner-public-preview/pragmatic-works-logo.png) |**Pragmatic Works**<br>Pragmatic Works поможет вам извлечь выгоду из ценности ваших данных, предоставляя больше пользователей и приложений в одном наборе данных. Мы Kickstart, повышаем и обслуживаем облачную среду с помощью разнообразных решений, соответствующих потребностям вашего бизнеса.|[Страница партнера](https://www.pragmaticworks.com/)<br>|
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о некоторых других партнерах см. в статьях [партнеры по бизнес-аналитике](sql-data-warehouse-partner-business-intelligence.md), [партнеры по интеграции данных](sql-data-warehouse-partner-data-integration.md), [Управление данныминые партнеры](sql-data-warehouse-partner-data-management.md), а также [машинное обучение & партнеров искусственного интеллекта](sql-data-warehouse-partner-machine-learning-ai.md).
 

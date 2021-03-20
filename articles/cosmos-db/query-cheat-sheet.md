@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 05/28/2019
 ms.author: sngun
 ms.openlocfilehash: 2ef8aed7243e8956ad9ca62b630cda0efbd2deb9
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93339654"
 ---
 # <a name="azure-cosmos-db-query-cheat-sheets"></a>Памятка по запросам Azure Cosmos DB
@@ -32,7 +32,7 @@ ms.locfileid: "93339654"
 
 :::image type="content" source="./media/query-cheat-sheet/azure-cosmos-db-cheat-sheet-a3.png" alt-text="Памятка по запросам Azure Cosmos DB формата A3 с описанием запросов и функций API-интерфейсов SQL, JavaScript, MongoDB, Gremlin и API таблиц." border="false":::
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о написании запросов см. в следующих статьях.
 * См. дополнительные сведения о [создании запросов с помощью API SQL](tutorial-query-sql-api.md), [SQL-запросах для Azure Cosmos DB](./sql-query-getting-started.md); также доступен [справочник по SQL-синтаксису](./sql-query-getting-started.md)
 * Сведения о запросах MongoDB см. в статьях, посвященных [запросам с использованием API Azure Cosmos DB для MongoDB](tutorial-query-mongodb.md) и [поддержке и синтаксису функции API Azure Cosmos DB для MongoDB](mongodb-feature-support.md).

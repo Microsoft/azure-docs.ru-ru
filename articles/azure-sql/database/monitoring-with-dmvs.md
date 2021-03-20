@@ -11,13 +11,13 @@ ms.topic: how-to
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 ms.reviewer: sstein
-ms.date: 1/14/2021
-ms.openlocfilehash: b87d0a2446eb2b65c20ae0bef408320686cb5165
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.date: 03/15/2021
+ms.openlocfilehash: 5c0de2c1589bfa495ab6ad287b998c403041674c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98219136"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104592172"
 ---
 # <a name="monitoring-microsoft-azure-sql-database-and-azure-sql-managed-instance-performance-using-dynamic-management-views"></a>Наблюдение за производительностью Базы данных SQL Microsoft Azure и Управляемого экземпляра SQL Azure с помощью динамических административных представлений
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
@@ -31,6 +31,10 @@ ms.locfileid: "98219136"
 - динамические представления управления, относящиеся к транзакциям.
 
 Подробные сведения о динамических административных представлениях см. в разделе [динамические административные представления и функции (Transact-SQL)](/sql/relational-databases/system-dynamic-management-views/system-dynamic-management-views).
+
+## <a name="monitor-with-sql-insights"></a>Мониторинг с помощью SQL Insights
+
+[Azure Monitor SQL Insights](../../azure-monitor/insights/sql-insights-overview.md) — это средство для мониторинга управляемых экземпляров Azure SQL, баз данных SQL Azure и экземпляров SQL Server на виртуальных машинах SQL Azure. Эта служба использует удаленный агент для записи данных из динамических административных представлений и направляет их в Log Analytics Azure, где их можно отслеживать и анализировать. Эти данные можно просмотреть [Azure Monitor](../../azure-monitor/overview.md) в предоставленных представлениях или получить доступ к данным журнала непосредственно для выполнения запросов и анализа тенденций. Инструкции по началу работы с Azure Monitor SQL Insights см. в разделе [Включение SQL](../../azure-monitor/insights/sql-insights-enable.md)Insights.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -769,6 +773,6 @@ CROSS APPLY sys.dm_exec_sql_text(plan_handle) AS q
 ORDER BY highest_cpu_queries.total_worker_time DESC;
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Введение в базу данных SQL Azure и Управляемый экземпляр Azure SQL](sql-database-paas-overview.md)

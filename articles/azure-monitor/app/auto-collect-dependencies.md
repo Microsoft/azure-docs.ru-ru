@@ -5,10 +5,10 @@ ms.topic: reference
 ms.custom: devx-track-dotnet
 ms.date: 05/06/2020
 ms.openlocfilehash: 8a4d79e52465e93fb4db2625217cb37a06917218
-ms.sourcegitcommit: 50802bffd56155f3b01bfb4ed009b70045131750
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91930872"
 ---
 # <a name="dependency-auto-collection"></a>Автоматический сбор зависимостей
@@ -22,7 +22,7 @@ ms.locfileid: "91930872"
 | Веб-формы ASP.NET | 4.5+ |
 | ASP.NET MVC 3 | 4+ |
 | ASP.NET WebAPI | 4.5+ |
-| ASP.NET Core | 1.1+ |
+| ASP.NET Core | 1.1+ |
 | <b>Библиотеки обмена данными</b> |
 | [HttpClient](https://www.microsoft.com/net/) | 4.5+, .NET Core 1.1+ |
 | [SqlClient](https://www.nuget.org/packages/System.Data.SqlClient) | .NET Core 1.0+, NuGet 4.3.0 |
@@ -83,9 +83,9 @@ ms.locfileid: "91930872"
 
 | Библиотеки обмена данными | Версии |
 | ------------------------|----------|
-| [XMLHttpRequest](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest) | All |
+| [XMLHttpRequest](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest) | Все |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Настройка отслеживания зависимостей для платформы [.NET](./asp-net-dependencies.md).
 - Настройка отслеживания зависимостей для [Java](./java-agent.md).

@@ -12,15 +12,15 @@ ms.workload: storage
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: conceptual
-ms.date: 02/25/2021
+ms.date: 03/10/2021
 ms.author: b-juche
 ms.custom: references_regions
-ms.openlocfilehash: 4d4cf7a0dc73070f4f48ed87f60a2458bc925b13
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: ac0f9e6e5e1a1988386cc85c2d7576719acbd6e6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101707359"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104590965"
 ---
 # <a name="cross-region-replication-of-azure-netapp-files-volumes"></a>Репликация Azure NetApp Files томов между регионами
 
@@ -123,6 +123,7 @@ Azure NetApp Files репликация тома поддерживается м
 * [Создание репликации тома](cross-region-replication-create-peering.md)
 * [Отображение состояния работоспособности отношения репликации](cross-region-replication-display-health-status.md)
 * [Управление аварийным восстановлением](cross-region-replication-manage-disaster-recovery.md)
+* [Изменение размера тома назначения репликации между регионами](azure-netapp-files-resize-capacity-pools-or-volumes.md#resize-a-cross-region-replication-destination-volume)
 * [Метрики репликации томов](azure-netapp-files-metrics.md#replication)
 * [Удаление репликаций томов или томов](cross-region-replication-delete.md)
 * [Устранение неполадок с репликацией между регионами](troubleshoot-cross-region-replication.md)

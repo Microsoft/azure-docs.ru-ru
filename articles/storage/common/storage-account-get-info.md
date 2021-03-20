@@ -11,10 +11,10 @@ ms.subservice: common
 ms.topic: how-to
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 0fd693573858df095b62a7a7917563141ac19c5b
-ms.sourcegitcommit: 1d6ec4b6f60b7d9759269ce55b00c5ac5fb57d32
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94579340"
 ---
 # <a name="get-storage-account-type-and-sku-name-with-net"></a>Получение имени типа учетной записи хранения и номера SKU с помощью .NET
@@ -23,21 +23,21 @@ ms.locfileid: "94579340"
 
 ## <a name="about-account-type-and-sku-name"></a>Сведения о типе учетной записи и имени SKU
 
-**Тип учетной записи** : допустимые типы учетных записей включают `BlobStorage` , `BlockBlobStorage` ,, `FileStorage` `Storage` и `StorageV2` . В разделе [Общие сведения об учетной записи хранения Azure](storage-account-overview.md) содержится дополнительная информация, включая описания различных учетных записей хранения.
+**Тип учетной записи**: допустимые типы учетных записей включают `BlobStorage` , `BlockBlobStorage` ,, `FileStorage` `Storage` и `StorageV2` . В разделе [Общие сведения об учетной записи хранения Azure](storage-account-overview.md) содержится дополнительная информация, включая описания различных учетных записей хранения.
 
-**Имя SKU** : допустимые имена SKU включают `Premium_LRS` , `Premium_ZRS` , `Standard_GRS` , `Standard_GZRS` , `Standard_LRS` ,, и `Standard_RAGRS` `Standard_RAGZRS` `Standard_ZRS` . Имена SKU учитывают регистр и являются строковыми полями в [классе SkuName](/dotnet/api/microsoft.azure.management.storage.models.skuname).
+**Имя SKU**: допустимые имена SKU включают `Premium_LRS` , `Premium_ZRS` , `Standard_GRS` , `Standard_GZRS` , `Standard_LRS` ,, и `Standard_RAGRS` `Standard_RAGZRS` `Standard_ZRS` . Имена SKU учитывают регистр и являются строковыми полями в [классе SkuName](/dotnet/api/microsoft.azure.management.storage.models.skuname).
 
 ## <a name="retrieve-account-information"></a>Получение сведений об учетной записи
 
 В следующем примере кода извлекаются и отображаются свойства учетной записи только для чтения.
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Чтобы получить тип учетной записи хранения и имя SKU, связанные с большим двоичным объектом, вызовите метод [жетаккаунтинфо](/dotnet/api/azure.storage.blobs.blobserviceclient.getaccountinfo) или [жетаккаунтинфоасинк](/dotnet/api/azure.storage.blobs.blobserviceclient.getaccountinfoasync) .
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/Account.cs" id="Snippet_GetAccountInfo":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 Чтобы получить тип учетной записи хранения и имя SKU, связанные с большим двоичным объектом, вызовите метод [жетаккаунтпропертиес](/dotnet/api/microsoft.azure.storage.blob.cloudblob.getaccountproperties) или [жетаккаунтпропертиесасинк](/dotnet/api/microsoft.azure.storage.blob.cloudblob.getaccountpropertiesasync) .
 
