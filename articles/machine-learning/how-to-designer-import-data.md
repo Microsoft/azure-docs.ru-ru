@@ -11,10 +11,10 @@ ms.date: 11/13/2020
 ms.topic: conceptual
 ms.custom: how-to, designer
 ms.openlocfilehash: a2cc0840b7ba4b26cf9f5b1219fc189230870774
-ms.sourcegitcommit: 44844a49afe8ed824a6812346f5bad8bc5455030
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97739864"
 ---
 # <a name="import-data-into-azure-machine-learning-designer"></a>Импорт данных в конструктор Машинное обучение Azure
@@ -114,6 +114,6 @@ ms.locfileid: "97739864"
 
 Если Рабочая область находится в виртуальной сети, необходимо выполнить дополнительные действия по настройке для визуализации данных в конструкторе. Дополнительные сведения об использовании хранилищ и наборов данных в виртуальной сети см. в статье [использование машинное обучение Azure Studio в виртуальной сети Azure](how-to-enable-studio-virtual-network.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Изучите основы конструктора с помощью этого [руководства: прогнозирование цены автомобилей с помощью конструктора](tutorial-designer-automobile-price-train-score.md).

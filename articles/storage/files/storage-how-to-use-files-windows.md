@@ -9,10 +9,10 @@ ms.author: rogarana
 ms.subservice: files
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: e64b7efdd430287a7a3a969c5bf62b0c0e2aec9c
-ms.sourcegitcommit: 9826fb9575dcc1d49f16dd8c7794c7b471bd3109
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94626900"
 ---
 # <a name="use-an-azure-file-share-with-windows"></a>Использование общей папки Azure в Windows
@@ -32,7 +32,7 @@ ms.locfileid: "94626900"
 | Windows Server 2012 R2 | SMB 3.0 | Да | Да |
 | Windows Server 2012 | SMB 3.0 | Да | Да |
 | Windows 7<sup>3</sup>. | SMB 2.1 | Да | нет |
-| Windows Server 2008 R2<sup>3</sup> | SMB 2.1 | Да | нет |
+| Windows Server 2008 R2<sup>3</sup> | SMB 2.1 | Да | Нет |
 
 <sup>1</sup> Windows 10, версии 1507, 1607, 1803, 1809, 1903, 1909 и 2004.  
 <sup>2</sup> Windows Server, версии 1809, 1903, 1909, 2004.  
@@ -110,7 +110,7 @@ ms.locfileid: "94626900"
 
 ![Контекстное меню для выбранного каталога](./media/storage-how-to-use-files-windows/snapshot-windows-previous-versions.png)
 
-Выберите пункт **Предыдущие версии** , чтобы просмотреть список моментальных снимков общих ресурсов для этого каталога. Вывод списка может занять несколько секунд в зависимости от скорости сети и количества моментальных снимков в каталоге.
+Выберите пункт **Предыдущие версии**, чтобы просмотреть список моментальных снимков общих ресурсов для этого каталога. Вывод списка может занять несколько секунд в зависимости от скорости сети и количества моментальных снимков в каталоге.
 
 ![Вкладка "Предыдущие версии"](./media/storage-how-to-use-files-windows/snapshot-windows-list.png)
 
@@ -119,7 +119,7 @@ ms.locfileid: "94626900"
 ![Открытый моментальный снимок](./media/storage-how-to-use-files-windows/snapshot-browse-windows.png)
 
 #### <a name="restore-from-a-previous-version"></a>Восстановление из предыдущей версии
-Нажмите кнопку **Восстановить** , чтобы рекурсивно скопировать содержимое всего каталога на момент создания моментального снимка общего ресурса в исходном расположении.
+Нажмите кнопку **Восстановить**, чтобы рекурсивно скопировать содержимое всего каталога на момент создания моментального снимка общего ресурса в исходном расположении.
 
  ![Кнопка "Восстановить" в предупреждающем сообщении](./media/storage-how-to-use-files-windows/snapshot-windows-restore.png) 
 

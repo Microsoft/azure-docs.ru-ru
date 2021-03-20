@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 02/03/2021
 ms.author: yelevin
 ms.openlocfilehash: 654ecb65068e4321b85594d96e8ca7a7f73cde7e
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99566798"
 ---
 # <a name="connect-your-alsid-for-active-directory-ad-to-azure-sentinel"></a>Подключение Алсид для Active Directory (AD) к Azure Sentinel
@@ -31,7 +31,7 @@ ms.locfileid: "99566798"
 > [!NOTE]
 > Данные будут храниться в географическом расположении рабочей области, на которой вы используете метку Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - У вас должно быть разрешение на запись в рабочей области "Sentinel" Azure.
 
@@ -190,7 +190,7 @@ ms.locfileid: "99566798"
 
 Дополнительные примеры запросов см. на вкладке **дальнейшие действия** на странице соединителя.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом документе вы узнали, как подключить Алсид для AD к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 

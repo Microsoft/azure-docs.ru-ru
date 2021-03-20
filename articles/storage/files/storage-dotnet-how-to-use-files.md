@@ -10,10 +10,10 @@ ms.author: rogarana
 ms.subservice: files
 ms.custom: devx-track-csharp
 ms.openlocfilehash: e112060db4a44884d3094a939b03ff106ba72e65
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96492205"
 ---
 # <a name="develop-for-azure-files-with-net"></a>Разработка для службы файлов Azure с помощью .NET
@@ -51,10 +51,10 @@ API | Назначение | Примечания
 В Visual Studio создайте новое консольное приложение Windows. Ниже показано, как создать консольное приложение в Visual Studio 2019. Эти же действия можно выполнить и в других версиях Visual Studio.
 
 1. Запустите Visual Studio и щелкните **Создать проект**
-1. В окне **Создание нового проекта** выберите **консольное приложение (.NET Framework)** для C#, а затем нажмите кнопку **Далее**.
+1. В окне **Создание нового проекта** выберите **консольное приложение (платформа .NET Framework)** для C#, а затем нажмите кнопку **Далее**.
 1. В окне **Настройка нового проекта** введите имя приложения и нажмите кнопку **создать**.
 
-Добавьте все примеры кода из этой статьи в `Program` класс в файле *Program.CS* .
+Добавьте все примеры кода из этой статьи в `Program` класс в файле *Program. CS* .
 
 ## <a name="use-nuget-to-install-the-required-packages"></a>Установка необходимых пакетов с помощью NuGet
 
@@ -135,7 +135,7 @@ API | Назначение | Примечания
 
 ## <a name="add-using-directives"></a>Добавление директив using
 
-В **Обозреватель решений** откройте файл *Program.CS* и добавьте следующие директивы using в начало файла.
+В **Обозреватель решений** откройте файл *Program. CS* и добавьте следующие директивы using в начало файла.
 
 # <a name="net-v12"></a>[\..NET (версии 12)](#tab/dotnet)
 
@@ -156,7 +156,7 @@ using Microsoft.Azure.Storage.File; // Namespace for Azure Files
 
 ## <a name="access-the-file-share-programmatically"></a>Доступ к общей папке программным путем
 
-В файле *Program.CS* добавьте следующий код для программного доступа к общей папке.
+В файле *Program. CS* добавьте следующий код для программного доступа к общей папке.
 
 # <a name="net-v12"></a>[\..NET (версии 12)](#tab/dotnet)
 
@@ -559,7 +559,7 @@ CloudFileShare mySnapshot = fClient.GetShareReference(baseShareName, snapshotTim
 
 # <a name="net-v11"></a>[\..NET (версии 11)](#tab/dotnetv11)
 
-Сначала добавьте следующие `using` директивы в файл *Program.CS* вместе с добавленными выше.
+Сначала добавьте следующие `using` директивы в файл *Program. CS* вместе с добавленными выше.
 
 ```csharp
 using Microsoft.Azure.Storage.File.Protocol;

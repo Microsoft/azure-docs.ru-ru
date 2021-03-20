@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 03/10/2020
 ms.author: shsha
 ms.openlocfilehash: 3be079b97c2660437344f88203fdda06cc6d6740
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86258980"
 ---
 # <a name="initializer-codepackages"></a>Initializer Code Packages
@@ -28,7 +28,7 @@ ms.locfileid: "86258980"
 ## <a name="specifying-initializer-codepackages"></a>Указание содержащиеся инициализатора
 Можно пометить CodePackage как инициализатор, задав атрибуту **инициализатора** **значение true** в ServiceManifest. При наличии нескольких содержащиеся инициализатора их порядок выполнения можно указать с помощью атрибута **ексекордер** . **Ексекордер** должно быть неотрицательным целым числом и допустимым только для инициализатора содержащиеся. Сначала выполняются инициализаторы содержащиеся с более низкими значениями **ексекордер** . Если **ексекордер** не задан для инициализатора CodePackage, предполагается значение по умолчанию 0. Не задан относительный порядок выполнения инициализатора содержащиеся с тем же значением **ексекордер** .
 
-Следующий фрагмент ServiceManifest описывает три содержащиеся, которые помечены как инициализаторы. При активации ServicePackage выполняется сначала *InitCodePackage0* , так как он имеет наименьшее значение **ексекордер**. При успешном завершении (код выхода 0) для *InitCodePackage0*выполняется *InitCodePackage1* . Наконец, при успешном завершении *InitCodePackage1*выполняется *ворклоадкодепаккаже* .
+Следующий фрагмент ServiceManifest описывает три содержащиеся, которые помечены как инициализаторы. При активации ServicePackage выполняется сначала *InitCodePackage0* , так как он имеет наименьшее значение **ексекордер**. При успешном завершении (код выхода 0) для *InitCodePackage0* выполняется *InitCodePackage1* . Наконец, при успешном завершении *InitCodePackage1* выполняется *ворклоадкодепаккаже* .
 
 ```xml
 <CodePackage Name="InitCodePackage0" Version="1.0" Initializer="true" ExecOrder="0">

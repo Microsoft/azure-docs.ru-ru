@@ -7,13 +7,13 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 09/21/2020
 ms.openlocfilehash: 21e4189e56f704129710da5b1d39613c4e1b1df5
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91766899"
 ---
-# <a name="troubleshoot-database-corruption-in-azure-database-for-mysql"></a>Устранение неполадок с повреждением базы данных Azure для MySQL
+# <a name="troubleshoot-database-corruption-in-azure-database-for-mysql"></a>Устранение неполадок с повреждением базы данных в службе "База данных Azure для MySQL"
 [!INCLUDE[applies-to-single-flexible-server](includes/applies-to-single-flexible-server.md)]
 
 Повреждение базы данных может привести к простою приложения. Также важно устранить проблемы повреждения во времени, чтобы избежать потери данных. При возникновении повреждения базы данных в журналах сервера появится сообщение об ошибке: `InnoDB: Database page corruption on disk or a failed.`
@@ -39,7 +39,7 @@ ms.locfileid: "91766899"
 > - Убедитесь, что настроено правило брандмауэра для доступа к серверу с клиентского компьютера. Дополнительные сведения см. в статьях [Настройка правила брандмауэра на одном сервере](howto-manage-firewall-using-portal.md) и [Настройка правила брандмауэра на гибком сервере](flexible-server/how-to-connect-tls-ssl.md).
 > - `--ssl-cert`Если включен протокол SSL, используйте параметр SSL для mysqldump.
 
-Создайте файл резервной копии из командной строки с помощью mysqldump. Используйте эту команду:
+Создайте файл резервной копии из командной строки с помощью mysqldump. Используйте следующую команду:
 
 ```
 $ mysqldump [--ssl-cert=/path/to/pem] -h [host] -u [uname] -p[pass] [dbname] > [backupfile.sql]
@@ -85,7 +85,7 @@ mysql  --ssl-cert=</path/to/pem> -h [hostname] -u [uname] -p[pass] [db_to_restor
 $ mysql --ssl-cert=</path/to/pem> -h mydemoserver.mysql.database.azure.com -u myserveradmin -p testdb < testdb_backup.sql
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Если описанные выше действия не помогли устранить проблему, всегда можно восстановить весь сервер:
 - [Восстановление сервера в базе данных Azure для MySQL — одиночный сервер](howto-restore-server-portal.md)
 - [Восстановление сервера в базе данных Azure для MySQL — гибкого сервера](flexible-server/how-to-restore-server-portal.md)

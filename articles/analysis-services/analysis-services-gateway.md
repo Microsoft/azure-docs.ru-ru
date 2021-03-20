@@ -8,10 +8,10 @@ ms.date: 07/29/2020
 ms.author: owend
 ms.reviewer: minewiskan
 ms.openlocfilehash: 6ca96f76287482a445d8a9a1cdc441333b36efbd
-ms.sourcegitcommit: 44844a49afe8ed824a6812346f5bad8bc5455030
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97739609"
 ---
 # <a name="connecting-to-on-premises-data-sources-with-on-premises-data-gateway"></a>Подключение к локальным источникам данных с помощью локального шлюза данных
@@ -68,7 +68,7 @@ ms.locfileid: "97739609"
 * [Вопросы и ответы о локальном шлюзе данных](/data-integration/gateway/service-gateway-onprem-faq)   
 * [Использование приложения локального шлюза данных](/data-integration/gateway/service-gateway-app)   
 * [Администрирование на уровне клиента](/data-integration/gateway/service-gateway-tenant-level-admin)
-* [Настройка параметров прокси-сервера](/data-integration/gateway/service-gateway-proxy)   
+* [Настройка параметров прокси](/data-integration/gateway/service-gateway-proxy)   
 * [Настройка параметров связи](/data-integration/gateway/service-gateway-communication)   
 * [Настройка файлов журналов](/data-integration/gateway/service-gateway-log-files)   
 * [Устранение проблем](/data-integration/gateway/service-gateway-tshoot)

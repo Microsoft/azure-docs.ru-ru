@@ -10,10 +10,10 @@ ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
 ms.openlocfilehash: 7dcc0f916a15598060e034dcf62536ee13e2672e
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92320231"
 ---
 # <a name="use-azure-data-studio-to-manage-your-azure-arc-enabled-postgresql-hyperscale-server-group"></a>Использование Azure Data Studio для управления PostgreSQLной группой серверов с поддержкой дуги Azure
@@ -25,7 +25,7 @@ ms.locfileid: "92320231"
 
 [!INCLUDE [azure-arc-data-preview](../../../includes/azure-arc-data-preview.md)]
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - [Установка аздата, Azure Data Studio и Azure CLI](install-client-tools.md)
 - Установка в Azure Data Studio **[!INCLUDE [azure-data-cli-azdata](../../../includes/azure-data-cli-azdata.md)]** расширениях и **Arc Azure** , а также расширений **PostgreSQL**
@@ -68,7 +68,7 @@ ms.locfileid: "92320231"
 
 ## <a name="work-with-your-data-and-schema"></a>Работа с данными и схемой
 
-В левой части окна Azure Data Studio разверните **серверы**узлов:
+В левой части окна Azure Data Studio разверните **серверы** узлов:
 
 И выберите [Добавить подключение] и введите сведения о подключении к экземпляру PostgreSQL:
 - **Тип подключения:** PostgreSQL
@@ -88,7 +88,7 @@ ms.locfileid: "92320231"
 
 После подключения будут доступны несколько интерфейсов:
 - **Новый запрос**
-- **Создать записную книжку**
+- **Новая записная книжка**
 - **Расширение экрана сервера и просмотр и работа с объектами в базе данных**
 - **...**
 

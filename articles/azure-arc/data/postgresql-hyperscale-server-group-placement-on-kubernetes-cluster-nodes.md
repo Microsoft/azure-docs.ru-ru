@@ -10,10 +10,10 @@ ms.reviewer: mikeray
 ms.date: 02/11/2021
 ms.topic: how-to
 ms.openlocfilehash: b88b36ba8ec1d2d612adbbf19a6cf1e91fbb2cfd
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100377760"
 ---
 # <a name="azure-arc-enabled-postgresql-hyperscale-server-group-placement"></a>Размещение группы серверов PostgreSQL в службе "Дуга Azure" с поддержкой масштабирования
@@ -357,7 +357,7 @@ kubectl describe pod postgres01w-3 -n arc3
 
 Kubernetes запланировал новый модуль PostgreSQL на наименее загруженном физическом узле кластера Kubernetes.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 Чтобы максимально эффективно использовать масштабируемость и производительность масштабирования группы серверов с поддержкой ARC в Azure по горизонтали, следует избегать состязаний за ресурсы в кластере Kubernetes:
 - между PostgreSQLной группой серверов "Дуга Azure" и другими рабочими нагрузками, размещенными в том же кластере Kubernetes
@@ -368,6 +368,6 @@ Kubernetes запланировал новый модуль PostgreSQL на на
 - Масштабирование дуги Azure с включенной функцией масштабирования postgres без масштабирования Kubernetes: путем установки правильных ограничений ресурсов (запросов и ограничений в памяти и виртуальное ядро) на рабочих нагрузках, размещенных в Kubernetes (включенная в состав Azure Arc PostgreSQL Scale), вы сможете совместно использовать рабочие нагрузки на Kubernetes и снизить риск конфликтов ресурсов. Необходимо убедиться, что физические характеристики физических узлов кластера Kubernetes могут учитывать определенные вами ограничения ресурсов. Также следует убедиться, что равновесия остается в процессе развития рабочих нагрузок со временем или при добавлении дополнительных рабочих нагрузок в кластер Kubernetes.
 - Используйте механизмы Kubernetes (селектор Pod, сходство, сглаживание), чтобы повлиять на размещение модулей.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Масштабирование группы масштабируемых серверов PostgreSQL в службе "Дуга Azure" путем добавления дополнительных рабочих узлов](scale-out-postgresql-hyperscale-server-group.md)

@@ -8,10 +8,10 @@ ms.service: iot-hub
 ms.custom: subject-monitoring
 ms.date: 11/06/2020
 ms.openlocfilehash: c9e6107e981d2bae96c5d9f368c8122d3ce245f0
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100570953"
 ---
 # <a name="monitoring-azure-iot-hub"></a>Наблюдение за центром Интернета вещей Azure
@@ -301,7 +301,7 @@ Azure Monitor предоставляет метрику, *подключенны
 
 Более подробные сведения о мониторинге подключений устройств с помощью службы "Сетка событий" и Azure Monitor см. [в статье мониторинг, диагностика и устранение неполадок при отключении с помощью центра Интернета вещей Azure](iot-hub-troubleshoot-connectivity.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о метриках, журналах и других важных значениях, созданных [Service Name], см. в статье [мониторинг справочника по данным центра Интернета вещей Azure](monitor-iot-hub-reference.md) .
 

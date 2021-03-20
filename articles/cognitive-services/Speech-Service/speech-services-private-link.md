@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 02/04/2021
 ms.author: alexeyo
 ms.openlocfilehash: c9af0cda14261e8eab7f1ecc05c50a289d7ddfdb
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99559662"
 ---
 # <a name="use-speech-services-through-a-private-endpoint"></a>Использование речевых служб через закрытую конечную точку
@@ -440,7 +440,7 @@ https://my-private-link-speech.cognitiveservices.azure.com/voice/cognitiveservic
    - [Включите ведение журнала для приложения](how-to-use-logging.md) и запустите его для ведения журнала действий.
    - В файле журнала выполните поиск по запросу `SPEECH-ConnectionUrl` . В соответствующих строках `value` параметр содержит полный URL-адрес, который приложение использует для доступа к речевым службам.
 
-   Пример:
+   Пример
 
    ```
    (114917): 41ms SPX_DBG_TRACE_VERBOSE:  property_bag_impl.cpp:138 ISpxPropertyBagImpl::LogPropertyAndValue: this=0x0000028FE4809D78; name='SPEECH-ConnectionUrl'; value='wss://westeurope.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?traffictype=spx&language=en-US'
@@ -559,7 +559,7 @@ var config = SpeechConfig.FromSubscription(subscriptionKey, azureRegion);
 
 Дополнительные сведения о ценах см. на [странице цен на службу "Приватный канал" Azure](https://azure.microsoft.com/pricing/details/private-link).
 
-## <a name="learn-more"></a>Подробнее
+## <a name="learn-more"></a>Дополнительные сведения
 
 * [Приватный канал Azure](../../private-link/private-link-overview.md)
 * [пакет SDK для службы "Речь"](speech-sdk.md);

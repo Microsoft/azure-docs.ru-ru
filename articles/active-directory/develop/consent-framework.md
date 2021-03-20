@@ -13,10 +13,10 @@ ms.date: 10/21/2020
 ms.author: ryanwi
 ms.reviewer: zachowd, lenalepa, jesakowi
 ms.openlocfilehash: 74321bc75fa760727e7896f47cdfc5b2929047e5
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92366094"
 ---
 # <a name="azure-active-directory-consent-framework"></a>Платформа предоставления согласия Azure Active Directory
@@ -61,6 +61,6 @@ ms.locfileid: "92366094"
    > [!IMPORTANT]
    > Для одностраничных приложений (SPA), использующих ADAL.js, сейчас требуется предоставление явного разрешения с помощью кнопки **Предоставить разрешения**. В противном случае происходит сбой приложения при запросе маркера доступа.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения см. в руководстве по [преобразованию приложения в мультитенантное](howto-convert-app-to-be-multi-tenant.md).

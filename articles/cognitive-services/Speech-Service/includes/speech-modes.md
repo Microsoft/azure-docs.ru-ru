@@ -6,10 +6,10 @@ ms.topic: include
 ms.date: 01/22/2020
 ms.author: trbye
 ms.openlocfilehash: dc569050b78a5797808f2e2e000019ba516ba22e
-ms.sourcegitcommit: 44844a49afe8ed824a6812346f5bad8bc5455030
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97739248"
 ---
 **Интерактивный**
@@ -29,7 +29,7 @@ ms.locfileid: "97739248"
 - Воспроизведет повторное подключение и воспроизведение неподтвержденного звука.
 - Вызывается в углекислом с `StartContinuousRecognition` .
 
-**Диктофона**
+**Диктовка**
 - Позволяет пользователям указывать знаки препинания, нажимая их.
 - Вызывается в объекте углекислого, указывая `EnableDictation` для `SpeechConfig` объекта независимо от вызова API, который начинает распознавание.
 - <sup>Один кластер</sup> с `speech.fragment` несредним уровнем выводит сообщения для промежуточных результатов, три сообщения, возвращаемые стороной<sup>удаленных рабочих столов</sup> `speech.hypothesis` .

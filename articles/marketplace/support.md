@@ -8,10 +8,10 @@ author: navits09
 ms.author: navits
 ms.date: 01/19/2020
 ms.openlocfilehash: a1726b29c153bf680d29fe821ac34aa958064335
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98879247"
 ---
 # <a name="support-for-the-commercial-marketplace-program-in-partner-center"></a>Поддержка программы коммерческого рынка в центре партнеров
@@ -42,7 +42,7 @@ ms.locfileid: "98879247"
 
 1. Выбрав нужный раздел, щелкните **проверить решения**.
 
-    ![Дальнейшие действия](./media/support/next-step.png)
+    ![Следующий шаг](./media/support/next-step.png)
 
 Показаны следующие параметры.
 
@@ -103,7 +103,7 @@ ms.locfileid: "98879247"
 
     ![Экспорт файла HAR в Mozilla Firefox](media/support/firefox-network-export-har.png)
 
-### <a name="apple-safari"></a>Apple Safari;
+### <a name="apple-safari"></a>Apple Safari.
 
 Создание файла HAR с помощью **Safari**:
 

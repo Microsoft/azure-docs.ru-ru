@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 11/16/2020
 ms.author: denisgun
 ms.openlocfilehash: 295a46f6d1074ddf8422233ea3ccfa4d65c28fd8
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100571584"
 ---
 # <a name="windows-virtual-desktop-rdp-shortpath-preview"></a>Виртуальный рабочий стол RDP Шортпас (Предварительная версия)
@@ -254,7 +254,7 @@ Get-Process -id (Get-NetUDPEndpoint  -LocalPort 3390 -LocalAddress 0.0.0.0).Owni
 Мы хотели бы узнать о своих впечатлениях в этой общедоступной предварительной версии!
 * Для вопросов, запросов, комментариев и других отзывов [Используйте эту форму обратной связи](https://aka.ms/RDPShortpathFeedback).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о сетевом подключении к виртуальным рабочим столам Windows [см.](network-connectivity.md)
 * Чтобы приступить к работе со службой QoS для виртуальных рабочих столов Windows, см. статью [Реализация качества обслуживания (QoS) для виртуальных рабочих столов Windows](rdp-quality-of-service-qos.md).

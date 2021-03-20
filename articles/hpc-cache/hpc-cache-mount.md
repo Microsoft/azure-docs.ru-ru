@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 09/30/2020
 ms.author: v-erkel
 ms.openlocfilehash: 7f1d8d34d6351fc344fdb101ac8e9a96678df9d5
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91651434"
 ---
 # <a name="mount-the-azure-hpc-cache"></a>Mount the Azure HPC Cache (Подключение Azure HPC Cache)
@@ -99,7 +99,7 @@ ms.locfileid: "91651434"
 
 > Sudo Mount {*Options*} *cache_mount_address*:/*namespace_path* *local_path*
 
-Пример.
+Пример
 
 ```bash
 root@test-client:/tmp# mkdir hpccache
@@ -135,6 +135,6 @@ root@test-client:/tmp#
 
 ![снимок экрана: страница параметров >ного пространства имен на портале с выделенным полем вокруг первого столбца таблицы "путь к пространству имен"](media/view-namespace-paths.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Чтобы переместить данные в целевые объекты хранилища кэша, прочитайте статью [заполнение нового хранилища BLOB-объектов Azure](hpc-cache-ingest.md).

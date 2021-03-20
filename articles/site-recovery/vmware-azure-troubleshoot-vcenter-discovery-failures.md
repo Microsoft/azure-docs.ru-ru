@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 10/29/2019
 ms.author: mayg
 ms.openlocfilehash: 1a8471305af93194ccae7b0928685e10d4d64726
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92366668"
 ---
 # <a name="troubleshoot-vcenter-server-discovery-failures"></a>Устранение ошибок обнаружения vCenter Server
@@ -79,6 +79,6 @@ System.FormatException: Input string was not in a correct format.
 
 4. Перезапустите службу поставщика DRA.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Управление сервером конфигурации для аварийного восстановления виртуальных машин VMware](./vmware-azure-manage-configuration-server.md#refresh-configuration-server)

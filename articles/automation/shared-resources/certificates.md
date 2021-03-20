@@ -6,10 +6,10 @@ ms.subservice: shared-capabilities
 ms.date: 12/22/2020
 ms.topic: conceptual
 ms.openlocfilehash: cbf9eb6c97dcceeca5e86e8bef47a39fb685792f
-ms.sourcegitcommit: f7084d3d80c4bc8e69b9eb05dfd30e8e195994d8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97734816"
 ---
 # <a name="manage-certificates-in-azure-automation"></a>Управление сертификатами в службе автоматизации Azure
@@ -34,7 +34,7 @@ ms.locfileid: "97734816"
 
 ## <a name="internal-cmdlets-to-access-certificates"></a>Внутренние командлеты для доступа к сертификатам
 
-Приведенный в следующей таблице внутренний командлет используется для доступа к сертификатам из runbook. Этот командлет поставляется с глобальным модулем `Orchestrator.AssetManagement.Cmdlets`. Дополнительные сведения см. в статье [о внутренних командлетах](modules.md#internal-cmdlets).
+Приведенный в следующей таблице внутренний командлет используется для доступа к сертификатам из runbook. Этот командлет поставляется с глобальным модулем `Orchestrator.AssetManagement.Cmdlets`. Дополнительные сведения см. в статье [Внутренние командлеты](modules.md#internal-cmdlets).
 
 | Внутренний командлет | Описание |
 |:---|:---|
@@ -47,7 +47,7 @@ ms.locfileid: "97734816"
 
 Используйте функцию, приведенную в следующей таблице, для доступа к сертификатам в модуле Runbook Python 2 и 3. Модули Runbook Python 3 сейчас доступны в предварительной версии.
 
-| Функция | Описание |
+| Компонент | Описание |
 |:---|:---|
 | `automationassets.get_automation_certificate` | Извлекает сведения о ресурсе сертификата. |
 

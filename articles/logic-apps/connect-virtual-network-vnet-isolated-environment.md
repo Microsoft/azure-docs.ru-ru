@@ -7,10 +7,10 @@ ms.reviewer: jonfan, logicappspm
 ms.topic: conceptual
 ms.date: 12/18/2020
 ms.openlocfilehash: 315de18539bf083515658b40fa70f3c214d7c909
-ms.sourcegitcommit: 44844a49afe8ed824a6812346f5bad8bc5455030
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97739745"
 ---
 # <a name="connect-to-azure-virtual-networks-from-azure-logic-apps-by-using-an-integration-service-environment-ise"></a>Подключение к виртуальным сетям Azure из Azure Logic Apps с помощью среды службы интеграции (ISE)
@@ -42,7 +42,7 @@ ms.locfileid: "97739745"
 * Учетная запись и подписка Azure. Если у вас еще нет подписки Azure, [зарегистрируйтесь для получения бесплатной учетной записи Azure](https://azure.microsoft.com/free/).
 
   > [!IMPORTANT]
-  > Приложения логики, встроенные триггеры и соединители, которые выполняются в среде службы интеграции, используют ценовой план, отличный от плана, рассчитанного на потребление. Сведения о ценах и выставлении счетов для сред ISE см. в статье [Модель ценообразования для Azure Logic Apps](../logic-apps/logic-apps-pricing.md#fixed-pricing). Сведения о тарифах см. на странице [цен на Logic Apps](../logic-apps/logic-apps-pricing.md).
+  > Приложения логики, встроенные триггеры и соединители, которые выполняются в среде службы интеграции, используют ценовой план, отличный от плана, рассчитанного на потребление. Сведения о ценах и выставлении счетов для сред ISE см. в статье [Модель ценообразования для Azure Logic Apps](../logic-apps/logic-apps-pricing.md#fixed-pricing). Сведения о тарифах см. на странице [цен на Logic Apps](../logic-apps/logic-apps-pricing.md).
 
 * [Виртуальная сеть Azure](../virtual-network/virtual-networks-overview.md) с четырьмя *пустыми* подсетями, которые необходимы для создания и развертывания ресурсов в интегрированной среде сценариев и используются этими внутренними и скрытыми компонентами:
 
