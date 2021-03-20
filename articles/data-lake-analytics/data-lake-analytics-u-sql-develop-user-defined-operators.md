@@ -6,10 +6,10 @@ ms.reviewer: jasonh
 ms.topic: how-to
 ms.date: 12/05/2016
 ms.openlocfilehash: 11efdb727bacadb674fb49374ef1c70fcc788ecc
-ms.sourcegitcommit: 8d8deb9a406165de5050522681b782fb2917762d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92219995"
 ---
 # <a name="develop-u-sql-user-defined-operators-udos"></a>Разработка определяемых пользователем операторов U-SQLU (UDO)
@@ -20,7 +20,7 @@ ms.locfileid: "92219995"
 ### <a name="to-create-and-submit-a-u-sql-job"></a>Создание и отправка задания U-SQL
 
 1. В Visual Studio выберите **Файл > Создать > Проект > Проект U-SQL**.
-2. Нажмите кнопку **ОК**. Visual Studio создаст решение с помощью файла Script.usql.
+2. Нажмите кнопку **OK**. Visual Studio создаст решение с помощью файла Script.usql.
 3. В **обозревателе решений** разверните узел Script.usql и дважды щелкните файл **Script.usql.cs**.
 4. Вставьте в файл приведенный ниже код.
 

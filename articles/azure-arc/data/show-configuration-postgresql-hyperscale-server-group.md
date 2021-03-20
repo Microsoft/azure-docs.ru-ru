@@ -11,10 +11,10 @@ ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
 ms.openlocfilehash: a268cd6b2fa3da6846554e3d1b170298abec7f18
-ms.sourcegitcommit: 58f12c358a1358aa363ec1792f97dae4ac96cc4b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93279407"
 ---
 # <a name="show-the-configuration-of-an-arc-enabled-postgresql-hyperscale-server-group"></a>Отображение конфигурации PostgreSQL, включенной в группу серверов масштабирования.
@@ -36,7 +36,7 @@ ms.locfileid: "93279407"
 kubectl get postgresqls [-n <namespace name>]
 ```
 
-Выходные данные этой команды показывают список созданных групп серверов. Для каждого из них указывается число модулей Pod. Например:
+Выходные данные этой команды показывают список созданных групп серверов. Для каждого из них указывается число модулей Pod. Пример:
 
 ```output
 NAME                                             STATE   READY-PODS   EXTERNAL-ENDPOINT   AGE
@@ -48,13 +48,13 @@ postgresql-12.arcdata.microsoft.com/postgres02   Ready   3/3          10.0.0.4:3
 
 ### <a name="what-pods-are-used-by-azure-arc-enabled-postgresql-hyperscale-server-groups"></a>Какие модули используются в службе "Дуга Azure" с PostgreSQL масштабируемыми группами серверов?
 
-Выполните:
+Выполните команду:
 
 ```console
 kubectl get pods [-n <namespace name>]
 ```
 
-Он возвращает список модулей Pod. Вы увидите модули, используемые группами серверов, на основе имен, присвоенных этим группам серверов. Например:
+Он возвращает список модулей Pod. Вы увидите модули, используемые группами серверов, на основе имен, присвоенных этим группам серверов. Пример:
 
 ```console 
 NAME                 READY   STATUS    RESTARTS   AGE
@@ -108,7 +108,7 @@ kubectl get pvc [-n <namespace name>]
 - `data-`... — это PVC, используемый для файлов данных.
 - `logs-`... — это PVC, используемый для файлов журналов транзакций и WAL.
 
-Например:
+Пример:
 
 ```output
 NAME                                            STATUS   VOLUME              CAPACITY   ACCESS MODES   STORAGECLASS    AGE
@@ -183,7 +183,7 @@ logs-few7hh0k4npx9phsiobdc3hq-postgres01-2      Bound    local-pv-5ccd02e6   193
 kubectl describe <CRD name>/<server group name> [-n <namespace name>]
 ```
 
-Например:
+Пример:
 
 ```console
 kubectl describe postgresql-12/postgres02
@@ -289,7 +289,7 @@ Events:               <none>
 azdata arc postgres server show -n <server group name>
 ```
 
-Например:
+Пример:
 
 ```console
 azdata arc postgres server show -n postgres02

@@ -16,10 +16,10 @@ ms.author: markvi
 ms.reviewer: dhanyahk
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 23bd7a26bc6215f50a2860ab4aac84f1b46301f5
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92308942"
 ---
 # <a name="remediate-users-flagged-for-risk-in-the-azure-active-directory-portal"></a>Применение защитных мер к пользователям, находящимся в группе риска на портале Azure Active Directory
@@ -55,7 +55,7 @@ ms.locfileid: "92308942"
 4.  В меню навигации слева щелкните **Azure Active Directory**. 
 5.  В области навигации выберите **Пользователи, находящиеся в группе риска** в разделе **Безопасность**.
 
-## <a name="remediation-actions"></a>Действия исправления
+## <a name="remediation-actions"></a>Действия по исправлению
 
 Выполните следующие действия, чтобы устранить проблемы, связанные с затронутыми учетными записями, и защитить среду.
 

@@ -9,10 +9,10 @@ ms.reviewer: jonfan, estfan, logicappspm
 ms.topic: article
 ms.date: 07/08/2016
 ms.openlocfilehash: 038c1d4c0f0b5ffd7b9aabea2de32e3a44e3b221
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97654138"
 ---
 # <a name="create-maps-that-transform-xml-between-formats-in-azure-logic-apps-with-enterprise-integration-pack"></a>Создание преобразований или сопоставлений, которые изменяют форматы данных XML в Azure Logic Apps с Пакетом интеграции Enterprise
@@ -30,7 +30,7 @@ ms.locfileid: "97654138"
 
 **Ниже приведены указания по использованию преобразования**.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 * Создание учетной записи интеграции и добавление карты в нее  
 

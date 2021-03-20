@@ -14,10 +14,10 @@ ms.date: 07/29/2020
 ms.author: ryanwi
 ms.reviewer: paulgarn, hirsin, jeedes, luleon
 ms.openlocfilehash: 0127c8d796126d1e99b1fa38a9506df477c7eb49
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98755725"
 ---
 # <a name="using-directory-schema-extension-attributes-in-claims"></a>Использование атрибутов расширения схемы каталога в заявках
@@ -71,6 +71,6 @@ ms.locfileid: "98755725"
 >
 > Параметр ID в схеме утверждений, используемой для встроенных атрибутов каталога, — это "ExtensionID" для атрибутов расширения каталога.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Узнайте, как [добавить настраиваемые или дополнительные утверждения в токены SAML 2,0 и JSON Web tokens (JWT)](active-directory-optional-claims.md).
 - Узнайте, как [настроить утверждения, созданные в токенах для конкретного приложения](active-directory-claims-mapping.md).

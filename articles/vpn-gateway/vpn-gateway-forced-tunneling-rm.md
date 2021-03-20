@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 12/07/2020
 ms.author: cherylmc
 ms.openlocfilehash: c12297019b49d7b3cb644ae9c7a904e4ca697f0b
-ms.sourcegitcommit: 48cb2b7d4022a85175309cf3573e72c4e67288f5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96855045"
 ---
 # <a name="configure-forced-tunneling"></a>Настройка принудительного туннелирования

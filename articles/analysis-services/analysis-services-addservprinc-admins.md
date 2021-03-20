@@ -9,10 +9,10 @@ ms.author: owend
 ms.reviewer: minewiskan
 ms.custom: fasttrack-edit
 ms.openlocfilehash: b1d5f8ec628245756c53e4dfeeecdeb3a4bebc2e
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93100734"
 ---
 # <a name="add-a-service-principal-to-the-server-administrator-role"></a>Добавление субъекта-службы к роли администратора сервера 
@@ -33,12 +33,12 @@ ms.locfileid: "93100734"
 Вы можете настроить администраторов сервера с помощью SQL Server Management Studio (SSMS). Для выполнения этой задачи вам потребуются разрешения [администратора сервера](analysis-services-server-admins.md) на сервере Azure Analysis Services. 
 
 1. В среде SSMS подключитесь к серверу Azure Analysis Services.
-2. Выберите **Свойства сервера** > **Безопасность** и нажмите кнопку **Добавить** .
-3. В окне **Выберите пользователя или группу** выполните поиск своего зарегистрированного приложения по имени, выберите его и нажмите кнопку **Добавить** .
+2. Выберите **Свойства сервера** > **Безопасность** и нажмите кнопку **Добавить**.
+3. В окне **Выберите пользователя или группу** выполните поиск своего зарегистрированного приложения по имени, выберите его и нажмите кнопку **Добавить**.
 
     ![Поиск учетной записи субъекта-службы](./media/analysis-services-addservprinc-admins/aas-add-sp-ssms-picker.png)
 
-4. Проверьте идентификатор учетной записи субъекта-службы и нажмите кнопку **ОК** .
+4. Проверьте идентификатор учетной записи субъекта-службы и нажмите кнопку **ОК**.
     
     ![Снимок экрана, на котором показан идентификатор учетной записи субъекта-службы, и нажата кнопка "ОК".](./media/analysis-services-addservprinc-admins/aas-add-sp-ssms-add.png)
 

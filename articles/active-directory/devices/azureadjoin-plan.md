@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: sandeo
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3acaf4929158b24ff50655aa18c05b41aeec4b53
-ms.sourcegitcommit: 5e5a0abe60803704cf8afd407784a1c9469e545f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96435456"
 ---
 # <a name="how-to-plan-your-azure-ad-join-implementation"></a>Инструкции. Планирование реализации присоединения к Azure AD
@@ -24,7 +24,7 @@ ms.locfileid: "96435456"
 
 В этой статье содержатся сведения, необходимые для планирования реализации присоединения к Azure AD.
  
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Предполагается, что вы ознакомлены с [общими сведениями об управлении устройствами в Azure Active Directory](./overview.md).
 

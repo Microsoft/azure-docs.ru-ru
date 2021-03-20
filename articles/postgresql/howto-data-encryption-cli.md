@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 03/30/2020
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 757782e8842fbcaca9c8d95ec8086dd5791a817b
-ms.sourcegitcommit: 80034a1819072f45c1772940953fef06d92fefc8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93240619"
 ---
 # <a name="data-encryption-for-azure-database-for-postgresql-single-server-by-using-the-azure-cli"></a>Шифрование данных для одного сервера базы данных Azure для PostgreSQL с помощью Azure CLI
@@ -46,10 +46,10 @@ ms.locfileid: "93240619"
       az keyvault update --name <key_vault_name> --resource-group <resource_group_name>  --enable-purge-protection true
       ```
 
-* Ключ должен иметь следующие атрибуты для использования в качестве ключа, управляемого клиентом:
+* Чтобы использовать ключ в качестве управляемого клиентом, он должен иметь следующие атрибуты:
   * без даты окончания срока действия;
   * не отключено;
-  * Выполнение операций **получения** , переноса **и распаковки** **wrap**
+  * Выполнение операций **получения**, переноса **и распаковки** 
 
 ## <a name="set-the-right-permissions-for-key-operations"></a>Задайте правильные разрешения для операций с ключами.
 
@@ -67,7 +67,7 @@ ms.locfileid: "93240619"
     az postgres server update --resource-group <resource_group> --name <server_name> --assign-identity
     ```
 
-2. Задайте **разрешения ключа** ( **Get** , **Wrap** , **Unwrap** ) для **участника** , который представляет собой имя сервера PostgreSQL с одним сервером.
+2. Задайте **разрешения ключа** (**Get**, **Wrap**, **Unwrap**) для **участника**, который представляет собой имя сервера PostgreSQL с одним сервером.
 
     ```azurecli-interactive
     az keyvault set-policy --name -g <resource_group> --key-permissions get unwrapKey wrapKey --object-id <principal id of the server>

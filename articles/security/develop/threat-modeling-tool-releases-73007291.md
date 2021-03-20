@@ -7,17 +7,17 @@ ms.service: security
 ms.topic: article
 ms.date: 07/29/2020
 ms.openlocfilehash: 3e6fcd52ad9cb6c127c14bac2f33223fb921519e
-ms.sourcegitcommit: 5831eebdecaa68c3e006069b3a00f724bea0875a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94516379"
 ---
 # <a name="threat-modeling-tool-update-release-73007291---07292020"></a>Threat Modeling Tool обновления выпуска 7.3.00729.1 — 07/29/2020
 
 Версия 7.3.00729.1 Microsoft Threat Modeling Tool (ТМТ) была выпущена 29 2020 июля и содержит следующие изменения:
 
-- Исправленные ошибки
+- Исправления ошибок
  
 ## <a name="known-issues"></a>Известные проблемы
 
@@ -33,7 +33,7 @@ The threat model file '$PATH\TMT7.application' could not be deserialized. File i
 
 Эта ошибка возникает из-за того, что некоторые браузеры изначально не поддерживают установку ClickOnce. В таких случаях файл приложения ClickOnce загружается на жесткий диск пользователя.
 
-#### <a name="workaround"></a>Возможное решение
+#### <a name="workaround"></a>Обходной путь
 
 Эта ошибка будет отображаться, если Threat Modeling Tool запускается двойным щелчком по файлу TMT7. Application. Однако после обойти ошибку средство будет работать нормально. Вместо того чтобы запускать Threat Modeling Tool, дважды щелкнув файл TMT7. Application, пользователи должны использовать ярлыки, созданные в меню Windows во время установки, чтобы запустить Threat Modeling Tool.
 

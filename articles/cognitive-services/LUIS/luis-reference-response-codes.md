@@ -10,10 +10,10 @@ ms.subservice: language-understanding
 ms.topic: reference
 ms.date: 03/04/2019
 ms.openlocfilehash: 46a7fff86d3a8c4539b77a0f271179d68e7a26d2
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91541685"
 ---
 # <a name="common-api-response-codes-and-their-meaning"></a>Стандартные коды ответа API и их значение
@@ -23,7 +23,7 @@ API-интерфейсы [разработки](https://go.microsoft.com/fwlink/
 ## <a name="common-status-codes"></a>Распространенные коды состояний
 В следующей таблице перечислены некоторые наиболее распространенные коды состояний ответов HTTP для API-интерфейсов [разработки](https://go.microsoft.com/fwlink/?linkid=2092087) и [конечных точек](https://go.microsoft.com/fwlink/?linkid=2092356).
 
-|Код|API|Объяснение|
+|Код|API|Пояснение|
 |:--|--|--|
 |400|Разработки, конечных точек|Параметры запроса указаны неправильно. Это означает, что требуемые параметры отсутствуют, имеют неправильный формат или слишком большой размер|
 |400|Разработки, конечных точек|Текст запроса указан неправильно. Это означает, что JSON отсутствует, имеет неправильный формат или слишком большой размер|
@@ -38,6 +38,6 @@ API-интерфейсы [разработки](https://go.microsoft.com/fwlink/
 |414|Конечная точка|В запросе превышено максимально допустимое количество символов|
 |429|Разработки, конечных точек|Превышено ограничение скорости (запросов в секунду)|
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Документация по [разработке](https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f) и [конечной точке](https://westus.dev.cognitive.microsoft.com/docs/services/5819c76f40a6350ce09de1ac/operations/5819c77140a63516d81aee78) REST API

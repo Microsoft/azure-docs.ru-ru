@@ -8,10 +8,10 @@ ms.date: 04/22/2020
 ms.author: mingshen
 author: mingshen-ms
 ms.openlocfilehash: d015cec30e516541b50c2acfac38fad898965e1b
-ms.sourcegitcommit: 5e5a0abe60803704cf8afd407784a1c9469e545f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96436357"
 ---
 # <a name="managed-application-metered-billing"></a>Выставленный счет за контролируемое приложение 

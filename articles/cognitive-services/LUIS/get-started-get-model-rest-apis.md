@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 11/30/2020
 zone_pivot_groups: programming-languages-set-one
 ms.openlocfilehash: 7346037ad804da4f68a2bc6512494c461d7fc5bd
-ms.sourcegitcommit: 5e5a0abe60803704cf8afd407784a1c9469e545f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96436187"
 ---
 # <a name="how-to-change-the-luis-model-with-rest-apis"></a>Изменение модели LUIS с помощью REST API

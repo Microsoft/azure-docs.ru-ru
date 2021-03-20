@@ -9,10 +9,10 @@ ms.date: 09/25/2020
 ms.author: albecker1
 ms.custom: include file
 ms.openlocfilehash: 4770ac0181c64ef800aa02ba87284c8add357e36
-ms.sourcegitcommit: 59f506857abb1ed3328fda34d37800b55159c91d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92518086"
 ---
 Эта статья поможет уточнить производительность диска и способ ее работы при объединении виртуальных машин Azure и дисков Azure. Здесь также описывается, как можно диагностировать узкие места для дисковых операций ввода-вывода и изменения, которые можно сделать для оптимизации производительности.

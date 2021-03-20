@@ -12,10 +12,10 @@ ms.author: bonova
 ms.reviewer: sstein
 ms.date: 06/26/2019
 ms.openlocfilehash: ea037d12417c8fad9d80b77df69285ed2c8df31b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91618664"
 ---
 # <a name="getting-started-with-temporal-tables-in-azure-sql-database-and-azure-sql-managed-instance"></a>Начало работы с временными таблицами в базе данных SQL Azure и Azure SQL Управляемый экземпляр
@@ -198,7 +198,7 @@ ALTER TABLE dbo.WebsiteUserInfo
 - [секционирование таблиц;](/sql/relational-databases/tables/manage-retention-of-historical-data-in-system-versioned-temporal-tables#using-table-partitioning-approach)
 - [пользовательский сценарий очистки.](/sql/relational-databases/tables/manage-retention-of-historical-data-in-system-versioned-temporal-tables#using-custom-cleanup-script-approach)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о временных таблицах см. в разделе Извлечение [временных таблиц](/sql/relational-databases/tables/temporal-tables).
 - Посетите канал 9, чтобы услышать [историю успеха реализации клиента](https://channel9.msdn.com/Blogs/jsturtevant/Azure-SQL-Temporal-Tables-with-RockStep-Solutions) , и просмотрите [действующую временную демонстрацию](https://channel9.msdn.com/Shows/Data-Exposed/Temporal-in-SQL-Server-2016).

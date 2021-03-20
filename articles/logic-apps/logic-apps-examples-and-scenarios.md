@@ -7,10 +7,10 @@ ms.reviewer: klam, logicappspm
 ms.topic: conceptual
 ms.date: 02/28/2020
 ms.openlocfilehash: 5f7afe044ab4f782f2028598c2c56e75edf95860
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92317378"
 ---
 # <a name="common-scenarios-examples-tutorials-and-walkthroughs-for-azure-logic-apps"></a>Распространенные сценарии, примеры, учебники и пошаговые руководства для Azure Logic Apps
@@ -31,7 +31,7 @@ ms.locfileid: "92317378"
 
 * Триггеры *опроса* :
 
-  * [Триггер **повторения** ](../connectors/connectors-native-recurrence.md) позволяет задать дату и время начала, а также повторение для срабатывания приложения логики. Например, вы можете выбрать дни недели и время суток для запуска приложения логики. Дополнительные сведения см. в следующих статьях:<p>
+  * [Триггер **повторения**](../connectors/connectors-native-recurrence.md) позволяет задать дату и время начала, а также повторение для срабатывания приложения логики. Например, вы можете выбрать дни недели и время суток для запуска приложения логики. Дополнительные сведения см. в следующих статьях:<p>
 
     * [Планирование и выполнение повторяющихся автоматизированных задач, процессов и рабочих процессов с помощью Azure Logic Apps](../logic-apps/concepts-schedule-automated-recurring-tasks-workflows.md)
     * [Учебник. Создание автоматических повторяющихся рабочих процессов на основе расписания с помощью Azure Logic Apps](../logic-apps/tutorial-build-schedule-recurring-logic-app-workflow.md)
@@ -46,11 +46,11 @@ ms.locfileid: "92317378"
     * [Руководство по созданию автоматических рабочих процессов на основе утверждений с помощью Azure Logic Apps](../logic-apps/tutorial-process-mailing-list-subscriptions-workflow.md)
     * [Руководство по Автоматизация задач обработки сообщений электронной почты с помощью Azure Logic Apps, Функций Azure и службы хранилища Azure](../logic-apps/tutorial-process-email-attachments-workflow.md)
 
-  * Триггер [ **http** ](../connectors/connectors-native-http.md) может вызывать конечную точку службы по протоколу HTTP или HTTPS. Дополнительные сведения см. в разделе [вызов, активация или вложение рабочих процессов с помощью конечных точек HTTP](../logic-apps/logic-apps-http-endpoint.md).
+  * Триггер [ **http**](../connectors/connectors-native-http.md) может вызывать конечную точку службы по протоколу HTTP или HTTPS. Дополнительные сведения см. в разделе [вызов, активация или вложение рабочих процессов с помощью конечных точек HTTP](../logic-apps/logic-apps-http-endpoint.md).
 
 * Триггеры *push-уведомлений* :
 
-  * Триггер [ **запроса** ](../connectors/connectors-native-reqres.md) может принимать входящие HTTPS запросы.
+  * Триггер [ **запроса**](../connectors/connectors-native-reqres.md) может принимать входящие HTTPS запросы.
 
   * [Триггер **Веб-перехватчик HTTP**](../connectors/connectors-native-webhook.md) подписывается на конечную точку службы, регистрируя в ней свой *URL-адрес обратного вызова*. В этом сценарии служба сама уведомляет триггер о том, что произошло указанное событие, то есть триггер может не опрашивать службу.
 
@@ -99,7 +99,7 @@ ms.locfileid: "92317378"
 
 Можно полностью разработать и развернуть приложения логики с помощью Visual Studio, Azure DevOps или любых других инструментов системы управления версиями и автоматической сборки. Для поддержки развертывания рабочих процессов и зависимых подключений в шаблоне ресурсов приложения логики используют шаблоны развертывания ресурсов Azure. Средства Visual Studio автоматически создают эти шаблоны, которые можно записать после изменения в систему управления версиями для управления версиями. Для ведения журналов уведомлений и диагностики состояния рабочего процесса служба Azure Logic Apps обеспечивает средства мониторинга и уведомления.
 
-### <a name="deploy"></a>Развертывание
+### <a name="deploy"></a>Развернуть
 
 * [Краткое руководство. Создание автоматизированных задач, процессов и рабочих процессов с помощью Azure Logic Apps — Visual Studio](../logic-apps/quickstart-create-logic-apps-with-visual-studio.md)
 * [Обзор: Автоматизация развертывания приложений логики](../logic-apps/logic-apps-azure-resource-manager-templates-overview.md)

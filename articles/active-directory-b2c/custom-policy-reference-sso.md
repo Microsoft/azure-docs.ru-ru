@@ -12,10 +12,10 @@ ms.date: 12/07/2020
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: f690f4a416e86b02de0d35fc673849c1293df577
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102095771"
 ---
 # <a name="single-sign-on-session-management-in-azure-active-directory-b2c"></a>Управление сеансами единого входа в Azure Active Directory B2C
@@ -28,7 +28,7 @@ ms.locfileid: "102095771"
 
 |Поставщик сеанса  |Область  |
 |---------|---------|
-|[NoopSSOSessionProvider](#noopssosessionprovider)     |  None       |       
+|[NoopSSOSessionProvider](#noopssosessionprovider)     |  Нет       |       
 |[DefaultSSOSessionProvider](#defaultssosessionprovider)    | Azure AD B2C диспетчер внутренних сеансов.      |       
 |[ExternalLoginSSOSessionProvider](#externalloginssosessionprovider)     | Между Azure AD B2C и OAuth1, OAuth2 или OpenID Connect Connect Identity Provider.        |         |
 |[OAuthSSOSessionProvider](#oauthssosessionprovider)     | Между приложением проверяющей стороны OAuth2 или OpenID Connect и Azure AD B2C.        |        

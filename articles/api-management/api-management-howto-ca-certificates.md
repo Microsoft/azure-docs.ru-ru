@@ -13,10 +13,10 @@ ms.topic: article
 ms.date: 08/20/2018
 ms.author: apimpm
 ms.openlocfilehash: 124bc053aa2c6e59e205bb6f33a9a96190799499
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93102043"
 ---
 # <a name="how-to-add-a-custom-ca-certificate-in-azure-api-management"></a>Добавление пользовательского сертификата ЦС в службе управления API Azure
@@ -37,9 +37,9 @@ ms.locfileid: "93102043"
 
 1. На портале Azure перейдите к экземпляру службы управления API Azure.
 
-2. В меню выберите **Сертификаты ЦС** .
+2. В меню выберите **Сертификаты ЦС**.
 
-3. Щелкните **+ Добавить** .  
+3. Щелкните **+ Добавить**.  
 
     ![Снимок экрана, на котором показана кнопка "+ Добавить" для добавления сертификата ЦС.](media/api-management-howto-ca-certificates/01.png)  
 
@@ -47,7 +47,7 @@ ms.locfileid: "93102043"
 
     ![Снимок экрана, на котором показано, как найти сертификат.](media/api-management-howto-ca-certificates/02.png)  
 
-5. Выберите команду **Сохранить** . Это может занять несколько минут.
+5. Выберите команду **Сохранить**. Это может занять несколько минут.
 
     ![Снимок экрана, показывающий, как сохранить сертификат.](media/api-management-howto-ca-certificates/03.png)  
 

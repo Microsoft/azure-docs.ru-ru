@@ -7,10 +7,10 @@ ms.service: security
 ms.topic: article
 ms.date: 03/22/2020
 ms.openlocfilehash: e182d40d20529b5743fa9105c68108a8ae55d943
-ms.sourcegitcommit: 5831eebdecaa68c3e006069b3a00f724bea0875a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94516906"
 ---
 # <a name="threat-modeling-tool-update-release-73003161---03222020"></a>Threat Modeling Tool обновления выпуска 7.3.00316.1 — 03/22/2020
@@ -18,7 +18,7 @@ ms.locfileid: "94516906"
 Версия 7.3.00316.1 Microsoft Threat Modeling Tool (ТМТ) была выпущена 22 2020 марта и содержит следующие изменения:
 
 - Улучшение специальных возможностей
-- Исправленные ошибки
+- Исправления ошибок
 - Новая функция Диаграмреадер
 
 ## <a name="notable-bug-fixes"></a>Исправления важных ошибок
@@ -32,7 +32,7 @@ ms.locfileid: "94516906"
 - Меню справки в основном рабочем процессе (создание, открытие и анализ) и интерфейс редактора шаблонов теперь имеют единообразные параметры меню.
 - На панели "наборы элементов" теперь имеется стандартный курсор и добавлены соответствующие метки.
 
-## <a name="new-features"></a>Новые функции
+## <a name="new-features"></a>новые функции;
 
 ### <a name="diagramreader-feature-has-been-added"></a>Добавлена функция Диаграмреадер
 

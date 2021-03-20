@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 08/31/2020
 ms.author: aahi
 ms.openlocfilehash: e65bb7c7d8fc04baec6b50a53519e689e748fbe1
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96012175"
 ---
 # <a name="configure-speech-service-containers"></a>Настройка контейнеров службы речи
@@ -81,7 +81,7 @@ ms.locfileid: "96012175"
 | Необязательно | Имя | Тип данных | Описание |
 | -------- | ---- | --------- | ----------- |
 | Нельзя использовать | `Input` | Строка | Стандартные контейнеры распознавания речи этого не используют. Пользовательские контейнеры распознавания речи используют [подключения томов](#volume-mount-settings).                                                                                    |
-| Необязательный | `Output` | Строка | Цель выходного подключения. Значение по умолчанию — `/output`. Это расположение файлов журналов. Сюда входят журналы контейнера. <br><br>Пример.<br>`--mount type=bind,src=c:\output,target=/output` |
+| Необязательный | `Output` | Строка | Цель выходного подключения. Значение по умолчанию — `/output`. Это расположение файлов журналов. Сюда входят журналы контейнера. <br><br>Пример<br>`--mount type=bind,src=c:\output,target=/output` |
 
 ## <a name="volume-mount-settings"></a>Параметры подключения тома
 
@@ -104,7 +104,7 @@ ms.locfileid: "96012175"
 Эта команда подключает каталог _к:\инпут_ главного компьютера к каталогу Containers _/УСР/локал/Моделс_ .
 
 > [!IMPORTANT]
-> Параметры подключения тома применимы только к контейнерам " **пользовательское распознавание речи-текст** " и " **пользовательские преобразования текста в речь** ". В контейнерах преобразования текста **в речь** и **нейронных текстовых подсетей** не **Text-to-speech** используются подключения томов.
+> Параметры подключения тома применимы только к контейнерам " **пользовательское распознавание речи-текст** " и " **пользовательские преобразования текста в речь** ". В контейнерах преобразования текста **в речь** и **нейронных текстовых подсетей** не  используются подключения томов.
 
 ## <a name="example-docker-run-commands"></a>Примеры команд docker run
 
@@ -153,7 +153,7 @@ ApiKey={API_KEY} \
 Logging:Console:LogLevel:Default=Information
 ```
 
-## <a name="custom-speech-to-text"></a>[Пользовательское распознавание речи к тексту](#tab/cstt)
+## <a name="custom-speech-to-text"></a>[пользовательское преобразование речи в текст;](#tab/cstt)
 
 ### <a name="basic-example-for-custom-speech-to-text"></a>Базовый пример для Пользовательское распознавание речи в текст
 
@@ -230,7 +230,7 @@ ApiKey={API_KEY} \
 Logging:Console:LogLevel:Default=Information
 ```
 
-## <a name="neural-text-to-speech"></a>[Преобразование текста в речь для нейронов](#tab/ntts)
+## <a name="neural-text-to-speech"></a>[нейронное преобразование текста в речь;](#tab/ntts)
 
 ### <a name="basic-example-for-neural-text-to-speech"></a>Базовый пример преобразования текста нейронной речи в речь
 
@@ -278,6 +278,6 @@ Logging:Console:LogLevel:Default=Information
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Изучите статью об [установке и запуске контейнеров](speech-container-howto.md).
