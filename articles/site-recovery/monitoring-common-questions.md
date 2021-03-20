@@ -9,10 +9,10 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 ms.author: raynew
 ms.openlocfilehash: 66ce267581d4748ea51a3dcbd7caa61907115cc1
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "82131157"
 ---
 # <a name="common-questions-about-site-recovery-monitoring"></a>Распространенные вопросы о мониторинге Site Recovery
@@ -62,7 +62,7 @@ Site Recovery использует многоэтапный асинхронны
 
 ### <a name="how-long-is-data-kept-in-azure-monitor-logs"></a>Как долго данные хранятся в журналах Azure Monitor? 
 
-По умолчанию срок хранения составляет 31 день. Вы можете увеличить период в разделе **использование и оценка затрат** в рабочей области log Analytics. Щелкните **срок хранения данных**и выберите диапазон.
+По умолчанию срок хранения составляет 31 день. Вы можете увеличить период в разделе **использование и оценка затрат** в рабочей области log Analytics. Щелкните **срок хранения данных** и выберите диапазон.
 
 ### <a name="whats-the-size-of-the-resource-logs"></a>Каков размер журналов ресурсов? 
 

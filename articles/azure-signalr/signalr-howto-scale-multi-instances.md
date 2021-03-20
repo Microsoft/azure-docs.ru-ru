@@ -8,10 +8,10 @@ ms.custom: devx-track-csharp
 ms.date: 03/27/2019
 ms.author: zhshang
 ms.openlocfilehash: fd6ac8c4d4fc4c3fec4f549f8ef4f955e2b1c637
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89439220"
 ---
 # <a name="how-to-scale-signalr-service-with-multiple-instances"></a>Как масштабировать службу SignalR с несколькими экземплярами?
@@ -236,7 +236,7 @@ app.MapAzureSignalR(GetType().FullName, hub, options => {
 
 ![Отработка отказа](./media/signalr-howto-scale-multi-instances/failover_negotiate.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом руководство вы узнали, как настроить несколько экземпляров в одном приложении для масштабирования, сегментирования и использования в разных регионах.
 

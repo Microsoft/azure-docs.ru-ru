@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: ad95cefbdf839c28b0979b051e217a1dfec76eea
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98743242"
 ---
 # <a name="enable-remote-desktop-connection-for-a-role-in-azure-cloud-services-classic-using-visual-studio"></a>Включение подключение к удаленному рабочему столу для роли в облачных службах Azure (классическая модель) с помощью Visual Studio
@@ -85,7 +85,7 @@ Certificate with thumbprint [thumbprint] doesn't exist.
 
 Чтобы использовать расширение удаленного рабочего стола из Azure DevOps Services, включите в конвейер сборки следующие данные:
 
-1. Добавьте `/p:ForceRDPExtensionOverPlugin=true` в аргументы MSBuild, чтобы развертывание выполнялось через расширение удаленного рабочего стола, а не подключаемый модуль удаленного рабочего стола. Например:
+1. Добавьте `/p:ForceRDPExtensionOverPlugin=true` в аргументы MSBuild, чтобы развертывание выполнялось через расширение удаленного рабочего стола, а не подключаемый модуль удаленного рабочего стола. Пример:
 
     ```
     msbuild AzureCloudService5.ccproj /t:Publish /p:TargetProfile=Cloud /p:DebugType=None

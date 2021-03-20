@@ -7,10 +7,10 @@ author: kanshiG
 ms.author: govindk
 ms.date: 04/07/2020
 ms.openlocfilehash: ec6a9db63504958640137fcd0fcfc904eb01afa5
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93074735"
 ---
 # <a name="how-to-monitor-the-server-side-latency-for-operations-in-an-azure-cosmos-db-container-or-account"></a>Мониторинг задержки на стороне сервера для операций в контейнере Azure Cosmos DB или учетной записи
@@ -30,27 +30,27 @@ Azure Monitor для Azure Cosmos DB предоставляет представ
 
 1. Войдите на [портал Azure](https://portal.azure.com/).
 
-1. Выберите **монитор** на панели навигации слева и щелкните **метрики** .
+1. Выберите **монитор** на панели навигации слева и щелкните **метрики**.
 
    :::image type="content" source="./media/monitor-server-side-latency/monitor-metrics-blade.png" alt-text="Область метрик в Azure Monitor":::
 
-1. В области **Метрики** щелкните **Выбрать ресурс** и выберите требуемые **подписку** и **группу ресурсов** . В поле **Тип ресурса** выберите **Учетные записи Azure Cosmos DB** , выберите одну из существующих учетных записей Azure Cosmos и нажмите кнопку **Применить** .
+1. В области **Метрики** щелкните **Выбрать ресурс** и выберите требуемые **подписку** и **группу ресурсов**. В поле **Тип ресурса** выберите **Учетные записи Azure Cosmos DB**, выберите одну из существующих учетных записей Azure Cosmos и нажмите кнопку **Применить**.
    
-   :::image type="content" source="./media/monitor-server-side-latency/select-cosmos-db-account.png" alt-text="Область метрик в Azure Monitor":::
+   :::image type="content" source="./media/monitor-server-side-latency/select-cosmos-db-account.png" alt-text="Выберите учетную запись Azure Cosmos DB для просмотра метрик":::
 
 1. Затем выберите метрику **задержки на стороне сервера**  в списке доступных метрик. Подробные сведения о всех доступных метриках в списке см. в статье с [перечнем метрик по категориям](monitor-cosmos-db-reference.md). В этом примере мы выбираем **задержку на стороне сервера** и **AVG** в качестве значения статистической обработки. Помимо этих сведений, можно также выбрать **диапазон времени** и **степень детализации времени** для метрик. Вы можете просмотреть метрики максимум за последние 30 дней.  После применения фильтра отображается диаграмма на его основе. Вы видите задержку на стороне сервера в минуту за выбранный период.  
 
-   :::image type="content" source="./media/monitor-server-side-latency/server-side-latency-metric.png" alt-text="Область метрик в Azure Monitor":::
+   :::image type="content" source="./media/monitor-server-side-latency/server-side-latency-metric.png" alt-text="Выберите метрику задержки Server-Side из портал Azure":::
 
 ## <a name="filters-for-server-side-latency"></a>Фильтры задержки на стороне сервера
 
-Можно также фильтровать метрики и получать диаграммы, отображаемые конкретными **CollectionName** , **ConnectionMode** , **DatabaseName** , **OperationType** , **Region** и **публикапитипе** . 
+Можно также фильтровать метрики и получать диаграммы, отображаемые конкретными **CollectionName**, **ConnectionMode**, **DatabaseName**, **OperationType**, **Region** и **публикапитипе**. 
 
-Чтобы отфильтровать метрики, выберите **Добавить фильтр** и выберите требуемое свойство, например **публикапитипе** , и выберите значение **SQL** . Добавьте еще один фильтр для **OperationType** . Затем граф отображает задержку на стороне сервера для различных операций за выбранный период. Операции, выполняемые с помощью хранимой процедуры, не регистрируются в журнале, поэтому они недоступны в метрике OperationType.
+Чтобы отфильтровать метрики, выберите **Добавить фильтр** и выберите требуемое свойство, например **публикапитипе** , и выберите значение **SQL**. Добавьте еще один фильтр для **OperationType**. Затем граф отображает задержку на стороне сервера для различных операций за выбранный период. Операции, выполняемые с помощью хранимой процедуры, не регистрируются в журнале, поэтому они недоступны в метрике OperationType.
 
 Метрики **задержки на стороне сервера** для каждой операции отображаются, как показано на следующем рисунке:
 
-:::image type="content" source="./media/monitor-server-side-latency/server-side-latency-filters.png" alt-text="Область метрик в Azure Monitor":::
+:::image type="content" source="./media/monitor-server-side-latency/server-side-latency-filters.png" alt-text="Фильтры для метрик задержки на стороне сервера":::
 
 Метрики также можно сгруппировать с помощью параметра **Применить разделение** .  
 

@@ -13,10 +13,10 @@ ms.author: curtand
 ms.reviewer: kasimpso
 ms.custom: user-help, seo-update-azuread-jan
 ms.openlocfilehash: 1af7f2918af7071320244dd35882a8de9717654f
-ms.sourcegitcommit: d76108b476259fe3f5f20a91ed2c237c1577df14
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92913251"
 ---
 # <a name="switching-organizations-in-a-portal"></a>Переключение организаций на портале
@@ -30,7 +30,7 @@ ms.locfileid: "92913251"
 - [**Мой доступ**](https://myaccess.microsoft.com)
 - [**Мой персонал**](https://mystaff.microsoft.com)
 
-Переключение организаций недоступно для **моих учетных** данных, **сведений о безопасности** и **моих группах** .
+Переключение организаций недоступно для **моих учетных** данных, **сведений о безопасности** и **моих группах**.
 
 ## <a name="switch-organizations"></a>Переключение организаций
 
@@ -39,7 +39,7 @@ ms.locfileid: "92913251"
 1. Войдите в рабочую или учебную учетную запись, а затем откройте страницу [Моя учетная запись](https://myaccount.microsoft.com) .
 1. Выберите переключатель организации :::image type="content" source="media/cross-tenant-switcher/switcher-icon.png" alt-text="значок"::: переключателя организация в верхней части страницы рядом с фотографией вашей учетной записи.
 
-    :::image type="content" source="media/cross-tenant-switcher/switcher-location.png" alt-text="значок":::
+    :::image type="content" source="media/cross-tenant-switcher/switcher-location.png" alt-text="Меню организаций, к которым можно переключиться":::
 
 1. Выберите организацию, в которую вы хотите переключиться. Вы будете автоматически переключиться на выбранную организацию.
 

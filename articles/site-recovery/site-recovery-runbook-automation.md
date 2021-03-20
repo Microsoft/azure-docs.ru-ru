@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: ramamill
 ms.openlocfilehash: a141280338632fdad7053cbbe76c8bdf2797443d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89424877"
 ---
 # <a name="add-azure-automation-runbooks-to-recovery-plans"></a>Добавление модулей Runbook службы автоматизации Azure в планы восстановления
@@ -115,13 +115,13 @@ $vmMap = $RecoveryPlanContext.VmMap
 ## <a name="customize-the-recovery-plan"></a>Настройка плана восстановления
 
 1. В хранилище выберите **планы восстановления (Site Recovery)** .
-2. Чтобы создать план восстановления, щелкните **+ план восстановления**. [Подробнее.](site-recovery-create-recovery-plans.md) Если у вас уже есть план восстановления, выберите его, чтобы открыть.
+2. Чтобы создать план восстановления, щелкните **+ план восстановления**. [Подробнее](site-recovery-create-recovery-plans.md). Если у вас уже есть план восстановления, выберите его, чтобы открыть.
 3. На странице план восстановления нажмите кнопку **настроить**.
 
     ![Нажмите кнопку "Настроить"](media/site-recovery-runbook-automation-new/custom-rp.png)
 
 2. Нажмите кнопку с многоточием (...) рядом с **группой 1: начать**  >  **Добавление действия после**.
-3. В поле **действие при вставке**убедитесь, что выбран параметр **Скрипт** , и укажите имя скрипта (**Hello World**).
+3. В поле **действие при вставке** убедитесь, что выбран параметр **Скрипт** , и укажите имя скрипта (**Hello World**).
 4. Укажите учетную запись службы автоматизации и выберите Runbook. Нажмите кнопку **ОК**, чтобы сохранить этот сценарий. Сценарий будет добавлен в группу **Группа 1: последующие действия**.
 
 
@@ -262,7 +262,7 @@ $vmMap = $RecoveryPlanContext.VmMap
 > [!VIDEO https://channel9.msdn.com/Series/Azure-Site-Recovery/One-click-failover-of-a-2-tier-WordPress-application-using-Azure-Site-Recovery/player]
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения об [учетной записи запуска от имени службы автоматизации Azure](../automation/manage-runas-account.md)
 - Ознакомьтесь с [примерами сценариев службы автоматизации Azure](https://gallery.technet.microsoft.com/scriptcenter/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=SC%20Automation%20Product%20Team&f%5B0%5D.Text=SC%20Automation%20Product%20Team).

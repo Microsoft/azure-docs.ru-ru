@@ -14,10 +14,10 @@ ms.workload: infrastructure-services
 ms.date: 01/07/2021
 ms.author: vinigam
 ms.openlocfilehash: 765a2728c5de49787a64fff723625e53e100e450
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98017788"
 ---
 # <a name="schema-and-data-aggregation-in-traffic-analytics"></a>Схема и агрегирование данных в Аналитика трафика
@@ -176,5 +176,5 @@ https://{saName}@insights-logs-networksecuritygroupflowevent/resoureId=/SUBSCRIP
 1. Неизвестно. не удается соотнести ни один из IP-адресов в потоках с топологией клиента в Azure, а также локальным (сайтом).
 1. К именам полей добавляются \_ s или \_ d. Они не обозначают источник и назначение, но указывают типы данных String и Decimal соответственно.
 
-### <a name="next-steps"></a>Next Steps
+### <a name="next-steps"></a>Дальнейшие действия
 Чтобы получить ответы на часто задаваемые вопросы, см. раздел [вопросы и ответы по аналитике трафика](traffic-analytics-faq.md) , чтобы просмотреть сведения о функциональных возможностях. [](traffic-analytics.md)

@@ -8,16 +8,16 @@ ms.date: 09/10/2019
 author: SnehaGunda
 ms.author: sngun
 ms.openlocfilehash: 61814082ebe9828a08da1e8786890b500c239082
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93081847"
 ---
 # <a name="system-document-properties"></a>Системные свойства документа
 [!INCLUDE[appliesto-gremlin-api](includes/appliesto-gremlin-api.md)]
 
-Azure Cosmos DB имеет [системные свойства](/rest/api/cosmos-db/databases) , такие как ```_ts``` ,, ```_self``` ```_attachments``` , ```_rid``` и ```_etag``` в каждом документе. Кроме того, обработчик Gremlin добавляет в конце и в начале свойства ```inVPartition``` и ```outVPartition```. По умолчанию эти свойства доступны для обхода. Но определенные (или все) свойства можно включить в операцию обхода Gremlin.
+Каждый документ в Azure Cosmos DB содержит [системные свойства](/rest/api/cosmos-db/databases) например ```_ts```, ```_self```, ```_attachments```, ```_rid``` и ```_etag```. Кроме того, обработчик Gremlin добавляет в конце и в начале свойства ```inVPartition``` и ```outVPartition```. По умолчанию эти свойства доступны для обхода. Но определенные (или все) свойства можно включить в операцию обхода Gremlin.
 
 ```
 g.withStrategies(ProjectionStrategy.build().IncludeSystemProperties('_ts').create())
@@ -35,7 +35,7 @@ g.withStrategies(ProjectionStrategy.build().IncludeSystemProperties('_etag').cre
 
 Если в коллекции включено окончание срока действия документов, а для документов задано свойство ```ttl```, это свойство будет доступно в операции обхода Gremlin как обычное свойство вершины или ребра. ```ProjectionStrategy``` не обязательно использовать для обеспечения доступности свойства TTL.
 
-Вершина, созданная с помощью указанного ниже обхода, будет автоматически удалена через **123 секунды** .
+Вершина, созданная с помощью указанного ниже обхода, будет автоматически удалена через **123 секунды**.
 
 ```
 g.addV('vertex-one').property('ttl', 123)
@@ -43,4 +43,4 @@ g.addV('vertex-one').property('ttl', 123)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 * [Оптимистическая блокировка в Cosmos DB](faq.md#how-does-the-sql-api-provide-concurrency)
-* Срок [жизни (TTL)](time-to-live.md) в Azure Cosmos DB
+* [Срок жизни](time-to-live.md) в Azure Cosmos DB

@@ -9,10 +9,10 @@ ms.date: 04/06/2020
 ms.author: rogarana
 ms.custom: include file
 ms.openlocfilehash: 0b185d545e129c941d5df2e8ce86ee684174b666
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "81008363"
 ---
 Сейчас только Ultra Disks и твердотельные накопители уровня "Премиум" могут включать общие диски. Различные размеры дисков могут иметь другой `maxShares` предел, который не может быть превышен при задании `maxShares` значения. Для твердотельных накопителей уровня "Премиум" Размер дисков, поддерживающих совместное использование дисков, P15 и выше.

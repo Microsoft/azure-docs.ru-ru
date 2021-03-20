@@ -4,10 +4,10 @@ description: Узнайте, как использовать Azure Data Box дл
 ms.topic: conceptual
 ms.date: 1/27/2020
 ms.openlocfilehash: e789b6c9f4ff2e8cd168e6b5c138d423911d4743
-ms.sourcegitcommit: ea551dad8d870ddcc0fee4423026f51bf4532e19
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96752589"
 ---
 # <a name="azure-backup-offline-backup-by-using-azure-data-box"></a>Автономное резервное копирование с помощью Azure Data Box
@@ -56,7 +56,7 @@ ms.locfileid: "96752589"
 >[!IMPORTANT]
 >Начальные данные резервного копирования с одного сервера должны содержаться в одном Azure Data Boxном экземпляре или Azure Data Box диске и не могут совместно использоваться несколькими устройствами одного или разных номеров SKU. Но Azure Data Box устройство может содержать начальные резервные копии с нескольких серверов.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 ### <a name="azure-subscription-and-required-permissions"></a>Подписка Azure и необходимые разрешения
 
@@ -310,7 +310,7 @@ Azure PowerShell также можно было установить с помо
     >- В PowerShell, подключенном к Azure, выполните команду `Get-AzureRmADUser -UserPrincipalName "Account Holder's email as defined in the portal"`.
     > - Перейдите по пути реестра `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Azure Backup\DbgSettings\OnlineBackup` с именем *куррентусерид*.
 
-6. Щелкните правой кнопкой мыши строку, добавленную на предыдущем шаге, и выберите пункт **изменить**. В поле значение укажите отпечаток сертификата, экспортированного на шаге 2. Нажмите кнопку **ОК**.
+6. Щелкните правой кнопкой мыши строку, добавленную на предыдущем шаге, и выберите пункт **изменить**. В поле значение укажите отпечаток сертификата, экспортированного на шаге 2. Щелкните **ОК**.
 
 7. Чтобы получить значение отпечатка, дважды щелкните сертификат. Перейдите на вкладку **сведения** и прокрутите вниз, пока не увидите поле отпечаток. Выберите **отпечаток** и скопируйте значение.
 

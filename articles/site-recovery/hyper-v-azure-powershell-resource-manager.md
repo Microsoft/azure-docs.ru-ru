@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 01/10/2020
 ms.author: sutalasi
 ms.openlocfilehash: a4140a0b22f7ca8164d50cf60fe57c861f826eb4
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86132518"
 ---
 # <a name="set-up-disaster-recovery-to-azure-for-hyper-v-vms-using-powershell-and-azure-resource-manager"></a>Настройка аварийного восстановления виртуальных машин Hyper-V в Azure с помощью PowerShell и Azure Resource Manager
@@ -46,7 +46,7 @@ Azure PowerShell предоставляет командлеты для упра
 
 1. Откройте консоль PowerShell и выполните следующую команду, чтобы войти в учетную запись Azure. Командлет открывает веб-страницу с приглашением ввести учетные данные вашей учетной записи: `Connect-AzAccount` .
    - Кроме того, можно включить учетные данные учетной записи в качестве параметра в `Connect-AzAccount` командлете с помощью параметра **Credential** .
-   - Если вы являетесь партнером CSP, работающим от имени клиента, укажите клиента в качестве клиента, используя его идентификатор tenantID или основное доменное имя клиента. Например: `Connect-AzAccount -Tenant "fabrikam.com"`
+   - Если вы являетесь партнером CSP, работающим от имени клиента, укажите клиента в качестве клиента, используя его идентификатор tenantID или основное доменное имя клиента. Пример: `Connect-AzAccount -Tenant "fabrikam.com"`
 1. Свяжите подписку, которую собираетесь использовать, с учетной записью, так как последняя может иметь несколько подписок:
 
    ```azurepowershell
@@ -136,7 +136,7 @@ Set-AzRecoveryServicesAsrVaultContext -Vault $vault
    AzureSiteRecoveryProvider.exe /x:. /q
    ```
 
-1. Выполните следующую команду:
+1. Выполните следующую команду.
 
    ```console
    .\setupdr.exe /i

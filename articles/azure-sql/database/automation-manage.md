@@ -12,10 +12,10 @@ ms.author: jrasnick
 ms.reviewer: sstein
 ms.date: 03/12/2019
 ms.openlocfilehash: faf5b1108e28b352a0b8622feed8bdd99264ff16
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91327584"
 ---
 # <a name="manage-databases-in-azure-sql-database-by-using-azure-automation"></a>Управление базами данных в службе Azure SQL с помощью службы автоматизации Azure
@@ -40,7 +40,7 @@ ms.locfileid: "91327584"
 
 Модули Runbook и коллекции модулей для [службы автоматизации Azure](../../automation/automation-runbook-gallery.md) предлагают разнообразные модули Runbook от Майкрософт и сообщества, которые можно импортировать в службу автоматизации Azure. Чтобы использовать модуль runbook, скачайте его из коллекции. Вы также можете напрямую импортировать модули runbook из этой коллекции или из своей учетной записи службы автоматизации на портале Azure.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы узнали об основах службы автоматизации Azure и о том, как ее можно использовать для управления базой данных SQL Azure, перейдите по следующим ссылкам, чтобы получить дополнительные сведения о службе автоматизации Azure.
 

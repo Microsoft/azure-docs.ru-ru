@@ -14,10 +14,10 @@ ms.author: marsma
 ms.reviewer: ''
 ms.custom: aaddev
 ms.openlocfilehash: 25389348476552298ddb947ccb59acb8b3d5bc57
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "80881254"
 ---
 # <a name="how-to-configure-sso-on-macos-and-ios"></a>Как настроить единый вход для macOS и iOS
@@ -96,7 +96,7 @@ URI перенаправления App3: `msauth.com.contoso.mytestapp3://auth`
 
 #### <a name="add-a-new-keychain-group"></a>Добавить новую группу цепочки ключей
 
-Добавьте новую группу цепочки ключей в **возможности**проекта. Группа цепочки ключей должна быть:
+Добавьте новую группу цепочки ключей в **возможности** проекта. Группа цепочки ключей должна быть:
 * `com.microsoft.adalcache` в iOS 
 * `com.microsoft.identity.universalstorage` в macOS.
 

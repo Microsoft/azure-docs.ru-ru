@@ -14,10 +14,10 @@ ms.reviewer: jeffsta
 ms.custom: it-pro, seodec18, seo-update-azuread-jan
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9cc6f0a6325aabae18460d696c2c1b1b2c8f7f74
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89568852"
 ---
 # <a name="sign-up-your-organization-to-use-azure-active-directory"></a>Регистрация организации для использования Azure Active Directory
@@ -30,7 +30,7 @@ ms.locfileid: "89568852"
   > [!Note]
   >   Мы рекомендуем использовать рабочую или учебную учетную запись, если у вас уже есть доступ к Azure AD. В любом случае следует использовать тип учетной записи, связанный с вашей подпиской Azure.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Приобретение Azure](https://azure.microsoft.com/pricing/purchase-options/)
 

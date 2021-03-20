@@ -4,10 +4,10 @@ description: Как отправлять события из Auth0 в служб
 ms.topic: conceptual
 ms.date: 07/07/2020
 ms.openlocfilehash: a66a60cb926b933a6b0628a67506d0d52ab7a905
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93077869"
 ---
 # <a name="integrate-azure-event-grid-with-auth0"></a>Интеграция сетки событий Azure с Auth0

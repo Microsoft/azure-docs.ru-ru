@@ -7,10 +7,10 @@ ms.topic: reference
 ms.date: 09/28/2020
 ms.author: yegu
 ms.openlocfilehash: b30e83b89b25e6400b8c7e0419406631fa1edcd0
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91492540"
 ---
 # <a name="whats-new-in-azure-cache-for-redis"></a>Новые возможности кэша Azure для Redis
@@ -63,6 +63,6 @@ ms.locfileid: "91492540"
 
 Если приложение проверяет сертификат в коде, необходимо изменить его, чтобы распознать свойства (например, издатели, отпечатки) вновь закрепленных сертификатов. Эта дополнительная проверка должна охватывать все прикрепленные сертификаты, чтобы быть более будущим.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если у вас есть дополнительные вопросы, свяжитесь с нами через [службу поддержки](https://azure.microsoft.com/support/options/).  
