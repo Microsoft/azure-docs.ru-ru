@@ -9,10 +9,10 @@ ms.date: 10/09/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 968f82a143872fd282222539ab71a70db488a20d
-ms.sourcegitcommit: 50802bffd56155f3b01bfb4ed009b70045131750
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91935769"
 ---
 # <a name="set-up-a-business-continuity-and-disaster-recovery-plan"></a>Настройка плана непрерывности бизнес-процессов и аварийного восстановления
@@ -162,6 +162,6 @@ Remove-AzWvdUserSession
 - Убедитесь, что тест охватывает все критически важные для бизнеса приложения.
 - В каждый момент времени рекомендуется выполнять отработку отказа до 100 виртуальных машин. Если у вас больше виртуальных машин, рекомендуется выполнить их отработку отказа в пакетном режиме через 10 минут.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если у вас есть вопросы по обеспечению безопасности данных в дополнение к планированию простоев, ознакомьтесь с нашим [руководством по безопасности](security-guide.md).

@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 04/14/2020
 ms.openlocfilehash: 5bbc770fa6ae5ac69b2aa939f9d2c70bb01f5403
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98945291"
 ---
 # <a name="use-ssh-tunneling-to-access-apache-ambari-web-ui-jobhistory-namenode-apache-oozie-and-other-uis"></a>Использование туннелирования SSH для доступа к веб-интерфейсу Apache Ambari, JobHistory, NameNode, Apache Oozie и другим пользовательским интерфейсам
@@ -69,7 +69,7 @@ ssh -C2qTnNf -D 9876 sshuser@CLUSTERNAME-ssh.azurehdinsight.net
 |q|Тихий режим.|
 |T|Отключите выделение псевдо-TTY, так как вы просто пересылаете порт.|
 |n|Запрет на чтение STDIN, так как выполняется только пересылка порта.|
-|Нет|Не выполняйте удаленную команду, так как выполняется только пересылка порта.|
+|N|Не выполняйте удаленную команду, так как выполняется только пересылка порта.|
 |f|Запустите в фоновом режиме.|
 
 После завершения команды трафик, отправленный на порт 9876 локального компьютера, будет направляться на головной узел кластера.
@@ -84,7 +84,7 @@ ssh -C2qTnNf -D 9876 sshuser@CLUSTERNAME-ssh.azurehdinsight.net
 
 1. Если же у вас еще нет сохраненного сеанса, введите информацию о подключении.
 
-    |Свойство |Значение |
+    |Свойство. |Значение |
     |---|---|
     |Имя узла (или IP-адрес)|SSH-адрес для кластера HDInsight. Например, **mycluster-SSH.azurehdinsight.NET**.|
     |Порт|22|
@@ -98,7 +98,7 @@ ssh -C2qTnNf -D 9876 sshuser@CLUSTERNAME-ssh.azurehdinsight.net
 
 1. Укажите следующие сведения в форме **Параметры, управляющие перенаправлением портов SSH** .
 
-    |Свойство |Значение |
+    |Свойство. |Значение |
     |---|---|
     |Исходный порт|Порт на клиенте, который вы хотите перенаправить. Например, **9876**.|
     |Назначение|SSH-адрес для кластера HDInsight. Например, **mycluster-SSH.azurehdinsight.NET**.|

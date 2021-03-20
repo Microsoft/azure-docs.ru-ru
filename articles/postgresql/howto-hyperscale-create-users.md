@@ -8,10 +8,10 @@ ms.subservice: hyperscale-citus
 ms.topic: how-to
 ms.date: 1/8/2019
 ms.openlocfilehash: 3d23ee6119b625e11ce44bb9ad11ce4b3ee0280d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91295742"
 ---
 # <a name="create-users-in-azure-database-for-postgresql---hyperscale-citus"></a>Создание пользователей в базе данных Azure для PostgreSQL — масштабирование (Цитус)
@@ -52,7 +52,7 @@ ms.locfileid: "91295742"
 
 2. Введите имя и пароль роли. Выберите команду **Сохранить**.
 
-   :::image type="content" source="media/howto-hyperscale-create-users/2-add-user-fields.png" alt-text="Страница «роли»":::
+   :::image type="content" source="media/howto-hyperscale-create-users/2-add-user-fields.png" alt-text="Добавить роль":::
 
 Пользователь будет создан на узле координатора группы серверов и распространен на все рабочие узлы. Роли, созданные с помощью портал Azure `LOGIN` , имеют атрибут, что означает, что они являются настоящими пользователями, которые могут входить в базу данных.
 
@@ -77,11 +77,11 @@ GRANT SELECT ON ALL TABLES IN SCHEMA public TO db_user;
 
 Чтобы обновить пользователя, перейдите на страницу **роли** для группы серверов Цитус и нажмите кнопку с многоточием **...** рядом с пользователем. С многоточием откроется меню для удаления пользователя или сброса пароля.
 
-   :::image type="content" source="media/howto-hyperscale-create-users/edit-role.png" alt-text="Страница «роли»":::
+   :::image type="content" source="media/howto-hyperscale-create-users/edit-role.png" alt-text="Изменение роли":::
 
 `citus`Роль является привилегированной и не может быть удалена.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Откройте брандмауэр для IP-адресов компьютеров новых пользователей, чтобы разрешить им подключение: [Создание правил брандмауэра Цитус и управление ими с помощью портал Azure](howto-hyperscale-manage-firewall-using-portal.md).
 

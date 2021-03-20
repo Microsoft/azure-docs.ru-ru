@@ -15,10 +15,10 @@ ms.reviewer: yukarppa
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f1048284e8e7a492bf0810a16e29409546ed414b
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96547565"
 ---
 # <a name="validate-a-dynamic-group-membership-rule-preview-in-azure-active-directory"></a>Проверка правила членства в динамической группе (Предварительная версия) в Azure Active Directory
@@ -45,6 +45,6 @@ Azure Active Directory (Azure AD) теперь предоставляет сре
 
 Вы можете изменить правило и проверку членства. Чтобы узнать, почему пользователь не является членом группы, щелкните "просмотреть сведения" и сведения о проверке появятся результат каждого выражения, формирующего правило. Нажмите кнопку **ОК** , чтобы выйти.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Правила динамического членства в группах](groups-dynamic-membership.md)

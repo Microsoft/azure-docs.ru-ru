@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 07/25/2019
 ms.author: alkohli
 ms.openlocfilehash: 92041be4d3d5ef4d980c17fa0a5870b740c1784a
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95995027"
 ---
 # <a name="deploy-the-storsimple-device-manager-service-for-storsimple-virtual-array"></a>Развертывание службы диспетчера устройств StorSimple для виртуального массива StorSimple
@@ -70,7 +70,7 @@ ms.locfileid: "95995027"
 
 #### <a name="to-delete-a-service"></a>Удаление службы
 
-1. Перейдите ко **всем ресурсам**. Найдите службу диспетчера устройств StorSimple. Выберите службу, которую требуется удалить.
+1. Щелкните **Все ресурсы**. Найдите службу диспетчера устройств StorSimple. Выберите службу, которую требуется удалить.
    
     ![Выбор службы, которую необходимо удалить](./media/storsimple-virtual-array-manage-service/deleteservice2.png)
 2. Перейдите к панели мониторинга службы, чтобы убедиться в отсутствии устройств, подключенных к службе. Если в этой службе не зарегистрированы устройства, вы также увидите заглавное сообщение, указывающее, что они отсутствуют. Щелкните **Удалить**.
@@ -122,6 +122,6 @@ ms.locfileid: "95995027"
    
    Скопируйте этот ключ и сохраните его для регистрации новых устройств в службе.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте, как [приступить к работе](storsimple-virtual-array-deploy1-portal-prep.md) с виртуальным массивом StorSimple.
 * Узнайте, как [администрировать устройство StorSimple](storsimple-ova-web-ui-admin.md).

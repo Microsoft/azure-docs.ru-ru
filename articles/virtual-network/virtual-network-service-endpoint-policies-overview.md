@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 02/21/2020
 ms.author: rdhillon
 ms.openlocfilehash: 9766379807e6d2708fd6935dd2ffbd7660f9988f
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98216654"
 ---
 # <a name="virtual-network-service-endpoint-policies-for-azure-storage"></a>Политики конечных точек службы виртуальной сети для службы хранилища Azure
@@ -58,7 +58,7 @@ ms.locfileid: "98216654"
 ]
 ```
 
-## <a name="configuration"></a>Параметр Configuration
+## <a name="configuration"></a>Конфигурация
 
 -   Можно настроить политики конечных точек для ограничения трафика виртуальной сети к определенным учетным записям хранения Azure.
 -   Политика конечной точки настраивается в подсети виртуальной сети. Конечные точки службы для хранилища Azure должны быть включены в подсети для применения политики.
@@ -141,7 +141,7 @@ ms.locfileid: "98216654"
  |сервицеендпоинтполиЦиесперсубнет|100 |
  |Ресурсы служб на определение политики конечных точек служб|200 |
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как [настроить политики конечных точек служб для виртуальной сети](virtual-network-service-endpoint-policies-portal.md).
 - Дополнительные сведения о [конечных точках службы виртуальной сети](virtual-network-service-endpoints-overview.md)

@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 11/21/2016
 ms.author: manuaery
 ms.openlocfilehash: 340b910319cabe3379bdb1bad1c09bc71c17f072
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95994950"
 ---
 # <a name="use-the-storsimple-device-manager-service-to-manage-shares-on-the-storsimple-virtual-array"></a>Управление общими папками в виртуальном массиве StorSimple с помощью диспетчера устройств StorSimple
@@ -142,6 +142,6 @@ ms.locfileid: "95994950"
 3. Проверьте состояние общей папки, которую требуется удалить. Если общая папка, которую вы хотите удалить, не находится в автономном режиме, сначала отключите ее. Следуйте указаниям по [отключению общей папки](#take-a-share-offline).
 4. При появлении запроса на подтверждение в колонке **Удалить** подтвердите операцию и щелкните **Удалить**. Общая папка будет удалена, и в колонке **Общие папки** появится обновленный список общих папок в виртуальном массиве.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте, как [клонировать общую папку StorSimple](storsimple-virtual-array-clone.md).
 

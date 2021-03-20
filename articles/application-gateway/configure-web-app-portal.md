@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 01/02/2021
 ms.author: victorh
 ms.openlocfilehash: aadd4904ff218613c0dd24daff784ad5b8b90fbb
-ms.sourcegitcommit: c538b6e4cf27b992500c079ad9c914c05d55eb7f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97854916"
 ---
 # <a name="configure-app-service-with-application-gateway"></a>Настройка службы приложений с помощью шлюза приложений
@@ -26,7 +26,7 @@ ms.locfileid: "97854916"
 - Изменение серверного пула и добавление в него службы приложений
 - Изменить параметры HTTP с включенным параметром "выбрать имя узла"
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Шлюз приложений. Создайте шлюз приложений без целевого сервера пула. Дополнительные сведения см. в разделе [Краткое руководство. прямой веб-трафик с помощью шлюза приложений Azure. портал Azure](quick-create-portal.md)
 

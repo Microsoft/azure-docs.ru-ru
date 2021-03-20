@@ -7,10 +7,10 @@ ms.author: lle
 author: lle
 ms.date: 04/14/2020
 ms.openlocfilehash: 916d799ba08f46cb86ee2e22c4af7fc1b92b385f
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100386158"
 ---
 # <a name="run-ssis-packages-by-using-azure-sql-managed-instance-agent"></a>Запуск пакетов служб SSIS с помощью агента Управляемый экземпляр Azure SQL
@@ -19,7 +19,7 @@ ms.locfileid: "100386158"
 
 С помощью этой функции можно запускать пакеты служб SSIS, хранящиеся в SSISDB, в Управляемый экземпляр SQL, в файловой системе, например в службе файлов Azure, или в хранилище пакетов среды выполнения интеграции Azure SSIS.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы использовать эту функцию, [Скачайте](/sql/ssms/download-sql-server-management-studio-ssms) и установите последнюю версию SQL Server Management Studio (SSMS). Сведения о поддержке версий приведены ниже:
 
@@ -155,5 +155,5 @@ ms.locfileid: "100386158"
 
 1. Останавливает соответствующую операцию на основе **executionId**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Вы также можете планировать пакеты служб SSIS с помощью фабрики данных Azure. Пошаговые инструкции см. в разделе [триггер событий фабрики данных Azure](how-to-create-event-trigger.md).

@@ -6,10 +6,10 @@ ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 02/20/2020
 ms.openlocfilehash: 0832b54e02cabecb0b1f0e7af600b8adc621a8b0
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99584776"
 ---
 # <a name="add-a-secured-sharepoint-data-source-to-your-knowledge-base"></a>Добавление защищенного источника данных SharePoint в базу знаний
@@ -20,7 +20,7 @@ ms.locfileid: "99584776"
 
 Если QnA Maker диспетчер базы знаний не является диспетчером Active Directory, необходимо установить связь с диспетчером Active Directory, чтобы завершить этот процесс.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * В облачном SharePoint-QnA Maker для разрешений используется Microsoft Graph. Если SharePoint находится в локальной среде, вы не сможете извлечь из SharePoint, так как Microsoft Graph не сможет определить разрешения.
 * Формат URL-QnA Maker поддерживает только URL-адреса SharePoint, которые создаются для общего доступа и имеют формат `https://\*.sharepoint.com`
@@ -189,7 +189,7 @@ Use the **@microsoft.graph.downloadUrl** from the previous section as the `fileu
 
 -->
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Совместная работа с базой знаний](../index.yml)

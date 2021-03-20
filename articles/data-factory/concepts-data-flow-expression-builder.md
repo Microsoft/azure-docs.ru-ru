@@ -8,10 +8,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 02/04/2021
 ms.openlocfilehash: 753f201fbde5d9e7100b6e257f8dc79e4462d7b6
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99584929"
 ---
 # <a name="build-expressions-in-mapping-data-flow"></a>Выражения сборки в потоке данных сопоставления
@@ -141,7 +141,7 @@ regex_replace('100 and 200', `(\d+)`, 'digits')
 regex_replace('100 and 200', '(\\d+)', 'digits')
 ```
 
-## <a name="keyboard-shortcuts"></a>Сочетания клавиш
+## <a name="keyboard-shortcuts"></a>сочетания клавиш
 
 Ниже приведен список сочетаний клавиш, доступных в построителе выражений. При создании выражений доступны большинство сочетаний клавиш IntelliSense.
 
@@ -170,6 +170,6 @@ regex_replace('100 and 200', '(\\d+)', 'digits')
 
 Толонг (currentTimestamp ()-Тотиместамп (' 1970-01-01 00:00:00.000 ', ' гггг-мм-дд чч: мм: СС. SSS ")) * 1000
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Начало создания выражений преобразования данных](data-flow-expression-functions.md)

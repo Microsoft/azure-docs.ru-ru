@@ -12,10 +12,10 @@ ms.date: 07/30/2020
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: ba7875caa6a1db7638bfeafcfea1efa7b2462152
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87489521"
 ---
 # <a name="configure-itsme-openid-connect-oidc-with-azure-active-directory-b2c"></a>Настройка итсме OpenID Connect Connect (OIDC) с помощью Azure Active Directory B2C
@@ -74,13 +74,13 @@ Please clarify step 1 in the description below - we don't have steps in this tut
 
 1. Убедитесь, что вы используете каталог, содержащий клиент Azure AD B2C. Выберите фильтр **Каталог и подписка** в верхнем меню, а затем каталог, содержащий клиент Azure AD B2C.
 
-2. В разделе **службы Azure**выберите **Azure AD B2C** (или **другие службы** и используйте поле поиска **все службы** для поиска *Azure AD B2C*).
+2. В разделе **службы Azure** выберите **Azure AD B2C** (или **другие службы** и используйте поле поиска **все службы** для поиска *Azure AD B2C*).
 
 3. Щелкните элемент **Поставщики удостоверений**, а затем выберите **Новый поставщик OpenID Connect**.
 
 4. Заполните форму следующими сведениями:
 
-   |Свойство | Значение |
+   |Свойство. | Значение |
    |------------ |------- |
    | Имя | itsme |
    | URL-адрес метаданных | `https://oidc.<environment>.itsme.services/clientsecret-oidc/csapi/v0.1/.well-known/openid-configuration` <br>где `<environment>` — это либо `e2e` (тестовая среда), либо `prd` (Рабочая)  |
@@ -100,7 +100,7 @@ Please clarify step 1 in the description below - we don't have steps in this tut
 
 ### <a name="configure-a-user-flow"></a>Настройка потока пользователя
 
-1. В клиенте Azure AD B2C в разделе **политики**выберите **потоки пользователей**.
+1. В клиенте Azure AD B2C в разделе **политики** выберите **потоки пользователей**.
 
 2. Выберите **новый поток пользователей**.
 
@@ -121,7 +121,7 @@ Please clarify step 1 in the description below - we don't have steps in this tut
 
 ### <a name="register-an-application"></a>Регистрация приложения
 
-1. В клиенте B2C в разделе **Управление**выберите **Регистрация приложений**  >  **Новая регистрация**.
+1. В клиенте B2C в разделе **Управление** выберите **Регистрация приложений**  >  **Новая регистрация**.
 
 2. Укажите **имя** приложения и введите **URI перенаправления**. В целях тестирования введите `https://jwt.ms` .
 
@@ -129,7 +129,7 @@ Please clarify step 1 in the description below - we don't have steps in this tut
 
 4. Выберите **Зарегистрировать**.
 
-   a. В целях тестирования выберите **Проверка подлинности**и в разделе **неявное предоставление**установите флажки **токены доступа** и **маркеры идентификации** .  
+   а. В целях тестирования выберите **Проверка подлинности** и в разделе **неявное предоставление** установите флажки **токены доступа** и **маркеры идентификации** .  
 
    b. Щелкните **Сохранить**.
 
@@ -141,7 +141,7 @@ Please clarify step 1 in the description below - we don't have steps in this tut
 
 3. Выберите **Выполнить поток пользователя**.
 
-   a. **Приложение**: *выберите зарегистрированное приложение* .
+   а. **Приложение**: *выберите зарегистрированное приложение* .
 
    b. **URL-адрес ответа**: *выберите URL-адрес перенаправления*
 

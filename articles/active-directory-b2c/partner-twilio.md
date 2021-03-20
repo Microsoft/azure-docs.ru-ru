@@ -12,17 +12,17 @@ ms.date: 06/08/2020
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 953653a758577ed3d48ca2d81403b4cb363ea294
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95994049"
 ---
 # <a name="integrating-twilio-verify-app-with-azure-active-directory-b2c"></a>Интеграция Twilio проверка приложения с Azure Active Directory B2C
 
 В этом пошаговом руководстве описано, как интегрировать пример Интернет-приложения оплаты в Azure Active Directory B2C (Azure AD B2C) с помощью API проверки Twilio. С помощью Twilio проверить приложение, Azure AD B2C клиенты могут соответствовать требованиям транзакций PSD2 (директивы оплаты 2) с помощью динамической компоновки и надежной проверки подлинности клиента.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы приступить к работе, вам потребуется:
 
@@ -116,7 +116,7 @@ ms.locfileid: "95994049"
 
 * Перейдите к приложению и протестируйте действия входа, регистрации и отправки денег.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения см. в следующих статьях:
 

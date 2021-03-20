@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 01/03/2020
 ms.author: twooley
 ms.openlocfilehash: c608f357eb1eff9fd36e583b98d26250a71cb923
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85515676"
 ---
 # <a name="use-distcp-to-copy-data-between-azure-storage-blobs-and-azure-data-lake-storage-gen1"></a>Использование DistCp для копирования данных между большими двоичными объектами службы хранилища Azure и Azure Data Lake Storage 1-го поколения
@@ -35,7 +35,7 @@ HDInsight An кластер поставляется с инструментом
 
 1. На своем настольном компьютере используйте SSH, чтобы подключиться к кластеру. См. раздел [Подключение к кластеру HDInsight на основе Linux](../hdinsight/hdinsight-hadoop-linux-use-ssh-unix.md). Выполните команды в командной строке SSH.
 
-1. Проверьте, есть ли у вас доступ к BLOB-объектам службы хранилища Azure (WASB). Выполните следующую команду:
+1. Проверьте, есть ли у вас доступ к BLOB-объектам службы хранилища Azure (WASB). Выполните следующую команду.
 
    ```
    hdfs dfs –ls wasb://<container_name>@<storage_account_name>.blob.core.windows.net/
@@ -43,7 +43,7 @@ HDInsight An кластер поставляется с инструментом
 
    Выходные данные содержат список содержимого в большом двоичном объекте хранилища.
 
-1. Аналогичным образом проверьте, доступна ли учетная запись хранилища Data Lake Storage 1-го поколения из кластера. Выполните следующую команду:
+1. Аналогичным образом проверьте, доступна ли учетная запись хранилища Data Lake Storage 1-го поколения из кластера. Выполните следующую команду.
 
    ```
    hdfs dfs -ls adl://<data_lake_storage_gen1_account>.azuredatalakestore.net:443/
@@ -71,7 +71,7 @@ HDInsight An кластер поставляется с инструментом
 
 Так как самый низкий уровень детализации инструмента DistCp — это один файл, установка максимального количества одновременных копий является наиболее важным параметром, чтобы оптимизировать его относительно Data Lake Storage 1-го поколения. Количество одновременных копий можно контролировать, задав параметр число модулей сопоставления (m ') в командной строке. Этот параметр указывает максимальное количество модулей сопоставления, которые используются для копирования данных. Значение по умолчанию — 20.
 
-Пример.
+Пример
 
 ```
  hadoop distcp wasb://<container_name>@<storage_account_name>.blob.core.windows.net/example/data/gutenberg adl://<data_lake_storage_gen1_account>.azuredatalakestore.net:443/myfolder -m 100
@@ -87,7 +87,7 @@ HDInsight An кластер поставляется с инструментом
 
    `m = (number of nodes * YARN memory for each node) / YARN container size`
 
-Пример.
+Пример
 
 Предположим, что в кластере имеется четыре узла узла d14v2s, и вы хотите переместить 10 ТБ данных из 10 разных папок. Эти папки содержат различные объемы данных, и размеры файлов в каждой папке отличаются.
 

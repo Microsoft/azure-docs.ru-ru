@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 10/07/2020
 ms.author: rkarlin
 ms.openlocfilehash: f584f11603e41b63f3c96749ed6c720eb5ce07a8
-ms.sourcegitcommit: 8be279f92d5c07a37adfe766dc40648c673d8aa8
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97835063"
 ---
 # <a name="azure-defender-for-iot-agent-frequently-asked-questions"></a>Часто задаваемые вопросы о службе "защитник Azure для IoT"

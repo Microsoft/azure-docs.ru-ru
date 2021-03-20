@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 09/10/2018
 ms.author: duau
 ms.openlocfilehash: 85e088dda767a6f6c80ac0a9f6eed84e8802e5ee
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95994933"
 ---
 # <a name="configure-multivalue-routing-method-in-traffic-manager"></a>Настройка метода маршрутизации MultiValue в диспетчере трафика
@@ -61,7 +61,7 @@ ms.locfileid: "95994933"
 
     | Параметр                 | Значение                                              |
     | ---                     | ---                                                |
-    | Тип                    | Внешняя конечная точка                                   |
+    | Type                    | Внешняя конечная точка                                   |
     | Имя           | myEndpoint1                                        |
     | Полное доменное имя (FQDN) или IP-адрес           | Введите общедоступный IP-адрес конечной точки, которую необходимо добавить в этот профиль диспетчера трафика.                         |
     |        |           |
@@ -71,7 +71,7 @@ ms.locfileid: "95994933"
 
    ![Добавление конечной точки диспетчера трафика](./media/traffic-manager-multivalue-routing-method/add-endpoint.png)
  
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте о [методе взвешенной маршрутизации трафика](traffic-manager-configure-weighted-routing-method.md).
 - Узнайте о [методе маршрутизации по приоритету](traffic-manager-configure-priority-routing-method.md).

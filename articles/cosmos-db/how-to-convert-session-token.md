@@ -9,10 +9,10 @@ ms.date: 04/30/2020
 ms.author: vitrinh
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 7ed06eeb7330989b4a251dc77e516eb8ac578bff
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93342051"
 ---
 # <a name="convert-session-token-formats-in-net-sdk"></a>Преобразование форматов токенов сеанса в пакет SDK для .NET

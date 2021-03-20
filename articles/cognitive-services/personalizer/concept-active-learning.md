@@ -6,10 +6,10 @@ ms.subservice: personalizer
 ms.topic: conceptual
 ms.date: 02/20/2020
 ms.openlocfilehash: 1d2038e3796df843736eb80f7e5645f4141c82f4
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91253638"
 ---
 # <a name="learning-policy-and-settings"></a>Политика и параметры обучения
@@ -51,6 +51,6 @@ ms.locfileid: "91253638"
 
 После оптимизации политики обучения ее можно применить непосредственно к персонализации, чтобы она немедленно заменила текущую политику. Кроме того, можно сохранить оптимизированную политику для дальнейшей оценки, а затем решить, следует ли отбросить, сохранить или применить ее.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Изучите [активные и неактивные события](concept-active-inactive-events.md).

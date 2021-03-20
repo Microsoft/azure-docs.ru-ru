@@ -6,10 +6,10 @@ ms.topic: article
 ms.date: 06/26/2020
 ms.author: enewman
 ms.openlocfilehash: 530cf3b20820e34913612419d0ffa731a70f6a58
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85484015"
 ---
 # <a name="create-an-environment-with-self-contained-service-fabric-cluster-in-azure-devtest-labs"></a>Создайте среду с автономным кластером Service Fabric в Azure DevTest Labs
@@ -33,11 +33,11 @@ Service Fabric кластеры создаются с помощью сред в
 
     ![Выберите Service Fabric лабораторный кластер в списке.](./media/create-environment-service-fabric-cluster/select-service-fabric-cluster.png)
 4. На странице **Настройка параметров** выполните следующие действия. 
-    1. Укажите **имя** для **среды**кластера. Это имя группы ресурсов в Azure, в которой будет создан кластер Service Fabric. 
+    1. Укажите **имя** для **среды** кластера. Это имя группы ресурсов в Azure, в которой будет создан кластер Service Fabric. 
     2. Выберите **операционную систему (ОС)** для виртуальных машин кластера. Значение по умолчанию: **Windows**.
     3. Укажите имя **администратора** для кластера. 
     4. Укажите **пароль** для администратора. 
-    5. Для **сертификата**введите сведения о сертификате в виде строки в кодировке Base64. Чтобы создать сертификат, выполните следующие действия.
+    5. Для **сертификата** введите сведения о сертификате в виде строки в кодировке Base64. Чтобы создать сертификат, выполните следующие действия.
         1. Скачайте файл **Create-ClusterCertificate.ps1** из [репозитория Git](https://github.com/Azure/azure-devtestlab/tree/master/Environments/ServiceFabric-LabCluster). Кроме того, можно клонировать репозиторий на компьютере. 
         2. Запустите **PowerShell**. 
         3. Запустите файл **PS1** с помощью команды `.\Create-ClusterCertificate.ps1` . Появится текстовый файл, Открытый в блокноте, с информацией, необходимой для заполнения полей, связанных с сертификатом, на этой странице. . 

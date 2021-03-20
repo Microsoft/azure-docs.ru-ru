@@ -14,10 +14,10 @@ ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 487efce1fe57413dda740c42a7fd3d5ea91cfa49
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98724965"
 ---
 # <a name="build-resilience-in-external-user-authentication"></a>Устойчивость к сборке при аутентификации внешних пользователей
@@ -56,7 +56,7 @@ ms.locfileid: "98724965"
 
 * **Ответ соединителя API**. Если API недоступен, соединители API-интерфейсов в потоке регистрации должны быть корректно выполнены. Изучите и предоставьте разработчикам API такие [примеры ответов API](../external-identities/self-service-sign-up-add-api-connector.md) и рекомендации [по устранению неполадок](../external-identities/self-service-sign-up-add-api-connector.md). Обратитесь к группе разработки API, чтобы протестировать все возможные сценарии реагирования, включая продолжение, проверку-ошибку и блокирующие ответы. 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Ресурсы по устойчивости для администраторов и архитекторов
  
 * [Устойчивость к сборке с помощью управления учетными данными](resilience-in-credentials.md)

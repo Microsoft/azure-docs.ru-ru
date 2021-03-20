@@ -4,10 +4,10 @@ description: Узнайте, как добавить репозиторий GitH
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: 225aae5e0a017b711f29a47829b06f8bb7a6a8ee
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85483148"
 ---
 # <a name="add-a-git-repository-to-store-custom-artifacts-and-resource-manager-templates"></a>Добавление репозитория Git для хранения пользовательских артефактов и шаблонов Resource Manager
@@ -56,7 +56,7 @@ ms.locfileid: "85483148"
    3. В списке **Учетные записи** выберите **Все доступные учетные записи**.
    4. Выберите параметр **только чтение** .
    5. Щелкните **Создать маркер**.
-9. Новый маркер появится в списке **Личные маркеры доступа**. Выберите **Скопировать маркер**и сохраните значение маркера, так как оно вам потребуется позднее.
+9. Новый маркер появится в списке **Личные маркеры доступа**. Выберите **Скопировать маркер** и сохраните значение маркера, так как оно вам потребуется позднее.
 10. Перейдите к разделу [Подключение лаборатории к репозиторию](#connect-your-lab-to-the-repository).
 
 ## <a name="connect-your-lab-to-the-repository"></a>Подключение лаборатории к репозиторию
