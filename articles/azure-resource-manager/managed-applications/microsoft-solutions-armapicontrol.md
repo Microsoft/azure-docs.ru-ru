@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 07/14/2020
 ms.author: tomfitz
 ms.openlocfilehash: bbe36e072d10b81c421331b2212d8b161afd2693
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87098153"
 ---
 # <a name="microsoftcommonarmapicontrol-ui-element"></a>Элемент пользовательского интерфейса Microsoft. Common. Армапиконтрол
@@ -43,7 +43,7 @@ ms.locfileid: "87098153"
 
 Выходные данные элемента управления не отображаются для пользователя. Вместо этого результат операции используется в других элементах управления.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 - `request.method`Свойство указывает метод HTTP. `GET` `POST` Разрешены только или.
 - `request.path`Свойство указывает относительный путь URL-адреса. Это может быть статический путь, или его можно создать динамически, обратившись к выходным значениям других элементов управления.

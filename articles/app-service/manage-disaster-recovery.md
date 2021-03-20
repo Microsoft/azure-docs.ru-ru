@@ -5,10 +5,10 @@ ms.topic: how-to
 ms.date: 06/09/2020
 ms.custom: subject-moving-resources
 ms.openlocfilehash: 1388dc11254324f74efcbaa55c97cac2ccd0c026
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87073744"
 ---
 # <a name="move-an-app-service-app-to-another-region"></a>Перемещение приложения службы приложений в другой регион
@@ -21,9 +21,9 @@ ms.locfileid: "87073744"
 
 - Нет. Для [восстановления из моментального снимка](app-service-web-restore-snapshots.md) обычно требуется уровень " **премиум** ", но в режиме аварийного восстановления он автоматически включается для затронутого приложения, независимо от уровня, в котором находится затронутое приложение.
 
-## <a name="prepare"></a>Подготовка.
+## <a name="prepare"></a>Подготовка
 
-Найдите все ресурсы службы приложений, которые в настоящее время использует затронутое приложение. Пример.
+Найдите все ресурсы службы приложений, которые в настоящее время использует затронутое приложение. Пример:
 
 - Приложения службы приложений
 - [Планы службы приложений](overview-hosting-plans.md)
@@ -67,7 +67,7 @@ ms.locfileid: "87073744"
 
     ![Снимок экрана со страницей затронутого приложения. Предупреждение отображается, но не выделено. Вместо этого выводится выделенный элемент профиля публикации.](media/manage-disaster-recovery/get-publish-profile.png)
 
-1. Откройте скачанный файл и найдите профиль публикации, содержащий `ReadOnly - FTP` его имя. Это профиль аварийного восстановления. Пример.
+1. Откройте скачанный файл и найдите профиль публикации, содержащий `ReadOnly - FTP` его имя. Это профиль аварийного восстановления. Пример:
 
     ```xml
     <publishProfile profileName="%app-name% - ReadOnly - FTP" publishMethod="FTP" publishUrl="ftp://%ftp-site%/site/wwwroot" ftpPassiveMode="True" userName="%app-name%\$%app-name%" userPWD="" destinationAppUrl="http://%app-name%.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">

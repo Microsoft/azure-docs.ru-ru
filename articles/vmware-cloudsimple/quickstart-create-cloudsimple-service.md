@@ -10,10 +10,10 @@ ms.service: azure-vmware-cloudsimple
 ms.reviewer: cynthn
 manager: dikamath
 ms.openlocfilehash: 14df0f131aaef8a4c24e2d1eb242a9b440e7c7b0
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "86507596"
 ---
 # <a name="quickstart---create-azure-vmware-solution-by-cloudsimple-service"></a>Краткое руководство. Создание решения Azure VMware с помощью службы Клаудсимпле
@@ -38,7 +38,7 @@ ms.locfileid: "86507596"
 
 ## <a name="create-the-service"></a>Создание службы
 
-1. Выберите элемент **Все службы**.
+1. Выбор пункта **Все службы**.
 2. Выполните поиск **службы клаудсимпле**.
 
     ![Поиск службы Клаудсимпле](media/create-cloudsimple-service-search.png)
@@ -55,7 +55,7 @@ ms.locfileid: "86507596"
 
     ![Создание службы Клаудсимпле](media/create-cloudsimple-service.png)
 
-9. Нажмите кнопку **ОК**.
+9. Нажмите кнопку **OK**.
 
 Служба будет создана и добавлена в список служб.
 
@@ -63,7 +63,7 @@ ms.locfileid: "86507596"
 
 Чтобы настроить емкость с оплатой по мере использования для среды частного облака Клаудсимпле, сначала подготавливает узлы в портал Azure.
 
-1. Выберите элемент **Все службы**.
+1. Выбор пункта **Все службы**.
 2. Выполните поиск **узлов клаудсимпле**.
 
     ![Поиск узлов Клаудсимпле](media/create-cloudsimple-node-search.png)

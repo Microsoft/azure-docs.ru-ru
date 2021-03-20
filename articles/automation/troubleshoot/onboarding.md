@@ -5,10 +5,10 @@ services: automation
 ms.date: 02/11/2021
 ms.topic: troubleshooting
 ms.openlocfilehash: 43bc367be9ad9bb32f33f94df774acb3e808182a
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100651125"
 ---
 # <a name="troubleshoot-feature-deployment-issues"></a>Устранение неполадок с развертыванием компонентов
@@ -238,7 +238,7 @@ Install failed for plugin (name: Microsoft.EnterpriseCloud.Monitoring.MicrosoftM
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Если вы не нашли здесь свою проблему или не смогли ее решить, попробуйте использовать один из следующих каналов для получения дополнительной поддержки:
+Если вы не нашли здесь свою проблему или рекомендации не позволили ее решить, попробуйте использовать один из следующих каналов для получения дополнительной поддержки.
 
 * Получите ответы специалистов Azure на [форумах Azure](https://azure.microsoft.com/support/forums/).
 * Подпишитесь на [@AzureSupport](https://twitter.com/azuresupport) — официальный канал Microsoft Azure для работы с клиентами. Служба поддержки Azure взаимодействует с сообществом Azure, предоставляя ответы, поддержку и советы экспертов.

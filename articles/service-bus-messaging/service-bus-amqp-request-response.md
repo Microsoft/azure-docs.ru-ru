@@ -4,10 +4,10 @@ description: В этой статье описывается список опе
 ms.topic: article
 ms.date: 06/23/2020
 ms.openlocfilehash: b845f4086ee1ac4fe868571c1754caf6d29b9021
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88064422"
 ---
 # <a name="amqp-10-in-microsoft-azure-service-bus-request-response-based-operations"></a>AMQP 1.0 в служебной шине Microsoft Azure: операции c запросами и ответами
@@ -190,7 +190,7 @@ properties: {
   
 |Ключ|Тип значения|Обязательно|Содержимое значения|  
 |---------|----------------|--------------|--------------------|  
-|сообщение|Массив байтов|Да|Сообщение с кодированием линии связи AMQP 1.0.|  
+|message|Массив байтов|Да|Сообщение с кодированием линии связи AMQP 1.0.|  
   
 ### <a name="schedule-message"></a>Расписание сообщения  
 
@@ -219,7 +219,7 @@ properties: {
 |session-id|Строка|Нет|`amqpMessage.Properties.GroupId as string`|  
 |partition-key|Строка|Нет|`amqpMessage.MessageAnnotations.”x-opt-partition-key"`|
 |via-partition-key|Строка|Нет|`amqpMessage.MessageAnnotations."x-opt-via-partition-key"`|
-|сообщение|Массив байтов|Да|Сообщение с кодированием линии связи AMQP 1.0.|  
+|message|Массив байтов|Да|Сообщение с кодированием линии связи AMQP 1.0.|  
   
 #### <a name="response"></a>Ответ  
 
@@ -340,7 +340,7 @@ properties: {
   
 |Ключ|Тип значения|Обязательно|Содержимое значения|  
 |---------|----------------|--------------|--------------------|  
-|сообщение|Массив байтов|Да|Сообщение с кодированием линии связи AMQP 1.0.|  
+|message|Массив байтов|Да|Сообщение с кодированием линии связи AMQP 1.0.|  
   
 ### <a name="set-session-state"></a>Установка состояния сеанса  
 
@@ -652,7 +652,7 @@ properties: {
 |Ключ|Тип значения|Обязательно|Содержимое значения|  
 |---------|----------------|--------------|--------------------|  
 |lock-token|uuid|Да|Маркер блокировки, если значение `receiver-settle-mode` равно -1.|  
-|сообщение|Массив байтов|Да|Сообщение с кодированием линии связи AMQP 1.0.|  
+|message|Массив байтов|Да|Сообщение с кодированием линии связи AMQP 1.0.|  
   
 ### <a name="update-disposition-status"></a>Обновление состояния метода обработки  
 
@@ -686,7 +686,7 @@ properties: {
 |statusCode|INT|Да|Код ответа HTTP [RFC2616].<br /><br /> 200: ОК — операция выполнена успешно; в противном случае — сбой.|  
 |statusDescription|Строка|Нет|Описание состояния.|
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения о служебной шине и AMQP см. по следующим ссылкам.
 

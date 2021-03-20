@@ -12,10 +12,10 @@ ms.author: jovanpop
 ms.reviewer: sstein
 ms.date: 01/14/2020
 ms.openlocfilehash: 19cec1deeef344ea5897061db0fec88066b90b05
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92791772"
 ---
 # <a name="configure-and-manage-content-reference---azure-sql-database"></a>Настройка и управление ссылкой на содержимое в базе данных SQL Azure
@@ -111,7 +111,7 @@ ms.locfileid: "92791772"
 
 ## <a name="develop-applications"></a>Разработка приложений
 
-- [Подключение](connect-query-content-reference-guide.md#libraries)
+- [Соединение](connect-query-content-reference-guide.md#libraries)
 - [Использование соединителя Spark](spark-connector.md)
 - [Аутентификация приложения](application-authentication-get-client-id-keys.md)
 - [Использование пакетной обработки для лучшей производительности](../performance-improve-use-batching.md)

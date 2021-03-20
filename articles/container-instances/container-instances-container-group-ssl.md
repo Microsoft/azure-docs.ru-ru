@@ -4,10 +4,10 @@ description: Создайте конечную точку SSL или TLS для 
 ms.topic: article
 ms.date: 07/02/2020
 ms.openlocfilehash: 6587a84e7cbe655c509f74e9e39e93010e7058be
-ms.sourcegitcommit: 65a4f2a297639811426a4f27c918ac8b10750d81
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96558085"
 ---
 # <a name="enable-a-tls-endpoint-in-a-sidecar-container"></a>Включение конечной точки TLS в контейнере расширения
@@ -26,7 +26,7 @@ ms.locfileid: "96558085"
 
 - Для работы с этой статьей требуется версия 2.0.55 или более поздняя Azure CLI. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
-## <a name="create-a-self-signed-certificate"></a>Создание самозаверяющего сертификата.
+## <a name="create-a-self-signed-certificate"></a>Создание самозаверяющего сертификата
 
 Чтобы настроить nginx в качестве поставщика TLS, требуется сертификат TLS/SSL. В этой статье показано, как создать и настроить самозаверяющий сертификат TLS/SSL. В рабочих сценариях следует получить сертификат из центра сертификации.
 

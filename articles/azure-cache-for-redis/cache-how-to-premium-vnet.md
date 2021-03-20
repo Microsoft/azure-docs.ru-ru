@@ -7,10 +7,10 @@ ms.service: cache
 ms.topic: conceptual
 ms.date: 02/08/2021
 ms.openlocfilehash: 94bbb9bb683f40d44d6649802b66bda6feeee218
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100375278"
 ---
 # <a name="configure-virtual-network-support-for-a-premium-azure-cache-for-redis-instance"></a>Настройка поддержки виртуальной сети для кэша Azure уровня "Премиум" для экземпляра Redis
@@ -72,7 +72,7 @@ ms.locfileid: "100375278"
 
 1. При необходимости на вкладке **теги** введите имя и значение, если требуется классифицировать ресурс.
 
-1. Выберите **Просмотр и создание**. Вы перейдете на вкладку " **Проверка и создание** ", где Azure проверяет конфигурацию.
+1. Выберите **Review + create** (Просмотреть и создать). Вы перейдете на вкладку " **Проверка и создание** ", где Azure проверяет конфигурацию.
 
 1. После появления сообщения "Зеленая **Проверка пройдена** " выберите **создать**.
 
@@ -263,7 +263,7 @@ Azure резервирует некоторые IP-адреса в каждой 
 
 Дополнительные сведения об ExpressRoute см. в статье [Технический обзор ExpressRoute](../expressroute/expressroute-introduction.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о кэше Azure для функций Redis.
 

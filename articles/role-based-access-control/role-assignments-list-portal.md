@@ -10,10 +10,10 @@ ms.workload: identity
 ms.date: 12/09/2020
 ms.author: rolyon
 ms.openlocfilehash: 7d53df4159c071c17657e8a8367da605b6a5dc9e
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100556172"
 ---
 # <a name="list-azure-role-assignments-using-the-azure-portal"></a>Вывод списка назначений ролей Azure с помощью портала Azure.
@@ -63,7 +63,7 @@ ms.locfileid: "100556172"
 
 1. Щелкните конкретный ресурс.
 
-1. Выберите **Управление доступом (IAM)**.
+1. Щелкните **Управление доступом (IAM)** .
 
 1. Щелкните вкладку **Назначения ролей**, чтобы просмотреть все назначения ролей в этой области.
 
@@ -159,7 +159,7 @@ ms.locfileid: "100556172"
 
 1. Щелкните конкретный ресурс.
 
-1. Выберите **Управление доступом (IAM)**.
+1. Щелкните **Управление доступом (IAM)** .
 
 1. Нажмите кнопку **скачать назначения ролей** , чтобы открыть область Загрузка назначений ролей.
 
@@ -185,5 +185,5 @@ ms.locfileid: "100556172"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Назначение ролей Azure с помощью портал Azure](role-assignments-portal.md)
+- [Назначение ролей Azure с помощью портала Azure](role-assignments-portal.md)
 - [Устранение неполадок в Azure RBAC](troubleshooting.md)

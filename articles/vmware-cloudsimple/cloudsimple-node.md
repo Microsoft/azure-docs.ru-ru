@@ -9,10 +9,10 @@ ms.service: azure-vmware-cloudsimple
 ms.reviewer: cynthn
 manager: dikamath
 ms.openlocfilehash: 7de4b5faa997d909089daedab7e48e5d5a6de2e7
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88140842"
 ---
 # <a name="cloudsimple-nodes-overview"></a>Обзор узлов Клаудсимпле
@@ -36,7 +36,7 @@ ms.locfileid: "88140842"
 
 Для подготовки или резервирования доступны следующие типы узлов.
 
-| номер SKU           | CS28-node                 | CS36-node                 | CS36m-node                |
+| SKU           | CS28-node                 | CS36-node                 | CS36m-node                |
 |---------------|-----------------------------|-----------------------------|-----------------------------|
 | Регион        | Восточная часть США, западная часть США            | Восточная часть США, западная часть США            | Западная Европа                 |
 | ЦП           | 2 2,2 ГГц, 28 ядер (56 HT) | 2 ядра с частотой 2.3 ГГц, 36 ядер (72 HT) | 2 ядра с частотой 2.3 ГГц, 36 ядер (72 HT) |
@@ -56,7 +56,7 @@ ms.locfileid: "88140842"
 | Максимальное число узлов в частном облаке | 64 |
 | Минимальное число узлов в новом кластере | 3 |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Сведения о [подготовке узлов](create-nodes.md)
 * Сведения о [частных облаках](cloudsimple-private-cloud.md)

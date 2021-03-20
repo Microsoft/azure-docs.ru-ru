@@ -7,10 +7,10 @@ ms.topic: troubleshooting
 ms.date: 01/25/2021
 ms.author: lle
 ms.openlocfilehash: 2cb0e0870b32270340e37d54dc54a43b22ee014a
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100376468"
 ---
 # <a name="troubleshoot-self-hosted-integration-runtime"></a>Устранение неполадок с локальной средой выполнения интеграции
@@ -334,7 +334,7 @@ ms.locfileid: "100376468"
             b. Установите собственные IR-биты.  
             c. Измените учетную запись службы, выполнив следующие действия.  
 
-             и. Перейдите в папку с локальной ИНФРАКРАСной установкой и перейдите в папку *Microsoft Integration Runtime\4.0\Shared* .  
+             i. Перейдите в папку с локальной ИНФРАКРАСной установкой и перейдите в папку *Microsoft Integration Runtime\4.0\Shared* .  
              ii. Откройте окно командной строки с повышенными привилегиями. Замените *\<user>* и *\<password>* собственным именем пользователя и паролем, а затем выполните следующую команду:   
                 `dmgcmd.exe -SwitchServiceAccount "<user>" "<password>"`  
              iii. Если вы хотите перейти на учетную запись LocalSystem, убедитесь, что для этой учетной записи используется правильный формат: `dmgcmd.exe -SwitchServiceAccount "NT Authority\System" ""`  
@@ -791,7 +791,7 @@ ms.locfileid: "100376468"
 
 Локальная среда IR не может совместно использоваться несколькими клиентами.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Для получения дополнительных сведений об устранении неполадок воспользуйтесь следующими ресурсами:
 

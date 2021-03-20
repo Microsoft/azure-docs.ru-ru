@@ -7,10 +7,10 @@ ms.reviewer: estfan, logicappspm, azla
 ms.topic: conceptual
 ms.date: 01/11/2021
 ms.openlocfilehash: 4d83609eea57c2350881360ef757b1a291627c23
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100374734"
 ---
 # <a name="access-to-azure-virtual-network-resources-from-azure-logic-apps-by-using-integration-service-environments-ises"></a>Доступ к ресурсам виртуальных сетей Azure из Azure Logic Apps с использованием сред службы интеграции (ISE)
@@ -127,7 +127,7 @@ ms.locfileid: "100374734"
   > * Azure DevOps
   > * Сетка событий Azure
   > * Common Data Service
-  > * Office 365
+  > * Office 365
   > * SAP (версия ISE)
   > 
   > Кроме того, убедитесь в наличии сетевого подключения между частными конечными точками и компьютером, с которого требуется получить доступ к журналу выполнения. В противном случае при попытке просмотра журнала выполнения приложения логики появляется сообщение об ошибке "непредвиденная ошибка". Не удалось получить ".
@@ -154,7 +154,7 @@ ms.locfileid: "100374734"
 
 Учетные записи интеграции с приложениями логики можно использовать в среде службы интеграции. Тем не менее эти учетные записи интеграции должны использовать *ту же ISE*, что и связанные приложения логики. Приложения логики в среде ISE могут ссылаться только на те учетные записи интеграции, которые находятся в одной с ними среде ISE. При создании учетной записи интеграции можно выбрать среду ISE в качестве расположения учетной записи интеграции. Чтобы узнать, как цены и данные о выставлении счетов для учетных записей интеграции с интегрированной средой ISE, см. [Logic Appsную модель ценообразования](../logic-apps/logic-apps-pricing.md#fixed-pricing). Сведения о тарифах см. на странице [цен на Logic Apps](https://azure.microsoft.com/pricing/details/logic-apps/). Сведения об ограничениях см. в разделе [ограничения учетной записи интеграции](../logic-apps/logic-apps-limits-and-config.md#integration-account-limits).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Подключение к виртуальным сетям Azure из Azure Logic Apps](../logic-apps/connect-virtual-network-vnet-isolated-environment.md)
 * Узнайте больше о [виртуальной сети Azure](../virtual-network/virtual-networks-overview.md).

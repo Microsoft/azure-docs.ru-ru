@@ -16,10 +16,10 @@ ms.date: 11/03/2020
 ms.author: barclayn
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9eb5f1d81874c8303d095aec320f60cc9ae6a7dc
-ms.sourcegitcommit: 6a902230296a78da21fbc68c365698709c579093
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93360570"
 ---
 # <a name="how-to-use-managed-identities-for-azure-resources-on-an-azure-vm-with-azure-sdks"></a>Как использовать управляемые удостоверения для ресурсов Azure на виртуальной машине Azure с пакетами SDK для Azure 
@@ -27,7 +27,7 @@ ms.locfileid: "93360570"
 [!INCLUDE [preview-notice](../../../includes/active-directory-msi-preview-notice.md)]  
 В этой статье приведен список примеров для пакета SDK, в которых демонстрируется использование поддержки пакета SDK Azure для управляемых удостоверений для ресурсов Azure.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [msi-qs-configure-prereqs](../../../includes/active-directory-msi-qs-configure-prereqs.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "93360570"
 | SDK             | Пример кода |
 | --------------- | ----------- |
 | .NET            | [Развертывание шаблона Azure Resource Manager с виртуальной машины Windows с помощью управляемых удостоверений для ресурсов Azure](https://github.com/Azure-Samples/windowsvm-msi-arm-dotnet) |
-| .NET Core       | [Вызов служб Azure с виртуальной машины Linux с помощью управляемых удостоверений для ресурсов Azure](https://github.com/Azure-Samples/linuxvm-msi-keyvault-arm-dotnet/) |
+| .NET Core       | [Вызов служб Azure с виртуальной машины Linux с помощью управляемых удостоверений для ресурсов Azure](https://github.com/Azure-Samples/linuxvm-msi-keyvault-arm-dotnet/) |
 | Node.js         | [Управление ресурсами с помощью управляемых удостоверений для ресурсов Azure](https://azure.microsoft.com/resources/samples/resources-node-manage-resources-with-msi/) |
 | Python          | [Использование управляемых удостоверений для ресурсов Azure для аутентификации из виртуальной машины](https://azure.microsoft.com/resources/samples/resource-manager-python-manage-resources-with-msi/) |
 | Ruby            | [Управление ресурсами из виртуальной машины, на которой включены управляемые удостоверения для ресурсов Azure](https://github.com/Azure-Samples/resources-ruby-manage-resources-with-msi/) |

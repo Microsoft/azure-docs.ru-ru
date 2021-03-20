@@ -10,13 +10,13 @@ author: dphansen
 ms.author: davidph
 ms.date: 05/19/2020
 ms.openlocfilehash: 5dc3d44ac4396897fd43831d51ee628bb06048cb
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93392067"
 ---
-# <a name="machine-learning-and-ai-with-onnx-in-sql-edge"></a>Машинное обучение и ИИ с применением ONNX в SQL для пограничных вычислений
+# <a name="machine-learning-and-ai-with-onnx-in-sql-edge"></a>Машинное обучение и AI с ONNX в SQL Server
 
 Машинное обучение в Azure SQL ребро поддерживает модели в формате [Open нейронной сети (ONNX)](https://onnx.ai/) . ONNX — это открытый формат, который можно использовать для обмена моделями между различными [платформами и инструментами машинного обучения](https://onnx.ai/supported-tools).
 
@@ -43,7 +43,7 @@ ms.locfileid: "93392067"
 
 ## <a name="limitations"></a>Ограничения
 
-В настоящее время SQL Azure для пограничных вычислений поддерживает не все модели ONNX. Поддержка ограничена моделями с **числовыми типами данных** :
+В настоящее время SQL Azure для пограничных вычислений поддерживает не все модели ONNX. Поддержка ограничена моделями с **числовыми типами данных**:
 
 - [int и bigint](/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql);
 - [real и float](/sql/t-sql/data-types/float-and-real-transact-sql).

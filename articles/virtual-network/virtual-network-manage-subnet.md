@@ -14,17 +14,17 @@ ms.workload: infrastructure-services
 ms.date: 03/20/2020
 ms.author: kumud
 ms.openlocfilehash: d591194f09e85c3e34ed4b904249df994a14bff5
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100558581"
 ---
 # <a name="add-change-or-delete-a-virtual-network-subnet"></a>Создание, изменение или удаление виртуальной сети
 
 Сведения о создании, изменении и удалении подсетей виртуальной сети. Все ресурсы Azure, развернутые в виртуальной сети, также развертываются в подсети виртуальной сети. Если вы не знакомы с виртуальными сетями, см. Дополнительные сведения о них в [обзоре виртуальной сети](virtual-networks-overview.md) или в ходе [краткого руководства](quick-create-portal.md). Дополнительные сведения об управлении виртуальной сетью см. в статье [Создание, изменение или удаление виртуальной сети](manage-virtual-network.md).
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Если у вас ее нет, настройте учетную запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) бесплатно. Затем выполните одну из этих задач, прежде чем запускать шаги в любом разделе этой статьи. 
 
@@ -61,7 +61,7 @@ ms.locfileid: "100558581"
 
 ### <a name="commands"></a>Команды
 
-| Средство | Get-Help |
+| Инструмент | Команда |
 | ---- | ------- |
 | Azure CLI | [az network vnet subnet create](/cli/azure/network/vnet/subnet#az-network-vnet-subnet-create) |
 | PowerShell | [Add-AzVirtualNetworkSubnetConfig](/powershell/module/az.network/add-azvirtualnetworksubnetconfig) |
@@ -90,7 +90,7 @@ ms.locfileid: "100558581"
 
 ### <a name="commands"></a>Команды
 
-| Средство | Get-Help |
+| Инструмент | Команда |
 | ---- | ------- |
 | Azure CLI | [az network vnet subnet update](/cli/azure/network/vnet/subnet#az-network-vnet-subnet-update) |
 | PowerShell | [Set-AzVirtualNetworkSubnetConfig](/powershell/module/az.network/set-azvirtualnetworksubnetconfig) |
@@ -111,7 +111,7 @@ ms.locfileid: "100558581"
 
 ### <a name="commands"></a>Команды
 
-| Средство | Get-Help |
+| Инструмент | Команда |
 | ---- | ------- |
 | Azure CLI | [AZ сетевая подсеть vnet удаление](/cli/azure/network/vnet/subnet#az-network-vnet-subnet-delete) |
 | PowerShell | [Remove-Азвиртуалнетворксубнетконфиг](/powershell/module/az.network/remove-azvirtualnetworksubnetconfig?toc=%2fazure%2fvirtual-network%2ftoc.json) |
