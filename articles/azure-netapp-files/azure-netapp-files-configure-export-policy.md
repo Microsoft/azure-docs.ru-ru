@@ -9,10 +9,10 @@ ms.workload: storage
 ms.topic: how-to
 ms.date: 07/27/2020
 ms.openlocfilehash: d3f268a4ce2660350055367770e987a06828e2d7
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101740126"
 ---
 # <a name="configure-export-policy-for-an-nfs-volume"></a>Настройка политики экспорта для тома NFS

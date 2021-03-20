@@ -8,10 +8,10 @@ author: parthpandyaMSFT
 ms.author: parthp
 ms.date: 09/23/2019
 ms.openlocfilehash: 9e9f3b7ea3d99de51b9398bda82b690d2c249a1d
-ms.sourcegitcommit: 59f506857abb1ed3328fda34d37800b55159c91d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92520971"
 ---
 # <a name="how-to-migrate-your-account-from-cloud-partner-portal-to-partner-center"></a>Перенос учетной записи с Портала Cloud Partner в Центр партнеров

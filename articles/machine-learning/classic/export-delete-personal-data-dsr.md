@@ -10,10 +10,10 @@ ms.author: keli19
 ms.custom: previous-author=heatherbshapiro, previous-ms.author=hshapiro
 ms.date: 05/25/2018
 ms.openlocfilehash: b2d797cc6cb45a76a61a235e7c4c66ac6f243580
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100519870"
 ---
 # <a name="export-and-delete-in-product-user-data-from-azure-machine-learning-studio-classic"></a>Экспорт и удаление данных из пользовательского продукта из Машинное обучение Azure Studio (классическая модель)
@@ -76,6 +76,6 @@ ms.locfileid: "100519870"
 ## <a name="export-studio-classic-data-with-powershell"></a>Экспорт данных студии (классическая модель) с помощью PowerShell
 Используйте PowerShell, чтобы экспортировать всю информацию в переносимый формат из Машинное обучение Azure Studio (классической) с помощью команд. Дополнительные сведения см. в статье [модуль PowerShell для машинное обучение Azure Studio (классическая модель)](powershell-module.md) .
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Документацию, посвященную веб-службам и плану обязательств, см. в разделе [машинное обучение Azure Studio (классическая модель) REST API справочнике](/rest/api/machinelearning/).

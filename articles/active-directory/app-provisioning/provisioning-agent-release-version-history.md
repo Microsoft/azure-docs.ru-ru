@@ -12,10 +12,10 @@ ms.subservice: app-provisioning
 ms.author: kenwith
 ms.reviewer: celested
 ms.openlocfilehash: e12b1bff611800e808b2c3144642795a675f3b28
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99256632"
 ---
 # <a name="azure-ad-connect-provisioning-agent-version-release-history"></a>Агент подготовки Azure AD Connect: журнал выпусков версий

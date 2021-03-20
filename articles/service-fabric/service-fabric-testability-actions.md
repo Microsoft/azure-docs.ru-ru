@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 06/07/2017
 ms.custom: devx-track-csharp
 ms.openlocfilehash: c57f54096a9593f5ab25a5722d3f2d2b9878b511
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100595017"
 ---
 # <a name="testability-actions"></a>Действия, доступные благодаря Testability
@@ -29,7 +29,7 @@ ms.locfileid: "100595017"
 ## <a name="testability-actions-list"></a>Список действий, доступных благодаря Testability
 | Действие | Описание | Управляемый API | Командлет PowerShell | Нормальная или ненормальная ошибка |
 | --- | --- | --- | --- | --- |
-| CleanTestState |Удаляет все данные о состоянии тестирования из кластера в случае неправильного завершения работы тестового драйвера. |CleanTestStateAsync |Remove-ServiceFabricTestState |Не применяются |
+| CleanTestState |Удаляет все данные о состоянии тестирования из кластера в случае неправильного завершения работы тестового драйвера. |CleanTestStateAsync |Remove-ServiceFabricTestState |Неприменимо |
 | InvokeDataLoss |Приводит к потере данных в разделе службы. |InvokeDataLossAsync |Invoke-ServiceFabricPartitionDataLoss |Нормальная |
 | InvokeQuorumLoss |Приводит к потере кворума в указанном разделе службы с отслеживанием состояния. |InvokeQuorumLossAsync |Invoke-ServiceFabricQuorumLoss |Нормальная |
 | MovePrimary |Перемещает заданную первичную реплику службы с отслеживанием состояния на указанный узел кластера. |MovePrimaryAsync |Move-ServiceFabricPrimaryReplica |Нормальная |
@@ -39,10 +39,10 @@ ms.locfileid: "100595017"
 | RestartNode |Имитирует ошибку узла кластера Service Fabric путем перезапуска узла. |RestartNodeAsync |Restart-ServiceFabricNode |Ненормальная |
 | RestartPartition |Имитирует сценарий отключения центра обработки данных или кластера путем перезапуска некоторых или всех реплик раздела. |RestartPartitionAsync |Restart-ServiceFabricPartition |Нормальная |
 | RestartReplica |Имитирует ошибку реплики путем перезапуска материализованной реплики в кластере с последующим закрытием и открытием реплики. |RestartReplicaAsync |Restart-ServiceFabricReplica |Нормальная |
-| StartNode |Запускает узел в кластере, который уже остановлен. |StartNodeAsync |Start-ServiceFabricNode |Не применяются |
+| StartNode |Запускает узел в кластере, который уже остановлен. |StartNodeAsync |Start-ServiceFabricNode |Неприменимо |
 | StopNode |Имитирует ошибку узла, останавливая его работу в кластере. Узел начнет работу только после вызова StartNode. |StopNodeAsync |Stop-ServiceFabricNode |Ненормальная |
-| ValidateApplication |Проверяет доступность и работоспособность всех служб Service Fabric в приложении обычно после инициирования ошибки в системе. |ValidateApplicationAsync |Test-ServiceFabricApplication |Не применяются |
-| ValidateService |Проверяет доступность и работоспособность службы Service Fabric обычно после инициирования ошибки в системе. |ValidateServiceAsync |Test-ServiceFabricService |Не применяются |
+| ValidateApplication |Проверяет доступность и работоспособность всех служб Service Fabric в приложении обычно после инициирования ошибки в системе. |ValidateApplicationAsync |Test-ServiceFabricApplication |Неприменимо |
+| ValidateService |Проверяет доступность и работоспособность службы Service Fabric обычно после инициирования ошибки в системе. |ValidateServiceAsync |Test-ServiceFabricService |Неприменимо |
 
 ## <a name="running-a-testability-action-using-powershell"></a>Выполнение действия тестирования с помощью PowerShell
 В этом учебнике показано, как выполнить действие, доступное благодаря Testability, с помощью PowerShell. Вы узнаете, как выполнить такое действие для тестирования локального (содержащего одно поле) кластера или кластера Azure. Microsoft.Fabric.Powershell.dll — модуль PowerShell Service Fabric — устанавливается автоматически при установке MSI Microsoft Service Fabric. Этот модуль автоматически загружается при открытии командной строки PowerShell.
@@ -217,7 +217,7 @@ ReplicaSelector replicaByIdSelector = ReplicaSelector.ReplicaIdOf(partitionSelec
 ReplicaSelector secondaryReplicaSelector = ReplicaSelector.RandomSecondaryOf(partitionSelector);
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Сценарии Testability](service-fabric-testability-scenarios.md)
 * Тестирование службы
   * [Моделирование ошибок во время рабочих нагрузок службы](service-fabric-testability-workload-tests.md)

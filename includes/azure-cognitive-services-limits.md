@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 07/30/2019
 ms.author: erhopf
 ms.openlocfilehash: c9d73804484ea7cc72e0198b857099fd8fba46d5
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95559359"
 ---
 Ниже приведены ограничения числа ресурсов Cognitive Services на подписку Azure. В каждой из служб Cognitive Services могут быть дополнительные ограничения. Дополнительные сведения см. в статье об [Azure Cognitive Services](../articles/cognitive-services/index.yml).

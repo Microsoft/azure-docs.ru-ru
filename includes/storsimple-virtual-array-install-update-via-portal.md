@@ -5,17 +5,17 @@ ms.topic: include
 ms.date: 10/26/2018
 ms.author: alkohli
 ms.openlocfilehash: df572b88cf8a67163b28ec87154dcea01646b9a2
-ms.sourcegitcommit: b8eba4e733ace4eb6d33cc2c59456f550218b234
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95555487"
 ---
 #### <a name="to-install-updates-via-the-azure-portal"></a>Установка обновлений с помощью портала Azure
 
 1. Откройте диспетчер устройств StorSimple и выберите **Устройства**. Из списка устройств, подключенных к службе, выберите то, которое требуется обновить. 
 
-    ![В последней версии Device Manager Миссдевманажер выделены и выбраны, устройства выделяются и выбираются, а устройство MYSSIS1103 выделяется и выбирается.](../includes/media/storsimple-virtual-array-install-update-via-portal/azupdate1m.png) 
+    ![В последней версии диспетчер устройств Миссдевманажер выделены и выбраны, устройства выделяются и выбираются, а устройство MYSSIS1103 выделяется и выбирается.](../includes/media/storsimple-virtual-array-install-update-via-portal/azupdate1m.png) 
 
 2. В колонке **Параметры** щелкните **Обновления устройства**. 
 
@@ -33,7 +33,7 @@ ms.locfileid: "95555487"
 
     ![На панели "обновления устройства" отображается надпись "новые обновления доступны" и "последний сканированный/11/3/2016 2:12 программный/версия/10.0.10280.0". Версия выделена.](../includes/media/storsimple-virtual-array-install-update-via-portal/azupdate6m.png)
 
-5. В колонке **Свежие обновления** просмотрите сообщение о подтверждении установки после загрузки обновлений. Нажмите кнопку **ОК**.
+5. В колонке **Свежие обновления** просмотрите сообщение о подтверждении установки после загрузки обновлений. Нажмите кнопку **OK**.
 
     ![В области новые обновления появится сообщение "после загрузки обновлений необходимо подтвердить установку". Кнопка ОК выделяется.](../includes/media/storsimple-virtual-array-install-update-via-portal/azupdate7m.png)
 

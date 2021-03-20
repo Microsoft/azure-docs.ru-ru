@@ -4,10 +4,10 @@ description: Эта статья содержит сведения о нерек
 ms.topic: article
 ms.date: 09/25/2020
 ms.openlocfilehash: b82772b364bbc44a898197e7fafd11b33e2e6320
-ms.sourcegitcommit: 59f506857abb1ed3328fda34d37800b55159c91d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92518795"
 ---
 # <a name="deprecation-of-azure-service-manager-support-for-azure-service-bus-relay-and-event-hubs"></a>Нерекомендуемая поддержка Azure Service Manager для служебной шины, ретранслятора и концентраторов событий Azure
@@ -30,8 +30,8 @@ ms.locfileid: "92518795"
 | --------------- | ----------------- | ----------------- | ----------------- | 
 | **Пространства имен — Жетнамеспацеасинк** <br/>[Получение пространства имен служебной шины](/rest/api/servicebus/get-namespace)<br/>[Пространство имен для получения концентратора событий](/rest/api/eventhub/get-event-hub)<br/>[Получение пространства имен ретранслятора](/rest/api/servicebus/get-relays)<br/> ```GET https://management.core.windows.net/{subscription ID}/services/ServiceBus/Namespaces/{namespace name}``` | [get](/rest/api/servicebus/stable/namespaces/get) | [get](/rest/api/eventhub/2017-04-01/namespaces/get) | [get](/rest/api/relay/namespaces/get) |
 | **ConnectionDetails — Жетконнектиондетаилс**<br/>Служебная шина/концентратор событий/ретранслятор Жетконнектиондеталс<br/>```GET https://management.core.windows.net/{subscription ID}/services/ServiceBus/Namespaces/{namespace name}/ConnectionDetails``` | [listkeys](/rest/api/servicebus/stable/namespaces%20-%20authorization%20rules/listkeys) | [listkeys](/rest/api/eventhub/2017-04-01/authorization%20rules%20-%20event%20hubs/listkeys) | [listkeys](/rest/api/relay/namespaces/listkeys) |
-| **Темы — Жеттопиксасинк**<br/>Служебная шина<br/>```GET https://management.core.windows.net/{subscription ID}/services/ServiceBus/Namespaces/{namespace name}/topics? $skip={skip}&$top={top}``` | [list](/rest/api/servicebus/stable/topics/listbynamespace) | &nbsp; | &nbsp; | 
-| **Очереди — Жеткуеуеасинк** <br/>Служебная шина<br/>```GET https://management.core.windows.net/{subscription ID}/services/ServiceBus/Namespaces/{namespace name}/queues/{queueName}``` | [get](/rest/api/servicebus/stable/queues/get) | &nbsp; | &nbsp; | 
+| **Темы — Жеттопиксасинк**<br/>Cлужебная шина<br/>```GET https://management.core.windows.net/{subscription ID}/services/ServiceBus/Namespaces/{namespace name}/topics? $skip={skip}&$top={top}``` | [list](/rest/api/servicebus/stable/topics/listbynamespace) | &nbsp; | &nbsp; | 
+| **Очереди — Жеткуеуеасинк** <br/>Cлужебная шина<br/>```GET https://management.core.windows.net/{subscription ID}/services/ServiceBus/Namespaces/{namespace name}/queues/{queueName}``` | [get](/rest/api/servicebus/stable/queues/get) | &nbsp; | &nbsp; | 
 | **Реле — Жетрелайсасинк**<br/>[Получение ретрансляторов](/rest/api/servicebus/get-relays)<br/>```GET https://management.core.windows.net/{subscription ID}/services/ServiceBus/Namespaces/{namespace name}/relays? $skip={skip}&$top={top}```| &nbsp; | &nbsp; | [list](/rest/api/relay/wcfrelays/listbynamespace) | 
 | **Намеспацеаусоризатионрулес — Жетнамеспацеаусоризатионрулеасинк**<br/>Служебная шина/концентратор событий/ретранслятор Жетнамеспацеаусруле<br/>```GET https://management.core.windows.net/{subscription ID}/services/ServiceBus/Namespaces/{namespace name}/authorizationrules?``` | [жетаусоризатионруле](/rest/api/servicebus/stable/namespaces%20-%20authorization%20rules/getauthorizationrule) | [жетаусоризатионруле](/rest/api/eventhub/2017-04-01/authorization%20rules%20-%20namespaces/getauthorizationrule) | [жетаусоризатионруле](/rest/api/relay/namespaces/getauthorizationrule) |
 | **Пространства имен — Делетенамеспацеасинк**<br/>[Пространство имен для удаления служебной шины](/rest/api/servicebus/delete-namespace)<br/>[Пространство имен для концентраторов событий](/rest/api/eventhub/delete-event-hub)<br/>[Ретрансляция пространства имен удаления](/rest/api/servicebus/delete-namespace)<br/> ```DELETE  https://management.core.windows.net/{subscription ID}/services/ServiceBus/Namespaces/{namespace name}``` | [delete](/rest/api/servicebus/stable/namespaces/delete) | [delete](/rest/api/eventhub/2017-04-01/namespaces/delete) | [delete](/rest/api/relay/namespaces/delete) | 

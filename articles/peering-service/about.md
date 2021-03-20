@@ -11,10 +11,10 @@ ms.workload: Infrastructure-services
 ms.date: 05/18/2020
 ms.author: derekol
 ms.openlocfilehash: 198ba23920179e71e095e498ee2173d7f0111d42
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95026735"
 ---
 # <a name="azure-peering-service-overview"></a>Общие сведения о службе пиринга Azure
@@ -48,7 +48,7 @@ ms.locfileid: "95026735"
 > Дополнительные сведения об ExpressRoute см. в [документации по expressroute](../expressroute/index.yml).
 >
 
-## <a name="background"></a>Фон
+## <a name="background"></a>Историческая справка
 
 Microsoft 365, Dynamics 365 и другие службы Microsoft SaaS размещаются в нескольких центрах обработки данных Майкрософт, и к ним можно получить доступ из любого географического расположения. В глобальной сети Майкрософт есть места расположения точек присутствия (PoP) Microsoft ребра по всему миру, где можно подключиться к конечному пользователю через своих поставщиков услуг. 
 

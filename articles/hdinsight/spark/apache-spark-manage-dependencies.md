@@ -8,10 +8,10 @@ ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 09/09/2020
 ms.openlocfilehash: f0673523c74a0ea298e7d2d520952c3e98877e91
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98930044"
 ---
 # <a name="manage-spark-application-dependencies"></a>Управление зависимостями приложений Spark

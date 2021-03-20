@@ -11,10 +11,10 @@ ms.author: ronmat
 ms.reviewer: vanto
 ms.date: 12/01/2020
 ms.openlocfilehash: 1425003c718ca52c0bea712e9d25cd3e4c035cf1
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96453964"
 ---
 # <a name="configure-advanced-threat-protection-for-azure-sql-database"></a>Настройка расширенной защиты от угроз для базы данных SQL Azure
@@ -45,7 +45,7 @@ ms.locfileid: "96453964"
 
 - Дополнительные сведения о [Advanced Threat protection](threat-detection-overview.md).
 - Дополнительные сведения о [расширенной защите от угроз в SQL управляемый экземпляр](../managed-instance/threat-detection-configure.md).  
-- Дополнительные сведения о [защитнике Azure для SQL](azure-defender-for-sql.md).
+- [Узнайте больше про Azure Defender для SQL](azure-defender-for-sql.md).
 - Дополнительные сведения об [аудите](../../azure-sql/database/auditing-overview.md).
 - Дополнительные сведения о [центре безопасности Azure](../../security-center/security-center-introduction.md)
 - Дополнительные сведения о ценах см. на [странице цен на базу данных SQL](https://azure.microsoft.com/pricing/details/sql-database/) .

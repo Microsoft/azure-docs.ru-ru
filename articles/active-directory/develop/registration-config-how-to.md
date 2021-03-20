@@ -14,10 +14,10 @@ ms.date: 05/07/2020
 ms.author: ryanwi
 ROBOTS: NOINDEX
 ms.openlocfilehash: 778523869715916bf1e4c32af59ea7a0081df91b
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100103317"
 ---
 # <a name="how-to-discover-endpoints"></a>Обнаружение конечных точек
@@ -34,6 +34,6 @@ ms.locfileid: "100103317"
 
 В **национальных облаках** (например, в Azure AD для Китая, Германии и США) есть собственный портал регистрации приложений и конечные точки проверки подлинности Azure AD. Дополнительные сведения см. в [обзоре национальных облаков](authentication-national-cloud.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о конечных точках в различных средах Azure см. в [обзоре национальных облаков](authentication-national-cloud.md).

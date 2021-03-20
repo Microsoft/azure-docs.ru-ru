@@ -12,10 +12,10 @@ ms.date: 07/05/2019
 ms.author: amishu
 ms.custom: devx-track-js, devx-track-csharp
 ms.openlocfilehash: f044596cf084e68b6c9ca10e3da4fbdf4c8c2062
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95026528"
 ---
 # <a name="enable-logging-in-the-speech-sdk"></a>Включение ведения журнала в пакете SDK для распознавания речи
@@ -25,7 +25,7 @@ ms.locfileid: "95026528"
 > [!NOTE]
 > Ведение журнала доступно с момента использования пакета SDK для распознавания речи версии 1.4.0 во всех поддерживаемых языках программирования SDK для обработки речи, за исключением JavaScript.
 
-## <a name="sample"></a>Пример
+## <a name="sample"></a>Образец
 
 Имя файла журнала указано в объекте конфигурации. Используя в `SpeechConfig` качестве примера, предположим, что вы создали экземпляр с именем `config` :
 

@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 03/03/2021
 ms.openlocfilehash: 2abe19351c92bf9cea85c85dd55f47b5ee6d1625
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101694042"
 ---
 # <a name="use-the-simple-search-syntax-in-azure-cognitive-search"></a>Использование синтаксиса "простого" поиска в Azure Когнитивный поиск
@@ -30,7 +30,7 @@ ms.locfileid: "101694042"
 
 Заголовки запроса должны иметь следующие значения:
 
-| Клавиши | Значение |
+| Ключ | Значение |
 |-----|-------|
 | Content-Type | приложение/json|
 | api-key  | `<your-search-service-api-key>`, либо запрос, либо ключ администратора |

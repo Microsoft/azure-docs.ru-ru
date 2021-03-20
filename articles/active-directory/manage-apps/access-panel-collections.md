@@ -15,10 +15,10 @@ ms.author: kenwith
 ms.reviewer: kasimpso
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7743a1af54b01f848c4ac6f0cb1d4526d66f8132
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99254988"
 ---
 # <a name="create-collections-on-the-my-apps-portal"></a>Создание коллекций на портале "Мои приложения"

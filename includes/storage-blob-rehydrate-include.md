@@ -11,10 +11,10 @@ ms.topic: include
 ms.reviewer: hux
 ms.custom: include file
 ms.openlocfilehash: a369eb7000fb8622a69f4205ffcc232ae9c9d242
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95545940"
 ---
 Для чтения данных в архивном хранилище сначала необходимо изменить уровень BLOB-объекта на "горячий" или "холодный". Этот процесс называется восстановлением и может занять несколько часов. Для оптимальной производительности при восстановлении рекомендуется использовать большие размеры больших двоичных объектов. Восстановление нескольких небольших двоичных объектов одновременно может занять дополнительное время. В настоящее время существует два значения приоритета: High и Standard, которые можно задать с помощью необязательного свойства *x-MS-rehydratи* на [уровне набора больших двоичных объектов](/rest/api/storageservices/set-blob-tier) или операции [копирования BLOB-объектов](/rest/api/storageservices/copy-blob) .

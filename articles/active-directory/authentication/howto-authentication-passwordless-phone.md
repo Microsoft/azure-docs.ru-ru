@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: librown
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 51e6cd7efcd0e851c15975aba5ff9b99c615eb7d
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101653479"
 ---
 # <a name="enable-passwordless-sign-in-with-the-microsoft-authenticator-app"></a>Включение входа без пароля с помощью приложения Microsoft Authenticator 
@@ -32,7 +32,7 @@ ms.locfileid: "101653479"
 2. Нажмите **Утвердить**.
 3. Укажите ПИН-код или биометрическую метрику.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы использовать вход без пароля для входа в приложение Microsoft Authenticator, должны быть выполнены следующие условия.
 

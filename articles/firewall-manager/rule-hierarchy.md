@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 08/26/2020
 ms.author: victorh
 ms.openlocfilehash: 1ba683e3d616f52854f1055dab9b9fe2d389116a
-ms.sourcegitcommit: 03713bf705301e7f567010714beb236e7c8cee6f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92331742"
 ---
 # <a name="use-azure-firewall-policy-to-define-a-rule-hierarchy"></a>Использование политики брандмауэра Azure для определения иерархии правил
@@ -48,7 +48,7 @@ ms.locfileid: "92331742"
 - Политика брандмауэра базы данных. Политика брандмауэра базы данных наследует политику базового брандмауэра.
 - Политика инженерного брандмауэра. Политика брандмауэра для инженеров также наследует базовую политику брандмауэра.
 
-:::image type="content" source="media/rule-hierarchy/policy-hierarchy.png" alt-text="Группы и требования" border="false":::
+:::image type="content" source="media/rule-hierarchy/policy-hierarchy.png" alt-text="Иерархия политик" border="false":::
 
 ### <a name="create-custom-roles-to-access-the-rule-collection-groups"></a>Создание пользовательских ролей для доступа к группам коллекции правил 
 
@@ -59,7 +59,7 @@ ms.locfileid: "92331742"
 1. Получить подписку:
 
    `Select-AzSubscription -SubscriptionId xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxxx`
-2. Выполните следующую команду:
+2. Выполните следующую команду.
 
    `Get-AzProviderOperation "Microsoft.Support/*" | FT Operation, Description -AutoSize`
 3. Используйте команду Get-AzRoleDefinition, чтобы вывести роль модуля чтения в формате JSON. 
@@ -91,13 +91,13 @@ ms.locfileid: "92331742"
    `*/read", "Microsoft.Network/*/read", "Microsoft.Network/firewallPolicies/ruleCollectionGroups/write` 
 
    Операция к свойству **Actions**   . Не забудьте включить запятую после операции чтения. Это действие позволяет пользователю создавать и обновлять группы коллекций правил.
-6. В **AssignableScopes**добавьте идентификатор подписки в следующем формате: 
+6. В **AssignableScopes** добавьте идентификатор подписки в следующем формате: 
 
    `/subscriptions/xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxxx`
 
    Вам нужно добавить явные идентификаторы подписки, иначе вы не сможете импортировать роль в подписку.
-7. Удалите **Id**   строку свойства ID и измените значение свойства **Custom**   на true.
-8. Измените свойства **имя**   и **Описание**   на *Азфм автор группы сбора правил* , и *Пользователи этой роли могут изменить группы коллекции правил политики брандмауэра* .
+7. Удалите ****   строку свойства ID и измените значение свойства **Custom**   на true.
+8. Измените свойства  **имя**   и  **Описание**   на *Азфм автор группы сбора правил* , и *Пользователи этой роли могут изменить группы коллекции правил политики брандмауэра* .
 
 Файл JSON должен выглядеть, как в следующем примере:
 
@@ -134,9 +134,9 @@ ms.locfileid: "92331742"
 
 Пользовательские роли также можно просмотреть в портал Azure. Перейдите к своей подписке, выберите **Управление доступом (IAM)**, **роли**.
 
-:::image type="content" source="media/rule-hierarchy/sales-app-policy.png" alt-text="Группы и требования":::
+:::image type="content" source="media/rule-hierarchy/sales-app-policy.png" alt-text="салесаппполици":::
 
-:::image type="content" source="media/rule-hierarchy/sales-app-policy-read.png" alt-text="Группы и требования":::
+:::image type="content" source="media/rule-hierarchy/sales-app-policy-read.png" alt-text="Разрешение на чтение Салесаппполици":::
 
 Дополнительные сведения см. в разделе [учебник. Создание настраиваемой роли Azure с помощью Azure PowerShell](../role-based-access-control/tutorial-custom-role-powershell.md).
 
@@ -151,7 +151,7 @@ ms.locfileid: "92331742"
 
 Повторите эту процедуру для других политик брандмауэра.
 
-### <a name="summary"></a>Сводка
+### <a name="summary"></a>Итоги
 
 Политика брандмауэра с пользовательскими ролями теперь предоставляет избирательный доступ к группам коллекции правил политики брандмауэра.
 
@@ -162,7 +162,7 @@ ms.locfileid: "92331742"
 
 Администраторы безопасности могут использовать базовую политику для принудительного применения снятие и блокировать определенные типы трафика (например, ICMP) в соответствии с требованиями Организации. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о [политике брандмауэра Azure](policy-overview.md).
 

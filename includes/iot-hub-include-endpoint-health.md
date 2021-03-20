@@ -9,10 +9,10 @@ ms.date: 04/28/2019
 ms.author: robinsh
 ms.custom: include file
 ms.openlocfilehash: 24a07109fc8f4d6ebd283dee7ee00107f0eb49b7
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95559787"
 ---
 Для получения состояния работоспособности конечных точек можно использовать REST API [получить работоспособность конечной точки](/rest/api/iothub/iothubresource/getendpointhealth#iothubresource_getendpointhealth) . Мы рекомендуем использовать [метрики маршрутизации центра Интернета вещей](../articles/iot-hub/monitor-iot-hub-reference.md#routing-metrics) , связанные с задержкой сообщений маршрутизации, для определения и отладки ошибок, когда работоспособность конечной точки невозможна или неработоспособна, так как мы предполагаем, что задержка будет выше, когда конечная точка находится в одном из этих состояний. Дополнительные сведения об использовании метрик центра Интернета вещей см. в статье [мониторинг центра Интернета вещей](../articles/iot-hub/monitor-iot-hub.md).

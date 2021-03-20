@@ -7,13 +7,13 @@ ms.date: 2/16/2021
 ms.topic: how-to
 ms.service: iot-hub-device-update
 ms.openlocfilehash: 01ce213f71fc2ac070ca0b09780bd45ede4e61c1
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102097761"
 ---
-# <a name="device-update-agent"></a>Агент обновления устройства
+# <a name="device-update-agent"></a>Агент обновления устройств
 
 Обновление устройств для Центра Интернета вещей поддерживает два вида обновлений: на основе образов или пакетов. 
 
@@ -38,7 +38,7 @@ ms.locfileid: "102097761"
 
 Если возникли проблемы, ознакомьтесь с [руководством по устранению неполадок](troubleshoot-device-update.md) в центре обновления для центра Интернета вещей, чтобы разблокировать возможные проблемы и получить необходимые сведения для предоставления корпорации Майкрософт.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Используйте приведенные ниже образы и двоичные файлы для простой демонстрации обновления устройства для центра Интернета вещей.  
 

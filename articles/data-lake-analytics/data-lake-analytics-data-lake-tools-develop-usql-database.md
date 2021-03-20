@@ -8,10 +8,10 @@ ms.service: data-lake-analytics
 ms.topic: how-to
 ms.date: 07/03/2018
 ms.openlocfilehash: 706457a602e20dd37e64e5f389948b351ac8ebcf
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96015253"
 ---
 # <a name="use-a-u-sql-database-project-to-develop-a-u-sql-database-for-azure-data-lake"></a>Использование проекта базы данных U-SQL в разработке базы данных U-SQL для Azure Data Lake
@@ -119,7 +119,7 @@ ms.locfileid: "96015253"
 
     ![Мастер добавления ссылки на проект базы данных с помощью Средств Data Lake для Visual Studio](./media/data-lake-analytics-data-lake-tools-develop-usql-database/data-lake-tools-add-database-project-reference-wizard.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Как настроить конвейер CI/CD для Azure Data Lake Analytics](data-lake-analytics-cicd-overview.md)
 - [Тестирование кода Azure Data Lake Analytics](data-lake-analytics-cicd-test.md)

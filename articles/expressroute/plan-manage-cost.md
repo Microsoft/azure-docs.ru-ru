@@ -8,10 +8,10 @@ ms.service: expressroute
 ms.topic: how-to
 ms.date: 11/30/2020
 ms.openlocfilehash: de8405477611d62b8a46e8b6b645887cc4d30099
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98784247"
 ---
 # <a name="plan-and-manage-costs-for-azure-expressroute"></a>Планирование и управление затратами для Azure ExpressRoute
@@ -22,7 +22,7 @@ ms.locfileid: "98784247"
 
 Помните, что стоимостью ExpressRoute является только часть ежемесячных затрат в счете Azure. Хотя в этой статье объясняется, как спланировать и управлять затратами ExpressRoute, вы оплачиваете все службы и ресурсы Azure, используемые в вашей подписке Azure, включая сторонние службы.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Анализ затрат в службе "Управление затратами" поддерживает большинство типов учетных записей Azure, но не все из них. Полный список поддерживаемых типов учетных записей см. в статье [Understand Cost Management data](../cost-management-billing/costs/understand-cost-mgt-data.md?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn) (Интерпретация данных службы "Управление затратами"). Для просмотра данных о затратах требуется по крайней мере доступ на чтение для учетной записи Azure. 
 

@@ -10,10 +10,10 @@ ms.date: 03/02/2021
 ms.author: jovanpop
 ms.reviewer: jrasnick
 ms.openlocfilehash: a574cacbabf1c0d1730430153a3c0afcad6582c6
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101694365"
 ---
 # <a name="query-azure-cosmos-db-data-with-a-serverless-sql-pool-in-azure-synapse-link"></a>Запрос Azure Cosmos DB данных с помощью несвязанного с сервером пула SQL в Azure синапсе Link

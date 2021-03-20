@@ -6,17 +6,17 @@ ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 06/19/2019
 ms.openlocfilehash: e4c9124ebd0b61b8db1b1da964355a3c36b5bba5
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98930555"
 ---
 # <a name="manage-ml-services-cluster-on-azure-hdinsight"></a>Управление кластером служб машинного обучения в Azure HDInsight
 
 Из этой статьи вы узнаете, как управлять существующим кластером служб ML в Azure HDInsight для выполнения таких задач, как добавление нескольких параллельных пользователей, удаленное подключение к кластеру служб машинного обучения, изменение контекста вычислений и т. д.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Кластер служб машинного обучения в HDInsight. Ознакомьтесь со статьей [Create Linux-based clusters in HDInsight by using the Azure portal](../hdinsight-hadoop-create-linux-clusters-portal.md) (Создание кластеров под управлением Linux в HDInsight с помощью портала Azure) и выберите **Службы машинного обучения ML Services** для параметра **Тип кластера**.
 

@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 12/10/2019
 ms.author: rohogue
 ms.openlocfilehash: 5cc4678b082aa5a4a3f90518ff8fac448f414f1a
-ms.sourcegitcommit: f88074c00f13bcb52eaa5416c61adc1259826ce7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92342252"
 ---
 # <a name="disaster-recovery-guidance-for-avere-vfxt-for-azure"></a>Руководство по аварийному восстановлению для Авере Вфкст для Azure
@@ -112,7 +112,7 @@ ms.locfileid: "92342252"
 
 1. При необходимости обновите клиенты, чтобы они подключались к новому кластеру или новым основным фильтр, а не к исходному. (Если вы добавили замену Core фильтр с тем же именем и путем соединения, что и в исходном контейнере, вам не потребуется обновлять клиентские процессы, если не требуется подключать новый кластер по новому IP-адресу.)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о настройке параметров для Авере Вфкст для Azure см. в статье [Настройка кластера](avere-vfxt-tuning.md).
 * Дополнительные сведения об аварийном восстановлении и создании устойчивых приложений в Azure:

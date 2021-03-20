@@ -7,17 +7,17 @@ ms.topic: article
 ms.date: 10/01/2020
 ms.custom: seodec18, devx-track-azurecli
 ms.openlocfilehash: c187a1521762c0b69d42c81f464694729d3c02f7
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "100594218"
 ---
 # <a name="configure-premiumv3-tier-for-azure-app-service"></a>Настройка уровня PremiumV3 для службы приложений Azure
 
 Новая ценовая категория **PremiumV3** предоставляет более быстрые процессоры, хранилище SSD и четверное соотношение между памятью и ядром существующих ценовых категорий (Double уровня **категории премиум v2** ). В дополнение к более высокой производительности вы можете сэкономить свои деньги, запуская приложения на меньшем числе экземпляров. Из этой статьи вы узнаете, как создать приложение на уровне **PremiumV3** или масштабировать приложение до уровня **PremiumV3** .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы масштабировать приложение до **PremiumV3**, необходимо иметь приложение службы приложений Azure, которое работает в ценовой категории ниже **PremiumV3**, а приложение должно выполняться в развертывании службы приложений, поддерживающем PremiumV3.
 

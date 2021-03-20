@@ -13,10 +13,10 @@ ms.author: ryanwi
 ms.reviewer: lenalepa, sureshja
 ms.custom: aaddev
 ms.openlocfilehash: 311dfd976610c392909a0ec3d91fecaa4d733539
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100104201"
 ---
 # <a name="how-to-configure-terms-of-service-and-privacy-statement-for-an-app"></a>Как настроить условия предоставления услуг и заявления о конфиденциальности для приложения
@@ -55,7 +55,7 @@ ms.locfileid: "100104201"
 * [с помощью JSON объекта приложения](#app-object-json);
 * [Использование API Microsoft Graph](#msgraph-rest-api)
 
-### <a name="using-the-azure-portal"></a><a name="azure-portal"></a>Использование портала Azure
+### <a name="using-the-azure-portal"></a><a name="azure-portal"></a>Использование портал Azure
 Выполните следующие действия в портал Azure.
 
 1. Войдите в <a href="https://portal.azure.com/" target="_blank">портал Azure</a> и выберите правильный клиент Azure AD (не B2C).

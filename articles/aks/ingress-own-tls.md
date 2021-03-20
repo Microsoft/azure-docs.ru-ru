@@ -6,10 +6,10 @@ services: container-service
 ms.topic: article
 ms.date: 08/17/2020
 ms.openlocfilehash: ee196bd749ad5821a1855d4549b22698c724b3f5
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100104932"
 ---
 # <a name="create-an-https-ingress-controller-and-use-your-own-tls-certificates-on-azure-kubernetes-service-aks"></a>Создание контроллера входящего трафика HTTPS и использование собственных сертификатов TLS в Службе Azure Kubernetes (AKS)
@@ -18,7 +18,7 @@ ms.locfileid: "100104932"
 
 В этой статье описывается, как установить и настроить [контроллер входящего трафика NGINX][nginx-ingress] в кластере Службы Azure Kubernetes (AKS). С помощью этих инструкций вы создадите собственные сертификаты и секрет службы Kubernetes, чтобы использовать их на маршруте входящего трафика. Наконец, в кластере AKS запущено два приложения, каждое из которых доступно по одному IP-адресу.
 
-Кроме того, вы можете сделать следующее:
+Также можно:
 
 - [Создать базовый контроллер входящего трафика с внешним сетевым подключением.][aks-ingress-basic]
 - [Включить надстройку маршрутизации приложений HTTP.][aks-http-app-routing]
@@ -374,14 +374,14 @@ kubectl delete secret aks-ingress-tls --namespace ingress-basic
 kubectl delete namespace ingress-basic
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В данной статье упоминаются некоторые внешние компоненты для AKS. Чтобы узнать больше об этих компонентах, см. следующие страницы проекта:
 
 - [Интерфейс командной строки Helm][helm-cli]
 - [Контроллер входящего трафика NGINX][nginx-ingress]
 
-Кроме того, вы можете сделать следующее:
+Также можно:
 
 - [Создать базовый контроллер входящего трафика с внешним сетевым подключением.][aks-ingress-basic]
 - [Включить надстройку маршрутизации приложений HTTP.][aks-http-app-routing]

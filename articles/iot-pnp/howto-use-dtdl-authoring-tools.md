@@ -1,6 +1,6 @@
 ---
 title: Использование средства для создания и проверки моделей ДТДЛ | Документация Майкрософт
-description: Установите редактор ДТДЛ для Visual Studio Code или Visual Studio 2019 и используйте его для создания моделей Plug and Play IoT.
+description: Установите редактор ДТДЛ для Visual Studio Code или Visual Studio 2019 и используйте его для создания моделей самонастраивающийся IoT.
 author: dominicbetts
 ms.author: dobett
 ms.date: 09/14/2020
@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.service: iot-pnp
 services: iot-pnp
 ms.openlocfilehash: 40d1ae4da07e159c24970c065d1c39e22b89a29a
-ms.sourcegitcommit: 58f12c358a1358aa363ec1792f97dae4ac96cc4b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93280208"
 ---
 # <a name="install-and-use-the-dtdl-authoring-tools"></a>Установка и использование средств разработки ДТДЛ

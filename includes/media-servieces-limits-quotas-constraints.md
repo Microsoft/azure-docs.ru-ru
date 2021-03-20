@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 10/26/2020
 ms.author: inhenkel
 ms.openlocfilehash: 59ff0ba854fa609e6d29f3473f662a89ab5f3dbc
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95559998"
 ---
 > [!NOTE]

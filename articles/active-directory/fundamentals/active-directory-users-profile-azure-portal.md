@@ -13,10 +13,10 @@ ms.author: ajburnle
 ms.reviewer: jeffsta
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 27896bac6f5436fb6717e4bc1ab0a1f9381904ad
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92370922"
 ---
 # <a name="add-or-update-a-users-profile-information-using-azure-active-directory"></a>Добавление или изменение данных профиля пользователя с помощью Azure Active Directory
@@ -57,7 +57,7 @@ ms.locfileid: "92370922"
     >[!Note]
     >Используйте Windows Server Active Directory для обновления удостоверения, контактных данных или сведений о должности для пользователей, чьим главным источником является Windows Server Active Directory. После завершения обновления изменения будут отображаться после следующего цикла синхронизации.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 После изменения профилей пользователей можно выполнить следующие базовые операции:
 
 - [Добавление или удаление пользователей](add-users-azure-active-directory.md)

@@ -9,10 +9,10 @@ ms.author: rogarana
 ms.subservice: tables
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 9a7502d48095fe18b983c1971d5145f51e766c95
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93306914"
 ---
 # <a name="perform-azure-table-storage-operations-with-azure-powershell"></a>Выполнение операций в хранилище таблиц Azure с помощью Azure PowerShell 
@@ -38,7 +38,7 @@ ms.locfileid: "93306914"
 > Для использования этой функции Azure от PowerShell требуется установленный модуль `Az`. Текущая версия `AzTable` несовместима с предыдущим модулем AzureRM.
 > При необходимости выполните [последние инструкции по установке AZ Module](/powershell/azure/install-az-ps) .
 
-После установки или обновления Azure PowerShell необходимо установить модуль **азтабле** , который содержит команды для управления сущностями. Чтобы установить этот модуль, запустите PowerShell от имени администратора и используйте команду **Install-Module**.
+После установки или обновления Azure PowerShell необходимо установить модуль **азтабле**, который содержит команды для управления сущностями. Чтобы установить этот модуль, запустите PowerShell от имени администратора и используйте команду **Install-Module**.
 
 > [!IMPORTANT]
 > Для совместимости имен модулей мы все еще публикуем тот же модуль под старым именем `AzureRmStorageTables` в коллекция PowerShell. Этот документ будет ссылаться только на новое имя.

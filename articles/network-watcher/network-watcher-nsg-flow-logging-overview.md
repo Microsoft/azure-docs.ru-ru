@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 01/04/2021
 ms.author: damendo
 ms.openlocfilehash: bc085163b4f738d022ab9771794ec85293de5ed8
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100521685"
 ---
 # <a name="introduction-to-flow-logging-for-network-security-groups"></a>Общие сведения о ведении журнала потоков для групп безопасности сети
@@ -404,7 +404,7 @@ https://{storageAccountName}.blob.core.windows.net/insights-logs-networksecurity
 
 В настоящее время поддержка автоматизации через шаблоны Resource Manager для журналов потоков группы безопасности сети недоступна. Дополнительные сведения см. в [объявлении о функции](https://azure.microsoft.com/updates/arm-template-support-for-nsg-flow-logs/) .
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 **Что делают журналы потоков NSG?**
 
