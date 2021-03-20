@@ -12,10 +12,10 @@ ms.date: 10/25/2020
 ms.author: gasinh
 ms.subservice: B2C
 ms.openlocfilehash: 69355b58e36f435b5b5dbe94af72d55d9806b156
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100557176"
 ---
 # <a name="tutorial-for-extending-azure-ad-b2c-to-protect-on-premises-applications-using-strata"></a>Руководство по расширению Azure AD B2C для защиты локальных приложений с помощью Strata
@@ -29,7 +29,7 @@ ms.locfileid: "100557176"
 
 - **Простая настройка**. Azure AD B2C предоставляет простой пошаговый пользовательский интерфейс для подключения соединителей SAML Маверикс Identity ORCHESTRATOR или OIDC к Azure AD B2C.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы приступить к работе, вам потребуется:
 

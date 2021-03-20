@@ -5,10 +5,10 @@ ms.topic: how-to
 ms.date: 09/03/2020
 ms.custom: subject-moving-resources
 ms.openlocfilehash: 60a182764639341fcda159356dd9fe6c65cfabd9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89463828"
 ---
 # <a name="move-an-azure-relay-namespace-to-another-region"></a>Перемещение Azure Relay пространства имен в другой регион
@@ -25,7 +25,7 @@ ms.locfileid: "89463828"
 ## <a name="prerequisites"></a>Предварительные требования
 Убедитесь, что служба Azure Relay доступна в целевом регионе. См. страницу [Доступность продуктов по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=service-bus&regions=all). 
  
-## <a name="prepare"></a>Подготовка.
+## <a name="prepare"></a>Подготовка
 Чтобы приступить к работе, экспортируйте шаблон диспетчер ресурсов. Этот шаблон содержит параметры, описывающие пространство имен Azure Relay.
 
 1. Войдите на [портал Azure](https://portal.azure.com).
@@ -39,61 +39,61 @@ ms.locfileid: "89463828"
 1. Найдите `location` и замените значение свойства на новое имя для региона. Чтобы получить коды расположения, см. раздел [расположения Azure](https://azure.microsoft.com/global-infrastructure/locations/). Код для региона — это имя региона без пробелов, например, `West US` равно `westus` .
 1. Удаление определений **динамических ресурсов ретранслятора WCF** (тип: `Microsoft.Relay/namespaces/WcfRelays` ). Динамические ретрансляторы WCF — это те, для которых свойству **dynamic** задано **значение true** на странице **реле** . В следующем примере **EchoService** является динамическим ретранслятором WCF и его определение должно быть удалено из шаблона. 
 
-    :::image type="content" source="./media/move-across-regions/dynamic-relays.png" alt-text="Загрузить шаблон диспетчер ресурсов":::
+    :::image type="content" source="./media/move-across-regions/dynamic-relays.png" alt-text="Динамические ретрансляторы":::
 
 ## <a name="move"></a>Переместить
 Разверните шаблон, чтобы создать пространство имен ретранслятора в целевом регионе. 
 
-1. В портал Azure выберите **создать ресурс**.
-2. В **поле Поиск в Marketplace**введите **шаблон развертывания** для искомого текста, выберите **шаблоны развертывания (развернуть с помощью пользовательских шаблонов)** и нажмите клавишу **Ввод**.
+1. На портале Azure выберите **Создать ресурс**.
+2. В **поле Поиск в Marketplace** введите **шаблон развертывания** для искомого текста, выберите **шаблоны развертывания (развернуть с помощью пользовательских шаблонов)** и нажмите клавишу **Ввод**.
 
-    :::image type="content" source="./media/move-across-regions/new-template-deployment.png" alt-text="Загрузить шаблон диспетчер ресурсов":::    
+    :::image type="content" source="./media/move-across-regions/new-template-deployment.png" alt-text="Развертывание нового шаблона":::    
 1. На странице **шаблоны развертывания** выберите **создать**.
 
-    :::image type="content" source="./media/move-across-regions/template-deployment-create-button.png" alt-text="Загрузить шаблон диспетчер ресурсов":::        
+    :::image type="content" source="./media/move-across-regions/template-deployment-create-button.png" alt-text="Новое развертывание шаблона — кнопка &quot;создать&quot;":::        
 1. На странице **Настраиваемое развертывание** выберите **создать собственный шаблон в редакторе**.
 
-    :::image type="content" source="./media/move-across-regions/build-template-link.png" alt-text="Загрузить шаблон диспетчер ресурсов":::            
+    :::image type="content" source="./media/move-across-regions/build-template-link.png" alt-text="Создание собственного шаблона в ссылке редактора":::            
 1. На странице **изменение шаблона** на панели инструментов выберите пункт **загрузить файл** , а затем следуйте инструкциям по загрузке **template.jsдля** файла, скачанного в предыдущем разделе.
 
-    :::image type="content" source="./media/move-across-regions/select-template.png" alt-text="Загрузить шаблон диспетчер ресурсов":::                
+    :::image type="content" source="./media/move-across-regions/select-template.png" alt-text="Выбор шаблона":::                
 1. Нажмите кнопку **сохранить** , чтобы сохранить шаблон. 
 
-    :::image type="content" source="./media/move-across-regions/save-template.png" alt-text="Загрузить шаблон диспетчер ресурсов":::                    
+    :::image type="content" source="./media/move-across-regions/save-template.png" alt-text="Сохранение шаблона":::                    
 1. На странице **Настраиваемое развертывание** выполните следующие действия. 
-    1. Выберите **подписку**Azure. 
+    1. Выберите **подписку** Azure. 
     2. Выберите существующую **группу ресурсов** или создайте новую. 
     3. Выберите целевое **Расположение** или регион. Если выбрана существующая группа ресурсов, этот параметр доступен только для чтения. 
     4. Введите новое **имя для пространства имен**.
     1. Выберите **Review + create** (Просмотреть и создать). 
 
-        :::image type="content" source="./media/move-across-regions/deploy-template.png" alt-text="Загрузить шаблон диспетчер ресурсов":::
+        :::image type="content" source="./media/move-across-regions/deploy-template.png" alt-text="Развертывание шаблона диспетчер ресурсов":::
     1. На странице **Просмотр и создание** выберите **создать** в нижней части страницы. 
     
 ## <a name="verify"></a>Проверка
 1. После успешного развертывания выберите **Переход к группе ресурсов**.
 
-    :::image type="content" source="./media/move-across-regions/resource-group-navigation-link.png" alt-text="Загрузить шаблон диспетчер ресурсов":::    
+    :::image type="content" source="./media/move-across-regions/resource-group-navigation-link.png" alt-text="Ссылка &quot;переход к группе ресурсов&quot;":::    
 1. На странице **Группа ресурсов** выберите пространство имен Azure Relay. 
 
-    :::image type="content" source="./media/move-across-regions/select-namespace.png" alt-text="Загрузить шаблон диспетчер ресурсов":::    
+    :::image type="content" source="./media/move-across-regions/select-namespace.png" alt-text="Выбор пространства имен Azure Relay":::    
 1. На странице **пространство имен Azure Relay** выберите **гибридные подключения** или **ретранслятор WCF** в меню слева, чтобы убедиться, что гибридные подключения и ретрансляторы WCF созданы. Если вы забыли удалить определения для динамических ретрансляторов WCF перед импортом шаблона, удалите их на странице **ретрансляторы WCF** . Динамические ретрансляторы WCF создаются автоматически при подключении клиентов к пространству имен ретранслятора. 
 
 ## <a name="discard-or-clean-up"></a>Отмена или очистка
-Если после развертывания вы хотите начать заново, можно удалить **целевое пространство имен Azure Relay**и повторить действия, описанные в разделах [Подготовка](#prepare) и [Перемещение](#move) этой статьи.
+Если после развертывания вы хотите начать заново, можно удалить **целевое пространство имен Azure Relay** и повторить действия, описанные в разделах [Подготовка](#prepare) и [Перемещение](#move) этой статьи.
 
 Чтобы зафиксировать изменения и завершить перемещение пространства имен, удалите **пространство имен Azure Relay** в исходном регионе. 
 
 Чтобы удалить Azure Relayое пространство имен (исходный или целевой) с помощью портал Azure:
 
-1. В окне поиска в верхней части портал Azure введите **реле**и выберите **ретрансляторы** из **служб** в результатах поиска. В списке отображаются все пространства имен Azure Relay.
+1. В окне поиска в верхней части портал Azure введите **реле** и выберите **ретрансляторы** из **служб** в результатах поиска. В списке отображаются все пространства имен Azure Relay.
 2. Выберите целевое пространство имен для удаления, чтобы открыть страницу **ретранслятора** . 
 1. На странице **ретранслятора** выберите **Удалить** на панели инструментов. 
 
     ![Кнопка "удалить пространство имен"](./media/move-across-regions/delete-namespace-button.png)
 3. На странице **Удаление пространства имен** введите имя пространства имен Azure Relay, чтобы подтвердить удаление, а затем выберите **Удалить**. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этом руководстве вы переместили Azure Relay пространство имен из одного региона в другой. Дополнительные сведения о перемещении ресурсов между регионами и аварийном восстановлении в Azure см. по следующей ссылке:
 
 - [Перемещение ресурсов в новую группу ресурсов или подписку](../azure-resource-manager/management/move-resource-group-and-subscription.md)

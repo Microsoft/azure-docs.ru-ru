@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 05/21/2018
 tags: connectors
 ms.openlocfilehash: 306298e4338665ef52add7f46d6da8675c97c3e2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101716556"
 ---
 # <a name="find-results-in-bing-search-by-using-azure-logic-apps"></a>Поиск результатов в Поиск Bing с помощью Azure Logic Apps
@@ -23,7 +23,7 @@ ms.locfileid: "101716556"
 Если у вас еще нет подписки Azure, [зарегистрируйтесь для получения бесплатной учетной записи Azure](https://azure.microsoft.com/free/). Если вы не знакомы с приложениями логики, ознакомьтесь со статьями [Что такое Azure Logic Apps](../logic-apps/logic-apps-overview.md) и [Краткое руководство. Создание первого автоматизированного рабочего процесса с помощью Azure Logic Apps на портале Azure](../logic-apps/quickstart-create-first-logic-app-workflow.md).
 См. технические сведения о [соединителях поиска Bing](/connectors/bingsearch/).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Учетная запись Cognitive Services](../cognitive-services/cognitive-services-apis-create-account.md)
 
@@ -59,7 +59,7 @@ ms.locfileid: "101716556"
    | Offset | Нет | <*пропуск — значение*> | Количество пропускаемых результатов перед возвращением результатов |
    |||||
 
-   Пример.
+   Пример:
 
    ![Настройка триггера](./media/connectors-create-api-bing-search/bing-search-trigger.png)
 
@@ -155,7 +155,7 @@ ms.locfileid: "101716556"
    | Ключ API | Да | <*Ключ API*> | Ключ API поиска Bing, полученный ранее. Если у вас нет ключа, получите [ключ API теперь](https://azure.microsoft.com/try/cognitive-services/?api=bing-news-search-api). |  
    |||||  
 
-   Пример.
+   Пример:
 
    ![Создание подключения](./media/connectors-create-api-bing-search/bing-search-create-connection.png)
 

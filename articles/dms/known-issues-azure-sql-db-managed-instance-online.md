@@ -12,10 +12,10 @@ ms.custom: mvc
 ms.topic: troubleshooting
 ms.date: 02/20/2020
 ms.openlocfilehash: 46c5f5995c7a1d4eb074f6c1b25ecaad7e2da37e
-ms.sourcegitcommit: 77afc94755db65a3ec107640069067172f55da67
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98695545"
 ---
 # <a name="known-issuesmigration-limitations-with-online-migrations-to-azure-sql-managed-instance"></a>Известные проблемы и ограничения миграции при оперативной миграции на Azure SQL Управляемый экземпляр
@@ -60,7 +60,7 @@ ms.locfileid: "98695545"
 
 ## <a name="migration-resets"></a>Сбросы миграции
 
-- **Развернутые приложения**
+- **Развертывания**
 
     SQL Управляемый экземпляр — это служба PaaS с автоматической установкой исправлений и обновлениями версий. Во время миграции Управляемый экземпляр SQL некритические обновления удерживаются до 36 часов. Затем (и для критических обновлений) в случае нарушения миграции процесс сбрасывается в состояние полного восстановления.
 

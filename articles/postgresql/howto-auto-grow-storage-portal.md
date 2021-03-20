@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: how-to
 ms.date: 5/29/2019
 ms.openlocfilehash: d49047e9b3a65da90f4a5ac9e4b3cb1e32bd59a7
-ms.sourcegitcommit: 3bcce2e26935f523226ea269f034e0d75aa6693a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92489988"
 ---
 # <a name="auto-grow-storage-using-the-azure-portal-in-azure-database-for-postgresql---single-server"></a>Автоматическое расширение хранилища с помощью портал Azure в базе данных Azure для PostgreSQL — один сервер
@@ -18,9 +18,9 @@ ms.locfileid: "92489988"
 
 Когда сервер достигает предельного размера выделенного хранилища, сервер помечается как доступный только для чтения. Однако если включить автоматическое увеличение размера хранилища, серверное хранилище будет увеличиваться в соответствии с растущими данными. Для серверов с подготовленным хранилищем объемом менее 100 ГБ размер подготовленного хранилища увеличивается на 5 ГБ, как только объем свободного хранилища превысит 1 ГБ или 10% подготовленного хранилища. Для серверов с более чем 100 ГБ подготовленного хранилища размер подготовленного хранилища увеличивается на 5%, если объем свободного пространства превышает 5% от подготовленного объема хранилища. Максимальный объем хранилища, указанный [здесь](./concepts-pricing-tiers.md#storage) , применим.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 Вот что вам нужно, чтобы выполнить инструкции, приведенные в этом руководстве:
-- [сервер базы данных Azure для PostgreSQL](quickstart-create-server-database-portal.md);
+- [Сервер базы данных Azure для PostgreSQL](quickstart-create-server-database-portal.md)
 
 ## <a name="enable-storage-auto-grow"></a>Включить автоматическое увеличение размера хранилища 
 
@@ -28,7 +28,7 @@ ms.locfileid: "92489988"
 
 1. В [портал Azure](https://portal.azure.com/)выберите существующий сервер базы данных Azure для PostgreSQL.
 
-2. На странице сервер PostgreSQL в разделе **Параметры**щелкните **ценовая** Категория, чтобы открыть страницу ценовая категория.
+2. На странице сервер PostgreSQL в разделе **Параметры** щелкните **ценовая** Категория, чтобы открыть страницу ценовая категория.
 
 3. В разделе **Автоматическое увеличение** выберите **Да** , чтобы включить автоматическое увеличение размера хранилища.
 
@@ -38,7 +38,7 @@ ms.locfileid: "92489988"
 
 5. В уведомлении будет подтверждено, что автоматическое увеличение размера было успешно включено.
 
-    :::image type="content" source="./media/howto-auto-grow-storage-portal/5-auto-grow-successful.png" alt-text="База данных Azure для PostgreSQL-Settings_Pricing_tier — автоматическое увеличение":::
+    :::image type="content" source="./media/howto-auto-grow-storage-portal/5-auto-grow-successful.png" alt-text="База данных Azure для PostgreSQL — успешное выполнение автоматического роста":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -10,15 +10,15 @@ services: azure-maps
 manager: philmea
 ms.custom: devx-track-js
 ms.openlocfilehash: 95a04d763fa5982181cc1c797bce969d9857ae4b
-ms.sourcegitcommit: 4064234b1b4be79c411ef677569f29ae73e78731
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92890638"
 ---
 # <a name="use-the-drawing-tools-module"></a>Использование модуля средств рисования
 
-Веб-пакет SDK Azure Maps предоставляет *модуль средств рисования* . Этот модуль упрощает Рисование и изменение фигур на карте с помощью устройства ввода, такого как мышь или сенсорный экран. Основным классом этого модуля является [Диспетчер рисунков](/javascript/api/azure-maps-drawing-tools/atlas.drawing.drawingmanager#setoptions-drawingmanageroptions-). Диспетчер рисунков предоставляет все возможности, необходимые для рисования и редактирования фигур на карте. Его можно использовать напрямую и интегрировать с настраиваемым пользовательским ИНТЕРФЕЙСом панели инструментов. Можно также использовать встроенный класс [панели инструментов рисования](/javascript/api/azure-maps-drawing-tools/atlas.control.drawingtoolbar) . 
+Веб-пакет SDK Azure Maps предоставляет *модуль средств рисования*. Этот модуль упрощает Рисование и изменение фигур на карте с помощью устройства ввода, такого как мышь или сенсорный экран. Основным классом этого модуля является [Диспетчер рисунков](/javascript/api/azure-maps-drawing-tools/atlas.drawing.drawingmanager#setoptions-drawingmanageroptions-). Диспетчер рисунков предоставляет все возможности, необходимые для рисования и редактирования фигур на карте. Его можно использовать напрямую и интегрировать с настраиваемым пользовательским ИНТЕРФЕЙСом панели инструментов. Можно также использовать встроенный класс [панели инструментов рисования](/javascript/api/azure-maps-drawing-tools/atlas.control.drawingtoolbar) . 
 
 ## <a name="loading-the-drawing-tools-module-in-a-webpage"></a>Загрузка модуля средств рисования на веб-страницу
 
@@ -31,7 +31,7 @@ ms.locfileid: "92890638"
         <script src="https://atlas.microsoft.com/sdk/javascript/drawing/0/atlas-drawing.min.js"></script>
         ```
 
-    - Также можно загрузить модуль средств рисования для исходного кода веб-пакета SDK Azure Maps с помощью пакета [Azure-Maps-Drawing-Tools](https://www.npmjs.com/package/azure-maps-drawing-tools) NPM, а затем разместить его в приложении. Этот пакет также включает определения TypeScript. Используйте эту команду:
+    - Также можно загрузить модуль средств рисования для исходного кода веб-пакета SDK Azure Maps с помощью пакета [Azure-Maps-Drawing-Tools](https://www.npmjs.com/package/azure-maps-drawing-tools) NPM, а затем разместить его в приложении. Этот пакет также включает определения TypeScript. Используйте следующую команду:
     
         > **NPM. Установка Azure-Maps-Drawing-Tools**
     

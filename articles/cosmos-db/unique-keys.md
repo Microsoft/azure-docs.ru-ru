@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 07/23/2020
 ms.reviewer: sngun
 ms.openlocfilehash: 9eb2b916bfe6c73a1535afb077b04fbb081dd5f1
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98685726"
 ---
 # <a name="unique-key-constraints-in-azure-cosmos-db"></a>Ограничения для уникальных ключей в Azure Cosmos DB
@@ -55,7 +55,7 @@ ms.locfileid: "98685726"
 
 * В именах уникальных ключей учитывается регистр. Например, рассмотрим контейнер с ограничением уникального ключа, установленным в значение `/address/zipcode` . Если в данных есть поле с именем `ZipCode` , Azure Cosmos DB вставляет в качестве уникального ключа значение null, так как `zipcode` не совпадает с `ZipCode` . Учет регистра в этой ситуации приводит к тому, что другие записи со значением ZipCode добавлены не будут, ведь новое значение null нарушит требование уникальности ключа.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о [логических секциях](partitioning-overview.md)
 * Узнайте, [как определить уникальные ключи](how-to-define-unique-keys.md) при создании контейнера

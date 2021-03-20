@@ -1,5 +1,5 @@
 ---
-title: Преобразование онтологиес
+title: Преобразование онтологий
 titleSuffix: Azure Digital Twins
 description: Изучите процесс преобразования стандартных отраслевых моделей в ДТДЛ для Azure Digital двойников
 author: baanders
@@ -8,10 +8,10 @@ ms.date: 2/12/2021
 ms.topic: conceptual
 ms.service: digital-twins
 ms.openlocfilehash: aa4dde51c077152dd5c8a938ad64ad0a051f89ad
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100561750"
 ---
 # <a name="convert-industry-standard-ontologies-to-dtdl-for-azure-digital-twins"></a>Преобразование стандартных отраслевых онтологиес в ДТДЛ для цифрового двойников Azure
@@ -33,7 +33,7 @@ ms.locfileid: "100561750"
 | Классы | `owl:Class`<br>Суффикс IRI<br>``rdfs:label``<br>``rdfs:comment`` | Интерфейс | `@type:Interface`<br>`@id`<br>`displayName`<br>`comment` 
 | используются подклассы ; | `owl:Class`<br>Суффикс IRI<br>`rdfs:label`<br>`rdfs:comment`<br>`rdfs:subClassOf` | Интерфейс | `@type:Interface`<br>`@id`<br>`displayName`<br>`comment`<br>`extends` 
 | Свойства DataType | `owl:DatatypeProperty`<br>`rdfs:label` или `INode`<br>`rdfs:label`<br>`rdfs:range` | Свойства интерфейса | `@type:Property`<br>`name`<br>`displayName`<br>`schema` 
-| Свойства объекта | `owl:ObjectProperty`<br>`rdfs:label` или `INode`<br>`rdfs:range`<br>`rdfs:comment`<br>`rdfs:label` | Relationship | `type:Relationship`<br>`name`<br>`target` (или пропущено, если нет `rdfs:range` )<br>`comment`<br>`displayName`<br>
+| Свойства объекта | `owl:ObjectProperty`<br>`rdfs:label` или `INode`<br>`rdfs:range`<br>`rdfs:comment`<br>`rdfs:label` | Связь | `type:Relationship`<br>`name`<br>`target` (или пропущено, если нет `rdfs:range` )<br>`comment`<br>`displayName`<br>
 
 В следующем фрагменте кода C# показано, как файл модели RDF загружается в граф и преобразуется в ДТДЛ с помощью библиотеки [**дотнетрдф**](https://www.dotnetrdf.org/) . 
 

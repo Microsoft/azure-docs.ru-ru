@@ -5,10 +5,10 @@ ms.topic: reference
 ms.date: 02/16/2021
 ms.custom: references_regions
 ms.openlocfilehash: d4764772473bbf2e5aafe2607a9462c9a6a15203
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100559512"
 ---
 # <a name="azure-arc-enabled-servers-data-residency"></a>Серверы с поддержкой дуги Azure: местонахождение данных
@@ -21,7 +21,7 @@ ms.locfileid: "100559512"
 
 Серверы с включенной службой Arc Azure хранят параметры конфигурации [расширения виртуальной машины Azure](manage-vm-extensions.md) (то есть значения свойств). расширение требует указания перед попыткой включения на подключенном компьютере. Например, при включении расширения Log Analytics VM будет предложено указать **идентификатор рабочей области** log Analytics и **первичный ключ**.
 
-Также собираются метаданные о подключенном компьютере. В частности:
+Также собираются метаданные о подключенном компьютере. В частности, внесены следующие изменения.
 
 * Имя, тип и версия операционной системы
 * Имя компьютера

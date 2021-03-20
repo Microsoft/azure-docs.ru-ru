@@ -8,10 +8,10 @@ author: navits09
 ms.author: navits
 ms.date: 12/02/2020
 ms.openlocfilehash: 0c220daab0d1d9ae7d50d37d9303d6677bd52cc1
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97360311"
 ---
 # <a name="create-a-dynamics-365-for-customer-engagement--powerapps-offer"></a>Создание предложения Dynamics 365 for Customer Engagement & PowerApps
@@ -40,7 +40,7 @@ ms.locfileid: "97360311"
 - Вы можете использовать только строчные буквы и цифры. Он может включать дефисы и символы подчеркивания, но не пробелы. Например, если идентификатор издателя — `testpublisherid` и вы вводите **Test-предложение-1**, веб-адрес предложения будет иметь значение `https://appsource.microsoft.com/product/dynamics-365/testpublisherid.test-offer-1` .
 - Этот идентификатор нельзя изменить после нажатия **создать**.
 
-Укажите **псевдоним** для своего предложения. Это имя, которое используется для предложения в Центре партнеров.
+Заполните поле **Псевдоним предложения**. Это имя, которое используется для предложения в Центре партнеров.
 
 - Это имя не используется в Marketplace и отличается от имени предложения и других значений, отображаемых для клиентов.
 - Это имя нельзя изменить после нажатия **создать**.

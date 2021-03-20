@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 11/05/2019
 ms.author: sideeksh
 ms.openlocfilehash: a33e04a24013d5450c98b91048fa418958d16886
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89426390"
 ---
 # <a name="delete-a-site-recovery-services-vault"></a>Удаление хранилища Служб восстановления для Site Recovery
@@ -43,14 +43,14 @@ ms.locfileid: "89426390"
 ## <a name="delete-a-vault-hyper-v-vm-with-vmm-to-azure"></a>Удаление хранилища виртуальной машины Hyper-V (с VMM) в Azure
 
 1. Выполните следующие [действия](site-recovery-manage-registration-and-protection.md#disable-protection-for-a-hyper-v-virtual-machine-replicating-to-azure-using-the-system-center-vmm-to-azure-scenario) , чтобы удалить виртуальные машины Hyper-V под управлением System Center VMM.
-2. Отменяет связь и удаляет все политики репликации. Это необходимо сделать в хранилище > **Site Recovery инфраструктуры**  >  **для**  >  **политик репликации**VMM System Center.
+2. Отменяет связь и удаляет все политики репликации. Это необходимо сделать в хранилище > **Site Recovery инфраструктуры**  >  **для**  >  **политик репликации** VMM System Center.
 3. Выполните следующие [действия](site-recovery-manage-registration-and-protection.md#unregister-a-vmm-server) , чтобы отменить регистрацию подключенного сервера VMM.
 4. Затем удалите хранилище.
 
 ## <a name="delete-a-vault-hyper-v-vm-to-azure"></a>Удаление хранилища виртуальной машины Hyper-V в Azure
 
 1. Выполните следующие [действия](site-recovery-manage-registration-and-protection.md#disable-protection-for-a-hyper-v-virtual-machine-hyper-v-to-azure) , чтобы удалить все защищенные виртуальные машины.
-2. Отменяет связь и удаляет все политики репликации. Это необходимо сделать в хранилище > **Site Recovery инфраструктуры**  >  **для политик репликации сайтов Hyper-V**  >  **Replication Policies**.
+2. Отменяет связь и удаляет все политики репликации. Это необходимо сделать в хранилище > **Site Recovery инфраструктуры**  >  **для политик репликации сайтов Hyper-V**  >  .
 3. Выполните [эти инструкции](site-recovery-manage-registration-and-protection.md#unregister-a-hyper-v-host-in-a-hyper-v-site) , чтобы отменить регистрацию узла Hyper-V.
 4. Удалите сайт Hyper-V.
 5. Затем удалите хранилище.

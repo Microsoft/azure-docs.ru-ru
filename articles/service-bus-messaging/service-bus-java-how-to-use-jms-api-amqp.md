@@ -5,10 +5,10 @@ ms.topic: article
 ms.date: 06/23/2020
 ms.custom: seo-java-july2019, seo-java-august2019, seo-java-september2019, devx-track-java
 ms.openlocfilehash: 97031abaedaa3e5595e290fa0292646feb744d47
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90086697"
 ---
 # <a name="use-the-java-message-service-with-azure-service-bus-and-amqp-10"></a>Использование службы сообщений Java с служебной шиной Azure и AMQP 1,0
@@ -392,7 +392,7 @@ MODIFIED_FAILED_UNDELIVERABLE = 5; -> Defer()
 
 Вы также можете использовать служебную шину AMQP 1,0 на других языках, таких как .NET, C, Python и PHP. Компоненты, созданные с помощью этих разных языков, могут надежно обмениваться сообщениями с помощью поддержки AMQP 1,0 в служебной шине.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Поддержка AMQP 1.0 в служебной шине](service-bus-amqp-overview.md)
 * [Использование AMQP 1,0 с API .NET служебной шины](./service-bus-amqp-dotnet.md)

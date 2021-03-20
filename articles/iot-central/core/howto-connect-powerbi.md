@@ -8,10 +8,10 @@ ms.author: viviali
 ms.date: 10/4/2019
 ms.topic: conceptual
 ms.openlocfilehash: 191b57b08ba04844824dd5cf26875c21e494c5ef
-ms.sourcegitcommit: 7dacbf3b9ae0652931762bd5c8192a1a3989e701
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92123343"
 ---
 # <a name="visualize-and-analyze-your-azure-iot-central-data-in-a-power-bi-dashboard"></a>Визуализация и анализ данных Azure IoT Central на панели мониторинга Power BI
@@ -47,7 +47,7 @@ ms.locfileid: "92123343"
 
 ## <a name="install"></a>Установка
 
-Чтобы настроить конвейер, перейдите на страницу [Power BI решение для Azure IOT Central v3](https://appsource.microsoft.com/product/web-apps/iot-central.power-bi-solution-iot-central) на **Microsoft AppSource** сайте. Выберите **получить сейчас**и следуйте инструкциям.
+Чтобы настроить конвейер, перейдите на страницу [Power BI решение для Azure IOT Central v3](https://appsource.microsoft.com/product/web-apps/iot-central.power-bi-solution-iot-central) на **Microsoft AppSource** сайте. Выберите **получить сейчас** и следуйте инструкциям.
 
 При открытии PBIX-файла убедитесь, что прочитали и следуйте инструкциям на обложке страницы. Эти инструкции описывают, как подключить отчет к базе данных SQL.
 
@@ -55,13 +55,13 @@ ms.locfileid: "92123343"
 
 PBIX-файл содержит отчет **устройства и данные телеметрии** , в котором представлено историческое представление телеметрии, отправленных устройствами. Она обеспечивает разделение различных типов телеметрии, а также показывает последние данные телеметрии, отправленные устройствами.
 
-:::image type="content" source="media/howto-connect-powerbi/report.png" alt-text="Конвейер решения Power BI":::
+:::image type="content" source="media/howto-connect-powerbi/report.png" alt-text="Power BIные устройства и отчет о телеметрии":::
 
 ## <a name="pipeline-resources"></a>Ресурсы конвейера
 
 Вы можете получить доступ ко всем ресурсам Azure, которые составляют конвейер, в портал Azure. Все ресурсы находятся в группе ресурсов, созданной при настройке конвейера.
 
-:::image type="content" source="media/howto-connect-powerbi/azure-deployment.png" alt-text="Конвейер решения Power BI":::
+:::image type="content" source="media/howto-connect-powerbi/azure-deployment.png" alt-text="портал Azure представление группы ресурсов":::
 
 В следующем списке приводится описание роли каждого ресурса в конвейере.
 
@@ -83,6 +83,6 @@ PBIX-файл содержит отчет **устройства и данные
 
 Страница [Power BI решение для Azure IOT Central v3](https://appsource.microsoft.com/product/web-apps/iot-central.power-bi-solution-iot-central) на сайте Microsoft AppSource содержит ссылку на средство оценки затрат для развертываемых ресурсов.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы узнали, как визуализировать данные в Power BI, рекомендуем следующий шаг — научиться [управлять устройствами](howto-manage-devices.md).

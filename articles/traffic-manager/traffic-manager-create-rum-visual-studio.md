@@ -13,10 +13,10 @@ ms.date: 03/16/2018
 ms.author: duau
 ms.custom: devx-track-js
 ms.openlocfilehash: f9e8cdd3eb5c9f441444683fb5efaccc880b2757
-ms.sourcegitcommit: 0aec60c088f1dcb0f89eaad5faf5f2c815e53bf8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98184617"
 ---
 # <a name="how-to-send-real-user-measurements-to-traffic-manager-with-visual-studio-mobile-center"></a>Отправка измерений на стороне пользователей в диспетчер трафика с помощью Visual Studio Mobile Center
@@ -97,7 +97,7 @@ ms.locfileid: "98184617"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - Узнайте больше об [измерениях на стороне пользователей](traffic-manager-rum-overview.md).
-- Узнайте о том, [как работает диспетчер трафика](traffic-manager-overview.md)
+- Узнайте, [как работает диспетчер трафика](traffic-manager-overview.md)
 - Дополнительные сведения о Mobile Center см. [здесь](/mobile-center/).
 - [Регистрация в Mobile Center](https://mobile.azure.com)
 - Узнайте больше о [методах маршрутизации трафика](traffic-manager-routing-methods.md) , поддерживаемых в диспетчере трафика.

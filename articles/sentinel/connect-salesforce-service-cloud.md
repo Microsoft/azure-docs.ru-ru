@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 01/17/2021
 ms.author: yelevin
 ms.openlocfilehash: 1efd91d92bac1bc1f39d82aaa0cc71daa0275f8e
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100570529"
 ---
 # <a name="connect-your-salesforce-service-cloud-to-azure-sentinel"></a>Подключение облака службы Salesforce к Azure Sentinel
@@ -31,7 +31,7 @@ ms.locfileid: "100570529"
 > [!NOTE]
 > Данные будут храниться в географическом расположении рабочей области, на которой вы используете метку Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - У вас должно быть разрешение на чтение и запись в рабочей области "Sentinel" Azure.
 
@@ -61,7 +61,7 @@ ms.locfileid: "100570529"
 
 После того, как журналы начнут отображаться в Log Analytics, может пройти до 20 минут.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом документе вы узнали, как подключить облако службы Salesforce к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 

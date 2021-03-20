@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 10/23/2018
 ms.author: srrengar
 ms.openlocfilehash: 6a98a833baefa9b1c2d1ebd9ff8147206c2106bf
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100570203"
 ---
 # <a name="service-fabric-linux-cluster-events-in-syslog"></a>События кластера Service Fabric под управлением Linux в системном журнале
@@ -26,7 +26,7 @@ Service Fabric предоставляет набор событий платфо
 * Facility
 * Идентификация
 * Сообщение
-* Статус
+* Уровень серьезности
 
 SyslogConsumer записывает все события платформы с помощью средства `Local0`. Можно выполнить обновление до любого допустимого устройства, изменив конфигурацию конфигурации. Используемое удостоверение — `ServiceFabric` . Поле "Сообщение" содержит все событие, сериализованное в JSON, чтобы различные средства могли его запрашивать и использовать. 
 
@@ -111,7 +111,7 @@ SyslogConsumer записывает все события платформы с 
 
 В приведенном выше примере описано событие NodeDown. Полный список событий см. [здесь](service-fabric-diagnostics-event-generation-operational.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Разверните агент Log Analytics](service-fabric-diagnostics-oms-agent.md) на узлах для сбора данных счетчиков производительности и статистики Docker, а также журналов для контейнеров.
 * Ознакомьтесь с функциями [поиска по журналам и запросов к журналам](../azure-monitor/logs/log-query-overview.md), которые являются частью журналов Azure Monitor
 * [Использование конструктора представлений для создания пользовательских представлений в журналах Azure Monitor](../azure-monitor/visualize/view-designer.md)

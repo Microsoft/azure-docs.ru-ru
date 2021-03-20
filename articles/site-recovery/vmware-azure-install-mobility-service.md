@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 03/25/2019
 ms.author: ramamill
 ms.openlocfilehash: 78fddb5b4512883f8e78d6ed53f6e3dbbeba0e4f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90525003"
 ---
 # <a name="prepare-source-machine-for-push-installation-of-mobility-agent"></a>Подготовка исходного компьютера к принудительной установке агента Mobility Service
@@ -50,7 +50,7 @@ ms.locfileid: "90525003"
 3. Убедитесь, что файл /etc/hosts на исходном сервере Linux содержит записи, которые связывают имя локального узла с IP-адресами всех сетевых адаптеров.
 4. Установите на реплицируемом компьютере последние версии пакетов openssh, openssh-server и openssl.
 5. Убедитесь, что протокол Secure Shell (SSH) включен и работает через порт 22.
-4. Включите подсистему SFTP и проверку пароля в файле sshd_config. Для этого войдите в качестве **привилегированного**пользователя.
+4. Включите подсистему SFTP и проверку пароля в файле sshd_config. Для этого войдите в качестве **привилегированного** пользователя.
 5. В файле **sshd_config каталог/etc/SSH/** найдите строку, которая начинается с **PasswordAuthentication**.
 6. Раскомментируйте строку и измените значение на **Да**.
 7. Найдите строку, которая начинается с **подсистемы**, и раскомментируйте строку.
@@ -69,7 +69,7 @@ ms.locfileid: "90525003"
 
 Если на компьютерах, которые нужно реплицировать, запущено антивирусное ПО, обязательно исключите установочную папку службы Mobility в список исключений из антивирусной проверки (*C:\ProgramData\ASR\agent*). Это обеспечит правильную работу репликации.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 После установки службы Mobility Service на портале Azure выберите **+ Репликация**, чтобы приступить к защите виртуальных машин. Дополнительные сведения о включении репликации для [виртуальных машин VMware](vmware-azure-enable-replication.md) и [физических серверов](physical-azure-disaster-recovery.md#enable-replication).
 

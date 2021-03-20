@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 09/03/2020
 ms.author: alzam
 ms.openlocfilehash: 05fbc5675d6ee3b6720d9db9e07e7010cf1d9172
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89435663"
 ---
 # <a name="set-up-alerts-on-vpn-gateway-metrics"></a>Настройка оповещений для метрик VPN-шлюза
@@ -46,7 +46,7 @@ ms.locfileid: "89435663"
 
 1. Перейдите к ресурсу шлюза виртуальной сети и выберите **оповещения** на вкладке **мониторинг** . Затем создайте новое правило генерации оповещений или измените существующее правило генерации оповещений.
 
-   ![Параметры для создания правила генерации оповещений](./media/vpn-gateway-howto-setup-alerts-virtual-network-gateway-metric/metric-alert1.png "Создание")
+   ![Параметры для создания правила генерации оповещений](./media/vpn-gateway-howto-setup-alerts-virtual-network-gateway-metric/metric-alert1.png "Создать")
 
 2. Выберите VPN-шлюз в качестве ресурса.
 
@@ -57,7 +57,7 @@ ms.locfileid: "89435663"
    ![Выбранная метрика в списке метрик](./media/vpn-gateway-howto-setup-alerts-virtual-network-gateway-metric/metric-alert3.png "Выберите пункт")
 4. Настройте логику сигнала. Существует три компонента:
 
-    a. **Измерения**: если у метрики есть измерения, можно выбрать определенные значения измерений, чтобы предупреждение выработало только данные этого измерения. Они необязательны.
+    а. **Измерения**: если у метрики есть измерения, можно выбрать определенные значения измерений, чтобы предупреждение выработало только данные этого измерения. Они необязательны.
 
     b. **Условие**: это операция для вычисления значения метрики.
 
@@ -69,6 +69,6 @@ ms.locfileid: "89435663"
 
    ![Кнопка для управления правилами оповещений](./media/vpn-gateway-howto-setup-alerts-virtual-network-gateway-metric/metric-alert8.png "Выберите пункт")
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения о настройке оповещений в журналах ресурсов туннеля см. в разделе [Настройка оповещений в журналах ресурсов VPN-шлюза](vpn-gateway-howto-setup-alerts-virtual-network-gateway-log.md).
