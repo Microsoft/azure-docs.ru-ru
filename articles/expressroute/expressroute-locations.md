@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: infrastructure-services
 ms.date: 02/10/2021
 ms.author: duau
-ms.openlocfilehash: 0133d6cc54038a56847556a83242114c78e09321
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.openlocfilehash: 4a75931017bbde24c17ecdc0da498547c6088682
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103574414"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104581530"
 ---
 # <a name="expressroute-connectivity-partners-and-peering-locations"></a>Партнеры по подключению и одноранговые расположения ExpressRoute
 
@@ -87,6 +87,7 @@ ms.locfileid: "103574414"
 | **[BCX](https://www.bcx.co.za/solutions/connectivity/data-networks)** |Поддерживается |Поддерживается |Кейптаун, Йоханнесбург|
 | **[Bell Canada](https://business.bell.ca/shop/enterprise/cloud-connect-access-to-cloud-partner-services)** |Поддерживается |Поддерживается |Квебек, Монреаль, Торонто |
 | **[British Telecom](https://www.globalservices.bt.com/en/solutions/products/cloud-connect-azure)** |Поддерживается |Поддерживается |Амстердам, Amsterdam2, Чикаго, Гонконг, САР, Йоханнесбург, Лондон, London2, Ньюпорт (штат Вашингтон), Париж, Сан-Паулу, Silicon впадина, Сингапур, Сидней, Токио, Вашингтон (округ Колумбия) |
+| **[BSNL](https://www.bsnl.co.in/opencms/bsnl/BSNL/services/enterprises/cloudway.html)** |Поддерживается |Поддерживается |Ченнаи, Мумбаи |
 | **[C3ntro](https://www.c3ntro.com/data1/express-route1.php)** |Поддерживается |Поддерживается |Майами |
 | **CDC** | Поддерживается | Поддерживается | Канберра, Канберра 2 |
 | **[CenturyLink Cloud Connect](https://www.centurylink.com/cloudconnect)** |Поддерживается |Поддерживается |Amsterdam2, Чикаго, Дублин, Франкфурт, Гонконг, Лас деньги, London2, Нью Йорк, Париж, Сан Сан Антонио, Silicon впадина, Токио, Торонто, Вашингтон (округ Колумбия), штат Вашингтон |
@@ -148,7 +149,7 @@ ms.locfileid: "103574414"
 | **[Optus](https://www.optus.com.au/enterprise/)** |Поддерживается |Поддерживается |Мельбурн, Сидней |
 | **[Orange](https://www.orange-business.com/en/products/business-vpn-galerie)** |Поддерживается |Поддерживается |Амстердам, Амстердам 2, Дубаи 2, Франкфурт, Гонконг (САР), Йоханнесбург, Лондон, Париж, Сан-Паулу, Кремниевая долина, Сингапур, Сидней, Токио, Вашингтон (округ Колумбия) |
 | **[Orixcom](https://www.orixcom.com/cloud-solutions/)** | Поддерживается | Поддерживается | Дубаи 2 |
-| **[PacketFabric](https://www.packetfabric.com/cloud-connectivity/microsoft-azure)** |Поддерживается |Поддерживается |Чикаго, Лас — деньги, полупроводниковый округ, Вашингтон (округ Колумбия) |
+| **[PacketFabric](https://www.packetfabric.com/cloud-connectivity/microsoft-azure)** |Поддерживается |Поддерживается |Чикаго, Далласе, Лас — деньги, полупроводниковый округ, округ Колумбия |
 | **[PCCW Global Limited](https://consoleconnect.com/clouds/#azureRegions)** |Поддерживается |Поддерживается |Чикаго, Гонконг, Гонконг 2, Лондон, Сингапур 2 |
 | **[реаннз](https://www.reannz.co.nz/products-and-services/cloud-connect/)** | Поддерживается | Поддерживается | Окленд |
 | **[ретелит](https://www.retelit.it/EN/Home.aspx)** | Поддерживается | Поддерживается | Milan | 

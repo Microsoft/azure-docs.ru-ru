@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 10/05/2020
 ms.openlocfilehash: f666cc2f9d11b1e05d11ba266897e6fca3cd287e
-ms.sourcegitcommit: 1b47921ae4298e7992c856b82cb8263470e9e6f9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92057626"
 ---
 # <a name="debug-sessions-in-azure-cognitive-search"></a>Сеансы отладки в Azure Когнитивный поиск
@@ -51,7 +51,7 @@ ms.locfileid: "92057626"
 
 При выборе навыка на графе будут выделяться связанные с ним навыки, узлы, которые создают входные данные, и узлы, принимающие его выходные данные. Каждый узел навыка отображает его тип, ошибки или предупреждения, а также счетчики выполнения. Именно на **графе навыков** вы выбираете, какой навык следует отлаживать или улучшать. При выборе навыка сведения о нем отображаются в области сведений о навыках справа от графа.
 
-> :::image type="content" source="media/cognitive-search-debug/skills-graph.png" alt-text="Создание сеанса отладки":::
+> :::image type="content" source="media/cognitive-search-debug/skills-graph.png" alt-text="Граф навыков":::
 
 ## <a name="skill-details"></a>Сведения о навыках
 
@@ -73,7 +73,7 @@ ms.locfileid: "92057626"
 
 Область **Обогащенная структура данных** отображает обогащения документа с помощью набора навыков, подробно описывая контекст для каждого обогащения и исходного навыка. Также можно использовать **вычислитель выражений** для просмотра содержимого каждого обогащения.
 
-> :::image type="content" source="media/cognitive-search-debug/enriched-data-structure-display.png" alt-text="Создание сеанса отладки":::
+> :::image type="content" source="media/cognitive-search-debug/enriched-data-structure-display.png" alt-text="Вкладка &quot;Обогащенная структура данных&quot;":::
 
 ## <a name="expression-evaluator"></a>Вычислитель выражений
 

@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive, devx-track-csharp
 ms.date: 12/24/2019
 ms.openlocfilehash: 17264fc2a7d0a51de545e329ccf12ad45ad49d46
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98927237"
 ---
 # <a name="run-apache-hive-queries-using-hdinsight-net-sdk"></a>Выполнение запросов Apache Hive с использованием пакета SDK .NET для HDInsight
@@ -44,7 +44,7 @@ ms.locfileid: "98927237"
     Install-Package Microsoft.Azure.Management.HDInsight.Job
     ```
 
-1. Измените приведенный ниже код, чтобы инициализировать значения переменных: `ExistingClusterName, ExistingClusterUsername, ExistingClusterPassword,DefaultStorageAccountName,DefaultStorageAccountKey,DefaultStorageContainerName` . Затем используйте измененный код в качестве всего содержимого **Program.CS** в Visual Studio.
+1. Измените приведенный ниже код, чтобы инициализировать значения переменных: `ExistingClusterName, ExistingClusterUsername, ExistingClusterPassword,DefaultStorageAccountName,DefaultStorageAccountKey,DefaultStorageContainerName` . Затем используйте измененный код в качестве всего содержимого **программы. CS** в Visual Studio.
 
     ```csharp
     using System.Collections.Generic;

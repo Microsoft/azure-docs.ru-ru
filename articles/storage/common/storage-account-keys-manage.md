@@ -10,10 +10,10 @@ ms.date: 04/24/2020
 ms.author: tamram
 ms.custom: devx-track-azurecli, devx-track-azurepowershell
 ms.openlocfilehash: e5ea94fea00771b64634d6c28a7879fabb195f09
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89069665"
 ---
 # <a name="manage-storage-account-access-keys"></a>Управление ключами доступа к учетной записи хранения
@@ -34,7 +34,7 @@ ms.locfileid: "89069665"
 
 1. Перейдите к своей учетной записи хранения в [портал Azure](https://portal.azure.com).
 1. В разделе **Параметры** выберите **Ключи доступа**. Появятся ключи доступа к учетной записи и полная строка подключения для каждого ключа.
-1. Укажите значение **ключа** в разделе **Key1**и нажмите кнопку " **Копировать** ", чтобы скопировать ключ учетной записи.
+1. Укажите значение **ключа** в разделе **Key1** и нажмите кнопку " **Копировать** ", чтобы скопировать ключ учетной записи.
 1. Кроме того, можно скопировать всю строку подключения. Найдите значение **Строка подключения** в разделе **key1** и нажмите кнопку **Скопировать**, чтобы скопировать строку подключения.
 
     :::image type="content" source="media/storage-account-keys-manage/portal-connection-string.png" alt-text="Снимок экрана, показывающий, как просмотреть ключи доступа в портал Azure":::
@@ -135,7 +135,7 @@ az storage account keys list \
 
 Для смены ключей доступа учетной записи пользователь должен быть администратором службы или должен быть назначен роль Azure, включающая в себя **Microsoft. Storage/storageAccounts/реженератекэй/Action**. Некоторые встроенные роли Azure, включающие это действие, являются ролями роли службы " **владелец**", " **участник**" и " **оператор ключа учетной записи хранения** ". Дополнительные сведения о роли администратора службы см. в разделе [роли администратора классической подписки, роли Azure и роли Azure AD](../../role-based-access-control/rbac-and-directory-admin-roles.md). Подробные сведения о встроенных ролях Azure для службы хранилища Azure см. в разделе " **хранилище** " [встроенных ролей Azure для Azure RBAC](../../role-based-access-control/built-in-roles.md#storage).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Общие сведения об учетной записи хранения](storage-account-overview.md)
 - [создать учетную запись хранения;](storage-account-create.md)

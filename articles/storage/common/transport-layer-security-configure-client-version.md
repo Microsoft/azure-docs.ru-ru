@@ -12,10 +12,10 @@ ms.reviewer: fryu
 ms.subservice: common
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 37b8c79df5b208feea185292fa09c323b64fa27d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89001813"
 ---
 # <a name="configure-transport-layer-security-tls-for-a-client-application"></a>Настройка протокола TLS для клиентского приложения
@@ -28,7 +28,7 @@ ms.locfileid: "89001813"
 
 Чтобы клиент мог отправить запрос с определенной версией протокола TLS, операционная система должна поддерживать эту версию.
 
-В следующих примерах показано, как задать версию TLS клиента 1,2 из PowerShell или .NET. .NET Framework, используемый клиентом, должен поддерживать TLS 1,2. Дополнительные сведения см. в разделе [поддержка TLS 1,2](/dotnet/framework/network-programming/tls#support-for-tls-12).
+В следующих примерах показано, как задать версию TLS клиента 1,2 из PowerShell или .NET. Платформа .NET Framework, используемый клиентом, должен поддерживать TLS 1,2. Дополнительные сведения см. в разделе [поддержка TLS 1,2](/dotnet/framework/network-programming/tls#support-for-tls-12).
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -44,13 +44,13 @@ $ctx = $storageAccount.Context
 New-AzStorageContainer -Name "sample-container" -Context $ctx
 ```
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 В следующем примере показано, как включить TLS 1,2 в клиенте .NET с помощью клиентской библиотеки службы хранилища Azure версии 12:
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/Networking.cs" id="Snippet_ConfigureTls12":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 В следующем примере показано, как включить TLS 1,2 в клиенте .NET с помощью клиентской библиотеки службы хранилища Azure версии 11:
 

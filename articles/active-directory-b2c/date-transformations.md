@@ -11,10 +11,10 @@ ms.date: 02/16/2020
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: eaf58b964517162ee7f7eb925e1e64830eedc087
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85202557"
 ---
 # <a name="date-claims-transformations"></a>Преобразования утверждений даты
@@ -174,7 +174,7 @@ ms.locfileid: "85202557"
 | InputClaim | secondDateTime | dateTime | Второе значение dateTime для сравнения с первым значением dateTime. Значение NULL обрабатывается как текущее значение dateTime. |
 | InputParameter | оператор | строка | Одно из следующих значений: "same", "later than" или "earlier than" ("равно", "позже" или "раньше"). |
 | InputParameter | timeSpanInSeconds | INT | Добавление временного диапазона к первым дате и времени. |
-| outputClaim | набор по | Логическое | ClaimType, который создается после вызова ClaimsTransformation. |
+| outputClaim | result | Логическое | ClaimType, который создается после вызова ClaimsTransformation. |
 
 Это преобразование позволяет определить, являются ли два утверждения ClaimType равными, больше (позже) или меньше (раньше) друг друга. Например, вы можете сохранить время, когда пользователь последний раз принимал ваши условия предоставления услуг (TOS). Через 3 месяца вы можете попросить пользователя принять TOS еще раз.
 Чтобы выполнить преобразование утверждений, необходимо сначала получить текущее значение даты и времени, а также время, когда пользователь последний раз принимал TOS.

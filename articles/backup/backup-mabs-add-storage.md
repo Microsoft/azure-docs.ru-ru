@@ -4,10 +4,10 @@ description: Сведения о новых возможностях Azure Backu
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.openlocfilehash: b077296e58e1193e454a686a392d802e905500a5
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91292903"
 ---
 # <a name="add-storage-to-azure-backup-server"></a>Добавление хранилища для Azure Backup Server
@@ -127,7 +127,7 @@ Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-Datasour
 
 3. В списке доступных дисков выберите диски, которые требуется добавить, нажмите кнопку **Добавить** и кнопку **ОК**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 После установки Backup Server узнайте, как подготовить сервер или обеспечить защиту рабочей нагрузки.
 

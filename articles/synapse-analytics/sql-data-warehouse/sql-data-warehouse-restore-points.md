@@ -12,10 +12,10 @@ ms.author: anjangsh
 ms.reviewer: igorstan
 ms.custom: seo-lt-2019
 ms.openlocfilehash: 097a3132208eee98b3f95291e414263e637bc265
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96545593"
 ---
 # <a name="user-defined-restore-points-for-a-dedicated-sql-pool-formerly-sql-dw"></a>Пользовательские точки восстановления для выделенного пула SQL (ранее — хранилище данных SQL)
@@ -72,7 +72,7 @@ Get-AzSqlDatabaseRestorePoint -ResourceGroupName $ResourceGroupName -ServerName 
 
     ![Имя точки восстановления](./media/sql-data-warehouse-restore-points/creating-restore-point-11.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Восстановление существующего выделенного пула SQL (ранее — хранилища данных SQL)](sql-data-warehouse-restore-active-paused-dw.md)
 - [Восстановление удаленного выделенного пула SQL (ранее — хранилища данных SQL)](sql-data-warehouse-restore-deleted-dw.md)

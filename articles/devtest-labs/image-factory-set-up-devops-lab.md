@@ -4,10 +4,10 @@ description: В этой статье рассматриваются все по
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: fa7050bae1ff8681e04b6ab38220be9eaf38a64a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85476144"
 ---
 # <a name="run-an-image-factory-from-azure-devops"></a>Запуск фабрики образов из Azure DevOps
@@ -94,7 +94,7 @@ Azure DevOps позволяет хранить исходный код, запу
 Самый быстрый способ настроить субъект-службу — позволить Azure DevOps сделать это для нас.
 
 1. Выберите только что добавленную **задачу** .
-2. В качестве **типа подключения к Azure**выберите **Azure Resource Manager**.
+2. В качестве **типа подключения к Azure** выберите **Azure Resource Manager**.
 3. Щелкните ссылку **Управление** , чтобы настроить субъект-службу.
 
 Дополнительные сведения см. в этой [записи блога](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/). Выбрав ссылку **Управление** , вы научитесь в нужном месте в DevOps (второй снимок экрана в записи блога), чтобы настроить подключение к Azure. При настройке обязательно выберите **конечную точку службы Azure Resource Manager** .
@@ -105,8 +105,8 @@ Azure DevOps позволяет хранить исходный код, запу
 1. Сначала назовите задачу сборки: **Создание виртуальных машин**.
 2. Выберите **субъект-службу** , которую вы создали, выбрав **Azure Resource Manager**
 3. Выберите **конечную точку службы**.
-4. В качестве **пути к сценарию**выберите **... (многоточие)** справа.
-5. Перейдите к **MakeGoldenImageVMs.ps1ному ** сценарию.
+4. В качестве **пути к сценарию** выберите **... (многоточие)** справа.
+5. Перейдите к **MakeGoldenImageVMs.ps1ному** сценарию.
 6. Параметры сценария должны выглядеть следующим образом: `-ConfigurationLocation $(System.DefaultWorkingDirectory)$(ConfigurationLocation) -DevTestLabName $(DevTestLabName) -vmSize $(VMSize) -machineUserName $(MachineUserName) -machinePassword (ConvertTo-SecureString -string '$(MachinePassword)' -AsPlainText -Force) -StandardTimeoutMinutes $(StandardTimeoutMinutes)`
 
     ![Завершение определения сборки](./media/set-up-devops-lab/complete-build-definition.png)

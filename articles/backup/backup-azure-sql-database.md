@@ -4,10 +4,10 @@ description: В этой статье объясняется, как созда�
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: 510d9637031928e31abaa5f82a5bf58c6ef44719
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91316853"
 ---
 # <a name="about-sql-server-backup-in-azure-vms"></a>Сведения о резервном копировании SQL Server на виртуальных машинах Azure
@@ -148,7 +148,7 @@ catch
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о резервном копировании баз данных SQL Server см. в [этой статье](backup-sql-server-database-azure-vms.md).
 * Дополнительные сведения о восстановлении резервных копий баз данных SQL Server см. в [этой статье](restore-sql-database-azure-vm.md).

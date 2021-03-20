@@ -7,10 +7,10 @@ ms.date: 04/08/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: f437c43c1e9ad960910e7576db4b3ddf3f6623ec
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89230880"
 ---
 # <a name="connect-to-windows-virtual-desktop-with-the-macos-client"></a>Подключение к виртуальному рабочему столу Windows с помощью клиента macOS
@@ -44,6 +44,6 @@ ms.locfileid: "89230880"
 
 Когда вы подпишетесь на веб-канал, его содержимое будет регулярно автоматически обновляться. Ресурсы могут добавляться, изменяться или удаляться в соответствии с изменениями, внесенными администратором.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о клиенте macOS см. в статье [Приступая к работе с клиентской](/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac/) документацией по macOS.

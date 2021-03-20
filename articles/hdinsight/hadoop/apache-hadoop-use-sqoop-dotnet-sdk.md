@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive, hdiseo17may2017, devx-track-csharp
 ms.date: 01/14/2020
 ms.openlocfilehash: a06326f5b4cf34a06475c10e368c6dcbb49ca9e4
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98928352"
 ---
 # <a name="run-apache-sqoop-jobs-by-using-net-sdk-for-apache-hadoop-in-hdinsight"></a>Выполнение заданий Apache Sqoop с помощью пакета SDK для .NET для Apache Hadoop в HDInsight
@@ -18,7 +18,7 @@ ms.locfileid: "98928352"
 
 Узнайте, как использовать пакет SDK Azure HDInsight для .NET, чтобы выполнять задания Apache Sqoop в HDInsight для импорта и экспорта между кластером HDInsight и базой данных SQL Azure или базой данных SQL Server.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Должна быть выполнена [настройка тестовой среды](./hdinsight-use-sqoop.md#create-cluster-and-sql-database), описанная в разделе [Использование Apache Sqoop с Hadoop в HDInsight](./hdinsight-use-sqoop.md).
 
@@ -44,7 +44,7 @@ ms.locfileid: "98928352"
 
 Из Hive в SQL Server.  В этом примере данные экспортируются из таблицы Hive `hivesampletable` в таблицу `mobiledata` в Базе данных SQL.
 
-1. Используйте следующий код в файле Program.cs. Измените код, чтобы задать значения для `ExistingClusterName` , и `ExistingClusterPassword` .
+1. Используйте следующий код в файле Program. cs. Измените код, чтобы задать значения для `ExistingClusterName` , и `ExistingClusterPassword` .
 
     ```csharp
     using Microsoft.Azure.Management.HDInsight.Job;

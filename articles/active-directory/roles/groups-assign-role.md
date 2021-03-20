@@ -14,10 +14,10 @@ ms.reviewer: vincesm
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 816009abb688525cd7663311c79300a6d12cf146
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98742953"
 ---
 # <a name="assign-a-role-to-a-cloud-group-in-azure-active-directory"></a>Назначение роли для облачной группы в Azure Active Directory
@@ -32,7 +32,7 @@ ms.locfileid: "98742953"
 
 1. Выберите **Azure Active Directory**  >  **роли и администраторы**, а затем выберите роль, которую нужно назначить.
 
-1. На странице **_имя роли_*_ Выберите > _* добавить назначение**.
+1. На странице ***имя роли** _ Выберите > _ * добавить назначение * *.
 
    ![Добавление нового назначения роли](./media/groups-assign-role/add-assignment.png)
 
@@ -99,7 +99,7 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
 "directoryScopeId":"/"
 }
 ```
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Использование облачных групп для управления назначениями ролей](groups-concept.md)
 - [Устранение неполадок ролей, назначенных облачным группам](groups-faq-troubleshooting.md)

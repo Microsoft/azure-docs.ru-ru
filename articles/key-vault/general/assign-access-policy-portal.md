@@ -11,13 +11,13 @@ ms.topic: how-to
 ms.date: 08/27/2020
 ms.author: mbaldwin
 ms.openlocfilehash: 910b8dae10036cc2e396be13495fd28363dc971d
-ms.sourcegitcommit: 2aa52d30e7b733616d6d92633436e499fbe8b069
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97934566"
 ---
-# <a name="assign-a-key-vault-access-policy-using-the-azure-portal"></a>Назначение политики доступа Key Vault с помощью портал Azure
+# <a name="assign-a-key-vault-access-policy-using-the-azure-portal"></a>Назначение политики доступа Key Vault с помощью портала Azure
 
 Политика доступа Key Vault определяет, может ли заданный субъект-служба, а именно приложение или группа пользователей, выполнять различные операции с Key Vault [секретами](../secrets/index.yml), [ключами](../keys/index.yml)и [сертификатами](../certificates/index.yml). Политики доступа можно назначить с помощью портал Azure (в этой статье), [Azure CLI](assign-access-policy-cli.md)или [Azure PowerShell](assign-access-policy-powershell.md).
 

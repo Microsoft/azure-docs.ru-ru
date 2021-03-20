@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 05/17/2019
 ms.author: mjbrown
 ms.openlocfilehash: 34df2d2f4a2209cca93c3f7ac12dcd203bf4a089
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93339637"
 ---
 # <a name="scalar-expressions-in-azure-cosmos-db-sql-queries"></a>Скалярные выражения в запросах SQL Azure Cosmos DB
@@ -99,7 +99,7 @@ ms.locfileid: "93339637"
   
    Представляет значение указанного имени параметра. Имена параметров должны начинаться с одного символа \@.  
   
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
   
   При вызове встроенной или определяемой пользователем скалярной функции необходимо определить все аргументы. Если любой из аргументов не определен, функция не будет вызвана, и значение не будет определено.  
   
@@ -113,7 +113,7 @@ ms.locfileid: "93339637"
     SELECT ((2 + 11 % 7)-2)/3
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
     [{
@@ -145,4 +145,4 @@ ms.locfileid: "93339637"
 
 - [Общие сведения об Azure Cosmos DB](introduction.md)
 - [Примеры .NET для Azure Cosmos DB](https://github.com/Azure/azure-cosmos-dotnet-v3)
-- [Вложенные запросы](sql-query-subquery.md)
+- [Подзапросы](sql-query-subquery.md)

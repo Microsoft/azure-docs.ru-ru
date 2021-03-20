@@ -4,10 +4,10 @@ description: Запись видео на основе событий — эт�
 ms.topic: conceptual
 ms.date: 05/27/2020
 ms.openlocfilehash: 6a5f4873b2cfef8d9a6594916d82cd30a3bc1cc2
-ms.sourcegitcommit: cc13f3fc9b8d309986409276b48ffb77953f4458
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97401618"
 ---
 # <a name="event-based-video-recording"></a>Запись видео на основе событий  

@@ -8,10 +8,10 @@ ms.date: 05/29/2018
 ms.custom: devx-track-java
 ms.author: twooley
 ms.openlocfilehash: a2c55a2d3277bbb6c3cf72f5ea703780d2a5e9bd
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87318850"
 ---
 # <a name="filesystem-operations-on-azure-data-lake-storage-gen1-using-java-sdk"></a>Операции файловой системы в Azure Data Lake Storage 1-го поколения с использованием Java SDK
@@ -169,7 +169,7 @@ client.concatenateFiles("/a/b/f.txt", fileList);
 System.out.println("Two files concatenated into a new file.");
 ```
 
-## <a name="rename-a-file"></a>Переименование файла
+## <a name="rename-a-file"></a>Переименуйте файл
 
 Следующий фрагмент кода переименовывает файл в учетной записи Data Lake Storage 1-го поколения.
 

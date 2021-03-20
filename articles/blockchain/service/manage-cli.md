@@ -5,10 +5,10 @@ ms.date: 07/23/2020
 ms.topic: how-to
 ms.reviewer: ravastra
 ms.openlocfilehash: 36b012c486c0c7d3303a81998e88f1605999c899
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "87170860"
 ---
 # <a name="manage-azure-blockchain-service-using-azure-cli"></a>Управление службой Блокчейн Azure с помощью Azure CLI
@@ -211,12 +211,12 @@ az role assignment create \
 | Параметр | Описание |
 |---------|-------------|
 | **role** | Имя роли Azure AD. |
-| **assignee** | Идентификатор пользователя Azure AD. Например `user@contoso.com`. |
+| **assignee** | Идентификатор пользователя Azure AD. Например: `user@contoso.com` |
 | **область** | Область назначения роли. Может быть либо блокчейн элементом, либо узлом транзакции. |
 
 **Пример**.
 
-Предоставьте доступ к узлу для пользователя Azure AD **члену**блокчейн:
+Предоставьте доступ к узлу для пользователя Azure AD **члену** блокчейн:
 
 ```azurecli
 az role assignment create \
@@ -227,7 +227,7 @@ az role assignment create \
 
 **Пример**.
 
-Предоставьте доступ к узлу для пользователя Azure AD на **узел транзакции**блокчейн:
+Предоставьте доступ к узлу для пользователя Azure AD на **узел транзакции** блокчейн:
 
 ```azurecli
 az role assignment create \
@@ -273,7 +273,7 @@ az role assignment delete \
 | Параметр | Описание |
 |---------|-------------|
 | **role** | Имя роли Azure AD. |
-| **assignee** | Идентификатор пользователя Azure AD. Например `user@contoso.com`. |
+| **assignee** | Идентификатор пользователя Azure AD. Например: `user@contoso.com` |
 | **область** | Область назначения роли. Может быть либо блокчейн элементом, либо узлом транзакции. |
 
 ## <a name="next-steps"></a>Дальнейшие действия

@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: 33aa088efd7768153d4a17472d82e0826f4ffa6b
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98742647"
 ---
 # <a name="configuring-tls-for-an-application-in-azure"></a>Настройка TLS для приложения в Azure
@@ -174,7 +174,7 @@ ms.locfileid: "98742647"
    > Создайте сертификат с общим именем, значение которого равно URL-адресу на основе GUID (например, **328187776e774ceda8fc57609d404462.cloudapp.net**). С помощью портала добавьте этот сертификат в промежуточную облачную службу. Затем добавьте сведения об этом сертификате в CSDEF- и CSCFG-файлы, перепакуйте приложение и обновите промежуточное развертывание для использования нового пакета.
    >
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Общая настройка облачной службы](cloud-services-how-to-configure-portal.md).
 * Узнайте, как [развернуть облачную службу](cloud-services-how-to-create-deploy-portal.md).
 * Настройте [имя пользовательского домена](cloud-services-custom-domain-name-portal.md).
