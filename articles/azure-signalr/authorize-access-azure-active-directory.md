@@ -7,10 +7,10 @@ ms.date: 08/03/2020
 ms.service: signalr
 ms.topic: conceptual
 ms.openlocfilehash: 37c2e41b5c81f941245b895ecd144baee3b9db6d
-ms.sourcegitcommit: ab829133ee7f024f9364cd731e9b14edbe96b496
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97797582"
 ---
 # <a name="authorize-access-to-azure-signalr-service-resources-using-azure-active-directory"></a>Авторизация доступа к ресурсам службы SignalR Azure с помощью Azure Active Directory

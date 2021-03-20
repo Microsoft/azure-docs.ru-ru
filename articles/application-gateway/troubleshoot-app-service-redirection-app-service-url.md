@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.date: 11/14/2019
 ms.author: absha
 ms.openlocfilehash: 1cc7df755198461643703cac988c8c31f2ac25db
-ms.sourcegitcommit: d22a86a1329be8fd1913ce4d1bfbd2a125b2bcae
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96182892"
 ---
 # <a name="troubleshoot-app-service-issues-in-application-gateway"></a>Устранение неполадок службы приложений в шлюзе приложений
@@ -44,7 +44,7 @@ ms.locfileid: "96182892"
 - Параметры HTTP: **выбрать имя узла из серверного адреса** включено
 - Проба: **Выбор имени узла из параметров HTTP** включено
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
 
 Служба приложений является многоклиентской службой, поэтому она использует заголовок узла в запросе для маршрутизации запроса в правильную конечную точку. Доменное имя по умолчанию для служб приложений, *. azurewebsites.net (скажем, contoso.azurewebsites.net), отличается от доменного имени шлюза приложений (скажем, contoso.com). 
 

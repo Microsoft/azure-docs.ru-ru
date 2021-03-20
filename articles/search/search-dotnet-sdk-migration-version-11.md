@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/07/2021
 ms.custom: devx-track-csharp
 ms.openlocfilehash: df8841cb2dcac6335b09a5e7715f42c508c69e76
-ms.sourcegitcommit: 44188608edfdff861cc7e8f611694dec79b9ac7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99536821"
 ---
 # <a name="upgrade-to-azure-cognitive-search-net-sdk-version-11"></a>Обновление до Azure Когнитивный поиск .NET SDK версии 11
@@ -74,7 +74,7 @@ ms.locfileid: "99536821"
 | [Поле](/dotnet/api/microsoft.azure.search.models.field) | [сеарчфиелд](/dotnet/api/azure.search.documents.indexes.models.searchfield) |
 | [DataType](/dotnet/api/microsoft.azure.search.models.datatype) | [сеарчфиелддататипе](/dotnet/api/azure.search.documents.indexes.models.searchfielddatatype) |
 | [итемеррор](/dotnet/api/microsoft.azure.search.models.itemerror) | [сеарчиндексереррор](/dotnet/api/azure.search.documents.indexes.models.searchindexererror) |
-| [Analyzer](/dotnet/api/microsoft.azure.search.models.analyzer) | [Лексикаланализер](/dotnet/api/azure.search.documents.indexes.models.lexicalanalyzer) (также `AnalyzerName` `LexicalAnalyzerName` ) |
+| [Анализатор](/dotnet/api/microsoft.azure.search.models.analyzer) | [Лексикаланализер](/dotnet/api/azure.search.documents.indexes.models.lexicalanalyzer) (также `AnalyzerName` `LexicalAnalyzerName` ) |
 | [анализерекуест](/dotnet/api/microsoft.azure.search.models.analyzerequest) | [анализетекстоптионс](/dotnet/api/azure.search.documents.indexes.models.analyzetextoptions) |
 | [StandardAnalyzer](/dotnet/api/microsoft.azure.search.models.standardanalyzer) | [луценестандарданализер](/dotnet/api/azure.search.documents.indexes.models.lucenestandardanalyzer) |
 | [стандардтокенизер](/dotnet/api/microsoft.azure.search.models.standardtokenizer) | [Луценестандардтокенизер](/dotnet/api/azure.search.documents.indexes.models.lucenestandardtokenizer) (также `StandardTokenizerV2` `LuceneStandardTokenizerV2` ) |
@@ -246,7 +246,7 @@ Response<SearchResults<Mountain>> results = client.Search<Mountain>("Rainier");
 
 + [Упорядоченные результаты](search-query-odata-orderby.md) для значений NULL были изменены в этой версии, и значения NULL появлялись первыми, если сортировка имеет значение `asc` и последний `desc` . Если вы написали код, который обрабатывает, как сортируются значения NULL, следует проверить и, возможно, удалить этот код, если он больше не нужен.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 + [Azure.Search.Docпакет ументс](https://www.nuget.org/packages/Azure.Search.Documents/)
 + [Примеры на GitHub](https://github.com/azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.0.0/sdk/search/Azure.Search.Documents/samples)

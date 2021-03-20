@@ -8,10 +8,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/10/2018
 ms.openlocfilehash: 4b222b387dad1c078cfe2a063ed310ef463b192e
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100376842"
 ---
 # <a name="datasets-in-azure-data-factory-version-1"></a>DataSets в фабрике данных Azure (версия 1)
@@ -227,7 +227,7 @@ structure:
 
 Ниже перечислены свойства, которые можно использовать в разделе availability.
 
-| Свойство | Описание | Обязательно | По умолчанию |
+| Свойство. | Описание | Обязательно | По умолчанию |
 | --- | --- | --- | --- |
 | frequency |Указывает единицу времени, которая определяет частоту создания среза данных.<br/><br/><b>Поддерживаемые значения</b>: Minute, Hour, Day, Week, Month. |Да |Н/Д |
 | interval |Задает множитель для частоты.<br/><br/>"Интервал х частоты" определяет частоту создания срезов. Если нужно, чтобы срез в наборе данных создавался каждый час, задайте для параметра <b>frequency</b> значение <b>Hour</b>, а для параметра <b>interval</b> — значение <b>1</b>.<br/><br/>Примечание. Если вы выбрали значение **Minute** для параметра **frequency**, значение интервала должно составлять не менее 15 минут. |Да |Н/Д |
@@ -437,6 +437,6 @@ structure:
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения о конвейерах см. в статье [Конвейеры и действия в фабрике данных Azure](data-factory-create-pipelines.md).
 - Дополнительные сведения о планировании и выполнении конвейеров см. в статье [Планирование и исполнение с использованием фабрики данных](data-factory-scheduling-and-execution.md).

@@ -1,5 +1,5 @@
 ---
-title: Настройка подсистемы балансировки нагрузки для прослушивателя VNN группы доступности
+title: Настройка подсистемы балансировки нагрузки для прослушивателя VNN группы доступности
 description: Узнайте, как настроить Azure Load Balancer для маршрутизации трафика в прослушиватель имени виртуальной сети (VNN) для группы доступности с SQL Server на виртуальных машинах Azure для обеспечения высокой доступности и аварийного восстановления (HADR).
 services: virtual-machines-windows
 documentationcenter: na
@@ -16,13 +16,13 @@ ms.date: 06/02/2020
 ms.author: mathoma
 ms.reviewer: jroth
 ms.openlocfilehash: 2d89759438cb625a0e220af10ab6b287096f6390
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97359886"
 ---
-# <a name="configure-load-balancer-for-ag-vnn-listener"></a>Настройка подсистемы балансировки нагрузки для прослушивателя VNN группы доступности
+# <a name="configure-load-balancer-for-ag-vnn-listener"></a>Настройка подсистемы балансировки нагрузки для прослушивателя VNN группы доступности
 [!INCLUDE[appliesto-sqlvm](../../includes/appliesto-sqlvm.md)]
 
 На виртуальных машинах Azure кластеры используют подсистему балансировки нагрузки для хранения IP-адреса, который должен находиться на одном узле кластера за раз. В этом решении подсистема балансировки нагрузки содержит IP-адрес для прослушивателя имени виртуальной сети (VNN) для группы доступности Always On. 

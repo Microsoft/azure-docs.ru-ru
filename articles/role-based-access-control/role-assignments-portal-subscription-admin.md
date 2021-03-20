@@ -10,17 +10,17 @@ ms.workload: identity
 ms.date: 01/11/2021
 ms.author: rolyon
 ms.openlocfilehash: dec5888127ed1fc291bec244a44cfb71e343e3bb
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100556836"
 ---
 # <a name="assign-a-user-as-an-administrator-of-an-azure-subscription"></a>Назначение пользователя администратором подписки Azure
 
 Чтобы предоставить пользователю права администратора подписки Azure, назначьте ему роль [Владелец](built-in-roles.md#owner) в этой подписке. Роль Владелец предоставляет пользователю полный доступ ко всем ресурсам в подписке, включая разрешение на предоставление доступа другим пользователям. Этот процесс не отличается от любой процедуры назначения ролей.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [Azure role assignment prerequisites](../../includes/role-based-access-control/prerequisites-role-assignments.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "100556836"
 
 **Управление доступом (IAM)** — это страница, которая обычно используется для назначения ролей для предоставления доступа к ресурсам Azure. Он также называется управление удостоверениями и доступом (IAM) и появляется в нескольких расположениях в портал Azure.
 
-1. Выберите **Управление доступом (IAM)**.
+1. Щелкните **Управление доступом (IAM)** .
 
     Ниже приведен пример страницы управления доступом (IAM) для подписки.
 
@@ -89,6 +89,6 @@ ms.locfileid: "100556836"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Назначение ролей Azure с помощью портал Azure](role-assignments-portal.md)
+- [Назначение ролей Azure с помощью портала Azure](role-assignments-portal.md)
 - [Вывод списка назначений ролей Azure с помощью портала Azure](role-assignments-list-portal.md).
 - [Упорядочение ресурсов с помощью групп управления Azure](../governance/management-groups/overview.md)

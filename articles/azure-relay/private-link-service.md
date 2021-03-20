@@ -4,10 +4,10 @@ description: Сведения о том, как интегрировать Azure
 ms.date: 09/24/2020
 ms.topic: article
 ms.openlocfilehash: 13644082160704ba9918e6bd6257fa314bb463a6
-ms.sourcegitcommit: 431bf5709b433bb12ab1f2e591f1f61f6d87f66c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98134387"
 ---
 # <a name="integrate-azure-relay-with-azure-private-link"></a>Интеграция Azure Relay с помощью частной ссылки Azure 

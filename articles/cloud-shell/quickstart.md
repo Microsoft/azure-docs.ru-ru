@@ -11,10 +11,10 @@ ms.topic: article
 ms.date: 03/12/2018
 ms.author: damaerte
 ms.openlocfilehash: 91b7c58890518559c046023bd78c9248e9840f9f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89468755"
 ---
 # <a name="quickstart-for-bash-in-azure-cloud-shell"></a>Краткое руководство по Bash в Azure Cloud Shell
@@ -95,7 +95,7 @@ az vm create -n myVM -g MyRG --image UbuntuLTS --generate-ssh-keys
    az group delete -n MyRG
    ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Дополнительные сведения о сохранении файлов для Bash в Cloud Shell.](persisting-shell-storage.md) <br>
 [Справочник команд Azure CLI](/cli/azure/) <br>
 [Общие сведения о службе файлов Azure](../storage/files/storage-files-introduction.md) <br>

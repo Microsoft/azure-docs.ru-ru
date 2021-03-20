@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.date: 11/15/2019
 ms.custom: H1Hack27Feb2017,hdinsightactive, devx-track-python
 ms.openlocfilehash: 593b809813f949cd1d0bcc17e1d1b7255ea19130
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98944277"
 ---
 # <a name="use-python-user-defined-functions-udf-with-apache-hive-and-apache-pig-in-hdinsight"></a>Использование определяемых пользователем функций Python с Apache Hive и Apache Pig в HDInsight
@@ -22,13 +22,13 @@ ms.locfileid: "98944277"
 
 В состав HDInsight также входят Jython, который представляет собой реализацию Python, написанную на Java. Jython выполняется непосредственно на виртуальная машина Java и не использует потоковую передачу. Jython является рекомендуемым интерпретатором Python при использовании Python с Pig.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * **Кластер Hadoop в HDInsight**. Ознакомьтесь со статьей [Краткое руководство. Использование Apache Hadoop и Apache Hive в Azure HDInsight с шаблоном Resource Manager](apache-hadoop-linux-tutorial-get-started.md).
 * **Клиент SSH**. Дополнительные сведения см. в руководстве по [подключению к HDInsight (Apache Hadoop) с помощью SSH](../hdinsight-hadoop-linux-use-ssh-unix.md).
 * [Схема универсального кода ресурса (URI)](../hdinsight-hadoop-linux-information.md#URI-and-scheme) для основного хранилища кластеров. Это может быть `wasb://` для службы хранилища Azure, `abfs://` для Azure Data Lake Storage 2-го поколения или adl://для Azure Data Lake Storage 1-го поколения. Если для службы хранилища Azure включено безопасное перемещение, URI будет wasbs://.  См. также сведения о [безопасной передаче](../../storage/common/storage-require-secure-transfer.md).
 * **Возможное изменение конфигурации хранилища.**  Если используется тип учетной записи хранения, см. раздел [Конфигурация хранилища](#storage-configuration) `BlobStorage` .
-* Необязательный элемент.  Если планируется использовать PowerShell, необходимо установить [модуль AZ](/powershell/azure/new-azureps-module-az) .
+* Необязательный параметр.  Если планируется использовать PowerShell, необходимо установить [модуль AZ](/powershell/azure/new-azureps-module-az) .
 
 > [!NOTE]  
 > Учетная запись хранения, используемая в этой статье, была включена в службу хранилища Azure с включенной [безопасной](../../storage/common/storage-require-secure-transfer.md) поддержкой и поэтому `wasbs` используется во всей статье.
@@ -560,7 +560,7 @@ Get-AzHDInsightJobOutput `
 ((2012-02-03,20:11:56,SampleClass3,[INFO],everything normal for id 530537821))
 ```
 
-## <a name="troubleshooting"></a><a name="troubleshooting"></a>Выявлен
+## <a name="troubleshooting"></a><a name="troubleshooting"></a>Устранение неполадок
 
 ### <a name="errors-when-running-jobs"></a>Ошибки при выполнении заданий
 

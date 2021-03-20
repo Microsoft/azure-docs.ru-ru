@@ -15,10 +15,10 @@ ms.topic: article
 ms.date: 04/26/2019
 ms.author: damaerte
 ms.openlocfilehash: a052364b06ac1b9b30cef76db10a79e8ed85b9a3
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89470159"
 ---
 # <a name="features--tools-for-azure-cloud-shell"></a>Функции и средства для Azure Cloud Shell
@@ -69,7 +69,7 @@ PowerShell в Cloud Shell содержит частную сборку моду�
 
 ## <a name="tools"></a>Инструменты
 
-|Категория   |Имя   |
+|Category   |Имя   |
 |---|---|
 |Средства Linux            |bash<br> zsh<br> sh<br> tmux<br> dig<br>               |
 |Инструменты Azure            |[Azure CLI](https://github.com/Azure/azure-cli) и [классический интерфейс командной строки Azure](https://github.com/Azure/azure-xplat-cli)<br> [AzCopy](../storage/common/storage-use-azcopy-v10.md)<br> [CLI службы "Функции Azure"](https://github.com/Azure/azure-functions-core-tools)<br> [Интерфейс командной строки Service Fabric](../service-fabric/service-fabric-cli.md)<br> [Batch Shipyard](https://github.com/Azure/batch-shipyard)<br> [blobxfer](https://github.com/Azure/blobxfer)|
@@ -78,7 +78,7 @@ PowerShell в Cloud Shell содержит частную сборку моду�
 |Инструменты сборки            |make<br> maven<br> npm<br> pip         |
 |Контейнеры             |[Виртуальная машина Docker](https://github.com/docker/machine)<br> [Kubectl](https://kubernetes.io/docs/user-guide/kubectl-overview/).<br> [Helm](https://github.com/kubernetes/helm)<br> [Интерфейс командной строки DC/OS](https://github.com/dcos/dcos-cli)         |
 |Базы данных              |Клиент MySQL<br> Клиент PostgreSQL<br> [Программа sqlcmd](/sql/tools/sqlcmd-utility)<br> [mssql-scripter](https://github.com/Microsoft/sql-xplat-cli) |
-|Другое                  |Клиент iPython<br> [Интерфейс командной строки Cloud Foundry](https://github.com/cloudfoundry/cli)<br> [Terraform](https://www.terraform.io/docs/providers/azurerm/)<br> [Ansible](https://www.ansible.com/microsoft-azure)<br> [Chef InSpec](https://www.chef.io/inspec/)<br> [Puppet](https://puppet.com/docs/bolt/latest/bolt.html)<br> [Пакет HashiCorp](https://www.packer.io/)<br> [Интерфейс командной строки Office 365](https://pnp.github.io/office365-cli/)|
+|Другие                  |Клиент iPython<br> [Интерфейс командной строки Cloud Foundry](https://github.com/cloudfoundry/cli)<br> [Terraform](https://www.terraform.io/docs/providers/azurerm/)<br> [Ansible](https://www.ansible.com/microsoft-azure)<br> [Chef InSpec](https://www.chef.io/inspec/)<br> [Puppet](https://puppet.com/docs/bolt/latest/bolt.html)<br> [HashiCorp Packer](https://www.packer.io/)<br> [Интерфейс командной строки Office 365](https://pnp.github.io/office365-cli/)|
 
 ## <a name="language-support"></a>Поддержка языков
 
@@ -91,7 +91,7 @@ PowerShell в Cloud Shell содержит частную сборку моду�
 |PowerShell |[7.0.0](https://github.com/PowerShell/powershell/releases)       |
 |Python     |2.7 и 3.5 (по умолчанию)|
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Быстрый запуск Bash в Cloud Shell](quickstart.md) <br>
 [Быстрый запуск PowerShell в Cloud Shell](quickstart-powershell.md) <br>
 [Справочник команд Azure CLI](/cli/azure/) <br>

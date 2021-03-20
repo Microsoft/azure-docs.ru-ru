@@ -5,10 +5,10 @@ ms.topic: article
 ms.date: 02/03/2021
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 19b284aceb83fbbc2bcf662b2b58941e6a5b36f9
-ms.sourcegitcommit: 44188608edfdff861cc7e8f611694dec79b9ac7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99539219"
 ---
 # <a name="distributed-tracing-and-correlation-through-service-bus-messaging"></a>Распределенная трассировка и корреляция путем обмена сообщениями через служебную шину
@@ -398,7 +398,7 @@ serviceBusLogger.LogInformation($"{currentActivity.OperationName} is finished, D
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Корреляция данных телеметрии в Application Insights](../azure-monitor/app/correlation.md)
 * [Настройка Application Insights: отслеживание зависимостей](../azure-monitor/app/asp-net-dependencies.md), чтобы выяснить, что стало причиной медленной работы: REST, SQL или другие внешние ресурсы.

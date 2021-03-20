@@ -4,10 +4,10 @@ description: Эта статья содержит вводную информа�
 ms.topic: conceptual
 ms.date: 06/22/2017
 ms.openlocfilehash: 32f47d62cc9dda7cc88421dbf616bf69ffe152fc
-ms.sourcegitcommit: 16c7fd8fe944ece07b6cf42a9c0e82b057900662
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96575692"
 ---
 # <a name="service-fabric-with-azure-api-management-overview"></a>Общие сведения о Service Fabric со службой управления API Azure
@@ -21,7 +21,7 @@ ms.locfileid: "96575692"
 > [!IMPORTANT]
 > Эта функция доступна в ценовой категории **Премиум** и **Разработка** управления API, так как необходима поддержка виртуальной сети.
 
-## <a name="architecture"></a>Architecture
+## <a name="architecture"></a>Архитектура
 
 Общая архитектура Service Fabric основана на одностраничном веб-приложении, которое выполняет HTTP-вызовы к внутренним службам, предоставляющим API-интерфейсы HTTP. Пример такой архитектуры см. в статье [Service Fabric Getting Started Sample](https://github.com/Azure-Samples/service-fabric-dotnet-getting-started) (Пример приложения для начала работы с Service Fabric).
 

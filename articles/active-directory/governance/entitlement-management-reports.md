@@ -17,10 +17,10 @@ ms.author: barclayn
 ms.reviewer: jocastel
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6eb44c1efd683b6febe9a355ef72c80cc6f2e40d
-ms.sourcegitcommit: 6e2d37afd50ec5ee148f98f2325943bafb2f4993
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97746632"
 ---
 # <a name="view-reports-and-logs-in-azure-ad-entitlement-management"></a>Просмотр отчетов и журналов в управлении назначениями Azure AD
@@ -85,7 +85,7 @@ ms.locfileid: "97746632"
 
 1. В верхней части измените **категорию** на `EntitlementManagement` или, в зависимости от `UserManagement` записи аудита, которую вы ищете.  
 
-1. Нажмите кнопку **Применить**.
+1. Щелкните **Применить**.
 
 1. Чтобы скачать журналы, нажмите кнопку **скачать**.
 
@@ -93,7 +93,7 @@ ms.locfileid: "97746632"
 
 Azure AD будет записывать дополнительные записи аудита во время выполнения запроса, в том числе:
 
-| Категория | Действие | Request status (Состояние запроса) |
+| Category | Действие | Request status (Состояние запроса) |
 | :---- | :------------ | :------------ |
 | `EntitlementManagement` | `Auto approve access package assignment request` | Запрос не требует утверждения |
 | `UserManagement` | `Create request approval` | Запрос требует утверждения |

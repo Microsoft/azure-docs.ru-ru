@@ -11,17 +11,17 @@ ms.workload: identity
 ms.date: 12/11/2020
 ms.author: rolyon
 ms.openlocfilehash: ecda0edcd34999e8cbb6c7ab9039953d17c119e5
-ms.sourcegitcommit: 1bdcaca5978c3a4929cccbc8dc42fc0c93ca7b30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97369232"
 ---
 # <a name="create-or-update-azure-custom-roles-using-the-azure-portal"></a>Создание или обновление пользовательских ролей Azure с помощью портала Azure
 
 Если [встроенные роли Azure](built-in-roles.md) не соответствуют конкретным потребностям Организации, можно создать собственные пользовательские роли Azure. Так же, как и встроенные роли, можно назначать пользовательские роли пользователям, группам и субъектам-службам в областях подписок и групп ресурсов. Настраиваемые роли хранятся в каталоге Azure Active Directory (Azure AD) и могут использоваться несколькими подписками. Каждый каталог может иметь до 5000 пользовательских ролей. Пользовательские роли можно создавать с помощью портал Azure, Azure PowerShell, Azure CLI или REST API. В этой статье описывается создание пользовательских ролей с помощью портал Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для создания пользовательских ролей в Azure требуются:
 

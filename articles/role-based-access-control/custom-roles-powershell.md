@@ -15,10 +15,10 @@ ms.date: 03/18/2020
 ms.author: rolyon
 ms.reviewer: bagovind
 ms.openlocfilehash: 799475db567c88f067192d027589e9185ee1782b
-ms.sourcegitcommit: 1bdcaca5978c3a4929cccbc8dc42fc0c93ca7b30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97369180"
 ---
 # <a name="create-or-update-azure-custom-roles-using-azure-powershell"></a>Создание или изменение настраиваемых ролей Azure с помощью Azure PowerShell
@@ -34,7 +34,7 @@ ms.locfileid: "97369180"
 
 [!INCLUDE [az-powershell-update](../../includes/updated-for-az.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для создания пользовательских ролей в Azure требуются:
 

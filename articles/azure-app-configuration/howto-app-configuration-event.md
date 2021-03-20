@@ -11,10 +11,10 @@ ms.date: 03/04/2020
 ms.author: alkemper
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: c188a4b7fe8e9223faa1cdeb52ae01ed83b94d84
-ms.sourcegitcommit: 5b926f173fe52f92fcd882d86707df8315b28667
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99549785"
 ---
 # <a name="use-event-grid-for-app-configuration-data-change-notifications"></a>Использовать сетку событий для уведомлений об изменении данных конфигурации приложения
@@ -131,7 +131,7 @@ az appconfig kv set --name <appconfig_name> --key Foo --value Bar --yes
 az group delete --name <resource_group_name>
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Теперь, когда вы знаете, как создавать разделы и подписки на события, ознакомьтесь с дополнительными сведениями о событиях "ключ — значение" и возможностях службы "Сетка событий".
 

@@ -9,10 +9,10 @@ ms.service: azure-maps
 services: azure-maps
 manager: philmea
 ms.openlocfilehash: b3404c02dc159309ed1e9fcd6f9f6bb593fc7552
-ms.sourcegitcommit: 4064234b1b4be79c411ef677569f29ae73e78731
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92896945"
 ---
 # <a name="azure-maps-supported-built-in-map-styles"></a>Azure Maps поддерживаемые встроенные стили карт
@@ -96,7 +96,7 @@ ms.locfileid: "92896945"
 
 ## <a name="night"></a>ночь
 
-**Ночь**  — это темная версия стиля дорожной карты с цветными дорогами и символами.
+**Ночь** — это темная версия стиля дорожной карты с цветными дорогами и символами.
 
 ![стиль карт ночью](./media/supported-map-styles/night.png)
 
@@ -108,7 +108,7 @@ ms.locfileid: "92896945"
 
 ## <a name="road_shaded_relief"></a>road_shaded_relief
 
-**road shaded relief**  — это основной стиль Azure Maps, дополненный рельефами Земли.
+**road shaded relief** — это основной стиль Azure Maps, дополненный рельефами Земли.
 
 ![Затененный стиль карт рельефов](./media/supported-map-styles/shaded-relief.png)
 

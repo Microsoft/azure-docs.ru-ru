@@ -8,10 +8,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 07/16/2020
 ms.openlocfilehash: ef89ecef34a7c5afb94547181f449b0fc393e67c
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100377573"
 ---
 # <a name="update-azure-machine-learning-studio-classic-models-by-using-update-resource-activity"></a>Обновление моделей Машинное обучение Azure Studio (классическая модель) с помощью действия "обновить ресурс"
@@ -55,7 +55,7 @@ ms.locfileid: "100377573"
 }
 ```
 
-| Свойство                      | Описание                              | Обязательно |
+| Свойство.                      | Описание                              | Обязательно |
 | :---------------------------- | :--------------------------------------- | :------- |
 | name                          | Имя действия в конвейере.     | Да      |
 | description                   | Описание действия.  | Нет       |

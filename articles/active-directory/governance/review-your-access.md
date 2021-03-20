@@ -16,10 +16,10 @@ ms.author: barclayn
 ms.reviewer: mwahl
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b3fef2f85ca7e7b4034c8582477796d49446ea44
-ms.sourcegitcommit: 6e2d37afd50ec5ee148f98f2325943bafb2f4993
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97746785"
 ---
 # <a name="review-access-for-yourself-to-groups-or-applications-in-azure-ad-access-reviews"></a>Просмотр доступа к группам или приложениям в проверках доступа Azure AD
@@ -103,7 +103,7 @@ Azure Active Directory (Azure AD) упрощает управление дост
 
 4. Продолжить в разделе **выполнение проверки доступа**
 
-### <a name="email"></a>Адрес электронной почты
+### <a name="email"></a>электронная почта;
 
 >[!IMPORTANT]
 > При получении сообщения электронной почты могут воздержаться задержки, а в некоторых случаях это может занять до 24 часов. Добавьте azure-noreply@microsoft.com в список надежных получателей, чтобы убедиться, что получены все сообщения электронной почты.

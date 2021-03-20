@@ -13,10 +13,10 @@ ms.topic: article
 ms.date: 03/12/2019
 ms.author: apimpm
 ms.openlocfilehash: 18cc42c3447de733447c27db52a9a6d664539464
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89400367"
 ---
 # <a name="how-to-save-and-configure-your-api-management-service-configuration-using-git"></a>Сохранение и настройка конфигурации службы управления API с помощью Git
@@ -148,7 +148,7 @@ git push
 
 Файлы и папки в локальном репозитории Git содержат сведения о конфигурации экземпляра службы.
 
-| Item | Описание |
+| Элемент | Описание |
 | --- | --- |
 | Корневая папка api-management |Содержит конфигурацию верхнего уровня для экземпляра службы |
 | Папка apis |Содержит конфигурацию для API в экземпляре службы |

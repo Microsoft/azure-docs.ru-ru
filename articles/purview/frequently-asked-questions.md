@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: conceptual
 ms.date: 10/20/2020
 ms.openlocfilehash: 94b765cbcbdd81505b08052845207ee1d93a28d9
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101667808"
 ---
 # <a name="frequently-asked-questions-faq-about-azure-purview"></a>Часто задаваемые вопросы об Azure зрения
@@ -34,7 +34,7 @@ Azure зрения — это решение по управлению данн�
 |Azure Synapse Analytics (хранилище данных SQL)|SQL Server |
 |Azure Cosmos DB|Teradata (доступно в конце 2020)|
 |Управляемый экземпляр SQL Azure|Протокол SAP ECC (доступен по окончании 2020)|
-|Azure Data Explorer|SAP S/4 HANA (доступно в конце 2020)|
+|Обозреватель данных Azure|SAP S/4 HANA (доступно в конце 2020)|
 |Хранилище Azure Data Lake Storage 1-го поколения|Hive хранилище метаданных (доступно в конце 2020)|
 |Azure Data Lake Storage 2-го поколения|Amazon S3|
 |Файлы Azure|--|

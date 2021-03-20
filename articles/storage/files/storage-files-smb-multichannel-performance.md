@@ -8,10 +8,10 @@ ms.date: 11/16/2020
 ms.author: gunjanj
 ms.subservice: files
 ms.openlocfilehash: a9edd93aa265622732be4a7582cce9900959bf6d
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100374989"
 ---
 # <a name="smb-multichannel-performance"></a>Производительность SMB Multichannel
@@ -130,7 +130,7 @@ ms.locfileid: "100374989"
 
 Более высокие размеры операций ввода-вывода повышают пропускную способность и имеют более высокие задержки, что приводит к снижению числа операций ввода-вывода в секунду. Меньшие размеры ввода-вывода повышают скорость операций ввода-вывода, но при этом снижается пропускная способность и задержка.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Включение многоканального SMB в учетной записи Филестораже (Предварительная версия)](storage-files-enable-smb-multichannel.md)
 - Дополнительные сведения о многоканальном SMB см. в [документации по Windows](/azure-stack/hci/manage/manage-smb-multichannel) .

@@ -1,6 +1,6 @@
 ---
-title: Включить файл
-description: Включить файл
+title: включить файл
+description: включить файл
 services: redis-cache
 author: wesmc7777
 ms.service: cache
@@ -9,13 +9,13 @@ ms.date: 03/28/2018
 ms.author: wesmc
 ms.custom: include file
 ms.openlocfilehash: 7f03072c2b7ee1f08fc5fa306da6c5b8368742ae
-ms.sourcegitcommit: d76108b476259fe3f5f20a91ed2c237c1577df14
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "67185857"
 ---
-Если вы не закрепили кеш на панели мониторинга, найдите его на [портале Azure](https://portal.azure.com) через меню **Все службы** .
+Если вы не закрепили кеш на панели мониторинга, найдите его на [портале Azure](https://portal.azure.com) через меню **Все службы**.
 
 ![Колонка обзора кэша Redis для Azure](media/redis-cache-browse/redis-cache-browse.png)
 

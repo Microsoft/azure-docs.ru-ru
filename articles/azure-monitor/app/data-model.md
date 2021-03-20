@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.reviewer: sergkanz
 ms.openlocfilehash: fd5848eb44ecd32612943662b5a4fd0a5091cd9d
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91461297"
 ---
 # <a name="application-insights-telemetry-data-model"></a>Модель данных телеметрии Application Insights
@@ -48,7 +48,7 @@ Application Insights предоставляет три дополнительн�
 
 [Чтобы сообщить о проблемах с моделями данных или схемой и рекомендациями, используйте наш репозиторий GitHub](https://github.com/microsoft/ApplicationInsights-dotnet/issues/new/choose).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Запись пользовательской телеметрии](./api-custom-events-metrics.md)
 - Вы можете узнать, как [расширять и фильтровать данные телеметрии](./api-filtering-sampling.md).

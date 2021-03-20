@@ -10,10 +10,10 @@ services: azure-maps
 manager: ''
 ms.custom: codepen
 ms.openlocfilehash: 647a8fc25f27ef7f441ed7459ecd543d4f35581e
-ms.sourcegitcommit: 4064234b1b4be79c411ef677569f29ae73e78731
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92895279"
 ---
 # <a name="show-search-results-on-the-map"></a>Отображение результатов поиска на карте
@@ -62,7 +62,7 @@ ms.locfileid: "92895279"
 > [!div class="nextstepaction"]
 > [Рекомендации по использованию службы поиска Azure Maps](how-to-use-best-practices-for-search.md)
 
-Дополнительные сведения о **поиске нечетких соответствий** :
+Дополнительные сведения о **поиске нечетких соответствий**:
 
 > [!div class="nextstepaction"]
 > [API поиска нечетких соответствий службы "Карты Azure"](/rest/api/maps/search/getsearchfuzzy)
