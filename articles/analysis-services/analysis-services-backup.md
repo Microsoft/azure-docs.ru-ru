@@ -9,10 +9,10 @@ ms.author: owend
 ms.reviewer: minewiskan
 ms.custom: references_regions
 ms.openlocfilehash: af1850f77c1d13c761bfc2a143074b5067b349b4
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96013009"
 ---
 # <a name="analysis-services-database-backup-and-restore"></a>Analysis Services резервного копирования и восстановления базы данных
@@ -53,13 +53,13 @@ ms.locfileid: "96013009"
 
     ![Сохранение параметров архивации](./media/analysis-services-backup/aas-backup-save.png)
 
-## <a name="backup"></a>Резервное копирование
+## <a name="backup"></a>Backup
 
 ### <a name="to-backup-by-using-ssms"></a>Архивация с помощью SSMS
 
 1. В среде SSMS щелкните правой кнопкой мыши базу данных и выберите **Архивировать**.
 
-2. В файле резервная копия резервной копии **базы данных**  >  **Backup file** нажмите кнопку **Обзор**.
+2. В файле резервная копия резервной копии **базы данных**  >  нажмите кнопку **Обзор**.
 
 3. В диалоговом окне **Сохранить файл как** проверьте путь к папке, а затем введите имя для архивного файла. 
 

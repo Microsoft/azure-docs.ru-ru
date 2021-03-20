@@ -8,10 +8,10 @@ author: trkeya
 ms.author: trkeya
 ms.date: 03/30/2020
 ms.openlocfilehash: cbd12481312d310add15bf3d41e21e9c416f1c39
-ms.sourcegitcommit: b4880683d23f5c91e9901eac22ea31f50a0f116f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94491081"
 ---
 # <a name="use-marketo-to-manage-commercial-marketplace-leads"></a>Использование Marketo для управления потенциальными клиентами на коммерческой платформе
@@ -30,7 +30,7 @@ ms.locfileid: "94491081"
 
     ![Новая форма Marketo](./media/commercial-marketplace-lead-management-instructions-marketo/marketo-2.png)
 
-1.  Заполните необходимые поля в диалоговом окне **Новая форма** , а затем выберите **Создать**.
+1.  Заполните необходимые поля в диалоговом окне **Новая форма**, а затем выберите **Создать**.
 
     ![Создание новой формы Marketo](./media/commercial-marketplace-lead-management-instructions-marketo/marketo-3.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "94491081"
 
     ![Выберите назначение потенциального клиента](./media/commercial-marketplace-lead-management-instructions-marketo/choose-lead-destination.png)
 
-1. Укажите **идентификатор сервера** , **идентификатор учетной записи Munchkin** и **идентификатор формы**.
+1. Укажите **идентификатор сервера**, **идентификатор учетной записи Munchkin** и **идентификатор формы**.
 
     > [!NOTE]
     > Прежде чем вы сможете получать сведения о потенциальных клиентах для своего предложения необходимо завершить настройку его остальной части и опубликовать его. 

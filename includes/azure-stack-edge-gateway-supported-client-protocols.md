@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 11/16/2020
 ms.author: alkohli
 ms.openlocfilehash: 13db9f8427ab3aa293efc15d008152d0714e3f6b
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96447720"
 ---
 Ниже представлены поддерживаемые протоколы для клиентов, обращающихся к вашему устройству.

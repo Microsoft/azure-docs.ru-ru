@@ -11,10 +11,10 @@ ms.workload: identity
 ms.date: 01/19/2021
 ms.author: chmutali
 ms.openlocfilehash: ed97600ca1802629f81f93f4f51c92ad4b1c9bd1
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99256227"
 ---
 # <a name="how-azure-active-directory-provisioning-integrates-with-sap-successfactors"></a>Как Azure Active Directory подготовка интегрируется с SAP SuccessFactors 
@@ -295,7 +295,7 @@ JSONPath — это язык запросов для JSON, похожий на X
 | 1 | * Задать только бизнес-адрес электронной почты в качестве основного. <br> * Не устанавливайте номера телефонов. | true | true | false | \[Не задано\] | \[Не задано\] | 
 | 2 | * В SuccessFactors, бизнес-почта и рабочий телефон являются первичными <br> * Постоянное направление номера телефона Azure AD на рабочий телефон и мобильный телефон. | true | true | false | TelephoneNumber | mobile | 
 | 3 | * В SuccessFactors, бизнес-почта и сотовый телефон являются первичными <br> * Всегда перенаправление номера телефона Azure AD на рабочий телефон и мобильное устройство на сотовый телефон | true | false | true |  TelephoneNumber | mobile | 
-| 4 | * В SuccessFactors Business e-mail является основной <br> * В Azure AD проверьте наличие номера рабочего телефона, если он есть, а затем проверьте, есть ли номер мобильного телефона, и пометьте рабочий телефон как первичный только в том случае, если номер мобильного устройства отсутствует. | верно | Использовать сопоставление выражений: `IIF(IsPresent([telephoneNumber]), IIF(IsPresent([mobile]),"false", "true"), "false")` | Использовать сопоставление выражений: `IIF(IsPresent([mobile]),"false", "true")` | TelephoneNumber | mobile | 
+| 4 | * В SuccessFactors Business e-mail является основной <br> * В Azure AD проверьте наличие номера рабочего телефона, если он есть, а затем проверьте, есть ли номер мобильного телефона, и пометьте рабочий телефон как первичный только в том случае, если номер мобильного устройства отсутствует. | true | Использовать сопоставление выражений: `IIF(IsPresent([telephoneNumber]), IIF(IsPresent([mobile]),"false", "true"), "false")` | Использовать сопоставление выражений: `IIF(IsPresent([mobile]),"false", "true")` | TelephoneNumber | mobile | 
 | 5 | * В SuccessFactors бизнес-почта и рабочий телефон являются первичными. <br> * В Azure AD, если доступны мобильные устройства, установите его в качестве рабочего телефона, в противном случае используйте telephoneNumber. | true | true | false | `IIF(IsPresent([mobile]), [mobile], [telephoneNumber])` | \[Не задано\] | 
 
 * Если отсутствует сопоставление для номера телефона при сопоставлении атрибута обратной записи, в обратную запись включаются только сообщения электронной почты.

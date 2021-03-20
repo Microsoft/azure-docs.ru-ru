@@ -15,10 +15,10 @@ ms.topic: troubleshooting
 ms.date: 09/23/2020
 ms.author: b-juche
 ms.openlocfilehash: 6ba8b18876bdae2754a6a772ce3909ff2f5a71b7
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91651010"
 ---
 # <a name="troubleshoot-snapshot-policies"></a>Устранение неполадок с политиками моментальных снимков
@@ -34,6 +34,6 @@ ms.locfileid: "91651010"
 | Создание политики моментальных снимков завершается сбоем с ошибкой `Total number of snapshots to keep exceeds 255` . | Каждый том может иметь не [более 255 моментальных снимков](azure-netapp-files-resource-limits.md). Максимальное значение включает сумму всех моментальных снимков по часам, дням, неделям и месяцам. <br> Сократите `Snapshots to keep` значение и повторите попытку. |
 | Назначение политики тому завершается ошибкой `Total snapshot policy is over the max '255'` . | Каждый том может иметь не [более 255 моментальных снимков](azure-netapp-files-resource-limits.md). Если сумма всех моментальных снимков по запросу, ежечасных, ежедневных, еженедельных и месячных, превышает максимальное значение, возникает ошибка. <br> Уменьшите `snapshots to keep` значение или удалите некоторые моментальные снимки по запросу и повторите попытку. | 
 
-## <a name="next-steps"></a>Дальнейшие шаги  
+## <a name="next-steps"></a>Дальнейшие действия  
 
 * [Управление политиками моментальных снимков](azure-netapp-files-manage-snapshots.md#manage-snapshot-policies)

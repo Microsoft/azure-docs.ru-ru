@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 11/18/2019
 ms.author: glenga
 ms.openlocfilehash: 12b90bf709cb20bed844940570663a76052a540d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101738945"
 ---
 # <a name="get-started-guide-for-azure-developers"></a>Руководство по началу работы для разработчиков Azure
@@ -85,7 +85,7 @@ Azure Service Fabric — это платформа распределенных 
 
 * Подготовка
 * Развертывание
-* Наблюдение
+* Мониторинг
 * Обновление и установка исправлений
 * Удаление
 
@@ -182,7 +182,7 @@ Azure Веснное облако — это бессерверная платф
 
 Дополнительные сведения о рекомендациях по безопасности в Azure см. в разделе [Рекомендации и шаблоны для обеспечения безопасности в Azure](../../security/fundamentals/best-practices-and-patterns.md).
 
-### <a name="monitoring"></a>Наблюдение
+### <a name="monitoring"></a>Мониторинг
 
 После запуска приложения в Azure необходимо отслеживать производительность, отслеживать проблемы и видеть, как клиенты используют ваше приложение. Azure предоставляет несколько вариантов мониторинга.
 

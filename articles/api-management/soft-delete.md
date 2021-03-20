@@ -7,10 +7,10 @@ author: vladvino
 ms.author: apimpm
 ms.date: 11/27/2020
 ms.openlocfilehash: e2842f3e428abb4f0eb628dbb8e446f2714d5d89
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101652391"
 ---
 # <a name="api-management-soft-delete-preview"></a>Обратимое удаление управления API (Предварительная версия)
@@ -31,7 +31,7 @@ ms.locfileid: "101652391"
 |--|--|--|--|
 | [Создать или обновить](/rest/api/apimanagement/2020-06-01-preview/apimanagementservice/createorupdate) | Создает или обновляет службу управления API.  | Служба управления API | Любой |
 | [Создать или изменить](/rest/api/apimanagement/2020-06-01-preview/apimanagementservice/createorupdate) `restore` свойство с установленным на **true** | Отменяет удаление службы управления API, если она была ранее обратима удалена. Если `restore` указан параметр и для него задано значение `true` все остальные свойства, будут игнорироваться.  | Служба управления API |  2020-06-01 — предварительная версия |
-| [Удаление](/rest/api/apimanagement/2020-06-01-preview/apimanagementservice/delete) | Удаляет существующую службу управления API. | Служба управления API | 2020-06-01 — предварительная версия|
+| [Удалить](/rest/api/apimanagement/2020-06-01-preview/apimanagementservice/delete) | Удаляет существующую службу управления API. | Служба управления API | 2020-06-01 — предварительная версия|
 | [Получить по имени](/rest/api/apimanagement/2020-06-01-preview/deletedservices/getbyname) | Получите обратимо удаленную службу управления API по имени. | Удаленные службы | 2020-06-01 — предварительная версия |
 | [Список по подписке](/rest/api/apimanagement/2020-06-01-preview/deletedservices/listbysubscription) | Список всех обратимо удаленных служб, доступных для отмены удаления для данной подписки. | Удаленные службы | 2020-06-01 — предварительная версия
 | [Purge](/rest/api/apimanagement/2020-06-01-preview/deletedservices/purge) | Удаляет службу управления API (без возможности отмены удаления). | Удаленные службы | 2020-06-01 — предварительная версия

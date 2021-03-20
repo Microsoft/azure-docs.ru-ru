@@ -6,10 +6,10 @@ ms.date: 09/22/2020
 ms.reviewer: yutlin
 ms.custom: seodec18
 ms.openlocfilehash: b4e184f827875ebebd40ab976ef63e77ee702d49
-ms.sourcegitcommit: 857859267e0820d0c555f5438dc415fc861d9a6b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93126045"
 ---
 # <a name="use-a-tlsssl-certificate-in-your-code-in-azure-app-service"></a>Использование TLS/SSL-сертификата в коде в Службе приложений Azure
@@ -31,7 +31,7 @@ ms.locfileid: "93126045"
 
 На <a href="https://portal.azure.com" target="_blank">портале Azure</a> в меню слева выберите **Службы приложений** >  **\<app-name>** .
 
-В левой области навигации приложения выберите **Параметры TLS/SSL** , а затем выберите **Сертификаты закрытого ключа (PFX)** или **Сертификаты открытого ключа (CER)** .
+В левой области навигации приложения выберите **Параметры TLS/SSL**, а затем выберите **Сертификаты закрытого ключа (PFX)** или **Сертификаты открытого ключа (CER)**.
 
 Найдите сертификат, который вы хотите использовать, и скопируйте отпечаток.
 
@@ -148,7 +148,7 @@ var cert = new X509Certificate2(bytes);
 > Служба приложений внедряет пути к сертификатам в контейнеры Windows в виде следующих переменных среды: `WEBSITE_PRIVATE_CERTS_PATH` `WEBSITE_INTERMEDIATE_CERTS_PATH` ,, `WEBSITE_PUBLIC_CERTS_PATH` и `WEBSITE_ROOT_CERTS_PATH` . Лучше сослаться на путь к сертификату с помощью переменных среды, а не прописано путь к сертификату в случае, если пути сертификатов изменятся в будущем.
 >
 
-Кроме того, [контейнеры Windows Server Core](configure-custom-container.md#supported-parent-images) автоматически загружают сертификаты в хранилище сертификатов в **LocalMachine\My** . Чтобы загрузить сертификаты, используйте тот же шаблон, что и для [загрузки сертификата в приложениях Windows](#load-certificate-in-windows-apps). Для контейнеров на основе Windows Nano используйте приведенные выше пути к файлам, чтобы [загрузить сертификат непосредственно из файла](#load-certificate-from-file).
+Кроме того, [контейнеры Windows Server Core](configure-custom-container.md#supported-parent-images) автоматически загружают сертификаты в хранилище сертификатов в **LocalMachine\My**. Чтобы загрузить сертификаты, используйте тот же шаблон, что и для [загрузки сертификата в приложениях Windows](#load-certificate-in-windows-apps). Для контейнеров на основе Windows Nano используйте приведенные выше пути к файлам, чтобы [загрузить сертификат непосредственно из файла](#load-certificate-from-file).
 
 В следующем коде C# показано, как загрузить открытый сертификат в приложение Linux.
 

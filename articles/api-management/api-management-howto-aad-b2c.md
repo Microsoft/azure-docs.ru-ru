@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 11/04/2019
 ms.author: apimpm
 ms.openlocfilehash: 7b586edd7adce8bcea61419005a3ce8cfc814fb3
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96013570"
 ---
 # <a name="how-to-authorize-developer-accounts-by-using-azure-active-directory-b2c-in-azure-api-management"></a>Как авторизовать учетные записи разработчиков с помощью Azure Active Directory B2C в службе управления API Azure
@@ -44,7 +44,7 @@ Azure Active Directory B2C — это облачное решение, позв
     
    ![Добавление AAD B2C в качестве поставщика удостоверений][api-management-howto-add-b2c-identity-provider]
 
-1. Скопируйте значение **URL-адрес перенаправления**.
+1. Скопируйте **URL-адрес перенаправления**.
 
    ![URL-адрес перенаправления поставщика удостоверений AAD B2C][api-management-howto-copy-b2c-identity-provider-redirect-url]
 
@@ -124,7 +124,7 @@ Azure Active Directory B2C — это облачное решение, позв
 
     ![Регистрация завершена][api-management-registration-complete]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 *  [Azure Active Directory B2C: регистрация и вход пользователей в приложения]
 *  [Azure Active Directory B2C: расширяемая инфраструктура политик]

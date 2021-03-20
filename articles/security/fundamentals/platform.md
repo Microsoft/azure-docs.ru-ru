@@ -9,10 +9,10 @@ ms.author: terrylan
 manager: rkarlin
 ms.date: 11/10/2020
 ms.openlocfilehash: 4755bc19a645d196487f0b8e0f4d1ef2120723ca
-ms.sourcegitcommit: dc342bef86e822358efe2d363958f6075bcfc22a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94557985"
 ---
 # <a name="platform-integrity-and-security-overview"></a>Общие сведения о целостности и безопасности платформы
@@ -21,7 +21,7 @@ ms.locfileid: "94557985"
 ## <a name="securing-azure-hardware-and-firmware"></a>Защита оборудования и встроенного по Azure
 В этой серии статей описывается, как корпорация Майкрософт обеспечивает целостность и безопасность узлов за счет различных этапов жизненного цикла, от производства до заката. Темы статей:
  
-- [Безопасность встроенного по](firmware.md)
+- [Безопасность встроенного ПО](firmware.md)
 - [Безопасная загрузка UEFI](secure-boot.md)
 - [Измеряемая Загрузка и аттестация узла](measured-boot-host-attestation.md)
 - [Проект Cerberus](project-cerberus.md)

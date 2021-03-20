@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 09/21/2020
 ms.openlocfilehash: 7ad6a576262b8e722b16c81af544a9370c2b49b3
-ms.sourcegitcommit: 80034a1819072f45c1772940953fef06d92fefc8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93242268"
 ---
 # <a name="supported-versions-for-azure-database-for-mysql---flexible-server"></a>Поддерживаемые версии для базы данных Azure для MySQL — гибкий сервер
@@ -43,6 +43,6 @@ MySQL использует схему именования X.Y.Z. X являет
 ## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
->[Создание приложения PHP в Windows с помощью MySQL](../../app-service/tutorial-php-mysql-app.md)<br/>
->[Сборка приложения PHP на платформе Linux с помощью MySQL](../../app-service/tutorial-php-mysql-app.md?pivots=platform-linux%253fpivots%253dplatform-linux)<br/>
+>[Создание приложения PHP с подключением к MySQL (Windows)](../../app-service/tutorial-php-mysql-app.md)<br/>
+>[Создание приложение PHP в Linux с MySQL](../../app-service/tutorial-php-mysql-app.md?pivots=platform-linux%253fpivots%253dplatform-linux)<br/>
 >[Создание пружинного приложения на основе Java с помощью MySQL](/azure/developer/java/spring-framework/spring-app-service-e2e?tabs=bash)<br/>

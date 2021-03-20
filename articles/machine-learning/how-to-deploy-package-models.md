@@ -12,17 +12,17 @@ ms.topic: conceptual
 ms.reviewer: larryfr
 ms.custom: deploy
 ms.openlocfilehash: 299eb316b534ddc9d5eee934cc15eae841276038
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93312628"
 ---
 # <a name="how-to-package-a-registered-model-with-docker"></a>Упаковка зарегистрированной модели с помощью DOCKER
 
 В этой статье показано, как упаковать зарегистрированную модель Машинное обучение Azure с помощью DOCKER.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В этой статье предполагается, что модель уже обучена и зарегистрирована в рабочей области машинного обучения. Чтобы узнать, как обучить и зарегистрировать модель scikit-учиться, [следуйте указаниям этого руководства](how-to-train-scikit-learn.md).
 

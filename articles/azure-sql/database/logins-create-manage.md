@@ -14,10 +14,10 @@ ms.author: vanto
 ms.reviewer: sstein
 ms.date: 03/23/2020
 ms.openlocfilehash: d03bce1566d4f56a576c980723571f587296236f
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96452419"
 ---
 # <a name="authorize-database-access-to-sql-database-sql-managed-instance-and-azure-synapse-analytics"></a>Авторизация доступа к Базе данных SQL, Управляемому экземпляру SQL и Azure Synapse Analytics
@@ -59,7 +59,7 @@ ms.locfileid: "96452419"
 
 - Имя входа SQL с правами администратора создается с использованием указанного имени входа. [Имя входа](/sql/relational-databases/security/authentication-access/principals-database-engine#sa-login) — это отдельная учетная запись пользователя для входа в базу данных SQL, SQL управляемый экземпляр и Azure синапсе.
 - Этому имени входа предоставляются полные административные разрешения на все базы данных в качестве [участника уровня сервера](/sql/relational-databases/security/authentication-access/principals-database-engine). Имя входа имеет все доступные разрешения и не может быть ограничено. В Управляемый экземпляр SQL это имя входа добавляется к [предопределенной роли сервера sysadmin](/sql/relational-databases/security/authentication-access/server-level-roles) (эта роль не существует в базе данных SQL Azure).
-- [user account](/sql/relational-databases/security/authentication-access/getting-started-with-database-engine-permissions#database-users) `dbo` Для этого имени входа в каждой пользовательской базе данных создается учетная запись пользователя с именем. У пользователя [dbo](/sql/relational-databases/security/authentication-access/principals-database-engine) есть все разрешения базы данных, и он сопоставлен с `db_owner` предопределенной ролью базы данных. Дополнительные предопределенные роли базы данных обсуждаются далее в этой статье.
+- [](/sql/relational-databases/security/authentication-access/getting-started-with-database-engine-permissions#database-users) `dbo` Для этого имени входа в каждой пользовательской базе данных создается учетная запись пользователя с именем. У пользователя [dbo](/sql/relational-databases/security/authentication-access/principals-database-engine) есть все разрешения базы данных, и он сопоставлен с `db_owner` предопределенной ролью базы данных. Дополнительные предопределенные роли базы данных обсуждаются далее в этой статье.
 
 Чтобы найти учетные записи администратора для базы данных, откройте портал Azure и перейдите на вкладку **Свойства** сервера или управляемого экземпляра.
 

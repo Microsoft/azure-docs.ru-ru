@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 03/01/2021
 ms.author: victorh
 ms.openlocfilehash: bbf838cfa2a6addc665df4b62e2322d056778b49
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101741367"
 ---
 # <a name="configure-azure-firewall-rules"></a>Настройка правил брандмауэра Azure
@@ -88,7 +88,7 @@ ms.locfileid: "101741367"
 **Коллекция правил сети 2**
 
 - Имя: Deny-Collection.
-- Приоритет. 100
+- Приоритет: 100.
 - Действие: Deny
 
 |name  |Протокол  |Тип исходного значения  |Источник  |Тип назначения  |Адрес назначения  |Конечные порты|

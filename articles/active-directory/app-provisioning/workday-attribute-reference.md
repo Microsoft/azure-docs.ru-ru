@@ -12,10 +12,10 @@ ms.date: 05/25/2020
 ms.author: kenwith
 ms.reviewer: celested
 ms.openlocfilehash: 0ff9b3d4cc3bee28c8e5e95d8854f64eaa546b0c
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99255480"
 ---
 # <a name="workday-attribute-reference"></a>Справочник по атрибутам Workday
@@ -235,15 +235,15 @@ ms.locfileid: "99255480"
 * substring-after
 * начинается с
 * string-length
-* contains
+* содержит
 * translate
 * normalize-space
 * substring-before
-* boolean
-* верно
+* Логическое
+* Да
 * not
 * false
-* number
+* Число
 * ceiling
 * Sum
 * round

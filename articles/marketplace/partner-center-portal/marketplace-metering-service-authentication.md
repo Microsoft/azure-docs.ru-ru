@@ -8,10 +8,10 @@ ms.date: 05/21/2020
 author: mingshen-ms
 ms.author: mingshen
 ms.openlocfilehash: b418a9cae6f6d58dbe82babcfe6fe1e1a5027d43
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97657079"
 ---
 # <a name="marketplace-metering-service-authentication-strategies"></a>Стратегии проверки подлинности службы контроля Marketplace
@@ -68,10 +68,10 @@ ms.locfileid: "97657079"
 
 |  **Имя свойства**  |  **Обязательно**  |  **Описание**          |
 |  ------------------ |--------------- | ------------------------  |
-|  `Grant_type`       |   True         | Тип предоставления разрешения. Используйте ключевое слово `client_credentials`. |
+|  `Grant_type`       |   True         | Тип предоставления разрешения. Используйте команду `client_credentials`. |
 |  `Client_id`        |   True         | Идентификатор клиента или приложения, связанный с приложением Azure AD.|
 |  `client_secret`    |   True         | Секрет, связанный с приложением Azure AD.  |
-|  `Resource`         |   True         | Целевой ресурс, для которого запрашивается токен. Используйте ключевое слово `20e940b3-4c77-4b0b-9a53-9e16a1b010a7`. |
+|  `Resource`         |   True         | Целевой ресурс, для которого запрашивается токен. Используйте команду `20e940b3-4c77-4b0b-9a53-9e16a1b010a7`. |
 | | | |
 
 #### <a name="response"></a>*Ответ*

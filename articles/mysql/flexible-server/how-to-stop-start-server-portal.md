@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 09/29/2020
 ms.openlocfilehash: 15b08ea67afe0d307470b5a4fb0f7d26e0f4ea82
-ms.sourcegitcommit: 80034a1819072f45c1772940953fef06d92fefc8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93241928"
 ---
 # <a name="stopstart-an-azure-database-for-mysql---flexible-server-preview"></a>Завершение работы и запуск базы данных Azure для MySQL — гибкого сервера (Предварительная версия)
@@ -20,7 +20,7 @@ ms.locfileid: "93241928"
 
 В этой статье приводятся пошаговые инструкции по выполнению и запуску гибкого сервера.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Вот что вам нужно, чтобы выполнить инструкции, приведенные в этом руководстве:
 
@@ -36,7 +36,7 @@ ms.locfileid: "93241928"
 
 3.  Нажмите кнопку **Да** , чтобы подтвердить остановку работы сервера.
 
-    :::image type="content" source="media/how-to-stop-start-server-portal/confirm-stop.png" alt-text="Останавливает гибкий сервер."::: 
+    :::image type="content" source="media/how-to-stop-start-server-portal/confirm-stop.png" alt-text="Подтвердите остановку гибкого сервера."::: 
 
 > [!NOTE]
 > После остановки сервера другие операции управления недоступны для гибкого сервера.
@@ -47,7 +47,7 @@ ms.locfileid: "93241928"
 
 2.  На странице **Обзор** нажмите кнопку **Запуск** на панели инструментов.
 
-    :::image type="content" source="media/how-to-stop-start-server-portal/start-server.png" alt-text="Останавливает гибкий сервер.":::  
+    :::image type="content" source="media/how-to-stop-start-server-portal/start-server.png" alt-text="Запуск гибкого сервера.":::  
 
 > [!NOTE]
 > После запуска сервера все операции управления теперь доступны для гибкого сервера.

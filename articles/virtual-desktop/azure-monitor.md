@@ -7,10 +7,10 @@ ms.date: 12/01/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: e9da1071686dafa003a5a49d0864b77644493344
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100594460"
 ---
 # <a name="use-azure-monitor-for-windows-virtual-desktop-to-monitor-your-deployment-preview"></a>Использование Azure Monitor для виртуальных рабочих столов Windows для мониторинга развертывания (Предварительная версия)
@@ -184,7 +184,7 @@ Azure Monitor для виртуальных рабочих столов Windows 
 >[!NOTE]
 >Дополнительные сведения о просмотре или удалении персональных данных, собираемых службой, см. [в статье запросы на субъекты данных Azure для GDPR](/microsoft-365/compliance/gdpr-dsr-azure). Дополнительные сведения о GDPR см. [в разделе GDPR портала доверия службы](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы настроили портал Azure виртуальных рабочих столов Windows, вот некоторые ресурсы, которые могут помочь вам:
 

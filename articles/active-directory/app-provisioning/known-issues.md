@@ -12,14 +12,14 @@ ms.topic: troubleshooting
 ms.date: 01/05/2021
 ms.reviewer: arvinh
 ms.openlocfilehash: 9eba671f6c824c8c88388f2b9d61512dfb1d122f
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99256649"
 ---
 # <a name="known-issues-application-provisioning"></a>Известные проблемы: Подготовка приложений
-Известные проблемы, с которыми следует помнить при работе с подготовкой приложений. Вы можете отправить отзыв о службе подготовки приложений в UserVoice. см. раздел [Azure AD Application подготавливать UserVoice](https://aka.ms/appprovisioningfeaturerequest). Мы внимательно отслеживаем UserVoice, чтобы мы могли улучшить службу. 
+Известные проблемы, которые необходимо учитывать при подготовке приложения. Вы можете отправить отзыв о службе подготовки приложений в UserVoice. см. раздел [Azure AD Application подготавливать UserVoice](https://aka.ms/appprovisioningfeaturerequest). Мы внимательно отслеживаем UserVoice, чтобы мы могли улучшить службу. 
 
 > [!NOTE]
 > Это не полный список известных проблем. Если известна ошибка, которая отсутствует в списке, оставьте отзыв в нижней части страницы.

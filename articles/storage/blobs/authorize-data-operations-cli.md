@@ -12,10 +12,10 @@ ms.reviewer: ozgun
 ms.subservice: common
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 06b37e8b25d932115384124a45156c801fb9708f
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100361678"
 ---
 # <a name="choose-how-to-authorize-access-to-blob-data-with-azure-cli"></a>Выберите способ авторизации доступа к данным BLOB-объектов с помощью Azure CLI
@@ -112,7 +112,7 @@ az storage container create \
 |    AZURE_STORAGE_SAS_TOKEN            |    Токен подписанного URL-доступа (SAS). Эта переменная должна использоваться в сочетании с именем учетной записи хранения.                                                                                                                                                                                                                                                            |
 |    AZURE_STORAGE_AUTH_MODE            |    Режим авторизации, с помощью которого выполняется команда. Допустимые значения: `login` (рекомендуется) или `key` . Если указать `login` , Azure CLI использует учетные данные Azure AD для авторизации операции с данными. При указании устаревшего `key` режима Azure CLI пытается запросить ключ доступа к учетной записи и авторизовать команду с помощью ключа.    |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Использование Azure CLI для назначения роли Azure доступа к данным BLOB-объектов и очередей](../common/storage-auth-aad-rbac-cli.md)
 - [Авторизация доступа к данным BLOB-объектов и очередей с помощью управляемых удостоверений для ресурсов Azure](../common/storage-auth-aad-msi.md)

@@ -4,10 +4,10 @@ description: Узнайте о новых возможностях в Azure Back
 ms.topic: conceptual
 ms.date: 11/11/2020
 ms.openlocfilehash: 48c8c189d956c4003d24511a54975fe86a982832
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102095720"
 ---
 # <a name="whats-new-in-azure-backup"></a>Новые возможности в Azure Backup

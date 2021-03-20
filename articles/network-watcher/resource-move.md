@@ -14,10 +14,10 @@ ms.workload: infrastructure-services
 ms.date: 01/07/2021
 ms.author: damendo
 ms.openlocfilehash: 4853f485e4424c3c3263a18d27834d0f9ae94918
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98019658"
 ---
 # <a name="moving-azure-network-watcher-resources-across-regions"></a>Перемещение ресурсов наблюдателя за сетями Azure в регионах
@@ -28,6 +28,6 @@ ms.locfileid: "98019658"
 ## <a name="moving-child-resources-of-network-watcher"></a>Перемещение дочерних ресурсов наблюдателя за сетями
 Перемещение ресурсов между регионами сейчас не поддерживается для любого дочернего ресурса `*networkWatcher*` типа ресурса.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 * Ознакомьтесь с [обзором наблюдателя за сетями](./network-watcher-monitoring-overview.md)
 * См. раздел [часто задаваемые вопросы о наблюдателе за сетями](./frequently-asked-questions.md)

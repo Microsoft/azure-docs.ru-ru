@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 10/1/2020
 ms.openlocfilehash: 363be8b34f230b812bc24276e1f3925faf0cdc1c
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94540847"
 ---
 # <a name="configure-server-parameters-in-azure-database-for-mysql-using-the-azure-portal"></a>Настройка параметров сервера в базе данных Azure для MySQL с помощью портал Azure
@@ -23,9 +23,9 @@ ms.locfileid: "94540847"
 ## <a name="configure-server-parameters"></a>Настройка параметров сервера
 
 1. Войдите в [портал Azure](https://portal.azure.com), а затем найдите сервер базы данных Azure для MySQL.
-2. В разделе **Параметры** щелкните **Параметры сервера** , чтобы открыть страницу параметров сервера для сервера Базы данных Azure для MySQL.
+2. В разделе **Параметры** щелкните **Параметры сервера**, чтобы открыть страницу параметров сервера для сервера Базы данных Azure для MySQL.
 :::image type="content" source="./media/howto-server-parameters/auzre-portal-server-parameters.png" alt-text="Страница параметров сервера на портале Azure":::
-3. Найдите все параметры, которые необходимо настроить. Просмотрите столбец **Описание** , чтобы понять назначение и допустимые значения.
+3. Найдите все параметры, которые необходимо настроить. Просмотрите столбец **Описание**, чтобы понять назначение и допустимые значения.
 :::image type="content" source="./media/howto-server-parameters/3-toggle_parameter.png" alt-text="Раскрывающийся список для перечисляемого типа":::
 4. Нажмите кнопку  **сохранить** , чтобы сохранить изменения.
 :::image type="content" source="./media/howto-server-parameters/4-save_parameters.png" alt-text="Сохранение или отмена изменений":::
@@ -36,12 +36,12 @@ ms.locfileid: "94540847"
 
 Если параметр сервера, который требуется обновить, не указан в портал Azure, можно при необходимости задать параметр на уровне соединения с помощью `init_connect` . Это задает параметры сервера для каждого клиента, подключающегося к серверу. 
 
-1. В разделе **Параметры** щелкните **Параметры сервера** , чтобы открыть страницу параметров сервера для сервера Базы данных Azure для MySQL.
+1. В разделе **Параметры** щелкните **Параметры сервера**, чтобы открыть страницу параметров сервера для сервера Базы данных Azure для MySQL.
 2. Поиск `init_connect`
 3. Добавьте параметры сервера в формате. `SET parameter_name=YOUR_DESIRED_VALUE` значение в столбце значение.
 
     Например, можно изменить кодировку сервера, задав `init_connect` для значение `SET character_set_client=utf8;SET character_set_database=utf8mb4;SET character_set_connection=latin1;SET character_set_results=latin1;`
-4. Нажмите кнопку **Сохранить** , чтобы сохранить изменения.
+4. Нажмите кнопку **Сохранить**, чтобы сохранить изменения.
 
 >[!Note]
 > `init_connect` можно использовать для изменения параметров, которым не нужны привилегии SUPER на уровне сеанса. Чтобы проверить, можно ли задать параметр с помощью `init_connect`, выполните команду `set session parameter_name=YOUR_DESIRED_VALUE;`. Если отображается сообщение об ошибке **Access denied; you need SUPER privileges(s)** (Отказано в доступе. Для выполнения этого действия необходимо иметь привилегии SUPER.), то параметр нельзя задать с помощью init_connect.
