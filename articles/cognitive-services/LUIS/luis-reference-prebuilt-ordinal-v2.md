@@ -1,7 +1,7 @@
 ---
 title: Порядковый номер V2 предварительно созданная сущность — LUIS
 titleSuffix: Azure Cognitive Services
-description: В этой статье содержатся сведения о предварительно построенных сущностях с порядковым номером v2 в Language Understanding (LUIS).
+description: В этой статье содержатся сведения о предварительно построенных сущностях с порядковым номером v2 в Распознавание речи (LUIS).
 services: cognitive-services
 manager: nitinme
 ms.custom: seodec18
@@ -10,10 +10,10 @@ ms.subservice: language-understanding
 ms.topic: reference
 ms.date: 09/27/2019
 ms.openlocfilehash: 3fd80389dfa54cb8386c13e0e05a1e71ac4bd956
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91541940"
 ---
 # <a name="ordinal-v2-prebuilt-entity-for-a-luis-app"></a>Порядковый номер V2 предварительно созданной сущности для приложения LUIS
@@ -89,7 +89,7 @@ ms.locfileid: "91541940"
 ```
 * * *
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о [конечной точке прогнозирования V3](luis-migration-api-v3.md).
 

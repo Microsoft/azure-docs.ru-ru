@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: sahandle
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 072db1d47abd95844075aeedfeddc4f8cf6bf936
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94835872"
 ---
 # <a name="how-to-configure-the-azure-ad-multi-factor-authentication-registration-policy"></a>Как настроить политику регистрации многофакторной идентификации Azure AD
@@ -36,7 +36,7 @@ ms.locfileid: "94835872"
 ## <a name="policy-configuration"></a>Настройки политики
 
 1. Перейдите на [портал Azure](https://portal.azure.com).
-1. Перейдите к **Azure Active Directory**  >  **Security**  >  **Identity Protection**  >  **Политика регистрации MFA** для защиты удостоверений системы безопасности.
+1. Перейдите к **Azure Active Directory**  >    >    >  **Политика регистрации MFA** для защиты удостоверений системы безопасности.
    1. В разделе " **назначения** "
       1. **Пользователи** . Выберите **все пользователи** или **выберите отдельных пользователей и группы,** если хотите ограничить развертывание.
          1. При необходимости можно исключить пользователей из политики.
@@ -59,4 +59,4 @@ ms.locfileid: "94835872"
 
 - [Включение самостоятельного сброса пароля Azure AD](../authentication/howto-sspr-deployment.md)
 
-- [Включение многофакторной идентификации Azure AD](../authentication/howto-mfa-getstarted.md)
+- [Включение многофакторной проверки подлинности Azure AD](../authentication/howto-mfa-getstarted.md)

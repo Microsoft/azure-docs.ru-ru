@@ -9,10 +9,10 @@ ms.subservice: language-understanding
 ms.topic: reference
 ms.date: 04/30/2020
 ms.openlocfilehash: f16f3ec445af777c3bde1cb2ab0735df4b6614f8
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91542246"
 ---
 # <a name="machine-learning-entity"></a>Сущность машинного обучения
@@ -344,7 +344,7 @@ ms.locfileid: "91542246"
 Эта сущность недоступна в среде выполнения прогнозирования версии 2.
 * * *
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте больше о сущности машинного обучения, включая [учебник](tutorial-machine-learned-entity.md), [Основные понятия](luis-concept-entity-types.md#design-entities-for-decomposition)и [руководство](luis-how-to-add-entities.md#create-a-machine-learned-entity).
 

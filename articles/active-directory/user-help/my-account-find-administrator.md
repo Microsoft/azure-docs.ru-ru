@@ -12,10 +12,10 @@ ms.topic: end-user-help
 ms.date: 07/29/2020
 ms.author: curtand
 ms.openlocfilehash: d1f52e09630ef06970d03ee6f5bce3a6f35acfa5
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99566914"
 ---
 # <a name="find-an-administrator-to-change-my-information-in-my-account"></a>Поиск администратора для изменения моей информации в моей учетной записи

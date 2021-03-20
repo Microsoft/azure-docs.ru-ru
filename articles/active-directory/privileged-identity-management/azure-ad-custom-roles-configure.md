@@ -17,10 +17,10 @@ ms.author: curtand
 ms.custom: pim
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fb23e60539c704dac457ab6e8706ec0cfe350ed9
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94835328"
 ---
 # <a name="configure-azure-ad-custom-roles-in-privileged-identity-management"></a>Настройка настраиваемой роли AAD через Privileged Identity Management
@@ -64,7 +64,7 @@ ms.locfileid: "94835328"
 - **Разрешить постоянное активное назначение**: Администраторы могут назначать постоянное активное членство.
 - **Срок действия активного назначения после**: Администраторы могут требовать, чтобы все активные назначения имели указанную дату начала и окончания.
 
-### <a name="require-azure-ad-multi-factor-authentication"></a>Требовать многофакторную идентификацию Azure AD
+### <a name="require-azure-ad-multi-factor-authentication"></a>Требование Многофакторной идентификации Azure AD
 
 Управление привилегированными пользователями предоставляет необязательное применение многофакторной идентификации Azure AD для двух различных сценариев.
 

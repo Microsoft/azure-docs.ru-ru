@@ -16,10 +16,10 @@ ms.workload: infrastructure-services
 ms.date: 03/19/2020
 ms.author: juergent
 ms.openlocfilehash: 54bfd7c6e691efbd754e9ea2b804e16b3e07ebbe
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101670977"
 ---
 # <a name="installation-of-sap-hana-on-azure-virtual-machines"></a>Установка SAP HANA на виртуальных машинах Azure
@@ -29,7 +29,7 @@ ms.locfileid: "101670977"
 > [!NOTE]
 > Это руководство описывает развертывание SAP HANA на виртуальных машинах Azure. Сведения о развертывании SAP HANA в крупных экземплярах HANA см. в [статье Установка и настройка SAP HANA (крупные экземпляры) в Azure](./hana-installation.md).
  
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Кроме того, в этом руководство предполагается, что вы знакомы с:
 * SAP HANA и SAP NetWeaver и их локальная установка.
 * Установка и работа SAP HANA и экземпляров приложений SAP в Azure.

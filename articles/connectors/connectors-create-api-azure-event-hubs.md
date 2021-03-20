@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 tags: connectors
 ms.openlocfilehash: 65da8e07c01561577fe7eff449bfc10348c7f277
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101716607"
 ---
 # <a name="monitor-receive-and-send-events-with-azure-event-hubs-and-azure-logic-apps"></a>Мониторинг, получение и отправка событий с помощью Центров событий Azure и Azure Logic Apps
@@ -156,7 +156,7 @@ ms.locfileid: "101716607"
    | **Пространство имен концентраторов событий** | Да | <*Событие-концентраторы — пространство имен*> | Выберите пространство имен Центров событий, которые необходимо использовать. |
    |||||  
 
-   Пример.
+   Пример:
 
    ![Создание подключения концентратора событий](./media/connectors-create-api-azure-event-hubs/create-event-hubs-connection-1.png)
 

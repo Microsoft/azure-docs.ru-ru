@@ -9,10 +9,10 @@ ms.date: 10/15/2020
 ms.author: mjbrown
 ms.custom: devx-track-js, devx-track-azurecli, devx-track-csharp
 ms.openlocfilehash: 63b633ed67c03a006a154bc69a1aafb4cb4aa6d0
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93086284"
 ---
 # <a name="provision-database-container-or-autoscale-throughput-on-azure-cosmos-db-cassandra-api-resources"></a>Подготавливает пропускную способность для базы данных, контейнера или автомасштабирования в ресурсах Azure Cosmos DB API Cassandra
@@ -28,13 +28,13 @@ ms.locfileid: "93086284"
 
 1. [Создайте новую учетную запись Azure Cosmos](create-mongodb-dotnet.md#create-a-database-account) или выберите существующую.
 
-1. Откройте панель **Обозреватель данных** и выберите **создать таблицу** . После этого предоставьте следующие сведения.
+1. Откройте панель **Обозреватель данных** и выберите **создать таблицу**. После этого предоставьте следующие сведения.
 
    * Укажите, следует ли создать новый пространства ключей или использовать существующий. Выберите параметр обеспечить **пропускную способность базы данных** , если вы хотите обеспечить пропускную способность на уровне пространства ключей.
    * Введите идентификатор таблицы в команде CQL.
    * Введите значение первичного ключа (например, `/userrID` ).
    * Укажите подготавливаемую пропускную способность (например, 1000 ЕЗ/с).
-   * Щелкните **ОК** .
+   * Щелкните **ОК**.
 
     :::image type="content" source="./media/how-to-provision-throughput-cassandra/provision-table-throughput-portal-cassandra-api.png" alt-text="Снимок экрана обозреватель данных при создании новой коллекции с пропускной способностью уровня базы данных":::
 

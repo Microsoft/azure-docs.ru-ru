@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 11/19/2019
 ms.author: absha
 ms.openlocfilehash: 4a1a122eb7b5b0abcc47cd321c74267a1a4aecda
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93396861"
 ---
 # <a name="create-an-application-gateway-and-rewrite-http-headers"></a>Создание шлюза приложений и перезапись заголовков HTTP
@@ -107,11 +107,11 @@ $setting = New-AzApplicationGatewayBackendHttpSettings -Name "BackendHttpSetting
 
 Настройте новые объекты, необходимые для перезаписи заголовков HTTP.
 
-- **RequestHeaderConfiguration** : этот объект используется для указания полей заголовка запроса, которые нужно перезаписать, и нового значения, которое должно быть записано в этих полях заголовка.
-- **ResponseHeaderConfiguration** : этот объект используется для указания полей заголовка ответа, которые необходимо повторно создать, и нового значения, в котором нужно повторно создать исходные заголовки.
-- **ActionSet** : этот объект содержит конфигурации запросов и ответов заголовков, указанных выше. 
-- **RewriteRule** : этот объект содержит все указанные выше *actionSets*. 
-- **RewriteRuleSet** : этот объект содержит все *rewriteRules* и должен быть подключен к базовому правилу или правилу маршрутизации запроса на основе путей.
+- **RequestHeaderConfiguration**: этот объект используется для указания полей заголовка запроса, которые нужно перезаписать, и нового значения, которое должно быть записано в этих полях заголовка.
+- **ResponseHeaderConfiguration**: этот объект используется для указания полей заголовка ответа, которые необходимо повторно создать, и нового значения, в котором нужно повторно создать исходные заголовки.
+- **ActionSet**: этот объект содержит конфигурации запросов и ответов заголовков, указанных выше. 
+- **RewriteRule**: этот объект содержит все указанные выше *actionSets*. 
+- **RewriteRuleSet**: этот объект содержит все *rewriteRules* и должен быть подключен к базовому правилу или правилу маршрутизации запроса на основе путей.
 
    ```azurepowershell
    $requestHeaderConfiguration = New-AzApplicationGatewayRewriteRuleHeaderConfiguration -HeaderName "X-isThroughProxy" -HeaderValue "True"
@@ -171,6 +171,6 @@ Get-AzPublicIPAddress -ResourceGroupName $rg -Name AppGwVIP
 
 `Remove-AzResourceGroup -Name $rg`
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Создание шлюза приложений с правилами маршрутизации на основе URL-путей](./tutorial-url-route-powershell.md)

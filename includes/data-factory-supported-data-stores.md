@@ -5,17 +5,17 @@ ms.topic: include
 ms.date: 11/19/2018
 ms.author: jingwang
 ms.openlocfilehash: e600af10d2393bcd59317b4b918b7458cc63df31
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91571991"
 ---
 | Категория | Хранилище данных | Поддерживается в качестве источника | Поддерживается в качестве приемника |
 |:--- |:--- |:--- |:--- |
 | **Azure** |[Хранилище BLOB-объектов Azure](../articles/data-factory/v1/data-factory-azure-blob-connector.md) |✓ |✓ |
 | &nbsp; |[Azure Cosmos DB (SQL API)](../articles/data-factory/v1/data-factory-azure-documentdb-connector.md) |✓ |✓ |
-| &nbsp; |[Хранилище Azure Data Lake Gen1](../articles/data-factory/v1/data-factory-azure-datalake-connector.md) |✓ |✓ |
+| &nbsp; |[Azure Data Lake Storage 1-го поколения](../articles/data-factory/v1/data-factory-azure-datalake-connector.md) |✓ |✓ |
 | &nbsp; |[База данных SQL Azure](../articles/data-factory/v1/data-factory-azure-sql-connector.md) |✓ |✓ |
 | &nbsp; |[Azure Synapse Analytics](../articles/data-factory/v1/data-factory-azure-sql-data-warehouse-connector.md) |✓ |✓ |
 | &nbsp; |[Индекс Когнитивного поиска Azure](../articles/data-factory/v1/data-factory-azure-search-connector.md) | |✓ |
@@ -37,8 +37,8 @@ ms.locfileid: "91571991"
 | &nbsp; |[FTP](../articles/data-factory/v1/data-factory-ftp-connector.md) |✓ | |
 | &nbsp; |[HDFS](../articles/data-factory/v1/data-factory-hdfs-connector.md)* |✓ | |
 | &nbsp; |[SFTP](../articles/data-factory/v1/data-factory-sftp-connector.md) |✓ | |
-| **Прочие** |[Базовый HTTP-запрос](../articles/data-factory/v1/data-factory-http-connector.md) |✓ | |
-| &nbsp; |[Generic OData](../articles/data-factory/v1/data-factory-odata-connector.md) |✓ | |
+| **Прочие** |[Базовый протокол HTTP](../articles/data-factory/v1/data-factory-http-connector.md) |✓ | |
+| &nbsp; |[Базовый протокол OData](../articles/data-factory/v1/data-factory-odata-connector.md) |✓ | |
 | &nbsp; |[Generic ODBC](../articles/data-factory/v1/data-factory-odbc-connector.md)* |✓ | |
 | &nbsp; |[Salesforce](../articles/data-factory/v1/data-factory-salesforce-connector.md) |✓ | |
 | &nbsp; |[Веб-таблица (таблица на основе HTML)](../articles/data-factory/v1/data-factory-web-table-connector.md) |✓ | |

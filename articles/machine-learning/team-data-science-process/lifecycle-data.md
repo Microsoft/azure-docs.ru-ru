@@ -12,10 +12,10 @@ ms.date: 11/17/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
 ms.openlocfilehash: fffb52e333bea1b2be11b127a9eab6656dc1d1f5
-ms.sourcegitcommit: c2dd51aeaec24cd18f2e4e77d268de5bcc89e4a7
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94740334"
 ---
 # <a name="data-acquisition-and-understanding-stage-of-the-team-data-science-process"></a>Этап получения и анализа данных в командном процессе обработки и анализа данных
@@ -72,7 +72,7 @@ ms.locfileid: "94740334"
 
 Ниже приведены ссылки на каждый этап жизненного цикла процесса обработки и анализа данных группы:
 
-   1. [Бизнес-понимание](lifecycle-business-understanding.md)
+   1. [Коммерческий аспект](lifecycle-business-understanding.md)
    2. [Получение и понимание данных](lifecycle-data.md)
    3. [Моделирование](lifecycle-modeling.md)
    4. [Deployment](lifecycle-deployment.md)

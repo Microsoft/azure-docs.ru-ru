@@ -9,10 +9,10 @@ ms.subservice: language-understanding
 ms.topic: reference
 ms.date: 09/29/2019
 ms.openlocfilehash: 384d3df2de551e7c79f13a0fe47ffb26c7825f1b
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91539292"
 ---
 # <a name="simple-entity"></a>Простая сущность
@@ -90,7 +90,7 @@ This is the JSON if `verbose=true` is set in the query string:
 |--|--|--|
 |Простая сущность|`Customer`|`bob jones`|
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Изучение синтаксиса шаблона](reference-pattern-syntax.md)

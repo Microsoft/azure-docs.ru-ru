@@ -4,10 +4,10 @@ description: В этой статье вы узнаете, как выполня
 ms.topic: conceptual
 ms.date: 12/11/2019
 ms.openlocfilehash: efb9c3f786e429df404e261f053a9c9a9b032e11
-ms.sourcegitcommit: 192f9233ba42e3cdda2794f4307e6620adba3ff2
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96296460"
 ---
 # <a name="about-sap-hana-database-backup-in-azure-vms"></a>Сведения о SAP HANA резервного копирования базы данных на виртуальных машинах Azure
@@ -69,7 +69,7 @@ Azure Backup [backint) создание сертифицировано](https://
 * После установки всех остальных конфигураций (таких как IP-адрес, имя системы и т. д.) виртуальная машина получает данные из Azure Backup.
 * Теперь восстановите базу данных в виртуальной машине из [резервной копии Azure SAP HANA DB](sap-hana-db-restore.md#restore-to-a-point-in-time-or-to-a-recovery-point) до нужной точки во времени.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте, как [восстановить базу данных SAP Hana, работающую на виртуальной машине Azure](./sap-hana-db-restore.md) .
 * Узнайте, как [управлять базами данных SAP HANA, резервное копирование которых выполняется с помощью Azure Backup](./sap-hana-db-manage.md).

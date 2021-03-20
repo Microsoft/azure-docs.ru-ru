@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/16/2020
 ms.author: yelevin
 ms.openlocfilehash: bc75ee64174957ad6486146b4da6f8a66a2120e5
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100570555"
 ---
 # <a name="connect-windows-security-events"></a>Подключение событий безопасности Windows 
@@ -111,7 +111,7 @@ Sentinel Azure может применить машинное обучение (
     > [!NOTE]
     > Так как алгоритм машинного обучения требует наличия данных в течение 30 дней для создания базового профиля поведения пользователя, необходимо разрешить сбор данных событий безопасности за 30 дней, прежде чем можно будет обнаружить инциденты.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этом документе вы узнали, как подключить события безопасности Windows к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 - Узнайте, как [отслеживать свои данные и потенциальные угрозы](quickstart-get-visibility.md).
 - Приступите к обнаружению угроз с помощью Azure Sentinel, используя [встроенные](tutorial-detect-threats-built-in.md) или [Настраиваемые](tutorial-detect-threats-custom.md) правила.

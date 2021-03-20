@@ -7,10 +7,10 @@ ms.service: cache
 ms.topic: conceptual
 ms.date: 08/11/2020
 ms.openlocfilehash: 87b5ec5eb13f2bc53bdf993547ce3da1c74404bf
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91566794"
 ---
 # <a name="add-replicas-to-azure-cache-for-redis-preview"></a>Добавление реплик в кэш Azure для Redis (Предварительная версия)
@@ -19,11 +19,11 @@ ms.locfileid: "91566794"
 Кэш Azure для уровней "Стандартный" и "Премиум" обеспечивает избыточность за счет размещения каждого кэша на двух выделенных виртуальных машинах (ВМ). Эти виртуальные машины настроены в качестве первичных и реплик. Когда первичная виртуальная машина становится недоступной, реплика обнаруживает, что и создает новый первичный ресурс автоматически. Теперь вы можете увеличить количество реплик в кэше уровня "Премиум" до трех, что позволит создать четыре виртуальных машины, резервно создав кэш. Наличие нескольких реплик приводит к более высокой устойчивости, чем может предоставить одна реплика.
 
 > [!IMPORTANT]
-> Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендуется для рабочих нагрузок в рабочей среде. Дополнительные сведения см. в разделе Дополнительные [условия использования для предварительных версий Microsoft Azure.](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) 
+> Предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендуется для использования в рабочей среде. Дополнительные сведения см. в разделе Дополнительные [условия использования для предварительных версий Microsoft Azure.](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) 
 > 
 
 ## <a name="prerequisites"></a>Предварительные требования
-* Подписка Azure. [создайте ее бесплатно](https://azure.microsoft.com/free/)
+* Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/).
 
 > [!NOTE]
 > Сейчас эта функция доступна в предварительной версии. [свяжитесь с нами](mailto:azurecache@microsoft.com) , если вас интересует.
@@ -36,7 +36,7 @@ ms.locfileid: "91566794"
   
 1. На странице **Создание** выберите **Базы данных**, а затем **Кэш Azure для Redis**.
 
-    :::image type="content" source="media/cache-create/new-cache-menu.png" alt-text="Выберите кэш Azure для Redis.":::
+    :::image type="content" source="media/cache-create/new-cache-menu.png" alt-text="Выбор элемента &quot;Кэш Azure для Redis&quot;.":::
    
 1. На странице **Основные сведения** настройте параметры для нового кэша.
    
@@ -50,7 +50,7 @@ ms.locfileid: "91566794"
    
 1. На странице **Дополнительно** выберите **число реплик**.
    
-    :::image type="content" source="media/cache-how-to-multi-replicas/create-multi-replicas.png" alt-text="Выберите кэш Azure для Redis.":::
+    :::image type="content" source="media/cache-how-to-multi-replicas/create-multi-replicas.png" alt-text="Число реплик.":::
 
 1. Оставьте другие параметры в параметрах по умолчанию. 
 
@@ -66,7 +66,7 @@ ms.locfileid: "91566794"
     > Число реплик в кэше нельзя изменить после его создания.
     >
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о кэше Azure для функций Redis.
 
 > [!div class="nextstepaction"]

@@ -8,10 +8,10 @@ ms.date: 09/15/2016
 ms.author: hermannd
 ms.reviewer: cynthn
 ms.openlocfilehash: 4b739efcf2695a5385351f531efb6201bbea1cd5
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101671940"
 ---
 # <a name="deploy-sap-s4hana-or-bw4hana-on-azure"></a>Развертывание SAP S/4HANA или BW/4HANA в Azure

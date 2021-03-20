@@ -10,10 +10,10 @@ ms.subservice: data-lake-storage-gen2
 ms.reviewer: prishet
 ms.custom: devx-track-python
 ms.openlocfilehash: a143c0aa19241b532cabff95fe6bf85679e4007c
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100652298"
 ---
 # <a name="use-python-to-manage-directories-and-files-in-azure-data-lake-storage-gen2"></a>Использование Python для управления каталогами и файлами в Azure Data Lake Storage 2-го поколения
@@ -137,11 +137,11 @@ from azure.storage.filedatalake._models import ContentSettings
 
 :::code language="python" source="~/azure-storage-snippets/blobs/howto/python/python-v12/crud_datalake.py" id="Snippet_ListFilesInDirectory":::
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочная документация по API](/python/api/azure-storage-file-datalake/azure.storage.filedatalake)
 - [Пакет (индекс пакета Python)](https://pypi.org/project/azure-storage-file-datalake/)
 - [Примеры](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/storage/azure-storage-file-datalake/samples)
 - [Сопоставление 1-го и 2-го поколения](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/storage/azure-storage-file-datalake/GEN1_GEN2_MAPPING.md)
 - [Известные проблемы](data-lake-storage-known-issues.md#api-scope-data-lake-client-library)
-- [Отправить отзыв](https://github.com/Azure/azure-sdk-for-python/issues)
+- [Оставить отзыв](https://github.com/Azure/azure-sdk-for-python/issues)

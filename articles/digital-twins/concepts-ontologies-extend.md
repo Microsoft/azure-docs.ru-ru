@@ -1,5 +1,5 @@
 ---
-title: Расширение онтологиес
+title: Расширение онтологий
 titleSuffix: Azure Digital Twins
 description: Узнайте о причинах и стратегиях, лежащих в основе расширения онтологи
 author: baanders
@@ -8,13 +8,13 @@ ms.date: 2/12/2021
 ms.topic: conceptual
 ms.service: digital-twins
 ms.openlocfilehash: e5973f58887b212919ad739232faafddcf9e735c
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100561546"
 ---
-# <a name="extending-ontologies"></a>Расширение онтологиес 
+# <a name="extending-ontologies"></a>Расширение онтологий 
 
 Стандартная отрасль [онтологи](concepts-ontologies.md), например [дтдл реалестатекоре онтологи для интеллектуальных зданий](https://github.com/Azure/opendigitaltwins-building), — это отличный способ начать создание решения IOT. Отраслевые онтологиес предоставляют широкий набор базовых интерфейсов, предназначенных для вашего домена и разработанных для использования в службах Azure IoT, таких как Azure Digital двойников. 
 

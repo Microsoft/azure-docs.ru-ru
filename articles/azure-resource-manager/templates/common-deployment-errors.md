@@ -5,10 +5,10 @@ tags: top-support-issue
 ms.topic: troubleshooting
 ms.date: 01/20/2021
 ms.openlocfilehash: 61a306cd36c55a005ee9ebd897fcfc9a6c88d7c9
-ms.sourcegitcommit: 77afc94755db65a3ec107640069067172f55da67
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98696402"
 ---
 # <a name="troubleshoot-common-azure-deployment-errors-with-azure-resource-manager"></a>Устранение распространенных ошибок развертывания в Azure с помощью Azure Resource Manager | Microsoft Azure
@@ -247,7 +247,7 @@ az deployment operation group list \
 
 Или Предположим, что вы получаете ошибки развертывания, которые, по вашему мнению, связаны с неправильной настройкой зависимостей. Проверьте шаблон, разбив его на более простые шаблоны. Сначала создайте шаблон, который развертывает только один ресурс (например, SQL Server). Если вы уверены, что ресурс правильно определен, добавьте зависящий от него ресурс (например, базу данных SQL). Проверив правильность определения этих двух ресурсов, добавьте другие зависимые ресурсы (например, политики аудита). В перерывах между тестовыми развертываниями удаляйте группу ресурсов, чтобы гарантировать адекватную проверку зависимостей.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Инструкции по устранению неполадок см. в разделе [учебник. Устранение неполадок при развертывании шаблонов диспетчер ресурсов](template-tutorial-troubleshoot.md)
 * Сведения о действиях аудита см. в статье [Операции аудита с помощью Resource Manager](../management/view-activity-logs.md).

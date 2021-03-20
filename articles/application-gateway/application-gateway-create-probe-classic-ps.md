@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 11/13/2019
 ms.author: victorh
 ms.openlocfilehash: 13441899eeb5ca2b7c60977ab2858fe40a398d1a
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93397864"
 ---
 # <a name="create-a-custom-probe-for-azure-application-gateway-classic-by-using-powershell"></a>Создание пользовательской проверки для шлюза приложений (классического) Azure с помощью PowerShell
@@ -142,7 +142,7 @@ Get-AzureApplicationGateway AppGwTest
 
 |Параметр|Описание|
 |---|---|
-|**Имя** |Имя пользовательской пробы. |
+|**имя**; |Имя пользовательской пробы. |
 | **Протокол** | Используемый протокол (возможные значения: HTTP или HTTPS).|
 | **Host** и **Path** | Полный путь URL-адреса, который вызывается шлюзом приложений для определения работоспособности экземпляра. Например, если у вас есть веб-сайт http: \/ /contoso.com/, то пользовательская пробная проверка может быть настроена на "http: \/ /contoso.com/Path/custompath.htm" для проверки на наличие успешного HTTP-ответа.|
 | **Интервал** | Задает интервал между пробами в секундах.|
@@ -198,7 +198,7 @@ Get-AzureApplicationGateway AppGwTest
 Set-AzureApplicationGatewayConfig -Name "<application gateway name>" -Configfile "<path to file>"
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вы хотите настроить протокол TLS, который ранее назывался разгрузкой SSL (SSL), см. раздел [Настройка шлюза приложений для разгрузки TLS](./tutorial-ssl-powershell.md).
 

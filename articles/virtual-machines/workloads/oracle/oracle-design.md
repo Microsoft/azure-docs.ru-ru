@@ -10,10 +10,10 @@ ms.date: 12/17/2020
 ms.author: kegorman
 ms.reviewer: tigorman
 ms.openlocfilehash: 6e59d0065dfa74979bf3bbc72458bda516e3b641
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101669991"
 ---
 # <a name="design-and-implement-an-oracle-database-in-azure"></a>Разработка базы данных Oracle и ее реализация в Azure
@@ -49,7 +49,7 @@ ms.locfileid: "101669991"
 | **Ресурс** |Выделенные  |Совместное использование с другими клиентами|
 | **Регионы** |Центры обработки данных |[Пары регионов](../../regions.md#region-pairs)|
 | **Память** |Сеть SAN и физические диски |[Хранилище под управлением Azure](https://azure.microsoft.com/pricing/details/managed-disks/?v=17.23h)|
-| **Масштаб** |Вертикальное масштабирование |Горизонтальное масштабирование|
+| **Масштабирование** |Вертикальное масштабирование |Горизонтальное масштабирование|
 
 
 ### <a name="requirements"></a>Требования

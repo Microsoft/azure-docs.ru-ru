@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 03/16/2017
 ms.author: duau
 ms.openlocfilehash: 5a0de772598877029649f8a985c79e28f5264535
-ms.sourcegitcommit: 0aec60c088f1dcb0f89eaad5faf5f2c815e53bf8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98186181"
 ---
 # <a name="performance-considerations-for-traffic-manager"></a>Рекомендации по безопасности для диспетчера трафика
@@ -74,7 +74,7 @@ ms.locfileid: "98186181"
 
     На этом сайте отображается подробная информация о DNS, включая записи CNAME и A. Установите флажки "Colorize output" (Выделить цветом выходные данные) и "Stats" (Статистика), а для "Nameservers" (Имена серверов) выберите значение "All" (Все).
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 [О методах маршрутизации трафика в диспетчере трафика](traffic-manager-routing-methods.md)
 

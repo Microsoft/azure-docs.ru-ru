@@ -12,10 +12,10 @@ ms.topic: how-to
 ms.date: 05/29/2018
 ms.author: twooley
 ms.openlocfilehash: 51e0fb2ffa7b573ecfeda163d9ad99597ff735a2
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92109210"
 ---
 # <a name="filesystem-operations-on-azure-data-lake-storage-gen1-using-rest-api"></a>Операции файловой системы в Azure Data Lake Storage 1-го поколения с использованием REST API
@@ -29,7 +29,7 @@ ms.locfileid: "92109210"
 
 В этой статье содержатся сведения об использовании интерфейсов REST API WebHDFS и REST API Data Lake Storage 1-го поколения для выполнения операций файловой системы в Azure Data Lake Storage 1-го поколения. Дополнительные сведения о том, как выполнять операции управления учетными записями в Data Lake Storage 1-го поколения с помощью REST API, см. в [этой статье](data-lake-store-get-started-rest-api.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 * **Подписка Azure**. См. страницу [бесплатной пробной версии Azure](https://azure.microsoft.com/pricing/free-trial/).
 
 * **Учетная запись Azure Data Lake Storage 1-го поколения**. Следуйте инструкциям из статьи [Начало работы с Azure Data Lake Storage Gen1 с помощью портала Azure](data-lake-store-get-started-portal.md).
@@ -146,7 +146,7 @@ HTTP/1.1 200 OK
 Hello, Data Lake Store user!
 ```
 
-## <a name="rename-a-file"></a>Переименование файла
+## <a name="rename-a-file"></a>Переименуйте файл
 Эта операция основана на вызове REST API WebHDFS, определенном [здесь](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/WebHDFS.html#Rename_a_FileDirectory).
 
 Чтобы переименовать файл, используйте следующую команду cURL: Замените на **\<yourstorename>** имя учетной записи Data Lake Storage 1-го поколения.

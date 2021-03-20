@@ -5,10 +5,10 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.date: 01/16/2019
 ms.openlocfilehash: aa57c01558cfdcf069b17fad9e86f7640553dcfd
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98944787"
 ---
 # <a name="migrate-azure-hdinsight-36-apache-storm-to-hdinsight-40-apache-spark"></a>Перенос Apache Storm Azure HDInsight 3,6 в HDInsight 4,0 Apache Spark
@@ -32,7 +32,7 @@ ms.locfileid: "98944787"
 
 Apache Storm может обеспечить различные уровни гарантированной обработки сообщений. Например, приложение базового уровня может гарантировать обработку по крайней мере один раз, и [Trident](https://storm.apache.org/releases/current/Trident-API-Overview.html) может гарантировать только однократную обработку. Потоковая передача Spark и структурированная потоковая передача Spark гарантируют, что любое входное событие обрабатывается ровно один раз, даже если происходит сбой узла. Множество имеет модель, которая обрабатывает каждое отдельное событие, а также можно использовать микропакетную модель с Trident. Потоковая передача Spark и структурированная потоковая передача Spark предоставляют модель обработки Micro-Batch.
 
-|  |Storm |Потоковая передача Spark | Структурированная потоковая передача Spark|
+|  |Буря |Потоковая передача Spark | Структурированная потоковая передача Spark|
 |---|---|---|---|
 |**Гарантия обработки событий**|По крайней мере один раз <br> Ровно один раз (Trident) |[Только один раз](https://spark.apache.org/docs/latest/streaming-programming-guide.html)|[Только один раз](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)|
 |**Обработка модели**|В режиме реального времени <br> Micro Batch (Trident) |Micro Batch |Micro Batch |

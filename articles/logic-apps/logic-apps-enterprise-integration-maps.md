@@ -9,10 +9,10 @@ ms.reviewer: jonfan, estfan, logicappspm
 ms.topic: article
 ms.date: 02/06/2019
 ms.openlocfilehash: 62c3d4533dd04dbb5a2ce0c73afa52b81d433913
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91570786"
 ---
 # <a name="transform-xml-with-maps-in-azure-logic-apps-with-enterprise-integration-pack"></a>Преобразование XML с помощью карт в Azure Logic Apps с использованием Пакета интеграции Enterprise
@@ -111,11 +111,11 @@ ms.locfileid: "91570786"
 
 1. В контекстном меню контейнера больших двоичных объектов выберите **Set Public Access Level** (Настроить уровень общего доступа).
 
-   * Если у контейнера больших двоичных объектов есть по крайней мере открытый доступ, нажмите **кнопку Отмена**и выполните следующие действия далее на этой странице: [Отправка в контейнеры с открытым доступом](#public-access-assemblies)
+   * Если у контейнера больших двоичных объектов есть по крайней мере открытый доступ, нажмите **кнопку Отмена** и выполните следующие действия далее на этой странице: [Отправка в контейнеры с открытым доступом](#public-access-assemblies)
 
      ![Открытый доступ](media/logic-apps-enterprise-integration-schemas/azure-blob-container-public-access.png)
 
-   * Если контейнер больших двоичных объектов не имеет общего доступа, нажмите кнопку **Отмена**и выполните следующие действия далее на этой странице: [Отправка в контейнеры без общего доступа](#no-public-access-assemblies)
+   * Если контейнер больших двоичных объектов не имеет общего доступа, нажмите кнопку **Отмена** и выполните следующие действия далее на этой странице: [Отправка в контейнеры без общего доступа](#no-public-access-assemblies)
 
      ![Без открытого доступа](media/logic-apps-enterprise-integration-schemas/azure-blob-container-no-public-access.png)
 
@@ -198,7 +198,7 @@ ms.locfileid: "91570786"
 
 1. В разделе **Добавление карты** введите имя карты. 
 
-1. В разделе **тип схемы**выберите тип, например **жидкость**, **XSLT**, **XSLT 2,0**или **XSLT 3,0**.
+1. В разделе **тип схемы** выберите тип, например **жидкость**, **XSLT**, **XSLT 2,0** или **XSLT 3,0**.
 
 1. Оставьте выбранным параметр **Мелкий файл**. Выберите значок папки рядом с полем **Карта**. Найдите и выберите карту, которую вы отправляете, например:
 
@@ -344,7 +344,7 @@ the map appears in the **Maps** list.
 
 1. Чтобы подтвердить удаление карты, щелкните **Да**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Дополнительные сведения о Пакете интеграции Enterprise](../logic-apps/logic-apps-enterprise-integration-overview.md)  
 * [Дополнительные сведения о схемах](../logic-apps/logic-apps-enterprise-integration-schemas.md)

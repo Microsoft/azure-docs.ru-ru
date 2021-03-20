@@ -9,10 +9,10 @@ ms.subservice: common
 ms.topic: how-to
 ms.reviewer: klaasl
 ms.openlocfilehash: 637f748882b3ac84127c8b71761a06629e1e0957
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100653838"
 ---
 # <a name="manage-the-default-access-tier-of-an-azure-storage-account"></a>Управление уровнем доступа по умолчанию для учетной записи хранения Azure
