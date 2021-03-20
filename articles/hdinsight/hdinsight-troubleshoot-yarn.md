@@ -5,10 +5,10 @@ ms.service: hdinsight
 ms.topic: troubleshooting
 ms.date: 08/15/2019
 ms.openlocfilehash: b5b8ccbfd3e39415416cfc8fabcf9614f5934042
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98931416"
 ---
 # <a name="troubleshoot-apache-hadoop-yarn-by-using-azure-hdinsight"></a>Устранение неполадок рабочих нагрузок Apache Hadoop YARN с помощью Azure HDInsight
@@ -25,9 +25,9 @@ ms.locfileid: "98931416"
 
 | Очередь | Capacity | Максимальная емкость |
 | --- | --- | --- |
-| значение по умолчанию | 25 % | 50 % |
+| default | 25 % | 50 % |
 | thrftsvr | 25 % | 50 % |
-| spark; | 50 % | 50 % |
+| spark; | 50% | 50% |
 
 1. Выберите значок **просмотров Ambari**, а затем выберите шаблон сетки. После этого выберите **диспетчер очереди YARN**.
 
@@ -55,7 +55,7 @@ ms.locfileid: "98931416"
 
 После применения эти изменения сразу же появятся на пользовательском интерфейсе планировщика YARN.
 
-### <a name="additional-reading"></a>Дополнительные материалы для чтения
+### <a name="additional-reading"></a>Дополнительные материалы
 
 - [Hadoop: Capacity Scheduler](https://hadoop.apache.org/docs/r2.7.2/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html) (Hadoop: планировщик ресурсов)
 
@@ -126,7 +126,7 @@ ms.locfileid: "98931416"
 
     Будет создан файл журнала с именем containerlogs.txt.
 
-### <a name="additional-reading"></a><a name="additional-reading-2"></a>Дополнительные материалы для чтения
+### <a name="additional-reading"></a><a name="additional-reading-2"></a>Дополнительные материалы
 
 - [Подключение к HDInsight (Hadoop) с помощью SSH](./hdinsight-hadoop-linux-use-ssh-unix.md)
 - [Apache Hadoop концепции и приложения YARN](https://hadoop.apache.org/docs/r2.7.4/hadoop-yarn/hadoop-yarn-site/WritingYarnApplications.html#Concepts_and_Flow)

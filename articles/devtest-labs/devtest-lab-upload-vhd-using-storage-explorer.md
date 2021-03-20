@@ -4,10 +4,10 @@ description: Загрузка VHD-файла в учетную запись хр
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: d4e421932ebba5d4f389000c12bcf44ac2f37599
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91282533"
 ---
 # <a name="upload-vhd-file-to-labs-storage-account-using-microsoft-azure-storage-explorer"></a>Загрузка VHD-файла в учетную запись хранения лаборатории с помощью обозревателя хранилищ Microsoft Azure
@@ -54,7 +54,7 @@ ms.locfileid: "91282533"
     > 
     > Обозреватель хранилищ поддерживает несколько вариантов подключения. В этом разделе показано подключение к учетной записи хранения, связанной с вашей подпиской Azure. Другие варианты подключения, поддерживаемые обозревателем хранилищ, см. в статье [Приступая к работе с обозревателем службы хранилища (предварительная версия)](../vs-azure-tools-storage-manage-with-storage-explorer.md).
  
-    1. Откройте обозреватель хранилищ.
+    1. Откройте Обозреватель службы хранилища.
     
     1. В обозревателе хранилищ выберите раздел **Параметры учетной записи Azure**. 
     
@@ -110,7 +110,7 @@ ms.locfileid: "91282533"
 
         ![Статус отправки файлов][10]  
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Управление пользовательскими образами Azure DevTest Labs для создания виртуальных машин](devtest-lab-create-template.md)
 - [Создание пользовательского образа из VHD-файла с помощью PowerShell](devtest-lab-create-custom-image-from-vhd-using-powershell.md)

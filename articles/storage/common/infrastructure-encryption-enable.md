@@ -12,10 +12,10 @@ ms.reviewer: ozgun
 ms.subservice: common
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 612ba18ba71a22ad6c346b26008e688195c1d1e4
-ms.sourcegitcommit: 8c7f47cc301ca07e7901d95b5fb81f08e6577550
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92746580"
 ---
 # <a name="create-a-storage-account-with-infrastructure-encryption-enabled-for-double-encryption-of-data"></a>Создание учетной записи хранения с включенным шифрованием инфраструктуры для двойного шифрования данных
@@ -32,7 +32,7 @@ ms.locfileid: "92746580"
 
 # <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-Недоступно
+Н/Д
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -80,7 +80,7 @@ az provider register --namespace 'Microsoft.Storage'
 
 # <a name="template"></a>[Шаблон](#tab/template)
 
-Недоступно
+Н/Д
 
 ---
 
@@ -96,7 +96,7 @@ az provider register --namespace 'Microsoft.Storage'
 
 1. В портал Azure перейдите на страницу **учетные записи хранения** .
 1. Нажмите кнопку **Добавить** , чтобы добавить новую учетную запись хранения общего назначения версии 2.
-1. На вкладке **Дополнительно** перейдите в раздел шифрование **инфраструктуры** и выберите **включено** .
+1. На вкладке **Дополнительно** перейдите в раздел шифрование **инфраструктуры** и выберите **включено**.
 1. Выберите **Проверка + создать** , чтобы завершить создание учетной записи хранения.
 
     :::image type="content" source="media/infrastructure-encryption-enable/create-account-infrastructure-encryption-portal.png" alt-text="Снимок экрана, показывающий, как включить шифрование инфраструктуры при создании учетной записи":::
@@ -179,9 +179,9 @@ az storage account create \
 Чтобы проверить, включено ли шифрование инфраструктуры для учетной записи хранения с портал Azure, выполните следующие действия.
 
 1. Войдите в свою учетную запись хранения на портале Azure.
-1. В разделе **Параметры** выберите **Шифрование** .
+1. В разделе **Параметры** выберите **Шифрование**.
 
-    :::image type="content" source="media/infrastructure-encryption-enable/verify-infrastructure-encryption-portal.png" alt-text="Снимок экрана, показывающий, как включить шифрование инфраструктуры при создании учетной записи":::
+    :::image type="content" source="media/infrastructure-encryption-enable/verify-infrastructure-encryption-portal.png" alt-text="Снимок экрана, показывающий, как проверить, включено ли шифрование инфраструктуры для учетной записи":::
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 

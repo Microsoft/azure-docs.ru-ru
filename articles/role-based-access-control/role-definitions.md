@@ -16,10 +16,10 @@ ms.author: rolyon
 ms.reviewer: bagovind
 ms.custom: ''
 ms.openlocfilehash: f6ae9ff27e773c36626812387b1284d660cbf39d
-ms.sourcegitcommit: fc401c220eaa40f6b3c8344db84b801aa9ff7185
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98602464"
 ---
 # <a name="understand-azure-role-definitions"></a>Общие сведения о определениях ролей Azure
@@ -60,7 +60,7 @@ assignableScopes []
 
 В следующей таблице описано, что означают свойства роли.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 | --- | --- |
 | `Name`</br>`roleName` | Отображаемое имя роли. |
 | `Id`</br>`name` | Уникальный идентификатор роли. |
@@ -361,7 +361,7 @@ assignableScopes []
 
 Дополнительные сведения о `AssignableScopes` пользовательских ролях см. в статье [пользовательские роли Azure](custom-roles.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Встроенные роли Azure](built-in-roles.md)
 * [Настраиваемые роли Azure](custom-roles.md)

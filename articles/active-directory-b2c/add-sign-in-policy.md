@@ -9,15 +9,16 @@ ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
 ms.date: 03/04/2021
+ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: c84966f7b4dc1740235fe6414da2ba832a1334fd
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 2310bd39c39036b6d6ac919517fa5539d7b70779
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102119915"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104581870"
 ---
 # <a name="set-up-a-sign-in-flow-in-azure-active-directory-b2c"></a>Настройка потока входа в Azure Active Directory B2C
 

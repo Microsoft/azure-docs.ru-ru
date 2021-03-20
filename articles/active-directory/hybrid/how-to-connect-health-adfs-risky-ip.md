@@ -17,10 +17,10 @@ ms.author: billmath
 ms.custom: H1Hack27Feb2017
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e0b76d2f943f254eb06208e2c190bae4d4088030
-ms.sourcegitcommit: 4d48a54d0a3f772c01171719a9b80ee9c41c0c5d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98746076"
 ---
 # <a name="risky-ip-report-public-preview"></a>Отчет о рискованных IP-адресах (Предварительная версия)
@@ -97,7 +97,7 @@ IP-адреса клиента действия входа со сбоем, аг
 >
 >
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 **Почему в отчете есть диапазоны частных IP-адресов?**  <br />
 Частные IP-адреса (<i>10. x. x. x, 172. x. x. x & 192.168. x. x</i>) и IP-адреса Exchange фильтруются и помечаются как true в списке УТВЕРЖДЕННЫХ IP-адресов. Если вы видите диапазоны частных IP-адресов, очень вероятно, что внешняя подсистема балансировки нагрузки не отправляет IP-адрес клиента при передаче запроса прокси-серверу веб-приложения.
 
@@ -116,6 +116,6 @@ IP-адреса клиента действия входа со сбоем, аг
 Для доступа требуются разрешения глобального администратора или [читателя сведений о безопасности](../../role-based-access-control/built-in-roles.md#security-reader). Для получения доступа обратитесь к администратору.
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Azure AD Connect Health](./whatis-azure-ad-connect.md)
 * [Установка агента Azure AD Connect Health](how-to-connect-health-agent-install.md)

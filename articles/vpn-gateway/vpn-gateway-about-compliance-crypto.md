@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 12/02/2020
 ms.author: yushwang
 ms.openlocfilehash: 47d14c5ee7f6c4816bf15351e9cb28a2aaa72b4c
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96546851"
 ---
 # <a name="about-cryptographic-requirements-and-azure-vpn-gateways"></a>Требования к шифрованию и VPN-шлюзы Azure
@@ -59,7 +59,7 @@ VPN-шлюзы Azure теперь поддерживают настраивае�
 
 [!INCLUDE [vpn-gateway-ipsecikepolicy-faq-include](../../includes/vpn-gateway-faq-ipsecikepolicy-include.md)]
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Пошаговые инструкции по настройке пользовательской политики IPsec/IKE для подключения см. в статье о [настройке политики IPsec/IKE](vpn-gateway-ipsecikepolicy-rm-powershell.md).
 

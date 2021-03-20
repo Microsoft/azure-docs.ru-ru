@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 09/22/2020
 ms.custom: mvc
 ms.openlocfilehash: 1ac418d855696138341115412dc7e2601d4cf3a1
-ms.sourcegitcommit: d103a93e7ef2dde1298f04e307920378a87e982a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91961414"
 ---
 # <a name="manage-an-azure-database-for-postgresql---flexible-server-using-the-azure-portal"></a>Управление базой данных Azure для PostgreSQL-гибкого сервера с помощью портал Azure
@@ -27,7 +27,7 @@ ms.locfileid: "91961414"
 
 ## <a name="scale-compute-and-storage"></a>Масштабирование вычислений и хранилища
 
-После создания сервера можно масштабировать различные [ценовые категории](https://azure.microsoft.com/pricing/details/postgresql/) по мере изменения потребностей. Вы также можете увеличить или уменьшить размер вычислений и памяти, увеличив или уменьшив виртуальных ядер.
+После создания сервера можно масштабировать различные [ценовые категории](https://azure.microsoft.com/pricing/details/postgresql/) по мере изменения потребностей. Вы также можете увеличить или уменьшить объем вычислительных ресурсов и памяти, увеличив или уменьшив число виртуальных ядер.
 
 > [!NOTE]
 > Невозможно масштабировать хранилище до более низкого значения.
@@ -52,7 +52,7 @@ ms.locfileid: "91961414"
 2. Введите новый пароль и подтвердите его. В текстовом поле будет предложено ввести требования к сложности пароля.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/howto-manage-server-portal/reset-password.png" alt-text="масштабирование гибкого сервера хранилища":::
+> :::image type="content" source="./media/howto-manage-server-portal/reset-password.png" alt-text="Сброс пароля для гибкого сервера":::
 
 3. Нажмите кнопку **сохранить** , чтобы сохранить новый пароль.
 
@@ -63,7 +63,7 @@ ms.locfileid: "91961414"
 1. Выберите сервер в портал Azure. В окне **обзора** выберите **Удалить**.
 2. Введите имя сервера в поле ввода, чтобы подтвердить, что вы хотите удалить сервер.
 
-   :::image type="content" source="./media/howto-manage-server-portal/delete-server.png" alt-text="масштабирование гибкого сервера хранилища":::
+   :::image type="content" source="./media/howto-manage-server-portal/delete-server.png" alt-text="Удаление гибкого сервера":::
 
    > [!IMPORTANT]
    > Удаление сервера необратимо.

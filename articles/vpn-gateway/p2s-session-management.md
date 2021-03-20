@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 09/23/2020
 ms.author: cherylmc
 ms.openlocfilehash: 2f2184507e17e3ecae40bb33be4202c183d32b77
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91274239"
 ---
 # <a name="point-to-site-vpn-session-management"></a>Управление сеансами VPN типа "точка — сеть"
@@ -44,13 +44,13 @@ ms.locfileid: "91274239"
    ```
 1. Скопируйте **впнконнектионид** сеанса, который нужно отключить.
 
-   :::image type="content" source="./media/p2s-session-management/powershell.png" alt-text="Пример на портале":::
+   :::image type="content" source="./media/p2s-session-management/powershell.png" alt-text="Пример PowerShell":::
 1. Чтобы отключить сеанс, выполните следующую команду:
 
    ```azurepowershell-interactive
    Disconnect-AzVirtualNetworkGatewayVpnConnection -VirtualNetworkGatewayName <name of the gateway> -ResourceGroupName <name of the resource group> -VpnConnectionId <VpnConnectionId of the session>
    ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о подключениях типа "точка — сеть" см. в статье [о VPN](point-to-site-about.md)-подключении "точка — сеть".

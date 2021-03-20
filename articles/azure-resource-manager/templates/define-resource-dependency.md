@@ -4,10 +4,10 @@ description: Описывает, как настроить один ресурс
 ms.topic: conceptual
 ms.date: 12/21/2020
 ms.openlocfilehash: f6b63b066da06a17c3a2e51ab0f3ab9bf521a144
-ms.sourcegitcommit: 2aa52d30e7b733616d6d92633436e499fbe8b069
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97934753"
 ---
 # <a name="define-the-order-for-deploying-resources-in-arm-templates"></a>Определение порядка развертывания ресурсов в шаблонах ARM
@@ -214,7 +214,7 @@ Resource Manager выявляет циклические зависимости 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения см. в разделе [учебник. Создание шаблонов ARM с зависимыми ресурсами](template-tutorial-create-templates-with-dependent-resources.md).
-* Сведения о модуле Microsoft Learn, охватывающем зависимости ресурсов, см. в статье [управление комплексными облачными развертываниями с помощью расширенных функций шаблонов ARM](/learn/modules/manage-deployments-advanced-arm-template-features/).
+* Сведения о модулях Microsoft Learn с описанием зависимостей ресурсов см. в статье [Управление сложными облачными развертываниями с помощью расширенных функций шаблонов Resource Manager](/learn/modules/manage-deployments-advanced-arm-template-features/).
 * Рекомендации по настройке зависимостей см. в статье рекомендации по использованию [шаблонов ARM](template-best-practices.md).
 * Чтобы узнать об устранении ошибок зависимостей во время развертывания, ознакомьтесь с разделом [Устранение распространенных ошибок развертывания в Azure с помощью Azure Resource Manager](common-deployment-errors.md).
 * Дополнительные сведения о создании шаблонов Azure Resource Manager см. [в разделе Общие сведения о структуре и синтаксисе шаблонов ARM](template-syntax.md).

@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 01/31/2020
 ms.openlocfilehash: 04da5d668515fe96d50d4e6a7d0f5ff1c4c48c27
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98931377"
 ---
 # <a name="migrate-hdinsight-cluster-to-a-newer-version"></a>Перенос кластера HDInsight в более новую версию

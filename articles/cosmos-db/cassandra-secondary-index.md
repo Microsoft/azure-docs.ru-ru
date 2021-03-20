@@ -9,10 +9,10 @@ ms.date: 04/04/2020
 ms.author: thvankra
 ms.reviewer: sngun
 ms.openlocfilehash: 98e8f713ad2e4eef47e40d89a23dbf49a98ad67c
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93339902"
 ---
 # <a name="secondary-indexing-in-azure-cosmos-db-cassandra-api"></a>Дополнительное индексирование в Azure Cosmos DB API Cassandra
@@ -73,6 +73,6 @@ CREATE INDEX ON sampleks.t1 (lastname);
 drop index sampleks.t1_lastname_idx;
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте, как работает [Автоматическое индексирование](index-overview.md) в Azure Cosmos DB
 * [Функции Apache Cassandra, поддерживаемые API Cassandra для Azure Cosmos DB](cassandra-support.md)

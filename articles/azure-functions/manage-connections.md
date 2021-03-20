@@ -1,17 +1,17 @@
 ---
-title: Управление подключениями в функциях Azure
+title: Управления подключениями в службе "Функции Azure"
 description: Узнайте, как избежать проблем с производительностью в службе "Функции Azure" с помощью статического подключения клиентов.
 ms.topic: conceptual
 ms.custom: devx-track-csharp
 ms.date: 02/25/2018
 ms.openlocfilehash: ec16ce3e7f9793be2a012a029bcca31c9a7ea4cf
-ms.sourcegitcommit: 2aa52d30e7b733616d6d92633436e499fbe8b069
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97936708"
 ---
-# <a name="manage-connections-in-azure-functions"></a>Управление подключениями в функциях Azure
+# <a name="manage-connections-in-azure-functions"></a>Управления подключениями в службе "Функции Azure"
 
 Функции в приложении-функции совместно используют ресурсы. К общим ресурсам относятся подключения: HTTP-подключения, подключения к базам данных и подключения к службам, таким как служба хранилища Azure. При параллельном выполнении многих функций можно остаться без доступных подключений. В этой статье объясняется, как закодировать функции, чтобы не использовать больше соединений, чем требуется.
 
@@ -143,7 +143,7 @@ module.exports = async function (context) {
 
 ## <a name="sqlclient-connections"></a>Подключения SqlClient
 
-Код функции может использовать поставщик данных .NET Framework для SQL Server ([SqlClient](/dotnet/api/system.data.sqlclient)) для создания соединений с реляционной базой данных SQL. Это также базовый поставщик для платформ данных, которые используют ADO.NET, например [Entity Framework](/ef/ef6/). В отличие от соединений [HttpClient](/dotnet/api/system.net.http.httpclient) и [DocumentClient](/dotnet/api/microsoft.azure.documents.client.documentclient) ADO.NET осуществляет объединение подключений в пул по умолчанию. Но поскольку вы по-прежнему можете работать с нехваткой подключений, следует оптимизировать соединения с базой данных. Дополнительные сведения см. в разделе [Пулы подключений SQL Server (ADO.NET)](/dotnet/framework/data/adonet/sql-server-connection-pooling).
+Код функции может использовать поставщик данных платформа .NET Framework для SQL Server ([SqlClient](/dotnet/api/system.data.sqlclient)) для создания соединений с реляционной базой данных SQL. Это также базовый поставщик для платформ данных, которые используют ADO.NET, например [Entity Framework](/ef/ef6/). В отличие от соединений [HttpClient](/dotnet/api/system.net.http.httpclient) и [DocumentClient](/dotnet/api/microsoft.azure.documents.client.documentclient) ADO.NET осуществляет объединение подключений в пул по умолчанию. Но поскольку вы по-прежнему можете работать с нехваткой подключений, следует оптимизировать соединения с базой данных. Дополнительные сведения см. в разделе [Пулы подключений SQL Server (ADO.NET)](/dotnet/framework/data/adonet/sql-server-connection-pooling).
 
 > [!TIP]
 > Некоторые платформы данных, такие как Entity Framework, обычно получают строки подключения из раздела **ConnectionString** файла конфигурации. В этом случае необходимо добавить строки подключений базы данных SQL непосредственно в список функциональных настроек приложения **Строки подключения** и в [файл local.settings.json](functions-run-local.md#local-settings-file) в локальном проекте. Если вы создаете экземпляр [SqlConnection](/dotnet/api/system.data.sqlclient.sqlconnection) в коде функции, вы должны сохранить значение строки подключения в **параметрах приложения** с другими соединениями.

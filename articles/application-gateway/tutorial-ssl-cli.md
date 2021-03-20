@@ -9,19 +9,19 @@ ms.date: 11/14/2019
 ms.author: victorh
 ms.custom: mvc, devx-track-azurecli
 ms.openlocfilehash: 24dafd63de1a37140c6a56547c4701729df1c8fb
-ms.sourcegitcommit: 04fb3a2b272d4bbc43de5b4dbceda9d4c9701310
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94566560"
 ---
-# <a name="create-an-application-gateway-with-tls-termination-using-the-azure-cli"></a>Создание шлюза приложений с завершением TLS с помощью Azure CLI
+# <a name="create-an-application-gateway-with-tls-termination-using-the-azure-cli"></a>Создание шлюза приложений с завершением TLS-запросов с помощью Azure CLI
 
 Вы можете использовать Azure CLI для создания [шлюза приложений](overview.md) с сертификатом для [завершения TLS](ssl-overview.md). Для внутренних серверов можно использовать [масштабируемый набор виртуальных машин](../virtual-machine-scale-sets/overview.md) . В этом примере масштабируемый набор содержит два экземпляра виртуальных машин, которые добавляются в серверный пул шлюза приложений по умолчанию.
 
 Вы узнаете, как выполнять следующие задачи:
 
-* Создание самозаверяющего сертификата.
+* Создание самозаверяющего сертификата
 * настройка сети;
 * создание шлюза приложений с сертификатом;
 * создание масштабируемого набора виртуальных машин с серверным пулом, используемым по умолчанию.
@@ -33,9 +33,9 @@ ms.locfileid: "94566560"
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
- - Для работы с этим руководством требуется версия 2.0.4 или более поздняя Azure CLI. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
+ - Для работы с этим учебником требуется Azure CLI версии 2.0.4 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
-## <a name="create-a-self-signed-certificate"></a>Создание самозаверяющего сертификата.
+## <a name="create-a-self-signed-certificate"></a>Создание самозаверяющего сертификата
 
 Для использования в рабочей среде следует импортировать действительный сертификат, подписанный доверенным поставщиком. В этой статье для создания самозаверяющего сертификата и PFX-файла используется команда openssl.
 
@@ -63,7 +63,7 @@ az group create --name myResourceGroupAG --location eastus
 
 ## <a name="create-network-resources"></a>Создание сетевых ресурсов
 
-Создайте виртуальную сеть с именем *myVNet* и подсеть *myAGSubnet* с помощью команды [az network vnet create](/cli/azure/network/vnet). Затем добавьте подсеть с именем *myBackendSubnet* , необходимую для внутренних серверов, используя команду [az network vnet subnet create](/cli/azure/network/vnet/subnet). Создайте общедоступный IP-адрес с именем *myAGPublicIPAddress* , используя команду [az network public-ip create](/cli/azure/network/public-ip).
+Создайте виртуальную сеть с именем *myVNet* и подсеть *myAGSubnet* с помощью команды [az network vnet create](/cli/azure/network/vnet). Затем добавьте подсеть с именем *myBackendSubnet*, необходимую для внутренних серверов, используя команду [az network vnet subnet create](/cli/azure/network/vnet/subnet). Создайте общедоступный IP-адрес с именем *myAGPublicIPAddress*, используя команду [az network public-ip create](/cli/azure/network/public-ip).
 
 ```azurecli-interactive
 az network vnet create \
@@ -91,7 +91,7 @@ az network public-ip create \
 
 Шлюз приложений можно создать с помощью команды [az network application-gateway create](/cli/azure/network/application-gateway). При создании шлюза приложений с помощью Azure CLI укажите такие сведения о конфигурации, как емкость, номер SKU и параметры HTTP. 
 
-Шлюз приложений назначается подсети *myAGSubnet* и адресу *myAGPublicIPAddress* , созданным ранее. В этом примере нужно связать созданный сертификат и пароль при создании шлюза приложений. 
+Шлюз приложений назначается подсети *myAGSubnet* и адресу *myAGPublicIPAddress*, созданным ранее. В этом примере нужно связать созданный сертификат и пароль при создании шлюза приложений. 
 
 ```azurecli-interactive
 az network application-gateway create \

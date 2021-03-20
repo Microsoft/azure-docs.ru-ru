@@ -14,10 +14,10 @@ ms.author: hirsin
 ms.reviewer: hirsin
 ms.custom: aaddev, identityplatformtop40
 ms.openlocfilehash: de1fcdc259de3f72e35feb411bcc836354352eb4
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98752586"
 ---
 # <a name="microsoft-identity-platform-and-openid-connect-protocol"></a>Платформа удостоверений Майкрософт и протокол OpenID Connect
@@ -300,7 +300,7 @@ post_logout_redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 
 При перенаправлении пользователя в `end_session_endpoint` платформа Microsoft Identity очищает сеанс пользователя из браузера. Тем не менее пользователь может оставаться вошедшим в другие приложения, использующие учетные записи Майкрософт для аутентификации. Чтобы разрешить этим приложениям одновременный выход пользователя из системы, платформа Microsoft Identity отправляет запрос HTTP GET зарегистрированным `LogoutUrl` приложениям, на которые пользователь вошел в систему. Приложения должны ответить на него, удалив любой сеанс, который идентифицирует пользователя, и возвратив ответ `200`. Для поддержки единого входа в приложении необходимо реализовать `LogoutUrl` в коде приложения. `LogoutUrl` можно задать на портале регистрации приложения.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Ознакомьтесь с [документацией по UserInfo](userinfo.md)
 * Узнайте, как [настроить значения в маркере](active-directory-claims-mapping.md) с помощью данных из локальных систем. 

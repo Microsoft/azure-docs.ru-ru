@@ -9,10 +9,10 @@ ms.service: iot-central
 services: iot-central
 manager: philmea
 ms.openlocfilehash: 50d0119b08d2c76a5f6111e485408ebcdace83c6
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96549027"
 ---
 # <a name="manage-your-bill-in-an-iot-central-application"></a>Управление счетами в IoT Central приложении
@@ -59,7 +59,7 @@ ms.locfileid: "96549027"
 
 1. Выберите **план** и нажмите кнопку **сохранить** для обновления или перехода на более раннюю версию.
 
-## <a name="view-your-bill"></a>Просмотр счетов
+## <a name="view-your-bill"></a>Просмотреть счета
 
 1. Выберите подходящую Azure Active Directory, а затем подписку Azure, которая будет использоваться для приложения, которое использует платный план.
 
@@ -68,6 +68,6 @@ ms.locfileid: "96549027"
 > [!Note]
 > По умолчанию вы преобразуетесь в *стандартный 2* -план ценообразования.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы узнали, как управлять счетами в IoT Central приложении Azure, рекомендуем следующий шаг — узнать о [настройке пользовательского интерфейса приложения](howto-customize-ui.md) в Azure IOT Central.

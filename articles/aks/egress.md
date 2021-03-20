@@ -4,17 +4,17 @@ titleSuffix: Azure Kubernetes Service
 description: Узнайте, как создать и использовать статический общедоступный IP-адрес для исходящего трафика в кластере Службы Azure Kubernetes (AKS).
 services: container-service
 ms.topic: article
-ms.date: 03/04/2019
-ms.openlocfilehash: 2eefeecfa550683dafcf66d936837e2a891c4c84
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.date: 03/16/2021
+ms.openlocfilehash: e1f81bf4c4d35108557449a8bebd126bdf744191
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101726552"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104592376"
 ---
 # <a name="use-a-static-public-ip-address-for-egress-traffic-with-a-basic-sku-load-balancer-in-azure-kubernetes-service-aks"></a>Использовать статический общедоступный IP-адрес для исходящего трафика с *базовой* подсистемой балансировки нагрузки в службе Kubernetes Azure (AKS)
 
-По умолчанию IP-адрес исходящего трафика из кластера Службы Azure Kubernetes (AKS) назначается случайным образом. Эта конфигурация не обеспечивает точность, например, когда необходимо идентифицировать IP-адрес для доступа ко внешним службам. Вместо этого может потребоваться добавить статический IP-адрес в список разрешений для доступа к службе.
+По умолчанию IP-адрес исходящего трафика из кластера Службы Azure Kubernetes (AKS) назначается случайным образом. Эта конфигурация не обеспечивает точность, например, когда необходимо идентифицировать IP-адрес для доступа ко внешним службам. Вместо этого может потребоваться добавить статический IP-адрес в разрешенных для доступа к службе.
 
 Узнайте, как создать и использовать статический общедоступный IP-адрес для исходящего трафика в кластере AKS.
 
@@ -107,7 +107,7 @@ kubectl apply -f egress-service.yaml
 Выполните запуск и подключитесь к базовому *модулю Debian*:
 
 ```console
-kubectl run -it --rm aks-ip --image=debian
+kubectl run -it --rm aks-ip --image=mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11
 ```
 
 Чтобы получить доступ к веб-сайту в контейнере, используйте `apt-get` для установки `curl` в контейнер.

@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 09/08/2020
 ms.author: mbullwin
 ms.openlocfilehash: bcedef4a1339dacaff3fe841e97f985c42320819
-ms.sourcegitcommit: 2e72661f4853cd42bb4f0b2ded4271b22dc10a52
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92043159"
 ---
 # <a name="how-to-build-a-metrics-graph-to-analyze-related-metrics"></a>Пошаговое руководство. Построение диаграммы метрик для анализа связанных метрик
@@ -35,7 +35,7 @@ ms.locfileid: "92043159"
 
 Нажмите кнопку **Добавить связь**, и вы сможете выбрать другую метрику и указать тип связи между двумя узлами. Можно также применить определенные фильтры измерений. 
 
-:::image type="content" source="../media/graph/metrics-graph-node-action.png" alt-text="Выбор метрики":::
+:::image type="content" source="../media/graph/metrics-graph-node-action.png" alt-text="Добавление узла и отношения":::
 
 После повторения описанных выше шагов вы получите граф метрик, описывающий связи между всеми связанными метриками.
 **Указание цветов узла**
@@ -50,7 +50,7 @@ ms.locfileid: "92043159"
 
 Щелкните инцидент в графе и прокрутите вниз до пункта **анализ перекрестных метрик**, под диагностическими сведениями.
 
-:::image type="content" source="../media/graph/metrics-graph-cross-metrics-analysis.png" alt-text="Выбор метрики":::
+:::image type="content" source="../media/graph/metrics-graph-cross-metrics-analysis.png" alt-text="Просмотр связанных метрик и аномалий":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

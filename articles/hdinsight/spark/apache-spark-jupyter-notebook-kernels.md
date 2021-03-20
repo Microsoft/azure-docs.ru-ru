@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive,hdiseo17may2017,seoapr2020
 ms.date: 04/24/2020
 ms.openlocfilehash: a16ec623d7475a80e546df43495db1a357a5fa66
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98930392"
 ---
 # <a name="kernels-for-jupyter-notebook-on-apache-spark-clusters-in-azure-hdinsight"></a>Ядра для Jupyter Notebook в кластерах Apache Spark в Azure HDInsight
@@ -22,7 +22,7 @@ ms.locfileid: "98930392"
 
 В этой статье вы узнаете, как использовать эти ядра, а также преимущества их использования.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Кластер Apache Spark в HDInsight. Инструкции см. в статье [Начало работы. Создание кластера Apache Spark в HDInsight на платформе Linux и выполнение интерактивных запросов с помощью SQL Spark](apache-spark-jupyter-spark-sql.md).
 
@@ -95,7 +95,7 @@ ms.locfileid: "98930392"
 | -r |`-r <FRACTION>` |Здесь **FRACTION** — это число с плавающей запятой от 0,0 до 1,0. Если для SQL-запроса используется метод выборки `sample`, то ядро выбирает заданную долю элементов из результирующего набора случайным образом. Например, при выполнении SQL-запроса с аргументами `-m sample -r 0.01` из результирующего набора данных случайным образом отбирается 1 % строк. |
 | -n |`-n <MAXROWS>` |**MAXROWS** должно быть выражено целым числом. Число выходных строк для параметра **MAXROWS** ограничивается ядром. Если **MAXROWS** является отрицательным числом, например **-1**, то число строк в результирующем наборе не ограничено. |
 
-**Пример.**
+**Пример**.
 
 ```sql
 %%sql -q -m sample -r 0.1 -n 500 -o query2

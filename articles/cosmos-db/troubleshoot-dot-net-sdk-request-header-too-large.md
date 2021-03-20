@@ -10,10 +10,10 @@ ms.topic: troubleshooting
 ms.reviewer: sngun
 ms.custom: devx-track-dotnet
 ms.openlocfilehash: a14503bc56777563b6360143efaa86a136b22278
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93340526"
 ---
 # <a name="diagnose-and-troubleshoot-azure-cosmos-db-request-header-too-large-message"></a>Диагностика и устранение неполадок Azure Cosmos DB сообщения "слишком большой заголовок запроса"
@@ -48,6 +48,6 @@ ms.locfileid: "93340526"
 1. Следуйте указаниям в статьях с советами по повышению производительности [.NET v3](performance-tips-dotnet-sdk-v3-sql.md) или [.NET v2](performance-tips.md) . Преобразуйте приложение для использования режима прямого подключения с протоколом TCP. Режим прямого соединения с протоколом TCP не имеет ограничений на размер заголовка, таких как протокол HTTP, поэтому это позволяет избежать этой проблемы. 
 1. Если режим прямого подключения с протоколом TCP не является параметром для вашей рабочей нагрузки, задайте `ResponseContinuationTokenLimitInKb` параметр. Этот параметр можно найти в `FeedOptions` версии 2 или `QueryRequestOptions` 3.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Диагностика и устранение неполадок](troubleshoot-dot-net-sdk.md) при использовании пакета SDK для Azure Cosmos DB .NET.
 * Ознакомьтесь с рекомендациями по производительности для [.NET v3](performance-tips-dotnet-sdk-v3-sql.md) и [.NET v2](performance-tips.md).
