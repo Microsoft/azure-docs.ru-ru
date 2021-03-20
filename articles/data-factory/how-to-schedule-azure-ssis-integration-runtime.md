@@ -8,10 +8,10 @@ ms.date: 07/09/2020
 author: swinarko
 ms.author: sawinark
 ms.openlocfilehash: 40c3b8ab228c93fd4c681281d89d16f88ddf30f1
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100384373"
 ---
 # <a name="how-to-start-and-stop-azure-ssis-integration-runtime-on-a-schedule"></a>Запуск и остановка Azure-SSIS Integration Runtime по расписанию
@@ -24,7 +24,7 @@ ms.locfileid: "100384373"
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Если среда Azure-SSIS IR еще не подготовлена, выполните подготовку по указаниям из [этого руководства](./tutorial-deploy-ssis-packages-azure.md). 
 
 ## <a name="create-and-schedule-adf-pipelines-that-start-and-or-stop-azure-ssis-ir"></a>Создание и планирование конвейеров ADF для запуска и остановки Azure-SSIS IR
@@ -111,7 +111,7 @@ ms.locfileid: "100384373"
     1. В поле **Роль** выберите **Участник**. 
     2. В поле **Назначение доступа к** выберите **Пользователь, группа или субъект-служба Azure AD**. 
     3. В поле **Выберите** найдите имя нужной ADF и выберите его. 
-    4. Нажмите кнопку **Сохранить**.
+    4. Выберите команду **Сохранить**.
     
    ![Назначение роли управляемому удостоверению ADF](./media/how-to-schedule-azure-ssis-integration-runtime/adf-managed-identity-role-assignment.png)
 
@@ -224,7 +224,7 @@ ms.locfileid: "100384373"
     4. В поле **Расположение** выберите расположение для учетной записи службы автоматизации Azure. 
     5. В поле **Создать учетную запись запуска от имени Azure** подтвердите создание, выбрав **Да**. Это действие позволяет создать в Azure Active Directory субъект-службу и назначить ей роль **Участник** в подписке Azure.
     6. Выберите **Закрепить на панели мониторинга**, чтобы этот субъект постоянно отображался на панели мониторинга Azure. 
-    7. Щелкните **Создать**. 
+    7. Нажмите кнопку **создания**. 
 
    ![Создать -> Мониторинг и управление -> Служба автоматизации](./media/how-to-schedule-azure-ssis-integration-runtime/add-automation-account-window.png)
    
@@ -262,7 +262,7 @@ ms.locfileid: "100384373"
 
     1. В поле **Имя** введите **StartStopAzureSsisRuntime**.
     2. Для поля **Тип Runbook** выберите значение **PowerShell**.
-    3. Щелкните **Создать**.
+    3. Нажмите кнопку **создания**.
     
    ![Кнопка добавления модуля runbook](./media/how-to-schedule-azure-ssis-integration-runtime/add-runbook-window.png)
    
@@ -333,7 +333,7 @@ ms.locfileid: "100384373"
     2. В поле **DATA FACTORY NAME** (Имя Фабрики данных) введите имя ADF, где расположена Azure-SSIS IR. 
     3. В поле **AZURESSISNAME** (Имя Azure-SSIS) введите имя Azure-SSIS IR. 
     4. Для параметра **OPERATION** введите **START**. 
-    5. Нажмите кнопку **ОК**.  
+    5. Щелкните **ОК**.  
 
    ![Окно "Запуск Runbook"](./media/how-to-schedule-azure-ssis-integration-runtime/start-runbook-window.png)
    
@@ -361,7 +361,7 @@ ms.locfileid: "100384373"
     4. В поле **Запускается** введите время на несколько минут позже текущего времени. 
     5. Для параметра **Периодичность** выберите значение **Повторяющееся**. 
     6. В поле **Повторять каждые** введите значение **1** и выберите **День**. 
-    7. Щелкните **Создать**. 
+    7. Нажмите кнопку **создания**. 
 
    ![Расписание для запуска IR Azure SSIS](./media/how-to-schedule-azure-ssis-integration-runtime/new-schedule-start.png)
     
@@ -377,7 +377,7 @@ ms.locfileid: "100384373"
     
 6. Завершив тестирование, измените параметры расписаний, чтобы отключить их. Выберите **Расписания** в меню слева, выберите **Start IR daily/Stop IR daily** ("Запускать IR ежедневно" или "Останавливать IR ежедневно") и укажите значение **Нет** для параметра **Включено**. 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 См. в следующей записи блога:
 -   [Модернизация и расширение рабочих процессов ETL/ELT с помощью операций MSSQL Integration Services в конвейерах ADF](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/Modernize-and-Extend-Your-ETL-ELT-Workflows-with-SSIS-Activities/ba-p/388370)
 

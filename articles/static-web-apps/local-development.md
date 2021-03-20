@@ -9,10 +9,10 @@ ms.date: 05/08/2020
 ms.author: buhollan
 ms.custom: devx-track-js
 ms.openlocfilehash: 4d6dae8a4f4ed83af3103e95e711bacdb62cf522
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91326173"
 ---
 # <a name="set-up-local-development-for-azure-static-web-apps-preview"></a>Настройка локальной разработки для Статических веб-приложений Azure (предварительная версия)
@@ -75,7 +75,7 @@ ms.locfileid: "91326173"
 
 1. Введите **clone** (клон) в поле поиска и затем выберите вариант **Git: Clone** (Git: клон).
 
-    :::image type="content" source="media/local-development/command-palette-git-clone.png" alt-text="Окно нового репозитория GitHub":::
+    :::image type="content" source="media/local-development/command-palette-git-clone.png" alt-text="параметр Git: Clone (Git: клон) в Visual Studio Code":::
 
 1. Введите следующее значение для **URL-адреса репозитория**.
 
@@ -87,7 +87,7 @@ ms.locfileid: "91326173"
 
 1. При появлении запроса на открытие клонированного репозитория выберите **Открыть**.
 
-    :::image type="content" source="media/local-development/open-new-window.png" alt-text="Окно нового репозитория GitHub":::
+    :::image type="content" source="media/local-development/open-new-window.png" alt-text="Открытие в новом окне":::
 
 Visual Studio Code открывает клонированный проект в редакторе.
 
@@ -99,7 +99,7 @@ Visual Studio Code открывает клонированный проект в
 
     На вкладке браузера откроется приложение.
 
-    :::image type="content" source="media/local-development/vanilla-api-site.png" alt-text="Окно нового репозитория GitHub":::
+    :::image type="content" source="media/local-development/vanilla-api-site.png" alt-text="Простой статический сайт, выполняющийся в браузере":::
 
     Это приложение выполняет HTTP-запрос к конечной точке `api/message`. Сейчас этот запрос завершается сбоем, так как необходимо запустить API компонент этого приложения.
 
@@ -113,13 +113,13 @@ Visual Studio Code открывает клонированный проект в
 
 1. Откроется новый экземпляр терминала, в котором отобразятся выходные данные процесса сборки API.
 
-    :::image type="content" source="media/local-development/terminal-api-debug.png" alt-text="Окно нового репозитория GitHub":::
+    :::image type="content" source="media/local-development/terminal-api-debug.png" alt-text="API, запущенный в терминале Visual Studio Code":::
 
    Строка состояния Visual Studio Code теперь оранжевая. Этот цвет указывает, что API выполняется и отладчик присоединен.
 
 1. Затем нажмите клавишу **Ctrl/Cmd** и щелкните URL-адрес в окне терминала, чтобы открыть окно браузера, вызывающее API.
 
-    :::image type="content" source="media/local-development/hello-from-api-endpoint.png" alt-text="Окно нового репозитория GitHub":::
+    :::image type="content" source="media/local-development/hello-from-api-endpoint.png" alt-text="Отображение результата вызова API в браузере":::
 
 ### <a name="debugging-the-api"></a>Отладка API
 
@@ -127,19 +127,19 @@ Visual Studio Code открывает клонированный проект в
 
 1. Щелкните в левом поле строку 2, чтобы задать точку останова. Появится красная точка, указывающая, что точка останова задана.
 
-    :::image type="content" source="media/local-development/breakpoint-set.png" alt-text="Окно нового репозитория GitHub":::
+    :::image type="content" source="media/local-development/breakpoint-set.png" alt-text="Точка останова в Visual Studio Code":::
 
 1. В браузере обновите страницу, запущенную по адресу <http://127.0.0.1:7071/api/message>.
 
 1. При достижении точки останова в Visual Studio Code выполнение программы приостанавливается.
 
-   :::image type="content" source="media/local-development/breakpoint-hit.png" alt-text="Окно нового репозитория GitHub":::
+   :::image type="content" source="media/local-development/breakpoint-hit.png" alt-text="Достижение точки останова в Visual Studio Code":::
 
    Полный [процесс отладки доступен в Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) для API.
 
 1. Нажмите кнопку **Продолжить** на панели отладки, чтобы продолжить выполнение.
 
-    :::image type="content" source="media/local-development/continue-button.png" alt-text="Окно нового репозитория GitHub":::
+    :::image type="content" source="media/local-development/continue-button.png" alt-text="Кнопка &quot;Продолжить&quot; в Visual Studio Code":::
 
 ### <a name="calling-the-api-from-the-application"></a>Вызов API из приложения
 
@@ -192,7 +192,7 @@ let response = await fetch(`${process.env.API}/message`);
 
 1. Введите **Live Server** и выберите вариант **Live Server: Stop Live Server** (Live Server: остановить Live Server).
 
-    :::image type="content" source="media/local-development/stop-live-server.png" alt-text="Окно нового репозитория GitHub":::
+    :::image type="content" source="media/local-development/stop-live-server.png" alt-text="Команда остановки Live Server в командной палитре Visual Studio":::
 
 1. Нажмите клавишу **F1**, чтобы отобразить палитру команд.
 
@@ -200,7 +200,7 @@ let response = await fetch(`${process.env.API}/message`);
 
 1. Обновите приложение, выполняемое по адресу `http://locahost:3000`. Теперь браузер отображает сообщение, возвращенное из API.
 
-    :::image type="content" source="media/local-development/hello-from-api.png" alt-text="Окно нового репозитория GitHub":::
+    :::image type="content" source="media/local-development/hello-from-api.png" alt-text="Отображаемое сообщение в браузере: Hello from API":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

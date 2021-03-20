@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 01/06/2017
 ms.author: yegu
 ms.openlocfilehash: ec8d4f5611425734974d07ae6ee7008b10b9b406
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85833780"
 ---
 # <a name="create-a-web-app-plus-azure-cache-for-redis-using-a-template"></a>Создание веб-приложения и экземпляра кэша Redis для Azure с помощью шаблона
@@ -20,7 +20,7 @@ ms.locfileid: "85833780"
 
 В этой статье описано, как создать шаблон Azure Resource Manager для развертывания веб-приложения Azure с кэшем Redis для Azure. Вы узнаете, как определить развертываемые ресурсы и параметры, указываемые при развертывании. Этот шаблон можно использовать для собственных развертываний или настроить его в соответствии с вашими требованиями.
 
-Дополнительные сведения о создании шаблонов см. в статье [Создание шаблонов Azure Resource Manager](../azure-resource-manager/templates/template-syntax.md). Сведения о синтаксисе JSON и свойствах для типов ресурсов кэша см. в справочнике по [типам ресурсов Microsoft.Cache](/azure/templates/microsoft.cache/allversions).
+Дополнительные сведения о создании шаблонов см. в разделе [authoring Azure Resource Manager Templates](../azure-resource-manager/templates/template-syntax.md). Сведения о синтаксисе JSON и свойствах для типов ресурсов кэша см. в справочнике по [типам ресурсов Microsoft.Cache](/azure/templates/microsoft.cache/allversions).
 
 См. [полный шаблон веб-приложения с кэшем Redis для Azure](https://github.com/Azure/azure-quickstart-templates/blob/master/201-web-app-with-redis-cache/azuredeploy.json).
 

@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/24/2019
 ms.author: yelevin
 ms.openlocfilehash: abecddb6f5469cb4ef463e65d6c74149bf34dca9
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100590234"
 ---
 # <a name="connect-your-domain-name-server"></a>Подключение сервера доменных имен
@@ -82,7 +82,7 @@ ms.locfileid: "100590234"
 4. В Azure DNS Analytics в разделе **Конфигурация** измените любые параметры, сохраните его, а затем измените его обратно, если нужно, а затем сохраните его снова.
 5. Проверьте Azure DNS аналитику, чтобы убедиться, что запросы отображаются.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом документе вы узнали, как подключить локальные устройства DNS к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 - Узнайте, как [отслеживать свои данные и потенциальные угрозы](quickstart-get-visibility.md).

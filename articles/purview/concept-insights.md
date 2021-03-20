@@ -8,13 +8,13 @@ ms.subservice: purview-data-catalog
 ms.topic: conceptual
 ms.date: 12/02/2020
 ms.openlocfilehash: d841fa336b2702a02f3215f97a6403217986d7e0
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96554761"
 ---
-# <a name="understand-insights-in-azure-purview"></a>Ознакомьтесь с аналитическими сведениями в Azure зрения
+# <a name="understand-insights-in-azure-purview"></a>Изучение аналитических сведений в Azure Purview
 
 В этой статье представлен обзор функции Insights в Azure зрения.
 
@@ -66,7 +66,7 @@ ms.locfileid: "96554761"
 
 Дополнительные сведения см. [в разделе File extension Insights о данных из Azure зрения](file-extension-insights.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Глоссарий](glossary-insights.md)
 * [Просмотр аналитических сведений](scan-insights.md)

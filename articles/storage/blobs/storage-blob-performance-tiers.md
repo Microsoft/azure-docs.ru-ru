@@ -9,10 +9,10 @@ ms.subservice: blobs
 ms.topic: conceptual
 ms.reviewer: clausjor
 ms.openlocfilehash: cf0b5d29e0dc375a07fe024ef0763c8200275055
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98880714"
 ---
 # <a name="performance-tiers-for-block-blob-storage"></a>Уровни производительности для хранилища блочных BLOB-объектов
@@ -26,7 +26,7 @@ ms.locfileid: "98880714"
 
 Следующие рекомендации относятся к различным уровням производительности.
 
-| С областями |Стандартная производительность  |Производительность Premium  |
+| Область |Стандартная производительность  |Производительность Premium  |
 |---------|---------|---------|
 |Доступность по регионам     |   Все регионы      | В [области выбора регионов](https://azure.microsoft.com/global-infrastructure/services/?products=storage)       |
 |Поддерживаемые [типы учетных записей хранения](../common/storage-account-overview.md#types-of-storage-accounts)     |     Общего назначения версии 2, Блобстораже, общего назначения v1    |    BlockBlobStorage     |

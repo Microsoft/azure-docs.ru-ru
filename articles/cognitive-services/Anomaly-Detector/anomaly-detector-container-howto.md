@@ -13,10 +13,10 @@ ms.author: mbullwin
 ms.custom: cog-serv-seo-aug-2020
 keywords: локальная среда, Docker, контейнер, потоковая передача, алгоритмы
 ms.openlocfilehash: 70e5950f6577ce2cca2f28be070f3ba372d46a7e
-ms.sourcegitcommit: aeba98c7b85ad435b631d40cbe1f9419727d5884
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97862312"
 ---
 # <a name="install-and-run-docker-containers-for-the-anomaly-detector-api"></a>Установка и запуск контейнеров DOCKER для API детектора аномалий 
@@ -59,7 +59,7 @@ ms.locfileid: "97862312"
 
 В следующей таблице описаны минимальные и Рекомендуемые ядра ЦП и память, выделяемые для контейнера детекторов обнаружения аномалий.
 
-| QPS (запросов в секунду) | Минимальные | Рекомендуется |
+| QPS (запросов в секунду) | Минимальные | Рекомендуемая |
 |-----------|---------|-------------|
 | 10 QPS | 4 ядра, 1 ГБ памяти | 8-ядерный 2 ГБ памяти |
 | 20 QPS | 8 ядер, 2 ГБ памяти | 16-ядерный 4 ГБ памяти |
@@ -175,7 +175,7 @@ ApiKey={API_KEY}
 
 Дополнительные сведения об этих параметрах см. в статье [Настройка контейнеров](anomaly-detector-container-configuration.md).
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье вы узнали основные понятия и рабочий процесс по скачиванию, установке и запуску контейнеров детекторов аномалий. В разделе "Сводка" сделайте следующее.
 

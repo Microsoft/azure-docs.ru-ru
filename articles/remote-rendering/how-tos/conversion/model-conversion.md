@@ -6,10 +6,10 @@ ms.author: jakras
 ms.date: 02/04/2020
 ms.topic: how-to
 ms.openlocfilehash: e899b249261ea3238695a2e2be6001cb6a9bc763
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91318064"
 ---
 # <a name="convert-models"></a>Преобразование моделей
@@ -52,7 +52,7 @@ ms.locfileid: "91318064"
 - [Краткое руководство. Преобразование модели для подготовки к просмотру](../../quickstarts/convert-model.md) — пошаговое введение в преобразование модели.
 - [Примеры сценариев PowerShell](../../samples/powershell-example-scripts.md), демонстрирующие использование службы преобразования, можно найти в [репозитории образцов arr](https://github.com/Azure/azure-remote-rendering) в папке *Scripts* .
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Использование хранилища BLOB-объектов Azure для преобразования модели](blob-storage.md)
 - [Преобразование модели REST API](conversion-rest-api.md)

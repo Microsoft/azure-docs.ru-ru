@@ -6,10 +6,10 @@ documentationcenter: .net
 ms.topic: conceptual
 ms.date: 02/01/2019
 ms.openlocfilehash: bbfdc0a30aa673e8602ec9233fde4236c99ef5aa
-ms.sourcegitcommit: 6d6030de2d776f3d5fb89f68aaead148c05837e2
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97882217"
 ---
 # <a name="overview-of-service-fabric-clusters-on-azure"></a>Общие сведения о кластерах Service Fabric в Azure
@@ -68,7 +68,7 @@ ms.locfileid: "97882217"
 
 Дополнительные сведения см. в разделе [Безопасность обмена данными между клиентами и узлами](service-fabric-cluster-security.md#client-to-node-security).
 
-### <a name="role-based-access-control"></a>Управление доступом на основе ролей
+### <a name="role-based-access-control"></a>управление доступом на основе ролей;
 Управление доступом на основе ролей в Azure (Azure RBAC) позволяет назначать детализированные элементы управления доступом к ресурсам Azure.  Подпискам, группам ресурсов и ресурсам можно назначить разные правила доступа.  Правила RBAC Azure наследуются по иерархии ресурсов, если они не переопределены на более низком уровне.  Вы можете назначить любых пользователей или группы пользователей в AAD с помощью правил Azure RBAC, чтобы назначенные пользователи и группы могли изменять кластер.  Дополнительные сведения в статье [Что такое управление доступом на основе ролей (RBAC)?](../role-based-access-control/overview.md)
 
 Service Fabric также поддерживает управление доступом, чтобы ограничить доступ к определенным операциям в кластере для разных групп пользователей. Это позволит обеспечить более надежную защиту кластера. Для клиентов, подключающихся к кластеру, поддерживаются два типа управления доступом: роль администратора и роль пользователя.  
@@ -96,15 +96,15 @@ Service Fabric также поддерживает управление дост
 
 | Операционная система | Самая ранняя поддерживаемая версия Service Fabric | Последняя поддерживаемая версия Service Fabric |
 | --- | --- | --- | 
-| Windows Server 2019 | 6.4.654.9590 | Недоступно |
-| Windows Server 2016 | Все версии | Недоступно |
-| 20H2 Windows Server | 7.2.445.9590 | Недоступно |
+| Windows Server 2019 | 6.4.654.9590 | Н/Д |
+| Windows Server 2016 | Все версии | Н/Д |
+| 20H2 Windows Server | 7.2.445.9590 | Н/Д |
 | Windows Server 1809 | 6.4.654.9590 | 7.2.445.9590 |
 | Windows Server 1803 | 6.4 | 7.2.445.9590 |
-| Windows Server 1709 | 6,0 | 7.2.445.9590 |
-| Windows Server 2012 | Все версии | Недоступно | 
-| Linux Ubuntu 16.04 | 6,0 | Недоступно |
-| Linux Ubuntu 18,04 | 7.1 | Недоступно |
+| Windows Server 1709 | 6.0 | 7.2.445.9590 |
+| Windows Server 2012 | Все версии | Н/Д | 
+| Linux Ubuntu 16.04 | 6.0 | Н/Д |
+| Linux Ubuntu 18,04 | 7.1 | Н/Д |
 
 Дополнительные сведения см. [в статье Поддерживаемые версии кластеров в Azure](./service-fabric-versions.md#supported-operating-systems) .
 

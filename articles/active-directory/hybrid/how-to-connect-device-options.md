@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 90d8cc39174f6392b0c532948305fa713535f0c9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89279233"
 ---
 # <a name="azure-ad-connect-device-options"></a>Azure AD Connect: параметры устройств
@@ -43,7 +43,7 @@ ms.locfileid: "89279233"
 2.  Указав учетные данные для Azure AD, на странице "Параметры устройств" можно выбрать операцию для выполнения.
     ![Операции с устройствами](./media/how-to-connect-device-options/deviceoptionsselection.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-* [Настройка гибридного присоединение к Azure AD](../devices/hybrid-azuread-join-plan.md)
+* [Настройка гибридных устройств, присоединенных к Azure Active Directory](../devices/hybrid-azuread-join-plan.md)
 * [Azure AD Connect: включение обратной записи устройств](how-to-connect-device-writeback.md)

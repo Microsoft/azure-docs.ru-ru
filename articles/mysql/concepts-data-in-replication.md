@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 8/7/2020
 ms.openlocfilehash: 99beddba470f73d6eadb448dfe1b77453ce6426d
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95996225"
 ---
 # <a name="replicate-data-into-azure-database-for-mysql"></a>Репликация данных в базу данных Azure для MySQL
@@ -25,7 +25,7 @@ ms.locfileid: "95996225"
  
 Для сценариев миграции используйте [Azure Database Migration Service](https://azure.microsoft.com/services/database-migration/)(DMS).
 
-## <a name="limitations-and-considerations"></a>Ограничения и рекомендации
+## <a name="limitations-and-considerations"></a>Рекомендации и ограничения
 
 ### <a name="data-not-replicated"></a>Нереплицируемые данные
 [*Системная база данных MySQL*](https://dev.mysql.com/doc/refman/5.7/en/system-schema.html) на исходном сервере не реплицирована. Изменения учетных записей и разрешений на исходном сервере не реплицируются. Если вы создаете учетную запись на исходном сервере и эта учетная запись должна иметь доступ к серверу реплики, вручную создайте ту же учетную запись на стороне сервера реплики. Чтобы узнать, какие таблицы хранятся в системной базе данных, ознакомьтесь с [руководством по MySQL](https://dev.mysql.com/doc/refman/5.7/en/system-schema.html).
@@ -50,7 +50,7 @@ ms.locfileid: "95996225"
 - Репликация данных поддерживается только в ценовых категориях общего назначения и с оптимизацией для операций в памяти.
 - Идентификаторы глобальных транзакций (GTID) не поддерживаются.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Узнайте, как [настроить репликацию данных](howto-data-in-replication.md)
 - Дополнительные сведения см. в статье [Реплики чтения в базе данных Azure для MySQL](concepts-read-replicas.md).
 - Сведения о [переносе данных с минимальным временем простоя с помощью DMS](howto-migrate-online.md)

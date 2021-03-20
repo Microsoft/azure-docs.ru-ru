@@ -1,6 +1,6 @@
 ---
 title: Подготовка технических ресурсов модуля IoT Edge в Azure Marketplace
-description: Узнайте о требованиях к технической и конфигурации, которые должны соответствовать техническим ресурсам модуля "Интернет вещей" (IoT), прежде чем их можно будет опубликовать в Azure Marketplace.
+description: Узнайте о требованиях к технической и конфигурации, которые должны соответствовать техническим ресурсам модуля Интернет вещей (IoT), прежде чем их можно будет опубликовать в Azure Marketplace.
 ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
 ms.topic: conceptual
@@ -8,15 +8,15 @@ author: keferna
 ms.author: keferna
 ms.date: 04/03/2020
 ms.openlocfilehash: aca27b89a3b92b410fa560c8b4bd7eb3d4e0a935
-ms.sourcegitcommit: 99955130348f9d2db7d4fb5032fad89dad3185e7
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93346780"
 ---
 # <a name="prepare-your-iot-edge-module-technical-assets"></a>Подготовка технических ресурсов для модуля IoT Edge
 
-В этой статье описываются требования, которые должны соответствовать техническим ресурсам модуля "Интернет вещей" (IoT), прежде чем они будут опубликованы в Azure Marketplace.
+В этой статье описываются требования, которые должны соответствовать техническим ресурсам модуля Интернет вещей (IoT), прежде чем они будут опубликованы в Azure Marketplace.
 
 ## <a name="get-started"></a>Начало работы
 
@@ -64,7 +64,7 @@ ms.locfileid: "93346780"
 <p><u>Minimum hardware requirements:</u> Linux x64 and arm32 OS, 1GB of RAM, 500 Mb of storage</p>
 ```
 
-### <a name="configuration"></a>Параметр Configuration
+### <a name="configuration"></a>Конфигурация
 
 Модуль должен включать параметры конфигурации по умолчанию, чтобы развертывание на IoT Edge устройстве было как можно более простым. Эти сведения можно указать на странице **технической настройки** плана в [центре партнеров](https://partner.microsoft.com/dashboard/commercial-marketplace). Контейнер также может содержать пакет SDK для модуля IoT Edge, чтобы обеспечить взаимодействие с концентратором ребра и центром Интернета вещей.
 

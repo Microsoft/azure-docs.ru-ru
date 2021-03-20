@@ -18,10 +18,10 @@ ms.author: billmath
 ms.custom: seohack1
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8c68be4e46693621f77cb25dd8f34f8e0b7d75dd
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89278417"
 ---
 # <a name="determine-incident-response-requirements-for-your-hybrid-identity-solution"></a>Определение требований к реагированию на инциденты для решения для гибридной идентификации
@@ -60,11 +60,11 @@ ms.locfileid: "89278417"
 * Требуется ли компании принудительно применять условный доступ для пользователей, которые находятся в карантине? 
 
 > [!NOTE]
-> Составьте письменный ответ на каждый вопрос и убедитесь, что он логически обоснован. [Определение стратегии защиты данных](plan-hybrid-identity-design-considerations-data-protection-strategy.md) .  Ответив на эти вопросы, вы сможете выбрать тот вариант, который лучше всего подходит для вашего бизнеса.
+> Составьте письменный ответ на каждый вопрос и убедитесь, что он логически обоснован. [Определите стратегию защиты данных](plan-hybrid-identity-design-considerations-data-protection-strategy.md) , чтобы получить доступ к параметрам, а также преимуществам и недостаткам каждого из них.  Ответив на эти вопросы, вы сможете выбрать тот вариант, который лучше всего подходит для вашего бизнеса.
 > 
 > 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Определение стратегии защиты данных](plan-hybrid-identity-design-considerations-data-protection-strategy.md)
 
 ## <a name="see-also"></a>См. также:

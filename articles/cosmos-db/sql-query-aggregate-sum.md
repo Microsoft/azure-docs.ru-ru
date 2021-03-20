@@ -9,10 +9,10 @@ ms.date: 12/02/2020
 ms.author: tisande
 ms.custom: query-reference
 ms.openlocfilehash: d5a86cd5af504072480e0cd749caa6c0532d0bc1
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96553428"
 ---
 # <a name="sum-azure-cosmos-db"></a>SUM (Azure Cosmos DB)
@@ -48,7 +48,7 @@ FROM c
 
 Эта системная функция будет использовать преимущества [индекса диапазона](index-policy.md#includeexclude-strategy). Если какие бы то ни было аргументы в `SUM` строках типа String, Boolean или null, будет возвращена вся агрегатная системная функция `undefined` . Если какой бы то ни было аргумент имеет `undefined` значение, оно не будет влиять на `SUM` вычисление.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Математические функции в Azure Cosmos DB](sql-query-mathematical-functions.md)
 - [Системные функции в Azure Cosmos DB](sql-query-system-functions.md)

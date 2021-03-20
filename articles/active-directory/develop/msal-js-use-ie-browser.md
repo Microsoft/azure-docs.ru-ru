@@ -14,10 +14,10 @@ ms.author: nacanuma
 ms.reviewer: saeeda
 ms.custom: aaddev
 ms.openlocfilehash: 73dd7877b399d34a009c9fe479550eb1bf6dc0f1
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99583982"
 ---
 # <a name="known-issues-on-internet-explorer-browsers-msaljs"></a>Известные проблемы в браузерах Internet Explorer (MSAL.js)
@@ -47,11 +47,11 @@ ms.locfileid: "99583982"
 
     1. Щелкните **инструменты** Internet Explorer (значок шестеренки).
     1. Выберите **Свойства браузера** и перейдите на вкладку **Безопасность** .
-    1. Щелкните зону **Интернета** и снимите флажок **Включить защищенный режим (требуется перезапуск Internet Explorer)**. Internet Explorer предупреждает о том, что компьютер больше не защищен. Нажмите кнопку **ОК**.
+    1. Щелкните зону **Интернета** и снимите флажок **Включить защищенный режим (требуется перезапуск Internet Explorer)**. Internet Explorer предупреждает о том, что компьютер больше не защищен. Нажмите кнопку **OK**.
     1. Перезапустите Internet Explorer.
     1. Запуск и отладка приложения.
 
 По завершении восстановите параметры безопасности Internet Explorer.  Выберите **Параметры**  ->  **Параметры браузера**  ->  **Безопасность**  ->  **Сбросить все зоны на уровень по умолчанию**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения об [известных проблемах при использовании MSAL.js в Internet Explorer](msal-js-use-ie-browser.md).

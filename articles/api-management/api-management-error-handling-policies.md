@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 01/10/2020
 ms.author: apimpm
 ms.openlocfilehash: a3b6f90d0aa26b478c0f2fcefac55dcd509da437
-ms.sourcegitcommit: a92fbc09b859941ed64128db6ff72b7a7bcec6ab
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92070951"
 ---
 # <a name="error-handling-in-api-management-policies"></a>Обработка ошибок в политиках управления API
@@ -74,13 +74,13 @@ ms.locfileid: "92070951"
 -   [limit-concurrency](api-management-advanced-policies.md#LimitConcurrency)
 -   [mock-response](api-management-advanced-policies.md#mock-response)
 -   [Повторите](api-management-advanced-policies.md#Retry)
--   [трассировки](api-management-advanced-policies.md#Trace)
+-   [трассировка](api-management-advanced-policies.md#Trace)
 
 ## <a name="lasterror"></a>lastError
 
 Если возникает ошибка и управление переходит к `on-error` разделу политики, то ошибка сохраняется в [контексте. Свойство LastError](api-management-policy-expressions.md#ContextVariables) , к которому могут обращаться политики в `on-error` разделе. LastError имеет следующие свойства.
 
-| Имя       | Тип   | Описание                                                                                               | Обязательно |
+| Имя       | Type   | Описание                                                                                               | Обязательно |
 | ---------- | ------ | --------------------------------------------------------------------------------------------------------- | -------- |
 | `Source`   | строка | Указывает имя элемента, в котором произошла ошибка. Может быть либо политикой, либо встроенным именем шага конвейера.      | Да      |
 | `Reason`   | строка | Код ошибки в машинном формате, который удобно использовать для обработки ошибок.                                       | Нет       |

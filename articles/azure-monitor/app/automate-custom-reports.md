@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.reviewer: sdash
 ms.openlocfilehash: 39970227fc94d3073688b23cc530462f368a6ecf
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100590039"
 ---
 # <a name="automate-custom-reports-with-azure-application-insights-data"></a>Автоматизация настраиваемых отчетов с использованием данных Azure Application Insights
@@ -95,7 +95,7 @@ availabilityResults
 
     ![Снимок экрана "Параметры приложения-функции Azure"](./media/automate-custom-reports/config.png)
 
-7. Создайте три параметра приложения с соответствующими значениями ``AI_APP_ID``, ``AI_APP_KEY`` и ``SendGridAPI``. Нажмите кнопку **Сохранить**.
+7. Создайте три параметра приложения с соответствующими значениями ``AI_APP_ID``, ``AI_APP_KEY`` и ``SendGridAPI``. Щелкните **Сохранить**.
 
      ![Снимок экрана "Интерфейс функции интеграции"](./media/automate-custom-reports/app-settings.png)
     
@@ -148,7 +148,7 @@ availabilityResults
 
    ![Снимок экрана "Копирование ключа API"](./media/automate-custom-reports/function-app-17.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте больше о создании [запросов Analytics](../logs/get-started-queries.md).
 * Дополнительные сведения о [программных запросах к данным Application Insights](https://dev.applicationinsights.io/).

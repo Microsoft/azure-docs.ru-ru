@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/04/2020
 ms.reviewer: sngun
 ms.openlocfilehash: cf9d0aea9ab9e79a5f184a42e1bb785b6fb870a7
-ms.sourcegitcommit: 6a902230296a78da21fbc68c365698709c579093
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93360094"
 ---
 # <a name="time-to-live-ttl-in-azure-cosmos-db"></a>Срок жизни в Azure Cosmos DB

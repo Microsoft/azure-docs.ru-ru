@@ -14,10 +14,10 @@ ms.author: jmprieur
 ms.reviewer: saeeda
 ms.custom: devx-track-csharp, aaddev
 ms.openlocfilehash: 60ce3d32ffa20fc9117890528eac053d1af9fdf2
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99583914"
 ---
 # <a name="token-cache-serialization-in-msalnet"></a>Сериализация кэша маркеров в MSAL.NET
@@ -327,11 +327,11 @@ services.AddDistributedSqlServerCache(options =>
 
 Их использование описывается в руководстве по [веб-приложению ASP.NET Core](/aspnet/core/tutorials/first-mvc-app/) в [кэше маркеров этапа 2-2](https://github.com/Azure-Samples/active-directory-aspnetcore-webapp-openidconnect-v2/tree/master/2-WebApp-graph-user/2-2-TokenCache).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Приведенные ниже примеры демонстрируют сериализацию кэша маркеров.
 
-| Пример | Платформа | Описание|
+| Образец | Платформа | Описание|
 | ------ | -------- | ----------- |
 |[active-directory-dotnet-desktop-msgraph-v2](https://github.com/azure-samples/active-directory-dotnet-desktop-msgraph-v2) | Классическое приложение (WPF) | Приложение Windows для классических приложений .NET (WPF), вызывающее API Microsoft Graph. ![На схеме показана топология с настольным приложением W F TodoListClient, передаваемых в Azure A D путем интерактивного получения маркера и Microsoft Graph.](media/msal-net-token-cache-serialization/topology.png)|
 |[active-directory-dotnet-v1-to-v2](https://github.com/Azure-Samples/active-directory-dotnet-v1-to-v2) | Классическое приложение (консольное) | Набор решений Visual Studio, иллюстрирующий перенос приложений Azure AD версии 1.0 (с помощью ADAL.NET) в приложения платформы Microsoft Identity (с помощью MSAL.NET). В частности, см. раздел [Перенос кэша маркеров](https://github.com/Azure-Samples/active-directory-dotnet-v1-to-v2/blob/master/TokenCacheMigration/README.md) .|

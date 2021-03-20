@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 04/28/2020
 ms.openlocfilehash: b5dadb886078f701bb01447efd606c862ee73073
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98945533"
 ---
 # <a name="ports-used-by-apache-hadoop-services-on-hdinsight"></a>Порты, используемые службами Apache Hadoop в HDInsight
@@ -49,10 +49,10 @@ HDInsight реализуется несколькими виртуальными
 | `Stargate` |443 |HTTPS |HBase |REST API HBase. Дополнительные сведения см. в статье [Начало работы с примером Apache HBase в HDInsight](hbase/apache-hbase-tutorial-get-started-linux.md). |
 | Livy |443 |HTTPS |Spark |Spark REST API. Дополнительные сведения см. в статье [Удаленная отправка заданий Spark в кластер Azure HDInsight с помощью Apache Spark REST API](spark/apache-spark-livy-rest-interface.md) |
 | Сервер Thrift Spark |443 |HTTPS |Spark |Сервер Thrift Spark, который используется для отправки запросов Hive. Дополнительные сведения см. в статье [Использование клиента Apache Beeline с Apache Hive](hadoop/apache-hadoop-use-hive-beeline.md). |
-| Storm |443 |HTTPS |Storm |Веб-интерфейс Storm. Дополнительные сведения см. в статье [Развертывание и администрирование топологий Apache Storm в Azure HDInsight](storm/apache-storm-deploy-monitor-topology-linux.md) |
+| Буря |443 |HTTPS |Буря |Веб-интерфейс Storm. Дополнительные сведения см. в статье [Развертывание и администрирование топологий Apache Storm в Azure HDInsight](storm/apache-storm-deploy-monitor-topology-linux.md) |
 | Прокси-сервер Kafka RESTful |443 |HTTPS |Kafka |REST API Kafka. См. статью [взаимодействие с кластерами Apache Kafka в Azure HDInsight с помощью прокси-сервера RESTful](kafka/rest-proxy.md) . |
 
-### <a name="authentication"></a>Проверка подлинности
+### <a name="authentication"></a>Аутентификация
 
 Все общедоступные службы в Интернете должны проходить проверку подлинности.
 

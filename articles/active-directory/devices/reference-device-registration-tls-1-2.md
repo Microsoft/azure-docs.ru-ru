@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: spunukol
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2bb8c6c64e0a68f5176c4eb0c0177c5220394695
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89268763"
 ---
 # <a name="enforce-tls-12-for-the-azure-ad-registration-service"></a>Принудительное применение TLS 1,2 для службы регистрации Azure AD
@@ -66,6 +66,6 @@ ms.locfileid: "89268763"
 - Internet Explorer 10 на Windows Phone 8,0
 - Safari версии 6.0.4 в OS X 10.8.4 и более ранних версий
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Обзор TLS/SSL (поставщик общих служб Schannel)](/windows-server/security/tls/tls-ssl-schannel-ssp-overview)

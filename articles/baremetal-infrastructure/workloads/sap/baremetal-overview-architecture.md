@@ -5,10 +5,10 @@ ms.custom: references_regions
 ms.topic: conceptual
 ms.date: 1/4/2021
 ms.openlocfilehash: eb4dc129719dc410f7101598e3d72e68f17809c1
-ms.sourcegitcommit: aeba98c7b85ad435b631d40cbe1f9419727d5884
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97860984"
 ---
 #  <a name="what-is-baremetal-infrastructure-preview-on-azure"></a>Что такое предварительная версия инфраструктуры BareMetal в Azure?
@@ -40,7 +40,7 @@ BareMetal инфраструктура для специализированны
 
 :::image type="content" source="media/baremetal-support-model.png" alt-text="Модель поддержки инфраструктуры BareMetal" border="false":::
 
-## <a name="compute"></a>Службы вычислений
+## <a name="compute"></a>Вычисления
 Инфраструктура BareMetal предлагает несколько номеров SKU для специализированных рабочих нагрузок. Доступные номера SKU доступны в диапазоне от более чем двух процессорных систем до 24-процессорной системы. Для специализированной рабочей нагрузки используйте номера SKU для конкретной рабочей нагрузки.
 
 Отметка экземпляра BareMetal объединяет следующие компоненты:
@@ -71,7 +71,7 @@ BareMetal инфраструктура для специализированны
    - SLES 12 с пакетом обновления 5 (SP5)
    - SLES 15 SP1
 
-## <a name="storage"></a>Память
+## <a name="storage"></a>Служба хранилища
 Экземпляры BareMetal, основанные на определенном типе SKU, имеют предопределенное хранилище NFS для конкретного типа рабочей нагрузки. При подготовке BareMetal можно подготавливать дополнительное хранилище на основе предполагаемого роста, отправив запрос на поддержку. Все хранилище поставляется с диском "все устройства флэш-памяти" в редакции 4,2 с поддержкой NFSv3 и NFSv4. Будет доступен новый SSD с номером редакции 4,5. Дополнительные сведения о размере хранилища см. в разделе [тип рабочей нагрузки BareMetal](../../../virtual-machines/workloads/sap/get-started.md) .
 
 >[!NOTE]

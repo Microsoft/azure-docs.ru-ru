@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 01/26/2021
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 52260facc1a458a3ef18b067e6d52e189f5d329c
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98881760"
 ---
 # <a name="how-to-manage-concurrency-in-azure-cognitive-search"></a>Управление параллелизмом в Azure Когнитивный поиск
@@ -23,7 +23,7 @@ ms.locfileid: "98881760"
 > [!Tip]
 > Концептуальный код в [примере решения C#](https://github.com/Azure-Samples/search-dotnet-getting-started/tree/master/DotNetETagsExplainer) объясняет, как работает управление параллелизмом в Azure когнитивный Поиск. Код создает условия, которые вызывают управление параллелизмом. Чтение [фрагмента кода, приведенного ниже](#samplecode) , может быть достаточно для большинства разработчиков, но если вы хотите его запустить, измените appsettings.jsв, чтобы добавить имя службы и ключ API администратора. URL-адрес службы — `http://myservice.search.windows.net`, а имя службы — `myservice`.
 
-## <a name="how-it-works"></a>Принципы работы
+## <a name="how-it-works"></a>Принцип работы
 
 Оптимистическая блокировка реализуется с помощью проверки условий доступа в вызовах API для записи в индексы, индексаторы, источники данных, навыков и ресурсы synonymMap.
 

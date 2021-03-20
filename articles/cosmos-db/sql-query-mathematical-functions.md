@@ -9,10 +9,10 @@ ms.date: 09/13/2019
 ms.author: girobins
 ms.custom: query-reference
 ms.openlocfilehash: 63d349c8cfff52932d51ce7143aba33521c43890
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96549197"
 ---
 # <a name="mathematical-functions-azure-cosmos-db"></a>Математические функции (Azure Cosmos DB)  
@@ -64,7 +64,7 @@ ms.locfileid: "96549197"
   
 Все математические функции, кроме RAND, являются детерминированными. Это значит, что они возвращают одни и те же результаты каждый раз, когда вызываются с одними и теми же входными значениями.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Системные функции Azure Cosmos DB](sql-query-system-functions.md)
 - [Знакомство со службой Azure Cosmos DB. API DocumentDB](introduction.md)

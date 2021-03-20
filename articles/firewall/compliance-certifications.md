@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 06/30/2020
 ms.author: victorh
 ms.openlocfilehash: fa61046ee87c1cac3c8a8bb93ed97b577019e016
-ms.sourcegitcommit: 9826fb9575dcc1d49f16dd8c7794c7b471bd3109
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94628447"
 ---
 # <a name="azure-firewall-certifications"></a>Сертификаты брандмауэра Azure
@@ -28,7 +28,7 @@ ms.locfileid: "94628447"
 - AFM и DNB (Нидерланды)
 - AMF и ACPR (Франция)
 - Апра (Австралия)
-- Аргентины Аргентина
+- PDPA в Аргентине
 - Австралийская IRAP
 - CDSA
 - КФТК 1,31
@@ -57,7 +57,7 @@ ms.locfileid: "94628447"
 - ISO 27017:2015
 - ISO 27018:2014
 - ISO 9001:2015
-- Японский номер моего акта
+- My Number Act в Японии
 - K — ISMS
 - КНФ (Польша)
 - MAS и ABS (Сингапур)
@@ -65,7 +65,7 @@ ms.locfileid: "94628447"
 - NBB и FSMA (Бельгия)
 - НЕН 7510:2011 (Нидерланды)
 - NHS IG Toolkit (Соединенное Королевство)
-- Нидерландские Бир 2012
+- BIR 2012 в Нидерландах
 - ОСФИ (Канада)
 - PCI DSS, уровень 1
 - RBI и IRDAI (Индия)
@@ -74,7 +74,7 @@ ms.locfileid: "94628447"
 - SOC 3
 - SOX (США)
 - Испания DPA
-- тисакс
+- TISAX
 - TruSight
 - Великобритания: G-Cloud
 - WCAG 2.0

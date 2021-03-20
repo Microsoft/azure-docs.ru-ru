@@ -9,10 +9,10 @@ ms.service: industrial-iot
 services: iot-industrialiot
 manager: philmea
 ms.openlocfilehash: 0a4866db463dcf4ff17b2f7b25806806a700e8fa
-ms.sourcegitcommit: a92fbc09b859941ed64128db6ff72b7a7bcec6ab
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92071648"
 ---
 # <a name="deploy-opc-twin-to-an-existing-project"></a>Развертывание OPC двойника в существующем проекте
@@ -31,7 +31,7 @@ ms.locfileid: "92071648"
 > [!NOTE]
 > Дополнительные сведения о развертывании и инструкциях см. в [репозитории](https://github.com/Azure/azure-iiot-opc-twin-module)GitHub.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Убедитесь, что установлены расширения PowerShell PowerShell и [AzureRM](/powershell/azure/azurerm/install-azurerm-ps) . Клонировать этот репозиторий GitHub, если вы еще этого не сделали. В PowerShell выполните следующие команды:
 

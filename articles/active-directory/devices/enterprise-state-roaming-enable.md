@@ -13,15 +13,15 @@ ms.reviewer: na
 ms.custom: references_regions
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 34b554fbef63f23b3540fe49e5c45976122add25
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89268610"
 ---
 # <a name="enable-enterprise-state-roaming-in-azure-active-directory"></a>Включение службы Enterprise State Roaming в Azure Active Directory
 
-Enterprise State Roaming доступна для любой организации с лицензий Azure AD Premium или Enterprise Mobility + Security (EMS). Дополнительные сведения о том, как получить подписку Azure AD, см. на [странице продукта Azure Active Directory](https://azure.microsoft.com/services/active-directory).
+Enterprise State Roaming доступна для любой организации с лицензий Azure AD Premium или Enterprise Mobility + Security (EMS). Дополнительные сведения о том, как получить подписку Azure AD, см. на [странице продукта Azure AD](https://azure.microsoft.com/services/active-directory).
 
 Если включить службу Enterprise State Roaming, ваша организация автоматически получит бесплатную ограниченную лицензию на службу защиты Azure Rights Management, которая включена в Azure Information Protection. В бесплатной подписке можно выполнять только шифрование и расшифровку параметров предприятия и данных приложений, которые синхронизируются в Enterprise State Roaming. Чтобы использовать все возможности службы Azure Rights Management, у вас должна быть [платная подписка](https://azure.microsoft.com/pricing/details/information-protection/).
 
@@ -90,10 +90,10 @@ Enterprise State Roaming доступна для любой организаци
 
 Политика хранения удаленных данных не настраивается. После окончательного удаления данных восстановить их невозможно. Но данные о параметрах удаляются только из Microsoft Cloud, а не с устройства пользователя. Если это устройство повторно подключится к службе Enterprise State Roaming, все параметры снова будут синхронизированы и сохранены в Microsoft Cloud.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Обзор службы Enterprise State Roaming](enterprise-state-roaming-overview.md)
 * [Часто задаваемые вопросы о перемещении параметров и данных](enterprise-state-roaming-faqs.md)
-* [Group Policy and MDM settings for settings sync (Параметры групповой политики и управления мобильными устройствами)](enterprise-state-roaming-group-policy-settings.md)
+* [Параметры групповая политика и MDM для синхронизации параметров](enterprise-state-roaming-group-policy-settings.md)
 * [Справочник по перемещаемым параметрам в Windows 10](enterprise-state-roaming-windows-settings-reference.md)
 * [Устранение неполадок](enterprise-state-roaming-troubleshooting.md)

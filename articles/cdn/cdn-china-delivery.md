@@ -16,10 +16,10 @@ ms.date: 05/16/2018
 ms.author: allensu
 ms.custom: mvc
 ms.openlocfilehash: 599ec041837460c30b4655531b822eab5f0eafa3
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92778920"
 ---
 # <a name="china-content-delivery-with-azure-cdn"></a>Доставка содержимого для пользователей в Китае с помощью Azure CDN

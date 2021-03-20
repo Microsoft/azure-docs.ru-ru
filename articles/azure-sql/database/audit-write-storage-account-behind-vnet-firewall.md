@@ -11,10 +11,10 @@ ms.reviewer: vanto
 ms.date: 06/17/2020
 ms.custom: azure-synapse
 ms.openlocfilehash: 908c9f1d05c83eaa58f77b79a32d956898c35076
-ms.sourcegitcommit: 99955130348f9d2db7d4fb5032fad89dad3185e7
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93348259"
 ---
 # <a name="write-audit-to-a-storage-account-behind-vnet-and-firewall"></a>Запись аудита в учетную запись хранения за пределами виртуальной сети и брандмауэра
@@ -33,7 +33,7 @@ ms.locfileid: "93348259"
 
 Дополнительные сведения о создании виртуальной сети см. в разделе Краткое руководство. [Создание виртуальной сети с помощью портал Azure](../../virtual-network/quick-create-portal.md).
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Для записи аудита в учетную запись хранения за виртуальной сетью или брандмауэром необходимо выполнить следующие предварительные требования.
 
@@ -101,7 +101,7 @@ ms.locfileid: "93348259"
    PUT https://management.azure.com/subscriptions/<subscription ID>/resourceGroups/<resource group>/providers/Microsoft.Sql/servers/<azure server name>?api-version=2015-05-01-preview
    ```
 
-   Тело запроса
+   Текст запроса
 
    ```json
    {
@@ -123,7 +123,7 @@ ms.locfileid: "93348259"
    > [!NOTE]
    > Этот шаг могут выполнять только участники с правами владельца. Сведения о различных встроенных ролях Azure см. в статье [встроенные роли Azure](../../role-based-access-control/built-in-roles.md).
 
-3. Настройте [политику аудита больших двоичных объектов сервера](/rest/api/sql/server%20auditing%20settings/createorupdate)без указания *сторажеаккаунтакцесскэй* :
+3. Настройте [политику аудита больших двоичных объектов сервера](/rest/api/sql/server%20auditing%20settings/createorupdate)без указания *сторажеаккаунтакцесскэй*:
 
    Пример запроса
 
@@ -131,7 +131,7 @@ ms.locfileid: "93348259"
      PUT https://management.azure.com/subscriptions/<subscription ID>/resourceGroups/<resource group>/providers/Microsoft.Sql/servers/<azure server name>/auditingSettings/default?api-version=2017-03-01-preview
    ```
 
-   Тело запроса
+   Текст запроса
 
    ```json
    {
