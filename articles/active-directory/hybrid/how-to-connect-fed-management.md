@@ -19,10 +19,10 @@ ms.author: billmath
 ms.custom: seohack1
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cc0c8c40e370579100c562e0289c97e3f5ce4236
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91274118"
 ---
 # <a name="manage-and-customize-active-directory-federation-services-by-using-azure-ad-connect"></a>Управление службами федерации Active Directory и их настройка с помощью Azure AD Connect
@@ -200,7 +200,7 @@ Set-AdfsWebTheme -TargetName default -Logo @{path="c:\Contoso\logo.PNG"}
 > Параметр *TargetName* является обязательным. Стандартная тема для AD FS называется темой по умолчанию.
 
 ## <a name="add-a-sign-in-description"></a><a name="addsignindescription"></a>Добавление описания входа в систему 
-Чтобы добавить на **страницу входа**описание страницы входа, используйте следующий командлет Windows PowerShell и синтаксис.
+Чтобы добавить на **страницу входа** описание страницы входа, используйте следующий командлет Windows PowerShell и синтаксис.
 
 ```azurepowershell-interactive
 Set-AdfsGlobalWebContent -SignInPageDescriptionText "<p>Sign-in to Contoso requires device registration. Click <A href='http://fs1.contoso.com/deviceregistration/'>here</A> for more information.</p>"
@@ -234,7 +234,7 @@ NOT EXISTS([Type == "http://contoso.com/ws/2016/02/identity/claims/msdsconsisten
 => add(Type = "urn:anandmsft:tmp/idflag", Value = "useguid");
 ```
 
-Это правило определяет временный флаг с именем **idflag**, который получает значение **useguid**, если **ms-ds-concistencyguid** для пользователя не заполнен. Логика такого решения в том, что службы AD FS запрещают пустые утверждения. Поэтому при добавлении утверждений `http://contoso.com/ws/2016/02/identity/claims/objectguid` и `http://contoso.com/ws/2016/02/identity/claims/msdsconsistencyguid` в правило 1 вы получаете утверждение **msdsconsistencyguid**, только если значение для пользователя заполнено. Если оно не заполнено, службы AD FS определяют, что значение окажется пустым, и немедленно его опускают. **objectGuid**имеют все объекты, поэтому такое утверждение всегда будет присутствовать после выполнения правила 1.
+Это правило определяет временный флаг с именем **idflag**, который получает значение **useguid**, если **ms-ds-concistencyguid** для пользователя не заполнен. Логика такого решения в том, что службы AD FS запрещают пустые утверждения. Поэтому при добавлении утверждений `http://contoso.com/ws/2016/02/identity/claims/objectguid` и `http://contoso.com/ws/2016/02/identity/claims/msdsconsistencyguid` в правило 1 вы получаете утверждение **msdsconsistencyguid**, только если значение для пользователя заполнено. Если оно не заполнено, службы AD FS определяют, что значение окажется пустым, и немедленно его опускают. **objectGuid** имеют все объекты, поэтому такое утверждение всегда будет присутствовать после выполнения правила 1.
 
 **Правило 3. Выдача ms-ds-consistencyguid в качестве неизменяемого идентификатора, если он присутствует**
 
@@ -262,5 +262,5 @@ c1:[Type == "urn:anandmsft:tmp/idflag", Value =~ "useguid"]
 
 Можно включить несколько доменов в федерацию с помощью Azure AD Connect, как описано в разделе [Добавление нового федеративного домена](how-to-connect-fed-management.md#addfeddomain). Azure AD Connect версии 1.1.553.0 и более поздней создает корректное правило утверждения для issuerID автоматически. Если вы не можете использовать Azure AD Connect версии 1.1.553.0 или более поздней, рекомендуется использовать средство [Правила утверждений Azure AD RPT](https://aka.ms/aadrptclaimrules) для создания и установки корректных правил утверждений для доверия проверяющей стороне Azure AD.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 См. [дополнительные сведения о параметрах входа пользователя](plan-connect-user-signin.md).

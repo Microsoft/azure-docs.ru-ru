@@ -12,10 +12,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c20cfb96b5cd6e1d05e332fa7157fe6e0cde8656
-ms.sourcegitcommit: 8a74ab1beba4522367aef8cb39c92c1147d5ec13
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98614188"
 ---
 # <a name="install-the-azure-ad-connect-provisioning-agent-using-powershell-cmdlets"></a>Установка агента подготовки Azure AD Connect с помощью командлетов PowerShell 
@@ -108,4 +108,4 @@ ms.locfileid: "98614188"
 
 - [Что собой представляет подготовка?](what-is-provisioning.md)
 - [GMSA командлеты PowerShell для агента подготовки облака Azure AD Connect](how-to-gmsa-cmdlets.md)
-- [Что такое Azure AD Connect синхронизации в облаке?](what-is-cloud-sync.md)
+- [Что представляет собой облачная синхронизация Azure AD Connect?](what-is-cloud-sync.md)

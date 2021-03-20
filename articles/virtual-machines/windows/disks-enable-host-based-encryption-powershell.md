@@ -8,12 +8,12 @@ ms.date: 08/24/2020
 ms.author: rogarana
 ms.subservice: disks
 ms.custom: references_regions
-ms.openlocfilehash: e56473ae935ec58a6cf6f0ea30fe5f7ccfec3f80
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: f82169c084fc65fd483119bb84f29198ed288019
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103017211"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104580323"
 ---
 # <a name="use-the-azure-powershell-module-to-enable-end-to-end-encryption-using-encryption-at-host"></a>Использование модуля Azure PowerShell для включения сквозного шифрования с помощью шифрования на узле
 
@@ -32,7 +32,20 @@ ms.locfileid: "103017211"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Чтобы иметь возможность использовать шифрование на узле для виртуальных машин или масштабируемых наборов виртуальных машин, необходимо включить эту функцию в подписке. Отправьте сообщение электронной почты encryptionAtHost@microsoft.com с идентификаторами подписки, чтобы включить функцию для ваших подписок.
+Прежде чем использовать свойство Енкриптионасост для виртуальной машины или VMSS, необходимо включить эту функцию для своей подписки. Выполните следующие действия, чтобы включить функцию для подписки.
+
+1.  Выполните следующую команду, чтобы зарегистрировать компонент для подписки.
+
+    ```powershell
+     Register-AzProviderFeature -FeatureName "EncryptionAtHost" -ProviderNamespace "Microsoft.Compute" 
+    ```
+
+2.  Убедитесь, что состояние регистрации зарегистрировано (займет несколько минут), выполнив приведенную ниже команду, прежде чем пытаться воспользоваться функцией.
+
+    ```powershell
+     Get-AzProviderFeature -FeatureName "EncryptionAtHost" -ProviderNamespace "Microsoft.Compute"  
+    ```
+
 
 ### <a name="create-an-azure-key-vault-and-diskencryptionset"></a>Создание Azure Key Vault и Дискенкриптионсет
 

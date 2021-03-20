@@ -4,10 +4,10 @@ description: В этой статье описывается защита фер
 ms.topic: conceptual
 ms.date: 03/09/2020
 ms.openlocfilehash: 7661d64e487c8b8badca240852d17bcf736ba8cf
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91254437"
 ---
 # <a name="back-up-a-sharepoint-farm-to-azure-with-dpm"></a>Резервное копирование фермы SharePoint в Azure с помощью DPM
@@ -24,7 +24,7 @@ ms.locfileid: "91254437"
 
 Перед архивацией фермы SharePoint в Azure необходимо выполнить некоторые действия.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем продолжить, выполните все [предварительные требования по использованию службы Microsoft Azure Backup](backup-azure-dpm-introduction.md#prerequisites-and-limitations) для защиты рабочих нагрузок. В частности, необходимо создать хранилище резервных копий, скачать учетные данные хранилища, установить агент службы Azure Backup и зарегистрировать DPM и Azure Backup Server в хранилище.
 
@@ -34,7 +34,7 @@ ms.locfileid: "91254437"
 
 Для реализации резервного копирования фермы SharePoint необходимо настроить защиту для SharePoint с помощью средства ConfigureSharePoint.exe, а затем создать группу защиты в DPM. Инструкции см. в разделе [Настройка резервного копирования](/system-center/dpm/back-up-sharepoint#configure-backup) в документации по DPM.
 
-## <a name="monitoring"></a>Наблюдение
+## <a name="monitoring"></a>Мониторинг
 
 Чтобы отслеживать задание резервного копирования, следуйте инструкциям в разделе [мониторинг резервного копирования DPM](/system-center/dpm/back-up-sharepoint#monitoring) .
 
@@ -61,7 +61,7 @@ ms.locfileid: "91254437"
 
     ![DPM SharePoint Protection11](./media/backup-azure-backup-sharepoint/dpm-sharepoint-protection13.png)
 
-    После завершения каталогизации состояние изменится на *Успешно*. Выберите **Закрыть**.
+    После завершения каталогизации состояние изменится на *Успешно*. Щелкните **Закрыть**.
 
     ![DPM SharePoint Protection12](./media/backup-azure-backup-sharepoint/dpm-sharepoint-protection14.png)
 4. Выберите объект SharePoint, отображаемый на вкладке **Восстановление** DPM, чтобы получить структуру базы данных содержимого. Щелкните элемент правой кнопкой мыши и выберите команду **восстановить**.
@@ -73,7 +73,7 @@ ms.locfileid: "91254437"
 
 Если у вас есть несколько интерфейсных веб-серверов и вы хотите переключить сервер, используемый DPM для защиты фермы, следуйте инструкциям в разделе [переключение Front-End веб-сервера](/system-center/dpm/back-up-sharepoint#switching-the-front-end-web-server).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Azure Backup Server и DPM — часто задаваемые вопросы](backup-azure-dpm-azure-server-faq.md)
 * [Устранение неполадок при работе с System Center Data Protection Manager](backup-azure-scdpm-troubleshooting.md)

@@ -4,10 +4,10 @@ description: Узнайте, как активировать лицензиро�
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: e2b6e495be2257548782143517f5a970b424860c
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91276362"
 ---
 # <a name="enable-a-licensed-image-in-your-lab-in-azure-devtest-labs"></a>Активация лицензированных образов в лаборатории в Azure DevTest Labs
@@ -81,7 +81,7 @@ ms.locfileid: "91276362"
 - [Custom images or formulas? (Пользовательские изображения или формулы?)](./devtest-lab-faq.md#blog-post)
 - [Copying Custom Images between Azure DevTest Labs (Копирование пользовательских образов между лабораториями для разработки и тестирования Azure)](https://www.visualstudiogeeks.com/blog/DevOps/How-To-Move-CustomImages-VHD-Between-AzureDevTestLabs#copying-custom-images-between-azure-devtest-labs)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Создание пользовательского образа из виртуальной машины](devtest-lab-create-custom-image-from-vm-using-portal.md)
 - [Создание пользовательского образа из VHD-файла](devtest-lab-create-template.md)

@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 10/20/2020
 ms.author: alkohli
 ms.openlocfilehash: ed05f3d60f8ba4fbb06327136c7a117ae1d1d2db
-ms.sourcegitcommit: 16c7fd8fe944ece07b6cf42a9c0e82b057900662
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96582485"
 ---
 # <a name="monitor-your-azure-data-box-gateway"></a>Мониторинг Шлюза Azure Data Box

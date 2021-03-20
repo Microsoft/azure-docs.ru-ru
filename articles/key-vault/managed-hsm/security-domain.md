@@ -8,10 +8,10 @@ author: amitbapat
 ms.author: ambapat
 ms.date: 09/15/2020
 ms.openlocfilehash: 37e2541d0b53c96fd3f85da31b2c0ce5b68b551a
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "90997211"
 ---
 # <a name="about-the-managed-hsm-security-domain"></a>Сведения об управляемом домене безопасности HSM
@@ -37,7 +37,7 @@ ms.locfileid: "90997211"
 
 Резервное копирование (полное резервное копирование или резервная копия с одним ключом) может быть восстановлено только в том случае, если исходный управляемый HSM (в котором была создана резервная копия) и управляемый модуль HSM назначения (где будет восстановлена резервная копия) используют один и тот же домен безопасности. Таким образом, домен безопасности также определяет криптографическую границу для каждого управляемого HSM.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь с [обзором управляемого устройства HSM](overview.md).
 - Сведения об [управлении управляемым модулем HSM с помощью Azure CLI](key-management.md)

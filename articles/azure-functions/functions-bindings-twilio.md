@@ -7,10 +7,10 @@ ms.date: 07/09/2018
 ms.author: cshoe
 ms.custom: devx-track-csharp, H1Hack27Feb2017
 ms.openlocfilehash: 31d5c528112ccacab47282729b1b5f8a72f19af0
-ms.sourcegitcommit: 090ea6e8811663941827d1104b4593e29774fa19
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91999285"
 ---
 # <a name="twilio-binding-for-azure-functions"></a>Привязка Twilio для службы "Функции Azure"
@@ -72,7 +72,7 @@ namespace TwilioQueueOutput
 
 # <a name="c-script"></a>[Скрипт C#](#tab/csharp-script)
 
-В следующем примере показаны выходная привязка Twilio*function.json* и [функция сценария C#](functions-reference-csharp.md), которая использует эту привязку. Эта функция использует параметр `out` для отправки текстового сообщения.
+В следующем примере показаны выходная привязка Twilio *function.json* и [функция сценария C#](functions-reference-csharp.md), которая использует эту привязку. Эта функция использует параметр `out` для отправки текстового сообщения.
 
 Данные привязки в файле *function.json*:
 

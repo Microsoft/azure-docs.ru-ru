@@ -4,14 +4,14 @@ description: Узнайте, как обрабатывать временные 
 keywords: mysql connection,connection string,connectivity issues,transient error,connection error
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: conceptual
 ms.date: 3/18/2020
-ms.openlocfilehash: 43dd83142832e6582c3014e761b91b9245d68e9e
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: 2a651d87411654f1a52c4a097f115ba848ce569c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98660044"
 ---
 # <a name="handling-of-transient-connectivity-errors-for-azure-database-for-mariadb"></a>Обработка временных ошибок подключения к Базе данных Azure для MariaDB
@@ -44,6 +44,6 @@ ms.locfileid: "98660044"
 
 Не забудьте проверить логику повторных попыток. Например, попробуйте выполнить свой код, увеличивая или уменьшая число вычислительных ресурсов сервера Базы данных Azure для MariaDB. Ваше приложение должно без каких-либо проблем справиться с небольшим простоем во время этой операции.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Устранение проблем с подключением к Базе данных Azure для MariaDB](howto-troubleshoot-common-connection-issues.md)

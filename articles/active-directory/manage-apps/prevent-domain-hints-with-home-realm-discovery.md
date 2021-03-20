@@ -13,16 +13,16 @@ ms.devlang: na
 ms.topic: how-to
 ms.date: 02/12/2021
 ms.author: hirsin
-ms.openlocfilehash: 67cb1003e139a085d45d01617cd44647bad420f5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 53dfdfaf37695059d6d52428c2ba109970d9f7f7
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693249"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104589384"
 ---
 # <a name="disable-auto-acceleration-to-a-federated-idp-during-user-sign-in-with-home-realm-discovery-policy"></a>Отключение автоматического ускорения для федеративного IDP во время входа пользователя с помощью политики обнаружения домашней области
 
-[Политика обнаружения домашних областей](https://docs.microsoft.com/graph/api/resources/homeRealmDiscoveryPolicy) (обнаружения домашней области) предоставляет администраторам несколько способов контроля над тем, как и где пользователи проходят проверку подлинности. `domainHintPolicy`Раздел политики обнаружения домашней области используется для миграции федеративных пользователей на облачные управляемые учетные данные, такие как [Fido](../authentication/howto-authentication-passwordless-security-key.md), гарантируя, что они всегда будут посещать страницу входа в Azure AD и не будут использовать автоматическое УСКОРЕНИЕ в Федеративной IDP из-за указания домена.
+[Политика обнаружения домашних областей](/graph/api/resources/homeRealmDiscoveryPolicy) (обнаружения домашней области) предоставляет администраторам несколько способов контроля над тем, как и где пользователи проходят проверку подлинности. `domainHintPolicy`Раздел политики обнаружения домашней области используется для миграции федеративных пользователей на облачные управляемые учетные данные, такие как [Fido](../authentication/howto-authentication-passwordless-security-key.md), гарантируя, что они всегда будут посещать страницу входа в Azure AD и не будут использовать автоматическое УСКОРЕНИЕ в Федеративной IDP из-за указания домена.
 
 Эта политика необходима в тех случаях, когда приложения, которыми администратор не может управлять или обновлять Добавление подсказок в домене во время входа.  Например, `outlook.com/contoso.com` отправляет пользователя на страницу входа с `&domain_hint=contoso.com` добавленным параметром для автоматического ускорения пользователя к Федеративной IDP для `contoso.com` домена. Пользователи с управляемыми учетными данными, отправленными в федеративный IDP, не могут войти в систему с использованием своих управляемых учетных данных, уменьшая безопасность и испытывающие неприятности пользователей с случайным входом в систему. При развертывании управляемых учетных данных администраторами [также следует настроить эту политику](#suggested-use-within-a-tenant) , чтобы пользователи всегда могли использовать свои управляемые учетные данные.
 
@@ -101,7 +101,7 @@ ms.locfileid: "101693249"
 
 ## <a name="configuring-policy-through-graph-explorer"></a>Настройка политики с помощью Graph Explorer
 
-Задайте [политику обнаружения домашней области](https://docs.microsoft.com/graph/api/resources/homeRealmDiscoveryPolicy) обычным образом с помощью Microsoft Graph.  
+Задайте [политику обнаружения домашней области](/graph/api/resources/homeRealmDiscoveryPolicy) обычным образом с помощью Microsoft Graph.  
 
 1. Предоставьте разрешение Policy. ReadWrite. Аппликатионконфигуратион в [обозревателе Graph](https://developer.microsoft.com/graph/graph-explorer).  
 1. Использовать URL-адрес `https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies`

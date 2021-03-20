@@ -10,10 +10,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 07/11/2020
 ms.openlocfilehash: 2c67cd4d071660da2ca5714623695ca434329263
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91275189"
 ---
 # <a name="how-to-index-tables-from-azure-table-storage-with-azure-cognitive-search"></a>Как индексировать таблицы из хранилища таблиц Azure с помощью Azure Когнитивный поиск
@@ -70,7 +70,7 @@ ms.locfileid: "91275189"
 Учетные данные для таблицы можно указать одним из описанных ниже способов. 
 
 - **Строка подключения управляемого удостоверения**: для `ResourceId=/subscriptions/<your subscription ID>/resourceGroups/<your resource group name>/providers/Microsoft.Storage/storageAccounts/<your storage account name>/;` этой строки подключения не требуется ключ учетной записи, но необходимо выполнить инструкции по [настройке подключения к учетной записи хранения Azure с помощью управляемого удостоверения](search-howto-managed-identities-storage.md).
-- **Строка подключения учетной записи хранения с полным доступом**. чтобы `DefaultEndpointsProtocol=https;AccountName=<your storage account>;AccountKey=<your account key>` получить строку подключения из портал Azure, перейдите к разделу Параметры **колонок учетной записи хранения**  >  **Settings**  >  **ключи** (для классических учетных записей хранения) или **Параметры**  >  **ключи доступа** (для Azure Resource Manager учетных записей хранения).
+- **Строка подключения учетной записи хранения с полным доступом**. чтобы `DefaultEndpointsProtocol=https;AccountName=<your storage account>;AccountKey=<your account key>` получить строку подключения из портал Azure, перейдите к разделу Параметры **колонок учетной записи хранения**  >    >  **ключи** (для классических учетных записей хранения) или **Параметры**  >  **ключи доступа** (для Azure Resource Manager учетных записей хранения).
 - **Строка подключения для подписанного URL-имени учетной записи хранения**. `TableEndpoint=https://<your account>.table.core.windows.net/;SharedAccessSignature=?sv=2016-05-31&sig=<the signature>&spr=https&se=<the validity end time>&srt=co&ss=t&sp=rl` подписанный URL-доступ должен иметь разрешения на список и чтение для контейнеров (в данном случае таблиц) и объектов (строк таблицы).
 -  **Подписанный URL-доступ к таблице**. `ContainerSharedAccessUri=https://<your storage account>.table.core.windows.net/<table name>?tn=<table name>&sv=2016-05-31&sig=<the signature>&se=<the validity end time>&sp=r` подпись общего доступа должна иметь разрешения на запрос (чтение) для таблицы.
 

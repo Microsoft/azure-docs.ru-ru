@@ -4,10 +4,10 @@ description: Сведения о том, как с помощью правил �
 ms.topic: article
 ms.date: 06/23/2020
 ms.openlocfilehash: ad8feed5df49dcc4503226a5fae50195bb9d48aa
-ms.sourcegitcommit: 090ea6e8811663941827d1104b4593e29774fa19
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91999502"
 ---
 # <a name="configure-ip-firewall-for-an-azure-relay-namespace"></a>Настройка брандмауэра для IP-адресов для пространства имен Azure Relay

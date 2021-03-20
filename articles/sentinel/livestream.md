@@ -16,13 +16,13 @@ ms.workload: na
 ms.date: 06/14/2020
 ms.author: yelevin
 ms.openlocfilehash: 14928d3c94ced8d1cd0c12e76428be73b68b91d9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "84783169"
 ---
-# <a name="use-hunting-livestream-in-azure-sentinel-to-detect-threats"></a>Использование поиска облаку в Azure Sentinel для обнаружения угроз
+# <a name="use-hunting-livestream-in-azure-sentinel-to-detect-threats"></a>Использование охоты с потоковой передачей в реальном времени в Azure Sentinel для обнаружения угроз
 
 Используйте поиск облаку для создания интерактивных сеансов, позволяющих тестировать вновь созданные запросы по мере возникновения событий, получать уведомления из сеансов при обнаружении соответствия и при необходимости запускать расследования. Вы можете быстро создать сеанс облаку с помощью любого Log Analytics запроса.
 
@@ -43,7 +43,7 @@ ms.locfileid: "84783169"
 
 Вы можете создать сеанс облаку на основе существующего запроса поиска или создать сеанс с нуля.
 
-1. В портал Azure перейдите к элементу Поиск по **Sentinel**  >  **Threat Management**  >  **Hunting**.
+1. В портал Azure перейдите к элементу Поиск по **Sentinel**  >  **Threat Management**  >  .
 
 1. Создание сеанса облаку из запроса поиска:
     
@@ -76,7 +76,7 @@ ms.locfileid: "84783169"
 
 ## <a name="view-your-livestream-sessions"></a>Просмотр сеансов облаку
 
-1. В портал Azure **Sentinel**  >  откройте вкладку**Управление угрозами**Поиск по Sentinel  >  **Hunting**  >  **облаку** .
+1. В портал Azure   >  откройте вкладку **Управление угрозами** Поиск по Sentinel  >    >  **облаку** .
 
 1. Выберите сеанс облаку, который нужно просмотреть или изменить. Пример:
     

@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: ravenn
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: da22a4e5e9ab13ec18347e58bea6cfc5f45333de
-ms.sourcegitcommit: 484f510bbb093e9cfca694b56622b5860ca317f7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98630706"
 ---
 # <a name="how-sso-to-on-premises-resources-works-on-azure-ad-joined-devices"></a>Как единый вход для локальных ресурсов работает на подключенных к Azure AD устройствах
@@ -24,7 +24,7 @@ ms.locfileid: "98630706"
 
 В этой статье описано, как это работает.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для локального единого входа необходимо понимание сетевого взаимодействия с локальными контроллерами домена AD DS. Если устройства, присоединенные к Azure AD, не подключены к сети организации, требуется VPN или другая сетевая инфраструктура. 
 

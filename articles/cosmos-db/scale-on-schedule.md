@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 01/13/2020
 ms.author: mjbrown
 ms.openlocfilehash: c60f3fc6b4ce4a1aead273fedb81e39de697f576
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93339263"
 ---
 # <a name="scale-azure-cosmos-db-throughput-by-using-azure-functions-timer-trigger"></a>Масштабирование Azure Cosmos DB пропускной способности с помощью триггера таймера для функций Azure
@@ -27,6 +27,6 @@ ms.locfileid: "93339263"
 
 Вы можете клонировать этот проект локально, изменить его, указав Azure Cosmos DBные ресурсы для увеличения и уменьшения масштаба, а также расписание выполнения. Позже вы сможете развернуть его в подписке Azure и защитить его с помощью управляемого удостоверения службы с разрешениями [управления доступом на основе ролей Azure (Azure RBAC)](role-based-access-control.md) с ролью "Azure Cosmos DB оператор", чтобы настроить пропускную способность для учетных записей Azure Cosmos.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте больше и загрузите пример из [планировщика пропускной способности Azure Cosmos DB](https://github.com/Azure-Samples/azure-cosmos-throughput-scheduler).

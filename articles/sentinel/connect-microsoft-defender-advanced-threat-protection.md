@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 09/16/2020
 ms.author: yelevin
 ms.openlocfilehash: 0db4e0fe0472c75f1eae392980ae697f53007244
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98623372"
 ---
 # <a name="connect-alerts-from-microsoft-defender-for-endpoint-formerly-microsoft-defender-atp"></a>Подключение оповещений от защитника Майкрософт к конечной точке (прежнее название — ATP в защитнике Майкрософт)
@@ -35,7 +35,7 @@ ms.locfileid: "98623372"
 >
 > Чтобы принять новые журналы необработанных данных от защитника Майкрософт для [расширенного](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)обнаружения конечной точки, используйте новый соединитель для Microsoft 365ного защитника (ранее — Microsoft Threat Protection, [см. документацию](./connect-microsoft-365-defender.md)).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Необходимо иметь действительную лицензию для защитника Майкрософт для конечной точки, как описано в разделе [Настройка защитника Майкрософт для развертывания конечных точек](/windows/security/threat-protection/microsoft-defender-atp/licensing). 
 
@@ -47,11 +47,11 @@ ms.locfileid: "98623372"
 
 1. В поле Метка Azure выберите **соединители данных**, выберите **защитник Майкрософт для конечной точки** (может по-прежнему называться *Microsoft Защитник Advanced Threat protection*) из коллекции и щелкните **открыть страницу соединителя**.
 
-1. Щелкните **Подключить**. 
+1. Нажмите кнопку **Подключить**. 
 
 1. Чтобы запросить у защитника Майкрософт оповещения о конечных точках в **журналах**, введите **секуритялерт** в окне запроса и добавьте фильтр, где **имя поставщика** — **мдатп**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этом документе вы узнали, как подключить защитник Майкрософт для конечной точки к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 - Узнайте, как [отслеживать свои данные и потенциальные угрозы](quickstart-get-visibility.md).
 - Узнайте, как приступить к [обнаружению угроз с помощью Azure Sentinel](./tutorial-detect-threats-built-in.md).

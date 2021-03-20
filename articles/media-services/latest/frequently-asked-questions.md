@@ -11,12 +11,12 @@ ms.workload: ''
 ms.topic: article
 ms.date: 08/31/2020
 ms.author: inhenkel
-ms.openlocfilehash: 3ebff5a40528e9e3ea0e75c4b51529638de34b5d
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: a9394a5e117a577c903eccdf91cf22d0c359df2b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102505772"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104581122"
 ---
 # <a name="media-services-v3-frequently-asked-questions"></a>Часто задаваемые вопросы о службах мультимедиа v3
 
@@ -86,12 +86,12 @@ ms.locfileid: "102505772"
 
 #### <a name="server-side"></a>На сервере
 
-Вы можете отслеживать события в реальном времени, подписавшись на события службы "Сетка событий Azure". Дополнительные сведения см. в описании [схемы событий EventGrid](media-services-event-schemas.md#live-event-types).
+Вы можете отслеживать события в реальном времени, подписавшись на события службы "Сетка событий Azure". Дополнительные сведения см. в описании [схемы событий EventGrid](monitoring/media-services-event-schemas.md#live-event-types).
 
 Вы можете сделать одно из двух:
 
-* [Подпишитесь](reacting-to-media-services-events.md) на события [Microsoft. Media. лививентенкодердисконнектед](media-services-event-schemas.md#liveeventencoderdisconnected) на уровне потока и следите за тем, чтобы в течение длительного времени не поступали повторного подключения для завершения и удаления интерактивного события.
-* [Подпишитесь](reacting-to-media-services-events.md) на события [пульса](media-services-event-schemas.md#liveeventingestheartbeat) уровня Track. Если все дорожки имеют скорость передачи, равную 0, или последняя отметка времени больше не растет, можно безопасно завершить интерактивное событие. События пульса появляются каждые 20 секунд для каждой записи, поэтому это может быть немного подробным.
+* [Подпишитесь](monitoring/reacting-to-media-services-events.md) на события [Microsoft. Media. лививентенкодердисконнектед](monitoring/media-services-event-schemas.md#liveeventencoderdisconnected) на уровне потока и следите за тем, чтобы в течение длительного времени не поступали повторного подключения для завершения и удаления интерактивного события.
+* [Подпишитесь](monitoring/reacting-to-media-services-events.md) на события [пульса](monitoring/media-services-event-schemas.md#liveeventingestheartbeat) уровня Track. Если все дорожки имеют скорость передачи, равную 0, или последняя отметка времени больше не растет, можно безопасно завершить интерактивное событие. События пульса появляются каждые 20 секунд для каждой записи, поэтому это может быть немного подробным.
 
 ###  <a name="how-do-i-insert-breaksvideos-and-image-slates-during-a-live-stream"></a>Разделы справки вставлять разрывы, видео и изображения во время потока в реальном времени?
 
@@ -117,7 +117,7 @@ ms.locfileid: "102505772"
 
 ### <a name="how-and-where-did-i-get-a-jwt-token-before-using-it-to-request-a-license-or-key"></a>Как и где я получил маркер JWT, прежде чем использовать его для запроса лицензии или ключа?
 
-Для рабочей среды требуется служба маркеров безопасности (то есть веб-служба), которая выдает маркер JWT при запросе HTTPS. Для тестирования можно использовать код, показанный в `GetTokenAsync` методе, определенном в [Program.CS](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/master/AMSV3Tutorials/EncryptWithDRM/Program.cs).
+Для рабочей среды требуется служба маркеров безопасности (то есть веб-служба), которая выдает маркер JWT при запросе HTTPS. Для тестирования можно использовать код, показанный в `GetTokenAsync` методе, определенном в [Program. CS](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/master/AMSV3Tutorials/EncryptWithDRM/Program.cs).
 
 Проигрыватель выполняет запрос, после того как пользователь прошел проверку подлинности, STS для такого маркера и назначает его в качестве значения маркера. Можно использовать [API решения "Проигрыватель мультимедиа Azure"](https://amp.azure.net/libs/amp/latest/docs/).
 

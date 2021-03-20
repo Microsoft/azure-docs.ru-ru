@@ -5,17 +5,17 @@ ms.date: 07/15/2020
 ms.topic: how-to
 ms.reviewer: ravastra
 ms.openlocfilehash: be078e7149ba008ab8b7ad44a016a0d1cf82df0e
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91263017"
 ---
 # <a name="manage-users-in-azure-blockchain-workbench"></a>Управление пользователями в Azure Blockchain Workbench
 
 Azure Blockchain Workbench позволяет управлять пользователями как для отдельных сотрудников, так и для организаций, которые являются частью консорциума.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Необходимо развертывание Blockchain Workbench. Дополнительные сведения о развертывании Azure Blockchain Workbench см. в [этой статье](deploy.md).
 
@@ -105,7 +105,7 @@ Azure Blockchain Workbench использует Azure Active Directory (Azure AD
 
     ![Изменение роли](./media/manage-users/application-change-role.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Работая с этой статьей, вы научились управлять пользователями в Azure Blockchain Workbench. Сведения о создании блокчейн-приложения см. в следующей статье.
 

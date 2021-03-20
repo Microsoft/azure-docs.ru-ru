@@ -9,14 +9,15 @@ ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
 ms.date: 03/16/2021
+ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
-ms.openlocfilehash: 9e248c10c15ba0318c6b23fcbf88be04dd9896a2
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.openlocfilehash: 1255c4962de1fce19efa9c0b0e1d28fc348463ef
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103573070"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104580153"
 ---
 # <a name="embedded-sign-in-experience"></a>Встроенные возможности входа в систему
 
@@ -35,7 +36,7 @@ ms.locfileid: "103573070"
 - Встроенный вход поддерживает только локальные учетные записи. Большинство поставщиков удостоверений социальных сетей (например, Google и Facebook) блокируют страницы входа из подставляемых кадров.
 - Так как файлы cookie сеанса Azure AD B2C в IFRAME считаются сторонними файлами cookie, некоторые браузеры (например, Safari или Chrome в режиме режиме инкогнито) блокируют или удаляют эти файлы cookie, что приводит к нежелательным последствиям для пользователя. Чтобы избежать этой проблемы, убедитесь, что имя домена приложения и домен Azure AD B2C имеют *один и тот же источник*. Чтобы использовать тот же источник, [включите личные домены](custom-domain.md) для Azure AD B2C клиента, а затем настройте веб-приложение с тем же источником. Например, размещенное в приложении Приложение https://app.contoso.com имеет тот же источник, что и Azure AD B2C, на котором работает https://login.contoso.com .
 
-## <a name="perquisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 * Выполните шаги, описанные в статье [Начало работы с настраиваемыми политиками в Azure Active Directory B2C](custom-policy-get-started.md).
 * [Включите личные домены](custom-domain.md) для политик.
@@ -87,7 +88,7 @@ div.api_container{
 
 В некоторых случаях может потребоваться уведомить приложение, в котором в настоящее время отображается Azure AD B2C страница. Например, когда пользователь выбирает вариант регистрации, приложение может ответить, скрыв ссылки для входа с помощью учетной записи социальных сетей или изменив размер IFRAME.
 
-Чтобы уведомить приложение о текущей Azure AD B2C странице, [Включите политику для JavaScript](javascript-samples.md), а затем используйте сообщения в HTML5 POST. Следующий код JavaScript отправляет сообщение POST в приложение с помощью `signUp` :
+Чтобы уведомить приложение о текущей Azure AD B2C странице, [Включите политику для JavaScript](./javascript-and-page-layout.md), а затем используйте сообщения в HTML5 POST. Следующий код JavaScript отправляет сообщение POST в приложение с помощью `signUp` :
 
 ```javascript
 window.parent.postMessage("signUp", '*');
@@ -155,5 +156,5 @@ function logOut()
 
 - [Настройка пользовательского интерфейса](customize-ui.md)
 - Справочник по элементам [релингпарти](relyingparty.md)
-- [Включение политики для JavaScript](javascript-samples.md)
+- [Включение политики для JavaScript](./javascript-and-page-layout.md)
 - [Примеры кода](code-samples.md)

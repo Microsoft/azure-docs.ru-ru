@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 07/17/2020
 ms.openlocfilehash: ba353cf41cf3876a681f8f18d4121401260ff4ff
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98877176"
 ---
 # <a name="firewall-rules-in-azure-database-for-postgresql---single-server"></a>Правила брандмауэра в базе данных Azure для PostgreSQL — один сервер

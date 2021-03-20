@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 07/17/2020
 ms.openlocfilehash: b875936e13edfe0eff12f253836b093796951308
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98876332"
 ---
 # <a name="use-virtual-network-service-endpoints-and-rules-for-azure-database-for-postgresql---single-server"></a>Использование конечных точек службы и правил виртуальной сети для базы данных Azure для PostgreSQL — один сервер
@@ -128,8 +128,8 @@ ms.locfileid: "98876332"
 
 Задать параметр **IgnoreMissingServiceEndpoint** можно с помощью Azure CLI или портала.
 
-## <a name="related-articles"></a>Связанные статьи
-- [Виртуальные сети Azure][vm-virtual-network-overview]
+## <a name="related-articles"></a>Похожие статьи
+- [виртуальные сети Azure;][vm-virtual-network-overview]
 - [Конечные точки службы виртуальной сети Azure][vm-virtual-network-service-endpoints-overview-649d]
 
 ## <a name="next-steps"></a>Дальнейшие действия

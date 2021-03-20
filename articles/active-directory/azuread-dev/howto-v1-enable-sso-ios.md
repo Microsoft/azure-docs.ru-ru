@@ -16,10 +16,10 @@ ms.reviewer: brandwe
 ms.custom: aaddev
 ROBOTS: NOINDEX
 ms.openlocfilehash: 08b018082c753b9524cb12a72d637fe5458d9114
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85383705"
 ---
 # <a name="how-to-enable-cross-app-sso-on-ios-using-adal"></a>Практическое руководство. Включение единого входа в нескольких приложениях iOS с помощью ADAL
@@ -35,11 +35,11 @@ ms.locfileid: "85383705"
 Это практическое руководство применяется к:
 
 * Azure Active Directory (Azure Active Directory).
-* Azure Active Directory B2C
+* Azure Active Directory B2C
 * Azure Active Directory B2B
 * Условный доступ к Azure Active Directory
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В этих инструкциях предполагается, что вы знаете следующее.
 
@@ -243,7 +243,7 @@ defaultKeychainSharingGroup=@"com.myapp.mycache";
 
 ### <a name="turning-on-sso-for-broker-assisted-sso"></a>Включение единого входа с брокером
 
-Возможность использования приложением любого брокера, установленного на устройстве, **по умолчанию**отключена. Чтобы пользоваться приложением с брокером, необходимо выполнить дополнительную настройку и добавить код в приложение.
+Возможность использования приложением любого брокера, установленного на устройстве, **по умолчанию** отключена. Чтобы пользоваться приложением с брокером, необходимо выполнить дополнительную настройку и добавить код в приложение.
 
 Шаги для выполнения:
 

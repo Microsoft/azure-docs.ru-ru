@@ -4,10 +4,10 @@ description: Узнайте, как создать шаблон виртуаль
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: 5ae50bd11ab9a8adb769920f6d473a2ff2ce9342
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91251501"
 ---
 # <a name="enable-nested-virtualization-on-a-template-virtual-machine-in-azure-lab-services-using-a-script"></a>Включение вложенной виртуализации на виртуальной машине шаблона в службах лаборатории Azure с помощью скрипта
@@ -39,7 +39,7 @@ ms.locfileid: "91251501"
 
 1. Запустите **PowerShell** в режиме **администратора** .
 1. В окне PowerShell перейдите к папке с скачанным скриптом. Если вы выполняете переход из верхней папки файлов репозитория, сценарий находится по адресу `azure-devtestlab\samples\ClassroomLabs\Scripts\HyperV\` .
-1. Для успешного выполнения скрипта может потребоваться изменить политику выполнения. Выполните следующую команду:
+1. Для успешного выполнения скрипта может потребоваться изменить политику выполнения. Выполните следующую команду.
 
     ```powershell
     Set-ExecutionPolicy bypass -force
@@ -53,7 +53,7 @@ ms.locfileid: "91251501"
 
     > [!NOTE]
     > Для выполнения сценария может потребоваться перезапустить компьютер. Следуйте инструкциям скрипта и повторно запустите скрипт, пока в выходных данных не появится элемент **script завершен** .
-1. Не забудьте сбросить политику выполнения. Выполните следующую команду:
+1. Не забудьте сбросить политику выполнения. Выполните следующую команду.
 
     ```powershell
     Set-ExecutionPolicy default -force
@@ -63,7 +63,7 @@ ms.locfileid: "91251501"
 
 Теперь ваш компьютер шаблона готов к созданию виртуальных машин Hyper-V. Инструкции по созданию виртуальных машин Hyper-V см. [в статье Создание виртуальной машины в Hyper-v](/windows-server/virtualization/hyper-v/get-started/create-a-virtual-machine-in-hyper-v) . См. также раздел [Центр оценки Майкрософт](https://www.microsoft.com/evalcenter/) для извлечения доступных операционных систем и программного обеспечения.  
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дальнейшие действия являются общими для настройки любой лаборатории.
 

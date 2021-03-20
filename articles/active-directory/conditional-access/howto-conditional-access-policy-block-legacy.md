@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: calebb, rogoya
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 982c33c5c55e32ce48131a4b2f0911e4f23dd408
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98877294"
 ---
 # <a name="conditional-access-block-legacy-authentication"></a>Условный доступ: Блокировка устаревших методов проверки подлинности
@@ -50,6 +50,6 @@ ms.locfileid: "98877294"
 
 [Определение влияния условного доступа в режиме "только отчет"](howto-conditional-access-insights-reporting.md)
 
-[Моделирование поведения входа с помощью средства What If условного доступа](troubleshoot-conditional-access-what-if.md)
+[Моделирование поведения входа с помощью средства What If условного доступа](troubleshoot-conditional-access-what-if.md)
 
 [Как настроить многофункциональное устройство или приложение для отправки электронной почты с помощью Microsoft 365](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365)

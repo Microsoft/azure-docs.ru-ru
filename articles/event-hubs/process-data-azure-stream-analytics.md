@@ -4,10 +4,10 @@ description: В этой статье показано, как обрабаты�
 ms.date: 06/23/2020
 ms.topic: article
 ms.openlocfilehash: 2db4fba59a1a06a24ee2939c51ecdf65aa06cef3
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "85312890"
 ---
 # <a name="process-data-from-your-event-hub-using-azure-stream-analytics"></a>Обработка данных из концентратора событий с помощью Azure Stream Analytics 

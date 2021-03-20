@@ -12,10 +12,10 @@ ms.date: 12/23/2020
 ms.author: wolfma
 ms.custom: devx-track-csharp
 ms.openlocfilehash: e48fead4d4364fd84f178388dbfb9158296e687b
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98659977"
 ---
 # <a name="how-to-use-batch-transcription"></a>Использование записи пакетов
@@ -180,7 +180,7 @@ API-интерфейс для транскрипции пакетов подде
       Необязательный URL-адрес с [нерегламентированным SAS](../../storage/common/storage-sas-overview.md) в контейнер, доступный для записи в Azure. Результат сохраняется в этом контейнере. SAS с хранимой политикой доступа **не** поддерживается. Если этот параметр не указан, корпорация Майкрософт сохраняет результаты в контейнере хранилища, который управляется корпорацией Майкрософт. При удалении транскрипции путем вызова функции [удаления](https://westus.dev.cognitive.microsoft.com/docs/services/speech-to-text-api-v3-0/operations/DeleteTranscription)записей результирующие данные также будут удалены.
 :::row-end:::
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 
 Запись пакетов может читать звук из общедоступного URI Интернета, а также читать звук или записывать записи с помощью URI SAS с [хранилищем BLOB-объектов Azure](../../storage/blobs/storage-blobs-overview.md).
 
@@ -320,7 +320,7 @@ API-интерфейс для транскрипции пакетов подде
 Служба транскрипции пакетов может работать с большим количеством отправленных транскрипций. Вы можете запросить состояние транскрипций с помощью [получения](https://westus.dev.cognitive.microsoft.com/docs/services/speech-to-text-api-v3-0/operations/GetTranscriptions)сведений о них.
 Регулярно вызывайте функцию [транскрипции удаления](https://westus.dev.cognitive.microsoft.com/docs/services/speech-to-text-api-v3-0/operations/DeleteTranscription) из службы после получения результатов. Кроме того `timeToLive` , задайте свойство, чтобы обеспечить окончательное удаление результатов.
 
-## <a name="sample-code"></a>Образец кода
+## <a name="sample-code"></a>Пример кода
 
 Полные примеры доступны в [репозитории примера GitHub](https://aka.ms/csspeech/samples) внутри `samples/batch` подкаталога.
 
@@ -416,6 +416,6 @@ while (completed < 1)
 > [!NOTE]
 > Для транскрипций базовых показателей не нужно объявлять идентификатор для базовой модели.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Справочник по API для преобразования речи в текст v3](https://centralus.dev.cognitive.microsoft.com/docs/services/speech-to-text-api-v3-0/operations/CopyModelToSubscription)
