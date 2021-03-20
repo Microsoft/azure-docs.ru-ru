@@ -4,10 +4,10 @@ description: Узнайте, как использовать управляем�
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.openlocfilehash: 71fa9ef4da8081a167b68553e2e3eac8477e8aee
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98881726"
 ---
 # <a name="using-managed-identities-for-azure-with-service-fabric"></a>Использование управляемых удостоверений для Azure с Service Fabric

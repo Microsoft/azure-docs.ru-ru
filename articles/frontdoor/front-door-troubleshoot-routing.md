@@ -13,10 +13,10 @@ ms.topic: troubleshooting
 ms.date: 09/30/2020
 ms.author: duau
 ms.openlocfilehash: 15cdcefe628a392704e650b560243e2f6a134ec2
-ms.sourcegitcommit: 9826fb9575dcc1d49f16dd8c7794c7b471bd3109
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94629994"
 ---
 # <a name="troubleshooting-common-routing-problems"></a>Устранение распространенных проблем маршрутизации
@@ -113,7 +113,7 @@ ms.locfileid: "94629994"
 
 Вы создали экземпляр передней дверцы Azure и настроили интерфейсный узел, внутренний пул, содержащий по крайней мере одну серверную часть в нем, и правило маршрутизации, которое подключает интерфейсный узел к внутреннему пулу. Содержимое не будет доступно, когда запрос переходит на настроенный интерфейсный узел, так как возвращается код состояния HTTP 411.
 
-Ответы на эти запросы могут также содержать HTML-страницу ошибок в тексте ответа, который содержит пояснительную инструкцию. Например, так: `HTTP Error 411. The request must be chunked or have a content length`.
+Ответы на эти запросы могут также содержать HTML-страницу ошибок в тексте ответа, который содержит пояснительную инструкцию. Например, `HTTP Error 411. The request must be chunked or have a content length`.
 
 ### <a name="cause"></a>Причина
 

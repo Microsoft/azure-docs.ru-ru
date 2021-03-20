@@ -9,10 +9,10 @@ ms.date: 02/14/2020
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 8fba8aa577bcb3b5ef44d57c388a1f1de7494782
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95995627"
 ---
 Если вы хотите, чтобы пользователи запрашивают второй фактор проверки подлинности перед предоставлением доступа, можно настроить многофакторную идентификацию Azure AD (MFA). MFA можно настроить отдельно для каждого пользователя или использовать MFA с помощью [условного доступа](../articles/active-directory/conditional-access/overview.md).

@@ -11,10 +11,10 @@ ms.subservice: files
 services: storage
 tags: ''
 ms.openlocfilehash: 3d4f10745d90ccd83e7251af40d3e92a230f2fcd
-ms.sourcegitcommit: 9826fb9575dcc1d49f16dd8c7794c7b471bd3109
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94629688"
 ---
 # <a name="azure-file-share--failed-to-delete-files-from-azure-file-share"></a>Azure file share – failed to delete files from Azure file share (Общая папка Azure — сбой удаления файлов)
@@ -72,7 +72,7 @@ $Context = New-AzStorageContext -StorageAccountName "StorageAccountName" -Storag
 
 ## <a name="example-result"></a>Пример результата:
 
-|хандлеид|путь|ClientIp|клиентпорт|опентиме|ластреконнекттиме|FileId|ParentId|SessionId|
+|хандлеид|Путь|ClientIp|клиентпорт|опентиме|ластреконнекттиме|FileId|ParentId|SessionId|
 |---|---|---|---|---|---|---|---|---|
 |259101229083|---|10.222.10.123|62758|2019-10-05|12:16:50Z|0|0|9507758546259807489|
 |259101229131|---|10.222.10.123|62758|2019-10-05|12:36:20Z|0|0|9507758546259807489|

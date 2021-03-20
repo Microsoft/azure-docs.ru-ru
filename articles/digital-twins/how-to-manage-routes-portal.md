@@ -8,10 +8,10 @@ ms.date: 7/22/2020
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: e61d2ff3807b65022d72414615af9fa729359358
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101715723"
 ---
 # <a name="manage-endpoints-and-routes-in-azure-digital-twins-portal"></a>Управление конечными точками и маршрутами в Azure Digital двойников (портал)
@@ -24,7 +24,7 @@ ms.locfileid: "101715723"
 
 Кроме того, можно также управлять конечными точками и маршрутами с помощью [API маршрутов событий](/rest/api/digital-twins/dataplane/eventroutes), [пакетов SDK](how-to-use-apis-sdks.md#overview-data-plane-apis)или [интерфейса командной строки Azure Digital двойников](how-to-use-cli.md). Версию этой статьи, которая использует эти механизмы вместо портала, см. [*в разделе Практические руководства. Управление конечными точками и маршрутами (API и интерфейс командной строки)*](how-to-manage-routes-apis-cli.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Вам потребуется **учетная запись Azure** (вы можете настроить ее [здесь](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)бесплатно).
 * Вам потребуется **экземпляр Azure Digital двойников** в подписке Azure. Если у вас еще нет экземпляра, его можно создать, выполнив действия, описанные в разделе [*инструкции. Настройка экземпляра и проверки подлинности*](how-to-set-up-instance-portal.md). Используйте следующие значения из программы установки, которые можно использовать далее в этой статье:

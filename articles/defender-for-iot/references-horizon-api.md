@@ -1,5 +1,5 @@
 ---
-title: API горизонта
+title: API Horizon
 description: В этом руководством описываются часто используемые методы горизонта.
 author: shhazam-ms
 manager: rkarlin
@@ -8,13 +8,13 @@ ms.date: 1/5/2021
 ms.topic: article
 ms.service: azure
 ms.openlocfilehash: 39770fe7aa7b11cae03304fda8901e81e0f1877a
-ms.sourcegitcommit: f5b8410738bee1381407786fcb9d3d3ab838d813
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98208428"
 ---
-# <a name="horizon-api"></a>API горизонта 
+# <a name="horizon-api"></a>API Horizon 
 
 В этом руководством описываются часто используемые методы горизонта.
 
@@ -65,7 +65,7 @@ shared_ptr к экземпляру средства синтаксическог
 
 Функция Main. В частности, логику подключаемого модуля, каждый раз, когда новый пакет достигает средства синтаксического анализа. Эта функция будет вызвана, все, что связано с обработкой пакетов, должно быть сделано здесь.
 
-### <a name="considerations"></a>Особенности
+### <a name="considerations"></a>Рекомендации
 
 Подключаемый модуль должен быть потокобезопасным, так как эта функция может быть вызвана из разных потоков. Хороший подход — определить все в стеке.
 

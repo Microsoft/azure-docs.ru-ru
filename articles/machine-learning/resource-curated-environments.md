@@ -11,10 +11,10 @@ ms.subservice: core
 ms.topic: reference
 ms.date: 12/22/2020
 ms.openlocfilehash: f414c4a80750faac590a0c4c734f3634a85b79f0
-ms.sourcegitcommit: 44844a49afe8ed824a6812346f5bad8bc5455030
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97740935"
 ---
 # <a name="azure-machine-learning-curated-environments"></a>Машинное обучение Azure проверенные среды
@@ -50,7 +50,7 @@ ms.locfileid: "97740935"
 
 - AzureML-Форекастднн
 
-## <a name="minimal"></a>Минимальный
+## <a name="minimal"></a>Небольшие
 
 - AzureML-Minimal
 

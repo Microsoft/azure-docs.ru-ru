@@ -10,10 +10,10 @@ ms.service: genomics
 ms.topic: conceptual
 ms.date: 03/02/2018
 ms.openlocfilehash: 82f5e8b4a0c06517381857f0d914bcb65ba41d35
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93394617"
 ---
 # <a name="submit-a-workflow-to-microsoft-genomics-using-a-sas-instead-of-a-storage-account-key"></a>Отправка рабочего процесса в Microsoft Genomics с использованием SAS вместо ключа учетной записи хранения 
@@ -85,5 +85,5 @@ msgen submit -f [full path to your config file] -b1 [name of your first paired e
 msgen submit -f [full path to your config file] 
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этой статье использовались токены SAS вместо ключей учетной записи для отправки рабочего процесса в службу Microsoft Genomics через клиент Python `msgen`. Дополнительные сведения об отправке рабочего процесса и других командах, которые можно использовать в службе Microsoft Genomics, см. в разделе [часто задаваемых вопросов](frequently-asked-questions-genomics.md).

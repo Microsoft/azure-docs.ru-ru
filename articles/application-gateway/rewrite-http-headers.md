@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 04/27/2020
 ms.author: absha
 ms.openlocfilehash: 7c5b4f0d5d4b153684683963c56b7506e76d963e
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99575659"
 ---
 # <a name="rewrite-http-headers-with-application-gateway"></a>Перезапись HTTP-заголовков с помощью шлюза приложений
@@ -164,7 +164,7 @@ ms.locfileid: "99575659"
 
 - Имена заголовков могут содержать любые буквенно-цифровые символы и специальные символы, как определено в [RFC 7230](https://tools.ietf.org/html/rfc7230#page-27). В настоящее время не поддерживается специальный символ подчеркивания ( \_ ) в именах заголовков.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о перезаписи HTTP-заголовков см. в следующих статьях:
 

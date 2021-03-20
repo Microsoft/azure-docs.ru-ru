@@ -15,10 +15,10 @@ ms.topic: article
 ms.date: 09/13/2019
 ms.author: allensu
 ms.openlocfilehash: aa2f00a732a3978524fc017481285859c9535387
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96018687"
 ---
 # <a name="understanding-azure-cdn-billing"></a>Общие сведения о выставлении счетов в Azure CDN
@@ -107,16 +107,16 @@ ms.locfileid: "96018687"
 - Служба приложений Azure.
 - Функции Azure
 - Фабрика данных Azure
-- Служба управления Azure API
+- Служба "Управление API Azure"
 - Пакетная служба Azure 
-- Azure Data Explorer
+- Обозреватель данных Azure
 - HDInsight
 - Azure Cosmos DB
 - Хранилище озера данных Azure
 - Машинное обучение Azure 
 - База данных SQL Azure
 - Управляемый экземпляр SQL Azure
-- Кэш Redis для Azure
+- Кэш Azure для Redis
 
 ## <a name="how-do-i-manage-my-costs-most-effectively"></a>Как эффективней управлять расходами?
 Установите самый длинный срок жизни для своего содержимого.

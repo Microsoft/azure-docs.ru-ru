@@ -7,10 +7,10 @@ ms.date: 01/19/2021
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: ca92e6e888ead6bbd79c7a8d524516ee95e8c45d
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101092926"
 ---
 # <a name="prepare-and-customize-a-master-vhd-image"></a>Подготовка и настройка главного образа VHD
@@ -207,7 +207,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\rdp-s
     > [!div class="mx-imgBorder"]
     > ![Снимок экрана уведомления об успешно созданном образе.](media/1f41b7192824a2950718a2b7bb9e9d69.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда у вас есть образ, можно создать или обновить пулы узлов. Дополнительные сведения о создании и обновлении пулов узлов см. в следующих статьях:
 

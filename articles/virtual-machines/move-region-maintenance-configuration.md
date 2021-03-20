@@ -8,10 +8,10 @@ ms.tgt_pltfrm: vm
 ms.date: 03/04/2020
 ms.author: shants
 ms.openlocfilehash: 91a6adecc9cf0db56fa4c433f388b05aa1bdef6a
-ms.sourcegitcommit: 2bd0a039be8126c969a795cea3b60ce8e4ce64fc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98202918"
 ---
 # <a name="move-a-maintenance-control-configuration-to-another-region"></a>Перемещение конфигурации управления обслуживанием в другой регион
@@ -24,7 +24,7 @@ ms.locfileid: "98202918"
 - Чтобы переместить ресурсы, связанные с конфигурацией обслуживания, но не самой конфигурацией, выполните следующие [инструкции](move-region-maintenance-configuration-resources.md).
 - Чтобы переместить конфигурацию обслуживания и связанные с ней ресурсы, сначала следуйте инструкциям в этой статье. Затем выполните [эти инструкции](move-region-maintenance-configuration-resources.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед началом перемещения конфигурации управления обслуживанием выполните следующие действия.
 
@@ -43,7 +43,7 @@ ms.locfileid: "98202918"
     ```
     az maintenance configuration list --subscription $subId --query "[*].{Name:name, Location:location, ResGroup:resourceGroup}" --output table
     ```
-2. Проверьте список возвращенных таблиц записей конфигурации в подписке. Ниже приведен пример. Список будет содержать значения для конкретной среды.
+2. Проверьте список возвращенных таблиц записей конфигурации в подписке. Пример приведен ниже. Список будет содержать значения для конкретной среды.
 
     **имя**; | **Расположение** | **Группа ресурсов**
     --- | --- | ---

@@ -8,10 +8,10 @@ ms.date: 09/19/2017
 ms.author: rogarana
 ms.subservice: files
 ms.openlocfilehash: bb74ab16e51fbb3a157757353d5743e889f993dd
-ms.sourcegitcommit: 9826fb9575dcc1d49f16dd8c7794c7b471bd3109
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94629705"
 ---
 # <a name="develop-for-azure-files-with-c"></a>Разработка приложений службы файлов Azure с помощью C++
@@ -77,7 +77,7 @@ azure::storage::cloud_storage_account storage_account =
   azure::storage::cloud_storage_account::parse(storage_connection_string);
 ```
 
-## <a name="create-an-azure-file-share"></a>создать файловый ресурс Azure;
+## <a name="create-an-azure-file-share"></a>Создание файлового ресурса Azure
 
 Все файлы и каталоги в службе файлов Azure находятся в контейнере, который называется **общей папкой**. Учетная запись хранения может иметь столько общих папок, насколько позволяет емкость вашей учетной записи. Чтобы получить доступ к общей папке и ее содержимому, необходимо использовать клиент файлов Azure.
 
@@ -160,7 +160,7 @@ directory.delete_directory_if_exists();
 
 ## <a name="enumerate-files-and-directories-in-an-azure-file-share"></a>Перечисление файлов и каталогов в общей папке Azure
 
-Получить список файлов и каталогов в общей папке довольно просто, вызвав метод **list_files_and_directorie** по ссылке **cloud_file_directory**. Для доступа к широкому набору свойств и методов возвращаемого объекта **list_file_and_directory_item** необходимо вызвать метод **list_file_and_directory_item.as_file** , чтобы получить объект **cloud_file** , или метод **list_file_and_directory_item.as_directory** , чтобы получить объект **cloud_file_directory**.
+Получить список файлов и каталогов в общей папке довольно просто, вызвав метод **list_files_and_directorie** по ссылке **cloud_file_directory**. Для доступа к широкому набору свойств и методов возвращаемого объекта **list_file_and_directory_item** необходимо вызвать метод **list_file_and_directory_item.as_file**, чтобы получить объект **cloud_file**, или метод **list_file_and_directory_item.as_directory**, чтобы получить объект **cloud_file_directory**.
 
 Следующий код демонстрирует, как получить и вывести URI каждого элемента в корневом каталоге общей папки.
 
@@ -218,9 +218,9 @@ azure::storage::cloud_file file4 =
 file4.upload_from_file(_XPLATSTR("DataFile.txt"));
 ```
 
-## <a name="download-a-file"></a>Скачивание файла
+## <a name="download-a-file"></a>Загрузка файла
 
-Чтобы скачать файлы, сначала извлеките ссылку на файл, а затем вызовите метод **download_to_stream** , чтобы передать содержимое файла в объект потока, который затем можно сохранить в локальный файл. Кроме того, можно использовать метод **download_to_file** , чтобы скачать содержимое файла в локальный файл. Вы можете также использовать метод **download_text** , чтобы скачать содержимое файла в виде текстовой строки.
+Чтобы скачать файлы, сначала извлеките ссылку на файл, а затем вызовите метод **download_to_stream** , чтобы передать содержимое файла в объект потока, который затем можно сохранить в локальный файл. Кроме того, можно использовать метод **download_to_file**, чтобы скачать содержимое файла в локальный файл. Вы можете также использовать метод **download_text**, чтобы скачать содержимое файла в виде текстовой строки.
 
 В следующем примере используются методы **download_to_stream** и **download_text** для демонстрации загрузки файлов, которые были созданы в предыдущих разделах.
 

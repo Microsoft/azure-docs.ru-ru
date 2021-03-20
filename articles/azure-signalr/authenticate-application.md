@@ -7,10 +7,10 @@ ms.service: signalr
 ms.topic: conceptual
 ms.date: 08/03/2020
 ms.openlocfilehash: 597b69c1180ea1fb2a6812d648f8b8ad37707d66
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101092599"
 ---
 # <a name="authenticate-an-application-with-azure-active-directory-to-access-azure-signalr-service"></a>Проверка подлинности приложения с Azure Active Directory для доступа к службе Azure SignalR
@@ -42,10 +42,10 @@ Microsoft Azure предоставляет интегрированную сис
 Приложению требуется секрет клиента для подтверждения его личности при запросе маркера. Чтобы добавить секрет клиента, выполните следующие действия.
 
 1. Перейдите к регистрации приложения в портал Azure.
-1. Выберите параметр **сертификаты & секреты** .
+1. Выберите параметр **Сертификаты и секреты**.
 1. В разделе **секреты клиента** выберите **новый секрет клиента** , чтобы создать новый секрет.
 1. Введите описание секрета и выберите желаемый интервал срока действия.
-1. Немедленно скопируйте значение нового секрета в безопасное расположение. Значение заполнения отображается только один раз.
+1. Сразу скопируйте значение нового секрета в безопасное место. Значение заполнения отображается только один раз.
 
 ![Создание секрета клиента](./media/authenticate/client-secret.png)
 
@@ -55,7 +55,7 @@ Microsoft Azure предоставляет интегрированную сис
 
 ![Отправка сертификата](./media/authenticate/certification.png)
 
-## <a name="assign-azure-roles-using-the-azure-portal"></a>Назначение ролей Azure с помощью портал Azure  
+## <a name="assign-azure-roles-using-the-azure-portal"></a>Назначение ролей Azure с помощью портала Azure  
 Дополнительные сведения об управлении доступом к ресурсам Azure с помощью Azure RBAC и портал Azure см. в [этой статье](..//role-based-access-control/role-assignments-portal.md). 
 
 Определив соответствующую область для назначения ролей, перейдите к этому ресурсу в портал Azure. Отобразить параметры управления доступом (IAM) для ресурса и выполнить следующие инструкции для управления назначениями ролей:
@@ -109,7 +109,7 @@ services.AddSignalR().AddAzureSignalR(option =>
     option.ConnectionString = "Endpoint=https://<name>.signalr.net;AuthType=aad;clientId=<clientId>;clientCert=<clientCertFilepath>;tenantId=<tenantId>";
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения о RBAC см. в статье [что такое управление доступом на основе ролей в Azure (Azure RBAC)](../role-based-access-control/overview.md)?
 - Чтобы узнать, как назначать назначения ролей Azure и управлять ими с помощью Azure PowerShell, Azure CLI или REST API, см. следующие статьи:
     - [Управление доступом на основе ролей с помощью Azure PowerShell](../role-based-access-control/role-assignments-powershell.md)  

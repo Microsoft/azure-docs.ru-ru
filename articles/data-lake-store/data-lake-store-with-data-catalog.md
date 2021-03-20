@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 05/29/2018
 ms.author: twooley
 ms.openlocfilehash: 02544489816f5711ca6e599c2bce03737c747934
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92106626"
 ---
 # <a name="register-data-from-azure-data-lake-storage-gen1-in-azure-data-catalog"></a>Регистрация данных из Azure Data Lake Storage 1-го поколения в каталоге данных Azure
@@ -35,12 +35,12 @@ ms.locfileid: "92106626"
 
     ![Регистрация источника данных](./media/data-lake-store-with-data-catalog/register-data-source.png "Регистрация источника данных")
 1. На следующей странице щелкните **Запустить приложение**. На ваш компьютер будет скачан файл манифеста приложения. Дважды щелкните этот файл манифеста, чтобы запустить приложение.
-1. На странице приветствия щелкните **Вход**и введите свои учетные данные.
+1. На странице приветствия щелкните **Вход** и введите свои учетные данные.
 
     ![Экран приветствия](./media/data-lake-store-with-data-catalog/welcome.screen.png "Экран приветствия")
 1. На странице "Выбор источника данных" выберите **Azure Data Lake Store**, а затем нажмите кнопку **Далее**.
 
-    ![Выберите источник данных](./media/data-lake-store-with-data-catalog/select-source.png "Выберите источник данных")
+    ![Выбор источника данных](./media/data-lake-store-with-data-catalog/select-source.png "Выбор источника данных")
 1. На следующей странице укажите имя учетной записи Data Lake Storage 1-го поколения, которую необходимо зарегистрировать в каталоге данных. Оставьте значения по умолчанию для остальных параметров и щелкните **Подключиться**.
 
     ![Подключиться к источнику данных](./media/data-lake-store-with-data-catalog/connect-to-source.png "Подключиться к источнику данных")

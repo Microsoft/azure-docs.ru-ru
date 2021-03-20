@@ -15,10 +15,10 @@ ms.date: 08/31/2020
 ms.author: willzhan
 ms.custom: seodec18
 ms.openlocfilehash: bb43396260e1b914f9f5b9e9ae489e87042a3154
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101092441"
 ---
 # <a name="design-of-a-multi-drm-content-protection-system-with-access-control"></a>Проектирование системы для защиты содержимого с несколькими подсистемами DRM и управлением доступом
@@ -207,7 +207,7 @@ ms.locfileid: "101092441"
     | **PlayReady** |Microsoft Edge или Internet Explorer 11 в Windows 10 |Успешно |Ошибка |
     | **Widevine** |Chrome, Firefox, Opera |Успешно |Ошибка |
     | **FairPlay** |Safari в macOS      |Успешно |Ошибка |
-    | **AES-128** |Большинство современных браузеров  |Успешно |Ошибка |
+    | **AES-128;** |Большинство современных браузеров  |Успешно |Ошибка |
 
 Дополнительные сведения о настройке Azure AD для приложения проигрывателя ASP.NET MVC см. в статье [Integrate Azure Media Services OWIN MVC based app with Azure Active Directory and restrict content key delivery based on JWT claims](http://gtrifonov.com/2015/01/24/mvc-owin-azure-media-services-ad-integration/) (Интеграция приложения на основе OWIN MVC Служб мультимедиа Azure с Azure Active Directory и ограничение доставки ключей содержимого на основе утверждений JWT).
 

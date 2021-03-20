@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.date: 12/17/2019
 ms.author: wanl
 ms.openlocfilehash: 5650ff0e039d1e9211b8d0013726e101efdfab78
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100572256"
 ---
 # <a name="resource-logs-for-azure-signalr-service"></a>Журналы ресурсов для службы SignalR Azure
 
 В этом учебнике рассматриваются журналы ресурсов для службы Azure SignalR, способы их настройки и способы устранения неполадок. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Чтобы включить журналы ресурсов, вам понадобится место для хранения данных журнала. В этом руководстве используется служба хранилища Azure и Log Analytics.
 
 * Служба [хранилища Azure](../azure-monitor/essentials/resource-logs.md#send-to-azure-storage) — сохранение журналов ресурсов для аудита политики, статического анализа или резервного копирования.
@@ -134,7 +134,7 @@ TimeGenerated | Регистрировать время события
 Коллекция | Коллекция событий журнала. Допустимые значения: `Connection` `Authorization` и `Throttling`
 OperationName | Имя операции для события
 Расположение | Расположение службы Azure SignalR
-Уровень | Уровень событий Log
+Level | Уровень событий Log
 CallerIpAddress | IP-адрес сервера или клиента
 Сообщение | Подробное сообщение о событии журнала
 UserId | Удостоверение пользователя

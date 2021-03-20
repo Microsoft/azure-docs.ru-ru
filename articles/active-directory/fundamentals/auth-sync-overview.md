@@ -14,10 +14,10 @@ ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ab63bc5bd2819a239741da525eebb2404a47bbf9
-ms.sourcegitcommit: 9b8425300745ffe8d9b7fbe3c04199550d30e003
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92441204"
 ---
 # <a name="azure-active-directory-integrations-with-authentication-and-synchronization-protocols"></a>Интеграция Azure Active Directory с протоколами проверки подлинности и синхронизации

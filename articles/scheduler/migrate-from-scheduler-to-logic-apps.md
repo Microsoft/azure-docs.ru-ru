@@ -10,10 +10,10 @@ ms.reviewer: klam, estfan
 ms.topic: article
 ms.date: 02/29/2020
 ms.openlocfilehash: 0e9ca2c7b5d15fcc6be451bbe215c8b85d5309eb
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92368270"
 ---
 # <a name="migrate-azure-scheduler-jobs-to-azure-logic-apps"></a>Перемещение заданий из планировщика Azure в Azure Logic Apps

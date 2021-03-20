@@ -7,10 +7,10 @@ ms.date: 02/14/2020
 ms.author: cshoe
 ms.custom: fasttrack-edit
 ms.openlocfilehash: 115ff1b59ecbe3f4fdb089c2bd61da955fba3984
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92104552"
 ---
 # <a name="azure-event-grid-bindings-for-azure-functions"></a>Привязки службы "Сетка событий Azure" для функций Azure
@@ -23,7 +23,7 @@ ms.locfileid: "92104552"
 
 При желании можно использовать триггер HTTP для управления событиями сетки событий. см. раздел [получение событий для конечной точки HTTP](../event-grid/receive-events.md). В настоящее время нельзя использовать триггер службы "Сетка событий" для приложения "функции Azure", когда событие доставляется в [схему клаудевентс](../event-grid/cloudevents-schema.md#azure-functions). В этом случае необходимо использовать триггер HTTP.
 
-| Действие | Тип |
+| Действие | Type |
 |---------|---------|
 | Выполнение функции при диспетчеризации события сетки событий | [Триггер](./functions-bindings-event-grid-trigger.md) |
 | Отправляет событие сетки событий |[Выходная привязка](./functions-bindings-event-grid-output.md) |
@@ -36,7 +36,7 @@ ms.locfileid: "92104552"
 
 Для работы с триггером и привязками требуется ссылка на соответствующий пакет. Пакет NuGet используется для библиотек классов .NET, в то время как набор расширений используется для всех других типов приложений.
 
-| Язык                                        | Добавить по...                                   | Комментарии 
+| Язык                                        | Добавить по...                                   | Remarks 
 |-------------------------------------------------|---------------------------------------------|-------------|
 | C#                                              | Установка [пакета NuGet]версии 2. x | |
 | Скрипт C#, Java, JavaScript, Python, PowerShell | Регистрация [пакета расширений]          | [Расширение "инструменты Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) " рекомендуется использовать с Visual Studio Code. |

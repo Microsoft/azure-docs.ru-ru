@@ -11,10 +11,10 @@ ms.reviewer: vanto
 ms.custom: sqldbrb=1
 ms.date: 06/03/2020
 ms.openlocfilehash: f5c176db4f679c79bb42c6ceb46b3588e9440874
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100572222"
 ---
 # <a name="sql-database-audit-log-format"></a>Формат журнала аудита базы данных SQL
@@ -38,11 +38,11 @@ ms.locfileid: "100572222"
 
 ### <a name="event-hub"></a>Концентратор событий
 
-События аудита записываются в пространство имен и концентратор событий, которые были определены во время настройки аудита, и фиксируются в теле событий [Apache Avro](https://avro.apache.org/) и хранятся с помощью форматирования JSON в кодировке UTF-8. Для чтения журналов аудита можете использовать [средства Avro](../../event-hubs/event-hubs-capture-overview.md#use-avro-tools) или похожие средства, которые поддерживают данный формат.
+События аудита записываются в пространство имен и концентратор событий, которые были определены во время настройки аудита. Они фиксируются в теле событий [Apache Avro](https://avro.apache.org/) и сохраняются с использованием форматирования JSON в кодировке UTF-8. Для чтения журналов аудита можете использовать [средства Avro](../../event-hubs/event-hubs-capture-overview.md#use-avro-tools) или похожие средства, которые поддерживают данный формат.
 
 ### <a name="log-analytics"></a>Log Analytics
 
-События аудита записываются в Log Analytics рабочую область, определенную во время настройки аудита, в `AzureDiagnostics` таблицу с категорией `SQLSecurityAuditEvents` . Дополнительную полезную информацию о языке поиска и командах Log Analytics см. в [документации по поиску Log Analytics](../../azure-monitor/logs/log-query-overview.md).
+События аудита записываются в рабочую область Log Analytics, определенную во время настройки аудита, в таблицу `AzureDiagnostics` с категорией `SQLSecurityAuditEvents`. Дополнительную полезную информацию о языке поиска и командах Log Analytics см. в [документации по поиску Log Analytics](../../azure-monitor/logs/log-query-overview.md).
 
 ## <a name="audit-log-fields"></a><a id="subheading-1"></a>Поля журнала аудита
 
@@ -57,7 +57,7 @@ ms.locfileid: "100572222"
 | class_type | class_type_s | Тип проверяемой сущности, на которой выполняется аудит | varchar(2) | строка |
 | class_type_desc | class_type_description_s | Описание проверяемой сущности, на которой выполняется аудит | Н/Д | строка |
 | client_ip | client_ip_s | Исходный IP-адрес клиентского приложения | NVARCHAR(128) | строка |
-| connection_id | Н/Д | Идентификатор соединения на сервере | Идентификатор GUID | Н/Д |
+| connection_id | Н/Д | Идентификатор соединения на сервере | Код GUID | Н/Д |
 | data_sensitivity_information | data_sensitivity_information_s | Типы сведений и метки чувствительности, возвращаемые отслеживаемым запросом, на основе классифицированных столбцов в базе данных. Дополнительные сведения об [обнаружении и классификации данных в базе данных SQL Azure](data-discovery-and-classification-overview.md) | nvarchar(4000) | строка |
 | database_name | database_name_s | Контекст базы данных, в котором произошло действие | sysname | строка |
 | database_principal_id | database_principal_id_d | Идентификатор контекста пользователя базы данных, в котором выполняется действие | INT | INT |
@@ -73,7 +73,7 @@ ms.locfileid: "100572222"
 | response_rows | response_rows_d | Число строк, возвращенных в результирующем наборе | BIGINT | INT |
 | schema_name | schema_name_s | Контекст схемы, в котором выполнялось действие. Значение NULL для аудитов, происходящих за пределами схемы | sysname | строка |
 | Н/Д | securable_class_type_s | Защищаемый объект, сопоставляемый с class_type аудита | Н/Д | строка |
-| sequence_group_id | sequence_group_id_g | Уникальный идентификатор | varbinary | Идентификатор GUID |
+| sequence_group_id | sequence_group_id_g | Уникальный идентификатор | varbinary | Код GUID |
 | sequence_number | sequence_number_d | Отслеживает последовательность записей в одной записи аудита, которая слишком велика для размещения в буфере записи для аудита | INT | INT |
 | server_instance_name | server_instance_name_s | Имя экземпляра сервера, на котором произошел аудит | sysname | строка |
 | server_principal_id | server_principal_id_d | Идентификатор контекста имени входа, в котором выполняется действие | INT | INT |
@@ -92,6 +92,6 @@ ms.locfileid: "100572222"
 | user_defined_event_id | user_defined_event_id_d | Определяемый пользователем идентификатор события, передаваемый в качестве аргумента для sp_audit_write. NULL для системных событий (по умолчанию) и ненулевое значение для определяемого пользователем события. Дополнительные сведения см. в разделе [sp_audit_write (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-audit-write-transact-sql) . | smallint | INT |
 | user_defined_information | user_defined_information_s | Определяемые пользователем сведения, передаваемые в качестве аргумента для sp_audit_write. NULL для системных событий (по умолчанию) и ненулевое значение для определяемого пользователем события. Дополнительные сведения см. в разделе [sp_audit_write (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-audit-write-transact-sql) . | nvarchar(4000) | строка |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об [аудите базы данных SQL Azure](auditing-overview.md).

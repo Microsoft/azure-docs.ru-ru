@@ -8,10 +8,10 @@ ms.date: 06/03/2020
 ms.author: rogarana
 ms.subservice: files
 ms.openlocfilehash: 76d97e3312c1df51193d8a881f3ee07fcd155d75
-ms.sourcegitcommit: 9826fb9575dcc1d49f16dd8c7794c7b471bd3109
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94629365"
 ---
 # <a name="azure-file-sync-networking-considerations"></a>Рекомендации по настройке сети для службы "Синхронизация файлов Azure"
@@ -172,4 +172,4 @@ IP4Address : 52.239.194.40
 
 ## <a name="see-also"></a>См. также раздел
 - [Планирование развертывания службы синхронизации файлов Azure (предварительная версия)](storage-sync-files-planning.md)
-- [Как развернуть службу синхронизации файлов Azure (предварительная версия)](storage-sync-files-deployment-guide.md)
+- [Развертывание Синхронизации файлов Azure](storage-sync-files-deployment-guide.md)

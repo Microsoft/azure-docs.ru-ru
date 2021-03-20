@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 08/01/2019
 ms.author: jingwang
 ms.openlocfilehash: 534a7cd8c9a40a807d05ef40b084a7c73c0a7710
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100378474"
 ---
 # <a name="copy-data-from-magento-using-azure-data-factory-preview"></a>Копирование данных из Magento с помощью фабрики данных Azure (предварительная версия)
@@ -42,7 +42,7 @@ ms.locfileid: "100378474"
 
 Для связанной службы Magento поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства type необходимо задать значение **Magento**. | Да |
 | host | URL-адрес экземпляра Magento (192.168.222.110/magento3).  | Да |

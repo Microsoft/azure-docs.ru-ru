@@ -8,10 +8,10 @@ ms.date: 01/23/2017
 ms.author: yegu
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 7643f882d5ac330046c169e0a3f2fa4920331d4e
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92537700"
 ---
 # <a name="how-to-create-and-manage-azure-cache-for-redis-using-the-azure-classic-cli"></a>Создание кэша Azure для Redis и управление им с помощью классического Azure CLI
@@ -26,7 +26,7 @@ ms.locfileid: "92537700"
 > [!NOTE]
 > Последние примеры сценариев Azure CLI для кэша Azure для Redis см. в [этой статье](cli-samples.md).
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 Для создания экземпляров кэша Azure для Redis и управления ими с помощью классического Azure CLI необходимо выполнить следующие действия.
 
 * Необходимо иметь учетную запись Azure. Если ее нет, можно создать [бесплатную учетную запись](https://azure.microsoft.com/pricing/free-trial/) всего за пару минут.
@@ -42,7 +42,7 @@ ms.locfileid: "92537700"
 | name |-n, --name |Имя кэша Azure для Redis. |
 | resource group |-g, --resource-group |Имя группы ресурсов. |
 | location |-l, --location |Расположение для создания кэша. |
-| размер; |-z, --size |Размер кэша Azure для Redis. Допустимые значения: [C0, C1, C2, C3, C4, C5, C6, P1, P2, P3, P4] |
+| size |-z, --size |Размер кэша Azure для Redis. Допустимые значения: [C0, C1, C2, C3, C4, C5, C6, P1, P2, P3, P4] |
 | sku |-x, --sku |Номер SKU Redis. Должен иметь одно из этих значений: [Basic, Standard, Premium] |
 | EnableNonSslPort |-e, --enable-non-ssl-port |Свойство EnableNonSslPort кэша Azure для Redis. Добавьте этот флаг, если вы хотите включить для кэша порт, не поддерживающий протокол TLS/SSL. |
 | Конфигурация Redis |-c, --redis-configuration |Конфигурация Redis. Введите строку ключей и значений конфигурации в формате JSON. Формат:"{"":"","":""}" |

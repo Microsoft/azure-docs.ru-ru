@@ -8,17 +8,17 @@ ms.date: 03/23/2020
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
 ms.openlocfilehash: 99c02644649e133a7634418a5edaaf228d52f0d3
-ms.sourcegitcommit: 2bd0a039be8126c969a795cea3b60ce8e4ce64fc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98201286"
 ---
 # <a name="azure-security-baseline-for-azure-database-for-mariadb"></a>Базовый план безопасности Azure для базы данных Azure для MariaDB
 
 Базовый план безопасности Azure для базы данных Azure для MariaDB содержит рекомендации, которые помогут повысить уровень безопасности развертывания.
 
-Базовый план безопасности для этой службы взят из [Эталона безопасности Azure версии 1.0](../security/benchmarks/overview.md), содержащего рекомендации по обеспечению безопасности облачных решений в Azure с помощью наших практических рекомендаций.
+Базовая конфигурация безопасности для этой службы взята из [теста производительности системы Azure версии 1.0](../security/benchmarks/overview.md), содержащего рекомендации по обеспечению безопасности облачных решений в Azure с помощью наших практических рекомендаций.
 
 Дополнительные сведения см. в статье [Обзор базовой конфигурации безопасности Azure](../security/benchmarks/security-baselines-overview.md).
 

@@ -10,10 +10,10 @@ services: time-series-insights
 ms.date: 10/02/2020
 ms.custom: seodec18
 ms.openlocfilehash: b5ecbabe4a5c3458c77d145fbce1281550470e00
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96019078"
 ---
 # <a name="summary-of-customer-data-request-features"></a>Сводка о возможностях запроса данных клиента
@@ -66,7 +66,7 @@ ms.locfileid: "96019078"
 
 Дополнительные сведения см. [в статье Настройка хранения в аналитике временных рядов](time-series-insights-how-to-configure-retention.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте больше о [предоставлении доступа к данным в среду службы "аналитика временных рядов Azure](./concepts-access-policies.md)".
 

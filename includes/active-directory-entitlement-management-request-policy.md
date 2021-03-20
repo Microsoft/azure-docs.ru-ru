@@ -9,10 +9,10 @@ ms.date: 03/30/2020
 ms.author: ajburnle
 ms.custom: include file
 ms.openlocfilehash: 61858a478ead93b3709bb3e05c26335c9acbc24d
-ms.sourcegitcommit: 77afc94755db65a3ec107640069067172f55da67
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98698085"
 ---
 ## <a name="for-users-in-your-directory"></a>Для пользователей в вашем каталоге
@@ -208,7 +208,7 @@ ms.locfileid: "98698085"
 
     ![Снимок экрана, на котором показан параметр для включения новых запросов и назначений.](./media/active-directory-entitlement-management-request-policy/enable-requests.png)
 
-1. Нажмите кнопку **Далее**.
+1. Щелкните **Далее**.
 
 ## <a name="add-requestor-information-preview-to-an-access-package"></a>Добавление сведений о запрашивающем этапе (Предварительная версия) в пакет Access
 

@@ -15,10 +15,10 @@ ms.author: curtand
 ms.custom: pim ; H1Hack27Feb2017
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4662e9fb537a93cb87c554e319256e2eca40d2e7
-ms.sourcegitcommit: 28c5fdc3828316f45f7c20fc4de4b2c05a1c5548
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92372435"
 ---
 # <a name="discovery-and-insights-preview-for-azure-ad-roles-formerly-security-wizard"></a>Обнаружение и аналитика (Предварительная версия) для ролей Azure AD (прежнее название — Мастер безопасности)
@@ -65,7 +65,7 @@ ms.locfileid: "92372435"
 
     ![Дополнительные параметры Insights для устранения ограниченного доступа и проверки субъектов-служб ](./media/pim-security-wizard/new-preview-page-service-principals.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Назначение ролей Azure AD в управление привилегированными пользователями](pim-how-to-add-role-to-user.md)
 - [Предоставление другим администраторам доступа для управления управление привилегированными пользователями](pim-how-to-give-access-to-pim.md)

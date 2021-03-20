@@ -6,10 +6,10 @@ ms.topic: reference
 ms.date: 07/03/2019
 ms.subservice: application-insights
 ms.openlocfilehash: 0a18088fa434efa76007607c067feec107bdae57
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100572355"
 ---
 # <a name="application-insights-standard-metrics"></a>Application Insights стандартных метрик
@@ -56,31 +56,31 @@ ms.locfileid: "100572355"
 
 |Единица измерения|Поддерживаемые агрегаты| Поддерживаемые измерения|
 |---|---|---|
-|Миллисекунды|Average, min, Max|None|
+|Миллисекунды|Average, min, Max|Нет|
 
 ### <a name="client-processing-time-browsertimingprocessingduration"></a>Время обработки клиента (Бровсертиминг/Процессингдуратион)
 
 |Единица измерения|Поддерживаемые агрегаты|Поддерживаемые измерения|
 |---|---|---|
-|Миллисекунды|Average, min, Max|None|
+|Миллисекунды|Average, min, Max|Нет|
 
 ### <a name="page-load-network-connect-time-browsertimingsnetworkduration"></a>Время подключения к сети на странице (Бровсертимингс/Нетворкдуратион)
 
 |Единица измерения|Поддерживаемые агрегаты| Поддерживаемые измерения|
 |---|---|---|
-|Миллисекунды|Average, min, Max|None|
+|Миллисекунды|Average, min, Max|Нет|
 
 ### <a name="receiving-response-time-browsertimingsreceiveduration"></a>Получение времени ответа (Бровсертимингс/Рецеиведуратион)
 
 |Единица измерения|Поддерживаемые агрегаты| Поддерживаемые измерения|
 |---|---|---|
-|Миллисекунды|Average, min, Max|None|
+|Миллисекунды|Average, min, Max|Нет|
 
 ### <a name="send-request-time-browsertimingssendduration"></a>Время запроса на отправку (Бровсертимингс/Сенддуратион)
 
 |Единица измерения|Поддерживаемые агрегаты| Поддерживаемые измерения|
 |---|---|---|
-|Миллисекунды|Average, min, Max|None|
+|Миллисекунды|Average, min, Max|Нет|
 
 ## <a name="failure-metrics"></a>Метрики сбоев
 
@@ -270,7 +270,7 @@ ms.locfileid: "100572355"
 | Count | Count | `Cloud role instance`, `Cloud role name`,  `Is traffic synthetic`, `Severity level` |
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Сведения об [метриках на основе журналов и предварительно агрегированных](./pre-aggregated-metrics-log-metrics.md)данных.
 * [Запросы и определения метрик на основе журнала](../essentials/app-insights-metrics.md).

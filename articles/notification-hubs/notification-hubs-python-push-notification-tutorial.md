@@ -18,10 +18,10 @@ ms.reviewer: jowargo
 ms.lastreviewed: 01/04/2019
 ms.custom: devx-track-python
 ms.openlocfilehash: f81614005a1b0374dc249187c4ff3c920b7c97e9
-ms.sourcegitcommit: 6906980890a8321dec78dd174e6a7eb5f5fcc029
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92424839"
 ---
 # <a name="how-to-use-notification-hubs-from-python"></a>Использование концентраторов уведомлений с Python
@@ -33,7 +33,7 @@ ms.locfileid: "92424839"
 > [!NOTE]
 > Это образец эталонной реализации для отправки уведомлений в Python, который не является официально поддерживаемым пакетом SDK концентраторов уведомлений Python. Этот образец был создан с помощью Python 3.4.
 
-В этой статье показано, как выполнить следующие действия:
+В этой статье показано, как:
 
 - Построение клиента REST для функций концентраторов уведомлений на языке Python.
 - Отправка уведомлений с помощью интерфейса API REST концентратора уведомления Python.
@@ -446,7 +446,7 @@ hub.send_template_notification(template_payload)
 
 ![Снимок экрана консоли с подробными сведениями о запросе H T T, типом содержимого и значениями формата уведомлений служебной шины, выделенными красным цветом.][5]
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье рассмотрено создание простого клиента REST Python для службы "Центры уведомлений". Здесь можно выполнять следующие действия:
 

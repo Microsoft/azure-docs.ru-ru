@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 02/24/2021
 ms.author: alkohli
 ms.openlocfilehash: 13de2b024bf4541c6234dd6bfba601597de59434
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101716233"
 ---
 # <a name="deployment-checklist-for-your-azure-stack-edge-pro-gpu-device"></a>Контрольный список развертывания для устройства GPU Azure Stack с пограничными Pro  

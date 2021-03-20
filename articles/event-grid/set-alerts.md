@@ -4,10 +4,10 @@ description: В этой статье описывается создание о
 ms.topic: conceptual
 ms.date: 07/07/2020
 ms.openlocfilehash: 48cb402e31435cb3e9390e8aeb461fcc5f90702f
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100572018"
 ---
 # <a name="set-alerts-on-azure-event-grid-metrics-and-activity-logs"></a>Настройка оповещений для метрик службы "Сетка событий Azure" и журналов действий
@@ -73,7 +73,7 @@ ms.locfileid: "100572018"
 > [!NOTE]
 > В этой статье не рассматриваются все действия и сочетания, которые можно использовать для создания оповещения. Общие сведения об оповещениях см. в разделе [Общие сведения об оповещениях](../azure-monitor/alerts/alerts-metric.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * См. дополнительные сведения о [доставке сообщений и повторных попытках в Сетке событий](delivery-and-retry.md).
 * Общие сведения о службе "Сетка событий" см. в разделе [Общие сведения о службе "Сетка событий Azure"](overview.md).

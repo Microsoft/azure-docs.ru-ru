@@ -12,10 +12,10 @@ ms.custom: mvc
 ms.topic: reference
 ms.date: 03/03/2020
 ms.openlocfilehash: 258874ffdbc471305b76f7d52406d2f45e708829
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99575743"
 ---
 # <a name="services-and-tools-available-for-data-migration-scenarios"></a>Доступные службы и средства для сценариев переноса данных
@@ -39,8 +39,8 @@ ms.locfileid: "99575743"
 | Oracle; | База данных SQL Azure, Управляемый экземпляр, виртуальная машина | [MAP Toolkit](/previous-versions//bb977556(v=technet.10))<br/>[Миграция Azure](https://azure.microsoft.com/services/azure-migrate/) | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017)<br/>[MigVisor*](https://www.migvisor.com/) |  |
 | Oracle; | Azure Synapse Analytics | [MAP Toolkit](/previous-versions//bb977556(v=technet.10))<br/>[Миграция Azure](https://azure.microsoft.com/services/azure-migrate/) | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017) |  |
 | Oracle; | База данных Azure для PostgreSQL —<br/>Отдельный сервер | [MAP Toolkit](/previous-versions//bb977556(v=technet.10))<br/>[Миграция Azure](https://azure.microsoft.com/services/azure-migrate/) |  |  |
-| MongoDB | Cosmos DB | [Cloudamize](https://www.cloudamize.com/) | [Cloudamize](https://www.cloudamize.com/) |  |
-| Cassandra | Cosmos DB |  |  |  |
+| MongoDB | Cosmos DB | [Cloudamize](https://www.cloudamize.com/) | [Cloudamize](https://www.cloudamize.com/) |  |
+| Cassandra | Cosmos DB |  |  |  |
 | MySQL | База данных SQL Azure, Управляемый экземпляр, виртуальная машина | [Миграция Azure](https://azure.microsoft.com/services/azure-migrate/) | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017)<br/>[Cloud Atlas*](https://www.unifycloud.com/cloud-migration-tool/) | [Калькулятор совокупной стоимости владения](https://azure.microsoft.com/pricing/tco/calculator/) |
 | MySQL | База данных Azure для MySQL | [Миграция Azure](https://azure.microsoft.com/services/azure-migrate/) |  | [Калькулятор совокупной стоимости владения](https://azure.microsoft.com/pricing/tco/calculator/) |
 | RDS MySQL | База данных Azure для MySQL |  |  | [Калькулятор совокупной стоимости владения](https://azure.microsoft.com/pricing/tco/calculator/) |
@@ -64,8 +64,8 @@ ms.locfileid: "99575743"
 | Oracle; | База данных SQL Azure, Управляемый экземпляр, виртуальная машина | [Дамт](https://marketplace.visualstudio.com/items?itemName=ms-databasemigration.data-access-migration-toolkit)  /  [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017) | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017) |  |
 | Oracle; | Azure Synapse Analytics | [Дамт](https://marketplace.visualstudio.com/items?itemName=ms-databasemigration.data-access-migration-toolkit)  /  [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017) | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017) |  |
 | Oracle; | База данных Azure для PostgreSQL —<br/>Отдельный сервер |  | [Ora2Pg*](http://ora2pg.darold.net/start.html) |  |
-| MongoDB | Cosmos DB |  | [Cloudamize](https://www.cloudamize.com/) | [Cloudamize](https://www.cloudamize.com/) |
-| Cassandra | Cosmos DB |  |  |  |
+| MongoDB | Cosmos DB |  | [Cloudamize](https://www.cloudamize.com/) | [Cloudamize](https://www.cloudamize.com/) |
+| Cassandra | Cosmos DB |  |  |  |
 | MySQL | База данных SQL Azure, Управляемый экземпляр, виртуальная машина | [Дамт](https://marketplace.visualstudio.com/items?itemName=ms-databasemigration.data-access-migration-toolkit)  /  [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017) | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017)<br/>[Cloud Atlas*](https://www.unifycloud.com/cloud-migration-tool/) |  |
 | MySQL | База данных Azure для MySQL |  |  |  |
 | RDS MySQL | База данных Azure для MySQL |  |  |  |
@@ -89,8 +89,8 @@ ms.locfileid: "99575743"
 | Oracle; | База данных SQL Azure, Управляемый экземпляр, виртуальная машина | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017)<br/>[SharePlex*](https://www.quest.com/products/shareplex/)<br/>[Испирер *](https://www.ispirer.com/solutions) | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017)<br/>[SharePlex*](https://www.quest.com/products/shareplex/)<br/>[Испирер *](https://www.ispirer.com/solutions) | [DMS](https://azure.microsoft.com/services/database-migration/)<br/>[SharePlex*](https://www.quest.com/products/shareplex/)<br/>[Attunity](https://www.attunity.com/products/replicate/)<br/>[Striim*](https://www.striim.com/partners/striim-for-microsoft-azure/) |
 | Oracle; | Azure Synapse Analytics | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017)<br/>[Испирер *](https://www.ispirer.com/solutions) | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017)<br/>[Испирер *](https://www.ispirer.com/solutions) | [DMS](https://azure.microsoft.com/services/database-migration/)<br/>[SharePlex*](https://www.quest.com/products/shareplex/)<br/>[Attunity](https://www.attunity.com/products/replicate/)<br/>[Striim*](https://www.striim.com/partners/striim-for-microsoft-azure/) |
 | Oracle; | База данных Azure для PostgreSQL —<br/>Отдельный сервер | [Испирер *](https://www.ispirer.com/solutions) | [Испирер *](https://www.ispirer.com/solutions) | [DMS](https://azure.microsoft.com/services/database-migration/) |
-| MongoDB | Cosmos DB | [DMS](https://azure.microsoft.com/services/database-migration/)<br/>[Cloudamize](https://www.cloudamize.com/)<br/>[Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview) | [DMS](https://azure.microsoft.com/services/database-migration/)<br/>[Cloudamize](https://www.cloudamize.com/)<br/>[Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview) | [DMS](https://azure.microsoft.com/services/database-migration/)<br/>[Cloudamize](https://www.cloudamize.com/)<br/>[Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview)<br/>[Striim*](https://www.striim.com/partners/striim-for-microsoft-azure/) |
-| Cassandra | Cosmos DB | [Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview) | [Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview) | [Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview) |
+| MongoDB | Cosmos DB | [DMS](https://azure.microsoft.com/services/database-migration/)<br/>[Cloudamize](https://www.cloudamize.com/)<br/>[Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview) | [DMS](https://azure.microsoft.com/services/database-migration/)<br/>[Cloudamize](https://www.cloudamize.com/)<br/>[Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview) | [DMS](https://azure.microsoft.com/services/database-migration/)<br/>[Cloudamize](https://www.cloudamize.com/)<br/>[Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview)<br/>[Striim*](https://www.striim.com/partners/striim-for-microsoft-azure/) |
+| Cassandra | Cosmos DB | [Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview) | [Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview) | [Imanis Data*](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/talena-inc.talena-solution-template?tab=Overview) |
 | MySQL | База данных SQL Azure, Управляемый экземпляр, виртуальная машина | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017)<br/>[Испирер *](https://www.ispirer.com/solutions) | [SSMA](/sql/ssma/sql-server-migration-assistant?view=sql-server-2017)<br/>[Испирер *](https://www.ispirer.com/solutions) | [Attunity](https://www.attunity.com/products/replicate/)<br/>[Striim*](https://www.striim.com/partners/striim-for-microsoft-azure/) |
 | MySQL | База данных Azure для MySQL | [mysqldump*](https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html) |  | [DMS](https://azure.microsoft.com/services/database-migration/)<br/>[Attunity](https://www.attunity.com/products/replicate/)<br/>[Striim*](https://www.striim.com/partners/striim-for-microsoft-azure/) |
 | RDS MySQL | База данных Azure для MySQL | [mysqldump*](https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html) |  | [DMS](https://azure.microsoft.com/services/database-migration/)<br/>[Attunity](https://www.attunity.com/products/replicate/)<br/>[Striim*](https://www.striim.com/partners/striim-for-microsoft-azure/) |
@@ -114,8 +114,8 @@ ms.locfileid: "99575743"
 | Oracle; | База данных SQL Azure, Управляемый экземпляр, виртуальная машина |  |
 | Oracle; | Azure Synapse Analytics |  |
 | Oracle; | База данных Azure для PostgreSQL —<br/>Отдельный сервер |  |
-| MongoDB | Cosmos DB | [Cloudamize](https://www.cloudamize.com/) |
-| Cassandra | Cosmos DB |  |
+| MongoDB | Cosmos DB | [Cloudamize](https://www.cloudamize.com/) |
+| Cassandra | Cosmos DB |  |
 | MySQL | База данных SQL Azure, Управляемый экземпляр, виртуальная машина |  |
 | MySQL | База данных Azure для MySQL |  |
 | RDS MySQL | База данных Azure для MySQL |  |
@@ -127,6 +127,6 @@ ms.locfileid: "99575743"
 | Sybase — SAP IQ | База данных SQL Azure, Управляемый экземпляр, виртуальная машина |  |
 | | | |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Общие сведения о Azure Database Migration Service см. в статье [что такое Azure Database Migration Service](dms-overview.md).

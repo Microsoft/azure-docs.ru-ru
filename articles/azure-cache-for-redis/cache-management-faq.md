@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.custom: devx-track-csharp
 ms.date: 08/06/2020
 ms.openlocfilehash: 15c7ed4ca9d04e4bb314eea8b92bef749d2369b1
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92537666"
 ---
 # <a name="azure-cache-for-redis-management-faqs"></a>Вопросы и ответы по управлению кэшем Azure для Redis
 В этой статье содержатся ответы на часто задаваемые вопросы об управлении кэшем Azure для Redis.
 
-## <a name="common-questions-and-answers"></a>Общие вопросы и ответы
+## <a name="common-questions-and-answers"></a>Частые вопросы и ответы
 В этом разделе рассматриваются следующие вопросы и ответы:
 
 * [Когда следует включать порт, не являющийся портом TLS/SSL, для подключения к Redis?](#when-should-i-enable-the-non-tlsssl-port-for-connecting-to-redis)
@@ -147,7 +147,7 @@ WORKER: (Busy=3,Free=997,Min=4,Max=1000)
 * Кроме того, можно указать минимальное число потоков с помощью [параметра конфигурации *minIoThreads* или *minWorkerThreads*](/previous-versions/dotnet/netframework-4.0/7w2sway1(v=vs.100)) в элементе конфигурации `<processModel>` в `Machine.config`, обычно расположенном в `%SystemRoot%\Microsoft.NET\Framework\[versionNumber]\CONFIG\`. **Установка минимального числа потоков таким способом обычно не рекомендуется, так как это параметр на уровне системы.**
 
   > [!NOTE]
-  > В этом элементе конфигурации задается параметр *per-core* . Например, если у вас 4-ядерный компьютер и вы хотите установить для параметра *minIOThreads* значение 200 во время выполнения, то можно использовать `<processModel minIoThreads="50"/>`.
+  > В этом элементе конфигурации задается параметр *per-core*. Например, если у вас 4-ядерный компьютер и вы хотите установить для параметра *minIOThreads* значение 200 во время выполнения, то можно использовать `<processModel minIoThreads="50"/>`.
   >
 
 ### <a name="enable-server-gc-to-get-more-throughput-on-the-client-when-using-stackexchangeredis"></a>Включение сборки мусора сервера для получения более высокой пропускной способности на стороне клиента при использовании StackExchange.Redis

@@ -13,10 +13,10 @@ ms.custom: ''
 ms.topic: how-to
 ms.date: 12/16/2020
 ms.openlocfilehash: 7f09db2e1f98d48e91dfea2642969ff4ca360967
-ms.sourcegitcommit: 77afc94755db65a3ec107640069067172f55da67
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98697830"
 ---
 # <a name="migrate-sql-server-to-sql-managed-instance-online-with-powershell--azure-database-migration-service"></a>Миграция SQL Server в SQL Управляемый экземпляр в сети с помощью PowerShell & Azure Database Migration Service
@@ -36,7 +36,7 @@ ms.locfileid: "98697830"
 В этой статье приводятся шаги для оперативной миграции, но можно также выполнить миграцию в [автономном режиме](howto-sql-server-to-azure-sql-managed-instance-powershell-offline.md).
 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для выполнения этих действий вам потребуется следующее:
 
@@ -355,6 +355,6 @@ Remove-AzDms -ResourceGroupName myResourceGroup -ServiceName MyDMS
 
 Дополнительные сведения о дополнительных сценариях миграции (пары "источник — Целевая версия") см. в разделе [руководств по миграции баз данных](https://datamigration.microsoft.com/)Майкрософт.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте больше о Azure Database Migration Service в статье [что такое Azure Database Migration Service?](./dms-overview.md).

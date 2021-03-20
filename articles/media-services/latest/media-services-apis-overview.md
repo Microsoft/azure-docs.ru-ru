@@ -1,6 +1,6 @@
 ---
 # <a name="mandatory-fields-see-more-on-akamsskyeyemeta"></a>Обязательные поля. Дополнительные сведения см. на aka.ms/skyeye/meta.
-Title: Разработка с помощью API V3: Описание служб мультимедиа Azure: сведения о правилах, применяемых к сущностям и API при разработке с помощью служб мультимедиа v3. службы: мультимедиа-службы documentationcenter: ' ' author: Ингридатмикрософт Manager: femila Editor редактор: ' '
+Title: Разработка с помощью API V3: Описание служб мультимедиа Azure: сведения о правилах, применяемых к сущностям и API при разработке с помощью служб мультимедиа v3. services: media-services documentationcenter: '' author: IngridAtMicrosoft manager: femila editor: ''
 
 MS. Service: мультимедиа-службы MS. Рабочая нагрузка: MS. Topic: концептуальная МС. Дата: 10/23/2020 MS. author: инхенкел MS. Custom: seodec18
 

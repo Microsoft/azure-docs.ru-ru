@@ -12,10 +12,10 @@ ms.author: dfurman
 ms.reviewer: sstein
 ms.date: 09/16/2020
 ms.openlocfilehash: 40b6c5a86184860cf3e7a9840f980706485ae977
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100572230"
 ---
 # <a name="resource-management-in-dense-elastic-pools"></a>Управление ресурсами в сжатых эластичных пулах
@@ -139,7 +139,7 @@ CROSS JOIN (
 ;
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Общие сведения о эластичных пулах см. [в разделе эластичные пулы помогают управлять и масштабировать несколько баз данных в базе данных SQL Azure](./elastic-pool-overview.md).
 - Сведения о настройке рабочих нагрузок запросов для уменьшения использования ресурсов см. в разделе [мониторинг и настройка]( https://docs.microsoft.com/azure/sql-database/sql-database-monitoring-tuning-index), [мониторинг и настройка производительности](./monitor-tune-overview.md).

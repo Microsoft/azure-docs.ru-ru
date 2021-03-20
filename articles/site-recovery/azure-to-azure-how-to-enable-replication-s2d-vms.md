@@ -6,10 +6,10 @@ manager: rochakm
 ms.topic: how-to
 ms.date: 01/29/2019
 ms.openlocfilehash: f438fadb73f7e3bd25cd7ab9aef0bc46285e30e2
-ms.sourcegitcommit: 6906980890a8321dec78dd174e6a7eb5f5fcc029
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92424821"
 ---
 # <a name="replicate-azure-vms-running-storage-spaces-direct-to-another-region"></a>Репликация виртуальных машин Azure, работающих Локальные дисковые пространства, в другой регион
@@ -80,7 +80,7 @@ ms.locfileid: "92424821"
 3.  Выберите **Тестовая отработка отказа**.
 4.  Чтобы запустить тестовую отработку отказа, выберите точку восстановления и виртуальную сеть Azure.
 5.  После запуска вторичной среды можно выполнить проверку.
-6.  После завершения проверки выберите **Очистить тестовую отработку отказа**, чтобы очистить среду отработки отказа.
+6.  После завершения проверок нажмите кнопку **очистить тестовую отработку отказа**, чтобы очистить среду отработки отказа.
 
 Дополнительные сведения см. в статье [Тестовая отработка отказа в Azure с помощью Site Recovery](site-recovery-test-failover-to-azure.md).
 

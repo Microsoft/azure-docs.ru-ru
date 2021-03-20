@@ -12,10 +12,10 @@ ms.custom:
 - mqtt
 - 'Role: Cloud Development'
 ms.openlocfilehash: fff4b9157c30203f47c65a74b211e3dbf6426d92
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101093032"
 ---
 # <a name="understand-and-use-device-twins-in-iot-hub"></a>Общие сведения о двойниках устройств и их использование в Центре Интернета вещей
@@ -400,7 +400,7 @@ ms.locfileid: "101093032"
 
 * В статье [Взаимодействие с Центром Интернета вещей с помощью протокола MQTT](iot-hub-mqtt-support.md) приведены дополнительные сведения о поддержке протокола MQTT в Центре Интернета вещей.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы узнали о двойниках устройств, вас могут заинтересовать следующие статьи руководства разработчика для Центра Интернета вещей:
 
@@ -411,5 +411,5 @@ ms.locfileid: "101093032"
 Чтобы применить некоторые основные понятия, описанные в этой статье, просмотрите следующие руководства по Центру Интернета вещей:
 
 * [Приступая к работе с двойниками устройств (предварительная версия)](iot-hub-node-node-twin-getstarted.md)
-* [Использование свойств двойникаа устройства](tutorial-device-twins.md)
+* [Руководство. Настройка устройств из внутренней службы](tutorial-device-twins.md)
 * [Управление устройствами с помощью средств Azure IoT для VS Code](iot-hub-device-management-iot-toolkit.md)

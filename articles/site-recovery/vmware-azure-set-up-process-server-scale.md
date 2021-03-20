@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 4/23/2019
 ms.author: ramamill
 ms.openlocfilehash: 40f912122e6ffb9cccbd32a747f6f0d46fd6c330
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96019156"
 ---
 # <a name="scale-with-additional-process-servers"></a>Масштабирование с помощью дополнительных серверов обработки
@@ -41,7 +41,7 @@ ms.locfileid: "96019156"
 
 Для каждого защищенного исходного компьютера настраивается три диска объемом 100 ГБ каждый.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Предварительные требования для дополнительного сервера обработки приведены в следующей таблице.
 
@@ -101,5 +101,5 @@ UNIFIEDSETUP.EXE /AcceptThirdpartyEULA /servermode "PS" /InstallLocation "D:\" /
 * ProxyPassword="Password"
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения об [управлении параметрами сервера обработки](vmware-azure-manage-process-server.md)
