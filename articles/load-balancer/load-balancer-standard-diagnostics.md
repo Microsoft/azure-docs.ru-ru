@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 01/25/2021
 ms.author: allensu
 ms.openlocfilehash: 29584a9453fa052745f417cba0bbe940766c30e9
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101699085"
 ---
 # <a name="standard-load-balancer-diagnostics-with-metrics-alerts-and-resource-health"></a>Диагностика Load Balancer (цен. категория "Стандартный") с помощью метрик, оповещений и сведений о работоспособности ресурсов

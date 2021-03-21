@@ -12,10 +12,10 @@ ms.author: aamalvea
 ms.reviewer: wiassaf, sstein
 ms.date: 02/26/2019
 ms.openlocfilehash: 1a74a2f44ac9b03e39e9fea48a3428b82111a48c
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103471996"
 ---
 # <a name="use-resource-health-to-troubleshoot-connectivity-for-azure-sql-database-and-azure-sql-managed-instance"></a>Использование Работоспособность ресурсов для устранения неполадок подключения к базе данных SQL Azure и Azure SQL Управляемый экземпляр
@@ -71,7 +71,7 @@ ms.locfileid: "103471996"
 
 Перенастройки рассматриваются как временные условия, и их ожидаемое время. Эти события могут запускаться при балансировке нагрузки или сбоях оборудования и программного обеспечения. Любое клиентское рабочее приложение, которое подключается к облачной базе данных, должно реализовывать надежную [логику повторных подключений](troubleshoot-common-connectivity-issues.md#retry-logic-for-transient-errors). Это поможет устранить такие ситуации и сделает эти ошибки прозрачными для пользователя.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Дополнительные сведения о [логике повторных попыток для временных ошибок](troubleshoot-common-connectivity-issues.md#retry-logic-for-transient-errors).
 - [Устранение неполадок, диагностика и предотвращение ошибок подключения SQL](troubleshoot-common-connectivity-issues.md).

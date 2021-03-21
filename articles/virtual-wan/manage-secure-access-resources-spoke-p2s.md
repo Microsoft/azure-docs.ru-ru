@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/03/2021
 ms.author: cherylmc
 ms.openlocfilehash: 751d11fcd4b5d4c33145ee7f2b7b49971b8927ae
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102048270"
 ---
 # <a name="manage-secure-access-to-resources-in-spoke-vnets-for-user-vpn-clients"></a>Управление безопасным доступом к ресурсам в лучевой виртуальных сетей для VPN-клиентов пользователей
@@ -23,7 +23,7 @@ ms.locfileid: "102048270"
 
 :::image type="content" source="./media/manage-secure-access-resources-spoke-p2s/diagram.png" alt-text="Схема: защищенный виртуальный концентратор" :::
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [Prerequisites](../../includes/virtual-wan-before-include.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "102048270"
 
 Конфигурация "точка — сеть" (P2S) определяет параметры для подключения удаленных клиентов. Этот раздел поможет определить параметры конфигурации P2S, а затем создать конфигурацию, которая будет использоваться для профиля клиента VPN. Инструкции, которые вы хотите использовать, зависят от используемого метода проверки подлинности.
 
-### <a name="authentication-methods"></a>Методы проверки подлинности
+### <a name="authentication-methods"></a>методы проверки подлинности;
 
 При выборе метода проверки подлинности у вас есть три варианта. Каждый метод имеет определенные требования. Выберите один из следующих методов и выполните действия.
 

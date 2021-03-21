@@ -8,10 +8,10 @@ ms.date: 02/10/2017
 ms.author: daberry
 ms.collection: linux
 ms.openlocfilehash: 290c42cadd840e5a292201247b1555059b5b4381
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102556644"
 ---
 # <a name="resize-a-linux-virtual-machine-using-azure-cli"></a>Изменение размера виртуальной машины Linux с помощью интерфейса командной строки Azure 

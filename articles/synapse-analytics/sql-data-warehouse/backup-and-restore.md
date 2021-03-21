@@ -2,7 +2,7 @@
 title: Резервное копирование и восстановление — моментальные снимки, геоизбыточные
 description: Узнайте, как работает резервное копирование и восстановление в выделенном пуле SQL Azure синапсе Analytics. Используйте резервные копии для восстановления хранилища данных в точку восстановления в основном регионе. Геоизбыточные резервные копии можно использовать для восстановления в другом географическом регионе.
 services: synapse-analytics
-author: kevinvngo
+author: joannapea
 manager: craigg
 ms.service: synapse-analytics
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.date: 11/13/2020
 ms.author: joanpo
 ms.reviewer: igorstan
 ms.custom: seo-lt-2019"
-ms.openlocfilehash: 866fe01e11ee53188cea6ea490304462acc1f6a2
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.openlocfilehash: 0fa6777dc5b587150f630ed8ccc110d16448cc21
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103420006"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104602253"
 ---
 # <a name="backup-and-restore-in-azure-synapse-dedicated-sql-pool"></a>Резервное копирование и восстановление в выделенном пуле SQL Azure синапсе
 

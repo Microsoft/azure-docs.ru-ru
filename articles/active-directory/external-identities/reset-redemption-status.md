@@ -11,10 +11,10 @@ author: msmimart
 manager: celestedg
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dea13444a6bd18bd67f05d93a38af70b3b7a2368
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102556321"
 ---
 # <a name="reset-redemption-status-for-a-guest-user"></a>Сброс состояния активации для гостевого пользователя

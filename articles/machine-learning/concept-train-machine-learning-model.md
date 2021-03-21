@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 05/13/2020
 ms.custom: devx-track-python
 ms.openlocfilehash: de3d9aa60322cc3e6e189f6f16c35d6f42c0cf61
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102500416"
 ---
 # <a name="train-models-with-azure-machine-learning"></a>Обучение моделей с помощью Машинного обучения Azure
@@ -141,6 +141,6 @@ ms.locfileid: "102500416"
 
 Вы можете использовать расширение VS Code для запуска заданий обучения и управления ими. Дополнительные сведения см. в разделе [руководство по управлению ресурсами VS Code](how-to-manage-resources-vscode.md#experiments) .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как [настроить обучающий запуск](how-to-set-up-training-targets.md).

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 02/02/2021
 ms.author: tisande
 ms.openlocfilehash: d5d5bc0a108cd08283ea29ce3bdc2de49310c5aa
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102499566"
 ---
 # <a name="getting-started-with-sql-queries"></a>Getting started with SQL queries (Начало работы с запросами SQL)
@@ -177,7 +177,7 @@ ms.locfileid: "102499566"
     ]
 ```
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 В предыдущих примерах показано несколько аспектов языка запросов Cosmos DB:  
 

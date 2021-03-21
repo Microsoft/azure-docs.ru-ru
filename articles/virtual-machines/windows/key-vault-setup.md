@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 01/24/2017
 ms.author: mimckitt
 ms.openlocfilehash: 124ab121186ff7c9047515f2ee1ff51cee1114b8
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102557494"
 ---
 # <a name="set-up-key-vault-for-virtual-machines-using-azure-powershell"></a>Настройка Key Vault для виртуальных машин с помощью Azure PowerShell

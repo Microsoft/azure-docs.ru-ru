@@ -6,10 +6,10 @@ author: nolavime
 ms.author: v-jysur
 ms.date: 05/12/2020
 ms.openlocfilehash: 40e737a1ec5fb34cd22a08925143a100d36cdc6b
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103009323"
 ---
 # <a name="connect-itsm-productsservices-with-it-service-management-connector"></a>Подключение продуктов и служб ITSM с помощью соединителя управления ИТ-службами
@@ -28,6 +28,6 @@ ms.locfileid: "103009323"
 ## <a name="ip-ranges-for-itsm-partners-connections"></a>Диапазоны IP-адресов для подключений партнеров ITSM
 Чтобы получить список IP-адресов ITSM, чтобы разрешить подключения ITSM от партнеров ITSM Tools, мы рекомендуем использовать для перечисления всего общедоступного диапазона IP-адреса региона Azure, в котором находится рабочая область LogAnalytics. [подробные сведения](https://www.microsoft.com/en-us/download/details.aspx?id=56519) Для регионов ЕУС/ВЕУ/EUS2/WUS2/Юго-Центральный регион США клиент может вывести только тег сети ActionGroup.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Устранение неполадок с соединителем ITSM](./itsmc-resync-servicenow.md)

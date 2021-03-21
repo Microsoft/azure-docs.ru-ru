@@ -9,10 +9,10 @@ ms.date: 12/15/2017
 ms.author: rogarana
 ms.subservice: disks
 ms.openlocfilehash: 1f3b62f8c05edffa1b55bf3d8cd24494b1c918bd
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102558497"
 ---
 # <a name="convert-a-linux-virtual-machine-from-unmanaged-disks-to-managed-disks"></a>Переключение виртуальной машины Linux с неуправляемых дисков на управляемые диски
@@ -21,7 +21,7 @@ ms.locfileid: "102558497"
 
 В этой статье показано, как преобразовать виртуальные машины с помощью Azure CLI. Если нужно установить или обновить интерфейс командной строки Azure, см. статью [Установка Azure CLI](/cli/azure/install-azure-cli). 
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 * Просмотрите раздел с [часто задаваемыми вопросами о переходе на управляемые диски](../faq-for-disks.md#migrate-to-managed-disks).
 
 [!INCLUDE [virtual-machines-common-convert-disks-considerations](../../../includes/virtual-machines-common-convert-disks-considerations.md)]

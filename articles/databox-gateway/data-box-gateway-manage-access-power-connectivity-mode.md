@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 10/14/2020
 ms.author: alkohli
 ms.openlocfilehash: c4e2894d193309c169adbea96491e0754d479a8a
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98786814"
 ---
 # <a name="manage-access-power-and-connectivity-mode-for-your-azure-data-box-gateway"></a>Управление доступом, питанием и режимом подключения для Шлюз Azure Data Box

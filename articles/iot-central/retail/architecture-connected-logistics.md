@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 10/20/2019
 ms.custom: mqtt
 ms.openlocfilehash: d1e17dce80c313bf726451c36ec06dd393549600
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99832425"
 ---
 # <a name="architecture-of-iot-central-connected-logistics-application-template"></a>Архитектура шаблона приложения интеллектуальной логистики для IoT Central

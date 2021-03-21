@@ -11,11 +11,11 @@ ms.date: 04/14/2020
 ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e163ea34948906060996ee952f45ec0cdb467557
-ms.sourcegitcommit: 2ba6303e1ac24287762caea9cd1603848331dd7a
+ms.openlocfilehash: bbb4298d0d9a9d7589c4a2055b4d55a0b852f951
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97504361"
 ---
 # <a name="hybrid-identity-considerations-for-the-azure-government-cloud"></a>Рекомендации по гибридной идентификации в облаке Azure для государственных организаций
@@ -24,9 +24,6 @@ ms.locfileid: "97504361"
 
 > [!NOTE]
 > Чтобы интегрировать среду Microsoft Active Directory (локальную или размещенную в IaaS, которая является частью того же облачного экземпляра) с облаком Azure для государственных организаций, необходимо выполнить обновление до последней версии [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594).
-
-> [!NOTE]
-> Эта статья содержит ссылки на термин *список разрешений*— термин, который корпорация Майкрософт больше не использует. При удалении термина из программного обеспечения мы удалим его из этой статьи.
 
 Полный список оконечных точек в Министерстве обороны США см. в [документации](/office365/enterprise/office-365-u-s-government-dod-endpoints).
 

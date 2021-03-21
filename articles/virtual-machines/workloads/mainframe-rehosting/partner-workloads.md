@@ -11,10 +11,10 @@ ms.date: 05/09/2020
 ms.topic: article
 ms.service: multiple
 ms.openlocfilehash: 679cc68a0f43d6bff74fef85d705544db2f2585b
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102558259"
 ---
 # <a name="mainframe-workloads-supported-on-azure"></a>Рабочие нагрузки мэйнфрейма, поддерживаемые в Azure

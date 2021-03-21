@@ -15,10 +15,10 @@ ms.author: mathoma
 ms.reviewer: jroth
 ms.custom: seo-lt-2019, devx-track-azurecli
 ms.openlocfilehash: 14760b4244d42e57aaed7f7d96f487a66147a554
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97359512"
 ---
 # <a name="use-azure-portal-to-configure-an-availability-group-preview-for-sql-server-on-azure-vm"></a>Использование портал Azure для настройки группы доступности (Предварительная версия) для SQL Server на виртуальной машине Azure 
@@ -33,7 +33,7 @@ ms.locfileid: "97359512"
 Хотя в этой статье для настройки среды группы доступности используется портал Azure, это можно сделать с помощью [PowerShell или Azure CLI](availability-group-az-commandline-configure.md), шаблонов быстрого запуска [Azure](availability-group-quickstart-template-configure.md)или [вручную](availability-group-manually-configure-tutorial.md) . 
 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы настроить Always On группы доступности с помощью портал Azure, необходимо выполнить следующие предварительные требования. 
 

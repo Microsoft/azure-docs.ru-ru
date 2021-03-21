@@ -12,10 +12,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 01/25/2019
 ms.openlocfilehash: 216410d423a70037588a6fb596771a702a13c003
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103472237"
 ---
 # <a name="load-data-from-csv-into-azure-sql-database-or-sql-managed-instance-flat-files"></a>Загрузка данных из CSV-файла в базу данных SQL Azure или Управляемый экземпляр SQL (неструктурированные файлы)
@@ -23,7 +23,7 @@ ms.locfileid: "103472237"
 
 Вы можете использовать программу командной строки bcp для импорта данных из CSV-файла в базу данных SQL Azure или Azure SQL Управляемый экземпляр.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 ### <a name="prerequisites"></a>Предварительные требования
 
@@ -113,7 +113,7 @@ sqlcmd.exe -S <server name> -d <database name> -U <username> -P <password> -I -Q
 | 20151101 |4 |2 |
 | 20151201 |4 |2 |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Миграция базы данных SQL Server описана в статье [Миграция базы данных SQL Server в базу данных SQL в облаке](database/migrate-to-database-from-sql-server.md).
 

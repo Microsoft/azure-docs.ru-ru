@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 01/08/2021
 ms.custom: references_regions, devx-track-azurecli
 ms.openlocfilehash: fae95e6f3a73d7539f81e1486c4ad021f181aa11
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102176337"
 ---
 # <a name="azure-kubernetes-service-aks-uptime-sla"></a>Соглашение об уровне обслуживания с гарантией времени доступности для Службы Azure Kubernetes (AKS)

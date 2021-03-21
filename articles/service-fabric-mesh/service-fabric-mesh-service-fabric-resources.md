@@ -7,18 +7,18 @@ ms.date: 10/23/2018
 ms.author: vturecek
 ms.custom: mvc, devcenter
 ms.openlocfilehash: 650755cf2692b613b2998e8ef7b706e09022b178
-ms.sourcegitcommit: 59cfed657839f41c36ccdf7dc2bee4535c920dd4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99626915"
 ---
 # <a name="introduction-to-service-fabric-resource-model"></a>Общие сведения о модели ресурсов Service Fabric
 
 > [!IMPORTANT]
-> Предварительная версия сетки Service Fabric Azure была снята с учета. Новые развертывания больше не будут разрешены через интерфейс API Service Fabricной сетки. Поддержка существующих развертываний будет продолжена 28 апреля 2021 г.
+> Поддержка предварительной версии Сетки Azure Service Fabric была прекращена. Новые развертывания больше не будут разрешены через API Сетки Service Fabric. Поддержка существующих развертываний будет продолжена до 28 апреля 2021 г. включительно.
 > 
-> Дополнительные сведения см. в статье о прекращении использования [предварительной версии сети Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
+> Дополнительные сведения см. в статье [Прекращение поддержки предварительной версии Сетки Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
 
 Модель ресурсов Service Fabric описывает простой подход к определению ресурсов, составляющих приложение "Сетка Service Fabric". Отдельные ресурсы можно развернуть в любой среде Service Fabric.  Модель ресурсов Service Fabric также совместима с моделью Azure Resource Manager. В этой модели в настоящее время поддерживаются следующие типы ресурсов:
 

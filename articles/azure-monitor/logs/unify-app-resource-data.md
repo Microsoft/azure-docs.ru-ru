@@ -8,10 +8,10 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.openlocfilehash: 7f49bd23347b53f9a5287973c6b2aba82da50ca7
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100624930"
 ---
 # <a name="unify-multiple-azure-monitor-application-insights-resources"></a>Объединение нескольких ресурсов Azure Monitor Application Insights 
@@ -76,7 +76,7 @@ applicationsScoping
 | AvailabilityTestName | name |
 | AvailabilityTimestamp | TIMESTAMP |
 | Браузер | client_browser |
-| City | client_city |
+| Город | client_city |
 | ClientIP | client_IP |
 | Компьютер | cloud_RoleInstance | 
 | Страна или регион | client_CountryOrRegion | 
@@ -91,7 +91,7 @@ applicationsScoping
 | ExceptionType | тип |
 | OperationID | operation_id |
 | OperationName | operation_Name | 
-| Операционная система | client_OS | 
+| OS | client_OS | 
 | PageViewCount | itemCount |
 | PageViewDuration | длительность | 
 | PageViewName | name | 
@@ -110,7 +110,7 @@ applicationsScoping
 | URL-адрес | url |
 | UserAccountId | user_AccountId |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Используйте [поиск по журналам](../logs/log-query-overview.md), чтобы просматривать подробные сведения о приложениях Application Insights.
 

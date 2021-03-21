@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: jlu, calebb
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6116ab543d6dfc886e44206c2a60e4456b39fbc9
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102558191"
 ---
 # <a name="configure-authentication-session-management-with-conditional-access"></a>Настройка управления сеансом проверки подлинности с помощью условного доступа
@@ -136,6 +136,6 @@ ms.locfileid: "102558191"
 
 Чтобы убедиться, что политика работает должным образом, рекомендуется протестировать ее перед развертыванием в рабочей среде. В идеале для проверки правильности работы новой политики следует использовать тестовый клиент. Дополнительные сведения см. в статье [план развертывания условного доступа](plan-conditional-access.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Если вы готовы к настройке политик условного доступа для своей среды, см. статью [план развертывания условного доступа](plan-conditional-access.md).

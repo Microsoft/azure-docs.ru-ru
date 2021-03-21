@@ -12,10 +12,10 @@ author: sdgilley
 ms.reviewer: sgilley
 ms.date: 10/02/2020
 ms.openlocfilehash: 6c29bf87c5f0ecaaeb6d608069791431a949c89b
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103009969"
 ---
 # <a name="create-and-manage-an-azure-machine-learning-compute-instance"></a>Создание Машинное обучение Azure вычислительного экземпляра и управление им
@@ -40,7 +40,7 @@ ms.locfileid: "103009969"
 
 * [Расширение Azure CLI для службы машинное обучение](reference-azure-machine-learning-cli.md), [машинное обучение Azure пакет SDK для Python](/python/api/overview/azure/ml/intro)или [расширение машинное обучение Azure Visual Studio Code](tutorial-setup-vscode-extension.md).
 
-## <a name="create"></a>Создание
+## <a name="create"></a>Создать
 
 **Оценка времени**: приблизительно 5 минут.
 
@@ -161,7 +161,7 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
     instance.restart(wait_for_completion=True, show_output=True)
     ```
 
-* DELETE
+* Удалить
 
     ```python
     # delete() is used to delete the ComputeInstance target. Useful if you want to re-use the compute name 
@@ -196,7 +196,7 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
 
     Дополнительные сведения см. в статье [AZ ML computetarget Restart компутеинстанце](/cli/azure/ext/azure-cli-ml/ml/computetarget/computeinstance#ext-azure-cli-ml-az-ml-computetarget-computeinstance-restart).
 
-* DELETE
+* Удалить
 
     ```azurecli-interactive
     az ml computetarget delete -n instance -v
@@ -236,7 +236,7 @@ az ml computetarget create computeinstance  -n instance -s "STANDARD_D3_V2" -v
 * *Microsoft. Мачинелеарнингсервицес/рабочие области/вычислений/действие*
 * *Microsoft. Мачинелеарнингсервицес/рабочие области/вычислений/перезагрузка/действие*
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Доступ к терминалу вычислительных экземпляров](how-to-access-terminal.md)
 * [Создание файлов и управление ими](how-to-manage-files.md)

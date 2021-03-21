@@ -12,10 +12,10 @@ ms.date: 10/14/2019
 ms.author: haroldw
 ms.custom: devx-track-ansible, devx-track-azurecli
 ms.openlocfilehash: c3f9aaa15a697202aa76c563ed62bf37443d69ec
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101669394"
 ---
 # <a name="post-deployment-tasks"></a>Задачи, выполняемые после развертывания

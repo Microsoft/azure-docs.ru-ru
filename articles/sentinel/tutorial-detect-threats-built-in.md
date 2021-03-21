@@ -1,6 +1,6 @@
 ---
-title: Анализ оповещений с помощью Azure Sentinel | Документация Майкрософт
-description: Узнайте, как использовать готовые встроенные шаблоны обнаружения угроз Azure, которые уведомляют Вас о подозрительных событиях.
+title: Обнаружение угроз с помощью встроенных правил аналитики в Azure Sentinel | Документация Майкрософт
+description: Узнайте, как использовать готовые правила обнаружения угроз на основе встроенных шаблонов, которые уведомляют Вас об подозрительных событиях.
 services: sentinel
 documentationcenter: na
 author: yelevin
@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/06/2020
 ms.author: yelevin
-ms.openlocfilehash: f1cfd941d8205a9bdc100ab69b115618af9f736d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: b8a304d523052f1fe839f94608806df51d35fdf9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101726977"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104589928"
 ---
 # <a name="tutorial-detect-threats-out-of-the-box"></a>Руководство. Встроенное обнаружение угроз
 
@@ -78,4 +78,3 @@ ms.locfileid: "101726977"
 В этом руководстве вы узнали, как приступить к обнаружению угроз с помощью Sentinel Azure. 
 
 Чтобы узнать, как автоматизировать реагирование на угрозы, [Настройте автоматические ответы на угрозы в Azure Sentinel](tutorial-respond-threats-playbook.md).
-

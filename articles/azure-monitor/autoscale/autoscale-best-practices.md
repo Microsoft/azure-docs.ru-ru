@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 07/07/2017
 ms.subservice: autoscale
 ms.openlocfilehash: 9aaf9525f2fedee67a86011e938b8e995ccfe9fe
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100623949"
 ---
 # <a name="best-practices-for-autoscale"></a>Рекомендации по автомасштабированию
@@ -153,7 +153,7 @@ ms.locfileid: "100623949"
 
 Помимо оповещений журнала действий, можно настроить уведомления по электронной почте или через веб-перехватчики, чтобы узнавать об успешных действиях масштабирования посредством вкладки уведомлений в настройках автомасштабирования.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 - [Создайте оповещение журнала действий, чтобы отслеживать все операции модуля автомасштабирования в подписке.](https://github.com/Azure/azure-quickstart-templates/tree/master/monitor-autoscale-alert)
 - [Создайте оповещение журнала действий, чтобы отслеживать все ошибки автомасштабирования в своей подписке](https://github.com/Azure/azure-quickstart-templates/tree/master/monitor-autoscale-failed-alert).
 

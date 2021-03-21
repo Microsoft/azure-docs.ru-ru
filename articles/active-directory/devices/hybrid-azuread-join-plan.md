@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: sandeo
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cadba181ea7d6a12ca64c78f3c7c58654d5f756f
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102500814"
 ---
 # <a name="how-to-plan-your-hybrid-azure-active-directory-join-implementation"></a>Руководство. Планирование реализации гибридного присоединения к Azure Active Directory.
@@ -171,8 +171,8 @@ ms.locfileid: "102500814"
 | ----- | ----- | ----- | ----- |
 | Маршрутизируемый | Федеративные | Начиная с выпуска 1703 | Общедоступная версия |
 | Немаршрутизируемый | Федеративные | Начиная с выпуска 1803 | Общедоступная версия |
-| Маршрутизируемый | Управляемый | Начиная с выпуска 1803 | Общедоступная версия Azure AD SSPR в Windows не поддерживается. Локальная учетная имя участника-пользователя должна быть синхронизирована с     `onPremisesUserPrincipalName` атрибутом в Azure AD. |
-| Немаршрутизируемый | Управляемый | Не поддерживается | |
+| Маршрутизируемый | управляемость. | Начиная с выпуска 1803 | Общедоступная версия Azure AD SSPR в Windows не поддерживается. Локальная учетная имя участника-пользователя должна быть синхронизирована с     `onPremisesUserPrincipalName` атрибутом в Azure AD. |
+| Немаршрутизируемый | управляемость. | Не поддерживается | |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

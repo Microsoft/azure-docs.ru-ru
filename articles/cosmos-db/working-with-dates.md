@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/03/2020
 ms.custom: devx-track-csharp
 ms.openlocfilehash: ba4d4e63bdd1e795bc1c599d0eae8a595aa0d643
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97359529"
 ---
 # <a name="working-with-dates-in-azure-cosmos-db"></a>Работа с датами в Azure Cosmos DB
@@ -92,7 +92,7 @@ Azure Cosmos DB поддерживает типы JSON, такие как стр
 
 Дополнительные сведения о настройке политик индексирования см. в статье [Как работает индексирование данных в Azure Cosmos DB?](index-policy.md). 
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Скачайте и запустите [примеры кода, хранящиеся на GitHub](https://github.com/Azure/azure-cosmos-dotnet-v2/tree/master/samples/code-samples).
 * Дополнительные сведения об [SQL-запросах](sql-query-getting-started.md)

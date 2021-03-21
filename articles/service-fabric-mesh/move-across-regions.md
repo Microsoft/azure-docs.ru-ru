@@ -7,29 +7,29 @@ ms.topic: how-to
 ms.date: 01/14/2020
 ms.custom: subject-moving-resources
 ms.openlocfilehash: 1b59d482b8b88e37da2d61636ff3f254a46ba5c2
-ms.sourcegitcommit: 59cfed657839f41c36ccdf7dc2bee4535c920dd4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99626093"
 ---
 # <a name="move-a-service-fabric-mesh-application-to-another-azure-region"></a>Перемещение Service Fabric приложения сетки в другой регион Azure
 
 > [!IMPORTANT]
-> Предварительная версия сетки Service Fabric Azure была снята с учета. Новые развертывания больше не будут разрешены через интерфейс API Service Fabricной сетки. Поддержка существующих развертываний будет продолжена 28 апреля 2021 г.
+> Поддержка предварительной версии Сетки Azure Service Fabric была прекращена. Новые развертывания больше не будут разрешены через API Сетки Service Fabric. Поддержка существующих развертываний будет продолжена до 28 апреля 2021 г. включительно.
 > 
-> Дополнительные сведения см. в статье о прекращении использования [предварительной версии сети Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
+> Дополнительные сведения см. в статье [Прекращение поддержки предварительной версии Сетки Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
 
 В этой статье описывается, как переместить приложение сетки Service Fabric и его ресурсы в другой регион Azure. Вы можете переместить ресурсы в другой регион по ряду причин. Например, в ответ на сбои, чтобы получить доступ к функциям или службам, доступным только в конкретных регионах, в соответствии с требованиями к внутренней политике и управлению или в соответствии с требованиями к планированию емкости.
 
  [Service Fabricная сетка не поддерживает](../azure-resource-manager/management/region-move-support.md#microsoftservicefabricmesh) возможность прямого перемещения ресурсов между регионами Azure. Тем не менее ресурсы можно перемещать косвенно, развертывая копию текущего шаблона Azure Resource Manager в новом целевом регионе, а затем перенаправляя входящий трафик и зависимости на только что созданное Service Fabricное приложение сетки.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Входной контроллер (например, [шлюз приложений](../application-gateway/index.yml)), служащий посредником для маршрутизации трафика между клиентами и приложением Service Fabricной сетки
 * Доступность Service Fabric сети (Предварительная версия) в целевом регионе Azure ( `westus` , `eastus` или `westeurope` )
 
-## <a name="prepare"></a>Подготовка
+## <a name="prepare"></a>Подготовка.
 
 1. Сделайте "моментальный снимок" текущего состояния приложения Service Fabricной сетки, экспортировав шаблон и параметры Azure Resource Manager из последнего развертывания. Для этого выполните действия, описанные в разделе [Экспорт шаблона после развертывания](../azure-resource-manager/templates/export-template-portal.md#export-template-after-deployment) с помощью портал Azure. Можно также использовать [Azure CLI](../azure-resource-manager/management/manage-resource-groups-cli.md#export-resource-groups-to-templates), [Azure PowerShell](../azure-resource-manager/management/manage-resource-groups-powershell.md#export-resource-groups-to-templates)или [REST API](/rest/api/resources/resourcegroups/exporttemplate).
 

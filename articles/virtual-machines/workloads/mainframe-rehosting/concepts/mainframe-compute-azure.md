@@ -7,10 +7,10 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.service: virtual-machines
 ms.openlocfilehash: 32f259f20e0e24b4d5346c598e23fdc2df48dee6
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102556440"
 ---
 # <a name="move-mainframe-compute-to-azure"></a>Перемещение вычислений мэйнфреймов в Azure

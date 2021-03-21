@@ -2,21 +2,21 @@
 title: Создание пакетов ELT вместо ETL
 description: Реализуйте гибкие стратегии загрузки данных для выделенных пулов SQL в Azure синапсе Analytics.
 services: synapse-analytics
-author: kevinvngo
+author: gaursa
 manager: craigg
 ms.service: synapse-analytics
 ms.topic: conceptual
 ms.subservice: sql-dw
 ms.date: 11/20/2020
-ms.author: kevin
+ms.author: gaursa
 ms.reviewer: igorstan
 ms.custom: azure-synapse
-ms.openlocfilehash: b59e256f137bc8e1b13cb92d477e32bc01629ac5
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.openlocfilehash: 04bd4767445f9378aedb303e63bf463f44e40034
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98679902"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104602202"
 ---
 # <a name="data-loading-strategies-for-dedicated-sql-pool-in-azure-synapse-analytics"></a>Стратегии загрузки данных для выделенного пула SQL в Azure синапсе Analytics
 

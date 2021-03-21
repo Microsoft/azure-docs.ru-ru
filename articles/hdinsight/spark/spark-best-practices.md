@@ -5,10 +5,10 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 04/28/2020
 ms.openlocfilehash: f81435abbedec25cb8abe0b958065a493c15ce4c
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98938815"
 ---
 # <a name="apache-spark-guidelines"></a>Рекомендации по Apache Spark
@@ -17,7 +17,7 @@ ms.locfileid: "98938815"
 
 ## <a name="how-do-i-run-or-submit-spark-jobs"></a>Разделы справки запускать или отправлять задания Spark?
 
-| Параметр | документы. |
+| Параметр | Документы |
 |---|---|
 | VSCode | [Использование средств Spark и Hive для Visual Studio Code](../hdinsight-for-vscode.md) |
 | Jupyter Notebook | [Руководство по Загрузка данных и выполнение запросов в кластере Apache Spark в Azure HDInsight](./apache-spark-load-data-run-query.md) |
@@ -32,23 +32,23 @@ ms.locfileid: "98938815"
 
 ## <a name="how-do-i-monitor-and-debug-spark-jobs"></a>Разделы справки отслеживать задания Spark и выполнять их отладку?
 
-| Параметр | документы. |
+| Параметр | Документы |
 |---|---|
-| Azure Toolkit for IntelliJ | [Сбой отладки задания Spark с Azure Toolkit for IntelliJ (Предварительная версия)](apache-spark-intellij-tool-failure-debug.md) |
+| Набор средств Azure для IntelliJ | [Сбой отладки задания Spark с Azure Toolkit for IntelliJ (Предварительная версия)](apache-spark-intellij-tool-failure-debug.md) |
 | Azure Toolkit for IntelliJ через SSH | [Удаленная или локальная отладка приложений Apache Spark в кластере HDInsight с помощью набора Azure Toolkit for IntelliJ через SSH](apache-spark-intellij-tool-debug-remotely-through-ssh.md) |
 | Azure Toolkit for IntelliJ через VPN | [Удаленная отладка приложений Apache Spark в HDInsight через VPN с помощью Azure Toolkit for IntelliJ](apache-spark-intellij-tool-plugin-debug-jobs-remotely.md) |
 | Граф заданий на Apache Spark сервере журнала | [Отладка и диагностика приложений Apache Spark с использованием расширенного сервера журнала Apache Spark](./apache-azure-spark-history-server.md) |
 
 ## <a name="how-do-i-make-my-spark-jobs-run-more-efficiently"></a>Разделы справки сделать мои задания Spark более эффективными?
 
-| Параметр | документы. |
+| Параметр | Документы |
 |---|---|
 | Кэш ввода-вывода | [Повышение производительности рабочих нагрузок Apache Spark с помощью службы IO Cache для Azure HDInsight (предварительная версия)](./apache-spark-improve-performance-iocache.md) |
-| Параметры конфигурации | [Оптимизация заданий Apache Spark](./apache-spark-perf.md) |
+| Варианты настройки | [Оптимизация заданий Apache Spark](./apache-spark-perf.md) |
 
 ## <a name="how-do-i-connect-to-other-azure-services"></a>Разделы справки подключиться к другим службам Azure?
 
-| Параметр | документы. |
+| Параметр | Документы |
 |---|---|
 | Apache Hive в HDInsight | [Integrate Apache Spark and Apache Hive with the Hive Warehouse Connector](../interactive-query/apache-hive-warehouse-connector.md) (Интеграция Apache Spark и Apache Hive с помощью соединителя хранилища Hive) |
 | Apache HBase в HDInsight | [Чтение и запись данных Apache HBase с помощью Apache Spark](../hdinsight-using-spark-query-hbase.md) |
@@ -57,7 +57,7 @@ ms.locfileid: "98938815"
 
 ## <a name="what-are-my-storage-options"></a>Что такое мои параметры хранения?
 
-| Параметр | документы. |
+| Параметр | Документы |
 |---|---|
 | Azure Data Lake Storage 2-го поколения | [Использование Azure Data Lake Storage Gen2 с кластерами Azure HDInsight](../hdinsight-hadoop-use-data-lake-storage-gen2.md) |
 | Хранилище Azure Data Lake Storage 1-го поколения | [Использование Azure Data Lake Storage 1-го поколения с кластерами Azure HDInsight](../hdinsight-hadoop-use-data-lake-storage-gen1.md) |

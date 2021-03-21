@@ -8,12 +8,12 @@ ms.date: 08/28/2020
 ms.author: cynthn
 ms.subservice: disks
 ms.collection: linux
-ms.openlocfilehash: a6ef2cd62fc14958e8505a03e69e4b20cf6ce49f
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: 0fe584ea8559c285ee7e25caca958ff56aa9454d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102556831"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104601845"
 ---
 # <a name="use-the-portal-to-attach-a-data-disk-to-a-linux-vm"></a>Подключение диска данных к виртуальной машине Linux с помощью портала 
 В этой статье показано, как подключить новый и существующий диски к виртуальной машине Linux на портале Azure. Вы также можете [подключить диск данных к виртуальной машине Windows на портале Azure](../windows/attach-managed-disk-portal.md). 
@@ -81,7 +81,7 @@ sdc     3:0:0:0       4G
 
 Для более сложного примера ниже показано, как на портале выглядят несколько дисков данных:
 
-:::image type="content" source="./media/attach-disk-portal/create-new-md.png" alt-text="Проверьте параметры диска.":::
+:::image type="content" source="./media/attach-disk-portal/find-disk.png" alt-text="Снимок экрана с несколькими дисками, показанными на портале.":::
 
 На рисунке видно, что имеется 3 диска данных: 4 ГБ на LUN 0, 16 ГБ в LUN 1 и 32G в LUN 2.
 
@@ -227,6 +227,6 @@ sdc     3:0:0:0       4G
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения и устранение неполадок с диском см. в разделе [Устранение неполадок при изменении имени устройства виртуальной машины Linux](../troubleshooting/troubleshoot-device-names-problems.md).
+Дополнительные сведения и устранение неполадок с диском см. в разделе [Устранение неполадок при изменении имени устройства виртуальной машины Linux](/troubleshoot/azure/virtual-machines/troubleshoot-device-names-problems).
 
 Вы можете также [подключить диск данных](add-disk.md) с помощью Azure CLI.

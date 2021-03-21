@@ -13,10 +13,10 @@ ms.topic: article
 ms.date: 02/16/2021
 ms.author: juliako
 ms.openlocfilehash: 618617d3602e45ebb15314c7cc5f6898a73bb71f
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102203731"
 ---
 # <a name="azure-media-services-video-indexer-release-notes"></a>Заметки о выпуске индексатора видео служб мультимедиа Azure

@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 09/28/2020
 ms.author: yitoh
 ms.openlocfilehash: 59c5ca9ce9e95319b36e002da0b5d1438ef3fdd1
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102203782"
 ---
 # <a name="quickstart-create-and-configure-azure-ddos-protection-standard-using-azure-cli"></a>Краткое руководство. Создание и Настройка стандарта защиты от атак DDoS Azure с помощью Azure CLI

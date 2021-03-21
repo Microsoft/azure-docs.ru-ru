@@ -8,17 +8,17 @@ ms.service: cognitive-services
 ms.topic: how-to
 ms.date: 12/15/2020
 ms.openlocfilehash: db99fa5caff27a24aa04e4780b25ade3f7c25496
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101699935"
 ---
 # <a name="plan-and-manage-costs-for-azure-cognitive-services"></a>Планирование и управление затратами на Cognitive Services Azure
 
 В этой статье описывается планирование и управление затратами на Cognitive Services Azure. Сначала вы используете калькулятор цен Azure, чтобы помочь спланировать Cognitive Servicesные затраты, прежде чем добавлять ресурсы для службы для оценки затрат. После добавления ресурсов Azure ознакомьтесь с оценочными затратами. После начала использования ресурсов Cognitive Services (например, речи, Компьютерное зрение, LUIS, Анализ текста, переводчиков и т. д.) используйте функции управления затратами для установки бюджетов и отслеживания затрат. Вы также можете просматривать прогнозные затраты и выявление тенденций расходов для выявления областей, в которых может потребоваться выполнить действия. Затраты на Cognitive Services — это только часть ежемесячных затрат в счете Azure. Несмотря на то, что в этой статье объясняется, как спланировать затраты для Cognitive Services и управлять ими, вы оплачиваете все службы и ресурсы Azure, используемые в вашей подписке Azure, включая сторонние службы.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Анализ затрат в службе "Управление затратами" поддерживает большинство типов учетных записей Azure, но не все из них. Полный список поддерживаемых типов учетных записей см. в статье [Understand Cost Management data](../cost-management-billing/costs/understand-cost-mgt-data.md?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn) (Интерпретация данных службы "Управление затратами"). Для просмотра данных о затратах требуется по крайней мере доступ на чтение для учетной записи Azure. Дополнительные сведения о назначении доступа к данным службы "Управление затратами" Azure см. в [этой статье](../cost-management-billing/costs/assign-access-acm-data.md?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn).
 
