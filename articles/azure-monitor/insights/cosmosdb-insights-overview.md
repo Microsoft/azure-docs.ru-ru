@@ -6,10 +6,10 @@ ms.author: lagayhar
 ms.topic: conceptual
 ms.date: 05/11/2020
 ms.openlocfilehash: d88bf65f1bd94e29bd9f60f5597d655f0040623b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101725806"
 ---
 # <a name="explore-azure-monitor-for-azure-cosmos-db"></a>Изучите Azure Monitor для Azure Cosmos DB

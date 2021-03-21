@@ -12,10 +12,10 @@ ms.reviewer: ozgun
 ms.subservice: common
 ms.custom: devx-track-java
 ms.openlocfilehash: 78baaa3f794bed870b40fb3975f6b80ff37e90f0
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102043734"
 ---
 # <a name="client-side-encryption-and-azure-key-vault-with-java-for-microsoft-azure-storage"></a>Шифрование на стороне клиента с помощью Java для службы хранилища Microsoft Azure
@@ -74,7 +74,7 @@ ms.locfileid: "102043734"
 
 Во время расшифровки зашифрованный ключ извлекается из сообщения очереди и расшифровывается. Ключ IV также извлекается из сообщения очереди и используется вместе с расшифрованным ключом для расшифровки данных сообщения очереди. Обратите внимание, что размер метаданных шифрования очень мал (не более 500 байт), поэтому, хотя этот их размер учитывается при подсчете максимального размера в 64 КБ для сообщения очереди, этим размером данных можно пренебречь.
 
-### <a name="tables"></a>Таблицы
+### <a name="tables"></a>Tables
 Клиентская библиотека поддерживает шифрование свойств сущности для операций вставки и замены.
 
 > [!NOTE]

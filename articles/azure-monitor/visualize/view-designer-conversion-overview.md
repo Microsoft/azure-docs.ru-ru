@@ -6,10 +6,10 @@ ms.author: aul
 ms.topic: conceptual
 ms.date: 08/04/2020
 ms.openlocfilehash: 19de2a3d3f5a998c09db7c4df689b0378e2597fd
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102043377"
 ---
 # <a name="azure-monitor-view-designer-to-workbooks-transition-guide"></a>Azure Monitor конструктора представлений в книгу с руководством по переходу

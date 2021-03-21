@@ -10,10 +10,10 @@ author: likebupt
 ms.author: keli19
 ms.date: 10/22/2019
 ms.openlocfilehash: cc58689e30e9b03e490c0871f3decd50372371fa
-ms.sourcegitcommit: 7cc10b9c3c12c97a2903d01293e42e442f8ac751
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93421929"
 ---
 # <a name="convert-to-csv-module"></a>Преобразовать в модуль CSV
@@ -50,7 +50,7 @@ ms.locfileid: "93421929"
 
 + **Зарегистрировать набор данных**. Выберите значок и сохраните CSV-файл в рабочей области машинного обучения Azure в виде отдельного набора данных. Набор данных можно найти в виде модуля в дереве модулей в разделе **My DataSets (мои наборы данных** ).
 
- + **Просмотреть выходные данные** : щелкните значок глаза и следуйте инструкциям по просмотру папки **Results_dataset** и скачайте файл data.csv.
+ + **Просмотреть выходные данные**: щелкните значок глаза и следуйте инструкциям по просмотру папки **Results_dataset** и скачайте файл data.csv.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

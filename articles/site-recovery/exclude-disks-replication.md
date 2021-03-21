@@ -4,10 +4,10 @@ description: Как исключить диски из репликации в A
 ms.topic: conceptual
 ms.date: 12/17/2019
 ms.openlocfilehash: 15989fbfd65f758eb777c5170c217aba8707e0be
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96008265"
 ---
 # <a name="exclude-disks-from-disaster-recovery"></a>Исключение дисков из аварийного восстановления
@@ -56,13 +56,13 @@ ms.locfileid: "96008265"
 
 ## <a name="example-1-exclude-the-sql-server-tempdb-disk"></a>Пример 1: Исключение диска с файлом tempdb SQL Server
 
-Рассмотрим, как управлять исключением диска, отработкой отказа и отработкой отказа для исходного SQL Server Windows VM- **SalesDB** _, для которого требуется исключить базу данных tempdb. 
+Рассмотрим процесс обработки исключений дисков, отработки отказа и отработки отказа для исходной виртуальной машины Windows с SQL Server **SalesDB***, для которой мы хотим исключить файл tempdb. 
 
 ### <a name="exclude-disks-from-replication"></a>Исключение дисков из репликации
 
 На исходной виртуальной машине Windows SalesDB имеются следующие диски.
 
-_ *Имя диска** | **Диск гостевой ОС** | **Буква диска** | **Тип данных диска**
+**Имя диска** | **Диск гостевой ОС** | **Буква диска** | **Тип данных диска**
 --- | --- | --- | ---
 DB-Disk0-OS | Диск 0 | C:\ | Диск операционной системы.
 DB-Disk1| Диск 1 | D:\ | Системная база данных SQL и база данных пользователя Database1.

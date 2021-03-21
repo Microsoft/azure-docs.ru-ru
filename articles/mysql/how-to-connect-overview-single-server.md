@@ -8,10 +8,10 @@ author: mksuni
 ms.author: sumuth
 ms.date: 09/22/2020
 ms.openlocfilehash: 0414aaad5a1cf6edb9c2152eed70f8753946cca1
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92546438"
 ---
 # <a name="connect-and-query-overview-for-azure-database-for-mysql--single-server"></a>Общие сведения о подключении и запросах для базы данных Azure для MySQL — одиночный сервер
@@ -23,7 +23,7 @@ ms.locfileid: "92546438"
 | Краткое руководство | Описание |
 |---|---|
 |[MySQL Workbench](connect-workbench.md)|В этом кратком руководстве показано, как использовать клиент MySQL Workbench для подключения к базе данных. Затем можно использовать операторы MySQL для запроса, вставки, обновления и удаления данных в базе данных.|
-|[Azure Cloud Shell](./quickstart-create-mysql-server-database-using-azure-cli.md#connect-to-azure-database-for-mysql-server-using-mysql-command-line-client)|В этой статье показано, как запустить **mysql.exe** в [Azure Cloud Shell](../cloud-shell/overview.md) , чтобы подключиться к серверу, а затем выполнить инструкции для запроса, вставки, обновления и удаления данных в базе данных.|
+|[Azure Cloud Shell](./quickstart-create-mysql-server-database-using-azure-cli.md#connect-to-azure-database-for-mysql-server-using-mysql-command-line-client);|В этой статье показано, как запустить **mysql.exe** в [Azure Cloud Shell](../cloud-shell/overview.md) , чтобы подключиться к серверу, а затем выполнить инструкции для запроса, вставки, обновления и удаления данных в базе данных.|
 |[MySQL с Visual Studio](https://www.mysql.com/why-mysql/windows/visualstudio)|Для подключения к серверу MySQL можно использовать MySQL для Visual Studio. MySQL для Visual Studio интегрируется непосредственно в обозреватель сервера упрощает настройку новых соединений и работу с объектами базы данных.|
 |[PHP](connect-php.md)|В этом кратком руководстве показано, как с помощью PHP создать программу для подключения к базе данных и использовать инструкции MySQL для запроса данных.|
 |[Java](connect-java.md)|В этом кратком руководстве показано, как использовать Java для подключения к базе данных, а затем с помощью инструкций MySQL запрашивать данные.|

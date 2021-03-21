@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 05/05/2020
 ms.openlocfilehash: 0f2319ea6ba314c08a67651667837f05df5765a1
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101723237"
 ---
 # <a name="optimize-your-sql-environment-with-the-sql-server-health-check-solution-in-azure-monitor"></a>Оптимизируйте среду SQL с помощью решения SQL Server проверки работоспособности в Azure Monitor
@@ -30,7 +30,7 @@ ms.locfileid: "101723237"
 
 ![изображение панели мониторинга "Проверка работоспособности SQL"](./media/sql-assessment/sql-healthcheck-dashboard-01.png)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Для решения "Проверка работоспособности SQL" требуется поддерживаемая версия платформа .NET Framework 4.6.2, установленная на каждом компьютере с установленным Microsoft Monitoring Agent (MMA).  Агент MMA используется решением System Center 2016 Operations Manager и Operations Manager 2012 R2, а также Azure Monitor.  
 * Решение поддерживает SQL Server версии 2012, 2014, 2016, 2017 и 2019.

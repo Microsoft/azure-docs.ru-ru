@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 9/22/2020
 ms.author: JenCook
 ms.openlocfilehash: a7b0ca65329016b0a73f612115d8caba43dfbe2a
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102551357"
 ---
 # <a name="attesting-sgx-enclaves"></a>Аттестация Енклавес SGX

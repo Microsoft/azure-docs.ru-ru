@@ -9,10 +9,10 @@ ms.date: 12/01/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 29c49ceb3647964030f53c94276e831dc0f648c7
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100576623"
 ---
 # <a name="azure-monitor-for-windows-virtual-desktop-preview-glossary"></a>Azure Monitor для глоссария виртуальных рабочих столов Windows (Предварительная версия)
@@ -177,7 +177,7 @@ ms.locfileid: "100576623"
 
 В следующей таблице перечислены обязательные события Windows для Azure Monitor для виртуальных рабочих столов Windows.
 
-|Имя события.|Тип события|
+|Имя события|Тип события|
 |---|---|
 |Приложение|Ошибка и предупреждение|
 |Microsoft-Windows-Терминалсервицес-Ремотеконнектионманажер/администратор|Ошибка, предупреждение и сведения|
@@ -188,7 +188,7 @@ ms.locfileid: "100576623"
 
 Дополнительные сведения о событиях Windows см. в разделе [свойства записей событий Windows](../azure-monitor/agents/data-sources-windows-events.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы приступить к работе с Azure Monitor для виртуальных рабочих столов Windows, ознакомьтесь со следующими статьями:
 

@@ -8,17 +8,17 @@ ms.subservice: purview-data-catalog
 ms.topic: conceptual
 ms.date: 11/12/2020
 ms.openlocfilehash: ca25bbb72ff853f819f3e8ce4e0092ddb762b156
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102183817"
 ---
 # <a name="use-purview-studio"></a>Использование Purview Studio
 
 В этой статье приводятся общие сведения о некоторых основных возможностях Azure зрения.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Активная учетная запись зрения уже создана в портал Azure и пользователь имеет разрешения на доступ к зрения Studio.
 

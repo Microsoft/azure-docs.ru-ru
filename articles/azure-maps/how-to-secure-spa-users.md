@@ -11,10 +11,10 @@ services: azure-maps
 manager: timlt
 ms.custom: devx-track-js
 ms.openlocfilehash: 60d8dc45fb26ea210b1827a6938716474faa0304
-ms.sourcegitcommit: 4064234b1b4be79c411ef677569f29ae73e78731
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92895619"
 ---
 # <a name="secure-a-single-page-application-with-user-sign-in"></a>Защита одностраничного приложения с помощью входа пользователя
@@ -27,19 +27,19 @@ ms.locfileid: "92895619"
 
 Создайте веб-приложение в Azure AD, чтобы пользователи могли выполнять вход. Веб-приложение делегирует доступ пользователей к Azure Maps интерфейсам API-интерфейса RESTFUL.
 
-1. В портал Azure в списке служб Azure выберите **Azure Active Directory**  >  **Регистрация приложений**  >  **Новая регистрация** .  
+1. В портал Azure в списке служб Azure выберите **Azure Active Directory**  >  **Регистрация приложений**  >  **Новая регистрация**.  
 
     > [!div class="mx-imgBorder"]
     > ![Интеграция приложений с Azure Active Directory](./media/how-to-manage-authentication/app-registration.png)
 
-2. Введите **имя** , выберите **тип учетной записи поддержки** , укажите универсальный код ресурса (URI) перенаправления, который будет представлять URL-адрес, по которому Azure AD будет выдавать маркер, а — URL-адрес, по которому размещается элемент управления картой. Подробный пример см. в [Azure Maps примерах Azure AD](https://github.com/Azure-Samples/Azure-Maps-AzureAD-Samples/tree/master/src/ImplicitGrant). Нажмите кнопку **Зарегистрировать** .  
+2. Введите **имя**, выберите **тип учетной записи поддержки**, укажите универсальный код ресурса (URI) перенаправления, который будет представлять URL-адрес, по которому Azure AD будет выдавать маркер, а — URL-адрес, по которому размещается элемент управления картой. Подробный пример см. в [Azure Maps примерах Azure AD](https://github.com/Azure-Samples/Azure-Maps-AzureAD-Samples/tree/master/src/ImplicitGrant). Нажмите кнопку **Зарегистрировать**.  
 
-3. Чтобы назначить разрешения делегированного API для Azure Maps, перейдите в приложение. Затем в разделе **Регистрация приложений** выберите **разрешения API**  >  **Добавить разрешение** . В разделе API, которые **использует Моя организация** , найдите и выберите **Azure Maps** .
+3. Чтобы назначить разрешения делегированного API для Azure Maps, перейдите в приложение. Затем в разделе **Регистрация приложений** выберите **разрешения API**  >  **Добавить разрешение**. В разделе API, которые **использует Моя организация**, найдите и выберите **Azure Maps**.
 
     > [!div class="mx-imgBorder"]
     > ![Добавить разрешения API приложения](./media/how-to-manage-authentication/app-permissions.png)
 
-4. Установите флажок для **доступа к Azure Maps** , а затем выберите **Добавить разрешения** .
+4. Установите флажок для **доступа к Azure Maps**, а затем выберите **Добавить разрешения**.
 
     > [!div class="mx-imgBorder"]
     > ![Выбор разрешений API приложения](./media/how-to-manage-authentication/select-app-permissions.png)

@@ -1,5 +1,5 @@
 ---
-title: Пробы работоспособности для масштабирования и обеспечения высокой доступности для вашей службы
+title: Пробы работоспособности для масштабирования и обеспечения высокой доступности вашей службы
 titleSuffix: Azure Load Balancer
 description: Из этой статьи вы узнаете, как использовать зонды работоспособности для наблюдения за экземплярами Azure Load Balancer
 services: load-balancer
@@ -15,10 +15,10 @@ ms.workload: infrastructure-services
 ms.date: 09/17/2019
 ms.author: allensu
 ms.openlocfilehash: a008d7b26738b9552a7a43ab026391bd9afe0aa8
-ms.sourcegitcommit: 8b4b4e060c109a97d58e8f8df6f5d759f1ef12cf
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96780949"
 ---
 # <a name="load-balancer-health-probes"></a>Пробы работоспособности Load Balancer
@@ -249,7 +249,7 @@ UDP не требует соединения, поэтому состояние 
 
 Не включайте [метки времени протокола TCP](https://tools.ietf.org/html/rfc1323).  Включение отметок времени TCP может вызвать сбой пробы работоспособности из-за разрыва пакетов TCP в стеке TCP гостевой ОС виртуальной машины, что приводит к Load Balancer пометке соответствующей конечной точки.  Метки времени протокола TCP обычно включены по умолчанию на защищенных образах виртуальных машин и должны быть отключены.
 
-## <a name="monitoring"></a>Наблюдение
+## <a name="monitoring"></a>Мониторинг
 
 Как общедоступные, так и внутренние [Load Balancer (цен. Категория "Стандартный")](./load-balancer-overview.md) предоставляют состояние зонда работоспособности для конечных точек и внутренних конечных точек как многомерные метрики с помощью Azure Monitor. Эти метрики можно использовать в других службах Azure или партнерских приложениях. 
 

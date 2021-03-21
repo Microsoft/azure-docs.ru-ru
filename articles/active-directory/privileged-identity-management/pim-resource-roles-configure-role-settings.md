@@ -16,10 +16,10 @@ ms.author: curtand
 ms.custom: pim
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4ded81389fae5954c0e488f634945b4f1c1fe4c8
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96009047"
 ---
 # <a name="configure-azure-resource-role-settings-in-privileged-identity-management"></a>Настройка параметров роли ресурсов Azure в управление привилегированными пользователями
@@ -135,7 +135,7 @@ ms.locfileid: "96009047"
 
 1. После указания всех параметров роли выберите **Обновить** , чтобы сохранить изменения.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Назначение ролей ресурсов Azure в управление привилегированными пользователями](pim-resource-roles-assign-roles.md)
 - [Настройка оповещений системы безопасности для ролей ресурсов Azure в управление привилегированными пользователями](pim-resource-roles-configure-alerts.md)

@@ -9,10 +9,10 @@ ms.date: 02/03/2021
 ms.author: girobins
 ms.custom: query-reference
 ms.openlocfilehash: 36ebe80671c77cc83ddba770e3259f6542472e58
-ms.sourcegitcommit: ea822acf5b7141d26a3776d7ed59630bf7ac9532
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99526845"
 ---
 # <a name="system-functions-azure-cosmos-db"></a>Системные функции (Azure Cosmos DB)
@@ -37,7 +37,7 @@ ms.locfileid: "99526845"
 
 Основное различие между функциями Cosmos DB и ANSI SQL-функциями заключается в том, что функции Cosmos DB предназначены для работы с данными без схем и смешанными схемами. Например, если свойство отсутствует или имеет нечисловое значение, такое как `undefined` , элемент пропускается вместо возврата ошибки.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Общие сведения об Azure Cosmos DB](introduction.md)
 - [Функции массива](sql-query-array-functions.md)

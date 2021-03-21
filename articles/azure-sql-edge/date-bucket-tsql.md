@@ -10,10 +10,10 @@ ms.author: sourabha
 ms.reviewer: sstein
 ms.date: 09/03/2020
 ms.openlocfilehash: 9d81419721e94a2e181f094c0e0e64b1b23544a8
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93073525"
 ---
 # <a name="date_bucket-transact-sql"></a>Date_Bucket (Transact-SQL)
@@ -34,26 +34,26 @@ DATE_BUCKET (datePart, number, date, origin)
 
 *datePart*
 
-Часть *date*  (дата), используемая с параметром "number". Например: Год, месяц, минута, секунда и т. д.
+Часть *date* (дата), используемая с параметром "number". Например: Год, месяц, минута, секунда и т. д.
 
 > [!NOTE]
-> `DATE_BUCKET` не принимает эквивалентные переменные, определяемые пользователем, для аргументов *datepPart* .
+> `DATE_BUCKET` не принимает эквивалентные переменные, определяемые пользователем, для аргументов *datepPart*.
   
 |*datePart*|Сокращения|  
 |---|---|
-|**day**|**dd** , **d**|  
-|**week**|**wk** , **ww**| 
-|**month**|**mm** , **m**|
-|**quarter**|**qq** , **q**|  
-|**year**|**yy** , **yyyy**|  
+|**day**|**dd**, **d**|  
+|**week**|**wk**, **ww**| 
+|**month**|**mm**, **m**|
+|**quarter**|**qq**, **q**|  
+|**year**|**yy**, **yyyy**|  
 |**hour**|**hh**|  
-|**minute**|**mi** , **n**|  
-|**second**|**ss** , **s**|  
+|**minute**|**mi**, **n**|  
+|**second**|**ss**, **s**|  
 |**millisecond**|**ms**|  
 
 *number*
 
-Целое число, которое определяет ширину контейнера в сочетании с аргументом *datePart* . Представляет ширину контейнеров dataPart из времени источника. **`This argument cannot be a negative integer value`** . 
+Целое число, которое определяет ширину контейнера в сочетании с аргументом *datePart*. Представляет ширину контейнеров dataPart из времени источника. **`This argument cannot be a negative integer value`**. 
 
 *date*
 
@@ -66,9 +66,9 @@ DATE_BUCKET (datePart, number, date, origin)
 + **smalldatetime**
 + **time**
 
-Для *date*  (дата), `DATE_BUCKET` примет выражение столбца, выражение или пользовательскую переменную, если они разрешаются для любого из вышеперечисленных типов данных.
+Для *date* (дата), `DATE_BUCKET` примет выражение столбца, выражение или пользовательскую переменную, если они разрешаются для любого из вышеперечисленных типов данных.
 
-**Лета** 
+**Исходный домен** 
 
 Необязательное выражение, которое может разрешаться в одно из следующих значений:
 
@@ -125,11 +125,11 @@ Select DATE_BUCKET(wk, 5, @date, @origin)
 
 ## <a name="datepart-argument"></a>Аргумент datepart
 
-Функции **dayofyear** , **day** и **weekday** возвращают одинаковое значение. Каждое выражение *datepart* и его краткие формы возвращают одно и то же значение.
+Функции **dayofyear**, **day** и **weekday** возвращают одинаковое значение. Каждое выражение *datepart* и его краткие формы возвращают одно и то же значение.
   
 ## <a name="number-argument"></a>Аргумент number
 
-Аргумент *number* не может выходить за диапазон положительных значений типа **int** . В приведенных ниже инструкциях аргумент *number* превышает диапазон типа данных **int** на 1. Следующая инструкция возвращает следующее сообщение об ошибке: "`Msg 8115, Level 16, State 2, Line 2. Arithmetic overflow error converting expression to data type int."`
+Аргумент *number* не может выходить за диапазон положительных значений типа **int**. В приведенных ниже инструкциях аргумент *number* превышает диапазон типа данных **int** на 1. Следующая инструкция возвращает следующее сообщение об ошибке: "`Msg 8115, Level 16, State 2, Line 2. Arithmetic overflow error converting expression to data type int."`
   
 ```sql
 declare @date datetime2 = '2020-04-30 00:00:00'
@@ -169,7 +169,7 @@ Select DATE_BUCKET(dd, 10, SYSUTCDATETIME())
 
 ### <a name="a-calculating-date_bucket-with-a-bucket-width-of-1-from-the-origin-time"></a>A. Вычисление Date_Bucket с шириной контейнера, равной 1, из времени источника
 
-Каждая из этих инструкций увеличивает *date_bucket* , применяя ширину контейнера = 1, по сравнению с временем источника:
+Каждая из этих инструкций увеличивает *date_bucket*, применяя ширину контейнера = 1, по сравнению с временем источника:
 
 ```sql
 declare @date datetime2 = '2020-04-30 21:21:21'
@@ -196,7 +196,7 @@ Seconds 2020-04-30 21:21:21.0000000
 
 ### <a name="b-using-expressions-as-arguments-for-the-number-and-date-parameters"></a>Б. Использование выражений в качестве аргументов number и date
 
-В этих примерах выражения различного типа используются в качестве аргументов для параметров *number* и *date* . Эти примеры создаются с использованием базы данных "AdventureWorksDW2017".
+В этих примерах выражения различного типа используются в качестве аргументов для параметров *number* и *date*. Эти примеры создаются с использованием базы данных "AdventureWorksDW2017".
   
 #### <a name="specifying-user-defined-variables-as-number-and-date"></a>Указание пользовательских переменных в качестве аргументов number и date  
 

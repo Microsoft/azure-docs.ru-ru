@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 11/03/2017
 ms.author: alkohli
 ms.openlocfilehash: 6cd1d981737db1e7c852931ecc2449e0afc03530
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94956795"
 ---
 # <a name="troubleshoot-an-operational-storsimple-device"></a>Устранение неполадок в работающем устройстве StorSimple
@@ -63,7 +63,7 @@ ms.locfileid: "94956795"
 | 390061 |Система занята или недоступна. |Подождите несколько минут и повторите попытку. Если проблема возникнет снова, обратитесь в службу поддержки Майкрософт. |
 | 390143 |Произошла ошибка с кодом ошибки 390143. (Неизвестная ошибка). |Если проблема возникнет снова, обратитесь в службу поддержки Майкрософт. |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Если устранить проблему не удалось, [обратитесь в службу технической поддержки Майкрософт](./storsimple-8000-contact-microsoft-support.md) . 
 
 [1]: /previous-versions/windows/powershell-scripting/dn688135(v=wps.630)

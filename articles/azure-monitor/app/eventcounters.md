@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 09/20/2019
 ms.custom: devx-track-csharp
 ms.openlocfilehash: d1ae0937c25a68798acd87fe8b2a0a54aa765b35
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100579529"
 ---
 # <a name="eventcounters-introduction"></a>Знакомство с объектами EventCounter

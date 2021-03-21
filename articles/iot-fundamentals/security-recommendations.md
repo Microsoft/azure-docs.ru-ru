@@ -13,13 +13,13 @@ ms.custom:
 - amqp
 - mqtt
 ms.openlocfilehash: a1de3a71253b1a82b4423bff279fbf3f7e378da4
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96457603"
 ---
-# <a name="security-recommendations-for-azure-internet-of-things-iot-deployment"></a>Рекомендации по безопасности для развертывания Azure "Интернет вещей" (IoT)
+# <a name="security-recommendations-for-azure-internet-of-things-iot-deployment"></a>Рекомендации по безопасности для развертывания Azure Интернет вещей (IoT)
 
 Эта статья содержит рекомендации по безопасности для Интернета вещей. Реализация этих рекомендаций поможет вам выполнить обязательства по обеспечению безопасности, которые описаны в нашей модели общей ответственности. Дополнительные сведения о принимаемых Майкрософт мерах для выполнения обязанностей поставщика услуг см. в статье [об общей ответственности в отрасли облачных вычислений](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91).
 

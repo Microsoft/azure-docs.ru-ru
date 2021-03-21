@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 10/18/2020
 ms.author: glenga
 ms.openlocfilehash: d1931614356a313334d712713965346e843a403d
-ms.sourcegitcommit: 7cc10b9c3c12c97a2903d01293e42e442f8ac751
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93424927"
 ---
 ## <a name="invoke-the-function-on-azure"></a>Вызов функции в Azure
@@ -17,7 +17,7 @@ ms.locfileid: "93424927"
 
 # <a name="browser"></a>[Браузер](#tab/browser)
 
-Скопируйте полный URL-адрес вызова **Invoke URL** , показанный в выходных данных команды publish, в адресную строку браузера, добавив параметр запроса `&name=Functions`. В браузере должны отображаться выходные данные, аналогичные данным при локальном запуске функции.
+Скопируйте полный URL-адрес вызова **Invoke URL**, показанный в выходных данных команды publish, в адресную строку браузера, добавив параметр запроса `&name=Functions`. В браузере должны отображаться выходные данные, аналогичные данным при локальном запуске функции.
 
 ![Выходные данные функции, выполняемой в Azure в браузере](./media/functions-run-remote-azure-cli/function-test-cloud-browser.png)
 

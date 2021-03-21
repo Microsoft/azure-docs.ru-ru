@@ -11,10 +11,10 @@ ms.reviewer: genemi
 ms.date: 11/14/2019
 ms.custom: sqldbrb=2
 ms.openlocfilehash: 7ea3456dbd1d0942cba48c97d70982ae088d73f9
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92782983"
 ---
 # <a name="application-development-overview---sql-database--sql-managed-instance"></a>Общие сведения о разработке приложений — База данных SQL & SQL Управляемый экземпляр

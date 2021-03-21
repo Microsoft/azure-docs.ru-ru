@@ -7,10 +7,10 @@ ms.service: cosmos-db
 ms.topic: conceptual
 ms.date: 09/23/2020
 ms.openlocfilehash: 1390f5db6e0f0370788bef60d5a2cafee1e8a96d
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93080657"
 ---
 # <a name="use-azure-policy-to-implement-governance-and-controls-for-azure-cosmos-db-resources"></a>Применение Политики Azure для систем и элементов управления ресурсами Azure Cosmos DB
@@ -31,10 +31,10 @@ ms.locfileid: "93080657"
 
 Чтобы создать назначение политики из встроенного определения политики для Azure Cosmos DB с помощью портала Azure, выполните действия из [этой статьи](../governance/policy/assign-policy-portal.md).
 
-На шаге выбора определения политики введите в поле поиска строку `Cosmos DB`, чтобы отфильтровать список доступных встроенных определений политики. Выберите одно из доступных встроенных определений политики, а затем щелкните **Выбрать** , чтобы продолжить создание назначения политики.
+На шаге выбора определения политики введите в поле поиска строку `Cosmos DB`, чтобы отфильтровать список доступных встроенных определений политики. Выберите одно из доступных встроенных определений политики, а затем щелкните **Выбрать**, чтобы продолжить создание назначения политики.
 
 > [!TIP]
-> Можно также использовать имена встроенных определений политик, которые отображаются в области **Доступные определения** , в командах Azure PowerShell, Azure CLI или шаблонах Resource Manager, чтобы создать назначения политик.
+> Можно также использовать имена встроенных определений политик, которые отображаются в области **Доступные определения**, в командах Azure PowerShell, Azure CLI или шаблонах Resource Manager, чтобы создать назначения политик.
 
 :::image type="content" source="./media/policy/available-definitions.png" alt-text="Поиск встроенных определений политик для Azure Cosmos DB":::
 
@@ -127,7 +127,7 @@ az provider show --namespace Microsoft.DocumentDB --expand "resourceTypes/aliase
 - Ноль двух учетных записей соответствует политике, требующей, чтобы учетная запись была настроена для нескольких расположений для записи.
 - Ноль двух учетных записей соответствует политике, которую ресурсы были развернуты в разрешенных регионах Azure.
 
-:::image type="content" source="./media/policy/compliance.png" alt-text="Поиск встроенных определений политик для Azure Cosmos DB":::
+:::image type="content" source="./media/policy/compliance.png" alt-text="Результаты соответствия требованиям для назначений политик Azure":::
 
 Сведения об исправлении несоответствующих ресурсов см. в статье [как исправить ресурсы с помощью политики Azure](../governance/policy/how-to/remediate-resources.md).
 

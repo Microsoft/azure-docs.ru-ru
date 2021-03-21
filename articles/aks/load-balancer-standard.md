@@ -8,10 +8,10 @@ ms.date: 11/14/2020
 ms.author: jpalma
 author: palma21
 ms.openlocfilehash: e37c5a748a8e99f49e3535946268427139bbbf44
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102184429"
 ---
 # <a name="use-a-public-standard-load-balancer-in-azure-kubernetes-service-aks"></a>Использование общедоступной Load Balancer (цен. категория "Стандартный") в службе Kubernetes Azure (AKS)
@@ -326,7 +326,7 @@ spec:
 | `service.beta.kubernetes.io/azure-load-balancer-internal`         | `true` или `false`                     | Укажите, должна ли подсистема балансировки нагрузки быть внутренней. Значение по умолчанию — Public, если не задано.
 | `service.beta.kubernetes.io/azure-load-balancer-internal-subnet`  | Имя подсети                    | Укажите подсеть, к которой должна быть привязана внутренняя подсистема балансировки нагрузки. Если значение не задано, по умолчанию используется подсеть, настроенная в облачном файле конфигурации.
 | `service.beta.kubernetes.io/azure-dns-label-name`                 | Имя DNS-метки в общедоступных IP-адресах   | Укажите имя DNS-метки для **общедоступной** службы. Если задана пустая строка, запись DNS в общедоступном IP-адресе не будет использоваться.
-| `service.beta.kubernetes.io/azure-shared-securityrule`            | `true` либо `false`                     | Укажите, что служба должна быть предоставлена с помощью правила безопасности Azure, которое может использоваться совместно с другой службой, характерным правилом для увеличения числа служб, которые могут быть предоставлены. Эта аннотация полагается на функцию расширенных [правил безопасности](../virtual-network/network-security-groups-overview.md#augmented-security-rules) в Azure группы безопасности сети. 
+| `service.beta.kubernetes.io/azure-shared-securityrule`            | `true` или `false`                     | Укажите, что служба должна быть предоставлена с помощью правила безопасности Azure, которое может использоваться совместно с другой службой, характерным правилом для увеличения числа служб, которые могут быть предоставлены. Эта аннотация полагается на функцию расширенных [правил безопасности](../virtual-network/network-security-groups-overview.md#augmented-security-rules) в Azure группы безопасности сети. 
 | `service.beta.kubernetes.io/azure-load-balancer-resource-group`   | Имя группы ресурсов            | Укажите группу ресурсов для общедоступных IP-адресов подсистемы балансировки нагрузки, которые находятся не в той же группе ресурсов, что и инфраструктура кластера (Группа ресурсов узла).
 | `service.beta.kubernetes.io/azure-allowed-service-tags`           | Список разрешенных тегов службы          | Укажите список разрешенных [тегов службы][service-tags] , разделенных запятыми.
 | `service.beta.kubernetes.io/azure-load-balancer-tcp-idle-timeout` | Время ожидания простоя TCP в минутах          | Укажите время в минутах, в течение которого время ожидания простоя подключения TCP будет происходить в подсистеме балансировки нагрузки. По умолчанию и минимальное значение равно 4. Максимальное значение равно 30. Должно быть целым числом.

@@ -9,10 +9,10 @@ ms.date: 10/22/2020
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 6cb30b96f9c2094e6d690b565edf487d6508d520
-ms.sourcegitcommit: 3bcce2e26935f523226ea269f034e0d75aa6693a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92487122"
 ---
 1. На [портале Azure](https://portal.azure.com) в поле **Поиск по ресурсам, службам и документам (G+/)** введите текст **шлюз виртуальной сети**. Найдите **шлюз виртуальной сети** в результатах поиска и выберите его.

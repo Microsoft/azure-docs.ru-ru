@@ -10,10 +10,10 @@ ms.date: 02/23/2021
 ms.author: deanwe
 ms.custom: references_regions
 ms.openlocfilehash: 1d3b2174df5dd83852ce120ec6693ae187a3e795
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101643534"
 ---
 # <a name="azure-automanage-for-virtual-machines"></a>Управление Azure для виртуальных машин
@@ -34,7 +34,7 @@ ms.locfileid: "101643534"
 
 Кроме того, служба автоматического управления Azure автоматически отслеживает отклонения и исправления при обнаружении. Это означает, что если ваша виртуальная машина подключена к службе "Управление Azure", мы не будем настраивать его в соответствии с рекомендациями Azure, но мы будем отслеживать работу компьютера, чтобы убедиться в том, чтобы он продолжал соответствовать рекомендациям по всему жизненному циклу. Если ваша виртуальная машина выполняет смещение или отклонение от этих методов (например, если служба оффбоардед), мы исправим ее и перевернем свой компьютер в нужное состояние.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем пытаться включить управление Azure на виртуальных машинах, необходимо учесть несколько предварительных требований.
 
@@ -78,8 +78,8 @@ ms.locfileid: "101643534"
 :::image type="content" source="media\automanage-virtual-machines\intelligently-onboard-services.png" alt-text="Интеллектуальные, интегрированные службы.":::
 
 Полный список участвующих служб Azure, а также их поддерживаемой среды см. в следующих статьях:
-- [Управление для Linux](automanage-linux.md)
-- [Управление для Windows Server](automanage-windows-server.md)
+- [Автоматическое управление для Linux](automanage-linux.md)
+- [Автоматическое управление для Windows Server](automanage-windows-server.md)
 
  Мы автоматически будем подключать вас к этим участвующим службам. Они необходимы для нашего технического документа, который можно найти в нашей [облачной инфраструктуре внедрения](/azure/cloud-adoption-framework/manage/azure-server-management).
 
@@ -121,8 +121,8 @@ ms.locfileid: "101643534"
 > Нельзя изменить конфигурацию енивонрмент на виртуальной машине, пока включена поддержка управления. Вам потребуется отключить для этой виртуальной машины функцию автоуправления, а затем повторно включить ее с требуемой средой и предпочтениями.
 
 Полный список участвующих служб Azure и, если они поддерживают параметры, см. здесь:
-- [Управление для Linux](automanage-windows-server.md)
-- [Управление для Windows Server](automanage-windows-server.md)
+- [Автоматическое управление для Linux](automanage-windows-server.md)
+- [Автоматическое управление для Windows Server](automanage-windows-server.md)
 
 
 ## <a name="automanage-account"></a>Учетная запись управления

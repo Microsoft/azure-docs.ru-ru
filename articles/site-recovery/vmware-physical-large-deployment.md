@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: raynew
 ms.openlocfilehash: cc87429f269fba5083b87e2c328f0e21de9707ff
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102454353"
 ---
 # <a name="set-up-disaster-recovery-at-scale-for-vmware-vmsphysical-servers"></a>Настройка аварийного восстановления в масштабе для виртуальных машин VMware или физических серверов
@@ -95,7 +95,7 @@ ms.locfileid: "102454353"
 
 Что означает? Для запуска виртуальной машины Azure требуется, чтобы некоторые драйверы были в состоянии запуска загрузки, а службы, например DHCP, были настроены для автоматического запуска.
 - Компьютеры, которые соответствуют этим параметрам, уже будут иметь эти параметры.
-- Для компьютеров под Windows можно заранее проверить соответствие требованиям и при необходимости сделать их совместимыми. [Подробнее.](site-recovery-failover-to-azure-troubleshoot.md#failover-failed-with-error-id-170010)
+- Для компьютеров под Windows можно заранее проверить соответствие требованиям и при необходимости сделать их совместимыми. [Подробнее](site-recovery-failover-to-azure-troubleshoot.md#failover-failed-with-error-id-170010).
 - Компьютеры Linux приводятся в соответствие только во время отработки отказа.
 
 **Компьютер соответствует Azure?** | **Ограничения виртуальных машин Azure (отработка отказа управляемого диска)**

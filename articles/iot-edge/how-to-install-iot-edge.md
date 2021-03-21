@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/01/2021
 ms.author: kgremban
 ms.openlocfilehash: 6a64bb2801830440dc49e72786c9c00a6e4796b3
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103201622"
 ---
 # <a name="install-or-uninstall-azure-iot-edge-for-linux"></a>Установка или удаление Azure IoT Edge для Linux
@@ -552,6 +552,6 @@ sudo apt-get remove --purge moby-cli
 sudo apt-get remove --purge moby-engine
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Продолжайте [развертывать модули IOT Edge](how-to-deploy-modules-portal.md) , чтобы узнать, как развернуть модули на устройстве.
