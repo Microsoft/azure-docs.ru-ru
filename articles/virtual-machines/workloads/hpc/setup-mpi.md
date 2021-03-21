@@ -5,28 +5,31 @@ author: vermagit
 ms.service: virtual-machines
 ms.subservice: hpc
 ms.topic: article
-ms.date: 08/06/2020
+ms.date: 03/18/2021
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: 9804ed23da4cb9ccbb7515cec03fcc9b4147f749
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 8f071dfe817d15b745575fbfb70ff662a643db70
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/20/2021
-ms.locfileid: "101673265"
+ms.locfileid: "104721359"
 ---
 # <a name="set-up-message-passing-interface-for-hpc"></a>Настройка интерфейса передачи сообщений для HPC
 
 [Интерфейс передачи сообщений (MPI)](https://en.wikipedia.org/wiki/Message_Passing_Interface) — это открытая библиотека и де-факто Standard для параллелизации распределенной памяти. Обычно он используется во многих рабочих нагрузках HPC. Рабочие нагрузки HPC на виртуальных машинах серии [H](../../sizes-hpc.md) и серии [N](../../sizes-gpu.md) с [поддержкой RDMA](../../sizes-hpc.md#rdma-capable-instances) могут использовать MPI для обмена данными через сеть InfiniBand с низкой задержкой и с высокой пропускной способностью.
+- Размеры виртуальных машин с поддержкой SR-IOV в Azure поддерживают почти любую версию MPI для использования с Mellanox ОФЕД.
+- На виртуальных машинах, не использующих SR-IOV, поддерживаемые реализации MPI используют интерфейс Microsoft Network Direct (ND) для обмена данными между виртуальными машинами. Таким образом, поддерживаются только версии Microsoft MPI (MS-MPI) 2012 R2 и более поздних версий и Intel MPI 5. x. Более поздние версии (2017, 2018) библиотеки Intel MPI Runtime могут быть несовместимыми с драйверами Azure RDMA.
 
-Размеры виртуальных машин с поддержкой SR-IOV в Azure (HBv2, хб, HC, NCv3, NDv2) позволяют использовать почти любую разновидность MPI с Mellanox ОФЕД. На виртуальных машинах, не использующих SR-IOV, поддерживаемые реализации MPI используют интерфейс Microsoft Network Direct (ND) для обмена данными между виртуальными машинами. Таким образом, поддерживаются только версии Microsoft MPI (MS-MPI) 2012 R2 и более поздних версий и Intel MPI 5. x. Более поздние версии (2017, 2018) библиотеки Intel MPI Runtime могут быть несовместимыми с драйверами Azure RDMA.
-
-Для [виртуальных машин с поддержкой RDMA](../../sizes-hpc.md#rdma-capable-instances), поддерживающих SR-IOV, [CentOS-HPC версии 7,6 или более поздней](https://techcommunity.microsoft.com/t5/Azure-Compute/CentOS-HPC-VM-Image-for-SR-IOV-enabled-Azure-HPC-VMs/ba-p/665557) версии образы виртуальных машин в Marketplace оптимизируются и предварительно загружаются с драйверами офед для RDMA и различными часто используемыми библиотеками MPI и многосторонними средами, а также представляют собой самый простой способ начать работу.
+Для [виртуальных машин с поддержкой RDMA](../../sizes-hpc.md#rdma-capable-instances), поддерживающих SR-IOV, подходят [образы виртуальных машин CentOS-HPC](configure.md#centos-hpc-vm-images) версии 7,6 и более поздних. Эти образы виртуальных машин оптимизированы и предварительно загружены с драйверами ОФЕД для RDMA и различными часто используемыми библиотеками MPI и инженерными пакетами для научных вычислений и являются самым простым способом приступить к работе.
 
 Хотя здесь приведены примеры для RHEL/CentOS, но эти действия являются общими и могут использоваться для любой совместимой операционной системы Linux, такой как Ubuntu (16,04, 18,04 19,04, 20,04) и SLES (12 SP4 и 15). Дополнительные примеры настройки других реализаций MPI на других реализациях дистрибутивов см. в [репозитории азпк-Images](https://github.com/Azure/azhpc-images/blob/master/ubuntu/ubuntu-18.x/ubuntu-18.04-hpc/install_mpis.sh).
 
 > [!NOTE]
-> Для выполнения заданий MPI на виртуальных машинах с поддержкой SR-IOV необходимо настроить ключи разделов (p-ключи) в клиенте для изоляции и безопасности. Выполните действия, описанные в разделе [Обнаружение ключей разделов](#discover-partition-keys) , чтобы узнать о том, как определить значения p-ключа и правильно настроить их для задания MPI.
+> Выполнение заданий MPI на виртуальных машинах с поддержкой SR-IOV с определенными библиотеками MPI (например, платформой MPI) может потребовать настройки ключей разделов (p-Keys) в клиенте для изоляции и безопасности. Выполните действия, описанные в разделе [Обнаружение ключей разделов](#discover-partition-keys) , чтобы узнать о том, как определить значения p-ключа и правильно настроить их для задания MPI с помощью этой библиотеки MPI.
+
+> [!NOTE]
+> Ниже приведены примеры фрагментов кода. Рекомендуется использовать последние стабильные версии пакетов или ссылаться на [репозиторий азпк-Images](https://github.com/Azure/azhpc-images/blob/master/ubuntu/ubuntu-18.x/ubuntu-18.04-hpc/install_mpis.sh).
 
 ## <a name="ucx"></a>уккс
 
@@ -40,9 +43,12 @@ cd ucx-1.4.0
 make -j 8 && make install
 ```
 
+> [!NOTE]
+> В последних сборках УККС устранена [проблема](https://github.com/openucx/ucx/pull/5965) , при которой в наличии нескольких ИНТЕРФЕЙСОВ сетевой карты выбран правильный интерфейс InfiniBand. Дополнительные сведения о работе MPI через InfiniBand при включении ускоренной [сети на виртуальной](hb-hc-known-issues.md#accelerated-networking-on-hb-hc-hbv2-and-ndv2) машине.
+
 ## <a name="hpc-x"></a>HPC-X
 
-[Набор программного обеспечения HPC-X](https://www.mellanox.com/products/hpc-x-toolkit) содержит УККС и хколл.
+[Набор программного обеспечения HPC-X](https://www.mellanox.com/products/hpc-x-toolkit) содержит УККС и хколл и может быть построен для уккс.
 
 ```bash
 HPCX_VERSION="v2.6.0"
@@ -58,18 +64,20 @@ HPCX_PATH=${INSTALL_PREFIX}/hpcx-${HPCX_VERSION}-gcc-MLNX_OFED_LINUX-5.0-1.0.0.0
 ```bash
 ${HPCX_PATH}mpirun -np 2 --map-by ppr:2:node -x UCX_TLS=rc ${HPCX_PATH}/ompi/tests/osu-micro-benchmarks-5.3.2/osu_latency
 ```
+> [!NOTE] 
+> При использовании HPC-X 2.7.4 + может потребоваться явно передавать LD_LIBRARY_PATH, если версия УККС в МОФЕД VS, а в HPC-X отличается.
 
 ## <a name="openmpi"></a>опенмпи
 
 Установите УККС, как описано выше. ХКОЛЛ является частью [набора программного обеспечения HPC-X](https://www.mellanox.com/products/hpc-x-toolkit) и не требует специальной установки.
 
-Установите Опенмпи из пакетов, доступных в репозитории.
+Опенмпи можно установить из пакетов, доступных в репозитории.
 
 ```bash
 sudo yum install –y openmpi
 ```
 
-Сборка Опенмпи.
+Мы советуем создать новейший, стабильный выпуск Опенмпи с УККС.
 
 ```bash
 OMPI_VERSION="4.0.3"
@@ -80,7 +88,7 @@ cd openmpi-${OMPI_VERSION}
 ./configure --prefix=${INSTALL_PREFIX}/openmpi-${OMPI_VERSION} --with-ucx=${UCX_PATH} --with-hcoll=${HCOLL_PATH} --enable-mpirun-prefix-by-default --with-platform=contrib/platform/mellanox/optimized && make -j$(nproc) && make install
 ```
 
-Запустите Опенмпи.
+Для оптимальной производительности запустите Опенмпи с помощью `ucx` и `hcoll` .
 
 ```bash
 ${INSTALL_PREFIX}/bin/mpirun -np 2 --map-by node --hostfile ~/hostfile -mca pml ucx --mca btl ^vader,tcp,openib -x UCX_NET_DEVICES=mlx5_0:1  -x UCX_IB_PKEY=0x0003  ./osu_latency
@@ -90,7 +98,10 @@ ${INSTALL_PREFIX}/bin/mpirun -np 2 --map-by node --hostfile ~/hostfile -mca pml 
 
 ## <a name="intel-mpi"></a>Intel MPI
 
-Скачайте версию [Intel MPI](https://software.intel.com/mpi-library/choose-download). Измените переменную среды I_MPI_FABRICS в зависимости от версии. Для Intel MPI 2018 используйте, `I_MPI_FABRICS=shm:ofa` а для 2019 — `I_MPI_FABRICS=shm:ofi` .
+Скачайте версию [Intel MPI](https://software.intel.com/mpi-library/choose-download). Измените переменную среды I_MPI_FABRICS в зависимости от версии.
+- Intel MPI 2019 и 2021: используйте `I_MPI_FABRICS=shm:ofi` , `I_MPI_OFI_PROVIDER=mlx` . `mlx`Поставщик использует уккс. Использование команд было обнаружено как нестабильное и менее производительное. Дополнительные сведения см. в [статье течкоммунити](https://techcommunity.microsoft.com/t5/azure-compute/intelmpi-2019-on-azure-hpc-clusters/ba-p/1403149) .
+- Intel MPI 2018: использование `I_MPI_FABRICS=shm:ofa`
+- Intel MPI 2016: использование `I_MPI_DAPL_PROVIDER=ofa-v2-ib0`
 
 ### <a name="non-sr-iov-vms"></a>Виртуальные машины без SR-IOV
 Для виртуальных машин, не использующих SR-IOV, пример загрузки [бесплатной оценочной версии](https://registrationcenter.intel.com/en/forms/?productid=1740) среды выполнения 5. x выглядит следующим образом:
@@ -108,6 +119,45 @@ echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
 ```bash
 sudo rpm -v -i --nodeps /opt/intelMPI/intel_mpi_packages/*.rpm
 ```
+
+## <a name="mvapich2"></a>MVAPICH2
+
+Сборка MVAPICH2.
+
+```bash
+wget http://mvapich.cse.ohio-state.edu/download/mvapich/mv2/mvapich2-2.3.tar.gz
+tar -xv mvapich2-2.3.tar.gz
+cd mvapich2-2.3
+./configure --prefix=${INSTALL_PREFIX}
+make -j 8 && make install
+```
+
+Выполнение MVAPICH2.
+
+```bash
+${INSTALL_PREFIX}/bin/mpirun_rsh -np 2 -hostfile ~/hostfile MV2_CPU_MAPPING=48 ./osu_latency
+```
+
+## <a name="platform-mpi"></a>Платформа MPI
+
+Установите необходимые пакеты для платформы MPI Community Edition.
+
+```bash
+sudo yum install libstdc++.i686
+sudo yum install glibc.i686
+Download platform MPI at https://www.ibm.com/developerworks/downloads/im/mpi/index.html 
+sudo ./platform_mpi-09.01.04.03r-ce.bin
+```
+
+Выполните процедуру установки.
+
+Следующие команды являются примерами запуска MPI пингпонг и онлайн-обучение с использованием платформы MPI на виртуальных машинах HBv3 с помощью образов виртуальных машин CentOS-HPC 7,6, 7,8 и 8,1.
+
+```bash
+/opt/ibm/platform_mpi/bin/mpirun -hostlist 10.0.0.8:1,10.0.0.9:1 -np 2 -e MPI_IB_PKEY=0x800a  -ibv  /home/jijos/mpi-benchmarks/IMB-MPI1 pingpong
+/opt/ibm/platform_mpi/bin/mpirun -hostlist 10.0.0.8:120,10.0.0.9:120 -np 240 -e MPI_IB_PKEY=0x800a  -ibv  /home/jijos/mpi-benchmarks/IMB-MPI1 allreduce -npmin 240
+```
+
 
 ## <a name="mpich"></a>MPICH
 
@@ -128,37 +178,6 @@ ${INSTALL_PREFIX}/bin/mpiexec -n 2 -hostfile ~/hostfile -env UCX_IB_PKEY=0x0003 
 ```
 
 Проверьте ключ раздела, как упоминалось выше.
-
-## <a name="mvapich2"></a>MVAPICH2
-
-Сборка MVAPICH2.
-
-```bash
-wget http://mvapich.cse.ohio-state.edu/download/mvapich/mv2/mvapich2-2.3.tar.gz
-tar -xv mvapich2-2.3.tar.gz
-cd mvapich2-2.3
-./configure --prefix=${INSTALL_PREFIX}
-make -j 8 && make install
-```
-
-Выполнение MVAPICH2.
-
-```bash
-${INSTALL_PREFIX}/bin/mpirun_rsh -np 2 -hostfile ~/hostfile MV2_CPU_MAPPING=48 ./osu_latency
-```
-
-## <a name="platform-mpi-community-edition"></a>Платформа MPI Community Edition
-
-Установите необходимые пакеты для платформы MPI.
-
-```bash
-sudo yum install libstdc++.i686
-sudo yum install glibc.i686
-Download platform MPI at https://www.ibm.com/developerworks/downloads/im/mpi/index.html 
-sudo ./platform_mpi-09.01.04.03r-ce.bin
-```
-
-Выполните процедуру установки.
 
 ## <a name="osu-mpi-benchmarks"></a>Тесты производительности осу MPI
 
@@ -233,9 +252,9 @@ chmod 644 /home/$USER/.ssh/config
 
 В приведенном выше синтаксисе предполагается наличие общего домашнего каталога, иначе каталог. ssh должен быть скопирован на каждый узел.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Сведения о виртуальных машинах серии [H](../../sizes-hpc.md) и [N](../../sizes-gpu.md) с [поддержкой InfiniBand](../../sizes-hpc.md#rdma-capable-instances)
-- Дополнительные сведения об оптимальной настройке рабочих нагрузок для производительности и масштабируемости см. в статье с обзором виртуальных машин серии [HB](hb-series-overview.md) и [HC](hc-series-overview.md).
-- Ознакомьтесь с последними объявлениями и некоторыми примерами HPC, а также результатами в [блогах технического сообщества службы вычислений](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
+- Ознакомьтесь с обзором [HBv3-Series](hbv3-series-overview.md) и [описанием серии HC](hc-series-overview.md).
+- Ознакомьтесь с последними объявлениями, примерами рабочей нагрузки HPC и результатами производительности в [блогах сообщества разработчиков Azure](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
 - Сведения о более высоком уровне архитектурного представления выполнения рабочих нагрузок HPC см. в статье [Высокопроизводительные вычисления (HPC) в Azure](/azure/architecture/topics/high-performance-computing/).

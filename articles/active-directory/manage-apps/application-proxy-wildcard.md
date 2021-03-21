@@ -17,10 +17,10 @@ ms.reviewer: harshja
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c2f3d1d47bd26167253296f06af5470818760850
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99257986"
 ---
 # <a name="wildcard-applications-in-the-azure-active-directory-application-proxy"></a>Приложения с подстановочным знаком в прокси приложения Azure Active Directory
@@ -45,13 +45,13 @@ ms.locfileid: "99257986"
 
 > HTTP (s)://*.\<domain\>
 
-Например: `http(s)://*.adventure-works.com`.
+Например, `http(s)://*.adventure-works.com`.
 
 Хотя внутренние и внешние URL-адреса могут содержать разные домены, рекомендуется, чтобы они совпадали. При публикации приложения появится сообщение об ошибке, если один из URL-адресов не содержит подстановочный знак.
 
 При создании приложения с подстановочным знаком используется тот же [процесс публикации приложения](application-proxy-add-on-premises-application.md), что и для всех других приложений. Единственное отличие заключается в добавлении подстановочного знака в URL-адреса и, возможно, настройке единого входа.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы приступить к работе, убедитесь, что вы удовлетворены этими требованиями.
 

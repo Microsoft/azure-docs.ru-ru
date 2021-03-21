@@ -15,10 +15,10 @@ ms.reviewer: vincesm
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f56f8ac42f0db3d2cd27453cd023a2e869b0cde0
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103466088"
 ---
 # <a name="roles-for-microsoft-365-services-in-azure-active-directory"></a>Роли для служб Microsoft 365 в Azure Active Directory
@@ -45,7 +45,7 @@ Advanced Threat Protection в Защитнике Windows | [Управление
 Intune | [Управление доступом на основе ролей (RBAC) с помощью Microsoft Intune](/intune/role-based-access-control) | [API Graph](/graph/api/resources/intune-rbac-conceptual?view=graph-rest-beta&preserve-view=true)<br>[Получение назначений ролей](/graph/api/intune-rbac-roledefinition-list?view=graph-rest-beta&preserve-view=true)
 Управляемый рабочий стол | [Разрешения роли администратора в Azure Active Directory](permissions-reference.md) | [API Graph](/graph/api/overview)<br>[Получение назначений ролей](/graph/api/directoryrole-list)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Просмотр и назначение ролей администратора в Azure Active Directory](manage-roles-portal.md)
 * [Administrator role permissions in Azure Active Directory](permissions-reference.md) (Разрешения ролей администратора в Azure Active Directory)

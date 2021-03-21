@@ -15,10 +15,10 @@ ms.workload: infrastructure-services
 ms.date: 08/28/2019
 ms.author: kaushika
 ms.openlocfilehash: 9a0d06a8f8fa8f68f063404f2b483b817eb0563f
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102452107"
 ---
 # <a name="configure-and-validate-virtual-network-or-vpn-connections"></a>Настройка и проверка виртуальной сети или VPN-подключений
@@ -64,7 +64,7 @@ VPN-шлюзы Azure обеспечивают гибкость при Орган
 
 ![Параметры для проверки конфигурации пиринга виртуальной сети](./media/virtual-network-configure-vnet-connections/4034496_en_1.png)
  
-Для Azure PowerShell выполните команду [Get-azurermvirtualnetworkpeering —](/powershell/module/azurerm.network/get-azurermvirtualnetworkpeering) , чтобы получить пиринг виртуальной сети. Ниже приведен пример:
+Для Azure PowerShell выполните команду [Get-azurermvirtualnetworkpeering —](/powershell/module/azurerm.network/get-azurermvirtualnetworkpeering) , чтобы получить пиринг виртуальной сети. Приведем пример:
 
 ```
 PS C:\Users\User1> Get-AzureRmVirtualNetworkPeering -VirtualNetworkName Vnet10-01 -ResourceGroupName dev-vnets

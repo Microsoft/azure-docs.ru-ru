@@ -15,10 +15,10 @@ ms.custom:
 - seo-update-azuread-jan"
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 60cd944ecb144a30e872259f6e959a11c3ea6319
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100365435"
 ---
 # <a name="troubleshooting-azure-active-directory-b2b-collaboration"></a>Устранение неполадок службы совместной работы Azure Active Directory B2B
@@ -27,7 +27,7 @@ ms.locfileid: "100365435"
 
    > [!IMPORTANT]
    > - **Начиная с 4 января 2021 г.** компания Google [прекращает поддержку входа через веб-представление](https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html). Если вы используете федерацию Google или самостоятельную регистрацию с помощью Gmail, вам нужно [проверить нативные бизнес-приложения на совместимость](google-federation.md#deprecation-of-webview-sign-in-support).
-   > - **Начиная с 2021 октября** Корпорация Майкрософт больше не будет поддерживать погашение приглашений, создавая неуправляемые учетные записи и клиенты Azure AD для сценариев совместной работы B2B. В ходе подготовки мы советуем клиентам перейти на [проверку подлинности с использованием одноразового секретного кода](one-time-passcode.md). Мы будем рады вашим отзывам об этой функции, предоставляемой в общедоступной предварительной версии, и с радостью создадим другие способы для совместной работы.
+   > - **Начиная с октября 2021 г.** корпорация Майкрософт прекратит поддержку активации через приглашение при создании неуправляемых учетных записей и арендаторов Azure AD для сценариев совместной работы B2B. В ходе подготовки мы советуем клиентам перейти на [проверку подлинности с использованием одноразового секретного кода](one-time-passcode.md). Мы будем рады вашим отзывам об этой функции, предоставляемой в общедоступной предварительной версии, и с радостью создадим другие способы для совместной работы.
 
 ## <a name="ive-added-an-external-user-but-do-not-see-them-in-my-global-address-book-or-in-the-people-picker"></a>После добавления внешнего пользователя он не отображается в глобальной адресной книге или в средстве выбора пользователей
 
@@ -122,6 +122,6 @@ ms.locfileid: "100365435"
 
 Теперь восстановленное приложение появится в портал Azure.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Получение поддержки для службы совместной работы B2B](../fundamentals/active-directory-troubleshooting-support-howto.md)

@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: jingwang
 ms.openlocfilehash: a3cd3c3ae28ae302e9469a71d00054152a9b5fb5
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100383710"
 ---
 # <a name="copy-data-from-cassandra-using-azure-data-factory"></a>Копирование данных из базы данных Cassandra с помощью фабрики данных Azure
@@ -39,7 +39,7 @@ ms.locfileid: "100383710"
 >[!NOTE]
 >Для выполнения действия в локальной среде выполнения интеграции Cassandra 3.x поддерживается в IR версии 3.7 и более поздних.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [data-factory-v2-integration-runtime-requirements](../../includes/data-factory-v2-integration-runtime-requirements.md)]
 
@@ -55,7 +55,7 @@ ms.locfileid: "100383710"
 
 Для связанной службы Cassandra поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type |Для свойства type необходимо задать значение **Cassandra**. |Да |
 | host |Один или несколько IP-адресов или имен узлов серверов Cassandra.<br/>Укажите через запятую список IP-адресов или имен узлов для одновременного подключения ко всем серверам. |Да |
@@ -187,7 +187,7 @@ ms.locfileid: "100383710"
 | INET |Строка |
 | INT |Int32 |
 | TEXT |Строка |
-| timestamp |Дата и время |
+| timestamp |Дата/время |
 | TIMEUUID |Guid |
 | UUID |Guid |
 | VARCHAR |Строка |
@@ -214,7 +214,7 @@ ms.locfileid: "100383710"
 
 Ниже приведен пример таблицы ExampleTable в базе данных Cassandra. В этой таблице содержатся такие столбцы: столбец первичного ключа pk_int (целое число), текстовый столбец "Значение", столбец "Список", "Сопоставление" и StringSet.
 
-| pk_int | Значение | List | Карта | StringSet |
+| pk_int | Значение | Список | Схема | StringSet |
 | --- | --- | --- | --- | --- |
 | 1 |"пример значения 1" |["1", "2", "3"] |{"S1": "a", "S2": "b"} |{"A", "B", "C"} |
 | 3 |"пример значения 3" |["100", "101", "102", "105"] |{"S1": "t"} |{"A", "E"} |

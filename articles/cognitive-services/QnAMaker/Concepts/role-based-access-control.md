@@ -6,10 +6,10 @@ ms.subservice: qna-maker
 ms.topic: conceptual
 ms.date: 05/15/2020
 ms.openlocfilehash: 512ae470d3c9068b9d284095a18013fc84dbf36e
-ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103232551"
 ---
 # <a name="collaborate-with-other-authors-and-editors"></a>Совместная работа с другими авторами и редакторами

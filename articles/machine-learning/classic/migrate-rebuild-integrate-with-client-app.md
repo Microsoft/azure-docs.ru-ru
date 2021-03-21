@@ -9,10 +9,10 @@ author: xiaoharper
 ms.author: zhanxia
 ms.date: 03/08/2021
 ms.openlocfilehash: bf0624e0667c9fc6998fb28898a3376ca409180d
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103565500"
 ---
 # <a name="consume-pipeline-endpoints-from-client-applications"></a>Использование конечных точек конвейера из клиентских приложений
@@ -63,7 +63,7 @@ ms.locfileid: "103565500"
 Вы можете вызвать конвейер Машинное обучение Azure в качестве шага в конвейере фабрики данных Azure. Дополнительные сведения см. [в статье выполнение конвейеров машинное обучение Azure в фабрике данных Azure](../../data-factory/transform-data-machine-learning-service.md).
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этой статье вы узнали, как найти схему и пример кода для конечных точек конвейера. Дополнительные сведения о потреблении конечных точек из клиентского приложения см. в разделе [Использование конечной точки машинное обучение Azure](../how-to-consume-web-service.md).
 

@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 12/14/2020
 ms.openlocfilehash: f679d6fbab57bcbcccc09b722f6b2f670df49eb2
-ms.sourcegitcommit: 66479d7e55449b78ee587df14babb6321f7d1757
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97516578"
 ---
 # <a name="simple-query-syntax-in-azure-cognitive-search"></a>Простой синтаксис запросов в Azure Когнитивный поиск
@@ -121,7 +121,7 @@ POST https://{{service-name}}.search.windows.net/indexes/hotel-rooms-sample/docs
 
 + Для POST (и любого другого запроса), где текст запроса включает `search` и другие параметры, такие как `filter` и `orderby` , максимальный размер равен 16 МБ, где максимальное число предложений в `search` (выражения, разделенные с помощью and, OR и т. д.) равно 1024. Кроме того, размер любого отдельного термина в запросе не может превышать 32 КБ. Дополнительные сведения см. в разделе [ограничения запросов API](search-limits-quotas-capacity.md#api-request-limits).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вы будете создавать запросы программно, ознакомьтесь с [полнотекстовым поиском в когнитивный Поиск Azure](search-lucene-query-architecture.md) , чтобы понять этапы обработки запросов и влияние анализа текста.
 
@@ -129,6 +129,6 @@ POST https://{{service-name}}.search.windows.net/indexes/hotel-rooms-sample/docs
 
 + [Примеры запросов для простого поиска](search-query-simple-examples.md)
 + [Примеры запросов для полного поиска в Lucene](search-query-lucene-examples.md)
-+ [Поиск документов REST API](/rest/api/searchservice/Search-Documents)
++ [Search Documents (Azure Search Service REST API)](/rest/api/searchservice/Search-Documents) (Поиск по документам (REST API службы поиска Azure))
 + [Синтаксис запросов Lucene](query-lucene-syntax.md)
 + [Синтаксис выражений Filter и SELECT (OData)](query-odata-filter-orderby-syntax.md)

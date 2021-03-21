@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 02/16/2021
 ms.author: victorh
 ms.openlocfilehash: d6a79e87e9999dd520358e0722011cf4e54d8c63
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100546250"
 ---
 # <a name="azure-firewall-dns-settings"></a>Параметры DNS брандмауэра Azure
@@ -161,6 +161,6 @@ $azFw.DNSEnableProxy = $true
 $azFw | Set-AzFirewall
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Фильтрация FQDN в правилах сети](fqdn-filtering-network-rules.md)

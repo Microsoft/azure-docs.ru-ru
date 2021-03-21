@@ -9,12 +9,12 @@ ms.author: mikben
 ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-ms.openlocfilehash: f47a8f1edb4afed41587eac3d539b5ad7cb8180f
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 6db817999b415ebe2c4bb7cb4216ed1e9ad9c325
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103488471"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104655994"
 ---
 # <a name="quickstart-handle-sms-events"></a>Краткое руководство. Обработка событий SMS
 
@@ -27,7 +27,7 @@ ms.locfileid: "103488471"
 
 ## <a name="about-azure-event-grid"></a>Сетка событий Azure
 
-[Сетка событий Azure](../../../event-grid/overview.md) — это облачная служба обработки событий. Из этой статьи вы узнаете, как подписываться на события [службы коммуникации](../../concepts/event-handling.md) и запускать событие для просмотра результата. Как правило, события отправляются на конечную точку, которая обрабатывает данные событий и выполняет соответствующие действия. В рамках этой статьи события отправляются в веб-приложение, которое собирает и отображает сообщения.
+[Сетка событий Azure](../../../event-grid/overview.md) — это облачная служба обработки событий. Из этой статьи вы узнаете, как подписываться на события [службы коммуникации](../../../event-grid/event-schema-communication-services.md) и запускать событие для просмотра результата. Как правило, события отправляются на конечную точку, которая обрабатывает данные событий и выполняет соответствующие действия. В рамках этой статьи события отправляются в веб-приложение, которое собирает и отображает сообщения.
 
 ## <a name="prerequisites"></a>Предварительные требования
 - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
@@ -68,7 +68,7 @@ ms.locfileid: "103488471"
 
 Если вам предложено ввести **имя системного раздела**, можно предоставить уникальную строку. Значение в этом поле не влияет на вашу работу и используется для внутренней телеметрии.
 
-Просмотрите полный список [событий, поддерживаемых Службами коммуникации Azure](../../concepts/event-handling.md).
+Просмотрите полный список [событий, поддерживаемых Службами коммуникации Azure](https://docs.microsoft.com/azure/event-grid/event-schema-communication-services).
 
 :::image type="content" source="./media/handle-sms-events/select-events-create-eventsub.png" alt-text="Снимок экрана: выбранные типы событий &quot;SMS получено&quot; и &quot;Получен отчет о доставке SMS&quot;.":::
 
@@ -93,7 +93,7 @@ ms.locfileid: "103488471"
 - События `SMS Received` создаются, когда на номер телефона Служб коммуникации приходит текстовое сообщение. Чтобы активировать событие, отправьте сообщение с телефона на номер телефона, подключенный к ресурсу Служб коммуникации.
 - События `SMS Delivery Report Received` создаются при отправке SMS пользователю с номера телефона Служб коммуникации. Для активации события необходимо включить `Delivery Report` в параметрах [отправляемого SMS](../telephony-sms/send.md). Попробуйте отправить сообщение на свой телефон с помощью `Delivery Report`. Выполнение этого действия предполагает небольшую дополнительную плату в несколько центов США в учетной записи Azure.
 
-Просмотрите полный список [событий, поддерживаемых Службами коммуникации Azure](../../concepts/event-handling.md).
+Просмотрите полный список [событий, поддерживаемых Службами коммуникации Azure](https://docs.microsoft.com/azure/event-grid/event-schema-communication-services).
 
 ### <a name="receiving-sms-events"></a>Получение событий SMS
 
@@ -103,7 +103,7 @@ ms.locfileid: "103488471"
 
 :::image type="content" source="./media/handle-sms-events/sms-delivery-report-received.png" alt-text="Снимок экрана: схема Сетки событий для события &quot;Получен отчет о доставке SMS&quot;.":::
 
-Дополнительные сведения см. в статье [Обработка событий в Службах коммуникации Azure](../../concepts/event-handling.md).
+Дополнительные сведения см. в статье [Обработка событий в Службах коммуникации Azure](https://docs.microsoft.com/azure/event-grid/event-schema-communication-services).
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
@@ -118,5 +118,5 @@ ms.locfileid: "103488471"
 
 Полезные ссылки
 
- - [Обработка событий в Службах коммуникации Azure](../../concepts/event-handling.md)
+ - [Обработка событий в Службах коммуникации Azure](../../../event-grid/event-schema-communication-services.md)
  - [Что такое служба "Сетка событий Azure"?](../../../event-grid/overview.md)

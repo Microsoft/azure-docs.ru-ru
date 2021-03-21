@@ -11,10 +11,10 @@ ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
 ms.openlocfilehash: 6dcbf4a570fb5cdb58c914ea5e4b1164ed6a76ca
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103564496"
 ---
 # <a name="migration-guide-sql-server-to-sql-managed-instance"></a>Руководство по миграции: SQL Server в SQL Управляемый экземпляр
@@ -146,14 +146,14 @@ ms.locfileid: "103564496"
 
 1. Создайте резервную копию базы данных в хранилище BLOB-объектов Azure. Например, используйте [резервное копирование в URL-адрес](/sql/relational-databases/backup-restore/sql-server-backup-to-url) в [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms). Используйте [средство Microsoft Azure](https://go.microsoft.com/fwlink/?LinkID=324399) для поддержки баз данных, предшествующих SQL Server 2012 с пакетом обновления 1 (SP1) Cu2. 
 1. Подключитесь к Управляемый экземпляр Azure SQL с помощью SQL Server Management Studio. 
-1. Создайте учетные данные, используя подписанный URL-доступ для доступа к учетной записи хранилища BLOB-объектов Azure с резервными копиями базы данных. Пример.
+1. Создайте учетные данные, используя подписанный URL-доступ для доступа к учетной записи хранилища BLOB-объектов Azure с резервными копиями базы данных. Пример:
 
    ```sql
    CREATE CREDENTIAL [https://mitutorials.blob.core.windows.net/databases]
    WITH IDENTITY = 'SHARED ACCESS SIGNATURE'
    , SECRET = 'sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2028-09-06T02:52:55Z&st=2018-09-04T18:52:55Z&spr=https&sig=WOTiM%2FS4GVF%2FEEs9DGQR9Im0W%2BwndxW2CQ7%2B5fHd7Is%3D'
    ```
-1. Восстановите резервную копию из контейнера больших двоичных объектов службы хранилища Azure. Пример. 
+1. Восстановите резервную копию из контейнера больших двоичных объектов службы хранилища Azure. Пример: 
 
     ```sql
    RESTORE DATABASE [TargetDatabaseName] FROM URL =
@@ -208,7 +208,7 @@ ms.locfileid: "103564496"
 Некоторые SQL Server функции доступны только после изменения [уровня совместимости базы данных](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database) на последний уровень совместимости (150). 
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Сведения о службах и средствах Майкрософт и сторонних поставщиков, которые помогут вам в использовании различных сценариев переноса баз данных и данных, а также специальных задач см. в разделе [служба и средства для переноса данных](../../../dms/dms-tools-matrix.md).
 

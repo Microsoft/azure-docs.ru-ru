@@ -16,10 +16,10 @@ ms.topic: article
 ms.date: 03/05/2021
 ms.author: Zhchia
 ms.openlocfilehash: 8bebcb49bc7bf31614a161c08d33d5910679b614
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103225767"
 ---
 # <a name="tutorial-configure-britive-for-automatic-user-provisioning"></a>Учебник. Настройка Бритиве для автоматической подготовки пользователей

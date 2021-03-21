@@ -4,10 +4,10 @@ description: Описывает команды для преобразовани
 ms.topic: conceptual
 ms.date: 03/12/2021
 ms.openlocfilehash: 6d242f5846996cd0f5b9510a1a2b9f2bf063a0c7
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103422228"
 ---
 # <a name="converting-arm-templates-between-json-and-bicep"></a>Преобразование шаблонов ARM между JSON и Бицеп
@@ -66,6 +66,6 @@ bicep decompile main.json
 
 [Бицеп Playground](https://aka.ms/bicepdemo) позволяет просматривать эквивалентные файлы JSON и бицеп параллельно. Можно выбрать пример шаблона для просмотра обеих версий. Или выберите, `Decompile` чтобы отправить собственный шаблон JSON и просмотреть эквивалентный файл бицеп.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения о Бицеп см. в разделе [учебник по бицеп](./bicep-tutorial-create-first-bicep.md).

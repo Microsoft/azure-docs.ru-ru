@@ -7,10 +7,10 @@ ms.manager: abhemraj
 ms.topic: conceptual
 ms.date: 06/03/2020
 ms.openlocfilehash: cb5a1a51a7d622c1b0a605d155ade2f08022ab67
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100592496"
 ---
 # <a name="support-matrix-for-physical-server-assessment"></a>Матрица поддержки для оценки физических серверов 

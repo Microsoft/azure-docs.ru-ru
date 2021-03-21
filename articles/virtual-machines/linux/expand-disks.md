@@ -9,10 +9,10 @@ ms.date: 10/15/2018
 ms.author: rogarana
 ms.subservice: disks
 ms.openlocfilehash: 72778c431c561f5345dde3d6803e814d6fdebfba
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102549130"
 ---
 # <a name="expand-virtual-hard-disks-on-a-linux-vm-with-the-azure-cli"></a>Расширение виртуальных жестких дисков на виртуальной машине Linux с помощью Azure CLI
@@ -77,7 +77,7 @@ ms.locfileid: "102549130"
 
 1. Развертывание основного раздела и файловой системы.
 
-    a. Если диск подключен, отключите его:
+    а. Если диск подключен, отключите его:
 
     ```bash
     sudo umount /dev/sdc1

@@ -1,5 +1,5 @@
 ---
-title: API запросов к отчетам
+title: API пробного выполнения запросов отчетов
 description: Используйте этот API для выполнения запроса отчета для отчетов по анализу коммерческих рынков.
 ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
@@ -8,13 +8,13 @@ author: sayantanroy83
 ms.author: sroy
 ms.date: 3/08/2021
 ms.openlocfilehash: 0db212be06182128bbd8a3bf694a2f893ce82eae
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102583931"
 ---
-# <a name="try-report-queries-api"></a>API запросов к отчетам
+# <a name="try-report-queries-api"></a>API пробного выполнения запросов отчетов
 
 Этот API выполняет инструкцию запроса отчета. API возвращает только 10 записей, которые вы как партнер может использовать для проверки ожидаемых данных.
 

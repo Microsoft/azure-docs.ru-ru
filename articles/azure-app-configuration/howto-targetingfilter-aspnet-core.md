@@ -1,5 +1,5 @@
 ---
-title: Включение промежуточного развертывания компонентов для целевых аудиторий
+title: Включение поэтапного развертывания функций для определенных аудиторий
 titleSuffix: Azure App Configuration
 description: Узнайте, как включить поэтапный выпуск компонентов для целевых аудиторий
 ms.service: azure-app-configuration
@@ -8,13 +8,13 @@ ms.author: alkemper
 ms.topic: conceptual
 ms.date: 11/20/2020
 ms.openlocfilehash: c415eaeab2edd0a1b324bba4266266201cb50cbf
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96929690"
 ---
-# <a name="enable-staged-rollout-of-features-for-targeted-audiences"></a>Включение промежуточного развертывания компонентов для целевых аудиторий
+# <a name="enable-staged-rollout-of-features-for-targeted-audiences"></a>Включение поэтапного развертывания функций для определенных аудиторий
 
 Флаги компонентов позволяют динамически активировать или деактивировать функциональные возможности в приложении. Фильтры компонентов определяют состояние флага компонента при каждом его вычислении. `Microsoft.FeatureManagement`Библиотека включает `TargetingFilter` , которая включает флаг компонента для указанного списка пользователей и групп или указанный процент пользователей. `TargetingFilter` «прикреплен». Это означает, что после того, как отдельный пользователь получит функцию, он продолжит видеть эту функцию во всех будущих запросах. Можно использовать `TargetingFilter` , чтобы включить функцию для конкретной учетной записи во время демонстрации, чтобы последовательно развернуть новые функции для пользователей в разных группах или "кольцах" и многое другое.
 
@@ -46,7 +46,7 @@ ms.locfileid: "96929690"
    dotnet add package Microsoft.FeatureManagement.AspNetCore
    ```
 
-1. Добавьте файл *TestTargetingContextAccessor.CS* :
+1. Добавьте файл *тесттаржетингконтекстакцессор. CS* :
 
     ```csharp
     using Microsoft.AspNetCore.Http;
@@ -91,7 +91,7 @@ ms.locfileid: "96929690"
     }
     ```
 
-1. В *Startup.CS* добавьте ссылку на пространство имен *Microsoft. феатуреманажемент. феатурефилтерс* :
+1. В *Startup. CS* добавьте ссылку на пространство имен *Microsoft. феатуреманажемент. феатурефилтерс* :
 
     ```csharp
     using Microsoft.FeatureManagement.FeatureFilters;

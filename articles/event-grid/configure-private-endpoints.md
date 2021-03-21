@@ -5,10 +5,10 @@ ms.topic: how-to
 ms.date: 11/18/2020
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: f8a9ac46596b1c2611ce9df387ac995e8149e7b9
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102425351"
 ---
 # <a name="configure-private-endpoints-for-azure-event-grid-topics-or-domains"></a>Настройка частных конечных точек для разделов и доменов службы "Сетка событий Azure"
@@ -44,7 +44,7 @@ ms.locfileid: "102425351"
 
             ![Снимок экрана, на котором показана страница "Создание частной конечной точки — ресурс".](./media/configure-private-endpoints/resource-page.png)
     2. При выборе **подключения к ресурсу с помощью идентификатора ресурса или псевдонима** выполните следующие действия.
-        1. Введите идентификатор ресурса. Например: `/subscriptions/<AZURE SUBSCRIPTION ID>/resourceGroups/<RESOURCE GROUP NAME>/providers/Microsoft.EventGrid/topics/<EVENT GRID TOPIC NAME>`.  
+        1. Введите идентификатор ресурса. Например, `/subscriptions/<AZURE SUBSCRIPTION ID>/resourceGroups/<RESOURCE GROUP NAME>/providers/Microsoft.EventGrid/topics/<EVENT GRID TOPIC NAME>`.  
         2. Для **ресурса** введите **раздел** или **домен**. 
         3. используемых Добавление сообщения запроса. 
         4. По завершении выберите **Next: Конфигурация >**  в нижней части страницы. 
@@ -151,7 +151,7 @@ az network private-endpoint delete --resource-group <RESOURECE GROUP NAME> --nam
 
 
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 Обновите расширение службы "Сетка событий Azure" для интерфейса командной строки, выполнив следующую команду: 
 
 ```azurecli-interactive

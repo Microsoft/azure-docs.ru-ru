@@ -12,10 +12,10 @@ ms.custom: aaddev
 ms.service: active-directory
 ms.reviewer: lenalepa, manrath
 ms.openlocfilehash: eea2e587a075d774a25f479ec61575a002b57f75
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98937818"
 ---
 # <a name="validation-differences-by-supported-account-types-signinaudience"></a>Различия в проверке по поддерживаемым типам счетов (Сигнинаудиенце)
@@ -34,7 +34,7 @@ ms.locfileid: "98937818"
 
 Различия в проверке различных свойств для различных поддерживаемых типов учетных записей см. в следующей таблице.
 
-| Свойство | `AzureADMyOrg` | `AzureADMultipleOrgs` | `AzureADandPersonalMicrosoftAccount` и `PersonalMicrosoftAccount` |
+| Свойство. | `AzureADMyOrg` | `AzureADMultipleOrgs` | `AzureADandPersonalMicrosoftAccount` и `PersonalMicrosoftAccount` |
 |--------------|---------------|----------------|----------------|
 | URI идентификатора приложения ( `identifierURIs` )  | Должно быть уникальным в клиенте <br><br> поддерживаются схемы urn:// <br><br> Подстановочные знаки не поддерживаются <br><br> Строки запросов и фрагменты поддерживаются <br><br> Максимальная длина 255 символов <br><br> Нет ограничения * на число identifierURIs  | Оно должно быть глобально уникальным. <br><br> поддерживаются схемы urn:// <br><br> Подстановочные знаки не поддерживаются <br><br> Строки запросов и фрагменты поддерживаются <br><br> Максимальная длина 255 символов <br><br> Нет ограничения * на число identifierURIs | Оно должно быть глобально уникальным. <br><br> схемы urn://не поддерживаются <br><br> Подстановочные знаки, фрагменты и строки запросов не поддерживаются <br><br> Максимальная длина 120 символов <br><br> Максимум 50 identifierURIs |
 | Сертификаты ( `keyCredentials` ) | Симметричный ключ подписи | Симметричный ключ подписи | Шифрование и асимметричный ключ подписи | 

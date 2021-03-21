@@ -9,10 +9,10 @@ ms.tgt_pltfrm: ibiza
 ms.topic: conceptual
 ms.date: 06/29/2020
 ms.openlocfilehash: 862c6c5253c1bb4481476b67c7cfb203c2568e24
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101700581"
 ---
 # <a name="azure-monitor-workbooks-data-sources"></a>Источники данных Azure Monitor книг
@@ -57,7 +57,7 @@ ms.locfileid: "101700581"
 > [!NOTE]
 > `GET` `POST` `HEAD` В настоящее время поддерживаются только операции, и.
 
-## <a name="azure-data-explorer"></a>Azure Data Explorer
+## <a name="azure-data-explorer"></a>Обозреватель данных Azure
 
 Книги теперь поддерживают запросы из кластеров [Azure обозреватель данных](/azure/data-explorer/) с мощным языком запросов [Kusto](/azure/kusto/query/index) .
 

@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: bwren
 ms.openlocfilehash: 2435e4ed16889d9d4701b6047c0a1f602ee7ae91
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102558701"
 ---
 # <a name="azure-resource-logs"></a>журналов ресурсов Azure.
@@ -42,7 +42,7 @@ ms.locfileid: "102558701"
 
 Таблица AzureDiagnostics будет выглядеть следующим образом:  
 
-| ResourceProvider    | Категория     | Объект  | B  | C  | D  | E  | F  | G  | H  | I  |
+| ResourceProvider    | Category     | Объект  | B  | C  | D  | E  | F  | G  | H  | I  |
 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 | Microsoft. Service1 | AuditLogs    | x1 | Y1 | Z1 |    |    |    |    |    |    |
 | Microsoft. Service1 | ErrorLogs    |    |    |    | q1 | W1 | e1 |    |    |    |
@@ -59,7 +59,7 @@ ms.locfileid: "102558701"
  
 - Таблица *Service1AuditLogs* выглядит следующим образом:
 
-    | Поставщик ресурсов | Категория | Объект | B | C |
+    | Поставщик ресурсов | Category | Объект | B | C |
     | -- | -- | -- | -- | -- |
     | Service1 | AuditLogs | x1 | Y1 | Z1 |
     | Service1 | AuditLogs | x5 | y5 | z5 |
@@ -67,7 +67,7 @@ ms.locfileid: "102558701"
 
 - Таблица *Service1ErrorLogs* выглядит следующим образом:  
 
-    | Поставщик ресурсов | Категория | D | E | F |
+    | Поставщик ресурсов | Category | D | E | F |
     | -- | -- | -- | -- | -- | 
     | Service1 | ErrorLogs |  q1 | W1 | e1 |
     | Service1 | ErrorLogs |  q2 | W2 | e2 |
@@ -75,7 +75,7 @@ ms.locfileid: "102558701"
 
 - Таблица *Service2AuditLogs* выглядит следующим образом:  
 
-    | Поставщик ресурсов | Категория | G | H | I |
+    | Поставщик ресурсов | Category | G | H | I |
     | -- | -- | -- | -- | -- |
     | S2 | AuditLogs | J1 | k1 | L1|
     | S2 | AuditLogs | J3 | k3 | Индекс|

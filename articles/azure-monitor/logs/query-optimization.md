@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 03/30/2019
 ms.openlocfilehash: 7b5412b2ca738f5d2099521062e37afcff90e938
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102047338"
 ---
 # <a name="optimize-log-queries-in-azure-monitor"></a>Оптимизация запросов журналов в Azure Monitor
@@ -341,7 +341,7 @@ Perf
 ) on Computer
 ```
 
-Обычно такая ошибка возникает, когда [arg_max ()](/azure/kusto/query/arg-max-aggfunction) используется для поиска последнего вхождения. Пример.
+Обычно такая ошибка возникает, когда [arg_max ()](/azure/kusto/query/arg-max-aggfunction) используется для поиска последнего вхождения. Пример:
 
 ```Kusto
 Perf
@@ -467,6 +467,6 @@ Azure обозреватель данных использует несколь�
 
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Справочная документация по языку запросов Kusto](/azure/kusto/query/).

@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: vitalyg
 ms.openlocfilehash: bc1978f6ed0aa3e38f25fa03fc54ddc7d4efb9c3
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102033339"
 ---
 # <a name="troubleshooting-metrics-charts"></a>Устранение неполадок с диаграммами метрик
@@ -99,7 +99,7 @@ ms.locfileid: "102033339"
 
 1. Используйте [Обозреватель службы хранилища Azure](https://azure.microsoft.com/features/storage-explorer/) , чтобы проверить, что метрики передаются в учетную запись хранения. Если метрики не собираются, выполните инструкции из [руководства по устранению неполадок для расширения диагностики Azure](../agents/diagnostics-extension-troubleshooting.md#metric-data-doesnt-appear-in-the-azure-portal).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Дополнительные сведения о начале работы с обозревателем метрик](metrics-getting-started.md)
 * [Дополнительные сведения о дополнительных возможностях обозревателя метрик](../essentials/metrics-charts.md)

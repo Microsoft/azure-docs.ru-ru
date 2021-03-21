@@ -10,10 +10,10 @@ ms.topic: include
 ms.date: 03/04/2021
 ms.author: erhopf
 ms.openlocfilehash: 40aab9510eb90c405f92be49a3b4c0a3f756c872
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102620165"
 ---
 # <a name="how-to-prepare-html-content-for-immersive-reader"></a>Подготовка содержимого HTML для иммерсивное средство чтения

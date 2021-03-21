@@ -3,14 +3,14 @@ title: Управление сервером-портал Azure — база д�
 description: Узнайте, как управлять сервером базы данных Azure для MariaDB из портал Azure.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: how-to
 ms.date: 3/18/2020
-ms.openlocfilehash: b492e04629f23c991c1c5d69dd5e2c472676d37a
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: ade70c884a3ef01db45273e4789f34b629473661
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98664407"
 ---
 # <a name="manage-an-azure-database-for-mariadb-server-using-the-azure-portal"></a>Управление базой данных Azure для сервера MariaDB с помощью портал Azure
@@ -99,7 +99,7 @@ ms.locfileid: "98664407"
     > [!NOTE]
     > Удаление сервера необратимо.
 
-3. Выберите команду **Удалить**.
+3. Выберите **Удалить**.
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

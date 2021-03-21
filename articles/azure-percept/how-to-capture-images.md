@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 02/12/2021
 ms.custom: template-how-to
 ms.openlocfilehash: 44bf498af52f4d8a0d880dc1f1d5874d5b444cae
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102035540"
 ---
 # <a name="capture-images-for-a-vision-project-in-azure-percept-studio"></a>Запись образов для проекта концепции в Azure Перцепт Studio
@@ -60,6 +60,6 @@ ms.locfileid: "102035540"
 
 Все изображения будут доступны в [пользовательское визуальное распознавание](https://www.customvision.ai/).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Протестируйте и переучить модель концепции без кода](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/test-your-model).

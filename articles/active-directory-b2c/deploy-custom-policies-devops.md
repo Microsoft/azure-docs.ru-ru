@@ -12,10 +12,10 @@ ms.date: 02/14/2020
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 13f5f8da0bd58cef0974e8ea8f5f3c5172daa0ba
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96928738"
 ---
 # <a name="deploy-custom-policies-with-azure-pipelines"></a>Развертывание настраиваемых политик с помощью Azure Pipelines
@@ -31,7 +31,7 @@ ms.locfileid: "96928738"
 > [!IMPORTANT]
 > Управление Azure AD B2C пользовательскими политиками с помощью конвейера Azure в настоящее время использует операции **предварительной версии** , доступные в `/beta` конечной точке API Microsoft Graph. Использование этих API для приложений в рабочей среде не поддерживается. Дополнительные сведения см. в [справочнике по конечной точке бета-версии Microsoft Graph REST API](/graph/api/overview?toc=.%2fref%2ftoc.json&view=graph-rest-beta).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Azure AD B2C клиент](tutorial-create-tenant.md)и учетные данные для пользователя в каталоге с ролью [администратора политики B2C инфраструктура процедур идентификации](../active-directory/roles/permissions-reference.md#b2c-ief-policy-administrator)
 * [Пользовательские политики](custom-policy-get-started.md) , отправленные в клиент

@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 01/29/2021
 ms.openlocfilehash: 8a36062a2d29bcec10279d73211526a0dcba619e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101702119"
 ---
 # <a name="audit-logging-in-azure-database-for-postgresql---hyperscale-citus"></a>Ведение журнала аудита в базе данных Azure для PostgreSQL — масштабирование (Цитус)
@@ -42,7 +42,7 @@ ms.locfileid: "101702119"
 
 > [!NOTE]
 > Если задано значение `pgaudit.log_client` On, журналы перенаправляются в клиентский процесс (например, psql), а не записываются в файл. Этот параметр обычно следует отключать. <br> <br>
-> `pgaudit.log_level` включается, только если `pgaudit.log_client` включен.
+> Параметр `pgaudit.log_level` будет включен, только если включен `pgaudit.log_client`.
 
 > [!NOTE]
 > В базе данных Azure для PostgreSQL-Scale (Цитус) `pgaudit.log` не может быть задано с помощью `-` сочетания знака (минус), как описано в документации по пгаудит. Все обязательные классы инструкций (чтение, запись и т. д.) должны указываться отдельно.

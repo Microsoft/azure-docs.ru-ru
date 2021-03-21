@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 02/05/2019
 ms.openlocfilehash: d8702b498e08561175aa7ee975c7b6b46fdf1687
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102031095"
 ---
 # <a name="computer-groups-in-azure-monitor-log-queries"></a>Группы компьютеров в Azure Monitor запросы журналов
@@ -47,11 +47,11 @@ Heartbeat | where Computer contains "srv" | distinct Computer
 
 В приведенной ниже таблице описаны свойства, которые есть у группы компьютеров.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:---|:---|
 | Имя   | Имя группы, которое отображается на портале. |
 | Псевдоним функции | Уникальный псевдоним для идентификации группы компьютеров в запросе. |
-| Категория       | Категория для упорядочения поисковых запросов на портале. |
+| Category       | Категория для упорядочения поисковых запросов на портале. |
 
 
 ### <a name="active-directory"></a>Active Directory
@@ -121,7 +121,7 @@ let ADComputers = ComputerGroup | where GroupSource == "ActiveDirectory" and Gro
 ## <a name="computer-group-records"></a>Записи группы компьютеров
 Запись создается в рабочей области Log Analytics для каждого членства в группе компьютеров, создаваемого в Active Directory или WSUS.  Записи о производительности имеют тип **ComputerGroup**. Их свойства описаны в таблице ниже.  Для групп компьютеров, созданных с помощью запроса к журналам, записи не создаются.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | `Type` |*ComputerGroup* |
 | `SourceSystem` |*SourceSystem* |

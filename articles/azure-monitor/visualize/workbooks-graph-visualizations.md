@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 09/04/2020
 ms.author: lagayhar
 ms.openlocfilehash: a538eaf06013dcce6529c91816b419159a2600a1
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100625650"
 ---
 # <a name="graph-visualizations"></a>Визуализации графов
@@ -85,7 +85,7 @@ ms.locfileid: "100625650"
 
 ## <a name="node-coloring-types"></a>Типы цветов узлов
 
-| Тип цвета | Объяснение |
+| Тип цвета | Пояснение |
 |:------------- |:------------|
 | `None`        | Все узлы имеют одинаковый цвет. |
 | `Categorical` | Узлам присваиваются цвета на основе значения или категории из столбца в результирующем наборе. В приведенном выше примере цветовое выделение основано на _типе_ столбца результирующего набора. Поддерживаемые палитры: `Default` , `Pastel` и `Cool tone` .  |
@@ -149,7 +149,7 @@ ms.locfileid: "100625650"
 
 [![Снимок экрана, показывающий создание визуализации графа с цветом базового узла поля.](./media/workbooks-graph-visualizations/graph-field-based.png)](./media/workbooks-graph-visualizations/graph-field-based.png#lightbox)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Графы также поддерживают рендеринг составных линейчатых диаграмм. Дополнительные сведения см. в [документации по составной панели](workbooks-composite-bar.md).
 * Дополнительные сведения об [источниках данных](workbooks-data-sources.md) , которые можно использовать в книгах.
