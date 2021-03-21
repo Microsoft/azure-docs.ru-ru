@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 09/08/2020
 ms.author: scottnap
 ms.openlocfilehash: 70b5732e1293e35127a19fbe736d8562056a870b
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96499685"
 ---
 # <a name="working-remotely-network-virtual-appliance-nva-considerations-for-remote-work"></a>Работа в удаленном режиме: вопросы использования сетевого виртуального устройства (NVA) для удаленной работы
@@ -47,7 +47,7 @@ ms.locfileid: "96499685"
 - Входящие потоки
 - Исходящие потоки
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Большинство основных NVA партнеров разместили рекомендации по масштабированию для внезапного, непредвиденного роста во время КОВИД-19. Вот несколько полезных ссылок на ресурсы партнеров.
 

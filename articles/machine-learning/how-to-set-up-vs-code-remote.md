@@ -11,10 +11,10 @@ ms.author: luquinta
 author: luisquintanilla
 ms.date: 11/16/2020
 ms.openlocfilehash: 3f3794ed4748eda44e863ff4627dedc0a34691af
-ms.sourcegitcommit: 3af12dc5b0b3833acb5d591d0d5a398c926919c8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98070105"
 ---
 # <a name="connect-to-an-azure-machine-learning-compute-instance-in-visual-studio-code-preview"></a>Подключение к вычислительному экземпляру Машинное обучение Azure в Visual Studio Code (Предварительная версия)
@@ -134,8 +134,8 @@ Host azmlci1
 |----|---------|
 |Узел|Использование любой краткой формы для вычислительного экземпляра |
 |HostName|Это IP-адрес вычислительного экземпляра |
-|Port|Это порт, показанный в диалоговом окне SSH выше |
-|User (Пользователь)|Это должно быть `azureuser` |
+|Порт|Это порт, показанный в диалоговом окне SSH выше |
+|Пользователь|Это должно быть `azureuser` |
 |идентитифиле|Должен указывать на файл, в который был сохранен закрытый ключ |
 
 Теперь вы можете подключиться к вычислительному экземпляру по протоколу SSH, используя сокращенную версию, которую вы использовали ранее `ssh azmlci1` .

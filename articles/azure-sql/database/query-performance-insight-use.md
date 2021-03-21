@@ -12,10 +12,10 @@ ms.author: danil
 ms.reviewer: wiassaf, sstein
 ms.date: 1/14/2021
 ms.openlocfilehash: db24f280f66e567572821297cfc9bb9b1e19743b
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98222349"
 ---
 # <a name="query-performance-insight-for-azure-sql-database"></a>Анализ производительности запросов для Базы данных SQL Azure
@@ -30,7 +30,7 @@ ms.locfileid: "98222349"
 
 ![Анализ производительности запросов](./media/query-performance-insight-use/opening-title.png)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для анализа производительности запросов в базе данных должно быть активно [хранилище запросов](/sql/relational-databases/performance/monitoring-performance-by-using-the-query-store) . По умолчанию он автоматически включается для всех баз данных SQL Azure. Если хранилище запросов неактивно, на портале Azure появится запрос на его включение.
 

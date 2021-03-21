@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 04/27/2017
 ms.openlocfilehash: cb030456eb3b9e3c81fadd8451b5b0526920ba33
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101728575"
 ---
 # <a name="targeting-monitoring-solutions-in-azure-monitor-preview"></a>Определение решений мониторинга в Azure Monitor (предварительная версия)

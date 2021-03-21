@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/04/2019
 ms.custom: seodec18
 ms.openlocfilehash: 1208d95a282ca6e236d9d6be8013f51dead90d13
-ms.sourcegitcommit: 051908e18ce42b3b5d09822f8cfcac094e1f93c2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94376652"
 ---
 # <a name="add-chit-chat-to-a-knowledge-base"></a>Добавление беседы в базу знаний
@@ -60,11 +60,11 @@ ms.locfileid: "94376652"
 ## <a name="add-chit-chat-to-an-existing-kb"></a>Добавление беседы в существующую базу знаний
 Выберите базу знаний и перейдите на страницу **Параметры**. Здесь есть ссылка на все наборы данных бесед в соответствующем формате **TSV**. Загрузите желаемую личность, а затем отправьте ее как источник файла. Не изменяйте формат или метаданные при загрузке и отправке файла.
 
-# <a name="qna-maker-ga-stable-release"></a>[QnA Maker (стабильный выпуск)](#tab/v1)
+# <a name="qna-maker-ga-stable-release"></a>[Общедоступная версия QnA Maker (стабильный выпуск)](#tab/v1)
 
 ![Добавление беседы в существующую базу знаний](../media/qnamaker-how-to-chit-chat/add-chit-chat-dataset.png)
 
-# <a name="qna-maker-managed-preview-release"></a>[Управляемый QnA Maker (предварительный выпуск)](#tab/v2)
+# <a name="qna-maker-managed-preview-release"></a>[Управляемая служба QnA Maker (предварительный выпуск)](#tab/v2)
 
 ![Добавление "ХИ2ТЕСТ-Chat" в существующую предварительную версию базы знаний](../media/qnamaker-how-to-chit-chat/add-chit-chat-dataset-v2.png)
 

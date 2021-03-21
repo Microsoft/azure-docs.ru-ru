@@ -4,10 +4,10 @@ description: Узнайте, как отправить журналы ресур
 ms.topic: article
 ms.date: 07/13/2020
 ms.openlocfilehash: cfdcd1cc8e36a118c4e3c4435eaa002e4d3b1b93
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100579321"
 ---
 # <a name="container-group-and-instance-logging-with-azure-monitor-logs"></a>Ведение журнала группы контейнеров и экземпляра с Azure Monitor журналами
@@ -23,7 +23,7 @@ Log Analytics рабочие области предоставляют цент�
 > [!NOTE]
 > Сейчас данные событий можно отправлять только из экземпляров контейнера Linux в Log Analytics.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы включить ведение журнала в экземпляре контейнера, необходимо следующее:
 
@@ -147,7 +147,7 @@ ContainerInstanceLog_CL
 | where (TimeGenerated > ago(1h))
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 ### <a name="azure-monitor-logs"></a>Журналы Azure Monitor
 

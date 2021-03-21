@@ -9,17 +9,17 @@ ms.service: azure-vmware-cloudsimple
 ms.reviewer: cynthn
 manager: dikamath
 ms.openlocfilehash: 851305775d14ed371440434b2fbe9334ec0a21b9
-ms.sourcegitcommit: d7d5f0da1dda786bda0260cf43bd4716e5bda08b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97899326"
 ---
 # <a name="migrate-workload-vms-from-on-premises-vcenter-to-private-cloud-vcenter-environment"></a>Перенос виртуальных машин рабочей нагрузки из локальной среды vCenter в среду с виртуальной частной облаком
 
 Чтобы перенести виртуальные машины из локального центра обработки данных в частное облако Клаудсимпле, доступны несколько вариантов.  Частное облако предоставляет собственный доступ к VMware vCenter, а средства, поддерживаемые VMware, можно использовать для миграции рабочей нагрузки. В этой статье описываются некоторые варианты миграции vCenter.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для миграции виртуальных машин и данных из локального центра данных требуется сетевое подключение из центра данных к среде частного облака.  Чтобы установить сетевое подключение, используйте один из следующих методов.
 

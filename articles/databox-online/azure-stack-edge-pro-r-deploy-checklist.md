@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 02/24/2021
 ms.author: alkohli
 ms.openlocfilehash: eca26934605ff70ecb26c10604fc9b493e88f2cf
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101727450"
 ---
 # <a name="deployment-checklist-for-your-azure-stack-edge-pro-r-device"></a>Контрольный список развертывания для устройства R Azure Stack ребра Pro  
@@ -38,7 +38,7 @@ ms.locfileid: "101727450"
 | Используемых Обновить параметры сервера | <li>Требуется IP-адрес сервера обновлений в локальной сети, путь к серверу WSUS. </li> | По умолчанию используется общедоступный сервер центра обновления Windows.|
 | Параметры устройства | <li>Полное доменное имя устройства (FQDN) </li><li>Домен DNS</li> | |
 | Используемых Сертификаты  | Если вы будете использовать собственные сертификаты, в том числе цепочки подписывания, [добавьте сертификаты](azure-stack-edge-pro-r-deploy-configure-certificates-vpn-encryption.md#bring-your-own-certificates) в соответствующем формате.| Настройте сертификаты, только если вы изменяете имя устройства или домен DNS. |
-| Виртуальная частная сеть  | <!--Need VPN certificate, VPN gateway, firewall setup in Azure,  passphrase and region info VPN scripts. -->   | |
+| VPN  | <!--Need VPN certificate, VPN gateway, firewall setup in Azure,  passphrase and region info VPN scripts. -->   | |
 | Шифрование неактивных данных  | Рекомендуется использовать автоматически созданный ключ шифрования.   |При использовании собственного ключа необходимо использовать ключ в кодировке Base-64 длиной 32 символов.  |
 | Активация  | Требовать ключ активации из ресурса Azure Stack ребра Pro/Шлюз Data Box.    | После создания ключ истекает через 3 дня. |
 

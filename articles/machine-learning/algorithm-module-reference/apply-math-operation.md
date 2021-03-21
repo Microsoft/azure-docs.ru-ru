@@ -10,10 +10,10 @@ author: likebupt
 ms.author: keli19
 ms.date: 09/09/2019
 ms.openlocfilehash: 3b2925a532d722598ccf16c001c9e2591aed1f2b
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99584996"
 ---
 # <a name="apply-math-operation"></a>Применение математической операции
@@ -341,7 +341,7 @@ ms.locfileid: "99584996"
 
 В эту категорию входят специализированные математические функции, часто используемые в обработке и обработке данных. Если не указано иное, функция является унарной и возвращает заданное вычисление для каждого значения в выбранном столбце или столбцах.  
 
-### <a name="beta"></a>Beta
+### <a name="beta"></a>Бета;
 
 Возвращает значение бета-функции Эйлера.  
 

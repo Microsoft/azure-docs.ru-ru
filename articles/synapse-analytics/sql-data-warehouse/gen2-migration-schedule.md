@@ -13,10 +13,10 @@ ms.subservice: sql-dw
 ms.date: 01/21/2020
 ms.custom: seo-lt-2019, azure-synapse
 ms.openlocfilehash: 0ce07ff3ca5fbcc9776792129d3bfb4ef54efe7d
-ms.sourcegitcommit: aacbf77e4e40266e497b6073679642d97d110cda
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98120127"
 ---
 # <a name="upgrade-your-dedicated-sql-pool-formerly-sql-dw-to-gen2"></a>Обновление выделенного пула SQL (ранее — хранилища данных SQL) на Gen2
@@ -79,7 +79,7 @@ ms.locfileid: "98120127"
 
 **Вопрос. выполняет ли Gen2 стоимость так же, как Gen1?**
 
-- Ответ. Да.
+- A. Да.
 
 **Вопрос. как обновления будут влиять на мои сценарии автоматизации?**
 
@@ -118,7 +118,7 @@ ms.locfileid: "98120127"
 
 **Вопрос. поддерживает ли Gen2 периоды обслуживания?**
 
-- Ответ. Да.
+- A. Да.
 
 **Вопрос. можно ли создать новый экземпляр Gen1 после обновления региона?**
 

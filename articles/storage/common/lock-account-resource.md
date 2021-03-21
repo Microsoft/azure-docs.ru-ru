@@ -10,10 +10,10 @@ ms.date: 03/09/2021
 ms.author: tamram
 ms.subservice: common
 ms.openlocfilehash: 9d80c0b8d4d913322c47d1ad278d6dbc033d2409
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102620153"
 ---
 # <a name="apply-an-azure-resource-manager-lock-to-a-storage-account"></a>Применение блокировки Azure Resource Manager к учетной записи хранения

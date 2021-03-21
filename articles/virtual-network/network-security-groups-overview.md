@@ -15,10 +15,10 @@ ms.author: kumud
 ms.reviewer: kumud
 ms.custom: contperf-fy21q1
 ms.openlocfilehash: 4e23c6f25145724a5300c9e5cdcb55431fb0b4f2
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97028773"
 ---
 # <a name="network-security-groups"></a>Группы безопасности сети
@@ -58,7 +58,7 @@ Azure создает следующие правила по умолчанию �
 
 |Приоритет|Источник|Исходные порты|Назначение|Конечные порты|Протокол|Access|
 |---|---|---|---|---|---|---|
-|65000|VirtualNetwork|0-65535|VirtualNetwork|0-65535|Любой|Allow|
+|65000|Виртуальная сеть|0-65535|Виртуальная сеть|0-65535|Любой|Allow|
 
 ##### <a name="allowazureloadbalancerinbound"></a>AllowAzureLoadBalancerInBound
 
@@ -78,7 +78,7 @@ Azure создает следующие правила по умолчанию �
 
 |Приоритет|Источник|Исходные порты| Назначение | Конечные порты | Протокол | Access |
 |---|---|---|---|---|---|---|
-| 65000 | VirtualNetwork | 0-65535 | VirtualNetwork | 0-65535 | Любой | Allow |
+| 65000 | Виртуальная сеть | 0-65535 | Виртуальная сеть | 0-65535 | Любой | Allow |
 
 ##### <a name="allowinternetoutbound"></a>AllowInternetOutBound
 

@@ -7,17 +7,17 @@ ms.author: sujie
 ms.date: 11/10/2019
 ms.topic: how-to
 ms.openlocfilehash: bbd83fb3ef3225fc19c48bb4c5962d6559cf32f8
-ms.sourcegitcommit: d488a97dc11038d9cef77a0235d034677212c8b3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97708455"
 ---
 # <a name="test-stream-analytics-queries-locally-with-sample-data-using-visual-studio-code"></a>Локальное тестирование запросов Stream Analytics с использованием примера данных и Visual Studio Code
 
 Вы можете использовать средства Azure Stream Analytics для Visual Studio Code для локального тестирования заданий Stream Analytics с помощью примеров данных. Результаты запроса можно найти в файлах JSON в папке **локалрунаутпутс** проекта.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Установите [пакет SDK для .NET Core](https://dotnet.microsoft.com/download) и перезапустите Visual Studio Code.
 

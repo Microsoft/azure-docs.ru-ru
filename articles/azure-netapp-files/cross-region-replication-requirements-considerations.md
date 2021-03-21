@@ -15,10 +15,10 @@ ms.topic: conceptual
 ms.date: 01/20/2021
 ms.author: b-juche
 ms.openlocfilehash: ed03e20f7a1a24d1a38e023b958959fdc6fdc326
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100579344"
 ---
 # <a name="requirements-and-considerations-for-using-cross-region-replication"></a>Требования и рекомендации по использованию репликации между регионами 
@@ -41,7 +41,7 @@ ms.locfileid: "100579344"
 * Вы можете удалить моментальные снимки вручную на исходном томе отношения репликации, если отношение репликации активно или разорвано, а также после удаления отношения репликации. Нельзя удалить моментальные снимки вручную для целевого тома, пока не будет нарушена связь репликации.
 * Нельзя вернуться к моментальному снимку, сделанному до создания тома назначения репликации.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Создание репликации тома](cross-region-replication-create-peering.md)
 * [Отображение состояния работоспособности отношения репликации](cross-region-replication-display-health-status.md)
 * [Управление аварийным восстановлением](cross-region-replication-manage-disaster-recovery.md)

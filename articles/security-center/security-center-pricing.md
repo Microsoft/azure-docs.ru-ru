@@ -8,10 +8,10 @@ ms.service: security-center
 ms.topic: overview
 ms.date: 03/08/2021
 ms.openlocfilehash: d45dae8b0b3725555bd83a05032339671a9595be
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102454370"
 ---
 # <a name="azure-security-center-free-vs-azure-defender-enabled"></a>Сравнение бесплатной версии Центра безопасности с включенным средством Azure Defender

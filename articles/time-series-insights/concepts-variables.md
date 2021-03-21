@@ -7,10 +7,10 @@ ms.service: time-series-insights
 ms.topic: conceptual
 ms.date: 01/22/2021
 ms.openlocfilehash: fd08dc98fa47617bbc7c8d1fff895377837a7327
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98736740"
 ---
 # <a name="time-series-model-variables"></a>Переменные модели временных рядов
@@ -118,7 +118,7 @@ ms.locfileid: "98736740"
 
 Переменные хранятся в определении типа модели временных рядов и могут предоставляться встроенными интерфейсами API для переопределения или дополнения хранимого определения.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о [модели временных рядов](./concepts-model-overview.md).
 

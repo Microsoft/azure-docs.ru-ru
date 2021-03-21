@@ -16,10 +16,10 @@ ms.workload: infrastructure-services
 ms.date: 04/01/2019
 ms.author: altambaw
 ms.openlocfilehash: dc8db3f1eccce2bb85f03d51fcfd1c4113823d49
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98222673"
 ---
 # <a name="create-change-or-delete-a-virtual-network-peering"></a>Создание, изменение и удаление пиринга в виртуальной сети
@@ -88,7 +88,7 @@ ms.locfileid: "98222673"
 3. В разделе **Параметры** выберите **Пиринги**.
 4. Выберите пиринг, для которого требуется просмотреть или изменить параметры.
 5. Измените соответствующий параметр. Дополнительные сведения о параметрах для каждого параметра см. в [шаге 5](#add-peering) раздела Создание пиринга.
-6. Выберите **Сохранить**.
+6. Щелкните **Сохранить**.
 
 **Команды**
 

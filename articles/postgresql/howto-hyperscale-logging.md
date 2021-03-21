@@ -8,10 +8,10 @@ ms.subservice: hyperscale-citus
 ms.topic: conceptual
 ms.date: 7/13/2020
 ms.openlocfilehash: ca3cc2873fbc6db72b10c80daecddf1471e30ff4
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100577070"
 ---
 # <a name="logs-in-azure-database-for-postgresql---hyperscale-citus"></a>Журналы в базе данных Azure для PostgreSQL — масштабирование (Цитус)
@@ -32,7 +32,7 @@ ms.locfileid: "100577070"
 
 :::image type="content" source="media/howto-hyperscale-logging/diagnostic-create-setting.png" alt-text="Выбор журналов PostgreSQL":::
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Приступая к работе с запросами log Analytics](../azure-monitor/logs/log-analytics-tutorial.md)
 - Сведения о [концентраторах событий Azure](../event-hubs/event-hubs-about.md)

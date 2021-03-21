@@ -6,13 +6,13 @@ ms.reviewer: jasonh
 ms.topic: how-to
 ms.date: 06/30/2017
 ms.openlocfilehash: 52d44685678c3e89dc820042a7925d284500cef8
-ms.sourcegitcommit: df66dff4e34a0b7780cba503bb141d6b72335a96
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96512631"
 ---
-# <a name="use-user-defined-reducer"></a>Использование определяемого пользователем сокращения
+# <a name="use-user-defined-reducer"></a>Использование определяемого пользователем средства редукции
 
 ## <a name="u-sql-udo-user-defined-reducer"></a>U-SQL UDO: определяемый пользователем reduce
 
@@ -140,6 +140,6 @@ OUTPUT @rs2
     USING Outputters.Text();
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Общие сведения о программировании U-SQL](data-lake-analytics-u-sql-programmability-guide.md)
 * [Инструкции по программированию U-SQL — определяемый пользователем тип и функции](data-lake-analytics-u-sql-programmability-guide-UDT-AGG.md)

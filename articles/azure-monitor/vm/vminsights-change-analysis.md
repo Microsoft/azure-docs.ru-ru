@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 09/23/2020
 ms.openlocfilehash: 375812813d704eb9b48d0ed8fbbc65dd5e47da49
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102046777"
 ---
 # <a name="change-analysis-in-vm-insights"></a>Анализ изменений в VM Insights
@@ -33,7 +33,7 @@ ms.locfileid: "102046777"
 
 [![Сведения об изменении](media/vminsights-change-analysis/change-details-screenshot.png)](media/vminsights-change-analysis/change-details-screenshot.png#lightbox)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 - Дополнительные сведения об [анализе изменений приложений](../app/change-analysis.md).
 - Дополнительные сведения о [графе ресурсов Azure](../../governance/resource-graph/how-to/get-resource-changes.md). 
 
