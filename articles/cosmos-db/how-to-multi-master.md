@@ -9,10 +9,10 @@ ms.date: 01/06/2021
 ms.author: mjbrown
 ms.custom: devx-track-python, devx-track-js, devx-track-csharp, "seo-nov-2020"
 ms.openlocfilehash: 08d50b18605fd833e6b0efca987338d0ca1eef8d
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102488517"
 ---
 # <a name="configure-multi-region-writes-in-your-applications-that-use-azure-cosmos-db"></a>Настройка операций записи в несколько регионов в приложениях, использующих Azure Cosmos DB

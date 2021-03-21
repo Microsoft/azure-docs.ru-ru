@@ -12,13 +12,13 @@ manager: daveba
 ms.reviewer: dawoo
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d25ed1e46823ec6d820addf3944c96c97fcabcb8
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101689034"
 ---
-# <a name="two-way-sms-unsupported"></a>Двусторонний SMS не поддерживается
+# <a name="two-way-sms-unsupported"></a>Отсутствие поддержки двусторонних SMS
 
 Двусторонний SMS для сервера многофакторной идентификации Azure AD (MFA) изначально устарел в 2018 и больше не поддерживается после 24 февраля 2021 г. Администраторы должны включить другой способ для пользователей, которые по-прежнему используют двусторонний SMS.
 
@@ -30,7 +30,7 @@ ms.locfileid: "101689034"
 1. Сообщите конечным пользователям о необходимости посетить [Пользовательский портал](howto-mfaserver-deploy-userportal.md) сервера MFA, чтобы активировать мобильное приложение. [Microsoft Authenticatorное приложение](https://www.microsoft.com/en-us/account/authenticator) является рекомендуемым вариантом проверки, так как оно более безопасно, чем двусторонний SMS. Дополнительные сведения см. [в разделе время ожидания для проверки подлинности при транспортировке телефона](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/it-s-time-to-hang-up-on-phone-transports-for-authentication/ba-p/1751752).
 1. Изменение пользовательских параметров из двустороннего текстового сообщения на мобильное приложение в качестве метода по умолчанию.
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 ### <a name="what-if-i-dont-change-the-default-method-from-two-way-sms-to-the-mobile-app"></a>Что делать, если я не изменяю метод по умолчанию из двустороннего SMS в мобильное приложение?
 Двусторонний SMS завершается сбоем после 24 февраля 2021 г. Пользователи увидят ошибку при попытке войти и передать MFA.

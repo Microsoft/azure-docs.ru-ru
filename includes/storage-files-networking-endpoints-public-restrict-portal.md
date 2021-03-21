@@ -9,10 +9,10 @@ ms.date: 01/25/2021
 ms.author: rogarana
 ms.custom: include file
 ms.openlocfilehash: 3c76988557bfa338bcfb606f568036422a536c1d
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98798624"
 ---
 Перейдите к учетной записи хранения, для которой вы хотите разрешить доступ к общедоступной конечной точке только из нескольких виртуальных сетей. В содержании для учетной записи хранения выберите **Сеть**. 

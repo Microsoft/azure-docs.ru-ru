@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 11/30/2020
 ms.author: acomet
 ms.openlocfilehash: a16d22a49e42408271c91d961bcdb004536e3980
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101659755"
 ---
 # <a name="use-power-bi-and-serverless-synapse-sql-pool-to-analyze-azure-cosmos-db-data-with-synapse-link"></a>Использование Power BI и несинапсеного пула SQL для анализа данных Azure Cosmos DB с помощью ссылки синапсе 
@@ -20,7 +20,7 @@ ms.locfileid: "101659755"
 
 В этом сценарии вы будете использовать фиктивные данные о продажах продуктов в розничном магазине партнера. Вы проанализируете доход на каждый магазин, основываясь на большом семейе и влиянии рекламы на конкретную неделю. В этой статье вы создадите два представления с именами **ретаилсалес** и **сторедемографикс** и запрос между ними. Образец данных по продукту можно получить из репозитория [GitHub](https://github.com/Azure-Samples/Synapse/tree/main/Notebooks/PySpark/Synapse%20Link%20for%20Cosmos%20DB%20samples/Retail/RetailData) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем начать, обязательно создайте следующие ресурсы:
 

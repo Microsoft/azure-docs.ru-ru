@@ -7,10 +7,10 @@ ms.date: 07/08/2020
 ms.reviewer: mahender
 ms.custom: seodec18, fasttrack-edit, has-adal-ref
 ms.openlocfilehash: 83758f63b7e60d08a31f1da9da4a6eec6ba7d4a4
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102632073"
 ---
 # <a name="authentication-and-authorization-in-azure-app-service-and-azure-functions"></a>Проверка подлинности и авторизация в службе приложений Azure и функциях Azure

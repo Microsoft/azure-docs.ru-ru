@@ -9,16 +9,16 @@ ms.service: azure-maps
 services: azure-maps
 manager: philmea
 ms.openlocfilehash: 657cb6a86122d267b86e82b6f02eb58e968cddd3
-ms.sourcegitcommit: 80c1056113a9d65b6db69c06ca79fa531b9e3a00
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96904743"
 ---
 # <a name="weather-services-preview-in-azure-maps"></a>Службы погоды (Предварительная версия) в Azure Maps
 
 > [!IMPORTANT]
-> Azure Mapsные службы погоды в настоящее время доступны в общедоступной предварительной версии.
+> Службы погоды Azure Maps в настоящее время предоставляются в общедоступной предварительной версии.
 > Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 В этой статье рассматриваются основные понятия, относящиеся к Azure Maps [служб погоды](/rest/api/maps/weather). Мы рекомендуем ознакомиться с этой статьей перед началом работы с API-интерфейсами погоды.
@@ -27,7 +27,7 @@ ms.locfileid: "96904743"
 
 Некоторые API-интерфейсы службы погоды позволяют пользователю указать, должны ли данные возвращаться в метрике или в германской единицах. Возвращаемые ответы для этих API включают единицах UnitType и числовое значение, которое можно использовать для переводов единиц. Чтобы интерпретировать эти значения, см. таблицу ниже.
 
-|Единицах UnitType|Описание:         |
+|Единицах UnitType|Описание         |
 |--------|--------------------|
 |0       |футах                |
 |1       |ражают              |
@@ -60,27 +60,27 @@ ms.locfileid: "96904743"
 
 | Номер значка |Значок| День | Ночной | Текст |
 |-------------|:----:|-----|-------|------|
-| 1           | :::image type="icon" source="./media/weather-services-concepts/sunny-i.png"::: | Да |  нет    | Солнечно|
-| 2           | :::image type="icon" source="./media/weather-services-concepts/mostly-sunny.png"::: | Да |  нет    | В основном Sunny|
-| 3           | :::image type="icon" source="./media/weather-services-concepts/partly-sunny.png"::: | Да |  нет    | Частично Sunny|
-| 4           | :::image type="icon" source="./media/weather-services-concepts/intermittent-clouds.png"::: | Да |  нет    | Временные облака|
-| 5           | :::image type="icon" source="./media/weather-services-concepts/hazy-sunshine.png"::: | Да |  нет    | Хази солнца |
-| 6           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy.png"::: | Да |  нет    | В основном это облачная|
+| 1           | :::image type="icon" source="./media/weather-services-concepts/sunny-i.png"::: | Да |  Нет    | Солнечно|
+| 2           | :::image type="icon" source="./media/weather-services-concepts/mostly-sunny.png"::: | Да |  Нет    | В основном Sunny|
+| 3           | :::image type="icon" source="./media/weather-services-concepts/partly-sunny.png"::: | Да |  Нет    | Частично Sunny|
+| 4           | :::image type="icon" source="./media/weather-services-concepts/intermittent-clouds.png"::: | Да |  Нет    | Временные облака|
+| 5           | :::image type="icon" source="./media/weather-services-concepts/hazy-sunshine.png"::: | Да |  Нет    | Хази солнца |
+| 6           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy.png"::: | Да |  Нет    | В основном это облачная|
 | 7           | :::image type="icon" source="./media/weather-services-concepts/cloudy-i.png"::: | Да |  Да   | Облачно |
 | 8           | :::image type="icon" source="./media/weather-services-concepts/dreary-overcast.png"::: | Да |  Да   | Дреари (Оверкаст)|
 | 11           | :::image type="icon" source="./media/weather-services-concepts/fog-i.png"::: | Да |  Да   | Туман|
 | 12           | :::image type="icon" source="./media/weather-services-concepts/showers-i.png"::: | Да |  Да   | Ливни|
-| 13           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-showers.png"::: | Да |  нет    | В основном облачное с ливни|
-| 14           | :::image type="icon" source="./media/weather-services-concepts/partly-sunny-showers.png"::: | Да |  нет    | Частично Sunny с ливни|
+| 13           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-showers.png"::: | Да |  Нет    | В основном облачное с ливни|
+| 14           | :::image type="icon" source="./media/weather-services-concepts/partly-sunny-showers.png"::: | Да |  Нет    | Частично Sunny с ливни|
 | 15           | :::image type="icon" source="./media/weather-services-concepts/tstorms-i.png"::: | Да |  Да   | сундерстормс|
-| 16           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-tstorms.png"::: | Да |  нет    | В основном облачное с Сундерстормс|
-| 17           | :::image type="icon" source="./media/weather-services-concepts/partly-sunny-tstorms.png"::: | Да |  нет    | Частично Sunny с Сундерстормс|
+| 16           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-tstorms.png"::: | Да |  Нет    | В основном облачное с Сундерстормс|
+| 17           | :::image type="icon" source="./media/weather-services-concepts/partly-sunny-tstorms.png"::: | Да |  Нет    | Частично Sunny с Сундерстормс|
 | 18           | :::image type="icon" source="./media/weather-services-concepts/rain-i.png"::: | Да |  Да   | Дождя|
 | 19           | :::image type="icon" source="./media/weather-services-concepts/flurries-i.png"::: | Да |  Да   | флурриес|
-| 20           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-flurries.png"::: | Да |  нет    | В основном облачное с Флурриес|
-| 21           | :::image type="icon" source="./media/weather-services-concepts/partly-sunny-flurries.png"::: | Да |  нет    | Частично Sunny с Флурриес|
+| 20           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-flurries.png"::: | Да |  Нет    | В основном облачное с Флурриес|
+| 21           | :::image type="icon" source="./media/weather-services-concepts/partly-sunny-flurries.png"::: | Да |  Нет    | Частично Sunny с Флурриес|
 | 22           | :::image type="icon" source="./media/weather-services-concepts/snow-i.png"::: | Да |  Да   | Снег|
-| 23           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-snow.png"::: | Да |  нет    | В основном облачное с снег|     
+| 23           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-snow.png"::: | Да |  Нет    | В основном облачное с снег|     
 | 24           | :::image type="icon" source="./media/weather-services-concepts/ice-i.png"::: | Да |  Да   | Айс (Ice) |
 | 25           | :::image type="icon" source="./media/weather-services-concepts/sleet-i.png"::: | Да |  Да   | слит|
 | 26           | :::image type="icon" source="./media/weather-services-concepts/freezing-rain.png"::: | Да |  Да   | Замораживание дождя|
@@ -88,18 +88,18 @@ ms.locfileid: "96904743"
 | 30           | :::image type="icon" source="./media/weather-services-concepts/hot-i.png"::: | Да |  Да   | Горячий|
 | 31           | :::image type="icon" source="./media/weather-services-concepts/cold-i.png"::: | Да |  Да   | Холодный|
 | 32           | :::image type="icon" source="./media/weather-services-concepts/windy-i.png"::: | Да |  Да   | Ветрено|
-| 33           | :::image type="icon" source="./media/weather-services-concepts/clear-night.png"::: | нет  |  Да   | Clear|
+| 33           | :::image type="icon" source="./media/weather-services-concepts/clear-night.png"::: | Нет  |  Да   | Clear|
 | 34           | :::image type="icon" source="./media/weather-services-concepts/mostly-clear-night.png"::: | нет  |  Да   | В основном ясно|
 | 35           | :::image type="icon" source="./media/weather-services-concepts/partly-cloudy-night.png"::: | Нет  |  Да   | Частичное облако|
 | 36           | :::image type="icon" source="./media/weather-services-concepts/intermittent-clouds-Night.png"::: | нет  |  Да   | Временные облака|
 | 37           | :::image type="icon" source="./media/weather-services-concepts/hazymoon-light.png"::: | нет  |  Да   | Хазиное совместительство|
 | 38           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-night.png"::: | нет  |  Да   | В основном это облачная|
 | 39           | :::image type="icon" source="./media/weather-services-concepts/partly-cloudy-showers-night.png"::: | нет  |  Да   | Частичное облако с ливни|
-| 40           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-showers-night.png"::: | нет  |  Да   | В основном облачное с ливни|
+| 40           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-showers-night.png"::: | Нет  |  Да   | В основном облачное с ливни|
 | 41           | :::image type="icon" source="./media/weather-services-concepts/partly-cloudy-tstorms-night.png"::: | Нет  |  Да   | Частичное облако с Сундерстормс|
-| 42           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-tstorms-night.png"::: | нет  |  Да   | В основном облачное с Сундерстормс|
-| 43           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-flurries-night.png"::: | нет  |  Да   | В основном облачное с Флурриес|
-| 44           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-snow.png"::: | нет  |  Да   | В основном облачное с снег|
+| 42           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-tstorms-night.png"::: | Нет  |  Да   | В основном облачное с Сундерстормс|
+| 43           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-flurries-night.png"::: | Нет  |  Да   | В основном облачное с Флурриес|
+| 44           | :::image type="icon" source="./media/weather-services-concepts/mostly-cloudy-snow.png"::: | Нет  |  Да   | В основном облачное с снег|
 
 
 ## <a name="radar-and-satellite-imagery-color-scale"></a>Цветовая шкала лепестковых и вспомогательных изображений
@@ -569,7 +569,7 @@ ms.locfileid: "96904743"
   ----------------|--------------|------------
   Плохо           |0              |  3
   Ниже среднего           |3,01           |  6
-  Хорошо           |6.01           |  7,5 %
+  Хорошо           |6.01           |  7.5
   Очень хорошо      |7,51           |  8,99
   Отлично      |9              |  10
 

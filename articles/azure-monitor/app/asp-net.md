@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 09/30/2020
 ms.custom: contperf-fy21q1
 ms.openlocfilehash: f9cb5370dcddf783e533664c4c141779402103f0
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97028994"
 ---
 # <a name="configure-application-insights-for-your-aspnet-website"></a>Настройка Application Insights для веб-сайта ASP.NET
@@ -20,7 +20,7 @@ ms.locfileid: "97028994"
 
 - Установите последнюю версию [Visual Studio 2019 для Windows](https://www.visualstudio.com/downloads/) со следующими рабочими нагрузками:
     - ASP.NET и веб-разработка.
-    - разработка Azure;
+    - Разработка Azure.
 
 Если у вас еще нет подписки Azure, создайте [бесплатную](https://azure.microsoft.com/free/) учетную запись Azure, прежде чем начинать работу.
 
@@ -352,7 +352,7 @@ ms.locfileid: "97028994"
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
-Существует известная проблема в текущей версии Visual Studio 2019, при которой ключ инструментирования в секрете пользователя разрывается для приложений на основе .NET Framework, а ключ в конечном итоге должен быть жестко закодирован в applicationinsights.config файле, чтобы обойти эту ошибку. Эта статья предназначена для полного устранения этой проблемы без использования секретов пользователя.  
+Существует известная проблема в текущей версии Visual Studio 2019, при которой ключ инструментирования в секрете пользователя разрывается для приложений на основе платформа .NET Framework, а ключ в конечном итоге должен быть жестко закодирован в applicationinsights.config файле, чтобы обойти эту ошибку. Эта статья предназначена для полного устранения этой проблемы без использования секретов пользователя.  
 
 ## <a name="open-source-sdk"></a>Пакет SDK с открытым исходным кодом
 

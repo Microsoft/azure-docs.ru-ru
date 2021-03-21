@@ -10,10 +10,10 @@ ms.author: cherylmc
 ms.custom: references_regions
 Customer intent: As someone with a networking background, I want to find a Virtual WAN partner
 ms.openlocfilehash: 4a02a02eeb40c1a61df88c49bf967b2ca57befc3
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102489333"
 ---
 # <a name="virtual-wan-partners-and-virtual-hub-locations"></a>Расположения партнеров и виртуального концентратора Виртуальной глобальной сети
@@ -58,7 +58,7 @@ ms.locfileid: "102489333"
 
 У этих партнеров есть предложения по **управлению приложениями** , которые теперь доступны для развертывания в виртуальном КОНЦЕНТРАТОРЕ глобальной сети.
 
-|Участники|Руководство по настройке и развертыванию|
+|Партнеры|Руководство по настройке и развертыванию|
 |---|---|
 |[Barracuda Networks](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/barracudanetworks.barracuda_cloudgenwan_gateway?tab=Overviewus/marketplace/apps/barracudanetworks.barracuda_cloudgenwan_gateway?tab=Overview)| [Инструкции по развертыванию Barracuda Клауджен WAN](https://campus.barracuda.com/product/cloudgenwan/doc/91980640/deployment/)|
 |[Маршрутизатор облачной службы Cisco (CSR) ВВАН](https://aka.ms/ciscoMarketPlaceOffer)| Во время общедоступной предварительной версии глобальной сети Cisco Cloud Services (CSR) в центре ВВАН, компания Cisco требует, чтобы клиент зарегистрировался в качестве клиента Cisco EFT (пробная версия для раннего поля), отправив сообщение электронной почты по адресу vwan_public_preview@external.cisco.com и запросите его. 

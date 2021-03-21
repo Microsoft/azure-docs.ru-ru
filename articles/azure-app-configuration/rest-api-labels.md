@@ -7,13 +7,13 @@ ms.service: azure-app-configuration
 ms.topic: reference
 ms.date: 08/17/2020
 ms.openlocfilehash: 5a59f5910d44f2a2b4cd75e7a1d51c2ed5dd51a4
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96932512"
 ---
-# <a name="labels"></a>Подписи
+# <a name="labels"></a>Метки
 
 версия API: 1,0
 
@@ -31,7 +31,7 @@ ms.locfileid: "96932512"
 
 Для всех операций ``name`` — необязательный параметр фильтра. Если он не указан, подразумевается **любая** метка.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Все HTTP-запросы должны пройти проверку подлинности. См. раздел [Проверка подлинности](./rest-api-authentication-index.md) .
 - Все HTTP-запросы должны предоставлять явный запрос `api-version` . См. раздел [Управление версиями](./rest-api-versioning.md) .

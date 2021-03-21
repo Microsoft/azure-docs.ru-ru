@@ -14,10 +14,10 @@ ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 64fe4b8c217ec46cbb6dd046339c3ac65eebb121
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98724683"
 ---
 # <a name="build-resilience-in-your-identity-and-access-management-infrastructure"></a>Отказоустойчивость сборок в инфраструктуре управления удостоверениями и доступом
@@ -51,7 +51,7 @@ Azure Active Directory — это глобальная система управ
   
 ![Схема, показывающая обзор устойчивости администратора](./media/resilience-in-infrastructure/admin-resilience-overview.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Ресурсы по устойчивости для администраторов и архитекторов
  
 * [Устойчивость к сборке с помощью управления учетными данными](resilience-in-credentials.md)

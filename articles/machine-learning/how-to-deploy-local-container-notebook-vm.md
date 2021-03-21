@@ -12,10 +12,10 @@ author: MrudulaN
 ms.reviewer: larryfr
 ms.date: 03/05/2020
 ms.openlocfilehash: d8b1c2a5384e479e39d169d368554f16c300a33e
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98954552"
 ---
 # <a name="deploy-a-model-to-azure-machine-learning-compute-instances"></a>Развертывание модели для Машинное обучение Azureных экземпляров вычислений
@@ -30,7 +30,7 @@ ms.locfileid: "98954552"
 > [!TIP]
 > Развертывание модели из Jupyter Notebook на вычислительном экземпляре в веб-службу на той же виртуальной машине является _локальным развертыванием_. В этом случае "локальный" компьютер является вычислительным экземпляром. Дополнительные сведения о развертываниях см. в разделе [Развертывание моделей с помощью машинное обучение Azure](how-to-deploy-and-where.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Рабочая область Машинное обучение Azure с выполняющимся вычислительным экземпляром. Дополнительные сведения см. в статье [Настройка среды и рабочей области](tutorial-1st-experiment-sdk-setup.md).
 
@@ -53,7 +53,7 @@ ms.locfileid: "98954552"
     * Виртуальная машина записной книжки: `https://<vm_name>-<local_service_port>.<azure_region_of_workspace>.notebooks.azureml.net/score` . 
     * Вычислительный экземпляр: `https://<vm_name>-<local_service_port>.<azure_region_of_workspace>.instances.azureml.net/score` . 
 
-    Например, примененная к объекту директива 
+    Например, 
     * Виртуальная машина записной книжки: `https://vm-name-6789.northcentralus.notebooks.azureml.net/score` 
     * Вычислительный экземпляр: `https://vm-name-6789.northcentralus.instances.azureml.net/score`
 

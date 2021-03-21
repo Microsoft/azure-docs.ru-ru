@@ -5,10 +5,10 @@ ms.date: 03/10/2021
 ms.topic: reference
 ms.custom: generated
 ms.openlocfilehash: d7b4be0b35fdfebd2f680a299bc7b90375e36afc
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102633773"
 ---
 # <a name="azure-resource-graph-table-and-resource-type-reference"></a>Таблица Azure Resource Graph и сведения о типах ресурсов
@@ -91,7 +91,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - Hive. Streaming/Services (потоковая передача Hive)
 - incapsula.waf/accounts
 - Ливеарена. вещание/службы (Ливеарена Broadcast)
-- Маилжет. email/Services (служба электронной почты Маилжет)
+- Mailjet.Email/services (служба электронной почты Маилжет)
 - Microsoft. AAD/domainServices (доменные службы Azure AD)
 - Microsoft. аадиам/азуреадметрикс
 - Microsoft. аадиам/Привателинкфоразуреад (частная ссылка для Azure AD)
@@ -639,7 +639,7 @@ Azure Resource Graph поддерживает следующие **типы ре
 - providers.test/statelessresources
 - RavenHq. DB/databases (RavenHQ)
 - Raygun отсылает. Крашрепортинг/Apps (Raygun отсылает)
-- Sendgrid. Email/Accounts (учетные записи SendGrid)
+- Sendgrid.Email/accounts (учетные записи SendGrid)
 - Sparkpost. Basic/Services (SparkPost)
 - stackify. retrace/Services (Stackify)
 - test.shoebox/testresources

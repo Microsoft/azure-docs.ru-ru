@@ -12,10 +12,10 @@ ms.author: mabasile
 ms.reviewer: igorstan
 ms.custom: seo-lt-2019
 ms.openlocfilehash: d58deccb124e451106f43ae30c2fe910b3d41b54
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102634125"
 ---
 # <a name="azure-synapse-analytics-data-management-partners"></a>Партнеры по управлению данными в Azure Synapse Analytics
@@ -38,7 +38,7 @@ ms.locfileid: "102634125"
 | ![тамр](./media/sql-data-warehouse-partner-data-management/tamr-logo.png) |**тамр**<br>С помощью Тамр организации могут предоставлять Azure синапсе с главными данными, что позволяет им получить максимальную отдело от аналитических возможностей Azure синапсе. Облачные решения для работы с данными в облаке Тамр используют машинное обучение, чтобы выполнить тяжелую работу по объединению, очистке и категоризации данных с интуитивными рабочими процессами для сбора отзывов, чтобы преодолеть разрыв между данными и результатами бизнеса. Тамр интегрируется со службами данных Azure, включая Azure синапсе Analytics, Azure Databricks, Azure HDInsight, каталог данных Azure, Azure Data Lake Storage и фабрику данных Azure. Это позволяет осуществлять выборку данных в масштабе с более низкой совокупной стоимостью владения, используя преимущества гибкости и масштабирования в Azure. |[Страница продукта](https://www.tamr.com/tamr-partners/microsoft-azure/)<br> [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/tamrinc.unify_v_2019?tab=Overview) |
 | ![телеран](./media/sql-data-warehouse-partner-data-management/teleran-logo.jpg) |**телеран**<br>Элемент управления "запрос телеран" предотвращает достижение недопустимых и плохо сформированных запросов на синапсе и расход ресурсов вычислений. Он отправляет Интеллектуальные сообщения пользователям аналитики для более эффективного взаимодействия с данными. Цель состоит в том, чтобы обеспечить хорошие результаты бизнеса, не тратя затраты на Azure. Анализ использования телеран обеспечивает анализ действий пользователя, приложения, запроса и использования данных. Она позволяет всегда иметь всю картину того, что происходит. Она позволяет улучшить обслуживание, повысить продуктивность бизнеса и оптимизировать затраты на использование синапсе. |[Страница продукта](https://teleran.com/azure-synapse-optimization-cost-control/)<br>|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Дополнительные сведения о других партнерах см. в разделе [партнеры по бизнес-аналитике](sql-data-warehouse-partner-business-intelligence.md), [партнеры по интеграции данных](sql-data-warehouse-partner-data-integration.md), а [машинное обучение и партнеры по искусственному](sql-data-warehouse-partner-machine-learning-ai.md)анализу.
 
 

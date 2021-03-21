@@ -4,10 +4,10 @@ description: Как Application Insights встраивается в цикл р
 ms.topic: conceptual
 ms.date: 12/21/2018
 ms.openlocfilehash: bc897cc0259894964e0b6164219b1e5459e824b6
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100579557"
 ---
 # <a name="deep-diagnostics-for-web-apps-and-services-with-application-insights"></a>Углубленная диагностика для веб-приложений и служб с помощью Application Insights

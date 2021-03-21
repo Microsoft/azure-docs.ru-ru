@@ -8,10 +8,10 @@ ms.date: 10/19/2019
 ms.author: rogarana
 ms.subservice: files
 ms.openlocfilehash: 5161d8e169a7eb9e757dfbfa71fa697880e1806e
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98673693"
 ---
 # <a name="use-azure-files-with-linux"></a>Использование Файлов Azure в Linux
@@ -248,7 +248,7 @@ uname -r
 
 Начиная с Linux ядра 4,18, модуль ядра SMB, вызываемый `cifs` по старым причинам, предоставляет новый параметр модуля (часто называемый *ParM* различными внешними документами) `disable_legacy_dialects` . Несмотря на то, что впервые появились в ядре Linux 4,18, некоторые поставщики отменяли это изменение на более старые ядра, которые они поддерживают. Для удобства в следующей таблице подробно описывается доступность этого параметра модуля в распространенных дистрибутивах Linux.
 
-| Распределение | Можно отключить SMB 1 |
+| Distribution | Можно отключить SMB 1 |
 |--------------|-------------------|
 | Ubuntu 14.04 — 16.04 | Нет |
 | Ubuntu 18.04 | Да |

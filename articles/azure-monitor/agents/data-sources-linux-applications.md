@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 05/04/2017
 ms.openlocfilehash: d8bcc4b68082fdf0d1f86dc341c3313f9d8788c4
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102050687"
 ---
 # <a name="collect-performance-counters-for-linux-applications-in-azure-monitor"></a>Сбор данных счетчиков производительности приложений Linux в Azure Monitor 
@@ -40,7 +40,7 @@ ms.locfileid: "102050687"
 
 Параметры файла проверки подлинности описаны в следующей таблице.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--|:--|
 | Порт | Представляет текущий порт, который прослушивает экземпляр MySQL. Порт 0 означает, что для экземпляра по умолчанию используются следующие свойства. |
 | адрес привязки;| Текущий адрес привязки MySQL. |
@@ -115,7 +115,7 @@ GRANT SELECT ON mysql.* TO ‘monuser’@’localhost’;
 | Имени объекта | Имя счетчика |
 |:--|:--|
 | База данных MySQL | Дисковое пространство в байтах |
-| База данных MySQL | Таблицы |
+| База данных MySQL | Tables |
 | MySQL Server | Счетчик производительности "Прерванные подключения" |
 | MySQL Server | Счетчик производительности "Использование подключения" |
 | MySQL Server | Используемое дисковое пространство в байтах |

@@ -4,10 +4,10 @@ description: Сведения о заданиях и задачах, а такж
 ms.topic: conceptual
 ms.date: 11/23/2020
 ms.openlocfilehash: e1ca721ec7527d9d042c129c22cf0266e57c32e9
-ms.sourcegitcommit: 6a770fc07237f02bea8cc463f3d8cc5c246d7c65
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95808595"
 ---
 # <a name="jobs-and-tasks-in-azure-batch"></a>Задания и задачи в пакетной службе Azure

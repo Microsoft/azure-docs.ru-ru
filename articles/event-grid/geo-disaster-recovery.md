@@ -4,10 +4,10 @@ description: Описывает, как служба "Сетка событий 
 ms.topic: conceptual
 ms.date: 11/19/2020
 ms.openlocfilehash: 10beaf0ae25f3ed9b7bcda5961a89494b18b84d9
-ms.sourcegitcommit: f311f112c9ca711d88a096bed43040fcdad24433
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94980859"
 ---
 # <a name="server-side-geo-disaster-recovery-in-azure-event-grid"></a>Географическое аварийное восстановление на стороне сервера в службе "Сетка событий Azure"
@@ -32,5 +32,5 @@ ms.locfileid: "94980859"
 > Стоимость метаданных GeoDR в сетке событий: $0.
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Если вы хотите реализовать логику отработки отказа на стороне клиента, см. статью [о создании собственного аварийного восстановления для пользовательских разделов в сетке событий](custom-disaster-recovery.md) .

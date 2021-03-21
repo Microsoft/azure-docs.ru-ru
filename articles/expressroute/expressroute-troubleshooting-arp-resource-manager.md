@@ -9,10 +9,10 @@ ms.date: 12/15/2020
 ms.author: duau
 ms.custom: seodec18
 ms.openlocfilehash: 7d8ae2c58979c66ebbbab366d172179bdeee4253
-ms.sourcegitcommit: 77ab078e255034bd1a8db499eec6fe9b093a8e4f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97561585"
 ---
 # <a name="getting-arp-tables-in-the-resource-manager-deployment-model"></a>Получение таблиц ARP в модели развертывания с помощью Resource Manager
@@ -172,7 +172,7 @@ Age InterfaceProperty IpAddress  MacAddress
   0 On-Prem           65.0.0.1   Incomplete
   0 Microsoft         65.0.0.2   aaaa.bbbb.cccc
 ```
-или
+или диспетчер конфигурации служб
    
 ```output
 Age InterfaceProperty IpAddress  MacAddress    
@@ -191,7 +191,7 @@ Age InterfaceProperty IpAddress  MacAddress
 * Если на стороне Майкрософт возникли проблемы, вы не увидите таблицу ARP, отображаемую для пиринга. 
 * Отправьте запрос в [службу поддержки Майкрософт](https://portal.azure.com/?#blade/Microsoft_Azure_Support/HelpAndSupportBlade). Укажите, что у вас проблема с подключением уровня 2. 
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 * Проверьте конфигурации уровня 3 для канала ExpressRoute.
   * Получение сводки маршрутов для определения состояния сеансов BGP.
   * Получите таблицу маршрутов, чтобы определить, какие префиксы объявляются в ExpressRoute.

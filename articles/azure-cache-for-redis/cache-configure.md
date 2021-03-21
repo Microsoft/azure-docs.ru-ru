@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 08/22/2017
 ms.author: yegu
 ms.openlocfilehash: ba021d280f71504ad5c1e1aea0dc1c8c6b507b1e
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100581077"
 ---
 # <a name="how-to-configure-azure-cache-for-redis"></a>Настройка кэша Azure для Redis
@@ -39,7 +39,7 @@ ms.locfileid: "100581077"
     * [Ключи доступа](#access-keys)
     * [Дополнительные настройки](#advanced-settings)
     * [Помощник по кэшу Azure для Redis](#azure-cache-for-redis-advisor)
-    * [Масштаб](#scale)
+    * [Масштабирование](#scale)
     * [Размер кластера](#cluster-size)
     * [Сохраняемость данных](#redis-data-persistence)
     * [Планирование обновлений](#schedule-updates)
@@ -91,7 +91,7 @@ ms.locfileid: "100581077"
 * [Ключи доступа](#access-keys)
 * [Дополнительные настройки](#advanced-settings)
 * [Помощник по кэшу Azure для Redis](#azure-cache-for-redis-advisor)
-* [Масштаб](#scale)
+* [Масштабирование](#scale)
 * [Размер кластера](#cluster-size)
 * [Сохраняемость данных](#redis-data-persistence)
 * [Планирование обновлений](#schedule-updates)
@@ -109,7 +109,7 @@ ms.locfileid: "100581077"
 
 ![Ключи доступа кэша Azure для Redis](./media/cache-configure/redis-cache-manage-keys.png)
 
-### <a name="advanced-settings"></a>Дополнительные параметры
+### <a name="advanced-settings"></a>Дополнительные настройки
 Приведенные ниже параметры доступны в колонке **Дополнительные параметры**.
 
 * [Порты доступа](#access-ports)
@@ -321,7 +321,7 @@ ms.locfileid: "100581077"
 >
 
 
-## <a name="monitoring"></a>Наблюдение
+## <a name="monitoring"></a>Мониторинг
 
 В разделе **Мониторинг** можно настроить диагностику и мониторинг для кэша Azure для Redis.
 Дополнительные сведения о мониторинге и диагностике кэша Azure для Redis см. в статье [How to monitor Azure Cache for Redis](cache-how-to-monitor.md) (Как отслеживать кэш Azure для Redis).
@@ -501,5 +501,5 @@ shard1>get myKey
 
 Сведения о перемещении ресурсов из одной группы ресурсов в другую, а также из одной подписки в другую см. в статье [Перемещение ресурсов в новую группу ресурсов или подписку](../azure-resource-manager/management/move-resource-group-and-subscription.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Дополнительные сведения о работе с командами Redis см. в разделе [как выполнять команды Redis?](cache-development-faq.md#how-can-i-run-redis-commands)

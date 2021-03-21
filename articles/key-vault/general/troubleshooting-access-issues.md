@@ -8,10 +8,10 @@ ms.service: key-vault
 ms.subservice: general
 ms.topic: how-to
 ms.openlocfilehash: c5fab8b856ff9c82a0de887dc9c322dbf541348b
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98791413"
 ---
 # <a name="troubleshooting-azure-key-vault-access-policy-issues"></a>Устранение проблем с политикой доступа к хранилищу ключей Azure

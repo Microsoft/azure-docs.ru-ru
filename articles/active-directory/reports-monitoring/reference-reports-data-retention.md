@@ -18,10 +18,10 @@ ms.author: markvi
 ms.reviewer: dhanyahk
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4e240e8ec53ce007be1a858af7b6e41273ca8831
-ms.sourcegitcommit: 5db975ced62cd095be587d99da01949222fc69a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97093644"
 ---
 # <a name="how-long-does-azure-ad-store-reporting-data"></a>Как долго Azure AD хранит данные отчетов?
@@ -61,7 +61,7 @@ ms.locfileid: "97093644"
 
 **Отчеты о действиях**    
 
-| Отчет                 | Azure AD уровня "Бесплатный" | Azure AD Premium P1 | Azure AD Premium P2 |
+| Report                 | Azure AD уровня "Бесплатный" | Azure AD Premium P1 | Azure AD Premium P2 |
 | :--                    | :--           | :--                 | :--                 |
 | Журналы аудита             | 7 дней        | 30 дней             | 30 дней             |
 | Вход в систему               | 7 дней        | 30 дней             | 30 дней             |
@@ -71,10 +71,10 @@ ms.locfileid: "97093644"
 
 **Сигналы системы безопасности**
 
-| Отчет         | Azure AD уровня "Бесплатный" | Azure AD Premium P1 | Azure AD Premium P2 |
+| Report         | Azure AD уровня "Бесплатный" | Azure AD Premium P1 | Azure AD Premium P2 |
 | :--            | :--           | :--                 | :--                 |
 | Пользователи, подверженные риску  | 7 дней        | 30 дней             | 90 дней             |
-| Рискованные входы | 7 дней        | 30 дней             | 90 дней             |
+| Вход, представляющий риск | 7 дней        | 30 дней             | 90 дней             |
 
 ---
 

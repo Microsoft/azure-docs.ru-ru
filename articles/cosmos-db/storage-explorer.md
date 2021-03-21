@@ -8,10 +8,10 @@ ms.date: 10/23/2020
 ms.author: dech
 ms.custom: seodec18, has-adal-ref
 ms.openlocfilehash: 5b09ce48226b3c31efce4966ec776c10931cc391
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96348659"
 ---
 # <a name="manage-azure-cosmos-db-resources-by-using-azure-storage-explorer"></a>Управление ресурсами Azure Cosmos DB с помощью Обозреватель службы хранилища Azure
@@ -24,7 +24,7 @@ ms.locfileid: "96348659"
 > [!NOTE]
 > Интеграция Azure Cosmos DB с Обозревателем службы хранилища объявлена устаревшей. Все существующие функции останутся доступными как минимум один год, начиная с этого выпуска. Вместо этого следует использовать [портал Azure](https://portal.azure.com/), [классическое приложение портала Azure](https://portal.azure.com/App/Download) или автономный [Обозреватель Azure Cosmos DB](data-explorer.md) . Альтернативные варианты предлагают множество новых функций, которые сейчас не поддерживаются в Обозревателе службы хранилища.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Учетная запись Cosmos с API SQL или API Azure Cosmos DB для MongoDB. Если у вас нет учетной записи, вы можете создать ее на портал Azure. Дополнительные сведения см. [в разделе Azure Cosmos DB: создание веб-приложения API SQL с помощью .NET и портал Azure](create-sql-api-dotnet.md) .
 

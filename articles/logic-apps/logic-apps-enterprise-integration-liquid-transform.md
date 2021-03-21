@@ -9,10 +9,10 @@ ms.reviewer: estfan, daviburg, logicappspm
 ms.topic: article
 ms.date: 07/31/2020
 ms.openlocfilehash: 0362c9ed4f736474dbd49e1bfaf1373e0f48acd6
-ms.sourcegitcommit: 9889a3983b88222c30275fd0cfe60807976fd65b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94992715"
 ---
 # <a name="transform-json-and-xml-using-liquid-templates-as-maps-in-azure-logic-apps"></a>Преобразование JSON и XML с помощью шаблонов жидкостей в виде карт в Azure Logic Apps
@@ -86,9 +86,9 @@ ms.locfileid: "94992715"
 
 1. На панели " **карты** " выберите **Добавить** и укажите следующие сведения для карты:
 
-   | Свойство | Значение | Описание |
+   | Свойство. | Значение | Описание |
    |----------|-------|-------------|
-   | **Имя** | `JsonToJsonTemplate` | Это имя сопоставления, в нашем примере это "JsontoJsonTemplate" |
+   | **имя**; | `JsonToJsonTemplate` | Это имя сопоставления, в нашем примере это "JsontoJsonTemplate" |
    | **Тип схемы** | **liquid** | Обозначает тип сопоставления. Для преобразования JSON в JSON следует выбрать **Liquid**. |
    | **Схема** | `SimpleJsonToJsonTemplate.liquid` | Это существующий файл шаблона или сопоставления Liquid, который будет использован для преобразования. В нашем примере это SimpleJsonToJsonTemplate.liquid. Чтобы найти этот файл, используйте средство выбора файлов. Ограничения размера карт см. в разделе [ограничения и конфигурация](../logic-apps/logic-apps-limits-and-config.md#artifact-capacity-limits). |
    |||
@@ -142,7 +142,7 @@ ms.locfileid: "94992715"
 
 * Шаблоны ликвидности соответствуют [предельным размерам файлов для карт](../logic-apps/logic-apps-limits-and-config.md#artifact-capacity-limits) в Azure Logic Apps.
 
-* Действие **преобразование JSON в JSON-жидкость** следует за [реализацией DotLiquid для жидкости](https://github.com/dotliquid/dotliquid). Эта реализация является портом .NET Framework из [реализации Shopify для жидкостей](https://shopify.github.io/liquid/) и отличается в [конкретных случаях](https://github.com/dotliquid/dotliquid/issues).
+* Действие **преобразование JSON в JSON-жидкость** следует за [реализацией DotLiquid для жидкости](https://github.com/dotliquid/dotliquid). Эта реализация является портом платформа .NET Framework из [реализации Shopify для жидкостей](https://shopify.github.io/liquid/) и отличается в [конкретных случаях](https://github.com/dotliquid/dotliquid/issues).
 
   Ниже приведены известные отличия.
 

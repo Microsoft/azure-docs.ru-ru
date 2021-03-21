@@ -12,10 +12,10 @@ ms.date: 01/25/2021
 ms.author: juliako
 ms.custom: devx-track-js
 ms.openlocfilehash: b13086e11e1181bba91a3255e68e9f8a32e78450
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98797784"
 ---
 # <a name="embed-video-indexer-widgets-in-your-apps"></a>Внедрение графических мини-приложений индексатора видео в приложения
@@ -70,7 +70,7 @@ ms.locfileid: "98797784"
 
 В этом разделе обсуждается внедрение открытого и закрытого содержимого в приложения.
 
-`location`Параметр должен быть включен во внедренные ссылки. см. раздел [как получить имя вашего региона](regions.md). Если ваша учетная запись находится на этапе предварительной версии, `trial` следует использовать для значения Location. `trial` значение по умолчанию для `location` параметра. Например: `https://www.videoindexer.ai/accounts/00000000-0000-0000-0000-000000000000/videos/b2b2c74b8e/?location=trial`.
+`location`Параметр должен быть включен во внедренные ссылки. см. раздел [как получить имя вашего региона](regions.md). Если ваша учетная запись находится на этапе предварительной версии, `trial` следует использовать для значения Location. `trial` значение по умолчанию для `location` параметра. Например, `https://www.videoindexer.ai/accounts/00000000-0000-0000-0000-000000000000/videos/b2b2c74b8e/?location=trial`.
 
 > [!IMPORTANT]
 > Совместное использование ссылки на мини-приложение **Player** или **Insights** будет включать маркер доступа и предоставлять учетной записи разрешения только для чтения.

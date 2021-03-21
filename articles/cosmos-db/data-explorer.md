@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 09/23/2020
 ms.author: dech
 ms.openlocfilehash: d4baa92fe4aa2ed402c394198684c4deec2bf9f1
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96348608"
 ---
 # <a name="work-with-data-using-azure-cosmos-db-explorer"></a>Работа с данными с помощью обозревателя Azure Cosmos DB 

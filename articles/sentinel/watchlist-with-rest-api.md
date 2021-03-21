@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 01/11/2021
 ms.author: yelevin
 ms.openlocfilehash: ea571f9b033ba82709a13c6d32649f3228ee04b1
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98798498"
 ---
 # <a name="manage-watchlists-in-azure-sentinel-using-rest-api"></a>Управление ватчлистс в Sentinel Azure с помощью REST API
@@ -35,13 +35,13 @@ Azure Sentinel, которая встроена в Azure Monitor Log Analytics, 
 
 | Имя | В | Обязательно | Тип | Описание |
 |-|-|-|-|-|
-| **Подписки** | путь | yes | GUID | Идентификатор подписки Azure |
-| **ResourceGroupName** | путь | yes | строка | имя группы ресурсов в подписке |
-| **WorkspaceName** | путь | yes | строка | имя рабочей области Log Analytics |
-| **{Ватчлисталиас}** | путь | да * | строка | имя заданного списка воспроизведения<br>\* Не требуется при получении всех ватчлистс |
-| **{Ватчлиститемид}** | путь | Да * * | GUID | Идентификатор элемента, который необходимо создать в, добавить в списка воспроизведения или удалить из него.<br>\*\* Требуется только для команд элемента списка воспроизведения |
-| **{API-Version}** | query | yes | строка | Версия протокола, используемого для выполнения этого запроса. Начиная с 29 октября 2020 г. версия API списка воспроизведения — *2019-01-01-Preview* . |
-| **{Беарертокен}** | авторизация | yes | token | маркер авторизации носителя |
+| **Подписки** | path | да | Код GUID | Идентификатор подписки Azure |
+| **ResourceGroupName** | path | да | строка | имя группы ресурсов в подписке |
+| **WorkspaceName** | path | да | строка | имя рабочей области Log Analytics |
+| **{Ватчлисталиас}** | path | да * | строка | имя заданного списка воспроизведения<br>\* Не требуется при получении всех ватчлистс |
+| **{Ватчлиститемид}** | path | Да * * | Код GUID | Идентификатор элемента, который необходимо создать в, добавить в списка воспроизведения или удалить из него.<br>\*\* Требуется только для команд элемента списка воспроизведения |
+| **{API-Version}** | query | да | строка | Версия протокола, используемого для выполнения этого запроса. Начиная с 29 октября 2020 г. версия API списка воспроизведения — *2019-01-01-Preview* . |
+| **{Беарертокен}** | авторизация | да | token | маркер авторизации носителя |
 |  
 
 ## <a name="retrieve-all-watchlists"></a>Получить все ватчлистс
@@ -97,7 +97,7 @@ Azure Sentinel, которая встроена в Azure Monitor Log Analytics, 
 | PUT | `https://management.azure.com/subscriptions/{{subscriptionId}}/`<br>`resourceGroups/{{resourceGroupName}}/`<br>`providers/Microsoft.OperationalInsights/`<br>`workspaces/{{workspaceName}}/`<br>`providers/Microsoft.SecurityInsights/`<br>`watchlists/{{watchlistAlias}}?api-version={{api-version}}` |
 |
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Текст запроса
 
 Ниже приведен пример текста запроса для запроса на создание списка воспроизведения.
 
@@ -156,7 +156,7 @@ Azure Sentinel, которая встроена в Azure Monitor Log Analytics, 
 | PUT | `https://management.azure.com/subscriptions/{{subscriptionId}}/`<br>`resourceGroups/{{resourceGroupName}}/`<br>`providers/Microsoft.OperationalInsights/`<br>`workspaces/{{workspaceName}}/`<br>`providers/Microsoft.SecurityInsights/`<br>`watchlists/{{watchlistAlias}}/`<br>`watchlistitems/{{watchlistItemId}}?api-version={{api-version}}` |
 |
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Текст запроса
 
 Ниже приведен пример текста запроса для запроса на добавление или обновление элемента списка воспроизведения.
 

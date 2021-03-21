@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/08/2021
 ms.author: alkohli
 ms.openlocfilehash: ddbf3c99845f4c38f511260f4dec274903a9d586
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102631967"
 ---
 # <a name="connect-to-and-manage-a-kubernetes-cluster-via-kubectl-on-your-azure-stack-edge-pro-gpu-device"></a>Подключение к кластеру Kubernetes и управление им через kubectl на устройстве с графическим процессором Azure Stack. Pro
@@ -172,6 +172,6 @@ ms.locfileid: "102631967"
 Подробные инструкции см. в разделе [Управление конфигурацией IOT Edge](azure-stack-edge-gpu-manage-compute.md#manage-iot-edge-configuration).
    
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Развертывание приложения без отслеживания состояния на Azure Stack пограничной Pro](azure-stack-edge-gpu-deploy-stateless-application-kubernetes.md).

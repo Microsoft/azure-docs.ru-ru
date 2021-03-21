@@ -10,10 +10,10 @@ ms.author: tamram
 ms.subservice: blobs
 ms.custom: devx-track-csharp
 ms.openlocfilehash: a12fc991734fe74e450aa14a477f3a4500ba659c
-ms.sourcegitcommit: dea56e0dd919ad4250dde03c11d5406530c21c28
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96937259"
 ---
 # <a name="list-blob-containers-with-net"></a>Вывод списка контейнеров больших двоичных объектов с помощью .NET
@@ -24,12 +24,12 @@ ms.locfileid: "96937259"
 
 Чтобы вывести список контейнеров в учетной записи хранения, вызовите один из следующих методов.
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 - [жетблобконтаинерс](/dotnet/api/azure.storage.blobs.blobserviceclient.getblobcontainers)
 - [жетблобконтаинерсасинк](/dotnet/api/azure.storage.blobs.blobserviceclient.getblobcontainersasync)
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 - [листконтаинерссегментед](/dotnet/api/microsoft.azure.storage.blob.cloudblobclient.listcontainerssegmented)
 - [листконтаинерссегментедасинк](/dotnet/api/microsoft.azure.storage.blob.cloudblobclient.listcontainerssegmentedasync)
@@ -58,11 +58,11 @@ ms.locfileid: "96937259"
 
 В следующем примере асинхронно перечисляются контейнеры в учетной записи хранения, которые начинаются с указанного префикса. В примере перечисляются контейнеры, начинающиеся с указанного префикса, и возвращается указанное количество результатов для каждого вызова операции перечисления. Затем он использует токен продолжения для получения следующего сегмента результатов. В примере также возвращаются метаданные контейнера с результатами.
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 :::code language="csharp" source="~/azure-storage-snippets/blobs/howto/dotnet/dotnet-v12/Containers.cs" id="Snippet_ListContainers":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnet11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
 ```csharp
 private static async Task ListContainersWithPrefixAsync(CloudBlobClient blobClient,

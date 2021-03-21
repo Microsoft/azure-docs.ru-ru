@@ -4,10 +4,10 @@ description: В этой статье содержатся инструкции 
 ms.topic: how-to
 ms.date: 05/27/2020
 ms.openlocfilehash: 80974c111dd451314635d06334766322bc68e437
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102210450"
 ---
 # <a name="create-custom-azure-resource-manager-role-and-assign-to-service-principal"></a>Создание настраиваемой роли Azure Resource Manager и назначение ее субъекту-службе
@@ -16,7 +16,7 @@ ms.locfileid: "102210450"
 
 В этой статье описаны действия по созданию пользовательской роли Azure Resource Manager с Azure Cloud Shell, которая затем используется для создания субъекта-службы.
 
-## <a name="prerequisites"></a>Предварительные требования  
+## <a name="prerequisites"></a>Предварительные условия  
 
 Ниже приведены необходимые условия для этой статьи.
 
@@ -207,7 +207,7 @@ az role assignment create --role “LVAEdge User” --assignee-object-id < objec
 az role assignment list  --assignee < objectId>
 ```
 
-Результат должен выглядеть следующим образом:
+Результат должен выглядеть следующим образом.
 
 ```
 [

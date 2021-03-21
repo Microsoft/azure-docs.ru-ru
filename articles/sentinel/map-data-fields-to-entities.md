@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 02/10/2021
 ms.author: yelevin
 ms.openlocfilehash: cb91d269f6b166510db54637d17d776e71137408
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102456291"
 ---
 # <a name="map-data-fields-to-entities-in-azure-sentinel"></a>Преобразование полей данных в сущности в Azure Sentinel 
@@ -31,7 +31,7 @@ ms.locfileid: "102456291"
 >
 > - Важные сведения о обратной совместимости и различиях между новой и старой версиями сопоставления сущностей см. в [примечаниях к новой версии](#notes-on-the-new-version) в конце этого документа.
 
-## <a name="introduction"></a>Вступление
+## <a name="introduction"></a>Введение
 
 Сопоставление сущностей является неотъемлемой частью конфигурации [запланированных правил аналитики запросов](tutorial-detect-threats-custom.md). Он дополняет вывод правил (предупреждений и инцидентов) на наличие основной информации, которая служит в качестве стандартных блоков для любых исследовательских процессов и действий, которые следуют за ними.
 

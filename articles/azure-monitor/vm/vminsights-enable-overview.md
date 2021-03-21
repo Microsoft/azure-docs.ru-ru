@@ -7,10 +7,10 @@ ms.author: bwren
 ms.date: 12/22/2020
 ms.custom: references_regions
 ms.openlocfilehash: bb2e12082b80c397eec27409b1177379a92fdd7d
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102634164"
 ---
 # <a name="enable-vm-insights-overview"></a>Общие сведения о включении VM Insights
@@ -120,6 +120,6 @@ $ grep . /sys/devices/system/cpu/vulnerabilities/*
 
 [!INCLUDE [GDPR-related guidance](../../../includes/gdpr-dsr-and-stp-note.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения об использовании функции наблюдения за производительностью см. в статье [Просмотр производительности VM Insights](../vm/vminsights-performance.md). Чтобы просмотреть зависимости обнаруженных приложений, см. статью [Просмотр схемы VM Insights](../vm/vminsights-maps.md).

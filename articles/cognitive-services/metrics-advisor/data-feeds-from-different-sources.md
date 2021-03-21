@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 10/12/2020
 ms.author: mbullwin
 ms.openlocfilehash: c4d1d23da5fd9678cc5b9477ddeed0daf4f5ac36
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96348625"
 ---
 # <a name="add-data-feeds-from-different-data-sources-to-metrics-advisor"></a>Добавление веб-каналов данных из разных источников данных в помощник по метрикам
@@ -37,19 +37,19 @@ ms.locfileid: "96348625"
 
 | Источники данных | Типы проверки подлинности |
 |-------------| ---------------------|
-|[**Azure Application Insights**](#appinsights)|  Основные |
-|[**Хранилище BLOB-объектов Azure (JSON)**](#blob) | Основные<br>ManagedIdentity|
-|[**Azure Cosmos DB (SQL)**](#cosmosdb) | Основные |
-|[**Azure Data Explorer (Kusto)**](#kusto) | Основные<br>ManagedIdentity|
-|[**Azure Data Lake Storage 2-го поколения**](#adl) | Основные<br>DataLakeGen2SharedKey<br>Субъект-служба<br>Субъект-служба из хранилища ключей<br> |
-|[**База данных SQL Azure/SQL Server**](#sql) | Основные<br>ManagedIdentity<br>Субъект-служба<br>Субъект-служба из хранилища ключей<br>азуресклконнектионстринг
-|[**Хранилище таблиц Azure**](#table) | Основные | 
-|[**Elasticsearch**](#es) | Основные |
-|[**HTTP-запрос**](#http) | Основные | 
-|[**InfluxDB (Инфлукскл)**](#influxdb) | Основные |
-|[**MongoDB**](#mongodb) | Основные |
-|[**MySQL**](#mysql) | Основные |
-|[**PostgreSQL**](#pgsql)| Основные|
+|[**Azure Application Insights**](#appinsights)|  Basic |
+|[**Хранилище BLOB-объектов Azure (JSON)**](#blob) | Basic<br>ManagedIdentity|
+|[**Azure Cosmos DB (SQL)**](#cosmosdb) | Basic |
+|[**Azure Data Explorer (Kusto)**](#kusto) | Basic<br>ManagedIdentity|
+|[**Azure Data Lake Storage 2-го поколения**](#adl) | Basic<br>DataLakeGen2SharedKey<br>Субъект-служба<br>Субъект-служба из хранилища ключей<br> |
+|[**База данных SQL Azure/SQL Server**](#sql) | Basic<br>ManagedIdentity<br>Субъект-служба<br>Субъект-служба из хранилища ключей<br>азуресклконнектионстринг
+|[**Хранилище таблиц Azure**](#table) | Basic | 
+|[**ElasticSearch**](#es) | Basic |
+|[**HTTP-запрос**](#http) | Basic | 
+|[**InfluxDB (Инфлукскл)**](#influxdb) | Basic |
+|[**MongoDB**](#mongodb) | Basic |
+|[**MySQL**](#mysql) | Basic |
+|[**PostgreSQL**](#pgsql)| Basic|
 
 Создайте **сущность учетных данных** и используйте ее для проверки подлинности в источниках данных. В следующих разделах указываются параметры, необходимые для *обычной* проверки подлинности. 
 
@@ -93,7 +93,7 @@ ms.locfileid: "96348625"
   
   * v1 (значение по умолчанию)
 
-      Принимаются только *имена* и *значения* метрик. Например:
+      Принимаются только *имена* и *значения* метрик. Пример:
     
       ``` JSON
       {"count":11, "revenue":1.23}
@@ -101,7 +101,7 @@ ms.locfileid: "96348625"
 
   * Версия 2
 
-      Также принимаются *измерения* метрик и *отметка времени* . Например:
+      Также принимаются *измерения* метрик и *отметка времени* . Пример:
       
       ``` JSON
       [
@@ -159,7 +159,7 @@ ms.locfileid: "96348625"
   * `%h` — Это час в формате `HH`
   * `%M` представляет собой минуты в формате `mm`
 
-В настоящее время помощник по метрикам поддерживает схему данных в файлах JSON, как показано ниже. Например:
+В настоящее время помощник по метрикам поддерживает схему данных в файлах JSON, как показано ниже. Пример:
 
 ``` JSON
 [

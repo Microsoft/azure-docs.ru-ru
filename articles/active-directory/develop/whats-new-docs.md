@@ -12,10 +12,10 @@ ms.topic: reference
 ms.workload: identity
 ms.author: marsma
 ms.openlocfilehash: 56e6d859293b91a56252372574f59c8dcc2cd80e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101687334"
 ---
 # <a name="microsoft-identity-platform-docs-whats-new"></a>Документация по платформе Microsoft Identity: новые возможности
@@ -58,7 +58,7 @@ ms.locfileid: "101687334"
 
 - [Устранение неполадок с проверкой издателя](troubleshoot-publisher-verification.md)
 - [Модель приложения](application-model.md)
-- [Проверка подлинности и авторизация](authentication-vs-authorization.md)
+- [Сравнение проверки подлинности и авторизации](authentication-vs-authorization.md)
 - [Как ограничить приложение Azure AD набором пользователей в клиенте Azure AD](howto-restrict-your-app-to-a-set-of-users.md)
 - [Разрешения и согласие для конечной точки платформы удостоверений Майкрософт](v2-permissions-and-consent.md)
 - [Настраиваемое время существования маркеров в платформе Microsoft Identity (Предварительная версия)](active-directory-configurable-token-lifetimes.md)
