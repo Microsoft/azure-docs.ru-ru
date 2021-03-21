@@ -10,10 +10,10 @@ ms.author: gopalv
 ms.date: 09/11/2019
 ms.topic: reference
 ms.openlocfilehash: e9a55f72718d6ed5991f3d0f16323409bb0f699f
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101661075"
 ---
 # <a name="reference-ubuntu-linux-data-science-virtual-machine"></a>Справочник: виртуальная машина Ubuntu (Linux) для обработки и анализа данных
@@ -253,7 +253,7 @@ LaTeX устанавливается с помощью пакета texlive вм
 
 ## <a name="machine-learning-tools"></a>Инструменты машинного обучения
 
-В состав виртуальной машины входят некоторые инструменты и алгоритмы машинного обучения, которые были предварительно скомпилированы и установлены локально. приведенные ниже.
+В состав виртуальной машины входят некоторые инструменты и алгоритмы машинного обучения, которые были предварительно скомпилированы и установлены локально. Сюда входит следующее.
 
 * **Vowpal Wabbit**— алгоритм быстрого онлайн-обучения.
 * **xgboost**— инструмент, предоставляющий оптимизированные алгоритмы повышенного дерева.

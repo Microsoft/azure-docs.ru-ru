@@ -12,10 +12,10 @@ ms.date: 02/22/2021
 ms.author: kenwith
 ms.reviewer: japere
 ms.openlocfilehash: 813e360ffc6c78b52151af5b9867560ae6d58f2f
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103198243"
 ---
 # <a name="header-based-single-sign-on-for-on-premises-apps-with-azure-ad-app-proxy"></a>Единый вход на основе заголовка для локальных приложений с Azure AD App прокси-сервером
@@ -93,7 +93,7 @@ Azure Active Directory прокси приложения (Azure AD) изнача
 - Прокси приложения используется для предоставления удаленного доступа к приложениям локально или в частном облаке. Не рекомендуется использовать прокси приложения для управления трафиком, внутренним из корпоративной сети.
 - Доступ к приложениям проверки подлинности на основе заголовков должен быть ограничен только трафиком из соединителя или другим разрешенным решением проверки подлинности на основе заголовков. Это обычно делается путем ограничения сетевого доступа к приложению с помощью брандмауэра или IP-адреса на сервере приложений.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Сведения о едином входе](what-is-single-sign-on.md)
 - [Что такое прокси приложения?](what-is-application-proxy.md)

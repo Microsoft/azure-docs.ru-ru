@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 01/09/2020
 ms.openlocfilehash: ce916336ea47cd223c10a8f664b2dc9806ed0a17
-ms.sourcegitcommit: 54e1d4cdff28c2fd88eca949c2190da1b09dca91
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99221032"
 ---
 # <a name="create-and-manage-private-link-for-azure-database-for-mysql-using-portal"></a>Создание и управление частной связью для базы данных Azure для MySQL с помощью портала
@@ -37,7 +37,7 @@ ms.locfileid: "99221032"
 
     | Параметр | Значение |
     | ------- | ----- |
-    | Название | Введите *MyVirtualNetwork*. |
+    | Имя | Введите *MyVirtualNetwork*. |
     | Пространство адресов | Введите *10.1.0.0/16*. |
     | Подписка | Выберите свою подписку.|
     | Группа ресурсов | Выберите **Создать**, а затем введите *myResourceGroup* и нажмите кнопку **ОК**. |

@@ -16,10 +16,10 @@ ms.date: 03/19/2020
 ms.author: rolyon
 ms.reviewer: bagovind
 ms.openlocfilehash: ab64765fc4e329c8edbf7a4db813113d20d476b3
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100557514"
 ---
 # <a name="create-or-update-azure-custom-roles-using-the-rest-api"></a>Создание или обновление пользовательских ролей Azure с помощью REST API
@@ -61,7 +61,7 @@ ms.locfileid: "100557514"
 1. В URI замените *{scope}* на область, для которой нужно получить список ролей.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Тип |
+    > | Область | Type |
     > | --- | --- |
     > | `subscriptions/{subscriptionId1}` | Подписка |
     > | `subscriptions/{subscriptionId1}/resourceGroups/{resourceGroup1}` | Группа ресурсов |
@@ -88,7 +88,7 @@ ms.locfileid: "100557514"
 1. В URI замените *{scope}* на область, для которой нужно получить список ролей.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Тип |
+    > | Область | Type |
     > | --- | --- |
     > | `subscriptions/{subscriptionId1}` | Подписка |
     > | `subscriptions/{subscriptionId1}/resourceGroups/{resourceGroup1}` | Группа ресурсов |
@@ -117,7 +117,7 @@ ms.locfileid: "100557514"
 1. В URI замените *{scope}* на область, для которой нужно получить список ролей.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Тип |
+    > | Область | Type |
     > | --- | --- |
     > | `subscriptions/{subscriptionId1}` | Подписка |
     > | `subscriptions/{subscriptionId1}/resourceGroups/{resourceGroup1}` | Группа ресурсов |
@@ -171,7 +171,7 @@ ms.locfileid: "100557514"
 1. В URI замените *{scope}* на первую область `assignableScopes` пользовательской роли.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Тип |
+    > | Область | Type |
     > | --- | --- |
     > | `subscriptions/{subscriptionId1}` | Подписка |
     > | `subscriptions/{subscriptionId1}/resourceGroups/{resourceGroup1}` | Группа ресурсов |
@@ -240,7 +240,7 @@ ms.locfileid: "100557514"
 1. В URI замените *{scope}* на первую область `assignableScopes` пользовательской роли.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Тип |
+    > | Область | Type |
     > | --- | --- |
     > | `subscriptions/{subscriptionId1}` | Подписка |
     > | `subscriptions/{subscriptionId1}/resourceGroups/{resourceGroup1}` | Группа ресурсов |
@@ -330,7 +330,7 @@ ms.locfileid: "100557514"
 1. В URI замените *{scope}* на область, для которой нужно удалить пользовательскую роль.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Тип |
+    > | Область | Type |
     > | --- | --- |
     > | `subscriptions/{subscriptionId1}` | Подписка |
     > | `subscriptions/{subscriptionId1}/resourceGroups/{resourceGroup1}` | Группа ресурсов |

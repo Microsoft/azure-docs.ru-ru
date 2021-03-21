@@ -8,17 +8,17 @@ ms.topic: how-to
 ms.date: 02/18/2021
 ms.custom: template-how-to
 ms.openlocfilehash: 7f5e5e4da9fea671fc85a55fc8cc191fa14b720f
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101663008"
 ---
 # <a name="how-to-update-azure-percept-dk-over-a-usb-connection"></a>Как обновить Azure Перцепт DK по USB-подключению
 
 Следуйте указаниям этого руководства, чтобы узнать, как выполнить обновление USB для платы перевозчика Azure Перцепт DK.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 - Главный компьютер с доступным портом USB-C или USB.
 - Плата перевозчика Azure Перцепт DK (комплект разработчика) и переданный USB-C кабель USB-C. Если главный компьютер имеет порт USB, но не порт USB-C, вы можете использовать кабель USB-C для кабеля USB (продается отдельно).
 - Установите [](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) выводимый (требуется административный доступ).

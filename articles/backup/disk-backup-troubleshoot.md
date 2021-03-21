@@ -4,10 +4,10 @@ description: Сведения об устранении сбоев резерв�
 ms.topic: conceptual
 ms.date: 01/07/2021
 ms.openlocfilehash: 855c6c5b19b10bdb699a25f89ebc29001b7941ac
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98737733"
 ---
 # <a name="troubleshooting-backup-failures-in-azure-disk-backup-in-preview"></a>Устранение ошибок резервного копирования в службе архивации дисков Azure (Предварительная версия)
@@ -177,6 +177,6 @@ ms.locfileid: "98737733"
 
 Рекомендуемое действие: Подождите, пока не завершится предыдущее выполнение резервного копирования.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Таблица поддержки резервного копирования дисков Azure](disk-backup-support-matrix.md)

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 02/12/2021
 ms.author: alkohli
 ms.openlocfilehash: dacc9ecc28ffa482b60d1e48735fe3620b5b7558
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100363072"
 ---
 # <a name="azure-stack-edge-pro-r-safety-instructions"></a>Инструкции по безопасности для Azure Stack пограничных Pro R
@@ -241,6 +241,6 @@ A device that has a UPS installed is designed to operate in the following enviro
 Microsoft Ирландия Сандифорд, средство EST Дублин D18 KX32 ИРЛ телефон номер: + 353 1 295 3826 номер факса: + 353 1 706 4110
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Подготовка к развертыванию Azure Stack пограничных Pro R](azure-stack-edge-pro-r-deploy-prep.md)

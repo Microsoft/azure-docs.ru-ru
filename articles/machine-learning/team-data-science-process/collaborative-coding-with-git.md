@@ -11,10 +11,10 @@ ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
 ms.openlocfilehash: ca24a781f4f3ad5c210813dabbb896de35056ed6
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97588715"
 ---
 # <a name="collaborative-coding-with-git"></a>Совместное программирование с помощью Git
@@ -72,7 +72,7 @@ git push origin script
 
 ![5](./media/collaborative-coding-with-git/5-sprint-push-to-branch.png)
 
-## <a name="create-a-pull-request"></a><a name='CreateapullrequestonVSTS-3'></a>Создание запроса на включение изменений
+## <a name="create-a-pull-request"></a><a name='CreateapullrequestonVSTS-3'></a>Создание запроса на включение внесенных изменений
 
 После завершения одной или нескольких фиксаций и push-уведомлений, когда вы будете готовы объединить текущую рабочую ветвь в базовую ветвь, вы можете создать и отправить *запрос на вытягивание* в Azure Repos. 
 

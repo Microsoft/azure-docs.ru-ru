@@ -1,18 +1,18 @@
 ---
 title: Известные проблемы и устранение неполадок в Azure Kinect
 description: Ознакомьтесь с некоторыми известными проблемами и советами по устранению неполадок при использовании пакета SDK для датчиков с Azure Kinect DK.
-author: tesych
-ms.author: tesych
+author: qm13
+ms.author: quentinm
 ms.prod: kinect-dk
-ms.date: 06/26/2019
+ms.date: 03/05/2021
 ms.topic: conceptual
 keywords: Устранение неполадок, обновление, ошибка, Kinect, обратная связь, восстановление, ведение журнала, советы
-ms.openlocfilehash: 5f13815b8f8b26f6a08da28181a4a6164b7b89a3
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 32a86deb0b6ab70e42ae3d659504256baae76202
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102038826"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104654770"
 ---
 # <a name="azure-kinect-known-issues-and-troubleshooting"></a>Известные проблемы и устранение неполадок в Azure Kinect
 
@@ -172,18 +172,54 @@ ms.locfileid: "102038826"
 
 1. Включите автоматический вход в учетную запись пользователя, которую планируется использовать. Инструкции по включению автоматического входа см. в [этой](https://vitux.com/how-to-enable-disable-automatic-login-in-ubuntu-18-04-lts/) статье.
 2. Выключите систему, отключите монитор и включите систему. Автоматический вход приводит к принудительному созданию сеанса x-Server.
-2. Подключение через SSH и задание переменной среды дисплея `export DISPLAY=:0`
-3. Запустите приложение Azure Kinect.
+3. Подключение через SSH и задание переменной среды дисплея `export DISPLAY=:0`
+4. Запустите приложение Azure Kinect.
 
 Служебную программу [кстрлокк](http://manpages.ubuntu.com/manpages/xenial/man1/xtrlock.1x.html) можно использовать для немедленной блокировки экрана после автоматического входа. Добавьте следующую команду в приложение запуска или системную службу:
 
-`bash -c “xtrlock -b”` 
+`bash -c “xtrlock -b”`
 
 ## <a name="missing-c-documentation"></a>Отсутствует документация по C#
 
 Документация по пакету SDK для датчика C# находится [здесь](https://microsoft.github.io/Azure-Kinect-Sensor-SDK/master/namespace_microsoft_1_1_azure_1_1_kinect_1_1_sensor.html).
 
 Документация по пакету SDK для отслеживания текста находится [здесь](https://microsoft.github.io/Azure-Kinect-Body-Tracking/release/1.x.x/namespace_microsoft_1_1_azure_1_1_kinect_1_1_body_tracking.html).
+
+## <a name="specifying-onnx-runtime-execution-environment"></a>Указание среды выполнения среды выполнения ONNX
+
+Пакет SDK для отслеживания текста поддерживает среды выполнения ЦП, CUDA, Директмл (только для Windows) и Тенсоррт для определения модели оценки. `K4ABT_TRACKER_PROCESSING_MODE_GPU`По умолчанию CUDA выполнение в Linux и директмл выполнение в Windows. Для выбора конкретных сред выполнения были добавлены три дополнительных режима: `K4ABT_TRACKER_PROCESSING_MODE_GPU_CUDA` , `K4ABT_TRACKER_PROCESSING_MODE_GPU_DIRECTML` и `K4ABT_TRACKER_PROCESSING_MODE_GPU_TENSORRT` .
+
+Среда выполнения ONNX включает переменные среды для управления кэшированием моделей Тенсоррт. Рекомендуемые значения:
+- ORT_TENSORRT_ENGINE_CACHE_ENABLE = 1 
+- ORT_TENSORRT_ENGINE_CACHE_PATH = "PathName"
+
+Перед началом отслеживания текста необходимо создать папку.
+
+Среда выполнения Тенсоррт поддерживает как FP32 (по умолчанию), так и FP16. FP16ные руки ~ 2 увеличение производительности для минимального уменьшения точности. Чтобы указать FP16, сделайте следующее:
+- ORT_TENSORRT_FP16_ENABLE = 1
+
+## <a name="required-dlls-for-onnx-runtime-execution-environments"></a>Требуемые библиотеки DLL для сред выполнения среды выполнения ONNX
+
+|Режим      | CUDA 11,1            | CUDNN 8.0.5          | Тенсоррт 7.2.1       |
+|----------|----------------------|----------------------|----------------------|
+| ЦП      | cudart64_110         | cudnn64_8            | -                    |
+|          | cufft64_10           |                      |                      |
+|          | cublas64_11          |                      |                      |
+|          | cublasLt64_11        |                      |                      |
+| CUDA     | cudart64_110         | cudnn64_8            | -                    |
+|          | cufft64_10           | cudnn_ops_infer64_8  |                      |
+|          | cublas64_11          | cudnn_cnn_infer64_8  |                      |
+|          | cublasLt64_11        |                      |                      |
+| директмл | cudart64_110         | cudnn64_8            | -                    |
+|          | cufft64_10           |                      |                      |
+|          | cublas64_11          |                      |                      |
+|          | cublasLt64_11        |                      |                      |
+| TensorRT | cudart64_110         | cudnn64_8            | нвинфер              |
+|          | cufft64_10           | cudnn_ops_infer64_8  | nvinfer_plugin       |
+|          | cublas64_11          | cudnn_cnn_infer64_8  | myelin64_1           |
+|          | cublasLt64_11        |                      |                      |
+|          | nvrtc64_111_0        |                      |                      |
+|          | нвртк — builtins64_111 |                      |                      |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

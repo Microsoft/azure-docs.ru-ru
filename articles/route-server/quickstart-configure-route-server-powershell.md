@@ -7,12 +7,12 @@ ms.service: route-server
 ms.topic: quickstart
 ms.date: 03/02/2021
 ms.author: duau
-ms.openlocfilehash: e302cb9da410487dbea4ec5c5b256c4cb5dd186f
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: a3ab3a801872cc20b4e41bbff02ad6474c3bab8c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102566385"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104655212"
 ---
 # <a name="quickstart-create-and-configure-route-server-using-azure-powershell"></a>Краткое руководство. Создание и настройка сервера маршрутизации с помощью Azure PowerShell
 
@@ -40,8 +40,8 @@ ms.locfileid: "102566385"
 Перед созданием сервера маршрутизации Azure нужно создать виртуальную сеть для размещения развертывания. Чтобы создать группу ресурсов и виртуальную сеть, выполните приведенную ниже команду. Если у вас уже есть виртуальная сеть, можно перейти к следующему разделу.
 
 ```azurepowershell-interactive
-New-AzResourceGroup –Name “RouteServerRG” -Location “West US”
-New-AzVirtualNetwork –ResourceGroupName “RouteServerRG -Location “West US” -Name myVirtualNetwork –AddressPrefix 10.0.0.0/16
+New-AzResourceGroup –Name "RouteServerRG” -Location “West US"
+New-AzVirtualNetwork –ResourceGroupName "RouteServerRG" -Location "West US" -Name myVirtualNetwork –AddressPrefix 10.0.0.0/16
 ```
 
 ### <a name="add-a-subnet"></a>Добавление подсети
@@ -49,15 +49,15 @@ New-AzVirtualNetwork –ResourceGroupName “RouteServerRG -Location “West US�
 1. Добавьте подсеть с именем *RouteServerSubnet*, чтобы развернуть в ней сервер маршрутизации Azure. Эта подсеть является выделенной подсетью только для сервера маршрутизации Azure. Для подсети RouteServerSubnet требуется префикс /27 или более короткий (например, /26 или /25), иначе при добавлении сервера маршрутизации Azure появится сообщение об ошибке.
 
     ```azurepowershell-interactive
-    $vnet = Get-AzVirtualNetwork –Name “myVirtualNetwork” - ResourceGroupName “RouteServerRG”
-    Add-AzVirtualNetworkSubnetConfig –Name “RouteServerSubnet” -AddressPrefix 10.0.0.0/24 -VirtualNetwork $vnet
+    $vnet = Get-AzVirtualNetwork –Name "myVirtualNetwork" - ResourceGroupName "RouteServerRG"
+    Add-AzVirtualNetworkSubnetConfig –Name "RouteServerSubnet" -AddressPrefix 10.0.0.0/24 -VirtualNetwork $vnet
     $vnet | Set-AzVirtualNetwork
     ```
 
 1. Получите идентификатор RouteServerSubnet. Чтобы просмотреть идентификатор ресурса всех подсетей в виртуальной сети, выполните эту команду:
 
     ```azurepowershell-interactive
-    $vnet = Get-AzVirtualNetwork –Name “vnet_name” -ResourceGroupName “
+    $vnet = Get-AzVirtualNetwork –Name "vnet_name" -ResourceGroupName "RouteServerRG"
     $vnet.Subnets
     ```
 
@@ -70,7 +70,7 @@ New-AzVirtualNetwork –ResourceGroupName “RouteServerRG -Location “West US�
 Создайте сервер маршрутизации, выполнив следующую команду:
 
 ```azurepowershell-interactive 
-New-AzRouteServer -RouteServerName myRouteServer -ResourceGroupName RouteServerRG -Location "West US” -HostedSubnet “RouteServerSubnet_ID”
+New-AzRouteServer -RouteServerName myRouteServer -ResourceGroupName RouteServerRG -Location "West US" -HostedSubnet "RouteServerSubnet_ID"
 ```
 
 Расположение должно совпадать с расположением виртуальной сети. HostedSubnet — это идентификатор RouteServerSubnet, полученный в предыдущем разделе.
@@ -137,7 +137,7 @@ Get-AzRouteServerPeerLearnedRoute
 1. Удалите пиринг BGP между сервером маршрутизации Azure и NVA, выполнив следующую команду:
 
 ```azurepowershell-interactive 
-Remove-AzRouteServerPeer -PeerName “nva_name” -RouteServerName myRouteServer -ResourceGroupName RouteServerRG 
+Remove-AzRouteServerPeer -PeerName "nva_name" -RouteServerName myRouteServer -ResourceGroupName RouteServerRG 
 ```
 
 2. Удалите сервер маршрутизации Azure, выполнив следующую команду:

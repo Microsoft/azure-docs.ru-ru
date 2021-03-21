@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 09/08/2020
 ms.custom: references_regions
 ms.openlocfilehash: 1e2d83d4a5e21ed747ec9d4dcf2fa03d1e3935cc
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98737578"
 ---
 # <a name="azure-database-for-postgresql-backup-with-long-term-retention-preview"></a>Резервное копирование базы данных Azure для PostgreSQL с долгосрочным периодом хранения (Предварительная версия)
@@ -323,6 +323,6 @@ Azure Backup следовать строгим рекомендациям по �
 
         ![Поиск имени хранилища](./media/backup-azure-database-postgresql/search-for-vault-name.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Общие сведения о резервных хранилищах](backup-vault-overview.md)

@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 02/12/2021
 ms.author: erhopf
 ms.openlocfilehash: 9ce0d3a06846cbc3aa37ab836564150e6f2c34ee
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100362817"
 ---
 # <a name="inspect-custom-speech-data"></a>Проверка данных службы пользовательского распознавания речи
@@ -95,7 +95,7 @@ ms.locfileid: "100362817"
 
 Файлы, экспортированные в данные, будут использоваться в качестве нового набора данных и не будут влиять на существующие сущности данных, обучения и тестирования.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Оценка данных](how-to-custom-speech-evaluate-data.md)
 - [Обучение модели](how-to-custom-speech-train-model.md)

@@ -12,10 +12,10 @@ ms.date: 07/30/2020
 ms.author: kenwith
 ms.reviewer: arvinh,luleon
 ms.openlocfilehash: 3e2d3ab6a23ce588c3aa393e5096ac75e88a5365
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99255291"
 ---
 # <a name="understand-linked-sign-on"></a>Общие сведения о связанном входе
@@ -31,7 +31,7 @@ ms.locfileid: "99255291"
  
  **Связанный** параметр не предоставляет функции входа с помощью учетных данных Azure AD. Но вы по-прежнему можете использовать некоторые другие функции **корпоративных приложений**. Например, можно использовать журналы аудита и добавить пользовательский логотип и имя приложения.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Для быстрого увеличения знаний пошаговые [руководства](view-applications-portal.md) по управлению приложениями. В кратком руководстве по настройке единого входа можно также найти **связанный** параметр. 
 

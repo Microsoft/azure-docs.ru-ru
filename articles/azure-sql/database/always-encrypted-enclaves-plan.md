@@ -1,7 +1,7 @@
 ---
 title: Планирование енклавес и аттестации Intel SGX в базе данных SQL Azure
 description: Спланируйте развертывание Always Encrypted с помощью Secure енклавес в базе данных SQL Azure.
-keywords: Шифрование данных, шифрование SQL, шифрование базы данных, конфиденциальные данные, Always Encrypted, безопасный енклавес, SGX, аттестация
+keywords: шифрование данных, шифрование SQL, шифрование базы данных, конфиденциальные данные, Always Encrypted, безопасные анклавы, SGX, аттестация
 services: sql-database
 ms.service: sql-database
 ms.subservice: security
@@ -12,10 +12,10 @@ ms.author: jaszymas
 ms.reviwer: vanto
 ms.date: 01/15/2021
 ms.openlocfilehash: 4448ce051b0c9e73865e8057cc4f224c9cbeb571
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98732750"
 ---
 # <a name="plan-for-intel-sgx-enclaves-and-attestation-in-azure-sql-database"></a>Планирование енклавес и аттестации Intel SGX в базе данных SQL Azure
@@ -23,7 +23,7 @@ ms.locfileid: "98732750"
 [!INCLUDE[appliesto-sqldb](../includes/appliesto-sqldb.md)]
 
 > [!NOTE]
-> Always Encrypted с безопасным енклавес для базы данных SQL Azure в настоящее время находится в **общедоступной предварительной версии**.
+> Always Encrypted с безопасными анклавами для Базы данных SQL Azure в настоящее время предоставляется в **общедоступной предварительной версии**.
 
 [Always encrypted с безопасным енклавес](/sql/relational-databases/security/encryption/always-encrypted-enclaves) в базе данных SQL Azure использует [расширения Intel Software Guard (Intel SGX)](https://itpeernetwork.intel.com/microsoft-azure-confidential-computing/) енклавес и требует [аттестации Microsoft Azure](/sql/relational-databases/security/encryption/always-encrypted-enclaves#secure-enclave-attestation).
 
@@ -57,10 +57,10 @@ Intel SGX — это надежная технология среды выпол
 
 В рабочих средах (обрабатывающих реальные конфиденциальные данные) важно, чтобы организация придерживалась разделения ролей при настройке аттестации, где каждая отдельная роль назначается разным людям. В частности, если целью развертывания Always Encrypted в Организации является сокращение контактной зоны для атаки путем обеспечения администраторам баз данных SQL Azure доступа к конфиденциальным данным, администраторы базы данных SQL Azure не должны управлять политиками аттестации.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Включение Intel SGX для базы данных SQL Azure](always-encrypted-enclaves-enable-sgx.md)
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Учебник. Начало работы с Always Encrypted и безопасными анклавами в Базе данных SQL Azure](always-encrypted-enclaves-getting-started.md)
+- [Учебник. Начало работы с Always Encrypted и безопасными анклавами в Базе данных SQL Azure](always-encrypted-enclaves-getting-started.md)
