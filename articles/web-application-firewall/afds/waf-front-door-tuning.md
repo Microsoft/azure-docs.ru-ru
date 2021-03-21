@@ -9,10 +9,10 @@ ms.date: 12/11/2020
 ms.author: mohitku
 ms.reviewer: tyao
 ms.openlocfilehash: b2f551257fb6869d5dec47014be3a8522b61b9fa
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102506639"
 ---
 # <a name="tuning-web-application-firewall-waf-for-azure-front-door"></a>Настройка брандмауэра веб-приложения (WAF) для передней дверцы Azure

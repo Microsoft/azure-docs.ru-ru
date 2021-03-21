@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 03/02/2021
 ms.author: rkarlin
 ms.openlocfilehash: 89da9ed378118875f0c09d3c23799349a4d093b0
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103467703"
 ---
 # <a name="azure-defender-for-iot-frequently-asked-questions"></a>Часто задаваемые вопросы о защитнике Azure для IoT
@@ -73,7 +73,7 @@ ms.locfileid: "103467703"
 
 Датчики и агенты продолжают работать и хранить данные при условии, что устройство работает. Данные хранятся в кэше сообщений безопасности в соответствии с конфигурацией размера. Когда устройство восстанавливает подключение, отправка сообщений безопасности возобновляется.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о том, как приступить к работе с защитником для Интернета вещей, см. в следующих статьях:
 

@@ -10,10 +10,10 @@ ms.topic: include
 ms.date: 09/10/2020
 ms.author: mbullwin
 ms.openlocfilehash: 4c55c25621df1925b6ed6c374d8af88551eb1e46
-ms.sourcegitcommit: d22a86a1329be8fd1913ce4d1bfbd2a125b2bcae
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96231435"
 ---
 Помощник по метрикам — это служба для обнаружения, диагностики и анализа аномалий во временных рядах. Это служба на основе ИИ, а значит она использует предоставленные данные для обучения используемой модели. Эта служба принимает таблицы агрегированных данных со следующими столбцами:

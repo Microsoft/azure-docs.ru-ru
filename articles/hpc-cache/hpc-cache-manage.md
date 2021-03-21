@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 03/08/2021
 ms.author: v-erkel
 ms.openlocfilehash: b34beb65bb8c4136887651d8365c937b17718572
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103471881"
 ---
 # <a name="manage-your-cache"></a>Управление кэшем
@@ -269,7 +269,7 @@ $
 
 ![снимок экрана со страницей мониторинга > предупреждения с сообщением о том, что не удалось скачать имена пользователей расширенных групп](media/warnings-page.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Дополнительные сведения о [метриках и средствах статистики Azure](../azure-monitor/index.yml)
 * Получение [помощи по кэшу Azure HPC](hpc-cache-support-ticket.md)

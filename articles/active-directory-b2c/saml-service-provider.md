@@ -14,10 +14,10 @@ ms.subservice: B2C
 ms.custom: fasttrack-edit
 zone_pivot_groups: b2c-policy-type
 ms.openlocfilehash: 1035f43642f3884e7cc0f6ab47e9c9afd1f29170
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102107770"
 ---
 # <a name="register-a-saml-application-in-azure-ad-b2c"></a>Регистрация приложения SAML в Azure AD B2C
@@ -51,7 +51,7 @@ ms.locfileid: "102107770"
 * Основные сведения о протоколе SAML и знакомство с реализацией SAML приложения.
 * Веб-приложение, настроенное как приложение SAML. В рамках этого руководства вы можете использовать предоставляемое нами [тестовое приложение SAML][samltest].
 
-## <a name="components"></a>Components
+## <a name="components"></a>Компоненты
 
 Для этого сценария требуется три основных компонента:
 

@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.date: 02/18/2021
 ms.author: qixwang
 ms.openlocfilehash: ebc71ea2d354caf0c8f31b1231ecc1487237dd29
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101741894"
 ---
 # <a name="set-up-an-azure-front-door-standardpremium-preview-origin"></a>Настройка источника передней дверцы Azure уровня "Стандартный" или "Премиум" (Предварительная версия)
 
 > [!Note]
-> Эта документация предназначена для передней дверцы Azure уровня "Стандартный" или "Премиум" (Предварительная версия). Ищете информацию о передней дверце Azure? Просмотреть [здесь](../front-door-overview.md).
+> Эта документация предназначена для Azure Front Door категории "Стандартный" или "Премиум" (предварительная версия). Сведения об Azure Front Door см. [здесь](../front-door-overview.md).
 
 В этой статье показано, как создать источник "Стандартный" или "Премиум" для передней дверцы Azure в существующей группе происхождения. 
 

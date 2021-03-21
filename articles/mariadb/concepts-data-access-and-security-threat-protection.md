@@ -3,14 +3,14 @@ title: Расширенная защита от угроз — база данн
 description: Расширенная защита от угроз обнаруживает подозрительные действия в базе данных, указывающие на наличие потенциальных угроз безопасности.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: conceptual
 ms.date: 3/18/2020
-ms.openlocfilehash: 98eacad1b8a10be175846401eaa733c888f765e1
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: 018ba33271f8a3a81c3b7109607334b076d8609c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98661625"
 ---
 # <a name="azure-database-for-mariadb-advanced-threat-protection"></a>Расширенная защита от угроз для базы данных Azure для MariaDB
@@ -40,7 +40,7 @@ ms.locfileid: "98661625"
 - **Доступ из потенциально опасного приложения.** Это предупреждение активируется, когда доступ к базе данных получают потенциально опасные приложения. В некоторых случаях предупреждения обнаруживают выполнение теста на проникновение. В других случаях — атаку с помощью обычных средств.
 - **Принудительное использование базы данных Azure для MariaDB**. это оповещение активируется при ненормальном большом количестве неудачных попыток входа с разными учетными данными. В некоторых случаях предупреждения обнаруживают выполнение теста на проникновение. В других случаях — атаку методом подбора.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте больше о [центре безопасности Azure](../security-center/security-center-introduction.md).
 * Дополнительные сведения о ценах см. на [странице цен на базу данных Azure для MariaDB](https://azure.microsoft.com/pricing/details/mariadb/) . 

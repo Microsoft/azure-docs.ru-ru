@@ -173,6 +173,8 @@
               href: /python/api/azure-digitaltwins-core/azure.digitaltwins.core
     - name: CLI Digital Twins
       href: /cli/azure/ext/azure-iot/dt
+    - name: "Спецификация DTDL версии\_2"
+      href: 'https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md'
 - name: Ресурсы
   items:
     - name: Ограничения службы Digital Twins
@@ -212,9 +214,9 @@
             - name: "Пакет SDK для Python\_— исходный код"
               href: 'https://github.com/Azure/azure-sdk-for-python/tree/release/v3/sdk/digitaltwins/azure-mgmt-digitaltwins'
             - name: 'Пакет SDK для Go: GoDoc'
-              href: 'https://godoc.org/github.com/Azure/azure-sdk-for-go/services/digitaltwins/mgmt/2020-10-31/digitaltwins'
+              href: 'https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/services/digitaltwins/mgmt'
             - name: "Go\_— исходный код"
-              href: 'https://github.com/Azure/azure-sdk-for-go/tree/master/services/digitaltwins/mgmt/2020-10-31/digitaltwins'
+              href: 'https://github.com/Azure/azure-sdk-for-go/tree/master/services/digitaltwins/mgmt'
         - name: Плоскость данных
           items:
             - name: Плоскость данных (Swagger)
@@ -275,8 +277,6 @@
           href: /samples/azure-samples/digital-twins-custom-swaggers/azure-digital-twins-custom-swaggers/
     - name: DTDL
       items:
-        - name: "Спецификация DTDL версии\_2"
-          href: 'https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md'
         - name: Расширение DTDL для VS Code
           href: 'https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-dtdl'
         - name: "Библиотека средства синтаксического анализа DTDL\_— NuGet"

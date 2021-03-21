@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 02/16/2021
 ms.openlocfilehash: 7445ac5d750ac29d3e6ce466a48e82efd1bcde40
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100545536"
 ---
 # <a name="create-a-private-endpoint-for-a-secure-connection-to-azure-cognitive-search"></a>Создание частной конечной точки для безопасного подключения к Azure Когнитивный поиск
@@ -221,8 +221,8 @@ ms.locfileid: "100545536"
 ## <a name="clean-up-resources"></a>Очистка ресурсов 
 Завершив использование частной конечной точки, службы поиска и виртуальной машины, удалите группу ресурсов и все содержащиеся в ней ресурсы.
 1. Введите  *myResourceGroup*   в поле **поиска** в верхней части портала и выберите  *myResourceGroup* в   результатах поиска. 
-1. Выберите **Удалить группу ресурсов**. 
+1. Выберите команду **Удалить группу ресурсов**. 
 1. Введите  *myResourceGroup*   **в поле введите имя группы ресурсов** и выберите **Удалить**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этой статье вы создали виртуальную машину в виртуальной сети и службу поиска с закрытой конечной точкой. Вы подключились к виртуальной машине из Интернета и безопасно взаимодействовали со службой поиска, используя закрытую ссылку. Дополнительные сведения о частных конечных точках см. в статье [что такое частная конечная точка Azure?](../private-link/private-endpoint-overview.md).

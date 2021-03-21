@@ -11,10 +11,10 @@ ms.workload: infrastructure-services
 ms.date: 10/28/2020
 ms.author: kumud
 ms.openlocfilehash: d02f85647d947c2f28527ba6f0397c2a98e73840
-ms.sourcegitcommit: c7153bb48ce003a158e83a1174e1ee7e4b1a5461
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98234194"
 ---
 # <a name="azure-networking-services-overview"></a>Обзор сетевых служб Azure
@@ -113,10 +113,10 @@ Azure Orbital — это полностью управляемая облачн
 
 :::image type="content" source="./media/networking-overview/waf-overview.png" alt-text="Брандмауэр веб-приложения":::
 
-### <a name="network-security-groups"></a><a name="nsg"></a>группы безопасности сети;
+### <a name="network-security-groups"></a><a name="nsg"></a>Группы безопасности сети
 Отфильтровать трафик, поступающий из ресурсов Azure и обратно, в виртуальной сети можно с помощью группы безопасности сети. Дополнительные сведения см. в разделе [Группы безопасности сети](../virtual-network/network-security-groups-overview.md).
 
-### <a name="service-endpoints"></a><a name="serviceendpoints"></a>Конечные точки служб
+### <a name="service-endpoints"></a><a name="serviceendpoints"></a>Конечные точки службы
 Конечные точки служб виртуальной сети расширяют пространство частных адресов и возможности идентификации вашей виртуальной сети в службах Azure благодаря прямому соединению. Конечные точки позволяют защищать критически важные ресурсы служб Azure в пределах отдельных виртуальных сетей. Трафик, поступающий из виртуальной сети в службу Azure, всегда остается в магистральной сети Microsoft Azure. Дополнительные сведения см. в статье [Конечные точки служб для виртуальной сети](../virtual-network/virtual-network-service-endpoints-overview.md).
 
 :::image type="content" source="./media/networking-overview/vnet-service-endpoints-overview.png" alt-text="Конечные точки службы для виртуальной сети":::

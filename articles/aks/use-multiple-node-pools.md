@@ -5,10 +5,10 @@ services: container-service
 ms.topic: article
 ms.date: 04/08/2020
 ms.openlocfilehash: 3e029695e9dce79473ada0bae3e7f0bbfd30db89
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102218491"
 ---
 # <a name="create-and-manage-multiple-node-pools-for-a-cluster-in-azure-kubernetes-service-aks"></a>Создание нескольких пулов узлов для кластера в службе Kubernetes Azure (AKS) и управление такими пулами узлов
@@ -20,7 +20,7 @@ ms.locfileid: "102218491"
 
 В этой статье показано, как создать несколько пулов узлов и управлять ими в кластере AKS.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Требуется Azure CLI версии 2.2.0 или более поздней. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0][install-azure-cli].
 

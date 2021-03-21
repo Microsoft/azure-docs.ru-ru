@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 02/09/2021
 ms.author: alkohli
 ms.openlocfilehash: 71f18cf8448060385ea38be9b2719b1ed545c5d2
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100545424"
 ---
 > [!NOTE] 
@@ -30,7 +30,7 @@ ms.locfileid: "100545424"
       
        ![Изменение параметра пропускной способности](./media/storsimple-8000-modify-volume-container/modify-volume-container-02.png)<!--New graphic based on: modify-volume-container-bw-setting.png-->
 
-   1.  Нажмите кнопку **ОК**.<!--If they choose Custom, do they still click OK, or are there more steps?-->
+   1.  Нажмите кнопку **OK**.<!--If they choose Custom, do they still click OK, or are there more steps?-->
 
 5. На следующей странице диалогового окна **изменения контейнера томов** выполните следующие действия.<!--This step happens only if they choose Custom bandwidth? Are the steps similar to those in "Add volume container," step 3f, above?"-->
    

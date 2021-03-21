@@ -6,10 +6,10 @@ ms.date: 10/16/2018
 ms.title: include
 ROBOTS: NOINDEX,NOFOLLOW
 ms.openlocfilehash: 5687fb99c27b8b2141e0a2a817327cfbb124951a
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102109022"
 ---
 ## <a name="create-a-manually-triggered-webjob"></a><a name="CreateOnDemand"></a>Создание активируемого вручную веб-задания
@@ -35,7 +35,7 @@ ms.locfileid: "102109022"
     | <abbr title="Типы включают в себя непрерывные, активируемые.">Тип</abbr> | Активируемые | 
     | <abbr title="Типы включают запланированные или ручные">Триггеры</a> | Вручную | |
 
-4. Нажмите кнопку **ОК**. 
+4. Нажмите кнопку **OK**. 
 
    Новое веб-задание появится на странице **Веб-задания**.
 

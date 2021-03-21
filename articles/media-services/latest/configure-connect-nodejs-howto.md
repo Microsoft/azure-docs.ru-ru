@@ -15,10 +15,10 @@ ms.date: 02/17/2021
 ms.author: inhenkel
 ms.custom: devx-track-js
 ms.openlocfilehash: 33d84ca86ac3cd4696dce3797b015b861884182a
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102216434"
 ---
 # <a name="connect-to-media-services-v3-api---nodejs"></a>Подключение к API служб мультимедиа v3 — Node.js
@@ -27,7 +27,7 @@ ms.locfileid: "102216434"
 
 В этой статье показано, как подключиться к пакету SDK для служб мультимедиа Azure версии 3 node.js с помощью метода входа субъекта-службы. Вы будете работать с файлами в репозитории примеров *Media-Services-v3-node-* Tutorials. Пример *HelloWorld-листассетс* содержит код для подключения, а затем список ресурсов в учетной записи.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Установленное решение Visual Studio Code
 - Установите [Node.js](https://nodejs.org/en/download/).
@@ -137,7 +137,7 @@ DRM_SYMMETRIC_KEY="add random base 64 encoded string here"
 cd AMSv3Samples
 ```
 
-2. Установите пакеты, используемые в *packages.js* файле.
+2. Установите пакеты, используемые в файле *packages.js*.
 
 ```
 npm install 
@@ -149,7 +149,7 @@ npm install
 cd HelloWorld-ListAssets
 ```
 
-4. Запустите Visual Studio Code из папки AMSv3Samples Это необходимо для запуска из папки, в которой находятся папка ". vscode" и tsconfig.jsдля файлов
+4. Запустите Visual Studio Code из папки AMSv3Samples. Это необходимо для запуска из папки, в которой находятся папка ". vscode" и tsconfig.jsдля файлов
 
 ```dotnetcli
 cd ..
@@ -158,7 +158,7 @@ code .
 
 Откройте папку для *HelloWorld-листассетс* и откройте файл *index. ts* в редакторе Visual Studio Code.
 
-В файле *index. TS* нажмите клавишу F5, чтобы запустить отладчик. Если у вас есть активы, которые уже находятся в учетной записи, должен отобразиться список ресурсов. Если учетная запись пуста, вы увидите пустой список.  
+В файле *index.ts* нажмите клавишу F5, чтобы запустить отладчик. Если у вас есть активы, которые уже находятся в учетной записи, должен отобразиться список ресурсов. Если учетная запись пуста, вы увидите пустой список.  
 
 Чтобы быстро просмотреть список ресурсов, используйте портал для отправки нескольких видеофайлов. Ресурсы будут автоматически созданы и повторно запустить этот сценарий, после чего будут возвращены их имена.
 
@@ -225,13 +225,13 @@ main().catch((err) => {
 ## <a name="see-also"></a>См. также раздел
 
 - [Справочная документация по модулям служб мультимедиа Azure для Node.js](/javascript/api/overview/azure/media-services)
-- [Azure для Node.js разработчиков & JavaScript](/azure/developer/javascript/)
-- [Исходный код служб мультимедиа в @azure/azure-sdk-for-js репозитории центра Git](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/mediaservices/arm-mediaservices)
-- [Документация по пакету Azure для разработчиков Node.js](/javascript/api/overview/azure/)
+- [Azure для разработчиков JavaScript и Node.js](/azure/developer/javascript/)
+- [Исходный код Служб мультимедиа в репозитории GitHub @azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/mediaservices/arm-mediaservices)
+- [Документация по пакетам Azure для разработчиков Node.js](/javascript/api/overview/azure/)
 - [Основные понятия служб мультимедиа Azure](concepts-overview.md)
-- [Установка NPM @azure/arm-mediaservices](https://www.npmjs.com/package/@azure/arm-mediaservices)
-- [Azure для Node.js разработчиков & JavaScript](/azure/developer/javascript/)
-- [Исходный код служб мультимедиа в @azure/azure-sdk-for-js репозитории](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/mediaservices/arm-mediaservices)
+- [Установка с помощью npm @azure/arm-mediaservices](https://www.npmjs.com/package/@azure/arm-mediaservices)
+- [Azure для разработчиков JavaScript и Node.js](/azure/developer/javascript/)
+- [Исходный код Служб мультимедиа в репозитории @azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/mediaservices/arm-mediaservices)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

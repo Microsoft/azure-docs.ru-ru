@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 10/12/2020
 ms.reviewer: sngun
 ms.openlocfilehash: 4ed881b74f240946d98d9868344c898d3e9a9dad
-ms.sourcegitcommit: 59cfed657839f41c36ccdf7dc2bee4535c920dd4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99627354"
 ---
 # <a name="azure-cosmos-db-resource-model"></a>Модель ресурсов Azure Cosmos DB
@@ -125,7 +125,7 @@ Azure Cosmos DB — это полностью управляемая платф�
 
 | Сущность Azure Cosmos DB | API SQL | API Cassandra | API Azure Cosmos DB для MongoDB | API Gremlin | API таблиц |
 | --- | --- | --- | --- | --- | --- |
-|Элемент Azure Cosmos | Компонент | Строка | Документ | Узел или ребро | Компонент |
+|Элемент Azure Cosmos | Элемент | Строка | Документ | Узел или ребро | Элемент |
 
 ### <a name="properties-of-an-item"></a>Свойства элемента
 

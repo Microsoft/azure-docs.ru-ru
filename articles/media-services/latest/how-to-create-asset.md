@@ -16,10 +16,10 @@ ms.date: 02/16/2021
 ms.author: inhenkel
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 3923394e76d5ce4001d3652ae9cbc263df08e4e2
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100545621"
 ---
 # <a name="create-an-asset"></a>Создание ресурса
@@ -58,6 +58,6 @@ ms.locfileid: "100545621"
 
 ---
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Общие сведения о службах мультимедиа](media-services-overview.md)

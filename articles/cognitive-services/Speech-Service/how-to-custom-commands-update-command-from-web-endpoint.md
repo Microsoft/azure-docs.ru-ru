@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 10/20/2020
 ms.author: nitinme
 ms.openlocfilehash: d0b77e6af36f0a71405f6c032bfdd121abeb0071
-ms.sourcegitcommit: 77ab078e255034bd1a8db499eec6fe9b093a8e4f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97560276"
 ---
 # <a name="update-a-command-from-a-web-endpoint"></a>Обновление команды из конечной точки в Интернете
@@ -23,7 +23,7 @@ ms.locfileid: "97560276"
 
 В этой статье вы узнаете, как обновить текущую команду из конечной веб-точки.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 > [!div class = "checklist"]
 > * Предварительно [созданное приложение Пользовательских голосовых команд](quickstart-custom-commands-application.md).
 
@@ -50,7 +50,7 @@ ms.locfileid: "97560276"
 
 Давайте рассмотрим ключевые атрибуты этого входа:
 
-| attribute | Объяснение |
+| Атрибут | Пояснение |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | **conversationId** | Уникальный идентификатор диалога. Обратите внимание, что этот идентификатор может быть создан из клиентского приложения. |
 | **курренткомманд** | Команда, которая в данный момент активна в диалоге. |

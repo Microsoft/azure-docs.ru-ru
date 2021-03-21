@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.custom: mqtt, devx-track-java
 ms.openlocfilehash: 3e98cfc2d8c7fb8d40c8565a1c620f123ce171ff
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102217845"
 ---
 # <a name="schedule-and-broadcast-jobs-java"></a>Планирование и трансляция заданий (Java)

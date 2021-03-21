@@ -12,10 +12,10 @@ author: sdgilley
 ms.reviewer: sgilley
 ms.date: 10/02/2020
 ms.openlocfilehash: c11176f0c7760e76b755406bda96b72b302f8857
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102506945"
 ---
 # <a name="create-an-azure-machine-learning-compute-cluster"></a>Создание вычислительного кластера Машинного обучения Azure
@@ -58,7 +58,7 @@ ms.locfileid: "102506945"
 > Кластеры обычно масштабируются до 100 узлов при наличии достаточной квоты для требуемого числа ядер. По умолчанию кластеры настроены с поддержкой взаимодействия между их узлами, например для поддержки заданий MPI. Однако вы можете масштабировать кластеры до тысяч узлов, просто [вызывая запрос в службу поддержки](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)и запрашивая разрешение на получение списка подписки, рабочей области или конкретного кластера для отключения взаимодействия между узлами. 
 
 
-## <a name="create"></a>Создание
+## <a name="create"></a>Создать
 
 **Оценка времени**: приблизительно 5 минут.
 

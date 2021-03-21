@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/05/2021
 ms.author: aahi
 ms.openlocfilehash: 9a4e179767cc38169cd794f4cd629604bdcdaab0
-ms.sourcegitcommit: 19ffdad48bc4caca8f93c3b067d1cf29234fef47
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97955048"
 ---
 # <a name="frequently-asked-questions-faq-about-the-text-analytics-api"></a>Часто задаваемые вопросы об API анализа текста
@@ -55,7 +55,7 @@ ms.locfileid: "97955048"
 
 ### <a name="how-do-i-configure-the-text-analytics-service-to-be-zone-resilient"></a>Разделы справки настроить службу Анализ текста для отказоустойчивости в зонах?
 
-Для обеспечения отказоустойчивости зоны не требуется настраивать клиент. Отказоустойчивость зоны для ресурсов Анализ текста доступна по умолчанию и управляется самой службой.
+Чтобы включить устойчивость зоны, настройка со стороны клиента не требуется. Отказоустойчивость зоны для ресурсов Анализ текста доступна по умолчанию и управляется самой службой.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

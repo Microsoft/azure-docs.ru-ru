@@ -12,10 +12,10 @@ ms.author: sashan
 ms.reviewer: sstein
 ms.date: 01/20/2021
 ms.openlocfilehash: 5f9e7e1c96db2b60e41fe0ded69ea562cf8fcea6
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98663991"
 ---
 # <a name="use-read-only-replicas-to-offload-read-only-query-workloads"></a>Использование реплик только для чтения для разгрузки рабочих нагрузок запросов только для чтения
@@ -195,6 +195,6 @@ Body: {
 > [!NOTE]
 > Между репликами геореплицированной базы данных-получателя отсутствует автоматический циклический перебор или любая другая маршрутизация с балансировкой нагрузки.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о предложении для масштабирования базы данных SQL см. в разделе [уровень служб в масштабе](service-tier-hyperscale.md).

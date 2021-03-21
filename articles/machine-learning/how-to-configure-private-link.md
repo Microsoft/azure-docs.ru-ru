@@ -12,10 +12,10 @@ author: aashishb
 ms.reviewer: larryfr
 ms.date: 02/09/2021
 ms.openlocfilehash: 6fd497e0bc0fd282d57779c483f1e39e8f5ab60a
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102505483"
 ---
 # <a name="configure-azure-private-link-for-an-azure-machine-learning-workspace"></a>Настройка частной ссылки Azure для Машинное обучение Azure рабочей области
@@ -29,7 +29,7 @@ ms.locfileid: "102505483"
 >
 > При использовании Mozilla Firefox могут возникнуть проблемы при попытке доступа к закрытой конечной точке рабочей области. Эта проблема может быть связана с DNS по протоколу HTTPS в Mozilla. В качестве обходного пути рекомендуется использовать Microsoft ребро Google Chrome.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Если вы планируете использовать рабочую область с включенной частной связью с ключом, управляемым клиентом, необходимо запросить эту функцию с помощью запроса в службу поддержки. Дополнительные сведения см. в статье [Управление квотами и их увеличение](how-to-manage-quotas.md#private-endpoint-and-private-dns-quota-increases).
 

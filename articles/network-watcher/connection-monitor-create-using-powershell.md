@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 01/07/2021
 ms.author: vinigam
 ms.openlocfilehash: 7f175d82b650871437a506ea4513f0ae28360f68
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99833037"
 ---
 # <a name="create-a-connection-monitor-by-using-powershell"></a>Создание монитора подключения с помощью PowerShell
@@ -28,7 +28,7 @@ ms.locfileid: "99833037"
 Узнайте, как использовать функцию монитора подключений наблюдателя за сетями Azure для отслеживания взаимодействия между ресурсами.
 
 
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="before-you-begin"></a>Перед началом
 
 В мониторах подключений, создаваемых с помощью монитора подключения, в качестве источников можно добавить локальные компьютеры и виртуальные машины Azure (ВМ). Эти мониторы соединений также могут отслеживать подключение к конечным точкам. Конечные точки могут находиться в Azure или на любом другом URL-адресе или IP.
 

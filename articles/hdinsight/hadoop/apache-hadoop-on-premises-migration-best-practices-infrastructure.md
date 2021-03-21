@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 12/06/2019
 ms.openlocfilehash: 309053c2d7a0f9482016f1bd83e0c61dcd31bec5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101740670"
 ---
 # <a name="migrate-on-premises-apache-hadoop-clusters-to-azure-hdinsight---infrastructure-best-practices"></a>Миграция локальных кластеров Apache Hadoop в HDInsight Azure — рекомендации по использованию инфраструктуры
@@ -46,7 +46,7 @@ ms.locfileid: "101740670"
 
 Приложения или компоненты, которые были доступны в локальных кластерах, но не входят в состав кластеров HDInsight, могут быть добавлены на пограничном узле или виртуальной машине в той же виртуальной сети, что и кластер HDInsight. Стороннее приложение Hadoop, которое недоступно на Azure HDInsight, может быть установлено с помощью опции "Приложение" в кластере HDInsight. Пользовательские приложения Hadoop могут быть установлены на кластере HDInsight с помощью "действий сценариев". В следующей таблице перечислены некоторые из распространенных приложений и их возможности интеграции с HDInsight.
 
-|**Приложения**|**Интеграция**
+|**Приложение**|**Интеграция**
 |---|---|
 |Воздушный поток|Узел IaaS или HDInsight
 |Alluxio|IaaS  

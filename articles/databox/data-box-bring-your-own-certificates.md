@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 12/11/2020
 ms.author: alkohli
 ms.openlocfilehash: 1836ed57305fd7e168961eb81670b56d4ce296cd
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100545179"
 ---
 # <a name="use-your-own-certificates-with-data-box-and-data-box-heavy-devices"></a>Использование собственных сертификатов с устройствами Data Box и Data Box Heavy
@@ -44,7 +44,7 @@ ms.locfileid: "100545179"
 - Сертификаты должны быть изменены при изменении имени устройства или доменного имени DNS.
 - При создании сертификатов конечной точки используйте следующую таблицу:
 
-  |Тип |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
+  |Type |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
   |---------|---------|---------|---------|
   |Локальный пользовательский интерфейс| `<DeviceName>.<DNSdomain>`|`<DeviceName>.<DNSdomain>`| `mydevice1.microsoftdatabox.com` |
   |Хранилище BLOB-объектов|`*.blob.<DeviceName>.<DNSdomain>`|`*.blob.< DeviceName>.<DNSdomain>`|`*.blob.mydevice1.microsoftdatabox.com` |

@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 03/15/2021
 ms.author: lajanuar
 ms.openlocfilehash: 235e868952bb742b082492e2e388170a921c1929
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103467875"
 ---
 # <a name="form-recognizer-custom-models"></a>Пользовательские модели распознавателя форм
@@ -61,7 +61,7 @@ ms.locfileid: "103467875"
 
 В любой момент можно просмотреть список всех пользовательских моделей в подписке, получить сведения о конкретной настраиваемой модели или удалить пользовательскую модель из учетной записи.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Просмотрите **[справочную документацию по API распознавателя форм](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/5ed8c9843c2794cbb1a96291)** , чтобы получить дополнительные сведения.
 >

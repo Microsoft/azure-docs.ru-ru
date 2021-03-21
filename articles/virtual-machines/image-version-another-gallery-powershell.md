@@ -10,10 +10,10 @@ ms.date: 05/04/2020
 ms.author: cynthn
 ms.reviewer: akjosh
 ms.openlocfilehash: d9bbe40e35bdad6fac5c5ccb0b15b909e77b938c
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102564022"
 ---
 # <a name="copy-an-image-from-another-gallery-using-powershell"></a>Копирование изображения из другой коллекции с помощью PowerShell
@@ -21,7 +21,7 @@ ms.locfileid: "102564022"
 При наличии нескольких коллекций в Организации можно создавать образы из образов, хранящихся в других галереях. Например, у вас может быть коллекция разработки и тестирования для создания и тестирования новых образов. Когда они готовы к использованию в рабочей среде, их можно скопировать в рабочую коллекцию, используя этот пример. Вы также можете создать образ из изображения в другой коллекции, используя [Azure CLI](image-version-another-gallery-cli.md).
 
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Для работы с этой статьей необходимо наличие существующей коллекции источников, определения образа и версии образа. Кроме того, у вас должна быть конечная коллекция. 
 

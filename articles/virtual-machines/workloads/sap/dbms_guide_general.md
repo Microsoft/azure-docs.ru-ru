@@ -8,10 +8,10 @@ ms.date: 09/20/2020
 ms.author: juergent
 ms.reviewer: cynthn
 ms.openlocfilehash: e978baa556f1bc1cfea0ccd5abbbf92dc77b1622
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102504020"
 ---
 # <a name="considerations-for-azure-virtual-machines-dbms-deployment-for-sap-workload"></a>Вопросы развертывания СУБД для рабочей нагрузки SAP на виртуальных машинах Azure

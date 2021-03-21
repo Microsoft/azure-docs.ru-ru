@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 8/30/2020
 ms.author: mbaldwin
 ms.openlocfilehash: e7a8fd53e78e1aeab9db5af0432d0c3f1d786823
-ms.sourcegitcommit: e3151d9b352d4b69c4438c12b3b55413b4565e2f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100526958"
 ---
 # <a name="migrate-from-vault-access-policy-to-an-azure-role-based-access-control-permission-model"></a>Миграция из политики доступа к хранилищу в модель разрешений управления доступом на основе ролей в Azure
@@ -114,11 +114,11 @@ Azure RBAC для Key Vault позволяет назначать роли в с
 > [!NOTE]
 > Если включена модель разрешений Azure RBAC, все скрипты, которые пытаются обновить политики доступа, завершатся ошибкой. Важно обновить эти скрипты, чтобы использовать Azure RBAC.
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 -  Назначение ролей не работает через несколько минут. Существуют ситуации, когда назначение ролей может занять больше времени. Важно написать логику повторных попыток в коде, чтобы охватить эти случаи.
 - Назначения ролей исчезают, когда Key Vault были удалены (обратимое удаление) и восстановлены. сейчас это ограничение функции обратимого удаления во всех службах Azure. После восстановления необходимо повторно создать все назначения ролей.    
 
-## <a name="learn-more"></a>Подробнее
+## <a name="learn-more"></a>Дополнительные сведения
 
 - [Обзор Azure RBAC](../../role-based-access-control/overview.md)
 - [Учебник по настраиваемым ролям](../../role-based-access-control/tutorial-custom-role-cli.md)

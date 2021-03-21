@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 02/09/2021
 ms.author: alkohli
 ms.openlocfilehash: 6f0a0fd48e3717d14a714e42c5566cd7bcf090d5
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100545395"
 ---
 # <a name="use-the-storsimple-device-manager-service-to-manage-storsimple-volume-containers"></a>Использование службы диспетчера устройств StorSimple для управления контейнерами томов StorSimple
@@ -56,7 +56,7 @@ ms.locfileid: "100545395"
 
 [!INCLUDE [storsimple-8000-delete-volume-container](../../includes/storsimple-8000-delete-volume-container.md)]
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте больше об [управлении томами StorSimple](storsimple-8000-manage-volumes-u2.md). 
 * Узнайте больше об [использовании службы диспетчера устройств StorSimple для администрирования устройства StorSimple](storsimple-8000-manager-service-administration.md).
 

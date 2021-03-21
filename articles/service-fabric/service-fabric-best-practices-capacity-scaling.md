@@ -7,10 +7,10 @@ ms.date: 04/25/2019
 ms.author: pepogors
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 32a9c26bb9e89cf4057cc753b02ad3c006d0bae6
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100595079"
 ---
 # <a name="capacity-planning-and-scaling-for-azure-service-fabric"></a>Планирование ресурсов и масштабирование для Azure Service Fabric
@@ -42,7 +42,7 @@ ms.locfileid: "100595079"
 
 ## <a name="vertical-scaling-considerations"></a>Рекомендации по вертикальному масштабированию
 
-[Вертикальное масштабирование](./virtual-machine-scale-set-scale-node-type-scale-out.md) типа узла в Service Fabric Azure требует ряда шагов и рекомендаций. Пример.
+[Вертикальное масштабирование](./virtual-machine-scale-set-scale-node-type-scale-out.md) типа узла в Service Fabric Azure требует ряда шагов и рекомендаций. Пример:
 
 * Масштабируемый кластер должен быть работоспособным. В противном случае вы будете дестабилизировать кластер.
 * Для всех Service Fabric типов узлов кластера, на которых размещены службы с отслеживанием состояния, требуется уровень устойчивости или выше.
@@ -117,7 +117,7 @@ scaleSet.Update().WithCapacity(newCapacity).Apply();
 }
 ```
 
-Необходимо подготовить узел к завершению работы для программного масштабирования. Найдите узел, который нужно удалить (узел с наибольшим экземпляром). Пример.
+Необходимо подготовить узел к завершению работы для программного масштабирования. Найдите узел, который нужно удалить (узел с наибольшим экземпляром). Пример:
 
 ```csharp
 using (var client = new FabricClient())
@@ -218,7 +218,7 @@ scaleSet.Update().WithCapacity(newCapacity).Apply();
 ]
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Создание кластера на виртуальных машинах или компьютерах под управлением Windows Server: [Создание кластера Service Fabric для Windows Server](service-fabric-cluster-creation-for-windows-server.md).
 * Создание кластера на виртуальных машинах или компьютерах под управлением Linux: [Создание кластера Linux](service-fabric-cluster-creation-via-portal.md).

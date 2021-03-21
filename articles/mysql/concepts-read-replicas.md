@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 01/13/2021
 ms.custom: references_regions
 ms.openlocfilehash: c380a3edb556adb72d067cb2910c8afbf66b99a0
-ms.sourcegitcommit: 25d1d5eb0329c14367621924e1da19af0a99acf1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98250270"
 ---
 # <a name="read-replicas-in-azure-database-for-mysql"></a>Реплики чтения в базе данных Azure для MySQL
@@ -209,7 +209,7 @@ MySQL поддерживает два типа транзакций: ГТИД т
 
 Если ГТИД включен на исходном сервере, то вновь созданные реплики также будут включать ГТИД и использовать репликацию ГТИД. Для синхронизации репликации невозможно выполнить обновление `gtid_mode` на исходном или сервере-реплике.
 
-### <a name="other"></a>Другие
+### <a name="other"></a>Другое
 
 * Создание реплики реплики не поддерживается.
 * Таблицы в памяти могут вызывать рассинхронизацию реплик. Это ограничение технологии репликации MySQL. Дополнительные сведения см. в [справочной документации по MySQL](https://dev.mysql.com/doc/refman/5.7/en/replication-features-memory.html).

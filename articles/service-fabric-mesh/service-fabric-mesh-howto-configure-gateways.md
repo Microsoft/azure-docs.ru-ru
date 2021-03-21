@@ -7,18 +7,18 @@ ms.date: 11/28/2018
 ms.author: gwallace
 ms.custom: mvc, devcenter
 ms.openlocfilehash: 40bba03c35568c013e383c08f0a13f765c1cc8bd
-ms.sourcegitcommit: 59cfed657839f41c36ccdf7dc2bee4535c920dd4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99625860"
 ---
 # <a name="configure-a-gateway-resource-to-route-requests"></a>Настройка шлюза для маршрутизации запросов
 
 > [!IMPORTANT]
-> Предварительная версия сетки Service Fabric Azure была снята с учета. Новые развертывания больше не будут разрешены через интерфейс API Service Fabricной сетки. Поддержка существующих развертываний будет продолжена 28 апреля 2021 г.
+> Поддержка предварительной версии Сетки Azure Service Fabric была прекращена. Новые развертывания больше не будут разрешены через API Сетки Service Fabric. Поддержка существующих развертываний будет продолжена до 28 апреля 2021 г. включительно.
 > 
-> Дополнительные сведения см. в статье о прекращении использования [предварительной версии сети Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
+> Дополнительные сведения см. в статье [Прекращение поддержки предварительной версии Сетки Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
 
 Ресурс шлюза используется для перенаправления входящего трафика в сеть, в которой находится приложение. Настройте шлюз, указав правила направления запросов к конкретным службам или конечным точкам в зависимости от структуры запроса. В статье [Introduction to networking in Service Fabric Mesh applications](service-fabric-mesh-networks-and-gateways.md) (Общие сведения о сетевых подключениях в приложениях службы "Сетка Service Fabric") вы найдете дополнительные сведения о сетях и шлюзах в Сетке Service Fabric. 
 
