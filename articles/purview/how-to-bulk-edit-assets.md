@@ -8,10 +8,10 @@ ms.subservice: data-catalog-gen2
 ms.topic: conceptual
 ms.date: 11/24/2020
 ms.openlocfilehash: 493d3ceb596bb29da0e60ab08518375412417a0e
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102049494"
 ---
 # <a name="how-to-bulk-edit-assets-to-tag-glossary-terms"></a>Как выполнить групповое изменение ресурсов для обозначения терминов глоссария

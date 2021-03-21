@@ -6,10 +6,10 @@ ms.subservice: qna-maker
 ms.topic: how-to
 ms.date: 11/09/2020
 ms.openlocfilehash: c89ab375cb02824a08ff57e6b5278dd9299126ff
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96350931"
 ---
 # <a name="migrate-a-knowledge-base-using-export-import"></a>Миграция базы знаний с помощью экспорта и импорта
@@ -25,7 +25,7 @@ ms.locfileid: "96350931"
 > [!NOTE]
 > Следуйте приведенным ниже инструкциям, чтобы перенести существующую базу знаний в новый QnA Maker управляемый (Предварительная версия).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Перед началом работы создайте [бесплатную учетную запись](https://azure.microsoft.com/free/cognitive-services/).
 * Настройте новую [службу QnA Maker](../How-To/set-up-qnamaker-service-azure.md).

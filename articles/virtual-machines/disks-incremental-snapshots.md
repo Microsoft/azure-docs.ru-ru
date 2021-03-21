@@ -8,10 +8,10 @@ ms.date: 01/15/2021
 ms.author: rogarana
 ms.subservice: disks
 ms.openlocfilehash: 52e491c88d3483f21aa74f1a9f176246033bee3c
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98735798"
 ---
 # <a name="create-an-incremental-snapshot-for-managed-disks"></a>Создание добавочного моментального снимка для управляемых дисков
@@ -108,6 +108,6 @@ $incrementalSnapshots
 ```
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вы хотите просмотреть пример кода, демонстрирующий возможность создания добавочных моментальных снимков с помощью .NET, см. статью [копирование резервных копий управляемых дисков Azure в другой регион с помощью разностных моментальных снимков](https://github.com/Azure-Samples/managed-disks-dotnet-backup-with-incremental-snapshots).

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 4/15/2019
 ms.author: ramamill
 ms.openlocfilehash: 05d260de726c62c130a58938c2a2c9fa2440a96d
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96004727"
 ---
 # <a name="run-the-deployment-planner-for-vmware-disaster-recovery"></a>Запуск Планировщик развертывания аварийного восстановления VMware
@@ -22,7 +22,7 @@ ms.locfileid: "96004727"
 Программу командной строки (ASRDeploymentPlanner.exe) можно запустить в любом из следующих трех режимов:
 
 1.  [Профилирование](#profile-vmware-vms)
-2.  [Создание отчета](#generate-report).
+2.  [Создание отчета](#generate-report)
 3.  [Получение данных пропускной способности](#get-throughput).
 
 Сначала планировщик необходимо запустить в режиме профилирования, чтобы получить сведения об активности обработки данных и числе операций ввода-вывода в секунду на виртуальной машине. Затем запустите ее в режиме создания отчетов, чтобы узнать пропускную способность сети, требования к хранилищу, а также оценить затраты на аварийное восстановление.
@@ -296,5 +296,5 @@ ASRDeploymentPlanner.exe -Operation GetThroughput -Directory  E:\vCenter1_Profil
 >
 >  4. Измените параметры Site Recovery на сервере обработки, чтобы [увеличить объем пропускной способности сети, необходимой для репликации](./site-recovery-plan-capacity-vmware.md#control-network-bandwidth).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Анализ созданного отчета](site-recovery-vmware-deployment-planner-analyze-report.md).

@@ -9,10 +9,10 @@ ms.date: 10/14/2020
 ms.author: thweiss
 ms.custom: devx-track-js
 ms.openlocfilehash: 295ed3eb2312a5f614a4214b5b627f5657fba1eb
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103201346"
 ---
 # <a name="find-the-request-unit-charge-for-operations-executed-in-azure-cosmos-db-gremlin-api"></a>Поиск затрат единиц запросов для операций, выполненных в Azure Cosmos DB API Gremlin
@@ -62,7 +62,7 @@ Double requestCharge = (Double)results.statusAttributes().get().get("x-ms-reques
 
 Дополнительные сведения см. [в разделе Краткое руководство. Создание базы данных Graph в Azure Cosmos DB с помощью пакета SDK для Java](create-graph-java.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения об оптимизации потребления ЕЗ см. в следующих статьях:
 

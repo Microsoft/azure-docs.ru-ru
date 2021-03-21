@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.date: 01/25/2021
 ms.author: alkohli
 ms.openlocfilehash: 17b8d6de198746a79a50c4fbda805b364212e3c4
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98796058"
 ---
 # <a name="troubleshoot-issues-related-to-azure-data-box-blob-storage"></a>Устранение неполадок, связанных с хранилищем BLOB-объектов Azure Data Box

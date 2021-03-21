@@ -4,10 +4,10 @@ description: В этой статье описывается, как настр�
 ms.topic: conceptual
 ms.date: 03/27/2020
 ms.openlocfilehash: 2958b000ac0dabcd7fddf75a58f553b705a95e9a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101731873"
 ---
 # <a name="configure-gpu-monitoring-with-container-insights"></a>Настройка мониторинга GPU с помощью Container Insights

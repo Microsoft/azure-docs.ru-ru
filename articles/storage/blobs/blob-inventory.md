@@ -11,10 +11,10 @@ ms.reviewer: yzheng
 ms.subservice: blobs
 ms.custom: references_regions
 ms.openlocfilehash: a625ad780d01f3d19d26f2b9626ead3ae455b86b
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102631478"
 ---
 # <a name="use-azure-storage-blob-inventory-to-manage-blob-data-preview"></a>Использование инвентаризации BLOB-объектов службы хранилища Azure для управления данными больших двоичных объектов (Предварительная версия)

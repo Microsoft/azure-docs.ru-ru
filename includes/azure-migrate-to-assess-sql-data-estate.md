@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 02/22/2021
 ms.author: mathoma
 ms.openlocfilehash: 5ad1c0f4016793230329cc35b12969a8c21db22b
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102488256"
 ---
 > [!NOTE]

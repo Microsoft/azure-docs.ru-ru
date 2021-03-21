@@ -4,10 +4,10 @@ description: Из этой статьи вы узнаете, как исполь
 ms.topic: conceptual
 ms.date: 05/24/2020
 ms.openlocfilehash: db5e5c4bdac64e2faf5babb107ecec61a02d6468
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96002959"
 ---
 # <a name="back-up-vmware-vms-with-azure-backup-server"></a>Резервное копирование виртуальных машин VMware с помощью Azure Backup Server
@@ -59,7 +59,7 @@ MABS предоставляет следующие возможности при
 
 По умолчанию Azure Backup Server взаимодействует с серверами VMware по протоколу HTTPS. Чтобы настроить соединение HTTPS, скачайте сертификат Центра сертификации (ЦС) VMware и импортируйте его в Azure Backup Server.
 
-### <a name="before-you-begin"></a>Подготовка к работе
+### <a name="before-you-begin"></a>Перед началом
 
 - Если вы не хотите использовать протокол HTTPS, можно [отключить проверку сертификата HTTPS для всех серверов VMware](backup-azure-backup-server-vmware.md#disable-https-certificate-validation).
 - Обычно к серверу vCenter или ESXi можно подключиться из браузера на компьютере Azure Backup Server через веб-клиент vSphere. В первый раз подключение не будет защищено и отобразится следующее.
@@ -564,6 +564,6 @@ Windows Registry Editor Version 5.00
 C:\Program Files\Microsoft Azure Backup Server\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Remove "[datastore1] TestVM4/TestVM4\_1.vmdk"
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Для решения проблем с устранением неполадок при настройке резервного копирования см. статью [Устранение неполадок Azure Backup Server](./backup-azure-mabs-troubleshoot.md).

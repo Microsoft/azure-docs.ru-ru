@@ -7,10 +7,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 1/10/2020
 ms.openlocfilehash: 3dbbce4adc44696fdd12f6ce948b48b34caaed75
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100391241"
 ---
 # <a name="configure-an-azure-sql-server-integration-services-ssis-integration-runtime-ir-to-join-a-virtual-network"></a>Настройка среды выполнения интеграции Azure-SQL Server Integration Services (SSIS) для приподключения к виртуальной сети
@@ -24,7 +24,7 @@ ms.locfileid: "100391241"
 - Настройте виртуальную сеть.
 - Присоедините Azure-SSIS IR к виртуальной сети на портале фабрики данных Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - **Среда выполнения интеграции Azure SSIS**. Если у вас нет среды выполнения интеграции Azure SSIS, перед началом работы [подготавливаете среду выполнения интеграции Azure SSIS в фабрике данных Azure](tutorial-deploy-ssis-packages-azure.md) .
 
@@ -144,6 +144,6 @@ ms.locfileid: "100391241"
 
 1. Запустите Azure-SSIS IR, нажав кнопку **Пуск** в столбце **действия** для Azure-SSIS IR. Запуск Azure-SSIS IR, который присоединяется к виртуальной сети, займет от 20 до 30 минут.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о [присоединении Azure-SSIS IR к виртуальной сети](join-azure-ssis-integration-runtime-virtual-network.md).

@@ -13,10 +13,10 @@ ms.topic: conceptual
 ms.date: 09/29/2020
 ms.custom: seodec18
 ms.openlocfilehash: 639f2ef12d190a56e04a9b48d96ea0a6537d243c
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95020118"
 ---
 # <a name="azure-time-series-insights-gen1-explorer"></a>Обозреватель Gen1 временных рядов Azure
@@ -40,7 +40,7 @@ ms.locfileid: "95020118"
 >[!NOTE]
 >Воспроизведение предыдущего видео <a href="https://www.youtube.com/watch?v=6ehNf6AJkFo">"Приступая к работе со службой" аналитика временных рядов Azure "с помощью акселератора решений Интернета вещей Azure".</a>
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем использовать обозреватель службы "аналитика временных рядов Azure", необходимо выполнить следующие действия.
 
@@ -111,7 +111,7 @@ ms.locfileid: "95020118"
 
 1. Используйте **тепловой карты** для быстрого выявления уникальных или аномальных рядов данных в определенном запросе. Только один поисковой запрос можно визуализировать в виде тепловой карты.
 
-    [Обозреватель "аналитика временных рядов" тепловой карты "Диаграмма](media/time-series-insights-explorer/tsi-ga-example-heatmap-charting.png)"] (Media/Time-Series-Insights-Explorer/tsi-ga-example-heatmap-charting.png # уменьшать)
+    [Обозреватель "аналитика временных рядов" тепловой карты "Диаграмма](media/time-series-insights-explorer/tsi-ga-example-heatmap-charting.png)"] (Media/Time-Series-Insights-Explorer/tsi-ga-example-heatmap-charting.png#lightbox)
 
 1. При просмотре событий путем выбора или щелчком правой кнопкой мыши панель **событий** становится доступной. Здесь можно просматривать все необработанные события и экспортировать события как файлы JSON или CSV. Служба "аналитика временных рядов Azure" хранит все необработанные данные.
 

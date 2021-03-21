@@ -9,10 +9,10 @@ ms.date: 06/18/2020
 ms.author: danlep
 ms.custom: include file
 ms.openlocfilehash: 089b1b6f1af2f19c16866858324bde2e151e8bdb
-ms.sourcegitcommit: 8dd8d2caeb38236f79fe5bfc6909cb1a8b609f4a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98053000"
 ---
 | Ресурс | Basic | Standard | Premium |

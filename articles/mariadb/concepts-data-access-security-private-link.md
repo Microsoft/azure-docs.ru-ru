@@ -3,14 +3,14 @@ title: Частная ссылка — база данных Azure для MariaD
 description: Узнайте, как работает частная связь для базы данных Azure для MariaDB.
 author: mksuni
 ms.author: sumuth
-ms.service: jroth
+ms.service: mariadb
 ms.topic: conceptual
 ms.date: 03/10/2020
-ms.openlocfilehash: 12f52cd497d606fda6bbea9b54f467522373eeb7
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: ec43fa995fc9772964db399baa0b6f8c2a7db1db
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98665146"
 ---
 # <a name="private-link-for-azure-database-for-mariadb"></a>Частная ссылка для базы данных Azure для MariaDB
@@ -125,7 +125,7 @@ Data ex-фильтрация в базе данных Azure для MariaDB — �
 
 Сведения о настройке **запрета доступа к** общедоступной сети для базы данных Azure для MariaDB с портал Azure см. в разделе [Настройка запрета доступа к общедоступной сети](howto-deny-public-network-access.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о функциях безопасности базы данных Azure для MariaDB см. в следующих статьях:
 

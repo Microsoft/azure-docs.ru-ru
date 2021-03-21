@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 06/05/2017
 ms.author: alkohli
 ms.openlocfilehash: 5f94564c5e769d3cf0e0abbe92a309a1ee2117a1
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96003877"
 ---
 # <a name="deploy-the-storsimple-snapshot-manager-mmc-snap-in"></a>Развертывание оснастки консоли управления диспетчера моментальных снимков StorSimple (необязательно)
@@ -52,7 +52,7 @@ ms.locfileid: "96003877"
 2. Убедитесь, что главный компьютер работает под управлением одной из следующих операционных систем.
    
    * Windows Server 2008 R2 (на серверах под управлением Windows 2008 R2 также необходимо установить Windows Server 2008 с пакетом обновления 1 (SP1) и Windows Management Framework 3.0)
-   * Windows Server 2012
+   * Windows Server 2012
    * Windows Server 2012 R2
      
      Для виртуального устройства StorSimple в качестве узла необходимо использовать виртуальную машину Microsoft Azure.
@@ -117,7 +117,7 @@ ms.locfileid: "96003877"
 2. На панели **Область** щелкните правой кнопкой мыши узел **Устройства**, а затем — **Настройка устройства**. Откроется диалоговое окно **Настройка устройства**.
    
     ![Настройка устройства](./media/storsimple-snapshot-manager-deployment/HCS_SSM_config_device.png) 
-3. В списке **Устройство** выберите IP-адрес физического или виртуального устройства Microsoft Azure StorSimple. В текстовом поле **Пароль** введите пароль диспетчера StorSimple Snapshot Manager, который вы создали для этого устройства на портале Azure. Нажмите кнопку **ОК**.
+3. В списке **Устройство** выберите IP-адрес физического или виртуального устройства Microsoft Azure StorSimple. В текстовом поле **Пароль** введите пароль диспетчера StorSimple Snapshot Manager, который вы создали для этого устройства на портале Azure. Нажмите кнопку **OK**.
 4. Диспетчер моментальных снимков StorSimple выполнит поиск устройства, которое вы определили. Если устройство доступно, диспетчер моментальных снимков StorSimple добавит подключение. Вы можете [проверить подключение к устройству](#to-verify-the-connection) , чтобы убедиться, что подключение успешно добавлено.
    
     Если по какой-либо причине устройство недоступно, диспетчер моментальных снимков StorSimple вернет сообщение об ошибке. Нажмите кнопку **ОК**, чтобы закрыть сообщение об ошибке, а затем щелкните кнопку **Отмена**, чтобы закрыть диалоговое окно **Настройка устройства**.
@@ -211,7 +211,7 @@ ms.locfileid: "96003877"
    2. Выберите на странице **Службы** пункт **Служба управления Microsoft StorSimple**.
    3. Щелкните на правой панели в разделе **Служба управления Microsoft StorSimple** команду **Перезапустить службу**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Дополнительные сведения о StorSimple Snapshot Manager см. в статье [Что такое диспетчер моментальных снимков StorSimple?](storsimple-what-is-snapshot-manager.md)
 * Чтобы узнать больше о пользовательском интерфейсе StorSimple Snapshot Manager, см. статью [Пользовательский интерфейс диспетчера моментальных снимков StorSimple](storsimple-use-snapshot-manager.md).
 * Чтобы узнать больше об использовании StorSimple Snapshot Manager см. статью [Использование диспетчера моментальных снимков StorSimple для администрирования решения StorSimple](storsimple-snapshot-manager-admin.md).

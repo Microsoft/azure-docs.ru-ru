@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/10/2021
 ms.author: memildin
 ms.openlocfilehash: 9af4f225b1b9ca5e8023a8d5b4bb7607762e4447
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102631903"
 ---
 # <a name="manage-multi-factor-authentication-mfa-enforcement-on-your-subscriptions"></a>Управление принудительной проверкой многофакторной идентификации (MFA) в подписках
@@ -122,7 +122,7 @@ ms.locfileid: "102631903"
 - Рекомендации по идентификации не определяют учетные записи, управляемые с помощью системы управления привилегированными пользователями (PIM). Если вы используете средство PIM, вы можете увидеть неточные результаты в элементе управления **доступом и разрешениями** .
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Дополнительные сведения о рекомендациях, относящихся к другим типам ресурсов Azure, см. в следующей статье:
 
 - [Защита сети в центре безопасности Azure.](security-center-network-recommendations.md)

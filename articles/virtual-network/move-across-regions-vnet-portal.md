@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 08/26/2019
 ms.author: allensu
 ms.openlocfilehash: 0a80c731e4245b1a295364e5b8c87f90290f7f74
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98223314"
 ---
 # <a name="move-an-azure-virtual-network-to-another-region-by-using-the-azure-portal"></a>Перемещение виртуальной сети Azure в другой регион с помощью портал Azure
@@ -20,7 +20,7 @@ ms.locfileid: "98223314"
 Вы можете использовать шаблон Azure Resource Manager для завершения перемещения виртуальной сети в другой регион. Для этого необходимо экспортировать виртуальную сеть в шаблон, изменить параметры в соответствии с регионом назначения, а затем развернуть шаблон в новом регионе. Дополнительные сведения о шаблонах диспетчер ресурсов см. [в разделе Краткое руководство. Создание и развертывание шаблонов Azure Resource Manager с помощью портал Azure](../azure-resource-manager/templates/quickstart-create-templates-use-the-portal.md).
 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Убедитесь, что виртуальная сеть находится в регионе Azure, из которого вы хотите переместиться.
 

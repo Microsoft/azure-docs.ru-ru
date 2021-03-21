@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 2/25/2019
 ms.author: srrengar
 ms.openlocfilehash: 453258bb5768a2faa8f4e42cce86d02125283026
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96002176"
 ---
 # <a name="event-aggregation-and-collection-using-linux-azure-diagnostics"></a>Агрегирование и сбор событий с помощью системы диагностики Azure для Linux
@@ -41,7 +41,7 @@ Service Fabric создает несколько готовых журналов
 Это необходимо для того, чтобы настроить агент LAD для наблюдения за указанными файлами журнала. Каждый раз при добавлении новой стройки в файл он создает запись системного журнала, которая отправляется в указанное вами хранилище (таблицу).
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 1. Дополнительные сведения о том, какие события нужно анализировать при устранении неполадок, см. в [документации по LTTng](https://lttng.org/docs) и статье [Использование диагностического расширения Linux для мониторинга данных о состоянии и производительности виртуальных машин под управлением Linux](../virtual-machines/extensions/diagnostics-linux.md).
 2. [Настройте агент Log Analytics](service-fabric-diagnostics-event-analysis-oms.md) для сбора метрик, мониторинга развернутых в кластере контейнеров и визуализации журналов. 

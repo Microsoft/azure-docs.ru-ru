@@ -13,10 +13,10 @@ ms.date: 02/27/2017
 ms.author: rohink
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 5d902e0172a048527ce8f2fa9e22c5fc9bf22e0b
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102203629"
 ---
 # <a name="how-to-manage-dns-zones-in-azure-dns-using-the-azure-cli"></a>Как управлять зонами DNS в службе DNS Azure с помощью интерфейса командной строки Azure
@@ -37,7 +37,7 @@ ms.locfileid: "102203629"
 
 ## <a name="set-up-azure-cli-for-azure-dns"></a>Настройка интерфейса командной строки Azure для Azure DNS
 
-### <a name="before-you-begin"></a>Подготовка к работе
+### <a name="before-you-begin"></a>Перед началом
 
 Перед началом настройки убедитесь, что у вас есть следующие компоненты.
 

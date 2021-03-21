@@ -8,10 +8,10 @@ ms.date: 02/12/2021
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: 89bd77c30ec52a72087598b86f22e85659fa1b0e
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102203901"
 ---
 # <a name="integrate-azure-digital-twins-with-azure-signalr-service"></a>Интеграция Azure Digital двойников со службой Azure SignalR
@@ -65,7 +65,7 @@ ms.locfileid: "102203901"
 
 Запустите Visual Studio (или другой редактор кода по своему усмотрению) и откройте решение Code в папке *Digital-двойников-Samples-master > адтсамплеапп* . Затем выполните следующие действия, чтобы создать функции.
 
-1. В проекте *самплефунктионсапп* создайте новый класс C# с именем **SignalRFunctions.CS**.
+1. В проекте *самплефунктионсапп* создайте новый класс C# с именем **сигналрфунктионс. CS**.
 
 1. Замените содержимое файла класса следующим кодом:
     
@@ -205,7 +205,7 @@ az group delete --name <your-resource-group>
 
 Наконец, удалите примеры папок проекта, загруженные на локальный компьютер (*digital-twins-samples-master.zip*, *digitaltwins-signalr-webapp-sample-main.zip* и их несжатые аналоги).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этой статье вы настроите функции Azure с SignalR, чтобы транслировать события телеметрии Digital двойников в пример клиентского приложения.
 

@@ -3,15 +3,15 @@ title: Автоматическое расширение хранилища — 
 description: В этой статье описывается, как включить автоматическое расширение хранилища с помощью PowerShell в базе данных Azure для MariaDB.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: how-to
 ms.date: 5/26/2020
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: ef495fc884b1930f8510b6b2443bde40e269a8f1
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: 87438c406ea2b31942003d9211cf5e285628f15d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98665163"
 ---
 # <a name="auto-grow-storage-in-azure-database-for-mariadb-server-using-powershell"></a>Автоматическое увеличение объема хранилища в базе данных Azure для сервера MariaDB с помощью PowerShell
@@ -51,7 +51,7 @@ $Password = Read-Host -Prompt 'Please enter your password' -AsSecureString
 New-AzMariaDbServer -Name mydemoserver -ResourceGroupName myresourcegroup -Sku GP_Gen5_2 -StorageAutogrow Enabled -Location westus -AdministratorUsername myadmin -AdministratorLoginPassword $Password
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Как создавать реплики чтения и управлять ими в базе данных Azure для MariaDB с помощью PowerShell](howto-read-replicas-powershell.md).

@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/08/2021
 ms.author: alkohli
 ms.openlocfilehash: 580e5aab7b7ac1edcfee58345291afcb9eb0e977
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103562167"
 ---
 # <a name="manage-an-azure-stack-edge-pro-gpu-device-via-windows-powershell"></a>Управление устройством GPU Azure Stack с помощью Windows PowerShell
@@ -600,6 +600,6 @@ DEBUG 2020-05-14T20:42:14Z: loop process - 0 events, 0.000s
 
 Чтобы выйти из удаленного сеанса PowerShell, закройте окно PowerShell.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Разверните [Azure Stack Edge Pro](azure-stack-edge-gpu-deploy-prep.md) на портале Azure.

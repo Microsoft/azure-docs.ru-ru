@@ -7,10 +7,10 @@ ms.date: 11/09/2020
 ms.topic: article
 ms.custom: devx-track-csharp
 ms.openlocfilehash: f63cd3b50642c3cf531387b4446992b6f15116f2
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99594118"
 ---
 # <a name="fresnel-effect"></a>Эффект Френеля
@@ -29,7 +29,7 @@ ms.locfileid: "99594118"
 
 В настоящее время Френелю можно настроить для каждого материала, используя следующие свойства:
 
-| Свойство Material | Тип | Объяснение |
+| Свойство Material | Type | Пояснение |
 |-------------------|------|-------------|
 | фреснелеффектколор | Color4 | Цвет, который добавляется максимум в качестве френелюа. Альфа-канал в данный момент игнорируется. |
 | фреснелеффектекспонент | FLOAT | Разворота френелюа. Диапазон от 0,01 (распределение по всему объекту) до 10 (только наиболее граЦинг углы). |

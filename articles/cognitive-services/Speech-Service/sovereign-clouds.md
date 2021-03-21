@@ -12,10 +12,10 @@ ms.custom: references_regions
 ms.date: 01/07/2021
 ms.author: alexeyo
 ms.openlocfilehash: f30b1f0f14bba54b8b4fcd7c5190f3c533f199a6
-ms.sourcegitcommit: 63caac7871df9d999ca5a5f1b8c036ae7014231c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98061758"
 ---
 # <a name="speech-services-in-sovereign-clouds"></a>Речевые службы в независимых облаках
@@ -31,7 +31,7 @@ ms.locfileid: "98061758"
   - US Gov (Вирджиния)
 - **Доступные ценовые категории:**
   - Free (F0) и Standard (S0). Дополнительные сведения см. [здесь](https://azure.microsoft.com/pricing/details/cognitive-services/speech-services/)
-- **Поддерживаемые функции:**
+- **Поддерживаемые функции**
   - Преобразование речи в текст
     - Пользовательское распознавание речи (акустическая модель (AM) и модель языка (LM))
       - [Speech Studio](https://speech.azure.us/)
@@ -101,7 +101,7 @@ spx recognize --host "usGovHost" --file myaudio.wav
   - Восточный Китай 2
 - **Доступные ценовые категории:**
   - Free (F0) и Standard (S0). Дополнительные сведения см. [здесь](https://www.azure.cn/pricing/details/cognitive-services/index.html)
-- **Поддерживаемые функции:**
+- **Поддерживаемые функции**
   - Преобразование речи в текст
     - Пользовательское распознавание речи (акустическая модель (AM) и модель языка (LM))
       - [Speech Studio](https://speech.azure.cn/)

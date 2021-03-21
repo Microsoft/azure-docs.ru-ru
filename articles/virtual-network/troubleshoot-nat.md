@@ -15,10 +15,10 @@ ms.workload: infrastructure-services
 ms.date: 05/20/2020
 ms.author: allensu
 ms.openlocfilehash: 70410e58acb30c7694e6fe4a6dcaff57bee98607
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98223437"
 ---
 # <a name="troubleshoot-azure-virtual-network-nat-connectivity"></a>Устранение неполадок с подключением при использовании NAT виртуальной сети Azure

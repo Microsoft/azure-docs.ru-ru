@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 05/12/2020
 ms.author: victorh
 ms.openlocfilehash: 77e36d5ab98f1177b5a0b89ee10b3e6bd22560c2
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98791465"
 ---
 # <a name="azure-firewall-threat-intelligence-based-filtering"></a>Фильтрация на основе аналитики угроз в Брандмауэре Azure

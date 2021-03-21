@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 01/05/2021
 ms.author: alkohli
 ms.openlocfilehash: 27ca190f3bad7f75175e5206d48e13dae1f5687e
-ms.sourcegitcommit: 67b44a02af0c8d615b35ec5e57a29d21419d7668
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97913354"
 ---
 # <a name="use-the-azure-portal-to-manage-users-on-your-azure-stack-edge-pro-fpga"></a>Использование портал Azure для управления пользователями на Azure Stackном пограничном мобильном FPGA
@@ -22,7 +22,7 @@ ms.locfileid: "97913354"
 Вы узнаете, как выполнять следующие задачи:
 
 > [!div class="checklist"]
-> * Добавление пользователя
+> * Добавление пользователей
 > * Изменение пользователя
 > * Удаление пользователя
 
@@ -35,7 +35,7 @@ ms.locfileid: "97913354"
 
 Сначала разрешения пользователя определяются при его создании во время создания общей папки. Изменение разрешений на уровне общего ресурса сейчас не поддерживается.
 
-## <a name="add-a-user"></a>Добавление пользователя
+## <a name="add-a-user"></a>Добавление пользователей
 
 Выполните на портале Azure шаги ниже, чтобы добавить пользователя.
 

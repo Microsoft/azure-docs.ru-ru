@@ -13,10 +13,10 @@ ms.author: erhopf
 ms.custom: devx-track-csharp, cog-serv-seo-aug-2020
 keywords: перевод речи
 ms.openlocfilehash: 36c2943d7cd5ce2c5c7c4a8501dc0033aa8c9cbc
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95015211"
 ---
 # <a name="what-is-speech-translation"></a>Что такое перевод речи?
@@ -36,11 +36,11 @@ ms.locfileid: "95015211"
 * Поддержка перевода на несколько целевых языков.
 * Промежуточные результаты распознавания и перевода.
 
-## <a name="get-started"></a>Приступая к работе 
+## <a name="get-started"></a>Начало работы 
 
 Чтобы начать работу с переводом речи, ознакомьтесь с [кратким](get-started-speech-translation.md) руководством. Служба перевода речи доступна через [речевой пакет SDK](speech-sdk.md) и [РЕЧЕВОЙ интерфейс командной строки](spx-overview.md).
 
-## <a name="sample-code"></a>Образец кода
+## <a name="sample-code"></a>Пример кода
 
 Пример кода для пакета SDK для распознавания речи доступен на сайте GitHub. В этих примерах рассматриваются распространенные сценарии, такие как чтение звука из файла или потока, непрерывное распознавание и преобразование с одним снимком, а также работа с пользовательскими моделями.
 

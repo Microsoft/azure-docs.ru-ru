@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 03/10/2021
 ms.author: justinha
 ms.openlocfilehash: 5473ef46751d64fdbbf1d52f39c66f49d707e615
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102631393"
 ---
 # <a name="management-concepts-for-user-accounts-passwords-and-administration-in-azure-active-directory-domain-services"></a>Основные понятия управления учетными записями пользователей, паролями и администрированием в доменных службах Azure Active Directory
@@ -80,8 +80,8 @@ AD DS Azure включает политику паролей по умолчан
 
 | Номер SKU   | Максимальное число объектов | Частота резервного копирования | Максимальное число доверий исходящих лесов |
 |------------|----------------------|------------------|----|
-| Standard   | Неограниченно            | Каждые 5 дней     | 0  |
-| Enterprise | Неограниченно            | Каждые 3 дня     | 5  |
+| Стандартный   | Неограниченно            | Каждые 5 дней     | 0  |
+| Предприятие | Неограниченно            | Каждые 3 дня     | 5  |
 | Премиум    | Неограниченно            | Ежедневно            | 10 |
 
 Перед этими номерами SKU Azure AD DS используется модель выставления счетов на основе числа объектов (учетных записей пользователей и компьютеров) в управляемом домене. Больше нет переменных цен на основе числа объектов в управляемом домене.

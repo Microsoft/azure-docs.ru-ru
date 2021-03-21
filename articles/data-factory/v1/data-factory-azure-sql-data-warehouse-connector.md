@@ -8,10 +8,10 @@ ms.date: 01/10/2018
 ms.author: jingwang
 robots: noindex
 ms.openlocfilehash: aa364ec434db980bf226008537ca928628fcac1b
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100392091"
 ---
 # <a name="copy-data-to-and-from-azure-synapse-analytics-using-azure-data-factory"></a>Копирование данных в Azure синапсе Analytics и обратно с помощью фабрики данных Azure
@@ -63,7 +63,7 @@ ms.locfileid: "100392091"
 ## <a name="linked-service-properties"></a>Свойства связанной службы
 В следующей таблице содержится описание элементов JSON, относящихся к связанной службе Azure синапсе Analytics.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 | --- | --- | --- |
 | type |Для свойства Type необходимо задать значение **AzureSqlDW** . |Да |
 | connectionString |Укажите сведения, необходимые для подключения к экземпляру Azure синапсе Analytics для свойства connectionString. Поддерживается только обычная проверка подлинности. |Да |
@@ -76,7 +76,7 @@ ms.locfileid: "100392091"
 
 Раздел typeProperties во всех типах наборов данных разный. В нем содержатся сведения о расположении данных в хранилище данных. Раздел **typeProperties** набора данных типа **AzureSqlDWTable** имеет следующие свойства.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 | --- | --- | --- |
 | tableName |Имя таблицы или представления в базе данных Azure синапсе Analytics, на которую ссылается связанная служба. |Да |
 
@@ -91,7 +91,7 @@ ms.locfileid: "100392091"
 ### <a name="sqldwsource"></a>SqlDWSource
 Когда источник относится к типу **SqlDWSource**, в разделе **typeProperties** доступны следующие свойства.
 
-| Свойство | Описание | Допустимые значения | Обязательно |
+| Свойство. | Описание | Допустимые значения | Обязательно |
 | --- | --- | --- | --- |
 | sqlReaderQuery |Используйте пользовательский запрос для чтения данных. |Строка запроса SQL. Например, select * from MyTable. |нет |
 | sqlReaderStoredProcedureName |Имя хранимой процедуры, которая считывает данные из исходной таблицы. |Имя хранимой процедуры. Последней инструкцией SQL должна быть инструкция SELECT в хранимой процедуре. |нет |
@@ -101,7 +101,7 @@ ms.locfileid: "100392091"
 
 Кроме того, можно создать хранимую процедуру, указав **sqlReaderStoredProcedureName** и **storedProcedureParameters** (если хранимая процедура принимает параметры).
 
-Если не указать ни sqlReaderQuery, ни sqlReaderStoredProcedureName, то для создания запроса, который будет выполняться в Azure синапсе Analytics, будут использоваться столбцы, определенные в разделе структура JSON-файла набора данных. Пример: `select column1, column2 from mytable`. Если у определения набора данных нет структуры, выбираются все столбцы из таблицы.
+Если не указать ни sqlReaderQuery, ни sqlReaderStoredProcedureName, то для создания запроса, который будет выполняться в Azure синапсе Analytics, будут использоваться столбцы, определенные в разделе структура JSON-файла набора данных. Например, `select column1, column2 from mytable`. Если у определения набора данных нет структуры, выбираются все столбцы из таблицы.
 
 #### <a name="sqldwsource-example"></a>Пример SqlDWSource
 
@@ -137,7 +137,7 @@ GO
 ### <a name="sqldwsink"></a>SqlDWSink
 **SqlDWSink** поддерживает указанные ниже свойства.
 
-| Свойство | Описание | Допустимые значения | Обязательно |
+| Свойство. | Описание | Допустимые значения | Обязательно |
 | --- | --- | --- | --- |
 | sqlWriterCleanupScript |Укажите запрос на выполнение действия копирования, позволяющий убедиться в том, что данные конкретного среза очищены. Дополнительные сведения см. в [разделе о повторяемости](#repeatability-during-copy). |Инструкция запроса. |Нет |
 | allowPolyBase |Указывает, следует ли использовать PolyBase (если применимо) вместо механизма BULKINSERT. <br/><br/> **Использование Polybase — рекомендуемый способ загрузки данных в Azure синапсе Analytics.** Ограничения и сведения см. в разделе [Загрузка данных в Azure синапсе Analytics с помощью polybase](#use-polybase-to-load-data-into-azure-synapse-analytics) . |True <br/>False (по умолчанию) |Нет |
@@ -310,14 +310,14 @@ All columns of the table must be specified in the INSERT BULK statement.
 | Двоичные данные | Двоичные данные |
 | Varbinary | VarBinary (до 8000) |
 | Дата | Дата |
-| Дата и время | Дата и время |
+| Дата и время | Дата/время |
 | datetime2 | datetime2 |
 | время; | время; |
 | DateTimeOffset | DateTimeOffset |
 | SmallDateTime | SmallDateTime |
 | Текст | Varchar (до 8000) |
 | NText | NVarChar (до 4000) |
-| Изображение | VarBinary (до 8000) |
+| Образ — | VarBinary (до 8000) |
 | UniqueIdentifier | UniqueIdentifier |
 | Char | Char |
 | NCHAR | NCHAR |

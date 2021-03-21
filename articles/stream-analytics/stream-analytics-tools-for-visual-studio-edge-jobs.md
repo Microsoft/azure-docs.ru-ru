@@ -8,17 +8,17 @@ ms.topic: how-to
 ms.date: 12/07/2018
 ms.custom: seodec18
 ms.openlocfilehash: 09151ea0fe3d419401d576149f6655b8cdc09f8e
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98019964"
 ---
 # <a name="develop-stream-analytics-edge-jobs-using-visual-studio-tools"></a>Разработка заданий Edge Stream Analytics с помощью средств Visual Studio
 
 В этом руководстве описано, как использовать средства Stream Analytics для Visual Studio. Вы узнаете, как создавать, отлаживать и создавать задания Stream Analytics пограничных устройств. После создания и тестирования задания можно перейти на портал Azure, чтобы развернуть его на устройствах. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для работы с данным руководством вам потребуется:
 
@@ -64,7 +64,7 @@ ms.locfileid: "98019964"
 Stream Analytics задания, развернутые в среде Stream Analytics IoT Edge, поддерживают большую часть [справочника по языку запросов Stream Analytics](/stream-analytics-query/stream-analytics-query-language-reference?f=255&MSPPError=-2147217396). Однако следующие операции еще не поддерживаются для заданий Stream Analytics пограничных устройств: 
 
 
-|**Категория**  | **Command**  |
+|**Категория**  | **Команда**  |
 |---------|---------|
 |Другие операторы | <ul><li>PARTITION BY</li><li>TIMESTAMP BY OVER</li><li>Определяемая пользователем функция JavaScript</li><li>Определяемые пользователем статистические функции (UDA)</li><li>GetMetadataPropertyValue</li><li>Использование более 14 статистических выражений за один шаг</li></ul>   |
 

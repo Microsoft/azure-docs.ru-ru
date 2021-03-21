@@ -3,15 +3,15 @@ title: Перезапуск сервера-Azure CLI — база данных A
 description: В этой статье описывается, как можно перезапустить сервер базы данных Azure для MariaDB с помощью Azure CLI.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: how-to
 ms.date: 3/18/2020
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: 50389c7c4e1f497e63c5221181713649a7b068c5
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: 8ae69adfe83b871eb29c85fc4d03e817026ec006
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98664925"
 ---
 # <a name="restart-azure-database-for-mariadb-server-using-the-azure-cli"></a>Перезапустите базу данных Azure для сервера MariaDB с помощью Azure CLI
@@ -34,7 +34,7 @@ ms.locfileid: "98664925"
 - Для работы с этой статьей требуется Azure CLI версии 2.0 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
 
-## <a name="restart-the-server"></a>Перезагрузите сервер.
+## <a name="restart-the-server"></a>Перезапустите сервер.
 
 Перезапустите сервер с помощью следующей команды:
 
@@ -42,6 +42,6 @@ ms.locfileid: "98664925"
 az mariadb server restart --name mydemoserver --resource-group myresourcegroup
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о [настройке параметров в базе данных Azure для MariaDB](howto-configure-server-parameters-cli.md)

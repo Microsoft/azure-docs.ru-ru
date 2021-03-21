@@ -8,10 +8,10 @@ author: navits09
 ms.author: navits
 ms.date: 04/02/2020
 ms.openlocfilehash: b02c5bbf2e6accbea9c7a33dc26c4e89e46bb697
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97679149"
 ---
 # <a name="power-bi-app-creation-overview"></a>Общие сведения о создании приложения Power BI
@@ -42,7 +42,7 @@ ms.locfileid: "97679149"
 7. После сертификации проверьте приложение в тестовой среде и выпустите его. Он будет перечисляться в AppSource (он "переходит в активное").
 8. В Power BI отправьте пакет в рабочую среду. Дополнительные сведения см. [в разделе Управление выпуском Power BI приложения](/power-bi/service-template-apps-create#manage-the-template-app-release).
 
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="before-you-begin"></a>Перед началом
 
 Ознакомьтесь с приведенными ниже ссылками, которые содержат шаблоны, советы и примеры.
 
@@ -76,6 +76,6 @@ ms.locfileid: "97679149"
 - Укажите содержимое, удовлетворяющее критериям предложения, которые будут перечислены в AppSource. Дополнительные сведения см [. в разделе приложение для перечисления в AppSource. Вот как это](https://appsource.microsoft.com/blogs/have-an-app-to-list-on-appsource-here-s-how)делать.
 - Примите условия и следуйте [заявлению о конфиденциальности Майкрософт](https://privacy.microsoft.com/privacystatement).
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 - [Создание предложения Power BI приложения в центре партнеров](create-power-bi-app-offer.md)

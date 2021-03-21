@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 03/04/2021
 ms.custom: references_regions
 ms.openlocfilehash: 5277f5051e291e9058255d8920ac0be950389704
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102203204"
 ---
 # <a name="how-to-view-kubernetes-logs-events-and-pod-metrics-in-real-time"></a>Просмотр журналов Kubernetes, событий и метрик Pod в режиме реального времени
@@ -127,7 +127,7 @@ ms.locfileid: "102203204"
 >[!IMPORTANT]
 >При работе этой функции данные не сохраняются навсегда. Все сведения, захваченные во время сеанса, удаляются при закрытии браузера или переходе от него. Данные остаются только для визуализации в течение пяти минут компонента метрик. все метрики старше пяти минут также удаляются. Запросы буфера данных в режиме реального времени запрашиваются по разумным ограничениям на использование памяти.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Чтобы продолжить изучение способов использования Azure Monitor и отслеживать другие аспекты кластера AKS, ознакомьтесь со статьей [Общие сведения о мониторинге производительности кластера AKS с помощью Azure Monitor для контейнеров (предварительная версия)](container-insights-analyze.md).
 

@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 10/14/2020
 ms.author: jingwang
 ms.openlocfilehash: 90cc4e3f9915db424cec89cfc764771b5be785e9
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100389728"
 ---
 # <a name="copy-data-from-an-odata-source-by-using-azure-data-factory"></a>Копирование данных из источника OData с помощью Фабрики данных Azure
@@ -50,7 +50,7 @@ ms.locfileid: "100389728"
 
 Для связанной службы OData поддерживаются следующие свойства.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства **type** необходимо задать значение **OData**. |Да |
 | url | Корневой URL-адрес службы OData. |Да |
@@ -262,7 +262,7 @@ ms.locfileid: "100389728"
 
 Чтобы скопировать данные из OData, в разделе **источник** действия копирования поддерживаются следующие свойства.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство **Type** источника действия копирования должно иметь значение **одатасаурце**. | Да |
 | query | Параметры запроса OData для фильтрации данных. Например, `"$select=Name,Description&$top=5"`.<br/><br/>**Примечание.** Соединитель OData копирует данные из объединенного URL-адреса: `[URL specified in linked service]/[path specified in dataset]?[query specified in copy activity source]`. Дополнительные сведения см. в статье о [компонентах URL-адреса OData](https://www.odata.org/documentation/odata-version-3-0/url-conventions/). | Нет |

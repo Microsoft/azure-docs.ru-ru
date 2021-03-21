@@ -8,10 +8,10 @@ ms.date: 01/22/2018
 ms.author: jingwang
 robots: noindex
 ms.openlocfilehash: cc8e0272dc690ed541883ae943c118cbbe2f1854
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100392125"
 ---
 # <a name="move-data-to-and-from-azure-table-using-azure-data-factory"></a>Перемещение данных в таблицу SQL Azure и из нее с помощью фабрики данных Azure
@@ -55,7 +55,7 @@ ms.locfileid: "100392125"
 
 Раздел typeProperties во всех типах наборов данных разный. В нем содержатся сведения о расположении данных в хранилище данных. Раздел **typeProperties** набора данных типа **AzureTable** содержит следующие свойства.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 | --- | --- | --- |
 | tableName |Имя таблицы в экземпляре базы данных таблиц Azure, на которое ссылается связанная служба. |Да. Если tableName указывается без azureTableSourceQuery, все записи из таблицы копируются в целевое расположение. Если azureTableSourceQuery указывается, записи из таблицы, удовлетворяющие запросу, копируются в целевое расположение. |
 
@@ -74,7 +74,7 @@ ms.locfileid: "100392125"
 
 **AzureTableSource** в разделе typeProperties поддерживает следующие свойства.
 
-| Свойство | Описание | Допустимые значения | Обязательно |
+| Свойство. | Описание | Допустимые значения | Обязательно |
 | --- | --- | --- | --- |
 | AzureTableSourceQuery |Используйте пользовательский запрос для чтения данных. |Строка запроса таблицы Azure. Примеры приведены в следующем разделе. |Нет. Если tableName указывается без azureTableSourceQuery, все записи из таблицы копируются в целевое расположение. Если azureTableSourceQuery указывается, записи из таблицы, удовлетворяющие запросу, копируются в целевое расположение. |
 | azureTableSourceIgnoreTableNotFound |Указывает, игнорируются ли исключения таблицы. |TRUE<br/>FALSE |Нет |
@@ -94,7 +94,7 @@ azureTableSourceQuery": "$$Text.Format('PartitionKey ge \\'{0:yyyyMMddHH00_0000}
 
 **AzureTableSink** поддерживает указанные ниже свойства в разделе typeProperties.
 
-| Свойство | Описание | Допустимые значения | Обязательно |
+| Свойство. | Описание | Допустимые значения | Обязательно |
 | --- | --- | --- | --- |
 | azureTableDefaultPartitionKeyValue |Значение ключа раздела по умолчанию, которое может использоваться приемником. |Строковое значение. |Нет |
 | azureTablePartitionKeyName |Укажите имя столбца, значения которого используются в качестве ключей секций. Если не указано, в качестве ключа раздела используется AzureTableDefaultPartitionKeyValue. |Имя столбца. |Нет |

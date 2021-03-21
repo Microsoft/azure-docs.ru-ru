@@ -14,10 +14,10 @@ ms.author: marsma
 ms.reviewer: saeeda
 ms.custom: devx-track-csharp, aaddev
 ms.openlocfilehash: 4230a194fb18587a209c100a39b0924e6170502d
-ms.sourcegitcommit: 2488894b8ece49d493399d2ed7c98d29b53a5599
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98063473"
 ---
 #  <a name="xamarin-android-system-browser-considerations-for-using-msalnet"></a>Рекомендации по использованию MSAL.NET в браузере системы Xamarin Android
@@ -45,8 +45,8 @@ ms.locfileid: "98063473"
 | Устройство | Браузер     |  Результат  | 
 | ------------- |:-------------:|:-----:|
 | Huawei/один + | Chrome\* | Успех|
-| Huawei/один + | Угловой\* | Успех|
-| Huawei/один + | Firefox\* | Успех|
+| Huawei/один + | Edge\* | Успех|
+| Huawei/один + | Браузера\* | Успех|
 | Huawei/один + | Дивный\* | Успех|
 | Один + | екосиа\* | Успех|
 | Один + | Киви\* | Успех|

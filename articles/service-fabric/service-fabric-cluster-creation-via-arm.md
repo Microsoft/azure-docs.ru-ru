@@ -4,10 +4,10 @@ description: Сведения о настройке защищенного кл�
 ms.topic: conceptual
 ms.date: 08/16/2018
 ms.openlocfilehash: d4daa75fd9383bc19da1b09104ebddff5712c5b4
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98791817"
 ---
 # <a name="create-a-service-fabric-cluster-using-azure-resource-manager"></a>Создание кластера Service Fabric с помощью Azure Resource Manager 
@@ -26,7 +26,7 @@ ms.locfileid: "98791817"
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
-## <a name="prerequisites"></a>Предварительные требования 
+## <a name="prerequisites"></a>Предварительные условия 
 В этой статье для развертывания кластера используйте модули Azure CLI или Service Fabric RM для PowerShell:
 
 * [Azure PowerShell версии 4.1 и выше][azure-powershell].
