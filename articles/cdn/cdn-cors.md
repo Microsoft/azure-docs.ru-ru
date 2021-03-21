@@ -15,17 +15,17 @@ ms.topic: how-to
 ms.date: 01/23/2017
 ms.author: mazha
 ms.openlocfilehash: f7edf790e526329dd285d03a31137a26220e52ee
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96018653"
 ---
 # <a name="using-azure-cdn-with-cors"></a>Использование Azure CDN с CORS
 ## <a name="what-is-cors"></a>Что такое CORS?
 CORS (общий доступ к ресурсам независимо от источника) — функция HTTP, которая позволяет веб-приложению, работающему в одном домене, обращаться к ресурсам другого домена. Чтобы снизить вероятность атак с использованием межузловых сценариев, все современные веб-браузеры реализуют ограничение безопасности, известное как [политика одного источника](https://www.w3.org/Security/wiki/Same_Origin_Policy).  Это ограничение не позволяет веб-страницы вызывать интерфейсы API в другом домене.  CORS позволяет одному источнику (исходному домену) безопасно вызывать интерфейсы API в другом источнике.
 
-## <a name="how-it-works"></a>Принципы работы
+## <a name="how-it-works"></a>Принцип работы
 Существует два типа запросов CORS, *простые запросы* и *сложные запросы*.
 
 ### <a name="for-simple-requests"></a>Простые запросы

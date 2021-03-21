@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 06/29/2017
 ms.author: alkohli
 ms.openlocfilehash: c7b0ea489c1d70ab86d677aad666ea6728fa76b4
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96017089"
 ---
 # <a name="change-the-device-mode-on-your-storsimple-device"></a>Переключение режима устройства StorSimple
@@ -122,7 +122,7 @@ ms.locfileid: "96017089"
 #### <a name="to-exit-maintenance-mode"></a>Выход из режима обслуживания
 
 1. Войдите в последовательную консоль устройства. Проверьте, находится ли устройство в режиме обслуживания, с помощью заглавного сообщения.
-2. В командной строке введите:
+2. В командной строке введите следующее:
    
     `Exit-HcsMaintenanceMode`
 3. Отобразится сообщение с предупреждением и сообщение с запросом на подтверждение. Нажмите клавишу **Y** , чтобы выйти из режима обслуживания.
@@ -161,7 +161,7 @@ ms.locfileid: "96017089"
     Please enter your choice>
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как [применить обновления нормального режима и режима обслуживания](storsimple-update-device.md) к своему устройству StorSimple.
 

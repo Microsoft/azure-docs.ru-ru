@@ -13,10 +13,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0ecfd277f2cc86102d59b201e7b43fa8519bdd3a
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98937616"
 ---
 # <a name="azure-ad-connect-sync-v2-endpoint-api"></a>API конечной точки версии 2 для синхронизации Azure AD Connect 
@@ -28,7 +28,7 @@ ms.locfileid: "98937616"
 > [!NOTE]
 > В настоящее время новая конечная точка не имеет настроенного предела размера группы для Microsoft 365 групп, которые записываются обратно. Это может повлиять на Active Directory и задержки цикла синхронизации. Рекомендуется увеличивать размеры групп постепенно.  
 
-## <a name="prerequisites"></a>Предварительные требования  
+## <a name="prerequisites"></a>Предварительные условия  
 Чтобы использовать новую конечную точку версии 2, необходимо использовать [Azure AD Connect версии 1.5.30.0](https://www.microsoft.com/download/details.aspx?id=47594) или более поздней, а также выполнить приведенные ниже шаги по развертыванию, делающие возможным использование конечной точки версии 2 для сервера Azure AD Connect.   
 
 ## <a name="deployment-guidance"></a>Руководства по развертыванию 

@@ -4,10 +4,10 @@ description: Узнайте, как упаковать существующее 
 ms.topic: conceptual
 ms.date: 03/15/2018
 ms.openlocfilehash: 8b808d092001196a4d2150e44d508e031db95554
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96017752"
 ---
 # <a name="deploy-an-existing-executable-to-service-fabric"></a>Развертывание существующего исполняемого файла вручную
@@ -62,7 +62,7 @@ ms.locfileid: "96017752"
 >
 >
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В приведенных ниже статьях описаны связанные сведения и задачи.
 * [Развертывание гостевого исполняемого файла](service-fabric-deploy-existing-app.md)
 * [Развертывание нескольких пользовательских приложений](./service-fabric-deploy-existing-app.md)

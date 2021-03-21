@@ -8,10 +8,10 @@ author: vikrambmsft
 ms.author: vikramb
 ms.date: 03/08/2021
 ms.openlocfilehash: 7acf7e8dc9f90c50f3c7d5555e6fe37260b35c93
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103022155"
 ---
 # <a name="notifying-microsoft-regarding-the-publisher-agreement"></a>Уведомление корпорации Майкрософт о соглашении об издателе
@@ -42,7 +42,7 @@ ms.locfileid: "103022155"
 
 1. Когда вы предоставили все необходимые сведения, нажмите кнопку **Отправить** , чтобы создать запрос в службу поддержки и отправить уведомление в корпорацию Майкрософт.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Если у нас возникнут вопросы, агент поддержки свяжется с вами.
 - Ознакомьтесь с [соглашением Microsoft Publisher](https://go.microsoft.com/fwlink/?LinkID=699560) (PDF).

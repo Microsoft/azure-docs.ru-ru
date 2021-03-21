@@ -11,10 +11,10 @@ ms.reviewer: sstein
 ms.custom: references_regions
 ms.date: 03/11/2021
 ms.openlocfilehash: bd91c29ca97c2096c4d8f3df19dbb9eab306b8e7
-ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103149755"
 ---
 # <a name="maintenance-window-preview"></a>Период обслуживания (Предварительная версия)
@@ -61,7 +61,7 @@ Azure периодически выполняет [плановое обслуж
 
 Уведомления об обслуживании можно настроить для оповещения о предстоящих событиях запланированного обслуживания для базы данных SQL Azure за 24 часа, во время обслуживания и после завершения обслуживания. Дополнительные сведения см. в разделе [предварительные уведомления](advance-notifications.md).
 
-## <a name="availability"></a>доступность;
+## <a name="availability"></a>Доступность
 
 ### <a name="supported-service-level-objectives"></a>Поддерживаемые цели уровня обслуживания
 
@@ -126,7 +126,7 @@ Azure периодически выполняет [плановое обслуж
 > [!Important]
 >  Убедитесь, что правила NSG и брандмауэра не блокируют трафик данных после изменения IP-адреса. 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Расширенные уведомления](advance-notifications.md)
 * [Настройка периода обслуживания](maintenance-window-configure.md)
