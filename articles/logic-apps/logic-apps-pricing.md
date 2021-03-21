@@ -7,10 +7,10 @@ ms.reviewer: estfan, logicappspm, azla
 ms.topic: conceptual
 ms.date: 01/29/2021
 ms.openlocfilehash: 2b37308bcbcd489876c21dce56878de7e0daf545
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101699034"
 ---
 # <a name="pricing-and-billing-models-for-azure-logic-apps"></a>Цены и модели выставления счетов для Azure Logic Apps

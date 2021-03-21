@@ -6,10 +6,10 @@ ms.author: harelbr
 ms.topic: conceptual
 ms.date: 02/14/2021
 ms.openlocfilehash: 7ab719560320882a3a6569bff5df7d2e2cf0b747
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102037563"
 ---
 # <a name="call-a-webhook-with-a-classic-metric-alert-in-azure-monitor"></a>Вызов веб-перехватчика с помощью классического оповещения метрики в Azure Monitor

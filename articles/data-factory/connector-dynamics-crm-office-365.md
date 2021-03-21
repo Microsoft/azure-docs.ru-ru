@@ -6,13 +6,13 @@ ms.topic: conceptual
 ms.author: jingwang
 author: linda33wj
 ms.custom: seo-lt-2019
-ms.date: 03/08/2021
-ms.openlocfilehash: b1e7511f7666455592b6d5f463a316c3354ec76b
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.date: 03/17/2021
+ms.openlocfilehash: ec24fa1bde21c70aa95fc33c92048aebc9f6659c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102447458"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104597392"
 ---
 # <a name="copy-data-from-and-to-dynamics-365-common-data-servicemicrosoft-dataverse-or-dynamics-crm-by-using-azure-data-factory"></a>Копирование данных из Dynamics 365 (Common Data Service/Microsoft инверсия) или Dynamics CRM с помощью фабрики данных Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "102447458"
 
 | Версии Dynamics | Типы проверки подлинности | Примеры связанной службы |
 |:--- |:--- |:--- |
-| Common Data Service <br/><br/> Dynamics 365 Online <br/><br/> Dynamics CRM Online | Субъект-служба Azure Active Directory (Azure AD) <br/><br/> Office 365 | [Служба Dynamics Online и Azure AD — проверка подлинности субъекта или Office 365](#dynamics-365-and-dynamics-crm-online) |
+| Common Data Service <br/><br/> Dynamics 365 Online <br/><br/> Dynamics CRM Online | Субъект-служба Azure Active Directory (Azure AD) <br/><br/> Office 365 | [Служба Dynamics Online и Azure AD — проверка подлинности субъекта или Office 365](#dynamics-365-and-dynamics-crm-online) |
 | Локальная среда Dynamics 365 с развертыванием с выходом в Интернет (IFD) <br/><br/> Dynamics CRM 2016 (локальная версия) с IFD <br/><br/> Dynamics CRM 2015 (локальная версия) с IFD | IFD | [Локальная среда Dynamics с IFD и IFD Authentication](#dynamics-365-and-dynamics-crm-on-premises-with-ifd) |
 
 В частности, для Dynamics 365 поддерживаются следующие типы приложений:
@@ -323,6 +323,7 @@ ms.locfileid: "102447458"
 | алтернатекэйнаме | Альтернативное имя ключа, определенное в сущности для Upsert. | Нет. |
 | writeBatchSize | Количество строк данных, записываемых в Dynamics в каждом пакете. | Нет. Значение по умолчанию — 10. |
 | ignoreNullValues | Следует ли пропускать значения NULL из входных данных, отличных от ключевых полей во время операции записи.<br/><br/>Допустимые значения: **true** и **false**.<ul><li>**True**: при выполнении операции Upsert или обновления оставляет данные в целевом объекте без изменений. При выполнении операции вставки (insert) вставьте определенное значение по умолчанию.</li><li>**False**: при выполнении операции Upsert или Update обновите данные в целевом объекте до значения NULL. При выполнении операции вставки вставляется значение null.</li></ul> | Нет. Значение по умолчанию — **false**. |
+| maxConcurrentConnections |Верхний предел одновременных подключений, установленных для хранилища данных во время выполнения действия. Укажите значение, только если требуется ограничить количество одновременных подключений.| Нет |
 
 >[!NOTE]
 >Значение по умолчанию для приемника **writeBatchSize** и **[parallelCopies](copy-activity-performance-features.md#parallel-copy)** действия копирования для приемника Dynamics — 10. Таким образом, 100 по умолчанию в Dynamics отправляются записи.

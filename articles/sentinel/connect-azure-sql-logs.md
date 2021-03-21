@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 01/06/2021
 ms.author: yelevin
 ms.openlocfilehash: a3a09ceffc75e2d396d7bd7aeedd97b7f2b6ec2b
-ms.sourcegitcommit: 8245325f9170371e08bbc66da7a6c292bbbd94cc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99807739"
 ---
 # <a name="connect-azure-sql-database-diagnostics-and-auditing-logs"></a>Подключение журналов диагностики и аудита базы данных SQL Azure
@@ -27,7 +27,7 @@ SQL Azure — это полностью управляемое ядро базы
 
 Дополнительные сведения о [мониторинге баз данных SQL Azure](../azure-sql/database/metrics-diagnostic-telemetry-logging-streaming-export-configure.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - У вас должны быть разрешения на чтение и запись в рабочей области Sentinel Azure.
 
@@ -50,7 +50,7 @@ SQL Azure — это полностью управляемое ядро базы
 1. **(Необязательно)** Чтобы легко найти ресурс базы данных, щелкните **Добавить фильтр** на панели Фильтры вверху.
     1. В раскрывающемся списке **Фильтр** выберите **тип ресурса**.
     1. В раскрывающемся списке **значение** снимите флажок **выбрать все** и выберите **база данных SQL**.
-    1. Нажмите кнопку **Применить**.
+    1. Щелкните **Применить**.
     
 1. Выберите ресурс базы данных, журналы диагностики которого вы хотите отправить в Azure Sentinel.
 

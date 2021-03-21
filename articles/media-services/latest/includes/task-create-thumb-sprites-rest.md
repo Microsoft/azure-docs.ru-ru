@@ -6,10 +6,10 @@ ms.date: 2/17/2020
 ms.author: inhenkel
 ms.custom: REST
 ms.openlocfilehash: d34cfd31f9648ce6f401c3936a0a28be4729f8e9
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101705466"
 ---
 <!--Create a thumbnail sprites REST-->

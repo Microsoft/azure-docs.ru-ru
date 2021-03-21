@@ -4,10 +4,10 @@ description: Сведения о правилах и ограничениях и
 ms.topic: conceptual
 ms.date: 01/27/2021
 ms.openlocfilehash: 40e17e518baec40d31918d24ab5b61da741f540a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101700479"
 ---
 # <a name="naming-rules-and-restrictions-for-azure-resources"></a>Правила и ограничения именования для ресурсов Azure

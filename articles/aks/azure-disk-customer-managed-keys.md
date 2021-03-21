@@ -5,10 +5,10 @@ services: container-service
 ms.topic: article
 ms.date: 09/01/2020
 ms.openlocfilehash: 4b1c311132cc812ccb2bbbc95c4b7414b108008c
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102499209"
 ---
 # <a name="bring-your-own-keys-byok-with-azure-disks-in-azure-kubernetes-service-aks"></a>Перенесите собственные ключи (BYOK) с помощью дисков Azure в службе Kubernetes Azure (AKS)
@@ -19,7 +19,7 @@ ms.locfileid: "102499209"
 * Поддержка шифрования дисков данных ограничена кластерами AKS, работающими под управлением Kubernetes версии 1,17 и выше.
 * Шифрование ОС и диска данных с ключами, управляемыми клиентом, можно включить только при создании кластера AKS.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 * Необходимо включить обратимое удаление и очистку для *Azure Key Vault* при использовании Key Vault для шифрования управляемых дисков.
 * Требуется Azure CLI версии 2.11.1 или более поздней.
 

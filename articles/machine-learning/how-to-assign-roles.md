@@ -12,10 +12,10 @@ author: nishankgu
 ms.date: 01/20/2020
 ms.custom: how-to, seodec18, devx-track-azurecli, contperf-fy21q2
 ms.openlocfilehash: 8420aecbc160fa6df2640d2ba0ae8a8b77702b67
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98624546"
 ---
 # <a name="manage-access-to-an-azure-machine-learning-workspace"></a>Управление доступом к рабочей области Машинного обучения Azure
@@ -471,7 +471,7 @@ az role definition update --role-definition update_def.json --subscription <sub-
 
 - Иногда для того, чтобы новые назначения ролей вступили в силу с кэшированными разрешениями в стеке, может потребоваться до 1 часа.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Общие сведения об обеспечении безопасности на уровне предприятия](concept-enterprise-security.md)
 - [Общие сведения о изоляции и конфиденциальности виртуальной сети](how-to-network-security-overview.md)

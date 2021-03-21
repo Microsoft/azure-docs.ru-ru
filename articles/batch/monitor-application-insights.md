@@ -4,12 +4,12 @@ description: Узнайте, как инструментировать прил�
 ms.topic: how-to
 ms.custom: devx-track-csharp
 ms.date: 04/05/2018
-ms.openlocfilehash: d06e2b61725f05d025acd8a2995ea041f138ae4f
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 9decb99c3de798df43dedc2441208066d18e3a13
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88933568"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104605789"
 ---
 # <a name="monitor-and-debug-an-azure-batch-net-application-with-application-insights"></a>Мониторинг и отладка приложения .NET пакетной службы Azure с помощью Application Insights
 
@@ -32,7 +32,7 @@ ms.locfileid: "88933568"
   
    * Создайте *ресурс* Application Insights на портале Azure. Выберите *Общие* **Тип приложения**.
 
-   * Скопируйте [ключ инструментирования](../azure-monitor/app/create-new-resource.md #copy-the-instrumentation-key) на портале. Он понадобится вам позже.
+   * Скопируйте [ключ инструментирования](../azure-monitor/app/create-new-resource.md#copy-the-instrumentation-key) на портале. Он понадобится вам позже.
   
   > [!NOTE]
   > За данные, хранимые в Application Insights, может [взиматься плата](https://azure.microsoft.com/pricing/details/application-insights/). В том числе и данные диагностики и мониторинга, о которых идет речь в этой статье.

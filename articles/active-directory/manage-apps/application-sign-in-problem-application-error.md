@@ -17,10 +17,10 @@ ms.author: kenwith
 ms.reviewer: asteen
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c96209f33491645510d8592997c418472d4f227c
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99258818"
 ---
 # <a name="an-app-page-shows-an-error-message-after-the-user-signs-in"></a>Страница приложения отображает сообщение об ошибке после входа пользователя
@@ -62,7 +62,7 @@ ms.locfileid: "99258818"
 
    1. Выберите **Добавить атрибут**. Введите **имя** и выберите **значение** из раскрывающегося списка.
 
-   1.  Нажмите **Сохранить**. Вы увидите новый атрибут в таблице.
+   1.  Щелкните **Сохранить**. Вы увидите новый атрибут в таблице.
 
 9. Сохраните конфигурацию.
 

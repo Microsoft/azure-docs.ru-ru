@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 7/30/2019
 ms.openlocfilehash: 4e7421cb8ea4b0c14e4f4b59a688cdb1afe7d462
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100367713"
 ---
 # <a name="use-azure-data-factory-to-migrate-data-from-your-data-lake-or-data-warehouse-to-azure"></a>Перенос данных из хранилища данных в Azure с помощью фабрики данных Azure
@@ -54,7 +54,7 @@ ms.locfileid: "100367713"
 > С помощью оперативной миграции можно обеспечить сквозную загрузку исторических данных и добавочные веб-каналы с помощью одного средства.  При таком подходе данные можно синхронизировать между существующим хранилищем и новым хранилищем во время всего окна миграции. Это означает, что вы можете перестроить логику ETL в новом хранилище с обновленными данными.
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Перенос данных из AWS S3 в Azure](data-migration-guidance-s3-azure-storage.md)
 - [Перенос данных из локального кластера Hadoop в Azure](data-migration-guidance-hdfs-azure-storage.md)

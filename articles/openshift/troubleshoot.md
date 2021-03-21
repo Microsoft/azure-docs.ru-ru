@@ -7,10 +7,10 @@ ms.service: azure-redhat-openshift
 ms.topic: troubleshooting
 ms.date: 05/08/2019
 ms.openlocfilehash: af66abff3507279dd1954fd83627900578229866
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100632957"
 ---
 # <a name="troubleshooting-for-azure-red-hat-openshift"></a>Устранение неполадок в Azure Red Hat OpenShift

@@ -13,10 +13,10 @@ ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
 ms.openlocfilehash: 0477153b466702bec0fa2d5221fee1e054d06314
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102033782"
 ---
 # <a name="set-up-a-force-password-reset-flow-in-azure-active-directory-b2c"></a>Настройка потока принудительного сброса пароля в Azure Active Directory B2C
@@ -41,7 +41,7 @@ ms.locfileid: "102033782"
 
 После установки политики истечения срока действия паролей необходимо также настроить принудительное выполнение сброса пароля, как описано в этой статье.  
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [active-directory-b2c-customization-prerequisites](../../includes/active-directory-b2c-customization-prerequisites.md)]
 
@@ -80,7 +80,7 @@ ms.locfileid: "102033782"
 ::: zone pivot="b2c-custom-policy"
 
 1. Получите пример принудительного сброса пароля на [GitHub](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset).
-1. В каждом файле замените строку `yourtenant` именем клиента Azure AD B2C. Например, если имя клиента B2C — *contosob2c*, все экземпляры `yourtenant.onmicrosoft.com` станут `contosob2c.onmicrosoft.com` .
+1. Замените строку `yourtenant` именем вашего клиента Azure AD B2C в каждом файле. Например, если имя вашего клиента B2C — *contosob2c*, все экземпляры `yourtenant.onmicrosoft.com` должны иметь вид `contosob2c.onmicrosoft.com`.
 1. Отправьте файлы политики в следующем порядке: политику расширения `TrustFrameworkExtensionsCustomForcePasswordReset.xml` , а затем политику проверяющей стороны `SignUpOrSigninCustomForcePasswordReset.xml` .
 
 ### <a name="test-the-policy"></a>Проверка политики

@@ -13,10 +13,10 @@ ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
 ms.openlocfilehash: c060a029b1cdbdd890ced96cab732966cb652de0
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102500586"
 ---
 # <a name="userinfo-endpoint"></a>Конечная точка UserInfo
@@ -33,7 +33,7 @@ ms.locfileid: "102500586"
 
 ::: zone pivot="b2c-custom-policy"
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [active-directory-b2c-customization-prerequisites-custom-policy](../../includes/active-directory-b2c-customization-prerequisites-custom-policy.md)]
 
@@ -267,7 +267,7 @@ Authorization: Bearer <your access token>
 }
 ```
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Пример политики для конечных точек UserInfo можно найти на сайте [GitHub](https://github.com/azure-ad-b2c/samples/tree/master/policies/user-info-endpoint).
 

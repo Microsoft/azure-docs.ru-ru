@@ -4,10 +4,10 @@ description: В этой статье описывается, как подкл�
 ms.topic: article
 ms.date: 09/11/2020
 ms.openlocfilehash: 99b944ad85e311cd66b0a1cec4e585de37f83500
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98786407"
 ---
 # <a name="attach-or-detach-a-shared-image-gallery-in-azure-lab-services"></a>Подключение и отключение общей коллекции образов в Службах лабораторий Azure

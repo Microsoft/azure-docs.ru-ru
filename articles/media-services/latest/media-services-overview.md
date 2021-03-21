@@ -78,7 +78,7 @@ ms.service: media-services ms.devlang: multiple ms.topic: overview ms.tgt_pltfrm
 * [Создание учетной записи служб мультимедиа Azure](./create-account-howto.md)
 * [Доступ к API Служб мультимедиа Azure с помощью Azure CLI](./access-api-howto.md)
 * [Создание входных данных задания из URL-адреса HTTPS](job-input-from-http-how-to.md)  
-* [Monitor events - Portal](monitor-events-portal-how-to.md) (Создание и мониторинг событий Служб мультимедиа Azure с помощью Сетки событий и портала Azure)
+* [Monitor events - Portal](monitoring/monitor-events-portal-how-to.md) (Создание и мониторинг событий Служб мультимедиа Azure с помощью Сетки событий и портала Azure)
 * [Encrypt dynamically with multi-DRM - .NET](protect-with-drm.md) (Динамическое шифрование с помощью DRM и службы доставки лицензий) 
 * [How to encode with a custom transform - CLI](custom-preset-cli-howto.md) (Кодирование с помощью пользовательского преобразования с помощью CLI)
 

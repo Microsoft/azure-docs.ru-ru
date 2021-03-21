@@ -8,10 +8,10 @@ ms.date: 7/28/2020
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: 461d7a82854ce62ee99eef1227c13c7a8f0371e2
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100594874"
 ---
 # <a name="troubleshooting-azure-digital-twins-alerts"></a>Устранение неполадок в Azure Digital двойников: оповещения
@@ -56,7 +56,7 @@ Azure Digital двойников собирает [метрики](troubleshoot-
  
 :::image type="content" source="media/troubleshoot-alerts/alerts-post.png" alt-text="Снимок экрана, показывающий страницу предупреждений и добавляемую кнопку. Настроено одно оповещение" lightbox="media/troubleshoot-alerts/alerts-post.png":::
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о предупреждениях с Azure Monitor см. [*в разделе Обзор оповещений в Microsoft Azure*](../azure-monitor/alerts/alerts-overview.md).
 * Сведения о метриках цифровых двойников Azure см. в разделе [*Устранение неполадок: Просмотр метрик с помощью Azure Monitor*](troubleshoot-metrics.md).

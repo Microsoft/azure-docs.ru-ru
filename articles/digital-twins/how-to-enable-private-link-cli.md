@@ -8,10 +8,10 @@ ms.date: 02/09/2021
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: 5bd7ffda508980a9a56d86037887fc53a0fed640
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102202949"
 ---
 # <a name="enable-private-access-with-private-link-preview-azure-cli"></a>Включить частный доступ с помощью частной ссылки (Предварительная версия): Azure CLI
@@ -113,7 +113,7 @@ armclient login 
 armclient PATCH /subscriptions/<your-Azure-subscription-ID>/resourceGroups/<your-resource-group>/providers/Microsoft.DigitalTwins/digitalTwinsInstances/<your-Azure-Digital-Twins-instance>?api-version=2020-12-01 "{ 'properties': { 'publicNetworkAccess': 'enabled' } }"  
 ``` 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о закрытой ссылке для Azure: 
 * [*Что такое служба частной связи Azure?*](../private-link/private-link-service-overview.md)

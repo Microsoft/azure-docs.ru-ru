@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: rateller
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8e9052502eba71f025bb6724278b7001173c5217
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103491623"
 ---
 # <a name="configure-and-enable-users-for-sms-based-authentication-using-azure-active-directory"></a>Настройка и включение пользователей для проверки подлинности на основе SMS с помощью Azure Active Directory 

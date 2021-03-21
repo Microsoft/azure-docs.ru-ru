@@ -6,13 +6,14 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
 author: vamahtan
 ms.author: vamahtan
+ms.reviewer: stmummer
 ms.date: 3/04/2021
-ms.openlocfilehash: 92702f38b6143c5dac2111c57fadeba7d9142992
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.openlocfilehash: 7ffb5a3dfd23a1515c6d21784b82ccdbf0674f0e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102181063"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104593413"
 ---
 # <a name="migration-of-co-sell-solutions-from-ocp-gtm-to-the-commercial-marketplace"></a>Перенос решений для совместной продажи из OCP GTM в коммерческий рынок
 

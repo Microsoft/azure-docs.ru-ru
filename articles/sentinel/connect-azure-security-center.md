@@ -10,17 +10,17 @@ ms.topic: how-to
 ms.date: 09/07/2020
 ms.author: yelevin
 ms.openlocfilehash: bb188aa79015c2123b9d9d8b6baf277dfadf2f9c
-ms.sourcegitcommit: 484f510bbb093e9cfca694b56622b5860ca317f7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98633050"
 ---
 # <a name="connect-azure-defender-alert-data-from-azure-security-center"></a>Подключение данных оповещений защитника Azure из центра безопасности Azure
 
 Используйте соединитель оповещений защитника Azure для приема оповещений защитника Azure из [центра безопасности Azure](../security-center/security-center-introduction.md) и потоковой передачи их в Azure Sentinel. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Пользователь должен иметь роль "читатель безопасности" в подписке на журналы, которые вы выполняете в вашем потоке.
 

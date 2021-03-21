@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 12/13/2019
 ms.openlocfilehash: f3acfe6f8e0a72b402d7a3401675c8aa3c94fc98
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98940597"
 ---
 # <a name="use-azure-toolkit-for-eclipse-to-create-apache-spark-applications-for-an-hdinsight-cluster"></a>Создание приложений Apache Spark для кластера HDInsight с помощью Azure Toolkit for Eclipse
@@ -20,7 +20,7 @@ ms.locfileid: "98940597"
 * Для доступа к ресурсам кластера Azure HDInsight Spark.
 * Для разработки и локального запуска приложений Scala Spark.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Кластер Apache Spark в HDInsight. Инструкции см. в статье [Начало работы. Создание кластера Apache Spark в HDInsight на платформе Linux и выполнение интерактивных запросов с помощью SQL Spark](apache-spark-jupyter-spark-sql.md).
 
@@ -108,7 +108,7 @@ ms.locfileid: "98940597"
 
 1. В рабочей области IDE Eclipse выберите **файл**  >  **создать**  >  **проект...**.
 
-1. В мастере **создания проектов** выберите **hdinsight Project**  >  **Spark в hdinsight (Scala)**. Нажмите кнопку **Далее**.
+1. В мастере **создания проектов** выберите **hdinsight Project**  >  **Spark в hdinsight (Scala)**. Выберите **Далее**.
 
    ![Выбор проекта Spark в HDInsight (Scala)](./media/apache-spark-eclipse-tool-plugin/create-hdi-scala-app-2.png)
 
@@ -125,7 +125,7 @@ ms.locfileid: "98940597"
 
 1. В **обозревателе пакетов** разверните проект, созданный ранее. Щелкните правой кнопкой мыши элемент **src**, выберите **создать**  >  **другой...**.
 
-1. В диалоговом окне **Выбор мастера** выберите **Scala мастера**  >  **Scala объект**. Нажмите кнопку **Далее**.
+1. В диалоговом окне **Выбор мастера** выберите **Scala мастера**  >  **Scala объект**. Выберите **Далее**.
 
    ![Выбор мастера Создание объекта Scala](./media/apache-spark-eclipse-tool-plugin/create-scala-project1.png)
 
@@ -245,7 +245,7 @@ ms.locfileid: "98940597"
 
 1. Запустите Eclipse и создайте новый проект. В диалоговом окне **New Project** (Новый проект) установите параметры, как на снимке экрана ниже, а затем нажмите кнопку **Next** (Далее).
 
-1. В мастере **создания проектов** выберите **hdinsight проект**  >  **Spark в hdinsight локальный запуск пример (Scala)**. Нажмите кнопку **Далее**.
+1. В мастере **создания проектов** выберите **hdinsight проект**  >  **Spark в hdinsight локальный запуск пример (Scala)**. Выберите **Далее**.
 
    ![Создать проект выбор диалогового окна мастера](./media/apache-spark-eclipse-tool-plugin/hdi-spark-app-local-run.png)
 
@@ -324,7 +324,7 @@ ms.locfileid: "98940597"
 
 ![Ошибка получения Eclipse при занятости кластера Yarn](./media/apache-spark-eclipse-tool-plugin/eclipse-interactive-cluster-busy-submit.png "Ошибка получения Eclipse при занятости кластера Yarn")
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Обзор: Spark в Azure HDInsight](apache-spark-overview.md)
 

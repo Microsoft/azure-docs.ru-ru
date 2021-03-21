@@ -7,10 +7,10 @@ author: MS-jgol
 ms.custom: devx-track-java
 ms.author: jgol
 ms.openlocfilehash: cdad5a0ec158f216a63ae7e1e2abc10d2841b3bc
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100593736"
 ---
 # <a name="quickstart-get-started-with-application-insights-in-a-java-web-project"></a>Краткое руководство. Начало работы с Application Insights в веб-проекте Java
@@ -287,7 +287,7 @@ Application Insights может тестировать ваш веб-сайт ч
 ## <a name="questions-problems"></a>У вас появились вопросы? Проблемы?
 [Устранение неполадок Java](java-troubleshoot.md)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Отслеживайте вызовы зависимостей.](java-agent.md)
 * [Отслеживайте счетчики производительности Unix.](java-collectd.md)
 * Добавляйте [мониторинг на веб-страницы](javascript.md), чтобы отслеживать время загрузки страниц, вызовы AJAX и исключения браузера.
