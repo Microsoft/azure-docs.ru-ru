@@ -14,10 +14,10 @@ ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
 ms.openlocfilehash: 0f70c8d501a7d56f4bc29e0f2b065760cad625e5
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97585026"
 ---
 # <a name="disable-email-verification-during-customer-sign-up-in-azure-active-directory-b2c"></a>Отключить проверку электронной почты во время регистрации клиента в Azure Active Directory B2C
@@ -31,7 +31,7 @@ ms.locfileid: "97585026"
 > [!WARNING]
 > Отключение проверки адреса электронной почты в процессе регистрации может привести к получению спама. При отключении проверки электронной почты по умолчанию, предоставляемой Azure AD B2C, рекомендуется реализовать систему проверки замены.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [active-directory-b2c-customization-prerequisites](../../includes/active-directory-b2c-customization-prerequisites.md)]
 ## <a name="disable-email-verification"></a>Отключение проверки по электронной почте
@@ -49,7 +49,7 @@ ms.locfileid: "97585026"
 1. Выберите **страницу регистрации локальной учетной записи**.
 1. В разделе **атрибуты пользователя** выберите **адрес электронной почты**.
 1. В раскрывающемся списке **требуется подтверждение** выберите **нет**.
-1. Нажмите **Сохранить**. Проверка электронной почты теперь отключена для этого потока пользователя.
+1. Щелкните **Сохранить**. Проверка электронной почты теперь отключена для этого потока пользователя.
 
 ::: zone-end
 

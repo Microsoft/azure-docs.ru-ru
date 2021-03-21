@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 10/20/2020
 ms.author: duau
 ms.openlocfilehash: 6fdcedd19c02251035a838d34ba51e786595134b
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102212456"
 ---
 # <a name="frequently-asked-questions-for-azure-front-door"></a>Часто задаваемые вопросы о передней дверце Azure

@@ -15,10 +15,10 @@ ms.reviewer: vincesm
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d1e8a0f1919da125a571429e1efff06589c7e85a
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103466717"
 ---
 # <a name="delegate-app-registration-permissions-in-azure-active-directory"></a>Делегирование разрешений регистрации приложения в Azure Active Directory
@@ -101,7 +101,7 @@ ms.locfileid: "103466717"
 
 Дополнительные сведения об основах пользовательских ролей см. в разделе [Общие сведения о пользовательских ролях](custom-overview.md), а также о том, как [создать пользовательскую роль](custom-create.md) и [назначить роль](custom-assign-powershell.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Подтипы и разрешения регистрации приложений](custom-available-permissions.md)
 - [Разрешения роли администратора в Azure Active Directory](permissions-reference.md)

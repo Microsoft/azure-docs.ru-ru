@@ -8,10 +8,10 @@ ms.date: 06/26/2019
 ms.topic: article
 keywords: Azure, Kinect, RGB, IR, запись, датчик, пакет SDK, доступ, глубина, видео, Камера, иму, движение, датчик, аудио, микрофон, матроска, пакет SDK для датчика, Загрузка, тело, отслеживание, поддержка
 ms.openlocfilehash: 9bb6e0ad8ebbb763389f13e317036eacc5c7d074
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97587100"
 ---
 # <a name="azure-kinect-support-options-and-resources"></a>Варианты и ресурсы поддержки Azure Kinect

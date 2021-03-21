@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/15/2021
 ms.author: lajanuar
 ms.openlocfilehash: b5eb776a7807f48ae6c1a0e3c5879da1f6823830
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103466921"
 ---
 # <a name="back-up-and-recover-your-form-recognizer-models"></a>Резервное копирование и восстановление моделей распознавателя форм
@@ -159,7 +159,7 @@ curl -i -X POST "https://{TARGET_FORM_RECOGNIZER_RESOURCE_ENDPOINT}/formrecogniz
 curl -i GET "https://<SOURCE_FORM_RECOGNIZER_RESOURCE_ENDPOINT>/formrecognizer/v2.0/custom/models/{SOURCE_MODELID}/copyResults/{RESULT_ID}" -H "Content-Type: application/json" -H "Ocp-Apim-Subscription-Key: {SOURCE_FORM_RECOGNIZER_RESOURCE_API_KEY}"
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этом руководство вы узнали, как использовать API копирования для резервного копирования пользовательских моделей в ресурс распознаватель вторичных форм. Далее изучите справочную документацию по API, чтобы узнать, что еще можно сделать с помощью распознавателя форм.
 * [Справочная документация по REST API](https://westus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/AnalyzeWithCustomForm)

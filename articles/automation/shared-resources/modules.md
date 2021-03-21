@@ -6,10 +6,10 @@ ms.subservice: shared-capabilities
 ms.date: 02/01/2021
 ms.topic: conceptual
 ms.openlocfilehash: ae3329401a138bc0566ea93a8fbf2071fd44f02c
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102503425"
 ---
 # <a name="manage-modules-in-azure-automation"></a>Администрирование модулей в службе автоматизации Azure

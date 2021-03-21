@@ -1,18 +1,18 @@
 ---
-title: Устранение неполадок работоспособности гостевых систем VM Insights (Предварительная версия)
+title: Устранение неполадок с VM insights guest health (предварительная версия)
 description: Описание действий по устранению неполадок, которые можно выполнить при возникновении проблем с работоспособностью VM Insights.
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 09/08/2020
 ms.openlocfilehash: d8b37569ebaa8e75be601a1efd65a23a61aeaa75
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102051945"
 ---
-# <a name="troubleshoot-vm-insights-guest-health-preview"></a>Устранение неполадок работоспособности гостевых систем VM Insights (Предварительная версия)
+# <a name="troubleshoot-vm-insights-guest-health-preview"></a>Устранение неполадок с VM insights guest health (предварительная версия)
 В этой статье описаны действия по устранению неполадок, которые можно выполнить при возникновении проблем с работоспособностью VM Insights.
 
 ## <a name="error-message-that-no-data-is-available"></a>Сообщение об ошибке, в котором нет доступных данных 

@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 1/29/2019
 ms.author: terrylan
 ms.openlocfilehash: 27443eb9c04c69567b3a1374f11e8b53837040f2
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100585409"
 ---
 # <a name="security-services-and-technologies-available-on-azure"></a>Службы и технологии безопасности, доступные в Azure
@@ -92,4 +92,4 @@ ms.locfileid: "100585409"
 | [Прокси приложения Azure](../../active-directory/manage-apps/application-proxy.md)| Внешний интерфейс аутентификации, используемый для защиты удаленного доступа к веб-приложениям, размещенным локально. |
 |[Брандмауэр Azure](../../firewall/overview.md)|Управляемая облачная служба сетевой безопасности, которая защищает ресурсы виртуальной сети Azure.|
 |[Защита от атак DDoS Azure](../../ddos-protection/ddos-protection-overview.md)|Эта служба обеспечивает защиту от атак DDoS, если соблюдаются рекомендации по проектированию приложений.|
-|[Конечные точки службы виртуальной сети](../../virtual-network/virtual-network-service-endpoints-overview.md)|Расширяют пространство частных адресов и возможности идентификации вашей виртуальной сети в службах Azure благодаря прямому соединению.|
+|[Конечные точки службы для виртуальной сети](../../virtual-network/virtual-network-service-endpoints-overview.md)|Расширяют пространство частных адресов и возможности идентификации вашей виртуальной сети в службах Azure благодаря прямому соединению.|

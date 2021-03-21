@@ -8,17 +8,17 @@ ms.topic: article
 ms.date: 03/02/2021
 ms.author: caya
 ms.openlocfilehash: e83834fd5f8ca95826118c952f7884a494c7abbb
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102050840"
 ---
 # <a name="migrate-from-agic-helm-to-agic-add-on"></a>Миграция из АГИК Helm в надстройку АГИК 
 
 Если вы уже развернули АГИК через Helm, но хотите перейти на АГИК, развернутую как надстройка AKS, выполните следующие действия, которые помогут выполнить процесс миграции. 
 
-## <a name="prerequisites"></a>Предварительные требования 
+## <a name="prerequisites"></a>Предварительные условия 
 Перед началом процесса миграции необходимо проверить несколько моментов. 
   - Вы используете любые функции с АГИК Helm, которые [в настоящее время не поддерживаются надстройкой агик](ingress-controller-overview.md#difference-between-helm-deployment-and-aks-add-on)?
   - Используете ли вы несколько развертываний АГИК Helm на кластере AKS? 
@@ -46,8 +46,8 @@ az aks enable-addons -n myCluster -g myResourceGroup -a ingress-appgw --appgw-id
 
 Кроме того, можно переходить к кластеру AKS на портале с помощью этой [ссылки](https://portal.azure.com/?feature.aksagic=true) и включить надстройку агик на вкладке "Сетевые подключения" кластера. Выберите имеющийся шлюз приложений из раскрывающегося меню при выборе шлюза приложений, на котором должна быть нацелена надстройка. 
 
-![Портал входящего контроллера для шлюза приложений](./media/tutorial-ingress-controller-add-on-existing/portal-ingress-controller-add-on.png)
+![Портал контроллера объекта ingress Шлюза приложений](./media/tutorial-ingress-controller-add-on-existing/portal-ingress-controller-add-on.png)
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 - [**Устранение неполадок контроллера входящего трафика шлюза приложений**](ingress-controller-troubleshoot.md): руководство по устранению неполадок для агик 
 - [**Заметка контроллера входящих данных шлюза приложений**](ingress-controller-annotations.md): список заметок в агик 

@@ -11,10 +11,10 @@ ms.date: 01/26/2021
 ms.topic: conceptual
 manager: carmonm
 ms.openlocfilehash: 752d7f86941967c218b3a57fa163698b9f502057
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98897026"
 ---
 # <a name="azure-automation-state-configuration-overview"></a>Обзор службы State Configuration службы автоматизации Azure
@@ -53,7 +53,7 @@ State Configuration службы автоматизации Azure — это с
 
 Узлы, управление которыми осуществляется с помощью "Настройка состояния службы автоматизации Azure", отправляют подробные отчеты с данными о состоянии на встроенный опрашивающий сервер. В службе "Настройка состояния службы автоматизации Azure" можно настроить отправку этих данных в рабочую область Log Analytics. См. раздел [Пересылка данных отчетов службы State Configuration службы автоматизации Azure в журналах Azure Monitor](automation-dsc-diagnostics.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 При использовании службы State Configuration службы автоматизации Azure учитывайте требования, описанные в этом разделе.
 

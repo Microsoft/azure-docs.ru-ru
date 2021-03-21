@@ -15,10 +15,10 @@ ms.topic: how-to
 ms.date: 12/14/2020
 ms.author: phjensen
 ms.openlocfilehash: 08edd86fd19e7698a791e411f42a2a89084a91f7
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98737139"
 ---
 # <a name="tips-and-tricks-for-using-azure-application-consistent-snapshot-tool-preview"></a>Советы и рекомендации по использованию средства создания моментальных снимков для приложений Azure (Предварительная версия)
@@ -273,6 +273,6 @@ MAILTO=""
 - **Размер моментального снимка:** Зависит от размера и изменений на уровне базы данных.
 - **Расположение файла журнала:** Файлы журнала, созданные командами, выводятся в папки в соответствии с определением в файле конфигурации JSON, который по умолчанию является вложенной папкой, в которой выполняется команда (например, `./logs` ).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Устранение проблем](azacsnap-troubleshoot.md)

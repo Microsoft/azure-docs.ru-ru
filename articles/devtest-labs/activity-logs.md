@@ -4,10 +4,10 @@ description: В этой статье приведены инструкции п
 ms.topic: how-to
 ms.date: 07/10/2020
 ms.openlocfilehash: 51bdfc6c3857a3e59d75094b4c847c80c58de045
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100582778"
 ---
 # <a name="view-activity-logs-for-labs-in-azure-devtest-labs"></a>Просмотр журналов действий для лабораторий в Azure DevTest Labs 
@@ -43,7 +43,7 @@ ms.locfileid: "100582778"
 
 Дополнительные сведения о журналах действий см. в статье [Журнал действий Azure](../azure-monitor/essentials/activity-log.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о настройке **оповещений** в журналах действий см. в разделе [Создание предупреждений](create-alerts.md).
 - Дополнительные сведения о журналах действий см. в статье  [Журнал действий Azure](../azure-monitor/essentials/activity-log.md).

@@ -6,10 +6,10 @@ ms.subservice: dsc
 ms.date: 04/06/2020
 ms.topic: conceptual
 ms.openlocfilehash: b45aad71e04418c7c7dda4fc3f0c84a5fe99ecdf
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98896348"
 ---
 # <a name="compile-dsc-configurations-in-azure-automation-state-configuration"></a>Компилирование конфигураций DSC в службе настройки состояния службы автоматизации Azure
@@ -276,8 +276,8 @@ Import-AzAutomationDscNodeConfiguration -AutomationAccountName 'MyAutomationAcco
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Чтобы приступить к работе со службой настройки состояния службы автоматизации Azure, см. сведения в [этой статье](automation-dsc-getting-started.md).
-- Сведения о компилировании конфигураций DSC, которые затем можно назначить целевым узлам, см. в статье [Компилирование конфигураций DSC в службе настройки состояния службы автоматизации Azure](automation-dsc-compile.md).
+- Чтобы приступить к работе со службой State Configuration службы автоматизации Azure, см. сведения в [этой статье](automation-dsc-getting-started.md).
+- Сведения о компилировании конфигураций DSC, которые затем можно назначить целевым узлам, см. в статье [Компилирование конфигураций DSC в службе State Configuration службы автоматизации Azure](automation-dsc-compile.md).
 - Справочник по командлетам PowerShell см. в документации по [Az.Automation](/powershell/module/az.automation).
 - Сведения о ценах см. на странице [с расценками для службы настройки состояния службы автоматизации Azure](https://azure.microsoft.com/pricing/details/automation/).
 - Пример использования службы настройки состояния в конвейере непрерывного развертывания см. в разделе [Настройка непрерывного развертывания с помощью Chocolatey](automation-dsc-cd-chocolatey.md).

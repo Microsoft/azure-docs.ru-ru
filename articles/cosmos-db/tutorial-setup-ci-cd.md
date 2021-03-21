@@ -9,10 +9,10 @@ ms.author: dech
 ms.reviewer: sngun
 ms.custom: devx-track-csharp
 ms.openlocfilehash: c7246511a88e2d2756a8ef56c5adf51ddbfd3e58
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102560537"
 ---
 # <a name="set-up-a-cicd-pipeline-with-the-azure-cosmos-db-emulator-build-task-in-azure-devops"></a>Настройка конвейера CI/CD с помощью задачи сборки Azure Cosmos DB Emulator в Azure DevOps

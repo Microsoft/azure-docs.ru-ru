@@ -6,10 +6,10 @@ ms.topic: include
 ms.date: 08/17/2019
 ms.author: lajanuar
 ms.openlocfilehash: 5e856b7cf6404a30bf983c4014bd6aa55c4a9cbc
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103467000"
 ---
 * Поддерживаемые форматы файлов: JPEG, PNG, PDF и TIFF 

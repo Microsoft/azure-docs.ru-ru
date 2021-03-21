@@ -9,10 +9,10 @@ ms.date: 04/21/2020
 ms.author: kumud
 ms.custom: include file
 ms.openlocfilehash: defcce3a00a38c88e1bff944075f0987fbdedd4b
-ms.sourcegitcommit: f5b8410738bee1381407786fcb9d3d3ab838d813
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98225663"
 ---
  К приватному каналу Azure применяются следующие ограничения:

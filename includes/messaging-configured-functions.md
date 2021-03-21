@@ -9,10 +9,10 @@ ms.date: 12/12/2020
 ms.author: spelluru
 ms.custom: include file
 ms.openlocfilehash: 9bc641d680d927c44814f6814ebf6a6dde958c9e
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98901163"
 ---
 Функции Azure позволяют создавать задачи репликации, предназначенные только для конфигурации и направленные на предварительно созданную точку входа. [Примеры репликации на основе конфигурации для службы "функции Azure](https://github.com/Azure-Samples/azure-messaging-replication-dotnet/tree/main/functions/config) " иллюстрируют использование [готовых вспомогательных](https://github.com/Azure-Samples/azure-messaging-replication-dotnet/tree/main/src/Azure.Messaging.Replication) функций в коде или старайтесь не обрабатывать код и просто использовать конфигурацию.
@@ -212,9 +212,9 @@ ms.locfileid: "98901163"
 | Источник      | Назначение      | Точка входа 
 |-------------|-------------|------------------------------------------------------------------------
 | Концентратор событий   | Концентратор событий   | `Azure.Messaging.Replication.EventHubReplicationTasks.ForwardToEventHub`
-| Концентратор событий   | Служебная шина | `Azure.Messaging.Replication.EventHubReplicationTasks.ForwardToServiceBus`
-| Служебная шина | Концентратор событий   | `Azure.Messaging.Replication.ServiceBusReplicationTasks.ForwardToEventHub`
-| Служебная шина | Служебная шина | `Azure.Messaging.Replication.ServiceBusReplicationTasks.ForwardToServiceBus`
+| Концентратор событий   | Cлужебная шина | `Azure.Messaging.Replication.EventHubReplicationTasks.ForwardToServiceBus`
+| Cлужебная шина | Концентратор событий   | `Azure.Messaging.Replication.ServiceBusReplicationTasks.ForwardToEventHub`
+| Cлужебная шина | Cлужебная шина | `Azure.Messaging.Replication.ServiceBusReplicationTasks.ForwardToServiceBus`
 
 ### <a name="retry-policy"></a>Политика повтора
 

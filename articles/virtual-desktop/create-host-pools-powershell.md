@@ -7,10 +7,10 @@ ms.date: 10/02/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 9ec900f0537030d3ed0d1c875e8125806159bd51
-ms.sourcegitcommit: 25d1d5eb0329c14367621924e1da19af0a99acf1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98251460"
 ---
 # <a name="create-a-windows-virtual-desktop-host-pool-with-powershell"></a>Создание пула узлов виртуальных рабочих столов Windows с помощью PowerShell

@@ -9,10 +9,10 @@ ms.author: magoedte
 ms.collection: linux
 ms.date: 06/12/2018
 ms.openlocfilehash: 3a9478f93a2a6f8e31be39a58a18e0e394b9d5c2
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102560112"
 ---
 # <a name="dsc-extension-for-linux-microsoftostcextensionsdscforlinux"></a>Расширение DSC для Linux (Microsoft. OSTCExtensions. Дскфорлинукс)
@@ -293,7 +293,7 @@ $publicConfig = '{
 
 Перед развертыванием расширения Дскфорлинукс настройте `public.json` и в соответствии с `protected.json` различными сценариями в разделе 3.
 
-#### <a name="classic"></a>Классическая
+#### <a name="classic"></a>Классический
 
 [!INCLUDE [classic-vm-deprecation](../../../includes/classic-vm-deprecation.md)]
 
@@ -338,7 +338,7 @@ DSCForLinux Microsoft.OSTCExtensions <version> \
 
 ### <a name="use-azure-powershellazure-powershell"></a>Использование [Azure PowerShell] [Azure-PowerShell]
 
-#### <a name="classic"></a>Классическая
+#### <a name="classic"></a>Классический
 
 Вы можете войти в учетную запись Azure в режиме управления службами Azure, выполнив команду:
 

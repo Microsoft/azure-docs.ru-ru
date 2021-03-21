@@ -11,10 +11,10 @@ ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
 ms.openlocfilehash: 6586375d7db71274f40eb62aeb24f9daad0d7c2e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101688303"
 ---
 # <a name="use-postgresql-extensions-in-your-azure-arc-enabled-postgresql-hyperscale-server-group"></a>Использование расширений PostgreSQL в службе "Дуга Azure", в которой включена PostgreSQLная группа серверов
@@ -44,7 +44,7 @@ PostgreSQL лучше использовать с расширениями. На
 
 ## <a name="which-extensions-need-to-be-added-to-the-shared_preload_libraries-and-created"></a>Какие расширения необходимо добавить в shared_preload_libraries и создать?
 
-|Модули   |Необходимо добавить в shared_preload_libraries  |Необходимо создать |
+|Расширения   |Необходимо добавить в shared_preload_libraries  |Необходимо создать |
 |-------------|--------------------------------------------------|---------------------- |
 |`pg_cron`      |Нет       |Да        |
 |`pg_audit`     |Да       |Да        |
@@ -76,7 +76,7 @@ azdata arc postgres server edit -n <name of your postgresql server group> --exte
 ```console
 azdata arc postgres server show -n <server group name>
 ```
-Прокрутите выходные данные и обратите внимание на разделы енгине\екстенсионс в спецификациях вашей группы серверов. Пример.
+Прокрутите выходные данные и обратите внимание на разделы енгине\екстенсионс в спецификациях вашей группы серверов. Пример:
 ```console
 "engine": {
       "extensions": [
@@ -93,7 +93,7 @@ azdata arc postgres server show -n <server group name>
 ```console
 kubectl describe postgresql-12s/postgres02
 ```
-Прокрутите выходные данные и обратите внимание на разделы енгине\екстенсионс в спецификациях вашей группы серверов. Пример.
+Прокрутите выходные данные и обратите внимание на разделы енгине\екстенсионс в спецификациях вашей группы серверов. Пример:
 ```console
 Engine:
     Extensions:

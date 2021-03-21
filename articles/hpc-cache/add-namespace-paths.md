@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 03/11/2021
 ms.author: v-erkel
 ms.openlocfilehash: f45d5710f6feb8af2347ca298e07e8a4870d3d4f
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103470474"
 ---
 # <a name="set-up-the-aggregated-namespace"></a>Настройка агрегированного пространства имен
@@ -157,7 +157,7 @@ ms.locfileid: "103470474"
 
 * **Удалить путь к пространству имен:** Установите флажок слева от пути и нажмите кнопку **Удалить** .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 После создания Объединенного пространства имен для целевых объектов хранилища можно подключить клиенты к кэшу. Дополнительные сведения см. в этих статьях.
 

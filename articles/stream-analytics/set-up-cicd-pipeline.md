@@ -8,10 +8,10 @@ ms.service: stream-analytics
 ms.topic: how-to
 ms.date: 09/10/2020
 ms.openlocfilehash: f62b4c354ffa90bf1a03651fccf8780074344e46
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103466428"
 ---
 # <a name="use-azure-devops-to-create-a-cicd-pipeline-for-a-stream-analytics-job"></a>Создание конвейера CI/CD для Stream Analytics задания с помощью Azure DevOps
@@ -80,7 +80,7 @@ ms.locfileid: "103466428"
    |-|-|
    |прожектрутпас|Yourprojectname собственным значением|
    |outputPath|Выходные данные|
-   |деплойпас|Развертывание|
+   |деплойпас|Развернуть|
 
 2. На странице **задачи** щелкните знак «плюс» рядом с **заданием агента 1**. Найдите **командную строку**.
 
@@ -100,7 +100,7 @@ ms.locfileid: "103466428"
 
    |Имя переменной|Значение|
    |-|-|
-   |тестпас|Тест|
+   |тестпас|Проверить|
 
    :::image type="content" source="media/set-up-cicd-pipeline/pipeline-variables-test.png" alt-text="Добавить переменные конвейера":::
 
@@ -213,7 +213,7 @@ ms.locfileid: "103466428"
 
 :::image type="content" source="media/set-up-cicd-pipeline/create-release.png" alt-text="Создание выпуска с помощью Azure Pipelines":::
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Непрерывная интеграция и непрерывное развертывание для Azure Stream Analytics](cicd-overview.md)
 * [Автоматизация сборки, тестирования и развертывания задания Azure Stream Analytics с помощью средств CI/CD](cicd-tools.md)

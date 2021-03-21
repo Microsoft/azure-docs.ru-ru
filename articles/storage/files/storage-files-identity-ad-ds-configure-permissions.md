@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 09/16/2020
 ms.author: rogarana
 ms.openlocfilehash: 698b4ebedfc9b41e8c5732a0a81226a971d65585
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103470759"
 ---
 # <a name="part-three-configure-directory-and-file-level-permissions-over-smb"></a>Часть 3. Настройка разрешений на уровне каталога и файлов по протоколу SMB 

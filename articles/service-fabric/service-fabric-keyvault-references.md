@@ -4,10 +4,10 @@ description: В этой статье объясняется, как испол�
 ms.topic: article
 ms.date: 09/20/2019
 ms.openlocfilehash: a0e4ef0decae8cc9ab4dc5f8c69dfef854af81f3
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98898602"
 ---
 # <a name="keyvaultreference-support-for-azure-deployed-service-fabric-applications"></a>Поддержка Кэйваултреференце приложений, развернутых в Azure Service Fabric
@@ -20,7 +20,7 @@ ms.locfileid: "98898602"
 > [!NOTE]
 > Поддержка Кэйваултреференце для приложений Service Fabric поддерживает только секреты с [версиями](../key-vault/general/about-keys-secrets-certificates.md#objects-identifiers-and-versioning) . Секреты без поддержки версий не поддерживаются. Key Vault должны находиться в той же подписке, что и кластер Service Fabric. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Управляемое удостоверение для приложений Service Fabric
 

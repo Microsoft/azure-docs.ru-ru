@@ -11,10 +11,10 @@ ms.topic: reference
 ms.date: 01/21/2020
 ms.author: lajanuar
 ms.openlocfilehash: 88a76a16de43853a001f5db895d6ad418940de0f
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98895498"
 ---
 # <a name="translator-30-dictionary-lookup"></a>Переводчик 3,0: Поиск по словарю
@@ -49,7 +49,7 @@ https://api.cognitive.microsofttranslator.com/dictionary/lookup?api-version=3.0
 | Content-Length   | **Обязательный заголовок запроса**.<br/>Длина текста запроса. |
 | X-ClientTraceId   | **Необязательно**.<br/>Созданный клиентом идентификатор GUID, позволяющий уникально идентифицировать запрос. Этот заголовок можно опустить, если в строке запроса указан идентификатор трассировки в параметре с именем `ClientTraceId`. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Текст запроса является массивом в формате JSON. Каждый элемент этого массива представляет собой объект JSON со строковым свойством `Text`, который соответствует термину для поиска.
 

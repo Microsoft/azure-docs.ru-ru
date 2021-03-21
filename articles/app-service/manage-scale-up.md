@@ -6,10 +6,10 @@ ms.topic: article
 ms.date: 08/19/2019
 ms.custom: seodec18
 ms.openlocfilehash: eb0ce5cfadbab247299cd3c22bf6ee618bf19731
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100582479"
 ---
 # <a name="scale-up-an-app-in-azure-app-service"></a>Вертикальное увеличение масштаба приложения в Службе приложений Azure

@@ -4,10 +4,10 @@ description: Эта статья рассказывает, как с помощ�
 ms.topic: conceptual
 ms.date: 01/31/2019
 ms.openlocfilehash: 12dfd15c2bd43816dd361fdf45995bcbcd6fba56
-ms.sourcegitcommit: 04297f0706b200af15d6d97bc6fc47788785950f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98987011"
 ---
 # <a name="install-azure-backup-server-on-azure-stack"></a>Установка Azure Backup Server в Azure Stack

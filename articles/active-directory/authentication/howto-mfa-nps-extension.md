@@ -13,10 +13,10 @@ ms.reviewer: michmcla
 ms.collection: M365-identity-device-management
 ms.custom: has-adal-ref
 ms.openlocfilehash: 484dd8313710332660bb20d55f3dac2aa21bbc61
-ms.sourcegitcommit: c7153bb48ce003a158e83a1174e1ee7e4b1a5461
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98232528"
 ---
 # <a name="integrate-your-existing-network-policy-server-nps-infrastructure-with-azure-ad-multi-factor-authentication"></a>Интеграция существующей инфраструктуры сервера сетевых политик (NPS) с многофакторной идентификацией Azure AD
@@ -257,7 +257,7 @@ Windows Server 2012 или более поздней версии.
 > Эти параметры реестра следует настраивать только в том случае, если вы являетесь клиентом Azure для государственных организаций или Azure для Китая.
 
 1. Если вы являетесь клиентом Azure для государственных организаций или Azure для Китая (21Vianet), откройте **редактор реестра** на сервере NPS.
-1. Перейдите на страницу `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AzureMfa`.
+1. Перейдите к `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AzureMfa`.
 1. Для клиентов Azure для государственных организаций задайте следующие значения ключей:
 
     | Раздел реестра       | Значение |

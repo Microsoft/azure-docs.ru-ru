@@ -10,10 +10,10 @@ ms.service: storage
 ms.subservice: queues
 ms.custom: devx-track-csharp
 ms.openlocfilehash: d54b8f15c90aa8f6ffcc04453fee0349e501f47d
-ms.sourcegitcommit: d2d1c90ec5218b93abb80b8f3ed49dcf4327f7f4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97585757"
 ---
 # <a name="get-started-with-azure-queue-storage-using-net"></a>Приступая к работе с хранилищем очередей Azure с помощью .NET
@@ -30,7 +30,7 @@ ms.locfileid: "97585757"
 
 **Предполагаемое время выполнения:** 45 минут.
 
-### <a name="prerequisites"></a>Обязательные условия
+### <a name="prerequisites"></a>Предварительные условия
 
 - [Microsoft Visual Studio](https://www.visualstudio.com/downloads/)
 - [Учетная запись хранения Azure](../common/storage-account-create.md?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) ;
@@ -49,7 +49,7 @@ ms.locfileid: "97585757"
 
 1. Выберите **файл**  >  **создать**  >  **проект**
 2. Выбор **платформ**  >  **Windows**
-3. Выбор **консольного приложения (.NET Framework)**
+3. Выбор **консольного приложения (платформа .NET Framework)**
 4. Щелкните **Далее**.
 5. В поле **имя проекта** введите имя приложения.
 6. Выберите **Создать**.
@@ -60,7 +60,7 @@ ms.locfileid: "97585757"
 
 ### <a name="use-nuget-to-install-the-required-packages"></a>Установка необходимых пакетов с помощью NuGet
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Чтобы завершить работу с этим руководством, необходимо сослаться на следующие четыре пакета в проекте:
 
@@ -76,7 +76,7 @@ ms.locfileid: "97585757"
 1. Выполните поиск в Интернете `Azure.Storage.Queues` и выберите **установить** , чтобы установить клиентскую библиотеку службы хранилища Azure и ее зависимости. Кроме того, будут установлены библиотеки Azure. Storage. Common и Azure. Core, которые являются зависимостями библиотеки очередей.
 1. Выполните поиск в Интернете `System.Configuration.ConfigurationManager` и выберите **установить** , чтобы установить Configuration Manager.
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 Чтобы завершить работу с этим руководством, необходимо сослаться на следующие три пакета в проекте:
 
@@ -152,11 +152,11 @@ ms.locfileid: "97585757"
 
 Добавьте в верхнюю часть файла `Program.cs` следующие директивы `using`:
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 :::code language="csharp" source="~/azure-storage-snippets/queues/howto/dotnet/dotnet-v12/QueueBasics.cs" id="snippet_UsingStatements":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 ```csharp
 using System; // Namespace for Console output
@@ -169,13 +169,13 @@ using Microsoft.Azure.Storage.Queue; // Namespace for Queue storage types
 
 ### <a name="create-the-queue-storage-client"></a>Создание клиента хранилища очередей
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 [`QueueClient`](/dotnet/api/azure.storage.queues.queueclient)Класс позволяет получать очереди, хранящиеся в хранилище очередей. Вот один из способов создать клиента службы.
 
 :::code language="csharp" source="~/azure-storage-snippets/queues/howto/dotnet/dotnet-v12/QueueBasics.cs" id="snippet_CreateClient":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 [`CloudQueueClient`](/dotnet/api/microsoft.azure.storage.queue.cloudqueueclient?view=azure-dotnet-legacy&preserve-view=true)Класс позволяет получать очереди, хранящиеся в хранилище очередей. Вот один из способов создать клиента службы.
 
@@ -196,11 +196,11 @@ CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
 
 В этом примере показано, как создать очередь:
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 :::code language="csharp" source="~/azure-storage-snippets/queues/howto/dotnet/dotnet-v12/QueueBasics.cs" id="snippet_CreateQueue":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 ```csharp
 // Retrieve storage account from connection string
@@ -221,13 +221,13 @@ queue.CreateIfNotExists();
 
 ## <a name="insert-a-message-into-a-queue"></a>Вставка сообщения в очередь
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Чтобы вставить сообщение в существующую очередь, вызовите [`SendMessage`](/dotnet/api/azure.storage.queues.queueclient.sendmessage) метод. Сообщение может быть либо строкой (в формате UTF-8), либо массивом байтов. Следующий код создает очередь (если она не существует) и вставляет сообщение:
 
 :::code language="csharp" source="~/azure-storage-snippets/queues/howto/dotnet/dotnet-v12/QueueBasics.cs" id="snippet_InsertMessage":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 Чтобы вставить сообщение в существующую очередь, сначала создайте новый объект [`CloudQueueMessage`](/dotnet/api/microsoft.azure.storage.queue.cloudqueuemessage?view=azure-dotnet-legacy&preserve-view=true) . Затем вызовите [`AddMessage`](/dotnet/api/microsoft.azure.storage.queue.cloudqueue.addmessage?view=azure-dotnet-legacy&preserve-view=true) метод. `CloudQueueMessage`Можно создать либо из строки (в формате UTF-8), либо в массиве байтов. Ниже приведен код, который создает очередь (если она не существует) и вставляет сообщение `Hello, World` : чтобы вставить сообщение в существующую очередь, сначала создайте новый объект [`CloudQueueMessage`](/dotnet/api/microsoft.azure.storage.queue.cloudqueuemessage?view=azure-dotnet-legacy&preserve-view=true) . Затем вызовите [`AddMessage`](/dotnet/api/microsoft.azure.storage.queue.cloudqueue.addmessage?view=azure-dotnet-legacy&preserve-view=true) метод. `CloudQueueMessage`Можно создать либо из строки (в формате UTF-8), либо в массиве байтов. Ниже приведен код, который создает очередь (если она не существует) и вставляет сообщение `Hello, World` :
 
@@ -254,13 +254,13 @@ queue.AddMessage(message);
 
 ## <a name="peek-at-the-next-message"></a>Просмотр следующего сообщения
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Вы можете просматривать сообщения в очереди, не удаляя их из очереди, вызывая [`PeekMessages`](/dotnet/api/azure.storage.queues.queueclient.peekmessages) метод. Если значение для параметра не передается `maxMessages` , по умолчанию используется просмотр одного сообщения.
 
 :::code language="csharp" source="~/azure-storage-snippets/queues/howto/dotnet/dotnet-v12/QueueBasics.cs" id="snippet_PeekMessage":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 Можно просмотреть сообщение в начале очереди, не удаляя его из очереди, вызвав [`PeekMessage`](/dotnet/api/microsoft.azure.storage.queue.cloudqueue.peekmessage?view=azure-dotnet-legacy&preserve-view=true) метод.
 
@@ -288,11 +288,11 @@ Console.WriteLine(peekedMessage.AsString);
 
 Вы можете изменить содержимое сообщения непосредственно в очереди. Если сообщение представляет собой рабочую задачу, можно использовать эту функцию для обновления состояния рабочей задачи. Следующий код добавляет новое содержимое в очередь сообщений и продлевает время ожидания видимости еще на 60 секунд. Это сохраняет состояние работы, связанной с данным сообщением, и позволяет клиенту продолжить работу с сообщением на протяжении еще одной минуты. Эту методику можно использовать для контроля многошаговых рабочих процессов в сообщениях очереди без необходимости запуска с начала, если шаг обработки завершается сбоем из-за сбоя оборудования или программного обеспечения. Обычно также сохраняется счетчик повторов. Если количество повторов сообщения превысит *n* раз, его нужно удалить. Это обеспечивает защиту от сообщений, которые инициируют ошибку приложения при каждой попытке обработки.
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 :::code language="csharp" source="~/azure-storage-snippets/queues/howto/dotnet/dotnet-v12/QueueBasics.cs" id="snippet_UpdateMessage":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 ```csharp
 // Retrieve storage account from connection string.
@@ -317,13 +317,13 @@ queue.UpdateMessage(message,
 
 ## <a name="dequeue-the-next-message"></a>Удаление следующего сообщения из очереди
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Вывод сообщения из очереди в два этапа. При вызове [`ReceiveMessages`](/dotnet/api/azure.storage.queues.queueclient.receivemessages) вы получаете следующее сообщение в очереди. Сообщение, возвращаемое методом `ReceiveMessages`, становится невидимым для другого кода, считывающего сообщения из этой очереди. По умолчанию это сообщение остается невидимым в течение 30 секунд. Чтобы завершить удаление сообщения из очереди, необходимо также вызвать метод [`DeleteMessage`](/dotnet/api/azure.storage.queues.queueclient.deletemessage) . Этот двухэтапный процесс удаления сообщения позволяет удостовериться, что если коду не удастся обработать сообщение из-за сбоя оборудования или программного обеспечения, другой экземпляр кода сможет получить то же сообщение и повторить попытку. Код вызывается `DeleteMessage` сразу после обработки сообщения.
 
 :::code language="csharp" source="~/azure-storage-snippets/queues/howto/dotnet/dotnet-v12/QueueBasics.cs" id="snippet_DequeueMessage":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 Код удаляет сообщение из очереди в два этапа. При вызове [`GetMessage`](/dotnet/api/microsoft.azure.storage.queue.cloudqueue.getmessage?view=azure-dotnet-legacy&preserve-view=true) вы получаете следующее сообщение в очереди. Сообщение, возвращаемое методом `GetMessage`, становится невидимым для другого кода, считывающего сообщения из этой очереди. По умолчанию это сообщение остается невидимым в течение 30 секунд. Чтобы завершить удаление сообщения из очереди, необходимо также вызвать метод [`DeleteMessage`](/dotnet/api/microsoft.azure.storage.queue.cloudqueue.deletemessage?view=azure-dotnet-legacy&preserve-view=true) . Этот двухэтапный процесс удаления сообщения позволяет удостовериться, что если коду не удастся обработать сообщение из-за сбоя оборудования или программного обеспечения, другой экземпляр кода сможет получить то же сообщение и повторить попытку. Код вызывается `DeleteMessage` сразу после обработки сообщения.
 
@@ -353,11 +353,11 @@ queue.DeleteMessage(retrievedMessage);
 
 В этом примере показано, как использовать шаблон Async-Await с общими интерфейсами API хранилища очередей. В примере вызывается асинхронная версия каждого из указанных методов, как указано `Async` суффиксом каждого метода. При использовании асинхронного метода шаблон Async-Await приостанавливает локальное выполнение до завершения вызова. Благодаря этому текущий поток может выполнять другие задачи, что позволяет избежать возникновения узких мест и повысить общую скорость реагирования приложения. Дополнительные сведения об использовании алгоритма Async-Await в .NET см. в статье [Асинхронное программирование с использованием ключевых слов Async и Await (C# и Visual Basic)](/previous-versions/hh191443(v=vs.140)).
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 :::code language="csharp" source="~/azure-storage-snippets/queues/howto/dotnet/dotnet-v12/QueueBasics.cs" id="snippet_AsyncQueue":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 ```csharp
 // Create the queue if it doesn't already exist
@@ -392,13 +392,13 @@ Console.WriteLine("Deleted message");
 
 Способ извлечения сообщения из очереди можно настроить двумя способами. Во-первых, можно получить пакет сообщений (до 32 сообщений). Во-вторых, можно задать более длительное или короткое время ожидания видимости, чтобы предоставить коду больше или меньше времени на полную обработку каждого сообщения.
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 В следующем примере кода метод используется [`ReceiveMessages`](/dotnet/api/azure.storage.queues.queueclient.receivemessages) для получения 20 сообщений в одном вызове. Затем он обрабатывает каждое сообщение с помощью цикла `foreach`. Он также задает время ожидания невидимости 5 минут для каждого сообщения. Обратите внимание, что пять минут начинается для всех сообщений в одно и то же время, поэтому по истечении пяти минут после вызова функции `ReceiveMessages` все сообщения, которые не были удалены, снова станут видимыми.
 
 :::code language="csharp" source="~/azure-storage-snippets/queues/howto/dotnet/dotnet-v12/QueueBasics.cs" id="snippet_DequeueMessages":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 В следующем примере кода метод используется [`GetMessages`](/dotnet/api/microsoft.azure.storage.queue.cloudqueue.getmessages?view=azure-dotnet-legacy&preserve-view=true) для получения 20 сообщений в одном вызове. Затем он обрабатывает каждое сообщение с помощью цикла `foreach`. Он также задает время ожидания невидимости 5 минут для каждого сообщения. Обратите внимание, что пять минут начинается для всех сообщений в одно и то же время, поэтому по истечении пяти минут после вызова функции `GetMessages` все сообщения, которые не были удалены, снова станут видимыми.
 
@@ -424,13 +424,13 @@ foreach (CloudQueueMessage message in queue.GetMessages(20, TimeSpan.FromMinutes
 
 ## <a name="get-the-queue-length"></a>Получение длины очереди
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Вы можете узнать приблизительное количество сообщений в очереди. [`GetProperties`](/dotnet/api/azure.storage.queues.queueclient.getproperties)Метод возвращает свойства очереди, включая число сообщений. [`ApproximateMessagesCount`](/dotnet/api/azure.storage.queues.models.queueproperties.approximatemessagescount)Свойство содержит приблизительное количество сообщений в очереди. Это число не меньше фактического числа сообщений в очереди, но может быть больше.
 
 :::code language="csharp" source="~/azure-storage-snippets/queues/howto/dotnet/dotnet-v12/QueueBasics.cs" id="snippet_GetQueueLength":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 Вы можете узнать приблизительное количество сообщений в очереди. [`FetchAttributes`](/dotnet/api/microsoft.azure.storage.queue.cloudqueue.fetchattributes?view=azure-dotnet-legacy&preserve-view=true)Метод возвращает атрибуты очереди, включая число сообщений. [`ApproximateMessageCount`](/dotnet/api/microsoft.azure.storage.queue.cloudqueue.approximatemessagecount?view=azure-dotnet-legacy&preserve-view=true)Свойство возвращает последнее значение, полученное `FetchAttributes` методом, без вызова хранилища очередей.
 
@@ -459,13 +459,13 @@ Console.WriteLine("Number of messages in queue: " + cachedMessageCount);
 
 ## <a name="delete-a-queue"></a>Удаление очереди
 
-# <a name="net-v12"></a>[Платформа .NET версии 12](#tab/dotnet)
+# <a name="net-v12"></a>[.NET (версии 12)](#tab/dotnet)
 
 Чтобы удалить очередь и все сообщения, содержащиеся в ней, вызовите [`Delete`](/dotnet/api/azure.storage.queues.queueclient.delete) метод для объекта очереди.
 
 :::code language="csharp" source="~/azure-storage-snippets/queues/howto/dotnet/dotnet-v12/QueueBasics.cs" id="snippet_DeleteQueue":::
 
-# <a name="net-v11"></a>[Версии 11 .NET](#tab/dotnetv11)
+# <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnetv11)
 
 Чтобы удалить очередь и все сообщения, содержащиеся в ней, вызовите [`Delete`](/dotnet/api/microsoft.azure.storage.queue.cloudqueue.delete?view=azure-dotnet-legacy&preserve-view=true) метод для объекта очереди.
 

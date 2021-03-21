@@ -7,10 +7,10 @@ ms.author: daviste
 ms.date: 04/10/2018
 ms.reviewer: mbullwin
 ms.openlocfilehash: 2c35356951560b11a605334aba4c26dbc38086de
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100583556"
 ---
 # <a name="application-insights-cohorts"></a>Когорты Application Insights
@@ -49,7 +49,7 @@ ms.locfileid: "100583556"
 
     Теперь эта когорта представляет все идентификаторы пользователей, отправленные с любым пользовательским событием или просмотром страницы в течение 5 отдельных дней за последние 28 дней.
 
-5. Нажмите кнопку **Сохранить**.
+5. Щелкните **Сохранить**.
 
    > [!TIP]
    > Назовите свою когорту, например "Активные пользователи (5+ дней)". Сохраните ее в "Мои отчеты" или "Общие отчеты", в зависимости от того, хотите ли вы предоставить другим пользователям доступ к ресурсу Application Insights для просмотра этой когорты.

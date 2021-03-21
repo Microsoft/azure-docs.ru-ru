@@ -5,10 +5,10 @@ author: mikefrobbins
 ms.author: mirobb
 manager: barbkess
 ms.openlocfilehash: 03ee1325d0e5d3fcb95e9578d25c14beefc5bdf7
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98901146"
 ---
 > [!NOTE]

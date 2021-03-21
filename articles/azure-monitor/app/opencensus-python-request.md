@@ -7,10 +7,10 @@ ms.author: lechen
 ms.date: 10/15/2019
 ms.custom: devx-track-python
 ms.openlocfilehash: 3b029a9cb14a81c80072847dc17d6b71f480743f
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100585678"
 ---
 # <a name="track-incoming-requests-with-opencensus-python"></a>Мониторинг входящих запросов с помощью Опенценсус Python
@@ -172,7 +172,7 @@ ms.locfileid: "100585678"
         uvicorn.run("example:app", host="127.0.0.1", port=5000, log_level="info")
     ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Схема сопоставления приложений](./app-map.md)
 * [Доступность](./monitor-web-app-availability.md)

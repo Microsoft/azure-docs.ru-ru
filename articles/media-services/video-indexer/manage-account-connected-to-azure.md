@@ -11,10 +11,10 @@ ms.topic: article
 ms.date: 01/14/2021
 ms.author: juliako
 ms.openlocfilehash: 25025efe5254442c4862563ce329cfae69e7d033
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98898449"
 ---
 # <a name="manage-a-video-indexer-account-connected-to-azure"></a>Управление учетной записью Индексатора видео, подключенной к Azure
@@ -24,7 +24,7 @@ ms.locfileid: "98898449"
 > [!NOTE]
 > Чтобы вносить изменения в конфигурацию учетной записи, описанные в этой статье, вам необходимо быть владельцем учетной записи Индексатора видео.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Подключите свою учетную запись Индексатора видео к Azure, как описано в статье [Создание учетной записи Индексатора видео, подключенной к Azure](connect-to-azure.md).
 

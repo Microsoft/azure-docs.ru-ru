@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: michmcla
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ff89e8c803e0edf5245a62d625a6367d68de96ba
-ms.sourcegitcommit: ad83be10e9e910fd4853965661c5edc7bb7b1f7c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96742074"
 ---
 # <a name="remote-desktop-gateway-and-azure-multi-factor-authentication-server-using-radius"></a>Шлюз удаленных рабочих столов и сервер Многофакторной идентификации, использующие проверку подлинности RADIUS
@@ -35,7 +35,7 @@ ms.locfileid: "96742074"
 >
 > Существующие клиенты, которые активировали сервер MFA до 1 июля 2019, могут скачать последнюю версию, будущие обновления и создать учетные данные активации обычным образом.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Присоединенный к домену сервер Azure MFA. Если у вас еще не установлен этот сервер, выполните действия, описанные в статье [Приступая к работе с сервером Многофакторной идентификации Azure](howto-mfaserver-deploy.md).
 - Существующий настроенный сервер NPS.

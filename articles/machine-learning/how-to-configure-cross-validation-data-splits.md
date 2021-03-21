@@ -12,10 +12,10 @@ author: CESARDELATORRE
 ms.reviewer: nibaccam
 ms.date: 02/23/2021
 ms.openlocfilehash: 31d3dc2c2d8194541ba1fe7d0865e6c939d75f73
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102501588"
 ---
 # <a name="configure-data-splits-and-cross-validation-in-automated-machine-learning"></a>Настройка разбиения и перекрестной проверки данных в автоматизированном машинном обучении
@@ -31,7 +31,7 @@ ms.locfileid: "102501588"
 > [!NOTE]
 > В настоящее время Studio поддерживает разбиение данных для обучения и проверки, а также параметры перекрестной проверки, но не поддерживает указание отдельных файлов данных для набора проверки. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для этой статьи требуется:
 

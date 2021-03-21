@@ -4,10 +4,10 @@ description: Список типов ресурсов Azure, используе�
 ms.topic: conceptual
 ms.date: 11/14/2020
 ms.openlocfilehash: 5561c480dd5a2849588ed2288eb5bcc35fc1446c
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94658457"
 ---
 # <a name="resource-types-that-extend-capabilities-of-other-resources"></a>Типы ресурсов, расширяющие возможности других ресурсов
