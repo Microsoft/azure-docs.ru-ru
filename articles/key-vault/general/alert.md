@@ -11,12 +11,12 @@ ms.topic: how-to
 ms.date: 04/06/2020
 ms.author: sudbalas
 Customer intent: As a key vault administrator, I want to learn the options available to monitor the health of my vaults
-ms.openlocfilehash: 1b447e907bca3f8d21f522d888632aa687fd0f91
-ms.sourcegitcommit: dd24c3f35e286c5b7f6c3467a256ff85343826ad
+ms.openlocfilehash: 523f24a7d8131dda67244e4d48510d9e1cb7cdb4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99070667"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104582635"
 ---
 # <a name="monitoring-and-alerting-for-azure-key-vault"></a>Мониторинг и оповещения для Azure Key Vault
 
@@ -27,6 +27,8 @@ ms.locfileid: "99070667"
 + Основные метрики Key Vault для мониторинга
 + Настройка метрик и создание панели мониторинга
 + Создание предупреждений с указанными пороговыми значениями
+
+Azure Monitor для Key Vault объединяет журналы и метрики в единое решение мониторинга. [Дополнительные сведения о Azure Monitor для ключевых Вуалт см. здесь](https://docs.microsoft.com/azure/azure-monitor/insights/key-vault-insights-overview#introduction-to-azure-monitor-for-key-vault)
 
 ## <a name="basic-key-vault-metrics-to-monitor"></a>Основные метрики Key Vault для мониторинга
 
@@ -210,6 +212,6 @@ ms.locfileid: "99070667"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Поздравляем! теперь вы успешно создали панель мониторинга и настроили оповещения для хранилища ключей! После выполнения всех описанных выше действий вы должны получать оповещения по электронной почте, когда хранилище ключей соответствует настроенным условиям оповещения. Ниже приведен соответствующий пример. Используйте средства, настроенные в этой статье, чтобы активно отслеживать работоспособность хранилища ключей. 
+Поздравляем! теперь вы успешно создали панель мониторинга и настроили оповещения для хранилища ключей! После выполнения всех описанных выше действий вы должны получать оповещения по электронной почте, когда хранилище ключей соответствует настроенным условиям оповещения. Ниже приведен пример такого файла. Используйте средства, настроенные в этой статье, чтобы активно отслеживать работоспособность хранилища ключей. 
 
 

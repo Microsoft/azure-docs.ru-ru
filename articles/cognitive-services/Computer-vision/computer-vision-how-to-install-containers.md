@@ -13,10 +13,10 @@ ms.author: aahi
 ms.custom: seodec18, cog-serv-seo-aug-2020
 keywords: локальное, оптическое распознавание, Docker, контейнер
 ms.openlocfilehash: 1c9e681e3c02cb65b2a54070cc778051a0e7ac53
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102432559"
 ---
 # <a name="install-read-ocr-docker-containers-preview"></a>Установить чтение с оптического распознавания контейнеров DOCKER (Предварительная версия) 
@@ -46,7 +46,7 @@ ms.locfileid: "102432559"
 
 Если вы используете "Read 2,0 Containers" сегодня, ознакомьтесь с [руководством по миграции](read-container-migration-guide.md) , чтобы узнать об изменениях в новых версиях.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед использованием контейнеров необходимо выполнить следующие предварительные требования:
 

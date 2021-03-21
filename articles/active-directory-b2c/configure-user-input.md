@@ -14,10 +14,10 @@ ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
 ms.openlocfilehash: 4e709719d56aacacf61e247a5dbe215f766a891a
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102607957"
 ---
 #  <a name="add-user-attributes-and-customize-user-input-in-azure-active-directory-b2c"></a>Добавление атрибутов пользователя и настройка пользовательского ввода в Azure Active Directory B2C
@@ -32,7 +32,7 @@ ms.locfileid: "102607957"
 
 В этой статье вы соберете новый атрибут во время регистрации в Azure Active Directory B2C (Azure AD B2C). Вы получите город пользователя, настроите его в виде раскрывающегося списка и определите, требуется ли предоставлять его.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [active-directory-b2c-customization-prerequisites](../../includes/active-directory-b2c-customization-prerequisites.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Обзор автономного микроагента
+title: Общие сведения об автономном микроагенте (предварительная версия)
 titleSuffix: Azure Defender for IoT
 description: Защитник Azure для агентов безопасности IoT позволяет создавать системы безопасности непосредственно в новых устройствах IoT и проектах Azure IoT.
 author: shhazam-ms
@@ -8,14 +8,14 @@ ms.author: shhazam
 ms.date: 1/19/2021
 ms.topic: article
 ms.service: azure
-ms.openlocfilehash: a3f71860801c7f611a10acd4ec4e8f8ed03ab20a
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 84afa4205b57481efc3ed9df805cfa7a3657a6c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102120085"
 ---
-# <a name="standalone-micro-agent-overview"></a>Обзор автономного микроагента 
+# <a name="standalone-micro-agent-overview-preview"></a>Общие сведения об автономном микроагенте (предварительная версия)
 
 Безопасность — это близкая к универсальности проблема для разработчиков IoT. Устройства Интернета вещей предъявляют уникальные требования для мониторинга конечных точек, управления уровнями безопасности и обнаружения угроз с высокой производительностью. 
 
@@ -47,4 +47,4 @@ ms.locfileid: "102120085"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Проверьте [методы проверки подлинности Micro Agent ](concept-security-agent-authentication.md).
+Проверьте [методы проверки подлинности Micro Agent (Предварительная версия)](concept-security-agent-authentication.md).

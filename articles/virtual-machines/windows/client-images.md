@@ -9,10 +9,10 @@ ms.workload: infrastructure-services
 ms.date: 12/15/2017
 ms.author: cynthn
 ms.openlocfilehash: 21038a8d1eabfcca21329c093b866607f0343070
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200000"
 ---
 # <a name="use-windows-client-in-azure-for-devtest-scenarios"></a>Использование клиента Windows в Azure для сценариев разработки и тестирования
@@ -46,5 +46,5 @@ ms.locfileid: "103200000"
 - Или щелкните **Выставление счетов** и выберите свой идентификатор подписки. Идентификатор предложения отобразится в окне *Выставление счетов*. 
 - Идентификатор предложения можно также просмотреть на [вкладке "подписки](https://account.windowsazure.com/Subscriptions) " портала учетных записей Azure: ![ сведения об идентификаторе предложения на портале учетных записей Azure.](./media/client-images/offer-id-azure-account-portal.png) 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Теперь вы можете развернуть виртуальные машины с помощью [PowerShell](quick-create-powershell.md), [шаблонов Resource Manager](ps-template.md) или [Visual Studio](../../azure-resource-manager/templates/create-visual-studio-deployment-project.md).

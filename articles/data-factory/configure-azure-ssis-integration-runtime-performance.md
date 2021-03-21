@@ -7,10 +7,10 @@ ms.service: data-factory
 author: swinarko
 ms.author: sawinark
 ms.openlocfilehash: 5d275100124660b901504b7e7f71cf93518fd077
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100364398"
 ---
 # <a name="configure-the-azure-ssis-integration-runtime-for-high-performance"></a>Настройка среды выполнения интеграции Azure-SSIS для высокой производительности
@@ -162,5 +162,5 @@ $SSISDBPricingTier = "[Basic|S0|S1|S2|S3|S4|S6|S7|S9|S12|P1|P2|P4|P6|P11|P15|…
 ## <a name="design-for-high-performance"></a>Проектирование для обеспечения высокой производительности
 Проектирование пакета SSIS для запуска в Azure отличается от проектирования пакета для локального выполнения. Для более эффективного выполнения в Azure SSIS IR вместо объединения нескольких независимых задач в том же пакете разделите их на несколько пакетов. Создайте выполнение для каждого пакета, чтобы не приходилось ожидать выполнения каждого из них. Такой подход обеспечивает масштабируемость среды выполнения интеграции Azure-SSIS и улучшает общую пропускную способность.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте больше о среде выполнения интеграции Azure-SSIS в [этом разделе](concepts-integration-runtime.md#azure-ssis-integration-runtime).

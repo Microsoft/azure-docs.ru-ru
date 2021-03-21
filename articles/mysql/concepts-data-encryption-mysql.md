@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 01/13/2020
 ms.openlocfilehash: 4c8f4b490c46ed8061201ba6362999f0e426ecb7
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100596329"
 ---
 # <a name="azure-database-for-mysql-data-encryption-with-a-customer-managed-key"></a>Шифрование данных в Базе данных Azure для MySQL с помощью управляемого клиентом ключа
@@ -143,6 +143,6 @@ Key Vault — это облачная внешняя система управ
 
 * Шифрование поддерживается только при использовании криптографического ключа RSA 2048.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как настроить шифрование данных с помощью управляемого клиентом ключа для базы данных Azure для MySQL, используя [портал Azure](howto-data-encryption-portal.md) и [Azure CLI](howto-data-encryption-cli.md).

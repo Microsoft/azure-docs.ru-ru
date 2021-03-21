@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 12/03/2020
 ms.author: mbullwin
 ms.openlocfilehash: b4153b07b153a9ee0b16dc032ab5e7810e236d7d
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98936267"
 ---
 # <a name="deploy-an-anomaly-detector-module-to-iot-edge"></a>Развертывание модуля детектора аномалий для IoT Edge
 
 Узнайте, как развернуть модуль [обнаружения аномалий](../anomaly-detector-container-howto.md) Cognitive Services на устройстве IOT Edge. После развертывания в IoT Edge модуль выполняется в IoT Edge вместе с другими модулями в качестве экземпляров контейнера. Он предоставляет те же интерфейсы API, что и экземпляр контейнера детекторов аномалий, выполняющийся в стандартной среде контейнера DOCKER. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Используйте подписку Azure. Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free), прежде чем начинать работу.
 * Установка [Azure CLI](/cli/azure/install-azure-cli).

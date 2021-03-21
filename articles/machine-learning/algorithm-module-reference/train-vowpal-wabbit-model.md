@@ -8,12 +8,12 @@ ms.topic: reference
 author: likebupt
 ms.author: keli19
 ms.date: 07/02/2020
-ms.openlocfilehash: 9894da7486ec3c0dfb92c94c7c7f4db2247ebeb7
-ms.sourcegitcommit: f5b8410738bee1381407786fcb9d3d3ab838d813
+ms.openlocfilehash: 70d0fc456b3697e3c74a5ec45cc936a02b77e591
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98210211"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104657660"
 ---
 # <a name="train-vowpal-wabbit-model"></a>Обучение модели Vowpal Wabbit
 В этой статье описывается, как использовать модуль " **обучение Vowpal Wabbit Model** " в конструкторе машинное обучение Azure для создания модели машинного обучения с помощью Vowpal Wabbit.  
@@ -91,6 +91,13 @@ Vowpal Wabbit поддерживает пошаговое обучение, до
 
 6. Отправьте конвейер.  
 7. Выберите модуль и выберите **зарегистрировать набор данных** на вкладке **выходные данные и журналы** в правой области, чтобы сохранить обновленную модель в машинное обучение Azure рабочей области.  Если не указать новое имя, то обновленная модель перезапишет существующую сохраненную модель.
+
+## <a name="results"></a>Результаты
+
++ Чтобы создать оценки на основе модели, используйте [модель Оценка Vowpal Wabbit](score-vowpal-wabbit-model.md).
+
+> [!NOTE]
+> Если необходимо развернуть обученную модель в конструкторе, убедитесь, что в качестве параметра [Score Vowpal Wabbit (оценка](score-vowpal-wabbit-model.md) ) вместо **модели оценки** установлено подключение к входному [модулю веб-службы](web-service-input-output.md) в конвейере вывода.
 
 ## <a name="technical-notes"></a>Технические примечания
 

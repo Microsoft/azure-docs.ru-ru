@@ -6,10 +6,10 @@ ms.author: markscu
 ms.date: 03/12/2021
 ms.topic: how-to
 ms.openlocfilehash: a2e2cfb71999bd5ab83591448342d4bac1dabdd5
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103496343"
 ---
 # <a name="azure-batch-rendering-capabilities"></a>Возможности рендеринга в пакетной службе Azure

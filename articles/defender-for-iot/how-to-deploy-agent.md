@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 07/23/2019
 ms.author: mlottner
 ms.openlocfilehash: e35e3dd0bacc0b1e3a44d9338f612a70ca4b52bf
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103496530"
 ---
 # <a name="select-and-deploy-a-security-agent-on-your-iot-device"></a>Выбор и развертывание агента безопасности на устройстве IoT
@@ -95,7 +95,7 @@ ms.locfileid: "103496530"
 |C#|Windows 10 IoT Базовая, сборка 17763    |X64|
 |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Чтобы узнать больше о параметрах конфигурации, перейдите к руководству по настройке агента.
 > [!div class="nextstepaction"]

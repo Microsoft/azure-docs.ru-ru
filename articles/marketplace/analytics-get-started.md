@@ -8,10 +8,10 @@ author: sayantanroy83
 ms.author: sroy
 ms.date: 3/08/2021
 ms.openlocfilehash: fdb2c47781312505a62c5e95d25c9d9364e3b610
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102584016"
 ---
 # <a name="get-started-with-programmatic-access-to-analytics-data"></a>Приступая к работе с программным доступом к данным аналитики

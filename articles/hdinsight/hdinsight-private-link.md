@@ -5,10 +5,10 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 10/15/2020
 ms.openlocfilehash: bc7834a0f8272da3f8954c7dd9f3e18163795cba
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98939354"
 ---
 # <a name="secure-and-isolate-azure-hdinsight-clusters-with-private-link-preview"></a>Защита и изоляция кластеров Azure HDInsight с помощью частной ссылки (Предварительная версия)
@@ -47,7 +47,7 @@ ms.locfileid: "98939354"
 <clustername-ssh>    A   10.0.0.2
 ```
 
-## <a name="enable-private-link"></a>Включить закрытую ссылку
+## <a name="enable-private-link"></a>Включение Приватного канала
 
 Частная ссылка, которая отключена по умолчанию, требует обширных сведений о сети для настройки определяемых пользователем маршрутов (UDR) и правил брандмауэра перед созданием кластера. Использование этого параметра является необязательным, но оно доступно только в том случае, если `resourceProviderConnection` для свойства Network задано значение *Исходящие* , как описано в предыдущем разделе.
 

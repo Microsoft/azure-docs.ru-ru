@@ -13,10 +13,10 @@ ms.author: rohitna
 ms.reviewer: sstein, vanto
 ms.date: 01/25/2021
 ms.openlocfilehash: c589f270fe623f1e4e4bbde4fd353ba95249d1b5
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102426513"
 ---
 # <a name="azure-sql-database-and-azure-synapse-analytics-connectivity-architecture"></a>Архитектура подключения к Базе данных SQL Azure и Azure Synapse Analytics
@@ -120,8 +120,8 @@ ms.locfileid: "102426513"
 | центрально-западная часть США      | 13.78.145.25, 13.78.248.43        |
 | Западная Европа          | 40.68.37.158, 104.40.168.105, 52.236.184.163  |
 | Западная часть США              | 104.42.238.205, 13.86.216.196   |
-| Западная часть США 2            | 13.66.226.202, 40.78.240.8, 40.78.248.10  |
-| Западная часть США 2            | 13.66.226.202, 40.78.240.8, 40.78.248.10  |
+| Западная часть США 2            | 13.66.226.202, 40.78.240.8, 40.78.248.10  |
+| Западная часть США 2            | 13.66.226.202, 40.78.240.8, 40.78.248.10  |
 |                      |                    |
 
 

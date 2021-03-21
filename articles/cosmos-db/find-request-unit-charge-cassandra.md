@@ -9,10 +9,10 @@ ms.date: 10/14/2020
 ms.author: thweiss
 ms.custom: devx-track-js
 ms.openlocfilehash: b504702ad0c74ae9728c0a8b34fa94df26184f70
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200512"
 ---
 # <a name="find-the-request-unit-charge-for-operations-executed-in-azure-cosmos-db-cassandra-api"></a>Найдите плату за единицу запросов для операций, выполненных в Azure Cosmos DB API Cassandra
@@ -48,7 +48,7 @@ Double requestCharge = resultSet.getExecutionInfo().getIncomingPayload().get("Re
 
 Дополнительные сведения см. [в разделе Краткое руководство. Создание приложения Cassandra с помощью пакета SDK для Java и Azure Cosmos DB](create-cassandra-java.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения об оптимизации потребления ЕЗ см. в следующих статьях:
 

@@ -8,10 +8,10 @@ author: kriti-ms
 ms.author: krsh
 ms.date: 03/10/2021
 ms.openlocfilehash: 9ffba221625c57332cd695125651d92adc11cf60
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200376"
 ---
 # <a name="test-a-virtual-machine-image"></a>Тестирование образа виртуальной машины
@@ -66,7 +66,7 @@ ms.locfileid: "103200376"
 
     :::image type="content" source="media/vm/azure-vm-cert-4.png" alt-text="Отображает выбор имени пользователя и пароля виртуальной машины.":::
 
-6. Щелкните **Далее**.
+6. Выберите **Далее**.
 
 #### <a name="run-a-certification-test"></a>Выполнение теста сертификации
 
@@ -278,6 +278,6 @@ For ($i = 0; $i -lt $actualresult.Tests.Length; $i++) {
    }
    ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Войдите в [Центр партнеров](https://partner.microsoft.com/).

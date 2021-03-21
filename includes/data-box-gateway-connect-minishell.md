@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 10/15/2020
 ms.author: alkohli
 ms.openlocfilehash: f9707ab48d64ede2e796675eb3a0a6e7820c7073
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102603384"
 ---
 В зависимости от операционной системы клиента, процедуры удаленного подключения к устройству отличаются.
@@ -20,7 +20,7 @@ ms.locfileid: "102603384"
 Выполните следующие действия, чтобы удаленно подключиться из клиента Windows.
 
 1. Запустите сеанс Windows PowerShell от имени администратора.
-2. Убедитесь, что на вашем клиенте запущена служба служба удаленного управления Windows. В командной строке введите:
+2. Убедитесь, что на вашем клиенте запущена служба служба удаленного управления Windows. В командной строке введите следующее:
 
     `winrm quickconfig`
 

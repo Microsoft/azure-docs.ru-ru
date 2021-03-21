@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: cherylmc
 ms.openlocfilehash: cfb75b6383d8ca449b4bc54b9d21cb16b3a4ad40
-ms.sourcegitcommit: eb546f78c31dfa65937b3a1be134fb5f153447d6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99428189"
 ---
 # <a name="global-transit-network-architecture-and-virtual-wan"></a>Архитектура глобальной транзитной сети и Виртуальная глобальная сеть
@@ -39,7 +39,7 @@ ms.locfileid: "99428189"
 
 Виртуальная глобальная сеть Azure позволяет использовать глобальную транзитную сетевую архитектуру, обеспечивая повсеместное подключение между глобально распределенными наборами облачных рабочих нагрузок в виртуальных сетей, сайтах филиалов, SaaS и PaaS и пользователями.
 
-![Виртуальная глобальная сеть Azure (WAN)](./media/virtual-wan-global-transit-network-architecture/figure2.png)
+![Виртуальная глобальная сеть Azure](./media/virtual-wan-global-transit-network-architecture/figure2.png)
 
 **Рис. 2. Глобальная транзитная сеть и Виртуальная глобальная сеть**
 

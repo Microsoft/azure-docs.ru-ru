@@ -11,10 +11,10 @@ ms.date: 09/28/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python
 ms.openlocfilehash: 807174fdbede2e4631b3ca1df7220904038da4c8
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102518302"
 ---
 # <a name="train-scikit-learn-models-at-scale-with-azure-machine-learning"></a>Обучение scikit. изучение моделей в масштабе с помощью Машинное обучение Azure
@@ -175,7 +175,7 @@ model = run.register_model(model_name='sklearn-iris',
                            resource_configuration=ResourceConfiguration(cpu=1, memory_in_gb=0.5))
 ```
 
-## <a name="deployment"></a>Развертывание
+## <a name="deployment"></a>Deployment (Развертывание)
 
 Только что зарегистрированная модель может быть развернута точно так же, как и любая другая Зарегистрированная модель в МАШИНном обучении Azure. Руководство по развертыванию содержит раздел, посвященный регистрации моделей, но можно сразу перейти к [созданию целевого объекта вычислений](how-to-deploy-and-where.md#choose-a-compute-target) для развертывания, так как у вас уже есть Зарегистрированная модель.
 

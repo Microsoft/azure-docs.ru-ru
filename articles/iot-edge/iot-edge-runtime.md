@@ -10,10 +10,10 @@ ms.service: iot-edge
 services: iot-edge
 ms.custom: amqp, mqtt, devx-track-csharp
 ms.openlocfilehash: 74cfe4ba3c92d8d96dd196ef6f612b9ed7c0da9d
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103496258"
 ---
 # <a name="understand-the-azure-iot-edge-runtime-and-its-architecture"></a>Общие сведения о среде выполнения Azure IoT Edge и ее архитектуре
@@ -240,7 +240,7 @@ IoT Edge собирает анонимные данные телеметрии �
 * Задайте `SendRuntimeQualityTelemetry` для переменной среды значение `false` for **edgeAgent** или
 * Снимите флажок в портал Azure во время развертывания.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Общие сведения о модулях Azure IoT Edge](iot-edge-modules.md)
 * [Сведения о развертывании модулей и настройке маршрутов в IoT Edge](module-composition.md)

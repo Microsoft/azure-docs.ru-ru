@@ -10,10 +10,10 @@ ms.topic: article
 ms.date: 01/26/2021
 ms.author: apimpm
 ms.openlocfilehash: 2e4a398ab71878134887fb8fba025cd8aa6122ad
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99492866"
 ---
 # <a name="secure-backend-services-using-client-certificate-authentication-in-azure-api-management"></a>Защита серверных служб с помощью проверки подлинности сертификата клиента в службе управления API Azure
@@ -35,7 +35,7 @@ ms.locfileid: "99492866"
 * Политики детализированного [доступа](../key-vault/general/secure-your-key-vault.md#data-plane-and-access-policies) можно применять к сертификатам, хранящимся в хранилищах ключей.
 * Сертификаты, обновленные в хранилище ключей, автоматически поворачиваются в управлении API. После обновления в хранилище ключей сертификат в управлении API обновляется в течение 4 часов. Можно также вручную обновить сертификат с помощью портал Azure или с помощью REST API управления.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 

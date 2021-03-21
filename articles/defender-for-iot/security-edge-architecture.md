@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 09/09/2020
 ms.author: mlottner
 ms.openlocfilehash: 4b7377f74e24660945555c112fed4d77d2c5ddcc
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103495952"
 ---
 # <a name="azure-defender-for-iot-edge-defender-iot-micro-agent"></a>Защитник Azure для IoT Edge защитника — IoT-Micro-Agent
@@ -52,11 +52,11 @@ ms.locfileid: "103495952"
 
 Защитник для защитника IoT — IoT-Micro-Agent для IoT Edge в настоящее время доступен только для Linux.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этой статье вы узнали об архитектуре и возможностях защитника для защитника IoT — IoT-Micro-Agent для IoT Edge.
 
-Чтобы продолжить знакомство с защитником для развертывания IoT, используйте следующие статьи:
+Чтобы продолжить начальное развертывание Defender для Интернета вещей, перейдите к следующим статьям:
 
 - Развертывание [защитника — IOT-Micro-Agent для IOT Edge](how-to-deploy-edge.md)
 - Узнайте, как [настроить защитника — IOT-Micro-Agent](how-to-agent-configuration.md)

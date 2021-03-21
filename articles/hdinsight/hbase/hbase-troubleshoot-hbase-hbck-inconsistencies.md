@@ -5,10 +5,10 @@ ms.service: hdinsight
 ms.topic: troubleshooting
 ms.date: 08/08/2019
 ms.openlocfilehash: cbe4231bbecdf279c637cd334336437a020188d4
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98936992"
 ---
 # <a name="scenario-hbase-hbck-command-returns-inconsistencies-in-azure-hdinsight"></a>Сценарий: `hbase hbck` команда возвращает несоответствия в Azure HDInsight.
@@ -64,7 +64,7 @@ hbase hbck -ignorePreCheckPermission –fixAssignment
 
 ### <a name="resolution"></a>Решение
 
-Вручную объединить эти регионы. Перейдите к разделу "Таблица пользовательского веб-интерфейса HBase HMaster" и выберите ссылку на таблицу, в которой возникла эта ошибка. Вы увидите начальный ключ или конечный ключ каждого региона, принадлежащего этой таблице. Затем объедините эти регионы. В оболочке HBase выполните `merge_region 'xxxxxxxx','yyyyyyy', true` . Пример.
+Вручную объединить эти регионы. Перейдите к разделу "Таблица пользовательского веб-интерфейса HBase HMaster" и выберите ссылку на таблицу, в которой возникла эта ошибка. Вы увидите начальный ключ или конечный ключ каждого региона, принадлежащего этой таблице. Затем объедините эти регионы. В оболочке HBase выполните `merge_region 'xxxxxxxx','yyyyyyy', true` . Пример:
 
 ```
 RegionA, startkey:001, endkey:010,

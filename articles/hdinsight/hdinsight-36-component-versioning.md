@@ -7,10 +7,10 @@ author: deshriva
 ms.author: deshriva
 ms.date: 02/08/2021
 ms.openlocfilehash: 0180f94109d01443390da363d9e09c5ad0b26d18
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103496122"
 ---
 # <a name="hdinsight-36-component-versions"></a>Версии компонентов HDInsight 3,6

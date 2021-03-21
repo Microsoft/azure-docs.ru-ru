@@ -8,10 +8,10 @@ author: mingshen-ms
 ms.author: mingshen
 ms.date: 03/10/2021
 ms.openlocfilehash: ffc09daa15e742ca2b5b8a2fa9323e33fe317c60
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200391"
 ---
 # <a name="how-to-create-a-virtual-machine-offer-on-azure-marketplace"></a>Как создать предложение виртуальной машины в Azure Marketplace
@@ -20,7 +20,7 @@ ms.locfileid: "103200391"
 
 Прежде чем начать, [Создайте учетную запись коммерческого магазина в центре партнеров](partner-center-portal/create-account.md). Убедитесь, что ваша учетная запись зарегистрирована в программе коммерческой платформы.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Если вы еще не сделали этого, ознакомьтесь с разработкой [предложения по планированию виртуальных машин](marketplace-virtual-machines.md). В нем объясняются технические требования для виртуальной машины и перечисляются сведения и активы, которые понадобятся при создании предложения.
 
@@ -75,7 +75,7 @@ ms.locfileid: "103200391"
 
 Выберите **Сохранить черновик** , прежде чем перейти к следующей вкладке в меню слева щелкните **свойства**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Настройка свойств предложения для виртуальной машины](azure-vm-create-properties.md)
 - [Рекомендации по размещению предложений](gtm-offer-listing-best-practices.md)

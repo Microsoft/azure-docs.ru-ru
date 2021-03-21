@@ -17,10 +17,10 @@ ms.date: 03/15/2021
 ms.author: radeltch
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: a51f874d09aebfcb2c0b73e0b484f68042d1bb6d
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103496207"
 ---
 # <a name="cluster-an-sap-ascsscs-instance-on-a-windows-failover-cluster-by-using-a-file-share-in-azure"></a>Кластеризация экземпляра SAP ASCS/SCS в отказоустойчивом кластере Windows с помощью файлового ресурса в Azure
@@ -172,7 +172,7 @@ _**Рис. 5.** Экземпляр SAP ASCS/SCS и масштабируемый 
 
 В таком случае в качестве общего диска кластера вы можете использовать стороннее решение SIOS.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Подготовка инфраструктуры Azure для SAP высокого уровня доступности с использованием отказоустойчивого кластера Windows и файлового ресурса для экземпляра SAP (A)SCS][sap-high-availability-infrastructure-wsfc-file-share]
 * [Установка SAP NetWeaver высокого уровня доступности в Azure с использованием отказоустойчивого кластера Windows и общего диска для экземпляра SAP (A)SCS][sap-high-availability-installation-wsfc-shared-disk]

@@ -10,10 +10,10 @@ ms.reviewer: veyalla
 ms.service: iot-edge
 services: iot-edge
 ms.openlocfilehash: 1a78db821c0fab01ad5d6752216a8f7682fb2c46
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200493"
 ---
 # <a name="access-built-in-metrics"></a>Доступ к встроенным метрикам
@@ -66,7 +66,7 @@ ms.locfileid: "103200493"
 
 Модуль **edgeHub** создает следующие метрики:
 
-| Название | Измерения | Описание |
+| Имя | Измерения | Описание |
 |-|-|-|
 | `edgehub_gettwin_total` | `source` (источник операции)<br> `id` (идентификатор модуля) | Тип: Счетчик<br> Общее число вызовов Жеттвин |
 | `edgehub_messages_received_total` | `route_output` (выходные данные отправленного сообщения)<br> `id` | Тип: Счетчик<br> Общее число сообщений, полученных от клиентов |
@@ -89,7 +89,7 @@ ms.locfileid: "103200493"
 
 Модуль **edgeAgent** создает следующие метрики:
 
-| Название | Измерения | Описание |
+| Имя | Измерения | Описание |
 |-|-|-|
 | `edgeAgent_total_time_running_correctly_seconds` | `module_name` | Тип: датчик<br> Время, в течение которого модуль был указан в развертывании и был в состоянии выполнения |
 | `edgeAgent_total_time_expected_running_seconds` | `module_name` | Тип: датчик<br> Время, в течение которого модуль был указан в развертывании |
@@ -114,7 +114,7 @@ ms.locfileid: "103200493"
 | `edgeAgent_total_disk_write_bytes` | `module_name` | Тип: датчик<br> Число байтов, записанных на диск |
 | `edgeAgent_metadata` | `edge_agent_version`, `experimental_features`, `host_information` | Тип: датчик<br> Общие метаданные об устройстве. Значение всегда равно 0, сведения кодируются в тегах. Обратите внимание `experimental_features` и `host_information` являются объектами JSON. `host_information` выглядит так ```{"OperatingSystemType": "linux", "Architecture": "x86_64", "Version": "1.0.10~dev20200803.4", "Provisioning": {"Type": "dps.tpm", "DynamicReprovisioning": false, "AlwaysReprovisionOnStartup": true}, "ServerVersion": "19.03.6", "KernelVersion": "5.0.0-25-generic", "OperatingSystem": "Ubuntu 18.04.4 LTS", "NumCpus": 6, "Virtualized": "yes"}``` :. Примечание `ServerVersion` . это версия DOCKER, а `Version` — версия управляющей программы безопасности IOT Edge. |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Общие сведения о среде выполнения Azure IoT Edge и ее архитектуре](iot-edge-runtime.md)
 * [Свойства двойников модулей агента IoT Edge и центра IoT Edge](module-edgeagent-edgehub.md)

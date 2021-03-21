@@ -15,10 +15,10 @@ ms.topic: how-to
 ms.date: 05/17/2019
 ms.author: allensu
 ms.openlocfilehash: 4fe4b99f9635ff254f1a75e03f13d7e6ffcb3c49
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100366523"
 ---
 # <a name="purge-an-azure-cdn-endpoint"></a>Очистка конечной точки сети CDN Azure

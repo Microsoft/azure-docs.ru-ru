@@ -9,20 +9,13 @@ ms.author: dademath
 ms.date: 03/10/2021
 ms.topic: overview
 ms.service: azure-communication-services
-zone_pivot_groups: acs-web-ios
-ms.openlocfilehash: d117983b6098dd4856613a97bee7ac498f0fffef
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 13ff6cd4d0dc8fcc8ea63c9029318c41ffb7e76a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103487950"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104656130"
 ---
 # <a name="get-started-with-the-group-calling-hero-sample"></a>Начало работы с примером функции группового вызова
 
-::: zone pivot="platform-web"
 [!INCLUDE [Web Calling Hero Sample](./includes/web-calling-hero.md)]
-::: zone-end
-
-::: zone pivot="platform-ios"
-[!INCLUDE [iOS Calling Hero Sample](./includes/ios-calling-hero.md)]
-::: zone-end

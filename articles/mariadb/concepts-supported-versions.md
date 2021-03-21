@@ -3,14 +3,14 @@ title: Поддерживаемые версии — база данных Azure
 description: Узнайте, какие версии сервера MariaDB поддерживаются в службе "база данных Azure для MariaDB".
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: conceptual
 ms.date: 7/20/2020
-ms.openlocfilehash: 61add327852471932d75c746127c64b47bb4f3b2
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: dbf32626714200e6712c67b701ebc597c4a7ba7e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98662446"
 ---
 # <a name="supported-azure-database-for-mariadb-server-versions"></a>Поддерживаемые версии сервера базы данных Azure для MariaDB
@@ -41,6 +41,6 @@ MariaDB использует схему именования X. Y. Z. X — ос
 
 Сейчас обновления основного и дополнительного номера версии не поддерживаются. Например, обновление с версии MariaDB 10.2 до MariaDB 10.3 не поддерживается. Если вы хотите выполнить обновление с 10,2 до 10,3, сделайте [дамп и восстановите](./howto-migrate-dump-restore.md) его на сервере, который был создан с использованием новой версии модуля.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о квотах и ограничениях для конкретных ресурсов с учетом вашего **уровня служб** представлены в статье [Параметры и производительность базы данных Azure для PostgreSQL: возможности, доступные в каждой ценовой категории](./concepts-pricing-tiers.md).

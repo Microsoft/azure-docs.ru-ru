@@ -7,18 +7,21 @@ ms.reviewer: maghan
 ms.service: data-factory
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: 435cad4d1ef002261b194431dbdb787e072808f5
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.openlocfilehash: 59aa395db27c26a7c94eebdc0e3b34d7776ee75f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100361491"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104592002"
 ---
 # <a name="webhook-activity-in-azure-data-factory"></a>Действие веб-перехватчика в фабрике данных Azure
 
 [!INCLUDE[appliesto-adf-asa-md](includes/appliesto-adf-asa-md.md)]
 
 Действие веб-перехватчика может управлять выполнением конвейеров с помощью пользовательского кода. С помощью действия веб-перехватчика код клиента может вызвать конечную точку и передать ему URL-адрес обратного вызова. Выполнение конвейера ожидает вызова обратного вызова перед переходом к следующему действию.
+
+> [!IMPORTANT]
+> Действие веб-перехватчика теперь позволяет отображать состояние ошибки и пользовательские сообщения обратно в действие и конвейер. Задайте для _репортстатусонкаллбакк_ значение true и включите _StatusCode_ и _ошибку_ в полезные данные обратного вызова. Дополнительные сведения см. в разделе [Дополнительные примечания](#additional-notes) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,6 +40,7 @@ ms.locfileid: "100361491"
             "key": "value"
         },
         "timeout": "00:03:00",
+        "reportStatusOnCallBack": false,
         "authentication": {
             "type": "ClientCertificate",
             "pfx": "****",
@@ -65,11 +69,11 @@ ms.locfileid: "100361491"
 
 Действие веб-перехватчика поддерживает следующие типы проверки подлинности.
 
-### <a name="none"></a>None
+### <a name="none"></a>Нет
 
 Если проверка подлинности не требуется, не включайте свойство **authentication** .
 
-### <a name="basic"></a>Базовый
+### <a name="basic"></a>Basic
 
 Укажите имя пользователя и пароль для использования с обычной проверкой подлинности.
 
@@ -136,7 +140,7 @@ ms.locfileid: "100361491"
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 См. следующие действия потока управления, поддерживаемые фабрикой данных.
 

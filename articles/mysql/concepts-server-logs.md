@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 11/6/2020
 ms.openlocfilehash: efabb3de69e96ec1a8955b2691af20a36fbabfe4
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100595942"
 ---
 # <a name="slow-query-logs-in-azure-database-for-mysql"></a>Журналы медленных запросов в Базе данных Azure для MySQL
@@ -143,6 +143,6 @@ Azure Monitor журналы диагностики позволяют пере�
     | where query_time_d > 10
     ```    
     
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 - [Настройка журналов запросов от портал Azure](howto-configure-server-logs-in-portal.md)
 - [Настройка журналов запросов от Azure CLI](howto-configure-server-logs-in-cli.md)

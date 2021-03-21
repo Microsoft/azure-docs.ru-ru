@@ -11,10 +11,10 @@ ms.date: 09/28/2020
 ms.topic: conceptual
 ms.custom: how-to
 ms.openlocfilehash: 583f588004f41fc07037e7f5e4ce75538a581c70
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102518336"
 ---
 # <a name="train-tensorflow-models-at-scale-with-azure-machine-learning"></a>Обучение моделей TensorFlow в масштабе с помощью Машинное обучение Azure

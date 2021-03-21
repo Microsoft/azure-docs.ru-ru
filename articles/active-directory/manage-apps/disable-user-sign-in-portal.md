@@ -17,10 +17,10 @@ ms.reviewer: asteen
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 783de636d4520f48f624f3380f811f1f18366330
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99259242"
 ---
 # <a name="disable-user-sign-ins-for-an-enterprise-app-in-azure-active-directory"></a>Отключение входа пользователя в корпоративное приложение в Azure Active Directory
@@ -33,8 +33,8 @@ ms.locfileid: "99259242"
 1. Выберите **все службы**, введите **Azure Active Directory** в текстовом поле, а затем нажмите клавишу **Ввод**.
 1. На панели **Azure Active Directory**  -   **_директоринаме_*_ (то есть на панели Azure AD для каталога, которым вы управляете) выберите _* корпоративные приложения**.
 1. В области **корпоративные приложения — все приложения** отображается список приложений, которыми можно управлять. Выберите приложение.
-1. На панели **_AppName_*_ (то есть в области с именем выбранного приложения в заголовке) выберите _* свойства**.
-1. На панели **свойства _AppName_*_-_*** выберите **нет** для **включенных пользователей для входа в** систему.
+1. На панели ***AppName** _ (то есть на панели с именем выбранного приложения в заголовке) выберите _ * свойства * *.
+1. На панели ***AppName** _-_ *свойства** выберите **нет** , **чтобы разрешить пользователям входить в** систему.
 1. Щелкните **Сохранить** .
 
 ## <a name="use-azure-ad-powershell-to-disable-an-unlisted-app"></a>Отключение приложения, не включенного в список, с помощью Azure AD PowerShell

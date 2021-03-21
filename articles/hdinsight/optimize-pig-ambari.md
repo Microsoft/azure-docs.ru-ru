@@ -5,10 +5,10 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.openlocfilehash: 690cfc66d0f08e63ac6ef1d21b6722fed59eca14
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98939011"
 ---
 # <a name="optimize-apache-pig-with-apache-ambari-in-azure-hdinsight"></a>Оптимизация Apache Pig с помощью Apache Ambari в Azure HDInsight
@@ -50,7 +50,7 @@ Pig копирует JAR-файлы, необходимые для опреде�
 
 1. Чтобы включить эту функцию, задайте для параметра `pig.user.cache.enabled` значение true. Значение по умолчанию – false.
 
-1. Чтобы задать базовый путь к кэшированным JAR-файлам, задайте его в параметре `pig.user.cache.location`. Значение по умолчанию — `/tmp`.
+1. Чтобы задать базовый путь к кэшированным JAR-файлам, задайте его в параметре `pig.user.cache.location`. Значение по умолчанию — `/tmp`.
 
 ## <a name="optimize-performance-with-memory-settings"></a>Оптимизация производительности с помощью параметров памяти
 

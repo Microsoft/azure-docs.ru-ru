@@ -7,10 +7,10 @@ ms.service: data-factory
 author: dcstwh
 ms.author: weetok
 ms.openlocfilehash: cec5df9a5046e912ab8542c91bde4344affa0925
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100364483"
 ---
 # <a name="roles-and-permissions-for-azure-data-factory"></a>Роли и разрешения для службы "Фабрика данных Azure"

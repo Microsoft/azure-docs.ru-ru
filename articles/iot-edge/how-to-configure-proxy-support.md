@@ -11,10 +11,10 @@ ms.custom:
 - amqp
 - contperf-fy21q1
 ms.openlocfilehash: 888761bb976b9d7a87211a77cb6504a44f108bbd
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200060"
 ---
 # <a name="configure-an-iot-edge-device-to-communicate-through-a-proxy-server"></a>Настройка устройства IoT Edge для обмена данными через прокси-сервер
@@ -374,7 +374,7 @@ Restart-Service iotedge
 
 Чтобы использовать прокси-сервер, выполняющий проверку трафика, необходимо использовать проверку подлинности с помощью подписанного URL-доступа или службу подготовки устройств центра Интернета вещей, добавленную в список разрешений, чтобы избежать проверки.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о ролях см. в статье о [среде выполнения IoT Edge](iot-edge-runtime.md).
 

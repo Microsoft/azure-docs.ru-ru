@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: rhicock
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 112ad0714c84cd3be08788b3277f52372f6d0373
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98938474"
 ---
 # <a name="combined-security-information-registration-for-azure-active-directory-overview"></a>Общие сведения о общей регистрации безопасности для Azure Active Directory
@@ -51,15 +51,15 @@ ms.locfileid: "98938474"
 
 Объединенная регистрация поддерживает следующие методы и действия проверки подлинности:
 
-| Метод | Регистрация | Change | DELETE |
+| Метод | Зарегистрировать | Change | Удалить |
 | --- | --- | --- | --- |
 | Microsoft Authenticator | Да (максимум 5) | Нет | Да |
 | Другое приложение для проверки подлинности | Да (максимум 5) | Нет | Да |
 | Аппаратный токен | Нет | Нет | Да |
-| Номер телефона | Да | Да | Да |
+| Телефон | Да | Да | Да |
 | Дополнительный телефон | Да | Да | Да |
 | Рабочий телефон | Да | Да | Да |
-| Электронная почта | Да | Да | Да |
+| электронная почта; | Да | Да | Да |
 | Контрольные вопросы | Да | Нет | Да |
 | Пароли приложений | Да | Нет | Да |
 | Ключи безопасности FIDO2<br />*Управляемый режим только на странице [сведений о безопасности](https://mysignins.microsoft.com/security-info)*| Да | Да | Да |
