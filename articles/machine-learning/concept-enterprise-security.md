@@ -11,10 +11,10 @@ author: aashishb
 ms.reviewer: larryfr
 ms.date: 11/20/2020
 ms.openlocfilehash: a079504872eaf3840416a99e784c4d33a6828b0c
-ms.sourcegitcommit: 9889a3983b88222c30275fd0cfe60807976fd65b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94992035"
 ---
 # <a name="enterprise-security-and-governance-for-azure-machine-learning"></a>Корпоративная безопасность и управление для Машинное обучение Azure
@@ -83,7 +83,7 @@ ms.locfileid: "94992035"
 * [Защита ресурсов рабочей области](how-to-secure-workspace-vnet.md)
 * [Защита среды обучения](how-to-secure-training-vnet.md)
 * [Безопасная среда вывода](how-to-secure-inferencing-vnet.md)
-* [Использование Studio в защищенной виртуальной сети](how-to-enable-studio-virtual-network.md)
+* [Использование студии в защищенной виртуальной сети](how-to-enable-studio-virtual-network.md)
 * [Использование пользовательских DNS-серверов](how-to-custom-dns.md)
 * [Настройка брандмауэра](how-to-access-azureml-behind-firewall.md)
 
@@ -97,7 +97,7 @@ ms.locfileid: "94992035"
 
 ## <a name="vulnerability-scanning"></a>Сканирование уязвимостей
 
-[Центр безопасности Azure](../security-center/security-center-introduction.md) обеспечивает унифицированное управление безопасностью и расширенную защиту от угроз в гибридных облачных рабочих нагрузках. Для машинного обучения Azure необходимо включить проверку ресурсов [реестра контейнеров Azure](../container-registry/container-registry-intro.md) и ресурсов службы Azure Kubernetes. Дополнительные сведения см. в статье [сканирование образа реестра контейнеров Azure с помощью центра безопасности](../security-center/defender-for-container-registries-introduction.md) и [интеграции Azure Kubernetes Services с центром безопасности](../security-center/defender-for-kubernetes-introduction.md).
+[Центр безопасности Azure](../security-center/security-center-introduction.md) обеспечивает унифицированное управление безопасностью и расширенную защиту от угроз для рабочих нагрузок гибридного облака. Для машинного обучения Azure необходимо включить проверку ресурсов [реестра контейнеров Azure](../container-registry/container-registry-intro.md) и ресурсов службы Azure Kubernetes. Дополнительные сведения см. в статье [сканирование образа реестра контейнеров Azure с помощью центра безопасности](../security-center/defender-for-container-registries-introduction.md) и [интеграции Azure Kubernetes Services с центром безопасности](../security-center/defender-for-kubernetes-introduction.md).
 
 ## <a name="audit-and-manage-compliance"></a>Аудит соответствия и управление им
 

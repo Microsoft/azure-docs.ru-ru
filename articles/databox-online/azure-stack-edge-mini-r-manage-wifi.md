@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 10/28/2020
 ms.author: alkohli
 ms.openlocfilehash: f00be43d023d912d4b0b6e825dfe9d3e0ca2d250
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96467822"
 ---
 # <a name="use-the-local-web-ui-to-manage-wireless-connectivity-on-your-azure-stack-edge-mini-r"></a>Использование локального веб-интерфейса для управления беспроводным подключением на Azure Stack пограничной панели Mini R
@@ -25,7 +25,7 @@ ms.locfileid: "96467822"
 
 Устройство имеет пять портов, порт 1 через порт 4 и пятый Wi-Fi порт. Ниже приведена схема задней плоскости Мини-устройства R при подключении к беспроводной сети.
 
-![Кабель для Wi-Fi](./media/azure-stack-edge-mini-r-deploy-install/wireless-cabled.png)
+![Подключение кабелей для Wi-Fi](./media/azure-stack-edge-mini-r-deploy-install/wireless-cabled.png)
 
 
 ## <a name="add-connect-to-wi-fi-profile"></a>Добавление, подключение к профилю Wi-Fi
@@ -34,48 +34,48 @@ ms.locfileid: "96467822"
 
 1. Откройте страницу **Начало работы** в локальном пользовательском веб-интерфейсе устройства. На плитке **Сеть** выберите **Настроить**.  
     
-    На вашем физическом устройстве доступно пять сетевых интерфейсов. Порты 1 и 2 — это сетевые интерфейсы со скоростью 1 Гбит/с. ПОРТЫ 3 и 4 — это все сетевые интерфейсы с 10 Гбит/с. Пятый порт — порт Wi-Fi. 
+    На физическом устройстве есть пять сетевых интерфейсов. Порты 1 и 2 — это сетевые интерфейсы со скоростью 1 Гбит/с. PORT 3 и PORT 4 — это сетевые интерфейсы со скоростью 10 Гбит/с. Пятый порт используется для Wi-Fi. 
 
-    [![Локальный веб-интерфейс "Параметры сети", страница 1](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/configure-wifi-1.png)](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/configure-wifi-1.png#lightbox)  
+    [![Страница параметров сети в локальном веб-интерфейсе, шаг 1](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/configure-wifi-1.png)](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/configure-wifi-1.png#lightbox)  
     
-    Выберите порт Wi-Fi и настройте параметры порта. 
+    Выберите порт Wi-Fi и настройте параметры для этого порта. 
     
     > [!IMPORTANT]
-    > Настоятельно рекомендуется настроить статический IP-адрес для порта Wi-Fi.  
+    > Мы настоятельно рекомендуем применить для порта Wi-Fi статический IP-адрес.  
 
     ![Страница "Параметры сети" в локальном веб-интерфейсе (2)](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/configure-wifi-2.png)
 
-    **Сетевая** страница обновляется после применения параметров порта Wi-Fi.
+    После применения параметров порта Wi-Fi страница **Network** (Сеть) обновится.
 
-    ![Локальный веб-интерфейс "Параметры сети", стр. 3](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/configure-wifi-4.png)
+    ![Страница параметров сети в локальном веб-интерфейсе, шаг 3](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/configure-wifi-4.png)
 
    
-2. Выберите **добавить Wi-Fi профиль** и отправьте профиль Wi-Fi. 
+2. Выберите элемент **Add Wi-Fi profile** (Добавить профиль Wi-Fi) и отправьте нужный профиль Wi-Fi. 
 
-    ![Локальный веб-пользовательский интерфейс "Параметры сети WiFi порт" 1](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-1.png)
+    ![Параметры сети для порта Wi-Fi в локальном пользовательском веб-интерфейсе, шаг 1](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-1.png)
     
-    Профиль беспроводной сети содержит SSID (сетевое имя), ключ пароля и сведения о безопасности, которые могут быть подключены к беспроводной сети. Профиль Wi-Fi для вашей среды можно получить у администратора сети.
+    Профиль беспроводной сети содержит SSID (сетевое имя), ключ пароля и сведения о безопасности, необходимые для подключения к беспроводной сети. Профиль Wi-Fi для конкретной среды можно получить у администратора сети.
 
-    ![Локальный веб-интерфейс "Параметры порта WiFi"](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-2.png)
+    ![Параметры сети для порта Wi-Fi в локальном пользовательском веб-интерфейсе, шаг 2](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-2.png)
 
-    После добавления профиля список Wi-Fi профилей обновляется в соответствии с новым профилем. Профиль должен отображать **состояние подключения** " **отключено**". 
+    После добавления профиля он появляется в списке профилей Wi-Fi. Для этого профиля **состояние подключения** должно иметь значение **Disconnected** (Отключено). 
 
-    ![Локальный веб-пользовательский интерфейс "Параметры сети WiFi порт" 3](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-3.png)
+    ![Параметры сети для порта Wi-Fi в локальном пользовательском веб-интерфейсе, шаг 3](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-3.png)
     
-3. После успешной загрузки профиля беспроводной сети подключитесь к этому профилю. Выберите **Подключение к профилю Wi-Fi**. 
+3. После успешной отправки профиля беспроводной сети подключитесь к этому профилю. Выберите действие **Connect to Wi-Fi profile** (Подключиться к профилю Wi-Fi). 
 
-    ![Локальный веб-интерфейс "порт Wi-Fi параметры сети" 4](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-4.png)
+    ![Параметры сети для порта Wi-Fi в локальном пользовательском веб-интерфейсе, шаг 4](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-4.png)
 
-4. Выберите профиль Wi-Fi, добавленный на предыдущем шаге, и нажмите кнопку **Применить**. 
+4. Выберите добавленный на предыдущем шаге профиль Wi-Fi и щелкните команду **Apply** (Применить). 
 
-    ![Локальный веб-интерфейс "порт Wi-Fi параметры сети" 5](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-5.png)
+    ![Параметры сети для порта Wi-Fi в локальном пользовательском веб-интерфейсе, шаг 5](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-5.png)
 
-    **Состояние подключения** должно обновляться на " **подключено**". Уровень сигнала обновляется для указания качества сигнала. 
+    Теперь значение параметра **Connection status** (Состояние подключения) должно измениться на **Connected** (Подключено). Также изменяется значение параметра Signal strength (Уровень сигнала) в соответствии с фактическим качеством сигнала. 
 
-    ![Локальный веб-интерфейс "порт Wi-Fi параметры сети" 6](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-6.png)
+    ![Параметры сети для порта Wi-Fi в локальном пользовательском веб-интерфейсе, шаг 6](./media/azure-stack-edge-mini-r-deploy-configure-network-compute-web-proxy/add-wifi-profile-6.png)
 
     > [!NOTE]
-    > Для перемещения больших объемов данных вместо беспроводной сети рекомендуется использовать проводное подключение. 
+    > Для передачи больших объемов данных мы рекомендуем использовать не беспроводную сеть, а проводное подключение. 
 
 
 ## <a name="download-wi-fi-profile"></a>Скачать профиль Wi-Fi

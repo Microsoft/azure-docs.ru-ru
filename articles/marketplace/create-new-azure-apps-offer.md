@@ -9,10 +9,10 @@ ms.subservice: partnercenter-marketplace-publisher
 ms.topic: how-to
 ms.date: 11/06/2020
 ms.openlocfilehash: 3cc5e5114b435965eee4aa096e5898538b0a56e7
-ms.sourcegitcommit: 22da82c32accf97a82919bf50b9901668dc55c97
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94370221"
 ---
 # <a name="how-to-create-an-azure-application-offer-in-the-commercial-marketplace"></a>Создание предложения приложения Azure в коммерческом магазине
@@ -25,7 +25,7 @@ ms.locfileid: "94370221"
 
 1. Войдите в [Центр партнеров](https://partner.microsoft.com/dashboard/home).
 
-1. В меню навигации слева выберите пункт Обзор **коммерческого рынка**  >  **Overview**.
+1. В меню навигации слева выберите пункт Обзор **коммерческого рынка**  >  .
 
 1. На странице "Обзор" выберите **+ Новое предложение**  >  **Приложение Azure**.
 
@@ -79,6 +79,6 @@ ms.locfileid: "94370221"
 > [!NOTE]
 > Убедитесь, что подключение к целевому получателю остается актуальным, так что вы не потеряли каких бы то ни было интереса. Убедитесь, что эти подключения обновляются, когда что-то изменилось.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Настройка свойств предложения приложения Azure](create-new-azure-apps-offer-properties.md)

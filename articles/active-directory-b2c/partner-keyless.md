@@ -12,10 +12,10 @@ ms.date: 1/17/2021
 ms.author: gasinh
 ms.subservice: B2C
 ms.openlocfilehash: b817cfc347ee79ff7c9cbb4124e3f2b7e4d2b7ee
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101644261"
 ---
 # <a name="tutorial-configure-keyless-with-azure-active-directory-b2c"></a>Руководство. Настройка без ключей с помощью Azure Active Directory B2C
@@ -74,7 +74,7 @@ ms.locfileid: "101644261"
 
 5. Выберите **поставщики удостоверений**.
 
-6. Нажмите **Добавить**.
+6. Выберите **Добавить**.
 
 ### <a name="configure-an-identity-provider"></a>Настройка поставщика удостоверений
 
@@ -83,7 +83,7 @@ ms.locfileid: "101644261"
 1. Выбор **типа поставщика удостоверений**  >  **OpenID Connect подключение (Предварительная версия)**
 2. Заполните форму, чтобы настроить поставщик удостоверений:
 
-   |Свойство | Значение |
+   |Свойство. | Значение |
    |:-----| :-----------|
    | Имя   | Без ключей |
    | URL-адрес метаданных | Вставьте URI размещенного приложения проверки подлинности с независимым именем, за которым следует конкретный путь, например " https://keyless.auth/.well-known/openid-configuration ". |
@@ -99,7 +99,7 @@ ms.locfileid: "101644261"
 
 5. Заполните форму для отображения поставщика удостоверений:
 
-   |Свойство | Значение |
+   |Свойство. | Значение |
    |:-----| :-----------|
    | UserID    | Из подписки |
    | Отображаемое имя | Из подписки |

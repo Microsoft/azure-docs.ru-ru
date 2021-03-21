@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
 ms.openlocfilehash: b1bfbda007619bf5bd94d47297845881758037bc
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102636646"
 ---
 # <a name="recover-from-a-failed-azure-stack-edge-pro-gpu-device"></a>Восстановление после неудачного Azure Stack устройства GPU с пограничным Pro 
@@ -21,7 +21,7 @@ ms.locfileid: "102636646"
 
 В этой статье описывается, как выполнить восстановление после неприемлемой сбоя на устройстве с Azure Stack ребра Pro GPU. Для приемлемой сбоя на устройстве с графическим процессором с пограничным управлением Azure Stack требуется замена устройства.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Убедитесь в наличии следующих элементов.
 

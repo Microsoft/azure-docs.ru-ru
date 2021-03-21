@@ -12,10 +12,10 @@ ms.date: 07/06/2020
 ms.author: marhamil
 ms.custom: devx-track-python
 ms.openlocfilehash: d2995f39bc61ae5bb87abafd674f411271e57ca2
-ms.sourcegitcommit: 22da82c32accf97a82919bf50b9901668dc55c97
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94366287"
 ---
 # <a name="recipe-predictive-maintenance-with-the-cognitive-services-for-big-data"></a>Рецепт: диагностическое обслуживание с помощью Cognitive Services для больших данных
@@ -37,7 +37,7 @@ ms.locfileid: "94366287"
 
 ### <a name="create-an-anomaly-detector-resource"></a>Создание ресурса "Детектор аномалий"
 
-Ресурсами Azure, на которые вы подписаны, будет представлено семейство служб Azure Cognitive Services. Создайте ресурс для переводчика с помощью [портал Azure](../../cognitive-services-apis-create-account.md) или [Azure CLI](../../cognitive-services-apis-create-account-cli.md). Кроме того, вы можете сделать следующее:
+Ресурсами Azure, на которые вы подписаны, будет представлено семейство служб Azure Cognitive Services. Создайте ресурс для переводчика с помощью [портал Azure](../../cognitive-services-apis-create-account.md) или [Azure CLI](../../cognitive-services-apis-create-account-cli.md). Также можно:
 
 - Просмотр существующего ресурса в  [портал Azure](https://portal.azure.com/).
 
@@ -149,6 +149,6 @@ plt.show()
 
 ![График детектора аномалий](../media/anomaly-output.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как выполнить прогнозируемое обслуживание в масштабе с помощью Azure Cognitive Services, Azure синапсе Analytics и Azure CosmosDB. Дополнительные сведения см. в полном примере на сайте [GitHub](https://github.com/Azure-Samples/cosmosdb-synapse-link-samples).

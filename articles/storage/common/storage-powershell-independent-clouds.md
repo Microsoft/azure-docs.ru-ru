@@ -11,10 +11,10 @@ ms.author: tamram
 ms.subservice: common
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: e924a5f6c765b5b964fe3b1492393b063d9d23b4
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92783578"
 ---
 # <a name="managing-storage-in-the-azure-independent-clouds-using-powershell"></a>Управление службой хранилища в независимых от Azure облаках с помощью Azure PowerShell
@@ -31,7 +31,7 @@ ms.locfileid: "92783578"
 
 Чтобы использовать службу хранилища Azure в одном из независимых облаков, нужно подключиться к нему вместо общедоступного облака Azure. Чтобы использовать одно из независимых облаков Azure вместо общедоступного, выполните следующие инструкции:
 
-* Укажите *среду* , к которой выполняется подключение.
+* Укажите *среду*, к которой выполняется подключение.
 * Определите и используйте доступные регионы.
 * Используйте правильный суффикс конечной точки, который отличается от суффикса общедоступного облака Azure.
 
@@ -51,7 +51,7 @@ Get-AzEnvironment
 Connect-AzAccount –Environment AzureUSGovernment
 ```
 
-Для доступа к облаку для Китая используйте среду **AzureChinaCloud** . Для доступа к облаку для Германии используйте среду **AzureGermanCloud** .
+Для доступа к облаку для Китая используйте среду **AzureChinaCloud**. Для доступа к облаку для Германии используйте среду **AzureGermanCloud**.
 
 На этом этапе для создания учетной записи хранения иди другого ресурса вам может потребоваться список расположений в выбранном облаке. Запросите этот список с помощью командлета [Get AzLocation](/powershell/module/az.resources/get-azlocation).
 
@@ -69,11 +69,11 @@ Get-AzLocation | select Location, DisplayName
 
 ## <a name="endpoint-suffix"></a>Суффикс конечной точки
 
-Суффикс конечной точки для каждой из этих сред отличается от суффикса конечной точки общедоступного облака Azure. Например, суффикс конечной точки большого двоичного объекта в общедоступном облаке Azure — **blob.core.windows.net** . В облаке Azure для государственных организаций суффикс конечной точки большого двоичного объекта — **blob.core.usgovcloudapi.net** .
+Суффикс конечной точки для каждой из этих сред отличается от суффикса конечной точки общедоступного облака Azure. Например, суффикс конечной точки большого двоичного объекта в общедоступном облаке Azure — **blob.core.windows.net**. В облаке Azure для государственных организаций суффикс конечной точки большого двоичного объекта — **blob.core.usgovcloudapi.net**.
 
 ### <a name="get-endpoint-using-get-azenvironment"></a>Получение конечной точки с помощью командлета Get-AzEnvironment
 
-Получите суффикс конечной точки с помощью командлета [Get AzEnvironment](/powershell/module/az.accounts/get-azenvironment). Конечная точка — это свойство среды *StorageEndpointSuffix* .
+Получите суффикс конечной точки с помощью командлета [Get AzEnvironment](/powershell/module/az.accounts/get-azenvironment). Конечная точка — это свойство среды *StorageEndpointSuffix*.
 
 В следующих фрагментах кода показано, как получить суффикс конечной точки. Все эти команды возвращают нечто вроде "core.cloudapp.net" или "core.cloudapi.de" и т. д. Добавьте суффикс в службу хранилища для доступа к этой службе. Например, конечная точка queue.core.cloudapi.de получит доступ к службе очередей в облаке для Германии.
 

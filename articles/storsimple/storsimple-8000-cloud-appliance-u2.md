@@ -15,10 +15,10 @@ ms.workload: NA
 ms.date: 11/08/2017
 ms.author: alkohli
 ms.openlocfilehash: d78051c1a5af82a986152c8244d25b68dd65d552
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94968848"
 ---
 # <a name="deploy-and-manage-a-storsimple-cloud-appliance-in-azure-update-3-and-later"></a>Развертывание и администрирование облачного устройства StorSimple в Azure (обновление 3 и более поздние версии)
@@ -276,6 +276,6 @@ ms.locfileid: "94968848"
 5. Если командлет `nslookup` завершается ошибкой, это значит, что облачное устройство нельзя зарегистрировать в службе диспетчера устройств StorSimple из-за ошибки подключения к Интернету.
 6. Внесите необходимые изменения в свою виртуальную сеть, чтобы обеспечить доступ облачного устройства к сайтам Azure, таким как _windows.net_.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте, как [управлять облачным устройством с помощью службы диспетчера устройств StorSimple](storsimple-8000-manager-service-administration.md).
 * Узнайте, как [восстановить том StorSimple из резервного набора данных](storsimple-8000-restore-from-backup-set-u2.md).

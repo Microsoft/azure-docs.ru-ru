@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 09/10/2020
 ms.custom: seodec18, devx-track-csharp
 ms.openlocfilehash: 52fa6f05db5452a2e7b8ec4f93d65525873c8c7e
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98020576"
 ---
 # <a name="develop-net-standard-user-defined-functions-for-azure-stream-analytics-jobs-preview"></a>Разработка .NET Standard определяемых пользователем функций для Azure Stream Analytics заданий (Предварительная версия)
@@ -39,10 +39,10 @@ Azure Stream Analytics предлагает язык запросов, анал�
 |**Тип Azure Stream Analytics** |**Тип C#** |
 |---------|---------|
 |BIGINT | long |
-|плавающее | double |
+|FLOAT | double |
 |nvarchar(max) | строка |
 |DATETIME | Дата и время |
-|Записей | Dictionary\<string, object> |
+|Record | Dictionary\<string, object> |
 |Array | Object [] |
 
 То же самое справедливо и при необходимости маршалирования данных из C# в Azure Stream Analytics, что происходит с выходным значением определяемой пользователем функции. В следующей таблице показано, какие типы поддерживаются:
@@ -52,11 +52,11 @@ Azure Stream Analytics предлагает язык запросов, анал�
 |long  |  BIGINT   |
 |double  |  FLOAT   |
 |строка  |  nvarchar(max)   |
-|Дата и время  |  dateTime   |
-|struct  |  Записей   |
-|object  |  Записей   |
+|Дата/время  |  dateTime   |
+|struct  |  Record   |
+|object  |  Record   |
 |Object []  |  Array   |
-|Dictionary\<string, object>  |  Записей   |
+|Dictionary\<string, object>  |  Record   |
 
 ## <a name="develop-a-udf-in-visual-studio-code"></a>Разработка определяемой пользователем функции в Visual Studio Code
 

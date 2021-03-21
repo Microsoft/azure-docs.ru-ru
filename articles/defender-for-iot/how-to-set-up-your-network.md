@@ -8,10 +8,10 @@ ms.date: 02/18/2021
 ms.topic: how-to
 ms.service: azure
 ms.openlocfilehash: 0f85eebbfa8fcdfd9ad6e31a564f27b5d9bfbdfc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101733250"
 ---
 # <a name="about-azure-defender-for-iot-network-setup"></a>Настройка сети с Azure Defender для Интернета вещей
@@ -106,7 +106,7 @@ ms.locfileid: "101733250"
 | DNS |  | В/С | 53 | DNS | Порт DNS-сервера | Локальная консоль управления и датчик | Сервер DNS |
 | LDAP | TCP | В/С | 389 | Active Directory | Подключение между платформой Циберкс и платформой управления к Active Directory | Локальная консоль управления и датчик | Сервер LDAP |
 | LDAPS | TCP | В/С | 636 | Active Directory | Подключение между платформой Циберкс и платформой управления к Active Directory | Локальная консоль управления и датчик | Сервер LDAPs |
-| SNMP | UDP | OUT | 161 | Наблюдение | Удаленные собирающие SNMP. | Локальная консоль управления и датчик | Сервер SNMP |
+| SNMP | UDP | OUT | 161 | Мониторинг | Удаленные собирающие SNMP. | Локальная консоль управления и датчик | Сервер SNMP |
 | WMI | UDP | OUT | 135 | мониторинг | Мониторинг конечных точек Windows | Sensor | Соответствующий элемент сети |
 | Туннелирование | TCP | IN | 9000 <br /><br />— поверх порта 443 <br /><br />От конечного пользователя до локальной консоли управления. <br /><br />-Порт 22 из датчика в локальную консоль управления  | мониторинг | Туннелирование | Sensor | Локальная консоль управления |
 
@@ -365,7 +365,7 @@ RSPAN: на основе Cisco Catalyst 2960 (24 порта).
 
 Эти модели были протестированы на совместимость. Другие поставщики и модели также могут быть совместимыми.
 
-| Образ — | Моделирование |
+| Образ — | Модель |
 |--|--|
 | :::image type="content" source="media/how-to-set-up-your-network/garland-p1gccas-v2.png" alt-text="Снимок экрана Гарланд P1GCCAS."::: | Гарланд P1GCCAS |
 | :::image type="content" source="media/how-to-set-up-your-network/ixia-tpa2-cu3-v2.png" alt-text="Снимок экрана ИКСИА TPA2-CU3."::: | ИКСИА TPA2 — CU3 |
@@ -563,7 +563,7 @@ RSPAN: на основе Cisco Catalyst 2960 (24 порта).
 
 Обзор схемы промышленного сети позволит определить правильное расположение защитника для оборудования IoT.
 
-1.  Просмотр глобальной схемы сети для среды промышленного класса. Пример.
+1.  Просмотр глобальной схемы сети для среды промышленного класса. Пример:
 
     :::image type="content" source="media/how-to-set-up-your-network/ot-global-network-diagram.png" alt-text="Схема среды промышленного класса для глобальной сети.":::
 
@@ -605,7 +605,7 @@ RSPAN: на основе Cisco Catalyst 2960 (24 порта).
 
     Что такое политика? __________________________________ 
 
-    Пример.
+    Пример:
 
     - Компания
 
@@ -668,7 +668,7 @@ RSPAN: на основе Cisco Catalyst 2960 (24 порта).
 | Имя пользователя | |
 | Пароль | |
 | Authentication type (Тип проверки подлинности) | MD5 или SHA |
-| Шифрование | DES или AES |
+| Encryption | DES или AES |
 | Секретный ключ | |
 | Строка сообщества SNMP v2 |
 

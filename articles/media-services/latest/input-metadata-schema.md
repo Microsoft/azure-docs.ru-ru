@@ -14,10 +14,10 @@ ms.topic: reference
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.openlocfilehash: 0acb882410d103cf6f6c34bbecf2006094437b04
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102634691"
 ---
 # <a name="input-metadata"></a>Входные метаданные
@@ -45,7 +45,7 @@ ms.locfileid: "102634691"
 | --- | --- | 
 | **VideoTracks**|Каждый физический файл ресурса может содержать ноль или более видеодорожек, чередуемых в соответствующем формате ресурса. Дополнительные сведения см. в разделе [VideoTracks](#videotracks). |
 | **AudioTracks**|Каждый физический файл ресурса-контейнера может содержать ноль или более звуковых дорожек, чередуемых в соответствующем формате ресурса-контейнера. Дополнительные сведения см. в разделе [AudioTracks](#audiotracks) |
-| **Метаданные**  |Метаданные файла ресурса-контейнера, представленные в виде строки "ключ —значение". <br />Например: `<Metadata key="language" value="eng" />` |
+| **Метаданные**  |Метаданные файла ресурса-контейнера, представленные в виде строки "ключ —значение". <br />Пример: `<Metadata key="language" value="eng" />` |
 
 ### <a name="other-child-elements"></a>Другие дочерние элементы
 
@@ -238,6 +238,6 @@ ms.locfileid: "102634691"
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Выходные метаданные](output-metadata-schema.md)

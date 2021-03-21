@@ -12,10 +12,10 @@ ms.date: 01/20/2021
 ms.author: gasinh
 ms.subservice: B2C
 ms.openlocfilehash: 94e7ae93d05ae8ee35028882e14d8da74814d833
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101650232"
 ---
 # <a name="tutorial-configure-ping-identity-with-azure-active-directory-b2c-for-secure-hybrid-access"></a>Руководство. Настройка проверки подлинности с помощью Azure Active Directory B2C для безопасного гибридного доступа
@@ -74,7 +74,7 @@ PingFederate — это корпоративный мост, который мо
 
 ![на рисунке показан рабочий процесс PingAccess и PingFederate](./media/partner-ping/pingaccess-pingfederate-workflow.png)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы приступить к работе, вам потребуется:
 
@@ -84,7 +84,7 @@ PingFederate — это корпоративный мост, который мо
 
 - PingAccess и PingFederate разворачиваются в контейнерах DOCKER или непосредственно на виртуальных машинах Azure.
 
-## <a name="connectivity"></a>Соединение
+## <a name="connectivity"></a>Возможность подключения
 
 Убедитесь, что подключено следующее.
 

@@ -9,10 +9,10 @@ ms.topic: reference
 ms.date: 10/28/2020
 ms.author: inhenkel
 ms.openlocfilehash: 74f30ebb766ea34603c0a30455837c47222967c0
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98954333"
 ---
 # <a name="regional-code-names-and-endpoints"></a>Региональные кодовые имена и конечные точки
@@ -49,7 +49,7 @@ az account list-locations
 | Служба | Конечная точка |
 | ------- | -------- |
 | Azure Resource Manager |  `https://management.azure.com/` |
-| Проверка подлинности | `https://login.microsoftonline.com/` |
+| Аутентификация | `https://login.microsoftonline.com/` |
 | Аудитория токена | `https://management.core.windows.net/` |
 
 ### <a name="azure-government"></a>Azure для государственных организаций
@@ -57,7 +57,7 @@ az account list-locations
 | Служба | Конечная точка |
 | ------- | -------- |
 | Azure Resource Manager |  `https://management.usgovcloudapi.net/` |
-| Проверка подлинности | `https://login.microsoftonline.us/` |
+| Аутентификация | `https://login.microsoftonline.us/` |
 | Аудитория токена | `https://management.core.usgovcloudapi.net/` |
 
 [!INCLUDE [Widevine is not available in the GovCloud region.](./includes/widevine-not-available-govcloud.md)]
@@ -70,7 +70,7 @@ az account list-locations
 | Служба | Конечная точка |
 | ------- | -------- |
 | Azure Resource Manager | `https://management.cloudapi.de/` |
-| Проверка подлинности | `https://login.microsoftonline.de/` |
+| Аутентификация | `https://login.microsoftonline.de/` |
 | Аудитория токена | `https://management.core.cloudapi.de/`|
 
 ### <a name="azure-china-21vianet"></a>Azure China 21Vianet
@@ -78,10 +78,10 @@ az account list-locations
 | Служба | Конечная точка |
 | ------- | -------- |
 | Azure Resource Manager | `https://management.chinacloudapi.cn/` |
-| Проверка подлинности | `https://login.chinacloudapi.cn/` |
+| Аутентификация | `https://login.chinacloudapi.cn/` |
 | Аудитория токена |  `https://management.core.chinacloudapi.cn/` |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Регионы Azure](https://azure.microsoft.com/global-infrastructure/regions/)
 * [Региональные кодовые имена и конечные точки](azure-regions-code-names.md)

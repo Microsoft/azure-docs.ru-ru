@@ -9,10 +9,10 @@ ms.date: 05/18/2018
 ms.author: cshoe
 ms.custom: include file
 ms.openlocfilehash: 137aca7c6c857ee6e833c359b710e1c1848d15ed
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95556058"
 ---
 ## <a name="deleting-personal-information"></a>Удаление персональных данных
@@ -22,10 +22,10 @@ ms.locfileid: "95556058"
 Персональные данные относятся к службе импорта и экспорта (с помощью портала и API) и используются во время операций импорта и экспорта. Данные, используемые в ходе этих процессов, включают в себя:
 
 - Имя контактного лица
-- номер телефона.
-- Электронная почта
+- Номер телефона
+- Email
 - Адрес по улице
-- City
+- Город
 - почтовый индекс;
 - Состояние
 - страна, область, край, округ, регион;

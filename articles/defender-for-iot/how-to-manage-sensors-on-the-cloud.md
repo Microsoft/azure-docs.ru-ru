@@ -8,10 +8,10 @@ ms.date: 2/18/2021
 ms.topic: how-to
 ms.service: azure
 ms.openlocfilehash: 63b3b450e289b40aa9acbfb0d5170e8eb57f9e58
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101733267"
 ---
 # <a name="onboard-and-manage-sensors-and-subscriptions-in-the-defender-for-iot-portal"></a>Подключение и управление датчиками и подписками в защитнике для портала IoT

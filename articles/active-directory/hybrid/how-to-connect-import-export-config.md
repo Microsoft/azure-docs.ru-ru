@@ -12,10 +12,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d67460c654c854c5a855560dde1d67732fa818c7
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98681961"
 ---
 # <a name="import-and-export-azure-ad-connect-configuration-settings"></a>Импорт и экспорт Azure AD Connect параметров конфигурации 
@@ -77,10 +77,10 @@ Azure Active Directory (Azure AD) Connect deployments отличаются от 
 
    ![Снимок экрана, на котором показаны Azure AD Connect каталоги.](media/how-to-connect-import-export-config/migrate1.png)
 
-1. Запустите скрипт, как показано ниже, и сохраните весь каталог конфигурации сервера нижнего уровня. Скопируйте этот каталог на новый промежуточный сервер. Необходимо скопировать всю папку exportd **-серверконфигуратион-** _ на новый сервер.
+1. Запустите скрипт, как показано ниже, и сохраните весь каталог конфигурации сервера нижнего уровня. Скопируйте этот каталог на новый промежуточный сервер. Необходимо скопировать всю папку exportd **-серверконфигуратион-*** на новый сервер.
 
    ![Снимок экрана, на котором показан сценарий в Windows PowerShell. ](media/how-to-connect-import-export-config/migrate2.png)
-    ![ Снимок экрана, на котором показано копирование экспортированной папки-Серверконфигуратион-_.](media/how-to-connect-import-export-config/migrate3.png)
+    ![ Снимок экрана, на котором показано копирование экспортированной папки-Серверконфигуратион-*.](media/how-to-connect-import-export-config/migrate3.png)
 
 1. Запустите **Azure AD Connect** , дважды щелкнув значок на рабочем столе. Примите условия лицензионного соглашения на использование программного обеспечения корпорации Майкрософт и на следующей странице щелкните **настроить**.
 1. Установите флажок **импортировать параметры синхронизации** . Нажмите кнопку **Обзор** , чтобы просмотреть скопированную папку exportd-серверконфигуратион-*. Выберите MigratedPolicy.js, чтобы импортировать перенесенные параметры.

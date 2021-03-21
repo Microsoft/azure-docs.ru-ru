@@ -8,17 +8,17 @@ ms.author: erhopf
 ms.service: cognitive-services
 ms.date: 03/08/2021
 ms.openlocfilehash: b5893ab7c616c30d4febf957c21da56caf7c9673
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102631376"
 ---
 # <a name="cognitive-services-docs-whats-new-for-february-1-2021---february-28-2021"></a>Cognitive Services документы: новые возможности для 1 февраля 2021 — 28 февраля 2021 г.
 
 Добро пожаловать в Cognitive Services документы с 1 февраля 2021 по 28 февраля 2021. В этой статье перечислены основные изменения, внесенные в документацию в течение этого периода.
 
-## <a name="cognitive-services"></a>Cognitive Services
+## <a name="cognitive-services"></a>Службы Cognitive Services
 
 ### <a name="new-articles"></a>Новые статьи
 
