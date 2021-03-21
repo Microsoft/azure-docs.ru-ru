@@ -5,10 +5,10 @@ ms.topic: how-to
 ms.date: 02/23/2021
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: 36759a0caef41af9307bf621a1b6b634ddf586cc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101703670"
 ---
 # <a name="create-a-batch-account-with-the-azure-portal"></a>Создание учетной записи пакетной службы на портале Azure

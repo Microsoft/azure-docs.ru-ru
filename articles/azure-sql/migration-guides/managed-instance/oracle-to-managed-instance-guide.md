@@ -10,12 +10,12 @@ author: mokabiru
 ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
-ms.openlocfilehash: e7e63edb1e91f07504154cacfcf3d43d3bb310a2
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.openlocfilehash: c54ec2cc6e17d9693e25f1471922da8c7c023e36
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103565329"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104602945"
 ---
 # <a name="migration-guide-oracle-to-azure-sql-managed-instance"></a>Руководство по миграции: Oracle в Azure SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqlmi.md)]
@@ -49,12 +49,27 @@ ms.locfileid: "103565329"
 
 1. Откройте [Помощник по миграции SQL Server для Oracle](https://www.microsoft.com/en-us/download/details.aspx?id=54258). 
 1. Выберите **Файл**, а затем пункт **Новый проект**. 
-1. Укажите имя проекта, расположение для сохранения проекта, а затем выберите Azure SQL Управляемый экземпляр в качестве цели миграции из раскрывающегося списка. Нажмите кнопку **ОК**.
-1. Введите значения в поля сведения о подключении к Oracle в диалоговом окне Соединение для **соединения с Oracle** .
+1. Укажите имя проекта, расположение для сохранения проекта, а затем выберите Azure SQL Управляемый экземпляр в качестве цели миграции из раскрывающегося списка. Щелкните **ОК**.
+
+   ![Создать проект](./media/oracle-to-managed-instance-guide/new-project.png)
+
+1. Выберите **подключиться к Oracle**. Введите значения в поля сведения о соединении Oracle в диалоговом окне **соединение с Oracle** .
+
+   ![Соединение с Oracle](./media/oracle-to-managed-instance-guide/connect-to-oracle.png)
+
+   Выберите схемы Oracle, которые требуется перенести: 
+
+   ![Выбор схемы Oracle](./media/oracle-to-managed-instance-guide/select-schema.png)
+
 1. Щелкните правой кнопкой мыши схему Oracle, которую необходимо перенести, в **обозревателе метаданных Oracle**, а затем выберите команду **создать отчет**. При этом будет создан HTML-отчет. Кроме того, можно выбрать пункт **создать отчет** на панели навигации после выбора базы данных.
+
+   ![Создавать отчет](./media/oracle-to-managed-instance-guide/create-report.png)
+
 1. Ознакомьтесь с HTML-отчетом, чтобы получить сведения о статистике преобразований и любых ошибках или предупреждениях. Также можно открыть отчет в Excel, чтобы получить список объектов Oracle и усилия, необходимые для выполнения преобразования схемы. Расположение отчета по умолчанию находится в папке "report" в каталоге SSMAProjects.
 
-   Например: `drive:\<username>\Documents\SSMAProjects\MyOracleMigration\report\report_2020_11_12T02_47_55\`
+   Пример: `drive:\<username>\Documents\SSMAProjects\MyOracleMigration\report\report_2020_11_12T02_47_55\`
+
+   ![Отчет об оценке](./media/oracle-to-managed-instance-guide/assessment-report.png)
 
 
 ### <a name="validate-data-types"></a>Обновление типов данных
@@ -64,6 +79,9 @@ ms.locfileid: "103565329"
 1. В главном меню выберите **Сервис**. 
 1. Выберите **Параметры проекта**. 
 1. Перейдите на вкладку **Сопоставления типов**. 
+
+   ![Сопоставления типов](./media/oracle-to-managed-instance-guide/type-mappings.png)
+
 1. Сопоставление типов для каждой таблицы можно изменить, выбрав таблицу в **обозревателе метаданных Oracle**.
 
 ### <a name="convert-schema"></a>Преобразовать схему
@@ -75,8 +93,21 @@ ms.locfileid: "103565329"
     1. Введите сведения о подключении для подключения к базе данных в Управляемый экземпляр SQL Azure.
     1. Выберите целевую базу данных из раскрывающегося списка.
     1. Выберите **Подключиться**.
-1. Щелкните правой кнопкой мыши схему и выберите **Преобразовать схему**. Кроме того, можно выбрать пункт **Преобразовать схему** на верхней панели навигации после выбора схемы.
+
+    ![Подключение к Управляемому экземпляру SQL](./media/oracle-to-managed-instance-guide/connect-to-sql-managed-instance.png)
+
+1. Щелкните правой кнопкой мыши схему Oracle в **обозревателе метаданных Oracle** и выберите команду **преобразовать схему**. Кроме того, можно выбрать пункт **Преобразовать схему** на верхней панели навигации после выбора схемы.
+
+   ![Преобразовать схему](./media/oracle-to-managed-instance-guide/convert-schema.png)
+
 1. После завершения преобразования Сравните и изучите преобразованные объекты с исходными объектами, чтобы выявление потенциальных проблем и их устранение на основе рекомендаций.
+
+   ![Рекомендации по сравнению таблиц](./media/oracle-to-managed-instance-guide/table-comparison.png)
+
+   Сравните преобразованный текст Transact-SQL с исходными хранимыми процедурами и ознакомьтесь с рекомендациями: 
+
+   ![Рекомендации по сравнению процедур](./media/oracle-to-managed-instance-guide/procedure-comparison.png)
+
 1. Сохраните проект локально для исправления схемы в автономном режиме. В меню **Файл** выберите команду **Сохранить проект**.
 
 ## <a name="migrate"></a>Миграция
@@ -86,10 +117,26 @@ ms.locfileid: "103565329"
 Чтобы опубликовать схему и перенести данные, выполните следующие действия.
 
 1. Опубликуйте схему. Щелкните правой кнопкой мыши базу данных в узле " **базы данных** " в **ОБОЗРЕВАТЕЛЕ метаданных Azure SQL управляемый экземпляр** и выберите **синхронизировать с базой данных**.
+
+   ![Синхронизация с базой данных](./media/oracle-to-managed-instance-guide/synchronize-with-database.png)
+
+   Проверьте сопоставление между исходным и целевым проектами.
+
+   ![Синхронизация с проверкой базы данных](./media/oracle-to-managed-instance-guide/synchronize-with-database-review.png)
+
 1. Перенос данных. Щелкните правой кнопкой мыши схему в **обозревателе метаданных Oracle** и выберите пункт **перенести данные**. 
+
+   ![Перенос данных](./media/oracle-to-managed-instance-guide/migrate-data.png)
+
 1. Укажите сведения о подключении для Oracle и Управляемый экземпляр Azure SQL.
 1. Просмотрите **отчет о переносе данных**.
+
+   ![Отчет о миграции данных](./media/oracle-to-managed-instance-guide/data-migration-report.png)
+
 1. Подключитесь к Управляемый экземпляру SQL Azure с помощью [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) и проверьте данные и схему при миграции.
+
+   ![Проверка в SSMA](./media/oracle-to-managed-instance-guide/validate-data.png)
+
 
 Кроме того, для выполнения миграции также можно использовать SQL Server Integration Services (SSIS). Дополнительные сведения см. на следующих ресурсах: 
 

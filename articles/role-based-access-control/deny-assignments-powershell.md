@@ -14,10 +14,10 @@ ms.date: 06/12/2019
 ms.author: rolyon
 ms.reviewer: bagovind
 ms.openlocfilehash: 6cf379b051ba42be2d7df7d288f07cdc2a0002a1
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94657641"
 ---
 # <a name="list-azure-deny-assignments-using-azure-powershell"></a>Список запрещенных назначений в Azure с помощью Azure PowerShell
@@ -27,7 +27,7 @@ ms.locfileid: "94657641"
 > [!NOTE]
 > Вы не можете напрямую создавать собственные назначения Deny. Дополнительные сведения о создании назначений Deny см. в статье [запрещение назначений в Azure](deny-assignments.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы получить сведения о назначении Deny, необходимо следующее:
 

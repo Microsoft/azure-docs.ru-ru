@@ -9,10 +9,10 @@ ms.date: 10/23/2020
 ms.author: amverma
 ms.reviewer: cynthn
 ms.openlocfilehash: 94334e54865b3a3b603cbd0b3943899a375d894e
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101675654"
 ---
 # <a name="configure-and-optimize-vms"></a>Настройка и оптимизация виртуальных машин

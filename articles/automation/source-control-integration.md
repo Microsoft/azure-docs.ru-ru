@@ -6,10 +6,10 @@ ms.subservice: process-automation
 ms.date: 03/10/2021
 ms.topic: conceptual
 ms.openlocfilehash: 281da27ce95649e85dae5d0795bb743f21fdb578
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102631750"
 ---
 # <a name="use-source-control-integration"></a>Использование интеграции системы управления версиями

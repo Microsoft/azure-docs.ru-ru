@@ -4,10 +4,10 @@ description: Узнайте, как эффективно использоват�
 ms.date: 01/29/2021
 ms.topic: how-to
 ms.openlocfilehash: ed2fc8ae1a3b87a3b2501c3a390fe7a1822003e4
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100393587"
 ---
 # <a name="manage-azure-migrate-projects-at-scale-with-azure-lighthouse"></a>Управление миграцией проектов в Azure с помощью Azure Лигхсаусе
@@ -76,7 +76,7 @@ Azure Lighthouse позволяет поставщикам служб выпол
 
 Дополнительные сведения см. в статье [Привязка идентификатора партнера для отслеживания влияния на переданные ресурсы](partner-earned-credit.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о [службе "миграция Azure](../../migrate/migrate-services-overview.md)".
 - Узнайте о других возможностях [управления между клиентами](../concepts/cross-tenant-management-experience.md) , поддерживаемых Azure лигхсаусе.

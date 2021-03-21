@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 03/08/2021
 ms.author: duau
 ms.openlocfilehash: 6eed0ed3e936b0e9a534c82a3105c2ed37cab3d5
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102485425"
 ---
 # <a name="azure-route-server-preview-faq"></a>Сервер маршрутизации Azure (Предварительная версия) вопросы и ответы

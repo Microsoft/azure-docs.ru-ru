@@ -8,16 +8,16 @@ ms.author: surbhijain
 ms.reviewer: gachandw
 ms.date: 03/07/2021
 ms.custom: ''
-ms.openlocfilehash: 215abb1ce8d65b5ecdd25aeb78c17c70e801a9d2
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 9d40bbd7e08d8d3869166827a22f3f08536532bb
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103555632"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104590710"
 ---
 # <a name="generate-arm-template-for-cloud-services-extended-support-using-the-azure-portal"></a>Создание шаблона ARM для облачных служб (Расширенная поддержка) с помощью портал Azure
 
-В этой статье объясняется, как получить шаблон ARM и файл параметров из [портал Azure](https://portal.azure.com) после развертывания облачной службы (Расширенная поддержка). Шаблон ARM и файл параметров можно использовать в будущих развертываниях для обновления или обновления облачной службы (Расширенная поддержка).
+В этой статье объясняется, как скачать шаблон ARM и файл параметров из [портал Azure](https://portal.azure.com) после развертывания облачной службы (Расширенная поддержка). Шаблон ARM и файл параметров можно использовать в будущих развертываниях для обновления или обновления облачной службы (Расширенная поддержка).
 
 ## <a name="get-arm-template-via-portal"></a>Получение шаблона ARM через портал
 

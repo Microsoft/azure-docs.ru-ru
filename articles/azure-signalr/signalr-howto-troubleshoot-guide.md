@@ -6,12 +6,12 @@ ms.service: signalr
 ms.topic: conceptual
 ms.date: 11/06/2020
 ms.author: yajin1
-ms.openlocfilehash: bdda89483661eb6f6d006c3d8ea42b46d162de05
-ms.sourcegitcommit: 2bd0a039be8126c969a795cea3b60ce8e4ce64fc
+ms.openlocfilehash: 8eade7596e36389b1e345dc6f0aab1029dc100e0
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98201660"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104589180"
 ---
 # <a name="troubleshooting-guide-for-azure-signalr-service-common-issues"></a>Руководство по устранению неполадок службы Azure SignalR
 
@@ -19,14 +19,14 @@ ms.locfileid: "98201660"
 
 ## <a name="access-token-too-long"></a>Слишком длинный маркер доступа
 
-### <a name="possible-errors"></a>Возможные ошибки:
+### <a name="possible-errors"></a>Возможные ошибки
 
 * На стороне клиента `ERR_CONNECTION_`
 * 414 — слишком длинный универсальный код ресурса (URI)
 * 413 (слишком большой объем полезных данных)
 * Длина маркера доступа не должна превышать 4 КБ. 413 — размер запрашиваемой сущности слишком большой
 
-### <a name="root-cause"></a>Основная причина:
+### <a name="root-cause"></a>Первопричина
 
 Для HTTP/2 Максимальная длина для одного заголовка равна **4 КБ**, поэтому при использовании браузера для доступа к службе Azure произойдет ошибка `ERR_CONNECTION_` для этого ограничения.
 
@@ -34,18 +34,19 @@ ms.locfileid: "98201660"
 
 При использовании пакета SDK версии **1.0.6** или более поздней `/negotiate` выдается исключение, `413 Payload Too Large` Если созданный маркер доступа больше **4 КБ**.
 
-### <a name="solution"></a>Решение.
+### <a name="solution"></a>Решение
 
 По умолчанию утверждения из `context.User.Claims` включаются при создании маркера доступа JWT для **АСРС**(Zure игнал **R** **s** ервице), чтобы утверждения сохранялись и можно было передавать из **АСРС** в, `Hub` когда клиент подключается к `Hub` .
 
-В некоторых случаях используется `context.User.Claims` для хранения большого количества сведений для сервера приложений, большинство из которых не используются, `Hub` а другими компонентами.
+В некоторых случаях `context.User.Claims` используется для хранения большого количества сведений для сервера приложений, большинство из которых не используются, `Hub` а другими компонентами.
 
 Созданный маркер доступа передается через сеть, а для соединений WebSocket и SSE маркеры доступа передаются через строки запроса. Поэтому мы рекомендуем передавать на сервер приложений только **необходимые** утверждения от клиента через **АСРС** , когда это необходимо.
 
 `ClaimsProvider`Для настройки утверждений, передаваемых в **АСРС** внутри маркера доступа, можно настроить.
 
 Для ASP.NET Core:
-```cs
+
+```csharp
 services.AddSignalR()
         .AddAzureSignalR(options =>
             {
@@ -55,7 +56,8 @@ services.AddSignalR()
 ```
 
 Для ASP.NET:
-```cs
+
+```csharp
 services.MapAzureSignalR(GetType().FullName, options =>
             {
                 // pick up necessary claims
@@ -67,13 +69,13 @@ services.MapAzureSignalR(GetType().FullName, options =>
 
 ## <a name="tls-12-required"></a>Требуется TLS 1,2
 
-### <a name="possible-errors"></a>Возможные ошибки:
+### <a name="possible-errors"></a>Возможные ошибки
 
 * ASP.NET об ошибке "сервер недоступен" [#279](https://github.com/Azure/azure-signalr/issues/279)
 * ASP.NET "Подключение неактивно, данные не могут быть отправлены в службу". [#324](https://github.com/Azure/azure-signalr/issues/324) об ошибке
 * "Произошла ошибка при выполнении HTTP-запроса к https:// <API endpoint> . Эта ошибка может быть вызвана тем, что сертификат сервера неправильно настроен с HTTP.SYS в случае HTTPS. Эта ошибка также может быть вызвана несоответствием привязки безопасности между клиентом и сервером. "
 
-### <a name="root-cause"></a>Основная причина:
+### <a name="root-cause"></a>Первопричина
 
 Служба Azure поддерживает только TLS 1.2 в целях безопасности. В .NET Framework возможно, что TLS 1.2 не является протоколом по умолчанию. В результате невозможно успешно установить подключения сервера к АСРС.
 
@@ -93,16 +95,18 @@ services.MapAzureSignalR(GetType().FullName, options =>
         :::image type="content" source="./media/signalr-howto-troubleshoot-guide/tls-throws.png" alt-text="Исключение":::
 
 2. Для ASP.NET можно также добавить следующий код в, `Startup.cs` чтобы включить подробную трассировку и просмотреть ошибки из журнала.
-```cs
-app.MapAzureSignalR(this.GetType().FullName);
-// Make sure this switch is called after MapAzureSignalR
-GlobalHost.TraceManager.Switch.Level = SourceLevels.Information;
-```
 
-### <a name="solution"></a>Решение.
+    ```cs
+    app.MapAzureSignalR(this.GetType().FullName);
+    // Make sure this switch is called after MapAzureSignalR
+    GlobalHost.TraceManager.Switch.Level = SourceLevels.Information;
+    ```
+
+### <a name="solution"></a>Решение
 
 Добавьте в запуск следующий код:
-```cs
+
+```csharp
 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 ```
 
@@ -158,15 +162,15 @@ ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 Есть два способа.
 
-### <a name="concurrent-connection-count-exceeds-limit"></a>Число **одновременных** подключений превышает предел.
+### <a name="concurrent-connection-count-exceeds-limit"></a>Число **одновременных** подключений превышает предел
 
 Для **свободных** экземпляров ограничение числа **одновременных** подключений равно 20 для **стандартных** экземпляров, ограничение числа **одновременных** подключений **на единицу** равно 1 K, что означает, что Unit100 допускает одновременные подключения 100-K.
 
 Подключения включают как клиентские, так и серверные соединения. Проверьте [,](./signalr-concept-messages-and-connections.md#how-connections-are-counted) как подсчитываются подключения.
 
-### <a name="too-many-negotiate-requests-at-the-same-time"></a>Слишком много запросов на согласование одновременно.
+### <a name="too-many-negotiate-requests-at-the-same-time"></a>Слишком много запросов на согласование одновременно
 
-Мы рекомендуем установить произвольную задержку перед повторной попыткой подключения. Дополнительные примеры см. [здесь](#restart_connection) .
+Мы рекомендуем установить произвольную задержку перед повторной попыткой подключения, [чтобы проверить примеры](#restart_connection) повторных попыток.
 
 [Возникли проблемы или отзывы об устранении неполадок? Сообщите нам об этом.](https://aka.ms/asrs/survey/troubleshooting)
 
@@ -180,18 +184,21 @@ ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 Включите трассировку на стороне сервера, чтобы узнать сведения об ошибке, когда сервер пытается подключиться к службе Azure SignalR.
 
-#### <a name="enable-server-side-logging-for-aspnet-core-signalr"></a>Включение ведения журнала на стороне сервера для ASP.NET Core SignalR
+### <a name="enable-server-side-logging-for-aspnet-core-signalr"></a>Включение ведения журнала на стороне сервера для ASP.NET Core SignalR
 
-Ведение журнала на стороне сервера для ASP.NET Core SignalR интегрируется с `ILogger` [журналом](/aspnet/core/fundamentals/logging/?tabs=aspnetcore2x&view=aspnetcore-2.1) на основе ASP.NET Core Framework. Вы можете включить ведение журнала на стороне сервера с помощью `ConfigureLogging` , выбрав пример использования следующим образом:
-```cs
+Ведение журнала на стороне сервера для ASP.NET Core SignalR интегрируется с `ILogger` [журналом](/aspnet/core/fundamentals/logging/?tabs=aspnetcore2x&view=aspnetcore-2.1&preserve-view=true) на основе ASP.NET Core Framework. Вы можете включить ведение журнала на стороне сервера с помощью `ConfigureLogging` , выбрав пример использования следующим образом:
+
+```csharp
 .ConfigureLogging((hostingContext, logging) =>
         {
             logging.AddConsole();
             logging.AddDebug();
         })
 ```
+
 Категории средств ведения журнала для Azure SignalR всегда начинаются с `Microsoft.Azure.SignalR` . Чтобы включить подробные журналы из Azure SignalR, настройте предыдущие префиксы для `Debug` уровня **appsettings.jsв** файле, как показано ниже:
-```JSON
+
+```json
 {
     "Logging": {
         "LogLevel": {
@@ -206,6 +213,7 @@ ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 #### <a name="enable-server-side-traces-for-aspnet-signalr"></a>Включение трассировки на стороне сервера для ASP.NET SignalR
 
 При использовании пакета SDK версии >= `1.0.0` можно включить трассировку, добавив следующую команду в `web.config` : ([Details](https://github.com/Azure/azure-signalr/issues/452#issuecomment-478858102)).
+
 ```xml
 <system.diagnostics>
     <sources>
@@ -235,14 +243,14 @@ ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 Когда клиент подключается к Azure SignalR, постоянное подключение между клиентом и Azure SignalR иногда может быть удалено по разным причинам. В этом разделе описываются некоторые возможности, вызывающие такое удаление подключения, и приводятся некоторые рекомендации по определению основной причины.
 
-### <a name="possible-errors-seen-from-the-client-side"></a>Возможны ошибки на стороне клиента
+### <a name="possible-errors-seen-from-the-client-side"></a>Возможные ошибки со стороны клиента
 
 * `The remote party closed the WebSocket connection without completing the close handshake`
 * `Service timeout. 30.00ms elapsed without receiving a message from service.`
 * `{"type":7,"error":"Connection closed with an error."}`
 * `{"type":7,"error":"Internal server error."}`
 
-### <a name="root-cause"></a>Основная причина:
+### <a name="root-cause"></a>Первопричина
 
 Клиентские подключения могут удаляться при различных обстоятельствах:
 * При `Hub` вырождении исключений с входящим запросом.
@@ -268,13 +276,13 @@ ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 :::image type="content" source="./media/signalr-howto-troubleshoot-guide/client-connection-increasing-constantly.jpg" alt-text="Подключение клиента постоянно растет":::
 
-### <a name="root-cause"></a>Основная причина:
+### <a name="root-cause"></a>Первопричина
 
 Подключение клиента SignalR `DisposeAsync` никогда не вызывается, подключение остается открытым.
 
 ### <a name="troubleshooting-guide"></a>Руководство по устранению неполадок
 
-1. Проверьте, **не** закрыт ли клиент SignalR.
+Проверьте, **не** закрывается ли клиент SignalR.
 
 ### <a name="solution"></a>Решение
 
@@ -282,7 +290,7 @@ ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 Пример:
 
-```C#
+```csharp
 var connection = new HubConnectionBuilder()
     .WithUrl(...)
     .Build();
@@ -324,21 +332,95 @@ finally
 
 В этом разделе описаны несколько возможностей, ведущих к удалению подключения к серверу, и приводятся некоторые рекомендации по определению основной причины.
 
-### <a name="possible-errors-seen-from-server-side"></a>Возможны ошибки со стороны сервера:
+### <a name="possible-errors-seen-from-the-server-side"></a>Возможные ошибки со стороны сервера
 
 * `[Error]Connection "..." to the service was dropped`
 * `The remote party closed the WebSocket connection without completing the close handshake`
 * `Service timeout. 30.00ms elapsed without receiving a message from service.`
 
-### <a name="root-cause"></a>Основная причина:
+### <a name="root-cause"></a>Первопричина
 
 Подключение к службе сервера закрыто **АСРС**(**A** **Zure игнал****R** **s** ервице).
 
+Для времени ожидания проверки связи это может быть вызвано высокой нагрузкой ЦП или нехватка пула потоков на стороне сервера.
+
+В ASP.NET SignalR была исправлена известная проблема в пакете SDK 1.6.0. Обновите пакет SDK до последней версии.
+
+## <a name="thread-pool-starvation"></a>Нехватка ресурсов пула потоков
+
+Если сервер не используется, это означает, что потоки не работают над обработкой сообщений. Все потоки приводят к зависанию определенного метода.
+
+Обычно этот сценарий вызывается асинхронно для синхронизации или `Task.Result` / `Task.Wait()` в асинхронных методах.
+
+См. ASP.NET Core рекомендации по [повышению производительности](/aspnet/core/performance/performance-best-practices#avoid-blocking-calls).
+
+См. Дополнительные сведения о нехватке [пула потоков](https://docs.microsoft.com/archive/blogs/vancem/diagnosing-net-core-threadpool-starvation-with-perfview-why-my-service-is-not-saturating-all-cores-or-seems-to-stall).
+
+### <a name="how-to-detect-thread-pool-starvation"></a>Как определить нехватку пула потоков
+
+Проверьте число потоков. Если в это время нет пиковых нагрузок, сделайте следующее:
+* Если вы используете службу приложений Azure, проверьте количество потоков в метриках. Проверьте `Max` агрегирование:
+    
+  :::image type="content" source="media/signalr-howto-troubleshoot-guide/metrics-thread-count.png" alt-text="Снимок экрана: панель &quot;максимальное число потоков&quot; в службе приложений Azure.":::
+
+* Если вы используете платформа .NET Framework, вы можете найти [метрики](https://docs.microsoft.com/dotnet/framework/debug-trace-profile/performance-counters#lock-and-thread-performance-counters) в системном мониторе на виртуальной машине сервера.
+* Если вы используете .NET Core в контейнере, см. раздел [получение диагностических сведений в контейнерах](https://docs.microsoft.com/dotnet/core/diagnostics/diagnostics-in-containers).
+
+Можно также использовать код для обнаружения недостаточности пула потоков:
+
+```csharp
+public class ThreadPoolStarvationDetector : EventListener
+{
+    private const int EventIdForThreadPoolWorkerThreadAdjustmentAdjustment = 55;
+    private const uint ReasonForStarvation = 6;
+
+    private readonly ILogger<ThreadPoolStarvationDetector> _logger;
+
+    public ThreadPoolStarvationDetector(ILogger<ThreadPoolStarvationDetector> logger)
+    {
+        _logger = logger;
+    }
+
+    protected override void OnEventSourceCreated(EventSource eventSource)
+    {
+        if (eventSource.Name == "Microsoft-Windows-DotNETRuntime")
+        {
+            EnableEvents(eventSource, EventLevel.Informational, EventKeywords.All);
+        }
+    }
+
+    protected override void OnEventWritten(EventWrittenEventArgs eventData)
+    {
+        // See: https://docs.microsoft.com/en-us/dotnet/framework/performance/thread-pool-etw-events#threadpoolworkerthreadadjustmentadjustment
+        if (eventData.EventId == EventIdForThreadPoolWorkerThreadAdjustmentAdjustment &&
+            eventData.Payload[3] as uint? == ReasonForStarvation)
+        {
+            _logger.LogWarning("Thread pool starvation detected!");
+        }
+    }
+}
+```
+    
+Добавьте его в службу:
+    
+```csharp
+service.AddSingleton<ThreadPoolStarvationDetector>();
+```
+
+Затем проверьте журнал, когда соединение с сервером отключается по истечении времени ожидания проверки связи.
+
+### <a name="how-to-find-the-root-cause-of-thread-pool-starvation"></a>Как найти основную причину нехватка ресурсов пула потоков
+
+Чтобы найти основную причину нехватка ресурсов пула потоков, выполните следующие действия.
+
+* Выведите дамп памяти, а затем проанализируйте стек вызовов. Дополнительные сведения см. в разделе [Получение и анализ дампов памяти](https://devblogs.microsoft.com/dotnet/collecting-and-analyzing-memory-dumps/).
+* Используйте [клрмд](https://github.com/microsoft/clrmd) для дампа памяти при обнаружении нехватки ресурсов пула потоков. Затем зайдите в журнал стека вызовов.
+
 ### <a name="troubleshooting-guide"></a>Руководство по устранению неполадок
 
-1. Откройте журнал на стороне сервера приложений, чтобы проверить, не произошло ли что-либо непредвиденное
+1. Откройте журнал на стороне сервера приложений, чтобы проверить, не выполнялось ли что-либо непредвиденное.
 2. Проверьте журнал событий на стороне сервера приложений, чтобы узнать, не перезапущен ли сервер приложений.
-3. Создайте ошибку, предоставляющую время, и отправьте имя ресурса по адресу
+3. Создайте вопрос. Укажите интервал времени и отправьте имя ресурса по электронной почте.
 
 [Возникли проблемы или отзывы об устранении неполадок? Сообщите нам об этом.](https://aka.ms/asrs/survey/troubleshooting)
 

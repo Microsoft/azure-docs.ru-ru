@@ -6,10 +6,10 @@ ms.date: 02/04/2021
 ms.author: tomfitz
 author: tfitzmac
 ms.openlocfilehash: c59275fca1eb3037b48b7293fc9e507df46b7fcb
-ms.sourcegitcommit: f82e290076298b25a85e979a101753f9f16b720c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99555943"
 ---
 # <a name="convert-template-gallery-in-portal-to-template-specs"></a>Преобразование коллекции шаблонов на портале в спецификации шаблонов
@@ -63,6 +63,6 @@ ms.locfileid: "99555943"
 
 Если вам нужно поделиться спецификацией шаблона с другими пользователями в Организации, [установите контроль доступа на основе ролей](../../role-based-access-control/tutorial-role-assignments-group-powershell.md) для группы или пользователей, которым требуется доступ.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о спецификациях шаблонов см. в статье [Создание и развертывание спецификаций шаблонов](template-specs.md).

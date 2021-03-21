@@ -7,10 +7,10 @@ ms.reviewer: klam, logicappspm
 ms.topic: conceptual
 ms.date: 03/31/2020
 ms.openlocfilehash: 0a36cb468ebcb77c0614bffd0afc392df3655c20
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89658209"
 ---
 # <a name="business-continuity-and-disaster-recovery-for-azure-logic-apps"></a>Непрерывность бизнес-процессов и аварийное восстановление для Azure Logic Apps
@@ -185,7 +185,7 @@ Azure Logic Apps предоставляет [встроенные триггер
 
 * [Триггер повторения](#recurrence-trigger)
 * [Опрашивающий триггер](#polling-trigger)
-* [Триггер запросов](#request-trigger)
+* [Триггер запроса](#request-trigger)
 * [Триггер веб-перехватчика](#webhook-trigger)
 
 <a name="recurrence-trigger"></a>
@@ -346,7 +346,7 @@ Azure Logic Apps предоставляет [встроенные триггер
   * [Аварийное восстановление и отказоустойчивость учетных записей в хранилище BLOB-объектов Azure](../storage/common/storage-disaster-recovery-guidance.md)
   * [Географическое аварийное восстановление концентраторов событий Azure](../event-hubs/event-hubs-geo-dr.md)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Общие сведения о устойчивости для Azure](/azure/architecture/framework/resiliency/overview)
 * [Контрольный список для обеспечения устойчивости конкретных служб Azure](/azure/architecture/checklist/resiliency-per-service)

@@ -16,13 +16,13 @@ ms.workload: na
 ms.date: 11/06/2020
 ms.author: yelevin
 ms.openlocfilehash: 64f05e18ff757d9f086cf06d74109bf64e32a05c
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98795692"
 ---
-# <a name="manage-hunting-and-livestream-queries-in-azure-sentinel-using-rest-api"></a>Управление запросами на поиск и облаку в Sentinel Azure с помощью REST API
+# <a name="manage-hunting-and-livestream-queries-in-azure-sentinel-using-rest-api"></a>Управление запросами на охоту и потоковую передачу в реальном времени в Azure Sentinel с помощью REST API
 
 Azure Sentinel, которая встроена в Azure Monitor Log Analytics, позволяет использовать Log Analytics "REST API для управления запросами поиском и облаку. В этом документе показано, как создавать запросы на поиск и управлять ими с помощью REST API.  Созданные таким образом запросы будут отображаться в пользовательском интерфейсе Sentinel Azure.
 
@@ -57,7 +57,7 @@ PUT https://management.azure.com/subscriptions/{subscriptionId} _
     /savedSearches/{savedSearchId}?api-version=2020-03-01-preview
 ```
 
-#### <a name="request-body"></a>Тело запроса
+#### <a name="request-body"></a>Текст запроса
 
 ```json
 {

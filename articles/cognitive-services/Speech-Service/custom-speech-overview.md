@@ -12,10 +12,10 @@ ms.date: 02/12/2021
 ms.author: trbye
 ms.custom: contperf-fy21q2; references_regions
 ms.openlocfilehash: 13bf0f2430e0d58dd9ef28061aad897acf94ac3f
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103493056"
 ---
 # <a name="what-is-custom-speech"></a>Что такое Пользовательское распознавание речи?
@@ -83,7 +83,7 @@ ms.locfileid: "103493056"
 
 Более старые модели обычно становятся менее полезными, так как в самой новой модели обычно используется более высокая точность. Таким образом, базовые модели, а также пользовательские модели и конечные точки, созданные на портале, подчиняются сроку действия через 1 год для адаптации и 2 года для декодирования. Подробное описание см. в статье [жизненный цикл модели и конечной точки](./how-to-custom-speech-model-and-endpoint-lifecycle.md) .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Подготовка и тестирование данных](./how-to-custom-speech-test-and-train.md)
 * [Проверка данных](how-to-custom-speech-inspect-data.md)

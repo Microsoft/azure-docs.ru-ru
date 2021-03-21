@@ -5,10 +5,10 @@ services: container-service
 ms.topic: article
 ms.date: 12/16/2020
 ms.openlocfilehash: ce5dc74dc3625b2b1fed447c4e6480308267d32a
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100578684"
 ---
 # <a name="access-kubernetes-resources-from-the-azure-portal"></a>Доступ к ресурсам Kubernetes из портал Azure
@@ -17,7 +17,7 @@ ms.locfileid: "100578684"
 
 Представление ресурсов Kubernetes из портал Azure заменяет [надстройку панели мониторинга AKS][kubernetes-dashboard], которая является устаревшей.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для просмотра ресурсов Kubernetes в портал Azure требуется кластер AKS. Поддерживается любой кластер, но при использовании интеграции Azure Active Directory (Azure AD) кластер должен использовать [интеграцию Azure AD, управляемую AKS][aks-managed-aad]. Если кластер использует устаревшую версию Azure AD, вы можете обновить кластер на портале или с помощью [Azure CLI][cli-aad-upgrade]. Можно также [использовать портал Azure][portal-cluster] для создания кластера AKS.
 
@@ -88,7 +88,7 @@ az aks update -g $RG -n $AKSNAME --api-server-authorized-ip-ranges $CURRENT_IP/3
 
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье показано, как получить доступ к ресурсам Kubernetes для кластера AKS. Дополнительные сведения о ресурсах кластера и файлах YAML, доступ к которым осуществляется с помощью средства просмотра ресурсов Kubernetes, см. в разделе [развертывания и манифесты YAML][deployments] .
 

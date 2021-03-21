@@ -1,5 +1,5 @@
 ---
-title: Устранение неполадок в микроагенте IoT для защитника
+title: Устранение неполадок с микроагентом Defender для Интернета вещей (предварительная версия)
 titleSuffix: Azure Defender for IoT
 description: Сведения об обработке непредвиденных или необъясненных ошибок.
 author: shhazam-ms
@@ -8,14 +8,14 @@ ms.author: shhazam
 ms.date: 1/24/2021
 ms.topic: reference
 ms.service: azure
-ms.openlocfilehash: dade0d0d5dc4d690ea94f20deaf956b1e079bad7
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.openlocfilehash: 07198a5d0ef5d0a6c9eed97523c61826e451b7f5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102124182"
 ---
-# <a name="defender-iot-micro-agent-troubleshooting"></a>Устранение неполадок в микроагенте IoT для защитника 
+# <a name="defender-iot-micro-agent-troubleshooting-preview"></a>Устранение неполадок с микроагентом Defender для Интернета вещей (предварительная версия)
 
 В случае непредвиденных или необъясненных ошибок используйте следующие методы устранения неполадок, чтобы попытаться устранить проблемы. При необходимости вы также можете обратиться в службу "защитник Azure для Интернета вещей".   
 

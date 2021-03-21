@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 11/15/2020
 ms.author: memildin
 ms.openlocfilehash: 4ef01045d1ca16d0101cdd9ccfcd118231cd28de
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102456119"
 ---
 # <a name="faq---questions-about-data-collection-agents-and-workspaces"></a>Вопросы и ответы — сбор данных, агенты и рабочие области
@@ -33,7 +33,7 @@ ms.locfileid: "102456119"
 
 - **Защитник Azure в** — центр безопасности включает решение "безопасность" в рабочей области по умолчанию.
 
-Сведения о ценах на выбранную валюту и в соответствии с регионом см. на странице [цен на центр безопасности](https://azure.microsoft.com/pricing/details/security-center/).
+Цены для определенной валюты и региона см. на странице [цен на Центр безопасности](https://azure.microsoft.com/pricing/details/security-center/).
 
 > [!NOTE]
 > Ценовая категория Log Analytics для рабочих областей, созданных Центром безопасности, не влияет на выставление счетов за его использование.

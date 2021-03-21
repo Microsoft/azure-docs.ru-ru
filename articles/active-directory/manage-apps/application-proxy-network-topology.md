@@ -12,10 +12,10 @@ ms.date: 02/22/2021
 ms.author: kenwith
 ms.reviewer: japere
 ms.openlocfilehash: 2873bd9668bfba887ad9add061e68f36a747d5b8
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103492325"
 ---
 # <a name="optimize-traffic-flow-with-azure-active-directory-application-proxy"></a>Оптимизация потока трафика с помощью Azure Active Directory Application Proxy
@@ -195,7 +195,7 @@ ms.locfileid: "103492325"
 
 :::image type="content" source="./media/application-proxy-network-topology/application-proxy-pattern5c.png" alt-text="На схеме показаны пользователи, прокси-сервер и соединитель в США, приложение в Европе." lightbox="./media/application-proxy-network-topology/application-proxy-pattern5c.png":::
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Включение прокси приложения](application-proxy-add-on-premises-application.md)
 - [Включение единого входа](application-proxy-configure-single-sign-on-with-kcd.md)

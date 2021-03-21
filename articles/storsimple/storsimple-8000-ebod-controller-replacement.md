@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 06/02/2017
 ms.author: alkohli
 ms.openlocfilehash: bdafb4288bf818928aba43d09f15d4dd75092b24
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96014845"
 ---
 # <a name="replace-an-ebod-controller-on-your-storsimple-device"></a>Замена контроллера EBOD на устройстве StorSimple
@@ -41,7 +41,7 @@ ms.locfileid: "96014845"
 Перед заменой неисправного модуля контроллера EBOD в устройстве StorSimple убедитесь, что модуль другого контроллера EBOD включен и работает. Снятие модуля контроллера EBOD описано в следующей процедуре и таблице.
 
 #### <a name="to-remove-an-ebod-module"></a>Снятие модуля EBOD
-1. Откройте портал Azure.
+1. Перейдите на портал Azure.
 2. Перейдите к устройству и перейдите к разделу **Параметры**  >  **работоспособность оборудования** и убедитесь, что состояние индикатора активного EBOD контроллера горит зеленым, а индикатор для неисправного модуля контроллера EBOD — красный.
 3. Найдите неисправный модуль контроллера EBOD на задней стороне устройства.
 4. Отключите кабели, подключающие модуль контроллера EBOD к контроллеру, затем извлеките модуль EBOD из системы.
@@ -98,6 +98,6 @@ ms.locfileid: "96014845"
    | 8 |Корпус EBOD |
    | 9 |Блоки распределения питания |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте подробнее о [замене компонентов оборудования StorSimple](storsimple-8000-hardware-component-replacement.md).
 

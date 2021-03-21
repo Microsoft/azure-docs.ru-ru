@@ -8,10 +8,10 @@ ms.date: 07/07/2020
 ms.author: jpalma
 author: palma21
 ms.openlocfilehash: 8e0c7324f5b73b3a2ac5e5fd6fa256202035077a
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98790975"
 ---
 # <a name="best-practices-for-authentication-and-authorization-in-azure-kubernetes-service-aks"></a>Рекомендации по аутентификации и авторизации в службе Azure Kubernetes (AKS)
@@ -137,7 +137,7 @@ roleRef:
 
 Дополнительную информацию об операциях кластера в AKS см. в рекомендациях на такие темы:
 
-* [Мультитенантность и изоляция кластера][aks-best-practices-cluster-isolation]
+* [Мультитенантность и изоляция кластеров][aks-best-practices-cluster-isolation]
 * [Основные функции планировщика Kubernetes][aks-best-practices-scheduler]
 * [Дополнительные функции планировщика Kubernetes][aks-best-practices-advanced-scheduler]
 

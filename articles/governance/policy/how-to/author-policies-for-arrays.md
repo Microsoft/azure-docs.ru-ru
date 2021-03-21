@@ -3,12 +3,12 @@ title: Создание политик для свойств массива ре
 description: Узнайте, как работать с параметрами массива и выражениями языка массива, оценивать псевдоним [*] и добавлять элементы с помощью правил определения Политики Azure.
 ms.date: 10/22/2020
 ms.topic: how-to
-ms.openlocfilehash: 650b2ec6bc1bbd12cd10abb1917ef5ea2d6029e9
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 75f4fcfb88bd4cb1ac0c8bfeac236b452479b8c6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98220751"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104721619"
 ---
 # <a name="author-policies-for-array-properties-on-azure-resources"></a>Создание политик для свойств массива ресурсов Azure
 
@@ -448,7 +448,8 @@ ms.locfileid: "98220751"
       "field": "tags.env",
       "equals": "prod"
     }
-  }
+  },
+  "equals": 0
 }
 ```
 
@@ -457,40 +458,60 @@ ms.locfileid: "98220751"
 | 1 | `tags.env` => `"prod"` | `true` |
 | 2 | `tags.env` => `"prod"` | `true` |
 
-Выражения вложенных подсчетов также разрешены:
+Выражения вложенных подсчетов можно использовать для применения условий к вложенным полям массива. Например, следующее условие проверяет, что `objectArray[*]` массив содержит ровно 2 члена с `nestedArray[*]` тем, что содержит 1 или более элементов:
 
 ```json
 {
   "count": {
     "field": "Microsoft.Test/resourceType/objectArray[*]",
     "where": {
-      "allOf": [
-        {
-          "field": "Microsoft.Test/resourceType/objectArray[*].property",
-          "equals": "value2"
-        },
-        {
-          "count": {
-            "field": "Microsoft.Test/resourceType/objectArray[*].nestedArray[*]",
-            "where": {
-              "field": "Microsoft.Test/resourceType/objectArray[*].nestedArray[*]",
-              "equals": 3
-            },
-            "greater": 0
-          }
-        }
-      ]
+      "count": {
+        "field": "Microsoft.Test/resourceType/objectArray[*].nestedArray[*]"
+      },
+      "greaterOrEquals": 1
     }
-  }
+  },
+  "equals": 2
 }
 ```
- 
-| Итерация внешнего цикла | Выбранные значения | Итерация внутреннего цикла | Выбранные значения |
-|:---|:---|:---|:---|
-| 1 | `Microsoft.Test/resourceType/objectArray[*].property` => `"value1`</br> `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `1`, `2` | 1 | `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `1` |
-| 1 | `Microsoft.Test/resourceType/objectArray[*].property` => `"value1`</br> `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `1`, `2` | 2 | `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `2` |
-| 2 | `Microsoft.Test/resourceType/objectArray[*].property` => `"value2`</br> `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `3`, `4` | 1 | `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `3` |
-| 2 | `Microsoft.Test/resourceType/objectArray[*].property` => `"value2`</br> `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `3`, `4` | 2 | `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `4` |
+
+| Итерация | Выбранные значения | Результат вычисления вложенного счетчика |
+|:---|:---|:---|
+| 1 | `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `1`, `2` | `nestedArray[*]` содержит 2 члена => `true` |
+| 2 | `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `3`, `4` | `nestedArray[*]` содержит 2 члена => `true` |
+
+Поскольку оба элемента `objectArray[*]` имеют дочерний массив `nestedArray[*]` с 2 элементами, выражение внешнего числа возвращает `2` .
+
+Более сложный пример: Убедитесь, что `objectArray[*]` массив содержит ровно 2 члена с `nestedArray[*]` любыми элементами, равными `2` или `3` :
+
+```json
+{
+  "count": {
+    "field": "Microsoft.Test/resourceType/objectArray[*]",
+    "where": {
+      "count": {
+        "field": "Microsoft.Test/resourceType/objectArray[*].nestedArray[*]",
+        "where": {
+            "field": "Microsoft.Test/resourceType/objectArray[*].nestedArray[*]",
+            "in": [ 2, 3 ]
+        }
+      },
+      "greaterOrEquals": 1
+    }
+  },
+  "equals": 2
+}
+```
+
+| Итерация | Выбранные значения | Результат вычисления вложенного счетчика
+|:---|:---|:---|
+| 1 | `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `1`, `2` | `nestedArray[*]` содержащих `2` => `true` |
+| 2 | `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` => `3`, `4` | `nestedArray[*]` содержащих `3` => `true` |
+
+Поскольку оба элемента `objectArray[*]` имеют дочерний массив `nestedArray[*]` , который содержит `2` или `3` , выражение внешнего счетчика возвращает значение `2` .
+
+> [!NOTE]
+> Выражения подсчета вложенных полей могут ссылаться только на вложенные массивы. Например, выражение Count, ссылающееся на, `Microsoft.Test/resourceType/objectArray[*]` может иметь вложенный счетчик, нацеленный на вложенный массив `Microsoft.Test/resourceType/objectArray[*].nestedArray[*]` , но не может иметь целевое выражение вложенного счетчика `Microsoft.Test/resourceType/stringArray[*]` .
 
 #### <a name="accessing-current-array-member-with-template-functions"></a>Доступ к текущему члену массива с помощью функций шаблона
 

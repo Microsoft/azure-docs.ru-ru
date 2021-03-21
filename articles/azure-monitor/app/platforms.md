@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 07/18/2019
 ms.reviewer: olegan
 ms.openlocfilehash: 399e57377a779622aa3073dfd3313cee1db345f8
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100583861"
 ---
 # <a name="supported-languages"></a>Поддерживаемые языки
@@ -45,7 +45,7 @@ ms.locfileid: "100583861"
 * [Log4Net, NLog или System.Diagnostics.Trace](./asp-net-trace-logs.md)
 * [Java, Log4J или Logback](./java-trace-logs.md)
 * [Подключаемый модуль LogStash](https://github.com/Azure/azure-diagnostics-tools/tree/master/Logstash/logstash-output-applicationinsights)
-* [Azure Monitor](/archive/blogs/msoms/application-insights-connector-in-oms);
+* [Azure Monitor](/archive/blogs/msoms/application-insights-connector-in-oms)
 
 ## <a name="export-and-data-analysis"></a>Экспорт и анализ данных
 * [Power BI](https://powerbi.microsoft.com/blog/explore-your-application-insights-data-with-power-bi/)

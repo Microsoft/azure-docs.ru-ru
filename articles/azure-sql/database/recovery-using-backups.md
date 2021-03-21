@@ -13,16 +13,16 @@ ms.author: sashan
 ms.reviewer: mathoma, sstein, danil
 ms.date: 11/13/2020
 ms.openlocfilehash: 0c3db3b3f22f9f2639012068924708537f9ada77
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98795330"
 ---
 # <a name="recover-using-automated-database-backups---azure-sql-database--sql-managed-instance"></a>Восстановление с помощью автоматически создаваемых резервных копий базы данных SQL Azure & SQL Управляемый экземпляр
 [!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
 
-Для восстановления базы данных доступны следующие параметры с помощью автоматически создаваемых [резервных копий базы данных](automated-backups-overview.md). Вы можете выполнить следующие действия:
+Для восстановления базы данных доступны следующие параметры с помощью автоматически создаваемых [резервных копий базы данных](automated-backups-overview.md). Вы можете:
 
 - Создайте новую базу данных на том же сервере, восстановленную до указанной точки во времени в течение срока хранения.
 - Создайте базу данных на том же сервере, восстановленную до времени удаления для удаленной базы данных.
@@ -253,7 +253,7 @@ ms.locfileid: "98795330"
 
 Инструкции по восстановлению базы данных управляемого экземпляра с помощью Azure CLI см. в разделе [AZ SQL функция MidB Restore](/cli/azure/sql/midb#az-sql-midb-restore).
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 Создаваемые автоматически резервные копии позволяют защитить базы данных от ошибок пользователей и приложений, случайного удаления базы данных и длительных простоев. Эта встроенная возможность доступна для всех уровней служб и объемов вычислительных ресурсов.
 

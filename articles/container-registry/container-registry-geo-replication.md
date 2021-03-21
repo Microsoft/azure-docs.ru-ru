@@ -6,10 +6,10 @@ ms.topic: article
 ms.date: 07/21/2020
 ms.author: stevelas
 ms.openlocfilehash: 4e82be0e81e5e8c0182e061a0fba0f880bd45cc6
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102632396"
 ---
 # <a name="geo-replication-in-azure-container-registry"></a>Георепликация в реестре контейнеров Azure

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 09/12/2017
 ms.openlocfilehash: 2e1178f91344038fc86f1411fca1beafbe901d05
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100389830"
 ---
 # <a name="powershell-script---transform-data-in-cloud-using-azure-data-factory"></a>Сценарий PowerShell. Преобразование данных в облаке с помощью фабрики данных Azure
@@ -27,7 +27,7 @@ ms.locfileid: "100389830"
 * **Учетная запись хранения Azure.** Создайте входной файл и сценарий Python и передайте их в службу хранилища Azure. Выходные данные программы Spark хранятся в этой учетной записи хранения. Кластер Spark по запросу использует ту же учетную запись хранения, что и его основное хранилище.  
 
 ### <a name="upload-python-script-to-your-blob-storage-account"></a>Отправка скрипта Python в учетную запись хранилища BLOB-объектов
-1. Создайте файл Python с именем **WordCount_Spark. копировать** со следующим содержимым: 
+1. Создайте файл Python с именем **WordCount_Spark.py** со следующим содержимым: 
 
     ```python
     import sys
@@ -52,7 +52,7 @@ ms.locfileid: "100389830"
     if __name__ == "__main__":
         main()
     ```
-2. Замените **&lt; storageAccountName &gt;** именем вашей учетной записи хранения Azure. Затем сохраните файл. 
+2. Замените свойство **storageAccountName&lt;&gt;** именем своей учетной записи хранения Azure. Затем сохраните файл. 
 3. В хранилище BLOB-объектов Azure создайте контейнер с именем **adftutorial**, если он не существует. 
 4. Создайте папку с именем **spark**.
 5. Создайте вложенную папку с именем **script** в папке **spark**. 

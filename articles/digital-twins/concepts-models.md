@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 3/12/2020
 ms.topic: conceptual
 ms.service: digital-twins
-ms.openlocfilehash: d33634c08b85ad633fdad3f709b2b2182571d7de
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: d3570a22fdd935237e673ea3e43ab5e463b66456
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102034767"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104590540"
 ---
 # <a name="understand-twin-models-in-azure-digital-twins"></a>Общие сведения о моделях двойников в Azure Digital Twins
 
@@ -24,9 +24,13 @@ ms.locfileid: "102034767"
 
 ## <a name="digital-twin-definition-language-dtdl-for-models"></a>Язык определения цифровых двойника (ДТДЛ) для моделей
 
-Модели для Azure Digital Twins создаются с помощью языка определения цифровых двойников (Digital Twins Definition Language, DTDL). DTDL создан на основе JSON-LD и не зависит от языка программирования. ДТДЛ не является эксклюзивным для Azure Digital двойников, но также используется для представления данных устройства в других службах IoT, таких как [iot Самонастраивающийся](../iot-pnp/overview-iot-plug-and-play.md). 
+Модели для Azure Digital двойников определяются с помощью языка определения цифровых двойников (ДТДЛ). 
 
-В Azure Digital двойников используется **дтдл _версии 2_**. Дополнительные сведения об этой версии ДТДЛ см. в документации по спецификациям на сайте GitHub: [*Digital двойников Definition Language (дтдл) — версия 2*](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md). Использование ДТДЛ _версии 1_ с Azure Digital двойников теперь устарело.
+Вы можете просмотреть полные спецификации языка для ДТДЛ на сайте GitHub: [**Digital двойников Definition Language (дтдл) — версия 2**](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md).
+
+DTDL создан на основе JSON-LD и не зависит от языка программирования. ДТДЛ не является эксклюзивным для Azure Digital двойников, но также используется для представления данных устройства в других службах IoT, таких как [iot Самонастраивающийся](../iot-pnp/overview-iot-plug-and-play.md). В Azure Digital двойников используется ДТДЛ **версии 2** (использование дтдл версии 1 с Azure Digital двойников теперь устарело). 
+
+В оставшейся части этой статьи вы узнаете, как язык используется в Azure Digital двойников.
 
 > [!NOTE] 
 > Не все службы, использующие ДТДЛ, реализуют одни и те же функции ДТДЛ. Например, IoT самонастраивающийся не использует функции ДТДЛ, предназначенные для графов, в то время как Azure Digital двойников в настоящее время не реализует команды ДТДЛ.
