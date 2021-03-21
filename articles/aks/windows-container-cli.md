@@ -5,10 +5,10 @@ services: container-service
 ms.topic: article
 ms.date: 07/16/2020
 ms.openlocfilehash: 13b4fbd21bb348d1ef79a3ca68128869115745cc
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200911"
 ---
 # <a name="create-a-windows-server-container-on-an-azure-kubernetes-service-aks-cluster-using-the-azure-cli"></a>Создание контейнера Windows Server в кластере Службы Azure Kubernetes (AKS) с помощью Azure CLI

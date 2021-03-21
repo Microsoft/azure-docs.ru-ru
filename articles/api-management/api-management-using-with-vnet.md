@@ -13,10 +13,10 @@ ms.date: 12/10/2020
 ms.author: apimpm
 ms.custom: references_regions
 ms.openlocfilehash: c63b71ad00a5621babe07597720a1e9ea87f1e4a
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99260254"
 ---
 # <a name="how-to-use-azure-api-management-with-virtual-networks"></a>Как использовать управление API Azure с виртуальными сетями
@@ -125,7 +125,7 @@ ms.locfileid: "99260254"
 | */25, 587, 25028                       | Исходящие           | TCP                | VIRTUAL_NETWORK — INTERNET            | Подключение к SMTP-ретранслятору для отправки сообщений электронной почты                    | Внешний и внутренний  |
 | * / 6381 - 6383              | Входящий и исходящий | TCP                | VIRTUAL_NETWORK — VIRTUAL_NETWORK     | Доступ к службе Redis для политик [кэша](api-management-caching-policies.md) между компьютерами         | Внешний и внутренний  |
 | */4290              | Входящий и исходящий | UDP                | VIRTUAL_NETWORK — VIRTUAL_NETWORK     | Счетчики синхронизации для политик [ограничения скорости](api-management-access-restriction-policies.md#LimitCallRateByKey) между компьютерами         | Внешний и внутренний  |
-| * / \*                        | Входящий трафик            | TCP                | AZURE_LOAD_BALANCER / VIRTUAL_NETWORK | Подсистема балансировки нагрузки инфраструктуры Azure                          | Внешний и внутренний  |
+| * / *                        | Входящий трафик            | TCP                | AZURE_LOAD_BALANCER / VIRTUAL_NETWORK | Подсистема балансировки нагрузки инфраструктуры Azure                          | Внешний и внутренний  |
 
 >[!IMPORTANT]
 > Порты, для которых *назначение* выделено **полужирным**, требуются для успешного развертывания службы управления API. Тем не менее, блокировка других портов приведет к **ухудшению** возможности использования и **мониторинга работающей службы и предоставлению подтвержденного соглашения об уровне обслуживания**.

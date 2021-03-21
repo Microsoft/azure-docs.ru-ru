@@ -1,5 +1,5 @@
 ---
-title: Получение API запросов отчетов
+title: API получения запросов отчетов
 description: Этот API используется для получения всех запросов, доступных для использования в коммерческих отчетах аналитики Marketplace.
 ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
@@ -8,13 +8,13 @@ author: sayantanroy83
 ms.author: sroy
 ms.date: 3/08/2021
 ms.openlocfilehash: e2be43e8402e5179fb62d810fe7b9f41e704c49d
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102584095"
 ---
-# <a name="get-report-queries-api"></a>Получение API запросов отчетов
+# <a name="get-report-queries-api"></a>API получения запросов отчетов
 
 API получения отчетов о запросах получает все запросы, доступные для использования в отчетах. По умолчанию получает все системные и пользовательские запросы.
 

@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
 ms.openlocfilehash: 920f7912a1289fe92618d893b94943784e4a9a3a
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102520733"
 ---
 # <a name="deploy-a-php-guestbook-stateless-application-with-redis-on-arc-enabled-kubernetes-cluster-on-azure-stack-edge-pro-gpu"></a>Развертывание приложения без `Guestbook` отслеживания состояния PHP с помощью Redis на ARC с включенным кластером Kubernetes на Azure Stack ребра Pro GPU
@@ -32,7 +32,7 @@ ms.locfileid: "102520733"
 > [!NOTE]
 > Эта статья содержит ссылки на термин slave (ведомый). Корпорация Майкрософт больше не использует его. Когда этот термин будет удален из программного обеспечения, мы удалим его из статьи.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Перед развертыванием приложения без отслеживания состояния убедитесь, что выполнены следующие необходимые условия на устройстве и клиент, который будет использоваться для доступа к устройству:
 
@@ -180,6 +180,6 @@ C:\Users\user>
 ```-->
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как [использовать панель мониторинга Kubernetes для мониторинга развертываний на устройстве Azure Stack ребра Pro](azure-stack-edge-gpu-monitor-kubernetes-dashboard.md) .

@@ -6,10 +6,10 @@ ms.topic: article
 ms.date: 06/26/2020
 ms.author: nicolela
 ms.openlocfilehash: 8293ed1bfb53895b9631d9730fb75a2364457180
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96452370"
 ---
 # <a name="set-up-a-lab-with-gpu-virtual-machines"></a>Настройка лаборатории с помощью виртуальных машин GPU
@@ -64,7 +64,7 @@ ms.locfileid: "96452370"
 
    ![Снимок экрана со страницей загрузки драйвера NVIDIA](./media/how-to-setup-gpu/nvidia-driver-download.png) 
 
-   a. В браузере перейдите на [страницу загрузки драйвера NVIDIA](https://www.nvidia.com/Download/index.aspx).  
+   а. В браузере перейдите на [страницу загрузки драйвера NVIDIA](https://www.nvidia.com/Download/index.aspx).  
    b. Задайте **Тип продукта** **Tesla**.  
    c. Присвойте **серии продуктов** **серии K**.  
    d. Укажите **операционную систему** в соответствии с типом базового образа, выбранного при создании лаборатории.  

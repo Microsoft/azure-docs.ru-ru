@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 03/17/2017
 ms.custom: vs-azure
 ms.openlocfilehash: 2507dbf7bb8294c949f434d5fa96ccc0af9a7eb3
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103563544"
 ---
 # <a name="debug-your-applications-with-azure-application-insights-in-visual-studio"></a>Отладка приложений с помощью Azure Application Insights в Visual Studio
@@ -79,7 +79,7 @@ ms.locfileid: "103563544"
   * Чтобы отключить отправку данных телеметрии на портал, закомментируйте строку `<instrumentationkey>...` с ApplicationInsights.config. Когда вы будете готовы отправить данные телеметрии на портал, раскомментируйте его.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
  * **[Работа с порталом Application Insights](./overview-dashboard.md)**. Просмотр панелей мониторинга, эффективных средств диагностики и анализа, оповещений, карты динамических зависимостей приложения, а также экспортированных данных телеметрии. 
 

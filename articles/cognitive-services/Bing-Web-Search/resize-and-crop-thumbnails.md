@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 07/08/2019
 ms.author: aahi
 ms.openlocfilehash: a85c5b2333418367742678a529b69c95164eda53
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96350489"
 ---
 # <a name="resize-and-crop-thumbnail-images"></a>Изменение размера и обрезка эскизов
@@ -25,7 +25,7 @@ ms.locfileid: "96350489"
 > API-интерфейсы Поиска Bing, подготовленные с помощью Cognitive Services, будут поддерживаться в течение следующих трех лет или до завершения срока действия вашего Соглашения Enterprise (в зависимости от того, какой период окончится раньше).
 > Инструкции по миграции см. в статье о [службах Поиска Bing](/bing/search-apis/bing-web-search/create-bing-search-service-resource).
 
-Некоторые ответы из API-интерфейсы поиска Bing включают URL-адреса для эскизов изображений, обслуживаемых Bing, которые можно изменять, масштабировать и обрезать, а также могут содержать параметры запроса. Например:
+Некоторые ответы из API-интерфейсы поиска Bing включают URL-адреса для эскизов изображений, обслуживаемых Bing, которые можно изменять, масштабировать и обрезать, а также могут содержать параметры запроса. Пример:
 
 `https://<host>/th?id=AMMS_92772df988...&w=110&h=73&rs=1&qlt=80&cdv=1&pid=16.1`
 

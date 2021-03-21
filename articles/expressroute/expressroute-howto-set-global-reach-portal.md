@@ -8,17 +8,17 @@ ms.topic: how-to
 ms.date: 03/05/2021
 ms.author: duau
 ms.openlocfilehash: 336bd4aaf881b7315921ef374c92a2ac95ff3c8c
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102431321"
 ---
 # <a name="configure-expressroute-global-reach-using-the-azure-portal"></a>Настройка Global Reach ExpressRoute с помощью портал Azure
 
 Эта статья поможет вам настроить ExpressRoute Global Reach с помощью PowerShell. Дополнительные сведения см. в разделе [Связывание каналов ExpressRoute для включения ExpressRoute Global Reach (предварительная версия)](expressroute-global-reach.md).
 
- ## <a name="before-you-begin"></a>Подготовка к работе
+ ## <a name="before-you-begin"></a>Перед началом
 
 Прежде чем начать настройку, подтвердите следующие критерии.
 

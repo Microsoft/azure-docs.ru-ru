@@ -8,10 +8,10 @@ author: trkeya
 ms.author: trkeya
 ms.date: 06/19/2020
 ms.openlocfilehash: 193e7bd78046a1d73cb55171c15c9cb6a7278297
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96490046"
 ---
 # <a name="what-is-a-test-drive"></a>Что такое тестовый выпуск?
@@ -87,7 +87,7 @@ ms.locfileid: "96490046"
 
 Если вы закроете свой ведущий тестовый выпуск, обязательно зарегистрируйте его в [партнерской продаже Microsoft Partner Connect](https://support.microsoft.com/help/3155788/getting-started-with-microsoft-partner-sales-connect). Кроме того, мы будем рады услышать ваше мнение о клиенте, где проигрывается тестовый диск.
 
-## <a name="other-resources"></a>Другие ресурсы
+## <a name="other-resources"></a>Другие источники
 
 Дополнительные материалы о тестовом выпуске:
 

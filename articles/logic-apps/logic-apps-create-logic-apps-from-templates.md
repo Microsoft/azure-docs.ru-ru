@@ -9,10 +9,10 @@ ms.reviewer: estfan, logicappspm
 ms.topic: article
 ms.date: 10/15/2017
 ms.openlocfilehash: 42c592e6aede4537dc983fd2cff043a878f81f1c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "100593108"
 ---
 # <a name="create-logic-app-workflows-from-prebuilt-templates"></a>Создание рабочих процессов приложения логики на основе предварительно созданных шаблонов
@@ -146,7 +146,7 @@ ms.locfileid: "100593108"
 
 ## <a name="get-support"></a>Получение поддержки
 
-* В случае наличия вопросов посетите страницу [Вопросы и ответы Майкрософт по Azure Logic Apps](/answers/topics/azure-logic-apps.html).
+* Если у вас есть вопросы, посетите [страницу вопросов и ответов по Azure Logic Apps на сайте Майкрософт](/answers/topics/azure-logic-apps.html).
 * Отправить идею по поводу возможности или проголосовать за нее вы можете на [сайте отзывов пользователей Logic Apps](https://aka.ms/logicapps-wish).
 
 ## <a name="next-steps"></a>Дальнейшие действия

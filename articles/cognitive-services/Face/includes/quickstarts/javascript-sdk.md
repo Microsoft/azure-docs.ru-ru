@@ -10,10 +10,10 @@ ms.topic: include
 ms.date: 11/05/2020
 ms.author: v-jawe
 ms.openlocfilehash: b4a63f76cbcd9e98295f5edcf7ff2d06979e6556
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102244607"
 ---
 ## <a name="quickstart-face-client-library-for-javascript"></a>Краткое руководство. Клиентская библиотека Распознавания лиц для JavaScript
@@ -24,7 +24,7 @@ ms.locfileid: "102244607"
 
 * [обнаружение лиц на изображении](#detect-faces-in-an-image);
 * [поиск похожих лиц](#find-similar-faces);
-* [создание группы людей](#create-a-person-group);
+* [Создание группы людей](#create-a-person-group)
 * [опознание лица](#identify-a-face);
 
 [Справочная документация](/javascript/api/@azure/cognitiveservices-face/) | [Исходный код библиотеки](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/cognitiveservices/cognitiveservices-face) | [Пакет (npm)](https://www.npmjs.com/package/@azure/cognitiveservices-face) | [Примеры](/samples/browse/?products=azure&term=face&languages=javascript)

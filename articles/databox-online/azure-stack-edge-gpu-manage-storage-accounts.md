@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/12/2021
 ms.author: alkohli
 ms.openlocfilehash: 2d9520c8f97171dbf2f46aa2c94b9e1e280ed86c
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103201282"
 ---
 # <a name="use-the-azure-portal-to-manage-edge-storage-accounts-on-your-azure-stack-edge-pro"></a>Использование портала Azure для управления учетными записями хранения Edge в Azure Stack Edge Pro
@@ -95,6 +95,6 @@ ms.locfileid: "103201282"
 
     ![Выбор ключа хранилища синхронизации 2](media/azure-stack-edge-gpu-manage-storage-accounts/sync-storage-key-2.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Узнайте, как [управлять пользователями с помощью портала Azure](azure-stack-edge-gpu-manage-users.md).

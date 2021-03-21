@@ -7,10 +7,10 @@ ms.date: 03/30/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 7b2220ffe92446338e1b9db9b329847d93830334
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88005437"
 ---
 #  <a name="windows-virtual-desktop-classic-troubleshooting-overview-feedback-and-support"></a>Обзор и устранение неполадок виртуальных рабочих столов Windows (классическая модель), Отзывы и поддержка
@@ -20,7 +20,7 @@ ms.locfileid: "88005437"
 
 В этой статье приводятся общие сведения о проблемах, которые могут возникнуть при настройке среды клиента виртуальных рабочих столов Windows, а также способы решения этих проблем.
 
-## <a name="provide-feedback"></a>Предоставление отзыва
+## <a name="provide-feedback"></a>Отзывы
 
 Посетите [техническое сообщество Виртуального рабочего стола Windows](https://techcommunity.microsoft.com/t5/Windows-Virtual-Desktop/bd-p/WindowsVirtualDesktop), чтобы обсудить службу "Виртуальный рабочий стол Windows" с группой разработчиков и активными членами сообщества.
 
@@ -49,7 +49,7 @@ ms.locfileid: "88005437"
 | Сообщения о лицензировании или ошибки                                                          | Если проблемы связаны с конкретным приложением или продуктом, обратитесь к группе, ответственной за этот продукт. |
 | Проблемы при использовании средств виртуальных рабочих столов Windows на GitHub (шаблоны Azure Resource Manager, средство диагностики, средство управления) | Сведения о проблемах см. в статье [Azure Resource Manager Templates for службы удаленных рабочих столов](https://github.com/Azure/RDS-Templates/blob/master/README.md) . |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Инструкции по устранению неполадок при создании клиента и пула узлов в среде Виртуального рабочего стола Windows см. в статье [Создание клиента и пула узлов](troubleshoot-set-up-issues-2019.md).
 - Инструкции по устранению неполадок при настройке виртуальной машины через Виртуальный рабочий стол Windows см. в статье [Конфигурация виртуальной машины узла сеанса](troubleshoot-vm-configuration-2019.md).

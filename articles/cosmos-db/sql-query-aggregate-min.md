@@ -9,10 +9,10 @@ ms.date: 12/02/2020
 ms.author: tisande
 ms.custom: query-reference
 ms.openlocfilehash: 679814822cca5a72bd261d3c8944863715e31f70
-ms.sourcegitcommit: 65db02799b1f685e7eaa7e0ecf38f03866c33ad1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96555409"
 ---
 # <a name="min-azure-cosmos-db"></a>MIN (Azure Cosmos DB)
@@ -52,10 +52,10 @@ FROM c
 
 - null
 - Логическое
-- number
+- Число
 - строка
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Математические функции в Azure Cosmos DB](sql-query-mathematical-functions.md)
 - [Системные функции в Azure Cosmos DB](sql-query-system-functions.md)

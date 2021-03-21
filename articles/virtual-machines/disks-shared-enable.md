@@ -9,10 +9,10 @@ ms.author: rogarana
 ms.subservice: disks
 ms.custom: references_regions, devx-track-azurecli
 ms.openlocfilehash: e8bb97196fcceea0c86f58fe4a63146e681c427e
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96500739"
 ---
 # <a name="enable-shared-disk"></a>Включить общий диск
@@ -205,6 +205,6 @@ PR_EXCLUSIVE_ACCESS_ALL_REGISTRANTS
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Если вы предпочитаете использовать шаблоны Azure Resource Manager для развертывания диска, доступны следующие примеры шаблонов:
-- [SSD (цен. категория "Премиум")](https://aka.ms/SharedPremiumDiskARMtemplate)
+- [Диск SSD (цен. категория "Премиум")](https://aka.ms/SharedPremiumDiskARMtemplate)
 - [Региональные диски Ultra](https://aka.ms/SharedUltraDiskARMtemplateRegional)
 - [Зональные Ultra Disks](https://aka.ms/SharedUltraDiskARMtemplateZonal)

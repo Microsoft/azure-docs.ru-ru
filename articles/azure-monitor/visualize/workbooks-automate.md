@@ -7,10 +7,10 @@ ms.tgt_pltfrm: ibiza
 ms.topic: conceptual
 ms.date: 04/30/2020
 ms.openlocfilehash: 77190b85da08d09cf05a02dcc5787f0c24229948
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100624639"
 ---
 # <a name="programmatically-manage-workbooks"></a>Программное управление книгами
@@ -83,7 +83,7 @@ ms.locfileid: "100624639"
 
 ### <a name="parameters"></a>Параметры
 
-|Параметры                |Объяснение                                                                                             |
+|Параметры                |Пояснение                                                                                             |
 |:-------------------------|:-------------------------------------------------------------------------------------------------------|
 | `name`                   | Имя ресурса шаблона книги в Azure Resource Manager.                                  |
 |`type`                    | Всегда Microsoft. Insights/воркбуктемплатес                                                            |
@@ -209,6 +209,6 @@ ms.locfileid: "100624639"
 ### <a name="limitations"></a>Ограничения
 По техническим причинам этот механизм нельзя использовать для создания экземпляров книг в коллекции _книг_ Application Insights. Мы работаем над устранением этого ограничения. В то же время `tsg` для развертывания Application Insights связанных книг рекомендуется использовать коллекцию руководств по устранению неполадок (воркбуктипе:).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как используются книги для создания новых [Azure Monitor для работы с хранилищем](../insights/storage-insights-overview.md).

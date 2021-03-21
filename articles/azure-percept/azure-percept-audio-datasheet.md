@@ -7,10 +7,10 @@ ms.service: azure-percept
 ms.topic: reference
 ms.date: 02/16/2021
 ms.openlocfilehash: 3e72aea657b82c2111bea1493b5654ec667c491b
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102425283"
 ---
 # <a name="azure-percept-audio-datasheet"></a>Спецификации Azure Percept Audio

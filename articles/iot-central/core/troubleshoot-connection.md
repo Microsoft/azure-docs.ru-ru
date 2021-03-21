@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.service: iot-central
 ms.custom: device-developer, devx-track-azurecli
 ms.openlocfilehash: d1a7c94152b611ea0dbea249156add617178d7ca
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98673240"
 ---
 # <a name="troubleshoot-why-data-from-your-devices-isnt-showing-up-in-azure-iot-central"></a>Устранение неполадок, при которых данные с устройств не отображаются в Azure IoT Central
@@ -210,7 +210,7 @@ tatype 'double'. Data '56'. All dates/times/datetimes/durations must be ISO 8601
 
 Если вы решили создать новый шаблон, который моделирует данные правильно, перенесите устройства из старого шаблона в новый шаблон. Дополнительные сведения см. в статье [Управление устройствами в приложении IOT Central Azure](howto-manage-devices.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вам нужна дополнительная помощь, вы можете обратиться к экспертам по Azure на [форумах MSDN Azure и Stack overflow](https://azure.microsoft.com/support/community/). Кроме того, вы можете отправить запрос в [службу поддержки Azure](https://portal.azure.com/#create/Microsoft.Support).
 

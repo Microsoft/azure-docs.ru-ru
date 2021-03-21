@@ -4,10 +4,10 @@ description: В этой статье описывается, как настр�
 ms.topic: conceptual
 ms.date: 09/23/2020
 ms.openlocfilehash: 307f9d9928042410dc9b4443aba5c019c592980c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101711303"
 ---
 # <a name="enable-monitoring-of-azure-arc-enabled-kubernetes-cluster"></a>Включение мониторинга кластеров Kubernetes с поддержкой Azure Arc
@@ -30,7 +30,7 @@ ms.locfileid: "101711303"
 
 - Поддерживается выпуск ОС Linux для основных и рабочих узлов: Ubuntu (18,04 LTS и 16,04 LTS).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы начать, у вас должны быть следующие компоненты:
 
@@ -154,7 +154,7 @@ $servicePrincipalClientSecret = [System.Net.NetworkCredential]::new("", $service
 $tenantId = (Get-AzSubscription -SubscriptionId $subscriptionId).TenantId
 ```
 
-Пример.
+Пример:
 
 ```powershell
 .\enable-monitoring.ps1 -clusterResourceId $azureArcClusterResourceId -servicePrincipalClientId $servicePrincipalClientId -servicePrincipalClientSecret $servicePrincipalClientSecret -tenantId $tenantId -kubeContext $kubeContext -workspaceResourceId $logAnalyticsWorkspaceResourceId -proxyEndpoint $proxyEndpoint
@@ -239,7 +239,7 @@ servicePrincipalClientSecret=$(echo $servicePrincipal | jq -r '.password')
 tenantId=$(echo $servicePrincipal | jq -r '.tenant')
 ```
 
-Пример.
+Пример:
 
 ```bash
 bash enable-monitoring.sh --resource-id $azureArcClusterResourceId --client-id $servicePrincipalClientId --client-secret $servicePrincipalClientSecret  --tenant-id $tenantId --kube-context $kubeContext  --workspace-id $logAnalyticsWorkspaceResourceId --proxy $proxyEndpoint
@@ -262,13 +262,13 @@ bash enable-monitoring.sh --resource-id $azureArcClusterResourceId --client-id $
 |proxyhost | Адрес или полное доменное имя прокси-сервера |
 |порт | Необязательный номер порта прокси-сервера |
 
-Например: `http://user01:password@proxy01.contoso.com:3128`
+Пример: `http://user01:password@proxy01.contoso.com:3128`
 
 Если указать протокол как **http**, HTTP-запросы создаются с помощью защищенного соединения SSL/TLS. Прокси-сервер должен поддерживать протоколы SSL/TLS.
 
 ### <a name="configure-using-powershell"></a>Настройка с помощью PowerShell
 
-Укажите имя пользователя и пароль, IP-адрес или полное доменное имя, а также номер порта для прокси-сервера. Пример.
+Укажите имя пользователя и пароль, IP-адрес или полное доменное имя, а также номер порта для прокси-сервера. Пример:
 
 ```powershell
 $proxyEndpoint = https://<user>:<password>@<proxyhost>:<port>
@@ -276,7 +276,7 @@ $proxyEndpoint = https://<user>:<password>@<proxyhost>:<port>
 
 ### <a name="configure-using-bash"></a>Настройка с помощью bash
 
-Укажите имя пользователя и пароль, IP-адрес или полное доменное имя, а также номер порта для прокси-сервера. Например:
+Укажите имя пользователя и пароль, IP-адрес или полное доменное имя, а также номер порта для прокси-сервера. Пример:
 
 ```bash
 export proxyEndpoint=https://<user>:<password>@<proxyhost>:<port>

@@ -13,10 +13,10 @@ ms.reviewer: rhicock
 ms.collection: M365-identity-device-management
 ms.custom: contperf-fy20q4
 ms.openlocfilehash: 80be5ca22f3dfb673f09327108e66fccc9de6ddd
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98918049"
 ---
 # <a name="password-policies-and-account-restrictions-in-azure-active-directory"></a>Политики паролей и ограничения учетных записей в Azure Active Directory
@@ -33,7 +33,7 @@ ms.locfileid: "98918049"
 
 В следующей таблице перечислены политики имен пользователей, которые применяются к локальным учетным записям AD DS, синхронизированным с Azure AD, а также только к облачным учетным записям пользователей, созданным непосредственно в Azure AD:
 
-| Свойство | Требования UserPrincipalName |
+| Свойство. | Требования UserPrincipalName |
 | --- | --- |
 | Допустимые символы |<ul> <li>A–Z</li> <li>a–z</li><li>0–9</li> <li> ' \. - \_ ! \# ^ \~</li></ul> |
 | Недопустимые символы |<ul> <li>Любой знак \@\", который не отделяет имя пользователя от домена.</li> <li>Не может содержать знак точки "." непосредственно перед знаком \@\".</li></ul> |
@@ -49,7 +49,7 @@ ms.locfileid: "98918049"
 
 Определены следующие параметры политики паролей Azure AD. Если не указано иное, эти параметры изменить нельзя.
 
-| Свойство | Requirements (Требования) |
+| Свойство. | Требования |
 | --- | --- |
 | Допустимые символы |<ul><li>A–Z</li><li>a–z</li><li>0–9</li> <li>@ # $ % ^ & * - _ ! + = [] {} &#124; \: ",. ? / \` ~ " ( ) ;</li> <li>пустое пространство</li></ul> |
 | Недопустимые символы | Знаки Юникода. |

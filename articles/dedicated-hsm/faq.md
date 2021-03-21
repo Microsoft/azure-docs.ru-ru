@@ -14,13 +14,13 @@ ms.topic: conceptual
 ms.date: 12/10/2020
 ms.author: keithp
 ms.openlocfilehash: 1f349931fb479be3b3ba936b3d0a665427357f29
-ms.sourcegitcommit: 1bdcaca5978c3a4929cccbc8dc42fc0c93ca7b30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97369044"
 ---
-# <a name="frequently-asked-questions-faq"></a>Часто задаваемые вопросы
+# <a name="frequently-asked-questions-faq"></a>Вопросы и ответы
 
 Здесь вы найдете ответы на распространенные вопросы о службе выделенных устройств HSM Microsoft Azure.
 
@@ -78,7 +78,7 @@ Thales предоставляет все программное обеспече
 * западная часть США
 * западная часть США 2
 * Центрально-южная часть США
-* Southeast Asia
+* Юго-Восточная Азия
 * Восточная Азия
 * Центральная Индия
 * Южная Индия
@@ -293,7 +293,7 @@ PKCS#11, Java (JCA/JCE), Microsoft CAPI и CNG, OpenSSL
 
 Перед запросом отзыва клиент должен иметь обнуление АППАРАТного модуля безопасности с помощью предоставленных клиентских средств HSM Thales.
 
-## <a name="performance-and-scale"></a>Производительность и масштабируемость
+## <a name="performance-and-scale"></a>Производительность и масштаб
 
 ### <a name="q-how-many-cryptographic-operations-are-supported-per-second-with-dedicated-hsm"></a>Вопрос. Сколько криптографических операций в секунду поддерживает служба выделенных устройств HSM?
 

@@ -7,10 +7,10 @@ ms.date: 12/10/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 00aba5d169a05eab25dcc63ca813955e71d09598
-ms.sourcegitcommit: 5db975ced62cd095be587d99da01949222fc69a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97092386"
 ---
 # <a name="enable-azure-multifactor-authentication-for-windows-virtual-desktop"></a>Включение многофакторной проверки подлинности Azure для виртуальных рабочих столов Windows
@@ -24,7 +24,7 @@ ms.locfileid: "97092386"
 
 Хотя запоминание учетных данных удобно, это также может сделать развертывание на корпоративных сценариях или персональных устройствах менее безопасным. Чтобы защитить пользователей, вы можете сделать так, чтобы клиент запросил учетные данные многофакторной проверки подлинности Azure чаще. В этой статье показано, как настроить политику условного доступа для виртуальных рабочих столов Windows, чтобы включить этот параметр.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы приступить к работе, необходимо выполнить следующие действия.
 

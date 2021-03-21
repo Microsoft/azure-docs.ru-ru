@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 5/03/2019
 ms.author: terrylan
 ms.openlocfilehash: f4a3b2afd8b1a5ffdbb1fe0db1c3e345a9c99154
-ms.sourcegitcommit: 17b36b13857f573639d19d2afb6f2aca74ae56c1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94412618"
 ---
 # <a name="azure-security-best-practices-and-patterns"></a>Рекомендации и шаблоны для обеспечения безопасности в Azure
@@ -38,7 +38,7 @@ ms.locfileid: "94412618"
 * [Рекомендации по безопасности Azure Service Fabric](service-fabric-best-practices.md)
 * [Рекомендации по обеспечению безопасности виртуальных машин Azure](iaas.md)
 * [Реализация архитектуры защищенной гибридной сети в Azure](/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
-* [Рекомендации по обеспечению безопасности "Интернет вещей"](../../iot-fundamentals/iot-security-best-practices.md)
+* [Рекомендации по обеспечению безопасности Интернет вещей](../../iot-fundamentals/iot-security-best-practices.md)
 * [Защита баз данных PaaS в Azure](paas-applications-using-sql.md)
 * [Защита мобильных приложений и веб-приложений PaaS с помощью службы приложений Azure](paas-applications-using-app-services.md)
 * [Защита мобильных приложений и веб-приложений PaaS с помощью службы хранилища Azure](paas-applications-using-storage.md)

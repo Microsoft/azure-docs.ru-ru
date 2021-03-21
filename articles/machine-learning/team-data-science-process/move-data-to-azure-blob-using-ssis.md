@@ -12,10 +12,10 @@ ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
 ms.openlocfilehash: 9572d612e7ee8e2fd72850ba14447e8449f0f371
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93322002"
 ---
 # <a name="move-data-to-or-from-azure-blob-storage-using-ssis-connectors"></a>Перемещение данных в хранилище BLOB-объектов Azure и из него с помощью соединителей SSIS
@@ -34,15 +34,15 @@ ms.locfileid: "93322002"
 > 
 > 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Для выполнения задач, описанных в этой статье, необходимо настроить подписку Azure и учетную запись хранения Azure. Для отправки или скачивания данных необходимо имя учетной записи хранения Azure и ключ учетной записи.
 
 * Сведения о настройке **подписки Azure** см. на странице [Создайте бесплатную учетную запись Azure уже сегодня](https://azure.microsoft.com/pricing/free-trial/).
 * Инструкции по созданию **учетной записи хранения** и сведениям об учетных записях и ключах [см. в](../../storage/common/storage-account-create.md)этой статье.
 
-Чтобы использовать **Соединители SSIS** , необходимо загрузить следующие компоненты:
+Чтобы использовать **Соединители SSIS**, необходимо загрузить следующие компоненты:
 
-* **SQL Server 2014 или 2016 Standard (или более поздняя версия)** : установка включает в себя SQL Server Integration Services.
+* **SQL Server 2014 или 2016 Standard (или более поздняя версия)**: установка включает в себя SQL Server Integration Services.
 * **Microsoft SQL Server 2014 или 2016 Integration Services пакет дополнительных компонентов для Azure**. эти соединители можно скачать соответственно, с [SQL Server 2014 Integration Services](https://www.microsoft.com/download/details.aspx?id=47366) и [SQL Server 2016 Integration Services](https://www.microsoft.com/download/details.aspx?id=49492) страниц.
 
 > [!NOTE]

@@ -12,10 +12,10 @@ ms.date: 02/28/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, automl
 ms.openlocfilehash: 0de3c9a7cf464f38a1a12d8bc19451fb1158a5ad
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102520512"
 ---
 # <a name="use-automated-ml-in-an-azure-machine-learning-pipeline-in-python"></a>Использование автоматизированного ML в конвейере Машинное обучение Azure в Python
@@ -483,7 +483,7 @@ model.get_port_data_reference().download('.')
 
 Наконец, фактические метрики и модель загружаются на локальный компьютер, как было сказано в разделе "анализ результатов конвейера" выше.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Запустите эту записную книжку Jupyter, где [приведен полный пример автоматизированного ML в конвейере](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/machine-learning-pipelines/nyc-taxi-data-regression-model-building/nyc-taxi-data-regression-model-building.ipynb) , который использует регрессию для прогнозирования такси году
 - [Создание автоматизированных экспериментов ML без написания кода](how-to-use-automated-ml-for-ml-models.md)

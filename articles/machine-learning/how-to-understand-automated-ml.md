@@ -12,10 +12,10 @@ ms.date: 12/09/2020
 ms.topic: conceptual
 ms.custom: how-to, contperf-fy21q2, automl
 ms.openlocfilehash: 6d8c56bc306a7ab0bf118d04f64d6523fc385cdd
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102520784"
 ---
 # <a name="evaluate-automated-machine-learning-experiment-results"></a>Оценка результатов автоматического эксперимента машинного обучения
@@ -248,6 +248,6 @@ spearman_correlation;| Корреляция Спирмена — это непа
 > [!NOTE]
 > В настоящее время модель Форекастткн не поддерживается автоматическими объяснениями ML, а другие модели прогнозирования могут иметь ограниченный доступ к средствам интерпретации.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 * Попробуйте [пример автоматизированной учебной записной книжки с описанием модели машинного обучения](https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/explain-model).
 * Для автоматических вопросов, связанных с МАШИНным обучением, обращайтесь к askautomatedml@microsoft.com .

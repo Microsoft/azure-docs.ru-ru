@@ -1,5 +1,5 @@
 ---
-title: Получить API отчета
+title: API получения отчета
 description: Этот API используется для получения аналитических отчетов, которые были запланированы в центре партнеров.
 ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
@@ -8,13 +8,13 @@ author: sayantanroy83
 ms.author: sroy
 ms.date: 3/08/2021
 ms.openlocfilehash: 3383af447f40ea984bce9cbc956f22ee6c5af200
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102584046"
 ---
-# <a name="get-report-api"></a>Получить API отчета
+# <a name="get-report-api"></a>API получения отчета
 
 Этот API возвращает все отчеты, которые были запланированы.
 
@@ -37,7 +37,7 @@ ms.locfileid: "102584046"
 
 **Параметр запроса**
 
-| **Имя параметра** | **Обязательное** | **Тип** | **Описание** |
+| **Имя параметра** | **Обязательно** | **Тип** | **Описание** |
 | --- | --- | --- | --- |
 | `reportId` | Нет | строка | Фильтр для получения сведений только об отчетах с `reportId` указанным в этом аргументе |
 | `reportName` | Нет | строка | Фильтр для получения сведений только об отчетах с `reportName` указанным в этом аргументе |

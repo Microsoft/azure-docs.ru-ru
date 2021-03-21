@@ -16,10 +16,10 @@ ms.topic: article
 ms.date: 08/16/2017
 ms.author: monicar
 ms.openlocfilehash: 785c87e8136430557af819cd8c7ab1db8f54c060
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102507727"
 ---
 # <a name="microsoft-azure-glossary-a-dictionary-of-cloud-terminology-on-the-azure-platform"></a>Словарь терминов Microsoft Azure: словарь терминов, связанных с облаком на платформе Azure
@@ -46,7 +46,7 @@ ms.locfileid: "102507727"
 ## <a name="azure-classic-deployment-model"></a><a name="classic-model"></a>классическая модель развертывания Azure
 Одна из двух [моделей развертывания](./azure-resource-manager/management/deployment-models.md) , которые используются для развертывания ресурсов в Azure (новой моделью является модель Azure Resource Manager). Некоторые службы Azure поддерживают только модель развертывания с помощью Resource Manager, некоторые — только классическую модель развертывания, а другие — обе модели. Поддерживаемые модели указаны в документации по соответствующей службе Azure.
 
-## <a name="azure-command-line-interface-cli"></a><a name="cli"></a>интерфейс командной строки Azure (CLI)
+## <a name="azure-command-line-interface-cli"></a><a name="cli"></a>Интерфейс командной строки Azure (CLI)
 Интерфейс командной строки, который можно использовать для управления службами Azure на компьютерах Windows, macOS и Linux.  Некоторыми службами или компонентами служб можно управлять только с помощью PowerShell или интерфейса командной строки. Ознакомьтесь с [Azure CLI](/cli/azure).
 
 ## <a name="azure-powershell"></a><a name="powershell"></a>Azure PowerShell
@@ -129,7 +129,7 @@ JSON-файл, который декларативно определяет од
 Соглашение клиента с корпорацией Майкрософт, которое позволяет им получать доступ к службам Azure. Цены на подписку и связанные условия регулируются предложением, выбранным для подписки.
 См. [Соглашение о подписке Microsoft Online](https://azure.microsoft.com/support/legal/subscription-agreement/) и статью [Связь между подписками Azure и службой Azure Active Directory](active-directory/fundamentals/active-directory-how-subscriptions-associated-directory.md).
 
-## <a name="tag"></a>tag
+## <a name="tag"></a>тег
 Условие индексирования, которое позволяет классифицировать ресурсы в соответствии с вашими требованиями к управлению или выставлению счетов. Если имеется сложная коллекция ресурсов, вы можете использовать теги, чтобы визуализировать эти активы наиболее оптимальным способом. Например, можно снабдить тегами ресурсы, которые выполняют в организации одну и ту же роль или относятся к одному отделу.  
 См. статью [Использование тегов для организации ресурсов в Azure](./azure-resource-manager/management/tag-resources.md).
 

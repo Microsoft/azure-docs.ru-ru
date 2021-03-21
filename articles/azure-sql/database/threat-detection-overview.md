@@ -14,10 +14,10 @@ ms.reviewer: vanto, sstein
 ms.date: 12/01/2020
 tags: azure-synapse
 ms.openlocfilehash: 931e914cd3c184136395a9bb9a7e148a90e9fb91
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96461940"
 ---
 # <a name="advanced-threat-protection-for-azure-sql-database-sql-managed-instance-and-azure-synapse-analytics"></a>Расширенная защита от угроз для базы данных SQL Azure, SQL Управляемый экземпляр и Azure синапсе Analytics
@@ -67,7 +67,7 @@ ms.locfileid: "96461940"
 
 - Дополнительные сведения о [расширенной защите от угроз в базе данных SQL azure & Azure синапсе](threat-detection-configure.md).
 - Дополнительные сведения о [расширенной защите от угроз в Azure SQL управляемый экземпляр](../managed-instance/threat-detection-configure.md).
-- Дополнительные сведения о [защитнике Azure для SQL](azure-defender-for-sql.md).
+- [Узнайте больше про Azure Defender для SQL](azure-defender-for-sql.md).
 - Дополнительные сведения об [аудите базы данных SQL Azure](../../azure-sql/database/auditing-overview.md)
 - Дополнительные сведения о [центре безопасности Azure](../../security-center/security-center-introduction.md)
 - Дополнительные сведения о ценах см. на [странице цен на базу данных SQL Azure](https://azure.microsoft.com/pricing/details/sql-database/) .

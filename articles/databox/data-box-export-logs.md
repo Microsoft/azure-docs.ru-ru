@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 07/10/2020
 ms.author: alkohli
 ms.openlocfilehash: 3a915ac8de83a5e183660ec4a3d05044eafff4a9
-ms.sourcegitcommit: 2a8a53e5438596f99537f7279619258e9ecb357a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94337514"
 ---
 # <a name="tracking-and-event-logging-for-your-azure-data-box-and-azure-data-box-heavy-export-orders"></a>Отслеживание и ведение журнала событий для Azure Data Box и Azure Data Box Heavy экспорт заказов
@@ -23,13 +23,13 @@ ms.locfileid: "94337514"
 
 В следующей таблице приведены сводные сведения о шагах порядка экспорта Data Box и средствах, доступных для трассировки и аудита заказа на каждом шаге.
 
-| Стадия порядка экспорта Data Box       | Средство для мониторинга и аудита                                                                        |
+| Стадия порядка экспорта Data Box       | Средство для отслеживания и аудита                                                                        |
 |----------------------------|------------------------------------------------------------------------------------------------|
 | Создание заказа               | [Настройка контроля доступа в порядке с помощью Azure RBAC](#set-up-access-control-on-the-order) <br> [Включить подробный журнал в указанном порядке](#enable-verbose-log-in-the-order)                                                    |
-| Порядок обработки            | [Отслеживание порядка](#track-the-order) по <ul><li> Портал Azure </li><li> Веб-сайт перевозчика для доставки </li><li>Уведомления по электронной почте</ul> |
+| Заказ обработан            | [Отслеживание порядка](#track-the-order) по <ul><li> портала Azure; </li><li> веб-сайта оператора доставки; </li><li>уведомления по электронной почте.</ul> |
 | Настройка устройства              | [Журналы действий](#query-activity-logs-during-setup) доступа к учетным данным устройства              |
 | Копирование данных с устройства        | [Проверка журналов копирования](#copy-log) <br> [Ознакомьтесь с подробными журналами](#verbose-log) перед копированием данных            |
-| Очистки данных с устройства   | [Просмотр цепочки журналов поставок](#get-chain-of-custody-logs-after-data-erasure) , включая журналы аудита и журнал заказов                |
+| Удаление данных с устройства   | [Просмотр цепочки журналов поставок](#get-chain-of-custody-logs-after-data-erasure) , включая журналы аудита и журнал заказов                |
 
 
 ## <a name="set-up-access-control-on-the-order"></a>Настройка контроля доступа в заказе
@@ -252,7 +252,7 @@ The authentication information fields provide detailed information about this sp
 
 - Сведения об отслеживании несущей для вашего устройства.
 - События с действием *секурирасе* . Эти события соответствуют очисткиу данных на диске.
-- Data Box ссылки на журналы. Отображаются пути для *журналов аудита* , *журналов копирования* и файлов *BOM* .
+- Data Box ссылки на журналы. Отображаются пути для *журналов аудита*, *журналов копирования* и файлов *BOM* .
 
 Ниже приведен пример журнала заказа из портал Azure.
 
@@ -303,6 +303,6 @@ Audit Logs Path      : azuredatabox-chainofcustodylogs\<GUID>\<Device-serial-no>
 BOM Files Path       : azuredatabox-chainofcustodylogs\<GUID>\<Device-serial-no>
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как [устранять неполадки Data Box и Data Box Heavy](data-box-troubleshoot.md).

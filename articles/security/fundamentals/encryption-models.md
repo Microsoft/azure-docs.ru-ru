@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 09/09/2020
 ms.author: mbaldwin
 ms.openlocfilehash: 9194f38ddea5570d94ba6c87ea6a537cb41fb98c
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102051384"
 ---
 # <a name="data-encryption-models"></a>Модели шифрования данных
@@ -155,7 +155,7 @@ ms.locfileid: "102051384"
 | Распознавание речи           | Да                | Да                | -                  |
 | Персонализатор                     | Да                | Да                | -                  |
 | QnA Maker                        | Да                | Да                | -                  |
-| Службы "Речь"                  | Да                | Да                | -                  |
+| Службы речи                  | Да                | Да                | -                  |
 | Перевод текстов                  | Да                | Да                | -                  |
 | Power BI                         | Да                | Да, RSA 4096-bit  | -                  |
 | **Аналитика**                    |                    |                    |                    |
@@ -213,7 +213,7 @@ ms.locfileid: "102051384"
 | Подготовка устройств к добавлению в центр Интернета вещей      | Да                | Да                | -                  |
 | **Управление**    |                    |                    |                    |
 | Azure Site Recovery              | Да                | -                  | -                  |
-| Миграция Azure                    | Да                | Да                | -                  |
+| Служба "Миграция Azure"                    | Да                | Да                | -                  |
 | **Носитель**                        |                    |                    |                    |
 | Службы мультимедиа                   | Да                | Да                | Да                |
 | **Безопасность**                     |                    |                    |                    |

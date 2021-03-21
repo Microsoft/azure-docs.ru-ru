@@ -11,10 +11,10 @@ ms.author: markjon
 ms.reviewer: mathoma
 ms.date: 03/19/2021
 ms.openlocfilehash: 0e1b44667a5ff42978b22ab9450d6a8e9870960b
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103563221"
 ---
 # <a name="migration-guide-sql-server-to-sql-server-on-azure-vms"></a>Руководство по миграции. Перенос данных из SQL Server в SQL Server на виртуальных машинах Azure 
@@ -154,7 +154,7 @@ ms.locfileid: "103563221"
 
 | **Компонент** | **Компонент** | **Методы миграции** |
 | --- | --- | --- |
-| **Базы данных** | Моделирование  | Скрипт с SQL Server Management Studio |
+| **Базы данных** | Модель  | Скрипт с SQL Server Management Studio |
 || Базе | Запланируйте перемещение базы данных TempDB на [временный диск виртуальной машины Azure (SSD](../../virtual-machines/windows/performance-guidelines-best-practices.md#temporary-disk)) для лучшей производительности. Не забудьте выбрать размер виртуальной машины, имеющей достаточный локальный SSD для размещения базы данных TempDB. |
 || Пользовательские базы данных с FILESTREAM |  Используйте методы [резервного копирования и восстановления](../../virtual-machines/windows/migrate-to-vm-from-sql-server.md#back-up-and-restore) для миграции. DMA не поддерживает базы данных с FILESTREAM. |
 | **Безопасность** | Имена входа SQL Server и Windows | Используйте DMA для [переноса имен входа пользователей](/sql/dma/dma-migrateserverlogins). |
@@ -165,7 +165,7 @@ ms.locfileid: "103563221"
 || Триггеры сервера | Скрипт с SQL Server Management Studio. |
 | **Репликация** | Локальные публикации | Скрипт с SQL Server Management Studio. |
 || Локальные подписчики | Скрипт с SQL Server Management Studio. |
-| **Polybase** | PolyBase | Скрипт с SQL Server Management Studio. |
+| **PolyBase** | PolyBase | Скрипт с SQL Server Management Studio. |
 | **Управление** | Database Mail | Скрипт с SQL Server Management Studio. |
 | **Агент SQL Server** | Задания | Скрипт с SQL Server Management Studio. |
 || видны узлы | Скрипт с SQL Server Management Studio. |
@@ -207,7 +207,7 @@ ms.locfileid: "103563221"
 - [Настройка производительности виртуальных машин SQL Azure](../../virtual-machines/windows/performance-guidelines-best-practices.md).
 - [Центр оптимизации затрат Azure](https://azure.microsoft.com/overview/cost-optimization/).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Чтобы проверить доступность служб, применимых к SQL Server, см. [Глобальный центр инфраструктуры Azure](https://azure.microsoft.com/global-infrastructure/services/?regions=all&amp;products=synapse-analytics,virtual-machines,sql-database) .
 
