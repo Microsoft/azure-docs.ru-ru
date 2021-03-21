@@ -14,10 +14,10 @@ ms.date: 04/02/2019
 tags: ''
 keywords: ''
 ms.openlocfilehash: abcaff5979aed38ce47df08cc953829f3003f7b0
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102561557"
 ---
 # <a name="install-ibm-zdt-devtest-environment-on-azure"></a>Установка среды разработки и тестирования IBM зд&T в Azure
@@ -40,7 +40,7 @@ Azure и Azure Stack поддерживают следующие версии:
 
 В этой статье показано, как настроить Z-среду разработки и тестирования (ЗД&T) Enterprise Edition в Azure. Затем вы можете использовать веб-сервер зд&T Enterprise Edition для создания и управления средами на основе Z в Azure.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 > [!NOTE]
 > IBM позволяет устанавливать зд&T Enterprise Edition только в средах разработки и тестирования —*не* в рабочих средах.
@@ -138,6 +138,6 @@ Azure и Azure Stack поддерживают следующие версии:
 
 3. Вставьте URL-адрес в веб-браузер, чтобы открыть компонент управления для установки зд&T.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Настройка управляемого распределения для разработчиков приложений (АДКД) в IBM зд&T v1](./demo.md)

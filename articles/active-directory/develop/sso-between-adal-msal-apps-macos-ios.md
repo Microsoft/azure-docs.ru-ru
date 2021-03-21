@@ -14,10 +14,10 @@ ms.author: marsma
 ms.reviewer: ''
 ms.custom: aaddev
 ms.openlocfilehash: 396e9cfeace8791a59dec4a9c9c7203212f57304
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99584253"
 ---
 # <a name="how-to-sso-between-adal-and-msal-apps-on-macos-and-ios"></a>Практические руководства. единый вход между приложениями ADAL и MSAL в macOS и iOS
@@ -49,8 +49,8 @@ MSAL и ADAL используют разные идентификаторы уч
 | Идентификатор учетной записи                | MSAL                                                         | ADAL 2.7. x      | Старая версия ADAL (до ADAL 2.7. x) |
 | --------------------------------- | ------------------------------------------------------------ | --------------- | ------------------------------ |
 | отображаемый Идентификатор            | `username`                                                   | `userId`        | `userId`                       |
-| уникальный неотображаемый идентификатор | `identifier`                                                 | `homeAccountId` | Недоступно                            |
-| Идентификатор учетной записи не известен               | Запрос всех учетных записей через `allAccounts:` API в `MSALPublicClientApplication` | Недоступно             | Недоступно                            |
+| уникальный неотображаемый идентификатор | `identifier`                                                 | `homeAccountId` | Н/Д                            |
+| Идентификатор учетной записи не известен               | Запрос всех учетных записей через `allAccounts:` API в `MSALPublicClientApplication` | Н/Д             | Н/Д                            |
 
 Это интерфейс, `MSALAccount` предоставляющий такие идентификаторы:
 

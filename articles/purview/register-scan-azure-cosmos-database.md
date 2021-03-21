@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 10/9/2020
 ms.openlocfilehash: 1aaeed1973ebd15af312b722ab61938aa4271947
-ms.sourcegitcommit: b6267bc931ef1a4bd33d67ba76895e14b9d0c661
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97696245"
 ---
 # <a name="register-and-scan-azure-cosmos-database-sql-api"></a>Регистрация и проверка базы данных Azure Cosmos (API SQL)
@@ -22,7 +22,7 @@ ms.locfileid: "97696245"
 
 База данных Azure Cosmos (API SQL) поддерживает полный и добавочный просмотр для записи метаданных и схемы. Проверки также классифицируют данные автоматически на основе системных и настраиваемых правил классификации.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Перед регистрацией источников данных создайте учетную запись Azure зрения. Дополнительные сведения о создании учетной записи зрения см. в разделе [Краткое руководство. Создание учетной записи Azure зрения](create-catalog-portal.md).
 - Необходимо быть администратором источника данных Azure зрения.

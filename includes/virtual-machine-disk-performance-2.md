@@ -9,10 +9,10 @@ ms.date: 10/12/2020
 ms.author: albecker1
 ms.custom: include file
 ms.openlocfilehash: 82b4c127f983f3133326bf7fb538e40713ef9655
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100580405"
 ---
 ![Диаграмма, показывающая спецификации D s версии 3.](media/vm-disk-performance/dsv3-documentation.jpg)

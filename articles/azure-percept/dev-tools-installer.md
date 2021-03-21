@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 02/18/2021
 ms.custom: template-how-to
 ms.openlocfilehash: 66498fabadc0784a4a4ab1c3762daaaa9a5738c4
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102503221"
 ---
 # <a name="dev-tools-pack-installer-overview"></a>Обзор установщика пакета средств разработки
@@ -87,7 +87,7 @@ ms.locfileid: "102503221"
         > 
         - Установщик не поддерживается в Apple M1.
 
-## <a name="instructions"></a>Instructions
+## <a name="instructions"></a>Инструкции
 
 1. Скачайте установщик пакета средств разработки для [Windows](https://go.microsoft.com/fwlink/?linkid=2132187), [Linux](https://go.microsoft.com/fwlink/?linkid=2132186)и [Mac](https://go.microsoft.com/fwlink/?linkid=2132296).
 
@@ -99,13 +99,13 @@ ms.locfileid: "102503221"
         
     1. Для Mac:
     
-        1. После загрузки переместите файл Дев-тулс-ПАКК-Инсталлер. app в папку приложения.
+        1. После загрузки переместите файл Dev-Tools-Pack-Installer.app в папку приложения.
         
-        1. Щелкните **Дев-тулс-ПАКК-Инсталлер. app** , чтобы открыть мастер установки.
+        1. Щелкните **Dev-Tools-Pack-Installer.app** , чтобы открыть мастер установки.
         
         1. Если вы получаете диалоговое окно "неопознанный разработчик", сделайте следующее:
         
-            1. Последовательно выберите пункты системные настройки — > безопасность & конфиденциальность > общие и нажмите кнопку "открыть все равно" рядом с "Дев-тулс-ПАКК-Инсталлер. App".
+            1. Последовательно выберите пункты системные настройки — > безопасность & конфиденциальность > общие и нажмите кнопку "открыть все равно" рядом с "Dev-Tools-Pack-Installer.app".
         
             1. Снова щелкните значок электронного меню на закрепления
         

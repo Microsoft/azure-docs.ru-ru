@@ -9,10 +9,10 @@ ms.date: 10/08/2020
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 11d2172d085fe9b47587f4084908f99d7b54437e
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92103243"
 ---
 При создании классических виртуальных сетей на портале Azure имя, которое вы просматриваете, не является полным именем, используемым для PowerShell. Например, если виртуальная сеть отображается на портале с именем **TestVNet1**, то в файле конфигурации сети ее имя может быть гораздо длиннее. Для виртуальной сети в имени группы ресурсов "ClassicRG" может выглядеть примерно так: **Group ClassicRG TestVNet1**. При создании подключений важно использовать значения, приведенные в файле конфигурации сети.

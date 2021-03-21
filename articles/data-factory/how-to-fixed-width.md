@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 8/18/2019
 ms.author: makromer
 ms.openlocfilehash: 2297364e8f1a531b4512f2497bc4d99963d61179
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100386209"
 ---
 # <a name="process-fixed-length-text-files-by-using-data-factory-mapping-data-flows"></a>Обработка текстовых файлов фиксированной длины с помощью потоков данных сопоставления фабрики данных
@@ -87,6 +87,6 @@ ms.locfileid: "100386209"
 
   Теперь данные с фиксированной шириной разбиваются на четыре символа и присвоены значениям col1, col2, Col3, Col4 и т. д. На основе предыдущего примера данные разбиваются на четыре столбца.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Создайте оставшуюся часть логики потока данных с помощью [преобразования потоков данных](concepts-data-flow-overview.md)сопоставления.

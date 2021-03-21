@@ -15,10 +15,10 @@ ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 1636e49099851337d82494ebe168b8ec5194fa20
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103011941"
 ---
 # <a name="implement-failover-streaming-with-media-services-v2"></a>Реализация потоковой передачи отработки отказа с помощью служб мультимедиа v2
@@ -53,7 +53,7 @@ ms.locfileid: "103011941"
 * Зашифрованные ресурсы хранилища (AssetCreationOptions.StorageEncrypted) нельзя использовать для репликации (потому что ключ шифрования в учетных записях служб мультимедиа будет разным). 
 * Чтобы воспользоваться преимуществами динамической упаковки, убедитесь, что конечная точка потоковой передачи, из которой нужно передавать содержимое потоком, находится в состоянии **Выполняется**.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Две учетные записи служб мультимедиа в новой или существующей подписке Azure. См. статью [Создание учетной записи служб мультимедиа](media-services-portal-create-account.md).
 * Операционные системы: Windows 7, Windows 2008 R2 или Windows 8.

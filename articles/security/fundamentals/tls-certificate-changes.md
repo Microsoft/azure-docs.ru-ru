@@ -10,10 +10,10 @@ ms.topic: article
 ms.date: 11/10/2020
 ms.author: mbaldwin
 ms.openlocfilehash: 9e4edbcfd9e4180e727cd885902d9f0150a967ca
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100389405"
 ---
 # <a name="azure-tls-certificate-changes"></a>Изменения TLS-сертификатов Azure  
@@ -89,6 +89,6 @@ TLS-сертификаты, используемые службами Azure, б�
     - http://ocsp&#46;msocsp&#46;com.
     - http://www&#46; Microsoft&#46;com/пкиопс
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если у вас есть дополнительные вопросы, свяжитесь с нами через [службу поддержки](https://azure.microsoft.com/support/options/).

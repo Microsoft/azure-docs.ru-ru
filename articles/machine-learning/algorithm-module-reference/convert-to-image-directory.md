@@ -10,10 +10,10 @@ author: likebupt
 ms.author: keli19
 ms.date: 11/12/2020
 ms.openlocfilehash: 1489ce74da2ecff5212feb5a1a2e3c9151b73424
-ms.sourcegitcommit: dc342bef86e822358efe2d363958f6075bcfc22a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94555589"
 ---
 # <a name="convert-to-image-directory"></a>Преобразование в каталог изображений
@@ -71,13 +71,13 @@ ms.locfileid: "94555589"
 
 ###  <a name="expected-inputs"></a>Ожидаемые входные данные  
 
-| Имя          | Тип                  | Описание   |
+| Имя          | Type                  | Описание   |
 | ------------- | --------------------- | ------------- |
 | Входной набор данных | Анидиректори, ZipFile | Входной набор данных |
 
 ###  <a name="output"></a>Выходные данные  
 
-| Имя                   | Тип           | Описание            |
+| Имя                   | Type           | Описание            |
 | ---------------------- | -------------- | ---------------------- |
 | Выходной каталог образа | имажедиректори | Выходной каталог образа |
 

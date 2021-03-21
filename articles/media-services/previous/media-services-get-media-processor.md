@@ -16,10 +16,10 @@ ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 6ce2a28ff9b34373cc716ea397927ef160bd1097
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103013352"
 ---
 # <a name="how-to-get-a-media-processor-instance"></a>Как получить экземпляр обработчика мультимедиа
@@ -66,6 +66,6 @@ private static IMediaProcessor GetLatestMediaProcessorByName(string mediaProcess
 
 [!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы знаете, как получить экземпляр обработчика мультимедиа, перейдите в раздел [Кодировка актива](media-services-dotnet-encode-with-media-encoder-standard.md) , в котором будет показано, как использовать Media Encoder Standard для кодирования ресурса-контейнера.

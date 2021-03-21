@@ -7,10 +7,10 @@ ms.custom: devx-track-csharp, devx-track-js
 ms.date: 03/25/2019
 ms.author: cshoe
 ms.openlocfilehash: f75f42f3879f551a945bdeb2d88450ae3b9d6106
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98674156"
 ---
 # <a name="strategies-for-testing-your-code-in-azure-functions"></a>Методика тестирования кода с помощью Функций Azure
@@ -51,7 +51,7 @@ ms.locfileid: "98674156"
 
 Вы создадите новый класс с именем `ListLogger` , содержащий внутренний список сообщений для оценки во время тестирования. Для реализации требуемого `ILogger` интерфейса классу требуется область. Следующий класс разимитирует область для тестовых случаев, передаваемых в `ListLogger` класс.
 
-Создайте новый класс в проекте *functions. Tests* с именем **NullScope.CS** и введите следующий код:
+Создайте новый класс в проекте *functions. Tests* с именем **нуллскопе. CS** и введите следующий код:
 
 ```csharp
 using System;
@@ -69,7 +69,7 @@ namespace Functions.Tests
 }
 ```
 
-Затем создайте новый класс в проекте *functions. Tests* с именем **ListLogger.CS** и введите следующий код:
+Затем создайте новый класс в проекте *functions. Tests* с именем **листлогжер. CS** и введите следующий код:
 
 ```csharp
 using Microsoft.Extensions.Logging;
@@ -115,7 +115,7 @@ namespace Functions.Tests
 
 Коллекция `Logs` является экземпляром `List<string>` и инициализируется в конструкторе.
 
-Затем создайте новый файл в файле *functions. Tests* Project с именем **LoggerTypes.CS** и введите следующий код:
+Затем создайте новый файл в файле *functions. Tests* Project с именем **логжертипес. CS** и введите следующий код:
 
 ```csharp
 namespace Functions.Tests
@@ -130,7 +130,7 @@ namespace Functions.Tests
 
 Это перечисление определяет тип средства ведения журнала, используемого в тестах.
 
-Теперь создайте новый класс в проекте *functions. Tests* с именем **TestFactory.CS** и введите следующий код:
+Теперь создайте новый класс в проекте *functions. Tests* с именем **тестфактори. CS** и введите следующий код:
 
 ```csharp
 using Microsoft.AspNetCore.Http;
@@ -201,7 +201,7 @@ namespace Functions.Tests
 
 - **Креателогжер**: в зависимости от типа средства ведения журнала этот метод возвращает класс ведения журнала, используемый для тестирования. `ListLogger` следит за сообщениями в журнале, доступными для оценки в тестах.
 
-Наконец, создайте новый класс в проекте *functions. Tests* с именем **FunctionsTests.CS** и введите следующий код:
+Наконец, создайте новый класс в проекте *functions. Tests* с именем **функтионстестс. CS** и введите следующий код:
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;
@@ -381,7 +381,7 @@ npm test
 
 Затем в тесте установите точку останова и нажмите клавишу **F5**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы узнали, как записывать автоматизированные тесты для функций, изучите следующие ресурсы.
 

@@ -18,10 +18,10 @@ ms.author: markvi
 ms.reviewer: dhanyahk
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 86ad698793d562f93f9972903ca21e50c209c79c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100580003"
 ---
 # <a name="install-and-use-the-log-analytics-views-for-azure-active-directory"></a>Установка и использование представлений Log Analytics для Azure Active Directory
@@ -31,7 +31,7 @@ ms.locfileid: "100580003"
 * Журналы аудита. [отчет об активности журналов аудита](concept-audit-logs.md) предоставляет доступ к журналу каждой задачи, выполняемой в клиенте.
 * Журналы входа. с помощью отчета " [действия при входе](concept-sign-ins.md)" можно определить, кто выполнил задачи, зарегистрированные в журналах аудита.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы использовать представления Log Analytics, вам потребуется следующее:
 
@@ -71,7 +71,7 @@ ms.locfileid: "100580003"
 
 7. Выберите **Создать правило генерации оповещений**, чтобы создать оповещение. Теперь оповещения будут отображаться каждый раз, когда произойдет ошибка входа в систему.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Анализ журналов действий с помощью журналов Azure Monitor](howto-analyze-activity-logs-log-analytics.md)
 * [Начало работы с журналами Azure Monitor на портале Azure](../../azure-monitor/logs/log-analytics-tutorial.md)

@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 11/27/2018
 ms.author: mayg
 ms.openlocfilehash: 56ac58e47bffc73c7079af043ad567a77e8f3323
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101735511"
 ---
 # <a name="set-up-disaster-recovery-for-a-multi-tier-iis-based-web-application"></a>Настройка аварийного восстановления для многоуровневого веб-приложения на основе IIS
@@ -26,7 +26,7 @@ ms.locfileid: "101735511"
 
 В этой статье описывается защита веб-приложения на основе служб IIS с помощью [Azure Site Recovery](site-recovery-overview.md). В ней рассматриваются передовые методы репликации трехуровневого веб-приложения на основе IIS в Azure, выполнение отработки аварийного восстановления и выполнение отработки отказа приложения в Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем начать, необходимо знать, как выполнять следующие задачи:
 

@@ -7,10 +7,10 @@ ms.service: cosmos-db
 ms.topic: how-to
 ms.date: 10/15/2020
 ms.openlocfilehash: 88c40452da72ed4ab43d2d7613636136a5b78cfe
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94550109"
 ---
 # <a name="migrate-your-application-to-use-the-azure-cosmos-db-net-sdk-v2"></a>Перенос приложения для использования пакета SDK для Azure Cosmos DB .NET версии 2
@@ -21,7 +21,7 @@ ms.locfileid: "94550109"
 
 В этой статье описываются некоторые рекомендации по обновлению существующего приложения .NET версии 1 для Azure Cosmos DB API .NET v2 для Core (SQL). Azure Cosmos DB .NET SDK v2 соответствует `Microsoft.Azure.DocumentDB` пространству имен. Сведения, приведенные в этом документе, можно использовать при переносе приложения из любой из следующих Azure Cosmos DB платформ .NET для использования пакета SDK v2 `Microsoft.Azure.Cosmos` :
 
-* Пакет SDK для Azure Cosmos DB .NET Framework v1 для SQL API
+* Пакет SDK для Azure Cosmos DB платформа .NET Framework v1 для SQL API
 * Azure Cosmos DB пакет SDK для .NET Core v1 для API SQL
 
 ## <a name="whats-available-in-the-net-v2-sdk"></a>Что доступно в пакете SDK для .NET v2

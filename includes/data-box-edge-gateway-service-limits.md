@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 02/07/2019
 ms.author: alkohli
 ms.openlocfilehash: 7eb9a6b157b0ab5d723a90a464151895506c4980
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96027073"
 ---
 - Учетная запись хранения должна быть физически ближе всего к региону, где развернуто устройство (может отличаться от места развертывания службы).

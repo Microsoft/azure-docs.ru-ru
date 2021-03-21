@@ -14,10 +14,10 @@ ms.topic: error-reference
 ms.date: 05/07/2019
 ms.author: inhenkel
 ms.openlocfilehash: 994e5ae0647f350e0a64f35318bd5803f4ed79b2
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98894989"
 ---
 # <a name="streaming-endpoint-origin-errors"></a>Ошибки конечной точки потоковой передачи (источника)

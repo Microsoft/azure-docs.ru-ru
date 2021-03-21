@@ -6,10 +6,10 @@ ms.date: 12/03/2020
 ms.author: tomfitz
 author: tfitzmac
 ms.openlocfilehash: 451323058ad743d6e26fc8bcea27d1b44c76f543
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97674048"
 ---
 # <a name="default-test-cases-for-arm-template-test-toolkit"></a>Тестовые случаи по умолчанию для набора средств тестирования шаблонов ARM
@@ -691,7 +691,7 @@ ms.locfileid: "97674048"
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о запуске набора средств тестирования см. в статье [Использование набора средств тестирования ARM](test-toolkit.md).
 - Сведения о модуле Microsoft Learn, посвященном использованию набора тестов, см. в разделе [Предварительный просмотр изменений и проверка ресурсов Azure с помощью набора средств для тестирования шаблонов ARM](/learn/modules/arm-template-test/).

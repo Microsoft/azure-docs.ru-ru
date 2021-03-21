@@ -6,10 +6,10 @@ ms.topic: reference
 ms.date: 02/24/2017
 ms.author: cshoe
 ms.openlocfilehash: dde3b95c7997a7f742a9d48a964f4275169f6e9c
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92106932"
 ---
 # <a name="azure-cosmos-db-trigger-and-bindings-for-azure-functions-2x-and-higher-overview"></a>Azure Cosmos DB триггеры и привязки для функций Azure 2. x и более поздних обзоров
@@ -20,7 +20,7 @@ ms.locfileid: "92106932"
 
 В этом наборе статей объясняется, как работать с привязками [Azure Cosmos DB](../cosmos-db/serverless-computing-database.md) в функциях Azure 2. x и более поздних версий. Служба "Функции Azure" поддерживает привязки триггера, а также входные и выходные привязки для Azure Cosmos DB.
 
-| Действие | Тип |
+| Действие | Type |
 |---------|---------|
 | Выполнение функции при создании или изменении документа Azure Cosmos DB | [Триггер](./functions-bindings-cosmosdb-v2-trigger.md) |
 | Чтение Azure Cosmos DB документа | [Входная привязка](./functions-bindings-cosmosdb-v2-input.md) |

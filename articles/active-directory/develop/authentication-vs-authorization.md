@@ -14,10 +14,10 @@ ms.author: ryanwi
 ms.reviewer: jmprieur, saeeda, sureshja, hirsin
 ms.custom: aaddev, identityplatformtop40, scenarios:getting-started
 ms.openlocfilehash: 5244a8e572abb56c00d87d0bdd7e8d1291af9b9e
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99581913"
 ---
 # <a name="authentication-vs-authorization"></a>Проверка подлинности и авторизация
@@ -54,7 +54,7 @@ Azure Active Directory (Azure AD) — это централизованный 
 * **OAuth и SAML**. платформа использует OAuth 2,0 для авторизации и SAML для проверки подлинности. Дополнительные сведения о том, как использовать эти протоколы вместе для проверки подлинности пользователя и получения авторизации для доступа к защищенному ресурсу, см. в разделе [платформа Microsoft Identity и процесс утверждения носителя OAuth 2,0 SAML](./scenario-token-exchange-saml-oauth.md).
 * **OpenID Connect Connect и SAML**: платформа использует как OpenID Connect Connect, так и SAML для проверки подлинности пользователя и включения единого входа. Проверка подлинности SAML обычно используется с поставщиками удостоверений, например службы федерации Active Directory (AD FS) (AD FS), Федеративных в Azure AD, поэтому часто используется в корпоративных приложениях. OpenID Connect Connect обычно используется для приложений, которые полностью находятся в облаке, например для мобильных приложений, веб-сайтов и веб-API.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Другие разделы, посвященные основам проверки подлинности и авторизации:
 
