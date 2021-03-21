@@ -12,10 +12,10 @@ ms.date: 11/12/2020
 ms.author: gasinh
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 38b484bd67f3354132675f343dcc06bd7f9d48a0
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102499820"
 ---
 # <a name="f5-big-ip-access-policy-manager-and-azure-active-directory-integration-for-secure-hybrid-access"></a>F5 крупный — диспетчер политики доступа к IP-адресу и интеграция Azure Active Directory для безопасного гибридного доступа
@@ -77,7 +77,7 @@ SHA решает эту слабую точку, позволяя организ
 | 5. | КРУПНЫЙ IP-адрес запрашивает дополнительные сведения о сеансе для включения [единого входа](../hybrid/how-to-connect-sso.md) и [управления доступом на основе ролей (RBAC)](../../role-based-access-control/overview.md) в опубликованную службу. |
 | 6. | BIG-IP перенаправляет запрос клиента в серверную службу
 
-## <a name="user-experience"></a>Взаимодействие с пользователем
+## <a name="user-experience"></a>Возможности для пользователя
 
 Является ли непосредственным сотрудником, дочерним или потребителем, что большинство пользователей уже знакомы с входом в Office 365, поэтому доступ к службам с большими IP-адресами через SHA остается практически знакомым.
 
@@ -101,7 +101,7 @@ SHA решает эту слабую точку, позволяя организ
 
 ![На изображении показан поток мониторинга](media/f5-aad-integration/azure-sentinel.png)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Интеграция F5 BIG-IP с Azure AD для SHA имеет следующие предварительные требования:
 

@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 02/03/2021
 ms.openlocfilehash: 5a89e9ae05b0733c865d537ffeb1714d3b3ebef1
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102489367"
 ---
 # <a name="creating-queries-in-azure-cognitive-search"></a>Создание запросов в Когнитивный поиск Azure

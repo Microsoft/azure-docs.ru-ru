@@ -10,10 +10,10 @@ ms.date: 09/04/2020
 ms.subservice: blobs
 ms.custom: devx-track-js
 ms.openlocfilehash: bbb996362df1f99a8702de310bc11f6828cc303a
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103008456"
 ---
 # <a name="static-website-hosting-in-azure-storage"></a>Размещение статических веб-сайтов в службе хранилища Azure
