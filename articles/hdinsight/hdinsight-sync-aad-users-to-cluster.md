@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 11/21/2019
 ms.openlocfilehash: a3307c5d677028c17717c0d591790f0373f131d6
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98931632"
 ---
 # <a name="synchronize-azure-active-directory-users-to-an-hdinsight-cluster"></a>Синхронизация пользователей Azure Active Directory с кластером HDInsight
 
 [Кластеры HDInsight с корпоративный пакет безопасности (ESP)](./domain-joined/hdinsight-security-overview.md) могут использовать строгую проверку подлинности для пользователей Azure Active Directory (Azure AD), а также политики *управления доступом на основе ролей Azure (Azure RBAC)* . При добавлении пользователей и групп в Azure AD можно синхронизировать пользователей, которым необходим доступ к кластеру.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Если вы еще этого не сделали, [создайте кластер HDInsight с Корпоративным пакетом безопасности](./domain-joined/apache-domain-joined-configure-using-azure-adds.md).
 
@@ -35,7 +35,7 @@ ms.locfileid: "98931632"
 
     ![портал Azure область пользователя "Выбор групп"](./media/hdinsight-sync-aad-users-to-cluster/hdinsight-new-user-form.png)
 
-4. Нажмите кнопку **Создать**.
+4. Нажмите кнопку **создания**.
 
 ## <a name="use-the-apache-ambari-rest-api-to-synchronize-users"></a>Синхронизация пользователей с помощью REST API Apache Ambari
 
@@ -144,7 +144,7 @@ ms.locfileid: "98931632"
 Когда новый пользователь (или любой другой пользователь домена) входит в Ambari, он использует полное имя пользователя и учетные данные домена Azure AD.  В Ambari показан псевдоним пользователя, являющийся отображаемым именем пользователя в Azure AD.
 В новом примере имя пользователя — `hiveuser3@contoso.com`. В Ambari этот пользователь отображается как `hiveuser3`, но он входит в Ambari как `hiveuser3@contoso.com`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Настройка политик Apache Hive в кластере HDInsight с ESP](./domain-joined/apache-domain-joined-run-hive.md)
 * [Управление кластерами HDInsight с помощью корпоративного пакета безопасности](./domain-joined/apache-domain-joined-manage.md)

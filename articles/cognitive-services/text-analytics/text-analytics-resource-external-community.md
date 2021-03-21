@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 03/02/2019
 ms.author: aahi
 ms.openlocfilehash: 9c3908c81e7d89efe3da90f9707023cb7c184795
-ms.sourcegitcommit: 22da82c32accf97a82919bf50b9901668dc55c97
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94365014"
 ---
 # <a name="external--community-content-for-the-text-analytics-cognitive-service"></a>Внешнее содержимое и материалы сообщества для API анализа текста (Cognitive Service)
@@ -39,7 +39,7 @@ ms.locfileid: "94365014"
 
 
 
-## <a name="videos"></a>Видео
+## <a name="videos"></a>Видеоролики
 
 + [Приложение логики для определения тональности и извлечения ключевых фраз из текста](https://www.youtube.com/watch?v=jVN9NObAzgk)
 
@@ -47,11 +47,11 @@ ms.locfileid: "94365014"
 
 + [Анализ текста с извлечением ключевых фраз с помощью Power BI и Microsoft Cognitive Services](https://www.youtube.com/watch?v=R_-1TB2BF14)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Ищете сведения о функции или примере использования, о которых мы не упомянули? Вы можете оставить запрос или участвовать в голосовании на сайте [User Voice](https://cognitive.uservoice.com/forums/555922-text-analytics). 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
  [StackOverflow: Azure API анализа текста](https://stackoverflow.com/questions/tagged/text-analytics-api)   
  [StackOverflow: Azure Cognitive Services](https://stackoverflow.com/questions/tagged/microsoft-cognitive)

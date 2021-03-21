@@ -7,10 +7,10 @@ ms.date: 07/11/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: d245b780acee59afbc6cb8bde6c916bfd1046e3c
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102508560"
 ---
 # <a name="deploy-a-windows-7-virtual-machine-on-windows-virtual-desktop"></a>Развертывание виртуальной машины Windows 7 в службе "Виртуальный рабочий стол Windows"
@@ -20,7 +20,7 @@ ms.locfileid: "102508560"
 
 Процесс развертывания виртуальной машины Windows 7 на виртуальном рабочем столе Windows немного отличается от процесса для виртуальных машин под управлением более поздних версий Windows. В этом руководство вы узнаете, как развернуть Windows 7.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем начать, следуйте инструкциям в статье [Создание пула узлов с помощью PowerShell](create-host-pools-powershell.md) для создания пула узлов. Если вы используете портал, следуйте инструкциям в шагах 1 – 9 из раздела [Создание пула узлов с помощью портал Azure](create-host-pools-azure-marketplace.md). После этого выберите **проверить и создать** , чтобы создать пустой пул узлов.
 

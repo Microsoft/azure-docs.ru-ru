@@ -3,14 +3,14 @@ title: Конечные точки службы виртуальной сети 
 description: Описание работы конечных точек служб виртуальной сети Базы данных Azure для сервера MariaDB.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: conceptual
 ms.date: 7/17/2020
-ms.openlocfilehash: 0f90e64f2a20b6455d5a169025230b78e64287cc
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: bd7d08e4f65612b9a76b63e8153603d043209ad3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98662684"
 ---
 # <a name="use-virtual-network-service-endpoints-and-rules-for-azure-database-for-mariadb"></a>Сведения об использовании конечных точек служб и правил виртуальной сети с Базой данных Azure для MariaDB
@@ -134,11 +134,11 @@ ms.locfileid: "98662684"
 
 Задать параметр **IgnoreMissingServiceEndpoint** можно с помощью Azure CLI или портала.
 
-## <a name="related-articles"></a>Связанные статьи
-- [Виртуальные сети Azure][vm-virtual-network-overview]
+## <a name="related-articles"></a>Похожие статьи
+- [виртуальные сети Azure;][vm-virtual-network-overview]
 - [Конечные точки службы виртуальной сети Azure][vm-virtual-network-service-endpoints-overview-649d]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Статьи о создании правил виртуальной сети см. по следующим ссылкам:
 - [Создание правил виртуальной сети базы данных Azure для MariaDB и управление ими на портале Azure](howto-manage-vnet-portal.md)
  

@@ -16,10 +16,10 @@ ms.workload: infrastructure-services
 ms.date: 03/13/2020
 ms.author: kumud
 ms.openlocfilehash: 43d3da49688a7daeb3ea4e0c1c3dba505dcd3b59
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102508339"
 ---
 # <a name="add-network-interfaces-to-or-remove-network-interfaces-from-virtual-machines"></a>Добавление и удаление сетевых интерфейсов виртуальных машин
@@ -28,7 +28,7 @@ ms.locfileid: "102508339"
 
 При необходимости см. инструкции по [добавлению, изменению и удалению IP-адресов для сетевого интерфейса Azure](virtual-network-network-interface-addresses.md). Сведения о создании, изменении и удалении сетевых интерфейсов см. в разделе [Управление сетевыми интерфейсами](virtual-network-network-interface.md).
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
@@ -50,7 +50,7 @@ ms.locfileid: "102508339"
 
 Перед созданием виртуальной машины [Создайте сетевой интерфейс](virtual-network-network-interface.md#create-a-network-interface).
 
-|Инструмент|Get-Help|
+|Инструмент|Команда|
 |---|---|
 |CLI|[az network nic create](/cli/azure/network/nic?toc=%2fazure%2fvirtual-network%2ftoc.json#az-network-nic-create)|
 |PowerShell|[New-AzNetworkInterface](/powershell/module/az.network/new-aznetworkinterface?toc=%2fazure%2fvirtual-network%2ftoc.json)|
@@ -78,7 +78,7 @@ ms.locfileid: "102508339"
 
 ### <a name="commands"></a>Команды
 
-|Инструмент|Get-Help|
+|Инструмент|Команда|
 |---|---|
 |CLI|[AZ VM NIC Add](/cli/azure/vm/nic?toc=%2fazure%2fvirtual-network%2ftoc.json#az-vm-nic-add) (Справочник); [подробные инструкции](../virtual-machines/linux/multiple-nics.md?toc=%2fazure%2fvirtual-network%2ftoc.json#add-a-nic-to-a-vm)|
 |PowerShell|[Add-азвмнетворкинтерфаце](/powershell/module/az.compute/add-azvmnetworkinterface?toc=%2fazure%2fvirtual-network%2ftoc.json) (ссылка); [подробные инструкции](../virtual-machines/windows/multiple-nics.md?toc=%2fazure%2fvirtual-network%2ftoc.json#add-a-nic-to-an-existing-vm)|
@@ -100,7 +100,7 @@ ms.locfileid: "102508339"
 
 ### <a name="commands"></a>Команды
 
-|Инструмент|Get-Help|
+|Инструмент|Команда|
 |---|---|
 |CLI|[AZ VM NIC List](/cli/azure/vm/nic?toc=%2fazure%2fvirtual-network%2ftoc.json#az-vm-nic-list)|
 |PowerShell|[Get-AzVM](/powershell/module/az.compute/get-azvm?toc=%2fazure%2fvirtual-network%2ftoc.json)|
@@ -124,7 +124,7 @@ ms.locfileid: "102508339"
 
 ### <a name="commands"></a>Команды
 
-|Инструмент|Get-Help|
+|Инструмент|Команда|
 |---|---|
 |CLI|[AZ VM NIC Remove](/cli/azure/vm/nic?toc=%2fazure%2fvirtual-network%2ftoc.json#az-vm-nic-remove) (Reference); [подробные инструкции](../virtual-machines/linux/multiple-nics.md?toc=%2fazure%2fvirtual-network%2ftoc.json#remove-a-nic-from-a-vm)|
 |PowerShell|[Remove-азвмнетворкинтерфаце](/powershell/module/az.compute/remove-azvmnetworkinterface?toc=%2fazure%2fvirtual-network%2ftoc.json) (Reference); [подробные инструкции](../virtual-machines/windows/multiple-nics.md?toc=%2fazure%2fvirtual-network%2ftoc.json#remove-a-nic-from-an-existing-vm)|

@@ -3,14 +3,14 @@ title: Автоматическое расширение хранилища — 
 description: В этой статье описывается, как включить автоматическое увеличение хранилища для базы данных Azure для MariaDB с помощью портал Azure
 author: ambhatna
 ms.author: ambhatna
-ms.service: jroth
+ms.service: mariadb
 ms.topic: how-to
 ms.date: 3/18/2020
-ms.openlocfilehash: f6410f34a4bbfde0a7090222979b3c4c98673981
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: 56bc6c0e7a294f80e946a2eb0c84e5d0bd49d0f5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98663474"
 ---
 # <a name="auto-grow-storage-in-azure-database-for-mariadb-using-the-azure-portal"></a>Автоматическое увеличение объема хранилища в базе данных Azure для MariaDB с помощью портал Azure
@@ -40,6 +40,6 @@ ms.locfileid: "98663474"
 
     ![База данных Azure для MariaDB — успешное выполнение автоматического роста](./media/howto-auto-grow-storage-portal/5-auto-grow-successful.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте [, как создавать оповещения по метрикам](howto-alert-metric.md).

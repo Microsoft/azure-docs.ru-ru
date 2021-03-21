@@ -3,14 +3,14 @@ title: Репликация данных — база данных Azure для 
 description: Сведения об использовании репликации данных для синхронизации с внешнего сервера в службе "база данных Azure для MariaDB".
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: conceptual
 ms.date: 3/18/2020
-ms.openlocfilehash: 4f83af5c72529b652b23db53bf9532e87b824ea4
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: 331e064bcf11af31a778cb8dd06c463712421b7c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98662633"
 ---
 # <a name="replicate-data-into-azure-database-for-mariadb"></a>Репликация данных в базу данных Azure для MariaDB
@@ -42,5 +42,5 @@ ms.locfileid: "98662633"
 ### <a name="other"></a>Другое
 - Репликация данных поддерживается только в ценовых категориях общего назначения и с оптимизацией для операций в памяти.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Узнайте, как [настроить репликацию входных данных](howto-data-in-replication.md).

@@ -12,10 +12,10 @@ ms.date: 10/16/2020
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: d77e145cabcef2931d5fe6e76599da7931e576e8
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97669165"
 ---
 # <a name="define-an-id-token-hint-technical-profile-in-an-azure-active-directory-b2c-custom-policy"></a>Определение технического профиля указания маркера идентификации в настраиваемой политике Azure Active Directory B2C
@@ -185,7 +185,7 @@ $newClientSecret
 * `/.well-known/openid-configuration` — Хорошо известная конечная точка конфигурации с релевантной информацией о токене, например имя поставщика маркера и ссылка на конечную точку ЖВК. 
 * `/.well-known/keys` — Конечная точка JSON Web Key (ЖВК) с открытым ключом, используемой для подписания ключа (с помощью закрытого ключа).
 
-См. пример [TokenMetadataController.CS](https://github.com/azure-ad-b2c/id-token-builder/blob/master/source-code/B2CIdTokenBuilder/Controllers/TokenMetadataController.cs) .NET MVC Controller.
+См. пример контроллера MVC .NET [токенметадатаконтроллер. CS](https://github.com/azure-ad-b2c/id-token-builder/blob/master/source-code/B2CIdTokenBuilder/Controllers/TokenMetadataController.cs) .
 
 #### <a name="step-1-prepare-a-self-signed-certificate"></a>Шаг 1. Подготовка самозаверяющего сертификата
 
@@ -249,7 +249,7 @@ New-SelfSignedCertificate `
     ```xml
     <OrchestrationStep Order="1" Type="GetClaims" CpimIssuerTechnicalProfileReferenceId="IdTokenHint_ExtractClaims" />
     ``` 
-1. В политике проверяющей стороны повторите те же входные утверждения, которые были настроены в техническом профиле IdTokenHint_ExtractClaims. Вот несколько примеров:
+1. В политике проверяющей стороны повторите те же входные утверждения, которые были настроены в техническом профиле IdTokenHint_ExtractClaims. Пример:
     ```xml
    <RelyingParty>
      <DefaultUserJourney ReferenceId="SignUp" />
@@ -282,6 +282,6 @@ New-SelfSignedCertificate `
 https://tenant-name.b2clogin.com/tenant-name.onmicrosoft.com/B2C_1A_signup_signin/oauth2/v2.0/authorize?client_id=63ba0d17-c4ba-47fd-89e9-31b3c2734339&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fjwt.ms&scope=openid&response_type=id_token&prompt=login&id_token_hint=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkaXNwbGF5TmFtZSI6IiBKb2huIFNtaXRoIiwidXNlcklkIjoiam9obi5zQGNvbnRvc28uY29tIiwibmJmIjoxNTk5NDgyNTE1LCJleHAiOjE2MDAwODczMTUsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0IiwiYXVkIjoiYTQ4OWZjNDQtM2NjMC00YTc4LTkyZjYtZTQxM2NkODUzZWFlIn0.nPmLXydI83PQCk5lRBYUZRu_aX58pL1khahHyQuupig
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Проверьте [регистрацию с помощью решения "пригласить электронное письмо](https://github.com/azure-ad-b2c/samples/blob/master/policies/invite/README.md) " в репозитории сообщества GitHub Azure AD B2C.

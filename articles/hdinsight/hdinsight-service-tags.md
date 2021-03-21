@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.custom: hdinsightactive
 ms.date: 08/11/2020
 ms.openlocfilehash: d17d067b88add3006bc5c7fb10caa6b80a80a827
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98931768"
 ---
 # <a name="nsg-service-tags-for-azure-hdinsight"></a>Теги службы NSG для Azure HDInsight
@@ -54,7 +54,7 @@ ms.locfileid: "98931768"
 
 Если кластер находится в регионе, указанном в этой таблице, необходимо добавить в NSG только один региональный тег службы.
 
-| Country | Region | Тег службы |
+| Country | Регион | Тег службы |
 | ---- | ---- | ---- |
 | Австралия | Восточная Австралия | HDInsight. AustraliaEast |
 | &nbsp; | Australia Southeast | HDInsight. AustraliaSoutheast |
@@ -94,14 +94,14 @@ ms.locfileid: "98931768"
 - `HDInsight.WestUS`
 - `HDInsight.EastUS`
 
-| Country | Region | Тег службы |
+| Country | Регион | Тег службы |
 | ---- | ---- | ---- |
 | США | восточная часть США 2 | HDInsight. EastUS2 |
 | &nbsp; | Центральная часть США | HDInsight. CentralUS |
 | &nbsp; | Норсцентрал США | HDInsight. NorthCentralUS |
 | &nbsp; | Центрально-южная часть США | HDInsight. SouthCentralUS |
 | &nbsp; | Восточная часть США | HDInsight. EastUS |
-| &nbsp; | западная часть США | HDInsight. WestUS |
+| &nbsp; | Западная часть США | HDInsight. WestUS |
 | Япония | Восточная Япония | HDInsight. Жапанеаст |
 | Европа | Северная Европа | HDInsight. Норсеуропе |
 | &nbsp; | Западная Европа| HDInsight. WestEurope |

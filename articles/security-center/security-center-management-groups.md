@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/04/2021
 ms.author: memildin
 ms.openlocfilehash: 3508d508a19d6ce7fba4f3ef3a4fa545a58a167d
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102099392"
 ---
 # <a name="organize-subscriptions-into-management-groups-and-assign-roles-to-users"></a>Организация подписок на группы управления и назначение ролей пользователям

@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 9/21/2020
 ms.openlocfilehash: 632aae766e6fd1328dc6e0135a88a942d7ad0910
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100595785"
 ---
 # <a name="use-the-azure-portal-to-set-up-alerts-on-metrics-for-azure-database-for-mysql---flexible-server"></a>Используйте портал Azure, чтобы настроить оповещения о метриках для базы данных Azure для MySQL — гибкого сервера. 
@@ -71,7 +71,7 @@ ms.locfileid: "100595785"
 * **отключить** или **включить** его, если нужно временно остановить или возобновить получение уведомлений.
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения о [настройке оповещений о метриках](../../azure-monitor/alerts/alerts-metric.md).
 - Узнайте больше о доступных [метриках в базе данных Azure для гибкого сервера MySQL](./concepts-monitoring.md).
 - [Сведения о работе оповещений о метриках в Azure Monitor](../../azure-monitor/alerts/alerts-metric-overview.md)

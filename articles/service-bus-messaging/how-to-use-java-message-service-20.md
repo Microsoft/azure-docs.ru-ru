@@ -5,10 +5,10 @@ ms.topic: article
 ms.date: 07/17/2020
 ms.custom: seo-java-july2019, seo-java-august2019, seo-java-september2019
 ms.openlocfilehash: 894821444f74248b73578595df943cb3a0025360
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101698405"
 ---
 # <a name="use-java-message-service-20-api-with-azure-service-bus-premium"></a>Использование API службы сообщений Java 2,0 с помощью служебной шины Azure Premium

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: references_regions
 ms.date: 10/21/2020
 ms.openlocfilehash: f63b0b523184917097c73c852a7624b366fbbb24
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100595210"
 ---
 # <a name="monitoring-in-azure-database-for-mariadb"></a>Мониторинг в Базе данных Azure для MariaDB
@@ -65,7 +65,7 @@ ms.locfileid: "100595210"
 
 Дополнительные сведения о настройке уведомлений см. в документе [уведомления о запланированном обслуживании](./concepts-planned-maintenance-notification.md) .
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о доступе к метрикам и их экспорте с помощью портала Azure, REST API или интерфейса командной строки см. в статье [Обзор метрик в Microsoft Azure](../azure-monitor/data-platform.md).
 - См. рекомендации по созданию оповещений для метрики в статье [Как настраивать оповещения](howto-alert-metric.md).

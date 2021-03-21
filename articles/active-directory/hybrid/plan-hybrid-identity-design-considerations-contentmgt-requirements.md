@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 57990fda7475b95bd6582fa5a495ac8d24aa55d5
-ms.sourcegitcommit: 17b36b13857f573639d19d2afb6f2aca74ae56c1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94408538"
 ---
 # <a name="determine-content-management-requirements-for-your-hybrid-identity-solution"></a>Определение требований к управлению содержимым для решения гибридной идентификации
@@ -60,12 +60,12 @@ ms.locfileid: "94408538"
 * Нужно ли вашей компании внедрить корпоративные политики для определенного типа сообщений электронной почты (не отвечать всем, не перенаправлять)?
 
 > [!NOTE]
-> Составьте письменный ответ на каждый вопрос и убедитесь, что он логически обоснован. [Определите стратегию защиты данных](plan-hybrid-identity-design-considerations-data-protection-strategy.md) , чтобы получить доступ к параметрам, а также преимуществам и недостаткам каждого из них.  Ответив на эти вопросы, вы сможете выбрать тот вариант, который лучше всего подходит для вашего бизнеса.
+> Составьте письменный ответ на каждый вопрос и убедитесь, что он логически обоснован. [Определение стратегии защиты данных](plan-hybrid-identity-design-considerations-data-protection-strategy.md) .  Ответив на эти вопросы, вы сможете выбрать тот вариант, который лучше всего подходит для вашего бизнеса.
 > 
 > 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 [Определение требований к управлению доступом](plan-hybrid-identity-design-considerations-accesscontrol-requirements.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [Обзор рекомендаций по проектированию](plan-hybrid-identity-design-considerations-overview.md)

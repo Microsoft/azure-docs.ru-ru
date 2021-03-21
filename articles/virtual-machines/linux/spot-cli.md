@@ -10,10 +10,10 @@ ms.date: 06/26/2020
 ms.author: cynthn
 ms.reviewer: jagaveer
 ms.openlocfilehash: 0a7be682f921efdfae486e8f6545758964a941ae
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102098865"
 ---
 # <a name="deploy-azure-spot-virtual-machines-using-the-azure-cli"></a>Развертывание виртуальных машин с использованием точки Azure с помощью Azure CLI

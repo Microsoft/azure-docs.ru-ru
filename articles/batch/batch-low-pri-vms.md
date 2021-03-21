@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.date: 03/03/2021
 ms.custom: seodec18
 ms.openlocfilehash: cafc7216e8112640f823ecee1aea055ab78b3fc6
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102098474"
 ---
 # <a name="use-low-priority-vms-with-batch"></a>Использование низкоприоритетных виртуальных машин в пакетной службе

@@ -9,10 +9,10 @@ ms.author: kuthapar
 ms.topic: troubleshooting
 ms.reviewer: sngun
 ms.openlocfilehash: a805300ac62d0627c9b06188c9764a6887947afe
-ms.sourcegitcommit: 17b36b13857f573639d19d2afb6f2aca74ae56c1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94411292"
 ---
 # <a name="diagnose-and-troubleshoot-azure-cosmos-db-java-v4-sdk-request-timeout-exceptions"></a>Диагностика и устранение неполадок с Azure Cosmos DB исключениями времени ожидания запроса пакета SDK для Java версии 4
@@ -26,7 +26,7 @@ ms.locfileid: "94411292"
 ### <a name="existing-issues"></a>Существующие проблемы
 Если вы видите, что запросы задерживаются в течение более длительного времени или когда время ожидания истекло, обновите пакет SDK для Java v4 до последней версии. Примечание. настоятельно рекомендуется использовать версию 4.7.0 и более позднюю. Дополнительные сведения см. в [комментариях к выпуску пакета SDK для Java v4](sql-api-sdk-java-v4.md) .
 
-### <a name="high-cpu-utilization"></a>Высокая загрузка ЦП
+### <a name="high-cpu-utilization"></a>Высокая загрузка ЦП.
 Высокая загрузка ЦП является наиболее распространенным вариантом. Для оптимальной задержки загрузка ЦП должна составлять примерно 40%. Используйте 10 секунд в качестве интервала для наблюдения за максимальным (несредним) потреблением ресурсов ЦП. Пиковые нагрузки ЦП наиболее распространены с запросами между секциями, где они могут выполнять несколько подключений для одного запроса.
 
 #### <a name="solution"></a>Решение.

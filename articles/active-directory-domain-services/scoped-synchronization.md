@@ -13,10 +13,10 @@ ms.date: 01/20/2021
 ms.author: justinha
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 34692f5e563e4931a27ea59db84d9c88f27817da
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98660904"
 ---
 # <a name="configure-scoped-synchronization-from-azure-ad-to-azure-active-directory-domain-services-using-the-azure-portal"></a>Настройка синхронизации с заданной областью из Azure AD в Azure Active Directory доменных служб с помощью портал Azure
@@ -86,7 +86,7 @@ ms.locfileid: "98660904"
 
 Изменение области синхронизации приводит к повторной синхронизации всех данных управляемым доменом. Объекты, которые больше не требуются в управляемом домене, удаляются, и для выполнения повторной синхронизации может потребоваться некоторое время.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о процессе синхронизации см. в разделе [Общие сведения о синхронизации в доменных службах Azure AD][concepts-sync].
 

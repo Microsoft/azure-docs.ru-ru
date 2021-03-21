@@ -8,10 +8,10 @@ ms.date: 01/10/2018
 ms.author: abnarain
 robots: noindex
 ms.openlocfilehash: b5bf0c6d6996a67e8b0fec3ec51e31fef8eedf26
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100363922"
 ---
 # <a name="release-notes-for-data-management-gateway"></a>Заметки о выпуске шлюза управления данными
@@ -60,7 +60,7 @@ ms.locfileid: "100363922"
 - Исправлено. Неправильное считывание десятичного значения Null из источника Oracle.
 
 ## <a name="2661922"></a>2.6.6192.2
-### <a name="whats-new"></a>Новые возможности
+### <a name="whats-new"></a>Новое
 - Клиенты могут оставлять отзывы о регистрации шлюза.
 - Поддерживается сжатие в формате ZIP (Deflate).
 
@@ -77,7 +77,7 @@ ms.locfileid: "100363922"
 
 ## <a name="2461511"></a>2.4.6151.1
 
-### <a name="whats-new"></a>Новые возможности
+### <a name="whats-new"></a>Новое
 
 - Теперь учетные данные источника данных можно хранить локально. Эти учетные данные шифруются, и их можно восстановить с помощью файла резервной копии, который можно экспортировать с имеющегося шлюза. Все эти действия выполняются локально.
 

@@ -7,10 +7,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 12/09/2020
 ms.openlocfilehash: 9441885766dad97dfc237ab81a59710245bf13ce
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100364262"
 ---
 # <a name="copy-data-from-amazon-redshift-using-azure-data-factory"></a>Копирование данных из Amazon Redshift с помощью фабрики данных Azure
@@ -36,7 +36,7 @@ ms.locfileid: "100364262"
 > [!TIP]
 > Чтобы обеспечить наилучшую производительность при копировании больших объемов данных из Redshift, рекомендуется использовать встроенный механизм Redshift UNLOAD через Amazon S3. Дополнительные сведения см. в разделе [Копирование данных из Amazon Redshift с помощью UNLOAD](#use-unload-to-copy-data-from-amazon-redshift).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * При копировании данных в локальное хранилище данных с помощью [локальной среды IR](create-self-hosted-integration-runtime.md) предоставьте среде выполнения интеграции доступ к кластеру Amazon Redshift (использовав IP-адрес компьютера). Инструкции см. в статье об [авторизации доступа к кластеру](https://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-authorize-cluster-access.html).
 * Если вы копируете данные в хранилище данных Azure, вам нужно знать IP-адреса вычислительных ресурсов и диапазоны SQL, используемые центрами обработки данных Azure. Диапазоны IP-адресов центра обработки данных Azure приведены на [этой странице](https://www.microsoft.com/download/details.aspx?id=41653).
@@ -51,7 +51,7 @@ ms.locfileid: "100364262"
 
 Для связанной службы Amazon Redshift поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства Type необходимо задать значение **AmazonRedshift** . | Да |
 | server |IP-адрес или имя узла сервера Amazon Redshift. |Да |
@@ -93,7 +93,7 @@ ms.locfileid: "100364262"
 
 Чтобы скопировать данные из Amazon RedShift, поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство Type набора данных должно иметь значение **амазонредшифттабле** . | Да |
 | схема | Имя схемы. |Нет (если свойство query указано в источнике действия)  |
@@ -217,14 +217,14 @@ ms.locfileid: "100364262"
 | bigint |Int64 |
 | BOOLEAN |Строка |
 | CHAR |Строка |
-| DATE |Дата и время |
+| DATE |Дата/время |
 | DECIMAL |Decimal |
 | DOUBLE PRECISION |Double |
 | INTEGER |Int32 |
 | real |Single |
 | SMALLINT |Int16 |
 | TEXT |Строка |
-| timestamp |Дата и время |
+| timestamp |Дата/время |
 | VARCHAR |Строка |
 
 ## <a name="lookup-activity-properties"></a>Свойства действия поиска

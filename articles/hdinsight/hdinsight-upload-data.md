@@ -6,17 +6,17 @@ ms.topic: how-to
 ms.custom: hdiseo17may2017,seoapr2020
 ms.date: 04/27/2020
 ms.openlocfilehash: a8d21b88298b6092c869b89d48fe4c259c2365b6
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98931341"
 ---
 # <a name="upload-data-for-apache-hadoop-jobs-in-hdinsight"></a>Отправка данных для заданий Apache Hadoop в HDInsight
 
 HDInsight предоставляет распределенную файловую систему Hadoop (HDFS) в службе хранилища Azure и Azure Data Lake Storage. Это хранилище включает Gen1 и Gen2. Службы хранилища Azure и Data Lake Storage 1-го поколения и Gen2 разработаны как расширения HDFS. Они позволяют полному набору компонентов в среде Hadoop взаимодействовать непосредственно с данными, которыми он управляет. Служба хранилища Azure, Data Lake Storage 1-го поколения и Gen2 — это разные файловые системы. Системы оптимизированы для хранения данных и вычислений на этих данных. Дополнительные сведения о преимуществах использования службы хранилища Azure см. в статье [Использование службы хранилища Azure с HDInsight](hdinsight-hadoop-use-blob-storage.md). См. также [использование Data Lake Storage 1-го поколения с hdinsight](hdinsight-hadoop-use-data-lake-storage-gen1.md)и [Использование Data Lake Storage 2-го поколения с hdinsight](hdinsight-hadoop-use-data-lake-storage-gen2.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед началом работы необходимо ознакомиться со следующими требованиями:
 
@@ -61,7 +61,7 @@ hadoop fs -copyFromLocal <localFilePath> <storageFilePath>
 
 `wasbs:///example/data/data.txt`
 
-или
+или диспетчер конфигурации служб
 
 `wasbs://<ContainerName>@<StorageAccountName>.blob.core.windows.net/example/data/davinci.txt`
 

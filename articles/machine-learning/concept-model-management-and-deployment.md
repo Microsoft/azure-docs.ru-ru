@@ -11,10 +11,10 @@ ms.author: jordane
 ms.date: 03/17/2020
 ms.custom: seodec18
 ms.openlocfilehash: 32777d9f8313457036b103777f251329687b3997
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102508016"
 ---
 # <a name="mlops-model-management-deployment-and-monitoring-with-azure-machine-learning"></a>Млопс: Управление моделями, развертывание и мониторинг с помощью Машинное обучение Azure
@@ -142,7 +142,7 @@ ms.locfileid: "102508016"
 
 Дополнительные сведения см. в разделе [Развертывание моделей](how-to-deploy-and-where.md).
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Аналитика
 
 Microsoft Power BI поддерживает использование моделей машинного обучения для аналитики данных. Дополнительные сведения см. [в разделе интеграция машинное обучение Azure в Power BI (Предварительная версия)](/power-bi/service-machine-learning-integration).
 

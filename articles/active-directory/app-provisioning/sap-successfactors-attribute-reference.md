@@ -12,10 +12,10 @@ ms.date: 08/05/2020
 ms.author: chmutali
 ms.reviewer: celested
 ms.openlocfilehash: 0d1a25f67d3550e79b2339ee060d37acaea0c1c4
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99255548"
 ---
 # <a name="sap-successfactors-attribute-reference"></a>Справочник по атрибутам SAP SuccessFactors
@@ -45,35 +45,35 @@ ms.locfileid: "99255548"
 | 7  | перперсонал                            | lastName                     | Чтение           |
 | 8  | перперсонал                            | middleName                   | Чтение           |
 | 9  | перперсонал                            | преферреднаме                | Чтение           |
-| 10 | User                                   | addressLine1                 | Чтение           |
-| 11 | User                                   | addressLine2                 | Чтение           |
+| 10 | Пользователь                                   | addressLine1                 | Чтение           |
+| 11 | Пользователь                                   | addressLine2                 | Чтение           |
 | 12 | Пользователь                                   | addressLIne3                 | Чтение           |
-| 13 | User                                   | бусинессфоне                | Чтение           |
-| 14 | User                                   | целлфоне                    | Чтение           |
+| 13 | Пользователь                                   | бусинессфоне                | Чтение           |
+| 14 | Пользователь                                   | целлфоне                    | Чтение           |
 | 15 | Пользователь                                   | city                         | Чтение           |
 | 16 | Пользователь                                   | country                      | Чтение           |
-| 17 | User                                   | custom01                     | Чтение           |
-| 18 | User                                   | custom02                     | Чтение           |
-| 19 | User                                   | custom03                     | Чтение           |
-| 20 | User                                   | custom04                     | Чтение           |
-| 21 | User                                   | custom05                     | Чтение           |
-| 22 | User                                   | custom06                     | Чтение           |
-| 23 | User                                   | custom07                     | Чтение           |
-| 24 | User                                   | custom08                     | Чтение           |
-| 25 | User                                   | custom09                     | Чтение           |
-| 26 | User                                   | custom10                     | Чтение           |
-| 27 | User                                   | custom11                     | Чтение           |
-| 28 | User                                   | custom12                     | Чтение           |
-| 29 | User                                   | custom13                     | Чтение           |
-| 30 | User                                   | custom14                     | Чтение           |
-| 31 | User                                   | empId                        | Чтение           |
-| 32 | User                                   | homePhone                    | Чтение           |
-| 33 | User                                   | жобфамили                    | Чтение           |
-| 34 | User                                   | псевдоним                     | Чтение           |
+| 17 | Пользователь                                   | custom01                     | Чтение           |
+| 18 | Пользователь                                   | custom02                     | Чтение           |
+| 19 | Пользователь                                   | custom03                     | Чтение           |
+| 20 | Пользователь                                   | custom04                     | Чтение           |
+| 21 | Пользователь                                   | custom05                     | Чтение           |
+| 22 | Пользователь                                   | custom06                     | Чтение           |
+| 23 | Пользователь                                   | custom07                     | Чтение           |
+| 24 | Пользователь                                   | custom08                     | Чтение           |
+| 25 | Пользователь                                   | custom09                     | Чтение           |
+| 26 | Пользователь                                   | custom10                     | Чтение           |
+| 27 | Пользователь                                   | custom11                     | Чтение           |
+| 28 | Пользователь                                   | custom12                     | Чтение           |
+| 29 | Пользователь                                   | custom13                     | Чтение           |
+| 30 | Пользователь                                   | custom14                     | Чтение           |
+| 31 | Пользователь                                   | empId                        | Чтение           |
+| 32 | Пользователь                                   | homePhone                    | Чтение           |
+| 33 | Пользователь                                   | жобфамили                    | Чтение           |
+| 34 | Пользователь                                   | псевдоним                     | Чтение           |
 | 35 | Пользователь                                   | state                        | Чтение           |
-| 36 | User                                   | timeZone                     | Чтение           |
-| 37 | User                                   | username                     | Чтение           |
-| 38 | User                                   | zipCode                      | Чтение           |
+| 36 | Пользователь                                   | timeZone                     | Чтение           |
+| 37 | Пользователь                                   | username                     | Чтение           |
+| 38 | Пользователь                                   | zipCode                      | Чтение           |
 | 39 | перфоне                               | ареакоде                     | Чтение           |
 | 40 | перфоне                               | countryCode                  | Чтение           |
 | 41 | перфоне                               | Расширение                    | Чтение           |
@@ -131,8 +131,8 @@ ms.locfileid: "99255548"
 | 7  | Пользователь                                   | city                     | l                                       | Н/Д                                                                                           |
 | 8  | Пользователь                                   | country                  | co                                      | Н/Д                                                                                           |
 | 9  | Пользователь                                   | state                    | st                                      | Н/Д                                                                                           |
-| 10 | User                                   | username                 | samAccountName                          | Н/Д                                                                                           |
-| 11 | User                                   | zipCode                  | postalCode                              | Н/Д                                                                                           |
+| 10 | Пользователь                                   | username                 | samAccountName                          | Н/Д                                                                                           |
+| 11 | Пользователь                                   | zipCode                  | postalCode                              | Н/Д                                                                                           |
 | 12 | перемаил                               | emailAddress             | mail                                    | Н/Д                                                                                           |
 | 13 | емпжоб                                 | jobTitle                 | title                                   | Н/Д                                                                                           |
 | 14 | емпжоб                                 | managerId                | manager                                 | Н/Д                                                                                           |

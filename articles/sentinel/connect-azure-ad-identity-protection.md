@@ -10,17 +10,17 @@ ms.topic: how-to
 ms.date: 06/24/2020
 ms.author: yelevin
 ms.openlocfilehash: f420e80f10072c440f5401c042d6370a061b1a7f
-ms.sourcegitcommit: 484f510bbb093e9cfca694b56622b5860ca317f7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98632247"
 ---
 # <a name="connect-data-from-azure-active-directory-azure-ad-identity-protection"></a>Подключение данных из защиты идентификации Azure Active Directory (Azure AD)
 
 Вы можете выполнять потоковую передачу журналов из [Защита идентификации Azure AD](../active-directory/identity-protection/overview-identity-protection.md) в метку Azure для потоковой передачи оповещений в Azure Sentinel для просмотра панелей мониторинга, создания пользовательских оповещений и улучшения расследования. Защита идентификации Azure Active Directory предоставляет объединенное представление для пользователей с рисками, обнаружения рисков и уязвимостей, с возможностью немедленного устранения рисков и установки политик для автоматического устранения будущих событий. Служба построена на основе опыта корпорации Майкрософт по защите идентификаторов потребителей и значительной точности от сигнала с более чем 13 000 000 000 журнала в день. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Необходимо иметь [подписку Azure AD Premium P2](https://azure.microsoft.com/pricing/details/active-directory/).
 - У вас должен быть пользователь с правами глобального администратора или администратора безопасности.

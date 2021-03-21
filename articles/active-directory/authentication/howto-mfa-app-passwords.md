@@ -12,13 +12,13 @@ manager: daveba
 ms.reviewer: michmcla
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dfb38f9fcdba6898b690d0af68b715fea07e80bb
-ms.sourcegitcommit: ad83be10e9e910fd4853965661c5edc7bb7b1f7c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96743111"
 ---
-# <a name="enable-and-use-azure-ad-multi-factor-authentication-with-legacy-applications-using-app-passwords"></a>Включение и использование многофакторной идентификации Azure AD с устаревшими приложениями с помощью паролей приложений
+# <a name="enable-and-use-azure-ad-multi-factor-authentication-with-legacy-applications-using-app-passwords"></a>Включение и использование многофакторной проверки подлинности Azure AD с устаревшими приложениями с помощью паролей приложений
 
 Некоторые старые приложения, не относящиеся к браузеру, такие как Office 2010 или более ранней версии и Apple Mail, до iOS 11 не понимают паузы или перерывы в процессе проверки подлинности. Если пользователь включен для многофакторной идентификации Azure AD и пытается использовать одно из этих старых приложений, не относящихся к браузеру, они не смогут пройти проверку подлинности. Чтобы использовать эти приложения безопасным способом с включенной многофакторной идентификацией Azure AD для учетных записей пользователей, можно использовать пароли приложений. Эти пароли приложений заменили традиционный пароль, чтобы позволить приложению обходить многофакторную проверку подлинности и работать правильно.
 
