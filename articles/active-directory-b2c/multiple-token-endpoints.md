@@ -12,10 +12,10 @@ ms.date: 03/15/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 860f167913211ee7c511e515937f29ba5bf954cf
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103491575"
 ---
 # <a name="migrate-an-owin-based-web-api-to-b2clogincom-or-a-custom-domain"></a>Перенос веб-API на основе OWIN в b2clogin.com или пользовательский домен
@@ -85,7 +85,7 @@ git clone https://github.com/Azure-Samples/active-directory-b2c-dotnet-webapp-an
 В этом разделе вы обновите код, чтобы указать, что обе конечные точки поставщика маркеров являются допустимыми.
 
 1. Открытие решения **B2C-WebAPI-DotNet. sln** в Visual Studio
-1. В проекте **TaskService** откройте файл *TaskService \\ App_Start * * \\ Startup.auth.CS** * в редакторе.
+1. В проекте **TaskService** откройте файл *TaskService \\ App_Start \\ * * Startup. auth. CS** * в редакторе.
 1. Добавьте следующую директиву `using` в начало файла.
 
     `using System.Collections.Generic;`
@@ -105,7 +105,7 @@ git clone https://github.com/Azure-Samples/active-directory-b2c-dotnet-webapp-an
     };
     ```
 
-`TokenValidationParameters` предоставляется MSAL.NET и используется по промежуточного слоя OWIN в следующем разделе кода в *Startup.auth.CS*. Если указано несколько допустимых издателей, конвейер приложения OWIN учитывает, что обе конечные точки маркеров являются действительными поставщиками.
+`TokenValidationParameters` предоставляется MSAL.NET и используется по промежуточного слоя OWIN в следующем разделе кода в *Startup. auth. CS*. Если указано несколько допустимых издателей, конвейер приложения OWIN учитывает, что обе конечные точки маркеров являются действительными поставщиками.
 
 ```csharp
 app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions
@@ -148,7 +148,7 @@ app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions
 <add key="ida:AadInstance" value="https://custom-domain/{0}/{1}" />
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этой статье представлен метод настройки веб-API, реализующий по промежуточного слоя Microsoft OWIN (Katana), для приема маркеров из нескольких конечных точек поставщика. Как вы могли заметить, в файлах *Web.Config* и в проектах TaskService и TaskWebApp есть несколько других строк, которые необходимо изменить, если требуется собрать и запустить эти проекты для собственного клиента. Вы можете соответствующим образом изменить проекты, если вы хотите увидеть их в действии, но полное пошаговое руководство выходит за рамки этой статьи.
 

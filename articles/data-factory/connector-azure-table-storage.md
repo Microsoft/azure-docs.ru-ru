@@ -6,13 +6,13 @@ author: linda33wj
 ms.service: data-factory
 ms.topic: conceptual
 ms.custom: seo-lt-2019
-ms.date: 10/20/2020
-ms.openlocfilehash: 1448bb3ebf541af047759bc886b2c174d89c1c50
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.date: 03/17/2021
+ms.openlocfilehash: 5674d656385d356f596f96cd7851d2cc05839761
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100383778"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104597420"
 ---
 # <a name="copy-data-to-and-from-azure-table-storage-by-using-azure-data-factory"></a>Копирование данных в службу "Хранилище таблиц Azure" и обратно с помощью фабрики данных Azure
 
@@ -267,6 +267,7 @@ ms.locfileid: "100383778"
 | azureTableInsertType |Режим для вставки данных в таблицу Azure. Это свойство контролирует, будут ли заменены или объединены значения в существующих строках в выходной таблице с совпадающими ключами секций и строк. <br/><br/>Допустимые значения: **merge** (по умолчанию) и **replace**. <br/><br> Этот параметр применяется на уровне строк, а не на уровне таблицы. Ни один из параметров не удаляет строки выходной таблицы, которые не существуют во входной таблице. Чтобы узнать о действии этих параметров (merge и replace), ознакомьтесь со статьями [Insert or Merge Entity](/rest/api/storageservices/Insert-Or-Merge-Entity) (Вставка или слияние сущностей) и [Insert or Replace Entity](/rest/api/storageservices/Insert-Or-Replace-Entity) (Вставка или замена сущности). |Нет |
 | writeBatchSize |Вставляет данные в таблицу Azure при достижении writeBatchSize или writeBatchTimeout.<br/>Допустимые значения: целое число (количество строк). |Нет (значение по умолчанию — 10 000) |
 | writeBatchTimeout |Вставляет данные в таблицу Azure при достижении writeBatchSize или writeBatchTimeout.<br/>Допустимые значения: временной диапазон. Например, 00:20:00 (20 минут). |Нет (значение по умолчанию — 90 секунд, время ожидания клиента хранилища по умолчанию) |
+| maxConcurrentConnections |Верхний предел одновременных подключений, установленных для хранилища данных во время выполнения действия. Укажите значение, только если требуется ограничить количество одновременных подключений.| Нет |
 
 **Пример**.
 

@@ -13,10 +13,10 @@ ms.subservice: app-mgmt
 ms.author: kenwith
 ms.reviewer: japere
 ms.openlocfilehash: 0244e0ca66f452649d3136eb122d1c2666182ae2
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200969"
 ---
 # <a name="azure-ad-application-proxy-version-release-history"></a>Azure AD Application Proxy: журнал выпусков версий
@@ -26,7 +26,7 @@ ms.locfileid: "103200969"
 
 Ниже приведен список связанных ресурсов.
 
-| Resource                                         | Сведения                                                      |
+| Ресурс                                         | Сведения                                                      |
 | ------------------------------------------------ | ------------------------------------------------------------ |
 | Как включить прокси приложения                  | В этом [руководстве](application-proxy-add-on-premises-application.md)описаны предварительные требования для включения прокси приложения и установки и регистрации соединителя. |
 | Сведения о соединителях прокси приложения Azure AD | Дополнительные сведения об [управлении соединителями](application-proxy-connectors.md) и том, как соединители подходят к [автоматическому обновлению](application-proxy-connectors.md#automatic-updates). |
@@ -128,6 +128,6 @@ ms.locfileid: "103200969"
 
 Если вы используете версию соединителя прокси приложения, предшествующую 1.5.36.0, обновите ее до последней версии, чтобы убедиться в наличии новейших полностью поддерживаемых функций.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 - Дополнительные сведения об [удаленном доступе к локальным приложениям с помощью Azure AD application proxy](application-proxy.md).
 - Чтобы приступить к использованию прокси приложения, см. раздел [учебник. Добавление локального приложения для удаленного доступа через прокси приложения](application-proxy-add-on-premises-application.md).

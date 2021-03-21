@@ -10,10 +10,10 @@ ms.author: mimart
 author: msmimart
 manager: CelesteDG
 ms.openlocfilehash: 00be0a18984f1ad3eacf86a2cf3477d8b0d9065f
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102454623"
 ---
 # <a name="azure-active-directory-b2c-whats-new"></a>Azure Active Directory B2C: новые возможности

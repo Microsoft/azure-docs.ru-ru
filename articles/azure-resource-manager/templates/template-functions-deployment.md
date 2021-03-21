@@ -4,10 +4,10 @@ description: Описывает функции, используемые в ша
 ms.topic: conceptual
 ms.date: 03/02/2021
 ms.openlocfilehash: a9a073284c62efac4e77f8f9b35e8730c350e5f1
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101722727"
 ---
 # <a name="deployment-functions-for-arm-templates"></a>Функции развертывания для шаблонов ARM
@@ -130,7 +130,7 @@ ms.locfileid: "101722727"
 }
 ```
 
-### <a name="remarks"></a>Комментарии
+### <a name="remarks"></a>Remarks
 
 Вы можете использовать deployment() для ссылки на другой шаблон в зависимости от URI родительского шаблона.
 
@@ -329,7 +329,7 @@ output environmentOutput object = environment()
 
 Значение указанного параметра.
 
-### <a name="remarks"></a>Комментарии
+### <a name="remarks"></a>Remarks
 
 Как правило, параметры используются, чтобы задать значения ресурсов. В следующем примере значению параметра задается имя веб-сайта, переданное во время развертывания.
 
@@ -452,7 +452,7 @@ output crossOutput string = crossParameter
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | stringOutput | Строка | вариант 1 |
 | intOutput | Int | 1 |
@@ -478,7 +478,7 @@ output crossOutput string = crossParameter
 
 Значение указанной переменной.
 
-### <a name="remarks"></a>Комментарии
+### <a name="remarks"></a>Remarks
 
 Как правило, переменные используются, чтобы упростить шаблон за счет создания сложных значений (единожды). В примере ниже создается уникальное имя для учетной записи хранения.
 
@@ -590,7 +590,7 @@ output exampleOutput4 object = var4
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | exampleOutput1 | Строка | myVariable |
 | exampleOutput2 | Array | [1, 2, 3, 4] |

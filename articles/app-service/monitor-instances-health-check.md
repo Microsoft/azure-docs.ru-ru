@@ -6,12 +6,12 @@ author: msangapu-msft
 ms.topic: article
 ms.date: 12/03/2020
 ms.author: msangapu
-ms.openlocfilehash: 7d6f9564328f81b71c62a4243c5f4cc209a29d8f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 0e08d016ab85587d451ad2a1e296e7f494ba283e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101714482"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104596031"
 ---
 # <a name="monitor-app-service-instances-using-health-check"></a>Мониторинг экземпляров службы приложений с помощью проверки работоспособности
 
@@ -62,6 +62,10 @@ ms.locfileid: "101714482"
 ## <a name="monitoring"></a>Наблюдение
 
 После предоставления пути к проверке работоспособности приложения можно отслеживать работоспособность сайта с помощью Azure Monitor. В колонке **Проверка работоспособности** на портале щелкните **метрики** на верхней панели инструментов. Откроется новая колонка, в которой можно просмотреть историю состояния работоспособности сайта и создать новое правило генерации оповещений. Дополнительные сведения о мониторинге сайтов см. [в разделе Azure Monitor](web-sites-monitor.md).
+
+## <a name="limitations"></a>Ограничения
+
+Не следует включать проверку работоспособности на сайтах функций Premium. Из-за быстрого масштабирования функций Premium запросы на проверку работоспособности могут вызвать ненужные колебания трафика HTTP. Функции Premium имеют собственные внутренние зонды работоспособности, которые используются для информирования решений о масштабировании.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - [Создайте оповещение журнала действий, чтобы отслеживать все операции системы автомасштабирования в подписке](https://github.com/Azure/azure-quickstart-templates/tree/master/monitor-autoscale-alert).

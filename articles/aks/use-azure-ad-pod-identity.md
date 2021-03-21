@@ -5,10 +5,10 @@ services: container-service
 ms.topic: article
 ms.date: 3/12/2021
 ms.openlocfilehash: f3d0db5b085fcdb9a24310cb2fe310d390b1790a
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103574379"
 ---
 # <a name="use-azure-active-directory-pod-managed-identities-in-azure-kubernetes-service-preview"></a>Использование удостоверений под управлением Azure Active Directory Pod в службе Kubernetes Azure (Предварительная версия)
@@ -20,7 +20,7 @@ Azure Active Directory удостоверения, управляемые мод
 
 [!INCLUDE [preview features callout](./includes/preview/preview-callout.md)]
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Необходимо установить следующий ресурс:
 
@@ -237,7 +237,7 @@ az aks pod-identity delete --name ${POD_IDENTITY_NAME} --namespace ${POD_IDENTIT
 az identity delete -g ${IDENTITY_RESOURCE_GROUP} -n ${IDENTITY_NAME}
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения об управляемых удостоверениях для ресурсов Azure см. [в этой статье][az-managed-identities].
 

@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием Политики Azure для Azure Data Lake Storage 1-го поколения
 description: Содержит список элементов управления соответствием Политики Azure для Azure Data Lake Storage 1-го поколения. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 ms.topic: sample
 author: normesta
 ms.author: normesta
 ms.service: data-lake-store
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: 25347dbda8f1beaaeaa4455be9135a23a39d1b2d
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: 3b707383e47ee13c60a911b3d67cd5801441e475
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102635825"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104577038"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-data-lake-storage-gen1"></a>Элементы управления соответствием Политики Azure для Azure Data Lake Storage 1-го поколения
 

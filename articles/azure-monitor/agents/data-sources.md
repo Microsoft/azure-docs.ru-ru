@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 10/06/2020
 ms.openlocfilehash: 537163b4a78954443eeb7799dc624837ba03e2bd
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102036628"
 ---
 # <a name="sources-of-monitoring-data-for-azure-monitor"></a>Источники данных мониторинга для Azure Monitor
@@ -93,7 +93,7 @@ Azure Monitor основан на [общей платформе данных м
 
 | Назначение | Описание | Справочник |
 |:---|:---|:---|
-| Метрики Azure Monitor | Метрики платформы будут записывать в базу данных метрик Azure Monitor без конфигурации. Доступ к метрикам платформы из обозреватель метрик.  | [Начало работы с обозревателем метрик Azure](../essentials/metrics-getting-started.md)<br>[Поддерживаемые метрики с Azure Monitor](../essentials/metrics-supported.md) |
+| Метрики Azure Monitor | Метрики платформы будут записывать в базу данных метрик Azure Monitor без конфигурации. Доступ к метрикам платформы из обозреватель метрик.  | [Начало работы с обозревателем метрик Azure](../essentials/metrics-getting-started.md)<br>[Метрики, поддерживаемые Azure Monitor](../essentials/metrics-supported.md) |
 | Журналы Azure Monitor | Копирование метрик платформы в журналы для анализа тенденций и других анализов с помощью Log Analytics. | [Направление диагностики Azure в Log Analytics](../essentials/resource-logs.md#send-to-log-analytics-workspace) |
 | Центры событий | Потоковая передача метрик в другие расположения с помощью концентраторов событий. |[Потоковая передача данных мониторинга Azure в концентратор событий для потребления внешним инструментом](../essentials/stream-monitoring-data-event-hubs.md) |
 
@@ -105,7 +105,7 @@ Azure Monitor основан на [общей платформе данных м
 | Назначение | Описание | Справочник |
 |:---|:---|:---|
 | Журналы Azure Monitor | Отправка журналов ресурсов в журналы Azure Monitor для анализа с другими собранными данными журнала. | [Получение журналов ресурсов Azure в Log Analytics рабочей области в Azure Monitor](../essentials/resource-logs.md#send-to-azure-storage) |
-| Память | Отправка журналов ресурсов в службу хранилища Azure для архивирования. | [Архивация журналов ресурсов Azure](../essentials/resource-logs.md#send-to-log-analytics-workspace) |
+| Служба хранилища | Отправка журналов ресурсов в службу хранилища Azure для архивирования. | [Архивация журналов ресурсов Azure](../essentials/resource-logs.md#send-to-log-analytics-workspace) |
 | Центры событий | Потоковая передача журналов ресурсов в другие расположения с помощью концентраторов событий. |[Потоковая передача журналов ресурсов Azure в концентратор событий](../essentials/resource-logs.md#send-to-azure-event-hubs) |
 
 ## <a name="operating-system-guest"></a>Операционная система (гость)
@@ -118,7 +118,7 @@ Azure Monitor основан на [общей платформе данных м
 
 | Назначение | Описание | Справочник |
 |:---|:---|:---|
-| Память | Расширение системы диагностики Azure всегда записывает данные в учетную запись хранения Azure. | [Установка и настройка расширения "Диагностика Microsoft Azure" (WAD)](./diagnostics-extension-windows-install.md)<br>[Отслеживание метрик и журналов с помощью расширения диагностики для Linux](../../virtual-machines/extensions/diagnostics-linux.md) |
+| Служба хранилища | Расширение системы диагностики Azure всегда записывает данные в учетную запись хранения Azure. | [Установка и настройка расширения "Диагностика Microsoft Azure" (WAD)](./diagnostics-extension-windows-install.md)<br>[Отслеживание метрик и журналов с помощью расширения диагностики для Linux](../../virtual-machines/extensions/diagnostics-linux.md) |
 | Метрики Azure Monitor | При настройке расширения диагностики для сбора счетчиков производительности они записываются в базу данных метрик Azure Monitor. | [Отправка метрик гостевой ОС в хранилище метрик Azure Monitor с помощью шаблона диспетчер ресурсов для виртуальной машины Windows](../essentials/collect-custom-metrics-guestos-resource-manager-vm.md) |
 | Центры событий | Настройте расширение системы диагностики для потоковой передачи данных в другие расположения с помощью концентраторов событий.  | [Потоковая передача данных система диагностики Azure с помощью концентраторов событий](./diagnostics-extension-stream-event-hubs.md)<br>[Отслеживание метрик и журналов с помощью диагностического расширения Linux](../../virtual-machines/extensions/diagnostics-linux.md) |
 | Журналы Application Insights | Собирайте журналы и счетчики производительности из ресурсов вычислений, которые поддерживают приложение для анализа с другими данными приложений. | [Отправка в Application Insights диагностических данных облачной службы, виртуальной машины или Service Fabric](./diagnostics-extension-to-application-insights.md) |
@@ -133,7 +133,7 @@ Azure Monitor основан на [общей платформе данных м
 | Хранилище виртуальных машин | В Application Insights для хранения сведений о состоянии работоспособности в пользовательском расположении используется агент Log Analytics. Этот процесс описан в следующем разделе.  |
 
 
-### <a name="vm-insights"></a>Аналитика ВМ 
+### <a name="vm-insights"></a>Аналитика виртуальных машин 
 Функция " [аналитика VM](../vm/vminsights-overview.md) " обеспечивает настраиваемый мониторинг виртуальных машин, предоставляющих функции, превышающие функциональность ядра Azure Monitor. Для этого требуется Dependency Agent на виртуальных машинах Windows и Linux, которые интегрируются с агентом Log Analytics для получения обнаруженных данных о процессах, выполняемых на виртуальной машине и зависимостях внешних процессов.
 
 | Назначение | Описание | Справочник |
@@ -172,7 +172,7 @@ Azure Monitor основан на [общей платформе данных м
 | Журналы Azure Monitor | Решения мониторинга собираются данные в журналы Azure Monitor, где их можно анализировать с помощью языка запросов или [представлений](../visualize/view-designer.md) , которые обычно включаются в решение. | [Сведения о сборе данных для решений мониторинга в Azure](../monitor-reference.md) |
 
 
-### <a name="container-insights"></a>Аналитика контейнера
+### <a name="container-insights"></a>Аналитика контейнеров
 Служба " [аналитика контейнеров](../containers/container-insights-overview.md) " предоставляет настраиваемый интерфейс мониторинга для [службы Azure Kubernetes (AKS)](../../aks/index.yml). Он собирает дополнительные данные об этих ресурсах, описанные в следующей таблице.
 
 | Назначение | Описание | Справочник |
@@ -181,7 +181,7 @@ Azure Monitor основан на [общей платформе данных м
 | Метрики Azure Monitor | Данные метрик хранятся в базе данных метрики для управления визуализацией и оповещениями. | [Просмотр метрик контейнера в обозревателе метрик](../containers/container-insights-analyze.md#view-container-metrics-in-metrics-explorer) |
 | Служба Azure Kubernetes | Предоставляет прямой доступ к журналам контейнеров Azure Kubernetes Service (stdout/stderr), событиям и метрикам Pod на портале. | [Просмотр журналов Kubernetes, событий и метрик Pod в режиме реального времени ](../containers/container-insights-livedata-overview.md) |
 
-### <a name="vm-insights"></a>Аналитика ВМ
+### <a name="vm-insights"></a>Аналитика виртуальных машин
 [VM Insights](../vm/vminsights-overview.md) предоставляет настраиваемый интерфейс для мониторинга виртуальных машин. Описание данных, собираемых службой "аналитика ВМ", включено в раздел " [Операционная система (гость)](#operating-system-guest) " выше.
 
 ## <a name="custom-sources"></a>Пользовательские источники
@@ -195,7 +195,7 @@ Azure Monitor основан на [общей платформе данных м
 | Метрики Azure Monitor | Пользовательский API метрик | Собирайте данные метрик из любого клиента RESTFUL и храните их в базе данных метрик Azure Monitor. | [Отправка пользовательских метрик для ресурса Azure в хранилище метрик Azure Monitor с использованием REST API](../essentials/metrics-store-custom-rest-api.md) |
 
 
-## <a name="other-services"></a>Другие службы
+## <a name="other-services"></a>другие службы.
 Другие службы в Azure записывают данные на платформу данных Azure Monitor. Это позволяет анализировать данные, собранные этими службами, с данными, собранными Azure Monitor, и использовать те же средства анализа и визуализации.
 
 | Служба | Назначение | Описание | Справочник |

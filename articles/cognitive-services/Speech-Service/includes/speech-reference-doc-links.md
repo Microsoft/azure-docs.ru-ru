@@ -10,10 +10,10 @@ ms.topic: include
 ms.date: 12/06/2019
 ms.author: trbye
 ms.openlocfilehash: 8bc959bc0960a2de3d84f8d75f285138eacdbe34
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102434322"
 ---
 ## <a name="reference-docs"></a>Справочная документация

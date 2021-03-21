@@ -4,10 +4,10 @@ description: Узнайте о требованиях к сети для сет�
 ms.topic: tutorial
 ms.date: 03/13/2021
 ms.openlocfilehash: 8cee5fa24aab8bd7fe6a9527f9c8e7cdff997511
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103462071"
 ---
 # <a name="networking-planning-checklist-for-azure-vmware-solution"></a>Контрольный список для планирования сети для Решения Azure VMware 

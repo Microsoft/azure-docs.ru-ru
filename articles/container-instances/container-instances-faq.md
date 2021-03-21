@@ -6,17 +6,17 @@ ms.author: macolso
 ms.topic: article
 ms.date: 06/02/2020
 ms.openlocfilehash: 2645c3f183e2217dff28a96c9c0d376eb82a6476
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103573138"
 ---
 # <a name="frequently-asked-questions-about-azure-container-instances"></a>Часто задаваемые вопросы о службе "экземпляры контейнеров Azure"
 
 В этой статье рассматриваются часто задаваемые вопросы о службе "экземпляры контейнеров Azure".
 
-## <a name="deployment"></a>Развертывание
+## <a name="deployment"></a>Deployment (Развертывание)
 
 ### <a name="how-large-can-my-container-image-be"></a>Насколько велика возможность создания образа контейнера?
 
@@ -109,7 +109,7 @@ ACI поддерживает извлечение изображений из з
 
 Счетчики останавливаются после остановки всей группы контейнеров. Пока контейнер в группе контейнеров работает, мы содержали ресурсы на случай, если вы хотите запустить контейнеры снова. 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Дополнительные [сведения](container-instances-overview.md) о службе "экземпляры контейнеров Azure".
 * [Устранение распространенных](container-instances-troubleshooting.md) неполадок в службе "экземпляры контейнеров Azure".

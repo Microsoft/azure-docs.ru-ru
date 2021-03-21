@@ -15,10 +15,10 @@ ms.topic: conceptual
 ms.date: 02/05/2021
 ms.author: b-juche
 ms.openlocfilehash: 12807e83f7841bc67999ce385d0cb82bf15f4c71
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102175997"
 ---
 # <a name="what-changing-to-volume-hard-quota-means-for-your-azure-netapp-files-service"></a>Что означает изменение фиксированной квоты тома для службы Azure NetApp Files
@@ -237,7 +237,7 @@ REST API для службы Azure NetApp Files определяет опера�
 
     ![Снимок экрана, на котором показано окно "задать процент автоматического роста громкости".](../media/azure-netapp-files/hard-quota-volume-anfcapacitymanager-auto-grow-percent.png) 
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ 
+## <a name="faq"></a>Вопросы и ответы 
 
 В этом разделе содержатся ответы на некоторые вопросы об изменении жестких квот тома. 
 
