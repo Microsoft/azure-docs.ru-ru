@@ -10,10 +10,10 @@ ms.service: iot-edge
 services: iot-edge
 monikerRange: =iotedge-2018-06
 ms.openlocfilehash: a919238e4a62ae8954e101cb21a2fd4943191f6a
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103489530"
 ---
 # <a name="powershell-scripts-for-iot-edge-with-windows-containers"></a>Скрипты PowerShell для IoT Edge с контейнерами Windows
@@ -99,10 +99,10 @@ Get-AuthenticodeSignature "C:\<path>\IotEdgeSecurityDaemon.ps1"
 
 | Параметр | Допустимые значения | Комментарии |
 | --------- | --------------- | -------- |
-| **Force** | нет | Этот флаг принудительно выполняет удаление, если предыдущая попытка удаления завершилась неудачно.
+| **Перевести** | нет | Этот флаг принудительно выполняет удаление, если предыдущая попытка удаления завершилась неудачно.
 | **рестартифнидед** | нет | Этот флаг позволяет сценарию удаления перезапускать компьютер без запроса при необходимости. |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения об использовании этих команд см. в следующей статье:
 

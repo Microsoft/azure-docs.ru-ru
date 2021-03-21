@@ -12,10 +12,10 @@ ms.reviewer: artek
 ms.subservice: common
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 1a07acedadfaf3d5158ba8e494d4527301655425
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102035107"
 ---
 # <a name="use-geo-redundancy-to-design-highly-available-applications"></a>Разработка высокодоступных приложений с геоизбыточностью
@@ -254,6 +254,6 @@ static function OnBeforeResponse(oSession: Session) {
 
 Если вы сделали настраиваемыми пороговые значения для переключения приложения в режим только для чтения, то вам будет проще тестировать его поведение на определенных объемах непроизводственных транзакций.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Полный пример, демонстрирующий переключение между основной и вторичной конечными точками, см. в статье [примеры Azure: использование шаблона автоматического выключения с хранилищем RA-GRS](https://github.com/Azure-Samples/storage-dotnet-circuit-breaker-pattern-ha-apps-using-ra-grs).

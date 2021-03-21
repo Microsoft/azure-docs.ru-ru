@@ -12,12 +12,12 @@ ms.workload: identity
 ms.date: 09/25/2020
 ms.author: jmprieur
 ms.custom: aaddev, devx-track-python
-ms.openlocfilehash: 2109705116c323fd3632b7230a81ccd9158c1a64
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: aa377547f7f4961e199ec8d62bf0f1435296f983
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99582333"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104669310"
 ---
 # <a name="a-web-app-that-calls-web-apis-code-configuration"></a>Веб-приложение, которое вызывает веб-API. Конфигурация кода
 
@@ -28,15 +28,11 @@ ms.locfileid: "99582333"
 
 На странице [Веб-приложение, которое выполняет вход пользователей в систему](scenario-web-app-sign-user-overview.md) описан лишь первый этап. На этой странице содержатся сведения об изменении веб-приложения, чтобы оно не только выполняло вход пользователей в систему, но и вызывало веб-API.
 
-## <a name="libraries-that-support-web-app-scenarios"></a>Библиотеки, поддерживающие сценарии веб-приложений
+## <a name="microsoft-libraries-supporting-web-apps"></a>Библиотеки Майкрософт, поддерживающие веб-приложения
 
-Следующие библиотеки в библиотеке проверки подлинности Майкрософт (MSAL) поддерживают поток кода авторизации для веб-приложений:
+Следующие библиотеки Майкрософт поддерживают веб-приложения.
 
-| Библиотека MSAL | Описание |
-|--------------|-------------|
-| ![MSAL.NET](media/sample-v2-code/logo_NET.png) <br/> MSAL.NET  | Поддержка платформ .NET Framework и .NET Core. Не поддерживается универсальная платформа Windows (UWP), Xamarin.iOS и Xamarin.Android, так как эти платформы используются для создания общедоступных клиентских приложений. <br/><br/>Для ASP.NET Core веб-приложений и веб-API MSAL.NET инкапсулируется в библиотеку более высокого уровня с именем [Microsoft. Identity. Web](https://aka.ms/ms-identity-web). |
-| ![MSAL Python](media/sample-v2-code/logo_python.png) <br/> MSAL для Python | Поддержка веб-приложений Python. |
-| ![MSAL Java](media/sample-v2-code/logo_java.png) <br/> MSAL для Java | Поддержка веб-приложений Java. |
+[!INCLUDE [active-directory-develop-libraries-webapp](../../../includes/active-directory-develop-libraries-webapp.md)]
 
 Выберите нужную вкладку для платформы:
 
@@ -99,7 +95,7 @@ ms.locfileid: "99582333"
 
 ## <a name="startupcs"></a>Startup.cs
 
-Веб-приложению потребуется получить маркер для подчиненного API. Его можно указать, добавив `.EnableTokenAcquisitionToCallDownstreamApi()` строку после `.AddMicrosoftIdentityWebApi(Configuration)` . Эта строка предоставляет `ITokenAcquisition` службу, которую можно использовать в действиях контроллера и страницы. Однако, как вы увидите в следующих двух вариантах, это можно сделать более просто. Также необходимо выбрать реализацию кэша маркеров, например `.AddInMemoryTokenCaches()` в *Startup.CS*:
+Веб-приложению потребуется получить маркер для подчиненного API. Его можно указать, добавив `.EnableTokenAcquisitionToCallDownstreamApi()` строку после `.AddMicrosoftIdentityWebApi(Configuration)` . Эта строка предоставляет `ITokenAcquisition` службу, которую можно использовать в действиях контроллера и страницы. Однако, как вы увидите в следующих двух вариантах, это можно сделать более просто. Вам также потребуется выбрать реализацию кэша маркеров, например `.AddInMemoryTokenCaches()` , в *Startup. CS*:
 
    ```csharp
    using Microsoft.Identity.Web;
@@ -129,7 +125,7 @@ ms.locfileid: "99582333"
 Если вы хотите вызвать Microsoft Graph, *Microsoft. Identity. Web* позволяет напрямую использовать `GraphServiceClient` (предоставляется Microsoft Graph SDK) в действиях API. Чтобы предоставить Microsoft Graph:
 
 1. Добавьте в проект пакет NuGet [Microsoft. Identity. Web. MicrosoftGraph](https://www.nuget.org/packages/Microsoft.Identity.Web.MicrosoftGraph) .
-1. Добавьте `.AddMicrosoftGraph()` после `.EnableTokenAcquisitionToCallDownstreamApi()` в файл *Startup.CS* . `.AddMicrosoftGraph()` имеет несколько переопределений. При использовании переопределения, которое принимает раздел конфигурации в качестве параметра, код становится следующим:
+1. Добавьте `.AddMicrosoftGraph()` после `.EnableTokenAcquisitionToCallDownstreamApi()` в файл *Startup. CS* . `.AddMicrosoftGraph()` имеет несколько переопределений. При использовании переопределения, которое принимает раздел конфигурации в качестве параметра, код становится следующим:
 
    ```csharp
    using Microsoft.Identity.Web;
@@ -175,11 +171,11 @@ ms.locfileid: "99582333"
    }
    ```
 
-### <a name="summary"></a>Сводка
+### <a name="summary"></a>Итоги
 
 Как и в случае с веб-API, можно выбрать различные реализации кэша маркеров. Дополнительные сведения см. в [статье сериализация кэша маркеров в Microsoft. Identity. Web](https://aka.ms/ms-id-web/token-cache-serialization) .
 
-На следующем рисунке показаны различные возможности *Microsoft. Identity. Web* и их влияние на файл *Startup.CS* :
+На следующем рисунке показаны различные возможности *Microsoft. Identity. Web* и их влияние на файл *Startup. CS* :
 
 :::image type="content" source="media/scenarios/microsoft-identity-web-startup-cs.svg" alt-text="Блок-схема, показывающая параметры конфигурации службы в загрузочном точке C S для вызова Web API и указания реализации кэша маркеров":::
 

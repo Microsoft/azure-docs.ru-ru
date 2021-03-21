@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 07/18/2019
 ms.openlocfilehash: 56ef6563982c315d34cfeb87070b9ebfa3d27a30
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102500433"
 ---
 # <a name="log-data-ingestion-time-in-azure-monitor"></a>Время приема данных журнала в Azure Monitor
@@ -144,5 +144,5 @@ Heartbeat
 | top 20 by NoHeartbeatPeriod desc 
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 * Ознакомьтесь со страницей [Соглашение об уровне обслуживания для Log Analytics](https://azure.microsoft.com/en-us/support/legal/sla/monitor/v1_3/).

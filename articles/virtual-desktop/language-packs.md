@@ -7,10 +7,10 @@ ms.date: 12/03/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: fc7892db2ca11ab7970835f8979360961ee01104
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103463346"
 ---
 # <a name="add-language-packs-to-a-windows-10-multi-session-image"></a>Добавление языковых пакетов в многосеансовый образ Windows 10
@@ -261,7 +261,7 @@ Set-WinUserLanguageList $LanguageList -force
 
 После того как пользователь изменит параметры языка, ему потребуется выйти из сеанса виртуальных рабочих столов Windows и снова войти, чтобы изменения вступили в силу. 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Если вы хотите узнать об известных проблемах, связанных с языковыми пакетами, см. статью [Добавление языковых пакетов в Windows 10, версия 1803 и более поздние версии: известные проблемы](/windows-hardware/manufacture/desktop/language-packs-known-issue).
 

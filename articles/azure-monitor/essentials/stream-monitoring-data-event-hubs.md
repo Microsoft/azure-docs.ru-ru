@@ -7,10 +7,10 @@ ms.author: bwren
 ms.topic: conceptual
 ms.date: 07/15/2020
 ms.openlocfilehash: a929563df3e7e98575056d07519abfda0d6ac13b
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102032965"
 ---
 # <a name="stream-azure-monitoring-data-to-an-event-hub-or-external-partner"></a>Потоковая передача данных мониторинга Azure в концентратор событий или внешний партнер
@@ -59,7 +59,7 @@ Azure Monitor предоставляет полное решение для мо
 
 Также могут быть доступны другие партнеры. Более полный список всех Azure Monitor партнеров и их возможностей см. в статье [Интеграция с Azure Monitor партнерами](../partners.md).
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 * [Архивация журнала действий в учетную запись хранения](./activity-log.md#legacy-collection-methods)
 * [Ознакомьтесь с обзором журнала действий Azure.](../essentials/platform-logs-overview.md)
 * [Настройка оповещения на основе события журнала действий](../alerts/alerts-log-webhook.md)

@@ -7,10 +7,10 @@ ms.author: v-jysur
 ms.date: 05/24/2018
 ms.custom: references_regions
 ms.openlocfilehash: 98f53ec1b6506a6d47146377e837576254f445e2
-ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103601072"
 ---
 # <a name="connect-azure-to-itsm-tools-by-using-it-service-management-solution"></a>Подключение Azure к средствам ITSM с помощью решения для управления ИТ
@@ -153,6 +153,6 @@ ms.locfileid: "103601072"
 >
 > Поле краткого описания в определении правила генерации оповещений ограничено 40 символами при отправке с помощью действия ITSM.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Устранение неполадок в ITSMC](./itsmc-resync-servicenow.md)

@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/22/2021
 ms.custom: seodec18
 ms.openlocfilehash: 77c6e8790451ef830b37cc5914ce9de8e92174f5
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103464094"
 ---
 # <a name="azure-time-series-insights-explorer"></a>Обозреватель службы "Аналитика временных рядов Azure"
@@ -219,7 +219,7 @@ Gen2 "аналитика временных рядов Azure" поддержив
 | `<`, `>`, `<=`, `>=` | Double, DateTime, TimeSpan | |
 | `=`, `!=`, `<>` | String, Bool, Double, DateTime, TimeSpan, NULL |
 | `IN` | String, Bool, Double, DateTime, TimeSpan, NULL | Все операнды должны быть одного типа или являться константой NULL. |
-| `HAS` | Строковый | В правой части разрешены только константные строковые литералы. Пустые строки и значения NULL не допускаются. |
+| `HAS` | Строка | В правой части разрешены только константные строковые литералы. Пустые строки и значения NULL не допускаются. |
 
 Дополнительные сведения о поддерживаемых операциях запросов и типах данных см. в статье [выражение временных рядов (целевой сервер)](/rest/api/time-series-insights/reference-time-series-expression-syntax).
 
@@ -237,7 +237,7 @@ Gen2 "аналитика временных рядов Azure" поддержив
 
   [![Отмена запрошенного и отфильтрованного параметра](media/v2-update-explorer/s1-s2-preview-filtered-view-cancel.png)](media/v2-update-explorer/s1-s2-preview-filtered-view-cancel.png#lightbox)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Узнайте, как принимать [данные](./concepts-ingestion-overview.md) в вашу среду.
 

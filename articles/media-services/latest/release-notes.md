@@ -9,14 +9,14 @@ editor: ''
 ms.service: media-services
 ms.workload: na
 ms.topic: article
-ms.date: 10/21/2020
+ms.date: 03/17/2021
 ms.author: inhenkel
-ms.openlocfilehash: d7cfb4cf9b6b061f5fb53667e968cb0403f22bfc
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.openlocfilehash: 9e5a6737d2e37392efd305910ff5370adc84940f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103562575"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104596745"
 ---
 # <a name="azure-media-services-v3-release-notes"></a>Заметки о выпуске Служб мультимедиа Azure версии 3
 
@@ -84,7 +84,7 @@ ms.locfileid: "103562575"
  
 - Круглосуточная поддержка интерактивных событий
 - API-интерфейсы RESTFUL, клиентские пакеты SDK для .NET Core, Node.js, Python, Java, Go и Ruby.
-- Управляемые клиентами ключи, интеграция доверенного хранилища, поддержка частной ссылки и [многое другое](https://review.docs.microsoft.com/azure/media-services/latest/migrate-v-2-v-3-migration-benefits)
+- Управляемые клиентами ключи, интеграция доверенного хранилища, поддержка частной ссылки и [многое другое](https://docs.microsoft.com/azure/media-services/latest/migrate-v-2-v-3-migration-benefits)
 
 #### <a name="action-required"></a>Требуется действие
 
@@ -123,7 +123,6 @@ ms.locfileid: "103562575"
 - **[Доверенное хранилище](concept-trusted-storage.md)**. службы мультимедиа можно настроить для доступа к службе хранилища Azure с помощью управляемого удостоверения, связанного с учетной записью служб мультимедиа. Если доступ к учетным записям хранения осуществляется с помощью управляемого удостоверения, клиенты могут настроить более широкие сетевые списки ACL для учетной записи хранения без блокировки сценариев служб мультимедиа.
 
 - **[Управляемые удостоверения](concept-managed-identities.md)**. клиенты могут включить управляемое удостоверение, назначенное системой для учетной записи служб мультимедиа, чтобы предоставить доступ к хранилищам ключей (для управляемых пользователем ключей) и учетным записям хранения (для доверенного хранилища).
-
 
 ### <a name="updated-typescript-nodejs-samples-using-isomorphic-sdk-for-javascript"></a>Обновленные примеры Node.js typescript с использованием пакета SDK для сходны для JavaScript
 
@@ -373,7 +372,7 @@ ms.locfileid: "103562575"
 
 Службы мультимедиа версии 3 теперь поддерживаются в национальных облаках Azure. Некоторые возможности пока недоступны во всех облаках. Дополнительные сведения см. в разделе [Облака и регионы, в которых существуют Службы мультимедиа Azure версии 3](azure-clouds-regions.md).
 
-Событие [Microsoft.Media.JobOutputProgress](media-services-event-schemas.md#monitoring-job-output-progress) для Служб мультимедиа добавлено в Сетку событий Azure.
+Событие [Microsoft.Media.JobOutputProgress](monitoring/media-services-event-schemas.md#monitoring-job-output-progress) для Служб мультимедиа добавлено в Сетку событий Azure.
 
 ## <a name="january-2019"></a>Январь 2019 г.
 

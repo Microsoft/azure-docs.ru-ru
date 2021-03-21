@@ -6,10 +6,10 @@ manager: gwallace
 ms.topic: article
 ms.date: 01/08/2021
 ms.openlocfilehash: 19ece696dabc81e643e8a904d506d22e40eaa099
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102499158"
 ---
 # <a name="authenticate-with-azure-container-registry-from-azure-kubernetes-service"></a>Аутентификация с помощью реестра контейнеров Azure из Службы Azure Kubernetes
@@ -21,7 +21,7 @@ ms.locfileid: "102499158"
 > [!NOTE]
 > В этой статье описывается автоматическая проверка подлинности между AKS и записью контроля доступа. Если необходимо извлечь образ из закрытого внешнего реестра, используйте [секрет для извлечения образа][Image Pull Secret].
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Для этих примеров требуются:
 
@@ -78,7 +78,7 @@ az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-resource-id>
 az aks update -n myAKSCluster -g myResourceGroup --detach-acr <acr-name>
 ```
 
-или
+или диспетчер конфигурации служб
 
 ```azurecli
 az aks update -n myAKSCluster -g myResourceGroup --detach-acr <acr-resource-id>

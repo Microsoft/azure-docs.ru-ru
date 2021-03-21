@@ -16,10 +16,10 @@ ms.author: willzhan
 ms.reviewer: kilroyh;yanmf;juliako
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 1a4f151b597b57b77fa6517c6ea0d586c1106986
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103017143"
 ---
 # <a name="design-of-a-content-protection-system-with-access-control-using-azure-media-services"></a>Проектирование системы защиты содержимого с управлением доступом с помощью служб мультимедиа Azure
@@ -153,7 +153,7 @@ ms.locfileid: "103017143"
 | --- | --- |
 | **Игрок** |[Проигрыватель мультимедиа Azure](https://azure.microsoft.com/services/media-services/media-player/) |
 | **Поставщик удостоверений (IDP)** |Azure Active Directory (Azure AD) |
-| **Служба маркеров безопасности (STS)** |Azure AD |
+| **Служба маркеров безопасности (STS)** |Azure AD |
 | **Рабочий процесс защиты DRM** |Динамическая защита Служб мультимедиа |
 | **Доставка лицензий DRM** |* Доставка лицензий Служб мультимедиа (PlayReady, Widevine, FairPlay) <br/>* Сервер лицензирования Axinom <br/>* Пользовательский сервер лицензирования PlayReady |
 | **Исходный домен** |Конечная точка потоковой передачи служб мультимедиа |

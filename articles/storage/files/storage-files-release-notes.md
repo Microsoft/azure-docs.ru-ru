@@ -9,10 +9,10 @@ ms.date: 3/3/2021
 ms.author: wgries
 ms.subservice: files
 ms.openlocfilehash: 5549fc3b63b76c6158ae7399e6d94a43d2d4f28f
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102435194"
 ---
 # <a name="release-notes-for-the-azure-file-sync-agent"></a>Заметки о выпуске агента службы "Синхронизация файлов Azure"

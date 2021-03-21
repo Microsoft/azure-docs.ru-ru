@@ -10,10 +10,10 @@ ms.service: iot-edge
 services: iot-edge
 ms.custom: devx-track-csharp
 ms.openlocfilehash: a9b1ffb2dbcbd6e81856277f4b672cf876cc75f1
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103492376"
 ---
 # <a name="understand-azure-iot-edge-modules"></a>Общие сведения о модулях Azure IoT Edge
@@ -73,7 +73,7 @@ Twin twin = await client.GetTwinAsync();
 
 Azure IoT Edge модули могут автономно обрабатываться после синхронизации с центром Интернета вещей по крайней мере один раз. IoT Edge устройства также могут расширить эту возможность автономного режима на другие устройства IoT. Дополнительные сведения см. в разделе [Сведения о расширенных возможностях автономной работы устройств, модулей и дочерних устройств IoT Edge](offline-capabilities.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Сведения о требованиях и средствах разработки модулей IoT Edge](module-development.md)
 * [Общие сведения о среде выполнения Azure IoT Edge и ее архитектуре](iot-edge-runtime.md)

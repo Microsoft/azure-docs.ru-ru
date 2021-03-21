@@ -9,10 +9,10 @@ author: amjads1
 ms.collection: linux
 ms.date: 09/21/2018
 ms.openlocfilehash: e316bf9763dd7c2cbbab21992086eac52d108912
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102554791"
 ---
 # <a name="chef-vm-extension-for-linux-and-windows"></a>Расширение Chef виртуальной машины для Linux и Windows
@@ -69,7 +69,7 @@ Chef работает во всех [операционных системах, 
 | type | `LinuxChefClient` (Linux), `ChefClient` (Windows) | строка |
 | typeHandlerVersion | `1210.13` | Строка (двойная) |
 
-### <a name="settings"></a>Settings
+### <a name="settings"></a>Параметры
 
 | Имя | Значение и пример | Тип данных | Необходим?
 | ---- | ---- | ---- | ----
@@ -79,7 +79,7 @@ Chef работает во всех [операционных системах, 
 
 ### <a name="protected-settings"></a>Защищенные параметры
 
-| Имя | Например, . | Тип данных | Необходим?
+| Имя | Пример | Тип данных | Необходим?
 | ---- | ---- | ---- | ---- |
 | protectedSettings/ключ_проверки | `-----BEGIN RSA PRIVATE KEY-----\nKEYDATA\n-----END RSA PRIVATE KEY-----` | строка | Y |
 

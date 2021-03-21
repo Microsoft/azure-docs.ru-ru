@@ -8,10 +8,10 @@ ms.date: 11/16/2020
 ms.author: gunjanj
 ms.subservice: files
 ms.openlocfilehash: 9f858549f36d196c6412aec549d0ab2e2d864145
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103417677"
 ---
 # <a name="troubleshoot-azure-file-shares-performance-issues"></a>Устранение проблем с производительностью файловых ресурсов Azure

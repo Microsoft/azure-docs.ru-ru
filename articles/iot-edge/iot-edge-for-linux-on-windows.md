@@ -11,10 +11,10 @@ ms.date: 01/20/2021
 ms.author: kgremban
 monikerRange: =iotedge-2018-06
 ms.openlocfilehash: 330eaf5c12372347917e9f3a4aeafb6a2088c592
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103492580"
 ---
 # <a name="what-is-azure-iot-edge-for-linux-on-windows-preview"></a>Что такое Azure IoT Edge для Linux в Windows (предварительная версия)
@@ -30,7 +30,7 @@ IoT Edge для Linux в Windows работает путем запуска ви
 >[!NOTE]
 >Рекомендуется принять наши [опросы по продуктам](https://aka.ms/AzEFLOW-Registration) , чтобы помочь нам улучшить Azure IOT Edge для Linux в Windows на основе IOT Edge фоновых данных и целей. Этот опрос также можно использовать для регистрации будущих Azure IoT Edge для объявлений Linux в Windows.
 
-## <a name="components"></a>Components
+## <a name="components"></a>Компоненты
 
 IoT Edge для Linux в Windows использует следующие компоненты, чтобы разрешить рабочим нагрузкам Linux и Windows параллельно работать друг с другом и легко взаимодействовать:
 
@@ -64,7 +64,7 @@ IoT Edge для Linux в Windows в настоящее время находит
 
 **Запросы функций.** Для продукта Azure IoT Edge запросы функций отслеживаются на специальной странице [User Voice](https://feedback.azure.com/forums/907045-azure-iot-edge).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Просмотрите [IOT Edge для Linux в Windows 10 IOT Корпоративная](https://aka.ms/EFLOWPPC9) , чтобы получить дополнительные сведения и пример в действии.
 

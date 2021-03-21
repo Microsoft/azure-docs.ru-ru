@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 02/25/2021
 ms.author: jeedes
-ms.openlocfilehash: 616829c3fc666bbc6a4c860d9fb5c4e9fff59d7a
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: b83ec6b63d908483801a28ba89227c8431401424
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102449414"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104589282"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-appdynamics"></a>Руководство. Интеграция Azure Active Directory с AppDynamics
 
@@ -154,8 +154,8 @@ ms.locfileid: "102449414"
 
 * Перейдите по URL-адресу для входа в AppDynamics и инициируйте поток входа.
 
-* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкнув плитку AppDynamics на портале "Мои приложения", вы перейдете по URL-адресу для входа в AppDynamics. Дополнительные сведения о портале "Мои приложения" см. в [этой статье](https://docs.microsoft.com/azure/active-directory/active-directory-saas-access-panel-introduction).
+* Вы можете использовать портал "Мои приложения" корпорации Майкрософт. Щелкнув плитку AppDynamics на портале "Мои приложения", вы перейдете по URL-адресу для входа в AppDynamics. Дополнительные сведения о портале "Мои приложения" см. в [этой статье](../user-help/my-apps-portal-end-user-access.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-После настройки AppDynamics вы сможете применить функцию управления сеансами, чтобы в реальном времени защищать конфиденциальные данные своей организации от кражи и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-any-app).
+После настройки AppDynamics вы сможете применить функцию управления сеансами, чтобы в реальном времени защищать конфиденциальные данные своей организации от кражи и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-any-app).

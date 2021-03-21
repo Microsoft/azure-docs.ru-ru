@@ -5,15 +5,15 @@ author: vermagit
 ms.service: virtual-machines
 ms.subservice: hpc
 ms.topic: article
-ms.date: 11/06/2020
+ms.date: 03/18/2021
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: cd4d928217ceba80fa5ea0252a6ed20803a812d3
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 089976f2009e006f53dd2a77f09f57d5090429b7
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101666954"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104721238"
 ---
 # <a name="enable-infiniband"></a>Включение InfiniBand
 
@@ -22,9 +22,9 @@ ms.locfileid: "101666954"
 Существует несколько способов включения InfiniBand на совместимых размерах виртуальных машин.
 
 ## <a name="vm-images-with-infiniband-drivers"></a>Образы виртуальных машин с драйверами InfiniBand
-В разделе [образы виртуальных](configure.md#vm-images) машин приведен список поддерживаемых образов виртуальных машин в Marketplace, которые предварительно загружены с помощью драйверов InfiniBand (для ВИРТУАЛЬНЫХ машин SR-IOV или без SR-IOV) или могут быть настроены с помощью соответствующих драйверов.
-Чтобы приступить к работе с [виртуальными машинами с поддержкой RDMA](../../sizes-hpc.md#rdma-capable-instances)на основе SR-IOV, [CentOS-HPC версии 7,6 или более поздней](https://techcommunity.microsoft.com/t5/Azure-Compute/CentOS-HPC-VM-Image-for-SR-IOV-enabled-Azure-HPC-VMs/ba-p/665557) версии в Marketplace — это самый простой способ начать работу.
-Образы виртуальных машин Ubuntu можно настроить с помощью правильных драйверов для виртуальных машин с поддержкой SR-IOV и без SR-IOV, используя приведенные [здесь инструкции](https://techcommunity.microsoft.com/t5/azure-compute/configuring-infiniband-for-ubuntu-hpc-and-gpu-vms/ba-p/1221351).
+В разделе [образы виртуальных](configure.md#vm-images) машин приведен список поддерживаемых образов виртуальных машин в Marketplace, которые предварительно загружаются с помощью драйверов InfiniBand (для ВИРТУАЛЬНЫХ машин SR-IOV или без SR-IOV) или могут быть настроены с помощью соответствующих драйверов для [виртуальных машин с поддержкой RDMA](../../sizes-hpc.md#rdma-capable-instances).
+- Образы виртуальных машин [CentOS-HPC](configure.md#centos-hpc-vm-images) в Marketplace — самый простой способ начать работу.
+- Образы виртуальных машин [Ubuntu](configure.md#ubuntu-vm-images) можно настроить с помощью правильных драйверов.
 
 ## <a name="infiniband-driver-vm-extensions"></a>Расширения виртуальных машин драйвера InfiniBand
 В Linux [расширение виртуальной машины инфинибанддриверлинукс](../../extensions/hpc-compute-infiniband-linux.md) можно использовать для установки драйверов Mellanox офед и включения InfiniBand на виртуальных машинах серии H и N с поддержкой SR-IOV.
@@ -65,9 +65,9 @@ sudo sed -i -e 's/# OS.EnableRDMA=n/OS.EnableRDMA=y/g' /etc/waagent.conf
 sudo systemctl restart waagent
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Узнайте больше об установке различных [поддерживаемых библиотек MPI](setup-mpi.md) и их оптимальной конфигурации на виртуальных машинах.
-- Дополнительные сведения об оптимальной настройке рабочих нагрузок для производительности и масштабируемости см. в статье с обзором виртуальных машин серии [HB](hb-series-overview.md) и [HC](hc-series-overview.md).
-- Ознакомьтесь с последними объявлениями и некоторыми примерами HPC, а также результатами в [блогах технического сообщества службы вычислений](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
+- Ознакомьтесь с обзором [HBv3-Series](hbv3-series-overview.md) и [описанием серии HC](hc-series-overview.md).
+- Ознакомьтесь с последними объявлениями, примерами рабочей нагрузки HPC и результатами производительности в [блогах сообщества разработчиков Azure](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
 - Сведения о более высоком уровне архитектурного представления выполнения рабочих нагрузок HPC см. в статье [Высокопроизводительные вычисления (HPC) в Azure](/azure/architecture/topics/high-performance-computing/).

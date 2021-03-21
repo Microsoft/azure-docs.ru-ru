@@ -12,10 +12,10 @@ author: peterclu
 ms.date: 10/23/2020
 ms.custom: contperf-fy20q4, tracking-python, contperf-fy21q1, devx-track-azurecli
 ms.openlocfilehash: 1a1a9158c06a12caaeb5702f2fdf7da3c801c143
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103573444"
 ---
 # <a name="secure-an-azure-machine-learning-inferencing-environment-with-virtual-networks"></a>Обеспечение безопасности Машинное обучение Azure окружения с помощью виртуальных сетей
@@ -270,7 +270,7 @@ aks_target.wait_for_completion(show_output = True)
 
 Если вы не хотите использовать правила исходящего трафика по умолчанию и вы хотите ограничить исходящий доступ к виртуальной сети, необходимо разрешить доступ к реестру контейнеров Azure. Например, убедитесь, что группы безопасности сети (NSG) содержат правило, которое разрешает доступ к тегу службы __азуреконтаинеррегистри. RegionName__ , где "{RegionName}" — это имя региона Azure.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Эта статья состоит из четырех частей серии виртуальных сетей из пяти частей. Ознакомьтесь с остальными статьями, чтобы узнать, как защитить виртуальную сеть.
 

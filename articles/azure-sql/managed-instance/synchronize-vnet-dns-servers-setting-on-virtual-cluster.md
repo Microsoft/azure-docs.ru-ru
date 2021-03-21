@@ -8,10 +8,10 @@ ms.author: srbozovi
 ms.topic: how-to
 ms.date: 01/17/2021
 ms.openlocfilehash: b95afe513dba2f1da9556b27ec17bcccc9fe88e1
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102173557"
 ---
 # <a name="synchronize-virtual-network-dns-servers-setting-on-sql-managed-instance-virtual-cluster"></a>Параметр "синхронизировать DNS-серверы виртуальной сети" в виртуальном кластере SQL Управляемый экземпляр

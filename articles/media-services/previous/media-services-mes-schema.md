@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 03/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: f82e0c3f76dba05c3404b11e07c7130119ce0b9d
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103015664"
 ---
 # <a name="media-encoder-standard-schema"></a>Схема Media Encoder Standard
@@ -64,7 +64,7 @@ ms.locfileid: "103015664"
 | **TwoPass**<br/><br/> minOccurs="0" |**xs:boolean** |Сейчас поддерживается только однопроходное кодирование. |
 | **KeyFrameInterval**<br/><br/> minOccurs="0"<br/><br/> **default="00:00:02"** |**xs:time** |Определяет фиксированный интервал между кадрами IDR в секундах. Этот параметр также называют длительностью GOP. В разделе **SceneChangeDetection** описывается, как указать, может ли кодировщик отклоняться от этого значения. |
 | **SceneChangeDetection**<br/><br/> minOccurs="0"<br/><br/> default=”false” |**xs: boolean** |Если задано значение true, кодировщик пытается обнаружить изменение сцены в видео и вставить кадр IDR. |
-| **Паролей**<br/><br/> minOccurs="0"<br/><br/> default="Balanced" |**xs:string** |Регулирует баланс между скоростью кодирования и качеством видео. Может принимать одно из следующих значений: **Speed**, **Balanced** и **Quality**.<br/><br/> Значение по умолчанию: **Balanced**. |
+| **Сложность**<br/><br/> minOccurs="0"<br/><br/> default="Balanced" |**xs:string** |Регулирует баланс между скоростью кодирования и качеством видео. Может принимать одно из следующих значений: **Speed**, **Balanced** и **Quality**.<br/><br/> Значение по умолчанию: **Balanced**. |
 | **синкмоде**<br/><br/> minOccurs="0" | |Функция будет доступна в будущем выпуске. |
 | **H264Layers**<br/><br/> minOccurs="0" |[H264Layers](media-services-mes-schema.md#H264Layers) |Коллекция уровней выходных видео. |
 
@@ -163,7 +163,7 @@ ms.locfileid: "103015664"
 
 | Имя | Тип | Описание |
 | --- | --- | --- |
-| **FileName** |**xs:string** |Имя выходного файла.<br/><br/> Для создания имен выходных файлов можно использовать макросы, описанные в следующей таблице. Пример.<br/><br/> **"Outputs": [      {       "FileName": "{Basename}*{Resolution}*{Bitrate}.mp4",       "Format": {         "Type": "MP4Format"       }     }   ]** |
+| **FileName** |**xs:string** |Имя выходного файла.<br/><br/> Для создания имен выходных файлов можно использовать макросы, описанные в следующей таблице. Пример:<br/><br/> **"Outputs": [      {       "FileName": "{Basename}*{Resolution}*{Bitrate}.mp4",       "Format": {         "Type": "MP4Format"       }     }   ]** |
 
 ### <a name="macros"></a>Макросы
 
@@ -183,7 +183,7 @@ ms.locfileid: "103015664"
 
 | Имя | Тип | Описание |
 | --- | --- | --- |
-| **Start** |**xs:string** | |
+| **Запуск** |**xs:string** | |
 | **Step** |**xs:string** | |
 | **Диапазон** |**xs:string** | |
 | **PreserveResolutionAfterRotation** |**xs:boolean** |Подробное описание см. в следующем разделе: [PreserveResolutionAfterRotation](media-services-mes-schema.md#PreserveResolutionAfterRotation). |
@@ -300,7 +300,7 @@ ms.locfileid: "103015664"
 ## <a name="examples"></a>Примеры
 Примеры предустановок XML, созданных на основе этой схемы, см. в документации по [предустановкам задач для MES (Media Encoder Standard)](media-services-mes-presets-overview.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
 
 ## <a name="provide-feedback"></a>Отзывы

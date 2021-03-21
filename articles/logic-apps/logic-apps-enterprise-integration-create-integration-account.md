@@ -9,10 +9,10 @@ ms.reviewer: estfan, logicappspm
 ms.topic: conceptual
 ms.date: 11/04/2020
 ms.openlocfilehash: 51059dd1c4c5c93e155cd7a2d34c3cbaf29db6e2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101705591"
 ---
 # <a name="create-and-manage-integration-accounts-for-b2b-enterprise-integrations-in-azure-logic-apps"></a>Создание корпоративных учетных записей интеграции и управление ими для корпоративных интеграций B2B в Azure Logic Apps.
@@ -67,7 +67,7 @@ ms.locfileid: "101705591"
 
    | Свойство | Обязательно | Значение | Описание |
    |----------|----------|-------|-------------|
-   | **Имя** | Да | <*Интеграция — имя учетной записи*> | Имя учетной записи интеграции, которое может содержать только буквы, цифры, дефисы ( `-` ), символы подчеркивания ( `_` ), круглые скобки ( `(` , `)` ) и точки ( `.` ). В этом примере используется "Fabrikam-Integration". |
+   | **имя**; | Да | <*Интеграция — имя учетной записи*> | Имя учетной записи интеграции, которое может содержать только буквы, цифры, дефисы ( `-` ), символы подчеркивания ( `_` ), круглые скобки ( `(` , `)` ) и точки ( `.` ). В этом примере используется "Fabrikam-Integration". |
    | **Подписка** | Да | <*Azure-subscription-name*> | Имя подписки Azure. |
    | **Группа ресурсов** | Да | <*имя_группы_ресурсов_Azure*> | Имя [группы ресурсов Azure](../azure-resource-manager/management/overview.md) , используемой для организации связанных ресурсов. В этом примере создайте новую группу ресурсов с именем "Фабрикаминтегратион-RG". |
    | **Ценовая категория** | Да | <*уровень цен*> | Ценовая категория для учетной записи интеграции, которую можно изменить позже. В этом примере выберите **Free (бесплатный**). Дополнительные сведения см. в следующих статьях: <p>- [Модель ценообразования Logic Apps](../logic-apps/logic-apps-pricing.md#integration-accounts) <p>- [Ограничения и конфигурация Logic Apps](../logic-apps/logic-apps-limits-and-config.md#integration-account-limits) <p>- [Цены на Logic Apps](https://azure.microsoft.com/pricing/details/logic-apps/) |
@@ -293,7 +293,7 @@ az logic integration-account delete --name integration_account_01 --resource-gro
    },
    ```
 
-   Пример.
+   Пример:
 
    ![Найти объект "integrationAccount"](./media/logic-apps-enterprise-integration-create-integration-account/resource-explorer-delete-integration-account.png)
 

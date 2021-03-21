@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 02/07/2021
 ms.author: memildin
 ms.openlocfilehash: de5c5fbb6673d022517bba2486ed4aa1f739d19b
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102439584"
 ---
 # <a name="use-adaptive-application-controls-to-reduce-your-machines-attack-surfaces"></a>Использование адаптивных элементов управления приложениями для сокращения поверхностей атак на компьютерах

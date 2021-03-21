@@ -16,10 +16,10 @@ ms.topic: article
 ms.date: 01/25/2021
 ms.author: Zhchia
 ms.openlocfilehash: 1d1b2417750b917f5b09bb53ee980887218a785c
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102616151"
 ---
 # <a name="tutorial-configure-getabstract-for-automatic-user-provisioning"></a>Учебник. Настройка независимых параметров для автоматической подготовки пользователей

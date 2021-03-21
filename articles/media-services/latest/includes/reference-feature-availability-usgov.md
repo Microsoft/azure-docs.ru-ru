@@ -4,20 +4,20 @@ ms.service: media-services
 ms.topic: include
 ms.date: 10/28/2020
 ms.author: inhenkel
-ms.openlocfilehash: 738c573196629242a8bee183e89b3e0f1adf393a
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.openlocfilehash: e37ea5362598d2e399014e50096a9178b5bff7a5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93331141"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104612611"
 ---
 <!--Feature availability in region-->
 
 ## <a name="us-government-cloud"></a>Облако для государственных организаций США
 
-| Функция |  центральный регион US DoD | восточный регион US DoD | US Gov (Аризона) | US Gov (Техас) | US Gov (Вирджиния) | <!-- USNat --> | <!-- USSec--> |
+| Компонент |  центральный регион US DoD | восточный регион US DoD | US Gov (Аризона) | US Gov (Техас) | US Gov (Вирджиния) | <!-- USNat --> | <!-- USSec--> |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [Azure EventGrid](../reacting-to-media-services-events.md) |<!-- US DoD Central -->  | <!-- US DoD East -->  |<!-- US Gov Arizona-->  |<!--US Gov Texas--> |<!-- US Gov Virginia--> |<!--USNat--> |<!--USSec--> |
+| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |<!-- US DoD Central -->  | <!-- US DoD East -->  |<!-- US Gov Arizona-->  |<!--US Gov Texas--> |<!-- US Gov Virginia--> |<!--USNat--> |<!--USSec--> |
 | [VideoAnalyzerPreset](../analyzing-video-audio-files-concept.md) |<!-- US DoD Central -->  | <!-- US DoD East -->  |<!-- US Gov Arizona-->  |<!--US Gov Texas--> |<!-- US Gov Virginia--> |<!--USNat--> |<!--USSec--> |
 | [AudioAnalyzerPreset](../analyzing-video-audio-files-concept.md) |<!-- US DoD Central -->  | <!-- US DoD East -->  |<!-- US Gov Arizona-->  |<!--US Gov Texas--> |<!-- US Gov Virginia--> |<!--USNat--> |<!--USSec--> |
 | [StandardEncoderPreset](../encoding-concept.md) | ![Общая доступность Стандарденкодерпресет центральный регион US DoD](../media/azure-clouds-regions/ga.svg) | ![Общая доступность Стандарденкодерпресет восточный регион US DoD](../media/azure-clouds-regions/ga.svg) | ![Общая доступность Стандарденкодерпресет US Gov (Аризона)](../media/azure-clouds-regions/ga.svg) | ![Общая доступность Стандарденкодерпресет US Gov (Техас)](../media/azure-clouds-regions/ga.svg) | ![Общая доступность Стандарденкодерпресет US Gov (Вирджиния)](../media/azure-clouds-regions/ga.svg) |<!-- ![StandardEncoderPreset USNat general availability](../media/azure-clouds-regions/ga.svg)--> |<!-- ![StandardEncoderPreset USSec general availability](../media/azure-clouds-regions/ga.svg)--> |

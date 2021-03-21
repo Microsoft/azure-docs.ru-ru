@@ -1,6 +1,6 @@
 ---
-title: Перенос хранилище метаданных Hive по умолчанию во внешние хранилище метаданных в Azure HDInsight
-description: Перенос хранилище метаданных Hive по умолчанию во внешние хранилище метаданных в Azure HDInsight
+title: Перенос стандартного хранилища метаданных Hive во внешнее хранилище метаданных на базе Azure HDInsight
+description: Перенос стандартного хранилища метаданных Hive во внешнее хранилище метаданных на базе Azure HDInsight
 author: kevxmsft
 ms.author: kevx
 ms.reviewer: ''
@@ -8,10 +8,10 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.date: 11/4/2020
 ms.openlocfilehash: 825204fe40125a65e8e6f27c6973417813700a9e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101746359"
 ---
 # <a name="migrate-default-hive-metastore-db-to-external-metastore-db"></a>Миграция базы данных хранилище метаданных Hive по умолчанию в внешнюю базу данных хранилище метаданных
@@ -30,13 +30,13 @@ ms.locfileid: "101746359"
 
 Исходная и Целевая баз данных должны использовать одну и ту же версию HDInsight и одни и те же учетные записи хранения. При обновлении версий HDInsight с 3,6 до 4,0 сначала выполните действия, описанные в этой статье. Затем выполните официальные действия по обновлению [.](./apache-hive-migrate-workloads.md)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 При использовании [Azure Data Lake Storage 1-го поколения](../overview-data-lake-storage-gen1.md)расположения таблиц Hive, скорее всего, зависят от конфигурации HDFS кластера для Azure Data Lake Storage 1-го поколения. Выполните следующее действие скрипта, чтобы обеспечить перенос этих расположений в другие кластеры. См. раздел [действие сценария в работающем кластере](../hdinsight-hadoop-customize-cluster-linux.md#script-action-to-a-running-cluster).
 
 Действие аналогично замене символических ссылок своими полными путями.
 
-|Свойство | Значение |
+|Свойство. | Значение |
 |---|---|
 |URI bash-скрипта|`https://hdiconfigactions.blob.core.windows.net/linuxhivemigrationv01/hive-adl-expand-location-v01.sh`|
 |Типы узлов|Head|
@@ -94,7 +94,7 @@ QUERY="SELECT DBS.NAME, TBLS.TBL_NAME, SDS.LOCATION FROM SDS, TBLS, DBS WHERE TB
 sudo python "$SCRIPT" --query "$QUERY" > $OUTPUT_FILE
 ```
 
-## <a name="further-reading"></a>Дополнительные материалы
+## <a name="further-reading"></a>Дополнительные сведения
 
 * [Перенос рабочих нагрузок из HDInsight 3,6 в 4,0](./apache-hive-migrate-workloads.md)
 * [Миграция рабочей нагрузки Hive между учетными записями хранения](./hive-migration-across-storage-accounts.md)

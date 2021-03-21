@@ -7,10 +7,10 @@ ms.author: ebnkruma
 ms.topic: how-to
 ms.date: 04/02/2019
 ms.openlocfilehash: 2576e147f0cda86bc4d7143ccc5b5985182f271e
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102436351"
 ---
 # <a name="geofencing-and-geospatial-aggregation-scenarios-with-azure-stream-analytics"></a>Сценарии геозоны и геопространственной статистической обработки с Azure Stream Analytics

@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 03/03/2021
 ms.author: tomfitz
 ms.openlocfilehash: 8e4cfcc7fe46c19bf1e58ee5eadf1e0bb8c7bd8e
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102124335"
 ---
 # <a name="microsoftcommontextbox-ui-element"></a>Элемент пользовательского интерфейса Microsoft.Common.TextBox
@@ -58,7 +58,7 @@ ms.locfileid: "102124335"
 "contoso123"
 ```
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 - Используйте `toolTip` свойство для отображения текста об элементе при наведении курсора мыши на информационный символ.
 - `placeholder`Свойство — это текст справки, который исчезает, когда пользователь начинает редактирование. Если `placeholder` определены и `defaultValue` , то `defaultValue` имеет приоритет и отображается.

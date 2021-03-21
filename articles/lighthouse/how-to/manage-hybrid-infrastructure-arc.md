@@ -4,10 +4,10 @@ description: Узнайте, как эффективно управлять ко
 ms.date: 03/12/2021
 ms.topic: how-to
 ms.openlocfilehash: ec32389cd7444405580530a00c8b7c5bc48bcd56
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103419342"
 ---
 # <a name="manage-hybrid-infrastructure-at-scale-with-azure-arc"></a>Управляйте гибридной инфраструктурой в масштабе с помощью дуги Azure
@@ -43,7 +43,7 @@ ms.locfileid: "103419342"
 
 Вы также можете отслеживать подключенные кластеры с помощью Azure Monitor и [использовать политику Azure для применения конфигураций кластера в масштабе](../../azure-arc/kubernetes/use-azure-policy.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Ознакомьтесь с примерами быстрого запуска и образцами в [репозитории GitHub Azure Arc](https://github.com/microsoft/azure_arc).
 - Узнайте о [поддерживаемых сценариях для серверов с поддержкой ARC в Azure](../../azure-arc/servers/overview.md#supported-scenarios).

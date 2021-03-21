@@ -12,10 +12,10 @@ ms.date: 03/11/2021
 ms.author: trbye
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 16158b4ecfb46ea9092fe9eeb31cc4dee259b1ab
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103573750"
 ---
 # <a name="speech-service-containers-frequently-asked-questions-faq"></a>Часто задаваемые вопросы о контейнерах речевых служб
@@ -98,7 +98,7 @@ Cannot find Scan4_llvm__mcpu_skylake_avx512 in cache, using JIT...
 
 **Ответ.** `speech_recognition_language=<YOUR_LANGUAGE>` Должен быть явно настроен в запросе, если они используют клиента.
 
-Например:
+Пример:
 
 ```python
 if not recognize_once(
@@ -610,7 +610,7 @@ speech_config = speechsdk.SpeechConfig(host="ws://localhost:5000")
 <br>
 </details>
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Контейнеры Cognitive Services](speech-container-howto.md)

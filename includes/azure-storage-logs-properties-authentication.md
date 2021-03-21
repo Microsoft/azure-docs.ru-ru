@@ -4,17 +4,17 @@ ms.service: storage
 ms.topic: include
 ms.date: 09/28/2020
 ms.author: normesta
-ms.openlocfilehash: 61576de4a57d55ea9d1ea209c52df556f0069617
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: ca8963ed8928745a6d5918c86021199432339c83
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101750224"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104612164"
 ---
 | Свойство | Описание |
 |:--- |:---|
 |**identity/type** | Тип аутентификации, используемый для выполнения запроса. Например: `OAuth` ,, `Kerberos` `SAS Key` , `Account Key` или `Anonymous` |
-|**identity/tokenHash**|Это поле зарезервировано для внутреннего использования. |
+|**identity/tokenHash**|Хэш SHA-256 токена проверки подлинности, используемый в запросе. <br>Если тип проверки подлинности — `Account Key` , то используется формат "key1 \| key2 (хэш SHA256 ключа)". Например, `key1(5RTE343A6FEB12342672AFD40072B70D4A91BGH5CDF797EC56BF82B2C3635CE)`. <br>Если тип проверки подлинности — `SAS Key` , то используется формат "key1 \| key2 (хэш SHA 256), сассигнатуре (хэш SHA 256 маркера SAS)". Например, `key1(0A0XE8AADA354H19722ED12342443F0DC8FAF3E6GF8C8AD805DE6D563E0E5F8A),SasSignature(04D64C2B3A704145C9F1664F201123467A74D72DA72751A9137DDAA732FA03CF)`. Если тип проверки подлинности — `OAuth` , то используется формат "sha 256 hash маркера OAuth". Пример: `B3CC9D5C64B3351573D806751312317FE4E910877E7CBAFA9D95E0BE923DW25C`<br> Для других типов проверки подлинности отсутствует поле tokenHash. |
 |**authorization/action** | Действие, назначенное запросу. |
 |**authorization/roleAssignmentId** | Идентификатор назначения ролей. Например: `4e2521b7-13be-4363-aeda-111111111111`.|
 |**authorization/roleDefinitionId** | Идентификатор определения роли. Например: `ba92f5b4-2d11-453d-a403-111111111111"`.|

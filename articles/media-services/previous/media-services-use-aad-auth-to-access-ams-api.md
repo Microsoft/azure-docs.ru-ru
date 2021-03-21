@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 3/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: 3688f0f9266844ce584f3f2d2e1a7c39ed3e4f70
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103009023"
 ---
 # <a name="access-the-azure-media-services-api-with-azure-ad-authentication"></a>Доступ к API служб мультимедиа Azure с помощью аутентификации Azure AD 
@@ -155,7 +155,7 @@ API служб мультимедиа Azure — это REST API. Его можн
 - [Интеграция приложений с Azure Active Directory](../../active-directory/develop/quickstart-register-app.md)
 - [Добавление и удаление назначений ролей Azure с помощью Azure PowerShell](../../role-based-access-control/role-assignments-powershell.md)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Узнайте, как использовать [аутентификацию Azure AD для работы с API служб мультимедиа Azure](media-services-portal-get-started-with-aad.md) с помощью портала Azure.
 * Используйте аутентификацию Azure AD для [доступа к API служб мультимедиа Azure с помощью .NET](media-services-dotnet-get-started-with-aad.md).

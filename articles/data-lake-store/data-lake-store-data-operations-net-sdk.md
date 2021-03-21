@@ -8,10 +8,10 @@ ms.date: 01/03/2020
 ms.author: twooley
 ms.custom: devx-track-dotnet
 ms.openlocfilehash: faa539119bbb8d73e66788b8ba472cf0db26a2e4
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102431743"
 ---
 # <a name="filesystem-operations-on-data-lake-storage-gen1-using-the-net-sdk"></a>Операции файловой системы на Data Lake Storage 1-го поколения с помощью пакета SDK для .NET
@@ -28,7 +28,7 @@ ms.locfileid: "102431743"
 
 Инструкции по выполнению операций управления учетными записями в Data Lake Storage 1-го поколения с помощью пакета SDK для .NET см. в разделе [операции управления учетными записями в Data Lake Storage 1-го поколения с помощью пакета SDK для .NET](data-lake-store-get-started-net-sdk.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * **Visual Studio 2013 или более поздней версии**. В инструкциях этой статьи используется Visual Studio 2019.
 
