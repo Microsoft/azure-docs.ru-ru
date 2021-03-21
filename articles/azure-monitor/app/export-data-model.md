@@ -4,10 +4,10 @@ description: Описание свойств, экспортируемых с п
 ms.topic: conceptual
 ms.date: 01/08/2019
 ms.openlocfilehash: b4609d54c1c3c33a654dd58a3bceaca4974fda15
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100584221"
 ---
 # <a name="application-insights-export-data-model"></a>Экспорт модели данных Application Insights
@@ -113,7 +113,7 @@ ms.locfileid: "100584221"
 | context.custom.metrics [0] |объект [ ] |Набор пар "ключ — значение", заданный параметром пользовательских измерений и метриками TrackMetric. Максимальная длина ключа — 100. Значения могут быть числовыми. |
 | context.data.eventTime |строка |Формат UTC. |
 | context.data.isSynthetic |Логическое |Запрос поступает от программы-робота или веб-теста. |
-| context.data.samplingRate |число |Процентная доля данных телеметрии, созданных с помощью пакета SDK, отправленного на портал. Диапазон 0,0–100,0. |
+| context.data.samplingRate |Число |Процентная доля данных телеметрии, созданных с помощью пакета SDK, отправленного на портал. Диапазон 0,0–100,0. |
 | context.device |object |Устройство клиента |
 | context.device.browser |строка |IE, Chrome… |
 | context.device.browserVersion |строка |Chrome 48.0… |
@@ -211,7 +211,7 @@ ms.locfileid: "100584221"
 | remoteDependency [0] commandName |строка |Например, home/index |
 | remoteDependency [0] count |Целое число |100/(частота[выборки](./sampling.md) ). Например, 4 = &gt; 25 %. |
 | remoteDependency [0] dependencyTypeName |строка |HTTP, SQL, … |
-| remoteDependency [0] durationMetric.value |число |Время от вызова до завершения отклика зависимостью. |
+| remoteDependency [0] durationMetric.value |Число |Время от вызова до завершения отклика зависимостью. |
 | Ремотедепенденци [0] `id` |строка | |
 | remoteDependency [0] name |строка |URL-адрес. Максимальная длина: 250 |
 | remoteDependency [0] resultCode |строка |Из зависимости HTTP. |
@@ -228,7 +228,7 @@ ms.locfileid: "100584221"
 | Путь | Type | Примечания |
 | --- | --- | --- |
 | request [0] count |Целое число |100/(частота[выборки](./sampling.md) ). Например: 4 =&gt; 25 %. |
-| request [0] durationMetric.value |число |Время от поступления запроса до отклика. 1e7 = 1 с. |
+| request [0] durationMetric.value |Число |Время от поступления запроса до отклика. 1e7 = 1 с. |
 | запрос [0] `id` |строка |`Operation id` |
 | request [0] name |строка |GET или POST + базовый URL-адрес.  Максимальная длина: 250 |
 | request [0] responseCode |Целое число |HTTP-отклик, отправленный клиенту. |
@@ -276,12 +276,12 @@ ms.locfileid: "100584221"
 | Путь | Type | Примечания |
 | --- | --- | --- |
 | availability [0] availabilityMetric.name |строка |availability |
-| availability [0] availabilityMetric.value |число |1,0 или 0,0. |
+| availability [0] availabilityMetric.value |Число |1,0 или 0,0. |
 | availability [0] count |Целое число |100/(частота[выборки](./sampling.md) ). Например, 4 = &gt; 25 %. |
 | availability [0] dataSizeMetric.name |строка | |
 | availability [0] dataSizeMetric.value |Целое число | |
 | availability [0] durationMetric.name |строка | |
-| availability [0] durationMetric.value |число |Продолжительность теста. 1e7 = 1 с. |
+| availability [0] durationMetric.value |Число |Продолжительность теста. 1e7 = 1 с. |
 | availability [0] message |строка |Диагностика сбоя. |
 | availability [0] result |строка |Успех или сбой. |
 | availability [0] runLocation |строка |Географический объект-источник HTTP-запроса. |
@@ -294,7 +294,7 @@ ms.locfileid: "100584221"
 
 Значение метрики можно найти в context.custom.metrics[0].
 
-Пример.
+Пример:
 
 ```json
 {
@@ -324,7 +324,7 @@ ms.locfileid: "100584221"
 ```
 
 ## <a name="about-metric-values"></a>О значениях метрик
-Значения метрик (как в отчетах, так и в других элементах) сообщаются в рамках стандартной структуры объекта. Пример.
+Значения метрик (как в отчетах, так и в других элементах) сообщаются в рамках стандартной структуры объекта. Пример:
 
 ```json
 "durationMetric": {
@@ -350,7 +350,7 @@ ms.locfileid: "100584221"
 ### <a name="durations"></a>Длительность
 За исключением оговоренных случаев, показатели длительности представлены в десятых долях микросекунды, то есть 10 000 000,0 — это 1 с.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 * [Application Insights](./app-insights-overview.md)
 * [Непрерывный экспорт](export-telemetry.md)
 * [Примеры кода](export-telemetry.md#code-samples)

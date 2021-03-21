@@ -7,18 +7,18 @@ ms.date: 11/26/2018
 ms.author: gwallace
 ms.custom: mvc, devcenter
 ms.openlocfilehash: ef8b40be366afe24b960f7419d84cc2a9976b592
-ms.sourcegitcommit: 59cfed657839f41c36ccdf7dc2bee4535c920dd4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99625707"
 ---
 # <a name="introduction-to-networking-in-service-fabric-mesh-applications"></a>Общие сведения о сетевых подключениях в приложениях службы "Сетка Service Fabric"
 
 > [!IMPORTANT]
-> Предварительная версия сетки Service Fabric Azure была снята с учета. Новые развертывания больше не будут разрешены через интерфейс API Service Fabricной сетки. Поддержка существующих развертываний будет продолжена 28 апреля 2021 г.
+> Поддержка предварительной версии Сетки Azure Service Fabric была прекращена. Новые развертывания больше не будут разрешены через API Сетки Service Fabric. Поддержка существующих развертываний будет продолжена до 28 апреля 2021 г. включительно.
 > 
-> Дополнительные сведения см. в статье о прекращении использования [предварительной версии сети Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
+> Дополнительные сведения см. в статье [Прекращение поддержки предварительной версии Сетки Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
 
 В этой статье описываются разные подсистемы балансировки нагрузки, подключение сетей с приложениями к другим сетям через шлюзы, а также маршрутизация трафика между службами в приложениях.
 

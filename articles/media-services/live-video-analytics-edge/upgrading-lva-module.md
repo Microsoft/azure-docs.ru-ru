@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.author: naiteeks
 ms.date: 12/14/2020
 ms.openlocfilehash: 49c17946203bc6c3655b1aaf7b04a1ee3ea67388
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98955655"
 ---
 # <a name="upgrading-live-video-analytics-on-iot-edge-from-10-to-20"></a>Обновление службы Live Video Analytics на IoT Edge с 1,0 по 2,0
@@ -19,7 +19,7 @@ ms.locfileid: "98955655"
 ## <a name="change-list"></a>Список изменений
 
 > [!div class="mx-tdCol4BreakAll"]
-> |Title|Live Video Analytics 1,0|Live Video Analytics 2,0|Описание|
+> |Заголовок|Live Video Analytics 1,0|Live Video Analytics 2,0|Описание|
 > |-------------|----------|---------|---------|
 > |Образ контейнера|mcr.microsoft.com/media/live-video-analytics:1|mcr.microsoft.com/media/live-video-analytics:2|Опубликованные образы DOCKER для Live Video Analytics на Azure IoT Edge|
 > |**Узлы Медиаграф** |    |   |   |
@@ -60,7 +60,7 @@ ms.locfileid: "98955655"
 * В `MediaGraphHttpExtension` и `MediaGraphGrpcExtension` процессорах Обратите внимание на следующие изменения:  
     #### <a name="image-properties"></a>Свойства образа
     * `MediaGraphImageFormatEncoded` более не поддерживаются. 
-      * Вместо этого используйте **`MediaGraphImageFormatBmp`** или **`MediaGraphImageFormatJpeg`** или **`MediaGraphImageFormatPng`** . Например, примененная к объекту директива
+      * Вместо этого используйте **`MediaGraphImageFormatBmp`** или **`MediaGraphImageFormatJpeg`** или **`MediaGraphImageFormatPng`** . Например,
         ```
         "image": {
                 "scale": 

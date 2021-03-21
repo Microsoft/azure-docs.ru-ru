@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 06/11/2020
 ms.custom: fasttrack-edit
 ms.openlocfilehash: 15331494b40021f10c162fba75abf6fe88d2d419
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100583312"
 ---
 # <a name="monitoring-usage-and-performance-in-classic-windows-desktop-apps"></a>Мониторинг использования и производительности в классических приложениях для Windows
@@ -174,7 +174,7 @@ namespace WindowsFormsApp2
 > [!NOTE]
 > Хотя вы можете использовать обработчик данных телеметрии, как описано выше, даже если вы используете [ценовую категорию устаревшего предприятия (на узел)](./pricing.md#legacy-enterprise-per-node-pricing-tier), это приведет к потенциальной оплате из-за невозможности правильного различения узлов для каждого узла.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Создание панели мониторинга](./overview-dashboard.md)
 * [Поиск по журналу диагностики](./diagnostic-search.md)
 * [Изучение метрик](../essentials/metrics-charts.md)

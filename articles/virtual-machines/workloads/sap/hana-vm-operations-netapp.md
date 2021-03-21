@@ -16,10 +16,10 @@ ms.date: 01/23/2021
 ms.author: juergent
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: de8af71928ad6a83d4930e4e6e0b8dd257148111
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101666612"
 ---
 # <a name="nfs-v41-volumes-on-azure-netapp-files-for-sap-hana"></a>Тома NFS версии 4.1 в Azure NetApp Files для SAP HANA
@@ -136,7 +136,7 @@ Azure NetApp Files предоставляет собственные общие 
 То же самое относится к тому, что используется для записи полных резервных копий базы данных HANA в.  
  
 
-## <a name="backup"></a>Резервное копирование
+## <a name="backup"></a>Backup
 Помимо потоковых резервных копий и резервного копирования Azure резервное копирование SAP HANA баз данных, как описано в статье [руководство по резервному копированию для SAP HANA на виртуальных машинах Azure](./sap-hana-backup-guide.md), Azure NetApp Files открывает возможность выполнять резервное копирование моментальных снимков на основе хранилища. 
 
 SAP HANA поддерживает:

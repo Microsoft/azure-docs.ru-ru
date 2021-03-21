@@ -6,10 +6,10 @@ author: noakup
 ms.author: noakuper
 ms.date: 09/03/2020
 ms.openlocfilehash: 69b5927c73dac14c76b94a4ee5bbb21449f8ec98
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102047459"
 ---
 # <a name="using-customer-managed-storage-accounts-in-azure-monitor-log-analytics"></a>Использование управляемых клиентом учетных записей хранения в Azure Monitor Log Analytics
@@ -106,7 +106,7 @@ Log Analytics полагается на хранилище Azure в различ
 На учетные записи хранения начисляются объем хранимых данных, тип хранилища и тип избыточности. Дополнительные сведения см. в статьях [Цены на хранение блочных BLOB-объектов](https://azure.microsoft.com/pricing/details/storage/blobs) и [Цены на хранилище таблиц Azure](https://azure.microsoft.com/pricing/details/storage/tables).
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Узнайте [, как использовать частную ссылку Azure для безопасного подключения сетей к Azure Monitor](private-link-security.md)
 - Дополнительные сведения о [Azure Monitor управляемых клиентом ключах](../logs/customer-managed-keys.md)

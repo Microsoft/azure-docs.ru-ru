@@ -11,10 +11,10 @@ ms.date: 03/10/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: b60b447d8302b89813ca462c3220603ef926eb26
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102631189"
 ---
 # <a name="localization-string-ids"></a>Идентификаторы строк локализации
@@ -55,7 +55,7 @@ ms.locfileid: "102631189"
 | **local_intro_generic** | Войдите с помощью {0} | `>= 2.1.0` |
 | **requiredField_generic** | Укажите {0} | `>= 2.1.0` |
 | **invalid_generic** | Введите допустимый {0} | `>= 2.1.1` |
-| **направляющ** | Войти | `>= 2.1.1` |
+| **направляющ** | Вход | `>= 2.1.1` |
 
 
 > [!NOTE]
@@ -366,7 +366,7 @@ ms.locfileid: "102631189"
 |but_send_new_code | Отправить новый код|
 |but_change_claims | Изменить адрес электронной почты|
 
-Примечание. `intro_msg` элемент скрыт и не отображается на странице с автоматическим подтверждением. Чтобы сделать его видимым, используйте [HTML-кустомизтион](customize-ui-with-html.md) с каскадные таблицы стилей. Пример.
+Примечание. `intro_msg` элемент скрыт и не отображается на странице с автоматическим подтверждением. Чтобы сделать его видимым, используйте [HTML-кустомизтион](customize-ui-with-html.md) с каскадные таблицы стилей. Пример:
     
 ```css
 .verificationInfoText div{display: block!important}
@@ -549,7 +549,7 @@ ms.locfileid: "102631189"
 </LocalizedResources>
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Примеры локализации см. в следующих статьях:
 

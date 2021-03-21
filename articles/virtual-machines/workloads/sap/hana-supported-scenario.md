@@ -14,10 +14,10 @@ ms.date: 11/26/2019
 ms.author: saghorpa
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: a49c55da0bb8018b3faa7c6f70b02e79d9478603
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101666682"
 ---
 # <a name="supported-scenarios-for-hana-large-instances"></a>Поддерживаемые сценарии для крупных экземпляров HANA
@@ -50,7 +50,7 @@ ms.locfileid: "101666682"
 В этой статье подробно описаны два компонента в каждой поддерживаемой архитектуре.
 
 - Ethernet
-- Память
+- Служба хранилища
 
 ### <a name="ethernet"></a>Ethernet
 
@@ -63,11 +63,11 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
 | B | Тип I | eth2.tenant | eno3.tenant | Между узлами|
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | STONITH |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Между узлами|
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | STONITH |
@@ -96,7 +96,7 @@ ms.locfileid: "101666682"
 - Ethernet "D" должен использоваться исключительно для доступа к устройствам STONITH для Pacemaker. Этот интерфейс необходим при настройке репликации системы HANA и при необходимости выполнить автоматическую отработку отказа операционной системы с помощью устройства на основе SBD.
 
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Хранилище предварительно настроено на основе запрошенной топологии. Размеры томов и точки подключения зависят от количества серверов, номеров SKU и настроенной топологии. Для получения дополнительных сведений ознакомьтесь с необходимыми сценариями (далее в этой статье). Если вам требуется дополнительное хранилище, вы можете приобрести его с шагом в 1 ТБ.
 
 >[!NOTE]
@@ -135,16 +135,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
 | B | Тип I | eth2.tenant | eno3.tenant | Настроен, но не используется |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Настроен, но не используется |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -170,16 +170,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
 | B | Тип I | eth2.tenant | eno3.tenant | Настроен, но не используется |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Настроен, но не используется |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -210,16 +210,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
 | B | Тип I | eth2.tenant | eno3.tenant | Настроен, но не используется |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Настроен, но не используется |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -251,16 +251,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
 | B | Тип I | eth2.tenant | eno3.tenant | Настроен, но не используется |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Настроен, но не используется |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -306,16 +306,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
 | B | Тип I | eth2.tenant | eno3.tenant | Настроен, но не используется |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Используется для STONITH |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Настроен, но не используется |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Используется для STONITH |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -352,16 +352,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
 | B | Тип I | eth2.tenant | eno3.tenant | Настроен, но не используется |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Используется для STONITH |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Настроен, но не используется |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Используется для STONITH |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -411,16 +411,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
 | B | Тип I | eth2.tenant | eno3.tenant | Обмен данными между узлами |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Обмен данными между узлами |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -452,16 +452,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
 | B | Тип I | eth2.tenant | eno3.tenant | Обмен данными между узлами |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Обмен данными между узлами |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -488,16 +488,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
 | B | Тип I | eth2.tenant | eno3.tenant | Обмен данными между узлами |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Обмен данными между узлами |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -527,16 +527,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ |
 | B | Тип I | eth2.tenant | eno3.tenant | Обмен данными между узлами |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Обмен данными между узлами |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -572,16 +572,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ/HSR |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ/HSR |
 | B | Тип I | eth2.tenant | eno3.tenant | Настроен, но не используется |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ/HSR |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ/HSR |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Настроен, но не используется |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены для единиц ХЛИ (основной и АВАРИЙный):
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -613,16 +613,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ/HSR |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ/HSR |
 | B | Тип I | eth2.tenant | eno3.tenant | Настроен, но не используется |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ/HSR |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ/HSR |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Настроен, но не используется |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -663,16 +663,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ/HSR |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ/HSR |
 | B | Тип I | eth2.tenant | eno3.tenant | Настроен, но не используется |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ/HSR |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ/HSR |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Настроен, но не используется |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -708,16 +708,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ/HSR |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ/HSR |
 | B | Тип I | eth2.tenant | eno3.tenant | Настроен, но не используется |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ/HSR |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ/HSR |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Настроен, но не используется |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 
@@ -759,16 +759,16 @@ ms.locfileid: "101666682"
 
 | Логический интерфейс NIC | Тип номера SKU | Имя с ОС SUSE | Имя с ОС RHEL | Вариант использования|
 | --- | --- | --- | --- | --- |
-| Объект | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ/HSR |
+| A | Тип I | eth0.tenant | eno1.tenant | Клиент-ХЛИ/HSR |
 | B | Тип I | eth2.tenant | eno3.tenant | Обмен данными между узлами |
 | C | Тип I | eth1.tenant | eno2.tenant | Узел-хранилище |
 | D | Тип I | eth4.tenant | eno4.tenant | Настроен, но не используется |
-| Объект | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ/HSR |
+| A | Тип II | vlan\<tenantNo> | team0.tenant | Клиент-ХЛИ/HSR |
 | B | Тип II | vlan\<tenantNo+2> | team0.tenant+2 | Обмен данными между узлами |
 | C | Тип II | vlan\<tenantNo+1> | team0.tenant+1 | Узел-хранилище |
 | D | Тип II | vlan\<tenantNo+3> | team0.tenant+3 | Настроен, но не используется |
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 Следующие точки подключения предварительно настроены:
 
 | "Mount point" (Точка подключения) | Вариант использования | 

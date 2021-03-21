@@ -8,10 +8,10 @@ ms.date: 09/28/2020
 ms.author: rogarana
 ms.subservice: files
 ms.openlocfilehash: 272a642f70849b85be00d2507109eb97935c0dde
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102202507"
 ---
 # <a name="monitor-azure-file-sync"></a>Мониторинг службы "Синхронизация файлов Azure"

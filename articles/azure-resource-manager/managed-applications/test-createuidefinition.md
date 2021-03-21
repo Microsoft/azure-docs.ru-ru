@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: tomfitz
 ms.openlocfilehash: f76d3b81c2d5425f7bb91c5c86a79faa097794e3
-ms.sourcegitcommit: 5e5a0abe60803704cf8afd407784a1c9469e545f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96435006"
 ---
 # <a name="test-your-portal-interface-for-azure-managed-applications"></a>Тестирование интерфейса портала для управляемых приложений Azure
 
 После [создания createUiDefinition.jsв файле](create-uidefinition-overview.md) для управляемого приложения необходимо протестировать взаимодействие с пользователем. Чтобы упростить тестирование, используйте изолированную среду, которая загружает файл на портал. Вам не нужно развертывать управляемое приложение. Песочница представляет пользовательский интерфейс в текущем полноэкранном портале. Также можно использовать скрипт для тестирования интерфейса. В этой статье описаны оба подхода. Песочница является рекомендуемым способом предварительного просмотра интерфейса.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Файл **createUiDefinition.json**. Если у вас нет этого файла, скопируйте [Пример файла](https://github.com/Azure/azure-quickstart-templates/blob/master/100-marketplace-sample/createUiDefinition.json).
 

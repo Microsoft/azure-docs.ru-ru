@@ -10,10 +10,10 @@ ms.date: 11/10/2020
 ms.topic: conceptual
 ms.service: media-services
 ms.openlocfilehash: bf282b3fbba0f22cd41c0420014c46ddb7c958eb
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98955145"
 ---
 # <a name="verified-on-premises-live-streaming-encoders"></a>Проверенные локальные кодировщики динамической потоковой передачи
@@ -117,7 +117,7 @@ ms.locfileid: "98955145"
 > [!IMPORTANT]
 > Просмотрите физическое состояние компьютера (ЦП, памяти и т. д.), так как передача фрагментов в облако включает в себя операции ЦП и ввода-вывода. При изменении каких-либо параметров в кодировщике необходимо сбросить событие каналы/Live, чтобы изменения вступили в силу.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковая трансляция в Службах мультимедиа Azure версии 3](live-streaming-overview.md)
 

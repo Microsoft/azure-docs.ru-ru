@@ -4,10 +4,10 @@ description: Описание системных разделов в служб�
 ms.topic: conceptual
 ms.date: 09/24/2020
 ms.openlocfilehash: b1fbecb1e372602f9c252d43d2a1f93524ef1846
-ms.sourcegitcommit: d1e56036f3ecb79bfbdb2d6a84e6932ee6a0830e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99052971"
 ---
 # <a name="system-topics-in-azure-event-grid"></a>Разделы о системе в службе "Сетка событий Azure"

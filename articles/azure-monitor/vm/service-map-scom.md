@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 07/12/2019
 ms.openlocfilehash: 3a7d0d49313cb524a5bf39add5c9a55862dcad47
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102046896"
 ---
 # <a name="integrate-system-center-operations-manager-with-vm-insights-map-feature"></a>Интеграция System Center Operations Manager с функцией карт VM Insights
@@ -19,7 +19,7 @@ ms.locfileid: "102046896"
 >[!NOTE]
 >Если вы уже развернули Сопоставление служб, вы можете просматривать карты в Application Insights, включая дополнительные функции для мониторинга работоспособности и производительности виртуальных машин. Функция Map для VM Insights предназначена для замены автономного Сопоставление службного решения. Дополнительные сведения см. в разделе [Общие сведения о VM Insights](../vm/vminsights-overview.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Группа управления System Center Operations Manager (2012 R2 или более поздней версии).
 * Log Analytics рабочей области, настроенной для поддержки аналитики VM.

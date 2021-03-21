@@ -5,18 +5,18 @@ ms.author: pepogors
 ms.date: 4/23/2019
 ms.topic: troubleshooting
 ms.openlocfilehash: 8e53ab0ae4cc463bea8a6a8cb6d339f94fdcac6d
-ms.sourcegitcommit: 59cfed657839f41c36ccdf7dc2bee4535c920dd4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99626042"
 ---
 # <a name="commonly-asked-service-fabric-mesh-questions"></a>Распространенные вопросы о службе "Сетка Service Fabric"
 
 > [!IMPORTANT]
-> Предварительная версия сетки Service Fabric Azure была снята с учета. Новые развертывания больше не будут разрешены через интерфейс API Service Fabricной сетки. Поддержка существующих развертываний будет продолжена 28 апреля 2021 г.
+> Поддержка предварительной версии Сетки Azure Service Fabric была прекращена. Новые развертывания больше не будут разрешены через API Сетки Service Fabric. Поддержка существующих развертываний будет продолжена до 28 апреля 2021 г. включительно.
 > 
-> Дополнительные сведения см. в статье о прекращении использования [предварительной версии сети Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
+> Дополнительные сведения см. в статье [Прекращение поддержки предварительной версии Сетки Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
 
 Сетка Azure Service Fabric — это полностью управляемая служба, которая позволяет разработчикам развертывать приложения для микрослужб без управления виртуальными машинами, хранилищем или сетями. Эта статья содержит ответы на часто задаваемые вопросы.
 
@@ -80,7 +80,7 @@ az mesh app show --resource-group myResourceGroup --name helloWorldApp
 
 Чтобы удалить группу ресурсов, используйте команду `az group delete <nameOfResourceGroup>`.
 
-## <a name="deployments"></a>Развернутые приложения
+## <a name="deployments"></a>Развертывания
 
 ### <a name="what-container-images-are-supported"></a>Какие образы контейнеров поддерживаются?
 

@@ -14,10 +14,10 @@ ms.topic: how-to
 ms.date: 06/10/2019
 ms.author: inhenkel
 ms.openlocfilehash: 6c287e168289082b2bd717a2706dd011c7115691
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98955672"
 ---
 # <a name="subclip-a-video-when-encoding-with-media-services---rest"></a>Подрезать видео при кодировании со службами мультимедиа — остальное
@@ -26,7 +26,7 @@ ms.locfileid: "98955672"
 
 Пример RESTFUL в этом разделе создает задание, которое обрезает видео по мере отправки задания кодирования. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы выполнить действия, описанные в этом разделе, необходимо сделать следующее:
 

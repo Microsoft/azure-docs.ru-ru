@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 1/29/2020
 ms.author: inhenkel
 ms.openlocfilehash: fd92eed127ec50a3d3a86f667d9aa764b79c190a
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100585406"
 ---
 # <a name="trusted-storage-for-media-services"></a>Доверенное хранилище для служб мультимедиа
@@ -21,7 +21,7 @@ ms.locfileid: "100585406"
 При создании учетной записи служб мультимедиа ее необходимо связать с учетной записью хранения. Службы мультимедиа могут получить доступ к этой учетной записи хранения, используя проверку подлинности системы или управляемую идентификацию. Службы мультимедиа проверяют, что учетная запись служб мультимедиа и учетная запись хранения находятся в одной подписке, и проверяет, что пользователь, добавляющий эту связь, имеет доступ к учетной записи хранения с Azure Resource Manager RBAC.
 
 >[!NOTE]
->Доверенное хранилище доступно только в API и в настоящее время не включено в портал Azure.
+>Доверенное хранилище доступно только в API и в настоящее время не включено на портале Azure.
 
 ## <a name="trusted-storage-with-a-firewall"></a>Доверенное хранилище с брандмауэром
 
@@ -40,6 +40,6 @@ ms.locfileid: "100585406"
 
 Дополнительные сведения о доверенных службах Майкрософт см. в статье [Настройка брандмауэров службы хранилища Azure и виртуальных сетей](../../storage/common/storage-network-security.md#trusted-microsoft-services).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о том, какие управляемые удостоверения можно выполнять для вас и ваших приложений Azure, см. в статье [управляемые удостоверения Azure AD](../../active-directory/managed-identities-azure-resources/overview.md).

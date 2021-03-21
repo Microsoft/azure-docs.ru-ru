@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.custom: seodec18, devx-track-azurecli
 ms.date: 01/03/2020
 ms.openlocfilehash: 09564bd149488d956586c8a0e349cd79eec358a1
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100582758"
 ---
 # <a name="hdinsight-sdk-for-go-preview"></a>Пакет SDK для HDInsight для Go (Предварительная версия)
@@ -486,6 +486,6 @@ for (page.NotDone()) {
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Просмотрите [справочные материалы GoDoc](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/preview/hdinsight/mgmt/2015-03-01-preview/hdinsight). GoDocs предоставляет справочную документацию по всем функциям в пакете SDK.

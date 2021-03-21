@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 10/20/2020
 ms.author: nitinme
 ms.openlocfilehash: 08c674a7a7ec060a4273836064cb1c21e979e725
-ms.sourcegitcommit: 77ab078e255034bd1a8db499eec6fe9b093a8e4f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97560293"
 ---
 # <a name="update-a-command-from-a-client-app"></a>Обновление команды из клиентского приложения
 
 В этой статье вы узнаете, как обновить текущую команду из клиентского приложения.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 > [!div class = "checklist"]
 > * Предварительно [созданное приложение Пользовательских голосовых команд](quickstart-custom-commands-application.md).
 
@@ -51,7 +51,7 @@ ms.locfileid: "97560293"
 
 Давайте рассмотрим ключевые атрибуты этого действия:
 
-| attribute | Объяснение |
+| Атрибут | Пояснение |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | **type** | Действие имеет тип `"event"` , а имя события должно быть `"RemoteUpdate"` . |
 | **value** | Атрибут `"value"` содержит атрибуты, необходимые для обновления текущей команды. |
@@ -147,7 +147,7 @@ ms.locfileid: "97560293"
 - Для можно использовать сложные объекты `clientContext` .
 - Можно использовать `clientContext` в речевых ответах для отправки действий и вызова конечных веб-точек.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Обновление команды из конечной точки в Интернете](./how-to-custom-commands-update-command-from-web-endpoint.md)

@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/05/2021
 ms.author: alkohli
 ms.openlocfilehash: d2ab96fcfa33301f0bd1212b23f9418fa39d0134
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102638747"
 ---
 # <a name="develop-a-c-iot-edge-module-to-move-files-on-azure-stack-edge-pro"></a>Разработка модуля IoT Edge C# для перемещения файлов на Azure Stack пограничных Pro
@@ -125,7 +125,7 @@ ms.locfileid: "102638747"
 
 ### <a name="update-the-module-with-custom-code"></a>Обновление модуля с помощью пользовательского кода
 
-1. В обозревателе VS Code откройте **модули > филекопимодуле > Program.CS**.
+1. В обозревателе VS Code откройте **модули > филекопимодуле > Program. CS**.
 2. В верхней части **пространства имен CSharpModule** добавьте следующие операторы using для типов, которые будут использоваться позже. **Microsoft.Azure.Devices.Client.Transport.Mqtt** — это протокол отправки сообщений в центр IoT Edge.
 
     ```
@@ -240,7 +240,7 @@ ms.locfileid: "102638747"
     ```
 
 7. Сохраните этот файл.
-8. Вы также можете [скачать существующий пример кода](https://azure.microsoft.com/resources/samples/data-box-edge-csharp-modules/?cdn=disable) для этого проекта. Затем можно проверить файл, сохраненный в файле **Program.CS** в этом примере.
+8. Вы также можете [скачать существующий пример кода](https://azure.microsoft.com/resources/samples/data-box-edge-csharp-modules/?cdn=disable) для этого проекта. Затем можно проверить файл, сохраненный в файле **Program. CS** в этом примере.
 
 ## <a name="build-your-iot-edge-solution"></a>Сборка решения IoT Edge
 
@@ -276,6 +276,6 @@ ms.locfileid: "102638747"
 
 4. Полный адрес образа контейнера с тегом можно увидеть в окне интегрированного терминала VS Code. Адрес образа создается на основе информации, сохраненной в файле module.json в формате `<repository>:<version>-<platform>`. Для этой статьи адрес должен выглядеть так: `mycontreg2.azurecr.io/filecopymodule:0.0.1-amd64`.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Чтобы развернуть и запустить этот модуль на Azure Stack пограничных Pro, см. действия в разделе [Добавление модуля](azure-stack-edge-j-series-deploy-configure-compute.md#add-a-module).<!--Update link?-->

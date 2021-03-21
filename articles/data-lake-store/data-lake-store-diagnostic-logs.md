@@ -13,10 +13,10 @@ ms.topic: how-to
 ms.date: 03/26/2018
 ms.author: twooley
 ms.openlocfilehash: 0b84e26962b00ee5b9d4c34cab7efbcc9aa0bf01
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100582804"
 ---
 # <a name="accessing-diagnostic-logs-for-azure-data-lake-storage-gen1"></a>Доступ к журналам диагностики Azure Data Lake Storage 1-го поколения
@@ -24,7 +24,7 @@ ms.locfileid: "100582804"
 
 Организации могут включить ведение журнала диагностики для учетной записи Azure Data Lake Storage 1-го поколения для сбора журналов аудита доступа к данным, в котором содержатся такие сведения, как список пользователей, обращающихся к данным, как часто осуществляется доступ к данным, сколько данных хранится в учетной записи и т. д. Если этот параметр включен, диагностика и (или) запросы записываются в журнал на основе наилучшей силы. Записи запросов и диагностики журнала создаются только при получении запроса к конечной точке службы.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 * **Подписка Azure**. См. страницу [бесплатной пробной версии Azure](https://azure.microsoft.com/pricing/free-trial/).
 * **Учетная запись Azure Data Lake Storage 1-го поколения**. Следуйте инструкциям из статьи [Начало работы с Azure Data Lake Storage Gen1 с помощью портала Azure](data-lake-store-get-started-portal.md).
 
@@ -196,6 +196,6 @@ search *
 
 В Azure Data Lake Storage 1-го поколения есть пример обработки и анализа данных журнала. Пример можно найти по адресу [https://github.com/Azure/AzureDataLake/tree/master/Samples/AzureDiagnosticsSample](https://github.com/Azure/AzureDataLake/tree/master/Samples/AzureDiagnosticsSample) . 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 * [Общие сведения об Azure Data Lake Storage Gen1](data-lake-store-overview.md)
 * [Защита данных в Data Lake Storage Gen1](data-lake-store-secure-data.md)

@@ -9,10 +9,10 @@ author: swinarko
 ms.custom: seo-lt-2019, devx-track-azurepowershell
 ms.date: 07/20/2020
 ms.openlocfilehash: 40e7d5c11a2ebc62e59c3d5d20dfefe18a33f9a7
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100391615"
 ---
 # <a name="run-an-ssis-package-with-the-execute-ssis-package-activity-in-azure-data-factory"></a>Запуск пакета Integration Services с помощью действия выполнения пакета SSIS в Фабрике данных Azure
@@ -21,7 +21,7 @@ ms.locfileid: "100391615"
 
 В этой статье описывается, как выполнить пакет SQL Server Integration Services (SSIS) в конвейере фабрики данных Azure с помощью действия "выполнение пакета служб SSIS". 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
@@ -714,6 +714,6 @@ while ($True) {
    select * from catalog.executions
    ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 См. в следующей записи блога:
 - [Модернизировать и расширьте рабочие процессы ETL/ELT с помощью действий SSIS в конвейерах фабрики данных Azure](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/Modernize-and-Extend-Your-ETL-ELT-Workflows-with-SSIS-Activities/ba-p/388370)

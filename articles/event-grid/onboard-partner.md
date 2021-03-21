@@ -4,10 +4,10 @@ description: Используйте портал Azure для подключен
 ms.topic: conceptual
 ms.date: 10/29/2020
 ms.openlocfilehash: 44dece4d46a6d702d48fa49983818986fcd59f7b
-ms.sourcegitcommit: 8dd8d2caeb38236f79fe5bfc6909cb1a8b609f4a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98050958"
 ---
 # <a name="onboard-as-an-azure-event-grid-partner-using-the-azure-portal"></a>Подключитесь как партнер службы "Сетка событий Azure", используя портал Azure

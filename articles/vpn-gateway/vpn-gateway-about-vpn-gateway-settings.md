@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 10/21/2020
 ms.author: cherylmc
 ms.openlocfilehash: 1aba87b2139fb8a7d395fb3180d2074e47310fa9
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96010877"
 ---
 # <a name="about-vpn-gateway-configuration-settings"></a>Сведения о параметрах конфигурации VPN-шлюза
@@ -39,7 +39,7 @@ VPN-шлюз — это разновидность шлюза виртуаль�
 
 Для VPN-шлюза требуется `-GatewayType` *Vpn*.
 
-Пример.
+Пример
 
 ```azurepowershell-interactive
 New-AzVirtualNetworkGateway -Name vnetgw1 -ResourceGroupName testrg `
@@ -67,7 +67,7 @@ New-AzVirtualNetworkGateway -Name VNet1GW -ResourceGroupName TestRG1 `
 -GatewayType Vpn -VpnType RouteBased
 ```
 
-**Azure CLI**;
+**Azure CLI**
 
 ```azurecli
 az network vnet-gateway create --name VNet1GW --public-ip-address VNet1GWPIP --resource-group TestRG1 --vnet VNet1 --gateway-type Vpn --vpn-type RouteBased --sku VpnGw1 --no-wait
@@ -134,7 +134,7 @@ New-AzVirtualNetworkGateway -Name vnetgw1 -ResourceGroupName testrg `
 
 [!INCLUDE [vpn-gateway-table-requirements](../../includes/vpn-gateway-table-requirements-include.md)]
 
-## <a name="gateway-subnet"></a><a name="gwsub"></a>подсеть шлюза.
+## <a name="gateway-subnet"></a><a name="gwsub"></a>Подсеть шлюза
 
 Прежде чем создать VPN-шлюз, необходимо создать подсеть для него. Подсеть шлюза содержит IP-адреса, которые используют виртуальные машины и службы шлюза виртуальной сети. При создании шлюза виртуальной сети его виртуальные машины развертываются в подсети шлюза и на них настраиваются необходимые параметры VPN-шлюза. Никогда не развертывайте все остальное (например, дополнительные виртуальные машины) в подсети шлюза. Чтобы подсеть шлюза работала правильно, ее нужно назвать GatewaySubnet. Такое имя позволяет Azure определить, что это подсеть для развертывания виртуальных машин и служб шлюза виртуальной сети.
 

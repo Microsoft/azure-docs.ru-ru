@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/01/2021
 ms.author: alkohli
 ms.openlocfilehash: 3a0b87f04e60fd56d543c7c7a752cd788e087c78
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101727487"
 ---
 # <a name="azure-stack-edge-mini-r-technical-specifications"></a>Технические спецификации для мини-R Azure Stack пограничных устройств

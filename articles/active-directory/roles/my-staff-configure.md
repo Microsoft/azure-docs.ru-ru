@@ -14,10 +14,10 @@ ms.author: rolyon
 ms.reviewer: sahenry
 ms.custom: oldportal;it-pro;
 ms.openlocfilehash: 1a380c8a3d766c3c11d8cba1148383d924f65a1b
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103225002"
 ---
 # <a name="manage-your-users-with-my-staff"></a>Управляйте своими пользователями с помощью моих сотрудников
@@ -124,7 +124,7 @@ ms.locfileid: "103225002"
 
 Вы можете просматривать журналы аудита для действий, выполненных в моем персонале на портале Azure Active Directory. Если журнал аудита был создан действием, выполненным в моем персонале, вы увидите, что это указано в разделе Дополнительные сведения в событии аудита.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Моя документация](../user-help/my-staff-team-manager.md) 
  для пользователя [Документация по административным единицам](administrative-units.md)

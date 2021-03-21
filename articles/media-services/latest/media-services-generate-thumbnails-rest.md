@@ -14,10 +14,10 @@ ms.topic: how-to
 ms.date: 08/31/2020
 ms.author: inhenkel
 ms.openlocfilehash: f4456a65f422c23da73f36dd74680fbb598db186
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98955840"
 ---
 # <a name="how-to-generate-thumbnails-using-encoder-standard-with-rest"></a>Создание эскизов с помощью кодировщика Standard

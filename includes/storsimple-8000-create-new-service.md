@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 10/26/2018
 ms.author: alkohli
 ms.openlocfilehash: 746198f87e23cd7aca2a3177c23974917cb4b12a
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96027236"
 ---
 #### <a name="to-create-a-new-service"></a>Создание новой службы
@@ -21,7 +21,7 @@ ms.locfileid: "96027236"
 
     Найдите _физическое устройство StorSimple_. Выберите **Серия физического устройства StorSimple** и щелкните **Создать**. Кроме того, в портал Azure щелкните, **+** а затем в разделе **хранилище** выберите **серия физических устройств StorSimple**.
 
-    ![Создание StorSimple Device Manager 2](./media/storsimple-8000-create-new-service/createssdevman11.png)
+    ![Создание StorSimple диспетчер устройств 2](./media/storsimple-8000-create-new-service/createssdevman11.png)
 
 3. В колонке **диспетчера устройств StorSimple** выполните следующие действия.
 
@@ -42,8 +42,8 @@ ms.locfileid: "96027236"
 
    7. Щелкните **Создать**, чтобы создать диспетчер устройств StorSimple.
 
-       ![Создание StorSimple Device Manager 3](./media/storsimple-8000-create-new-service/createssdevman2.png)
+       ![Создание StorSimple диспетчер устройств 3](./media/storsimple-8000-create-new-service/createssdevman2.png)
 
 Создание службы займет несколько минут. После успешного создания службы вы получите уведомление и откроется новая колонка службы.
 
-![Создание StorSimple Device Manager 4](./media/storsimple-8000-create-new-service/createssdevman5.png)
+![Создание StorSimple диспетчер устройств 4](./media/storsimple-8000-create-new-service/createssdevman5.png)

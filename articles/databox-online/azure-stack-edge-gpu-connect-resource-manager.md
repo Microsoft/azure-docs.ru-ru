@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/01/2021
 ms.author: alkohli
 ms.openlocfilehash: 27c0c211b9844a34b0cb43dcd05037ba4a548f3e
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102638707"
 ---
 # <a name="connect-to-azure-resource-manager-on-your-azure-stack-edge-pro-device"></a>Подключение к Azure Resource Manager на устройстве Azure Stack ребра Pro
@@ -99,7 +99,7 @@ Azure Resource Manager предоставляет последовательны
 
 3. Для всех этих сертификатов убедитесь, что имя субъекта и альтернативное имя субъекта соответствуют следующим рекомендациям:
 
-    |Type |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
+    |Тип |Имя субъекта (SN)  |Альтернативное имя субъекта (SAN)  |Пример имени субъекта |
     |---------|---------|---------|---------|
     |Azure Resource Manager|`management.<Device name>.<Dns Domain>`|`login.<Device name>.<Dns Domain>`<br>`management.<Device name>.<Dns Domain>`|`management.mydevice1.microsoftdatabox.com` |
     |Хранилище BLOB-объектов|`*.blob.<Device name>.<Dns Domain>`|`*.blob.< Device name>.<Dns Domain>`|`*.blob.mydevice1.microsoftdatabox.com` |

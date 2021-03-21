@@ -6,10 +6,10 @@ ms.subservice: dsc
 ms.topic: conceptual
 ms.date: 08/08/2018
 ms.openlocfilehash: f16db3f55ebd0f09e4d7b75750fa319daf03977e
-ms.sourcegitcommit: d1e56036f3ecb79bfbdb2d6a84e6932ee6a0830e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99053573"
 ---
 # <a name="configure-machines-to-a-desired-state"></a>Настройка требуемого состояния компьютеров

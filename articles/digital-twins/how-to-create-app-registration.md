@@ -8,10 +8,10 @@ ms.date: 10/13/2020
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: acb5457f10c54a741a738dd8a1008e703b0f23b0
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102051027"
 ---
 # <a name="create-an-app-registration-to-use-with-azure-digital-twins"></a>Создание регистрации приложения для использования с цифровым двойников Azure
