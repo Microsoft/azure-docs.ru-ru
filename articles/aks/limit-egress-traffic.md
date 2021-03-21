@@ -7,17 +7,17 @@ ms.author: jpalma
 ms.date: 01/12/2021
 author: palma21
 ms.openlocfilehash: 9e65e2736578ce04dfa79d5a7827e190d47fb312
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103573835"
 ---
 # <a name="control-egress-traffic-for-cluster-nodes-in-azure-kubernetes-service-aks"></a>Управление исходящим трафиком для узлов кластера в службе Azure Kubernetes (AKS)
 
 В этой статье содержатся необходимые сведения, позволяющие защитить исходящий трафик от службы Azure Kubernetes (AKS). Он содержит требования к кластеру для базового развертывания AKS, а также дополнительные требования к дополнительным надстройкам и функциям. В [конце приведен пример того, как настроить эти требования с помощью брандмауэра Azure](#restrict-egress-traffic-using-azure-firewall). Однако эти сведения можно применить к любому методу ограничения или устройству исходящего трафика.
 
-## <a name="background"></a>Фон
+## <a name="background"></a>Историческая справка
 
 Кластеры AKS развертываются в виртуальной сети. Эта сеть может быть управляемой (созданной AKS) или настраиваемой (предварительно настроенной пользователем). В любом случае кластер имеет Исходящие зависимости от служб, **находящихся** за пределами этой виртуальной сети (служба не имеет входящих зависимостей).
 
@@ -789,7 +789,7 @@ az network firewall nat-rule create --collection-name exampleset --destination-a
 az group delete -g $RG
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этой статье вы узнали, какие порты и адреса разрешить, если требуется ограничить исходящий трафик для кластера. Вы также узнали, как защитить исходящий трафик с помощью брандмауэра Azure. 
 

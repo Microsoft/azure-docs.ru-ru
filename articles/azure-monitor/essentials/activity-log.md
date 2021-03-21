@@ -6,12 +6,12 @@ services: azure-monitor
 ms.topic: conceptual
 ms.date: 06/12/2020
 ms.author: bwren
-ms.openlocfilehash: 557fc6e358f371b47c1df314508e3565d843a28c
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 7583b4037d350b9190d6eae30c28b907b1d41d86
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102049191"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104722860"
 ---
 # <a name="azure-activity-log"></a>Журнал действий Azure
 Журнал действий — это журнал [платформы в Azure](./platform-logs-overview.md), который предоставляет аналитические сведения о событиях уровня подписки, например об изменении ресурса или запуске виртуальной машины. Вы можете просмотреть журнал действий на портале Azure или получить записи с помощью PowerShell и CLI. Для дополнительной функциональности следует создать параметр диагностики для отправки журнала действий в [журналы Azure Monitor](../logs/data-platform-logs.md), в концентраторы событий Azure для пересылки за пределы Azure или в службу хранилища Azure для архивации. Эта статья содержит сведения о просмотре журнала действий и его отправке в различные назначения.
@@ -27,6 +27,11 @@ ms.locfileid: "102049191"
 ![Просмотр журнала действий](./media/activity-log/view-activity-log.png)
 
 Описание категорий журналов действий см. в статье [схема событий журнала действий Azure](activity-log-schema.md#categories).
+
+## <a name="download-the-activity-log"></a>Скачивание журнала действий
+Выберите **скачать как CSV** -файл, чтобы скачать события в текущем представлении.
+
+![Скачать Журнал действий](media/activity-log/download-activity-log.png)
 
 ### <a name="view-change-history"></a>Просмотр журнала изменений
 
@@ -206,7 +211,7 @@ insights-logs-networksecuritygrouprulecounter/resourceId=/SUBSCRIPTIONS/00000000
     | serviceBusRuleId |Нет |Идентификатор правила служебной шины для пространства имен служебной шины, в котором вы сможете создать концентраторы событий. Это строка в формате: `{service bus resource ID}/authorizationrules/{key name}` . |
     | Расположение |Да |Разделенный запятыми список регионов, для которых будут собираться события журнала действий. |
     | RetentionInDays |Да |Число дней, в течение которых события должны храниться в учетной записи хранения в диапазоне от 1 до 365. Нулевое значение означает, что журналы хранятся неограниченно долго. |
-    | Категория |Нет |Разделенный запятыми список категорий событий, которые будут собираться. Возможные значения: _Write_, _Delete_ и _Action_. |
+    | Category |Нет |Разделенный запятыми список категорий событий, которые будут собираться. Возможные значения: _Write_, _Delete_ и _Action_. |
 
 ### <a name="example-script"></a>Пример сценария
 Ниже приведен пример скрипта PowerShell для создания профиля журнала, который записывает журнал действий в учетную запись хранения и концентратор событий.
@@ -277,7 +282,7 @@ insights-logs-networksecuritygrouprulecounter/resourceId=/SUBSCRIPTIONS/00000000
 |:---|:---|
 | ActivityStatus    | ActivityStatusValue    |
 | активитисубстатус | активитисубстатусвалуе |
-| Категория          | категоривалуе          |
+| Category          | категоривалуе          |
 | OperationName     | оператионнамевалуе     |
 | ResourceProvider  | ресаурцепровидервалуе  |
 

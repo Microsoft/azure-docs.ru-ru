@@ -8,10 +8,10 @@ ms.date: 03/03/2021
 ms.topic: article
 ms.service: azure
 ms.openlocfilehash: dff379c99fa7383c7f7844cf8d195a345e88a335
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103466275"
 ---
 # <a name="about-defender-for-iot-console-users"></a>О защитнике для пользователей консоли IoT

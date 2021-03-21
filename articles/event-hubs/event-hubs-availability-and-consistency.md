@@ -4,12 +4,12 @@ description: Узнайте, как обеспечить максимальну�
 ms.topic: article
 ms.date: 03/15/2021
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 6005a51314cff19883fc2a07e4810bd24eb94b24
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 6cd446cf86c22b851bae9cb9d8535a8e5234e08b
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104600961"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104722537"
 ---
 # <a name="availability-and-consistency-in-event-hubs"></a>Доступность и согласованность в Центрах событий
 В этой статье содержатся сведения о доступности и согласованности, поддерживаемые концентраторами событий Azure. 
@@ -43,7 +43,7 @@ ms.locfileid: "104600961"
 В этом разделе вы узнаете, как отправить события в определенную секцию с помощью различных языков программирования. 
 
 ### <a name="net"></a>[.NET](#tab/dotnet)
-Чтобы отправить события в определенную секцию, создайте пакет с помощью метода [евенсубпродуцерклиент. креатебатчасинк](/dotnet/api/azure.messaging.eventhubs.producer.eventhubproducerclient.createbatchasync#Azure_Messaging_EventHubs_Producer_EventHubProducerClient_CreateBatchAsync_Azure_Messaging_EventHubs_Producer_CreateBatchOptions_System_Threading_CancellationToken_) , указав либо либо `PartitionId` `PartitionKey` в [креатебатчоптионс](//dotnet/api/azure.messaging.eventhubs.producer.createbatchoptions). Следующий код отправляет пакет событий в определенную секцию, указывая ключ секции. Концентраторы событий гарантируют, что все события, совместно использующие значение ключа секции, хранятся вместе и доставляются в порядке поступления.
+Чтобы отправить события в определенную секцию, создайте пакет с помощью метода [евенсубпродуцерклиент. креатебатчасинк](/dotnet/api/azure.messaging.eventhubs.producer.eventhubproducerclient.createbatchasync#Azure_Messaging_EventHubs_Producer_EventHubProducerClient_CreateBatchAsync_Azure_Messaging_EventHubs_Producer_CreateBatchOptions_System_Threading_CancellationToken_) , указав либо либо `PartitionId` `PartitionKey` в [креатебатчоптионс](/dotnet/api/azure.messaging.eventhubs.producer.createbatchoptions?view=azure-dotnet). Следующий код отправляет пакет событий в определенную секцию, указывая ключ секции. Концентраторы событий гарантируют, что все события, совместно использующие значение ключа секции, хранятся вместе и доставляются в порядке поступления.
 
 ```csharp
 var batchOptions = new CreateBatchOptions { PartitionKey = "cities" };

@@ -8,10 +8,10 @@ ms.date: 2/12/2021
 ms.topic: conceptual
 ms.service: digital-twins
 ms.openlocfilehash: 3393856b25040cff603ea2ef51e8adbcba78dc26
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102034699"
 ---
 # <a name="what-is-an-ontology"></a>Что такое онтология? 
@@ -60,7 +60,7 @@ ms.locfileid: "102034699"
 
 Вы можете визуализировать их с помощью примеров, например [обозревателя цифровых двойников Azure](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/) или [визуализатора цифровых двойников моделей Azure](https://github.com/Azure/opendigitaltwins-building-tools/tree/master/AdtModelVisualizer), или перейти к их использованию для создания [цифрового двойников](concepts-twins-graph.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте больше о стратегиях внедрения, преобразования и разработки онтологиес:
 * [*Основные понятия: внедрение отраслевого стандарта онтологиес*](concepts-ontologies-adopt.md)

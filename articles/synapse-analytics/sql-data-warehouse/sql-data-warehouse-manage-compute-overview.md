@@ -12,10 +12,10 @@ ms.author: rortloff
 ms.reviewer: igorstan
 ms.custom: seo-lt-2019, azure-synapse
 ms.openlocfilehash: 20087fbf4d5c37f1501df08cc294a10ddb9118e1
-ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103601820"
 ---
 # <a name="manage-compute-for-dedicated-sql-pool-formerly-sql-dw-in-azure-synapse-analytics"></a>Управление вычислениями для выделенного пула SQL (ранее — хранилища данных SQL) в Azure синапсе Analytics
@@ -124,6 +124,6 @@ ms.locfileid: "103601820"
 
 Для масштабирования выделенного пула SQL (прежнее название — хранилище данных SQL) требуются разрешения, описанные в статье [ALTER DATABASE](/sql/t-sql/statements/alter-database-azure-sql-data-warehouse?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true).  Чтобы приостановить и возобновить работу, нужны разрешения [Участник баз данных SQL](../../role-based-access-control/built-in-roles.md?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json#sql-db-contributor), в частности Microsoft.Sql/servers/databases/action.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения об управлении ресурсами вычислений см. в разделе Руководство по управлению [вычислом](manage-compute-with-azure-functions.md) других ресурсов вычислений для отдельных запросов. Дополнительные сведения см. в разделе [Классы ресурсов для управления рабочими нагрузками](resource-classes-for-workload-management.md).

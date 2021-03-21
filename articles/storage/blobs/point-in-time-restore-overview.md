@@ -11,10 +11,10 @@ ms.author: tamram
 ms.subservice: blobs
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: da869091fb1f7bf31a29ba1bc6db8c1c42254dc4
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102618089"
 ---
 # <a name="point-in-time-restore-for-block-blobs"></a>Восстановление до точки во времени для блочных BLOB-объектов
@@ -54,7 +54,7 @@ ms.locfileid: "102618089"
 Для восстановления до точки во времени необходимо включить следующие функции службы хранилища Azure, прежде чем можно будет включить восстановление на момент времени.
 
 - [Обратимое удаление](./soft-delete-blob-overview.md)
-- [Канал изменений](storage-blob-change-feed.md)
+- [Веб-канал изменений](storage-blob-change-feed.md)
 - [Управление версиями BLOB-объектов](versioning-overview.md)
 
 ### <a name="retention-period-for-point-in-time-restore"></a>Срок хранения для восстановления до точки во времени

@@ -6,14 +6,14 @@ ms.author: jeanb
 ms.service: stream-analytics
 ms.topic: how-to
 ms.date: 06/11/2019
-ms.openlocfilehash: a36162d24e18371fdf6b19835e4748e3043d1f24
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.openlocfilehash: 1dc85cb10a9e4300c57ad03900d8c8924988c6d5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98012531"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104588126"
 ---
-# <a name="azure-machine-learning-studio-classic-integration-in-stream-analytics-preview"></a>Интеграция Студии машинного обучения Azure (классической) в Stream Analytics (предварительная версия)
+# <a name="azure-machine-learning-studio-classic-integration-in-stream-analytics"></a>Интеграция Машинное обучение Azure Studio (классическая модель) в Stream Analytics
 Stream Analytics поддерживает пользовательские функции, которые обращаются к конечным точкам Студии машинного обучения Azure (классической). Поддержка этой возможности в REST API описана в статье [Библиотека REST API Stream Analytics](/rest/api/streamanalytics/). В этой статье приведены дополнительные сведения, необходимые для успешной реализации этой возможности в Stream Analytics. Также было размещено руководство, которое доступно [здесь](stream-analytics-machine-learning-integration-tutorial.md).
 
 ## <a name="overview-azure-machine-learning-studio-classic-terminology"></a>Общие сведения. Терминология Студии машинного обучения Azure (классической)
@@ -187,7 +187,7 @@ PATCH : /subscriptions/<subscriptionId>/resourceGroups/<resourceGroup>/providers
 
 
 ## <a name="get-help"></a>Получить справку
-Для получения дополнительной помощи воспользуйтесь [страницей вопросов и ответов о Microsoft Azure Stream Analytics](/answers/topics/azure-stream-analytics.html).
+Для получения дополнительной помощи воспользуйтесь [страницей вопросов об Azure Stream Analytics на сайте Microsoft](/answers/topics/azure-stream-analytics.html).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 * [Введение в Azure Stream Analytics](stream-analytics-introduction.md)

@@ -4,10 +4,10 @@ description: Чтобы приступить к работе с Azure, восп�
 ms.date: 03/10/2021
 ms.topic: conceptual
 ms.openlocfilehash: dbfe1ea99b09813edbfaa7bc248b4c71f1dd8a45
-ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103232993"
 ---
 # <a name="get-started-with-the-azure-quickstart-center"></a>Начало работы с Центром быстрого запуска Azure
@@ -37,7 +37,7 @@ ms.locfileid: "103232993"
 
 [Общие сведения о центре быстрого запуска Azure](https://www.youtube.com/watch?v=0bSA7RXrbAg)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Узнайте больше о настройке и миграции Azure в [инфраструктуре внедрения Microsoft Cloud для Azure](/azure/architecture/cloud-adoption/).
 * Разблокируйте свои навыки работы с облаком, используя дополнительные курсы от [Microsoft Learn](/learn/azure/).

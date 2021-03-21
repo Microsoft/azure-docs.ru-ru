@@ -8,10 +8,10 @@ ms.service: key-vault
 ms.subservice: general
 ms.topic: conceptual
 ms.openlocfilehash: 25f00024fb7371fd08bf6c4ceec3177cfaca029b
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103572814"
 ---
 # <a name="key-vault-authentication-fundamentals"></a>Основы проверки подлинности в Key Vault
@@ -192,6 +192,6 @@ if __name__ == "__main__":
     main()
 ```
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Более подробные сведения о проверке подлинности хранилища ключей см. в следующем документе. [Аутентификация Key Vault](./authentication.md)

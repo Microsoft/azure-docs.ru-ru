@@ -11,10 +11,10 @@ ms.author: tamram
 ms.subservice: common
 ms.custom: devx-track-csharp
 ms.openlocfilehash: baad1a0b173ae89fec9d160572224c6cb0aa615d
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103574634"
 ---
 # <a name="acquire-a-token-from-azure-ad-for-authorizing-requests-from-a-client-application"></a>Получение маркера из Azure AD для авторизации запросов из клиентского приложения
@@ -72,10 +72,10 @@ ms.locfileid: "103574634"
 Приложению требуется секрет клиента для подтверждения его личности при запросе маркера. Чтобы добавить секрет клиента, выполните следующие действия.
 
 1. Перейдите к регистрации приложения в портал Azure.
-1. Выберите параметр **сертификаты & секреты** .
-1. В разделе **секреты клиента** щелкните **новый секрет клиента** , чтобы создать новый секрет.
+1. Выберите параметр **Сертификаты и секреты**.
+1. В разделе **Секреты клиента** выберите **Новый секрет клиента**, чтобы создать новый секрет.
 1. Введите описание секрета и выберите требуемый интервал срока действия.
-1. Немедленно скопируйте значение нового секрета в безопасное расположение. Полное значение отображается только один раз.
+1. Сразу скопируйте значение нового секрета в безопасное место. Полное значение отображается только один раз.
 
     ![Снимок экрана, показывающий секрет клиента](media/storage-auth-aad-app/client-secret.png)
 
@@ -151,7 +151,7 @@ Install-Package Azure.Storage.Blobs
 Install-Package Microsoft.Identity.Web -Version 0.4.0-preview
 ```
 
-Затем добавьте следующие операторы using в файл HomeController.cs:
+Затем добавьте следующие операторы using в файл HomeController. cs:
 
 ```csharp
 using Microsoft.Identity.Web; //MSAL library for getting the access token
@@ -165,7 +165,7 @@ Install-Package Microsoft.Azure.Storage.Blob
 Install-Package Microsoft.Identity.Web -Version 0.4.0-preview //or a later version
 ```
 
-Затем добавьте следующие операторы using в файл HomeController.cs:
+Затем добавьте следующие операторы using в файл HomeController. cs:
 
 ```csharp
 using Microsoft.Identity.Client; //MSAL library for getting the access token
@@ -284,13 +284,13 @@ public async Task<IActionResult> Blob()
 
 ### <a name="update-the-storage-account-and-container-name"></a>Обновление учетной записи хранения и имени контейнера
 
-В файле *HomeController.CS* обновите универсальный код ресурса (URI), который ссылается на блочный BLOB-объект, чтобы использовать имя вашей учетной записи хранения и контейнера, заменив значения в угловых скобках собственными значениями:
+В файле *HomeController. CS* обновите универсальный код ресурса (URI), который ссылается на блочный BLOB-объект, чтобы использовать имя вашей учетной записи хранения и контейнера, заменив значения в угловых скобках собственными значениями:
 
 ```html
 https://<storage-account>.blob.core.windows.net/<container>/Blob1.txt
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Платформа удостоверений Майкрософт](../../active-directory/develop/index.yml)
 - [Управление правами доступа к данным хранилища с помощью Azure RBAC](./storage-auth-aad-rbac-portal.md)

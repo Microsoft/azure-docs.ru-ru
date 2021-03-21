@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 02/11/2021
 ms.author: memildin
 ms.openlocfilehash: a91329d3bd0247932614233ef5b1ec71bf4d2a6b
-ms.sourcegitcommit: 33ac5cd254c33659f668a76a2e295fddcd5d194d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103465469"
 ---
 # <a name="enable-azure-defender-for-sql-servers-on-machines"></a>Включение защитника Azure для серверов SQL Server на компьютерах 
@@ -31,7 +31,7 @@ ms.locfileid: "103465469"
 |Аспект|Сведения|
 |----|:----|
 |Состояние выпуска:|Общедоступная версия|
-|Цены:|Плата **за использование Azure Defender для серверов SQL Server на компьютерах** взимается, как показано на странице [цен на центр безопасности](https://azure.microsoft.com/pricing/details/security-center/) .|
+|Цены|Плата **за использование Azure Defender для серверов SQL Server на компьютерах** взимается, как показано на странице [цен на центр безопасности](https://azure.microsoft.com/pricing/details/security-center/) .|
 |Защищаемые версии SQL|SQL Server Azure (все версии, охваченные службой поддержки Майкрософт)|
 |Облако.|![Да](./media/icons/yes-icon.png) Коммерческие облака<br>![Да](./media/icons/yes-icon.png) US Gov<br>![Нет](./media/icons/no-icon.png) China Gov и другие правительственные облака|
 |||
@@ -98,7 +98,7 @@ ms.locfileid: "103465469"
     [Дополнительные сведения об управлении оповещениями и реагировании на них](security-center-managing-and-responding-alerts.md).
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Связанные материалы см. в следующих статьях.
 

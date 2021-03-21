@@ -9,10 +9,10 @@ ms.author: prsandhu
 ms.reviewer: cynthn
 ms.custom: fasttrack-edit, mvc, references_regions
 ms.openlocfilehash: 5152b0ecf6eebe87031a2165d5d8ba11d99209cf
-ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103601191"
 ---
 # <a name="azure-services-that-support-availability-zones"></a>Службы Azure с поддержкой Зон доступности
@@ -52,7 +52,7 @@ Microsoft Azure Глобальная инфраструктура разраба
 |                    |                      |                     |                |
 | Brazil South       | Центральная Франция       | Южная Африка, Северный * | Japan East     |
 | Центральная Канада     | Центрально-Западная Германия |                     | Southeast Asia |
-| Центральная часть США         | Северная Европа         |                     | Восточная Австралия |
+| Центральная часть США         | Северная Европа         |                     | Восточная Австралия |
 | Восточная часть США            | южная часть Соединенного Королевства             |                     |                |
 | восточная часть США 2          | Западная Европа          |                     |                |
 | Юго-Центральный регион США |                      |                     |                |
@@ -120,16 +120,16 @@ Microsoft Azure Глобальная инфраструктура разраба
 | Среда службы приложений                        |      : large_blue_diamond:  |
 | Доменные службы Azure Active Directory          |      : large_blue_diamond:  |
 | Бастион Azure                                   |      : large_blue_diamond:  |
-| Кэш Redis для Azure                           |      : large_blue_diamond:  |
+| Кэш Azure для Redis                           |      : large_blue_diamond:  |
 | Azure Cognitive Services: Анализ текста        |      : large_blue_diamond:  |
-| Azure Data Explorer                             |      : large_blue_diamond:  |
+| Обозреватель данных Azure                             |      : large_blue_diamond:  |
 | База данных Azure для MySQL — гибкий сервер      |      : large_blue_diamond:  |
 | База данных Azure для PostgreSQL — гибкий сервер |      : large_blue_diamond:  |
 | Защита от атак DDoS Azure                           |      : large_blue_diamond:  |
 | Шифрование дисков Azure                           |      : large_blue_diamond:  |
 | Брандмауэр Azure                                  |      : large_blue_diamond:  |
 | Диспетчер брандмауэра Azure                          |      : large_blue_diamond:  |
-| служба Azure Kubernetes (AKS);                  |      : large_blue_diamond:  |
+| Служба Azure Kubernetes (AKS)                  |      : large_blue_diamond:  |
 | Приватный канал Azure                              |      : large_blue_diamond:  |
 | Azure Red Hat OpenShift                         |      : large_blue_diamond:  |
 | Azure Site Recovery                             |      : large_blue_diamond:  |
@@ -218,7 +218,7 @@ Microsoft Azure Глобальная инфраструктура разраба
 - [Создание кластера Azure Kubernetes Service (AKS), использующего Зоны доступности](../aks/availability-zones.md)
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Регионы и зоны доступности в Azure](az-overview.md)

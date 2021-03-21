@@ -12,12 +12,12 @@ author: WilliamDAssafMSFT
 ms.author: wiassaf
 ms.reviewer: ''
 ms.date: 02/01/2021
-ms.openlocfilehash: 6ba1ba9d8c809a805fe8691baf96350b70ec6a51
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 3be01c304a40317e0d21baf6789ef1376cd89b80
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101691898"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104608084"
 ---
 # <a name="automate-management-tasks-using-sql-agent-jobs-in-azure-sql-managed-instance"></a>Автоматизация задач управления с помощью заданий агента SQL в Управляемый экземпляр Azure SQL
 [!INCLUDE[appliesto-sqlmi](../includes/appliesto-sqlmi.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "101691898"
 Агент SQL позволяет создавать различные типы шагов заданий, например шаги задания Transact-SQL, выполняющие один пакет Transact-SQL для базы данных, или шаги командной строки или PowerShell, которые могут выполнять пользовательский скрипт операционной системы, [шаги задания служб SSIS](../../data-factory/how-to-invoke-ssis-package-managed-instance-agent.md) , позволяющие загружать данные с помощью среды выполнения служб SSIS, или шаги [репликации](../managed-instance/replication-transactional-overview.md) , которые могут публиковать изменения из базы данных в других базах данных.
 
 > [!Note]
-> Дополнительные сведения об использовании Integration Runtime Azure SSIS с SSISDB, размещенной в Управляемый экземпляр SQL Azure, см. [в статье использование управляемый экземпляр Azure SQL с SQL Server Integration Services (SSIS) в фабрике данных Azure](/../azure/data-factory/how-to-use-sql-managed-instance-with-ir.md).
+> Дополнительные сведения об использовании Integration Runtime Azure SSIS с SSISDB, размещенной в Управляемый экземпляр SQL Azure, см. [в статье использование управляемый экземпляр Azure SQL с SQL Server Integration Services (SSIS) в фабрике данных Azure](../../data-factory/how-to-use-sql-managed-instance-with-ir.md).
 
 [Репликация транзакций](../managed-instance/replication-transactional-overview.md) может реплицировать изменения из таблиц в другие базы данных в управляемый экземпляр Azure SQL, в базе данных SQL azure или SQL Server. Дополнительные сведения см. [в статье Настройка репликации в Azure SQL управляемый экземпляр](../../azure-sql/managed-instance/replication-between-two-instances-configure-tutorial.md). 
 
@@ -97,7 +97,7 @@ ms.locfileid: "101691898"
 
 Расписание может определить следующие условия для времени выполнения задания:
 
-- При каждом запуске агент SQL Server. Задание активируется после каждой отработки отказа.
+- при каждом запуске агента SQL Server; Задание активируется после каждой отработки отказа.
 - Один раз в определенную дату и время, что удобно для некоторых заданий, выполнение которых необходимо отложить.
 - Для повторяющегося расписания.
 
@@ -200,7 +200,7 @@ GRANT EXECUTE ON master.dbo.xp_sqlagent_is_starting TO [login_name];
 GRANT EXECUTE ON master.dbo.xp_sqlagent_notify TO [login_name];
 ```
 
-## <a name="learn-more"></a>Дополнительные сведения
+## <a name="learn-more"></a>Материалы для дальнейшего изучения
 
 - [Что такое Управляемый экземпляр SQL Azure?](../managed-instance/sql-managed-instance-paas-overview.md)
 - [Что нового в базе данных SQL Azure & Управляемый экземпляр SQL?](../../azure-sql/database/doc-changes-updates-release-notes.md?tabs=managed-instance)

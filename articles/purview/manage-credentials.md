@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 02/11/2021
 ms.openlocfilehash: 3802d25ebd8f21ab5b8991a66ceb6650f2f276a9
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103461714"
 ---
 # <a name="credentials-for-source-authentication-in-azure-purview"></a>Учетные данные для исходной проверки подлинности в Azure зрения
@@ -71,7 +71,7 @@ ms.locfileid: "103461714"
 
    :::image type="content" source="media/manage-credentials/add-access-policy.png" alt-text="Добавление политики доступа":::
 
-6. Щелкните **Добавить**.
+6. Выберите **Добавить**.
 
 7. Нажмите кнопку **сохранить** , чтобы сохранить политику доступа.
 
@@ -123,6 +123,6 @@ ms.locfileid: "103461714"
 
 3. Удалите одну или несколько учетных данных.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Создание набора правил проверки](create-a-scan-rule-set.md)

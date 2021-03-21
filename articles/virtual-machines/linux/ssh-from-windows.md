@@ -8,12 +8,12 @@ ms.workload: infrastructure-services
 ms.date: 10/31/2020
 ms.topic: how-to
 ms.author: cynthn
-ms.openlocfilehash: 167ce63931155f5142ed34b41f857505699bc0a6
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: aeecdcddaeba385c6dc0773356bcd0e36231e1e4
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102552785"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104607472"
 ---
 # <a name="how-to-use-ssh-keys-with-windows-on-azure"></a>Как использовать ключи SSH с Windows в Azure
 
@@ -97,4 +97,4 @@ ssh -i ~/.ssh/id_rsa.pub azureuser@10.111.12.123
 
 - Для создания ключей SSH и установления SSH-подключений к виртуальным машинам Linux можно также использовать PowerShell в Azure Cloud Shell. Ознакомьтесь с разделом [Краткое руководство по использованию PowerShell в Azure Cloud Shell (предварительная версия)](../../cloud-shell/quickstart-powershell.md#ssh).
 
-- Если при подключении к виртуальным машинам Linux по протоколу SSH возникают трудности, см. статью [Troubleshoot SSH connections to an Azure Linux VM that fails, errors out, or is refused](../troubleshooting/troubleshoot-ssh-connection.md?toc=/azure/virtual-machines/linux/toc.json) (Устранение неполадок с ошибками, сбоем или отклонением SSH-подключения к виртуальной машине Azure Linux).
+- Если при подключении к виртуальным машинам Linux по протоколу SSH возникают трудности, см. статью [Troubleshoot SSH connections to an Azure Linux VM that fails, errors out, or is refused](/troubleshoot/azure/virtual-machines/troubleshoot-ssh-connection?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json) (Устранение неполадок с ошибками, сбоем или отклонением SSH-подключения к виртуальной машине Azure Linux).

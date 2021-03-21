@@ -4,15 +4,15 @@ description: Узнайте, как связать идентификатор п
 ms.date: 02/12/2021
 ms.topic: how-to
 ms.openlocfilehash: 4c18aae38570ab3fd84df7d45fb18e35404158be
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100372099"
 ---
 # <a name="link-your-partner-id-to-track-your-impact-on-delegated-resources"></a>Свяжите идентификатор партнера, чтобы отразить влияние на делегированные ресурсы. 
 
-Если вы являетесь членом [Microsoft Partner Network](https://partner.microsoft.com/), вы можете связать идентификатор партнера с учетными данными, используемыми для управления делегированными ресурсами клиентов, что позволит корпорации Майкрософт выявлять и распознавать партнеров, которые послужат для успешной работы клиентов Azure. Эта ссылка также позволяет партнерам [поставщика облачных решений (CSP](/partner-center/csp-overview) ) получить [получившийся кредит от партнеров для УПРАВЛЯЕМЫХ служб (PEC)](/partner-center/partner-earned-credit) для клиентов, которые [подписали клиентское соглашение Майкрософт (MCA)](/partner-center/confirm-customer-agreement) и находятся [в плане Azure](/partner-center/azure-plan-get-started).
+Если вы являетесь членом [Microsoft Partner Network](https://partner.microsoft.com/), вы можете связать идентификатор партнера с учетными данными, используемыми для управления делегированными ресурсами клиентов, что позволит корпорации Майкрософт выявлять и распознавать партнеров, которые послужат для успешной работы клиентов Azure. Эта привязка также позволяет партнерам [CSP (поставщика служб шифрования)](/partner-center/csp-overview) получать [заработанные партнерские баллы за управляемые службы (PEC)](/partner-center/partner-earned-credit) для клиентов, которые [подписали Клиентское соглашение Майкрософт (MCA)](/partner-center/confirm-customer-agreement) и [используют план Azure](/partner-center/azure-plan-get-started).
 
 Чтобы получить признание для действий Azure Лигхсаусе, необходимо [связать идентификатор MPN](../../cost-management-billing/manage/link-partner-id.md) по крайней мере с одной учетной записью пользователя в управляющем клиенте и убедиться, что связанная учетная запись имеет доступ к каждой из подключенных подписок.
 
@@ -44,7 +44,7 @@ ms.locfileid: "100372099"
 
 Вы также можете использовать [пакет SDK центра партнеров](/partner-center/develop/get-invoice-unbilled-consumption-lineitems) и выполнить фильтрацию `rateOfPartnerEarnedCredit` для автоматизации проверки PEC для подписки.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о [Microsoft Partner Network](/partner-center/mpn-overview).
 - Узнайте [, как вычисляется и оплачивается PEC](/partner-center/partner-earned-credit-explanation).

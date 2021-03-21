@@ -11,10 +11,10 @@ ms.date: 03/01/2021
 ms.author: tamram
 ms.custom: security-recommendations
 ms.openlocfilehash: 40067815ad582191606ad5a53cf06c9584d83350
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102618021"
 ---
 # <a name="security-recommendations-for-blob-storage"></a>Рекомендации по обеспечению безопасности для хранилища BLOB-объектов
@@ -73,7 +73,7 @@ ms.locfileid: "102618021"
 | Контроль авторизации запросов | Включите ведение журнала службы хранилища Azure, чтобы отслеживание авторизации каждого запроса к службе хранилища Azure. Журналы указывают, был ли запрос анонимно, с помощью маркера OAuth 2,0, с помощью общего ключа или подписанного URL-адрес (SAS). Дополнительные сведения см. в статье [мониторинг хранилища BLOB-объектов Azure с помощью Azure Monitor](monitor-blob-storage.md) или [журнала аналитики службы хранилища Azure с классическим мониторингом](../common/storage-analytics-logging.md). | - |
 | Настройка оповещений в Azure Monitor | Настройте оповещения журнала для сбора журналов ресурсов с заданной периодичностью и запуска предупреждения на основе результатов. Дополнительные сведения см. [в разделе оповещения журнала в Azure Monitor](../../azure-monitor/alerts/alerts-unified-log.md). | - |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Документация по безопасности Azure](../../security/index.yml)
 - [Документация по разработке безопасности](../../security/develop/index.yml).

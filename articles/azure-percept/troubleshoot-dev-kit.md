@@ -7,12 +7,12 @@ ms.service: azure-percept
 ms.topic: how-to
 ms.date: 02/18/2021
 ms.custom: template-how-to
-ms.openlocfilehash: 93812cf2b0db7fc3557e31c8d9e8053831c7b90f
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: 826759907bfe5ec3359bf5c9125909466372c68f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103011006"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104608152"
 ---
 # <a name="azure-percept-dk-dev-kit-troubleshooting"></a>Устранение неполадок в Azure Перцепт DK (комплект разработчика)
 
@@ -31,6 +31,12 @@ ms.locfileid: "103011006"
 sudo [command] > [file name].txt
 ```
 
+Измените разрешения для файла txt, чтобы его можно было скопировать:
+
+```console
+sudo chmod 666 [file name].txt
+```
+
 После перенаправления выходных данных в txt-файл скопируйте файл на главный компьютер с помощью SCP:
 
 ```console
@@ -43,10 +49,10 @@ scp [remote username]@[IP address]:[remote file path]/[file name].txt [local hos
 
 |Категория:         |Команда:                    |Функция:                  |
 |------------------|----------------------------|---------------------------|
-|ОС                |```cat /etc/os-release```         |Проверка версии образа Маринер |
-|ОС                |```cat /etc/os-subrelease```      |проверить версию производного образа |
-|ОС                |```cat /etc/adu-version```        |Проверка версии аду |
-|температура;       |```cat /sys/class/thermal/thermal_zone0/temp``` |Проверка температуры DevKit |
+|Операционная система                |```cat /etc/os-release```         |Проверка версии образа Маринер |
+|Операционная система                |```cat /etc/os-subrelease```      |проверить версию производного образа |
+|Операционная система                |```cat /etc/adu-version```        |Проверка версии аду |
+|Температура       |```cat /sys/class/thermal/thermal_zone0/temp``` |Проверка температуры DevKit |
 |Wi-Fi             |```sudo journalctl -u hostapd.service``` |Проверка журналов Софтап|
 |Wi-Fi             |```sudo journalctl -u wpa_supplicant.service``` |Проверка журналов Wi-Fi Services |
 |Wi-Fi             |```sudo journalctl -u ztpd.service```  |Проверка Wi-Fi журналов службы подготовки для нулевого сенсорного ввода |
@@ -92,7 +98,7 @@ sudo journalctl -u hostapd.service -u wpa_supplicant.service -u ztpd.service -u 
 
 На корпусе платной платы имеется три мелких индикатора. Рядом с индикатором 1 печатается значок облака, значок Wi-Fi печатается рядом с ИНДИКАТОРом 2, а рядом с ИНДИКАТОРом 3 выводится значок восклицательного знака. Сведения о каждом состоянии СВЕТОИНДИКАТОРА см. в следующей таблице.
 
-|Светодиодный индикатор             |Область      |Описание                      |
+|Светодиодный индикатор             |Состояние      |Описание                      |
 |----------------|-----------|---------------------------------|
 |СВЕТОИНДИКАТОР 1 (центр Интернета вещей) |Вкл. (сплошной) |Устройство подключено к центру Интернета вещей. |
 |Индикатор 2 (Wi-Fi)   |Замедлит мерцание |Устройство готово к настройке с помощью Wi-Fi Easy Connect и уведомляет его о присутствии с конфигуратором. |

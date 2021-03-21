@@ -15,10 +15,10 @@ ms.workload: infrastructure-services
 ms.date: 05/28/2020
 ms.author: allensu
 ms.openlocfilehash: ffdd673cc8a357a7156fb3b3e932c524c831db15
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103418068"
 ---
 # <a name="public-ip-addresses"></a>Общедоступные IP-адреса
@@ -66,7 +66,7 @@ ms.locfileid: "103418068"
 > [!NOTE]
 > Параметры диагностики не отображаются в колонке ресурс при использовании общедоступного IP-адреса стандартного SKU. Чтобы включить ведение журнала на стандартном ресурсе общедоступного IP-адреса, перейдите к параметрам диагностики в колонке Azure Monitor и выберите ресурс IP-адреса.
 
-### <a name="basic"></a>Базовый
+### <a name="basic"></a>Basic
 
 До появления номеров SKU все общедоступные IP-адреса имеют номер SKU категории "Базовый". 
 
@@ -203,6 +203,6 @@ IP-адрес освобождается, когда метод распреде
 
 За общедоступные IP-адреса взимается номинальная плата. Дополнительные сведения о ценах на IP-адреса в Azure см. на [соответствующей](https://azure.microsoft.com/pricing/details/ip-addresses) странице.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 * Сведения о [частных IP-адресах в Azure](private-ip-addresses.md)
 * [Развертывание виртуальной машины со статическим общедоступным IP-адресом с использованием портала Azure](virtual-network-deploy-static-pip-arm-portal.md)

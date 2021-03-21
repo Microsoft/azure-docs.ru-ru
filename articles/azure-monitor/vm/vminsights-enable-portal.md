@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 07/27/2020
 ms.openlocfilehash: 076fcab7b0747a7993407edd65f9d08efc27309f
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102035591"
 ---
 # <a name="enable-azure-monitor-for-single-virtual-machine-or-virtual-machine-scale-set-in-the-azure-portal"></a>Включение Azure Monitor для одной виртуальной машины или масштабируемого набора виртуальных машин на портале Azure
@@ -24,7 +24,7 @@ ms.locfileid: "102035591"
 - [Создание и Настройка рабочей области log Analytics](./vminsights-configure-workspace.md). Кроме того, во время этого процесса можно создать новую рабочую область.
 - Ознакомьтесь с [поддерживаемыми операционными системами](./vminsights-enable-overview.md#supported-operating-systems) , чтобы убедиться, что операционная система, которую вы включаете, поддерживается. 
 
-## <a name="enable-vm-insights"></a>Включение аналитики виртуальной машины
+## <a name="enable-vm-insights"></a>Включение аналитики виртуальных машин
 
 В портал Azure выберите **виртуальные машины**, **масштабируемые наборы виртуальных машин** или серверы в **службе "Дуга Azure** " и выберите ресурс из списка. В разделе **мониторинг** меню выберите **Insights** , а затем **включите**. В следующем примере показана виртуальная машина Azure, но меню аналогично масштабируемому набору виртуальных машин Azure или службе "Дуга Azure".
 
@@ -46,7 +46,7 @@ ms.locfileid: "102035591"
 
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * См. раздел [Использование схемы VM Insights](vminsights-maps.md) для просмотра зависимостей обнаруженных приложений. 
 * См. статью [Просмотр производительности виртуальной машины Azure](vminsights-performance.md) для выявления узких мест, общего использования и производительности виртуальной машины.

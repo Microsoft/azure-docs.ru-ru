@@ -10,10 +10,10 @@ ms.author: sgilley
 author: sdgilley
 ms.date: 09/29/2020
 ms.openlocfilehash: b4422c664071087ccae73a5b6f642b53dcca74bf
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103574651"
 ---
 # <a name="what-are-compute-targets-in-azure-machine-learning"></a>Что такое целевые объекты вычислений в Машинном обучении Azure?
@@ -76,7 +76,7 @@ ms.locfileid: "103574651"
 При создании эти ресурсы вычислений автоматически являются частью рабочей области, в отличие от других типов целевых объектов вычислений.
 
 
-|Возможности  |Вычислительный кластер  |Вычислительная операция  |
+|Функция  |Вычислительный кластер  |Вычислительная операция  |
 |---------|---------|---------|
 |Кластер с одним или несколькими узлами     |    **&check;**       |         |
 |Автоматическое масштабирование при каждой отправке выполнения     |     **&check;**      |         |

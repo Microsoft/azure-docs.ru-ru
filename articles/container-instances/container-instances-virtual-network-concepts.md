@@ -3,18 +3,21 @@ title: Сценарии использования виртуальной сет
 description: Сценарии, ресурсы и ограничения для развертывания групп контейнеров в виртуальной сети Azure.
 ms.topic: article
 ms.date: 08/11/2020
-ms.openlocfilehash: 65d7fa46ebbb9b072b50731bff68b9b88809075d
-ms.sourcegitcommit: c4c554db636f829d7abe70e2c433d27281b35183
+ms.openlocfilehash: 20c2b4fe2f19402d6647f398a9696b7e16550d8e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98033835"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104606894"
 ---
 # <a name="virtual-network-scenarios-and-resources"></a>Сценарии и ресурсы виртуальной сети
 
 [Виртуальная сеть Azure](../virtual-network/virtual-networks-overview.md) обеспечивает безопасное и конфиденциальное сетевое подключение для Azure и локальных ресурсов. Развертывание групп контейнеров в виртуальной сети Azure позволяет контейнерам безопасно обмениваться данными с другими ресурсами в виртуальной сети. 
 
 В этой статье содержатся общие сведения о сценариях виртуальной сети, ограничениях и ресурсах. Примеры развертывания с помощью Azure CLI см. в статье [развертывание экземпляров контейнеров в виртуальной сети Azure](container-instances-vnet.md).
+
+> [!IMPORTANT]
+> Развертывание группы контейнеров в виртуальной сети общедоступно для контейнеров Linux в большинстве регионов, где доступны службы "экземпляры контейнеров Azure". Дополнительные сведения см. в разделе [регионы и доступность ресурсов](container-instances-region-availability.md). 
 
 ## <a name="scenarios"></a>Сценарии
 
@@ -45,12 +48,6 @@ ms.locfileid: "98033835"
 * Если вы подключаете группу контейнеров к учетной записи хранения Azure, необходимо добавить [конечную точку службы](../virtual-network/virtual-network-service-endpoints-overview.md) к этому ресурсу.
 
 [!INCLUDE [container-instances-restart-ip](../../includes/container-instances-restart-ip.md)]
-
-## <a name="where-to-deploy"></a>Выберите для себя решение "Многофакторная идентификация Microsoft Azure"
-
-Для развертывания группы контейнеров в виртуальной сети Azure доступны следующие регионы и максимальные ресурсы.
-
-[!INCLUDE [container-instances-vnet-limits](../../includes/container-instances-vnet-limits.md)]
 
 ## <a name="required-network-resources"></a>Необходимые сетевые ресурсы
 

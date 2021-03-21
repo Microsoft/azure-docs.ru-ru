@@ -13,10 +13,10 @@ ms.author: ryanwi
 ms.reviewer: paulgarn, hirsin
 ms.custom: aaddev
 ms.openlocfilehash: ce4917f968ef1664a1d41f4eaff162df116bda4f
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102035090"
 ---
 # <a name="signing-key-rollover-in-the-microsoft-identity-platform"></a>Смена ключей подписывания на платформе Microsoft Identity
@@ -68,7 +68,7 @@ ms.locfileid: "102035090"
 ### <a name="web-applications--apis-protecting-resources-using-net-owin-openid-connect-ws-fed-or-windowsazureactivedirectorybearerauthentication-middleware"></a><a name="owin"></a>Веб-приложения и интерфейсы API, защищающие ресурсы с использованием ПО промежуточного слоя для аутентификации Microsoft Azure Active Directory, .NET OWIN OpenID Connect или WS-Fed
 Если в приложении используется ПО промежуточного слоя для аутентификации Microsoft Azure Active Directory, .NET OWIN OpenID Connect или WS-Fed, в нем уже предусмотрена логика для обработки автоматической смены ключей.
 
-Чтобы убедиться, что приложение использует любое из этих действий, выполните поиск любого из следующих фрагментов в файлах Startup.cs или Startup.Auth.cs приложения.
+Вы можете убедиться, что приложение использует любое из следующих фрагментов кода в файлах Startup. cs или Startup. auth. CS приложения.
 
 ```csharp
 app.UseOpenIdConnectAuthentication(
@@ -144,7 +144,7 @@ passport.use(new OIDCStrategy({
 3. В таблице **IssuingAuthorityKeys** будет по крайней мере одна строка, соответствующая значению отпечатка для ключа. Удалите все строки в таблице.
 4. Щелкните правой кнопкой мыши таблицу **Клиенты**, а затем выберите команду **Показать таблицу данных**.
 5. В таблице **Клиенты** будет по крайней мере одна строка, соответствующая уникальному идентификатору клиента каталога. Удалите все строки в таблице. Если не удалить строки в таблицах **Tenants** и **IssuingAuthorityKeys**, то при выполнении произойдет ошибка.
-6. Создайте и запустите приложение. Войдя в учетную запись, можно остановить работу приложения.
+6. Выполните сборку и запуск приложения. Войдя в учетную запись, можно остановить работу приложения.
 7. Вернитесь в **Обозреватель серверов** и найдите значения в таблицах **IssuingAuthorityKeys** и **Клиенты**. Как можно заметить, в них автоматически добавлены соответствующие сведения из документа метаданных федерации.
 
 ### <a name="web-apis-protecting-resources-and-created-with-visual-studio-2013"></a><a name="vs2013"></a>Защищающие ресурсы веб-интерфейсы, созданные в Visual Studio 2013

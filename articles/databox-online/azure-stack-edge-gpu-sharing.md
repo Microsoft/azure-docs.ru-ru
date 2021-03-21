@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/05/2021
 ms.author: alkohli
 ms.openlocfilehash: 6683e39cfa3601b1ae1fbbe02e69e4dc0a54e8e7
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103565276"
 ---
 # <a name="gpu-sharing-on-your-azure-stack-edge-pro-gpu-device"></a>Совместное использование GPU на устройстве с Azure Stack ребра Pro GPU
@@ -63,7 +63,7 @@ ms.locfileid: "103565276"
 Чтобы просмотреть сведения об использовании GPU, сначала подключитесь к интерфейсу PowerShell устройства. Выполните `Get-HcsNvidiaSmi` команду и просмотрите выходные данные NVIDIA SMI. Вы также можете просмотреть изменения в использовании GPU, включив MPS, а затем развернув несколько рабочих нагрузок на устройстве. Дополнительные сведения см. в разделе [Включение многопроцессной службы](azure-stack-edge-gpu-connect-powershell-interface.md#enable-multi-process-service-mps).
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Совместное использование GPU для развертываний Kubernetes на Azure Stack крае Pro](azure-stack-edge-gpu-deploy-kubernetes-gpu-sharing.md).
 - [Совместное использование GPU для развертываний IOT на Azure Stack крае Pro](azure-stack-edge-gpu-deploy-iot-edge-gpu-sharing.md).

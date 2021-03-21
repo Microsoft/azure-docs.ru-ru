@@ -9,12 +9,12 @@ ms.subservice: spot
 ms.date: 02/26/2021
 ms.reviewer: cynthn
 ms.custom: devx-track-azurecli, devx-track-azurepowershell
-ms.openlocfilehash: a176a30a1e21ec03c2da329785ab895ec67a4faf
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: ec73d1363fb18d1d6c46589fe69879a8f6df1dab
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104596422"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104722571"
 ---
 # <a name="azure-spot-virtual-machines-for-virtual-machine-scale-sets"></a>Виртуальные машины Azure для масштабируемых наборов виртуальных машин 
 
@@ -44,8 +44,8 @@ ms.locfileid: "104596422"
 В настоящее время поддерживаются следующие [типы предложений](https://azure.microsoft.com/support/legal/offer-details/) :
 
 -   Соглашение Enterprise
--   Код предложения с оплатой по мере использования 003P
--   Спонсорские
+-   Код предложения с оплатой по мере использования (003P)
+-   Спонсорские (0036P и 0136P)
 - Для поставщика облачных служб (CSP) обратитесь к [центру партнеров](/partner-center/azure-plan-get-started) или непосредственно обратитесь к своему партнеру.
 
 ## <a name="eviction-policy"></a>Политика вытеснения
@@ -168,7 +168,7 @@ $vmssConfig = New-AzVmssConfig `
     -SkuName "Standard_DS2" `
     -UpgradePolicyMode Automatic `
     -Priority "Spot" `
-    --max-price -1
+    -max-price -1
 ```
 
 ## <a name="resource-manager-templates"></a>Шаблоны Resource Manager
@@ -268,6 +268,6 @@ POST https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/
 
 **Ответ.** Разместите вопрос с тегом `azure-spot` в разделе [вопросов и ответов](/answers/topics/azure-spot.html). 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Ознакомьтесь со сведениями о ценах на [странице для определения тарифа масштабируемых наборов виртуальных машин](https://azure.microsoft.com/pricing/details/virtual-machine-scale-sets/linux/).

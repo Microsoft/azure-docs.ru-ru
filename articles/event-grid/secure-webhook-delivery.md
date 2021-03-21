@@ -4,10 +4,10 @@ description: Описание доставки событий в конечны�
 ms.topic: how-to
 ms.date: 02/03/2021
 ms.openlocfilehash: be38edfb4edfee5b3a3b42d7b1c5a44c9d72ceef
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102035451"
 ---
 # <a name="publish-events-to-azure-active-directory-protected-endpoints"></a>Публикация событий в конечных точках, защищенных Azure Active Directory
