@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.date: 12/23/2020
 ms.author: azfuncdf
 ms.openlocfilehash: c4d10bab06428295bbc8c5319bd47787d7b1fb34
-ms.sourcegitcommit: 799f0f187f96b45ae561923d002abad40e1eebd6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97763376"
 ---
 # <a name="durable-functions-versions-overview"></a>Обзор версий Устойчивые функции
 
-*Устойчивые функции* являются расширением [Функций Azure](../functions-overview.md) и [веб-заданий Azure](../../app-service/webjobs-create.md), которое позволяет писать функции с отслеживанием состояния в безсерверной среде. Расширение управляет состоянием, создает контрольные точки и перезагружается. Если вы еще не знакомы с Устойчивые функции, см. [обзорную документацию](durable-functions-overview.md).
+*Устойчивые функции* являются расширением [Функций Azure](../functions-overview.md) и [веб-заданий Azure](../../app-service/webjobs-create.md), которое позволяет писать функции с отслеживанием состояния в безсерверной среде. Расширение автоматически управляет состоянием, создает контрольные точки и перезагружается. Если вы еще не знакомы с Устойчивые функции, см. [обзорную документацию](durable-functions-overview.md).
 
 ## <a name="new-features-in-2x"></a>Новые возможности в 2. x
 
@@ -99,7 +99,7 @@ ms.locfileid: "97763376"
 
 | 1.x | 2.x |
 |----------|----------|
-| `DurableOrchestrationClientBase` | `IDurableOrchestrationClient` либо `IDurableClient` |
+| `DurableOrchestrationClientBase` | `IDurableOrchestrationClient` или `IDurableClient` |
 | `DurableOrchestrationContext` или `DurableOrchestrationContextBase` | `IDurableOrchestrationContext` |
 | `DurableActivityContext` или `DurableActivityContextBase` | `IDurableActivityContext` |
 | `OrchestrationClientAttribute` | `DurableClientAttribute` |

@@ -12,10 +12,10 @@ ms.date: 10/12/2020
 ms.author: kenwith
 ms.reviewer: arvinh,luleon
 ms.openlocfilehash: f656f55b0c74103053f110b8c66645d353db9fbf
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102561574"
 ---
 # <a name="understand-how-provisioning-integrates-with-azure-monitor-logs"></a>Сведения о том, как подготовка интегрируется с журналами Azure Monitor
@@ -115,7 +115,7 @@ Azure Monitor позволяет настроить пользовательск
 
 Мы используем подход на основе открытого кода и сообщества для подготовки к работе запросов и панелей мониторинга приложений. Если вы создали запрос, оповещение или книгу, которые могут оказаться полезными для других пользователей, обязательно опубликуйте ее в [репозитории GitHub азуремониторкоммунити](https://github.com/microsoft/AzureMonitorCommunity). Затем прокрутить сообщение электронной почты со ссылкой. Мы будем просматривать и публиковать его в службе, чтобы другие могли воспользоваться преимуществами. Свяжитесь с нами по адресу provisioningfeedback@microsoft.com.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Log Analytics](../reports-monitoring/howto-analyze-activity-logs-log-analytics.md)
 - [Начало работы с запросами журналов Azure Monitor](../../azure-monitor/logs/get-started-queries.md)

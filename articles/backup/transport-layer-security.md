@@ -4,10 +4,10 @@ description: Узнайте, как разрешить Azure Backup исполь
 ms.topic: conceptual
 ms.date: 11/01/2020
 ms.openlocfilehash: ba9c9d91f562f54695a0739908c8a409d14d5852
-ms.sourcegitcommit: 4295037553d1e407edeb719a3699f0567ebf4293
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96327123"
 ---
 # <a name="transport-layer-security-in-azure-backup"></a>Безопасность транспортного уровня в Azure Backup
@@ -20,7 +20,7 @@ TLS — это протокол шифрования, который обесп�
 
 |Операционная система  |статья базы знаний |
 |---------|---------|
-|Windows Server 2008 с пакетом обновления 2 (SP2)   |   <https://support.microsoft.com/help/4019276>      |
+|Windows Server 2008 с пакетом обновления 2 (SP2)   |   <https://support.microsoft.com/help/4019276>      |
 |Windows Server 2008 R2, Windows 7, Windows Server 2012   | <https://support.microsoft.com/help/3140245>         |
 
 >[!NOTE]
@@ -43,9 +43,9 @@ TLS — это протокол шифрования, который обесп�
 >[!NOTE]
 >Значения, показанные по умолчанию в Windows Server 2012 R2 и более поздних версиях. Для этих версий Windows, если разделы реестра отсутствуют, их не нужно создавать.
 
-### <a name="configuring-net-framework"></a>Настройка .NET Framework
+### <a name="configuring-net-framework"></a>Настройка платформа .NET Framework
 
-Следующие разделы реестра настраивают .NET Framework для поддержки надежного шифрования. Дополнительные сведения о [настройке .NET Framework](/dotnet/framework/network-programming/tls#configuring-schannel-protocols-in-the-windows-registry)можно узнать здесь.
+Следующие разделы реестра настраивают платформа .NET Framework для поддержки надежного шифрования. Дополнительные сведения о [настройке платформа .NET Framework](/dotnet/framework/network-programming/tls#configuring-schannel-protocols-in-the-windows-registry)можно узнать здесь.
 
 ```reg
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]

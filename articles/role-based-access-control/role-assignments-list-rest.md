@@ -12,10 +12,10 @@ ms.topic: how-to
 ms.date: 02/27/2021
 ms.author: rolyon
 ms.openlocfilehash: 9780902a1c5f4a711e1abffa6b508c28efe269ac
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101735886"
 ---
 # <a name="list-azure-role-assignments-using-the-rest-api"></a>Вывод списка назначений ролей Azure с помощью REST API
@@ -40,7 +40,7 @@ ms.locfileid: "101735886"
 1. Внутри URI замените *{scope}* областью, для которой требуется вывести список назначений ролей.
 
     > [!div class="mx-tableFixed"]
-    > | Область | Тип |
+    > | Область | Type |
     > | --- | --- |
     > | `providers/Microsoft.Management/managementGroups/{groupId1}` | группа управления; |
     > | `subscriptions/{subscriptionId1}` | Подписка |

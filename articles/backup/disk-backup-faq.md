@@ -4,10 +4,10 @@ description: Получите ответы на часто задаваемые 
 ms.topic: conceptual
 ms.date: 01/07/2021
 ms.openlocfilehash: 3ef18a7d178075194e24889477768583f05f0cdd
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98734568"
 ---
 # <a name="frequently-asked-questions-about-azure-disk-backup-in-preview"></a>Часто задаваемые вопросы о резервном копировании дисков Azure (Предварительная версия)
@@ -79,7 +79,7 @@ Azure Backup использует [добавочные моментальные
 
 Нет, моментальные снимки на момент времени для нескольких дисков, подключенных к виртуальной машине, не поддерживаются. Дополнительные сведения см. в разделе [Настройка резервного копирования](backup-managed-disks.md#configure-backup) и дополнительные сведения об ограничениях см. в таблице [поддержки](disk-backup-support-matrix.md).
 
-### <a name="what-are-my-options-to-back-up-disks-across-multiple-subscriptions"></a>Каковы возможности резервного копирования дисков в нескольких подписках?
+### <a name="what-are-my-options-to-back-up-disks-across-multiple-subscriptions"></a>Какие существуют варианты резервного копирования дисков в несколько подписок?
 
 В настоящее время использование портал Azure для настройки резервного копирования дисков ограничено максимум 20 дисками из одной подписки.
 
@@ -130,6 +130,6 @@ Microsoft. Storage, storageAccounts/Delete
 >[!NOTE]
 >Разрешения на эти роли могут измениться в будущем в зависимости от компонентов, добавляемых службой Azure Backup.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Таблица поддержки резервного копирования дисков Azure](disk-backup-support-matrix.md)

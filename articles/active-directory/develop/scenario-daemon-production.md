@@ -12,12 +12,12 @@ ms.workload: identity
 ms.date: 10/30/2019
 ms.author: jmprieur
 ms.custom: aaddev
-ms.openlocfilehash: 8dc9bff86a07f3d4a0ec6fd224de6d5633165a6d
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: d903f04055d1607ee782bd502d99a8fd9cde87ca
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99582847"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104578453"
 ---
 # <a name="daemon-app-that-calls-web-apis---move-to-production"></a>Приложение управляющей программы, вызывающее веб-API — переместить в рабочую среду
 
@@ -54,18 +54,43 @@ ms.locfileid: "99582847"
 
     ![Топология](media/scenario-daemon-app/damon-app-sample-web.svg)
 
----
+# <a name="java"></a>[Java](#tab/java)
 
-## <a name="next-steps"></a>Следующие шаги
+Попробуйте [получить маркер и вызвать Microsoft Graph API из консольного приложения Java, используя удостоверение приложения](quickstart-v2-java-daemon.md).
 
-Вот несколько ссылок, которые помогут вам получить дополнительные сведения:
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+- Дополнительные сведения см. в разделе:
+  - Общие сведения о [конфигурации](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-node/docs/configuration.md)
+  - Создание экземпляра [конфидентиалклиентаппликатион](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-node/docs/initialize-confidential-client-application.md)
+  - [FAQ](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-node/docs/faq.md)
+- Другие примеры и учебники:
+  - [Пример управляющей программы консоли узла MSAL](https://github.com/Azure-Samples/ms-identity-javascript-nodejs-console)
 
 # <a name="python"></a>[Python](#tab/python)
 
-Попробуйте [получить маркер и вызвать Microsoft Graph API из консольного приложения Python, используя удостоверение приложения](./quickstart-v2-python-daemon.md).
+Попробуйте [получить маркер и вызвать Microsoft Graph API из консольного приложения Python, используя удостоверение приложения](quickstart-v2-python-daemon.md).
+
+---
+
+## <a name="next-steps"></a>Дальнейшие действия
+
+Вот несколько ссылок, которые помогут вам получить дополнительные сведения:
+
+# <a name="net"></a>[.NET](#tab/dotnet)
+
+Попробуйте [получить маркер и вызвать Microsoft Graph API из консольного приложения .NET Core, используя удостоверение приложения](quickstart-v2-netcore-daemon.md).
 
 # <a name="java"></a>[Java](#tab/java)
 
-Попробуйте [получить маркер и вызвать Microsoft Graph API из консольного приложения Java, используя удостоверение приложения](./quickstart-v2-java-daemon.md).
+Попробуйте [получить маркер и вызвать Microsoft Graph API из консольного приложения Java, используя удостоверение приложения](quickstart-v2-java-daemon.md).
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+Попробуйте [получить маркер и вызвать Microsoft Graph API из Node.js консольного приложения с помощью удостоверения приложения](quickstart-v2-nodejs-console.md).
+
+# <a name="python"></a>[Python](#tab/python)
+
+Попробуйте [получить маркер и вызвать Microsoft Graph API из консольного приложения Python, используя удостоверение приложения](quickstart-v2-python-daemon.md).
 
 ---

@@ -14,10 +14,10 @@ ms.custom: it-pro
 ms.reviewer: krbain
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bf2d0d3335468147575eb53a99940866baa18375
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98222527"
 ---
 # <a name="restrict-guest-access-permissions-preview-in-azure-active-directory"></a>Ограничение разрешений гостевого доступа (Предварительная версия) в Azure Active Directory
@@ -47,7 +47,7 @@ Azure Active Directory (Azure AD) позволяет ограничить воз
 
     ![Страница параметров внешней совместной работы Azure AD](./media/users-restrict-guest-permissions/external-collaboration-settings.png)
 
-1. Выберите **Сохранить**. Изменения могут вступить в силу для гостевых пользователей до 15 минут.
+1. Щелкните **Сохранить**. Изменения могут вступить в силу для гостевых пользователей до 15 минут.
 
 ## <a name="update-with-the-microsoft-graph-api"></a>Обновление с помощью Microsoft Graph API
 
@@ -151,7 +151,7 @@ PS C:\WINDOWS\system32> Set-AzureADMSAuthorizationPolicy -GuestUserRoleId '2af84
 - Project
 - Yammer
 
-## <a name="frequently-asked-questions-faq"></a>Часто задаваемые вопросы
+## <a name="frequently-asked-questions-faq"></a>Вопросы и ответы
 
 Вопрос | Ответ
 -------- | ------

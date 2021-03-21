@@ -9,10 +9,10 @@ ms.service: iot-central
 services: iot-central
 manager: philmea
 ms.openlocfilehash: c2d5310d1a664aa2e22d4241d8066e41d9c82bd1
-ms.sourcegitcommit: ab829133ee7f024f9364cd731e9b14edbe96b496
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97796726"
 ---
 # <a name="azure-iot-central-architecture"></a>Архитектура Azure IoT Central
@@ -117,7 +117,7 @@ Azure IoT Central хранит данные приложения в облаке
 
 Azure IoT Central использует хранилище временных рядов для данных измерений, отправляемых с устройств. Данные временных рядов, полученные с устройств, используются в службе аналитики.
 
-## <a name="analytics"></a>Analytics
+## <a name="analytics"></a>Аналитика
 
 Служба аналитики отвечает за создание пользовательских передаваемых данных, отображаемых в приложении. Оператор может [настраивать аналитику](howto-create-analytics.md), отображаемую в приложении. Служба аналитики создана на основе службы [Аналитика временных рядов Azure](https://azure.microsoft.com/services/time-series-insights/) и обрабатывает данные измерений, отправляемые с устройств.
 

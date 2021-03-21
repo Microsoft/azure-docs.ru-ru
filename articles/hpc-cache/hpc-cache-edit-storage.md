@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 03/10/2021
 ms.author: v-erkel
 ms.openlocfilehash: 78010ef2d93b23a12fc7f3e988a536b4993b4dd4
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103471875"
 ---
 # <a name="edit-storage-targets"></a>Изменение целевых расположений хранилищ
@@ -133,7 +133,7 @@ $ az hpc-cache storage-target remove --resource-group cache-rg --cache-name doc-
 * ``nfs-export`` — Экспорт системы хранения, связываемый с путем, ориентированным на клиента
 * ``target-path`` (необязательно) — подкаталог экспорта (при необходимости).
 
-Пример: ``--junction namespace-path="/nas-1" nfs-export="/datadisk1" target-path="/test"``
+Например, ``--junction namespace-path="/nas-1" nfs-export="/datadisk1" target-path="/test"``.
 
 Необходимо указать все три значения для каждого пути в ``--junction`` операторе. Используйте существующие значения для любых значений, которые не нужно изменять.
 
@@ -171,7 +171,7 @@ az hpc-cache nfs-storage-target update --cache-name mycache \
 
 Команда Update почти идентична команде, используемой для добавления целевого объекта хранилища NFS. Дополнительные сведения и примеры см. в статье [Создание целевого объекта хранилища NFS](hpc-cache-add-storage.md#create-an-nfs-storage-target) .
 
-Чтобы изменить модель использования, обновите ``--nfs3-usage-model`` параметр. Пример: ``--nfs3-usage-model WRITE_WORKLOAD_15``
+Чтобы изменить модель использования, обновите ``--nfs3-usage-model`` параметр. Например, ``--nfs3-usage-model WRITE_WORKLOAD_15``.
 
 Также требуются значения имени кэша, имени целевого объекта хранилища и группы ресурсов.
 
@@ -212,7 +212,7 @@ az hpc-cache nfs-storage-target update --cache-name mycache \
 Конфигурация для моделей использования ADLS-NFS идентична выбору модели использования NFS. Ознакомьтесь с инструкциями на портале в разделе [изменение модели использования](#change-the-usage-model) в NFS выше. Дополнительные инструменты для обновления целевых объектов хранилища ADLS-NFS находятся в разработке.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Дополнительные сведения об этих параметрах см. в статье [Добавление целевых объектов хранилища](hpc-cache-add-storage.md) .
 * Дополнительные советы по использованию виртуальных путей см. [в статье Планирование обобщенного пространства имен](hpc-cache-namespace.md) .

@@ -12,13 +12,13 @@ ms.date: 10/12/2020
 ms.author: gasinh
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 84e177f1ce55d803f54bb2553078441557e5c191
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98730893"
 ---
-# <a name="tutorial-for-azure-active-directory-single-sign-on-integration-with-f5-big-ip-for-password-less-vpn"></a>Руководство по Azure Active Directory интеграции единого входа с помощью F5 BIG-IP для VPN без пароля
+# <a name="tutorial-for-azure-active-directory-single-sign-on-integration-with-f5-big-ip-for-password-less-vpn"></a>Руководство по интеграции единого входа Azure Active Directory с F5 BIG-IP для обеспечения VPN-подключения без использования пароля
 
 В этом руководстве описано, как интегрировать Bigip (SSL-VPN Azure Active Directory) на основе больших IP-адресов для безопасного гибридного доступа (SHA).
 
@@ -305,7 +305,7 @@ ms.locfileid: "98730893"
 
 - [Пять шагов по полной интеграции приложений с Azure AD](../fundamentals/five-steps-to-full-application-integration-with-azure-ad.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Откройте браузер на удаленном клиенте Windows и перейдите по URL-адресу **службы VPN с большим IP**-адресом. После проверки подлинности в Azure AD вы увидите портал "большой IP-адрес" и средство запуска VPN.
 

@@ -10,10 +10,10 @@ services: azure-maps
 manager: cpendle
 zone_pivot_groups: azure-maps-android
 ms.openlocfilehash: f3c175f30c5c0e6206f4fee274e0f3f000e55a74
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102100174"
 ---
 # <a name="add-a-bubble-layer-to-a-map-android-sdk"></a>Добавление пузырькового слоя на карту (пакет SDK для Android)
@@ -173,7 +173,7 @@ map.layers.add(
 
 ![Сопоставьте с точкой, отображаемой с помощью пузырькового слоя, и текстовой метки с уровнем символов](media/map-add-bubble-layer-android/android-bubble-symbol-layer.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные примеры кода для добавления в карты см. в следующих статьях:
 

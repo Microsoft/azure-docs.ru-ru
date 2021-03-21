@@ -9,17 +9,17 @@ ms.date: 09/08/2020
 ms.custom: devx-track-java, devx-track-azurecli
 zone_pivot_groups: programming-languages-spring-cloud
 ms.openlocfilehash: 8400fcacbfa4c76aceb079b788255e3d3b83ce33
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102210416"
 ---
 # <a name="azure-spring-cloud-cicd-with-github-actions"></a>Azure весны CI/CD в облаке с действиями GitHub
 
 Действия GitHub поддерживают автоматизированный рабочий процесс жизненного цикла разработки программного обеспечения. С помощью действий GitHub для Azure "пружинное облако" вы можете создавать рабочие процессы в репозитории для создания, тестирования, упаковки, выпуска и развертывания в Azure. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Для этого примера требуется [Azure CLI](/cli/azure/install-azure-cli).
 
 ::: zone pivot="programming-language-csharp"

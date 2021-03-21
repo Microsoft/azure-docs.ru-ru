@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.custom: subject-moving-resources
 ms.service: digital-twins
 ms.openlocfilehash: e268cca87479625af023b5970bb27c56721f6d39
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102049854"
 ---
 # <a name="move-an-azure-digital-twins-instance-to-a-different-azure-region"></a>Перемещение экземпляра Azure Digital двойников в другой регион Azure
@@ -47,7 +47,7 @@ ms.locfileid: "102049854"
     - Служба "Сетка событий Azure", концентраторы событий Azure или служебная шина Azure
     - Функции Azure
     - Azure Logic Apps
-    - Azure Time Series Insights
+    - Аналитика временных рядов Azure
     - Azure Maps
     - Служба подготовки устройств к добавлению в Центр Интернета вещей Azure
 * Какие другие *персональные или корпоративные приложения* имеют подключение к моему экземпляру?
@@ -91,7 +91,7 @@ ms.locfileid: "102049854"
 
 Теперь у вас должен быть пример приложения обозревателя Digital двойников Explorer, работающего в браузере на компьютере. Пример должен быть подключен к исходному экземпляру Azure Digital двойников.
 
-:::image type="content" source="media/how-to-move-regions/explorer-blank.png" alt-text="Окно браузера, в котором отображается приложение, выполняемое на localhost: 3000. Приложение называется обозревателем цифровых двойников Azure и содержит поля для обозревателя запросов, представления модели, представления графа и обозревателя свойств. Данные на экране пока отсутствуют." lightbox="media/how-to-move-regions/explorer-blank.png":::
+:::image type="content" source="media/how-to-move-regions/explorer-blank.png" alt-text="Окно браузера, в котором отображается приложение, запущенное на localhost:3000. Приложение с именем Azure Digital Twins Explorer содержит поля Query Explorer (Обозреватель запросов), Model View (Представление модели), Graph View (Представление графа) и Property Explorer (Обозреватель свойств). Данных на экране пока нет." lightbox="media/how-to-move-regions/explorer-blank.png":::
 
 Чтобы проверить подключение, нажмите кнопку **выполнить запрос** , чтобы запустить запрос по умолчанию, отображающий все двойников и связи в графе в поле **Обозреватель графов** .
 
@@ -157,7 +157,7 @@ ms.locfileid: "102049854"
 
 В поле выбора файла перейдите к загруженному графу. Выберите файл Graph **. JSON** и нажмите кнопку **Открыть**.
 
-Через несколько секунд Обозреватель Digital двойников Explorer откроет представление **импорта** , в котором отображается Предварительная версия диаграммы для загрузки.
+Через несколько секунд в Azure Digital Twins Explorer откроется представление **Import** (Импорт) с предварительным просмотром загружаемого графа.
 
 Чтобы подтвердить отправку графа, щелкните значок **Сохранить** в правом верхнем углу поля **Представление графа**.
 

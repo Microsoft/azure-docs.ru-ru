@@ -9,10 +9,10 @@ ms.date: 09/22/2020
 ms.author: scottnap
 Customer intent: As someone with a networking background, I want to learn about Network Virtual Appliances in the Virtual WAN hub.
 ms.openlocfilehash: 365ed60e73be9bb2098022fa767f4ae54b93c37c
-ms.sourcegitcommit: e46f9981626751f129926a2dae327a729228216e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98028086"
 ---
 # <a name="about-network-virtual-appliance-in-an-azure-virtual-wan-hub-preview"></a>Сведения о сетевом виртуальном устройстве в виртуальном концентраторе глобальной сети Azure (Предварительная версия)
@@ -79,13 +79,13 @@ NVA в виртуальном концентраторе доступна для
 |Геополитический регион | Регионы Azure|
 |---|---|
 | Северная Америка| Западная часть США, Юго-Центральный регион США, восток США 2   |
-| Южная Америка | Южная Бразилия |
+| Южная Америка | Brazil South |
 | Европа | Западная Европа, южная часть Соединенного Королевства|
 |  Ближний Восток | Северная часть ОАЭ; |
-| Азия | Восточная Япония |
+| Азия | Japan East |
 | Австралия | Восточная Австралия |
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 ### <a name="i-am-a-network-appliance-partner-and-want-to-get-our-nva-in-the-hub--can-i-join-this-partner-program"></a>Я являюсь партнером по сетевым устройствам и хочу получить наши NVA в центре.  Можно ли присоединиться к этой партнерской программе?
 

@@ -18,10 +18,10 @@ ms.author: markvi
 ms.reviewer: dhanyahk
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4ca618dc234ff4383083ff5eb21299fb1e3e7128
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96348744"
 ---
 # <a name="prerequisites-to-access-the-azure-active-directory-reporting-api"></a>Предварительные требования для доступа к API отчетов Azure Active Directory
@@ -81,7 +81,7 @@ API отчетов использует [OAuth](../../api-management/api-managem
 
     ![На снимке экрана показана страница Регистрация приложения, на которой можно ввести значения на этом шаге.](./media/howto-configure-prerequisites-for-reporting-api/04.png)
 
-    a. В текстовом поле **Имя** введите `Reporting API application`.
+    а. В текстовом поле **Имя** введите `Reporting API application`.
 
     b. Для **поддерживаемого типа учетных записей** выберите **учетные записи только в этом Организации**.
 
@@ -183,7 +183,7 @@ API отчетов использует [OAuth](../../api-management/api-managem
 
 5. На странице **Добавление секрета клиента** добавьте:
 
-    a. В текстовом поле **Описание** введите `Reporting API`.
+    а. В текстовом поле **Описание** введите `Reporting API`.
 
     b. Для параметра **Срок действия истекает** выберите значение **Через 2 года**.
 

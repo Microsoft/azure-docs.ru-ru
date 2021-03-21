@@ -7,17 +7,17 @@ ms.service: azure-app-configuration
 ms.topic: reference
 ms.date: 08/17/2020
 ms.openlocfilehash: d5b5470b30848fd31be63f25c85c23f88cdaf0c6
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101732230"
 ---
 # <a name="hmac-authentication---rest-api-reference"></a>Проверка подлинности HMAC — Справочник по REST API
 
 Для проверки подлинности HTTP-запросов можно использовать схему проверки подлинности HMAC-SHA256. (HMAC относится к коду проверки подлинности сообщений на основе хэша.) Эти запросы должны передаваться по протоколу TLS.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - **Записям** - \<Access Key ID\>
 - **Secret** — значение ключа доступа для декодирования Base64. ``base64_decode(<Access Key Value>)``
@@ -545,7 +545,7 @@ Invoke-RestMethod -Uri $uri -Method $method -Headers $headers -Body $body
 
 *Предварительные требования*:
 
-| Предварительное требование | Get-Help | Протестированные версии |
+| Предварительное требование | Команда | Протестированные версии |
 | ------------ | ------- | --------------- |
 | [Bash](https://www.gnu.org/software/bash/) | bash | 3.5.27, 4.4.23 |
 | [кореутилс](https://www.gnu.org/software/coreutils/) | tr | 8,28 |

@@ -11,10 +11,10 @@ ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
 ms.openlocfilehash: 4ecb5fef9c9b14bde72de29a45e29d7e16131bd1
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96001003"
 ---
 # <a name="tasks-for-an-individual-contributor-in-the-team-data-science-process"></a>Задачи отдельного участника в командном процессе обработки и анализа данных
@@ -32,7 +32,7 @@ ms.locfileid: "96001003"
 > [!NOTE] 
 > В этой статье для настройки среды TDSP используется Azure Repos и виртуальная машина для обработки и анализа данных (DSVM), поскольку в этом разделе описывается реализация TDSP в корпорации Майкрософт. Если ваша группа использует другие платформы размещения кода или разработки, отдельные задачи участника одинаковы, но способ их выполнения может отличаться.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В этом учебнике предполагается, что [менеджер группы](group-manager-tasks.md), [руководитель группы](team-lead-tasks.md)и [руководитель проекта](project-lead-tasks.md)настроили следующие ресурсы и разрешения:
 
@@ -96,7 +96,7 @@ ms.locfileid: "96001003"
 
 Если ваша команда или проект содержит общие ресурсы в хранилище файлов Azure, подключите хранилище файлов к локальному компьютеру или DSVM. Следуйте инструкциям в статье [Подключение хранилища файлов Azure на локальном компьютере или DSVM](team-lead-tasks.md#mount-azure-file-storage-on-your-local-machine-or-dsvm).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Ниже приведены ссылки на подробные описания других ролей и задач, определенных в процессе обработки и анализа данных группы.
 

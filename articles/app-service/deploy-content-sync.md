@@ -7,10 +7,10 @@ ms.date: 02/25/2021
 ms.reviewer: dariac
 ms.custom: seodec18
 ms.openlocfilehash: bfee320c7a8b4cbe8439c376350d1234b393bfb5
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102051245"
 ---
 # <a name="sync-content-from-a-cloud-folder-to-azure-app-service"></a>Синхронизация содержимого из папки в облаке со службами приложений Azure

@@ -7,10 +7,10 @@ ms.date: 12/21/2020
 ms.topic: conceptual
 ms.service: cache
 ms.openlocfilehash: 0a0809076367356739dfeadcf8dd63f88866a987
-ms.sourcegitcommit: d1e56036f3ecb79bfbdb2d6a84e6932ee6a0830e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99056309"
 ---
 # <a name="azure-cache-for-redis-event-grid-overview"></a>Общие сведения о сетке событий кэша Azure для Redis 
@@ -23,9 +23,9 @@ ms.locfileid: "99056309"
 
 |Если вы хотите использовать это средство:    |Ознакомьтесь с этим кратким руководством: |
 |--|-|
-|Портал Azure    |[Краткое руководство. Маршрутизация кэша Azure для событий Redis в веб-конечную точку с помощью портал Azure](cache-event-grid-quickstart-portal.md)|
-|PowerShell    |[Краткое руководство. Маршрутизация кэша Azure для событий Redis в веб-конечную точку с помощью PowerShell](cache-event-grid-quickstart-powershell.md)|
-|Azure CLI    |[Краткое руководство. Маршрутизация кэша Azure для событий Redis в веб-конечную точку с Azure CLI](cache-event-grid-quickstart-cli.md)|
+|Портал Azure    |[Краткое руководство. Маршрутизация событий Кэша Azure для Redis в конечную веб-точку с помощью портала Azure](cache-event-grid-quickstart-portal.md)|
+|PowerShell    |[Краткое руководство. Маршрутизация событий Кэша Azure для Redis в конечную веб-точку с помощью PowerShell](cache-event-grid-quickstart-powershell.md)|
+|Azure CLI    |[Краткое руководство. Маршрутизация событий Кэша Azure для Redis в конечную веб-точку с помощью Azure CLI](cache-event-grid-quickstart-cli.md)|
 
 ## <a name="the-event-model"></a>Модель событий
 

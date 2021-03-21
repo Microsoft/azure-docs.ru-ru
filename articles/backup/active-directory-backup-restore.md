@@ -4,10 +4,10 @@ description: Узнайте, как выполнять резервное коп
 ms.topic: conceptual
 ms.date: 07/08/2020
 ms.openlocfilehash: 8db2dab605e90e4748b11a632d6651c23d631b6c
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98733559"
 ---
 # <a name="back-up-and-restore-active-directory-domain-controllers"></a>Резервное копирование и восстановление Active Directory контроллеров домена
@@ -78,6 +78,6 @@ Active Directory данные можно восстановить в одном 
 
 Чтобы восстановить локальный контроллер домена, следуйте указаниям по восстановлению состояния системы в Windows Server, используя рекомендации по специальным рекомендациям [по восстановлению состояния системы на контроллере домена](backup-azure-restore-system-state.md#special-considerations-for-system-state-recovery-on-a-domain-controller).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Таблица поддержки для Azure Backup](backup-support-matrix.md)

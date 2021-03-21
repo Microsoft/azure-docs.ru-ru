@@ -6,17 +6,17 @@ ms.topic: article
 ms.date: 01/13/2021
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 57192ab2ee1624cb18de832ac91c95290da727df
-ms.sourcegitcommit: fc23b4c625f0b26d14a5a6433e8b7b6fb42d868b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98539868"
 ---
 # <a name="dynamically-provision-service-bus-namespaces-and-entities"></a>Динамическая инициализация пространств имен и сущностей служебной шины 
 Библиотеки управления служебной шины Azure могут динамически подготавливать пространства имен и сущности служебной шины. Это дает возможность реализовывать сложные развертывания и сценарии обмена сообщениями и позволяет программно определять, какие сущности следует подготовить. В настоящее время эти библиотеки доступны для .NET.
 
 ## <a name="overview"></a>Обзор
-Для создания сущностей служебной шины и управления ими доступны три библиотеки управления. К ним относятся:
+Для создания сущностей служебной шины и управления ими доступны три библиотеки управления. Их можно сформулировать следующим образом.
 
 - [Azure. Messaging. ServiceBus. Administration](#azuremessagingservicebusadministration)
 - [Microsoft. Azure. ServiceBus. Management](#microsoftazureservicebusmanagement)
@@ -156,7 +156,7 @@ namespace SBusManagementClient
 ## <a name="microsoftazuremanagementservicebus"></a>Microsoft.Azure.Management.ServiceBus. 
 Эта библиотека является частью пакета SDK для плоскости управления на основе Azure Resource Manager. 
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Чтобы приступить к работе с этой библиотекой, необходимо пройти проверку подлинности с помощью службы Azure Active Directory (Azure AD). Azure AD требует выполнять аутентификацию в качестве субъекта-службы, который предоставляет доступ к вашим ресурсам Azure. Сведения о создании субъекта-службы см. в одной из приведенных ниже статей:  
 

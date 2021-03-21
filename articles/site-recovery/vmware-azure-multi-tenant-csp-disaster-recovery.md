@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/27/2018
 ms.author: mayg
 ms.openlocfilehash: fb2a8a7bb14758ab21eb2183a119f456b53c8562
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97654955"
 ---
 # <a name="set-up-vmware-disaster-recovery-in-a-multi-tenancy-environment-with-the-cloud-solution-provider-csp-program"></a>Настройка аварийного восстановления VMware в мультитенантном окружении с использованием программы поставщика облачных решений (CSP)
@@ -22,7 +22,7 @@ ms.locfileid: "97654955"
 
 В этой статье описано, как вы в качестве партнера можете создавать подписки клиентов и управлять ими через CSP в мультитенантном сценарии репликации VMware.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для настройки репликации VMware необходимо сделать следующее:
 
@@ -80,7 +80,7 @@ ms.locfileid: "97654955"
 
     1. Щелкните **добавить назначение ролей** , чтобы добавить пользователя с соответствующим уровнем доступа. Имена пользователей, созданных на портале CSP, отображаются на вкладке "Назначения ролей".
 
-        ![Добавление пользователя](./media/vmware-azure-multi-tenant-csp-disaster-recovery/add-user-subscription.png)
+        ![Добавление пользователей](./media/vmware-azure-multi-tenant-csp-disaster-recovery/add-user-subscription.png)
 
 - Для большинства операций управления подойдет роль *Участник*. Пользователи с этим уровнем доступа могут выполнять практически все действия, кроме изменения уровня доступа (для этого требуется уровень доступа *Владелец*).
 - В Site Recovery также предусмотрены три [предварительно определенные роли пользователей](site-recovery-role-based-linked-access-control.md). Это позволяет при необходимости дополнительно ограничивать уровни доступа.

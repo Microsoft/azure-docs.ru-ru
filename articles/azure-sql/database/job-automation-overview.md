@@ -14,10 +14,10 @@ ms.author: wiassaf
 ms.reviewer: ''
 ms.date: 2/1/2021
 ms.openlocfilehash: 1f4bd28d2b95aeebe07fcad84d757327622d51f0
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101690436"
 ---
 # <a name="automate-management-tasks-using-elastic-jobs-preview"></a>Автоматизация задач управления с помощью Заданий обработки эластичных баз данных (предварительная версия)

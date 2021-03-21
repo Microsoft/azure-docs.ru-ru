@@ -1,5 +1,5 @@
 ---
-title: Примеры обработчика данных телеметрии — Application Insights Azure Monitor для Java
+title: Примеры обработчиков данных телеметрии — Application Insights для Java в службе Azure Monitor
 description: Изучите примеры, демонстрирующие обработчики телеметрии в Azure Monitor Application Insights для Java.
 ms.topic: conceptual
 ms.date: 12/29/2020
@@ -7,13 +7,13 @@ author: kryalama
 ms.custom: devx-track-java
 ms.author: kryalama
 ms.openlocfilehash: 0978bd669855d264ed6dfa5eeddc45ad499aa2a5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101734593"
 ---
-# <a name="telemetry-processor-examples---azure-monitor-application-insights-for-java"></a>Примеры обработчика данных телеметрии — Application Insights Azure Monitor для Java
+# <a name="telemetry-processor-examples---azure-monitor-application-insights-for-java"></a>Примеры обработчиков данных телеметрии — Application Insights для Java в службе Azure Monitor
 
 В этой статье приведены примеры обработчиков данных телеметрии в Application Insights для Java. Вы найдете образцы для конфигураций включения и исключения. Вы также найдете примеры для обработчиков атрибутов и диапазонов процессоров.
 ## <a name="include-and-exclude-samples"></a>Примеры включения и исключения
@@ -281,7 +281,7 @@ ms.locfileid: "101734593"
 }
 ```
 
-### <a name="delete"></a>DELETE
+### <a name="delete"></a>Удалить
 
 В следующем примере показано, как удалить атрибут, имеющий ключ `credit_card` .
 

@@ -1,5 +1,5 @@
 ---
-title: Включение работоспособности гостевых систем VM Insights (Предварительная версия)
+title: Включение VM insights guest health (предварительная версия)
 description: Описание включения работоспособности гостевых систем VM Insights в подписке и подключения виртуальных машин.
 ms.topic: conceptual
 author: bwren
@@ -7,13 +7,13 @@ ms.author: bwren
 ms.date: 11/16/2020
 ms.custom: references_regions
 ms.openlocfilehash: 5d4ff622f69445880c0de8cb74dc1aeee422c89b
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102052166"
 ---
-# <a name="enable-vm-insights-guest-health-preview"></a>Включение работоспособности гостевых систем VM Insights (Предварительная версия)
+# <a name="enable-vm-insights-guest-health-preview"></a>Включение VM insights guest health (предварительная версия)
 Работоспособность гостевых систем VM Insights позволяет просматривать работоспособность виртуальной машины в соответствии с набором измерений производительности, которые вычисляются с регулярным интервалом. В этой статье описывается, как включить эту функцию в подписке и как включить гостевой мониторинг для каждой виртуальной машины.
 
 ## <a name="current-limitations"></a>Текущие ограничения
@@ -84,7 +84,7 @@ ms.locfileid: "102052166"
 - западная часть США
 - западная часть США 2
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Виртуальная машина должна быть подключена к аналитике VM.
 - Пользователь, запускающий шаги адаптации, должен иметь минимальный уровень участника доступа к подписке, в которой расположены виртуальная машина и правило сбора данных.
