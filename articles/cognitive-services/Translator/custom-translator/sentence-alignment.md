@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: lajanuar
 ms.topic: conceptual
 ms.openlocfilehash: 0c33d766bfd3dff47ddb151e8ce4ea7b25c37548
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98897957"
 ---
 # <a name="sentence-pairing-and-alignment-in-parallel-documents"></a>Связывание и сопоставление предложений в параллельных документах
@@ -39,7 +39,7 @@ Custom Translator анализирует перевод по одному пре
 | Обучение   | 10 000                                     | Верхнее ограничение отсутствует                 |
 | Настройка     | 500                                      | 2500       |
 | Тестирование    | 500                                      | 2500  |
-| Dictionary | 0                                          | Верхнее ограничение отсутствует                 |
+| Словарь | 0                                          | Верхнее ограничение отсутствует                 |
 
 > [!NOTE]
 > - Обучение не будет запущено и завершится ошибкой, если не соблюдается минимальное число предложений 10 000 для обучения. 

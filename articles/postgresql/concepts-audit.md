@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 01/28/2020
 ms.openlocfilehash: 33fa6420f52cae9c869cc75a04ea82de0ec48262
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100596290"
 ---
 # <a name="audit-logging-in-azure-database-for-postgresql---single-server"></a>Ведение журнала аудита в базе данных Azure для PostgreSQL — один сервер
@@ -66,7 +66,7 @@ ms.locfileid: "100596290"
 
 > [!NOTE]
 > Если задано значение `pgaudit.log_client` On, журналы перенаправляются в клиентский процесс (например, psql), а не записываются в файл. Этот параметр обычно следует отключать. <br> <br>
-> `pgaudit.log_level` включается, только если `pgaudit.log_client` включен.
+> Параметр `pgaudit.log_level` будет включен, только если включен `pgaudit.log_client`.
 
 > [!NOTE]
 > В базе данных Azure для PostgreSQL `pgaudit.log` не может быть задано с помощью `-` сочетания знака (минус), как описано в документации по пгаудит. Все необходимые классы операторов (READ, WRITE и т. д.) должны быть указаны отдельно.
@@ -102,6 +102,6 @@ AzureDiagnostics
 | where Message contains "AUDIT:"
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Сведения о ведении журнала в базе данных Azure для PostgreSQL](concepts-server-logs.md)
 - Узнайте, как задать параметры с помощью [портал Azure](howto-configure-server-parameters-using-portal.md), [Azure CLI](howto-configure-server-parameters-using-cli.md)или [REST API](/rest/api/postgresql/configurations/createorupdate).

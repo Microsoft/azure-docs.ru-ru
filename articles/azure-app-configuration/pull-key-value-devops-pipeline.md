@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 11/17/2020
 ms.author: drewbat
 ms.openlocfilehash: 7bd163781203a277f4c9d6866a156c11e4d5d520
-ms.sourcegitcommit: 706e7d3eaa27f242312d3d8e3ff072d2ae685956
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99979578"
 ---
 # <a name="pull-settings-to-app-configuration-with-azure-pipelines"></a>Извлечение параметров в конфигурацию приложения с помощью Azure Pipelines
@@ -111,7 +111,7 @@ echo "$env:myBuildSetting"
 
 При возникновении непредвиденной ошибки можно включить журналы отладки, задав для переменной конвейера `system.debug` значение `true` .
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 **Разделы справки создать конфигурацию из нескольких ключей и меток?**
 

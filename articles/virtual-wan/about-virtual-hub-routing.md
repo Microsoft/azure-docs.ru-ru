@@ -10,10 +10,10 @@ ms.date: 02/17/2021
 ms.author: cherylmc
 ms.custom: fasttrack-edit
 ms.openlocfilehash: c1a2a54bf2d4c5de3e6cfca66256f60592fc1f3e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101737517"
 ---
 # <a name="about-virtual-hub-routing"></a>Сведения о маршрутизации виртуальных концентраторов
@@ -30,7 +30,7 @@ ms.locfileid: "101737517"
 
 Таблица маршрутов виртуального концентратора может содержать один или несколько маршрутов. Маршрут включает его имя, метку, тип назначения, список префиксов назначения и сведения о следующем прыжке для отправляемого пакета. **Соединение** обычно будет иметь конфигурацию маршрутизации, связанную с таблицей маршрутов или распространяющуюся на нее.
 
-### <a name="connections"></a><a name="connection"></a>Соединения
+### <a name="connections"></a><a name="connection"></a>Соединение
 
 Подключения — это диспетчер ресурсов ресурсы с конфигурацией маршрутизации. Существуют четыре типа подключений.
 

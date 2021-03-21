@@ -17,10 +17,10 @@ ms.date: 9/25/2018
 ms.author: aanandr
 ms.custom: ''
 ms.openlocfilehash: a68e1a3f60930e290e97084ff2ec9350b18e2873
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100594971"
 ---
 # <a name="azure-kubernetes-network-policies-overview"></a>Общие сведения о сетевых политиках Azure Kubernetes
@@ -118,9 +118,9 @@ Azure NPM включает информативные метрики Prometheus,
 |`npm_num_iptables_rules`     | число правил IPTables     | Датчик        |-         |         
 |`npm_num_ipsets`     |число Ипсетс         |Датчик            |-         |
 |`npm_num_ipset_entries`     |число записей IP-адресов во всех Ипсетс         |Датчик         |-         |
-|`npm_add_policy_exec_time`     |среда выполнения для добавления сетевой политики         |Сводка         |квантилей (0,5, 0,9 или 0,99)         |
-|`npm_add_iptables_rule_exec_time`     |среда выполнения для добавления правила IPTables         |Сводка         |квантилей (0,5, 0,9 или 0,99)         |
-|`npm_add_ipset_exec_time`     |среда выполнения для добавления Ипсет         |Сводка         |квантилей (0,5, 0,9 или 0,99)         |
+|`npm_add_policy_exec_time`     |среда выполнения для добавления сетевой политики         |Итоги         |квантилей (0,5, 0,9 или 0,99)         |
+|`npm_add_iptables_rule_exec_time`     |среда выполнения для добавления правила IPTables         |Итоги         |квантилей (0,5, 0,9 или 0,99)         |
+|`npm_add_ipset_exec_time`     |среда выполнения для добавления Ипсет         |Итоги         |квантилей (0,5, 0,9 или 0,99)         |
 |`npm_ipset_counts` продвинут     |число записей в каждом отдельном Ипсет         |гаужевек         |задать имя & хэш         |
 
 Различные уровни квантилей в метриках "exec_time" помогают различать общие и наихудшие ситуации.
@@ -261,7 +261,7 @@ helm install prometheus stable/prometheus -n monitoring \
 
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения о [Службе Azure Kubernetes](../aks/intro-kubernetes.md).
 -  Дополнительные сведения о [работе с контейнерами в сети](container-networking-overview.md).
 - [Разверните подключаемый модуль](deploy-container-networking.md) для кластеров Kubernetes или контейнеров DOCKER.

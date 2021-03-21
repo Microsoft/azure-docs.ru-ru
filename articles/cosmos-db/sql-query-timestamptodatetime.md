@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/18/2020
 ms.author: tisande
 ms.custom: query-reference
-ms.openlocfilehash: af5e0eeb808835fd4f36a0eda79618f831248ad9
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.openlocfilehash: e9a77ab0ac32d627d59e2cb0fa4a680f174a6833
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93340776"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104587242"
 ---
 # <a name="timestamptodatetime-azure-cosmos-db"></a>Тиместамптодатетиме (Azure Cosmos DB)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -36,17 +36,17 @@ TimestampToDateTime (<Timestamp>)
 
 Возвращает строковое значение даты и времени ISO 8601 по ГРИНВИЧу в формате, `YYYY-MM-DDThh:mm:ss.fffffffZ` где:
   
-  |Формат|Описание|
-  |-|-|
-  |YYYY|год из четырех цифр|
-  |ММ|месяц (2 цифры) (01 = Январь и т. д.)|
-  |DD|четырехзначный день месяца (от 01 до 31)|
-  |T|обозначает начало элементов времени|
-  |hh|час с двумя цифрами (от 00 до 23)|
-  |mm|двузначное число минут (от 00 до 59)|
-  |ss|двузначное число секунд (от 00 до 59)|
-  |. fffffff|семь цифр в долях секунды|
-  |Z|Обозначение времени в формате UTC (Универсальное координированное время)||
+|Формат|Описание|
+|-|-|
+|YYYY|год из четырех цифр|
+|ММ|месяц (2 цифры) (01 = Январь и т. д.)|
+|DD|четырехзначный день месяца (от 01 до 31)|
+|T|обозначает начало элементов времени|
+|hh|час с двумя цифрами (от 00 до 23)|
+|ММ|двузначное число минут (от 00 до 59)|
+|сс|двузначное число секунд (от 00 до 59)|
+|. fffffff|семь цифр в долях секунды|
+|Z|Обозначение времени в формате UTC (Универсальное координированное время)|
   
   Дополнительные сведения о формате ISO 8601 см. в разделе [ISO_8601](https://en.wikipedia.org/wiki/ISO_8601)
 
@@ -70,7 +70,7 @@ SELECT TimestampToDateTime(1594227912345) AS DateTime
 ]
 ```  
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Функции даты и времени Azure Cosmos DB](sql-query-date-time-functions.md)
 - [Системные функции Azure Cosmos DB](sql-query-system-functions.md)

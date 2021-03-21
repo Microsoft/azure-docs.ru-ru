@@ -14,10 +14,10 @@ ms.date: 02/22/2019
 tags: ''
 keywords: ''
 ms.openlocfilehash: 1bc8dcbf05847c4d1ce6dd6a39af7bd3674a0669
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102561608"
 ---
 # <a name="ibm-workloads-on-azure"></a>Рабочие нагрузки IBM в Azure

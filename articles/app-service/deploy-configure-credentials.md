@@ -6,10 +6,10 @@ ms.date: 02/11/2021
 ms.reviewer: byvinyal
 ms.custom: seodec18
 ms.openlocfilehash: c7d3c7c8b5da40a4e9ccd9085af5a850b9ebc3dd
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102052353"
 ---
 # <a name="configure-deployment-credentials-for-azure-app-service"></a>Настройка учетных данных развертывания службы приложений Azure
@@ -74,13 +74,13 @@ az webapp deployment user set --user-name <username> --password <password>
 
 # <a name="azure-cli"></a>[Azure CLI](#tab/cli)
 
-Получите учетные данные области приложения с помощью команды [AZ webapp Deployment List-Publishing-Profiles](/cli/azure/webapp/deployment#az_webapp_deployment_list_publishing_profiles) . Пример.
+Получите учетные данные области приложения с помощью команды [AZ webapp Deployment List-Publishing-Profiles](/cli/azure/webapp/deployment#az_webapp_deployment_list_publishing_profiles) . Пример:
 
 ```azurecli-interactive
 az webapp deployment list-publishing-profiles --resource-group <group-name> --name <app-name>
 ```
 
-Для [локального развертывания Git](deploy-local-git.md)можно также использовать команду [AZ webapp Deployment List-Publishing-Credentials](/cli/azure/webapp/deployment#az_webapp_deployment_list_publishing_credentials) , чтобы получить удаленный универсальный код ресурса (URI) Git для приложения с уже внедренными учетными данными области приложения. Пример.
+Для [локального развертывания Git](deploy-local-git.md)можно также использовать команду [AZ webapp Deployment List-Publishing-Credentials](/cli/azure/webapp/deployment#az_webapp_deployment_list_publishing_credentials) , чтобы получить удаленный универсальный код ресурса (URI) Git для приложения с уже внедренными учетными данными области приложения. Пример:
 
 ```azurecli-interactive
 az webapp deployment list-publishing-credentials --resource-group <group-name> --name <app-name> --query scmUri
@@ -88,7 +88,7 @@ az webapp deployment list-publishing-credentials --resource-group <group-name> -
 
 # <a name="azure-powershell"></a>[Azure PowerShell](#tab/powershell)
 
-Получите учетные данные области приложения с помощью команды [Get-азвебапппублишингпрофиле](/powershell/module/az.websites/get-azwebapppublishingprofile) . Пример.
+Получите учетные данные области приложения с помощью команды [Get-азвебапппублишингпрофиле](/powershell/module/az.websites/get-azwebapppublishingprofile) . Пример:
 
 ```azurepowershell-interactive
 Get-AzWebAppPublishingProfile -ResourceGroupName <group-name> -Name <app-name>

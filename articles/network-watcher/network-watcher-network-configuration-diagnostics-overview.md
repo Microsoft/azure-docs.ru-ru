@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 09/15/2020
 ms.author: damendo
 ms.openlocfilehash: 5feef79a08789ad381b0c93cb938abd9effdfcc8
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102502014"
 ---
 # <a name="introduction-to-network-configuration-diagnostics-in-azure-network-watcher"></a>Общие сведения о диагностике конфигурации сети в наблюдателе за сетями Azure
@@ -25,7 +25,7 @@ ms.locfileid: "102502014"
 ## <a name="pre-requisites"></a>Предварительные требования
 Для использования диагностики сетевой конфигурации наблюдатель за сетями должен быть включен в подписке. См. раздел [Создание экземпляра наблюдателя за сетями Azure](./network-watcher-create.md) для включения.
 
-## <a name="background"></a>Фон
+## <a name="background"></a>Историческая справка
 
 - Ресурсы в Azure подключаются через виртуальные сети (виртуальных сетей) и подсети. Безопасность этих виртуальных сетей и подсетей можно управлять с помощью группы безопасности сети (NSG).
 - NSG содержит список правил безопасности, которые разрешают или запрещают сетевой трафик к ресурсам, к которым он подключен. Группы безопасности сети можно связать с подсетями, отдельными виртуальными машинами или отдельными сетевыми интерфейсами (NIC), подключенными к виртуальным машинам. 

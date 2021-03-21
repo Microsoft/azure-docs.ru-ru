@@ -7,10 +7,10 @@ ms.date: 12/04/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 872a67d8d9f41c0c809df54304352b2a5f58e011
-ms.sourcegitcommit: 25d1d5eb0329c14367621924e1da19af0a99acf1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98251766"
 ---
 # <a name="required-url-list"></a>Список требуемых URL-адресов
@@ -37,8 +37,8 @@ ms.locfileid: "98251766"
 |kms.core.windows.net|1688;|Активация Windows|Интернет|
 |mrsglobalsteus2prod.blob.core.windows.net|443|Обновления агента и стека SxS|AzureCloud;|
 |wvdportalstorageblob.blob.core.windows.net|443|Поддержка портала Azure|AzureCloud;|
-| 169.254.169.254 | 80 | [Конечная точка службы метаданных экземпляра Azure](../virtual-machines/windows/instance-metadata-service.md) | Недоступно |
-| 168.63.129.16 | 80 | [Мониторинг работоспособности узла сеансов](../virtual-network/network-security-groups-overview.md#azure-platform-considerations) | Недоступно |
+| 169.254.169.254 | 80 | [Конечная точка службы метаданных экземпляра Azure](../virtual-machines/windows/instance-metadata-service.md) | Н/Д |
+| 168.63.129.16 | 80 | [Мониторинг работоспособности узла сеансов](../virtual-network/network-security-groups-overview.md#azure-platform-considerations) | Н/Д |
 
 >[!IMPORTANT]
 >Виртуальный рабочий стол Windows теперь поддерживает тег полного доменного имени. Дополнительные сведения см. в статье [Использование Брандмауэра Azure для защиты развертываний виртуального рабочего стола Windows](../firewall/protect-windows-virtual-desktop.md).
@@ -59,8 +59,8 @@ ms.locfileid: "98251766"
 |Kms.core.usgovcloudapi.net|1688;|Активация Windows|Интернет|
 |mrsglobalstugviffx.blob.core.usgovcloudapi.net|443|Обновления агента и стека SxS|AzureCloud;|
 |wvdportalstorageblob.blob.core.usgovcloudapi.net|443|Поддержка портала Azure|AzureCloud;|
-| 169.254.169.254 | 80 | [Конечная точка службы метаданных экземпляра Azure](../virtual-machines/windows/instance-metadata-service.md) | Недоступно |
-| 168.63.129.16 | 80 | [Мониторинг работоспособности узла сеансов](../virtual-network/network-security-groups-overview.md#azure-platform-considerations) | Недоступно |
+| 169.254.169.254 | 80 | [Конечная точка службы метаданных экземпляра Azure](../virtual-machines/windows/instance-metadata-service.md) | Н/Д |
+| 168.63.129.16 | 80 | [Мониторинг работоспособности узла сеансов](../virtual-network/network-security-groups-overview.md#azure-platform-considerations) | Н/Д |
 
 В следующей таблице перечислены дополнительные URL-адреса, к которым виртуальные машины Azure могут иметь доступ:
 
@@ -97,10 +97,10 @@ ms.locfileid: "98251766"
 |---|---|---|---|---|
 |*.wvd.microsoft.com|443|Служба трафика|All|*. wvd.microsoft.us|
 |*.servicebus.windows.net|443|Данные диагностики|All|*.servicebus.usgovcloudapi.net|
-|сайт go.microsoft.com;|443|Microsoft FWLinks|All|None|
-|aka.ms|443|Средство сокращения URL-адресов Майкрософт|All|None|
-|docs.microsoft.com|443|Документация|All|None|
-|privacy.microsoft.com|443|Заявление о конфиденциальности|All|None|
+|сайт go.microsoft.com;|443|Microsoft FWLinks|All|Отсутствуют|
+|aka.ms|443|Средство сокращения URL-адресов Майкрософт|All|Отсутствуют|
+|docs.microsoft.com|443|Документация|All|Отсутствуют|
+|privacy.microsoft.com|443|Заявление о конфиденциальности|All|Отсутствуют|
 |query.prod.cms.rt.microsoft.com|443|Клиентские обновления|Классические приложения|Нет|
 
 >[!IMPORTANT]

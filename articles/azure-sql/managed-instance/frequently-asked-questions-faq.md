@@ -13,10 +13,10 @@ ms.author: jovanpop
 ms.reviewer: sstein
 ms.date: 09/21/2020
 ms.openlocfilehash: 17e97503996b53868f12e74ed5a38dba63285426
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102503204"
 ---
 # <a name="azure-sql-managed-instance-frequently-asked-questions-faq"></a>Часто задаваемые вопросы об Управляемом экземпляре SQL Azure
@@ -72,7 +72,7 @@ ms.locfileid: "102503204"
 
 Сведения о дефектах продукта и известных проблемах см. в статье [Известные проблемы](../database/doc-changes-updates-release-notes.md#known-issues).
 
-## <a name="new-features"></a>Новые функции
+## <a name="new-features"></a>новые функции;
 
 **Где можно найти новейшие функции и функции в общедоступной предварительной версии?**
 
@@ -299,7 +299,7 @@ SQL Управляемый экземпляр отвечает за настро
 
 Нет. Сейчас мы не поддерживаем размещение Управляемый экземпляр в подсети, которая уже содержит другие типы ресурсов.
 
-## <a name="connectivity"></a>Соединение 
+## <a name="connectivity"></a>Возможность подключения 
 
 **Можно ли подключиться к управляемому экземпляру по IP-адресу?**
 

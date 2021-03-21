@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 09/18/2020
 ms.author: lagayhar
 ms.openlocfilehash: c91912f711b912c54c1673f2f92e998b4d9ea9db
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101736939"
 ---
 # <a name="honey-comb-visualizations"></a>Honeytoken объединение визуализаций
@@ -80,7 +80,7 @@ ms.locfileid: "101736939"
 
 ## <a name="node-coloring-types"></a>Типы цветов узлов
 
-| Тип цвета | Описание |
+| Тип цвета | Пояснение |
 |:------------- |:-------------|
 | `None` | Все узлы имеют одинаковый цвет. |
 | `Categorical` | Узлам присваиваются цвета на основе значения или категории из столбца в результирующем наборе. В приведенном выше примере цветовое выделение основано на _типе_ столбца результирующего набора. Поддерживаемые палитры: `Default` , `Pastel` и `Cool tone` .  |

@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 01/29/2021
 ms.openlocfilehash: 62ef47e7d8f98241009c1c1f3d8c111113be432c
-ms.sourcegitcommit: 54e1d4cdff28c2fd88eca949c2190da1b09dca91
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99220774"
 ---
 # <a name="read-replicas-in-azure-database-for-postgresql---single-server"></a>Чтение реплик в базе данных Azure для PostgreSQL — один сервер
@@ -144,7 +144,7 @@ SELECT EXTRACT (EPOCH FROM now() - pg_last_xact_replay_timestamp());
 
 В этом разделе приведены рекомендации по использованию компонента "Реплика чтения".
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 Считывание реплик и [логического декодирования](concepts-logical.md) зависит от postgres журнала упреждающего записи (WAL) для получения сведений. Для этих двух функций требуется разный уровень ведения журнала от postgres. Для логического декодирования требуется более высокий уровень ведения журнала, чем считывание реплик.
 
 Чтобы настроить правильный уровень ведения журнала, используйте параметр поддержки репликации Azure. Поддержка репликации в Azure имеет три параметра:

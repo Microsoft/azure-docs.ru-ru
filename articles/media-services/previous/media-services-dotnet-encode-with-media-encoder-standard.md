@@ -17,10 +17,10 @@ ms.author: inhenkel
 ms.reviewer: anilmur
 ms.custom: devx-track-csharp
 ms.openlocfilehash: b94ec0b50182381d2a4e1bca09f4c8bc482d13ee
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103014100"
 ---
 # <a name="encode-an-asset-with-media-encoder-standard-using-net"></a>Кодирование ресурса-контейнера с помощью Media Encoder Standard и .NET

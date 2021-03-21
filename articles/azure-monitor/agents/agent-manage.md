@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 06/14/2019
 ms.openlocfilehash: ca36c35d859e651c0d949f4b7fbb28137d01af90
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101734967"
 ---
 # <a name="managing-and-maintaining-the-log-analytics-agent-for-windows-and-linux"></a>Обслуживание агента Log Analytics для Windows и Linux и управление им
@@ -22,7 +22,7 @@ ms.locfileid: "101734967"
 
 | Среда | Метод установки | Метод перехода |
 |--------|----------|-------------|
-| Виртуальная машина Azure | Расширение виртуальной машины агента Log Analytics для Windows и Linux | Агент автоматически обновляется по умолчанию, если не настроен шаблон Azure Resource Manager для отказаться от установки свойства *autoUpgradeMinorVersion* в **значение false**. |
+| Azure | Расширение виртуальной машины агента Log Analytics для Windows и Linux | Агент автоматически обновляется по умолчанию, если не настроен шаблон Azure Resource Manager для отказаться от установки свойства *autoUpgradeMinorVersion* в **значение false**. |
 | Пользовательские образы виртуальных машин Azure | Ручная установка агента Log Analytics для Windows и Linux | Обновление виртуальных машин до последней версии агента необходимо выполнить из командной строки, в которой выполняется пакет установщика Windows или самораспаковывающийся и устанавливаемый комплект сценариев оболочки для Linux.|
 | Виртуальные машины, не относящиеся к Azure | Ручная установка агента Log Analytics для Windows и Linux | Обновление виртуальных машин до последней версии агента необходимо выполнить из командной строки, в которой выполняется пакет установщика Windows или самораспаковывающийся и устанавливаемый комплект сценариев оболочки для Linux. |
 

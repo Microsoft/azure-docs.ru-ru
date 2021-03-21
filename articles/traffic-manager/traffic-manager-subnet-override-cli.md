@@ -9,10 +9,10 @@ ms.service: traffic-manager
 ms.date: 09/18/2019
 ms.author: duau
 ms.openlocfilehash: 2e289728c7fde9b98256d079d45067aba1d4d805
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102211334"
 ---
 # <a name="traffic-manager-subnet-override-using-azure-cli"></a>Переопределение подсети диспетчера трафика с помощью Azure CLI
@@ -70,7 +70,7 @@ az network traffic-manager endpoint update \
     --type AzureEndpoints
 ```
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 См. дополнительные сведения в статье [Методы маршрутизации трафика диспетчером трафика](traffic-manager-routing-methods.md).
 

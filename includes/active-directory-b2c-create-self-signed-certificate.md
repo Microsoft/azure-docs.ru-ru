@@ -6,10 +6,10 @@ ms.topic: include
 ms.date: 01/27/2021
 ms.author: mimart
 ms.openlocfilehash: 41d9962657aa81dbe34a52302d1b68ec655f2893
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102095295"
 ---
 Если у вас еще нет сертификата, можно использовать самозаверяющий сертификат. Самозаверяющий сертификат — это сертификат безопасности, не подписанный центром сертификации (ЦС) и не предоставляющий гарантии безопасности сертификата, подписанного центром сертификации. 

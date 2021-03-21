@@ -15,10 +15,10 @@ ms.topic: how-to
 ms.date: 12/14/2020
 ms.author: phjensen
 ms.openlocfilehash: 25f555038c1ce0d960266eacc673a62a1ffd5ac0
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98736368"
 ---
 # <a name="get-started-with-azure-application-consistent-snapshot-tool-preview"></a>Приступая к работе с средством создания моментальных снимков для приложений Azure (Предварительная версия)
@@ -182,6 +182,6 @@ gpg: Good signature from "Microsoft (Release signing)
 - [Мониторинг репликации данных с первичного сайта на сайт аварийного восстановления](azacsnap-disaster-recovery.md#monitor-data-replication-from-primary-to-dr-site)
 - [Как выполнить отработку отказа на сайт аварийного восстановления?](azacsnap-disaster-recovery.md#perform-a-failover-to-dr-site)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Установка инструмента для создания моментальных снимков с единым приложением Azure](azacsnap-installation.md)

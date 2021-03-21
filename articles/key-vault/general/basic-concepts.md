@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/18/2019
 ms.author: mbaldwin
 ms.openlocfilehash: cc00a4f1c1551932b4a30a8ef9b27cb1d4082667
-ms.sourcegitcommit: dd24c3f35e286c5b7f6c3467a256ff85343826ad
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99071602"
 ---
 # <a name="azure-key-vault-basic-concepts"></a>Azure Key Vault основные понятия
@@ -47,7 +47,7 @@ Azure Key Vault — это облачная служба для безопасн
 
 - **Управляемые удостоверения**. Azure Key Vault предоставляет способ безопасного хранения учетных данных и других ключей и секретов, но для их получения код должен пройти проверку подлинности в Key Vault. Управляемое удостоверение упрощает решение этой задачи, предоставляя службам Azure автоматически управляемое удостоверение в Azure AD. Это удостоверение можно использовать для аутентификации хранилища ключей или любой службы, которая поддерживает аутентификацию Azure AD, не храня какие-либо учетные данные в коде. Дополнительные сведения см. на следующем рисунке и в [обзоре управляемых удостоверений для ресурсов Azure](../../active-directory/managed-identities-azure-resources/overview.md).
 
-## <a name="authentication"></a>Проверка подлинности
+## <a name="authentication"></a>Аутентификация
 Для выполнения любых операций с Key Vault необходимо сначала пройти проверку подлинности. Существует три способа проверки подлинности в Key Vault.
 
 - [Управляемые удостоверения для ресурсов Azure](../../active-directory/managed-identities-azure-resources/overview.md). при развертывании приложения на виртуальной машине в Azure можно назначить удостоверение виртуальной машине, имеющей доступ к Key Vault. Вы также можете назначить удостоверения [другим ресурсам Azure](../../active-directory/managed-identities-azure-resources/overview.md). Преимуществом этого подхода является то, что приложение или служба не управляют поворотом первого секрета. Azure автоматически меняет удостоверение. Рекомендуется использовать такой подход. 

@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 05/26/2020
 ms.author: lajanuar
 ms.openlocfilehash: e89ff3f4c1f54d9e137d3dd51e325b908c826b03
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98897482"
 ---
 # <a name="how-to-prevent-translation-of-content-with-the-translator"></a>Как предотвратить перевод содержимого с помощью транслятора
@@ -25,7 +25,7 @@ ms.locfileid: "98897482"
 
 1. Пометьте содержимое с помощью `notranslate`. Это можно сделать, только если входные Тексттипе заданы в формате HTML.
 
-   Пример.
+   Пример
 
    ```html
    <span class="notranslate">This will not be translated.</span>
@@ -39,7 +39,7 @@ ms.locfileid: "98897482"
 
 2. Пометьте содержимое с помощью `translate="no"`. Работает только в том случае, если входной Тексттипе задан как HTML
 
-   Пример.
+   Пример
 
    ```html
    <span translate="no">This will not be translated.</span>

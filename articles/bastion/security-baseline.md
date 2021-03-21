@@ -8,10 +8,10 @@ ms.date: 02/12/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
 ms.openlocfilehash: b8f0cfdf3ca6e3b0bb0b455a5690d6a2727786ce
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100586757"
 ---
 # <a name="azure-security-baseline-for-azure-bastion"></a>Базовый план безопасности Azure для Azure бастиона
