@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 07/01/2020
 ms.author: mlearned
 ms.openlocfilehash: 6c69e46ea3510476089cd932b1cd1bdf14254021
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102122380"
 ---
 # <a name="security-concepts-for-applications-and-clusters-in-azure-kubernetes-service-aks"></a>Основные понятия безопасности приложений и кластеров в Службе Azure Kubernetes (AKS)

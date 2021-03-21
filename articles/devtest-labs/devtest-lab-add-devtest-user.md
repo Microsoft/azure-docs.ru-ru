@@ -4,10 +4,10 @@ description: Сведения о добавлении владельцев и п
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: 2ca6a1ffa66ab294e34a1b4866953a393aba4d6d
-ms.sourcegitcommit: 63d0621404375d4ac64055f1df4177dfad3d6de6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97511983"
 ---
 # <a name="add-owners-and-users-in-azure-devtest-labs"></a>Добавление владельцев и пользователей в Azure DevTest Labs
@@ -62,7 +62,7 @@ ms.locfileid: "97511983"
 1. На странице **Добавление разрешений** выполните следующие действия: 
     1. Выберите роль (например, пользователь DevTest Labs). В разделе [Действия, которые можно выполнять в каждой роли](#actions-that-can-be-performed-in-each-role) перечислены различные действия, которые могут выполнять пользователи с ролью владельца, пользователя DevTest или участника.
     2. Выберите пользователя для добавления в роль. 
-    3. Выберите **Сохранить**. 
+    3. Щелкните **Сохранить**. 
 11. Вернувшись в колонку **Пользователи** , вы увидите, что пользователь добавлен.  
 
 ## <a name="add-an-external-user-to-a-lab-using-powershell"></a>Добавление внешнего пользователя в лабораторию с помощью PowerShell
@@ -118,7 +118,7 @@ New-AzRoleAssignment -ObjectId $adObject.Id -RoleDefinitionName 'DevTest Labs Us
     ![Доступ к пользователям](./media/devtest-lab-add-devtest-user/access-users.png)
 5. В колонке **Пользователи** выберите **Добавить**.
    
-    ![Добавить пользователя](./media/devtest-lab-add-devtest-user/devtest-users-blade.png)
+    ![Добавление пользователя](./media/devtest-lab-add-devtest-user/devtest-users-blade.png)
 6. В колонке **Выберите роль** щелкните **Владелец**.
 7. В колонке **Добавление пользователей** введите адрес электронной почты или имя пользователя, которому нужно назначить роль владельца. Если пользователь не найден, система выдаст соответствующее сообщение об ошибке. Если пользователь найден, он появится в текстовом поле **Пользователи** .
 8. Выберите имя найденного пользователя.

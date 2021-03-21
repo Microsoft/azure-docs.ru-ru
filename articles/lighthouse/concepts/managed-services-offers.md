@@ -4,10 +4,10 @@ description: Предложения управляемой службы позв
 ms.date: 02/17/2021
 ms.topic: conceptual
 ms.openlocfilehash: e66a87751e0375804031e777a40c5fc1d0e8a7e2
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101093005"
 ---
 # <a name="managed-service-offers-in-azure-marketplace"></a>Предложения управляемых служб в Azure Marketplace
@@ -43,7 +43,7 @@ ms.locfileid: "101093005"
 
 Сведения о публикации предложения управляемой службы см. в статье [Публикация предложения управляемой службы в Azure Marketplace](../how-to/publish-managed-services-offers.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о [делегированном управлении ресурсами Azure](azure-delegated-resource-management.md) и [интерфейсах управления для различных клиентов](cross-tenant-management-experience.md).
 - [Публикация предложений управляемых служб](../how-to/publish-managed-services-offers.md) в Azure Marketplace.

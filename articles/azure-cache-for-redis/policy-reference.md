@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для Кэша Azure для Redis
 description: Здесь приведены встроенные определения политик в Политике Azure для Кэша Azure для Redis. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 ms.topic: reference
 author: yegu-ms
 ms.author: yegu
 ms.service: cache
 ms.custom: subject-policy-reference
-ms.openlocfilehash: f04c8e821692b62d507f215d0c8fb9b88eb3389f
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: 2fb33c0ed7d8fc0f865a91638a2eaae16a3dfad2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102608894"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104584855"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-cache-for-redis"></a>Встроенные определения в Политике Azure для Кэша Azure для Redis
 

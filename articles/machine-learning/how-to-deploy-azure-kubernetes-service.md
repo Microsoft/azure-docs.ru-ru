@@ -12,10 +12,10 @@ author: jpe316
 ms.reviewer: larryfr
 ms.date: 09/01/2020
 ms.openlocfilehash: ef9c03b687bbc9b8fe736c872bbde14b8daba899
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102519390"
 ---
 # <a name="deploy-a-model-to-an-azure-kubernetes-service-cluster"></a>Развертывание модели в кластере службы Azure Kubernetes
@@ -24,7 +24,7 @@ ms.locfileid: "102519390"
 
 - __Быстрое время отклика__
 - __Автомасштабирование__ развернутой службы
-- __Ведение журнала__
+- __Logging__
 - __Сбор данных модели__
 - __Аутентификация__
 - __Терминирование TLS__
@@ -379,7 +379,7 @@ print(token)
 
 Центр безопасности Azure обеспечивает унифицированное управление безопасностью и расширенную защиту от угроз для гибридных облачных рабочих нагрузок. Вы должны разрешить центру безопасности Azure проверять ресурсы и следовать рекомендациям. Дополнительные сведения см. в статье [Интеграция Azure Kubernetes Services с центром безопасности](../security-center/defender-for-kubernetes-introduction.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Использование Azure RBAC для авторизации Kubernetes](../aks/manage-azure-rbac.md)
 * [Безопасная организация в среде с виртуальной сетью Azure](how-to-secure-inferencing-vnet.md)

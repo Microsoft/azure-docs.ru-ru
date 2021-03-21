@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: 39fe439e37b1af4e833396ef83205729af8c7ad3
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102610422"
 ---
 # <a name="use-an-azure-powershell-command-to-create-an-empty-cloud-service-classic-container"></a>Использование команды Azure PowerShell для создания пустого контейнера облачной службы (классический)
@@ -49,7 +49,7 @@ ms.locfileid: "102610422"
 Get-help New-AzureService
 ```
 
-### <a name="next-steps"></a>Дальнейшие действия
+### <a name="next-steps"></a>Следующие шаги
 
 * Чтобы управлять развертыванием облачной службы, используйте команды [Get-AzureService](/powershell/module/servicemanagement/azure.service/Get-AzureService), [Remove-AzureService](/powershell/module/servicemanagement/azure.service/Remove-AzureService) и [Set-AzureService](/powershell/module/servicemanagement/azure.service/set-azureservice). Кроме того, дополнительные сведения можно получить в статье [Настройка облачных служб](cloud-services-how-to-configure-portal.md) .
 * Чтобы опубликовать проект облачной службы в Azure, используйте пример кода **PublishCloudService.ps1** из [репозитория заархивированных облачных служб](https://github.com/MicrosoftDocs/azure-cloud-services-files/tree/master/Scripts/cloud-services-continuous-delivery).

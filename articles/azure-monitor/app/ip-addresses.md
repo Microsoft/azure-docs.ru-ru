@@ -4,10 +4,10 @@ description: Исключения брандмауэра сервера, тре�
 ms.topic: conceptual
 ms.date: 01/27/2020
 ms.openlocfilehash: 56ff33cc0a34cb254ca88f96d69a07bc131bebf4
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101714040"
 ---
 # <a name="ip-addresses-used-by-azure-monitor"></a>IP-адреса, используемые Azure Monitor

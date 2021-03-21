@@ -10,12 +10,12 @@ ms.date: 12/28/2020
 ms.author: tamram
 ms.reviewer: dineshm
 ms.subservice: common
-ms.openlocfilehash: 8812ab091037bcb3144a7fed53a449c3f5de353a
-ms.sourcegitcommit: 7e97ae405c1c6c8ac63850e1b88cf9c9c82372da
+ms.openlocfilehash: 51e73222233602491b0c8ed3835d032610c68e0d
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97802513"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104722792"
 ---
 # <a name="grant-limited-access-to-azure-storage-resources-using-shared-access-signatures-sas"></a>Предоставление ограниченного доступа к ресурсам службы хранилища Azure с помощью подписанных URL-адресов (SAS)
 
@@ -100,7 +100,7 @@ SAS учетной записи защищен с помощью ключа уч
 
 | Тип SAS | Тип авторизации |
 |-|-|
-| SAS делегирования пользователя (только хранилище BLOB-объектов) | Azure AD |
+| SAS делегирования пользователя (только хранилище BLOB-объектов) | Azure AD |
 | SAS службы | Общий ключ |
 | SAS учетной записи | Общий ключ |
 
@@ -182,6 +182,9 @@ SAS учетной записи защищен с помощью ключа уч
 
 - **Используйте Azure Monitor и журналы службы хранилища Azure для мониторинга приложения.** Ошибки авторизации могут возникать из-за сбоя в службе поставщика SAS. Они также могут возникать из-за непреднамеренного удаления хранимой политики доступа. Вы можете использовать Azure Monitor и ведение журнала аналитики хранилища, чтобы наблюдать за резкостью этих типов ошибок авторизации. Дополнительные сведения см. [в разделе метрики службы хранилища Azure в Azure Monitor](../blobs/monitor-blob-storage.md?toc=%252fazure%252fstorage%252fblobs%252ftoc.json) и [аналитика службы хранилища Azure ведение журнала](storage-analytics-logging.md?toc=%2fazure%2fstorage%2fblobs%2ftoc.json).
 
+> [!NOTE]
+> Хранилище не следит за количеством подписанных URL-имен, созданных для учетной записи хранения, и ни один API не может предоставить эти сведения. Если необходимо знать количество подписанных URL-имен, созданных для учетной записи хранения, необходимо отформатировать число вручную.
+
 ## <a name="get-started-with-sas"></a>Начало работы с SAS
 
 Чтобы приступить к работе с подписанными URL, ознакомьтесь со следующими статьями по каждому из типов SAS.
@@ -200,7 +203,7 @@ SAS учетной записи защищен с помощью ключа уч
 
 - [Создание SAS учетной записи с помощью .NET](storage-account-sas-create-dotnet.md)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Делегирование доступа с помощью подписанного URL-доступа (REST API)](/rest/api/storageservices/delegate-access-with-shared-access-signature)
 - [Создание SAS для делегирования пользователей (REST API)](/rest/api/storageservices/create-user-delegation-sas)

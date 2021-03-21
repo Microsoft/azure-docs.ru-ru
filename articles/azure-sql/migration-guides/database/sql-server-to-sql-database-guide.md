@@ -11,10 +11,10 @@ ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 03/19/2021
 ms.openlocfilehash: 9205301cb77941e4ea7ca026710d44ba82f6a937
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103563850"
 ---
 # <a name="migration-guide-sql-server-to-sql-database"></a>Руководство по миграции: SQL Server в базу данных SQL
@@ -194,7 +194,7 @@ ms.locfileid: "103563850"
 Дополнительные сведения см. в статье [Управление базой данных SQL Azure после миграции](../../database/manage-data-after-migrating-to-database.md) .
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Сведения о службах и средствах Майкрософт и сторонних поставщиков, которые помогут вам в использовании различных сценариев переноса баз данных и данных, а также специальных задач см. в разделе [служба и средства для переноса данных](../../../dms/dms-tools-matrix.md).
 

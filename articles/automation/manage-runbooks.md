@@ -6,10 +6,10 @@ ms.subservice: process-automation
 ms.date: 02/24/2021
 ms.topic: conceptual
 ms.openlocfilehash: af767ab37e8e77195b7d13b24ea78f4fb88485fb
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102122142"
 ---
 # <a name="manage-runbooks-in-azure-automation"></a>Управление модулями runbook в службе автоматизации Azure

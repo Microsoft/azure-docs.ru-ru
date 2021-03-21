@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.custom: how-to
 ms.date: 01/19/2021
 ms.openlocfilehash: 5748bf3d428102e296067dc5d1927ba487d575bc
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102518727"
 ---
 # <a name="run-jupyter-notebooks-in-your-workspace"></a>Запуск записных книжек Jupyter в рабочей области
@@ -207,7 +207,7 @@ ms.locfileid: "102518727"
 | M                             | Преобразовать ячейку в Markdown  |                       
 | Вверх/K                          | Выбор ячейки выше    |               
 | Down/J                        | Выбор ячейки ниже    |               
-| Объект                             | Вставить ячейку кода выше  |            
+| A                             | Вставить ячейку кода выше  |            
 | B                             | Вставить ячейку кода ниже   |           
 | Control/Command + Shift + A   | Вставить Markdown ячейку выше    |      
 | Control/Command + Shift + B   | Вставить Markdown ячейку ниже   |       
@@ -269,7 +269,7 @@ ms.locfileid: "102518727"
 | Control, Command и DELETE      | Удаление слова после |                              
 | Control/Command +/           | Переключить комментарий в ячейке
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 * Если вы не можете подключиться к записной книжке, убедитесь, что связь с веб-сокетом **не** отключена. Для работы Jupyter функций вычислительных экземпляров необходимо включить связь через веб-сокет. Убедитесь, что сеть допускает подключения WebSocket к *. instances.azureml.net и *. instances.azureml.ms. 
 

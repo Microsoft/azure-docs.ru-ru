@@ -12,10 +12,10 @@ ms.date: 12/05/2019
 ms.author: kenwith
 ms.reviewer: japere
 ms.openlocfilehash: 8405afef07f5d3f52becc1acf184e9a36db8971c
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102548543"
 ---
 # <a name="assign-a-user-to-a-specific-azure-ad-application-proxy-application"></a>Назначение пользователя конкретному приложению Azure AD Application Proxy

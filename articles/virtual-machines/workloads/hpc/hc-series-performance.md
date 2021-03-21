@@ -8,12 +8,12 @@ ms.topic: article
 ms.date: 09/10/2020
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: 0d164c19da1ed2cbf6930a92686b35690fb0afb5
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 177a58090303a70491d9a9226eca40d0bb371764
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101666923"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104722265"
 ---
 # <a name="hc-series-virtual-machine-sizes"></a>Размеры виртуальных машин серии HC
 
@@ -56,7 +56,7 @@ ms.locfileid: "101666923"
 numactl --physcpubind=[INSERT CORE #]  ib_send_lat -a
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
-- Ознакомьтесь с последними объявлениями и некоторыми примерами высокопроизводительных вычислений (HPC) и результатами в [блогах сообщества разработчиков Azure](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
+- Ознакомьтесь с последними объявлениями, примерами рабочей нагрузки HPC и результатами производительности в [блогах сообщества разработчиков Azure](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
 - Более высокоуровневое архитектурное представление выполнения рабочих нагрузок HPC см. в статье [высокопроизводительные вычисления (HPC) в Azure](/azure/architecture/topics/high-performance-computing/).

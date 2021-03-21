@@ -9,10 +9,10 @@ author: xiaoharper
 ms.author: zhanxia
 ms.date: 03/08/2021
 ms.openlocfilehash: ac9ad296029451d624345d8b3bb365d881ba9a84
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103565289"
 ---
 # <a name="migrate-execute-r-script-modules-in-studio-classic"></a>Миграция модулей выполнения скриптов R в Studio (классическая модель)
@@ -29,7 +29,7 @@ ms.locfileid: "103565289"
 
 В следующей таблице приведена сводка изменений модуля R script.
 
-|Функция|Студия (классическая)|Конструктор Машинного обучения Azure|
+|Компонент|Студия (классическая)|Конструктор Машинного обучения Azure|
 |---|---|---|
 |Интерфейс скрипта|`maml.mapInputPort` и `maml.mapOutputPort`|Интерфейс функции|
 |Платформа|Windows|Linux|
@@ -101,7 +101,7 @@ azureml_main <- function(dataframe1, dataframe2){
   library(zoo) 
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этой статье вы узнали, как перенести модули выполнения скриптов R в Машинное обучение Azure.
 

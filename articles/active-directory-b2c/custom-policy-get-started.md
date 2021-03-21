@@ -13,10 +13,10 @@ ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 2d6c76a15ee62c26e0d0261c6b0d2d1e27443a40
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102518053"
 ---
 # <a name="get-started-with-custom-policies-in-azure-active-directory-b2c"></a>Начало работы с настраиваемыми политиками в Azure Active Directory B2C

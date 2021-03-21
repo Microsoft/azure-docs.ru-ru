@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 01/29/2020
 ms.openlocfilehash: 57ba1c760fe8919fff95493c5c81da4368894f73
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101719820"
 ---
 # <a name="windows-azure-diagnostics-extension-wad-configuration-schema-versions-and-history"></a>Версии и журнал схемы конфигурации расширения Windows система диагностики Azure (WAD)
@@ -18,10 +18,10 @@ ms.locfileid: "101719820"
 
 ## <a name="azure-sdk-and-diagnostics-versions-shipping-chart"></a>Диаграмма версий пакета SDK для Azure и системы диагностики  
 
-|Версия пакета SDK для Azure | Версия расширения системы диагностики | Моделирование|  
+|Версия пакета SDK для Azure | Версия расширения системы диагностики | Модель|  
 |------------------|-------------------------------|------|  
-|1.x               |1,0                            |Подключаемый модуль|  
-|2.0–2.4         |1,0                            |Подключаемый модуль|  
+|1.x               |1.0                            |Подключаемый модуль|  
+|2.0–2.4         |1.0                            |Подключаемый модуль|  
 |2.5               |1.2                            |Расширение|  
 |2.6               |1,3                            |"|  
 |2.7               |1.4                            |"|  

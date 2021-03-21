@@ -13,10 +13,10 @@ ms.author: ryanwi
 ms.reviewer: hirsin, jesakowi, jmprieur, marsma
 ms.custom: aaddev, fasttrack-edit, contperf-fy21q1, identityplatformtop40
 ms.openlocfilehash: 2658c088304eba457b25bb3dc421b356ba70b57f
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100102484"
 ---
 # <a name="permissions-and-consent-in-the-microsoft-identity-platform"></a>Разрешения и согласие для платформы удостоверений Майкрософт
@@ -236,7 +236,7 @@ https://graph.microsoft.com/mail.send
 GET http://localhost/myapp/permissions?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b95&state=state=12345&admin_consent=True
 ```
 
-| Параметр | Description |
+| Параметр | Описание |
 | --- | --- |
 | `tenant` | Клиент каталога, предоставивший приложению запрошенные разрешения, в виде GUID. |
 | `state` | Значение, включенное в запрос, которое также возвращается в ответе маркера. Это может быть строка любого содержания. Параметр state используется для кодирования сведений о состоянии пользователя в приложении перед созданием запроса на аутентификацию, например сведений об открытой на тот момент странице или представлении. |
@@ -250,7 +250,7 @@ GET http://localhost/myapp/permissions?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b
 GET http://localhost/myapp/permissions?error=permission_denied&error_description=The+admin+canceled+the+request
 ```
 
-| Параметр | Description |
+| Параметр | Описание |
 | --- | --- |
 | `error` | Строка кода ошибки, которую можно использовать для классификации типов возникающих ошибок. Его также можно использовать для реагирования на ошибки. |
 | `error_description` | Конкретное сообщение об ошибке, с помощью которого разработчик может определить причину возникновения ошибки. |
@@ -355,7 +355,7 @@ response_type=token            //Code or a hybrid flow is also possible here
 
 Инструкции по устранению неполадок см. [в разделе непредвиденная ошибка при выполнении согласия для приложения](../manage-apps/application-sign-in-unexpected-user-consent-error.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Токены идентификации на платформе Microsoft Identity](id-tokens.md)
 * [Маркеры доступа на платформе Microsoft Identity](access-tokens.md)

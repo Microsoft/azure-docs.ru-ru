@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 03/15/2021
 ms.author: v-erkel
 ms.openlocfilehash: b23afb17b9b7152e82049ca4f6127e2811913296
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103563459"
 ---
 # <a name="understand-cache-usage-models"></a>Общие сведения о моделях использования кэша
@@ -88,6 +88,6 @@ ms.locfileid: "103563459"
 -->
 Если у вас есть вопросы о наилучшей модели использования для рабочего процесса кэша Azure HPC, обратитесь к своему представителяу Azure или отправьте запрос в службу поддержки.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Добавление целевых объектов хранилища](hpc-cache-add-storage.md) в кэш HPC Azure

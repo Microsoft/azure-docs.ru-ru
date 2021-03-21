@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 02/03/2021
 ms.custom: template-how-to
 ms.openlocfilehash: 93b8ab0ce53202402e86b059abe3c600590d549e
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101662919"
 ---
 # <a name="connect-to-your-azure-percept-dk-over-serial"></a>Подключение к Azure Перцепт DK по последовательному каналу
@@ -21,11 +21,11 @@ ms.locfileid: "101662919"
 > [!WARNING]
 > **Не** пытайтесь подключиться к DevKit через последовательное подключение, за исключением случаев крайнего сбоя (например, если вы выводили модуль устройства). Использование корпуса платной платы для подключения последовательного кабеля очень сложно и приведет к нарушению Wi-Fi кабелей антенны.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - [PuTTY;](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 - Главный компьютер
-- Azure Перцепт DK
+- Azure Percept DK
 - [Последовательный кабель USB-TTL](https://www.adafruit.com/product/954)
 
     :::image type="content" source="./media/how-to-connect-to-percept-dk-over-serial/usb-serial-cable.png" alt-text="Последовательный кабель USB-TTL.":::

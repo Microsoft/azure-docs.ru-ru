@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 08/01/2019
 ms.author: jingwang
 ms.openlocfilehash: 6753159acbc4a2da20695d61c6e7c31f4ac0a7c3
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100381296"
 ---
 # <a name="copy-data-from-paypal-using-azure-data-factory-preview"></a>Копирование данных из PayPal с помощью фабрики данных Azure (предварительная версия)
@@ -42,7 +42,7 @@ ms.locfileid: "100381296"
 
 Для связанной службы PayPal поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства type необходимо задать значение **PayPal**. | Да |
 | host | URL-адрес экземпляра PayPal (api.sandbox.paypal.com).  | Да |

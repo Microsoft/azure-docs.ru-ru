@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/12/2021
 ms.author: alkohli
 ms.openlocfilehash: 04299ba4028de313f640074ca98c0b611f734981
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103565396"
 ---
 # <a name="deploy-a-kubernetes-workload-using-gpu-sharing-on-your-azure-stack-edge-pro"></a>Развертывание рабочей нагрузки Kubernetes с помощью совместного использования GPU на Azure Stack крае Pro
@@ -81,7 +81,7 @@ ms.locfileid: "103565396"
 
 1. [Подключитесь к интерфейсу PowerShell устройства](azure-stack-edge-gpu-connect-powershell-interface.md#connect-to-the-powershell-interface).
 
-1. Выполните следующую команду:
+1. Выполните следующую команду.
 
     ```powershell
     Get-HcsGpuNvidiaSmi
@@ -129,7 +129,7 @@ ms.locfileid: "103565396"
 
 Вы запустите первое задание, чтобы развернуть приложение на устройстве в пространстве имен `mynamesp1` . В этом развертывании приложения также будет показано, что совместное использование контекста GPU не включено по умолчанию. 
 
-1. Вывод списка всех модулей Pod, выполняющихся в пространстве имен. Выполните следующую команду: 
+1. Вывод списка всех модулей Pod, выполняющихся в пространстве имен. Выполните следующую команду. 
 
     ```powershell
     kubectl get pods -n <Name of the namespace>
@@ -141,7 +141,7 @@ ms.locfileid: "103565396"
     PS C:\WINDOWS\system32> kubectl get pods -n mynamesp1
     No resources found.
     ```
-1. Запустите задание развертывания на устройстве с помощью развертывания. YAML, предоставленного ранее. Выполните следующую команду: 
+1. Запустите задание развертывания на устройстве с помощью развертывания. YAML, предоставленного ранее. Выполните следующую команду. 
 
     ```powershell
     kubectl apply -f <Path to the deployment .yaml> -n <Name of the namespace> 
@@ -176,7 +176,7 @@ ms.locfileid: "103565396"
 
     `cuda-sample1-cf979886d-xcwsq`На вашем устройстве работают два модуля (Pod) и `cuda-sample2-68b4899948-vcv68` .
 
-1. Получение сведений о модулях Pod. Выполните следующую команду:
+1. Получение сведений о модулях Pod. Выполните следующую команду.
 
     ```powershell
     kubectl -n <Name of the namespace> describe <Name of the job> 
@@ -307,7 +307,7 @@ ms.locfileid: "103565396"
     PS C:\WINDOWS\system32>
     ```
  
-1. После завершения имитации можно просмотреть журналы и общее время завершения моделирования. Выполните следующую команду:
+1. После завершения имитации можно просмотреть журналы и общее время завершения моделирования. Выполните следующую команду.
 
     ```powershell
     kubectl logs -n <Name of the namespace> <pod name>
@@ -509,7 +509,7 @@ ms.locfileid: "103565396"
     +-----------------------------------------------------------------------------+
     ```
 
-1. После завершения имитации можно просмотреть журналы и общее время завершения моделирования. Выполните следующую команду:
+1. После завершения имитации можно просмотреть журналы и общее время завершения моделирования. Выполните следующую команду.
 
     ```powershell
         PS C:\WINDOWS\system32> kubectl get pods -n mynamesp1
@@ -593,6 +593,6 @@ deployment.apps "cuda-sample2" deleted
 PS C:\WINDOWS\system32>
 ```
     
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Развертывание IOT Edge рабочей нагрузки с совместным использованием GPU на Azure Stack крае Pro](azure-stack-edge-gpu-deploy-iot-edge-gpu-sharing.md).

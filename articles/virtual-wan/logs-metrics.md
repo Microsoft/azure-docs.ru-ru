@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 06/05/2020
 ms.author: cherylmc
 ms.openlocfilehash: a5bbcc4c07826a5093da3f51c709f49ceb231753
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100596084"
 ---
 # <a name="azure-virtual-wan-logs-and-metrics"></a>Журналы и метрики виртуальной глобальной сети Azure
@@ -127,7 +127,7 @@ ms.locfileid: "100596084"
 
 Записи **журнала действий** собираются по умолчанию и могут быть просмотрены в портал Azure. Журналы действий Azure (ранее известные как *Операционные журналы* и *журналы аудита*) можно использовать для просмотра всех операций, отправленных в подписку Azure.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * См. дополнительные сведения об [отслеживании метрик и журналов Брандмауэра Azure](../firewall/firewall-diagnostics.md).
 * Дополнительные сведения о метриках в Azure Monitor см. в разделе [метрики в Azure Monitor](../azure-monitor/essentials/data-platform-metrics.md).

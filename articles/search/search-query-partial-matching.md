@@ -8,12 +8,12 @@ ms.author: heidist
 ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 12/03/2020
-ms.openlocfilehash: 79ba186351cc145e012658abc30572e99b123dbb
-ms.sourcegitcommit: 16c7fd8fe944ece07b6cf42a9c0e82b057900662
+ms.openlocfilehash: 2e2625fff802e71f797bf6970e763f2bf11c393e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96573992"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104584182"
 ---
 # <a name="partial-term-search-and-patterns-with-special-characters-hyphens-wildcard-regex-patterns"></a>Частичный Поиск терминов и шаблоны со специальными символами (дефисы, подстановочный знак, регулярное выражение, шаблоны)
 
@@ -85,7 +85,7 @@ ms.locfileid: "96573992"
 | [Анализаторы языка](index-add-language-analyzers.md) | Сохраняет дефисы в составных словах, строках, гласных фрагментах и формах глаголов. Если шаблоны запросов содержат тире, может быть достаточно использования анализатора языка. |
 | [This](https://lucene.apache.org/core/6_6_1/analyzers-common/org/apache/lucene/analysis/core/KeywordAnalyzer.html) | Содержимое всего поля размечено как один термин. |
 | [Бель](https://lucene.apache.org/core/6_6_1/analyzers-common/org/apache/lucene/analysis/core/WhitespaceAnalyzer.html) | Разделяется только на пробелы. Термины, содержащие дефисы или другие символы, рассматриваются как один маркер. |
-| [Пользовательский анализатор](index-add-custom-analyzers.md) | такую Создание настраиваемого анализатора позволяет указать как лексему, так и фильтр маркеров. Предыдущие Анализаторы должны использоваться "как есть". Настраиваемый анализатор позволяет выбрать используемые маркеры и фильтры маркеров. <br><br>Рекомендуемым сочетанием является лексема [ключевых слов](https://lucene.apache.org/core/6_6_1/analyzers-common/org/apache/lucene/analysis/core/KeywordTokenizer.html) с [фильтром маркеров нижнего регистра](https://lucene.apache.org/core/6_6_1/analyzers-common/org/apache/lucene/analysis/core/LowerCaseFilter.html). Само по себе предопределенный [анализатор ключевых слов](https://lucene.apache.org/core/6_6_1/analyzers-common/org/apache/lucene/analysis/core/KeywordAnalyzer.html) не использует строчные буквы в верхнем регистре, что может привести к сбою запросов. Пользовательский анализатор предоставляет механизм для добавления фильтра маркеров нижнего регистра. |
+| [Пользовательский анализатор](index-add-custom-analyzers.md) | такую Создание настраиваемого анализатора позволяет указать как лексему, так и фильтр маркеров. Предыдущие Анализаторы должны использоваться "как есть". Настраиваемый анализатор позволяет выбрать используемые маркеры и фильтры маркеров. <br><br>Рекомендуемым сочетанием является лексема [ключевых слов](https://lucene.apache.org/core/6_6_1/analyzers-common/org/apache/lucene/analysis/core/KeywordTokenizer.html) с [фильтром маркеров нижнего регистра](https://lucene.apache.org/core/6_6_1/analyzers-common/org/apache/lucene/analysis/core/LowerCaseFilter.html). Само по себе встроенное средство [анализа ключевых слов](https://lucene.apache.org/core/6_6_1/analyzers-common/org/apache/lucene/analysis/core/KeywordAnalyzer.html) не имеет строчных букв, что может привести к сбою запросов. Пользовательский анализатор предоставляет механизм для добавления фильтра маркеров нижнего регистра. |
 
 Если вы используете средство тестирования веб-API, например POST, можно добавить [вызов RESTful для анализатора тестов](/rest/api/searchservice/test-analyzer) , чтобы проверить выходные данные с маркерами.
 
@@ -160,9 +160,9 @@ ms.locfileid: "96573992"
 
 ### <a name="use-built-in-analyzers"></a>Использование встроенных анализаторов
 
-Встроенные или стандартные анализаторы могут быть заданы по имени в `analyzer` свойстве определения поля, при этом в индексе не требуется дополнительная настройка. В следующем примере показано, как задать `whitespace` анализатор для поля. 
+Встроенные анализаторы могут быть заданы по имени в `analyzer` свойстве определения поля, при этом в индексе не требуется дополнительная настройка. В следующем примере показано, как задать `whitespace` анализатор для поля. 
 
-Другие сценарии и дополнительные сведения о других встроенных анализаторах см. в разделе [стандартный список анализаторов](./index-add-custom-analyzers.md#predefined-analyzers-reference). 
+Другие сценарии и дополнительные сведения о других встроенных анализаторах см. в разделе [встроенные анализаторы](./index-add-custom-analyzers.md#built-in-analyzers). 
 
 ```json
     {

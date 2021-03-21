@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 keywords: АТО, openshift, акуасек, Twistlock, Red Hat
 ms.openlocfilehash: 77e75232b7f9d23f1d07931cc7dc231174e1312d
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100633568"
 ---
 # <a name="run-privileged-containers-in-an-azure-red-hat-openshift-cluster"></a>Запуск привилегированных контейнеров в кластере Azure Red Hat OpenShift
@@ -30,7 +30,7 @@ ms.locfileid: "100633568"
 Прочтите эти инструкции перед выполнением инструкций поставщика.
 Заголовки разделов в шагах, связанных с конкретными продуктами, приведены непосредственно к заголовкам разделов в документации поставщиков.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 В документацию по большинству продуктов безопасности предполагается, что у вас есть права администратора кластера.
 Администраторы клиентов не имеют всех привилегий в Azure Red Hat OpenShift. Разрешения, необходимые для изменения ресурсов на уровне кластера, ограничены.

@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 01/16/2018
 ms.author: alkohli
 ms.openlocfilehash: b18627d2806662d6d966af95d51873d5623b2393
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96015542"
 ---
 # <a name="use-the-net-sdk-to-initiate-data-transformation"></a>Запуск преобразования данных с помощью пакета SDK для .NET
@@ -26,7 +26,7 @@ ms.locfileid: "96015542"
  
   В статье содержится подробная информация по созданию примера консольного приложения .NET для запуска задания преобразования данных и отслеживания его завершения. Дополнительные сведения о том, как запустить преобразование данных через службу автоматизации, можно узнать из статьи [Активация задания с помощью службы автоматизации Azure (закрытая предварительная версия)](storsimple-data-manager-job-using-automation.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед началом работы убедитесь, что у вас есть следующие компоненты:
 *   Компьютер с такими запущенными средами:
@@ -192,6 +192,6 @@ ms.locfileid: "96015542"
 
     ![Полный фрагмент кода для запуска задания .NET](media/storsimple-data-manager-dotnet-jobs/start-dotnet-job-code-snippet.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Используйте диспетчер данных StorSimple пользовательский интерфейс для преобразования данных](storsimple-data-manager-ui.md).

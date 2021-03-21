@@ -7,10 +7,10 @@ ms.date: 11/02/2020
 author: swinarko
 ms.author: sawinark
 ms.openlocfilehash: 9a82b305adec1385bf659987ea39df6bb953cd70
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100370977"
 ---
 # <a name="join-an-azure-ssis-integration-runtime-to-a-virtual-network"></a>Присоединение среды выполнения интеграции Azure SSIS к виртуальной сети
@@ -595,7 +595,7 @@ Start-AzDataFactoryV2IntegrationRuntime -ResourceGroupName $ResourceGroupName `
 
 Выполнение этой команды занимает от 20 до 30 минут.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о Azure-SSIS IR см. в следующих статьях: 
 - [Azure-SSIS IR](concepts-integration-runtime.md#azure-ssis-integration-runtime). В этой статье содержатся общие сведения о IRs, включая Azure-SSIS IR. 

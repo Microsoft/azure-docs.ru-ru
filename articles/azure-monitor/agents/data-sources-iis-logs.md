@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 02/26/2021
-ms.openlocfilehash: 484e49219b94f5974661b1e76f533236666ebcfb
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 87cb19daa23c9fcca601771a9fe168b98be02627
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102050738"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104586273"
 ---
 # <a name="collect-iis-logs-with-log-analytics-agent-in-azure-monitor"></a>Получение журналов IIS с помощью агента Log Analytics в Azure Monitor
 Службы IIS (IIS) хранит данные о действиях пользователей в файлах журнала, которые могут собираться агентом Log Analytics и храниться в [Azure Monitor журналах](../data-platform.md).
@@ -28,7 +28,7 @@ ms.locfileid: "102050738"
 Настройте журналы IIS в Azure Monitor из [меню конфигурации агента](../agents/agent-data-sources.md#configuring-data-sources) для агента log Analytics.  Никакие настройки, кроме выбора параметра **Сбор файлов журналов IIS в формате W3C**, не требуются.
 
 
-## <a name="data-collection"></a>Сбор данных
+## <a name="data-collection"></a>сбор данных
 Служба Azure Monitor собирает записи журналов IIS от каждого агента при каждом изменении меток времени журнала. Журнал считывается каждые **5 минут**. Если по какой-либо причине IIS не обновляет метку времени до момента, когда создается новый файл, записи будут собираться после создания нового файла. Частота создания нового файла определяется параметром **расписания развертывания файла журнала** для сайта IIS, который по умолчанию имеет значение один раз в день. Если параметр имеет значение **ежечасно**, Azure Monitor собирает журнал каждый час. Если параметр имеет значение **ежедневно**, Azure Monitor собирает журнал каждые 24 часа.
 
 > [!IMPORTANT]
@@ -37,7 +37,7 @@ ms.locfileid: "102050738"
 ## <a name="iis-log-record-properties"></a>Свойства записей в журналах IIS
 Записи в журналах IIS относятся к типу **W3CIISLog** и обладают свойствами, описанными в таблице ниже.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | Компьютер |Имя компьютера, с которого было получено событие. |
 | cIP |IP-адрес клиента. |
@@ -60,6 +60,8 @@ ms.locfileid: "102050738"
 | sSiteName |Имя сайта IIS. |
 | TimeGenerated |Дата и время регистрации записи. |
 | TimeTaken |Время обработки запроса в миллисекундах. |
+| csHost | Имя узла. |
+| csBytes | Число байтов, полученных сервером. |
 
 ## <a name="log-queries-with-iis-logs"></a>Запросы для получения записей журналов IIS
 В следующей таблице представлены различные примеры запросов к журналу, извлекающих записи из журналов IIS.

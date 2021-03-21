@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/17/2020
 ms.author: pafarley
 ms.openlocfilehash: 218579176b807bbdae85646f27eaa7f301d4b9a6
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102428275"
 ---
 # <a name="build-an-enrollment-app-for-android-with-react"></a>Создание приложения регистрации для Android с реагированием
@@ -24,7 +24,7 @@ ms.locfileid: "102428275"
 
 Пример приложения регистрации написан с помощью JavaScript и реагирует на собственную инфраструктуру. В настоящее время его можно развернуть на устройствах Android. в будущем появятся дополнительные варианты развертывания.
 
-## <a name="prerequisites"></a>Предварительные требования 
+## <a name="prerequisites"></a>Предварительные условия 
 
 * Подписка Azure — [создайте ее бесплатно](https://azure.microsoft.com/free/cognitive-services/).  
 * Создав подписку Azure, [Создайте ресурс лица](https://portal.azure.com/#create/Microsoft.CognitiveServicesFace) в портал Azure, чтобы получить ключ и конечную точку. После развертывания ресурса выберите элемент **Перейти к ресурсу**.  

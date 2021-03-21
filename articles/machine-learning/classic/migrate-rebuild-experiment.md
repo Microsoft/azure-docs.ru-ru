@@ -9,10 +9,10 @@ author: xiaoharper
 ms.author: zhanxia
 ms.date: 03/08/2021
 ms.openlocfilehash: bb944cb034fdd7cc51648314154a654bc1265533
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103565425"
 ---
 # <a name="rebuild-a-studio-classic-experiment-in-azure-machine-learning"></a>Перестроение (классическая) эксперимента в Машинное обучение Azure
@@ -87,7 +87,7 @@ ms.locfileid: "103565425"
 > Модули конструктора используют пакеты Python с открытым исходным кодом по сравнению с пакетами C# в студии (классическая модель). В результате выходные данные модуля могут немного отличаться между конструктором и средой Studio (классической). 
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этой статье вы узнали, как перестроить экспериментальную (классический) эксперимент в Машинное обучение Azure. Следующим шагом является [Перестроение веб-служб в машинное обучение Azure](migrate-rebuild-web-service.md).
 
