@@ -11,10 +11,10 @@ ms.tgt_pltfrm: vm-linux
 ms.topic: article
 ms.date: 04/14/2018
 ms.openlocfilehash: 0fb19524079f84e92e1ddbc98a61917026492663
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "89469904"
 ---
 # <a name="use-managed-identities-for-azure-resources-in-azure-cloud-shell"></a>Использование управляемых удостоверений для ресурсов Azure в Azure Cloud Shell
@@ -45,6 +45,6 @@ echo The MSI access token is $access_token
 
 Сведения об обработке ошибок маркера см. [здесь](../active-directory/managed-identities-azure-resources/how-to-use-vm-token.md#error-handling).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Управляемое удостоверение службы (MSI) для ресурсов Azure](../active-directory/managed-identities-azure-resources/overview.md)  
 [Использование управляемого удостоверения службы (MSI) виртуальной машины Azure для получения маркера](../active-directory/managed-identities-azure-resources/how-to-use-vm-token.md)

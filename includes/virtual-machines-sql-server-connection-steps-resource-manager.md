@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 10/26/2018
 ms.author: jroth
 ms.openlocfilehash: 51dc04fbef8d09878f33d7fda6f15039d3afba3e
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96026194"
 ---
 ### <a name="configure-a-dns-label-for-the-public-ip-address"></a>Настройка имени DNS для общедоступного IP-адреса
@@ -28,7 +28,7 @@ ms.locfileid: "96026194"
 
 1. Введите имя DNS. Это имя, которое можно использовать для подключения к виртуальной машине SQL Server по имени, а не по IP-адресу.
 
-1. Нажмите кнопку **Сохранить** .
+1. Нажмите кнопку **Сохранить**.
 
     ![имя DNS](./media/virtual-machines-sql-server-connection-steps/rm-dns-label.png)
 
@@ -44,6 +44,6 @@ ms.locfileid: "96026194"
 
 1. В поле **Пароль** введите пароль для этого пользователя.
 
-1. Нажмите кнопку **Соединить**.
+1. Нажмите кнопку **Подключить**.
 
     ![подключение SSMS](./media/virtual-machines-sql-server-connection-steps/rm-ssms-connect.png)

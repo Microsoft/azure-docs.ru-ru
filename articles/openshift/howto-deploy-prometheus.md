@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 keywords: Prometheus, АТО, openshift, метрики, Red Hat
 ms.openlocfilehash: 974096e515401ab5e292dbad4c9beba7f1611a8a
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100633450"
 ---
 # <a name="deploy-a-standalone-prometheus-instance-in-an-azure-red-hat-openshift-cluster"></a>Развертывание автономного экземпляра Prometheus в кластере Azure Red Hat OpenShift

@@ -15,10 +15,10 @@ ms.reviewer: hirsin, nacanuma
 ms.custom: aaddev
 ROBOTS: NOINDEX
 ms.openlocfilehash: f746cc654934464d907c6ad669eb7470e4dcaeeb
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88117742"
 ---
 # <a name="service-to-service-calls-that-use-delegated-user-identity-in-the-on-behalf-of-flow"></a>Вызовы между службами с использованием делегированного удостоверения пользователя в потоке On-Behalf-Of
@@ -105,7 +105,7 @@ https://login.microsoftonline.com/<tenant>/oauth2/token
 
 При использовании общего секрета запрос маркера взаимного доступа между службами содержит следующие параметры:
 
-| Параметр | Тип | Описание |
+| Параметр | Type | Описание |
 | --- | --- | --- |
 | grant_type |обязательно | Тип запроса токена. Запрос OBO использует JSON Web Token (JWT), поэтому необходимо задать значение **urn:ietf:params:oauth:grant-type:jwt-bearer**. |
 | assertion |обязательно | Значение маркера доступа, используемого в запросе. |
@@ -139,7 +139,7 @@ grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer
 
 Запрос маркера взаимного доступа между службами с помощью сертификата содержит следующие параметры:
 
-| Параметр | Тип | Описание |
+| Параметр | Type | Описание |
 | --- | --- | --- |
 | grant_type |обязательно | Тип запроса токена. Запрос OBO использует маркер доступа JWT, поэтому необходимо задать значение **urn:ietf:params:oauth:grant-type:jwt-bearer**. |
 | assertion |обязательно | Значение токена, используемого в запросе. |
@@ -249,7 +249,7 @@ Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw
 
 Запрос утверждения SAML между службами содержит следующие параметры:
 
-| Параметр | Тип | Описание |
+| Параметр | Type | Описание |
 | --- | --- | --- |
 | grant_type |обязательно | Тип запроса токена. Для запроса с использованием JWT это значение должно быть равно **urn:ietf:params:oauth:grant-type:jwt-bearer**. |
 | assertion |обязательно | Значение маркера доступа, используемого в запросе.|

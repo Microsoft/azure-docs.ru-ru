@@ -6,10 +6,10 @@ ms.author: yalavi
 ms.topic: conceptual
 ms.date: 02/14/2021
 ms.openlocfilehash: 854867bb6f40bdd8f0fac28e69d936a4027760b5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101714380"
 ---
 # <a name="create-view-and-manage-classic-metric-alerts-using-azure-monitor"></a>Создание и просмотр классических оповещений метрик, а также управление ими с помощью Azure Monitor
@@ -26,7 +26,7 @@ ms.locfileid: "101714380"
 
 2. В разделе **Мониторинг** выберите **Оповещения (классические)**. Текст и значок для разных ресурсов могут незначительно отличаться. Если пункт **Оповещения (классические)** не отображается здесь, его можно найти в разделе **Оповещения** или **Правила генерации оповещений**
 
-    ![Наблюдение](media/alerts-classic-portal/AlertRulesButton.png)
+    ![Мониторинг](media/alerts-classic-portal/AlertRulesButton.png)
 
 3. Выберите команду **Добавить оповещение метрики (классическое)**, а затем заполните поля.
 

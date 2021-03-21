@@ -10,10 +10,10 @@ ms.subservice: data-lake-storage-gen2
 ms.reviewer: prishet
 ms.custom: devx-track-js
 ms.openlocfilehash: 8ce5df805ddce6cdb52e4225bb77e2d8dfa9b9b0
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100650173"
 ---
 # <a name="use-javascript-to-manage-directories-and-files-in-azure-data-lake-storage-gen2"></a>Использование JavaScript для управления каталогами и файлами в Azure Data Lake Storage 2-го поколения
@@ -255,8 +255,8 @@ async function ListFilesInDirectory(fileSystemClient) {
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Пакет (диспетчер пакетов узла)](https://www.npmjs.com/package/@azure/storage-file-datalake)
 - [Примеры](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/storage/storage-file-datalake/samples)
-- [Отправить отзыв](https://github.com/Azure/azure-sdk-for-java/issues)
+- [Оставить отзыв](https://github.com/Azure/azure-sdk-for-java/issues)

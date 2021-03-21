@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 02/21/2019
 ms.author: srrengar
 ms.openlocfilehash: 678e96c9b5611cd6d72abd7c4582691b55ffe479
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100581551"
 ---
 # <a name="event-analysis-and-visualization-with-azure-monitor-logs"></a>Анализ событий и визуализация с помощью журналов Azure Monitor
@@ -100,7 +100,7 @@ ServiceFabricOperationalEvent
 
 ![События запросов на каждом узле](media/service-fabric-diagnostics-event-analysis-oms/oms_kusto_query.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Чтобы включить мониторинг инфраструктуры (т. е. счетчики производительности), перейдите к разделу о [добавлении агента Log Analytics](service-fabric-diagnostics-oms-agent.md). Агент собирает счетчики производительности и добавляет их в имеющуюся рабочую область.
 * Для локальных кластеров Azure Monitor журналы предлагают шлюз (прокси-сервер HTTP Forward), который можно использовать для отправки данных в журналы Azure Monitor. Дополнительные сведения см. в статье [Подключение компьютеров без доступа к Интернету к журналам Azure Monitor с помощью шлюза log Analytics](../azure-monitor/agents/gateway.md).

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: devx-track-dotnet
 ms.date: 05/01/2017
 ms.openlocfilehash: ce77f5074d707da5cfb251a103653b96e4644b5f
-ms.sourcegitcommit: d767156543e16e816fc8a0c3777f033d649ffd3c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92544534"
 ---
 # <a name="aspnet-session-state-provider-for-azure-cache-for-redis"></a>Поставщик состояний сеансов ASP.NET для кэша Azure для Redis
@@ -22,7 +22,7 @@ ms.locfileid: "92544534"
 
 ## <a name="store-aspnet-session-state-in-the-cache"></a>Сохранение состояния сеанса ASP.NET в кэше
 
-Чтобы настроить клиентское приложение в Visual Studio, используя пакет NuGet состояний сеансов кэша Azure для Redis, в меню **Сервис** выберите **Диспетчер пакетов NuGet** , а затем **Консоль диспетчера пакетов** .
+Чтобы настроить клиентское приложение в Visual Studio, используя пакет NuGet состояний сеансов кэша Azure для Redis, в меню **Сервис** выберите **Диспетчер пакетов NuGet**, а затем **Консоль диспетчера пакетов**.
 
 Выполните следующую команду в окне `Package Manager Console`:
     
@@ -91,8 +91,8 @@ Install-Package Microsoft.Web.RedisSessionStateProvider
 * **retryTimeoutInMilliseconds** — в течение этого интервала (указывается в миллисекундах) для неудачных операций выполняются повторные попытки. Первая повторная попытка происходит через 20 миллисекунд, а затем попытки повторяются каждую секунду до истечения интервала retryTimeoutInMilliseconds. Сразу после этого интервала операция повторяется еще один последний раз. Если операция по-прежнему заканчивается сбоем, вызывающему объекту отправляется исключение (в зависимости от значения параметра throwOnError). Значение по умолчанию — 0, что означает нулевое количество попыток.
 * **databaseId** — этот параметр указывает базу данных, которую необходимо использовать для выходных данных кэша. Если значение в этом поле не задано, по умолчанию используется значение 0.
 * **applicationName** — ключи хранятся в кэше Redis как `{<Application Name>_<Session ID>}_Data`. Такая схема именования позволяет нескольким приложениям совместно использовать один экземпляр Redis. Этот параметр — необязательный, и, если для него не указано другое значение, используется значение по умолчанию.
-* **connectionTimeoutInMilliseconds**  — этот параметр позволяет переопределить параметр connectTimeout в клиенте StackExchange.Redis. Если для параметра connectTimeout значение не указано, по умолчанию используется значение 5000. Дополнительную информацию см. в статье [Модель конфигурации StackExchange.Redis](https://go.microsoft.com/fwlink/?LinkId=398705).
-* **operationTimeoutInMilliseconds**  — этот параметр позволяет переопределить параметр syncTimeout в клиенте StackExchange.Redis. Если для параметра syncTimeout значение не указано, по умолчанию используется значение 1000. Дополнительную информацию см. в статье [Модель конфигурации StackExchange.Redis](https://go.microsoft.com/fwlink/?LinkId=398705).
+* **connectionTimeoutInMilliseconds** — этот параметр позволяет переопределить параметр connectTimeout в клиенте StackExchange.Redis. Если для параметра connectTimeout значение не указано, по умолчанию используется значение 5000. Дополнительную информацию см. в статье [Модель конфигурации StackExchange.Redis](https://go.microsoft.com/fwlink/?LinkId=398705).
+* **operationTimeoutInMilliseconds** — этот параметр позволяет переопределить параметр syncTimeout в клиенте StackExchange.Redis. Если для параметра syncTimeout значение не указано, по умолчанию используется значение 1000. Дополнительную информацию см. в статье [Модель конфигурации StackExchange.Redis](https://go.microsoft.com/fwlink/?LinkId=398705).
 * **redisSerializerType** — этот параметр позволяет задать пользовательскую сериализацию содержимого сеанса, отправляемого в Redis. Указанный тип должен реализовывать `Microsoft.Web.Redis.ISerializer` и объявить общедоступный конструктор без параметров. По умолчанию используется `System.Runtime.Serialization.Formatters.Binary.BinaryFormatter`.
 
 Дополнительные сведения об этих свойствах см. в записи блога [Объявление поставщика состояний сеансов ASP.NET для кэша Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/).

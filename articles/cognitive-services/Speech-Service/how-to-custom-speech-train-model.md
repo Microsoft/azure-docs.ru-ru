@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 02/12/2021
 ms.author: trbye
 ms.openlocfilehash: 166fb94f5a3aea505c0d20df861b8bc4de9ad8aa
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103491118"
 ---
 # <a name="train-and-deploy-a-custom-speech-model"></a>Обучение и развертывание модели Пользовательского распознавания речи
@@ -88,7 +88,7 @@ ms.locfileid: "103491118"
 > [!NOTE]
 >Данные журнала доступны в течение 30 дней в хранилище, принадлежащем корпорации Майкрософт. После этого оно будет удалено. Если учетная запись хранения, принадлежащая клиенту, связана с подпиской Cognitive Services, данные журнала не будут удалены автоматически.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Узнайте, как использовать настраиваемую модель](how-to-specify-source-language.md)
 

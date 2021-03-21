@@ -8,10 +8,10 @@ ms.author: nimolnar
 ms.date: 09/17/2018
 ms.reviewer: mbullwin
 ms.openlocfilehash: a47b41a8b7f4e18be58c32c97cf279b9229f26da
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100579513"
 ---
 # <a name="what-is-distributed-tracing"></a>Что такое распределенная трассировка?
@@ -53,7 +53,7 @@ Application Insights агенты и (или) пакеты SDK для .NET, .NET
 
 На веб-сайте OpenCensus поддерживается справочная документация по API для [Python](https://opencensus.io/api/python/trace/usage.html) и [Go](https://godoc.org/go.opencensus.io), а также несколько различных руководств по использованию OpenCensus. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Руководство по использованию OpenCensus для Python](https://opencensus.io/api/python/trace/usage.html)
 * [Сопоставление приложений](./app-map.md)

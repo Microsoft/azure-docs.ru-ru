@@ -2,21 +2,21 @@
 title: Учебник. Загрузка данных с помощью портал Azure & SSMS
 description: В руководстве используется портал Azure и SQL Server Management Studio для загрузки хранилища данных WideWorldImportersDW из глобального большого двоичного объекта Azure в пул SQL Azure синапсе Analytics.
 services: synapse-analytics
-author: kevinvngo
+author: gaursa
 manager: craigg
 ms.service: synapse-analytics
 ms.topic: conceptual
 ms.subservice: sql-dw
 ms.date: 01/12/2021
-ms.author: kevin
+ms.author: gaursa
 ms.reviewer: igorstan
 ms.custom: seo-lt-2019, synapse-analytics
-ms.openlocfilehash: bd9d477ed20122b0706e7997ab8922dcce7a59ba
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.openlocfilehash: f41d7359b8273d685d0ab3c962697ca45ff7d18f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98685431"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104598037"
 ---
 # <a name="tutorial-load-data-to--azure-synapse-analytics-sql-pool"></a>Учебник. Загрузка данных в пул SQL Azure синапсе Analytics
 
@@ -87,7 +87,7 @@ ms.locfileid: "98685431"
 
 2. Введите полное имя сервера и в качестве имени для входа укажите **LoaderRC60**.  Введите пароль для LoaderRC60.
 
-3. Нажмите кнопку **Соединить**.
+3. Нажмите кнопку **Подключить**.
 
 4. Когда подключение будет готово, вы увидите в обозревателе объектов два подключения к серверу. Одно подключение — как ServerAdmin, а второе — как LoaderRC60.
 
@@ -988,7 +988,7 @@ SELECT TOP 1 * FROM [wwi].[dimension_TransactionType];
 
 5. Чтобы удалить группу ресурсов, щелкните **SampleRG**, а затем нажмите кнопку **Удалить группу ресурсов**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Из этого руководства вы узнали, как создать хранилище данных, а также как создать пользователя для загрузки данных. Вы создали внешние таблицы для определения структуры данных, хранящихся в Azure Storage Blob, а затем использовали инструкцию PolyBase CREATE TABLE AS SELECT для загрузки данных в хранилище данных.
 

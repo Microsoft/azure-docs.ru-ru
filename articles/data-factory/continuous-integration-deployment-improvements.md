@@ -8,10 +8,10 @@ ms.reviewer: maghan
 ms.topic: conceptual
 ms.date: 02/02/2021
 ms.openlocfilehash: 496d2b6b3d669013c8174e9bc961d0a2f640bed3
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103462088"
 ---
 # <a name="automated-publishing-for-continuous-integration-and-delivery"></a>Автоматическая публикация для непрерывной интеграции и доставки
@@ -78,7 +78,7 @@ ms.locfileid: "103462088"
 
 ### <a name="export-arm-template"></a>Экспорт шаблона ARM
 
-Выполните команду `npm run start export <rootFolder> <factoryId> [outputFolder]` , чтобы экспортировать шаблон ARM, используя ресурсы указанной папки. Эта команда также выполняет проверку перед созданием шаблона ARM. Ниже приведен пример:
+Выполните команду `npm run start export <rootFolder> <factoryId> [outputFolder]` , чтобы экспортировать шаблон ARM, используя ресурсы указанной папки. Эта команда также выполняет проверку перед созданием шаблона ARM. Приведем пример:
 
 ```
 npm run start export C:\DataFactories\DevDataFactory /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testResourceGroup/providers/Microsoft.DataFactory/factories/DevDataFactory ArmTemplateOutput
@@ -93,7 +93,7 @@ npm run start export C:\DataFactories\DevDataFactory /subscriptions/xxxxxxxx-xxx
  
 ### <a name="validate"></a>Проверить
 
-Выполните команду `npm run start validate <rootFolder> <factoryId>` , чтобы проверить все ресурсы заданной папки. Ниже приведен пример:
+Выполните команду `npm run start validate <rootFolder> <factoryId>` , чтобы проверить все ресурсы заданной папки. Приведем пример:
 
 ```
 npm run start validate C:\DataFactories\DevDataFactory /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testResourceGroup/providers/Microsoft.DataFactory/factories/DevDataFactory
@@ -184,7 +184,7 @@ npm run start validate C:\DataFactories\DevDataFactory /subscriptions/xxxxxxxx-x
 1.  Введите код YAML. В качестве отправной точки рекомендуется использовать файл YAML.
 1.  Сохраните и запустите. Если вы использовали YAML, он активируется каждый раз при обновлении основной ветви.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о непрерывной интеграции и доставке в фабрике данных:
 

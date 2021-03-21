@@ -8,10 +8,10 @@ ms.date: 02/09/2021
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: c9ce87584373bd87a8f89ecb4ea692b44d3fab4d
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102202966"
 ---
 # <a name="enable-a-managed-identity-for-routing-azure-digital-twins-events-preview-azure-cli"></a>Включение управляемого удостоверения для маршрутизации событий цифровых двойников Azure (Предварительная версия): Azure CLI
@@ -80,7 +80,7 @@ az dt create -n {name_of_existing_instance} -g {resource_group} --assign-identit
 | Назначение | Роль Azure |
 | --- | --- |
 | Центры событий Azure | Отправитель данных Центров событий Azure |
-| Служебная шина Azure | Отправитель данных Служебной шины Azure |
+| Azure Service Bus | Отправитель данных Служебной шины Azure |
 | Контейнер хранилища Azure | Участник данных BLOB-объектов хранилища |
 
 Дополнительные сведения о конечных точках, маршрутах и типах назначений, поддерживаемых для маршрутизации в Azure Digital двойников, см. в разделе [*Основные понятия: маршруты событий*](concepts-route-events.md).
@@ -122,7 +122,7 @@ az dt endpoint create eventhub --endpoint-name {endpoint_name} --eventhub-resour
 
 Чтобы продолжить использовать конечную точку, настроенную с управляемым удостоверением, который теперь отключен, необходимо удалить конечную точку и [создать ее повторно](how-to-manage-routes-apis-cli.md#create-an-endpoint-for-azure-digital-twins) с другим типом проверки подлинности. Возобновление доставки в конечную точку после этого изменения может занять до часа.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения об управляемых удостоверениях в Azure AD: 
 * [*Управляемые удостоверения для ресурсов Azure*](../active-directory/managed-identities-azure-resources/overview.md)

@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 07/06/2020
 ms.openlocfilehash: 59f81103e72be6c0f1b629981fdb53c8467000a9
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102037427"
 ---
 # <a name="container-monitoring-solution-in-azure-monitor"></a>Решение для мониторинга контейнеров в Azure Monitor
@@ -636,7 +636,7 @@ Log Analytics добавляет к контейнеру пометку **Сбо
 
 Создав запрос, который вы считаете полезным, сохраните его, щелкнув **Избранное** в верхней части страницы поиска по журналам. Позднее вы сможете легко открыть его на странице **Моя панель мониторинга**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Журналы запросов](../logs/log-query-overview.md) для просмотра подробных записей данных контейнера.
 

@@ -7,12 +7,12 @@ ms.author: baanders
 ms.date: 8/27/2020
 ms.topic: how-to
 ms.service: digital-twins
-ms.openlocfilehash: 7bb9b6d4a6ca006952d709244e6526345d44431e
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: f1ed4b9beda9848bba8fb12783f49dcf8016d3dd
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102630272"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104590625"
 ---
 # <a name="connect-function-apps-in-azure-for-processing-data"></a>Подключение приложений функций в Azure для обработки данных
 
@@ -48,7 +48,7 @@ ms.locfileid: "102630272"
 
 :::image type="content" source="media/how-to-create-azure-function/event-grid-trigger-function.png" alt-text="Снимок экрана Visual Studio с отображением диалогового окна для создания нового приложения функций Azure. Параметр триггера сетки событий выделен.":::
 
-После создания приложения-функции Visual Studio создаст пример кода в файле **function1.CS** в папке проекта. Эта небольшая функция используется для записи событий в журнал.
+После создания приложения-функции Visual Studio создаст пример кода в файле **функция1. CS** в папке проекта. Эта небольшая функция используется для записи событий в журнал.
 
 :::image type="content" source="media/how-to-create-azure-function/visual-studio-sample-code.png" alt-text="Снимок экрана Visual Studio в окне проекта для нового проекта, который был создан. Существует код для примера функции с именем функция1." lightbox="media/how-to-create-azure-function/visual-studio-sample-code.png":::
 
@@ -63,13 +63,13 @@ ms.locfileid: "102630272"
 * [System.Net.Http](https://www.nuget.org/packages/System.Net.Http/)
 * [Azure. Core](https://www.nuget.org/packages/Azure.Core/)
 
-Затем в Visual Studio обозреватель решений откройте файл _function1.CS_ , в котором имеется образец кода, и добавьте следующие `using` инструкции для этих пакетов в функцию.
+Затем в обозреватель решений Visual Studio откройте файл _функция1. CS_ , где имеется образец кода, и добавьте следующие `using` инструкции для этих пакетов в функцию.
 
 :::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/adtIngestFunctionSample.cs" id="Function_dependencies":::
 
 ## <a name="add-authentication-code-to-the-function"></a>Добавление кода проверки подлинности в функцию
 
-Теперь вы можете объявить переменные уровня класса и добавить код проверки подлинности, который позволит функции получить доступ к Azure Digital двойников. Вы добавите следующий элемент в функцию в файл _function1.CS_ .
+Теперь вы можете объявить переменные уровня класса и добавить код проверки подлинности, который позволит функции получить доступ к Azure Digital двойников. В функцию в файле _функция1. CS_ будет добавлен следующий элемент.
 
 * Код для чтения URL-адреса службы цифровых двойников Azure в качестве **переменной среды**. Рекомендуется считать URL-адрес службы из переменной среды, а не жестко кодировать его в функции. Значение этой переменной среды задается [Далее в этой статье](#set-up-security-access-for-the-function-app). Дополнительные сведения о переменных среды см. в разделе [*Управление приложением функции*](../azure-functions/functions-how-to-use-azure-function-app-settings.md?tabs=portal).
 
@@ -118,12 +118,14 @@ ms.locfileid: "102630272"
 # <a name="cli"></a>[CLI](#tab/cli)
 
 Эти команды можно выполнить в [Azure Cloud Shell](https://shell.azure.com) или [локальной Azure CLI установки](/cli/azure/install-azure-cli).
+Вы можете использовать управляемое системой удостоверение приложения-функции, чтобы предоставить ему роль _**владельца данных Digital двойников Azure**_ для своего экземпляра Azure Digital двойников. Это предоставит приложению функции в экземпляре разрешение на выполнение действий плоскости данных. Затем сделайте URL-адрес экземпляра Azure Digital двойников доступным для вашей функции, задав переменную среды.
 
 ### <a name="assign-access-role"></a>Назначение роли доступа
 
+[!INCLUDE [digital-twins-permissions-required.md](../../includes/digital-twins-permissions-required.md)]
+
 В схеме функций из предыдущих примеров требуется передать в него токен носителя, чтобы иметь возможность проходить проверку подлинности в Azure Digital двойников. Чтобы убедиться, что этот токен носителя передан, необходимо настроить разрешения [управляемое удостоверение службы (MSI)](../active-directory/managed-identities-azure-resources/overview.md) для приложения-функции, чтобы получить доступ к Azure Digital двойников. Это необходимо сделать только один раз для каждого приложения функции.
 
-Вы можете использовать управляемое системой удостоверение приложения-функции, чтобы предоставить ему роль _**владельца данных Digital двойников Azure**_ для своего экземпляра Azure Digital двойников. Это предоставит приложению функции в экземпляре разрешение на выполнение действий плоскости данных. Затем сделайте URL-адрес экземпляра Azure Digital двойников доступным для вашей функции, задав переменную среды.
 
 1. Используйте следующую команду, чтобы просмотреть сведения об управляемом системой удостоверении для функции. Запишите значение поля _principalId_ в выходных данных команды.
 
@@ -162,6 +164,8 @@ az functionapp config appsettings set -g <your-resource-group> -n <your-App-Serv
 Выполните следующие действия в [портал Azure](https://portal.azure.com/).
 
 ### <a name="assign-access-role"></a>Назначение роли доступа
+
+[!INCLUDE [digital-twins-permissions-required.md](../../includes/digital-twins-permissions-required.md)]
 
 Управляемое удостоверение, назначенное системой, позволяет ресурсам Azure проходить проверку подлинности в облачных службах (например, Azure Key Vault) без сохранения учетных данных в коде. После включения все необходимые разрешения можно будет предоставить через Управление доступом на основе ролей в Azure. Жизненный цикл этого типа управляемого удостоверения связан с жизненным циклом этого ресурса. Кроме того, каждый ресурс может иметь только одно назначенное системой управляемое удостоверение.
 

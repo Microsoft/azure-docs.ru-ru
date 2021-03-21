@@ -11,10 +11,10 @@ ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 02/18/2020
 ms.openlocfilehash: ac2b535b2e6b7a6b4169d08dd1768d69e685a216
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102562033"
 ---
 # <a name="migration-overview-sql-server-to-sql-managed-instance"></a>Общие сведения о миграции: SQL Server в SQL Управляемый экземпляр
@@ -150,7 +150,7 @@ ms.locfileid: "102562033"
 
 Отчеты SQL Server Reporting Services (SSRS) можно перенести в отчеты с разбивкой на страницы в Power BI. Используйте [средство миграции языка определения отчетов](https://github.com/microsoft/RdlMigration) для подготовки и переноса отчетов. Это средство было разработано корпорацией Майкрософт, чтобы помочь клиентам перенести RDL-отчеты с серверов SSRS на платформу Power BI. Он доступен на сайте GitHub, и он документирует полное пошаговое руководство по сценарию миграции. 
 
-#### <a name="sql-server-analysis-services"></a>SQL Server Analysis Services
+#### <a name="sql-server-analysis-services"></a>службы SQL Server Analysis Services
 
 SQL Server Analysis Services табличные модели из SQL Server 2012 и более поздних версий можно перенести в Azure Analysis Services, который является моделью развертывания PaaS для Analysis Services табличной модели в Azure. Дополнительные сведения о переносе локальных моделей в Azure Analysis Services см. в этом [видеоруководстве](https://azure.microsoft.com/resources/videos/azure-analysis-services-moving-models/).
 
@@ -186,7 +186,7 @@ SQL Server функции высокого уровня доступности A
 
 Кроме того, можно использовать [служебную программу PowerShell](https://github.com/microsoft/DataMigrationTeam/tree/master/IP%20and%20Scripts/MoveLogins) , разработанную специально для архитекторов Microsoft Data Migration Architect. Программа использует PowerShell для создания скрипта T-SQL для повторного создания имен входа и выбора пользователей базы данных из источника в целевой объект. Средство автоматически сопоставляет учетные записи Windows AD с учетными записями Azure AD и может выполнить поиск имени участника-пользователя для каждого входа в исходную Active Directory. Средство создает скрипты для пользовательских ролей сервера и базы данных, а также для членства в роли, роли базы данных и разрешений пользователей. Автономные базы данных в настоящее время не поддерживаются, и скрипты имеют только подмножество возможных SQL Server разрешений. 
 
-#### <a name="encryption"></a>Шифрование
+#### <a name="encryption"></a>Encryption
 
 При миграции баз данных, защищенных  [прозрачное шифрование данных](../../database/transparent-data-encryption-tde-overview.md),   в управляемый экземпляр с помощью собственного параметра восстановления, *перед* восстановлением базы данных [перенесите соответствующий сертификат](../../managed-instance/tde-certificate-migrate.md) из исходного SQL Server в целевой управляемый экземпляр SQL. 
 

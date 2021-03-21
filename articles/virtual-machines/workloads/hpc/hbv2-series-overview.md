@@ -11,12 +11,12 @@ ms.topic: article
 ms.date: 09/28/2020
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: 6648f77c5eacf40f848bc9b24aa6e257d8adf626
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: 59dd953b2116bc1ec7bd0a581cc181df64fbf49e
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/20/2021
-ms.locfileid: "101674649"
+ms.locfileid: "104721153"
 ---
 # <a name="hbv2-series-virtual-machine-overview"></a>Обзор виртуальных машин серии HBv2 
 
@@ -53,14 +53,16 @@ ms.locfileid: "101674649"
 |-----------------------------|-----------------------------------------------------------|
 | Максимальный размер задания MPI            | 36000 ядер (300 ВМ в одном масштабируемом наборе виртуальных машин с singlePlacementGroup = true) |
 | Поддержка MPI                 | HPC-X, Intel MPI, Опенмпи, MVAPICH2, МПИЧ, платформа MPI  |
-| Дополнительные платформы       | Унифицированная связь X, либфабрик, ПГАС                  |
-| Поддержка хранилища Azure       | Диски уровня "Стандартный" и "Премиум" (максимум 8 дисков)              |
-| Поддержка ОС для SRIOV RDMA   | CentOS/RHEL 7.6 +, SLES 12 SP4 +, WinServer 2016 +           |
-| Поддержка Orchestrator        | Циклеклауд, пакетная                                         | 
+| Дополнительные платформы       | УККС, либфабрик, ПГАС |
+| Поддержка хранилища Azure       | Диски уровня "Стандартный" и "Премиум" (максимум 8 дисков) |
+| Поддержка ОС для SRIOV RDMA   | CentOS/RHEL 7.6 +, Ubuntu 16.04 +, SLES 12 SP4 +, WinServer 2016 +  |
+| Поддержка Orchestrator        | Циклеклауд, Batch, AKS; [Параметры конфигурации кластера](../../sizes-hpc.md#cluster-configuration-options)  |
 
+> [!NOTE] 
+> Windows Server 2012 R2 не поддерживается на HBv2 и других виртуальных машинах с более чем 64 (виртуальными или физическими) ядрами. Подробнее см. [здесь](https://docs.microsoft.com/windows-server/virtualization/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Узнайте больше о [архитектуре AMD ЕПИК](https://bit.ly/2Epv3kC) и [архитектурах с несколькими микросхемами](https://bit.ly/2GpQIMb). Дополнительные сведения см. в описании [рекомендаций по настройке HPC для процессоров AMD ЕПИК](https://bit.ly/2T3AWZ9).
-- Ознакомьтесь с последними объявлениями и некоторыми примерами HPC в [блогах сообщества разработчиков Azure](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
+- Ознакомьтесь с последними объявлениями, примерами рабочей нагрузки HPC и результатами производительности в [блогах сообщества разработчиков Azure](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
 - Сведения о более высоком уровне архитектурного представления выполнения рабочих нагрузок HPC см. в статье [Высокопроизводительные вычисления (HPC) в Azure](/azure/architecture/topics/high-performance-computing/).

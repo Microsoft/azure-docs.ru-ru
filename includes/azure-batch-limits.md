@@ -9,10 +9,10 @@ ms.date: 12/16/2020
 ms.author: jenhayes
 ms.custom: include file
 ms.openlocfilehash: 0a94b122f1cdd598eeac553c8cc784d2a0a5369f
-ms.sourcegitcommit: 86acfdc2020e44d121d498f0b1013c4c3903d3f3
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97614525"
 ---
 | **Ресурс** | **Ограничение по умолчанию** | **Максимальное ограничение** |
