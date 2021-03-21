@@ -7,10 +7,10 @@ ms.date: 03/12/2021
 ms.topic: best-practice
 ms.service: azure-object-anchors
 ms.openlocfilehash: e287d8305b3fd85fc992417e1563b1e58e6f8424
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103463006"
 ---
 # <a name="best-practices"></a>Рекомендации

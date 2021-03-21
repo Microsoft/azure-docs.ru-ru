@@ -18,10 +18,10 @@ ms.author: mathoma
 ms.reviewer: jroth
 ms.custom: seo-lt-2019
 ms.openlocfilehash: fdff3f6144f7099f3f61cfe57186357e17136e9f
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103225495"
 ---
 # <a name="automate-management-with-the-sql-server-iaas-agent-extension"></a>Автоматизация управления с помощью расширения агента SQL Server IaaS
@@ -69,7 +69,7 @@ ms.locfileid: "103225495"
 Эти преимущества приведены в следующей таблице. 
 
 
-| Функция | Описание |
+| Компонент | Описание |
 | --- | --- |
 | **Управление на портале** | Разблокирует [Управление на портале](manage-sql-vm-portal.md), чтобы вы могли просматривать все SQL Server виртуальные машины в одном месте, а также включать и отключать функции SQL непосредственно на портале. <br/> Режим управления: упрощенная & полная|  
 | **Автоматическая архивация** |Автоматизирует планирование резервного копирования всех баз данных для экземпляра по умолчанию или [правильно установленного](frequently-asked-questions-faq.md#administration) именованного экземпляра SQL Server на виртуальной машине SQL Server. Дополнительные сведения см. в статье [Автоматическое резервное копирование для виртуальных машин SQL Server (Resource Manager)](automated-backup-sql-2014.md). <br/> Режим управления: полный|
@@ -167,7 +167,7 @@ ms.locfileid: "103225495"
 ## <a name="in-region-data-residency"></a>Место расположения данных в регионе
 Виртуальная машина SQL Azure и расширение агента IaaS SQL не перемещают и не хранят данные клиентов вне региона, в котором они развернуты.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Чтобы установить расширение IaaS SQL Server для SQL Server на виртуальных машинах Azure, изучите статьи для [автоматической установки](sql-agent-extension-automatic-registration-all-vms.md), [отдельных виртуальных машин](sql-agent-extension-manually-register-single-vm.md)или [виртуальных машин](sql-agent-extension-manually-register-vms-bulk.md).
 

@@ -12,10 +12,10 @@ ms.date: 10/02/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, contperf-fy21q1
 ms.openlocfilehash: 9fa6a1758bc2e2a76291efc3bb239c5249a6e21e
-ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103149347"
 ---
 # <a name="set-up-compute-targets-for-model-training-and-deployment"></a>Настройка целевых объектов вычислений для обучения и развертывания модели

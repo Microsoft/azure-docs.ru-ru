@@ -9,10 +9,10 @@ services: digital-twins
 ms.topic: how-to
 ms.date: 11/10/2020
 ms.openlocfilehash: 18ae21c4b1348a1690818f8c07a5b3fae45102cd
-ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103232279"
 ---
 # <a name="how-to-use-postman-to-send-requests-to-the-azure-digital-twins-apis"></a>Как использовать POST для отправки запросов в интерфейсы API цифровых двойников Azure
@@ -154,6 +154,6 @@ ms.locfileid: "103232279"
 
 Вы также можете сравнить ответ с ожидаемыми данными ответа, указанными в справочной документации, чтобы проверить результат или получить дополнительные сведения о возникших ошибках.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения об API-интерфейсах Digital двойников см. в статье [*Использование интерфейсов API и пакетов SDK для цифровых двойников Azure*](how-to-use-apis-sdks.md)или в [справочной документации по интерфейсам API](/rest/api/azure-digitaltwins/).

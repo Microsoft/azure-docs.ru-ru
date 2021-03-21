@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/10/2020
 ms.author: yelevin
 ms.openlocfilehash: da7d540a4b7982c7f743a7ae968515485b45aa5a
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102035434"
 ---
 # <a name="use-logstash-to-connect-data-sources-to-azure-sentinel"></a>Использование Logstash для подключения источников данных к Azure Sentinel
@@ -172,7 +172,7 @@ ms.locfileid: "102035434"
 
 Если вы не видите данные в этом файле журнала, создайте и отправьте некоторые события локально (через подключаемые модули ввода и фильтрации), чтобы убедиться, что подключаемый модуль вывода получает данные. Sentinel Azure будет поддерживать только проблемы, связанные с подключаемым модулем вывода.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этом документе вы узнали, как использовать Logstash для подключения внешних источников данных к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 - Узнайте, как [отслеживать свои данные и потенциальные угрозы](quickstart-get-visibility.md).

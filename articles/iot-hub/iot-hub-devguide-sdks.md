@@ -13,10 +13,10 @@ ms.custom:
 - 'Role: IoT Device'
 - 'Role: Cloud Development'
 ms.openlocfilehash: d35535c87ca20bfc573995bf15f79bc149619776
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102611595"
 ---
 # <a name="understand-and-use-azure-iot-hub-sdks"></a>Понимание и использование пакетов SDK для Центра Интернета вещей Azure
@@ -71,7 +71,7 @@ ms.locfileid: "102611595"
 * [Справочник по модулям](/azure/iot-hub/iot-c-sdk-ref/iothub-module-client-h)
 * [Перенос пакета SDK C для других платформ](https://github.com/Azure/azure-c-shared-utility/blob/master/devdoc/porting_guide.md)
 * [Документация для разработчиков](https://github.com/Azure/azure-iot-sdk-c/tree/master/doc) содержит сведения о кроссплатформенной компиляции, начале работы на различных платформах и т. д.
-* [Сведения о потреблении ресурсов пакета SDK для центра Интернета вещей Azure](https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/c_sdk_resource_information.md)
+* [Сведения о потреблении ресурсов пакета SDK для Центра Интернета вещей Azure для C](https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/c_sdk_resource_information.md)
 
 Пакет SDK для устройств Azure IoT для Java:
 
@@ -178,7 +178,7 @@ ms.locfileid: "102611595"
 * [Исходный код](https://github.com/Azure/azure-iot-sdk-python)
 * Скачивание [пакета SDK для устройств](https://pypi.org/project/azure-iot-device/) и [пакета SDK службы](https://pypi.org/project/azure-iothub-provisioningserviceclient/) из pip
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Пакеты SDK для Azure IoT также предоставляют набор инструментов для разработки:
 

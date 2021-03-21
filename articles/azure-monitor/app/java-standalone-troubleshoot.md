@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 11/30/2020
 ms.custom: devx-track-java
 ms.openlocfilehash: f971466f25c2b7a4bd28e5b7eec6268f1b2e8b3d
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103225580"
 ---
 # <a name="troubleshooting-guide-azure-monitor-application-insights-for-java"></a>Руководство по устранению неполадок: Azure Monitor Application Insights для Java

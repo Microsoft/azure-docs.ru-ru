@@ -8,10 +8,10 @@ ms.service: data-factory
 ms.topic: troubleshooting
 ms.date: 03/12/2021
 ms.openlocfilehash: 4be015b1a8ba4b6fc6ea3acc74318f9a8b298e8e
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103418102"
 ---
 # <a name="troubleshoot-ci-cd-azure-devops-and-github-issues-in-adf"></a>Устранение неполадок непрерывной интеграции — CD, Azure DevOps и GitHub в ADF 
@@ -219,7 +219,7 @@ Azure Resource Manager ограничивают размер шаблона 4 М
 
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Для получения дополнительных сведений об устранении неполадок воспользуйтесь следующими ресурсами:
 

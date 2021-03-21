@@ -10,10 +10,10 @@ ms.date: 03/02/2021
 ms.author: cherylmc
 ms.custom: fasttrack-edit
 ms.openlocfilehash: 8e0d05d2cb960e760809ab35a8f9e4ca04acf250
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102442967"
 ---
 # <a name="scenario-route-to-shared-services-vnets"></a>Сценарий: Маршрутизация к общим службам виртуальных сетей
@@ -28,7 +28,7 @@ ms.locfileid: "102442967"
 
 **Матрица подключения**
 
-| От             | на:   |*Изолированный виртуальных сетей*|*Общая виртуальная сеть*|*Ветви*|
+| Исходный тип             | на:   |*Изолированный виртуальных сетей*|*Общая виртуальная сеть*|*Ветви*|
 |---|---|---|---|---|
 |**Изолированный виртуальных сетей**| ->|        | Прямой доступ | Прямой доступ |
 |**Общие виртуальных сетей**  |->| Прямой доступ | Прямой доступ | Прямой доступ |

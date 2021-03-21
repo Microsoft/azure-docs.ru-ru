@@ -9,10 +9,10 @@ ms.service: storage
 ms.subservice: blobs
 ms.topic: how-to
 ms.openlocfilehash: 92e5b00cd655677cdc3096bc2142dfe1b704adf2
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102638678"
 ---
 # <a name="calculate-blob-count-and-total-size-per-container-using-azure-storage-inventory"></a>Расчет числа BLOB-объектов и общего размера на контейнер с помощью инвентаризации хранилища Azure
@@ -81,7 +81,7 @@ ms.locfileid: "102638678"
 
     :::image type="content" source="media/calculate-blob-count-size/output.png" alt-text="Выходные данные выполнения скрипта для вычисления числа BLOB-объектов и общего размера.":::
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Использование инвентаризации BLOB-объектов службы хранилища Azure для управления данными больших двоичных объектов](blob-inventory.md)
 - [Вычисление общего указываемого в счете размера контейнера больших двоичных объектов](../scripts/storage-blobs-container-calculate-billing-size-powershell.md)

@@ -9,10 +9,10 @@ ms.date: 02/17/2021
 ms.author: normesta
 ms.reviewer: jamesbak
 ms.openlocfilehash: 4d75e60d0e497dcdd2aa121f8da73f11a7e2af5b
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103015222"
 ---
 # <a name="access-control-lists-acls-in-azure-data-lake-storage-gen2"></a>Списки управления доступом (ACL) в Azure Data Lake Storage 2-го поколения
@@ -257,7 +257,7 @@ def set_default_acls_for_new_child(parent, child):
         child_acls.add( new_entry )
 ```
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 ### <a name="do-i-have-to-enable-support-for-acls"></a>Нужно ли мне активировать поддержку ACL?
 

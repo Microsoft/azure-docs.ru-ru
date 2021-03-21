@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 10/08/2020
 ms.author: v-ekrieg
 ms.openlocfilehash: 14237894a38725ee07deca3b5f46cbe0ecfce4cd
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103493226"
 ---
 # <a name="understanding-the-local-configuration-file-c-agent"></a>Основные сведения о локальном файле конфигурации (агент C#)
@@ -129,7 +129,7 @@ ms.locfileid: "103493226"
 </ExternalInterface>
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Ознакомьтесь с [обзором](overview.md) службы "защитник для Интернета вещей"
 - Дополнительные сведения о защитнике для [архитектуры](architecture.md) IOT

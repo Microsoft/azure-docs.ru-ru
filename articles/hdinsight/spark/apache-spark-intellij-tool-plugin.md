@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 04/14/2020
 ms.openlocfilehash: ced066623d23c6894745374ace812454c52f3109
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103420023"
 ---
 # <a name="use-azure-toolkit-for-intellij-to-create-apache-spark-applications-for-hdinsight-cluster"></a>Использование Azure Toolkit for IntelliJ для создания приложений Apache Spark для кластера HDInsight
@@ -95,17 +95,17 @@ ms.locfileid: "103420023"
 
 9. Добавьте исходный код приложения, выполнив следующие действия.
 
-    А. В Project перейдите к папке **MyApp**  >  **src**  >  **Main**  >  **Scala**.  
+    а. В Project перейдите к папке **MyApp**  >  **src**  >  **Main**  >  **Scala**.  
 
-    Б. Щелкните правой кнопкой мыши папку **scala**, а затем выберите **New** (Новый) > **Scala Class** (Класс Scala).
+    b. Щелкните правой кнопкой мыши папку **scala**, а затем выберите **New** (Новый) > **Scala Class** (Класс Scala).
 
    ![Команды для создания класса Scala в проекте](./media/apache-spark-intellij-tool-plugin/hdi-spark-scala-code.png)
 
-   В. В диалоговом окне **Create New Scala Class** (Создание класса Scala) введите имя, в раскрывающемся списке **Kind** (Вид) выберите **Object** (Объект) и нажмите кнопку **ОК**.
+   c. В диалоговом окне **Create New Scala Class** (Создание класса Scala) введите имя, в раскрывающемся списке **Kind** (Вид) выберите **Object** (Объект) и нажмите кнопку **ОК**.
 
      ![Диалоговое окно создания класса Scala](./media/apache-spark-intellij-tool-plugin/hdi-spark-scala-code-object.png)
 
-   Г. После этого файл **MyApp.scala** откроется в главном представлении. Замените код по умолчанию на приведенный ниже:  
+   d. После этого файл **MyApp.scala** откроется в главном представлении. Замените код по умолчанию на приведенный ниже:  
 
     ```scala
     import org.apache.spark.SparkConf
@@ -185,7 +185,7 @@ ms.locfileid: "103420023"
 
     * **Кластер HDInsight**  
   
-        |Свойство |Применение |
+        |Свойство. |Значение |
         |----|----|
         |Link Resource Type (Связать тип ресурса)|Из раскрывающегося списка выберите **HDInsight Cluster** (Кластер HDInsight).|
         |Cluster Name/URL (Имя или URL-адрес кластера)| Введите имя кластера.|
@@ -197,7 +197,7 @@ ms.locfileid: "103420023"
 
     * **Livy Service** (Служба Livy)  
   
-        |Свойство |Применение |
+        |Свойство. |Значение |
         |----|----|
         |Link Resource Type (Связать тип ресурса)|Из раскрывающегося списка выберите **Livy Service** (Служба Livy).|
         |Livy Endpoint (Конечная точка Livy)| Введите конечную точку Livy|
@@ -229,7 +229,7 @@ ms.locfileid: "103420023"
 
 3. В окне **Edit configuration** (Изменить конфигурацию) укажите следующие значения, а затем щелкните **ОК**.
 
-    |Свойство |Значение |
+    |Свойство. |Значение |
     |----|----|
     |Кластеры Spark (только Linux)|Выберите кластер HDInsight Spark, в котором вы хотите запустить приложение.|
     |Select an Artifact to submit (Выбор артефакта для запуска)|Оставьте параметр по умолчанию.|
@@ -475,7 +475,7 @@ ms.locfileid: "103420023"
 
 ![портал Azure удаляет кластер HDInsight](./media/apache-spark-intellij-tool-plugin/hdinsight-azure-portal-delete-cluster.png "Удаление кластера HDInsight")
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этой статье вы узнали, как использовать подключаемый модуль Azure Toolkit for IntelliJ для разработки Apache Spark приложений, написанных на [Scala](https://www.scala-lang.org/). Затем передавали их в кластер HDInsight Spark непосредственно из интегрированной среды разработки (IDE) IntelliJ. Теперь переходите к следующей статье, в которой объясняется, как перенести зарегистрированные в Apache Spark данные в средство бизнес-аналитики, например в Power BI.
 

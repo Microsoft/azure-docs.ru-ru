@@ -10,10 +10,10 @@ ms.author: mimckitt
 ms.reviewer: cynthn
 ms.custom: mvc
 ms.openlocfilehash: 178a29ea37195ddd2013ca5220663a75132beb24
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102555913"
 ---
 # <a name="create-and-deploy-virtual-machines-in-an-availability-set-using-azure-powershell"></a>Создание и развертывание виртуальных машин в группе доступности с помощью Azure PowerShell

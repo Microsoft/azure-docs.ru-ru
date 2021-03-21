@@ -10,10 +10,10 @@ ms.date: 2/2/2021
 ms.author: mimckitt
 ms.custom: rybaker, chmimckitt
 ms.openlocfilehash: bb86ba6867ad796ef0f5eeb1357a6df9e93e9f9e
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102555777"
 ---
 # <a name="how-to-deploy-windows-10-on-azure-with-multitenant-hosting-rights"></a>Как развернуть Windows 10 в Azure с правами на мультитенантное размещение 
@@ -129,6 +129,6 @@ LicenseType              :
 ## <a name="additional-information-about-joining-azure-ad"></a>Дополнительная информация о присоединении к Azure AD
 Azure подготавливает все виртуальные машины Windows со встроенной учетной записью администратора, которую нельзя использовать для присоединения к AAD. Например, выбор команды *Параметры > Учетная запись > Доступ к рабочей или учебной учетной записи > + Подключиться* не сработает. Чтобы присоединиться к Azure AD вручную, необходимо создать журнал и войти в систему, используя учетную запись второго администратора. Вы также можете настроить Azure AD с помощью пакета подготовки, воспользовавшись ссылкой в разделе *дальнейшие действия* , чтобы получить дополнительные сведения.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Узнайте больше о [настройке VDA для Windows 10](/windows/deployment/vda-subscription-activation).
 - Узнайте больше о [правах на мультитенантное размещение для Windows 10](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx).

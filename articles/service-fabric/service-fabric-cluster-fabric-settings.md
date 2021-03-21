@@ -4,10 +4,10 @@ description: В этой статье описываются параметры 
 ms.topic: reference
 ms.date: 08/30/2019
 ms.openlocfilehash: 78d83faea802862d3cd6d1b1a9cf9f1016245065
-ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103232058"
 ---
 # <a name="customize-service-fabric-cluster-settings"></a>Настройка параметров кластера Service Fabric

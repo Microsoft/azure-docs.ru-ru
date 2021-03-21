@@ -6,14 +6,17 @@ ms.author: jasonh
 ms.service: data-catalog
 ms.topic: conceptual
 ms.date: 08/01/2019
-ms.openlocfilehash: 1f893f8e2ec03681697f15cd85685d4c99b13de6
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.openlocfilehash: 98854a4588b59cf0c19877da870e6124fa7c3b9a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92151964"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104674688"
 ---
 # <a name="azure-data-catalog-frequently-asked-questions"></a>Часто задаваемые вопросы о каталоге данных Azure
+
+[!INCLUDE [Azure Purview redirect](../../includes/data-catalog-use-purview.md)]
+
 Эта статья содержит ответы на часто задаваемые вопросы, связанные со службой каталога данных Azure.
 
 ## <a name="what-is-azure-data-catalog"></a>Что такое каталог данных Azure?
@@ -33,7 +36,7 @@ ms.locfileid: "92151964"
 ## <a name="what-is-its-availability-by-region"></a>Какова доступность продукта по регионам?
 Сейчас службы каталога данных доступны в следующих центрах обработки данных:
 
-* западная часть США
+* Западная часть США
 * Восточная часть США
 * Западная Европа
 * Северная Европа

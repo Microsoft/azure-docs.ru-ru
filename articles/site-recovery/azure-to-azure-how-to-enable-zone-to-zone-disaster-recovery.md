@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 04/28/2020
 ms.author: sideeksh
 ms.openlocfilehash: beba8e1d8126818f142e4873d551ed077af869d2
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102035243"
 ---
 # <a name="enable-azure-vm-disaster-recovery-between-availability-zones"></a>Включение аварийного восстановления виртуальной машины Azure между зонами доступности
@@ -67,7 +67,7 @@ ms.locfileid: "102035243"
 
 Перед развертыванием зоны в аварийное восстановление зоны для виртуальных машин важно убедиться в том, что другие функции, включенные на виртуальной машине, совместимы с аварийным восстановлением зоны.
 
-|Функция  | Условия поддержки  |
+|Компонент  | Условия поддержки  |
 |---------|---------|
 |классические виртуальные машины;   |     Не поддерживается    |
 |Виртуальные машины ARM    |    Поддерживается    |

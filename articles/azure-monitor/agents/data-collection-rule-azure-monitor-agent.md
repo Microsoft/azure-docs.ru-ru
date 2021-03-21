@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 03/16/2021
-ms.openlocfilehash: 73f7ab83ea15d223b76b9f71fde2f8a6a37bdacf
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: 2a91062a701ca1b07f47f381a04cdf06c57c5746
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104586375"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104721534"
 ---
 # <a name="configure-data-collection-for-the-azure-monitor-agent-preview"></a>Настройка сбора данных для агента Azure Monitor (Предварительная версия)
 
@@ -73,6 +73,8 @@ ms.locfileid: "104586375"
 
 Чтобы указать дополнительные фильтры, необходимо использовать пользовательскую конфигурацию и указать XPath, который отфильтровывает ненужные события. Записи XPath записываются в форме `LogName!XPathQuery` . Например, может потребоваться возвратить только события из журнала событий приложения с ИДЕНТИФИКАТОРом события 1035. Методом xpathquery для этих событий — `*[System[EventID=1035]]` . Так как вы хотите получить события из журнала событий приложения, XPath будет выглядеть так: `Application!*[System[EventID=1035]]`
 
+Список ограничений XPath, поддерживаемых журналом событий Windows, см. в разделе [ограничения xpath 1,0](/windows/win32/wes/consuming-events#xpath-10-limitations) .
+
 > [!TIP]
 > Используйте командлет PowerShell `Get-WinEvent` с `FilterXPath` параметром для проверки допустимости методом xpathquery. В следующем сценарии показан пример.
 > 
@@ -112,7 +114,7 @@ ms.locfileid: "104586375"
 
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Дополнительные сведения об [агенте Azure Monitor](azure-monitor-agent-overview.md).
 - Дополнительные сведения о [правилах сбора данных](data-collection-rule-overview.md).

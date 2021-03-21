@@ -7,10 +7,10 @@ author: MS-jgol
 ms.custom: devx-track-java
 ms.author: jgol
 ms.openlocfilehash: b695df29b7a4704ee9e4e25e402fa0de8f2b7685
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103008218"
 ---
 # <a name="java-codeless-application-monitoring-azure-monitor-application-insights"></a>Application Insights Azure Monitor отслеживания приложений Java с некодированным кодом
@@ -80,7 +80,7 @@ APPLICATIONINSIGHTS_CONNECTION_STRING=InstrumentationKey=...
 
 * Имя облачной роли
 * Экземпляр облачной роли
-* Выборка
+* Дискретизация
 * Метрики JMX
 * Пользовательские измерения
 * Обработчики данных телеметрии (Предварительная версия)

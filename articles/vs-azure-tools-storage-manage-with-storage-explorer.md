@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 11/08/2019
 ms.author: cawa
 ms.openlocfilehash: 3a8fe3ded6608059cc6ad50901ffe6df5dcf1b08
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102441594"
 ---
 # <a name="get-started-with-storage-explorer"></a>Начало работы с Обозревателем службы хранилища
@@ -25,7 +25,7 @@ ms.locfileid: "102441594"
 
 :::image type="content" alt-text="Обозреватель службы хранилища Microsoft Azure" source="./vs-storage-explorer-overview.png":::
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 # <a name="windows"></a>[Windows](#tab/windows)
 
@@ -115,7 +115,7 @@ snap connect storage-explorer:password-manager-service :password-manager-service
 
 Обозреватель службы хранилища позволяет подключаться к отдельным ресурсам, например к контейнеру Azure Data Lake Storage 2-го поколения, используя различные методы проверки подлинности. Некоторые методы проверки подлинности поддерживаются только для определенных типов ресурсов.
 
-| Тип ресурса    | Azure AD | Имя и ключ учетной записи | Подписанный URL-адрес  | Общедоступный (анонимный) |
+| Тип ресурса    | Azure AD | Имя и ключ учетной записи | Подписанный URL-адрес  | Общедоступный (анонимный) |
 |------------------|----------|----------------------|--------------------------------|--------------------|
 | Учетные записи хранения | Да      | Да                  | Да (строка подключения или URL-адрес) | Нет                 |
 | контейнеров BLOB-объектов;  | Да      | Нет                   | Да (URL-адрес)                      | Да                |
@@ -123,7 +123,7 @@ snap connect storage-explorer:password-manager-service :password-manager-service
 | Каталоги Gen2 | Да      | Нет                   | Да (URL-адрес)                      | Да                |
 | Общие папки      | Нет       | Нет                   | Да (URL-адрес)                      | Нет                 |
 | Очереди           | Да      | Нет                   | Да (URL-адрес)                      | Нет                 |
-| Таблицы           | Нет       | Нет                   | Да (URL-адрес)                      | Нет                 |
+| Tables           | Нет       | Нет                   | Да (URL-адрес)                      | Нет                 |
  
 Обозреватель службы хранилища также может подключаться к [эмулятору локального хранилища](#local-storage-emulator) с помощью настроенных портов эмулятора.
 
@@ -139,7 +139,7 @@ snap connect storage-explorer:password-manager-service :password-manager-service
 
 В следующих разделах описываются различные методы проверки подлинности, которые можно использовать для подключения к отдельным ресурсам.
 
-#### <a name="azure-ad"></a>Azure AD
+#### <a name="azure-ad"></a>Azure AD
 
 Обозреватель службы хранилища можете использовать учетную запись Azure для подключения к следующим типам ресурсов:
 * контейнеров BLOB-объектов;
@@ -238,7 +238,7 @@ https://contoso.blob.core.windows.net/container01?sv=2020-04-08&st=2021-03-02T00
 
 1. Выберите Azure Cosmos DB API, введите данные **строки подключения** и нажмите кнопку **ОК** , чтобы подключить учетную запись Azure Cosmos DB. Сведения о том, как получить строку подключения, см. в статье [Управление учетной записью Azure Cosmos](./cosmos-db/how-to-manage-database-account.md).
 
-    ![строку подключения.][22]
+    ![Строка подключения][22]
 
 #### <a name="connect-to-azure-data-lake-store-by-uri"></a>Подключение Azure Data Lake Store по URI
 

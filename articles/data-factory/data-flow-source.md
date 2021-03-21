@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 03/10/2021
 ms.openlocfilehash: 310a062a8600539750935c93c7d10a1cf17a885d
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103016395"
 ---
 # <a name="source-transformation-in-mapping-data-flow"></a>Преобразование источника в потоке данных сопоставления
@@ -121,6 +121,6 @@ ms.locfileid: "103016395"
 
 Дополнительные сведения о оптимизации в потоке данных сопоставления см. на [вкладке "оптимизация"](concepts-data-flow-overview.md#optimize).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Начните создавать поток данных с помощью [преобразования «Производный столбец](data-flow-derived-column.md) » и [преобразования «выбор](data-flow-select.md)».

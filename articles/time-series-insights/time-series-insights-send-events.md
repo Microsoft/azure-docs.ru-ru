@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 09/30/2020
 ms.custom: seodec18
 ms.openlocfilehash: 8ee2cc5473d83eafc2443f3aea7cab6a2e77727c
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103463567"
 ---
 # <a name="send-events-to-an-azure-time-series-insights-gen1-environment-by-using-an-event-hub"></a>Отправка событий в среду Gen1 "аналитика временных рядов Azure" с помощью концентратора событий
@@ -76,7 +76,7 @@ ms.locfileid: "103463567"
 
     [![Копирование значения строки подключения первичного ключа](media/send-events/configure-sample-code-connection-string.png)](media/send-events/configure-sample-code-connection-string.png#lightbox)
 
-1. Перейдите по адресу <https://tsiclientsample.azurewebsites.net/windFarmGen.html>. URL-адрес создает и запускает имитацию устройств Виндмилл.
+1. Перейдите к <https://tsiclientsample.azurewebsites.net/windFarmGen.html>. URL-адрес создает и запускает имитацию устройств Виндмилл.
 1. В поле **строка подключения концентратора событий** на веб-странице вставьте строку подключения, скопированную в [поле ввода Виндмилл](#push-events-to-windmills-sample).
 
     [![Вставка строки подключения первичного ключа в поле Event Hub Connection String (Строка подключения концентратора событий)](media/send-events/configure-wind-mill-sim.png)](media/send-events/configure-wind-mill-sim.png#lightbox)
@@ -204,7 +204,7 @@ ms.locfileid: "103463567"
     |WestUs|manufacturer1|EastUs|device1|2016-01-08T01:08:00Z|давление|psi|108.09|
     |WestUs|manufacturer1|EastUs|device2|2016-01-08T01:17:00Z|vibration|abs G|217.09|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Просматривайте свою среду](https://insights.timeseries.azure.com) в обозревателе службы "аналитика временных рядов Azure".
 

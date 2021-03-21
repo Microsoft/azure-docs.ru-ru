@@ -7,10 +7,10 @@ ms.reviewer: estfan, logicappspm, az-logic-apps-dev
 ms.topic: conceptual
 ms.date: 03/10/2021
 ms.openlocfilehash: 7120b6ff17657232c0e614f49b75bb24263712b7
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102636341"
 ---
 # <a name="overview-azure-logic-apps-preview"></a>Обзор: Предварительная версия Azure Logic Apps
@@ -116,7 +116,7 @@ ms.locfileid: "102636341"
 
 <a name="public-preview-contents"></a>
 
-## <a name="capabilities"></a>Характеристики
+## <a name="capabilities"></a>Возможности
 
 Azure Logic Apps Preview включает множество текущих и дополнительных возможностей, например:
 
@@ -290,7 +290,7 @@ Azure Logic Apps Preview включает множество текущих и �
 
 Дополнительные сведения см. в разделе [ограничения определения приложения логики](logic-apps-limits-and-config.md#definition-limits).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Создание рабочих процессов с отслеживанием состояния и без отслеживания состояния в портал Azure](create-stateful-stateless-workflows-azure-portal.md)
 * [Создание рабочих процессов с отслеживанием состояния и без отслеживания состояния в Visual Studio Code](create-stateful-stateless-workflows-visual-studio-code.md)

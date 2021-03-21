@@ -8,10 +8,10 @@ ms.date: 9/15/2020
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: 3223a1c8e20d8b0caced5d940132c32fa0aba97c
-ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103149104"
 ---
 # <a name="ingest-iot-hub-telemetry-into-azure-digital-twins"></a>Прием данных телеметрии центра Интернета вещей в Azure Digital двойников
@@ -109,7 +109,7 @@ az dt twin create --dtmi "dtmi:contosocom:DigitalTwins:Thermostat;1" --twin-id t
 * [Azure. Identity](https://www.nuget.org/packages/Azure.Identity/)
 * [Microsoft.Azure.WebJobs.Extensions.EventGrid](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.EventGrid/)
 
-Переименуйте демонстрационную функцию *function1.CS* , созданную Visual Studio с новым проектом, на *IoTHubtoTwins.CS*. Замените код в файле следующим кодом:
+Переименуйте демонстрационную функцию *функция1. CS* , созданную Visual Studio с новым проектом, на *иосубтотвинс. CS*. Замените код в файле следующим кодом:
 
 :::code language="csharp" source="~/digital-twins-docs-samples/sdks/csharp/IoTHubToTwins.cs":::
 
@@ -198,7 +198,7 @@ az dt twin query -q "select * from digitaltwins" -n {digital_twins_instance_name
 
 Чтобы увидеть изменение значения, повторно выполните команду запроса выше.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте о поступлении и исходящих данных в Azure Digital двойников:
 * [*Основные понятия: интеграция с другими службами*](concepts-integration.md)

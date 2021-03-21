@@ -13,10 +13,10 @@ manager: cgronlun
 ms.reviewer: nibaccam
 ms.date: 07/31/2020
 ms.openlocfilehash: 54b1fd14f97855dd42afde9a4bb34795373ff229
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103417643"
 ---
 # <a name="create-azure-machine-learning-datasets"></a>Создание наборов данных Машинного обучения Azure
@@ -174,7 +174,7 @@ titanic_ds = Dataset.Tabular.from_delimited_files(path=web_path, set_column_type
 titanic_ds.take(3).to_pandas_dataframe()
 ```
 
-|Номер|PassengerId|Survived|пкласс|Название|Пол|возраст;|сибсп|парч|Билет|Плата|кабин|Предпринимались
+|Номер|PassengerId|Survived|пкласс|Имя|Пол|возраст;|сибсп|парч|Билет|Плата|кабин|Предпринимались
 -|-----------|--------|------|----|---|---|-----|-----|------|----|-----|--------|
 0|1|False|3|Браунд, Mr. О'мэлли Owen Харрис|Мужской|22,0|1|0|A/5 21171|7,2500||S
 1|2|True|1|Кумингс, Mrs. Джон Кирилл (Флоренция Бриггс TH...|Женский|38,0|1|0|PC 17599|71,2833|C85|C
@@ -254,7 +254,7 @@ mount_context.start()
 titanic_ds.take(3).to_pandas_dataframe()
 ```
 
-|Номер|PassengerId|Survived|пкласс|Название|Пол|возраст;|сибсп|парч|Билет|Плата|кабин|Предпринимались
+|Номер|PassengerId|Survived|пкласс|Имя|Пол|возраст;|сибсп|парч|Билет|Плата|кабин|Предпринимались
 -|-----------|--------|------|----|---|---|-----|-----|------|----|-----|--------|
 0|1|False|3|Браунд, Mr. О'мэлли Owen Харрис|Мужской|22,0|1|0|A/5 21171|7,2500||S
 1|2|True|1|Кумингс, Mrs. Джон Кирилл (Флоренция Бриггс TH...|Женский|38,0|1|0|PC 17599|71,2833|C85|C
@@ -338,7 +338,7 @@ titanic_ds = titanic_ds.register(workspace = workspace,
                                  create_new_version = True)
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Узнайте, [как обучаться с помощью наборов данных](how-to-train-with-datasets.md).
 * Используйте автоматическое машинное обучение для [обучения с табулардатасетс](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/automated-machine-learning/forecasting-energy-demand/auto-ml-forecasting-energy-demand.ipynb).

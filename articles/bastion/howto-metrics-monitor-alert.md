@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/12/2021
 ms.author: mialdrid
 ms.openlocfilehash: 3a5beba3938b5a845a378ede155f2f64e6baac7a
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103417949"
 ---
 # <a name="how-to-configure-monitoring-and-metrics-for-azure-bastion-using-azure-monitor"></a>Как настроить мониторинг и метрики для Azure бастиона с помощью Azure Monitor
@@ -29,7 +29,7 @@ ms.locfileid: "103417949"
 
 |**Метрика**|**Категория**|**Измерения (s)**|
 | --- | --- | --- |
-|Состояние связи бастиона * *|[Доступность](#availability)|н/д|
+|Состояние связи бастиона * *|[Доступность](#availability)|Н/Д|
 |Общий объем памяти|[Доступность](#availability)|Экземпляр|
 |Используемый ЦП|[Трафик](#traffic)|Экземпляр
 |Используемая память|[Трафик](#traffic)|Экземпляр

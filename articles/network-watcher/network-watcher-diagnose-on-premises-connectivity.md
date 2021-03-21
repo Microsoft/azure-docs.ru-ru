@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: infrastructure-services
 ms.date: 01/07/2021
 ms.author: damendo
-ms.openlocfilehash: a5db1ac9c70429d4b6a0b690de1b29c3656b3cc8
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.openlocfilehash: 3b8b53446799eec3473d63c89672393a35f9787a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98016717"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104670961"
 ---
 # <a name="diagnose-on-premises-connectivity-via-vpn-gateways"></a>Диагностика локальных подключений через VPN-шлюзы
 
@@ -34,11 +34,11 @@ VPN-шлюз Azure позволяет создать гибридное реше
 Требуется настроить подключение типа "сеть — сеть" между Azure и локальной средой, используя FortiGate в качестве локального VPN-шлюза. Чтобы реализовать такой сценарий, потребуется следующее.
 
 1. Шлюз виртуальной сети — VPN-шлюз в Azure.
-1. Шлюз локальной сети — представление [локального VPN-шлюза (FortiGate)](../vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal.md#LocalNetworkGateway) в облаке Azure.
-1. Подключение типа "сеть — сеть" (на основе маршрута) — [подключение между VPN-шлюзом и локальным маршрутизатором](../vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal.md#CreateConnection).
+1. Шлюз локальной сети — представление [локального VPN-шлюза (FortiGate)](../vpn-gateway/tutorial-site-to-site-portal.md#LocalNetworkGateway) в облаке Azure.
+1. Подключение типа "сеть — сеть" (на основе маршрута) — [подключение между VPN-шлюзом и локальным маршрутизатором](../vpn-gateway/tutorial-site-to-site-portal.md#CreateConnection).
 1. [Configuring FortiGate](https://github.com/Azure/Azure-vpn-config-samples/blob/master/Fortinet/Current/Site-to-Site_VPN_using_FortiGate.md) (Настройка FortiGate)
 
-Подробное пошаговое руководство по настройке конфигурации "сеть — сеть" можно найти в статье [Создание виртуальной сети с подключением типа "сеть — сеть" с помощью портала Azure](../vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal.md).
+Подробное пошаговое руководство по настройке конфигурации "сеть — сеть" можно найти в статье [Создание виртуальной сети с подключением типа "сеть — сеть" с помощью портала Azure](../vpn-gateway/tutorial-site-to-site-portal.md).
 
 Один из важных этапов — настройка параметров связи IPsec. Любая ошибка в настройках приведет к потере подключения между локальной сетью и Azure. В настоящее время VPN-шлюзы Azure настроены для поддержки приведенных ниже параметров IPsec на этапе 1. Как можно видеть в таблице ниже, алгоритмы шифрования, поддерживаемые VPN-шлюзом Azure, это AES256, AES128 и 3DES.
 
@@ -87,9 +87,9 @@ Error: On-premises device rejected Quick Mode settings. Check values.
 | PlannedMaintenance |  Выполняется обслуживание экземпляра шлюза.  |Нет|
 | UserDrivenUpdate | Идет обновление, инициированное пользователем. Это может быть операция изменения размера. | Нет |
 | VipUnResponsive | Не удается связаться с первичным экземпляром шлюза. Это происходит при сбое пробы работоспособности. | Нет |
-| PlatformInActive | Существует проблема с платформой. | нет|
-| ServiceNotRunning | Базовая служба не выполняется. | нет|
-| NoConnectionsFoundForGateway | У шлюза нет подключений. Это всего лишь предупреждение.| нет|
+| PlatformInActive | Существует проблема с платформой. | Нет|
+| ServiceNotRunning | Базовая служба не выполняется. | Нет|
+| NoConnectionsFoundForGateway | У шлюза нет подключений. Это всего лишь предупреждение.| Нет|
 | ConnectionsNotConnected | Ни одно из подключений не установлено. Это всего лишь предупреждение.| Да|
 | GatewayCPUUsageExceeded | Текущее использование ЦП шлюза превышает 95 %. | Да |
 
@@ -101,9 +101,9 @@ Error: On-premises device rejected Quick Mode settings. Check values.
 | GatewayNotFound | Не удается найти шлюз или шлюз не подготовлен. |Нет|
 | PlannedMaintenance | Выполняется обслуживание экземпляра шлюза.  |Нет|
 | UserDrivenUpdate | Идет обновление, инициированное пользователем. Это может быть операция изменения размера.  | Нет |
-| VipUnResponsive | Не удается связаться с первичным экземпляром шлюза. Это происходит при сбое пробы работоспособности. | нет |
-| ConnectionEntityNotFound | Отсутствует конфигурация подключения. | нет |
-| ConnectionIsMarkedDisconnected | Подключение отмечено как "разъединенное". |нет|
+| VipUnResponsive | Не удается связаться с первичным экземпляром шлюза. Это происходит при сбое пробы работоспособности. | Нет |
+| ConnectionEntityNotFound | Отсутствует конфигурация подключения. | Нет |
+| ConnectionIsMarkedDisconnected | Подключение отмечено как "разъединенное". |Нет|
 | ConnectionNotConfiguredOnGateway | Для базовой службы не настроено подключение. | Да |
 | ConnectionMarkedStandby | Базовая служба помечена как ждущая.| Да|
 | Аутентификация | Несоответствие предварительного ключа. | Да|

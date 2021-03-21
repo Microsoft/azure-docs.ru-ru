@@ -15,10 +15,10 @@ ms.author: curtand
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7b1d18982a4f2a9ee8ba585af56a5e9ded7c1c62
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102036832"
 ---
 # <a name="deploy-azure-ad-privileged-identity-management-pim"></a>Развертывание Azure AD Privileged Identity Management (PIM)
@@ -233,16 +233,16 @@ ms.locfileid: "102036832"
 | Роль | Требовать многофакторную идентификацию | Уведомление | Обращение об инциденте | Требуется утверждение | Утверждающий | Длительность активации | Постоянный администратор |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | глобальный администратор | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | Другие глобальные администраторы | 1 час | Учетные записи для аварийного доступа |
-| Администратор Exchange | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | None | 2 часа | None |
-| Администратор службы технической поддержки | :x: | :x: | :heavy_check_mark: | :x: | None | 8 часов | None |
+| Администратор Exchange | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | Нет | 2 часа | Нет |
+| Администратор службы технической поддержки | :x: | :x: | :heavy_check_mark: | :x: | Нет | 8 часов | Нет |
 
 #### <a name="privileged-identity-management-settings-for-azure-roles"></a>Параметры управление привилегированными пользователями для ролей Azure
 
 | Роль | Требовать многофакторную идентификацию | Уведомление | Требуется утверждение | Утверждающий | Длительность активации | Активный администратор | Срок действия активной роли | Срок действия доступной роли |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Владелец критических подписок | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | Другие владельцы подписки | 1 час | None | Н/Д | 3 месяца |
-| Администратор доступа пользователей для менее важных подписок | :heavy_check_mark: | :heavy_check_mark: | :x: | None | 1 час | None | Н/Д | 3 месяца |
-| Участник виртуальной машины | :x: | :heavy_check_mark: | :x: | None | 3 часа | None | Н/Д | 6 месяцев |
+| Владелец критических подписок | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | Другие владельцы подписки | 1 час | Нет | Н/Д | 3 месяца |
+| Администратор доступа пользователей для менее важных подписок | :heavy_check_mark: | :heavy_check_mark: | :x: | Нет | 1 час | Нет | Н/Д | 3 месяца |
+| Участник виртуальной машины | :x: | :heavy_check_mark: | :x: | Нет | 3 часа | Нет | Н/Д | 6 месяцев |
 
 В следующей таблице описаны все приведенные выше параметры.
 

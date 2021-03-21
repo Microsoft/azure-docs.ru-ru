@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/05/2021
 ms.author: alkohli
 ms.openlocfilehash: fd55ce702ae3c9485fc2dcc37fc90915a8990ce7
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102638662"
 ---
 # <a name="deploy-a-kubernetes-stateless-application-via-kubectl-on-your-azure-stack-edge-pro-gpu-device"></a>Развертывание Kubernetes приложения без отслеживания состояния с помощью kubectl на устройстве Azure Stack ребра Pro GPU
@@ -363,6 +363,6 @@ PS C:\Users\user> kubectl delete deployment nginx-deployment -n "test1"
 deployment.extensions "nginx-deployment" deleted
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Обзор Kubernetes](azure-stack-edge-gpu-kubernetes-overview.md)

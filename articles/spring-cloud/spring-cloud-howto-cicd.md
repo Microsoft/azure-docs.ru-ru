@@ -9,10 +9,10 @@ ms.author: brendm
 ms.custom: devx-track-java, devx-track-azurecli
 zone_pivot_groups: programming-languages-spring-cloud
 ms.openlocfilehash: 331ef39facb9f7cf8f069f2a238be325f53de2d0
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102618039"
 ---
 # <a name="cicd-for-azure-spring-cloud"></a>CI/CD для Azure Веснного облака

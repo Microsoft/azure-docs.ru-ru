@@ -8,10 +8,10 @@ ms.service: stream-analytics
 ms.topic: how-to
 ms.date: 09/10/2020
 ms.openlocfilehash: 2dbb491e77f132daf7b432f27705eba9e3e3cd3c
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102036968"
 ---
 # <a name="automate-builds-tests-and-deployments-of-an-azure-stream-analytics-job-using-cicd-tools"></a>Автоматизация сборок, тестов и развертываний задания Azure Stream Analytics с помощью средств CI/CD
@@ -246,7 +246,7 @@ azure-streamanalytics-cicd test -project <projectFullPath> [-testConfigPath <tes
 
 Вы можете использовать шаблон Azure Resource Manager и файлы параметров, созданные в процессе сборки, для [развертывания задания в Azure](../azure-resource-manager/templates/template-tutorial-use-parameter-file.md?tabs=azure-powershell#deploy-template).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Непрерывная интеграция и непрерывное развертывание для Azure Stream Analytics](cicd-overview.md)
 * [Настройка конвейера CI/CD для задания Stream Analytics с помощью Azure Pipelines](set-up-cicd-pipeline.md)

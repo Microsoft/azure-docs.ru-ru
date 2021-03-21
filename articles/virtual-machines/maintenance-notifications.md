@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 8/12/2020
 ms.author: shants
 ms.openlocfilehash: 92cb780a80f1010fd1c2f5d19fe616e0285de73b
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102564532"
 ---
 # <a name="handling-planned-maintenance-notifications"></a>Обработка уведомлений о плановом обслуживании
@@ -66,7 +66,7 @@ Azure периодически выполняет обновления, чтоб
 - Между двумя доменами обновления (доменов обновления) требуется более 30 минут времени восстановления виртуальной машины. Чтобы управлять длительностью пауз между обслуживанием доменов обновления, запускайте обслуживание виртуальных машин только для одного домена обновления.
 
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 
 **Вопрос. Зачем вам нужно перезагружать сейчас мою виртуальную машину?**

@@ -5,10 +5,10 @@ ms.topic: how-to
 ms.date: 03/26/2020
 ms.custom: devx-track-csharp, mvc, devcenter, cc996988-fb4f-47
 ms.openlocfilehash: 6ca187181d68d7924f97ebfac08e81dec77251e9
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103492144"
 ---
 # <a name="create-your-first-function-in-the-azure-portal"></a>Создание первой функции на портале Azure

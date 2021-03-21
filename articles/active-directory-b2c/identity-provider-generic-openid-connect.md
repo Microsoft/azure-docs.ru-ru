@@ -12,10 +12,10 @@ ms.date: 03/08/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 9434bd4042798dc05a33401e1884e11a73774936
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102448342"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-openid-connect-using-azure-active-directory-b2c"></a>Настройка регистрации и входа с помощью OpenID Connect через Azure Active Directory B2C

@@ -9,10 +9,10 @@ ms.workload: infrastructure-services
 ms.date: 04/17/2019
 ms.author: joelpell
 ms.openlocfilehash: 8d38e3f58de0fc4cc1e963c18b002dc1e16852ec
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102556015"
 ---
 # <a name="optimize-performance-on-the-lsv2-series-windows-virtual-machines"></a>Оптимизация производительности виртуальных машин Windows серии Lsv2

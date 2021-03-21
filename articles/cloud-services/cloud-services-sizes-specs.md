@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: a31c9c4747ccc72f0552ebe2f8daf85ef5fba8a3
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103015307"
 ---
 # <a name="sizes-for-cloud-services-classic"></a>Размеры для облачных служб (классическая модель)
@@ -83,7 +83,7 @@ ms.locfileid: "103015307"
 | Размер            | Ядра ЦП | Память: ГиБ  | Временное хранилище: Гиб       | Максимальное число сетевых карт, максимальная пропускная способность сети |
 |---------------- | --------- | ------------ | -------------------- | ---------------------------- |
 | Очень малый      | 1         | 0,768        | 20                   | 1, низкая |
-| Малый           | 1         | 1,75         | 225                  | 1, средняя |
+| Small           | 1         | 1,75         | 225                  | 1, средняя |
 | Средний          | 2         | 3,5          | 490                  | 1, средняя |
 | Большой           | 4         | 7            | 1000                 | 2, высокая |
 | Очень большой      | 8         | 14           | 2040                 | 4, высокая |
@@ -219,6 +219,6 @@ Cведения и рекомендации по использованию эт
 Get-AzureRoleSize | where SupportedByWebWorkerRoles -eq $true | select InstanceSize, RoleSizeLabel
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 * Сведения об [ограничениях, квотах и ограничениях подписки Azure и служб](../azure-resource-manager/management/azure-subscription-service-limits.md).
 * Узнайте больше об использовании [размеров виртуальных машин, оптимизированных для высокопроизводительных вычислений,](../virtual-machines/sizes-hpc.md?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json) для рабочих нагрузок HPC.
