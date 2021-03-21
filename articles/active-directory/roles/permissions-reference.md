@@ -14,12 +14,12 @@ ms.author: rolyon
 ms.reviewer: vincesm
 ms.custom: it-pro, fasttrack-edit
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2c327154e2f4eae735e7078be3b057b1d8cf1c5
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 99b74319581b4e74c63045afe73ee66b6efcf53c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103490880"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104585321"
 ---
 # <a name="azure-ad-built-in-roles"></a>Встроенные роли в Azure AD
 
@@ -1415,7 +1415,7 @@ ms.locfileid: "103490880"
 
 
 > [!IMPORTANT]
-> В настоящее время эта роль не может управлять многопользовательским MFA на портале управления MFA прежних версий. Те же функции можно выполнить с помощью модуля Azure AD PowerShell [Set-MsolUser](https://docs.microsoft.com/powershell/module/msonline/set-msoluser) командлет.
+> В настоящее время эта роль не может управлять многопользовательским MFA на портале управления MFA прежних версий. Те же функции можно выполнить с помощью модуля Azure AD PowerShell [Set-MsolUser](/powershell/module/msonline/set-msoluser) командлет.
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |

@@ -2,20 +2,20 @@
 title: Мониторинг рабочей нагрузки — портал Azure
 description: Мониторинг SQL синапсе с помощью портал Azure
 services: synapse-analytics
-author: kevinvngo
+author: gaursa
 manager: craigg
 ms.service: synapse-analytics
 ms.topic: conceptual
 ms.subservice: sql-dw
 ms.date: 02/04/2020
-ms.author: kevin
+ms.author: gaursa
 ms.reviewer: jrasnick
-ms.openlocfilehash: 2a2161fd24ccde596630549163a631626a961773
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 3fb81ffc24ed6073e5398b14b7f490a0f63df84f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100596661"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104585593"
 ---
 # <a name="monitor-workload---azure-portal"></a>Мониторинг рабочей нагрузки — портал Azure
 
@@ -95,6 +95,6 @@ AzureDiagnostics
 | summarize totalQueuedQueries = dcount(RequestId_s)
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, после настройки и настройки журналов Azure Monitor, [Настройте панели мониторинга Azure](../../azure-portal/azure-portal-dashboards.md?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json) для совместного использования в команде.

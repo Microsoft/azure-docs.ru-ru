@@ -8,10 +8,10 @@ ms.date: 02/19/2020
 ms.author: cshoe
 ms.custom: devx-track-csharp, devx-track-python
 ms.openlocfilehash: ae2be8dbcb4839c7d16b864c484c3360fdcfe324
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102425589"
 ---
 # <a name="azure-service-bus-output-binding-for-azure-functions"></a>Выходная привязка служебной шины Azure для функций Azure
@@ -389,8 +389,8 @@ public static string Run([HttpTrigger] dynamic input, ILogger log)
 
 | Привязка | Справочник |
 |---|---|
-| Служебная шина | [Коды ошибок службы "Служебная шина"](../service-bus-messaging/service-bus-messaging-exceptions.md) |
-| Служебная шина | [Ограничения службы "Служебная шина"](../service-bus-messaging/service-bus-quotas.md) |
+| Cлужебная шина | [Коды ошибок службы "Служебная шина"](../service-bus-messaging/service-bus-messaging-exceptions.md) |
+| Cлужебная шина | [Ограничения службы "Служебная шина"](../service-bus-messaging/service-bus-quotas.md) |
 
 <a name="host-json"></a>  
 

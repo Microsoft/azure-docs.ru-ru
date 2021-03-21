@@ -10,10 +10,10 @@ ms.author: normesta
 ms.reviewer: yzheng
 ms.custom: references_regions
 ms.openlocfilehash: 8ed63a508447104f9073c986debfae73ba7de89f
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102428649"
 ---
 # <a name="mount-blob-storage-by-using-the-network-file-system-nfs-30-protocol-preview"></a>Подключение хранилища BLOB-объектов с помощью протокола NFS 3,0 (Предварительная версия)
@@ -83,7 +83,7 @@ Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName AllowNFS
 |Параметр | Производительность Premium | Стандартная производительность  
 |----|---|---|
 |Расположение|Все доступные регионы |Один из следующих регионов: Восточная Австралия, Центральная Корея и Юго-Центральная часть США   
-|Производительность|Premium| Standard
+|Производительность|Premium| Стандартный
 |Тип учетной записи|BlockBlobStorage| Общего назначения версии 2
 |Репликация|Локально избыточное хранилище (LRS)| Локально избыточное хранилище (LRS)
 |Метод подключения|Общедоступная конечная точка (выбранные сети) или частная конечная точка |Общедоступная конечная точка (выбранные сети) или частная конечная точка

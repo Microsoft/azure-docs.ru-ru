@@ -2,14 +2,14 @@
 title: Способы отключения функций в решении "Функции Azure"
 description: Сведения о том, как отключать и включать функции в решении "Функции Azure".
 ms.topic: conceptual
-ms.date: 02/03/2021
+ms.date: 03/15/2021
 ms.custom: devx-track-csharp, devx-track-azurecli
-ms.openlocfilehash: cbb84308507ea15f1c44c00122a9a59472f12a88
-ms.sourcegitcommit: 5b926f173fe52f92fcd882d86707df8315b28667
+ms.openlocfilehash: 1ad484804f66a2e2d4d0f1da4a37cf0d6c485f38
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99551049"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104584743"
 ---
 # <a name="how-to-disable-functions-in-azure-functions"></a>Способы отключения функций в решении "Функции Azure"
 
@@ -20,13 +20,26 @@ ms.locfileid: "99551049"
 > [!NOTE]  
 > Если вы отключите функцию, активируемую по HTTP, с помощью описанных в этой статье способов, ее конечная точка может остаться доступной, если она работает на локальном компьютере.  
 
-## <a name="use-the-azure-cli"></a>Использование Azure CLI
+## <a name="disable-a-function"></a>Отключение функции
 
-В Azure CLI команда [`az functionapp config appsettings set`](/cli/azure/functionapp/config/appsettings#az-functionapp-config-appsettings-set) позволяет создать или изменить параметр приложения. Следующая команда отключает функцию с именем `QueueTrigger`, создавая параметр приложения с именем `AzureWebJobs.QueueTrigger.Disabled` и значением `true`. 
+# <a name="portal"></a>[Портал](#tab/portal)
+
+Используйте кнопки **включить** и **Отключить** на странице **Обзор** функции. Эти кнопки работают, изменяя значение `AzureWebJobs.<FUNCTION_NAME>.Disabled` параметра приложения. Этот параметр, зависящий от функции, создается при первом отключении. 
+
+![Переключатель состояния функции](media/disable-function/function-state-switch.png)
+
+Даже при публикации в приложении-функции из локального проекта вы все еще можете использовать портал для отключения функций в приложении-функции. 
+
+> [!NOTE]  
+> Компоненты тестирования, интегрированные с порталом, игнорируют параметр `Disabled`. Это означает, что отключенная функция будет работать обычным образом, когда она запускается из окна **Тест** на портале. 
+
+# <a name="azure-cli"></a>[Azure CLI](#tab/azurecli)
+
+В Azure CLI команда [`az functionapp config appsettings set`](/cli/azure/functionapp/config/appsettings#az-functionapp-config-appsettings-set) позволяет создать или изменить параметр приложения. Следующая команда отключает функцию с именем `QueueTrigger` , создавая параметр приложения с именем `AzureWebJobs.QueueTrigger.Disabled` и присвоив ему значение `true` . 
 
 ```azurecli-interactive
-az functionapp config appsettings set --name <myFunctionApp> \
---resource-group <myResourceGroup> \
+az functionapp config appsettings set --name <FUNCTION_APP_NAME> \
+--resource-group <RESOURCE_GROUP_NAME> \
 --settings AzureWebJobs.QueueTrigger.Disabled=true
 ```
 
@@ -38,16 +51,55 @@ az functionapp config appsettings set --name <myFunctionApp> \
 --settings AzureWebJobs.QueueTrigger.Disabled=false
 ```
 
-## <a name="use-the-portal"></a>Использование портала
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/powershell)
 
-Также можно использовать кнопки **Включить** и **Отключить** на странице **Обзор** для функции. Эти кнопки работают, изменяя значение `AzureWebJobs.<FUNCTION_NAME>.Disabled` параметра приложения. Этот параметр, зависящий от функции, создается при первом отключении. 
+[`Update-AzFunctionAppSetting`](/powershell/module/az.functions/update-azfunctionappsetting)Команда добавляет или обновляет параметр приложения. Следующая команда отключает функцию с именем `QueueTrigger` , создавая параметр приложения с именем `AzureWebJobs.QueueTrigger.Disabled` и присвоив ему значение `true` . 
 
-![Переключатель состояния функции](media/disable-function/function-state-switch.png)
+```azurepowershell-interactive
+Update-AzFunctionAppSetting -Name <FUNCTION_APP_NAME> -ResourceGroupName <RESOURCE_GROUP_NAME> -AppSetting @{"AzureWebJobs.QueueTrigger.Disabled" = "true"}
+```
 
-Даже при публикации в приложении-функции из локального проекта вы все еще можете использовать портал для отключения функций в приложении-функции. 
+Чтобы снова включить эту функцию, повторите ту же команду со значением `false`.
 
-> [!NOTE]  
-> Компоненты тестирования, интегрированные с порталом, игнорируют параметр `Disabled`. Это означает, что отключенная функция будет работать обычным образом, когда она запускается из окна **Тест** на портале. 
+```azurepowershell-interactive
+Update-AzFunctionAppSetting -Name <FUNCTION_APP_NAME> -ResourceGroupName <RESOURCE_GROUP_NAME> -AppSetting @{"AzureWebJobs.QueueTrigger.Disabled" = "false"}
+```
+---
+
+## <a name="functions-in-a-slot"></a>Функции в слоте
+
+По умолчанию параметры приложения применяются и к приложениям, выполняемым в слотах развертывания. Однако можно переопределить параметр приложения, используемый слотом, задав параметр приложения для конкретного слота. Например, может потребоваться, чтобы функция была активной в рабочей среде, но не во время тестирования развертывания, например функция, активируемая по таймеру. 
+
+Отключение функции только в промежуточном слоте:
+
+# <a name="portal"></a>[Портал](#tab/portal)
+
+Перейдите к экземпляру слота приложения функции, выбрав слоты **развертывания** в разделе **развертывание**, выбрав слот и выбрав **функции** в экземпляре слота.  Выберите свою функцию, а затем используйте кнопки **включить** и **Отключить** на странице **обзора** функции. Эти кнопки работают, изменяя значение `AzureWebJobs.<FUNCTION_NAME>.Disabled` параметра приложения. Этот параметр, зависящий от функции, создается при первом отключении. 
+
+Можно также напрямую добавить параметр приложения `AzureWebJobs.<FUNCTION_NAME>.Disabled` с именем со значением `true` в **конфигурации** для экземпляра слота. При добавлении параметра приложения для конкретного слота обязательно установите флажок **параметр слота развертывания** . При этом значение параметра будет поддерживаться слотом во время замены.
+
+# <a name="azure-cli"></a>[Azure CLI](#tab/azurecli)
+
+```azurecli-interactive
+az functionapp config appsettings set --name <FUNCTION_APP_NAME> \
+--resource-group <RESOURCE_GROUP_NAME> --slot <SLOT_NAME> \
+--slot-settings AzureWebJobs.QueueTrigger.Disabled=true
+```
+Чтобы снова включить эту функцию, повторите ту же команду со значением `false`.
+
+```azurecli-interactive
+az functionapp config appsettings set --name <myFunctionApp> \
+--resource-group <myResourceGroup> --slot <SLOT_NAME> \
+--slot-settings AzureWebJobs.QueueTrigger.Disabled=false
+```
+
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/powershell)
+
+Azure PowerShell в настоящее время не поддерживает эту функцию.
+
+---
+
+Дополнительные сведения см. в разделе [слоты развертывания функций Azure](functions-deployment-slots.md).
 
 ## <a name="localsettingsjson"></a>local.settings.json
 

@@ -17,10 +17,10 @@ ms.author: sethm
 ms.reviewer: thsomasu
 ms.lastreviewed: 09/23/2019
 ms.openlocfilehash: 07600b1fe0cb7420989fbbfbe55c2f1a4197d2fc
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100548256"
 ---
 # <a name="notification-hubs-security"></a>Безопасность концентраторов уведомлений
@@ -79,6 +79,6 @@ Endpoint=sb://mytestnamespace1.servicebus.windows.net/;SharedAccessKeyName=polic
 
 ![Получение ключей SAS](media/notification-hubs-push-notification-security/access1.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Общие сведения о концентраторах уведомлений](notification-hubs-push-notification-overview.md)

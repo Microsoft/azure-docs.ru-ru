@@ -7,17 +7,17 @@ ms.service: azure-redhat-openshift
 ms.topic: conceptual
 ms.date: 01/10/2021
 ms.openlocfilehash: 651b73db084e8090f59faeffa9991c2ac468ca08
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100634419"
 ---
 # <a name="use-azure-container-registry-with-azure-red-hat-openshift-aro"></a>Использование реестра контейнеров Azure с Azure Red Hat OpenShift (АТО)
 
 Реестр контейнеров Azure (запись контроля доступа) — это управляемая служба реестра контейнеров, которую можно использовать для хранения частных образов контейнеров DOCKER с корпоративными возможностями, такими как Георепликация. Чтобы получить доступ к записи контроля доступа из кластера АТО, этот кластер может пройти проверку подлинности в записи контроля доступа, сохранив учетные данные входа DOCKER в Kubernetes секрете.  Аналогичным образом кластер АТО может использовать Имажепуллсекрет в спецификации Pod для проверки подлинности в реестре при извлечении образа. Из этой статьи вы узнаете, как настроить реестр контейнеров Azure с помощью кластера Azure Red Hat OpenShift для хранения и извлечения частных образов контейнеров DOCKER.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В этом учебнике предполагается наличие существующего реестра контейнеров Azure. В противном случае используйте портал Azure или [Azure CLI инструкции](../container-registry/container-registry-get-started-azure-cli.md) для создания реестра контейнеров.
 

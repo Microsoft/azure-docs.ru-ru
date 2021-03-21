@@ -9,10 +9,10 @@ ms.author: mingshen
 ms.date: 10/15/2020
 ms.custom: contperf-fy21q2
 ms.openlocfilehash: 748b6c3506127de8fce153a77571664ea531ffa1
-ms.sourcegitcommit: fc401c220eaa40f6b3c8344db84b801aa9ff7185
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98601366"
 ---
 # <a name="azure-consumption-commitment-benefit"></a>Преимущество обязательства потребления Azure
@@ -55,6 +55,6 @@ ms.locfileid: "98601366"
 > [!IMPORTANT]
 > Предложения должны быть приобретены непосредственно через Azure Marketplace с регистрацией, связанной с обязательством по потреблению Azure вашей организации на приобретение в соответствии с вашими обязательствами. Предложения, приобретенные по поставщику облачных решений (CSP), любой другой канал торгового посредника или за пределами Marketplace, не влияют на ваши обязательства.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Чтобы узнать больше о том, как ваша организация может использовать Azure Marketplace, заполните наш модуль Microsoft Learn: [Упростите облачную закупку и управление с помощью Azure Marketplace](/learn/modules/simplify-cloud-procurement-governance-azure-marketplace/).

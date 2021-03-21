@@ -6,10 +6,10 @@ ms.date: 03/15/2019
 ms.custom: devx-track-csharp
 ms.reviewer: sdash
 ms.openlocfilehash: db8c84334bfce52d34b9fadf73bb2b070fa93a70
-ms.sourcegitcommit: 49ea056bbb5957b5443f035d28c1d8f84f5a407b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100007114"
 ---
 # <a name="application-map-triage-distributed-applications"></a>Схема приложений: рассмотрение распределенных приложений
@@ -128,7 +128,7 @@ namespace CustomInitializer.Telemetry
     </ApplicationInsights>
 ```
 
-Альтернативным методом для веб-приложений ASP.NET является создание экземпляра инициализатора в коде, например в Global.aspx.cs:
+Альтернативным методом для веб-приложений ASP.NET является создание экземпляра инициализатора в коде, например, в Global. aspx. cs:
 
 ```csharp
  using Microsoft.ApplicationInsights.Extensibility;
@@ -272,7 +272,7 @@ exporter.add_telemetry_processor(callback_function)
 
 Если схема приложений не работает должным образом, попробуйте сделать следующее:
 
-### <a name="general"></a>Общее
+### <a name="general"></a>Общие сведения
 
 1. Убедитесь, что вы используете официально поддерживаемый пакет SDK. Неподдерживаемые пакеты SDK и пакеты SDK сообщества могут не поддерживать корреляцию.
 

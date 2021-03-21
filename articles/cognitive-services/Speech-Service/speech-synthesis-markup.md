@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: trbye
 ms.custom: devx-track-js, devx-track-csharp
-ms.openlocfilehash: 0a0f48a311e5adf0dd7c70c43317d99cc94fca86
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.openlocfilehash: 124e3ef734e03606372dc07059841b77c3a548de
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103470529"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104584573"
 ---
 # <a name="improve-synthesis-with-speech-synthesis-markup-language-ssml"></a>Улучшение синтеза с помощью языка разметки речи (SSML)
 
@@ -61,11 +61,11 @@ ms.locfileid: "103470529"
 
 **Атрибуты**
 
-| attribute | Описание | Обязательный или необязательный |
+| Атрибут | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
-| `version` | Указывает версию спецификации SSML, используемую для интерпретации разметки документа. Текущая версия — 1,0. | Обязательный |
-| `xml:lang` | Указывает язык корневого документа. Значение может содержать символы в нижнем регистре, двухбуквенный код языка (например, `en` ), языковой код и страну или регион в верхнем регистре (например, `en-US` ). | Обязательный |
-| `xmlns` | Задает универсальный код ресурса (URI) документа, который определяет словарь разметки (типы элементов и имена атрибутов) документа SSML. Текущий URI — http://www.w3.org/2001/10/synthesis . | Обязательный |
+| `version` | Указывает версию спецификации SSML, используемую для интерпретации разметки документа. Текущая версия — 1,0. | Обязательно |
+| `xml:lang` | Указывает язык корневого документа. Значение может содержать символы в нижнем регистре, двухбуквенный код языка (например, `en` ), языковой код и страну или регион в верхнем регистре (например, `en-US` ). | Обязательно |
+| `xmlns` | Задает универсальный код ресурса (URI) документа, который определяет словарь разметки (типы элементов и имена атрибутов) документа SSML. Текущий URI — http://www.w3.org/2001/10/synthesis . | Обязательно |
 
 ## <a name="choose-a-voice-for-text-to-speech"></a>Выбор голоса для преобразования текста в речь
 
@@ -81,7 +81,7 @@ ms.locfileid: "103470529"
 
 **Атрибуты**
 
-| attribute | Описание | Обязательный или необязательный |
+| Атрибут | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
 | `name` | Определяет голос, используемый для вывода текста в речь. Полный список поддерживаемых голосов см. в разделе [Поддержка языков](language-support.md#text-to-speech). | Обязательный |
 
@@ -104,9 +104,9 @@ ms.locfileid: "103470529"
 
 **Атрибуты**
 
-| attribute | Описание | Обязательный или необязательный |
+| Атрибут | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
-| `name` | Определяет голос, используемый для вывода текста в речь. Полный список поддерживаемых голосов см. в разделе [Поддержка языков](language-support.md#text-to-speech). | Обязательный |
+| `name` | Определяет голос, используемый для вывода текста в речь. Полный список поддерживаемых голосов см. в разделе [Поддержка языков](language-support.md#text-to-speech). | Обязательно |
 
 > [!IMPORTANT]
 > Несколько голосов несовместимы с функцией границы слова. Чтобы использовать несколько голосов, необходимо отключить функцию границ слов.
@@ -117,7 +117,7 @@ ms.locfileid: "103470529"
 
 # <a name="c"></a>[C#](#tab/csharp)
 
-Для получения дополнительной информации см. <a href="https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechconfig.setproperty" target="_blank"> `SetProperty` </a>.
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechconfig.setproperty" target="_blank"> `SetProperty` </a>разделе.
 
 ```csharp
 speechConfig.SetProperty(
@@ -126,7 +126,7 @@ speechConfig.SetProperty(
 
 # <a name="c"></a>[C++](#tab/cpp)
 
-Для получения дополнительной информации см. <a href="https://docs.microsoft.com/cpp/cognitive-services/speech/speechconfig#setproperty" target="_blank"> `SetProperty` </a>.
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/cpp/cognitive-services/speech/speechconfig#setproperty" target="_blank"> `SetProperty` </a>разделе.
 
 ```cpp
 speechConfig->SetProperty(
@@ -135,7 +135,7 @@ speechConfig->SetProperty(
 
 # <a name="java"></a>[Java](#tab/java)
 
-Для получения дополнительной информации см. <a href="https://docs.microsoft.com/java/api/com.microsoft.cognitiveservices.speech.speechconfig.setproperty#com_microsoft_cognitiveservices_speech_SpeechConfig_setProperty_String_String_" target="_blank"> `setProperty` </a>.
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/java/api/com.microsoft.cognitiveservices.speech.speechconfig.setproperty#com_microsoft_cognitiveservices_speech_SpeechConfig_setProperty_String_String_" target="_blank"> `setProperty` </a>разделе.
 
 ```java
 speechConfig.setProperty(
@@ -144,7 +144,7 @@ speechConfig.setProperty(
 
 # <a name="python"></a>[Python](#tab/python)
 
-Для получения дополнительной информации см. <a href="https://docs.microsoft.com/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechconfig#set-property-by-name-property-name--str--value--str-" target="_blank"> `set_property_by_name` </a>.
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechconfig#set-property-by-name-property-name--str--value--str-" target="_blank"> `set_property_by_name` </a>разделе.
 
 ```python
 speech_config.set_property_by_name(
@@ -162,7 +162,7 @@ speechConfig.setProperty(
 
 # <a name="objective-c"></a>[Objective-C](#tab/objectivec)
 
-Для получения дополнительной информации см. <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>.
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>разделе.
 
 ```objectivec
 [speechConfig setPropertyTo:@"false" byName:@"SpeechServiceResponse_Synthesis_WordBoundaryEnabled"];
@@ -170,7 +170,7 @@ speechConfig.setProperty(
 
 # <a name="swift"></a>[Swift](#tab/swift)
 
-Для получения дополнительной информации см. <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>.
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechconfiguration#setpropertytobyname" target="_blank"> `setPropertyTo` </a>разделе.
 
 ```swift
 speechConfig!.setPropertyTo(
@@ -242,7 +242,7 @@ speechConfig!.setPropertyTo(
 
 **Атрибуты**
 
-| attribute | Описание | Обязательный или необязательный |
+| Атрибут | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
 | `style` | Задает стиль речи. В настоящее время стиль речи зависит от голоса. | Требуется при настройке стиля речи для нейронной речи. Если используется `mstts:express-as` , необходимо указать стиль. Если указано недопустимое значение, этот элемент будет проигнорирован. |
 | `styledegree` | Задает интенсивность стиля речи. **Допустимые значения**: от 0,01 до 2 включительно. Значение по умолчанию — 1, то есть Стандартная интенсивность стиля. Минимальная единица — 0,01, что приводит к слегка тенденциям в отношении целевого стиля. Значение 2 приводит к удвоению интенсивности стиля по умолчанию.  | Необязательно (в настоящее время `styledegree` поддерживается только zh-CN-ксиаоксиаонеурал.)|
@@ -393,7 +393,7 @@ speechConfig!.setPropertyTo(
 
 **Атрибуты**
 
-| attribute | Описание | Обязательный или необязательный |
+| Атрибут | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
 | `strength` | Задает относительную продолжительность паузы, используя одно из следующих значений:<ul><li>нет</li><li>x-слабый</li><li>безопасные</li><li>Средний (по умолчанию)</li><li>надежный</li><li>строгость x</li></ul> | Необязательно |
 | `time` | Указывает абсолютную длительность паузы в секундах или миллисекундах, это значение должно быть меньше 5000ms. Примеры допустимых значений — `2s` и. `500ms` | Необязательно |
@@ -432,10 +432,10 @@ speechConfig!.setPropertyTo(
 
 **Атрибуты**
 
-| attribute | Описание | Обязательный или необязательный |
+| Атрибут | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
-| `type` | Указывает место добавления тишины: <ul><li>Ведущие — в начале текста </li><li>Хвост — в конце текста </li><li>Сентенцебаундари — между соседними предложениями </li></ul> | Обязательный |
-| `Value` | Указывает абсолютную длительность паузы в секундах или миллисекундах, это значение должно быть меньше 5000ms. Примеры допустимых значений — `2s` и. `500ms` | Обязательный |
+| `type` | Указывает место добавления тишины: <ul><li>Ведущие — в начале текста </li><li>Хвост — в конце текста </li><li>Сентенцебаундари — между соседними предложениями </li></ul> | Обязательно |
+| `Value` | Указывает абсолютную длительность паузы в секундах или миллисекундах, это значение должно быть меньше 5000ms. Примеры допустимых значений — `2s` и. `500ms` | Обязательно |
 
 **Пример** В этом примере `mtts:silence` используется для добавления 200 мс бездействия между двумя предложениями.
 ```xml
@@ -497,7 +497,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 **Атрибуты**
 
-| attribute | Описание | Обязательный или необязательный |
+| Атрибут | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
 | `alphabet` | Указывает фонетический алфавит, используемый при создании транскрипции строки в `ph` атрибуте. Строка, указывающая букву алфавита, должна быть указана в строчных буквах. Ниже приведены возможные алфавиты, которые можно указать.<ul><li>`ipa`&ndash; <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">Международный фонетический алфавит</a></li><li>`sapi`&ndash; [Фонетический алфавит речевой службы](speech-ssml-phonetic-sets.md)</li><li>`ups`&ndash; <a href="https://documentation.help/Microsoft-Speech-Platform-SDK-11/17509a49-cae7-41f5-b61d-07beaae872ea.htm" target="_blank">Универсальный набор телефонов</a></li></ul><br>Алфавит применяется только к `phoneme` элементу в элементе.. | Необязательно |
 | `ph` | Строка, содержащая телефоны, задающих произношение слова в `phoneme` элементе. Если указанная строка содержит нераспознаваемые телефоны, служба преобразования текста в речь (TTS) отклоняет весь документ SSML и не выдает ни одного из речевых выходных данных, указанных в документе. | Требуется при использовании фонемы. |
@@ -547,7 +547,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 **Атрибуты**
 
-| attribute | Описание                               | Обязательный или необязательный |
+| Атрибут | Описание                               | Обязательный или необязательный |
 |-----------|-------------------------------------------|---------------------|
 | `uri`     | Адрес внешнего документа областей. | Обязательный.           |
 
@@ -670,7 +670,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 **Атрибуты**
 
-| attribute | Описание | Обязательный или необязательный |
+| Атрибут | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
 | `pitch` | Указывает шаг по базовому плану для текста. Вы можете выразить тон следующим образом:<ul><li>Абсолютное значение, выраженное в виде числа, за которым следует "Гц" (герц). Например, `<prosody pitch="600Hz">some text</prosody>`.</li><li>Относительное значение, выраженное в виде числа, начинающегося с "+" или "-" и заканчивающееся на "Гц" или "St", которое указывает величину изменения высоты. Пример: `<prosody pitch="+80Hz">some text</prosody>` или `<prosody pitch="-2st">some text</prosody>`. "St" означает, что единица изменения — полтона, то есть половина тона (половина шага) на стандартной диатоник шкале.</li><li>Значение константы:<ul><li>x-низкий</li><li>low</li><li>средняя</li><li>high</li><li>x-высокий</li><li>default</li></ul></li></ul> | Необязательно |
 | `contour` |Профиль теперь поддерживает как нейронные, так и стандартные голоса. Контур представляет изменения по шагам. Эти изменения представлены в виде массива целевых объектов в определенные позиции времени в выходных данных речи. Каждый целевой объект определяется набором пар параметров. Пример: <br/><br/>`<prosody contour="(0%,+20Hz) (10%,-2st) (40%,+10Hz)">`<br/><br/>Первое значение в каждом наборе параметров указывает расположение изменения высоты в процентах от длительности текста. Второе значение задает величину, которую нужно увеличить или уменьшить, используя относительное значение или значение перечисления для высоты (см `pitch` .). | Необязательно |
@@ -753,9 +753,9 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 **Атрибуты**
 
-| attribute | Описание | Обязательный или необязательный |
+| Атрибут | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
-| `interpret-as` | Указывает тип содержимого текста элемента. Список типов см. в таблице ниже. | Обязательный |
+| `interpret-as` | Указывает тип содержимого текста элемента. Список типов см. в таблице ниже. | Обязательно |
 | `format` | Предоставляет дополнительные сведения о точном форматировании текста элемента для типов содержимого, которые могут иметь неоднозначные форматы. SSML определяет форматы для типов содержимого, которые их используют (см. таблицу ниже). | Необязательно |
 | `detail` | Указывает уровень детализации для речи. Например, этот атрибут может запросить, чтобы механизм синтеза речи произносит знаки пунктуации. Для не определено ни одного стандартного значения `detail` . | Необязательно |
 
@@ -815,7 +815,7 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 **Атрибуты**
 
-| attribute | Описание                                   | Обязательный или необязательный                                        |
+| Атрибут | Описание                                   | Обязательный или необязательный                                        |
 |-----------|-----------------------------------------------|------------------------------------------------------------|
 | `src`     | Указывает расположение или URL-адрес звукового файла. | Требуется при использовании элемента audio в документе SSML. |
 
@@ -851,10 +851,10 @@ A good place to start is by trying out the slew of educational apps that are hel
 
 **Атрибуты**
 
-| attribute | Описание | Обязательный или необязательный |
+| Атрибут | Описание | Обязательный или необязательный |
 |-----------|-------------|---------------------|
 | `src` | Указывает расположение или URL-адрес фонового звукового файла. | Требуется при использовании фонового звука в документе SSML. |
-| `volume` | Указывает громкость фонового звукового файла. **Допустимые значения**: `0` в `100` включительно. Значение по умолчанию — `1`. | Необязательно |
+| `volume` | Указывает громкость фонового звукового файла. **Допустимые значения**: `0` в `100` включительно. Значение по умолчанию — `1`. | Необязательно |
 | `fadein` | Задает время, в течение которого фоновый звук постепенно передается в миллисекундах. Значение по умолчанию — `0` , что эквивалентно отсутствию появления. **Допустимые значения**: `0` в `10000` включительно.  | Необязательно |
 | `fadeout` | Указывает длительность фонового исчезновения в миллисекундах. Значение по умолчанию — `0` , что эквивалентно значению без затухания. **Допустимые значения**: `0` в `10000` включительно.  | Необязательно |
 
@@ -868,6 +868,117 @@ A good place to start is by trying out the slew of educational apps that are hel
     </voice>
 </speak>
 ```
+
+## <a name="bookmark-element"></a>Bookmark, элемент
+
+`bookmark`Элемент позволяет вставлять закладки в SSML и получать смещение звука каждой закладки звукового потока для асинхронного уведомления.
+
+**Синтаксис**
+
+```xml
+<bookmark mark="string"/>
+```
+
+**Атрибуты**
+
+| Атрибут | Описание                                   | Обязательный или необязательный                                        |
+|-----------|-----------------------------------------------|------------------------------------------------------------|
+| `mark`     | Задает текст закладки `bookmark` элемента. | Обязательный. |
+
+**Пример**
+
+```xml
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+    <voice name="en-US-GuyNeural">
+        <bookmark mark='bookmark_one'/> one.
+        <bookmark mark='bookmark_two'/> two. three. four.
+    </voice>
+</speak>
+```
+
+### <a name="get-bookmark-using-speech-sdk"></a>Получение закладки с помощью речевого пакета SDK
+
+Вы можете подписываться на `BookmarkReached` событие в пакете SDK для распознавания речи, чтобы получить смещения закладок.
+
+> [!NOTE]
+> `BookmarkReached` событие доступно только с версии пакета SDK для Speech 1.16.0.
+
+
+# <a name="c"></a>[C#](#tab/csharp)
+
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechsynthesizer.bookmarkreached" target="_blank"> `BookmarkReached` </a>разделе.
+
+```csharp
+synthesizer.BookmarkReached += (s, e) =>
+{
+    // The unit of e.AudioOffset is tick (1 tick = 100 nanoseconds), divide by 10,000 to convert to milliseconds.
+    Console.WriteLine($"Bookmark reached. Audio offset: " +
+        $"{e.AudioOffset / 10000}ms, bookmark text: {e.Text}.");
+};
+```
+
+# <a name="c"></a>[C++](#tab/cpp)
+
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/cpp/cognitive-services/speech/speechsynthesizer#bookmarkreached" target="_blank"> `BookmarkReached` </a>разделе.
+
+```cpp
+synthesizer->BookmarkReached += [](const SpeechSynthesisBookmarkEventArgs& e)
+{
+    cout << "bookmark reached. "
+        // The unit of e.AudioOffset is tick (1 tick = 100 nanoseconds), divide by 10,000 to convert to milliseconds.
+        << "Audio offset: " << e.AudioOffset / 10000 << "ms, "
+        << "Bookmark text: " << e.Text << "." << endl;
+};
+```
+
+# <a name="java"></a>[Java](#tab/java)
+
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/java/api/com.microsoft.cognitiveservices.speech.speechsynthesizer.bookmarkReached#com_microsoft_cognitiveservices_speech_SpeechSynthesizer_BookmarkReached" target="_blank"> `BookmarkReached` </a>разделе.
+
+```java
+synthesizer.BookmarkReached.addEventListener((o, e) -> {
+    // The unit of e.AudioOffset is tick (1 tick = 100 nanoseconds), divide by 10,000 to convert to milliseconds.
+    System.out.print("Bookmark reached. Audio offset: " + e.getAudioOffset() / 10000 + "ms, ");
+    System.out.println("bookmark text: " + e.getText() + ".");
+});
+```
+
+# <a name="python"></a>[Python](#tab/python)
+
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechsynthesizer#bookmark-reached" target="_blank"> `bookmark_reached` </a>разделе.
+
+```python
+# The unit of evt.audio_offset is tick (1 tick = 100 nanoseconds), divide it by 10,000 to convert to milliseconds.
+speech_synthesizer.bookmark_reached.connect(lambda evt: print(
+    "Bookmark reached: {}, audio offset: {}ms, bookmark text: {}.".format(evt, evt.audio_offset / 10000, evt.text)))
+```
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/javascript/api/microsoft-cognitiveservices-speech-sdk/speechsynthesizer#bookmarkReached" target="_blank"> `bookmarkReached` </a>разделе.
+
+```javascript
+synthesizer.bookmarkReached = function (s, e) {
+    window.console.log("(Bookmark reached), Audio offset: " + e.audioOffset / 10000 + "ms. Bookmark text: " + e.text);
+}
+```
+
+# <a name="objective-c"></a>[Objective-C](#tab/objectivec)
+
+Дополнительные сведения см. в <a href="https://docs.microsoft.com/objectivec/cognitive-services/speech/spxspeechsynthesizer#addbookmarkreachedeventhandler" target="_blank"> `addBookmarkReachedEventHandler` </a>разделе.
+
+```objectivec
+[synthesizer addBookmarkReachedEventHandler: ^ (SPXSpeechSynthesizer *synthesizer, SPXSpeechSynthesisBookmarkEventArgs *eventArgs) {
+    // The unit of AudioOffset is tick (1 tick = 100 nanoseconds), divide by 10,000 to converted to milliseconds.
+    NSLog(@"Bookmark reached. Audio offset: %fms, bookmark text: %@.", eventArgs.audioOffset/10000., eventArgs.text);
+}];
+```
+
+# <a name="swift"></a>[Swift](#tab/swift)
+
+Для получения дополнительной информации см. <a href="https://docs.microsoft.com/swift/cognitive-services/speech/spxspeechsynthesizer#addbookmarkreachedeventhandler" target="_blank"> `addBookmarkReachedEventHandler` </a>.
+
+---
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

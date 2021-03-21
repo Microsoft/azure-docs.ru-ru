@@ -6,10 +6,10 @@ ms.date: 05/14/2019
 ms.custom: devx-track-csharp
 ms.reviewer: mbullwin
 ms.openlocfilehash: a22a0d112671019d73eb4c9a3853462e4e9c8c75
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98937362"
 ---
 # <a name="telemetry-channels-in-application-insights"></a>Каналы телеметрии в Application Insights
@@ -61,7 +61,7 @@ Application Insights .NET и .NET Core SDK поставляются с двум�
 
 ### <a name="configuration-in-code-for-aspnet-applications"></a>Настройка в коде для приложений ASP.NET
 
-Следующий код настраивает экземпляр "Сервертелеметричаннел" с `StorageFolder` установленным пользовательским расположением. Добавьте этот код в начало приложения, как правило, в `Application_Start()` методе в Global.aspx.cs.
+Следующий код настраивает экземпляр "Сервертелеметричаннел" с `StorageFolder` установленным пользовательским расположением. Добавьте этот код в начало приложения, как правило, в `Application_Start()` методе в Global. aspx. cs.
 
 ```csharp
 using Microsoft.ApplicationInsights.Extensibility;

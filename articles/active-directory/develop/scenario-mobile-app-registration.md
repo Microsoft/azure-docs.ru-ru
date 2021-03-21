@@ -14,10 +14,10 @@ ms.author: jmprieur
 ms.reviewer: brandwe
 ms.custom: aaddev
 ms.openlocfilehash: 6385f03556d155941139b77333d6f4a25081fe67
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100103164"
 ---
 # <a name="register-mobile-apps-that-call-web-apis"></a>Регистрация мобильных приложений, вызывающих веб-API
@@ -94,6 +94,6 @@ ms.locfileid: "100103164"
 
 Статические регистрация разрешений позволяет администраторам легко утверждать ваше приложение. Рекомендуется статическая регистрация.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Перейдите к следующей статье в этом сценарии: [Конфигурация кода приложения](scenario-mobile-app-configuration.md).

@@ -2,13 +2,13 @@
 title: Основные понятия — обновления и обновление частного облака
 description: Сведения об основных процессах обновления и функциях в решении VMware для Azure.
 ms.topic: conceptual
-ms.date: 02/16/2021
-ms.openlocfilehash: d93453cbf6ad744844a04cd298cc18ad181cc0b0
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.date: 03/17/2021
+ms.openlocfilehash: 9810de40944f70a4efb7ec81d17868ffdf256c7d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100634998"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104586154"
 ---
 # <a name="azure-vmware-solution-private-cloud-updates-and-upgrades"></a>Обновление и обновление частного облака решения VMware для Azure
 
@@ -53,7 +53,9 @@ ms.locfileid: "100634998"
 
 В случае сбоя решение Azure VMware может восстановить эти компоненты из резервной копии конфигурации. 
 
-Дополнительные сведения о версиях программного обеспечения VMware см. в [статье концепция частных облаков и кластеров](concepts-private-clouds-clusters.md) и [часто задаваемые вопросы](faq.yml).
+## <a name="vmware-software-versions"></a>Версии программного обеспечения VMware
+[!INCLUDE [vmware-software-versions](includes/vmware-software-versions.md)]
+
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

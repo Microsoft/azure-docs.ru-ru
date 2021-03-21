@@ -11,10 +11,10 @@ ms.workload: identity
 ms.date: 02/09/2021
 ms.author: chmutali
 ms.openlocfilehash: 2b1a43ee6b13d32c0eaed92538cf9c25405e061b
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100104337"
 ---
 # <a name="how-azure-active-directory-provisioning-integrates-with-workday"></a>Как Azure Active Directory подготовка интегрируется с Workday
@@ -408,7 +408,7 @@ Azure AD отправляет следующий запрос на веб-слу
 
 Ниже приведены некоторые примеры того, как можно расширить интеграцию с Workday для удовлетворения конкретных требований. 
 
-**Пример 1**
+**Пример 1**
 
 Предположим, вы хотите получить из Workday следующие наборы данных и использовать их в правилах подготовки:
 
@@ -437,7 +437,7 @@ Azure AD отправляет следующий запрос на веб-слу
      >| костцентеркоде | WD: Worker/WD: Worker_Data/WD: Organization_Data/WD: Worker_Organization_Data/WD: Organization_Data [ wd:Organization_Type_Reference/@wd:Descriptor = ' центр затрат ']/WD: Organization_Code/Text () |
      >| пайграуп | WD: Worker/WD: Worker_Data/WD: Organization_Data/WD: Worker_Organization_Data/WD: Organization_Data [ wd:Organization_Type_Reference/@wd:Descriptor = "Группа оплаты"]/WD: Organization_Name/Text () |
 
-**Пример 2**
+**Пример 2**
 
 Предположим, вы хотите получить сертификаты, связанные с пользователем. Эти сведения доступны в составе набора *квалификационных данных* . Чтобы получить этот набор данных как часть ответа *Get_Workers* , используйте следующий XPath: 
 
@@ -464,7 +464,7 @@ Azure AD отправляет следующий запрос на веб-слу
 
  
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Узнайте, как настроить Workday для Active Directory подготовки](../saas-apps/workday-inbound-tutorial.md)
 * [Узнайте, как настроить обратную запись в Workday](../saas-apps/workday-writeback-tutorial.md)

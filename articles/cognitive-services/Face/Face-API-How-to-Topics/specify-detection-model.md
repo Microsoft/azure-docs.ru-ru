@@ -12,10 +12,10 @@ ms.date: 03/05/2021
 ms.author: yluiu
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 72fd005ce44d116f86d9a0b4c0d1932e2e4facfb
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102425776"
 ---
 # <a name="specify-a-face-detection-model"></a>Указание модели определения лиц
@@ -28,7 +28,7 @@ ms.locfileid: "102425776"
 
 Если вы не уверены, следует ли использовать последнюю модель, перейдите к разделу [Вычисление различных моделей](#evaluate-different-models) , чтобы оценить новую модель и сравнить результаты с помощью текущего набора данных.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Вы должны быть знакомы с концепцией обнаружения лиц в AI. Если вы не видите, ознакомьтесь с концептуальным руководством по обнаружению лиц или пошаговым руководством.
 

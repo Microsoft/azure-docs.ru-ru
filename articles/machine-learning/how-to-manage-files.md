@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.custom: how-to
 ms.date: 02/05/2021
 ms.openlocfilehash: 474b3123513e4b8acf19ba9cdb42c3384ea3ced2
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100101591"
 ---
 # <a name="how-to-create-and-manage-files-in-your-workspace"></a>Создание файлов и управление ими в рабочей области
@@ -40,7 +40,7 @@ ms.locfileid: "100101591"
 
 1. Присвойте файлу имя.
 1. Выберите тип файла.
-1. Нажмите кнопку **Создать**.
+1. Нажмите кнопку **создания**.
 
 В разделе предварительного просмотра отображаются записные книжки и большинство типов текстовых файлов.  Большинство других типов файлов не имеют предварительной версии.
 

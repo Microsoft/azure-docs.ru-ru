@@ -10,10 +10,10 @@ ms.workload: data-services
 author: kromerm
 ms.author: makromer
 ms.openlocfilehash: ef47d311f5f096db962ea27792e7871dbf0ef81a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101712969"
 ---
 # <a name="iterative-development-and-debugging-with-azure-data-factory"></a>Итеративные разработка и отладка в фабрике данных Azure
@@ -48,11 +48,11 @@ ms.locfileid: "101712969"
 
 ![Точки останова на холсте конвейера](media/iterative-development-debugging/iterative-development-3.png)
 
-Чтобы задать точку останова, выберите элемент на холсте конвейера. Параметр *Отладка до момента* появляется в виде пустого красного круга в правом верхнем углу элемента.
+Чтобы задать точку останова, выберите элемент на холсте конвейера. Параметр *Отладка до* отображается в виде пустого красного кружка в правом верхнем углу элемента.
 
 ![До включения точки останова для выбранного элемента](media/iterative-development-debugging/iterative-development-4.png)
 
-Когда вы выберете параметр *Отладка до момента*, он изменится на красный круг с заливкой, указывая на включение точки останова.
+После выбора параметра *Отладка до* можно изменить его на красный круг, чтобы указать, что точка останова включена.
 
 ![После включения точки останова для выбранного элемента](media/iterative-development-debugging/iterative-development-5.png)
 

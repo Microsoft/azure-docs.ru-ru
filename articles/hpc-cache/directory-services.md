@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 03/15/2021
 ms.author: v-erkel
 ms.openlocfilehash: fd5dce0760953bf19c72e1a1062a9c03ffe861e7
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103563386"
 ---
 # <a name="configure-directory-services"></a>Настройка служб каталогов
@@ -86,7 +86,7 @@ ms.locfileid: "103563386"
 * **BIND DN** — введите различающееся имя привязки, которое будет использоваться для проверки подлинности на сервере LDAP. (Используйте формат DN.)
 * **Привязать пароль** — укажите пароль для привязки DN.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Дополнительные сведения о доступе клиентов см. в статье [Подключение кэша HPC для Azure](hpc-cache-mount.md) .
 * Если учетные данные не скачиваются должным образом, обратитесь к администратору источника учетных данных. При необходимости откройте запрос в [службу поддержки](hpc-cache-support-ticket.md) .

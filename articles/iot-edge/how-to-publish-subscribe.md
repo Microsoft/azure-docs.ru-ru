@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.service: iot-edge
 monikerRange: '>=iotedge-2020-11'
 ms.openlocfilehash: 730680b0cb6e8a728ed3072419674346de649368
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200688"
 ---
 # <a name="publish-and-subscribe-with-azure-iot-edge"></a>Публикация и подписка с Azure IoT Edge
@@ -33,7 +33,7 @@ ms.locfileid: "103200688"
 - **Центр Интернета вещей** с номером SKU: F1, S1, S2 или S3.
 - Наличие **IOT Edge устройства с версией 1,2 или более поздней**. Так как IoT Edge MQTT Broker в настоящее время находится в общедоступной предварительной версии, задайте для следующих переменных среды значение true в контейнере edgeHub, чтобы включить брокер MQTT:
 
-   | Название | Значение |
+   | Имя | Значение |
    | - | - |
    | `experimentalFeatures__enabled` | `true` |
    | `experimentalFeatures__mqttBrokerEnabled` | `true` |

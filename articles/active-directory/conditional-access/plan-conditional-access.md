@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: joflore
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 13460fad0ed106f5c0590df961ceca54cb04cd7b
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102427187"
 ---
 # <a name="plan-a-conditional-access-deployment"></a>Планирование развертывания условного доступа
@@ -67,7 +67,7 @@ ms.locfileid: "102427187"
 Для изучения условного доступа можно воспользоваться следующими ресурсами:
 
 
-#### <a name="videos"></a>Видео
+#### <a name="videos"></a>Видеоролики
 
 * [Что такое условный доступ?](https://youtu.be/ffMAw2IVO7A)
 * [Как развернуть условный доступ?](https://youtu.be/c_izIRNJNuk)

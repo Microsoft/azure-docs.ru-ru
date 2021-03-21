@@ -12,10 +12,10 @@ ms.author: sstein
 ms.reviewer: sashan, moslake
 ms.date: 02/16/2021
 ms.openlocfilehash: f1761851f91e6d0c0aadb3315dbb7980a00bba5b
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100633824"
 ---
 # <a name="azure-hybrid-benefit---azure-sql-database--sql-managed-instance"></a>Преимущество гибридного использования Azure — база данных SQL Azure & SQL Управляемый экземпляр

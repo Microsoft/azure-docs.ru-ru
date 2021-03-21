@@ -4,10 +4,10 @@ description: В этой статье приводится сводка Azure Ba
 ms.date: 02/17/2019
 ms.topic: conceptual
 ms.openlocfilehash: e888b43ea5641f1943a096f045747d547c52fcfa
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102609759"
 ---
 # <a name="support-matrix-for-backup-with-microsoft-azure-backup-server-or-system-center-dpm"></a>Таблица поддержки для резервного копирования с помощью Microsoft Azure Backup Server или System Center DPM
@@ -85,7 +85,7 @@ Azure Backup может выполнять резервное копирован
 **Установка** | Установите DPM/MABS на одноцелевом компьютере.<br/><br/> Не устанавливайте DPM/MABS на контроллере домена на компьютере с установленной ролью сервера приложений на компьютере под управлением Microsoft Exchange Server или System Center Operations Manager или на узле кластера.<br/><br/> [Проверьте все системные требования DPM](/system-center/dpm/prepare-environment-for-dpm#dpm-server).
 **Доменная** | DPM/MABS должен быть присоединен к домену. Сначала установите, а затем присоедините DPM или MABS к домену. Перемещение DPM или MABS в новый домен после развертывания не поддерживается.
 **Память** | Современное хранилище резервных копий (MBS) поддерживается в DPM 2016/MABS v2 и более поздних версиях. MBS недоступно для MABS версии 1.
-**Обновление MABS** | Вы можете напрямую установить MABS версии 3 или же обновить MABS версии 2. [Подробнее.](backup-azure-microsoft-azure-backup.md#upgrade-mabs)
+**Обновление MABS** | Вы можете напрямую установить MABS версии 3 или же обновить MABS версии 2. [Подробнее](backup-azure-microsoft-azure-backup.md#upgrade-mabs).
 **Перемещение MABS** | Перемещение MABS на новый сервер с сохранением хранилища доступно при использовании MBS.<br/><br/> Имена исходного и нового серверов должны совпадать. Нельзя изменить имя, если вы хотите сохранить тот же пул хранилищ и использовать одну и ту же базу данных MABS для хранения точек восстановления данных.<br/><br/> Вам потребуется резервная копия базы данных MABS, так как ее потребуется восстановить.
 
 >[!NOTE]
@@ -243,7 +243,7 @@ BitLocker можно включить только после добавлени
 >
 > MABS v3 UR1 и более поздние версии продолжат поддерживать защиту и восстановление обычных томов ReFS.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Дополнительные сведения](backup-architecture.md#architecture-back-up-to-dpmmabs) об архитектуре MABS.
 - [Узнайте](backup-support-matrix-mars-agent.md), что поддерживается для агента MARS.

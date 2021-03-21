@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 02/02/2021
 ms.author: tisande
 ms.openlocfilehash: 1dccb8e51fbc578f8f218fe1582f95f7bcaf42d7
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99493796"
 ---
 # <a name="working-with-arrays-and-objects-in-azure-cosmos-db"></a>Работа с массивами и объектами в Azure Cosmos DB
@@ -52,7 +52,7 @@ SELECT [f.address.city, f.address.state] AS CityState
 FROM Families f
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
 [
@@ -78,7 +78,7 @@ SELECT f.id, ARRAY(SELECT DISTINCT VALUE c.givenName FROM c IN f.children) as Ch
 FROM f
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
 [
@@ -105,7 +105,7 @@ SELECT *
 FROM Families.children
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
 [
@@ -141,7 +141,7 @@ SELECT *
 FROM c IN Families.children
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
 [
@@ -174,7 +174,7 @@ FROM c IN Families.children
 WHERE c.grade = 8
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
 [{
@@ -189,7 +189,7 @@ SELECT COUNT(1) AS Count
 FROM child IN Families.children
 ```
 
-Вы получите такие результаты:
+Результаты:
 
 ```json
 [

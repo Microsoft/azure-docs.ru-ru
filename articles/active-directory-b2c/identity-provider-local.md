@@ -13,10 +13,10 @@ ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
 ms.openlocfilehash: b2baff33d9e91e1b5259d79eca0a22535c00f419
-ms.sourcegitcommit: de98cb7b98eaab1b92aa6a378436d9d513494404
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100555247"
 ---
 # <a name="set-up-the-local-account-identity-provider"></a>Настройка поставщика удостоверений локальной учетной записи
@@ -141,7 +141,7 @@ Azure AD B2C предоставляет различные способы про
 
 После загрузки начального пакета.
 
-1. В каждом файле замените строку `yourtenant` именем клиента Azure AD B2C. Например, если имя клиента B2C — *contosob2c*, все экземпляры `yourtenant.onmicrosoft.com` станут `contosob2c.onmicrosoft.com` .
+1. Замените строку `yourtenant` именем вашего клиента Azure AD B2C в каждом файле. Например, если имя вашего клиента B2C — *contosob2c*, все экземпляры `yourtenant.onmicrosoft.com` должны иметь вид `contosob2c.onmicrosoft.com`.
 
 1. Выполните действия, описанные в разделе [Добавление идентификаторов приложений в пользовательскую политику](custom-policy-get-started.md#add-application-ids-to-the-custom-policy) статьи [Приступая к работе с пользовательскими политиками в Azure Active Directory B2C](custom-policy-get-started.md). Например, обновите `/phone-number-passwordless/` **`Phone_Email_Base.xml`** **идентификаторы приложения (клиента)** двух приложений, зарегистрированных при выполнении необходимых условий, *IdentityExperienceFramework* и *ProxyIdentityExperienceFramework*.
 1. Отправка файлов политики

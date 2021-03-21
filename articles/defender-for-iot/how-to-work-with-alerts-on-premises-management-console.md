@@ -8,10 +8,10 @@ ms.date: 12/06/2020
 ms.service: azure
 ms.topic: how-to
 ms.openlocfilehash: 878b1b2d5ba13b68b5122e4b9cffc3c408e211e2
-ms.sourcegitcommit: e3151d9b352d4b69c4438c12b3b55413b4565e2f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100526329"
 ---
 # <a name="work-with-alerts-on-the-on-premises-management-console"></a>Работа с оповещениями на локальной консоли управления 
@@ -246,6 +246,6 @@ ms.locfileid: "100526329"
 
 :::image type="content" source="media/how-to-work-with-alerts-on-premises-management-console/edit-exclusion-rule-screen.png" alt-text="Снимок экрана представления &quot;изменение правила исключения&quot;.":::
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Работа с оповещениями на датчике](how-to-work-with-alerts-on-your-sensor.md)

@@ -8,10 +8,10 @@ author: krsh
 ms.author: krsh
 ms.date: 03/10/2021
 ms.openlocfilehash: 4711ea76af83594ec529cfda13a308fbe6646398
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200460"
 ---
 # <a name="how-to-create-a-virtual-machine-using-your-own-image"></a>Создание виртуальной машины с помощью собственного образа
@@ -220,7 +220,7 @@ Azure начнет подготовку указанной вами виртуа
 
 [!INCLUDE [Discussion of addition security checks](includes/size-connect-generalize.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Протестируйте образ виртуальной машины](azure-vm-image-test.md) , чтобы убедиться, что он соответствует требованиям к публикации Azure Marketplace. Это необязательно.
 - Если вы не хотите протестировать образ виртуальной машины, войдите в [Центр партнеров](https://partner.microsoft.com/) и ОПУБЛИКУЙТЕ образ SIG (параметр #1).

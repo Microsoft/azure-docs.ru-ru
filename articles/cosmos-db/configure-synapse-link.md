@@ -7,22 +7,23 @@ ms.topic: how-to
 ms.date: 11/30/2020
 ms.author: rosouz
 ms.custom: references_regions
-ms.openlocfilehash: dde6af75b751037c10d7786fa5b0b03ae31d969e
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.openlocfilehash: 64b9b6690eafe8f28fdf9711cd0534f4d7d96908
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98222621"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104584590"
 ---
 # <a name="configure-and-use-azure-synapse-link-for-azure-cosmos-db"></a>Настройка и использование Azure Synapse Link для Azure Cosmos DB
 [!INCLUDE[appliesto-sql-mongodb-api](includes/appliesto-sql-mongodb-api.md)]
 
-[Ссылка Azure синапсе для Azure Cosmos DB](synapse-link.md) — это собственная Гибридная функция для работы с транзакциями и аналитической обработки (HTAP), которая позволяет запускать аналитические данные практически в реальном времени по рабочим данным в Azure Cosmos DB. Synapse Link обеспечивает тесную эффективную интеграцию между Azure Cosmos DB и Azure Synapse Analytics.
+[Ссылка Azure синапсе для Azure Cosmos DB](synapse-link.md) — это собственная Гибридная функция для работы с транзакциями и аналитической обработки (HTAP), которая позволяет запускать аналитические данные практически в реальном времени по рабочим данным в Azure Cosmos DB. Synapse Link обеспечивает тесную эффективную интеграцию между Azure Cosmos DB и Azure Synapse Analytics.
 
 Ссылка Azure синапсе доступна для Azure Cosmos DB контейнеров API SQL или для Azure Cosmos DB API для коллекций Mongo DB. Выполните следующие действия, чтобы выполнить аналитические запросы с помощью ссылки Azure синапсе для Azure Cosmos DB:
 
 * [Включение ссылки синапсе для учетных записей Azure Cosmos DB](#enable-synapse-link)
 * [Создание контейнера Azure Cosmos DB с включенным аналитическим хранилищем](#create-analytical-ttl)
+* [Необязательно. обновление срока жизни аналитического хранилища для контейнера Azure Cosmos DB](#update-analytical-ttl)
 * [Подключение базы данных Azure Cosmos DB к рабочей области синапсе](#connect-to-cosmos-database)
 * [выполните запрос к аналитическому хранилищу с помощью Synapse Spark](#query-analytical-store-spark).
 * [Запрос к аналитическому хранилищу с помощью бессерверного пула SQL](#query-analytical-store-sql-on-demand)
@@ -50,6 +51,21 @@ ms.locfileid: "98222621"
 
 > [!NOTE]
 > Включение ссылки синапсе не приводит к автоматическому включению аналитического хранилища. После включения ссылки синапсе в учетной записи Cosmos DB включите аналитическое хранилище в контейнерах при их создании, чтобы начать репликацию данных операций в аналитическое хранилище. 
+
+### <a name="azure-cli"></a>Azure CLI
+
+Следующие ссылки показывают, как включить синапсе Link с помощью Azure CLI:
+
+* [Создать новую учетную запись Azure Cosmos DB с включенной ссылкой синапсе](https://docs.microsoft.com/cli/azure/cosmosdb?view=azure-cli-latest#az_cosmosdb_create-optional-parameters&preserve-view=true)
+* [Обновление существующей учетной записи Azure Cosmos DB для включения ссылки синапсе](https://docs.microsoft.com/cli/azure/cosmosdb?view=azure-cli-latest#az_cosmosdb_update-optional-parameters&preserve-view=true)
+
+### <a name="powershell"></a>PowerShell
+
+* [Создать новую учетную запись Azure Cosmos DB с включенной ссылкой синапсе](https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azcosmosdbaccount?view=azps-5.5.0#description&preserve-view=true)
+* [Обновление существующей учетной записи Azure Cosmos DB для включения ссылки синапсе](https://docs.microsoft.com/powershell/module/az.cosmosdb/update-azcosmosdbaccount?view=azps-5.5.0&preserve-view=true)
+
+
+Следующие ссылки показывают, как включить синапсе Link с помощью PowerShell:
 
 ## <a name="create-an-azure-cosmos-container-with-analytical-store"></a><a id="create-analytical-ttl"></a> Создание контейнера Azure Cosmos с помощью аналитического хранилища
 
@@ -159,11 +175,27 @@ except exceptions.CosmosResourceExistsError:
     print('A container with already exists')
 ```
 
-### <a name="update-the-analytical-store-time-to-live"></a><a id="update-analytical-ttl"></a> Обновление срока жизни аналитического хранилища
+### <a name="azure-cli"></a>Azure CLI
 
-После включения аналитического хранилища с определенным значением срока жизни вы можете позже задать для него другое допустимое значение. Значение можно обновить с помощью портала Azure или пакетов SDK. Сведения о различных параметрах конфигурации аналитического срока жизни см. в статье о [поддерживаемых значениях аналитического срока жизни](analytical-store-introduction.md#analytical-ttl).
+Следующие ссылки показывают, как создать контейнеры с поддержкой аналитического хранилища с помощью Azure CLI.
 
-#### <a name="azure-portal"></a>Портал Azure
+* [API Azure Cosmos DB для Mongo DB](https://docs.microsoft.com/cli/azure/cosmosdb/mongodb/collection?view=azure-cli-latest#az_cosmosdb_mongodb_collection_create-examples&preserve-view=true)
+* [Azure Cosmos DB API SQL](https://docs.microsoft.com/cli/azure/cosmosdb/sql/container?view=azure-cli-latest#az_cosmosdb_sql_container_create&preserve-view=true)
+
+### <a name="powershell"></a>PowerShell
+
+Следующие ссылки показывают, как создать контейнеры с поддержкой аналитического хранилища с помощью PowerShell:
+
+* [API Azure Cosmos DB для Mongo DB](https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azcosmosdbmongodbcollection?view=azps-5.5.0#description&preserve-view=true)
+* [Azure Cosmos DB API SQL](https://docs.microsoft.com/cli/azure/cosmosdb/sql/container?view=azure-cli-latest#az_cosmosdb_sql_container_create&preserve-view=true)
+
+
+## <a name="optional---update-the-analytical-store-time-to-live"></a><a id="update-analytical-ttl"></a> Необязательно. Обновите срок жизни аналитического хранилища.
+
+После включения аналитического хранилища с определенным значением TTL вы можете позже обновить его до другого допустимого значения. Это значение можно обновить с помощью портал Azure, Azure CLI, PowerShell или Cosmos DB пакетов SDK. Сведения о различных параметрах конфигурации аналитического срока жизни см. в статье о [поддерживаемых значениях аналитического срока жизни](analytical-store-introduction.md#analytical-ttl).
+
+
+### <a name="azure-portal"></a>Портал Azure
 
 Если контейнер с включенным аналитическим хранилищем был создан на портале Azure, он содержит стандартное значение аналитического срока жизни, которое равно -1. Чтобы обновить это значение, выполните следующие действия:
 
@@ -178,7 +210,7 @@ except exceptions.CosmosResourceExistsError:
   * Выберите **Включен (по умолчанию)** или **Включен** и задайте значение срока жизни.
   * Щелкните **Сохранить** , чтобы сохранить изменения.
 
-#### <a name="net-sdk"></a>Пакет SDK для .NET
+### <a name="net-sdk"></a>Пакет SDK для .NET
 
 В следующем коде показано, как обновить срок жизни для аналитического хранилища с помощью пакета SDK для .NET:
 
@@ -190,7 +222,7 @@ containerResponse.Resource. AnalyticalStorageTimeToLiveInSeconds = 60 * 60 * 24 
 await client.GetContainer("database", "container").ReplaceContainerAsync(containerResponse.Resource);
 ```
 
-#### <a name="java-v4-sdk"></a>Пакет SDK для Java версии 4
+### <a name="java-v4-sdk"></a>Пакет SDK для Java версии 4
 
 В следующем коде показано, как обновить срок жизни для аналитического хранилища с помощью пакета SDK для Java версии 4:
 
@@ -203,6 +235,26 @@ containerProperties.setAnalyticalStoreTimeToLiveInSeconds (60 * 60 * 24 * 180 );
 // Update container settings
 container.replace(containerProperties).block();
 ```
+
+### <a name="python-v4-sdk"></a>Пакет SDK для Python v4
+
+В настоящий момент не поддерживается.
+
+
+### <a name="azure-cli"></a>Azure CLI
+
+Следующие ссылки показывают, как обновить Контейнеры с аналитическим сроком жизни с помощью Azure CLI.
+
+* [API Azure Cosmos DB для Mongo DB](https://docs.microsoft.com/cli/azure/cosmosdb/mongodb/collection?view=azure-cli-latest#az_cosmosdb_mongodb_collection_update&preserve-view=true)
+* [Azure Cosmos DB API SQL](https://docs.microsoft.com/cli/azure/cosmosdb/sql/container?view=azure-cli-latest#az_cosmosdb_sql_container_update&preserve-view=true)
+
+### <a name="powershell"></a>PowerShell
+
+Следующие ссылки показывают, как обновить Контейнеры с аналитическим сроком жизни с помощью PowerShell:
+
+* [API Azure Cosmos DB для Mongo DB](https://docs.microsoft.com/powershell/module/az.cosmosdb/update-azcosmosdbmongodbcollection?view=azps-5.5.0&preserve-view=true)
+* [Azure Cosmos DB API SQL](https://docs.microsoft.com/powershell/module/az.cosmosdb/update-azcosmosdbsqlcontainer?view=azps-5.5.0&preserve-view=true)
+
 
 ## <a name="connect-to-a-synapse-workspace"></a><a id="connect-to-cosmos-database"></a> Подключение к рабочей области Synapse
 

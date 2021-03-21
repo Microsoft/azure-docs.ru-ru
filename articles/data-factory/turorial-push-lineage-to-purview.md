@@ -10,10 +10,10 @@ ms.custom:
 - references_regions
 ms.date: 12/3/2020
 ms.openlocfilehash: 3f2297ae619145ec19b53ba79d70b7c085cbcaab
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100361457"
 ---
 # <a name="push-data-factory-lineage-data-to-azure-purview-preview"></a>Отправка данных журнала обращений и преобразований фабрики данных в Azure зрения (Предварительная версия)
@@ -71,7 +71,7 @@ ms.locfileid: "100361457"
 > [!NOTE] 
 > Для операции журнала преобразований «выполнение пакета служб SSIS» поддерживаются только источник и назначение. Преобразование журнала преобразований для преобразования пока не поддерживается.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Пользовательская структура журнала преобразований каталога](../purview/catalog-lineage-user-guide.md)
 
 [Подключение фабрики данных к Azure зрения](connect-data-factory-to-azure-purview.md)

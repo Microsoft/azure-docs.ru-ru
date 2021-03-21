@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 02/09/2021
 ms.author: apimpm
 ms.openlocfilehash: 2bc9b1c5724fa7bab1fdf5ac9332d87ba03a6d11
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100545825"
 ---
 # <a name="use-named-values-in-azure-api-management-policies"></a>Использование именованных значений в политиках управления API Azure
@@ -25,7 +25,7 @@ ms.locfileid: "100545825"
 
 ## <a name="value-types"></a>Типы значений
 
-|Тип  |Описание  |
+|Type  |Описание  |
 |---------|---------|
 |Plain     |  Литеральная строка или выражение политики     |
 |Секрет     |   Литеральная строка или выражение политики, зашифрованные службой управления API      |
@@ -100,7 +100,7 @@ ms.locfileid: "100545825"
 
 ### <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-Начало использования Azure CLI:
+Чтобы начать работу с Azure CLI:
 
 [!INCLUDE [azure-cli-prepare-your-environment-no-header.md](../../includes/azure-cli-prepare-your-environment-no-header.md)]
 

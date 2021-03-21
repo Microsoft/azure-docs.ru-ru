@@ -8,12 +8,12 @@ ms.date: 08/24/2020
 ms.author: rogarana
 ms.subservice: disks
 ms.custom: references_regions
-ms.openlocfilehash: ba7d6d8deb2034f8b2a853cf74635687561c41ea
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.openlocfilehash: cdb22805e2e68893d3883272b66c2cfac13c807e
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99573608"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104721874"
 ---
 # <a name="use-the-azure-portal-to-enable-end-to-end-encryption-using-encryption-at-host"></a>Использование портал Azure для включения сквозного шифрования с помощью шифрования на узле
 
@@ -27,9 +27,6 @@ ms.locfileid: "99573608"
 
 [!INCLUDE [virtual-machines-disks-encryption-at-host-restrictions](../../includes/virtual-machines-disks-encryption-at-host-restrictions.md)]
 
-### <a name="supported-regions"></a>Поддерживаемые регионы
-
-[!INCLUDE [virtual-machines-disks-encryption-at-host-regions](../../includes/virtual-machines-disks-encryption-at-host-regions.md)]
 
 ### <a name="supported-vm-sizes"></a>Поддерживаемые размеры виртуальных машин
 
@@ -37,7 +34,24 @@ ms.locfileid: "99573608"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Чтобы иметь возможность использовать шифрование на узле для виртуальных машин или масштабируемых наборов виртуальных машин, необходимо включить эту функцию в подписке. Отправьте сообщение электронной почты encryptionAtHost@microsoft.com с идентификаторами подписки, чтобы включить функцию для ваших подписок.
+Прежде чем использовать свойство Енкриптионасост для виртуальной машины или VMSS, необходимо включить эту функцию для своей подписки. Выполните следующие действия, чтобы включить функцию для подписки.
+
+1. **Портал Azure**: выберите значок Cloud Shell на [портал Azure](https://portal.azure.com):
+
+    ![Значок запуска Cloud Shell из портал Azure](../Cloud-Shell/media/overview/portal-launch-icon.png)
+    
+2.  Выполните следующую команду, чтобы зарегистрировать компонент для подписки.
+
+    ```powershell
+     Register-AzProviderFeature -FeatureName "EncryptionAtHost" -ProviderNamespace "Microsoft.Compute" 
+    ```
+
+3.  Убедитесь, что состояние регистрации зарегистрировано (займет несколько минут), выполнив приведенную ниже команду, прежде чем пытаться воспользоваться функцией.
+
+    ```powershell
+     Get-AzProviderFeature -FeatureName "EncryptionAtHost" -ProviderNamespace "Microsoft.Compute"  
+    ```
+
 
 Войдите в портал Azure с помощью [предоставленной ссылки](https://aka.ms/diskencryptionupdates).
 

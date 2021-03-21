@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 01/17/2021
 ms.openlocfilehash: 5cbfb41d50e055f745864e4d5f8bc15a55d925e7
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101668575"
 ---
 # <a name="file-extension-insights-about-your-data-from-azure-purview"></a>Расширение файла сведения о данных из Azure зрения 
@@ -26,7 +26,7 @@ ms.locfileid: "101668575"
 > - Просмотр сведений о расширении файла в данных
 > - Детализация дополнительных сведений о расширении файла для данных
 
-## <a name="prerequisites"></a>Предварительные требования 
+## <a name="prerequisites"></a>Предварительные условия 
 
 Прежде чем приступить к работе с зрения Insights, убедитесь, что выполнены следующие действия.
 
@@ -70,7 +70,7 @@ ms.locfileid: "101668575"
 
 После просмотра подробных сведений о типах файлов, найденных в области данных, выполните детализацию для получения дополнительных сведений о расположении, где они расположены, а также о том, можно ли проверить их на наличие конфиденциальных данных.
 
-Пример.
+Пример:
 
 :::image type="content" source="media/file-extension-insights/file-extension-drilldown-small.png" alt-text="Отчет о расширении файла — Углубленная детализация" lightbox="media/file-extension-insights/file-extension-drilldown.png":::
 

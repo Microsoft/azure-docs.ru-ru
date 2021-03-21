@@ -13,13 +13,13 @@ ms.date: 05/07/2019
 ms.author: nacanuma
 ms.custom: aaddev, identityplatformtop40, devx-track-js
 ms.openlocfilehash: 47b8c8c074a5e0ce3ed73a2a9a4b06aa307cdff3
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98756420"
 ---
-# <a name="scenario-single-page-application"></a>Scenario: Одностраничное приложение
+# <a name="scenario-single-page-application"></a>Scenario: одностраничное приложение
 
 Узнайте все, что нужно для создания одностраничного приложения (SPA).
 
@@ -57,6 +57,6 @@ ms.locfileid: "98756420"
 
 [!INCLUDE [recommended-topics](../../../includes/active-directory-develop-scenarios-prerequisites.md)]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Перейдите к следующей статье в этом сценарии — [Регистрация приложения](scenario-spa-app-registration.md).

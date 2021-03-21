@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 06/29/2020
 ms.author: metang
 ms.openlocfilehash: 8b45fe07b4bd42059199197bc5b99f20f6b2a8cf
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102608722"
 ---
 # <a name="how-to-configure-read-aloud"></a>Как настроить чтение вслух

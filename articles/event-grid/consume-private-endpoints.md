@@ -3,12 +3,12 @@ title: Доставка событий с помощью службы частн
 description: В этой статье описывается, как обойти ограничение невозможности доставки событий с помощью службы Private Link.
 ms.topic: how-to
 ms.date: 02/12/2021
-ms.openlocfilehash: 4343740ea6c34c9ae282723b79007f7035785b04
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: 7ca15a76d56d9cdcdee741b661981b80c914d0e9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100548626"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104722333"
 ---
 # <a name="deliver-events-using-private-link-service"></a>Доставка событий с помощью службы частной связи
 В настоящее время невозможно доставить события с помощью [частных конечных точек](../private-link/private-endpoint-overview.md). То есть нет никакой поддержки, если есть требования к сетевой изоляции, в которых трафик доставленных событий не должен выходить за пределы частного IP-адреса. 
@@ -36,7 +36,7 @@ ms.locfileid: "100548626"
 Чтобы доставлять события в очереди или разделы служебной шины в пространстве имен служебная шина с помощью управляемого удостоверения, выполните следующие действия.
 
 1. [Включите назначенное системой удостоверение для раздела или домена](managed-service-identity.md#create-a-custom-topic-or-domain-with-an-identity). 
-1. Добавление удостоверения в роль [отправителя данных служебной шины Azure](/service-bus-messaging/service-bus-managed-service-identity.md#azure-built-in-roles-for-azure-service-bus) в пространстве имен служебной шины
+1. Добавление удостоверения в роль [отправителя данных служебной шины Azure](/service-bus-messaging/service-bus-managed-service-identity#azure-built-in-roles-for-azure-service-bus) в пространстве имен служебной шины
 1. [Установите флажок **разрешить доверенным службам Майкрософт обходить этот параметр брандмауэра** в пространстве имен служебной шины](../service-bus-messaging/service-bus-service-endpoints.md#trusted-microsoft-services). 
 1. [Настройте подписку на события](managed-service-identity.md#create-event-subscriptions-that-use-an-identity) , использующую очередь или раздел служебной шины в качестве конечной точки для использования назначенного системой удостоверения.
 
@@ -48,5 +48,5 @@ ms.locfileid: "100548626"
 1. [Настройте подписку на события](managed-service-identity.md#create-event-subscriptions-that-use-an-identity) , использующую очередь или раздел служебной шины в качестве конечной точки для использования назначенного системой удостоверения.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Дополнительные сведения о доставке событий с помощью управляемого удостоверения см. в разделе [Доставка событий с помощью управляемого удостоверения](managed-service-identity.md). 

@@ -9,10 +9,10 @@ ms.author: alkemper
 ms.topic: conceptual
 ms.date: 3/9/2020
 ms.openlocfilehash: 39455c4bc193cce036bd169c702b5c020d53d2f6
-ms.sourcegitcommit: fc401c220eaa40f6b3c8344db84b801aa9ff7185
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98602266"
 ---
 # <a name="use-feature-filters-to-enable-conditional-feature-flags"></a>Использование фильтров компонентов для включения условных флагов функций
@@ -87,7 +87,7 @@ public void ConfigureServices(IServiceCollection services)
 > [!div class="mx-imgBorder"]
 > ![Таржетингфилтер в действии](./media/feature-flags-percentagefilter.gif)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Включение поэтапного развертывания функций для определенных аудиторий](./howto-targetingfilter-aspnet-core.md)

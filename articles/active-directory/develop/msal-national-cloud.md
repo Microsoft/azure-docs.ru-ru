@@ -14,10 +14,10 @@ ms.author: negoe
 ms.reviewer: marsma, nacanuma
 ms.custom: aaddev
 ms.openlocfilehash: 09c4dadd7a6560bd5163d623dd8a7f247b57860e
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100102501"
 ---
 # <a name="use-msal-in-a-national-cloud-environment"></a>Использование MSAL в национальной облачной среде
@@ -34,7 +34,7 @@ ms.locfileid: "100102501"
 
 В этом руководстве показано, как войти в рабочие и учебные учетные записи, получить маркер доступа и вызвать API Microsoft Graph в [облачной среде Azure для государственных организаций](https://azure.microsoft.com/global-infrastructure/government/) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем начать, убедитесь, что выполнены все необходимые условия.
 
@@ -127,7 +127,7 @@ const myMSALObj = new UserAgentApplication(msalConfig);
 - `Enter_the_Application_Id_here` — Это значение **идентификатора приложения (клиента)** для зарегистрированного приложения.
 - `Enter_the_Tenant_Info_Here` может иметь несколько значений:
     - Если приложение поддерживает **учетные записи в этом каталоге Организации**, замените это значение на идентификатор клиента или имя клиента (например, contoso.Microsoft.com).
-    - Если приложение поддерживает **учетные записи в любом каталоге Организации**, замените это значение на `organizations` .
+    - Если приложение поддерживает вариант **Учетные записи в любом каталоге организации**, замените это значение на `organizations`.
 
     Чтобы найти конечные точки проверки подлинности для всех национальных облаков, см. раздел [конечные точки аутентификации Azure AD](./authentication-national-cloud.md#azure-ad-authentication-endpoints).
 
@@ -222,7 +222,7 @@ if let application = try? MSALPublicClientApplication(configuration: config) { /
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Список URL-адресов портал Azure и конечных точек токенов для каждого облака см. в разделе [местные облачные конечные точки аутентификации](authentication-national-cloud.md) .
 

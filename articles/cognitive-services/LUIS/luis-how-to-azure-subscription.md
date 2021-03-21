@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 09/07/2020
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 168833ea0a451913f4ed019cba832a16207e0d9c
-ms.sourcegitcommit: 7e117cfec95a7e61f4720db3c36c4fa35021846b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99988156"
 ---
 # <a name="create-luis-resources"></a>Создание ресурсов LUIS
@@ -135,7 +135,7 @@ LUIS позволяет выполнять три типа ресурсов Azur
 
 Среда выполнения частного приложения доступна только для следующих ключей:
 
-|Ключ и пользователь|Объяснение|
+|Ключ и пользователь|Пояснение|
 |--|--|
 |Ключ разработки владельца| До 1 000 конечных точек|
 |Ключи для совместной работы и создания участников| До 1 000 конечных точек|
@@ -259,9 +259,9 @@ LUIS позволяет выполнять три типа ресурсов Azur
 
     |Type|Параметр|Значение|
     |--|--|--|
-    |Заголовок|`Authorization`|Значение `Authorization` равно `Bearer {token}`. Значению маркера должно предшествовать слово `Bearer` и пробел.|
-    |Заголовок|`Ocp-Apim-Subscription-Key`|Ваш ключ разработки.|
-    |Заголовок|`Content-type`|`application/json`|
+    |Header|`Authorization`|Значение `Authorization` равно `Bearer {token}`. Значению маркера должно предшествовать слово `Bearer` и пробел.|
+    |Header|`Ocp-Apim-Subscription-Key`|Ваш ключ разработки.|
+    |Header|`Content-type`|`application/json`|
     |Строка запроса|`appid`|Идентификатор приложения LUIS.
     |Текст||{"AzureSubscriptionId":"ddda2925-af7f-4b05-9ba1-2155c5fe8a8e",<br>"ResourceGroup": "resourcegroup-2",<br>"AccountName": "luis-uswest-S0-2"}|
 

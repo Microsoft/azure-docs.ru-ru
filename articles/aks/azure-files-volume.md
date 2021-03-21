@@ -6,10 +6,10 @@ services: container-service
 ms.topic: article
 ms.date: 03/01/2019
 ms.openlocfilehash: 4e009c5de2e24c1b0bd94fb4c11b0c52a3bc378d
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102609079"
 ---
 # <a name="manually-create-and-use-a-volume-with-azure-files-share-in-azure-kubernetes-service-aks"></a>Создание вручную и совместное использование тома с файловым ресурсом Azure в службе Azure Kubernetes (AKS)
@@ -161,7 +161,7 @@ spec:
   - nobrl
 ```
 
-Чтобы обновить параметры подключения, создайте файл *азурефиле-Mount-Options-PV. YAML* с *персистентволуме*. Пример.
+Чтобы обновить параметры подключения, создайте файл *азурефиле-Mount-Options-PV. YAML* с *персистентволуме*. Пример:
 
 ```yaml
 apiVersion: v1
@@ -186,7 +186,7 @@ spec:
   - nobrl
 ```
 
-Создайте файл *азурефиле-Mount-Options-PVC. YAML* с *Персистентволумеклаим* , использующим *персистентволуме*. Пример.
+Создайте файл *азурефиле-Mount-Options-PVC. YAML* с *Персистентволумеклаим* , использующим *персистентволуме*. Пример:
 
 ```yaml
 apiVersion: v1

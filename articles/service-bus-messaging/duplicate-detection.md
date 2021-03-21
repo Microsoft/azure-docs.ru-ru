@@ -4,10 +4,10 @@ description: В этой статье объясняется, как можно 
 ms.topic: article
 ms.date: 01/13/2021
 ms.openlocfilehash: 527c2dea34b02733907372b6e75a40a5ef5fc289
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101711932"
 ---
 # <a name="duplicate-detection"></a>Обнаружение дубликатов
