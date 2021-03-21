@@ -10,10 +10,10 @@ ms.date: 12/03/2020
 ms.author: ronytho
 ms.reviewer: jrasnick
 ms.openlocfilehash: 97f9d0e0037090a8c058eb6e2393451d975e79c6
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103472257"
 ---
 # <a name="how-to-set-up-access-control-for-your-synapse-workspace"></a>Настройка контроля доступа для рабочей области синапсе 
@@ -289,6 +289,6 @@ DROP USER [<workspacename>];
 
 **Ограничьте операторы от доступа к артефактам кода**.  Создайте группы безопасности для операторов, которым требуется отслеживать операционное состояние Синапсеных ресурсов и просматривать журналы, но не требуется доступ к коду или публикация обновлений в службе. Назначьте этим группам роль оператор вычислений, ограниченную конкретными пулами Spark и средами выполнения интеграции.  
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, [как управлять назначениями РОЛЕЙ RBAC синапсе](./how-to-manage-synapse-rbac-role-assignments.md) создание [рабочей области синапсе](../quickstart-create-workspace.md)

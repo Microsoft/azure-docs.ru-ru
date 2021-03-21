@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 6/3/2020
 ms.openlocfilehash: 8b85307f01a11366a2147c947f26658f548932e8
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103467720"
 ---
 # <a name="supported-azure-database-for-mysql-server-versions"></a>Поддерживаемые версии сервера базы данных Azure для MySQL
@@ -36,7 +36,7 @@ ms.locfileid: "103467720"
 
 Обновление основной версии в настоящее время поддерживается службой для обновления с MySQL v 5.6 до версии 5.7. Дополнительные сведения см. [в статье как выполнять обновления основных версий](how-to-major-version-upgrade.md). Если вы хотите выполнить обновление с 5,7 до 8,0, рекомендуется выполнить [дамп и восстановить](./concepts-migrate-dump-restore.md) его на сервере, который был создан с использованием новой версии модуля.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Дополнительные сведения о политике управления версиями базы данных Azure для MySQL см. в [этом документе](concepts-version-policy.md).
 - Сведения о квотах и ограничениях для конкретных ресурсов, основанных на **уровне служб**, см. в разделе [уровни служб](./concepts-pricing-tiers.md) .

@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 02/18/2020
 ms.openlocfilehash: 19c39632a1ed040636372d6bad53bf6859960b94
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101732043"
 ---
 # <a name="send-data-from-windows-azure-diagnostics-extension-to-azure-event-hubs"></a>Отправка данных из расширения системы диагностики Microsoft Azure в концентраторы событий Azure
@@ -24,7 +24,7 @@ ms.locfileid: "101732043"
 * Журналы событий Windows, включая журналы приложений в журнале событий Windows
 * Журналы инфраструктуры системы диагностики Azure
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Расширение диагностики Windows 1,6 или более поздней версии. Дополнительные сведения о поддерживаемых ресурсах см. в разделе [версии схемы конфигурации система диагностики Azure и истории](diagnostics-extension-versions.md) для журнала версий и в [обзоре расширения система диагностики Azure](diagnostics-extension-overview.md) .
 * Пространство имен концентраторов событий всегда должно быть подготовлено. Дополнительные сведения см. в статье Начало [работы с концентраторами событий](../../event-hubs/event-hubs-dotnet-standard-getstarted-send.md) .
@@ -35,7 +35,7 @@ ms.locfileid: "101732043"
 
 Система диагностики Azure всегда отправляет журналы и метрики в учетную запись хранения Azure. Можно настроить один или несколько *приемников данных* , которые отправляют данные в дополнительные расположения. Каждый приемник определяется в [элементе SinksConfig](diagnostics-extension-schema-windows.md#sinksconfig-element) общедоступной конфигурации с конфиденциальной информацией в частной конфигурации. Эта конфигурация для концентраторов событий использует значения, приведенные в следующей таблице.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:---|:---|
 | Имя | Описательное имя приемника. Используется в конфигурации для указания источников данных для отправки в приемник. |
 | Url  | URL-адрес концентратора событий в формате \<event-hubs-namespace\> . servicebus.Windows.NET/ \<event-hub-name\> .          |

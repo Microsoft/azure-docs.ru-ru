@@ -11,10 +11,10 @@ ms.subservice: content-moderator
 ms.topic: conceptual
 ms.date: 05/29/2019
 ms.openlocfilehash: 664c4289cbfa1f6ce2fce9f9f83b0240bd2d592c
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96002006"
 ---
 # <a name="moderate-text-from-the-api-console"></a>Модерация текста с помощью консоли API
@@ -135,6 +135,6 @@ Is this a grabage or crap email abcdef@abcd.com, phone: 4255550111, IP:
 
 Подробное описание всех разделов в ответе JSON см. в концептуальном руководстве по поиску [текста](text-moderation-api.md) .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Используйте REST API в коде или следуйте инструкциям в [кратком руководстве по пакету SDK для .NET](./client-libraries.md?pivots=programming-language-csharp%253fpivots%253dprogramming-language-csharp) , чтобы интегрировать его с приложением.

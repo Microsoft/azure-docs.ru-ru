@@ -12,10 +12,10 @@ ms.reviewer: larryfr
 ms.date: 11/18/2020
 ms.custom: how-to, devx-track-python
 ms.openlocfilehash: 295228e9eaa3529b05055869bd46f9aefc938a6f
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102212779"
 ---
 # <a name="use-workspace-behind-a-firewall-for-azure-machine-learning"></a>Использование рабочей области за брандмауэром для Машинное обучение Azure
@@ -132,7 +132,7 @@ UDR позволяют пакетной службе взаимодейство�
 | Студия машинного обучения Azure. | ml.azure.com | ml.azure.us | studio.ml.azure.cn |
 | API |\*. azureml.ms | \*. ml.azure.us | \*. ml.azure.cn |
 | Эксперименты, журнал, устройство, метки | \*. experiments.azureml.net | \*. ml.azure.us | \*. ml.azure.cn |
-| управление моделью; | \*. modelmanagement.azureml.net | \*. ml.azure.us | \*. ml.azure.cn |
+| Управление моделями | \*. modelmanagement.azureml.net | \*. ml.azure.us | \*. ml.azure.cn |
 | Конвейер | \*. aether.ms | \*. ml.azure.us | \*. ml.azure.cn |
 | Конструктор (служба Studio) | \*. studioservice.azureml.com | \*. ml.azure.us | \*. ml.azure.cn |
 | Интегрированная Записная книжка | \*. notebooks.azure.net | \*. notebooks.usgovcloudapi.net |\*. notebooks.chinacloudapi.cn |

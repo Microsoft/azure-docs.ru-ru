@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 06/01/2020
 ms.custom: devx-track-js
 ms.openlocfilehash: 9eba74bcf2b4b047b3ed881342db4f7b1011f928
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100585761"
 ---
 # <a name="monitor-your-nodejs-services-and-apps-with-application-insights"></a>Мониторинг служб и приложений Node.js с помощью Application Insights
@@ -25,7 +25,7 @@ ms.locfileid: "100585761"
 
 Выполните указанные ниже задачи, чтобы настроить мониторинг для приложения или службы.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Чтобы начать, у вас должна быть подписка Azure. Вы можете [создать ее бесплатно][azure-free-offer]. Если у вашей организации уже есть подписка Azure, администратору необходимо выполнить [эти инструкции][add-aad-user], чтобы добавить вас в эту подписку.
 
@@ -144,7 +144,7 @@ appInsights.setup("<instrumentation_key>")
 > [!NOTE]
 >  По умолчанию `setAutoCollectConsole` настроено *исключение* вызовов `console.log` (и других методов консоли). Будут собираться только вызовы поддерживаемых средств ведения журнала сторонних разработчиков (например, Winston и бунян). Это поведение можно изменить для включения вызовов методов с `console` помощью `setAutoCollectConsole(true, true)` .
 
-### <a name="sampling"></a>Выборка
+### <a name="sampling"></a>Дискретизация
 
 По умолчанию пакет SDK будет отсылать все собранные данные в службу Application Insights. Если собираются данные большого объема, может потребоваться включить выборку для уменьшения объема отправляемых данных. `samplingPercentage`Для этого задайте поле в `config` объекте клиента. Установка значения `samplingPercentage` 100 (по умолчанию) означает, что будут отправлены все данные, а 0 означает, что ничего не будет отправлено.
 
@@ -383,7 +383,7 @@ appInsights.defaultClient.addTelemetryProcessor(removeStackTraces);
 
 Можно создать несколько Application Insights ресурсов и отправить каждому из них разные данные, используя соответствующие ключи инструментирования ("iKey").
 
- Пример.
+ Пример:
 
 ```javascript
 let appInsights = require("applicationinsights");
@@ -406,7 +406,7 @@ client.config.PROPERTYNAME = VALUE;
 
 Эти свойства зависят от клиента, поэтому их можно настроить `appInsights.defaultClient` отдельно от клиентов, созданных с помощью `new appInsights.TelemetryClient()` .
 
-| Свойство                        | Описание                                                                                                |
+| Свойство.                        | Описание                                                                                                |
 | ------------------------------- |------------------------------------------------------------------------------------------------------------|
 | instrumentationKey              | Идентификатор ресурса Application Insights.                                                      |
 | endpointUrl                     | Конечная точка приема, в которую отправляются полезные данные телеметрии.                                                      |
@@ -422,7 +422,7 @@ client.config.PROPERTYNAME = VALUE;
 | коррелатионидретринтервалмс    | Время ожидания перед повторной попыткой получения идентификатора для корреляции между компонентами (по умолчанию `30000` ).     |
 | коррелатионхеадерексклудеддомаинс| Список доменов, исключаемых из вставки заголовка корреляции между компонентами (по умолчанию см. [config. TS](https://github.com/Microsoft/ApplicationInsights-node.js/blob/develop/Library/Config.ts)).|
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Навигация и панели мониторинга на портале Application Insights](./overview-dashboard.md)
 * [Знакомство с аналитикой в Application Insights](../logs/log-analytics-tutorial.md)

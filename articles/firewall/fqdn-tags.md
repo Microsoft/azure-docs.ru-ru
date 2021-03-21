@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 06/30/2020
 ms.author: victorh
 ms.openlocfilehash: c0bd2f6a021baae80dafcc3d544e1062d8e022e8
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94653340"
 ---
 # <a name="fqdn-tags-overview"></a>Общие сведения о тегах FQDN
@@ -30,7 +30,7 @@ ms.locfileid: "94653340"
 
 |Тег FQDN  |Описание  |
 |---------|---------|
-|Центр обновления Windows     |Разрешает исходящий доступ к Центру обновления Майкрософт, как описано в разделе [Настройка брандмауэра для обновлений программного обеспечения](/mem/configmgr/sum/get-started/install-a-software-update-point).|
+|Центра обновления Windows;     |Разрешает исходящий доступ к Центру обновления Майкрософт, как описано в разделе [Настройка брандмауэра для обновлений программного обеспечения](/mem/configmgr/sum/get-started/install-a-software-update-point).|
 |диагностика Windows.|Разрешает исходящий доступ ко всем [конечным точкам диагностики Windows](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#endpoints).|
 |Служба Microsoft Active Protection Service (MAPS)|Разрешает исходящий доступ к [MAPS](https://cloudblogs.microsoft.com/enterprisemobility/2016/05/31/important-changes-to-microsoft-active-protection-service-maps-endpoint/).|
 |Среда службы приложений (ASE).|Разрешает исходящий доступ к трафику платформы ASE. Этот тег не распространяется на конечные точки пользовательского хранилища и SQL, созданные ASE. Их следует включить через [конечные точки службы](../virtual-network/tutorial-restrict-network-access-to-resources.md) или добавить вручную.<br><br>Дополнительные сведения об интеграции брандмауэра Azure с ASE см. в разделе [блокировка среда службы приложений](../app-service/environment/firewall-integration.md#configuring-azure-firewall-with-your-ase).|

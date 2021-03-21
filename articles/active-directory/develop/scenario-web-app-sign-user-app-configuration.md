@@ -12,27 +12,23 @@ ms.workload: identity
 ms.date: 07/14/2020
 ms.author: jmprieur
 ms.custom: aaddev, devx-track-python
-ms.openlocfilehash: 54caea62feed6ae7c082a979901999a5dcb3bd71
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.openlocfilehash: f315f473c3ba9efd4e01f9424f01884a46011dbb
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99582253"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104578382"
 ---
 # <a name="web-app-that-signs-in-users-code-configuration"></a>Веб-приложение, которое входит в систему пользователей: конфигурация кода
 
 Узнайте, как настроить код для веб-приложения, которое входит в систему пользователей.
 
-## <a name="libraries-for-protecting-web-apps"></a>Библиотеки для защиты веб-приложений
+## <a name="microsoft-libraries-supporting-web-apps"></a>Библиотеки Майкрософт, поддерживающие веб-приложения
 
 <!-- This section can be in an include for web app and web APIs -->
-Библиотеки, используемые для защиты веб-приложения (и веб-API):
+Для защиты веб-приложения (и веб-API) используются следующие библиотеки Майкрософт:
 
-| Платформа | Библиотека | Описание |
-|----------|---------|-------------|
-| ![.NET](media/sample-v2-code/logo_NET.png) | [Расширения модели удостоверений для .NET](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki) | По ASP.NET и ASP.NET Core, расширения модели идентификации Майкрософт для .NET предлагают набор библиотек DLL, выполняющихся как в платформа .NET Framework, так и в .NET Core. Из веб-приложения ASP.NET или ASP.NET Core можно управлять проверкой маркера с помощью класса **TokenValidationParameters** (в частности, в некоторых сценариях партнеров). На практике сложность инкапсулирована в библиотеке [Microsoft. Identity. Web](https://aka.ms/ms-identity-web) . |
-| ![Java](media/sample-v2-code/small_logo_java.png) | [MSAL Java](https://github.com/AzureAD/microsoft-authentication-library-for-java/wiki) | Поддержка веб-приложений Java |
-| ![Python](media/sample-v2-code/small_logo_python.png) | [MSAL Python](https://github.com/AzureAD/microsoft-authentication-library-for-python/wiki) | Поддержка веб-приложений Python |
+[!INCLUDE [active-directory-develop-libraries-webapp](../../../includes/active-directory-develop-libraries-webapp.md)]
 
 Выберите вкладку, соответствующую интересующей вас платформе:
 
@@ -51,6 +47,12 @@ ms.locfileid: "99582253"
 # <a name="java"></a>[Java](#tab/java)
 
 Фрагменты кода в этой статье и следующие извлекаются из примера [веб-приложения Java, вызывающего Microsoft Graph](https://github.com/Azure-Samples/ms-identity-java-webapp) в MSAL Java.
+
+Для получения полной информации о реализации можно использовать этот пример.
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+Фрагменты кода в этой статье и следующие извлекаются из [Node.js вход пользователей в веб-приложение в](https://github.com/Azure-Samples/ms-identity-node) примере в узле MSAL.
 
 Для получения полной информации о реализации можно использовать этот пример.
 
@@ -177,6 +179,37 @@ aad.redirectUriGraph=http://localhost:8080/msal4jsample/graph/me
 
 В портал Azure идентификаторы URI ответа, регистрируемые на странице **проверки подлинности** для приложения, должны совпадать с `redirectUri` экземплярами, которые определяет приложение. То есть они должны быть `http://localhost:8080/msal4jsample/secure/aad` и `http://localhost:8080/msal4jsample/graph/me` .
 
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+Здесь параметры конфигурации находятся в `index.js`
+
+```javascript
+
+const REDIRECT_URI = "http://localhost:3000/redirect";
+
+const config = {
+    auth: {
+        clientId: "Enter_the_Application_Id_Here",
+        authority: "https://login.microsoftonline.com/Enter_the_Tenant_Info_Here/",
+        clientSecret: "Enter_the_Client_Secret_Here"
+    },
+    system: {
+        loggerOptions: {
+            loggerCallback(loglevel, message, containsPii) {
+                console.log(message);
+            },
+            piiLoggingEnabled: false,
+            logLevel: msal.LogLevel.Verbose,
+        }
+    }
+};
+```
+
+В портал Azure URI-коды ответов, регистрируемые на странице проверки подлинности для приложения, должны соответствовать экземплярам redirectUri, определяемым приложением ( `http://localhost:3000/redirect` ).
+
+> [!NOTE]
+> В этом кратком руководстве предлагается сохранить секрет клиента в файле конфигурации для простоты. В рабочем приложении необходимо использовать другие способы хранения секрета, например хранилище ключей или переменную среды.
+
 # <a name="python"></a>[Python](#tab/python)
 
 Ниже приведен файл конфигурации Python в [app_config. Корректировка](https://github.com/Azure-Samples/ms-identity-python-webapp/blob/0.1.0/app_config.py):
@@ -207,7 +240,7 @@ SESSION_TYPE = "filesystem"  # So the token cache will be stored in a server-sid
 
 # <a name="aspnet-core"></a>[ASP.NET Core](#tab/aspnetcore)
 
-В ASP.NET Core веб-приложениях (и веб-API) приложение защищено, так как у вас есть `[Authorize]` атрибут на контроллерах или действия контроллера. Этот атрибут проверяет, прошел ли пользователь проверку подлинности. Код, который инициализирует приложение, находится в файле *Startup.CS* .
+В ASP.NET Core веб-приложениях (и веб-API) приложение защищено, так как у вас есть `[Authorize]` атрибут на контроллерах или действия контроллера. Этот атрибут проверяет, прошел ли пользователь проверку подлинности. Код, который инициализирует приложение, находится в файле *Startup. CS* .
 
 Чтобы добавить проверку подлинности на платформе Microsoft Identity (прежнее название — Azure AD 2.0), необходимо добавить следующий код. Комментарии в коде должны быть описательными.
 
@@ -246,7 +279,7 @@ SESSION_TYPE = "filesystem"  # So the token cache will be stored in a server-sid
      }).AddMicrosoftIdentityUI();
     ```
 
-3. В `Configure` методе в *Startup.CS* включите проверку подлинности с помощью вызова `app.UseAuthentication();`
+3. В `Configure` методе в *Startup. CS* включите проверку подлинности с помощью вызова `app.UseAuthentication();`
 
    ```c#
    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -267,7 +300,7 @@ SESSION_TYPE = "filesystem"  # So the token cache will be stored in a server-sid
   - Проверяет издателя маркера.
   - Гарантирует, что утверждения, соответствующие имени, сопоставляются с `preferred_username` утверждением в маркере идентификации.
 
-- В дополнение к объекту конфигурации можно указать имя раздела конфигурации при вызове `AddMicrosoftIdentityWebAppAuthentication` . По умолчанию это `AzureAd` .
+- В дополнение к объекту конфигурации можно указать имя раздела конфигурации при вызове `AddMicrosoftIdentityWebAppAuthentication` . По умолчанию это `AzureAd`.
 
 - `AddMicrosoftIdentityWebAppAuthentication` имеет другие параметры для расширенных сценариев. Например, трассировка событий по промежуточного слоя OpenID Connect позволяет устранить неполадки в веб-приложении, если проверка подлинности не работает. При установке необязательного параметра `subscribeToOpenIdConnectMiddlewareDiagnosticsEvents` `true` будет показано, как обрабатывается информация по по промежуточного слоя ASP.NET Core по мере продвижения от HTTP-ответа к удостоверению пользователя в `HttpContext.User` .
 
@@ -319,6 +352,15 @@ SESSION_TYPE = "filesystem"  # So the token cache will be stored in a server-sid
 
 Дополнительные сведения о потоке кода авторизации, который запускается этим методом, см. в [статье поток кода авторизации для платформы Microsoft Identity и OAuth 2,0](v2-oauth2-auth-code-flow.md).
 
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+```javascript
+const msal = require('@azure/msal-node');
+
+// Create msal application object
+const cca = new msal.ConfidentialClientApplication(config);
+```
+
 # <a name="python"></a>[Python](#tab/python)
 
 В образце Python используется Flask. Инициализация Flask и MSAL Python выполняется в [app. копировать # L1-L28](https://github.com/Azure-Samples/ms-identity-python-webapp/blob/e03be352914bfbd58be0d4170eba1fb7a4951d84/app.py#L1-L28).
@@ -339,7 +381,7 @@ Session(app)
 
 ---
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В следующей статье вы узнаете, как активировать вход и выход.
 
@@ -354,6 +396,10 @@ Session(app)
 # <a name="java"></a>[Java](#tab/java)
 
 Перейдите к следующей статье в этом сценарии, [Войдите и выйдите](./scenario-web-app-sign-user-sign-in.md?tabs=java)из нее.
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+Перейдите к следующей статье в этом сценарии, [Войдите в](./scenario-web-app-sign-user-sign-in.md?tabs=nodejs)систему.
 
 # <a name="python"></a>[Python](#tab/python)
 

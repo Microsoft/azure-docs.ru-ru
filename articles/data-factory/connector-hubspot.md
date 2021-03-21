@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 12/18/2020
 ms.author: jingwang
 ms.openlocfilehash: 7f2ab069be7985376c44f2cd2ae3ccdd728d4e2a
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100385665"
 ---
 # <a name="copy-data-from-hubspot-using-azure-data-factory"></a>Копирование данных из HubSpot с помощью Фабрики данных Azure
@@ -40,7 +40,7 @@ ms.locfileid: "100385665"
 
 Для связанной службы HubSpot поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства type необходимо задать значение **Hubspot** | Да |
 | clientid | Идентификатор клиента, связанный с приложением HubSpot. Узнайте, как создать приложение в HubSpot [отсюда](https://developers.hubspot.com/docs/faq/how-do-i-create-an-app-in-hubspot). | Да |

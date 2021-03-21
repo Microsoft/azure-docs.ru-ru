@@ -11,10 +11,10 @@ ms.date: 03/15/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 9bf1cc197a7d6977ccb6ef69e157d9f8a76a58d5
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103470728"
 ---
 # <a name="trustframeworkpolicy"></a>TrustFrameworkPolicy
@@ -38,7 +38,7 @@ ms.locfileid: "103470728"
 
 Элемент **TrustFrameworkPolicy** содержит следующие атрибуты:
 
-| attribute | Обязательно | Описание |
+| Атрибут | Обязательно | Описание |
 |---------- | -------- | ----------- |
 | PolicySchemaVersion | Да | Версия схемы, которая будет использоваться для выполнения политики. Значение должно быть `0.3.0.0`. |
 | TenantObjectId | Нет | Уникальный идентификатор объекта для Azure Active Directory B2C клиента (Azure AD B2C). |

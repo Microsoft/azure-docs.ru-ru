@@ -7,10 +7,10 @@ ms.manager: abhemraj
 ms.topic: how-to
 ms.date: 06/26/2020
 ms.openlocfilehash: e386db1ee2042d75a31d4a9de2a5174e904c6b5c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101732978"
 ---
 # <a name="create-an-azure-vmware-solution-avs-assessment"></a>Создание оценки решения Azure VMware (AVS)
@@ -19,11 +19,11 @@ ms.locfileid: "101732978"
 
 Служба " [Миграция Azure](migrate-services-overview.md) " помогает выполнить миграцию в Azure. "Миграция Azure" — это центральный узел, с помощью которого можно отслеживать обнаружение, оценку и перенос локальной инфраструктуры, приложений и данных в Azure. Центр обеспечивает инструменты Azure для оценки и миграции, а также предложения сторонних независимых поставщиков программного обеспечения (ISV).
 
-## <a name="before-you-start"></a>Прежде чем начать
+## <a name="before-you-start"></a>Перед началом работы
 
 - Убедитесь, что вы [создали](./create-manage-projects.md) проект "миграция Azure".
 - Если вы уже создали проект, убедитесь, что вы [добавили](how-to-assess.md) средство Azure Migrate: Server для оценки серверов.
-- Чтобы создать оценку, необходимо настроить устройство "миграция Azure" для [VMware](how-to-set-up-appliance-vmware.md), которое обнаруживает локальные компьютеры и отправляет метаданные и данные производительности в службу "миграция Azure": Оценка сервера. [Подробнее.](migrate-appliance.md)
+- Чтобы создать оценку, необходимо настроить устройство "миграция Azure" для [VMware](how-to-set-up-appliance-vmware.md), которое обнаруживает локальные компьютеры и отправляет метаданные и данные производительности в службу "миграция Azure": Оценка сервера. [Подробнее](migrate-appliance.md).
 - Кроме того, можно [импортировать метаданные сервера](./tutorial-discover-import.md) в формате значений с разделителями-запятыми (CSV).
 
 

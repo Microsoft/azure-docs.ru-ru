@@ -9,10 +9,10 @@ ms.date: 04/22/2019
 ms.author: robinsh
 ms.custom: include file
 ms.openlocfilehash: 54f4835a904b897370cf9f075ae3c005b1114992
-ms.sourcegitcommit: c95e2d89a5a3cf5e2983ffcc206f056a7992df7d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95561500"
 ---
 [Получение работоспособности конечной точки](/rest/api/iothub/iothubresource/getendpointhealth#iothubresource_getendpointhealth) в REST API предоставляет состояние работоспособности конечных точек, а также последнюю известную ошибку для определения причины, по которой конечная точка находится в неработоспособном состоянии. В следующей таблице перечислены наиболее распространенные ошибки.

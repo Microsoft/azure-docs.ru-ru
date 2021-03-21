@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 9/21/2020
 ms.openlocfilehash: a61c8e3451d661dae2e5ad56a0d4a947252ec873
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94540069"
 ---
 # <a name="configure-and-access-slow-query-logs-for-azure-database-for-mysql---flexible-server-using-the-azure-portal"></a>Настройка и доступ к журналам запросов для базы данных Azure для MySQL — гибкого сервера с помощью портал Azure
@@ -20,13 +20,13 @@ ms.locfileid: "94540069"
 
 Вы можете настроить, перечислить и скачать базу данных Azure для гибких серверов [запросов](concepts-slow-query-logs.md) MySQL из портал Azure.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 Для выполнения действий, описанных в этой статье, требуется [гибкий сервер](quickstart-create-server-portal.md).
 
 ## <a name="configure-logging"></a>Настройка журнала
 Настройте доступ к журналу медленных запросов MySQL. 
 
-1. Войдите на [портале Azure](https://portal.azure.com/).
+1. Войдите на [портал Azure](https://portal.azure.com/).
 
 1. Выберите гибкий сервер.
 
@@ -39,7 +39,7 @@ ms.locfileid: "94540069"
 1. Измените необходимые параметры (например, `long_query_time`, `log_slow_admin_statements`). Дополнительные параметры см. в документации по [журналам медленных запросов](./concepts-slow-query-logs.md#configure-slow-query-logging) .  
    :::image type="content" source="./media/how-to-configure-slow-query-logs-portal/long-query-time.png" alt-text="Обновите параметры, связанные с журналом запросов с задержкой.":::
 
-1. Нажмите кнопку **Сохранить**. 
+1. Щелкните **Сохранить**. 
    :::image type="content" source="./media/how-to-configure-slow-query-logs-portal/save-parameters.png" alt-text="Сохранение параметров журнала запросов с высокой скоростью.":::
 
 На странице **Параметры сервера** можно вернуться к списку журналов, закрыв страницу.

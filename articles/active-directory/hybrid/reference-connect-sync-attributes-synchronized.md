@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6ec05c4160c6502904644bf7035bda0bed66cc33
-ms.sourcegitcommit: 17b36b13857f573639d19d2afb6f2aca74ae56c1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94413196"
 ---
 # <a name="azure-ad-connect-sync-attributes-synchronized-to-azure-active-directory"></a>Службы синхронизации Azure AD Connect: атрибуты, синхронизируемые с Azure Active Directory
@@ -38,7 +38,7 @@ ms.locfileid: "94413196"
 >
 >
 
-## <a name="microsoft-365-apps-for-enterprise"></a>Приложения Microsoft 365 для предприятий
+## <a name="microsoft-365-apps-for-enterprise"></a>Приложения Microsoft 365 для предприятия
 | Имя атрибута | Пользователь | Комментировать |
 | --- |:---:| --- |
 | AccountEnabled |X |Определяет, включена ли учетная запись. |
@@ -52,13 +52,13 @@ ms.locfileid: "94413196"
 | userPrincipalName |X |Имя участника-пользователя является именем для входа. Чаще всего соответствует значению [mail]. |
 
 ## <a name="exchange-online"></a>Exchange Online
-| Имя атрибута | Пользователь | Contact | Группа | Комментировать |
+| Имя атрибута | Пользователь | Contact | Group | Комментировать |
 | --- |:---:|:---:|:---:| --- |
 | AccountEnabled |X | | |Определяет, включена ли учетная запись. |
 | assistant |X |X | | |
 | altRecipient |X | | |Требуется Azure AD Connect сборки 1.1.552.0 или более поздних версий. |
 | authOrig |X |X |X | |
-| c |X |X | | |
+| с |X |X | | |
 | cn |X | |X | |
 | co |X |X | | |
 | company |X |X | | |
@@ -175,11 +175,11 @@ ms.locfileid: "94413196"
 | wWWHomePage |X |X | | |
 
 ## <a name="sharepoint-online"></a>SharePoint Online
-| Имя атрибута | Пользователь | Contact | Группа | Комментировать |
+| Имя атрибута | Пользователь | Contact | Group | Комментировать |
 | --- |:---:|:---:|:---:| --- |
 | AccountEnabled |X | | |Определяет, включена ли учетная запись. |
 | authOrig |X |X |X | |
-| c |X |X | | |
+| с |X |X | | |
 | cn |X | |X | |
 | co |X |X | | |
 | company |X |X | | |
@@ -257,10 +257,10 @@ ms.locfileid: "94413196"
 | wWWHomePage |X |X | | |
 
 ## <a name="teams-and-skype-for-business-online"></a>Команды и Skype для бизнеса Online
-| Имя атрибута | Пользователь | Contact | Группа | Комментировать |
+| Имя атрибута | Пользователь | Contact | Group | Комментировать |
 | --- |:---:|:---:|:---:| --- |
 | AccountEnabled |X | | |Определяет, включена ли учетная запись. |
-| c |X |X | | |
+| с |X |X | | |
 | cn |X | |X | |
 | co |X |X | | |
 | company |X |X | | |
@@ -305,7 +305,7 @@ ms.locfileid: "94413196"
 | wWWHomePage |X |X | | |
 
 ## <a name="azure-rms"></a>Azure RMS
-| Имя атрибута | Пользователь | Contact | Группа | Комментировать |
+| Имя атрибута | Пользователь | Contact | Group | Комментировать |
 | --- |:---:|:---:|:---:| --- |
 | AccountEnabled |X | | |Определяет, включена ли учетная запись. |
 | cn |X | |X |Общее имя или псевдоним. Чаще всего префикс значения [mail]. |
@@ -320,10 +320,10 @@ ms.locfileid: "94413196"
 | userPrincipalName |X | | |Это имя участника-пользователя является именем пользователя для входа. Чаще всего соответствует значению [mail]. |
 
 ## <a name="intune"></a>Intune
-| Имя атрибута | Пользователь | Contact | Группа | Комментировать |
+| Имя атрибута | Пользователь | Contact | Group | Комментировать |
 | --- |:---:|:---:|:---:| --- |
 | AccountEnabled |X | | |Определяет, включена ли учетная запись. |
-| c |X |X | | |
+| с |X |X | | |
 | cn |X | |X | |
 | description; |X |X |X | |
 | displayName |X |X |X | |
@@ -338,10 +338,10 @@ ms.locfileid: "94413196"
 | userPrincipalName |X | | |Имя участника-пользователя является именем для входа. Чаще всего соответствует значению [mail]. |
 
 ## <a name="dynamics-crm"></a>Dynamics CRM
-| Имя атрибута | Пользователь | Contact | Группа | Комментировать |
+| Имя атрибута | Пользователь | Contact | Group | Комментировать |
 | --- |:---:|:---:|:---:| --- |
 | AccountEnabled |X | | |Определяет, включена ли учетная запись. |
-| c |X |X | | |
+| с |X |X | | |
 | cn |X | |X | |
 | co |X |X | | |
 | company |X |X | | |
@@ -377,7 +377,7 @@ ms.locfileid: "94413196"
 
 Эта группа представляет собой набор атрибутов, которые можно использовать, если каталог Azure AD не используется для поддержки Microsoft 365, Dynamics или Intune. Это небольшой набор основных атрибутов. Обратите внимание, что единый вход или подготовка к некоторым сторонним приложениям требует настройки синхронизации атрибутов в дополнение к описанным здесь атрибутам. Требования к приложениям описаны в руководстве по приложениям [SaaS](../saas-apps/tutorial-list.md) для каждого приложения.
 
-| Имя атрибута | Пользователь | Contact | Группа | Комментировать |
+| Имя атрибута | Пользователь | Contact | Group | Комментировать |
 | --- |:---:|:---:|:---:| --- |
 | AccountEnabled |X | | |Определяет, включена ли учетная запись. |
 | cn |X | |X | |
@@ -422,7 +422,7 @@ ms.locfileid: "94413196"
 ## <a name="exchange-hybrid-writeback"></a>Гибридная обратная запись Exchange
 Эти атрибуты записываются из Azure AD в локальную службу Active Directory при активации **гибридного развертывания Exchange**. В зависимости от установленной версии Exchange может синхронизироваться меньшее количество атрибутов.
 
-| Имя атрибута (локальная служба AD) | Имя атрибута (пользовательский интерфейс Connect) | Пользователь | Contact | Группа | Комментировать |
+| Имя атрибута (локальная служба AD) | Имя атрибута (пользовательский интерфейс Connect) | Пользователь | Contact | Group | Комментировать |
 | --- |:---:|:---:|:---:| --- |---|
 | msDS-ExternalDirectoryObjectID| ms-DS-External-Directory-Object-Id |X | | |Производный от cloudAnchor в Azure AD. Это новый атрибут в Exchange 2016 и Windows Server 2016 AD. |
 | msExchArchiveStatus| ms-Exch-ArchiveStatus |X | | |Серверный архив: позволяет клиентам архивировать почту. |

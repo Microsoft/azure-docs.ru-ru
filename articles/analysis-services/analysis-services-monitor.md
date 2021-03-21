@@ -8,10 +8,10 @@ ms.date: 03/04/2020
 ms.author: owend
 ms.reviewer: minewiskan
 ms.openlocfilehash: 1cc517ac3c903930eddb95a4813a8146cae2ec2c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100582670"
 ---
 # <a name="monitor-server-metrics"></a>Мониторинг метрик службы
@@ -87,7 +87,7 @@ Analysis Services предоставляет метрики в Azure обозр�
 |TotalConnectionFailures|Общее число неудачных подключений|Count|Среднее|Общее число неудачных попыток подключения.|
 |TotalConnectionRequests|Общее число запросов на подключение|Count|Среднее|Общее число запросов на подключение. |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 [Обзор Azure Monitor](../azure-monitor/overview.md)      
 [Приступая к работе с Azure обозреватель метрик](../azure-monitor/essentials/metrics-getting-started.md)      
 [Метрики в Azure Monitor REST API](/rest/api/monitor/metrics)

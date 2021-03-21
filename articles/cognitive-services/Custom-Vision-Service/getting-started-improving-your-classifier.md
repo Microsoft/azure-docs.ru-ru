@@ -12,10 +12,10 @@ ms.date: 02/09/2021
 ms.author: pafarley
 ms.custom: cog-serv-seo-aug-2020
 ms.openlocfilehash: ae0112292994fdcf88e80abff8ab52e5971cb0ed
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101731091"
 ---
 # <a name="how-to-improve-your-custom-vision-model"></a>Как улучшить модель Пользовательское визуальное распознавание

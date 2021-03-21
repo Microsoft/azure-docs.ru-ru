@@ -12,10 +12,10 @@ ms.custom: aaddev
 ms.service: active-directory
 ms.reviewer: marsma, lenalepa, manrath
 ms.openlocfilehash: 91df89a69368056c1967e641562cf8515f44ade0
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99582814"
 ---
 # <a name="redirect-uri-reply-url-restrictions-and-limitations"></a>Ограничения URI перенаправления (URL-адрес ответа)
@@ -103,6 +103,6 @@ URI перенаправления или URL-адрес ответа — это
 > [!WARNING]
 > Такой подход позволяет скомпрометированному клиенту изменять дополнительные параметры, отправляемые в параметре состояния, поэтому пользователь перенаправляется на другой URL-адрес, что является [угрозой открытого перенаправления](https://tools.ietf.org/html/rfc6819#section-4.2.4), как описано в стандарте RFC 6819. Таким образом, клиент должен защищать эти параметры, шифруя состояние или проверяя его с помощью других средств, таких как проверка доменного имени в URI перенаправления для маркера.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения о [манифесте приложения](reference-app-manifest.md)регистрации приложений.

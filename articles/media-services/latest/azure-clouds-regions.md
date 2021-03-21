@@ -9,10 +9,10 @@ ms.topic: reference
 ms.date: 10/28/2020
 ms.author: inhenkel
 ms.openlocfilehash: 91df515703b4b6b368b07482fad1aa8b781281f6
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98954452"
 ---
 # <a name="azure-media-services-v3-clouds-and-regions-availability"></a>Доступность облаков и регионов служб мультимедиа Azure v3
@@ -63,7 +63,7 @@ ms.locfileid: "98954452"
 
 [Регионы, в которых развернута служба служб мультимедиа Azure](https://azure.microsoft.com/global-infrastructure/services/?products=media-services)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Регионы Azure](https://azure.microsoft.com/global-infrastructure/regions/)
 * [Региональные кодовые имена и конечные точки](azure-regions-code-names.md)
