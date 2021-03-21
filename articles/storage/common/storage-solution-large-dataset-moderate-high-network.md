@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/01/2019
 ms.author: alkohli
 ms.openlocfilehash: cf0e423648db174433f0717f2e5971ac49697b42
-ms.sourcegitcommit: 75041f1bce98b1d20cd93945a7b3bd875e6999d0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98704629"
 ---
 # <a name="data-transfer-for-large-datasets-with-moderate-to-high-network-bandwidth"></a>Передача больших наборов данных со средней или высокой пропускной способностью сети
@@ -93,7 +93,7 @@ ms.locfileid: "98704629"
 |    **Тип пользователя**                    |    ИТ-специалист или разработчик                                       |    Разработка                                       |    ИТ-специалистам                                                |    ИТ-специалистам                                                             |
 |    **Цены**                      |    Бесплатно, с обычной оплатой исходящего трафика         |    Бесплатно, с обычной оплатой исходящего трафика         |    [Цены](https://azure.microsoft.com/pricing/details/storage/databox/edge/)                                               |    [Цены](https://azure.microsoft.com/pricing/details/data-factory/)                                                            |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Сведения о передаче данных с помощью службы "Импорт и экспорт"](../../import-export/storage-import-export-data-to-blobs.md).
 - Практические руководства по:

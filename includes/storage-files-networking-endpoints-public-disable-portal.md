@@ -9,10 +9,10 @@ ms.date: 01/25/2021
 ms.author: rogarana
 ms.custom: include file
 ms.openlocfilehash: 192a16d6f7bb39608b040ac28fe2bedb7a2e2dc3
-ms.sourcegitcommit: 95c2cbdd2582fa81d0bfe55edd32778ed31e0fe8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98798677"
 ---
 Перейдите к учетной записи хранения, для которой вы хотите запретить доступ к общедоступной конечной точке. В содержании для учетной записи хранения выберите **Сеть**.

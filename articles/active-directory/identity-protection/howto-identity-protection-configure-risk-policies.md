@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: sahandle
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 366d68be1a7f115980973015e363da6095876754
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95997636"
 ---
 # <a name="how-to-configure-and-enable-risk-policies"></a>Как настроить и включить политики риска
@@ -31,7 +31,7 @@ ms.locfileid: "95997636"
 
 > [!VIDEO https://www.youtube.com/embed/zEsbbik-BTE]
 
-## <a name="prerequisites"></a>Предварительные требования 
+## <a name="prerequisites"></a>Предварительные условия 
 
 Если организация хочет разрешить пользователям самостоятельно устранять неполадки, пользователи должны быть зарегистрированы для самостоятельного сброса пароля и многофакторной идентификации Azure AD. Мы рекомендуем [включить общий способ регистрации сведений о безопасности](../authentication/howto-registration-mfa-sspr-combined.md) для достижения оптимальной производительности. Предоставление пользователям возможности самостоятельного восстановления повышает эффективность работы, не требуя вмешательства администратора. Администраторы по-прежнему могут просматривать эти события и исследовать их после фактического. 
 
@@ -54,7 +54,7 @@ ms.locfileid: "95997636"
 Чтобы включить политики риска для пользователя и входа в систему, выполните следующие действия.
 
 1. Перейдите на [портал Azure](https://portal.azure.com).
-1. Перейдите к **Azure Active Directory**  >  **Security**  >  **Обзор защиты идентификации** безопасности  >  **Overview**.
+1. Перейдите к **Azure Active Directory**  >    >  **Обзор защиты идентификации** безопасности  >  .
 1. Выберите **Политика риска пользователя**.
    1. В разделе " **назначения** "
       1. **Пользователи** . Выберите **все пользователи** или **выберите отдельных пользователей и группы,** если хотите ограничить развертывание.
@@ -74,7 +74,7 @@ ms.locfileid: "95997636"
    1. **Применить политику**  -  **На**
    1. **Сохранить**
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Включение политики регистрации многофакторной идентификации Azure AD](howto-identity-protection-configure-mfa-policy.md)
 
@@ -82,4 +82,4 @@ ms.locfileid: "95997636"
 
 - [Анализ обнаруженных рисков](howto-identity-protection-investigate-risk.md)
 
-- [Моделирование обнаружения рисков](howto-identity-protection-simulate-risk.md)
+- [Моделирование обнаружений рисков](howto-identity-protection-simulate-risk.md)

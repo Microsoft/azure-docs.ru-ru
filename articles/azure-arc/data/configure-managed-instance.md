@@ -9,11 +9,11 @@ ms.author: vinsonyu
 ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
-ms.openlocfilehash: 37ba4f10365fca4292171c3bd2d9a3e7d00045bb
-ms.sourcegitcommit: 04297f0706b200af15d6d97bc6fc47788785950f
+ms.openlocfilehash: 6e2443014f6788504a11784945078187a5a72de4
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98985875"
 ---
 # <a name="configure-azure-arc-enabled-sql-managed-instance"></a>Настройка управляемого экземпляра SQL с поддержкой ARC в Azure
@@ -60,13 +60,13 @@ azdata arc sql mi show -n <NAME_OF_SQL_MI>
    traceflag0 = 1204
    ```
 
-1. Скопируйте файл `mssql-custom.conf` в каталог `/var/opt/mssql` в контейнере в `arc-sqlmi` pod `master-0`. Замените на `<namespaceName>` пространство имен, в котором развернут этот экземпляр.
+1. Скопируйте файл `mssql-custom.conf` в каталог `/var/opt/mssql` в контейнере в `mssql-miaa` pod `master-0`. Замените `<namespaceName>` именем кластера больших данных.
 
    ```bash
    kubectl cp mssql-custom.conf master-0:/var/opt/mssql/mssql-custom.conf -c mssql-server -n <namespaceName>
    ```
 
-1. Перезапустите управляемый экземпляр SQL.  Замените на `<namespaceName>` пространство имен, в котором развернут этот экземпляр.
+1. Перезапустите экземпляр SQL Server.  Замените `<namespaceName>` именем кластера больших данных.
 
    ```bash
    kubectl exec -it master-0  -c mssql-server -n <namespaceName> -- /bin/bash

@@ -10,10 +10,10 @@ ms.author: mbaldwin
 ms.date: 11/01/2019
 ms.custom: seodec18
 ms.openlocfilehash: 6371a6bd0c4b8151c97a892ec70789429b4bda75
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102562203"
 ---
 # <a name="azure-disk-encryption-for-windows-virtual-machines-faq"></a>Вопросы и ответы по шифрованию дисков Azure для виртуальных машин Windows

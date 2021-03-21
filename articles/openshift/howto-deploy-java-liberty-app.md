@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 10/30/2020
 keywords: Java, жакартаи, Java, Микропрофиль, Open-Liberty, WebSphere-Liberty, АТО, openshift, Red Hat
 ms.openlocfilehash: 08fd3ab112498a983b438d5ba1f1f100816cbf5d
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102213000"
 ---
 # <a name="deploy-a-java-application-with-open-libertywebsphere-liberty-on-an-azure-red-hat-openshift-4-cluster"></a>Развертывание приложения Java с помощью Open Liberty/WebSphere Liberty в кластере Azure Red Hat OpenShift 4
@@ -20,7 +20,7 @@ ms.locfileid: "102213000"
 
 [!INCLUDE [aro-support](includes/aro-support.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы успешно пройти это руководство, выполните следующие предварительные требования.
 
@@ -97,7 +97,7 @@ ms.locfileid: "102213000"
 1. Войдите в веб-консоль OpenShift из браузера, используя `kubeadmin` учетные данные.
 2. Перейдите к **операторам**  >  **операторхуб** и найдите **оператор Open Liberty**.
 3. В результатах поиска выберите **Открыть оператор Liberty** .
-4. Выберите пункт **Установить**.
+4. Нажмите кнопку **Установить**.
 5. В меню **создать подписку на оператор** просмотрите **все пространства имен в кластере (по умолчанию)** для **режима установки**, **бета-версия** **канала обновления** и **Автоматическое** **утверждение для стратегии утверждения**:
 
    ![создать подписку оператора для открытого оператора Liberty](./media/howto-deploy-java-liberty-app/install-operator.png)

@@ -14,10 +14,10 @@ ms.reviewer: vincesm
 ms.custom: it-pro, seodec18, contperf-fy21q1
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: eb01a3e0fc5bc11a4d3de62b16aafb7dd308e34a
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98724277"
 ---
 # <a name="what-are-the-default-user-permissions-in-azure-active-directory"></a>Разрешения пользователя по умолчанию в Azure Active Directory
@@ -140,7 +140,7 @@ ms.locfileid: "98724277"
 | microsoft.directory/groups/restore | Восстановление групп в Azure Active Directory. |
 | microsoft.directory/groups/settings/update | Изменение свойства groups.settings в Azure Active Directory. |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о настройке ограничений доступа пользователей гостей см. в разделе [ограничение разрешений гостевого доступа (Предварительная версия) в Azure Active Directory](../enterprise-users/users-restrict-guest-permissions.md).
 * Дополнительные сведения о назначении административных ролей в Azure AD см. в статье [Назначение пользователю ролей администратора в Azure Active Directory](active-directory-users-assign-role-azure-portal.md)

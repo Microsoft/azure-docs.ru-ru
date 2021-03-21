@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 02/04/2021
 ms.author: ambapat
 ms.openlocfilehash: dd5b38a858ceba12f5d48f1782da5b85228c4b06
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102212116"
 ---
 # <a name="import-hsm-protected-keys-to-managed-hsm-byok"></a>Импорт ключей, защищенных с АППАРАТным модулем безопасности, в управляемый HSM (BYOK)
@@ -82,7 +82,7 @@ az login
 |Целевой ключ|
 ||RSA|2048-разрядный<br />3072-разрядный<br />4096-разрядный|HSM от поставщика|Ключ для передачи в управляемый модуль HSM|
 ||EC|P-256<br />P-384<br />P-521|HSM от поставщика|Ключ для передачи в управляемый модуль HSM|
-||Симметричный ключ (Oct-HSM)|128-разрядное<br />192-разрядный<br />256-разрядный|HSM от поставщика|Ключ для передачи в управляемый модуль HSM|
+||Симметричный ключ (Oct-HSM)|128-разрядное<br />192-битный<br />256-битный|HSM от поставщика|Ключ для передачи в управляемый модуль HSM|
 ||||
 ## <a name="generate-and-transfer-your-key-to-the-managed-hsm"></a>Создание и перенос ключа в управляемый модуль HSM
 

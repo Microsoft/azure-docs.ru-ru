@@ -7,10 +7,10 @@ ms.date: 02/25/2019
 ms.author: srrengar
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 59c8202b03bf1be2be5a68b75a1d7c7404b2213d
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95998249"
 ---
 # <a name="report-and-check-service-health"></a>Проверка работоспособности службы и оповещение о проблемах
@@ -20,13 +20,13 @@ ms.locfileid: "95998249"
 
 * С помощью объектов [Partition](/dotnet/api/system.fabric.istatefulservicepartition) или [CodePackageActivationContext](/dotnet/api/system.fabric.codepackageactivationcontext).  
   Используйте объекты `Partition` и `CodePackageActivationContext`, чтобы сообщить сведения о работоспособности элементов, которые являются частью текущего контекста. Например, код, выполняемый в рамках реплики, может передать сведения о работоспособности только для этой реплики, раздела, к которому она принадлежит, и приложения, частью которого она является.
-* Используйте ключевое слово `FabricClient`.   
+* Используйте команду `FabricClient`.   
   `FabricClient` можно использовать для передачи сведений о работоспособности из кода службы в том случае, если кластер не является [безопасным](service-fabric-cluster-security.md) или если служба запущена с правами администратора. В большинстве реальных сценариев не используются незащищенные кластеры и не предоставляются права администратора. С помощью `FabricClient`можно отправлять сведения о работоспособности для любой сущности, которая является частью кластера. Но в идеале код службы должен сообщать только о работоспособности самой службы.
 * Используйте интерфейсы REST API на уровне кластера, приложения, развернутого приложения, службы, пакета службы, секции, реплики или узла. Так можно сообщить о работоспособности из контейнера.
 
 В этой статье описан пример того, как отправлять отчеты о работоспособности из кода службы. В примере также показано, как можно использовать инструменты, предоставляемые Service Fabric, для проверки состояния работоспособности. Эта статья представляет собой краткое изложение возможностей Service Fabric по отслеживанию работоспособности. Для получения дополнительных сведений вы можете прочесть серию подробных статей о работоспособности, начиная со статьи, ссылка на которую приведена в конце этой статьи.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Должны быть установлены следующие компоненты:
 
 * Visual Studio 2015 или Visual Studio 2019
@@ -60,7 +60,7 @@ ms.locfileid: "95998249"
 1. Откройте файл Stateful1.cs и найдите вызов `myDictionary.TryGetValueAsync` в методе `RunAsync`. Как видите, этот метод возвращает `result` , который содержит текущее значение счетчика, так как основная логика этого приложения — поддерживать работу счетчика. Если приложение было реальным приложением и в случае отсутствия результата возникла ошибка, следует отметить это событие.
 1. Чтобы сообщить о событии отсутствия результата, что представляет собой сбой, сделайте следующее:
    
-    a. Добавьте в файл Stateful1.cs пространство имен `System.Fabric.Health` .
+    а. Добавьте в файл Stateful1.cs пространство имен `System.Fabric.Health` .
    
     ```csharp
     using System.Fabric.Health;
@@ -88,7 +88,7 @@ ms.locfileid: "95998249"
     ```
 1. Если служба запущена с правами администратора или кластер не является [безопасным](service-fabric-cluster-security.md), для отправки сведений о работоспособности также можно использовать `FabricClient`, как показано ниже.  
    
-    a. Создайте экземпляр `FabricClient` после объявления `var myDictionary`.
+    а. Создайте экземпляр `FabricClient` после объявления `var myDictionary`.
    
     ```csharp
     var fabricClient = new FabricClient(new FabricClientSettings() { HealthReportSendInterval = TimeSpan.FromSeconds(0) });
@@ -140,7 +140,7 @@ var activationContext = FabricRuntime.GetActivationContext();
 activationContext.ReportApplicationHealth(healthInformation);
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Подробный обзор работоспособности в Service Fabric](service-fabric-health-introduction.md)
 * [REST API for reporting service health](/rest/api/servicefabric/report-the-health-of-a-service) (REST API для формирования отчетов о работоспособности службы)
 * [REST API for reporting application health](/rest/api/servicefabric/report-the-health-of-an-application) (REST API для формирования отчетов о работоспособности приложения)

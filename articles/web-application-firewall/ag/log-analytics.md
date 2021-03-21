@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 09/06/2019
 ms.author: victorh
 ms.openlocfilehash: c928d4234e82e7c43c2365e20d57d0b97d4dbc1c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100589003"
 ---
 # <a name="use-log-analytics-to-examine-application-gateway-web-application-firewall-waf-logs"></a>Использование Log Analytics для проверки журналов брандмауэра веб-приложения шлюза приложений (WAF)
@@ -81,6 +81,6 @@ AzureDiagnostics
 
 ![На снимке экрана показана панель мониторинга Azure, на которой можно добавить запрос.](../media/log-analytics/dashboard.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Работоспособность серверной части, журналы ресурсов и метрики для шлюза приложений](../../application-gateway/application-gateway-diagnostics.md)

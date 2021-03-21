@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 11/06/2020
 ms.author: victorh
 ms.openlocfilehash: f7196c7715ad5d2c02759040b780b96218e1655e
-ms.sourcegitcommit: e2dc549424fb2c10fcbb92b499b960677d67a8dd
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94695951"
 ---
 # <a name="use-fqdn-filtering-in-network-rules"></a>Использовать фильтрацию полных доменных имен в правилах сети
@@ -35,6 +35,6 @@ ms.locfileid: "94695951"
      - Если используется протокол HTTP/S или MSSQL, используйте правила приложения для фильтрации FQDN.
    - Для других протоколов, кроме HTTP/S или MSSQL, можно использовать правила приложения или сети для фильтрации полных доменных имен.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Параметры DNS брандмауэра Azure](dns-settings.md)

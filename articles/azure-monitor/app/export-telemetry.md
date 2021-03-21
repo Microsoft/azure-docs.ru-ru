@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 02/19/2021
 ms.custom: references_regions
 ms.openlocfilehash: e7831123834df9186310453106c50261373160ec
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101737041"
 ---
 # <a name="export-telemetry-from-application-insights"></a>Экспорт данных телеметрии из Application Insights
@@ -36,7 +36,7 @@ ms.locfileid: "101737041"
 
 Непрерывный экспорт поддерживается в следующих регионах:
 
-* Юго-Восточная Азия
+* Southeast Asia
 * Центральная Канада
 * Центральная Индия
 * Северная Европа
@@ -50,7 +50,7 @@ ms.locfileid: "101737041"
 * Центральная часть США
 * восточная часть США 2
 * Центрально-южная часть США
-* Западная часть США 2
+* западная часть США 2
 * Северная часть ЮАР;
 * Центрально-северная часть США
 * Brazil South

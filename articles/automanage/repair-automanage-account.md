@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/05/2020
 ms.author: alsin
 ms.openlocfilehash: 4694fa679c7bbff309a0452219ff39bacf2488c4
-ms.sourcegitcommit: d22a86a1329be8fd1913ce4d1bfbd2a125b2bcae
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96183708"
 ---
 # <a name="repair-an-automanage-account"></a>Восстановление учетной записи управления
@@ -21,7 +21,7 @@ ms.locfileid: "96183708"
 ## <a name="step-1-reset-the-automanage-account-identity-type"></a>Шаг 1. Сброс типа удостоверения учетной записи для управления
 Сбросьте тип удостоверения учетной записи управления, используя следующий шаблон Azure Resource Manager (ARM). Сохраните файл локально в armdeploy.jsили с аналогичным именем. Запишите имя и расположение учетной записи, так как они являются обязательными параметрами в шаблоне ARM.
 
-1. Создайте диспетчер ресурсов развертывание с помощью следующего шаблона. Используйте ключевое слово `identityType = None`.
+1. Создайте диспетчер ресурсов развертывание с помощью следующего шаблона. Используйте команду `identityType = None`.
     * Развертывание можно создать в Azure CLI с помощью `az deployment sub create` . Дополнительные сведения см. в разделе [AZ Deployment подсистема](/cli/azure/deployment/sub).
     * Вы можете создать развертывание в PowerShell с помощью `New-AzDeployment` модуля. Дополнительные сведения см. в разделе [New-аздеплоймент](/powershell/module/az.resources/new-azdeployment).
 

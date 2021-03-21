@@ -9,10 +9,10 @@ ms.date: 02/10/2021
 ms.service: security-center
 ms.topic: how-to
 ms.openlocfilehash: 873fdba1d24db55b3269cc2c13f0140da4a9b4e3
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100393363"
 ---
 # <a name="explore-and-manage-your-resources-with-asset-inventory"></a>Изучение ресурсов и управление ими с помощью инвентаризации активов
@@ -152,7 +152,7 @@ ms.locfileid: "100393363"
 
 :::image type="content" source="./media/asset-inventory/agent-pricing-blanks.png" alt-text="Некоторые ресурсы показывают пустые сведения в столбцах мониторинга агента или защитника Azure.":::
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этой статье описывается страница "Инвентаризация активов" центра безопасности Azure.
 

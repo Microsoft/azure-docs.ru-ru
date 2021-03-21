@@ -4,10 +4,10 @@ description: Узнайте об условиях инфраструктуры A
 ms.topic: conceptual
 ms.date: 1/4/2021
 ms.openlocfilehash: fd7a39854c86f728ef152f8e7d858157e1ad26f4
-ms.sourcegitcommit: aeba98c7b85ad435b631d40cbe1f9419727d5884
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97861925"
 ---
 # <a name="know-the-terms-for-baremetal-infrastructure"></a>Знание терминов для инфраструктуры BareMetal

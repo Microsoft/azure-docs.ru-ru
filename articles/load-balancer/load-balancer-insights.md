@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 10/27/2020
 ms.author: errobin
 ms.openlocfilehash: 190a9e431dedfb0f0fe6077e903174f253f5c773
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100589114"
 ---
 # <a name="using-insights-to-monitor-and-configure-your-azure-load-balancer"></a>Использование аналитики для мониторинга и настройки Azure Load Balancer
@@ -76,7 +76,7 @@ ms.locfileid: "100589114"
 ### <a name="metric-definitions"></a>Определения метрик
 На вкладке определения метрик содержатся все сведения, показанные в [статье многомерные метрики](./load-balancer-standard-diagnostics.md#multi-dimensional-metrics).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Проверьте панель мониторинга и оставьте отзыв, воспользовавшись приведенной ниже ссылкой, если есть все, что можно улучшить.
 * [Ознакомьтесь с документацией по метрикам, чтобы понять, как вычисляется Каждая метрика.](./load-balancer-standard-diagnostics.md#multi-dimensional-metrics)
 * [Создание мониторов подключения для Load Balancer](../network-watcher/connection-monitor.md)

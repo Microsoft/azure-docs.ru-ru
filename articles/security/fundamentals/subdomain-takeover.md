@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 02/04/2021
 ms.author: memildin
 ms.openlocfilehash: c3a821156074727d02ab36cf88f3e998756b8cc4
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100389456"
 ---
 # <a name="prevent-dangling-dns-entries-and-avoid-subdomain-takeover"></a>Предотвращение висячих записей DNS и избежание поддоменного перенаправление
@@ -94,13 +94,13 @@ ms.locfileid: "100389456"
 | Общедоступные IP-адреса       | microsoft.network/publicipaddresses         | Properties. dnsSettings. FQDN                | `abc.EastUs.cloudapp.azure.com` |
 | Azure Traffic Manager     | microsoft.network/trafficmanagerprofiles    | Properties. dnsConfig. FQDN                  | `abc.trafficmanager.net`        |
 | Экземпляр контейнера Azure  | microsoft.containerinstance/containergroups | Properties. ipAddress. FQDN                  | `abc.EastUs.azurecontainer.io`  |
-| Служба управления Azure API      | microsoft.apimanagement/service             | Properties. Хостнамеконфигуратионс. имя_узла | `abc.azure-api.net`             |
+| Служба "Управление API Azure"      | microsoft.apimanagement/service             | Properties. Хостнамеконфигуратионс. имя_узла | `abc.azure-api.net`             |
 | Служба приложений Azure         | microsoft.web/sites                         | Properties. параметром DefaultHostName                 | `abc.azurewebsites.net`         |
 | Служба приложений Azure — слоты | microsoft.web/sites/slots                   | Properties. параметром DefaultHostName                 | `abc-def.azurewebsites.net`     |
 
 
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Запустите запрос от имени пользователя, который:
 
@@ -207,7 +207,7 @@ ms.locfileid: "100389456"
     - Удалите запись DNS, если она больше не используется, или укажите правильный ресурс Azure (FQDN), принадлежащий вашей организации.
  
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о связанных службах и функциях Azure, которые можно использовать для защиты от перенаправление поддоменов, см. на следующих страницах.
 

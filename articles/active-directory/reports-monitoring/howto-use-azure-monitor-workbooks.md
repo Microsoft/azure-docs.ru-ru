@@ -15,10 +15,10 @@ ms.date: 10/30/2019
 ms.author: markvi
 ms.reviewer: dhanyahk
 ms.openlocfilehash: b84c38b28b51f867160272883465242fc81ff2bf
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100588052"
 ---
 # <a name="how-to-use-azure-monitor-workbooks-for-azure-active-directory-reports"></a>Использование книг Azure Monitor для отчетов Azure Active Directory
@@ -74,7 +74,7 @@ ms.locfileid: "100588052"
 -   Глобальный администратор.
 -   администратор безопасности;
 -   Читатель сведений о безопасности
--   Читатель отчетов.
+-   Средство просмотра отчетов
 -   администратор приложений;
 
 ## <a name="workbook-access"></a>Доступ к книге 

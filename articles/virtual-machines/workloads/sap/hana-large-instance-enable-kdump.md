@@ -14,10 +14,10 @@ ms.date: 03/30/2020
 ms.author: prtyag
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: e4b06cbcbef79e243116bddb33adbcf6476fac8a
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102213374"
 ---
 # <a name="kdump-for-sap-hana-on-azure-large-instances-hli"></a>Кдумп для SAP HANA на крупных экземплярах Azure (ХЛИ)
@@ -32,7 +32,7 @@ ms.locfileid: "102213374"
 
 ## <a name="supported-skus"></a>Поддерживаемые номера SKU
 
-|  Тип крупных экземпляров Hana   |  Поставщик ОС   |  Версия пакета ОС   |  номер SKU |
+|  Тип крупных экземпляров Hana   |  Поставщик ОС   |  Версия пакета ОС   |  SKU |
 |-----------------------------|--------------|-----------------------|-------------|
 |   Тип I                    |  SuSE        |   SLES 12 с пакетом обновления 3 (SP3)         |  S224m      |
 |   Тип I                    |  SuSE        |   SLES 12 с пакетом обновления 4 (SP4)         |  S224m      |
@@ -61,7 +61,7 @@ ms.locfileid: "102213374"
 |   Тип II                   |  SuSE        |   SLES 12 с пакетом обновления 3 (SP3)         |  S576m      |
 |   Тип II                   |  SuSE        |   SLES 12 с пакетом обновления 4 (SP4)         |  S576m      |
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Служба кдумп использует `/var/crash` каталог для записи дампов, убедитесь, что раздел соответствует этому каталогу, достаточно места для размещения дампов.
 

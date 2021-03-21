@@ -15,10 +15,10 @@ ms.topic: reference
 ms.date: 12/14/2020
 ms.author: phjensen
 ms.openlocfilehash: 17c29fdf88495f6ecc40963eda08858887173fd1
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98730944"
 ---
 # <a name="back-up-using-azure-application-consistent-snapshot-tool-preview"></a>Резервное копирование с помощью средства создания моментальных снимков для приложений Azure (Предварительная версия)
@@ -145,7 +145,7 @@ azacsnap -c backup --volume other --prefix boot_TEST --retention 9 --configfile 
 - Тип крупных экземпляров HANA. в единице крупных экземпляров HANA есть два допустимых значения: или, в `TYPEI` `TYPEII` зависимости от единицы.
 - Для подтверждения доступных номеров SKU см. раздел [Доступные номера SKU для крупных экземпляров Hana](../virtual-machines/workloads/sap/hana-available-skus.md) .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Получение сведений о снимке](azacsnap-cmd-ref-details.md)
 - [Удаление моментальных снимков](azacsnap-cmd-ref-delete.md)

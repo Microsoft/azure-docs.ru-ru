@@ -12,10 +12,10 @@ ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
 ms.openlocfilehash: 53f50e98bcec4b8ace342808f0bcfd96770834b0
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96002227"
 ---
 # <a name="the-team-data-science-process-in-action-use-azure-hdinsight-hadoop-clusters"></a>Процесс обработки и анализа данных группы на практике: использование кластеров Azure HDInsight Hadoop
@@ -117,23 +117,23 @@ ms.locfileid: "96002227"
 
 В следующих командах AzCopy замените приведенные ниже параметры фактическими значениями, указанными при создании кластера Hadoop и распаковке файлов данных.
 
-* ***\<path_to_data_folder>** _ Каталог (вместе с путем) на компьютере, который содержит распакованные файлы данных.  
-_ * **\<storage account name of Hadoop cluster>** _ Учетная запись хранения, связанная с кластером HDInsight.
-_ * **\<default container of Hadoop cluster>** _ Контейнер по умолчанию, используемый кластером. Имя контейнера по умолчанию обычно совпадает с именем самого кластера. Например, если кластер называется abc123.azurehdinsight.net, контейнером по умолчанию будет abc123.
-_ * **\<storage account key>** _ Ключ для учетной записи хранения, используемой кластером.
+* ***\<path_to_data_folder>*** Каталог (вместе с путем) на компьютере, который содержит распакованные файлы данных.  
+* ***\<storage account name of Hadoop cluster>*** Учетная запись хранения, связанная с кластером HDInsight.
+* ***\<default container of Hadoop cluster>*** Контейнер по умолчанию, используемый кластером. Имя контейнера по умолчанию обычно совпадает с именем самого кластера. Например, если кластер называется abc123.azurehdinsight.net, контейнером по умолчанию будет abc123.
+* ***\<storage account key>*** Ключ для учетной записи хранения, используемой кластером.
 
 В командной строке или окне Windows PowerShell выполните две приведенные ниже команды AzCopy.
 
-Эта команда передает данные о поездках в каталог _*_nyctaxitripraw_*_ в контейнере по умолчанию кластера Hadoop.
+Эта команда передает данные о поездке в каталог ***nyctaxitripraw*** в контейнере по умолчанию кластера Hadoop.
 
 ```console
-"C:\Program Files (x86)\Microsoft SDKs\Azure\AzCopy\azcopy" /Source:<path_to_unzipped_data_files> /Dest:https://<storage account name of Hadoop cluster>.blob.core.windows.net/<default container of Hadoop cluster>/nyctaxitripraw /DestKey:<storage account key> /S /Pattern:trip_data__.csv
+"C:\Program Files (x86)\Microsoft SDKs\Azure\AzCopy\azcopy" /Source:<path_to_unzipped_data_files> /Dest:https://<storage account name of Hadoop cluster>.blob.core.windows.net/<default container of Hadoop cluster>/nyctaxitripraw /DestKey:<storage account key> /S /Pattern:trip_data_*.csv
 ```
 
-Эта команда передает данные FARE в каталог ***nyctaxifareraw** _ в контейнере по умолчанию кластера Hadoop.
+Эта команда передает данные о тарифе в каталог ***nyctaxifareraw*** в контейнере по умолчанию кластера Hadoop.
 
 ```console
-"C:\Program Files (x86)\Microsoft SDKs\Azure\AzCopy\azcopy" /Source:<path_to_unzipped_data_files> /Dest:https://<storage account name of Hadoop cluster>.blob.core.windows.net/<default container of Hadoop cluster>/nyctaxifareraw /DestKey:<storage account key> /S /Pattern:trip_fare__.csv
+"C:\Program Files (x86)\Microsoft SDKs\Azure\AzCopy\azcopy" /Source:<path_to_unzipped_data_files> /Dest:https://<storage account name of Hadoop cluster>.blob.core.windows.net/<default container of Hadoop cluster>/nyctaxifareraw /DestKey:<storage account key> /S /Pattern:trip_fare_*.csv
 ```
 
 Теперь данные должны находиться в хранилище BLOB-объектов и быть готовы к использованию в кластере HDInsight.
@@ -156,7 +156,7 @@ set script='https://raw.githubusercontent.com/Azure/Azure-MachineLearning-DataSc
 @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString(%script%))"
 ```
 
-Эти две команды скачивают все файлы ". HQL", необходимые в этом пошаговом руководстве, в локальный каталог ***C:\temp&#92;** _ на головном узле.
+Эти две команды скачивают все файлы ". HQL", необходимые в этом пошаговом руководстве, в локальный каталог ***C:\temp&#92;*** на головном узле.
 
 ## <a name="create-hive-database-and-tables-partitioned-by-month"></a><a name="#hive-db-tables"></a>Создание базы данных Hive и таблиц, секционированных по месяцам
 > [!NOTE]
@@ -182,7 +182,7 @@ cd %hive_home%\bin
 hive -f "C:\temp\sample_hive_create_db_and_tables.hql"
 ```
 
-Ниже приведено содержимое файла *файла c:\temp\Sample \_ Hive \_ Create \_ DB \_ и \_ Tables. HQL**, который создает базу данных Hive **nyctaxidb** **, а также таблицы и** **FARE**.
+Ниже приведено содержимое файла **файла c:\temp\Sample \_ Hive \_ Create \_ DB \_ и \_ Tables. HQL** , в котором создается база данных Hive **nyctaxidb**, а также таблицы для **прохода** и **FARE**.
 
 ```hiveql
 create database if not exists nyctaxidb;
@@ -273,7 +273,7 @@ hive -e "show tables in nyctaxidb;"
 hive -e "show partitions nyctaxidb.trip;"
 ```
 
-Ожидаемые выходные данные выглядят следующим образом:
+Вот, что мы должны были увидеть.
 
 ```output
 month=1
@@ -297,7 +297,7 @@ Time taken: 2.075 seconds, Fetched: 12 row(s)
 hive -e "show partitions nyctaxidb.fare;"
 ```
 
-Ожидаемые выходные данные выглядят следующим образом:
+Вот, что мы должны были увидеть.
 
 ```output
 month=1
@@ -862,7 +862,7 @@ hdfs dfs -ls wasb:///D.db/T
 
   **Используемое средство обучения:** двухклассовая логистическая регрессия.
 
-  a. Для задачи целевой меткой (меткой класса) будет **tipped** (чаевые выплачены). В исходном наборе данных сокращенной выборки есть несколько столбцов, содержащих целевые утечки сведений для данного эксперимента по классификации. В частности, **\_ класс TIP**, **\_ значение TIP** и **Общая \_ Сумма** раскрывают сведения о целевой метке, недоступные во время тестирования. Мы удаляем эти столбцы из рассмотрения с помощью модуля [Select Columns in Dataset][select-columns] (Выбор столбцов в наборе данных).
+  а. Для задачи целевой меткой (меткой класса) будет **tipped** (чаевые выплачены). В исходном наборе данных сокращенной выборки есть несколько столбцов, содержащих целевые утечки сведений для данного эксперимента по классификации. В частности, **\_ класс TIP**, **\_ значение TIP** и **Общая \_ Сумма** раскрывают сведения о целевой метке, недоступные во время тестирования. Мы удаляем эти столбцы из рассмотрения с помощью модуля [Select Columns in Dataset][select-columns] (Выбор столбцов в наборе данных).
 
   На схеме ниже показан наш эксперимент по прогнозированию выплаты чаевых за эту поездку.
 
@@ -882,7 +882,7 @@ hdfs dfs -ls wasb:///D.db/T
 
   **Используемое средство обучения:** мультиклассовая логистическая регрессия.
 
-  a. Для этой проблемы наша конечная метка (или класс) является **\_ классом TIP**, который может принимать одно из пяти значений (0, 1, 2, 3, 4). Как и в случае двоичной классификации, у нас есть несколько столбцов с утечкой целевой информации для этого эксперимента. В частности, **tipped**, **tip\_amount** и **total\_amount** раскрывают информацию о целевой метке, которая недоступна во время тестирования. Мы удаляем эти столбцы с помощью модуля [Select Columns in Dataset][select-columns] (Выбор столбцов в наборе данных).
+  а. Для этой проблемы наша конечная метка (или класс) является **\_ классом TIP**, который может принимать одно из пяти значений (0, 1, 2, 3, 4). Как и в случае двоичной классификации, у нас есть несколько столбцов с утечкой целевой информации для этого эксперимента. В частности, **tipped**, **tip\_amount** и **total\_amount** раскрывают информацию о целевой метке, которая недоступна во время тестирования. Мы удаляем эти столбцы с помощью модуля [Select Columns in Dataset][select-columns] (Выбор столбцов в наборе данных).
 
   На схеме ниже показан наш эксперимент по прогнозированию ячейки, в которую вероятнее всего попадет сумма чаевых. К этим ячейкам относятся: класс 0: чаевые = 0 $, класс 1: чаевые > 0 $ и чаевые <= 5 $, класс 2: чаевые > 5 $ и чаевые <= 10 $, класс 3: чаевые > 10 $ и чаевые <= 20 $, класс 4: чаевые > 20 $.
 
@@ -902,7 +902,7 @@ hdfs dfs -ls wasb:///D.db/T
 
   **Используемое средство обучения:** повышенное дерево принятия решений.
 
-  a. Для задачи целевой меткой (меткой класса) будет **tip\_amount** (сумма чаевых). Целевые утечки в этом случае: **tipped**, **tip\_class** и **total\_amount**. Все эти переменные раскрывают информацию о сумме чаевых, которая обычно недоступна во время тестирования. Мы удаляем эти столбцы с помощью модуля [Select Columns in Dataset][select-columns] (Выбор столбцов в наборе данных).
+  а. Для задачи целевой меткой (меткой класса) будет **tip\_amount** (сумма чаевых). Целевые утечки в этом случае: **tipped**, **tip\_class** и **total\_amount**. Все эти переменные раскрывают информацию о сумме чаевых, которая обычно недоступна во время тестирования. Мы удаляем эти столбцы с помощью модуля [Select Columns in Dataset][select-columns] (Выбор столбцов в наборе данных).
 
   На схеме ниже показан эксперимент по прогнозированию суммы выплаченных чаевых.
 

@@ -4,10 +4,10 @@ description: В этой статье приводится сводка Azure Ba
 ms.date: 08/30/2019
 ms.topic: conceptual
 ms.openlocfilehash: 2170440b7b47861b75801b8dbd334686b4cabc8b
-ms.sourcegitcommit: 04297f0706b200af15d6d97bc6fc47788785950f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98985620"
 ---
 # <a name="support-matrix-for-backup-with-the-microsoft-azure-recovery-services-mars-agent"></a>Матрица поддержки для резервного копирования с помощью агента Служб восстановления Microsoft Azure (MARS)
@@ -171,7 +171,7 @@ Azure Backup ограничивает размер источника данны
 --- | ---
 Windows Server 2012 или более поздней версии; |54 400 ГБ
 Windows Server 2008 R2 с пакетом обновления 1 (SP1) |1700 ГБ
-Windows Server 2008 с пакетом обновления 2 (SP2)| 1700 ГБ
+Windows Server 2008 с пакетом обновления 2 (SP2)| 1700 ГБ
 Windows 8 или более поздняя версия| 54 400 ГБ
 Windows 7| 1700 ГБ
 
@@ -179,7 +179,7 @@ Windows 7| 1700 ГБ
 
 Ниже приведены минимальные значения длительности хранения, которые можно задать для различных точек восстановления.
 
-|Точка восстановления |Длительность  |
+|Точка восстановления |Duration  |
 |---------|---------|
 |Ежедневная точка восстановления    |   7 дней      |
 |Еженедельная точка восстановления     |    4 нед.     |
@@ -192,7 +192,7 @@ Windows 7| 1700 ГБ
 
 ## <a name="supported-file-types-for-backup"></a>Поддерживаемые типы файлов для резервного копирования
 
-**Type** | **Поддержка**
+**Тип** | **Поддержка**
 --- | ---
 Шифрование<sup>*</sup>| Поддерживается.
 Compressed | Поддерживается.

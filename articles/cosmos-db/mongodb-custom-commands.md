@@ -9,10 +9,10 @@ ms.date: 03/02/2021
 ms.author: chrande
 ms.custom: devx-track-js
 ms.openlocfilehash: deba6696eb71287902fa3970ed2d83d0b09ac08d
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101658492"
 ---
 # <a name="use-mongodb-extension-commands-to-manage-data-stored-in-azure-cosmos-dbs-api-for-mongodb"></a>Используйте команды расширения MongoDB для управления данными, хранящимися в API-интерфейсе Azure Cosmos DB для MongoDB 
@@ -236,7 +236,7 @@ use test
 db.runCommand({customAction: "CreateCollection", collection: "testCollection"});
 ```
 
-Это приведет к созданию новой фиксированной, несегментированной коллекции с 400RU/s и `_id` автоматически созданного индекса в поле. Этот тип конфигурации также будет применяться при создании новых коллекций с помощью `insert()` функции. Пример. 
+Это приведет к созданию новой фиксированной, несегментированной коллекции с 400RU/s и `_id` автоматически созданного индекса в поле. Этот тип конфигурации также будет применяться при создании новых коллекций с помощью `insert()` функции. Пример: 
 
 ```javascript
 use test
@@ -426,7 +426,7 @@ db.runCommand({customAction: "GetCollection", collection: "testCollection"});
 | `code`    |   `int`      |   Возвращается только при сбое команды (т. е. ОК = = 0). Содержит код ошибки MongoDB. Это необязательный параметр ответа.      |
 |  `errMsg`   |  `string`      |    Возвращается только при сбое команды (т. е. ОК = = 0). Содержит понятное сообщение об ошибке. Это необязательный параметр ответа.      |
 
-Например:
+Пример:
 
 ```javascript
 { "ok" : 1 }

@@ -10,10 +10,10 @@ ms.topic: article
 ms.custom: mvc
 ms.date: 07/20/2020
 ms.openlocfilehash: d50f577a7170982be004cc8957114f79675fbc6e
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96006104"
 ---
 # <a name="manage-logic-apps-in-the-azure-portal"></a>Управление приложениями логики в портал Azure
@@ -54,7 +54,7 @@ ms.locfileid: "96006104"
 
 1. На панели " **Свойства** " можно просмотреть и скопировать следующие сведения о приложении логики:
 
-   * **Имя**
+   * **имя**;
    * **Идентификатор ресурса**
    * **Группа ресурсов**
    * **Расположение**
@@ -222,6 +222,6 @@ ms.locfileid: "96006104"
 
    При повторном [просмотре журнала версий приложения логики](#find-version-history) повышенная версия отображается в верхней части списка и имеет новый идентификатор.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Мониторинг приложений логики](monitor-logic-apps.md)
