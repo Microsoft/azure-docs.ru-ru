@@ -8,10 +8,10 @@ author: deborahc
 ms.author: dech
 ms.custom: devx-track-python, devx-track-java, contperf-fy21q1
 ms.openlocfilehash: 952be09662c2c74f883d63de72bba2b9cb58d0e0
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102554009"
 ---
 # <a name="export-the-azure-cosmos-db-emulator-certificates-for-use-with-java-python-and-nodejs-apps"></a>Экспорт Azure Cosmos DB сертификатов эмулятора для использования с приложениями Java, Python и Node.js
@@ -103,7 +103,7 @@ sudo $JAVA_HOME/bin/keytool -cacerts -importcert -alias cosmos_emulator -file $E
 
 Если вы установили сертификат в хранилище сертификатов Java или использовали его в других местах, необходимо повторно импортировать их с использованием текущих сертификатов. Приложение не может подключиться к локальному эмулятору, пока не будут обновлены сертификаты.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Использование параметров командной строки и команд PowerShell для управления эмулятором](emulator-command-line-parameters.md)
 * [Отладка проблем с эмулятором](troubleshoot-local-emulator.md)

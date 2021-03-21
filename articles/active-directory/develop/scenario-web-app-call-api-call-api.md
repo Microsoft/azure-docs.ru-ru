@@ -13,10 +13,10 @@ ms.date: 09/25/2020
 ms.author: jmprieur
 ms.custom: aaddev
 ms.openlocfilehash: b294a56a523adaa2629a5d1e72a7ccef532956e0
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98753284"
 ---
 # <a name="a-web-app-that-calls-web-apis-call-a-web-api"></a>Веб-приложение, вызывающее веб-API: вызов веб-API
@@ -37,7 +37,7 @@ ms.locfileid: "98753284"
 
 #### <a name="option-1-call-microsoft-graph-with-the-sdk"></a>Вариант 1. вызов Microsoft Graph с помощью пакета SDK
 
-Необходимо вызвать Microsoft Graph. В этом сценарии вы добавили `AddMicrosoftGraph` в *Startup.CS* , как указано в [конфигурации кода](scenario-web-app-call-api-app-configuration.md#option-1-call-microsoft-graph), и можете напрямую внедрить `GraphServiceClient` в контроллер или конструктор страницы для использования в действиях. В следующем примере на странице Razor отображается фотография пользователя, выполнившего вход.
+Необходимо вызвать Microsoft Graph. В этом сценарии вы добавили `AddMicrosoftGraph` в *Startup. CS* , как указано в [конфигурации кода](scenario-web-app-call-api-app-configuration.md#option-1-call-microsoft-graph), и можете напрямую внедрить `GraphServiceClient` в контроллер или конструктор страницы для использования в действиях. В следующем примере на странице Razor отображается фотография пользователя, выполнившего вход.
 
 ```CSharp
 [Authorize]
@@ -73,7 +73,7 @@ public class IndexModel : PageModel
 
 #### <a name="option-2-call-a-downstream-web-api-with-the-helper-class"></a>Вариант 2. вызов подчиненного веб-API с помощью вспомогательного класса
 
-Вы хотите вызвать веб-API, отличный от Microsoft Graph. В этом случае вы добавили `AddDownstreamWebApi` в *Startup.CS* , как указано в [конфигурации кода](scenario-web-app-call-api-app-configuration.md#option-2-call-a-downstream-web-api-other-than-microsoft-graph), и можете напрямую внедрить `IDownstreamWebApi` службу в контроллер или конструктор страниц и использовать ее в действиях:
+Вы хотите вызвать веб-API, отличный от Microsoft Graph. В этом случае вы добавили `AddDownstreamWebApi` в *Startup. CS* , как указано в [конфигурации кода](scenario-web-app-call-api-app-configuration.md#option-2-call-a-downstream-web-api-other-than-microsoft-graph), и можете напрямую внедрить `IDownstreamWebApi` службу в контроллер или конструктор страниц и использовать ее в действиях:
 
 ```CSharp
 [Authorize]

@@ -3,16 +3,16 @@ title: Резервное копирование и восстановление
 description: Как выполнить резервное копирование и восстановление сервера в службе "База данных Azure для MariaDB" с помощью Azure CLI.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.devlang: azurecli
 ms.topic: how-to
 ms.date: 3/27/2020
 ms.custom: devx-track-azurecli
-ms.openlocfilehash: ceda6c99493818042aa281ab545465e91493a80e
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: a6e46efd7f998437c3998df9a989ef9e1500e888
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98664840"
 ---
 # <a name="how-to-back-up-and-restore-a-server-in-azure-database-for-mariadb-using-the-azure-cli"></a>Как создать резервную копию сервера в службе "База данных Azure для MariaDB" и восстановить его с помощью Azure CLI

@@ -3,14 +3,14 @@ title: Настройка параметров сервера — портал A
 description: В этой статье описывается, как настроить параметры сервера MariaDB в базе данных Azure для MariaDB с помощью портала Azure.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: how-to
 ms.date: 10/1/2020
-ms.openlocfilehash: cda6b2bd3d49bd71b4c57d5d459c07b61addb493
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: 7081535bb709e6731a9a15436334e8742e7bdd08
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98664806"
 ---
 # <a name="configure-server-parameters-in-azure-database-for-mariadb-using-the-azure-portal"></a>Настройка параметров сервера в базе данных Azure для MariaDB с помощью портал Azure

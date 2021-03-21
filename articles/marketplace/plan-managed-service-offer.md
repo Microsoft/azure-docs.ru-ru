@@ -9,10 +9,10 @@ ms.author: brwrigh
 ms.reviewer: anbene
 ms.date: 12/23/2020
 ms.openlocfilehash: f096e53f8054039f361bde1c5f2adffac615c53d
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100371946"
 ---
 # <a name="how-to-plan-a-managed-service-offer-for-the-microsoft-commercial-marketplace"></a>Планирование предложения управляемой службы для коммерческого рынка Майкрософт
@@ -129,7 +129,7 @@ ms.locfileid: "100371946"
 
 Управляемые службы поддерживают только одну модель ценообразования: использование **собственной лицензии (BYOL)**. Это означает, что вы оплачиваете клиентов напрямую, и корпорация Майкрософт не оплачивает оплату.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Создание предложения управляемой службы](./create-managed-service-offer.md)
 * [Рекомендации по размещению предложений](./gtm-offer-listing-best-practices.md)

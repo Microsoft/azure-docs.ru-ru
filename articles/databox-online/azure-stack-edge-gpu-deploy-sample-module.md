@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
 ms.openlocfilehash: 4142542c9f17ae464a996df310c50d73d8711d8e
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102438205"
 ---
 # <a name="deploy-a-gpu-enabled-iot-module-on-azure-stack-edge-pro-gpu-device"></a>Развертывание модуля IoT с включенным GPU на устройстве Azure Stack ребра Pro GPU
@@ -33,7 +33,7 @@ ms.locfileid: "102438205"
 
 Пример модуля GPU в этой статье включает в себя пример кода для ЦП PyTorch и TensorFlow.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед началом работы убедитесь, что у вас есть следующие ресурсы:
 
@@ -49,7 +49,7 @@ ms.locfileid: "102438205"
     - [Python 3](https://www.python.org/);    
     - PIP для установки пакетов Python (обычно входит в состав установки Python)
 
-## <a name="get-the-sample-code"></a>Получение кода примера
+## <a name="get-the-sample-code"></a>Получение примера кода
 
 1. Перейдите к [шаблонам Azure Intelligent ребра в примерах Azure](https://github.com/azure-samples/azure-intelligent-edge-patterns). Клонировать или скачать ZIP-файл для кода. 
 
@@ -164,6 +164,6 @@ ms.locfileid: "102438205"
 
         Вы видите, что время, затраченное на выполнение одного и того же набора операций (5000 итераций преобразования фигур) по GPU, гораздо меньше, чем для ЦП.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о [настройке GPU для использования модуля](azure-stack-edge-j-series-configure-gpu-modules.md).

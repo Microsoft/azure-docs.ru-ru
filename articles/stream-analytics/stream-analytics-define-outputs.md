@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: contperf-fy21q1
 ms.date: 12/9/2020
 ms.openlocfilehash: 3ce4f673657561e196520466b569d0cf83d75a8a
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98019352"
 ---
 # <a name="outputs-from-azure-stream-analytics"></a>Выходные данные из Azure Stream Analytics
@@ -29,7 +29,7 @@ ms.locfileid: "98019352"
 |[Azure Synapse Analytics](azure-synapse-analytics-output.md)|Да|Проверка подлинности пользователя SQL </br> Управляемое удостоверение (предварительная версия)|
 |[Хранилище BLOB-объектов и Azure Data Lake Gen 2](blob-storage-azure-data-lake-gen2-output.md)|Да|Ключ доступа, </br> Управляемое удостоверение (предварительная версия)|
 |[Центры событий Azure](event-hubs-output.md)|Да, необходимо задать ключевой столбец секции в выходной конфигурации.|Ключ доступа, </br> Управляемое удостоверение (предварительная версия)|
-|[Power BI](power-bi-output.md)|нет|Azure Active Directory пользователь, </br> Управляемое удостоверение|
+|[Power BI](power-bi-output.md)|Нет|Azure Active Directory пользователь, </br> Управляемое удостоверение|
 |[Хранилище таблиц Azure](table-storage-output.md)|Да|Ключ учетной записи|
 |[Очереди служебной шины Azure](service-bus-queues-output.md)|Да|Ключ доступа|
 |[Разделы по служебной шине Azure](service-bus-topics-output.md)|Да|Ключ доступа|

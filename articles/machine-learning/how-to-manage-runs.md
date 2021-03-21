@@ -13,10 +13,10 @@ ms.date: 03/04/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, devx-track-azurecli
 ms.openlocfilehash: 977498abb17fe592cef344f407a662d3b79749b7
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102634784"
 ---
 # <a name="start-monitor-and-track-runs"></a>Запуск, отслеживание и отслеживание запусков 
@@ -38,7 +38,7 @@ ms.locfileid: "102634784"
 > Дополнительные сведения о мониторинге службы Машинное обучение Azure и связанных служб Azure см. [в разделе мониторинг машинное обучение Azure](monitor-azure-machine-learning.md).
 > Сведения о мониторинге моделей, развернутых в виде веб-служб или модулей IoT Edge, см. в разделе [сбора данных модели](how-to-enable-data-collection.md) и [мониторинга с помощью Application Insights](how-to-enable-app-insights.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Вам потребуются следующие элементы:
 

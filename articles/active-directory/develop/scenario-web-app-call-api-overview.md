@@ -13,17 +13,17 @@ ms.date: 07/14/2020
 ms.author: jmprieur
 ms.custom: aaddev
 ms.openlocfilehash: 1fdbdada54320ef28f6a4b04a7f415c835acc9dd
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98756296"
 ---
 # <a name="scenario-a-web-app-that-calls-web-apis"></a>Сценарий: веб-приложение, вызывающее веб-API
 
 Узнайте, как создать веб-приложение, которое подписывает пользователей на платформу Microsoft Identity, а затем вызывает веб-API от имени пользователя, выполнившего вход.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В этом сценарии предполагается, что вы уже выполнили [сценарий: веб-приложение, которое входит в систему пользователей](scenario-web-app-sign-user-overview.md).
 
@@ -52,6 +52,6 @@ ms.locfileid: "98756296"
 
 [!INCLUDE [recommended-topics](../../../includes/active-directory-develop-scenarios-prerequisites.md)]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Перейдите к следующей статье в этом сценарии — [Регистрация приложения](scenario-web-app-call-api-app-registration.md).

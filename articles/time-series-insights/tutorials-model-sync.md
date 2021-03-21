@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/19/2021
 ms.custom: dpalled
 ms.openlocfilehash: 5e8e5367daa532fa0cc36a18cd28b382e7cd8f78
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98682908"
 ---
 # <a name="model-synchronization-between-azure-digital-twins-and-time-series-insights-gen2"></a>Синхронизация моделей между Azure Digital Twins и Аналитикой временных рядов 2-го поколения
@@ -225,6 +225,6 @@ private async Task<TimeSeriesInstance> AddHierarchyToInstanceAsync(TimeSeriesIns
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В третьем ряде руководств вы узнаете, как запрашивать исторические данные из Azure Digital двойников с помощью интерфейсов API службы "аналитика временных рядов". Это выполняемая работа, и раздел будет обновлен при готовности. В то же время читатели должны ссылаться на [документацию по API запросов данных в службе "аналитика временных рядов](./concepts-query-overview.md)".

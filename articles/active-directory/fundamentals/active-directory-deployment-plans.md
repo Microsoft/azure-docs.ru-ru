@@ -13,10 +13,10 @@ ms.author: baselden
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4185ffd644d54c419f42c78326ca10bf100443c3
-ms.sourcegitcommit: d1e56036f3ecb79bfbdb2d6a84e6932ee6a0830e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99051436"
 ---
 # <a name="azure-active-directory-deployment-plans"></a>Планы развертывания Azure Active Directory

@@ -13,10 +13,10 @@ ms.author: hirsin
 ms.reviewer: hirsin
 ms.custom: aaddev, identityplatformtop40
 ms.openlocfilehash: 96f7d7c94ce908d953a6941bfa237fe8da1dc482
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98752663"
 ---
 # <a name="microsoft-identity-platform-and-the-oauth-20-client-credentials-flow"></a>Платформа удостоверений Майкрософт и поток учетных данных клиента OAuth 2,0
@@ -212,7 +212,7 @@ scope=https%3A%2F%2Fgraph.microsoft.com%2F.default
 | Параметр | Описание |
 | --- | --- |
 | `access_token` | Запрашиваемый маркер доступа. Приложение может использовать этот маркер для проверки подлинности в защищенном ресурсе, например в веб-API. |
-| `token_type` | Обозначает значение типа маркера. Единственным типом, поддерживаемым платформой Microsoft Identity, является `bearer` . |
+| `token_type` | Указывает значение типа маркера. Единственным типом, поддерживаемым платформой Microsoft Identity, является `bearer` . |
 | `expires_in` | Срок действия маркера доступа (в секундах). |
 
 ### <a name="error-response"></a>Сообщение об ошибке

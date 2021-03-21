@@ -9,17 +9,17 @@ ms.date: 02/11/2020
 ms.author: dobett
 ms.custom: include file
 ms.openlocfilehash: 08e4fd82bea6bb1b510b127db8dee7803ee112f5
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96912372"
 ---
 **Шаблоны приложений**
 
 **Шаблоны приложений IoT Central**
 
-| Шаблон                 | Название        | Описание: |
+| Шаблон                 | Имя        | Описание |
 | ------------------------ | ----------- | ----------- |
 | ИОТК-PnP-Preview         | Custom application (Пользовательское приложение) | Создает пустое приложение, в которое необходимо добавить собственные шаблоны устройств и сами устройства. |
 | ИОТК — условие           | Аналитика в магазине — мониторинг условий | Создает приложение для подключения и мониторинга среды хранилища. |
