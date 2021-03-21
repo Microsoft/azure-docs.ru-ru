@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 08/06/2020
 ms.custom: devx-track-js
 ms.openlocfilehash: 9b8824a0f73f3a79ab70810c529cb0ed9331a797
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102485492"
 ---
 # <a name="application-insights-for-web-pages"></a>Application Insights для веб-страниц
@@ -173,7 +173,7 @@ appInsights.trackTrace({message: 'this message will not be sent'}); // Not sent
 
 | Имя | По умолчанию | Описание |
 |------|---------|-------------|
-| instrumentationKey | null | **Обязательное**<br>Ключ инструментирования, полученный из портал Azure. |
+| instrumentationKey | null | **Обязательно**<br>Ключ инструментирования, полученный из портал Azure. |
 | accountId | null | Необязательный идентификатор учетной записи, если приложение группирует пользователей в учетные записи. Без пробелов, запятых, точек с запятой, знаков равенства или вертикальных линий |
 | сессионреневалмс | 1800000 | Сеанс регистрируется, если пользователь неактивен в течение этого периода времени в миллисекундах. Значение по умолчанию — 30 минут. |
 | сессионекспиратионмс | 86400000 | Сеанс заносится в журнал, если он продолжался в течение этого времени (в миллисекундах). По умолчанию — 24 часа |
@@ -290,7 +290,7 @@ Access-Control-Allow-Headers: `Request-Id` , `Request-Context` , `<your header>`
 
 ![Снимок экрана со страницей "производительность" в Application Insights отображение графики метрик зависимости для веб-приложения.](./media/javascript/performance-dependencies.png)
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Аналитика
 
 Чтобы запросить данные телеметрии, собранные с помощью пакета SDK для JavaScript, нажмите кнопку **Просмотр в журналах (аналитика)** . Добавив `where` оператор `client_Type == "Browser"` , вы увидите только данные из пакета SDK для JavaScript, и все телеметрии на стороне сервера, собранные другими пакетами SDK, будут исключены.
  

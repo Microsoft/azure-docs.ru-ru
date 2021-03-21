@@ -4,10 +4,10 @@ description: В этой статье описываются типы ресур
 ms.topic: conceptual
 ms.date: 10/21/2020
 ms.openlocfilehash: b1f9e61b409c395a13cc6a18d21d17530f38ac7e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101722897"
 ---
 # <a name="tag-support-for-azure-resources"></a>Поддержка тегов для ресурсов Azure
@@ -938,7 +938,7 @@ ms.locfileid: "101722897"
 > | регистрация | нет | Нет |
 > | Reportconfigs | Нет | Нет |
 > | Отчеты | Нет | Нет |
-> | Настройки | Нет | Нет |
+> | Параметры | Нет | Нет |
 > | шовбаккрулес | Нет | Нет |
 > | Представления | Нет | нет |
 

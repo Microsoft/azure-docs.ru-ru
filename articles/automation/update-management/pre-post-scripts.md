@@ -6,10 +6,10 @@ ms.subservice: update-management
 ms.date: 03/08/2021
 ms.topic: conceptual
 ms.openlocfilehash: ce60c773626d951062de3cc830b898e3b875f3cb
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102485543"
 ---
 # <a name="manage-pre-scripts-and-post-scripts"></a>Управление сценариями предварительного и последующего выполнения

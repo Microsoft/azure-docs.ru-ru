@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 02/11/2021
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 8a16ecd2ee6ed939b2afd0e51e9cf531e419c8af
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101656403"
 ---
 # <a name="secure-access-to-data-in-azure-cosmos-db"></a>Защита доступа к данным в Azure Cosmos DB
@@ -170,7 +170,7 @@ CosmosClient client = new CosmosClient(accountEndpoint: "MyEndpoint", authKeyOrR
 
 ## <a name="differences-between-rbac-and-resource-tokens"></a>Различия между RBAC и маркерами ресурсов
 
-| Тема | RBAC | Маркеры ресурсов |
+| Субъект | RBAC | Маркеры ресурсов |
 |--|--|--|
 | Аутентификация  | С Azure Active Directory (Azure AD). | На основе собственных Azure Cosmos DB пользователей<br>Интеграция маркеров ресурсов в Azure AD требует дополнительной работы для моста удостоверений Azure AD и Azure Cosmos DB пользователей. |
 | Авторизация | На основе ролей: определения ролей сопоставляют разрешенные действия и могут быть назначены нескольким удостоверениям. | На основе разрешений. для каждого Azure Cosmos DB пользователя необходимо назначить разрешения на доступ к данным. |

@@ -9,10 +9,10 @@ ms.date: 03/04/2021
 ms.author: albecker1
 ms.custom: include file
 ms.openlocfilehash: 3035b5d2803ff91e84bc6b47a99963185f9195d3
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102623229"
 ---
 ## <a name="disk-level-bursting"></a>Разбивка на дисковый уровень
@@ -27,7 +27,7 @@ ms.locfileid: "102623229"
 
 [!INCLUDE [managed-disk-bursting-regions-limitations](managed-disk-bursting-regions-limitations.md)]
 
-#### <a name="regional-availability"></a>Доступность по регионам
+#### <a name="regional-availability"></a>Доступность в регионах
 
 [!INCLUDE [managed-disk-bursting-availability](managed-disk-bursting-availability.md)]
 

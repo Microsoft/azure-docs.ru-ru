@@ -12,10 +12,10 @@ ms.date: 10/13/2020
 ms.author: v-demjoh
 keywords: Распознавание намерений
 ms.openlocfilehash: 215b25e440b8cad76e0656e47d32b184edf4ac66
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95018707"
 ---
 # <a name="what-is-intent-recognition"></a>Что такое распознавание намерения?
@@ -31,11 +31,11 @@ ms.locfileid: "95018707"
 * Распознавание речи интегрировано с пакетом SDK. Вы можете использовать ключ LUIS со службой распознавания речи.
 * Распознавание намерений с помощью речевого пакета SDK [предлагается в подмножестве регионов, ПОДДЕРЖИВАЕМЫХ Luis](./regions.md#intent-recognition).
 
-## <a name="get-started"></a>Приступая к работе
+## <a name="get-started"></a>Начало работы
 
 Чтобы приступить к распознаванию намерения, ознакомьтесь с [кратким](quickstarts/intent-recognition.md) руководством.
 
-## <a name="sample-code"></a>Образец кода
+## <a name="sample-code"></a>Пример кода
 
 Пример кода для распознавания намерений:
 

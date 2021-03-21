@@ -10,10 +10,10 @@ services: azure-maps
 manager: cpendle
 zone_pivot_groups: azure-maps-android
 ms.openlocfilehash: 6a920dc222cae4aedd77b667644de317637bbb69
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102047508"
 ---
 # <a name="add-a-tile-layer-to-a-map-android-sdk"></a>Добавление мозаичного слоя на карту (пакет SDK для Android)
@@ -83,7 +83,7 @@ map.layers.add(layer, "labels")
 
 ![Схема Android, отображающая мозаичный слой](media/how-to-add-tile-layer-android-map/xyz-tile-layer-android.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о способах наложения изображений на карте см. в следующей статье.
 

@@ -14,10 +14,10 @@ ms.author: hirsin
 ms.reviewer: hirsin
 ms.custom: aaddev, identityplatformtop40
 ms.openlocfilehash: aeed031025b9c494b35886861c273e2a7f9d2ac4
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101653734"
 ---
 # <a name="microsoft-identity-platform-and-oauth-20-authorization-code-flow"></a>Поток кода авторизации OAuth 2.0 и платформа удостоверений Майкрософт
@@ -328,7 +328,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 > Попытайтесь выполнить этот запрос в Postman. (Не забудьте заменить `refresh_token`.) [![Попробуйте выполнить этот запрос в Postman](./media/v2-oauth2-auth-code-flow/runInPostman.png)](https://app.getpostman.com/run-collection/f77994d794bab767596d).
 >
 
-| Параметр     | Тип           | Описание        |
+| Параметр     | Type           | Описание        |
 |---------------|----------------|--------------------|
 | `tenant`        | обязательно     | Значение `{tenant}` в пути запроса можно использовать для того, чтобы контролировать, кто может входить в приложение. Допустимые значения: `common`, `organizations`, `consumers`, а также идентификаторы клиента. Дополнительные сведения см. в [описании протоколов](active-directory-v2-protocols.md#endpoints).   |
 | `client_id`     | обязательно    | **Идентификатор приложения (клиента)** , назначенный вашему приложению функцией [Регистрация приложений портала Azure](https://go.microsoft.com/fwlink/?linkid=2083908). |

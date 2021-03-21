@@ -8,10 +8,10 @@ ms.date: 03/09/2021
 author: keferna
 ms.author: keferna
 ms.openlocfilehash: 58e55527c84db0c368e676f2bf1314dca32e78db
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102631058"
 ---
 # <a name="your-commercial-marketplace-benefits"></a>Преимущества коммерческой платформы

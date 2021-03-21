@@ -8,10 +8,10 @@ ms.date: 07/02/2020
 ms.author: sngun
 ms.reviewer: sngun
 ms.openlocfilehash: 1b47ad27abbe59eceabd15d091f88f4659d8dad6
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102486392"
 ---
 # <a name="global-data-distribution-with-azure-cosmos-db---under-the-hood"></a>Глобальное распределение данных в Azure Cosmos DB — взгляд изнутри

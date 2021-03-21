@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 06/30/2020
 ms.custom: devx-track-js, devx-track-csharp
 ms.openlocfilehash: 54d3e53b71b5f63da84e41a752bbbb6fce65c045
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100579576"
 ---
 # <a name="data-collection-retention-and-storage-in-application-insights"></a>Сбор и хранение данных в Application Insights
@@ -178,7 +178,7 @@ services.AddSingleton(typeof(ITelemetryChannel), new ServerTelemetryChannel () {
 
 Префикс папки `appInsights-node` можно перевести в ручной режим, изменив значение времени выполнения статической переменной `Sender.TEMPDIR_PREFIX` в [Sender.ts](https://github.com/Microsoft/ApplicationInsights-node.js/blob/7a1ecb91da5ea0febf5ceab13d6a4bf01a63933d/Library/Sender.ts#L384).
 
-### <a name="javascript-browser"></a>JavaScript (браузер)
+### <a name="javascript-browser"></a>JavaScript (для браузера)
 
 [Хранилище сеансов HTML5](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) используется для сохранения данных. Используются два отдельных буфера: `AI_buffer` и `AI_sent_buffer` . Данные телеметрии, которые находятся в пакете и ожидают отправки, хранятся в `AI_buffer` . Данные телеметрии, которые были только что отправлены, помещаются в `AI_sent_buffer` , пока сервер приема не ответит, что он успешно получен. Когда данные телеметрии успешно получены, они удаляются из всех буферов. В случае временных сбоев (например, если пользователь теряет подключение к сети), данные телеметрии остаются в `AI_buffer` до тех пор, пока она не будет успешно получена или сервер приема не ответит, что данные телеметрии недопустимы (например, неправильная схема или слишком старая).
 
@@ -260,9 +260,9 @@ openssl s_client -connect bing.com:443 -tls1_2
 | [Добавление пакета SDK для JavaScript на веб-страницу][client] |ClientContext <br/>Выводимые<br/>Страница<br/>ClientPerf<br/>Ajax |
 | [Определение свойств по умолчанию][apiproperties] |**Свойства** всех стандартных и настраиваемых событий |
 | [Вызов TrackMetric][api] |Числовые значения<br/>**Свойства** |
-| [Вызов Track*][api] |Имя события.<br/>**Свойства** |
+| [Вызов Track*][api] |Имя события<br/>**Свойства** |
 | [Вызов TrackException][api] |**Исключения**<br/>Дамп стека<br/>**Свойства** |
-| Пакету SDK не может собрать данные. Пример. <br/> не удается получить доступ к счетчикам производительности;<br/> порождается исключение в инициализаторе телеметрии. |Диагностика SDK |
+| Пакету SDK не может собрать данные. Пример: <br/> не удается получить доступ к счетчикам производительности;<br/> порождается исключение в инициализаторе телеметрии. |Диагностика SDK |
 
 Сведения о [пакетах SDK для других платформ][platforms] можно получить в соответствующей документации.
 
@@ -295,7 +295,7 @@ openssl s_client -connect bing.com:443 -tls1_2
 > [!NOTE]
 > IP-адрес клиента используется для определения географического расположения, но сейчас данные об IP-адресах больше не сохраняются по умолчанию, а в соответствующее поле записываются нули. Дополнительные сведения об обработке персональных данных см. в этой [статье](../logs/personal-data-mgmt.md#application-data). Если необходимо сохранить данные IP-адреса, в [статье о коллекции IP-адресов](./ip-collection.md) мы пошаговым руководство по Вашим параметрам.
 
-## <a name="credits"></a>Благодарности
+## <a name="credits"></a>Деньги на счете
 Этот продукт включает в себя GeoLite2 данные, созданные Максминд, доступные в [https://www.maxmind.com](https://www.maxmind.com) .
 
 

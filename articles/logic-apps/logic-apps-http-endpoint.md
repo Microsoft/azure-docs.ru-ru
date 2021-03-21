@@ -7,10 +7,10 @@ ms.reviewer: jonfan, logicappspm
 ms.topic: article
 ms.date: 11/19/2020
 ms.openlocfilehash: b345168dad63b1846d46c12721587eaffb5f887e
-ms.sourcegitcommit: f311f112c9ca711d88a096bed43040fcdad24433
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94981210"
 ---
 # <a name="call-trigger-or-nest-logic-apps-by-using-https-endpoints-in-azure-logic-apps"></a>Вызов, активация или вложение приложений логики с помощью конечных точек HTTPS в Azure Logic Apps
@@ -94,7 +94,7 @@ ms.locfileid: "94981210"
 
       Теперь в поле **схема JSON текста запроса** отображается созданная схема.
 
-1. Сохраните приложение логики.
+1. Сохраните приложение логики
 
    В поле **URL-адрес HTTP POST** теперь отображается созданный URL-адрес обратного вызова, который другие службы могут использовать для вызова и активации приложения логики. Этот URL-адрес включает параметры запроса, указывающие ключ подписанного URL-адреса (SAS), который используется для проверки подлинности.
 
@@ -245,7 +245,7 @@ ms.locfileid: "94981210"
 
       ![Пример текста ответа с параметром](./media/logic-apps-http-endpoint/relative-url-with-parameter.png)
 
-1. Сохраните приложение логики.
+1. Сохраните приложение логики
 
    В триггере запроса URL-адрес обратного вызова обновляется и теперь включает относительный путь, например:
 
@@ -403,7 +403,7 @@ ms.locfileid: "94981210"
 * Настройка доменов управления API в [портал Azure](https://portal.azure.com/)
 * настройка политики для проверки базовой проверки подлинности.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Получение и реагирование на входящие вызовы HTTPS с помощью Azure Logic Apps](../connectors/connectors-native-reqres.md)
 * [Безопасный доступ и данные в Azure Logic Apps — доступ для входящих вызовов триггеров на основе запросов](../logic-apps/logic-apps-securing-a-logic-app.md#secure-inbound-requests)

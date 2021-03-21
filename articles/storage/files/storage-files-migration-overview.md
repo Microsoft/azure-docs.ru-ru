@@ -8,10 +8,10 @@ ms.date: 3/18/2020
 ms.author: fauhse
 ms.subservice: files
 ms.openlocfilehash: 27056f39885949d52c9fcc0d1472033cfc8f9aa0
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102554876"
 ---
 # <a name="migrate-to-azure-file-shares"></a>Переход на общие папки Azure
@@ -114,10 +114,10 @@ Azure имеет несколько доступных типов облачно
 
 В следующей таблице приведены средства Майкрософт и их текущее пригодность для файловых ресурсов Azure.
 
-| Рекомендованное | Средство | Поддержка файловых ресурсов Azure | Сохранение точности файла |
+| Рекомендуемая | Инструмент | Поддержка файловых ресурсов Azure | Сохранение точности файла |
 | :-: | :-- | :---- | :---- |
 |![Да, рекомендуется](media/storage-files-migration-overview/circle-green-checkmark.png)| RoboCopy | Поддерживается. Файловые ресурсы Azure можно подключить как сетевые диски. | Полная точность. * |
-|![Да, рекомендуется](media/storage-files-migration-overview/circle-green-checkmark.png)| Служба синхронизации файлов Azure | Встроенная интегрирована в файловые ресурсы Azure. | Полная точность. * |
+|![Да, рекомендуется](media/storage-files-migration-overview/circle-green-checkmark.png)| Синхронизация файлов Azure | Встроенная интегрирована в файловые ресурсы Azure. | Полная точность. * |
 |![Да, рекомендуется](media/storage-files-migration-overview/circle-green-checkmark.png)| Служба миграции хранилища | Непрямое поддержка. Файловые ресурсы Azure можно подключить как сетевые диски на целевых серверах SMS. | Полная точность. * |
 |![Да, рекомендуется](media/storage-files-migration-overview/circle-green-checkmark.png)| AzCopy </br>Версия 10,6 | Поддерживается. | Не поддерживает копию корневого списка ACL исходного кода, в противном случае — полную точность. * </br>[Узнайте, как использовать AzCopy с файловыми ресурсами Azure](../common/storage-use-azcopy-files.md) |
 |![Да, рекомендуется](media/storage-files-migration-overview/circle-green-checkmark.png)| Data Box | Поддерживается. | Датабокс полностью поддерживает метаданные. |

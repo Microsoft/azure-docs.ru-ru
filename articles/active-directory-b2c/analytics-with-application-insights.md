@@ -13,10 +13,10 @@ ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
 ms.openlocfilehash: 92da0b12a3119b048866eef5b18f658916595294
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101645931"
 ---
 # <a name="track-user-behavior-in-azure-ad-b2c-by-using-application-insights"></a>Мониторинг поведения пользователей в Azure AD B2C с помощью Application Insights
@@ -49,7 +49,7 @@ ms.locfileid: "101645931"
 - Для записи сеанса пользователя можно использовать идентификатор корреляции для унификации событий.
 - Вызывайте Application Insights технический профиль непосредственно из [пути взаимодействия пользователя](userjourneys.md) или из [ветви](subjourneys.md). Не используйте Application Insights технический профиль в качестве [технического профиля проверки](validation-technical-profile.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [active-directory-b2c-customization-prerequisites-custom-policy](../../includes/active-directory-b2c-customization-prerequisites-custom-policy.md)]
 

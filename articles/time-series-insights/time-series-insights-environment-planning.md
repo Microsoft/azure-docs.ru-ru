@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 09/29/2020
 ms.custom: seodec18
 ms.openlocfilehash: 5e0f1ea42aa2ba888b89dd652d3397a3a2163a3e
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95016213"
 ---
 # <a name="plan-your-azure-time-series-insights-gen1-environment"></a>Планирование среды Gen1 "аналитика временных рядов Azure"
@@ -63,7 +63,7 @@ ms.locfileid: "95016213"
 > [!IMPORTANT]
 > В среде Gen1 "аналитика временных рядов Azure" можно настроить не более 400 дней хранения данных.
 
-### <a name="configure-data-retention"></a>Настройка срока хранения данных
+### <a name="configure-data-retention"></a>Настройка хранения данных
 
 1. Выберите нужную среду Аналитики временных рядов на [портале Azure](https://portal.azure.com).
 

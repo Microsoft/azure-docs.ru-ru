@@ -4,10 +4,10 @@ description: Используйте операцию копирования в �
 ms.topic: conceptual
 ms.date: 04/17/2020
 ms.openlocfilehash: 5ae20ed9ec3fdb3b76adbd370f5ba22f9386d613
-ms.sourcegitcommit: 80c1056113a9d65b6db69c06ca79fa531b9e3a00
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96905950"
 ---
 # <a name="output-iteration-in-arm-templates"></a>Выходная итерация в шаблонах ARM

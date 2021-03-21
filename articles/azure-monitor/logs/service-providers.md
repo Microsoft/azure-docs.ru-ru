@@ -6,10 +6,10 @@ author: MeirMen
 ms.author: meirm
 ms.date: 02/03/2020
 ms.openlocfilehash: 5f1421da10c4748dd78e4c6790568285fa646979
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102047117"
 ---
 # <a name="azure-monitor-logs-for-service-providers"></a>Журналы Azure Monitor для поставщиков услуг
