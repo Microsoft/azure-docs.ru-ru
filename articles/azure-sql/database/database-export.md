@@ -12,10 +12,10 @@ ms.reviewer: ''
 ms.date: 01/11/2021
 ms.topic: how-to
 ms.openlocfilehash: 866500e9cd9e3fe6aac6a5bfded0dbb21ab137fc
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102614281"
 ---
 # <a name="export-to-a-bacpac-file---azure-sql-database-and-azure-sql-managed-instance"></a>Экспорт в файл BACPAC — база данных SQL Azure и Azure SQL Управляемый экземпляр
@@ -55,7 +55,7 @@ ms.locfileid: "102614281"
 
     ![Экспорт базы данных](./media/database-export/database-export2.png)
 
-3. Нажмите кнопку **ОК**.
+3. Нажмите кнопку **OK**.
 
 4. Чтобы отслеживать ход выполнения операции экспорта, откройте страницу для сервера, содержащего экспортируемую базу данных. В разделе **Параметры** выберите **Журнал импорта и экспорта**.
 
@@ -112,7 +112,7 @@ $exportStatus
 Stop-AzSqlDatabaseActivity -ResourceGroupName $ResourceGroupName -ServerName $ServerName -DatabaseName $DatabaseName -OperationId $Operation.OperationId
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Дополнительные сведения о долгосрочном хранении резервных копий отдельной базы данных и баз данных в составе пула в качестве альтернативы экспорту базы данных для архивации см. в статье [долгосрочное хранение резервных копий](long-term-retention-overview.md). Задания агентов SQL можно использовать для планирования [резервных копий только для копирования базы данных](/sql/relational-databases/backup-restore/copy-only-backups-sql-server) как альтернативу долгосрочному хранению архивных копий.
 - Сведения о миграции из SQL Server в Базу данных SQL Azure с использованием BACPAC-файлов см. в [блоге группы консультирования клиентов SQL Server](/archive/blogs/sqlcat/migrating-from-sql-server-to-azure-sql-database-using-bacpac-files).

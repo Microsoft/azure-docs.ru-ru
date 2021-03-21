@@ -15,12 +15,12 @@ ms.date: 02/12/2021
 ms.author: kenwith
 ms.custom: seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a21b6f5e7d2976bda0efd37577b7cca90469aea
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 6ed101282a69120162d6e3b526693c0a83df45b6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101686450"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104607115"
 ---
 # <a name="configure-azure-active-directory-sign-in-behavior-for-an-application-by-using-a-home-realm-discovery-policy"></a>Настройка поведения при входе в Azure Active Directory для приложения с помощью политики обнаружения домашней области
 
@@ -91,7 +91,7 @@ ms.locfileid: "101686450"
 
 ### <a name="home-realm-discovery-policy-to-prevent-auto-acceleration"></a>Политика обнаружения домашней области для предотвращения автоматического ускорения
 
-Некоторые приложения Майкрософт и SaaS автоматически включают domain_hints (например, `https://outlook.com/contoso.com` выдает запрос на вход с `&domain_hint=contoso.com` добавлением), что может привести к нарушению работы управляемых учетных данных, таких как Fido.  Вы можете использовать [политику обнаружения домашней области](https://docs.microsoft.com/graph/api/resources/homeRealmDiscoveryPolicy) , чтобы игнорировать указания домена для определенных приложений или для определенных доменов во время развертывания управляемых учетных данных.  
+Некоторые приложения Майкрософт и SaaS автоматически включают domain_hints (например, `https://outlook.com/contoso.com` выдает запрос на вход с `&domain_hint=contoso.com` добавлением), что может привести к нарушению работы управляемых учетных данных, таких как Fido.  Вы можете использовать [политику обнаружения домашней области](/graph/api/resources/homeRealmDiscoveryPolicy) , чтобы игнорировать указания домена для определенных приложений или для определенных доменов во время развертывания управляемых учетных данных.  
 
 ## <a name="enable-direct-ropc-authentication-of-federated-users-for-legacy-applications"></a>Включение прямой проверки подлинности РОПК для федеративных пользователей для устаревших приложений
 
@@ -129,7 +129,7 @@ ms.locfileid: "101686450"
    }
 ```
 
-Тип политики — "[HomeRealmDiscoveryPolicy](https://docs.microsoft.com/graph/api/resources/homeRealmDiscoveryPolicy)".
+Тип политики — "[HomeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy)".
 
 Параметр **AccelerateToFederatedDomain** — необязательный. Если параметр **AccelerateToFederatedDomain** имеет значение False (Ложь), то политика не влияет на автоматическое ускорение входа. Если параметр **AccelerateToFederatedDomain** имеет значение True (Истина), и в клиенте имеется только один проверенный федеративный домен, то система будет сразу переводить пользователей на федеративный поставщик удостоверений для входа в систему. Если этот параметр имеет значение True (Истина), и в клиенте имеется несколько проверенных доменов, необходимо задать значение для параметра **PreferredDomain**.
 

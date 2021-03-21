@@ -7,12 +7,12 @@ ms.service: vpn-gateway
 ms.topic: troubleshooting
 ms.date: 09/16/2019
 ms.author: genli
-ms.openlocfilehash: 674b8ab8266921a4eef8bbf212f3c556b1e587d7
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.openlocfilehash: 4454afbe543f374ebd745af7cd59be1ab745036f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94658355"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104670893"
 ---
 # <a name="troubleshooting-an-azure-site-to-site-vpn-connection-cannot-connect-and-stops-working"></a>Устранение проблемы подключения VPN типа "сеть — сеть" Azure
 
@@ -28,7 +28,7 @@ ms.locfileid: "94658355"
 
 Проверьте тип VPN-шлюза Azure.
 
-1. Перейдите на [портал Azure](https://portal.azure.com).
+1. Перейдите на [портал Microsoft Azure](https://portal.azure.com).
 
 2. Просмотрите тип шлюза на странице **обзора** VPN-шлюза.
     
@@ -110,5 +110,5 @@ Get-AzureVNetGatewayKey -VNetName -LocalNetworkSiteName
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
--   [Настройка подключения типа "сеть — сеть" к виртуальной сети](vpn-gateway-howto-site-to-site-resource-manager-portal.md)
+-   [Настройка подключения типа "сеть — сеть" к виртуальной сети](./tutorial-site-to-site-portal.md)
 -   [Настройка политики IPsec/IKE для VPN-подключений типа "сеть — сеть" или "виртуальная сеть — виртуальная сеть"](vpn-gateway-ipsecikepolicy-rm-powershell.md)

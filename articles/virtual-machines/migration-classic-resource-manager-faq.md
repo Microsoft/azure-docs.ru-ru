@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 02/06/2020
 ms.author: tagore
 ms.openlocfilehash: 034f09a8b616450e472dcc11427191f187cf489f
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102615165"
 ---
 # <a name="frequently-asked-questions-about-classic-to-azure-resource-manager-migration"></a>Часто задаваемые вопросы о миграции из классической модели в модель Azure Resource Manager
@@ -123,7 +123,7 @@ ms.locfileid: "102615165"
 Это сообщение отображается в том случае, когда у виртуальной машины нет исходящего подключения к Интернету. Агент виртуальной машины использует исходящее подключение для обращения к учетной записи хранения Azure, чтобы обновлять состояние агента каждые пять минут.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Обзор поддерживаемого платформой переноса ресурсов IaaS из классической модели в модель Azure Resource Manager](./migration-classic-resource-manager-overview.md)
 * [Техническое руководство по поддерживаемому платформой переносу из классической модели в модель Azure Resource Manager](migration-classic-resource-manager-deep-dive.md)

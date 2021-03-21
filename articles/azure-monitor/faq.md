@@ -6,12 +6,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 10/08/2020
-ms.openlocfilehash: 5b9b0c6a0fe08ccff9da59539b926270cd0e1d44
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 29cc0a3201b7c4ce1c685029de2a40f115b23e82
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102032860"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104606962"
 ---
 # <a name="azure-monitor-frequently-asked-questions"></a>Azure Monitor: вопросы и ответы
 
@@ -606,7 +606,7 @@ WireData
 [Опенценсус](https://opencensus.io/) — это основы [опентелеметри](https://opentelemetry.io/). Корпорация Майкрософт помогла объединить [опентраЦинг](https://opentracing.io/) и опенценсус, чтобы создать опентелеметри, единый стандарт наблюдения для мира. Текущий [Рабочий пакет Python, рекомендуемый](app/opencensus-python.md) для Azure Monitor, основан на опенценсус, но в конечном итоге все пакеты SDK Azure Monitor будут основаны на опентелеметри.
 
 
-## <a name="container-insights"></a>Аналитика контейнера
+## <a name="container-insights"></a>Аналитика контейнеров
 
 ### <a name="what-does-other-processes-represent-under-the-node-view"></a>Для чего нужен параметр *Другие процессы* в представлении узла?
 
@@ -705,6 +705,10 @@ ContainerLog
 
 Сведения об обновлении агента, см. в статье [Как управлять агентом Azure Monitor для контейнеров](containers/container-insights-manage-agent.md).
 
+### <a name="why-are-log-lines-larger-than-16kb-split-into-multiple-records-in-log-analytics"></a>Почему строки журнала, превышающие 16 КБ, разбиваются на несколько записей Log Analytics?
+
+Агент использует [драйвер регистрации файлов DOCKER JSON](https://docs.docker.com/config/containers/logging/json-file/) для записи stdout и stderr контейнеров. Этот драйвер ведения журнала разделяет строки журнала, [превышающие 16 КБ](https://github.com/moby/moby/pull/22982) , на несколько строк при копировании из stdout или stderr в файл.
+
 ### <a name="how-do-i-enable-multi-line-logging"></a>Как включить многострочное ведение журнала?
 
 В настоящее время контейнерная аналитика не поддерживает многострочное ведение журнала, но Существуют обходные пути. Например, настройте вывод данных из всех служб в формате JSON, и тогда Docker/Moby будут сохранять эти данные в одну строку.
@@ -742,7 +746,7 @@ LogEntry : ({"Hello": "This example has multiple lines:","Docker/Moby": "will no
 В разделе [Требования к брандмауэру в сети](containers/container-insights-onboard.md#network-firewall-requirements) указаны сведения о настройке прокси-сервера и брандмауэра, необходимой для использования контейнерного агента с облаками Azure, Azure для государственных организаций США и Azure для Китая (21Vianet).
 
 
-## <a name="vm-insights"></a>Аналитика ВМ
+## <a name="vm-insights"></a>Аналитика виртуальных машин
 
 ### <a name="can-i-onboard-to-an-existing-workspace"></a>Можно ли подключиться к существующей рабочей области?
 Если виртуальные машины уже подключены к рабочей области Log Analytics, вы можете продолжать использовать эту рабочую область при подключении к службе "аналитика ВМ", если она находится в одном из [поддерживаемых регионов](vm/vminsights-configure-workspace.md#supported-regions).
@@ -821,6 +825,29 @@ LogEntry : ({"Hello": "This example has multiple lines:","Docker/Moby": "will no
 
 В этом случае отобразится предложение **Попробовать сейчас** при открытии виртуальной машины и выборе функции **Аналитические сведения** в области слева, даже если эта функция ранее была установлена на виртуальной машине.  Однако в случае, если эта виртуальная машина не подключена к службе "аналитика ВИРТУАЛЬНЫХ машин", вы не получите запрос с параметрами. 
 
+## <a name="sql-insights-preview"></a>SQL Insights (Предварительная версия)
+
+### <a name="what-versions-of-sql-server-are-supported"></a>Какие версии SQL Server поддерживаются?
+Поддерживаемые версии SQL см. в разделе [Поддерживаемые версии](insights/sql-insights-overview.md#supported-versions) .
+
+### <a name="what-sql-resource-types-are-supported"></a>Какие типы ресурсов SQL поддерживаются?
+
+- База данных SQL Azure. Только одна база данных, а не базы данных в Эластичный пул.
+- Управляемый экземпляр SQL Azure 
+- Виртуальные машины SQL Azure ([Windows](../azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview.md#get-started-with-sql-server-vms), [Linux](../azure-sql/virtual-machines/linux/sql-server-on-linux-vm-what-is-iaas-overview.md#create)) и виртуальные машины azure, на которых SQL Server установлен.
+
+### <a name="what-operating-systems-for-the-machine-running-sql-server-are-supported"></a>Какие операционные системы для компьютера, на котором работает SQL Server, поддерживаются?
+Любая ОС, поддерживающая работающую поддерживаемую версию SQL.
+
+### <a name="what-operating-system-for-the-remote-monitoring-server-are-supported"></a>Какая операционная система для сервера удаленного мониторинга поддерживается?
+
+В настоящее время Ubuntu 18,04 является единственной поддерживаемой операционной системой.
+
+### <a name="where-will-the-monitoring-data-be-stored-in-log-analytics"></a>Где данные мониторинга будут храниться в Log Analytics 
+Все данные мониторинга хранятся в таблице **инсигхтсметрикс** . **Исходный** столбец имеет значение *Solutions.AZM.MS/Telegraf/SqlInsights*. Столбец **пространства имен** содержит значения, начинающиеся с *sqlserver_*.
+
+### <a name="how-often-is-data-collected"></a>Как часто собираются данные? 
+Сведения о частоте сбора различных данных см. в разделе [данные, собираемые SQL Insights](../insights/../azure-monitor/insights/sql-insights-overview.md#data-collected-by-sql-insights) .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Если вы не нашли ответа на свой вопрос в этой статье, поищите информацию на следующих форумах.

@@ -7,10 +7,10 @@ ms.service: media-services
 ms.topic: how-to
 ms.date: 08/31/2020
 ms.openlocfilehash: 69930e06e2ce7f2679feec74ca8ccbc93bdb8d30
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101721129"
 ---
 # <a name="how-to-create-an-overlay-with-media-encoder-standard"></a>Создание наложения с помощью Media Encoder Standard
@@ -20,7 +20,7 @@ ms.locfileid: "101721129"
 Media Encoder Standard позволяет наложить изображение, звуковой файл или другое видео на другое видео. Входные данные должны указывать ровно один файл. Можно указать файл изображения в формате JPG, PNG, GIF или BMP или звуковой файл (например, файл WAV, MP3, WMA или M4A) или видеофайл.
 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Собирайте сведения об учетной записи, необходимые для настройки *appsettings.jsдля* файла в примере. Если вы не знаете, как это сделать, см. раздел [Краткое руководство по регистрации приложения на платформе Microsoft Identity](../../active-directory/develop/quickstart-register-app.md). В *appsettings.jsдля* файла ожидались следующие значения.
 

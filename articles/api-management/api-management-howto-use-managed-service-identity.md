@@ -12,10 +12,10 @@ ms.topic: article
 ms.date: 03/09/2021
 ms.author: apimpm
 ms.openlocfilehash: 98237efae89e7d88dd23cb7e8fc9f7e9f05bca70
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102521549"
 ---
 # <a name="use-managed-identities-in-azure-api-management"></a>Использование управляемых удостоверений в службе управления API Azure
@@ -273,7 +273,7 @@ ms.locfileid: "102521549"
 |Служба Azure | Ссылка|
 |---|---|
 |Хранилище Azure | [Доверенный доступ к Azure — хранилище](../storage/common/storage-network-security.md?tabs=azure-portal#trusted-access-based-on-system-assigned-managed-identity)|
-|Служебная шина Azure | [Доверенный доступ к Azure-Service-Bus](../service-bus-messaging/service-bus-ip-filtering.md#trusted-microsoft-services)|
+|Azure Service Bus | [Доверенный доступ к Azure-Service-Bus](../service-bus-messaging/service-bus-ip-filtering.md#trusted-microsoft-services)|
 |концентратору событий Azure | [Надежные — доступ к Azure-Event-концентратору](../event-hubs/event-hubs-ip-filtering.md#trusted-microsoft-services)|
 
 

@@ -6,10 +6,10 @@ ms.topic: reference
 ms.date: 02/21/2020
 ms.author: cshoe
 ms.openlocfilehash: 5c9309834b407ee56d29e38afd965ac947fc8a4f
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102612292"
 ---
 # <a name="azure-iot-hub-trigger-for-azure-functions"></a>Триггер центра Интернета вещей Azure для функций Azure
@@ -27,6 +27,6 @@ ms.locfileid: "102612292"
 
 [host.js](functions-host-json.md#eventhub) файла содержит параметры, управляющие поведением триггера концентратора событий. Дополнительные сведения о доступных параметрах см. в разделе [host.jsпо параметрам](functions-bindings-event-iot.md#hostjson-settings) .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Запись событий в поток событий (Выходная привязка)](./functions-bindings-event-iot-output.md)

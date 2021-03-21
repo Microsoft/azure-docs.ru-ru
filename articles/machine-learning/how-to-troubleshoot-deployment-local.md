@@ -12,10 +12,10 @@ ms.date: 11/25/2020
 ms.topic: troubleshooting
 ms.custom: devx-track-python, deploy, contperf-fy21q2
 ms.openlocfilehash: 69ac47296cb4624de6cdf05ddb3e72973751f631
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102519628"
 ---
 # <a name="troubleshooting-with-a-local-model-deployment"></a>Устранение неполадок при развертывании локальной модели

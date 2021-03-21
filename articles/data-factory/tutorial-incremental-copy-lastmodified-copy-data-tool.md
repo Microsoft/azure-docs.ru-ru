@@ -7,12 +7,12 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 02/18/2021
-ms.openlocfilehash: fda76fd16787c01b9fc35ef63473be215a2c126d
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 25e39d3fc9c56a282714bafb630fee65421fb5ac
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101740058"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104606673"
 ---
 # <a name="incrementally-copy-new-and-changed-files-based-on-lastmodifieddate-by-using-the-copy-data-tool"></a>Добавочное копирование новых и измененных файлов на основе LastModifiedDate с помощью средства Копирование данных
 
@@ -55,7 +55,7 @@ ms.locfileid: "101740058"
 
    Имя фабрики данных должно быть глобально уникальным. Может появиться следующее сообщение об ошибке:
 
-   ![Сообщение об ошибке "имя недоступно"](./media/doc-common-process/name-not-available-error.png)
+    :::image type="content" source="./media/doc-common-process/name-not-available-error.png" alt-text="Новое сообщение об ошибке фабрики данных для повторяющегося имени.":::
 
    Если вы увидите следующую ошибку касательно значения имени, введите другое имя фабрики данных. Например,**_ваше_имя_** **ADFTutorialDataFactory**. Правила именования артефактов службы "Фабрика данных" см. в [этой](naming-rules.md) статье.
 3. В разделе **Подписка** выберите подписку Azure, в которой вы создадите новую фабрику данных.
@@ -69,11 +69,11 @@ ms.locfileid: "101740058"
 
 5. В качестве **версии** выберите **V2**.
 6. В качестве **расположения** выберите расположение фабрики данных. В списке отображаются только поддерживаемые расположения. Хранилища данных (например, служба хранилища Azure и база данных SQL Azure) и расчеты (например, Azure HDInsight), используемые фабрикой данных, могут находиться в других расположениях и регионах.
-8. Нажмите кнопку **создания**.
+8. Нажмите кнопку **Создать**.
 9. После создания фабрики данных появится домашняя страница фабрика данных.
 10. Чтобы открыть пользовательский интерфейс фабрики данных Azure на отдельной вкладке, выберите плитку " **автор & монитор** ":
 
-    ![Домашняя страница фабрики данных](./media/doc-common-process/data-factory-home-page.png)
+    :::image type="content" source="./media/doc-common-process/data-factory-home-page.png" alt-text="Домашняя страница фабрики данных Azure с плиткой &quot;автор & монитор&quot;.":::
 
 ## <a name="use-the-copy-data-tool-to-create-a-pipeline"></a>Создание конвейера с помощью средства копирования данных
 

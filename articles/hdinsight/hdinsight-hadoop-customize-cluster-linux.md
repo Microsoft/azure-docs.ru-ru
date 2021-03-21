@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: seoapr2020, devx-track-azurecli, contperf-fy21q2
 ms.date: 03/09/2021
 ms.openlocfilehash: 00ed8c26bbafeb94b1481e6157a242dad7ed84c6
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102610269"
 ---
 # <a name="customize-azure-hdinsight-clusters-by-using-script-actions"></a>Настройка кластеров Azure HDInsight с помощью действий сценариев
@@ -147,7 +147,7 @@ Status            : Succeeded
 
     В приведенной ниже таблице описываются элементы формы.
 
-    | Свойство | Значение |
+    | Свойство. | Значение |
     | --- | --- |
     | Выберите скрипт | Чтобы использовать собственный скрипт, выберите __Настраиваемый__. В противном случае выберите один из предоставленных скриптов. |
     | Имя |Укажите имя для действия сценария. |
@@ -220,7 +220,7 @@ Status            : Succeeded
 
     В приведенной ниже таблице описываются элементы формы.
 
-    | Свойство | Значение |
+    | Свойство. | Значение |
     | --- | --- |
     | Выберите скрипт | Чтобы использовать собственный скрипт, выберите __Пользовательский__. В противном случае выберите предоставленный скрипт. |
     | Имя |Укажите имя для действия сценария. |
@@ -299,7 +299,7 @@ NodeTypes       : {HeadNode, WorkerNode}
 
 ### <a name="azure-powershell"></a>Azure PowerShell
 
-| командлет | Функция |
+| командлет | Компонент |
 | --- | --- |
 | `Get-AzHDInsightPersistedScriptAction` |Получение сведений о действиях сохраняемого сценария Этот командлет не отменяет действия, выполняемые сценарием, он удаляет только флаг PERSISTED.|
 | `Get-AzHDInsightScriptActionHistory` |Получение журнала действий сценариев, применяемых в кластере, или сведений о конкретном сценарии. |
@@ -312,7 +312,7 @@ NodeTypes       : {HeadNode, WorkerNode}
 
 ### <a name="azure-cli"></a>Azure CLI
 
-| Get-Help | Описание |
+| Команда | Описание |
 | --- | --- |
 | [`az hdinsight script-action delete`](/cli/azure/hdinsight/script-action#az-hdinsight-script-action-delete) |Удаляет указанное действие сохраненного скрипта в кластере. Эта команда не отменяет действия, выполненные сценарием, но удаляет только флаг PERSISTED.|
 |[`az hdinsight script-action execute`](/cli/azure/hdinsight/script-action#az-hdinsight-script-action-execute)|Для выполнения действий скриптов в указанном кластере HDInsight.|
@@ -328,7 +328,7 @@ NodeTypes       : {HeadNode, WorkerNode}
 > [!NOTE]  
 > В этом примере также показано, как установить приложение HDInsight с помощью пакета SDK для .NET.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Разработка действий сценариев с помощью HDInsight](hdinsight-hadoop-script-actions-linux.md)
 * [Добавление дополнительных учетных записей хранения Azure в HDInsight](hdinsight-hadoop-add-storage.md)

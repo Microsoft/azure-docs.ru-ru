@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 ms.author: normesta
 ms.openlocfilehash: 9fa7f586db5a32640c16db5802b56d6481e8889d
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102439295"
 ---
 # <a name="access-control-model-in-azure-data-lake-storage-gen2"></a>Модель контроля доступа в Azure Data Lake Storage 2-го поколения

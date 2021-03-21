@@ -8,10 +8,10 @@ author: emuench
 ms.author: navits
 ms.date: 07/17/2020
 ms.openlocfilehash: 9be90cdac742a581c6346f923f44e769c8a70f76
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102613635"
 ---
 # <a name="appsource-dynamics-365-finance-and-operations-functional-validation"></a>AppSource Dynamics 365 Финансы и функциональная проверка операций
@@ -60,7 +60,7 @@ ms.locfileid: "102613635"
     | --- | --- |
     | Основные сведения о пакете | [![Снимок экрана, на котором показано окно "Обзор пакета".](media/dynamics-365-finance-operations/package-overview-45.png)](media/dynamics-365-finance-operations/package-overview.png#lightbox) |
     | <ul><li>Утверждающие решения</li></ul> | [![Экран обзора пакета](media/dynamics-365-finance-operations/solution-approvers-45.png)](media/dynamics-365-finance-operations/solution-approvers.png#lightbox) |
-    | Содержимое пакета<ul><li>Моделирование</li><li>Развертываемый пакет программного обеспечения</li></ul> | [![Первый экран содержимого пакета](media/dynamics-365-finance-operations/package-contents-1-45.png)](media/dynamics-365-finance-operations/package-contents-1.png#lightbox) |
+    | Содержимое пакета<ul><li>Модель</li><li>Развертываемый пакет программного обеспечения</li></ul> | [![Первый экран содержимого пакета](media/dynamics-365-finance-operations/package-contents-1-45.png)](media/dynamics-365-finance-operations/package-contents-1.png#lightbox) |
     | <ul><li>Конфигурация GER</li><li>Резервная копия базы данных</li></ul><br>Артефакты не требуются в разделе **конфигурации GER** . | [![Два экрана содержимого пакета](media/dynamics-365-finance-operations/package-contents-2-45.png)](media/dynamics-365-finance-operations/package-contents-2.png#lightbox) |
     | <ul><li>Модель отчета Power BI</li><li>Артефакт BPM</li></ul><br>Артефакты не требуются в разделе **Power BI** . | [![Фильтр содержимого пакета, три](media/dynamics-365-finance-operations/package-contents-3-45.png)](media/dynamics-365-finance-operations/package-contents-3.png#lightbox) |
     | <ul><li>Обработка пакета данных</li><li>Лицензионное соглашение и политика конфиденциальности решений</li></ul><br>Разделы " **Конфигурация GER** " и " **Power BI модели отчета** " являются необязательными для включения в Финансы и предложения операций. | [![Страница "содержимое пакета" 4](media/dynamics-365-finance-operations/package-contents-4-45.png)](media/dynamics-365-finance-operations/package-contents-4.png#lightbox) |

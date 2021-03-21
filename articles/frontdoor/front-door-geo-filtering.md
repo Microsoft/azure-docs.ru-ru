@@ -14,10 +14,10 @@ ms.date: 09/28/2020
 ms.author: duau
 ms.reviewer: tyao
 ms.openlocfilehash: 33ad17e3024011368c909a89e9164ca06d044bad
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102612088"
 ---
 # <a name="geo-filtering-on-a-domain-for-azure-front-door"></a>Географическая фильтрация в домене для передней дверцы Azure

@@ -12,10 +12,10 @@ ms.date: 06/18/2020
 ms.author: sausin
 ms.custom: references_regions
 ms.openlocfilehash: e046f8cbf6fa0418244f20e9a0c6f75f6da34136
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102434633"
 ---
 # <a name="create-a-voice-assistant-using-custom-commands"></a>Создание голосового помощника с помощью пользовательских команд
@@ -35,7 +35,7 @@ ms.locfileid: "102434633"
 * Юго-Восточная Азия
 * Центральная Индия
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 > [!div class="checklist"]
 > * <a href="https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices" target="_blank">Создание ресурса речи Azure в регионе, поддерживающем пользовательские команды.</a> Список поддерживаемых регионов см. в разделе о **доступности регионов** выше.

@@ -6,10 +6,10 @@ ms.subservice: application-insights
 ms.topic: conceptual
 ms.date: 04/28/2020
 ms.openlocfilehash: 0ce2651d5cfcb1578d78982af109a004aaac11f4
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101719786"
 ---
 # <a name="custom-metric-collection-in-net-and-net-core"></a>Настраиваемая коллекция метрик в .NET и .NET Core

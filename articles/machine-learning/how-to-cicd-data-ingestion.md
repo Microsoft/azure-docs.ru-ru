@@ -13,10 +13,10 @@ manager: davete
 ms.reviewer: larryfr
 ms.date: 06/23/2020
 ms.openlocfilehash: e8a8b952d917db3a7eefd2e0371d41287c5be944
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102612479"
 ---
 # <a name="devops-for-a-data-ingestion-pipeline"></a>DevOps для конвейера приема данных

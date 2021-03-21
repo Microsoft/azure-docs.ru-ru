@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 02/23/2021
 ms.custom: seodec18, has-adal-ref
 ms.openlocfilehash: 88fd575d40cc31f12f052158bda0aed9a5335555
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103009272"
 ---
 # <a name="authentication-and-authorization-for-azure-time-series-insights-api"></a>Проверка подлинности и авторизация для API Azure Time Series Insights
@@ -191,7 +191,7 @@ MSAL можно использовать во многих сценариях п
 | `timeout=<timeout>` | Время ожидания на стороне сервера для выполнения HTTP-запроса. Применяется только к API [получения событий среды](/rest/api/time-series-insights/dataaccess(preview)/query/getavailability) и [получения агрегатов среды](/rest/api/time-series-insights/gen1-query-api#get-environment-aggregates-api). Значение времени ожидания должно быть в формате длительности ISO 8601 (например, `"PT20S"`) и должно находиться в диапазоне `1-30 s`. Значение по умолчанию: `30 s`. | Поколение 1 |
 | `storeType=<storeType>` | Для сред Gen2 с включенным горячим хранилищем запрос можно выполнить либо в, `WarmStore` либо в `ColdStore` . Этот параметр в запросе определяет, в каком хранилище должен выполняться запрос. Если этот параметр не определен, запрос будет выполнен в холодном хранилище. Чтобы запросить теплое хранилище, параметру **storeType** следует присвоить значение `WarmStore`. Если этот параметр не определен, запрос будет выполнен для холодного хранилища. | Поколение 2 |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Пример кода, который вызывает API Gen1 Azure Time Series Insights, считывает [данные Gen1 запросов с помощью C#](./time-series-insights-query-data-csharp.md).
 

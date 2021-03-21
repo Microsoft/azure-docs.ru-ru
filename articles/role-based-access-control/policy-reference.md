@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для Azure RBAC
 description: Здесь приведены встроенные определения политик в Политике Azure для Azure RBAC. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 ms.topic: reference
 author: rolyon
 ms.author: rolyon
 ms.service: role-based-access-control
 ms.custom: subject-policy-reference
-ms.openlocfilehash: b1a265f20ad264e9630a1fccb92c112d32aa1a65
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: 0f598bcbdf590fb7a3f3a433e2b22df942c35c55
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102617547"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104596636"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-rbac"></a>Встроенные определения в Политике Azure для Azure RBAC
 

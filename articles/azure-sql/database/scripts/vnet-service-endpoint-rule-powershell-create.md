@@ -13,10 +13,10 @@ ms.date: 04/17/2019
 ms.custom: sqldbrb=1
 tags: azure-synapse
 ms.openlocfilehash: 76a1d3aaadcbd1b15966a84f5dd2fe876f82c43a
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102177629"
 ---
 # <a name="powershell-create-a-virtual-service-endpoint-and-vnet-rule-for-azure-sql-database"></a>PowerShell: создание конечной точки виртуальной службы и правила виртуальной сети для базы данных SQL Azure

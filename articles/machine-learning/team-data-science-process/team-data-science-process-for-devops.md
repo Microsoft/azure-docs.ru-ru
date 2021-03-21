@@ -12,10 +12,10 @@ ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
 ms.openlocfilehash: ceac1e7b5e8efa7e87ecf6e1f4c9dd8286c87e98
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102614077"
 ---
 # <a name="team-data-science-process-for-developer-operations"></a>Процесс обработки и анализа данных группы для операций разработки
@@ -41,7 +41,7 @@ ms.locfileid: "102614077"
 |  |  | [В этой статье приводятся общие сведения об Azure HDInsight, облачном распределении стека технологий Hadoop. Здесь также рассматривается, что такое кластер Hadoop и когда его использовать.](../../hdinsight/hadoop/apache-hadoop-introduction.md) | Azure HDInsight | Средний уровень | Общие сведения о технологии, знакомство с решениями по работе с данными и с источниками данных NoSQL |
 |  |  | [Это руководство описывает общие сведения о службе заданий Azure Data Lake Analytics](../../data-lake-analytics/data-lake-analytics-overview.md) | Аналитика озера данных Azure | Средний уровень | Общие сведения о технологии, знакомство с решениями по работе с данными и с источниками данных NoSQL |
 |  |  | [В этом обзоре содержатся сведения об Azure Stream Analytics — полностью управляемом модуле обработки событий, который позволяет в режиме реального времени настраивать аналитические вычисления для потоковой передачи данных](../../stream-analytics/stream-analytics-introduction.md) | Azure Stream Analytics | Средний уровень | Общие сведения о технологии, знакомство с решениями по работе с данными, а также с понятиями структурированных и неструктурированных данных |
-|  | Аналитика | [Это руководство содержит обзор доступных Cognitive Services (таких как визуальное распознавание, распознавание текста и поиск) и способов их использования](../../cognitive-services/what-are-cognitive-services.md) | Cognitive Services | Для опытных пользователей | Общие сведения о технологии, знакомство с решениями по работе с данными и разработкой программного обеспечения |
+|  | Аналитика | [Это руководство содержит обзор доступных Cognitive Services (таких как визуальное распознавание, распознавание текста и поиск) и способов их использования](../../cognitive-services/what-are-cognitive-services.md) | Службы Cognitive Services | Для опытных пользователей | Общие сведения о технологии, знакомство с решениями по работе с данными и разработкой программного обеспечения |
 |  |  | [Это справочное руководство содержит общие сведения о платформе Microsoft Bot Framework и информацию по началу работы с ней](/bot-framework/overview-introduction-bot-framework) | Bot Framework | Для опытных пользователей | Общие сведения о технологии, знакомство с решениями по работе с данными |
 |  | Визуализация | [В этом онлайн-курсе для самостоятельного обучения рассматривается система Power BI, в частности создание и публикация отчетов](https://powerbi.microsoft.com/guided-learning/powerbi-learning-0-0-what-is-power-bi/) | Microsoft Power BI | Начальный уровень | Общие сведения о технологии, знакомство с решениями по работе с данными |
 |  | Решения | [На этой странице ресурсов рассматриваются несколько приложений, которые вы можете просмотреть, протестировать и реализовать, чтобы увидеть рабочий процесс от начала и до конца](https://gallery.cortanaintelligence.com/) | Microsoft Azure, Машинное обучение Azure, Cognitive Services, Microsoft R, Azure Когнитивный поиск, Python, фабрика данных Azure, Power BI, база данных Azure Document, Application Insights, Azure SQL DB, Azure синапсе Analytics, Microsoft SQL Server, Azure Data Lake, Cognitive Services, Bot Framework, пакетная служба Azure, | Средний уровень | Общие сведения о технологии, знакомство с решениями по работе с данными |
@@ -65,7 +65,7 @@ ms.locfileid: "102614077"
 |  | Сборка | [В этом курсе рассказывается о включении методик DevOps с помощью сборки Кодеспаце в Visual Studio.](https://mva.microsoft.com/training-courses/enabling-devops-practices-with-visual-studio-online-build-12478?l=ipCj6MuNB_6305094681) | Visual Studio Кодеспаце | Для опытных пользователей | Знание SDLC и разработки программного обеспечения |
 |  |  | [В этом справочном руководстве описывается компиляция и создание с помощью Visual Studio](/previous-versions/visualstudio/visual-studio-2015/ide/compiling-and-building-in-visual-studio) | Visual Studio | Средний уровень | Знание SDLC и разработки программного обеспечения |
 |  |  | [В этом справочном руководстве описывается, как выполнять оркестрацию процессов, например сборку программного обеспечения, с использованием модулей Runbook](/system-center/orchestrator/automate-runbooks) | System Center | Для опытных пользователей | Опыт работы с System Center Orchestrator |
-|  | Тест | [Используйте эту ссылку, чтобы понять, как использовать Visual Studio Кодеспаце для управления тестовыми случаями](http://www.almguide.com/2014/07/visual-studio-online-test-case-management/) | Visual Studio Кодеспаце | Для опытных пользователей | Знание SDLC и разработки программного обеспечения |
+|  | Проверить | [Используйте эту ссылку, чтобы понять, как использовать Visual Studio Кодеспаце для управления тестовыми случаями](http://www.almguide.com/2014/07/visual-studio-online-test-case-management/) | Visual Studio Кодеспаце | Для опытных пользователей | Знание SDLC и разработки программного обеспечения |
 |  |  | [Используйте предыдущее руководство по работе с модулями Runbook для автоматизации тестирования с помощью System Center](/system-center/orchestrator/automate-runbooks) | System Center | Для опытных пользователей | Опыт работы с System Center Orchestrator |
 |  |  | [Как часть тестирования, но не только для разработки, следует создать систему безопасности. Microsoft SDL Threat Modeling Tool может помочь во всех стадиях. Узнайте больше и загрузите его здесь](https://www.microsoft.com/SDL/adopt/threatmodeling.aspx) | Средство отслеживания угроз | Для опытных пользователей | Знакомство с основными понятиями безопасности и навыки разработки программного обеспечения |
 |  |  | [В этой статье объясняется, как использовать Microsoft Attack Surface Analyzer для тестирования решения для расширенной аналитики](https://technet.microsoft.com/security/gg749821.aspx) | Attack Surface Analyzer | Для опытных пользователей | Знакомство с основными понятиями безопасности и навыки разработки программного обеспечения |
@@ -89,6 +89,6 @@ ms.locfileid: "102614077"
 |  |  | [Запись блога об использовании R Studio с Microsoft R](https://www.r-bloggers.com/using-microsoft-r-open-with-rstudio/) | R Studio | Средний уровень | Знание языка R |
 |  |  | [Запись блога об использовании непрерывной интеграции с Azure и GitHub](https://blogs.msdn.microsoft.com/microsoftimagine/2015/09/01/using-continuous-integration-with-azure-github/) | Git, GitHub | Средний уровень | Разработка программного обеспечения |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Процесс обработки и анализа данных группы для специалистов по](team-data-science-process-for-data-scientists.md) обработке и анализу данных В этой статье приводятся рекомендации по реализации решений для обработки и анализа данных в Azure.

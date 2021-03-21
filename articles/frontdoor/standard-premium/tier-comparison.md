@@ -9,16 +9,16 @@ ms.workload: infrastructure-services
 ms.date: 02/18/2021
 ms.author: amsriva
 ms.openlocfilehash: 1753f2bb649e73d7a5fe6c1cc32361a418ea7f63
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102181811"
 ---
 # <a name="overview-of-azure-front-door-standardpremium-sku-preview"></a>Общие сведения о номере SKU передней дверцы Azure Standard/Premium (Предварительная версия)
 
 > [!Note]
-> Эта документация предназначена для передней дверцы Azure уровня "Стандартный" или "Премиум" (Предварительная версия). Ищете информацию о передней дверце Azure? Просмотреть [здесь](../front-door-overview.md).
+> Эта документация предназначена для Azure Front Door категории "Стандартный" или "Премиум" (предварительная версия). Сведения об Azure Front Door см. [здесь](../front-door-overview.md).
 
 Передняя дверца Azure предлагается для трех разных SKU: " [Передняя дверца](../front-door-overview.md)", "Предварительная версия" и "Передняя дверца Azure" (Предварительная версия). Номера SKU передней дверцы Azure уровня "Стандартный" и "Премиум" объединяют возможности передней дверцы Azure, Azure CDN стандарт от Майкрософт, Azure WAF в единую защищенную облачную платформу CDN с интеллектуальной защитой угроз.
 
@@ -52,7 +52,7 @@ ms.locfileid: "102181811"
 |----------|:-------------:|------:|
 | Личные домены | Да | Да |
 | Разгрузка SSL | Да | Да |
-| Caching |  Да  | Да |
+| Кэширование |  Да  | Да |
 | Сжатие | Да | Да   |
 | глобальная балансировка нагрузки. | Да  | Да |
 | Маршрутизация уровня 7 | Да | Да |
@@ -65,6 +65,6 @@ ms.locfileid: "102181811"
 | Отчет о трафике | Да | Да |
 | Отчет о безопасности | Нет | Да | 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как [создать переднюю дверь](create-front-door-portal.md)

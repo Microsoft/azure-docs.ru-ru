@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 02/13/2019
 ms.openlocfilehash: c21ed461280dfa617c852fe6c18c30e5d697b704
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102031282"
 ---
 # <a name="application-insights-connector-management-solution-deprecated"></a>Решение по управлению Соединителем Application Insights (устарело)
@@ -48,7 +48,7 @@ ms.locfileid: "102031282"
 | [Группы управления SCOM](../agents/om-agents.md) | Нет | Решение не собирает сведения из агентов в подключенной группе управления SCOM. |
 | [Учетная запись хранения Azure](../essentials/resource-logs.md#send-to-log-analytics-workspace) | Нет | Решение не собирает сведения из службы хранилища Azure. |
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Для доступа к сведениям о соединителе Application Insights необходима подписка Azure.
 - Необходимо иметь хотя бы один настроенный ресурс Application Insights.
@@ -173,9 +173,9 @@ ApplicationInsights | summarize AggregatedValue = sum(SampledCount) by Telemetry
 
 ### <a name="generic-fields"></a>Универсальные поля
 
-| Свойство | Описание |
+| Свойство. | Описание |
 | --- | --- |
-| Тип | ApplicationInsights |
+| Type | ApplicationInsights |
 | ClientIP |   |
 | TimeGenerated | Время создания записи |
 | ApplicationId | Ключ инструментирования приложения Application Insights |
@@ -199,7 +199,7 @@ ApplicationInsights | summarize AggregatedValue = sum(SampledCount) by Telemetry
 
 ### <a name="availability-specific-fields"></a>Поля со сведениями о доступности
 
-| Свойство | Описание |
+| Свойство. | Описание |
 | --- | --- |
 | TelemetryType | Доступность |
 | AvailabilityTestName | Имя веб-теста |
@@ -224,7 +224,7 @@ ApplicationInsights | summarize AggregatedValue = sum(SampledCount) by Telemetry
 
 ### <a name="exception-specific-fields"></a>Поля со сведениями об исключениях
 
-| Тип | ApplicationInsights |
+| Type | ApplicationInsights |
 | --- | --- |
 | TelemetryType | Исключение |
 | ExceptionType | Тип исключения |
@@ -241,9 +241,9 @@ ApplicationInsights | summarize AggregatedValue = sum(SampledCount) by Telemetry
 
 ### <a name="request-specific-fields"></a>Поля со сведениями о запросах
 
-| Свойство | Описание |
+| Свойство. | Описание |
 | --- | --- |
-| Тип | ApplicationInsights |
+| Type | ApplicationInsights |
 | TelemetryType | Запрос |
 | ResponseCode | HTTP-отклик, отправленный клиенту. |
 | RequestSuccess | Указывает успешное или неудачное выполнение. True или False. |

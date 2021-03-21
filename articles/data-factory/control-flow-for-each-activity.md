@@ -8,10 +8,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/23/2019
 ms.openlocfilehash: aeabd74117f99c7cac9bde0eda02b9627caf0804
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102177796"
 ---
 # <a name="foreach-activity-in-azure-data-factory"></a>Действие ForEach в фабрике данных Azure

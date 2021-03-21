@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 05/29/2020
 ms.author: rogarana
 ms.openlocfilehash: 8887243f953a7bb000033a2e56b4655b93cd7ca8
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102519798"
 ---
 # <a name="overview-of-azure-files-identity-based-authentication-options-for-smb-access"></a>Обзор параметров проверки подлинности на основе удостоверений службы файлов Azure для доступа к SMB
@@ -21,7 +21,7 @@ ms.locfileid: "102519798"
 
 Сведения о том, как включить аутентификацию Azure AD DS для файловых ресурсов Azure, см. в статье [Включение проверки подлинности доменных служб Azure Active Directory в службе файлов Azure](storage-files-identity-auth-active-directory-domain-service-enable.md).
 
-## <a name="glossary"></a>Словарь терминов 
+## <a name="glossary"></a>Глоссарий 
 Полезно понимать некоторые ключевые термины, связанные с проверкой подлинности службы домена Azure AD по протоколу SMB для файловых ресурсов Azure:
 
 -   **Проверка подлинности Kerberos**

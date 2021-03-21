@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.date: 12/02/2020
 ms.author: azfuncdf
 ms.openlocfilehash: 62b3c9bb1c6fd53d9f11227a9d7e774d56859d04
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102434769"
 ---
 # <a name="monitor-scenario-in-durable-functions---github-issue-monitoring-sample"></a>Сценарий мониторинга в Устойчивые функции — пример отслеживания проблем в GitHub
 
 Шаблон монитора представляет собой гибкий повторяющийся процесс в рабочем процессе. Например, повторение опроса, пока не будут выполнены определенные условия. В этой статье приведен пример использования устойчивых функций для реализации мониторинга.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Выполните инструкции из краткого руководства](quickstart-python-vscode.md)
 * [Клонирование или скачивание проекта примеров из GitHub](https://github.com/Azure/azure-functions-durable-python/tree/main/samples/)

@@ -12,10 +12,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 06/19/2019
 ms.openlocfilehash: 68fa089713c3dd89b4699011ded7d667bca6f73f
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102178091"
 ---
 # <a name="tutorial-add-an-azure-sql-database-to-an-autofailover-group"></a>Руководство по добавлению Базы данных SQL Azure в группу автоматической отработки отказа
