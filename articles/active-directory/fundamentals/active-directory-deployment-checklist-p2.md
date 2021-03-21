@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: martinco
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 92d1e5b8ac6492b0b1d819431e4616d32a092cc8
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94836926"
 ---
 # <a name="azure-active-directory-feature-deployment-guide"></a>Руководство по развертыванию компонентов Azure Active Directory
@@ -26,7 +26,7 @@ ms.locfileid: "94836926"
 
 Кроме того, клиент может проверить свою [оценку безопасности удостоверений](identity-secure-score.md), чтобы узнать, насколько она соответствует рекомендациям корпорации Майкрософт. Проверьте свою оценку безопасности удостоверений до и после применения этих рекомендаций, чтобы сравнить свои результаты с результатами других пользователей в вашей отрасли и других организаций таких же размеров, как ваша.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Многие рекомендации, описанные в этом разделе, можно реализовать с помощью Azure AD Free или вообще без лицензии. Если для выполнения задачи требуется лицензия, в рекомендациях указано, какого типа лицензии будет достаточно.
 

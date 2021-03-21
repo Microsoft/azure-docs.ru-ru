@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 03/23/2018
 ms.author: pepogors
 ms.openlocfilehash: 9e30c02de54806006a1881448bcb9f788a57310c
-ms.sourcegitcommit: 5db975ced62cd095be587d99da01949222fc69a3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97095259"
 ---
 # <a name="azure-service-fabric-node-types-and-virtual-machine-scale-sets"></a>Типы узлов Azure Service Fabric и масштабируемые наборы виртуальных машин
@@ -71,7 +71,7 @@ Service Fabric расширение виртуальной машины испо
 
 Ниже приведены описания свойств.
 
-| **Имя** | **Допустимые значения** | **Рекомендация или краткое описание** |
+| **имя**; | **Допустимые значения** | **Рекомендация или краткое описание** |
 | --- | --- | --- | --- |
 | name | строка | Уникальное имя для расширения |
 | тип | "Сервицефабриклинуксноде" или "Сервицефабриквиндовсноде" | Идентифицирует Service Fabric ОС для начальной загрузки |

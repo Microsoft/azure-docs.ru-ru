@@ -14,10 +14,10 @@ ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 399d2f71fa20d63dce89cf3be5c12ffd63264895
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98724716"
 ---
 # <a name="build-resilience-with-credential-management"></a>Устойчивость к сборке с помощью управления учетными данными
@@ -65,7 +65,7 @@ ms.locfileid: "98724716"
 
 * [Реализация гибкой стратегии управления доступом](../authentication/concept-resilient-controls.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Ресурсы по устойчивости для администраторов и архитекторов
  
 * [Устойчивость сборки к состояниям устройств](resilience-with-device-states.md)

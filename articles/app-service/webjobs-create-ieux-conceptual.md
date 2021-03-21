@@ -8,10 +8,10 @@ ms.date: 10/16/2018
 ms.author: glenga
 ROBOTS: NOINDEX,NOFOLLOW
 ms.openlocfilehash: 7714b090399b0b184e2e216ff6da7b10f2bf4386
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102452277"
 ---
 # <a name="webjobs-run-background-tasks-in-azure-app-service"></a>Веб-задания выполняют фоновые задачи в службе приложений Azure

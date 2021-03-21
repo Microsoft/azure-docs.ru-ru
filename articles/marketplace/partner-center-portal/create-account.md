@@ -9,10 +9,10 @@ author: parthpandyaMSFT
 ms.author: parthp
 ms.custom: contperf-fy21q2
 ms.openlocfilehash: d88e2b18d4e4f9df0606832356e383aaaf51cf73
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97028450"
 ---
 # <a name="create-a-commercial-marketplace-account-in-partner-center"></a>Создание коммерческой учетной записи Marketplace в центре партнеров

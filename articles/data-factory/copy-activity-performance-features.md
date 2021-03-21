@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 09/24/2020
 ms.openlocfilehash: ecb4550b218b069273cba2e3d70a9510c1cc74ca
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100387807"
 ---
 # <a name="copy-activity-performance-optimization-features"></a>Функции оптимизации производительности действий копирования
@@ -143,7 +143,7 @@ ms.locfileid: "100387807"
 
 Настройте параметр **enableStaging** в действии копирования, чтобы указать, должны ли данные быть помещены в хранилище перед их загрузкой в целевое хранилище данных. При установке **enableStaging** в `TRUE` Укажите дополнительные свойства, перечисленные в следующей таблице. 
 
-| Свойство | Описание | Значение по умолчанию | Обязательно |
+| Свойство. | Описание | Значение по умолчанию | Обязательно |
 | --- | --- | --- | --- |
 | enableStaging |Укажите, следует ли копировать данные в промежуточное хранилище. |False |нет |
 | linkedServiceName |Укажите имя [хранилища BLOB-объектов Azure](connector-azure-blob-storage.md#linked-service-properties) или связанной службы [Azure Data Lake Storage 2-го поколения](connector-azure-data-lake-storage.md#linked-service-properties) , которая ссылается на экземпляр хранилища, используемый в качестве промежуточного хранилища. |Н/Д |Да, если для параметра **enableStaging** задано значение true |

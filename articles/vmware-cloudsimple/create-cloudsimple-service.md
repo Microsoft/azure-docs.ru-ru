@@ -9,10 +9,10 @@ ms.service: azure-vmware-cloudsimple
 ms.reviewer: cynthn
 manager: dikamath
 ms.openlocfilehash: 53f2d0fc9f73985bd70792c8c3b7607eb4c560fa
-ms.sourcegitcommit: d7d5f0da1dda786bda0260cf43bd4716e5bda08b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97896300"
 ---
 # <a name="create-the-azure-vmware-solution-by-cloudsimple-service"></a>Создание решения Azure VMware с помощью службы Клаудсимпле
@@ -41,7 +41,7 @@ ms.locfileid: "97896300"
 8. Введите CIDR для шлюза службы. Укажите подсеть/28, которая не пересекается с любыми локальными подсетями, подсетями Azure или запланированными подсетями Клаудсимпле. После создания службы невозможно изменить CIDR.
 
     ![Создание службы Клаудсимпле](media/create-cloudsimple-service.png)
-9. Нажмите кнопку **ОК**.
+9. Нажмите кнопку **OK**.
 
 Служба будет создана и добавлена в список служб.
 

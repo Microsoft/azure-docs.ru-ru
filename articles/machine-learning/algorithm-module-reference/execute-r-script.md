@@ -10,10 +10,10 @@ author: likebupt
 ms.author: keli19
 ms.date: 12/17/2020
 ms.openlocfilehash: bdd7fd8e19bf2de6d0b3c6b2edd4515771fae237
-ms.sourcegitcommit: aacbf77e4e40266e497b6073679642d97d110cda
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98119031"
 ---
 # <a name="execute-r-script-module"></a>Выполнить модуль R Script
@@ -409,7 +409,7 @@ azureml_main <- function(dataframe1, dataframe2){
 | iterators    | 1.0.10     | 
 | jsonlite     | 1.6        | 
 | KernSmooth   | 2.23–15    | 
-| knitr        | 1,23       | 
+| knitr        | 1.23       | 
 | labeling     | 0.3        | 
 | lattice      | 0,20 — 38    | 
 | lava         | 1.6.5      | 

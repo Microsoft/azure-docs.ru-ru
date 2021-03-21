@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 12/23/2019
 ms.openlocfilehash: 9f179981aa39402681b4830d58a29f5b1259c7e2
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98946118"
 ---
 # <a name="create-apache-hbase-clusters-on-hdinsight-in-azure-virtual-network"></a>Создание кластеров Apache HBase в HDInsight в виртуальной сети Azure
@@ -29,7 +29,7 @@ ms.locfileid: "98946118"
 В этом разделе описывается, как создать кластер Apache HBase под управлением Linux с зависимой учетной записью службы хранилища Azure в виртуальной сети Azure c помощью [шаблона Azure Resource Manager](../../azure-resource-manager/templates/deploy-powershell.md). Сведения о других способах создания кластеров и их параметрах см. в статье [Создание кластеров Hadoop под управлением Linux в HDInsight](../hdinsight-hadoop-provision-linux-clusters.md). Дополнительные сведения о создании в HDInsight кластеров Apache Hadoop с помощью шаблонов см. в [этой статье](../hdinsight-hadoop-create-linux-clusters-arm-templates.md).
 
 > [!NOTE]  
-> Некоторые свойства жестко заданы в шаблоне. Пример.
+> Некоторые свойства жестко заданы в шаблоне. Пример:
 >
 > * **Расположение**: восточная часть США 2.
 > * **Версия кластера**: 3.6
@@ -52,7 +52,7 @@ ms.locfileid: "98946118"
 
 1. Заполните оставшийся шаблон следующими сведениями:
 
-    |Свойство |Значение |
+    |Свойство. |Значение |
     |---|---|
     |Подписка|Выберите подписку Azure, которая использовалась для создания кластера HDInsight, зависимой учетной записи хранения и виртуальной сети Azure.|
     Группа ресурсов|Щелкните **Создать** и укажите имя новой группы ресурсов.|
@@ -102,7 +102,7 @@ ms.locfileid: "98946118"
     curl -u <username>:<password> -k https://CLUSTERNAME.azurehdinsight.net/ambari/api/v1/clusters/CLUSTERNAME.azurehdinsight.net/services/hbase/components/hbrest
     ```
 
-В возвращенных данных JSON найдите запись «host_name». Она содержит полные доменные имена узлов в кластере. Пример.
+В возвращенных данных JSON найдите запись «host_name». Она содержит полные доменные имена узлов в кластере. Пример:
 
 ```
 "host_name" : "hn0-hbaseg.hjfrnszlumfuhfk4pi1guh410c.bx.internal.cloudapp.net"
@@ -129,7 +129,7 @@ ms.locfileid: "98946118"
 
 Чтобы проверить обмен данными между виртуальной машиной и кластером HBase, используйте следующую команду `ping headnode0.<dns suffix>` на виртуальной машине. Например, `ping hn0-hbaseg.hjfrnszlumfuhfk4pi1guh410c.bx.internal.cloudapp.net`.
 
-Чтобы использовать эту информацию в Java-приложении, создайте приложение, выполнив шаги, представленные в статье [Создание приложений Java для Apache HBase](./apache-hbase-build-java-maven-linux.md). Чтобы приложение подключилось к удаленному серверу HBase, измените файл **hbase-site.xml** в этом примере, чтобы использовать полное доменное имя для ZooKeeper. Пример.
+Чтобы использовать эту информацию в Java-приложении, создайте приложение, выполнив шаги, представленные в статье [Создание приложений Java для Apache HBase](./apache-hbase-build-java-maven-linux.md). Чтобы приложение подключилось к удаленному серверу HBase, измените файл **hbase-site.xml** в этом примере, чтобы использовать полное доменное имя для ZooKeeper. Пример:
 
 ```xml
 <property>
@@ -143,7 +143,7 @@ ms.locfileid: "98946118"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-В этой статье вы узнали, как создать кластер Apache HBase. Дополнительные сведения см. в следующих ресурсах:
+В этой статье вы узнали, как создать кластер Apache HBase. Дополнительные сведения см. на следующих ресурсах:
 
 * [Приступая к работе с HDInsight](../hadoop/apache-hadoop-linux-tutorial-get-started.md)
 * [Использование пустых граничных узлов в HDInsight](../hdinsight-apps-use-edge-node.md)

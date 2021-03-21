@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.service: iot-central
 services: iot-central
 ms.openlocfilehash: d0e59f73dd9b62b528c3d86d315b613312df7773
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100577052"
 ---
 # <a name="monitor-the-overall-health-of-an-iot-central-application"></a>Отслеживание общей работоспособности приложения IoT Central
@@ -58,6 +58,6 @@ ms.locfileid: "100577052"
 
 - Хотя метрики могут показывать подмножество обмена данными между устройством и облаком, весь обмен данными между устройством и облаком [считается сообщением для выставления счетов](https://azure.microsoft.com/pricing/details/iot-central/).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы узнали, как использовать шаблоны приложений, предлагаем следующий шаг — Узнайте, как [управлять IOT Central из портал Azure](howto-manage-iot-central-from-portal.md).

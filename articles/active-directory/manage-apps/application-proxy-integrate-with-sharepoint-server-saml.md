@@ -17,10 +17,10 @@ ms.reviewer: japere
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7cadf5b7d92e26e561e570f824295e69ca421e16
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101644526"
 ---
 # <a name="integrate-with-sharepoint-saml"></a>Интеграция с SharePoint (SAML)
@@ -38,7 +38,7 @@ ms.locfileid: "101644526"
 
 Этот процесс требует наличия двух корпоративных приложений. Один из них — локальный экземпляр SharePoint, который публикуется из коллекции в списке управляемых приложений SaaS. Второй — это локальное приложение (приложение не из коллекции), которое будет использоваться для публикации первого приложения из коллекции для предприятий.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для выполнения этой настройки необходимы следующие ресурсы:
  - Ферма SharePoint 2013 или более поздней версии. Ферма SharePoint должна быть [интегрирована с Azure AD](../saas-apps/sharepoint-on-premises-tutorial.md).

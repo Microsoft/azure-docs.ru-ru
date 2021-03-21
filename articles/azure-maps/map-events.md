@@ -10,10 +10,10 @@ services: azure-maps
 manager: ''
 ms.custom: codepen, devx-track-js
 ms.openlocfilehash: 8121ceb68bdea9332316a9508bf6f4731e05b0ba
-ms.sourcegitcommit: 4064234b1b4be79c411ef677569f29ae73e78731
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92890791"
 ---
 # <a name="interact-with-the-map"></a>Взаимодействие с картой
@@ -22,7 +22,7 @@ ms.locfileid: "92890791"
 
 ## <a name="interact-with-the-map"></a>Взаимодействие с картой
 
-Поработайте с приведенной ниже картой и посмотрите, как соответствующие события мыши выделяются в разделе справа. Вы можете щелкнуть **вкладку JS** , чтобы просмотреть и изменить код JavaScript. Кроме того, можно нажать кнопку **редактирования в CodePen** и изменить код в CodePen.
+Поработайте с приведенной ниже картой и посмотрите, как соответствующие события мыши выделяются в разделе справа. Вы можете щелкнуть **вкладку JS**, чтобы просмотреть и изменить код JavaScript. Кроме того, можно нажать кнопку **редактирования в CodePen** и изменить код в CodePen.
 
 <br/>
 

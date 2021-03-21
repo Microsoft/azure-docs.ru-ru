@@ -8,10 +8,10 @@ author: swinarko
 ms.author: sawinark
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: ecabbf88e14d17ac912065c2ed4aa95316efaf9f
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100387651"
 ---
 # <a name="clean-up-ssisdb-logs-with-azure-elastic-database-jobs"></a>Очистка журналов SSISDB с помощью заданий обработки эластичных баз данных Azure

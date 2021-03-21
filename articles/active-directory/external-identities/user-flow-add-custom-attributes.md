@@ -12,10 +12,10 @@ ms.author: mimart
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 46b498f8b8512d0202f47dd31ba25cc851ca71e6
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101644108"
 ---
 # <a name="define-custom-attributes-for-user-flows"></a>Определение настраиваемых атрибутов для потоков пользователя

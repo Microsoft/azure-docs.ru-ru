@@ -8,10 +8,10 @@ ms.service: sql-database
 ms.topic: how-to
 ms.date: 01/15/2021
 ms.openlocfilehash: 56cf30d89460df8ac50d258bd8b29cf4e7236690
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98734636"
 ---
 # <a name="plan-and-manage-costs-for-azure-sql-database"></a>Планирование и управление затратами для базы данных SQL Azure
@@ -113,7 +113,7 @@ ms.locfileid: "98734636"
 Экономия денег путем фиксации на резервирование ресурсов для вычислений на один-три года. Дополнительные сведения см. [в разделе экономия затрат для ресурсов с зарезервированной емкостью](reserved-capacity-overview.md).
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте [, как оптимизировать инвестиции в облако с помощью службы "Управление затратами Azure](../../cost-management-billing/costs/cost-mgt-best-practices.md?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn)".
 - Дополнительные сведения об управлении затратами с помощью [анализа затрат](../../cost-management-billing/costs/quick-acm-cost-analysis.md?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn).

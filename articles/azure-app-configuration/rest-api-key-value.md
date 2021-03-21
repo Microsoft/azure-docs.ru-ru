@@ -7,10 +7,10 @@ ms.service: azure-app-configuration
 ms.topic: reference
 ms.date: 08/17/2020
 ms.openlocfilehash: 95081d6f8c2770d01f7836e08b6851860bf47ba8
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96932563"
 ---
 # <a name="key-values"></a>Значения ключей
@@ -26,7 +26,7 @@ ms.locfileid: "96932563"
 - Присвойте параметру
 - Удалить
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [azure-app-configuration-create](../../includes/azure-app-configuration-rest-api-prereqs.md)]
 
@@ -103,7 +103,7 @@ If-None-Match: "{etag}"
 HTTP/1.1 304 NotModified
 ```
 
-или
+или диспетчер конфигурации служб
 
 ```http
 HTTP/1.1 200 OK
@@ -178,13 +178,13 @@ GET /kv?key={key}&label={label}&api-version={api-version}
 |`label=prod*`|Совпадает с метками, начинающимися с **произв** .|
 |`label=prod,test`|Совпадает с **метками** "Рабочая или **Тестовая** " (ограничение в 5 CSV)|
 
-**_Зарезервированные символы_* _
+***Зарезервированные символы***
 
-`_`, `\`, `,`
+`*`, `\`, `,`
 
 Если зарезервированный символ является частью значения, он должен быть экранирован с помощью `\{Reserved Character}` . Незарезервированные символы также могут быть экранированы.
 
-***Проверка фильтра** _
+***Проверка фильтра***
 
 В случае ошибки проверки фильтра ответом является HTTP `400` со сведениями об ошибке:
 
@@ -203,7 +203,7 @@ Content-Type: application/problem+json; charset=utf-8
 }
 ```
 
-_ *Примеры**
+**Примеры**
 
 - Все
 
@@ -364,7 +364,7 @@ Content-Type: application/vnd.microsoft.appconfig.kv+json; charset=utf-8
 ...
 ```
 
-или
+или диспетчер конфигурации служб
 
 ```http
 HTTP/1.1 412 PreconditionFailed
@@ -387,7 +387,7 @@ Content-Type: application/vnd.microsoft.appconfig.kv+json; charset=utf-8
 ...
 ```
 
-или
+или диспетчер конфигурации служб
 
 ```http
 HTTP/1.1 204 No Content

@@ -6,10 +6,10 @@ ms.subservice: process-automation
 ms.date: 11/25/2020
 ms.topic: conceptual
 ms.openlocfilehash: 8630afa7410aad81a7a3c61540fc74702fc6481c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100575999"
 ---
 # <a name="dns-records-for-azure-regions-used-by-azure-automation"></a>Записи DNS для регионов Azure, используемых службой автоматизации Azure
@@ -107,7 +107,7 @@ ms.locfileid: "100575999"
 > [!NOTE]
 > Если вы используете Azure ExpressRoute, обратите внимание, что этот файл используется для того, чтобы обновлять объявление протокола BGP в пространстве Azure в первую неделю каждого месяца.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения см. в статье [Устранение неполадок с гибридными рабочими ролями Runbook](../troubleshoot/hybrid-runbook-worker.md#general).
 

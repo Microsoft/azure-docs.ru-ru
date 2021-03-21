@@ -10,10 +10,10 @@ author: likebupt
 ms.author: keli19
 ms.date: 11/16/2020
 ms.openlocfilehash: 366b30df677a5b74bc7d70e1aea60e05b4df0152
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94659313"
 ---
 # <a name="preprocess-text"></a>Preprocess Text
@@ -93,8 +93,8 @@ ms.locfileid: "94659313"
 
 | Конфигурация | Результат вывода |
 | --- | --- |
-|Со всеми выбранными параметрами </br> Объяснение </br> В таких случаях, как "3Test" в разделе "WC-3 3Test 4test", конструктор удаляет слово "3Test" целиком, поскольку в этом контексте средство создания тегов "3Test" определяет этот токен как цифру и в соответствии с частью речи, модуль удаляет его.| :::image type="content" source="./media/module/preprocess-text-all-options-selected.png" alt-text="Со всеми выбранными параметрами" border="True"::: |
-|Только с `Removing number` выбранным </br> Объяснение </br> В таких случаях, как "3Test", "4-EC", маркер конструктора четкое не разделяет эти варианты и обрабатывает их как целые токены. Поэтому не удаляет числа из этих слов.| :::image type="content" source="./media/module/preprocess-text-removing-numbers-selected.png" alt-text="Только выбрано &quot;удалить число&quot;" border="True"::: |
+|Со всеми выбранными параметрами </br> Объяснение. </br> В таких случаях, как "3Test" в разделе "WC-3 3Test 4test", конструктор удаляет слово "3Test" целиком, поскольку в этом контексте средство создания тегов "3Test" определяет этот токен как цифру и в соответствии с частью речи, модуль удаляет его.| :::image type="content" source="./media/module/preprocess-text-all-options-selected.png" alt-text="Со всеми выбранными параметрами" border="True"::: |
+|Только с `Removing number` выбранным </br> Объяснение. </br> В таких случаях, как "3Test", "4-EC", маркер конструктора четкое не разделяет эти варианты и обрабатывает их как целые токены. Поэтому не удаляет числа из этих слов.| :::image type="content" source="./media/module/preprocess-text-removing-numbers-selected.png" alt-text="Только выбрано &quot;удалить число&quot;" border="True"::: |
 
 Вы также можете использовать регулярное выражение для вывода настраиваемых результатов:
 

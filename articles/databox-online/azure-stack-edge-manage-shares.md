@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 01/04/2021
 ms.author: alkohli
 ms.openlocfilehash: 7fbb5ca43d2877e2e14914b71df7cc1bcdf27f88
-ms.sourcegitcommit: d7d5f0da1dda786bda0260cf43bd4716e5bda08b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97898383"
 ---
 # <a name="use-the-azure-portal-to-manage-shares-on-azure-stack-edge-pro-fpga"></a>Использование портал Azure для управления общими папками на Azure Stack ребра Pro FPGA 
@@ -150,7 +150,7 @@ ms.locfileid: "97898383"
 
    ![Выберите общий ресурс 5.](media/azure-stack-edge-manage-shares/delete-share-1.png)
 
-2. Выберите команду **Удалить**.
+2. Нажмите кнопку **Удалить**.
 
    ![Выбор команды удаления](media/azure-stack-edge-manage-shares/delete-share-2.png)
 

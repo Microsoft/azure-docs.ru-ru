@@ -13,10 +13,10 @@ ms.reviewer: sandeo
 ms.custom: references_regions, devx-track-azurecli
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ee392666a6c6807497eeac2a2291dac915c4e136
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101644312"
 ---
 # <a name="sign-in-to-windows-virtual-machine-in-azure-using-azure-active-directory-authentication-preview"></a>Вход в виртуальную машину Windows в Azure с помощью проверки подлинности Azure Active Directory (Предварительная версия)
@@ -217,7 +217,7 @@ az role assignment create \
 
 1. Перейдите на страницу обзора виртуальной машины, которая была включена с помощью входа в Azure AD.
 1. Щелкните **подключить** , чтобы открыть колонку подключение к виртуальной машине.
-1. Выберите **Скачать RDP-файл**.
+1. Щелкните **Скачать RDP-файл**.
 1. Нажмите кнопку **Открыть** , чтобы запустить клиент Подключение к удаленному рабочему столу.
 1. Нажмите кнопку **Подключиться** , чтобы открыть диалоговое окно входа в Windows.
 1. Вход с использованием учетных данных Azure AD.

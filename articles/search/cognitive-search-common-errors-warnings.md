@@ -9,10 +9,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 09/23/2020
 ms.openlocfilehash: 3ba0abe8510291351c10ba085ba7e42b8197d886
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102553244"
 ---
 # <a name="troubleshooting-common-indexer-errors-and-warnings-in-azure-cognitive-search"></a>Устранение распространенных ошибок индексатора и предупреждений в Azure Когнитивный поиск
@@ -32,7 +32,7 @@ ms.locfileid: "102553244"
 
 Начиная с версии API `2019-05-06` , ошибки индексатора на уровне элементов и предупреждения структурированы таким образом, чтобы обеспечить улучшенную ясность по причинам и дальнейшим действиям. Они содержат следующие свойства:
 
-| Свойство | Описание | Пример |
+| Свойство. | Описание | Пример |
 | --- | --- | --- |
 | ключ | Идентификатор документа, на который влияет ошибка или предупреждение. | HTTPS: \/ /coromsearch.blob.core.windows.net/jfk-1k/docid-32112954.pdf |
 | name | Имя операции, описывающей, где возникла ошибка или предупреждение. Он создается следующей структурой: [Category]. [Подкатегория]. [resourceType]. resourceName | Документекстрактион. azureblob. Миблобконтаинернаме обогащение. Вебапискилл. Мискиллнаме проекция. Сеарчиндекс. Аутпутфиелдмаппинг. myOutputFieldName проекция. SearchIndex. MergeOrUpload. myIndexName проекция. KnowledgeStore. Table. myTableName |

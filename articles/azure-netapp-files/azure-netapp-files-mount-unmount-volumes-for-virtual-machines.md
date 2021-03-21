@@ -8,10 +8,10 @@ ms.workload: storage
 ms.topic: how-to
 ms.date: 11/17/2020
 ms.openlocfilehash: 83d6e051f520737e750e6c46c192eb698e7bf0e3
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94842263"
 ---
 # <a name="mount-or-unmount-a-volume-for-windows-or-linux-virtual-machines"></a>Подключение или отключение тома для виртуальных машин Windows или Linux 
@@ -51,8 +51,8 @@ ms.locfileid: "94842263"
 
 4. Если вы хотите подключить том к Windows с помощью NFS:
 
-    А. Сначала подключите том на виртуальной машине UNIX или Linux.  
-    Б. Выполните `chmod 777` команду или `chmod 775` для тома.  
+    а. Сначала подключите том на виртуальной машине UNIX или Linux.  
+    b. Выполните `chmod 777` команду или `chmod 775` для тома.  
     c. Подключите том через клиент NFS в Windows.
     
 5. Если вы хотите подключить том Kerberos для NFS, см. Дополнительные сведения в разделе [Настройка шифрования Kerberos для нфсв 4.1](configure-kerberos-encryption.md) . 

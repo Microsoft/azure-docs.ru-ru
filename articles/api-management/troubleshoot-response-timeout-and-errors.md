@@ -7,10 +7,10 @@ ms.date: 12/04/2020
 ms.author: apimpm
 ms.service: api-management
 ms.openlocfilehash: 6cace4a02c8d45cacbbc34e9778b5c4a78ada27f
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100576525"
 ---
 # <a name="troubleshooting-client-response-timeouts-and-errors-with-api-management"></a>Устранение неполадок времени ожидания ответа клиента и ошибок в службе управления API
@@ -81,7 +81,7 @@ ms.locfileid: "100576525"
 
 Дополнительные сведения см. в разделе [политики ограничения доступа для управления API](api-management-access-restriction-policies.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Azure Load Balancer: Устранение сбоев исходящих подключений](../load-balancer/troubleshoot-outbound-connection.md)
 * [Служба приложений Azure: Устранение неполадок с периодическими исходящими ошибками подключения](../app-service/troubleshoot-intermittent-outbound-connection-errors.md)

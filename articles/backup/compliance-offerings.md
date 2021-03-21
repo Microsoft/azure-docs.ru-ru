@@ -4,10 +4,10 @@ description: Сводка предложений по соответствию �
 ms.topic: conceptual
 ms.date: 03/16/2020
 ms.openlocfilehash: 0b175590bc83ad1cd1f47d0111101b967962f3a8
-ms.sourcegitcommit: 5db975ced62cd095be587d99da01949222fc69a3
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97093304"
 ---
 # <a name="azure-backup-compliance-offerings"></a>Предложения соответствия Azure Backup
@@ -41,7 +41,7 @@ ms.locfileid: "97093304"
 * [HITRUST](/microsoft-365/compliance/offering-hitrust).
 * [PCI DSS](/microsoft-365/compliance/offering-pci-dss)
 
-## <a name="regional"></a>Региональные
+## <a name="regional"></a>Региональный
 
 * [CCSL/IRAP (Австралия)](/microsoft-365/compliance/offering-ccsl-irap-australia)
 * [GDPR (ЕС)](https://www.microsoft.com/trustcenter/privacy/gdpr)

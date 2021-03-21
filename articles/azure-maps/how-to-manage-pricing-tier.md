@@ -9,10 +9,10 @@ ms.service: azure-maps
 services: azure-maps
 manager: timlt
 ms.openlocfilehash: 9934a2660d18fdcbada1cda86f957345b2d1a8c8
-ms.sourcegitcommit: 4064234b1b4be79c411ef677569f29ae73e78731
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92895738"
 ---
 # <a name="manage-the-pricing-tier-of-your-azure-maps-account"></a>Управление ценовой категорией для учетной записи Azure Maps
@@ -29,7 +29,7 @@ ms.locfileid: "92895738"
 
 ## <a name="change-a-pricing-tier"></a>Изменение ценовой категории
 
-Создав учетную запись Azure Maps, вы можете повышать и понижать ценовую категорию для нее. Чтобы повысить или понизить ценовую категорию, выберите пункт **Ценовая категория** в меню параметров. Выберите ценовую категорию, которая не выделена. Нажмите кнопку **Сохранить** , чтобы сохранить выбор ценовой категории.
+Создав учетную запись Azure Maps, вы можете повышать и понижать ценовую категорию для нее. Чтобы повысить или понизить ценовую категорию, выберите пункт **Ценовая категория** в меню параметров. Выберите ценовую категорию, которая не выделена. Нажмите кнопку **Сохранить**, чтобы сохранить выбор ценовой категории.
 
 [![Изменение ценовой ](./media/how-to-manage-pricing-tier/change-pricing-tier.png) категории](./media/how-to-manage-pricing-tier/change-pricing-tier.png#lightbox)
 

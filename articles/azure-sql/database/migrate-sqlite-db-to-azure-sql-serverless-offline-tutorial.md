@@ -10,10 +10,10 @@ ms.topic: tutorial
 ms.date: 01/08/2020
 ms.custom: sqldbrb=1
 ms.openlocfilehash: e2f240247cbba0f80254d504792df45be55c6a1b
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92790412"
 ---
 # <a name="how-to-migrate-your-sqlite-database-to-azure-sql-database-serverless"></a>Перенос базы данных SQLite в бессерверную Базу данных SQL Azure
@@ -53,13 +53,13 @@ ms.locfileid: "92790412"
     - Запустите ADF (создание и мониторинг из службы на портале Azure).
     - Щелкните вкладку "Создание" (синий карандаш) слева.
     - Щелкните "Подключения" (внизу слева), а затем выберите среды выполнения интеграции.
-    - Добавьте новую локальную среду выполнения интеграции и присвойте ей имя, а затем щелкните *Вариант 2* .
+    - Добавьте новую локальную среду выполнения интеграции и присвойте ей имя, а затем щелкните *Вариант 2*.
 
 5. Создайте в Фабрике данных новую связанную службу для исходной базы данных SQLite.
 
     ![Снимок экрана с пустой колонкой связанных служб в Фабрике данных Azure](./media/migrate-sqlite-db-to-azure-sql-serverless-offline-tutorial/linked-services-create.png)
 
-6. На странице **Подключения** в разделе **Связанная служба** щелкните **Создать** .
+6. На странице **Подключения** в разделе **Связанная служба** щелкните **Создать**.
 
 7. Найдите и выберите соединитель ODBC.
 

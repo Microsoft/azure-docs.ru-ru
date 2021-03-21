@@ -7,10 +7,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/18/2021
 ms.openlocfilehash: fc4f20db55f8e7e0b2f92cb8309c1c128b235089
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100385461"
 ---
 # <a name="power-query-activity-in-data-factory"></a>Активность Power Query в фабрике данных
@@ -27,6 +27,6 @@ ms.locfileid: "100385461"
 
 Чтобы добиться масштабирования с помощью действия Power Query, фабрика данных Azure преобразует ```M``` скрипт в сценарий потока данных, чтобы можно было выполнять Power Query в нужном масштабе с помощью среды потока данных фабрики данных Azure в среде Spark. Создайте поток данных структурирование, используя подготовку данных без кода. Список доступных функций см. в разделе [функции преобразования](wrangling-functions.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об основных понятиях структурирование данных с помощью [Power Query в фабрике данных Azure](wrangling-tutorial.md)
