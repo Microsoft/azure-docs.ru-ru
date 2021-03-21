@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/08/2021
 ms.author: alkohli
 ms.openlocfilehash: 057f80049b13a265925f2d6f24a008d1e1e04c96
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102639014"
 ---
 # <a name="manage-compute-on-your-azure-stack-edge-pro-gpu"></a>Управление расчетами на GPU Azure Stack.
@@ -142,6 +142,6 @@ IP-адреса внешней службы Kubernetes используются 
 1. Нажмите кнопку **Применить**. После применения IP-адресов устройство не нуждается в перезагрузке или перезагрузке. Новые IP-адреса вступают в силу немедленно.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Узнайте, как [устранять неполадки Azure Stack пограничных Pro](azure-stack-edge-gpu-troubleshoot.md).

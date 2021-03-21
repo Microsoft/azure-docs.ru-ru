@@ -9,10 +9,10 @@ ms.service: virtual-machines
 ms.subservice: image-builder
 ms.collection: linux
 ms.openlocfilehash: 9f8793b6ea0ba454b66c525c2d53c1de2197d539
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102440213"
 ---
 # <a name="configure-azure-image-builder-service-permissions-using-powershell"></a>Настройка разрешений службы Azure Image Builder с помощью PowerShell

@@ -13,10 +13,10 @@ ms.author: emlisa
 ms.reviewer: sstein, emlisa
 ms.date: 10/28/2020
 ms.openlocfilehash: 9e292aeb116bd33ce935c951b39015c54dd1a8bc
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102486698"
 ---
 # <a name="high-availability-for-azure-sql-database-and-sql-managed-instance"></a>Высокий уровень доступности для базы данных SQL Azure и Управляемый экземпляр SQL

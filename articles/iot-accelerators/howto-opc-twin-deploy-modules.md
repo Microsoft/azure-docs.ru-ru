@@ -10,10 +10,10 @@ ms.custom: devx-track-azurecli
 services: iot-industrialiot
 manager: philmea
 ms.openlocfilehash: 38235f9b01b321e27664ee837763732971f0b85c
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102201504"
 ---
 # <a name="deploy-opc-twin-module-and-dependencies-from-scratch"></a>Развертывание модуля и зависимостей OPC двойника с нуля
@@ -113,7 +113,7 @@ ms.locfileid: "102201504"
 
 Самый простой способ развертывания модулей на Azure IoT Edge устройстве шлюза — это портал Azure.  
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 1. Развернуть [зависимости](howto-opc-twin-deploy-dependencies.md) OPC двойника и получить получившийся `.env` файл. Обратите внимание на развернутую `hub name` `PCS_IOTHUBREACT_HUB_NAME` переменную в результирующем `.env` файле.
 
@@ -180,7 +180,7 @@ ms.locfileid: "102201504"
 
 ## <a name="deploying-using-azure-cli"></a>Развертывание с помощью Azure CLI
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 1. Установите последнюю версию [интерфейса командной строки Azure (AZ)](/cli/azure/) [отсюда](/cli/azure/install-azure-cli).
 

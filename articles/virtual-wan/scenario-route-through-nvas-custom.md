@@ -10,10 +10,10 @@ ms.date: 02/25/2021
 ms.author: cherylmc
 ms.custom: fasttrack-edit
 ms.openlocfilehash: 6291964aff7c215df7f738ab103947dcb9b1b1d4
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102036901"
 ---
 # <a name="scenario-route-traffic-through-nvas-by-using-custom-settings"></a>Сценарий: маршрутизация трафика через NVA с помощью пользовательских параметров
@@ -29,7 +29,7 @@ ms.locfileid: "102036901"
 
 В следующей таблице перечислены подключения, поддерживаемые в этом сценарии.
 
-| От          | Кому|Периферийные точки|Виртуальная сеть службы|Ветви|Интернет|
+| Исходный тип          | Кому|Периферийные точки|Виртуальная сеть службы|Ветви|Интернет|
 |---|:---:|:---:|:---:|:---:|:---:|
 | **Периферийные точки**| ->| напрямую; |напрямую; | через виртуальную сеть службы |через периметр виртуальной сети |
 | **Виртуальная сеть службы**| ->| напрямую; |Н/Д| напрямую; | |
@@ -78,7 +78,7 @@ ms.locfileid: "102036901"
 
 Дополнительные сведения см. в статье [о маршрутизации виртуальных концентраторов](about-virtual-hub-routing.md).
 
-## <a name="architecture"></a>Architecture
+## <a name="architecture"></a>Архитектура
 
 На следующей схеме показана архитектура, описанная выше в этой статье.
 

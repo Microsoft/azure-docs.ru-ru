@@ -5,12 +5,12 @@ services: container-service
 ms.topic: article
 ms.date: 02/25/2020
 ms.custom: mvc
-ms.openlocfilehash: 19de94db517afb2a8eeb855e76f2381096f8d7c0
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: e0c3e331dba08fc95f471e3ad40dfcbb10cc2f0c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102609113"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104670636"
 ---
 # <a name="migrate-to-azure-kubernetes-service-aks"></a>Миграция в службу Kubernetes Azure (AKS)
 
@@ -18,6 +18,7 @@ ms.locfileid: "102609113"
 
 Этот документ можно использовать для поддержки следующих сценариев:
 
+* Контейнеризация некоторые приложения и перенесите их в AKS с помощью службы " [Миграция Azure](../migrate/migrate-services-overview.md) "
 * Миграция кластера AKS, поддерживаемого группами [доступности](../virtual-machines/windows/tutorial-availability-sets.md) , в [масштабируемые наборы виртуальных машин](../virtual-machine-scale-sets/overview.md)
 * Миграция кластера AKS для использования [балансировщика нагрузки SKU](./load-balancer-standard.md) уровня "Стандартный"
 * Миграция из [службы контейнеров Azure (ACS) — прекращение 31 января 2020 г](https://azure.microsoft.com/updates/azure-container-service-will-retire-on-january-31-2020/) . до AKS
@@ -38,6 +39,7 @@ ms.locfileid: "102609113"
 В этой статье приводятся сводные сведения о миграции:
 
 > [!div class="checklist"]
+> * Контейнеризация приложения с помощью службы "миграция Azure" 
 > * AKS с Load Balancer (цен. категория "Стандартный") и масштабируемыми наборами виртуальных машин
 > * Существующие подключенные службы Azure
 > * Обеспечение допустимых квот
@@ -45,6 +47,13 @@ ms.locfileid: "102609113"
 > * Рекомендации для приложений без отслеживания состояния
 > * Рекомендации для приложений с отслеживанием состояния
 > * Развертывание конфигурации кластера
+
+## <a name="use-azure-migrate-to-migrate-your-applications-to-aks"></a>Перенос приложений в AKS с помощью службы "миграция Azure"
+
+Служба "миграция Azure" предлагает единую платформу для оценки и перехода на локальные серверы, инфраструктуру, приложения и данные Azure. Для AKS можно использовать миграцию Azure для следующих действий:
+
+* [Контейнеризовать ASP.NET приложения и переход на AKS](../migrate/tutorial-containerize-aspnet-kubernetes.md)
+* [Контейнеризовать веб-приложения Java и переход на AKS](../migrate/tutorial-containerize-java-kubernetes.md)
 
 ## <a name="aks-with-standard-load-balancer-and-virtual-machine-scale-sets"></a>AKS с Load Balancer (цен. категория "Стандартный") и масштабируемыми наборами виртуальных машин
 

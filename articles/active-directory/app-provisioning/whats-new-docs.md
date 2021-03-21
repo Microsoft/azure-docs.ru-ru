@@ -10,10 +10,10 @@ ms.author: kenwith
 author: kenwith
 manager: daveba
 ms.openlocfilehash: abee58607a5492548e4d64f44c15fd365876f3f5
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102453688"
 ---
 # <a name="azure-active-directory-application-provisioning-whats-new"></a>Azure Active Directory подготовка приложений: новые возможности
@@ -83,7 +83,7 @@ ms.locfileid: "102453688"
 
 ### <a name="new-articles"></a>Новые статьи
 
-- [Новые возможности в Документации Майкрософт](whats-new-docs.md)
+- [Новые возможности в документах](whats-new-docs.md)
 
 ### <a name="updated-articles"></a>Обновленные статьи
 - [Подготовка приложений в карантинном состоянии](application-provisioning-quarantine-status.md)

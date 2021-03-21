@@ -14,12 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/04/2020
 ms.author: yelevin
-ms.openlocfilehash: 3a07670e3348f74fb5c6eaec57f5e9da627e8c09
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 048a089209ef7c5f20c96f77593e2cf39590147e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100586732"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104600532"
 ---
 # <a name="tutorial-visualize-and-monitor-your-data"></a>Руководство по Визуализация и мониторинг данных
 
@@ -76,6 +76,17 @@ ms.locfileid: "100586732"
 
    ![Переключение книг](./media/tutorial-monitor-data/switch-workbooks.png)
 
+
+## <a name="print-a-workbook-or-save-as-pdf"></a>Печать книги или сохранение в формате PDF
+
+Чтобы распечатать книгу или сохранить ее в формате PDF, используйте меню параметров справа от заголовка книги.
+
+1. Выберите параметры > :::image type="icon" source="media/whats-new/print-icon.png" border="false"::: **печати содержимого**. 
+2. На экране печати настройте нужные параметры печати или выберите **Сохранить как PDF** , чтобы сохранить его локально.
+
+Пример:
+
+:::image type="content" source="media/whats-new/print-workbook.png" alt-text="Печать книги или сохранение в формате PDF.":::
 
 ## <a name="how-to-delete-workbooks"></a>Удаление книг
 

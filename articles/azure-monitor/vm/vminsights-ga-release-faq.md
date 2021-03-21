@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 01/31/2020
 ms.openlocfilehash: fbef73bfe8058110277b200b8c4091fcde110c04
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102031885"
 ---
 # <a name="vm-insights-generally-available-ga-frequently-asked-questions"></a>Часто задаваемые вопросы о VM Insights (общедоступная версия)

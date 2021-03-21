@@ -1,18 +1,18 @@
 ---
-title: Включение аналитики виртуальной машины с помощью политики Azure
+title: Включение VM insights с помощью Политики Azure
 description: В этой статье описывается, как включить аналитику ВМ для нескольких виртуальных машин Azure или масштабируемых наборов виртуальных машин с помощью политики Azure.
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 07/27/2020
 ms.openlocfilehash: 51baf009543208fbbfe091238d0215a24761641d
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102031962"
 ---
-# <a name="enable-vm-insights-by-using-azure-policy"></a>Включение аналитики виртуальной машины с помощью политики Azure
+# <a name="enable-vm-insights-by-using-azure-policy"></a>Включение VM insights с помощью Политики Azure
 В этой статье объясняется, как включить аналитику VM для виртуальных машин Azure или гибридной виртуальной машины, подключенной к службе "Дуга Azure (Предварительная версия)", с помощью политики Azure. Политика Azure позволяет назначать определения политик, которые устанавливают необходимые агенты для виртуальной машины в среде Azure, и автоматически включать мониторинг виртуальных машин при создании каждой виртуальной машины. VM Insights предоставляет функцию, позволяющую обнаруживать и исправлять несоответствующие требованиям виртуальные машины в вашей среде. Используйте эту функцию вместо непосредственной работы с политикой Azure.
 
 Если вы не знакомы с политикой Azure, ознакомьтесь с краткими сведениями о [развертывании Azure Monitor в масштабе с помощью политики Azure](../deploy-scale.md).
@@ -20,7 +20,7 @@ ms.locfileid: "102031962"
 > [!NOTE]
 > Чтобы использовать политику Azure с масштабируемыми наборами виртуальных машин Azure или напрямую работать с политикой Azure для включения виртуальных машин Azure, см. статью [развертывание Azure Monitor в масштабе с помощью политики Azure](../deploy-scale.md#vm-insights).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 - [Создание и Настройка рабочей области log Analytics](./vminsights-configure-workspace.md).
 - Ознакомьтесь с [поддерживаемыми операционными системами](./vminsights-enable-overview.md#supported-operating-systems) , чтобы убедиться, что операционная система, которую вы включаете, поддерживается. 
 
@@ -47,7 +47,7 @@ ms.locfileid: "102031962"
    > [!NOTE]
    > Если рабочая область находится за пределами области назначения, предоставьте разрешения *участника Log Analytics* для идентификатора участника назначения политики. Если этого не сделать, может отобразиться ошибка развертывания `The client '343de0fe-e724-46b8-b1fb-97090f7054ed' with object id '343de0fe-e724-46b8-b1fb-97090f7054ed' does not have authorization to perform action 'microsoft.operationalinsights/workspaces/read' over scope ...`
 
-[![Рабочей области](media/vminsights-enable-policy/assignment-workspace.png)](media/vminsights-enable-policy/assignment-workspace.png#lightbox)
+[![Рабочая область](media/vminsights-enable-policy/assignment-workspace.png)](media/vminsights-enable-policy/assignment-workspace.png#lightbox)
 
 Щелкните **проверить + создать** , чтобы проверить сведения о назначении перед нажатием кнопки **создать** , чтобы создать его. Не создавайте задачу исправления на этом этапе, так как вам, скорее всего, потребуется несколько задач исправления, чтобы включить существующие виртуальные машины. См. статью [исправление результатов проверки соответствия](#remediate-compliance-results) ниже.
 
