@@ -7,12 +7,12 @@ ms.service: vpn-gateway
 ms.topic: troubleshooting
 ms.date: 01/31/2018
 ms.author: cherylmc
-ms.openlocfilehash: 0718a1b211fe6365af30a330fe6a3742cff2ff63
-ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
+ms.openlocfilehash: a74109594eec87dddf637542f6d85091ed49231b
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "84984432"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104720259"
 ---
 # <a name="troubleshoot-vpn-gateway"></a>Устранение неполадок VPN-шлюза
 
@@ -28,6 +28,8 @@ ms.locfileid: "84984432"
 
 * [Подключения "сеть — сеть"](vpn-gateway-troubleshoot-site-to-site-cannot-connect.md)<br>После настройки подключения VPN типа "сеть — сеть" между локальной сетью и виртуальной сетью Azure VPN-подключение внезапно завершается сбоем и его невозможно восстановить. В этой статье приведены действия по устранению этой проблемы.
 
-## <a name="next-steps"></a>Дальнейшие действия
+* [Устранение неполадок VPN-шлюза Azure с помощью журналов диагностики](troubleshoot-vpn-with-azure-diagnostics.md)<br>С помощью журналов диагностики можно устранить неполадки нескольких событий, связанных с VPN-шлюзом, включая действия по настройке, подключение VPN-туннеля, ведение журнала IPsec, Обмен маршрутами BGP, а также дополнительное ведение журнала на сайте. 
+
+## <a name="next-steps"></a>Следующие шаги
 
 Эту процедуру можно также использовать, чтобы [проверить подключения виртуальной сети и VPN-подключения](https://support.microsoft.com/help/4032151/configuring-and-validating-vnet-or-vpn-connections).

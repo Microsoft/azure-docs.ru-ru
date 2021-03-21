@@ -9,10 +9,10 @@ ms.date: 1/21/2021
 ms.service: azure
 ms.topic: how-to
 ms.openlocfilehash: a33e7ff230292d4ceb14610e3cf00935dc1a67a0
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103493175"
 ---
 # <a name="feature-support-and-retirement"></a>Поддержка и прекращение использования функций
@@ -41,6 +41,6 @@ ms.locfileid: "103493175"
 
 При предварительном просмотре микроагент может столкнуться с критическими изменениями без предварительного уведомления.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Ознакомьтесь [с API-интерфейсами для датчиков Интернета вещей и консоли управления](references-work-with-defender-for-iot-apis.md).

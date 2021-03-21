@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 03/14/2021
 ms.author: shhazam
 ms.openlocfilehash: ef72be60b6294ad4e1fca2ce9c0e3c66b64ac687
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103493968"
 ---
 # <a name="whats-new-in-azure-defender-for-iot"></a>Новые возможности защитника Azure для IoT
@@ -131,6 +131,6 @@ ms.locfileid: "103493968"
 Термин ресурс был переименован в датчик и локальную консоль управления, отчеты и другие интерфейсы решения.
 В оповещениях консоли управления датчиков и локальной среде термин управление этим событием называется действиями по исправлению.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Начало работы с защитником для Интернета вещей](getting-started.md)

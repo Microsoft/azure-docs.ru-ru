@@ -11,10 +11,10 @@ ms.date: 03/03/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: ace0ccb8372ff21a2d3e8721baf09bab539846c2
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102033680"
 ---
 # <a name="use-the-azure-portal-to-create-and-delete-consumer-users-in-azure-ad-b2c"></a>Используйте портал Azure для создания и удаления пользователей-получателей в Azure AD B2C

@@ -5,19 +5,25 @@ author: vermagit
 ms.service: virtual-machines
 ms.subservice: hpc
 ms.topic: article
-ms.date: 03/12/2021
+ms.date: 03/18/2021
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: 9185f502a7d9dd7ab00a149fb2f3365372b350cc
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.openlocfilehash: 65a06a60b502b0e189ebe8a5e203553494f5d128
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103470743"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104721289"
 ---
 # <a name="scaling-hpc-applications"></a>Масштабирование приложений HPC
 
 Оптимальное масштабирование и масштабирование производительности приложений HPC в Azure требуют экспериментов по настройке и оптимизации производительности для конкретной рабочей нагрузки. Этот раздел и страницы, относящиеся к ряду виртуальных машин, содержат общие рекомендации по масштабированию приложений.
+
+## <a name="application-setup"></a>Настройка приложения
+[Репозиторий азурехпк](https://github.com/Azure/azurehpc) содержит множество примеров:
+- Оптимальная настройка и запуск [приложений](https://github.com/Azure/azurehpc/tree/master/apps) .
+- Настройка [файловых систем и кластеров](https://github.com/Azure/azurehpc/tree/master/examples).
+- [Руководства](https://github.com/Azure/azurehpc/tree/master/tutorials) по быстрому началу работы с некоторыми распространенными рабочими процессами приложения.
 
 ## <a name="optimally-scaling-mpi"></a>Оптимальное масштабирование MPI 
 
@@ -48,6 +54,9 @@ ms.locfileid: "103470743"
 - Для выполнения значительно большего масштаба рекомендуется использовать обновления или гибридные транспорты RC + обновления. Многие библиотеки MPI и библиотеки времени выполнения выполняют это внутренне (например, УККС или MVAPICH2). Проверьте конфигурации транспорта для крупномасштабных запусков.
 
 ## <a name="compiling-applications"></a>Компиляция приложений
+<br>
+<details>
+<summary>Щелкните, чтобы развернуть</summary>
 
 Несмотря на то, что компиляция приложений с соответствующими флагами оптимизации обеспечивает наилучшую производительность для виртуальных машин серии ХБ и HC.
 
@@ -96,7 +105,8 @@ icc -o stream.intel stream.c -DSTATIC -DSTREAM_ARRAY_SIZE=800000000 -mcmodel=lar
 ```bash
 gcc $(OPTIMIZATIONS) $(OMP) $(STACK) $(STREAM_PARAMETERS) stream.c -o stream.gcc
 ```
+</details>
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о [HPC](/azure/architecture/topics/high-performance-computing/) в Azure.

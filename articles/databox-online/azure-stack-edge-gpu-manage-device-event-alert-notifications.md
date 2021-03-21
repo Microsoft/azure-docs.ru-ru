@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
 ms.openlocfilehash: 585343137a4a8fd8a1fb591c640e1183d71c0fd3
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102443103"
 ---
 # <a name="manage-device-event-alert-notifications-on-azure-stack-edge-pro-resources"></a>Управление уведомлениями о событиях устройств на Azure Stack пограничных ресурсах Pro
@@ -89,7 +89,7 @@ ms.locfileid: "102443103"
    > [!NOTE]
    > Чтобы создать правило, которое подавляет уведомления, выберите **подавление**. Дополнительные сведения см. в разделе [Настройка правила действий](../azure-monitor/alerts/alerts-action-rules.md?tabs=portal#configuring-an-action-rule).
 
-6. Выберите группу действий, которую вы хотите использовать с этим правилом действий. Затем выберите **Выбрать**. Новое правило действия будет добавлено в параметры уведомлений выбранной группы действий.
+6. Выберите группу действий, которую вы хотите использовать с этим правилом действий. Затем щелкните **Выбрать**. Новое правило действия будет добавлено в параметры уведомлений выбранной группы действий.
 
    Если необходимо создать новую группу действий, выберите **+ создать группу действий** и выполните действия, описанные в разделе [Создание группы действий с помощью портал Azure](../azure-monitor/alerts/action-groups.md#create-an-action-group-by-using-the-azure-portal).
 

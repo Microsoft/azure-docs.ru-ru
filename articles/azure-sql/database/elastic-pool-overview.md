@@ -12,10 +12,10 @@ ms.author: moslake
 ms.reviewer: ninarn, sstein
 ms.date: 12/9/2020
 ms.openlocfilehash: c478edf95ae345d64da630400fbf63ac613b73a6
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100653641"
 ---
 # <a name="elastic-pools-help-you-manage-and-scale-multiple-databases-in-azure-sql-database"></a>Управление несколькими базами данных в Базе данных SQL Azure и их масштабирование с помощью эластичных пулов
@@ -153,7 +153,7 @@ ms.locfileid: "100653641"
 
 В сочетании с рейтингами производительности можно использовать встроенные [средства](./alerts-insights-configure-portal.md) [мониторинга производительности](./performance-guidance.md) и оповещения.  Кроме того, База данных SQL может [выдавать значения метрик и журналы ресурсов](./metrics-diagnostic-telemetry-logging-streaming-export-configure.md?tabs=azure-portal) для упрощения мониторинга.
 
-## <a name="customer-case-studies"></a>Примеры реальных клиентов
+## <a name="customer-case-studies"></a>Примеры использования от клиентов
 
 - [SnelStart](https://azure.microsoft.com/resources/videos/azure-sql-database-case-study-snelstart/)
 

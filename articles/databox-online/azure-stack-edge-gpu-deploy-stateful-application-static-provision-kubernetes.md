@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/09/2021
 ms.author: alkohli
 ms.openlocfilehash: 01ba8e1f22deb376fd461be24d3f66f0a7f5e1ae
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102610490"
 ---
 # <a name="use-kubectl-to-run-a-kubernetes-stateful-application-with-a-persistentvolume-on-your-azure-stack-edge-pro-device"></a>Использование kubectl для запуска приложения Kubernetes с отслеживанием состояния с помощью Персистентволуме на устройстве Azure Stack ребра Pro
@@ -357,6 +357,6 @@ C:\Users\user>
     ![Удаление локального общего ресурса для ПС](./media/azure-stack-edge-gpu-deploy-stateful-application-static-provision-kubernetes/delete-edge-local-share-1.png)
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения о динамической подготовке хранилища см. в статье [развертывание приложения с отслеживанием состояния с помощью динамической подготовки на устройстве Azure Stack пограничной Pro](azure-stack-edge-gpu-deploy-stateful-application-dynamic-provision-kubernetes.md) .

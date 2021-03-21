@@ -7,10 +7,10 @@ ms.date: 01/05/2021
 author: lgayhardt
 ms.author: lagayhar
 ms.openlocfilehash: dcfe12b30e336863c8e112d9ad675a2f57fe48f4
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102179142"
 ---
 # <a name="azure-monitor-for-azure-data-explorer-preview"></a>Azure Monitor для обозреватель данных Azure (Предварительная версия)

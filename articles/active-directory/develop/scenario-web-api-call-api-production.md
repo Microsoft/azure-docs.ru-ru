@@ -12,20 +12,20 @@ ms.workload: identity
 ms.date: 05/07/2019
 ms.author: jmprieur
 ms.custom: aaddev
-ms.openlocfilehash: 370bedf04dc61e2a637f735580cd4df14061264a
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.openlocfilehash: 0ab5baef925b7c8589dd7852b6ff8058d67ba745
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98753341"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104675878"
 ---
 # <a name="a-web-api-that-calls-web-apis-move-to-production"></a>Веб-API, который вызывает веб-API: переместить в рабочую среду
 
-После получения маркера для вызова веб-API можно переместить приложение в рабочую среду.
+После получения маркера для вызова веб-API ниже приведены некоторые моменты, которые следует учитывать при переносе приложения в рабочую среду.
 
-[!INCLUDE [Move to production common steps](../../../includes/active-directory-develop-scenarios-production.md)]
+[!INCLUDE [Common steps to move to production](../../../includes/active-directory-develop-scenarios-production.md)]
 
-## <a name="learn-more"></a>Подробнее
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы знакомы с основами вызова веб-API из собственного веб-API, вы можете заинтересовать следующий учебник, в котором описывается код, используемый для создания защищенного веб-API, который вызывает веб-API.
 

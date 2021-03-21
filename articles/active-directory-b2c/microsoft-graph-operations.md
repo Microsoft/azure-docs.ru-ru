@@ -13,17 +13,17 @@ ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: a8ff94acbd9ffd491bf628ae61ee87634a9c6dd6
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102033628"
 ---
 # <a name="manage-azure-ad-b2c-with-microsoft-graph"></a>Управление Azure AD B2C с помощью Microsoft Graph
 
 Microsoft Graph позволяет управлять ресурсами в каталоге Azure AD B2C. Следующие операции API Microsoft Graph поддерживаются для управления Azure AD B2C ресурсами, включая пользователей, поставщиков удостоверений, потоки пользователей, пользовательские политики и ключи политики. Каждая ссылка в следующих разделах предназначена для соответствующей страницы в справочнике по Microsoft Graph API для этой операции. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы использовать MS API Graph и взаимодействовать с ресурсами в клиенте Azure AD B2C, необходима регистрация приложения, предоставляющая разрешения на это. Выполните действия, описанные в статье [управление Azure AD B2C с Microsoft Graph](microsoft-graph-get-started.md) , чтобы создать регистрацию приложения, которую может использовать приложение управления. 
 
@@ -43,7 +43,7 @@ Microsoft Graph позволяет управлять ресурсами в ка
 - [Список](/graph/api/authentication-list-phonemethods)
 - [Получить](/graph/api/phoneauthenticationmethod-get)
 - [Обновление](/graph/api/phoneauthenticationmethod-update)
-- [Удаление](/graph/api/phoneauthenticationmethod-delete)
+- [Удалить](/graph/api/phoneauthenticationmethod-delete)
 
 Обратите внимание, что операция [List](/graph/api/authentication-list-phonemethods) возвращает только включенные номера телефонов. Следующий номер телефона должен быть включен для использования с операциями списка. 
 
@@ -57,7 +57,7 @@ Microsoft Graph позволяет управлять ресурсами в ка
 - [Список](/graph/api/emailauthenticationmethod-list)
 - [Получить](/graph/api/emailauthenticationmethod-get)
 - [Обновление](/graph/api/emailauthenticationmethod-update)
-- [Удаление](/graph/api/emailauthenticationmethod-delete)
+- [Удалить](/graph/api/emailauthenticationmethod-delete)
 
 ## <a name="identity-providers"></a>Поставщики удостоверений
 
@@ -158,7 +158,7 @@ git clone https://github.com/Azure-Samples/ms-identity-dotnetcore-b2c-account-ma
 После получения примера кода настройте его для своей среды, а затем выполните сборку проекта:
 
 1. Откройте проект в [Visual Studio](https://visualstudio.microsoft.com) или [Visual Studio Code](https://code.visualstudio.com).
-1. Откройте `src/appsettings.json`.
+1. Откройте среду `src/appsettings.json`.
 1. В `appSettings` разделе замените `your-b2c-tenant` именем своего клиента и `Application (client) ID` `Client secret` значениями для регистрации приложения управления. Дополнительные сведения см. [в разделе Регистрация приложения Microsoft Graph](microsoft-graph-get-started.md).
 1. Откройте окно консоли в локальном клоне репозитория, перейдите в `src` каталог, а затем выполните сборку проекта:
 
@@ -181,7 +181,7 @@ git clone https://github.com/Azure-Samples/ms-identity-dotnetcore-b2c-account-ma
 
 Для любого запроса к Microsoft Graph API требуется маркер доступа для проверки подлинности. Решение использует пакет NuGet [Microsoft. Graph. auth](https://www.nuget.org/packages/Microsoft.Graph.Auth/) , который предоставляет оболочку на основе сценария проверки подлинности Майкрософт (MSAL) для использования с пакетом SDK для Microsoft Graph.
 
-`RunAsync`Метод в файле _Program.CS_ :
+`RunAsync`Метод в файле _Program. CS_ :
 
 1. Чтение параметров приложения из _appsettings.js_ файла
 1. Инициализирует поставщик проверки подлинности с помощью потока [предоставления учетных данных клиента OAuth 2,0](../active-directory/develop/v2-oauth2-client-creds-grant-flow.md) . Используя поток предоставления учетных данных клиента, приложение может получить маркер доступа для вызова API Microsoft Graph.
@@ -203,7 +203,7 @@ git clone https://github.com/Azure-Samples/ms-identity-dotnetcore-b2c-account-ma
     GraphServiceClient graphClient = new GraphServiceClient(authProvider);
     ```
 
-Затем инициализированный *графсервицеклиент* используется в _UserService.CS_ для выполнения операций управления пользователями. Например, получение списка учетных записей пользователей в клиенте:
+Затем инициализированный *графсервицеклиент* используется в _UserService. CS_ для выполнения операций управления пользователями. Например, получение списка учетных записей пользователей в клиенте:
 
 ```csharp
 public static async Task ListUsers(GraphServiceClient graphClient)

@@ -13,12 +13,12 @@ ms.date: 05/07/2019
 ms.author: jmprieur
 ms.reviewer: jmprieur
 ms.custom: aaddev
-ms.openlocfilehash: d1a7407c947c1c5bae1eed00acb0f216722f3d09
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 08243fd06de289941d8e6a9197ccb349614af056
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88121040"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104675963"
 ---
 # <a name="prepare-mobile-apps-for-production"></a>Подготовка мобильных приложений для рабочей среды
 
@@ -34,18 +34,9 @@ ms.locfileid: "88121040"
 - [Вики-сайт MSAL iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc/wiki)
 - [Вики-сайт MSAL.NET](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki)
 
-## <a name="mitigate-and-investigate-issues"></a>Устранение неполадок и их анализ
-
-Чтобы лучше диагностировать проблемы в приложении, собирайте данные. Сведения о типах данных, которые можно отслеживать, см. в разделе [ведение журнала в приложениях MSAL](./msal-logging.md).
-
-Ниже приведены некоторые рекомендации по сбору данных.
-
-- Пользователи могут запросить помощь в случае возникновения проблем. Рекомендуется записывать и временно сохранять журналы. Укажите расположение, в котором пользователи могут отправлять журналы. MSAL предоставляет расширения ведения журнала для записи подробных сведений о проверке подлинности.
-
-- Если данные телеметрии доступны, включите ее через MSAL для сбора данных о том, как пользователи входят в приложение.
-
-## <a name="next-steps"></a>Дальнейшие шаги
 
 [!INCLUDE [Common steps to move to production](../../../includes/active-directory-develop-scenarios-production.md)]
+
+## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы испытать дополнительные примеры, см. раздел [общедоступные клиентские приложения для настольных систем и мобильных устройств](sample-v2-code.md#desktop-and-mobile-public-client-apps).

@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.custom: devx-track-js, devx-track-csharp
 ms.openlocfilehash: 3fe6ee8336872c04e85b732713494adf0fefa28a
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103011448"
 ---
 # <a name="accept-active-learning-suggested-questions-in-the-knowledge-base"></a>Принять предлагаемые активные обучающие вопросы в базе знаний
@@ -160,8 +160,8 @@ Content-Type: application/json
 |--|--|--|--|
 |Параметр URL-маршрута|Идентификатор базы знаний|строка|Идентификатор GUID для базы знаний.|
 |Пользовательский поддомен|Имя ресурса QnAMaker|строка|Имя ресурса используется в качестве пользовательского поддомена для QnA Maker. Это можно найти на странице параметры после публикации базы знаний. Он указан как `host` .|
-|Заголовок|Content-Type|строка|Тип носителя текста, отправляемого в API. Значение по умолчанию: `application/json`|
-|Заголовок|Авторизация|строка|Ключ конечной точки (EndpointKey xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|
+|Header|Content-Type|строка|Тип носителя текста, отправляемого в API. Значение по умолчанию: `application/json`|
+|Header|Авторизация|строка|Ключ конечной точки (EndpointKey xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|
 |Текст запроса POST|Объект JSON|JSON|Отзыв по обучению|
 
 Тело JSON имеет несколько параметров:
@@ -171,7 +171,7 @@ Content-Type: application/json
 |`feedbackRecords`|array|Список отзывов.|
 |`userId`|строка|Идентификатор пользователя, который принимает предлагаемые вопросы. Пользователь должен иметь формат идентификатора пользователя. Например, адрес электронной почты может быть допустимым ИДЕНТИФИКАТОРом пользователя в вашей архитектуре. Необязательный параметр.|
 |`userQuestion`|строка|Точный текст запроса пользователя. Обязательный.|
-|`qnaID`|number|Идентификатор вопроса, найденный в [ответе женератеансвер](metadata-generateanswer-usage.md#generateanswer-response-properties). |
+|`qnaID`|Число|Идентификатор вопроса, найденный в [ответе женератеансвер](metadata-generateanswer-usage.md#generateanswer-response-properties). |
 
 Пример текста JSON выглядит следующим образом:
 

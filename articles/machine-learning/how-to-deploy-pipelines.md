@@ -12,10 +12,10 @@ ms.date: 8/25/2020
 ms.topic: conceptual
 ms.custom: how-to, contperf-fy21q1
 ms.openlocfilehash: efedb21a1ec1ed53a8c6bfadf337d23a89c04383
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102520182"
 ---
 # <a name="publish-and-track-machine-learning-pipelines"></a>Публикация и мониторинг конвейеров машинного обучения
@@ -90,7 +90,7 @@ response = requests.post(published_pipeline1.endpoint,
 
 `json`Аргумент для запроса POST должен содержать, для `ParameterAssignments` ключа, словарь, содержащий параметры конвейера и их значения. Кроме того, `json` аргумент может содержать следующие ключи:
 
-| Клавиши | Описание |
+| Ключ | Описание |
 | --- | --- | 
 | `ExperimentName` | Имя эксперимента, связанного с этой конечной точкой |
 | `Description` | Произвольный текст, описывающий конечную точку | 

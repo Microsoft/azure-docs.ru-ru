@@ -10,12 +10,12 @@ ms.topic: article
 ms.date: 03/12/2021
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: c92c30da2b8e78715df46341dc4bc502ed5e34ce
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.openlocfilehash: 87c3e4e9b509589624a228ea2e1f4b68e86e3fa8
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103472880"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104721130"
 ---
 # <a name="hbv3-series-virtual-machine-performance"></a>Производительность виртуальных машин серии HBv3
 
@@ -49,7 +49,7 @@ ms.locfileid: "103472880"
 ```console
 numactl --physcpubind=[INSERT CORE #]  ib_send_lat -a
 ```
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 - Дополнительные сведения о [масштабировании приложений MPI](compiling-scaling-applications.md).
-- Ознакомьтесь с последними объявлениями и некоторыми примерами высокопроизводительных вычислений (HPC) и результатами в [блогах сообщества разработчиков Azure](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
+- Ознакомьтесь с последними объявлениями, примерами рабочей нагрузки HPC и результатами производительности в [блогах сообщества разработчиков Azure](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
 - Более высокоуровневое архитектурное представление выполнения рабочих нагрузок HPC см. в статье [высокопроизводительные вычисления (HPC) в Azure](/azure/architecture/topics/high-performance-computing/).

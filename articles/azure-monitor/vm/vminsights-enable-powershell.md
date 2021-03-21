@@ -1,24 +1,24 @@
 ---
-title: Включение аналитики виртуальной машины с помощью PowerShell
+title: Включение VM insights с помощью PowerShell
 description: Описание включения аналитики виртуальной машины для виртуальных машин Azure или масштабируемых наборов виртуальных машин с помощью Azure PowerShell.
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 07/27/2020
 ms.openlocfilehash: b51a49abda76a4d1433336cf73dc9a0dd6e40787
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102031888"
 ---
-# <a name="enable-vm-insights-using-powershell"></a>Включение аналитики виртуальной машины с помощью PowerShell
+# <a name="enable-vm-insights-using-powershell"></a>Включение VM insights с помощью PowerShell
 В этой статье описывается, как включить аналитику ВМ на виртуальных машинах Azure с помощью PowerShell. Эту процедуру можно использовать для следующих действий:
 
 - Виртуальная машина Azure
 - Масштабируемый набор виртуальных машин Azure
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - [Создание и Настройка рабочей области log Analytics](./vminsights-configure-workspace.md).
 - Ознакомьтесь с [поддерживаемыми операционными системами](./vminsights-enable-overview.md#supported-operating-systems) , чтобы убедиться, что операционная система, которую вы включаете, поддерживается. 

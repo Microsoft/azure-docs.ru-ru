@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.date: 03/02/2021
 ms.author: thvankra
 ms.openlocfilehash: ed0ff343595429a4cb81fef280203f1180eeb098
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101746586"
 ---
 # <a name="configure-grafana-to-visualize-metrics-emitted-from-the-managed-instance-cluster"></a>Настройка Grafana для визуализации метрик, выпущенных из кластера управляемых экземпляров
 
 > [!IMPORTANT]
-> Azure Управляемый экземпляр для Apache Cassandra в настоящее время находится в общедоступной предварительной версии.
+> Служба "Управляемый экземпляр Azure для Apache Cassandra" сейчас предоставляется в общедоступной предварительной версии.
 > Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены.
 > Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 

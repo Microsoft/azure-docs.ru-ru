@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
 ms.openlocfilehash: c2f66895fccd14dcffd8c5570f1d5f46933090aa
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102439193"
 ---
 # <a name="enable-azure-monitor-on-your-azure-stack-edge-pro-gpu-device"></a>Включение Azure Monitor на устройстве Azure Stackного графического процессора Pro
@@ -24,7 +24,7 @@ ms.locfileid: "102439193"
 В этой статье описываются шаги, необходимые для включения Azure Monitor на устройстве и сбора журналов контейнеров в Log Analytics рабочей области. Хранилище метрик Azure Monitor в настоящее время не поддерживается на устройстве с графическим процессором Azure Stack. 
 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем начать, вам потребуется:
 

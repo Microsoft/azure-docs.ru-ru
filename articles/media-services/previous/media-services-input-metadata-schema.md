@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 03/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: eebe1c77c9af6791be94c16f0f792a9e7deb9a6e
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103017415"
 ---
 # <a name="input-metadata"></a>Входные метаданные
@@ -72,7 +72,7 @@ ms.locfileid: "103017415"
 | **Programs**<br /><br /> minOccurs="0" | |Коллекция всех [элементов Programs](media-services-input-metadata-schema.md#Programs), если файл ресурса-контейнера имеет формат MPEG-TS. |
 | **VideoTracks**<br /><br /> minOccurs="0" | |Каждый физический файл ресурса может содержать ноль или более видеодорожек, чередуемых в соответствующем формате ресурса. Этот элемент содержит коллекцию всех [элементов VideoTracks](media-services-input-metadata-schema.md#VideoTracks), которые являются частью файла ресурса. |
 | **AudioTracks**<br /><br /> minOccurs="0" | |Каждый физический файл ресурса-контейнера может содержать ноль или более звуковых дорожек, чередуемых в соответствующем формате ресурса-контейнера. Этот элемент содержит коллекцию всех [элементов AudioTracks](media-services-input-metadata-schema.md#AudioTracks), которые являются частью файла ресурса. |
-| **Метаданные**<br /><br /> minOccurs="0" maxOccurs="unbounded" |[метадататипе](media-services-input-metadata-schema.md#MetadataType) |Метаданные файла ресурса-контейнера, представленные в виде строки "ключ —значение". Пример.<br /><br /> **&lt;Ключ метаданных = "язык" значение = "ENG"/&gt;** |
+| **Метаданные**<br /><br /> minOccurs="0" maxOccurs="unbounded" |[метадататипе](media-services-input-metadata-schema.md#MetadataType) |Метаданные файла ресурса-контейнера, представленные в виде строки "ключ —значение". Пример:<br /><br /> **&lt;Ключ метаданных = "язык" значение = "ENG"/&gt;** |
 
 ## <a name="tracktype"></a><a name="TrackType"></a> TrackType
 Пример XML-файла см. в разделе [Пример XML-файла](media-services-input-metadata-schema.md#xml) в конце статьи.  
@@ -647,7 +647,7 @@ ms.locfileid: "103017415"
 </AssetFiles>  
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
 
 ## <a name="provide-feedback"></a>Отзывы

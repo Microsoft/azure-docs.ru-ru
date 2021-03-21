@@ -1,25 +1,25 @@
 ---
-title: Включение аналитики виртуальной машины с помощью шаблонов диспетчер ресурсов
+title: Включение VM insights с помощью шаблонов Resource Manager
 description: В этой статье описывается, как включить аналитику VM для одной или нескольких виртуальных машин Azure или масштабируемых наборов виртуальных машин с помощью Azure PowerShell или шаблонов Azure Resource Manager.
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 07/27/2020
 ms.openlocfilehash: fc0c304a3fea81f44e01d3e815f34e44728ea42e
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102031887"
 ---
-# <a name="enable-vm-insights-using-resource-manager-templates"></a>Включение аналитики виртуальной машины с помощью шаблонов диспетчер ресурсов
+# <a name="enable-vm-insights-using-resource-manager-templates"></a>Включение VM insights с помощью шаблонов Resource Manager
 В этой статье описывается, как включить аналитику VM для виртуальной машины или масштабируемого набора виртуальных машин с помощью шаблонов диспетчер ресурсов. Эту процедуру можно использовать для следующих действий:
 
 - Виртуальная машина Azure
 - Масштабируемый набор виртуальных машин Azure
 - Гибридная виртуальная машина, подключенная к службе "Дуга Azure"
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - [Создание и Настройка рабочей области log Analytics](./vminsights-configure-workspace.md). 
 - Ознакомьтесь с [поддерживаемыми операционными системами](./vminsights-enable-overview.md#supported-operating-systems) , чтобы убедиться, что операционная система, которую вы включаете, поддерживается. 

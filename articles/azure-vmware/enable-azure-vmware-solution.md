@@ -1,17 +1,17 @@
 ---
-title: Запрос квоты узла и включение решения VMware для Azure
+title: Запрос квоты узла и включение Решения Azure VMware
 description: Узнайте, как запросить квоту и емкость узла и включить поставщик ресурсов решения Azure VMware. Вы также можете запросить дополнительные узлы в существующем частном облаке решения VMware Azure.
 ms.topic: how-to
 ms.custom: contperf-fy21q3
 ms.date: 02/17/2021
 ms.openlocfilehash: 5d154f5c63ffccdbf1729e641133b54be478d884
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100653177"
 ---
-# <a name="request-host-quota-and-enable-azure-vmware-solution"></a>Запрос квоты узла и включение решения VMware для Azure
+# <a name="request-host-quota-and-enable-azure-vmware-solution"></a>Запрос квоты узла и включение Решения Azure VMware
 
 В этом пошаговом окне вы узнаете, как запросить квоту и емкость узла и включить поставщик ресурсов [решения VMware для Azure](introduction.md) , который включает службу. Перед включением решения VMware для Azure необходимо отправить запрос в службу поддержки, чтобы узлы были распределены. Если у вас есть существующее частное облако решения Azure VMware и требуется выделить больше узлов, выполните тот же процесс.
 

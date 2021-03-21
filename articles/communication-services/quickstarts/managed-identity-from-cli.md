@@ -10,10 +10,10 @@ ms.date: 03/10/2021
 ms.author: jbeauregardb
 ms.reviewer: mikben
 ms.openlocfilehash: e708536395807fc74dc5bfd73836e050832cca39
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103493345"
 ---
 # <a name="authorize-access-with-managed-identity-to-your-communication-resource-in-your-development-environment"></a>Авторизация доступа с помощью управляемого удостоверения к ресурсу связи в среде разработки
@@ -80,7 +80,7 @@ az ad sp create-for-rbac --name <application-name>
 > После задания переменных среды закройте и снова откройте окно консоли. Если вы используете Visual Studio или другую среду разработки, может потребоваться перезапустить ее, чтобы зарегистрировать новые переменные среды.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Сведения о проверке подлинности](../concepts/authentication.md)

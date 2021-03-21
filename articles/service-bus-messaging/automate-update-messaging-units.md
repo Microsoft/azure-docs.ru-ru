@@ -4,10 +4,10 @@ description: В этой статье показано, как можно исп
 ms.topic: how-to
 ms.date: 03/03/2021
 ms.openlocfilehash: 7fc3aca82b8f01d70dec4fc2dac7842895417ec9
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102177961"
 ---
 # <a name="automatically-update-messaging-units-of-an-azure-service-bus-namespace"></a>Автоматическое обновление единиц обмена сообщениями в пространстве имен Служебной шины Azure 

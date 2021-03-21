@@ -9,12 +9,12 @@ services: iot-hub
 ms.topic: conceptual
 ms.date: 03/15/2018
 ms.custom: mqtt, devx-track-azurecli
-ms.openlocfilehash: 5515d1084b28091cf7d20958cfca8af3f2664563
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: 154b496a6c14d307c09ddcd1b42bf4ba568cb315
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102199498"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104607897"
 ---
 # <a name="send-cloud-to-device-messages-from-an-iot-hub"></a>Отправка сообщений из облака на устройство из центра Интернета вещей
 
@@ -90,6 +90,8 @@ ms.locfileid: "102199498"
 | EnqueuedTime | Отметка времени, указывающая, когда центр получил сообщение отзыва |
 | UserId       | `{iot hub name}` |
 | ContentType  | `application/vnd.microsoft.iothub.feedback.json` |
+
+Система отправит отзыв при поступлении пакета в 64 сообщений или через 15 секунд с момента последней отправки, в зависимости от того, какое из них будет первым. 
 
 Основная часть — это сериализованный массив записей JSON, каждая из которых имеет следующие свойства:
 

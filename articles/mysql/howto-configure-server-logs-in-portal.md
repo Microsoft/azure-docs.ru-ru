@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 3/15/2021
 ms.openlocfilehash: 91569780aa71861e07c7e96bec5eac879642760d
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103496224"
 ---
 # <a name="configure-and-access-slow-query-logs-from-the-azure-portal"></a>Настройка и доступ к журналам запросов с высокой занесением портал Azure
@@ -84,7 +84,7 @@ ms.locfileid: "103496224"
 
 6. Получите доступ к журналам запросов с задержкой, изучив их в настроенных приемниках данных. Для отображения журналов может потребоваться до 10 минут.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 - Сведения о том, как программно скачивать журналы запросов, см. [в статье доступ к журналам запросов с помощью интерфейса командной строки](howto-configure-server-logs-in-cli.md) .
 - Дополнительные сведения о [медленных журналах запросов](concepts-server-logs.md) в базе данных Azure для MySQL.
 - Дополнительные сведения об определениях параметров и ведении журнала MySQL см. в документации MySQL по [журналам](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html).

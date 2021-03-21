@@ -8,12 +8,12 @@ ms.service: data-factory
 ms.topic: include
 ms.custom: include file
 ms.date: 06/27/2019
-ms.openlocfilehash: a979cd0a4c2ee6466edebadf61e8a98b8f17c9f3
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.openlocfilehash: 0c21c576cbb99ccc96bf7edf733769a9b28b9344
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96013383"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104612326"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -59,7 +59,8 @@ ms.locfileid: "96013383"
 2. На панели инструментов страницы *\<Account name>*  - **Контейнеры** выберите **Контейнер**.
 3. В диалоговом окне **Создание контейнера** введите **adftutorial** в качестве имени и щелкните **ОК**. Страница *\<Account name>*  - **Контейнеры** будет обновлена и контейнер **adftutorial** появится в списке.
 
-   ![Список контейнеров](media/data-factory-quickstart-prerequisites/list-of-containers.png)
+   :::image type="content" source="media/data-factory-quickstart-prerequisites/list-of-containers.png" alt-text="Список контейнеров":::
+
 
 #### <a name="add-an-input-folder-and-file-for-the-blob-container"></a>Добавление входной папки и файла для контейнера BLOB-объектов
 
@@ -82,7 +83,8 @@ Jane, Doe
 3. На странице **Отправка BLOB-объектов** выберите поле **Файлы**, а затем найдите и выберите файл **emp.txt**.
 4. Разверните заголовок **Дополнительно**. Теперь страница отображается, как показано ниже:
 
-   ![Щелкните Advanced (Дополнительно).](media/data-factory-quickstart-prerequisites/upload-blob-advanced.png)
+   :::image type="content" source="media/data-factory-quickstart-prerequisites/upload-blob-advanced.png" alt-text="Щелкните Advanced (Дополнительно).":::
+
 5. В поле **Отправить в папку** введите **input**.
 6. Нажмите кнопку **Отправить**. В списке должен отобразиться файл **emp.txt** с состоянием отправки.
 7. Щелкните **Закрыть** значок (**X**), чтобы закрыть страницу **Отправка BLOB-объектов**.

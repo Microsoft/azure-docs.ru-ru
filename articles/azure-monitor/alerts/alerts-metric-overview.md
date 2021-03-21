@@ -4,10 +4,10 @@ description: Ознакомьтесь с обзором действий, при
 ms.date: 03/11/2021
 ms.topic: conceptual
 ms.openlocfilehash: 8a243f0a2130e0ec2ebafe726f48e07c148807c1
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103016089"
 ---
 # <a name="understand-how-metric-alerts-work-in-azure-monitor"></a>Сведения о работе оповещений о метриках в Azure Monitor
@@ -146,7 +146,7 @@ ms.locfileid: "103016089"
 | Пулы емкости NetApp файлов | **Да** | **Да** | **Да** |
 | Тома NetApp Files | **Да** | **Да** | **Да** |
 | Хранилища ключей | **Да** | **Да** | **Да** |
-| Кэш Redis для Azure | **Да** | **Да** | **Да** |
+| Кэш Azure для Redis | **Да** | **Да** | **Да** |
 | Устройства с пограничными ящиками данных | **Да** | **Да** | **Да** |
 
 <sup>1</sup> не поддерживается для метрик сети виртуальной машины (общая сеть, общий объем сети, входящие потоки, исходящие потоки, максимальная частота создания входящих потоков, максимальная скорость создания исходящих потоков).
@@ -176,7 +176,7 @@ ms.locfileid: "103016089"
 Полный список поддерживаемых типов ресурсов можно найти в этой [статье](./alerts-metric-near-real-time.md#metrics-and-dimensions-supported).
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Узнайте, как создавать, просматривать оповещения метрик и управлять ими в Azure.](../alerts/alerts-metric.md)
 - [Узнайте, как создавать оповещения в Azure Монтиор обозреватель метрик](../essentials/metrics-charts.md#alert-rules)

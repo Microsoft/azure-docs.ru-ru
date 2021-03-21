@@ -7,10 +7,10 @@ ms.author: vitalyg
 ms.date: 09/18/2018
 ms.reviewer: mbullwin
 ms.openlocfilehash: acbe535d740eb527d165be1675f31e759851a987
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101717831"
 ---
 # <a name="log-based-and-pre-aggregated-metrics-in-application-insights"></a>Метрики на основе журналов и предварительно агрегированные метрики в Application Insights
@@ -58,7 +58,7 @@ ms.locfileid: "101717831"
 | Текущие рабочие пакеты SDK | Стандартные метрики (Предварительная агрегация пакета SDK) | Пользовательские метрики (без предварительного агрегирования пакета SDK) | Пользовательские метрики (предварительное агрегирование пакета SDK)|
 |-------------------------|--------------------------|-------------------------------------------|-----------------------------------------|
 | ASP.NET                 | Поддерживается <sup> 1<sup>    | Не поддерживается                             | Не поддерживается                           |
-| ASP.NET Core            | Поддерживается <sup> 2<sup>    | Не поддерживается                             | Не поддерживается                           |
+| ASP.NET Core            | Поддерживается <sup> 2<sup>    | Не поддерживается                             | Не поддерживается                           |
 | Java                    | Не поддерживается            | Не поддерживается                             | [Поддерживается](java-in-process-agent.md#metrics) |
 | Node.js                 | Не поддерживается            | Не поддерживается                             | Не поддерживается                           |
 

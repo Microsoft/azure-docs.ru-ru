@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 02/09/2020
 ms.author: amgowda
 ms.openlocfilehash: 550995f0be3d634e7e9f24a8bf6826916003308e
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100653403"
 ---
 # <a name="frequently-asked-questions-about-confidential-computing-nodes-on-azure-kubernetes-service-aks"></a>Часто задаваемые вопросы о конфиденциальных вычислительных узлах в службе Kubernetes Azure (AKS)
@@ -138,5 +138,5 @@ spec:
 ### <a name="will-only-signed-and-trusted-images-be-loaded-in-the-enclave-for-confidential-computing"></a>Будут ли подписаны и надежные образы загружены в анклава для конфиденциальных вычислений? ###
 Не является встроенным во время инициализации анклава, но можно проверить подпись процесса аттестации. Ссылка [здесь](../attestation/basic-concepts.md#benefits-of-policy-signing). 
 
-### <a name="next-steps"></a>Next Steps
+### <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения о конфиденциальных контейнерах см. на [странице конфиденциальные контейнеры](confidential-containers.md) .

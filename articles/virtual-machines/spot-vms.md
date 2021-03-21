@@ -9,12 +9,12 @@ ms.workload: infrastructure-services
 ms.topic: how-to
 ms.date: 10/05/2020
 ms.reviewer: cynthn
-ms.openlocfilehash: 0ed079dbfef50ae74914998c6b2e558b7e41aeae
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: fb53fc37227e040ed7bd7fc8e47de9aed538bc2e
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/20/2021
-ms.locfileid: "101673946"
+ms.locfileid: "104721398"
 ---
 # <a name="use-azure-spot-virtual-machines"></a>Использование виртуальных машин Azure для точки 
 
@@ -58,9 +58,9 @@ ms.locfileid: "101673946"
 
 В настоящее время поддерживаются следующие [типы предложений](https://azure.microsoft.com/support/legal/offer-details/) :
 
--   Соглашение Enterprise
--   Код предложения с оплатой по мере использования 003P
--   Спонсорские
+-   Соглашение Enterprise 
+-   Код предложения с оплатой по мере использования (003P)
+-   Спонсорские (0036P и 0136P)
 - Для поставщика облачных служб (CSP) обратитесь к своему партнеру.
 
 
@@ -117,7 +117,7 @@ ms.locfileid: "101673946"
 
 Ответ **.** Прежде чем можно будет изменить максимальную цену, необходимо освободить виртуальную машину. Затем можно изменить максимальную цену на портале в разделе **конфигурации** для виртуальной машины. 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Используйте интерфейс [командной строки](./linux/spot-cli.md), [портал](spot-portal.md), [шаблон ARM](./linux/spot-template.md)или [PowerShell](./windows/spot-powershell.md) для развертывания виртуальных машин с точкию Azure.
 
 Вы также можете развернуть [масштабируемый набор с помощью экземпляров виртуальных машин в Azure](../virtual-machine-scale-sets/use-spot.md).

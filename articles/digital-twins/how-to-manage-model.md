@@ -8,10 +8,10 @@ ms.date: 3/12/2020
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: 86efd7781c7353b4846c77eba01ed34fb63067ff
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102433256"
 ---
 # <a name="manage-azure-digital-twins-models"></a>Управление моделями цифровых двойников Azure
@@ -20,7 +20,7 @@ ms.locfileid: "102433256"
 
 К операциям управления относятся передача, проверка, извлечение и удаление моделей. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [digital-twins-prereq-instance.md](../../includes/digital-twins-prereq-instance.md)]
 
@@ -142,7 +142,7 @@ ms.locfileid: "102433256"
 
 Можно удалить все модели в экземпляре одновременно или сделать это отдельно.
 
-Пример того, как удалить все модели, можно скачать с помощью примера приложения, используемого в [*учебнике. Изучите основные сведения с примером клиентского приложения*](tutorial-command-line-app.md). Файл *CommandLoop.CS* делает это в `CommandDeleteAllModels` функции.
+Пример того, как удалить все модели, можно скачать с помощью примера приложения, используемого в [*учебнике. Изучите основные сведения с примером клиентского приложения*](tutorial-command-line-app.md). Файл *коммандлуп. CS* делает это в `CommandDeleteAllModels` функции.
 
 Оставшаяся часть этого раздела разделяет удаление модели на более подробные сведения и показывает, как это сделать для отдельной модели.
 

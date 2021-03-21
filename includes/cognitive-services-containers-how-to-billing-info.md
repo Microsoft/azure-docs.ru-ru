@@ -5,10 +5,10 @@ ms.date: 03/02/2021
 ms.service: cognitive-services
 ms.topic: include
 ms.openlocfilehash: d61813e723992f4381c5ea82121da8bbb70016dc
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102032941"
 ---
 Запросы к контейнеру оплачиваются согласно ценовой категории ресурсов Azure, используемой для `ApiKey`.

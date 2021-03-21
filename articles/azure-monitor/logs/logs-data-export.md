@@ -8,10 +8,10 @@ author: bwren
 ms.author: bwren
 ms.date: 02/07/2021
 ms.openlocfilehash: ea33eff30e712c1597c3606d74cb6d56683211ae
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102615590"
 ---
 # <a name="log-analytics-workspace-data-export-in-azure-monitor-preview"></a>Log Analytics экспорт данных рабочей области в Azure Monitor (Предварительная версия)
@@ -82,7 +82,7 @@ Log Analytics экспорт данных может записывать Доб
 1. SKU концентратора событий "базовый" поддерживает более низкий [предел](../../event-hubs/event-hubs-quotas.md#basic-vs-standard-tiers) размера событий, и некоторые журналы в рабочей области могут превыситься и быть удалены. В качестве назначения экспорта рекомендуется использовать концентратор событий "Стандартный" или "выделенный".
 2. Объем экспортированных данных часто увеличивается со временем, а масштаб концентратора событий должен быть увеличен для обработки больших скоростей передачи и предотвращения ситуаций регулирования и задержки данных. Для автоматического масштабирования и увеличения количества единиц пропускной способности и удовлетворения потребностей в использовании следует использовать функцию автоматического расширения концентраторов событий. Дополнительные сведения см. в статье [Автоматическое масштабирование единиц пропускной способности концентраторов событий Azure](../../event-hubs/event-hubs-auto-inflate.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Ниже приведены предварительные требования, которые необходимо выполнить перед настройкой Log Analytics экспорта данных.
 
 - Учетная запись хранения и концентратор событий уже должны быть созданы и должны находиться в том же регионе, что и Рабочая область Log Analytics. Если вам нужно реплицировать данные в другие учетные записи хранения, можно использовать любые [параметры избыточности хранилища Azure](../../storage/common/storage-redundancy.md).  
@@ -125,7 +125,7 @@ find where TimeGenerated > ago(24h) | distinct Type
 
 # <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-Недоступно
+Н/Д
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -401,7 +401,7 @@ PUT https://management.azure.com/subscriptions/<subscription-id>/resourcegroups/
 
 # <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-Недоступно
+Н/Д
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -425,7 +425,7 @@ GET https://management.azure.com/subscriptions/<subscription-id>/resourcegroups/
 
 # <a name="template"></a>[Шаблон](#tab/json)
 
-Недоступно
+Н/Д
 
 ---
 
@@ -433,7 +433,7 @@ GET https://management.azure.com/subscriptions/<subscription-id>/resourcegroups/
 
 # <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-Недоступно
+Н/Д
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -480,7 +480,7 @@ Content-type: application/json
 
 # <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-Недоступно
+Н/Д
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -504,7 +504,7 @@ DELETE https://management.azure.com/subscriptions/<subscription-id>/resourcegrou
 
 # <a name="template"></a>[Шаблон](#tab/json)
 
-Недоступно
+Н/Д
 
 ---
 
@@ -512,7 +512,7 @@ DELETE https://management.azure.com/subscriptions/<subscription-id>/resourcegrou
 
 # <a name="azure-portal"></a>[Портал Azure](#tab/portal)
 
-Недоступно
+Н/Д
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -536,7 +536,7 @@ GET https://management.azure.com/subscriptions/<subscription-id>/resourcegroups/
 
 # <a name="template"></a>[Шаблон](#tab/json)
 
-Недоступно
+Н/Д
 
 ---
 

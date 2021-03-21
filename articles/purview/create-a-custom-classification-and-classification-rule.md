@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 2/5/2021
 ms.openlocfilehash: 2966618619aa40ed60c2f3d0fb2c8e080d34a016
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102617052"
 ---
 # <a name="custom-classifications-in-azure-purview"></a>Пользовательские классификации в Azure зрения
@@ -99,7 +99,7 @@ ms.locfileid: "102617052"
    |Имя   |    Обязательный элемент. Максимальная длина — 100 символов.    |
    |Описание      |Необязательный параметр. Максимальная длина — 256 символов.    |
    |Имя классификации    | Обязательный. Выберите имя классификации из раскрывающегося списка, чтобы средство проверки применяло его при обнаружении соответствия.        |
-   |Область   |  Обязательный. Параметры включены или отключены. Параметр Enabled используется по умолчанию.    |
+   |Состояние   |  Обязательный. Параметры включены или отключены. Параметр Enabled используется по умолчанию.    |
 
    :::image type="content" source="media/create-a-custom-classification-and-classification-rule/create-new-classification-rule.png" alt-text="Создать новое правило классификации" border="true":::
 

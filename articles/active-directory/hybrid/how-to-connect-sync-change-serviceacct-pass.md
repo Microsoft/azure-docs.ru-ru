@@ -13,19 +13,22 @@ ms.workload: identity
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: how-to
-ms.date: 05/02/2019
+ms.date: 03/17/2021
 ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4dcc7ed6076c3bac723d709f50f1b3ab2ce8f58
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: e8778e50dcb881647696c6e901bf1058b9d6ac43
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "95996565"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104720344"
 ---
 # <a name="changing-the-adsync-service-account-password"></a>Изменение пароля учетной записи службы ADSync
 Если изменить пароль учетной записи службы ADSync, служба синхронизации не сможет правильно запуститься до тех пор, пока не будет отменен ключ шифрования и не повторно инициализирует пароль учетной записи службы ADSync. 
+
+>[!IMPORTANT]
+> При использовании Connect сборки за март 2017 года или более ранней не следует сбрасывать пароль учетной записи службы, так как после этого Windows удалит ключи шифрования из соображений безопасности. Не удается изменить учетную запись на любую другую учетную запись без повторной установки Azure AD Connect. При обновлении до сборки с 2017 апреля или более поздней версии поддерживается изменение пароля учетной записи службы, но нельзя изменить используемую учетную запись. 
 
 Azure AD Connect, как часть служб синхронизации, использует ключ шифрования для хранения паролей учетной записи соединителя AD DS и учетной записи службы ADSync.  Эти учетные записи шифруются перед сохранением в базе данных. 
 

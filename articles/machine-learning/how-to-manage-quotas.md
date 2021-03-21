@@ -12,10 +12,10 @@ ms.date: 12/1/2020
 ms.topic: conceptual
 ms.custom: troubleshooting,contperf-fy20q4, contperf-fy21q2
 ms.openlocfilehash: 4e61a15b86d1d2d05889253f615eec0865c87a70
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102520393"
 ---
 # <a name="manage-and-increase-quotas-for-resources-with-azure-machine-learning"></a>Управление и увеличение квот для ресурсов с помощью Машинное обучение Azure
@@ -124,7 +124,7 @@ Azure использует ограничения и квоты, чтобы пр
 
 Дополнительные сведения см. в разделе [ограничения экземпляров контейнеров](../azure-resource-manager/management/azure-subscription-service-limits.md#container-instances-limits).
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 В службе хранилища Azure предусмотрено ограничение в 250 учетных записей хранения на регион для каждой подписки. Это ограничение включает учетные записи хранения уровня "Стандартный" и "Премиум".
 
 Чтобы увеличить это ограничение, выполните запрос через [службу поддержки Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest/). Команда разработчиков службы хранилища Azure просматривает ваш случай и может утвердить до 250 учетных записей хранения для региона.
@@ -195,7 +195,7 @@ Azure использует ограничения и квоты, чтобы пр
 
 1. [Создайте запрос в службу поддержки Azure](../azure-portal/supportability/how-to-create-azure-support-request.md#create-a-support-request) и выберите следующие параметры в разделе __Основные сведения__ .
 
-    | Поле | Выбранное |
+    | Поле | Выбор |
     | ----- | ----- |
     | Тип проблемы | **Технические требования** |
     | Служба | **Мои службы**. Выберите __машинное обучение__ в раскрывающемся списке. |
