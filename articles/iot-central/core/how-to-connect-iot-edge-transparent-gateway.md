@@ -9,10 +9,10 @@ ms.service: iot-central
 services: iot-central
 ms.custom: device-developer
 ms.openlocfilehash: bdfb5f65106f3f8843b4aa52b752f5e563ab03f0
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102620124"
 ---
 # <a name="how-to-connect-devices-through-an-iot-edge-transparent-gateway"></a>Подключение устройств с помощью IoT Edge прозрачного шлюза
@@ -23,7 +23,7 @@ IoT Edge поддерживает [шаблоны шлюзов *прозрачн
 
 В этой статье для размещения подчиненного устройства и шлюза используются виртуальные машины. В реальной ситуации подчиненное устройство и шлюз будут выполняться на физических устройствах в локальной сети.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для работы с этим учебником требуется активная подписка Azure.
 
@@ -155,7 +155,7 @@ IoT Edge поддерживает [шаблоны шлюзов *прозрачн
 
     Дополнительные сведения об этих демонстрационных сертификатах см. в статье [создание демонстрационных сертификатов для тестирования IOT Edge компонентов устройства](../../iot-edge/how-to-create-test-certificates.md).
 
-1. Откройте файл *config. YAML* в текстовом редакторе. Пример.
+1. Откройте файл *config. YAML* в текстовом редакторе. Пример:
 
     ```bash
     sudo nano /etc/iotedge/config.yaml

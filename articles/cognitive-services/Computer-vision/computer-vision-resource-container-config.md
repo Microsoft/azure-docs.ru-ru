@@ -12,10 +12,10 @@ ms.date: 11/23/2020
 ms.author: aahi
 ms.custom: seodec18
 ms.openlocfilehash: ee2e4fca697c086b95e83feb9d40ce8e07dc344c
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102611901"
 ---
 # <a name="configure-read-ocr-docker-containers"></a>Настройка чтения ОПТИЧЕСКИх контейнеров DOCKER
@@ -95,7 +95,7 @@ ms.locfileid: "102611901"
 |Необязательно| Имя | Тип данных | Описание |
 |-------|------|-----------|-------------|
 |Нельзя использовать| `Input` | Строка | Контейнеры API компьютерного зрения не используют этот элемент.|
-|Необязательный| `Output` | Строка | Цель выходного подключения. Значение по умолчанию — `/output`. Это расположение файлов журналов. Сюда входят журналы контейнера. <br><br>Пример<br>`--mount type=bind,src=c:\output,target=/output`|
+|Необязательный| `Output` | Строка | Цель выходного подключения. Значение по умолчанию — `/output`. Это расположение файлов журналов. Сюда входят журналы контейнера. <br><br>Пример<br>`--mount type=bind,src=c:\output,target=/output`|
 
 ## <a name="example-docker-run-commands"></a>Примеры команд docker run
 
@@ -172,6 +172,6 @@ Logging:Console:LogLevel:Default=Information
 
 ---
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Узнайте [, как устанавливать и запускать контейнеры](computer-vision-how-to-install-containers.md).

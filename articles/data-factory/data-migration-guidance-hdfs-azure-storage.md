@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 8/30/2019
 ms.openlocfilehash: 9959a37d9b68d756437a3b4f0d75a2d63385758e
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100367798"
 ---
 # <a name="use-azure-data-factory-to-migrate-data-from-an-on-premises-hadoop-cluster-to-azure-storage"></a>Перенос данных из локального кластера Hadoop в службу хранилища Azure с помощью фабрики данных Azure 
@@ -149,6 +149,6 @@ DistCp использует MapReduce для воздействия на сво�
 - [Копирование новых и измененных файлов на основе LastModifiedDate](./tutorial-incremental-copy-lastmodified-copy-data-tool.md)
 - [Страница цен на фабрику данных](https://azure.microsoft.com/pricing/details/data-factory/data-pipeline/)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Копирование файлов из нескольких контейнеров с помощью фабрики данных Azure](solution-template-copy-files-multiple-containers.md)

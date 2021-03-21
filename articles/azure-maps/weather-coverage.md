@@ -10,16 +10,16 @@ services: azure-maps
 ms.custom: references_regions
 manager: philmea
 ms.openlocfilehash: 6c4e9eb765a72b7a0b495f81a954b484ef6aa2b7
-ms.sourcegitcommit: 80c1056113a9d65b6db69c06ca79fa531b9e3a00
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96905491"
 ---
 # <a name="azure-maps-weather-services-preview-coverage"></a>Покрытие Azure Mapsных служб погоды (Предварительная версия)
 
 > [!IMPORTANT]
-> Azure Mapsные службы погоды в настоящее время доступны в общедоступной предварительной версии.
+> Службы погоды Azure Maps в настоящее время предоставляются в общедоступной предварительной версии.
 > Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены. Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 

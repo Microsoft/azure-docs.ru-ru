@@ -9,10 +9,10 @@ ms.author: normesta
 ms.subservice: common
 ms.reviewer: dineshm
 ms.openlocfilehash: ab1da88899ba2b90e303da107631e3878b3a8b58
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102635881"
 ---
 # <a name="synchronize-with-azure-blob-storage-by-using-azcopy-v10"></a>Синхронизация с хранилищем BLOB-объектов Azure с помощью AzCopy V10
@@ -33,7 +33,7 @@ ms.locfileid: "102635881"
 > [!NOTE] 
 > В примерах, приведенных в этой статье, предполагается, что вы указали учетные данные авторизации с помощью Azure Active Directory (Azure AD).
 >
-> Если вы предпочитаете использовать маркер SAS для авторизации доступа к данным большого двоичного объекта, можно добавить этот маркер к URL-адресу ресурса в каждой команде AzCopy. Например: `'https://<storage-account-name>.blob.core.windows.net/<container-name><SAS-token>'`.
+> Если вы предпочитаете использовать маркер SAS для авторизации доступа к данным большого двоичного объекта, можно добавить этот маркер к URL-адресу ресурса в каждой команде AzCopy. Например, `'https://<storage-account-name>.blob.core.windows.net/<container-name><SAS-token>'`.
 
 ## <a name="guidelines"></a>Рекомендации
 
@@ -95,7 +95,7 @@ ms.locfileid: "102635881"
 
 Вы можете настроить операцию синхронизации с помощью необязательных флагов. Вот несколько примеров.
 
-|Сценарий|Flag|
+|Сценарий|Флаг|
 |---|---|
 |Укажите, как следует проверять хэши с строгими MD5 при скачивании.|**--Check-MD5** = \[ Не проверять \| Вход \| фаилифдифферент \| фаилифдифферентормиссинг\]|
 |Исключение файлов на основе шаблона.|**--Exclude-путь**|
@@ -103,7 +103,7 @@ ms.locfileid: "102635881"
 
 Полный список см. в разделе [Параметры](storage-ref-azcopy-sync.md#options).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные примеры см. в следующих статьях:
 

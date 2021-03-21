@@ -4,28 +4,27 @@ ms.service: azure-communication-services
 ms.topic: include
 ms.date: 03/10/2021
 ms.author: mikben
-ms.openlocfilehash: 41a5f05f016a876894949c35a6610b2b49f9eb9d
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: dee692dc6c82ae91272b39093398eba6ad908c1c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103488147"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104612969"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure с активной подпиской. [Создайте учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) бесплатно.
 - Развернутый ресурс Служб коммуникации. [Создайте ресурс Служб коммуникации.](../../create-communication-resource.md)
-- `User Access Token` для включения клиента вызова. Дополнительные сведения о том, [как получить `User Access Token`](../../access-tokens.md)
-- (Необязательно) Выполните инструкции из краткого руководства [Добавление функции голосового вызова в приложение](../getting-started-with-calling.md).
+- Маркер доступа пользователя для включения вызывающего клиента. Дополнительные сведения см. в разделе [Создание маркеров доступа и управление ими](../../access-tokens.md).
+- Необязательно. Выполните инструкции из краткого руководства, чтобы [Добавить в приложение голосовое вызов](../getting-started-with-calling.md).
 
-## <a name="setting-up"></a>Настройка
-
-### <a name="install-the-client-library"></a>Установка клиентской библиотеки
+## <a name="install-the-client-library"></a>Установка клиентской библиотеки
 
 > [!NOTE]
 > В этом документе используется клиентская библиотека вызовов версии 1.0.0-beta.6.
 
-С помощью команды `npm install` вы можете установить клиентские библиотеки JavaScript Служб коммуникации Azure для вызовов и типичных операций.
+Используйте `npm install` команду, чтобы установить вызовы и общие клиентские библиотеки служб связи Azure для JavaScript.
+Этот документ ссылается на типы в версии 1.0.0-Beta. 5 вызывающей библиотеки.
 
 ```console
 npm install @azure/communication-common --save
@@ -35,22 +34,24 @@ npm install @azure/communication-calling --save
 
 ## <a name="object-model"></a>Объектная модель
 
-Следующие классы и интерфейсы реализуют некоторые основные функции клиентской библиотеки Служб коммуникации Azure для вызовов:
+Следующие классы и интерфейсы обрабатывали некоторые основные функции вызывающей клиентской библиотеки служб связи Azure:
 
 | Имя                             | Описание                                                                                                                                 |
 | ---------------------------------| ------------------------------------------------------------------------------------------------------------------------------------------- |
-| CallClient                       | CallClient — это основная точка входа в клиентскую библиотеку для вызовов.                                                                       |
-| CallAgent                        | CallAgent используется для инициирования вызовов и управления ими.                                                                                            |
-| DeviceManager                    | DeviceManager используется для управления устройствами мультимедиа.                                                                                           |
-| AzureCommunicationTokenCredential | Класс AzureCommunicationTokenCredential реализует интерфейс CommunicationTokenCredential, который используется для создания экземпляра CallAgent. |
+| `CallClient`                      | Главная точка входа в вызывающую клиентскую библиотеку.                                                                       |
+| `CallAgent`                        | Используется для запуска вызовов и управления ими.                                                                                            |
+| `DeviceManager`                    | Используется для управления устройствами мультимедиа.                                                                                           |
+| `AzureCommunicationTokenCredential` | Реализует `CommunicationTokenCredential` интерфейс, который используется для создания экземпляра `callAgent` . |
 
+## <a name="initialize-a-callclient-instance-create-a-callagent-instance-and-access-devicemanager"></a>Инициализация экземпляра Каллклиент, создание экземпляра Каллажент и доступ к Девицеманажер
 
-## <a name="initialize-the-callclient-create-callagent-and-access-devicemanager"></a>Инициализация CallClient, создание CallAgent и использование DeviceManager
+Создайте новый `CallClient` экземпляр. Для настройки доступны специальные параметры, например экземпляр Logger.
 
-Создайте новый экземпляр `CallClient`. Для настройки доступны специальные параметры, например экземпляр Logger.
-После создания экземпляра `CallClient` вы можете создать экземпляр `CallAgent`, вызвав метод `createCallAgent` для экземпляра `CallClient`. Это действие асинхронно возвращает объект экземпляра `CallAgent`.
-Метод `createCallAgent` принимает в качестве аргумента `CommunicationTokenCredential`, который принимает [маркер доступа пользователя](../../access-tokens.md).
-Для доступа к `DeviceManager` необходимо сначала создать экземпляр callAgent. Затем можно применить метод `getDeviceManager` для экземпляра `CallClient`, чтобы получить DeviceManager.
+При наличии `CallClient` экземпляра можно создать `CallAgent` экземпляр, вызвав `createCallAgent` метод в `CallClient` экземпляре. Это действие асинхронно возвращает объект экземпляра `CallAgent`.
+
+`createCallAgent`Метод использует `CommunicationTokenCredential` в качестве аргумента. Он принимает [маркер доступа пользователя](../../access-tokens.md).
+
+После создания `callAgent` экземпляра `getDeviceManager` `CallClient` для доступа к нему можно использовать метод в экземпляре `deviceManager` .
 
 ```js
 const userToken = '<user token>';
@@ -60,35 +61,38 @@ const callAgent = await callClient.createCallAgent(tokenCredential, {displayName
 const deviceManager = await callClient.getDeviceManager()
 ```
 
-## <a name="place-an-outgoing-call"></a>Осуществление исходящего вызова
-
-Чтобы создать и запустить вызов, необходимо использовать один из API-интерфейсов на Каллажент и предоставить пользователя, созданного с помощью клиентской библиотеки удостоверений служб связи.
-
-Создание и запуск вызова активируются синхронно. Экземпляр Call позволяет подписываться на события вызова.
-
 ## <a name="place-a-call"></a>Осуществление вызовов
 
-### <a name="place-a-11-call-to-a-user-or-pstn"></a>Осуществление персонального вызова к пользователю или ТСОП
-Чтобы поместить вызов другого пользователя служб связи, вызовите `startCall` метод для `callAgent` и передайте вызываемый коммуникатионусеридентифиер, [созданный с помощью библиотеки удостоверений служб связи](https://docs.microsoft.com/azure/communication-services/quickstarts/access-tokens).
+Чтобы создать и запустить вызов, используйте один из API в `callAgent` и предоставьте пользователя, созданного с помощью клиентской библиотеки удостоверений служб связи.
+
+Операции создания и начала вызовов выполняются синхронно. Экземпляр Call позволяет подписываться на события вызова.
+
+### <a name="place-a-1n-call-to-a-user-or-pstn"></a>Поместите Звонок 1: n пользователю или PSTN
+
+Для вызова другого пользователя служб связи используйте `startCall` метод в `callAgent` и передайте получателя `CommunicationUserIdentifier` , [созданного с помощью библиотеки администрирования служб Communication Services](https://docs.microsoft.com/azure/communication-services/quickstarts/access-tokens).
 
 ```js
 const userCallee = { communicationUserId: '<ACS_USER_ID>' }
 const oneToOneCall = callAgent.startCall([userCallee]);
 ```
 
-Чтобы осуществить вызов к ТСОП, вызовите метод `startCall` для `callAgent` и передайте PhoneNumberIdentifier вызываемого объекта.
-Для осуществления вызовов к ТСОП необходимо настроить ресурс Служб коммуникации.
-При вызове номера ТСОП необходимо указать альтернативный идентификатор вызывающего. Альтернативный идентификатор вызывающего обозначает номер телефона (по стандарту E.164), который определяет вызывающую сторону в вызове ТСОП. Например, переданный в вызове ТСОП альтернативный идентификатор абонента будет отображаться вызываемой стороне.ю когда вызов будет входящим.
+Чтобы позвонить в телефонную сеть с открытым коммутируемым доступом (PSTN), используйте `startCall` метод в `callAgent` и передайте значение получателя `PhoneNumberIdentifier` . Для осуществления вызовов к ТСОП необходимо настроить ресурс Служб коммуникации.
 
-> [!WARNING]
-> Вызовы ТСОП сейчас доступны в закрытой предварительной версии. Чтобы использовать эту возможность, [зарегистрируйтесь в программе ранних последователей](https://aka.ms/ACS-EarlyAdopter).
+При вызове номера PSTN укажите идентификатор альтернативного звонящего. ИДЕНТИФИКАТОР альтернативного абонента — это номер телефона (на основе стандарта E. 164), определяющий вызывающий объект в вызове PSTN. Это номер телефона, который получатель вызова видит при входящем вызове.
+
+> [!NOTE]
+> Вызовы ТСОП сейчас доступны в закрытой предварительной версии. Для доступа [используйте программу раннего внедрения](https://aka.ms/ACS-EarlyAdopter).
+
+Для вызова 1:1 используйте следующий код:
+
 ```js
 const pstnCalee = { phoneNumber: '<ACS_USER_ID>' }
 const alternateCallerId = {alternateCallerId: '<Alternate caller Id>'};
 const oneToOneCall = callAgent.startCall([pstnCallee], {alternateCallerId});
 ```
 
-### <a name="place-a-1n-call-with-users-and-pstn"></a>Осуществление группового вызова к пользователям и ТСОП
+Для вызова 1: n используйте следующий код:
+
 ```js
 const userCallee = { communicationUserId: <ACS_USER_ID> }
 const pstnCallee = { phoneNumber: <PHONE_NUMBER>};
@@ -98,11 +102,14 @@ const groupCall = callAgent.startCall([userCallee, pstnCallee], {alternateCaller
 ```
 
 ### <a name="place-a-11-call-with-video-camera"></a>Осуществление персонального вызова с использованием видеокамеры
-> [!WARNING]
+
+> [!IMPORTANT]
 > Сейчас допускается не более одного исходящего локального видеопотока в один момент времени.
-Чтобы осуществить видеовызов, необходимо перечислить локальные камеры с помощью API deviceManager `getCameras()`.
-Выбрав нужную камеру, используйте ее для создания экземпляра `LocalVideoStream`, который затем передайте в составе `videoOptions` в качестве элемента массива `localVideoStream` в метод `startCall`.
-Когда вызов будет осуществлен, автоматически начнется отправка видеопотока с выбранной камеры другим участникам вызова. Это же относится к параметрам видео в Call.Accept() и CallAgent.join().
+
+Чтобы поместить видеовызов, необходимо указать свои камеры с помощью `getCameras()` метода в `deviceManager` .
+
+После выбора камеры используйте ее для создания `LocalVideoStream` экземпляра. Передайте его в `videoOptions` качестве элемента в `localVideoStream` массиве в `startCall` метод.
+
 ```js
 const deviceManager = await callClient.getDeviceManager();
 const cameras = await deviceManager.getCameras();
@@ -113,22 +120,33 @@ const call = callAgent.startCall(['acsUserId'], placeCallOptions);
 
 ```
 
+Когда вызов подключается, он автоматически начинает отправку видеопотока от выбранной камеры другому участнику. Это также относится к `Call.Accept()` параметрам видео и `CallAgent.join()` видео.
+
 ### <a name="join-a-group-call"></a>Присоединение к групповому вызову
-Чтобы начать новый групповой вызов или присоединиться к текущему групповому вызову, примените метод join и передайте ему объект со свойством `groupId`. В качестве значения должен быть указан идентификатор GUID.
+
+Чтобы начать новый вызов группы или присоединиться к текущему вызову группы, используйте `join` метод и передайте объект со `groupId` свойством. `groupId`Значение должно быть идентификатором GUID.
+
 ```js
 
 const context = { groupId: <GUID>}
 const call = callAgent.join(context);
 
 ```
-### <a name="join-a-teams-meeting"></a>Присоединение к конференции Teams
-Чтобы присоединиться к конференции Teams, выполните метод join и передайте ему ссылку на собрание или координаты собрания.
+
+### <a name="join-a-teams-meeting"></a>Присоединяйтесь к собранию команд
+
+Чтобы присоединиться к собранию команд, используйте `join` метод и передайте ссылку на собрание или координаты.
+
+Присоединение с помощью ссылки на собрание:
+
 ```js
-// Join using meeting link
 const locator = { meetingLink: <meeting link>}
 const call = callAgent.join(locator);
+```
 
-// Join using meeting coordinates
+Присоединиться с помощью координат собрания:
+
+```js
 const locator = {
     threadId: <thread id>,
     organizerId: <organizer id>,
@@ -138,106 +156,107 @@ const locator = {
 const call = callAgent.join(locator);
 ```
 
-## <a name="receiving-an-incoming-call"></a>Прием входящего вызова
+## <a name="receive-an-incoming-call"></a>Получение входящего вызова
 
-Экземпляр `CallAgent` создает событие `incomingCall`, когда зарегистрированный в системе идентификатор принимает входящий вызов. Чтобы прослушать это событие, подпишитесь на него следующим образом:
+`callAgent`Экземпляр создает `incomingCall` событие, когда вошедший в систему идентификатор получает входящий вызов. Чтобы прослушать это событие, подпишитесь с помощью одного из следующих параметров:
 
 ```js
 const incomingCallHander = async (args: { incomingCall: IncomingCall }) => {
     //Get information about caller
     var callerInfo = incomingCall.callerInfo
-    
-    //accept the call
+
+    //Accept the call
     var call = await incomingCall.accept();
 
-    //reject the call
+    //Reject the call
     incomingCall.reject();
 };
 callAgentInstance.on('incomingCall', incomingCallHander);
 ```
 
-Событие `incomingCall` предоставит экземпляр `IncomingCall`, который позволяет принять или отклонить вызов.
+`incomingCall`Событие включает `incomingCall` экземпляр, который можно принять или отклонить.
 
+## <a name="manage-calls"></a>Управление вызовами
 
-## <a name="call-management"></a>Управление вызовами
+Во время вызова можно получить доступ к свойствам вызова и управлять параметрами видео и аудио.
 
-Во время вызова вы можете получать доступ ко свойствам вызова и выполнять различные операции для управления параметрами, связанными с видео и аудио.
+### <a name="check-call-properties"></a>Проверить свойства вызова
 
-### <a name="call-properties"></a>Свойства вызова
-* Получите уникальный идентификатор (в строковом формате) этого вызова.
-```js
+Получите уникальный идентификатор (String) для вызова:
 
-const callId: string = call.id;
+   ```js
+    const callId: string = call.id;
+   ```
 
-```
+Сведения о других участниках в вызове путем проверки `remoteParticipant` коллекции:
 
-* Чтобы получить данные о других участниках вызова, просмотрите коллекцию `remoteParticipant` в экземпляре `call`. Массив содержит объекты списка `RemoteParticipant`
-```js
-const remoteParticipants = call.remoteParticipants;
-```
+   ```js
+   const remoteParticipants = call.remoteParticipants;
+   ```
 
-* Для входящих вызовов это идентификатор вызывающего объекта. Идентификатор имеет один из типов `CommunicationIdentifier`
-```js
+Идентификация вызывающего для входящего вызова:
 
-const callerIdentity = call.callerInfo.identifier;
+   ```js
+   const callerIdentity = call.callerInfo.identifier;
+   ```
 
-* Get the state of the Call.
-```js
+   `identifier` является одним из `CommunicationIdentifier` типов.
 
-const callState = call.state;
+Получить состояние вызова:
 
-```
-Возвращает строку, которая представляет текущее состояние вызова:
-* None — исходное состояние любого вызова;
-* Incoming — указывает, что вызов является входящим и должен быть принят или отклонен;
-* Connecting — исходное переходное состояние после осуществления или приема вызова;
-* Ringing — для исходящего вызова означает, что на стороне удаленных участников звучит сигнал вызова, то есть этот вызов для них является входящим (состояние Incoming);
-* EarlyMedia — обозначает состояние, при котором перед вызовом воспроизводится объявление;
-* Connected — вызов осуществлен;
-* LocalHold — вызов переведен локальным участником в режим ожидания, и потоки мультимедиа не передаются между локальной конечной точкой и удаленными участниками;
-* RemoteHold — вызов переведен удаленным участником в режим ожидания, и потоки мультимедиа не передаются между локальной конечной точкой и удаленными участниками;
-* Disconnecting — переходное состояние перед тем, как вызов перейдет в состояние Disconnected;
-* Disconnected — завершающее состояние вызова.
-  * При потере сетевого подключения вызов через 2 минуты автоматически переходит в состояние Disconnected.
+   ```js
+   const callState = call.state;
+   ```
 
-* Чтобы увидеть причину завершения конкретного вызова, проверьте свойство `callEndReason`.
-```js
+   Возвращает строку, которая представляет текущее состояние вызова:
 
-const callEndReason = call.callEndReason;
-// callEndReason.code (number) code associated with the reason
-// callEndReason.subCode (number) subCode associated with the reason
-```
+  - `None`: Начальное состояние вызова.
+  - `Incoming`: Указывает, что вызов является входящим. Оно должно быть либо принято, либо отклонено.
+  - `Connecting`: Начальное состояние перехода, когда вызов помещается или принимается.
+  - `Ringing`: Для исходящего вызова указывает, что звонок вызывается для удаленных участников. `Incoming`На их стороне.
+  - `EarlyMedia`: Указывает состояние, в котором воспроизводится объявление перед соединением вызова.
+  - `Connected`: Указывает, что вызов подключен.
+  - `LocalHold`: Указывает, что вызов помещается в удержание локальным участником. Между локальной конечной точкой и удаленными участниками не передаются никакие носители.
+  - `RemoteHold`: Указывает, что вызов был помещен на удержание удаленным участником. Между локальной конечной точкой и удаленными участниками не передаются никакие носители.
+  - `Disconnecting`: Состояние перехода перед тем, как вызов переходит в `Disconnected` состояние.
+  - `Disconnected`: Окончательное состояние вызова. Если сетевое подключение потеряно, состояние изменится на `Disconnected` через две минуты.
 
-* Чтобы выяснить, является ли текущий вызов входящим или исходящим, проверьте свойство `direction`, которое возвращает значение `CallDirection`.
-```js
-const isIncoming = call.direction == 'Incoming';
-const isOutgoing = call.direction == 'Outgoing';
-```
+Выясните причину завершения вызова, изучив `callEndReason` свойство:
 
-*  Чтобы проверить, отключен ли выбранный микрофон, проверьте свойство `muted`, которое возвращает значение `Boolean`.
-```js
+   ```js
+   const callEndReason = call.callEndReason;
+   // callEndReason.code (number) code associated with the reason
+   // callEndReason.subCode (number) subCode associated with the reason
+   ```
 
-const muted = call.isMicrophoneMuted;
+Узнайте, является ли текущий вызов входящим или исходящим, проверив `direction` свойство. Он возвращает `CallDirection`.
 
-```
+  ```js
+   const isIncoming = call.direction == 'Incoming';
+   const isOutgoing = call.direction == 'Outgoing';
+   ```
 
-* Чтобы узнать, отправляется ли поток общего доступа к экрану из конкретной конечной точки, проверьте свойство `isScreenSharingOn`, которое возвращает значение `Boolean`.
-```js
+Проверьте, не отключен ли текущий микрофон. Он возвращает `Boolean`.
 
-const isScreenSharingOn = call.isScreenSharingOn;
+   ```js
+   const muted = call.isMicrophoneMuted;
+   ```
 
-```
+Выясните, отправляется ли поток обмена на экран из данной конечной точки, проверив `isScreenSharingOn` свойство. Он возвращает `Boolean`.
 
-* Чтобы проверить активные видеопотоки, проверьте коллекцию `localVideoStreams` с объектами `LocalVideoStream`.
-```js
+   ```js
+   const isScreenSharingOn = call.isScreenSharingOn;
+   ```
 
-const localVideoStreams = call.localVideoStreams;
+Проверьте активные видеопотоки, проверив `localVideoStreams` коллекцию. Он возвращает `LocalVideoStream` объекты.
 
-```
+   ```js
+   const localVideoStreams = call.localVideoStreams;
+   ```
 
-### <a name="call-ended-event"></a>Событие завершения вызова
+### <a name="check-a-callended-event"></a>Проверка события Каллендед
 
-Экземпляр `Call` при завершении вызова создает событие `callEnded`. Чтобы прослушать это событие, подпишитесь на него следующим образом:
+Экземпляр `call` при завершении вызова создает событие `callEnded`. Чтобы прослушать это событие, подпишитесь, используя следующий код:
 
 ```js
 const callEndHander = async (args: { callEndReason: CallEndReason }) => {
@@ -249,7 +268,7 @@ call.on('callEnded', callEndHander);
 
 ### <a name="mute-and-unmute"></a>Отключение и включение звука
 
-Чтобы отключить или включить звук для локальной конечной точки, можно использовать асинхронные вызовы API `mute` и `unmute`:
+Чтобы отключить или включить звук для локальной конечной точки, можно использовать `mute` `unmute` асинхронные API и.
 
 ```js
 
@@ -263,114 +282,105 @@ await call.unmute();
 
 ### <a name="start-and-stop-sending-local-video"></a>Запуск и остановка отправки локального видео
 
-
-Чтобы запустить видео, необходимо перечислить камеры с помощью метода `getCameras` для объекта `deviceManager`. Затем создайте новый экземпляр `LocalVideoStream`, передав нужную камеру в качестве аргумента в метод `startVideo`:
-
+Чтобы запустить видео, необходимо указать камеры с помощью `getCameras` метода для `deviceManager` объекта. Затем создайте новый экземпляр `LocalVideoStream` , передав требуемую камеру в `startVideo` метод в качестве аргумента:
 
 ```js
 const localVideoStream = new LocalVideoStream(videoDeviceInfo);
 await call.startVideo(localVideoStream);
-
 ```
 
-После успешного запуска отправки видео экземпляр `LocalVideoStream` будет добавлен в коллекцию `localVideoStreams` в экземпляре вызова.
+После успешного начала отправки видео `LocalVideoStream` экземпляр добавляется в `localVideoStreams` коллекцию в экземпляре вызова.
 
 ```js
-
 call.localVideoStreams[0] === localVideoStream;
-
 ```
 
-Чтобы остановить отправку локального видео, передайте экземпляр `localVideoStream`, доступный в коллекции `localVideoStreams`:
+Чтобы отключить локальное видео, передайте `localVideoStream` экземпляр, доступный в `localVideoStreams` коллекции:
 
 ```js
-
 await call.stopVideo(localVideoStream);
-
 ```
 
-Вы можете переключиться на другое устройство камеры, не прекращая передачу видео, вызвав `switchSource` для экземпляра `localVideoStream`:
+При отправке видео с помощью вызова `switchSource` на экземпляре можно переключиться на другое устройство камеры `localVideoStream` :
 
 ```js
 const cameras = await callClient.getDeviceManager().getCameras();
 localVideoStream.switchSource(cameras[1]);
-
 ```
 
-## <a name="remote-participants-management"></a>Управление удаленными участниками
+## <a name="manage-remote-participants"></a>Управление удаленными участниками
 
-Все удаленные участники представлены типом `RemoteParticipant` и доступны через коллекцию `remoteParticipants` в экземпляре вызова.
+Все удаленные участники представлены в `remoteParticipant` коллекции и доступны через `remoteParticipants` коллекцию в экземпляре вызова.
 
-### <a name="list-participants-in-a-call"></a>Вывод списка участников в вызове
-Коллекция `remoteParticipants` возвращает список удаленных участников в указанном вызове:
+### <a name="list-the-participants-in-a-call"></a>Перечисление участников в вызове
+
+`remoteParticipants`Коллекция возвращает список удаленных участников в вызове:
 
 ```js
-
 call.remoteParticipants; // [remoteParticipant, remoteParticipant....]
-
 ```
 
-### <a name="remote-participant-properties"></a>Свойства удаленного участника
-С каждым удаленным участником связан набор свойств и коллекций
-#### <a name="communicationidentifier"></a>CommunicationIdentifier
-Получите идентификатор для этого удаленного участника.
-Идентификатор имеет один из типов CommunicationIdentifier:
-```js
-const identifier = remoteParticipant.identifier;
-```
-Это может быть один из типов CommunicationIdentifier:
-  * { communicationUserId: '<ACS_USER_ID'> } — объект, представляющий пользователя ACS;
-  * { phoneNumber: '<E.164>' } — объект, представляющий номер телефона в формате E.164;
-  * { microsoftTeamsUserId: '<TEAMS_USER_ID>', isAnonymous?: boolean; cloud?: "public" | "dod" | "gcch" } — объект, представляющий пользователя Teams.
+### <a name="access-remote-participant-properties"></a>Доступ к свойствам удаленного участника
 
-#### <a name="state"></a>Состояние
-Получите состояние удаленного участника.
-```js
+Удаленные участники имеют набор связанных свойств и коллекций:
 
-const state = remoteParticipant.state;
-```
-Состояние может иметь одно из следующих значений:
-* Idle — исходное состояние;
-* Connected — переходное состояние во время подключения участника к вызову;
-* Ringing — для участника звучит сигнал вызова;
-* Connected — участник подключен к вызову;
-* Hold — участник находится в режиме ожидания;
-* EarlyMedia — перед подключением к вызову для участника воспроизводится объявление;
-* Disconnected — окончательное состояние, которое обозначает завершение вызова для участника.
-  * Если у удаленного участника происходит потеря сетевого подключения, он через 2 минуты автоматически переходит в состояние Disconnected.
+- `CommunicationIdentifier`: Получение идентификатора удаленного участника. Identity является одним из `CommunicationIdentifier` типов:
 
-#### <a name="call-end-reason"></a>Причина окончания вызова
-Чтобы узнать, почему участник покинул вызов, проверьте свойство `callEndReason`:
-```js
-const callEndReason = remoteParticipant.callEndReason;
-// callEndReason.code (number) code associated with the reason
-// callEndReason.subCode (number) subCode associated with the reason
-```
-#### <a name="is-muted"></a>Звук отключен
-Чтобы проверить, отключен ли звук для удаленного участника, проверьте свойство `isMuted`, которое возвращает значение `Boolean`.
-```js
-const isMuted = remoteParticipant.isMuted;
-```
-#### <a name="is-speaking"></a>Участник говорит
-Чтобы проверить, говорит ли в настоящий момент удаленный участник, проверьте свойство `isSpeaking`, которое возвращает значение `Boolean`.
-```js
-const isSpeaking = remoteParticipant.isSpeaking;
-```
+  ```js
+  const identifier = remoteParticipant.identifier;
+  ```
 
-#### <a name="video-streams"></a>Video Streams (Потоки видео)
-Чтобы проверить все потоки видео, отправляемые определенным участником в вызове, проверьте коллекцию `videoStreams` с объектами `RemoteVideoStream`.
-```js
+  Это может быть один из следующих `CommunicationIdentifier` типов:
 
-const videoStreams = remoteParticipant.videoStreams; // [RemoteVideoStream, ...]
+  - `{ communicationUserId: '<ACS_USER_ID'> }`: Объект, представляющий пользователя ACS.
+  - `{ phoneNumber: '<E.164>' }`: Объект, представляющий номер телефона в формате E. 164.
+  - `{ microsoftTeamsUserId: '<TEAMS_USER_ID>', isAnonymous?: boolean; cloud?: "public" | "dod" | "gcch" }`: Объект, представляющий пользователя команд.
 
-```
+- `state`: Получение состояния удаленного участника.
 
+  ```js
+  const state = remoteParticipant.state;
+  ```
+
+  Состояние может быть следующим:
+
+  - `Idle`: Начальное состояние.
+  - `Connecting`: Переходное состояние во время подключения участника к вызову.
+  - `Ringing`: Участник позвонит.
+  - `Connected`: Участник подключен к вызову.
+  - `Hold`: Участник находится в удержании.
+  - `EarlyMedia`: Объявление, которое будет воспроизводиться до того, как участник подключится к вызову.
+  - `Disconnected`: Конечное состояние. Участник отключен от вызова. Если удаленный участник потеряет подключение к сети, его состояние изменится на `Disconnected` через две минуты.
+
+- `callEndReason`: Чтобы узнать, почему участник оставил вызов, проверьте `callEndReason` свойство:
+
+  ```js
+  const callEndReason = remoteParticipant.callEndReason;
+  // callEndReason.code (number) code associated with the reason
+  // callEndReason.subCode (number) subCode associated with the reason
+  ```
+
+- `isMuted` состояние. чтобы узнать, отключен ли удаленный участник, проверьте `isMuted` свойство. Он возвращает `Boolean`.
+
+  ```js
+  const isMuted = remoteParticipant.isMuted;
+  ```
+
+- `isSpeaking` состояние. чтобы узнать, говорит ли удаленный участник, проверьте `isSpeaking` свойство. Он возвращает `Boolean`.
+
+  ```js
+  const isSpeaking = remoteParticipant.isSpeaking;
+  ```
+
+- `videoStreams`. Чтобы проверить все потоки видео, отправляемые данным участником в этом вызове, проверьте `videoStreams` коллекцию. Он содержит `RemoteVideoStream` объекты.
+
+  ```js
+  const videoStreams = remoteParticipant.videoStreams; // [RemoteVideoStream, ...]
+  ```
 
 ### <a name="add-a-participant-to-a-call"></a>Добавление участника в вызов
 
-Чтобы добавить в вызов участника (пользователя или номер телефона), можно вызвать `addParticipant`.
-Укажите в этом вызове один из типов Identifier.
-Этот вызов в синхронном режиме возвращает экземпляр удаленного участника.
+Чтобы добавить участника (пользователя или номер телефона) в вызов, можно использовать `addParticipant` . Укажите один из `Identifier` типов. Он возвращает `remoteParticipant` экземпляр.
 
 ```js
 const userIdentifier = { communicationUserId: <ACS_USER_ID> };
@@ -379,11 +389,9 @@ const remoteParticipant = call.addParticipant(userIdentifier);
 const remoteParticipant = call.addParticipant(pstnIdentifier, {alternateCallerId: '<Alternate Caller ID>'});
 ```
 
-### <a name="remove-participant-from-a-call"></a>Удаление участника из вызова
+### <a name="remove-a-participant-from-a-call"></a>Удаление участника из вызова
 
-Чтобы удалить участника (пользователя или номер телефона) из вызова, можно вызвать `removeParticipant`.
-Нужно передать один из типов Identifier, который будет асинхронно разрешаться после удаления участника из вызова.
-Этот же участник будет удален из коллекции `remoteParticipants`.
+Чтобы удалить участника (пользователя или номер телефона) из вызова, можно вызвать `removeParticipant` . Необходимо передать один из `Identifier` типов. Это разрешается асинхронно после удаления участника из вызова. Участник также удаляется из `remoteParticipants` коллекции.
 
 ```js
 const userIdentifier = { communicationUserId: <ACS_USER_ID> };
@@ -401,10 +409,9 @@ const remoteVideoStream: RemoteVideoStream = call.remoteParticipants[0].videoStr
 const streamType: MediaStreamType = remoteVideoStream.mediaStreamType;
 ```
 
-Чтобы отрисовывать `RemoteVideoStream`, нужно оформить подписку на событие `isAvailableChanged`.
-Если свойство `isAvailable` изменит значение на `true`, значит этот удаленный участник отправляет поток.
-Когда это произойдет, создайте новый экземпляр `Renderer`, а затем новый экземпляр `RendererView` с помощью асинхронного метода `createView`.  Затем вы сможете присоединить `view.target` к любому элементу пользовательского интерфейса.
-При каждом изменении состояния доступности удаленного потока вы можете удалить отрисовщик или определенное представление `RendererView` либо оставить все как есть, но это приведет к отрисовке пустого видеокадра.
+Для подготовки к просмотру `RemoteVideoStream` необходимо подписываться на `isAvailableChanged` событие. Если свойство `isAvailable` изменит значение на `true`, значит этот удаленный участник отправляет поток. После этого создайте новый экземпляр `Renderer` , а затем создайте новый `RendererView` экземпляр с помощью асинхронного `createView` метода.  Затем можно присоединиться `view.target` к любому элементу пользовательского интерфейса.
+
+После изменения доступности удаленного потока можно уничтожить `Renderer` , уничтожить конкретный `RendererView` экземпляр или не отключайте его. Модули подготовки отчетов, присоединенные к недоступному потоку, приведут к пустому видеокадру.
 
 ```js
 function subscribeToRemoteVideoStream(remoteVideoStream: RemoteVideoStream) {
@@ -427,77 +434,85 @@ function subscribeToRemoteVideoStream(remoteVideoStream: RemoteVideoStream) {
 ```
 
 ### <a name="remote-video-stream-properties"></a>Свойства удаленного видеопотока
+
 Удаленные потоки видео имеют следующие свойства:
 
-* `Id` — идентификатор удаленного видеопотока;
-```js
-const id: number = remoteVideoStream.id;
-```
+- `id`— Идентификатор удаленного потока видео.
 
-* `StreamSize` — размер (ширина и высота) удаленного потока видео;
-```js
-const size: {width: number; height: number} = remoteVideoStream.size;
-```
+  ```js
+  const id: number = remoteVideoStream.id;
+  ```
 
-* `MediaStreamType` — принимает значения Video или ScreenSharing;
-```js
-const type: MediaStreamType = remoteVideoStream.mediaStreamType;
-```
-* `isAvailable` — указывает на то, что конечная точка этого удаленного участника активно отправляет поток данных.
-```js
-const type: boolean = remoteVideoStream.isAvailable;
-```
+- `Stream.size`: Высота и ширина удаленного потока видео.
+
+  ```js
+  const size: {width: number; height: number} = remoteVideoStream.size;
+  ```
+
+- `mediaStreamType`: Может иметь `Video` или `ScreenSharing` .
+
+  ```js
+  const type: MediaStreamType = remoteVideoStream.mediaStreamType;
+  ```
+
+- `isAvailable`: Указывает, является ли конечная точка удаленного участника активной отправкой потока.
+
+  ```js
+  const type: boolean = remoteVideoStream.isAvailable;
+  ```
 
 ### <a name="renderer-methods-and-properties"></a>Методы и свойства отрисовщика
 
-* Создайте экземпляр `RendererView`, который позже можно будет подключить к пользовательскому интерфейсу приложения для отрисовки удаленного видеопотока.
-```js
-renderer.createView()
-```
+Создайте `rendererView` экземпляр, который можно присоединить в пользовательском интерфейсе приложения для подготовки к просмотру удаленного видеопотока:
 
-* Удаляет отрисовщик и все связанные с ним экземпляры `RendererView`.
-```js
-renderer.dispose()
-```
+  ```js
+  renderer.createView()
+  ```
 
+Удалить `renderer` и все связанные `rendererView` экземпляры:
+
+  ```js
+  renderer.dispose()
+  ```
 
 ### <a name="rendererview-methods-and-properties"></a>Методы и свойства RendererView
-При создании `RendererView` вы можете указать свойства `scalingMode` и `isMirrored`.
-Режим масштабирования может принимать значения Stretch, Crop или Fit. Если указан параметр `isMirrored`, поток будет отрисовываться в зеркальном отображении (по вертикали).
+
+При создании `rendererView` можно указать `scalingMode` `isMirrored` Свойства и. `scalingMode` может иметь `Stretch` , `Crop` или `Fit` . Если `isMirrored` задано значение, отображаемый поток зеркально отражается по вертикали.
 
 ```js
 const rendererView: RendererView = renderer.createView({ scalingMode, isMirrored });
 ```
-Каждый экземпляр `RendererView` имеет свойство `target`, которое представляет область отрисовки. Он должен быть присоединен к пользовательскому интерфейсу приложения:
+
+Каждый `RendererView` экземпляр имеет `target` свойство, представляющее область отрисовки. Присоединить это свойство к пользовательскому интерфейсу приложения:
+
 ```js
 document.body.appendChild(rendererView.target);
 ```
 
-Вы можете позже изменить режим масштабирования, вызвав метод `updateScalingMode`.
+Для обновления можно `scalingMode` вызвать `updateScalingMode` метод:
+
 ```js
 view.updateScalingMode('Crop')
 ```
 
 ## <a name="device-management"></a>Управление устройствами
 
-`DeviceManager` позволяет получить список локальных устройств, которые можно использовать в вызове для передачи аудио- и видеопотоков. Вы также можете запрашивать у пользователя разрешение на доступ к его микрофону и камере через собственный API браузера.
+В `deviceManager` можно указать локальные устройства, которые могут передавать звуковые и видеопотоки в вызове. Он также помогает запрашивать разрешение на доступ к микрофону и камере другого пользователя с помощью собственного API браузера.
 
-Доступ к `deviceManager` осуществляется путем вызова метода `callClient.getDeviceManager()`.
-> [!WARNING]
-> Сейчас для получения доступа к DeviceManager необходимо сначала создать экземпляр объекта `callAgent`.
+Доступ можно получить `deviceManager` , вызвав `callClient.getDeviceManager()` метод:
+
+> [!IMPORTANT]
+> Для `callAgent` доступа к необходимо иметь объект `deviceManager` .
 
 ```js
-
 const deviceManager = await callClient.getDeviceManager();
-
 ```
 
-### <a name="enumerate-local-devices"></a>Перечисление локальных устройств
+### <a name="get-local-devices"></a>Получение локальных устройств
 
-Для доступа к локальным устройствам можно использовать методы перечисления из Диспетчера устройств. Действие перечисления выполняется асинхронно.
+Для доступа к локальным устройствам можно использовать методы перечисления в `deviceManager` .
 
 ```js
-
 //  Get a list of available video devices for use.
 const localCameras = await deviceManager.getCameras(); // [VideoDeviceInfo, VideoDeviceInfo...]
 
@@ -506,16 +521,13 @@ const localMicrophones = await deviceManager.getMicrophones(); // [AudioDeviceIn
 
 // Get a list of available speaker devices for use.
 const localSpeakers = await deviceManager.getSpeakers(); // [AudioDeviceInfo, AudioDeviceInfo...]
-
 ```
 
-### <a name="set-default-microphonespeaker"></a>Назначение микрофона или динамика по умолчанию
+### <a name="set-the-default-microphone-and-speaker"></a>Установка микрофона и динамика по умолчанию
 
-Диспетчер устройств позволяет задать устройство по умолчанию, которое будет использоваться при осуществлении вызова.
-Если значения по умолчанию для клиента не заданы, Службы коммуникации будут использовать значения по умолчанию для ОС.
+В `deviceManager` можно задать устройство по умолчанию, которое будет использоваться для запуска вызова. Если значения по умолчанию для клиента не заданы, службы связи используют параметры операционной системы по умолчанию.
 
 ```js
-
 // Get the microphone device that is being used.
 const defaultMicrophone = deviceManager.selectedMicrophone;
 
@@ -527,12 +539,11 @@ const defaultSpeaker = deviceManager.selectedSpeaker;
 
 // Set the speaker device to use.
 await deviceManager.selectSpeaker(AudioDeviceInfo);
-
 ```
 
 ### <a name="local-camera-preview"></a>Предварительный просмотр изображения с локальной камеры
 
-С помощью `DeviceManager` и `Renderer` вы можете реализовать отрисовку потоков из локальной камеры. Этот поток не отправляется другим участникам, а используется как локальный канал предварительного просмотра. Это действие выполняется асинхронно.
+С помощью `deviceManager` и `Renderer` вы можете реализовать отрисовку потоков из локальной камеры. Этот поток не отправляется другим участникам, а используется как локальный канал предварительного просмотра.
 
 ```js
 const cameras = await deviceManager.getCameras();
@@ -544,21 +555,22 @@ document.body.appendChild(view.target);
 
 ```
 
-### <a name="request-permission-to-cameramicrophone"></a>Запрос разрешений для камеры или микрофона
+### <a name="request-permission-to-camera-and-microphone"></a>Запрос разрешения на камеру и микрофон
 
-Запросите у пользователя разрешение на доступ к камере и микрофону следующим образом:
+Запрашивать у пользователя разрешение на камеру и микрофон:
 
 ```js
 const result = await deviceManager.askDevicePermission({audio: true, video: true});
 ```
-Это значение асинхронно разрешается в объект, который обозначает предоставление разрешений `audio` и `video`:
+
+Это разрешается с помощью объекта, который указывает `audio` , `video` предоставлены ли разрешения:
+
 ```js
 console.log(result.audio);
 console.log(result.video);
 ```
 
-
-## <a name="call-recording-management"></a>Управление записью вызовов
+## <a name="record-calls"></a>Вызовы записей
 
 [!INCLUDE [Private Preview Notice](../../../includes/private-preview-include-section.md)]
 
@@ -568,7 +580,7 @@ console.log(result.video);
 const callRecordingApi = call.api(Features.Recording);
 ```
 
-Затем вы можете убедиться, что вызов записывается, проверив свойство `isRecordingActive` объекта `callRecordingApi`, которое возвращает значение `Boolean`.
+Затем, чтобы проверить, записывается ли вызов, проверьте `isRecordingActive` свойство объекта `callRecordingApi` . Он возвращает `Boolean`.
 
 ```js
 const isResordingActive = callRecordingApi.isRecordingActive;
@@ -585,35 +597,34 @@ callRecordingApi.on('isRecordingActiveChanged', isRecordingActiveChangedHandler)
 
 ```
 
-## <a name="call-transfer-management"></a>Управление перенаправлением вызовов
+## <a name="transfer-calls"></a>Вызовы перемещения
 
-Перенаправление вызовов является расширенной функцией основного API `Call`. Сначала необходимо получить объект API функции перенаправления:
+Перенаправление вызовов является расширенной функцией основного API `Call`. Сначала необходимо получить объект API функции перемещения:
 
 ```js
 const callTransferApi = call.api(Features.Transfer);
 ```
 
-Процесс перенаправления вызова затрагивает трех участников: *передающая сторона*, *передаваемая сторона* и *целевая сторона*. Поток передачи выполняется следующим образом:
+Передача вызовов требует трех сторон:
 
-1. существует уже установленный вызов между *передающей стороной* и *передаваемой стороной*;
-2. *передающая сторона* хочет передать вызов (*передаваемая сторона* -> *целевая сторона*);
-3. *передающая сторона* вызывает API `transfer`;
-4. *передаваемая сторона* решает подтвердить (`accept`) или отклонить (`reject`) запрос на передачу к *целевой стороне* через событие `transferRequested`;
-5. *целевая сторона* получает входящий вызов, если *передаваемая сторона* подтверждает (`accept`) запрос на передачу.
+- *Получатель*: лицо, инициирующее запрос на перемещение.
+- *Получатель*: лицо, которое переносится.
+- *Цель передачи*: лицо, которому передается объект.
 
-### <a name="transfer-terminology"></a>Терминология, связанная с передачей вызовов
+Передачи выполните следующие действия.
 
-- Передающая сторона — участник вызова, который инициирует запрос на передачу.
-- Передаваемая сторона — участник вызова, который перенаправляется к целевой стороне.
-- Целевая сторона — новый участник, к которому перенаправляется передаваемая сторона.
+1. Между *передаваемой* и *передаваемой* стороной уже есть подключенный звонок. Объект, принимающий запрос *, принимает решение* *о перемещении* вызова от переданного *объекта к цели перемещения*.
+1. Объект- *получатель* вызывает `transfer` API.
+1. Переданный объект *принимает решение* о том, `accept` `reject` передается ли запрос на перемещение в *цель перемещения* с помощью `transferRequested` события.
+1. *Целевой объект перемещения* получает входящий вызов только в том случае, если *получатель* принимает запрос на перемещение.
 
-Для передачи текущего вызова можно использовать синхронный API `transfer`. `transfer` принимает необязательный аргумент `TransferCallOptions`, который позволяет задать флаг `disableForwardingAndUnanswered`:
+Для перемещения текущего вызова можно использовать `transfer` API. `transfer` принимает необязательный параметр `transferCallOptions` , который позволяет установить `disableForwardingAndUnanswered` флаг:
 
-- `disableForwardingAndUnanswered` = false — если *целевая сторона* не ответит на входящий вызов, осуществляемый при передаче, применяются параметры переадресации и отсутствия ответа, настроенные для *целевой стороны*;
-- `disableForwardingAndUnanswered` = false — если *целевая сторона* не ответит на входящий вызов, осуществляемый при передаче, попытка передачи вызова прерывается.
+- `disableForwardingAndUnanswered = false`: Если *целевой объект передачи* не отвечает на вызов передачи, передача выполняется после перенаправления *цели передачи* и без ответа параметров.
+- `disableForwardingAndUnanswered = true`: Если *целевой объект перемещения* не отвечает на вызов метода пересылки, то операция перемещения завершается.
 
 ```js
-// transfer target can be ACS user
+// transfer target can be an ACS user
 const id = { communicationUserId: <ACS_USER_ID> };
 ```
 
@@ -622,17 +633,17 @@ const id = { communicationUserId: <ACS_USER_ID> };
 const transfer = callTransferApi.transfer({targetParticipant: id});
 ```
 
-При передаче вызова можно подписаться на события `transferStateChanged` и `transferRequested`. Событие `transferRequsted` поступает от экземпляра `call`, а событие `transferStateChanged` и передача `state` и `error` поступают от экземпляра `transfer`.
+`transfer`API позволяет подписываться на `transferStateChanged` события и `transferRequested` . `transferRequested`Событие поступает из `call` экземпляра; `transferStateChanged` событие и передает его `state` `error` из `transfer` экземпляра.
 
 ```js
 // transfer state
 const transferState = transfer.state; // None | Transferring | Transferred | Failed
 
 // to check the transfer failure reason
-const transferError = transfer.error; // transfer error code that describes the failure if transfer request failed
+const transferError = transfer.error; // transfer error code that describes the failure if a transfer request failed
 ```
 
-Передаваемая сторона может принять или отклонить запрос на передачу, созданный передающей стороной в событии `transferRequested` с помощью `accept()` или `reject()` в `transferRequestedEventArgs`. Вы можете получить доступ к информации `targetParticipant` и методам `accept` и `reject` через `transferRequestedEventArgs`.
+*Получатель* может принять или отклонить запрос на перемещение, инициированный *перенаправлением* в `transferRequested` событии, с помощью `accept()` или `reject()` в `transferRequestedEventArgs` . Доступ к `targetParticipant` сведениям и `accept` `reject` методам можно получить в `transferRequestedEventArgs` .
 
 ```js
 // Transferee to accept the transfer request
@@ -646,13 +657,14 @@ callTransferApi.on('transferRequested', args => {
 });
 ```
 
-## <a name="eventing-model"></a>Модель событий
-Вам нужно проверить текущие значения и подписаться на события обновления для получения будущих значений.
+## <a name="learn-about-eventing-models"></a>Дополнительные сведения о моделях событий
+
+Проверьте текущие значения и подпишитесь на события обновления для будущих значений.
 
 ### <a name="properties"></a>Свойства
 
 ```js
-// Inspect current value
+// Inspect the current value
 console.log(object.property);
 
 // Subscribe to value updates
@@ -666,7 +678,7 @@ object.off('propertyChanged', () => {});
 
 
 
-// Example for inspecting call state
+// Example for inspecting a call state
 console.log(call.state);
 call.on('stateChanged', () => {
     console.log(call.state);
@@ -675,8 +687,9 @@ call.off('stateChanged', () => {});
 ```
 
 ### <a name="collections"></a>Коллекции
+
 ```js
-// Inspect current collection
+// Inspect the current collection
 object.collection.forEach(v => {
     console.log(v);
 });
@@ -695,8 +708,6 @@ object.on('collectionUpdated', e => {
 
 // Unsubscribe from updates:
 object.off('collectionUpdated', () => {});
-
-
 
 // Example for subscribing to remote participants and their video streams
 call.remoteParticipants.forEach(p => {

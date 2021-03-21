@@ -16,10 +16,10 @@ ms.date: 03/10/2021
 ms.author: ril
 ms.reviewer: juliako
 ms.openlocfilehash: 1a7e20681dfa7da7ce30f46a7c4b0b6df6f78916
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103009569"
 ---
 # <a name="redact-faces-with-azure-media-analytics-walkthrough"></a>Пошаговое руководство скрытия лиц с помощью аналитики мультимедиа Azure
@@ -123,7 +123,7 @@ ms.locfileid: "103009569"
 6.  Передайте этот файл в выходной ресурс из шага 1. Передайте первоначальное видео в этот ресурс и укажите его в качестве основного ресурса. 
 7.  Выполните задание Redaction для этого ресурса в режиме "Redact" (Скрытие), чтобы получить окончательное отредактированное видео. 
 
-## <a name="next-steps"></a>Дальнейшие действия 
+## <a name="next-steps"></a>Следующие шаги 
 
 [!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
 

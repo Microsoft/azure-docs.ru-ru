@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 02/05/2020
 ms.openlocfilehash: 3c26368e6281ad74d617891ba15c980117b25a6e
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100106427"
 ---
 # <a name="azure-database-for-postgresql---known-issues-and-limitations"></a>База данных Azure для PostgreSQL — известные проблемы и ограничения
@@ -33,5 +33,5 @@ ms.locfileid: "100106427"
 | ----- | ------ | ---- | 
 | PostgreSQL 9,6, 10, 11 | Изменение параметра сервера `max_locks_per_transaction` на большее значение, чем [рекомендовано](https://www.postgresql.org/docs/11/kernel-resources.html) , может привести к тому, что сервер не сможет запуститься после перезагрузки. | Оставьте значение по умолчанию (32 или 64) или задайте разумное значение для каждой PostgreSQL [документации](https://www.postgresql.org/docs/11/kernel-resources.html). <br> <br> Со стороны службы это работает, чтобы ограничить высокую ценность в зависимости от номера SKU.  | 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - См. [рекомендации](./concepts-query-store-best-practices.md) по хранилищу запросов

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/10/2021
 ms.reviewer: sngun
 ms.openlocfilehash: 9279dddc92629b17a2a73f3a41fe261d322d677e
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103463686"
 ---
 # <a name="change-feed-pull-model-in-azure-cosmos-db"></a>Модель извлечения канала изменений в Azure Cosmos DB
@@ -41,7 +41,7 @@ ms.locfileid: "103463686"
 
 Ниже перечислены некоторые ключевые различия между обработчиком веб-канала изменений и моделью извлечения.
 
-|Функция  | Обработчик канала изменений| Модель извлечения |
+|Компонент  | Обработчик канала изменений| Модель извлечения |
 | --- | --- | --- |
 | Отслеживание текущей точки обработки в веб-канале изменений | Аренда (хранится в контейнере Azure Cosmos DB) | Маркер продолжения (сохраненный в памяти или вручную) |
 | Возможность воспроизведения прошлых изменений | Да, с моделью отправки | Да, с моделью извлечения|

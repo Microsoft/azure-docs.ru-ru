@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 07/12/2018
 ms.author: rogarana
 ms.openlocfilehash: 3f586c8907ded618b4cc4aaaadf3c87471cda0b5
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102550728"
 ---
 # <a name="convert-a-windows-virtual-machine-from-unmanaged-disks-to-managed-disks"></a>Переключение виртуальной машины Windows с неуправляемых дисков на управляемые диски
@@ -20,7 +20,7 @@ ms.locfileid: "102550728"
 
  
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 
 * Просмотрите раздел [Планирование миграции на управляемые диски](on-prem-to-azure.md#plan-for-the-migration-to-managed-disks).
@@ -86,7 +86,7 @@ ms.locfileid: "102550728"
    ```
 
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 Если во время преобразования произойдет ошибка или виртуальная машина находится в состоянии сбоя из-за проблем во время предыдущего преобразования, выполните командлет `ConvertTo-AzVMManagedDisk` еще раз. Простой повтор обычно решает проблему.
 Перед преобразованием убедитесь, что все расширения виртуальной машины находятся в состоянии "Подготовка выполнена успешно", или преобразование завершится ошибкой с кодом 409.

@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 01/28/2020
 ms.author: larryfr
 ms.openlocfilehash: a03f71adc99063fee4374b1436b08adf5bab783d
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102510936"
 ---
 Записи в документе `inferenceconfig.json` соответствуют параметрам класса [InferenceConfig](/python/api/azureml-core/azureml.core.model.inferenceconfig). В следующей таблице представлено сопоставление сущностей в документе JSON и параметров метода.

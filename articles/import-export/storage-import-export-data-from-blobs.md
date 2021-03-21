@@ -10,17 +10,17 @@ ms.author: alkohli
 ms.subservice: common
 ms.custom: devx-track-azurepowershell, devx-track-azurecli, contperf-fy21q3
 ms.openlocfilehash: e878be5351362923e163c0a6f617b96ab72a36d8
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102177590"
 ---
 # <a name="use-the-azure-importexport-service-to-export-data-from-azure-blob-storage"></a>Использование службы "Импорт и экспорт Azure" для экспорта данных из хранилища BLOB-объектов Azure
 
 В этой статье содержатся пошаговые инструкции по использованию службы "Импорт и экспорт Azure" для безопасного экспорта больших объемов данных из хранилища BLOB-объектов Azure. Эта служба требует отправки пустых дисков в центр обработки данных Azure. Служба экспортирует данные из учетной записи хранения на диски, а затем отправляет эти диски обратно.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем создавать задание экспорта для передачи данных из хранилища BLOB-объектов Azure, внимательно просмотрите и выполните описанные ниже предварительные требования для этой службы.
 Необходимо сделать следующее:
@@ -125,7 +125,7 @@ ms.locfileid: "102177590"
 
    ![Проверка и создание заказа на экспорт](./media/storage-import-export-data-from-blobs/export-from-blob-6-a.png)
 
- 1. После завершения проверки выберите **создать**.
+ 1. После завершения проверки щелкните **Создать**.
 
 <!--Replaced text: Steps 4 - end of "Create an export job." Wizard design changes required both screen and text updates.
 

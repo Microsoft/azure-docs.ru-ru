@@ -9,16 +9,26 @@ ms.subservice: general
 ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: mbaldwin
-ms.openlocfilehash: 7b71fc2f3afb67d766bfe267888674b55af6a3a5
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: 62035b2fe6c3db71e392a05946ea3f230dfa030e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102503919"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104604664"
 ---
 # <a name="how-to-enable-key-vault-logging"></a>Включение ведения журнала Key Vault
 
 Создав одно или несколько хранилищ ключей вы, вероятно, захотите отслеживать, кто, как и когда осуществлял доступ к этим хранилищам. Дополнительные сведения о функции см. в разделе [ведение журнала Key Vault](logging.md).
+
+Журнал:
+
+* все прошедшие проверку подлинности запросы REST API, включая запросы, ставшие неудачными из-за определенных разрешений на доступ, системных ошибок или неправильных запросов;
+* операции с хранилищем ключей, включая создание, удаление и настройку политик доступа к нему, а также обновление таких его атрибутов, как теги;
+* операции с ключами и секретами в хранилище ключей, в том числе:
+  * создание, изменение или удаление ключей или секретов;
+  * подписывание, проверка, шифрование, расшифровка, упаковка и распаковка ключей, получение секретов и вывод списка ключей и секретов (и их версий);
+* непроверенные запросы, которые приводят к появлению ответа 401 (например, запросы без токена носителя, с недействительным токеном, а также запросы неправильного формата или просроченные запросы).  
+* Изменились события уведомлений Сетки событий, связанные с приближением истечения срока действия, истечением срока действия и политикой доступа к хранилищу (событие новой версии не регистрируются). События заносятся в журнал независимо от наличия подписки на события, созданной в хранилище ключей. См. статью [Использование Azure Key Vault в качестве источника Сетки событий](../../event-grid/event-schema-key-vault.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -58,7 +68,7 @@ Set-AzContext -SubscriptionId "<subscriptionID>"
 
 Кроме того, необходимо указать имя учетной записи хранения. Имена учетных записей хранения должны быть уникальными длиной от 3 до 24 символов и использовать только цифры и буквы в нижнем регистре.  Наконец, мы создадим учетную запись хранения SKU "Standard_LRS".
 
-В Azure CLI используйте команду [AZ Storage Account Create](/cli/azure/storage/account#az_storage_account_create) .
+В Azure CLI используйте команду [AZ Storage Account Create](/cli/azure/storage/account#az_storage_account_create) . 
 
 ```azurecli-interactive
 az storage account create --name "<your-unique-storage-account-name>" -g "myResourceGroup" --sku "Standard_LRS"
@@ -100,15 +110,31 @@ Get-AzKeyVault -VaultName "<your-unique-keyvault-name>"
 
 Идентификатор ресурса для хранилища ключей будет иметь формат "/Subscriptions/<a-Subscription-ID>/Ресаурцеграупс/миресаурцеграуп/провидерс/Микрософт.кэйваулт/ваултс/<a-Unique-KeyVault-Name>". Обратите внимание на следующее действие.
 
-## <a name="enable-logging-using-azure-powershell"></a>Включение ведения журнала с помощью Azure PowerShell
+## <a name="enable-logging"></a>Включение ведения журналов
 
-Чтобы включить ведение журнала для Key Vault, мы будем использовать команду Azure CLI [AZ Monitor диагностики-Settings Create](/cli/azure/monitor/diagnostic-settings) или командлет [Set-АЗДИАГНОСТИКСЕТТИНГ](/powershell/module/az.monitor/set-azdiagnosticsetting) вместе с идентификатором учетной записи хранения и идентификатором ресурса хранилища ключей.
+Вы можете включить ведение журнала для Key Vault с помощью Azure CLI, Azure PowerShell или портал Azure.
+
+# <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
+
+### <a name="azure-cli"></a>Azure CLI
+
+Воспользуйтесь командой Azure CLI [AZ Monitor диагностики-Settings Create](/cli/azure/monitor/diagnostic-settings) вместе с идентификатором учетной записи хранения и идентификатором ресурса хранилища ключей.
 
 ```azurecli-interactive
 az monitor diagnostic-settings create --storage-account "<storage-account-id>" --resource "<key-vault-resource-id>" --name "Key vault logs" --logs '[{"category": "AuditEvent","enabled": true}]' --metrics '[{"category": "AllMetrics","enabled": true}]'
 ```
 
-С Azure PowerShell мы будем использовать командлет [Set-аздиагностиксеттинг](/powershell/module/az.monitor/set-azdiagnosticsetting) с флагом **-Enabled** , установленным в **$true** , а категория имеет значение `AuditEvent` (единственная категория для Key Vault ведения журнала):
+При необходимости можно задать политику хранения для журналов, чтобы старые журналы автоматически удалялись по истечении указанного промежутка времени. Например, можно задать политику хранения, которая автоматически удаляет журналы старше 90 дней.
+
+В Azure CLI используйте команду [AZ Monitor диагностики-Settings Update](/cli/azure/monitor/diagnostic-settings#az_monitor_diagnostic_settings_update) . 
+
+```azurecli-interactive
+az monitor diagnostic-settings update --name "Key vault retention policy" --resource "<key-vault-resource-id>" --set retentionPolicy.days=90
+```
+
+# <a name="azure-powershell"></a>[Azure PowerShell](#tab/azure-powershell)
+
+Используйте командлет [Set-аздиагностиксеттинг](/powershell/module/az.monitor/set-azdiagnosticsetting) с флагом **-Enabled** , установленным в значение **$true** и категорией `AuditEvent` (единственная категория для Key Vault ведения журнала):
 
 ```powershell-interactive
 Set-AzDiagnosticSetting -ResourceId "<key-vault-resource-id>" -StorageAccountId $sa.id -Enabled $true -Category "AuditEvent"
@@ -116,28 +142,35 @@ Set-AzDiagnosticSetting -ResourceId "<key-vault-resource-id>" -StorageAccountId 
 
 При необходимости можно задать политику хранения для журналов, чтобы старые журналы автоматически удалялись по истечении указанного промежутка времени. Например, можно задать политику хранения, которая автоматически удаляет журналы старше 90 дней.
 
-<!-- With the Azure CLI, use the [az monitor diagnostic-settings update](/cli/azure/monitor/diagnostic-settings#az_monitor_diagnostic_settings_update) command. 
-
-```azurecli-interactive
-az monitor diagnostic-settings update 
-```
--->
-
-С Azure PowerShell используйте командлет [Set-аздиагностиксеттинг](/powershell/module/az.monitor/set-azdiagnosticsetting) . 
+С Azure PowerShell используйте командлет [Set-аздиагностиксеттинг](/powershell/module/az.monitor/set-azdiagnosticsetting) .
 
 ```powershell-interactive
 Set-AzDiagnosticSetting "<key-vault-resource-id>" -StorageAccountId $sa.id -Enabled $true -Category AuditEvent -RetentionEnabled $true -RetentionInDays 90
 ```
 
-Журнал:
+# <a name="azure-portal"></a>[Портал Azure](#tab/azure-portal)
 
-* все прошедшие проверку подлинности запросы REST API, включая запросы, ставшие неудачными из-за определенных разрешений на доступ, системных ошибок или неправильных запросов;
-* операции с хранилищем ключей, включая создание, удаление и настройку политик доступа к нему, а также обновление таких его атрибутов, как теги;
-* операции с ключами и секретами в хранилище ключей, в том числе:
-  * создание, изменение или удаление ключей или секретов;
-  * подписывание, проверка, шифрование, расшифровка, упаковка и распаковка ключей, получение секретов и вывод списка ключей и секретов (и их версий);
-* непроверенные запросы, которые приводят к появлению ответа 401 (например, запросы без токена носителя, с недействительным токеном, а также запросы неправильного формата или просроченные запросы).  
-* Изменились события уведомлений Сетки событий, связанные с приближением истечения срока действия, истечением срока действия и политикой доступа к хранилищу (событие новой версии не регистрируются). События заносятся в журнал независимо от наличия подписки на события, созданной в хранилище ключей. См. статью [Использование Azure Key Vault в качестве источника Сетки событий](../../event-grid/event-schema-key-vault.md).
+Чтобы настроить параметры диагностики на портале, выполните следующие действия.
+
+1. В меню колонки ресурсов выберите параметры диагностики.
+
+    :::image type="content" source="../media/diagnostics-portal-1.png" alt-text="Портал диагностики 1":::
+
+1. Щелкните "+ добавить параметр диагностики".
+
+    :::image type="content" source="../media/diagnostics-portal-2.png" alt-text="Портал диагностики 2":::
+ 
+1. Выберите имя для вызова параметра диагностики. Чтобы настроить ведение журнала для Azure Monitor для Key Vault, выберите параметр "AuditEvent" и "отправить в Log Analytics рабочую область". Затем выберите подписку и Log Analytics рабочую область, для которой нужно отправить журналы.
+
+    :::image type="content" source="../media/diagnostics-portal-3.png" alt-text="Портал диагностики 3":::
+
+    В противном случае выберите параметры, относящиеся к журналам, которые вы хотите выбрать.
+
+1. Выбрав нужные параметры, нажмите кнопку Сохранить.
+
+    :::image type="content" source="../media/diagnostics-portal-4.png" alt-text="Портал диагностики 4":::
+
+---
 
 ## <a name="access-your-logs"></a>Доступ к журналам
 

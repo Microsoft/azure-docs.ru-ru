@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 75f797c40a276323cea9983c5340d2d854160c83
-ms.sourcegitcommit: 1bdcaca5978c3a4929cccbc8dc42fc0c93ca7b30
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97368483"
 ---
 # <a name="azure-active-directory-pass-through-authentication-frequently-asked-questions"></a>Сквозная проверка подлинности Azure Active: ответы на часто задаваемые вопросы
@@ -109,7 +109,7 @@ ms.locfileid: "97368483"
 
 Если агент сквозной аутентификации выполняется, он остается активным и постоянно обрабатывает запросы на вход пользователей. Если вы хотите удалить агент аутентификации, выберите **Панель управления > Программы > Программы и компоненты** и удалите программы **Microsoft Azure AD Connect Authentication Agent** и **Microsoft Azure AD Connect Agent Updater**.
 
-Если открыть колонку "Сквозная проверка подлинности" в [центре администрирования Azure Active Directory](https://aad.portal.azure.com) после завершения предыдущего шага, то вы увидите, что агент аутентификации **неактивен**. Это _ожидаемое_. Агент аутентификации автоматически удаляется из списка через 10 дней.
+Если открыть колонку "Сквозная проверка подлинности" в [центре администрирования Azure Active Directory](https://aad.portal.azure.com) после завершения предыдущего шага, то вы увидите, что агент аутентификации **неактивен**. Это _ожидаемое поведение_. Агент аутентификации автоматически удаляется из списка через 10 дней.
 
 ## <a name="i-already-use-ad-fs-to-sign-in-to-azure-ad-how-do-i-switch-it-to-pass-through-authentication"></a>Я уже использую AD FS для входа в Azure AD. Как изменить этот метод на сквозную проверку подлинности?
 
@@ -140,7 +140,7 @@ ms.locfileid: "97368483"
 
 ## <a name="why-do-i-need-a-cloud-only-global-administrator-account-to-enable-pass-through-authentication"></a>Зачем для включения сквозной аутентификации нужна облачная учетная запись глобального администратора?
 
-Рекомендуется включать или отключать сквозную аутентификацию, используя облачную учетную запись глобального администратора. Узнайте [, как добавить облачную учетную запись глобального администратора](../fundamentals/add-users-azure-active-directory.md). Выполните эти инструкции, чтобы не потерять доступ к клиенту.
+Рекомендуется включать или отключать сквозную аутентификацию, используя облачную учетную запись глобального администратора. См. дополнительные сведения о [добавлении облачной учетной записи глобального администратора](../fundamentals/add-users-azure-active-directory.md). Выполните эти инструкции, чтобы не потерять доступ к клиенту.
 
 ## <a name="how-can-i-disable-pass-through-authentication"></a>Как можно отключить сквозную проверку подлинности?
 

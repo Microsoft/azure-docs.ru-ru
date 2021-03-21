@@ -8,10 +8,10 @@ ms.date: 01/10/2018
 ms.author: jingwang
 robots: noindex
 ms.openlocfilehash: 5acae7c90efbf178fad199177fa6e0886e497fdf
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100371215"
 ---
 # <a name="load-1-tb-into-azure-synapse-analytics-under-15-minutes-with-data-factory"></a>Загрузка 1 ТБ в Azure синапсе Analytics в течение 15 минут с помощью фабрики данных
@@ -39,7 +39,7 @@ ms.locfileid: "100371215"
 >
 >
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 * Хранилище BLOB-объектов Azure: в этом эксперименте хранилище BLOB-объектов Azure (GRS) используется для хранения тестового набора данных TPC-H.  Если у вас нет учетной записи хранения Azure, узнайте, как [создать учетную запись хранения](../../storage/common/storage-account-create.md).
 * Данные [TPC-H](http://www.tpc.org/tpch/): в качестве тестового набора данных мы будем использовать TPC-H.  Для этого необходимо использовать `dbgen` из набора средств TPC-H. Это поможет создать набор данных.  Можно скачать исходный код `dbgen` из [инструментов TPC](http://www.tpc.org/tpc_documents_current_versions/current_specifications5.asp) и скомпилировать его или скачать скомпилированный двоичный файл с сайта [GitHub](https://github.com/Azure/Azure-DataFactory/tree/master/SamplesV1/TPCHTools).  Выполните dbgen.exe с приведенными ниже командами, чтобы создать неструктурированный файл размером в 1 ТБ для таблицы `lineitem`, распределенной на 10 файлов.
 
@@ -136,7 +136,7 @@ ms.locfileid: "100371215"
 
 1. В качестве **имени задачи** введите **CopyFromBlobToAzureSqlDataWarehouse**.
 2. Выберите параметр **Run once now** (Запустить сейчас один раз).   
-3. Нажмите кнопку **Далее**.  
+3. Щелкните **Далее**.  
 
     ![Мастер копирования — страница "Свойства"](media/data-factory-load-sql-data-warehouse/copy-wizard-properties-page.png)
 
@@ -178,7 +178,7 @@ ms.locfileid: "100371215"
 
 ## <a name="step-4-performance-settings"></a>Шаг 4. Настройки производительности
 
-Флажок **Allow polybase** (Разрешить использование PolyBase) установлен по умолчанию.  Нажмите кнопку **Далее**.
+Флажок **Allow polybase** (Разрешить использование PolyBase) установлен по умолчанию.  Щелкните **Далее**.
 
 ![Мастер копирования — страница сопоставления столбцов](media/data-factory-load-sql-data-warehouse/performance-settings-page.png)
 
@@ -207,6 +207,6 @@ ms.locfileid: "100371215"
 
 Дополнительные сведения см. в статье рекомендации [по Azure синапсе Analytics](../../synapse-analytics/sql-data-warehouse/sql-data-warehouse-best-practices.md) .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Мастер копирования фабрики данных](data-factory-copy-wizard.md). В этой статье приведены сведения о мастере копирования.
 * [Руководство по настройке производительности действия копирования](data-factory-copy-activity-performance.md). Эта статья содержит эталонные измерения производительности и руководство по настройке.

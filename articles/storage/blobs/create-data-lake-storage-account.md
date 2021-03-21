@@ -9,10 +9,10 @@ ms.service: storage
 ms.reviewer: stewu
 ms.subservice: data-lake-storage-gen2
 ms.openlocfilehash: 712f1dc0679ee49791831e782fb68c39a757870a
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98624343"
 ---
 # <a name="create-a-storage-account-to-use-with-azure-data-lake-storage-gen2"></a>Создание учетной записи хранения для использования с Azure Data Lake Storage 2-го поколения
@@ -44,7 +44,7 @@ Data Lake Storage возможности поддерживаются в сле�
 > [!NOTE]
 > Невозможно одновременно включить **защиту данных** и **Иерархическое пространство имен** .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Общие сведения об учетной записи хранения](../common/storage-account-overview.md)
 - [Использование Azure Data Lake Storage 2-го поколения для обеспечения соответствия требованиям больших данных](data-lake-storage-data-scenarios.md)

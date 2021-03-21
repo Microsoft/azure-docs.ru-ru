@@ -6,12 +6,12 @@ services: azure-monitor
 ms.topic: reference
 ms.date: 07/03/2019
 ms.author: vitalyg
-ms.openlocfilehash: bd28fa9f20775be659de6cef99f9ceda29fe52cc
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: bae7980137c1da5e1755450863af4f9029d6ed62
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102049140"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104583468"
 ---
 # <a name="application-insights-log-based-metrics"></a>Метрики на основе журналов Application Insights
 
@@ -95,9 +95,11 @@ availabilityResults
 
 ### <a name="browser-page-load-time-browsertimingstotalduration"></a>Время загрузки страницы браузера (Бровсертимингс/Тоталдуратион)
 
+Время с момента отправки запроса пользователя до загрузки DOM, таблиц стилей, сценариев и изображений.
+
 |Единица измерения|Поддерживаемые агрегаты|Предварительно агрегированные измерения|
 |---|---|---|
-|Миллисекунды|Average, min, Max|None|
+|Миллисекунды|Average, min, Max|Нет|
 
 ```Kusto
 browserTimings
@@ -111,9 +113,11 @@ browserTimings
 
 ### <a name="client-processing-time-browsertimingprocessingduration"></a>Время обработки клиента (Бровсертиминг/Процессингдуратион)
 
+Время с момента получения последнего байта документа до загрузки модели DOM. Обработка асинхронных запросов может продолжаться.
+
 |Единица измерения|Поддерживаемые агрегаты|Предварительно агрегированные измерения|
 |---|---|---|
-|Миллисекунды|Average, min, Max|None|
+|Миллисекунды|Average, min, Max|Нет|
 
 ```Kusto
 browserTimings
@@ -127,9 +131,11 @@ browserTimings
 
 ### <a name="page-load-network-connect-time-browsertimingsnetworkduration"></a>Время подключения к сети на странице (Бровсертимингс/Нетворкдуратион)
 
+Время между запросом пользователя и сетевым подключением. Включает время поиска DNS и транспортного подключения.
+
 |Единица измерения|Поддерживаемые агрегаты|Предварительно агрегированные измерения|
 |---|---|---|
-|Миллисекунды|Average, min, Max|None|
+|Миллисекунды|Average, min, Max|Нет|
 
 ```Kusto
 browserTimings
@@ -143,9 +149,11 @@ browserTimings
 
 ### <a name="receiving-response-time-browsertimingsreceiveduration"></a>Получение времени ответа (Бровсертимингс/Рецеиведуратион)
 
+Время от первого до последнего байта или до отключения.
+
 |Единица измерения|Поддерживаемые агрегаты|Предварительно агрегированные измерения|
 |---|---|---|
-|Миллисекунды|Average, min, Max|None|
+|Миллисекунды|Average, min, Max|Нет|
 
 ```Kusto
 browserTimings
@@ -159,9 +167,11 @@ browserTimings
 
 ### <a name="send-request-time-browsertimingssendduration"></a>Время запроса на отправку (Бровсертимингс/Сенддуратион)
 
+Время от установки сетевого подключения до получения первого байта.
+
 |Единица измерения|Поддерживаемые агрегаты|Предварительно агрегированные измерения|
 |---|---|---|
-|Миллисекунды|Average, min, Max|None|
+|Миллисекунды|Average, min, Max|Нет|
 
 ```Kusto
 browserTimings
@@ -183,7 +193,7 @@ browserTimings
 
 |Единица измерения|Поддерживаемые агрегаты|Предварительно агрегированные измерения|Примечания|
 |---|---|---|---|
-|Count|Count|None|В версии на основе журнала используется агрегирование **сумм**|
+|Count|Count|Нет|В версии на основе журнала используется агрегирование **сумм**|
 
 ```Kusto
 exceptions
@@ -198,7 +208,7 @@ exceptions
 
 |Единица измерения|Поддерживаемые агрегаты|Предварительно агрегированные измерения|Примечания|
 |---|---|---|---|
-|Count|Count|None|В версии на основе журнала используется агрегирование **сумм**|
+|Count|Count|Нет|В версии на основе журнала используется агрегирование **сумм**|
 
 ```Kusto
 dependencies

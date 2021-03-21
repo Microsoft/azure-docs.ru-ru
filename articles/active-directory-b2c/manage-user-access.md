@@ -11,10 +11,10 @@ ms.date: 03/09/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 0ee26e7fe74d87f7b20f9a28b049b8043b376273
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102518063"
 ---
 # <a name="manage-user-access-in-azure-active-directory-b2c"></a>Управление доступом пользователей в Azure Active Directory B2C
@@ -219,7 +219,7 @@ ms.locfileid: "102518063"
 </ClaimsTransformations>
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Включите ограничение возраста в Azure AD B2C](age-gating.md).
 - Дополнительные сведения об удалении и экспорте данных пользователя см. в разделе [Управление пользовательскими данными в Azure AD B2C](manage-user-data.md).

@@ -4,10 +4,10 @@ description: В этой статье описывается настройка 
 ms.topic: conceptual
 ms.date: 03/05/2021
 ms.openlocfilehash: 02cb794463b965ebafef0b6861477dbf69227511
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102506418"
 ---
 # <a name="configure-azure-red-hat-openshift-v4x-with-container-insights"></a>Настройка Azure Red Hat OpenShift v4. x с помощью Container Insights
@@ -29,7 +29,7 @@ ms.locfileid: "102506418"
 - Данные в режиме реального времени (Предварительная версия)
 - [Сбор метрик](container-insights-update-metrics.md) из узлов кластера и модулей Pod и их сохранение в базе данных метрик Azure Monitor
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Azure CLI версии 2.0.72 или более поздней.  
 

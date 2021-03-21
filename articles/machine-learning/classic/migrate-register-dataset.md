@@ -9,10 +9,10 @@ author: xiaoharper
 ms.author: zhanxia
 ms.date: 02/04/2021
 ms.openlocfilehash: 4c04dd5a2b41b3db54b20c9e514767453951cc35
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103565300"
 ---
 # <a name="migrate-a-studio-classic-dataset-to-azure-machine-learning"></a>Миграция набора данных Studio (классическая модель) в Машинное обучение Azure
@@ -111,7 +111,7 @@ ms.locfileid: "103565300"
 > Пользователи Studio (классические) должны заметить, что следующие облачные источники изначально не поддерживаются в Машинное обучение Azure:
 > - Запрос Hive
 > - таблице Azure
-> - Azure Cosmos DB;
+> - Azure Cosmos DB
 > - Локальная база данных SQL
 >
 > Мы рекомендуем пользователям переносить свои данные в Поддерживаемые службы хранилища с помощью фабрики данных Azure.  
@@ -142,7 +142,7 @@ ms.locfileid: "103565300"
 1. В палитре модулей слева найдите модуль **Импорт данных** и перетащите его на холст.
 1. Выберите модуль **Импорт данных** и используйте параметры на панели справа, чтобы настроить источник данных.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Из этой статьи вы узнали, как перенести набор данных Studio (классический) в Машинное обучение Azure. Следующим шагом является [Перестроение конвейера обучения студии (классический)](migrate-rebuild-experiment.md).
 

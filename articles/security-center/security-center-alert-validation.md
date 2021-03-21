@@ -1,24 +1,18 @@
 ---
 title: Проверка предупреждений в центре безопасности Azure | Документация Майкрософт
 description: Узнайте, как проверить правильность настройки оповещений системы безопасности в центре безопасности Azure.
-services: security-center
-documentationcenter: na
 author: memildin
 manager: rkarlin
-ms.assetid: f8f17a55-e672-4d86-8ba9-6c3ce2e71a57
 ms.service: security-center
-ms.devlang: na
 ms.topic: how-to
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 02/17/2021
+ms.date: 03/17/2021
 ms.author: memildin
-ms.openlocfilehash: 74323c63ab8985dee2391a546d82258dcb8d0114
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: b90ca39d7bf01b84400464240bb581a5e7bc922a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102099528"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104602389"
 ---
 # <a name="alert-validation-in-azure-security-center"></a>Проверка предупреждений в центре безопасности Azure
 Этот документ содержит информацию о том, как убедиться, что ваша система правильно настроена для оповещений центра безопасности Azure.
@@ -39,7 +33,7 @@ ms.locfileid: "102099528"
 
 Для создания образцов оповещений:
 
-1. На панели инструментов на странице оповещения выберите **создать образцы оповещений**. 
+1. В качестве пользователя с **участником** **"администратор безопасности ролей" или "Подписка"** на панели инструментов на странице "оповещения" выберите **создать образцы оповещений**.
 1. Выберите подписку.
 1. Выберите соответствующие планы защитника Azure, для которых вы хотите просмотреть оповещения. 
 1. Выберите **создать образцы оповещений**.

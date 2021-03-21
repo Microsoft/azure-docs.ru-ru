@@ -1,22 +1,22 @@
 ---
-title: Настройка мониторинга в работоспособности гостевых систем VM Insights (Предварительная версия)
+title: Настройка мониторинга в VM insights guest health (предварительная версия)
 description: Описывает, как изменить мониторинг по умолчанию для работоспособности гостевых систем VM Insights (Предварительная версия) с помощью портал Azure.
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 12/14/2020
-ms.openlocfilehash: 0f6599bb9f379cf471dafbb83a7deefbb05c0dbe
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: 6bda6c9e5f6e23e9e15c12fd507645fc72159302
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102052217"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104583451"
 ---
-# <a name="configure-monitoring-in-vm-insights-guest-health-preview"></a>Настройка мониторинга в работоспособности гостевых систем VM Insights (Предварительная версия)
+# <a name="configure-monitoring-in-vm-insights-guest-health-preview"></a>Настройка мониторинга в VM insights guest health (предварительная версия)
 Работоспособность гостевых систем VM Insights позволяет просматривать работоспособность виртуальной машины в соответствии с набором измерений производительности, которые вычисляются с регулярным интервалом. В этой статье описывается, как можно изменить мониторинг по умолчанию с помощью портал Azure. Здесь также описываются фундаментальные понятия мониторов, необходимых для [настройки мониторинга с помощью правила сбора данных](vminsights-health-configure-dcr.md).
 
 ## <a name="open-monitor-configuration"></a>Открыть конфигурацию монитора
-Откройте конфигурацию монитора bin портал Azure, выбрав монитор, а затем вкладку **Конфигурация** .
+Откройте конфигурацию монитора в портал Azure, выбрав монитор, а затем вкладку **Конфигурация** .
 
 [![Конфигурация сведений монитора](media/vminsights-health-overview/monitor-details-configuration.png)](media/vminsights-health-overview/monitor-details-configuration.png#lightbox)
 

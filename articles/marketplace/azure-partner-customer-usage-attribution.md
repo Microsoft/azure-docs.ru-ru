@@ -9,10 +9,10 @@ ms.author: camper
 ms.date: 03/09/2021
 ms.custom: devx-track-terraform
 ms.openlocfilehash: 8f84d77b5a424d5f7273c7e748c35c52882819c6
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102608399"
 ---
 # <a name="azure-customer-usage-attribution"></a>Атрибуты использования клиентов Azure
@@ -257,10 +257,10 @@ provider "azurerm" {
 
 Технический консультант для партнеров Майкрософт свяжется с вами, чтобы запланировать беседу для уточнения ваших вопросов.
 
-## <a name="report"></a>Отчет
+## <a name="report"></a>Report
 В настоящее время отчеты об использовании Azure, которые отправляются с помощью атрибутов использования клиентов, недоступны для партнеров независимых поставщиков программного обеспечения. Добавление отчетов в программу коммерческого рынка в центре партнеров для покрытия атрибутов использования клиентов нацелена на вторую половину 2021.
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 #### <a name="after-a-tracking-id-is-added-can-it-be-changed"></a>Можно ли изменить идентификатор отслеживания после его добавления?
 

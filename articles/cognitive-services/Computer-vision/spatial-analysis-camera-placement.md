@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/12/2021
 ms.author: aahi
 ms.openlocfilehash: 4c2d1cd1c73b377d85501fd31d0f5a1893df5183
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102487429"
 ---
 # <a name="camera-placement-guide"></a>Путеводитель по размещению камеры

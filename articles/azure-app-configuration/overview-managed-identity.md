@@ -8,10 +8,10 @@ ms.author: barbkess
 ms.reviewer: lcozzens
 ms.service: azure-app-configuration
 ms.openlocfilehash: 5424b776b977d8a6939bbb28c5d4c9c428cac444
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102179618"
 ---
 # <a name="how-to-use-managed-identities-for-azure-app-configuration"></a>Использование управляемых удостоверений для конфигурации приложений Azure

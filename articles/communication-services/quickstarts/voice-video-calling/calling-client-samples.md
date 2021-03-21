@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.service: azure-communication-services
 zone_pivot_groups: acs-plat-web-ios-android
 ms.openlocfilehash: b4689f9777cee99b5bd85f733812ba986162360c
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103488131"
 ---
 # <a name="quickstart-use-the-communication-services-calling-client-library"></a>Краткое руководство. Использование клиентской библиотеки вызова служб связи

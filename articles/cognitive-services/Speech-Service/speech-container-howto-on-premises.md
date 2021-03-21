@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 10/30/2020
 ms.author: aahi
 ms.openlocfilehash: 78ac9ae4aa8611f50caa94c84d3e6c95e58fc91c
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102200739"
 ---
 # <a name="use-speech-service-containers-with-kubernetes-and-helm"></a>Использование контейнеров речевых служб с Kubernetes и Helm
 
 Одним из вариантов управления речевыми контейнерами в локальной среде является использование Kubernetes и Helm. Используя Kubernetes и Helm для определения образов контейнеров преобразования речи в текст и преобразования текста в речь, мы создадим пакет Kubernetes. Этот пакет будет развернут в кластере Kubernetes в локальной среде. Наконец, мы продемонстрируем, как тестировать развернутые службы и различные параметры конфигурации. Дополнительные сведения о запуске контейнеров DOCKER без оркестрации Kubernetes см. в [статье Установка и запуск контейнеров речевых служб](speech-container-howto.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед использованием контейнеров речи в локальной среде выполните следующие предварительные требования:
 

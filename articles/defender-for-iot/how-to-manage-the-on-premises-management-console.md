@@ -8,10 +8,10 @@ ms.date: 1/12/2021
 ms.topic: article
 ms.service: azure
 ms.openlocfilehash: f3c9f8f78f17153c3d2eb7b014cf616253b3c0c9
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102618259"
 ---
 # <a name="manage-the-on-premises-management-console"></a>Управление локальной консолью управления

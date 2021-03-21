@@ -7,10 +7,10 @@ ms.service: iot-develop
 ms.topic: conceptual
 ms.date: 02/11/2021
 ms.openlocfilehash: 6bbd7d37418af68065daa194d4ff4bd80f6fd09c
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100654561"
 ---
 # <a name="overview-connection-options-for-azure-iot-device-developers"></a>Обзор. параметры подключения для разработчиков устройств Azure IoT
@@ -31,7 +31,7 @@ ms.locfileid: "100654561"
 > [!NOTE]
 > В дополнение к следующим средствам можно программно создавать приложения IoT и управлять ими с помощью REST API, пакетов SDK Azure или шаблонов Azure Resource Manager. Дополнительные сведения см. в [центре Интернета вещей](../iot-hub/about-iot-hub.md) и в документации по службам [IOT Central](../iot-central/core/overview-iot-central.md) .
 
-|Средство  |Поддержка платформы &nbsp; &nbsp; &nbsp; IOT &nbsp; |Документация  |Описание  |
+|Инструмент  |Поддержка платформы &nbsp; &nbsp; &nbsp; IOT &nbsp; |Документация  |Описание  |
 |---------|---------|---------|---------|
 |Центральный веб-интерфейс     | Central | [Центральное краткое руководство](../iot-central/core/quick-deploy-iot-central.md) | Портал на основе браузера для IoT Central. |
 |Портал Azure     | Центр, Центральная      | [Создание центра Интернета вещей с портал Azure](../iot-hub/iot-hub-create-through-portal.md), [управление IOT Central из портал Azure](../iot-central/core/howto-manage-iot-central-from-portal.md)| Портал на основе браузера для центра Интернета вещей и устройств. Также работает с другими ресурсами Azure, включая IoT Central. |

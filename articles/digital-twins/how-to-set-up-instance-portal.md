@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.service: digital-twins
 ms.custom: contperf-fy21q2
 ms.openlocfilehash: 8263e0805f48976222e66922be8c04e0902101d6
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102201844"
 ---
 # <a name="set-up-an-azure-digital-twins-instance-and-authentication-portal"></a>Настройка экземпляра и проверки подлинности Azure Digital двойников (портал)
@@ -108,7 +108,7 @@ ms.locfileid: "102201844"
 
 Теперь у вас есть экземпляр Azure Digital двойников, который готов к работе и ему назначены разрешения для управления им.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Вытестируйте отдельные REST API вызовы в экземпляре с помощью команд CLI Azure Digital двойников: 
 * [AZ DT Справочник](/cli/azure/ext/azure-iot/dt)

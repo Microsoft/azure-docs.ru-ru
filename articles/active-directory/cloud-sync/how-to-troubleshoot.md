@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.prod: windows-server-threshold
 ms.technology: identity-adfs
 ms.openlocfilehash: 174ec8c42ea17ccae04769d7c0baaa91b8e7025b
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102517877"
 ---
 # <a name="cloud-sync-troubleshooting"></a>Устранение неполадок синхронизации в облаке
@@ -176,7 +176,7 @@ ms.locfileid: "102517877"
 
 
 ### <a name="resolve-a-quarantine"></a>Разрешение карантина
-Существует два разных способа разрешения карантина.  Они приведены ниже.
+Существует два разных способа разрешения карантина.  Их можно сформулировать следующим образом.
 
   - Очистить карантин — очищает водяной знак и выполняет разностную синхронизацию
   - перезапуск задания подготовки — очищает водяной знак и запускает начальную синхронизацию.
@@ -222,7 +222,7 @@ ms.locfileid: "102517877"
     ```  
    5. После завершения этого процесса должно быть указано, что учетная запись успешно исправлена.
 
-## <a name="next-steps"></a>Дальнейшие действия 
+## <a name="next-steps"></a>Следующие шаги 
 
 - [Известные ограничения](how-to-prerequisites.md#known-limitations)
 - [Коды ошибок](reference-error-codes.md)

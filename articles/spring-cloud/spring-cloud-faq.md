@@ -9,10 +9,10 @@ ms.author: brendm
 ms.custom: devx-track-java
 zone_pivot_groups: programming-languages-spring-cloud
 ms.openlocfilehash: 50c8a36b943abb24f2c31bfc2bc33e646a74524a
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100596612"
 ---
 # <a name="azure-spring-cloud-faq"></a>Вопросы и ответы по Azure весн Cloud
@@ -183,7 +183,7 @@ Azul системы. Сборки JDK корпоративного выпуск�
 Критические исправления безопасности (CVE Score >= 9), применимые к облаку Azure весны, будут как можно быстрее.
 ::: zone-end
 
-## <a name="deployment"></a>Развертывание
+## <a name="deployment"></a>Deployment (Развертывание)
 
 ### <a name="does-azure-spring-cloud-support-blue-green-deployment"></a>Поддерживает ли Azure Веснное облако развертывание со синим зеленым цветом?
 Да. Дополнительные сведения см. в разделе [Настройка промежуточной среды](spring-cloud-howto-staging-environment.md).
@@ -241,6 +241,6 @@ RetryableEurekaHttpClient: Request execution failure with status code 401; retry
 Мы улучшаем эту часть и не будем использовать эту ошибку в приложениях пользователей в течение короткого будущего времени.
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если у вас возникнут другие вопросы, см. [руководство по устранению неполадок в облаке Azure весны](spring-cloud-troubleshoot.md).

@@ -1,14 +1,14 @@
 ---
 title: Получение данных о соответствии политике
 description: Соответствие определяется оценками и действиями Политики Azure. Узнайте о том, как получить подробные сведения о соответствии для ресурсов Azure.
-ms.date: 10/05/2020
+ms.date: 03/16/2021
 ms.topic: how-to
-ms.openlocfilehash: 3c1c128b414444c6004f32f3f3173548f81a82e1
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: cdd23d685750fb8a5d3803f4b6030e7e67bbddce
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100577118"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104598547"
 ---
 # <a name="get-compliance-data-of-azure-resources"></a>Получение данных о соответствии для ресурсов Azure
 
@@ -26,7 +26,7 @@ ms.locfileid: "100577118"
 
 ## <a name="evaluation-triggers"></a>Триггеры оценки
 
-Результаты завершенного цикла оценки отражаются в поставщике ресурсов `Microsoft.PolicyInsights` с помощью операций `PolicyStates` и `PolicyEvents`. Дополнительные сведения об операциях REST API Azure Policy Insights см. [здесь](/rest/api/policy-insights/).
+Результаты завершенного цикла оценки отражаются в поставщике ресурсов `Microsoft.PolicyInsights` с помощью операций `PolicyStates` и `PolicyEvents`. Дополнительные сведения об операциях REST API Azure Policy Insights см. [здесь](/rest/api/policy/).
 
 Оценка назначенных политик и инициатив выполняется в результате разных событий:
 
@@ -237,13 +237,13 @@ https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.
 
 ## <a name="command-line"></a>Командная строка
 
-Те же сведения, которые доступны на портале, можно получить с помощью REST API (включая [ARMClient](https://github.com/projectkudu/ARMClient)), Azure PowerShell и Azure CLI. Дополнительные сведения о REST API см. в справочнике по [Azure Policy Insights](/rest/api/policy-insights/). На страницах справки по REST API есть зеленая кнопка "Попробовать" для каждой операции, которую можно опробовать непосредственно в браузере.
+Те же сведения, которые доступны на портале, можно получить с помощью REST API (включая [ARMClient](https://github.com/projectkudu/ARMClient)), Azure PowerShell и Azure CLI. Полные сведения о REST API см. в справочнике по [политикам Azure](/rest/api/policy/) . На страницах справки по REST API есть зеленая кнопка "Попробовать" для каждой операции, которую можно опробовать непосредственно в браузере.
 
 Используйте ARMClient или аналогичное средство для управления аутентификацией в Azure для примеров с REST API.
 
 ### <a name="summarize-results"></a>Суммирование результатов
 
-С помощью REST API формирование сводных данных можно выполнить по контейнеру, определению или назначению. Ниже приведен пример суммирования на уровне подписки с использованием функции [Summarize For Subscription](/rest/api/policy-insights/policystates/summarizeforsubscription) (Суммировать для подписки) в Azure Policy Insight:
+С помощью REST API формирование сводных данных можно выполнить по контейнеру, определению или назначению. Ниже приведен пример суммирования на уровне подписки с использованием функции [Summarize For Subscription](/rest/api/policy/policystates/summarizeforsubscription) (Суммировать для подписки) в Azure Policy Insight:
 
 ```http
 POST https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.PolicyInsights/policyStates/latest/summarize?api-version=2019-10-01
@@ -353,7 +353,7 @@ https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.
 }
 ```
 
-Дополнительные сведения о запросах событий политик см. в справочной статье по [событиям Политики Azure](/rest/api/policy-insights/policyevents).
+Дополнительные сведения о запросах событий политик см. в справочной статье по [событиям Политики Azure](/rest/api/policy/policyevents).
 
 ### <a name="azure-cli"></a>Azure CLI
 
@@ -648,7 +648,7 @@ $policyEvents = Get-AzPolicyEvent -Filter "ResourceType eq '/Microsoft.Network/v
 $policyEvents | ConvertTo-Csv | Out-File 'C:\temp\policyEvents.csv'
 ```
 
-Выходные данные `$policyEvents` объекта выглядят следующим образом:
+Выходные данные `$policyEvents` объекта выглядят как следующие выходные данные:
 
 ```output
 Timestamp                  : 9/19/2020 5:18:53 AM

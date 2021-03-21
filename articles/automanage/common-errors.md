@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/14/2021
 ms.author: alsin
 ms.openlocfilehash: 2bdf04143121e1286ffc7bfa86b4a9ee291ae6ef
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103561872"
 ---
 # <a name="troubleshoot-common-automanage-onboarding-errors"></a>Устранение распространенных ошибок адаптации для управления
@@ -41,7 +41,7 @@ ms.locfileid: "103561872"
 "Отказано в доступе из-за запрета назначения с именем" система запрещает назначение, созданное управляемым приложением "" | В ресурсе был создан [деняссигнмент](https://docs.microsoft.com/azure/role-based-access-control/deny-assignments) , который запрещает управление доступом к ресурсу. Это может быть вызвано либо [схемой](https://docs.microsoft.com/azure/governance/blueprints/concepts/resource-locking) , либо [управляемым приложением](https://docs.microsoft.com/azure/azure-resource-manager/managed-applications/overview).
 «Произошел сбой назначения; Дополнительные сведения отсутствуют. | Откройте обращение с поддержкой Microsoft Azure.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Дополнительные сведения об управлении Azure](./automanage-virtual-machines.md)
 

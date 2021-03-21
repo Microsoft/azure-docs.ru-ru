@@ -6,10 +6,10 @@ ms.date: 10/16/2018
 ms.title: include
 ROBOTS: NOINDEX,NOFOLLOW
 ms.openlocfilehash: 33dc766643355a5f5ebb6138e000595fd1bfe6fc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101746676"
 ---
 ## <a name="create-a-continuous-webjob"></a><a name="CreateContinuous"></a>Создание непрерывного веб-задания
@@ -35,7 +35,7 @@ ms.locfileid: "101746676"
    | <abbr title="Типы включают в себя непрерывные, активируемые.">Тип</abbr> | С задержкой | 
    | <abbr title="Доступно только для непрерывных веб-заданий. Определяет, будет ли программа или сценарий выполняться на всех экземплярах или только на одном экземпляре. Вариант для запуска на нескольких экземплярах не применяется в ценовых категориях "Бесплатный" или "Общий".">Масштабирование</abbr> | Несколько экземпляров | 
 
-1. Нажмите кнопку **ОК**.
+1. Нажмите кнопку **OK**.
 
     Новое веб-задание появится на странице **Веб-задания**.
 
