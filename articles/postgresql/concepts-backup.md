@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 01/29/2021
 ms.openlocfilehash: db3b62e7ce07c1e10bc5030c37cb8957d281ea05
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100517303"
 ---
 # <a name="backup-and-restore-in-azure-database-for-postgresql---single-server"></a>Резервное копирование и восстановление в базе данных Azure для PostgreSQL — один сервер
@@ -112,7 +112,7 @@ ms.locfileid: "100517303"
 - Убедитесь, что заданы соответствующие данные для входа и разрешений уровня базы данных.
 - Настройте оповещения соответствующим образом.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как выполнить восстановление с помощью [портал Azure](howto-restore-server-portal.md).
 - Узнайте, как выполнить восстановление с помощью [Azure CLI](howto-restore-server-cli.md).

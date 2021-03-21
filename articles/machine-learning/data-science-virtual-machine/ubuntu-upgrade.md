@@ -10,17 +10,17 @@ ms.author: samkemp
 ms.topic: conceptual
 ms.date: 10/07/2020
 ms.openlocfilehash: 5b897ff7527d2d60234162ccbdeb08a00260bb1d
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101659466"
 ---
 # <a name="upgrade-your-data-science-virtual-machine-to-ubuntu-1804"></a>Обновите виртуальную машину для обработки и анализа данных до версии Ubuntu 18.04
 
 Если у вас есть виртуальная машина для обработки и анализа данных с более ранним выпуском, например Ubuntu 16,04 или CentOS, необходимо перенести DSVM в Ubuntu 18,04. Миграция обеспечит получение последних исправлений операционной системы, драйверов, предварительно установленного программного обеспечения и версий библиотеки. В этом документе объясняется, как выполнить миграцию из более старых версий Ubuntu или CentOS. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Знакомство с SSH и командной строкой Linux
 

@@ -10,10 +10,10 @@ ms.date: 3/8/2021
 ms.author: cynthn
 ms.reviewer: zivr
 ms.openlocfilehash: 26921b3d102032cb36f47c3be7a79c2b596a1d0c
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102503680"
 ---
 # <a name="deploy-vms-to-proximity-placement-groups-using-azure-powershell"></a>Развертывание виртуальных машин в группах размещения с помощью Azure PowerShell

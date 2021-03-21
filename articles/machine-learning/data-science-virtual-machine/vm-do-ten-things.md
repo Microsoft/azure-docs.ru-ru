@@ -10,10 +10,10 @@ ms.author: laobri
 ms.topic: conceptual
 ms.date: 05/08/2020
 ms.openlocfilehash: c44c40f2ddab53cf0beb5ecd48127d126fdb4333
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101657406"
 ---
 # <a name="data-science-with-a-windows-data-science-virtual-machine"></a>Обработка и анализ данных с помощью виртуальной машины Windows для обработки и анализа данных
@@ -39,7 +39,7 @@ DSVM тесно работает со службами Azure. Он может с
 > 
 > 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Вам понадобится подписка Azure. Вы можете [воспользоваться бесплатной пробной версией](https://azure.microsoft.com/free/).
 * Инструкции по подготовке виртуальной машины для обработки и анализа данных на портал Azure доступны при [создании виртуальной машины](https://portal.azure.com/#create/microsoft-dsvm.dsvm-windowsserver-2016).
@@ -155,7 +155,7 @@ git clone https://github.com/Azure/DataScienceVM.git
 ### <a name="azure-blob-storage"></a>Хранилище BLOB-объектов Azure
 Хранилище BLOB-объектов Azure — это надежная и экономичная служба облачного хранилища для больших и малых данных. В этом разделе описывается, как можно переместить данные в хранилище BLOB-объектов и получить доступ к данным, хранящимся в большом двоичном объекте Azure.
 
-#### <a name="prerequisites"></a>Предварительные требования
+#### <a name="prerequisites"></a>Предварительные условия
 
 * Создайте учетную запись хранилища BLOB-объектов Azure из [портал Azure](https://portal.azure.com).
 

@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 11/20/2020
 ms.openlocfilehash: eb1d59ae41b04be60dec90aaee4b2305b6d39ca6
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102095856"
 ---
 # <a name="glossary-insights-on-your-data-in-azure-purview"></a>Глоссарий сведений о данных в Azure зрения
@@ -24,7 +24,7 @@ ms.locfileid: "102095856"
 > - Переход к аналитике из учетной записи зрения
 > - Получите представление о данных с высоты птичьего полета
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к работе с зрения Insights, убедитесь, что выполнены следующие действия.
 

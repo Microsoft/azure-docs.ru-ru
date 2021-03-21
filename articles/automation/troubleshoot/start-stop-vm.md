@@ -6,10 +6,10 @@ ms.subservice: process-automation
 ms.date: 04/04/2019
 ms.topic: troubleshooting
 ms.openlocfilehash: ff2ef8970afa21c0218da20a5b79ea2fb782dd5c
-ms.sourcegitcommit: d1e56036f3ecb79bfbdb2d6a84e6932ee6a0830e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99053590"
 ---
 # <a name="troubleshoot-startstop-vms-during-off-hours-issues"></a>Устранение неполадок с запуском и остановкой виртуальных машин в нерабочее время

@@ -12,10 +12,10 @@ ms.author: sstein
 ms.reviewer: sashan,moslake,josack
 ms.date: 02/02/2021
 ms.openlocfilehash: 34613633b6b27fc3387e6a9fa63caf4a194ba963
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101691235"
 ---
 # <a name="resource-limits-for-azure-sql-database-and-azure-synapse-analytics-servers"></a>Ограничения ресурсов для базы данных SQL Azure и серверов Azure синапсе Analytics
@@ -61,7 +61,7 @@ ms.locfileid: "101691235"
 - Увеличение объема вычислительных ресурсов базы данных или эластичного пула для предоставления базе данных дополнительных вычислительных ресурсов. См. разделы [Масштабирование ресурсов отдельной базы данных](single-database-scale.md) и [Масштабирование ресурсов эластичного пула](elastic-pool-scale.md).
 - Оптимизация запросов для уменьшения использования ресурсов ЦП каждым запросом. Дополнительные сведения см. в разделе [Настройка запросов и указания на них](performance-guidance.md#query-tuning-and-hinting).
 
-### <a name="storage"></a>Память
+### <a name="storage"></a>Служба хранилища
 
 Когда используемое пространство базы данных достигает максимального размера, операции вставки и обновления, увеличивающие размер данных, завершаются сбоем и клиенты получают [сообщение об ошибке](troubleshoot-common-errors-issues.md). Инструкции SELECT и DELETE продолжают выполняться.
 

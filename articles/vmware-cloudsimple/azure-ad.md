@@ -9,10 +9,10 @@ ms.service: azure-vmware-cloudsimple
 ms.reviewer: cynthn
 manager: dikamath
 ms.openlocfilehash: f55a0f52f5e028f9cbf7a9fabbb3c24ad43c3800
-ms.sourcegitcommit: d7d5f0da1dda786bda0260cf43bd4716e5bda08b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97898612"
 ---
 # <a name="use-azure-ad-as-an-identity-provider-for-vcenter-on-cloudsimple-private-cloud"></a>Использование Azure AD в качестве поставщика удостоверений для vCenter в частном облаке Клаудсимпле
@@ -41,7 +41,7 @@ Azure AD — это облачный каталог и служба управл
 
 Прежде чем приступить к работе, вам потребуется доступ к подписке Azure с правами глобального администратора.  Следующие шаги приводят к общим рекомендациям. Подробные сведения содержатся в документации по Azure.
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Azure AD
 
 > [!NOTE]
 > Если у вас уже есть Azure AD, этот раздел можно пропустить.

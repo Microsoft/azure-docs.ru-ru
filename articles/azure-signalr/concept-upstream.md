@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 06/11/2020
 ms.author: chenyl
 ms.openlocfilehash: 6752a9564dc0d9351d1c21f5be14eb626186ac0d
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98724066"
 ---
 # <a name="upstream-settings"></a>Параметры функции отправки данных в вышестоящий ресурс
@@ -40,7 +40,7 @@ ms.locfileid: "98724066"
 |категори| Категория может иметь одно из следующих значений: <ul><li>**подключения**: события времени жизни соединения. Он срабатывает при подключении или отключении клиентского подключения. Он включает в себя подключенные и отключенные события.</li><li>**сообщения**: срабатывает, когда клиенты вызывают метод концентратора. Он включает все остальные события, кроме тех, которые указаны в категории **подключения** .</li></ul>|
 |журнале| Для категории **Messages** событие является целевым объектом в [сообщении вызова](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/docs/specs/HubProtocol.md#invocation-message-encoding) , отправляемом клиентами. Для категории **подключения** используются только *подключенные* и *Отключенные* .|
 
-Эти предопределенные параметры можно использовать в шаблоне URL-адреса. При вычислении вышестоящего URL-адреса параметры будут заменены указанным значением. Например: 
+Эти предопределенные параметры можно использовать в шаблоне URL-адреса. При вычислении вышестоящего URL-адреса параметры будут заменены указанным значением. Пример: 
 ```
 http://host.com/{hub}/api/{category}/{event}
 ```
@@ -148,7 +148,7 @@ POST
 |X-АСРС-клиент-запрос |Запрос запроса, когда клиенты подключаются к службе.|
 |Аутентификация |Необязательный токен, когда вы используете `ManagedIdentity` . |
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Текст запроса
 
 #### <a name="connected"></a>Подключен
 
@@ -169,7 +169,7 @@ Content-Type: `application/json` или `application/x-msgpack`
 |Имя  |Type  |Описание  |
 |---------|---------|---------|
 |InvocationId |строка | Необязательная строка, представляющая сообщение вызова. Поиск сведений в [вызовах](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/docs/specs/HubProtocol.md#invocations).|
-|Target |строка | То же, что и у события, и того же целевого объекта в [сообщении вызова](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/docs/specs/HubProtocol.md#invocation-message-encoding). |
+|Целевой объект |строка | То же, что и у события, и того же целевого объекта в [сообщении вызова](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/docs/specs/HubProtocol.md#invocation-message-encoding). |
 |Аргументы |Массив объектов |Массив, содержащий аргументы, применяемые к методу, на который ссылается `Target` . |
 
 ### <a name="signature"></a>Подпись
@@ -179,7 +179,7 @@ Content-Type: `application/json` или `application/x-msgpack`
 Hex_encoded(HMAC_SHA256(accessKey, connection-id))
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Управляемые удостоверения для службы Azure SignalR](howto-use-managed-identity.md)
 - [Azure Functions development and configuration with Azure SignalR Service](signalr-concept-serverless-development-config.md) (Разработка и настройка функций Azure с помощью Службы Azure SignalR)

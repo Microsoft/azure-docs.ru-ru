@@ -15,10 +15,10 @@ ms.author: markvi
 ms.reviewer: dhanyahk
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 42afa073da9197c12e4cbd316d311a7699d9a95f
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96013039"
 ---
 # <a name="find-activity-reports-in-the-azure-portal"></a>Поиск отчетов о действиях на портале Azure
@@ -60,13 +60,13 @@ ms.locfileid: "96013039"
 - Contact
 - Устройство
 - DeviceConfiguration
-- директориманажемент
-- ентитлементманажемент
-- граупманажемент
+- DirectoryManagement
+- EntitlementManagement
+- GroupManagement
 - Другое
 - Политика
 - ResourceManagement
-- ролеманажемент
+- RoleManagement
 - UserManagement
 
 Можно также фильтровать по определенной службе с помощью фильтра раскрывающегося списка **службы** . Например, чтобы получить все события аудита, относящиеся к самостоятельному управлению паролями, выберите фильтр **Самостоятельное управление паролями** .
@@ -81,7 +81,7 @@ ms.locfileid: "96013039"
 - B2C
 - Условный доступ
 - "Core Directory" (Основной каталог);
-- Управление назначениями
+- Управление правами
 - Защита идентификации
 - Invited Users (Приглашаемые пользователи)
 - PIM
@@ -151,11 +151,11 @@ ms.locfileid: "96013039"
 
  ![На снимке экрана показана кнопка загрузки в отчете о действиях.](./media/troubleshoot-missing-data-download/01.png)
  
-#### <a name="cause"></a>Причина:
+#### <a name="cause"></a>Причина
 
 При скачивании журналов действий в портал Azure мы ограничивают масштабирование до 250000 записей, отсортированных по последним первым. 
 
-#### <a name="resolution"></a>Разрешение
+#### <a name="resolution"></a>Решение
 
 Вы можете в любой момент использовать [интерфейсы API отчетов Azure AD](concept-reporting-api.md), чтобы извлечь до миллиона записей.
 
@@ -167,7 +167,7 @@ ms.locfileid: "96013039"
 
  ![На снимке экрана показан отчет о действиях.](./media/troubleshoot-missing-audit-data/01.png)
  
-#### <a name="cause"></a>Причина:
+#### <a name="cause"></a>Причина
 
 Действия отображаются в журналах действий спустя некоторое время. В таблице ниже приводятся наши показатели задержки для журналов действий. 
 
@@ -176,7 +176,7 @@ ms.locfileid: "96013039"
 | Аудит каталогов | 2 мин | 5 мин |
 | Действия при входе | 2 мин | 5 мин |
 
-#### <a name="resolution"></a>Разрешение
+#### <a name="resolution"></a>Решение
 
 Подождите от 15 минут до двух часов и проверьте, появились ли действия в журнале. Если журналы не появились даже спустя два часа, [отправьте запрос в службу поддержки](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) и мы рассмотрим вашу проблему.
 
@@ -188,7 +188,7 @@ ms.locfileid: "96013039"
 
  ![На снимке экрана показаны входы для Azure Active Directory.](./media/troubleshoot-missing-audit-data/02.png)
  
-#### <a name="cause"></a>Причина:
+#### <a name="cause"></a>Причина
 
 Действия отображаются в журналах действий спустя некоторое время. В таблице ниже приводятся наши показатели задержки для журналов действий. 
 
@@ -197,7 +197,7 @@ ms.locfileid: "96013039"
 | Аудит каталогов | 2 мин | 5 мин |
 | Действия при входе | 2 мин | 5 мин |
 
-#### <a name="resolution"></a>Разрешение
+#### <a name="resolution"></a>Решение
 
 Подождите от 15 минут до двух часов и проверьте, появились ли действия в журнале. Если журналы не появились даже спустя два часа, [отправьте запрос в службу поддержки](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) и мы рассмотрим вашу проблему.
 
@@ -209,7 +209,7 @@ ms.locfileid: "96013039"
 
  ![На снимке экрана отображается меню даты.](./media/troubleshoot-missing-audit-data/03.png)
 
-#### <a name="cause"></a>Причина:
+#### <a name="cause"></a>Причина
 
 В зависимости от типа лицензии Azure Active Directory сохраняет отчеты о действиях за такие периоды времени:
 
@@ -220,11 +220,11 @@ ms.locfileid: "96013039"
 
 Дополнительные сведения см. в статье [Политики хранения отчетов Azure Active Directory](reference-reports-data-retention.md).  
 
-#### <a name="resolution"></a>Разрешение
+#### <a name="resolution"></a>Решение
 
 У вас есть два варианта сохранения данных дольше чем в течение 30 дней. Вы можете использовать [API отчетов Azure AD](concept-reporting-api.md), чтобы программным способом извлекать данные и хранить их в базе данных. Кроме того, вы можете интегрировать журналы аудита в стороннюю систему SIEM, такую как Splunk или SumoLogic.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Обзор журналов аудита](concept-audit-logs.md)
 * [Отчеты о действиях входа на портале Azure Active Directory](concept-sign-ins.md)

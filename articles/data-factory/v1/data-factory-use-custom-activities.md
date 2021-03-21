@@ -9,10 +9,10 @@ ms.author: abnarain
 ms.custom: devx-track-csharp
 robots: noindex
 ms.openlocfilehash: 3832175910f3a6d3e6a7de8da932b32436cc2452
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100393026"
 ---
 # <a name="use-custom-activities-in-an-azure-data-factory-version-1-pipeline"></a>Использование настраиваемых действий в конвейере фабрики данных Azure версии 1
@@ -38,7 +38,7 @@ ms.locfileid: "100393026"
 > - Невозможно использовать шлюз управления данными из пользовательского действия для доступа к локальным источникам данных. В настоящее время [шлюз управления данными](data-factory-data-management-gateway.md) поддерживает действие копирования и действие хранимой процедуры только в фабрике данных.
 
 ## <a name="walkthrough-create-a-custom-activity"></a>Пошаговое руководство по созданию настраиваемого действия
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 * Visual Studio 2012/2013/2015/2017
 * Скачайте и установите пакет [Azure .NET SDK](https://azure.microsoft.com/downloads/)
 
@@ -49,7 +49,7 @@ ms.locfileid: "100393026"
 
 1. Создайте **учетную запись пакетной службы Azure** с помощью [портал Azure](https://portal.azure.com). Инструкции см. в статье [Создание учетной записи пакетной службы Azure на портале Azure][batch-create-account].
 2. Запишите ключ и имя учетной записи пакетной службы Azure, а также URI и имя пула. Они понадобятся при создании связанной службы пакетной службы Azure.
-    1. На домашней странице учетной записи пакетной службы Azure отображается **URL-адрес** в следующем формате: `https://myaccount.westus.batch.azure.com`. В этом примере **myaccount** — это имя учетной записи пакетной службы Azure. URI, используемый в определении связанной службы — это URL-адрес без имени учетной записи. Например: `https://<region>.batch.azure.com`.
+    1. На домашней странице учетной записи пакетной службы Azure отображается **URL-адрес** в следующем формате: `https://myaccount.westus.batch.azure.com`. В этом примере **myaccount** — это имя учетной записи пакетной службы Azure. URI, используемый в определении связанной службы — это URL-адрес без имени учетной записи. Например, `https://<region>.batch.azure.com`.
     2. В меню слева щелкните **Ключи** и скопируйте значение параметра **Первичный ключ доступа**.
     3. Чтобы использовать имеющийся пул, щелкните **Пулы** в меню и запишите **идентификатор** пула. Если у вас нет пула, перейдите к следующему шагу.
 2. Создайте **пул пакетной службы Azure**.
@@ -462,7 +462,7 @@ test custom activity Microsoft test custom activity Microsoft
    1. В свойстве **accountName** укажите имя учетной записи пакетной службы Azure. **URL-адрес** из **колонки учетной записи пакетной службы Azure** имеет следующий формат: `http://accountname.region.batch.azure.com`. В свойстве **batchUri** в JSON требуется удалить заполнитель `accountname.` в URL-адресе и использовать значение `accountname` для свойства JSON `accountName`.
    2. В свойстве **accessKey** укажите ключ учетной записи пакетной службы Azure.
    3. В свойстве **poolName** укажите имя пула, созданного при выполнении предварительных требований. Вместо имени пула также можно указать идентификатор пула.
-   4. В свойстве **batchUri** укажите универсальный код ресурса (URI) пакетной службы Azure. Пример: `https://westus.batch.azure.com`.
+   4. В свойстве **batchUri** укажите универсальный код ресурса (URI) пакетной службы Azure. Например, `https://westus.batch.azure.com`.
    5. Для свойства **AzureStorageLinkedService** for the **linkedServiceName** укажите имя учетной записи пакетной службы Azure.
 
         ```json

@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 01/17/2021
 ms.openlocfilehash: b6ea3e762ad098e373baa8487d8926105820f226
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101666517"
 ---
 # <a name="classification-insights-about-your-data-from-azure-purview"></a>Сведения о классификации данных из Azure зрения
@@ -27,7 +27,7 @@ ms.locfileid: "101666517"
 > - Просмотр сведений об классификации данных
 > - Детализация для получения дополнительных сведений о классификации данных
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к работе с зрения Insights, убедитесь, что выполнены следующие действия.
 
@@ -81,7 +81,7 @@ ms.locfileid: "101666517"
 - **Основные классификации для таблиц**
 - **Действие классификации > данные классификации**
 
-Пример.
+Пример:
 
 :::image type="content" source="media/insights/view-classifications-small.png" alt-text="Просмотреть все классификации" lightbox="media/insights/view-classifications.png":::
 

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
 ms.openlocfilehash: 517bcdab375db819b0942306df82e7285b9473b1
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103487706"
 ---
 # <a name="prepare-your-development-and-test-environment-for-iot-edge"></a>Подготовка среды разработки и тестирования для IoT Edge
@@ -57,7 +57,7 @@ Visual Studio и Visual Studio Code включают дополнительн
 
 | Шаблон модуля | Предварительное требование |
 | --------------- | ------------ |
-| Функции Azure; | [Пакет SDK для .NET Core 2,1](https://www.microsoft.com/net/download) |
+| Функции Azure | [Пакет SDK для .NET Core 2,1](https://www.microsoft.com/net/download) |
 | C | [Git](https://git-scm.com/); |
 | C# | [Пакет SDK для .NET Core 2,1](https://www.microsoft.com/net/download) |
 | Java | <ul><li>[Пакет SDK для Java SE 10](/azure/developer/java/fundamentals/java-jdk-long-term-support) <li> [Настройка переменной среды JAVA_HOME](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/) <li> [Maven](https://maven.apache.org/)</ul> |

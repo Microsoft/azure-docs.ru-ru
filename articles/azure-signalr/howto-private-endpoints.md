@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 05/06/2020
 ms.author: dayshen
 ms.openlocfilehash: 92e93c3746308d2d6c1a489efc6b5c866b0ad2d9
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98682636"
 ---
 # <a name="use-private-endpoints-for-azure-signalr-service"></a>Использование частных конечных точек для службы SignalR Azure
@@ -57,19 +57,19 @@ ms.locfileid: "98682636"
 
 В приведенном выше примере записи ресурсов DNS для службы Azure SignalR "Foobar", разрешенные за пределами виртуальной сети, в которой размещается частная конечная точка, будут:
 
-| Имя                                                  | Тип  | Значение                                                 |
+| Имя                                                  | Type  | Значение                                                 |
 | :---------------------------------------------------- | :---: | :---------------------------------------------------- |
 | ``foobar.service.signalr.net``                        | CNAME. | ``foobar.privatelink.service.signalr.net``            |
-| ``foobar.privatelink.service.signalr.net``            | Объект     | \<Azure SignalR Service public IP address\>           |
+| ``foobar.privatelink.service.signalr.net``            | A     | \<Azure SignalR Service public IP address\>           |
 
 Как упоминалось ранее, вы можете запретить или контролировать доступ клиентов за пределами виртуальной сети через общедоступную конечную точку, используя контроль доступа к сети.
 
 Записи ресурсов DNS для "Foobar" при разрешении клиентом в виртуальной сети, где размещается частная конечная точка, будут:
 
-| Имя                                                  | Тип  | Значение                                                 |
+| Имя                                                  | Type  | Значение                                                 |
 | :---------------------------------------------------- | :---: | :---------------------------------------------------- |
 | ``foobar.service.signalr.net``                        | CNAME. | ``foobar.privatelink.service.signalr.net``            |
-| ``foobar.privatelink.service.signalr.net``            | Объект     | 10.1.1.5                                              |
+| ``foobar.privatelink.service.signalr.net``            | A     | 10.1.1.5                                              |
 
 Такой подход обеспечивает доступ к службе Azure SignalR, **используя ту же строку подключения** для клиентов в виртуальной сети, где размещаются частные конечные точки, а также клиенты за пределами виртуальной сети.
 
@@ -97,7 +97,7 @@ ms.locfileid: "98682636"
 
     ![Создание службы Azure SignalR — Добавление частной конечной точки](media/howto-private-endpoints/portal-create-blade-add-private-endpoint.png)
 
-1. Щелкните **Review + create** (Просмотреть и создать).
+1. Щелкните **Просмотреть и создать**.
 
 ### <a name="create-a-private-endpoint-for-an-existing-azure-signalr-service-in-the-azure-portal"></a>Создайте закрытую конечную точку для существующей службы Azure SignalR в портал Azure
 
@@ -121,7 +121,7 @@ ms.locfileid: "98682636"
 
     ![Создание частной конечной точки — конфигурация](media/howto-private-endpoints/portal-create-private-endpoint-configuration.png)
 
-1. Щелкните **Review + create** (Просмотреть и создать).
+1. Щелкните **Просмотреть и создать**.
 
 ### <a name="create-a-private-endpoint-using-azure-cli"></a>Создание частной конечной точки с помощью Azure CLI
 
@@ -200,6 +200,6 @@ ms.locfileid: "98682636"
 
 Сейчас нельзя настроить правила [группы безопасности сети](../virtual-network/network-security-groups-overview.md) (NSG) и определяемые пользователем маршруты для частных конечных точек. Правила NSG, применяемые к подсети, в которой размещается частная конечная точка, применяются к частной конечной точке. Для этой проблемы ограниченный обходной путь заключается в реализации правил доступа для частных конечных точек в исходных подсетях, хотя этот подход может потребовать более высоких затрат на управление.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Настройка контроля доступа к сети](howto-network-access-control.md)

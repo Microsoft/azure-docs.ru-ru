@@ -16,10 +16,10 @@ ms.workload: infrastructure-services
 ms.date: 05/29/2018
 ms.author: kumud
 ms.openlocfilehash: 73562d8d32f265fa43ca80d2f8d4f84b1b631ec6
-ms.sourcegitcommit: d59abc5bfad604909a107d05c5dc1b9a193214a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98223675"
 ---
 # <a name="diagnose-a-virtual-machine-network-traffic-filter-problem"></a>Диагностика проблемы с фильтрацией трафика на виртуальной машине
@@ -168,7 +168,7 @@ az vm show \
 
 При использовании как [портала](#diagnose-using-azure-portal) Azure, так и [PowerShell](#diagnose-using-powershell) или [Azure CLI](#diagnose-using-azure-cli) для диагностики проблемы, представленной в [сценарии](#scenario) этой статьи, решение будет одним. Нужно создать правило сетевой безопасности со следующими свойствами:
 
-| Свойство                | Значение                                                                              |
+| Свойство.                | Значение                                                                              |
 |---------                |---------                                                                           |
 | Источник                  | Любой                                                                                |
 | Диапазоны исходных портов      | Любой                                                                                |
@@ -185,7 +185,7 @@ az vm show \
 
 Если у вас по-прежнему возникают проблемы связи, см. статью [рекомендации](#considerations) и дополнительная диагностика.
 
-## <a name="considerations"></a>Особенности
+## <a name="considerations"></a>Рекомендации
 
 При устранении проблем с подключением необходимо учитывать следующие аспекты:
 

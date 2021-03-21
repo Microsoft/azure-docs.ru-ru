@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.date: 01/24/2021
 ms.author: memildin
 ms.openlocfilehash: 57760443746e111750e74ef55fc18729f6ba32c4
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102100344"
 ---
-# <a name="review-your-security-recommendations"></a>Ознакомьтесь с рекомендациями по безопасности
+# <a name="review-your-security-recommendations"></a>Проверка рекомендаций по обеспечению безопасности
 
 В этом разделе объясняется, как просмотреть и изучить рекомендации в центре безопасности Azure, которые помогут защитить ресурсы Azure.
 

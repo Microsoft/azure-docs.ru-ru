@@ -10,10 +10,10 @@ ms.subservice: language-understanding
 ms.date: 01/21/2021
 ms.topic: include
 ms.openlocfilehash: 4b40f51435033a48b0e397e3f064101827fe596e
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98680198"
 ---
 > [!NOTE]

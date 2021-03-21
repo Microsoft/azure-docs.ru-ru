@@ -8,20 +8,22 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/15/2021
+ms.date: 03/17/2021
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 869bd7b02186873f490d324cec863c7f26ee8469
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 2de419885938b27ebce4a934db5ef966965b3dbd
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103555448"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104580170"
 ---
 # <a name="enable-custom-domains-for-azure-active-directory-b2c"></a>Включение пользовательских доменов для Azure Active Directory B2C
 
 [!INCLUDE [active-directory-b2c-choose-user-flow-or-custom-policy](../../includes/active-directory-b2c-choose-user-flow-or-custom-policy.md)]
+
+[!INCLUDE [b2c-public-preview-feature](../../includes/active-directory-b2c-public-preview.md)]
 
 В этой статье описывается, как включить пользовательские домены в URL-адресах перенаправления для Azure Active Directory B2C (Azure AD B2C). Использование пользовательского домена с приложением обеспечивает более эффективное взаимодействие с пользователем. С точки зрения пользователя они остаются в вашем домене во время входа в систему, а не перенаправляются в домен Azure AD B2C по умолчанию *<имя клиента>. b2clogin.com*.
 
@@ -48,7 +50,7 @@ ms.locfileid: "103555448"
 
 - Можно настроить несколько пользовательских доменов. Максимальное число поддерживаемых пользовательских доменов см. в статье [ограничения и ограничения службы Azure AD](../active-directory/enterprise-users/directory-service-limits-restrictions.md) для Azure AD B2C и [подписки Azure, а также ограничения службы, квоты и ограничения](../azure-resource-manager/management/azure-subscription-service-limits.md#azure-front-door-service-limits) для передней дверцы Azure.
 - Передняя дверца Azure — это отдельная служба Azure, поэтому будет взиматься дополнительная плата. Дополнительные сведения см. в статье [цены на переднюю дверь](https://azure.microsoft.com/pricing/details/frontdoor).
-- В настоящее время функция [брандмауэра веб-приложения](../web-application-firewall/afds/afds-overview.md) для передней дверцы Azure не поддерживается.
+- Чтобы использовать [брандмауэр веб-приложения](../web-application-firewall/afds/afds-overview.md)для передней дверцы Azure, необходимо подтвердить, что конфигурация брандмауэра и правила правильно работают с Azure AD B2C пользовательскими потоками.
 - После настройки личных доменов пользователи по-прежнему смогут получить доступ к Azure AD B2C доменному имени по умолчанию *<имя клиента>. b2clogin.com* (если вы не используете пользовательскую политику и не [блокируете доступ](#block-access-to-the-default-domain-name).
 - Если у вас несколько приложений, перенесите их в личный домен, так как браузер сохраняет сеанс Azure AD B2C в используемом в данный момент доменном имени.
 
@@ -193,7 +195,7 @@ https://<custom-domain-name>.b2clogin.com/<tenant-name>/<your-policy>/samlp/meta
 - **Политика — имя** с именем политики. Дополнительные [сведения о политиках Azure AD B2C](technical-overview.md#identity-experiences-user-flows-or-custom-policies). 
 
 
-Метаданные [поставщика службы SAML](connect-with-saml-service-providers.md) могут выглядеть следующим образом: 
+Метаданные [поставщика службы SAML](./saml-service-provider.md) могут выглядеть следующим образом: 
 
 ```html
 https://custom-domain-name/tenant-name/policy-name/Samlp/metadata
@@ -226,7 +228,7 @@ https://<domain-name>/11111111-1111-1111-1111-111111111111/v2.0/
 
 ::: zone-end
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 ### <a name="azure-ad-b2c-returns-a-page-not-found-error"></a>Azure AD B2C возвращает ошибку "страница не найдена"
 
@@ -258,12 +260,10 @@ https://<domain-name>/11111111-1111-1111-1111-111111111111/v2.0/
 
 Передняя дверца Azure передает исходный IP-адрес пользователя. Это IP-адрес, который вы увидите в отчетах аудита или пользовательской политике.
 
-### <a name="can-i-use-a-third-party-wab-application-firewall-waf-with-b2c"></a>Можно ли использовать сторонний брандмауэр приложения WAB (WAF) с B2C?
+### <a name="can-i-use-a-third-party-web-application-firewall-waf-with-b2c"></a>Можно ли использовать брандмауэр веб-приложения стороннего производителя (WAF) с B2C?
 
-В настоящее время Azure AD B2C поддерживает пользовательский домен только с помощью передней дверцы Azure. Не добавляйте еще одну WAF перед передней дверцей Azure.
-
+Чтобы использовать собственный брандмауэр веб-приложения перед передней дверцей Azure, необходимо настроить и проверить, что все работает правильно с Azure AD B2C пользовательскими потоками.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения о [запросах авторизации OAuth](protocols-overview.md).
-

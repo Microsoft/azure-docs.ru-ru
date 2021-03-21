@@ -4,10 +4,10 @@ description: Осуществляйте непрерывный экспорт д
 ms.topic: conceptual
 ms.date: 09/11/2017
 ms.openlocfilehash: 25d28bb0fc35ef76231c085dc1d9d8a1234a264c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100587760"
 ---
 # <a name="walkthrough-export-to-sql-from-application-insights-using-stream-analytics"></a>Пошаговое руководство. Экспорт в SQL из Application Insights с использованием Stream Analytics
@@ -84,7 +84,7 @@ ms.locfileid: "100587760"
 ## <a name="create-a-table-in-azure-sql-database"></a>Создание таблицы в базе данных SQL Azure
 Подключитесь к базе данных, созданной в предыдущем разделе, с помощью желаемого инструмента управления. В этом пошаговом руководстве мы используем [инструменты управления SQL Server](/sql/ssms/sql-server-management-studio-ssms) (SSMS).
 
-![Соединение с базой данных SQL Azure](./media/code-sample-export-sql-stream-analytics/31-sql-table.png)
+![Подключение к Базе данных SQL Azure](./media/code-sample-export-sql-stream-analytics/31-sql-table.png)
 
 Создайте новый запрос и выполните следующий сценарий T-SQL:
 
@@ -242,7 +242,7 @@ SELECT TOP 100 *
 FROM [dbo].[PageViewsTable]
 ```
 
-## <a name="related-articles"></a>Связанные статьи
+## <a name="related-articles"></a>Похожие статьи
 * [Экспорт в Power BI с использованием Stream Analytics](./export-power-bi.md)
 * [подробная ссылка на модель данных для типов и значений свойств.](./export-data-model.md)
 * [Непрерывный экспорт в Application Insights](./export-telemetry.md)

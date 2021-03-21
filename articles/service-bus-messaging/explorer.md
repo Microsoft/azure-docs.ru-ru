@@ -4,10 +4,10 @@ description: Эта статья содержит сведения об испо
 ms.topic: conceptual
 ms.date: 01/20/2020
 ms.openlocfilehash: 0b5274c492a1dfb2523c52d7aea2b7ebf8eae675
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101738962"
 ---
 # <a name="use-service-bus-explorer-to-perform-data-operations-on-service-bus-preview"></a>Использование Service Bus Explorer для выполнения операций с данными в Служебной шине (предварительная версия)

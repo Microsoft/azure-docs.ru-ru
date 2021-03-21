@@ -7,10 +7,10 @@ author: deshriva
 ms.author: deshriva
 ms.date: 02/08/2021
 ms.openlocfilehash: c5c5a6699759e3abda05b7a0d85f4914a15f00e6
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103490251"
 ---
 # <a name="retired-hdinsight-versions"></a>Устаревшие версии HDInsight

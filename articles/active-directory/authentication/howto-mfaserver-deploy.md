@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: michmcla
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d7bd9913cccbe077a4deed9a7c5bfdc601f3dd5e
-ms.sourcegitcommit: ad83be10e9e910fd4853965661c5edc7bb7b1f7c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96742346"
 ---
 # <a name="getting-started-with-the-azure-multi-factor-authentication-server"></a>Приступая к работе с сервером Многофакторной идентификации Azure
@@ -41,10 +41,10 @@ ms.locfileid: "96742346"
 
 | Пользователи | ОЗУ |
 | ----- | --- |
-| 1–10 000 | 4 Гбайт |
+| 1–10 000 | 4 ГБ |
 | 10 001–50 000 | 8 ГБ |
 | 50 001–100 000 | 12 ГБ |
-| 100 000–200 001 | 16 ГБ |
+| 100 000–200 001 | 16 Гб |
 | 200 001+ | 32 ГБ |
 
 Следует ли настроить несколько серверов для обеспечения высокого уровня доступности или балансировки нагрузки? Существует несколько способов настройки этой конфигурации с помощью сервера многофакторной идентификации Azure. Сервер многофакторной идентификации Azure, который устанавливается первым, становится главным. Все дополнительные серверы становятся подчиненными и автоматически синхронизируют данные о пользователях и конфигурации с главным сервером. Позже вы можете настроить один сервер-источник, а остальные использовать в качестве серверов резервного копирования или же настроить балансировку нагрузки между серверами.
@@ -58,7 +58,7 @@ ms.locfileid: "96742346"
 | Требования к серверу Многофакторной идентификации Azure | Описание |
 |:--- |:--- |
 | Оборудование |<li>200 МБ места на жестком диске</li><li>32- или 64-разрядный процессор</li><li>Не менее 1 ГБ ОЗУ</li> |
-| Программное обеспечение |<li>Windows Server 2016</li><li>Windows Server 2012 R2</li><li>Windows Server 2012</li><li>Windows Server 2008/R2 (только с [ЕСУ](/lifecycle/faq/extended-security-updates) )</li><li>Windows 10</li><li>Windows 8.1, все выпуски</li><li>Windows 8, все выпуски</li><li>Windows 7, все выпуски (только с [ЕСУ](/lifecycle/faq/extended-security-updates) )</li><li>Microsoft .NET Framework 4.0</li><li>IIS 7.0 или более поздняя версия, если вы устанавливаете SDK для пользовательского портала или веб-службы</li> |
+| Программное обеспечение |<li>Windows Server 2016</li><li>Windows Server 2012 R2</li><li>Windows Server 2012</li><li>Windows Server 2008/R2 (только с [ЕСУ](/lifecycle/faq/extended-security-updates) )</li><li>Windows 10</li><li>Windows 8.1, все выпуски</li><li>Windows 8, все выпуски</li><li>Windows 7, все выпуски (только с [ЕСУ](/lifecycle/faq/extended-security-updates) )</li><li>Microsoft .NET Framework 4.0</li><li>IIS 7.0 или более поздняя версия, если вы устанавливаете SDK для пользовательского портала или веб-службы</li> |
 | Разрешения | Учетная запись администратора домена или администратора предприятия для регистрации в Active Directory |
 
 ### <a name="azure-mfa-server-components"></a>Компоненты сервера Azure MFA

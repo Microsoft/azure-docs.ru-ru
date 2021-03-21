@@ -7,24 +7,24 @@ ms.date: 11/21/2018
 ms.author: gwallace
 ms.custom: mvc, devcenter , devx-track-azurecli
 ms.openlocfilehash: 40d10568e13ad455bc5178821da80e89f4132e93
-ms.sourcegitcommit: 59cfed657839f41c36ccdf7dc2bee4535c920dd4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99625843"
 ---
 # <a name="mount-an-azure-files-based-volume-in-a-service-fabric-mesh-application"></a>Подключение тома службы файлов Azure в приложении "Сетка Service Fabric" 
 
 > [!IMPORTANT]
-> Предварительная версия сетки Service Fabric Azure была снята с учета. Новые развертывания больше не будут разрешены через интерфейс API Service Fabricной сетки. Поддержка существующих развертываний будет продолжена 28 апреля 2021 г.
+> Поддержка предварительной версии Сетки Azure Service Fabric была прекращена. Новые развертывания больше не будут разрешены через API Сетки Service Fabric. Поддержка существующих развертываний будет продолжена до 28 апреля 2021 г. включительно.
 > 
-> Дополнительные сведения см. в статье о прекращении использования [предварительной версии сети Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
+> Дополнительные сведения см. в статье [Прекращение поддержки предварительной версии Сетки Azure Service Fabric](https://azure.microsoft.com/updates/azure-service-fabric-mesh-preview-retirement/).
 
 В этой статье описано подключение тома службы файлов Azure в службе приложения "Сетка Service Fabric".  Драйвер тома службы файлов Azure — это драйвер тома Docker, используемый для подключения общей папки службы файлов Azure в контейнер, используемый для сохранения состояния службы. Тома представляют собой хранилище файлов общего назначения и дают возможность чтения и записи файлов с помощью обычных файловых API-интерфейсов ввода-вывода для дисков.  Дополнительные сведения о томах и параметрах для хранения данных приложения см. в статье о [состоянии хранения](service-fabric-mesh-storing-state.md).
 
 Чтобы подключить том в службе, создайте ресурс тома в приложении "Сетка Service Fabric" и затем укажите этот том в вашей службе.  Объявить ресурс тома и указать на него в ресурсе службы можно в [файлах ресурсов на основе YAML](#declare-a-volume-resource-and-update-the-service-resource-yaml) или [шаблоне развертывания на основе JSON](#declare-a-volume-resource-and-update-the-service-resource-json). Прежде чем подключить тома, сначала необходимо создать учетную запись хранения и [файловый ресурс в службе файлов Azure](../storage/files/storage-how-to-create-file-share.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 > [!NOTE]
 > **Известная ошибка развертывания на компьютере Windows RS5 Development.** Существует открытая ошибка с командлетом PowerShell, New-SmbGlobalMapping на RS5 компьютерах Windows, которые предотвращают подключение томов Азурефиле. Ниже приведен пример ошибки, которая возникает при подключении тома на основе Азурефиле на локальном компьютере разработки.
 ```

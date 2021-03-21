@@ -4,10 +4,10 @@ description: Симптомы, причины и способы устранен
 ms.topic: article
 ms.date: 08/11/2020
 ms.openlocfilehash: 5deb1717cf3886d8ea9c021d92afa358946b16dc
-ms.sourcegitcommit: d1e56036f3ecb79bfbdb2d6a84e6932ee6a0830e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99052084"
 ---
 # <a name="troubleshoot-registry-login"></a>Устранение неполадок при входе в реестр
@@ -58,13 +58,13 @@ ms.locfileid: "99052084"
 
 ### <a name="specify-correct-registry-name"></a>Укажите правильное имя реестра
 
-При использовании `docker login` Укажите полное имя сервера входа в реестр, например *myregistry.azurecr.IO*. Убедитесь, что используются только строчные буквы. Пример:
+При использовании `docker login` Укажите полное имя сервера входа в реестр, например *myregistry.azurecr.IO*. Убедитесь, что используются только строчные буквы. Пример
 
 ```console
 docker login myregistry.azurecr.io
 ```
 
-При использовании команды [AZ контроля учетных записей](/cli/azure/acr#az-acr-login) с удостоверением Azure Active Directory сначала [Войдите в Azure CLI](/cli/azure/authenticate-azure-cli), а затем укажите имя ресурса Azure реестра. Имя ресурса — это имя, указанное при создании реестра, например *myregistry* (без суффикса домена). Пример:
+При использовании команды [AZ контроля учетных записей](/cli/azure/acr#az-acr-login) с удостоверением Azure Active Directory сначала [Войдите в Azure CLI](/cli/azure/authenticate-azure-cli), а затем укажите имя ресурса Azure реестра. Имя ресурса — это имя, указанное при создании реестра, например *myregistry* (без суффикса домена). Пример
 
 ```azurecli
 az acr login --name myregistry
@@ -145,7 +145,7 @@ az acr login --name myregistry
 
 * Другие разделы по устранению неполадок в реестре:
   * [Устранение проблем с сетью с помощью реестра](container-registry-troubleshoot-access.md)
-  * [Устранение неполадок с производительностью реестра](container-registry-troubleshoot-performance.md)
+  * [Устранение проблем с производительностью реестра](container-registry-troubleshoot-performance.md)
 * Варианты [поддержки сообщества](https://azure.microsoft.com/support/community/)
 * [Майкрософт: вопросы и ответы](/answers/products/)
 * [Откройте запрос в службу поддержки](https://azure.microsoft.com/support/create-ticket/) . на основе предоставленных сведений можно выполнить быструю диагностику ошибок проверки подлинности в реестре.

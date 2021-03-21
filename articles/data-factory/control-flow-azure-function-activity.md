@@ -8,10 +8,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/09/2019
 ms.openlocfilehash: 615fb1b9f5a9d87a8d69778930b7359823e1ec39
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101738027"
 ---
 # <a name="azure-function-activity-in-azure-data-factory"></a>Действие функции Azure в Фабрике данных Azure
@@ -35,10 +35,10 @@ ms.locfileid: "101738027"
 
 ## <a name="azure-function-activity"></a>Действие функции Azure
 
-| **Свойство**  | **Описание** | **Допустимые значения** | **Обязательное** |
+| **Свойство**  | **Описание** | **Допустимые значения** | **Обязательно** |
 | --- | --- | --- | --- |
 | name  | Имя действия в конвейере.  | Строка | да |
-| type  | Тип действия – "AzureFunctionActivity" | Строка | да |
+| тип  | Тип действия – "AzureFunctionActivity" | Строка | да |
 | linked service | Связанная служба функции Azure для соответствующего приложения-функции Azure  | Ссылка на связанную службу | да |
 | имя функции  | Имя функции, которую вызывает это действие в приложении-функции Azure | Строка | да |
 | method  | Метод REST API для вызова функции | Поддерживаемые строковые типы: "GET", "POST", "постановка"   | да |

@@ -9,10 +9,10 @@ ms.subservice: cosmosdb-cassandra
 ms.topic: how-to
 ms.date: 09/24/2018
 ms.openlocfilehash: e09ac39037024b5c360af4bb6ada26590b142924
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97359601"
 ---
 # <a name="access-azure-cosmos-db-cassandra-api-from-spark-on-yarn-with-hdinsight"></a>Доступ к API Cassandra для Azure Cosmos DB из Spark в YARN с HDInsight
@@ -20,7 +20,7 @@ ms.locfileid: "97359601"
 
 В этой статье описывается, как обращаться к API Cassandra для Azure Cosmos DB из Spark в YARN с HDInsight, используя оболочку Spark. HDInsight — это платформа как услуга Hadoop Hortonworks в Azure корпорации Майкрософт, которая использует хранилище объектов для HDFS и поставляется в нескольких конфигурациях, включая решение [Spark](../hdinsight/spark/apache-spark-overview.md).  Хотя в этом документе описывается HDInsight Spark, он подходит для всех дистрибутивов Hadoop.  
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * [Подготовка API Cassandra для Azure Cosmos DB](create-cassandra-dotnet.md#create-a-database-account)
 

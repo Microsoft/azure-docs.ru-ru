@@ -13,10 +13,10 @@ ms.author: srbozovi
 ms.reviewer: sstein, bonova
 ms.date: 07/17/2019
 ms.openlocfilehash: a54907dd3f7b3fbc06033624f14b12de14d9afb9
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99831507"
 ---
 # <a name="configure-a-custom-dns-for-azure-sql-managed-instance"></a>Настройка пользовательской службы DNS для Управляемого экземпляра SQL Azure
@@ -30,7 +30,7 @@ ms.locfileid: "99831507"
 > Всегда используйте полное доменное имя (FQDN) для почтового сервера, для экземпляра SQL Server и для других служб, даже если они находятся в частной зоне DNS. Например, используйте `smtp.contoso.com` для почтового сервера, так как `smtp` не будет правильно разрешаться. Для создания связанного сервера или репликации, которая ссылается на SQL Server виртуальных машин в одной виртуальной сети, также требуется полное доменное имя и DNS-суффикс по умолчанию. Например, `SQLVM.internal.cloudapp.net`. Дополнительные сведения см. в разделе [разрешение имен, использующее собственный DNS-сервер](../../virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances.md#name-resolution-that-uses-your-own-dns-server).
 
 > [!IMPORTANT]
-> Обновление DNS-серверов виртуальной сети не повлияет на Управляемый экземпляр SQL немедленно. Дополнительные сведения см. в статье [Синхронизация параметров DNS-серверов виртуальной сети в управляемый экземпляре SQL в виртуальном кластере](synchronize-vnet-dns-servers-setting-on-virtual-cluster.md) .
+> Обновление DNS-серверов виртуальной сети не повлияет на Управляемый экземпляр SQL немедленно. Дополнительные сведения см. в статье [Синхронизация параметров DNS-серверов виртуальной сети в виртуальном кластере Управляемого экземпляра SQL](synchronize-vnet-dns-servers-setting-on-virtual-cluster.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
