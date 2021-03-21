@@ -11,10 +11,10 @@ manager: rkarlin
 author: memildin
 ms.date: 03/08/2021
 ms.openlocfilehash: 27f17b3d1060e8b693c2a34cdb4643840f1bfd13
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102452323"
 ---
 # <a name="azure-defender-for-sql"></a>Azure Defender для SQL

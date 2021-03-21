@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/21/2021
 ms.custom: seodec18
 ms.openlocfilehash: 72b78f49ed8b7016b92262de7256492fa6d5d7d1
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98676807"
 ---
 # <a name="streaming-ingestion-throughput-limits"></a>Ограничения пропускной способности приема потоковой передачи
@@ -96,6 +96,6 @@ Gen2 "аналитика временных рядов Azure" в настоящ�
 * [Масштаб Центра событий](../event-hubs/event-hubs-scalability.md#throughput-units)
 * [Секции Центра событий](../event-hubs/event-hubs-features.md#partitions)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о [хранении](./concepts-storage.md) данных

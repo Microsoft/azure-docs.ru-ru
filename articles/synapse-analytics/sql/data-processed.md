@@ -1,5 +1,5 @@
 ---
-title: Управление затратами для несерверного пула SQL
+title: Управление затратами на использование бессерверного пула SQL
 description: В этом документе описывается, как управлять стоимостью бессерверного пула SQL и как рассчитывается обрабатываемые данные при запросе данных в службе хранилища Azure.
 services: synapse analytics
 author: filippopovic
@@ -10,10 +10,10 @@ ms.date: 11/05/2020
 ms.author: fipopovi
 ms.reviewer: jrasnick
 ms.openlocfilehash: 8a26f8ced5e91810f8cadff0a27796dc817e6517
-ms.sourcegitcommit: b4880683d23f5c91e9901eac22ea31f50a0f116f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94491590"
 ---
 # <a name="cost-management-for-serverless-sql-pool-in-azure-synapse-analytics"></a>Управление затратами для несерверного пула SQL в Azure синапсе Analytics
@@ -140,6 +140,6 @@ WHERE name like 'Data processed %';
 SELECT * FROM sys.dm_external_data_processed
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения о том, как оптимизировать запросы на производительность, см. в статье рекомендации [по использованию бессерверного пула SQL](best-practices-sql-on-demand.md).

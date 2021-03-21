@@ -12,10 +12,10 @@ ms.date: 12/01/2020
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 2f16de49518e334f2f5e679ce24e24a262a1e231
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98674949"
 ---
 # <a name="define-a-saml-identity-provider-technical-profile-in-an-azure-active-directory-b2c-custom-policy"></a>Определение технического профиля поставщика удостоверений SAML в настраиваемой политике Azure Active Directory B2C
@@ -174,7 +174,7 @@ https://your-tenant-name.b2clogin.com/your-tenant-name/your-policy/samlp/metadat
 
 Элемент **криптографиккэйс** содержит следующие атрибуты:
 
-| attribute |Обязательно | Описание |
+| Атрибут |Обязательно | Описание |
 | --------- | ----------- | ----------- |
 | SamlMessageSigning |Да | Сертификат X509 (набор ключей RSA), используемый для подписывания сообщений SAML. Azure AD B2C использует этот ключ для подписывания запросов и отправки их поставщику удостоверений. |
 | SamlAssertionDecryption |Нет | Сертификат X509 (набор ключей RSA). Поставщик удостоверений SAML использует открытую часть сертификата для шифрования утверждения ответа SAML. Azure AD B2C использует частную часть сертификата для расшифровки утверждения. |

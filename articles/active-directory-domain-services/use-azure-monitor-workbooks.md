@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 07/09/2020
 ms.author: justinha
 ms.openlocfilehash: 9a126fe4676f340fb45677382a3aeeed79291f0b
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100574206"
 ---
 # <a name="review-security-audit-events-in-azure-active-directory-domain-services-using-azure-monitor-workbooks"></a>Проверка событий аудита безопасности в Azure Active Directory доменных служб с помощью Azure Monitor книг
@@ -108,7 +108,7 @@ AD DS Azure содержит два следующих шаблона книги
 
 Все диаграммы и таблицы в Azure Monitor книгах создаются с помощью запросов Kusto. Дополнительные сведения о создании собственных запросов см. в руководстве по [Azure Monitor журнала запросов][azure-monitor-queries] и [запросов Kusto][kusto-queries].
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если необходимо настроить политики паролей и блокировки, см. статью [политики блокировки паролей и учетных записей в управляемых доменах][password-policy].
 

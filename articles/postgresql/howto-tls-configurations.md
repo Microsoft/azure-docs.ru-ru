@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: how-to
 ms.date: 06/02/2020
 ms.openlocfilehash: 25be6b3c4e3172fc8ee14b97fd890b5948c284ba
-ms.sourcegitcommit: 80034a1819072f45c1772940953fef06d92fefc8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93242370"
 ---
 # <a name="configuring-tls-settings-in-azure-database-for-postgresql-single---server-using-azure-portal"></a>Настройка параметров TLS в базе данных Azure для PostgreSQL на одном сервере с помощью портал Azure
@@ -19,7 +19,7 @@ ms.locfileid: "93242370"
 
 Вы можете применить версию TLS для подключения к своей базе данных Azure для PostgreSQL. Теперь у клиентов есть возможность задать минимальную версию TLS для сервера базы данных. Например, если задать для параметра минимальной настройки TLS значение TLS 1,0, сервер разрешит подключения клиентов, использующих TLS 1,0, 1,1 и 1.2. Вместо этого, если задать для минимальной версии TLS значение 1,2 +, вы разрешите подключения только от клиентов, использующих TLS 1,2, и все соединения с TLS 1,0 и TLS 1,1 будут отклонены.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Вот что вам нужно, чтобы выполнить инструкции, приведенные в этом руководстве:
 
@@ -41,7 +41,7 @@ ms.locfileid: "93242370"
 
 1. Уведомление подтверждает успешное включение параметра безопасности подключения.
 
-    :::image type="content" source="./media/howto-tls-configurations/setting-tls-value-success.png" alt-text="Конфигурация TLS для одного сервера базы данных Azure для PostgreSQL":::
+    :::image type="content" source="./media/howto-tls-configurations/setting-tls-value-success.png" alt-text="База данных Azure для PostgreSQL — Настройка TLS для одного сервера успешно выполнена":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

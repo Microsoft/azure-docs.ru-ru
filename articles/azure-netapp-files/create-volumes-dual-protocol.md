@@ -15,10 +15,10 @@ ms.topic: how-to
 ms.date: 01/28/2020
 ms.author: b-juche
 ms.openlocfilehash: 0079c123f908a38cc1e4923790439f18352bf3ce
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100574637"
 ---
 # <a name="create-a-dual-protocol-nfsv3-and-smb-volume-for-azure-netapp-files"></a>Создание тома с двумя протоколами (NFSv3 и SMB) для Azure NetApp Files
@@ -26,7 +26,7 @@ ms.locfileid: "100574637"
 Azure NetApp Files поддерживает создание томов с помощью NFS (NFSv3 и Нфсв 4.1), SMB3 или Dual Protocol. В этой статье показано, как создать том, использующий сдвоенный протокол NFSv3 и SMB с поддержкой сопоставления пользователей LDAP.  
 
 
-## <a name="before-you-begin"></a>Подготовка к работе 
+## <a name="before-you-begin"></a>Перед началом 
 
 * Вы должны уже создали пул емкости.  
     См. раздел [Настройка пула емкости](azure-netapp-files-set-up-capacity-pool.md).   
@@ -137,7 +137,7 @@ Azure NetApp Files поддерживает создание томов с по�
 
 Следуйте инструкциям в разделе [Настройка клиента NFS для Azure NetApp Files](configure-nfs-clients.md) , чтобы настроить клиент NFS.  
 
-## <a name="next-steps"></a>Дальнейшие шаги  
+## <a name="next-steps"></a>Дальнейшие действия  
 
 * [Настройка клиента NFS для Azure NetApp Files](configure-nfs-clients.md)
 * [Устранение неполадок с томами с двумя протоколами или SMB](troubleshoot-dual-protocol-volumes.md)

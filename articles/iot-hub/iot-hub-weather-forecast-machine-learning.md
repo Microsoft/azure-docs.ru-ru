@@ -11,10 +11,10 @@ ms.tgt_pltfrm: arduino
 ms.date: 09/16/2020
 ms.author: robinsh
 ms.openlocfilehash: ab9e122ba0b2b50203a2d66ae14f03f3b6300f96
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96452347"
 ---
 # <a name="weather-forecast-using-the-sensor-data-from-your-iot-hub-in-azure-machine-learning-studio-classic"></a>Прогноз погоды с использованием данных датчика из центра Интернета вещей в Машинное обучение Azure Studio (классическая модель)
@@ -46,7 +46,7 @@ ms.locfileid: "96452347"
   - Центр Интернета вещей Azure в подписке;
   - клиентское приложение, которое отправляет сообщения в Центр Интернета вещей Azure.
 - Учетная запись [Студии машинного обучения Azure (классической)](https://studio.azureml.net/).
-- Учетная запись [хранения Azure](../storage/common/storage-account-overview.md?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#types-of-storage-accounts)является **General-purpose v2** предпочтительной, но все учетные записи хранения Azure, поддерживающие хранилище BLOB-объектов Azure, также будут работать.
+- Учетная запись [хранения Azure](../storage/common/storage-account-overview.md?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#types-of-storage-accounts)является  предпочтительной, но все учетные записи хранения Azure, поддерживающие хранилище BLOB-объектов Azure, также будут работать.
 
 > [!Note]
 > В этой статье используется Azure Stream Analytics и несколько других платных услуг. Дополнительная плата взимается Azure Stream Analytics, когда данные должны передаваться в регионах Azure. По этой причине было бы полезно убедиться, что группа ресурсов, центр Интернета вещей и учетная запись хранения Azure, а также Машинное обучение Studio (классическая модель) и Azure Stream Analytics задание, добавленные далее в этом руководстве, находятся в одном регионе Azure. Вы можете проверить региональную поддержку для Машинное обучение Azure Studio (классическая модель) и других служб Azure на [странице доступность продуктов Azure по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=machine-learning-studio&regions=all).
@@ -133,7 +133,7 @@ ms.locfileid: "96452347"
 
 ### <a name="create-a-stream-analytics-job"></a>Создание задания Stream Analytics
 
-1. В [портал Azure](https://portal.azure.com/)выберите **создать ресурс**. Введите "Задание Stream Analytics" в поле поиска и выберите **Stream Analytics задание** в раскрывающемся списке результатов. Когда откроется область **задания Stream Analytics** , выберите **создать**.
+1. На [портале Azure](https://portal.azure.com/) выберите **Создать ресурс**. Введите "Задание Stream Analytics" в поле поиска и выберите **Stream Analytics задание** в раскрывающемся списке результатов. Когда откроется область **задания Stream Analytics** , выберите **создать**.
 1. Введите представленные ниже сведения для задания.
 
    **Имя задания.** Имя задания. Оно должно быть глобально уникальным.

@@ -4,10 +4,10 @@ description: Узнайте, как использовать консоль ре
 ms.topic: how-to
 ms.date: 02/16/2021
 ms.openlocfilehash: 0478582a9bc4fb77a1784c27ec4f5c302d6b89fc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101716994"
 ---
 # <a name="configure-nsx-network-components-in-azure-vmware-solution"></a>Настройка сетевых компонентов НСКС в решении VMware для Azure
@@ -27,7 +27,7 @@ ms.locfileid: "101716994"
  
 :::image type="content" source="media/configure-nsx-network-components-azure-portal/nsxt-workload-networking.png" alt-text="Снимок экрана, показывающий четыре варианта в консоли решения Azure VMware для настройки НСКС-T.":::
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Виртуальные машины (ВМ), созданные или перенесенные в частное облако решения Azure VMware, должны быть присоединены к сегменту. 
 
 ## <a name="create-an-nsx-t-segment-in-the-azure-portal"></a>Создание сегмента НСКС-T в портал Azure

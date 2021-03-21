@@ -14,10 +14,10 @@ ms.author: damendo
 ms.reviewer: vinigam
 ms.custom: references_regions
 ms.openlocfilehash: 87dacd28223fd88866edb90266aa76fd3cdf86cf
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101095355"
 ---
 # <a name="traffic-analytics"></a>Аналитика трафика
@@ -140,7 +140,7 @@ ms.locfileid: "101095355"
       Центрально-южная часть США  
    :::column-end:::
    :::column span="":::
-      Southeast Asia  
+      Юго-Восточная Азия  
       Северная Швейцария  
       Западная Швейцария  
       Центральная часть ОАЭ.  

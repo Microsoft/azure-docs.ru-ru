@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/01/2020
 ms.author: yelevin
 ms.openlocfilehash: 3df78d6b53f8e8739307e9b870aa03d76bfd6771
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101718613"
 ---
 # <a name="connect-data-sources"></a>Подключение источников данных
@@ -78,7 +78,7 @@ Azure Sentinel поддерживает следующие методы подк
     - [Forcepoint DLP](connect-forcepoint-dlp.md)
     - [Google Workspace (ранее G Suite)](connect-google-workspace.md)
     - [Журналы DNS Нкслог (Windows)](connect-nxlog-dns.md)
-    - [Нкслог Линуксаудит](connect-nxlog-linuxaudit.md)
+    - [NXLog LinuxAudit](connect-nxlog-linuxaudit.md)
     - [Okta SSO](connect-okta-single-sign-on.md)
     - [Orca Security](connect-orca-security-alerts.md)
     - [Журналы Perimeter 81](connect-perimeter-81-logs.md)
@@ -86,7 +86,7 @@ Azure Sentinel поддерживает следующие методы подк
     - [Proofpoint TAP](connect-proofpoint-tap.md)
     - [Qualys VM](connect-qualys-vm.md)
     - [Salesforce Service Cloud](connect-salesforce-service-cloud.md)
-    - [Sophos Cloud Оптикс](connect-sophos-cloud-optix.md)
+    - [Sophos Cloud Optix](connect-sophos-cloud-optix.md)
     - [Squadra Technologies secRMM](connect-squadra-secrmm.md)
     - [Symantec ICDX](connect-symantec.md)
     - [VMware Carbon Black Cloud Endpoint Standard](connect-vmware-carbon-black.md)
@@ -102,7 +102,7 @@ Azure Sentinel поддерживает следующие методы подк
     - **Брандмауэры, прокси-серверы и конечные точки — CEF:**
         - [Vectra AI Detect](connect-ai-vectra-detect.md)
         - [Akamai Security Events](connect-akamai-security-events.md)
-        - [Aruba Клеарпасс](connect-aruba-clearpass.md)
+        - [Aruba ClearPass](connect-aruba-clearpass.md)
         - [Broadcom Symantec DLP](connect-broadcom-symantec-dlp.md)
         - [Check Point](connect-checkpoint.md)
         - [Cisco ASA](connect-cisco.md)

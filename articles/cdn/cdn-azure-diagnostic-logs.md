@@ -14,10 +14,10 @@ ms.topic: troubleshooting
 ms.date: 07/15/2020
 ms.author: allensu
 ms.openlocfilehash: 96e80de5b8b5ab0a046913ce40ca2d7254dd0133
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100573226"
 ---
 # <a name="diagnostic-logs---azure-content-delivery-network"></a>Журналы диагностики — сеть доставки содержимого Azure
@@ -71,7 +71,7 @@ ms.locfileid: "100573226"
 
     :::image type="content" source="./media/cdn-diagnostics-log/04_diagnostics-logs-storage.png" alt-text="Журналы диагностики — хранилище." border="true":::
 
-3. Нажмите кнопку **Сохранить**.
+3. Щелкните **Сохранить**.
 
 ### <a name="send-to-log-analytics"></a>Отправка в Log Analytics
 
@@ -88,7 +88,7 @@ ms.locfileid: "100573226"
 
    :::image type="content" source="./media/cdn-diagnostics-log/05-la-workspace.png" alt-text="Журналы диагностики — Log Analytics." border="true":::
 
-4. Нажмите кнопку **Сохранить**.
+4. Щелкните **Сохранить**.
 
 ### <a name="stream-to-an-event-hub"></a>"Передать в концентратор событий";
 
@@ -105,7 +105,7 @@ ms.locfileid: "100573226"
 
    :::image type="content" source="./media/cdn-diagnostics-log/06-eventhub-namespace.png" alt-text="Журналы диагностики — концентратор событий." border="true":::
 
-4. Нажмите кнопку **Сохранить**.
+4. Щелкните **Сохранить**.
 
 
 ## <a name="enable-logging-with-powershell"></a>Включение ведения журнала с помощью PowerShell

@@ -5,17 +5,17 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.date: 07/15/2020
 ms.openlocfilehash: 992cd994f96b5637d5afd91bccfecde8704d2886
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98940630"
 ---
 # <a name="configure-virtual-network-service-endpoint-policies-for-azure-hdinsight"></a>Настройка политик конечной точки службы виртуальной сети для Azure HDInsight
 
 В этой статье содержатся сведения о том, как реализовать политики конечной точки службы в виртуальных сетях с помощью Azure HDInsight.
 
-## <a name="background"></a>Фон
+## <a name="background"></a>Историческая справка
 
 Azure HDInsight позволяет создавать кластеры в собственной виртуальной сети. Если необходимо разрешить исходящий трафик из виртуальной сети в другие службы Azure, такие как учетные записи хранения, можно создать [политики конечной точки службы](../virtual-network/virtual-network-service-endpoint-policies-overview.md). Однако политики конечной точки службы, созданные с помощью портал Azure, позволяют создавать только политику для одной учетной записи, всех учетных записей в подписке или всех учетных записей в группе ресурсов.
 

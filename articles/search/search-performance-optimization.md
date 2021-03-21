@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 02/01/2021
 ms.custom: references_regions
 ms.openlocfilehash: 60371888dbc4f0cbc33f1ad1b2a685dbb071c01a
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101670707"
 ---
 # <a name="scale-for-performance-on-azure-cognitive-search"></a>Масштабирование для производительности Когнитивный поиск Azure

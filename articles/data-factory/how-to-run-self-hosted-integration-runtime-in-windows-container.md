@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 08/05/2020
 ms.openlocfilehash: e34e1f589442be41e2a4eac3ac893f377675e4b5
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100379511"
 ---
 # <a name="how-to-run-self-hosted-integration-runtime-in-windows-container"></a>Запуск Integration Runtime Self-Hosted в контейнере Windows
@@ -21,7 +21,7 @@ ms.locfileid: "100379511"
 В этой статье объясняется, как запустить Self-Hosted Integration Runtime в контейнере Windows.
 Фабрика данных Azure предоставляет официальную поддержку контейнеров Windows Self-Hosted Integration Runtime. Вы можете скачать исходный код сборки DOCKER и объединить процесс создания и запуска в собственном конвейере непрерывной доставки. 
 
-## <a name="prerequisites"></a>Предварительные требования 
+## <a name="prerequisites"></a>Предварительные условия 
 - [Требования к контейнеру Windows](/virtualization/windowscontainers/deploy-containers/system-requirements)
 - DOCKER версии 2,3 и более поздней 
 - Self-Hosted Integration Runtime версии 4.11.7512.1 и более поздней 

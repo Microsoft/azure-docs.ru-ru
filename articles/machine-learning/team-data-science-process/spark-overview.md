@@ -12,10 +12,10 @@ ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
 ms.openlocfilehash: 1dd82fb00c55e3676929999f204eae8755671038
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93314736"
 ---
 # <a name="overview-of-data-science-using-spark-on-azure-hdinsight"></a>Общие сведения об обработке и анализе данных с помощью платформы Spark в Azure HDInsight
@@ -65,7 +65,7 @@ ms.locfileid: "93314736"
 
 Руководство по применению модели Spark 2.0 и использованию моделей для оценки вы найдете в [этом документе для Spark 1.6](https://github.com/Azure/Azure-MachineLearning-DataScience/blob/master/Misc/Spark/pySpark/Spark1.6/pySpark-machine-learning-data-science-spark-model-consumption.ipynb), который содержит пример с описанием выполняемых шагов. Чтобы использовать этот пример в Spark 2,0, замените файл кода Python [этим файлом](https://github.com/Azure/Azure-MachineLearning-DataScience/blob/master/Misc/Spark/Python/Spark2.0_ConsumeRFCV_NYCReg.py).
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Описанные ниже процедуры относятся к Spark 1.6. Для Spark 2.0 используйте записные книжки, описанные ранее.
 
@@ -156,13 +156,13 @@ ms.locfileid: "93314736"
 
 ![Панели мониторинга кластера](./media/spark-overview/spark-jupyter-on-portal.png)
 
-Для *_`https://CLUSTERNAME.azurehdinsight.net/jupyter`_* доступа к записным книжкам Jupyter можно также перейти к * _. Замените в этом URL-адресе фрагмент CLUSTERNAME именем вашего кластера. Для доступа к записным книжкам необходим пароль к учетной записи администратора.
+Кроме того, можно перейти к ***`https://CLUSTERNAME.azurehdinsight.net/jupyter`*** записным книжкам Jupyter. Замените в этом URL-адресе фрагмент CLUSTERNAME именем вашего кластера. Для доступа к записным книжкам необходим пароль к учетной записи администратора.
 
 ![Просмотр записных книжек Jupyter](./media/spark-overview/spark-jupyter-notebook.png)
 
 Выберите PySpark, чтобы просмотреть каталог, содержащий несколько примеров предварительно упакованных записных книжек, использующих API PySpark. Записные книжки, содержащие примеры кода для этого набора разделов Spark, доступны на сайте [GitHub](https://github.com/Azure/Azure-MachineLearning-DataScience/tree/master/Misc/Spark/pySpark) .
 
-Вы можете отправить записные книжки непосредственно из [GitHub](https://github.com/Azure/Azure-MachineLearning-DataScience/tree/master/Misc/Spark/pySpark) на сервер записных книжек Jupyter в кластере Spark. На домашней странице Jupyter нажмите кнопку _ *upload* * в правой части экрана. Откроется окно проводника. Здесь можно вставить URL-адрес GitHub (необработанное содержимое) записной книжки и нажать кнопку **Открыть**.
+Вы можете отправить записные книжки непосредственно из [GitHub](https://github.com/Azure/Azure-MachineLearning-DataScience/tree/master/Misc/Spark/pySpark) на сервер записных книжек Jupyter в кластере Spark. На домашней странице записной книжки Jupyter нажмите кнопку **Отправить** в правой части экрана. Откроется окно проводника. Здесь можно вставить URL-адрес GitHub (необработанное содержимое) записной книжки и нажать кнопку **Открыть**.
 
 В списке файлов Jupyter отобразится имя файла с кнопкой **Отправить**. Нажмите кнопку **Отправить** . Записная книжка импортирована. Повторите эти действия для отправки остальных записных книжек из этого руководства.
 
@@ -174,7 +174,7 @@ ms.locfileid: "93314736"
 Теперь вы можете:
 
 * просмотреть код, щелкнув записную книжку;
-* выполнить отдельную ячейку, нажав клавиши **SHIFT+ВВОД** ;
+* выполнить отдельную ячейку, нажав клавиши **SHIFT+ВВОД**;
 * Запустите всю записную книжку, щелкнув **элемент**  ->  **выполнить**.
 * использовать автоматическую визуализацию запросов.
 

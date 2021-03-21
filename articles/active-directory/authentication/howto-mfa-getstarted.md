@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: michmcla
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c9ee81abd7cd0268a7cbd6b16aa6065ec7b54bef
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96861312"
 ---
 # <a name="plan-an-azure-ad-multi-factor-authentication-deployment"></a>Планирование развертывания многофакторной идентификации Azure AD
@@ -31,7 +31,7 @@ ms.locfileid: "96861312"
 > [!div class="nextstepaction"]
 > [Включение многофакторной проверки подлинности Azure AD](tutorial-enable-azure-mfa.md)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед началом развертывания многофакторной идентификации Azure AD необходимо учитывать необходимые компоненты.
 

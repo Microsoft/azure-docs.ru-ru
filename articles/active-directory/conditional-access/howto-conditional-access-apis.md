@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: videor, jeevanb
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6d4dd6e64053af41d66e3accbb7fc9b21d951fc6
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96860219"
 ---
 # <a name="conditional-access-programmatic-access"></a>Условный доступ: программный доступ
@@ -50,13 +50,13 @@ Microsoft Graph предоставляет унифицированную мод
 
 - [Настройка политик условного доступа с помощью шаблонов API Microsoft Graph](https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/01-configure/templates)
 
-## <a name="test"></a>Тест
+## <a name="test"></a>Проверить
 
 Этот пример моделирует более безопасные методики развертывания с помощью рабочих процессов утверждения, которые могут копировать политики условного доступа из одной среды (например, предварительной) в другую, например в рабочую среду.
 
 - [Повышение уровня политик условного доступа из тестовых сред](https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/02-test)
 
-## <a name="deploy"></a>Развертывание
+## <a name="deploy"></a>Развернуть
 
 Этот пример предоставляет механизм для постепенного выполнения промежуточного развертывания политик условного доступа к заполнению пользователей, что позволяет управлять влиянием и проблемами поддержки на ранних этапах.
 
