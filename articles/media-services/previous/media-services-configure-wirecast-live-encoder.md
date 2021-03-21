@@ -16,10 +16,10 @@ ms.date: 03/10/2021
 ms.author: inhenkel
 ms.reviewer: cenkdin;anilmur
 ms.openlocfilehash: a736270919f36cb7d4bbd4e686a98ddc57f402fa
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103016837"
 ---
 # <a name="use-the-wirecast-encoder-to-send-a-single-bitrate-live-stream"></a>Использование кодировщика Wirecast для отправки односкоростного обновляющегося потока
@@ -95,7 +95,7 @@ ms.locfileid: "103016837"
 2. Настройте выходные данные, перейдя на вкладку **Output** (Вывод) и выбрав **Output Settings…** (Параметры вывода…).
 
     В поле **Output Destination** (Назначение вывода) выберите значение **RTMP Server** (Сервер RTMP).
-3. Нажмите кнопку **ОК**.
+3. Нажмите кнопку **OK**.
 4. На странице параметров в поле **Destination** (Назначение) задайте значение **Azure Media Services** (Службы мультимедиа Azure).
 
     В поле «Профиль кодировки» будет выбран профиль **Azure H.264 720 p 16:9 (1280 x 720)**. Чтобы настроить эти параметры, выберите значок шестеренки справа от раскрывающегося списка и затем выберите **New Preset**(Новая предустановка).
@@ -113,7 +113,7 @@ ms.locfileid: "103016837"
    * Профиль: основной
    * Ключевой кадр: каждые 60 кадров
 
-     **звук;**
+     **Аудиосигнал**
 
    * Конечная скорость: 192 Кбит/сек
    * Частота выборки: 44,100 кГц

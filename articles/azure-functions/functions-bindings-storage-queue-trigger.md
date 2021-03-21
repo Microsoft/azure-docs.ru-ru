@@ -7,10 +7,10 @@ ms.date: 02/18/2020
 ms.author: cshoe
 ms.custom: devx-track-csharp, cc996988-fb4f-47, devx-track-python
 ms.openlocfilehash: f4477a09f151695b826d0becf28e92ceaf3f9e85
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102453212"
 ---
 # <a name="azure-queue-storage-trigger-for-azure-functions"></a>Триггер хранилища очередей Azure для функций Azure
@@ -357,7 +357,7 @@ public class QueueTriggerDemo {
 |**direction**| Недоступно | Только в файле *function.json*. Нужно задать значение `in`. Это свойство задается автоматически при создании триггера на портале Azure. |
 |**name** | Недоступно |Имя переменной, содержащей полезные данные элемента очереди в коде функции.  |
 |**queueName** | **QueueName**| Имя очереди для опроса. |
-|**connection**; | **Соединение** |Имя параметра приложения, содержащего строку подключения к службе хранилища, используемой для этой привязки. Если имя параметра приложения начинается с AzureWebJobs, можно указать только остальную часть имени.<br><br>Например, если задано значение `connection` "MyStorage", среда выполнения функций ищет параметр приложения с именем "MyStorage". Если оставить строку `connection` пустой, среда выполнения службы "Функции" будет использовать строку подключения к службе хранилища по умолчанию для параметра приложения с именем `AzureWebJobsStorage`.<br><br>Если используется [расширение версии 5. x или более поздней](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher)версии, а не строка подключения, можно указать ссылку на раздел конфигурации, который определяет соединение. См. раздел [подключения](./functions-reference.md#connections).|
+|**connection**; | **Соединение** |Имя параметра приложения, содержащего строку подключения к службе хранилища, используемой для этой привязки. Если имя параметра приложения начинается с AzureWebJobs, можно указать только остальную часть имени.<br><br>Например, если задано значение `connection` "MyStorage", среда выполнения функций ищет параметр приложения с именем "MyStorage". Если оставить строку `connection` пустой, среда выполнения службы "Функции" будет использовать строку подключения к службе хранилища по умолчанию для параметра приложения с именем `AzureWebJobsStorage`.<br><br>Если вы используете [расширение версии 5. x или более поздней](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher), а не строку подключения, можно указать ссылку на раздел конфигурации, который определяет подключение. См. раздел [Подключения](./functions-reference.md#connections).|
 
 [!INCLUDE [app settings to local.settings.json](../../includes/functions-app-settings-local.md)]
 
@@ -378,7 +378,7 @@ public class QueueTriggerDemo {
 
 ### <a name="additional-types"></a>Дополнительные типы
 
-В приложениях, в которых используется[расширение службы хранилища версии 5.0.0 или выше](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher), также могут использоваться типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). Эта версия удаляет поддержку устаревшего `CloudQueueMessage` типа в пользу следующих типов:
+В приложениях, в которых используется[расширение службы хранилища версии 5.0.0 или выше](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher), также могут использоваться типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). В этой версии прекращена поддержка устаревшего типа `CloudQueueMessage`. Вместо него теперь поддерживаются следующие типы:
 
 - [куеуемессаже](/dotnet/api/azure.storage.queues.models.queuemessage)
  
@@ -399,7 +399,7 @@ public class QueueTriggerDemo {
 
 ### <a name="additional-types"></a>Дополнительные типы
 
-В приложениях, в которых используется[расширение службы хранилища версии 5.0.0 или выше](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher), также могут использоваться типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). Эта версия удаляет поддержку устаревшего `CloudQueueMessage` типа в пользу следующих типов:
+В приложениях, в которых используется[расширение службы хранилища версии 5.0.0 или выше](./functions-bindings-storage-queue.md#storage-extension-5x-and-higher), также могут использоваться типы из [пакета Azure SDK для .NET](/dotnet/api/overview/azure/storage.queues-readme). В этой версии прекращена поддержка устаревшего типа `CloudQueueMessage`. Вместо него теперь поддерживаются следующие типы:
 
 - [куеуемессаже](/dotnet/api/azure.storage.queues.models.queuemessage)
 
@@ -470,7 +470,7 @@ public class QueueTriggerDemo {
 
 В файле [host.json](functions-host-json.md#queues) содержатся параметры, управляющие поведением очереди триггера. Дополнительные сведения о доступных параметрах см. в разделе [host.jsпо параметрам](functions-bindings-storage-queue.md#hostjson-settings) .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Сообщения хранилища очереди записи (Выходная привязка)](./functions-bindings-storage-queue-output.md)
 

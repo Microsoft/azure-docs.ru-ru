@@ -1,5 +1,5 @@
 ---
-title: Обработчики данных телеметрии (Предварительная версия) — Azure Monitor Application Insights для Java
+title: Обработчики данных телеметрии (предварительная версия) — Application Insights для Java в службе Azure Monitor
 description: Узнайте, как настроить обработчики телеметрии в Azure Monitor Application Insights для Java.
 ms.topic: conceptual
 ms.date: 10/29/2020
@@ -7,13 +7,13 @@ author: kryalama
 ms.custom: devx-track-java
 ms.author: kryalama
 ms.openlocfilehash: 35e53454e5b2c6265082bbedb4a8b60e82df7191
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101734576"
 ---
-# <a name="telemetry-processors-preview---azure-monitor-application-insights-for-java"></a>Обработчики данных телеметрии (Предварительная версия) — Azure Monitor Application Insights для Java
+# <a name="telemetry-processors-preview---azure-monitor-application-insights-for-java"></a>Обработчики данных телеметрии (предварительная версия) — Application Insights для Java в службе Azure Monitor
 
 > [!NOTE]
 > Функции обработчиков данных телеметрии находятся на этапе предварительной версии.
@@ -335,7 +335,7 @@ ms.locfileid: "101734576"
 |---|---|---|
 | `http.method` | строка | Метод HTTP-запроса.|
 | `http.url` | строка | Полный URL-адрес запроса HTTP в форме `scheme://host[:port]/path?query[#fragment]` . Этот фрагмент обычно не передается по протоколу HTTP. Но если фрагмент известен, он должен быть включен.|
-| `http.status_code` | number | [Код состояния ответа HTTP](https://tools.ietf.org/html/rfc7231#section-6).|
+| `http.status_code` | Число | [Код состояния ответа HTTP](https://tools.ietf.org/html/rfc7231#section-6).|
 | `http.flavor` | строка | Тип протокола HTTP. |
 | `http.user_agent` | строка | Значение заголовка [HTTP-агента пользователя](https://tools.ietf.org/html/rfc7231#section-5.5.3) , отправленное клиентом. |
 

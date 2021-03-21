@@ -4,10 +4,10 @@ description: Описывает функции, используемые в ша
 ms.topic: conceptual
 ms.date: 03/02/2021
 ms.openlocfilehash: e823acc07ce0618c064f30e103ec52b7133cea18
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101731125"
 ---
 # <a name="string-functions-for-arm-templates"></a>Строковые функции для шаблонов ARM
@@ -37,7 +37,7 @@ ms.locfileid: "101731125"
 * [skip](#skip)
 * [split](#split)
 * [startsWith](#startswith)
-* [строка](#string)
+* [string](#string)
 * [substring](#substring)
 * [take](#take)
 * [toLower](#tolower)
@@ -127,7 +127,7 @@ output toJsonOutput object = base64ToJson(base64Object)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | base64Output | Строка | b25lLCB0d28sIHRocmVl |
 | toStringOutput | Строка | one, two, three |
@@ -211,7 +211,7 @@ output toJsonOutput object = base64ToJson(base64Object)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | base64Output | Строка | b25lLCB0d28sIHRocmVl |
 | toStringOutput | Строка | one, two, three |
@@ -294,7 +294,7 @@ output toJsonOutput object = base64ToJson(base64Object)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | base64Output | Строка | b25lLCB0d28sIHRocmVl |
 | toStringOutput | Строка | one, two, three |
@@ -367,7 +367,7 @@ output concatOutput string = '${prefix}-${uniqueString(resourceGroup().id)}'
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | concatOutput | Строка | prefix-5yj4yjf5mbg72 |
 
@@ -429,7 +429,7 @@ output return array = concat(firstArray, secondArray)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | return | Array | ["1-1", "1-2", "1-3", "2-1", "2-2", "2-3"] |
 
@@ -536,14 +536,14 @@ output arrayFalse bool = contains(arrayToTest, 'four')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | stringTrue | Bool | True |
-| stringFalse | Bool | False |
+| stringFalse | Bool | Неверно |
 | objectTrue | Bool | True |
-| objectFalse | Bool | False |
+| objectFalse | Bool | Неверно |
 | arrayTrue | Bool | True |
-| arrayFalse | Bool | False |
+| arrayFalse | Bool | Неверно |
 
 ## <a name="datauri"></a>dataUri
 
@@ -609,7 +609,7 @@ output toStringOutput string = dataUriToString(dataFormattedString)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | dataUriOutput | Строка | data:text/plain;charset=utf8;base64,SGVsbG8= |
 | toStringOutput | Строка | Привет, мир! |
@@ -678,7 +678,7 @@ output toStringOutput string = dataUriToString(dataFormattedString)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | dataUriOutput | Строка | data:text/plain;charset=utf8;base64,SGVsbG8= |
 | toStringOutput | Строка | Привет, мир! |
@@ -758,7 +758,7 @@ output stringEmpty bool = empty(testString)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayEmpty | Bool | True |
 | objectEmpty | Bool | True |
@@ -836,14 +836,14 @@ output endsFalse bool = endsWith('abcdef', 'e')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | startsTrue | Bool | True |
 | startsCapTrue | Bool | True |
-| startsFalse | Bool | False |
+| startsFalse | Bool | Неверно |
 | endsTrue | Bool | True |
 | endsCapTrue | Bool | True |
-| endsFalse | Bool | False |
+| endsFalse | Bool | Неверно |
 
 ## <a name="first"></a>first
 
@@ -909,7 +909,7 @@ output stringOutput string = first('One Two Three')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayOutput | Строка | one |
 | stringOutput | Строка | O |
@@ -928,7 +928,7 @@ output stringOutput string = first('One Two Three')
 | arg1 | Да | Строка, целое число или логическое значение | Значение, включаемое в отформатированную строку. |
 | дополнительные аргументы | нет | Строка, целое число или логическое значение | Дополнительные значения для включения в отформатированную строку. |
 
-### <a name="remarks"></a>Комментарии
+### <a name="remarks"></a>Remarks
 
 Эта функция используется для форматирования строки в шаблоне. В нем используются те же параметры форматирования, что и в методе [System. String. Format](/dotnet/api/system.string.format) в .NET.
 
@@ -981,7 +981,7 @@ output formatTest string = format('{0}, {1}. Formatted number: {2:N0}', greeting
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | форматтест | Строка | Привет, пользователь. Форматированное число: 8 175 133 |
 
@@ -998,7 +998,7 @@ output formatTest string = format('{0}, {1}. Formatted number: {2:N0}', greeting
 | baseString |Да |строка |Значение, используемое в хэш-функции для создания GUID. |
 | Дополнительные параметры (если необходимы) |Нет |строка |Можно добавить столько строк, сколько необходимо для создания значения, которое задает уровень уникальности. |
 
-### <a name="remarks"></a>Комментарии
+### <a name="remarks"></a>Remarks
 
 Эта функция полезна, если нужно создать значение в формате глобального уникального идентификатора. Указываются значения параметров, которые ограничивают область уникальности результата. Можно указать, является ли уникальным имя в подписке, группе ресурсов или развертывании.
 
@@ -1165,7 +1165,7 @@ output notFound int = indexOf('abcdef', 'z')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | firstT | Int | 0 |
 | lastT | Int | 3 |
@@ -1245,7 +1245,7 @@ output stringOutput string = last('One Two Three')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayOutput | Строка | three |
 | stringOutput | Строка | й |
@@ -1317,7 +1317,7 @@ output notFound int = indexOf('abcdef', 'z')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | firstT | Int | 0 |
 | lastT | Int | 3 |
@@ -1423,7 +1423,7 @@ output objectLength int = length(objectToTest)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayLength | Int | 3 |
 | stringLength | Int | 13 |
@@ -1435,7 +1435,7 @@ output objectLength int = length(objectToTest)
 
 Возвращает значение в формате глобального уникального идентификатора. **Эта функция может использоваться только в значении по умолчанию для параметра.**
 
-### <a name="remarks"></a>Комментарии
+### <a name="remarks"></a>Remarks
 
 Эту функцию можно использовать только в выражении для значения по умолчанию для параметра. Использование этой функции в любом месте шаблона возвращает ошибку. Функция не разрешена в других частях шаблона, поскольку она возвращает другое значение при каждом вызове. Развертывание одного и того же шаблона с теми же параметрами не будет уверенно давать одинаковые результаты.
 
@@ -1492,7 +1492,7 @@ output guidOutput string = guidValue
 
 Выходные данные предыдущего примера зависят от каждого развертывания, но будут выглядеть примерно так:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | гуидаутпут | строка | b76a51fc-bd72-4a77-b9a2-3c29e7d2e551 |
 
@@ -1559,7 +1559,7 @@ output nameOutput string = storageName
 
 Выходные данные предыдущего примера зависят от каждого развертывания, но будут выглядеть примерно так:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | намеаутпут | строка | storagenziwvyru7uxie |
 
@@ -1621,7 +1621,7 @@ output stringOutput string = padLeft(testString, 10, '0')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | stringOutput | Строка | 0000000123 |
 
@@ -1686,7 +1686,7 @@ output secondOutput string = replace(testString, '1234', 'xxxx')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | firstOutput | Строка | 1231231234 |
 | secondOutput | Строка | 123-123-xxxx |
@@ -1774,7 +1774,7 @@ output stringOutput string = skip(testString, charactersToSkip)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayOutput | Array | ["three"] |
 | stringOutput | Строка | two three |
@@ -1852,7 +1852,7 @@ output secondOutput array = split(secondString, delimiters)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | firstOutput | Array | ["one", "two", "three"] |
 | secondOutput | Array | ["one", "two", "three"] |
@@ -1929,11 +1929,11 @@ output endsFalse bool = endsWith('abcdef', 'e')
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | startsTrue | Bool | True |
 | startsCapTrue | Bool | True |
-| startsFalse | Bool | False |
+| startsFalse | Bool | Неверно |
 | endsTrue | Bool | True |
 | endsCapTrue | Bool | True |
 | endsFalse | Bool | False |
@@ -2026,7 +2026,7 @@ output intOutput string = string(testInt)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | objectOutput | Строка | {"valueA":10,"valueB":"Example Text"} |
 | arrayOutput | Строка | ["a","b","c"] |
@@ -2050,7 +2050,7 @@ output intOutput string = string(testInt)
 
 Подстрока. Также может принимать значение пустой строки, когда длина равна нулю.
 
-### <a name="remarks"></a>Комментарии
+### <a name="remarks"></a>Remarks
 
 Если substring выходит за пределы строки или когда длина меньше нуля, происходит ошибка выполнения функции. Следующий пример завершается ошибкой "Параметры индекса и длины должны относиться к расположению в строке. Параметр индекса: 0, параметр длины: 11, параметр длины строкового параметра: 10".
 
@@ -2114,7 +2114,7 @@ output substringOutput string = substring(testString, 4, 3)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | substringOutput | Строка | two |
 
@@ -2201,7 +2201,7 @@ output stringOutput string = take(testString, charactersToSkip)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayOutput | Array | ["one", "two"] |
 | stringOutput | Строка | on |
@@ -2265,7 +2265,7 @@ output toUpperOutput string = toUpper(testString)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | toLowerOutput | Строка | one two three |
 | toUpperOutput | Строка | ONE TWO THREE |
@@ -2329,7 +2329,7 @@ output toUpperOutput string = toUpper(testString)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | toLowerOutput | Строка | one two three |
 | toUpperOutput | Строка | ONE TWO THREE |
@@ -2388,7 +2388,7 @@ output return string = trim(testString)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | return | Строка | one two three |
 
@@ -2405,7 +2405,7 @@ output return string = trim(testString)
 | baseString |Да |строка |Значение, используемое в хэш-функции для создания уникальной строки. |
 | Дополнительные параметры (если необходимы) |Нет |строка |Можно добавить столько строк, сколько необходимо для создания значения, которое задает уровень уникальности. |
 
-### <a name="remarks"></a>Комментарии
+### <a name="remarks"></a>Remarks
 
 Эта функция полезна в тех случаях, когда необходимо создать уникальное имя ресурса. Указываются значения параметров, которые ограничивают область уникальности результата. Можно указать, является ли уникальным имя в подписке, группе ресурсов или развертывании.
 
@@ -2623,7 +2623,7 @@ output toStringOutput string = uriComponentToString(uriEncoded)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | uriOutput | Строка | `http://contoso.com/resources/nested/azuredeploy.json` |
 | componentOutput | Строка | `http%3A%2F%2Fcontoso.com%2Fresources%2Fnested%2Fazuredeploy.json` |
@@ -2693,7 +2693,7 @@ output toStringOutput string = uriComponentToString(uriEncoded)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | uriOutput | Строка | `http://contoso.com/resources/nested/azuredeploy.json` |
 | componentOutput | Строка | `http%3A%2F%2Fcontoso.com%2Fresources%2Fnested%2Fazuredeploy.json` |
@@ -2763,7 +2763,7 @@ output toStringOutput string = uriComponentToString(uriEncoded)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | uriOutput | Строка | `http://contoso.com/resources/nested/azuredeploy.json` |
 | componentOutput | Строка | `http%3A%2F%2Fcontoso.com%2Fresources%2Fnested%2Fazuredeploy.json` |

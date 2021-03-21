@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: virtual-machines
 ms.subservice: image-builder
 ms.collection: linux
-ms.openlocfilehash: 4b6154a18cf4e08bf59dad91350160a1f83c49ed
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: eb4fe102407bf519c9253ac7da39178ad8cacb0c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102201487"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104607540"
 ---
 # <a name="configure-azure-image-builder-service-permissions-using-azure-cli"></a>Настройка разрешений службы Azure Image Builder с помощью Azure CLI
 
@@ -239,7 +239,7 @@ az role assignment create \
 | \<Storage account container\> | имя контейнера в учетной записи хранения. |
 | \<Subscription ID\> | Подписка Azure. |
 
-Дополнительные сведения об управляемом удостоверении, назначенном пользователем, см. в разделе [Создание пользовательского образа, который будет использовать управляемое удостоверение User-Assigned Azure для доступа к файлам службы хранилища Azure](https://docs.microsoft.com/azure/virtual-machines/linux/image-builder-user-assigned-identity). Краткое руководство посвящено созданию и настройке управляемого удостоверения, назначаемого пользователем, для доступа к учетной записи хранения.
+Дополнительные сведения об управляемом удостоверении, назначенном пользователем, см. в разделе [Создание пользовательского образа, который будет использовать управляемое удостоверение User-Assigned Azure для доступа к файлам службы хранилища Azure](./image-builder-user-assigned-identity.md). Краткое руководство посвящено созданию и настройке управляемого удостоверения, назначаемого пользователем, для доступа к учетной записи хранения.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

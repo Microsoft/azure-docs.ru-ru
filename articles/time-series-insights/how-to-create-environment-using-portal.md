@@ -11,10 +11,10 @@ ms.topic: how-to
 ms.date: 03/15/2021
 ms.custom: seodec18
 ms.openlocfilehash: 56f7ac6f4403867e5e4e53b55b241912cdc57454
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103464454"
 ---
 # <a name="create-an-azure-time-series-insights-gen2-environment-using-the-azure-portal"></a>Создание среды Gen2 "аналитика временных рядов Azure" с помощью портал Azure
@@ -85,7 +85,7 @@ ms.locfileid: "103464454"
 
     :::image type="content" source="media/how-to-create-environment-using-portal/environment-confirmation.png" alt-text="Вкладка &quot;Обзор и создание&quot;" lightbox="media/how-to-create-environment-using-portal/environment-confirmation.png":::
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Дополнительные сведения о доступных средах и Gen2 средах Azure Time Series Insights см. в статье [Планирование среды](./how-to-plan-your-environment.md).
 * Сведения о [источниках событий приема потоковой передачи](./concepts-streaming-ingestion-event-sources.md) для среды Gen2 "аналитика временных рядов Azure".

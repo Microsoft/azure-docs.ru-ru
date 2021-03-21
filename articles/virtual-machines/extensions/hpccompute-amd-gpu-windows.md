@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 05/10/2020
 ms.author: vikancha
 ms.openlocfilehash: 42dac9edc91d7cb935e8c20398c4d31343b358e1
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102559687"
 ---
 # <a name="amd-gpu-driver-extension-for-windows"></a>Расширение драйвера GPU AMD для Windows
@@ -34,7 +34,7 @@ ms.locfileid: "102559687"
 | Distribution | Версия |
 |---|---|
 | Windows 10 EMS | Сборка 1903 |
-| быть под управлением ОС Windows 10; | Сборка 1809 |
+| Windows 10 | Сборка 1809 |
 | Windows Server 2016 | Основные сведения |
 | Windows Server 2019 | Основные сведения |
 

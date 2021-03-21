@@ -10,14 +10,14 @@ ms.service: virtual-machines-sap
 ms.topic: article
 ms.tgt_pltfrm: vm-linux
 ms.workload: infrastructure
-ms.date: 02/01/2021
+ms.date: 03/17/2021
 ms.author: radeltch
-ms.openlocfilehash: 2939e00d704f5c2799a1f16822cccdcc963fb73e
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.openlocfilehash: c5f94329920f8c850c0a47dd607ade8e83658b29
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "101671572"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104599924"
 ---
 # <a name="high-availability-of-sap-hana-scale-up-with-azure-netapp-files-on-red-hat-enterprise-linux"></a>Высокий уровень доступности SAP HANA с Azure NetApp Files на Red Hat Enterprise Linux
 
@@ -599,6 +599,15 @@ Azure NetApp Files доступен в нескольких [регионах Az
     nc_HN1_03  (ocf::heartbeat:azure-lb):  Started hanadb1
     vip_HN1_03 (ocf::heartbeat:IPaddr2):   Started hanadb1
     ```
+
+## <a name="configure-hana-activeread-enabled-system-replication-in-pacemaker-cluster"></a>Настройка репликации системы HANA Active/Read с поддержкой в кластере Pacemaker
+
+Начиная с SAP HANA 2,0 SPS 01 SAP позволяет выполнять активные и доступные для чтения программы установки для репликации системы SAP HANA, где вторичные системы SAP HANA репликации системы можно использовать для интенсивных рабочих нагрузок чтения. Для поддержки такой настройки в кластере требуется второй виртуальный IP-адрес, который позволяет клиентам получать доступ к дополнительной базе данных SAP HANA, доступной для чтения. Чтобы гарантировать, что вторичный сайт репликации по-прежнему будет доступен после перенаправление, кластеру необходимо переместить виртуальный IP-адрес, сопоставленный с дополнительным ресурсом SAPHana.
+
+Дополнительная конфигурация, необходимая для управления репликацией системы HANA Active/Read с поддержкой в высокодоступном кластере Red Hat с вторым виртуальным IP-адресом, описана в разделе [Настройка репликации в режиме "Active/Read" с поддержкой Hana в кластере Pacemaker](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/sap-hana-high-availability-rhel#configure-hana-activeread-enabled-system-replication-in-pacemaker-cluster).  
+
+Прежде чем продолжить, убедитесь, что вы полностью настроили кластер с высоким уровнем доступности Red Hat, управляющий SAP HANA базой данных, как описано в приведенных выше сегментах документации.    
+
 
 ## <a name="test-the-cluster-setup"></a>Проверка настройки кластера
 

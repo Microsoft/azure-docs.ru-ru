@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 02/11/2021
 ms.author: azfuncdf
 ms.openlocfilehash: ea4aaa1cdbe10e2db9cf619452558d104a2293ab
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102449379"
 ---
 # <a name="data-persistence-and-serialization-in-durable-functions-azure-functions"></a>Сохранение и сериализация данных в Устойчивые функции (функции Azure)
@@ -26,7 +26,7 @@ ms.locfileid: "102449379"
 
 В одном [концентраторе задач](durable-functions-task-hubs.md)устойчивые функции создает и добавляет сообщения в очередь *рабочих элементов* с именем `<taskhub>-workitem` для функций планирования и одну или несколько *очередей управления* с именем `<taskhub>-control-##` для планирования или возобновления работы Orchestrator и функций сущностей. Количество управляющих очередей равно числу секций, настроенных для приложения. Дополнительные сведения об очередях и секциях см. в [документации по производительности и масштабируемости](durable-functions-perf-and-scale.md).
 
-### <a name="tables"></a>Таблицы
+### <a name="tables"></a>Tables
 
 После успешного обработки сообщений согласование результирующих действий сохраняется в таблице *журнала* с именем `<taskhub>History` . Входные и выходные данные оркестрации также сохраняются в таблице *экземпляров* с именем `<taskhub>Instances` .
 

@@ -9,10 +9,10 @@ ms.workload: infrastructure-services
 ms.date: 03/01/2021
 ms.author: yashar
 ms.openlocfilehash: 9270b7fb135eddd78a7aeb30cf88af4d704e176e
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102030714"
 ---
 # <a name="virtual-machine-size-flexibility-with-reserved-vm-instances"></a>Гибкость размеров виртуальных машин при использовании зарезервированных экземпляров виртуальных машин
@@ -54,7 +54,7 @@ Azure обновляет ссылку и схему, чтобы вы могли 
 
 Azure отображает рекомендации по размеру виртуальной машины в процессе приобретения. Чтобы просмотреть рекомендации минимального размера, выберите **Группировать по наименьшему размеру**.
 
-:::image type="content" source="./media/reserved-vm-instance-size-flexibility/select-product-recommended-quantity.png" alt-text="Снимок экрана, показывающий рекомендованные количества." lightbox="./media/reserved-vm-instance-size-flexibility/select-product-recommended-quantity.png" :::
+:::image type="content" source="./media/reserved-vm-instance-size-flexibility/select-product-recommended-quantity.png" alt-text="Снимок экрана: рекомендации по количеству." lightbox="./media/reserved-vm-instance-size-flexibility/select-product-recommended-quantity.png" :::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

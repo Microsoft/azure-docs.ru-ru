@@ -6,16 +6,16 @@ services: storage
 author: normesta
 ms.service: storage
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 03/16/2021
 ms.author: normesta
 ms.reviewer: santoshc
 ms.subservice: common
-ms.openlocfilehash: 13e274a0d43ba4399e039d1280aa5ada3c94afe5
-ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
+ms.openlocfilehash: 3fcc58f626622bcc728265e782906226859e1bf9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103601480"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104600468"
 ---
 # <a name="use-private-endpoints-for-azure-storage"></a>Использование частных конечных точек для службы хранилища Azure
 
@@ -53,6 +53,16 @@ ms.locfileid: "103601480"
 
 ## <a name="creating-a-private-endpoint"></a>Создание частной конечной точки
 
+Сведения о создании частной конечной точки с помощью портала Azure см. [в разделе Подключение к учетной записи хранения из учетной записи хранения в портал Azure](../../private-link/tutorial-private-endpoint-storage-portal.md).
+
+Чтобы создать частную конечную точку с помощью PowerShell или Azure CLI, см. одну из этих статей. Оба они применяют веб-приложение Azure в качестве целевой службы, но действия по созданию частной ссылки одинаковы для учетной записи хранения Azure.
+
+- [Создание частной конечной точки с помощью Azure CLI](../../private-link/create-private-endpoint-cli.md)
+
+- [Создание частной конечной точки с помощью Azure PowerShell](../../private-link/create-private-endpoint-powershell.md)
+
+
+
 При создании частной конечной точки необходимо указать учетную запись хранения и службу хранилища, к которой она подключается. 
 
 Вам потребуется отдельная частная конечная точка для каждого ресурса хранилища, к которому необходимо получить доступ, а именно [большие двоичные объекты](../blobs/storage-blobs-overview.md), [Data Lake Storage 2-го поколения](../blobs/data-lake-storage-introduction.md), [файлы](../files/storage-files-introduction.md), [очереди](../queues/storage-queues-introduction.md), [таблицы](../tables/table-storage-overview.md)или [статические веб-сайты](../blobs/storage-blob-static-website.md). В частной конечной точке эти службы хранилища определяются как **целевой вспомогательный ресурс** связанной учетной записи хранения. 
@@ -64,13 +74,6 @@ ms.locfileid: "103601480"
 > Обязательно создайте учетную запись хранения общего назначения версии 2 (Standard или Premium).
 
 Для доступа на чтение к дополнительному региону с учетной записью хранения, настроенной для геоизбыточного хранилища, требуются отдельные частные конечные точки как для основного, так и для дополнительного экземпляра службы. Для **отработки отказа** не нужно создавать закрытую конечную точку для вторичного экземпляра. Частная конечная точка будет автоматически подключаться к новому основному экземпляру после отработки отказа. Дополнительные сведения о параметрах избыточности хранилища см. в статье [избыточность хранилища Azure](storage-redundancy.md).
-
-Более подробные сведения о создании частной конечной точки для учетной записи хранения см. в следующих статьях:
-
-- [Подключайтесь к учетной записи хранения из учетной записи хранения в портал Azure](../../private-link/tutorial-private-endpoint-storage-portal.md)
-- [Создание частной конечной точки с помощью частного центра ссылок в портал Azure](../../private-link/create-private-endpoint-portal.md)
-- [Создание частной конечной точки с помощью Azure CLI](../../private-link/create-private-endpoint-cli.md)
-- [Создание частной конечной точки с помощью Azure PowerShell](../../private-link/create-private-endpoint-powershell.md)
 
 <a id="connecting-to-private-endpoints"></a>
 

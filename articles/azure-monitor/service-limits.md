@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 06/10/2019
 ms.openlocfilehash: 73598c7f5733dd65222770b80e79e2cf6ec27fbf
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102032013"
 ---
 # <a name="azure-monitor-service-limits"></a>Ограничения службы Azure Monitor
@@ -44,7 +44,7 @@ ms.locfileid: "102032013"
 
 [!INCLUDE [monitoring-limits](../../includes/azure-monitor-limits-app-insights.md)]
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Цены на Azure Monitor](https://azure.microsoft.com/pricing/details/monitor/)
 - [Использование мониторинга и ожидаемые затраты в Azure Monitor](/usage-estimated-costs.md)

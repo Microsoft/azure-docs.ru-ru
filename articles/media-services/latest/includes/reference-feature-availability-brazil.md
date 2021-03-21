@@ -4,19 +4,19 @@ ms.service: media-services
 ms.topic: include
 ms.date: 10/28/2020
 ms.author: inhenkel
-ms.openlocfilehash: 93806eb87c370266e0895e1824dce747c2be495b
-ms.sourcegitcommit: 80034a1819072f45c1772940953fef06d92fefc8
+ms.openlocfilehash: b966da89bb81f1c3790afcfabba7bca3077faada
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93242725"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104611839"
 ---
 <!--Feature availability in region-->
 ## <a name="brazil"></a>Бразилия
 
-| Функция | Brazil South | Юго-Восточная Бразилия |
+| Компонент | Brazil South | Юго-Восточная Бразилия |
 | --- | :---: | :---: |
-| [Azure EventGrid](../reacting-to-media-services-events.md) |![Общая доступность Azure EventGrid Южная Бразилия](../media/azure-clouds-regions/ga.svg)  |![Будущее Azure EventGrid Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg) |
+| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Общая доступность Azure EventGrid Южная Бразилия](../media/azure-clouds-regions/ga.svg)  |![Будущее Azure EventGrid Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg) |
 | [VideoAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Общая доступность Видеоанализерпресет Южная Бразилия](../media/azure-clouds-regions/ga.svg)  | ![Видеоанализерпресет Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg) |
 | [AudioAnalyzerPreset](../analyzing-video-audio-files-concept.md) |![Общая доступность Аудиоанализерпресет Южная Бразилия](../media/azure-clouds-regions/ga.svg)  | ![Аудиоанализерпресет Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg) |
 | [StandardEncoderPreset](../encoding-concept.md) |![Общая доступность Стандарденкодерпресет Южная Бразилия](../media/azure-clouds-regions/ga.svg)  | ![Стандарденкодерпресет Бразилия (юго-восток)](../media/azure-clouds-regions/planned-active.svg) |

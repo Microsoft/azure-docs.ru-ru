@@ -10,10 +10,10 @@ ms.subservice: language-understanding
 ms.topic: how-to
 ms.date: 12/29/2020
 ms.openlocfilehash: b297330f3562babf9e83d36934827f7b92d5ea35
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98787018"
 ---
 # <a name="batch-testing-with-a-set-of-example-utterances"></a>Пакетное тестирование с помощью набора примеров высказываний
@@ -79,7 +79,7 @@ ms.locfileid: "98787018"
 
     ![Ссылка на пакетное тестирование](./media/luis-how-to-batch-test/batch-testing-link.png)
 
-3. Выберите **Импорт**. В открывшемся диалоговом окне выберите **выбрать файл** и укажите файл JSON с правильным форматом JSON, который содержит *не более 1 000* фразы продолжительностью для тестирования.
+3. Выберите **Импортировать**. В открывшемся диалоговом окне выберите **выбрать файл** и укажите файл JSON с правильным форматом JSON, который содержит *не более 1 000* фразы продолжительностью для тестирования.
 
     Ошибки импорта выводятся в красной строке уведомлений в верхней части браузера. Если при импорте возникают ошибки, набор данных не создается. Дополнительные сведения см. в разделе об [общих ошибках](#common-errors-importing-a-batch).
 

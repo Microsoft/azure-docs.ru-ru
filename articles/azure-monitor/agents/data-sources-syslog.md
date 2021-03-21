@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 02/26/2021
 ms.openlocfilehash: e82e74f4cd325444221bbd2e1c060b7cd2f5c6c7
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102036743"
 ---
 # <a name="collect-syslog-data-sources-with-log-analytics-agent"></a>Получение источников данных системного журнала с помощью агента Log Analytics
@@ -207,7 +207,7 @@ log { source(src); filter(f_user_oms); destination(d_oms); };
 ## <a name="syslog-record-properties"></a>Свойства записей системного журнала
 Записи системного журнала имеют тип **Syslog** и свойства, описанные в приведенной ниже таблице.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | Компьютер |Компьютер, с которого было получено событие. |
 | Facility |Определяет часть системы, которая создала сообщение. |
@@ -228,7 +228,7 @@ log { source(src); filter(f_user_oms); destination(d_oms); };
 | Syslog &#124; summarize AggregatedValue = count() by Computer |Число записей системного журнала по компьютеру. |
 | Syslog &#124; summarize AggregatedValue = count() by Facility |Число записей системного журнала по устройству. |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 * Узнайте больше о [запросах журнала](../logs/log-query-overview.md), которые можно применять для анализа данных, собираемых из источников данных и решений.
 * Используйте [настраиваемые поля](../logs/custom-fields.md) для анализа данных из записей системного журнала в отдельных полях.
 * [Настройте агенты Linux](../vm/quick-collect-linux-computer.md) для сбора других типов данных.

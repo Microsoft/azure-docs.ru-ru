@@ -15,10 +15,10 @@ ms.author: kenwith
 ms.reviewer: baselden
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: db695b55fbef16cb67dce6dc2d3c81ad177c9db6
-ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103601803"
 ---
 # <a name="migrate-application-authentication-to-azure-active-directory"></a>Перенос проверки подлинности приложения в Azure Active Directory
@@ -509,7 +509,7 @@ Azure AD может предоставить преимущества этим �
 
 | **[Прокси приложения](./application-proxy.md)** | Убедитесь, что соединитель работает и назначен вашему приложению. За дополнительной помощью обратитесь к [руководству по устранению неполадок прокси приложения](./application-proxy-troubleshoot.md) . |
 
-### <a name="troubleshoot"></a>Устранение неполадок
+### <a name="troubleshoot"></a>Диагностика
 
 При возникновении проблем ознакомьтесь с [руководством по устранению неполадок приложений](../app-provisioning/isv-automatic-provisioning-multi-tenant-apps.md) , чтобы получить помощь. Вы также можете ознакомиться с нашими статьями по устранению неполадок. см. статью [проблемы при входе в настроенные приложения единого входа на основе SAML](/troubleshoot/azure/active-directory/troubleshoot-sign-in-saml-based-apps).
 

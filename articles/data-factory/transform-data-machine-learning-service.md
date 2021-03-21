@@ -7,10 +7,10 @@ ms.author: daperlov
 author: djpmsft
 ms.date: 07/16/2020
 ms.openlocfilehash: db1816baf0ebc476a132b344d8db3cdbdd170e50
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100373935"
 ---
 # <a name="execute-azure-machine-learning-pipelines-in-azure-data-factory"></a>Выполнение конвейеров Машинное обучение Azure в фабрике данных Azure

@@ -1,5 +1,5 @@
 ---
-title: Основные отличия для Службы машинного обучения (Предварительная версия)
+title: Основные отличия для Службы машинного обучения
 description: В этой статье описываются основные различия между Службы машинного обучения в Управляемый экземпляр SQL Azure и SQL Server Службы машинного обучения.
 services: sql-database
 ms.service: sql-managed-instance
@@ -11,72 +11,77 @@ author: garyericson
 ms.author: garye
 ms.reviewer: sstein, davidph
 manager: cgronlun
-ms.date: 10/26/2020
-ms.openlocfilehash: c806c0a13f9f5f13588b780054d1f285beb44802
-ms.sourcegitcommit: 4295037553d1e407edeb719a3699f0567ebf4293
+ms.date: 03/17/2021
+ms.openlocfilehash: b5ad439a8e10fa9aa44e477ca35f45d65ae40803
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96324539"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104599550"
 ---
 # <a name="key-differences-between-machine-learning-services-in-azure-sql-managed-instance-and-sql-server"></a>Основные различия между Службами машинного обучения в Управляемом экземпляре SQL Azure и SQL Server
 
-Функции [службы машинного обучения в Azure SQL управляемый экземпляр (Предварительная версия)](machine-learning-services-overview.md) практически идентичны [SQL Server службы машинного обучения](/sql/advanced-analytics/what-is-sql-server-machine-learning). Ниже приведены некоторые ключевые отличия.
-
-> [!IMPORTANT]
-> Службы машинного обучения в Azure SQL Управляемый экземпляр в настоящее время находится в общедоступной предварительной версии. Чтобы зарегистрироваться, см. статью [Регистрация для получения предварительной версии](machine-learning-services-overview.md#signup).
-
-## <a name="preview-limitations"></a>Ограничения предварительной версии
-
-На этапе предварительной версии служба имеет следующие ограничения:
-
-- Замыкание соединений не работает (см. сведения о [замыкании соединения на SQL Server из скрипта Python или R](/sql/machine-learning/connect/loopback-connection)).
-- Внешние пулы ресурсов не поддерживаются.
-- Поддерживаются только Python и R. Внешние языки, такие как Java, добавить нельзя.
-- Сценарии, использующие [интерфейс передачи сообщений](/message-passing-interface/microsoft-mpi) (MPI), не поддерживаются.
-
-В случае обновления цели уровня обслуживания обновите уровень обслуживания и создайте запрос в службу поддержки, чтобы повторно включить выделенные ограничения ресурсов для R/Python.
+В этой статье описаны некоторые из основных отличий функциональности [службы машинного обучения в управляемый экземпляр SQL Azure](machine-learning-services-overview.md) и [SQL Server службы машинного обучения](https://docs.microsoft.com/sql/advanced-analytics/what-is-sql-server-machine-learning).
 
 ## <a name="language-support"></a>Поддержка языков
 
-Службы машинного обучения в SQL Управляемый экземпляр и SQL Server поддерживают как среду расширения Python, так и [платформу расширяемости](/sql/advanced-analytics/concepts/extensibility-framework)R. Основные отличия указаны далее.
+Службы машинного обучения как в SQL Управляемый экземпляр, так и в SQL Server поддерживают [платформу расширяемости](/sql/machine-learning/concepts/extensibility-framework)Python и R. Основные отличия в SQL Управляемый экземпляр:
 
-- Начальные версии Python и R отличаются в Службы машинного обучения SQL Управляемый экземпляр и SQL Server:
+- Поддерживаются только Python и R. Внешние языки, такие как Java, добавить нельзя.
 
-  | Система               | Python | R     |
-  |----------------------|--------|-------|
-  | Управляемый экземпляр SQL | 3.7.1  | 3.5.2 |
-  | SQL Server           | 3.5.2  | 3.3.3 |
+- Первоначальные версии Python и R отличаются:
 
-- Нет необходимости настраивать `external scripts enabled` через `sp_configure`. После [регистрации](machine-learning-services-overview.md#signup) в предварительной версии машинное обучение включено для управляемый экземпляр Azure SQL.
+  | Платформа                   | Версия среды выполнения Python           | Версии среды выполнения R                   |
+  |----------------------------|----------------------------------|--------------------------------------|
+  | Управляемый экземпляр SQL Azure | 3.7.2                            | 3.5.2                                |
+  | SQL Server 2019            | 3.7.1                            | 3.5.2                                |
+  | SQL Server 2017            | 3.5.2 и 3.7.2 (CU22 и более поздние версии) | 3.3.3 и 3.5.2 (CU22 и более поздние версии)     |
+  | SQL Server 2016            | Недоступно                    | 3.2.2 и 3.5.2 (SP2 CU14 и более поздние версии) |
 
-## <a name="packages"></a>Пакеты
+## <a name="python-and-r-packages"></a>Пакеты Python и R
 
-Управление пакетами Python и R работает по-разному между SQL Управляемый экземпляр и SQL Server. в частности:
-
-- Пакеты, которые зависят от внешних сред выполнения (например, Java) или которым требуется доступ к API операционной системы для установки или использования, не поддерживаются.
-- Пакеты могут выполнять исходящие сетевые вызовы (от предыдущего в предварительной версии). Вы можете задать правильные правила безопасности для исходящего трафика на уровне [группы безопасности сети](../../virtual-network/network-security-groups-overview.md) , чтобы включить исходящие сетевые вызовы.
+В SQL Управляемый экземпляр нет поддержки для пакетов, зависящих от внешних сред выполнения (например, Java) или для установки или использования доступа к API ОС.
 
 Дополнительные сведения об управлении пакетами Python и R см. в следующих статьях:
 
-- [Получение сведений о пакете Python](/sql/machine-learning/package-management/python-package-information?context=/azure/azure-sql/managed-instance/context/ml-context&view=azuresqldb-mi-current&preserve-view=true)
-- [Получение сведений о пакете R](/sql/machine-learning/package-management/r-package-information?context=/azure/azure-sql/managed-instance/context/ml-context&view=azuresqldb-mi-current&preserve-view=true)
+- [Получение сведений о пакете Python](https://docs.microsoft.com/sql/machine-learning/package-management/python-package-information?context=/azure/azure-sql/managed-instance/context/ml-context&view=azuresqldb-mi-current&preserve-view=true)
+- [Получение сведений о пакете R](https://docs.microsoft.com/sql/machine-learning/package-management/r-package-information?context=/azure/azure-sql/managed-instance/context/ml-context&view=azuresqldb-mi-current&preserve-view=true)
 
 ## <a name="resource-governance"></a>Управление ресурсами
 
-Невозможно ограничить ресурсы R с помощью [Resource Governor](/sql/relational-databases/resource-governor/resource-governor) и внешних пулов ресурсов.
+В Управляемый экземпляр SQL невозможно ограничить ресурсы R с помощью [Resource Governor](/sql/relational-databases/resource-governor/resource-governor?view=azuresqldb-mi-current&preserve-view=true), а внешние пулы ресурсов не поддерживаются.
 
-В общедоступной предварительной версии для ресурсов R задано ограничение в 20 % от ресурсов Управляемого экземпляра SQL, которое также зависит от выбранного уровня обслуживания. Дополнительные сведения см. в статье [Модели приобретения Базы данных SQL Azure](../database/purchasing-models.md).
+По умолчанию для ресурсов R задано не более 20% доступных ресурсов SQL Управляемый экземпляр, если включена расширяемость. Чтобы изменить этот процент по умолчанию, создайте запрос в службу поддержки Azure по адресу [https://azure.microsoft.com/support/create-ticket/](https://azure.microsoft.com/support/create-ticket/) .
+
+Расширяемость включена с помощью следующих команд SQL (SQL Управляемый экземпляр будет перезапущен и будет недоступен в течение нескольких секунд):
+
+```sql
+sp_configure 'external scripts enabled', 1;
+RECONFIGURE WITH OVERRIDE;
+```
+
+Чтобы отключить расширяемость и восстановить 100% ресурсов памяти и ЦП для SQL Server, используйте следующие команды:
+
+```sql
+sp_configure 'external scripts enabled', 0;
+RECONFIGURE WITH OVERRIDE;
+```
+
+Общее количество ресурсов, доступных Управляемый экземпляр SQL, зависит от выбранного уровня служб. Дополнительные сведения см. в статье [Модели приобретения Базы данных SQL Azure](/azure/sql-database/sql-database-service-tiers).
 
 ### <a name="insufficient-memory-error"></a>Ошибка "недостаточно памяти"
 
-Если для выполнения кода R недостаточно памяти, отобразится сообщение об ошибке. Распространенные сообщения об ошибках:
+Использование памяти зависит от объема памяти, используемого скриптами R, и от количества выполняемых параллельных запросов. Если объем доступной памяти для R недостаточен, вы получите сообщение об ошибке. Распространенные сообщения об ошибках:
 
 - `Unable to communicate with the runtime for 'R' script for request id: *******. Please check the requirements of 'R' runtime`
 - `'R' script error occurred during execution of 'sp_execute_external_script' with HRESULT 0x80004004. ...an external script error occurred: "..could not allocate memory (0 Mb) in C function 'R_AllocStringBuffer'"`
 - `An external script error occurred: Error: cannot allocate vector of size.`
 
-Использование памяти зависит от объема памяти, используемого скриптами R, и от количества выполняемых параллельных запросов. Если у вас возникают приведенные выше ошибки, вы можете перенести базу данных на более высокий уровень обслуживания, чтобы решить эту проблему.
+Если вы получаете одну из этих ошибок, ее можно устранить, увеличив масштаб базы данных до более высокого уровня служб.
+
+## <a name="sql-managed-instance-pools"></a>Пулы Управляемый экземпляр SQL
+
+Службы машинного обучения в настоящее время не поддерживается в [пулах управляемый экземпляр SQL Azure (Предварительная версия)](instance-pools-overview.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

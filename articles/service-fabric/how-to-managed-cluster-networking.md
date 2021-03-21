@@ -4,10 +4,10 @@ description: Узнайте, как настроить управляемый к
 ms.topic: how-to
 ms.date: 03/02/2021
 ms.openlocfilehash: e17251523c0720665c4c6f5b7811304eebc9923e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101746991"
 ---
 # <a name="configure-network-settings-for-service-fabric-managed-clusters-preview"></a>Настройка параметров сети для управляемых кластеров Service Fabric (Предварительная версия)
@@ -28,7 +28,7 @@ Service Fabric управляемые кластеры создаются с к�
 
 При использовании классических (не управляемых) Service Fabric кластеров для [применения правил группы безопасности сети (NSG) к кластеру](https://github.com/Azure/azure-quickstart-templates/tree/master/service-fabric-secure-nsg-cluster-65-node-3-nodetype)необходимо объявить и управлять отдельным ресурсом *Microsoft. Network/networkSecurityGroups* . Service Fabric управляемые кластеры позволяют назначать правила NSG непосредственно в кластерном ресурсе шаблона развертывания.
 
-Чтобы назначить правила NSG, используйте свойство [нетворксекуритирулес](/azure/templates/microsoft.servicefabric/managedclusters#managedclusterproperties-object) ресурса *Microsoft. ServiceFabric/манажедклустерс* (версия `2021-01-01-preview` или более поздней версии). Пример.
+Чтобы назначить правила NSG, используйте свойство [нетворксекуритирулес](/azure/templates/microsoft.servicefabric/managedclusters#managedclusterproperties-object) ресурса *Microsoft. ServiceFabric/манажедклустерс* (версия `2021-01-01-preview` или более поздней версии). Пример:
 
 ```json
             "apiVersion": "2021-01-01-preview",

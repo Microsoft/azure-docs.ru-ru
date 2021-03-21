@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/04/2021
 ms.author: memildin
 ms.openlocfilehash: f382646c889d004738064cae2d09fd66d897b110
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102438273"
 ---
 # <a name="remediate-recommendations-in-azure-security-center"></a>Рекомендации по устранению проблем (Центр безопасности Azure)

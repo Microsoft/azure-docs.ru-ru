@@ -10,10 +10,10 @@ ms.date: 10/27/2020
 ms.author: olayemio
 ms.reviewer: cynthn
 ms.openlocfilehash: d80caf767d923ce2539ca254a8312371155a3104
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102553737"
 ---
 # <a name="troubleshoot-shared-image-galleries-in-azure"></a>Устранение неполадок с общими галереями образов в Azure

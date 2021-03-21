@@ -2,19 +2,19 @@
 title: Способы проверки подлинности с помощью инструкции COPY
 description: Описание способов проверки подлинности для массовой загрузки данных
 services: synapse-analytics
-author: kevinvngo
+author: gaursa
 ms.service: synapse-analytics
 ms.topic: quickstart
 ms.subservice: sql-dw
 ms.date: 07/10/2020
-ms.author: kevin
+ms.author: gaursa
 ms.reviewer: jrasnick
-ms.openlocfilehash: 1551e85bd45d4d64861b43bf53dd0c155520861f
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.openlocfilehash: 70e8f15b2b02008f24c87cfe70372fccbf0506fd
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98673643"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104600128"
 ---
 # <a name="securely-load-data-using-synapse-sql"></a>Безопасная загрузка данных с помощью Synapse SQL
 

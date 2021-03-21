@@ -8,10 +8,10 @@ ms.date: 11/10/2020
 ms.author: victorh
 ms.topic: conceptual
 ms.openlocfilehash: a92679bb3114c4a60870424f3ec68a8de7b303da
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102499923"
 ---
 # <a name="web-application-firewall-waf-with-front-door-service-exclusion-lists"></a>Брандмауэр веб-приложения (WAF) с списками исключений службы Front дверь 

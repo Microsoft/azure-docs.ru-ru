@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 15e809e1fa361f758a3df7e5b56d4fb80400f656
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103007904"
 ---
 | Платформа          | Проект включен<br/>GitHub                                                                          | Пакет                                                                               | Появляться<br/>запущен                    | Выполнение входа пользователей                                         | Доступ к веб-API                                                 | Общедоступная версия (GA) *или*<br/>Общедоступная Предварительная версия<sup>1</sup> |

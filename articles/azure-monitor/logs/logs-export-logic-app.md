@@ -7,10 +7,10 @@ author: bwren
 ms.author: bwren
 ms.date: 10/02/2020
 ms.openlocfilehash: fd66aa1f10a32d94d515a1f0aa25c25331796a8d
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102035693"
 ---
 # <a name="archive-data-from-log-analytics-workspace-to-azure-storage-using-logic-app"></a>Архивация данных из рабочей области Log Analytics в службу хранилища Azure с помощью приложения логики
@@ -42,7 +42,7 @@ SecurityEvent
 Ниже приведены предварительные требования, которые необходимо выполнить перед выполнением этой процедуры.
 
 - Рабочая область Log Analytics. Пользователь, создающий приложение логики, должен иметь по крайней мере разрешение на чтение для рабочей области. 
-- Учетная запись хранения Azure. Учетная запись хранения не обязательно должна находиться в той же подписке, что и Рабочая область Log Analytics. Пользователь, создающий приложение логики, должен иметь разрешение на запись в учетную запись хранения. 
+- , защищенной с использованием SAS. Учетная запись хранения не обязательно должна находиться в той же подписке, что и Рабочая область Log Analytics. Пользователь, создающий приложение логики, должен иметь разрешение на запись в учетную запись хранения. 
 
 
 ## <a name="connector-limits"></a>Ограничения соединителей
@@ -207,7 +207,7 @@ subtractFromTime(formatDateTime(utcNow(),'yyyy-MM-ddTHH:00:00'), 1,'Hour')
 
 [![Данные большого двоичного объекта](media/logs-export-logic-app/blob-data.png)](media/logs-export-logic-app/blob-data.png#lightbox)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Дополнительные сведения о запросах журнала в Azure Monitor см. в [этой статье](./log-query-overview.md).
 - Дополнительные сведения о [Logic Apps](../../logic-apps/index.yml)

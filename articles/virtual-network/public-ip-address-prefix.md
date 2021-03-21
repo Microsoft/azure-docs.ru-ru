@@ -16,10 +16,10 @@ ms.workload: infrastructure-services
 ms.date: 07/29/2020
 ms.author: allensu
 ms.openlocfilehash: 874cb283f0076905393aa529e4ff9e1bad3ae047
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103419683"
 ---
 # <a name="public-ip-address-prefix"></a>Префикс общедоступного IP-адреса
@@ -76,6 +76,6 @@ ms.locfileid: "103419683"
 - Префикс невозможно удалить, если какие-либо его адреса используются в качестве общедоступных IP-адресов, связанных с ресурсом. Сначала следует отменить связь всех ресурсов общедоступных IP-адресов, назначенных из этого префикса.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Создание](manage-public-ip-address-prefix.md) префикса общедоступного IP-адреса

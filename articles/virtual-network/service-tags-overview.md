@@ -13,12 +13,12 @@ ms.workload: infrastructure-services
 ms.date: 10/30/2020
 ms.author: kumud
 ms.reviewer: kumud
-ms.openlocfilehash: 18b79b105bcc4b5b0b65fc6f7d6b602ffff55561
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.openlocfilehash: 472b0d2886d9177c6507c84d5a8b6da6e99e65e5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102455828"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104597969"
 ---
 # <a name="virtual-network-service-tags"></a>Теги службы виртуальной сети
 <a name="network-service-tags"></a>
@@ -75,7 +75,7 @@ ms.locfileid: "102455828"
 | **AzureKeyVault** | Azure Key Vault.<br/><br/>*Примечание.* Этот тег зависит от тега **AzureActiveDirectory**. | Исходящие | Да | Да |
 | **AzureLoadBalancer**. | Подсистема балансировки нагрузки инфраструктуры Azure. Этот тег преобразуется в [виртуальный IP-адрес узла](./network-security-groups-overview.md#azure-platform-considerations) (168.63.129.16), из которого поступают пробы работоспособности Azure. Сюда входит только пробный трафик, а не реальный трафик к внутреннему ресурсу. Если Azure Load Balancer не используется, это правило можно переопределить. | both | Нет | Нет |
 | **AzureMachineLearning** | Машинное обучение Azure. | both | Нет | Да |
-| **AzureMonitor** | Log Analytics, Application Insights, AzMon и настраиваемые метрики (конечные точки GiG).<br/><br/>*Примечание.* Для Log Analytics этот тег зависит от тега **Storage**. | Исходящие | Нет | Да |
+| **AzureMonitor** | Log Analytics, Application Insights, AzMon и настраиваемые метрики (конечные точки GiG).<br/><br/>*Примечание.* Для Log Analytics также требуется тег **хранилища** . Если используются агенты Linux, также требуется тег **гуестандхибридманажемент** . | Исходящие | Нет | Да |
 | **AzureOpenDatasets** | Открытые наборы данных Azure.<br/><br/>*Примечание.* Этот тег зависит от тегов **AzureFrontDoor.Frontend** и **Storage**. | Исходящие | Нет | Нет |
 | **AzurePlatformDNS** | Служба DNS базовой инфраструктуры (по умолчанию).<br/><br>Этот тег можно использовать для отключения DNS по умолчанию. Это тег следует использовать с осторожностью. Ознакомьтесь с [рекомендациями по использованию платформы Azure](./network-security-groups-overview.md#azure-platform-considerations). Также рекомендуется протестировать этот тег, прежде чем использовать его. | Исходящие | Нет | Нет |
 | **AzurePlatformIMDS** | Служба метаданных экземпляров Azure (IMDS), которая является базовой службой инфраструктуры.<br/><br/>Этот тег можно использовать для отключения IMDS по умолчанию. Это тег следует использовать с осторожностью. Ознакомьтесь с [рекомендациями по использованию платформы Azure](./network-security-groups-overview.md#azure-platform-considerations). Также рекомендуется протестировать этот тег, прежде чем использовать его. | Исходящие | Нет | Нет |
