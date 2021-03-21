@@ -8,10 +8,10 @@ ms.date: 06/25/2020
 ms.topic: how-to
 ms.service: iot-central
 ms.openlocfilehash: d4c099d29a843b4c354ffb218887dc7ffab51771
-ms.sourcegitcommit: 2488894b8ece49d493399d2ed7c98d29b53a5599
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98065445"
 ---
 # <a name="export-iot-data-to-cloud-destinations-using-data-export-legacy"></a>Экспорт данных IoT в облачные назначения с помощью экспорта данных (прежние версии)
@@ -67,9 +67,9 @@ ms.locfileid: "98065445"
 
     |Уровень производительности|Тип учетной записи|
     |-|-|
-    |Standard|общего назначения v2|
-    |Standard|общего назначения v1|
-    |Standard|Хранилище BLOB-объектов|
+    |Стандартный|общего назначения v2|
+    |Стандартный|общего назначения v1|
+    |Стандартный|Хранилище BLOB-объектов|
     |Premium|Блочное хранилище BLOB-объектов|
 
 2. Создайте контейнер в учетной записи хранения. Войдите в свою учетную запись хранения. Выберите **Обзор BLOB-объектов** в разделе **Служба BLOB-объектов**. Выберите **+ Контейнер** в верхней части экрана, чтобы создать контейнер.

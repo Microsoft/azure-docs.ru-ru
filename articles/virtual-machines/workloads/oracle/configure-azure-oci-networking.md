@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 03/16/2020
 ms.author: rogardle
 ms.openlocfilehash: 09264f9f20411e7536eb4a1dbf12ac297e7e3ef9
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101675704"
 ---
 # <a name="set-up-a-direct-interconnection-between-azure-and-oracle-cloud-infrastructure"></a>Настройка прямого взаимодействия между Azure и облачной инфраструктурой Oracle  
@@ -31,7 +31,7 @@ ms.locfileid: "101675704"
 
 ![Сетевое подключение между облаками](media/configure-azure-oci-networking/azure-oci-connect.png)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Чтобы установить подключение между Azure и OCI, необходимо иметь активную подписку Azure и активную службу OCI.
 
@@ -77,13 +77,13 @@ ms.locfileid: "101675704"
 
 После завершения настройки сети можно проверить допустимость конфигурации, щелкнув ссылку **получить записи ARP** и **получить таблицу маршрутов** в колонке частного пиринга ExpressRoute в портал Azure.
 
-## <a name="automation"></a>Служба автоматизации
+## <a name="automation"></a>Автоматизация
 
 Корпорация Майкрософт создала сценарии terraform, чтобы включить автоматическое развертывание сетевого соединения. Перед выполнением скрипты terraform должны пройти проверку подлинности в Azure, так как для них требуются соответствующие разрешения в подписке Azure. Проверку подлинности можно выполнить с помощью [субъекта-службы Azure Active Directory](../../../active-directory/develop/app-objects-and-service-principals.md#service-principal-object) или с помощью Azure CLI. Дополнительные сведения см. в [документации по terraform](https://www.terraform.io/docs/providers/azurerm/auth/azure_cli.html).
 
 Сценарии terraform и связанная документация по развертыванию межподключения можно найти в этом [репозитории GitHub](https://aka.ms/azureociinterconnecttf).
 
-## <a name="monitoring"></a>Наблюдение
+## <a name="monitoring"></a>Мониторинг
 
 Установив агенты в обоих облаках, вы можете использовать Azure [Монитор производительности сети (NPM)](../../../expressroute/how-to-npm.md) для мониторинга производительности сквозной сети. NPM помогает легко выявление сетевых проблем и помогает устранить их.
 

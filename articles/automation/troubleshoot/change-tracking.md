@@ -6,10 +6,10 @@ ms.subservice: change-inventory-management
 ms.date: 02/15/2021
 ms.topic: troubleshooting
 ms.openlocfilehash: dd027f94edad580836f0afb8c7293c81ca77605a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101723832"
 ---
 # <a name="troubleshoot-change-tracking-and-inventory-issues"></a>Устранение неполадок с Отслеживанием изменений и инвентаризации

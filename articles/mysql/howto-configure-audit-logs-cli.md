@@ -8,17 +8,17 @@ ms.topic: how-to
 ms.date: 6/24/2020
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: db7ffabae785a589bacf349356079f6046039f9c
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94542003"
 ---
 # <a name="configure-and-access-audit-logs-in-the-azure-cli"></a>Настройка и доступ к журналам аудита в Azure CLI
 
 Вы можете настроить [журналы аудита базы данных Azure для MySQL](concepts-audit-logs.md) из Azure CLI.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Для пошагового руководства выполните следующие действия.
 
@@ -26,7 +26,7 @@ ms.locfileid: "94542003"
 
 [!INCLUDE [azure-cli-prepare-your-environment-no-header.md](../../includes/azure-cli-prepare-your-environment-no-header.md)]
 
-- Для работы с этой статьей требуется версия 2,0 или более поздняя Azure CLI. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
+- Для работы с этой статьей требуется Azure CLI версии 2.0 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
 ## <a name="configure-audit-logging"></a>Настройка ведения журнала аудита
 

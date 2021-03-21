@@ -13,10 +13,10 @@ ms.author: kenwith
 ms.custom: aaddev
 ms.reviewer: paulgarn
 ms.openlocfilehash: 2064ab7e759798d8934facb8d293e8ac60ec6c82
-ms.sourcegitcommit: e7152996ee917505c7aba707d214b2b520348302
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97703421"
 ---
 # <a name="single-sign-out-saml-protocol"></a>Протокол единого выхода SAML

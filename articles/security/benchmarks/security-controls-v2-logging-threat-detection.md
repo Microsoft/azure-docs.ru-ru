@@ -8,10 +8,10 @@ ms.date: 02/22/2021
 ms.author: mbaldwin
 ms.custom: security-benchmark
 ms.openlocfilehash: a274ec1aab3f530700f89ef810fa667fdf4d08e6
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102042986"
 ---
 # <a name="security-control-v2-logging-and-threat-detection"></a>Управление безопасностью v2: ведение журнала и обнаружение угроз

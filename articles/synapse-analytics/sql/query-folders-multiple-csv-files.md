@@ -10,10 +10,10 @@ ms.date: 04/15/2020
 ms.author: stefanazaric
 ms.reviewer: jrasnick
 ms.openlocfilehash: 83c4d88e1a87f6b546e26dd55da338a36f16ebe4
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96462632"
 ---
 # <a name="query-folders-and-multiple-files"></a>Запрашивание папок и нескольких файлов  
@@ -22,7 +22,7 @@ ms.locfileid: "96462632"
 
 Бессерверный пул SQL поддерживает чтение нескольких файлов и папок с помощью подстановочных знаков, которые похожи на подстановочные знаки, используемые в ОС Windows. Однако большая гибкость имеется, так как разрешено использование нескольких подстановочных знаков.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для начала **создайте базу данных**, в которой будут выполняться запросы. Затем инициализируйте объекты, выполнив [скрипт настройки](https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) для этой базы данных. Этот сценарий установки создает источники данных, учетные данные области базы данных и форматы внешних файлов, которые используются в этих примерах.
 

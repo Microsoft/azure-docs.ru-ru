@@ -7,10 +7,10 @@ ms.manager: abhemraj
 ms.topic: conceptual
 ms.date: 09/15/2020
 ms.openlocfilehash: 5a050d9aab9e8665c6048391488e57c9b4af10a5
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102043071"
 ---
 # <a name="azure-migrate-appliance-common-questions"></a>Устройство для миграции Azure: распространенные вопросы

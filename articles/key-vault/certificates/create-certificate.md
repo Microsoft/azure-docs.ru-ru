@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/07/2019
 ms.author: mbaldwin
 ms.openlocfilehash: a9545c040809331a5556b11f6cc7536931e2d421
-ms.sourcegitcommit: 7863fcea618b0342b7c91ae345aa099114205b03
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93289575"
 ---
 # <a name="certificate-creation-methods"></a>Способы создания сертификатов
@@ -82,8 +82,8 @@ ms.locfileid: "93289575"
 
 |Поставщик|Тип сертификата|Настройка конфигурации  
 |--------------|----------------------|------------------|  
-|DigiCert;|Key Vault предоставляет OV или EV SSL-сертификаты в DigiCert| [Рекомендации по интеграции](./how-to-integrate-certificate-authority.md)
-|GlobalSign;|Key Vault предоставляет OV или EV SSL-сертификаты в GlobalSign| [Рекомендации по интеграции](https://support.globalsign.com/digital-certificates/digital-certificate-installation/generating-and-importing-certificate-microsoft-azure-key-vault)
+|DigiCert;|Key Vault предоставляет OV или EV SSL-сертификаты в DigiCert| [Руководство по интеграции](./how-to-integrate-certificate-authority.md)
+|GlobalSign;|Key Vault предоставляет OV или EV SSL-сертификаты в GlobalSign| [Руководство по интеграции](https://support.globalsign.com/digital-certificates/digital-certificate-installation/generating-and-importing-certificate-microsoft-azure-key-vault)
 
  Издатель сертификата — это сущность, представленная в Azure Key Vault (KV) как ресурс CertificateIssuer. Она используется для предоставления сведений об источнике сертификата KV, имени издателя, поставщика, учетных данных и других административных сведений.
 

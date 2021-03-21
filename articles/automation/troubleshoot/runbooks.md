@@ -6,10 +6,10 @@ ms.date: 02/11/2021
 ms.topic: troubleshooting
 ms.custom: has-adal-ref
 ms.openlocfilehash: 1ff5adf3ec974cc922d73cf5993a78722ca1b591
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101723815"
 ---
 # <a name="troubleshoot-runbook-issues"></a>Устранение неполадок с последовательностями runbook

@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 11/22/2019
 ms.author: victorh
 ms.openlocfilehash: e18267d5a810826e41e05eb3dde3cd82a8eb9197
-ms.sourcegitcommit: 2488894b8ece49d493399d2ed7c98d29b53a5599
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98065326"
 ---
 # <a name="back-end-health-and-diagnostic-logs-for-application-gateway"></a>Журналы работоспособности и диагностики серверной части для шлюза приложений

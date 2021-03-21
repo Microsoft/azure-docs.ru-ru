@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 06/09/2020
 ms.author: victorh
 ms.openlocfilehash: 47891dfa7fc0c9b30ccdbf2ed7710125eb36e4a3
-ms.sourcegitcommit: 0ce1ccdb34ad60321a647c691b0cff3b9d7a39c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93397813"
 ---
 # <a name="configure-end-to-end-tls-by-using-application-gateway-with-powershell"></a>Настройка сквозного подключения TLS для Шлюза приложений с помощью PowerShell
@@ -20,7 +20,7 @@ ms.locfileid: "93397813"
 
 Шлюз приложений Azure поддерживает сквозное шифрование трафика. Для этого он завершает TLS/SSL-подключение в шлюзе приложений. Затем шлюз применяет правила маршрутизации к трафику, повторно шифрует пакет и пересылает его в соответствующую серверную часть согласно определенным правилам маршрутизации. Любой ответ веб-сервера проходит через тот же процесс на пути к пользователю.
 
-Шлюз приложений поддерживает определение пользовательских вариантов TLS. Он также поддерживает отключение следующих версий протокола: **TLSv1.0** , **TLSv1.1** и **TLSv1.2**. Кроме того, шлюз поддерживает определение комплектов шифров для использования и их приоритет. Дополнительные сведения о настраиваемых параметрах TLS см. в статье [Общие сведения о политике TLS шлюза приложений](application-gateway-SSL-policy-overview.md).
+Шлюз приложений поддерживает определение пользовательских вариантов TLS. Он также поддерживает отключение следующих версий протокола: **TLSv1.0**, **TLSv1.1** и **TLSv1.2**. Кроме того, шлюз поддерживает определение комплектов шифров для использования и их приоритет. Дополнительные сведения о настраиваемых параметрах TLS см. в статье [Общие сведения о политике TLS шлюза приложений](application-gateway-SSL-policy-overview.md).
 
 > [!NOTE]
 > Протоколы SSL 2.0 и SSL 3.0 отключены по умолчанию, и их нельзя включать. Они считаются небезопасными и не могут использоваться со шлюзом приложений.
@@ -33,9 +33,9 @@ ms.locfileid: "93397813"
 
 Вы узнаете:
 
-* как создать группу ресурсов с именем **appgw-rg** ;
-* как создать виртуальную сеть **appgwvnet** с адресным пространством **10.0.0.0/16** ;
-* как создать две подсети, **appgwsubnet** и **appsubnet** ;
+* как создать группу ресурсов с именем **appgw-rg**;
+* как создать виртуальную сеть **appgwvnet** с адресным пространством **10.0.0.0/16**;
+* как создать две подсети, **appgwsubnet** и **appsubnet**;
 * как создать небольшой шлюз приложений с поддержкой сквозного шифрования TLS, который ограничивает версии протокола TLS и наборы шифров.
 
 ## <a name="before-you-begin"></a>Перед началом
@@ -202,7 +202,7 @@ $publicip = New-AzPublicIpAddress -ResourceGroupName appgw-rg -Name 'publicIP01'
    $rule = New-AzApplicationGatewayRequestRoutingRule -Name 'rule01' -RuleType basic -BackendHttpSettings $poolSetting -HttpListener $listener -BackendAddressPool $pool
    ```
 
-10. Настройте размер экземпляра шлюза приложений. Доступные размеры: **Standard\_Small** , **Standard\_Medium** и **Standard\_Large**.  Доступны значения емкости: от  **1** до  **10**.
+10. Настройте размер экземпляра шлюза приложений. Доступные размеры: **Standard\_Small**, **Standard\_Medium** и **Standard\_Large**.  Доступны значения емкости: от **1** до **10**.
 
     ```powershell
     $sku = New-AzApplicationGatewaySku -Name Standard_Small -Tier Standard -Capacity 2
@@ -215,11 +215,11 @@ $publicip = New-AzPublicIpAddress -ResourceGroupName appgw-rg -Name 'publicIP01'
 
     Ниже приведен список значений для версий протокола, которые можно определить:
 
-    - **TLSv1_0** ;
-    - **TLSv1_1** ;
+    - **TLSv1_0**;
+    - **TLSv1_1**;
     - **TLSv1_2**.
     
-    В следующем примере показано, как задать **TLSv1_2** в качестве минимальной версии протокола и разрешить только шифры **TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_GCM\_SHA256** , **TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384** и **TLS\_RSA\_WITH\_AES\_128\_GCM\_SHA256**.
+    В следующем примере показано, как задать **TLSv1_2** в качестве минимальной версии протокола и разрешить только шифры **TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_GCM\_SHA256**, **TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384** и **TLS\_RSA\_WITH\_AES\_128\_GCM\_SHA256**.
 
     ```powershell
     $SSLPolicy = New-AzApplicationGatewaySSLPolicy -MinProtocolVersion TLSv1_2 -CipherSuite "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256", "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384", "TLS_RSA_WITH_AES_128_GCM_SHA256" -PolicyType Custom
@@ -312,7 +312,7 @@ $appgw = New-AzApplicationGateway -Name appgateway -SSLCertificates $cert -Resou
    $gw = Get-AzApplicationGateway -Name AdatumAppGateway -ResourceGroupName AdatumAppGatewayRG
    ```
 
-2. Определите политику TLS. Ниже представлен пример отключения версий **TLSv1.0** и **TLSv1.1** и разрешения только комплектов шифров **TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_GCM\_SHA256** , **TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384** , и **TLS\_RSA\_WITH\_AES\_128\_GCM\_SHA256**.
+2. Определите политику TLS. Ниже представлен пример отключения версий **TLSv1.0** и **TLSv1.1** и разрешения только комплектов шифров **TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_GCM\_SHA256**, **TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384**, и **TLS\_RSA\_WITH\_AES\_128\_GCM\_SHA256**.
 
    ```powershell
    Set-AzApplicationGatewaySSLPolicy -MinProtocolVersion TLSv1_2 -PolicyType Custom -CipherSuite "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256", "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384", "TLS_RSA_WITH_AES_128_GCM_SHA256" -ApplicationGateway $gw
@@ -329,7 +329,7 @@ $appgw = New-AzApplicationGateway -Name appgateway -SSLCertificates $cert -Resou
 
 После создания шлюза следует настроить внешний интерфейс для обмена данными. Если вы используете общедоступный IP-адрес, шлюзу приложений требуется динамически назначаемое непонятное имя DNS. Чтобы пользователи гарантированно попали на шлюз приложений, можно использовать запись CNAME для указания общедоступной конечной точки шлюза приложений. Дополнительные сведения см. в статье [Настройка пользовательского доменного имени для облачной службы Azure](../cloud-services/cloud-services-custom-domain-name-portal.md). 
 
-Чтобы настроить псевдоним, извлеките подробные сведения о шлюзе приложений и соответствующий IP-адрес или DNS-имя с помощью элемента **PublicIPAddress** , связанного со шлюзом приложений. Используйте DNS-имя шлюза приложений для создания записи CNAME, указывающей двум веб-приложениям на это DNS-имя. Мы не рекомендуем использовать записи типа A, так как виртуальный IP-адрес может измениться после перезапуска шлюза приложения.
+Чтобы настроить псевдоним, извлеките подробные сведения о шлюзе приложений и соответствующий IP-адрес или DNS-имя с помощью элемента **PublicIPAddress**, связанного со шлюзом приложений. Используйте DNS-имя шлюза приложений для создания записи CNAME, указывающей двум веб-приложениям на это DNS-имя. Мы не рекомендуем использовать записи типа A, так как виртуальный IP-адрес может измениться после перезапуска шлюза приложения.
 
 ```powershell
 Get-AzPublicIpAddress -ResourceGroupName appgw-RG -Name publicIP01

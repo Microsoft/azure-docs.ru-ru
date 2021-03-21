@@ -6,17 +6,17 @@ ms.topic: how-to
 ms.custom: H1Hack27Feb2017,hdinsightactive
 ms.date: 02/14/2020
 ms.openlocfilehash: b6695e5e985a30d6f912095225c4899e1c910e34
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98945949"
 ---
 # <a name="add-custom-apache-hive-libraries-when-creating-your-hdinsight-cluster"></a>Добавление пользовательских библиотек Apache Hive при создании кластера HDInsight
 
 Узнайте, как предварительно загрузить библиотеки [Apache Hive](https://hive.apache.org/) в HDInsight. Этот документ содержит сведения об использовании действия скрипта по предварительной загрузке библиотек во время создания кластера. Библиотеки, добавленные с помощью действий, описанных в этом документе, глобально доступны в Hive — нет необходимости использовать [Добавление JAR](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Cli) -файла для их загрузки.
 
-## <a name="how-it-works"></a>Принципы работы
+## <a name="how-it-works"></a>Принцип работы
 
 При создании кластера можно использовать действие скрипта для изменения узлов кластера по мере их создания. Скрипт в этом документе принимает один параметр, определяющий расположение библиотек. Это расположение должно быть в пределах учетной записи хранилища Azure, а библиотеки должны быть в формате JAR.
 
@@ -30,7 +30,7 @@ ms.locfileid: "98945949"
 
 [https://hdiconfigactions.blob.core.windows.net/setupcustomhivelibsv01/setup-customhivelibs-v01.ps1](https://hdiconfigactions.blob.core.windows.net/setupcustomhivelibsv01/setup-customhivelibs-v01.ps1)
 
-### <a name="requirements"></a>Requirements (Требования)
+### <a name="requirements"></a>Требования
 
 * Скрипты необходимо применять к **головным узлам** и **рабочим узлам**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "98945949"
 
 1. Для **действий сценария** укажите следующие сведения.
 
-    |Свойство |Значение |
+    |Свойство. |Значение |
     |---|---|
     |Тип скрипта|- Custom|
     |Имя|Библиотеки |

@@ -12,10 +12,10 @@ author: slbird
 ms.reviewer: luquinta
 ms.date: 01/21/2020
 ms.openlocfilehash: 62a002569696da4ef18e7bd967f027eb8247ef65
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98681410"
 ---
 # <a name="use-differential-privacy-in-azure-machine-learning-preview"></a>Использование разностной конфиденциальности в Машинное обучение Azure (Предварительная версия)

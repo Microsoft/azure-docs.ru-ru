@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 11/20/2020
 ms.openlocfilehash: b9a207ffa14a18a5f4421fd21cebed28290b5ea6
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102183086"
 ---
 # <a name="asset-insights-on-your-data-in-azure-purview"></a>Основные сведения о данных в Azure зрения
@@ -25,7 +25,7 @@ ms.locfileid: "102183086"
 > * Получите представление о данных с высоты птичьего полета.
 > * Выполните детализацию для получения дополнительных сведений о количестве ресурсов.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к работе с зрения Insights, убедитесь, что выполнены следующие действия.
 

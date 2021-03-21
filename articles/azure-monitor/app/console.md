@@ -6,10 +6,10 @@ ms.date: 05/21/2020
 ms.custom: devx-track-csharp
 ms.reviewer: lmolkova
 ms.openlocfilehash: aa39a1eca04621fc4db75f755402d3679403e814
-ms.sourcegitcommit: fec60094b829270387c104cc6c21257826fccc54
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96920605"
 ---
 # <a name="application-insights-for-net-console-applications"></a>Application Insights для консольных приложений .NET
@@ -19,7 +19,7 @@ ms.locfileid: "96920605"
 Вам потребуется подписка [Microsoft Azure](https://azure.com). Войдите с помощью учетной записи Майкрософт, которую вы, возможно, уже используете для Windows, XBox Live или других облачных служб Майкрософт. Возможно, у вашей группы есть подписка организации Azure: попросите ее владельца добавить вас к ней с помощью вашей учетной записи Майкрософт.
 
 > [!NOTE]
-> Для любых консольных приложений *настоятельно рекомендуется* использовать пакет [Microsoft. ApplicationInsights. воркерсервице](https://www.nuget.org/packages/Microsoft.ApplicationInsights.WorkerService) и [связанные с ним](./worker-service.md) инструкции. Этот пакет предназначен [`NetStandard2.0`](/dotnet/standard/net-standard) для использования и поэтому может использоваться в .NET Core 2,1 или более поздней версии, а также .NET Framework 4.7.2 или более поздней версии.
+> Для любых консольных приложений *настоятельно рекомендуется* использовать пакет [Microsoft. ApplicationInsights. воркерсервице](https://www.nuget.org/packages/Microsoft.ApplicationInsights.WorkerService) и [связанные с ним](./worker-service.md) инструкции. Этот пакет предназначен [`NetStandard2.0`](/dotnet/standard/net-standard) для использования и поэтому может использоваться в .NET Core 2,1 или более поздней версии, а также платформа .NET Framework 4.7.2 или более поздней версии.
 
 ## <a name="getting-started"></a>Начало работы
 

@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.date: 02/18/2021
 ms.author: qixwang
 ms.openlocfilehash: ee8f19aca62d2e331fcf59551d47c2dac93783b1
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101099371"
 ---
 # <a name="using-azure-front-door-standardpremium-with-cross-origin-resource-sharing-cors"></a>Использование передней дверцы Azure уровня "Стандартный" или "Премиум" с общим доступом к ресурсам между источниками (CORS)
 
 > [!Note]
-> Эта документация предназначена для передней дверцы Azure уровня "Стандартный" или "Премиум" (Предварительная версия). Ищете информацию о передней дверце Azure? Просмотреть [здесь](../front-door-overview.md).
+> Эта документация предназначена для Azure Front Door категории "Стандартный" или "Премиум" (предварительная версия). Сведения об Azure Front Door см. [здесь](../front-door-overview.md).
 
 ## <a name="what-is-cors"></a>Что такое CORS?
 

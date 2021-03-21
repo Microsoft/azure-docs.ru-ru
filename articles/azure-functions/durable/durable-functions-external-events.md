@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 07/13/2020
 ms.author: azfuncdf
 ms.openlocfilehash: c08306edcea02a9207ab5a15eb62b7fffc2ecb44
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99576335"
 ---
 # <a name="handling-external-events-in-durable-functions-azure-functions"></a>Обработка внешних событий в устойчивых функциях (Функции Azure)
@@ -298,7 +298,7 @@ Content-Type: application/json
 
 В этом случае идентификатор экземпляра жестко закодирован как *минстанцеид*.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Узнайте, как реализовать обработку ошибок](durable-functions-error-handling.md)

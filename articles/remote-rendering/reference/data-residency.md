@@ -6,10 +6,10 @@ ms.author: rapete
 ms.date: 02/04/2021
 ms.topic: reference
 ms.openlocfilehash: f20b3bb3de877ac627f5f6909c98cb9e1553f2a9
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99576898"
 ---
 # <a name="azure-remote-rendering-data-residency"></a>Местонахождение данных удаленной подготовки Azure 
@@ -18,5 +18,5 @@ ms.locfileid: "99576898"
 ## <a name="data-residency"></a>Местонахождение данных 
 Удаленная подготовка Azure использует предоставленные пользователем контейнеры больших двоичных объектов Azure для хранилища моделей. Если модель не используется, она остается в предоставленном пользователем регионе хранилища BLOB-объектов Azure. При использовании модели для отрисовки данные копируются в область, которую пользователь выбирает при запуске сеанса подготовки к просмотру.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Если вы хотите узнать, как настроить контейнер хранилища BLOB-объектов Azure для удаленной подготовки к просмотру, изучите [Преобразование модели для подготовки к просмотру](../quickstarts/convert-model.md).

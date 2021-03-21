@@ -13,10 +13,10 @@ ms.author: jovanpop
 ms.reviewer: sstein
 ms.date: 04/16/2019
 ms.openlocfilehash: b7f2f060f32cf3bf92660a2e8b75a45b7ec76b82
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92779770"
 ---
 # <a name="azure-sql-managed-instance-content-reference"></a>Справочник по содержимому Управляемый экземпляр Azure SQL
@@ -81,11 +81,11 @@ ms.locfileid: "92779770"
 
 ## <a name="operations"></a>Операции
 
-- [Ручная отработка отказа, инициированная пользователем в SQL Управляемый экземпляр](user-initiated-failover.md)
+- [Инициированный пользователем переход на другой ресурс вручную на Управляемом экземпляре SQL](user-initiated-failover.md)
 
 ## <a name="develop-applications"></a>Разработка приложений
 
-- [Подключение](../database/connect-query-content-reference-guide.md#libraries)
+- [Соединение](../database/connect-query-content-reference-guide.md#libraries)
 - [Использование соединителя Spark](../../cosmos-db/spark-connector.md)
 - [Проверка подлинности приложения](../database/application-authentication-get-client-id-keys.md)
 - [Использование пакетной обработки для лучшей производительности](../performance-improve-use-batching.md)

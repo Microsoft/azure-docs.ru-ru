@@ -10,10 +10,10 @@ ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
 ms.openlocfilehash: 651811384a8e831c41c48ca8c4849e5ee3852054
-ms.sourcegitcommit: 58f12c358a1358aa363ec1792f97dae4ac96cc4b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93280469"
 ---
 # <a name="create-sql-managed-instance---azure-arc-using-azure-data-studio"></a>Создание управляемого экземпляра SQL в службе "Дуга Azure" с помощью Azure Data Studio
@@ -100,6 +100,6 @@ sqlinstance1  1/1         25.51.65.109:1433  Ready
 
 
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь попробуйте [отслеживать ваш экземпляр SQL](monitor-grafana-kibana.md)

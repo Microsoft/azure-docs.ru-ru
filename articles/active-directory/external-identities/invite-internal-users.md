@@ -11,10 +11,10 @@ author: msmimart
 manager: celestedg
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 802307a21873d15242c2e387ec0defe35f50bb20
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99576436"
 ---
 # <a name="invite-internal-users-to-b2b-collaboration"></a>Пригласите внутренних пользователей в службу совместной работы B2B
@@ -90,6 +90,6 @@ ContentType: application/json
 ```
 
 Ответ на API — это тот же ответ, который вы получаете при приглашении нового гостевого пользователя в каталог.
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Активация приглашения службы совместной работы B2B](redemption-experience.md)

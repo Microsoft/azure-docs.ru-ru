@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 09/17/2020
 ms.openlocfilehash: d54c005ffb17571be172b5716723febb742253a3
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98945395"
 ---
 # <a name="create-a-cluster-with-data-lake-storage-gen2-using-the-azure-portal"></a>Создание кластера с Data Lake Storage 2-го поколения помощью портал Azure
@@ -52,7 +52,7 @@ ms.locfileid: "98945395"
     1. Введите имя учетной записи хранения с помощью Data Lake Storage 2-го поколения.
     1. Перейдите на вкладку **Дополнительно** .
     1. Щелкните **включено** рядом с **иерархическим пространством имен** в разделе **Data Lake Storage 2-го поколения**.
-    1. Щелкните **Review + create** (Просмотреть и создать).
+    1. Щелкните **Просмотреть и создать**.
     1. Нажмите кнопку **Создать**.
 
 Дополнительные сведения о других параметрах во время создания учетной записи хранения см. в разделе [Краткое руководство. Создание учетной записи хранения для Azure Data Lake Storage 2-го поколения](../storage/blobs/create-data-lake-storage-account.md).

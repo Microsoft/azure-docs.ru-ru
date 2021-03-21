@@ -5,10 +5,10 @@ ms.service: data-lake-analytics
 ms.topic: how-to
 ms.date: 01/29/2018
 ms.openlocfilehash: 19b471d85a52fe38b72ad55847d022fb56b3c4f0
-ms.sourcegitcommit: 8d8deb9a406165de5050522681b782fb2917762d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92220930"
 ---
 # <a name="manage-azure-data-lake-analytics-using-the-azure-command-line-interface-cli"></a>Управление Azure Data Lake Analytics с помощью интерфейса командной строки (CLI) Azure
@@ -17,7 +17,7 @@ ms.locfileid: "92220930"
 
 Узнайте, как управлять учетными записями, источниками данных, пользователями и заданиями Azure Data Lake Analytics с помощью Azure CLI. Для просмотра статей, посвященных управлению с помощью других инструментов, щелкните селектор вкладок выше.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для работы с этим руководством вам потребуются следующие ресурсы:
 

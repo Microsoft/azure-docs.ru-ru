@@ -5,10 +5,10 @@ ms.service: data-lake-analytics
 ms.topic: how-to
 ms.date: 02/12/2018
 ms.openlocfilehash: cd339729f2300ff7e13e7422bf73373b4ce4658e
-ms.sourcegitcommit: 8d8deb9a406165de5050522681b782fb2917762d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92221015"
 ---
 # <a name="accessing-diagnostic-logs-for-azure-data-lake-analytics"></a>Доступ к журналам диагностики для Azure Data Lake Analytics
@@ -125,7 +125,7 @@ ms.locfileid: "92221015"
 
 #### <a name="request-log-schema"></a>Схема журнала запросов
 
-| Имя | Тип | Описание |
+| Имя | Type | Описание |
 | --- | --- | --- |
 | time |Строка |Метка времени журнала (в формате UTC). |
 | resourceId |Строка |Идентификатор ресурса, с которым была выполнена операция |
@@ -139,7 +139,7 @@ ms.locfileid: "92221015"
 
 #### <a name="request-log-properties-schema"></a>Схема свойств журнала запросов
 
-| Имя | Тип | Описание |
+| Имя | Type | Описание |
 | --- | --- | --- |
 | HttpMethod |Строка |Метод HTTP, использованный для операции. Например, GET. |
 | Путь |Строка |Путь выполнения операции. |
@@ -175,7 +175,7 @@ ms.locfileid: "92221015"
 
 #### <a name="audit-log-schema"></a>Схема журнала аудита
 
-| Имя | Тип | Описание |
+| Имя | Type | Описание |
 | --- | --- | --- |
 | time |Строка |Метка времени журнала (в формате UTC). |
 | resourceId |Строка |Идентификатор ресурса, с которым была выполнена операция |
@@ -193,7 +193,7 @@ ms.locfileid: "92221015"
 
 #### <a name="audit-log-properties-schema"></a>Схема свойств журнала аудита
 
-| Имя | Тип | Описание |
+| Имя | Type | Описание |
 | --- | --- | --- |
 | JobId |Строка |Идентификатор, присвоенный заданию. |
 | JobName |Строка |Имя, указанное для задания. |

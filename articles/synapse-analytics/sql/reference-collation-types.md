@@ -9,10 +9,10 @@ ms.date: 04/15/2020
 ms.author: fipopovi
 ms.reviewer: jrasnick
 ms.openlocfilehash: 436dbac814197556385a33d956928f97fd4716bf
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93311914"
 ---
 # <a name="database-collation-support-for-synapse-sql-in-azure-synapse-analytics"></a>Поддержка параметров сортировки базы данных для синапсе SQL в Azure синапсе Analytics 
@@ -113,9 +113,9 @@ SELECT DATABASEPROPERTYEX(DB_NAME(), 'Collation') AS Collation;
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения о рекомендациях по выделенному пулу SQL и бессерверному пулу SQL можно найти в следующих статьях:
+Рекомендации по работе с выделенным и бессерверным пулами SQL см. в следующих статьях:
 
-- [Рекомендации по выделенному пулу SQL](best-practices-sql-pool.md)
-- [Рекомендации по использованию несерверного пула SQL](best-practices-sql-on-demand.md)
+- [Рекомендации по использованию выделенного пула SQL](best-practices-sql-pool.md)
+- [Рекомендации по использованию бессерверного пула SQL](best-practices-sql-on-demand.md)
 
 

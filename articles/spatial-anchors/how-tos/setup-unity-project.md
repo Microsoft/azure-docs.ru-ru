@@ -9,10 +9,10 @@ ms.date: 2/3/2021
 ms.topic: how-to
 ms.service: azure-spatial-anchors
 ms.openlocfilehash: 56532c17c91e6c703a6acd7990bbae47cd248165
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99576571"
 ---
 # <a name="configuring-azure-spatial-anchors-in-a-unity-project"></a>Настройка пространственных привязок Azure в проекте Unity
@@ -50,7 +50,7 @@ ms.locfileid: "99576571"
 
 [!code-gradle[AzureSpatialAnchorsScript](../../../includes/spatial-anchors-unity-android-gradle-setup.md?range=9-13&highlight=3-4)]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Как создавать и размещать привязки в Unity](./create-locate-anchors-unity.md)

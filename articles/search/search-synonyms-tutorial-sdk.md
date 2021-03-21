@@ -1,5 +1,5 @@
 ---
-title: Примеры синонимов на C#
+title: Пример синонимов в C#
 titleSuffix: Azure Cognitive Search
 description: В этом примере на C# вы узнаете, как добавить функцию синонимов в индекс в Когнитивный поиск Azure. Карта синонимов — это список эквивалентных терминов. Поля с поддержкой синонимов расширяют запросы, позволяя включать в них указанный пользователем термин и все его синонимы.
 manager: nitinme
@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/18/2020
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 50d5d73e71b8129f061ec49b363a0ebb13d22bdf
-ms.sourcegitcommit: e7152996ee917505c7aba707d214b2b520348302
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97704662"
 ---
 # <a name="example-add-synonyms-for-azure-cognitive-search-in-c"></a>Пример. Добавление синонимов для Когнитивный поиск Azure в C #
@@ -35,7 +35,7 @@ ms.locfileid: "97704662"
 > [!NOTE]
 > Синонимы можно создавать программно, но не на портале.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Ниже приведены предварительные требования, описанные в этом руководстве.
 
@@ -45,7 +45,7 @@ ms.locfileid: "97704662"
 
 Если вы не знакомы с клиентской библиотекой .NET, см. статью [использование когнитивный Поиск Azure в .NET](search-howto-dotnet-sdk.md).
 
-## <a name="sample-code"></a>Образец кода
+## <a name="sample-code"></a>Пример кода
 
 Полный исходный код примера приложения, используемого в этом примере, можно найти на сайте [GitHub](https://github.com/Azure-Samples/search-dotnet-getting-started/tree/master/DotNetHowToSynonyms).
 

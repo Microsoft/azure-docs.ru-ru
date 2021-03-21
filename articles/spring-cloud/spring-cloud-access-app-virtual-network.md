@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 11/11/2020
 ms.custom: devx-track-java
 ms.openlocfilehash: 37c8b4bc186c217ecb27638f5f50297102345de7
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99576537"
 ---
 # <a name="access-your-application-in-a-private-network"></a>Доступ к приложению в частной сети
@@ -24,7 +24,7 @@ ms.locfileid: "99576537"
 
 Следующая процедура создает частную зону DNS для приложения в частной сети.
 
-1. Откройте портал Azure. В верхнем поле поиска найдите **зоны частная зона DNS** и выберите **Частная зона DNS зоны** из результата.
+1. Перейдите на портал Azure. В верхнем поле поиска найдите **зоны частная зона DNS** и выберите **Частная зона DNS зоны** из результата.
 
 2. На странице **Частная зона DNS зоны** выберите **+ Добавить**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "99576537"
 
     ![Добавление виртуальной сети](media/spring-cloud-access-app-vnet/add-virtual-network-link.png)
 
-6. Нажмите кнопку **ОК**.
+6. Нажмите кнопку **OK**.
 
 ## <a name="create-dns-record"></a>Создание записи DNS
 
@@ -88,8 +88,8 @@ $SERVICE_RUNTIME_RG --query "[0].privateIpAddress" -o tsv`
     |Параметр     |Значение                                                                      |
     |------------|---------------------------------------------------------------------------|
     |Имя        |Введите *\** .                                                                 |
-    |Тип        |Выберите                                                                |
-    |СРОК ЖИЗНИ         |Введите *1*                                                                  |
+    |Type        |Выберите                                                                |
+    |Срок жизни         |Введите *1*                                                                  |
     |Единица срока жизни    |Выбор **часов**                                                           |
     |IP-адрес  |Введите IP-адрес, скопированный на шаге 3. В примере введите *10.1.0.7*.    |
 
@@ -117,7 +117,7 @@ $SERVICE_RUNTIME_RG --query "[0].privateIpAddress" -o tsv`
 
 ![Доступ к частной конечной точке в виртуальной сети](media/spring-cloud-access-app-vnet/access-private-endpoint.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Предоставление приложениям доступа к Интернету с помощью шлюза приложений и брандмауэра Azure](spring-cloud-expose-apps-gateway-azure-firewall.md)
 

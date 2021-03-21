@@ -4,10 +4,10 @@ description: Описывает функции, используемые в ша
 ms.topic: conceptual
 ms.date: 11/18/2020
 ms.openlocfilehash: 5e13177db1a7cf2f19a822363cb3884474566add
-ms.sourcegitcommit: fec60094b829270387c104cc6c21257826fccc54
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96920467"
 ---
 # <a name="object-functions-for-arm-templates"></a>Функции объектов для шаблонов ARM
@@ -25,7 +25,7 @@ ms.locfileid: "96920467"
 
 [!INCLUDE [Bicep preview](../../../includes/resource-manager-bicep-preview.md)]
 
-## <a name="contains"></a>contains
+## <a name="contains"></a>содержит
 
 `contains(container, itemToFind)`
 
@@ -33,7 +33,7 @@ ms.locfileid: "96920467"
 
 ### <a name="parameters"></a>Параметры
 
-| Параметр | Обязательно | Тип | Описание: |
+| Параметр | Обязательно | Тип | Описание |
 |:--- |:--- |:--- |:--- |
 | контейнер |Да |массив, объект или строка |Значение, содержащее значение, которое необходимо найти. |
 | itemToFind |Да |строка или целое число |Значение, которое необходимо найти. |
@@ -145,7 +145,7 @@ output arrayFalse bool = contains(arrayToTest, 'four')
 
 ### <a name="parameters"></a>Параметры
 
-| Параметр | Обязательно | Тип | Описание: |
+| Параметр | Обязательно | Тип | Описание |
 |:--- |:--- |:--- |:--- |
 | key1 |Нет |строка |Имя ключа. |
 | value1 |Нет |int, Boolean, строка, объект или массив |Значение для ключа. |
@@ -219,7 +219,7 @@ output newObject object = {
 
 ### <a name="parameters"></a>Параметры
 
-| Параметр | Обязательно | Тип | Описание: |
+| Параметр | Обязательно | Тип | Описание |
 |:--- |:--- |:--- |:--- |
 | itemToTest |Да |массив, объект или строка |Значение, которое необходимо проверить, если оно пустое. |
 
@@ -395,7 +395,7 @@ output arrayOutput array = intersection(firstArray, secondArray)
 | Имя | Type | Значение |
 | ---- | ---- | ----- |
 | objectOutput | Объект | {"one": "a", "three": "c"} |
-| arrayOutput | Массив | ["two", "three"] |
+| arrayOutput | Array | ["two", "three"] |
 
 <a id="json"></a>
 
@@ -524,10 +524,10 @@ output concatObjectOutput object = json(concat('{"a": "', concatValue, '"}'))
 | ---- | ---- | ----- |
 | емптйобжектаутпут | Логическое значение | True |
 | objectOutput | Объект | {"a": "b"} |
-| stringOutput | Строка | Тестировать |
+| stringOutput | Строка | номер |
 | булеанаутпут | Логическое значение | True |
 | intOutput | Целое число | 3 |
-| arrayOutput | Массив | [1, 2, 3] |
+| arrayOutput | Array | [1, 2, 3] |
 | конкатобжектаутпут | Объект | {"a": "демонстрационное значение"} |
 
 ## <a name="length"></a>length
@@ -628,7 +628,7 @@ output objectLength int = length(objectToTest)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayLength | Int | 3 |
 | stringLength | Int | 13 |
@@ -678,7 +678,7 @@ output emptyOutput bool = empty(null)
 
 Выходные данные из предыдущего примера:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | emptyOutput | Bool | True |
 
@@ -785,10 +785,10 @@ output arrayOutput array = union(firstArray, secondArray)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | objectOutput | Объект | {"one": "a", "two": "b", "three": "c2", "four": "d", "five": "e"} |
-| arrayOutput | Массив | ["one", "two", "three", "four"] |
+| arrayOutput | Array | ["one", "two", "three", "four"] |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

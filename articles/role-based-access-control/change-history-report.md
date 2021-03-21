@@ -11,10 +11,10 @@ ms.date: 03/01/2021
 ms.author: rolyon
 ms.custom: H1Hack27Feb2017, devx-track-azurecli
 ms.openlocfilehash: d9b39bc9a2f00fe83cae0ff78c6346042967e8bf
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102042145"
 ---
 # <a name="view-activity-logs-for-azure-rbac-changes"></a>Просмотр журналов действий для изменений Azure RBAC
@@ -55,7 +55,7 @@ ms.locfileid: "102042145"
 Выходные данные журнала на вкладке JSON, Azure PowerShell или Azure CLI могут содержать много информации. Ниже приведены некоторые ключевые свойства, которые следует искать при попытке интерпретации записи журнала. Способы фильтрации выходных данных журнала с помощью Azure PowerShell или Azure CLI см. в следующих разделах.
 
 > [!div class="mx-tableFixed"]
-> | Свойство | Примеры значений | Описание |
+> | Свойство. | Примеры значений | Описание |
 > | --- | --- | --- |
 > | Авторизация: действие | Microsoft.Authorization/roleAssignments/write. | Создание назначения роли |
 > |  | Microsoft.Authorization/roleAssignments/delete | Удаление назначения роли |

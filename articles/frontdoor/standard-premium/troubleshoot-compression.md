@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.date: 02/18/2020
 ms.author: qixwang
 ms.openlocfilehash: c912ebde5499ec2f9f68e5f5762af60823faefe1
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101100230"
 ---
 # <a name="troubleshooting-azure-front-door-standardpremium-file-compression"></a>Устранение неполадок сжатия файлов уровня "Стандартный" и "Премиум" передней дверцы Azure
 
 > [!Note]
-> Эта документация предназначена для передней дверцы Azure уровня "Стандартный" или "Премиум" (Предварительная версия). Ищете информацию о передней дверце Azure? Просмотреть [здесь](../front-door-overview.md).
+> Эта документация предназначена для Azure Front Door категории "Стандартный" или "Премиум" (предварительная версия). Сведения об Azure Front Door см. [здесь](../front-door-overview.md).
 
 Эта статья поможет вам устранить неполадки, связанные с сжатием файлов на передней дверце Azure.
 

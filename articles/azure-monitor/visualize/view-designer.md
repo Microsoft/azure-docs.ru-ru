@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 08/04/2020
 ms.openlocfilehash: cb0274260022c55ae657b5b28b2c9ad1903d0296
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102043275"
 ---
 # <a name="create-custom-views-by-using-view-designer-in-azure-monitor"></a>Создание пользовательских представлений с помощью конструктора представлений в Azure Monitor

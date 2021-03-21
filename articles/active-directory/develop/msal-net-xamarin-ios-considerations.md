@@ -14,10 +14,10 @@ ms.author: marsma
 ms.reviewer: saeeda
 ms.custom: devx-track-csharp, aaddev
 ms.openlocfilehash: 62eb4ab9eb6e4b0e7be0f7aadae1173950d21615
-ms.sourcegitcommit: 2488894b8ece49d493399d2ed7c98d29b53a5599
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98064493"
 ---
 # <a name="considerations-for-using-xamarin-ios-with-msalnet"></a>Рекомендации по использованию Xamarin iOS с MSAL.NET
@@ -32,7 +32,7 @@ ms.locfileid: "98064493"
 
 ## <a name="implement-openurl"></a>Реализация OpenUrl
 
-Переопределите `OpenUrl` метод `FormsApplicationDelegate` производного класса и вызовите `AuthenticationContinuationHelper.SetAuthenticationContinuationEventArgs` . Ниже приведен пример:
+Переопределите `OpenUrl` метод `FormsApplicationDelegate` производного класса и вызовите `AuthenticationContinuationHelper.SetAuthenticationContinuationEventArgs` . Приведем пример:
 
 ```csharp
 public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
@@ -90,7 +90,7 @@ var builder = PublicClientApplicationBuilder
 Ранее в этой статье вы узнали, что MSAL добавляет `$(AppIdentifierPrefix)` каждый раз при использовании `WithIosKeychainSecurityGroup()` API. MSAL добавляет этот элемент, так как идентификатор команды `AppIdentifierPrefix` гарантирует, что только приложения, созданные одним издателем, могут использовать доступ к цепочке ключей.
 
 > [!NOTE]
-> `KeychainSecurityGroup`Свойство является устаревшим. Вместо этого следует использовать свойство `iOSKeychainSecurityGroup`. `TeamId`Префикс не требуется при использовании `iOSKeychainSecurityGroup` .
+> Свойство `KeychainSecurityGroup` является нерекомендуемым. Вместо этого следует использовать свойство `iOSKeychainSecurityGroup`. `TeamId`Префикс не требуется при использовании `iOSKeychainSecurityGroup` .
 
 ### <a name="use-microsoft-authenticator"></a>Использование Microsoft Authenticator
 

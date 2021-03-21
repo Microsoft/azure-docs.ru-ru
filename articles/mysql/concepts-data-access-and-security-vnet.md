@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 7/17/2020
 ms.openlocfilehash: 364d9c20c0bfce1f31103ddf6df0c8d7b228eca2
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96461769"
 ---
 # <a name="use-virtual-network-service-endpoints-and-rules-for-azure-database-for-mysql"></a>Использование конечных точек служб и правил виртуальной сети с базой данных Azure для MySQL
@@ -134,8 +134,8 @@ ms.locfileid: "96461769"
 
 Задать параметр **IgnoreMissingServiceEndpoint** можно с помощью Azure CLI или портала.
 
-## <a name="related-articles"></a>Связанные статьи
-- [Виртуальные сети Azure][vm-virtual-network-overview]
+## <a name="related-articles"></a>Похожие статьи
+- [виртуальные сети Azure;][vm-virtual-network-overview]
 - [Конечные точки службы виртуальной сети Azure][vm-virtual-network-service-endpoints-overview-649d]
 
 ## <a name="next-steps"></a>Дальнейшие действия

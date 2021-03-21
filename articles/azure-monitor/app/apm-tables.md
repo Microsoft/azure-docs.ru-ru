@@ -4,10 +4,10 @@ description: Сведения о новой структуре и схеме т�
 ms.topic: conceptual
 ms.date: 05/09/2020
 ms.openlocfilehash: ef9d22cd2b45679928ee54778b2a521ea9ecab03
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100575611"
 ---
 # <a name="workspace-based-resource-changes"></a>Изменения ресурсов на основе рабочей области
@@ -75,7 +75,7 @@ ms.locfileid: "100575611"
 |sdkVersion|строка|SdkVersion|строка|
 |session_Id|строка|SessionId|строка|
 |size|real|Размер|real|
-|Успешное завершение|строка|Успешное завершение|Bool|
+|Успешное завершение|строка|Успешно|Bool|
 |TIMESTAMP|DATETIME|TimeGenerated|DATETIME|
 |user_AccountId|строка|UserAccountId|строка|
 |user_AuthenticatedId|строка|усераусентикатедид|строка|
@@ -162,8 +162,8 @@ ms.locfileid: "100575611"
 |resultCode|строка|ResultCode|строка|
 |sdkVersion|строка|SdkVersion|строка|
 |session_Id|строка|SessionId|строка|
-|Успешное завершение|строка|Успешное завершение|Bool|
-|target|строка|целевого объекта|строка|
+|Успешное завершение|строка|Успешно|Bool|
+|target|строка|Целевой объект|строка|
 |TIMESTAMP|DATETIME|TimeGenerated|DATETIME|
 |type|строка|DependencyType|строка|
 |user_AccountId|строка|UserAccountId|строка|
@@ -298,7 +298,7 @@ ms.locfileid: "100575611"
 |appId|строка|\_ResourceGuid|строка|
 |application_Version|строка|AppVersion|строка|
 |appName|строка|\_ResourceId|строка|
-|категория|строка|Категория|строка|
+|категория|строка|Category|строка|
 |client_Browser|строка|ClientBrowser|строка|
 |client_City|строка|клиентЦити|строка|
 |client_CountryOrRegion|строка|клиенткаунтрйоррегион|строка|
@@ -365,7 +365,7 @@ ms.locfileid: "100575611"
 |sdkVersion|строка|SdkVersion|строка|
 |session_Id|строка|SessionId|строка|
 |source|строка|Источник|Строка|
-|Успешное завершение|строка|Успешное завершение|Bool|
+|Успешное завершение|строка|Успешно|Bool|
 |TIMESTAMP|DATETIME|TimeGenerated|DATETIME|
 |url|строка|Url|Строка|
 |user_AccountId|строка|UserAccountId|строка|

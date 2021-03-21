@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: iot-central
 services: iot-central
 ms.openlocfilehash: 9cf803ddd5a3c9329cadefffc35ae6d6999323a1
-ms.sourcegitcommit: 58f12c358a1358aa363ec1792f97dae4ac96cc4b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93280707"
 ---
 # <a name="azure-iot-central-customer-data-residency"></a>Местонахождение данных клиента Azure IoT Central

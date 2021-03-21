@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 06/22/2018
 ms.openlocfilehash: 988bb1467e7bf2cca31151d85c57677b235cab30
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102043309"
 ---
 # <a name="filters-in-azure-monitor-views"></a>Фильтры в представлениях Azure Monitor
@@ -49,8 +49,8 @@ ms.locfileid: "102043309"
 | Имя поля | Запрос значений | Тег |
 |:--|:--|:--|
 | Компьютер   | Heartbeat &#124; distinct Computer &#124; sort by Computer asc | Компьютеры |
-| EventLevelName | Event &#124; distinct EventLevelName | Severity |
-| SeverityLevel | Syslog &#124; distinct SeverityLevel | Severity |
+| EventLevelName | Event &#124; distinct EventLevelName | Уровень серьезности |
+| SeverityLevel | Syslog &#124; distinct SeverityLevel | Уровень серьезности |
 | SvcChangeType | ConfigurationChange &#124; distinct svcChangeType | ChangeType |
 
 

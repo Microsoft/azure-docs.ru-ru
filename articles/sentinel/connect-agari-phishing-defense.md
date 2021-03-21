@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 02/03/2021
 ms.author: yelevin
 ms.openlocfilehash: a60a0291d6669b2a9115dffa8e0d4d63fae4a440
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101724444"
 ---
 # <a name="connect-your-agari-phishing-defense-and-brand-protection-solutions-to-azure-sentinel"></a>Подключение защиты от фишинга Агари и решений защиты от фирменной символики к Azure Sentinel
@@ -33,7 +33,7 @@ ms.locfileid: "101724444"
 > [!NOTE]
 > Данные будут храниться в географическом расположении рабочей области, на которой вы используете метку Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для подключения Агари защиты от фишинга и решений защиты торговой марки к Azure Sentinel необходимо выполнить следующие действия.
 

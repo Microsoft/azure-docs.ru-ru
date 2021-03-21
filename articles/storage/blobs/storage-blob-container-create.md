@@ -10,10 +10,10 @@ ms.author: tamram
 ms.subservice: blobs
 ms.custom: devx-track-csharp
 ms.openlocfilehash: dac50d8e35080a083e42891732512e012fae8fbd
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99576453"
 ---
 # <a name="create-or-delete-a-container-in-azure-storage-with-net"></a>Создание или удаление контейнера в службе хранилища Azure с помощью .NET
@@ -147,14 +147,14 @@ private static void CreateRootContainer(CloudBlobClient blobClient)
 
 # <a name="net-v12"></a>[\..NET (версии 12)](#tab/dotnet)
 
-- [Удаление](/dotnet/api/azure.storage.blobs.blobcontainerclient.delete)
+- [Удалить](/dotnet/api/azure.storage.blobs.blobcontainerclient.delete)
 - [DeleteAsync](/dotnet/api/azure.storage.blobs.blobcontainerclient.deleteasync)
 - [DeleteIfExists](/dotnet/api/azure.storage.blobs.blobcontainerclient.deleteifexists)
 - [DeleteIfExistsAsync](/dotnet/api/azure.storage.blobs.blobcontainerclient.deleteifexistsasync)
 
 # <a name="net-v11"></a>[\..NET (версии 11)](#tab/dotnetv11)
 
-- [Удаление](/dotnet/api/microsoft.azure.storage.blob.cloudblobcontainer.delete)
+- [Удалить](/dotnet/api/microsoft.azure.storage.blob.cloudblobcontainer.delete)
 - [DeleteAsync](/dotnet/api/microsoft.azure.storage.blob.cloudblobcontainer.deleteasync)
 - [DeleteIfExists](/dotnet/api/microsoft.azure.storage.blob.cloudblobcontainer.deleteifexists)
 - [DeleteIfExistsAsync](/dotnet/api/microsoft.azure.storage.blob.cloudblobcontainer.deleteifexistsasync)
@@ -230,7 +230,7 @@ private static async Task DeleteContainersWithPrefixAsync(CloudBlobClient blobCl
 
 [!INCLUDE [storage-blob-dotnet-resources-include](../../../includes/storage-blob-dotnet-resources-include.md)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Операция создания контейнера](/rest/api/storageservices/create-container)
 - [Операция удаления контейнера](/rest/api/storageservices/delete-container)

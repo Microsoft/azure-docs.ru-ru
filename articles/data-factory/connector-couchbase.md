@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: jingwang
 ms.openlocfilehash: e8de7982e99e258f0a72bd507ac0d8de16a7227a
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100383659"
 ---
 # <a name="copy-data-from-couchbase-using-azure-data-factory-preview"></a>Копирование данных из Couchbase с помощью фабрики данных Azure (предварительная версия)
@@ -45,7 +45,7 @@ ms.locfileid: "100383659"
 
 Для связанной службы Couchbase поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства type необходимо задать значение **Couchbase**. | Да |
 | connectionString | Строка подключения к Couchbase через интерфейс ODBC. <br/>Вы можете также поместить строку учетных данных в Azure Key Vault и извлечь конфигурацию `credString` из строки подключения. Ознакомьтесь с приведенными ниже примерами и подробными сведениями в статье [Хранение учетных данных в Azure Key Vault](store-credentials-in-key-vault.md). | Да |

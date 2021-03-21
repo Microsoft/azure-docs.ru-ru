@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 11/24/2020
 ms.custom: mvc
 ms.openlocfilehash: 5377a3ff7ef7033b57f8785baa615a717ef7fa0f
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100575875"
 ---
 # <a name="enable-update-management-from-a-runbook"></a>Включение Управления обновлениями в последовательности runbook
@@ -127,7 +127,7 @@ ms.locfileid: "100575875"
 
 4. Отслеживайте ход выполнения задания Runbook и всех ошибок на странице **задания** .
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Сведения об использовании Управление обновлениями для виртуальных машин см. в статье [Управление обновлениями и исправлениями для виртуальных машин](manage-updates-for-vm.md).
 

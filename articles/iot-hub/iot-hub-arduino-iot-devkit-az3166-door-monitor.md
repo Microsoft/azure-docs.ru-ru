@@ -9,10 +9,10 @@ ms.tgt_pltfrm: arduino
 ms.date: 03/19/2018
 ms.author: liydu
 ms.openlocfilehash: e3649ac786c07459695a1e6ca6ad52620e23d59f
-ms.sourcegitcommit: dbe434f45f9d0f9d298076bf8c08672ceca416c6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92148804"
 ---
 # <a name="door-monitor----using-azure-functions-and-sendgrid-send-email-when-a-door-is-opened"></a>Монитор двери — использование функций Azure и SendGrid, отправка электронной почты при открытии дверцы           
@@ -159,7 +159,7 @@ ms.locfileid: "92148804"
 
 2. Терминал предложит перейти в режим настройки. Чтобы сделать это, удерживая нажатой кнопку "A", нажмите и отпустите кнопку "Reset" (Сброс). На экране отображается идентификационный номер DevKit и слово *Configuration*.
 
-#### <a name="macos"></a>macOS
+#### <a name="macos"></a>MacOS
 
 1. Переведите плату DevKit в режим настройки. Для этого, удерживая нажатой кнопку A, нажмите и отпустите кнопку сброса. На экране отобразится надпись "Configuration" (Настройка).
 

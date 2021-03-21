@@ -4,10 +4,10 @@ description: Описывает функции, используемые в ша
 ms.topic: conceptual
 ms.date: 11/18/2020
 ms.openlocfilehash: 27d94f10374daf0b9a351469579a5eb659cf5445
-ms.sourcegitcommit: fec60094b829270387c104cc6c21257826fccc54
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96920483"
 ---
 # <a name="logical-functions-for-arm-templates"></a>Логические функции для шаблонов ARM
@@ -82,7 +82,7 @@ output notExampleOutput bool = !(bool('true'))
 
 Выходные данные из предыдущего примера:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | andExampleOutput | Bool | Неверно |
 | orExampleOutput | Bool | True |
@@ -152,7 +152,7 @@ output falseInt bool = bool(0)
 ---
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | trueString | Bool | True |
 | falseString | Bool | Неверно |
@@ -203,7 +203,7 @@ output falseOutput bool = false
 
 Выходные данные из предыдущего примера:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | фалсеаутпут | Bool | Неверно |
 
@@ -270,7 +270,7 @@ output objectOutput object = 'a' == 'a' ? json('{"test": "value1"}') : json('nul
 
 Выходные данные из предыдущего примера:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | yesOutput | Строка | да |
 | noOutput | Строка | Нет |
@@ -389,7 +389,7 @@ output notExampleOutput bool = !(bool('true'))
 
 Выходные данные из предыдущего примера:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | andExampleOutput | Bool | Неверно |
 | orExampleOutput | Bool | True |
@@ -424,11 +424,11 @@ output checkNotEquals bool = !(1 == 2)
 
 Выходные данные из предыдущего примера:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | checkNotEquals | Bool | True |
 
-## <a name="or"></a>или
+## <a name="or"></a>или диспетчер конфигурации служб
 
 `or(arg1, arg2, ...)`
 
@@ -486,7 +486,7 @@ output notExampleOutput bool = !(bool('true'))
 
 Выходные данные из предыдущего примера:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | andExampleOutput | Bool | Неверно |
 | orExampleOutput | Bool | True |
@@ -536,7 +536,7 @@ output trueOutput bool = true
 
 Выходные данные из предыдущего примера:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | труеаутпут | Bool | True |
 

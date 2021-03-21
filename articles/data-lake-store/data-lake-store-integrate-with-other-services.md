@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 05/29/2018
 ms.author: twooley
 ms.openlocfilehash: 929853f4dbedca7034c8e2a51e6231651a2dd08f
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96461665"
 ---
 # <a name="integrating-azure-data-lake-storage-gen1-with-other-azure-services"></a>Интеграция Azure Data Lake Storage 1-го поколения с другими службами Azure

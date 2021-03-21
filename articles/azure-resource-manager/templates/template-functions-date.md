@@ -4,10 +4,10 @@ description: Описывает функции, используемые в ша
 ms.topic: conceptual
 ms.date: 11/18/2020
 ms.openlocfilehash: 58d865f109ecca2629b89eeb55e554743824c195
-ms.sourcegitcommit: fec60094b829270387c104cc6c21257826fccc54
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96920491"
 ---
 # <a name="date-functions-for-arm-templates"></a>Функции даты для шаблонов ARM
@@ -94,7 +94,7 @@ output add1HourOutput string = add1Hour
 
 При развертывании предыдущего шаблона с базовым временем `2020-04-07 14:53:14Z` выводится следующее:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | add3YearsOutput | Строка | 4/7/2023 2:53:14 РМ |
 | subtract9DaysOutput | Строка | 3/29/2020 2:53:14 РМ |
@@ -261,7 +261,7 @@ output utcCustomOutput string = utcCustomValue
 
 Выходные данные предыдущего примера зависят от каждого развертывания, но будут выглядеть примерно так:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | уткаутпут | строка | 20190305T175318Z |
 | уткшортаутпут | строка | 05.03.2019 |
