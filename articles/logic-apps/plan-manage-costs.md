@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.custom: subject-cost-optimization
 ms.date: 01/29/2021
 ms.openlocfilehash: 44351497ed58c8d49404c094f6800b52186edabb
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101709637"
 ---
 # <a name="plan-and-manage-costs-for-azure-logic-apps"></a>Планирование и управление затратами для Azure Logic Apps
@@ -19,7 +19,7 @@ ms.locfileid: "101709637"
 
 Помните, что затраты на Logic Apps являются частью ежемесячных затрат в счете Azure. Несмотря на то, что в этой статье объясняется, как оценить и управлять затратами на Logic Apps, вам будет выставлен счет за все службы и ресурсы Azure, используемые в подписке Azure, включая любые сторонние службы. После ознакомления с управлением затратами на Logic Apps можно применить аналогичные методы для управления затратами для всех служб Azure, используемых в вашей подписке.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 <!--Note for Azure service writer: This section covers prerequisites for the Cost Management's Cost Analysis feature. Add other prerequisites needed for your service after the Cost Management prerequisites. -->
 

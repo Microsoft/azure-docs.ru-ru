@@ -6,10 +6,10 @@ ms.subservice: ''
 ms.date: 03/24/2020
 ms.topic: troubleshooting
 ms.openlocfilehash: 06c15136e9d2fabdf50031c8b4be455cf2f7bbca
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98896585"
 ---
 # <a name="troubleshoot-azure-automation-account-issues"></a>Устранение неполадок с учетной записью службы автоматизации Azure
@@ -46,8 +46,8 @@ Error details: Unable to register Automation Resource Provider for subscriptions
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Если эта статья не помогла вам решить проблему, попробуйте использовать один из следующих каналов для получения дополнительной поддержки:
+Если эта статья не помогла вам решить проблему, попробуйте использовать один из следующих каналов для получения дополнительной поддержки.
 
 * Получите ответы специалистов Azure на [форумах Azure](https://azure.microsoft.com/support/forums/).
-* Подключитесь к [@AzureSupport](https://twitter.com/azuresupport). Это официальная учетная запись Microsoft Azure для доступа к ресурсам сообщества Azure (ответы на вопросы, поддержка и консультации специалистов).
+* Обратитесь за помощью в Твиттер — [@AzureSupport](https://twitter.com/azuresupport). Это официальная учетная запись Microsoft Azure для доступа к ресурсам сообщества Azure (ответы на вопросы, поддержка и консультации специалистов).
 * Отправьте запрос в службу поддержки Azure Перейдите на [сайт поддержки Azure](https://azure.microsoft.com/support/options/) и выберите **Получить поддержку**.

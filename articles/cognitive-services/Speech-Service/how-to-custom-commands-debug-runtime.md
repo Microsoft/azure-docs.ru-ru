@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: xiaojul
 ms.openlocfilehash: b41bcda7381e5811ef1e1f91c102d8c85f50b3b5
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103196918"
 ---
 # <a name="debug-errors-when-running-a-custom-commands-application"></a>Отладка ошибок при выполнении приложения пользовательских команд
@@ -135,7 +135,7 @@ ms.locfileid: "103196918"
 ### <a name="object-reference-not-set-to-an-instance-of-an-object"></a>Ссылка на объект не указывает на экземпляр объекта
 В полезных данных JSON, определенных в действии **Send to Client** , имеется пустой параметр.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [См. примеры на GitHub](https://aka.ms/speech/cc-samples)

@@ -13,10 +13,10 @@ ms.custom: sqldbrb=1
 ms.date: 04/28/2020
 tag: azure-synpase
 ms.openlocfilehash: c18d235977f1256a10e813fa8e02aa3590366fe1
-ms.sourcegitcommit: 2aa52d30e7b733616d6d92633436e499fbe8b069
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97936419"
 ---
 # <a name="conditional-access-with-azure-sql-database-and-azure-synapse-analytics"></a>Условный доступ с помощью базы данных SQL Azure и Azure синапсе Analytics
@@ -27,7 +27,7 @@ ms.locfileid: "97936419"
 
 Ниже описано, как настроить базу данных SQL Azure, SQL Управляемый экземпляр или Azure синапсе для применения политики условного доступа.  
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Для поддержки проверки подлинности Azure Active Directory (Azure AD) необходимо настроить базу данных SQL Azure, Управляемый экземпляр Azure SQL или выделенный пул SQL в Azure синапсе. Дополнительные сведения см. в статье [Настройка проверки подлинности Azure Active Directory с помощью базы данных SQL или Azure синапсе и управление ею](authentication-aad-configure.md).  
 - Если включена многофакторная проверка подлинности, необходимо подключиться с помощью поддерживаемого средства, например последней версии SQL Server Management Studio (SSMS). Дополнительные сведения см. в разделе [Настройка многофакторной проверки подлинности в Базе данных SQL Azure для SQL Server Management Studio](authentication-mfa-ssms-configure.md).  
@@ -54,7 +54,7 @@ ms.locfileid: "97936419"
 5. Выберите **Элементы управления доступом**, выберите **Предоставить**, а затем просмотрите политику, которую вы хотите применить. Для этого примера мы выберем **Требовать многофакторную проверку подлинности**.  
    ![выбор предоставления доступа](./media/conditional-access-configure/grant-access.png)  
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 Выбранное приложение (база данных SQL Azure) с помощью Azure AD Premium теперь обеспечивает выбранную политику условного доступа, **необходимую многофакторную проверку подлинности.**
 

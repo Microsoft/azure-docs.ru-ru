@@ -4,10 +4,10 @@ description: Описывает, как определять и использо
 ms.topic: conceptual
 ms.date: 02/11/2021
 ms.openlocfilehash: 9c7480958e6315c8aea1fd8d12613bcf9d606723
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100379630"
 ---
 # <a name="user-defined-functions-in-arm-template"></a>Определяемые пользователем функции в шаблоне ARM
@@ -109,7 +109,7 @@ ms.locfileid: "100379630"
 * Функция не может использовать функцию [Reference](template-functions-resource.md#reference) или любую из функций [списка](template-functions-resource.md#list) .
 * Для параметров этой функции нельзя задавать значения по умолчанию.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о доступных свойствах определяемых пользователем функций см. в разделе Общие сведения о [структуре и синтаксисе шаблонов ARM](template-syntax.md).
 * Список доступных функций шаблонов см. в разделе [функции шаблонов ARM](template-functions.md).

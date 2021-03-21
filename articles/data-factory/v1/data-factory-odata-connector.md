@@ -8,10 +8,10 @@ ms.date: 01/10/2018
 ms.author: jingwang
 robots: noindex
 ms.openlocfilehash: fae78459a752d78fe47f189bca67667e917ba561
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100380072"
 ---
 # <a name="move-data-from-an-odata-source-using-azure-data-factory"></a>Перемещение данных из источника OData с помощью фабрики данных Azure
@@ -55,7 +55,7 @@ ms.locfileid: "100380072"
 ## <a name="linked-service-properties"></a>Свойства связанной службы
 В приведенной далее таблице содержится описание элементов JSON, которые относятся к связанной службе OData.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 | --- | --- | --- |
 | type |Для свойства Type необходимо задать значение **OData** . |Да |
 | url |URL-адрес службы OData. |Да |
@@ -140,7 +140,7 @@ ms.locfileid: "100380072"
 
 Раздел **typeProperties** отличается для каждого типа набора данных и предоставляет сведения о расположении данных в хранилище данных. Раздел typeProperties набора данных типа **ODataResource** (который включает в себя набор данных OData) содержит следующие свойства.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 | --- | --- | --- |
 | path |Путь к ресурсу OData |Нет |
 
@@ -151,7 +151,7 @@ ms.locfileid: "100380072"
 
 Если источник относится к типу **RelationalSource** (который содержит OData), в разделе typeProperties доступны следующие свойства.
 
-| Свойство | Описание | Пример | Обязательно |
+| Свойство. | Описание | Пример | Обязательно |
 | --- | --- | --- | --- |
 | query |Используйте пользовательский запрос для чтения данных. |"?$select=Name, Description&$top=5" |Нет |
 

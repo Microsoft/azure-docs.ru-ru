@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 02/22/2017
 ms.author: damendo
 ms.openlocfilehash: 0503f6910186b42bf381c662c7942e37c28bfdf0
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101709518"
 ---
 # <a name="visualize-network-traffic-patterns-to-and-from-your-vms-using-open-source-tools"></a>Визуализация распределения входящего и исходящего трафика на виртуальных машинах с помощью средств с открытым кодом
@@ -78,7 +78,7 @@ CapAnalysis предлагает много возможностей для ви
 
     ![Географическая карта][8]
 
-1. Фильтры
+1. фильтры;
 
     CapAnalysis предоставляет набор фильтров для быстрого анализа пакетов определенного типа. Например, можно фильтровать данные по протоколу, чтобы подробнее изучить распределение этого подмножества трафика.
 

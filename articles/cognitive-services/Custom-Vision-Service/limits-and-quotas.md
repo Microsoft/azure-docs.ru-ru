@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 03/25/2019
 ms.author: pafarley
 ms.openlocfilehash: 3392cc5f3ee9daef1ae8397f6829f4ca7a42373a
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98871406"
 ---
 # <a name="limits-and-quotas"></a>Ограничения и квоты
@@ -27,7 +27,7 @@ ms.locfileid: "98871406"
 |-----|-----|-----|
 |Проекты|2|100|
 |Число учебных изображений на проект |5 000|100 000|
-|Прогнозы в месяц|10 000 |Без ограничений|
+|Прогнозы в месяц|10 000 |Неограниченно|
 |Теги/проект|50|500|
 |Количество итераций |10|10|
 |Минимальное число помеченных изображений на тег, классификация (рекомендуется 50) |5|5|

@@ -6,10 +6,10 @@ author: abhirockzz
 ms.author: abhishgu
 ms.date: 01/06/2021
 ms.openlocfilehash: 0ad1df23e71e652f7d380ffbabb542b81954e038
-ms.sourcegitcommit: 2aa52d30e7b733616d6d92633436e499fbe8b069
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97935178"
 ---
 # <a name="integrate-apache-kafka-connect-support-on-azure-event-hubs-with-debezium-for-change-data-capture"></a>Интеграция поддержки Apache Kafka Connect в концентраторы событий Azure с Дебезиум для отслеживания измененных данных
@@ -33,7 +33,7 @@ ms.locfileid: "97935178"
 При работе с этим руководством вы выполните следующие задачи:
 
 > [!div class="checklist"]
-> * Создание пространства имен в Центрах событий
+> * Создание пространства имен Центров событий
 > * Установка и Настройка базы данных Azure для PostgreSQL
 > * Настройка и запуск Kafka Connect с помощью соединителя Дебезиум PostgreSQL
 > * Проверка отслеживания измененных данных
@@ -47,7 +47,7 @@ ms.locfileid: "97935178"
 - Выпуск Kafka (версии 1.1.1, Scala версии 2.11) доступен на сайте [kafka.apache.org](https://kafka.apache.org/downloads#1.1.1)
 - Ознакомьтесь со статьей [Центры событий Azure для Apache Kafka (предварительная версия)](./event-hubs-for-kafka-ecosystem-overview.md).
 
-## <a name="create-an-event-hubs-namespace"></a>Создание пространства имен в Центрах событий
+## <a name="create-an-event-hubs-namespace"></a>Создание пространства имен Центров событий
 Для отправки и получения данных из любой службы Центров событий требуется пространство имен Центров событий. Инструкции по созданию пространства имен и концентратора событий см. в разделе [Создание концентратора событий](event-hubs-create.md) . Получите строку подключения Центров событий и полное доменное имя (FQDN) для последующего использования. Инструкции см. в статье [Get an Event Hubs connection string](event-hubs-get-connection-string.md) (Получение строки подключения для Центров событий). 
 
 ## <a name="setup-and-configure-azure-database-for-postgresql"></a>Установка и Настройка базы данных Azure для PostgreSQL

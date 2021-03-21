@@ -4,17 +4,17 @@ description: Из этой статьи вы узнаете, как устано
 ms.date: 10/12/2020
 ms.topic: conceptual
 ms.openlocfilehash: 5fa7a61b1e3b22503377cbcbe308a82be89dac72
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100584765"
 ---
 # <a name="connect-hybrid-machines-to-azure-from-windows-admin-center"></a>Подключение гибридных компьютеров к Azure из центра администрирования Windows
 
 Вы можете включить серверы с поддержкой ARC в Azure для одного или нескольких компьютеров Windows в вашей среде, выполнив набор действий вручную. Также можно использовать [центр администрирования Windows](/windows-server/manage/windows-admin-center/understand/what-is) для развертывания агента подключенного компьютера и регистрации локальных серверов без выполнения каких-либо действий за пределами этого средства.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Серверы с поддержкой ARC. Проверьте [Предварительные требования](agent-overview.md#prerequisites) и убедитесь, что ваша подписка, учетная запись Azure и ресурсы соответствуют требованиям.
 
@@ -28,7 +28,7 @@ ms.locfileid: "100584765"
 
 Этот метод развертывания требует наличия прав администратора на целевом компьютере Windows или сервере для установки и настройки агента. Также необходимо быть членом роли [**пользователей шлюза**](/windows-server/manage/windows-admin-center/plan/user-access-options#gateway-access-roles) .
 
-## <a name="deploy"></a>Развертывание
+## <a name="deploy"></a>Развернуть
 
 Чтобы настроить Windows Server с серверами с поддержкой Arc, выполните следующие действия.
 

@@ -4,10 +4,10 @@ description: Список исключений ретранслятора Azure 
 ms.topic: article
 ms.date: 06/23/2020
 ms.openlocfilehash: 44eeba6eb7b8cfd4e81a923c2d9a3155f1709f2c
-ms.sourcegitcommit: a0c1d0d0906585f5fdb2aaabe6f202acf2e22cfc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98625154"
 ---
 # <a name="azure-relay-exceptions"></a>Исключения ретранслятора Azure
@@ -62,7 +62,7 @@ ms.locfileid: "98625154"
 *   слишком маленькое значение [OpenTimeout](/previous-versions/) (вплоть до доли секунды);
 * неотвечающие локальные прослушиватели ретрансляции (или проблемы, связанные с тем, что правила брандмауэра запрещают прослушивателям принимать новые клиентские подключения) и значение [OpenTimeout](/previous-versions/) меньше 20 секунд.
 
-Пример:
+Пример
 
 ```
 'System.TimeoutException’: The operation did not complete within the allotted timeout of 00:00:10.
@@ -79,7 +79,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
 
     Иногда в службе ретранслятора могут происходить задержки при обработке запросов. Например, это может произойти в период интенсивной нагрузки сети. В этом случае можно настроить повторную попытку выполнения операции через некоторое время до ее успешного завершения. Если же операцию по-прежнему не удается выполнить после нескольких попыток, посетите [сайт состояния служб Azure](https://azure.microsoft.com/status/), чтобы получить сведения об известных простоях служб.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Часто задаваемые вопросы о ретрансляторе Azure](relay-faq.md)
 * [Создание пространства имен ретранслятора](relay-create-namespace-portal.md)
 * [Приступая к работе с гибридными подключениями к ретранслятору](relay-hybrid-connections-dotnet-get-started.md)

@@ -7,10 +7,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 4/7/2020
 ms.openlocfilehash: ec10abfd6f2fc221a9e86203b2faa0d173d67675
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100379596"
 ---
 # <a name="migrate-sql-server-agent-jobs-to-adf-with-ssms"></a>Перенос заданий агент SQL Server в ADF с помощью SSMS
@@ -34,7 +34,7 @@ ms.locfileid: "100379596"
 
 - Создание шаблонов Azure Resource Manager (ARM) в локальной выходной папке и развертывание в фабрике данных напрямую или позднее вручную. Дополнительные сведения о ADF диспетчер ресурсов Templates см. в разделе [типы ресурсов Microsoft. данных фактов](/azure/templates/microsoft.datafactory/allversions).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для работы функции, описанной в этой статье, требуется SQL Server Management Studio версии 18,5 или более поздней. Чтобы получить последнюю версию SSMS, перейдите на страницу [скачивания SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms).
 
@@ -75,6 +75,6 @@ ms.locfileid: "100379596"
 1. Выполните миграцию, а затем проверьте результаты.
 ![На снимке экрана показана страница результатов миграции, на которой отображается ход выполнения миграции.](media/how-to-migrate-ssis-job-ssms/step5.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Запуск и мониторинг конвейера](how-to-invoke-ssis-package-ssis-activity.md)
