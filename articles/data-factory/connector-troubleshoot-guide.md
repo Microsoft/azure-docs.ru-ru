@@ -8,10 +8,10 @@ ms.date: 02/08/2021
 ms.author: jingwang
 ms.custom: has-adal-ref
 ms.openlocfilehash: 9d8f940e3900c00b1c6f6623dfeff2d92ca85aa3
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102042442"
 ---
 # <a name="troubleshoot-azure-data-factory-connectors"></a>Устранение неполадок соединителей фабрики данных Azure
@@ -105,7 +105,7 @@ ms.locfileid: "102042442"
 
 - **Решение**. в строке подключения MongoDB добавьте параметр *ууидрепресентатион = Standard* . Дополнительные сведения см. в разделе о [строке подключения MongoDB](connector-mongodb.md#linked-service-properties).
             
-## <a name="azure-cosmos-db-sql-api"></a>Azure Cosmos DB (API SQL)
+## <a name="azure-cosmos-db-sql-api"></a>Azure Cosmos DB (SQL API)
 
 ### <a name="error-code-cosmosdbsqlapioperationfailed"></a>Код ошибки: Космосдбсклапиоператионфаилед
 

@@ -15,10 +15,10 @@ ms.reviewer: thsomasu
 ms.lastreviewed: 03/18/2019
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 73c19b72c75d9638213f3c813a708a272cbe2a1b
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102452345"
 ---
 # <a name="export-and-import-azure-notification-hubs-registrations-in-bulk"></a>Экспорт и импорт регистраций центров уведомлений Azure в групповой операции

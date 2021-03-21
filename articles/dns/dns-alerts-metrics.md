@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 04/17/2018
 ms.author: rohink
 ms.openlocfilehash: 391109727877544a4e94bae376ecef4d33a13cfb
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100575277"
 ---
 # <a name="azure-dns-metrics-and-alerts"></a>Метрики и оповещения Azure DNS
@@ -64,5 +64,5 @@ Azure DNS предоставляет клиентам метрики, позво
 ## <a name="alerts-in-azure-dns"></a>Оповещения Azure DNS
 Azure Monitor предоставляет возможность создания оповещений о доступных значениях метрик. Метрики DNS доступны в новой конфигурации "Оповещения". Как подробно описывается в [документации по оповещениям в Azure Monitor](../azure-monitor/alerts/alerts-metric.md), зону DNS можно выбрать как ресурс, выбрать тип сигнала "Метрика" и настроить логику оповещений, а также другие параметры, такие как **срок** и **частота**. Детализацию можно углубить, определив [группу действий](../azure-monitor/alerts/action-groups.md), которые будут выполняться при удовлетворении условия оповещения. При этом оповещение будет выдаваться в соответствии с выбранными действиями. Дополнительные сведения о настройке оповещений для метрик Azure Monitor см. в статье [Создание и просмотр оповещений, а также управление ими с помощью Azure Monitor](../azure-monitor/alerts/alerts-metric.md). 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения о [Azure DNS](dns-overview.md).

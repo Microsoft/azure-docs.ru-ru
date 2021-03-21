@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.custom: hdinsightactive
 ms.date: 01/02/2020
 ms.openlocfilehash: 824ba2c3316ccb34b59a9e435b9a6e582f137090
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98945926"
 ---
 # <a name="enable-heap-dumps-for-apache-hadoop-services-on-linux-based-hdinsight"></a>Включение дампов кучи для служб Apache Hadoop в HDInsight под управлением Linux
@@ -63,7 +63,7 @@ ms.locfileid: "98945926"
 
 Например, с помощью `-XX:HeapDumpPath=/tmp` задается место для сохранения дампов в каталоге /tmp.
 
-### <a name="scripts"></a>Сценарии
+### <a name="scripts"></a>Скрипты
 
 Вы можете также запустить сценарий при возникновении ошибки **OutOfMemoryError** . Например, можно запустить уведомление, благодаря которому можно будет узнать, что произошла ошибка. При возникновении ошибки __OutOfMemoryError__ используйте следующий параметр для запуска сценария:
 

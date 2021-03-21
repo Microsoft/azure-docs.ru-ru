@@ -12,10 +12,10 @@ ms.author: rortloff
 ms.reviewer: jrasnick
 ms.custom: azure-synapse
 ms.openlocfilehash: 06d1957d182f2cabc336afcfc47a790442a3cb9a
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98678412"
 ---
 # <a name="azure-synapse-analytics-workload-importance"></a>Важность рабочей нагрузки аналитики Azure синапсе
@@ -30,7 +30,7 @@ ms.locfileid: "98678412"
 
 ## <a name="importance-levels"></a>Уровни важности
 
-Существует пять уровней важности: низкая, below_normal, обычная, above_normal и высокий.  Запросам, которые не задают важность, назначается Стандартный уровень "Стандартный". Запросы с одинаковым уровнем важности имеют одно и то же поведение планирования, существующее сегодня.
+Существует пять уровней важности: low, below_normal, normal, above_normal и high.  Запросам, которые не задают важность, назначается стандартный уровень normal. Запросы с одинаковым уровнем важности имеют одинаковое поведение планирования, существующее сегодня.
 
 ## <a name="importance-scenarios"></a>Сценарии важности
 
@@ -60,7 +60,7 @@ ms.locfileid: "98678412"
 
 Так как вопрос 5 — mediumrc, для него требуется два слота выдачи. Вопрос 5 должен ожидать завершения двух выполняющихся запросов.  Однако при завершении одного из выполняемых запросов (Q1-Q4) вопрос 6 планируется немедленно, так как существуют ресурсы для выполнения запроса.  Если вопрос 5 имеет более высокий уровень важности, чем вопрос 6, то вопрос 6 ждет, пока не будет запущен вопрос 5, прежде чем он сможет начать выполнение.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Дополнительные сведения о создании классификатора см. в разделе [Создание классификатора рабочей нагрузки (Transact-SQL)](/sql/t-sql/statements/create-workload-classifier-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true).  
 - Узнайте о [классификации рабочих нагрузок](sql-data-warehouse-workload-classification.md).  

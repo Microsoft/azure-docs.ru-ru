@@ -7,10 +7,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 04/29/2020
 ms.openlocfilehash: 3d67ac9474704fac39dbe7eb91aead5c4babc4ce
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100383948"
 ---
 # <a name="migrate-normalized-database-schema-from-azure-sql-database-to-azure-cosmosdb-denormalized-container"></a>Перенос нормализованной схемы базы данных из базы данных SQL Azure в денормализованный контейнер Azure CosmosDB
@@ -68,7 +68,7 @@ FROM SalesLT.SalesOrderHeader o;
 
 10. Щелкните вкладку Предварительный просмотр данных в новом добавленном соединении, чтобы просмотреть результаты до этой точки. Вы должны увидеть все строки заголовка, Соединенные со строками детализации. Это результат объединения, сформированного из ```SalesOrderID``` . Далее мы будем объединять сведения из общих строк в структуру Details и объединять общие строки.
 
-![Join](media/data-flow/cosmosb4.png)
+![Присоединиться](media/data-flow/cosmosb4.png)
 
 11. Прежде чем создавать массивы для денормализации этих строк, необходимо удалить ненужные столбцы и убедиться, что значения данных будут соответствовать типам данных CosmosDB.
 
@@ -102,7 +102,7 @@ FROM SalesLT.SalesOrderHeader o;
 
 Если все выглядит хорошо, теперь все готово для создания нового конвейера, добавления этого действия потока данных в этот конвейер и его выполнения. Можно выполнить из отладки или запуска триггера. Через несколько минут в базе данных CosmosDB должен быть новый Денормализованный контейнер заказов, именуемый "заказы".
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Создайте оставшуюся часть логики потока данных с помощью [преобразования потоков данных](concepts-data-flow-overview.md)сопоставления.
 * [Скачайте шаблон завершенного конвейера](https://github.com/kromerm/adfdataflowdocs/blob/master/sampledata/SQL%20Orders%20to%20CosmosDB.zip) для этого руководства и импортируйте шаблон в фабрику.

@@ -9,16 +9,16 @@ ms.workload: infrastructure-services
 ms.date: 02/18/2021
 ms.author: qixwang
 ms.openlocfilehash: c916be9a54d62e16f488c94f4fa88a2207fb8788
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101100098"
 ---
 # <a name="what-is-azure-front-door-standardpremium-preview-endpoint-manager"></a>Что такое диспетчер конечных точек передней дверцы Azure Standard/Premium (Предварительная версия)?
 
 > [!NOTE]
-> * Эта документация предназначена для передней дверцы Azure уровня "Стандартный" или "Премиум" (Предварительная версия). Ищете информацию о передней дверце Azure? Просмотрите [документацию по передней дверце Azure](../front-door-overview.md).
+> * Эта документация предназначена для Azure Front Door категории "Стандартный" или "Премиум" (предварительная версия). Сведения об Azure Front Door Просмотрите [документацию по передней дверце Azure](../front-door-overview.md).
 
 Диспетчер конечных точек предоставляет общие сведения о конечных точках, настроенных для передней дверцы Azure. Конечная точка — это логическая группа доменов и связанных с ними конфигураций. Диспетчер конечной точки помогает управлять коллекцией конечных точек для операций CRUD (создание, чтение, обновление и удаление). С помощью диспетчера конечных точек можно управлять следующими элементами для конечных узлов:
 
@@ -46,6 +46,6 @@ ms.locfileid: "101100098"
 
 :::image type="content" source="../media/concept-endpoint-manager/endpoint-manager-2.png" alt-text="Снимок экрана диспетчера конечных точек с конфигурациями." lightbox="../media/concept-endpoint-manager/endpoint-manager-2-expanded.png":::
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как [создать переднюю дверь уровня "Стандартный" или "Премиум](create-front-door-portal.md)".

@@ -11,10 +11,10 @@ ms.topic: article
 ms.date: 09/21/2020
 ms.reviewer: ''
 ms.openlocfilehash: 1217d3af855e96b6d6a0f403c2ff351a6b957d9a
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96459666"
 ---
 # <a name="playbook-for-addressing-common-security-requirements-with-azure-sql-database-and-azure-sql-managed-instance"></a>Сборник тренировочных заданий для решения общих требований к безопасности базы данных SQL Azure и Azure SQL Управляемый экземпляр
@@ -283,7 +283,7 @@ ms.locfileid: "96459666"
 
 **Как реализовать**:
 
-- Определяет требуемый уровень разделения обязанностей. Примеры
+- Определяет требуемый уровень разделения обязанностей. Примеры:
   - Между средой разработки и тестирования и рабочими средами
   - Задачи на уровне управления, ориентированные на безопасность и администраторы баз данных (DBA), и задачи разработчика.
     - Примеры: аудитория, создание политики безопасности для безопасности на уровне ролей (RLS), реализация объектов базы данных SQL с помощью DDL-разрешений.

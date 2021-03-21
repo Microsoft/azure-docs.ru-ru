@@ -8,10 +8,10 @@ ms.service: synapse-analytics
 ms.subservice: workspace
 ms.date: 11/24/2020
 ms.openlocfilehash: f5d0aae975d476da47510a1f2fd164cbc5f32945
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96466950"
 ---
 # <a name="troubleshoot-azure-synapse-analytics-workspaces-created-using-sdk"></a>Устранение неполадок рабочих областей Azure синапсе Analytics, созданных с помощью пакета SDK
@@ -19,7 +19,7 @@ ms.locfileid: "96466950"
 В этой статье содержатся инструкции по устранению неполадок при запуске синапсе Studio из рабочей области синапсе, которая была создана с помощью пакета средств разработки программного обеспечения (SDK).
 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Рабочая область синапсе создана с помощью пакета SDK
 
@@ -34,4 +34,4 @@ ms.locfileid: "96466950"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * [Что представляет собой Azure Synapse?](../overview-what-is.md)
-* [Начало работы](../get-started.md)
+* [Приступая к работе](../get-started.md)

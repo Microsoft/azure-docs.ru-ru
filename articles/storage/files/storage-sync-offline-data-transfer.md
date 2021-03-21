@@ -8,10 +8,10 @@ ms.date: 02/12/2019
 ms.author: rogarana
 ms.subservice: files
 ms.openlocfilehash: 94abb33d39765a19306a013576d43fb2602d1c37
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96017633"
 ---
 # <a name="migrate-bulk-data-to-azure-file-sync-with-azure-databox"></a>Перенос пакетов данных в Синхронизацию файлов Azure с использованием Azure DataBox
@@ -96,6 +96,6 @@ ms.locfileid: "96017633"
 > [!WARNING]
 > **Выполните процесс заполнения файлов в промежуточном общем ресурсе, а не в окончательной** синхронизация файлов Azure подключенной общей папке. В противном случае могут возникать конфликты файлов (обе версии файлов будут сохранены), а также файлы, удаленные на активном сервере, если они по-прежнему существуют в старом, заполненном наборе файлов. Кроме того, изменения в папках будут объединены друг с другом, что затрудняет разделение пространства имен после такой ошибки.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Планирование развертывания службы синхронизации файлов Azure](storage-sync-files-planning.md)
 - [Развертывание Синхронизации файлов Azure](storage-sync-files-deployment-guide.md)

@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 08/05/2020
 ms.author: yelevin
 ms.openlocfilehash: cf7e389fc4a8a8dfa88691dc034611cae3471731
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94655346"
 ---
 # <a name="connect-windows-defender-firewall-with-advanced-security-to-azure-sentinel"></a>Подключение брандмауэра защитника Windows к Azure Sentinel с повышенной безопасностью
@@ -33,7 +33,7 @@ ms.locfileid: "94655346"
 >
 > - Если оповещения защитника Azure из центра безопасности Azure уже собраны в рабочую область Sentinel Azure, нет необходимости включать решение брандмауэра Windows через этот соединитель. Однако если вы включили его, это не повлечет за собой дублирование данных. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Необходимо иметь разрешения на чтение и запись в рабочей области, к которой подключены компьютеры, которые вы хотите отслеживать.
 

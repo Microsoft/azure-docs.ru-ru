@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 10/29/2020
 ms.author: aahi
 ms.openlocfilehash: cedcf8a3fcd656c4af0ca7493c598791d35d20d9
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95996137"
 ---
 # <a name="use-docker-compose-to-deploy-multiple-containers"></a>Развертывание нескольких контейнеров с помощью Docker Compose
@@ -25,7 +25,7 @@ ms.locfileid: "95996137"
 
 Может оказаться полезным управлять несколькими образами контейнеров на одном хост-компьютере. В этой статье мы будем объединять контейнеры для чтения и распознавания форм.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для этой процедуры требуется несколько средств, которые необходимо установить и запустить локально:
 
@@ -169,7 +169,7 @@ IMAGE ID            REPOSITORY                                                  
 
 ![Контейнер распознавателя форм](media/form-recognizer-swagger-page.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Контейнеры Cognitive Services](../cognitive-services-container-support.md)

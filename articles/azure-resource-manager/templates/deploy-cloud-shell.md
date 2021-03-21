@@ -4,10 +4,10 @@ description: Используйте Azure Resource Manager и Azure Cloud Shell 
 ms.topic: conceptual
 ms.date: 10/22/2020
 ms.openlocfilehash: c67251a33b6197603be27086bcc6cd047e0c414b
-ms.sourcegitcommit: e46f9981626751f129926a2dae327a729228216e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98028613"
 ---
 # <a name="deploy-arm-templates-from-azure-cloud-shell"></a>Развертывание шаблонов ARM из Azure Cloud Shell

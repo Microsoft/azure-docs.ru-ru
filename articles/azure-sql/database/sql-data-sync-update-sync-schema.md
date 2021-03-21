@@ -12,10 +12,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 11/14/2018
 ms.openlocfilehash: f9997ea737b96185b31a7f51996a396fb5fc46c4
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92790191"
 ---
 # <a name="automate-the-replication-of-schema-changes-in-azure-sql-data-sync"></a>Автоматическая репликация изменений схемы при синхронизации данных SQL Azure
@@ -84,7 +84,7 @@ INSERT INTO SchemaChanges (SqlStmt, Description)
     VALUES (EVENTDATA().value('(/EVENT_INSTANCE/TSQLCommand/CommandText)[1]', 'nvarchar(max)'), 'From DDL trigger')
 ```
 
-Триггер производит вставку записи в таблицу отслеживания изменений схемы для каждой команды ALTER TABLE. В этом примере добавляется фильтр, чтобы избежать репликации изменений схемы, сделанных в схеме **DataSync** , так как они, скорее всего, внесены службой синхронизации данных. Добавьте дополнительные фильтры, если требуется реплицировать определенные типы изменений схемы.
+Триггер производит вставку записи в таблицу отслеживания изменений схемы для каждой команды ALTER TABLE. В этом примере добавляется фильтр, чтобы избежать репликации изменений схемы, сделанных в схеме **DataSync**, так как они, скорее всего, внесены службой синхронизации данных. Добавьте дополнительные фильтры, если требуется реплицировать определенные типы изменений схемы.
 
 Кроме того, можно добавить другие триггеры для репликации других типов изменений схемы. Например, создайте триггеры CREATE_PROCEDURE, ALTER_PROCEDURE и DROP_PROCEDURE, чтобы реплицировать изменения в хранимые процедуры.
 

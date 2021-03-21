@@ -9,10 +9,10 @@ ms.custom: references_regions
 ms.date: 10/30/2020
 ms.author: normesta
 ms.openlocfilehash: be440407fb6f4d9715ba80c584af023a5f662394
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93324230"
 ---
 # <a name="premium-tier-for-azure-data-lake-storage"></a>Уровень "Премиум" для Azure Data Lake Storage
@@ -71,7 +71,7 @@ AI/ML обрабатывает потребление и обработку ра
 > [!div class="mx-imgBorder"]
 > ![Параметр иерархического пространства имен](./media/create-data-lake-storage-account/hierarchical-namespace-feature.png)
 
-## <a name="regional-availability"></a>Доступность по регионам
+## <a name="regional-availability"></a>Доступность в регионах
 
 Уровень "Премиум" для Azure Data Lake Storage доступен в следующих регионах.
 
@@ -80,7 +80,7 @@ AI/ML обрабатывает потребление и обработку ра
 |Восточная часть США|LRS, ZRS|
 |восточная часть США 2|LRS, ZRS|
 |Центральная часть США|LRS|
-|западная часть США|LRS|
+|Западная часть США|LRS|
 |Западная часть США 2|LRS, ZRS|
 |центрально-западная часть США|LRS|
 |Центрально-южная часть США|LRS|
@@ -97,12 +97,12 @@ AI/ML обрабатывает потребление и обработку ра
 |Центральная Индия|LRS|
 |Западная Индия|LRS|
 |Северная часть ОАЭ;|LRS|
-|Восточная Япония|LRS|
+|Japan East|LRS|
 |Западная Япония|LRS|
 |Юго-Восточная Азия|LRS, ZRS|
 |Восточная Австралия|LRS, ZRS|
 |Юго-Восточная Австралия|LRS|
-|Южная Бразилия|LRS|
+|Brazil South|LRS|
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

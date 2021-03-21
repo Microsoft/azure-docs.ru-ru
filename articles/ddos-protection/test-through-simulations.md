@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 09/08/2020
 ms.author: yitoh
 ms.openlocfilehash: 3be8682b3a12f06aa83db1791cb0ed125bbcee7e
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101719242"
 ---
 # <a name="test-through-simulations"></a>Тестирование через моделирования
@@ -32,7 +32,7 @@ ms.locfileid: "101719242"
 > [!NOTE]
 > Облако BreakingPoint доступно только для общедоступного облака.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Прежде чем выполнять действия, описанные в этом руководстве, необходимо создать [план защиты Azure от атак DDoS Standard](manage-ddos-protection.md) с защищенными общедоступными IP-адресами.
 - Сначала необходимо создать учетную запись с [BreakingPoint Cloud](http://breakingpoint.cloud/). 

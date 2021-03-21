@@ -7,10 +7,10 @@ ms.reviewer: estfan, logicappspm, azla
 ms.topic: article
 ms.date: 02/12/2021
 ms.openlocfilehash: 4b431220dbab49b74f38a8f37be8aac1a0c5c460
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100382894"
 ---
 # <a name="connectors-for-azure-logic-apps"></a>Соединители для Azure Logic Apps
@@ -468,7 +468,7 @@ Logic Apps предоставляет эти соединители предпр
 
 Эта ошибка возникает из-за обновления тегов в приложении логики, где одно или несколько подключений не поддерживают проверку подлинности OAuth Azure Active Directory (Azure AD), например SFTP AD SQL, нарушая эти соединения. Чтобы предотвратить такое поведение, старайтесь не обновлять эти теги.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Просмотр [полного списка соединителей](/connectors)
 * [Создание первого приложения логики](../logic-apps/quickstart-create-first-logic-app-workflow.md)

@@ -11,10 +11,10 @@ ms.date: 09/22/2020
 ms.topic: how-to
 zone_pivot_groups: client-operating-system-macos-and-linux-windows-powershell
 ms.openlocfilehash: d7c611f1cdb5e3294e38f87c0534003813e50388
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100575689"
 ---
 # <a name="upload-metrics-to-azure-monitor"></a>Отправка метрик в Azure Monitor
@@ -26,9 +26,9 @@ ms.locfileid: "100575689"
 
 [!INCLUDE [azure-arc-data-preview](../../../includes/azure-arc-data-preview.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
-Прежде чем продолжать, убедитесь, что вы создали требуемый субъект-службу и назначили его соответствующей роли. Дополнительные сведения см. в разделе:
+Прежде чем продолжать, убедитесь, что вы создали требуемый субъект-службу и назначили его соответствующей роли. Подробная информация доступна в следующих статьях:
 * [Создание субъекта-службы](upload-metrics-and-logs-to-azure-monitor.md#create-service-principal).
 * [Назначение ролей субъекту-службе](upload-metrics-and-logs-to-azure-monitor.md#assign-roles-to-the-service-principal)
 
@@ -201,7 +201,7 @@ watch -n 1200 ./myuploadscript.sh
 
 Для отправки метрик Azure Monitor принимает только последние 30 минут данных (дополнительные[сведения](../../azure-monitor/essentials/metrics-store-custom-rest-api.md#troubleshooting)). Рекомендации по передаче метрик можно передать сразу после создания файла экспорта, чтобы вы могли просмотреть весь набор данных в портал Azure. Например, если вы экспортировали метрики в 2:00 PM и выполнили команду upload в 2:50 РМ. Поскольку Azure Monitor принимает данные только за последние 30 минут, на портале могут не отображаться данные. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Отправка журналов в Azure Monitor](upload-logs.md)
 

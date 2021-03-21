@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 08/26/2020
 ms.author: yelevin
 ms.openlocfilehash: 0b2a6088effc735076d56ba83dd85135392147b8
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100574994"
 ---
 # <a name="import-threat-intelligence-into-azure-sentinel"></a>Импорт аналитики угроз в Azure Sentinel
@@ -423,7 +423,7 @@ ms.locfileid: "100574994"
 
 Существует также обширное сообщество [Azure Monitor книг на GitHub](https://github.com/microsoft/Application-Insights-Workbooks) , где можно скачать дополнительные шаблоны и включить в него собственные шаблоны.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этом документе вы узнали о возможностях Azure Sentinel и новой колонке "аналитика угроз" для анализа угроз. Практические рекомендации по использованию функций анализа угроз Azure Sentinel см. в следующих статьях:
 
 - [Подключение данных аналитики угроз](./connect-threat-intelligence.md) к Azure Sentinel.

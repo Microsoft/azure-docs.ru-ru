@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 02/28/2019
 ms.author: mayg
 ms.openlocfilehash: ff612b7c052ead5658ea4bbfafd7aace51ba3c02
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96017446"
 ---
 # <a name="manage-the-configuration-server-for-physical-server-disaster-recovery"></a>Управление сервером конфигурации для аварийного восстановления физических серверов
@@ -20,7 +20,7 @@ ms.locfileid: "96017446"
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В приведенной ниже таблице перечислены предварительные требования для развертывания серверного компьютера в локальной конфигурации.
 
@@ -71,7 +71,7 @@ ms.locfileid: "96017446"
      ![Брандмауэр](./media/physical-manage-configuration-server/combined-wiz4.png)
 6. В окне **Проверка необходимых компонентов** программа установки проверяет возможность установки. Если появится предупреждение о **проверке глобальной синхронизации времени**, убедитесь, что время системных часов (параметры **даты и времени**) соответствует часовому поясу.
 
-    ![Предварительные требования](./media/physical-manage-configuration-server/combined-wiz5.png)
+    ![Предварительные условия](./media/physical-manage-configuration-server/combined-wiz5.png)
 7. На странице **Конфигурация MySQL** создайте учетные данные для входа в экземпляр сервера MySQL, который будет установлен.
 
     ![MySQL](./media/physical-manage-configuration-server/combined-wiz6.png)
@@ -108,7 +108,7 @@ ms.locfileid: "96017446"
 
 ### <a name="parameters"></a>Параметры
 
-|Имя параметра| Тип | Описание| Значения|
+|имени параметра| Type | Описание| Значения|
 |-|-|-|-|
 | /ServerMode|Обязательно|Указывает, нужно ли установить и сервер конфигурации, и сервер обработки или только север обработки.|CS<br>PS|
 |/InstallLocation|Обязательно|Папка для установки компонентов.| Любая папка на компьютере.|
@@ -158,7 +158,7 @@ ProxyPassword="Password"
    ![register-configuration-server](./media/physical-manage-configuration-server/register-csconfiguration-server.png)
 5. Укажите сведения о новом прокси-сервере и нажмите кнопку **Зарегистрировать**.
 6. Откройте командную строку PowerShell с правами администратора.
-7. Выполните следующую команду:
+7. Выполните следующую команду.
 
    ```powershell
    $Pwd = ConvertTo-SecureString -String MyProxyUserPassword
@@ -313,6 +313,6 @@ ProxyPassword="Password"
 ## <a name="common-issues"></a>Распространенные проблемы
 [!INCLUDE [site-recovery-vmware-to-azure-install-register-issues](../../includes/site-recovery-vmware-to-azure-install-register-issues.md)]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Ознакомьтесь с руководствами по настройке аварийного восстановления [физических серверов](./physical-azure-disaster-recovery.md) в Azure.

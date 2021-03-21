@@ -13,10 +13,10 @@ ms.author: rohitna
 ms.reviewer: genemi, amagarwa, maboja, jrasnick, vanto
 ms.date: 05/14/2019
 ms.openlocfilehash: 02cfd839ed1b75fd85553f2e5a5150cadc29ff8e
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92790463"
 ---
 # <a name="powershell-for-dns-alias-to-azure-sql-database"></a>Управление псевдонимом DNS для Базы данных SQL Azure с помощью PowerShell
@@ -35,14 +35,14 @@ ms.locfileid: "92790463"
 
    `<yourServer>.database.windows.net`
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы выполнить пример скрипта PowerShell, приведенный в этой статье, потребуются следующие компоненты:
 
 - Подписка и учетная запись Azure для бесплатной пробной версии см. в статье пробная версия [Azure](https://azure.microsoft.com/free/) .
 - Два сервера
 
-## <a name="example"></a>Например, .
+## <a name="example"></a>Пример
 
 Следующий пример кода начинается с присвоения литеральных значений нескольким переменным.
 
@@ -59,7 +59,7 @@ ms.locfileid: "92790463"
 
 Чтобы выполнить установку или обновление, см. статью [Установка и настройка Azure PowerShell](/powershell/azure/install-az-ps).
 
-`Get-Module -ListAvailable Az`Чтобы найти версию, используйте в *\_ise.exePowerShell* .
+`Get-Module -ListAvailable Az`Чтобы найти версию, используйте в *\_ise.exePowerShell*.
 
 ```powershell
 $subscriptionName = '<subscriptionName>';
