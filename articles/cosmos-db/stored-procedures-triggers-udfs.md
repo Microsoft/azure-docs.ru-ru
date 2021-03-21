@@ -9,10 +9,10 @@ ms.date: 04/09/2020
 ms.author: tisande
 ms.reviewer: sngun
 ms.openlocfilehash: ad9e6b99b396465c2cff95bd6ab340ef9d668085
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99575963"
 ---
 # <a name="stored-procedures-triggers-and-user-defined-functions"></a>Хранимые процедуры, триггеры и определяемые пользователем функции
@@ -93,7 +93,7 @@ Azure Cosmos DB предоставляет триггеры, которые мо
 > [!NOTE]
 > Зарегистрированные триггеры не запускаются автоматически при выполнении соответствующих операций (Create, DELETE, Replace/Update). При выполнении этих операций их приходится вызывать явным образом. Дополнительные сведения см. в статье [запуск триггеров](how-to-use-stored-procedures-triggers-udfs.md#pre-triggers) .
 
-## <a name="user-defined-functions"></a><a id="udfs"></a>Определяемые пользователем функции
+## <a name="user-defined-functions"></a><a id="udfs"></a>Пользовательские функции
 
 [Определяемые пользователем функции](sql-query-udfs.md) (UDF) используются для расширения синтаксиса языка запросов API SQL и упрощения реализации собственной бизнес-логики. Их можно вызвать только внутри запросов. Определяемые пользователем функции не имеют доступа к объектам контекста и предназначены для использования только в качестве вычислимых скриптов JavaScript. Таким образом, определяемые пользователем функции могут запускаться только на дополнительных репликах. Примеры см. в статье [Как записать определяемые пользователем функции](how-to-write-stored-procedures-triggers-udfs.md#udfs).
 
@@ -101,7 +101,7 @@ Azure Cosmos DB предоставляет триггеры, которые мо
 
 Кроме выдачи запросов с использованием синтаксиса запросов API SQL, [серверный пакет SDK](https://azure.github.io/azure-cosmosdb-js-server) позволяет создавать запросы с помощью интерфейса JavaScript без знания языка SQL. API запросов JavaScript позволяет программно создавать запросы, передавая функции предикатов в последовательность вызовов функций. Запросы анализируются средой выполнения JavaScript и эффективно выполняются в Azure Cosmos DB. Дополнительные сведения о поддержке API запросов JavaScript см. в статье [Working with JavaScript language integrated query API](javascript-query-api.md) (Как работать с API запросов с интегрированным языком JavaScript). Примеры см. в статье [How to write stored procedures and triggers using Javascript Query API](how-to-write-javascript-query-api.md) (Как записывать хранимые процедуры и триггеры в Azure Cosmos DB с помощью API запросов JavaScript).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о том, как записать и использовать хранимые процедуры, триггеры и определяемые пользователем функции в Azure Cosmos DB, см. в этих статьях:
 

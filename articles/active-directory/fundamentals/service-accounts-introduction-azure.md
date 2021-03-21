@@ -13,12 +13,12 @@ ms.author: baselden
 ms.reviewer: ajburnle
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 049025a5d871f1dd26e5dab498756aa44d2ebfe2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 27353e6086085aadae622e007a38f97e15cbcb7f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101693289"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104587871"
 ---
 # <a name="introduction-to-securing-azure-service-accounts"></a>Общие сведения о защите учетных записей служб Azure
 
@@ -38,13 +38,13 @@ ms.locfileid: "101693289"
 
 ## <a name="managed-identities"></a>Управляемые удостоверения
 
-Управляемые удостоверения — это безопасные Azure Active Directory удостоверения (Azure AD), созданные для предоставления удостоверений для ресурсов Azure. Существует [два типа управляемых удостоверений](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview#managed-identity-types): 
+Управляемые удостоверения — это безопасные Azure Active Directory удостоверения (Azure AD), созданные для предоставления удостоверений для ресурсов Azure. Существует [два типа управляемых удостоверений](../managed-identities-azure-resources/overview.md#managed-identity-types): 
  
 * Назначенные системой управляемые удостоверения могут быть назначены непосредственно экземпляру службы. 
 
 * Управляемые удостоверения, назначаемые пользователем, могут быть созданы как автономный ресурс. 
 
-Дополнительные сведения см. в разделе [Защита управляемых удостоверений](service-accounts-managed-identities.md). Общие сведения об управляемых удостоверениях см. в статье [что такое управляемые удостоверения для ресурсов Azure?](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview)
+Дополнительные сведения см. в разделе [Защита управляемых удостоверений](service-accounts-managed-identities.md). Общие сведения об управляемых удостоверениях см. в статье [что такое управляемые удостоверения для ресурсов Azure?](../managed-identities-azure-resources/overview.md)
 
 ## <a name="service-principals"></a>Субъекты-службы
 
@@ -67,6 +67,3 @@ ms.locfileid: "101693289"
 [Защита субъектов-служб](service-accounts-principal.md)
 
 [Управление учетными записями служб Azure](service-accounts-governing-azure.md)
-
-
-

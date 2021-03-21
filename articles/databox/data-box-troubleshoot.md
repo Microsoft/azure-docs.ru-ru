@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.date: 09/10/2020
 ms.author: alkohli
 ms.openlocfilehash: bb70946fda4fad7a42fd885a2515cb0d82698eca
-ms.sourcegitcommit: 7dacbf3b9ae0652931762bd5c8192a1a3989e701
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92124685"
 ---
 # <a name="troubleshoot-issues-related-to-azure-data-box-and-azure-data-box-heavy"></a>Устранение неполадок, связанных с Azure Data Box и Azure Data Box Heavy
@@ -104,7 +104,7 @@ ms.locfileid: "92124685"
 - На странице Подключение и копирование локального веб-интерфейса Скачайте и проверьте файлы ошибок, чтобы найти имена папок с проблемами. 
 - Переименуйте каталог или контейнеры, чтобы убедиться, что они соответствуют соглашениям об именовании Azure.
 
-Дополнительные сведения см. в разделе соглашения об именовании Azure для [каталогов](/rest/api/storageservices/naming-and-referencing-shares--directories--files--and-metadata#directory-and-file-names)   и [контейнеров](/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata#container-names).
+Дополнительные сведения см. в разделе соглашения об именовании Azure для [каталогов](/rest/api/storageservices/naming-and-referencing-shares--directories--files--and-metadata#directory-and-file-names) и [контейнеров](/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata#container-names).
 
 ## <a name="container-or-share-size-limit-errors"></a>Ошибки ограничения размера контейнера или общего ресурса
 
@@ -260,6 +260,6 @@ ms.locfileid: "92124685"
 Дополнительные сведения см. [в статье копирование на управляемые диски](data-box-deploy-copy-data-from-vhds.md#connect-to-data-box).
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о [требованиях к системе для хранилища BLOB-объектов Data Box](data-box-system-requirements-rest.md).

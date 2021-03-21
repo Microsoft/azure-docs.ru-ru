@@ -10,10 +10,10 @@ ms.subservice: studio-classic
 ms.topic: how-to
 ms.date: 06/15/2017
 ms.openlocfilehash: c9ce9b7b0d739301e76abd43b265fe28195ed302
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100518289"
 ---
 # <a name="enable-logging-for-azure-machine-learning-studio-classic-web-services"></a>Включение ведения журнала для веб-служб Машинное обучение Azure Studio (классическая модель)
@@ -43,7 +43,7 @@ ms.locfileid: "100518289"
 
    ![Выбор уровня ведения журнала](./media/web-services-logging/enable-logging.png)
 
-6. Нажмите кнопку **Сохранить**.
+6. Выберите команду **Сохранить**.
 
 7. Для классических веб-служб создайте контейнер **ml-diagnostics**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "100518289"
 
    2. В колонке **Служба BLOB-объектов** щелкните **Контейнеры**.
 
-   3. Если контейнер **ml-diagnostics** не существует, щелкните **+Контейнер**, присвойте контейнеру имя ml-diagnostics и выберите **Тип доступа** "BLOB-объект". Нажмите кнопку **ОК**.
+   3. Если контейнер **ml-diagnostics** не существует, щелкните **+Контейнер**, присвойте контейнеру имя ml-diagnostics и выберите **Тип доступа** "BLOB-объект". Нажмите кнопку **OK**.
 
       ![Создание нового контейнера для хранения журналов диагностики](./media/web-services-logging/create-ml-diagnostics-container.png)
 

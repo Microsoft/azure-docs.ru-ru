@@ -13,17 +13,17 @@ ms.topic: article
 ms.date: 01/27/2017
 ms.author: twooley
 ms.openlocfilehash: c6520036f3ddb8799025129391330268b0604886
-ms.sourcegitcommit: a4533b9d3d4cd6bb6faf92dd91c2c3e1f98ab86a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97723812"
 ---
 # <a name="migrate-azure-data-lake-storage-gen1-across-regions"></a>Перенос Data Lake Storage 1-го поколения между регионами
 
 Когда служба Azure Data Lake Storage 1-го поколения становится доступной в новых регионах, вам может понадобиться выполнить однократный перенос, чтобы воспользоваться преимуществами нового региона. Узнайте, что необходимо учесть при планировании и выполнении переноса.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * **Подписка Azure**. Чтобы получить дополнительные сведения, ознакомьтесь со страницей [Создайте бесплатную учетную запись Azure уже сегодня](https://azure.microsoft.com/pricing/free-trial/).
 * **Учетная запись Data Lake Storage 1-го поколения в двух разных регионах**. Дополнительные сведения см. в статье [Начало работы с Azure Data Lake Storage 1-го поколения](data-lake-store-get-started-portal.md).

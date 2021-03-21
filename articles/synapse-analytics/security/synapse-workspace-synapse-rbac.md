@@ -9,10 +9,10 @@ ms.date: 12/1/2020
 ms.author: ronytho
 ms.reviewer: jrasnick
 ms.openlocfilehash: 9e96d6decba679c7a4764a77f1e9720000faf78c
-ms.sourcegitcommit: 126ee1e8e8f2cb5dc35465b23d23a4e3f747949c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100105153"
 ---
 # <a name="what-is-synapse-role-based-access-control-rbac"></a>Что такое синапсе управления доступом на основе ролей (RBAC)?
@@ -87,7 +87,7 @@ _Область_ определяет ресурсы или артефакты, 
 
 Управление синапсе RBAC осуществляется из среды синапсе Studio с помощью средств управления доступом в центре управления. 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Изучите встроенные [роли RBAC синапсе](./synapse-workspace-synapse-rbac-roles.md).
 

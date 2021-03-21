@@ -2,14 +2,14 @@
 title: Удаление группы ресурсов и ресурсов
 description: Описание удаления групп ресурсов и ресурсов. В нем описано, как Azure Resource Manager упорядочивает удаление ресурсов при удалении группы ресурсов. В этой статье описываются коды отклика и объясняется, как Resource Manager обрабатывает их для определения, успешно ли выполнено удаление.
 ms.topic: conceptual
-ms.date: 09/03/2019
+ms.date: 03/18/2021
 ms.custom: seodec18
-ms.openlocfilehash: d6c38169916cc6c47d6f05c88645fa435bbdb146
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 244d59ffc096b5e219e27fd376b07baecde3670e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91614416"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104587667"
 ---
 # <a name="azure-resource-manager-resource-group-and-resource-deletion"></a>Azure Resource Manager удаления группы ресурсов и ресурса
 
@@ -111,7 +111,7 @@ az resource delete \
 
 1. На [портале](https://portal.azure.com)выберите ресурс, который необходимо удалить.
 
-1. Выберите команду **Удалить**. На следующем снимке экрана показаны параметры управления для виртуальной машины.
+1. Нажмите кнопку **Удалить**. На следующем снимке экрана показаны параметры управления для виртуальной машины.
 
    ![Удалить ресурс](./media/delete-resource-group/delete-resource.png)
 
@@ -119,6 +119,13 @@ az resource delete \
 
 ---
 
+## <a name="required-access"></a>Требуемый доступ
+
+Чтобы удалить группу ресурсов, необходимо получить доступ к действию удалить для ресурса **Microsoft. Resources/Subscriptions/resourceGroups** . Также необходимо удалить все ресурсы в группе ресурсов.
+
+Список операций см. в статье [операции с поставщиками ресурсов Azure](../../role-based-access-control/resource-provider-operations.md). Список встроенных ролей см. [в статье встроенные роли Azure](../../role-based-access-control/built-in-roles.md).
+
+Если у вас есть необходимый доступ, но запрос на удаление завершается неудачно, это может быть вызвано [блокировкой](lock-resources.md) группы ресурсов.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

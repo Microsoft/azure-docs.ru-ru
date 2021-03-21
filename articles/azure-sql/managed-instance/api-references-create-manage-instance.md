@@ -12,10 +12,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 03/12/2019
 ms.openlocfilehash: cf100861705bf1654b7206445c884b5fe315b06d
-ms.sourcegitcommit: 400f473e8aa6301539179d4b320ffbe7dfae42fe
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92792639"
 ---
 # <a name="managed-api-reference-for-azure-sql-managed-instance"></a>Справочник по API управления для Управляемого экземпляра SQL Azure
@@ -83,7 +83,7 @@ ms.locfileid: "92792639"
 > [!IMPORTANT]
 > Нельзя создать или удалить управляемый экземпляр с помощью Transact-SQL.
 
-| Get-Help | Описание |
+| Команда | Описание |
 | --- | --- |
 |[CREATE DATABASE](/sql/t-sql/statements/create-database-transact-sql?preserve-view=true&view=azuresqldb-mi-current)|Создает новую базу данных экземпляра в SQL Управляемый экземпляр. Для создания новой базы данных необходимо подключение к базе данных master.|
 | [ALTER DATABASE](/sql/t-sql/statements/alter-database-transact-sql?preserve-view=true&view=azuresqldb-mi-current) |Изменяет экземпляр базы данных в Управляемый экземпляр SQL.|
@@ -92,7 +92,7 @@ ms.locfileid: "92792639"
 
 Чтобы создать и настроить управляемые экземпляры, используйте следующие запросы REST API.
 
-| Get-Help | Описание |
+| Команда | Описание |
 | --- | --- |
 |[Управляемые экземпляры. Создание или обновление](/rest/api/sql/managedinstances/createorupdate)|Создает или обновляет управляемый экземпляр.|
 |[Управляемые экземпляры. Удаление](/rest/api/sql/managedinstances/delete)|Удаляет управляемый экземпляр.|

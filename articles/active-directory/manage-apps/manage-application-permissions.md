@@ -13,10 +13,10 @@ ms.author: mimart
 ms.reviewer: luleonpla
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cbd2bc7b9ccc9efe0c6fdf8de02665160667cb8f
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99256938"
 ---
 # <a name="take-action-on-overprivileged-or-suspicious-applications-in-azure-active-directory"></a>Выполнение действий с недостаточными или подозрительными приложениями в Azure Active Directory
@@ -25,7 +25,7 @@ ms.locfileid: "99256938"
 
 Дополнительные сведения о предоставлении согласия для приложений см. в статье [Платформа предоставления согласия Azure Active Directory](../develop/consent-framework.md).
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы выполнить следующие действия, необходимо войти в систему как глобальный администратор, администратор приложения или администратор облачных приложений.
 

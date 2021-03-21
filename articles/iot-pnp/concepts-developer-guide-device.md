@@ -1,6 +1,6 @@
 ---
-title: Руководством для разработчиков устройств (C) — Plug and Play IoT | Документация Майкрософт
-description: Описание Plug and Play IoT для разработчиков устройств C
+title: Руководством для разработчиков устройств (C) — самонастраивающийся IoT | Документация Майкрософт
+description: Описание самонастраивающийся IoT для разработчиков устройств C
 author: rido-min
 ms.author: rmpablos
 ms.date: 11/19/2020
@@ -8,29 +8,29 @@ ms.topic: conceptual
 ms.service: iot-pnp
 services: iot-pnp
 zone_pivot_groups: programming-languages-set-twenty-six
-ms.openlocfilehash: 339ae9a0a799a0a03f1fcf37dadf2e1ffa724243
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.openlocfilehash: 0cca47269e632e1fcba1f8f9eb1c835f27e63059
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97028688"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104582839"
 ---
-# <a name="iot-plug-and-play-device-developer-guide"></a>Справочное руководством для разработчиков IoT Plug and Play
+# <a name="iot-plug-and-play-device-developer-guide"></a>Справочное руководством для разработчиков IoT самонастраивающийся
 
-Plug and Play IoT позволяет создавать интеллектуальные устройства, которые объявляют свои возможности для приложений Интернета вещей Azure. Устройства IoT Plug and Play не нуждаются в ручной настройке, когда клиент подключает их к приложениям с поддержкой Интернета вещей Plug and Play.
+Самонастраивающийся IoT позволяет создавать интеллектуальные устройства, которые объявляют свои возможности для приложений Интернета вещей Azure. Устройства IoT самонастраивающийся не нуждаются в ручной настройке, когда клиент подключает их к приложениям с поддержкой Интернета вещей самонастраивающийся.
 
 Смарт-устройство может быть реализовано напрямую, использовать [модули](../iot-hub/iot-hub-devguide-module-twins.md)или использовать [модули IOT Edge](../iot-edge/about-iot-edge.md).
 
-В этом руководстве описываются основные шаги, необходимые для создания устройства, модуля или IoT Edge модуля, который соответствует [соглашениям Plug and Play IOT](../iot-pnp/concepts-convention.md).
+В этом руководстве описываются основные шаги, необходимые для создания устройства, модуля или IoT Edge модуля, который соответствует [соглашениям Самонастраивающийся IOT](../iot-pnp/concepts-convention.md).
 
-Чтобы создать модуль Plug and Play для устройства, модуля или IoT Edge IoT, выполните следующие действия.
+Чтобы создать модуль самонастраивающийся для устройства, модуля или IoT Edge IoT, выполните следующие действия.
 
 1. Убедитесь, что устройство использует протокол MQTT или MQTT через WebSocket для подключения к центру Интернета вещей Azure.
-1. Создайте модель [дтдл (Digital двойников Definition Language)](https://github.com/Azure/opendigitaltwins-dtdl) для описания устройства. Дополнительные сведения см. в разделе [Знакомство с компонентами в Plug and Playных моделях Интернета вещей](concepts-components.md).
+1. Создайте модель [дтдл (Digital двойников Definition Language)](https://github.com/Azure/opendigitaltwins-dtdl) для описания устройства. Дополнительные сведения см. в разделе [Знакомство с компонентами в самонастраивающийсяных моделях Интернета вещей](concepts-modeling-guide.md).
 1. Обновите устройство или модуль, чтобы объявить `model-id` об этом как часть подключения устройства.
-1. Реализация телеметрии, свойств и команд с помощью [соглашений Plug and Play IOT](concepts-convention.md)
+1. Реализация телеметрии, свойств и команд с помощью [соглашений Самонастраивающийся IOT](concepts-convention.md)
 
-Когда ваша реализация устройства или модуля будет готова, воспользуйтесь [обозревателем Azure IOT](howto-use-iot-explorer.md) , чтобы проверить, соответствует ли устройство правилам Plug and Play IOT.
+Когда ваша реализация устройства или модуля будет готова, воспользуйтесь [обозревателем Azure IOT](howto-use-iot-explorer.md) , чтобы проверить, соответствует ли устройство правилам Самонастраивающийся IOT.
 
 :::zone pivot="programming-language-ansi-c"
 
@@ -64,11 +64,11 @@ Plug and Play IoT позволяет создавать интеллектуал
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Теперь, когда вы узнали о разработке Plug and Play для устройств IoT, ниже приведены некоторые дополнительные ресурсы.
+Теперь, когда вы узнали о разработке самонастраивающийся для устройств IoT, ниже приведены некоторые дополнительные ресурсы.
 
 - [Язык определения цифровых двойников (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl)
-- [Пакет SDK для устройств для C](/azure/iot-hub/iot-c-sdk-ref/)
+- [Пакет SDK для устройств C](/azure/iot-hub/iot-c-sdk-ref/)
 - [REST API IoT](/rest/api/iothub/device)
-- [Компоненты модели](concepts-components.md)
+- [Общие сведения о компонентах в моделях самонастраивающийся IoT](concepts-modeling-guide.md)
 - [Установка и использование средств разработки ДТДЛ](howto-use-dtdl-authoring-tools.md)
-- [Руководством для разработчиков служб IoT Plug and Play](concepts-developer-guide-service.md)
+- [Руководством для разработчиков служб IoT самонастраивающийся](concepts-developer-guide-service.md)

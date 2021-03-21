@@ -5,10 +5,10 @@ ms.topic: article
 ms.date: 03/16/2020
 ms.author: sagupt
 ms.openlocfilehash: 1c82abf3c8bea07941f860b94fcfe92954fb7641
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100579817"
 ---
 # <a name="configure-periodic-summary-for-recommendations"></a>Настройка периодической сводки по рекомендациям
@@ -51,7 +51,7 @@ ms.locfileid: "100579817"
 * **Шаг 6.** В этом последнем разделе для **получения подробных сведений о дайджесте** можно назначить имя и состояние дайджесту рекомендаций. Чтобы завершить настройку, нажмите кнопку **создать дайджест-рекомендацию** .
    ![Завершение создания дайджеста рекомендаций](./media/digest-4.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о рекомендациях Помощника см. в следующих разделах.
 * [Общие сведения о Помощнике по Azure](advisor-overview.md)

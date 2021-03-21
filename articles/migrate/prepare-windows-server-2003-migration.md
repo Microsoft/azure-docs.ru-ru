@@ -7,10 +7,10 @@ ms.manager: bsiva
 ms.topic: how-to
 ms.date: 05/27/2020
 ms.openlocfilehash: f8d3dea970d07d951467a44661e12000ba413f72
-ms.sourcegitcommit: ea551dad8d870ddcc0fee4423026f51bf4532e19
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96753759"
 ---
 # <a name="prepare-windows-server-2003-machines-for-migration"></a>Подготовка компьютеров Windows Server 2003 к миграции
@@ -52,7 +52,7 @@ ms.locfileid: "96753759"
 9. После выполнения скрипта и установки Hyper-V Integration Services на виртуальной машине Azure можно удалить скрипт из запуска.
 10. После установки можно оставить параметры по умолчанию в Integration Services. 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь с требованиями к миграции для виртуальных машин [VMware](migrate-support-matrix-vmware-migration.md) и [Hyper-V](migrate-support-matrix-hyper-v-migration.md) .
 - Перенос виртуальных машин [VMware](server-migrate-overview.md) и [Hyper-V](tutorial-migrate-hyper-v.md) .

@@ -7,10 +7,10 @@ ms.date: 03/30/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: bfe8026f099c341b68a1aa1fc5e3fac425e29403
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100578896"
 ---
 # <a name="use-log-analytics-for-the-diagnostics-feature-in-windows-virtual-desktop-classic"></a>Использование Log Analytics для компонента "Диагностика" в виртуальном рабочем столе Windows (классическая модель)
@@ -132,6 +132,6 @@ Set-RdsTenant -Name <TenantName> -AzureSubscriptionId <SubscriptionID> -LogAnaly
 
 Этот командлет потребуется выполнить для каждого клиента, с которого необходимо запретить отправку данных.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы просмотреть распространенные сценарии ошибок, которые может определить функция диагностики, см. раздел [Определение и диагностика проблем](diagnostics-role-service-2019.md#common-error-scenarios).

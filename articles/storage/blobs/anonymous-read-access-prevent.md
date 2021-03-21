@@ -11,10 +11,10 @@ ms.author: tamram
 ms.reviewer: fryu
 ms.subservice: blobs
 ms.openlocfilehash: 53f29c2b8f7a17ac2a23cc081660e8dcb4b9f387
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101701864"
 ---
 # <a name="prevent-anonymous-public-read-access-to-containers-and-blobs"></a>Запретить анонимный общий доступ на чтение к контейнерам и BLOB-объектам

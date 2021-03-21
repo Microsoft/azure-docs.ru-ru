@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 12/07/2020
 ms.custom: devx-track-js
 ms.openlocfilehash: 3f88fa38d62778bc3c4c1e29571d1d0ae4eeb5ff
-ms.sourcegitcommit: c136985b3733640892fee4d7c557d40665a660af
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98179611"
 ---
 # <a name="add-and-run-code-snippets-by-using-inline-code-in-azure-logic-apps"></a>Добавление и выполнение фрагментов кода с помощью встроенного кода в Azure Logic Apps
@@ -147,7 +147,7 @@ ms.locfileid: "98179611"
 
 Эта таблица содержит дополнительные сведения об этих вложенных свойствах.
 
-| Свойство. | Тип | Описание |
+| Свойство. | Type | Описание |
 |----------|------|-------|
 | `actions` | Коллекция объектов | Результирующие объекты из действий, выполняемых перед выполнением фрагмента кода. Каждый объект имеет пару " *ключ-значение* ", где ключ — это имя действия, а значение эквивалентно вызову [функции Actions ()](../logic-apps/workflow-definition-language-functions-reference.md#actions) с параметром `@actions('<action-name>')` . Имя действия использует то же имя действия, которое используется в базовом определении рабочего процесса, которое заменяет пробелы ("") в имени действия символом подчеркивания (_). Этот объект предоставляет доступ к значениям свойств действия из текущего запуска экземпляра рабочего процесса. |
 | `trigger` | Объект | Результирующий объект из триггера и эквивалент для вызова [функции Trigger ()](../logic-apps/workflow-definition-language-functions-reference.md#trigger). Этот объект предоставляет доступ к значениям свойств триггера из текущего запуска экземпляра рабочего процесса. |

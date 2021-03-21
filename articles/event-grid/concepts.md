@@ -4,10 +4,10 @@ description: В статье описываются служба "Сетка с�
 ms.topic: conceptual
 ms.date: 01/21/2021
 ms.openlocfilehash: 6edc8a3980bfea15f28cfb7114bb9f8350a47a3f
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98685709"
 ---
 # <a name="concepts-in-azure-event-grid"></a>Основные понятия в службе "Сетка событий Azure"

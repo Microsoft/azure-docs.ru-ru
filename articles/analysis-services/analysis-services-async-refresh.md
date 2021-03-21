@@ -9,10 +9,10 @@ ms.author: owend
 ms.reviewer: minewiskan
 ms.custom: references_regions
 ms.openlocfilehash: e9fd20fd42e9fe1eb0e98766798e5c759c974c97
-ms.sourcegitcommit: 2c586a0fbec6968205f3dc2af20e89e01f1b74b5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92013905"
 ---
 # <a name="asynchronous-refresh-with-the-rest-api"></a>Асинхронное обновление с помощью REST API
@@ -98,13 +98,13 @@ https://westus.asazure.windows.net/servers/myserver/models/AdventureWorks/refres
 
 Указывать параметры не обязательно. Применяются значения по умолчанию.
 
-| Имя             | Type  | Описание  |Значение по умолчанию  |
+| Имя             | Type  | Описание  |По умолчанию  |
 |------------------|-------|--------------|---------|
 | `Type`           | Перечисление  | Тип выполняемой обработки. Тип выполняемой обработки зависит от типа [команды refresh](/analysis-services/tmsl/refresh-command-tmsl) TMSL: full, clearValues, calculate, dataOnly, automatic или defragment. Тип add не поддерживается.      |   automatic      |
 | `CommitMode`     | Перечисление  | Определяет, будут объекты зафиксированы в пакетах или только после завершения. Режимы: default, transactional, partialBatch.  |  transactional       |
 | `MaxParallelism` | Int   | Это значение определяет максимальное количество потоков, над которыми можно параллельно выполнять команды обработки. Это значение согласуется со свойством MaxParallelism, которое можно задать, используя [команду sequence](/analysis-services/tmsl/sequence-command-tmsl) или другими способами.       | 10        |
 | `RetryCount`     | Int   | Указывает число попыток повторить операцию, по исчерпании которого будет определен сбой.      |     0    |
-| `Objects`        | Массив | Массив объектов для обработки. Для каждого объекта указываются параметр table, если нужно обработать целую таблицу, или параметры table и partition для обработки секции. Если нет указанных объектов, обновляется вся модель. |   Обработка целой модели      |
+| `Objects`        | Array | Массив объектов для обработки. Для каждого объекта указываются параметр table, если нужно обработать целую таблицу, или параметры table и partition для обработки секции. Если нет указанных объектов, обновляется вся модель. |   Обработка целой модели      |
 
 Значение CommitMode — partialBatch. Оно используется при начальной загрузке для больших наборов данных, что может занять несколько часов. Если обновление завершится сбоем после успешной фиксации одного или нескольких пакетов, эти пакеты останутся зафиксированными (т. е. для них не будет выполнен откат).
 
@@ -223,7 +223,7 @@ https://westus.asazure.windows.net/servers/myserver/models/AdventureWorks/refres
 3.    Запустите образец.
 
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Регистрируют](analysis-services-samples.md)   
 [REST API](/rest/api/analysisservices/servers)

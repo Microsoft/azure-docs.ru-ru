@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 03/31/2020
 ms.author: kumud
 ms.openlocfilehash: ac79e1eb5c4f7448dc17804cd8aac3cba582497e
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "88509949"
 ---
 # <a name="reserve-public-ipv6-address-prefix"></a>Зарезервируйте префикс общедоступного IPv6-адреса
@@ -115,6 +115,6 @@ az network public-ip create \
 --public-ip-prefix  IPv6PrefixWestUS
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения об [префиксе IPv6-адреса](ipv6-public-ip-address-prefix.md).
 - Дополнительные сведения об [IPv6-адресах](ipv6-overview.md).

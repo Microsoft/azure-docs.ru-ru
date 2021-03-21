@@ -12,10 +12,10 @@ ms.date: 03/02/2021
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, references_regions, contperf-fy21q1
 ms.openlocfilehash: 1c3d9b286a8262efa126ba9c661c50dd88e78b64
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103573478"
 ---
 # <a name="virtual-network-isolation-and-privacy-overview"></a>Общие сведения о изоляции и конфиденциальности виртуальной сети
@@ -177,7 +177,7 @@ ms.locfileid: "103573478"
 
 Дополнительные сведения о требуемых доменных именах и IP-адресах см. в статье [Использование рабочей области с пользовательским DNS-сервером](how-to-custom-dns.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Эта статья является частью серии виртуальных сетей из пяти частей. Ознакомьтесь с остальными статьями, чтобы узнать, как защитить виртуальную сеть.
 

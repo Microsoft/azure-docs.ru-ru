@@ -9,10 +9,10 @@ ms.date: 03/12/2020
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 3b68fce603801c7bc1aee2af871df257b5f69197
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96026497"
 ---
 1. Установите клиентские сертификаты на клиенте Windows 10, как показано в статье [клиент VPN типа "точка — сеть](../articles/vpn-gateway/point-to-site-how-to-vpn-client-install-azure-cert.md) ". Сертификат должен находиться в хранилище текущего пользователя.

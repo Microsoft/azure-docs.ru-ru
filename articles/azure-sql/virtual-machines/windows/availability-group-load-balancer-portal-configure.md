@@ -15,10 +15,10 @@ ms.date: 02/16/2017
 ms.author: mathoma
 ms.custom: seo-lt-2019
 ms.openlocfilehash: 6e53a6a4875b3dde55d1822daa342d6cde536d1c
-ms.sourcegitcommit: 24f30b1e8bb797e1609b1c8300871d2391a59ac2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100096435"
 ---
 # <a name="configure-a-load-balancer-for-a-sql-server-always-on-availability-group-in-azure-virtual-machines"></a>Настройка подсистемы балансировки нагрузки для SQL Server Always On группы доступности на виртуальных машинах Azure
@@ -251,7 +251,7 @@ SQLCMD автоматически подключается к экземпляр
 
     |Параметр |Значение
     |:-----|:----
-    |**Имя** |Имя, идентифицирующее правило балансировки нагрузки. 
+    |**имя**; |Имя, идентифицирующее правило балансировки нагрузки. 
     |**Frontend IP address** (Интерфейсный IP-адрес) |Выберите IP-адрес, который вы создали. 
     |**протокол**; |TCP
     |**порт**. |Укажите порт, используемый экземплярами SQL Server. Экземпляр по умолчанию использует порт 1433, если только вы не изменили его. 

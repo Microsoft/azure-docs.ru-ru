@@ -12,10 +12,10 @@ ms.author: rortloff
 ms.reviewer: igorstan
 ms.custom: synapse-analytics
 ms.openlocfilehash: 62064eaae6aa7fb3438845170497035473227d30
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98685214"
 ---
 # <a name="monitor-your-azure-synapse-analytics-dedicated-sql-pool-workload-using-dmvs"></a>Мониторинг выделенной рабочей нагрузки пула SQL Azure синапсе Analytics с помощью динамических административных представлений
@@ -67,7 +67,7 @@ ORDER BY total_elapsed_time DESC;
 
 **Запишите идентификатор запроса**, который вы хотите исследовать. Он указан в приведенных выше результатах запроса.
 
-Запросы в **приостановленном** состоянии могут быть поставлены в очередь из-за большого количества активных выполняющихся запросов. Эти запросы также отображаются в запросе [sys.dm_pdw_waits](/sql/relational-databases/system-dynamic-management-views/sys-dm-pdw-waits-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true) ожидания с типом усерконкурренциресаурцетипе. Сведения об ограничениях параллелизма см. в разделе [ограничения памяти и параллелизма](memory-concurrency-limits.md) или [классы ресурсов для управления рабочей нагрузкой](resource-classes-for-workload-management.md). Запросы также могут быть отложены по другим причинам, в том числе из-за блокировки объектов.  Если запрос ожидает ресурс, ознакомьтесь с разделом [Исследование запросов, ожидающих ресурсы](#monitor-waiting-queries) далее в этой статье.
+Запросы с состоянием **Приостановлено** можно поставить в очередь ввиду большого количества активных выполняющихся запросов. Эти запросы также отображаются в запросе [sys.dm_pdw_waits](/sql/relational-databases/system-dynamic-management-views/sys-dm-pdw-waits-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true) ожидания с типом усерконкурренциресаурцетипе. Сведения об ограничениях параллелизма см. в разделе [ограничения памяти и параллелизма](memory-concurrency-limits.md) или [классы ресурсов для управления рабочей нагрузкой](resource-classes-for-workload-management.md). Запросы также могут быть отложены по другим причинам, в том числе из-за блокировки объектов.  Если запрос ожидает ресурс, см. раздел [исследование запросов, ожидающих ресурсы](#monitor-waiting-queries) далее в этой статье.
 
 Чтобы упростить поиск запроса в [sys.dm_pdw_exec_requests](/sql/relational-databases/system-dynamic-management-views/sys-dm-pdw-exec-requests-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true) таблице, используйте [Label](/sql/t-sql/queries/option-clause-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true) , чтобы назначить комментарий для запроса, который можно найти в представлении sys.dm_pdw_exec_requests.
 
@@ -98,16 +98,16 @@ WHERE request_id = 'QID####'
 ORDER BY step_index;
 ```
 
-Если план DSQL выполняется больше времени, чем ожидалось, причина может быть в том, что это сложный план со множеством действий DSQL или только одним этапом, который выполняется слишком долго.  Если план содержит множество действий с несколькими операциями перемещения, рассмотрите возможность оптимизировать распределение таблиц, чтобы сократить перемещение данных. В статье о [распределении таблиц](sql-data-warehouse-tables-distribute.md) объясняется, почему данные должны быть перемещены для решения запроса. В статье также объясняются стратегии распространения для сворачивания перемещения данных.
+Если план DSQL выполняется больше времени, чем ожидалось, причина может быть в том, что это сложный план со множеством действий DSQL или только одним этапом, который выполняется слишком долго.  Если план содержит множество действий с несколькими операциями перемещения, рассмотрите возможность оптимизировать распределение таблиц, чтобы сократить перемещение данных. В статье [Распределение таблиц](sql-data-warehouse-tables-distribute.md) поясняется, почему для решения запроса требуется переместить данные. В статье также объясняются стратегии распределения для сведения к минимуму перемещения данных.
 
-Чтобы узнать больше об отдельном этапе, перейдите к столбцу *operation_type* самого длительного этапа запроса и запишите значение **Индекс этапа**:
+Чтобы просмотреть дополнительные сведения об одном шаге, *operation_type* столбец длительно выполняемого шага запроса и обратите внимание на **Индекс шага**:
 
-* Перейдите к шагу 3 для **операций SQL**: OnOperation, RemoteOperation, ReturnOperation.
-* Перейдите к шагу 4 для **операций перемещения данных**: ShuffleMoveOperation, BroadcastMoveOperation, TrimMoveOperation, PartitionMoveOperation, MoveOperation, CopyOperation.
+* Перейдите к шагу 3 для **операций SQL**: OnOperation, RemoteOperation, ReturnOperation.
+* Перейдите к шагу 4 для **операций перемещения данных**: ShuffleMoveOperation, BroadcastMoveOperation, TrimMoveOperation, PartitionMoveOperation, MoveOperation, CopyOperation.
 
 ### <a name="step-3-investigate-sql-on-the-distributed-databases"></a>Шаг 3. изучение SQL в распределенных базах данных
 
-Используйте идентификатор запроса и индекс этапа, чтобы извлечь сведения из представления [sys.dm_pdw_sql_requests](/sql/t-sql/database-console-commands/dbcc-pdw-showexecutionplan-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true), которое содержит информацию о выполнении этапа запроса на каждой из распределенных баз данных.
+Используйте идентификатор запроса и индекс шага для получения сведений из [sys.dm_pdw_sql_requests](/sql/t-sql/database-console-commands/dbcc-pdw-showexecutionplan-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true), который содержит сведения о выполнении шага запроса для всех распределенных баз данных.
 
 ```sql
 -- Find the distribution run times for a SQL step.
@@ -117,7 +117,7 @@ SELECT * FROM sys.dm_pdw_sql_requests
 WHERE request_id = 'QID####' AND step_index = 2;
 ```
 
-Когда выполняется этап запроса, можно использовать [DBCC PDW_SHOWEXECUTIONPLAN](/sql/t-sql/database-console-commands/dbcc-pdw-showexecutionplan-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true), чтобы получить из кэша планов SQL Server предполагаемый план SQL Server для этапа, выполняемого с определенным распределением.
+При выполнении шага запроса можно использовать [DBCC PDW_SHOWEXECUTIONPLAN](/sql/t-sql/database-console-commands/dbcc-pdw-showexecutionplan-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true) для получения оценочного плана SQL Server из кэша планов SQL Server для шага, выполняемого в определенном распределении.
 
 ```sql
 -- Find the SQL Server execution plan for a query running on a specific SQL pool or control node.
@@ -128,7 +128,7 @@ DBCC PDW_SHOWEXECUTIONPLAN(1, 78);
 
 ### <a name="step-4-investigate-data-movement-on-the-distributed-databases"></a>Шаг 4. изучение перемещения данных в распределенных базах данных
 
-Используйте идентификатор запроса и индекс этапа, чтобы получить из [sys.dm_pdw_dms_workers](/sql/relational-databases/system-dynamic-management-views/sys-dm-pdw-dms-workers-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true) сведения об этапе перемещения данных, выполняющемся для каждого распределения.
+Используйте идентификатор запроса и индекс шага, чтобы получить сведения о шаге перемещения данных, выполняемом в каждом распределении, из [sys.dm_pdw_dms_workers](/sql/relational-databases/system-dynamic-management-views/sys-dm-pdw-dms-workers-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true).
 
 ```sql
 -- Find information about all the workers completing a Data Movement Step.
@@ -139,7 +139,7 @@ WHERE request_id = 'QID####' AND step_index = 2;
 ```
 
 * Перейдите к столбцу *total_elapsed_time*, чтобы просмотреть, есть ли какая-то операция распространения, перемещение данных для которой значительно больше времени по сравнению с другими операциями.
-* Для длительной операции распространения обратитесь к столбцу *rows_processed* и проверьте, является ли количество перемещаемых строк для этой операции значительно большим по сравнению с другими операциями. Если это так, такой результат может означать отклонение базовых данных. Одна из причин неравномерного распределения данных — распространение по столбцу с большим количеством значений NULL (строки которых будут находиться в одном распределении). Предотвращение снижения производительности запросов за счет предотвращения распространения для этих типов столбцов или Фильтрация запроса, чтобы исключить значения NULL, если это возможно. 
+* Для длительной операции распространения обратитесь к столбцу *rows_processed* и проверьте, является ли количество перемещаемых строк для этой операции значительно большим по сравнению с другими операциями. Если это так, такой результат может означать отклонение базовых данных. Одна из причин неравномерного распределения данных — распределение по столбцу с большим количеством значений NULL (строки которых будут находиться в одном распределении). Предотвратите снижение производительности запросов за счет предотвращения распространения для этих типов столбцов или фильтрация запроса, чтобы исключить значения NULL, если это возможно. 
 
 Если запрос выполняется, можно использовать [инструкцию DBCC PDW_SHOWEXECUTIONPLAN](/sql/t-sql/database-console-commands/dbcc-pdw-showexecutionplan-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true) , чтобы получить SQL Server предполагаемый план из кэша планов SQL Server для текущего этапа SQL в определенном распределении.
 
@@ -307,6 +307,6 @@ ORDER BY
     gb_processed desc;
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о динамических административных представлениях см. в статье о [системных представлениях](../sql/reference-tsql-system-views.md).

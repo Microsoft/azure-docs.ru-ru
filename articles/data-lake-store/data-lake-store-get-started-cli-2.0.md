@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 06/27/2018
 ms.author: twooley
 ms.openlocfilehash: de98e25cf5703a43282e551a0eda20d7767c6ce8
-ms.sourcegitcommit: ae6e7057a00d95ed7b828fc8846e3a6281859d40
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92103634"
 ---
 # <a name="get-started-with-azure-data-lake-storage-gen1-using-the-azure-cli"></a>Приступая к работе с Azure Data Lake Storage 1-го поколения с помощью Azure CLI
@@ -29,7 +29,7 @@ ms.locfileid: "92103634"
 Azure CLI — это интерфейс командной строки Azure для управления ресурсами Azure. Его можно использовать в Windows, Linux и macOS. Дополнительные сведения см. в статье [Инфраструктура Azure CLI](/cli/azure). Полный список команд и синтаксис см. в [справочнике интерфейса командной строки Azure Data Lake Storage 1-го поколения](/cli/azure/dls).
 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Перед началом работы с этой статьей необходимо иметь следующее:
 
 * **Подписка Azure**. См. страницу [бесплатной пробной версии Azure](https://azure.microsoft.com/pricing/free-trial/).
@@ -59,7 +59,7 @@ Azure CLI — это интерфейс командной строки Azure д
 
 ## <a name="create-an-azure-data-lake-storage-gen1-account"></a>Создание учетной записи Azure Data Lake Storage 1-го поколения
 
-1. Создание группы ресурсов В следующей команде укажите значения параметров, которые требуется использовать. Если имя расположения содержит пробелы, заключите его в кавычки. Например, "East US 2". 
+1. Создайте новую группу ресурсов. В следующей команде укажите значения параметров, которые требуется использовать. Если имя расположения содержит пробелы, заключите его в кавычки. Например, "East US 2". 
    
     ```azurecli
     az group create --location "East US 2" --name myresourcegroup

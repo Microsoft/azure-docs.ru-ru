@@ -7,10 +7,10 @@ ms.custom: devx-track-csharp
 ms.date: 05/11/2020
 ms.author: chenyl
 ms.openlocfilehash: 2482a26987ec142880acc51bf470d844655b6e3f
-ms.sourcegitcommit: 799f0f187f96b45ae561923d002abad40e1eebd6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97763525"
 ---
 # <a name="signalr-service-trigger-binding-for-azure-functions"></a>Привязка триггера службы SignalR для функций Azure
@@ -165,7 +165,7 @@ def main(invocation) -> None:
 
 ---
 
-## <a name="configuration"></a>Параметр Configuration
+## <a name="configuration"></a>Конфигурация
 
 ### <a name="signalrtrigger"></a>сигналртригжер
 
@@ -195,7 +195,7 @@ def main(invocation) -> None:
 |Аргументы| Доступно для категории *сообщений* . Содержит *аргументы* в [сообщении о вызове](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/docs/specs/HubProtocol.md#invocation-message-encoding)|
 |Ошибка| Доступно для события *disconnected* . Оно может быть пустым, если соединение закрыто без ошибок или содержит сообщения об ошибках.|
 |Концентратор| Имя концентратора, которому принадлежит сообщение.|
-|Категория| Категория сообщения.|
+|Category| Категория сообщения.|
 |Событие| Событие сообщения.|
 |ConnectionId| Идентификатор соединения клиента, который отправляет сообщение.|
 |UserId| Удостоверение пользователя клиента, который отправляет сообщение.|

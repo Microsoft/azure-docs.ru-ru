@@ -9,10 +9,10 @@ ms.date: 01/19/2021
 ms.author: alkohli
 ms.subservice: common
 ms.openlocfilehash: 555529b52d586078ba7e1832373ec126ba545c11
-ms.sourcegitcommit: 75041f1bce98b1d20cd93945a7b3bd875e6999d0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98706685"
 ---
 # <a name="troubleshoot-issues-in-azure-importexport"></a>Устранение неполадок при импорте и экспорте Azure
@@ -36,10 +36,10 @@ ms.locfileid: "98706685"
 
 Файл журнала для диска содержит полные сведения о сеансе из копии данных. При добавлении файлов на диск файл журнала используется для создания задания импорта. Если вы потеряли файл журнала, потребуется повторить все сеансы копирования для диска.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Настройка средства импорта и экспорта Azure](storage-import-export-tool-setup-v1.md)
 * [Подготовка жестких дисков для задания импорта](storage-import-export-data-to-blobs.md#step-1-prepare-the-drives)
 * [Проверка состояния задания с помощью файлов журнала копирования](storage-import-export-tool-reviewing-job-status-v1.md)
-* [Восстановление задания импорта](storage-import-export-tool-repairing-an-import-job-v1.md)
-* [Восстановление задания экспорта](storage-import-export-tool-repairing-an-export-job-v1.md)
+* [Исправление задания импорта](storage-import-export-tool-repairing-an-import-job-v1.md)
+* [Исправление задания экспорта](storage-import-export-tool-repairing-an-export-job-v1.md)

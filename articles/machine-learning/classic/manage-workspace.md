@@ -10,10 +10,10 @@ ms.author: keli19
 ms.custom: previous-author=heatherbshapiro, previous-ms.author=hshapiro
 ms.date: 02/27/2017
 ms.openlocfilehash: c41c5350e29555a11bb74eeca9af62a6b87cfced
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101094269"
 ---
 # <a name="manage-an-azure-machine-learning-studio-classic-workspace"></a>Управление рабочей областью Машинное обучение Azure Studio (классическая модель)
@@ -50,5 +50,5 @@ ms.locfileid: "101094269"
 > 
 >Дополнительные сведения о настройке разрешений доступа см. [в статье назначение ролей Azure с помощью портал Azure](../../role-based-access-control/role-assignments-portal.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * См. дополнительные сведения о [развертывании машинного обучения с использованием шаблонов Azure Resource Manager](deploy-with-resource-manager-template.md).

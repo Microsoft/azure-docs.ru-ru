@@ -4,10 +4,10 @@ description: Список исключений концентраторов со
 ms.topic: article
 ms.date: 06/23/2020
 ms.openlocfilehash: cec24696d0d49ba408860f6562c34dd14876c311
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91334214"
 ---
 # <a name="azure-event-hubs---resource-manager-exceptions"></a>Концентраторы событий Azure — диспетчер ресурсов исключения
