@@ -6,10 +6,10 @@ ms.service: container-service
 ms.topic: article
 ms.date: 10/19/2020
 ms.openlocfilehash: 7f838b2a78f1c6993aa247f2944d4f2a9b1e9556
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102181131"
 ---
 # <a name="add-a-spot-node-pool-to-an-azure-kubernetes-service-aks-cluster"></a>Добавление пула точечных узлов в кластер службы Kubernetes Azure (AKS)

@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 03/12/2021
 ms.author: alkohli
 ms.openlocfilehash: 348ddff56ed61cd608d6b9f28417e7cd4c4e6b13
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103563969"
 ---
 # <a name="configure-and-run-a-module-on-gpu-on-azure-stack-edge-pro-device"></a>Настройка и запуск модуля на GPU на устройстве Azure Stack ребра Pro
@@ -127,6 +127,6 @@ ms.locfileid: "103563969"
     ![Настройка модуля для использования GPU 16](media/azure-stack-edge-gpu-configure-gpu-modules/configure-gpu-12.png)
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Дополнительные сведения о [переменных среды, которые можно использовать с графическим процессором NVIDIA](https://github.com/NVIDIA/nvidia-container-runtime#environment-variables-oci-spec).

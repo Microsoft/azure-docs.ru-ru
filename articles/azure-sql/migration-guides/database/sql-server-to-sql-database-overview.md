@@ -11,10 +11,10 @@ ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
 ms.openlocfilehash: 733b2375a26b0157f88bc148b52932e2f3e3f2e2
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102488279"
 ---
 # <a name="migration-overview-sql-server-to-sql-database"></a>Общие сведения о миграции: SQL Server в базу данных SQL

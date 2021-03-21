@@ -7,10 +7,10 @@ ms.service: cosmos-db
 ms.topic: conceptual
 ms.date: 10/14/2020
 ms.openlocfilehash: 36ecef007e10f9a090dbabc8b5a91fd473930141
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102633858"
 ---
 # <a name="optimize-request-cost-in-azure-cosmos-db"></a>Оптимизировать стоимость запросов в Azure Cosmos DB
@@ -116,7 +116,7 @@ Azure Cosmos DB обеспечивает прогнозируемую произ
 
 При выполнении массового приема данных также рекомендуется использовать [библиотеку массового исполнителя Azure Cosmos DB](bulk-executor-overview.md) , так как она предназначена для оптимизации использования единиц запросов в секунду. При необходимости можно также использовать [фабрику данных Azure](../data-factory/introduction.md) , которая построена на той же библиотеке.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Теперь вы можете перейти к изучению оптимизации затрат в Azure Cosmos DB в следующих статьях:
 

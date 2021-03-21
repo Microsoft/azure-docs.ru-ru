@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 04/03/2018
 ms.author: srrengar
 ms.openlocfilehash: eaf40bafb68820b56fc9bf00dd4c11fbb337406f
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102613465"
 ---
 # <a name="event-aggregation-and-collection-using-windows-azure-diagnostics"></a>Агрегирование и сбор событий с помощью Диагностики Azure для Windows
@@ -351,7 +351,7 @@ Service Fabric настраивает несколько [стандартных
 >[!NOTE]
 >Если вы укажете на портале или в шаблоне Resource Manager неправильный ключ Application Insights, придется вручную заменить его, а затем обновить или повторно развернуть кластер.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Если вы правильно настроили диагностику Azure, данные из журнала трассировки событий Windows и журнала EventSource станут появляться в таблице хранилища. Если вы решили использовать Azure Monitor журналы, Kibana или любую другую платформу аналитики и визуализации данных, которая не настроена непосредственно в шаблоне диспетчер ресурсов, обязательно настройте платформу для чтения данных из этих таблиц хранилища. Сделать это для журналов Azure Monitor довольно тривиальное, и оно объясняется в [анализе событий и журнала](service-fabric-diagnostics-event-analysis-oms.md). В этом смысле Application Insights — это особый случай, так как это решение можно настроить при настройке расширения диагностики. Дополнительные сведения об Application Insights см. в [этой статье](service-fabric-diagnostics-event-analysis-appinsights.md).
 

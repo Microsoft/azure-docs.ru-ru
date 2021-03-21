@@ -11,18 +11,18 @@ ms.workload: ''
 ms.topic: tutorial
 ms.date: 08/24/2020
 ms.author: inhenkel
-ms.openlocfilehash: c481daf73f916ede2e7063c75448ba4d09e553cc
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.openlocfilehash: 8e3b9636dfb900fa0e22bfea8bcd2d0c7edf0241
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100571865"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104596711"
 ---
 # <a name="tutorial-store-azure-media-services-events-in-azure-log-analytics"></a>Руководство по хранению событий Служб мультимедиа Azure в Azure Log Analytics
 
 ## <a name="azure-media-services-events"></a>События Служб мультимедиа Azure
 
-Службы мультимедиа Azure версии 3 создают события в [Сетке событий Azure](media-services-event-schemas.md). Подписываться на события и хранить их в хранилищах данных можно различными способами. В рамках этого учебника вы подпишетесь на события Служб мультимедиа с помощью [потока приложения логики](https://azure.microsoft.com/services/logic-apps/). Приложение логики будет срабатывать при каждом событии и хранить текст события в Azure Log Analytics. Когда события попадают в Log Analytics Azure, вы можете использовать другие службы Azure, чтобы создать панель мониторинга, отслеживать и оповещать об этих событиях, хотя мы не будем рассматривать это в этом учебнике.
+Службы мультимедиа Azure версии 3 создают события в [Сетке событий Azure](monitoring/media-services-event-schemas.md). Подписываться на события и хранить их в хранилищах данных можно различными способами. В рамках этого учебника вы подпишетесь на события Служб мультимедиа с помощью [потока приложения логики](https://azure.microsoft.com/services/logic-apps/). Приложение логики будет срабатывать при каждом событии и хранить текст события в Azure Log Analytics. Когда события попадают в Log Analytics Azure, вы можете использовать другие службы Azure, чтобы создать панель мониторинга, отслеживать и оповещать об этих событиях, хотя мы не будем рассматривать это в этом учебнике.
 
 > [!NOTE]
 > Это полезно, если вы уже знакомы с использованием FFmpeg в качестве локального кодировщика.  В противном случае ничего страшного. Ниже приведены командная строка и инструкции для потоковой передачи видео.

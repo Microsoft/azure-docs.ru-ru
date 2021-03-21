@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 01/12/2021
 ms.openlocfilehash: 8b3b1d39766d556b820f21c1775210611b995d92
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103199901"
 ---
 # <a name="log-analytics-agent-overview"></a>Общие сведения об агенте Log Analytics
@@ -52,7 +52,7 @@ ms.locfileid: "103199901"
 
 Агент Log Analytics отправляет данные в рабочую область Log Analytics в Azure Monitor. Агент Windows может быть общим, отправляя данные в несколько рабочих областей и групп управления System Center Operations Manager. Агент Linux может отправить только в одно место назначения — рабочую область или группу управления.
 
-## <a name="other-services"></a>Другие службы
+## <a name="other-services"></a>другие службы.
 
 Агент для Linux и Windows не только подключается к Azure Monitor. Другие службы, такие как центр безопасности Azure и метка Azure, используют агент и подключенную рабочую область Log Analytics. Кроме того, агент поддерживает службу автоматизации Azure для размещения гибридной рабочей роли Runbook и других служб, таких как [Отслеживание изменений](../../automation/change-tracking/overview.md), [Управление обновлениями](../../automation/update-management/overview.md)и [Центр безопасности Azure](../../security-center/security-center-introduction.md). Дополнительные сведения о гибридной рабочей роли Runbook см. в разделе [Общие сведения об архитектуре автоматизации](../../automation/automation-hybrid-runbook-worker.md).  
 

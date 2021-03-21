@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 07/15/2018
 ms.author: juergent
 ms.openlocfilehash: e17739c65c0b80beb1f6fdd09f31897b317d7858
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102506894"
 ---
 # <a name="sap-business-one-on-azure-virtual-machines"></a>Использование SAP Business One на виртуальных машинах Azure

@@ -6,14 +6,17 @@ ms.author: jasonh
 ms.service: data-catalog
 ms.topic: how-to
 ms.date: 08/01/2019
-ms.openlocfilehash: 2d0baed53441893ec294784f0f8092fe89a347c9
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 52a8d8fcd0b9b9ee1ff918ead250c88b83f86cb7
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "86523712"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104674841"
 ---
 # <a name="save-searches-and-pin-data-assets-in-azure-data-catalog"></a>Сохранение поисков и закрепление ресурсов данных в каталоге данных Azure
+
+[!INCLUDE [Azure Purview redirect](../../includes/data-catalog-use-purview.md)]
+
 ## <a name="introduction"></a>Введение
 Каталог данных Azure предоставляет возможности для обнаружения источников данных. Вы можете выполнять быстрый поиск и фильтрацию в каталоге, чтобы находить источники данных и понимать их назначение. Это упрощает поиск нужной информации для текущего задания.
 
@@ -74,5 +77,5 @@ ms.locfileid: "86523712"
 
 ![Раздел "Мои ресурсы" на домашней странице](./media/data-catalog-how-to-save-pin/07-my-assets.png)
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 Каталог данных Azure предоставляет возможности, которые упрощают поиск нужных источников данных. Поэтому вы и другие сотрудники организации можете тратить меньше времени на поиск данных и больше — на работу с ними. На базе этих основных возможностей реализованы функции сохраненных поисков и закрепленных ресурсов данных, позволяющие пользователям легко находить источники данных, с которыми они работают регулярно.

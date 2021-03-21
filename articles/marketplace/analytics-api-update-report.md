@@ -1,5 +1,5 @@
 ---
-title: Обновить API отчетов
+title: API обновления отчета
 description: Используйте этот API для отчета о параметрах для отчетов по аналитике коммерческих рынков.
 ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
@@ -8,13 +8,13 @@ author: sayantanroy83
 ms.author: sroy
 ms.date: 3/08/2021
 ms.openlocfilehash: 38680eb291417ded4c2f93539e8d1ae091b1d560
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102583928"
 ---
-# <a name="update-report-api"></a>Обновить API отчетов
+# <a name="update-report-api"></a>API обновления отчета
 
 Этот API помогает изменить параметр отчета.
 
@@ -27,7 +27,7 @@ ms.locfileid: "102583928"
 
 **Заголовок запроса**
 
-| Заголовок | Type | Описание |
+| Header | Type | Описание |
 | ------------ | ------------- | ------------- |
 | Авторизация | строка | Обязательный. Маркер доступа Azure Active Directory (Azure AD) в форме `Bearer <token>` |
 | Content-Type | строка | `Application/JSON` |

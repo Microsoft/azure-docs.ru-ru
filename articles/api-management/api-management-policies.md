@@ -13,10 +13,10 @@ ms.topic: article
 ms.date: 02/17/2021
 ms.author: apimpm
 ms.openlocfilehash: e809efa9da32da5fe9ca296608c602e770f78265
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103562354"
 ---
 # <a name="api-management-policies"></a>Политики управления API
@@ -88,7 +88,7 @@ ms.locfileid: "103562354"
     - [Проверка заголовков](validation-policies.md#validate-headers) — проверяет заголовки ответов на соответствие схеме API.
     - [Проверка кода состояния](validation-policies.md#validate-status-code) — проверяет коды состояния HTTP в ответах на схему API.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Дополнительные сведения о работе с политиками см. в следующих статьях:
 
 + [Политики в управлении API](api-management-howto-policies.md)

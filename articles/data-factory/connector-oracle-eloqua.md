@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 08/01/2019
 ms.openlocfilehash: e4bb392b05fb54f22720202b83f1af707e381251
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100372235"
 ---
 # <a name="copy-data-from-oracle-eloqua-using-azure-data-factory-preview"></a>Копирование данных из Oracle Eloqua с помощью фабрики данных Azure (предварительная версия)
@@ -43,7 +43,7 @@ ms.locfileid: "100372235"
 
 Для связанной службы Oracle Eloqua поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства type необходимо задать значение **Eloqua** | Да |
 | endpoint | Конечная точка сервера Eloqua Eloqua поддерживает несколько центров обработки данных. Чтобы определить свою конечную точку, войдите в https://login.eloqua.com со своими учетными данными, а затем скопируйте фрагмент **базового URL-адреса** из URL-адреса перенаправления в следующем формате: `xxx.xxx.eloqua.com`. | Да |

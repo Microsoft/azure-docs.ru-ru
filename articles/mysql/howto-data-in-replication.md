@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 01/13/2021
 ms.openlocfilehash: d5a013fc4e4ef931579da4fa13f400d5f4fcff0d
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102030755"
 ---
 # <a name="how-to-configure-azure-database-for-mysql-data-in-replication"></a>Настройка Базы данных Azure для MySQL для репликации входных данных
@@ -80,7 +80,7 @@ ms.locfileid: "102030755"
       ping <output of step 2b>
       ```
 
-      Пример.
+      Пример:
 
       ```bash
       C:\Users\testuser> ping e299ae56f000.tr1830.westus1-a.worker.database.windows.net

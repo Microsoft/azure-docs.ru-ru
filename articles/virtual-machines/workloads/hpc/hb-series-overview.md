@@ -8,12 +8,12 @@ ms.topic: article
 ms.date: 08/19/2020
 ms.author: amverma
 ms.reviewer: cynthn
-ms.openlocfilehash: b0e8e2e0ee7ce730f6bf00d7e5ef4bd4eae65ce7
-ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
+ms.openlocfilehash: cfaab3f095dbf2f1657f5ebb587a3de958d11cda
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101666939"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104721190"
 ---
 # <a name="hb-series-virtual-machines-overview"></a>Обзор виртуальных машин серии ХБ
 
@@ -51,13 +51,13 @@ ms.locfileid: "101666939"
 |-----------------------------|-----------------------|
 | Максимальный размер задания MPI            | 18000 ядер (300 ВМ в одном масштабируемом наборе виртуальных машин с singlePlacementGroup = true)  |
 | Поддержка MPI                 | HPC-X, Intel MPI, Опенмпи, MVAPICH2, МПИЧ, платформа MPI  |
-| Дополнительные платформы       | Унифицированная связь X, либфабрик, ПГАС |
+| Дополнительные платформы       | УККС, либфабрик, ПГАС |
 | Поддержка хранилища Azure       | Диски уровня "Стандартный" и "Премиум" (максимум 4 диска) |
-| Поддержка ОС для SRIOV RDMA   | CentOS/RHEL 7.6 +, SLES 12 SP4 +, WinServer 2016 +  |
-| Поддержка Orchestrator        | Циклеклауд, пакетная  |
+| Поддержка ОС для SRIOV RDMA   | CentOS/RHEL 7.6 +, Ubuntu 16.04 +, SLES 12 SP4 +, WinServer 2016 +  |
+| Поддержка Orchestrator        | Циклеклауд, Batch, AKS; [Параметры конфигурации кластера](../../sizes-hpc.md#cluster-configuration-options) |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Узнайте больше о [архитектуре AMD ЕПИК](https://bit.ly/2Epv3kC) и [архитектурах с несколькими микросхемами](https://bit.ly/2GpQIMb). Дополнительные сведения см. в описании [рекомендаций по настройке HPC для процессоров AMD ЕПИК](https://bit.ly/2T3AWZ9).
-- Ознакомьтесь с последними объявлениями и некоторыми примерами HPC, а также результатами в [блогах технического сообщества службы вычислений](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
+- Ознакомьтесь с последними объявлениями, примерами рабочей нагрузки HPC и результатами производительности в [блогах сообщества разработчиков Azure](https://techcommunity.microsoft.com/t5/azure-compute/bg-p/AzureCompute).
 - Сведения о более высоком уровне архитектурного представления выполнения рабочих нагрузок HPC см. в статье [Высокопроизводительные вычисления (HPC) в Azure](/azure/architecture/topics/high-performance-computing/).

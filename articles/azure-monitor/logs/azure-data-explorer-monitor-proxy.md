@@ -7,10 +7,10 @@ ms.reviewer: bwren
 ms.topic: conceptual
 ms.date: 10/13/2020
 ms.openlocfilehash: 65dba60a798b1157a44a7a198b8eba7de1e8fe81
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102031265"
 ---
 # <a name="query-data-in-azure-monitor-using-azure-data-explorer-preview"></a>Запрос данных в Azure Monitor с помощью Azure Data Explorer (предварительная версия)

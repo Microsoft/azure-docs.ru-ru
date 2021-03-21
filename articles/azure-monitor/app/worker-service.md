@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.custom: devx-track-csharp
 ms.date: 05/11/2020
 ms.openlocfilehash: c1ca594626d4384c9dfb62990ee2017d2094fca4
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100371861"
 ---
 # <a name="application-insights-for-worker-service-applications-non-http-applications"></a>Application Insights для приложений службы рабочей роли (приложений, отличных от HTTP)
@@ -21,7 +21,7 @@ ms.locfileid: "100371861"
 
 Пакет [SDK Application Insights для службы рабочей роли](https://www.nuget.org/packages/Microsoft.ApplicationInsights.WorkerService) лучше всего подходит для приложений, отличных от HTTP, независимо от того, где или как они выполняются. Если приложение работает и имеет сетевое подключение к Azure, можно собирать данные телеметрии. Мониторинг Application Insights поддерживается везде, где поддерживается .NET Core. Этот пакет можно использовать в новой добавленной [службе рабочей роли .NET Core 3,0](https://devblogs.microsoft.com/aspnet/dotnet-core-workers-in-azure-container-instances), [фоновых задачах в ASP.NET Core 2.1/2.2](/aspnet/core/fundamentals/host/hosted-services), консольных приложениях (.NET Core/платформа .NET Framework) и т. д.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Допустимый ключ инструментирования Application Insights. Этот ключ необходим для отправки любых данных телеметрии в Application Insights. Если необходимо создать новый Application Insights ресурс для получения ключа инструментирования, см. раздел [Создание ресурса Application Insights](./create-new-resource.md).
 
@@ -122,9 +122,9 @@ ms.locfileid: "100371861"
 ```
 
 Кроме того, можно указать ключ инструментирования в любой из следующих переменных среды.
-`APPINSIGHTS_INSTRUMENTATIONKEY` либо `ApplicationInsights:InstrumentationKey`
+`APPINSIGHTS_INSTRUMENTATIONKEY` или `ApplicationInsights:InstrumentationKey`
 
-Например: `SET ApplicationInsights:InstrumentationKey=putinstrumentationkeyhere`
+Пример: `SET ApplicationInsights:InstrumentationKey=putinstrumentationkeyhere`
 НИ `SET APPINSIGHTS_INSTRUMENTATIONKEY=putinstrumentationkeyhere`
 
 Как правило, `APPINSIGHTS_INSTRUMENTATIONKEY` указывает ключ инструментирования для приложений, развернутых в веб-приложениях в виде веб-заданий.
@@ -227,7 +227,7 @@ ms.locfileid: "100371861"
 
 1. Установите пакет [Microsoft. ApplicationInsights. воркерсервице](https://www.nuget.org/packages/Microsoft.ApplicationInsights.WorkerService) в приложение.
 
-2. Измените Program.cs, как показано ниже.
+2. Измените программу. cs, как показано ниже.
 
 ```csharp
     using Microsoft.ApplicationInsights;
@@ -353,15 +353,15 @@ public void ConfigureServices(IServiceCollection services)
 
 |Параметр | Описание | По умолчанию
 |---------------|-------|-------
-|енаблекуиккпулсеметрикстреам | Включить или отключить функцию Ливеметрикс | Да
-|енаблеадаптивесамплинг | Включение или отключение адаптивной выборки | Да
-|енаблехеартбеат | Функция "включить/отключить пульс", которая периодически (по умолчанию составляет 15 минут) отправляет пользовательскую метрику "Хеартбеатстате" со сведениями о среде выполнения, такими как версия .NET, сведения о среде Azure, если применимо, и т. д. | Да
-|аддаутоколлектедметрицекстрактор | Включите или отключите средство извлечения Аутоколлектедметрикс, которое представляет собой Телеметрипроцессор, который отправляет предварительно агрегированные метрики о запросах и зависимостях перед выполнением выборки. | Да
-|енабледиагностикстелеметримодуле | Включить или отключить `DiagnosticsTelemetryModule` . Отключение этого параметра приведет к игнорированию следующих параметров. `EnableHeartbeat`, `EnableAzureInstanceMetadataTelemetryModule`, `EnableAppServicesHeartbeatTelemetryModule` | Да
+|енаблекуиккпулсеметрикстреам | Включить или отключить функцию Ливеметрикс | true
+|енаблеадаптивесамплинг | Включение или отключение адаптивной выборки | true
+|енаблехеартбеат | Функция "включить/отключить пульс", которая периодически (по умолчанию составляет 15 минут) отправляет пользовательскую метрику "Хеартбеатстате" со сведениями о среде выполнения, такими как версия .NET, сведения о среде Azure, если применимо, и т. д. | true
+|аддаутоколлектедметрицекстрактор | Включите или отключите средство извлечения Аутоколлектедметрикс, которое представляет собой Телеметрипроцессор, который отправляет предварительно агрегированные метрики о запросах и зависимостях перед выполнением выборки. | true
+|енабледиагностикстелеметримодуле | Включить или отключить `DiagnosticsTelemetryModule` . Отключение этого параметра приведет к игнорированию следующих параметров. `EnableHeartbeat`, `EnableAzureInstanceMetadataTelemetryModule`, `EnableAppServicesHeartbeatTelemetryModule` | true
 
 См. список [настраиваемых параметров `ApplicationInsightsServiceOptions` в](https://github.com/microsoft/ApplicationInsights-dotnet/blob/develop/NETCORE/src/Shared/Extensions/ApplicationInsightsServiceOptions.cs) для наиболее актуального списка.
 
-### <a name="sampling"></a>Выборка
+### <a name="sampling"></a>Дискретизация
 
 Пакет SDK Application Insights для службы рабочей роли поддерживает как фиксированную, так и адаптивную выборку. Адаптивная выборка включена по умолчанию. Выборку можно отключить с помощью `EnableAdaptiveSampling` параметра в [аппликатионинсигхтссервицеоптионс](#using-applicationinsightsserviceoptions)
 
@@ -522,7 +522,7 @@ using Microsoft.ApplicationInsights.Channel;
     }
 ```
 
-## <a name="frequently-asked-questions"></a>Вопросы и ответы
+## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
 
 ### <a name="how-can-i-track-telemetry-thats-not-automatically-collected"></a>Как можно отвестить данные телеметрии, которые не собираются автоматически?
 
@@ -573,7 +573,7 @@ using Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel;
 
 Последние обновления и исправления ошибок см. [в заметках о выпуске](./release-notes.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Используйте API](./api-custom-events-metrics.md) для отправки собственных событий и метрик для получения подробного представления о производительности и использовании приложения.
 * [Следите за автоматической](./auto-collect-dependencies.md)отслеживанием дополнительных зависимостей.

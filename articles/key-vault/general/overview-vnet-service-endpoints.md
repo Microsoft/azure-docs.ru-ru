@@ -10,10 +10,10 @@ ms.service: key-vault
 ms.subservice: general
 ms.topic: conceptual
 ms.openlocfilehash: 36a94f780fa5c196e28730c051e161633ed3ee3d
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102431063"
 ---
 # <a name="virtual-network-service-endpoints-for-azure-key-vault"></a>Конечные точки служб для виртуальной сети для Azure Key Vault
@@ -56,7 +56,7 @@ ms.locfileid: "102431063"
 |Служба "Управление API Azure"|[Развертывание сертификатов для пользовательского домена из Key Vault с помощью MSI](../../api-management/api-management-howto-use-managed-service-identity.md#use-ssl-tls-certificate-from-azure-key-vault)|
 |Фабрика данных Azure|[Выбор учетных данных хранилища данных в Key Vault из фабрики данных](https://go.microsoft.com/fwlink/?linkid=2109491)|
 |Центры событий Azure|[Разрешить доступ к хранилищу ключей для сценария с управляемыми клиентом ключами](../../event-hubs/configure-customer-managed-key.md)|
-|Служебная шина Azure|[Разрешить доступ к хранилищу ключей для сценария с управляемыми клиентом ключами](../../service-bus-messaging/configure-customer-managed-key.md)|
+|Azure Service Bus|[Разрешить доступ к хранилищу ключей для сценария с управляемыми клиентом ключами](../../service-bus-messaging/configure-customer-managed-key.md)|
 |Импорт и экспорт Microsoft Azure| [Использование управляемых клиентом ключей в Azure Key Vault для службы импорта и экспорта](../../import-export/storage-import-export-encryption-key-portal.md)
 |Реестр контейнеров Azure|[Шифрование реестра с помощью управляемых клиентом ключей](../../container-registry/container-registry-customer-managed-keys.md)
 

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
 ms.openlocfilehash: c799e38092c5983b4ad0e3daea6aae99934c7302
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200885"
 ---
 # <a name="authenticate-a-downstream-device-to-azure-iot-hub"></a>Аутентификация подчиненного устройства в Центре Интернета вещей
@@ -208,7 +208,7 @@ HostName=myiothub.azure-devices.net;DeviceId=myDownstreamDevice;SharedAccessKey=
 HostName=myiothub.azure-devices.net;DeviceId=myDownstreamDevice;x509=true;GatewayHostName=myGatewayDevice
 ```
 
-Благодаря связи "родители-потомки" можно упростить строку подключения, вызвав шлюз непосредственно в качестве узла подключения. Например:
+Благодаря связи "родители-потомки" можно упростить строку подключения, вызвав шлюз непосредственно в качестве узла подключения. Пример:
 
 ```console
 HostName=myGatewayDevice;DeviceId=myDownstreamDevice;SharedAccessKey=xxxyyyzzz
@@ -216,7 +216,7 @@ HostName=myGatewayDevice;DeviceId=myDownstreamDevice;SharedAccessKey=xxxyyyzzz
 
 Эта измененная строка подключения будет использоваться в следующей статье из серии прозрачных шлюзов.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 На этом этапе у вас есть устройство IoT Edge, зарегистрированное в центре Интернета вещей и настроенное в качестве прозрачного шлюза. У вас также есть подчиненное устройство, зарегистрированное в центре Интернета вещей и указывающее на его устройство шлюза.
 

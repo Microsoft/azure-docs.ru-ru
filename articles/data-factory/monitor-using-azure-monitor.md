@@ -8,10 +8,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 07/13/2020
 ms.openlocfilehash: 09456c06f2a171ec32c1b885dc2b4e475fea5371
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102550303"
 ---
 # <a name="monitor-and-alert-data-factory-by-using-azure-monitor"></a>Мониторинг и оповещение фабрики данных с помощью Azure Monitor
@@ -265,7 +265,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 }
 ```
 
-| Свойство | Type | Описание |
+| Свойство. | Type | Описание |
 | --- | --- | --- |
 | **storageAccountId** |Строка | Идентификатор ресурса учетной записи хранения, в которую необходимо отправить журналы диагностики. |
 | **serviceBusRuleId** |Строка | Идентификатор правила служебной шины для пространства имен Service-Bus, в котором должны быть созданы концентраторы событий для потоковой передачи журналов диагностики. Идентификатор правила имеет формат `{service bus resource ID}/authorizationrules/{key name}` .|
@@ -438,7 +438,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 }
 ```
 
-| Свойство | Type | Описание | Пример |
+| Свойство. | Type | Описание | Пример |
 | --- | --- | --- | --- |
 | **Уровень** |Строка | Уровень журналов диагностики. Для журналов выполнения действий задайте для свойства значение 4. | `4` |
 | **correlationId** |Строка | Уникальный идентификатор для отслеживания конкретного запроса. | `319dc6b4-f348-405e-b8d7-aafc77b73e77` |
@@ -484,7 +484,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 }
 ```
 
-| Свойство | Type | Описание | Пример |
+| Свойство. | Type | Описание | Пример |
 | --- | --- | --- | --- |
 | **Уровень** |Строка | Уровень журналов диагностики. Для журналов выполнения действий задайте для свойства значение 4. | `4` |
 | **correlationId** |Строка | Уникальный идентификатор для отслеживания конкретного запроса. | `319dc6b4-f348-405e-b8d7-aafc77b73e77` |
@@ -527,7 +527,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 }
 ```
 
-| Свойство | Type | Описание | Пример |
+| Свойство. | Type | Описание | Пример |
 | --- | --- | --- | --- |
 | **Уровень** |Строка | Уровень журналов диагностики. Для журналов выполнения действий задайте для свойства значение 4. | `4` |
 | **correlationId** |Строка | Уникальный идентификатор для отслеживания конкретного запроса. | `319dc6b4-f348-405e-b8d7-aafc77b73e77` |
@@ -564,7 +564,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 }
 ```
 
-| Свойство                   | Type   | Описание                                                   | Пример                        |
+| Свойство.                   | Type   | Описание                                                   | Пример                        |
 | -------------------------- | ------ | ------------------------------------------------------------- | ------------------------------ |
 | **time**                   | Строка | Время события в формате UTC: `YYYY-MM-DDTHH:MM:SS.00000Z` | `2017-06-28T21:00:27.3534352Z` |
 | **operationName**          | Строка | Имя операции со IR для служб SSIS                            | `Start/Stop/Maintenance` |
@@ -604,7 +604,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 }
 ```
 
-| Свойство                   | Type   | Описание                                                          | Пример                        |
+| Свойство.                   | Type   | Описание                                                          | Пример                        |
 | -------------------------- | ------ | -------------------------------------------------------------------- | ------------------------------ |
 | **time**                   | Строка | Время события в формате UTC: `YYYY-MM-DDTHH:MM:SS.00000Z`        | `2017-06-28T21:00:27.3534352Z` |
 | **operationName**          | Строка | Для этого параметра задается значение `YourSSISIRName-SSISPackageEventMessageContext`       | `mysqlmissisir-SSISPackageEventMessageContext` |
@@ -654,7 +654,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 }
 ```
 
-| Свойство                   | Type   | Описание                                                        | Пример                        |
+| Свойство.                   | Type   | Описание                                                        | Пример                        |
 | -------------------------- | ------ | ------------------------------------------------------------------ | ------------------------------ |
 | **time**                   | Строка | Время события в формате UTC: `YYYY-MM-DDTHH:MM:SS.00000Z`      | `2017-06-28T21:00:27.3534352Z` |
 | **operationName**          | Строка | Для этого параметра задается значение `YourSSISIRName-SSISPackageEventMessages`           | `mysqlmissisir-SSISPackageEventMessages` |
@@ -703,7 +703,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 }
 ```
 
-| Свойство                   | Type   | Описание                                                      | Пример                        |
+| Свойство.                   | Type   | Описание                                                      | Пример                        |
 | -------------------------- | ------ | ---------------------------------------------------------------- | ------------------------------ |
 | **time**                   | Строка | Время события в формате UTC: `YYYY-MM-DDTHH:MM:SS.00000Z`    | `2017-06-28T21:00:27.3534352Z` |
 | **operationName**          | Строка | Для этого параметра задается значение `YourSSISIRName-SSISPackageExecutableStatistics`  | `mysqlmissisir-SSISPackageExecutableStatistics` |
@@ -748,7 +748,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 }
 ```
 
-| Свойство                   | Type   | Описание                                                         | Пример                        |
+| Свойство.                   | Type   | Описание                                                         | Пример                        |
 | -------------------------- | ------ | ------------------------------------------------------------------- | ------------------------------ |
 | **time**                   | Строка | Время события в формате UTC: `YYYY-MM-DDTHH:MM:SS.00000Z`       | `2017-06-28T21:00:27.3534352Z` |
 | **operationName**          | Строка | Для этого параметра задается значение `YourSSISIRName-SSISPackageExecutionComponentPhases` | `mysqlmissisir-SSISPackageExecutionComponentPhases` |
@@ -796,7 +796,7 @@ https://management.azure.com/{resource-id}/providers/microsoft.insights/diagnost
 }
 ```
 
-| Свойство                     | Type   | Описание                                                        | Пример                        |
+| Свойство.                     | Type   | Описание                                                        | Пример                        |
 | ---------------------------- | ------ | ------------------------------------------------------------------ | ------------------------------ |
 | **time**                     | Строка | Время события в формате UTC: `YYYY-MM-DDTHH:MM:SS.00000Z`      | `2017-06-28T21:00:27.3534352Z` |
 | **operationName**            | Строка | Для этого параметра задается значение `YourSSISIRName-SSISPackageExecutionDataStatistics` | `mysqlmissisir-SSISPackageExecutionDataStatistics` |

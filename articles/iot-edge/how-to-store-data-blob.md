@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.service: iot-edge
 services: iot-edge
 ms.openlocfilehash: 5954c3083afc73fb25c796086f8fb8809af03ec1
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200670"
 ---
 # <a name="store-data-at-the-edge-with-azure-blob-storage-on-iot-edge"></a>Хранение данных на пограничных устройствах с использованием хранилища BLOB-объектов Azure в IoT Edge
@@ -79,7 +79,7 @@ ms.locfileid: "103200670"
 
 Имя этого параметра — `deviceToCloudUploadProperties` . Если вы используете симулятор IoT Edge, присвойте значения соответствующим переменным среды для этих свойств, которые можно найти в разделе пояснения.
 
-| Свойство. | Возможные значения | Описание |
+| Свойство. | Возможные значения | Пояснение |
 | ----- | ----- | ---- |
 | уплоадон | true, false | По умолчанию задано значение `false` . Если вы хотите включить эту функцию, присвойте этому полю значение `true` . <br><br> Переменная среды: `deviceToCloudUploadProperties__uploadOn={false,true}` |
 | уплоадордер | Невестфирст, OldestFirst | Позволяет выбрать порядок, в котором данные копируются в Azure. По умолчанию задано значение `OldestFirst` . Порядок определяется временем последнего изменения большого двоичного объекта. <br><br> Переменная среды: `deviceToCloudUploadProperties__uploadOrder={NewestFirst,OldestFirst}` |
@@ -91,7 +91,7 @@ ms.locfileid: "103200670"
 
 Имя этого параметра — `deviceAutoDeleteProperties` . Если вы используете симулятор IoT Edge, присвойте значения соответствующим переменным среды для этих свойств, которые можно найти в разделе пояснения.
 
-| Свойство. | Возможные значения | Описание |
+| Свойство. | Возможные значения | Пояснение |
 | ----- | ----- | ---- |
 | делетеон | true, false | По умолчанию задано значение `false` . Если вы хотите включить эту функцию, присвойте этому полю значение `true` . <br><br> Переменная среды: `deviceAutoDeleteProperties__deleteOn={false,true}` |
 | делетеафтерминутес | `<minutes>` | Укажите время в минутах. Модуль автоматически удалит BLOB-объекты из локального хранилища, когда это значение истечет. Текущая максимальная допустимая минута — 35791. <br><br> Переменная среды: `deviceAutoDeleteProperties__ deleteAfterMinutes=<minutes>` |
@@ -112,7 +112,7 @@ $creds = Get-Credential
 New-SmbGlobalMapping -RemotePath <remote SMB path> -Credential $creds -LocalPath <Any available drive letter>
 ```
 
-Например:
+Пример:
 
 ```powershell
 $creds = Get-Credential
@@ -138,7 +138,7 @@ sudo chown -R 11000:11000 <blob-dir>
 sudo chmod -R 700 <blob-dir>
 ```
 
-Например:
+Пример:
 
 ```terminal
 sudo chown -R 11000:11000 /srv/containerdata
@@ -303,7 +303,7 @@ sudo chmod -R 700 <blob-dir>
 
 Вы можете связаться с нами по адресу absiotfeedback@microsoft.com
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как [развертывать хранилище BLOB-объектов Azure на IOT Edge](how-to-deploy-blob.md)
 

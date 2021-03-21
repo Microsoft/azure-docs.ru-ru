@@ -6,14 +6,16 @@ ms.author: jasonh
 ms.service: data-catalog
 ms.topic: conceptual
 ms.date: 08/01/2019
-ms.openlocfilehash: ead1a324d342f818551ac05ac385ba4fa5b8b877
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: 12d68a9539420c77cc23722e1b7b7175d08459e9
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "89439090"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104674637"
 ---
 # <a name="supported-data-sources-in-azure-data-catalog"></a>Источники данных, поддерживаемые в каталоге данных Azure
+
+[!INCLUDE [Azure Purview redirect](../../includes/data-catalog-use-purview.md)]
 
 Вы можете публиковать метаданные с помощью общедоступного API или средства быстрой регистрации, или вручную, указав данные непосредственно на веб-портале каталога данных Azure. В следующей таблице перечислены все источники данных, поддерживаемые каталогом в настоящее время, и возможности публикации для каждого из них. Здесь же перечислены внешние средства работы с данными, которые каждый источник данных может запускать из портала. Во второй таблице содержатся технические характеристики свойств подключения каждого источника данных.
 
@@ -451,7 +453,7 @@ ms.locfileid: "89439090"
     <tr>
        <td><b>Тип источника</b></td>
        <td><b>Тип ресурса</b></td>
-       <td><b>Типы Object</b></td>
+       <td><b>Типы объектов</b></td>
        <td><b>Структура DSL<b></td>
     </tr>
     <tr>

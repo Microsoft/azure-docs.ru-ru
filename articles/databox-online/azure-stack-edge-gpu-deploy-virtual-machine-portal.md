@@ -10,10 +10,10 @@ ms.date: 02/22/2021
 ms.author: alkohli
 Customer intent: As an IT admin, I need to understand how to configure compute on Azure Stack Edge Pro device so I can use it to transform the data before sending it to Azure.
 ms.openlocfilehash: 6054e7e79acaa6abf304508221c63143b9d14a45
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102436538"
 ---
 # <a name="deploy-vms-on-your-azure-stack-edge-pro-gpu-device-via-the-azure-portal"></a>Развертывание виртуальных машин на устройстве с Azure Stack ребра Pro GPU с помощью портал Azure
@@ -48,7 +48,7 @@ ms.locfileid: "102436538"
     Используйте приведенные выше ресурсы для создания виртуальной машины.
 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к созданию виртуальных машин на устройстве и управлению ими с помощью портал Azure, убедитесь в том, что:
 
@@ -127,7 +127,7 @@ ms.locfileid: "102436538"
     |Параметр |Описание  |
     |---------|---------|
     |Имя виртуальной машины     |         |
-    |Изображение     | Выберите из образов виртуальных машин, доступных на устройстве.        |
+    |Образ —     | Выберите из образов виртуальных машин, доступных на устройстве.        |
     |Размер     | Выберите один из [поддерживаемых размеров виртуальных машин](azure-stack-edge-gpu-virtual-machine-sizes.md).        |
     |Имя пользователя     | Используйте имя пользователя по умолчанию *azureuser*.        |
     |Authentication type (Тип проверки подлинности)    | Выберите открытый ключ SSH или пароль, определенный пользователем.       |

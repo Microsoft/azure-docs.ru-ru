@@ -11,10 +11,10 @@ ms.author: mokabiru
 ms.reviewer: MashaMSFT
 ms.date: 11/06/2020
 ms.openlocfilehash: 9ad838b8c5f54d3ecdd5c8ce56b197cdb6cec1ba
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103563867"
 ---
 # <a name="migration-guide-db2-to-sql-managed-instance"></a>Руководство по миграции: DB2 в SQL Управляемый экземпляр
@@ -165,7 +165,7 @@ ms.locfileid: "103563867"
 Эти ресурсы были разработаны в рамках программы Data SQL Ninja, которая спонсируется группой разработчиков Azure Data Group. Основная часть программы Data SQL Ninja заключается в разрешении и ускорении сложной модернизации и реализация перехода на платформу данных Microsoft Azure. Если вы считаете, что ваша организация заинтересована в участии в программе Data SQL Ninja, обратитесь в службу поддержки своей учетной записи и попросите отправить заявку.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Сведения о службах и средствах Майкрософт и сторонних поставщиков, которые помогут вам в использовании различных сценариев переноса баз данных и данных, а также специальных задач см. в разделе [служба и средства для переноса данных](../../../dms/dms-tools-matrix.md).
 

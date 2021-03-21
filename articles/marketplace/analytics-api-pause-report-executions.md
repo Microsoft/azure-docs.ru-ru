@@ -1,5 +1,5 @@
 ---
-title: Приостановка API выполнения отчетов
+title: API приостановки выполнения отчетов
 description: Этот API используется для приостановки запланированного выполнения коммерческого отчета по анализу Marketplace.
 ms.service: marketplace
 ms.subservice: partnercenter-marketplace-publisher
@@ -8,13 +8,13 @@ author: sayantanroy83
 ms.author: sroy
 ms.date: 3/08/2021
 ms.openlocfilehash: 39b535278fef42818f572631cfa1cb1f923930a6
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102584035"
 ---
-# <a name="pause-report-executions-api"></a>Приостановка API выполнения отчетов
+# <a name="pause-report-executions-api"></a>API приостановки выполнения отчетов
 
 Этот API при выполнении приостанавливает запланированное выполнение отчетов.
 
@@ -27,7 +27,7 @@ ms.locfileid: "102584035"
 
 **Заголовок запроса**
 
-| Заголовок | Type | Описание |
+| Header | Type | Описание |
 | ------------ | ------------- | ------------- |
 | Авторизация | строка | Обязательный. Маркер доступа Azure Active Directory (Azure AD) в форме `Bearer <token>` |
 | Content-Type | строка | `Application/JSON` |

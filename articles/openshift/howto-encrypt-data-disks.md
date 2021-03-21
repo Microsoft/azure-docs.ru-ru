@@ -8,10 +8,10 @@ ms.author: stkirk
 ms.service: azure-redhat-openshift
 keywords: Шифрование, byok, АТО, CMK, openshift, Red Hat
 ms.openlocfilehash: fa84096dcc44e668a6cf7ebd0369c6d3631c28d2
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102555624"
 ---
 # <a name="encrypt-persistent-volume-claims-with-a-customer-managed-key-cmk-on-azure-red-hat-openshift-aro-preview"></a>Зашифровать утверждения Постоянного тома с помощью ключа, управляемого клиентом (CMK) в Azure Red Hat OpenShift (АТО) (Предварительная версия)
@@ -24,7 +24,7 @@ ms.locfileid: "102555624"
 > [!IMPORTANT]
 > Функции предварительной версии АТО доступны на уровне самообслуживания. Предварительные версии предоставляются «как есть» и «как есть» и исключаются из соглашений об уровне обслуживания и ограниченной гарантии. Предварительные версии АТО частично охвачены службой поддержки клиентов. Таким образом, эти функции не предназначены для использования в рабочей среде.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 В этой статье предполагается, что:
 
 * У вас есть существующий кластер АТО по адресу OpenShift версии 4,4 (или более поздней).

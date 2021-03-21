@@ -11,12 +11,12 @@ ms.tgt_pltfrm: multiple
 ms.workload: media
 ms.date: 1/14/2020
 ms.author: inhenkel
-ms.openlocfilehash: 327673d0765fa807f782494562c995278be4782f
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.openlocfilehash: 6a2c6495ca3685aec1bc132ec7f8a88809ad2d87
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98955299"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104598292"
 ---
 # <a name="live-streaming-scenario-based-migration-guidance"></a>Руководство по миграции на основе сценариев динамической потоковой передачи
 
@@ -42,7 +42,7 @@ ms.locfileid: "98955299"
 - Если вам требуется быстрый запуск интерактивных событий, ознакомьтесь с новыми возможностями [режима ожидания](live-events-outputs-concept.md#standby-mode) .
 - Если вы хотите транскрипция интерактивное событие во время его выполнения, изучите новую функцию [транскрипции в реальном времени](live-transcription.md) .
 - Если требуется более длительная потоковая передача, создайте события круглосуточной в режиме 3.
-- Используйте [сетку событий](monitor-events-portal-how-to.md) для мониторинга динамических событий.
+- Используйте [сетку событий](monitoring/monitor-events-portal-how-to.md) для мониторинга динамических событий.
 
 Конкретные действия см. в статьях Основные понятия, учебники и инструкции по работе с Live Events.
 
@@ -62,7 +62,7 @@ ms.locfileid: "98955299"
 
 ### <a name="tutorials-and-quickstarts"></a>Учебники и краткие руководства
 
-- [Руководство. потоковая передача в реальном времени с помощью служб мультимедиа](stream-live-tutorial-with-api.md)
+- [Руководство по Потоковая трансляция в реальном времени с помощью Служб мультимедиа](stream-live-tutorial-with-api.md)
 - [Создание прямой трансляции в Службах мультимедиа Azure с помощью OBS](live-events-obs-quickstart.md)
 - [Краткое руководство. Отправка, кодирование и потоковая передача содержимого с помощью портала](manage-assets-quickstart.md)
 - [Краткое руководство. Создание динамического потока служб мультимедиа Azure с помощью Wirecast](live-events-wirecast-quickstart.md)

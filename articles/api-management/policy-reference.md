@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для службы "Управление API"
 description: Здесь приведены встроенные определения политик в Политике Azure для службы "Управление API Azure". Эти встроенные определения политик предоставляют подходы к управлению ресурсами Azure.
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 author: georgewallace
 ms.author: gwallace
 ms.service: api-management
 ms.topic: reference
 ms.custom: subject-policy-reference
-ms.openlocfilehash: 5736daae211df6a3f211f66ded5583658d60111f
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: d144208df1b5bf02bba7f0517e888e44fde47871
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102614271"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104605874"
 ---
 # <a name="azure-policy-built-in-policy-definitions-for-azure-api-management"></a>Встроенные определения политик в Политике Azure для службы "Управление API Azure"
 

@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 10/23/2020
 ms.author: alkohli
 ms.openlocfilehash: 66edd4cad5b2f38696ef1df2030687bf4c7d9956
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102634181"
 ---
 # <a name="configure-vpn-on-your-azure-stack-edge-pro-r-device-via-azure-powershell"></a>Настройка VPN на устройстве Azure Stack ребра Pro R с помощью Azure PowerShell
@@ -240,6 +240,6 @@ Outputs                 :
 Get-AzResourceGroupDeploymentOperation -ResourceGroupName $ResourceGroupName -DeploymentName $AzureDeploymentName
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Настройка VPN с помощью локального интерфейса пользователя на устройстве с Azure Stack ребра Pro R](azure-stack-edge-pro-r-deploy-configure-certificates-vpn-encryption.md#configure-vpn)

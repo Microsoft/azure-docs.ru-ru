@@ -6,10 +6,10 @@ ms.subservice: process-automation
 ms.date: 02/26/2021
 ms.topic: conceptual
 ms.openlocfilehash: d4d9bcd16e36e76808f19f7fbd43dd0d3e7550c3
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102182338"
 ---
 # <a name="deploy-a-linux-hybrid-runbook-worker"></a>Развертывание гибридной рабочей роли Runbook для Linux

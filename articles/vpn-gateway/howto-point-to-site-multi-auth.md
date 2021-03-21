@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: cherylmc
 ms.openlocfilehash: d405f4b10808b7d39c0d116f2c9006c85532b4f9
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101746706"
 ---
 # <a name="configure-a-point-to-site-vpn-connection-to-a-vnet-using-multiple-authentication-types-azure-portal"></a>Настройка VPN-подключения типа "точка — сеть" к виртуальной сети с помощью нескольких типов проверки подлинности: портал Azure
@@ -23,7 +23,7 @@ ms.locfileid: "101746706"
 
 Дополнительные сведения о VPN-подключениях типа "точка — сеть" см. [в статье о VPN-подключениях типа "точка](point-to-site-about.md)— сеть". Чтобы создать эту конфигурацию с помощью Azure PowerShell, см. раздел [Настройка VPN-подключения типа "точка — сеть" с помощью Azure PowerShell](vpn-gateway-howto-point-to-site-rm-ps.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Убедитесь в том, что у вас уже есть подписка Azure. Если у вас нет подписки Azure, вы можете [активировать преимущества для подписчиков MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details) или [зарегистрировать бесплатную учетную запись](https://azure.microsoft.com/pricing/free-trial).
 
@@ -91,7 +91,7 @@ ms.locfileid: "101746706"
 
 На странице **Конфигурация "точка — сеть** " в качестве типа туннеля выберите **опенвпн (SSL)** .
 
-### <a name="authentication-type"></a><a name="authenticationtype"></a>Тип проверки подлинности
+### <a name="authentication-type"></a><a name="authenticationtype"></a>Authentication type (Тип проверки подлинности)
 
 В поле **тип проверки подлинности** выберите нужные типы. Доступные параметры описаны ниже.
 

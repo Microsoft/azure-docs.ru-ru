@@ -4,10 +4,10 @@ description: В этой статье приводится матрица под
 ms.date: 03/19/2020
 ms.topic: conceptual
 ms.openlocfilehash: d8f2a38db468ec57cdc0a4f0813fe7ae8e341d52
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102609776"
 ---
 # <a name="mabs-azure-backup-server-v3-ur1-protection-matrix"></a>Матрица защиты MABS (Azure Backup Server) v3 UR1
@@ -167,6 +167,6 @@ MABS не поддерживает защиту следующих типов д
 
   * Сжатие и хранилище единственных копий
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Таблица поддержки для резервного копирования с помощью Microsoft Azure Backup Server или System Center DPM](backup-support-matrix-mabs-dpm.md)

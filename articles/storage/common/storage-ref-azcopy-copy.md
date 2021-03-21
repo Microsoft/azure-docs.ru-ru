@@ -9,10 +9,10 @@ ms.author: normesta
 ms.subservice: common
 ms.reviewer: zezha-msft
 ms.openlocfilehash: c676b92fd07c6e444aa22f25c48fdb1b1957ca7a
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103493770"
 ---
 # <a name="azcopy-copy"></a>azcopy copy
@@ -351,9 +351,9 @@ azcopy cp "https://storage.cloud.google.com/[bucket*name]/" "https://[destaccoun
 
 **--Cap-Мбит/с, с плавающей запятой**   Скорость передачи с прописными буквами в мегабит в секунду. Посекундная пропускная способность может немного отличаться от ограничения. Если этот параметр имеет значение 0 или пропущен, пропускная способность не ограничена.
 
-**--выходной** формат строки выходных данных команды. Среди вариантов: Text, JSON. Значение по умолчанию — `text`. ("текст" по умолчанию)
+**--выходной** формат строки выходных данных команды. Среди вариантов: Text, JSON. Значение по умолчанию — `text`. ("текст" по умолчанию)
 
-**--Trusted-Microsoft-суффиксы** указывает дополнительные суффиксы домена, в которых могут отправляться Azure Active Directory токены входа.  Значение по умолчанию — `*.core.windows.net;*.core.chinacloudapi.cn;*.core.cloudapi.de;*.core.usgovcloudapi.net`. Все перечисленные здесь значения добавляются к значениям по умолчанию. В целях безопасности следует размещать только Microsoft Azureные домены. Несколько записей разделяются точкой с запятой.
+**--Trusted-Microsoft-суффиксы** указывает дополнительные суффиксы домена, в которых могут отправляться Azure Active Directory токены входа.  Значение по умолчанию — `*.core.windows.net;*.core.chinacloudapi.cn;*.core.cloudapi.de;*.core.usgovcloudapi.net`. Все перечисленные здесь значения добавляются к значениям по умолчанию. В целях безопасности следует размещать только Microsoft Azureные домены. Несколько записей разделяются точкой с запятой.
 
 ## <a name="see-also"></a>См. также раздел
 

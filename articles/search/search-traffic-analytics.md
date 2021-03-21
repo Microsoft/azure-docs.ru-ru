@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 1/29/2021
 ms.custom: devx-track-js, devx-track-csharp
 ms.openlocfilehash: 89d067162dacb7a0ca25de826630e1986f1035e1
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102485475"
 ---
 # <a name="collect-telemetry-data-for-search-traffic-analytics"></a>Сбор данных телеметрии для аналитики трафика поиска

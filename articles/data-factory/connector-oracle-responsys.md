@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 08/01/2019
 ms.openlocfilehash: 334af18b068f247d9566d6be926632b9f9670e6e
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100368427"
 ---
 # <a name="copy-data-from-oracle-responsys-using-azure-data-factory-preview"></a>Копирование данных из Oracle Responsys с помощью фабрики данных Azure (предварительная версия)
@@ -43,7 +43,7 @@ ms.locfileid: "100368427"
 
 Для связанной службы Oracle Responsys поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства type необходимо задать значение **Responsys** | Да |
 | endpoint | Конечная точка сервера Respopnsys  | Да |

@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 01/06/2021
 ms.author: mjbrown
 ms.openlocfilehash: d542e2b4e5db86fd3354514790e718f0694a09a5
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102489758"
 ---
 # <a name="manage-an-azure-cosmos-account"></a>Управление учетной записью Azure Cosmos

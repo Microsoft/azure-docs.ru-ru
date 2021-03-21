@@ -8,10 +8,10 @@ ms.topic: article
 ms.custom: seo-lt-2019
 ms.date: 03/12/2020
 ms.openlocfilehash: 169420aee32a49549a71746708bd8377a4c63b5d
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100370297"
 ---
 # <a name="use-powershell-to-create-a-data-factory-pipeline-to-copy-data-in-the-cloud"></a>Создание конвейера фабрики данных для копирования данных в облаке с помощью PowerShell

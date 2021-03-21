@@ -12,10 +12,10 @@ author: minthigpen
 ms.reviewer: Luis.Quintanilla
 ms.date: 02/25/2021
 ms.openlocfilehash: 44ccf6b6d2459b87040fcac7d9cdcd336cc7b82f
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102522042"
 ---
 # <a name="model-interpretability-in-azure-machine-learning-preview"></a>Интерпретируемость модели в Машинное обучение Azure (Предварительная версия)
@@ -58,7 +58,7 @@ ms.locfileid: "102522042"
 
  `azureml-interpret` использует методики интерпретации, разработанные в [интерпретированном сообществе](https://github.com/interpretml/interpret-community/), пакет Python с открытым исходным кодом для обучения интерпретируемых моделей и помогая объяснить блаккбокс AI-системы. [Интерпретатор-сообщество](https://github.com/interpretml/interpret-community/) выступает в качестве узла для поддерживаемых объяснений SDK и в настоящее время поддерживает следующие методы интерпретации:
 
-|Методика интерпретации|Описание|Тип|
+|Методика интерпретации|Описание|Type|
 |--|--|--------------------|
 |Пояснение к дереву ШАП| Пояснение к дереву [ШАП](https://github.com/slundberg/shap), в котором основное внимание уделяется алгоритму оценки скорости быстрого ШАП значений времени, характерному для **деревьев и это совокупности деревьев**.|Зависящие от модели|
 |Глубокое пояснение ШАП| Основываясь на пояснениях от ШАП, глубокая пояснения — алгоритм аппроксимации с высокой скоростью для ШАП значений в моделях глубокого обучения, который строится на связи с Диплифт, описанным в [документе ШАП НИПС](https://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions). Модели **TensorFlow** и модели **keras** с использованием серверной части TensorFlow поддерживаются (также доступна предварительная поддержка PyTorch).|Зависящие от модели|
