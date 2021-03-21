@@ -9,15 +9,16 @@ ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
 ms.date: 03/08/2021
+ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: fa34e8ea71c307b75a3f345861f8ed99d131b3fd
-ms.sourcegitcommit: f6193c2c6ce3b4db379c3f474fdbb40c6585553b
+ms.openlocfilehash: 8b3224333a3915b7827242004d1dec0f4695f479
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102447934"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104581921"
 ---
 # <a name="set-up-a-password-reset-flow-in-azure-active-directory-b2c"></a>Настройка потока сброса пароля в Azure Active Directory B2C
 
@@ -301,7 +302,7 @@ ms.locfileid: "102447934"
 
 ### <a name="test-the-user-flow"></a>Тестирование потока пользователя
 
-1. Выберите созданный поток пользователя, чтобы открыть его страницу обзора, а затем выберите пункт **запустить поток пользователя**.
+1. Выберите созданный поток пользователя, чтобы открыть соответствующую страницу обзора, а затем щелкните **Выполнить поток пользователя**.
 1. В разделе **Приложение** выберите зарегистрированное ранее веб-приложение с именем *webapp1*. В поле **URL-адрес ответа** должно содержаться значение `https://jwt.ms`.
 1. Щелкните **выполнить поток пользователя**, проверьте адрес электронной почты созданной ранее учетной записи и нажмите кнопку **продолжить**.
 1. Теперь можно изменить пароль для пользователя. Измените пароль и щелкните **Продолжить**. Токен должен вернуться по адресу `https://jwt.ms` и отобразиться пользователю.

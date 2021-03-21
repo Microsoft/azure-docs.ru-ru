@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 10/21/2020
 ms.openlocfilehash: 7ccd01f8c351ac2a7326a3b893bd78d14599db50
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100588303"
 ---
 # <a name="monitor-and-tune-azure-database-for-postgresql---single-server"></a>мониторингу и настройке отдельного сервера Базы данных Azure для PostgreSQL
@@ -59,7 +59,7 @@ ms.locfileid: "100588303"
 
 Дополнительные сведения о настройке уведомлений см. в документе [уведомления о запланированном обслуживании](./concepts-planned-maintenance-notification.md) .
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - См. раздел [Настройка оповещений](howto-alert-on-metric.md) для получения рекомендаций по созданию оповещения для метрики.
 - Дополнительные сведения о том, как получить доступ к метрикам и экспортировать их с помощью портал Azure, REST API или интерфейса командной строки, см. в [обзоре метрик Azure](../azure-monitor/data-platform.md) .
 - Читайте наш блог, чтобы ознакомиться с [рекомендациями по мониторингу сервера](https://azure.microsoft.com/blog/best-practices-for-alerting-on-metrics-with-azure-database-for-postgresql-monitoring/).

@@ -10,10 +10,10 @@ services: iot-central
 ms.custom:
 - device-developer
 ms.openlocfilehash: e8ae8b0173e53c0a46ded1a2690175e367997c9f
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102054953"
 ---
 # <a name="best-practices-for-device-development"></a>Рекомендации по разработке устройств

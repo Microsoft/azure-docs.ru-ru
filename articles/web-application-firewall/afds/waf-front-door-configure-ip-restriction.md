@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 12/22/2020
 ms.author: tyao
 ms.openlocfilehash: 65e378c0380804c13e4b42d855aede7781b93592
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102211674"
 ---
 # <a name="configure-an-ip-restriction-rule-with-a-web-application-firewall-for-azure-front-door"></a>Настройка правила ограничения IP-адресов с помощью брандмауэра веб-приложения для передней дверцы Azure
@@ -24,7 +24,7 @@ ms.locfileid: "102211674"
 
 ## <a name="configure-a-waf-policy-with-the-azure-portal"></a>Настройка политики WAF с помощью портал Azure
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Создайте профиль передней дверцы Azure, следуя инструкциям, описанным в разделе [Краткое руководство. Создание передней дверцы для глобального веб-приложения высокой доступности](../../frontdoor/quickstart-create-front-door.md).
 
@@ -64,7 +64,7 @@ ms.locfileid: "102211674"
 
    :::image type="content" source="../media/waf-front-door-configure-ip-restriction/custom-rule.png" alt-text="Пользовательское правило":::
 
-   Нажмите **Добавить**.
+   Выберите **Добавить**.
 6. Выберите **Далее: Ассоциация**.
 7. Выберите **добавить интерфейсный узел**.
 8. В качестве **внешнего узла** выберите интерфейсный узел и щелкните **Добавить**.
@@ -83,7 +83,7 @@ ms.locfileid: "102211674"
 
 ## <a name="configure-a-waf-policy-with-the-azure-cli"></a>Настройка политики WAF с помощью Azure CLI
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 Прежде чем приступить к настройке политики ограничения IP-адресов, настройте среду CLI и создайте профиль передней дверцы Azure.
 
 #### <a name="set-up-the-azure-cli-environment"></a>Настройка среды Azure CLI
@@ -162,7 +162,7 @@ az network front-door waf-policy rule match-condition add \
 
 ## <a name="configure-a-waf-policy-with-azure-powershell"></a>Настройка политики WAF с Azure PowerShell
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 Прежде чем приступить к настройке политики ограничения IP-адресов, настройте среду PowerShell и создайте профиль передней дверцы Azure.
 
 #### <a name="set-up-your-powershell-environment"></a>Настройка среды PowerShell

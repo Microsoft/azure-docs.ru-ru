@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 12/29/2019
 ms.author: memildin
 ms.openlocfilehash: 1ce20deed8b26dc5f5bebf4656dd3f1c370d766f
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102561234"
 ---
 # <a name="endpoint-protection-assessment-and-recommendations-in-azure-security-center"></a>Оценка и рекомендации по защите конечных точек в центре безопасности Azure

@@ -4,10 +4,10 @@ description: Добавьте эти URL-адреса в обход сервер
 ms.date: 04/10/2020
 ms.topic: conceptual
 ms.openlocfilehash: 7d9c8222ee85c0c16ec1e1926335ac06e0389797
-ms.sourcegitcommit: ad83be10e9e910fd4853965661c5edc7bb7b1f7c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96745882"
 ---
 # <a name="safelist-the-azure-portal-urls-on-your-firewall-or-proxy-server"></a>Добавление URL-адресов портала Azure в список надежных адресов в брандмауэре или на прокси-сервере

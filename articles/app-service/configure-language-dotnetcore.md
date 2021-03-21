@@ -7,16 +7,16 @@ ms.topic: article
 ms.date: 06/02/2020
 zone_pivot_groups: app-service-platform-windows-linux
 ms.openlocfilehash: 1223ff5c56d3c7d58b324d2099980bc0b5408125
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97655974"
 ---
 # <a name="configure-an-aspnet-core-app-for-azure-app-service"></a>Настройка приложения ASP.NET Core для службы приложений Azure
 
 > [!NOTE]
-> Сведения о ASP.NET в .NET Framework см. в статье [Настройка приложения ASP.NET для службы приложений Azure](configure-language-dotnet-framework.md) .
+> Сведения о ASP.NET в платформа .NET Framework см. в статье [Настройка приложения ASP.NET для службы приложений Azure](configure-language-dotnet-framework.md) .
 
 ASP.NET Core приложения должны быть развернуты в службе приложений Azure как скомпилированные двоичные файлы. Средство публикации Visual Studio создает решение, а затем развертывает скомпилированные двоичные файлы напрямую, в то время как модуль развертывания службы приложений сначала развертывает репозиторий кода, а затем компилирует двоичные файлы.
 
@@ -144,7 +144,7 @@ az webapp config appsettings set --resource-group <resource-group-name> --name <
 
 ## <a name="access-diagnostic-logs"></a>Доступ к журналам диагностики
 
-ASP.NET Core предоставляет [встроенный поставщик ведения журнала для службы приложений](/aspnet/core/fundamentals/logging/#azure-app-service). В *Program.CS* проекта добавьте поставщик в приложение с помощью `ConfigureLogging` метода расширения, как показано в следующем примере:
+ASP.NET Core предоставляет [встроенный поставщик ведения журнала для службы приложений](/aspnet/core/fundamentals/logging/#azure-app-service). В *Program. CS* проекта добавьте поставщик в приложение с помощью `ConfigureLogging` метода расширения, как показано в следующем примере:
 
 ```csharp
 public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -175,7 +175,7 @@ az webapp config appsettings set --name <app-name> --resource-group <resource-gr
 
 ## <a name="detect-https-session"></a>Обнаружение сеанса HTTPS
 
-В Службе приложений [завершение SSL-запросов](https://wikipedia.org/wiki/TLS_termination_proxy) происходит в подсистеме балансировки нагрузки сети, поэтому все HTTPS-запросы достигают вашего приложения в виде незашифрованных HTTP-запросов. Если логика приложения должна определить, зашифрованы ли запросы пользователя, настройте по промежуточного слоя перенаправляемых заголовков в *Startup.CS*:
+В Службе приложений [завершение SSL-запросов](https://wikipedia.org/wiki/TLS_termination_proxy) происходит в подсистеме балансировки нагрузки сети, поэтому все HTTPS-запросы достигают вашего приложения в виде незашифрованных HTTP-запросов. Если логика приложения должна определить, зашифрованы ли запросы пользователя, настройте по промежуточного слоя для перенаправляемых заголовков в *Startup. CS*:
 
 - Настройте ПО промежуточного слоя с помощью [ForwardedHeadersOptions](/dotnet/api/microsoft.aspnetcore.builder.forwardedheadersoptions), чтобы заголовки `X-Forwarded-For` и `X-Forwarded-Proto` перенаправлялись в `Startup.ConfigureServices`.
 - Добавьте в известные сети диапазоны частных IP-адресов, чтобы по промежуточного слоя можно было доверять подсистеме балансировки нагрузки службы приложений.

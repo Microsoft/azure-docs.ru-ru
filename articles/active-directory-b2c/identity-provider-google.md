@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/15/2021
+ms.date: 03/17/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: 433e44e9998376d0bea57264f3daeaff7499a3cf
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 7d5786c4188db63efc3012e565071f8fd410b92f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103488845"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579966"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-a-google-account-using-azure-active-directory-b2c"></a>Настройка регистрации и входа с учетной записью Google через Azure Active Directory B2C
 
@@ -67,6 +67,9 @@ ms.locfileid: "103488845"
 1. Щелкните **Сохранить**.
 
 ## <a name="add-google-identity-provider-to-a-user-flow"></a>Добавление поставщика удостоверений Google в поток пользователя 
+
+На этом этапе был настроен поставщик удостоверений Google, но он еще не доступен ни на одной из страниц входа. Чтобы добавить поставщик удостоверений Google в поток пользователя, выполните следующие действия.
+
 
 1. В клиенте Azure AD B2C выберите **Потоки пользователей**.
 1. Щелкните поток пользователя, для которого требуется добавить поставщик удостоверений Google.

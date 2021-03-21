@@ -10,10 +10,10 @@ ms.author: normesta
 ms.reviewer: dineshm
 ms.subservice: blobs
 ms.openlocfilehash: 52fc7b9c1229421fd46b8110857a0a7a8a4f916a
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100520431"
 ---
 # <a name="map-a-custom-domain-to-an-azure-blob-storage-endpoint"></a>Сопоставьте личный домен с конечной точкой хранилища BLOB-объектов Azure
@@ -135,7 +135,7 @@ Set-AzStorageAccount -ResourceGroupName <resource-group-name> -Name <storage-acc
 
 После того как запись CNAME передается через серверы доменных имен (DNS), а пользователи имеют соответствующие разрешения, они могут просматривать данные большого двоичного объекта с помощью пользовательского домена.
 
-##### <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli);
+##### <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
 Выполните следующую команду PowerShell
 
@@ -228,7 +228,7 @@ az storage account update \
        
    - Имя узла, полученное в разделе [Получение имени узла конечной точки хранилища](#endpoint) выше в этой статье. 
 
-     Добавьте поддомен `asverify` в имя узла. Например: `asverify.mystorageaccount.blob.core.windows.net`.
+     Добавьте поддомен `asverify` в имя узла. Например, `asverify.mystorageaccount.blob.core.windows.net`.
 
 #### <a name="step-3-pre-register-your-custom-domain-with-azure"></a>Шаг 3. Предварительная регистрация пользовательского домена в Azure
 
@@ -275,7 +275,7 @@ Set-AzStorageAccount -ResourceGroupName <resource-group-name> -Name <storage-acc
 
 Трафик к вашему домену еще не направляется в вашу учетную запись хранения, пока вы не создадите запись CNAME у поставщика домена. Это будет сделано в следующем разделе.
 
-##### <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli);
+##### <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
 Выполните следующую команду PowerShell
 
@@ -364,7 +364,7 @@ az storage account update \
       -CustomDomainName ""
   ```
 
-#### <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli);
+#### <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
 Воспользуйтесь командой интерфейса командной строки [az storage account update](/cli/azure/storage/account) и укажите пустую строку (`""`) в качестве значения аргумента `--custom-domain`, чтобы отменить регистрацию личного домена.
 
@@ -416,6 +416,6 @@ az storage account update \
 
    * [Цены и выставление счетов при использовании хранилища BLOB-объектов с Azure CDN](../../cdn/cdn-storage-custom-domain-https.md#http-to-https-redirection).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Дополнительные сведения о размещении статических веб-сайтов в хранилище больших двоичных объектов Azure](storage-blob-static-website.md)

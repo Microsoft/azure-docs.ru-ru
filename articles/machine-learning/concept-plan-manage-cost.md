@@ -11,10 +11,10 @@ ms.subservice: core
 ms.topic: conceptual
 ms.date: 05/08/2020
 ms.openlocfilehash: 6f4a8e4b8cbc35dca9f48bbec84e9023e82f6a84
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102501641"
 ---
 # <a name="plan-and-manage-costs-for-azure-machine-learning"></a>Планирование и управление затратами для Машинное обучение Azure
@@ -57,7 +57,7 @@ ms.locfileid: "102501641"
 
 ### <a name="costs-that-typically-accrue-with-azure-machine-learning"></a>Затраты, которые обычно начисляются с помощью Машинное обучение Azure
 
-При создании ресурсов для Машинное обучение Azure рабочей области также создаются ресурсы для других служб Azure. Они приведены ниже.
+При создании ресурсов для Машинное обучение Azure рабочей области также создаются ресурсы для других служб Azure. Их можно сформулировать следующим образом.
 
 * [Реестр контейнеров Azure](https://azure.microsoft.com/pricing/details/container-registry?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn) Обычная учетная запись
 * [Хранилище блочных BLOB-объектов Azure](https://azure.microsoft.com/pricing/details/storage/blobs?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn) (общего назначения v1)

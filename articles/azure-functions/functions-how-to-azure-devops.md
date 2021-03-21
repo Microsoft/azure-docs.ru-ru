@@ -7,10 +7,10 @@ ms.date: 04/18/2019
 ms.author: cshoe
 ms.custom: devx-track-csharp, devx-track-python, devx-track-azurecli
 ms.openlocfilehash: a3f423a144738fdaa4462606de6ad4a4e34d6775
-ms.sourcegitcommit: 77ab078e255034bd1a8db499eec6fe9b093a8e4f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97563421"
 ---
 # <a name="continuous-delivery-by-using-azure-devops"></a>Непрерывная поставка с помощью Azure DevOps
@@ -26,7 +26,7 @@ ms.locfileid: "97563421"
 
 Чтобы создать конвейер на основе YAML, сначала выполните сборку приложения, а затем разверните приложение.
 
-### <a name="build-your-app"></a>Сборка приложения
+### <a name="build-your-app"></a>Создание приложения
 
 Создание приложения в Azure Pipelines зависит от языка программирования приложения. Каждый язык имеет определенные шаги сборки, которые создают артефакт развертывания. Артефакт развертывания используется для развертывания приложения-функции в Azure.
 
@@ -216,7 +216,7 @@ steps:
 
 Шаблоны в Azure DevOps — это стандартные группы задач, которые создают или развертывают приложение.
 
-### <a name="build-your-app"></a>Сборка приложения
+### <a name="build-your-app"></a>Создание приложения
 
 Создание приложения в Azure Pipelines зависит от языка программирования приложения. Каждый язык имеет определенные шаги сборки, которые создают артефакт развертывания. Артефакт развертывания используется для обновления приложения-функции в Azure.
 
@@ -266,7 +266,7 @@ steps:
 
     - Вы должны быть администратором проекта в Azure DevOps.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь с [обзором функций Azure](functions-overview.md).
 - Ознакомьтесь с [обзором Azure DevOps](/azure/devops/pipelines/).

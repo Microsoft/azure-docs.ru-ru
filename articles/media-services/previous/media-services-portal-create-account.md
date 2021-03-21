@@ -15,10 +15,10 @@ ms.topic: conceptual
 ms.date: 03/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: 53f0063d1458c218324d867c1942ae0e044f10d0
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103011924"
 ---
 # <a name="create-a-media-services-account-using-the-azure-portal"></a>Создание учетной записи Служб мультимедиа с помощью портала Azure
@@ -68,7 +68,7 @@ ms.locfileid: "103011924"
 
 Для управления учетной записью AMS (например, для программного подключения к API AMS, отправки видео, кодирования ресурсов, настройки системы защиты содержимого, мониторинга хода выполнения задания) выберите **Параметры** в левой части портала. В разделе **Параметры** перейдите к одной из доступных колонок (например, **Доступ через API**, **Ресурсы**, **Задания**, **Защита содержимого**).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Теперь можно отправить файлы в учетную запись AMS. Дополнительные сведения см. в статье [Отправка файлов в учетную запись служб мультимедиа с помощью портала Azure](media-services-portal-upload-files.md).
 

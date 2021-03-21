@@ -5,10 +5,10 @@ ms.custom: vs-azure, devx-track-csharp
 ms.topic: conceptual
 ms.date: 06/10/2020
 ms.openlocfilehash: 877c82e375b0ea469071402b83fadbd634177f3f
-ms.sourcegitcommit: ad677fdb81f1a2a83ce72fa4f8a3a871f712599f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97655821"
 ---
 # <a name="develop-azure-functions-using-visual-studio"></a>Разработка Функций Azure с помощью Visual Studio  
@@ -27,7 +27,7 @@ Visual Studio предоставляет следующие преимущест
 
 Если не указано иное, процедуры и примеры приведены для Visual Studio 2019. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Средства функций Azure. Чтобы добавить инструменты функций Azure, включите рабочую нагрузку **разработки Azure** в установку Visual Studio. Средства функций Azure доступны в рабочей нагрузке разработка Azure, начиная с Visual Studio 2017.
 

@@ -1,5 +1,5 @@
 ---
-title: Уровень безопасности — тест производительности CIS
+title: 'Уровень безопасности: тест производительности CIS'
 titleSuffix: Azure Defender for IoT
 description: Улучшите соответствие требованиям безопасности и воспользуйтесь защитником для Micro Agent для IoT.
 author: shhazam-ms
@@ -9,10 +9,10 @@ ms.date: 1/20/2021
 ms.topic: conceptual
 ms.service: azure
 ms.openlocfilehash: 8a3062d50d30c99ea2322bbff037a6f61e7b7b4c
-ms.sourcegitcommit: 4784fbba18bab59b203734b6e3a4d62d1dadf031
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99809978"
 ---
 # <a name="security-posture--cis-benchmark"></a>Уровень безопасности — тесты производительности CIS 

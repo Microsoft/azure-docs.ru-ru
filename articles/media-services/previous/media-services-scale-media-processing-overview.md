@@ -14,10 +14,10 @@ ms.topic: article
 ms.date: 3/10/2021
 ms.author: inhenkel
 ms.openlocfilehash: d0692996c27f969ffc90078db2ddcc849ee15ab1
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103012723"
 ---
 # <a name="media-reserved-units"></a>Зарезервированные единицы мультимедиа
@@ -52,7 +52,7 @@ ms.locfileid: "103012723"
 
 Сведения о квотах и ограничениях, а также о том, как отправить запрос в службу поддержки, см. в разделе [Квоты и ограничения](media-services-quotas-and-limitations.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Попробуйте масштабировать обработку мультимедиа с помощью одной из следующих технологий:
 

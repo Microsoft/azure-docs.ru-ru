@@ -7,17 +7,17 @@ ms.date: 04/10/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 70a56b7efc34ba2fd3c06521c6e4cac6ea28778f
-ms.sourcegitcommit: ab94795f9b8443eef47abae5bc6848bb9d8d8d01
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96302477"
 ---
 # <a name="create-a-profile-container-with-azure-files-and-azure-ad-ds"></a>Создание контейнера профиля с помощью службы файлов Azure и Azure AD DS
 
 В этой статье показано, как создать контейнер профиля Фслогикс с помощью службы файлов Azure и Azure Active Directory доменных служб (AD DS).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В этой статье предполагается, что вы уже настроили экземпляр AD DS Azure. Если у вас еще нет, выполните инструкции в разделе [Создание базового управляемого домена](../active-directory-domain-services/tutorial-create-instance.md) , а затем вернитесь сюда.
 
@@ -96,7 +96,7 @@ ms.locfileid: "96302477"
 
 6. Войдя на виртуальную машину, запустите командную строку от имени администратора.
 
-7. Выполните следующую команду:
+7. Выполните следующую команду.
 
      ```cmd
      net use <desired-drive-letter>: \\<storage-account-name>.file.core.windows.net\<share-name> /user:Azure\<storage-account-name> <storage-account-key>
@@ -142,11 +142,11 @@ ms.locfileid: "96302477"
 
 1. Войдите на виртуальную машину узла сеансов, настроенную в начале этой статьи, а затем [скачайте и установите агент фслогикс](/fslogix/install-ht/).
 
-2. Распакуйте скачанный файл агента фслогикс и перейдите к **x64**  >  **выпускам** x64, а затем откройте **FSLogixAppsSetup.exe**.
+2. Распакуйте скачанный файл агента фслогикс и перейдите к   >  **выпускам** x64, а затем откройте **FSLogixAppsSetup.exe**.
 
 3. После запуска программы установки установите флажок **я принимаю условия лицензии.** Если применимо, укажите новый ключ.
 
-4. Выберите пункт **Установить**.
+4. Нажмите кнопку **Установить**.
 
 5. Откройте **диск C**, а затем последовательно выберите **Program Files**  >  **фслогикс**  >  **Apps** (программы), чтобы убедиться, что агент фслогикс установлен правильно.
 

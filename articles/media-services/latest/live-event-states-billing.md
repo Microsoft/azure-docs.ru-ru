@@ -14,10 +14,10 @@ ms.topic: conceptual
 ms.date: 10/26/2020
 ms.author: inhenkel
 ms.openlocfilehash: c9fa12e1ee3778d0865c75662064bd4067e56d89
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98897821"
 ---
 # <a name="live-event-states-and-billing"></a>Активные состояния мероприятий и выставление счетов

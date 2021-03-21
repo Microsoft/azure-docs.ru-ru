@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 01/05/2021
 ms.author: mbaldwin
 ms.openlocfilehash: c7635fdc2012ab404709733d8f5849465c2ee82f
-ms.sourcegitcommit: dd24c3f35e286c5b7f6c3467a256ff85343826ad
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99071577"
 ---
 # <a name="azure-key-vault-security"></a>Безопасность Azure Key Vault
@@ -108,7 +108,7 @@ Azure Key Vault защита от обратимого удаления и оч�
 
 Вы также должны использовать регулярные резервные копии хранилища для обновления, удаления и создания объектов в хранилище.  
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Базовые показатели безопасности Azure Key Vault](security-baseline.md)
 - [Рекомендации по использованию Key Vault](security-baseline.md)
