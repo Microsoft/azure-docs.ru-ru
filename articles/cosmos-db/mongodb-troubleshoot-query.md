@@ -9,10 +9,10 @@ ms.date: 03/02/2021
 ms.author: tisande
 ms.reviewer: sngun
 ms.openlocfilehash: 5302cb7bb3f4683d200f6f9ea106991bb934fc17
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101659908"
 ---
 # <a name="troubleshoot-query-issues-when-using-the-azure-cosmos-db-api-for-mongodb"></a>Устранение проблем с запросами при использовании Azure Cosmos DB API для MongoDB
@@ -264,7 +264,7 @@ db.coll.find(
 
 В большинстве случаев операции агрегирования в API Azure Cosmos DB для MongoDB будут частично использовать индексы. Как правило, обработчик запросов будет применять фильтры по равенству и диапазонам первыми и использовать индексы. После применения этих фильтров обработчик запросов может оценить дополнительные фильтры и прибегнуть к загрузке оставшихся документов для выполнения статистического вычисления, если это необходимо. 
 
-Ниже приведен пример:
+Приведем пример:
 
 ```
 db.coll.aggregate( [

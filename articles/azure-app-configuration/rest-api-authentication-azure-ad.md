@@ -7,17 +7,17 @@ ms.service: azure-app-configuration
 ms.topic: reference
 ms.date: 08/17/2020
 ms.openlocfilehash: cbf05245768a663e324e9bb6e1ad422eeee3ab1a
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96930523"
 ---
-# <a name="azure-active-directory-authentication"></a>Проверка подлинности Azure Active Directory
+# <a name="azure-active-directory-authentication"></a>Проверка подлинности Azure Active Directory
 
 Для проверки подлинности HTTP-запросов можно использовать `Bearer` схему проверки подлинности с маркером, полученным от Azure Active Directory (Azure AD). Эти запросы необходимо передавать по протоколу TLS.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Необходимо назначить участника, который будет использоваться для запроса маркера Azure AD, к одной из применимых [ролей конфигурации приложений Azure](./rest-api-authorization-azure-ad.md).
 

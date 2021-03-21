@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 08/26/2020
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 124b8d3de59d1645379d50360e69a5fdbd5587e5
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102045298"
 ---
 # <a name="dependency-tracking-in-azure-application-insights"></a>Отслеживание зависимостей в Azure Application Insights 
@@ -160,7 +160,7 @@ services.ConfigureTelemetryModule<DependencyTrackingTelemetryModule>((module, o)
 
 ## <a name="logs-analytics"></a>Журналы (Analytics)
 
-Вы можете отслеживать зависимости, используя [язык запросов Kusto](/azure/kusto/query/). Рассмотрим некоторые примеры.
+Вы можете отслеживать зависимости, используя [язык запросов Kusto](/azure/kusto/query/). Вот несколько примеров.
 
 * Поиск неудачно завершенных вызовов зависимостей:
 

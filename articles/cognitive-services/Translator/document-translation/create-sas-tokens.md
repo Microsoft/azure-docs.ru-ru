@@ -7,10 +7,10 @@ ms.author: lajanuar
 author: laujan
 ms.date: 03/05/2021
 ms.openlocfilehash: e40fc569ad1c8ec5894f06915422bea37cfc40ee
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102489639"
 ---
 # <a name="create-sas-tokens-for-document-translation-processing"></a>Создание маркеров SAS для обработки перевода документов
@@ -19,7 +19,7 @@ ms.locfileid: "102489639"
 
 ## <a name="create-your-sas-tokens-with-azure-storage-explorer"></a>Создание маркеров SAS с помощью Обозреватель службы хранилища Azure
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 * Вам потребуется приложение [**Обозреватель службы хранилища Azure**](../../../vs-azure-tools-storage-manage-with-storage-explorer.md) , установленное в среде разработки Windows, MacOS или Linux. Обозреватель службы хранилища Azure — это бесплатное средство, которое позволяет легко управлять ресурсами облачного хранилища Azure.
 * После установки Обозреватель службы хранилища Azure приложения [подключите его к учетной записи хранения](../../../vs-azure-tools-storage-manage-with-storage-explorer.md?tabs=windows#connect-to-a-storage-account-or-service) , которую вы используете для перевода документа.
@@ -68,7 +68,7 @@ ms.locfileid: "102489639"
 > Создание маркеров SAS для контейнеров непосредственно в портал Azure в настоящее время не поддерживается. Однако можно создать маркер SAS с [**Обозреватель службы хранилища Azure**](#create-your-sas-tokens-with-azure-storage-explorer) или выполнить задачу [программно](../../../storage/blobs/sas-service-create.md).
 
 <!-- markdownlint-disable MD024 -->
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Чтобы приступить к работе, вам потребуется:
 

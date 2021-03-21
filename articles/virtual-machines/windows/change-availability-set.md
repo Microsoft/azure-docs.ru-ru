@@ -8,10 +8,10 @@ ms.date: 3/8/2021
 ms.author: cynthn
 ms.reviewer: mimckitt
 ms.openlocfilehash: 99985d0bb2294c538efa712e477cc6f8a2eb4938
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102498478"
 ---
 # <a name="change-the-availability-set-for-a-vm-using-azure-powershell"></a>Изменение группы доступности для виртуальной машины с помощью Azure PowerShell    

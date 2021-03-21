@@ -8,10 +8,10 @@ ms.date: 1/21/2021
 ms.topic: how-to
 ms.service: azure
 ms.openlocfilehash: e32b9c690db70baeda7dec2f9f1270f82c6881bd
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101733301"
 ---
 # <a name="configure-azure-defender-for-iot-agent-based-solution"></a>Настройка решения Azure Defender для Интернета вещей на основе агента  

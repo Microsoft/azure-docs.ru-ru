@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 10/15/2020
 ms.author: alkohli
 ms.openlocfilehash: 160f85b34b3730b14ed96854d5f60ad81f4eb63b
-ms.sourcegitcommit: 16c7fd8fe944ece07b6cf42a9c0e82b057900662
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96583066"
 ---
 Ваше устройство связано с учетной записью хранения, которая используется в качестве места назначения для ваших данных в Azure. Управление доступом к учетной записи хранения осуществляется с помощью подписки и двух 512-разрядных ключей доступа, связанных с этой учетной записью хранения.

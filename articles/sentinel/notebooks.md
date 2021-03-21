@@ -11,13 +11,13 @@ ms.topic: conceptual
 ms.custom: mvc
 ms.date: 09/06/2020
 ms.openlocfilehash: 43d7a697b3cb013a73a0b14db8ec1758244ae3b9
-ms.sourcegitcommit: 5db975ced62cd095be587d99da01949222fc69a3
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97092199"
 ---
-# <a name="use-jupyter-notebook-to-hunt-for-security-threats"></a>Использование Jupyter Notebook для поиска угроз безопасности
+# <a name="use-jupyter-notebook-to-hunt-for-security-threats"></a>Использование записных книжек Jupyter для поиска угроз безопасности
 
 Основой Azure Sentinel является хранилище данных. Он сочетает высокопроизводительные запросы, динамическую схему и масштабируется до больших объемов данных. Портал Azure и все средства Azure Sentinel используют общий интерфейс API для доступа к этому хранилищу данных. Этот же интерфейс API доступен для внешних средств, таких как записные книжки [Jupyter](https://jupyter.org/) и Python. Хотя многие распространенные задачи можно выполнять на портале, среда Jupyter расширяет возможности работы с данными. Она сочетает в себе полную программируемость с огромной коллекцией библиотек для машинного обучения, визуализации и анализа данных. Эти особенности делают Jupyter привлекательным инструментом для анализа безопасности и охоты на угрозы.
 

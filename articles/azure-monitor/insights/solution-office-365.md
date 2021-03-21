@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 03/30/2020
 ms.openlocfilehash: be5409f7130f0e79b77871a2657609e8ddb76e36
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101728643"
 ---
 # <a name="office-365-management-solution-in-azure-preview"></a>Решение по управлению Office 365 в Azure (предварительная версия)
@@ -260,9 +260,9 @@ ms.locfileid: "101728643"
 
 Следующие свойства являются общими для всех записей Office 365.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
-| Тип | *OfficeActivity* |
+| Type | *OfficeActivity* |
 | ClientIP | IP-адрес устройства, которое использовалось при записи действия в журнал. IP-адрес отображается в формате IPv4- или IPv6-адреса. |
 | OfficeWorkload | Служба Office 365, к которой относится запись.<br><br>AzureActiveDirectory<br>Exchange<br>SharePoint|
 | Операция | Имя действия пользователя или администратора.  |
@@ -278,7 +278,7 @@ ms.locfileid: "101728643"
 
 Следующие свойства являются общими для всех записей Azure Active Directory.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | OfficeWorkload | AzureActiveDirectory |
 | RecordType     | AzureActiveDirectory |
@@ -290,7 +290,7 @@ ms.locfileid: "101728643"
 
 Эти записи создаются при попытке пользователя Active Directory войти в систему.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | `OfficeWorkload` | AzureActiveDirectory |
 | `RecordType`     | AzureActiveDirectoryAccountLogon |
@@ -304,7 +304,7 @@ ms.locfileid: "101728643"
 
 Эти записи создаются при внесении изменений или дополнений в объекты Azure Active Directory.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | OfficeWorkload | AzureActiveDirectory |
 | RecordType     | AzureActiveDirectory |
@@ -322,7 +322,7 @@ ms.locfileid: "101728643"
 
 Эти записи создаются на основе данных аудита безопасности центра обработки данных.  
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | EffectiveOrganization | Имя клиента, в отношении которого выполнялось повышение прав или командлет. |
 | ElevationApprovedTime | Метка времени, когда был утвержден запрос на повышение прав. |
@@ -338,7 +338,7 @@ ms.locfileid: "101728643"
 
 Эти записи создаются при внесении изменений в конфигурацию Exchange.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | OfficeWorkload | Exchange |
 | RecordType     | ExchangeAdmin |
@@ -353,7 +353,7 @@ ms.locfileid: "101728643"
 
 Эти записи создаются при внесении изменений или дополнений в почтовые ящики Exchange.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | OfficeWorkload | Exchange |
 | RecordType     | ExchangeItem |
@@ -376,7 +376,7 @@ ms.locfileid: "101728643"
 
 Эти записи создаются при создании записей аудита почтового ящика.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | OfficeWorkload | Exchange |
 | RecordType     | ExchangeItem |
@@ -391,7 +391,7 @@ ms.locfileid: "101728643"
 
 Эти записи создаются при внесении изменений или дополнений в группы Exchange.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | OfficeWorkload | Exchange |
 | OfficeWorkload | ExchangeItemGroup |
@@ -410,7 +410,7 @@ ms.locfileid: "101728643"
 
 Эти свойства являются общими для всех записей SharePoint.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | OfficeWorkload | SharePoint |
 | OfficeWorkload | SharePoint |
@@ -427,7 +427,7 @@ ms.locfileid: "101728643"
 
 Эти записи создаются при внесении изменений в конфигурацию SharePoint.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | OfficeWorkload | SharePoint |
 | OfficeWorkload | SharePoint |
@@ -440,7 +440,7 @@ ms.locfileid: "101728643"
 
 Эти записи создаются в ответ на операции с файлами в SharePoint.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 |:--- |:--- |
 | OfficeWorkload | SharePoint |
 | OfficeWorkload | SharePointFileOperation |

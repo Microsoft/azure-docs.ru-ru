@@ -5,10 +5,10 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 10/08/2020
 ms.openlocfilehash: 2e57b7d8121ac0bd6fc9cb693750c41a0ef6a5bc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101733063"
 ---
 # <a name="how-to-use-apache-hive-replication-in-azure-hdinsight-clusters"></a>Как использовать репликацию Apache Hive в кластерах Azure HDInsight
@@ -151,7 +151,7 @@ repl dump tpcds_orc from 2925;
   
 Политики Ranger можно периодически архивировать и реплицировать из базы данных-источника в базу данных-получателя с помощью функций Ranger Import-Export. Вы можете выбрать репликацию всех или подмножества политик Ranger в зависимости от уровня авторизации, которую вы хотите реализовать в дополнительном кластере.  
 
-## <a name="sample-code"></a>Образец кода  
+## <a name="sample-code"></a>Пример кода  
 
 В следующей последовательности кода приведен пример того, как можно реализовать начальную и добавочную репликацию для образца таблицы с именем `tpcds_orc` .  
 

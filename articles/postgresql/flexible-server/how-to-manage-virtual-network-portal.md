@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: how-to
 ms.date: 09/22/2020
 ms.openlocfilehash: 746f15d2d712f4b571d3f27e3535c69f5f4f9732
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101732774"
 ---
 # <a name="create-and-manage-virtual-networks-for-azure-database-for-postgresql---flexible-server-using-the-azure-portal"></a>Создание виртуальных сетей для базы данных Azure для PostgreSQL-гибкого сервера и управление ими с помощью портал Azure
@@ -27,7 +27,7 @@ ms.locfileid: "101732774"
 
 Вы можете развернуть гибкий сервер в виртуальной сети и подсети во время создания сервера. После развертывания гибкого сервера его нельзя переместить в другую виртуальную сеть, подсеть или в *открытый доступ (разрешенные IP-адреса)* .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Чтобы создать гибкий сервер в виртуальной сети, вам потребуется:
 - [Виртуальная сеть.](../../virtual-network/quick-create-portal.md#create-a-virtual-network)
     > [!Note]

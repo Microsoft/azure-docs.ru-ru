@@ -6,13 +6,13 @@ ms.reviewer: jasonh
 ms.topic: how-to
 ms.date: 06/30/2017
 ms.openlocfilehash: 0842a2cfa021ef8ea45c19ec885c7dec371730de
-ms.sourcegitcommit: df66dff4e34a0b7780cba503bb141d6b72335a96
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96512643"
 ---
-# <a name="use-user-defined-applier"></a>Использовать определяемое пользователем средство применения 
+# <a name="use-user-defined-applier"></a>Использование определяемого пользователем средства применения 
 
 ## <a name="u-sql-udo-user-defined-applier"></a>U-SQL UDO: определяемое пользователем средство применения
 Пользовательское средство применения U-SQL позволяет вызывать пользовательскую функцию C# для каждой строки, возвращаемой выражением запроса к внешней таблице. Входные данные справа оцениваются для каждой строки из входных данных слева, а затем созданные строки объединяются для итоговых выходных данных. Список столбцов, созданных оператором APPLY, — это сочетание набора столбцов из входных данных слева и справа.
@@ -229,6 +229,6 @@ CROSS APPLY new MyNameSpace.MyApplier (parameter: "value") AS alias([columns typ
 ```
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Общие сведения о программировании U-SQL](data-lake-analytics-u-sql-programmability-guide.md)
 * [Инструкции по программированию U-SQL — определяемый пользователем тип и функции](data-lake-analytics-u-sql-programmability-guide-UDT-AGG.md)

@@ -10,10 +10,10 @@ ms.reviewer: mikeray
 ms.date: 09/22/2020
 ms.topic: how-to
 ms.openlocfilehash: d6e27fddceb69efbb2c1697c09ee9b61d7f38ee4
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101687980"
 ---
 # <a name="configure-security-for-your-azure-arc-enabled-postgresql-hyperscale-server-group"></a>Настройка безопасности для группы серверов Гипермасштабирования PostgreSQL с поддержкой Azure Arc
@@ -118,7 +118,7 @@ select * from mysecrets;
 - USERname: Me
 - USERpassword: $1 $ Uc7jzZOp $ NTfcGo7F10zGOkXOwjHy31
 
-Когда я подключаюсь к моему приложению и передаем пароль, он будет искать в `mysecrets` таблице и будет возвращать имя пользователя, если существует совпадение между паролем, предоставленным приложению, и паролями, хранящимися в таблице. Пример.
+Когда я подключаюсь к моему приложению и передаем пароль, он будет искать в `mysecrets` таблице и будет возвращать имя пользователя, если существует совпадение между паролем, предоставленным приложению, и паролями, хранящимися в таблице. Пример:
 
 - Я передаем неправильный пароль:
    ```console

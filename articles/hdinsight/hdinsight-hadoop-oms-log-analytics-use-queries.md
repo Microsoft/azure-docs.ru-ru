@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive
 ms.date: 12/02/2019
 ms.openlocfilehash: 360a9730025dc24eda93868903fcd356c37d06ef
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100576337"
 ---
 # <a name="query-azure-monitor-logs-to-monitor-hdinsight-clusters"></a>Мониторинг кластеров HDInsight с помощью запросов к журналам Azure Monitor
@@ -21,7 +21,7 @@ ms.locfileid: "100576337"
 
 [!INCLUDE [azure-monitor-log-analytics-rebrand](../../includes/azure-monitor-log-analytics-rebrand.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Вы должны настроить кластер HDInsight для использования журналов Azure Monitor и добавить в нее решения для мониторинга Azure Monitor журналов, относящиеся к кластеру HDInsight. Инструкции см. в статье [Использование журналов Azure Monitor с кластерами HDInsight](hdinsight-hadoop-oms-log-analytics-tutorial.md).
 
@@ -52,7 +52,7 @@ ms.locfileid: "100576337"
     | where Type == "Heartbeat"
     ```
 
-1. Более глубокие знания можно получить с помощью параметров, доступных в меню слева. Пример.
+1. Более глубокие знания можно получить с помощью параметров, доступных в меню слева. Пример:
 
     - Чтобы просмотреть журналы из определенного узла, выполните следующие действия.
 
@@ -124,7 +124,7 @@ search in (metrics_resourcemanager_queue_root_default_CL) *
 
 Дополнительные сведения см. в статье [Создание и просмотр оповещений метрик, а также управление ими с помощью Azure Monitor](../azure-monitor/alerts/alerts-metric.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Начало работы с запросами к журналам Azure Monitor](../azure-monitor/logs/get-started-queries.md)
 * [Создание пользовательских представлений с помощью конструктора представлений в Azure Monitor](../azure-monitor/visualize/view-designer.md)

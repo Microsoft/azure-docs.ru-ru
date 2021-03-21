@@ -8,10 +8,10 @@ ms.date: 12/13/2020
 ms.topic: article
 ms.service: azure
 ms.openlocfilehash: cb984ca1a74d8b3838b857f2f5679264d1445187
-ms.sourcegitcommit: b85ce02785edc13d7fb8eba29ea8027e614c52a2
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99508614"
 ---
 # <a name="basic-concepts"></a>Основные понятия 

@@ -4,10 +4,10 @@ description: Введение в ключевые понятия реестра 
 ms.topic: article
 ms.date: 01/29/2021
 ms.openlocfilehash: 991be79b10b6061f2034eb19e4e139af65aef3cf
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100578080"
 ---
 # <a name="about-registries-repositories-and-artifacts"></a>Сведения о реестрах, репозиториях и артефактах
@@ -30,7 +30,7 @@ ms.locfileid: "100578080"
 - *запись контроля доступа — HelloWorld: v1*
 - *запись контроля доступа — HelloWorld: v2*
 
-Имена репозиториев также могут включать [пространство имен](container-registry-best-practices.md#repository-namespaces). Пространства имен позволяют выделять связанные репозитории и владение артефактами в Организации, используя имена, разделенные косой чертой. Однако реестр управляет всеми репозиториями независимо друг от друга, а не в виде иерархии. Пример.
+Имена репозиториев также могут включать [пространство имен](container-registry-best-practices.md#repository-namespaces). Пространства имен позволяют выделять связанные репозитории и владение артефактами в Организации, используя имена, разделенные косой чертой. Однако реестр управляет всеми репозиториями независимо друг от друга, а не в виде иерархии. Пример:
 
 - *Маркетинговый/campaign10-18/Web: v2*
 - *маркетинг или campaign10-18/API: V3*

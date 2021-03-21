@@ -5,10 +5,10 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: ''
 ms.openlocfilehash: aad9419fdb139ff615bfe07075be78a2ca4ee4ac
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102489078"
 ---
 # <a name="encrypt-registry-using-a-customer-managed-key"></a>Шифрование реестра с помощью управляемого клиентом ключа
@@ -48,7 +48,7 @@ ms.locfileid: "102489078"
 
 Дополнительные сведения см. в разделе [Выбор идентификатора ключа с версией ключа или без](#choose-key-id-with-or-without-key-version) нее и [Обновление версии ключа](#update-key-version)далее в этой статье.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы использовать Azure CLI действия, описанные в этой статье, необходимо Azure CLI версии 2.2.0 или более поздней или Azure Cloud Shell. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0](/cli/azure/install-azure-cli).
 

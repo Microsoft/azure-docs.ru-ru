@@ -17,10 +17,10 @@ ms.author: barclayn
 ms.reviewer: mamkumar
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bb84eae2db01180865db54250598f45c7b2ddca0
-ms.sourcegitcommit: 6e2d37afd50ec5ee148f98f2325943bafb2f4993
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97746241"
 ---
 # <a name="request-process-and-email-notifications-in-azure-ad-entitlement-management"></a>Обработка запросов и уведомлений по электронной почте в управлении назначениями Azure AD
@@ -45,7 +45,7 @@ ms.locfileid: "97746241"
 | Расширенный доступ | Если в политике разрешены расширения, пользователь расширил назначение. |
 | Срок действия доступа истек | Срок действия доступа пользователя к пакету доступа истек. Чтобы снова получить доступ, пользователю придется отправить запрос. |
 
-## <a name="email-notifications"></a>Уведомления по электронной почте
+## <a name="email-notifications"></a>уведомления по электронной почте.
 
 Если вы являетесь утверждающим, вы отправляете уведомления по электронной почте, когда вам нужно одобрить запрос на доступ. Вы также получаете уведомления о завершении запроса на доступ. Вы также отправляете уведомления по электронной почте, которые указывают на состояние вашего запроса, если вы являетесь инициатором запроса.
 

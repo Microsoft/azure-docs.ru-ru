@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 12/10/2020
 ms.author: wolfma
 ms.openlocfilehash: 329241c2660ff7828f57fb21daeb6de20caedc43
-ms.sourcegitcommit: 2ba6303e1ac24287762caea9cd1603848331dd7a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97504463"
 ---
 | Географический регион | Регион | Идентификатор региона |
@@ -19,7 +19,7 @@ ms.locfileid: "97504463"
 | Северная и Южная Америка | Центрально-северная часть США | `northcentralus` |
 | Северная и Южная Америка | Центрально-южная часть США | `southcentralus` |
 | Северная и Южная Америка | центрально-западная часть США | `westcentralus` |
-| Северная и Южная Америка | западная часть США | `westus` |
+| Северная и Южная Америка | Западная часть США | `westus` |
 | Северная и Южная Америка | Западная часть США 2 | `westus2` |
 | Северная и Южная Америка | Центральная Канада | `canadacentral` |
 | Северная и Южная Америка | Brazil South | `brazilsouth` |

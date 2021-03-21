@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 04/14/2019
 ms.author: jeedes
 ms.openlocfilehash: 9e0b438e0cfa729300099463086248780c69484c
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95019846"
 ---
 # <a name="tutorial-azure-active-directory-integration-with-kontiki"></a>Руководство. Интеграция Azure Active Directory с Kontiki
@@ -74,7 +74,7 @@ Kontiki поддерживает следующие функции:
 
 Чтобы настроить и проверить единый вход Azure AD в Kontiki, вам потребуется выполнить действия в следующих стандартных блоках.
 
-| Задача | Description |
+| Задача | Описание |
 | --- | --- |
 | **[Настройка единого входа Azure AD](#configure-azure-ad-single-sign-on)** | Предоставление пользователям возможности использовать эту функцию. |
 | **[Настройка единого входа в Kontiki](#configure-kontiki-single-sign-on)** | Настройка параметров единого входа в приложении. |
@@ -142,7 +142,7 @@ Kontiki поддерживает следующие функции:
 
     1. Установите флажок **Показать пароль**. Запишите значение, которое отображается в поле **Пароль**.
 
-    1. Нажмите кнопку **Создать**.
+    1. Нажмите кнопку **создания**.
 
     ![Панель "Пользователь"](common/user-properties.png)
 

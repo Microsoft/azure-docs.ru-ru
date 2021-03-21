@@ -14,10 +14,10 @@ ms.author: brianmel
 ms.reviewer: rapong
 ms.custom: aaddev
 ms.openlocfilehash: 1a9b9481d0b4086505bbfd3c2cd654ce228d1ae2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101688881"
 ---
 # <a name="use-msal-for-android-with-b2c"></a>Использование MSAL для Android с B2C
@@ -88,7 +88,7 @@ PublicClientApplication.createMultipleAccountPublicClientApplication(
 );
 ```
 
-## <a name="interactively-acquire-a-token"></a>Интерактивное получение маркера
+## <a name="interactively-acquire-a-token"></a>Интерактивное получение маркера.
 
 Чтобы получить маркер в интерактивном режиме с помощью MSAL, создайте `AcquireTokenParameters` экземпляр и предоставьте его `acquireToken` методу. В запросе токена ниже используется `default` центр.
 
@@ -119,7 +119,7 @@ AcquireTokenParameters parameters = new AcquireTokenParameters.Builder()
 pca.acquireToken(parameters);
 ```
 
-## <a name="silently-renew-a-token"></a>Автоматическое продление срока действия токена
+## <a name="silently-renew-a-token"></a>Автоматическое продление срока действия маркера.
 
 Чтобы получить маркер в автоматическом режиме с помощью MSAL, создайте `AcquireTokenSilentParameters` экземпляр и предоставьте его `acquireTokenSilentAsync` методу. В отличие от `acquireToken` метода, `authority` необходимо указать для получения маркера в автоматическом режиме.
 
@@ -148,7 +148,7 @@ pca.acquireTokenSilentAsync(parameters);
 
 ## <a name="specify-a-policy"></a>Укажите политику
 
-Так как политики в B2C представляются в виде отдельных центров, вызов политики, отличной от значения по умолчанию, достигается путем указания `fromAuthority` предложения при создании `acquireToken` или настройке `acquireTokenSilent` параметров.  Пример.
+Так как политики в B2C представляются в виде отдельных центров, вызов политики, отличной от значения по умолчанию, достигается путем указания `fromAuthority` предложения при создании `acquireToken` или настройке `acquireTokenSilent` параметров.  Пример:
 
 ```java
 AcquireTokenParameters parameters = new AcquireTokenParameters.Builder()
@@ -196,7 +196,7 @@ new AuthenticationCallback() {
 
 Успешное получение маркера приводит к получению `IAuthenticationResult` объекта. Он содержит маркер доступа, пользовательские утверждения и метаданные.
 
-### <a name="get-the-access-token-and-related-properties"></a>Получение маркера доступа и связанных свойств
+### <a name="get-the-access-token-and-related-properties"></a>Получение маркера доступа и связанных свойств.
 
 ```java
 // Get the raw bearer token

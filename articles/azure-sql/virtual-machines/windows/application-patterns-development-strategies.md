@@ -15,10 +15,10 @@ ms.workload: iaas-sql-server
 ms.date: 05/31/2017
 ms.author: mathoma
 ms.openlocfilehash: e877f775c6a7bc83ce6c4a559c9f74b606c952fc
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97359495"
 ---
 # <a name="application-patterns-and-development-strategies-for-sql-server-on-azure-virtual-machines"></a>Шаблоны приложений и стратегии разработки для SQL Server на виртуальных машинах Azure
@@ -26,7 +26,7 @@ ms.locfileid: "97359495"
 
 [!INCLUDE [learn-about-deployment-models](../../../../includes/learn-about-deployment-models-both-include.md)]
 
-## <a name="summary"></a>Сводка.
+## <a name="summary"></a>Сводка:
 Определение шаблона приложения или шаблонов, используемых для приложений на основе SQL Server в среде Azure, является важным решением по проектированию и требует четкого понимания того, как SQL Server и каждый компонент инфраструктуры Azure работают вместе. С помощью SQL Server в службах инфраструктуры Azure вы можете легко перемещать, обслуживать и отслеживать существующие приложения SQL Server, созданные на основе Windows Server, на виртуальных машинах в Azure.
 
 Цель данной статьи — предоставить архитекторам и разработчикам решений основу в виде правильных архитектуры и конструкции приложений, которых можно придерживаться как при переносе существующих приложений в Azure, так и при разработке новых приложений в Azure.
