@@ -8,10 +8,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/10/2018
 ms.openlocfilehash: c9818bfd2a9519cd14d34ecc810179d66aa57e52
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100363990"
 ---
 # <a name="transform-data-in-azure-data-factory-version-1"></a>Преобразование данных в фабрике данных Azure версии 1
@@ -79,7 +79,7 @@ ms.locfileid: "100363990"
 
 В статье [Связанные службы вычислений](data-factory-compute-linked-services.md) описывается, какие службы вычислений поддерживает фабрика данных. 
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 Фабрика данных Azure поддерживает приведенные ниже действия преобразования данных и вычислительных сред для них. Действия преобразования можно добавлять в конвейеры как по отдельности, так и в цепочке с другим действием.
 
 | Действия по преобразованию данных | Вычислительная среда |

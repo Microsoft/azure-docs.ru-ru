@@ -14,10 +14,10 @@ ms.date: 09/10/2018
 ms.author: hermannd
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: 59ea41254c16f32f19a67e7811177a4667a85e7d
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101666702"
 ---
 # <a name="install-hana-on-sap-hana-on-azure-large-instances"></a>Установка HANA на сервере SAP HANA в Azure (крупные экземпляры)

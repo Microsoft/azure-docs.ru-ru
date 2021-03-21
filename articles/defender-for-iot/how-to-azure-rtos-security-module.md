@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 03/07/2021
 ms.author: shhazam
 ms.openlocfilehash: 874a783763882a28f2fe7078e3a264d09107808a
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103495102"
 ---
 # <a name="configure-and-customize-defender-iot-micro-agent-for-azure-rtos-preview"></a>Настройка и настройка защитника — IoT-Micro-Agent для Azure RTO (Предварительная версия)
@@ -42,7 +42,7 @@ ms.locfileid: "103495102"
 
 | Имя | Тип | По умолчанию | Сведения |
 | - | - | - | - |
-| ASC_SECURITY_MODULE_ID | Строковый | защитник-IOT-Micro-Agent | Уникальный идентификатор устройства.  |
+| ASC_SECURITY_MODULE_ID | Строка | защитник-IOT-Micro-Agent | Уникальный идентификатор устройства.  |
 | SECURITY_MODULE_VERSION_ (ОСНОВНОЙ) (ДОПОЛНИТЕЛЬНЫЙ) (ИСПРАВЛЕНИЕ)  | Число | 3.2.1 | Версия. |
 | ASC_SECURITY_MODULE_SEND_MESSAGE_RETRY_TIME  | Число  | 3 | Время, в течение которого защитник-IoT-Micro-Agent будет отсылать сообщение безопасности после сбоя. (в секундах) |
 | ASC_SECURITY_MODULE_PENDING_TIME  | Число | 300 | Время ожидания защитника IoT-Micro-Agent (в секундах). При превышении времени состояние изменится на Suspend. |
@@ -65,7 +65,7 @@ ms.locfileid: "103495102"
 | ASC_COLLECTOR_NETWORK_ACTIVITY_TCP_DISABLED | Логическое | false | Фильтрует `TCP` сетевую активность. |
 | ASC_COLLECTOR_NETWORK_ACTIVITY_UDP_DISABLED | Логическое | false | Фильтрует `UDP` события активности сети. |
 | ASC_COLLECTOR_NETWORK_ACTIVITY_ICMP_DISABLED | Логическое | false | Фильтрует `ICMP` события активности сети. |
-| ASC_COLLECTOR_NETWORK_ACTIVITY_CAPTURE_UNICAST_ONLY | Логическое | Да | Захватывает только одноадресные входящие пакеты. Если задано значение false, он также будет записывать как широковещательные, так и многоадресные рассылки. |
+| ASC_COLLECTOR_NETWORK_ACTIVITY_CAPTURE_UNICAST_ONLY | Логическое | true | Захватывает только одноадресные входящие пакеты. Если задано значение false, он также будет записывать как широковещательные, так и многоадресные рассылки. |
 | ASC_COLLECTOR_NETWORK_ACTIVITY_SEND_EMPTY_EVENTS  | Логическое  | false  | Отправляет пустые события сборщика. |
 | ASC_COLLECTOR_NETWORK_ACTIVITY_MAX_IPV4_OBJECTS_IN_CACHE | Число | 64 | Максимальное число событий сети IPv4 для хранения в памяти. |
 | ASC_COLLECTOR_NETWORK_ACTIVITY_MAX_IPV6_OBJECTS_IN_CACHE | Число | 64  | Максимальное число событий сети IPv6 для хранения в памяти. |
@@ -87,7 +87,7 @@ ms.locfileid: "103495102"
 
 Вы можете включить и настроить Log Analytics для изучения событий и действий устройства. Дополнительные сведения см. в статье о настройке и использовании [log Analytics со службой "защитник для Интернета вещей"](how-to-security-data-access.md#log-analytics) . 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 
 - Обзор и настройка защитника — IoT-Micro-Agent для [оповещений системы безопасности Azure RTO и рекомендации](concept-rtos-security-alerts-recommendations.md)

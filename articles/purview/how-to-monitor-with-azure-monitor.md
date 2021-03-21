@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 12/03/2020
 ms.openlocfilehash: 4cb3965d359980856c238cd563ed8b761754660b
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101667737"
 ---
 # <a name="azure-purview-metrics-in-azure-monitor"></a>Метрики Azure зрения в Azure Monitor
@@ -67,7 +67,7 @@ ms.locfileid: "101667737"
 | Сканирование отменено | Автоматическая проверка | SUM <br> Count | Статистическая обработка отмененных сканирований источника данных за период времени |
 | Сканирование завершено | Автоматическая проверка | SUM <br> Count | Статистическая обработка завершенных просмотров источника данных за период времени |
 | Сбой сканирования | Автоматическая проверка | SUM <br> Count | Агрегирование проверок источника данных с ошибками за период времени |
-| Затраченное время сканирования | Автоматическая проверка | Min <br> Max <br> SUM <br> Avg | Совокупное общее время, затраченное на сканирование за период времени |
+| Затраченное время сканирования | Автоматическая проверка | Min <br> Max <br> SUM <br> Сред. | Совокупное общее время, затраченное на сканирование за период времени |
 
 ## <a name="diagnostic-logs-to-azure-storage-account"></a>Журналы диагностики в учетную запись хранения Azure
 

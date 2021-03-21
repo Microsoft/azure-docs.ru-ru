@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.custom: subject-moving-resources
 ms.date: 09/10/2020
 ms.openlocfilehash: a5050958f01743ff3c6fdcdecfee3067b1d2073e
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98934267"
 ---
 # <a name="move-your-azure-cognitive-search-service-to-another-azure-region"></a>Перемещение службы Когнитивный поиск Azure в другой регион Azure
@@ -23,7 +23,7 @@ ms.locfileid: "98934267"
 > [!NOTE]
 > В портал Azure все службы имеют команду **Экспорт шаблона** . В случае Когнитивный поиск Azure эта команда создает базовое определение службы (имя, расположение, уровень, реплику и число секций), но не распознает содержимое службы, а также не выполняет перенос ключей, ролей или журналов. Хотя эта команда существует, мы не рекомендуем использовать ее для перемещения службы поиска.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 + Убедитесь, что службы и функции, используемые вашей учетной записью, поддерживаются в целевом регионе.
 

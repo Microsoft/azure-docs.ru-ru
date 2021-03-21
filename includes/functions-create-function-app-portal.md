@@ -9,10 +9,10 @@ ms.date: 03/04/2020
 ms.author: glenga
 ms.custom: include file
 ms.openlocfilehash: 9ec5920295117b1726a684bcd08534cd6917f7e5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100569792"
 ---
 1. На **домашней странице** или в меню портала Azure выберите **Создать ресурс**.

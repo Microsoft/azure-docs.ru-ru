@@ -18,10 +18,10 @@ ms.workload: infrastructure-services
 ms.date: 08/06/2019
 ms.author: kumud
 ms.openlocfilehash: d52430c87d99f8837c78fcff89d8b214e45350ff
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98934934"
 ---
 # <a name="manage-public-ip-addresses"></a>Управление общедоступными IP-адресами
@@ -30,7 +30,7 @@ ms.locfileid: "98934934"
 - Входящий трафик из Интернета к ресурсам, таким как виртуальные машины Azure, шлюзы приложений Azure, подсистемы балансировки нагрузки Azure, VPN-шлюзы Azure и другие. Можно по-прежнему взаимодействовать с некоторыми ресурсами из Интернета, такими как виртуальные машины, если виртуальная машина не имеет назначенного ей общего IP-адреса. Пока виртуальная машина является частью пула внутренней подсистемы балансировки нагрузки, то взаимодействовать невозможно, потому что подсистема балансировки нагрузки имеет назначенный общедоступный IP-адрес. Чтобы определить, можно ли ресурсу для определенной службы Azure назначить общедоступный IP-адрес или он может обращаться через общедоступный IP-адрес другого ресурса Azure, см. документацию для службы.
 - Исходящие подключения к Интернету используют предсказуемый IP-адрес. Например, виртуальная машина может отправлять данные в Интернет, не имея назначенного общедоступного IP-адреса. Ее адресом по умолчанию будет сетевой адрес, преобразуемый Azure в непредсказуемый общедоступный адрес. Назначение ресурсу общедоступного IP-адреса позволяет узнать, какой IP-адрес используется для исходящих соединений. Хоть адрес и предсказуемый, он может измениться в зависимости от выбранного метода назначения. Дополнительные сведения см. в разделе [Создание общедоступного IP-адреса](#create-a-public-ip-address). Дополнительную информацию об исходящих подключениях ресурсов Azure см. в разделе [Основные сведения об исходящих подключениях](../load-balancer/load-balancer-outbound-connections.md?toc=%2fazure%2fvirtual-network%2ftoc.json).
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
@@ -84,7 +84,7 @@ ms.locfileid: "98934934"
 |Операция|Портал Azure|Azure PowerShell|Azure CLI|
 |---|---|---|---|
 |Представление | В разделе **Обзор** общедоступного IP-адреса |[Get-азпублиЦипаддресс](/powershell/module/az.network/get-azpublicipaddress) для получения объекта общедоступного IP-адреса и просмотра его параметров| [AZ Network public-IP демонстрация](/cli/azure/network/public-ip#az-network-public-ip-show) для отображения параметров|
-|List | В категории **общедоступные IP-адреса** |[Get-азпублиЦипаддресс](/powershell/module/az.network/get-azpublicipaddress) для получения одного или нескольких объектов общедоступного IP-адреса и просмотра его параметров|[AZ Network public-IP List](/cli/azure/network/public-ip#az-network-public-ip-list) для вывода списка общедоступных IP-адресов|
+|Список | В категории **общедоступные IP-адреса** |[Get-азпублиЦипаддресс](/powershell/module/az.network/get-azpublicipaddress) для получения одного или нескольких объектов общедоступного IP-адреса и просмотра его параметров|[AZ Network public-IP List](/cli/azure/network/public-ip#az-network-public-ip-list) для вывода списка общедоступных IP-адресов|
 |Изменить | Для несвязанного IP-адреса выберите **Конфигурация** , чтобы изменить время ожидания простоя, метку DNS-имени или изменить назначение базового IP-адреса со статического на динамический.  |[Set-азпублиЦипаддресс](/powershell/module/az.network/set-azpublicipaddress) для обновления параметров |[AZ Network public-IP-обновление](/cli/azure/network/public-ip#az-network-public-ip-update) для обновления |
 
    - **Удаление**: для удаления общедоступных IP-адресов необходимо, чтобы объект общедоступного объекта не был связан с IP-конфигурацией или сетевым адаптером виртуальной машины. Дополнительные сведения см. в таблице ниже.
@@ -93,7 +93,7 @@ ms.locfileid: "98934934"
 |---|---|---|---|
 |[Виртуальная машина](./remove-public-ip-address-vm.md)|Выберите отменить связь **, чтобы отрвать связь с IP** -адресом из конфигурации сетевого адаптера, а затем выберите **Удалить**.|[Set-азпублиЦипаддресс](/powershell/module/az.network/set-azpublicipaddress) , чтобы отменить связь IP-адреса с КОНФИГУРАЦИЕЙ сетевого адаптера; [Remove-азпублиЦипаддресс](/powershell/module/az.network/remove-azpublicipaddress) to delete|[AZ Network общедоступное обновление IP-адрес — удалите](/cli/azure/network/public-ip#az-network-public-ip-update) , чтобы отменить связь IP-адреса с КОНФИГУРАЦИЕЙ сетевого адаптера. [AZ Network public-IP Delete](/cli/azure/network/public-ip#az-network-public-ip-delete) для удаления |
 |Интерфейс Load Balancer | Перейдите к неиспользуемому общедоступному IP-адресу и выберите " **сопоставить** " и укажите Load Balancer с соответствующей конфигурацией ИНТЕРФЕЙСНЫХ IP-адресов, чтобы заменить ее (затем старый IP может быть удален с помощью того же метода, что и для виртуальной машины).  | [Set-азлоадбаланцерфронтендипконфиг](/powershell/module/az.network/set-azloadbalancerfrontendipconfig) , чтобы связать новый интерфейс конфигурации внешнего IP-адреса с общедоступной Load Balancer; [Remove-азпублиЦипаддресс](/powershell/module/az.network/remove-azpublicipaddress) для удаления; также может использовать [Remove-азлоадбаланцерфронтендипконфиг](/powershell/module/az.network/remove-azloadbalancerfrontendipconfig) для удаления внешней IP-конфигурации, если имеется более одного |[AZ Networking переднего плана IP-адреса](/cli/azure/network/lb/frontend-ip#az_network_lb_frontend_ip_update) , чтобы связать новый интерфейс конфигурации внешнего IP-адреса с общедоступной Load Balancer; [Remove-азпублиЦипаддресс](/powershell/module/az.network/remove-azpublicipaddress) для удаления; также можно использовать команду [AZ Network фунтов интерфейса-IP Delete](/cli/azure/network/lb/frontend-ip#az_network_lb_frontend_ip_delete) для удаления внешней IP-конфигурации, если имеется более одного.|
-|Брандмауэр|Недоступно| [Освобождение ()](../firewall/firewall-faq.yml#how-can-i-stop-and-start-azure-firewall) для отмены выделения брандмауэра и удаления всех IP-конфигураций | [AZ Network Firewall IP-Config удаление](/cli/azure/ext/azure-firewall/network/firewall/ip-config#ext_azure_firewall_az_network_firewall_ip_config_delete) для удаления IP-адреса (но необходимо использовать PowerShell для отмены выделения памяти)|
+|Брандмауэр|Н/Д| [Освобождение ()](../firewall/firewall-faq.yml#how-can-i-stop-and-start-azure-firewall) для отмены выделения брандмауэра и удаления всех IP-конфигураций | [AZ Network Firewall IP-Config удаление](/cli/azure/ext/azure-firewall/network/firewall/ip-config#ext_azure_firewall_az_network_firewall_ip_config_delete) для удаления IP-адреса (но необходимо использовать PowerShell для отмены выделения памяти)|
 
 ## <a name="virtual-machine-scale-sets"></a>Масштабируемые наборы виртуальных машин
 
@@ -117,7 +117,7 @@ ms.locfileid: "98934934"
 
 Для выполнения задач с общедоступными IP-адресами учетной записи должна быть назначена роль [Участник сетей](../role-based-access-control/built-in-roles.md?toc=%2fazure%2fvirtual-network%2ftoc.json#network-contributor) или [пользовательская](../role-based-access-control/custom-roles.md?toc=%2fazure%2fvirtual-network%2ftoc.json) роль, которой назначены соответствующие разрешения, перечисленные в таблице ниже.
 
-| Действие                                                             | ИМЯ                                                           |
+| Действие                                                             | Имя                                                           |
 | ---------                                                          | -------------                                                  |
 | Microsoft.Network/publicIPAddresses/read                           | Чтение общедоступного IP-адреса.                                          |
 | Microsoft.Network/publicIPAddresses/write                          | Создание или обновление общедоступного IP-адреса.                           |

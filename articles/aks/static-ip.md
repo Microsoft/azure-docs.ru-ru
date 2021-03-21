@@ -6,10 +6,10 @@ services: container-service
 ms.topic: article
 ms.date: 11/14/2020
 ms.openlocfilehash: 102df48ca22fb996e0f4d9c402b8ce8f0fa80f2c
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102509478"
 ---
 # <a name="use-a-static-public-ip-address-and-dns-label-with-the-azure-kubernetes-service-aks-load-balancer"></a>Использование статического общедоступного IP-адреса и метки DNS с подсистемой балансировки нагрузки Azure Kubernetes Service (AKS)

@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 09/09/2020
 ms.author: mlottner
 ms.openlocfilehash: f2251ef79f568677d6ef09d918cb61ffeba07888
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103494552"
 ---
 # <a name="deploy-defender-for-iot-c-based-security-agent-for-linux"></a>Развертывание агента безопасности на основе C# для Azure IoT для Linux
@@ -118,7 +118,7 @@ ms.locfileid: "103494552"
 
        Измените путь к расположению файла в соответствии с именем, выбранным для значения **logFilePath** на шаге 2.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Ознакомьтесь с [обзором](overview.md) службы "защитник для Интернета вещей"
 - Дополнительные сведения о защитнике для [архитектуры](architecture.md) IOT

@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.author: inhenkel
 ms.date: 12/04/2020
 ms.openlocfilehash: d766843f58bc2cdd0dcdddfad337b23fefb28768
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101698745"
 ---
 # <a name="troubleshoot-live-video-analytics-on-iot-edge"></a>Устранение неполадок в Live Video Analytics на IoT Edge
@@ -223,7 +223,7 @@ az iot edge set-modules --hub-name <iot-hub-name> --device-id lva-sample-device 
     > [!NOTE] 
     > Эта команда привязывает папки журналов между граничным устройством и контейнером. Чтобы сохранить журналы в другом расположении, используйте следующую команду, заменив **$LOG _LOCATION_ON_EDGE_DEVICE** на расположение, которое вы хотите использовать. `/var/$LOG_LOCATION_ON_EDGE_DEVICE:/var/lib/azuremediaservices/logs`
 
-1. Щелкните **Обновить**.
+1. Нажмите кнопку **Обновить**.
 1. Выберите **Review + Create** (Просмотреть и создать). Сообщение об успешной проверке публикуется под зеленым баннером.
 1. Нажмите кнопку **создания**.
 1. Обновите **двойника удостоверений модуля** , чтобы он указывал на параметр дебуглогсдиректори, указывающий на каталог, в котором собираются журналы.
@@ -267,7 +267,7 @@ az iot edge set-modules --hub-name <iot-hub-name> --device-id lva-sample-device 
 } 
 ``` 
 
-Это можно также настроить в файле Startup.cs с помощью Конфигурелоггинг: 
+Это также можно настроить в файле startup. cs с помощью Конфигурелоггинг: 
 
 ```
 public static IHostBuilder CreateHostBuilder(string[] args) => 

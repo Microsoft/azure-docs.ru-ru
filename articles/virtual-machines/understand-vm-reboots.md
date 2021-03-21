@@ -8,10 +8,10 @@ ms.date: 03/08/2021
 ms.author: mimckitt
 ms.reviewer: cynthn
 ms.openlocfilehash: af371a8f7da5ef32e95d4096b69c5d52ce3e3700
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102510584"
 ---
 # <a name="understand-vm-reboots---maintenance-vs-downtime"></a>Общие сведения о перезагрузках виртуальных машин — обслуживание и простои

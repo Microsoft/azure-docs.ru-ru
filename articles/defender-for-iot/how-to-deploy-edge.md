@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 1/30/2020
 ms.author: mlottner
 ms.openlocfilehash: e4117c3c0f1016da616a88a36a1b8c926b790c62
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103495119"
 ---
 # <a name="deploy-a-defender-iot-micro-agent-on-your-iot-edge-device"></a>Развертывание защитника IoT-Micro-Agent на устройстве IoT Edge
@@ -195,7 +195,7 @@ ms.locfileid: "103495119"
 
 1. Для получения более подробных журналов добавьте следующую переменную среды в развертывание модуля **азуреиотсекурити** : `logLevel=Debug` .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Чтобы узнать больше о параметрах конфигурации, перейдите к руководству по настройке модуля.
 > [!div class="nextstepaction"]

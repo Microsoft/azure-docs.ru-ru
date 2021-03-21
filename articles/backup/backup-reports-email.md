@@ -4,10 +4,10 @@ description: Создание автоматизированных задач д
 ms.topic: conceptual
 ms.date: 03/01/2021
 ms.openlocfilehash: 8c18d4c7a3c7a9ba343296961fa9a44614366405
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102510571"
 ---
 # <a name="email-azure-backup-reports"></a>Отчеты Azure Backup электронной почты

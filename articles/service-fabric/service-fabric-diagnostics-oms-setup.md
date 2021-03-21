@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 02/20/2019
 ms.author: srrengar
 ms.openlocfilehash: ba62ac80b2f8d318d0d13e81e88cc63a8d893a2b
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100570355"
 ---
 # <a name="set-up-azure-monitor-logs-for-a-cluster"></a>Настройка журналов Azure Monitor для кластера
@@ -121,7 +121,7 @@ Set-AzOperationalInsightsIntelligencePack -ResourceGroupName $ResourceGroup -Wor
 
 Вы также можете добавить другие решения или внести другие изменения в рабочую область Log Analytics с помощью PowerShell. Дополнительные сведения см. в статье [Управление журналами Azure Monitor с помощью PowerShell](../azure-monitor/logs/powershell-workspace-configuration.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Разверните агент Log Analytics](service-fabric-diagnostics-oms-agent.md) на узлах для сбора данных счетчиков производительности и статистики Docker, а также журналов для контейнеров.
 * Ознакомьтесь с функциями [поиска по журналам и запросов к журналам](../azure-monitor/logs/log-query-overview.md), которые являются частью журналов Azure Monitor
 * [Использование конструктора представлений для создания пользовательских представлений в журналах Azure Monitor](../azure-monitor/visualize/view-designer.md)

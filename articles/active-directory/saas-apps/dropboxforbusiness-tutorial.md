@@ -11,12 +11,12 @@ ms.workload: identity
 ms.topic: tutorial
 ms.date: 02/17/2021
 ms.author: jeedes
-ms.openlocfilehash: d4c9d2e290f6a8f07878a019b755c8add2ab69ea
-ms.sourcegitcommit: 8d1b97c3777684bd98f2cfbc9d440b1299a02e8f
+ms.openlocfilehash: 41f6db8cf2454c224addac525e9d039954a95712
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102488482"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104601505"
 ---
 # <a name="tutorial-integrate-dropbox-business-with-azure-active-directory"></a>Руководство по интеграции Dropbox Business с Azure Active Directory
 
@@ -186,4 +186,4 @@ ms.locfileid: "102488482"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-После настройки Dropbox Business вы можете применить функцию управления сеансом, которая в реальном времени защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-any-app).
+После настройки Dropbox Business вы можете применить функцию управления сеансом, которая в реальном времени защищает конфиденциальные данные вашей организации от хищения и несанкционированного доступа. Управление сеансом является расширением функции условного доступа. [Узнайте, как применять управление сеансами с помощью Microsoft Cloud App Security](/cloud-app-security/proxy-deployment-any-app).

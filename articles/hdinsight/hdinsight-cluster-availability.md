@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 05/01/2020
 ms.openlocfilehash: 34f752d4c3d50d5f680e317b2724b1e631537f32
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98933196"
 ---
 # <a name="how-to-monitor-cluster-availability-with-apache-ambari-in-azure-hdinsight"></a>Как отслеживать доступность кластера с помощью Apache Ambari в Azure HDInsight
@@ -70,7 +70,7 @@ Ambari предлагает множество стандартных преду
 
 В этом примере можно создать два неработоспособных узла, которые активируют критическое оповещение, и 1 неработоспособный узел только запустит предупреждение. По завершении редактирования нажмите кнопку **сохранить** .
 
-## <a name="email-notifications"></a>Уведомления по электронной почте
+## <a name="email-notifications"></a>уведомления по электронной почте.
 
 При необходимости можно также настроить уведомления по электронной почте для оповещений Ambari. Для этого на вкладке **оповещения** нажмите кнопку **действия** в левом верхнем углу, а затем **Управление уведомлениями.**
 

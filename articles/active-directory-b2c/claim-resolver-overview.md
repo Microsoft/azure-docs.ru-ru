@@ -12,10 +12,10 @@ ms.date: 03/04/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: b69492dc41786a677043df5e77c9d12aa26893f6
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102119779"
 ---
 # <a name="about-claim-resolvers-in-azure-active-directory-b2c-custom-policies"></a>Арбитры утверждений в пользовательских политиках Azure Active Directory B2C
@@ -62,7 +62,7 @@ ms.locfileid: "102119779"
 | {Policy:TenantObjectId} | Идентификатор объекта клиента для политики проверяющей стороны. | 00000000-0000-0000-0000-000000000000 |
 | {Policy:TrustFrameworkTenantId} | Идентификатор клиента инфраструктуры доверия. | your-tenant.onmicrosoft.com |
 
-### <a name="openid-connect"></a>OpenID Connect
+### <a name="openid-connect"></a>OpenID Connect
 
 | Утверждение | Описание | Пример |
 | ----- | ----------- | --------|
@@ -124,8 +124,8 @@ ms.locfileid: "102119779"
 | {SAML: Ауснконтекстклассреференцес} | `AuthnContextClassRef`Значение элемента из запроса SAML. | urn: Oasis: Names: TC: SAML: 2.0: AC: Classes: Пассвордпротектедтранспорт |
 | {SAML: Намеидполициформат} | `Format`Атрибут из `NameIDPolicy` элемента запроса SAML. | urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress |
 | {SAML: Issuer} |  `Issuer`Значение элемента SAML для запроса SAML.| `https://contoso.com` |
-| {SAML: Алловкреате} | `AllowCreate`Значение атрибута из `NameIDPolicy` элемента запроса SAML. | True |
-| {SAML: Форцеаусн} | `ForceAuthN`Значение атрибута из `AuthnRequest` элемента запроса SAML. | True |
+| {SAML: Алловкреате} | `AllowCreate`Значение атрибута из `NameIDPolicy` элемента запроса SAML. | Верно |
+| {SAML: Форцеаусн} | `ForceAuthN`Значение атрибута из `AuthnRequest` элемента запроса SAML. | Верно |
 | {SAML: ProviderName} | `ProviderName`Значение атрибута из `AuthnRequest` элемента запроса SAML.| Contoso.com |
 | {SAML: RelayState} | Параметр `RelayState` строки запроса.| 
 | {SAML: subject} | `Subject`Из элемента NameId запроса SAML AuthN.| 
@@ -134,7 +134,7 @@ ms.locfileid: "102119779"
 
 Вы можете использовать арбитры утверждений со следующими элементами:
 
-| Элемент | Элемент | Настройки |
+| Элемент | Элемент | Параметры |
 | ----- | ----------------------- | --------|
 |Технический профиль Application Insights |`InputClaim` | |
 |[Azure Active Directory](active-directory-technical-profile.md) технический профиль| `InputClaim`, `OutputClaim`| 1, 2|
