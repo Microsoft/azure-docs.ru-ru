@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 02/03/2021
 ms.author: terrylan
 ms.openlocfilehash: 81b2227ac519de4d03bb63907d14c23b9c34dc64
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102101041"
 ---
 # <a name="azure-threat-protection"></a>Защита от угроз Azure
@@ -140,7 +140,7 @@ PIM помогает:
 
 В распоряжении корпорации Майкрософт есть огромный объем информации, относящейся к глобальной аналитике угроз.
 
-Потоки данных телеметрии из нескольких источников, таких как Azure, Microsoft 365, Microsoft CRM Online, Microsoft Dynamics AX, outlook.com, MSN.com, модуль Microsoft Digital Crimes Unit (DCU) и центр Microsoft Security Response Center (MSRC).
+Телеметрия поступает из таких источников, как Azure, Office 365, Microsoft CRM Online, Microsoft Dynamics AX, outlook.com, MSN.com, подразделение Microsoft Digital Crimes Unit (DCU) и центр Microsoft Security Response Center (MSRC).
 
 ![Результаты исследования угроз](./media/threat-detection/azure-threat-detection-fig10.jpg)
 

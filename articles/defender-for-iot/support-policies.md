@@ -1,5 +1,5 @@
 ---
-title: Политики поддержки для защитника Azure для IoT
+title: Политики поддержки для Azure Defender для Интернета вещей
 titleSuffix: Azure Defender for IoT
 description: В этой статье описывается поддержка, критические политики изменения для защитника для Интернета вещей и версии защитника Azure для IoT, которые в настоящее время доступны.
 author: shhazam-ms
@@ -9,10 +9,10 @@ ms.date: 2/8/2021
 ms.topic: article
 ms.service: azure
 ms.openlocfilehash: 17ef357ebc78b63cbaf473cb6449cb89ccf0963e
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101100191"
 ---
 # <a name="versioning-and-support-for-azure-defender-for-iot"></a>Управление версиями и поддержка для службы "защитник Azure" для IoT 
@@ -29,6 +29,6 @@ ms.locfileid: "101100191"
 |--|--|--|
 | 10.0 | 01/2021 | 10/2021 |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте [о новых возможностях защитника Azure для IOT?](release-notes.md)

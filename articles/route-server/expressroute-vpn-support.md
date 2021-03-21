@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/02/2021
 ms.author: duau
 ms.openlocfilehash: 6e588c7c0381c6825bcf75cbbe28a1dd6b865940
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101680532"
 ---
 # <a name="about-azure-route-server-preview-support-for-expressroute-and-azure-vpn"></a>О поддержке Azure Route Server (Предварительная версия) для ExpressRoute и Azure VPN
@@ -19,7 +19,7 @@ ms.locfileid: "101680532"
 Сервер маршрутизации Azure поддерживает не только виртуальные сетевые устройства сторонних производителей (NVA), работающие в Azure, но также тесно интегрируется с ExpressRoute и VPN-шлюзами Azure. Вам не нужно настраивать пиринг BGP между шлюзом и сервером маршрутизации Azure, а также управлять им. Можно включить обмен маршрутами между шлюзом и сервером маршрутизации Azure с помощью простого [изменения конфигурации](quickstart-configure-route-server-powershell.md#route-exchange).
 
 > [!IMPORTANT]
-> Сервер маршрутизации Azure (Предварительная версия) сейчас находится в общедоступной предварительной версии.
+> Сервер маршрутизации Azure (предварительная версия) сейчас предоставляется в общедоступной предварительной версии.
 > Эта предварительная версия предоставляется без соглашения об уровне обслуживания и не рекомендована для использования рабочей среде. Некоторые функции могут не поддерживаться или их возможности могут быть ограничены.
 > Дополнительные сведения см. в статье [Дополнительные условия использования предварительных выпусков Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 

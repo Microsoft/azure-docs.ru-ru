@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 09/07/2020
 ms.author: mlottner
 ms.openlocfilehash: d6dfeb01e174d71c926e9fcf7f5f1ee078524cf9
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103494280"
 ---
 # <a name="defender-iot-micro-agent-for-azure-rtos-security-alerts-and-recommendations-preview"></a>Защитник-IoT-Micro-Agent для уведомлений системы безопасности Azure RTO и рекомендации (Предварительная версия)
@@ -95,7 +95,7 @@ ms.locfileid: "103494280"
 
 Полный список всех оповещений и рекомендаций, связанных со службой IoT, см. в статье [оповещения системы безопасности](concept-security-alerts.md)IOT, [рекомендации](concept-recommendations.md)по безопасности IOT.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Краткое руководство. защитник-IoT-Micro-Agent для Azure RTO](quickstart-azure-rtos-security-module.md)
 - [Настройка и настройка защитника — IoT-Micro-Agent для Azure RTO](how-to-azure-rtos-security-module.md)

@@ -10,10 +10,10 @@ author: luisquintanilla
 ms.author: luquinta
 ms.date: 09/30/2020
 ms.openlocfilehash: 783b5afdaef369582614cde3525f7968fdb5e567
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102508645"
 ---
 # <a name="interactive-debugging-with-visual-studio-code"></a>Интерактивная Отладка с помощью Visual Studio Code
@@ -26,7 +26,7 @@ ms.locfileid: "102508645"
 
 Используйте расширение Машинное обучение Azure для проверки, запуска и отладки экспериментов машинного обучения перед их отправкой в облако.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 * Расширение Машинное обучение Azure VS Code (Предварительная версия). Дополнительные сведения см. в разделе [Настройка расширения Машинное обучение Azure VS Code](tutorial-setup-vscode-extension.md).
 * [Docker](https://www.docker.com/get-started)
@@ -84,7 +84,7 @@ ms.locfileid: "102508645"
 
 В некоторых случаях может потребоваться интерактивно отлаживать код Python, используемый в конвейере машинного обучения. С помощью VS Code и дебугпи можно присоединяться к коду, как он выполняется в среде обучения.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 * __Рабочая область машинное обучение Azure__ , настроенная для использования __виртуальной сети Azure__.
 * __Конвейер машинное обучение Azure__ , использующий скрипты Python в рамках этапов конвейера. Например, Писонскриптстеп.
@@ -541,5 +541,5 @@ docker stop debug
 * [Развертывание локальной модели](how-to-troubleshoot-deployment-local.md)
 * [Удаленное развертывание модели](how-to-troubleshoot-deployment.md)
 * [Конвейеры машинного обучения](how-to-debug-pipelines.md)
-* [параллелрунстеп](how-to-debug-parallel-run-step.md)
+* [ParallelRunStep](how-to-debug-parallel-run-step.md)
 

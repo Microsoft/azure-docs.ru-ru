@@ -10,10 +10,10 @@ ms.author: rogarana
 ms.subservice: disks
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 29a2cbbf2c390b81aa62b064a7cf93decbaa7457
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102565994"
 ---
 # <a name="how-to-detach-a-data-disk-from-a-linux-virtual-machine"></a>Отключение диска данных от виртуальной машины Linux

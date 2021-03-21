@@ -9,10 +9,10 @@ ms.date: 11/12/2019
 ms.author: cynthn;kareni
 ms.custom: include file
 ms.openlocfilehash: a9146099951aba223a7b201c1613e1ec0ba617d4
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96509244"
 ---
 **Последнее обновление документа**: 12 ноября 2019 10:00 по тихоокеанскому времени.
@@ -169,7 +169,7 @@ NUMA node(s):          1
 [Сбой терминала L1 (L1TF)](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV180018):
 - CVE-2018-3615 — расширения Intel Software Guard (Intel SGX)
 - CVE-2018-3620 — операционные системы (ОС) и режим управления системой (SMM)
-- CVE-2018-3646 — влияет на Virtual Machine Manager (VMM)
+- CVE-2018-3646 — влияет на диспетчер виртуальных машин (VMM)
 
 [Выборка данных на микроархитектуре](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV190013): 
 - CVE-2019-11091 — некэшированная память на основе микроархитектурной выборки данных (МДСУМ)

@@ -3,12 +3,12 @@ title: Запуск функций Azure из пакета
 description: Настройте запуск функций в среде выполнения Функций Azure путем подключения файла пакета развертывания, содержащего файлы проекта приложения-функции.
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.openlocfilehash: b2d90cf78263b30b4315199cf1c543186a435f17
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: aad6991d0ddd5c439d03e41adec63837a21db87b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "88639891"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104581598"
 ---
 # <a name="run-your-azure-functions-from-a-package-file"></a>Запуск функций Azure из файла пакета
 
@@ -63,6 +63,7 @@ ms.locfileid: "88639891"
 
 - Запуск из пакета делает возможным `wwwroot` только чтение, поэтому при записи файлов в этот каталог возникнет ошибка.
 - Форматы tar и gzip не поддерживаются.
+- ZIP-файл может иметь не более 1 ГБ.
 - Эта функция не сопоставлена с локальным кэшем.
 - Для повышения производительности холодного запуска используйте параметр local ZIP ( `WEBSITE_RUN_FROM_PACKAGE` = 1).
 - Выполнение из пакета несовместимо с параметром настройки развертывания ( `SCM_DO_BUILD_DURING_DEPLOYMENT=true` ). во время развертывания шаг сборки будет пропущен.

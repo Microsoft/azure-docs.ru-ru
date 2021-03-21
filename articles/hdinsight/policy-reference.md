@@ -1,18 +1,18 @@
 ---
 title: Встроенные определения политик для Azure HDInsight
 description: Выводит список встроенных определений политик Azure для Azure HDInsight. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 ms.topic: reference
 author: hrasheed-msft
 ms.author: hrasheed
 ms.service: hdinsight
 ms.custom: subject-policy-reference
-ms.openlocfilehash: ad47253b32ca0f66a46157796a48793aac052698
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: 03942b22d2566a220f312bd1671f338957df91b1
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102610169"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104581442"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-hdinsight"></a>Встроенные определения политики Azure для Azure HDInsight
 

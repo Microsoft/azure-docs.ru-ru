@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 01/24/2021
 ms.author: shhazam
 ms.openlocfilehash: de8c52372b2ef92dcf2abe357a40ef8947439a8a
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103493973"
 ---
 # <a name="quickstart-security-agent-reference-architecture"></a>Краткое руководство. Эталонная архитектура агентов безопасности

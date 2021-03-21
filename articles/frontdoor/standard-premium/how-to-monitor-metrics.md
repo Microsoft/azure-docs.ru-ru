@@ -9,16 +9,16 @@ ms.topic: how-to
 ms.date: 02/18/2021
 ms.author: yuajia
 ms.openlocfilehash: bb10fb337972db2696960b530f2d7538bd36a2fb
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101099386"
 ---
 # <a name="real-time-monitoring-in-azure-front-door-standardpremium"></a>Мониторинг в режиме реального времени в интерфейсе передней дверцы Azure Standard/Premium
 
 > [!Note]
-> Эта документация предназначена для передней дверцы Azure уровня "Стандартный" или "Премиум" (Предварительная версия). Ищете информацию о передней дверце Azure? Просмотреть [здесь](../front-door-overview.md).
+> Эта документация предназначена для Azure Front Door категории "Стандартный" или "Премиум" (предварительная версия). Сведения об Azure Front Door см. [здесь](../front-door-overview.md).
 
 Передняя дверца Azure Standard/Premium интегрирована с Azure Monitor и имеет 11 метрик для помощи в мониторинге уровня "Стандартный" или "Премиум" передней дверцы Azure в реальном времени для отслеживания, устранения неполадок и отладки проблем.  
 
@@ -77,7 +77,7 @@ ms.locfileid: "101099386"
 
 За использование оповещений будет выплачиваться Azure Monitor. Дополнительные сведения об оповещениях см. в разделе [Azure Monitor Alerts](../../azure-monitor/platform/alerts-overview.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о [стандартных и расширенных отчетах о предварительной дверце Azure](how-to-reports.md).
 - Сведения о [журналах уровня "Стандартный" и "Премиум" для передней дверцы Azure](how-to-logs.md).

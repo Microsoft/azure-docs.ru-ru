@@ -10,10 +10,10 @@ ms.date: 05/28/2019
 ms.author: sngun
 ms.custom: devx-track-java
 ms.openlocfilehash: e7b75c71d64054e38630677ecd38f8e3e2483c12
-ms.sourcegitcommit: e15c0bc8c63ab3b696e9e32999ef0abc694c7c41
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97606340"
 ---
 # <a name="use-azure-cosmos-db-change-feed-to-visualize-real-time-data-analytics"></a>Использование канала изменений Azure Cosmos DB для визуализации аналитики данных в реальном времени
@@ -56,7 +56,7 @@ ms.locfileid: "97606340"
 
 7. **Power BI:** это решение используется для визуализации данных, отправленных Azure Stream Analytics. Вы можете создать панель мониторинга, чтобы увидеть, как метрики изменяются в реальном времени.  
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Microsoft .NET Framework 4.7.1 или более поздняя версия.
 
@@ -211,7 +211,7 @@ Azure Stream Analytics — это полностью управляемая об
 
 5. Перейдите на страницу задания Stream Analytics и выберите **Выходные данные**.  
 
-6. Нажмите кнопку **+ Добавить**. В раскрывающемся меню выберите пункт **Power BI**.  
+6. Щелкните **+ Добавить**. В раскрывающемся меню выберите пункт **Power BI**.  
 
 7. Чтобы создать новые выходные данные Power BI для визуализации средней цены, выполните следующие действия:
 
@@ -257,7 +257,7 @@ Power BI — набор средств бизнес-аналитики для а
 
 7. Теперь, если вы хотите визуализировать больше метрики, можете вернуться к **streamjob1** и создать еще три набора выходных данных со следующими полями.
 
-   a. **Выходной псевдоним** — incomingRevenueOutput, имя набора данных — incomingRevenue, имя таблицы — incomingRevenue.  
+   а. **Выходной псевдоним** — incomingRevenueOutput, имя набора данных — incomingRevenue, имя таблицы — incomingRevenue.  
    b. **Выходной псевдоним** — top5Output, имя набора данных — top5, имя таблицы — top5.  
    c. **Выходной псевдоним** — uniqueVisitorCountOutput, имя набора данных — uniqueVisitorCount, имя таблицы — uniqueVisitorCount.
 

@@ -11,10 +11,10 @@ ms.subservice: common
 services: storage
 tags: ''
 ms.openlocfilehash: 1e6033f9a8f4cecd2429eca67a3d58e54d7ae1f6
-ms.sourcegitcommit: 54e1d4cdff28c2fd88eca949c2190da1b09dca91
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99221114"
 ---
 # <a name="troubleshoot-latency-using-storage-analytics-logs"></a>Устранение неполадок с помощью журналов Аналитики Службы хранилища
@@ -97,7 +97,7 @@ ms.locfileid: "99221114"
 
    В следующей таблице приведены сведения о OperationType и результатах состоянии RequestStatus высокой задержки.
 
-   | Тип большого двоичного объекта |Состоянии RequestStatus =<br>Успешное завершение|Состоянии RequestStatus =<br>ЖЕСТКИХ NetworkError|Рекомендация|
+   | Тип большого двоичного объекта |Состоянии RequestStatus =<br>Успешно|Состоянии RequestStatus =<br>ЖЕСТКИХ NetworkError|Рекомендация|
    |---|---|---|---|
    |GetBlob|Да|Нет|[**Операция с большим двоичным объектом:** Состоянии RequestStatus = успешное завершение](#getblob-operation-requeststatus--success)|
    |GetBlob|Нет|Да|[**Операция с большим двоичным объектом:** Состоянии RequestStatus = (SAS) NetworkError](#getblob-operation-requeststatus--sasnetworkerror)|

@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 05/28/2019
 ms.author: inhenkel
 ms.openlocfilehash: 2873486b95f0bb4a9a27e2e050cc6f6d5473a44e
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98898178"
 ---
 # <a name="streaming-policies"></a>Политики потоковой передачи

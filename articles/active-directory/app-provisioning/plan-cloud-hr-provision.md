@@ -12,10 +12,10 @@ ms.date: 11/22/2019
 ms.author: kenwith
 ms.reviewer: arvindha, celested
 ms.openlocfilehash: 9c896d4cccf898b8818b4c363c5bc891a8734ca5
-ms.sourcegitcommit: d49bd223e44ade094264b4c58f7192a57729bada
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99256717"
 ---
 # <a name="plan-cloud-hr-application-to-azure-active-directory-user-provisioning"></a>Планирование облачного приложения отдела кадров для Azure Active Directory подготовки пользователей
@@ -79,7 +79,7 @@ Azure AD использует эту интеграцию для реализа
 
 Кроме того, вам потребуется действительная лицензия на подписку Azure AD Premium P1 или более поздней версии для каждого пользователя, который будет источником из облачного приложения отдела кадров и подготовленных для Active Directory или Azure AD. Любое неправильное количество лицензий, принадлежащих облачному приложению отдела кадров, может привести к ошибкам во время подготовки пользователей.
 
-### <a name="prerequisites"></a>предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 - [Администратор гибридных удостоверений](../roles/permissions-reference.md#hybrid-identity-administrator) Azure AD для настройки агента подготовки Azure AD Connect.
 - Роль [администратора приложения](../roles/permissions-reference.md#application-administrator) Azure AD для настройки приложения подготовки в портал Azure
@@ -92,11 +92,11 @@ Azure AD использует эту интеграцию для реализа
 
 | **Ресурсы** | **Ссылка и описание** |
 |:-|:-|
-| Видео | [Что такое подготовка пользователей в активном каталоге Azure?](https://youtu.be/_ZjARPpI6NI) |
+| Видеоролики | [Что такое подготовка пользователей в активном каталоге Azure?](https://youtu.be/_ZjARPpI6NI) |
 | | [Развертывание подготовки пользователей в активном каталоге Azure](https://youtu.be/pKzyts6kfrw) |
 | Учебники | [Учебники по интеграции приложений SaaS с Azure Active Directory](../saas-apps/tutorial-list.md) |
 | | [Руководство по Настройка Workday для автоматической подготовки пользователей](../saas-apps/workday-inbound-tutorial.md#frequently-asked-questions-faq) |
-| ВОПРОСЫ И ОТВЕТЫ | [Автоматическая подготовка пользователей](../app-provisioning/user-provisioning.md#what-applications-and-systems-can-i-use-with-azure-ad-automatic-user-provisioning) |
+| Вопросы и ответы | [Автоматическая подготовка пользователей](../app-provisioning/user-provisioning.md#what-applications-and-systems-can-i-use-with-azure-ad-automatic-user-provisioning) |
 | | [Подготовка из Workday в Azure AD](../saas-apps/workday-inbound-tutorial.md#frequently-asked-questions-faq) |
 
 ### <a name="solution-architecture"></a>Архитектура решения

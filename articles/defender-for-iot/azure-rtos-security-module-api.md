@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 09/07/2020
 ms.author: mlottner
 ms.openlocfilehash: 9a285636ba10f7ca0668f597d0e9016cff73494a
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103494297"
 ---
 # <a name="defender-iot-micro-agent-for-azure-rtos-api-preview"></a>Защитник-IoT-Micro-Agent для Azure RTO API (Предварительная версия)
@@ -90,7 +90,7 @@ UINT nx_azure_iot_security_module_disable(NX_AZURE_IOT *nx_azure_iot_ptr);
 Потоки
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о том, как приступить к работе с Azure RTO Defender — IoT-Micro-Agent, см. в следующих статьях:
 

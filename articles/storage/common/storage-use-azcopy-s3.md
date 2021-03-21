@@ -9,10 +9,10 @@ ms.date: 07/27/2020
 ms.author: normesta
 ms.subservice: common
 ms.openlocfilehash: 34f54bb30e959ecc2fa27fba5ab7392b9eddc68e
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103494518"
 ---
 # <a name="copy-data-from-amazon-s3-to-azure-storage-by-using-azcopy"></a>Копирование данных из Amazon S3 в службу хранилища Azure с помощью AzCopy
@@ -34,13 +34,13 @@ AzCopy — это служебная программа командной ст
 >
 > Если вы предпочитаете использовать маркер SAS для авторизации доступа к данным большого двоичного объекта, можно добавить этот маркер к URL-адресу ресурса в каждой команде AzCopy.
 >
-> Например, так: `https://mystorageaccount.blob.core.windows.net/mycontainer?<SAS-token>`.
+> Например, `https://mystorageaccount.blob.core.windows.net/mycontainer?<SAS-token>`.
 
 ### <a name="authorize-with-aws-s3"></a>Авторизация с помощью AWS S3
 
 Соберите ключ доступа AWS и секретный ключ доступа, а затем задайте следующие переменные среды:
 
-| Операционная система | Get-Help  |
+| Операционная система | Команда  |
 |--------|-----------|
 | **Windows** | `set AWS_ACCESS_KEY_ID=<access-key>`<br>`set AWS_SECRET_ACCESS_KEY=<secret-access-key>` |
 | **Linux** | `export AWS_ACCESS_KEY_ID=<access-key>`<br>`export AWS_SECRET_ACCESS_KEY=<secret-access-key>` |
@@ -161,7 +161,7 @@ AzCopy выполняет следующие действия:
    Этот ключ будет использоваться для сохранения исходных метаданных недопустимого **ключа**.
    Вы можете использовать этот ключ, чтобы попытаться восстановить метаданные на стороне Azure, так как ключ метаданных сохраняется в качестве значения в службе хранилища BLOB-объектов.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные примеры приведены в любой из следующих статей:
 

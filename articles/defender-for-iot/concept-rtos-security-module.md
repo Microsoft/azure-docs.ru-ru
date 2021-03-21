@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 09/09/2020
 ms.author: mlottner
 ms.openlocfilehash: 04a499f1feae630d3436c75ae2081413789c0ca3
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103494240"
 ---
 # <a name="defender-iot-micro-agent-for-azure-rtos-preview"></a>Защитник-IoT-Micro-Agent для Azure RTO (Предварительная версия)
@@ -63,7 +63,7 @@ Azure RTO Неткс Duo — это расширенный, промышленн
 
 Защитник-IoT-Micro-Agent для Azure RTO предоставляется в качестве бесплатной загрузки для устройств IoT. Служба "защитник для облачных служб Интернета вещей" доступна с 30-дневной пробной версией для каждой подписки Azure. [Скачайте защитник-IOT-Micro-Agent сейчас](https://github.com/azure-rtos/azure-iot-preview/releases) и приступим к работе. 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Приступая к работе с защитником IoT-Micro-Agent для RTO [предварительных требований и установки](quickstart-azure-rtos-security-module.md)Azure.
 - Дополнительные сведения об [оповещениях безопасности и рекомендациях по защите](concept-rtos-security-alerts-recommendations.md)от защитника IOT-Micro-Agent для Azure RTO. 

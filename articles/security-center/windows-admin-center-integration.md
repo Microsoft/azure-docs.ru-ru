@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 08/31/2020
 ms.author: memildin
 ms.openlocfilehash: fc4207547a1f34fca1ef302626f1365572a236b9
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102101313"
 ---
 # <a name="protect-windows-admin-center-resources-with-security-center"></a>Защита ресурсов центра администрирования Windows с помощью центра безопасности
@@ -21,7 +21,7 @@ ms.locfileid: "102101313"
 
 > [!NOTE]
 > Чтобы включить интеграцию центра администрирования Windows, в подписке Azure и Log Analytics связанной рабочей области необходимо включить защитник Azure.
-> Защитник Azure предоставляется бесплатно в течение первых 30 дней, если вы ранее не использовали его в подписке и рабочей области. Сведения о ценах на выбранную валюту и в соответствии с регионом см. на странице [цен на центр безопасности](https://azure.microsoft.com/pricing/details/security-center/).
+> Защитник Azure предоставляется бесплатно в течение первых 30 дней, если вы ранее не использовали его в подписке и рабочей области. Цены для определенной валюты и региона см. на странице [цен на Центр безопасности](https://azure.microsoft.com/pricing/details/security-center/).
 >
 
 После успешного подключения сервера из центра администрирования Windows в центр безопасности Azure вы можете:

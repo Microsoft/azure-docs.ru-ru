@@ -9,10 +9,10 @@ ms.custom: references_regions
 ms.date: 09/01/2020
 ms.author: azhussai
 ms.openlocfilehash: 89ba6b7a69c95951a083628f23be68d811c7768c
-ms.sourcegitcommit: c4246c2b986c6f53b20b94d4e75ccc49ec768a9a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96601617"
 ---
 # <a name="understanding-pricing-for-azure-application-gateway-and-web-application-firewall"></a>Общие сведения о ценах на шлюз приложений Azure и брандмауэр веб-приложения
@@ -56,8 +56,8 @@ ms.locfileid: "96601617"
 
 |              Тип шлюза приложений             |  Затраты ($/ч)  |
 | ------------------------------------------------- | ---------------|
-|                     Малый                         |    $0,025      |
-|                     Средняя                        |    0,07 долл. США       |
+|                     Small                         |    $0,025      |
+|                     Средний                        |    0,07 долл. США       |
 |                     Большой                         |    $0,32       |
 
 Месячные цены основываются на 730 часах использования в месяц.
@@ -82,8 +82,8 @@ ms.locfileid: "96601617"
 
 |              Тип шлюза приложений             |  Затраты ($/ч)  |
 | ------------------------------------------------- | ---------------|
-|                     Малый                         |       Н/Д       |
-|                     Средняя                        |     $0,126     |
+|                     Small                         |       Н/Д       |
+|                     Средний                        |     $0,126     |
 |                     Большой                         |     $0,448     |
 
 Месячные цены основываются на 730 часах использования в месяц.

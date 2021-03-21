@@ -5,10 +5,10 @@ ms.topic: how-to
 ms.date: 12/03/2020
 ms.custom: references_regions
 ms.openlocfilehash: 45791cd69772be97ca6768184ed17179e04ad9dc
-ms.sourcegitcommit: 16c7fd8fe944ece07b6cf42a9c0e82b057900662
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96576814"
 ---
 # <a name="create-an-azure-event-hubs-schema-registry-preview"></a>Создание реестра схемы концентраторов событий Azure (Предварительная версия)
@@ -19,7 +19,7 @@ ms.locfileid: "96576814"
 > - Эта функция доступна только на **стандартных** и **выделенных** уровнях и не предоставляется на уровне **Базовый**.
 > - Если концентратор событий находится в **виртуальной сети**, вы не сможете создавать схемы в портал Azure, пока вы не получите доступ к порталу из виртуальной машины в той же виртуальной сети. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 [Создайте пространство имен концентраторов событий](event-hubs-create.md#create-an-event-hubs-namespace). Можно также использовать существующее пространство имен. 
 
 ## <a name="create-a-schema-group"></a>Создание группы схем

@@ -9,16 +9,16 @@ ms.author: mansha
 author: manishmsfte
 ms.custom: devx-track-java
 ms.openlocfilehash: a15c6b5919f428b28daab86fea9c3b6473d19162
-ms.sourcegitcommit: e15c0bc8c63ab3b696e9e32999ef0abc694c7c41
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97606204"
 ---
 # <a name="migrate-from-couchbase-to-azure-cosmos-db-sql-api"></a>Миграция с CouchBase на API SQL для Azure Cosmos DB
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
 
-Azure Cosmos DB — это масштабируемая, глобально распределенная, полностью управляемая база данных. Он обеспечивает гарантированный доступ к данным с низкой задержкой. Дополнительные сведения об Azure Cosmos DB см. в [этой обзорной статье](introduction.md). В этой статье приведены инструкции по переносу приложений Java, подключенных к Couchbase, в учетную запись API SQL в Azure Cosmos DB.
+Azure Cosmos DB — это масштабируемая, глобально распределенная, полностью управляемая база данных. Она обеспечивает гарантированный доступ к данным с низкой задержкой. Дополнительные сведения об Azure Cosmos DB см. в [этой обзорной статье](introduction.md). В этой статье приведены инструкции по переносу приложений Java, подключенных к Couchbase, в учетную запись API SQL в Azure Cosmos DB.
 
 ## <a name="differences-in-nomenclature"></a>Различия в номенклатуре
 

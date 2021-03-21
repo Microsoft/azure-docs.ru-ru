@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
 ms.date: 08/25/2020
-ms.openlocfilehash: 11a3d386eae9b77a5f53b7e8d2dbcf012edd9386
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.openlocfilehash: f00740de5a327858fd250a0cb561b07c32f3b726
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103565345"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104655577"
 ---
 # <a name="migration-guide-oracle-to-azure-sql-database"></a>Руководство по миграции: Oracle в базу данных SQL Azure
 [!INCLUDE[appliesto-sqldb-sqlmi](../../includes/appliesto-sqldb.md)]
@@ -51,11 +51,27 @@ ms.locfileid: "103565345"
 1. Откройте [Помощник по миграции SQL Server для Oracle](https://www.microsoft.com/en-us/download/details.aspx?id=54258). 
 1. Выберите **Файл**, а затем пункт **Новый проект**. 
 1. Укажите имя проекта, расположение для сохранения проекта, а затем выберите База данных SQL Azure в качестве целевого объекта миграции из раскрывающегося списка. Нажмите кнопку **ОК**.
-1. Введите значения в поля сведения о соединении Oracle в диалоговом окне **соединение с Oracle** .
+
+   ![Создать проект](./media/oracle-to-sql-database-guide/new-project.png)
+
+
+1. Выберите **подключиться к Oracle**. Введите значения в поля сведения о соединении Oracle в диалоговом окне **соединение с Oracle** .
+
+   ![Соединение с Oracle](./media/oracle-to-sql-database-guide/connect-to-oracle.png)
+
+   Выберите схемы Oracle, которые требуется перенести: 
+
+   ![Выбор схемы Oracle](./media/oracle-to-sql-database-guide/select-schema.png)
+
 1. Щелкните правой кнопкой мыши схему Oracle, которую необходимо перенести, в **обозревателе метаданных Oracle**, а затем выберите команду **создать отчет**. При этом будет создан HTML-отчет. Кроме того, можно выбрать пункт **создать отчет** на панели навигации после выбора базы данных.
+
+   ![Создавать отчет](./media/oracle-to-sql-database-guide/create-report.png)
+
 1. Ознакомьтесь с HTML-отчетом, чтобы получить сведения о статистике преобразований и любых ошибках или предупреждениях. Также можно открыть отчет в Excel, чтобы получить список объектов Oracle и усилия, необходимые для выполнения преобразования схемы. Расположение отчета по умолчанию находится в папке "report" в каталоге SSMAProjects.
 
-   Например: `drive:\<username>\Documents\SSMAProjects\MyOracleMigration\report\report_2020_11_12T02_47_55\`
+   Пример: `drive:\<username>\Documents\SSMAProjects\MyOracleMigration\report\report_2020_11_12T02_47_55\`
+
+   ![Отчет об оценке](./media/oracle-to-sql-database-guide/assessment-report.png) 
 
 
 
@@ -66,6 +82,9 @@ ms.locfileid: "103565345"
 1. В главном меню выберите **Сервис**. 
 1. Выберите **Параметры проекта**. 
 1. Перейдите на вкладку **Сопоставления типов**. 
+
+   ![Сопоставления типов](./media/oracle-to-sql-database-guide/type-mappings.png)
+
 1. Сопоставление типов для каждой таблицы можно изменить, выбрав таблицу в **обозревателе метаданных Oracle**.
 
 ### <a name="convert-schema"></a>Преобразовать схему
@@ -78,8 +97,21 @@ ms.locfileid: "103565345"
     1. Выберите целевую базу данных SQL из раскрывающегося списка.
     1. Выберите **Подключиться**.
 
-1. Щелкните правой кнопкой мыши схему и выберите **Преобразовать схему**. Кроме того, можно выбрать пункт **Преобразовать схему** на верхней панели навигации после выбора схемы.
+    ![Подключение к базе данных SQL](./media/oracle-to-sql-database-guide/connect-to-sql-database.png)
+
+
+1. Щелкните правой кнопкой мыши схему Oracle в **обозревателе метаданных Oracle** и выберите команду **преобразовать схему**. Кроме того, можно выбрать пункт **Преобразовать схему** на верхней панели навигации после выбора схемы.
+
+   ![Преобразовать схему](./media/oracle-to-sql-database-guide/convert-schema.png)
+
 1. После завершения преобразования Сравните и изучите преобразованные объекты с исходными объектами, чтобы выявление потенциальных проблем и их устранение на основе рекомендаций.
+
+   ![Обзор схемы рекомендаций](./media/oracle-to-sql-database-guide/table-mapping.png)
+
+   Сравните преобразованный текст Transact-SQL с исходными хранимыми процедурами и ознакомьтесь с рекомендациями. 
+
+   ![Обзор рекомендаций](./media/oracle-to-sql-database-guide/procedure-comparison.png)
+
 1. Сохраните проект локально для исправления схемы в автономном режиме. В меню **Файл** выберите команду **Сохранить проект**.
 
 ## <a name="migrate"></a>Миграция
@@ -89,11 +121,26 @@ ms.locfileid: "103565345"
 Чтобы опубликовать схему и перенести данные, выполните следующие действия.
 
 1. Опубликуйте схему. Щелкните правой кнопкой мыши базу данных в узле **базы** данных в **обозревателе МЕТАДАННЫХ базы данных SQL Azure** и выберите **синхронизировать с базой данных**.
-1. Перенос данных. Щелкните правой кнопкой мыши схему в **обозревателе метаданных Oracle** и выберите пункт **перенести данные**. 
+
+   ![Синхронизация с базой данных](./media/oracle-to-sql-database-guide/synchronize-with-database.png)
+
+   Проверьте сопоставление между исходным и целевым проектами.
+
+   ![Синхронизация с проверкой базы данных](./media/oracle-to-sql-database-guide/synchronize-with-database-review.png)
+
+
+1. Перенос данных. Щелкните правой кнопкой мыши схему в **обозревателе метаданных Oracle** и выберите пункт **перенести данные**. Кроме того, можно выбрать вариант **перенести данные** с верхней строки навигации после выбора схемы. 
+
+   ![Перенос данных](./media/oracle-to-sql-database-guide/migrate-data.png)
+
 1. Укажите сведения о подключении для Oracle и базы данных SQL Azure.
 1. Просмотрите **отчет о переносе данных**.
+
+   ![Отчет о миграции данных](./media/oracle-to-sql-database-guide/data-migration-report.png)
+
 1. Подключитесь к базе данных SQL Azure с помощью [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) и проверьте миграцию, просмотрев данные и схему.
 
+   ![Проверка в SSMA](./media/oracle-to-sql-database-guide/validate-data.png)
 
 Кроме того, для выполнения миграции также можно использовать SQL Server Integration Services (SSIS). Дополнительные сведения см. на следующих ресурсах: 
 

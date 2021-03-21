@@ -6,10 +6,10 @@ ms.reviewer: jasonh
 ms.topic: how-to
 ms.date: 06/30/2017
 ms.openlocfilehash: d263f2616607a96a8aa14f1ad1c06330b1b44644
-ms.sourcegitcommit: df66dff4e34a0b7780cba503bb141d6b72335a96
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96510868"
 ---
 # <a name="u-sql-programmability-guide-overview"></a>Обзор руководств по программированию U-SQL
@@ -123,7 +123,7 @@ REFERENCE ASSEMBLY MyDB.[MyAssembly];
 
 
 ### <a name="use-assembly-versioning"></a>Использование версий сборок
-В настоящее время U-SQL использует .NET Framework версии 4.7.2. Убедитесь, что ваши сборки совместимы с этой версией среды выполнения.
+В настоящее время U-SQL использует платформа .NET Framework версии 4.7.2. Убедитесь, что ваши сборки совместимы с этой версией среды выполнения.
 
 Как упоминалось выше, U-SQL выполняет код в 64-разрядном формате (x64). Поэтому код нужно компилировать так, чтобы он выполнялся в среде x64. В противном случае вы получите ошибку неправильного формата, как показано выше.
 
@@ -420,6 +420,6 @@ OUTPUT @rs2
 
 В этом примере мы видим более сложный сценарий использования, в котором глобальная переменная используется в разделе кода программной части для всего набора строк в памяти.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Инструкции по программированию U-SQL — определяемый пользователем тип и функции](data-lake-analytics-u-sql-programmability-guide-UDT-AGG.md)
 * [Инструкции по программированию U-SQL — UDO](data-lake-analytics-u-sql-programmability-guide-UDO.md)

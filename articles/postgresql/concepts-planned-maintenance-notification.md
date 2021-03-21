@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 10/21/2020
 ms.openlocfilehash: 8db556709f68a1184046989a15fad147542a05a7
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98735747"
 ---
 # <a name="planned-maintenance-notification-in-azure-database-for-postgresql---single-server"></a>Уведомление о плановом обслуживании в Базе данных Azure для PostgreSQL — один сервер
@@ -76,7 +76,7 @@ ms.locfileid: "98735747"
 Временная ошибка, также известная как временный сбой, является ошибкой, которая устраняется автоматически. Во время обслуживания могут возникать [временные ошибки](./concepts-connectivity.md#transient-errors) . Большинство из этих событий автоматически устраняются системой менее чем за 60 секунд. Временные ошибки следует обрабатывать с помощью [логики повторных попыток](./concepts-connectivity.md#handling-transient-errors).
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Если у вас есть вопросы и предложения по работе с базой данных Azure для PostgreSQL, отправьте сообщение электронной почты для команды "база данных Azure для PostgreSQL" по адресу AskAzureDBforPostgreSQL@service.microsoft.com
 - См. рекомендации по созданию оповещений для метрики в статье [Как настраивать оповещения](howto-alert-on-metric.md).

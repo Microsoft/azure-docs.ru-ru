@@ -13,17 +13,17 @@ ms.workload: infrastructure
 ms.date: 02/21/2020
 ms.author: rdhillon
 ms.openlocfilehash: bdf0e87c92a55d0dbb5bbe34334a6de4580cb350
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96004965"
 ---
 # <a name="create-change-or-delete-service-endpoint-policy-using-the-azure-portal"></a>Создание, изменение или удаление политик конечной точки службы с помощью портала Azure
 
 Политики конечной точки службы позволяют фильтровать трафик виртуальной сети, передаваемый к ресурсам Azure, с помощью конечных точек службы. Если вы не работали с политиками конечной точки службы, ознакомьтесь с [обзором политик конечной точки службы](virtual-network-service-endpoint-policies-overview.md), чтобы получить дополнительные сведения.
 
- Из этого руководства вы узнаете, как выполнять следующие задачи:
+ В этом руководстве описано следующее:
 
 > [!div class="checklist"]
 > * Создание политики конечной точки службы.
@@ -112,5 +112,5 @@ ms.locfileid: "96004965"
 >[!WARNING] 
 >Доступ к ресурсам хранилища Azure во всех регионах будет ограничен в соответствии с политикой конечной точки службы из этой подсети.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 При работе с этим руководстве вы создали политику конечной точки службы и связали ее с подсетью. Чтобы узнать больше о политиках конечной точки службы, ознакомьтесь с [обзором политик конечной точки службы](virtual-network-service-endpoint-policies-overview.md).
