@@ -5,12 +5,12 @@ ms.service: cognitive-services
 ms.topic: include
 ms.date: 05/15/2020
 ms.author: v-demjoh
-ms.openlocfilehash: c939c1d061f4e01a00bc2b886056e42f0b059ad5
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: a995a110c4f777603e5b0273b6025cd68fe55b67
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102510851"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "102532777"
 ---
 ## <a name="download-and-install"></a>Загрузите и установите
 
@@ -118,7 +118,7 @@ sudo docker run -it -v ABSOLUTE_PATH:/data --rm msftspeech/spx
 Например, в Windows эта команда задает ключ:
 
 ```console
-docker run -it -v c:\spx-data:/data --rm msftspeech/spx config --set @key SUBSCRIPTION-KEY
+docker run -it -v c:\spx-data:/data --rm msftspeech/spx config @key --set SUBSCRIPTION-KEY
 ```
 
 Для более расширенного взаимодействия с программой командной строки можно запустить контейнер с интерактивной оболочкой bash, добавив параметр входной точки.
@@ -171,8 +171,8 @@ Follow these instructions to create a shortcut:
 Указав ключ подписки и идентификатор региона (например, `eastus` и `westus`), выполните следующие команды.
 
 ```console
-spx config --set @key SUBSCRIPTION-KEY
-spx config --set @region REGION
+spx config @key --set SUBSCRIPTION-KEY
+spx config @region --set REGION
 ```
 
 Теперь проверку подлинности для подписки можно выполнять для будущих запросов SPX. Если необходимо удалить любое из этих сохраненных значений, выполните `spx config @region --clear` или `spx config @key --clear`.

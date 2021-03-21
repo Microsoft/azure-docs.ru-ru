@@ -6,17 +6,17 @@ ms.subservice: language-understanding
 ms.topic: troubleshooting
 ms.date: 05/06/2020
 ms.openlocfilehash: b5e25e9ed25ced96d38994928bcb6275ce79420f
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102612802"
 ---
 # <a name="language-understanding-frequently-asked-questions-faq"></a>Часто задаваемые вопросы о службе "Распознавание речи"
 
 В этой статье приведены ответы на часто задаваемые вопросы о службе "Распознавание речи" (LUIS).
 
-## <a name="whats-new"></a>Новые возможности
+## <a name="whats-new"></a>Новое
 
 [Узнайте больше](whats-new.md) о новых возможностях распознавание речи (Luis).
 
@@ -110,7 +110,7 @@ ms.locfileid: "102612802"
 * Если вы превысили максимальную ценовую категорию, добавьте дополнительные Распознавание речи ресурсы с подсистемой балансировки нагрузки перед ними. В этом может помочь [контейнер распознавание речи](luis-container-howto.md) с Kubernetes или DOCKER Compose.
 * Вы можете настроить запрос клиентского приложения с помощью [политики повтора](/azure/architecture/best-practices/transient-faults#general-guidelines) , которая реализуется при получении этого кода состояния.
 
-### <a name="my-endpoint-query-returned-unexpected-results-what-should-i-do"></a>Запрос конечной точки вернул непредвиденные результаты. Что следует делать?
+### <a name="my-endpoint-query-returned-unexpected-results-what-should-i-do"></a>Запрос конечной точки вернул непредвиденные результаты.   Что следует делать?
 
 Непредвиденные результаты прогнозирования, полученные при запросе, основаны на состоянии опубликованной модели. Чтобы скорректировать модель, потребуется изменить ее, обучить и опубликовать повторно.
 
@@ -155,11 +155,11 @@ Get-AzCognitiveServicesAccountUsage -ResourceGroupName <your-resource-group> -Na
 ### <a name="what-is-the-maximum-number-of-intents-and-entities-that-a-luis-app-can-support"></a>Какое максимальное число намерений и сущностей, поддерживаемых приложением LUIS?
 Подробные сведения см. в разделе по [этой](luis-limits.md) ссылке.
 
-### <a name="i-want-to-build-a-luis-app-with-more-than-the-maximum-number-of-intents-what-should-i-do"></a>Я хочу создать приложение LUIS с количеством намерений, которое превышает допустимое количество. Что следует делать?
+### <a name="i-want-to-build-a-luis-app-with-more-than-the-maximum-number-of-intents-what-should-i-do"></a>Я хочу создать приложение LUIS с количеством намерений, которое превышает допустимое количество.   Что следует делать?
 
 Подробнее см. в [этом](luis-concept-intent.md#if-you-need-more-than-the-maximum-number-of-intents) разделе с рекомендациями.
 
-### <a name="i-want-to-build-an-app-in-luis-with-more-than-the-maximum-number-of-entities-what-should-i-do"></a>Я хочу создать в LUIS приложение с количеством сущностей, которое превышает допустимое количество. Что следует делать?
+### <a name="i-want-to-build-an-app-in-luis-with-more-than-the-maximum-number-of-entities-what-should-i-do"></a>Я хочу создать в LUIS приложение с количеством сущностей, которое превышает допустимое количество.   Что следует делать?
 
 Подробнее см. в [этом](luis-concept-entity-types.md#if-you-need-more-than-the-maximum-number-of-entities) разделе с рекомендациями.
 
@@ -330,7 +330,7 @@ Get-AzCognitiveServicesAccountUsage -ResourceGroupName <your-resource-group> -Na
 
 * [Как использовать службу Azure Conversational AI для масштабирования вашего бизнеса для следующего поколения](https://www.youtube.com/watch?v=_k97jd-csuk&feature=youtu.be)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительную информацию о LUIS см. в следующих ресурсах:
 * [Вопросы Stack Overflow, помеченные LUIS](https://stackoverflow.com/questions/tagged/luis)

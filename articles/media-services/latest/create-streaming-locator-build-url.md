@@ -13,10 +13,10 @@ ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ms.openlocfilehash: d2ecfb5a58641938062166bcd7c61a7d91764a3f
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101093474"
 ---
 # <a name="create-a-streaming-locator-and-build-urls"></a>Создание указателя потоковой передачи и формирование URL-адресов
@@ -163,12 +163,12 @@ private static async Task<IList<string>> GetStreamingUrlsAsync(
 
 См. полный пример кода: [енкодингвисмеспредефинедпресет](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/master/VideoEncoding/EncodingWithMESPredefinedPreset/Program.cs)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Создание фильтров с помощью .NET](filters-dynamic-manifest-dotnet-howto.md)
 * [Создание фильтров с помощью REST](filters-dynamic-manifest-rest-howto.md)
 * [Create filters with CLI](filters-dynamic-manifest-cli-howto.md) (Создание фильтров с помощью .NET)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Защитите содержимое с помощью DRM](protect-with-drm.md).

@@ -14,10 +14,10 @@ ms.date: 09/22/2020
 ms.author: allensu
 ms.custom: references_regions
 ms.openlocfilehash: 8e14b22895c4734f1efd8688a5b20c946422a080
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103225631"
 ---
 # <a name="cross-region-load-balancer-preview"></a>Балансировщик нагрузки между регионами (Предварительная версия)
@@ -122,7 +122,7 @@ Azure Load Balancer (цен. категория "Стандартный") под
 * Западная часть США 
 * Северная Европа 
 * Центрально-южная часть США 
-* Западная часть США 2 
+* западная часть США 2 
 * южная часть Соединенного Королевства 
 * Southeast Asia 
 * Центрально-северная часть США 
@@ -149,7 +149,7 @@ Azure Load Balancer (цен. категория "Стандартный") под
 Балансировщик нагрузки между регионами предоставляет [соглашение об уровне обслуживания](https://azure.microsoft.com/support/legal/sla/load-balancer/v1_0/ ) для стандартного балансировщика нагрузки.
 
  
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - См. раздел [учебник. Создание балансировщика нагрузки между регионами с помощью портал Azure](tutorial-cross-region-portal.md) для создания балансировщика нагрузки между регионами.
 - См. раздел [Создание общедоступной стандартной подсистемы балансировки нагрузки](quickstart-load-balancer-standard-public-portal.md) для создания стандартной региональной подсистемы балансировки нагрузки.

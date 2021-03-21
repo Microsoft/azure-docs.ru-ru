@@ -10,10 +10,10 @@ ms.subservice: language-understanding
 ms.topic: conceptual
 ms.date: 10/10/2019
 ms.openlocfilehash: b33f765e936d7c0db301a5b2fcf38ccaf137f771
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98787559"
 ---
 # <a name="testing-example-utterances-in-luis"></a>Тестирование примеров фраз в LUIS
@@ -52,7 +52,7 @@ LUIS сохраняет все зарегистрированные фразы �
 После внесения изменений в модель не забудьте [обучить](luis-how-to-train.md) LUIS. Изменения в приложении LUIS не отображаются при тестировании, пока приложение не будет обучено. 
 
 ## <a name="best-practices"></a>Рекомендации
-Ознакомьтесь с [рекомендациями](luis-concept-best-practices.md).
+Ознакомьтесь [с рекомендациями](luis-concept-best-practices.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

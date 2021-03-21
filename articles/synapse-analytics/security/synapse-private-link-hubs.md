@@ -1,19 +1,19 @@
 ---
 title: Подключение к синапсе Studio с помощью частных ссылок
 description: Из этой статьи вы узнаете, как подключиться к Azure синапсе Studio с помощью частных ссылок.
-author: NanditaV
+author: nanditavalsan
 ms.service: synapse-analytics
 ms.topic: conceptual
 ms.subservice: security
 ms.date: 12/01/2020
 ms.author: NanditaV
 ms.reviewer: jrasnick
-ms.openlocfilehash: d49868199d8f9f2da97f08dd06f29afd8f553bd9
-ms.sourcegitcommit: 17e9cb8d05edaac9addcd6e0f2c230f71573422c
+ms.openlocfilehash: d39beca60264023c8eb7c1bc78cd1ac15c3b45dc
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97586981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104586630"
 ---
 # <a name="connect-to-azure-synapse-studio-using-azure-private-link-hubs"></a>Подключение к Azure синапсе Studio с помощью концентраторов частной связи Azure 
 
@@ -37,7 +37,9 @@ ms.locfileid: "97586981"
 
 :::image type="content" source="./media/synapse-private-link-hubs/synapse-private-links-private-endpoint.png" alt-text="Снимок экрана, на котором показана страница подключений к частным конечным точкам.":::
 
-Выберите тип ресурса Microsoft. синапсе/Привателинкхубс на вкладке "ресурс". :::image type="content" source="./media/synapse-private-link-hubs/synapse-private-links-resource-type.png" alt-text="снимок экрана, на котором показана страница &quot;Создание частной конечной точки&quot; с выделенным типом ресурса.":::
+Не забудьте выбрать тип ресурса Microsoft. синапсе/Привателинкхубс на вкладке "ресурс".
+
+:::image type="content" source="./media/synapse-private-link-hubs/synapse-private-links-resource-type.png" alt-text="Снимок экрана, на котором показана страница &quot;Создание частной конечной точки&quot; с выделенным типом ресурса.":::
 
 На вкладке "Конфигурация" выберите "privatelink.azuresynapse.net" для зон Частная зона DNS при интеграции с виртуальной сетью и частной зоной DNS.
 

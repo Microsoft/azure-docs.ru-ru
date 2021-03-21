@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: conceptual
 ms.date: 11/13/2020
 ms.openlocfilehash: 9bd3c315fcc15317a9fa483289fdc326ca6aa47f
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102614366"
 ---
 # <a name="deploy-the-metadata-extraction-abap-function-module-for-the-sap-r3-family-of-bridges"></a>Разверните модуль извлечения метаданных ABAP для семейства мостов SAP R3.
@@ -128,7 +128,7 @@ ms.locfileid: "102614366"
 
 Функция завершит свое выполнение, и метаданные будут загружаться гораздо быстрее в случае его запуска на компьютере с высокоскоростным сетевым подключением с SAP S/4HANA или ECC Server.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Регистрация и проверка источника SAP ECC](register-scan-sapecc-source.md)
 - [Регистрация и сканирование источника SAP S/4HANA](register-scan-saps4hana-source.md)

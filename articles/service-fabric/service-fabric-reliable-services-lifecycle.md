@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 08/18/2017
 ms.author: masnider
 ms.openlocfilehash: 6ea8fa6933052374721d8d205d5b07386c807ae2
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98784602"
 ---
 # <a name="reliable-services-lifecycle-overview"></a>Жизненный цикл Reliable Services
@@ -62,7 +62,7 @@ ms.locfileid: "98784602"
 Запуск службы с отслеживанием состояния имеет лишь несколько отличий по сравнению со службой без отслеживания состояния. Для запуска службы с отслеживанием состояния порядок событий выглядит следующим образом:
 
 1. Создается служба.
-2. вызывается метод `StatefulServiceBase.OnOpenAsync()`; Этот вызов редко переопределяется в службе.
+2. Вызывается метод `StatefulServiceBase.OnOpenAsync()`. Этот вызов редко переопределяется в службе.
 3. Ниже приведены действия, которые выполняются параллельно.
     - Вызывается метод `StatefulServiceBase.CreateServiceReplicaListeners()`. 
       - Если служба является первичной, открываются все возвращенные прослушиватели. Для каждого прослушивателя вызывается метод `ICommunicationListener.OpenAsync()`.

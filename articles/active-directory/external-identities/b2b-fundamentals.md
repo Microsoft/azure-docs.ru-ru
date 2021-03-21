@@ -13,10 +13,10 @@ ms.reviewer: elisol
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 94fd488ceb7ddb3724dd576c97c9070481e95147
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100365639"
 ---
 # <a name="azure-active-directory-b2b-best-practices"></a>Рекомендации по Azure Active Directory B2B
@@ -40,6 +40,6 @@ ms.locfileid: "100365639"
 | При разработке приложения используйте UserType для определения интерфейса пользователя гостевой системы.  | Если вы разрабатываете приложение и хотите предоставить различные возможности для пользователей и гостевых пользователей, используйте свойство UserType. Утверждение UserType сейчас не включено в токен. Приложения должны использовать API Microsoft Graph, чтобы запросить у пользователя каталог для получения их UserType. |
 | Изменение свойства UserType *только* в случае изменения связи пользователя с Организацией | Хотя PowerShell можно использовать для преобразования свойства UserType для пользователя из члена в Guest (и наоборот), следует изменить это свойство только в том случае, если изменяется связь пользователя с Организацией. См. раздел [Свойства гостевого пользователя B2B](user-properties.md).|
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Управление общим доступом B2B](delegate-invitations.md)

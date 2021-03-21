@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 07/09/2020
 ms.author: tisande
 ms.custom: query-reference
-ms.openlocfilehash: 09b801c48bf2998a2d8926009cae76287c1ac9b6
-ms.sourcegitcommit: fa90cd55e341c8201e3789df4cd8bd6fe7c809a3
+ms.openlocfilehash: aeea2905b6bae094c92bd8b5d46523225c745494
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93342272"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104595652"
 ---
 # <a name="datetimediff-azure-cosmos-db"></a>Датетимедифф (Azure Cosmos DB)
 [!INCLUDE[appliesto-sql-api](includes/appliesto-sql-api.md)]
@@ -33,11 +33,11 @@ DateTimeDiff (<DateTimePart> , <StartDate> , <EndDate>)
 | DateTimePart | сокращения;        |
 | ------------ | -------------------- |
 | Year;         | "Year", "гггг", "гг" |
-| Month        | "month", "mm", "m"   |
+| Месяц        | "month", "mm", "m"   |
 | День          | "Day", "DD", "d"     |
 | Час         | "Hour", "HH"         |
 | Минута       | "Minute", "MI", "n"  |
-| Секунда       | "Second", "SS", "s"  |
+| Second       | "Second", "SS", "s"  |
 | Миллисекунда  | "миллисекунда", "MS"  |
 | Микросекунды  | "микросекунда", "MCS" |
 | Потребовавшееся   | "наносекундных", "NS"   |
@@ -45,17 +45,17 @@ DateTimeDiff (<DateTimePart> , <StartDate> , <EndDate>)
 */SD*  
     Значение даты и времени в формате UTC 8601 строка в формате, `YYYY-MM-DDThh:mm:ss.fffffffZ` где:
   
-  |Формат|Описание|
-  |-|-|
-  |YYYY|год из четырех цифр|
-  |ММ|месяц (2 цифры) (01 = Январь и т. д.)|
-  |DD|четырехзначный день месяца (от 01 до 31)|
-  |T|обозначает начало элементов времени|
-  |hh|час с двумя цифрами (от 00 до 23)|
-  |mm|двузначное число минут (от 00 до 59)|
-  |ss|двузначное число секунд (от 00 до 59)|
-  |. fffffff|семь цифр в долях секунды|
-  |Z|Обозначение времени в формате UTC (Универсальное координированное время)||
+|Формат|Описание|
+|-|-|
+|YYYY|год из четырех цифр|
+|ММ|месяц (2 цифры) (01 = Январь и т. д.)|
+|DD|четырехзначный день месяца (от 01 до 31)|
+|T|обозначает начало элементов времени|
+|hh|час с двумя цифрами (от 00 до 23)|
+|ММ|двузначное число минут (от 00 до 59)|
+|сс|двузначное число секунд (от 00 до 59)|
+|. fffffff|семь цифр в долях секунды|
+|Z|Обозначение времени в формате UTC (Универсальное координированное время)|
   
   Дополнительные сведения о формате ISO 8601 см. в разделе [ISO_8601](https://en.wikipedia.org/wiki/ISO_8601)
 
@@ -119,7 +119,7 @@ SELECT DateTimeDiff("hh", "2020-01-01T01:00:00.1234527Z", "2020-01-01T01:59:59.1
 ]
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Функции даты и времени Azure Cosmos DB](sql-query-date-time-functions.md)
 - [Системные функции Azure Cosmos DB](sql-query-system-functions.md)

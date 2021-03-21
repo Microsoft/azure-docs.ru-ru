@@ -9,12 +9,12 @@ ms.date: 02/26/2020
 ms.author: midesa
 ms.reviewer: jrasnick
 ms.subservice: spark
-ms.openlocfilehash: 4bb323e0e8f72456b6a522ede9a98d193e1c3c7e
-ms.sourcegitcommit: 4b7a53cca4197db8166874831b9f93f716e38e30
+ms.openlocfilehash: 2d6ac02402414f096a46fec0340c3074d8e1784a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102098780"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104586647"
 ---
 # <a name="manage-python-libraries-for-apache-spark-in-azure-synapse-analytics"></a>Управление библиотеками Python для Apache Spark в Azure синапсе Analytics
 
@@ -68,13 +68,13 @@ alabaster==0.7.10
 ```
 name: stats2
 channels:
-  - defaults
+- defaults
 dependencies:
-  - bokeh=0.9.2
-  - numpy=1.9.*
-  - flask
-  - pip:
-    - matplotlib
+- bokeh
+- numpy
+- pip:
+  - matplotlib
+  - koalas==1.7.0
 ```
 Дополнительные сведения о создании среды из этого файла Environment. yml см. в разделе [Создание среды из файла Environment. yml](https://docs.conda.io/projects/conda/latest/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually).
 
@@ -140,6 +140,11 @@ dependencies:
 
 ![Снимок экрана, на котором выделены пакеты рабочей области.](./media/apache-spark-azure-portal-add-libraries/studio-add-workspace-package.png "Просмотр пакетов рабочей области")
 
+>[!WARNING]
+>- В Azure синапсе пул Apache Spark может использовать пользовательские библиотеки, которые либо передаются как пакеты рабочей области, либо передаются в известный Azure Data Lake Storage путь. Однако оба этих варианта нельзя одновременно использовать в одном пуле Apache Spark. Если пакеты предоставляются с помощью обоих методов, будут установлены только файлы колеса, указанные в списке пакетов рабочей области. 
+>
+>- После того как пакеты рабочей области (Предварительная версия) используются для установки пакетов в заданном пуле Apache Spark, существует ограничение на то, что вы больше не можете указывать пакеты, используя путь к учетной записи хранения в том же пуле.  
+
 ### <a name="storage-account"></a>Учетная запись хранения
 Пользовательские пакеты Wheel можно установить в пул Apache Spark, отгружая все файлы колеса в учетную запись Azure Data Lake Storage (Gen2), связанную с рабочей областью синапсе. 
 
@@ -149,13 +154,12 @@ dependencies:
 abfss://<file_system>@<account_name>.dfs.core.windows.net/synapse/workspaces/<workspace_name>/sparkpools/<pool_name>/libraries/python/
 ```
 
-Может потребоваться добавить ```python``` папку в ```libraries``` папку, если она еще не существует.
+>[!WARNING]
+> В некоторых случаях может потребоваться создать путь к файлу на основе приведенной выше структуры, если она еще не существует. Например, может потребоваться добавить ```python``` папку в ```libraries``` папку, если она еще не существует.
 
 > [!IMPORTANT]
 > Чтобы установить пользовательские библиотеки с помощью метода хранилища Azure Data Lake, необходимо иметь разрешения на доступ к **данным BLOB-объектов хранилища** или **владельцу данных BLOB-объекта хранилища** в первичной учетной записи хранения Gen2, связанной с рабочей областью Azure синапсе Analytics.
 
->[!WARNING]
-> При предоставлении пользовательских файлов колес пользователи не могут предоставлять файлы колеса как в учетной записи хранения, так и в интерфейсе библиотеки рабочей области. Если указаны оба значения, будут установлены только файлы колеса, указанные в списке пакетов рабочей области. 
 
 ## <a name="session-scoped-packages-preview"></a>Пакеты с областью действия сеанса (Предварительная версия)
 Помимо пакетов уровня пула, можно также указать библиотеки с областью действия сеанса в начале сеанса записной книжки.  Библиотеки с областью действия сеанса позволяют задавать и использовать пользовательские среды Python в сеансе записной книжки. 

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 08/07/2020
 ms.reviewer: sngun
 ms.openlocfilehash: a8e968d05a1f844a79d2e42d10c323ed4c392424
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102521226"
 ---
 # <a name="azure-cosmos-db-attachments"></a>Azure Cosmos DB вложения

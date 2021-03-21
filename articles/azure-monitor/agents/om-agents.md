@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 07/24/2020
 ms.openlocfilehash: 99a8e331e265e686d1de06f8143d2345e51143f1
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102613006"
 ---
 # <a name="connect-operations-manager-to-azure-monitor"></a>Подключение Operations Manager к Azure Monitor
@@ -52,7 +52,7 @@ ms.locfileid: "102613006"
     - южная часть Соединенного Королевства
     - Центральная Индия
     - Центральная Канада
-    - Западная часть США 2
+    - Западная часть США 2
 
 >[!NOTE]
 >Последние изменения в интерфейсах API Azure не позволят клиентам успешно настраивать интеграцию между группой управления и Azure Monitor в первый раз. Если вы уже интегрировали свою группу управления со службой, на вас это не воздействует, пока вам не потребуется перенастроить существующее подключение.  
@@ -345,6 +345,6 @@ union *
 * В исходном носителе в папке `\ManagementPacks` для System Center Operations Manager 2016 и более поздних версий.
 * От последнего накопительного пакета обновления, примененного к вашей группе управления. Для Operations Manager 2012, исходная папка —, `%ProgramFiles%\Microsoft System Center 2012\Operations Manager\Server\Management Packs for Update Rollups` а для 2012 R2 она находится в папке `System Center 2012 R2\Operations Manager\Server\Management Packs for Update Rollups` .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о добавлении функций и сборе данных см. в разделе [добавление Azure Monitor решений из коллекция решений](../insights/solutions.md).

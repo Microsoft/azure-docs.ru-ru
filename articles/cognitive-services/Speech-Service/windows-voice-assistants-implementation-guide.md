@@ -12,10 +12,10 @@ ms.date: 04/15/2020
 ms.author: travisw
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 92ab043d4fccbe0764e361eac6f71ef69a5963cb
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98939866"
 ---
 # <a name="implementing-voice-assistants-on-windows"></a>Реализация речевых помощников в Windows
@@ -78,7 +78,7 @@ private static async Task<ActivationSignalDetector> GetFirstEligibleDetectorAsyn
 
 ### <a name="listen-to-the-two-activation-signals-the-onbackgroundactivated-and-onsignaldetected"></a>Прослушивать два сигнала активации: Онбаккграундактиватед и Онсигналдетектед
 
-Windows подаст приложению сигнал при обнаружении ключевого слова одним из двух способов. Если приложение неактивно (т. е. у вас нет ссылки на неликвидированный экземпляр `ConversationalAgentSession` ), оно запустит приложение и вызовет метод онбаккграундактиватед в файле App.XAML.CS приложения. Если поле "аргументы события" `BackgroundActivatedEventArgs.TaskInstance.Task.Name` совпадает со строкой "ажентбаккграундтригжер", запуск приложения был инициирован с помощью активации голоса. Приложению необходимо переопределить этот метод и получить экземпляр Конверсатионалажентсессион, чтобы сообщить о том, что Windows теперь активна. Когда приложение активно, Windows будет сообщать о возникновении активации голоса с помощью `ConversationalAgentSession.OnSignalDetected` события. Добавьте обработчик событий для этого события, как только вы получите `ConversationalAgentSession` .
+Windows подаст приложению сигнал при обнаружении ключевого слова одним из двух способов. Если приложение неактивно (т. е. у вас нет ссылки на неликвидированный экземпляр `ConversationalAgentSession` ), оно запустит приложение и вызовет метод онбаккграундактиватед в файле App. XAML. CS приложения. Если поле "аргументы события" `BackgroundActivatedEventArgs.TaskInstance.Task.Name` совпадает со строкой "ажентбаккграундтригжер", запуск приложения был инициирован с помощью активации голоса. Приложению необходимо переопределить этот метод и получить экземпляр Конверсатионалажентсессион, чтобы сообщить о том, что Windows теперь активна. Когда приложение активно, Windows будет сообщать о возникновении активации голоса с помощью `ConversationalAgentSession.OnSignalDetected` события. Добавьте обработчик событий для этого события, как только вы получите `ConversationalAgentSession` .
 
 ## <a name="keyword-verification"></a>Проверка ключевого слова
 
@@ -122,9 +122,9 @@ await appView.TryEnterViewModeAsync(ApplicationViewMode.Default);
 
 ### <a name="transitioning-above-lock"></a>Переход над блокировкой
 
-Активация выше блокировки аналогична активации ниже блокировки. Если нет активных экземпляров приложения, новый экземпляр будет запущен в фоновом режиме и `OnBackgroundActivated` будет вызван в App.XAML.cs. Если экземпляр приложения существует, этот экземпляр получит уведомление через `ConversationalAgentSession.SignalDetected` событие.
+Активация выше блокировки аналогична активации ниже блокировки. Если нет активных экземпляров приложения, будет запущен новый экземпляр в фоновом режиме, а `OnBackgroundActivated` в App. XAML. cs будет вызван. Если экземпляр приложения существует, этот экземпляр получит уведомление через `ConversationalAgentSession.SignalDetected` событие.
 
-Если приложение еще не показывает блокировку, оно должно вызвать `ConversationalAgentSession.RequestForegroundActivationAsync` . Это активирует `OnLaunched` метод в App.XAML.cs, который должен перейти к представлению, которое будет показано выше блокировки.
+Если приложение еще не показывает блокировку, оно должно вызвать `ConversationalAgentSession.RequestForegroundActivationAsync` . Это активирует `OnLaunched` метод в App. XAML. cs, который должен перейти к представлению, которое будет отображаться над блокировкой.
 
 ### <a name="detecting-lock-screen-transitions"></a>Обнаружение переходов экрана блокировки
 

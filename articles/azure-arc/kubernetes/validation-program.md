@@ -9,13 +9,13 @@ ms.author: shasb
 description: Описывает программу проверки дуги для дистрибутивов Kubernetes
 keywords: Kubernetes, Arc, Azure, K8s, проверка
 ms.openlocfilehash: 819df906add6275997e01fab310fe8dd57a87b51
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102121377"
 ---
-# <a name="azure-arc-validation-program"></a>Программа проверки дуги Azure
+# <a name="azure-arc-validation-program"></a>Программа проверки Azure Arc
 
 Kubernetes с поддержкой Azure Arc работает со всеми кластерами Kubernetes, сертифицированными для Cloud Native Computing Foundation. Группа по работе с Azure Arc также работала с основными отраслевыми поставщиками Kubernetes, которые позволяют проверять, включена Kubernetesя ARC в Azure с дистрибутивами Kubernetes. Будущие основные и дополнительные версии дистрибутивов Kubernetes, выпущенные этими поставщиками, будут проверены на совместимость с Kubernetes с поддержкой ARC.
 
@@ -61,6 +61,6 @@ Kubernetes с поддержкой Azure Arc работает со всеми к
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Узнайте, как подключить кластер к службе "Дуга Azure".
+Узнайте, как подключить кластер к Azure Arc.
 > [!div class="nextstepaction"]
 > [Подключение кластера к Azure Arc](./quickstart-connect-cluster.md)

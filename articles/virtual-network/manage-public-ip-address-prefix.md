@@ -14,17 +14,17 @@ ms.workload: infrastructure-services
 ms.date: 05/13/2019
 ms.author: allensu
 ms.openlocfilehash: 2e32faad698fbf316d51123cc8b7845a3b262c7f
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98938650"
 ---
 # <a name="create-change-or-delete-a-public-ip-address-prefix"></a>Создание, изменение и удаление префикса общедоступного IP-адреса
 
 Общие сведения о префиксе общедоступного IP-адреса, а также о его создании, изменении и удалении. Префикс общедоступного IP-адреса — это непрерывный диапазон адресов на основе указанного количества общедоступных IP-адресов. Адреса назначаются для вашей подписки. При создании ресурса общедоступного IP-адреса можно присвоить префиксу статический общедоступный адрес и связать его с виртуальными машинами, подсистемами балансировки нагрузки или другими ресурсами, чтобы обеспечить подключение к Интернету. Если вы не знакомы с префиксами общедоступных IP-адресов, см. раздел [Обзор префикс общедоступного IP-адреса](public-ip-address-prefix.md)
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
@@ -51,12 +51,12 @@ ms.locfileid: "98938650"
    |Подписка|Да|Ресурс в пределах одной и той же [подписки](../azure-glossary-cloud-terminology.md?toc=%2fazure%2fvirtual-network%2ftoc.json#subscription), с которым будет связан общедоступный IP-адрес.|
    |Группа ресурсов|Да|Ресурс в пределах одной или разных [групп ресурсов](../azure-glossary-cloud-terminology.md?toc=%2fazure%2fvirtual-network%2ftoc.json#resource-group), с которым будет связан общедоступный IP-адрес.|
    |name|Да|Имя должно быть уникальным в пределах выбранной группы ресурсов.|
-   |Region|Да|Должен существовать в том же [регионе](https://azure.microsoft.com/regions), что и общедоступные IP-адреса, которым вы будете назначать адреса из диапазона.|
+   |Регион|Да|Должен существовать в том же [регионе](https://azure.microsoft.com/regions), что и общедоступные IP-адреса, которым вы будете назначать адреса из диапазона.|
    |Размер префикса|Да| Нужный размер префикса. По умолчанию это /28 или 16 IP-адресов.
 
 **Команды**
 
-|Средство|Команда|
+|Инструмент|Команда|
 |---|---|
 |CLI|[az network public-ip prefix create](/cli/azure/network/public-ip/prefix#az-network-public-ip-prefix-create)|
 |PowerShell|[New-АзпублиЦиппрефикс](/powershell/module/az.network/new-azpublicipprefix)|
@@ -80,7 +80,7 @@ ms.locfileid: "98938650"
 
 Кроме того, для создания ресурса общедоступного IP-адреса можно использовать приведенные ниже команды CLI и PS с параметрами--public-IP-prefix (CLI) и-ПублиЦиппрефикс (PS). 
 
-|Средство|Команда|
+|Инструмент|Команда|
 |---|---|
 |CLI|[az network public-ip create](/cli/azure/network/public-ip#az-network-public-ip-create)|
 |PowerShell|[New-AzPublicIpAddress](/powershell/module/az.network/new-azpublicipaddress)|
@@ -95,7 +95,7 @@ ms.locfileid: "98938650"
 
 **Команды**
 
-|Средство|Команда|
+|Инструмент|Команда|
 |---|---|
 |CLI|Команда [az network public-ip prefix list](/cli/azure/network/public-ip/prefix#az-network-public-ip-prefix-list) выводит список общедоступных IP-адресов, [az network public-ip prefix show](/cli/azure/network/public-ip/prefix#az-network-public-ip-prefix-show) — отображает параметры, [az network public-ip prefix update](/cli/azure/network/public-ip/prefix#az-network-public-ip-prefix-update) — обновляет, а [az network public-ip prefix delete](/cli/azure/network/public-ip/prefix#az-network-public-ip-prefix-delete) — удаляет|
 |PowerShell|[Get-азпублиЦиппрефикс](/powershell/module/az.network/get-azpublicipprefix) для получения объекта общедоступного IP-адреса и просмотра его параметров, [Set-азпублиЦиппрефикс](/powershell/module/az.network/set-azpublicipprefix) для обновления параметров; [Remove-азпублиЦиппрефикс](/powershell/module/az.network/remove-azpublicipprefix) to delete|
@@ -104,7 +104,7 @@ ms.locfileid: "98938650"
 
 Для выполнения задач с префиксами общедоступных IP-адресов учетной записи должна быть назначена роль [Участник сетей](../role-based-access-control/built-in-roles.md?toc=%2fazure%2fvirtual-network%2ftoc.json#network-contributor) или [пользовательская](../role-based-access-control/custom-roles.md?toc=%2fazure%2fvirtual-network%2ftoc.json) роль, которой назначены соответствующие разрешения, перечисленные в таблице ниже.
 
-| Действие                                                            | ИМЯ                                                           |
+| Действие                                                            | Имя                                                           |
 | ---------                                                         | -------------                                                  |
 | Microsoft.Network/publicIPPrefixes/read                           | Чтение префикса общедоступного IP-адреса                                |
 | Microsoft.Network/publicIPPrefixes/write                          | Создание или обновление префикса общедоступного IP-адреса                    |

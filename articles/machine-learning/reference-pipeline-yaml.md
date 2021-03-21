@@ -12,10 +12,10 @@ author: NilsPohlmann
 ms.date: 07/31/2020
 ms.custom: devx-track-python
 ms.openlocfilehash: e2b5a3322f633ca8301357c2186d78d3ac437ae2
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102521974"
 ---
 # <a name="define-machine-learning-pipelines-in-yaml"></a>Определение конвейеров машинного обучения в YAML
@@ -26,9 +26,9 @@ ms.locfileid: "102521974"
 
 | Тип шага | Поддержка |
 | ----- | :-----: |
-| писонскриптстеп | Да |
-| параллелрунстеп | Да |
-| адластеп | Да |
+| PythonScriptStep | Да |
+| ParallelRunStep | Да |
+| AdlaStep | Да |
 | азуребатчстеп | Да |
 | датабрикксстеп | Да |
 | дататрансферстеп | Да |
@@ -550,6 +550,6 @@ Schedule:
     path_on_datastore: ~ 
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как [использовать расширение CLI для машинное обучение Azure](reference-azure-machine-learning-cli.md).

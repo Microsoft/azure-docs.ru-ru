@@ -4,10 +4,10 @@ description: Описывает, как отправить пользовате�
 ms.date: 09/30/2020
 ms.topic: how-to
 ms.openlocfilehash: 3e2f38b0cab87eab27181ddef79d0c02bd8c9bdb
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98787169"
 ---
 # <a name="upload-a-custom-image-to-shared-image-gallery"></a>Отправка пользовательского образа в Общую коллекцию образов

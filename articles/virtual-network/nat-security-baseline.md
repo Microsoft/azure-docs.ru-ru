@@ -8,10 +8,10 @@ ms.date: 11/20/2020
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
 ms.openlocfilehash: 501d5b17358501f17d17e8884ceec0bcbbb2ab1c
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102612411"
 ---
 # <a name="azure-security-baseline-for-virtual-network-nat"></a>Базовый уровень безопасности Azure для NAT виртуальной сети
@@ -34,7 +34,7 @@ ms.locfileid: "102612411"
 
 Используйте центр безопасности Azure и следуйте рекомендациям по защите сети, чтобы помочь защитить сетевые ресурсы Azure. Включите журналы потоков для групп безопасности сети и отправьте журналы в учетную запись хранения Azure для аудита. Кроме того, можно отправить журналы потоков в рабочую область Log Analytics, а затем использовать Аналитика трафика для получения сведений о шаблонах трафика в облаке Azure. Некоторые преимущества Аналитика трафика — возможность визуализировать сетевые активности, выявлять горячие участки и угрозы безопасности, анализировать шаблоны потоков трафика и указывать несетевые настройки. 
 
-- [Общие сведения о NAT для виртуальной сети](./nat-overview.md)
+- [Общие сведения о NAT виртуальных сетей](./nat-overview.md)
 
 - [Ресурс шлюза NAT](./nat-gateway-resource.md)
 
