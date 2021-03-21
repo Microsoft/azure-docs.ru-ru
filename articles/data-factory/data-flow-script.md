@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 02/15/2021
 ms.openlocfilehash: 7dd58a7d4a94b832e52930f8ac6507cdd8f7a20e
-ms.sourcegitcommit: b513b0becf878eb9a1554c26da53aa48d580bb22
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100534827"
 ---
 # <a name="data-flow-script-dfs"></a>Сценарий потока данных (DFS)
@@ -271,6 +271,6 @@ window(over(stocksymbol),
     FifteenDayMovingAvg = round(avg(Close),2)) ~> Window1
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Проанализируйте потоки данных, начав с помощью [статьи общие сведения о потоках данных](concepts-data-flow-overview.md)

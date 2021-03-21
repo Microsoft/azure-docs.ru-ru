@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.date: 02/10/2021
 ms.author: genli
 ms.openlocfilehash: 582077c46f5fc7176b457cf0d392af48fbe7d40b
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100369345"
 ---
 # <a name="troubleshooting-azure-site-to-site-vpn-disconnects-intermittently"></a>Устранение проблемы периодических разрывов подключений VPN типа "сеть — сеть" Azure
@@ -64,7 +64,7 @@ ms.locfileid: "100369345"
 
 Функция **полной безопасности пересылки** (PFS) может вызвать проблемы отключения. Если для VPN-устройства **включена полная PFS,** отключите ее. Затем [Обновите политику IPSec шлюза виртуальной сети](vpn-gateway-ipsecikepolicy-rm-powershell.md#managepolicy).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Создание подключения типа "сеть — сеть" на портале Azure](./tutorial-site-to-site-portal.md)
 - [Настройка политики IPsec/IKE для VPN-подключений типа "сеть — сеть"](vpn-gateway-ipsecikepolicy-rm-powershell.md)

@@ -9,10 +9,10 @@ ms.date: 03/02/2021
 ms.author: rogarana
 ms.custom: include file
 ms.openlocfilehash: 52b9bee1d43c0f136889a6a54277d4bb45dd4a45
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101750483"
 ---
 Вы можете управлять шифрованием на уровне каждого управляемого диска с помощью собственных ключей. Шифрование на стороне сервера для управляемых дисков с ключами, управляемыми клиентом, предлагает интегрированную работу с Azure Key Vault. Вы можете либо импортировать [свои ключи RSA](../articles/key-vault/keys/hsm-protected-keys.md) в Key Vault, либо создать новые ключи RSA в Azure Key Vault. 

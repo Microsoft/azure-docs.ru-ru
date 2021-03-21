@@ -7,10 +7,10 @@ ms.date: 02/23/2021
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: 4b34fb0d3bb2d49255007b9722a0a636c1441b8c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101746282"
 ---
 # <a name="using-the-msixmgr-tool"></a>Использование средства МСИКСМГР
@@ -48,7 +48,7 @@ ms.locfileid: "101746282"
     msixmgr.exe -Unpack -packagePath <path to package> -destination <output folder> [-applyacls] [-create] [-vhdSize <size in MB>] [-filetype <CIM | VHD | VHDX>] [-rootDirectory <rootDirectory>]
     ```
 
-    Не забудьте заменить значения заполнителей соответствующими значениями. Пример.
+    Не забудьте заменить значения заполнителей соответствующими значениями. Пример:
 
     ```cmd
     msixmgr.exe -Unpack -packagePath "C:\Users\%username%\Desktop\packageName_3.51.1.0_x64__81q6ced8g4aa0.msix" -destination "c:\temp\packageName.vhdx" -applyacls -create -vhdSize 200 -filetype "vhdx" -rootDirectory apps

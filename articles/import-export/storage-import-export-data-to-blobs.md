@@ -10,10 +10,10 @@ ms.author: alkohli
 ms.subservice: common
 ms.custom: devx-track-azurepowershell, devx-track-azurecli, contperf-fy21q3
 ms.openlocfilehash: 74f5565ba9dfa48dabfe56c25e3ef30a8caafe14
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103563289"
 ---
 # <a name="use-the-azure-importexport-service-to-import-data-to-azure-blob-storage"></a>Использование службы "Импорт и экспорт Azure" для импорта данных в хранилище BLOB-объектов Azure
@@ -154,7 +154,7 @@ ms.locfileid: "103563289"
 
    1. Просмотрите **условия**, а затем выберите «я подтверждаю, что все предоставленные сведения верны и согласны с условиями». Затем выполняется проверка.
    1. Просмотрите сведения о задании, предоставленные в сводке. Запишите имя задания и адрес центра обработки данных Azure для отправки дисков обратно в Azure. Эта информация указывается позже на транспортной этикетке.
-   1. Нажмите кнопку **Создать**.
+   1. Нажмите кнопку **создания**.
 
      ![Создание задания импорта — шаг 4](./media/storage-import-export-data-to-blobs/import-to-blob-6.png)
 
@@ -349,7 +349,7 @@ Install-Module -Name Az.ImportExport
 
 Отслеживание задания до завершения. После завершения задания убедитесь, что данные переданы в Azure. Удалите локальные данные только после подтверждения, что загрузка прошла успешно.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Просмотр состояния задания и диска](storage-import-export-view-drive-status.md)
 * [Сведения о требованиях службы "Импорт и экспорт"](storage-import-export-requirements.md)

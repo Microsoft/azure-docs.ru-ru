@@ -8,10 +8,10 @@ author: keferna
 ms.author: keferna
 ms.date: 03/01/2021
 ms.openlocfilehash: c1d4c9be1f76e62be3c17d4dec22479db003b77a
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102608263"
 ---
 # <a name="pre-certification-checklist-for-iot-edge-modules"></a>Контрольный список предварительной сертификации для модулей IoT Edge
@@ -76,7 +76,7 @@ ms.locfileid: "102608263"
 - Имеется Условия использования
 - Добавление поддерживаемой ссылки на устройство IoT Edge из [каталога устройств Azure IOT](https://devicecatalog.azure.com/devices?certificationBadgeTypes=IoTEdgeCompatible) 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Развертывание модулей из коммерческого рынка](https://docs.microsoft.com/azure/iot-edge/how-to-deploy-modules-portal#deploy-from-azure-marketplace)
 - [Публикация модуля ребра в центре партнеров](https://docs.microsoft.com/azure/marketplace/partner-center-portal/azure-iot-edge-module-creation)

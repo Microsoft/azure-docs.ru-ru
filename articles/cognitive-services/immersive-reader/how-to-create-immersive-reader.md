@@ -11,10 +11,10 @@ ms.topic: how-to
 ms.date: 07/22/2019
 ms.author: rwaller
 ms.openlocfilehash: d7a8a598ab2d0c873cf07510cf40a08c22c0f1d4
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102608603"
 ---
 # <a name="create-an-immersive-reader-resource-and-configure-azure-active-directory-authentication"></a>Создание иммерсивного ресурса чтения и Настройка проверки подлинности Azure Active Directory

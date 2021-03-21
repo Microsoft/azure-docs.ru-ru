@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 04/15/2020
 ms.author: cshoe
 ms.openlocfilehash: 2dbf7c31e6b0b40fa9dc2d59e86c0ecc731657e1
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102172415"
 ---
 # <a name="azure-functions-deployment-slots"></a>Слоты развертывания функций Azure
@@ -114,7 +114,7 @@ ms.locfileid: "102172415"
 
     :::image type="content" source="./media/functions-deployment-slots/functions-save-deployment-slot-setting.png" alt-text="Сохраните параметр слота развертывания." border="true":::
 
-## <a name="deployment"></a>Развертывание
+## <a name="deployment"></a>Deployment (Развертывание)
 
 При создании слота слоты пусты. Для развертывания приложения в слот можно использовать любую из [поддерживаемых технологий развертывания](./functions-deployment-technologies.md) .
 
@@ -166,7 +166,7 @@ ms.locfileid: "102172415"
 
     :::image type="content" source="./media/functions-deployment-slots/functions-navigate-slots.png" alt-text="Поиск слотов в портал Azure." border="true":::
 
-1. Выберите команду **Удалить**.
+1. Нажмите кнопку **Удалить**.
 
     :::image type="content" source="./media/functions-deployment-slots/functions-delete-deployment-slot.png" alt-text="Снимок экрана, на котором показана страница &quot;Обзор&quot; с выбранным действием &quot;Удалить&quot;." border="true":::
 

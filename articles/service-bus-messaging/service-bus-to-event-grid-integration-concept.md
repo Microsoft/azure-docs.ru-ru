@@ -8,10 +8,10 @@ ms.date: 02/11/2021
 ms.author: spelluru
 ms.custom: devx-track-azurecli, devx-track-azurepowershell
 ms.openlocfilehash: 658107bb74396891c8e6e05a9e8074a9416a5f6f
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100369668"
 ---
 # <a name="azure-service-bus-to-event-grid-integration-overview"></a>Общие сведения об интеграции служебной шины Azure со службой "Сетка событий"
@@ -40,7 +40,7 @@ ms.locfileid: "100369668"
     
     az eventgrid event-subscription create --resource-id $namespaceid --name "<YOUR EVENT GRID SUBSCRIPTION NAME>" --endpoint "<your_endpoint_url>" --subject-ends-with "<YOUR SERVICE BUS SUBSCRIPTION NAME>"
     ```
-- PowerShell. Ниже приведен пример:
+- PowerShell. Приведем пример:
     ```powershell-interactive
     $namespaceID = (Get-AzServiceBusNamespace -ResourceGroupName "<YOUR RESOURCE GROUP NAME>" -NamespaceName "<YOUR NAMESPACE NAME>").Id
     
@@ -56,7 +56,7 @@ ms.locfileid: "100369668"
 
 Если нужно получать события, например только из одной очереди или одной подписки в пространстве имен, используйте в службе "Сетка событий" фильтры *Начинается с* или *Оканчивается на*. В некоторых интерфейсах фильтры называются *префиксами* и фильтрами *суффиксов* . Если требуется получить события для нескольких, но не всех очередей и подписок, создайте несколько подписок на службу "Сетка событий" и укажите для каждой из них фильтр.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Ознакомьтесь со следующими руководствами: 
 - [Azure Logic Apps для управления сообщениями служебной шины, полученными через службу "Сетка событий"](service-bus-to-event-grid-integration-example.md#receive-messages-by-using-logic-apps)
 - [Функции Azure для работы с сообщениями служебной шины, полученными через службу "Сетка событий"](service-bus-to-event-grid-integration-function.md#connect-the-function-and-namespace-via-event-grid)

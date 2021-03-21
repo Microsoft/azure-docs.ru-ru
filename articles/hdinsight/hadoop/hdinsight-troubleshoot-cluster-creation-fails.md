@@ -6,10 +6,10 @@ ms.custom: hdinsightactive
 ms.topic: troubleshooting
 ms.date: 04/14/2020
 ms.openlocfilehash: f909f5714a049f63032c8a23ca1731777a40d332
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101702867"
 ---
 # <a name="troubleshoot-cluster-creation-failures-with-azure-hdinsight"></a>Устранение сбоев при создании кластера с помощью Azure HDInsight

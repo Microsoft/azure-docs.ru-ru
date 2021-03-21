@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 06/29/2020
 ms.author: metang
 ms.openlocfilehash: bb90cb3a86acb6a94fa92c33d78ec596659e105f
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102608705"
 ---
 # <a name="how-to-configure-translation"></a>Настройка перевода

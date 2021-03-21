@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 03/15/2021
 ms.author: v-erkel
 ms.openlocfilehash: bba6745a4cc0be30648e23501f9a9e2f0cc6c8db
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103563256"
 ---
 # <a name="add-storage-targets"></a>Добавление целевых объектов хранилища
@@ -264,7 +264,7 @@ az hpc-cache blob-storage-target add --resource-group "hpc-cache-group" \
   * ``nfs-export`` — Экспорт системы хранения, связываемый с путем, ориентированным на клиента
   * ``target-path`` (необязательно) — подкаталог экспорта (при необходимости).
 
-  Пример: ``--junction namespace-path="/nas-1" nfs-export="/datadisk1" target-path="/test"``
+  Например, ``--junction namespace-path="/nas-1" nfs-export="/datadisk1" target-path="/test"``.
 
   Дополнительные сведения о функции виртуального пространства имен см. в статье [Настройка агрегированного пространства имен](hpc-cache-namespace.md) .
 
@@ -316,7 +316,7 @@ ADLS — целевые объекты хранилища NFS использую
 >
 > Последние сведения см. в статье [Поддержка протокола NFS 3,0](../storage/blobs/network-file-system-protocol-support.md) .
 
-Целевые объекты хранилища ADLS-NFS имеют некоторые сходства с целевыми объектами хранилища BLOB-объектов, а некоторые — с целевыми объектами хранилища NFS. Пример.
+Целевые объекты хранилища ADLS-NFS имеют некоторые сходства с целевыми объектами хранилища BLOB-объектов, а некоторые — с целевыми объектами хранилища NFS. Пример:
 
 * Как и целевое хранилище BLOB-объектов, необходимо предоставить Azure HPC кэширование для [доступа к вашей учетной записи хранения](#add-the-access-control-roles-to-your-account).
 * Как и целевое хранилище NFS, необходимо задать [модель использования](#choose-a-usage-model)кэша.

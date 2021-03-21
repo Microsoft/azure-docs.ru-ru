@@ -14,10 +14,10 @@ ms.date: 11/25/2014
 ms.author: gwallace
 ms.custom: devx-track-java
 ms.openlocfilehash: fdaa2eeef58599cbff8dbf7daa34f9a30f31b9cb
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100548766"
 ---
 # <a name="how-to-make-a-phone-call-using-twilio-in-a-java-application-on-azure"></a>Осуществление телефонных звонков с использованием Twilio в Java-приложении Azure
@@ -181,8 +181,8 @@ catch (Exception e)
 
 Завершив подготовку к развертыванию в Azure, выполните повторную компиляцию для развертывания в облаке, далее выполните развертывание в Azure и запустите http://*your_hosted_name*.cloudapp.net/TwilioCloud/callform.jsp в браузере (замените атрибут *именем_вашего_размещенного_приложения*).
 
-## <a name="next-steps"></a>Дальнейшие шаги
-В этом коде демонстрируются базовые функциональные возможности службы Twilio в Java в Azure. Возможно, перед развертыванием в рабочей среде Azure потребуется добавить в него дополнительные обработчики ошибок и другие функции. Например:
+## <a name="next-steps"></a>Дальнейшие действия
+В этом коде демонстрируются базовые функциональные возможности службы Twilio в Java в Azure. Возможно, перед развертыванием в рабочей среде Azure потребуется добавить в него дополнительные обработчики ошибок и другие функции. Пример:
 
 * Вместо использования веб-формы для хранения телефонных номеров и текста вызова можно применить большие двоичные объекты хранилища Azure или SQL Database. Дополнительные сведения об использовании больших двоичных объектов службы хранилища Azure в Java см. в разделе [Как использовать службу хранилища BLOB-объектов из Java][howto_blob_storage_java]. 
 * Вы можете использовать **RoleEnvironment.getConfigurationSettings** для получения идентификатора учетной записи Twilio и маркера проверки подлинности из параметров конфигурации вашего развертывания вместо того, чтобы жестко программировать значения в файле makecall.jsp. Сведения о классе **RoleEnvironment** см. в разделе [Использование библиотеки среды выполнения службы Azure в JSP][azure_runtime_jsp].
@@ -191,7 +191,7 @@ catch (Exception e)
 
 Дополнительные сведения о Twilio см. в разделе [https://www.twilio.com/docs][twilio_docs] .
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 * [Использование Twilio для поддержки голосовых возможностей и SMS в Java][howto_twilio_voice_sms_java]
 
 [twilio_pricing]: https://www.twilio.com/pricing

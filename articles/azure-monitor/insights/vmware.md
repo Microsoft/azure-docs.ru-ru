@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 05/04/2018
 ms.openlocfilehash: 9ade5a51e2251669daee6fbaca9aa4c50f7e9bfc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101704367"
 ---
 # <a name="vmware-monitoring-deprecated-solution-in-azure-monitor"></a>Мониторинг VMware (не рекомендуется) решение в Azure Monitor
@@ -49,14 +49,14 @@ vSphere ESXi Host версий 5.5, 6.0 и 6.5
     ![vspherefwproperties](./media/vmware/vsphere3.png)  
 1. Проверьте консоль vSphere, чтобы удостовериться в правильной настройке системного журнала. Подтвердите на узле ESXI, что этот порт **1514** настроен.
 1. Скачайте и установите агент Log Analytics для Linux на сервере Linux. Дополнительные сведения см. в [документации по агенту Log Analytics для Linux](https://github.com/Microsoft/OMS-Agent-for-Linux).
-1. Установив агент Log Analytics для Linux, перейдите в каталог /etc/opt/microsoft/omsagent/sysconf/omsagent.d и скопируйте файл vmware_esxi.conf в каталог /etc/opt/microsoft/omsagent/conf/omsagent.d. Измените владельца или группу и разрешения для файла. Пример.
+1. Установив агент Log Analytics для Linux, перейдите в каталог /etc/opt/microsoft/omsagent/sysconf/omsagent.d и скопируйте файл vmware_esxi.conf в каталог /etc/opt/microsoft/omsagent/conf/omsagent.d. Измените владельца или группу и разрешения для файла. Пример:
 
     ```
     sudo cp /etc/opt/microsoft/omsagent/sysconf/omsagent.d/vmware_esxi.conf /etc/opt/microsoft/omsagent/conf/omsagent.d
    sudo chown omsagent:omiusers /etc/opt/microsoft/omsagent/conf/omsagent.d/vmware_esxi.conf
     ```
 1. Перезапустите агент Log Analytics для Linux, выполнив `sudo /opt/microsoft/omsagent/bin/service_control restart`.
-1. Проверьте подключение между сервером Linux и узлом ESXi, выполнив команду `nc` на узле ESXi. Пример.
+1. Проверьте подключение между сервером Linux и узлом ESXi, выполнив команду `nc` на узле ESXi. Пример:
 
     ```
     [root@ESXiHost:~] nc -z 123.456.789.101 1514

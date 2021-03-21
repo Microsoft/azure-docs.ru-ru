@@ -4,10 +4,10 @@ description: Узнайте, как обнаруживать единицы эк
 ms.topic: how-to
 ms.date: 02/17/2021
 ms.openlocfilehash: 076e84473a7d067712625dd12a2d5cae42bfa91a
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100548171"
 ---
 # <a name="manage-baremetal-instances-through-the-azure-portal"></a>Управление экземплярами BareMetal на портале Azure
@@ -40,21 +40,21 @@ ms.locfileid: "100548171"
 
 ### <a name="azure-cli"></a>[Azure CLI](#tab/azure-cli)
 
-Начало использования Azure CLI:
+Чтобы начать работу с Azure CLI:
 
 [!INCLUDE [azure-cli-prepare-your-environment-no-header.md](../../../../includes/azure-cli-prepare-your-environment-no-header.md)]
 
-Войдите в подписку Azure, которая используется для развертывания экземпляра BareMetal, с помощью Azure CLI. Зарегистрируйте `BareMetalInfrastructure` поставщик ресурсов с помощью команды [AZ Provider Register](/cli/azure/provider#az_provider_register) :
+Войдите в подписку Azure, которая используется для развертывания экземпляра BareMetal, с помощью Azure CLI. Зарегистрируйте поставщик ресурсов `BareMetalInfrastructure` с помощью команды [az provider register](/cli/azure/provider#az_provider_register):
 
 ```azurecli
 az provider register --namespace Microsoft.BareMetalInfrastructure
 ```
 
-Для просмотра всех доступных поставщиков можно использовать команду [AZ Provider List](/cli/azure/provider#az_provider_list) .
+Для просмотра всех доступных поставщиков можно использовать команду [az provider list](/cli/azure/provider#az_provider_list).
 
 ---
 
-Дополнительные сведения о поставщиках ресурсов см. в статье [поставщики и типы ресурсов Azure](../../../azure-resource-manager/management/resource-providers-and-types.md).
+Дополнительные сведения о поставщиках ресурсов см. в статье [Поставщики и типы ресурсов Azure](../../../azure-resource-manager/management/resource-providers-and-types.md).
 
 ## <a name="baremetal-instance-units-in-the-azure-portal"></a>Единицы экземпляра BareMetal в портал Azure
  
@@ -237,6 +237,6 @@ az baremetalinstance restart --resource-group DSM05a-T550 --instance-name orclla
  
 Для подтверждения вашего запроса специалистом службы поддержки требуется до пяти рабочих дней.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вы хотите узнать больше о рабочих нагрузках, см. раздел [типы рабочих нагрузок BareMetal](../../../virtual-machines/workloads/sap/get-started.md).

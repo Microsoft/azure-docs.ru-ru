@@ -8,10 +8,10 @@ author: emuench
 ms.author: krsh
 ms.date: 03/10/2021
 ms.openlocfilehash: 94d21cb82290e59ebb003969a566c1bfc877713e
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103200448"
 ---
 # <a name="how-to-create-a-virtual-machine-using-an-approved-base"></a>Создание виртуальной машины с помощью утвержденной базы
@@ -75,7 +75,7 @@ Azure начнет подготовку указанной вами виртуа
 
 [!INCLUDE [Discussion of addition security checks](includes/size-connect-generalize.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Рекомендуемый следующий шаг: [Проверьте образ виртуальной машины](azure-vm-image-test.md) , чтобы убедиться, что он соответствует требованиям к публикации Azure Marketplace. Это необязательно.
 - Если вы не хотите протестировать образ виртуальной машины, войдите в [Центр партнеров](https://partner.microsoft.com/) , чтобы опубликовать образ.

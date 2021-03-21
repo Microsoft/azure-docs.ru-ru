@@ -1,6 +1,6 @@
 ---
 title: Добавление существующей подписки Azure в клиент Azure AD
-description: Инструкции по добавлению имеющейся подписки Azure в клиент Azure Active Directory.
+description: Инструкции по добавлению существующей подписки Azure в клиент Azure Active Directory (Azure AD).
 services: active-directory
 author: ajburnle
 manager: daveba
@@ -8,17 +8,17 @@ ms.service: active-directory
 ms.workload: identity
 ms.subservice: fundamentals
 ms.topic: how-to
-ms.date: 09/01/2020
+ms.date: 03/05/2021
 ms.author: ajburnle
 ms.reviewer: jeffsta
 ms.custom: it-pro, seodec18, contperf-fy20q4
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86395a91c1b2cbba6a93c7b1b7cad487129fff0a
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.openlocfilehash: b7ac9553660aace8242c81b41fa2cc9171d28219
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101094284"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104594637"
 ---
 # <a name="associate-or-add-an-azure-subscription-to-your-azure-active-directory-tenant"></a>Связывание или добавление подписки Azure в клиент Azure Active Directory
 
@@ -37,17 +37,17 @@ ms.locfileid: "101094284"
 >
 > Перемещение кластера Azure Kubernetes Service (AKS) в другую подписку или перемещение владения кластером в новый клиент приводит к потере функциональности кластера из-за потери назначений ролей и прав субъекта-службы. Дополнительные сведения о AKS см. в статье [Azure Kubernetes Service (AKS)](../../aks/index.yml).
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Прежде чем можно будет связать или добавить подписку, выполните следующие действия.
 
 - Ознакомьтесь с приведенным ниже списком изменений, которые будут выполнены после связывания или добавления подписки, и того, как это может быть затронуто.
 
-  - Пользователи, которым назначены роли с помощью Azure RBAC, потеряют доступ
-  - Администратор службы и Co-Administrators потеряют доступ
+  - Пользователи, которым назначены роли с помощью Azure RBAC, потеряют доступ.
+  - Администратор службы и Co-Administrators потеряют доступ.
   - Если у вас есть хранилища ключей, они станут недоступными и их потребуется исправить после сопоставления.
   - Если у вас есть управляемые удостоверения для таких ресурсов, как виртуальные машины или Logic Apps, необходимо повторно включить или создать их заново после сопоставления.
-  - Если у вас есть зарегистрированная Azure Stack, ее потребуется повторно зарегистрировать после связи
+  - Если у вас есть зарегистрированная Azure Stack, ее потребуется повторно зарегистрировать после связи.
   - Дополнительные сведения см. в статье [Перенос подписки Azure в другой каталог Azure AD](../../role-based-access-control/transfer-subscription.md).
 
 - Войдите, используя учетную запись, которая:
@@ -55,7 +55,7 @@ ms.locfileid: "101094284"
   - Имеет назначение роли [владельца](../../role-based-access-control/built-in-roles.md#owner) для подписки. Сведения о назначении роли владельца см. [в статье назначение ролей Azure с помощью портал Azure](../../role-based-access-control/role-assignments-portal.md).
   - Существует и в текущем каталоге, и в новом каталоге. Текущий каталог связан с подпиской. Вы свяжете новый каталог с подпиской. Дополнительные сведения о получении доступа к другому каталогу см. [в разделе добавление Azure Active Directory пользователей службы совместной работы B2B в портал Azure](../external-identities/add-users-administrator.md).
 
-- Убедитесь, что не используете следующие подписки: поставщики облачных служб Azure (CSP) (MS-AZR-0145P, MS-AZR-0146P, MS-AZR-159P), внутренняя подписка Майкрософт (MS-AZR-0015P) или Microsoft Imagine (MS-AZR-0144P).
+- Убедитесь, что вы не используете подписку поставщиков облачных служб Azure (CSP) (MS-AZR-0145P, MS-AZR-0146P, MS-AZR-159P), внутреннюю подписку Майкрософт (MS-AZR-0015P) или подписку Начальный набор Microsoft Azure для учащихся (MS-AZR-0144P).
 
 ## <a name="associate-a-subscription-to-a-directory"></a>Связывание подписки с каталогом<a name="to-associate-an-existing-subscription-to-your-azure-ad-directory"></a>
 
@@ -65,17 +65,17 @@ ms.locfileid: "101094284"
 
 1. Выберите **изменить каталог**.
 
-   ![Страница подписок с выделенным параметром "Изменить каталог"](media/active-directory-how-subscriptions-associated-directory/change-directory-in-azure-subscriptions.png)
+   :::image type="content" source="media/active-directory-how-subscriptions-associated-directory/change-directory-in-azure-subscriptions.png" alt-text="Снимок экрана, на котором отображается страница &quot;подписки&quot; с выделенным параметром &quot;изменить каталог&quot;.":::
 
 1. Просмотрите все появившиеся предупреждения и нажмите кнопку **изменить**.
 
-   ![Страница "Изменить каталог" с новым каталогом](media/active-directory-how-subscriptions-associated-directory/edit-directory-ui.png)
+   :::image type="content" source="media/active-directory-how-subscriptions-associated-directory/edit-directory-ui.png" alt-text="Снимок экрана, на котором показана страница &quot;изменение каталога&quot; с примером каталога и выделенной кнопкой &quot;Изменить&quot;.":::
 
    После изменения каталога для подписки будет получено сообщение об успешном выполнении.
 
 1. Выберите **переключатель каталоги** на странице Подписка, чтобы перейти к новому каталогу.
 
-   ![Страница "переключение каталога" с образцом данных](media/active-directory-how-subscriptions-associated-directory/directory-switcher.png)
+   :::image type="content" source="media/active-directory-how-subscriptions-associated-directory/directory-switcher.png" alt-text="Снимок экрана, на котором показана страница &quot;переключение каталога&quot; с примерами сведений.":::
 
    Для правильного отображения всех элементов может потребоваться несколько часов. Если кажется, что он занимает слишком много времени, проверьте **глобальный фильтр подписки**. Убедитесь, что перемещенная подписка не скрыта. Возможно, потребуется выйти из портал Azure и войти снова, чтобы увидеть новый каталог.
 
@@ -87,13 +87,13 @@ ms.locfileid: "101094284"
 
 - Если у вас есть хранилища ключей, необходимо изменить идентификатор клиента хранилища ключей. Дополнительные сведения см. в разделе [Изменение идентификатора клиента хранилища ключей после перемещения подписки](../../key-vault/general/move-subscription.md).
 
-- Если вы использовали управляемые системой удостоверения для ресурсов, необходимо повторно включить эти удостоверения. Если вы использовали назначенные пользователем управляемые удостоверения, необходимо повторно создать эти удостоверения. После повторного включения или создания управляемых удостоверений необходимо повторно установить разрешения, назначенные этим удостоверениям. Дополнительные сведения см. в статье [Что такое управляемые удостоверения для ресурсов Azure](../managed-identities-azure-resources/overview.md).
+- Если вы использовали управляемые системой удостоверения для ресурсов, необходимо повторно включить эти удостоверения. Если вы использовали назначенные пользователем управляемые удостоверения, необходимо повторно создать эти удостоверения. После повторного включения или создания управляемых удостоверений необходимо повторно установить разрешения, назначенные этим удостоверениям. См. сведения об [управляемых удостоверениях для ресурсов Azure](../managed-identities-azure-resources/overview.md).
 
-- Если вы зарегистрировали Azure Stack с помощью этой подписки, необходимо выполнить повторную регистрацию. Дополнительные сведения см. в статье [регистрация Azure Stack в Azure](/azure-stack/operator/azure-stack-registration).
+- Если вы зарегистрировали Azure Stack с помощью этой подписки, необходимо выполнить повторную регистрацию. Дополнительные сведения см. в статье [регистрация Azure Stack центра в Azure](/azure-stack/operator/azure-stack-registration).
 
 - Дополнительные сведения см. в статье [Перенос подписки Azure в другой каталог Azure AD](../../role-based-access-control/transfer-subscription.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о создании нового клиента Azure AD см. [в разделе Краткое руководство. Создание нового клиента в Azure Active Directory](active-directory-access-create-new-tenant.md).
 

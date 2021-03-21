@@ -8,12 +8,12 @@ ms.author: dobett
 ms.date: 02/11/2020
 ms.topic: how-to
 manager: philmea
-ms.openlocfilehash: 8cf8fdfe0c8eb557946baa95d0d8beb2b388baa5
-ms.sourcegitcommit: d79513b2589a62c52bddd9c7bd0b4d6498805dbe
+ms.openlocfilehash: 2af97206db00d683ab409710bc71a3b5048bf6ae
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97674452"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104658471"
 ---
 # <a name="manage-iot-central-from-the-azure-portal"></a>Управление IoT Central на портале Azure
 
@@ -22,6 +22,9 @@ ms.locfileid: "97674452"
 Вместо создания приложений IoT Central и управления ими на веб-сайте [диспетчера приложений Azure IOT Central](https://aka.ms/iotcentral) можно использовать [портал Azure](https://portal.azure.com) для управления приложениями.
 
 ## <a name="create-iot-central-applications"></a>Создание приложений IoT Central
+
+[!INCLUDE [Warning About Access Required](../../../includes/iot-central-warning-contribitorrequireaccess.md)]
+
 
 Чтобы создать приложение, перейдите к [портал Azure](https://ms.portal.azure.com) и выберите **создать ресурс**.
 
@@ -50,7 +53,7 @@ ms.locfileid: "97674452"
 Если у вас уже есть приложение IoT Central, его можно удалить, а также перенести в другую подписку или группу ресурсов на портале Azure.
 
 > [!NOTE]
-> Для приложений, созданных с помощью плана *Free* , подписки Azure не требуются, поэтому они не будут перечислены в подписке azure на портал Azure. На портале IoT Central можно просматривать только бесплатные приложения и управлять ими.
+> Для приложений, созданных с помощью плана *Бесплатный*, подписки Azure не требуются, поэтому они не будут указаны в подписке Azure на портале Azure. На портале IoT Central можно просматривать и администрировать только бесплатные приложения.
 
 Чтобы начать работу, выберите **все ресурсы** на портале. Установите флажок **Показывать скрытые типы** и начните вводить имя приложения в поле **Фильтр по имени** , чтобы найти его. Затем выберите приложение IoT Central, которым вы хотите управлять.
 
@@ -66,7 +69,7 @@ ms.locfileid: "97674452"
 
 ![Портал управления: управление ресурсами](media/howto-manage-iot-central-from-portal/image5a.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Вы узнали, как управлять приложениями Azure IoT Central на портале Azure, а значит, вы готовы к следующему шагу:
 

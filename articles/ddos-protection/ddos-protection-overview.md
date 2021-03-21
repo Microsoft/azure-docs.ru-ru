@@ -1,5 +1,5 @@
 ---
-title: Общие сведения о Защите от атак DDoS Azure уровня "Стандартный"
+title: Обзор стандарта защиты Azure от атак DDoS
 description: Узнайте, как служба "Защита от атак DDoS Azure" обеспечивает защиту от атак DDoS, если соблюдаются рекомендации по проектированию приложений.
 services: virtual-network
 documentationcenter: na
@@ -12,10 +12,10 @@ ms.workload: infrastructure-services
 ms.date: 09/9/2020
 ms.author: yitoh
 ms.openlocfilehash: 2b0f8a73a6852883f87ba9fc4333cb6fa8101a39
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101703122"
 ---
 # <a name="azure-ddos-protection-standard-overview"></a>Общие сведения о защите от атак DDoS Azure уровня "Стандартный"

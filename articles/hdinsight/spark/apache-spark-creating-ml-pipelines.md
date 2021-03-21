@@ -6,10 +6,10 @@ ms.custom: hdinsightactive
 ms.topic: how-to
 ms.date: 07/22/2019
 ms.openlocfilehash: e9897c7ba14e6190698cf10792a94acc759699d4
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98940184"
 ---
 # <a name="create-an-apache-spark-machine-learning-pipeline"></a>Создание конвейера машинного обучения Apache Spark
@@ -129,6 +129,6 @@ only showing top 20 rows
 
 Теперь объект `model` можно использовать для создания прогнозов. Полный пример этого приложения машинного обучения и пошаговые инструкции по его выполнению см. в статье [Создание приложений машинного обучения Apache Spark в Azure HDInsight](apache-spark-ipython-notebook-machine-learning.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Обработка и анализ данных с использованием Scala и Spark в Azure](../../machine-learning/team-data-science-process/scala-walkthrough.md)

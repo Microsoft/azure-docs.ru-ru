@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 05/21/2020
 keywords: секрет по запросу, АТО, openshift, Red Hat
 ms.openlocfilehash: 58c0eb2be3423783a69d005277ffe75aaf59415f
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100633739"
 ---
 # <a name="add-or-update-your-red-hat-pull-secret-on-an-azure-red-hat-openshift-4-cluster"></a>Добавление или обновление секрета по запросу Red Hat в кластере Azure Red Hat OpenShift 4
@@ -20,7 +20,7 @@ ms.locfileid: "100633739"
 
 При создании кластера в первый раз можно добавить свой секрет при создании кластера. Дополнительные сведения о создании кластера АТО с секретом по запросу Red Hat см. в статье [Создание кластера Azure Red Hat OpenShift 4](tutorial-create-cluster.md#get-a-red-hat-pull-secret-optional).
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 В этом учебнике предполагается наличие существующего кластера Azure Red Hat OpenShift 4. Убедитесь, что у вас есть доступ администратора к кластеру.
 

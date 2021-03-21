@@ -11,10 +11,10 @@ ms.topic: reference
 ms.date: 02/17/2021
 ms.author: sbowles
 ms.openlocfilehash: 712b18b471b7595f5278c77ead9f845048d4783e
-ms.sourcegitcommit: 58ff80474cd8b3b30b0e29be78b8bf559ab0caa1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100642454"
 ---
 # <a name="face-api-reference-list"></a>Список ссылок API распознавания лиц

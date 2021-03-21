@@ -9,10 +9,10 @@ ms.date: 09/15/2020
 ms.author: rogarana
 ms.custom: include file
 ms.openlocfilehash: f5ebd05177abf5fb3468b3ce935b7d004b414424
-ms.sourcegitcommit: b513b0becf878eb9a1554c26da53aa48d580bb22
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100552917"
 ---
 NFS поддерживается во **всех** 30 регионах, где доступно хранилище Premium-файлов.

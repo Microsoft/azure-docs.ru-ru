@@ -3,16 +3,16 @@ title: Краткое руководство. Создание сервера Б
 description: В этом кратком руководстве показано, как создать сервер Базы данных Azure для MariaDB в группе ресурсов Azure с помощью PowerShell.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.devlang: azurepowershell
 ms.topic: quickstart
 ms.date: 05/26/2020
 ms.custom: mvc, devx-track-azurepowershell
-ms.openlocfilehash: 91472d3f3cb39d34f560715f511f666079b1d1c0
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: 05082ffa891b72b472ed5433282198c61080f073
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98664670"
 ---
 # <a name="quickstart-create-an-azure-database-for-mariadb-server-using-powershell"></a>Краткое руководство. Создание сервера Базы данных Azure для MariaDB с помощью PowerShell
@@ -21,7 +21,7 @@ ms.locfileid: "98664670"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Если у вас еще нет подписки Azure, создайте [бесплатную](https://azure.microsoft.com/free/) учетную запись, прежде чем начинать работу.
+Если у вас еще нет подписки Azure, создайте [бесплатную](https://azure.microsoft.com/free/) учетную запись Azure, прежде чем начинать работу.
 
 Если вы решили использовать PowerShell локально, для работы с этой статьей установите модуль PowerShell Az и подключитесь к учетной записи Azure с помощью командлета [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount). См. сведения об [установке модуля Azure PowerShell](/powershell/azure/install-az-ps).
 
@@ -45,7 +45,7 @@ Set-AzContext -SubscriptionId 00000000-0000-0000-0000-000000000000
 
 ## <a name="create-a-resource-group"></a>Создание группы ресурсов
 
-Создайте [группу ресурсов Azure](../azure-resource-manager/management/overview.md) с помощью командлета [New-AzResourceGroup](/powershell/module/az.resources/new-azresourcegroup). Группа ресурсов — это логический контейнер, в котором ресурсы Azure развертываются и администрируются как группа.
+Создайте [группу ресурсов Azure](../azure-resource-manager/management/overview.md) с помощью командлета [New-AzResourceGroup](/powershell/module/az.resources/new-azresourcegroup). Группа ресурсов — это логический контейнер, в котором ресурсы Azure развертываются и администрируются как группа.
 
 В следующем примере создается группа ресурсов с именем **myresourcegroup** в регионе **Западная часть США**.
 
@@ -76,7 +76,7 @@ New-AzResourceGroup -Name myresourcegroup -Location westus
 Значение параметра **SKU** соответствует формату **ценовая-категория\_поколение-вычислительных-ресурсов\_количество-виртуальных-ядер**, как показано в примерах ниже.
 
 - `-Sku B_Gen5_1` — "Базовый", поколение 5, 1 виртуальное ядро; Это номер SKU наименьший по размеру из доступных.
-- `-Sku GP_Gen5_32` — "Общего назначения", поколение 5, 32 виртуальных ядра;
+- `-Sku GP_Gen5_32` — "Общего назначения", поколение 5, 32 виртуальных ядра;
 - `-Sku MO_Gen5_2` — "Оптимизированная для операций в памяти", поколение 5, 2 виртуальных ядра.
 
 См. сведения о допустимых значениях **SKU** по регионам и ценовым категориям в описании [ценовых категорий Базы данных Azure для MariaDB](./concepts-pricing-tiers.md).

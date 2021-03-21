@@ -4,10 +4,10 @@ description: Узнайте, как настроить лабораторию с
 ms.topic: article
 ms.date: 01/19/2021
 ms.openlocfilehash: dec5dea13d5a89536a06da45fc57d33881a9b3ad
-ms.sourcegitcommit: 740698a63c485390ebdd5e58bc41929ec0e4ed2d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99500517"
 ---
 # <a name="set-up-a-lab-to-teach-a-networking-class"></a>Настройка лаборатории для обучения классу сети 
@@ -20,7 +20,7 @@ ms.locfileid: "99500517"
 
 Следуйте указаниям [этого учебника](tutorial-setup-classroom-lab.md) , чтобы создать лабораторию, а затем примените следующие параметры.
 
-| размер виртуальной машины; | Изображение |
+| размер виртуальной машины; | Образ — |
 | -------------------- | ----- | 
 | Большой (вложенная виртуализация) | Windows 10 профессиональная, версия 1909 |
 

@@ -9,10 +9,10 @@ ms.date: 02/04/2021
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: f64bb0dd0841e89d05a4399db4373a9eaaec48a2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101750984"
 ---
 Профили для VPN-клиентов Azure (Windows 10) можно развернуть с помощью Microsoft Intune. Эта статья поможет вам создать профиль Intune с помощью пользовательских параметров.
@@ -73,7 +73,7 @@ ms.locfileid: "101750984"
     * **OMA-URI:** ```./User/Vendor/MSFT/VPNv2/<name of your connection>/ProfileXML``` (эти сведения можно найти в файле azurevpnconfig.xml в <name></name> теге).
     * **Тип данных:** Строка (XML-файл).
 
-   Щелкните значок папки и выберите файл, сохраненный на шаге 6, в разделе [XML-](#xml) действия. Нажмите **Добавить**.
+   Щелкните значок папки и выберите файл, сохраненный на шаге 6, в разделе [XML-](#xml) действия. Выберите **Добавить**.
 
    :::image type="content" source="./media/vpn-gateway-virtual-wan-vpn-profile-intune/configuration-settings.png" alt-text="Параметры конфигурации" lightbox="./media/vpn-gateway-virtual-wan-vpn-profile-intune/configuration-settings.png":::
 1. Выберите **Далее**.

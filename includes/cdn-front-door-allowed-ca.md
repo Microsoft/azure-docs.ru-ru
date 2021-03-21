@@ -9,10 +9,10 @@ ms.date: 10/30/2020
 ms.author: duau
 ms.custom: include file
 ms.openlocfilehash: 1196ec0c3e92df6c359461ea7d1d53c8aea0bd88
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101750089"
 ---
 При создании собственного сертификата разрешены следующие ЦС:

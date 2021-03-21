@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 07/13/2017
 ms.openlocfilehash: aa08b9f5db5e6371bcd20b473a0c755db3199e7c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101704299"
 ---
 # <a name="plan-hyper-v-virtual-machine-capacity-with-the-capacity-and-performance-solution-deprecated"></a>Планирование емкости виртуальных машин Hyper-V с помощью решения Емкость и производительность (не рекомендуется)
@@ -45,7 +45,7 @@ ms.locfileid: "101704299"
 | [Группы управления SCOM](../agents/om-agents.md) | Да |Решение собирает сведения о емкости и производительности из агентов в подключенной группе управления SCOM. Прямое подключение агента SCOM к Log Analytics не требуется.|
 | [Учетная запись хранения Azure](../essentials/resource-logs.md#send-to-log-analytics-workspace) | Нет | Служба хранилища Azure не содержит сведения о емкости и производительности.|
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Агенты Windows или Operations Manager должны быть установлены на узлах Hyper-V под управлением Windows Server 2012 (или более поздней версии), а не на виртуальных машинах.
 
