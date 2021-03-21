@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 11/4/2019
 ms.author: caya
 ms.openlocfilehash: 2d64766c754c0ea104ae83fde799a514e9da6d68
-ms.sourcegitcommit: b6267bc931ef1a4bd33d67ba76895e14b9d0c661
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97693735"
 ---
 # <a name="install-an-application-gateway-ingress-controller-agic-using-an-existing-application-gateway"></a>Установка контроллера входящего трафика шлюза приложений (АГИК) с помощью существующего шлюза приложений
@@ -27,7 +27,7 @@ ms.locfileid: "97693735"
 - [Установка контроллера входящего трафика с помощью Helm](#install-ingress-controller-as-a-helm-chart)
 - [Шлюз приложений с несколькими кластерами и общим доступом](#multi-cluster--shared-application-gateway). Установите агик в среде, где шлюз приложений является общим для одного или нескольких кластеров AKS и (или) других компонентов Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 В этом документе предполагается, что у вас уже установлены следующие средства и инфраструктура:
 - [AKS](https://azure.microsoft.com/services/kubernetes-service/) с включенной поддержкой [расширенных сетей](../aks/configure-azure-cni.md)
 - [Шлюз приложений версии 2](./tutorial-autoscale-ps.md) в той же виртуальной сети, что и AKS

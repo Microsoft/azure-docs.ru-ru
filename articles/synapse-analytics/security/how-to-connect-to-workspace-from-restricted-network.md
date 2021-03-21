@@ -9,10 +9,10 @@ ms.date: 10/25/2020
 ms.author: xujiang1
 ms.reviewer: jrasnick
 ms.openlocfilehash: de7c5dba5a4868b7a8fdb390f974134cfaef7395
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100384526"
 ---
 # <a name="connect-to-workspace-resources-from-a-restricted-network"></a>Подключение к ресурсам рабочей области из ограниченной сети
@@ -154,7 +154,7 @@ ms.locfileid: "100384526"
 ![Снимок экрана создания частной зоны DNS синапсе в зоне 5.](./media/how-to-connect-to-workspace-from-restricted-network/pdns-zone-5.png)
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об [управляемой виртуальной сети рабочей области](./synapse-workspace-managed-vnet.md).
 

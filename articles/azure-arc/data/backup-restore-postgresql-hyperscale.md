@@ -10,10 +10,10 @@ ms.reviewer: mikeray
 ms.date: 12/09/2020
 ms.topic: how-to
 ms.openlocfilehash: 8b3304c673e8606667246a7d0df9ad8f3be11d9b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101686705"
 ---
 # <a name="back-up-and-restore-azure-arc-enabled-postgresql-hyperscale-server-groups"></a>Резервное копирование и восстановление групп серверов PostgreSQL с поддержкой дуги Azure
@@ -37,13 +37,13 @@ azdata arc postgres backup create [--name <backup name>] --server-name <server g
 
 Эта команда координирует распределенное полное резервное копирование по всем узлам, составляющим группу серверов PostgreSQL с поддержкой дуги Azure. Иными словами, он будет создавать резервные копии всех данных в координаторе и рабочих узлах.
 
-Пример.
+Пример:
 
 ```console
 azdata arc postgres backup create --name backup12082020-0250pm --server-name postgres01
 ```
 
-После завершения резервного копирования будут возвращены идентификатор, имя, размер, состояние и метка времени резервной копии. Пример.
+После завершения резервного копирования будут возвращены идентификатор, имя, размер, состояние и метка времени резервной копии. Пример:
 ```console
 {
   "ID": "8085723fcbae4aafb24798c1458f4bb7",
@@ -68,7 +68,7 @@ azdata arc postgres backup create --name backup12082020-0250pm --server-name pos
 azdata arc postgres backup list --server-name <servergroup name>
 ```
 
-Пример.
+Пример:
 
 ```console
 azdata arc postgres backup list --server-name postgres01
@@ -161,7 +161,7 @@ azdata arc postgres backup restore -sn postgres02 -ssn postgres01 -t "2020-12-08
 
 Этот пример восстанавливается в группе серверов postgres02, когда группа серверов postgres01 была на 8 декабря 2020 в 04:23:48.75 UTC. Обратите внимание, что "+ 00" обозначает часовой пояс точки во времени, который вы указали. Если вы не указали часовой пояс, будет использоваться часовой пояс клиента, с которого выполняется операция восстановления.
 
-Пример.
+Пример:
 - `2020-12-08 04:23:48.751326+00` интерпретируется как время в `2020-12-08 04:23:48.751326` формате UTC
 - Если вы используете стандартный часовой пояс (PST = UTC + 08), `2020-12-08 04:23:48.751326` он интерпретируется как время в `2020-12-08 12:23:48.751326` формате UTC. Эта операция поддерживается для любой версии PostgreSQL, начиная с версии 11. Целевая группа серверов должна быть создана до операции восстановления и должна использовать ту же резервную копию PVC, что и исходная группа серверов.
 
@@ -195,7 +195,7 @@ azdata arc postgres backup delete  [--server-name, -sn] {[--name, -n], -id}
 > [!NOTE]
 > `--name` и `-id` являются взаимоисключающими.
 
-Пример.
+Пример:
 
 ```console
 azdata arc postgres backup delete -sn postgres01 -n MyBackup091720200110am

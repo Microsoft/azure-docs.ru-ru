@@ -12,10 +12,10 @@ ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: previous-author=fboylu, previous-ms.author=fboylu
 ms.openlocfilehash: 1e939b86eeadfee276378488cfcb40c07f28684d
-ms.sourcegitcommit: aaa65bd769eb2e234e42cfb07d7d459a2cc273ab
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98880664"
 ---
 # <a name="azure-ai-guide-for-predictive-maintenance-solutions"></a>Руководство по искусственному интеллекту Azure для решений прогнозного обслуживания
@@ -231,7 +231,7 @@ ms.locfileid: "98880664"
 
 Предложенные усилия по подготовке данных должны привести к упорядочению данных, как показано ниже. Данные для обучения, тестирования и проверки должны соответствовать следующей логической схеме (в этом примере время измеряется в днях).
 
-| Идентификатор актива | Время | \<Feature Columns> | Метка |
+| Идентификатор актива | время; | \<Feature Columns> | Метка |
 | ---- | ---- | --- | --- |
 | A123 |День 1 | . . . | . |
 | A123 |День 2 | . . . | . |

@@ -17,10 +17,10 @@ ms.reviewer: thsomasu
 ms.lastreviewed: 10/02/2019
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 3f8f9357fff4773467dd93046ece8533514eb444
-ms.sourcegitcommit: ce8eecb3e966c08ae368fafb69eaeb00e76da57e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92313888"
 ---
 # <a name="send-cross-platform-notifications-with-azure-notification-hubs"></a>Отправка межплатформенных уведомлений с помощью концентраторов уведомлений Azure
@@ -41,7 +41,7 @@ ms.locfileid: "92313888"
 
 Чтобы отправлять межплатформенные уведомления с помощью шаблонов, выполните следующие действия.
 
-1. В **Обозреватель решений**Visual Studio разверните папку **Controllers** , а затем откройте файл *RegisterController.CS* .
+1. В **Обозреватель решений** Visual Studio разверните папку **Controllers** , а затем откройте файл *RegisterController. CS* .
 
 1. Найдите в методе `Put` блок кода, который создает регистрацию, и замените содержимое `switch` следующим кодом.
 
@@ -76,7 +76,7 @@ ms.locfileid: "92313888"
 
     Этот код вызывает метод, используемый на конкретной платформе для регистрации шаблонов вместо собственной регистрации. Регистрация шаблонов является производной от собственной регистрации. Поэтому существующие регистрации изменять не нужно.
 
-1. В **Обозреватель решений**в папке **Controllers** откройте файл **NotificationsController.CS** . Замените метод `Post` следующим кодом:
+1. В **Обозреватель решений** в папке **Controllers** откройте файл **NotificationsController. CS** . Замените метод `Post` следующим кодом:
 
     ```csharp
     public async Task<HttpResponseMessage> Post()

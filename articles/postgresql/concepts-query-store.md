@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 07/01/2020
 ms.openlocfilehash: 1779df1c5f9baf2aa46ff809ecae9ec5e3cd7adb
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100581566"
 ---
 # <a name="monitor-performance-with-the-query-store"></a>Мониторинг производительности с помощью хранилища запросов
@@ -162,8 +162,8 @@ SELECT * FROM query_store.pgms_wait_sampling_view;
 | user_id | oid | pg_authid.oid | Идентификатор объекта пользователя, который выполнил инструкцию |
 | db_id | oid | pg_database.oid | Идентификатор объекта базы данных, в которой была выполнена инструкция |
 | query_id | BIGINT |  | Внутренний хэш-код, вычисляемый на основе дерева синтаксического анализа инструкции |
-| event_type | text |  | Тип события, которого ожидает серверный компонент |
-| event | text |  | Имя события ожидания, если серверный компонент сейчас находится в состоянии ожидания |
+| event_type | текст |  | Тип события, которого ожидает серверный компонент |
+| event | текст |  | Имя события ожидания, если серверный компонент сейчас находится в состоянии ожидания |
 | calls | Целое число |  | Число одинаковых записанных событий |
 
 ### <a name="functions"></a>Функции
@@ -205,7 +205,7 @@ Query_store.staging_data_reset() returns void
 |---|---|
 | TimeGenerated [UTC] | Метка времени, когда журнал был записан в формате UTC |
 | ResourceId | URI ресурса Azure сервера postgres |
-| Категория | `QueryStoreRuntimeStatistics` |
+| Category | `QueryStoreRuntimeStatistics` |
 | OperationName | `QueryStoreRuntimeStatisticsEvent` |
 | LogicalServerName_s | Имя сервера postgres | 
 | runtime_stats_entry_id_s | Идентификатор из таблицы runtime_stats_entries |
@@ -230,7 +230,7 @@ Query_store.staging_data_reset() returns void
 |---|---|
 | TimeGenerated [UTC] | Метка времени, когда журнал был записан в формате UTC |
 | ResourceId | URI ресурса Azure сервера postgres |
-| Категория | `QueryStoreWaitStatistics` |
+| Category | `QueryStoreWaitStatistics` |
 | OperationName | `QueryStoreWaitEvent` |
 | user_id_s | Идентификатор объекта пользователя, который выполнил инструкцию |
 | db_id_s | Идентификатор объекта базы данных, в которой была выполнена инструкция |
@@ -253,6 +253,6 @@ Query_store.staging_data_reset() returns void
 - [Чтение реплик](concepts-read-replicas.md) реплицирует данные хранилища запросов с сервера источника. Это означает, что хранилище запросов реплики чтения не предоставляет статистических данных о запросах, выполняемых в реплике чтения.
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения о [ситуациях, в которых хранилище запросов может быть особенно полезным](concepts-query-store-scenarios.md).
 - Дополнительные сведения о [рекомендациях по работе с хранилищем запросов](concepts-query-store-best-practices.md).

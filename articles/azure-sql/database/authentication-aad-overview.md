@@ -12,10 +12,10 @@ ms.author: mireks
 ms.reviewer: vanto, sstein
 ms.date: 04/23/2020
 ms.openlocfilehash: a636c0e2a41b636f30ada14d4f16a022f2890b71
-ms.sourcegitcommit: 6a350f39e2f04500ecb7235f5d88682eb4910ae8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96454301"
 ---
 # <a name="use-azure-active-directory-authentication"></a>Использовать проверку подлинности Azure Active Directory
@@ -49,7 +49,7 @@ ms.locfileid: "96454301"
 - Azure AD поддерживает аналогичные подключения из SQL Server Data Tools (SSDT), использующие интерактивную аутентификацию Active Directory. Дополнительные сведения см. [в разделе поддержка Azure Active Directory в SQL Server Data Tools (SSDT)](/sql/ssdt/azure-active-directory) .
 
 > [!NOTE]  
-> Подключение к экземпляру SQL Server, который выполняется на виртуальной машине Azure, не поддерживается при использовании учетной записи Azure Active Directory. Вместо этого используйте учетную запись домена Active Directory.  
+> Подключение к экземпляру SQL Server, работающему на виртуальной машине Azure, не поддерживается при использовании учетной записи Azure Active Directory. Вместо этого используйте учетную запись домена Active Directory.  
 
 Для настройки и использования проверки подлинности Azure Active Directory выполните следующие действия.
 
@@ -140,7 +140,7 @@ ms.locfileid: "96454301"
 - Azure Active Directory Universal с многофакторной проверкой подлинности
 - Использование маркера проверки подлинности приложения
 
-Для участников сервера Azure AD (имена для входа) поддерживаются следующие методы проверки подлинности:
+Для субъектов сервера (имен для входа) Azure AD поддерживаются следующие способы проверки подлинности:
 
 - Пароль Azure Active Directory.
 - Встроенная служба Azure Active Directory.

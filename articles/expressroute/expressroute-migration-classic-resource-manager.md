@@ -8,17 +8,17 @@ ms.topic: how-to
 ms.date: 02/06/2020
 ms.author: duau
 ms.openlocfilehash: 57c439cf8ac52d93d231d6ff33f72a5a942dec6a
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96351611"
 ---
 # <a name="migrate-expressroute-associated-virtual-networks-from-classic-to-resource-manager"></a>Перенос виртуальных сетей, связанных с ExpressRoute, из классической модели в модель развертывания с помощью Resource Manager
 
 В этой статье описывается, как после перемещения канала ExpressRoute перенести связанные с ним виртуальные сети из классической модели развертывания в модель развертывания с помощью Azure Resource Manager. 
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 [!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 

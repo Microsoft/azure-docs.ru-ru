@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 02/19/2020
 ms.author: jingwang
 ms.openlocfilehash: c0d8783c4b07c8c87e57ccd9a5d65983825347c9
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100384101"
 ---
 # <a name="copy-data-from-postgresql-by-using-azure-data-factory"></a>Копирование данных из PostgreSQL с помощью фабрики данных Azure
@@ -33,7 +33,7 @@ ms.locfileid: "100384101"
 
 В частности, этот соединитель PostgreSQL поддерживает PostgreSQL **версии 7.4 и более поздних**.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [data-factory-v2-integration-runtime-requirements](../../includes/data-factory-v2-integration-runtime-requirements.md)]
 
@@ -49,7 +49,7 @@ ms.locfileid: "100384101"
 
 Для связанной службы PostgreSQL поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Для свойства type необходимо задать значение **PostgreSql** | Да |
 | connectionString | Строка подключения к базе данных Azure для PostgreSQL через интерфейс ODBC. <br/>Вы можете также поместить пароль в Azure Key Vault и извлечь конфигурацию `password` из строки подключения. Ознакомьтесь с приведенными ниже примерами и подробными сведениями в статье [Хранение учетных данных в Azure Key Vault](store-credentials-in-key-vault.md). | Да |
@@ -138,7 +138,7 @@ ms.locfileid: "100384101"
 
 Чтобы скопировать данные из PostgreSQL, поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство Type набора данных должно иметь значение **постгресклтабле** . | Да |
 | схема | Имя схемы. |Нет (если свойство query указано в источнике действия)  |
@@ -173,7 +173,7 @@ ms.locfileid: "100384101"
 
 Чтобы скопировать данные из PostgreSQL, в разделе **источник** действия копирования поддерживаются следующие свойства:
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 |:--- |:--- |:--- |
 | type | Свойство Type источника действия копирования должно иметь значение **постгресклсаурце** . | Да |
 | query | Используйте пользовательский SQL-запрос для чтения данных. Например: `"query": "SELECT * FROM \"MySchema\".\"MyTable\""`. | Нет (если для набора данных задано свойство tableName) |

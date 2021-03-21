@@ -4,10 +4,10 @@ description: Маршрутизация данных Azure Monitor и Applicatio
 ms.topic: conceptual
 ms.date: 11/06/2017
 ms.openlocfilehash: decd0353bcb2cf048fd5591ea8c895cf22944809
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102048664"
 ---
 # <a name="monitor-your-azure-services-in-grafana"></a>Мониторинг служб Azure в Grafana
@@ -23,7 +23,7 @@ ms.locfileid: "102048664"
 ### <a name="set-up-grafana-on-azure-through-the-azure-marketplace"></a>Настройка Grafana в Azure с помощью Azure Marketplace
 1. Перейдите в Azure Marketplace и выберите Grafana от Grafana Labs.
 
-2. Введите названия и подробные сведения. Создание группы ресурсов Запомните значения, которые вы выбираете для имени и пароля виртуальной машины, а также пароля администратора сервера Grafana.  
+2. Введите названия и подробные сведения. Создайте новую группу ресурсов. Запомните значения, которые вы выбираете для имени и пароля виртуальной машины, а также пароля администратора сервера Grafana.  
 
 3. Выберите размер виртуальной машины и учетную запись хранения.
 
@@ -156,5 +156,5 @@ Usage
 1. В меню слева на портале Azure щелкните **Группы ресурсов**, а затем выберите **Grafana**.
 2. На странице группы ресурсов щелкните **Удалить**, в текстовом поле введите **Grafana** и выберите **Удалить**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 * [Обзор метрик в Microsoft Azure](../data-platform.md)

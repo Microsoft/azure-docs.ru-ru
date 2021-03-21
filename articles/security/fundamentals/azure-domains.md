@@ -14,10 +14,10 @@ ms.workload: na
 ms.date: 07/07/2020
 ms.author: memildin
 ms.openlocfilehash: 372d03945c194ad4e34bc654f0b2dd5271b02d96
-ms.sourcegitcommit: 17b36b13857f573639d19d2afb6f2aca74ae56c1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94409405"
 ---
 # <a name="reference-list-of-azure-domains-not-comprehensive"></a>Список ссылок на домены Azure (неполный)
@@ -47,6 +47,6 @@ ms.locfileid: "94409405"
 |[База данных SQL Azure](https://azure.microsoft.com/services/sql-database/)|*.database.windows.net|
 |[Azure Stack ребра](https://azure.microsoft.com/products/azure-stack/edge/) и [Azure IOT Edge](https://azure.microsoft.com/services/iot-edge/)|*.azureedge.net|
 |[хранилище таблиц Azure](../../storage/tables/table-storage-overview.md)|*.table.core.windows.net|
-|[Диспетчер трафика Azure](../../traffic-manager/traffic-manager-overview.md)|*. trafficmanager.net|
+|[Azure Traffic Manager](../../traffic-manager/traffic-manager-overview.md)|*. trafficmanager.net|
 |Веб-сайтов Azure|*.azurewebsites.net|
 |[Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/)|*.visualstudio.com|

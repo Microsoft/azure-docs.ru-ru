@@ -15,10 +15,10 @@ ms.workload: iaas-sql-server
 ms.date: 06/18/2020
 ms.author: mathoma
 ms.openlocfilehash: aa19cf6b59b1efa4b14501fbf64e319da3e4c0b3
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102048647"
 ---
 # <a name="create-an-fci-with-storage-spaces-direct-sql-server-on-azure-vms"></a>Создание FCI с Локальные дисковые пространства (SQL Server на виртуальных машинах Azure)
@@ -244,7 +244,7 @@ New-AzSqlVM -Name $vm.Name -ResourceGroupName $vm.ResourceGroupName -Location $v
 - Диски, подключенные как диски с файловой системой NTFS, можно использовать с Локальные дисковые пространства только в том случае, если параметр приемлемость диска не установлен или снят при добавлении хранилища в кластер. 
 - Поддерживается только регистрация с расширением агента IaaS SQL в [режиме упрощенного управления](sql-server-iaas-agent-extension-automate-management.md#management-modes) .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Если вы еще не сделали этого, настройте подключение к FCI с [именем виртуальной сети и подсистемой балансировки нагрузки Azure](failover-cluster-instance-vnn-azure-load-balancer-configure.md) или [именем распределенной сети (DNN)](failover-cluster-instance-distributed-network-name-dnn-configure.md). 
 

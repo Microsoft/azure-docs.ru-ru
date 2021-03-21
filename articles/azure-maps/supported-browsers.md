@@ -9,10 +9,10 @@ ms.service: azure-maps
 services: azure-maps
 manager: cpendle
 ms.openlocfilehash: 6321b96cb3db570102f138dcfd949d9c32daedbc
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100384475"
 ---
 # <a name="web-sdk-supported-browsers"></a>Браузеры, поддерживаемые в веб-пакетах SDK
@@ -29,7 +29,7 @@ if (!atlas.isSupported()) {
 }
 ```
 
-## <a name="desktop"></a>Классические приложения
+## <a name="desktop"></a>Персональный компьютер
 
 Веб-пакет SDK Azure Maps поддерживает следующие браузеры для настольных систем:
 
@@ -73,9 +73,9 @@ if (!atlas.isSupported()) {
 
 Дополнительные примеры кода, использующие Azure Maps в Леафлет, можно найти [здесь](https://azuremapscodesamples.azurewebsites.net/?search=leaflet).
 
-[Ниже](open-source-projects.md#third-part-map-control-plugins) приведены некоторые популярные элементы управления картой с открытым кодом, для которых команда Azure Maps создала подключаемый модуль.
+[Здесь](open-source-projects.md#third-part-map-control-plugins) приведены некоторые популярные элементы управления картой с открытым кодом, для которых команда Azure Maps создала подключаемый модуль.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о веб-пакете SDK для Azure Maps:
 

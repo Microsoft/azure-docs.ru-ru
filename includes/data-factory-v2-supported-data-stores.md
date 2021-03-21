@@ -9,10 +9,10 @@ ms.date: 12/18/2020
 ms.author: jingwang
 ms.custom: include file
 ms.openlocfilehash: ae4dd3fc0963d1e1683b2bff75c8c1a019c42424
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97691919"
 ---
 | Категория | Хранилище данных | Поддерживается в качестве источника | Поддерживается в качестве приемника | Поддерживается [Azure IR](../articles/data-factory/concepts-integration-runtime.md#azure-integration-runtime) | Поддерживается [локальной средой IR](../articles/data-factory/concepts-integration-runtime.md#self-hosted-integration-runtime) |

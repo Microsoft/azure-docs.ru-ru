@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 02/04/2021
 ms.author: ambapat
 ms.openlocfilehash: 141abea0c0946c98b6dfe627f32f01682a18be44
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99581029"
 ---
 # <a name="bring-your-own-key-specification"></a>Спецификация BYOK
@@ -134,7 +134,7 @@ az keyvault key download --name KEKforBYOK --vault-name ContosoKeyVaultHSM --fil
 ```azurecli
 az keyvault key import --vault-name ContosoKeyVaultHSM --name ContosoFirstHSMkey --byok-file KeyTransferPackage-ContosoFirstHSMkey.byok --ops encrypt decrypt
 ```
-Чтобы импортировать ключ EC, необходимо указать тип ключа и имя кривой.
+Чтобы импортировать ключ EC, нужно указать тип ключа и имя кривой.
 
 ```azurecli
 az keyvault key import --vault-name ContosoKeyVaultHSM --name ContosoFirstHSMkey --byok-file --kty EC-HSM --curve-name "P-256" KeyTransferPackage-ContosoFirstHSMkey.byok --ops sign verify
@@ -187,6 +187,6 @@ PUT https://contosokeyvaulthsm.vault.azure.net/keys/ContosoFirstHSMKey?api-versi
 ## <a name="references"></a>Ссылки
 - [Руководство разработчика Azure Key Vault](../general/developers-guide.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Пошаговые инструкции BYOK: [Импорт ключей, защищенных с помощью HSM, в Key Vault (BYOK)](hsm-protected-keys-byok.md)
 

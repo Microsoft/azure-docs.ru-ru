@@ -15,10 +15,10 @@ ms.topic: conceptual
 ms.date: 02/04/2021
 ms.author: b-juche
 ms.openlocfilehash: 13acee8b21adf946192544afcea17b4a8d9b9ec9
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99581131"
 ---
 # <a name="manual-qos-capacity-pool"></a>Управляемый вручную пул емкости QoS
@@ -47,7 +47,7 @@ ms.locfileid: "99581131"
 
 Для использования типа QoS вручную требуется [зарегистрировать компонент](manage-manual-qos-capacity-pool.md#register-the-feature).  
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Управление пулом емкости качества обслуживания вручную](manage-manual-qos-capacity-pool.md)
 * [Настройка пула емкости](azure-netapp-files-set-up-capacity-pool.md)

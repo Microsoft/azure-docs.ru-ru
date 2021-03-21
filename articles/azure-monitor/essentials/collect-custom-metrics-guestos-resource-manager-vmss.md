@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: ancav
 ms.openlocfilehash: c5f536295bce07e70606f1ff286b08f8465d59f9
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102048959"
 ---
 # <a name="send-guest-os-metrics-to-the-azure-monitor-metric-store-by-using-an-azure-resource-manager-template-for-a-windows-virtual-machine-scale-set"></a>Отправка метрик гостевой ОС в хранилище метрик Azure Monitor с помощью шаблона Azure Resource Manager для масштабируемого набора виртуальных машин Windows
@@ -244,7 +244,7 @@ ms.locfileid: "102048959"
    ```powershell
    Select-AzSubscription -SubscriptionName "<Name of the subscription>" 
    ```
-1. Создайте группу ресурсов для развертываемой виртуальной машины. Выполните следующую команду: 
+1. Создайте группу ресурсов для развертываемой виртуальной машины. Выполните следующую команду. 
 
    ```powershell
     New-AzResourceGroup -Name "VMSSWADtestGrp" -Location "<Azure Region>" 

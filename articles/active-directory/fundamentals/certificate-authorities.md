@@ -14,10 +14,10 @@ ms.reviewer: baselden
 ms.custom: it-pro, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bea6f4161bcca063cd2c58d4c463473426f159ba
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96859137"
 ---
 # <a name="certificate-authorities-used-by-azure-active-directory"></a>Центры сертификации, используемые Azure Active Directory
@@ -97,5 +97,5 @@ ms.locfileid: "96859137"
 | - | - | - | - | - | - |
 | DigiCert Basic RSA CN CA, G2| 02f7e1f982bad 009aff47dc95741b2f6| 4 марта 2020 г.<br>4 марта 2030 г.| 4d1fa5d1fb1ac3917c08e 43f65015e6aea571179| [AIA](http://cacerts.digicert.cn/DigiCertBasicRSACNCAG2.crt)<br>[CDP](http://crl.digicert.cn/DigiCertBasicRSACNCAG2.crl)<br>[ВЫПОЛНЕН](http://ocsp.digicert.cn/) |
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 [Дополнительные сведения о цепочках шифрования Microsoft 365](/microsoft-365/compliance/encryption-office-365-certificate-chains)

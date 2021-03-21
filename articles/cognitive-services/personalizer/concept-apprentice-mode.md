@@ -6,10 +6,10 @@ ms.subservice: personalizer
 ms.topic: conceptual
 ms.date: 05/01/2020
 ms.openlocfilehash: 531917d9c48915f71354b4cd35747ecd9d33a6f8
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100385036"
 ---
 # <a name="use-apprentice-mode-to-train-personalizer-without-affecting-your-existing-application"></a>Использование режима области для обучения персонализации без влияния на существующее приложение
@@ -92,6 +92,6 @@ ms.locfileid: "100385036"
 
 Если у вас есть вариант использования, используя средства персонализации и обучения в Интернете, эксперименты/B позволяют управлять когорты и экспоненциальным сравнением результатов, которые могут быть более сложными, чем сигналы, используемые для вознаграждения. Ниже приведен пример вопроса, на который может ответить тест A/B: `In a retail website, Personalizer optimizes a layout and gets more users to _check out_ earlier, but does this reduce total revenue per transaction?`
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Сведения об [активных и неактивных событиях](concept-active-inactive-events.md)

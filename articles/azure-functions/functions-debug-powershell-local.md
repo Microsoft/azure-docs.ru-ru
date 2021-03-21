@@ -7,10 +7,10 @@ ms.date: 04/22/2019
 ms.author: tyleonha
 ms.reviewer: glenga
 ms.openlocfilehash: a668024db126c82f96756555aba513b77f7d7366
-ms.sourcegitcommit: 7cc10b9c3c12c97a2903d01293e42e442f8ac751
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93422966"
 ---
 # <a name="debug-powershell-azure-functions-locally"></a>Локальная отладка функций Azure PowerShell
@@ -111,7 +111,7 @@ PowerShell Core устанавливается параллельно с Windows
 
 1. Выберите **PowerShell: отобразить меню сеанса**.
 
-1. Если **текущий сеанс** не является **PowerShell Core 6** , выберите **параметр перейти к: PowerShell Core 6**.
+1. Если **текущий сеанс** не является **PowerShell Core 6**, выберите **параметр перейти к: PowerShell Core 6**.
 
 При открытии файла PowerShell в нижней правой части окна отображается зеленая версия. При выборе этого текста также отображается меню сеанса. Дополнительные сведения см. в статье [Выбор версии PowerShell для использования с расширением](/powershell/scripting/components/vscode/using-vscode#choosing-a-version-of-powershell-to-use-with-the-extension).
 
@@ -250,12 +250,12 @@ At /Path/To/PSFunctionApp/HttpTriggerFunction/run.ps1:13 char:1
 
 При возникновении трудностей во время отладки необходимо проверить следующее:
 
-| службы "Функции Azure" | Действие |
+| Проверить | Действие |
 |------|------|
 | Запустите `func --version` из терминала. Если появляется сообщение об ошибке, которое `func` не удается найти, то основные средства (func.exe) могут отсутствовать в локальной `path` переменной.| [Переустановите основные инструменты](functions-run-local.md#v2).|  
 | В Visual Studio Code терминалу по умолчанию необходим доступ к func.exe. Убедитесь, что вы не используете терминал по умолчанию, на котором не установлены основные средства, например подсистема Windows для Linux (WSL).  | Задайте оболочку по умолчанию в Visual Studio Code либо PowerShell 7 (рекомендуется), либо Windows PowerShell 5,1.|
   
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о разработке функций с помощью PowerShell см. в статье с [руководством разработчика PowerShell для функций Azure](functions-reference-powershell.md).

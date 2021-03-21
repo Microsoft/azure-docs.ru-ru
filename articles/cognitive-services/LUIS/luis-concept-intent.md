@@ -10,10 +10,10 @@ ms.subservice: language-understanding
 ms.topic: conceptual
 ms.date: 10/10/2019
 ms.openlocfilehash: bf5ab7361c84fb787366c7c361829e52362fe427
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95025914"
 ---
 # <a name="intents-in-your-luis-app"></a>Целей в приложении LUIS
@@ -27,7 +27,7 @@ ms.locfileid: "95025914"
  BookFlight     |   "Book me a flight to Rio next week" ("Забронировать авиаперелет в Рио на следующей неделе") <br/> "Fly me to Rio on the 24th" ("Найти авиаперелет в Рио 24-го числа") <br/> "I need a plane ticket next Sunday to Rio de Janeiro" ("Мне нужен билет на самолет в Рио-де-Жанейро на следующее воскресенье")    |
  Приветствие     |   "Hi" ("Привет") <br/>"Hello" <br/>"Good morning" ("Доброе утро")  |
  CheckWeather | "What's the weather like in Boston?" ("Какая сейчас погода в Бостоне?") <br/> "Show me the forecast for this weekend" ("Покажите мне прогноз на эту неделю") |
- None         | "Get me a cookie recipe" ("Рецепт печенья")<br>"Did the Lakers win?" ("Лейкерс победили?") |
+ Нет         | "Get me a cookie recipe" ("Рецепт печенья")<br>"Did the Lakers win?" ("Лейкерс победили?") |
 
 Все приложения поставляются с предопределенной намерением «None» ([нет](#none-intent)), что является резервным условием.
 

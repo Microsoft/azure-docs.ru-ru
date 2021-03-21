@@ -13,10 +13,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dca888bf9e3dc75e80764949a11d95efe3514635
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96861822"
 ---
 # <a name="migrate-from-federation-to-password-hash-synchronization-for-azure-active-directory"></a>Переход с федеративной аутентификации на синхронизацию хэша паролей для Azure Active Directory
@@ -104,7 +104,7 @@ ms.locfileid: "96861822"
 Get-MsolDomainFederationSettings -DomainName YourDomain.extention | fl *
 ```
 
-Пример.
+Пример
 
 ``` PowerShell
 Get-MsolDomainFederationSettings -DomainName Contoso.com | fl *
@@ -172,7 +172,7 @@ Get-MsolDomainFederationSettings -DomainName Contoso.com | fl *
 
 Дополнительные сведения см. в статье [Практическое руководство. Планирование реализации гибридного присоединения к Azure Active Directory](../devices/hybrid-azuread-join-plan.md).
 
-#### <a name="branding"></a>Торговая марка
+#### <a name="branding"></a>Фирменная символика
 
 Если в вашей организации [настроены страницы входа AD FS](/windows-server/identity/ad-fs/operations/ad-fs-user-sign-in-customization) для отображения соответствующих сведений, рекомендуем аналогичным образом [настроить страницы входа Azure AD](../fundamentals/customize-branding.md).
 

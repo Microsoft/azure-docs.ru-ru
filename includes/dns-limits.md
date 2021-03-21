@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 11/05/2020
 ms.author: rohink
 ms.openlocfilehash: 7011b92485c56187021c9043ba84bc85e448a98f
-ms.sourcegitcommit: 7cc10b9c3c12c97a2903d01293e42e442f8ac751
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94329510"
 ---
 **Общедоступные зоны DNS**

@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 01/17/2021
 ms.author: yelevin
 ms.openlocfilehash: 73a9d9c7ab321aebd615922e5d4395c0318e809c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100580453"
 ---
 # <a name="connect-your-proofpoint-on-demand-email-security-pod-solution-to-azure-sentinel"></a>Подключение решения для защиты электронной почты Proofpoint On Demand по запросу (POD) к Azure Sentinel
@@ -31,7 +31,7 @@ ms.locfileid: "100580453"
 > [!NOTE]
 > Данные будут храниться в географическом расположении рабочей области, на которой вы используете метку Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - У вас должно быть разрешение на чтение и запись в рабочей области "Sentinel" Azure.
 
@@ -63,7 +63,7 @@ ms.locfileid: "100580453"
 
 После того, как журналы начнут отображаться в Log Analytics, может пройти до 60 минут.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом документе вы узнали, как подключить Proofpoint On Demand по запросу к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 

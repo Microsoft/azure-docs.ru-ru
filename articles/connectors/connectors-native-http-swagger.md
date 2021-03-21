@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/01/2019
 tags: connectors
 ms.openlocfilehash: 810aaae9634a7de8d07b6d49edd0c6c2eda96754
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101730887"
 ---
 # <a name="call-rest-endpoints-by-using-azure-logic-apps"></a>Вызов конечных точек REST с помощью Azure Logic Apps

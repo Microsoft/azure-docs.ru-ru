@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.service: iot-accelerators
 services: iot-accelerators
 ms.openlocfilehash: e1409b43f0ce1fc0d8c622dda79e857ac6abdd33
-ms.sourcegitcommit: 48cb2b7d4022a85175309cf3573e72c4e67288f5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96854569"
 ---
 # <a name="use-time-series-insights-to-visualize-telemetry-sent-from-the-device-simulation-solution-accelerator"></a>Использование службы "Аналитика временных рядов Azure" для визуализации данных телеметрии, отправленных из акселератора решений для имитации устройств
@@ -23,7 +23,7 @@ ms.locfileid: "96854569"
 
 Для дальнейших действий, описанных в этом руководстве, вам потребуется активная подписка Azure. Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), прежде чем начинать работу.
 
-Действия в этом руководстве предполагают, что вы развернули акселератор решений для имитации устройств в подписке Azure. Если вы еще не развернули симуляцию устройств, см. статью [моделирование устройств](https://github.com/Azure/device-simulation-dotnet/blob/master/README.md) на GitHub.
+Действия в этом руководстве предполагают, что вы развернули акселератор решений для имитации устройств в подписке Azure. Если вы еще не развернули имитацию устройств, см. сведения о [развертывании имитации устройств](https://github.com/Azure/device-simulation-dotnet/blob/master/README.md) на сайте GitHub.
 
 В этой статье предполагается, что имя акселератора решений — **contoso-simulation**. Замените **contoso-simulation** именем вашего акселератора решений, когда будете выполнять следующие шаги.
 
@@ -57,7 +57,7 @@ ms.locfileid: "96854569"
 
 1. Войдите на [портал Azure](https://portal.azure.com/).
 
-1. Выберите **создать ресурс**  >  **"Интернет вещей"**  >  "**аналитика временных рядов**":
+1. Выберите **создать ресурс**  >  **Интернет вещей**  >  "**аналитика временных рядов**":
 
     ![Новая среда "Аналитика временных рядов Azure"](./media/iot-accelerators-device-simulation-time-series-insights/new-time-series-insights.png)
 
@@ -171,6 +171,6 @@ ms.locfileid: "96854569"
 
 Если вы добавили среду "Аналитика временных рядов" в группу ресурсов ускорителя решения, она автоматически удаляется при удалении ускорителя решения. В противном случае необходимо вручную удалить среду "Аналитика временных рядов" с портала Azure.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о том, как изучать и запрашивать данные в обозревателе службы "Аналитика временных рядов", см. в [этой статье](../time-series-insights/time-series-insights-explorer.md).

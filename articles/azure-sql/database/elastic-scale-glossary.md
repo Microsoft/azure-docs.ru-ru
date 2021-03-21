@@ -12,10 +12,10 @@ ms.author: sstein
 ms.reviewer: ''
 ms.date: 12/04/2018
 ms.openlocfilehash: 166e365a4ead8ad6d0f7e543c081161ebff5f027
-ms.sourcegitcommit: 03713bf705301e7f567010714beb236e7c8cee6f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92330467"
 ---
 # <a name="elastic-database-tools-glossary"></a>Глоссарий по средствам работы с эластичными базами данных
@@ -27,7 +27,7 @@ ms.locfileid: "92330467"
 
 ![Термины, используемые в эластичном масштабировании][1]
 
-**База**данных: база данных в базе данных SQL Azure. 
+**База** данных: база данных в базе данных SQL Azure. 
 
 **Маршрутизация, зависящая от данных.** Функциональная возможность, которая позволяет приложению подключаться к сегменту с определенным ключом сегментирования. См. статью [Маршрутизация, зависящая от данных](elastic-scale-data-dependent-routing.md). Сравните с **[многосегментным формированием запросов](elastic-scale-multishard-querying.md)**.
 

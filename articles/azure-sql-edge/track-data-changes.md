@@ -10,10 +10,10 @@ ms.author: sourabha
 ms.reviewer: sstein
 ms.date: 05/19/2020
 ms.openlocfilehash: dddaad3e171c757b353deb81ffcb77cfbe706340
-ms.sourcegitcommit: 48e5379c373f8bd98bc6de439482248cd07ae883
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98108268"
 ---
 # <a name="track-data-changes-in-azure-sql-edge"></a>Отслеживание изменений данных в Azure SQL ребро
@@ -39,7 +39,7 @@ Azure SQL ребро поддерживает две функции SQL Server, 
 > [!NOTE]
 > Функции системы отслеживания измененных данных, зависящие от среды CLR, не поддерживаются в Azure SQL.
 
-## <a name="change-tracking"></a>Change tracking
+## <a name="change-tracking"></a>отслеживание изменений
 
 Сведения о том, как работает эта функция, см. в разделе [об отслеживании изменений](/sql/relational-databases/track-changes/about-change-tracking-sql-server).
 

@@ -8,10 +8,10 @@ ms.date: 02/17/2021
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
 ms.openlocfilehash: d1cbd314861a4d5079a5c8e5213f45c7164344f0
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102204173"
 ---
 # <a name="azure-security-baseline-for-azure-data-factory"></a>Базовый план безопасности Azure для фабрики данных Azure
@@ -624,7 +624,7 @@ Self-Hosted IRs можно развернуть на локальном комп
 
 - [Создание оповещений для событий журнала действий Azure](/azure/azure-monitor/platform/alerts-activity-log)
 
-- [Ведение журнала аналитики службы хранилища Azure](../storage/common/storage-analytics-logging.md)
+- [Ведение журнала Аналитики Службы хранилища Azure](../storage/common/storage-analytics-logging.md)
 
 **Ответственность**: Customer
 

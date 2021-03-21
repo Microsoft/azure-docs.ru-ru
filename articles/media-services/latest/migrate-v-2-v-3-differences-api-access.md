@@ -13,10 +13,10 @@ ms.workload: media
 ms.date: 1/14/2020
 ms.author: inhenkel
 ms.openlocfilehash: 831bc737fbd54685cdc8358642bc37e7b2df2c42
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98953722"
 ---
 # <a name="api-access-differences-between-azure-media-services-v2-to-v3-api"></a>Различия в доступе API между службами мультимедиа Azure версии 2 и V3 API

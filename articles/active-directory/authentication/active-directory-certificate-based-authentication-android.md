@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: annaba
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1001d5524fe99783cda4d5b77bdaceacc6791848
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96861379"
 ---
 # <a name="azure-active-directory-certificate-based-authentication-on-android"></a>Аутентификация на основе сертификата в Azure Active Directory на устройстве Android
@@ -33,7 +33,7 @@ ms.locfileid: "96861379"
 
 ## <a name="microsoft-mobile-applications-support"></a>Поддержка мобильных приложений Microsoft
 
-| "Приложения" | Поддержка |
+| Приложения | Поддержка |
 | --- | --- |
 | Приложение Azure Information Protection |![Установите флажок, обозначающий поддержку для этого приложения][1] |
 | Intune Портал компании |![Установите флажок, обозначающий поддержку для этого приложения][1] |

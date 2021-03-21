@@ -7,10 +7,10 @@ ms.manager: abhemraj
 ms.topic: troubleshooting
 ms.date: 01/02/2020
 ms.openlocfilehash: 4eeda2e4e418920522f7a65bef68928963c43ad4
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100581795"
 ---
 # <a name="troubleshoot-assessmentdependency-visualization"></a>Устранение неполадок с визуализацией оценок и зависимостей
@@ -221,6 +221,6 @@ ms.locfileid: "100581795"
 - Для виртуальных машин Hyper-V данные операционной системы собираются с узла Hyper-V.
 - Для физических серверов он извлекается с сервера.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Создание](how-to-create-assessment.md) или [Настройка](how-to-modify-assessment.md) оценки.

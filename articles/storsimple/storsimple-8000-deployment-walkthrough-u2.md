@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: alkohli
 ms.openlocfilehash: 2c9feb1131f6d2d0eb75ac71e27dc46c226c52c1
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94961062"
 ---
 # <a name="deploy-your-on-premises-storsimple-device-update-3-and-later"></a>Развертывание локального устройства StorSimple (с обновлением 3 и более поздней версии)
@@ -204,6 +204,6 @@ ms.locfileid: "94961062"
 
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Deploy and manage a StorSimple Cloud Appliance in Azure (Update 3 and later)](storsimple-8000-cloud-appliance-u2.md) (Развертывание и администрирование облачного устройства StorSimple в Azure (обновление 3 и более поздней версии)).
 * [Use the StorSimple Device Manager service to administer your StorSimple device](storsimple-8000-manager-service-administration.md) (Использование службы диспетчера устройств StorSimple для управления устройством StorSimple).

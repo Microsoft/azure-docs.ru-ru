@@ -12,10 +12,10 @@ ms.author: joanpo
 ms.reviewer: igorstan
 ms.custom: seo-lt-2019
 ms.openlocfilehash: 86150107273b247bef2c74e5b8c5272d7148587e
-ms.sourcegitcommit: 46c5ffd69fa7bc71102737d1fab4338ca782b6f1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94332097"
 ---
 # <a name="restore-an-existing-dedicated-sql-pool"></a>Восстановление существующего выделенного пула SQL
@@ -62,6 +62,6 @@ ms.locfileid: "94332097"
 
 5. Выберите **Review + Create** (Просмотреть и создать).
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [создание точки восстановления;](sqlpool-create-restore-point.md)

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/19/2020
 tags: connectors
 ms.openlocfilehash: 765bb66b572f0c046222cfb617fe4caa80925256
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94967408"
 ---
 # <a name="access-and-manage-ibm-db2-resources-by-using-azure-logic-apps"></a>Доступ к ресурсам IBM DB2 и управление ими с помощью Azure Logic Apps

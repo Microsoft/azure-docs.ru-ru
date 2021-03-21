@@ -7,10 +7,10 @@ author: bwren
 ms.author: bwren
 ms.date: 03/13/2020
 ms.openlocfilehash: 4a25d7a23d486c8ce22fa433cc1ead390726facc
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102048868"
 ---
 # <a name="azure-monitor-logs-connector-for-logic-apps-and-power-automate"></a>Соединитель Azure Monitor журналов для Logic Apps и автоматизации энергосбережения
@@ -28,7 +28,7 @@ ms.locfileid: "102048868"
 
 В зависимости от размера данных и используемого запроса соединитель может попасть в пределы и завершиться с ошибкой. Эти случаи можно обойти, если вы настраиваете повторение триггера для более частого выполнения и запросы меньше данных. Можно использовать запросы, которые объединяют данные, чтобы вернуть меньше записей и столбцов.
 
-## <a name="actions"></a>Actions
+## <a name="actions"></a>Действия
 В следующей таблице описаны действия, входящие в соединитель журналов Azure Monitor. Оба варианта позволяют выполнять запрос к журналу в Log Analytics рабочей области или Application Insights приложении. Разница заключается в способе возврата данных.
 
 > [!NOTE]
@@ -122,7 +122,7 @@ Event
 
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Дополнительные сведения о запросах журнала в Azure Monitor см. в [этой статье](./log-query-overview.md).
 - Дополнительные сведения о [Logic Apps](../../logic-apps/index.yml)
