@@ -7,10 +7,10 @@ ms.date: 02/19/2020
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: aafac1133b2bee54624d5f0b00061c5332fcd90b
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102631886"
 ---
 # <a name="windows-10-enterprise-multi-session-faq"></a>Windows 10 Корпоративная с поддержкой нескольких сеансов: часто задаваемые вопросы

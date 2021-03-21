@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 03/20/2020
 ms.openlocfilehash: 267ec0ed01fb85e9e29b0b8c9294d20d610db8fb
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102046573"
 ---
 # <a name="use-the-map-feature-of-vm-insights-to-understand-application-components"></a>Использование функции Map из VM Insights для понимания компонентов приложения
@@ -131,6 +131,6 @@ ms.locfileid: "102046573"
 
 По умолчанию на схеме показаны последние 30 минут. Если вы хотите увидеть, как просмотрелись зависимости в прошлом, можно запросить исторические диапазоны времени вплоть до одного часа. Чтобы выполнить запрос, используйте селектор **TimeRange** . Вы можете выполнить запрос, например во время инцидента, или просмотреть состояние перед изменением.  
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Чтобы определить узкие места, проверить производительность и получить общее представление об использовании виртуальных машин, см. статью [Просмотр состояния производительности для VM Insights](vminsights-performance.md).

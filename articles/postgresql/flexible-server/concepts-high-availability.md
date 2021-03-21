@@ -7,10 +7,10 @@ ms.service: postgresql
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.openlocfilehash: c0d9b6042ae695caa73d926653f237b756bf4971
-ms.sourcegitcommit: 22da82c32accf97a82919bf50b9901668dc55c97
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94366729"
 ---
 # <a name="high-availability-concepts-in-azure-database-for-postgresql---flexible-server"></a>Основные понятия высокого уровня доступности в базе данных Azure для PostgreSQL-гибкого сервера
@@ -115,7 +115,7 @@ ms.locfileid: "94366729"
 
 -  Если логическая декодирование или логическая репликация настроена с помощью гибкого сервера с высоким уровнем доступности, то в случае отработки отказа на резервный сервер, логические слоты репликации не копируются на резервный сервер.  
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 -   Сведения о [непрерывности бизнес-процессов](./concepts-business-continuity.md)
 -   Узнайте, как [управлять высокой доступностью](./how-to-manage-high-availability-portal.md)

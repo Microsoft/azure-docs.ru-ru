@@ -15,10 +15,10 @@ ms.author: curtand
 ms.reviewer: shaunliu
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 45144f64789a19390984c3f9f6a660e3c3300215
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96002499"
 ---
 # <a name="view-activity-and-audit-history-for-azure-resource-roles-in-privileged-identity-management"></a>Просмотр журнала активности и аудита для ролей ресурсов Azure в управление привилегированными пользователями
@@ -138,7 +138,7 @@ ms.locfileid: "96002499"
 
 Как правило, событие журнала непосредственно над событием утверждения является событием для события "Добавление участника в роль завершено", где инициатором, **инициированным (субъектом)** , является запрашивающий. В большинстве случаев вам не нужно искать запрашивающий запрос в запросе на утверждение с точки зрения аудита.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Назначение ролей ресурсов Azure в управление привилегированными пользователями](pim-resource-roles-assign-roles.md)
 - [Утверждение или отклонение запросов ролей ресурсов Azure в управление привилегированными пользователями](pim-resource-roles-approval-workflow.md)

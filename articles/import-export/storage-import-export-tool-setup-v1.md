@@ -9,10 +9,10 @@ ms.date: 01/14/2021
 ms.author: alkohli
 ms.subservice: common
 ms.openlocfilehash: 8bfb55cbe8ba4876e94dc1622cbee33e4d471a65
-ms.sourcegitcommit: 75041f1bce98b1d20cd93945a7b3bd875e6999d0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98706696"
 ---
 # <a name="setting-up-the-azure-importexport-tool-v1"></a>Настройка средства импорта и экспорта Azure v1
@@ -247,7 +247,7 @@ Examples:
         es\drama /dstdir:movies/drama/ /skipwrite
 ```  
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Подготовка жестких дисков для задания импорта](/previous-versions/azure/storage/common/storage-import-export-tool-preparing-hard-drives-import-v1)   
 * [Предварительный просмотр использования дисков для задания экспорта](/previous-versions/azure/storage/common/storage-import-export-tool-previewing-drive-usage-export-v1)   

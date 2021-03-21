@@ -6,10 +6,10 @@ ms.reviewer: jasonh
 ms.topic: how-to
 ms.date: 06/30/2017
 ms.openlocfilehash: a6c560cf4ec11197183711656d69024591e7008c
-ms.sourcegitcommit: df66dff4e34a0b7780cba503bb141d6b72335a96
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96512696"
 ---
 # <a name="use-user-defined-combiner"></a>Использование определяемого пользователем средства объединения
@@ -303,6 +303,6 @@ USING new MyNameSpace.MyCombiner();
 USING MyNameSpace.MyCombiner();
 ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Общие сведения о программировании U-SQL](data-lake-analytics-u-sql-programmability-guide.md)
 * [Инструкции по программированию U-SQL — определяемый пользователем тип и функции](data-lake-analytics-u-sql-programmability-guide-UDT-AGG.md)

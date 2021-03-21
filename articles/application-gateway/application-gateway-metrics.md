@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 06/06/2020
 ms.author: surmb
 ms.openlocfilehash: 9faa3a284aa7151880526c1ee70cfadc3dbf3089
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100576105"
 ---
 # <a name="metrics-for-application-gateway"></a>Метрики для шлюза приложений
@@ -234,7 +234,7 @@ ms.locfileid: "100576105"
 
 Чтобы лучше понять, как действуют веб-перехватчики и как их использовать с оповещениями, см. статью [Настройка веб-перехватчиков для оповещений на основе метрик Azure](../azure-monitor/alerts/alerts-webhooks.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * См. сведения о визуализации журналов счетчиков и событий с помощью [журналов Azure Monitor](../azure-monitor/insights/azure-networking-analytics.md).
 * [Визуализируйте журнал действий Azure с помощью Power BI](https://powerbi.microsoft.com/blog/monitor-azure-audit-logs-with-power-bi/) записи блога.

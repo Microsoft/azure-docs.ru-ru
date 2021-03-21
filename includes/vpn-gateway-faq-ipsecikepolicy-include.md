@@ -9,17 +9,17 @@ ms.date: 12/05/2019
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 6684c4269f14b91ded651dadff3f0a2e0878a4f2
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96025621"
 ---
 ### <a name="is-custom-ipsecike-policy-supported-on-all-azure-vpn-gateway-skus"></a>Поддерживается ли политика IPsec/IKE во всех номерах SKU VPN-шлюзов Azure?
 Пользовательская политика IPsec/IKE поддерживается во всех SKU Azure, за исключением SKU "Базовый".
 
 ### <a name="how-many-policies-can-i-specify-on-a-connection"></a>Сколько политик можно указать для подключения?
-Можно указать только ***одну** _ комбинацию политик для каждого подключения.
+Можно указать только ***одну*** комбинацию политик для каждого подключения.
 
 ### <a name="can-i-specify-a-partial-policy-on-a-connection-for-example-only-ike-algorithms-but-not-ipsec"></a>Можно ли указать частичную политику для подключения (например, только алгоритмы IKE без IPsec)?
 Нет, следует указать все алгоритмы и параметры для IKE (основной режим) и IPsec (быстрый режим). Указать частичную политику нельзя.
@@ -27,7 +27,7 @@ ms.locfileid: "96025621"
 ### <a name="what-are-the-algorithms-and-key-strengths-supported-in-the-custom-policy"></a>Какие алгоритмы и уровни стойкости ключей поддерживает настраиваемая политика?
 В таблице ниже перечислены поддерживаемые алгоритмы шифрования и уровни стойкости ключей, которые могут настроить клиенты. Необходимо выбрать один вариант для каждого поля.
 
-| _ *IPsec/IKEv2**  | **Параметры**                                                                   |
+| **IPsec/IKEv2**  | **Параметры**                                                                   |
 | ---              | ---                                                                           |
 | Шифрование IKEv2 | AES256, AES192, AES128, DES3, DES                                             |
 | Проверка целостности IKEv2  | SHA384, SHA256, SHA1, MD5                                                     |

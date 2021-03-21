@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 11/17/2020
 ms.author: alkohli
 ms.openlocfilehash: 9fa4c678a04342b47601f81ede7c49ab841f42ba
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102630968"
 ---
 # <a name="configure-vpn-on-your-azure-stack-edge-mini-r-device-via-azure-powershell"></a>Настройка VPN на Azure Stack пограничном устройстве R с помощью Azure PowerShell
@@ -238,7 +238,7 @@ VPN-подключение обеспечивает второй уровень 
 
     ![Включить конфигурацию P2S 3](media/azure-stack-edge-mini-r-configure-vpn-powershell/extract-exe.png)
 
-3. Создайте временный путь. Пример.
+3. Создайте временный путь. Пример:
 
     `C:\NewTemp\vnet\tmp`
 
@@ -382,6 +382,6 @@ Outputs                 :
 Get-AzResourceGroupDeploymentOperation -ResourceGroupName $ResourceGroupName -DeploymentName $AzureDeploymentName
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Настройте VPN через локальный пользовательский интерфейс на устройстве Azure Stack](azure-stack-edge-mini-r-deploy-configure-certificates-vpn-encryption.md#configure-vpn).

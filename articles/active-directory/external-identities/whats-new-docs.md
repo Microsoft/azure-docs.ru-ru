@@ -10,10 +10,10 @@ ms.author: mimart
 author: msmimart
 manager: CelesteDG
 ms.openlocfilehash: dda3f7c8f4a9a21e16ebab7d243a004c01a40eed
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102453672"
 ---
 # <a name="azure-active-directory-external-identities-whats-new"></a>Azure Active Directory внешние удостоверения: новые возможности

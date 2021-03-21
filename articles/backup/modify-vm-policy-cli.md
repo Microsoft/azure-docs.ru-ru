@@ -4,10 +4,10 @@ description: Узнайте, как обновить существующую п
 ms.topic: conceptual
 ms.date: 12/31/2020
 ms.openlocfilehash: 33083d6585d2b9296cd184ba258b8d2143d685b4
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98728584"
 ---
 # <a name="update-the-existing-vm-backup-policy-using-cli"></a>Обновление существующей политики резервного копирования виртуальных машин с помощью интерфейса командной строки
@@ -20,7 +20,7 @@ ms.locfileid: "98728584"
 
 1. Выполните команду [AZ Backup Policy показывать](/cli/azure/backup/policy#az_backup_policy_show) , чтобы получить сведения о политике, которую необходимо обновить.
 
-    Пример.
+    Пример
 
     ```azurecli
     az backup policy show --name testing123 --resource-group rg1234 --vault-name testvault
@@ -110,6 +110,6 @@ ms.locfileid: "98728584"
 >[!NOTE]
 >Вы также можете получить пример политики JSON, выполнив команду [AZ Backup Policy Get-Default-for-VM](/cli/azure/backup/policy#az_backup_policy_get_default_for_vm) .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Управление резервными копиями виртуальных машин Azure с помощью службы Azure Backup](backup-azure-manage-vms.md)

@@ -11,10 +11,10 @@ ms.date: 09/01/2020
 ms.author: danis
 ms.reviewer: cynthn
 ms.openlocfilehash: c7ca147f0a5b907ee0c5c66d53a219fe75ab2179
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102551714"
 ---
 # <a name="creating-generalized-images-without-a-provisioning-agent"></a>Создание обобщенных образов без агента подготовки
@@ -79,7 +79,7 @@ $ sudo rm -rf /var/lib/waagent /etc/waagent.conf /var/log/waagent.log
 
 Кроме того, в виртуальной машине, так как мы удалили агент Linux для Azure, необходимо предоставить механизм для подготовки отчетов. 
 
-#### <a name="python-script"></a>Скрипт Python
+#### <a name="python-script"></a>Сценарий Python
 
 ```python
 import http.client

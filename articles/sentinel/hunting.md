@@ -17,10 +17,10 @@ ms.workload: na
 ms.date: 09/10/2019
 ms.author: yelevin
 ms.openlocfilehash: b88185a09e69b1c7bd6c6c58b8e22190b4a2e394
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100576752"
 ---
 # <a name="hunt-for-threats-with-azure-sentinel"></a>Поиск угроз с помощью Azure Sentinel
@@ -138,7 +138,7 @@ ms.locfileid: "100576752"
 
    ![Пользовательский запрос](./media/tutorial-hunting/custom-query.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 В этой статье вы узнали, как выполнить поиск с помощью Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 
 

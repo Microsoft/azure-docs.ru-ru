@@ -15,10 +15,10 @@ ms.workload: TBD
 ms.date: 02/08/2017
 ms.author: alkohli
 ms.openlocfilehash: c96dcc2bae03b1bd05fb3d1512dba757f180eed8
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94964921"
 ---
 # <a name="what-is-storsimple-for-cloud-solutions-providers-program"></a>Что такое StorSimple для программы поставщиков облачных решений?
@@ -40,7 +40,7 @@ StorSimple доступен по программе CSP в виде службы
 
 Дополнительные сведения см. в статье [Развертывание виртуального массива StorSimple для программы поставщика облачных решений](storsimple-partner-csp-deploy.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Если у вас есть дополнительные вопросы о StorSimple в CSP, перейдите к статье [StorSimple for CSP: Frequently asked questions](storsimple-partner-csp-faq.md) (StorSimple в CSP: часто задаваемые вопросы).
 - Если вы уже готовы развернуть StorSimple, перейдите к статье [Развертывание виртуального массива StorSimple для программы поставщика облачных решений](storsimple-partner-csp-deploy.md).

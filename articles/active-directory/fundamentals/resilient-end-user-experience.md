@@ -14,10 +14,10 @@ ms.date: 11/30/2020
 ms.custom: it-pro
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f6896a812ec173994a1299a28ff2e99a0f351391
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98724447"
 ---
 # <a name="resilient-end-user-experience"></a>Устойчивая работа конечного пользователя
@@ -95,7 +95,7 @@ ms.locfileid: "98724447"
 
 Периодически проверяйте доступность сети CDN и производительность распространения содержимого с помощью комплексного сценария и нагрузочного тестирования. Если вы планируете появление предстоящего всплесков в связи с повышением или праздничным трафиком, измените оценки для нагрузочного тестирования.
   
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Ресурсы устойчивости для разработчиков Azure AD B2C](resilience-b2c.md)
   

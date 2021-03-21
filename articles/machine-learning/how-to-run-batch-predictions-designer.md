@@ -11,10 +11,10 @@ ms.date: 02/05/2020
 ms.topic: conceptual
 ms.custom: how-to, designer
 ms.openlocfilehash: dda47d3ff561d4d57045dbb28f8c411e193086d5
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101657376"
 ---
 # <a name="run-batch-predictions-using-azure-machine-learning-designer"></a>Выполнение пакетных прогнозов с помощью конструктора Машинного обучения Azure
@@ -151,13 +151,13 @@ ms.locfileid: "101657376"
 
 Обратите внимание, что в конвейере вывода будут обновляться только модели, а преобразование данных не будет обновлено.
 
-Чтобы использовать обновленное преобразование в конвейере вывода, необходимо зарегистрировать выходные данные преобразования модуля преобразования в виде набора данных.
+Чтобы использовать обновленное преобразование в конвейере вывода, вам потребуется зарегистрировать выходные данные преобразования, предоставленные модулем преобразования, в виде набора данных.
 
-![Снимок экрана, показывающий, как зарегистрировать набор данных преобразования](./media/how-to-run-batch-predictions-designer/register-transformation-dataset.png)
+![Снимок экрана: как зарегистрировать набор данных преобразования](./media/how-to-run-batch-predictions-designer/register-transformation-dataset.png)
 
-Затем вручную замените **TD-** Module в конвейере вывода на зарегистрированный набор данных.
+Затем вручную замените модуль **TD-** в конвейере вывода зарегистрированным набором данных.
 
-![Снимок экрана, показывающий, как заменить модуль преобразования](./media/how-to-run-batch-predictions-designer/replace-td-module-batch-inference-pipeline.png)
+![Снимок экрана: как заменить модуль преобразования](./media/how-to-run-batch-predictions-designer/replace-td-module-batch-inference-pipeline.png)
 
 Затем можно отправить конвейер вывода с обновленной моделью и преобразованием и опубликовать.
 

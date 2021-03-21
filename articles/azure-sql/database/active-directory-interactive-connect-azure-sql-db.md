@@ -12,10 +12,10 @@ ms.author: MirekS
 ms.reviewer: vanto
 ms.date: 04/23/2020
 ms.openlocfilehash: 93831ec4c1dc3e34c2ea144e71b67dae711ee870
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94841654"
 ---
 # <a name="connect-to-azure-sql-database-with-azure-ad-multi-factor-authentication"></a>Подключение к базе данных SQL Azure с помощью многофакторной идентификации Azure AD
@@ -27,7 +27,7 @@ ms.locfileid: "94841654"
 
 ## <a name="multi-factor-authentication-for-azure-sql-database"></a>Многофакторная идентификация для базы данных SQL Azure
 
-Начиная с версии .NET Framework 4.7.2, перечисление [`SqlAuthenticationMethod`](/dotnet/api/system.data.sqlclient.sqlauthenticationmethod) имеет новое значение: `ActiveDirectoryInteractive` . В клиентской программе C# значение перечисления указывает системе использовать интерактивный режим Azure Active Directory (Azure AD), который поддерживает многофакторную проверку подлинности для подключения к базе данных SQL Azure. Пользователь, который затем запускает программу, увидит следующие диалоговые окна:
+Начиная с версии платформа .NET Framework 4.7.2, перечисление [`SqlAuthenticationMethod`](/dotnet/api/system.data.sqlclient.sqlauthenticationmethod) имеет новое значение: `ActiveDirectoryInteractive` . В клиентской программе C# значение перечисления указывает системе использовать интерактивный режим Azure Active Directory (Azure AD), который поддерживает многофакторную проверку подлинности для подключения к базе данных SQL Azure. Пользователь, который затем запускает программу, увидит следующие диалоговые окна:
 
 * Диалоговое окно с отображением имени пользователя Azure AD, в котором запрашивается пароль пользователя.
 
@@ -39,12 +39,12 @@ ms.locfileid: "94841654"
 
 * Диалоговое окно, запрашивающее код проверки многофакторной проверки подлинности, который система отправила на мобильный телефон.
 
-Сведения о настройке использования многофакторной идентификации в Azure AD см. [в статье Приступая к работе с многофакторной идентификацией Azure AD в облаке](../../active-directory/authentication/howto-mfa-getstarted.md).
+Сведения о том, как настроить Azure AD таким образом, чтобы требовалась многофакторная проверка подлинности, см. в статье [Приступая к работе со службой Многофакторной идентификации Azure AD в облаке](../../active-directory/authentication/howto-mfa-getstarted.md).
 
-Снимки экрана с этими диалоговыми окнами см. в статье [Настройка многофакторной проверки подлинности для SQL Server Management Studio и Azure AD](authentication-mfa-ssms-configure.md).
+Снимки экрана этих диалоговых окон см. в статье [Настройка Многофакторной идентификации для SQL Server Management Studio и Azure AD](authentication-mfa-ssms-configure.md).
 
 > [!TIP]
-> Вы можете выполнять поиск .NET Framework API на [странице средства браузера .NET API](/dotnet/api/).
+> Вы можете выполнять поиск платформа .NET Framework API на [странице средства браузера .NET API](/dotnet/api/).
 >
 > Можно также выполнить поиск непосредственно с [необязательным &lt; &gt; параметром? Term = Поиск значения](/dotnet/api/?term=SqlAuthenticationMethod).
 
@@ -62,7 +62,7 @@ ms.locfileid: "94841654"
 
 1. В портал Azure выберите **Azure Active Directory**  >  **Регистрация приложений**  >  **Новая регистрация**.
 
-    ![Регистрация приложения](./media/active-directory-interactive-connect-azure-sql-db/image1.png)
+    ![Регистрация приложений](./media/active-directory-interactive-connect-azure-sql-db/image1.png)
 
     После создания регистрации приложения создается и отображается значение **идентификатора приложения** .
 

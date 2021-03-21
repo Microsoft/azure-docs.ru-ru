@@ -8,10 +8,10 @@ ms.author: laobri
 ms.date: 02/24/2020
 ms.topic: reference
 ms.openlocfilehash: 7a5675ce0358092610766d1441e433ff5d96bae4
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101655706"
 ---
 # <a name="azure-data-science-virtual-machine-release-notes"></a>Заметки о выпуске виртуальной машины Azure для обработки и анализа данных
@@ -20,7 +20,7 @@ ms.locfileid: "101655706"
 
 Сведения об известных ошибках и обходных путях см. в [списке известных проблем](reference-known-issues.md) .
 
-## <a name="2020-02-24"></a>2020-02-24
+## <a name="2020-02-24"></a>24.02.2020
 
 Образы виртуальных машин для обработки и анализа данных для образов [Ubuntu 18,04](https://azuremarketplace.microsoft.com/marketplace/apps/microsoft-dsvm.ubuntu-1804?tab=Overview) и [Windows 2019](https://azuremarketplace.microsoft.com/marketplace/apps/microsoft-dsvm.dsvm-win-2019?tab=Overview) теперь доступны.
 

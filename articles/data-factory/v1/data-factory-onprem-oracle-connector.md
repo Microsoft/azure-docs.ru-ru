@@ -8,10 +8,10 @@ ms.date: 05/15/2018
 ms.author: jingwang
 robots: noindex
 ms.openlocfilehash: 02fc142a08176aa577250417c0e394218e832f34
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100387348"
 ---
 # <a name="copy-data-to-or-from-oracle-on-premises-by-using-azure-data-factory"></a>Копирование данных в локальную базу данных Oracle и обратно с помощью Фабрики данных Azure
@@ -36,7 +36,7 @@ ms.locfileid: "100387348"
 
 [!INCLUDE [data-factory-supported-sources](../../../includes/data-factory-supported-sources.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Фабрика данных поддерживает подключение к локальным источникам Oracle с помощью шлюза управления данными. Дополнительные сведения о шлюзе управления данными см. в [этой](data-factory-data-management-gateway.md) статье. Пошаговые инструкции по настройке шлюза для перемещения данных с помощью конвейера см. в статье, посвященной [перемещению данных между локальными источниками и облаком](data-factory-move-data-between-onprem-and-cloud.md).
 
@@ -94,7 +94,7 @@ ms.locfileid: "100387348"
 
 В приведенной ниже таблице описываются элементы JSON, которые относятся к связанной службе Oracle.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 | --- | --- | --- |
 | type |Для свойства **Type** необходимо задать значение **OnPremisesOracle**. |Да |
 | driverType | Укажите, какой драйвер следует использовать для копирования данных в базу данных Oracle и из нее. Допустимые значения: **Майкрософт** или **ODP** (по умолчанию). Дополнительные сведения о драйверах см. в разделе [Поддерживаемые версии и установка](#supported-versions-and-installation). | Нет |
@@ -145,7 +145,7 @@ ms.locfileid: "100387348"
 
 Раздел **typeProperties** отличается для каждого типа набора данных и предоставляет сведения о расположении данных в хранилище данных. Раздел **typeProperties** набора данных типа **OracleTable** имеет следующие свойства.
 
-| Свойство | Описание | Обязательно |
+| Свойство. | Описание | Обязательно |
 | --- | --- | --- |
 | tableName |Имя таблицы в базе данных Oracle, на которое ссылается связанная служба. |Нет (если указан параметр **oracleReaderQuery** объекта **OracleSource**) |
 
@@ -164,7 +164,7 @@ ms.locfileid: "100387348"
 
 Если источник относится к типу **OracleSource**, в разделе **typeProperties** для действия копирования доступны следующие свойства:
 
-| Свойство | Описание | Допустимые значения | Обязательно |
+| Свойство. | Описание | Допустимые значения | Обязательно |
 | --- | --- | --- | --- |
 | oracleReaderQuery |Используйте пользовательский запрос для чтения данных. |Строка запроса SQL. Например, "select \* from **MyTable**". <br/><br/>Если не указано другое, выполняется инструкция SQL: "select \* from **MyTable**" |Нет<br />(если для свойства **tableName** задано значение **dataset**) |
 
@@ -172,7 +172,7 @@ ms.locfileid: "100387348"
 
 **OracleSink** поддерживает следующие свойства:
 
-| Свойство | Описание | Допустимые значения | Обязательно |
+| Свойство. | Описание | Допустимые значения | Обязательно |
 | --- | --- | --- | --- |
 | writeBatchTimeout |Время ожидания до выполнения операции пакетной вставки, пока не завершится срок ее действия. |**Интервал времени**<br/><br/> Пример: 00:30:00 (30 минут). |Нет |
 | writeBatchSize |Вставляет данные в таблицу SQL, когда размер буфера достигает значения **writeBatchSize**. |Целое число (количество строк) |Нет (значение по умолчанию — 100) |
@@ -601,7 +601,7 @@ Message=Operation failed in Oracle Database with the following error: 'ORA-01861
 | BLOB |Byte[]<br/>(поддерживается только в Oracle 10g и более поздних версиях при использовании драйвера Майкрософт) |
 | CHAR |Строка |
 | CLOB |Строка |
-| DATE |Дата и время |
+| DATE |Дата/время |
 | FLOAT |десятичное число, строка (если точность больше 28) |
 | INTEGER |десятичное число, строка (если точность больше 28) |
 | INTERVAL YEAR TO MONTH |Int32 |
@@ -614,9 +614,9 @@ Message=Operation failed in Oracle Database with the following error: 'ORA-01861
 | NVARCHAR2 |Строка |
 | RAW |Byte[] |
 | ROWID |Строка |
-| timestamp |Дата и время |
-| TIMESTAMP WITH LOCAL TIME ZONE |Дата и время |
-| TIMESTAMP WITH TIME ZONE |Дата и время |
+| timestamp |Дата/время |
+| TIMESTAMP WITH LOCAL TIME ZONE |Дата/время |
+| TIMESTAMP WITH TIME ZONE |Дата/время |
 | UNSIGNED INTEGER |Число |
 | VARCHAR2 |Строка |
 | XML |Строка |

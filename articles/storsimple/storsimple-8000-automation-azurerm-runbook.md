@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 10/23/2017
 ms.author: alkohli
 ms.openlocfilehash: b5f2a86fb7c776436ea707ef293a66c033014c33
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96021084"
 ---
 # <a name="use-azure-automation-runbooks-to-manage-storsimple-devices"></a>Управление устройствами StorSimple с помощью Runbook службы автоматизации Azure
@@ -22,7 +22,7 @@ ms.locfileid: "96021084"
 
 В этом разделе приведен пример сценария Windows PowerShell для StorSimple и подробные сведения о различных шагах, необходимых для импорта сценария в Runbook, а также публикации и выполнения Runbook.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Перед началом работы убедитесь, что у вас есть следующие компоненты:
 
@@ -194,7 +194,7 @@ ms.locfileid: "96021084"
 
 4. В созданной учетной записи перейдите к разделу **Общие ресурсы > Модули** и выберите **+ Add module** (+ Добавить модуль).
 
-5. В колонке **Добавить модуль** перейдите к нужному сжатому модулю, выберите и откройте его. Нажмите кнопку **ОК**.
+5. В колонке **Добавить модуль** перейдите к нужному сжатому модулю, выберите и откройте его. Нажмите кнопку **OK**.
 
     ![На снимке экрана показана область добавить модуль с значением отправки файла и ОК.](./media/storsimple-8000-automation-azurerm-runbook/add-module.png)
 
@@ -214,6 +214,6 @@ ms.locfileid: "96021084"
 
     ![На снимке экрана показана панель редактирования Runbook PowerShell, в которой предлагается перейти к публикации Runbook](./media/storsimple-8000-automation-azurerm-runbook/publish-runbook.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Использование службы диспетчера устройств StorSimple для администрирования устройства StorSimple](storsimple-8000-manager-service-administration.md).

@@ -7,10 +7,10 @@ ms.reviewer: deli, logicappspm
 ms.topic: conceptual
 ms.date: 04/13/2020
 ms.openlocfilehash: ea153b1927a337be29c2eb69e2417cc250abf5e8
-ms.sourcegitcommit: 22da82c32accf97a82919bf50b9901668dc55c97
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94366059"
 ---
 # <a name="handle-throttling-problems-429---too-many-requests-errors-in-azure-logic-apps"></a>Обработку проблем регулирования (429-"слишком много запросов") в Azure Logic Apps
@@ -168,6 +168,6 @@ ms.locfileid: "94366059"
   
   Таким образом, если целевая служба или система поддерживает веб-перехватчики или предоставляет соединитель с версией веб-перехватчика, этот вариант лучше, чем использование версии опроса. Чтобы определить триггеры и действия веб-перехватчика, убедитесь, что они имеют `ApiConnectionWebhook` тип или не нуждаются в указании периодичности. Дополнительные сведения см. в статье [триггер APIConnectionWebhook](../logic-apps/logic-apps-workflow-actions-triggers.md#apiconnectionwebhook-trigger) и [действие APIConnectionWebhook](../logic-apps/logic-apps-workflow-actions-triggers.md#apiconnectionwebhook-action).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения об [ограничениях Logic Apps и конфигурации](../logic-apps/logic-apps-limits-and-config.md)

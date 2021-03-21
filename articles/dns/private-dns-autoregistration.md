@@ -8,10 +8,10 @@ ms.topic: article
 ms.date: 9/24/2019
 ms.author: rohink
 ms.openlocfilehash: 8e976199730ec74f9e76b9f4199e90e192916474
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94966723"
 ---
 # <a name="what-is-the-autoregistration-feature-of-azure-dns-private-zones"></a>Что такое функция авторегистрации в Azure DNS частных зонах
@@ -32,7 +32,7 @@ ms.locfileid: "94966723"
 * Записи DNS создаются автоматически, только если основной сетевой адаптер виртуальной машины использует DHCP. Если настроены статические IP-адреса (например, для использования [нескольких IP-адресов в Azure](../virtual-network/virtual-network-multiple-ip-addresses-portal.md#os-config)), при авторегистрации не создаются записи для этой виртуальной машины.
 * Авторегистрация для IPv6 (записи AAAA) не поддерживается.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте, как создать частную зону в Azure DNS с помощью [Azure PowerShell](./private-dns-getstarted-powershell.md) или [интерфейса командной строки Azure](./private-dns-getstarted-cli.md).
 

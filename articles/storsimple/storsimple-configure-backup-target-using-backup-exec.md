@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 12/05/2016
 ms.author: matd
 ms.openlocfilehash: 66a1e22282864d0425173504735d6beb42b76ad7
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94967267"
 ---
 # <a name="storsimple-as-a-backup-target-with-backup-exec"></a>Использование StorSimple в качестве целевого объекта архивации с помощью Backup Exec
@@ -233,7 +233,7 @@ StorSimple является решением, интегрированным с 
 -   StorSimple поддерживает полные и добавочные резервные копии Backup Exec. Мы не советуем использовать синтетические и разностные резервные копии.
 -   Файлы резервных данных должны содержать только данные для конкретного задания. Например, запрещено добавлять носители для разных заданий.
 -   Отключение проверки заданий. При необходимости запланируйте ее после последнего задания архивации. Важно понимать, что это задание влияет на окно архивации.
--   Выберите **хранилище**  >  **Your disk**  >  **сведения о**  >  **свойствах** диска. Отключите параметр **Pre-allocate disk space** (Выделить дисковое пространство).
+-   Выберите **хранилище**  >    >  **сведения о**  >  **свойствах** диска. Отключите параметр **Pre-allocate disk space** (Выделить дисковое пространство).
 
 Чтобы просмотреть последние параметры Backup Exec и рекомендации по реализации этих требований, посетите [веб-сайт Veritas](https://www.veritas.com).
 
@@ -323,7 +323,7 @@ StorSimple является решением, интегрированным с 
 
 #### <a name="to-assign-storsimple-volumes-to-a-backup-exec-backup-job"></a>Чтобы назначить тома StorSimple заданию архивации Backup Exec, сделайте следующее:
 
-1.  В консоли управления Backup Exec выберите **узел** резервное копирование резервных копий  >  **Backup**  >  **на диск**.
+1.  В консоли управления Backup Exec выберите **узел** резервное копирование резервных копий  >    >  **на диск**.
 
     ![Параметры Host (Узел), Backup (Архивация) и Backup to Disk (Архивация на диск) в консоли управления Backup Exec](./media/storsimple-configure-backup-target-using-backup-exec/image14.png)
 
@@ -415,7 +415,7 @@ StorSimple является решением, интегрированным с 
 
     ![Снимок экрана, на котором показано, где выбран параметр не проверять данные для этого задания.](./media/storsimple-configure-backup-target-using-backup-exec/image23.png)
 
-6.  Нажмите кнопку **ОК**.
+6.  Щелкните **ОК**.
 
     ![Снимок экрана, на котором показаны свойства определения резервного копирования.](./media/storsimple-configure-backup-target-using-backup-exec/image24.png)
 
@@ -487,7 +487,7 @@ StorSimple является решением, интегрированным с 
 - [Using GPT drives](/previous-versions/windows/hardware/design/dn653580(v=vs.85)#EHD) (Использование дисков GPT)
 - [Включение и настройка теневых копий общих папок](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771893(v=ws.11))
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как выполнить [восстановление из набора резервных копий](./storsimple-8000-restore-from-backup-set-u2.md).
 - Узнайте, как выполнить [отработку отказа и аварийное восстановление устройства](./storsimple-8000-device-failover-disaster-recovery.md).

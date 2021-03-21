@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 11/07/2020
 ms.author: allensu
 ms.openlocfilehash: 8ab4f698c7149d8d57f790e221ccbe35ec090fe6
-ms.sourcegitcommit: 22da82c32accf97a82919bf50b9901668dc55c97
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94370511"
 ---
 # <a name="onboard-a-root-or-apex-domain-to-an-existing-azure-cdn-endpoint"></a>Подключение корневого или вершине домена к существующей конечной точке Azure CDN
@@ -40,9 +40,9 @@ Azure CDN использует записи CNAME для проверки вла
     | Параметр | Значение |
     | ------- | ------|
     | Имя | Введите **@** . |
-    | Тип | Выберите **.** |
-    | Набор записей псевдонима | Выберите **Да**. |
-    | Тип псевдонима | Выберите **ресурс Azure**. |
+    | Type | Выберите **.** |
+    | Набор записей псевдонима | Выберите ответ **Да**. |
+    | Тип псевдонима | Выберите **Ресурс Azure**. |
     | Выберите подписку. | Выберите свою подписку. |
     | Ресурс Azure | Выберите конечную точку CDN. |
 
@@ -64,13 +64,13 @@ Azure CDN использует записи CNAME для проверки вла
     
 2. На странице **профиля CDN** выберите конечную точку CDN, чтобы связать ее с личным доменом.
 
-    :::image type="content" source="media/onboard-apex-domain/cdn-endpoint-selection.png" alt-text="Выбор конечной точки CDN" border="true":::
+    :::image type="content" source="media/onboard-apex-domain/cdn-endpoint-selection.png" alt-text="Выбор конечной точки CDN" border="true":::
     
-3. Выберите **+ личный домен**. 
+3. Выберите **+ Личный домен**. 
 
-   :::image type="content" source="media/onboard-apex-domain/cdn-custom-domain-button.png" alt-text="Кнопка &quot;добавить личный домен&quot;" border="true":::
+   :::image type="content" source="media/onboard-apex-domain/cdn-custom-domain-button.png" alt-text="Кнопка добавления личного домена" border="true":::
 
-4. В **области Добавить личный домен** , **имя узла конечной точки** — это предварительно заполненный и производный от URL-адреса конечной точки CDN: **\<endpoint-hostname>** . azureedge.NET. Их невозможно изменить.
+4. В разделе **Добавить личный домен** значение для параметра **Имя узла конечной точки** заполняется автоматически и выводится из URL-адреса конечной точки CDN: **\<endpoint-hostname>** .azureedge.net. Их невозможно изменить.
 
 5. В поле **пользовательское имя узла** введите пользовательский корневой или вершине домен, чтобы использовать его в качестве исходного домена записи CNAME. 
     1. Например, **contoso.com**. **Не используйте имя поддомена cdnverify**.
@@ -90,6 +90,6 @@ Azure CDN использует записи CNAME для проверки вла
 
 Дополнительные сведения о включении протокола HTTPS в пользовательском домене для Azure CDN см. в разделе [учебник. Настройка HTTPS в пользовательском домене Azure CDN](cdn-custom-ssl.md)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как [создать конечную точку CDN](cdn-create-new-endpoint.md).

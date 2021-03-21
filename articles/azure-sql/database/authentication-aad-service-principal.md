@@ -10,10 +10,10 @@ ms.author: mireks
 ms.reviewer: vanto
 ms.date: 02/11/2021
 ms.openlocfilehash: 68267cdedd2f0b64549791866e8750cf42928ab4
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103201245"
 ---
 # <a name="azure-active-directory-service-principal-with-azure-sql"></a>Субъект-служба Azure Active Directory с SQL Azure
@@ -100,7 +100,7 @@ ms.locfileid: "103201245"
 - Использование приложения Azure AD с субъектом-службой из другого клиента Azure AD завершится ошибкой при доступе к базе данных SQL или Управляемый экземпляр SQL, созданной в другом клиенте. Субъект-служба, назначенный этому приложению, должен принадлежать тому же клиенту, что и логический сервер SQL или Управляемый экземпляр.
 - Для настройки отдельного приложения Azure AD в качестве администратора Azure AD для SQL Azure с помощью PowerShell необходим модуль [Az.Sql 2.9.0](https://www.powershellgallery.com/packages/Az.Sql/2.9.0) или более поздней версии. Убедитесь, что используется последняя версия модуля.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Руководство по созданию пользователей Azure AD с помощью приложений Azure AD](authentication-aad-service-principal-tutorial.md)

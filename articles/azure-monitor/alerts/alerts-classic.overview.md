@@ -4,10 +4,10 @@ description: Классические оповещения устарели. О�
 ms.topic: conceptual
 ms.date: 02/14/2021
 ms.openlocfilehash: bce29c94c3cbacd5b7e38cf30b699ab5ca57f904
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102045434"
 ---
 # <a name="what-are-classic-alerts-in-microsoft-azure"></a>Что такое классические оповещения в Microsoft Azure?
@@ -81,7 +81,7 @@ ms.locfileid: "102045434"
 - Приложение логики Azure
 - сторонней службы.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Изучите правила создания оповещений и ознакомьтесь с их настройкой с помощью следующих средств:
 
 * Дополнительные сведения о [метриках](../data-platform.md)

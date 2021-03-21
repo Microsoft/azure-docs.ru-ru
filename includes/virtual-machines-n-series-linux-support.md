@@ -9,10 +9,10 @@ ms.date: 02/11/2019
 ms.author: cynthn
 ms.custom: include file
 ms.openlocfilehash: 4bfac9be5041fdf4ebfe7ea56f064b8b85806703
-ms.sourcegitcommit: fc8ce6ff76e64486d5acd7be24faf819f0a7be1d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98859998"
 ---
 ## <a name="supported-distributions-and-drivers"></a>Поддерживаемые дистрибутивы и драйверы
@@ -31,7 +31,7 @@ ms.locfileid: "98859998"
 
 Драйверы сетки, распространяемые Azure, не работают на виртуальных машинах серии, отличных от NV, таких как NC, NCv2, NCv3, ND и NDv2.
 
-|Распределение|Драйвер|
+|Distribution|Драйвер|
 | --- | -- |
 |Ubuntu 18.04 LTS<br/><br/>Ubuntu 16.04 LTS<br/><br/>Red Hat Enterprise Linux 7,7 7,9, 8,0, 8,1<br/><br/>SUSE Linux Enterprise Server 12 SP2 <br/><br/>SUSE Linux Enterprise Server 15 SP2 | NVIDIA GRID 12,0, драйвер ветвей [R460](https://go.microsoft.com/fwlink/?linkid=874272)(. exe)|
 
