@@ -11,10 +11,10 @@ ms.date: 11/03/2020
 ms.author: xiaoyul
 ms.reviewer: igorstan
 ms.openlocfilehash: 083077b2b29bc415e83d6f5a76941fa83fa853e3
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101674150"
 ---
 # <a name="stored-procedures-using-synapse-sql-in-azure-synapse-analytics"></a>Хранимые процедуры с использованием синапсе SQL в Azure синапсе Analytics

@@ -9,10 +9,10 @@ ms.author: amjads
 ms.collection: windows
 ms.date: 02/14/2017
 ms.openlocfilehash: d336a39714712e5436086e22ad24fc942a7d850a
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102563546"
 ---
 # <a name="network-watcher-agent-virtual-machine-extension-for-windows"></a>Расширение виртуальной машины агента Наблюдателя за сетями для Windows
@@ -62,7 +62,7 @@ ms.locfileid: "102563546"
 | ---- | ---- |
 | версия_API | 2015-06-15 |
 | publisher | Microsoft.Azure.NetworkWatcher |
-| type | NetworkWatcherAgentWindows |
+| тип | NetworkWatcherAgentWindows |
 | typeHandlerVersion | 1.4 |
 
 
@@ -87,7 +87,7 @@ Set-AzVMExtension `
 
 ## <a name="troubleshooting-and-support"></a>Устранение неполадок и поддержка
 
-### <a name="troubleshooting"></a>Диагностика
+### <a name="troubleshooting"></a>Устранение неполадок
 
 Сведения о состоянии развертывания расширения можно получить на портале Azure и при помощи PowerShell. Чтобы просмотреть состояние развертывания расширений для определенной виртуальной машины, выполните следующую команду в модуле Azure PowerShell:
 

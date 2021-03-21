@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: duau
 ms.openlocfilehash: 038e018a22af3546f5d3c66f6d8ee3963483cce1
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102615063"
 ---
 # <a name="about-expressroute-virtual-network-gateways"></a>Сведения о шлюзах виртуальных сетей ExpressRoute
@@ -43,7 +43,7 @@ ms.locfileid: "102615063"
 >
 >
 
-## <a name="gateway-subnet"></a><a name="gwsub"></a>подсеть шлюза.
+## <a name="gateway-subnet"></a><a name="gwsub"></a>Подсеть шлюза
 
 Перед созданием шлюза ExpressRoute необходимо создать подсеть шлюза. Подсеть шлюза содержит IP-адреса, которые используют виртуальные машины и службы шлюза виртуальной сети. При создании шлюза виртуальной сети виртуальные машины шлюза развертываются в подсети шлюза и настраиваются с использованием требуемых параметров шлюза ExpressRoute. Никогда не развертывайте все остальное (например, дополнительные виртуальные машины) в подсети шлюза. Чтобы подсеть шлюза работала правильно, ее нужно назвать GatewaySubnet. Такое имя позволяет Azure определить, что это подсеть для развертывания виртуальных машин и служб шлюза виртуальной сети.
 

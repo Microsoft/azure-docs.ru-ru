@@ -7,14 +7,14 @@ ms.topic: reference
 ms.workload: identity
 author: rolyon
 ms.author: rolyon
-ms.date: 02/25/2021
+ms.date: 03/15/2021
 ms.custom: generated
-ms.openlocfilehash: baa783d0dfb54e0e606e3f6c6d5397941ae7b7bc
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.openlocfilehash: ba5340fdc12bf3141c5e3f24b6b9d178a5db600d
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103011635"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104602525"
 ---
 # <a name="azure-built-in-roles"></a>Встроенные роли Azure
 
@@ -140,6 +140,13 @@ ms.locfileid: "103011635"
 > | [Редактор Cognitive Services QnA Maker](#cognitive-services-qna-maker-editor) | Позволяет создавать, изменять, импортировать и экспортировать базы знаний. Невозможно опубликовать или удалить базу знаний. | f4cc2bf9-21be-47a1-bdf1-5c5804381025 |
 > | [Модуль чтения Cognitive Services QnA Maker](#cognitive-services-qna-maker-reader) | Давайте выполним чтение и тестирование только базы знаний. | 466ccd10-b268-4a11-b098-b4849f024126 |
 > | [Пользователь служб Cognitive Services](#cognitive-services-user) | Позволяет создавать и читать список ключей служб Cognitive Services. | a97b65f3-24c7-4388-baec-2e87135dc908 |
+> | **Интернет вещей** |  |  |
+> | [Администратор обновления устройства](#device-update-administrator) | Предоставляет полный доступ к операциям управления и содержимого | 02ca0879-e8e4-47a5-a61e-5c618b76e64a |
+> | [Администратор содержимого обновления устройства](#device-update-content-administrator) | Предоставляет полный доступ к операциям с содержимым | 0378884a-3af5-44ab-8323-f5b22f9f3c98 |
+> | [Средство чтения содержимого обновления устройства](#device-update-content-reader) | Предоставляет доступ на чтение к операциям с содержимым, но не позволяет вносить изменения | d1ee9a80-8b14-47f0-bdc2-f4a351625a7b |
+> | [Администратор развертываний обновлений устройств](#device-update-deployments-administrator) | Предоставляет полный доступ к операциям управления | e4237640-0e3d-4a46-8fda-70bc94856432 |
+> | [Средство чтения для развертывания обновлений устройств](#device-update-deployments-reader) | Предоставляет доступ на чтение к операциям управления, но не позволяет вносить изменения | 49e2f5d2-7741-4835-8efa-19e1fe35e47f |
+> | [Читатель обновления устройства](#device-update-reader) | Предоставляет доступ для чтения к операциям управления и содержимого, но не позволяет вносить изменения | e9dba6fb-3d52-4cf0-bce3-f06ce71b9e0f |
 > | **Смешанная реальность** |  |  |
 > | [Администратор удаленной подготовки к просмотру](#remote-rendering-administrator) | Предоставляет пользователю возможность преобразования, управления сеансами, подготовки к просмотру и диагностике для удаленной подготовки к просмотру Azure. | 3df8b902-2a6f-47c7-8cc5-360e9b272a7e |
 > | [Клиент удаленной подготовки к просмотру](#remote-rendering-client) | Предоставляет пользователю возможность управления сеансами, визуализацией и диагностикой для удаленной подготовки к просмотру Azure. | d39065c4-c120-43c9-ab0a-63eed9795f0a |
@@ -156,6 +163,7 @@ ms.locfileid: "103011635"
 > | [Получатель данных Служебной шины Azure](#azure-service-bus-data-receiver) | Разрешает полный доступ к ресурсам служебной шины Azure. | 4f6d3b9b-027b-4f4c-9142-0e5a2a2247e0 |
 > | [Отправитель данных Служебной шины Azure](#azure-service-bus-data-sender) | Разрешает полный доступ к ресурсам служебной шины Azure. | 69a216fc-b8fb-44d8-bc22-1f3c2cd27a39 |
 > | [Владелец регистрации Azure Stack](#azure-stack-registration-owner) | Позволяет управлять регистрациями Azure Stack. | 6f12a6df-dd06-4f3e-bcb1-ce8be600526a |
+> | [Участник EventGrid](#eventgrid-contributor) | Позволяет управлять операциями EventGrid. | 1e241071-0855-49ea-94dc-649edcd759de |
 > | [Участник EventGrid EventSubscription](#eventgrid-eventsubscription-contributor) | Позволяет управлять операциями с подписками на события Сетки событий. | 428e0ff0-5e57-4d9c-a221-2c70d0e0a443 |
 > | [Читатель EventGrid EventSubscription](#eventgrid-eventsubscription-reader) | Позволяет получить доступ на чтение к подпискам на события Сетки событий. | 2414bbcf-6497-4faf-8c65-045460748405 |
 > | [Участник данных FHIR](#fhir-data-contributor) | Роль разрешает пользователю или субъекту полный доступ к данным FHIR | 5a1fc7df-4bf1-4951-a576-89034ee01acd |
@@ -222,6 +230,7 @@ ms.locfileid: "103011635"
 > | [Читатель группы управления](#management-group-reader) | Роль читателя группы управления | ac63b705-f282-497d-ac71-919bf39d939d |
 > | [Участник учетной записи New Relic APM](#new-relic-apm-account-contributor) | Позволяет управлять учетными записями и приложениями New Relic Application Performance Management, но не доступом к ним. | 5d28c62d-5b37-4476-8438-e587778df237 |
 > | [Редактор данных анализа политик (предварительная версия)](#policy-insights-data-writer-preview) | Предоставляет доступ на чтение политик ресурсов и доступ на запись событий политики компонентов ресурсов. | 66bb4e9e-b016-4a94-8249-4c0511c2be84 |
+> | [Роль оператора запроса квоты](#quota-request-operator-role) | Чтение и создание запросов квот, получение состояния запроса квоты и создание билетов на поддержку. | 0e5f05e5-9ab9-446b-b98d-1e2157c94125 |
 > | [Покупатель зарезервированных товаров](#reservation-purchaser) | Позволяет приобрести резервирования | f7b75c60-3036-4b75-91c3-6b41c27c1689 |
 > | [Участник политики ресурсов](#resource-policy-contributor) | Пользователи с правами на создание или изменение политики ресурсов, создание запросов в службу поддержки и чтение ресурсов и иерархии. | 36243c78-bf99-498c-9df9-86d9f8d28608 |
 > | [Участник Site Recovery](#site-recovery-contributor) | Позволяет управлять службой Site Recovery, за исключением создания хранилищ и назначения ролей. | 6670b86e-a3f7-4917-ac9b-5d6ab1be4567 |
@@ -256,7 +265,7 @@ ms.locfileid: "103011635"
 
 ### <a name="contributor"></a>Участник
 
-Предоставляет полный доступ для управления всеми ресурсами, но не позволяет назначать роли в Azure RBAC, управлять назначениями в схемах Azure или предоставлять общий доступ к галереям образов. [Подробнее](rbac-and-directory-admin-roles.md)
+Предоставляет полный доступ для управления всеми ресурсами, но не позволяет назначать роли в Azure RBAC, управлять назначениями в схемах Azure или предоставлять общий доступ к галереям образов. [Дополнительные сведения](rbac-and-directory-admin-roles.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -307,7 +316,7 @@ ms.locfileid: "103011635"
 
 ### <a name="owner"></a>Владелец
 
-Предоставляет полный доступ для управления всеми ресурсами, включая возможность назначать роли в Azure RBAC. [Подробнее](rbac-and-directory-admin-roles.md)
+Предоставляет полный доступ для управления всеми ресурсами, включая возможность назначать роли в Azure RBAC. [Дополнительные сведения](rbac-and-directory-admin-roles.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -346,7 +355,7 @@ ms.locfileid: "103011635"
 
 ### <a name="reader"></a>Читатель
 
-Просмотр всех ресурсов, но не позволяет вносить изменения. [Подробнее](rbac-and-directory-admin-roles.md)
+Просмотр всех ресурсов, но не позволяет вносить изменения. [Дополнительные сведения](rbac-and-directory-admin-roles.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -385,7 +394,7 @@ ms.locfileid: "103011635"
 
 ### <a name="user-access-administrator"></a>Администратор доступа пользователей
 
-Позволяет управлять доступом пользователей к ресурсам Azure. [Подробнее](rbac-and-directory-admin-roles.md)
+Позволяет управлять доступом пользователей к ресурсам Azure. [Дополнительные сведения](rbac-and-directory-admin-roles.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -553,7 +562,7 @@ ms.locfileid: "103011635"
 
 ### <a name="virtual-machine-contributor"></a>Участник виртуальной машины
 
-Позволяет управлять виртуальными машинами, но не доступом к ним и не виртуальной сетью или учетной записью хранения, к которой они подключены. [Подробнее](../virtual-machines/linux/tutorial-govern-resources.md)
+Позволяет управлять виртуальными машинами, но не доступом к ним и не виртуальной сетью или учетной записью хранения, к которой они подключены. [Дополнительные сведения](../virtual-machines/linux/tutorial-govern-resources.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -672,7 +681,7 @@ ms.locfileid: "103011635"
 
 ### <a name="virtual-machine-user-login"></a>Пользователь виртуальной машины
 
-Позволяет просматривать виртуальные машины на портале и входить в систему с правами обычного пользователя. [Подробнее](../active-directory/devices/howto-vm-sign-in-azure-ad-windows.md)
+Позволяет просматривать виртуальные машины на портале и входить в систему с правами обычного пользователя. [Дополнительные сведения](../active-directory/devices/howto-vm-sign-in-azure-ad-windows.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -830,7 +839,7 @@ ms.locfileid: "103011635"
 
 ### <a name="cdn-profile-contributor"></a>Участник профиля CDN
 
-Может управлять профилями CDN и их конечными точками, но не может предоставлять доступ другим пользователям. [Подробнее](../cdn/cdn-app-dev-net.md)
+Может управлять профилями CDN и их конечными точками, но не может предоставлять доступ другим пользователям. [Дополнительные сведения](../cdn/cdn-app-dev-net.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -936,7 +945,7 @@ ms.locfileid: "103011635"
 
 ### <a name="classic-network-contributor"></a>Участник классической сети
 
-Позволяет управлять классическими сетями, но не доступом к ним. [Подробнее](../virtual-network/virtual-network-manage-peering.md)
+Позволяет управлять классическими сетями, но не доступом к ним. [Дополнительные сведения](../virtual-network/virtual-network-manage-peering.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -987,7 +996,7 @@ ms.locfileid: "103011635"
 
 ### <a name="dns-zone-contributor"></a>Участник зоны DNS
 
-Позволяет управлять зонами DNS и наборами записей в Azure DNS, но не тем, кому они будут доступны. [Подробнее](../dns/dns-protect-zones-recordsets.md)
+Позволяет управлять зонами DNS и наборами записей в Azure DNS, но не тем, кому они будут доступны. [Дополнительные сведения](../dns/dns-protect-zones-recordsets.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -1089,7 +1098,7 @@ ms.locfileid: "103011635"
 
 ### <a name="private-dns-zone-contributor"></a>Участник зоны Частная зона DNS
 
-Позволяет управлять частными ресурсами зоны DNS, но не с виртуальными сетями, с которыми они связаны. [Подробнее](../dns/dns-protect-private-zones-recordsets.md)
+Позволяет управлять частными ресурсами зоны DNS, но не с виртуальными сетями, с которыми они связаны. [Дополнительные сведения](../dns/dns-protect-private-zones-recordsets.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -1200,7 +1209,7 @@ ms.locfileid: "103011635"
 
 ### <a name="avere-contributor"></a>Участник Avere
 
-Может создавать и контролировать кластер Avere vFXT. [Подробнее](../avere-vfxt/avere-vfxt-deploy-plan.md)
+Может создавать и контролировать кластер Avere vFXT. [Дополнительные сведения](../avere-vfxt/avere-vfxt-deploy-plan.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -1835,7 +1844,7 @@ ms.locfileid: "103011635"
 
 ### <a name="data-box-contributor"></a>Участник Data Box
 
-Позволяет управлять всеми данными службы Data Box, кроме предоставления доступа другим пользователям. [Подробнее](../databox/data-box-logs.md)
+Позволяет управлять всеми данными службы Data Box, кроме предоставления доступа другим пользователям. [Дополнительные сведения](../databox/data-box-logs.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -1884,7 +1893,7 @@ ms.locfileid: "103011635"
 
 ### <a name="data-box-reader"></a>Читатель Data Box
 
-Позволяет управлять службой Data Box, но не позволяет создавать заказы и менять их порядок, а также предоставлять доступ другим пользователям. [Подробнее](../databox/data-box-logs.md)
+Позволяет управлять службой Data Box, но не позволяет создавать заказы и менять их порядок, а также предоставлять доступ другим пользователям. [Дополнительные сведения](../databox/data-box-logs.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -1941,7 +1950,7 @@ ms.locfileid: "103011635"
 
 ### <a name="data-lake-analytics-developer"></a>Разработчик Data Lake Analytics
 
-Позволяет отправлять, отслеживать задания и управлять ими, но не позволяет создавать или удалять учетные записи Data Lake Analytics. [Подробнее](../data-lake-analytics/data-lake-analytics-manage-use-portal.md)
+Позволяет отправлять, отслеживать задания и управлять ими, но не позволяет создавать или удалять учетные записи Data Lake Analytics. [Дополнительные сведения](../data-lake-analytics/data-lake-analytics-manage-use-portal.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2065,7 +2074,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-account-contributor"></a>Участник учетной записи хранения
 
-Разрешает управление учетными записями хранения. Предоставляет доступ к ключу учетной записи, который можно использовать для доступа к данным посредством авторизации с использованием общего ключа. [Подробнее](../storage/common/storage-auth-aad.md)
+Разрешает управление учетными записями хранения. Предоставляет доступ к ключу учетной записи, который можно использовать для доступа к данным посредством авторизации с использованием общего ключа. [Дополнительные сведения](../storage/common/storage-auth-aad.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2120,7 +2129,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-account-key-operator-service-role"></a>Роль службы оператора ключей учетных записей хранения
 
-Разрешает перечисление и повторное создание ключей доступа к учетной записи хранения. [Подробнее](../storage/common/storage-account-keys-manage.md)
+Разрешает перечисление и повторное создание ключей доступа к учетной записи хранения. [Дополнительные сведения](../storage/common/storage-account-keys-manage.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2161,7 +2170,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-blob-data-contributor"></a>Участник для данных BLOB-объектов хранилища
 
-Чтение, запись и удаление контейнеров службы хранилища Azure и больших двоичных объектов. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Подробнее](../storage/common/storage-auth-aad-rbac-portal.md)
+Чтение, запись и удаление контейнеров службы хранилища Azure и больших двоичных объектов. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Дополнительные сведения](../storage/common/storage-auth-aad-rbac-portal.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2216,7 +2225,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-blob-data-owner"></a>Владелец данных BLOB-объектов хранилища
 
-Предоставляет полный доступ к контейнерам и данным BLOB-объектов службы хранилища Azure, включая назначение элемента управления доступом POSIX. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Подробнее](../storage/common/storage-auth-aad-rbac-portal.md)
+Предоставляет полный доступ к контейнерам и данным BLOB-объектов службы хранилища Azure, включая назначение элемента управления доступом POSIX. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Дополнительные сведения](../storage/common/storage-auth-aad-rbac-portal.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2259,7 +2268,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-blob-data-reader"></a>Читатель данных больших двоичных объектов хранилища
 
-Чтение и перечисление контейнеров и больших двоичных объектов службы хранилища Azure. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Подробнее](../storage/common/storage-auth-aad-rbac-portal.md)
+Чтение и перечисление контейнеров и больших двоичных объектов службы хранилища Azure. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Дополнительные сведения](../storage/common/storage-auth-aad-rbac-portal.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2302,7 +2311,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-blob-delegator"></a>Представитель BLOB-объектов хранилища
 
-Получение ключа делегирования пользователя, который затем можно использовать для создания подписи общего доступа для контейнера или большого двоичного объекта, подписанного с помощью учетных данных Azure AD. Дополнительные сведения см. в разделе [Создание SAS для делегирования пользователя](/rest/api/storageservices/create-user-delegation-sas). [Подробнее](/rest/api/storageservices/get-user-delegation-key)
+Получение ключа делегирования пользователя, который затем можно использовать для создания подписи общего доступа для контейнера или большого двоичного объекта, подписанного с помощью учетных данных Azure AD. Дополнительные сведения см. в разделе [Создание SAS для делегирования пользователя](/rest/api/storageservices/create-user-delegation-sas). [Дополнительные сведения](/rest/api/storageservices/get-user-delegation-key)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2341,7 +2350,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-file-data-smb-share-contributor"></a>Участник общей папки файловых данных хранилища SMB
 
-Разрешает доступ на чтение, запись и удаление файлов/каталогов в общих папках Azure. У этой роли нет эквивалентных встроенных ролей на файловых серверах Windows. [Подробнее](../storage/files/storage-files-identity-auth-active-directory-enable.md)
+Разрешает доступ на чтение, запись и удаление файлов/каталогов в общих папках Azure. У этой роли нет эквивалентных встроенных ролей на файловых серверах Windows. [Дополнительные сведения](../storage/files/storage-files-identity-auth-active-directory-enable.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2384,7 +2393,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-file-data-smb-share-elevated-contributor"></a>Участник общих папок данных SMB службы хранилища с повышенными правами
 
-Разрешает доступ на чтение, запись, удаление и изменение списков управления доступом для файлов/каталогов в общих папках Azure. Эта роль эквивалентна ACL общей папки для изменения на файловых серверах Windows. [Подробнее](../storage/files/storage-files-identity-auth-active-directory-enable.md)
+Разрешает доступ на чтение, запись, удаление и изменение списков управления доступом для файлов/каталогов в общих папках Azure. Эта роль эквивалентна ACL общей папки для изменения на файловых серверах Windows. [Дополнительные сведения](../storage/files/storage-files-identity-auth-active-directory-enable.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2429,7 +2438,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-file-data-smb-share-reader"></a>Читатель общей папки файловых данных хранилища SMB
 
-Разрешает доступ на чтение файлов/каталогов в общих папках Azure. Эта роль эквивалентна ACL общей папки для чтения данных на файловых серверах Windows. [Подробнее](../storage/files/storage-files-identity-auth-active-directory-enable.md)
+Разрешает доступ на чтение файлов/каталогов в общих папках Azure. Эта роль эквивалентна ACL общей папки для чтения данных на файловых серверах Windows. [Дополнительные сведения](../storage/files/storage-files-identity-auth-active-directory-enable.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2468,7 +2477,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-queue-data-contributor"></a>Участник для данных очереди хранилища
 
-Чтение, запись и удаление очередей и сообщений в очередях службы хранилища Azure. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Подробнее](../storage/common/storage-auth-aad-rbac-portal.md)
+Чтение, запись и удаление очередей и сообщений в очередях службы хранилища Azure. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Дополнительные сведения](../storage/common/storage-auth-aad-rbac-portal.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2519,7 +2528,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-queue-data-message-processor"></a>Обработчик сообщений данных в очереди хранилища
 
-Просмотр, получение и удаление сообщений в очередях службы хранилища Azure. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Подробнее](../storage/common/storage-auth-aad-rbac-portal.md)
+Просмотр, получение и удаление сообщений в очередях службы хранилища Azure. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Дополнительные сведения](../storage/common/storage-auth-aad-rbac-portal.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2560,7 +2569,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-queue-data-message-sender"></a>Отправитель сообщений данных в очередь хранилища
 
-Добавление сообщений в очередь службы хранилища Azure. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Подробнее](../storage/common/storage-auth-aad-rbac-portal.md)
+Добавление сообщений в очередь службы хранилища Azure. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Дополнительные сведения](../storage/common/storage-auth-aad-rbac-portal.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2599,7 +2608,7 @@ ms.locfileid: "103011635"
 
 ### <a name="storage-queue-data-reader"></a>Читатель данных очереди хранилища
 
-Чтение и перечисление очередей и сообщений в очередях службы хранилища Azure. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Подробнее](../storage/common/storage-auth-aad-rbac-portal.md)
+Чтение и перечисление очередей и сообщений в очередях службы хранилища Azure. Сведения о том, какие действия необходимы для конкретной операции с данными, см. в разделе [Разрешения на вызов операций с данными BLOB-объектов и очередей](/rest/api/storageservices/authenticate-with-azure-active-directory#permissions-for-calling-blob-and-queue-data-operations). [Дополнительные сведения](../storage/common/storage-auth-aad-rbac-portal.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2643,7 +2652,7 @@ ms.locfileid: "103011635"
 
 ### <a name="azure-maps-data-contributor"></a>Участник данных Azure Maps
 
-Предоставляет доступ на чтение, запись и удаление для сопоставления связанных данных из учетной записи службы "карты Azure". [Подробнее](../azure-maps/azure-maps-authentication.md)
+Предоставляет доступ на чтение, запись и удаление для сопоставления связанных данных из учетной записи службы "карты Azure". [Дополнительные сведения](../azure-maps/azure-maps-authentication.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2686,7 +2695,7 @@ ms.locfileid: "103011635"
 
 ### <a name="azure-maps-data-reader"></a>Читатель данных Azure Maps
 
-Предоставляет доступ на чтение связанных данных карты в учетной записи Azure Maps. [Подробнее](../azure-maps/azure-maps-authentication.md)
+Предоставляет доступ на чтение связанных данных карты в учетной записи Azure Maps. [Дополнительные сведения](../azure-maps/azure-maps-authentication.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -2725,7 +2734,7 @@ ms.locfileid: "103011635"
 
 ### <a name="search-service-contributor"></a>Участник службы поиска
 
-Позволяет управлять службами поиска, но не доступом к ним. [Подробнее](../search/search-security-rbac.md)
+Позволяет управлять службами поиска, но не доступом к ним. [Дополнительные сведения](../search/search-security-rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -3407,7 +3416,7 @@ ms.locfileid: "103011635"
 
 ### <a name="azure-kubernetes-service-cluster-admin-role"></a>Роль администратора кластера в Службе Azure Kubernetes
 
-Список действий, выполненных с помощью учетных данных администратора кластера. [Подробнее](../aks/control-kubeconfig-access.md)
+Список действий, выполненных с помощью учетных данных администратора кластера. [Дополнительные сведения](../aks/control-kubeconfig-access.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -3450,7 +3459,7 @@ ms.locfileid: "103011635"
 
 ### <a name="azure-kubernetes-service-cluster-user-role"></a>Роль пользователя кластера в Службе Azure Kubernetes
 
-Список действий, выполненных с помощью учетных данных пользователя кластера. [Подробнее](../aks/control-kubeconfig-access.md)
+Список действий, выполненных с помощью учетных данных пользователя кластера. [Дополнительные сведения](../aks/control-kubeconfig-access.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -3534,7 +3543,7 @@ ms.locfileid: "103011635"
 
 ### <a name="azure-kubernetes-service-rbac-admin"></a>Администратор RBAC службы Azure Kubernetes
 
-Позволяет управлять всеми ресурсами в кластере или пространстве имен, за исключением квоты на обновление или удаление ресурсов и пространств имен. [Подробнее](../aks/manage-azure-rbac.md)
+Позволяет управлять всеми ресурсами в кластере или пространстве имен, за исключением квоты на обновление или удаление ресурсов и пространств имен. [Дополнительные сведения](../aks/manage-azure-rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -3597,7 +3606,7 @@ ms.locfileid: "103011635"
 
 ### <a name="azure-kubernetes-service-rbac-cluster-admin"></a>Администратор кластера RBAC службы Azure Kubernetes
 
-Позволяет управлять всеми ресурсами в кластере. [Подробнее](../aks/manage-azure-rbac.md)
+Позволяет управлять всеми ресурсами в кластере. [Дополнительные сведения](../aks/manage-azure-rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -3652,7 +3661,7 @@ ms.locfileid: "103011635"
 
 ### <a name="azure-kubernetes-service-rbac-reader"></a>Модуль чтения RBAC службы Azure Kubernetes
 
-Разрешает доступ только для чтения для просмотра большинства объектов в пространстве имен. Он не позволяет просматривать роли или привязки ролей. Эта роль не разрешает просмотр секретов, так как чтение содержимого секретов обеспечивает доступ к учетным данным учетная запись службы в пространстве имен, что позволило бы доступу через API как любой учетная запись службы в пространстве имен (форма укрупнения привилегий). Применение этой роли в области кластера предоставит доступ ко всем пространствам имен. [Подробнее](../aks/manage-azure-rbac.md)
+Разрешает доступ только для чтения для просмотра большинства объектов в пространстве имен. Он не позволяет просматривать роли или привязки ролей. Эта роль не разрешает просмотр секретов, так как чтение содержимого секретов обеспечивает доступ к учетным данным учетная запись службы в пространстве имен, что позволило бы доступу через API как любой учетная запись службы в пространстве имен (форма укрупнения привилегий). Применение этой роли в области кластера предоставит доступ ко всем пространствам имен. [Дополнительные сведения](../aks/manage-azure-rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -3761,7 +3770,7 @@ ms.locfileid: "103011635"
 
 ### <a name="azure-kubernetes-service-rbac-writer"></a>Модуль записи RBAC службы Azure Kubernetes
 
-Разрешает доступ для чтения и записи к большинству объектов в пространстве имен. Эта роль не позволяет просматривать или изменять роли или привязки ролей. Однако эта роль обеспечивает доступ к секретам и запуску модулей Pod как любой учетная запись службы в пространстве имен, поэтому его можно использовать для получения уровней доступа API любых учетная запись службы в пространстве имен. Применение этой роли в области кластера предоставит доступ ко всем пространствам имен. [Подробнее](../aks/manage-azure-rbac.md)
+Разрешает доступ для чтения и записи к большинству объектов в пространстве имен. Эта роль не позволяет просматривать или изменять роли или привязки ролей. Однако эта роль обеспечивает доступ к секретам и запуску модулей Pod как любой учетная запись службы в пространстве имен, поэтому его можно использовать для получения уровней доступа API любых учетная запись службы в пространстве имен. Применение этой роли в области кластера предоставит доступ ко всем пространствам имен. [Дополнительные сведения](../aks/manage-azure-rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -3875,7 +3884,7 @@ ms.locfileid: "103011635"
 
 ### <a name="cosmos-db-account-reader-role"></a>Роль читателя учетных записей Cosmos DB
 
-Позволяет считывать данные учетных записей Azure Cosmos DB. Сведения об управлении учетными записями Azure Cosmos DB см. в разделе [Участник учетной записи DocumentDB](#documentdb-account-contributor). [Подробнее](../cosmos-db/role-based-access-control.md)
+Позволяет считывать данные учетных записей Azure Cosmos DB. Сведения об управлении учетными записями Azure Cosmos DB см. в разделе [Участник учетной записи DocumentDB](#documentdb-account-contributor). [Дополнительные сведения](../cosmos-db/role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -3926,7 +3935,7 @@ ms.locfileid: "103011635"
 
 ### <a name="cosmos-db-operator"></a>Оператор Cosmos DB
 
-Позволяет управлять учетными записями Azure Cosmos DB, но не доступом к данным. Предотвращает доступ к ключам учетной записи и строкам подключения. [Подробнее](../cosmos-db/role-based-access-control.md)
+Позволяет управлять учетными записями Azure Cosmos DB, но не доступом к данным. Предотвращает доступ к ключам учетной записи и строкам подключения. [Дополнительные сведения](../cosmos-db/role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4079,7 +4088,7 @@ ms.locfileid: "103011635"
 
 ### <a name="documentdb-account-contributor"></a>Участник учетной записи DocumentDB
 
-Может управлять учетными записями Azure Cosmos DB Служба Azure Cosmos DB раньше называлась DocumentDB. [Подробнее](../cosmos-db/role-based-access-control.md)
+Может управлять учетными записями Azure Cosmos DB Служба Azure Cosmos DB раньше называлась DocumentDB. [Дополнительные сведения](../cosmos-db/role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4185,7 +4194,7 @@ ms.locfileid: "103011635"
 
 ### <a name="sql-db-contributor"></a>Участник БД SQL
 
-Позволяет управлять базами данных SQL, но не доступом к ним. Кроме того, не позволяет управлять их политиками безопасности или родительскими серверами SQL Server. [Подробнее](../data-share/concepts-roles-permissions.md)
+Позволяет управлять базами данных SQL, но не доступом к ним. Кроме того, не позволяет управлять их политиками безопасности или родительскими серверами SQL Server. [Дополнительные сведения](../data-share/concepts-roles-permissions.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4359,7 +4368,7 @@ ms.locfileid: "103011635"
 
 ### <a name="sql-security-manager"></a>Диспетчер безопасности SQL
 
-Позволяет управлять политиками безопасности серверов SQL Server и баз данных SQL, но не доступом к ним. [Подробнее](../azure-sql/database/azure-defender-for-sql.md)
+Позволяет управлять политиками безопасности серверов SQL Server и баз данных SQL, но не доступом к ним. [Дополнительные сведения](../azure-sql/database/azure-defender-for-sql.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4400,6 +4409,7 @@ ms.locfileid: "103011635"
 > | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/датабасес/вулнерабилитяссессментс/* |  |
 > | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/датабасес/вулнерабилитяссессментсканс/* |  |
 > | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/датабасес/вулнерабилитяссессментсеттингс/* |  |
+> | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/девопсаудитингсеттингс/* |  |
 > | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/фиреваллрулес/* |  |
 > | /Серверс/Реад [Microsoft. SQL](resource-provider-operations.md#microsoftsql) | Возвращение списка серверов или получение свойств для указанного сервера. |
 > | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/секуритялертполиЦиес/* | Создание политик оповещения системы безопасности SQL Server и управление ими |
@@ -4465,6 +4475,7 @@ ms.locfileid: "103011635"
         "Microsoft.Sql/servers/databases/vulnerabilityAssessments/*",
         "Microsoft.Sql/servers/databases/vulnerabilityAssessmentScans/*",
         "Microsoft.Sql/servers/databases/vulnerabilityAssessmentSettings/*",
+        "Microsoft.Sql/servers/devOpsAuditingSettings/*",
         "Microsoft.Sql/servers/firewallRules/*",
         "Microsoft.Sql/servers/read",
         "Microsoft.Sql/servers/securityAlertPolicies/*",
@@ -4490,7 +4501,7 @@ ms.locfileid: "103011635"
 
 ### <a name="sql-server-contributor"></a>Участник SQL Server
 
-Позволяет управлять серверами SQL Server и базами данных SQL, но не доступом к ним и их политиками безопасности. [Подробнее](../azure-sql/database/authentication-aad-configure.md)
+Позволяет управлять серверами SQL Server и базами данных SQL, но не доступом к ним и их политиками безопасности. [Дополнительные сведения](../azure-sql/database/authentication-aad-configure.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4528,6 +4539,7 @@ ms.locfileid: "103011635"
 > | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/датабасес/вулнерабилитяссессментс/* |  |
 > | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/датабасес/вулнерабилитяссессментсканс/* |  |
 > | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/датабасес/вулнерабилитяссессментсеттингс/* |  |
+> | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/девопсаудитингсеттингс/* |  |
 > | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/екстендедаудитингсеттингс/* |  |
 > | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/секуритялертполиЦиес/* | Изменение политик оповещения системы безопасности SQL Server. |
 > | [Microsoft. SQL](resource-provider-operations.md#microsoftsql)/серверс/вулнерабилитяссессментс/* |  |
@@ -4583,6 +4595,7 @@ ms.locfileid: "103011635"
         "Microsoft.Sql/servers/databases/vulnerabilityAssessments/*",
         "Microsoft.Sql/servers/databases/vulnerabilityAssessmentScans/*",
         "Microsoft.Sql/servers/databases/vulnerabilityAssessmentSettings/*",
+        "Microsoft.Sql/servers/devOpsAuditingSettings/*",
         "Microsoft.Sql/servers/extendedAuditingSettings/*",
         "Microsoft.Sql/servers/securityAlertPolicies/*",
         "Microsoft.Sql/servers/vulnerabilityAssessments/*",
@@ -4604,7 +4617,7 @@ ms.locfileid: "103011635"
 
 ### <a name="azure-event-hubs-data-owner"></a>Владелец данных Центров событий Azure
 
-Разрешает полный доступ к ресурсам Центров событий Azure. [Подробнее](../event-hubs/authenticate-application.md)
+Разрешает полный доступ к ресурсам Центров событий Azure. [Дополнительные сведения](../event-hubs/authenticate-application.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4645,7 +4658,7 @@ ms.locfileid: "103011635"
 
 ### <a name="azure-event-hubs-data-receiver"></a>Получатель данных Центров событий Azure
 
-Разрешает полный доступ к ресурсам Центров событий Azure. [Подробнее](../event-hubs/authenticate-application.md)
+Разрешает полный доступ к ресурсам Центров событий Azure. [Дополнительные сведения](../event-hubs/authenticate-application.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4686,7 +4699,7 @@ ms.locfileid: "103011635"
 
 ### <a name="azure-event-hubs-data-sender"></a>Отправитель данных Центров событий Azure
 
-Разрешает полный доступ к ресурсам Центров событий Azure. [Подробнее](../event-hubs/authenticate-application.md)
+Разрешает полный доступ к ресурсам Центров событий Azure. [Дополнительные сведения](../event-hubs/authenticate-application.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4727,7 +4740,7 @@ ms.locfileid: "103011635"
 
 ### <a name="data-factory-contributor"></a>Участник фабрики данных
 
-Создание фабрик данных и управление ими, а также их дочерними ресурсами. [Подробнее](../data-factory/concepts-roles-permissions.md)
+Создание фабрик данных и управление ими, а также их дочерними ресурсами. [Дополнительные сведения](../data-factory/concepts-roles-permissions.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4782,7 +4795,7 @@ ms.locfileid: "103011635"
 
 ### <a name="data-purger"></a>Средство очистки данных
 
-Удаление личных данных из рабочей области Log Analytics. [Подробнее](../azure-monitor/logs/personal-data-mgmt.md)
+Удаление личных данных из рабочей области Log Analytics. [Дополнительные сведения](../azure-monitor/logs/personal-data-mgmt.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4827,7 +4840,7 @@ ms.locfileid: "103011635"
 
 ### <a name="hdinsight-cluster-operator"></a>Оператор кластера HDInsight
 
-Позволяет считывать и изменять конфигурации кластера HDInsight. [Подробнее](../hdinsight/hdinsight-migrate-granular-access-cluster-configurations.md)
+Позволяет считывать и изменять конфигурации кластера HDInsight. [Дополнительные сведения](../hdinsight/hdinsight-migrate-granular-access-cluster-configurations.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4925,7 +4938,7 @@ ms.locfileid: "103011635"
 
 ### <a name="log-analytics-contributor"></a>участник Log Analytics.
 
-Участник Log Analytics может считывать все данные мониторинга и изменять параметры мониторинга. Изменение параметров мониторинга подразумевает добавление расширений в виртуальные машины, чтение ключей учетной записи хранения для настройки коллекции журналов в службе хранилища Azure, создание и настройку учетных записей службы автоматизации, добавление решений и настройку диагностики Azure во всех ресурсах Azure. [Подробнее](../azure-monitor/logs/manage-access.md)
+Участник Log Analytics может считывать все данные мониторинга и изменять параметры мониторинга. Изменение параметров мониторинга подразумевает добавление расширений в виртуальные машины, чтение ключей учетной записи хранения для настройки коллекции журналов в службе хранилища Azure, создание и настройку учетных записей службы автоматизации, добавление решений и настройку диагностики Azure во всех ресурсах Azure. [Дополнительные сведения](../azure-monitor/logs/manage-access.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -4990,7 +5003,7 @@ ms.locfileid: "103011635"
 
 ### <a name="log-analytics-reader"></a>читатель Log Analytics;
 
-Читатель Log Analytics может просматривать все данные мониторинга, выполнять по ним поиск и просматривать параметры мониторинга, в том числе конфигурацию системы диагностики Azure для всех ресурсов Azure. [Подробнее](../azure-monitor/logs/manage-access.md)
+Читатель Log Analytics может просматривать все данные мониторинга, выполнять по ним поиск и просматривать параметры мониторинга, в том числе конфигурацию системы диагностики Azure для всех ресурсов Azure. [Дополнительные сведения](../azure-monitor/logs/manage-access.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -5293,7 +5306,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="cognitive-services-contributor"></a>Участник служб Cognitive Services
 
-Позволяет создавать, читать, обновлять, удалять ключи служб Cognitive Services и управлять ими. [Подробнее](../cognitive-services/cognitive-services-virtual-networks.md)
+Позволяет создавать, читать, обновлять, удалять ключи служб Cognitive Services и управлять ими. [Дополнительные сведения](../cognitive-services/cognitive-services-virtual-networks.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -5364,7 +5377,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="cognitive-services-custom-vision-contributor"></a>Участник Cognitive Services Пользовательское визуальное распознавание
 
-Полный доступ к проекту, включая возможность просмотра, создания, изменения и удаления проектов. [Подробнее](../cognitive-services/custom-vision-service/role-based-access-control.md)
+Полный доступ к проекту, включая возможность просмотра, создания, изменения и удаления проектов. [Дополнительные сведения](../cognitive-services/custom-vision-service/role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -5405,7 +5418,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="cognitive-services-custom-vision-deployment"></a>Развертывание Cognitive Services Пользовательское визуальное распознавание
 
-Публикация, отмена публикации или экспорт моделей. Развертывание может просматривать проект, но не может обновляться. [Подробнее](../cognitive-services/custom-vision-service/role-based-access-control.md)
+Публикация, отмена публикации или экспорт моделей. Развертывание может просматривать проект, но не может обновляться. [Дополнительные сведения](../cognitive-services/custom-vision-service/role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -5460,7 +5473,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="cognitive-services-custom-vision-labeler"></a>Cognitive Services Пользовательское визуальное распознавание меток
 
-Просмотр, изменение учебных изображений и создание, добавление, удаление и удаление тегов изображений. Метки могут просматривать проект, но не могут обновлять ничего, Кроме учебных изображений и тегов. [Подробнее](../cognitive-services/custom-vision-service/role-based-access-control.md)
+Просмотр, изменение учебных изображений и создание, добавление, удаление и удаление тегов изображений. Метки могут просматривать проект, но не могут обновлять ничего, Кроме учебных изображений и тегов. [Дополнительные сведения](../cognitive-services/custom-vision-service/role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -5513,7 +5526,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="cognitive-services-custom-vision-reader"></a>Модуль чтения Cognitive Services Пользовательское визуальное распознавание
 
-Действия, которые доступны только для чтения в проекте. Читатели не могут создать или обновить проект. [Подробнее](../cognitive-services/custom-vision-service/role-based-access-control.md)
+Действия, которые доступны только для чтения в проекте. Читатели не могут создать или обновить проект. [Дополнительные сведения](../cognitive-services/custom-vision-service/role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -5558,7 +5571,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="cognitive-services-custom-vision-trainer"></a>Cognitive Services инструктор Пользовательское визуальное распознавание
 
-Просмотр, изменение проектов и обучение моделей, включая возможность публикации, отмены публикации и экспорта моделей. Преподаватели не могут создать или удалить проект. [Подробнее](../cognitive-services/custom-vision-service/role-based-access-control.md)
+Просмотр, изменение проектов и обучение моделей, включая возможность публикации, отмены публикации и экспорта моделей. Преподаватели не могут создать или удалить проект. [Дополнительные сведения](../cognitive-services/custom-vision-service/role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -5646,7 +5659,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="cognitive-services-metrics-advisor-administrator"></a>Администратор помощника по метрикам Cognitive Services
 
-Полный доступ к проекту, включая конфигурацию системного уровня. [Подробнее](../cognitive-services/metrics-advisor/how-tos/alerts.md)
+Полный доступ к проекту, включая конфигурацию системного уровня. [Дополнительные сведения](../cognitive-services/metrics-advisor/how-tos/alerts.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -5687,7 +5700,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="cognitive-services-qna-maker-editor"></a>Редактор Cognitive Services QnA Maker
 
-Позволяет создавать, изменять, импортировать и экспортировать базы знаний. Невозможно опубликовать или удалить базу знаний. [Подробнее](../cognitive-services/qnamaker/reference-role-based-access-control.md)
+Позволяет создавать, изменять, импортировать и экспортировать базы знаний. Невозможно опубликовать или удалить базу знаний. [Дополнительные сведения](../cognitive-services/qnamaker/reference-role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -5724,6 +5737,19 @@ Microsoft. зрения Data пленку может создавать, чит�
 > | /Accounts/QnAMaker.v2/endpointsettings/Read [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Возвращает параметры конечной точки для конечной точки. |
 > | /Accounts/QnAMaker.v2/endpointsettings/Write [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Обновите конечную точку ситтингс для конечной точки. |
 > | /Accounts/QnAMaker.v2/Operations/Read [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Получает сведения об определенной длительной операции. |
+> | /Аккаунтс/текстаналитикс/кнамакер/кновледжебасес/Реад [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Возвращает список базы знаний или сведения о конкретном кновледжебасер. |
+> | /Аккаунтс/текстаналитикс/кнамакер/кновледжебасес/Довнлоад/Реад [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Скачайте базу знаний. |
+> | /Аккаунтс/текстаналитикс/кнамакер/кновледжебасес/креате/Врите [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Асинхронная операция создания новой базы знаний. |
+> | /Аккаунтс/текстаналитикс/кнамакер/кновледжебасес/Врите [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Асинхронная операция изменения базы знаний или замены содержимого базы знаний. |
+> | /Аккаунтс/текстаналитикс/кнамакер/кновледжебасес/женератеансвер/Актион [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Вызов Женератеансвер для запроса базы знаний. |
+> | /Аккаунтс/текстаналитикс/кнамакер/кновледжебасес/траин/Актион [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Обучить вызов, чтобы добавить предложения в базу знаний. |
+> | /Аккаунтс/текстаналитикс/кнамакер/алтератионс/Реад [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Скачивание изменений из среды выполнения. |
+> | /Аккаунтс/текстаналитикс/кнамакер/алтератионс/Врите [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Замена данных изменений. |
+> | /Аккаунтс/текстаналитикс/кнамакер/ендпоинткэйс/Реад [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Возвращает ключи конечной точки для конечной точки. |
+> | /Аккаунтс/текстаналитикс/кнамакер/ендпоинткэйс/рефрешкэйс/Актион [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Повторно создает ключ конечной точки. |
+> | /Аккаунтс/текстаналитикс/кнамакер/ендпоинтсеттингс/Реад [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Возвращает параметры конечной точки для конечной точки. |
+> | /Аккаунтс/текстаналитикс/кнамакер/ендпоинтсеттингс/Врите [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Обновите конечную точку ситтингс для конечной точки. |
+> | /Аккаунтс/текстаналитикс/кнамакер/оператионс/Реад [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Получает сведения об определенной длительной операции. |
 > | **NotDataActions** |  |
 > | *Нет* |  |
 
@@ -5769,7 +5795,20 @@ Microsoft. зрения Data пленку может создавать, чит�
         "Microsoft.CognitiveServices/accounts/QnAMaker.v2/endpointkeys/refreshkeys/action",
         "Microsoft.CognitiveServices/accounts/QnAMaker.v2/endpointsettings/read",
         "Microsoft.CognitiveServices/accounts/QnAMaker.v2/endpointsettings/write",
-        "Microsoft.CognitiveServices/accounts/QnAMaker.v2/operations/read"
+        "Microsoft.CognitiveServices/accounts/QnAMaker.v2/operations/read",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/read",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/download/read",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/create/write",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/write",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/generateanswer/action",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/train/action",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/alterations/read",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/alterations/write",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/endpointkeys/read",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/endpointkeys/refreshkeys/action",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/endpointsettings/read",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/endpointsettings/write",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/operations/read"
       ],
       "notDataActions": []
     }
@@ -5782,7 +5821,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="cognitive-services-qna-maker-reader"></a>Модуль чтения Cognitive Services QnA Maker
 
-Давайте выполним чтение и тестирование только базы знаний. [Подробнее](../cognitive-services/qnamaker/reference-role-based-access-control.md)
+Давайте выполним чтение и тестирование только базы знаний. [Дополнительные сведения](../cognitive-services/qnamaker/reference-role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -5805,6 +5844,12 @@ Microsoft. зрения Data пленку может создавать, чит�
 > | /Accounts/QnAMaker.v2/alterations/Read [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Скачивание изменений из среды выполнения. |
 > | /Accounts/QnAMaker.v2/endpointkeys/Read [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Возвращает ключи конечной точки для конечной точки. |
 > | /Accounts/QnAMaker.v2/endpointsettings/Read [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Возвращает параметры конечной точки для конечной точки. |
+> | /Аккаунтс/текстаналитикс/кнамакер/кновледжебасес/Реад [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Возвращает список базы знаний или сведения о конкретном кновледжебасер. |
+> | /Аккаунтс/текстаналитикс/кнамакер/кновледжебасес/Довнлоад/Реад [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Скачайте базу знаний. |
+> | /Аккаунтс/текстаналитикс/кнамакер/кновледжебасес/женератеансвер/Актион [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Вызов Женератеансвер для запроса базы знаний. |
+> | /Аккаунтс/текстаналитикс/кнамакер/алтератионс/Реад [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Скачивание изменений из среды выполнения. |
+> | /Аккаунтс/текстаналитикс/кнамакер/ендпоинткэйс/Реад [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Возвращает ключи конечной точки для конечной точки. |
+> | /Аккаунтс/текстаналитикс/кнамакер/ендпоинтсеттингс/Реад [Microsoft. CognitiveServices](resource-provider-operations.md#microsoftcognitiveservices) | Возвращает параметры конечной точки для конечной точки. |
 > | **NotDataActions** |  |
 > | *Нет* |  |
 
@@ -5836,7 +5881,13 @@ Microsoft. зрения Data пленку может создавать, чит�
         "Microsoft.CognitiveServices/accounts/QnAMaker.v2/knowledgebases/generateanswer/action",
         "Microsoft.CognitiveServices/accounts/QnAMaker.v2/alterations/read",
         "Microsoft.CognitiveServices/accounts/QnAMaker.v2/endpointkeys/read",
-        "Microsoft.CognitiveServices/accounts/QnAMaker.v2/endpointsettings/read"
+        "Microsoft.CognitiveServices/accounts/QnAMaker.v2/endpointsettings/read",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/read",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/download/read",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/generateanswer/action",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/alterations/read",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/endpointkeys/read",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/endpointsettings/read"
       ],
       "notDataActions": []
     }
@@ -5849,7 +5900,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="cognitive-services-user"></a>Пользователь служб Cognitive Services
 
-Позволяет создавать и читать список ключей служб Cognitive Services. [Подробнее](../cognitive-services/authentication.md)
+Позволяет создавать и читать список ключей служб Cognitive Services. [Дополнительные сведения](../cognitive-services/authentication.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -5907,6 +5958,323 @@ Microsoft. зрения Data пленку может создавать, чит�
     }
   ],
   "roleName": "Cognitive Services User",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+```
+
+## <a name="internet-of-things"></a>"Интернет вещей"
+
+
+### <a name="device-update-administrator"></a>Администратор обновления устройства
+
+Предоставляет полный доступ к операциям управления и содержимого дополнительные [сведения](../iot-hub-device-update/device-update-control-access.md)
+
+> [!div class="mx-tableFixed"]
+> | Действия | Описание |
+> | --- | --- |
+> | [Microsoft. Authorization](resource-provider-operations.md#microsoftauthorization)/*/Реад | Чтение ролей и назначений ролей |
+> | [Microsoft. Resources](resource-provider-operations.md#microsoftresources)/деплойментс/* | Создание развертывания и управление им |
+> | /Субскриптионс/ресаурцеграупс/Реад [Microsoft. Resources](resource-provider-operations.md#microsoftresources) | Возвращает группы ресурсов или выводит их список. |
+> | [Microsoft. support](resource-provider-operations.md#microsoftsupport)/* | Создание и обновление запроса в службу поддержки |
+> | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/алертрулес/* | Создание классического оповещения метрики и управление им |
+> | **NotActions** |  |
+> | *Нет* |  |
+> | **Действия с данными** |  |
+> | /Аккаунтс/инстанцес/упдатес/Реад [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию чтения, связанную с обновлениями |
+> | /Аккаунтс/инстанцес/упдатес/Врите [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию записи, связанную с обновлениями |
+> | /Аккаунтс/инстанцес/упдатес/делете [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию удаления, связанную с обновлениями |
+> | /Аккаунтс/инстанцес/манажемент/Реад [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию чтения, связанную с управлением |
+> | /Аккаунтс/инстанцес/манажемент/Врите [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию записи, связанную с управлением |
+> | /Аккаунтс/инстанцес/манажемент/делете [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию удаления, связанную с управлением |
+> | **NotDataActions** |  |
+> | *Нет* |  |
+
+```json
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you full access to management and content operations",
+  "id": "/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/02ca0879-e8e4-47a5-a61e-5c618b76e64a",
+  "name": "02ca0879-e8e4-47a5-a61e-5c618b76e64a",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/updates/read",
+        "Microsoft.DeviceUpdate/accounts/instances/updates/write",
+        "Microsoft.DeviceUpdate/accounts/instances/updates/delete",
+        "Microsoft.DeviceUpdate/accounts/instances/management/read",
+        "Microsoft.DeviceUpdate/accounts/instances/management/write",
+        "Microsoft.DeviceUpdate/accounts/instances/management/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Administrator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+```
+
+### <a name="device-update-content-administrator"></a>Администратор содержимого обновления устройства
+
+Предоставляет полный доступ к операциям с содержимым дополнительные [сведения](../iot-hub-device-update/device-update-control-access.md)
+
+> [!div class="mx-tableFixed"]
+> | Действия | Описание |
+> | --- | --- |
+> | [Microsoft. Authorization](resource-provider-operations.md#microsoftauthorization)/*/Реад | Чтение ролей и назначений ролей |
+> | [Microsoft. Resources](resource-provider-operations.md#microsoftresources)/деплойментс/* | Создание развертывания и управление им |
+> | /Субскриптионс/ресаурцеграупс/Реад [Microsoft. Resources](resource-provider-operations.md#microsoftresources) | Возвращает группы ресурсов или выводит их список. |
+> | [Microsoft. support](resource-provider-operations.md#microsoftsupport)/* | Создание и обновление запроса в службу поддержки |
+> | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/алертрулес/* | Создание классического оповещения метрики и управление им |
+> | **NotActions** |  |
+> | *Нет* |  |
+> | **Действия с данными** |  |
+> | /Аккаунтс/инстанцес/упдатес/Реад [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию чтения, связанную с обновлениями |
+> | /Аккаунтс/инстанцес/упдатес/Врите [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию записи, связанную с обновлениями |
+> | /Аккаунтс/инстанцес/упдатес/делете [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию удаления, связанную с обновлениями |
+> | **NotDataActions** |  |
+> | *Нет* |  |
+
+```json
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you full access to content operations",
+  "id": "/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/0378884a-3af5-44ab-8323-f5b22f9f3c98",
+  "name": "0378884a-3af5-44ab-8323-f5b22f9f3c98",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/updates/read",
+        "Microsoft.DeviceUpdate/accounts/instances/updates/write",
+        "Microsoft.DeviceUpdate/accounts/instances/updates/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Content Administrator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+```
+
+### <a name="device-update-content-reader"></a>Средство чтения содержимого обновления устройства
+
+Предоставляет доступ на чтение к операциям с содержимым, но не позволяет вносить изменения [Подробнее](../iot-hub-device-update/device-update-control-access.md)
+
+> [!div class="mx-tableFixed"]
+> | Действия | Описание |
+> | --- | --- |
+> | [Microsoft. Authorization](resource-provider-operations.md#microsoftauthorization)/*/Реад | Чтение ролей и назначений ролей |
+> | [Microsoft. Resources](resource-provider-operations.md#microsoftresources)/деплойментс/* | Создание развертывания и управление им |
+> | /Субскриптионс/ресаурцеграупс/Реад [Microsoft. Resources](resource-provider-operations.md#microsoftresources) | Возвращает группы ресурсов или выводит их список. |
+> | [Microsoft. support](resource-provider-operations.md#microsoftsupport)/* | Создание и обновление запроса в службу поддержки |
+> | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/алертрулес/* | Создание классического оповещения метрики и управление им |
+> | **NotActions** |  |
+> | *Нет* |  |
+> | **Действия с данными** |  |
+> | /Аккаунтс/инстанцес/упдатес/Реад [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию чтения, связанную с обновлениями |
+> | **NotDataActions** |  |
+> | *Нет* |  |
+
+```json
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you read access to content operations, but does not allow making changes",
+  "id": "/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/d1ee9a80-8b14-47f0-bdc2-f4a351625a7b",
+  "name": "d1ee9a80-8b14-47f0-bdc2-f4a351625a7b",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/updates/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Content Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+```
+
+### <a name="device-update-deployments-administrator"></a>Администратор развертываний обновлений устройств
+
+Предоставляет полный доступ к операциям управления дополнительные [сведения](../iot-hub-device-update/device-update-control-access.md)
+
+> [!div class="mx-tableFixed"]
+> | Действия | Описание |
+> | --- | --- |
+> | [Microsoft. Authorization](resource-provider-operations.md#microsoftauthorization)/*/Реад | Чтение ролей и назначений ролей |
+> | [Microsoft. Resources](resource-provider-operations.md#microsoftresources)/деплойментс/* | Создание развертывания и управление им |
+> | /Субскриптионс/ресаурцеграупс/Реад [Microsoft. Resources](resource-provider-operations.md#microsoftresources) | Возвращает группы ресурсов или выводит их список. |
+> | [Microsoft. support](resource-provider-operations.md#microsoftsupport)/* | Создание и обновление запроса в службу поддержки |
+> | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/алертрулес/* | Создание классического оповещения метрики и управление им |
+> | **NotActions** |  |
+> | *Нет* |  |
+> | **Действия с данными** |  |
+> | /Аккаунтс/инстанцес/манажемент/Реад [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию чтения, связанную с управлением |
+> | /Аккаунтс/инстанцес/манажемент/Врите [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию записи, связанную с управлением |
+> | /Аккаунтс/инстанцес/манажемент/делете [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию удаления, связанную с управлением |
+> | **NotDataActions** |  |
+> | *Нет* |  |
+
+```json
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you full access to management operations",
+  "id": "/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/e4237640-0e3d-4a46-8fda-70bc94856432",
+  "name": "e4237640-0e3d-4a46-8fda-70bc94856432",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/management/read",
+        "Microsoft.DeviceUpdate/accounts/instances/management/write",
+        "Microsoft.DeviceUpdate/accounts/instances/management/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Deployments Administrator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+```
+
+### <a name="device-update-deployments-reader"></a>Средство чтения для развертывания обновлений устройств
+
+Предоставляет доступ на чтение к операциям управления, но не позволяет вносить изменения [Подробнее](../iot-hub-device-update/device-update-control-access.md)
+
+> [!div class="mx-tableFixed"]
+> | Действия | Описание |
+> | --- | --- |
+> | [Microsoft. Authorization](resource-provider-operations.md#microsoftauthorization)/*/Реад | Чтение ролей и назначений ролей |
+> | [Microsoft. Resources](resource-provider-operations.md#microsoftresources)/деплойментс/* | Создание развертывания и управление им |
+> | /Субскриптионс/ресаурцеграупс/Реад [Microsoft. Resources](resource-provider-operations.md#microsoftresources) | Возвращает группы ресурсов или выводит их список. |
+> | [Microsoft. support](resource-provider-operations.md#microsoftsupport)/* | Создание и обновление запроса в службу поддержки |
+> | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/алертрулес/* | Создание классического оповещения метрики и управление им |
+> | **NotActions** |  |
+> | *Нет* |  |
+> | **Действия с данными** |  |
+> | /Аккаунтс/инстанцес/манажемент/Реад [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию чтения, связанную с управлением |
+> | **NotDataActions** |  |
+> | *Нет* |  |
+
+```json
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you read access to management operations, but does not allow making changes",
+  "id": "/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/49e2f5d2-7741-4835-8efa-19e1fe35e47f",
+  "name": "49e2f5d2-7741-4835-8efa-19e1fe35e47f",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/management/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Deployments Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+```
+
+### <a name="device-update-reader"></a>Читатель обновления устройства
+
+Предоставляет доступ для чтения к операциям управления и содержимого, но не позволяет вносить изменения [Подробнее](../iot-hub-device-update/device-update-control-access.md)
+
+> [!div class="mx-tableFixed"]
+> | Действия | Описание |
+> | --- | --- |
+> | [Microsoft. Authorization](resource-provider-operations.md#microsoftauthorization)/*/Реад | Чтение ролей и назначений ролей |
+> | [Microsoft. Resources](resource-provider-operations.md#microsoftresources)/деплойментс/* | Создание развертывания и управление им |
+> | /Субскриптионс/ресаурцеграупс/Реад [Microsoft. Resources](resource-provider-operations.md#microsoftresources) | Возвращает группы ресурсов или выводит их список. |
+> | [Microsoft. support](resource-provider-operations.md#microsoftsupport)/* | Создание и обновление запроса в службу поддержки |
+> | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/алертрулес/* | Создание классического оповещения метрики и управление им |
+> | **NotActions** |  |
+> | *Нет* |  |
+> | **Действия с данными** |  |
+> | /Аккаунтс/инстанцес/упдатес/Реад [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию чтения, связанную с обновлениями |
+> | /Аккаунтс/инстанцес/манажемент/Реад [Microsoft. девицеупдате](resource-provider-operations.md#microsoftdeviceupdate) | Выполняет операцию чтения, связанную с управлением |
+> | **NotDataActions** |  |
+> | *Нет* |  |
+
+```json
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Gives you read access to management and content operations, but does not allow making changes",
+  "id": "/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/e9dba6fb-3d52-4cf0-bce3-f06ce71b9e0f",
+  "name": "e9dba6fb-3d52-4cf0-bce3-f06ce71b9e0f",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/accounts/instances/updates/read",
+        "Microsoft.DeviceUpdate/accounts/instances/management/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Device Update Reader",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions"
 }
@@ -5970,7 +6338,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="remote-rendering-client"></a>Клиент удаленной подготовки к просмотру
 
-Предоставляет пользователю возможность управления сеансами, визуализацией и диагностикой для удаленной подготовки к просмотру Azure. [Подробнее](../remote-rendering/how-tos/authentication.md)
+Предоставляет пользователю возможность управления сеансами, визуализацией и диагностикой для удаленной подготовки к просмотру Azure. [Дополнительные сведения](../remote-rendering/how-tos/authentication.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -6340,7 +6708,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="app-configuration-data-owner"></a>Владелец данных Конфигурации приложений
 
-Предоставляет полный доступ к данным Конфигурации приложений. [Подробнее](../azure-app-configuration/concept-enable-rbac.md)
+Предоставляет полный доступ к данным Конфигурации приложений. [Дополнительные сведения](../azure-app-configuration/concept-enable-rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -6383,7 +6751,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="app-configuration-data-reader"></a>Читатель данных Конфигурации приложений
 
-Предоставляет доступ на чтение данных Конфигурации приложений. [Подробнее](../azure-app-configuration/concept-enable-rbac.md)
+Предоставляет доступ на чтение данных Конфигурации приложений. [Дополнительные сведения](../azure-app-configuration/concept-enable-rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -6422,7 +6790,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="azure-service-bus-data-owner"></a>Владелец данных служебной шины Azure
 
-Разрешает полный доступ к ресурсам служебной шины Azure. [Подробнее](../service-bus-messaging/authenticate-application.md)
+Разрешает полный доступ к ресурсам служебной шины Azure. [Дополнительные сведения](../service-bus-messaging/authenticate-application.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -6463,7 +6831,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="azure-service-bus-data-receiver"></a>Получатель данных Служебной шины Azure
 
-Разрешает полный доступ к ресурсам служебной шины Azure. [Подробнее](../service-bus-messaging/authenticate-application.md)
+Разрешает полный доступ к ресурсам служебной шины Azure. [Дополнительные сведения](../service-bus-messaging/authenticate-application.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -6508,7 +6876,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="azure-service-bus-data-sender"></a>Отправитель данных Служебной шины Azure
 
-Разрешает полный доступ к ресурсам служебной шины Azure. [Подробнее](../service-bus-messaging/authenticate-application.md)
+Разрешает полный доступ к ресурсам служебной шины Azure. [Дополнительные сведения](../service-bus-messaging/authenticate-application.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -6596,15 +6964,64 @@ Microsoft. зрения Data пленку может создавать, чит�
 }
 ```
 
-### <a name="eventgrid-eventsubscription-contributor"></a>Участник EventGrid EventSubscription
+### <a name="eventgrid-contributor"></a>Участник EventGrid
 
-Позволяет управлять операциями с подписками на события Сетки событий. [Подробнее](../event-grid/security-authorization.md)
+Позволяет управлять операциями EventGrid.
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
 > | --- | --- |
 > | [Microsoft. Authorization](resource-provider-operations.md#microsoftauthorization)/*/Реад | Чтение ролей и назначений ролей |
-> | [Microsoft. EventGrid](resource-provider-operations.md#microsofteventgrid)/евентсубскриптионс/* |  |
+> | [Microsoft. EventGrid](resource-provider-operations.md#microsofteventgrid)/* | Создание ресурсов сетки событий и управление ими |
+> | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/алертрулес/* | Создание классического оповещения метрики и управление им |
+> | [Microsoft. Resources](resource-provider-operations.md#microsoftresources)/деплойментс/* | Создание развертывания и управление им |
+> | /Субскриптионс/ресаурцеграупс/Реад [Microsoft. Resources](resource-provider-operations.md#microsoftresources) | Возвращает группы ресурсов или выводит их список. |
+> | [Microsoft. support](resource-provider-operations.md#microsoftsupport)/* | Создание и обновление запроса в службу поддержки |
+> | **NotActions** |  |
+> | *Нет* |  |
+> | **Действия с данными** |  |
+> | *Нет* |  |
+> | **NotDataActions** |  |
+> | *Нет* |  |
+
+```json
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Lets you manage EventGrid operations.",
+  "id": "/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/1e241071-0855-49ea-94dc-649edcd759de",
+  "name": "1e241071-0855-49ea-94dc-649edcd759de",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.EventGrid/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "EventGrid Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+```
+
+### <a name="eventgrid-eventsubscription-contributor"></a>Участник EventGrid EventSubscription
+
+Позволяет управлять операциями с подписками на события Сетки событий. [Дополнительные сведения](../event-grid/security-authorization.md)
+
+> [!div class="mx-tableFixed"]
+> | Действия | Описание |
+> | --- | --- |
+> | [Microsoft. Authorization](resource-provider-operations.md#microsoftauthorization)/*/Реад | Чтение ролей и назначений ролей |
+> | [Microsoft. EventGrid](resource-provider-operations.md#microsofteventgrid)/евентсубскриптионс/* | Создание и управление региональными подписками на события |
 > | /Топиктипес/евентсубскриптионс/Реад [Microsoft. EventGrid](resource-provider-operations.md#microsofteventgrid) | Создание списка подписок на глобальные события по типу темы |
 > | /Локатионс/евентсубскриптионс/Реад [Microsoft. EventGrid](resource-provider-operations.md#microsofteventgrid) | Создание списка подписок на события в регионе |
 > | /Локатионс/топиктипес/евентсубскриптионс/Реад [Microsoft. EventGrid](resource-provider-operations.md#microsofteventgrid) | Создание списка подписок на события в регионе по типу темы |
@@ -6653,7 +7070,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="eventgrid-eventsubscription-reader"></a>Читатель EventGrid EventSubscription
 
-Позволяет получить доступ на чтение к подпискам на события Сетки событий. [Подробнее](../event-grid/security-authorization.md)
+Позволяет получить доступ на чтение к подпискам на события Сетки событий. [Дополнительные сведения](../event-grid/security-authorization.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -6862,7 +7279,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="integration-service-environment-contributor"></a>Участник среда службы интеграции
 
-Позволяет управлять средами службы интеграции, но не доступом к ним. [Подробнее](../logic-apps/add-artifacts-integration-service-environment-ise.md)
+Позволяет управлять средами службы интеграции, но не доступом к ним. [Дополнительные сведения](../logic-apps/add-artifacts-integration-service-environment-ise.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -6905,7 +7322,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="integration-service-environment-developer"></a>Разработчик среда службы интеграции
 
-Позволяет разработчикам создавать и обновлять рабочие процессы, учетные записи интеграции и подключения API в средах службы интеграции. [Подробнее](../logic-apps/add-artifacts-integration-service-environment-ise.md)
+Позволяет разработчикам создавать и обновлять рабочие процессы, учетные записи интеграции и подключения API в средах службы интеграции. [Дополнительные сведения](../logic-apps/add-artifacts-integration-service-environment-ise.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -7001,7 +7418,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="logic-app-contributor"></a>Создатель приложений логики
 
-Позволяет управлять приложениями логики, но не доступом к ним. [Подробнее](../logic-apps/logic-apps-securing-a-logic-app.md)
+Позволяет управлять приложениями логики, но не доступом к ним. [Дополнительные сведения](../logic-apps/logic-apps-securing-a-logic-app.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -7080,7 +7497,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="logic-app-operator"></a>Оператор приложений логики
 
-Позволяет читать, включать и отключать приложения логики, но не изменять и не обновлять их. [Подробнее](../logic-apps/logic-apps-securing-a-logic-app.md)
+Позволяет читать, включать и отключать приложения логики, но не изменять и не обновлять их. [Дополнительные сведения](../logic-apps/logic-apps-securing-a-logic-app.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -7698,7 +8115,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="key-vault-contributor"></a>Участник Key Vault
 
-Управление хранилищами ключей, но не позволяет назначать роли в Azure RBAC и не позволяет вам получать доступ к секретам, ключам или сертификатам. [Подробнее](../key-vault/general/secure-your-key-vault.md)
+Управление хранилищами ключей, но не позволяет назначать роли в Azure RBAC и не позволяет вам получать доступ к секретам, ключам или сертификатам. [Дополнительные сведения](../key-vault/general/secure-your-key-vault.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -8077,7 +8494,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="managed-hsm-contributor"></a>Участник управляемого HSM
 
-Позволяет управлять управляемыми пулами HSM, но не доступом к ним. [Подробнее](../key-vault/managed-hsm/secure-your-managed-hsm.md)
+Позволяет управлять управляемыми пулами HSM, но не доступом к ним. [Дополнительные сведения](../key-vault/managed-hsm/secure-your-managed-hsm.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -8116,7 +8533,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="security-admin"></a>администратор безопасности;
 
-Просмотр и обновление разрешений для Центра безопасности. Имеет те же права, что и читатель сведений о безопасности, но также может изменять политику безопасности, отклонять рекомендации и оповещения. [Подробнее](../security-center/security-center-permissions.md)
+Просмотр и обновление разрешений для Центра безопасности. Имеет те же права, что и читатель сведений о безопасности, но также может изменять политику безопасности, отклонять рекомендации и оповещения. [Дополнительные сведения](../security-center/security-center-permissions.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -8273,7 +8690,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="security-reader"></a>Читатель сведений о безопасности
 
-Просмотр разрешений для Центра безопасности. Может просматривать рекомендации, оповещения, политику и состояние безопасности, но не может вносить изменения. [Подробнее](../security-center/security-center-permissions.md)
+Просмотр разрешений для Центра безопасности. Может просматривать рекомендации, оповещения, политику и состояние безопасности, но не может вносить изменения. [Дополнительные сведения](../security-center/security-center-permissions.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -8335,7 +8752,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="devtest-labs-user"></a>Пользователь DevTest Labs
 
-Позволяет подключать, запускать, перезапускать виртуальные машины и завершать их работу в Azure DevTest Labs. [Подробнее](../devtest-labs/devtest-lab-add-devtest-user.md)
+Позволяет подключать, запускать, перезапускать виртуальные машины и завершать их работу в Azure DevTest Labs. [Дополнительные сведения](../devtest-labs/devtest-lab-add-devtest-user.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -8438,7 +8855,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="lab-creator"></a>Создатель лаборатории
 
-Позволяет создавать лабораторные работы в учетных записях лаборатории Azure. [Подробнее](../lab-services/add-lab-creator.md)
+Позволяет создавать лабораторные работы в учетных записях лаборатории Azure. [Дополнительные сведения](../lab-services/add-lab-creator.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -8555,7 +8972,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="application-insights-snapshot-debugger"></a>Отладчик моментальных снимков Application Insights
 
-Пользователю предоставляется разрешение на просмотр и загрузку моментальных снимков отладки, собранных с помощью Application Insights Snapshot Debugger. Обратите внимание, что эти разрешения не включены в роли [Владелец](#owner) или [Участник](#contributor). При предоставлении пользователям роли Application Insights Snapshot Debugger необходимо предоставить роль непосредственно пользователю. Роль не распознается при добавлении в настраиваемую роль. [Подробнее](../azure-monitor/app/snapshot-debugger.md)
+Пользователю предоставляется разрешение на просмотр и загрузку моментальных снимков отладки, собранных с помощью Application Insights Snapshot Debugger. Обратите внимание, что эти разрешения не включены в роли [Владелец](#owner) или [Участник](#contributor). При предоставлении пользователям роли Application Insights Snapshot Debugger необходимо предоставить роль непосредственно пользователю. Роль не распознается при добавлении в настраиваемую роль. [Дополнительные сведения](../azure-monitor/app/snapshot-debugger.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -8604,7 +9021,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="monitoring-contributor"></a>Monitoring Contributor
 
-Может читать все данные мониторинга и изменять параметры мониторинга. Ознакомьтесь также со статьей [Приступая к работе с ролями, разрешениями и системой безопасности с помощью Azure Monitor](../azure-monitor/roles-permissions-security.md#built-in-monitoring-roles). [Подробнее](../azure-monitor/roles-permissions-security.md)
+Может читать все данные мониторинга и изменять параметры мониторинга. Ознакомьтесь также со статьей [Приступая к работе с ролями, разрешениями и системой безопасности с помощью Azure Monitor](../azure-monitor/roles-permissions-security.md#built-in-monitoring-roles). [Дополнительные сведения](../azure-monitor/roles-permissions-security.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -8618,7 +9035,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 > | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/компонентс/* | Создание компонентов Insights и управление ими |
 > | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/датаколлектионрулес/* |  |
 > | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/датаколлектионрулеассоЦиатионс/* |  |
-> | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/диагностиксеттингс/* | Создание, обновление или считывание параметра диагностики для сервера анализа данных. |
+> | [Microsoft.Insights](resource-provider-operations.md#microsoftinsights)/DiagnosticSettings/* | Создание, обновление или считывание параметра диагностики для сервера анализа данных. |
 > | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/евенттипес/* | Вывод списка событий журнала действий (событий управления) в подписке. Это разрешение применяется для доступа к журналу действий посредством кода или портала. |
 > | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/логдефинитионс/* | Это разрешение необходимо пользователям, которым требуется доступ к журналам действия на портале. Получение списка категорий журнала в журнале действий. |
 > | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/метрикалертс/* |  |
@@ -8750,7 +9167,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="monitoring-reader"></a>Роль Monitoring Reader
 
-Может читать все данные мониторинга (метрики, журналы и т. д.). Ознакомьтесь также со статьей [Приступая к работе с ролями, разрешениями и системой безопасности с помощью Azure Monitor](../azure-monitor/roles-permissions-security.md#built-in-monitoring-roles). [Подробнее](../azure-monitor/roles-permissions-security.md)
+Может читать все данные мониторинга (метрики, журналы и т. д.). Ознакомьтесь также со статьей [Приступая к работе с ролями, разрешениями и системой безопасности с помощью Azure Monitor](../azure-monitor/roles-permissions-security.md#built-in-monitoring-roles). [Дополнительные сведения](../azure-monitor/roles-permissions-security.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -8793,7 +9210,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="workbook-contributor"></a>Участник для книг
 
-Может сохранять общие книги. [Подробнее](../sentinel/tutorial-monitor-your-data.md)
+Может сохранять общие книги. [Дополнительные сведения](../sentinel/tutorial-monitor-your-data.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -8836,7 +9253,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="workbook-reader"></a>Читатель книг
 
-Может читать книги. [Подробнее](../sentinel/tutorial-monitor-your-data.md)
+Может читать книги. [Дополнительные сведения](../sentinel/tutorial-monitor-your-data.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -8878,7 +9295,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="automation-job-operator"></a>Оператор заданий службы автоматизации
 
-Создание заданий и управление ими с помощью модулей Runbook службы автоматизации. [Подробнее](../automation/automation-role-based-access-control.md)
+Создание заданий и управление ими с помощью модулей Runbook службы автоматизации. [Дополнительные сведения](../automation/automation-role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -9020,7 +9437,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="automation-runbook-operator"></a>Оператор Runbook службы автоматизации
 
-Чтение свойств Runbook, позволяющее создавать задания Runbook. [Подробнее](../automation/automation-role-based-access-control.md)
+Чтение свойств Runbook, позволяющее создавать задания Runbook. [Дополнительные сведения](../automation/automation-role-based-access-control.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -9069,7 +9486,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="azure-connected-machine-onboarding"></a>Подключение Azure Connected Machine
 
-Может подключать компьютеры Azure Connected Machine. [Подробнее](../azure-arc/servers/onboard-service-principal.md)
+Может подключать компьютеры Azure Connected Machine. [Дополнительные сведения](../azure-arc/servers/onboard-service-principal.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -9212,7 +9629,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="blueprint-contributor"></a>Участник схемы
 
-Позволяет управлять определениями схем, но не назначать их. [Подробнее](../governance/blueprints/overview.md)
+Позволяет управлять определениями схем, но не назначать их. [Дополнительные сведения](../governance/blueprints/overview.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -9259,7 +9676,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="blueprint-operator"></a>Оператор схемы
 
-Может назначать существующие опубликованные схемы, но не создавать новые схемы. Обратите внимание, это нужно выполнять только с использованием управляемого удостоверения, назначаемого пользователем. [Подробнее](../governance/blueprints/overview.md)
+Может назначать существующие опубликованные схемы, но не создавать новые схемы. Обратите внимание, это нужно выполнять только с использованием управляемого удостоверения, назначаемого пользователем. [Дополнительные сведения](../governance/blueprints/overview.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -9649,7 +10066,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="managed-services-registration-assignment-delete-role"></a>Роль для удаления назначения регистрации управляемых служб
 
-Роль для удаления назначения регистрации управляемых служб позволяет пользователям удалять регистрации, назначенные их клиенту управляемых служб. [Подробнее](../lighthouse/how-to/remove-delegation.md)
+Роль для удаления назначения регистрации управляемых служб позволяет пользователям удалять регистрации, назначенные их клиенту управляемых служб. [Дополнительные сведения](../lighthouse/how-to/remove-delegation.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -9833,7 +10250,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="policy-insights-data-writer-preview"></a>Редактор данных анализа политик (предварительная версия)
 
-Предоставляет доступ на чтение политик ресурсов и доступ на запись событий политики компонентов ресурсов. [Подробнее](../governance/policy/concepts/policy-for-kubernetes.md)
+Предоставляет доступ на чтение политик ресурсов и доступ на запись событий политики компонентов ресурсов. [Дополнительные сведения](../governance/policy/concepts/policy-for-kubernetes.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -9875,6 +10292,61 @@ Microsoft. зрения Data пленку может создавать, чит�
     }
   ],
   "roleName": "Policy Insights Data Writer (Preview)",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
+```
+
+### <a name="quota-request-operator-role"></a>Роль оператора запроса квоты
+
+Чтение и создание запросов квот, получение состояния запроса квоты и создание билетов на поддержку. [Дополнительные сведения](/rest/api/reserved-vm-instances/quotaapi)
+
+> [!div class="mx-tableFixed"]
+> | Действия | Описание |
+> | --- | --- |
+> | /Ресаурцепровидерс/локатионс/сервицелимитс/Реад [Microsoft. Capacity](resource-provider-operations.md#microsoftcapacity) | Получение текущего предела службы или квоты указанного ресурса и расположения |
+> | /Ресаурцепровидерс/локатионс/сервицелимитс/Врите [Microsoft. Capacity](resource-provider-operations.md#microsoftcapacity) | Создать ограничение службы или квоту для указанного ресурса и расположения |
+> | /Ресаурцепровидерс/локатионс/сервицелимитсрекуестс/Реад [Microsoft. Capacity](resource-provider-operations.md#microsoftcapacity) | Получение запроса на ограничение службы для указанного ресурса и расположения |
+> | /Регистер/Актион [Microsoft. Capacity](resource-provider-operations.md#microsoftcapacity) | Регистрация поставщика ресурсов емкости и разрешение создания ресурсов емкости. |
+> | [Microsoft. Authorization](resource-provider-operations.md#microsoftauthorization)/*/Реад | Чтение ролей и назначений ролей |
+> | [Microsoft. Insights](resource-provider-operations.md#microsoftinsights)/алертрулес/* | Создание классического оповещения метрики и управление им |
+> | [Microsoft. Resources](resource-provider-operations.md#microsoftresources)/деплойментс/* | Создание развертывания и управление им |
+> | /Субскриптионс/ресаурцеграупс/Реад [Microsoft. Resources](resource-provider-operations.md#microsoftresources) | Возвращает группы ресурсов или выводит их список. |
+> | [Microsoft. support](resource-provider-operations.md#microsoftsupport)/* | Создание и обновление запроса в службу поддержки |
+> | **NotActions** |  |
+> | *Нет* |  |
+> | **Действия с данными** |  |
+> | *Нет* |  |
+> | **NotDataActions** |  |
+> | *Нет* |  |
+
+```json
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Role to read and create Quota Requests and get Quota Request Status.",
+  "id": "/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/0e5f05e5-9ab9-446b-b98d-1e2157c94125",
+  "name": "0e5f05e5-9ab9-446b-b98d-1e2157c94125",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Capacity/resourceProviders/locations/serviceLimits/read",
+        "Microsoft.Capacity/resourceProviders/locations/serviceLimits/write",
+        "Microsoft.Capacity/resourceProviders/locations/serviceLimitsRequests/read",
+        "Microsoft.Capacity/register/action",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Quota Request Operator Role",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions"
 }
@@ -9939,7 +10411,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="resource-policy-contributor"></a>Участник политики ресурсов
 
-Пользователи с правами на создание или изменение политики ресурсов, создание запросов в службу поддержки и чтение ресурсов и иерархии. [Подробнее](../governance/policy/overview.md)
+Пользователи с правами на создание или изменение политики ресурсов, создание запросов в службу поддержки и чтение ресурсов и иерархии. [Дополнительные сведения](../governance/policy/overview.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -10378,7 +10850,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="tag-contributor"></a>Участник по тегам
 
-Позволяет вам управлять тегами в сущностях, не предоставляя доступ к самим сущностям. [Подробнее](../azure-resource-manager/management/tag-resources.md)
+Позволяет вам управлять тегами в сущностях, не предоставляя доступ к самим сущностям. [Дополнительные сведения](../azure-resource-manager/management/tag-resources.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -10581,7 +11053,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="desktop-virtualization-application-group-contributor"></a>Участник группы приложений виртуализации настольных систем
 
-Участник группы приложений виртуализации настольных систем. [Подробнее](../virtual-desktop/rbac.md)
+Участник группы приложений виртуализации настольных систем. [Дополнительные сведения](../virtual-desktop/rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -10634,7 +11106,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="desktop-virtualization-application-group-reader"></a>Читатель группы приложений виртуализации настольных систем
 
-Читатель группы приложений виртуализации настольных систем. [Подробнее](../virtual-desktop/rbac.md)
+Читатель группы приложений виртуализации настольных систем. [Дополнительные сведения](../virtual-desktop/rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -10689,7 +11161,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="desktop-virtualization-contributor"></a>Участник виртуализации настольных систем
 
-Участник виртуализации настольных систем. [Подробнее](../virtual-desktop/rbac.md)
+Участник виртуализации настольных систем. [Дополнительные сведения](../virtual-desktop/rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -10738,7 +11210,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="desktop-virtualization-host-pool-contributor"></a>Участник пула узлов виртуализации настольных систем
 
-Участник пула узлов виртуализации настольных систем. [Подробнее](../virtual-desktop/rbac.md)
+Участник пула узлов виртуализации настольных систем. [Дополнительные сведения](../virtual-desktop/rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -10787,7 +11259,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="desktop-virtualization-host-pool-reader"></a>Средство чтения пула узлов виртуализации настольных систем
 
-Модуль чтения пула узлов виртуализации настольных систем. [Подробнее](../virtual-desktop/rbac.md)
+Модуль чтения пула узлов виртуализации настольных систем. [Дополнительные сведения](../virtual-desktop/rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -10838,7 +11310,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="desktop-virtualization-reader"></a>Средство чтения виртуализации рабочего стола
 
-Читатель виртуализации настольных систем. [Подробнее](../virtual-desktop/rbac.md)
+Читатель виртуализации настольных систем. [Дополнительные сведения](../virtual-desktop/rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -10887,7 +11359,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="desktop-virtualization-session-host-operator"></a>Оператор узла сеансов виртуализации рабочих столов
 
-Оператор узла сеансов виртуализации настольных систем. [Подробнее](../virtual-desktop/rbac.md)
+Оператор узла сеансов виртуализации настольных систем. [Дополнительные сведения](../virtual-desktop/rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -10938,7 +11410,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="desktop-virtualization-user"></a>Пользователь виртуализации рабочих столов
 
-Позволяет пользователю использовать приложения в группе приложений. [Подробнее](../virtual-desktop/delegated-access-virtual-desktop.md)
+Позволяет пользователю использовать приложения в группе приложений. [Дополнительные сведения](../virtual-desktop/delegated-access-virtual-desktop.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -10977,7 +11449,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="desktop-virtualization-user-session-operator"></a>Оператор пользовательского сеанса виртуализации настольных систем
 
-Оператор сеанса Уеср виртуализации настольных систем. [Подробнее](../virtual-desktop/rbac.md)
+Оператор сеанса Уеср виртуализации настольных систем. [Дополнительные сведения](../virtual-desktop/rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -11030,7 +11502,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="desktop-virtualization-workspace-contributor"></a>Участник рабочей области виртуализации рабочих столов
 
-Участник рабочей области виртуализации настольных систем. [Подробнее](../virtual-desktop/rbac.md)
+Участник рабочей области виртуализации настольных систем. [Дополнительные сведения](../virtual-desktop/rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -11081,7 +11553,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="desktop-virtualization-workspace-reader"></a>Читатель рабочей области виртуализации рабочих столов
 
-Читатель рабочей области виртуализации настольных систем. [Подробнее](../virtual-desktop/rbac.md)
+Читатель рабочей области виртуализации настольных систем. [Дополнительные сведения](../virtual-desktop/rbac.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -11132,7 +11604,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="disk-backup-reader"></a>Средство чтения резервных копий дисков
 
-Предоставляет разрешение на резервное копирование резервного хранилища на диск. [Подробнее](../backup/disk-backup-faq.md)
+Предоставляет разрешение на резервное копирование резервного хранилища на диск. [Дополнительные сведения](../backup/disk-backup-faq.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -11175,7 +11647,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="disk-restore-operator"></a>Оператор восстановления диска
 
-Предоставляет разрешение на восстановление диска в хранилище архивации. [Подробнее](../backup/restore-managed-disks.md)
+Предоставляет разрешение на восстановление диска в хранилище архивации. [Дополнительные сведения](../backup/restore-managed-disks.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -11220,7 +11692,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="disk-snapshot-contributor"></a>Участник моментальных снимков дисков
 
-Предоставляет разрешение на резервное хранилище для управления моментальными снимками диска. [Подробнее](../backup/backup-managed-disks.md)
+Предоставляет разрешение на резервное хранилище для управления моментальными снимками диска. [Дополнительные сведения](../backup/backup-managed-disks.md)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |
@@ -11332,7 +11804,7 @@ Microsoft. зрения Data пленку может создавать, чит�
 
 ### <a name="services-hub-operator"></a>Оператор центра служб
 
-Оператор "центр служб" позволяет выполнять все операции чтения, записи и удаления, связанные с соединителями концентратора служб. [Подробнее](/services-hub/health/sh-connector-roles)
+Оператор "центр служб" позволяет выполнять все операции чтения, записи и удаления, связанные с соединителями концентратора служб. [Дополнительные сведения](/services-hub/health/sh-connector-roles)
 
 > [!div class="mx-tableFixed"]
 > | Действия | Описание |

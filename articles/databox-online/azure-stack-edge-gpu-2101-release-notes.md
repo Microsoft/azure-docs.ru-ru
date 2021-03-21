@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 03/08/2021
 ms.author: alkohli
 ms.openlocfilehash: 922480eb2f4795729919c6ed039ccf61f19875b3
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102630373"
 ---
 # <a name="azure-stack-edge-2101-release-notes"></a>Заметки о выпуске Azure Stack пограничных 2101
@@ -25,7 +25,7 @@ ms.locfileid: "102630373"
 
 Эта статья относится к выпуску **Azure Stack ребра 2101** , сопоставленному с номером версии программного обеспечения **2.2.1473.2521**.
 
-## <a name="whats-new"></a>Новые возможности
+## <a name="whats-new"></a>Новое
 
 В выпуске Azure Stack ребра 2101 доступны следующие новые функции. 
 
@@ -66,7 +66,7 @@ ms.locfileid: "102630373"
 |**3.**|Регулирование|При регулировании, если новые операции записи на устройство не разрешены, запись клиентом NFS завершается ошибкой с сообщением "отказано в разрешении".| Эта ошибка будет показана ниже:<br>`hcsuser@ubuntu-vm:~/nfstest$ mkdir test`<br>mkdir: не удается создать каталог "тест": отказано в разрешении|
 |**4.**|Прием хранилища BLOB-объектов|При использовании AzCopy версии 10 для приема хранилища BLOB-объектов запустите AzCopy со следующим аргументом: `Azcopy <other arguments> --cap-mbps 2000`| Если эти ограничения не предоставляются для AzCopy, это может привести к отправке на устройство большого количества запросов, что приведет к проблемам со службой.|
 |**5.**|Многоуровневые учетные записи хранения|При использовании многоуровневых учетных записей хранения применяются следующие условия.<ul><li> Поддерживаются только блочные BLOB-объекты. Страничные BLOB-объекты не поддерживаются.</li><li>Поддержка API моментальных снимков или копирования отсутствует.</li><li> Прием рабочей нагрузки Hadoop с помощью `distcp` не поддерживается, так как он интенсивно использует операцию копирования.</li></ul>||
-|**6.**|Подключение к общему ресурсу NFS|Если несколько процессов копируются в одну общую папку и `nolock` атрибут не используется, во время копирования могут возникнуть ошибки.|`nolock`Для копирования файлов в общую папку NFS необходимо передать атрибут в команду mount. Например: `C:\Users\aseuser mount -o anon \\10.1.1.211\mnt\vms Z:`.|
+|**6.**|Подключение к общему ресурсу NFS|Если несколько процессов копируются в одну общую папку и `nolock` атрибут не используется, во время копирования могут возникнуть ошибки.|`nolock`Для копирования файлов в общую папку NFS необходимо передать атрибут в команду mount. Например, `C:\Users\aseuser mount -o anon \\10.1.1.211\mnt\vms Z:`.|
 |**7.**|Кластер Kubernetes|При применении обновления на устройстве, на котором работает кластер kubernetes, виртуальные машины kubernetes перезапускаются и перезагружаются. В этом случае только те модули, которые развернуты с указанными репликами, автоматически восстанавливаются после обновления.  |Если вы создали отдельные модули Pod за пределами контроллера репликации без указания набора реплик, эти модули не будут автоматически восстановлены после обновления устройства. Вам потребуется восстановить эти модули.<br>Набор реплик заменяет удаляемые или завершенные модули Pod по какой-либо причине, например сбой узла или аварийное обновление узла. По этой причине рекомендуется использовать набор реплик, даже если приложению требуется только один модуль.|
 |**8.**|Кластер Kubernetes|Kubernetes на Azure Stack пограничной Pro поддерживается только в версии Helm V3 или более поздней. Дополнительные сведения см. в подразделах " [часто задаваемые вопросы": удаление ящика](https://v3.helm.sh/docs/faq/).|
 |**9.**|Azure Arc с поддержкой Kubernetes |Для общедоступного выпуска служба Arc Azure Kubernetes обновляется с версии 0.1.18 на 0.2.9. Так как обновление Kubernetes для Azure с поддержкой Arc не поддерживается на Azure Stack пограничном устройстве, вам потребуется повторно развернуть Kubernetes с поддержкой ARC.|Выполните следующие действия.<ol><li>[Применение программного обеспечения устройства и обновлений Kubernetes](azure-stack-edge-gpu-install-update.md).</li><li>Подключитесь к [интерфейсу PowerShell устройства](azure-stack-edge-gpu-connect-powershell-interface.md).</li><li>Удалите существующий агент Azure ARC. Введите `Remove-HcsKubernetesAzureArcAgent`.</li><li>Развертывание [дуги Azure в новом ресурсе](azure-stack-edge-gpu-deploy-arc-kubernetes-cluster.md). Не используйте существующий ресурс Azure ARC.</li></ol>|
@@ -86,6 +86,6 @@ ms.locfileid: "102630373"
 <!--|**18.**|Azure Private Edge Zone (Preview) |There is a known issue with Virtual Network Function VM if the VM was created on Azure Stack Edge device running earlier preview builds such as 2006/2007b and then the device was updated to 2009 GA release. The issue is that the VNF information can't be retrieved or any new VNFs can't be created unless the VNF VMs are deleted before the device is updated.  |Before you update Azure Stack Edge device to 2009 release, use the PowerShell command `get-mecvnf` followed by `remove-mecvnf <VNF guid>` to remove all Virtual Network Function VMs one at a time. After the upgrade, you will need to redeploy the same VNFs.|-->
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Обновление устройства](azure-stack-edge-gpu-install-update.md)

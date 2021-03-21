@@ -6,10 +6,10 @@ ms.author: yalavi
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.openlocfilehash: 8759a539005a38892498c9450d31f97884547db7
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102033713"
 ---
 # <a name="create-view-and-manage-log-alerts-using-azure-monitor"></a>Создание и просмотр оповещений журнала, а также управление ими с помощью Azure Monitor
@@ -54,7 +54,7 @@ ms.locfileid: "102033713"
 
 1. Оповещения журнала могут основываться на двух типах [**мер**](./alerts-unified-log.md#measure):
     1. **Число результатов** — количество записей, возвращаемых запросом.
-    1. **Измерение метрик**  -  *Статистическое значение* , вычисленное с использованием суммирования, сгруппированных по выражениям, выбранным и [ячейками](/azure/kusto/query/binfunction) . Пример.
+    1. **Измерение метрик**  -  *Статистическое значение* , вычисленное с использованием суммирования, сгруппированных по выражениям, выбранным и [ячейками](/azure/kusto/query/binfunction) . Пример:
 
     ```Kusto
     // Reported errors
@@ -111,7 +111,7 @@ ms.locfileid: "102033713"
 
 1. На [портале](https://portal.azure.com/)выберите **монитор** и щелкните **оповещения**.
 
-    ![Наблюдение](media/alerts-log/AlertsPreviewMenu.png)
+    ![Мониторинг](media/alerts-log/AlertsPreviewMenu.png)
 
 1. Выберите **новое правило генерации оповещений**. 
 

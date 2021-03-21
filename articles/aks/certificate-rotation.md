@@ -5,10 +5,10 @@ services: container-service
 ms.topic: article
 ms.date: 11/15/2019
 ms.openlocfilehash: fa26762c54ad54835b174b8d814a2e77cb38b885
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102619041"
 ---
 # <a name="rotate-certificates-in-azure-kubernetes-service-aks"></a>Смена сертификатов в службе Kubernetes Azure (AKS)
@@ -17,7 +17,7 @@ ms.locfileid: "102619041"
 
 В этой статье показано, как поворачивать сертификаты в кластере AKS.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Для работы с этой статьей требуется Azure CLI версии 2.0.77 или более поздней. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0][azure-cli-install].
 
@@ -60,7 +60,7 @@ az aks rotate-certs -g $RESOURCE_GROUP_NAME -n $CLUSTER_NAME
 > [!IMPORTANT]
 > Для завершения может потребоваться до 30 минут `az aks rotate-certs` . Если команда не выполняется до завершения, используйте `az aks show` для проверки состояния кластера на *вращение сертификата*. Если кластер находится в состоянии сбоя, повторно запустите `az aks rotate-certs` его, чтобы снова повернуть сертификаты.
 
-Убедитесь, что старые сертификаты больше не являются допустимыми, выполнив `kubectl` команду. Так как вы не обновили сертификаты, используемые `kubectl` , вы увидите ошибку.  Пример.
+Убедитесь, что старые сертификаты больше не являются допустимыми, выполнив `kubectl` команду. Так как вы не обновили сертификаты, используемые `kubectl` , вы увидите ошибку.  Пример:
 
 ```console
 $ kubectl get no
@@ -73,7 +73,7 @@ Unable to connect to the server: x509: certificate signed by unknown authority (
 az aks get-credentials -g $RESOURCE_GROUP_NAME -n $CLUSTER_NAME --overwrite-existing
 ```
 
-Убедитесь, что сертификаты обновлены, выполнив `kubectl` команду, которая теперь будет выполнена успешно. Пример.
+Убедитесь, что сертификаты обновлены, выполнив `kubectl` команду, которая теперь будет выполнена успешно. Пример:
 
 ```console
 kubectl get no
@@ -82,7 +82,7 @@ kubectl get no
 > [!NOTE]
 > Если у вас есть службы, работающие поверх AKS, например [Azure dev Spaces][dev-spaces], может потребоваться также [обновить сертификаты, связанные с этими службами][dev-spaces-rotate] .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этой статье показано, как автоматически поворачивать сертификаты, CAs и SAs кластера. Рекомендации [по обеспечению безопасности и обновления кластера в службе Azure Kubernetes (AKS)][aks-best-practices-security-upgrades] см. в статье рекомендации по обеспечению безопасности AKS.
 

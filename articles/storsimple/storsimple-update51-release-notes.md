@@ -5,14 +5,14 @@ author: alkohli
 ms.assetid: ''
 ms.service: storsimple
 ms.topic: conceptual
-ms.date: 03/05/2020
+ms.date: 03/18/2021
 ms.author: alkohli
-ms.openlocfilehash: a6a359888e782751892f2a034a8d92a014fd3a81
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.openlocfilehash: cdb971851ba678ce18f5a1c7954e5620740f3a4c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "90055849"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104657575"
 ---
 # <a name="storsimple-8000-series-update-51-release-notes"></a>Заметки о выпуске пакета StorSimple 8000 с обновлением 5,1
 
@@ -34,7 +34,11 @@ ms.locfileid: "90055849"
 
 В обновление 5,1 внесены следующие основные улучшения и исправления ошибок:
 
-* **Tls 1,2** — это обновление StorSimple будет применять TLS 1,2 на всех клиентах. Это обязательное обновление для всех устройств StorSimple 8000.
+* **Tls 1,2** — это обновление StorSimple будет применять TLS 1,2 на всех клиентах. Это обязательное обновления для всех устройств серии StorSimple 8000.
+
+   Если вы видите следующее предупреждение, перед продолжением необходимо обновить программное обеспечение на устройстве.
+
+   На одном или нескольких устройствах StorSimple выполняется старая версия программного обеспечения. Последнее доступное обновление для TLS 1,2 — это обязательное обновление, которое должно быть установлено на этих устройствах немедленно. TLS 1,2 используется для всех портал Azure связи и без этого обновления, устройство не сможет взаимодействовать со службой StorSimple.
 
 ## <a name="known-issues-in-update-51-from-previous-releases"></a>Известные проблемы в обновлении 5,1 из предыдущих выпусков
 

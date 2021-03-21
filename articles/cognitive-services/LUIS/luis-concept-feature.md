@@ -6,10 +6,10 @@ ms.subservice: language-understanding
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.openlocfilehash: da85abdff3d1022659f2d4e83fd14c5ae6003fc9
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100546063"
 ---
 # <a name="machine-learning-features"></a>Функции машинного обучения
@@ -172,7 +172,7 @@ ms.locfileid: "100546063"
 
 |Каноническое имя|Синонимы|
 |--|--|
-|США|США<br>США<br>US<br>США<br>0|
+|США|США<br>США<br>США<br>США<br>0|
 
 Клиентское приложение, например робот чата, может задать вопрос для получения дальнейших вопросов. Это помогает клиенту понять, что выбор страны или региона ограничен и является *обязательным*.
 
@@ -207,7 +207,7 @@ ms.locfileid: "100546063"
 
 Сущность для резервирования билетов — это сущность машинного обучения с вложенными сущностями, включая _источник_ и _назначение_. Эти вложенные сущности указывают географическое расположение. Чтобы извлечь расположения и отличать _источник_ и _назначение_, каждая подсущность должна иметь функции.
 
-|Тип|Исходная подсущность |Целевая подсущность|
+|Type|Исходная подсущность |Целевая подсущность|
 |--|--|--|
 |Модель как функция|[geographyV2](luis-reference-prebuilt-geographyv2.md?tabs=V3) предварительно созданная сущность|[geographyV2](luis-reference-prebuilt-geographyv2.md?tabs=V3) предварительно созданная сущность|
 |Список фраз|**Слова происхождения**: `start at` , `begin from` , `leave`|**Целевые слова**: `to` , `arrive` , `land at` , `go` , `going` , `stay` , `heading`|
@@ -247,7 +247,7 @@ ms.locfileid: "100546063"
 
 Ознакомьтесь [с рекомендациями](luis-concept-best-practices.md).
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Расширьте](schema-change-prediction-runtime.md) модели приложений в среде выполнения прогнозирования.
 * Дополнительные сведения о добавлении компонентов в приложение LUIS см. в разделе [Добавление компонентов](luis-how-to-add-features.md) .

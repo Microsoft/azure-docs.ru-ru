@@ -8,10 +8,10 @@ ms.service: security-center
 ms.topic: how-to
 ms.date: 03/11/2021
 ms.openlocfilehash: 0a24546579df020dcb7c7a9b01ee3d181226d2df
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102617494"
 ---
 # <a name="grant-and-request-tenant-wide-visibility"></a>Предоставление и запрос видимости на уровне клиента
@@ -81,7 +81,7 @@ ms.locfileid: "102617494"
 
     После того как глобальный администратор выберет **запрос на проверку** и завершит процесс, решение будет отправлено запрашивающему пользователю по электронной почте. 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о разрешениях центра безопасности см. на следующей связанной странице:
 

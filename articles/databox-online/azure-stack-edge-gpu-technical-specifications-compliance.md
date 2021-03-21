@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/01/2021
 ms.author: alkohli
 ms.openlocfilehash: 937f0d1feb0c45c1c158b5e88daf268aeb383509
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102034750"
 ---
 # <a name="technical-specifications-and-compliance-for-azure-stack-edge-pro-with-gpu"></a>Технические спецификации и соответствие требованиям для Azure Stack пограничных Pro с помощью GPU 
@@ -67,7 +67,7 @@ Azure Stack пограничных устройств Pro имеет следу�
 
 | Параметр           | Описание                 |
 |-------------------------|----------------------------|
-| Моделирование    | Сетевой адаптер ConnectX®-4 LX EN                      |
+| Модель    | Сетевой адаптер ConnectX®-4 LX EN                      |
 | Описание модели               | 25-портовый SFP28 с двумя портами; PCIe 3.0 x8; ДИРЕКТИВА ROHS R6                    |
 | Номер части устройства (R640) | MCX4121A — АКАТ  |
 | ПУСТОЙ PSID (R640)           | MT_2420110034                         |

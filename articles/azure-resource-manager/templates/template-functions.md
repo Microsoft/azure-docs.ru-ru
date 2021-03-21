@@ -4,10 +4,10 @@ description: Описывает функции, используемые в ша
 ms.topic: conceptual
 ms.date: 10/12/2020
 ms.openlocfilehash: dbda5c635a5189158424363c341b269d331a5fdc
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101707325"
 ---
 # <a name="arm-template-functions"></a>Функции шаблонов ARM
@@ -241,7 +241,7 @@ Resource Manager предоставляет для работы с логиче�
 * [skip](template-functions-string.md#skip)
 * [split](template-functions-string.md#split)
 * [startsWith](template-functions-string.md#startswith)
-* [строка](template-functions-string.md#string)
+* [string](template-functions-string.md#string)
 * [substring](template-functions-string.md#substring)
 * [take](template-functions-string.md#take)
 * [toLower](template-functions-string.md#tolower)

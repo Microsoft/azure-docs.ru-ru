@@ -1,15 +1,15 @@
 ---
 title: Встроенные определения политик для Центров событий Azure
 description: Здесь приведены встроенные определения политик в Политике Azure для Центров событий Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению ресурсами Azure.
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 ms.topic: reference
 ms.custom: subject-policy-reference
-ms.openlocfilehash: d3bb10c59e0280ebdacc4d8bdf1e2f12624a50bc
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.openlocfilehash: d9a0159d9397aff490d317d19c1ada7f102aa67f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102614130"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104591910"
 ---
 # <a name="azure-policy-built-in-definitions-for-azure-event-hubs"></a>Встроенные определения в Политике Azure для Центров событий Azure
 

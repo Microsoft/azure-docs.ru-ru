@@ -7,10 +7,10 @@ ms.date: 10/30/2019
 ms.author: helohr
 manager: lizross
 ms.openlocfilehash: bb0ee52d37fe901a610723d5864240b8778d8b17
-ms.sourcegitcommit: 87a6587e1a0e242c2cfbbc51103e19ec47b49910
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103574600"
 ---
 # <a name="determine-user-connection-latency-in-windows-virtual-desktop"></a>Определение задержки подключения пользователей в виртуальном рабочем столе Windows
@@ -34,7 +34,7 @@ ms.locfileid: "103574600"
 
 Виртуальный рабочий стол Windows использует [переднюю дверцу Azure](https://azure.microsoft.com/services/frontdoor/) , чтобы перенаправить подключение пользователя к ближайшему шлюзу виртуальных рабочих столов Windows на основе исходного IP-адреса. Виртуальный рабочий стол Windows всегда будет использовать шлюз виртуальных рабочих столов Windows, который выбирает клиент.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Чтобы проверить лучшее расположение для оптимальной задержки, см. раздел [средство оценки возможностей виртуального рабочего стола Windows](https://azure.microsoft.com/services/virtual-desktop/assessment/).
 - Ценовые планы см. на странице [цены на виртуальные рабочие столы Windows](https://azure.microsoft.com/pricing/details/virtual-desktop/).

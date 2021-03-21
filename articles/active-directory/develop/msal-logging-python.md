@@ -13,12 +13,12 @@ ms.date: 01/25/2021
 ms.author: marsma
 ms.reviewer: saeeda, jmprieur
 ms.custom: aaddev
-ms.openlocfilehash: 8488325613b05d54b352a19a06860e08f1779877
-ms.sourcegitcommit: 1a98b3f91663484920a747d75500f6d70a6cb2ba
+ms.openlocfilehash: 1d52b017f94785f5fb25a25f127ae52d96e97d8b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99063120"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104578759"
 ---
 # <a name="logging-in-msal-for-python"></a>Ведение журналов в MSAL для Python
 
@@ -26,22 +26,51 @@ ms.locfileid: "99063120"
 
 ## <a name="msal-for-python-logging"></a>MSAL для ведения журнала Python
 
-Ведение журнала в MSAL Python использует стандартный механизм ведения журнала Python, например, `logging.info("msg")` можно настроить ведение журнала MSAL следующим образом (и увидеть его в действии [username_password_sample](https://github.com/AzureAD/microsoft-authentication-library-for-python/blob/1.0.0/sample/username_password_sample.py#L31L32)):
+Ведение журнала в MSAL для Python использует [модуль ведения журнала в стандартной библиотеке Python](https://docs.python.org/3/library/logging.html). Вы можете настроить ведение журнала MSAL следующим образом (и увидеть его в действии в [username_password_sample](https://github.com/AzureAD/microsoft-authentication-library-for-python/blob/1.0.0/sample/username_password_sample.py#L31L32)):
 
 ### <a name="enable-debug-logging-for-all-modules"></a>Включить ведение журнала отладки для всех модулей
 
-По умолчанию ведение журнала в любом сценарии Python отключено. Если вы хотите включить ведение журнала отладки для всех модулей во всем сценарии Python, используйте:
+По умолчанию ведение журнала в любом сценарии Python отключено. Если вы хотите включить подробное ведение журнала для **всех** модулей Python в скрипте, используйте `logging.basicConfig` с уровнем `logging.DEBUG` :
 
 ```python
+import logging
+
 logging.basicConfig(level=logging.DEBUG)
 ```
 
-### <a name="silence-only-msal-logging"></a>Ведение журнала MSAL только бездействия
+При этом все сообщения журнала, предоставленные модулю ведения журнала, будут напечатаны на стандартном выходе.
 
-Чтобы безвозвратно вести журнал MSAL Library и включить ведение журнала отладки во всех остальных модулях скрипта Python, отключите средство ведения журнала, используемое MSAL Python:
+### <a name="configure-msal-logging-level"></a>Настройка уровня ведения журнала MSAL
 
-```Python
+Уровень ведения журнала MSAL для регистратора Python можно настроить с помощью `logging.getLogger()` метода с именем средства ведения журнала `"msal"` :
+
+```python
+import logging
+
 logging.getLogger("msal").setLevel(logging.WARN)
+```
+
+### <a name="configure-msal-logging-with-azure-app-insights"></a>Настройка ведения журнала MSAL с помощью Azure App Insights
+
+Журналы Python предоставляются обработчику журнала, который по умолчанию имеет значение `StreamHandler` . Чтобы отправить журналы MSAL в Application Insights с помощью ключа инструментирования, используйте `AzureLogHandler` предоставленную `opencensus-ext-azure` библиотекой.
+
+Чтобы установить, `opencensus-ext-azure` добавьте `opencensus-ext-azure` пакет из PyPI в зависимости или установку PIP:
+
+```console
+pip install opencensus-ext-azure
+```
+
+Затем измените обработчик по умолчанию `"msal"` регистратора на экземпляр `AzureLogHandler` с помощью ключа инструментирования, установленного в `APP_INSIGHTS_KEY` переменной среды:
+
+```python
+import logging
+import os
+
+from opencensus.ext.azure.log_exporter import AzureLogHandler
+
+APP_INSIGHTS_KEY = os.getenv('APP_INSIGHTS_KEY')
+
+logging.getLogger("msal").addHandler(AzureLogHandler(connection_string='InstrumentationKey={0}'.format(APP_INSIGHTS_KEY))
 ```
 
 ### <a name="personal-and-organizational-data-in-python"></a>Личные и организационные данные в Python

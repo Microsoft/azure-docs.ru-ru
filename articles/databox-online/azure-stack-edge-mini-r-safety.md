@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 02/12/2021
 ms.author: alkohli
 ms.openlocfilehash: eb42a9a77927d8577dfec3c9167294eb8f809fec
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100382636"
 ---
 # <a name="azure-stack-edge-mini-r-safety-instructions"></a>Azure Stack пограничных инструкций по безопасности R
@@ -251,6 +251,6 @@ Microsoft Ireland Sandyford Ind Est Dublin D18 KX32 IRL (Ирландия)
 USB-адаптер Нетжеар A6150 WiFi, поставляемый с этим оборудованием, соответствует стандартам ИМДА.
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Подготовка к развертыванию Azure Stack пограничных Мини-R](azure-stack-edge-mini-r-deploy-prep.md)

@@ -4,10 +4,10 @@ description: Из этой статьи вы узнаете, как устано
 ms.date: 11/05/2020
 ms.topic: conceptual
 ms.openlocfilehash: d7a89db7b8a42476a312a8f9a96c5ad230b140a2
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102183154"
 ---
 # <a name="connect-hybrid-machines-to-azure-from-the-azure-portal"></a>Подключение гибридных компьютеров к Azure на портале Azure

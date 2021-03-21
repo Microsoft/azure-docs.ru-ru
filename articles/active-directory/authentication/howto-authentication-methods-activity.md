@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: dawoo
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b0865fb2bda04f5a7e9ba2ef73a717946fa656a5
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102175317"
 ---
 # <a name="authentication-methods-activity"></a>Действия способов аутентификации 
@@ -42,7 +42,7 @@ ms.locfileid: "102175317"
 
  Для доступа к использованию и аналитике требуется лицензия Azure AD Premium P1 или P2. Сведения о лицензировании службы многофакторной идентификации Azure AD и самостоятельного сброса пароля (SSPR) можно найти на [сайте цен на Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
-## <a name="how-it-works"></a>Принципы работы
+## <a name="how-it-works"></a>Принцип работы
 
 Для доступа к использованию и анализу методов проверки подлинности:
 

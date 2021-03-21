@@ -16,12 +16,12 @@ ms.date: 12/23/2020
 ms.author: ajburnle
 ms.reviewer: hanki
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c6f37a1b5cc16c80af8316cfeae164d58ea9796
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.openlocfilehash: d21783f0ef32289aad4b7d136dc8200d61fc0852
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102552173"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104592937"
 ---
 # <a name="create-and-manage-a-catalog-of-resources-in-azure-ad-entitlement-management"></a>Создание каталога ресурсов и управление им в управлении назначением Azure AD
 
@@ -83,7 +83,7 @@ ms.locfileid: "102552173"
 
 ### <a name="add-a-multi-geo-sharepoint-site"></a>Добавление сайта SharePoint с несколькими геогеографическими возможностями
 
-1. Если для SharePoint включена [Поддержка нескольких географических](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365) сред, выберите среду, из которой вы хотите выбрать сайты.
+1. Если для SharePoint включена [Поддержка нескольких географических](/microsoft-365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365) сред, выберите среду, из которой вы хотите выбрать сайты.
     
     :::image type="content" source="media/entitlement-management-catalog-create/sharepoint-multigeo-select.png" alt-text="Доступ к пакету — Добавление ролей ресурсов. Выберите SharePoint с несколькими географическими сайтами.":::
 

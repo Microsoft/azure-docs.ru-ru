@@ -4,12 +4,12 @@ description: Примеры использования поставщика Azur
 ms.topic: conceptual
 ms.date: 02/19/2019
 ms.reviewer: mbullwin
-ms.openlocfilehash: 987d5b78c5fe680f43ff6a001e7a31a8ae9f6124
-ms.sourcegitcommit: 50802bffd56155f3b01bfb4ed009b70045131750
+ms.openlocfilehash: e7d0bd6f7d93eac944e0d53a8e898463bf9887f9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91931467"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104592274"
 ---
 # <a name="applicationinsightsloggerprovider-for-microsoftextensionlogging"></a>Аппликатионинсигхтслогжерпровидер для Microsoft. extension. Logging
 
@@ -20,7 +20,7 @@ ms.locfileid: "91931467"
 
 `ApplicationInsightsLoggerProvider` включен по умолчанию для ASP.NET Core приложений, если ApplicationInsights настроен с использованием [кода](./asp-net-core.md) или подхода [без кода](./azure-web-apps.md?tabs=netcore#enable-agent-based-monitoring) .
 
-В Application Insights по умолчанию отправляются только журналы *предупреждений* и более поздних версий `ILogger` (из всех [категорий](/aspnet/core/fundamentals/logging/#log-category)). Но [это поведение можно настроить](./asp-net-core.md#how-do-i-customize-ilogger-logs-collection). Для записи журналов ILogger из **Program.CS** или **Startup.CS**требуются дополнительные действия. (См. раздел [захват журналов ILogger из Startup.cs и Program.cs в ASP.NET Core приложениях](#capture-ilogger-logs-from-startupcs-and-programcs-in-aspnet-core-apps).)
+В Application Insights по умолчанию отправляются только журналы *предупреждений* и более поздних версий `ILogger` (из всех [категорий](/aspnet/core/fundamentals/logging/#log-category)). Но [это поведение можно настроить](./asp-net-core.md#how-do-i-customize-ilogger-logs-collection). Для записи журналов ILogger из **программы Program. CS** или **Startup. CS** необходимо выполнить дополнительные действия. (См. раздел [захват журналов ILogger из Startup. cs и Program. cs в ASP.NET Core приложениях](#capture-ilogger-logs-from-startupcs-and-programcs-in-aspnet-core-apps).)
 
 Если вы хотите использовать `ApplicationInsightsLoggerProvider` без других Application Insights мониторинга, выполните следующие действия.
 
@@ -91,16 +91,16 @@ public class ValuesController : ControllerBase
 }
 ```
 
-### <a name="capture-ilogger-logs-from-startupcs-and-programcs-in-aspnet-core-apps"></a>Запись журналов ILogger из Startup.cs и Program.cs в приложениях ASP.NET Core
+### <a name="capture-ilogger-logs-from-startupcs-and-programcs-in-aspnet-core-apps"></a>Запись журналов ILogger из Startup. cs и Program. cs в ASP.NET Core Apps
 
 > [!NOTE]
-> В ASP.NET Core 3,0 и более поздних версий больше нельзя внедрять `ILogger` в Startup.cs и Program.cs. Дополнительные сведения см. в разделе https://github.com/aspnet/Announcements/issues/353.
+> В ASP.NET Core 3,0 и более поздних версий больше нельзя внедрять `ILogger` в Startup. cs и Program. cs. Дополнительные сведения см. в статье https://github.com/aspnet/Announcements/issues/353.
 
-`ApplicationInsightsLoggerProvider` может собирать журналы с раннего запуска приложения. Хотя Аппликатионинсигхтслогжерпровидер автоматически включается в Application Insights (начиная с версии 2.7.1), ключ инструментирования не настраивается до последующего в конвейере. Таким образом, будут записываться только журналы из классов. другие **контроллера**. Чтобы записать каждый журнал, начиная с **Program.CS** и **Startup.CS** , необходимо явно включить ключ инструментирования для аппликатионинсигхтслогжерпровидер. Кроме того, *телеметриконфигуратион* не полностью настраивается при регистрации из **Program.CS** или **Startup.CS** . Поэтому эти журналы будут иметь минимальную конфигурацию, которая использует [InMemoryChannel](./telemetry-channels.md), без [выборки](./sampling.md)и не имеет стандартных [инициализаторов телеметрии или процессоров](./api-filtering-sampling.md).
+`ApplicationInsightsLoggerProvider` может собирать журналы с раннего запуска приложения. Хотя Аппликатионинсигхтслогжерпровидер автоматически включается в Application Insights (начиная с версии 2.7.1), ключ инструментирования не настраивается до последующего в конвейере. Таким образом, будут записываться только журналы из классов. другие **контроллера**. Чтобы записать каждый журнал, начиная с **программы Program. CS** и **Startup. CS** , необходимо явно включить ключ инструментирования для аппликатионинсигхтслогжерпровидер. Кроме того, *телеметриконфигуратион* не полностью настраивается при регистрации из **программы Program. CS** или **Startup. CS** . Поэтому эти журналы будут иметь минимальную конфигурацию, которая использует [InMemoryChannel](./telemetry-channels.md), без [выборки](./sampling.md)и не имеет стандартных [инициализаторов телеметрии или процессоров](./api-filtering-sampling.md).
 
-В следующих примерах демонстрируется эта возможность с помощью **Program.CS** и **Startup.CS**.
+В следующих примерах демонстрируется эта возможность с помощью **программы Program. CS** и **Startup. CS**.
 
-#### <a name="example-programcs"></a>Пример Program.cs
+#### <a name="example-programcs"></a>Пример программы. CS
 
 ```csharp
 using Microsoft.AspNetCore;
@@ -143,7 +143,7 @@ public class Program
 }
 ```
 
-#### <a name="example-startupcs"></a>Пример Startup.cs
+#### <a name="example-startupcs"></a>Пример запуска. CS
 
 ```csharp
 public class Startup
@@ -195,10 +195,10 @@ public class Startup
 - В предыдущем поставщике отсутствует поддержка [областей журнала](/aspnet/core/fundamentals/logging#log-scopes). В новом поставщике свойства из области автоматически добавляются в собранные данные телеметрии в качестве пользовательских свойств.
 - Теперь журналы могут быть захвачены в конвейере запуска приложения. Теперь можно записывать журналы из классов **Program** и **Startup** .
 - С новым поставщиком фильтрация выполняется на уровне платформы. Вы можете фильтровать журналы в поставщике Application Insights так же, как и для других поставщиков, включая встроенные поставщики, такие как консоль, отладка и т. д. Вы также можете применить те же фильтры к нескольким поставщикам.
-- В ASP.NET Core (2,0 и более поздних версиях) рекомендуемый способ  [включения регистраторов](https://github.com/aspnet/Announcements/issues/255) — использование методов расширения в илоггингбуилдер в самом **Program.CS** .
+- В ASP.NET Core (2,0 и более поздних версиях) рекомендуемый способ  [включения регистраторов](https://github.com/aspnet/Announcements/issues/255) — использование методов расширения в илоггингбуилдер в самой **программе Program. CS** .
 
 > [!Note]
-> Новый поставщик доступен для приложений, предназначенных для NETSTANDARD 2.0 или более поздней версии. Начиная с [Microsoft. ApplicationInsights. ASPNET SDK](https://www.nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore) версии 2.14.0, новый поставщик также доступен для приложений, предназначенных для .NET Framework NET461 или более поздней версии. Если приложение предназначено для более старых версий .NET Core, например .NET Core 1,1, или если оно предназначено для .NET Framework менее NET46, продолжайте использовать старый поставщик.
+> Новый поставщик доступен для приложений, предназначенных для NETSTANDARD 2.0 или более поздней версии. Начиная с [Microsoft. ApplicationInsights. ASPNET SDK](https://www.nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore) версии 2.14.0, новый поставщик также доступен для приложений, предназначенных для платформа .NET Framework NET461 или более поздней версии. Если приложение предназначено для более старых версий .NET Core, например .NET Core 1,1, или если оно предназначено для платформа .NET Framework менее NET46, продолжайте использовать старый поставщик.
 
 ## <a name="console-application"></a>Консольное приложение
 
@@ -416,7 +416,7 @@ class Program
 
 ### <a name="why-do-some-ilogger-logs-not-have-the-same-properties-as-others"></a>Почему некоторые журналы ILogger не имеют тех же свойств, что и другие?
 
-Application Insights записывает и отправляет журналы ILogger, используя те же Телеметриконфигуратион, которые используются для всех остальных данных телеметрии. Но существует исключение. По умолчанию Телеметриконфигуратион не полностью настраивается при регистрации из **Program.CS** или **Startup.CS**. Журналы из этих мест не будут иметь конфигурации по умолчанию, поэтому они не будут выполнять все Telemetryinitializer и TelemetryProcessors.
+Application Insights записывает и отправляет журналы ILogger, используя те же Телеметриконфигуратион, которые используются для всех остальных данных телеметрии. Но существует исключение. По умолчанию Телеметриконфигуратион не полностью настраивается при входе из **программы Program. CS** или **Startup. CS**. Журналы из этих мест не будут иметь конфигурации по умолчанию, поэтому они не будут выполнять все Telemetryinitializer и TelemetryProcessors.
 
 ### <a name="im-using-the-standalone-package-microsoftextensionsloggingapplicationinsights-and-i-want-to-log-some-additional-custom-telemetry-manually-how-should-i-do-that"></a>Я использую автономный пакет Microsoft. Extensions. Logging. ApplicationInsights и хочу записывать некоторые дополнительные пользовательские данные телеметрии вручную. Как это сделать?
 
@@ -454,7 +454,7 @@ public class MyController : ApiController
 ### <a name="im-using-the-standalone-package-microsoftextensionsloggingapplicationinsights-and-enabling-application-insights-provider-by-calling-builderaddapplicationinsightsikey-is-there-an-option-to-get-an-instrumentation-key-from-configuration"></a>Я использую автономный пакет Microsoft. Extensions. Logging. ApplicationInsights и включив поставщик Application Insights путем вызова **построителя. Аддаппликатионинсигхтс ("iKey")**. Есть ли возможность получить ключ инструментирования из конфигурации?
 
 
-Измените Program.cs и appsettings.jsследующим образом:
+Измените Program. cs и appsettings.jsследующим образом:
 
    ```csharp
    public class Program
@@ -484,13 +484,13 @@ public class MyController : ApiController
    }
    ```
 
-Этот код необходим только при использовании автономного поставщика ведения журнала. Для регулярного мониторинга Application Insights ключ инструментирования загружается автоматически из пути конфигурации *ApplicationInsights: Instrumentationkey*. Appsettings.jsв должен выглядеть следующим образом:
+Этот код необходим только при использовании автономного поставщика ведения журнала. Для регулярного мониторинга Application Insights ключ инструментирования загружается автоматически из пути конфигурации *ApplicationInsights: InstrumentationKey*. Appsettings.jsв должен выглядеть следующим образом:
 
    ```json
    {
      "ApplicationInsights":
        {
-           "Instrumentationkey":"putrealikeyhere"
+           "InstrumentationKey":"putrealikeyhere"
        }
    }
    ```

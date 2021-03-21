@@ -12,10 +12,10 @@ ms.date: 01/21/2021
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 67870a458138101f3b8a009f7c96c74991396284
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98675192"
 ---
 # <a name="register-a-microsoft-graph-application"></a>Регистрация приложения Microsoft Graph
@@ -82,7 +82,7 @@ ms.locfileid: "98675192"
 1. В текстовом поле **Выбор** введите имя зарегистрированного ранее приложения, например *managementapp1*. Выберите приложение, которое появится в результатах поиска.
 1. Выберите **Добавить**. Для полного распространения разрешений может потребоваться несколько минут.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы зарегистрировали приложение управления и предоставили ему необходимые разрешения, ваши приложения и службы (например, Azure Pipelines) могут использовать свои учетные данные и разрешения для взаимодействия с Microsoft Graph API. 
 

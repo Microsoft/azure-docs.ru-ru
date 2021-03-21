@@ -12,10 +12,10 @@ ms.reviewer: santoshc
 ms.subservice: common
 ms.custom: references_regions
 ms.openlocfilehash: bf2270fe6f71dfe5be31db8e82f6c44696f28074
-ms.sourcegitcommit: 27cd3e515fee7821807c03e64ce8ac2dd2dd82d2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103601497"
 ---
 # <a name="network-routing-preference-for-azure-storage"></a>Параметры сетевой маршрутизации для службы хранилища Azure
@@ -67,7 +67,7 @@ ms.locfileid: "103601497"
 
 Строки подключения для опубликованных конечных точек для конкретного маршрута можно скопировать на [портале Azure](https://portal.azure.com). Эти строки подключения можно использовать для авторизации с общим ключом во всех существующих пакетах SDK и API службы хранилища Azure.
 
-## <a name="regional-availability"></a>Доступность по регионам
+## <a name="regional-availability"></a>Доступность в регионах
 
 Предпочтительный вариант маршрутизации для службы хранилища Azure доступен в следующих регионах:
 
@@ -110,7 +110,7 @@ ms.locfileid: "103601497"
 
 Сведения о ценах и выставлении счетов см. в разделе " **цены** " статьи [параметры маршрутизации](../../virtual-network/routing-preference-overview.md#pricing).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Что такое предпочтение маршрутизации?](../../virtual-network/routing-preference-overview.md)
 - [Настройка предпочтения маршрутизации для сети](configure-network-routing-preference.md)

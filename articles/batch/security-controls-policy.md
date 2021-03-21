@@ -1,18 +1,18 @@
 ---
 title: Элементы управления соответствием Политики Azure для пакетной службы Azure
 description: Содержит список элементов управления соответствием Политики Azure, доступных для пакетной службы Azure. Эти встроенные определения политик предоставляют популярные подходы к управлению соответствием ресурсов Azure.
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 ms.topic: sample
 author: JnHs
 ms.author: jenhayes
 ms.service: batch
 ms.custom: subject-policy-compliancecontrols
-ms.openlocfilehash: 681a192b5acca9105c235f1743b41089b4f703b6
-ms.sourcegitcommit: b572ce40f979ebfb75e1039b95cea7fce1a83452
+ms.openlocfilehash: ba59580f382913f5a54b473371904b6ef04425c9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102631524"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104590880"
 ---
 # <a name="azure-policy-regulatory-compliance-controls-for-azure-batch"></a>Элементы управления соответствием Политики Azure для пакетной службы Azure
 
