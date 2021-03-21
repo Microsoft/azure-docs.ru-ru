@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: bwren
 ms.author: bwren
 ms.date: 11/17/2020
-ms.openlocfilehash: 6bf0e8b90ca50a90f84c18981ab6accae8477b46
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.openlocfilehash: b2f91f0036a86151588c8c138dac5421ad54e18e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102034321"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104586426"
 ---
 # <a name="install-the-azure-monitor-agent-preview"></a>Установка агента Azure Monitor (Предварительная версия)
 В этой статье представлены различные варианты установки [агента Azure Monitor](azure-monitor-agent-overview.md) на виртуальных машинах Azure и серверах с поддержкой Arc, а также параметры для создания [взаимосвязей с правилами сбора данных](data-collection-rule-azure-monitor-agent.md) , которые определяют, какие данные должен собирать агент.
@@ -24,11 +24,11 @@ ms.locfileid: "102034321"
 ## <a name="virtual-machine-extension-details"></a>Сведения о расширении виртуальной машины
 Агент Azure Monitor реализуется как [расширение виртуальной машины Azure](../../virtual-machines/extensions/overview.md) и содержит сведения, приведенные в следующей таблице. Его можно установить с помощью любого из методов установки расширений виртуальной машины, включая описанные в этой статье.
 
-| Свойство | Windows | Linux |
+| Свойство. | Windows | Linux |
 |:---|:---|:---|
 | Publisher | Microsoft. Azure. Monitor  | Microsoft. Azure. Monitor |
 | Тип      | азуремониторвиндовсажент | азуремониторлинуксажент  |
-| TypeHandlerVersion  | 1,0 | 1.5 |
+| TypeHandlerVersion  | 1.0 | 1.5 |
 
 
 ## <a name="install-with-azure-portal"></a>Установка с помощью портала Azure
@@ -62,11 +62,11 @@ New-AzResourceGroupDeployment -ResourceGroupName "<resource-group-name>" -Templa
 Используйте следующие команды PowerShell для установки агента Azure Monitor на виртуальных машинах Azure.
 # <a name="windows"></a>[Windows](#tab/PowerShellWindows)
 ```powershell
-Set-AzVMExtension -Name AMAWindows -ExtensionType AzureMonitorWindowsAgent -Publisher Microsoft.Azure.Monitor -ResourceGroupName <resource-group-name> -VMName <virtual-machine-name> -Location <location>
+Set-AzVMExtension -Name AMAWindows -ExtensionType AzureMonitorWindowsAgent -Publisher Microsoft.Azure.Monitor -ResourceGroupName <resource-group-name> -VMName <virtual-machine-name> -Location <location> -TypeHandlerVersion 1.0
 ```
 # <a name="linux"></a>[Linux](#tab/PowerShellLinux)
 ```powershell
-Set-AzVMExtension -Name AMALinux -ExtensionType AzureMonitorLinuxAgent -Publisher Microsoft.Azure.Monitor -ResourceGroupName <resource-group-name> -VMName <virtual-machine-name> -Location <location>
+Set-AzVMExtension -Name AMALinux -ExtensionType AzureMonitorLinuxAgent -Publisher Microsoft.Azure.Monitor -ResourceGroupName <resource-group-name> -VMName <virtual-machine-name> -Location <location> -TypeHandlerVersion 1.0
 ```
 ---
 

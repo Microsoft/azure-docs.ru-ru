@@ -13,10 +13,10 @@ tags: ''
 keywords: ''
 ms.service: multiple
 ms.openlocfilehash: 9e5b3857c2252a939080206fb1f92cc422f326fc
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102564362"
 ---
 # <a name="deploy-micro-focus-enterprise-server-50-to-aks"></a>Развертывание Micro Focus Enterprise Server 5,0 в AKS

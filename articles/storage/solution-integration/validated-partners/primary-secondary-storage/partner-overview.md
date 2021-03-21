@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.service: storage
 ms.subservice: partner
 ms.openlocfilehash: 5fa17083be01a702ebac888eecc17a4969b754ef
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103561601"
 ---
 # <a name="azure-storage-partners-for-primary-and-secondary-storage"></a>Партнеры службы хранилища Azure для основного и дополнительного хранилища

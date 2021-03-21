@@ -12,10 +12,10 @@ ms.date: 1/29/2021
 ms.author: nichola
 ms.custom: aaddev
 ms.openlocfilehash: f63d7aed75b14f5f008a639d667d8806b233b9fa
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102174604"
 ---
 # <a name="support-passwordless-authentication-with-fido2-keys-in-apps-you-develop"></a>Поддержка проверки подлинности без пароля с помощью ключей FIDO2 в разрабатываемых приложениях
@@ -42,7 +42,7 @@ ms.locfileid: "102174604"
 
 ## <a name="platform-specific-best-practices"></a>Рекомендации для конкретных платформ
 
-### <a name="desktop"></a>Классические приложения
+### <a name="desktop"></a>Персональный компьютер
 
 Рекомендуемые параметры для реализации проверки подлинности приведены в порядке:
 
@@ -50,7 +50,7 @@ ms.locfileid: "102174604"
 - Используйте [WebView2](/microsoft-edge/webview2/) для поддержки FIDO2 во встроенном браузере.
 - Используйте системный браузер. Библиотеки MSAL для настольных платформ используют этот метод по умолчанию. Чтобы убедиться, что используемый браузер поддерживает проверку подлинности FIDO2, можно обратиться к странице о совместимости браузера FIDO2.
 
-### <a name="mobile"></a>Мобильный телефон
+### <a name="mobile"></a>Мобильные службы
 
 По состоянию на февраль 2021 FIDO2 в настоящее время не поддерживается для собственных приложений iOS или Android, но находится на стадии разработки.
 

@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 01/24/2021
 ms.author: terrylan
 ms.openlocfilehash: f87ea1e1c9f43de4e9e0f94d1cd855615a0a880c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101712051"
 ---
 # <a name="azure-security-management-and-monitoring-overview"></a>Обзор управления безопасностью Azure и ее мониторинга
@@ -52,7 +52,7 @@ Azure также поддерживает продукт Symantec Endpoint Prote
 * [Установка и настройка Symantec Endpoint Protection на виртуальной машине Windows](../../virtual-machines/extensions/symantec.md)
 * [Новые возможности защиты виртуальных машин Azure от вредоносных программ](https://azure.microsoft.com/blog/new-antimalware-options-for-protecting-azure-virtual-machines/)
 
-## <a name="multi-factor-authentication"></a>Многофакторная идентификация
+## <a name="multi-factor-authentication"></a>Многофакторная проверка подлинности
 
 Многофакторная идентификация Azure AD — это метод проверки подлинности, требующий использования более одного метода проверки. При ее использовании добавляется второй уровень безопасности, который применяется для входа пользователя в систему и выполнения транзакций.
 
@@ -141,7 +141,7 @@ Intelligent Security Graph в реальном времени предостав
 
 * [Intelligent Security Graph](https://www.microsoft.com/security/intelligence)
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 Сведения об [общей модели ответственности](shared-responsibility.md) , а также о том, какие задачи безопасности обрабатываются корпорацией Майкрософт и какие задачи обрабатываются вами.
 
 Дополнительные сведения об управлении безопасностью см. в статье [Управление безопасностью в Azure](management.md).

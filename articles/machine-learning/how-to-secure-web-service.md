@@ -11,10 +11,10 @@ ms.date: 03/11/2021
 ms.topic: conceptual
 ms.custom: how-to
 ms.openlocfilehash: 71cb2e9e112c49d77a2a0b47c24c49cabfa86589
-ms.sourcegitcommit: 6776f0a27e2000fb1acb34a8dddc67af01ac14ac
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103149024"
 ---
 # <a name="use-tls-to-secure-a-web-service-through-azure-machine-learning"></a>Использование TLS для защиты веб-службы с помощью Машинного обучения Azure.

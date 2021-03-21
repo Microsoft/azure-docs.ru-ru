@@ -16,10 +16,10 @@ ms.author: ajburnle
 ms.reviewer: mwahl
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7143c3f9786d41c32ae954ab219197a9cfaa1050
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102176881"
 ---
 # <a name="create-an-access-review-of-groups-and-applications-in-azure-ad-access-reviews"></a>Создание проверки доступа для групп и приложений в проверках доступа Azure AD
@@ -32,7 +32,7 @@ ms.locfileid: "102176881"
 
 В этой статье описывается, как создать одну или несколько проверок доступа для членов группы или доступа к приложениям.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Azure AD Premium P2
 - глобальный администратор или администратор пользователей.

@@ -16,10 +16,10 @@ ms.date: 03/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ms.openlocfilehash: 20c7068fa0cb56699fdbc6d75b279abadd583832
-ms.sourcegitcommit: 225e4b45844e845bc41d5c043587a61e6b6ce5ae
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103017126"
 ---
 # <a name="how-to-build-a-smooth-streaming-windows-store-application"></a>Создание приложения для магазина Windows с бесперебойной потоковой передачей
@@ -78,7 +78,7 @@ ms.locfileid: "103017126"
     | Имя решения |SSPlayer |
     | Создать каталог для решения |(выбрано) |
 
-1. Нажмите кнопку **ОК**.
+1. Нажмите кнопку **OK**.
 
 ### <a name="to-add-a-reference-to-the-smooth-streaming-client-sdk"></a>Добавление ссылки на пакет SDK клиента Smooth Streaming
 
@@ -90,7 +90,7 @@ ms.locfileid: "103017126"
     | Ссылочная группа |Windows/Расширения |
     | Справочник |Выберите клиентский пакет SDK бесперебойной потоковой передачи Microsoft для Windows 8 и пакет среды выполнения Microsoft Visual C++ |
 
-1. Нажмите кнопку **ОК**. 
+1. Нажмите кнопку **OK**. 
 
 После добавления ссылок необходимо выбрать целевую платформу (x64 x86), добавление ссылок будет действовать не для всех конфигураций платформы ЦП.  Для таких добавленных ссылок в обозревателе решений будет выведен желтый значок предупреждения.
 
@@ -519,7 +519,7 @@ ms.locfileid: "103017126"
    ```
 
    > [!NOTE]
-   > CoreDispatcher используется для внесения изменений в поток пользовательского интерфейса из других потоков. В случае узкого места в потоке Dispatcher разработчик может использовать Dispatcher, предоставляемый элементом пользовательского интерфейса, который предполагается обновить.  Пример.
+   > CoreDispatcher используется для внесения изменений в поток пользовательского интерфейса из других потоков. В случае узкого места в потоке Dispatcher разработчик может использовать Dispatcher, предоставляемый элементом пользовательского интерфейса, который предполагается обновить.  Пример:
 
    ```csharp
          await sliderProgress.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { TimeSpan 

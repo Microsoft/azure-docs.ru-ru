@@ -6,10 +6,10 @@ ms.topic: article
 ms.date: 11/04/2019
 ms.author: v-ummehabiba
 ms.openlocfilehash: dd8d688355e0f71ce77cdbc6012d788c7b16d825
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102173789"
 ---
 # <a name="generate-soil-moisture-heatmap"></a>Создать почвы влажность тепловой карты
@@ -87,7 +87,7 @@ ms.locfileid: "102173789"
 2. Когда состояние задания отобразится **удачно**, выберите **Maps (карты** ) в меню.
 3. Найдите карту по дню создания в формате <почвы-moisture_MyFarm_YYYY-MM-ДД>.
 4. Выберите карту в столбце **имя** . появится всплывающее окно с предварительной версией выбранной схемы.
-5. Выберите **Скачать**. Эта схема загружается и сохраняется в локальной папке компьютера.
+5. Выберите **Загрузить**. Эта схема загружается и сохраняется в локальной папке компьютера.
 
     ![Проект FarmBeats](./media/get-sensor-data-from-sensor-partner/download-soil-moisture-map-1.png)
 

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: cynthn
 ms.openlocfilehash: 0de25b29dc1e930956c01f342ca2614d1a9082ca
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102557511"
 ---
 # <a name="frequently-asked-question-about-windows-virtual-machines"></a>Часто задаваемые вопросы по виртуальным машинам Windows

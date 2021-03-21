@@ -5,12 +5,12 @@ services: container-service
 ms.topic: article
 ms.date: 06/02/2020
 ms.reviewer: nieberts, jomore
-ms.openlocfilehash: 639bed3dcd8f3f443b73f51efb60e7c8aeaa00a0
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.openlocfilehash: a32b06163f446fe0df7f1f1581d741d889cf8e9f
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102504224"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104583519"
 ---
 # <a name="use-kubenet-networking-with-your-own-ip-address-ranges-in-azure-kubernetes-service-aks"></a>Использование сети kubenet с пользовательскими диапазонами IP-адресов в Службе Azure Kubernetes (AKS)
 
@@ -32,7 +32,7 @@ ms.locfileid: "102504224"
 > [!WARNING]
 > Для использования пулов узлов Windows Server необходимо использовать Azure CNI. Использование кубенет в качестве сетевой модели недоступно для контейнеров Windows Server.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Требуется Azure CLI версии 2.0.65 или более поздней. Чтобы узнать версию, выполните команду `az --version`. Если вам необходимо выполнить установку или обновление, см. статью [Установка Azure CLI 2.0][install-azure-cli].
 
@@ -128,10 +128,6 @@ az ad sp create-for-rbac --skip-assignment
 ```
 
 В приведенном ниже примере выходных данных показан идентификатор приложения и пароль для субъекта-службы. Эти значения используются в дополнительных действиях, чтобы назначить роль субъекту-службе, а затем создать кластер AKS:
-
-```azurecli
-az ad sp create-for-rbac --skip-assignment
-```
 
 ```output
 {

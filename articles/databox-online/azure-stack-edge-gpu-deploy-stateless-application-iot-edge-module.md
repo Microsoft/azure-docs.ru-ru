@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
 ms.openlocfilehash: 4eda6eaf69fad6f8600651660ae4ac6223fe8f8c
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102438069"
 ---
 # <a name="use-iot-edge-module-to-run-a-kubernetes-stateless-application-on-your-azure-stack-edge-pro-gpu-device"></a>Использование модуля IoT Edge для запуска приложения без отслеживания состояния Kubernetes на устройстве Azure Stack ребра Pro GPU
@@ -29,7 +29,7 @@ ms.locfileid: "102438069"
 
 В этом пошаговом руководстве для демонстрации сценария используется модуль приложения на основе сервера.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем начать, вам потребуется:
 

@@ -3,12 +3,12 @@ title: Переменные среды выполнения задания
 description: Справочник по переменным среды выполнения задания и справочник по пакетной аналитики Azure.
 ms.topic: conceptual
 ms.date: 12/30/2020
-ms.openlocfilehash: c1d9ffb3fe6775b061863656adcb7f45f8840997
-ms.sourcegitcommit: beacda0b2b4b3a415b16ac2f58ddfb03dd1a04cf
+ms.openlocfilehash: dbdc13e28a3a0c772480d2602f147e0d3354ff48
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97830893"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104669990"
 ---
 # <a name="azure-batch-runtime-environment-variables"></a>Переменные среды выполнения пакетной службы Azure
 
@@ -61,6 +61,8 @@ ms.locfileid: "97830893"
 | AZ_BATCH_TASK_ID                | Идентификатор текущей задачи. | Все задачи, кроме задачи запуска. | task001 |
 | AZ_BATCH_TASK_SHARED_DIR | Путь к каталогу, идентичный для основной задачи и всех подзадач [задачи с несколькими экземплярами](batch-mpi.md). Путь существует на каждом узле, на котором выполняется задача с несколькими экземплярами и доступен для чтения и записи в командах задач, выполняемых на этом узле (как [команда координации](batch-mpi.md#coordination-command) , так и [Команда приложения](batch-mpi.md#application-command)). У подзадач или основной задачи, выполняемых на других узлах, нет удаленного доступа к этому каталогу (это не "общий" сетевой каталог). | Основные задачи и подзадачи с несколькими экземплярами. | C:\user\tasks\workitems\multiinstancesamplejob\job-1\multiinstancesampletask |
 | AZ_BATCH_TASK_WORKING_DIR       | Полный путь к [рабочему каталогу задачи](files-and-directories.md) на узле. Выполняемая задача имеет доступ на чтение и запись для этого каталога. | Все задачи. | C:\user\tasks\workitems\batchjob001\job-1\task001\wd |
+| AZ_BATCH_TASK_WORKING_DIR       | Полный путь к [рабочему каталогу задачи](files-and-directories.md) на узле. Выполняемая задача имеет доступ на чтение и запись для этого каталога. | Все задачи. | C:\user\tasks\workitems\batchjob001\job-1\task001\wd |
+| AZ_BATCH_TASK_RESERVED_EPHEMERAL_DISK_SPACE_BYTES | Текущее пороговое значение места на диске, на котором виртуальная машина будет помечена как `DiskFull` . | Все задачи. | 1000000 |
 | CCP_NODES                       | Список узлов и число ядер на узел, выделяемых для [задачи с несколькими экземплярами](batch-mpi.md). Узлы и ядра указаны в формате `numNodes<space>node1IP<space>node1Cores<space>`<br/>`node2IP<space>node2Cores<space> ...`, где за числом узлов следует один или несколько IP-адресов узла, а также число ядер для каждого узла. |  Основные задачи и подзадачи с несколькими экземплярами. |`2 10.0.0.4 1 10.0.0.5 1` |
 
 ## <a name="next-steps"></a>Дальнейшие действия

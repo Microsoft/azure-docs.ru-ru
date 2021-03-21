@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.date: 1/4/2021
 ms.author: rogarana
 ms.subservice: files
-ms.openlocfilehash: 93e9d9a552ab1bff16ca15d6bb11faeb5d47a503
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.openlocfilehash: c27916afb0d199bcb32db9d43202e552a4a04f53
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102204452"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104593141"
 ---
-# <a name="monitor-cloud-tiering"></a>Мониторинг распределения по уровням облака
+# <a name="monitor-cloud-tiering"></a>Мониторинг распределения по уровням в облаке
 Существует два способа мониторинга политики уровня облака: колонка свойства конечной точки сервера и Azure Monitor.
 
 ## <a name="monitoring-via-server-endpoint"></a>Мониторинг с помощью конечной точки сервера
@@ -55,7 +55,7 @@ ms.locfileid: "102204452"
  
 Дополнительные сведения о различных типах метрик для Синхронизация файлов Azure и их использовании см. в разделе [Monitor синхронизация файлов Azure](storage-sync-files-monitoring.md).
 
-Дополнительные сведения об использовании метрик см. в статье [Приступая к работе с Azure обозреватель метрик.](https://docs.microsoft.com/azure/azure-monitor/platform/metrics-getting-started).
+Дополнительные сведения об использовании метрик см. в статье [Приступая к работе с Azure обозреватель метрик.](../../azure-monitor/essentials/metrics-getting-started.md).
 
 Если вы хотите изменить политику уровней облака, см. статью [Выбор политик распределения по уровням облака](storage-sync-choose-cloud-tiering-policies.md).
 

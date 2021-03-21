@@ -3,12 +3,12 @@ title: Удаление хранилища Службы восстановлен
 description: Из этой статьи вы узнаете, как удалить зависимости, а затем удалить хранилище служб восстановления Azure Backup.
 ms.topic: conceptual
 ms.date: 06/04/2020
-ms.openlocfilehash: 28a0c4d5f643b980d93df2592da38f5da12dd01a
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.openlocfilehash: 8df2528edebbb654e501b8aaaac91c24d932604c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100520465"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104670568"
 ---
 # <a name="delete-an-azure-backup-recovery-services-vault"></a>Удаление хранилища служб восстановления Azure Backup
 
@@ -73,6 +73,7 @@ ms.locfileid: "100520465"
 
          ![Панель удаление данных резервной копии.](./media/backup-azure-delete-vault/stop-backup-blade-delete-backup-data.png)
 
+   Этот параметр удаляет запланированные резервные копии, а также удаляет резервные копии по требованию.
 3. Проверьте значок **уведомления** : ![ значок уведомления.](./media/backup-azure-delete-vault/messages.png) После завершения процесса служба отобразит следующее сообщение: *Остановка резервного копирования и удаление данных резервного копирования для**элемента Backup*. *Операция успешно завершена*.
 4. Выберите **Обновить** в меню **архивные элементы** , чтобы убедиться, что элемент резервного копирования был удален.
 
@@ -368,7 +369,7 @@ ms.locfileid: "100520465"
 
 3. В портал Azure убедитесь, что хранилище удалено.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Сведения о хранилищах](backup-azure-recovery-services-vault-overview.md) 
  служб восстановления [Сведения о мониторинге хранилищ служб восстановления и управлении ими](backup-azure-manage-windows-server.md)

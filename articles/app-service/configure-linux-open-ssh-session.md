@@ -9,10 +9,10 @@ ms.date: 02/23/2021
 ms.author: msangapu
 ms.custom: seodec18
 ms.openlocfilehash: 8e9dd76b60d05b9fa5e3a4aaf7ccc6663f4a969b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101709042"
 ---
 # <a name="open-an-ssh-session-to-a-linux-container-in-azure-app-service"></a>Открытие сеанса SSH для контейнера Linux в службе приложений Azure

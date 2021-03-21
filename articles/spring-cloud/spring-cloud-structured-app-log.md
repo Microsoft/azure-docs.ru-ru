@@ -8,10 +8,10 @@ ms.date: 02/05/2021
 ms.author: brendm
 ms.custom: devx-track-java
 ms.openlocfilehash: 844530c6d1650b5fddd27b10c775c4364a3f5147
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102124471"
 ---
 # <a name="structured-application-log-for-azure-spring-cloud"></a>Журнал структурированных приложений для Azure Веснного облака
@@ -28,7 +28,7 @@ ms.locfileid: "102124471"
 | TIMESTAMP     | строка      |     Да   | апптиместамп    | отметка времени в формате UTC  |
 | logger        | Строка      |     Нет    | Средство ведения журнала          | logger                   |
 | уровень         | Строка      |     Нет    | кустомлевел     | уровень ведения журнала                |
-| поток        | Строка      |     Нет    | Thread          | поток                   |
+| thread        | Строка      |     Нет    | Thread          | thread                   |
 | message       | строка      |     Нет    | Сообщение         | сообщение журнала              |
 | stackTrace    | Строка      |     Нет    | StackTrace      | Трассировка стека исключений    |
 | ексцептионкласс| Строка      |     Нет    | ексцептионкласс  | имя класса исключений     |
@@ -237,5 +237,5 @@ AppPlatformLogsforSpring
 | sort by AppTimestamp
 ```
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 * Дополнительные сведения о запросе журнала см. в статье [Приступая к работе с запросами журналов в Azure Monitor](../azure-monitor/logs/get-started-queries.md)

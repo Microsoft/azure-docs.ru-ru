@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: how-to
 ms.date: 11/20/2020
 ms.openlocfilehash: 7807659a30127f39bb79ad99bdb733c12eb1d25d
-ms.sourcegitcommit: 5a999764e98bd71653ad12918c09def7ecd92cf6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100548697"
 ---
 # <a name="scan-insights-on-your-data-in-azure-purview"></a>Просмотр аналитических данных в Azure зрения
@@ -24,7 +24,7 @@ ms.locfileid: "100548697"
 > * Просмотр аналитических сведений из учетной записи зрения.
 > * Получите представление о сканировании с высоты птичьего полета.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к работе с зрения Insights, убедитесь, что выполнены следующие действия.
 
@@ -70,7 +70,7 @@ ms.locfileid: "100548697"
 
     :::image type="content" source="./media/scan-insights/scan-history.png" alt-text="Просмотр журнала сканирования"::: 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения об Azure зрения **Insights** с помощью [Data Insights](./concept-insights.md)
 

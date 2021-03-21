@@ -14,10 +14,10 @@ ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: devx-track-js
 ms.openlocfilehash: 7b4bda5a439b1e0b35dc6d3af99e0273e4987568
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101091346"
 ---
 # <a name="how-to-use-the-shaka-player-with-azure-media-services"></a>Как использовать проигрыватель Шака со службами мультимедиа Azure
@@ -26,13 +26,13 @@ ms.locfileid: "101091346"
 
 ## <a name="overview"></a>Обзор
 
-Шака Player — это библиотека JavaScript с открытым исходным кодом для адаптивного мультимедиа. Он воспроизводит в браузере адаптивные форматы мультимедиа (например, ТИРЕ и HLS) без использования подключаемых модулей или Flash. Вместо этого проигрыватель Шака использует расширения источников мультимедиа Open Web Standard и зашифрованные расширения мультимедиа.
+Проигрыватель Shaka — это библиотека JavaScript с открытым исходным кодом для адаптивных мультимедиа. Он воспроизводит в браузере адаптивные форматы мультимедиа (например, DASH и HLS) без использования подключаемых модулей или Flash. Вместо этого проигрыватель Shaka использует открытые веб-стандарты Media Source Extensions и Encrypted Media Extensions.
 
 Рекомендуется использовать [Mux.js](https://github.com/videojs/mux.js/) как, без него, проигрыватель Шака будет поддерживать формат HLS кмаф, но не HLS TS.
 
 Его официальную документацию можно найти в [документации по Шака Player](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html).
 
-## <a name="sample-code"></a>Образец кода
+## <a name="sample-code"></a>Пример кода
 
 Пример кода для этой статьи доступен на странице [Azure-Samples/Media-Services-3rdParty-Player-Samples](https://github.com/Azure-Samples/media-services-3rdparty-player-samples).
 
@@ -149,7 +149,7 @@ player.configure('drm.advanced.com\\.apple\\.fps\\.1_0.serverCertificate', new U
 
 Дополнительные сведения см. в [документации по защите DRM Шака Player](https://shaka-player-demo.appspot.com/docs/api/tutorial-drm-config.html).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Использование Проигрыватель мультимедиа Azure](../azure-media-player/azure-media-player-overview.md)
 * [Краткое руководство. Шифрование содержимого](encrypt-content-quickstart.md)

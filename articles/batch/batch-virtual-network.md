@@ -5,10 +5,10 @@ ms.topic: how-to
 ms.date: 03/15/2021
 ms.custom: seodec18
 ms.openlocfilehash: d6e5de75164e098fc95f6c086d9f98a652dcee4a
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103561923"
 ---
 # <a name="create-an-azure-batch-pool-in-a-virtual-network"></a>Создание пула пакетной службы Azure в виртуальной сети

@@ -11,10 +11,10 @@ ms.custom:
 - device-developer
 - iot-edge
 ms.openlocfilehash: e0f3464420c5cb429f780999bf5983b2ab142567
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102608637"
 ---
 # <a name="connect-azure-iot-edge-devices-to-an-azure-iot-central-application"></a>Подключение устройств Azure IoT Edge к приложению Azure IoT Central
@@ -286,6 +286,6 @@ IoT Central моделирует IoT Edge устройство следующи�
 
 Дополнительные сведения см. в статье [Подключение устройств с помощью IOT Edge прозрачного шлюза](how-to-connect-iot-edge-transparent-gateway.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Если вы являетесь разработчиком устройств, предлагаем следующий шаг: Узнайте, как [разрабатывать собственные модули IOT Edge](../../iot-edge/module-development.md).

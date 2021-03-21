@@ -10,10 +10,10 @@ ms.subservice: data-lake-storage-gen2
 ms.reviewer: prishet
 ms.custom: devx-track-python
 ms.openlocfilehash: ba864aa1aa2462f21e05ab5e779c8e715d6bb973
-ms.sourcegitcommit: 227b9a1c120cd01f7a39479f20f883e75d86f062
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100654476"
 ---
 # <a name="use-python-to-manage-acls-in-azure-data-lake-storage-gen2"></a>Использование Python для управления списками ACL в Azure Data Lake Storage 2-го поколения
@@ -204,13 +204,13 @@ def remove_permission_recursively(is_default_scope):
 
 [!INCLUDE [updated-for-az](../../../includes/recursive-acl-best-practices.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочная документация по API](/python/api/azure-storage-file-datalake/azure.storage.filedatalake)
 - [Пакет (индекс пакета Python)](https://pypi.org/project/azure-storage-file-datalake/)
 - [Примеры](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/storage/azure-storage-file-datalake/samples)
 - [Сопоставление 1-го и 2-го поколения](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/storage/azure-storage-file-datalake/GEN1_GEN2_MAPPING.md)
 - [Известные проблемы](data-lake-storage-known-issues.md#api-scope-data-lake-client-library)
-- [Отправить отзыв](https://github.com/Azure/azure-sdk-for-python/issues)
+- [Оставить отзыв](https://github.com/Azure/azure-sdk-for-python/issues)
 - [Модель контроля доступа в Azure Data Lake Storage 2-го поколения](data-lake-storage-access-control.md)
 - [Списки управления доступом (ACL) в Azure Data Lake Storage 2-го поколения](data-lake-storage-access-control.md)

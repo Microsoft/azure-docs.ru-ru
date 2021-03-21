@@ -7,10 +7,10 @@ ms.date: 12/03/2020
 ms.author: jpalma
 author: palma21
 ms.openlocfilehash: 7b39242a7d7208b33a070e86088b25e9414ead04
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101714635"
 ---
 # <a name="customize-node-configuration-for-azure-kubernetes-service-aks-node-pools-preview"></a>Настройка конфигурации узла для пулов узлов Azure Kubernetes Service (AKS) (Предварительная версия)

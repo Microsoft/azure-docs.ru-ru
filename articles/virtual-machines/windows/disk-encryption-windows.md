@@ -10,10 +10,10 @@ ms.author: mbaldwin
 ms.date: 08/06/2019
 ms.custom: seodec18, devx-track-azurecli
 ms.openlocfilehash: a01d5f48ca3b10f4c49ee621398ae87392dc34a6
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103493464"
 ---
 # <a name="azure-disk-encryption-scenarios-on-windows-vms"></a>Сценарии шифрования дисков Azure для виртуальных машин Windows
@@ -159,7 +159,7 @@ ms.locfileid: "103493464"
 
 - Запустить виртуальную машину после освобождения
 - Восстановление службы
-- Резервное копирование
+- Backup
 
 В этих сценариях диски NVMe должны быть инициализированы после запуска виртуальной машины. Чтобы включить шифрование дисков NVMe, выполните команду, чтобы снова включить шифрование дисков Azure после инициализации дисков NVMe.
 

@@ -13,10 +13,10 @@ ms.date: 07/31/2020
 ms.topic: conceptual
 ms.custom: how-to, devx-track-python, data4ml
 ms.openlocfilehash: 15bad877be00e143ce6f6956a4e1f23378c275c0
-ms.sourcegitcommit: 956dec4650e551bdede45d96507c95ecd7a01ec9
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102521787"
 ---
 # <a name="train-models-with-azure-machine-learning-datasets"></a>Обучение моделей с помощью наборов данных Машинное обучение Azure 
@@ -260,7 +260,7 @@ src.run_config.source_directory_data_store = "workspaceblobstore"
 + В этой статье демонстрируются и развертываются [записные книжки набора данных](https://aka.ms/dataset-tutorial) .
 + См. статью как [параметризе наборы данных в конвейерах машинного обучения](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/machine-learning-pipelines/intro-to-pipelines/aml-pipelines-showcasing-dataset-and-pipelineparameter.ipynb).
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 * **Ошибка инициализации набора данных: время ожидания готовности точки подключения** истекло: 
   * Если у вас нет исходящих правил [группы безопасности сети](../virtual-network/network-security-groups-overview.md) и используется `azureml-sdk>=1.12.0` , обновление `azureml-dataset-runtime` и его зависимости будут актуальными для конкретной дополнительной версии или если вы используете ее в запуске, воссоздайте среду, чтобы она могла установить последнее исправление с исправлением. 

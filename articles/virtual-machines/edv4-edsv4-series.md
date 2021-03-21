@@ -10,10 +10,10 @@ ms.subservice: vm-sizes-memory
 ms.topic: conceptual
 ms.date: 02/04/2020
 ms.openlocfilehash: d6edee1f349b37c274f71c9db7abac35f9c88c4a
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102557120"
 ---
 # <a name="edv4-and-edsv4-series"></a>Серии Edv4 и Edsv4

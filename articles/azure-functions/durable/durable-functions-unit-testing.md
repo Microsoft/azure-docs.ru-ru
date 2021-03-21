@@ -4,10 +4,10 @@ description: Информация о модульном тестировании
 ms.topic: conceptual
 ms.date: 11/03/2019
 ms.openlocfilehash: 89b6419e95b3971b0d272490e19354f300204e1e
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103491050"
 ---
 # <a name="durable-functions-unit-testing"></a>Модульное тестирование устойчивых функций
@@ -179,7 +179,7 @@ Assert.Equal("Hello London!", result[2]);
 
 [!code-csharp[Main](~/samples-durable-functions/samples/VSSample.Tests/HelloSequenceActivityTests.cs)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Дополнительные сведения о xUnit](https://xunit.net/docs/getting-started/netcore/cmdline)

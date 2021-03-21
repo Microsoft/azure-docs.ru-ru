@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 03/19/2016
 ms.openlocfilehash: b9e9d6b1b5939804b24fd523bf8b7444ed41178f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101708600"
 ---
 # <a name="send-cloud-service-virtual-machine-or-service-fabric-diagnostic-data-to-application-insights"></a>Отправка в Application Insights диагностических данных облачной службы, виртуальной машины или Service Fabric
@@ -213,7 +213,7 @@ ms.locfileid: "101708600"
 - **Уровень журнала для канала не может превышать уровень журнала, данные которого собираются с помощью функции диагностики Azure.** Например, нельзя собирать данные об ошибках в журнале приложений в элементе Logs и пытаться отправлять подробные журналы в приемник Application Insight. Атрибут *ScheduledTransferLogLevelFilter* должен всегда собирать равное или большее число журналов, чем число журналов, которые вы пытаетесь отправить в приемник.
 - **В Application Insights нельзя отправлять собранные расширением системы диагностики Azure данные больших двоичных объектов.** Например, все, что указано в узле *Directories* . Что касается аварийных дампов, фактический аварийный дамп отправляется в хранилище BLOB-объектов, а в Application Insights отправляется только уведомление о том, что аварийный дамп был создан.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 * Узнайте, как [просматривать данные диагностики Azure](../app/cloudservices.md) в Application Insights.
 * Используйте [PowerShell](../../cloud-services/cloud-services-diagnostics-powershell.md), чтобы включить расширение диагностики Azure для вашего приложения.
 * Используйте [Visual Studio](/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines) , чтобы включить расширение диагностики Azure для вашего приложения.

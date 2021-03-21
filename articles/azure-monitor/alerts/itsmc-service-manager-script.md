@@ -6,10 +6,10 @@ author: nolavime
 ms.author: v-jysur
 ms.date: 01/23/2018
 ms.openlocfilehash: 16b48ac213168eaa58de5b0603025b2d48bb5ed5
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102041677"
 ---
 # <a name="create-service-manager-web-app-using-the-automated-script"></a>Создание веб-приложения Service Manager с помощью автоматизированного скрипта
@@ -31,7 +31,7 @@ ms.locfileid: "102041677"
 
 [!INCLUDE [updated-for-az](../../../includes/updated-for-az.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
  Windows Management Framework версии 5.0 или выше.
 По умолчанию в Windows 10 используется версия 5.1. Скачать нужную версию можно [отсюда](https://www.microsoft.com/download/details.aspx?id=50395):

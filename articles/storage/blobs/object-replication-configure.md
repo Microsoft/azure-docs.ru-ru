@@ -11,10 +11,10 @@ ms.author: tamram
 ms.subservice: blobs
 ms.custom: devx-track-azurecli, devx-track-azurepowershell
 ms.openlocfilehash: 2b6855d72b644a3fe1fa46c883eb7414383a1a57
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102031707"
 ---
 # <a name="configure-object-replication-for-block-blobs"></a>Настройка репликации объекта для блочных BLOB-объектов
