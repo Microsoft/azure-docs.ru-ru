@@ -12,10 +12,10 @@ ms.date: 11/23/2020
 ms.author: gasinh
 ms.subservice: B2C
 ms.openlocfilehash: 282ec6a25dc381dc51f28534d272bae57d2e792e
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98674999"
 ---
 # <a name="tutorial-to-configure-nevis-with-azure-active-directory-b2c-for-passwordless-authentication"></a>Руководство по настройке Невис с Azure Active Directory B2C для проверки подлинности без пароля
@@ -264,7 +264,7 @@ ms.locfileid: "98674999"
 
 8. Вы автоматически перейдете на целевую страницу [JWT.MS](https://jwt.ms) , на которой отображаются маркеры.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения см. в следующих статьях.
 

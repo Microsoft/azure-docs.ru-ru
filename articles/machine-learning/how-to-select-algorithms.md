@@ -12,10 +12,10 @@ ms.author: lazzeri
 ms.reviewer: cgronlun
 ms.date: 05/07/2020
 ms.openlocfilehash: 27b18fdc2dda40f8361483e6ecce28d0ccbd0310
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93308235"
 ---
 # <a name="how-to-select-algorithms-for-azure-machine-learning"></a>Выбор алгоритмов для Машинное обучение Azure
@@ -30,7 +30,7 @@ ms.locfileid: "93308235"
 
 ## <a name="business-scenarios-and-the-machine-learning-algorithm-cheat-sheet"></a>Бизнес-сценарии и лист Машинное обучение Algorithm Памятка по
 
-С помощью [памятка по машинное обучение Azureного алгоритма](./algorithm-cheat-sheet.md?WT.mc_id=docs-article-lazzeri) вы будете в первую очередь: **что нужно сделать с данными** ? На листе Машинное обучение Algorithm Памятка по (анализ алгоритма) найдите нужную задачу, а затем найдите алгоритм [конструктора машинное обучение Azure](./concept-designer.md?WT.mc_id=docs-article-lazzeri) для решения прогнозной аналитики. 
+С помощью [памятка по машинное обучение Azureного алгоритма](./algorithm-cheat-sheet.md?WT.mc_id=docs-article-lazzeri) вы будете в первую очередь: **что нужно сделать с данными**? На листе Машинное обучение Algorithm Памятка по (анализ алгоритма) найдите нужную задачу, а затем найдите алгоритм [конструктора машинное обучение Azure](./concept-designer.md?WT.mc_id=docs-article-lazzeri) для решения прогнозной аналитики. 
 
 Машинное обучение Designer предоставляет комплексный портфель алгоритмов, таких как [лес решений в многоклассовых решениях](./algorithm-module-reference/multiclass-decision-forest.md?WT.mc_id=docs-article-lazzeri), [системы рекомендаций](./algorithm-module-reference/evaluate-recommender.md?WT.mc_id=docs-article-lazzeri), [регрессия нейронных сетей](./algorithm-module-reference/neural-network-regression.md?WT.mc_id=docs-article-lazzeri), [Многоклассовая нейронная сеть](./algorithm-module-reference/multiclass-neural-network.md?WT.mc_id=docs-article-lazzeri)и [кластеризация на основе K-средних](./algorithm-module-reference/k-means-clustering.md?WT.mc_id=docs-article-lazzeri). Каждый алгоритм предназначен для решения различных типов проблем машинного обучения. Полный список, а также описание работы каждого алгоритма и настройки параметров для оптимизации алгоритма см. в [справочнике по алгоритму конструктора машинное обучение и модулю](./algorithm-module-reference/module-reference.md?WT.mc_id=docs-article-lazzeri) .
 
@@ -50,19 +50,19 @@ ms.locfileid: "93308235"
 | **Алгоритм** | **Точность** | **Время обучения** | **Линейность** | **Параметры** | **Примечания** |
 | --- |:---:|:---:|:---:|:---:| --- |
 | **Семейство классификаций** | | | | | |
-| [Логистическая регрессия двух классов](./algorithm-module-reference/two-class-logistic-regression.md?WT.mc_id=docs-article-lazzeri) |Хорошо  |быстрый; |Да |4 | |
+| [Логистическая регрессия двух классов](./algorithm-module-reference/two-class-logistic-regression.md?WT.mc_id=docs-article-lazzeri) |Хорошо  |Быстрый |Да |4 | |
 | [Лес решений с двумя классами](./algorithm-module-reference/two-class-decision-forest.md?WT.mc_id=docs-article-lazzeri) |Отлично |Средняя |Нет |5 |Показывает меньшее время оценки. Предложение не работает с Многоклассовый классификатор "один — все" из-за более медленных оценок, вызванных действовать блокировкой в накоплении прогнозов дерева |
 | [Дерево решений, увеличивающееся двумя классами](./algorithm-module-reference/two-class-boosted-decision-tree.md?WT.mc_id=docs-article-lazzeri) |Отлично |Средняя |Нет |6 |Большой объем памяти |
 | [Нейронная сеть с двумя классами](./algorithm-module-reference/two-class-neural-network.md?WT.mc_id=docs-article-lazzeri) |Хорошо |Средняя |Нет |8 | |
 | [Среднее перцептрона, основанное на двух классах](./algorithm-module-reference/two-class-averaged-perceptron.md?WT.mc_id=docs-article-lazzeri) |Хорошо |Средняя |Да |4 | |
-| [Поддержка векторного компьютера с двумя классами](./algorithm-module-reference/two-class-support-vector-machine.md?WT.mc_id=docs-article-lazzeri) |Хорошо |быстрый; |Да |5 |Подходит для больших наборов функций |
-| [Логистическая регрессия в многоклассовой](./algorithm-module-reference/multiclass-logistic-regression.md?WT.mc_id=docs-article-lazzeri) |Хорошо |быстрый; |Да |4 | |
+| [Поддержка векторного компьютера с двумя классами](./algorithm-module-reference/two-class-support-vector-machine.md?WT.mc_id=docs-article-lazzeri) |Хорошо |Быстрый |Да |5 |Подходит для больших наборов функций |
+| [Логистическая регрессия в многоклассовой](./algorithm-module-reference/multiclass-logistic-regression.md?WT.mc_id=docs-article-lazzeri) |Хорошо |Быстрый |Да |4 | |
 | [Лес решений в многоклассовых решениях](./algorithm-module-reference/multiclass-decision-forest.md?WT.mc_id=docs-article-lazzeri) |Отлично |Средняя |Нет |5 |Показывает меньшее время оценки |
 | [Многоклассическое дерево принятия решений](./algorithm-module-reference/multiclass-boosted-decision-tree.md?WT.mc_id=docs-article-lazzeri) |Отлично |Средняя |Нет |6 | Как правило, повышение точности с небольшим риском меньшего объема |
 | [Многоклассовая нейронная сеть](./algorithm-module-reference/multiclass-neural-network.md?WT.mc_id=docs-article-lazzeri) |Хорошо |Средняя |Нет |8 | |
 | [Многоклассовая, одна-VS-все](./algorithm-module-reference/one-vs-all-multiclass.md?WT.mc_id=docs-article-lazzeri) | - | - | - | - |Просмотрите свойства выбранного двухклассового метода |
 | **Семейство регрессии** | | | | | |
-| [Линейная регрессия](./algorithm-module-reference/linear-regression.md?WT.mc_id=docs-article-lazzeri) |Хорошо |быстрый; |Да |4 | |
+| [Линейная регрессия](./algorithm-module-reference/linear-regression.md?WT.mc_id=docs-article-lazzeri) |Хорошо |Быстрый |Да |4 | |
 | [Регрессия леса принятия решений](./algorithm-module-reference/decision-forest-regression.md?WT.mc_id=docs-article-lazzeri)|Отлично |Средняя |Нет |5 | |
 | [Регрессия повышенного дерева принятия решений](./algorithm-module-reference/boosted-decision-tree-regression.md?WT.mc_id=docs-article-lazzeri) |Отлично |Средняя |Нет |6 |Большой объем памяти |
 | [Регрессия нейронной сети](./algorithm-module-reference/neural-network-regression.md?WT.mc_id=docs-article-lazzeri) |Хорошо |Средняя |Нет |8 | |
@@ -123,7 +123,7 @@ ms.locfileid: "93308235"
 
 ![Нелинейная граница класса](./media/how-to-select-algorithms/nonlinear-class-boundary.png)
 
-**_Нелинейная граница класса_* _: _Relying в алгоритме линейной классификации приведет к низкой точности. *
+***Нелинейная граница класса** _: _Relying в алгоритме линейной классификации приведет к низкой точности. *
 
 ![Данные с нелинейным трендом](./media/how-to-select-algorithms/nonlinear-trend.png)
 

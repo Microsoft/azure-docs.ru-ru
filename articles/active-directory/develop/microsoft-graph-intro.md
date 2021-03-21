@@ -12,10 +12,10 @@ ms.date: 02/13/2020
 ms.author: davidmu
 ms.custom: aaddev
 ms.openlocfilehash: a799d7c32ad632303931adf838ca8e2e715b2adc
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96860190"
 ---
 # <a name="microsoft-graph-api"></a>API Microsoft Graph
@@ -26,7 +26,7 @@ Microsoft Graph предоставляет интерфейсы API и клие�
 - Microsoft 365 Services: Delve, Excel, Microsoft Books, Microsoft Teams, OneDrive, OneNote, Outlook/Exchange, Planner и SharePoint
 - Корпоративные мобильные службы и безопасность: Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Configuration Manager и Intune
 - Службы Windows 10: действия, устройства, уведомления
-- Dynamics 365 Business Central
+- Dynamics 365 Business Central
 
 ## <a name="versions"></a>Версии
 

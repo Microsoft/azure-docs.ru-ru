@@ -6,10 +6,10 @@ ms.topic: how-to
 ms.custom: hdinsightactive, devx-track-csharp
 ms.date: 12/23/2019
 ms.openlocfilehash: 0fffe763f77fffcec6010d43deb92ffea9ece15d
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101094916"
 ---
 # <a name="create-a-non-interactive-authentication-net-hdinsight-application"></a>Создание приложения .NET HDInsight с неинтерактивной проверкой подлинности
@@ -22,7 +22,7 @@ ms.locfileid: "101094916"
 * Идентификатор клиента для приложения Azure Active Directory (Azure AD). См. статью [создание Azure Active Directory приложения](../active-directory/develop/howto-create-service-principal-portal.md#register-an-application-with-azure-ad-and-create-a-service-principal) и [Получение идентификатора приложения](../active-directory/develop/howto-create-service-principal-portal.md#get-tenant-and-app-id-values-for-signing-in).
 * Секретный ключ приложения Azure AD. Дополнительные сведения см. в разделе [Получение идентификатора приложения и ключа проверки подлинности](../active-directory/develop/howto-create-service-principal-portal.md#get-tenant-and-app-id-values-for-signing-in).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Кластер HDInsight. Дополнительные сведения см. в [руководстве по началу работы](hadoop/apache-hadoop-linux-tutorial-get-started.md).
 
@@ -32,7 +32,7 @@ ms.locfileid: "101094916"
 
 **Добавление роли владельца в приложение Azure AD**
 
-1. Войдите на [портал Microsoft Azure](https://portal.azure.com).
+1. Войдите на [портал Azure](https://portal.azure.com).
 1. Перейдите к группе ресурсов с кластером HDInsight, в которой будет выполняться запрос Hive далее в этой статье. Если у вас много групп ресурсов, для поиска нужной можно использовать фильтр.
 1. В меню группы ресурсов щелкните **Управление доступом (IAM)**.
 1. Выберите вкладку **Назначения ролей**, чтобы просмотреть текущие назначения ролей.
@@ -116,7 +116,7 @@ ms.locfileid: "101094916"
     }
     ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Создание приложения Azure Active Directory и субъекта-службы на портале Azure](../active-directory/develop/howto-create-service-principal-portal.md).
 * Узнайте, как [выполнять проверку подлинности субъекта-службы в Azure Resource Manager](../active-directory/develop/howto-authenticate-service-principal-powershell.md).

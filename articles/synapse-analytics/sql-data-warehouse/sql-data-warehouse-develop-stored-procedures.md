@@ -12,10 +12,10 @@ ms.author: emtehran
 ms.reviewer: igorstan
 ms.custom: azure-synapse
 ms.openlocfilehash: e28eeac131c737d673cac947a3fda30239180a62
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98673592"
 ---
 # <a name="using-stored-procedures-for-dedicated-sql-pools-in-azure-synapse-analytics"></a>Использование хранимых процедур для выделенных пулов SQL в Azure синапсе Analytics

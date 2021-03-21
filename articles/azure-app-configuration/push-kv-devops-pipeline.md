@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 02/23/2021
 ms.author: alkemper
 ms.openlocfilehash: 7d343e07414dd1c3f9786c1684eb6f14d5f45e51
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101718188"
 ---
 # <a name="push-settings-to-app-configuration-with-azure-pipelines"></a>Отправка параметров в конфигурацию приложения с помощью Azure Pipelines
@@ -97,7 +97,7 @@ ms.locfileid: "101718188"
 
 При возникновении непредвиденной ошибки можно включить журналы отладки, задав для переменной конвейера `system.debug` значение `true` .
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 **Как можно отправить несколько файлов конфигурации?**
 

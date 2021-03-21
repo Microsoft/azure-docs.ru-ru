@@ -8,10 +8,10 @@ ms.topic: troubleshooting
 ms.custom: contperf-fy21q1
 ms.date: 06/18/2020
 ms.openlocfilehash: 93d881419c4854b8e46608e150b55072267e0347
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100574410"
 ---
 # <a name="troubleshoot-azure-stream-analytics-by-using-resource-logs"></a>Устранение неполадок в Azure Stream Analytics с помощью журналов ресурсов
@@ -140,7 +140,7 @@ Type | Тип ошибки. Например **DataConversionError**, **CsvParse
 Type | Тип сообщения. Сопоставляется с внутренней классификацией ошибок. Например **JobValidationError** или **BlobOutputAdapterInitializationFailure**.
 Идентификатор корреляции | Идентификатор GUID, однозначно определяющий выполнение задания. Все записи журнала, зафиксированные с начала до завершения задания, имеют одинаковое значение **идентификатора корреляции**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Ошибки данных Stream Analytics](./data-errors.md)
 * [Stream Analytics Query Language Reference](/stream-analytics-query/stream-analytics-query-language-reference) (Справочник по языку запросов Stream Analytics)

@@ -4,10 +4,10 @@ description: Приложения Azure Service Fabric могут выполня
 ms.topic: conceptual
 ms.date: 02/23/2018
 ms.openlocfilehash: c907540c03788ab5f4087a96e301f18ab7ced4ca
-ms.sourcegitcommit: a055089dd6195fde2555b27a84ae052b668a18c7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98787983"
 ---
 # <a name="manage-applications-for-multiple-environments"></a>Управление приложениями для использования в нескольких средах

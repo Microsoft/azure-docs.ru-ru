@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 10/27/2020
 ms.author: tomfitz
 ms.openlocfilehash: 1ac6fd5a3f1e581fc9a676fe7f8f27b9742e1581
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93101227"
 ---
 # <a name="microsoftkeyvaultkeyvaultcertificateselector-ui-element"></a>Элемент пользовательского интерфейса Microsoft. KeyVault. Кэйваултцертификатеселектор
@@ -24,11 +24,11 @@ ms.locfileid: "93101227"
 
 После выбора параметра **выбрать сертификат** пользователь может указать хранилище ключей и сертификат из хранилища ключей.
 
-:::image type="content" source="./media/managed-application-elements/microsoft-keyvault-keyvaultcertificateselector-certificate.png" alt-text="Microsoft. KeyVault. Кэйваултцертификатеселектор":::
+:::image type="content" source="./media/managed-application-elements/microsoft-keyvault-keyvaultcertificateselector-certificate.png" alt-text="Выбор сертификата Microsoft. KeyVault. Кэйваултцертификатеселектор":::
 
 Элемент управления обновляется для вывода выбранного хранилища ключей и имени сертификата.
 
-:::image type="content" source="./media/managed-application-elements/microsoft-keyvault-keyvaultcertificateselector-result.png" alt-text="Microsoft. KeyVault. Кэйваултцертификатеселектор":::
+:::image type="content" source="./media/managed-application-elements/microsoft-keyvault-keyvaultcertificateselector-result.png" alt-text="Microsoft. KeyVault. Кэйваултцертификатеселектор показывать выбранный сертификат":::
 
 ## <a name="schema"></a>схема
 

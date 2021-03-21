@@ -12,10 +12,10 @@ ms.date: 01/10/2020
 ms.author: tdsp
 ms.custom: seodec18, previous-author=deguhath, previous-ms.author=deguhath
 ms.openlocfilehash: c80a90b07e25942e751d52cafa47f6e3e94852ab
-ms.sourcegitcommit: 96918333d87f4029d4d6af7ac44635c833abb3da
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93320331"
 ---
 # <a name="move-data-to-sql-server-on-an-azure-virtual-machine"></a>Перемещение данных в SQL Server на виртуальной машине Azure
@@ -29,7 +29,7 @@ ms.locfileid: "93320331"
 | <b>ИСТОЧНИКА</b> | <b>НАЗНАЧЕНИЕ: SQL Server на виртуальной машине Azure</b> |
 | --- | --- |
 | <b>Неструктурированный файл</b> |1. <a href="#insert-tables-bcp">программа для выполнения операций с массовым копированием из командной строки (BCP) </a><br> 2. <a href="#insert-tables-bulkquery">SQL — запрос на выполнение инструкций групповой вставки </a><br> 3. <a href="#sql-builtin-utilities">графические Встроенные служебные программы в SQL Server</a> |
-| <b>Локальный сервер SQL Server</b> |1. <a href="#deploy-a-sql-server-database-to-a-microsoft-azure-vm-wizard">развертывание SQL Server базы данных в мастере Microsoft Azure виртуальной машины</a><br> 2. <a href="#export-flat-file">Экспорт в неструктурированный файл </a><br> 3. <a href="#sql-migration">Мастер миграции баз данных SQL </a> <br> 4. <a href="#sql-backup">резервное копирование и восстановление базы данных </a><br> |
+| <b>Локальная SQL Server</b> |1. <a href="#deploy-a-sql-server-database-to-a-microsoft-azure-vm-wizard">развертывание SQL Server базы данных в мастере Microsoft Azure виртуальной машины</a><br> 2. <a href="#export-flat-file">Экспорт в неструктурированный файл </a><br> 3. <a href="#sql-migration">Мастер миграции баз данных SQL </a> <br> 4. <a href="#sql-backup">резервное копирование и восстановление базы данных </a><br> |
 
 В этом документе предполагается, что команды SQL выполняются из SQL Server Management Studio или Visual Studio обозреватель базы данных.
 

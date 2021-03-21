@@ -4,10 +4,10 @@ description: Сведения об ограничениях емкости (ог
 ms.topic: conceptual
 ms.date: 06/26/2020
 ms.openlocfilehash: 9866628cd11ec8df67e6fe16ae8806f0f30ae9a1
-ms.sourcegitcommit: b4880683d23f5c91e9901eac22ea31f50a0f116f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94491024"
 ---
 # <a name="capacity-limits-in-azure-lab-services"></a>Ограничения емкости в службах лаборатории Azure
@@ -48,7 +48,7 @@ ms.locfileid: "94491024"
 
 После отправки запроса на поддержку мы рассмотрим запрос. При необходимости мы будем связываться с вами для получения дополнительных сведений. 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 См. следующую статью:
 - [Администрирование — изменение размера виртуальной машины](administrator-guide.md#vm-sizing).
 - [Часто задаваемые вопросы](classroom-labs-faq.md).

@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.date: 02/18/2021
 ms.author: yuajia
 ms.openlocfilehash: c08ba57f43969bb2f0ee9c66b6cb4e92879ed258
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101099903"
 ---
 # <a name="configure-security-headers-with-azure-front-door-standardpremium-preview-rule-set"></a>Настройка заголовков безопасности с помощью набора правил "Стандартный" или "Премиум" (Предварительная версия) передней дверцы Azure
 
 > [!Note]
-> Эта документация предназначена для передней дверцы Azure уровня "Стандартный" или "Премиум" (Предварительная версия). Ищете информацию о передней дверце Azure? Просмотреть [здесь](../front-door-overview.md).
+> Эта документация предназначена для Azure Front Door категории "Стандартный" или "Премиум" (предварительная версия). Сведения об Azure Front Door см. [здесь](../front-door-overview.md).
 
 В этой статье показано, как реализовать заголовки безопасности, чтобы предотвратить возникновение уязвимостей в браузере, таких как HTTP-протоколы, HTTPS-Security, Content-Security-Policy или X-Frame-Options. Атрибуты для системы безопасности можно также определять с помощью файлов cookie.
 
@@ -58,6 +58,6 @@ ms.locfileid: "101099903"
 
 Если вы хотите удалить набор правил, убедитесь, что он не связан со всеми маршрутами перед удалением. Подробные инструкции по удалению набора правил см. в разделе [Настройка набора правил](how-to-configure-rule-set.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения о настройке брандмауэра веб-приложения для передней дверцы см. в разделе [брандмауэр веб-приложения и передняя дверца](../../web-application-firewall/afds/afds-overview.md).

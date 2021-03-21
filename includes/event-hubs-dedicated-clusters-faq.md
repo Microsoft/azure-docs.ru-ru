@@ -9,10 +9,10 @@ ms.date: 10/23/2020
 ms.author: spelluru
 ms.custom: include file
 ms.openlocfilehash: 0335481566ae3f28ac0f1e6bddce7050a65e7dc2
-ms.sourcegitcommit: 59f506857abb1ed3328fda34d37800b55159c91d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92517006"
 ---
 ### <a name="what-can-i-achieve-with-a-cluster"></a>Что можно достичь в кластере?

@@ -9,10 +9,10 @@ ms.subservice: cosmosdb-cassandra
 ms.topic: how-to
 ms.date: 09/01/2019
 ms.openlocfilehash: d25e168e342e22af9dc41d31dd7e18530aaa22b8
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93090517"
 ---
 # <a name="connect-to-azure-cosmos-db-cassandra-api-from-spark"></a>Подключитесь к API Cassandra для Azure Cosmos DB из оболочки Spark
@@ -20,7 +20,7 @@ ms.locfileid: "93090517"
 
 Эта статья — одна из серии об интеграции API Cassandra для Azure Cosmos DB из оболочки Spark. В статье речь идет о подключении, операциях языка описания данных, основных операциях языка обработки данных DML и расширенной интеграции API Cassandra для Azure Cosmos DB из оболочки Spark. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 * [Подготавливает учетную запись API Cassandra Azure Cosmos DB.](create-cassandra-dotnet.md#create-a-database-account)
 
 * Предоставление выбора среды Spark [[Azure Databricks](/azure/databricks/scenarios/quickstart-create-databricks-workspace-portal)  |  [Azure HDInsight — Spark](../hdinsight/spark/apache-spark-jupyter-spark-sql.md) | Другие].

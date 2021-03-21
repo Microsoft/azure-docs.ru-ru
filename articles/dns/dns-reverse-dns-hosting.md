@@ -8,10 +8,10 @@ ms.workload: infrastructure-services
 ms.date: 05/29/2017
 ms.author: rohink
 ms.openlocfilehash: 0c85049d6c8921432a753bf08989cab473b7c734
-ms.sourcegitcommit: ea822acf5b7141d26a3776d7ed59630bf7ac9532
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99525133"
 ---
 # <a name="host-reverse-dns-lookup-zones-in-azure-dns"></a>Размещение зон обратного просмотра DNS в Azure DNS
@@ -72,7 +72,7 @@ azure network dns zone create MyResourceGroup 2.0.192.in-addr.arpa
 az network dns zone create -g MyResourceGroup -n 2.0.192.in-addr.arpa
 ```
 
-### <a name="ipv6"></a>IPv6
+### <a name="ipv6"></a>IPv6;
 
 Имя зоны обратного просмотра IPv6 должно быть указано в формате `<IPv6 network prefix in reverse order>.ip6.arpa`.  Примеры см. в [обзоре обратной зоны DNS и ее поддержке в Azure](dns-reverse-dns-overview.md#ipv6).
 
@@ -147,7 +147,7 @@ azure network dns record-set add-record MyResourceGroup 2.0.192.in-addr.arpa 15 
 az network dns record-set ptr add-record -g MyResourceGroup -z 2.0.192.in-addr.arpa -n 15 --ptrdname dc1.contoso.com
 ```
 
-### <a name="ipv6"></a>IPv6
+### <a name="ipv6"></a>IPv6;
 
 Следующий пример демонстрирует процесс создания записи типа PTR. Сведения о других типах записей и об изменении существующих записей см. в статье [Управление записями и наборами записей DNS с помощью портала Azure](dns-operations-recordsets-portal.md).
 
@@ -214,7 +214,7 @@ azure network dns record-set list MyResourceGroup 2.0.192.in-addr.arpa
 az network dns record-set list -g MyResourceGroup -z 2.0.192.in-addr.arpa
 ```
 
-### <a name="ipv6"></a>IPv6
+### <a name="ipv6"></a>IPv6;
 
 На панели **Зона DNS** отображаются записи IPv6 типа PTR:
 
@@ -240,7 +240,7 @@ azure network dns record-set list MyResourceGroup 0.0.0.0.c.d.b.a.8.b.d.0.1.0.0.
 az network dns record-set list -g MyResourceGroup -z 0.0.0.0.c.d.b.a.8.b.d.0.1.0.0.2.ip6.arpa
 ```
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 ### <a name="can-i-host-reverse-dns-lookup-zones-for-my-isp-assigned-ip-blocks-on-azure-dns"></a>Можно ли разместить зоны обратного просмотра DNS для блоков IP-адресов, назначенных поставщиком услуг Интернета, в DNS Azure?
 
@@ -262,7 +262,7 @@ az network dns record-set list -g MyResourceGroup -z 0.0.0.0.c.d.b.a.8.b.d.0.1.0
 
 Дополнительные сведения см. в статье [Импорт и экспорт файла зоны DNS с помощью Azure CLI 1.0](dns-import-export.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения см. [в статье Википедии об обратном просмотре DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup).
 <br>

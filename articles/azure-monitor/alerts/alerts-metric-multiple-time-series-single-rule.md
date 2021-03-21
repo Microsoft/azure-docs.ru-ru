@@ -6,10 +6,10 @@ ms.author: harelbr
 ms.topic: conceptual
 ms.date: 01/11/2021
 ms.openlocfilehash: bc3e77b560a94b45acf1ae696551dbefbabbdf0a
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102038209"
 ---
 # <a name="monitor-multiple-time-series-in-a-single-metric-alert-rule"></a>Мониторинг нескольких временных рядов в одном правиле генерации оповещений метрик
@@ -20,7 +20,7 @@ ms.locfileid: "102038209"
 
 Метрика временных рядов — это ряд измерений (или значений метрик), захваченных за определенный период времени. 
 
-Пример.
+Пример:
 
 - Использование ЦП виртуальной машиной
 - Входящие байты (входящий трафик) в учетную запись хранения
@@ -86,7 +86,7 @@ ms.locfileid: "102038209"
 
 Одно правило генерации оповещений метрики также может отслеживать до пяти условий для каждого правила генерации оповещений. 
 
-Пример.
+Пример:
 
 - Целевой ресурс: *myVM1*
 - Condition1

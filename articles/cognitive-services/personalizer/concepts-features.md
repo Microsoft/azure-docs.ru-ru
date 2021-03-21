@@ -9,10 +9,10 @@ ms.subservice: personalizer
 ms.topic: conceptual
 ms.date: 10/14/2019
 ms.openlocfilehash: f49abd4ca1cc1ccdcb7ba2b0fab3bad953dede5d
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100380548"
 ---
 # <a name="features-are-information-about-actions-and-context"></a>Признаки — сведения о действиях и контексте
@@ -188,7 +188,7 @@ ms.locfileid: "100380548"
 
 Действия, которые вы отправляете в API ранжирования, будут зависеть от того, что вы пытаетесь персонализировать.
 
-Ниже приводится несколько примеров.
+Ниже приведены некоторые примеры:
 
 |Назначение|Действие|
 |--|--|
@@ -331,6 +331,6 @@ ms.locfileid: "100380548"
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 [Обучение с подкреплением](concepts-reinforcement-learning.md)

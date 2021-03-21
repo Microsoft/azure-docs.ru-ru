@@ -16,10 +16,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e015f7937db6788aa4473a8a04434121299901e9
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96861788"
 ---
 # <a name="azure-ad-connect-sync-understanding-users-groups-and-contacts"></a>Синхронизация Azure AD Connect: общие сведения о пользователях, группах и контактах
@@ -47,7 +47,7 @@ ms.locfileid: "96861788"
 
     * Если атрибут группы *proxyAddress* пуст, атрибут *mail* должен иметь значение.
 
-    * Если атрибут *proxyAddress* группы не является пустым, он должен содержать хотя бы одно значение адреса прокси-сервера SMTP. Ниже приводится несколько примеров.
+    * Если атрибут *proxyAddress* группы не является пустым, он должен содержать хотя бы одно значение адреса прокси-сервера SMTP. Ниже приведены некоторые примеры:
     
       * Группа Active Directory, атрибут proxyAddress которой имеет значение *{"X500:/0=contoso.com/ou=users/cn=testgroup"}*, не будет поддерживать электронную почту в Azure AD. У нее нет SMTP-адреса.
       

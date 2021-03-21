@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 9/21/2020
 ms.openlocfilehash: 1232a0753c988f5a28ebba28f9819aa67ce28603
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101718749"
 ---
 # <a name="track-database-activity-with-audit-logs-in-azure-database-for-mysql-flexible-server"></a>Мониторинг активности базы данных с помощью журналов аудита в базе данных Azure для гибкого сервера MySQL
@@ -80,7 +80,7 @@ ms.locfileid: "101718749"
 | `db_s` | Имя базы данных, подключенной к |
 | `\_ResourceId` | Универсальный код ресурса (URI) |
 
-### <a name="general"></a>Общее
+### <a name="general"></a>Общие сведения
 
 Приведенная ниже схема относится к типам событий GENERAL, DML_SELECT, DML_NONSELECT, DML, DDL, ДКЛ и ADMIN.
 

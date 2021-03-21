@@ -6,10 +6,10 @@ ms.topic: conceptual
 description: Описание процессов выполнения кода в службе Azure Kubernetes с Azure Dev Spaces
 keywords: аздс. YAML, Azure Dev Spaces, пространства разработки, Docker, Kubernetes, Azure, AKS, служба Azure Kubernetes, контейнеры
 ms.openlocfilehash: 1cace325f9415d46210636e5c04cc2d75589cc11
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96014437"
 ---
 # <a name="how-running-your-code-with-azure-dev-spaces-works"></a>Как работает код с Azure Dev Spaces
@@ -197,7 +197,7 @@ ingress:
   enabled: true
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о сетях и способах маршрутизации запросов в Azure Dev Spaces см. в статье [как маршрутизация работает с Azure dev Spaces][how-it-works-routing].
 

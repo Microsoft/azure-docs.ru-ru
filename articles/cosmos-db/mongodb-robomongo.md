@@ -8,10 +8,10 @@ ms.date: 03/23/2020
 author: timsander1
 ms.author: tisande
 ms.openlocfilehash: e096de5eea9bf5bbd47b976976192e62eb6aa33e
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93096417"
 ---
 # <a name="use-robo-3t-with-azure-cosmos-dbs-api-for-mongodb"></a>Использование Robo 3T с API Azure Cosmos DB для MongoDB
@@ -36,16 +36,16 @@ ms.locfileid: "93096417"
 
 3. Нажмите кнопку подключения под меню **File** (Файл) для управления подключениями. Щелкните **Create** (Создать) в окне **MongoDB Connections** (Подключения MongoDB). Откроется окно **Connection Settings** (Параметры подключения).
 
-4. В окне **Connection Settings** (Параметры подключения) выберите имя. Затем найдите **узел** и **порт** , указанные в сведениях о подключении, полученных на шаге 1, и введите их в полях **Address** (Адрес) и **Port** (Порт) соответственно.
+4. В окне **Connection Settings** (Параметры подключения) выберите имя. Затем найдите **узел** и **порт**, указанные в сведениях о подключении, полученных на шаге 1, и введите их в полях **Address** (Адрес) и **Port** (Порт) соответственно.
 
-    :::image type="content" source="./media/mongodb-robomongo/manageconnections.png" alt-text="Снимок экрана колонки строки подключения":::
-5. На вкладке **Authentication** (Аутентификация) установите флажок **Perform authentication** (Выполнять аутентификацию). Затем введите базу данных (по умолчанию — *Admin* ), **имя пользователя** и **пароль** .
+    :::image type="content" source="./media/mongodb-robomongo/manageconnections.png" alt-text="Снимок экрана Robomongo управления подключениями":::
+5. На вкладке **Authentication** (Аутентификация) установите флажок **Perform authentication** (Выполнять аутентификацию). Затем введите базу данных (по умолчанию — *Admin*), **имя пользователя** и **пароль**.
 **Имя пользователя** и **пароль** можно найти в данных подключения, полученных на шаге 1.
 
-    :::image type="content" source="./media/mongodb-robomongo/authentication.png" alt-text="Снимок экрана колонки строки подключения":::
+    :::image type="content" source="./media/mongodb-robomongo/authentication.png" alt-text="Снимок экрана вкладки проверки подлинности Robomongo":::
 6. На вкладке **SSL** установите флажок **Use SSL protocol** (Использовать протокол SSL), затем измените значение параметра **Authentication Method** (Метод аутентификации) на **Self-signed Certificate** (Самозаверяющий сертификат).
 
-    :::image type="content" source="./media/mongodb-robomongo/SSL.png" alt-text="Снимок экрана колонки строки подключения":::
+    :::image type="content" source="./media/mongodb-robomongo/SSL.png" alt-text="Снимок экрана вкладки Robomongo SSL":::
 7. Наконец, нажмите кнопку **Test** (Проверить), чтобы проверить возможность подключения, затем нажмите кнопку **Save** (Сохранить).
 
 ## <a name="next-steps"></a>Дальнейшие действия

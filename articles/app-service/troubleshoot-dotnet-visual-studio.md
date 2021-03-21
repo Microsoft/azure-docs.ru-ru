@@ -7,17 +7,17 @@ ms.topic: article
 ms.date: 08/29/2016
 ms.custom: devx-track-csharp, seodec18
 ms.openlocfilehash: 65eb4e8fefb74219c927fe507baceca7c55462be
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101095715"
 ---
 # <a name="troubleshoot-an-app-in-azure-app-service-using-visual-studio"></a>Устранение неполадок приложения в Cлужбе приложений Azure с помощью Visual Studio
 ## <a name="overview"></a>Обзор
 В этом руководстве показано, как использовать инструменты Visual Studio, которые позволяют отлаживать работу приложения в [Cлужбе приложений](./overview.md) путем запуска приложения удаленно в [режиме отладки](/visualstudio/debugger/) или путем просмотра журналов приложения и журналов веб-сервера.
 
-Вы познакомитесь со следующими аспектами:
+Вы узнаете:
 
 * Какие функции управления приложением доступны в среде Visual Studio.
 * Как использовать удаленное представление Visual Studio для быстрого изменения удаленного приложения.

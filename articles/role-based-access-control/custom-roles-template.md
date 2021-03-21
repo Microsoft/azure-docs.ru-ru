@@ -10,10 +10,10 @@ ms.workload: identity
 ms.date: 12/16/2020
 ms.author: rolyon
 ms.openlocfilehash: 0626a9e36d05ac9cb51f62652dbe6f3133bbc6d7
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101095907"
 ---
 # <a name="create-or-update-azure-custom-roles-using-an-arm-template"></a>Создание или обновление пользовательских ролей Azure с помощью шаблона ARM
@@ -55,7 +55,7 @@ ms.locfileid: "101095907"
 
 Выполните следующие действия, чтобы развернуть предыдущий шаблон.
 
-1. Войдите на [портал Microsoft Azure](https://portal.azure.com).
+1. Войдите на [портал Azure](https://portal.azure.com).
 
 1. Откройте Azure Cloud Shell для PowerShell.
 
@@ -117,7 +117,7 @@ ms.locfileid: "101095907"
     Get-AzRoleDefinition "Custom Role - RG Reader" | ConvertTo-Json
     ```
 
-    Вы должны увидеть результат, аналогичный приведенному ниже:
+    Выходные данные должны иметь следующий вид.
 
     ```azurepowershell-interactive
     {
@@ -203,7 +203,7 @@ New-AzDeployment -Location $location -TemplateFile $templateFile -actions $actio
 
 1. Введите **Y** , чтобы подтвердить, что вы хотите удалить настраиваемую роль.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Общие сведения о определениях ролей Azure](role-definitions.md)
 - [Краткое руководство. Назначение роли Azure с помощью шаблона Azure Resource Manager](quickstart-role-assignments-template.md)

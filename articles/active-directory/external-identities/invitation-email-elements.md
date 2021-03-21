@@ -13,10 +13,10 @@ ms.reviewer: mal
 ms.custom: it-pro, seo-update-azuread-jan
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bb134a2fb784e02f5e00c9e88ab0df1794489e0c
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96860598"
 ---
 # <a name="the-elements-of-the-b2b-collaboration-invitation-email---azure-active-directory"></a>Элементы сообщения с приглашением службы совместной работы B2B Azure Active Directory
@@ -29,7 +29,7 @@ ms.locfileid: "96860598"
 
 Давайте рассмотрим основные элементы сообщения, чтобы понять, как лучше использовать их возможности.
 
-### <a name="subject"></a>Тема
+### <a name="subject"></a>Субъект
 
 Тема сообщения электронной почты соответствует следующему шаблону:
 
@@ -75,7 +75,7 @@ ms.locfileid: "96860598"
 
 Гостевой пользователь может выполнить следующие действия, чтобы просмотреть или экспортировать заблокированные Организации:
 
-1. Перейдите по адресу [https://invitations.microsoft.com/unsubscribe/manage](https://invitations.microsoft.com/unsubscribe/manage).
+1. Перейдите на страницу [https://invitations.microsoft.com/unsubscribe/manage](https://invitations.microsoft.com/unsubscribe/manage).
 2. Введите свой адрес электронной почты и выполните действия по входу для проверки подлинности с помощью одноразового секретного кода.
 3. Просмотрите заблокированные организации или экспортируйте имена с помощью команды копировать и вставить.
    > [!NOTE]

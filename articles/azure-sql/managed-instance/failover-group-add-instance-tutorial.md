@@ -13,10 +13,10 @@ ms.author: sstein
 ms.reviewer: sashan
 ms.date: 08/27/2019
 ms.openlocfilehash: 1609f188af8ffb58251edc806e19f7820a6b0869
-ms.sourcegitcommit: ea822acf5b7141d26a3776d7ed59630bf7ac9532
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99525727"
 ---
 # <a name="tutorial-add-sql-managed-instance-to-a-failover-group"></a>Руководство по Добавление Управляемого экземпляра SQL в группу отработки отказа

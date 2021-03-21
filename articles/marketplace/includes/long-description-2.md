@@ -8,10 +8,10 @@ ms.date: 05/19/2020
 author: mingshen-ms
 ms.author: mingshen
 ms.openlocfilehash: 7b4125990ab3dea4dff9db4a5a23c9a5b6377a9d
-ms.sourcegitcommit: b6f3ccaadf2f7eba4254a402e954adf430a90003
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "92284895"
 ---
 Ниже приведен ряд советов по написанию описания.

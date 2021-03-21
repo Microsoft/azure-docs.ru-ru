@@ -6,10 +6,10 @@ ms.topic: article
 ms.author: danlep
 ms.date: 11/20/2020
 ms.openlocfilehash: 0c92899528d417f9c91f8f8930ca4932dc74e850
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95024744"
 ---
 # <a name="manage-public-content-with-azure-container-registry"></a>Управление общедоступным содержимым с помощью реестра контейнеров Azure
@@ -72,7 +72,7 @@ ms.locfileid: "95024744"
 
 `az acr import` не требуется локальная установка DOCKER. Его можно запустить с помощью локальной установки Azure CLI или непосредственно в Azure Cloud Shell. Он поддерживает образы любых типов ОС, образов с несколькими архитектурами и артефактов OCI, таких как диаграммы Helm.
 
-Пример:
+Пример
 
 ```azurecli-interactive
 az acr import \

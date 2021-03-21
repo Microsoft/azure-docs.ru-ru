@@ -7,10 +7,10 @@ ms.service: data-share
 ms.topic: how-to
 ms.date: 12/17/2020
 ms.openlocfilehash: a8e3dac620873ab11ae24395310066037f6d2df4
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97680643"
 ---
 # <a name="how-to-add-a-recipient-to-your-share"></a>Как добавить получателя в общую папку
@@ -29,5 +29,5 @@ ms.locfileid: "97680643"
 
 Щелкните **Добавить и отправить приглашение**. Новые получатели будут отправлять приглашения по электронной почте в эту общую папку.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения об [удалении приглашения в общую папку](how-to-delete-invitation.md).

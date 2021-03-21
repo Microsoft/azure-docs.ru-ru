@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 ms.author: shlo
 ms.openlocfilehash: aec553b473e0fb2688224e8a8d027f7e9f3a6025
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101716624"
 ---
 # <a name="disclosure-design-patterns"></a>Конструктивные шаблоны для раскрытия информации
@@ -38,7 +38,7 @@ ms.locfileid: "101716624"
 
 
 
-| Если ваш искусственный интерфейс голоса... | Рекомендации | Шаблоны проектирования |
+| Если ваш искусственный интерфейс голоса... | Рекомендации | Конструктивные шаблоны |
 | --- | --- | --- |
 | Требует высокого раскрытия  | Используйте по крайней мере один явный шаблон и неявные подсказок, чтобы помочь пользователям создавать связи. |[Явное раскрытие](#explicit-disclosure)<br>[Неявное раскрытие](#implicit-disclosure)  |
 | Требуется небольшое раскрытие | Раскрытие может быть минимальным или ненужным, но может оказаться выгодным для некоторых неявных шаблонов. | [Раскрытие возможностей](#capability-disclosure)<br>[Прозрачность общения](#conversational-transparency)  |
