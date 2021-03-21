@@ -6,17 +6,17 @@ author: nolavime
 ms.author: v-jysur
 ms.date: 12/21/2020
 ms.openlocfilehash: 51d16ae53e34dacfc41e3d31b01115f9c55ca9f7
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102039552"
 ---
 # <a name="connect-servicenow-with-it-service-management-connector"></a>Подключение ServiceNow с Соединитель управления ИТ-услугами
 
 В этой статье показано, как настроить подключение между экземпляром ServiceNow и Соединитель управления ИТ-услугами (ITSMC) в Log Analytics, чтобы можно было централизованно управлять рабочими элементами управления ИТ-службами (ITSM).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Убедитесь, что выполнены следующие предварительные требования для подключения.
 
 ### <a name="itsmc-installation"></a>Установка ITSMC
@@ -51,7 +51,7 @@ ms.locfileid: "102039552"
 
    1. В области **ServiceNow** найдите **System OAuth** и выберите **реестр приложений**. 
    1. Выберите имя определенного OAuth и измените срок **жизни маркера обновления** на **7 776 000 с** (90 дней). 
-   1. Щелкните **Обновить**. 
+   1. Нажмите кнопку **Обновить**. 
 
 1. Установите внутреннюю процедуру, чтобы убедиться, что подключение остается активным. Несколько дней до ожидаемого срока действия маркера обновления. выполните следующие операции:
 

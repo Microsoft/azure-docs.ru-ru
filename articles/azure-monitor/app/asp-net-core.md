@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.custom: devx-track-csharp
 ms.date: 04/30/2020
 ms.openlocfilehash: be4cbe5f95fa6901ae4299662750c232d4700a8a
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101711507"
 ---
 # <a name="application-insights-for-aspnet-core-applications"></a>Application Insights для ASP.NET Core приложений
@@ -31,7 +31,7 @@ ms.locfileid: "101711507"
 > [!NOTE]
 > Для ASP.NET Core 3,1 требуется [Application Insights 2.8.0](https://www.nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore/2.8.0) или более поздней версии.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Работающее приложение ASP.NET Core. Если необходимо создать ASP.NET Core приложение, следуйте указаниям в этом [ASP.NET Coreном руководстве](/aspnet/core/getting-started/).
 - Допустимый ключ инструментирования Application Insights. Этот ключ необходим для отправки любых данных телеметрии в Application Insights. Если необходимо создать новый Application Insights ресурс для получения ключа инструментирования, см. раздел [Создание ресурса Application Insights](./create-new-resource.md).
@@ -110,7 +110,7 @@ ms.locfileid: "101711507"
 
     * `ApplicationInsights:InstrumentationKey`
 
-    Пример.
+    Пример:
 
     * `SET ApplicationInsights:InstrumentationKey=putinstrumentationkeyhere`
 
@@ -246,7 +246,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Если `services.AddApplicationInsightsTelemetry(aiOptions)` используется, он переопределяет параметры из `Microsoft.Extensions.Configuration.IConfiguration` .
 
-### <a name="sampling"></a>Выборка
+### <a name="sampling"></a>Дискретизация
 
 Пакет SDK Application Insights для ASP.NET Core поддерживает как фиксированную, так и адаптивную выборку. Адаптивная выборка включена по умолчанию.
 

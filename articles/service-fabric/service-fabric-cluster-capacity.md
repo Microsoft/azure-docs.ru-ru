@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 05/21/2020
 ms.author: pepogors
 ms.openlocfilehash: b3361337bb0cf60e47efe198aad7aa8cc20ae7b3
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101714941"
 ---
 # <a name="service-fabric-cluster-capacity-planning-considerations"></a>Рекомендации по планированию загрузки кластера Service Fabric

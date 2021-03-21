@@ -4,10 +4,10 @@ description: Узнайте, как расширить Azure DevTest Labs с п�
 ms.topic: article
 ms.date: 06/26/2020
 ms.openlocfilehash: 620cda83094ee65f421a5529a9d5b51e505ec48e
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102501164"
 ---
 # <a name="use-azure-functions-to-extend-devtest-labs"></a>Использование Функций Azure для расширения возможностей DevTest Labs
@@ -101,7 +101,7 @@ ms.locfileid: "102501164"
 
     ![Функция Test](./media/extend-devtest-labs-azure-functions/test-function.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Функции Azure помогут расширить возможности DevTest Labs, помимо встроенных, и помочь клиентам удовлетворить свои уникальные требования для своих команд. Этот шаблон можно расширить, & расширить его еще больше.  Дополнительные сведения о DevTest Labs см. в следующих статьях: 
 
 - [Корпоративная Эталонная архитектура DevTest Labs](devtest-lab-reference-architecture.md)

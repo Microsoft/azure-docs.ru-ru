@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 05/08/2019
 ms.openlocfilehash: 431b19595fbe2f5bc1f989e712c9c104af8e839b
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101711524"
 ---
 # <a name="azure-diagnostics-troubleshooting"></a>Устранение неполадок с помощью системы диагностики Azure

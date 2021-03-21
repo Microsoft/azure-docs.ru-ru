@@ -13,10 +13,10 @@ ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
 ms.openlocfilehash: 3c5df0c4112f07a465d38e789b1401132ed25931
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103488811"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-a-idme-account-using-azure-active-directory-b2c"></a>Настройка регистрации и входа с использованием учетной записи ID.me с помощью Azure Active Directory B2C
@@ -46,7 +46,7 @@ ms.locfileid: "103488811"
 1. Выберите **Создать**.
     1. Введите **имя** и **Отображаемое имя**.
     1. В **URI перенаправления** введите `https://your-tenant-name.b2clogin.com/your-tenant-name.onmicrosoft.com/oauth2/authresp` . Если используется [личный домен](custom-domain.md), введите `https://your-domain-name/your-tenant-name.onmicrosoft.com/oauth2/authresp` . Замените `your-tenant-name` именем своего клиента и `your-domain-name` личным доменом. 
-1. Нажмите кнопку **Continue**(Продолжить).
+1. Нажмите кнопку **Продолжить**.
 1. Скопируйте значения **идентификатора клиента** и **секрета клиента**. Оба этих значения потребуются при добавлении поставщика удостоверений для вашего клиента.
 
 ## <a name="create-a-policy-key"></a>Создание ключа политики

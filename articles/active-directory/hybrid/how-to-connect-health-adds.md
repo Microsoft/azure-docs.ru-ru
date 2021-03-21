@@ -17,10 +17,10 @@ ms.date: 07/18/2017
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0686a4dafae17bafc65a03c985a65aecba70e60c
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98017023"
 ---
 # <a name="using-azure-ad-connect-health-with-ad-ds"></a>Использование Azure AD Connect Health с AD DS
@@ -40,7 +40,7 @@ ms.locfileid: "98017023"
 ## <a name="domain-controllers-dashboard"></a>Панель мониторинга контроллеров домена
 На этой панели мониторинга отображается топология среды, ключевые рабочие метрики и состояние работоспособности всех отслеживаемых контроллеров домена. Представленные метрики помогают быстро определить, какой контроллер домена следует проанализировать подробнее. По умолчанию отображается только подмножество столбцов. Чтобы просмотреть полный список доступных столбцов, дважды щелкните команду "Столбцы". Выберите интересующие вас столбцы, и панель мониторинга станет единым удобным представлением для просмотра работоспособности среды AD DS.
 
-![Контроллеры домена](./media/how-to-connect-health-adds/aadconnect-health-adds-domainsandsites-dashboard.png)
+![.](./media/how-to-connect-health-adds/aadconnect-health-adds-domainsandsites-dashboard.png)
 
 Контроллеры домена можно сгруппировать по домену или сайту. Это может понадобиться для понимания топологии среды. Если дважды щелкнуть заголовок колонки, панель мониторинга развернется, заняв всю доступную площадь экрана. Это удобно при отображении большого числа столбцов.
 
@@ -63,4 +63,4 @@ ms.locfileid: "98017023"
 * [Использование Azure AD Connect Health с AD FS](how-to-connect-health-adfs.md)
 * [Использование Azure AD Connect Health для синхронизации](how-to-connect-health-sync.md)
 * [Часто задаваемые вопросы об Azure AD Connect Health](reference-connect-health-faq.md)
-* [Журнал версий Azure AD Connect Health](reference-connect-health-version-history.md)
+* [Azure AD Connect Health: история версий](reference-connect-health-version-history.md)

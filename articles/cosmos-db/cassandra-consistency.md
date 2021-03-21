@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 10/12/2020
 ms.reviewer: sngun
 ms.openlocfilehash: 3107610215d5b37c43124ce4129b2eb5437e3b62
-ms.sourcegitcommit: 66479d7e55449b78ee587df14babb6321f7d1757
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97516838"
 ---
 # <a name="apache-cassandra-and-azure-cosmos-db-cassandra-api-consistency-levels"></a>Уровни согласованности API Cassandra Apache Cassandra и Azure Cosmos DB
@@ -47,7 +47,7 @@ ms.locfileid: "97516838"
 
 Вероятностное ограниченное устаревание показывает степень итоговой согласованности. Эта метрика позволяет понять, насколько часто можно добиться более высокой согласованности, чем уровень согласованности, настроенный в вашей учетной записи Azure Cosmos. Другими словами, вы можете увидеть вероятность (в миллисекундах) выполнения строго согласованных операций чтения для комбинации регионов записи и чтения.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о глобальных уровнях распределения и согласованности для Azure Cosmos DB:
 

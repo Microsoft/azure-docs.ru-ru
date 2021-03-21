@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: kgremban
 ms.openlocfilehash: 0388520903e208b3225375d5cee81e8321740a1b
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103487740"
 ---
 # <a name="connect-modbus-tcp-devices-through-an-iot-edge-device-gateway"></a>Подключение устройств Modbus TCP через шлюз устройств IoT Edge
@@ -76,7 +76,7 @@ iotedge logs modbus
 
 Вы также можете просмотреть данные телеметрии, которые устройство отправляет, используя [расширение центра Интернета вещей Azure для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit) (ранее — расширение Azure IOT Toolkit).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Дополнительные сведения о том, как IoT Edge устройства могут выступать в качестве шлюзов, см. в разделе [Создание устройства IOT EDGE, работающего в качестве прозрачного шлюза](./how-to-create-transparent-gateway.md).
 * Дополнительные сведения о работе модулей IoT Edge см. в разделе [Знакомство с Azure IOT Edgeными модулями](iot-edge-modules.md).

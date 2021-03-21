@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 10/15/2019
 ms.custom: references_regions
 ms.openlocfilehash: c6eaac209234f7352395502c6761312cf258108f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101713921"
 ---
 # <a name="how-to-view-deployments-preview-in-real-time"></a>Просмотр развертываний (Предварительная версия) в режиме реального времени
@@ -20,7 +20,7 @@ ms.locfileid: "101713921"
 
 Дополнительные сведения см. в документации по Kubernetes о [развертываниях](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/).
 
-## <a name="how-it-works"></a>Принципы работы
+## <a name="how-it-works"></a>Принцип работы
 
 Функция интерактивных данных (Предварительная версия) напрямую обращается к API Kubernetes, а дополнительные сведения о модели проверки подлинности можно найти [здесь](https://kubernetes.io/docs/concepts/overview/kubernetes-api/).
 

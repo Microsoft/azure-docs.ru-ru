@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 05/19/2020
 ms.custom: devx-track-csharp, devx-track-azurecli
 ms.openlocfilehash: 898f568d285c3b4b4360ea4dda8c63a1e0f13a42
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101091800"
 ---
 # <a name="connect-with-managed-identity-to-azure-database-for-mysql"></a>Подключение к базе данных Azure для MySQL с помощью управляемого удостоверения

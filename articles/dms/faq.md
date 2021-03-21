@@ -12,10 +12,10 @@ ms.custom: mvc
 ms.topic: troubleshooting
 ms.date: 02/20/2020
 ms.openlocfilehash: f4d65c97bfccd223453583b25ee0586c5bc0b1ec
-ms.sourcegitcommit: 97c48e630ec22edc12a0f8e4e592d1676323d7b0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101091456"
 ---
 # <a name="faq-about-using-azure-database-migration-service"></a>Часто задаваемые вопросы об использовании Azure Database Migration Service
@@ -61,7 +61,7 @@ Azure Database Migration Service является предпочтительны
 
 Ниже приведены предварительные требования для использования службы Azure Database Migration Service, которые применяются во всех поддерживаемых сценариях миграции.
 
-* Создайте виртуальную сеть Microsoft Azure для Azure Database Migration Service с помощью модели развертывания Azure Resource Manager. Она обеспечивает подключение "сеть — сеть" к локальным исходным серверам через [ExpressRoute](../expressroute/expressroute-introduction.md) или [VPN](../vpn-gateway/vpn-gateway-about-vpngateways.md).
+* Создайте виртуальную сеть Microsoft Azure для Azure Database Migration Service с помощью модели развертывания Azure Resource Manager, которая обеспечивает подключение "сеть — сеть" к локальным исходным серверам с помощью [ExpressRoute](../expressroute/expressroute-introduction.md) или [VPN](../vpn-gateway/vpn-gateway-about-vpngateways.md).
 * Убедитесь, что правила группы безопасности сети виртуальной сети не блокируют порт 443 для Сервицетагс ServiceBus, хранилища и Азуремонитор. См. дополнительные сведения о [фильтрации трафика, предназначенного для виртуальной сети, с помощью групп безопасности сети](../virtual-network/virtual-network-vnet-plan-design-arm.md).
 * Если перед исходными базами данных развернуто устройство брандмауэра, вам может понадобиться добавить правила брандмауэра, чтобы позволить службе Azure Database Migration Service обращаться к исходным базам данных для выполнения миграции.
 
@@ -120,6 +120,6 @@ Azure Database Migration Service является предпочтительны
 * используйте ценовую категорию общего назначения с несколькими ЦП при создании экземпляра службы, чтобы обеспечить параллелизацию и ускоренную передачу данных благодаря использованию нескольких ЦП;
 * временно увеличьте масштаб целевого экземпляра Базы данных SQL Azure до SKU уровня "Премиум" во время операции переноса данных, чтобы уменьшить регулирование количества запросов базы данных SQL Azure, которое может повлиять на действия передачи данных при использовании номеров SKU низкого уровня.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Общие сведения о службе Azure Database Migration Service и доступности по регионам см. в статье [Что такое Azure Database Migration Service](dms-overview.md).

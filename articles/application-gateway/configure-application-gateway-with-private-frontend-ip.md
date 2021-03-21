@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 02/23/2021
 ms.author: victorh
 ms.openlocfilehash: 224cbe1e34e5915a7fa5fc1cf415c35f86c3abe4
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101711660"
 ---
 # <a name="configure-an-application-gateway-with-an-internal-load-balancer-ilb-endpoint"></a>Настройка шлюза приложений с конечной точкой внутренней подсистемы балансировки нагрузки (ILB)
@@ -65,7 +65,7 @@ ms.locfileid: "101711660"
 10. Выберите **добавить серверный пул**.
 11. В качестве **имени** введите *appGatewayBackendPool*.
 12. Для **добавления внутреннего пула без целевых объектов** выберите **Да**. Вы добавите целевые объекты позже.
-13. Нажмите **Добавить**.
+13. Выберите **Добавить**.
 14. Выберите **Далее: Конфигурация**.
 15. В разделе **правила маршрутизации** выберите **Добавить правило маршрутизации**.
 16. В качестве **имени правила** введите *рруле-01*.

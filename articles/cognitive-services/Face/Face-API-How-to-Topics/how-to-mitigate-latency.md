@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 1/5/2021
 ms.author: v-jawe
 ms.openlocfilehash: 2c771509de5ac246bac0d8e006a5d0b884a410b0
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101706815"
 ---
 # <a name="how-to-mitigate-latency-when-using-the-face-service"></a>Как уменьшить задержку при использовании службы распознавания лиц
@@ -42,7 +42,7 @@ var faces = await client.Face.DetectWithUrlAsync("https://www.biography.com/.ima
 
 Затем служба распознавания лиц должна загрузить образ с удаленного сервера. Если подключение из службы "лица" к удаленному серверу работает слишком долго, то оно повлияет на время отклика метода обнаружения.
 
-Чтобы устранить эту проблемы, рекомендуется [сохранить образ в хранилище BLOB-объектов Azure Premium](../../../storage/blobs/storage-upload-process-images.md?tabs=dotnet). Пример.
+Чтобы устранить эту проблемы, рекомендуется [сохранить образ в хранилище BLOB-объектов Azure Premium](../../../storage/blobs/storage-upload-process-images.md?tabs=dotnet). Пример:
 
 ``` csharp
 var faces = await client.Face.DetectWithUrlAsync("https://csdx.blob.core.windows.net/resources/Face/Images/Family1-Daughter1.jpg");
@@ -62,7 +62,7 @@ System.Collections.Generic.IList<DetectedFace> faces = await client.Face.DetectW
 - Она занимает больше времени для обработки файла, пропорционально размеру файла.
 
 Устранение рисков:
-- Рекомендуется [сохранить образ в хранилище BLOB-объектов Azure Premium](../../../storage/blobs/storage-upload-process-images.md?tabs=dotnet). Пример.
+- Рекомендуется [сохранить образ в хранилище BLOB-объектов Azure Premium](../../../storage/blobs/storage-upload-process-images.md?tabs=dotnet). Пример:
 ``` csharp
 var faces = await client.Face.DetectWithUrlAsync("https://csdx.blob.core.windows.net/resources/Face/Images/Family1-Daughter1.jpg");
 ```
@@ -94,7 +94,7 @@ IEnumerable<DetectedFace> results = faces_1.Result.Concat (faces_2.Result);
 > [!div class="nextstepaction"]
 > [Пример Использование функции для увеличения масштаба](how-to-use-large-scale.md)
 
-## <a name="related-topics"></a>Связанные разделы
+## <a name="related-topics"></a>Связанные темы
 
 - [Справочная документация (ОСТАВШАЯся)](https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)
 - [Справочная документация (пакет SDK для .NET)](/dotnet/api/overview/azure/cognitiveservices/client/faceapi)

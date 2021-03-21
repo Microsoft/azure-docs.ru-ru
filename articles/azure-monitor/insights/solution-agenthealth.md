@@ -6,16 +6,16 @@ author: bwren
 ms.author: bwren
 ms.date: 02/06/2020
 ms.openlocfilehash: 171230dc2ce6189e36c601c6c7d3b3612fce160c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101711065"
 ---
 #  <a name="agent-health-solution-in-azure-monitor"></a>Работоспособность агентов решение в Azure Monitor
 Решение Работоспособность агентов в Azure помогает понять, что для всех агентов, отправляющих отчеты непосредственно в рабочую область Log Analytics в Azure Monitor или группу управления System Center Operations Manager, подключенную к Azure Monitor, которая не отвечает и не отправляет операционные данные.  Вы также можете отслеживать число развернутых агентов и их географическое распределение, а также выполнять другие запросы, чтобы знать о распределении агентов, развернутых в Azure, других облачных средах или в локальной среде.    
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Перед развертыванием этого решения убедитесь, что у вас есть поддерживаемые [агенты Windows](../agents/agent-windows.md), которые отправляют отчеты в рабочую область Log Analytics или [группу управления Operations Manager](../agents/om-agents.md), интегрированную с вашей рабочей областью.
 
 ## <a name="solution-components"></a>Компоненты решения
@@ -66,7 +66,7 @@ ms.locfileid: "101711065"
 ### <a name="heartbeat-records"></a>Записи пульсов
 Создается запись с типом **Пульс**.  У этих записей есть свойства, приведенные в таблице ниже.  
 
-| Свойство | Описание |
+| Свойство. | Описание |
 | --- | --- |
 | `Type` | *Периодический сигнал*|
 | `Category` | Значение — *Прямой агент*, *Агент SCOM*, или *Сервер управления SCOM*.|

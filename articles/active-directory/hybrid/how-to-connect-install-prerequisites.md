@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e758933b80efbf36dc263b7bd7d2d3c45a59a9f8
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102426796"
 ---
 # <a name="prerequisites-for-azure-ad-connect"></a>Необходимые условия для Azure AD Connect
@@ -29,7 +29,7 @@ ms.locfileid: "102426796"
 ## <a name="before-you-install-azure-ad-connect"></a>Перед установкой Azure AD Connect
 Прежде чем установить Azure AD Connect и обновить DirSync, вам потребуется ряд элементов.
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Azure AD
 * Необходим клиент Azure AD. Вы получите его с [бесплатной пробной версией Azure](https://azure.microsoft.com/pricing/free-trial/). Вы можете использовать один из следующих порталов для управления Azure AD Connect:
   * [Портал Azure](https://portal.azure.com).
   * [Портал Office](https://portal.office.com).
@@ -100,7 +100,7 @@ Azure AD Connect сервер должен рассматриваться как
 * Если вы используете [быстрые параметры](reference-connect-accounts-permissions.md#express-settings-installation) или обновляете DirSync, у вас должна быть учетная запись администратора предприятия для локального Active Directory.
 * Если вы используете путь установки настраиваемых параметров, у вас есть дополнительные параметры. Дополнительные сведения см. в разделе [Параметры выборочной установки](reference-connect-accounts-permissions.md#custom-installation-settings).
 
-### <a name="connectivity"></a>Соединение
+### <a name="connectivity"></a>Возможность подключения
 * Для серверов Azure AD Connect требуется разрешение DNS как для интрасети, так и для Интернета. DNS-сервер должен иметь возможность разрешения имен как для локальной службы Active Directory, так и для конечных точек Azure AD.
 * Azure AD Connect требуется сетевое подключение ко всем настроенным доменам
 * Если в интрасети есть брандмауэры и необходимо открыть порты между серверами Azure AD Connect и контроллерами домена, см. Дополнительные сведения в разделе [Azure AD Connect Ports](reference-connect-ports.md) .
@@ -142,7 +142,7 @@ Azure AD Connect сервер должен рассматриваться как
 Дополнительные сведения см. в разделе MSDN об [элементе прокси по умолчанию](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 В случае проблем с подключением изучите статью [Устранение неполадок подключения в Azure AD Connect](tshoot-connect-connectivity.md).
 
-### <a name="other"></a>Другие
+### <a name="other"></a>Другое
 Необязательно. Используйте тестовую учетную запись пользователя для проверки синхронизации.
 
 ## <a name="component-prerequisites"></a>Предварительные требования к компонентам

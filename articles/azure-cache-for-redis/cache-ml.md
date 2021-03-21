@@ -7,10 +7,10 @@ ms.service: cache
 ms.topic: conceptual
 ms.date: 09/30/2020
 ms.openlocfilehash: ec8943bc73cac2020350dd4916f040f031cd842b
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102499702"
 ---
 # <a name="deploy-a-machine-learning-model-to-azure-functions-with-azure-cache-for-redis"></a>Развертывание модели машинного обучения в службе "функции Azure" с помощью кэша Azure для Redis 
@@ -23,7 +23,7 @@ ms.locfileid: "102499702"
 > Хотя функции Машинное обучение Azure и Azure общедоступны, возможность упаковать модель из службы Машинное обучение для функций доступна в предварительной версии.  
 >
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 * Подписка Azure — [создайте бесплатную учетную запись](https://azure.microsoft.com/free/).
 * Рабочая область машинного обучения Azure. Дополнительные сведения см. в статье [Создание рабочей области](../machine-learning/how-to-manage-workspace.md) .
 * [Azure CLI](/cli/azure/install-azure-cli).

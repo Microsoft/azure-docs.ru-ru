@@ -9,15 +9,15 @@ ms.date: 03/03/2021
 ms.author: cherylmc
 ms.custom: include file
 ms.openlocfilehash: 7374c2727048e323ce0483dd42c574134e7315bd
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102040552"
 ---
 В этом разделе вы можете перейти по ссылкам для получения дополнительных сведений об услугах, предлагаемых партнерами. Если ваш партнер устройства филиала отсутствует в указанном ниже разделе, попросите вашего поставщика ресурсов связаться с нами. Он может обратиться к нам, отправив сообщение по адресу azurevirtualwan@microsoft.com.
 
-|Участники|Руководство по настройке и развертыванию|
+|Партнеры|Руководство по настройке и развертыванию|
 |---|---|
 |[Barracuda Networks](https://www.barracuda.com/AzurevWAN)| [Barracuda Клауджен Firewall: Виртуальная глобальная сеть Azure](https://campus.barracuda.com/doc/79463435/)|
 | [Check Point](https://www.checkpoint.com/solutions/microsoft-azure-virtual-wan/) |[Контрольная точка для Microsoft Azure виртуальной глобальной сети краткое руководство по началу работы](https://sc1.checkpoint.com/documents/IaaS/WebAdminGuides/EN/CP_for_Microsoft_Azure_vWAN/Content/Topics/Introduction.htm?tocpath=Introduction%7C_____0)|

@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 10/13/2019
 ms.author: yelevin
 ms.openlocfilehash: 6500805a4dc7e26f5e1bc601df9ea78279ae17e9
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101709348"
 ---
 # <a name="connect-data-from-microsoft-365-defender-to-azure-sentinel"></a>Подключение данных из защитника Microsoft 365 к Azure Sentinel
@@ -43,7 +43,7 @@ ms.locfileid: "101709348"
 >
 > Соединитель защитника Microsoft 365 в настоящее время находится на **этапе предварительной версии**. Ознакомьтесь с дополнительными [условиями использования Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) предварительных версий для дополнительных юридических условий, которые относятся к функциям Azure, которые доступны в бета-версии, предварительном просмотре или еще не выпущены в общедоступную версию.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Для защитника Microsoft 365 необходимо иметь действительную лицензию, как описано в разделе [Предварительные требования для защитника Microsoft 365](/microsoft-365/security/mtp/prerequisites). 
 

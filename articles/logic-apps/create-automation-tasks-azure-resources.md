@@ -7,10 +7,10 @@ ms.reviewer: logicappspm
 ms.topic: conceptual
 ms.date: 02/19/2021
 ms.openlocfilehash: 8180fe8554e5fff83e4caef8c245839518649ca1
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101719055"
 ---
 # <a name="manage-azure-resources-and-monitor-costs-by-creating-automation-tasks-preview"></a>Управление ресурсами Azure и мониторинг затрат путем создания задач автоматизации (Предварительная версия)

@@ -6,10 +6,10 @@ ms.subservice: qna-maker
 ms.topic: reference
 ms.date: 01/12/2021
 ms.openlocfilehash: 7907c81e45680de49f6653891fb4204a59db1002
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101710555"
 ---
 # <a name="private-endpoints"></a>Частные конечные точки

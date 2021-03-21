@@ -8,10 +8,10 @@ ms.service: stream-analytics
 ms.topic: how-to
 ms.date: 9/22/2020
 ms.openlocfilehash: 940813f12d542715db47781731144a75e854a98e
-ms.sourcegitcommit: 42a4d0e8fa84609bec0f6c241abe1c20036b9575
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98019573"
 ---
 # <a name="continuous-integration-and-deployment-cicd-for-azure-stream-analytics"></a>Непрерывная интеграция и развертывание (CI/CD) для Azure Stream Analytics

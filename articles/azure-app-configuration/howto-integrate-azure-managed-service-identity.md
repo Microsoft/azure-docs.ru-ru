@@ -9,10 +9,10 @@ ms.custom: devx-track-csharp, fasttrack-edit
 ms.topic: conceptual
 ms.date: 2/25/2020
 ms.openlocfilehash: 2f446df95c795eaac378340ed0d5de7b31dfcfee
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102219049"
 ---
 # <a name="use-managed-identities-to-access-app-configuration"></a>Использование управляемых удостоверений для получения доступа к службе "Конфигурация приложений"
@@ -72,7 +72,7 @@ Azure Active Directory [управляемые удостоверения](../ac
 
 1. В поле **Подписка** выберите подписку Azure. Выберите ресурс Службы приложений для своего приложения.
 
-1. Нажмите кнопку **Сохранить**.
+1. Щелкните **Сохранить**.
 
     ![Добавление управляемого удостоверения](./media/add-managed-identity.png)
 
@@ -96,7 +96,7 @@ Azure Active Directory [управляемые удостоверения](../ac
     }
     ```
 
-1. Откройте *Program.CS* и добавьте ссылку на `Azure.Identity` `Microsoft.Azure.Services.AppAuthentication` пространства имен и:
+1. Откройте *Program. CS* и добавьте ссылку на `Azure.Identity` `Microsoft.Azure.Services.AppAuthentication` пространства имен и.
 
     ```csharp-interactive
     using Azure.Identity;
@@ -148,7 +148,7 @@ Azure Active Directory [управляемые удостоверения](../ac
     >Как описано в разделах [управляемые удостоверения для ресурсов Azure: вопросы и ответы](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/known-issues#what-identity-will-imds-default-to-if-dont-specify-the-identity-in-the-request), можно определить, какое управляемое удостоверение используется по умолчанию. В этом случае библиотека удостоверений Azure позволяет указать необходимое удостоверение, чтобы избежать проблем среды выполнения превысил допустимое в будущем (например, если Добавлено новое управляемое удостоверение, назначенное пользователем, или если включено управляемое системой удостоверение). Поэтому необходимо указать clientId, даже если определено только одно назначенное пользователем управляемое удостоверение, а управляемое удостоверение не назначено системой.
 
 
-1. Чтобы использовать значения конфигурации приложения и ссылки Key Vault, обновите *Program.CS* , как показано ниже. Этот код вызывает `SetCredential` как часть `ConfigureKeyVault` , чтобы сообщить поставщику конфигурации, какие учетные данные следует использовать при проверке подлинности в Key Vault.
+1. Чтобы использовать значения конфигурации приложения и ссылки Key Vault, обновите *программу. CS* , как показано ниже. Этот код вызывает `SetCredential` как часть `ConfigureKeyVault` , чтобы сообщить поставщику конфигурации, какие учетные данные следует использовать при проверке подлинности в Key Vault.
 
     ### <a name="net-core-2x"></a>[.NET Core 2.x](#tab/core2x)
 
