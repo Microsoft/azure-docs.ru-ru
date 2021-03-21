@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 01/12/2021
 ms.author: yelevin
 ms.openlocfilehash: 9029b945eabd05b34306393b513e26ee9c1563f2
-ms.sourcegitcommit: 949c0a2b832d55491e03531f4ced15405a7e92e3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98541596"
 ---
 # <a name="connect-your-wirex-network-forensics-platform-nfp-appliance-to-azure-sentinel"></a>Подключение устройства Вирекс Network судебной платформы (NFP) к Azure Sentinel
@@ -32,7 +32,7 @@ ms.locfileid: "98541596"
 > [!NOTE] 
 > Данные будут храниться в географическом расположении рабочей области, на которой вы используете метку Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - У вас должны быть разрешения на чтение и запись в рабочей области Sentinel Azure.
 

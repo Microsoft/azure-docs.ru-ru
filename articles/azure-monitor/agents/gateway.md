@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 12/24/2019
 ms.openlocfilehash: bae48dc78eb6973e5bce4d535091bc330c4c897f
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102509036"
 ---
 # <a name="connect-computers-without-internet-access-by-using-the-log-analytics-gateway-in-azure-monitor"></a>Подключение компьютеров без доступа к Интернету с помощью шлюза Log Analytics в Azure Monitor
@@ -113,7 +113,7 @@ ms.locfileid: "102509036"
  
    ![Снимок экрана с инструкциями по скачиванию шлюза Log Analytics](./media/gateway/download-gateway.png)
 
-или 
+или диспетчер конфигурации служб 
 
 1. В колонке рабочей области в разделе **Параметры** щелкните **Дополнительные параметры**.
 1. Перейдите в раздел **подключенные источники**  >  **серверы Windows** и выберите **Скачать log Analytics шлюз**.
@@ -304,13 +304,13 @@ Msiexec.exe /I "oms gateway.msi" /qn PORTNUMBER=8080 PROXY="10.80.2.200" HASPROX
 
 Если компьютер зарегистрирован в качестве гибридной рабочей роли Runbook автоматически, например, если Управление обновлениями решение включено для одной или нескольких виртуальных машин, выполните следующие действия.
 
-1. Добавьте URL-адреса службы Job Runtime Data в список разрешенных узлов в шлюзе Log Analytics. Например: `Add-OMSGatewayAllowedHost we-jobruntimedata-prod-su1.azure-automation.net`
+1. Добавьте URL-адреса службы Job Runtime Data в список разрешенных узлов в шлюзе Log Analytics. Пример: `Add-OMSGatewayAllowedHost we-jobruntimedata-prod-su1.azure-automation.net`
 1. Перезапустите службу шлюза Log Analytics, используя командлет PowerShell `Restart-Service OMSGatewayService`.
 
 Если компьютер присоединен к службе автоматизации Azure с помощью командлета регистрации гибридной рабочей роли Runbook, выполните следующие действия.
 
-1. Добавьте URL-адрес для внесения службы агента в список разрешенных узлов в шлюзе Log Analytics. Например: `Add-OMSGatewayAllowedHost ncus-agentservice-prod-1.azure-automation.net`
-1. Добавьте URL-адреса службы Job Runtime Data в список разрешенных узлов в шлюзе Log Analytics. Например: `Add-OMSGatewayAllowedHost we-jobruntimedata-prod-su1.azure-automation.net`
+1. Добавьте URL-адрес для внесения службы агента в список разрешенных узлов в шлюзе Log Analytics. Пример: `Add-OMSGatewayAllowedHost ncus-agentservice-prod-1.azure-automation.net`
+1. Добавьте URL-адреса службы Job Runtime Data в список разрешенных узлов в шлюзе Log Analytics. Пример: `Add-OMSGatewayAllowedHost we-jobruntimedata-prod-su1.azure-automation.net`
 1. Перезапустите службу шлюза Log Analytics.
     `Restart-Service OMSGatewayService`
 

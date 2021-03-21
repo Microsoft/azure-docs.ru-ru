@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: 2453fa2d9b4e78b60d4922e09347799266a84cff
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98743225"
 ---
 # <a name="troubleshoot-azure-cloud-service-classic-roles-that-fail-to-start"></a>Устранение неполадок с ролями облачной службы Azure (классической), которые не удается запустить
@@ -75,7 +75,7 @@ ms.locfileid: "98743225"
 * Описание: произошло необработанное исключение во время выполнения текущего веб-запроса. Чтобы получить дополнительную информацию об ошибке и ее источнике в коде, изучите трассировку стека.
 * Сведения об исключении: System.IO.FIleNotFoundException: не удалось загрузить файл, сборку Microsoft.WindowsAzure.StorageClient, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf856ad364e35 или какую-то их зависимость. Системе не удается найти указанный файл.
 
-Например:
+Пример:
 
 ![Явная ошибка сервера в приложении «/».](./media/cloud-services-troubleshoot-roles-that-fail-start/ic503389.png)
 
@@ -119,7 +119,7 @@ ms.locfileid: "98743225"
 
 Убедившись, что все ошибки исправлены, вы можете развернуть службу, не устанавливая флажок **Включить IntelliTrace для ролей .NET 4** .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Просмотрите дополнительные [статьи об устранении неполадок](../index.yml?product=cloud-services&tag=top-support-issue) в облачных службах.
 
 Чтобы узнать, как устранять неполадки ролей облачной службы с помощью диагностических данных компьютеров Azure PaaS, см. [серию статей в блоге Кевина Уильямсона](/archive/blogs/kwill/windows-azure-paas-compute-diagnostics-data).

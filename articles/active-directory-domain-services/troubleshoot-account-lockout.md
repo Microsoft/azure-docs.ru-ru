@@ -11,10 +11,10 @@ ms.topic: troubleshooting
 ms.date: 07/06/2020
 ms.author: justinha
 ms.openlocfilehash: 3341f290a5a5bb169b6e70ea22459a2afafedbbc
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103198957"
 ---
 # <a name="troubleshoot-account-lockout-problems-with-an-azure-active-directory-domain-services-managed-domain"></a>Устранение неполадок с блокировкой учетных записей с помощью управляемого домена доменных служб Azure Active Directory
@@ -101,7 +101,7 @@ AADDomainServicesAccountManagement
 
 Включение журнала Netlogon на любом сервере https://docs.microsoft.com/troubleshoot/windows-client/windows-security/enable-debug-logging-netlogon-service
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о детализированных политиках паролей для настройки порогов блокировки учетной записи см. в разделе [Настройка политик блокировки паролей и учетных записей][configure-fgpp].
 

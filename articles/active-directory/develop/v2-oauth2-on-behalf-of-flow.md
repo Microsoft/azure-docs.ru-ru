@@ -14,10 +14,10 @@ ms.author: hirsin
 ms.reviewer: hirsin
 ms.custom: aaddev
 ms.openlocfilehash: ff8e03b813e2cb890192667e3466d920eaabc72c
-ms.sourcegitcommit: 5cdd0b378d6377b98af71ec8e886098a504f7c33
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98756087"
 ---
 # <a name="microsoft-identity-platform-and-oauth-20-on-behalf-of-flow"></a>Поток On-Behalf-Of в OAuth 2.0 и платформа удостоверений Майкрософт
@@ -60,7 +60,7 @@ https://login.microsoftonline.com/<tenant>/oauth2/v2.0/token
 
 При использовании общего секрета запрос маркера взаимного доступа между службами содержит следующие параметры:
 
-| Параметр | Тип | Описание |
+| Параметр | Type | Описание |
 | --- | --- | --- |
 | `grant_type` | Обязательно | Тип запроса маркера. Для запроса с использованием JWT нужно указать значение `urn:ietf:params:oauth:grant-type:jwt-bearer`. |
 | `client_id` | Обязательно | Идентификатор приложения (клиента), назначенный вашему приложению на странице [регистрации приложений на портале Azure](https://go.microsoft.com/fwlink/?linkid=2083908). |
@@ -92,7 +92,7 @@ grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer
 
 Запрос маркера взаимного доступа между службами с помощью сертификата содержит следующие параметры:
 
-| Параметр | Тип | Описание |
+| Параметр | Type | Описание |
 | --- | --- | --- |
 | `grant_type` | Обязательно | Тип запроса токена. Для запроса с использованием JWT нужно указать значение `urn:ietf:params:oauth:grant-type:jwt-bearer`. |
 | `client_id` | Обязательно |  Идентификатор приложения (клиента), назначенный вашему приложению на странице [регистрации приложений на портале Azure](https://go.microsoft.com/fwlink/?linkid=2083908). |

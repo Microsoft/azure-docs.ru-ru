@@ -9,10 +9,10 @@ author: tanmaygore
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: 879b86714adf50b5a4da4398389405063ac046dc
-ms.sourcegitcommit: 6272bc01d8bdb833d43c56375bab1841a9c380a5
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98743412"
 ---
 # <a name="how-to-create-and-deploy-an-azure-cloud-service-classic"></a>Создание и развертывание облачной службы Azure (классическая модель)
@@ -52,7 +52,7 @@ ms.locfileid: "98743412"
 
 Чтобы создать облачную службу с развертыванием веб-ролей или рабочих ролей, необходимо [создать соответствующий пакет службы](cloud-services-model-and-package.md#servicepackagecspkg).
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 * Если пакет SDK для Azure не установлен, щелкните **Install Azure SDK** (Установить пакет Azure SDK). Откроется [страница загрузок Azure](https://azure.microsoft.com/downloads/), откуда можно скачать пакет SDK для языка, выбранного для разработки кода приложения. (Также это можно сделать позднее.)
 * Для экземпляров роли с сертификатами создайте сертификаты. В облачных службах используется PFX-файл с закрытым ключом. Сертификаты можно отправить в Azure при создании или развертывании облачной службы.
 
@@ -91,7 +91,7 @@ ms.locfileid: "98743412"
 
 [TFSTutorialForCloudService]: ./cloud-services-choose-me.md
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Общая настройка облачной службы](cloud-services-how-to-configure-portal.md).
 * Настройте [имя пользовательского домена](cloud-services-custom-domain-name-portal.md).
 * [Управляйте облачной службой](cloud-services-how-to-manage-portal.md).

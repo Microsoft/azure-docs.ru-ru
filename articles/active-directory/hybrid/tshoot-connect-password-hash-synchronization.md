@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8c6ec162ceb51c3bf19be42219b054d8371ff221
-ms.sourcegitcommit: 08458f722d77b273fbb6b24a0a7476a5ac8b22e0
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98247358"
 ---
 # <a name="troubleshoot-password-hash-synchronization-with-azure-ad-connect-sync"></a>Устранение неполадок синхронизации хэшированных паролей в службе синхронизации Azure AD Connect
@@ -227,7 +227,7 @@ ms.locfileid: "98247358"
 
 2. Запустите `Set-ExecutionPolicy RemoteSigned` или `Set-ExecutionPolicy Unrestricted`.
 
-3. Запустите `Import-Module ADSyncDiagnostics`.
+3. Выполните `Import-Module ADSyncDiagnostics`.
 
 4. Выполните следующий командлет:
 
@@ -312,15 +312,15 @@ ms.locfileid: "98247358"
 
 2. Если с паролем в Active Directory все в порядке, отследите пользователя в модуле синхронизации. Отследив пользователя от локального Active Directory до Azure AD, вы сможете убедиться в отсутствии ошибок в объекте.
 
-    a. Запустите [Synchronization Service Manager](how-to-connect-sync-service-manager-ui.md).
+    а. Запустите [Synchronization Service Manager](how-to-connect-sync-service-manager-ui.md).
 
     b. Щелкните **Соединители**.
 
-    В. Выберите **соединитель Active Directory**, к которому относится пользователь.
+    c. Выберите **соединитель Active Directory**, к которому относится пользователь.
 
-    Г. Выберите **Search Connector Space**(Поиск пространства соединителя).
+    d. Выберите **Search Connector Space**(Поиск пространства соединителя).
 
-    Д. В поле **Scope** (Область) выберите **DN or Anchor** (Различающееся имя или привязка), а затем введите полное различающееся имя пользователя, для которого требуется устранить неполадки.
+    д) В поле **Scope** (Область) выберите **DN or Anchor** (Различающееся имя или привязка), а затем введите полное различающееся имя пользователя, для которого требуется устранить неполадки.
 
     ![Поиск пользователя в пространстве соединителя с различающимся именем](./media/tshoot-connect-password-hash-synchronization/searchcs.png)  
 
@@ -354,9 +354,9 @@ ms.locfileid: "98247358"
 
 В столбце "Состояние" могут содержаться перечисленные ниже значения.
 
-| Status | Описание |
+| Состояние | Описание |
 | --- | --- |
-| Успех |Пароль успешно синхронизирован |
+| Успешно |Пароль успешно синхронизирован |
 | FilteredByTarget |Для пароля установлено значение **Пользователь должен изменить пароль при следующем входе**. Пароль не синхронизирован. |
 | NoTargetConnection |Объект отсутствует в метавселенной или в пространстве соединителя Azure AD. |
 | SourceConnectorNotPresent |Объект не найден в локальном пространстве соединителя Active Directory. |

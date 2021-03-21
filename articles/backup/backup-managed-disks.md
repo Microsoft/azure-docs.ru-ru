@@ -4,10 +4,10 @@ description: Узнайте, как выполнять резервное коп
 ms.topic: conceptual
 ms.date: 01/07/2021
 ms.openlocfilehash: ca86550c4dec4b51c60d9ecdef124e38783a3764
-ms.sourcegitcommit: 78ecfbc831405e8d0f932c9aafcdf59589f81978
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98738158"
 ---
 # <a name="back-up-azure-managed-disks-in-preview"></a>Резервное копирование управляемых дисков Azure (предварительная версия)
@@ -217,6 +217,6 @@ ms.locfileid: "98738158"
 
    ![Выберите задание, чтобы просмотреть подробные сведения](./media/backup-managed-disks/select-job.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Восстановление управляемых дисков Azure](restore-managed-disks.md)

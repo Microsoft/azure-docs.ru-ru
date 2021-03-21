@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: JenCook
 ms.openlocfilehash: 8621dc8cfc10ab44ecb358a40fdae1a1b2081734
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102566589"
 ---
 # <a name="solutions-on-azure-virtual-machines"></a>Решения для виртуальных машин Azure
@@ -130,7 +130,7 @@ Azure Resource Manager — это служба развертывания и у
       }
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия 
+## <a name="next-steps"></a>Следующие шаги 
 
 Из этой статьи вы узнали, какие условия и конфигурации потребуются для создания виртуальной машины для конфиденциальных вычислений. Теперь вы можете перейти в Microsoft Azure Marketplace и развернуть виртуальную машину серии DCsv2.
 

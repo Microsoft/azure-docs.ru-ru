@@ -14,10 +14,10 @@ ms.author: ryanwi
 ms.custom: aaddev, identityplatformtop40
 ms.reviewer: sureshja
 ms.openlocfilehash: 358e066631304e727d18d092bd4b9a5b2a0bb89a
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103199611"
 ---
 # <a name="application-and-service-principal-objects-in-azure-active-directory"></a>Объекты приложения и субъекта-службы в Azure Active Directory
@@ -86,7 +86,7 @@ ms.locfileid: "103199611"
 | 2    | При согласии администраторов компании Contoso и Fabrikam в клиенте Azure AD компании создается объект субъекта-службы, и ему назначаются разрешения, предоставленные администратором. Обратите внимание, что приложение по управлению персоналом можно создать или настроить для отдельных пользователей. |
 | 3    | Каждый из клиентов-потребителей приложения по управлению персоналом (Contoso и Fabrikam) имеет собственный объект субъекта-службы. И каждый из них представляет использование экземпляра приложения во время выполнения. Это использование зависит от разрешений, предоставленных соответствующим администратором. |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Можно использовать [проводник Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer) для запроса объектов приложения и субъекта-службы.
 - Доступ к объекту приложения приложения можно получить с помощью Microsoft Graph API, редактора манифеста приложения [портал Azure][AZURE-Portal] или [командлетов Azure AD PowerShell](/powershell/azure/), представленных в [сущности приложения][MS-Graph-App-Entity]OData.

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/19/2020
 ms.author: jlian
 ms.openlocfilehash: fb2cc0b81083936a67bcd465e0408b9f4b53996b
-ms.sourcegitcommit: c4246c2b986c6f53b20b94d4e75ccc49ec768a9a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96603555"
 ---
 # <a name="iot-hub-mqtt-5-support-overview-preview"></a>Обзор поддержки MQTT 5 центра Интернета вещей (Предварительная версия)
@@ -20,7 +20,7 @@ ms.locfileid: "96603555"
 
 Этот документ определяет API плоскости данных центра Интернета вещей по протоколу MQTT версии 5,0. Полные определения в этом API см. в [справочнике по API](iot-hub-mqtt-5-reference.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - [Включите режим предварительного просмотра](iot-hub-preview-mode.md) для нового центра Интернета вещей, чтобы попробовать MQTT 5.
 - Требуются знания о [спецификации MQTT 5](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html) .
@@ -172,7 +172,7 @@ HMAC-SHA256 используется для хэширования строки 
 - `159` (Превышено число подключений), если частота подключения для центра Интернета вещей превышает  
 - `131` (Ошибка, связанная с реализацией) используется для любых пользовательских ошибок, определенных в этом API. `status``reason`Свойства и будут использоваться для передачи дополнительных сведений о причине отключения (Дополнительные сведения см. в [ответе](#response) ).
 
-## <a name="operations"></a>Operations
+## <a name="operations"></a>Операции
 
 Все функции в этом API выражаются как операции. Ниже приведен пример операции Send телеметрии.
 

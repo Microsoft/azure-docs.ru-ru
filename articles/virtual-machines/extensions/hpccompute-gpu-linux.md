@@ -16,10 +16,10 @@ ms.workload: infrastructure-services
 ms.date: 01/21/2021
 ms.author: amverma
 ms.openlocfilehash: fa2b82f3246fd87830010f572ba23aa2df075053
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102566232"
 ---
 # <a name="nvidia-gpu-driver-extension-for-linux"></a>Расширение драйвера GPU NVIDIA для Linux

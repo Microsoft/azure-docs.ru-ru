@@ -12,10 +12,10 @@ ms.date: 4/26/2019
 ms.author: scottwhi
 ms.custom: devx-track-python, devx-track-js, devx-track-csharp
 ms.openlocfilehash: 161266a69308175637f5967b2ded48621d4d9c53
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102424076"
 ---
 # <a name="use-an-insights-token-to-get-insights-for-an-image"></a>Использование токена Insights для получения ценной информации об изображении
@@ -95,7 +95,7 @@ Content-Disposition: form-data; name="knowledgeRequest"
 Чтобы запустить это приложение, сделайте следующее:
 
 1. Создание консольного решения в Visual Studio.
-2. Замените содержимое Program.cs на код, показанный в этом кратком руководстве.
+2. Замените содержимое файла Program. cs кодом, приведенным в этом кратком руководстве.
 3. Замените значение `accessKey` своим ключом подписки.
 4. Замените значение `insightsToken` токеном аналитики из ответа /images/search.
 5. Запустите программу.

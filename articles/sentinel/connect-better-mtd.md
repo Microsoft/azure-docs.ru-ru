@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 01/12/2021
 ms.author: yelevin
 ms.openlocfilehash: 4828e31b9d15f101740c158ee62c90c95673c9a7
-ms.sourcegitcommit: 949c0a2b832d55491e03531f4ced15405a7e92e3
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98541564"
 ---
 # <a name="connect-your-better-mobile-threat-defense-mtd-to-azure-sentinel"></a>Подключение УЛУЧШЕНной защиты от угроз для мобильных устройств (MTD) к Azure Sentinel

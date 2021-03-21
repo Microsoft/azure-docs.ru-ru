@@ -14,10 +14,10 @@ ms.author: marsma
 ms.reviewer: saeeda
 ms.custom: devx-track-csharp, aaddev
 ms.openlocfilehash: 11642480ac817b50d102e396b8ab5e200948a615
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103199567"
 ---
 # <a name="configuration-requirements-and-troubleshooting-tips-for-xamarin-android-with-msalnet"></a>Требования к конфигурации и советы по устранению неполадок для Xamarin Android с MSAL.NET
@@ -254,7 +254,7 @@ var authResult = AcquireTokenInteractive(scopes)
 </Reference>
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения см. в примере [мобильного приложения Xamarin, использующего платформу Microsoft Identity](https://github.com/azure-samples/active-directory-xamarin-native-v2#android-specific-considerations). В следующей таблице перечислены соответствующие сведения в файле сведений.
 

@@ -4,10 +4,10 @@ description: Используйте функцию периодического 
 ms.topic: conceptual
 ms.date: 5/24/2019
 ms.openlocfilehash: d78a627c0c50a3e2ec57138e40cb5bc97486d6f7
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103198707"
 ---
 # <a name="periodic-backup-and-restore-in-a-standalone-service-fabric"></a>Периодическое резервное копирование и восстановление в автономной Service Fabric
@@ -42,7 +42,7 @@ Service Fabric предоставляет набор API для использо
 - Временная остановка резервного копирования.
 - Управление хранением резервных копий (предстоящих).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 * Service Fabric кластер с структурой версии 6,4 или более поздней. См. дополнительные сведения о [скачивании требуемого пакета](service-fabric-cluster-creation-for-windows-server.md).
 * Сертификат X.509 для шифрования секретов, необходимых для подключения к хранилищу резервных копий. Ознакомьтесь со [статьей](service-fabric-windows-cluster-x509-security.md) о том, как получить или создать самозаверяющий сертификат X.509.
 

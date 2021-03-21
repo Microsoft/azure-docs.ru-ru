@@ -13,10 +13,10 @@ ms.topic: conceptual
 ms.date: 03/26/2018
 ms.author: twooley
 ms.openlocfilehash: aa0da5721c577957b101ac8a2d9346c0536f0a88
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102424144"
 ---
 # <a name="access-control-in-azure-data-lake-storage-gen1"></a>Контроль доступа в Azure Data Lake Storage 1-го поколения
@@ -73,8 +73,8 @@ ms.locfileid: "102424144"
 |-----------|---------------------|-----------|------------|-------------|----------------|
 | Чтение      | Data.txt            |   `--X`   |   `--X`    |  `--X`      | `R--`          |
 | Добавление к | Data.txt            |   `--X`   |   `--X`    |  `--X`      | `-W-`          |
-| DELETE    | Data.txt            |   `--X`   |   `--X`    |  `-WX`      | `---`          |
-| Создание    | Data.txt            |   `--X`   |   `--X`    |  `-WX`      | `---`          |
+| Удалить    | Data.txt            |   `--X`   |   `--X`    |  `-WX`      | `---`          |
+| Создать    | Data.txt            |   `--X`   |   `--X`    |  `-WX`      | `---`          |
 | Список      | /                   |   `R-X`   |   `---`    |  `---`      | `---`          |
 | Список      | /Seattle/           |   `--X`   |   `R-X`    |  `---`      | `---`          |
 | Список      | /Seattle/Portland/  |   `--X`   |   `--X`    |  `R-X`      | `---`          |

@@ -7,10 +7,10 @@ ms.service: partner-services
 ms.date: 01/15/2021
 ms.author: tomfitz
 ms.openlocfilehash: b4aa00b7a2cc7ca6bc968be70957c127a8e00738
-ms.sourcegitcommit: 25d1d5eb0329c14367621924e1da19af0a99acf1
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98253610"
 ---
 # <a name="what-is-apache-kafka-for-confluent-cloud"></a>Что такое Apache Kafka для Fluent в облаке?
@@ -23,7 +23,7 @@ Apache Kafka для Fluent облака — это предложение Azure 
 
 Теперь вы подготавливаете облачные ресурсы Fluent через поставщика ресурсов с именем **Microsoft. Fluent**. Вы создаете и управляете ресурсами облака Организации с помощью [портал Azure](https://portal.azure.com/), [Azure CLI](/cli/azure/)или [пакетов SDK Azure](/azure/#languages-and-tools). Неограниченное облако владеет и запускает приложение SaaS (программное обеспечение как услуга), включая среды, кластеры, разделы, ключи API и управляемые соединители.
 
-## <a name="capabilities"></a>Характеристики
+## <a name="capabilities"></a>Возможности
 
 Тесная интеграция между Fluent облаком и Azure обеспечивает следующие возможности:
 

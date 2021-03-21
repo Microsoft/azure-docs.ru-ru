@@ -13,10 +13,10 @@ ms.custom: seodec18
 ms.date: 09/23/2020
 ms.author: spelluru
 ms.openlocfilehash: af2d820fd255d041ade21a00d7d7a9ac6b12fcba
-ms.sourcegitcommit: 4d48a54d0a3f772c01171719a9b80ee9c41c0c5d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98745908"
 ---
 # <a name="eventhubsexception---net"></a>Евенсубсексцептион — .NET
@@ -49,5 +49,5 @@ catch (EventHubsException ex) where
 }
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Существуют и другие исключения, описанные в [статье устаревшей версии](event-hubs-messaging-exceptions.md). Некоторые из них относятся только к устаревшей клиентской библиотеке концентраторов событий .NET.

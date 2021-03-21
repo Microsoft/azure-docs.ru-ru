@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 08/21/2020
 ms.openlocfilehash: dae9ab56ca1349d288aee02f7e2dfa4eccf1508c
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103199158"
 ---
 # <a name="install-log-analytics-agent-on-linux-computers"></a>Установка агента Log Analytics на компьютерах Linux
@@ -189,7 +189,7 @@ docker-cimprov | 1.0.0 | Поставщик Docker для OMI. Устанавл�
     sudo sh ./omsagent-*.universal.x64.sh --upgrade -p https://<proxy address>:<proxy port> -w <workspace id> -s <shared key>
     ```
 
-    Если требуется проверка подлинности, необходимо указать имя пользователя и пароль. Например: 
+    Если требуется проверка подлинности, необходимо указать имя пользователя и пароль. Пример: 
     
     ```
     sudo sh ./omsagent-*.universal.x64.sh --upgrade -p https://<proxy user>:<proxy password>@<proxy address>:<proxy port> -w <workspace id> -s <shared key>

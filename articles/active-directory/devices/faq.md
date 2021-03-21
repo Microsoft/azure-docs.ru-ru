@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: ravenn
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 509d267dcdaef58a9792609a60c8a9401e90e867
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103199715"
 ---
 # <a name="azure-active-directory-device-management-faq"></a>Часто задаваемые вопросы об управлении устройствами в Azure Active Directory
@@ -69,7 +69,7 @@ ms.locfileid: "103199715"
 
 ---
 
-### <a name="q-i-disabled-or-deleted-my-device-in-the-azure-portal-or-by-using-windows-powershell-but-the-local-state-on-the-device-says-its-still-registered-what-should-i-do"></a>Вопрос. я отключил или удалил устройство в портал Azure или с помощью Windows PowerShell. Но в локальном состоянии устройства указано, что оно по-прежнему зарегистрировано. Что следует делать?
+### <a name="q-i-disabled-or-deleted-my-device-in-the-azure-portal-or-by-using-windows-powershell-but-the-local-state-on-the-device-says-its-still-registered-what-should-i-do"></a>Вопрос. я отключил или удалил устройство в портал Azure или с помощью Windows PowerShell. Но в локальном состоянии устройства указано, что оно по-прежнему зарегистрировано.   Что следует делать?
 
 Ответ **.** Эта операция выполняется по проекту. В этом случае устройство не имеет доступа к ресурсам в облаке. Администраторы могут выполнять это действие для устаревших, потерянных или украденных устройств, чтобы предотвратить несанкционированный доступ. Если это действие было выполнено непреднамеренно, необходимо повторно включить или повторно зарегистрировать устройство, как описано ниже.
 

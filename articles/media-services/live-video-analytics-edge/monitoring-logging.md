@@ -4,10 +4,10 @@ description: В этой статье приводятся общие сведе
 ms.topic: reference
 ms.date: 04/27/2020
 ms.openlocfilehash: e81b1e98fb30bb8876c78c8c911585f5448db8f2
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101730252"
 ---
 # <a name="monitoring-and-logging"></a>Мониторинг и ведение журнала
@@ -167,7 +167,7 @@ Fragments(video=143039375031270,format=m3u8-aapl)
 
 Каждое событие, наблюдаемое через центр Интернета вещей, имеет набор общих свойств:
 
-|Свойство   |Тип свойства| Тип данных   |Описание|
+|Свойство.   |Тип свойства| Тип данных   |Описание|
 |---|---|---|---|
 |`message-id`   |система |guid|  Уникальный идентификатор события.|
 |`topic`|   аппликатионпроперти |строка|    Azure Resource Manager путь к учетной записи служб мультимедиа Azure.|
@@ -230,7 +230,7 @@ Fragments(video=143039375031270,format=m3u8-aapl)
 
 Эти метрики будут переданы из службы "интерактивная аналитика видео" в модуле IoT Edge:  
 
-|Имя метрики|Тип|Метка|Описание|
+|Имя метрики|Type|Метка|Описание|
 |-----------|----|-----|-----------|
 |lva_active_graph_instances|Датчик|iothub, edge_device, module_name, graph_topology|Общее число активных графиков на топологию.|
 |lva_received_bytes_total|Счетчик|iothub, edge_device, module_name, graph_topology, graph_instance, graph_node|Общее число байтов, полученных узлом. Поддерживается только для источников RTSP.|
@@ -413,7 +413,7 @@ Fragments(video=143039375031270,format=m3u8-aapl)
 
 Теперь модуль будет записывать журналы отладки в двоичном формате в путь к хранилищу устройства `/var/local/mediaservices/debuglogs/` . Вы можете поделиться этими журналами с помощью службы поддержки Azure.
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 Если у вас есть вопросы, см. [вопросы и ответы по мониторингу и метрикам](faq.md#monitoring-and-metrics).
 

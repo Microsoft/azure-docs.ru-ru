@@ -4,10 +4,10 @@ description: Настройка и просмотр отчетов для Azure 
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.openlocfilehash: e9f3d9dfa33e71d827a338258001f2b52af62b06
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102509375"
 ---
 # <a name="configure-azure-backup-reports"></a>Настройка отчетов службы Azure Backup
@@ -156,7 +156,7 @@ ms.locfileid: "102509375"
 
 ![Соответствие политике экземпляром резервной копии](./media/backup-azure-configure-backup-reports/policy-adherence-by-backup-instance.png)
 
-###### <a name="email-azure-backup-reports"></a>Отчеты Azure Backup электронной почты
+###### <a name="email-azure-backup-reports"></a>Отправка отчетов Azure Backup по электронной почте
 
 С помощью функции **отчета по электронной почте** , доступной в отчетах по резервному копированию, можно создавать автоматизированные задачи для получения периодических отчетов по электронной почте. Эта функция работает путем развертывания приложения логики в среде Azure, которое запрашивает данные из выбранных рабочих областей Log Analytics (LA) на основе предоставленных входных данных.
 
