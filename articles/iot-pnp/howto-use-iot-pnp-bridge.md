@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.service: iot-pnp
 services: iot-pnp
 ms.openlocfilehash: 9bcf256b6144702254bbff4a57e5ff402abaa962
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99834108"
 ---
 # <a name="how-to-connect-an--iot-plug-and-play-bridge-sample-running-on-linux-or-windows-to-iot-hub"></a>Как подключить пример моста IoT самонастраивающийся под управлением Linux или Windows в центр Интернета вещей
@@ -20,7 +20,7 @@ ms.locfileid: "99834108"
 
 :::image type="content" source="media/concepts-iot-pnp-bridge/iot-pnp-bridge-explorer-telemetry.png" alt-text="Снимок экрана, показывающий обозреватель Интернета вещей Azure с таблицей данных телеметрии (влажности, температура) из центра Интернета вещей самонастраивающийся Bridge.":::
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Пример можно запустить в статье в Windows или Linux. Команды оболочки, приведенные в этом пошаговом руководство, соответствуют соглашению Windows для разделителей пути " `\` ". Если вы используете Linux, обязательно замените эти разделители для " `/` ".
 
@@ -44,7 +44,7 @@ az iot hub device-identity show-connection-string --hub-name <YourIoTHubName> --
 
 ## <a name="download-and-run-the-bridge"></a>Скачивание и запуск моста
 
-В этой статье у вас есть два варианта запуска моста. Вы можете выбрать один из следующих вариантов.
+В этой статье у вас есть два варианта запуска моста. Вы можете:
 
 - Скачайте готовый исполняемый файл и запустите его, как описано в этом разделе.
 - Скачайте исходный код, а затем [выполните сборку и запуск моста](#build-and-run-the-bridge) , как описано в следующем разделе.

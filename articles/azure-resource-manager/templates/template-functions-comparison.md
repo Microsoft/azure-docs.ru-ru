@@ -4,10 +4,10 @@ description: Описывает функции, используемые в ша
 ms.topic: conceptual
 ms.date: 11/18/2020
 ms.openlocfilehash: 95655a4c92a1de9bb7a7faebcdaa83fb0fa75696
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99834006"
 ---
 # <a name="comparison-functions-for-arm-templates"></a>Функции сравнения для шаблонов ARM
@@ -117,9 +117,9 @@ output emptyOutput bool =empty(objectToTest.null1 ?? objectToTest.null2)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
-| stringOutput | Строка | значение по умолчанию |
+| stringOutput | Строка | default |
 | intOutput | Int | 1 |
 | objectOutput | Объект | {"first": "default"} |
 | arrayOutput | Array |  [1] |
@@ -269,7 +269,7 @@ output checkObjects bool = firstObject == secondObject
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | checkInts | Bool | True |
 | checkStrings | Bool | True |
@@ -305,7 +305,7 @@ output checkNotEquals bool = ! (1 == 2)
 
 Выходные данные из предыдущего примера:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | checkNotEquals | Bool | True |
 
@@ -385,9 +385,9 @@ output checkStrings bool = firstString > secondString
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
-| checkInts | Bool | False |
+| checkInts | Bool | Неверно |
 | checkStrings | Bool | True |
 
 ## <a name="greaterorequals"></a>greaterOrEquals
@@ -466,9 +466,9 @@ output checkStrings bool = firstString >= secondString
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
-| checkInts | Bool | False |
+| checkInts | Bool | Неверно |
 | checkStrings | Bool | True |
 
 ## <a name="less"></a>less
@@ -547,10 +547,10 @@ output checkStrings bool = firstString < secondString
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | checkInts | Bool | True |
-| checkStrings | Bool | False |
+| checkStrings | Bool | Неверно |
 
 ## <a name="lessorequals"></a>lessOrEquals
 
@@ -628,10 +628,10 @@ output checkStrings bool = firstString <= secondString
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | checkInts | Bool | True |
-| checkStrings | Bool | False |
+| checkStrings | Bool | Неверно |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

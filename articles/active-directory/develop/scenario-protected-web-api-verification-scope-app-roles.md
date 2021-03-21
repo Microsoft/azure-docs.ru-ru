@@ -13,10 +13,10 @@ ms.date: 07/15/2020
 ms.author: jmprieur
 ms.custom: aaddev
 ms.openlocfilehash: 6d737f107e7a9b1476fdf86ac0320931ea137671
-ms.sourcegitcommit: 6109f1d9f0acd8e5d1c1775bc9aa7c61ca076c45
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94442911"
 ---
 # <a name="protected-web-api-verify-scopes-and-app-roles"></a>Защищенный веб-API: проверка областей и ролей приложений
@@ -47,14 +47,14 @@ ms.locfileid: "94442911"
 
 Но этой защиты недостаточно. Она гарантирует только то, что ASP.NET и ASP.NET Core проверят маркер. API необходимо проверить, что маркер, используемый для вызова API, запрашивается с ожидаемыми утверждениями. В частности, требуют проверки следующие утверждения.
 
-- *Области* , если API вызывается от имени пользователя.
-- *Роли приложения* , если API можно вызывать из управляющего приложения.
+- *Области*, если API вызывается от имени пользователя.
+- *Роли приложения*, если API можно вызывать из управляющего приложения.
 
 ## <a name="verify-scopes-in-apis-called-on-behalf-of-users"></a>Проверка областей в интерфейсах API, вызываемых от имени пользователей
 
 Если клиентское приложение вызывает API от имени пользователя, API должен запросить токен носителя с конкретными областями для API. Дополнительные сведения см. в [Конфигурация кода | Токен носителя](scenario-protected-web-api-app-configuration.md#bearer-token).
 
-### <a name="net-core"></a>.NET Core
+### <a name="net-core"></a>.NET Core
 
 #### <a name="verify-the-scopes-on-each-controller-action"></a>Проверка областей действия каждого контроллера
 
@@ -113,7 +113,7 @@ public class TodoListController : ApiController
     }
 ```
 
-`ValidateAppRole`Метод определен в Microsoft. Identity. Web в [RolesRequiredHttpContextExtensions.CS](https://github.com/AzureAD/microsoft-identity-web/blob/d2ad0f5f830391a34175d48621a2c56011a45082/src/Microsoft.Identity.Web/Resource/RolesRequiredHttpContextExtensions.cs#L28).
+`ValidateAppRole`Метод определен в Microsoft. Identity. Web в [ролесрекуиредхттпконтекстекстенсионс. CS](https://github.com/AzureAD/microsoft-identity-web/blob/d2ad0f5f830391a34175d48621a2c56011a45082/src/Microsoft.Identity.Web/Resource/RolesRequiredHttpContextExtensions.cs#L28).
 
 ### <a name="aspnet-mvc"></a>ASP.NET MVC 3
 

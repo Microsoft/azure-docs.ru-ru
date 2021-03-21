@@ -4,10 +4,10 @@ description: Для партнеров CSP делегированное упра
 ms.date: 03/12/2021
 ms.topic: conceptual
 ms.openlocfilehash: 8736cf913739f2bd16fb519aed98fd336f6876a5
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103419394"
 ---
 # <a name="azure-lighthouse-and-the-cloud-solution-provider-program"></a>Azure Lighthouse и программа поставщиков облачных решений

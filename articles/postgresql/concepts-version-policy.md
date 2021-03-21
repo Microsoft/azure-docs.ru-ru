@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/05/2020
 ms.custom: fasttrack-edit
 ms.openlocfilehash: 62fe1b3391eb4cb2d409a92b936fd3f1ae56d992
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100518425"
 ---
 # <a name="azure-database-for-postgresql-versioning-policy"></a>Политика управления версиями базы данных Azure для PostgreSQL
@@ -22,7 +22,7 @@ ms.locfileid: "100518425"
 
 База данных Azure для PostgreSQL поддерживает следующие версии баз данных.
 
-| Version | Одиночный сервер | Гибкий сервер (предварительная версия) |
+| Версия | Одиночный сервер | Гибкий сервер (предварительная версия) |
 | ----- | :------: | :----: |
 | PostgreSQL 12 |  | X  | 
 | PostgreSQL 11 | X | X |
@@ -39,7 +39,7 @@ ms.locfileid: "100518425"
 ## <a name="major-version-retirement-policy"></a>Политика выхода основной версии
 В таблице ниже приведены сведения о прекращении использования основных версий PostgreSQL. Даты соответствуют [политике управления версиями PostgreSQL Community](https://www.postgresql.org/support/versioning/).
 
-| Version | What's New | Дата начала поддержки Azure | Дата вывода|
+| Версия | What's New | Дата начала поддержки Azure | Дата вывода|
 | ----- | ----- | ------ | ----- |
 | [PostgreSQL 9,5 (с прекращением)](https://www.postgresql.org/about/news/postgresql-132-126-1111-1016-9621-and-9525-released-2165/)| [Функции](https://www.postgresql.org/docs/9.5/release-9-5.html)  | 18 апреля 2018 г.   | 11 февраля, 2021
 | [PostgreSQL 9,6](https://www.postgresql.org/about/news/postgresql-96-released-1703/) | [Функции](https://wiki.postgresql.org/wiki/NewIn96) | 18 апреля 2018 г.  | 11 ноября 2021 г.
@@ -60,7 +60,7 @@ ms.locfileid: "100518425"
 ## <a name="postgresql-version-syntax"></a>Синтаксис версии PostgreSQL
 До PostgreSQL версии 10 [Политика управления версиями PostgreSQL](https://www.postgresql.org/support/versioning/) считается обновлением _основного номера версии_ , что приводит к увеличению первого _или_ второго числа. Например, 9,5 на 9,6 считалось обновлением _основной_ версии. Начиная с версии 10, только изменение первого числа считается обновлением основной версии. Например, 10,0 на 10,1 — это _незначительное_ обновление выпуска. Версия 10 до 11 является _основным_ обновлением версии.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - См. статью база данных Azure для PostgreSQL — [Поддерживаемые версии](./concepts-supported-versions.md) с одним сервером
 - [Поддерживаемые версии](flexible-server/concepts-supported-versions.md) см. в статье база данных Azure для PostgreSQL. Поддержка гибких серверов (Предварительная версия)
 - Сведения о том, как выполнять обновление основных версий, см. в документации по [обновлению основных версий](how-to-upgrade-using-dump-and-restore.md) .

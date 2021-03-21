@@ -8,10 +8,10 @@ ms.date: 03/14/2021
 ms.topic: article
 ms.service: azure
 ms.openlocfilehash: ba68bc3eee94689236792f0270d779357dffde9f
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103465782"
 ---
 # <a name="troubleshoot-the-sensor-and-on-premises-management-console"></a>Устранение неполадок с датчиком и локальной консолью управления

@@ -9,10 +9,10 @@ author: likebupt
 ms.author: keli19
 ms.date: 04/25/2019
 ms.openlocfilehash: 684299d61ba6e9e27e16a162c9f226a7ea3b5f58
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100518017"
 ---
 # <a name="powershell-modules-for-azure-machine-learning-studio-classic"></a>Модули PowerShell для Машинное обучение Azure Studio (классическая модель)
@@ -55,7 +55,7 @@ Az теперь является предполагаемым модулем Pow
 
 | Задача | **AZ** |  **Классическая модель PowerShell** |
 | --- | --- | --- |
-| Создание и удаление рабочих областей | [Шаблоны диспетчер ресурсов](./deploy-with-resource-manager-template.md) |  |
+| Создание и удаление рабочих областей | [Шаблоны Resource Manager](./deploy-with-resource-manager-template.md) |  |
 | Управление планами обязательств рабочей области | [New-AzMlCommitmentPlan](/powershell/module/az.machinelearning/new-azmlcommitmentplan) | |
 | Управление пользователями рабочей области |  | [Add-AmlWorkspaceUsers](https://github.com/hning86/azuremlps#add-amlworkspaceusers)|
 | Управление веб-службами | [New-AzMlWebService](/powershell/module/az.machinelearning/new-azmlwebservice) <br>("новые" веб-службы)| [New-AmlWebService](https://github.com/hning86/azuremlps#manage-classic-web-service) <br>("классические" веб-службы) |
@@ -65,7 +65,7 @@ Az теперь является предполагаемым модулем Pow
 | Управление настраиваемыми модулями | | [New-AmlCustomModule](https://github.com/hning86/azuremlps#manage-custom-module) |
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Ознакомьтесь с полной документацией по этому модулю PowerShell:
 * [Классическая модель PowerShell](https://aka.ms/amlps)
 * [Azure PowerShell Az](/powershell/module/az.machinelearning/#machine_learning)

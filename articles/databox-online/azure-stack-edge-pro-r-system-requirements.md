@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 02/05/2021
 ms.author: alkohli
 ms.openlocfilehash: ef81494b6c93f2941cc41b367e566332d6bc7cc9
-ms.sourcegitcommit: d1b0cf715a34dd9d89d3b72bb71815d5202d5b3a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99831348"
 ---
 # <a name="azure-stack-edge-pro-r-system-requirements"></a>Требования к системе для Azure Stack пограничных Pro R
@@ -40,9 +40,9 @@ ms.locfileid: "99831348"
 
 При управлении из Azure Stack следующие многоуровневые учетные записи хранения поддерживаются интерфейсами SMB/NFS/RESTFUL.
 
-|Тип  |Учетная запись хранения  |Комментарии  |
+|Type  |Учетная запись хранения  |Комментарии  |
 |---------|---------|---------|
-|Standard     |GPv1: блочный BLOB-объект         |         |
+|Стандартный     |GPv1: блочный BLOB-объект         |         |
 |    |  Хранилище BLOB-объектов: блочный BLOB-объект       | Поддерживается только для NAS     |
 
 * Страничные BLOB-объекты и файлы Azure в настоящее время не поддерживаются в Azure Stack.

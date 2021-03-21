@@ -14,10 +14,10 @@ ms.date: 11/08/2019
 ms.author: sumi
 ms.custom: ''
 ms.openlocfilehash: 8926e99db926fc8182e98509c3deff0ccc3d1612
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99576673"
 ---
 # <a name="virtual-network-service-endpoints"></a>Конечные точки служб для виртуальной сети
@@ -42,7 +42,7 @@ ms.locfileid: "99576673"
 - **[Служба приложений Azure](../app-service/app-service-ip-restrictions.md)** (*Microsoft. Web*): общедоступная версия доступна во всех регионах Azure, где доступна служба приложений.
 - **[Azure Cognitive Services](../cognitive-services/cognitive-services-virtual-networks.md?tabs=portal)** (*Microsoft. CognitiveServices*). общедоступная версия доступна во всех регионах Azure, где доступны переработающие службы.
 
-**Общедоступная Предварительная версия**
+**Общедоступная предварительная версия**
 
 - **[Реестр контейнеров Azure](../container-registry/container-registry-vnet.md)** (*Microsoft. ContainerRegistry*): Предварительная версия доступна в ограниченных регионах Azure, где доступен реестр контейнеров Azure.
 
@@ -140,11 +140,11 @@ ms.locfileid: "99576673"
 
 Политики конечной точки службы виртуальной сети позволяют фильтровать трафик виртуальной сети в службах Azure. Этот фильтр разрешает только определенные ресурсы службы Azure через конечные точки службы. Политики конечных точек служб предоставляют возможность детального контроля доступа трафика из виртуальной сети к службам Azure. Дополнительные сведения см. в статье [политики конечной точки службы виртуальной сети](./virtual-network-service-endpoint-policies-overview.md).
 
-## <a name="faqs"></a>Частые вопросы
+## <a name="faqs"></a>Часто задаваемые вопросы
 
 Часто задаваемые вопросы см. в разделе [вопросы и ответы о конечной точке службы виртуальной сети](./virtual-networks-faq.md#virtual-network-service-endpoints).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Настройка конечных точек службы виртуальной сети](tutorial-restrict-network-access-to-resources.md)
 - [Защита учетной записи хранения Azure в виртуальной сети](../storage/common/storage-network-security.md?toc=%2fazure%2fvirtual-network%2ftoc.json)

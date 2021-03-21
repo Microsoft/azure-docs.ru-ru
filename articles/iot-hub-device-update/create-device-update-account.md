@@ -7,22 +7,22 @@ ms.date: 2/11/2021
 ms.topic: how-to
 ms.service: iot-hub-device-update
 ms.openlocfilehash: a0201882b74d2acf57c246d2dc63530ca8b1f010
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101692713"
 ---
-# <a name="device-update-for-iot-hub-resource-management"></a>Обновление устройства для управления ресурсами центра Интернета вещей
+# <a name="device-update-for-iot-hub-resource-management"></a>Обновление устройств для управления ресурсами Центра Интернета вещей
 
 Чтобы начать работу с обновлением устройства, необходимо создать учетную запись обновления устройства, экземпляр и настроить роли контроля доступа. 
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Доступ к центру Интернета вещей. Рекомендуется использовать уровень S1 (стандартный) или выше. 
+* Доступ к Центру Интернета вещей. Рекомендуется использовать уровень S1 (Стандартный) или выше. 
 * Поддерживаемые браузеры:
   * [Microsoft Edge](https://www.microsoft.com/edge)
-  * Google Chrome;
+  * Google Chrome
 
 ## <a name="create-a-device-update-account"></a>Создание учетной записи обновления устройств
 

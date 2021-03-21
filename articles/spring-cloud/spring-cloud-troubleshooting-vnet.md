@@ -8,10 +8,10 @@ ms.date: 09/19/2020
 ms.author: brendm
 ms.custom: devx-track-java
 ms.openlocfilehash: b2369a6380c7b74302d32366d0604fca616fc3ed
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101698235"
 ---
 # <a name="troubleshooting-azure-spring-cloud-in-virtual-networks"></a>Устранение неполадок с Azure Spring Cloud в виртуальных сетях
