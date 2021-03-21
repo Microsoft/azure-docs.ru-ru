@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.author: jpalma
 author: palma21
 ms.openlocfilehash: 9ce8bc71139b52d690893734435e6bfee090062d
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102184378"
 ---
 # <a name="use-azure-rbac-for-kubernetes-authorization-preview"></a>Использование Azure RBAC для авторизации Kubernetes (предварительная версия)
@@ -27,7 +27,7 @@ ms.locfileid: "102184378"
 
 [!INCLUDE [preview features callout](./includes/preview/preview-callout.md)]
 
-### <a name="prerequisites"></a>Предварительные требования 
+### <a name="prerequisites"></a>Предварительные условия 
 - Убедитесь, что у вас Azure CLI версии 2.9.0 или более поздней.
 - Убедитесь, что `EnableAzureRBACPreview` включен флаг компонента.
 - Убедитесь, что установлено `aks-preview` [расширение CLI][az-extension-add] v 0.4.55 или более поздней версии.

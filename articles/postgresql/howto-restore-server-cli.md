@@ -9,24 +9,24 @@ ms.topic: how-to
 ms.date: 10/25/2019
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: ef397eb67c1f60c14fb36bf455236d84b730f611
-ms.sourcegitcommit: 8e7316bd4c4991de62ea485adca30065e5b86c67
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94659579"
 ---
 # <a name="how-to-back-up-and-restore-a-server-in-azure-database-for-postgresql---single-server-using-the-azure-cli"></a>Как создать резервную копию и восстановить сервер в базе данных Azure для PostgreSQL — один сервер с помощью Azure CLI
 
 Чтобы обеспечить возможность восстановления, для серверов службы "База данных Azure для PostgreSQL" периодически выполняется резервное копирование. С помощью этой функции можно восстановить сервер и все его базы данных до более ранней точки во времени на новом сервере.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Для работы с этим руководством должны быть выполнены следующие условия.
 
 - Вам потребуется [база данных Azure для сервера и базы данных PostgreSQL](quickstart-create-server-database-azure-cli.md).
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment-no-header.md)]
 
- - Для работы с этой статьей требуется версия 2,0 или более поздняя Azure CLI. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
+ - Для работы с этой статьей требуется Azure CLI версии 2.0 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
 ## <a name="set-backup-configuration"></a>Настройка конфигурации резервного копирования
 

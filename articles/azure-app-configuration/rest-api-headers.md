@@ -7,10 +7,10 @@ ms.service: azure-app-configuration
 ms.topic: reference
 ms.date: 08/17/2020
 ms.openlocfilehash: 80b20b0b55219766872166685c0b1257f3c39c55
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96932580"
 ---
 # <a name="headers"></a>Заголовки
@@ -33,7 +33,7 @@ ms.locfileid: "96932580"
 | **If-None-Match** | Используется для выполнения условного запроса HTTP. Этот запрос должен быть выполнен, только если ETag целевого ресурса не соответствует значению этого заголовка. Значение "*" соответствует любому ETag. См. [раздел 14,26](https://tools.ietf.org/html/rfc2616#section-14.26) | `If-None-Match: "4f6dd610dd5e4deebc7fbaef685fb903"` |
 | **Sync — Token** | Используется для обеспечения согласованности в режиме реального времени во время последовательности запросов. | `Sync-Token: jtqGc1I4=MDoyOA==;sn=28` |
 | **x-ms-client-request-id** | Уникальный идентификатор, предоставленный клиентом для наблюдения за циклическим обменом запроса. | `x-ms-client-request-id: 00000000-0000-0000-0000-000000000000` |
-| **x-MS-Content-SHA256** | Дайджест SHA256 текста HTTP-запроса. Этот заголовок используется в [проверке подлинности HMAC](./rest-api-authentication-hmac.md). | `x-ms-content-sha256: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=` |
+| **x-ms-content-sha256** | Дайджест SHA256 текста HTTP-запроса. Этот заголовок используется в [проверке подлинности HMAC](./rest-api-authentication-hmac.md). | `x-ms-content-sha256: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=` |
 | **x-ms-date** | Этот заголовок может быть установлен и использован вместо `Date` заголовка, если не удается получить доступ к заголовку даты. Этот заголовок используется в [проверке подлинности HMAC](./rest-api-authentication-hmac.md). | `x-ms-date: Fri, 11 May 2018 18:48:36 GMT` |
 | **x-ms-return-client-request-id** | Используется в сочетании с `x-ms-client-request-id` заголовком. Если значение этого заголовка равно true, серверу будет предложено вернуть значение `x-ms-client-request-id` заголовка запроса. | `x-ms-return-client-request-id: true` |
 

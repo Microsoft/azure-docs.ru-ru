@@ -8,10 +8,10 @@ ms.date: 7/23/2020
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: 7108ee956c18fbcc150b56cbcb8ae1c69841dda4
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102198593"
 ---
 # <a name="set-up-an-azure-digital-twins-instance-and-authentication-cli"></a>Настройка экземпляра и проверки подлинности Azure Digital двойников (CLI)
@@ -90,7 +90,7 @@ az dt role-assignment create --dt-name <your-Azure-Digital-Twins-instance> --ass
 
 Теперь у вас есть экземпляр Azure Digital двойников, который готов к работе и ему назначены разрешения для управления им.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Вытестируйте отдельные REST API вызовы в экземпляре с помощью команд CLI Azure Digital двойников: 
 * [AZ DT Справочник](/cli/azure/ext/azure-iot/dt)

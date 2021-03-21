@@ -9,10 +9,10 @@ ms.author: owend
 ms.reviewer: minewiskan
 ms.custom: references_regions
 ms.openlocfilehash: 049ff6d14c3967481eb73037814082fa261154e3
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96497934"
 ---
 # <a name="move-analysis-services-to-a-different-region"></a>Переместить Analysis Services в другой регион
@@ -48,13 +48,13 @@ ms.locfileid: "96497934"
 > [!NOTE]
 > При использовании локального шлюза данных для подключения к источникам данных необходимо также переместить ресурс шлюза в регион целевого сервера. Дополнительные сведения см. в статье [Установка и настройка локального шлюза данных](analysis-services-gateway-install.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - **Учетная запись хранения Azure**: требуется для хранения ABF файла резервной копии.
 - **SQL Server Management Studio (SSMS)**: требуется для резервного копирования и восстановления баз данных модели.
 - **Azure PowerShell**. Требуется только в том случае, если вы решили выполнить эту задачу с помощью PowerShell.
 
-## <a name="prepare"></a>Подготовка
+## <a name="prepare"></a>Подготовка.
 
 ### <a name="backup-model-databases"></a>Резервное копирование баз данных
 

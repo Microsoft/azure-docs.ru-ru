@@ -11,10 +11,10 @@ ms.topic: how-to
 ms.date: 03/08/2021
 ms.author: justinha
 ms.openlocfilehash: f877a631fd3c89d74b9e3b47cf205bbcf173ebc0
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102453416"
 ---
 # <a name="configure-scoped-synchronization-from-azure-ad-to-azure-active-directory-domain-services-using-azure-ad-powershell"></a>Настройка синхронизации с заданной областью из Azure AD в Azure Active Directory доменных служб с помощью Azure AD PowerShell

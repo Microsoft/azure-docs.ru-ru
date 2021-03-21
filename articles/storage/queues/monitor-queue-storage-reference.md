@@ -10,10 +10,10 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.custom: monitoring
 ms.openlocfilehash: 95f20737b044140fe12ea939e71cd2397cb4826d
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100576684"
 ---
 # <a name="azure-queue-storage-monitoring-data-reference"></a>Справочник по данным мониторинга хранилища очередей Azure
@@ -77,7 +77,7 @@ ms.locfileid: "100576684"
 
 [!INCLUDE [Account level capacity metrics](../../../includes/azure-storage-logs-properties-service.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - Описание мониторинга хранилища очередей Azure см. в статье [мониторинг хранилища очередей Azure](monitor-queue-storage.md) .
 - Подробные сведения о мониторинге ресурсов Azure см. в статье [Мониторинг ресурсов Azure с помощью Azure Monitor](../../azure-monitor/essentials/monitor-azure-resource.md).

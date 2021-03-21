@@ -12,10 +12,10 @@ ms.author: wiassaf
 ms.reviewer: sstein
 ms.date: 12/19/2018
 ms.openlocfilehash: 139673e46421aa0dc19298697872fbff5fe587af
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96501215"
 ---
 # <a name="extended-events-in-azure-sql-database"></a>Расширенные события в базе данных SQL Azure 
@@ -32,7 +32,7 @@ ms.locfileid: "96501215"
 - [Быстрое начало. Расширенные события в SQL Server](/sql/relational-databases/extended-events/quick-start-extended-events-in-sql-server)
 - [Расширенные события](/sql/relational-databases/extended-events/extended-events)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В данной статье предполагается, чтобы вы уже ознакомились со следующими компонентами:
 

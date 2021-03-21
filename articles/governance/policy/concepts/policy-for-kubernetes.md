@@ -4,10 +4,10 @@ description: Узнайте, как Политика Azure использует 
 ms.date: 12/01/2020
 ms.topic: conceptual
 ms.openlocfilehash: 0aaf610cd5712ee195ed2a4108cf9e5ca9c65183
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100577094"
 ---
 # <a name="understand-azure-policy-for-kubernetes-clusters"></a>Общие сведения о политике Azure для кластеров Kubernetes

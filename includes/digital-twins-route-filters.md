@@ -6,10 +6,10 @@ ms.topic: include
 ms.date: 12/04/2020
 ms.author: baanders
 ms.openlocfilehash: d93f484e318c10489eb1db3e9c65c6e0c7479c90
-ms.sourcegitcommit: fc8ce6ff76e64486d5acd7be24faf819f0a7be1d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98860174"
 ---
 | Имя фильтра | Описание | Фильтрация текста схемы | Поддерживаемые значения | 
@@ -17,7 +17,7 @@ ms.locfileid: "98860174"
 | True/false | Позволяет создать маршрут без фильтрации или отключить маршрут, чтобы события не отправлялись | `<true/false>` | `true` = маршрут включен без фильтрации <br> `false` = маршрут отключен |
 | Тип | [Тип события](../articles/digital-twins/concepts-route-events.md#types-of-event-messages) , переданного через ваш экземпляр Digital двойника | `type = '<eventType>'` | Возможные значения типа события: <br>`Microsoft.DigitalTwins.Twin.Create` <br> `Microsoft.DigitalTwins.Twin.Delete` <br> `Microsoft.DigitalTwins.Twin.Update`<br>`Microsoft.DigitalTwins.Relationship.Create`<br>`Microsoft.DigitalTwins.Relationship.Update`<br> `Microsoft.DigitalTwins.Relationship.Delete` <br> `microsoft.iot.telemetry`  |
 | Источник | Имя экземпляра Digital двойников для Azure | `source = '<hostname>'`| Возможные значения имени узла: <br> **Для уведомлений**: `<yourDigitalTwinInstance>.api.<yourRegion>.digitaltwins.azure.net` <br> **Для телеметрии**: `<yourDigitalTwinInstance>.api.<yourRegion>.digitaltwins.azure.net/<twinId>`|
-| Тема | Описание события в контексте источника событий выше | `subject = '<subject>'` | Возможные значения субъекта: <br>**Для уведомлений**: Тема `<twinid>` <br> или формат URI для субъектов, которые уникально идентифицируются несколькими частями или идентификаторами:<br>`<twinid>/relationships/<relationshipid>`<br> **Для телеметрии**: субъект — это путь к компоненту (если данные телеметрии создаются из компонента двойника), например `comp1.comp2` . Если данные телеметрии не выдаются из компонента, то его поле subject будет пустым. |
+| Субъект | Описание события в контексте источника событий выше | `subject = '<subject>'` | Возможные значения субъекта: <br>**Для уведомлений**: Тема `<twinid>` <br> или формат URI для субъектов, которые уникально идентифицируются несколькими частями или идентификаторами:<br>`<twinid>/relationships/<relationshipid>`<br> **Для телеметрии**: субъект — это путь к компоненту (если данные телеметрии создаются из компонента двойника), например `comp1.comp2` . Если данные телеметрии не выдаются из компонента, то его поле subject будет пустым. |
 | Схема данных | Идентификатор модели ДТДЛ | `dataschema = '<model-dtmi-ID>'` | **Для телеметрии**: Схема данных — это идентификатор модели двойника или компонента, который создает данные телеметрии. Например: `dtmi:example:com:floor4;2` <br>**Для уведомлений (создание или удаление)**: доступ к схеме данных можно получить в тексте уведомления по адресу `$body.$metadata.$model` . <br>**Для уведомлений (обновление)**: доступ к схеме данных можно получить в тексте уведомления по адресу `$body.modelId`|
 | Тип содержимого | Тип содержимого значения данных | `datacontenttype = '<contentType>'` | Тип содержимого — `application/json` |
 | Версия спецификации | Используемая версия схемы событий | `specversion = '<version>'` | Версия должна быть `1.0` . Это означает, что схема Клаудевентс версии 1,0 |
@@ -42,7 +42,7 @@ ms.locfileid: "98860174"
 
 При определении фильтров маршрутов поддерживаются следующие функции:
 
-|Функция|Описание|Пример|
+|Компонент|Описание|Пример|
 |--|--|--|
 |STARTS_WITH (x, y)|Возвращает значение true, если значение `x` начинается со строки `y` .|`STARTS_WITH($body.$metadata.$model, 'dtmi:example:com:floor')`|
 |ENDS_WITH (x, y) | Возвращает значение true, если значение `x` заканчивается строкой `y` .|`ENDS_WITH($body.$metadata.$model, 'floor;1')`|

@@ -8,10 +8,10 @@ ms.date: 12/01/2020
 ms.author: owend
 ms.reviewer: minewiskan
 ms.openlocfilehash: 9df10760164dcd0d207663c14107f72c46b76d25
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96501249"
 ---
 # <a name="deploy-a-model-from-visual-studio"></a>Развертывание модели из Visual Studio

@@ -8,10 +8,10 @@ author: swinarko
 ms.custom: seo-lt-2019
 ms.date: 09/06/2020
 ms.openlocfilehash: f11a3845e8644f3f60425538b2ef32cff668d88d
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100384934"
 ---
 # <a name="execute-ssis-packages-in-azure-from-ssdt"></a>Выполнение пакетов служб SSIS в Azure из SSDT
@@ -22,7 +22,7 @@ ms.locfileid: "100384934"
 
 С помощью этой функции можно присоединить вновь созданный или существующий Azure-SSIS IR к проектам служб SSIS, а затем выполнить на нем пакеты.  Мы поддерживаем запуск пакетов для развертывания в каталоге служб SSIS (SSISDB), размещенном на сервере базы данных SQL Azure или управляемом экземпляре в модели развертывания проекта. Мы также поддерживаем запуск пакетов для развертывания в файловую систему, файлы Azure и SQL Server базу данных (MSDB), размещенные управляемым экземпляром SQL Azure в модели развертывания пакетов. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы использовать эту функцию, скачайте и установите последнюю версию SSDT с расширением проектов SSIS для Visual Studio (VS) [отсюда.](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects) Кроме того, можно загрузить и установить последнюю версию SSDT как автономный установщик [отсюда.](/sql/ssdt/download-sql-server-data-tools-ssdt#ssdt-for-vs-2017-standalone-installer)
 
@@ -60,7 +60,7 @@ ms.locfileid: "100384934"
 
 ## <a name="connect-azure-enabled-projects-to-ssis-in-azure-data-factory"></a><a name="connectssisir"></a> Подключение проектов с поддержкой Azure к службам SSIS в фабрике данных Azure
 
-Подключив проекты с поддержкой Azure к службам SSIS в ADF, вы можете передать пакеты в службу файлов Azure и запускать их на Azure-SSIS IR. Это можно сделать, выполнив следующие действия.
+Подключив проекты с поддержкой Azure к службам SSIS в ADF, вы сможете передавать пакеты в службу Файлов Azure и запускать их в Azure-SSIS IR. Это можно сделать, выполнив следующие действия.
 
 1. На странице **Общие сведения о службах SSIS в ADF** ознакомьтесь с введением и нажмите кнопку **Далее** , чтобы продолжить.
 
@@ -199,6 +199,6 @@ ms.locfileid: "100384934"
 
 -  SSDT с поддержкой Azure поддерживает только регионы коммерческой или глобальной облачной службы, и сейчас не поддерживает государственные и местные облачные регионы.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Когда вы удовлетворены выполнением пакетов в Azure из SSDT, вы можете развернуть и запустить их как выполнение действий пакета служб SSIS в конвейерах ADF. см. раздел [выполнение пакетов служб SSIS как выполнение действий пакета SSIS в конвейерах ADF](./how-to-invoke-ssis-package-ssis-activity.md).

@@ -9,10 +9,10 @@ ms.service: azure-powershell
 ms.devlang: azurepowershell
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 2646ad40caf37d6c9dc192b3a4b198a40e73c8d9
-ms.sourcegitcommit: d60976768dec91724d94430fb6fc9498fdc1db37
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96509532"
 ---
 * Если вы используете Azure PowerShell локально:

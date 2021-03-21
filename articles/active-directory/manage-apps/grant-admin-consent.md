@@ -13,10 +13,10 @@ ms.author: kenwith
 ms.reviewer: phsignor
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 646c2216c3d71aa441d33dde0ab3e2ef7bb4fd89
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101643564"
 ---
 # <a name="grant-tenant-wide-admin-consent-to-an-application"></a>Предоставление приложению согласия администратора на уровне арендатора
@@ -25,7 +25,7 @@ ms.locfileid: "101643564"
 
 Дополнительные сведения о предоставлении согласия для приложений см. в статье [Платформа предоставления согласия Azure Active Directory](../develop/consent-framework.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы предоставить согласие администратора на уровне клиента, необходимо войти в систему от имени пользователя, которому разрешено согласие от лица Организации. К ним относятся администратор [глобального администратора](../roles/permissions-reference.md#global-administrator) и [привилегированных ролей](../roles/permissions-reference.md#privileged-role-administrator), а также для некоторых приложений, [администраторов приложений](../roles/permissions-reference.md#application-administrator) и [администраторов облачных приложений](../roles/permissions-reference.md#cloud-application-administrator). Пользователь может также предоставить разрешение на предоставление согласия на уровне клиента, если им назначена [пользовательская роль каталога](../roles/custom-create.md) , включающая [разрешение на предоставление разрешений приложениям](../roles/custom-consent-permissions.md).
 

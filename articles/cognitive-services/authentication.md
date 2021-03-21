@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/22/2019
 ms.author: erhopf
 ms.openlocfilehash: c7aeb9e9f4de7b4de62f9b5a8da6d997e32a2399
-ms.sourcegitcommit: 22da82c32accf97a82919bf50b9901668dc55c97
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94363329"
 ---
 # <a name="authenticate-requests-to-azure-cognitive-services"></a>Проверка подлинности запросов к Azure Cognitive Services
@@ -24,7 +24,7 @@ ms.locfileid: "94363329"
 * Проверка подлинности с помощью [токена](#authenticate-with-an-authentication-token)
 * Проверка подлинности с помощью [Azure Active Directory (AAD)](#authenticate-with-azure-active-directory)
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы выполнять запрос, вам нужно иметь учетную запись Azure и подписку Azure Cognitive Services. Если у вас есть учетная запись, пропустите этот раздел и перейдите к следующему. Если у вас нет учетной записи, у вас есть руководство по настройке в течение нескольких минут: [Создайте учетную запись Cognitive Services для Azure](cognitive-services-apis-create-account.md).
 
@@ -75,7 +75,7 @@ curl -X POST 'https://api.cognitive.microsofttranslator.com/translate?api-versio
 
 ### <a name="supported-regions"></a>Поддерживаемые регионы
 
-Если вы используете ключ подписки для нескольких служб в запросе к `api.cognitive.microsoft.com`, необходимо указать регион в URL-адресе. Например, введите `westus.api.cognitive.microsoft.com`.
+Если вы используете ключ подписки для нескольких служб в запросе к `api.cognitive.microsoft.com`, необходимо указать регион в URL-адресе. Например, `westus.api.cognitive.microsoft.com`.
 
 При использовании ключа подписки с несколькими службами в службе переводчика необходимо указать регион подписки с `Ocp-Apim-Subscription-Region` заголовком.
 
@@ -175,7 +175,7 @@ curl -X POST 'https://api.cognitive.microsofttranslator.com/translate?api-versio
 
 [!INCLUDE [](../../includes/cognitive-services-azure-active-directory-authentication.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Что такое Cognitive Services?](./what-are-cognitive-services.md)
 * [Цены на Cognitive Services](https://azure.microsoft.com/pricing/details/cognitive-services/)

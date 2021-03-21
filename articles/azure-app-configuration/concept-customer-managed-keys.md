@@ -7,10 +7,10 @@ ms.date: 07/28/2020
 ms.topic: conceptual
 ms.service: azure-app-configuration
 ms.openlocfilehash: 46a1e99a7bc75efa85fcb5eff649c14af5abd17b
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96930506"
 ---
 # <a name="use-customer-managed-keys-to-encrypt-your-app-configuration-data"></a>Использование управляемых клиентом ключей для шифрования данных конфигурации приложения
@@ -103,5 +103,5 @@ ms.locfileid: "96930506"
 
 Теперь экземпляр конфигурации приложения Azure настроен для использования управляемого клиентом ключа, хранящегося в Azure Key Vault.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 В этой статье вы настроили в экземпляре конфигурации приложения Azure использование ключа, управляемого клиентом, для шифрования.  Узнайте, как [интегрировать службу с управляемыми удостоверениями Azure](howto-integrate-azure-managed-service-identity.md).

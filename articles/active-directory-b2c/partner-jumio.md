@@ -12,17 +12,17 @@ ms.date: 08/20/2020
 ms.author: gasinh
 ms.subservice: B2C
 ms.openlocfilehash: 66ec0d4b09dc983eb898d63d45b3dd7cab291c4c
-ms.sourcegitcommit: 1756a8a1485c290c46cc40bc869702b8c8454016
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96928670"
 ---
 # <a name="tutorial-for-configuring-jumio-with-azure-active-directory-b2c"></a>Руководство по настройке Жумио с помощью Azure Active Directory B2C
 
 В этом примере учебника мы предоставляем рекомендации по интеграции Azure Active Directory B2C (Azure AD B2C) с [жумио](https://www.jumio.com/). Жумио — это служба проверки идентификатора, которая обеспечивает автоматическую проверку кода в режиме реального времени для защиты данных клиентов.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы приступить к работе, вам потребуется:
 

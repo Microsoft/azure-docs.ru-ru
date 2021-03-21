@@ -14,10 +14,10 @@ ms.topic: conceptual
 ms.date: 09/30/2020
 ms.author: inhenkel
 ms.openlocfilehash: e0cfc47b546c31e6b93d224e64de20b79baacfd9
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98891303"
 ---
 # <a name="media-reserved-units"></a>Зарезервированные единицы мультимедиа
@@ -50,10 +50,10 @@ ms.locfileid: "98891303"
 
 Вы платите за количество минут, в течение которых зарезервированные единицы мультимедиа подготавливаются в вашей учетной записи независимо от того, выполняются ли какие-либо задания. Подробное описание см. в разделе часто задаваемых вопросов на странице [цен на службы мультимедиа](https://azure.microsoft.com/pricing/details/media-services/).
 
-## <a name="next-step"></a>Дальнейшие действия
+## <a name="next-step"></a>Следующий шаг
 [Масштабирование зарезервированных единиц мультимедиа с помощью интерфейса командной строки](media-reserved-units-cli-how-to.md) 
  [Анализ видео](analyze-videos-tutorial-with-api.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Квоты и ограничения](limits-quotas-constraints.md)

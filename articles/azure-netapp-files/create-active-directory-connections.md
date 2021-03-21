@@ -15,10 +15,10 @@ ms.topic: how-to
 ms.date: 02/16/2021
 ms.author: b-juche
 ms.openlocfilehash: 44959b2f60f9aafd7d9430c9c19baea72344293f
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102183885"
 ---
 # <a name="create-and-manage-active-directory-connections-for-azure-netapp-files"></a>Создание Active Directory подключений и управление ими для Azure NetApp Files

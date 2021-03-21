@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 08/26/2019
 ms.custom: devx-track-dotnet
 ms.openlocfilehash: 79e14c171adde89c43c5ea82a60db39133157293
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100576442"
 ---
 # <a name="instrument-web-apps-at-runtime-with-application-insights-codeless-attach"></a>Инструментирование веб-приложений во время выполнения с помощью Application Insights бескодового подключения
@@ -179,7 +179,7 @@ Start-ApplicationInsightsMonitoring -Name appName -InstrumentationKey 00000000-0
 
 * Windows Server 2008
 * Windows Server 2008 R2
-* Windows Server 2012
+* Windows Server 2012
 * Windows Server 2012 R2.
 * Windows Server 2016
 
@@ -304,7 +304,7 @@ Import-Module 'C:\Program Files\Microsoft Application Insights\Status Monitor\Po
  * вызовы зависимостей (.NET 4.5) и возвращаемые значения в вызовах зависимостей (.NET 4.6);
  * значения трассировки стека исключений.
 
-[Подробнее](https://apmtips.com/posts/2016-11-18-how-application-insights-status-monitor-not-monitors-dependencies/)
+[Дополнительные сведения](https://apmtips.com/posts/2016-11-18-how-application-insights-status-monitor-not-monitors-dependencies/)
 
 ## <a name="video"></a>Видео
 
