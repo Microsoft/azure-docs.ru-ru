@@ -11,10 +11,10 @@ ms.date: 08/13/2019
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 87ea77540e5fcaac0c4231403473d25ebae46aac
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94840259"
 ---
 # <a name="troubleshoot-azure-ad-b2c-custom-policies-and-identity-experience-framework"></a>Устранение неполадок в пользовательских политиках Azure AD B2C и инфраструктуре процедур идентификации
@@ -43,7 +43,7 @@ ms.locfileid: "94840259"
 
 * Значение ClaimType может быть введено неверно или не существовать в схеме.
 * Значения ClaimType нужно определить по крайней мере в одном из файлов политики.
-    Пример: `<ClaimType Id="issuerUserId">`.
+    Пример: `<ClaimType Id="issuerUserId">`
 * Если параметр ClaimType определен в файле расширения, но также используется в значении TechnicalProfile в базовом файле, передача базового файла приведет к ошибке.
 
 > Фрагмент кода ошибки: `...makes a reference to a ClaimsTransformation with id...`

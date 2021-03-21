@@ -4,10 +4,10 @@ description: Содержит общие сведения об использо�
 ms.topic: conceptual
 ms.date: 10/07/2020
 ms.openlocfilehash: f39613427ed174dfca80d4a48be9473ab7025e79
-ms.sourcegitcommit: 5e5a0abe60803704cf8afd407784a1c9469e545f
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96433929"
 ---
 # <a name="azure-lab-services-within-microsoft-teams"></a>Службы лаборатории Azure в Microsoft Teams

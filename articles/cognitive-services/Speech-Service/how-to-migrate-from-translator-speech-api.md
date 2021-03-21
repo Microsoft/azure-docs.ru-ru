@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 01/21/2020
 ms.author: aahi
 ms.openlocfilehash: 2fb03721baa80e77a5fd387600a272e6b1cfc7d3
-ms.sourcegitcommit: 10d00006fec1f4b69289ce18fdd0452c3458eca5
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95013636"
 ---
 # <a name="migrate-from-the-translator-speech-api-to-the-speech-service"></a>Миграция из API перевода речи в службу речи
@@ -26,7 +26,7 @@ ms.locfileid: "95013636"
 
 ## <a name="comparison-of-features"></a>Сравнение функций
 
-| Компонент                                           | API Перевода речи                                  | Служба "Речь" | Сведения                                                                                                                                                                                                                                                                            |
+| Компонент                                           | API Перевода речи                                  | Служба Речь | Сведения                                                                                                                                                                                                                                                                            |
 |---------------------------------------------------|-----------------------------------------------------------------|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Преобразование в текст                               | :heavy_check_mark:                                              | :heavy_check_mark:                 |                                                                                                                                                                                                                                                                                    |
 | Преобразование в речь                             | :heavy_check_mark:                                              | :heavy_check_mark:                 |                                                                                                                                                                                                                                                                                    |
@@ -64,7 +64,7 @@ ms.locfileid: "95013636"
 * [Бесплатная пробная служба для речи](overview.md#try-the-speech-service-for-free)
 * [Краткое руководство. Распознавание речи в приложении UWP с помощью пакета SDK для службы "Речь"](./get-started-speech-to-text.md?pivots=programming-language-csharp&tabs=uwp)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Что такое служба распознавания речи](overview.md)
 * [Документация по речевой службе и речевому пакету SDK](./speech-devices-sdk-quickstart.md?pivots=platform-android)

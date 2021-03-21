@@ -6,10 +6,10 @@ manager: gaggupta
 ms.topic: how-to
 ms.date: 02/11/2021
 ms.openlocfilehash: 681b635099d450f061e0bcdb5b2c5d60d56c20a3
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100380770"
 ---
 # <a name="replicate-azure-virtual-machines-running-in-proximity-placement-groups-to-another-region"></a>Репликация виртуальных машин Azure, выполняемых в группах размещения близкого взаимодействия, в другой регион

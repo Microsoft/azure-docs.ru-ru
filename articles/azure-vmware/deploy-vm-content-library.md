@@ -4,10 +4,10 @@ description: Создание библиотеки содержимого для
 ms.topic: how-to
 ms.date: 02/03/2021
 ms.openlocfilehash: a50b12ef8e139bf7de171398fd28f74fc3f310c9
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100382010"
 ---
 # <a name="create-a-content-library-to-deploy-vms-in-azure-vmware-solution"></a>Создание библиотеки содержимого для развертывания виртуальных машин в решении VMware для Azure
@@ -16,7 +16,7 @@ ms.locfileid: "100382010"
 
 В этой статье мы рассмотрим процедуру создания библиотеки содержимого.  Затем мы рассмотрим развертывание виртуальной машины с помощью ISO-образа из библиотеки содержимого.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для работы с этим руководством необходимы сегмент НСКС-T (логический коммутатор) и управляемая служба DHCP.  Дополнительные сведения см. в статье [Управление DHCP в решении Azure VMware](manage-dhcp.md) .
 

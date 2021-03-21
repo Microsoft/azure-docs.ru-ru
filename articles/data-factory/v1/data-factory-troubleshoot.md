@@ -9,10 +9,10 @@ ms.author: weetok
 ms.reviewer: maghan
 robots: noindex
 ms.openlocfilehash: ed831e5f07eb29110b858dfb16b73f276926424f
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100388249"
 ---
 # <a name="troubleshoot-data-factory-issues"></a>Устранение неполадок Фабрики данных
@@ -25,7 +25,7 @@ ms.locfileid: "100388249"
 
 ## <a name="troubleshooting-tips"></a>Советы по устранению неполадок
 ### <a name="error-the-subscription-is-not-registered-to-use-namespace-microsoftdatafactory"></a>Ошибка "Подписка не зарегистрирована для использования пространства имен Microsoft.DataFactory"
-Если эта ошибка возникает, поставщик ресурсов фабрики данных Azure не был зарегистрирован на компьютере. Выполните следующие действия:
+Если эта ошибка возникает, поставщик ресурсов фабрики данных Azure не был зарегистрирован на компьютере. Выполните следующие действия.
 
 1. Запустите Azure PowerShell.
 2. Войдите в свою учетную запись Azure с помощью следующей команды:

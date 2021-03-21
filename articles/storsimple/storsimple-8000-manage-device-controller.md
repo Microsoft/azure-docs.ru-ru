@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 06/19/2017
 ms.author: alkohli
 ms.openlocfilehash: 090797549cc61aa27945114e5ef8b666226b66e2
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94956999"
 ---
 # <a name="manage-your-storsimple-device-controllers"></a>Управление контроллерами устройства StorSimple
@@ -158,6 +158,6 @@ ms.locfileid: "94956999"
 
 **Ответ.** Чтобы вернуть контроллер в службу, нужно вставить его в корпус согласно инструкциям в разделе [Замена модуля контроллера в устройстве StorSimple](storsimple-8000-controller-replacement.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Если возникли затруднения с контроллерами устройства StorSimple, которые не удается разрешить с помощью процедур, описанных в этом учебнике, [обратитесь в службу поддержки Майкрософт](storsimple-8000-contact-microsoft-support.md).
 * Дополнительные сведения об использовании службы диспетчера устройств StorSimple см. в статье [Использование службы диспетчера устройств StorSimple для администрирования устройства StorSimple](storsimple-8000-manager-service-administration.md).

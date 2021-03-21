@@ -7,10 +7,10 @@ ms.manager: abhemraj
 ms.topic: conceptual
 ms.date: 06/25/2020
 ms.openlocfilehash: b3975d30fca1f7f542f27742ef8408b1feecc146
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101727198"
 ---
 # <a name="assessment-overview-migrate-to-azure-vmware-solution"></a>Обзор оценки (переход на решение VMware для Azure)

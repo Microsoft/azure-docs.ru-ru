@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 12/18/2020
 ms.author: alkohli
 ms.openlocfilehash: 46a18cb2b6e1682427d5674be28b240f35b120fe
-ms.sourcegitcommit: 66b0caafd915544f1c658c131eaf4695daba74c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97678644"
 ---
 # <a name="use-the-azure-portal-to-administer-your-azure-data-box-and-azure-data-box-heavy"></a>Используйте портал Azure для администрирования Azure Data Box и Azure Data Box Heavy
@@ -60,7 +60,7 @@ ms.locfileid: "97678644"
 
 Можно удалить только завершенные или отмененные заказы. Чтобы удалить заказ, выполните указанные ниже действия.
 
-1. Перейдите ко **всем ресурсам**. Найдите свой заказ.
+1. Щелкните **Все ресурсы**. Найдите свой заказ.
 
 2. Щелкните заказ, который необходимо удалить, и перейдите на вкладку **Обзор**. На панели команд нажмите кнопку **Удалить**.
 
@@ -259,6 +259,6 @@ ms.locfileid: "97678644"
 
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как [устранять неполадки Data Box и Data Box Heavy](data-box-troubleshoot.md).

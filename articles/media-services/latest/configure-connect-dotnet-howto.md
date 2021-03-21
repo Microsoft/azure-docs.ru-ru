@@ -15,10 +15,10 @@ ms.date: 11/17/2020
 ms.author: inhenkel
 ms.custom: has-adal-ref, devx-track-csharp
 ms.openlocfilehash: 8946f6e94dd26db45622bc7609fb2375d59bb57e
-ms.sourcegitcommit: 6386854467e74d0745c281cc53621af3bb201920
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102455388"
 ---
 # <a name="connect-to-media-services-v3-api---net"></a>Подключение к API служб мультимедиа v3 — .NET
@@ -152,7 +152,7 @@ namespace ConsoleApp1
 
 Чтобы начать использование API Служб мультимедиа с .NET, создайте объект **AzureMediaServicesClient**. Чтобы создать объект, введите учетные данные, необходимые клиенту для подключения к Azure с помощью Azure AD. В приведенном ниже коде функция Жеткредентиалсасинк создает объект Сервицеклиенткредентиалс на основе учетных данных, указанных в локальном файле конфигурации.
 
-1. Откройте `Program.cs`.
+1. Откройте среду `Program.cs`.
 1. Вставьте следующий код:
 
 ```csharp

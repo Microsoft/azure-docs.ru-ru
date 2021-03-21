@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 09/08/2020
 ms.custom: devx-track-java
 ms.openlocfilehash: 0ea0db1faf8c452958b8d95c193d45506057777c
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98673338"
 ---
 # <a name="authenticate-azure-spring-cloud-with-key-vault-in-github-actions"></a>Проверка подлинности Azure Spring Cloud с использованием Key Vault в GitHub Actions
@@ -113,5 +113,5 @@ jobs:
 
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * [Действия весны GitHub Cloud](./spring-cloud-howto-github-actions.md)

@@ -14,10 +14,10 @@ ms.reviewer: saeeda, jmprieur
 ms.custom: aaddev
 ROBOTS: NOINDEX
 ms.openlocfilehash: 7b6ffd885e1be2dd59cea87cacd6e5fd5e0f8f49
-ms.sourcegitcommit: 21c3363797fb4d008fbd54f25ea0d6b24f88af9c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96861176"
 ---
 # <a name="azure-active-directory-authentication-libraries"></a>Библиотеки проверки подлинности Azure Active Directory
@@ -37,7 +37,7 @@ ms.locfileid: "96861176"
 
 ## <a name="microsoft-supported-client-libraries"></a>Клиентские библиотеки, поддерживаемые корпорацией Майкрософт
 
-| Платформа | Библиотека | Скачивание | Исходный код | Образец | Справочник
+| Платформа | Библиотека | Скачать | Исходный код | Образец | Справочник
 | --- | --- | --- | --- | --- | --- |
 | Клиент .NET, Магазин Windows, UWP, Xamarin iOS и Android |ADAL .NET версии 3 |[NuGet](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) |[GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet) | [Классическое приложение](../develop/quickstart-v2-windows-desktop.md) |[Ссылки](/dotnet/api/microsoft.identitymodel.clients.activedirectory) |
 | JavaScript |ADAL.js |[GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-js) |[GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-js) |[Одностраничное приложение](https://github.com/Azure-Samples/active-directory-javascript-singlepageapp-dotnet-webapi) | |
@@ -49,7 +49,7 @@ ms.locfileid: "96861176"
 
 ## <a name="microsoft-supported-server-libraries"></a>Серверные библиотеки, поддерживаемые корпорацией Майкрософт
 
-| Платформа | Библиотека | Скачивание | Исходный код | Образец | Справочник
+| Платформа | Библиотека | Скачать | Исходный код | Образец | Справочник
 | --- | --- | --- | --- | --- | --- |
 | .NET |OWIN для AzureAD|[NuGet](https://www.nuget.org/packages/Microsoft.Owin.Security.ActiveDirectory/) |[GitHub](https://github.com/aspnet/AspNetKatana/tree/dev/src/Microsoft.Owin.Security.ActiveDirectory) |[Приложение MVC](../develop/quickstart-v2-aspnet-webapp.md) | |
 | .NET |OWIN для OpenIDConnect |[NuGet](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect) |[GitHub](https://github.com/aspnet/AspNetKatana/tree/dev/src/Microsoft.Owin.Security.OpenIdConnect) |[Веб-приложение](https://github.com/AzureADSamples/WebApp-OpenIDConnect-DotNet) | |
@@ -81,5 +81,5 @@ ADAL упрощает проверку подлинности пользоват
 ## <a name="see-also"></a>См. также:
 
 - [Руководство разработчика по Azure Active Directory](v1-overview.md)
-- [Сценарии проверки подлинности для Azure Active Directory](v1-authentication-scenarios.md)
+- [Сценарии проверки подлинности в Azure Active Directory](v1-authentication-scenarios.md)
 - [Примеры кода Azure Active Directory](sample-v1-code.md)

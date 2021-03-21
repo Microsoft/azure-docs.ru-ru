@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 03/09/2021
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 28c31681b8fbe981cd51db294c91276dfd65d71f
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102619177"
 ---
 # <a name="lock-resources-to-prevent-unexpected-changes"></a>Блокировка ресурсов для предотвращения непредвиденных изменений

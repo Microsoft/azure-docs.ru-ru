@@ -8,10 +8,10 @@ ms.service: cognitive-search
 ms.topic: conceptual
 ms.date: 02/16/2021
 ms.openlocfilehash: 77735166fafe9d39dff483baa89a4b31db31275d
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100577936"
 ---
 # <a name="attach-a-cognitive-services-resource-to-a-skillset-in-azure-cognitive-search"></a>Подключение Cognitive Services ресурса к набору навыков в Azure Когнитивный поиск
@@ -22,7 +22,7 @@ Cognitive Services ресурс "все в одном" позволяет исп
 
 + [Компьютерное зрение](https://azure.microsoft.com/services/cognitive-services/computer-vision/) для анализа изображений и оптического распознавания символов (OCR)
 + [Анализ текста](https://azure.microsoft.com/services/cognitive-services/text-analytics/) для определения языка, распознавания сущностей, анализа тональности и извлечения ключевых фраз
-+ [Перевод текста](https://azure.microsoft.com/services/cognitive-services/translator-text-api/)
++ [Преобразование текста](https://azure.microsoft.com/services/cognitive-services/translator-text-api/)
 
 Ключ Cognitive Services "все в одном" является необязательным в определении набора навыков. Если количество ежедневных транзакций меньше 20 в день, затраты изменяются. Однако если транзакции превышают это число, для продолжения обработки требуется допустимый ключ ресурса.
 
@@ -163,7 +163,7 @@ Content-Type: application/json
 
 Поместив все вместе, вы платите примерно $57,00, чтобы принять 1 000 PDF-документов этого типа с описанным набором навыков.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 + [Страница цен на Когнитивный поиск Azure](https://azure.microsoft.com/pricing/details/search/)
 + [Определение набора навыков](cognitive-search-defining-skillset.md)

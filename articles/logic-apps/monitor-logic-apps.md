@@ -7,10 +7,10 @@ ms.reviewer: divswa, logicappspm
 ms.topic: article
 ms.date: 05/04/2020
 ms.openlocfilehash: 3c3d1930234c178a56227830ef0702450ddf4a8c
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "100580675"
 ---
 # <a name="monitor-run-status-review-trigger-history-and-set-up-alerts-for-azure-logic-apps"></a>Мониторинг состояния выполнения, просмотр журнала триггеров и настройка оповещений для Azure Logic Apps
@@ -194,6 +194,6 @@ ms.locfileid: "100580675"
 > * [Отправка текста](https://github.com/Azure/azure-quickstart-templates/tree/master/201-alert-to-text-message-with-logic-app)
 > * [Добавление сообщения в очередь](https://github.com/Azure/azure-quickstart-templates/tree/master/201-alert-to-queue-with-logic-app)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Мониторинг приложений логики с помощью Azure Monitor](../logic-apps/monitor-logic-apps-log-analytics.md)

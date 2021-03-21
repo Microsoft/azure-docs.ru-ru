@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 4/13/2020
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: 945a67f81010a61adf814f6f6f422eba5001b48d
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95998555"
 ---
 # <a name="configure-and-access-slow-query-logs-by-using-azure-cli"></a>Настройка и доступ к журналам запросов с высокой занесением с помощью Azure CLI
@@ -55,5 +55,5 @@ az mysql server-logs list --resource-group myresourcegroup --server mydemoserver
 az mysql server-logs download --name 20170414-mydemoserver-mysql.log --resource-group myresourcegroup --server mydemoserver
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Сведения о [очень низких журналах запросов в базе данных Azure для MySQL](concepts-server-logs.md).

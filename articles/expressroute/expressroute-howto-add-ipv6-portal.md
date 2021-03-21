@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 03/09/2021
 ms.author: duau
 ms.openlocfilehash: 9926102a2e6b25060c2a8840b56d690ce2868ade
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102618800"
 ---
 # <a name="add-ipv6-support-for-private-peering-using-the-azure-portal-preview"></a>Добавление поддержки IPv6 для частного пиринга с помощью портал Azure (Предварительная версия)
@@ -103,7 +103,7 @@ ms.locfileid: "102618800"
 * Фастпас с прямыми каналами, отличными от ExpressRoute
 * Сосуществование с VPN-шлюзом
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения об устранении неполадок ExpressRoute см. в следующих статьях:
 

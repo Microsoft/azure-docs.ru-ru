@@ -4,10 +4,10 @@ description: Описывает функции, используемые в ша
 ms.topic: conceptual
 ms.date: 11/18/2020
 ms.openlocfilehash: f3687581d94f80cc923614a0655da1813bd5c97b
-ms.sourcegitcommit: dfc4e6b57b2cb87dbcce5562945678e76d3ac7b6
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97359716"
 ---
 # <a name="numeric-functions-for-arm-templates"></a>Числовые функции для шаблонов ARM
@@ -94,7 +94,7 @@ output addResult int = first + second
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | addResult | Int | 8 |
 
@@ -111,7 +111,7 @@ output addResult int = first + second
 | loopName | Нет | строка | Имя цикла для получения итерации. |
 | offset |Нет |INT |Число, добавляемое к отсчитываемому от нуля значению итерации. |
 
-### <a name="remarks"></a>Комментарии
+### <a name="remarks"></a>Remarks
 
 Эта функция всегда используется с объектом **copy**. Если значение **offset** не указано, возвращается текущее значение итерации. Значение итерации начинается с нуля.
 
@@ -239,7 +239,7 @@ output addResult int = first / second
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | divResult | Int | 2 |
 
@@ -341,7 +341,7 @@ output inResult int = int(stringToConvert)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | intResult | Int | 4 |
 
@@ -410,7 +410,7 @@ output intOutput int = max(0,3,2,5,4)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayOutput | Int | 5 |
 | intOutput | Int | 5 |
@@ -480,7 +480,7 @@ output intOutput int = min(0,3,2,5,4)
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | arrayOutput | Int | 0 |
 | intOutput | Int | 0 |
@@ -552,7 +552,7 @@ output modResult int = first % second
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | modResult | Int | 1 |
 
@@ -623,7 +623,7 @@ output mulResult int = first * second
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | mulResult | Int | 15 |
 
@@ -694,7 +694,7 @@ output subResult int = first - second
 
 Выходные данные из предыдущего примера со значениями по умолчанию:
 
-| Имя | Тип | Значение |
+| Имя | Type | Значение |
 | ---- | ---- | ----- |
 | subResult | Int | 4 |
 

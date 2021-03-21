@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 04/13/2020
 ms.author: v-demjoh
 ms.openlocfilehash: a5796dfb066ea8ac7c59c02b29ef67b184c67edb
-ms.sourcegitcommit: 17b36b13857f573639d19d2afb6f2aca74ae56c1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94425247"
 ---
 Одной из основных функций речевой службы является возможность распознавания речи и перевода их на другие языки. В этом кратком руководстве вы узнаете, как использовать речевой пакет SDK в приложениях и продуктах для выполнения высококачественного перевода речи. Это краткое руководство преобразует речь из микрофона в текст на другом языке.

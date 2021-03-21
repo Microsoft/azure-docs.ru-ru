@@ -9,10 +9,10 @@ ms.custom: mvc, devx-track-azurecli
 ms.service: iot-pnp
 services: iot-pnp
 ms.openlocfilehash: 43a568149ccf85579b4f8190974fff872d6e09ea
-ms.sourcegitcommit: dda0d51d3d0e34d07faf231033d744ca4f2bbf4a
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102199651"
 ---
 # <a name="how-to-certify-iot-plug-and-play-devices"></a>Сертификация устройств Plug and Play IoT

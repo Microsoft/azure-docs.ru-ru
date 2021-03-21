@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: robinsh
 ms.openlocfilehash: 6008ca1549629bcbb582f38de2ab1b453cd73a99
-ms.sourcegitcommit: 0a9df8ec14ab332d939b49f7b72dea217c8b3e1e
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94843763"
 ---
 # <a name="develop-for-android-things-platform-using-azure-iot-sdks"></a>Разработка на платформе Android Things с помощью пакетов SDK для Интернета вещей Azure
@@ -20,7 +20,7 @@ ms.locfileid: "94843763"
 
 В этом руководстве описано, как создать приложение на стороне устройства на платформе Android Things при помощи пакета SDK Java для Центра Интернета вещей Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Оборудование, поддерживаемое платформой Android Things, под управлением операционной системы Android Things.  Чтобы выполнить инструкции по установке операционной системы Android Things, см. документацию по Android Things [здесь](https://developer.android.com/things/get-started/kits#flash-at).  Убедитесь, что устройство под управлением Android Things подключено к Интернету и подключены все необходимые дополнительные устройства, например, клавиатура, дисплей и мышь.  В этом руководстве используется Raspberry Pi 3.
 

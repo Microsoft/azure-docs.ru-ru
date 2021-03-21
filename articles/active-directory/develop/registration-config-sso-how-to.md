@@ -13,10 +13,10 @@ ms.date: 07/15/2019
 ms.author: ryanwi
 ROBOTS: NOINDEX
 ms.openlocfilehash: 60a07145e38c19f577ad9864efb599e7b244aa83
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101653717"
 ---
 # <a name="how-to-configure-single-sign-on-for-an-application"></a>Настройка единого входа для приложения

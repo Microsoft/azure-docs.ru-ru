@@ -7,10 +7,10 @@ author: MS-jgol
 ms.custom: devx-track-java
 ms.author: jgol
 ms.openlocfilehash: 35a95ac32fc4390e08d3c7fee2b9f9ff52202e4b
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100573826"
 ---
 # <a name="filter-telemetry-in-your-java-web-app"></a>Фильтрация данных телеметрии в веб-приложении Java
@@ -270,7 +270,7 @@ public TelemetryProcessor successFilter() {
 
 * Убедитесь, что для параметров указаны допустимые значения. Например, значения длительности должны быть целыми числами. Недопустимые значения приведут к тому, что фильтр будет проигнорирован. Если пользовательский фильтр породит исключение из конструктора или метода set, он будет проигнорирован.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Использование [выборки](./sampling.md) — альтернативный метод, который не искажает метрики.
 

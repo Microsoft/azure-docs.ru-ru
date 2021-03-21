@@ -14,10 +14,10 @@ ms.author: abpati
 ms.reviewer: nacanuma
 ms.custom: aaddev, devx-track-python
 ms.openlocfilehash: d847e38a6114b0e5f8d56f6e994aa47dfbe929e7
-ms.sourcegitcommit: 2817d7e0ab8d9354338d860de878dd6024e93c66
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99583711"
 ---
 # <a name="active-directory-federation-services-support-in-msal-for-python"></a>Поддержка службы федерации Active Directory (AD FS) в MSAL для Python
@@ -59,6 +59,6 @@ MSAL Python поддерживает ADFS 2019.
 
 Он не поддерживает прямое подключение к ADFS 2016 или ADFS v2. Для поддержки сценариев, требующих прямого подключения к ADFS 2016, используйте последнюю версию ADAL Python. После обновления локальной системы до ADFS 2019 можно использовать MSAL Python.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения об объединенном варианте см. в статье [Настройка поведения при входе Azure Active Directory для приложения с помощью политики обнаружения домашней области](../manage-apps/configure-authentication-for-federated-users-portal.md) .

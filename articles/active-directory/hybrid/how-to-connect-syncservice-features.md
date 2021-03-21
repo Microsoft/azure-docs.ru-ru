@@ -17,17 +17,17 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 261ab5d0f039705a2566b7c28ff4c06778bb661a
-ms.sourcegitcommit: 17b36b13857f573639d19d2afb6f2aca74ae56c1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94410544"
 ---
 # <a name="azure-ad-connect-sync-service-features"></a>Функции службы синхронизации Azure AD Connect
 
 Средство синхронизации Azure AD Connect состоит из двух компонентов.
 
-* Локальный компонент под названием **Синхронизация Azure AD Connect** , который также называется **модулем синхронизации**.
+* Локальный компонент под названием **Синхронизация Azure AD Connect**, который также называется **модулем синхронизации**.
 * Размещенная в Azure AD служба, которая также называется **службой синхронизации Azure AD Connect**
 
 В этом разделе описаны следующие функции **службы синхронизации Azure AD Connect** и их настройка с помощью Windows PowerShell.

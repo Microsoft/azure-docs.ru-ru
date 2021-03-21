@@ -5,10 +5,10 @@ ms.date: 03/03/2021
 ms.topic: how-to
 zone_pivot_groups: development-environment-functions
 ms.openlocfilehash: 9751d5d354d738a64d6b02e8153464491d78ec14
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103201368"
 ---
 # <a name="develop-and-publish-net-5-functions-using-azure-functions"></a>Разработка и публикация функций .NET 5 с помощью функций Azure 
@@ -105,7 +105,7 @@ ms.locfileid: "103201368"
     func new --name HttpExample --template "HTTP trigger" --authlevel "anonymous"
     ``` 
 
-    `func new` создает файл кода HttpExample.cs.
+    `func new` создает файл кода Хттпексампле. cs.
 ::: zone-end  
 
 ::: zone pivot="development-environment-vscode"  

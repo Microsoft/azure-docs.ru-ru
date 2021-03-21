@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 08/15/2018
 ms.author: alkohli
 ms.openlocfilehash: 6b750659bf22e856ee8ad7368e3fea64dd7245df
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94960365"
 ---
 # <a name="use-the-storsimple-device-manager-service-to-monitor-hardware-components-and-status"></a>Использование службы диспетчера устройств StorSimple для мониторинга компонентов оборудования и их состояния
@@ -49,7 +49,7 @@ ms.locfileid: "94960365"
 
 1. Перейдите к разделу **Устройства** и выберите конкретное устройство StorSimple. Последовательно выберите элементы **Мониторинг > Работоспособность оборудования**.
 
-    ![Снимок экрана, показывающий колонку параметров службы Device Manager. В разделе монитор выбрано состояние работоспособности оборудования.](./media/storsimple-8000-monitor-hardware-status/hw-health1.png)
+    ![Снимок экрана, показывающий колонку параметров службы диспетчер устройств. В разделе монитор выбрано состояние работоспособности оборудования.](./media/storsimple-8000-monitor-hardware-status/hw-health1.png)
 
 2. Найдите раздел **Компоненты оборудования** и выберите один из доступных компонентов. Просто щелкните метку компонента, чтобы развернуть список и просмотреть состояние различных компонентов устройства. Ознакомьтесь с [подробным списком компонентов для основного корпуса](#component-list-for-primary-enclosure-of-storsimple-device) и [подробным списком компонентов для корпуса EBOD](#component-list-for-ebod-enclosure-of-storsimple-device).
 
@@ -143,7 +143,7 @@ ms.locfileid: "94960365"
 | Диагностика электронного оборудования корпуса |Ввод-вывод |Физическая |Контроллер |Нет |Указывает состояние подсистем диагностики, предоставляемых контроллером. |
 | Подключение к контроллеру устройства |Ввод-вывод |Физическая |Контроллер |Нет |Указывает состояние подключения между модулем ввода-вывода EBOD и контроллером устройства. |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 * Сведения об использовании службы диспетчера устройств StorSimple для администрирования устройства см. в статье [Use the StorSimple Device Manager service to administer your StorSimple device](storsimple-8000-manager-service-administration.md) (Администрирование устройства StorSimple с помощью службы диспетчера устройств StorSimple).
 * Для устранения неполадок компонента устройства, в котором возник отказ или снизилась производительность, обратитесь к статье об [индикаторах мониторинга StorSimple](storsimple-monitoring-indicators.md).
 * Чтобы заменить неисправный компонент аппаратного обеспечения, см. статью [Замена компонентов оборудования StorSimple](./storsimple-8000-hardware-component-replacement.md).

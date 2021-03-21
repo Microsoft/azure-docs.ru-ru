@@ -13,10 +13,10 @@ ms.reviewer: mal
 ms.custom: it-pro, seo-update-azuread-jan
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 29aeca30e1fbdd28d3f69597d902a9b714056cd5
-ms.sourcegitcommit: 1f1d29378424057338b246af1975643c2875e64d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99575929"
 ---
 # <a name="grant-locally-managed-partner-accounts-access-to-cloud-resources-using-azure-ad-b2b-collaboration"></a>Предоставление локально управляемым партнерским учетным записям доступа к облачным ресурсам через службу совместной работы Azure Active Directory B2B
@@ -45,7 +45,7 @@ ms.locfileid: "99575929"
 
 Инструкции по реализации приведены в разделе [Включение синхронизации атрибута UserType](../hybrid/how-to-connect-sync-change-the-configuration.md#enable-synchronization-of-usertype).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Служба совместной работы Azure Active Directory B2B для гибридных организаций](hybrid-organizations.md)
 - [Предоставление пользователям B2B в Azure AD доступа к локальным приложениям](hybrid-cloud-to-on-premises.md)

@@ -8,10 +8,10 @@ ms.date: 02/01/2021
 ms.author: govindk
 ms.reviewer: sngun
 ms.openlocfilehash: 5261075a82eaefd91cbedd2dd2fe08cb1e0a20b4
-ms.sourcegitcommit: d4734bc680ea221ea80fdea67859d6d32241aefc
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100381840"
 ---
 # <a name="configure-and-manage-continuous-backup-and-point-in-time-restore-preview---using-azure-powershell"></a>Настройка непрерывного резервного копирования и восстановление на момент времени (Предварительная версия) и управление ими с помощью Azure PowerShell
@@ -241,7 +241,7 @@ Get-AzCosmosdbMongoDBRestorableResource `
   -RestoreTimestamp "2020-07-20T16:09:53+0000"
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Настройка непрерывного резервного копирования и управление им с помощью [Azure CLI](continuous-backup-restore-command-line.md), [Диспетчер ресурсов](continuous-backup-restore-template.md)или [портал Azure](continuous-backup-restore-portal.md).
 * [Модель ресурсов режима непрерывного резервного копирования](continuous-backup-restore-resource-model.md)

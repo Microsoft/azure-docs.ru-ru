@@ -3,15 +3,15 @@ title: Перемещение регионов Azure. портал Azure — б�
 description: Переместите сервер базы данных Azure для MariaDB из одного региона Azure в другой с помощью реплики чтения и портал Azure.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: how-to
 ms.custom: subject-moving-resources
 ms.date: 06/29/2020
-ms.openlocfilehash: adb82b3ff371bdcdecbd964fef3c1d0c971df71a
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: f4ce34bc1a1af7b2c0ee57a3297415bd9d033517
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98664942"
 ---
 # <a name="move-an-azure-database-for-mariadb-server-to-another-region-by-using-the-azure-portal"></a>Перемещение сервера базы данных Azure для MariaDB в другой регион с помощью портал Azure
@@ -65,7 +65,7 @@ ms.locfileid: "98664942"
 1. После создания реплики выберите базу данных Azure для исходного сервера MariaDB.
 1. В окне **Обзор** выберите **Удалить**.
 1. Введите имя исходного сервера для подтверждения, которое нужно удалить.
-1. Выберите команду **Удалить**.
+1. Выберите **Удалить**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

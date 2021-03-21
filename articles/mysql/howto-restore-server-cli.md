@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 3/27/2020
 ms.custom: devx-track-azurecli
 ms.openlocfilehash: ee06eed1b8f54877d01a8b316c015938038879cf
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94535407"
 ---
 # <a name="how-to-back-up-and-restore-a-server-in-azure-database-for-mysql-using-the-azure-cli"></a>Как создать резервную копию сервера в службе "База данных Azure для MySQL" и восстановить его с помощью портала Azure
 
 Чтобы обеспечить возможность восстановления, для серверов службы "База данных Azure для MySQL" периодически выполняется резервное копирование. С помощью этой функции можно восстановить сервер и все его базы данных до более ранней точки во времени на новом сервере.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Для работы с этим руководством должны быть выполнены следующие условия.
 
@@ -27,7 +27,7 @@ ms.locfileid: "94535407"
 
 [!INCLUDE [azure-cli-prepare-your-environment-no-header.md](../../includes/azure-cli-prepare-your-environment-no-header.md)]
 
-- Для работы с этой статьей требуется версия 2,0 или более поздняя Azure CLI. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
+- Для работы с этой статьей требуется Azure CLI версии 2.0 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
 ## <a name="set-backup-configuration"></a>Настройка конфигурации резервного копирования
 
@@ -103,7 +103,7 @@ az mysql server restore --resource-group myresourcegroup --name mydemoserver-res
 ```azurecli-interactive
 az mysql server georestore --resource-group myresourcegroup --name mydemoserver-georestored --source-server mydemoserver --location eastus --sku-name GP_Gen5_8 
 ```
-С помощью этой команды можно создать сервер *mydemoserver-georestored* в восточной части США, который будет принадлежать группе ресурсов *myresourcegroup*. Это сервер общего назначения 5-го поколения с 8 виртуальными ядрами. Он создан на основе геоизбыточных резервных копий *mydemoserver* , которые также расположены в группе ресурсов *myresourcegroup*.
+С помощью этой команды можно создать сервер *mydemoserver-georestored* в восточной части США, который будет принадлежать группе ресурсов *myresourcegroup*. Это сервер общего назначения 5-го поколения с 8 виртуальными ядрами. Он создан на основе геоизбыточных резервных копий *mydemoserver*, которые также расположены в группе ресурсов *myresourcegroup*.
 
 Если необходимо создать сервер в другой группе ресурсов с имеющегося сервера, в параметре `--source-server` необходимо определить имя сервера следующим образом.
 

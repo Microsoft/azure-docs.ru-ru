@@ -8,10 +8,10 @@ ms.author: mjbrown
 ms.date: 09/22/2020
 ms.custom: devx-track-csharp, contperf-fy21q1
 ms.openlocfilehash: 89e82e210dbf7c404ebd5978d87bf391d8565ee2
-ms.sourcegitcommit: 3ea45bbda81be0a869274353e7f6a99e4b83afe2
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97033975"
 ---
 # <a name="install-and-use-the-azure-cosmos-db-emulator-for-local-development-and-testing"></a>Установка и использование эмулятора Azure Cosmos DB для локальной разработки и тестирования
@@ -109,7 +109,7 @@ ms.locfileid: "97033975"
 
 1. Чтобы запустить образ, выполните следующие команды в зависимости от командной строки или среды PowerShell:
 
-   # <a name="command-line"></a>[Командная строка](#tab/cli)
+   # <a name="command-line"></a>[командная строка;](#tab/cli)
 
    ```bash
 
@@ -153,7 +153,7 @@ ms.locfileid: "97033975"
 
 1. Теперь используйте конечную точку эмулятора и первичный ключ из ответа и импортируйте сертификат TLS/SSL в узел. Чтобы импортировать сертификат TLS/SSL, выполните следующие действия в командной строке администратора:
 
-   # <a name="command-line"></a>[Командная строка](#tab/cli)
+   # <a name="command-line"></a>[командная строка;](#tab/cli)
 
    ```bash
    cd  %LOCALAPPDATA%\CosmosDBEmulator\bind-mount
@@ -302,7 +302,7 @@ services:
 
 Отключение проверки SSL рекомендуется только для целей разработки и не должно выполняться при работе в рабочей среде. В следующих примерах показано, как отключить проверку SSL для приложений .NET и Node.js.
 
-# <a name="net-standard-21"></a>[.NET Standard 2.1 +](#tab/ssl-netstd21)
+# <a name="net-standard-21"></a>[.NET Standard 2.1 и выше](#tab/ssl-netstd21)
 
 Для любого приложения, работающего в платформе, совместимой с .NET Standard 2,1 или более поздней версии, мы можем использовать `CosmosClientOptions.HttpClientFactory` :
 
@@ -333,7 +333,7 @@ services:
 
 ## <a name="authenticate-connections-when-using-emulator"></a><a id="authenticate-requests"></a>Проверять подлинность подключений при использовании эмулятора
 
-Как и в настоящей облачной службе Azure, в эмуляторе Azure Cosmos DB для каждого полученного запроса должна выполняться аутентификация. Эмулятор Azure Cosmos DB поддерживает только безопасное взаимодействие через TLS. Эмулятор Azure Cosmos DB поддерживает одну фиксированную учетную запись и известный ключ аутентификации для проверки подлинности с помощью первичного ключа. В качестве учетных данных для эмулятора Azure Cosmos DB можно использовать только эту учетную запись и только этот ключ. К ним относятся:
+Как и в настоящей облачной службе Azure, в эмуляторе Azure Cosmos DB для каждого полученного запроса должна выполняться аутентификация. Эмулятор Azure Cosmos DB поддерживает только безопасное взаимодействие через TLS. Эмулятор Azure Cosmos DB поддерживает одну фиксированную учетную запись и известный ключ аутентификации для проверки подлинности с помощью первичного ключа. В качестве учетных данных для эмулятора Azure Cosmos DB можно использовать только эту учетную запись и только этот ключ. Их можно сформулировать следующим образом.
 
 ```bash
 Account name: localhost:<port>
@@ -348,7 +348,7 @@ Account key: C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZ
 
 ## <a name="connect-to-different-apis-with-the-emulator"></a><a id="connect-with-emulator-apis"></a>Подключение к различным API с помощью эмулятора
 
-### <a name="sql-api"></a>API SQL
+### <a name="sql-api"></a>API SQL
 
 После запуска эмулятора Azure Cosmos DB на рабочем столе можно использовать любой поддерживаемый [пакет SDK Azure Cosmos DB](sql-api-sdk-dotnet-standard.md) или [Azure Cosmos DB REST API](/rest/api/cosmos-db/) для взаимодействия с эмулятором. Эмулятор Azure Cosmos DB также включает встроенный обозреватель данных, который позволяет создавать контейнеры для API SQL или Azure Cosmos DB для API Mongo DB. С помощью обозревателя данных можно просматривать и изменять элементы без написания кода.
 

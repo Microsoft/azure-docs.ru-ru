@@ -12,10 +12,10 @@ ms.date: 05/04/2020
 ms.author: cynthn
 ms.reviewer: akjosh
 ms.openlocfilehash: 90ed91caa1c4b71ae90b86f5b0783a6d5c1c669e
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102552802"
 ---
 # <a name="create-a-shared-image-gallery-using-the-portal"></a>Создание коллекции общих образов с помощью портала
@@ -37,7 +37,7 @@ ms.locfileid: "102552802"
 
 
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Для выполнения примера в этой статье необходимо иметь существующий управляемый образ универсальной виртуальной машины или моментальный снимок специализированной виртуальной машины. Вы можете следовать указаниям в [руководстве по созданию пользовательского образа виртуальной машины Azure с Azure PowerShell](tutorial-custom-images.md) для создания управляемого образа или [создания моментального снимка](../windows/snapshot-copy-managed-disk.md) для специализированной виртуальной машины. Для управляемых образов и моментальных снимков размер диска данных не может превышать 1 ТБ.
 

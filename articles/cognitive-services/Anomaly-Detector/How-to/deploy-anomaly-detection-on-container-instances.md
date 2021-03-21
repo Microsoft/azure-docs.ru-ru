@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 04/01/2020
 ms.author: mbullwin
 ms.openlocfilehash: 3979bb82bfa055cc2a134bf3119097c452ffb855
-ms.sourcegitcommit: 22da82c32accf97a82919bf50b9901668dc55c97
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94364128"
 ---
 # <a name="deploy-an-anomaly-detector-container-to-azure-container-instances"></a>Развертывание контейнера детекторов аномалий в службе "экземпляры контейнеров Azure"
@@ -29,7 +29,7 @@ ms.locfileid: "94364128"
 
 [!INCLUDE [API documentation](../../../../includes/cognitive-services-containers-api-documentation.md)]
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Проверьте раздел [Установка и запуск контейнеров](../anomaly-detector-container-configuration.md) , чтобы получить образ контейнера и запустить контейнер.
 * Ознакомьтесь со статьей о [конфигурации контейнеров](../anomaly-detector-container-configuration.md).

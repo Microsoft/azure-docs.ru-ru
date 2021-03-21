@@ -6,10 +6,10 @@ ms.custom: hdinsightactive
 ms.topic: conceptual
 ms.date: 10/02/2020
 ms.openlocfilehash: 1189a320d0dc700756c9f7664d0a6303be5dab51
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98940888"
 ---
 # <a name="security-options-for-hive-in-azure-hdinsight"></a>Параметры безопасности для Hive в Azure HDInsight
