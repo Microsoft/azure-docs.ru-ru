@@ -9,10 +9,10 @@ ms.author: gachandw
 ms.reviewer: mimckitt
 ms.custom: ''
 ms.openlocfilehash: d9bf1b54f1bfeebacbb406a50c8496817857204c
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102507574"
 ---
 # <a name="azure-cloud-services-extended-support-definition-schema-csdef-file"></a>Схема определения облачных служб Azure (Расширенная поддержка) (файл CSDEF)
@@ -63,7 +63,7 @@ ms.locfileid: "102507574"
 
 В таблице ниже описаны атрибуты элемента `ServiceDefinition`.
 
-| attribute               | Описание |
+| Атрибут               | Описание |
 | ----------------------- | ----------- |
 | name                    |Обязательный. Имя службы. Имя должно быть уникальным в пределах учетной записи службы.|
 | topologyChangeDiscovery | Необязательный параметр. Указывает тип уведомления об изменении топологии. Возможны следующие значения:<br /><br /> -   `Blast` — как можно быстрее отправляет обновление всем экземплярам роли. Чтобы вы могли использовать этот параметр, роль должна иметь возможность обработать обновление топологии без перезапуска.<br />-   `UpgradeDomainWalk` — отправляет обновление каждому экземпляру роли в последовательном режиме после того, как предыдущий экземпляр успешно принял обновление.|

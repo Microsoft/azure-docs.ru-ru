@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 10/30/2020
 ms.openlocfilehash: d1f8993b1adc297b1bfadba114df76a66e59afa2
-ms.sourcegitcommit: 4b76c284eb3d2b81b103430371a10abb912a83f4
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93147190"
 ---
 # <a name="surrogate-key-transformation-in-mapping-data-flow"></a>Преобразование суррогатного ключа в потоке данных сопоставления 
@@ -21,7 +21,7 @@ ms.locfileid: "93147190"
 
 Используйте преобразование «суррогатный ключ», чтобы добавить значение ключа приращения к каждой строке данных. Это полезно при проектировании таблиц измерений в модели аналитических данных схемы типа «звезда». В схеме типа «звезда» каждому элементу в таблицах измерений требуется уникальный ключ, который является небизнесным ключом.
 
-## <a name="configuration"></a>Параметр Configuration
+## <a name="configuration"></a>Конфигурация
 
 ![Преобразование суррогатного ключа](media/data-flow/surrogate.png "Преобразование суррогатного ключа")
 

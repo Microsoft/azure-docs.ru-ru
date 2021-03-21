@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.service: storage
 ms.subservice: partner
 ms.openlocfilehash: 9e7f407ecda1fec8d8ae02e21f3b5a5ea4b0befb
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103561504"
 ---
 # <a name="azure-storage-archive-backup-and-disaster-recovery-partners"></a>Партнеры по архивации, резервному копированию и аварийному восстановлению службы хранилища Azure
@@ -29,7 +29,7 @@ ms.locfileid: "103561504"
 | ![Логотип компании Veeam](./media/veeam-logo.png) |**Veeam**<br> Veeam Backup для Microsoft Azure предоставляет все необходимое для автоматической защиты виртуальных машин Azure. Решение также интегрируется с Veeam Backup & репликации для прозрачного управления гибридными облачными данными в Azure и частном облаке. <br><br>Veeam Backup & репликация обеспечивает защиту всех облачных, виртуальных и физических рабочих нагрузок. Быстрое, гибкое и надежное резервное копирование с быстрым восстановлением. Это обеспечивает минимальное восстановление целевого времени восстановления (RTO) и репликацию для всех приложений и данных. |Партнерские страницы:<br>[Резервное копирование для Azure](https://www.veeam.com/backup-azure.html)<br>[Резервное копирование и репликация](https://www.veeam.com/vm-backup-recovery-replication-software.html) <br>Azure Marketplace: [резервное копирование для Azure](https://azuremarketplace.microsoft.com/marketplace/apps/veeam.azure_backup_free?tab=Overview)<br>[Резервное копирование и репликация](https://azuremarketplace.microsoft.com/marketplace/apps/veeam.veeam-backup-replication)<br>[Руководство по началу работы](./veeam/veeam-solution-guide.md)|
 | ![Логотип компании Veritas](./media/veritas-logo.png) |**Veritas**<br>Решения Veritas Technologies охватывают управление данными в нескольких облаках, защиту данных, оптимизацию хранилища, а также готовность к обеспечению совместимости и переносимости рабочих нагрузок.<br><br>NetBackup предлагает единое решение для защиты и восстановления данных. NetBackup помогает стандартизировать среду, значительно уменьшая сложность и риск независимо от рабочей нагрузки или облака. NetBackup предлагает согласованное аварийное восстановление, беспроблемную рабочую нагрузку и перенос данных, а также устойчивость и мобильность между Azure Stackными средами или между регионами Azure.<br><br>Служба Veritas Backup Exec обеспечивает простую, быструю и безопасную автономную резервную копию в Azure для ваших внутренних виртуальных и физических сред. Он также защищает облачные рабочие нагрузки в Azure.|[Страница партнера](https://www.veritas.com/partners/microsoft-azure)<br>Azure Marketplace:<br>[NetBackup](https://azuremarketplace.microsoft.com/marketplace/apps/veritas.veritas-netbackup-8-s?tab=Overview)<br>[Backup Exec](https://azuremarketplace.microsoft.com/marketplace/apps/veritas.backup-exec-20?tab=Overview)|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о других наших партнерах см. в следующих статьях:
 - [Партнеры по аналитике и большим данным](..\analytics\partner-overview.md)

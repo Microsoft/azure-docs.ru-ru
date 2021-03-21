@@ -3,14 +3,14 @@ title: Журналы аудита — база данных Azure для MariaD
 description: Описание журналов аудита, доступных в базе данных Azure для MariaDB, и доступных параметров для включения уровней ведения журнала.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: conceptual
 ms.date: 6/24/2020
-ms.openlocfilehash: 3032cb8f5ce399822de65c867d1f32da254c9948
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: e66eaf62b54759222421b17ebc7e33b82e018338
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98663763"
 ---
 # <a name="audit-logs-in-azure-database-for-mariadb"></a>Журналы аудита в базе данных Azure для MariaDB
@@ -164,6 +164,6 @@ ms.locfileid: "98663763"
     | order by TimeGenerated asc nulls last
     ``` 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Настройка журналов аудита в портал Azure](howto-configure-audit-logs-portal.md)

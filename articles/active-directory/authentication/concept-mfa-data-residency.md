@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: inbarc
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7381ab62eb39c555c6b4eb34f150fc71bea1f10f
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103561470"
 ---
 # <a name="data-residency-and-customer-data-for-azure-ad-multifactor-authentication"></a>Данные местонахождение и данные клиента для многофакторной проверки подлинности Azure AD
@@ -120,6 +120,6 @@ Azure Active Directory (Azure AD) хранит данные клиентов в 
 
 Журналы службы многофакторной проверки подлинности используются для работы службы.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о том, какие сведения о пользователях собираются с помощью облачной многофакторной проверки подлинности Azure AD и сервера многофакторной идентификации Azure, см. в статье сбор данных пользователей многофакторной проверки [подлинности Azure AD](howto-mfa-reporting-datacollection.md).

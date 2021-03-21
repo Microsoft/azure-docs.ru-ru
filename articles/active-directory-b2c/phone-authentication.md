@@ -12,10 +12,10 @@ ms.date: 09/01/2020
 ms.author: mimart
 ms.subservice: B2C
 ms.openlocfilehash: 2600ea3488c643bcf215b058425de42cd439dcff
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98660273"
 ---
 # <a name="set-up-phone-sign-up-and-sign-in-with-custom-policies-in-azure-ad-b2c"></a>Настройка регистрации телефона и входа в систему с помощью пользовательских политик в Azure AD B2C
@@ -104,7 +104,7 @@ ms.locfileid: "98660273"
 
     `active-directory-b2c-custom-policy-starterpack/scenarios/`**`phone-number-passwordless`**
 
-1. В каждом файле замените строку `yourtenant` именем клиента Azure AD B2C. Например, если имя клиента B2C — *contosob2c*, все экземпляры `yourtenant.onmicrosoft.com` станут `contosob2c.onmicrosoft.com` .
+1. Замените строку `yourtenant` именем вашего клиента Azure AD B2C в каждом файле. Например, если имя вашего клиента B2C — *contosob2c*, все экземпляры `yourtenant.onmicrosoft.com` должны иметь вид `contosob2c.onmicrosoft.com`.
 
 1. Выполните действия, описанные в разделе [Добавление идентификаторов приложений в пользовательскую политику](custom-policy-get-started.md#add-application-ids-to-the-custom-policy) статьи [Приступая к работе с пользовательскими политиками в Azure Active Directory B2C](custom-policy-get-started.md). В этом случае обновите `/phone-number-passwordless/` **`Phone_Email_Base.xml`** **идентификаторы приложения (клиента)** двух приложений, зарегистрированных при выполнении необходимых условий, *IdentityExperienceFramework* и *ProxyIdentityExperienceFramework*.
 

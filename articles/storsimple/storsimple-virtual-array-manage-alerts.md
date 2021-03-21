@@ -16,10 +16,10 @@ ms.date: 01/12/2018
 ms.author: alkohli
 ms.custom: H1Hack27Feb2017
 ms.openlocfilehash: 12fcc9996697f3bbba35826d79bec238bfb0f8b3
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95993002"
 ---
 # <a name="use-storsimple-device-manager-to-manage-alerts-for-the-storsimple-virtual-array"></a>Управление оповещениями для виртуального массива StorSimple с помощью диспетчера устройств StorSimple
@@ -165,6 +165,6 @@ ms.locfileid: "95993002"
 |:--- |:--- |:--- |
 | Срок действия пароля <*имени устройства* \> истекает через <*число* \> дней. |Предупреждение о пароле. |Срок действия пароля истечет через <*число* \> дней. Рекомендуется изменить пароль. Дополнительные сведения см. в статье [Изменение пароля администратора для устройства виртуального массива StorSimple](storsimple-virtual-array-change-device-admin-password.md). |
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Дополнительные сведения о виртуальном массиве StorSimple](storsimple-ova-overview.md).

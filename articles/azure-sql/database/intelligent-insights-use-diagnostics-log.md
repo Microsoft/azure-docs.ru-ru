@@ -12,10 +12,10 @@ ms.author: danil
 ms.reviewer: wiassaf, sstein
 ms.date: 06/12/2020
 ms.openlocfilehash: b03c21eea18c966616154b5cfc5df5d8924fd335
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100589312"
 ---
 # <a name="use-the-intelligent-insights-performance-diagnostics-log-of-azure-sql-database-and-azure-sql-managed-instance-performance-issues"></a>Использование журнала диагностики производительности Intelligent Insights базы данных SQL Azure и проблем с производительностью Управляемый экземпляр SQL Azure
@@ -140,7 +140,7 @@ ms.locfileid: "100589312"
 
 Журнал производительности Intelligent Insights можно использовать с [Azure Monitor журналами]( https://docs.microsoft.com/azure/log-analytics/log-analytics-azure-sql) или решениями сторонних производителей для настраиваемых оповещений и отчетов DevOps.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь с понятиями [Intelligent Insights](intelligent-insights-overview.md).
 - Узнайте, как [устранять проблемы с производительностью Intelligent Insights](intelligent-insights-troubleshoot-performance.md).

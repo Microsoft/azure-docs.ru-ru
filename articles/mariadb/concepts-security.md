@@ -3,14 +3,14 @@ title: Безопасность — база данных Azure для MariaDB
 description: Общие сведения о функциях безопасности в базе данных Azure для MariaDB.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: conceptual
 ms.date: 3/18/2020
-ms.openlocfilehash: 9e6ca797b1e982e1ef632ba99e9210e3c347a2f1
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: 8a46f70e3089a8610fa8ca6362bcba6f624e2b1a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98664186"
 ---
 # <a name="security-in-azure-database-for-mariadb"></a>Безопасность в Базе данных Azure для MariaDB
@@ -50,5 +50,5 @@ ms.locfileid: "98664186"
 [Ведение журнала аудита](concepts-audit-logs.md) доступно для наблюдения за действиями в базах данных. 
 
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Включение правил брандмауэра для [IP-адресов](concepts-firewall-rules.md) или [виртуальных сетей](concepts-data-access-security-vnet.md)

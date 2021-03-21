@@ -7,10 +7,10 @@ author: bwren
 ms.author: bwren
 ms.date: 12/22/2020
 ms.openlocfilehash: 5a0e04772cfc1c9be77c0ad8b32b0e93be8b9f54
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102046726"
 ---
 # <a name="configure-log-analytics-workspace-for-vm-insights"></a>Настройка рабочей области Log Analytics для VM Insights

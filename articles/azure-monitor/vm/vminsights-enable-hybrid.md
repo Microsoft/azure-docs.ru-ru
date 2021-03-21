@@ -6,10 +6,10 @@ author: bwren
 ms.author: bwren
 ms.date: 07/27/2020
 ms.openlocfilehash: c3c8495b7355ee5d9ee8c28b4e0097a0080964d4
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102046645"
 ---
 # <a name="enable-vm-insights-for-a-hybrid-virtual-machine"></a>Включение аналитики VM для гибридной виртуальной машины
@@ -94,7 +94,7 @@ Dependency Agent устанавливается на серверах Linux с �
 | Файлы | Расположение |
 |:--|:--|
 | Основные файлы | /opt/microsoft/dependency-agent |
-| файлы журналов. | /var/opt/microsoft/dependency-agent/log |
+| Файлы журнала | /var/opt/microsoft/dependency-agent/log |
 | Файлы конфигурации | /etc/opt/microsoft/dependency-agent/config |
 | Исполняемые файлы службы | /opt/microsoft/dependency-agent/bin/microsoft-dependency-agent<br>/opt/microsoft/dependency-agent/bin/microsoft-dependency-agent-manager |
 | Двоичные файлы хранилища | /var/opt/microsoft/dependency-agent/storage |
@@ -174,7 +174,7 @@ configuration VMInsights {
 Проверьте файл C:\Program Files\Microsoft Dependency Agent\logs\wrapper.log (Windows) или /var/opt/microsoft/dependency-agent/log/service.log (Linux). В последних строках файла должно быть указано, почему не удалось загрузить ядро. Например, если вы обновили ядро, оно может не поддерживаться в Linux.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Теперь, когда наблюдение включено для виртуальных машин, эти сведения доступны для анализа с помощью VM Insights.
 

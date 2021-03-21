@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 03/10/2021
 ms.author: heikora
 ms.openlocfilehash: b8e02071eca139cde02a8bad1b0e0e443db6ab86
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103555493"
 ---
 # <a name="model-and-endpoint-lifecycle"></a>Жизненный цикл модели и конечной точки
@@ -97,7 +97,7 @@ ms.locfileid: "103555493"
 ```
 Обратите внимание, что модель можно обновить на пользовательской конечной точке речи без простоев, изменив модель, используемую конечной точкой в разделе развертывания в Speech Studio, или через пользовательский API распознавания речи.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Обучение и развертывание модели](how-to-custom-speech-train-model.md)
 

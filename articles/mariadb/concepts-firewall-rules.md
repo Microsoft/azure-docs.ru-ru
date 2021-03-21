@@ -3,14 +3,14 @@ title: Правила брандмауэра — база данных Azure д�
 description: Узнайте, как использовать правила брандмауэра, чтобы включить подключения к серверу базы данных Azure для MariaDB.
 author: savjani
 ms.author: pariks
-ms.service: jroth
+ms.service: mariadb
 ms.topic: conceptual
 ms.date: 7/17/2020
-ms.openlocfilehash: 2a200f25a42bc10b2e986fb710d1e7bc27a48880
-ms.sourcegitcommit: 52e3d220565c4059176742fcacc17e857c9cdd02
+ms.openlocfilehash: 452ef4787812dbdf88eb541cf5a164f2888dddcc
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98662565"
 ---
 # <a name="azure-database-for-mariadb-server-firewall-rules"></a>Правила брандмауэра сервера Базы данных Azure для MariaDB
@@ -74,7 +74,7 @@ ms.locfileid: "98662565"
 
 * **Правило брандмауэра недоступно для формата IPv6:** Правила брандмауэра должны иметь формат IPv4. Если указать правила брандмауэра в формате IPv6, отобразится ошибка проверки.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Создание правил брандмауэра MariaDB в Базе данных Azure для MariaDB и управление ими на портале Azure](./howto-manage-firewall-portal.md)
 - [Создание правил брандмауэра Базы данных Azure для MariaDB и управление ими с помощью Azure CLI](./howto-manage-firewall-cli.md)
 - [Конечные точки службы виртуальной сети в базе данных Azure для MariaDB](./concepts-data-access-security-vnet.md)

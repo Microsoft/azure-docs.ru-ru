@@ -7,10 +7,10 @@ ms.manager: abhemraj
 ms.topic: how-to
 ms.date: 6/08/2020
 ms.openlocfilehash: c3aa2aea764af8469152b007e60427724fea398a
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102045859"
 ---
 # <a name="analyze-server-dependencies-agentless"></a>Анализ зависимостей сервера (без агента)
@@ -28,7 +28,7 @@ ms.locfileid: "102045859"
 - Схема зависимостей для группы серверов в настоящее время недоступна.
 - В проекте службы "миграция Azure" сбор данных о зависимостях можно включить параллельно для серверов 1000. Можно проанализировать большее количество серверов путем виртуализации в пакетах серверов 1000.
 
-## <a name="before-you-start"></a>Прежде чем начать
+## <a name="before-you-start"></a>Перед началом работы
 
 - Убедитесь, что вы [создали проект "миграция Azure](./create-manage-projects.md) " с помощью средства "миграция Azure", добавленного к нему.
 - Ознакомьтесь с [требованиями к VMware](migrate-support-matrix-vmware.md#vmware-requirements) , чтобы выполнить анализ зависимостей.
@@ -245,6 +245,6 @@ ms.locfileid: "102045859"
 
 7. Визуализировать карту сетевых подключений по серверам и процессам. Сохраните файл.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Групповые серверы](how-to-create-a-group.md) для оценки.

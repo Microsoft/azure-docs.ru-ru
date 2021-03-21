@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 07/14/2020
 ms.author: azfuncdf
 ms.openlocfilehash: 64d40de50f21811a56318971de1836abc8fbf8c9
-ms.sourcegitcommit: daab0491bbc05c43035a3693a96a451845ff193b
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93027267"
 ---
 # <a name="http-features"></a>Функции HTTP
@@ -57,7 +57,7 @@ ms.locfileid: "93027267"
 
 # <a name="python"></a>[Python](#tab/python)
 
-**__init__ .py**
+**__init__. Корректировка**
 
 ```python
 import logging
@@ -140,7 +140,7 @@ Retry-After: 10
 
 ### <a name="async-operation-tracking"></a>Отслеживание асинхронных операций
 
-Упомянутый ранее HTTP-ответ предназначен для помощи в реализации долго выполняющихся асинхронных API-интерфейсов HTTP с устойчивыми функциями. Этот шаблон иногда называют *шаблоном объекта-получателя опроса* . Поток клиента или сервера работает следующим образом:
+Упомянутый ранее HTTP-ответ предназначен для помощи в реализации долго выполняющихся асинхронных API-интерфейсов HTTP с устойчивыми функциями. Этот шаблон иногда называют *шаблоном объекта-получателя опроса*. Поток клиента или сервера работает следующим образом:
 
 1. Клиент отправляет запрос HTTP для запуска длительного процесса, например, функции Orchestrator.
 1. Целевой триггер HTTP возвращает ответ HTTP 202 с заголовком Location со значением "statusQueryGetUri".

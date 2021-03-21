@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 07/28/2020
 ms.reviewer: sngun
 ms.openlocfilehash: d9eb55030c7ec52f9b2ac79fbab19944f0a3e190
-ms.sourcegitcommit: 3bdeb546890a740384a8ef383cf915e84bd7e91e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "93087831"
 ---
 # <a name="automated-recommendations-for-azure-cosmos-db"></a>Автоматические рекомендации для Azure Cosmos DB
@@ -27,9 +27,9 @@ ms.locfileid: "93087831"
 
    :::image type="content" source="./media/automated-recommendations/cosmos-db-pane-recommendations.png" alt-text="Просмотр рекомендаций из панели Azure Cosmos DB":::
 
-- Вы также можете найти рекомендации с помощью [помощника по Azure](../advisor/advisor-overview.md) в категории по различным сегментам, таким как стоимость, безопасность, надежность, производительность и эффективное эксплуатация. Можно выбрать определенные подписки и выполнить фильтрацию по типу ресурса, который **Azure Cosmos DB учетных записей** .  При выборе конкретной рекомендации отображаются действия, которые можно предпринять для получения преимуществ в рабочих нагрузках.
+- Вы также можете найти рекомендации с помощью [помощника по Azure](../advisor/advisor-overview.md) в категории по различным сегментам, таким как стоимость, безопасность, надежность, производительность и эффективное эксплуатация. Можно выбрать определенные подписки и выполнить фильтрацию по типу ресурса, который **Azure Cosmos DB учетных записей**.  При выборе конкретной рекомендации отображаются действия, которые можно предпринять для получения преимуществ в рабочих нагрузках.
 
-   :::image type="content" source="./media/automated-recommendations/advisor-pane-recommendations.png" alt-text="Просмотр рекомендаций из панели Azure Cosmos DB":::
+   :::image type="content" source="./media/automated-recommendations/advisor-pane-recommendations.png" alt-text="Просмотр рекомендаций на панели помощника Azure":::
 
 Не все рекомендации, показанные на панели Azure Cosmos DB, доступны в помощнике по Azure и наоборот. Это обусловлено тем, что в зависимости от типа рекомендаций, которые они помещаются на панели помощника по Azure, Azure Cosmos DB области или и того, и другого.
 

@@ -12,10 +12,10 @@ ms.author: danil
 ms.reviewer: wiassaf, sstein
 ms.date: 05/04/2020
 ms.openlocfilehash: d37465223000399aa42895626c48426ddadc0c72
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100592703"
 ---
 # <a name="create-alerts-for-azure-sql-managed-instance-using-the-azure-portal"></a>Создание оповещений для Управляемого экземпляра SQL на портале Azure.
@@ -66,7 +66,7 @@ ms.locfileid: "100592703"
 
 2. Выберите пункт меню **метрик** в разделе Мониторинг.
 
-   ![Наблюдение](./media/alerts-create/mi-alerting-menu-annotated.png)
+   ![Мониторинг](./media/alerts-create/mi-alerting-menu-annotated.png)
   
 3. В раскрывающемся меню выберите одну из метрик, для которых вы хотите настроить оповещение (в примере используется используемое дисковое пространство).
 
@@ -140,7 +140,7 @@ ms.locfileid: "100592703"
 
    Отобразится список существующих предупреждений. Выберите отдельное существующее правило генерации оповещений для управления. Существующие активные правила могут быть изменены и настроены в предпочтениях. Активные правила также могут быть приостановлены без удаления. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о Azure Monitor системе предупреждений см. [в разделе Обзор оповещений в Microsoft Azure](../../azure-monitor/alerts/alerts-overview.md)
 * Дополнительные сведения об оповещениях метрик см. в статье Общие сведения о [работе оповещений метрик в Azure Monitor](../../azure-monitor/alerts/alerts-metric-overview.md)

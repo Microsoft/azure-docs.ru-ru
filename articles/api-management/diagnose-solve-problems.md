@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 02/05/2021
 ms.author: rongzhang
 ms.openlocfilehash: d8ec04227316088983977f5b487abfa81fb5c525
-ms.sourcegitcommit: b4647f06c0953435af3cb24baaf6d15a5a761a9c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101652408"
 ---
 # <a name="azure-api-management-diagnostics-overview"></a>Обзор диагностики управления API Azure
