@@ -12,10 +12,10 @@ manager: daveba
 ms.reviewer: michmcla
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b42f920726d4b3046ab0c292e1090f5217e8b1f9
-ms.sourcegitcommit: ad83be10e9e910fd4853965661c5edc7bb7b1f7c
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96743247"
 ---
 # <a name="securing-cloud-resources-with-azure-ad-multi-factor-authentication-and-ad-fs"></a>Защита облачных ресурсов с помощью многофакторной идентификации Azure AD и AD FS
@@ -80,7 +80,7 @@ ms.locfileid: "96743247"
 ```
 
 13. Нажмите кнопку **Готово**.
-14. Нажмите кнопку **Применить**.
+14. Щелкните **Применить**.
 15. Нажмите кнопку **ОК**.
 16. Откройте оснастку управления AD FS.
 

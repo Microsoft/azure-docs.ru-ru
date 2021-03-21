@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: dobett
 ms.openlocfilehash: a092859517ee6ac41e62e55fe95f72b8bfdf87d5
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96011206"
 ---
 # <a name="customize-how-the-connected-factory-solution-displays-data-from-your-opc-ua-servers"></a>Настройка отображения данных с серверов OPC UA в решении "Подключенная фабрика"
@@ -78,12 +78,12 @@ ms.locfileid: "96011206"
 
 Репозиторий **azure-iot-connected-factory** содержит скрипт PowerShell **build.ps1**, который можно использовать, чтобы повторно создать и развернуть решение.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения об акселераторе решения "Подключенная фабрика" см. в следующих статьях:
 
 * [Разрешения на сайте azureiotsolutions.com][lnk-permissions]
-* [Вопросы и ответы о подключенной фабрике](iot-accelerators-faq-cf.md)
+* [Подключенная фабрика: вопросы и ответы](iot-accelerators-faq-cf.md)
 * [Часто задаваемые вопросы][lnk-faq]
 
 

@@ -13,10 +13,10 @@ ms.author: amishu
 ms.custom: devx-track-csharp
 zone_pivot_groups: programming-languages-set-twenty-two
 ms.openlocfilehash: 1e08203076de2073e39c5b5f5eb40b66c88490d7
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103417712"
 ---
 # <a name="use-codec-compressed-audio-input-with-the-speech-sdk"></a>Использование сжатых звуковых данных кодека с помощью пакета SDK для распознавания речи
@@ -27,7 +27,7 @@ ms.locfileid: "103417712"
 | :--- | ---: | :---:
 Windows (за исключением UWP)  | C++, C#, Java, Python | [1.18.3](https://gstreamer.freedesktop.org/data/pkg/windows/1.18.3/)
 Linux  | C++, C#, Java, Python | [Поддерживаемые дистрибутивы Linux и целевые архитектуры](~/articles/cognitive-services/speech-service/speech-sdk.md)
-Android.  | Java | [1.18.3](https://gstreamer.freedesktop.org/data/pkg/android/1.18.3/)
+Android  | Java | [1.18.3](https://gstreamer.freedesktop.org/data/pkg/android/1.18.3/)
 
 ## <a name="speech-sdk-version-required-for-compressed-audio-input"></a>Версия пакета SDK для речи, необходимая для сжатого звукового ввода
 * Требуется пакет SDK для распознавания речи версии 1.10.0 или более поздней для RHEL 8 и CentOS 8
@@ -72,7 +72,7 @@ Android.  | Java | [1.18.3](https://gstreamer.freedesktop.org/data/pkg/android/1
 [!INCLUDE [prerequisites](includes/how-to/compressed-audio-input/python/examples.md)]
 ::: zone-end
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Узнайте, как распознать речь](./get-started-speech-to-text.md)

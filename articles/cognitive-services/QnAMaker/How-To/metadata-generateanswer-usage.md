@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/09/2020
 ms.custom: devx-track-js, devx-track-csharp
 ms.openlocfilehash: 9d2100dbc2c5f24742a949778a1b7450bf303c5f
-ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103232211"
 ---
 # <a name="get-an-answer-with-the-generateanswer-api"></a>Получение ответа с помощью API Женератеансвер
@@ -212,7 +212,7 @@ var qnaResults = await this.qnaMaker.getAnswers(stepContext.context, qnaMakerOpt
 
 |настройка отображения;|енаблепреЦисеансвер|дисплайпреЦисеансверонли|
 |:--|--|--|
-|Только точные ответы|Да|true|
+|Только точные ответы|true|true|
 |Только длинные ответы|false|false|
 |Как длинные, так и точные ответы|true|false|
 
@@ -220,9 +220,9 @@ var qnaResults = await this.qnaMaker.getAnswers(stepContext.context, qnaMakerOpt
 
 ## <a name="common-http-errors"></a>Распространенные ошибки HTTP
 
-|Код|Описание|
+|Код|Пояснение|
 |:--|--|
-|"2xx"|Success|
+|"2xx"|Успешно|
 |400|Параметры запроса указаны неправильно. Это означает, что требуемые параметры отсутствуют, имеют неправильный формат или слишком большой размер|
 |400|Текст запроса указан неправильно. Это означает, что JSON отсутствует, имеет неправильный формат или слишком большой размер|
 |401|Недопустимый ключ|
@@ -230,7 +230,7 @@ var qnaResults = await this.qnaMaker.getAnswers(stepContext.context, qnaMakerOpt
 |404|База знаний не существует|
 |410|Этот API устарел и больше недоступен|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 На странице **Публикация** также содержатся сведения для [создания ответа](../Quickstarts/get-answer-from-knowledge-base-using-url-tool.md) с помощью POST-или перелистывания.
 

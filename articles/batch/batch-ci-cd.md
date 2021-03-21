@@ -6,10 +6,10 @@ ms.author: chredd
 ms.date: 03/04/2021
 ms.topic: how-to
 ms.openlocfilehash: 7170044af58a508ff5a43751cc376f8b8d498444
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102435551"
 ---
 # <a name="use-azure-pipelines-to-build-and-deploy-hpc-solutions"></a>Использование Azure Pipelines для создания и развертывания решений HPC
@@ -18,7 +18,7 @@ ms.locfileid: "102435551"
 
 В этой статье объясняется, как настроить процессы CI/CD с помощью [Azure pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) для решений HPC, развернутых в пакетной службе Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для выполнения действий, описанных в этой статье, требуется [Организация Azure DevOps](/azure/devops/organizations/accounts/create-organization). Вам также потребуется [создать проект в Azure DevOps](/azure/devops/organizations/projects/create-project).
 

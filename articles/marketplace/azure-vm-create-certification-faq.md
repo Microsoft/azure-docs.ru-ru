@@ -8,10 +8,10 @@ author: mathapli
 ms.author: mathapli
 ms.date: 01/18/2021
 ms.openlocfilehash: adcd91d58b3bb5fde3ffa81c828c58d4b6db48d4
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101721163"
 ---
 # <a name="troubleshoot-virtual-machine-certification"></a>Устранение неполадок сертификации виртуальной машины
@@ -252,7 +252,7 @@ ms.locfileid: "101721163"
 ||7.2|3.10.0 — 327.79.2|
 ||7.3|3.10.0 — 514.66.2|
 ||7.4|3.10.0 — 693.50.3|
-||7,5 %|3.10.0 — 862.34.2|
+||7.5|3.10.0 — 862.34.2|
 ||7.6|3.10.0 — 957.21.3|
 ||7.7|3.10.0 — 1062.1.1|
 ||8.0|4.18.0 — 80.4.2|

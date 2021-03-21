@@ -15,10 +15,10 @@ ms.date: 08/31/2020
 ms.author: inhenkel
 ms.reviewer: anilmur
 ms.openlocfilehash: f0cf89a755090010bb80507c52f90baa2a4e804a
-ms.sourcegitcommit: d135e9a267fe26fbb5be98d2b5fd4327d355fe97
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102617630"
 ---
 # <a name="standard-encoder-formats-and-codecs"></a>Стандартные форматы и кодеки кодировщика
@@ -49,7 +49,7 @@ ms.locfileid: "102617630"
 
 * файлы MXF, GXF и QuickTime со звуковыми дорожками с чередованием стерео или форматом 5.1;
 
-или
+или диспетчер конфигурации служб
 
 * файлы MXF, GXF и QuickTime, где звук переносится как отдельные дорожки PCM, но сопоставление каналов (стерео или 5.1) можно определить по метаданным файла.
 
@@ -101,6 +101,6 @@ ms.locfileid: "102617630"
 | MP4 <br/><br/>(включая контейнеры MP4 с несколькими скоростями) |H. 264 (высокий, основной и базовый профили), HEVC (H. 265) 8-bit |AAC-LC, HE-AAC v1, HE-AAC v2 |
 | MPEG2-TS |H.264 (профили High, Main и Baselin) |AAC-LC, HE-AAC v1, HE-AAC v2 |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Создание преобразования с помощью настраиваемой предустановки](customize-encoder-presets-how-to.md)

@@ -6,10 +6,10 @@ ms.topic: article
 ms.date: 02/1/2021
 ms.author: miwithro
 ms.openlocfilehash: 2cf72da8f7ca82c37088cd6456f094ada2580982
-ms.sourcegitcommit: df1930c9fa3d8f6592f812c42ec611043e817b3b
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103418969"
 ---
 # <a name="aks-managed-azure-active-directory-integration"></a>Интеграция Azure Active Directory с управляемым AKS
@@ -48,7 +48,7 @@ kubelogin --version
 
 Используйте [эти инструкции](https://kubernetes.io/docs/tasks/tools/install-kubectl/) для других операционных систем.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Для кластера требуется группа Azure AD. Эта группа необходима в качестве группы администраторов кластера для предоставления разрешений администратора кластера. Вы можете использовать существующую группу Azure AD или создать новую. Запишите идентификатор объекта вашей группы Azure AD.
 
@@ -286,7 +286,7 @@ aks-nodepool1-61156405-vmss000001   Ready    agent   6m42s   v1.18.14
 aks-nodepool1-61156405-vmss000002   Ready    agent   6m33s   v1.18.14
 ```
 
-### <a name="troubleshooting"></a>Диагностика
+### <a name="troubleshooting"></a>Устранение неполадок
 
 Если функция `kubectl get nodes` возвращает ошибку, аналогичную следующей:
 
@@ -296,7 +296,7 @@ Error from server (Forbidden): nodes is forbidden: User "aaaa11111-11aa-aa11-a1a
 
 Убедитесь, что администратор группы безопасности предоставил вашей учетной записи *активное* назначение.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Сведения об [интеграции с Azure RBAC для авторизации Kubernetes][azure-rbac-integration]
 * Сведения об [интеграции Azure AD с KUBERNETES RBAC][azure-ad-rbac].

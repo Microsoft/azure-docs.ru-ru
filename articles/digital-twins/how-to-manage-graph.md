@@ -8,10 +8,10 @@ ms.date: 11/03/2020
 ms.topic: how-to
 ms.service: digital-twins
 ms.openlocfilehash: fde473453aa79e0078765df394acdeb54b3c7fe9
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102433324"
 ---
 # <a name="manage-a-graph-of-digital-twins-using-relationships"></a>Управление графиком цифровых двойников с помощью связей
@@ -22,7 +22,7 @@ ms.locfileid: "102433324"
 
 Эта статья посвящена управлению связями и графу в целом. для работы с отдельными цифровыми двойниковми см. раздел [*как управлять цифровыми двойников*](how-to-manage-twin.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [digital-twins-prereq-instance.md](../../includes/digital-twins-prereq-instance.md)]
 
@@ -188,8 +188,8 @@ ms.locfileid: "102433324"
 
 |  Идентификатор модели    | Идентификатор двойника (должен быть уникальным) | Имя связи  | Идентификатор целевого двойника  | Данные инициализации двойника |
 | --- | --- | --- | --- | --- |
-| дтми: пример: Floor; 1    | Floor1 | contains | Room1 | |
-| дтми: пример: Floor; 1    | Floor0 | contains | Room0 | |
+| дтми: пример: Floor; 1    | Floor1 | содержит | Room1 | |
+| дтми: пример: Floor; 1    | Floor0 | содержит | Room0 | |
 | дтми: пример: комната; 1    | Room1 | | | {"Температура": 80} |
 | дтми: пример: комната; 1    | Room0 | | | {"Температура": 70} |
 

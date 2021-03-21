@@ -17,10 +17,10 @@ ms.date: 10/27/2020
 ms.author: allensu
 ms.custom: subject-armqs, devx-track-azurecli
 ms.openlocfilehash: 68e08b0f029e6297beee85135b4af1e4575d5470
-ms.sourcegitcommit: e7152996ee917505c7aba707d214b2b520348302
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97703795"
 ---
 # <a name="quickstart-create-a-nat-gateway---arm-template"></a>Краткое руководство. Создание шлюза NAT с помощью шаблона ARM

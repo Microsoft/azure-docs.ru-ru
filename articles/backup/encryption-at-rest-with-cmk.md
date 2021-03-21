@@ -4,10 +4,10 @@ description: Узнайте, как Azure Backup позволяет шифров
 ms.topic: conceptual
 ms.date: 07/08/2020
 ms.openlocfilehash: 474f4238276f460abde3d600422e309171875a0c
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101716743"
 ---
 # <a name="encryption-of-backup-data-using-customer-managed-keys"></a>Шифрование данных резервного копирования с использованием ключей, управляемых клиентом
@@ -23,7 +23,7 @@ Azure Backup позволяет зашифровать данные резерв
 - Выполнение резервного копирования в хранилищах, зашифрованных с помощью управляемых клиентом ключей
 - Восстановление данных из резервных копий
 
-## <a name="before-you-start"></a>Прежде чем начать
+## <a name="before-you-start"></a>Перед началом работы
 
 - Эта функция позволяет шифровать **только новые хранилища служб восстановления**. Все хранилища, содержащие зарегистрированные или регистрируемые в нем элементы, не поддерживаются.
 

@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 01/08/2021
 ms.author: erhopf
 ms.openlocfilehash: 22127f81d871fe333750020196540db17e7544f7
-ms.sourcegitcommit: c4c554db636f829d7abe70e2c433d27281b35183
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98033469"
 ---
 ## <a name="authentication"></a>Аутентификация
@@ -20,7 +20,7 @@ ms.locfileid: "98033469"
 | Ocp-Apim-Subscription-Key | Да | Да |
 | Authorization: Bearer | Да | Да |
 
-При использовании заголовка `Ocp-Apim-Subscription-Key` необходимо предоставить только ключ подписки. Например:
+При использовании заголовка `Ocp-Apim-Subscription-Key` необходимо предоставить только ключ подписки. Пример:
 
 ```http
 'Ocp-Apim-Subscription-Key': 'YOUR_SUBSCRIPTION_KEY'

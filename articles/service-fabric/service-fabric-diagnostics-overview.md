@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 1/17/2019
 ms.author: srrengar
 ms.openlocfilehash: 25a50a2841a03929804be45be8012f9b5d0457ff
-ms.sourcegitcommit: 829d951d5c90442a38012daaf77e86046018e5b9
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "91357137"
 ---
 # <a name="monitoring-and-diagnostics-for-azure-service-fabric"></a>Мониторинг и диагностика для Azure Service Fabric
@@ -83,7 +83,7 @@ Azure Monitorным решением для их получения являют
 
 Основные моменты, на которые следует обратить внимание при выборе платформы: удобство пользовательского интерфейса, возможности запроса данных, доступные визуализации и панели мониторинга, а также наличие дополнительных инструментов для улучшения мониторинга. 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Сведения о начале работы с инструментированием приложений см. в разделе [Создание событий и журналов на уровне приложения](service-fabric-diagnostics-event-generation-app.md).
 * Выполните процедуру настройки Application Insights для приложения, следуя указаниям в разделе [Руководство. Мониторинг и диагностика приложения ASP.NET Core в Service Fabric](service-fabric-tutorial-monitoring-aspnet.md).
