@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 04/22/2019
 ms.reviewer: sdash
 ms.openlocfilehash: 865de94f1d9b4012a908643bbf87f38aeb8594a0
-ms.sourcegitcommit: b39cf769ce8e2eb7ea74cfdac6759a17a048b331
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98679472"
 ---
 # <a name="live-metrics-stream-monitor--diagnose-with-1-second-latency"></a>Live Metrics Stream: мониторинг и диагностика с задержкой в 1 секунду
@@ -115,7 +115,7 @@ namespace LiveMetricsDemo
 |**Задержка**|Данные отображаются в течение одной секунды|Агрегирование выполняется в течение нескольких минут|
 |**Нет сохранения**|Данные сохраняются, только пока они отображаются на диаграмме, а затем удаляются.|[Данные сохраняются 90 дней](./data-retention-privacy.md#how-long-is-the-data-kept)|
 |**по запросу**|Данные передаются только в том случае, если открыта панель "активные метрики" |Данные отправляются, когда пакет SDK установлен и включен|
-|**Бесплатно**|Плата за данные Live Stream не взимается|Действуют [расценки](./pricing.md)
+|**Бесплатный**|Плата за данные Live Stream не взимается|Действуют [расценки](./pricing.md)
 |**Выборка**|Передаются все выбранные метрики и счетчики. Производится выборка сбоев и трассировок стека. |Может производиться [выборка](./api-filtering-sampling.md) событий.|
 |**Канал управления**|В пакет SDK отправляются управляющие сигналы фильтрации. Мы советуем защитить этот канал.|Обмен данными — это один из способов, на портале|
 
@@ -181,11 +181,11 @@ namespace LiveMetricsDemo
 </Add>
 ```
 
-### <a name="aspnet-core"></a>ASP.NET Core
+### <a name="aspnet-core"></a>ASP.NET Core
 
 Для [ASP.NET Core](./asp-net-core.md) приложений следуйте приведенным ниже инструкциям.
 
-Измените `ConfigureServices` файл startup.cs следующим образом:
+Измените `ConfigureServices` файл startup. cs следующим образом:
 
 Добавьте следующее пространство имен.
 
@@ -260,7 +260,7 @@ using Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.QuickPuls
 
 Live Metrics Stream использует IP-адреса, отличные от других Application Insights телеметрии. Убедитесь, что [эти IP-адреса](./ip-addresses.md) открыты в брандмауэре. Также убедитесь, что [исходящие порты для Live Metrics Stream](./ip-addresses.md#outgoing-ports) открыты в брандмауэре серверов.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Отслеживание использования Application Insights.](./usage-overview.md)
 * [Использование диагностического поиска](./diagnostic-search.md)

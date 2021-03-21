@@ -5,10 +5,10 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 05/08/2020
 ms.openlocfilehash: a7baa9340a1f0a99b94bfcbe535c73d0b502e2a0
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98933068"
 ---
 # <a name="interactive-query-cluster-sizing-guide-in-azure-hdinsight"></a>Руководство по настройке размера кластера Interactive Query в Azure HDInsight
@@ -30,7 +30,7 @@ ms.locfileid: "98933068"
 | Клавиши | Значение | Описание |
 |---|---|---|
 | yarn.nodemanager.resource.memory-mb | 102400 (MБ) | Общий объем памяти в МБ, выделенный для всех контейнеров YARN на узле. |
-| yarn.scheduler.maximum-allocation-mb | 102400 (MБ) | Максимальное выделение памяти в МБ для каждого запроса контейнера в Resource Manager. Запросы на память выше этого значения не будут выполнены. |
+| yarn.scheduler.maximum-allocation-mb | 102400 (MБ) | Максимальное выделение памяти в МБ для каждого запроса контейнера в Resource Manager. Запросы на память выше этого значения не будут выполнены. |
 | yarn.scheduler.maximum-allocation-vcores | 12 |Максимальное количество ядер ЦП для каждого запроса контейнера в Resource Manager. Запросы на получение больших значений не будут выполнены. |
 | yarn.scheduler.capacity.root.llap.capacity | 90 % | Распределение емкости YARN в очереди LLAP.  |
 | hive.server2.tez.sessions.per.default.queue | количество_рабочих_узлов |Число сеансов для каждой очереди, заданной в hive.server2.tez.default.queues. Это число соответствует числу координаторов запросов (Tez AM). |

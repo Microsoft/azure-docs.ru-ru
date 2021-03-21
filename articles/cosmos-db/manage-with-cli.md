@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 10/13/2020
 ms.author: mjbrown
 ms.openlocfilehash: b13f5bfffced9afd80663d606e30e028e52643ac
-ms.sourcegitcommit: 04fb3a2b272d4bbc43de5b4dbceda9d4c9701310
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94563844"
 ---
 # <a name="manage-azure-cosmos-core-sql-api-resources-using-azure-cli"></a>Управление ресурсами API Azure Cosmos Core (SQL) с помощью Azure CLI
@@ -21,7 +21,7 @@ ms.locfileid: "94563844"
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
-- Для работы с этой статьей требуется версия 2.12.1 или более поздняя Azure CLI. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
+- Для работы с этой статьей требуется Azure CLI версии 2.12.1 или более поздней. Если вы используете Azure Cloud Shell, последняя версия уже установлена.
 
 Примеры Azure CLI для других интерфейсов API см. в статьях [Примеры CLI для Cassandra](cli-samples-cassandra.md), [Примеры CLI для API MongoDB](cli-samples-mongodb.md), [Примеры CLI для Gremlin](cli-samples-gremlin.md) и [Примеры CLI для таблиц](cli-samples-table.md).
 

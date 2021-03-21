@@ -5,10 +5,10 @@ ms.topic: conceptual
 ms.date: 09/23/2020
 ms.custom: devx-track-js
 ms.openlocfilehash: 91b3aa07720e39aa8aeeceb9c35e38205e7d7c76
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100584081"
 ---
 # <a name="geolocation-and-ip-address-handling"></a>Обработка геолокации и IP-адресов
@@ -243,7 +243,7 @@ requests
 
 Если проверка выполняется с localhost, а значение параметра `customDimensions_client-ip` — `::1` , то это ожидаемое поведение. `::1` представляет петлевой адрес в IPv6. Он эквивалентен `127.0.0.1` в IPv4.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Дополнительные сведения о [сборе персональных данных](../logs/personal-data-mgmt.md) в Application Insights.
 

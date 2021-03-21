@@ -6,10 +6,10 @@ ms.service: hdinsight
 ms.topic: conceptual
 ms.date: 02/08/2021
 ms.openlocfilehash: 3ea5168641f233f2e9580612a2f245fd8fef860f
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101699357"
 ---
 # <a name="azure-hdinsight-release-notes"></a>Заметки о выпуске Azure HDInsight
@@ -26,7 +26,7 @@ Azure HDInsight является одной из самых популярных
 
 Этот выпуск относится как к HDInsight 3,6, так и к HDInsight 4,0. Выпуск HDInsight предоставляется для разных регионов на протяжении нескольких дней. Указанная здесь дата выпуска обозначает дату выпуска для первого из регионов. Если вы не видите приведенных ниже изменений, дождитесь выхода выпуска в вашем регионе в течение нескольких дней.
 
-## <a name="new-features"></a>Новые функции
+## <a name="new-features"></a>новые функции;
 ### <a name="dav4-series-support"></a>Поддержка серии Dav4
 В этом выпуске добавлена поддержка Dav4 серии HDInsight. Дополнительные сведения о [серии Dav4](/azure/virtual-machines/dav4-dasv4-series)см. здесь.
 

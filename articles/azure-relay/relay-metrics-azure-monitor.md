@@ -5,10 +5,10 @@ services: service-bus-relay
 ms.topic: article
 ms.date: 06/23/2020
 ms.openlocfilehash: 7f91ac0aec46d0fc24901585156dceabb18640c1
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100586823"
 ---
 # <a name="azure-relay-metrics-in-azure-monitor"></a>Метрики Azure Relay в Azure Monitor 
@@ -77,7 +77,7 @@ Azure Monitor предоставляет несколько способов д�
 | ------------------- | ----------------- |
 |EntityName| Ретранслятор Azure поддерживает сущности обмена сообщениями в пространстве имен.|
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Ознакомьтесь с разделом [Обзор мониторинга в Microsoft Azure](../azure-monitor/overview.md).
 

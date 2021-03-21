@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 02/26/2019
 ms.custom: devx-track-js
 ms.openlocfilehash: 3c78ad6605e927015d35df12cadf0347dd0337cf
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96349050"
 ---
 # <a name="how-to-globally-distribute-reads-using-azure-cosmos-dbs-api-for-mongodb"></a>Глобальное распространение операций чтения с помощью API Azure Cosmos DB для MongoDB
@@ -174,4 +174,4 @@ MongoClient.connect(url, function(err, client) {
 
 * [Перенос данных MongoDB в Azure Cosmos DB](../dms/tutorial-mongodb-cosmos-db.md?toc=%2fazure%2fcosmos-db%2ftoc.json%253ftoc%253d%2fazure%2fcosmos-db%2ftoc.json)
 * [Настройка глобальной распределенной базы данных с помощью API Azure Cosmos DB для MongoDB](tutorial-global-distribution-mongodb.md)
-* [Локальная разработка с помощью эмулятора Azure Cosmos DB](local-emulator.md)
+* [Разработка с помощью эмулятора Azure Cosmos DB в локальной среде](local-emulator.md)

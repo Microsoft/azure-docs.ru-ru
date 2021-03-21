@@ -13,10 +13,10 @@ ms.workload: infrastructure-services
 ms.date: 05/11/2018
 ms.author: ningk
 ms.openlocfilehash: ff2a6618b60ff2cfa5faa74c905e140466a14359
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102563325"
 ---
 # <a name="integrate-cloud-foundry-with-azure"></a>Интеграция Cloud Foundry и Azure
@@ -89,6 +89,6 @@ Log Analytics сопла Azure — это Cloud Foundry компонент, ко
 
 Компанией Pivotal была запущена [среда Small Footprint ERT](https://docs.pivotal.io/pivotalcf/2-0/customizing/small-footprint.html) для клиентов PCF. Компоненты совместно располагаются всего в четырех виртуальных машинах, на которых выполняются до 2500 экземпляров приложений. Пробная версия сейчас доступна в [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/pivotal.pivotal-cloud-foundry).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Функции интеграции Azure в первую очередь доступны в [Cloud Foundry с открытым исходным кодом](https://github.com/cloudfoundry-incubator/bosh-azure-cpi-release/tree/master/docs/advanced/), прежде чем они будут доступны в сводных Cloud Foundry. Компоненты, отмеченные звездочкой *, все еще недоступны в PCF. Интеграция Cloud Foundry с Azure Stack не рассматривается в этом документе.
 Для получения последних сведений о состоянии и помощи по PCF в компонентах, отмеченных звездочкой *, или по интеграции Cloud Foundry со стеком Azure Stack обратитесь к менеджеру по работе с клиентами Pivotal и Майкрософт.

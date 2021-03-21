@@ -8,10 +8,10 @@ ms.date: 07/11/2017
 ms.author: ccompy
 ms.custom: seodec18
 ms.openlocfilehash: fa92002cfef070218902aa7919900dde9fe5a9b5
-ms.sourcegitcommit: 15d27661c1c03bf84d3974a675c7bd11a0e086e6
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102505415"
 ---
 # <a name="create-a-web-app-in-an-app-service-environment-v1"></a>Создание веб-приложения в среде служб приложений версии 1
@@ -28,7 +28,7 @@ ms.locfileid: "102505415"
 > 
 > 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 Для прохождения этого учебного курса необходимо, чтобы вы создали среду службы приложений. Если вы еще не сделали это, ознакомьтесь со статьей [Создание среды службы приложений](app-service-web-how-to-create-an-app-service-environment.md). 
 
 ## <a name="create-a-web-app"></a>Создание веб-приложения

@@ -8,17 +8,17 @@ manager: celestedg
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/15/2021
+ms.date: 03/17/2021
 ms.custom: project-no-code
 ms.author: mimart
 ms.subservice: B2C
 zone_pivot_groups: b2c-policy-type
-ms.openlocfilehash: db6793389df0df169745ddd50551f836d06cf08c
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.openlocfilehash: 12e8222ad59aae31baa7a549519c97550b711703
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103488760"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579949"
 ---
 # <a name="set-up-sign-up-and-sign-in-with-a-microsoft-account-using-azure-active-directory-b2c"></a>Настройка регистрации и входа с учетной записью Microsoft через Azure Active Directory B2C
 
@@ -68,6 +68,8 @@ ms.locfileid: "103488760"
 1. Щелкните **Сохранить**.
 
 ## <a name="add-microsoft-identity-provider-to-a-user-flow"></a>Добавление поставщика удостоверений Майкрософт в поток пользователя 
+
+На этом этапе поставщик удостоверений Майкрософт настроен, но еще не доступен ни на одной из страниц входа. Чтобы добавить поставщик удостоверений Майкрософт в поток пользователя, выполните следующие действия.
 
 1. В клиенте Azure AD B2C выберите **Потоки пользователей**.
 1. Щелкните поток пользователя, для которого требуется добавить поставщик удостоверений Майкрософт.

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 08/28/2020
 ms.author: egeaney
 ms.openlocfilehash: 1a27199930587c1a096dd99462ebd0c9d65054ee
-ms.sourcegitcommit: 27d616319a4f57eb8188d1b9d9d793a14baadbc3
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100524502"
 ---
 # <a name="personalizer-service-encryption-of-data-at-rest"></a>Шифрование неактивных данных в службе персонализации
@@ -27,7 +27,7 @@ ms.locfileid: "100524502"
 
 [!INCLUDE [cognitive-services-cmk](../includes/configure-customer-managed-keys.md)]
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Форма запроса ключа Customer-Managed службы персонализации](https://aka.ms/cogsvc-cmk)
 * [Дополнительные сведения об Azure Key Vault](../../key-vault/general/overview.md)

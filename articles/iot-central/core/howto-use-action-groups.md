@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.service: iot-central
 manager: philmea
 ms.openlocfilehash: 84a723023bf8614b837ba9783bae987403921c06
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100585483"
 ---
 # <a name="group-multiple-actions-to-run-from-one-or-more-rules"></a>Группирование нескольких действий для запуска из одного или нескольких правил
@@ -21,7 +21,7 @@ ms.locfileid: "100585483"
 
 В IoT Central Azure вы создаете правила для выполнения действий при выполнении условия. Правила основаны на телеметрии или событиях устройства. Например, можно уведомить оператора, когда температура устройства превышает пороговое значение. В этой статье описывается, как использовать *группы действий* [Azure Monitor](../../azure-monitor/overview.md) для присоединения нескольких действий к правилу IOT Central. Группу действий можно подключить к нескольким правилам. [Группа действий](../../azure-monitor/alerts/action-groups.md) — это набор параметров уведомлений, определенных владельцем подписки Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Приложение, созданное с использованием стандартного тарифного плана
 - Учетная запись Azure и подписка для создания групп действий Azure Monitor и управления ими
@@ -51,7 +51,7 @@ ms.locfileid: "100585483"
 
 ![Выбор группы действий](media/howto-use-action-groups/chooseactiongroup.png)
 
-Нажмите кнопку **Сохранить**. Группа действий теперь отображается в списке действий, выполняемых при активации правила.
+Щелкните **Сохранить**. Группа действий теперь отображается в списке действий, выполняемых при активации правила.
 
 ![Группа действий сохранена](media/howto-use-action-groups/savedactiongroup.png)
 
@@ -68,6 +68,6 @@ ms.locfileid: "100585483"
 
 `iotcentral: Azure IoT Central alert: Contoso - "Low pressure alert" triggered on "Motion sensor 2" at March 20, 2019 10:12 UTC`
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Теперь, когда вы узнали, как использовать группы действий с правилами, предлагаем следующий шаг — Узнайте, как [управлять устройствами](howto-manage-devices.md).

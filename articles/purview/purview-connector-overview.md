@@ -8,10 +8,10 @@ ms.subservice: purview-data-catalog
 ms.topic: conceptual
 ms.date: 11/13/2020
 ms.openlocfilehash: 08b22af8743082bab1d547205e51917cb9d92a11
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101695776"
 ---
 # <a name="supported-data-stores"></a>Поддерживаемые хранилища данных
@@ -29,7 +29,7 @@ ms.locfileid: "101695776"
 ||[Azure Data Lake Storage 2-го поколения](register-scan-adls-gen2.md)|Да| Да| Да| Да| Да| Да|
 ||[База данных SQL Azure](register-scan-azure-sql-database.md)|Да| Да| Нет| Да| Да| Да|
 ||[Управляемый экземпляр Базы данных SQL Azure](register-scan-azure-sql-database-managed-instance.md)|Да| Да| Нет| Да| Да| Да|
-||[Azure синапсе Analytics (ранее — хранилище данных SQL)](register-scan-azure-synapse-analytics.md)|Да| Да| Нет| Да| Да| Да|
+||[Azure Synapse Analytics (ранее — Хранилище данных SQL)](register-scan-azure-synapse-analytics.md)|Да| Да| Нет| Да| Да| Да|
 |База данных|[Oracle DB](register-scan-oracle-source.md)|Да| Да| Нет| Нет| Нет| Да|
 ||[SQL Server](register-scan-on-premises-sql-server.md)|Да| Да| Нет| Да| Да| Да|
 ||[Teradata](register-scan-teradata-source.md)|Да| Да| Нет| Нет| Нет| Да|

@@ -17,10 +17,10 @@ ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fe92f761ac0b16da7c3cc3c69c1fa4b00f4e7579
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "95996599"
 ---
 # <a name="azure-active-directory-pass-through-authentication-technical-deep-dive"></a>Сквозная аутентификация Azure Active Directory — подробное техническое руководство
@@ -50,7 +50,7 @@ ms.locfileid: "95996599"
 
 ![Сквозная проверка подлинности](./media/how-to-connect-pta-how-it-works/pta2.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Текущие ограничения](how-to-connect-pta-current-limitations.md). Сведения о том, какие сценарии поддерживаются, а какие нет.
 - [Быстрое начало](how-to-connect-pta-quick-start.md): получите и запустите сквозную аутентификацию Azure AD.
 - [Migrate from AD FS to Pass-through Authentication](https://aka.ms/adfstoPTADP) (Переход с AD FS на сквозную проверку подлинности). Подробное руководство по переходу с AD FS (или других технологии федерации) на сквозную проверку подлинности.

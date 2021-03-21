@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: azfuncdf
 ms.openlocfilehash: 62cc5e1762a2a54b26cbebae5aa7cfbf64204ba5
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100584616"
 ---
 # <a name="diagnostics-in-durable-functions-in-azure"></a>Диагностика в Устойчивых функциях в Azure
@@ -461,7 +461,7 @@ GET /runtime/webhooks/durabletask/instances/instance123?code=XYZ
 > [!TIP]
 > При установке точек останова в функциях Orchestrator, если требуется только прерывание выполнения без воспроизведения, можно задать условную точку останова, которая прерывается, только если значение "выполняется воспроизведение" `false` .
 
-## <a name="storage"></a>Память
+## <a name="storage"></a>Служба хранилища
 
 По умолчанию устойчивые функции хранят состояние в службе хранилища Azure. Такое поведение означает, что вы можете проверить состояние оркестрации с помощью таких средств, как [Обозреватель службы хранилища Microsoft Azure](../../vs-azure-tools-storage-manage-with-storage-explorer.md).
 
@@ -472,7 +472,7 @@ GET /runtime/webhooks/durabletask/instances/instance123?code=XYZ
 > [!WARNING]
 > Хотя просматривать журнал выполнения в службе таблиц более удобно, избегайте использования зависимостей в таблице. Они могут измениться при развитии расширения устойчивых функций.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Дополнительные сведения о мониторинге в функциях Azure](../functions-monitoring.md)

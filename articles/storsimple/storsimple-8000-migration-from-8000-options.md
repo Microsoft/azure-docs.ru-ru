@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.date: 03/25/2020
 ms.author: alkohli
 ms.openlocfilehash: 4839f8211e678f5fc2fb3572c7eaa545fbee6c6c
-ms.sourcegitcommit: cd9754373576d6767c06baccfd500ae88ea733e4
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94961198"
 ---
 # <a name="options-to-migrate-data-from-storsimple-8000-series"></a>Параметры для переноса данных из серии StorSimple 8000
@@ -25,7 +25,7 @@ ms.locfileid: "94961198"
 
 У клиентов, использующих серии StorSimple 8000, есть варианты Azure или сторонние параметры.
 
-### <a name="azure-options"></a>Параметры Azure
+### <a name="azure-options"></a>Возможности Azure
 
 #### <a name="migrate-to-azure-file-sync"></a>Миграция в службу "Синхронизация файлов Azure"
 
@@ -109,6 +109,6 @@ A. При использовании Синхронизация файлов Azu
 
 A. Время переноса данных зависит от объема данных и выбранного варианта обновления.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Перенос данных из серии StorSimple 8000 в Синхронизация файлов Azure](../storage/files/storage-files-migration-storsimple-8000.md)

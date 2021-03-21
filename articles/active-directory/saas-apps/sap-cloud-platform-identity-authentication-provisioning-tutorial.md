@@ -12,10 +12,10 @@ ms.topic: tutorial
 ms.date: 09/19/2019
 ms.author: Zhchia
 ms.openlocfilehash: 419f25ee3df471bc2fc4526254f5677b8bd71856
-ms.sourcegitcommit: 9eda79ea41c60d58a4ceab63d424d6866b38b82d
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96342753"
 ---
 # <a name="tutorial-configure-sap-cloud-platform-identity-authentication-for-automatic-user-provisioning"></a>Руководство по Настройка SAP Cloud Platform Identity Authentication для автоматической подготовки пользователей

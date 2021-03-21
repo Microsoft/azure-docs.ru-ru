@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.custom: seoapr2020
 ms.date: 05/14/2020
 ms.openlocfilehash: dc20a258028bb76351ae70362234e7c4c8c741a5
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101699408"
 ---
 # <a name="run-apache-oozie-in-azure-hdinsight-clusters-with-enterprise-security-package"></a>Выполнение Apache Oozie в кластерах Azure HDInsight с Корпоративным пакетом безопасности

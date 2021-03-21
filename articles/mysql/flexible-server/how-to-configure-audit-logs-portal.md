@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: how-to
 ms.date: 9/29/2020
 ms.openlocfilehash: ebb980aa257fc09c3d6a407febbf60f2d1a26a4e
-ms.sourcegitcommit: 6ab718e1be2767db2605eeebe974ee9e2c07022b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "94536478"
 ---
 # <a name="configure-and-access-audit-logs-for-azure-database-for-mysql---flexible-server-using-the-azure-portal"></a>Настройка и доступ к журналам аудита для базы данных Azure для MySQL — гибкого сервера с помощью портал Azure
@@ -20,7 +20,7 @@ ms.locfileid: "94536478"
 
 Вы можете настроить для базы данных Azure для гибких [журналов аудита](concepts-audit-logs.md) сервера MySQL и параметров диагностики из портал Azure.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 Для выполнения действий, описанных в этой статье, требуется [гибкий сервер](quickstart-create-server-portal.md).
 
 ## <a name="configure-audit-logging"></a>Настройка ведения журнала аудита
@@ -30,7 +30,7 @@ ms.locfileid: "94536478"
 
 Включение и Настройка ведения журнала аудита.
 
-1. Войдите на [портале Azure](https://portal.azure.com/).
+1. Войдите на [портал Azure](https://portal.azure.com/).
 
 1. Выберите гибкий сервер.
 
@@ -46,7 +46,7 @@ ms.locfileid: "94536478"
 1. Добавьте пользователей MySQL, которые будут включены или исключены из ведения журнала, обновив параметры **audit_log_exclude_users** и **audit_log_include_users** . Укажите пользователей, указав имя пользователя MySQL.
     :::image type="content" source="./media/how-to-configure-audit-logs-portal/audit-log-exclude-users.png" alt-text="Исключить пользователей из журнала аудита":::
 
-1. После изменения параметров нажмите кнопку **Сохранить**. Также вы можете нажать кнопку **Отменить** , чтобы отменить изменения.
+1. После изменения параметров нажмите кнопку **Сохранить**. Также вы можете нажать кнопку **Отменить**, чтобы отменить изменения.
     :::image type="content" source="./media/how-to-configure-audit-logs-portal/save-parameters.png" alt-text="Сохранить":::
 
 ## <a name="set-up-diagnostics"></a>Настройка диагностики

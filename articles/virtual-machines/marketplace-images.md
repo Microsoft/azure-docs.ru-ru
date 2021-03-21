@@ -10,10 +10,10 @@ ms.date: 07/07/2020
 ms.author: cynthn
 ms.reviewer: akjosh
 ms.openlocfilehash: 9df1f6b02e6572c8f2153016c0142912e24fcfe8
-ms.sourcegitcommit: 7edadd4bf8f354abca0b253b3af98836212edd93
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102562543"
 ---
 # <a name="supply-azure-marketplace-purchase-plan-information-when-creating-images"></a>Предоставление сведений о плане покупки Azure Marketplace при создании образов

@@ -7,10 +7,10 @@ ms.date: 08/11/2020
 author: dcstwh
 ms.author: weetok
 ms.openlocfilehash: 1cb4fcaa51e1a59ee9d09eb178faf9b250173709
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101740037"
 ---
 # <a name="monitor-an-integration-runtime-in-azure-data-factory"></a>Мониторинг среды выполнения интеграции в фабрике данных Azure
@@ -41,7 +41,7 @@ Get-AzDataFactoryV2IntegrationRuntime -DataFactoryName MyDataFactory -ResourceGr
 
 В следующей таблице приведены описания свойств, возвращаемых командлетом для среды выполнения интеграции Azure:
 
-| Свойство | Описание |
+| Свойство. | Описание |
 -------- | ------------- | 
 | Имя | Имя среды выполнения интеграции Azure. |  
 | Состояние | Состояние среды выполнения интеграции Azure. | 
@@ -70,7 +70,7 @@ Get-AzDataFactoryV2IntegrationRuntime -DataFactoryName MyDataFactory -ResourceGr
 
 В следующей таблице приведены описания свойств наблюдения **каждого узла**:
 
-| Свойство | Описание | 
+| Свойство. | Описание | 
 | -------- | ----------- | 
 | Имя | Имя локальной среды выполнения интеграции и узлов, связанных с ней. Узел — это локальный компьютер с Windows, на котором установлена локальная среда выполнения интеграции. |  
 | Состояние | Состояние локальной среды выполнения интеграции и каждого узла. Пример: оперативный/автономный/ограниченный/т. д. Сведения об этих состояниях см. в следующем разделе. | 
@@ -189,7 +189,7 @@ Get-AzDataFactoryV2IntegrationRuntime -DataFactoryName $DataFactoryName -Name $A
 | VNetId                       | Идентификатор ресурса виртуальной сети для присоединяемой Azure-SSIS IR. |
 | Подсеть                       | Имя подсети для присоединяемой Azure-SSIS IR. |
 | ID                           | Идентификатор ресурса Azure-SSIS IR. |
-| Тип                         | Тип IR (управляемый/локально размещенный) Azure-SSIS IR. |
+| Type                         | Тип IR (управляемый/локально размещенный) Azure-SSIS IR. |
 | ResourceGroupName            | Имя группы ресурсов Azure, в которой были созданы ADF и Azure-SSIS IR. |
 | DataFactoryName              | Имя ADF. |
 | Имя                         | Имя Azure-SSIS IR. |

@@ -4,10 +4,10 @@ description: В этой статье описывается, как испол�
 ms.topic: article
 ms.date: 01/21/2021
 ms.openlocfilehash: bd985acd9b775d6baef0abf488952e28c17aef2a
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98954316"
 ---
 # <a name="authenticate-a-managed-identity-with-azure-active-directory-to-access-azure-service-bus-resources"></a>Проверка подлинности управляемого удостоверения с Azure Active Directory для доступа к ресурсам служебной шины Azure

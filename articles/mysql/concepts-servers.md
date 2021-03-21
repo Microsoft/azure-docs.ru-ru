@@ -7,10 +7,10 @@ ms.service: mysql
 ms.topic: conceptual
 ms.date: 3/18/2020
 ms.openlocfilehash: ed6d5d676fd2c6eefd3288b7609446eb61611ed6
-ms.sourcegitcommit: e972837797dbad9dbaa01df93abd745cb357cde1
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100517983"
 ---
 # <a name="server-concepts-in-azure-database-for-mysql"></a>Основные понятия работы с сервером в базе данных Azure для MySQL
@@ -64,7 +64,7 @@ ms.locfileid: "100517983"
 
 Управлять серверами базы данных Azure для MySQL можно с помощью портала Azure или Azure CLI.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Обзор службы содержится в статье [What is Azure Database for MySQL? Service Introduction](./overview.md) (Что такое база данных Azure для MySQL? Общие сведения о службе).
 - Сведения о квотах и ограничениях для конкретных ресурсов, основанных на **ценовой** категории, см. в статье [ценовые](./concepts-pricing-tiers.md) категории.

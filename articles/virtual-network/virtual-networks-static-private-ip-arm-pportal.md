@@ -16,10 +16,10 @@ ms.workload: infrastructure-services
 ms.date: 02/07/2020
 ms.author: kumud
 ms.openlocfilehash: c8fdba59a8d31c064745c7a1904204359b386a7f
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96015950"
 ---
 # <a name="configure-a-private-ip-address-for-a-vm-using-the-azure-portal"></a>Настройка частного IP-адреса для виртуальной машины с помощью портал Azure
@@ -128,6 +128,6 @@ ms.locfileid: "96015950"
 
 Кроме того, не следует вручную назначать *общедоступный* IP-адрес, назначенный виртуальной машине Azure в операционной системе виртуальной машины.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Ознакомьтесь с дополнительными сведениями об управлении [параметрами IP-адресов](virtual-network-network-interface-addresses.md).

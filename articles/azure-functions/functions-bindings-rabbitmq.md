@@ -8,10 +8,10 @@ ms.date: 12/17/2020
 ms.author: cachai
 ms.custom: ''
 ms.openlocfilehash: 2a480f25821f5022295b18ca24abfd2c0fb8a50c
-ms.sourcegitcommit: 6e2d37afd50ec5ee148f98f2325943bafb2f4993
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97746530"
 ---
 # <a name="rabbitmq-bindings-for-azure-functions-overview"></a>Общие сведения о привязках RabbitMQ для функций Azure
@@ -21,7 +21,7 @@ ms.locfileid: "97746530"
 
 Функции Azure интегрируются с [RabbitMQ](https://www.rabbitmq.com/) через [триггеры и привязки](./functions-triggers-bindings.md). Расширение RabbitMQ для функций Azure позволяет отправлять и получать сообщения с помощью API RabbitMQ с функциями.
 
-| Действие | Тип |
+| Действие | Type |
 |---------|---------|
 | Выполнение функции, когда сообщение RabbitMQ поступает через очередь | [Триггер](./functions-bindings-rabbitmq-trigger.md) |
 | Отправка сообщений RabbitMQ |[Выходная привязка](./functions-bindings-rabbitmq-output.md) |

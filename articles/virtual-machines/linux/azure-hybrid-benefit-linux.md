@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.workload: infrastructure-services
 ms.date: 09/22/2020
 ms.author: mathapli
-ms.openlocfilehash: 346d58dbe06a29a4ba114ae788dee16e80b8f9df
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 17b2e260f9a90ddda6e246058cefb1bec8b1ac5e
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101695487"
 ---
 # <a name="how-azure-hybrid-benefit-applies-for-linux-virtual-machines"></a>Как Преимущество гибридного использования Azure применяется для виртуальных машин Linux
@@ -177,7 +177,7 @@ az vm get-instance-view -g MyResourceGroup -n MyVm
 
 ### <a name="suse"></a>SUSE
 
-Чтобы использовать Преимущество гибридного использования Azure для виртуальных машин SLES, а также сведения о переходе с SLES PAYG на BYOS или переход с SLES BYOS на PAYG см. в статье [SUSE Linux Enterprise и преимущество гибридного использования Azure](https://www.suse.com/support/kb/doc/?id=000019868). 
+Чтобы использовать Преимущество гибридного использования Azure для виртуальных машин SLES, а также сведения о переходе с SLES PAYG на BYOS или переход с SLES BYOS на PAYG см. в статье [SUSE Linux Enterprise и преимущество гибридного использования Azure](https://www.suse.com/c/suse-linux-enterprise-and-azure-hybrid-benefit/). 
 
 ## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
 *Вопрос. можно ли использовать тип лицензии `RHEL_BYOS` с образом SLES или наоборот?*

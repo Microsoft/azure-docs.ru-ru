@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/15/2021
 ms.author: lajanuar
 ms.openlocfilehash: 5422520c6a863876091d7820a5c07fa2413346c7
-ms.sourcegitcommit: 3ea12ce4f6c142c5a1a2f04d6e329e3456d2bda5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103467864"
 ---
 # <a name="use-table-tags-to-train-your-custom-form-model"></a>Использование тегов Table для обучения пользовательской модели формы
@@ -42,7 +42,7 @@ ms.locfileid: "103467864"
 * Если в проекте есть тег table, можно открыть панель «Метки» и заполнить тег так же, как и поля «ключ-значение».
 :::image type="content" source="media/table-labeling.png" alt-text="Метка с тегами таблицы":::
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Следуйте нашим инструкциям в кратком руководстве, чтобы обучить и использовать модель распознавателя настраиваемых форм.
 

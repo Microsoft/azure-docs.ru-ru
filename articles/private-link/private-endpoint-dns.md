@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 01/14/2021
 ms.author: allensu
 ms.openlocfilehash: 42c5b315c9c3560c400c685448a11dc61bf64eb6
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102215618"
 ---
 # <a name="azure-private-endpoint-dns-configuration"></a>Конфигурация DNS частной конечной точки Azure

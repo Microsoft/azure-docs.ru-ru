@@ -4,10 +4,10 @@ description: В этой статье приводится перечень на
 ms.topic: conceptual
 ms.date: 03/15/2021
 ms.openlocfilehash: 4dd62c926cce765ebc2b21378308650e313716ff
-ms.sourcegitcommit: 66ce33826d77416dc2e4ba5447eeb387705a6ae5
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103471017"
 ---
 # <a name="azure-subscription-and-service-limits-quotas-and-constraints"></a>Подписка Azure, границы, квоты и ограничения службы
@@ -78,7 +78,7 @@ ms.locfileid: "103471017"
 
 [!INCLUDE [automation-limits](../../../includes/azure-automation-service-limits.md)]
 
-## <a name="azure-app-configuration"></a>Конфигурация приложений Azure
+## <a name="azure-app-configuration"></a>конфигурация приложения Azure;
 
 [!INCLUDE [app-configuration-limits](../../../includes/app-configuration-limits.md)]
 

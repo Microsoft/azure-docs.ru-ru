@@ -3,12 +3,12 @@ title: Запуск приложения из ZIP-пакета
 description: Развертывание ZIP-пакета приложения с атомарностью. Повысьте предсказуемость и надежность работы приложения во время процесса развертывания ZIP.
 ms.topic: article
 ms.date: 01/14/2020
-ms.openlocfilehash: 3440653455626af4e3705d89349a66d6bf2fbfc0
-ms.sourcegitcommit: 273c04022b0145aeab68eb6695b99944ac923465
+ms.openlocfilehash: 036dd8c86251af2ed5553939e74a0d85fc303ecb
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97008135"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104577552"
 ---
 # <a name="run-your-app-in-azure-app-service-directly-from-a-zip-package"></a>Запуск приложения в службе приложений Azure непосредственно из ZIP-пакета
 
@@ -63,10 +63,11 @@ az webapp config appsettings set --name <app-name> --resource-group <resource-gr
 
 При публикации обновленного пакета с тем же именем в хранилище BLOB-объектов необходимо перезапустить приложение, чтобы обновленный пакет загружался в службу приложений.
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 - Выполнение непосредственно из пакета делает его `wwwroot` доступным только для чтения. При попытке записи файлов в этот каталог приложение получит сообщение об ошибке.
 - Форматы TAR и GZIP не поддерживаются.
+- ZIP-файл может содержать не более 1 ГБ
 - Эта функция несовместима с [локальным кэшем](overview-local-cache.md).
 - Для повышения производительности холодного запуска используйте параметр local ZIP ( `WEBSITE_RUN_FROM_PACKAGE` = 1).
 

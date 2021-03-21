@@ -8,10 +8,10 @@ ms.service: hdinsight
 ms.topic: how-to
 ms.date: 11/4/2020
 ms.openlocfilehash: b13e8e088eff95071247a53ad1a4a18879f94053
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "101742200"
 ---
 # <a name="migrate-azure-hdinsight-36-hive-workloads-to-hdinsight-40"></a>Перенос рабочих нагрузок Hive из Azure HDInsight 3.6 в HDInsight 4.0
@@ -36,7 +36,7 @@ HDInsight 4,0 имеет несколько преимуществ по срав
 
 * При использовании [Azure Data Lake Storage 1-го поколения](../overview-data-lake-storage-gen1.md)расположение таблиц Hive, скорее всего, зависит от конфигураций HDFS кластера. Выполните следующее действие скрипта, чтобы обеспечить перенос этих расположений в другие кластеры. См. раздел [действие сценария в работающем кластере](../hdinsight-hadoop-customize-cluster-linux.md#script-action-to-a-running-cluster).
 
-    |Свойство | Значение |
+    |Свойство. | Значение |
     |---|---|
     |URI bash-скрипта|`https://hdiconfigactions.blob.core.windows.net/linuxhivemigrationv01/hive-adl-expand-location-v01.sh`|
     |Типы узлов|Head|
@@ -131,7 +131,7 @@ HDInsight при необходимости интегрируется с Azure 
 
 Дополнительные изменения см. в [объявлении HDInsight 4,0](../hdinsight-version-release.md) .
 
-## <a name="further-reading"></a>Дополнительные материалы
+## <a name="further-reading"></a>Дополнительные сведения
 
 * [Объявление о HDInsight 4,0](../hdinsight-version-release.md)
 * [HDInsight 4,0. подробное углубление](https://azure.microsoft.com/blog/deep-dive-into-azure-hdinsight-4-0/)

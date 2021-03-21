@@ -7,10 +7,10 @@ ms.author: cweining
 ms.date: 03/07/2019
 ms.reviewer: mbullwin
 ms.openlocfilehash: a285f26a406caa88d91da5647b3b79cffc9b614f
-ms.sourcegitcommit: f7eda3db606407f94c6dc6c3316e0651ee5ca37c
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102217420"
 ---
 # <a name="troubleshoot-problems-enabling-application-insights-snapshot-debugger-or-viewing-snapshots"></a><a id="troubleshooting"></a> Устранение неполадок, связанных с включением Application Insights Snapshot Debugger или просмотром моментальных снимков
@@ -177,7 +177,7 @@ SnapshotUploader.exe Information: 0 : Deleted D:\local\Temp\Dumps\c12a605e73c443
 В предыдущем примере, ключ инструментирования — это `c12a605e73c44346a984e00000000000`. Это значение должно соответствовать ключу инструментирования для вашего приложения.
 Минидамп связан с моментальным снимком с идентификатором `139e411a23934dc0b9ea08a626db16c5`. Этот идентификатор можно использовать позже для нахождение связанной записи об исключении в Application Insights Analytics.
 
-Отправитель проверяет наличие новых PDB-файлов примерно один раз каждые 15 минут. Ниже приведен пример:
+Отправитель проверяет наличие новых PDB-файлов примерно один раз каждые 15 минут. Приведем пример:
 
 ```
 SnapshotUploader.exe Information: 0 : PDB rescan requested.

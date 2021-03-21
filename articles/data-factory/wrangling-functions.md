@@ -7,10 +7,10 @@ ms.service: data-factory
 ms.topic: conceptual
 ms.date: 01/19/2021
 ms.openlocfilehash: 659f6527d43e1b45a11fddf774050ca6d42bfe12
-ms.sourcegitcommit: 100390fefd8f1c48173c51b71650c8ca1b26f711
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98896669"
 ---
 # <a name="transformation-functions-in-power-query-for-data-wrangling"></a>Функции преобразования в Power Query структурирование данных
@@ -87,7 +87,7 @@ ms.locfileid: "98896669"
 
 ## <a name="known-unsupported-functions"></a>Известные неподдерживаемые функции
 
-| Функция | Состояние |
+| Компонент | Состояние |
 | -- | -- |
 | Table.PromoteHeaders | Не поддерживается. Тот же результат можно получить, установив в наборе данных "первая строка как заголовок". |
 | Table.CombineColumns | Это распространенный сценарий, который не поддерживается напрямую, но может быть достигнут путем добавления нового столбца, объединяющего два заданных столбца.  Например, Table. AddColumn (Ремовимаилколумн, "Name", each [FirstName] & "" & [LastName]) |

@@ -9,10 +9,10 @@ ms.topic: tutorial
 ms.date: 04/29/2020
 ms.custom: mvc, devx-track-azurepowershell
 ms.openlocfilehash: fd8294d60ed0af4e8d1eeb8a3cd07c737b69aadd
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96011461"
 ---
 # <a name="tutorial-design-an-azure-database-for-mysql-using-powershell"></a>Руководство по Проектирование Базы данных Azure для MySQL с помощью PowerShell

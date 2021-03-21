@@ -4,10 +4,10 @@ description: Узнайте, как работать с определениям
 ms.date: 01/27/2021
 ms.topic: how-to
 ms.openlocfilehash: a5b1adda0b02e2e2490441c5958ca9334febc24c
-ms.sourcegitcommit: 436518116963bd7e81e0217e246c80a9808dc88c
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98919992"
 ---
 # <a name="import-and-export-blueprint-definitions-with-powershell"></a>Импорт и экспорт определений схем с помощью PowerShell
@@ -23,7 +23,7 @@ ms.locfileid: "98919992"
 
 По каким бы то ни было вашим причинам, Управление определениями схем в качестве кода имеет свои преимущества. В этой статье показано, как использовать `Import-AzBlueprintWithArtifact` `Export-AzBlueprintWithArtifact` команды и в модуле [AZ. чертеж](https://powershellgallery.com/packages/Az.Blueprint/) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 В этой статье предполагается умеренный опыт работы с чертежами Azure. Если вы еще не сделали этого, выполните действия, описанные в следующих статьях:
 

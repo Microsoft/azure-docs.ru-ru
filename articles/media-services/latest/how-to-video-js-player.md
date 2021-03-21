@@ -14,10 +14,10 @@ ms.date: 08/31/2020
 ms.author: inhenkel
 ms.custom: devx-track-js
 ms.openlocfilehash: a0b357705de04ed4c2be3223f9dd07f61f75d970
-ms.sourcegitcommit: 4e70fd4028ff44a676f698229cb6a3d555439014
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98954586"
 ---
 # <a name="how-to-use-the-videojs-player-with-azure-media-services"></a>Использование проигрывателя Video.js с помощью служб мультимедиа Azure
@@ -26,11 +26,11 @@ ms.locfileid: "98954586"
 
 ## <a name="overview"></a>Обзор
 
-Video.js — это веб-Видеопроигрыватель, созданный для HTML5. Он воспроизводит в браузере адаптивные форматы мультимедиа (например, ТИРЕ и HLS) без использования подключаемых модулей или Flash. Вместо этого Video.js использует расширения веб-стандартов Медиасаурце и расширения зашифрованного носителя. Более того, он поддерживает воспроизведение видео на настольных и мобильных устройствах.
+Video.js — это веб-Видеопроигрыватель, созданный для HTML5. Он воспроизводит в браузере адаптивные форматы мультимедиа (например, DASH и HLS) без использования подключаемых модулей или Flash. Вместо этого Video.js использует расширения веб-стандартов Медиасаурце и расширения зашифрованного носителя. Более того, он поддерживает воспроизведение видео на настольных и мобильных устройствах.
 
 Его официальную документацию можно найти по адресу [https://docs.videojs.com/](https://docs.videojs.com/) .
 
-## <a name="sample-code"></a>Образец кода
+## <a name="sample-code"></a>Пример кода
 Пример кода для этой статьи доступен на странице [Azure-Samples/Media-Services-3rdParty-Player-Samples](https://github.com/Azure-Samples/media-services-3rdparty-player-samples).
 
 ## <a name="implement-the-player"></a>Реализация проигрывателя

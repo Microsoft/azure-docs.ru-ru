@@ -16,10 +16,10 @@ ms.topic: article
 ms.date: 02/22/2021
 ms.author: Zhchia
 ms.openlocfilehash: 7e3e119c81f6417110d34b7b9b97af9fa1738d35
-ms.sourcegitcommit: f3ec73fb5f8de72fe483995bd4bbad9b74a9cc9f
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102055071"
 ---
 # <a name="tutorial-configure-travelperk-for-automatic-user-provisioning"></a>Учебник. Настройка Травелперк для автоматической подготовки пользователей

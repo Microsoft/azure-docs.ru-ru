@@ -11,12 +11,12 @@ ms.workload: identity
 ms.date: 03/09/2021
 ms.author: marsma
 ms.reviewer: jmprieur, saeeda
-ms.openlocfilehash: 8b0d6ffc00a140073c2dfb5789fbf9760e1767c9
-ms.sourcegitcommit: afb9e9d0b0c7e37166b9d1de6b71cd0e2fb9abf5
+ms.openlocfilehash: 22f6e1c8049acd5dbe548bc49955881e05f0ef0e
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2021
-ms.locfileid: "103462768"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104579048"
 ---
 # <a name="support-and-help-options-for-developers"></a>Возможности получения поддержки и справки для разработчиков
 
@@ -44,17 +44,17 @@ ms.locfileid: "103462768"
 
 [Microsoft Q&A](/answers/products/) — это рекомендуемый источник поддержки сообщества Azure.
 
-Если вы не можете найти ответ на проблему, выполнив поиск в Microsoft Q&A, отправьте новый вопрос. Используйте один из следующих тегов при запросе [высокого качества](https://docs.microsoft.com/answers/articles/24951/how-to-write-a-quality-question.html):
+Если вы не можете найти ответ на проблему, выполнив поиск в Microsoft Q&A, отправьте новый вопрос. Используйте один из следующих тегов при запросе [высокого качества](/answers/articles/24951/how-to-write-a-quality-question.html):
 
 | Компонент/область| Теги  |
 |------------|---------------------------|
-| Библиотека проверки подлинности Active Directory (ADAL)                              | [ADAL](https://docs.microsoft.com/answers/topics/azure-ad-adal-deprecation.html)                |
-| Библиотека проверки подлинности Майкрософт (MSAL)                                     | [msal](https://docs.microsoft.com/answers/topics/azure-ad-msal.html)                            |
-| Открытие веб-интерфейса для .NET (OWIN) по промежуточного слоя                               | [[Azure-Active-Directory]](https://docs.microsoft.com/answers/topics/azure-active-directory.html) |
-| [Azure AD B2B/внешние удостоверения](../external-identities/what-is-b2b.md) | [[azure-ad-b2b]](https://docs.microsoft.com/answers/topics/azure-ad-b2b.html)                     |
-| [Azure AD B2C](https://azure.microsoft.com/services/active-directory-b2c/)  | [[azure-ad-b2c]](https://docs.microsoft.com/answers/topics/azure-ad-b2c.html)                     |
-| [API Microsoft Graph](https://developer.microsoft.com/graph/)               | [[Azure-AD-Graph]](https://docs.microsoft.com/answers/topics/azure-ad-graph.html)                 |
-| Все остальные области проверки подлинности и авторизации                            | [[Azure-Active-Directory]](https://docs.microsoft.com/answers/topics/azure-active-directory.html) |
+| Библиотека проверки подлинности Active Directory (ADAL)                              | [ADAL](/answers/topics/azure-ad-adal-deprecation.html)                |
+| Библиотека проверки подлинности Майкрософт (MSAL)                                     | [msal](/answers/topics/azure-ad-msal.html)                            |
+| Открытие веб-интерфейса для .NET (OWIN) по промежуточного слоя                               | [[Azure-Active-Directory]](/answers/topics/azure-active-directory.html) |
+| [Azure AD B2B/внешние удостоверения](../external-identities/what-is-b2b.md) | [[azure-ad-b2b]](/answers/topics/azure-ad-b2b.html)                     |
+| [Azure AD B2C](https://azure.microsoft.com/services/active-directory-b2c/)  | [[azure-ad-b2c]](/answers/topics/azure-ad-b2c.html)                     |
+| [API Microsoft Graph](https://developer.microsoft.com/graph/)               | [[Azure-AD-Graph]](/answers/topics/azure-ad-graph.html)                 |
+| Все остальные области проверки подлинности и авторизации                            | [[Azure-Active-Directory]](/answers/topics/azure-active-directory.html) |
 
 ## <a name="create-a-github-issue"></a>Сообщение о проблеме на GitHub
 
@@ -98,10 +98,8 @@ ms.locfileid: "103462768"
 
 - [Обновления Azure](https://azure.microsoft.com/updates/?category=identity): сведения о важных обновлениях, стратегиях и объявлениях продуктов.
 
-- [Новые возможности в](https://docs.microsoft.com/azure/active-directory/develop/whats-new-docs)документации: Узнайте о новых возможностях платформы идентификации Майкрософт.
+- [Новые возможности в](./whats-new-docs.md)документации: Узнайте о новых возможностях платформы идентификации Майкрософт.
 
 - [Блог Azure Active Directory Identity](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/bg-p/Identity): получение новостей и сведений об Azure AD.
 
 - [Технический сообщество](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/bg-p/Identity/): Поделитесь своими впечатлениями, общайтесь и изучите экспертов.
-
-

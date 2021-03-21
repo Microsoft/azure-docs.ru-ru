@@ -6,17 +6,17 @@ ms.topic: how-to
 ms.custom: hdinsightactive,seoapr2020
 ms.date: 08/12/2020
 ms.openlocfilehash: 344caf4080380f5d9dfdaf452798ada6d1dc9f1c
-ms.sourcegitcommit: 2f9f306fa5224595fa5f8ec6af498a0df4de08a8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98931224"
 ---
 # <a name="use-apache-spark-to-read-and-write-apache-hbase-data"></a>Чтение и запись данных Apache HBase с помощью Apache Spark
 
 Обычно для запроса Apache HBase применяется низкоуровневый API (сканирует, получает и помещает) или синтаксис SQL, использующий Apache Phoenix. Apache также предоставляет соединитель Apache Spark HBase. Соединитель — это удобная и эффективная альтернатива для запроса и изменения данных, хранящихся в HBase.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Два отдельных кластера HDInsight развернуты в одной [виртуальной сети](./hdinsight-plan-virtual-network-deployment.md). Одна HBase и одна Spark с установленным как минимум Spark 2,1 (HDInsight 3,6). Дополнительные сведения см. в статье [Создание кластеров под управлением Linux в HDInsight с помощью портала Azure](hdinsight-hadoop-create-linux-clusters-portal.md).
 
@@ -88,10 +88,10 @@ __Примечание__. прежде чем продолжать, убедит
 1. Используйте [действие сценария](hdinsight-hadoop-customize-cluster-linux.md#script-action-to-a-running-cluster) в кластере HBase, чтобы применить изменения со следующими соображениями. 
 
 
-    |Свойство | Значение |
+    |Свойство. | Значение |
     |---|---|
     |URI bash-скрипта|`https://hdiconfigactions.blob.core.windows.net/hbasesparkconnectorscript/connector-hbase.sh`|
-    |Типы узлов|Region|
+    |Типы узлов|Регион|
     |Параметры|`-s SECONDARYS_STORAGE_URL`|
     |Persisted|да|
 
@@ -100,7 +100,7 @@ __Примечание__. прежде чем продолжать, убедит
 
 2.  Используйте действие сценария в кластере Spark, чтобы применить изменения со следующими соображениями.
 
-    |Свойство | Значение |
+    |Свойство. | Значение |
     |---|---|
     |URI bash-скрипта|`https://hdiconfigactions.blob.core.windows.net/hbasesparkconnectorscript/connector-spark.sh`|
     |Типы узлов|Головной, Рабочий, Zookeeper|

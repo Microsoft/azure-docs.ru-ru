@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 04/10/2018
 ms.author: cynthn
 ms.openlocfilehash: 5b28226cfe6bc51a2619c4dd63e666ddd51dad2a
-ms.sourcegitcommit: a43a59e44c14d349d597c3d2fd2bc779989c71d7
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96016205"
 ---
 # <a name="how-to-find-and-delete-unattached-network-interface-cards-nics-for-azure-vms"></a>Как найти и удалить неподключенные сетевые карты (NIC) на виртуальных машинах Azure
@@ -44,6 +44,6 @@ do
 done
 ```
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о создании виртуальных сетей и управлении ими в Azure см. в статье [Управление виртуальными сетями Azure и виртуальными машинами Linux с помощью Azure CLI](tutorial-virtual-network.md).

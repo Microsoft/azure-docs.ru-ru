@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 01/05/2021
 ms.author: yelevin
 ms.openlocfilehash: a4303f43dffa98f842bd3daf9e3a0cd5214932b1
-ms.sourcegitcommit: e559daa1f7115d703bfa1b87da1cf267bf6ae9e8
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100585364"
 ---
 # <a name="step-1-deploy-the-log-forwarder"></a>Шаг 1. Развертывание сервера пересылки журналов
@@ -34,7 +34,7 @@ ms.locfileid: "100585364"
     - Прослушивание сообщений системного журнала в решениях безопасности через TCP-порт 514
     - Пересылка только тех сообщений, которые он идентифицирует как CEF агенту Log Analytics на localhost с помощью TCP-порта 25226
  
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Необходимо иметь повышенные разрешения (sudo) на назначенном компьютере Linux.
 
@@ -226,7 +226,7 @@ ms.locfileid: "100585364"
         ```
 ---
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом документе вы узнали, как развернуть агент Log Analytics, чтобы подключить устройства CEF к Azure Sentinel. Ознакомьтесь с дополнительными сведениями об Azure Sentinel в соответствующих статьях.
 - Узнайте, как [отслеживать свои данные и потенциальные угрозы](quickstart-get-visibility.md).

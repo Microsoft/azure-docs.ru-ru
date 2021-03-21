@@ -8,10 +8,10 @@ ms.date: 02/05/2020
 ms.author: ccompy
 ms.custom: seodec18, fasttrack-edit
 ms.openlocfilehash: 1b3fc4a254c1157f2c2336e6360ba7621f31364d
-ms.sourcegitcommit: f377ba5ebd431e8c3579445ff588da664b00b36b
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99594237"
 ---
 # <a name="azure-app-service-hybrid-connections"></a>Гибридные подключения к службе приложений Azure
@@ -95,7 +95,7 @@ ms.locfileid: "99594237"
 | Ценовой план | Количество гибридных подключений в плане |
 |----|----|
 | Basic | 5 на план |
-| Standard | 25 на план |
+| Стандартный | 25 на план |
 | Категории премиум v2 | 200 на приложение |
 | Isolated | 200 на приложение |
 
@@ -134,7 +134,7 @@ ms.locfileid: "99594237"
 1. Щелкните гибридные подключения, которые HCM должен транслировать.
 ![Снимок экрана гибридных подключений][9]
 
-1. Нажмите кнопку **Сохранить**.
+1. Щелкните **Сохранить**.
 
 Теперь вы увидите добавленные гибридные подключения. Можно также выбрать настроенное гибридное подключение, чтобы просмотреть сведения о нем.
 

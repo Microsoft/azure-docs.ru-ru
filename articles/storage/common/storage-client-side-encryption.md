@@ -10,12 +10,12 @@ ms.author: tamram
 ms.reviewer: ozgun
 ms.subservice: common
 ms.custom: devx-track-csharp
-ms.openlocfilehash: 9d00b6aa09ef19b1e6892e0e90536e45dd3bce79
-ms.sourcegitcommit: c27a20b278f2ac758447418ea4c8c61e27927d6a
+ms.openlocfilehash: 02607c219cf39a20a40854632e961b3ce199d0d3
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101718528"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104588262"
 ---
 # <a name="client-side-encryption-and-azure-key-vault-for-microsoft-azure-storage"></a>Шифрование на стороне клиента для службы хранилища Microsoft Azure
 
@@ -132,7 +132,7 @@ ms.locfileid: "101718528"
 * Azure. Core содержит `IKeyEncryptionKey` интерфейсы и `IKeyEncryptionKeyResolver` . Клиентская библиотека хранилища для .NET уже определяет ее как зависимость.
 * Azure. Security. KeyVault. Keys (v4. x) содержит клиент Key Vault RESTFUL, а также криптографические клиенты, используемые при шифровании на стороне клиента.
 
-Хранилище ключей разработано для главных ключей, и ограничения регулирования, связанные с хранилищем ключей, учитывают это. Начиная с Azure. Security. KeyVault. Keys 4.1.0, `IKeyEncryptionKeyResolver` реализация, поддерживающая кэширование ключей, отсутствует. Необходимость кэширования из-за регулирования. [Этот пример](https://docs.microsoft.com/samples/azure/azure-sdk-for-net/azure-key-vault-proxy/) можно выполнить, чтобы внедрить слой кэширования в `Azure.Security.KeyVault.Keys.Cryptography.KeyResolver` экземпляр.
+Хранилище ключей разработано для главных ключей, и ограничения регулирования, связанные с хранилищем ключей, учитывают это. Начиная с Azure. Security. KeyVault. Keys 4.1.0, `IKeyEncryptionKeyResolver` реализация, поддерживающая кэширование ключей, отсутствует. Необходимость кэширования из-за регулирования. [Этот пример](/samples/azure/azure-sdk-for-net/azure-key-vault-proxy/) можно выполнить, чтобы внедрить слой кэширования в `Azure.Security.KeyVault.Keys.Cryptography.KeyResolver` экземпляр.
 
 # <a name="net-v11"></a>[.NET (версии 11)](#tab/dotnet11)
 
