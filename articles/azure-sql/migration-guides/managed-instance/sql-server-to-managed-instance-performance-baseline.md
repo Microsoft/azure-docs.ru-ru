@@ -11,10 +11,10 @@ ms.author: sstein
 ms.reviewer: mokabiru
 ms.date: 11/06/2020
 ms.openlocfilehash: 28eedd3a22a0a5adc6e9a37c9e0f0fa0214a4e47
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103564445"
 ---
 # <a name="migration-performance-sql-server-to-sql-managed-instance-performance-analysis"></a>Производительность миграции: SQL Server в анализ производительности SQL Управляемый экземпляр
@@ -79,7 +79,7 @@ SQL Управляемый экземпляр предоставляет рас�
 
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о оптимизации новой среды Azure SQL Управляемый экземпляр см. в следующих ресурсах: 
 

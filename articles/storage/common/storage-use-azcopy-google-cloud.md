@@ -9,10 +9,10 @@ ms.date: 03/09/2021
 ms.author: normesta
 ms.subservice: common
 ms.openlocfilehash: c0f030683954ede013f769bf8584e6cf82bab69f
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103555672"
 ---
 # <a name="copy-data-from-google-cloud-storage-to-azure-storage-by-using-azcopy-preview"></a>Копирование данных из Google Cloud Storage в службу хранилища Azure с помощью AzCopy (Предварительная версия)
@@ -36,7 +36,7 @@ AzCopy — это служебная программа командной ст
 > [!NOTE] 
 > В примерах, приведенных в этой статье, предполагается, что вы указали учетные данные авторизации с помощью Azure Active Directory (Azure AD).
 >
-> Если вы предпочитаете использовать маркер SAS для авторизации доступа к данным большого двоичного объекта, можно добавить этот маркер к URL-адресу ресурса в каждой команде AzCopy. Например, так: `'https://<storage-account-name>.blob.core.windows.net/<container-name><SAS-token>'`.
+> Если вы предпочитаете использовать маркер SAS для авторизации доступа к данным большого двоичного объекта, можно добавить этот маркер к URL-адресу ресурса в каждой команде AzCopy. Например, `'https://<storage-account-name>.blob.core.windows.net/<container-name><SAS-token>'`.
 
 ### <a name="authorize-with-google-cloud-storage"></a>Авторизация с помощью облачного хранилища Google
 
@@ -44,7 +44,7 @@ AzCopy — это служебная программа командной ст
 
 После получения ключа службы задайте `GOOGLE_APPLICATION_CREDENTIALS` для переменной среды абсолютный путь к файлу ключа учетной записи службы:
 
-| Операционная система | Get-Help  |
+| Операционная система | Команда  |
 |--------|-----------|
 | **Windows** | `set GOOGLE_APPLICATION_CREDENTIALS=<path-to-service-account-key>` |
 | **Linux** | `export GOOGLE_APPLICATION_CREDENTIALS=<path-to-service-account-key>` |
@@ -167,7 +167,7 @@ AzCopy выполняет следующие действия:
    Этот ключ будет использоваться для сохранения исходных метаданных недопустимого **ключа**.
    Вы можете использовать этот ключ, чтобы попытаться восстановить метаданные на стороне Azure, так как ключ метаданных сохраняется в качестве значения в службе хранилища BLOB-объектов.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные примеры приведены в любой из следующих статей:
 

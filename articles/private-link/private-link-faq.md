@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 10/05/2019
 ms.author: allensu
 ms.openlocfilehash: d06e90a691389b99d8f439364203b921f49b2305
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103496479"
 ---
 # <a name="azure-private-link-frequently-asked-questions-faq"></a>Часто задаваемые вопросы о Приватном канале Azure
@@ -96,6 +96,6 @@ ms.locfileid: "103496479"
 ### <a name="im-a-service-provider-using-azure-private-link-do-i-need-to-make-sure-all-my-customers-have-unique-ip-space-and-dont-overlap-with-my-ip-space"></a>Я являюсь поставщиком услуг, используя частную ссылку Azure. Нужно ли, чтобы все мои клиенты имели уникальные IP-пространство и не перекрывались с моим IP-адресом? 
 Нет. Частная ссылка Azure предоставляет эту функцию. Не обязательно включать в адресное пространство клиента неперекрывающиеся адресные пространства. 
 
-##  <a name="next-steps"></a>Дальнейшие действия
+##  <a name="next-steps"></a>Следующие шаги
 
 - Подробнее о [Приватном канале Azure](private-link-overview.md)

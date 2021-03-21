@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/14/2021
 ms.author: lagayhar
 ms.openlocfilehash: e48d669321ad8c58681e8a92e68f2089962bdc17
-ms.sourcegitcommit: ba676927b1a8acd7c30708144e201f63ce89021d
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102429856"
 ---
 # <a name="click-analytics-auto-collection-plugin-for-application-insights-javascript-sdk"></a>Щелкните подключаемый модуль автосбора аналитики для Application Insights пакет SDK для JavaScript.
@@ -81,7 +81,7 @@ appInsights.loadAppInsights();
 
 | Имя                  | Тип                               | По умолчанию | Описание                                                                                                                              |
 | --------------------- | -----------------------------------| --------| ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Автозапись           | Логическое                            | true    | Автоматическая настройка записи.                                                                                                         |
+| Автозапись           | Логическое                            | Да    | Автоматическая настройка записи.                                                                                                         |
 | обратный вызов              | [ивалуекаллбакк](#ivaluecallback)  | null    | Настройка обратных вызовов.                                                                                                                 |
 | пажетагс              | строка                             | null    | Теги страницы.                                                                                                                               |
 | Теги              | [икустомдататагс](#icustomdatatags)| null    | Пользовательские теги данных, предоставленные для переопределения тегов по умолчанию, используемых для сбора данных по щелчку.                                                           |

@@ -5,10 +5,10 @@ services: container-service
 ms.topic: article
 ms.date: 12/16/2020
 ms.openlocfilehash: 3ace7f1c93ab3918f460d245a863db43d98f1db5
-ms.sourcegitcommit: 24a12d4692c4a4c97f6e31a5fbda971695c4cd68
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102176099"
 ---
 # <a name="use-managed-identities-in-azure-kubernetes-service"></a>Использование управляемых удостоверений в службе Kubernetes Azure
@@ -80,7 +80,7 @@ az aks create -g myResourceGroup -n myManagedCluster --enable-managed-identity
 az aks show -g myResourceGroup -n myManagedCluster --query "identity"
 ```
 
-Результат должен выглядеть следующим образом:
+Результат должен выглядеть следующим образом.
 
 ```output
 {
@@ -146,7 +146,7 @@ az aks update -g <RGName> -n <AKSName> --enable-managed-identity --assign-identi
 ```azurecli-interactive
 az identity create --name myIdentity --resource-group myResourceGroup
 ```
-Результат должен выглядеть следующим образом:
+Результат должен выглядеть следующим образом.
 
 ```output
 {                                                                                                                                                                                 

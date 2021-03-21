@@ -13,10 +13,10 @@ ms.date: 06/16/2020
 ms.author: jmprieur
 ms.custom: aaddev
 ms.openlocfilehash: 6f13d789cd63bb568bb8940ce614ebdb2dbcdb83
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103199752"
 ---
 # <a name="configure-a-mobile-app-that-calls-web-apis"></a>Настройка мобильного приложения, вызывающего веб-API
@@ -31,7 +31,7 @@ ms.locfileid: "103199752"
 
 ## <a name="instantiate-the-application"></a>Создание экземпляра приложения
 
-### <a name="android"></a>Android.
+### <a name="android"></a>Android
 
 Мобильные приложения используют `PublicClientApplication` класс. Вот как создать его экземпляр:
 
@@ -214,7 +214,7 @@ public override bool OpenUrl(UIApplication app, NSUrl url,
 
     `"uiviewcontroller_required_for_ios_broker":"UIViewController is null, so MSAL.NET cannot invoke the iOS broker. See https://aka.ms/msal-net-ios-broker."`
 
-1. В `AcquireTokenInteractive` вызове используйте `.WithParentActivityOrWindow(App.RootViewController)` . Передайте ссылку на окно объекта, которое вы будете использовать. Ниже приведен пример:
+1. В `AcquireTokenInteractive` вызове используйте `.WithParentActivityOrWindow(App.RootViewController)` . Передайте ссылку на окно объекта, которое вы будете использовать. Приведем пример:
 
     В `App.cs`:
     ```csharp
@@ -359,6 +359,6 @@ MSAL для iOS и macOS использует URL-адреса для вызов
 
 Сведения о включении брокера в Android см. [в статье Проверка подлинности через посредника в Xamarin. Android](msal-net-use-brokers-with-xamarin-apps.md#brokered-authentication-for-android).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Перейдите к следующей статье в этом сценарии, [получая маркер](scenario-mobile-acquire-token.md).

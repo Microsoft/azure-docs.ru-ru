@@ -9,10 +9,10 @@ author: xiaoharper
 ms.author: zhanxia
 ms.date: 03/08/2021
 ms.openlocfilehash: 5e467d22cc3230bd9945fb276dc16cf1fa765bb6
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103565505"
 ---
 # <a name="rebuild-a-studio-classic-web-service-in-azure-machine-learning"></a>Перестроение веб-службы Studio (классической) в Машинное обучение Azure
@@ -146,7 +146,7 @@ ms.locfileid: "103565505"
 
     После выбора параметра **Отправить** можно указать любые параметры конвейера.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этой статье вы узнали, как перестроить веб-службу Studio (классической) в Машинное обучение Azure. Следующим шагом является [Интеграция веб-службы с клиентскими приложениями](migrate-rebuild-integrate-with-client-app.md).
 

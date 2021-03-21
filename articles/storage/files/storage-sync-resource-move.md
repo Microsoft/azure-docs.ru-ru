@@ -8,10 +8,10 @@ ms.date: 3/10/2021
 ms.author: fauhse
 ms.subservice: files
 ms.openlocfilehash: acd5f9263a74d3273dc65522e77d83c90a719311
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103555553"
 ---
 # <a name="move-azure-file-sync-resources-to-a-different-resource-group-subscription-or-aad-tenant"></a>Перемещение ресурсов Синхронизация файлов Azure в другую группу ресурсов, подписку или клиент AAD

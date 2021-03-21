@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
 ms.openlocfilehash: 660fbf7cc4dd28c800d8f49fd5d990c99f97c4c8
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102443001"
 ---
 # <a name="run-existing-iot-edge-modules-from-azure-stack-edge-pro-fpga-devices-on-azure-stack-edge-pro-gpu-device"></a>Запуск существующих модулей IoT Edge из Azure Stack пограничных устройств с пограничными устройствами FPGA на устройстве с Azure Stack ребра Pro GPU
@@ -27,7 +27,7 @@ ms.locfileid: "102443001"
 
 При переносе рабочих нагрузок с устройства FPGA на устройство GPU необходимо внести изменения в существующие модули IoT Edge, чтобы они успешно выполнялись на платформе Kubernetes. Может потребоваться по-разному указать требования к хранилищу, сети, использованию ресурсов и веб-прокси. 
 
-## <a name="storage"></a>Память
+## <a name="storage"></a>Служба хранилища
 
 При указании хранилища для модулей IoT Edge учитывайте следующие сведения.
 

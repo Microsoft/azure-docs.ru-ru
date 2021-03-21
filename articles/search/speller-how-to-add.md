@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/02/2021
 ms.custom: references_regions
 ms.openlocfilehash: be72cae8d109bfeccd60e8c821625f75357568e3
-ms.sourcegitcommit: ec39209c5cbef28ade0badfffe59665631611199
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103232364"
 ---
 # <a name="add-spell-check-to-queries-in-cognitive-search"></a>Добавление проверки орфографии в запросы в Когнитивный поиск
@@ -109,7 +109,7 @@ POST https://[service name].search.windows.net/indexes/hotels-sample-index/docs/
 
 Хотя содержимое в индексе поиска может состоять из нескольких языков, входные данные запроса, скорее всего, находятся в одном. Поисковая система не проверяет совместимость Куерилангуаже, анализатор языка и язык, на котором состоит содержимое, поэтому обязательно выполняйте запросы соответствующим образом, чтобы избежать получения неверных результатов.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 + [Создание семантического запроса](semantic-how-to-query-request.md)
 + [Создание простого запроса](search-query-create.md)

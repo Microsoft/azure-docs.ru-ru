@@ -7,10 +7,10 @@ ms.date: 02/19/2021
 author: tfitzmac
 ms.author: tomfitz
 ms.openlocfilehash: 0e3c82f711de4cd9710c9aafe798a986e3403ed4
-ms.sourcegitcommit: 18a91f7fe1432ee09efafd5bd29a181e038cee05
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103563714"
 ---
 # <a name="troubleshooting-datadog-on-azure"></a>Устранение неполадок с Datadog в Azure
@@ -71,6 +71,6 @@ URL-адрес ответа должен иметь значение `https://us
 
 Если в агенте Datadog был настроен неверный ключ, перейдите на экран ключи API и измените **ключ по умолчанию**. Необходимо удалить агент Datadog и переустановить его, чтобы настроить виртуальную машину с новыми ключами API.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения об [управлении экземпляром](manage.md) Datadog.

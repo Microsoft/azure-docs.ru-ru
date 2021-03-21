@@ -3,12 +3,12 @@ title: Устранение проблем с Сеткой событий
 description: В этой статье представлены различные способы устранения неполадок с сеткой событий Azure.
 ms.topic: conceptual
 ms.date: 02/11/2021
-ms.openlocfilehash: 9c52ba8561c10dd94ec6ef51c78b8534c6c58e96
-ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
+ms.openlocfilehash: d30b8464de90474ad74853cc423de700b41226a4
+ms.sourcegitcommit: e6de1702d3958a3bea275645eb46e4f2e0f011af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100418049"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104720565"
 ---
 # <a name="troubleshoot-azure-event-grid-issues"></a>Устранение проблем с сеткой событий Azure
 В этой статье содержатся сведения, которые помогут устранить неполадки с сеткой событий Azure. 
@@ -32,7 +32,7 @@ ms.locfileid: "100418049"
 Если вы получаете сообщения об ошибках с кодами ошибок, например 400, 409 и 403, см. статью [Устранение ошибок](troubleshoot-errors.md)в службе "Сетка событий". 
 
 ## <a name="distributed-tracing-net"></a>Распределенная трассировка (.NET)
-Библиотека .NET сетки событий поддерживает распространение трассировки. Чтобы придерживаться [рекомендаций спецификации клаудевентс](https://github.com/cloudevents/spec/blob/master/extensions/distributed-tracing.md) по распространению трассировки, Библиотека устанавливает `traceparent` и `tracestate` на [атрибутов ExtensionAttribute](https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/eventgrid/Azure.Messaging.EventGrid/src/Customization/CloudEvent.cs#L126) , `CloudEvent` когда включена Распределенная трассировка. Чтобы узнать больше о том, как включить распределенную трассировку в приложении, ознакомьтесь с [документацией по распределенной трассировке](https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/samples/Diagnostics.md#Distributed-tracing)пакета SDK для Azure.
+Библиотека .NET сетки событий поддерживает распространение трассировки. Чтобы придерживаться [рекомендаций спецификации клаудевентс](https://github.com/cloudevents/spec/blob/master/extensions/distributed-tracing.md) по распространению трассировки, Библиотека устанавливает `traceparent` и `tracestate` на [атрибутов ExtensionAttribute](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/eventgrid/Azure.Messaging.EventGrid/src/Customization#L126) , `CloudEvent` когда включена Распределенная трассировка. Чтобы узнать больше о том, как включить распределенную трассировку в приложении, ознакомьтесь с [документацией по распределенной трассировке](https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/samples/Diagnostics.md#Distributed-tracing)пакета SDK для Azure.
 
 ### <a name="sample"></a>Образец
 См. [Пример счетчика строк](/samples/azure/azure-sdk-for-net/line-counter/). В этом примере приложения показано использование хранилища, концентраторов событий и клиентов службы "Сетка событий" вместе с интеграцией ASP.NET Core, распределенной трассировкой и размещенными службами. Он позволяет пользователям передать файл в большой двоичный объект, который активирует событие концентраторов событий, содержащее имя файла. Обработчик концентраторов событий получит событие, после чего приложение загрузит большой двоичный объект и подсчитает количество строк в файле. Приложение отображает ссылку на страницу, содержащую число строк. При нажатии ссылки Клаудевент, содержащий имя файла, публикуется с помощью сетки событий.

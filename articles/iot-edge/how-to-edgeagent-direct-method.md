@@ -10,10 +10,10 @@ ms.reviewer: veyalla
 ms.service: iot-edge
 services: iot-edge
 ms.openlocfilehash: 52cd7817594c5c2a1d4e3a4ca9c56891df594cd6
-ms.sourcegitcommit: 5f32f03eeb892bf0d023b23bd709e642d1812696
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103201113"
 ---
 # <a name="communicate-with-edgeagent-using-built-in-direct-methods"></a>Обмен данными с edgeAgent с помощью встроенных прямых методов
@@ -30,7 +30,7 @@ ms.locfileid: "103201113"
 
 Метод **ping** полезен для проверки того, работает ли IOT EDGE на устройстве, а также имеет ли устройство открытое подключение к центру Интернета вещей. Используйте этот прямой метод для проверки связи с агентом IoT Edge и получения его состояния. Успешный запрос проверки связи возвращает пустую полезную нагрузку и **"Status": 200**.
 
-Например:
+Пример:
 
 ```azurecli
 az iot hub invoke-module-method --method-name 'ping' -n <hub name> -d <device name> -m '$edgeAgent'
@@ -48,7 +48,7 @@ az iot hub invoke-module-method --method-name 'ping' -n <hub name> -d <device na
 
 Прямой метод Рестартмодуле можно использовать для любого модуля, работающего на IoT Edge устройстве, включая сам модуль edgeAgent. Однако если вы используете этот прямой метод для завершения работы edgeAgent, вы не получите результат успешного выполнения, так как подключение будет разорвано во время перезапуска модуля.
 
-Например:
+Пример:
 
 ```azurecli
 az iot hub invoke-module-method --method-name 'RestartModule' -n <hub name> -d <device name> -m '$edgeAgent' --method-payload \
@@ -80,6 +80,6 @@ az iot hub invoke-module-method --method-name 'RestartModule' -n <hub name> -d <
 
 Эти прямые методы диагностики доступны в 1.0.10 выпуске.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 [Свойства двойников модулей агента IoT Edge и центра IoT Edge](module-edgeagent-edgehub.md)

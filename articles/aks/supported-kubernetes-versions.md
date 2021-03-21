@@ -7,10 +7,10 @@ ms.date: 09/08/2020
 author: palma21
 ms.author: jpalma
 ms.openlocfilehash: c7d06172abd696e386337e563fa29fdbd2d3cdae
-ms.sourcegitcommit: 4bda786435578ec7d6d94c72ca8642ce47ac628a
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103493668"
 ---
 # <a name="supported-kubernetes-versions-in-azure-kubernetes-service-aks"></a>Поддерживаемые версии Kubernetes в Службе Azure Kubernetes (AKS)
@@ -142,12 +142,12 @@ az aks get-versions --location eastus --output table
 | 1,18  | Мар-23-20  | Май 2020 г.   | Авг 2020  | 1,21 ДЖ | 
 | 1,19  | Авг-04-20  | Sep 2020   | 2020 ноября  | 1,22 ДЖ | 
 | 1,20  | Dec-08-20  | Янв 2021   | Мар 2021  | 1,23 ДЖ |
-| 1,21  | Апр-08-21 * | Май 2021 г.   | Июнь 2021  | 1,24 ДЖ |
+| 1.21  | Апр-08-21 * | Май 2021 г.   | Июнь 2021  | 1,24 ДЖ |
 
 \* Вышестоящий выпуск Kubernetes 1,21 может быть изменен в качестве вышестоящего календарные, который еще должен быть завершен.
 
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 **Как часто следует ждать обновления версий Kubernetes, чтобы поддерживать поддержку?**
 
@@ -186,7 +186,7 @@ az aks get-versions --location eastus --output table
 
 Пропуск нескольких версий может выполняться только при обновлении неподдерживаемой версии обратно в поддерживаемую версию. Например, обновление с неподдерживаемой версии *1.10. x* --> поддерживаемый *1,15 доллара. x* может быть завершен.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения об обновлении см. в статье [Обновление кластера Службы Azure Kubernetes (AKS)][aks-upgrade].
 

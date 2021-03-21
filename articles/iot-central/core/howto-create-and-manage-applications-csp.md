@@ -5,19 +5,21 @@ services: iot-central
 ms.service: iot-central
 author: dominicbetts
 ms.author: dobett
-ms.date: 08/23/2019
+ms.date: 12/11/2020
 ms.topic: how-to
 manager: philmea
-ms.openlocfilehash: 43c201150ab0b2d5d350aa228a4ade5e2faf3461
-ms.sourcegitcommit: 7dacbf3b9ae0652931762bd5c8192a1a3989e701
+ms.openlocfilehash: f3293ada549351cc7273847cde48c0531f06f028
+ms.sourcegitcommit: 910a1a38711966cb171050db245fc3b22abc8c5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92123119"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104675813"
 ---
 # <a name="create-and-manage-an-azure-iot-central-application-from-the-csp-portal"></a>Создание приложения IoT Central Azure и управление им на портале CSP
 
 Программа для поставщиков облачных решений (CSP) (Microsoft) — это программа Microsoft Reseller. Ее целью является предоставление партнерам Channel Partner единого решения для продажи всех коммерческих служб Microsoft Online Services. Узнайте больше о [программе для поставщиков облачных решений](https://partner.microsoft.com/cloud-solution-provider).
+
+[!INCLUDE [Warning About Access Required](../../../includes/iot-central-warning-contribitorrequireaccess.md)]
 
 Поставщик облачных решений может создавать решения Microsoft Azure IoT Central и управлять ими от имени клиентов с помощью [Центра партнеров Майкрософт](https://partnercenter.microsoft.com/partner/home). Если поставщик облачных решений создает приложения Azure IoT Central от имени клиентов так же, как другие управляемые им службы Azure, он сам занимается процедурой управления выставлением счетов для клиентов. Плата за Azure IoT Central будет отображаться в общем счете в Центре партнеров Майкрософт.
 
@@ -75,13 +77,13 @@ URL-адрес приложения будет создан автоматиче
 
 ## <a name="location"></a>Расположение
 
-**Расположение** — это [География](https://azure.microsoft.com/global-infrastructure/geographies/) , где вы хотите создать приложение. Как правило, следует выбирать расположение как можно ближе к устройствам, чтобы обеспечить оптимальную производительность. В настоящее время вы можете создать IoT Centralное приложение в **странах Австралии**, **Азиатско-Тихоокеанский регион**, **Европе**, США **, Великобритании**и **Японии** . **United States** Выбрав расположение, вы не сможете переместить приложение в другое расположение.
+**Расположение** — это [География](https://azure.microsoft.com/global-infrastructure/geographies/) , где вы хотите создать приложение. Как правило, следует выбирать расположение как можно ближе к устройствам, чтобы обеспечить оптимальную производительность. В настоящее время вы можете создать IoT Centralное приложение в **странах Австралии**, **Азиатско-Тихоокеанский регион**, **Европе**, США **, Великобритании** и **Японии** .  Выбрав расположение, вы не сможете переместить приложение в другое расположение.
 
 ## <a name="application-template"></a>Шаблон приложения
 
 Выберите шаблон приложения, который вы хотите использовать для приложения.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Вы узнали, как создать приложение Azure IoT Central в качестве поставщика облачных решений, а значит, вы готовы к следующему шагу.
 

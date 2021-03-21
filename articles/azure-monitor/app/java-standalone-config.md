@@ -7,10 +7,10 @@ author: MS-jgol
 ms.custom: devx-track-java
 ms.author: jgol
 ms.openlocfilehash: e58d69634712a9cc640ba9e4785a7bf1effaf88c
-ms.sourcegitcommit: 94c3c1be6bc17403adbb2bab6bbaf4a717a66009
+ms.sourcegitcommit: 772eb9c6684dd4864e0ba507945a83e48b8c16f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "103224662"
 ---
 # <a name="configuration-options---azure-monitor-application-insights-for-java"></a>Параметры конфигурации — Application Insights Azure Monitor для Java
@@ -100,7 +100,7 @@ ms.locfileid: "103224662"
 
 Вы также можете задать экземпляр роли облака, используя переменную среды `APPLICATIONINSIGHTS_ROLE_INSTANCE` (которая затем будет иметь приоритет, если экземпляр роли облака также указан в конфигурации JSON).
 
-## <a name="sampling"></a>Выборка
+## <a name="sampling"></a>Дискретизация
 
 Выборка полезна, если необходимо снизить затраты.
 Выборка выполняется в качестве функции для идентификатора операции (также известного как идентификатор трассировки), поэтому один и тот же идентификатор операции всегда будет принимать одно и то же решение выборки. Это гарантирует, что вы не будете получать части распределенной транзакции, выборке в, в то время как другие ее части.
@@ -207,8 +207,8 @@ Log4j, Logback и Java. util. Logging устанавливаются в авто
 | уровень             | Log4j  | Logback | ИЮЛ     |
 |-------------------|--------|---------|---------|
 | OFF               | OFF    | OFF     | OFF     |
-| АВАРИЙ             | АВАРИЙ  | ошибка   | SEVERE  |
-| Ошибка (или СЕРЬЕЗная) | ошибка  | ошибка   | SEVERE  |
+| АВАРИЙ             | АВАРИЙ  | ОШИБКА   | SEVERE  |
+| Ошибка (или СЕРЬЕЗная) | ОШИБКА  | ОШИБКА   | SEVERE  |
 | ПРЕДУПРЕЖДАть (или ПРЕДУПРЕЖДАть) | ДАТЬ   | ДАТЬ    | ПРЕДУПРЕЖДЕНИЕ |
 | ИНФОРМАЦИЯ              | ИНФОРМАЦИЯ   | ИНФОРМАЦИЯ    | ИНФОРМАЦИЯ    |
 | CONFIG            | DEBUG  | DEBUG   | CONFIG  |

@@ -6,10 +6,10 @@ ms.subservice: process-automation
 ms.date: 02/19/2021
 ms.topic: conceptual
 ms.openlocfilehash: fd4d8ee92b670bc2544619a0dce16a26d9342c13
-ms.sourcegitcommit: dac05f662ac353c1c7c5294399fca2a99b4f89c8
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102122040"
 ---
 # <a name="manage-python-3-packages-preview-in-azure-automation"></a>Управление пакетами Python 3 (Предварительная версия) в службе автоматизации Azure

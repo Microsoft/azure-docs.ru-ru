@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.date: 02/22/2021
 ms.author: alkohli
 ms.openlocfilehash: ff805b758dce05a66764ab1ff08e53378c946362
-ms.sourcegitcommit: 5bbc00673bd5b86b1ab2b7a31a4b4b066087e8ed
+ms.sourcegitcommit: 867cb1b7a1f3a1f0b427282c648d411d0ca4f81f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2021
+ms.lasthandoff: 03/20/2021
 ms.locfileid: "102438188"
 ---
 # <a name="gpu-vms-for-your-azure-stack-edge-pro-device"></a>Виртуальные машины GPU для устройства Azure Stack ребра Pro
@@ -199,7 +199,7 @@ PS C:\WINDOWS\system32>
 ```
 #### <a name="deploy-template"></a>Развертывание шаблона
 
-Разверните шаблон `addGPUextensiontoVM.json` . Этот шаблон развертывает расширение на существующей виртуальной машине. Выполните следующую команду:
+Разверните шаблон `addGPUextensiontoVM.json` . Этот шаблон развертывает расширение на существующей виртуальной машине. Выполните следующую команду.
 
 ```powershell
 $templateFile = "<Path to addGPUextensiontoVM.json>" 
@@ -448,7 +448,7 @@ PS C:\Program Files\NVIDIA Corporation\NVSMI>
 
 #### <a name="deploy-template"></a>Развертывание шаблона
 
-Разверните шаблон `addGPUextensiontoVM.json` . Этот шаблон развертывает расширение на существующей виртуальной машине. Выполните следующую команду:
+Разверните шаблон `addGPUextensiontoVM.json` . Этот шаблон развертывает расширение на существующей виртуальной машине. Выполните следующую команду.
 
 ```powershell
 $templateFile = "Path to addGPUextensiontoVM.json" 
@@ -500,7 +500,7 @@ PS C:\WINDOWS\system32>
 
 #### <a name="track-deployment-status"></a>Отслеживание состояния развертывания    
     
-Шаблоны развертывания является долго выполняющимся заданием. Чтобы проверить состояние развертывания расширений для данной виртуальной машины, откройте другой сеанс PowerShell (Запуск от имени администратора). Выполните следующую команду: 
+Шаблоны развертывания является долго выполняющимся заданием. Чтобы проверить состояние развертывания расширений для данной виртуальной машины, откройте другой сеанс PowerShell (Запуск от имени администратора). Выполните следующую команду. 
 
 ```powershell
 Get-AzureRmVMExtension -ResourceGroupName myResourceGroup -VMName <VM Name> -Name <Extension Name>
